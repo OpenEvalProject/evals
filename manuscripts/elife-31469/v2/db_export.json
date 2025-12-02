@@ -1,0 +1,1476 @@
+{
+  "submission": {
+    "id": "99c8b231-3fe8-40fe-b043-0ff2bc587197",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:00:29.029691Z",
+    "updated_at": "2025-12-01T23:00:29.029691Z"
+  },
+  "content": [
+    {
+      "id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "submission_id": "99c8b231-3fe8-40fe-b043-0ff2bc587197",
+      "content_type": "manuscript",
+      "content_text": "# A disassembly-driven mechanism explains F-actin-mediated chromosome transport in starfish oocytes\n\n## Authors\n\n- Philippe Bun<sup>1</sup> ([ORCID: 0000-0002-7975-1768](https://orcid.org/0000-0002-7975-1768))\n- Serge Dmitrieff<sup>1</sup> ([ORCID: 0000-0002-1362-5670](https://orcid.org/0000-0002-1362-5670))\n- Julio M Belmonte<sup>1</sup> ([ORCID: 0000-0002-4315-9631](https://orcid.org/0000-0002-4315-9631))\n- Fran\u00e7ois J N\u00e9d\u00e9lec<sup>1</sup> ([ORCID: 0000-0002-8141-5288](https://orcid.org/0000-0002-8141-5288)) \u2020\n- P\u00e9ter L\u00e9n\u00e1rt<sup>1</sup> ([ORCID: 0000-0002-3927-248X](https://orcid.org/0000-0002-3927-248X)) \u2020\n\n### Affiliations\n\n1. Cell Biology and Biophysics Unit European Molecular Biology Laboratory Heidelberg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nWhile contraction of sarcomeric actomyosin assemblies is well understood, this is not the case for disordered networks of actin filaments (F-actin) driving diverse essential processes in animal cells. For example, at the onset of meiosis in starfish oocytes a contractile F-actin network forms in the nuclear region transporting embedded chromosomes to the assembling microtubule spindle. Here, we addressed the mechanism driving contraction of this 3D disordered F-actin network by comparing quantitative observations to computational models. We analyzed 3D chromosome trajectories and imaged filament dynamics to monitor network behavior under various physical and chemical perturbations. We found no evidence of myosin activity driving network contractility. Instead, our observations are well explained by models based on a disassembly-driven contractile mechanism. We reconstitute this disassembly-based contractile system in silico revealing a simple architecture that robustly drives chromosome transport to prevent aneuploidy in the large oocyte, a prerequisite for normal embryonic development.\n\n## Introduction\n\nMuscle contraction forms the basis of animal locomotion, and at the microscopic scale, contraction of actin filament (F-actin) networks drives a plethora of essential cellular processes. Most prominently, the cortex, a thin and entangled network of F-actin underlying the plasma membrane determines the shape of animal cells, and changes in cell shape underlie cell migration, cell division and tissue morphogenesis (Munjal and Lecuit, 2014; Pollard and Cooper, 2009; Salbreux et al., 2012). While myosin motor activity, non-muscle myosin II in particular, is the main driver of these processes, filament dynamics has been shown to play a critical role as well. For example, cell migration is to a large part driven by polymerization of actin filaments at the cell front and depolymerization at the rear (Cramer, 2013; Mseka and Cramer, 2011; Pollard and Borisy, 2003; Ridley, 2011). Cytokinetic ring closure has been shown to be driven by depolymerization of filaments in some species, although myosin activity certainly is the main driver in others (Green et al., 2012; Mendes Pinto et al., 2012; Neujahr et al., 1997).\n\nIn addition to its cortical functions, recent studies revealed extensive 3D F-actin networks in the bulk cytoplasm of large oocytes and embryos with essential functions in intracellular transport processes (Field and L\u00e9n\u00e1rt, 2011). For example, mouse oocytes feature a dynamic cytoplasmic F-actin network required to position the nucleus (Almonacid et al., 2015), the meiotic spindle (Almonacid et al., 2014; Azoury et al., 2008; Schuh and Ellenberg, 2008), and to transport vesicles from the cell center to the cortex, including cortical granules to prevent polyspermy (Cheeseman et al., 2016; Schuh, 2011). While myosin II and myosin V motors have been involved in transporting the spindle and vesicles, respectively, filament dynamics appear to have a key role in these processes as well, regulated by Fmn2/Spire1/2 as well as cortical Arp2/3 nucleators, and other factors (Chaigne et al., 2013; Cheeseman et al., 2016; Holubcov\u00e1 et al., 2013; Pfender et al., 2011; Schuh, 2011; Yu et al., 2014).\n\nGenerally, while the mechanism of contractile force generation is well understood in sarcomeric-like assemblies, such as muscles or stress fibers, the mechanisms in disordered F-actin networks, such as the above quasi-2D cortical and 3D cytoplasmic networks, remains much more elusive (Lenz et al., 2012; Murrell et al., 2015). Additionally, computational models and theoretical work so far focused largely on disordered F-actin networks formed by non-dynamic filaments inspired by in vitro reconstituted contractile systems composed of stable filaments (Alvarado and Koenderink, 2015; Belmonte et al., 2017; Bendix et al., 2008; K\u00f6hler and Bausch, 2012; Murrell and Gardel, 2014). While it is true that these non-dynamic systems contract efficiently, it is also clear that filament dynamics has key contributions in vivo, as illustrated above. Indeed, although much less investigated, theoretical work has shown that F-actin dynamics is able to generate not only protrusive but also contractile stress (Sun et al., 2010; Zumdieck et al., 2007).\n\nIn the past, we discovered a prominent example of F-actin-driven intracellular transport in starfish oocytes, whereby a 3D F-actin network collects chromosomes scattered in the large oocyte nucleus and transports them to the forming microtubule spindle (L\u00e9n\u00e1rt et al., 2005). This F-actin network forms in the nuclear region after nuclear envelope breakdown (NEBD), at the onset of meiosis, and is essential to prevent formation of aneuploid eggs (Mori et al., 2011). It contracts homogeneously and isotropically mediating long-range and size-selective transport of chromosomes sterically trapped in the network. While the contraction of the network is isotropic and homogeneous, connections of the network to the cell cortex provide directionality, resulting in transport towards the microtubule spindle, located at the cortex (Mori et al., 2011).\n\nHowever, the mechanism underlying contraction of this 3D F-actin network remained unknown. To reveal it, we monitored contractile behavior using the chromosomes as natural probes combined with quantitative imaging of filament dynamics in live oocytes. In parallel, we developed physical models of different mechanisms of contraction, and compared the predictions of these models to the experimental system challenged by physical and chemical perturbations. We find that observations are well fitted by models in which contraction is driven by F-actin disassembly, but not by models of motor-driven contractility. Comparisons of experimental observations to in silico reconstruction of this contractile system reveal a novel and remarkably simple architecture to transport chromosomes, to prevent aneuploidy in the large oocyte.\n\n## Results\n\n### Network contraction is characterized by a single scalar contraction rate\n\nAs we showed previously, chromosomes are sterically entrapped and thereby transported by a contracting F-actin network (Mori et al., 2011). Chromosomes can thus be used as probes to monitor the network\u2019s contractile behavior without potential artifacts associated with F-actin labeling. Therefore, we optimized the spatial and temporal resolution to image and track H2B-3mEGFP or -mCherry labeled chromosomes in 3D during actin-driven transport, 2 to 8 min after NEBD (Monnier et al., 2012; Mori et al., 2011) (Figure 1A,B). We reported previously that contractile activity is isotropic and while the network normally contracts to the animal pole, this merely results from passive anchoring of the network to the cell cortex (Mori et al., 2011). Thus, here we analyzed the pair-wise distances between chromosomes to characterize the network contraction rate, a measure that is independent of the location and even existence of the anchor (Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/31469/elife-31469-fig1-v2.jpg)\n\n**Figure 1.:** (A) Maximum z-projections of selected time points through the nuclear region of live starfish oocytes expressing H2B-mCherry (cyan) to label chromosomes during actin-driven chromosome congression. n: disassembling nucleolus; AP: animal pole; VP: vegetal pole; right: pseudo-color time projection of z-projections. (B) 3D plot of chromosome trajectories derived from the data set in (A) during chromosome congression (2\u20138 min after NEBD highlighted in cyan). (C) Plot of pair-wise distances of chromosomes, d versus time for the same data set. The pair-wise approach speed was determined by a linear fit, as shown, and extrapolated to visualize \u2018congression time\u2019. (D) Pair-wise chromosome approach speeds depend linearly on the initial distance, d0 for all chromosome pairs. (E) Schematics for one pair of chromosomes while being transported to the AP with a constant speed and decreasing distance. Thus, the contraction rate, \u03b1 is increasing through the process. (F) Contraction rates calculated for 2 min intervals from 2 to 8 min after NEBD and fitted with Equation 3 to determine the initial approach rate, \u03b10. Best fit \u03b10 is shown in solid line, \u03b10 \u00b1 5% is shown in dashed lines. Scale bars, 20 \u03bcm; time is given as mm:ss relative to NEBD. N indicates the number of oocytes.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31469/elife-31469-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Oocytes were injected with phalloidin-AlexaFluor 568 to label the initial contracting network\u00a0~\u00a02 min after the start of NEBD. Prior to injection, oocytes were centrifuged (bottom panel) in order to relocate the nucleus away from the cortex. Selected maximum-intensity z projections of the nuclear region are shown. Dashed contour delineates the nuclear region. (B) Change of network diameter in centrifuged versus non-centrifuged control oocytes shows no significant difference of contraction rates. Scale bar, 20 \u03bcm. Time is given as mm:ss relative to injection. Data were collected from at least two independent experiments.\n\nThe trajectories revealed that any pair of chromosomes, irrespective of their initial location, exhibited a constant approach velocity towards one another during transport (Figure 1C). Extrapolation of these linear trajectories showed that all chromosomes would meet at nearly the same time and location, if the network were to contract all the way to a single point (Figure 1C). This implies that pair-wise chromosome velocities depend linearly on their initial separation distance (Figure 1D), indicative of a spatially homogeneous and isotropic contraction (Mori et al., 2011). This means that the ratio ($\\alpha_{0}$) between pair-wise velocities ($v$) and initial pair-vise distance ($d_{0}$) is constant for all pairs of chromosomes:\n\n$$\n\\alpha_{0}=\\frac{v}{d_{0}}\n$$\n\nIn theory, $\\alpha_{0}$ could be simply derived as the slope of the fitted line on Figure 1D. In practice, however, we found the initial pair-wise chromosome separation distance difficult to determine, as motions caused by the collapse of the nuclear envelope at NEBD occur at the onset of network contraction. Therefore, we instead determined $\\alpha_{0}$ by extrapolating its value (Figure 1E,F). Generally, at any time t for any one pair of chromosomes the contraction rate $\\alpha(t)$ is given by:\n\n$$\n\\alpha(t)=\\frac{v}{d(t)}\n$$\n\nas the speed is constant, $dt=d_{0}-vt$, leading to:\n\n$$\n\\alpha(t)=\\frac{\\alpha_{0}}{1-\\alpha_{0}t}\n$$\n\nThus, we calculated the pair-wise approach rate, \u03b1(t)\u00a0on 2 min intervals throughout F-actin-driven transport. As expected, it increases over time according to Equation 3, allowing us to determine the value of \u03b10 (Figure 1F). The value of \u03b10\u00a0derived by this method from a large number of oocytes provided a precise estimate of the remarkably invariable initial contraction rate; \u03b10\u00a0= 0.085\u00a0\u00b1\u00a00.017 min\u22121 (N\u00a0=\u00a053\u00a0\u00b1\u00a0S.D.). Note that the reciprocal of this value,\u00a0t0\u00a0=\u00a01/\u03b10= 11.76\u00a0\u00b1\u00a00.27 min is the \u2018convergence time\u2019, the time that would be required to transport the chromosomes from their initial position to the final meeting point.\n\nTaken together, analysis of chromosome trajectories as probes embedded in the contracting network reveals a remarkably regular behavior indicative of a homogeneous and isotropic contraction characterized by a single parameter, the initial contraction rate, $\\alpha_{0}$.\n\n### As the network contracts, new filaments polymerize at its boundary\n\nTo visualize F-actin dynamics underlying this very regular contractile behavior, we expressed the fluorescent F-actin marker UtrCH (mEGFP3-UtrCH or mCherry3-UtrCH) in oocytes (Burkel et al., 2007). In addition, at the time of NEBD we spiked in a small amount of fluorescent phalloidin in a different color. Phalloidin bound rapidly and irreversibly to filaments present at the time of injection allowing us to distinguish the initial network present at NEBD from F-actin\u00a0that polymerize later (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/31469/elife-31469-fig2-v2.jpg)\n\n**Figure 2.:** (A) A pulse of phalloidin-AlexaFluor 568 (red) was injected into the nuclear region\u00a0~2 min after NEBD in an oocyte expressing 3mEGFP-UtrCH (grays) to label the population of F-actin present at the time of injection. AP: animal pole; VP: vegetal pole. Selected sum-intensity z projections are shown. (B) Intensity profiles along the dashed line in (A) (2 \u03bcm wide, rolling average of 0.5 \u03bcm). Gray dashed lines indicate the position of the nuclear boundary; asterisks mark the edge of the phalloidin-labeled old network. (C) Kymograph-like plots of the region marked by a dashed rectangle in (A). (D) Similar to (A) except that chromosomes were additionally labeled by H2B-3mEGFP (cyan) in oocytes injected with phalloidin-AlexaFluor 568 (red). z-projections of selected time points are shown. (E) The diameter of the pulse labeled network (D as shown on (D)) decreases linearly during the F-actin-driven chromosome transport. Data were collected from five independent experiments. (F) Contraction speeds calculated by measuring network diameter corresponding to contraction speeds calculated from chromosome approach. Data were collected from two independent experiments. N indicates the number of oocytes. Scale bar: 20 \u03bcm; time is given as mm:ss relative to NEBD.\n\nAnalysis of these pulse-label recordings revealed that while the network in the nuclear region contracts, new filaments are polymerized on nuclear envelope remnants (NER) forming a new network filling up the space around the contracting initial network (Figure 2A,C, Video 1). Intensity profiles showed that polymerization occurred predominantly at the boundary defined by NER, and to a limited extent within the network (Figure 2B). Correspondingly, we distinguish the network initially filling the nuclear space at NEBD, referred hereafter as \u2018old network\u2019, from the \u2018new network\u2019 that is polymerized from the NER boundary after NEBD.\n\n![Video 1.](https://cdn.elifesciences.org/articles/31469/elife-31469-video1.mp4.jpg)\n\n**Video 1.:** Oocyte expressing 3mEGFP-UtrCH (gray) was injected with phalloidin-AlexaFluor 568 to label the population of F-actin present at the time of injection. Scale bar: 20 \u03bcm.\n\nTo quantify the rate of contraction of the old network, we fitted a circle to the phalloidin-labeled region and recorded its diameter, D over time (Figure 2E). This revealed that the old network contracted to approximately half of its initial size, and with a nearly constant speed. The rate of contraction derived this way was similar, although somewhat lower than the rate $\\alpha_{0}$ determined by tracking chromosomes (compare Figures 1F and 2E). We then performed direct comparisons on a single cell basis combining phalloidin pulse-labeling with labeling chromosomes (Figure 2D). We found the contraction rate extracted from the pair-wise chromosome approach and the rate derived by measuring the diameter of the phalloidin-labeled \u2018old network\u2019 to correlate precisely (Figure 2F). Thus, similar contraction rates are derived by the two methods, however, it appears that phalloidin used to visualize the old network slightly slows contraction and increases variability, likely dependent on the amount of phalloidin injected.\n\nAltogether, visualizing filament dynamics identified two major components in this contractile system: the contraction of the initial \u2018old network\u2019 and the polymerization of the \u2018new network\u2019 along the NER boundary, filling the space as the old network contracts. Chromosomes are embedded and transported by the old network, thus the contraction rate, $\\alpha_{0}$ derived from pair-wise chromosome approach is a direct measure of the old network\u2019s contraction rate.\n\n### Active forces within the network, not pushing by polymerization drives contraction\n\nHaving identified the two main activities, polymerization at the NER and contraction of the network, we next wondered whether chromosome transport is driven by polymerization compressing the network, or contractile forces generated within the network. To distinguish these two possibilities, we ablated the F-actin network in a 3D volume using a pulsed infrared laser. We expected the network to collapse into the ablated region, were pushing forces generated by polymerization to dominate. Instead, a recoil response would evidence tension and thus active contractile forces within the network (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/31469/elife-31469-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematics illustrating the expected response to ablation in case of a \u2018pushing\u2019 mechanism vs. active contraction of the network. (B) Selected sum-intensity z-projections through the nuclear region of live oocytes expressing 3mCherry-UtrCH. Top row: untreated control; bottom row: injected with a large amount of recombinant UtrCH to stabilize F-actin. One frame just before and frames after 3D ablation along the animal-vegetal axis (red line) are shown. (C) Initial retraction distance as marked by red arrows in (B) in control and stabilized oocytes. Data were collected from three independent experiments. N indicates the number of oocytes. Mann-Whitney\u2019s test, ****p<0.0001. (D) Cut regions outlined by dashed boxes in (B) are shown zoomed and for several time points. Scale bar, 20 \u03bcm. Time is given as mm:ss relative to NEBD.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31469/elife-31469-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Selected sum-intensity z-projections through the nuclear region of live oocytes expressing 3mCherry-UtrCH. One frame just before and frames after 3D ablation perpendicular to the animal-vegetal axis (red line) are shown. At the bottom, cut region outlined by the dashed box is shown zoomed and for several time points. Scale bar: 20 \u03bcm. Time is given as mm:ss relative to the ablation.\n\nWe observed a prominent recoil response with the network rapidly retracting away from the ablated region (Figure 3B\u2013D, Video 2). This shows that the network is under tension and suggests that pushing by polymerization does not have a major contribution. After retraction, the gap did not close, but was filled progressively by F-actin suggesting that in response to the perturbation, filament assembly may occur throughout the network (Figure 3B,D). The recoil response did not depend on the direction of the cut, consistent with isotropic contraction (Figure 3\u2014figure supplement 1).\n\n![Video 2.](https://cdn.elifesciences.org/articles/31469/elife-31469-video2.mp4.jpg)\n\n**Video 2.:** 3D laser ablation was performed in oocytes expressing mCherry3-UtrCH without (left) or with recombinant UtrCH-AlexaFluor 568 nm (right) injection. Scale bar: 20 \u03bcm.\n\nTo test that the recoil observed after laser ablation is not an artifact, we also performed this experiment in oocytes where F-actin was stabilized by injecting a large amount of recombinant, fluorescently labeled UtrCH. Similar to mouse oocytes (Holubcov\u00e1 et al., 2013), high concentration of UtrCH effectively stabilized the network and prevented its contraction (Figure 3B\u2013D, Video 2). Stabilization also prevented the recoil response confirming the specificity of laser ablation.\n\nWe thus conclude that production of F-actin at the NER boundary is not the major driver of contraction. Instead, our data show that active forces generated within the network drive contractility. Importantly, the dramatic effects of UtrCH stabilization, along with the minor slowing effect of phalloidin injection above, suggest that F-actin dynamics has a key role in contractile force generation.\n\n### Motor- and disassembly-driven models can both explain contraction, but predict differential response to perturbation\n\nTo investigate a possible role for filament dynamics in contraction, we quantified changes in filament amounts in space and time. We used the fluorescence intensity of mEGFP3-UtrCH, which binds to filamentous actin with high affinity, as a proxy for filament mass (Figure 4A) (Belin et al., 2014; Burkel et al., 2007; Chaigne et al., 2013; Singh et al., 2017). To distinguish the \u2018old\u2019 and \u2018new\u2019 networks we assumed the old network to be a sphere with a radius that decreases according to the contraction rate derived from chromosome approach (Figure 4A):\n\n$$\nR(t)=R_{0}[1\u2212\u00a0\\alpha_{0}\u00a0t].\n$$\n\n![Figure 4.](https://cdn.elifesciences.org/articles/31469/elife-31469-fig4-v2.jpg)\n\n**Figure 4.:** (A) Quantification of F-actin mass by measuring 3mEGFP- or 3mCherry-UtrCH intensities in the region corresponding to the old network (orange circle). Right: scheme illustrating extrapolation of the intensities measured in the imaging plane to the 3D volume. (B) Relative changes in F-actin mass (normalized between 0\u00a0and\u00a01) over time calculated as explained in (A) for several oocytes. Equation 5 was used to fit the data (black curve). Data were collected from five independent experiments. (C) Filament size distribution at the start (cyan) and end (red) of the contraction process: filament length decreases as set by the depolymerization rate k0. (D) Schematic representations and equations for the two viscoelastic models, motor-driven (M) and disassembly-driven (D). (E) Fits of the two models, D in continuous line, M: dashed line to the contraction rates measured experimentally as shown in Figure 1F. N indicates the number of oocytes. Scale bar, 20 \u03bcm; time is given as mm:ss relative to NEBD.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31469/elife-31469-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Quantification of F-actin density (mean fluorescence intensity) in the old network in different experiments: (A) in untreated control oocytes (related to Figure 4); (B) in oocytes injected with different amount of UtrCH (related to Figure 6); (C) in Latrunculin A-treated oocytes (related to Figure 7); and (D) in SMIFH2-treated oocytes (related to Figure 9). N indicates the number of oocytes. Data were collected from at least three independent experiments.\n\nSuch quantifications extrapolated to the 3D volume revealed a continuous decrease of F-actin mass within the old network through the contraction process (Figure 4B, for F-actin densities see Figure 4\u2014figure supplement 1A). To relate this measure to the rate of filament disassembly, we expressed the mass of F-actin as the number of filaments per unit volume, and defined the rate of disassembly, $k(r,t)$\u00a0as:\n\n$$\nk=k_{0}\\frac{1+e^{\\lambda\u2019}}{1+e^{\\lambda\u2019/l}}\n$$\n\nwhere $k_{0}$\u00a0is the initial rate of F-actin disassembly, $\\lambda\u2019$ the dispersion of the length distribution of F-actin and $l(r,t)$ the normalized average length of F-actin (Figure 4B,C, see Supplementary file 1 for details). We found that Equation 5 fitted well the evolution of F-actin mass allowing us to extract the values of $k_{0}$ and $\\lambda\u2019$\u00a0(Figure 4B,C). For untreated oocytes, we found $k_{0}$ = 0.157 and $\\lambda\u2019$ = 0.6. These parameters are dimensionless as neither the length nor the number of filaments are known in absolute terms.\n\nNext, we explored potential mechanisms that can explain contraction under the constraints of the observed filament dynamics. F-actin networks are commonly modeled as active viscoelastic gels (Hannezo et al., 2015; Hawkins et al., 2009; Julicher et al., 2007; Kruse et al., 2006; Marchetti et al., 2013). For example, this approach was successfully used to model F-actin contraction in droplets of Xenopus egg extracts, with size and time scales comparable to our experimental system (Lewis et al., 2014). Thus, we developed a similar model assuming that effects of filament orientation can be neglected (i.e. assuming isotropic stresses), which is justified especially when no large-scale ordering of the system is observed (Hannezo et al., 2015; Hawkins et al., 2014; Lewis et al., 2014). We further assumed that viscosity mainly arises from network rearrangements rather than viscous drag, or in other words, that the main factor opposing contraction is the unbinding kinetics of cross-linkers (Blanchoin et al., 2014; Salbreux et al., 2012).\n\nWe modeled the F-actin network as a viscoelastic gel in which viscous stress $\\sigma_{v}$ (originating from friction within the network) and elastic stress $\\sigma_{\\omega}$ (originating from F-actin deformation) oppose the network contractile stress $\\sigma_{c}$. We further generalized the model to allow viscosity and elasticity of the system to depend on F-actin concentration, noted A.\n\nWe assumed the elastic stress to be isotropic and neo-Hookean (Lewis et al., 2014):\n\n$$\n\\sigma_{\\omega}=G_{0}A^{g}(1-\\omega)\n$$\n\nin which $\\omega$ is the strain and $G_{0}A^{g}$ is the elastic modulus, with $g=1,2$ characterizing the power law dependence of elasticity on A.\n\nThe viscous stress is written as:\n\n$$\n\\sigma_{\u03bd}=\u03b7_{0}\u2212\u00a0A^{\\mu}(\u2207\u2297v+\u2207\u2297v^{T})\n$$\n\nwhere $\u03b7_{0}\u2212\u00a0A^{\\mu}$ is the viscosity, with \u00b5 =$1,2$ being the power law dependence of viscosity on A.\n\nFor an F-actin gel, the contractile stress in a motor-driven process is generally written as (Hannezo et al., 2015; Julicher et al., 2007; Marchetti et al., 2013; Prost et al., 2015):\n\n$$\n\\sigma_{c}^{M}=-CA^{m}\n$$\n\nwhere $C$ is the contraction coefficient and $m=1,2$ is the power law dependence of contraction on A (Figure 4D).\n\nUnlike in a motor-driven process, we expect F-actin disassembly to generate a contractile stress dependent on the density of filament ends, and on their disassembly rate. Given that $A/l$ corresponds to the density of ends and $k$ the disassembly rate, the contractile stress can be written as (Figure 4D; see Supplementary file 1 for details):\n\n$$\n\\sigma_{c}^{D}=-Ck_{0}\\frac{A}{l}\n$$\n\nAt these scales, we assume inertia to be negligible, thus the gradient of stresses is zero:\n\n$$\n\u2207(\\sigma_{v}+\\sigma_{\\omega}+\\sigma_{c})=0\n$$\n\nWe determine the velocity field $v(r)$ of network displacement, which is set by force balance, by integrating Equation 10 in space. Then, we obtain $A(r,t)$, $l(r,t)$ and $\\omega(r,t)$ by integrating the equations of mass balance over time:\n\n$$\n\\frac{\u2202A}{\u2202t}+\u2207.(vA)=\u2212k\\frac{A}{l}\n$$\n\n\n\n$$\n\\frac{\u2202l}{\u2202t}+\u2207.(vl)=\u2212k\n$$\n\n\n\n$$\n\\frac{\u2202\\omega}{\u2202t}+\u2207.(v\\omega)=\\gamma_{\\omega}\\frac{k}{l}(1\u2212\\omega)\n$$\n\nin which $\\gamma_{\\omega}k/l$ is the strain relaxation rate. We integrated Equations 10, 11, 12 and 13 numerically (see Supplementary file 1 for details), and from the solution $vr,t,$ calculated $\\alphat$ using Equation 2. Since we could not find an analytical solution to the system of equations, we are unable to provide a simple formula for $\\alphat$ that is derived from first-principles. In addition, we defined the parameter $\u03f5$ describing adhesion at the nuclear boundary, such that the adhesive stress at the boundary is \u2212$\u03f5\u00a0C\u00a0A^{m}$ (see Supplementary file 1).\n\nIn the above framework of the active-gel theory, we first investigated whether a motor-driven (referred hereafter as model M) or a disassembly-mediated process (referred hereafter as model D) could possibly account for the observed decrease in F-actin mass during contraction. We determined the viscoelastic parameters by randomly sampling parameter values and fitting the integration results to the contraction rate $\\alpha(t)$ measured experimentally (Table 1 and Figure 1F). We find that both models can recapitulate the observed behavior (Figure 4E). However, the models additionally predict the contraction rate to depend directly on disassembly in model D, whereas this dependence is indirect and additionally depends on motor activity for model M. Thus, it is expected that the dependence of contraction rate on disassembly rate will differentiate the two models. Motivated by this prediction, we experimentally manipulated motor activity and the disassembly rate $k_{0}$ to assess whether model M or D can predict the observed contraction rate $\\alpha_{0}$ in various perturbation experiments.\n\n**Table 1.**\n Dimensionless viscoelastic parameters for untreated oocytes.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter name</th>\n      <th>Symbol</th>\n      <th>Model M</th>\n      <th>Model D</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Elasticity</td>\n      <td>G0/k0\u03b7-0</td>\n      <td>2.1264</td>\n      <td>1.4778</td>\n    </tr>\n    <tr>\n      <td>Contractility</td>\n      <td>C/k0\u03b7-0</td>\n      <td>1.1961</td>\n      <td>1.3082</td>\n    </tr>\n    <tr>\n      <td>Adhesion to boundary</td>\n      <td>\u03f5</td>\n      <td>0.6232</td>\n      <td>0.7838</td>\n    </tr>\n    <tr>\n      <td>Strain relaxation factor</td>\n      <td>\u03b3\u03c9</td>\n      <td>9.5898</td>\n      <td>2.3754</td>\n    </tr>\n    <tr>\n      <td>Elastic power law exponent</td>\n      <td>g</td>\n      <td>2</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Contractile power law exponent</td>\n      <td>m</td>\n      <td>2</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Viscous power law exponent</td>\n      <td>\u03bc</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n  </tbody>\n</table>\n\n### Perturbations of non-muscle myosin II have no effect on the rate of contraction\n\nIf the contractile process is motor-driven, non-muscle myosin II (NMYII) is the prime candidate to mediate it, as myosin II is the only myosin type that is able to assemble into minifilaments and generate force by pulling filaments towards one another (Murrell et al., 2015; Sellers, 2000; Syamaladevi et al., 2012). Indeed, in whole-oocyte proteomics analyses we found NMYII to be abundant in the starfish oocyte (data not shown). Thus, to test the possible role of NMYII we inhibited its motor activity by the small-molecule inhibitor, blebbistatin. Further, we over-expressed myosin regulatory light chain (MRLC), which we found in starfish oocytes to enhance NMYII activity (Bischof et al., 2017). To our surprise, these perturbations did not affect contraction rates derived from pair-wise chromosome approach (Figure 5A,B). To confirm the effectiveness of the treatments, we followed the same oocytes until the end of the first meiotic division, when the polar body is extruded, accompanied by a global surface contraction wave driven by NMY-2 (Bischof et al., 2017). Consistent with our earlier results, the amplitude of the contraction wave was significantly decreased upon blebbistatin treatment, while it was increased in oocytes over-expressing MRLC (Figure 5C,D). Thus, chromosome transport and derived contraction rates were unaffected by NMY-2 perturbations, which were effective as assessed by their effects on surface contraction waves in the same oocytes. Consistently, we saw no effects on chromosome transport following inhibition of the two common pathways of NMYII activation through myosin light chain kinase and Rho kinase, by injecting ML-7 and Y-27632, respectively (Figure 5A\u2013D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/31469/elife-31469-fig5-v2.jpg)\n\n**Figure 5.:** (A) Maximum-intensity z-projection through the nuclear region of oocytes expressing H2B-mCherry (cyan), either incubated for 3 hr with blebbistatin (300 \u03bcM), for 1 hr with ML-7 (100 \u03bcM) or Y-27632 (100 \u03bcM), or expressing MRLC-mEGFP, or treated with DMSO at a concentration corresponding to that of the blebbistatin treatment. Dashed circles represent the initial nuclear contour. Right: pseudocolored time projection of z-projections. Scale bar, 20 \u03bcm; time is given as mm:ss relative to NEBD. (B) Top: contraction rate over time for each condition with fits for determining \u03b10 done as for Figure 1F. Bottom: box plots combined with dot plots of derived values of \u03b10 for multiple oocytes. N indicates the number of oocytes. ANOVA: p<0.26. (C) Left: schematic of starfish meiosis to illustrate the relative times of NEBD, chromosome congression and surface contraction waves. Right: transmitted light frames at the maximum deformation during the surface contraction wave of oocytes treated exactly as for (A). (D) Quantification of the strength of the shape change (maximum variance of surface curvature) during the surface contraction wave performed on the same oocytes treated with blebbistatin, Y-27632 and ML-7 and injected with MRLC and corresponding DMSO control, confirming the effectiveness of the treatments. Dot plots of measurements on individual oocytes overlaid with box plots of the same data. N indicates the number of oocytes. ANOVA, p<0.0001. Data were collected from three independent experiments.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31469/elife-31469-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Selected frames from a time lapse of confocal sections through the nuclear region of live oocyte injected with DiIC16(3) to label endomembranes showing the absence of membranous structures in the nuclear region. Right: zoomed regions outlined by dashed boxes. (B) Maximum-intensity z-projection through the nuclear region of oocytes expressing H2B-mCherry (cyan), either injected with PBS (control) or expressing mEGFP-myosin Vb tail. Right: pseudocolored time projection of z-projections. (C) Left: contraction rates over time for each condition fitted by Equation 3 to determine \u03b10 as for Figure 1F. Right: box plots combined with dot plots of derived values of \u03b10 for multiple oocytes. Mann-Whitney\u2019s test, p<0.4. Scale bar, 20 \u03bcm; time is given as mm:ss relative to NEBD. N indicates the number of oocytes. Data were collected from two independent experiments.\n\nThe only alternative scenario we could envisage is a mechanism similar to that driving long-range vesicle transport, nuclear and spindle positioning in mouse oocytes (Chaigne et al., 2013; Holubcov\u00e1 et al., 2013; Schuh, 2011). In this case, directional transport is thought to result from polymerization of actin filaments on vesicles by Fmn2/Spire1/2 nucleators and transport of vesicles on these filaments by myosin V motors. However, a similar mechanism is unlikely to function is starfish oocytes, as this mechanism is strictly dependent on vesicles and in the nuclear region of starfish oocytes we did not observe any membranous structures (Figure 5\u2014figure supplement 1A), and the time scales do not match with the process running an order of magnitude slower in mouse as compared to starfish oocytes. Additionally, when we expressed a dominant-negative tail construct of myosin Vb (Schuh, 2011), we observed no effect on chromosome transport and derived contraction rates (Figure 5\u2014figure supplement 1B,C).\n\n### Filament stabilization slows contraction in a dose-dependent manner consistent with a disassembly-driven mechanism\n\nAs shown above, the mass of F-actin in the old network continuously decreases, and filament stabilization inhibits contraction, suggesting a direct link between F-actin disassembly and network contraction. To test this, we titrated in a stabilizing activity by injecting increasing amounts UtrCH using a quantitative microinjection method (Jaffe and Terasaki, 2004). Analysis of pair-wise chromosome approach showed that UtrCH slowed chromosome transport in a dose-dependent manner (Figure 6A,C). We derived the contraction rates for each condition as for Figure 1E,F, and using the contraction rate we calculated the size of the old network and the F-actin mass contained within, as for Figure 4A. Analysis of F-actin mass in the old network revealed that UtrCH slows net F-actin disassembly in a dose-dependent manner (Table 2, Figure 6B,D). Quantification of changes in mean UtrCH intensity in a fixed size region on the other hand revealed similar F-actin density despite the very different contraction rates (Figure 6E and Figure 4\u2014figure supplement 1B, respectively). In other words, stabilization by UtrCH did not render the network denser or sparser, it merely slowed its contraction. As a result, contraction rates ($\\alpha_{0}$) and decrease in F-actin mass were reduced in a correlated manner, indicating a direct coupling between disassembly and contraction.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/31469/elife-31469-fig6-v2.jpg)\n\n**Figure 6.:** (A) Maximum-intensity z projections of the nuclear region of oocytes expressing H2B-mCherry (cyan) and injected with different amounts of recombinant UtrCH or PBS as control. Dashed circles represent the initial nuclear contour. Right: pseudocolored time projection of z-projections. (B) Selected confocal sections through the nuclear regions of live oocytes expressing mCherry3-UtrCH. The extrapolated size of the old network shown by colored dashed circles that were used for calculation of F-actin mass. Region of constant size shown by colored solid circles is used to calculate F-actin density. (C) Contraction rates (\u03b10) were calculated as for Figure 1F. Box plots combined with dot plots. Kruskal-Wallis\u2019 post hoc test, **p<0.008; ****p<0.0001. (D) Quantification of F-actin mass in the old network in the different conditions shown in (B) and calculated as illustrated in Figure 4A. (E) Quantification of F-actin density in a constant size region shown in (B). (F) Fit of observed contraction rates to motor- and disassembly-driven models of contraction (dashed and continuous lines, respectively). Scale bars: 20 \u03bcm; time is given as mm:ss relative to NEBD. N indicates the number of oocytes. Data were collected from at least three independent experiments.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31469/elife-31469-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Model predictions for contraction rate, \u03b10 as a function of the depolymerization rate k0 are compared to experimental data derived from oocytes injected with varying amounts of UtrCH. Top: 10 best fitting parameter sets for disassembly-driven (left) and motor-driven (right) viscoelastic models. Bottom: comparison of the best fitting parameter sets for the two viscoelastic models (left) and purely viscous gel models (right). (B) Parameter space for the 20 best fitting parameter sets of the motor- and disassembly-driven viscoelastic models, for untreated oocytes (gray circles) and PBS injected UtrCH controls (black crosses).\n\n**Table 2.**\n Disassembly rates k0 (min\u22121) and dispersion of F-actin length distributions.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\"></th>\n      <th colspan=\"4\">UtrCH-stabilized</th>\n      <th colspan=\"2\">Lat A-treated*</th>\n      <th colspan=\"2\">SMIFH2-treated</th>\n    </tr>\n    <tr>\n      <th>Control</th>\n      <th>Low</th>\n      <th>Medium</th>\n      <th>High</th>\n      <th>Control</th>\n      <th>Lat A</th>\n      <th>Control</th>\n      <th>SMIFH2</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>k0</td>\n      <td>0.162</td>\n      <td>0.126</td>\n      <td>0.073</td>\n      <td>0.048</td>\n      <td>0.0819</td>\n      <td>0.5106</td>\n      <td>0.1995</td>\n      <td>0.1650</td>\n    </tr>\n    <tr>\n      <td>\u03bb\u2019</td>\n      <td>0.677</td>\n      <td>0.889</td>\n      <td>6.946</td>\n      <td>709.4</td>\n      <td>0.0671</td>\n      <td>14.66</td>\n      <td>1.555</td>\n      <td>1.540</td>\n    </tr>\n  </tbody>\n</table>\n\n_*The solvent, DMSO had an effect on the viscolelastic parameters even in controls (Supplementary file 3)._\n\nWe next compared these quantitative observations to the predictions of models of motor- and disassembly-driven contractile mechanisms. We first determined the viscoelastic parameters from control experiments (i.e. oocytes injected with PBS; Supplementary file 2) that were very similar to those for untreated oocytes (Table 1). We then used the measured disassembly rate $k_{0}$ and the dispersion of filament length $\\lambda\u2019$ to predict the contraction rate for each condition (without changing any other viscoelastic parameters) (Table 2). The two models, motor- and disassembly-driven, predicted very distinct behaviors in response to increasing UtrCH concentrations. For intermediate and high UtrCH levels, the motor-driven model predicted a fast increase of contraction rate, in contrast to the disassembly-driven model predicting contraction rate to remain nearly constant over time, well matching experimental observations (Figure 6F). Consistently, the initial contraction rate, $\\alpha_{0}$ derived from the disassembly-driven, but not from the motor-driven model, predicted contraction rates in response gradual stabilization (Table 3).\n\n**Table 3.**\n Contraction rates $\\alpha_{0}$ (min\u22121\u00a0\u00b1\u00a0S.D.) in response to increasing stabilization (UtrCH).\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"4\">UtrCH injection</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>Control</th>\n      <th>Low</th>\n      <th>Medium</th>\n      <th>High</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Experiment</td>\n      <td>0.0831\u00a0\u00b1\u00a00.012</td>\n      <td>0.0612\u00a0\u00b1\u00a00.011</td>\n      <td>0.0280\u00a0\u00b1\u00a00.006</td>\n      <td>0.0164\u00a0\u00b1\u00a00.005</td>\n    </tr>\n    <tr>\n      <td>Model M</td>\n      <td>0.0818</td>\n      <td>0.1821</td>\n      <td>0.2063</td>\n      <td>0.2133</td>\n    </tr>\n    <tr>\n      <td>Model D</td>\n      <td>0.0825</td>\n      <td>0.0586</td>\n      <td>0.0226</td>\n      <td>0.0117</td>\n    </tr>\n  </tbody>\n</table>\n\nThis is explained by the fact that in the disassembly-driven mechanism contraction and disassembly rates are inherently coupled. In the motor-driven model, decreasing disassembly rate caused an increase in F-actin concentration that resulted in more effective motor action, leading to the observed increase of contraction rate over time. Similar results were obtained with a purely viscous model (Figure 6\u2014figure supplement 1 and Supplementary file 1).\n\n### Enhanced filament disassembly speeds up contraction as predicted by the disassembly-driven model\n\nTo further test the active role of disassembly in driving contraction, we used Latrunculin A, a toxin that sequesters actin monomers. Therefore, Latrunculin A is expected to block actin filament assembly and to enhance depolymerization by reducing the effective monomer concentration (Spector et al., 1989). Thus, in a dynamically assembling and disassembling network the net effect will be shifting the equilibrium towards disassembly.\n\nWe observed a dramatic increase in contraction rate upon acute treatment with a high dose of Latrunculin A (Figure 7A, Video 3). Starting approx. 50 s after Latrunculin A addition, the network diameter begun to decrease at rates approx. three-fold higher than DMSO controls (Figure 7B). Quantification of F-actin mass in the rapidly contracting old network revealed that F-actin amount decreased at a correspondingly faster rate (Figure 7C, Figure 4\u2014figure supplement 1C and Table 2).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/31469/elife-31469-fig7-v2.jpg)\n\n**Figure 7.:** (A) Selected frames from a time lapse of confocal sections through the nuclear region of live oocytes expressing mEGFP3-UtrCH (gray). Oocytes were treated with either Latrunculin A (2.5 \u03bcM) or a corresponding amount of DMSO\u00a0~2 min after the start of NEBD. (B) The size of the contracting network was calculated similar to Figure 2D. (C) Quantification of F-actin mass in the old network as described in Figure 4A. (D) Comparison of fits of motor- and disassembly-driven models to the observed network contraction rate (dashed and continuous lines, respectively). N indicates the number of oocytes. Data were collected from at least three independent experiments.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31469/elife-31469-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Maximum z-projections of selected time points through the nuclear region of oocytes expressing mEGFP3-UtrCH (gray) and injected with H1-AlexaFluor 568 to visualize chromosomes (cyan). Latrunculin A (2.5 \u03bcM) was added\u00a0~\u00a05:30 min after NEBD. n: nucleolus. Scale bar, 20 \u03bcm; time is given as mm:ss relative to NEBD.\n\n![Video 3.](https://cdn.elifesciences.org/articles/31469/elife-31469-video3.mp4.jpg)\n\n**Video 3.:** Oocytes expressing 3mEGFP-UtrCH to visualize F-actin were acutely treated either with DMSO (left) or Latrunculin A (right). Scale bar: 20 \u03bcm.\n\nSimilar to above, we next determined the viscoelastic parameters of the network in the DMSO control (Supplementary file 3, note that this time $\\alphat$ was derived from fitting the network diameter since chromosomes escape and thus cannot be used for the analysis, Figure 7\u2014figure supplement 1). We then used the measured disassembly rate $k_{0}$ and the dispersion of filament length $\\lambda\u2019$ to predict $\\alphat$ by the two models (Table 2). While the motor-driven model predicted the contraction rate to change little upon increased disassembly, the disassembly-driven model predicts an increase in contraction rate closely matching experimentally observed values (Figure 7D).\n\nIn summary, the observed changes in contraction due to perturbations of motor activities, as well as stabilizing and destabilizing filaments, are well predicted by a model in which contraction is driven by disassembly, but not by a motor-driven model. While in many aspects the two models are similar (e.g. both models include the \u2018fluidization\u2019 of the network by disassembly), the principal difference is that in the disassembly-driven model disassembly and contraction are directly coupled.\n\n### In silico reconstitution of the contractile system predicts a \u2018depolymerization harnessing factor\u2019 essential to drive contraction\n\nOur data suggest that the F-actin network transporting chromosomes in starfish oocytes contracts by a mechanism mediated by filament disassembly. To explore the mechanism at the filament level, we implemented an agent-based model in the Cytosim software (Nedelec and Foethke, 2007). We based the model on recently published cytosim simulations, used to support a general theoretical framework of contractility in disordered filament networks, albeit in that case with static filaments (Belmonte et al., 2017). As in the published model, we used a circular 2D geometry, assuming a \u2018nuclear region\u2019 with a radius of 10 \u03bcm initially filled by filaments having the rigidity of F-actin. We then added a few features to model the starfish chromosome transport system: first, disassembly occurring at the same rate for all filaments throughout the network; and second new filament assembly at the boundary. We also introduced \u2018chromosomes\u2019, passive objects embedded in the network for the purpose of producing simulated trajectories.\n\nWe first tested whether the combination of disassembly and cross-linking could drive network contraction. Consistent with previous theory and experiments (Belmonte et al., 2017; Bendix et al., 2008; Braun et al., 2016), in the absence of molecular motors the disassembling network did not contract over a broad range of parameters (number of filaments, cross-linkers and their unbinding rates) tested (Figure 8\u2014figure supplement 1A\u2013C).\n\nThis suggested that contraction in our system either requires a molecular motor or a specific molecular activity that is capable of harnessing F-actin disassembly to produce contractile force. This latter can be a molecule capable of tracking the depolymerizing end of a filament and forming a connection to a neighboring filament at the same time (Zumdieck et al., 2007). Introducing such elements into the simulations, referred to as end-binding cross-linkers, resulted in robust large-scale contraction of the disassembling network in the absence of molecular motors (Figure 8\u2014figure supplement 1A,B).\n\nWe then tested the effects of assembly of new filaments at the network boundary. This reproduced well the observed behavior, whereby newly produced filaments fill up the space left by the \u2018old\u2019 contracting network. Interestingly, we found that contraction rate is rather insensitive to the rate of filament assembly at the boundary: insufficient or excess filament production rates led to inhomogeneity in the network, but this did not significantly affect the rate of contraction (Figure 8\u2014figure supplement 1D). This suggests that the contraction of the old network, and new filament assembly at the NER boundary do not necessarily need to be coupled, and this is consistent with experimental observations. First, we observed an accumulation of filaments at the boundary of old and new networks in oocytes in which contraction and filament production was imbalanced by UtrCH stabilization (Figure 8\u2014figure supplement 1E). Second, in untreated oocytes we observed a gradual accumulation of filaments at the NER boundary from the vegetal to the animal pole. This can be explained by constant rate of filament production all along the boundary, and while these produced filaments are distributed to fill in the relatively larger gap at the vegetal pole, filaments accumulate at the animal pole where there is no gap (Figure 8\u2014figure supplement 1E). Thus it appears that filament production does not contribute to force production; it rather serves to fill in the gap between the \u2018old network\u2019 and cytoplasmic F-actin networks, mechanically isolating the contractile system in the nuclear region from the cytoplasm (Figure 8\u2014figure supplement 1E).\n\nAs the final step, we combined these components of the contractile system, and set the rate of global disassembly and assembly at the boundary to match experimental observations. We then simulated two scenarios: (i) contraction driven by an end-binding cross-linker harnessing depolymerization for generating contractile force; (ii) myosin II-like motor activity driving contraction of the disassembling network (in presence of cross-linkers, but without end-binding cross-linkers) (Figure 8A,B). Both simulations produced robust contraction. However, while contraction mediated by the end-binding cross-linker closely reproduced several key features of the experimental system, motor-driven contraction showed a distinct behavior not observed experimentally (Figure 8C, Video 4). First, the disassembly-driven mechanism invariably produces contraction with a constant speed, as observed experimentally, while motor-driven contraction typically accelerates (Figure 8C). Second, while a strictly quantitative comparison of the 2D simulations and the 3D experimental system is not possible, network density remains nearly constant during contraction in the disassembly-driven simulations, as in experiments, while during motor-driven contraction network density continuously increases (Figure 8D). Further, the simulations reproduce the fact that contraction rate for a disassembly-driven mechanism is tightly coupled to the rate of disassembly (Figure 8E).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/31469/elife-31469-fig8-v2.jpg)\n\n**Figure 8.:** (A) Top: schematic representation of the mechanism by a hypothetical end-tracking cross-linker serving as \u2018depolymerization harnessing factor\u2019. Bottom: zoom on two filaments linked by such end-tracking cross-linker as implemented in simulations in (B). The blue \u2018head\u2019 corresponds to a binder subunit, the red head binds and tracks the depolymerizing end. (B) Snapshots of 2D Cytosim simulations for motor- and disassembly-driven mechanisms. Simulations start with 5000 filaments (red) of a length of 1.5 \u03bcm and a disassembly rate of 0.0015 \u03bcm/s for all filaments. New filaments (white) are added at the boundary at a constant rate of 12 filaments per second. Chromosomes attached to the network are shown in cyan. (C) Left panels: plot of pair-wise distances of chromosomes, d versus time derived from simulations in (B). Right panels: Contraction rates calculated for 2 min intervals, similar to Figure 1E,F, for different rates of filament production. (D) Filament density derived from the simulations shown in (A). (E) The radius of the contracting \u2018old\u2019 network was extracted from simulations similar to that shown in (A) testing the effect of disassembly rates in the disassembly-driven mechanism.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31469/elife-31469-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Selected snapshots of Cytosim simulations for different mechanisms of contraction. Actin filaments are shown in red. (B) Plot of the network radius over time for each simulation shown in (A). (C) Surface plots of the network radius after 10 min of simulation in the scenario with disassembly combined with cross-linkers only. Contraction is not observed for a wide range of cross-linker number, depolymerization rate (koff) and initial number of filaments. (D) Top: selected snapshots of contracting networks after 10 min of simulation for different rates of new filament production at boundary. Initial \u2018old network\u2019 in red, filaments of the new network in white. Bottom: the radius of the contracting network over time for different rates of filament production. (E) Filament production at the boundary and \u2018old network\u2019 contraction is balanced in centrifuged oocytes (no visible accumulation of filaments at the boundary of old and new network). When contraction and filament production is imbalanced either by stabilization (UtrCH) or by anchoring the network to the animal pole, accumulation of new filaments can be observed at the boundary of old and new networks, consistent with simulation results. Scale bar: 20 \u03bcm.\n\n![Video 4.](https://cdn.elifesciences.org/articles/31469/elife-31469-video4.mp4.jpg)\n\n**Video 4.:** Simulations show production of filaments (gray) while initially present filaments (red) are contracting to transport chromosomes (cyan).\n\nTaken together, the simulations are consistent with the active gel theory, and additionally identify the \u2018disassembly harnessing factor\u2019 as the key component driving the contractile system. By searching the literature for molecular candidates for such factor with features predicted by the simulations, we found that a formin-like molecule may fit these requirements. It has been shown that in vitro and under specific conditions the formin, mDia1 is able to track depolymerizing ends and generate pulling forces on the disassembling filament end (J\u00e9gou et al., 2013; Mizuno et al., 2007). In addition, formins have been shown to have cross-linking activities on their own or by binding to other actin regulators such as Spire (Esue et al., 2008; Montaville et al., 2014). In this way a hypothetical formin may serve as an effective \u2018harnessing factor\u2019.\n\nWe tested this hypothesis by inhibiting all formin-like activities in the oocyte by SMIFH2, a small-molecule inhibitor of the FH2 domain contained and essential for the activity of all known formins (Rizvi et al., 2009), and which has already been evaluated in mouse and starfish oocytes (Kim et al., 2015; Ucar et al., 2013). We thus quantified the contraction rate and F-actin mass in oocytes treated with SMIFH2 and compared to DMSO controls (Figure 9A\u2013D and Figure 4\u2014figure supplement 1D, Table 2). Impairing formin activity led to a significant decrease of network contraction rate and a reduction of F-actin mass loss, similar to stabilization by UtrCH, and well predicted by the disassembly-driven model (Figure 9E; Table 4 and Supplementary file 4).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/31469/elife-31469-fig9-v2.jpg)\n\n**Figure 9.:** (A) Maximum-intensity z-projection through the nuclear region of oocytes expressing H2B-mCherry (cyan), either incubated with DMSO or SMIFH2 (50 \u03bcM). Right: pseudocolored time projection of z-projections. Dashed circles outline the initial nuclear contour. Scale bar: 20 \u03bcm; time is given as mm:ss relative to NEBD. (B) Selected confocal sections through the nuclear regions of live oocytes expressing mCherry3-UtrCH. The extrapolated size of the old network shown by dashed circles is used for calculation of F-actin mass. (C) Left: contraction rate over time for each condition with fits for determining \u03b10 as in Figure 1F. Right: box plots combined with dot plots of \u03b10 for multiple oocytes. N indicates the number of oocytes. Mann-Whitney\u2019s test, ***p<0.0005. Data collected from three independent experiments. (D) Quantification of F-actin mass in the old network calculated as in Figure 4A. (E) Fit of observed contraction rates to motor- and disassembly-driven models of contraction (dashed and continuous lines, respectively).\n\n**Table 4.**\n Contraction rates $\\alpha_{0}$ (min\u22121\u00a0\u00b1\u00a0S.D.) in response to SMIFH2 treatment.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Control</th>\n      <th>SMIFH2</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Experiment</td>\n      <td>0.086\u00a0\u00b1\u00a00.006</td>\n      <td>0.073\u00a0\u00b1\u00a00.007</td>\n    </tr>\n    <tr>\n      <td>Model M</td>\n      <td>0.0859</td>\n      <td>0.1139</td>\n    </tr>\n    <tr>\n      <td>Model D</td>\n      <td>0.0848</td>\n      <td>0.0675</td>\n    </tr>\n  </tbody>\n</table>\n\nWhile these results suggest that a formin-like molecular activity may be harnessing the free energy originating from disassembly of actin filaments, unfortunately the experimental tools currently available in starfish oocytes are limited, and thus identification of this factor will remain a challenge for the future.\n\n## Discussion\n\nAnimal oocytes typically have an exceptionally large nucleus storing nuclear proteins such as histones needed for early embryonic development. Oocytes also divide very asymmetrically in order to retain these nutrients in a single egg. The requirement for this highly asymmetric division constrains the size of the meiotic spindle. Therefore, across animal species, the meiotic spindle is small and this necessitates additional mechanism to collect and transport chromosomes scattered in the large nuclear volume to the forming microtubule spindle.\n\nHere, we propose and reconstruct in silico a simple and robust architecture for an F-actin-based contractile system adapted to the essential function of transporting chromosomes in the large oocyte. First, the process is triggered by NEBD opening the previously inaccessible nuclear compartment to cytoplasmic actin, actin assembly factors and cross-linkers resulting in the rapid assembly of a cross-linked F-actin network in the nuclear region. As revealed by our simulations, the only additional components necessary are: (i) filament production along the boundary to separate the nuclear region from cytoplasmic F-actin networks allowing contraction towards the center, and (ii) overall filament dynamics shifted towards disassembly. In the presence of a \u2018depolymerization harnessing factor\u2019 this system undergoes robust contraction exhibiting features that closely match the experimental observations. These include constant speed, stable network density during contraction (well matched to the size of chromosomes [Mori et al., 2011]), and graded response to filament stabilization and destabilization, but no effect of motor inhibition. We find that the rate of disassembly is the key parameter controlling the rate of contraction, while contraction rate is broadly insensitive to filament production at the boundary. Finally, an additional elegant feature of the system is that the disassembling network will eventually release the transported chromosomes, as it loses connectivity and stops contracting. By contrast, in the absence of disassembly, a contracting network would necessarily densify, in which case the chromosomes would be surrounded by a tight meshwork of F-actin at the end of contraction, which would likely interfere with their capture by spindle microtubules.\n\nIn conclusion, we investigated here a contractile system adapted to transport chromosomes in large oocytes. Both experiments and simulations point to an F-actin disassembly-driven mechanism driving this process, as a simple and robust solution to the challenge posed by the size and geometry of the starfish oocyte. Network contraction can be seen here as a large-scale treadmilling system, where F-actin disassembles in bulk and is replenished by filaments polymerized at the NER boundary. However, the evidences lead us to conclude that de-novo filament assembly at the NER boundary does not participate in force generation, which rather originates in the bulk of the network.\n\nKey questions remain open regarding the detailed molecular mechanism underlying disassembly-driven force generation. The first question is the exact source of free energy driving the process. While actin polymerization is well established to produce force, at cell protrusions, for example (Footer et al., 2007; Krause and Gautreau, 2014), force production by disassembly has so far only been evidenced in vitro for specific actin concentration (J\u00e9gou et al., 2013). It is clear that microtubule depolymerization can produce force (Grishchuk et al., 2005), that is harnessed for example to drive separation of sister chromatids in anaphase (Cheeseman and Desai, 2008; Westermann et al., 2006). Similar to tubulin, actin polymerization is tightly coupled to nucleotide hydrolysis driving the system out of equilibrium that may enable generation of force by depolymerization (Braun et al., 2016). Alternatively, entropic forces generated either by crowding agents surrounding filaments or by diffusible cross-linkers confined in filament overlaps could drive contraction (Braun et al., 2016), but we have not tested this possibility.\n\nAnother important question is the identity and nature of the factor harnessing the free energy originating from disassembly of actin filaments, and converting it into contractile force. Intriguingly, experiments in vitro and our initial experiments in starfish oocytes hint at formins as potential candidates for this function. These results need to be confirmed, since they rely on a small-molecule inhibitor, SMIFH2, which has been shown to inhibit formins in starfish oocytes (Ucar et al., 2013), but its specificity and selectivity profile is yet to be characterized. Secondly, the observed effect may be indirect resulting from the altered balance between other formin-driven actin assembly pathways and Arp2/3 nucleated structures, as recently showed in yeast (Burke et al., 2014). Finally, although J\u00e9gou and colleagues clearly demonstrated tracking of filament ends by mDia1 (J\u00e9gou et al., 2013), we are at present unable to assess how similar or different these in vitro conditions may be from those in starfish oocytes, where (dis)assembly dynamics at filaments ends is likely to be regulated by multiple, so far unidentified factors.\n\nIt will be very exciting to test in the future whether formins, so far primarily considered to promote polymerization, may be also involved in transmitting force at disassembling filaments ends in vivo. However, at this point we are not able to exclude other scenarios, such as rapid re-binding of a cross-linker to the shrinking filament end (Mendes Pinto et al., 2012). Further, the rate of disassembly could be affected by severing, generating more depolymerizing ends, and the actual rate of depolymerization at the end set by capping and depolymerizing factors. More elaborate models are necessary to explore these scenarios. In either case, the contractile 3D network we analyzed here, adapted to the task of transporting chromosomes in the large starfish oocyte, will continue to be a valuable system to further explore the important mechanistic details of the so far poorly understood motor-independent mechanisms of contraction.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Biological sample</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Patiria miniata</td>\n      <td>Patiria miniata</td>\n      <td>https://scbiomarine.com/</td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MRLC (Patiria miniata)</td>\n      <td>MRLC-mEGFP</td>\n      <td>doi:10.1038/s41467-017-00979-6</td>\n    </tr>\n    <tr>\n      <td>H2B (human)</td>\n      <td>H2B-mCherry, H2B-3mEGFP</td>\n      <td>doi:10.1038/nmeth876</td>\n    </tr>\n    <tr>\n      <td>Utrophin CH domain (human)</td>\n      <td>mEGFP3-UtrCH, 3mCherry-UtrCH</td>\n      <td>doi:10.1002/cm.20226</td>\n    </tr>\n    <tr>\n      <td>myosinVb tail domain (mouse)</td>\n      <td>myosinVb-Tail</td>\n      <td>doi:10.1038/ncb2802</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Histone H1 (calf)</td>\n      <td>H1</td>\n      <td>Merck</td>\n    </tr>\n    <tr>\n      <td>Utrophin CH domain (human)</td>\n      <td>UtrCH</td>\n      <td>doi:10.1002/cm.20226</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>AmpliCap-Max T7 High Yield Message Maker</td>\n      <td>AmpliCap-Max T7 High Yield Message Maker</td>\n      <td>CellScript</td>\n    </tr>\n    <tr>\n      <td>Poly(A) tailing kit</td>\n      <td>Poly(A) tailing kit</td>\n      <td>CellScript</td>\n    </tr>\n    <tr>\n      <td>Gel filtration column PD-10</td>\n      <td>Gel filtration</td>\n      <td>GE Healthcare</td>\n    </tr>\n    <tr>\n      <td>Ni-NTA resin</td>\n      <td>Ni-NTA resin</td>\n      <td>Qiagen</td>\n    </tr>\n    <tr>\n      <td>Vivaspin column 10,000 MW</td>\n      <td>Vivaspin column</td>\n      <td>Sartorius</td>\n    </tr>\n    <tr>\n      <td>Alexa Fluor 568 succinimidyl ester</td>\n      <td>Alexa Fluor 568 succinimidyl ester</td>\n      <td>Invitrogen</td>\n    </tr>\n    <tr>\n      <td>Alexa Fluor 488 succinimidyl ester</td>\n      <td>Alexa Fluor 488 succinimidyl ester</td>\n      <td>Invitrogen</td>\n    </tr>\n    <tr>\n      <td>Chemicals, drugs</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>DiIC16(3)</td>\n      <td>DiI</td>\n      <td>Invitrogen</td>\n    </tr>\n    <tr>\n      <td>1-methyladenine</td>\n      <td>1-MA</td>\n      <td>ACROS organics</td>\n    </tr>\n    <tr>\n      <td>Phalloidin-AlexaFluor 568</td>\n      <td>Phalloidin-AlexaFluor 568</td>\n      <td>Invitrogen</td>\n    </tr>\n    <tr>\n      <td>LatrunculinA</td>\n      <td>Lat A</td>\n      <td>Abcam</td>\n    </tr>\n    <tr>\n      <td>SMIFH2</td>\n      <td>SMIFH2</td>\n      <td>Tocris</td>\n    </tr>\n    <tr>\n      <td>Y-27632</td>\n      <td>Y-27632</td>\n      <td>Enzo Life Sciences</td>\n    </tr>\n    <tr>\n      <td>ML-7</td>\n      <td>ML-7</td>\n      <td>Tocris</td>\n    </tr>\n    <tr>\n      <td>Blebbistatin</td>\n      <td>BB</td>\n      <td>Abcam</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Matlab</td>\n      <td>Matlab</td>\n      <td>Mathworks</td>\n    </tr>\n    <tr>\n      <td>Cytosim</td>\n      <td>Cytosim</td>\n      <td>doi:10.1088/1367-2630/9/11/427</td>\n    </tr>\n  </tbody>\n</table>\n\n### Oocyte injection, maturation and centrifugation\n\nStarfish (P. miniata, also known as Asterina miniata) were obtained from Southern California Sea Urchin Co., Marinus Scientific, South Coast Bio-Marine, or Monterey Abalone Co. and maintained in seawater tanks at 15\u00b0C at the European Molecular Biology Laboratory (EMBL) Marine Facility. Oocytes were isolated and injected using mercury-filled needles as described elsewhere (Jaffe and Terasaki, 2004). Recombinant protein markers were injected shortly (10\u201315 min) after initiation of meiosis, whereas mRNA injections were done the day before and incubated overnight at 14\u00b0C to obtain sufficient levels of protein expression. Meiotic maturation was triggered by the addition of 10 \u00b5M 1-methyladenine (ACROS Organics). NEBD typically started 25 min after hormone addition, and only oocytes starting NEBD between 15 and 35 min were analyzed. Oocyte centrifugation was performed at 2500 rpm for 20 min (Multifuge 3; Heraeus) at 4\u00b0C, as detailed elsewhere (Matsuura and Chiba, 2004; Mori et al., 2011).\n\n### Live cell fluorescent markers\n\nH2B-3mEGFP, H2B-mCherry (Neumann et al., 2006), mEGFP3- and mCherry3-UtrCH (Burkel et al., 2007) and MRLC-mEGFP (Bischof et al., 2017) were subcloned into pGEMHE for in vitro transcription as described elsewhere (L\u00e9n\u00e1rt et al., 2003). Mouse sequence of Myosin Vb Tail was used to search for homologs in the P. miniata transcriptome by BLASTP (Altschul et al., 1990). Hits were considered homologs when the e-value was\u00a0<\u00a010\u221220. Identified cDNA sequence was synthetized by GENEWIZ, fused to mEGFP and subcloned into pGEMHE for in vitro transcription. Capped mRNAs were synthesized from linearized templates using the AmpliCap-Max T7 High Yield Message Maker and extended with poly(A) tails using the Poly(A) Tailing kit (CellScript). mRNAs were dissolved in 11 \u00b5l RNase-free water (typically at 8\u201312 \u00b5g/\u00b5l) and injected to 1\u20135% of the oocyte volume. Histone H1 from calf thymus (Merck) was labeled with AlexaFluor 568 succinimidyl ester (Invitrogen) according to the manufacturer\u2019s instructions, purified, concentrated by Vivaspin columns (10,000 MW, Sartorius) and was injected to 0.1% of the oocyte volume. DiIC16(3) (Invitrogen) was dissolved in vegetable oil to saturation and injected into oocytes as in (L\u00e9n\u00e1rt et al., 2003). The methanol stock of phalloidin-AlexaFluor 568 (Invitrogen) was dried and dissolved in PBS (pH 7.2) and amounts corresponding to 10\u22125 units were injected directly into the nuclear region of oocytes\u00a0~\u00a01 min after NEBD. Utrophin CH domain (UtrCH) (Burkel et al., 2007) was subcloned into pET24d(+) for expression in E. coli. The recombinant protein was expressed for 1 hr at 37\u00b0C and purified on a Ni-NTA resin (QIAGEN). The purified protein was labeled by AlexaFluor 488 and AlexaFluor 568 succinimidyl ester (Invitrogen) according to the manufacturer\u2019s instruction, purified by gel filtration (PD-10, GE Healthcare) and concentrated by Vivaspin columns (10,000 MW, Sartorius) before injection to oocytes. Fluorescently labeled recombinant UtrCH was injected 5\u201310 min prior to NEBD.\n\n### Drug treatments\n\nFor drug treatments, oocytes were transferred into plastic dishes (Ibidi #80131). To inhibit myosin II ATPase activity, oocytes were incubated with a final concentration of 300 \u00b5M Blebbistatin (Abcam) for at least 3 hr before starting maturation; with ML-7 (Tocris) and Y-27632 (Enzo Life Sciences) at a final concentration of 100 \u00b5M for 1 hr. To induce acute F-actin depolymerization, oocytes were first matured and then treated with Latrunculin A (Abcam) after NEBD, as NEBD is known to depend on actin polymerization in starfish oocytes (Mori et al., 2014). To inhibit formin FH2 activity, we incubated oocytes with SMIFH2 (Tocris) at a final concentration of 50 \u00b5M for at least 2 hr.\n\n### Light microscopy and laser ablation\n\nMicroscopy was done on a Leica SP5 or SP8 confocal microscope equipped with a fast Z-focusing device (SuperZ galvo stage) and using a 40x HCX PL AP 1.10 NA water immersion objective lens (Leica Microsystems). To record chromosome transport, starfish oocytes were imaged in 3D (a Z-step of 2 \u00b5m over 70 \u00b5m) over time (time step of 5 s) using a square frame of 256 \u00d7 256 pixels at a pixel size of 447 nm. To monitor F-actin network contraction, starfish oocytes were imaged in 3D centered on the median plane (plane of biggest surface) with a Z-step of 2 \u00b5m covering 10\u201320 \u00b5m over time (time step 10 s) using a square frame of 512 \u00d7 512 pixels at a pixel size of 223 nm. All imaging was performed at room temperature (20\u201322\u00b0C).\n\nA pulsed two-photon laser (Chameleon, Coherent) was interfaced to a LSM780 confocal microscope (Zeiss) through a customized optical path aligned with the optical axis of the microscope. We sequentially imaged (a Z-step of 2 \u00b5m over 20 \u00b5m every 10 s) and performed 3D ablation (typical duration\u00a0~\u00a01 s) by imaging a stack of 1 \u00d7 50\u00d760 \u00b5m, with a Z-step of 2 \u00b5m at 800 nm (30% laser power). Imaging was started\u00a0~\u00a01 min before the 3D ablation.\n\n### Image processing and data analysis\n\nImage processing was done using Fiji (Schindelin et al., 2012). Figures were assembled in Adobe Illustrator. Data analyses were performed using Matlab (MathWorks). Image data are shown after brightness and contrast adjustment and application of a 2D Gaussian blur filter (sigma value: 0.2\u20131.0). Some image data were registered using the \u2018StackReg\u2019 plugin implemented in Fiji to correct for oocyte movements during experiments. Panels show either single Z-slices, maximum or sum intensity projections as indicated in the figure legends. Colored time projections were done using the TimeRGBcolorcode macro in Fiji. Chromosome tracking and data analysis were done by in-house routines written in Matlab. Segmentation and tracking algorithms are described elsewhere (Monnier et al., 2012). Pair-wise relative chromosome velocities were defined as the slope of the best-fit line (R2\u00a0>\u00a00.9) to the separation distance between the pair versus time. Similarly, pair-wise chromosome approach rate was defined as the slope of the linear fit to the separation distance between the pair for every 2 min interval during the actin-driven transport phase (from 2 to 8 min after NEBD).\n\nTo control for photobleaching, we measured fluorescence intensity in a small region in the cytoplasm during the time course of the experiment. Oocytes in which the fluorescence intensity decrease exceeded 10%, were not included in further analysis.\n\nTo measure the mass of F-actin, a custom-written Fiji macro was first used to automatically segment the nuclear region based on either the DiIC16(3) fluorescence or the bright field channel. This pipeline included a FeatureJ Hessian filtering, followed by a 2D Gaussian filtering and automatic thresholding using the \u2018Otsu\u2019 or \u2018Huang\u2019 algorithm. The segmented area was then used on the F-actin channel to measure the density (\u2018mean\u2019) (Figure 4A and Figure 4\u2014figure supplement 1). To estimate the mass of F-actin within the contracting network over time, we used the initial outline of the nucleus at the onset of the actin-driven phase, and applied iteratively the function \u2018Enlarge\u2019 with a factor equals to $-(\\alpha_{0})$ to extrapolate the area and further the volume of the contracting network. Thus, the mass over time was measured as the product of the density and the extrapolated volume at each time point. For Latrunculin A-treated oocytes, we proceeded in two steps: before the addition of Latrunculin A, we extrapolated the size of the old network using $\\alpha_{0}$ derived from chromosome tracking. After drug addition, we measured the size of contracting old network, and derived the contraction rate similar to Figure 2E.\n\nSurface curvature measurements were performed using an algorithm written in Matlab and described elsewhere (Bischof et al., 2017). The strength of surface contraction waves was defined by the maximum variance of the radius of curvature. The Matlab script is available in the Supplementary file 6. Statistical tests used were unpaired nonparametric tests (Mann-Whitney and Kruskal-Wallis) implemented in Matlab.\n\n### Computer simulations\n\nThe contractile networks were simulated with Cytosim (Nedelec and Foethke, 2007) using a Langevin dynamics approach. Actin filaments are represented by incompressible bendable filaments of rigidity 0.075 pN.\u03bcm2 (persistence length of 18 \u00b5m) in a medium of viscosity 0.3 Pa.s (Belmonte et al., 2017; Gittes et al., 1993). Filaments have an initial length of 1.5 \u00b5m and are discretized into segments of 100 nm. Disassembly occurs from one end at a speed of 0.0015 \u00b5m/s. The other end is static. Cross-linkers are modeled as Hookean springs of 10 nm resting length and rigidity of 250 pN/\u00b5m with a binding rate kon\u00a0=\u00a010 s\u22121 (binding range of 0.01 \u03bcm) and an unbinding rate koff\u00a0=\u00a00.1 s\u22121 that is independent of the force exerted by the link. Motors are also Hookean springs of similar characteristics as cross-linkers, but motors additionally move on filaments with a speed of 0.02 \u00b5m/s, with a linear force-velocity relationship characterized by a maximal stall force of 6 pN. Chromosomes are modeled as point-like particles to trace the network evolution, but without a drag they do not affect its behavior. Chromosomes can bind a single filament with a binding rate kon\u00a0=\u00a010 s\u22121 (range of 0.1 \u03bcm) and a force-independent unbinding rate koff\u00a0=\u00a00.0001 s\u22121, and are also able to track the depolymerizing end of filaments. Actin disassembly, cross-linker and motor binding and unbinding events were modeled as first-order stochastic processes (Gillespie, 1977).\n\nTo limit the computational cost and focus on the effect of the mode of contraction, we limited the simulation to a circular two-dimensional system of constant radius 10 \u00b5m and we neglected the steric interaction between filaments. The disc was populated initially by 5000 filaments of 1.5 \u00b5m long, 20,000 cross-linkers and 20,000 motors for the motor-driven mechanism. For the disassembly-driven mechanism, we added 40,000 end-tracking cross-linkers to the simulated system. All filaments disassembled at the same rate from one end while the other end remained stable. The disassembly rate was set at 0.0015 \u03bcm/s to match the experimentally measured contractile characteristics. To simulate the polymerization of newly-assembled filaments at the edge of the nuclear region, filaments were added with an initial length of 1.5 \u00b5m at the boundary at a rate of 12 filaments per second. Because there is no edge or steric interactions, adding new filaments per se does not produce compressive force on the old network. Cytosim is an Open Source project hosted\u00a0on\u00a0https://github.com/nedelec/cytosim.\u00a0The configuration file is provided as Supplementary file 1.\n\n### Supplementary material\n\nThe Supplementary Material includes 7 figure supplements, 4 Supplementary Movies, 6 Supplementary Files including the detailed description of the viscoelastic model (Supplementary file 1), 3 tables (Supplementary file 2\u20134) and the configuration file for the Cytosim model (Supplementary file 5) to be run in Cytosim available\u00a0at\u00a0https://github.com/nedelec/cytosim (N\u00e9d\u00e9lec, 2018;\u00a0copy archived at https://github.com/elifesciences-publications/cytosim). The Matlab scripts used to analyze chromosome tracks is also available (Supplementary file 6).\n",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "6ea4322e-c49f-44f5-97ab-3fc6fb22d7d0",
+      "submission_id": "99c8b231-3fe8-40fe-b043-0ff2bc587197",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Pekka Lappalainen, University of Helsinki Finland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.31469.034](https://doi.org/10.7554/eLife.31469.034)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Disassembly-driven contraction of an F-actin network transports chromosomes in starfish oocytes\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Pekka Lappalainen (Reviewer #1), is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Andrea Musacchio as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nContractile actomyosin structures are critical for many morphogenetic events and transport processes in cells. Recent studies demonstrated that a three-dimensional contractile actin network collects chromosomes and transports them to the forming microtubule spindle in starfish oocytes. However, the mechanism by which this network contracts has remained elusive. Here, Bun et al., provide evidence that myosin activity is not necessary for the network contraction, but that actin filament disassembly instead appears to drive the network contractility.\n\nAll reviewers found this study very interesting and stated that the experimental part is novel and convincing. However, because the experiments are not sufficiently well connected to the model (and the model was not rigorously tested experimentally), we cannot publish the manuscript, at least in its present form. However, if you can significantly strengthen the manuscript along the lines suggested by the reviewers, we will be glad to consider an adequately revised version of the manuscript for publication in eLife.\n\nEssential revisions:\n\n1) The first part of the study presents some high quality experimental work with the tools available in starfish, and the second part of the study presents an interesting model. However, the main weakness of this manuscript is that the model is not really constrained by the experimental work, and that the prediction of the model was not challenged by some additional experimental work (since the putative cross-linker was not identified). Thus, the study would be much stronger if the authors could experimentally test their model. At minimum, alternative models to explain the data, and the limitations of the study, should be extensively discussed.\n\n2) A central argument for favoring a disassembly driven mechanism over a motor driven mechanism is the comparison of the fits in Figure 4F and 6F to a viscoelastic model assuming either motor-driving or disassembly. Since this is so essential, the authors should give an expression for the contraction rate \u03b1(t) for the two models in the main text and make clear which measured quantities go into the fit and what other parameters are fitted. Importantly they should also give the value of all the fitting parameters. The authors should compare these parameters wherever possible to measured or measurable values (e.g. for filament length and depolymerization rate). In the current version, it is unclear if and how much these parameters vary from fit to fit and if they are within reasonable limits.\n\n3) Along this line: the Motor Model depends on the actin concentration. This concentration does not change a lot for various UtrCH concentration (Figure 6E). Yet, the fit of the 'low' to 'high' UtrCH concentrations (dashed red, green, blue lines, Figure 6F) is drastically different from the control (black dashed line). Where does this sudden change come from if the input is so similar?\n\n4) It appears that the only difference between the two viscoelastic models (D versus M) is the \u03c3_c term. For the Motor-driven model there is a linear or quadratic dependency of A (actin density), for the disassembly driven model there is a linear dependency of A. Furthermore \u03c3_c^D depends on k_depol and <l>. At first sight it appears surprising how this could lead to the large differences in the fits in Figure 6F, but A (and perhaps also <l>?) are time dependent. It would be helpful to explain in more detail which variables are time dependent, and also to show <l> (t) in real units (i.e. micrometers). Is k_depol also a function of time?\n\n5) Comparing the two models: Model M and D both get the actin concentration A as input (linearly or quadratically). However, in Figure 6F the two fits go into different directions. While in M the fit increases faster and gets a peak, the fit for model D becomes smaller in value and flatter. This suggest that the bigger effect on the fit of model D is given by the <l> and k_depol parameters. Again, it is important to give the value and potentially even plot these two parameters for the different cases. This would be also informative in the light of the claim that these quantities are gradually changed with the UtrCH injection.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"A disassembly-driven mechanism explains F-actin-mediated chromosome transport in starfish oocytes\" for further consideration at eLife. Your revised article has been favorably evaluated by Andrea Musacchio (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nThis is a revised version of a manuscript, which provides evidence that actin filament disassembly drives the contraction of a three-dimensional actin network that collects chromosomes and transports them to the forming microtubule spindle in starfish oocytes. The authors have satisfactorily addressed the majority of the previous concerns, and the manuscript is significantly improved. Also, the experimental and simulation details are much better clarified now.\n\nHowever, the formin inhibitor data were not considered particularly strong, and therefore we feel that you should tone down the conclusions concerning the role of formin(s) as a cross-linker in this process (please, see specific comments below). All proposed changes can be addressed textually and do not require new experiments.\n\nSpecific comments:\n\n1) The authors used SMIFH2 for inhibiting formins. To justify the use of SMIFH2 inhibitor, they referred to (Ucar et al., 2013). However, characterization of the effects of the inhibitor in this study were not particularly thorough, and this should be considered in the Discussion.\n\n2) Even if the inhibitor works against formins, the effect of the inhibitor on the observed actin dynamics could be indirect e.g. due to altering the balance between Arp2/3 complex and formin -driven actin assembly pathways (see e.g. Burke et al., 2014). This possibility should be considered in the interpretation of the results.\n\n3) In subsection \u201cIn silico reconstitution of the contractile system predicts a \u2018depolymerization harnessing factor\u2019 essential to drive contraction\u201d, the authors test if the combination of disassembly and crosslinking could drive network contraction. This has already been done on a dynamic actin network (see: Ennomani et al., 2016), and should be discussed in the manuscript.\n\n4) In the same subsection, the authors mention that mDia1 is able to track depolymerizing filament ends. However, these in vitro experiments (Jegou et al., 2013) were performed under specific conditions, where the critical concentration of actin was below the barbed end Cc. Thus, this argument cannot be used here.\n",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "66af62fa-6b0e-40e0-9e98-3311c8c5f37c",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C1",
+      "claim": "At the onset of meiosis in starfish oocytes, a contractile F-actin network forms in the nuclear region transporting embedded chromosomes to the assembling microtubule spindle.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, at the onset of meiosis in starfish oocytes a contractile F-actin network forms in the nuclear region transporting embedded chromosomes to the assembling microtubule spindle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a description of the biological system being studied.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "b56bc9ba-9376-419f-ad14-13b75d9315f4",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C2",
+      "claim": "The F-actin network in starfish oocytes contracts homogeneously and isotropically mediating long-range and size-selective transport of chromosomes sterically trapped in the network.",
+      "claim_type": "EXPLICIT",
+      "source": "It contracts homogeneously and isotropically mediating long-range and size-selective transport of chromosomes sterically trapped in the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction section, citing previous work (Mori et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "0928f370-21ef-4599-be11-bc680932b33c",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C3",
+      "claim": "The initial contraction rate \u03b10 of the F-actin network in starfish oocytes is 0.085 \u00b1 0.017 min\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "The value of \u03b10 derived by this method from a large number of oocytes provided a precise estimate of the remarkably invariable initial contraction rate; \u03b10 = 0.085 \u00b1 0.017 min\u22121 (N = 53 \u00b1 S.D.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This value is derived from experimental measurements of chromosome trajectories across 53 oocytes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "93d85818-75b4-4d5c-9058-eedbd22c54d3",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C4",
+      "claim": "Any pair of chromosomes exhibits a constant approach velocity towards one another during transport.",
+      "claim_type": "EXPLICIT",
+      "source": "The trajectories revealed that any pair of chromosomes, irrespective of their initial location, exhibited a constant approach velocity towards one another during transport (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by linear fits to pair-wise distance measurements shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "233af89b-ca86-4674-a72e-290a6c6d41e9",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C5",
+      "claim": "Pair-wise chromosome velocities depend linearly on their initial separation distance.",
+      "claim_type": "EXPLICIT",
+      "source": "Extrapolation of these linear trajectories showed that all chromosomes would meet at nearly the same time and location, if the network were to contract all the way to a single point (Figure 1C). This implies that pair-wise chromosome velocities depend linearly on their initial separation distance (Figure 1D), indicative of a spatially homogeneous and isotropic contraction (Mori et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1D and is consistent with homogeneous isotropic contraction.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "f2db72cd-04fd-4a10-a205-189dbc7a3042",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C6",
+      "claim": "New filaments are polymerized on nuclear envelope remnants (NER) forming a new network filling up the space around the contracting initial network.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of these pulse-label recordings revealed that while the network in the nuclear region contracts, new filaments are polymerized on nuclear envelope remnants (NER) forming a new network filling up the space around the contracting initial network (Figure 2A,C, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed through pulse-labeling experiments with phalloidin shown in Figure 2A and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "de6dda76-9f93-4377-8881-4db36862cd7d",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C7",
+      "claim": "Polymerization occurs predominantly at the boundary defined by NER, and to a limited extent within the network.",
+      "claim_type": "EXPLICIT",
+      "source": "Intensity profiles showed that polymerization occurred predominantly at the boundary defined by NER, and to a limited extent within the network (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by intensity profile analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "e2430d97-4420-42e0-ae4a-dd13f4fc55d5",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C8",
+      "claim": "The old network contracted to approximately half of its initial size with a nearly constant speed.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that the old network contracted to approximately half of its initial size, and with a nearly constant speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from measurements of the phalloidin-labeled network diameter over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "7021d558-a92a-40c7-ba39-8c5402fe9b6f",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C9",
+      "claim": "The network is under tension as evidenced by recoil response after laser ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a prominent recoil response with the network rapidly retracting away from the ablated region (Figure 3B\u2013D, Video 2). This shows that the network is under tension and suggests that pushing by polymerization does not have a major contribution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by laser ablation experiments shown in Figure 3B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "3fc8318d-cddc-4f74-a708-35c1af76f5c7",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C10",
+      "claim": "High concentration of UtrCH effectively stabilized the network and prevented its contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to mouse oocytes (Holubcov\u00e1 et al., 2013), high concentration of UtrCH effectively stabilized the network and prevented its contraction (Figure 3B\u2013D, Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3B-D and is consistent with findings in mouse oocytes.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "fc13fe8c-a28a-4425-94ac-8cdbfd791500",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C11",
+      "claim": "F-actin mass within the old network continuously decreases through the contraction process.",
+      "claim_type": "EXPLICIT",
+      "source": "Such quantifications extrapolated to the 3D volume revealed a continuous decrease of F-actin mass within the old network through the contraction process (Figure 4B, for F-actin densities see Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured by quantifying UtrCH fluorescence intensity as shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "77b76e47-e1bb-418e-9965-1e2d0acb593e",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C12",
+      "claim": "Both motor-driven and disassembly-driven models can recapitulate the observed contraction behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that both models can recapitulate the observed behavior (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by fitting both models to experimental data in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "95086ac3-a44f-4978-9835-cf98c5ee77b3",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C13",
+      "claim": "Perturbations of non-muscle myosin II have no effect on the rate of contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, these perturbations did not affect contraction rates derived from pair-wise chromosome approach (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experiments with blebbistatin, MRLC overexpression, ML-7, and Y-27632 shown in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "0db3ea6c-7f66-4f46-91ae-9ea1fb780daa",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C14",
+      "claim": "Blebbistatin treatment significantly decreased the amplitude of the contraction wave during polar body extrusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our earlier results, the amplitude of the contraction wave was significantly decreased upon blebbistatin treatment, while it was increased in oocytes over-expressing MRLC (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5C-D, confirming the effectiveness of the treatments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "892cb7fd-3e14-46da-be98-b9b44afc907d",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C15",
+      "claim": "UtrCH slowed chromosome transport in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of pair-wise chromosome approach showed that UtrCH slowed chromosome transport in a dose-dependent manner (Figure 6A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by titration experiments shown in Figure 6A and 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "c9b71ca1-4c5a-48d4-95e3-f1b7637b2388",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C16",
+      "claim": "UtrCH slows net F-actin disassembly in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of F-actin mass in the old network revealed that UtrCH slows net F-actin disassembly in a dose-dependent manner (Table 2, Figure 6B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by F-actin mass measurements in Figure 6B and 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "b09dbeda-4364-40f0-a49b-046cd6aaf7d5",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C17",
+      "claim": "Stabilization by UtrCH did not render the network denser or sparser, it merely slowed its contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of changes in mean UtrCH intensity in a fixed size region on the other hand revealed similar F-actin density despite the very different contraction rates (Figure 6E and Figure 4\u2014figure supplement 1B, respectively). In other words, stabilization by UtrCH did not render the network denser or sparser, it merely slowed its contraction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by density measurements shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "16cd286a-bf8d-4350-aff0-5e61c71b51bc",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C18",
+      "claim": "The disassembly-driven model predicted contraction rates in response to gradual stabilization that matched experimental observations, while the motor-driven model did not.",
+      "claim_type": "EXPLICIT",
+      "source": "For intermediate and high UtrCH levels, the motor-driven model predicted a fast increase of contraction rate, in contrast to the disassembly-driven model predicting contraction rate to remain nearly constant over time, well matching experimental observations (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by model predictions compared to experimental data in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "7a3476fe-7435-4624-ab8f-1b3ca70a1983",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C19",
+      "claim": "Latrunculin A treatment led to a dramatic increase in contraction rate approximately three-fold higher than DMSO controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a dramatic increase in contraction rate upon acute treatment with a high dose of Latrunculin A (Figure 7A, Video 3). Starting approx. 50 s after Latrunculin A addition, the network diameter begun to decrease at rates approx. three-fold higher than DMSO controls (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experiments shown in Figure 7A and 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "7e08bd87-8d3c-4c61-b95a-128d4c35eebd",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C20",
+      "claim": "The disassembly-driven model predicts an increase in contraction rate upon increased disassembly that closely matches experimentally observed values, while the motor-driven model does not.",
+      "claim_type": "EXPLICIT",
+      "source": "While the motor-driven model predicted the contraction rate to change little upon increased disassembly, the disassembly-driven model predicts an increase in contraction rate closely matching experimentally observed values (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by model predictions compared to Latrunculin A experimental data in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "da8f828e-b572-4894-8de5-7c511aaaac47",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C21",
+      "claim": "In the absence of molecular motors, a disassembling network with only cross-linkers did not contract over a broad range of parameters tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous theory and experiments (Belmonte et al., 2017; Bendix et al., 2008; Braun et al., 2016), in the absence of molecular motors the disassembling network did not contract over a broad range of parameters (number of filaments, cross-linkers and their unbinding rates) tested (Figure 8\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Cytosim simulations shown in Figure 8\u2014figure supplement 1A-C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "dd87fad2-6fd3-4a40-ae6c-6b59411a11a2",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C22",
+      "claim": "Introducing end-binding cross-linkers into the simulations resulted in robust large-scale contraction of the disassembling network in the absence of molecular motors.",
+      "claim_type": "EXPLICIT",
+      "source": "Introducing such elements into the simulations, referred to as end-binding cross-linkers, resulted in robust large-scale contraction of the disassembling network in the absence of molecular motors (Figure 8\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Cytosim simulations shown in Figure 8\u2014figure supplement 1A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "83d24884-67e1-4f58-a2bb-f97f78e1fc5d",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C23",
+      "claim": "Contraction rate is rather insensitive to the rate of filament assembly at the boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that contraction rate is rather insensitive to the rate of filament assembly at the boundary: insufficient or excess filament production rates led to inhomogeneity in the network, but this did not significantly affect the rate of contraction (Figure 8\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulations testing different filament production rates shown in Figure 8\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "f137c495-72c3-48c5-be75-8765651146e7",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C24",
+      "claim": "The disassembly-driven mechanism invariably produces contraction with a constant speed, as observed experimentally, while motor-driven contraction typically accelerates.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the disassembly-driven mechanism invariably produces contraction with a constant speed, as observed experimentally, while motor-driven contraction typically accelerates (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by comparing simulations of the two mechanisms in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "4b184f9f-ecc9-4811-802e-8bb326aad5e6",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C25",
+      "claim": "Network density remains nearly constant during contraction in the disassembly-driven simulations, as in experiments, while during motor-driven contraction network density continuously increases.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, while a strictly quantitative comparison of the 2D simulations and the 3D experimental system is not possible, network density remains nearly constant during contraction in the disassembly-driven simulations, as in experiments, while during motor-driven contraction network density continuously increases (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by comparing filament density in simulations in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "d9f72d0c-0063-45c8-a555-4def3c11d2b0",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C26",
+      "claim": "Impairing formin activity with SMIFH2 led to a significant decrease of network contraction rate and a reduction of F-actin mass loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Impairing formin activity led to a significant decrease of network contraction rate and a reduction of F-actin mass loss, similar to stabilization by UtrCH, and well predicted by the disassembly-driven model (Figure 9E; Table 4 and Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by SMIFH2 treatment experiments shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "588a8a86-4059-4c65-b717-b44bfeb3b7d8",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C27",
+      "claim": "The F-actin network is essential to prevent formation of aneuploid eggs in starfish oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "This F-actin network forms in the nuclear region after nuclear envelope breakdown (NEBD), at the onset of meiosis, and is essential to prevent formation of aneuploid eggs (Mori et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction, citing previous work (Mori et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "469a2f62-44c6-4baf-9ea2-5c0cd5527cdf",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C28",
+      "claim": "Connections of the network to the cell cortex provide directionality, resulting in transport towards the microtubule spindle located at the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "While the contraction of the network is isotropic and homogeneous, connections of the network to the cell cortex provide directionality, resulting in transport towards the microtubule spindle, located at the cortex (Mori et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction, citing previous work (Mori et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "700d214b-651e-44cb-8872-8f74cdfd7fa4",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C29",
+      "claim": "The reciprocal of \u03b10, t0 = 1/\u03b10 = 11.76 \u00b1 0.27 min, is the 'convergence time', the time that would be required to transport the chromosomes from their initial position to the final meeting point.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the reciprocal of this value, t0 = 1/\u03b10= 11.76 \u00b1 0.27 min is the 'convergence time', the time that would be required to transport the chromosomes from their initial position to the final meeting point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the measured \u03b10 value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "8c8efccc-eb0d-44d9-99d2-19590f088982",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C30",
+      "claim": "The contraction rate derived from phalloidin-labeled network diameter was similar, although somewhat lower than the rate \u03b10 determined by tracking chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of contraction derived this way was similar, although somewhat lower than the rate \u03b10 determined by tracking chromosomes (compare Figures 1F and 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by comparing measurements from the two methods shown in Figures 1F and 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "fce60c06-ce57-40ec-ac5e-438e9b6a2c16",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C31",
+      "claim": "Phalloidin used to visualize the old network slightly slows contraction and increases variability, likely dependent on the amount of phalloidin injected.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, similar contraction rates are derived by the two methods, however, it appears that phalloidin used to visualize the old network slightly slows contraction and increases variability, likely dependent on the amount of phalloidin injected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing the two measurement methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "47157892-7ca9-4e6f-aae4-c1cd963e4f2f",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C32",
+      "claim": "After retraction from laser ablation, the gap did not close, but was filled progressively by F-actin suggesting that in response to the perturbation, filament assembly may occur throughout the network.",
+      "claim_type": "EXPLICIT",
+      "source": "After retraction, the gap did not close, but was filled progressively by F-actin suggesting that in response to the perturbation, filament assembly may occur throughout the network (Figure 3B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in laser ablation experiments shown in Figure 3B and 3D.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "ce85a9a0-5bc2-4fcb-ab5b-5bebe754cfc5",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C33",
+      "claim": "The recoil response did not depend on the direction of the cut, consistent with isotropic contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "The recoil response did not depend on the direction of the cut, consistent with isotropic contraction (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by ablation experiments in different directions shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "59fe693a-6621-4b2a-bc3c-46c9ba5470db",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C34",
+      "claim": "In the motor-driven model, decreasing disassembly rate caused an increase in F-actin concentration that resulted in more effective motor action, leading to an increase of contraction rate over time.",
+      "claim_type": "EXPLICIT",
+      "source": "This is explained by the fact that in the disassembly-driven mechanism contraction and disassembly rates are inherently coupled. In the motor-driven model, decreasing disassembly rate caused an increase in F-actin concentration that resulted in more effective motor action, leading to the observed increase of contraction rate over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the model behavior based on the model equations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "b6e14aa0-fea2-41b4-bae6-ec8cbadb6f99",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C35",
+      "claim": "Latrunculin A is expected to block actin filament assembly and to enhance depolymerization by reducing the effective monomer concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "To further test the active role of disassembly in driving contraction, we used Latrunculin A, a toxin that sequesters actin monomers. Therefore, Latrunculin A is expected to block actin filament assembly and to enhance depolymerization by reducing the effective monomer concentration (Spector et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the known mechanism of Latrunculin A action, citing Spector et al., 1989.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "8ac45225-8381-4e77-98c3-6a0210b5eb12",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C36",
+      "claim": "In a dynamically assembling and disassembling network, Latrunculin A shifts the equilibrium towards disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in a dynamically assembling and disassembling network the net effect will be shifting the equilibrium towards disassembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mechanism of Latrunculin A action.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "7f2bd1cb-6e2e-4cc0-bd5f-fea40ded35b7",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C37",
+      "claim": "Starting approximately 50 s after Latrunculin A addition, the network diameter begun to decrease at rates approximately three-fold higher than DMSO controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Starting approx. 50 s after Latrunculin A addition, the network diameter begun to decrease at rates approx. three-fold higher than DMSO controls (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured from time-lapse imaging shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "55e494f0-837e-408e-82da-f3084b08ccbb",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C38",
+      "claim": "mDia1 is able to track depolymerizing ends and generate pulling forces on the disassembling filament end in vitro under specific conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that in vitro and under specific conditions the formin, mDia1 is able to track depolymerizing ends and generate pulling forces on the disassembling filament end (J\u00e9gou et al., 2013; Mizuno et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on previous in vitro studies cited.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "e1b4f78d-75c5-4c5a-9626-29e20c89d60b",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C39",
+      "claim": "Formins have been shown to have cross-linking activities on their own or by binding to other actin regulators such as Spire.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, formins have been shown to have cross-linking activities on their own or by binding to other actin regulators such as Spire (Esue et al., 2008; Montaville et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on previous studies cited.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "6da06bea-a7ca-49f7-bb2f-78912a317521",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C40",
+      "claim": "SMIFH2 is a small-molecule inhibitor of the FH2 domain contained and essential for the activity of all known formins.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested this hypothesis by inhibiting all formin-like activities in the oocyte by SMIFH2, a small-molecule inhibitor of the FH2 domain contained and essential for the activity of all known formins (Rizvi et al., 2009), and which has already been evaluated in mouse and starfish oocytes (Kim et al., 2015; Ucar et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on the known properties of SMIFH2, citing relevant studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "8addd56e-4686-436c-b903-21ced37cb584",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C41",
+      "claim": "The meiotic spindle is small across animal species due to the requirement for highly asymmetric division in oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Oocytes also divide very asymmetrically in order to retain these nutrients in a single egg. The requirement for this highly asymmetric division constrains the size of the meiotic spindle. Therefore, across animal species, the meiotic spindle is small and this necessitates additional mechanism to collect and transport chromosomes scattered in the large nuclear volume to the forming microtubule spindle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an explanation for the need for chromosome transport mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "a95eb8f4-e1e0-45e7-a2e9-00fd1720b089",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C42",
+      "claim": "The process is triggered by NEBD opening the previously inaccessible nuclear compartment to cytoplasmic actin, actin assembly factors and cross-linkers resulting in the rapid assembly of a cross-linked F-actin network in the nuclear region.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the process is triggered by NEBD opening the previously inaccessible nuclear compartment to cytoplasmic actin, actin assembly factors and cross-linkers resulting in the rapid assembly of a cross-linked F-actin network in the nuclear region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as part of the proposed mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "59f24093-b3e8-4afa-8c16-54426c08dacd",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C43",
+      "claim": "The disassembling network will eventually release the transported chromosomes, as it loses connectivity and stops contracting.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, an additional elegant feature of the system is that the disassembling network will eventually release the transported chromosomes, as it loses connectivity and stops contracting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a predicted feature of the disassembly-driven mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "cb294759-cb5c-478c-b5aa-bb7ff64a29ea",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C44",
+      "claim": "In the absence of disassembly, a contracting network would necessarily densify, in which case the chromosomes would be surrounded by a tight meshwork of F-actin at the end of contraction, which would likely interfere with their capture by spindle microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, in the absence of disassembly, a contracting network would necessarily densify, in which case the chromosomes would be surrounded by a tight meshwork of F-actin at the end of contraction, which would likely interfere with their capture by spindle microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a contrast to the disassembly-driven mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "a53f9b70-361f-4b94-88a2-cbccce048365",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C45",
+      "claim": "Network contraction can be seen as a large-scale treadmilling system, where F-actin disassembles in bulk and is replenished by filaments polymerized at the NER boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "Network contraction can be seen here as a large-scale treadmilling system, where F-actin disassembles in bulk and is replenished by filaments polymerized at the NER boundary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an interpretation of the mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "14598ae8-8cfe-424d-9f32-79461fac022f",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C46",
+      "claim": "De-novo filament assembly at the NER boundary does not participate in force generation, which rather originates in the bulk of the network.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the evidences lead us to conclude that de-novo filament assembly at the NER boundary does not participate in force generation, which rather originates in the bulk of the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a conclusion from the experimental and simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "7759927d-80b8-441b-8d1d-ec370bfeeac8",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C47",
+      "claim": "Actin polymerization is well established to produce force at cell protrusions.",
+      "claim_type": "EXPLICIT",
+      "source": "While actin polymerization is well established to produce force, at cell protrusions, for example (Footer et al., 2007; Krause and Gautreau, 2014), force production by disassembly has so far only been evidenced in vitro for specific actin concentration (J\u00e9gou et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on established knowledge and cited studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "6d13ae30-1374-47a6-a22e-f4ac4754fc52",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C48",
+      "claim": "Force production by disassembly has so far only been evidenced in vitro for specific actin concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "While actin polymerization is well established to produce force, at cell protrusions, for example (Footer et al., 2007; Krause and Gautreau, 2014), force production by disassembly has so far only been evidenced in vitro for specific actin concentration (J\u00e9gou et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on cited in vitro studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "5be57977-ae19-48a8-bb7a-ea4ca00afa55",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C49",
+      "claim": "Microtubule depolymerization can produce force that is harnessed to drive separation of sister chromatids in anaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "It is clear that microtubule depolymerization can produce force (Grishchuk et al., 2005), that is harnessed for example to drive separation of sister chromatids in anaphase (Cheeseman and Desai, 2008; Westermann et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on established knowledge and cited studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "02de97ae-a5f6-4d25-ae3e-c9caca99f1fa",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C50",
+      "claim": "Actin polymerization is tightly coupled to nucleotide hydrolysis driving the system out of equilibrium that may enable generation of force by depolymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to tubulin, actin polymerization is tightly coupled to nucleotide hydrolysis driving the system out of equilibrium that may enable generation of force by depolymerization (Braun et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a possible mechanism, citing Braun et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "755c5f2d-e140-4c3e-9991-983dfb0268e4",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C51",
+      "claim": "Entropic forces generated either by crowding agents surrounding filaments or by diffusible cross-linkers confined in filament overlaps could drive contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, entropic forces generated either by crowding agents surrounding filaments or by diffusible cross-linkers confined in filament overlaps could drive contraction (Braun et al., 2016), but we have not tested this possibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an alternative possibility that was not tested, citing Braun et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "8916f751-5249-487a-8a93-9ca5527356d3",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C52",
+      "claim": "SMIFH2 has been shown to inhibit formins in starfish oocytes, but its specificity and selectivity profile is yet to be characterized.",
+      "claim_type": "EXPLICIT",
+      "source": "These results need to be confirmed, since they rely on a small-molecule inhibitor, SMIFH2, which has been shown to inhibit formins in starfish oocytes (Ucar et al., 2013), but its specificity and selectivity profile is yet to be characterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a caveat regarding the SMIFH2 experiments, citing Ucar et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "6d209710-0268-44c2-bd2e-9f5e93379260",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C53",
+      "claim": "The observed effect of SMIFH2 may be indirect resulting from the altered balance between other formin-driven actin assembly pathways and Arp2/3 nucleated structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, the observed effect may be indirect resulting from the altered balance between other formin-driven actin assembly pathways and Arp2/3 nucleated structures, as recently showed in yeast (Burke et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an alternative explanation for the SMIFH2 effects, citing Burke et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "992c1f67-8b77-4a4e-873f-435f30c01523",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C54",
+      "claim": "Mouse oocytes feature a dynamic cytoplasmic F-actin network required to position the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, mouse oocytes feature a dynamic cytoplasmic F-actin network required to position the nucleus (Almonacid et al., 2015), the meiotic spindle (Almonacid et al., 2014; Azoury et al., 2008; Schuh and Ellenberg, 2008), and to transport vesicles from the cell center to the cortex, including cortical granules to prevent polyspermy (Cheeseman et al., 2016; Schuh, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction, citing multiple studies on mouse oocytes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "e0d4fee5-c013-4895-92a9-4d49a2c6fd76",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C55",
+      "claim": "Myosin II and myosin V motors have been involved in transporting the spindle and vesicles, respectively, in mouse oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "While myosin II and myosin V motors have been involved in transporting the spindle and vesicles, respectively, filament dynamics appear to have a key role in these processes as well, regulated by Fmn2/Spire1/2 as well as cortical Arp2/3 nucleators, and other factors (Chaigne et al., 2013; Cheeseman et al., 2016; Holubcov\u00e1 et al., 2013; Pfender et al., 2011; Schuh, 2011; Yu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction, citing multiple studies on mouse oocytes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "696ac267-326b-4ad6-ba20-89fc2b2ebd9a",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C56",
+      "claim": "Filament dynamics appear to have a key role in spindle and vesicle transport in mouse oocytes, regulated by Fmn2/Spire1/2 as well as cortical Arp2/3 nucleators, and other factors.",
+      "claim_type": "EXPLICIT",
+      "source": "While myosin II and myosin V motors have been involved in transporting the spindle and vesicles, respectively, filament dynamics appear to have a key role in these processes as well, regulated by Fmn2/Spire1/2 as well as cortical Arp2/3 nucleators, and other factors (Chaigne et al., 2013; Cheeseman et al., 2016; Holubcov\u00e1 et al., 2013; Pfender et al., 2011; Schuh, 2011; Yu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction, citing multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "9669e7be-40ae-4405-a320-c6838c41dcd5",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C57",
+      "claim": "The mechanism of contractile force generation is well understood in sarcomeric-like assemblies, such as muscles or stress fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, while the mechanism of contractile force generation is well understood in sarcomeric-like assemblies, such as muscles or stress fibers, the mechanisms in disordered F-actin networks, such as the above quasi-2D cortical and 3D cytoplasmic networks, remains much more elusive (Lenz et al., 2012; Murrell et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction as established knowledge, citing reviews.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "0646cf0c-77e1-42cd-b8d7-71102e675927",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C58",
+      "claim": "The mechanisms of contractile force generation in disordered F-actin networks remains much more elusive.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, while the mechanism of contractile force generation is well understood in sarcomeric-like assemblies, such as muscles or stress fibers, the mechanisms in disordered F-actin networks, such as the above quasi-2D cortical and 3D cytoplasmic networks, remains much more elusive (Lenz et al., 2012; Murrell et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction, citing reviews.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "753a78e6-c451-497f-8714-061d6a89e4d0",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C59",
+      "claim": "Computational models and theoretical work so far focused largely on disordered F-actin networks formed by non-dynamic filaments inspired by in vitro reconstituted contractile systems composed of stable filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, computational models and theoretical work so far focused largely on disordered F-actin networks formed by non-dynamic filaments inspired by in vitro reconstituted contractile systems composed of stable filaments (Alvarado and Koenderink, 2015; Belmonte et al., 2017; Bendix et al., 2008; K\u00f6hler and Bausch, 2012; Murrell and Gardel, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction, citing multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "2da38608-2560-4157-9077-313e35d96efa",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C60",
+      "claim": "Theoretical work has shown that F-actin dynamics is able to generate not only protrusive but also contractile stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, although much less investigated, theoretical work has shown that F-actin dynamics is able to generate not only protrusive but also contractile stress (Sun et al., 2010; Zumdieck et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction, citing theoretical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "53fc2c29-2280-407b-a7ca-7d1deb988578",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C61",
+      "claim": "Cell migration is to a large part driven by polymerization of actin filaments at the cell front and depolymerization at the rear.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, cell migration is to a large part driven by polymerization of actin filaments at the cell front and depolymerization at the rear (Cramer, 2013; Mseka and Cramer, 2011; Pollard and Borisy, 2003; Ridley, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction as established knowledge, citing multiple studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "b0545b06-c1c9-43ea-b6f2-838236a21cf4",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C62",
+      "claim": "Cytokinetic ring closure has been shown to be driven by depolymerization of filaments in some species, although myosin activity certainly is the main driver in others.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytokinetic ring closure has been shown to be driven by depolymerization of filaments in some species, although myosin activity certainly is the main driver in others (Green et al., 2012; Mendes Pinto et al., 2012; Neujahr et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction, citing studies on different species.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "d4bf5bf3-1319-46e9-8c7e-69c00b6a3a91",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C63",
+      "claim": "Non-muscle myosin II is the main driver of cortical processes including cell migration, cell division and tissue morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "While myosin motor activity, non-muscle myosin II in particular, is the main driver of these processes, filament dynamics has been shown to play a critical role as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "96262b4a-246e-4e1b-b285-e8191d11392e",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C64",
+      "claim": "The cortex, a thin and entangled network of F-actin underlying the plasma membrane determines the shape of animal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Most prominently, the cortex, a thin and entangled network of F-actin underlying the plasma membrane determines the shape of animal cells, and changes in cell shape underlie cell migration, cell division and tissue morphogenesis (Munjal and Lecuit, 2014; Pollard and Cooper, 2009; Salbreux et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction as established knowledge, citing reviews.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "f0038661-0e37-4a1f-a33b-277b6bf4491d",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C65",
+      "claim": "Recent studies revealed extensive 3D F-actin networks in the bulk cytoplasm of large oocytes and embryos with essential functions in intracellular transport processes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to its cortical functions, recent studies revealed extensive 3D F-actin networks in the bulk cytoplasm of large oocytes and embryos with essential functions in intracellular transport processes (Field and L\u00e9n\u00e1rt, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction, citing a review.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "865e17e3-9268-4019-8ad7-4b5fbc2e3111",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C66",
+      "claim": "Observations are well explained by models based on a disassembly-driven contractile mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no evidence of myosin activity driving network contractility. Instead, our observations are well explained by models based on a disassembly-driven contractile mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Abstract as a main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "62df1ada-d88b-441d-b7a4-a91adc68c6ef",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C67",
+      "claim": "No evidence of myosin activity driving network contractility was found.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no evidence of myosin activity driving network contractility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Abstract as a main finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "225c9224-1647-4af3-805d-418556365a63",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "claim_id": "C68",
+      "claim": "The disassembly-based contractile system robustly drives chromosome transport to prevent aneuploidy in the large oocyte, a prerequisite for normal embryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "We reconstitute this disassembly-based contractile system in silico revealing a simple architecture that robustly drives chromosome transport to prevent aneuploidy in the large oocyte, a prerequisite for normal embryonic development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Abstract as a main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f10937be-5836-46fc-962e-7eb29d135b1a",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The F-actin network in starfish oocytes contracts with a remarkably invariable initial contraction rate (\u03b1\u2080 = 0.085 \u00b1 0.017 min\u207b\u00b9, N=53), characterized by constant pair-wise chromosome approach velocities that depend linearly on initial separation distance, indicative of homogeneous and isotropic contraction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 and C29 provide converging quantitative evidence from chromosome tracking across 53 oocytes. The linear relationship between velocity and distance (C5), constant approach velocities (C4), and precise measurement of \u03b1\u2080 (C3) are internally consistent and well-supported by the data shown in Figure 1. The convergence time calculation (C29) follows directly from the measured \u03b1\u2080.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "aba99248-46b6-41a5-b632-1e8ee08c0c02",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "During network contraction, new filaments polymerize predominantly at the nuclear envelope remnants (NER) boundary, filling the space around the contracting 'old network' which contracts to approximately half its initial size at nearly constant speed, though phalloidin labeling slightly slows contraction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 are well-supported by pulse-labeling experiments (Figure 2). The spatial localization of polymerization (C7) is demonstrated by intensity profiles. The comparison between measurement methods (C30-C31) appropriately acknowledges the artifact introduced by phalloidin, strengthening confidence in the chromosome-based measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "29ca774e-1af7-4e13-9bfe-0eb9917e644e",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Laser ablation experiments demonstrate that the network is under tension, showing prominent recoil responses that are isotropic and abolished by F-actin stabilization with high UtrCH concentrations, indicating that active contractile forces within the network, not pushing by polymerization, drive contraction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10 and C32-C33 are well-supported by laser ablation experiments (Figure 3). The recoil response (C9), its isotropy (C33), and abolishment by stabilization (C10) provide strong evidence for tension. The control with UtrCH stabilization (C10) is critical for ruling out laser artifacts. The observation of gap filling (C32) is appropriately marked as speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "3c651022-e088-434f-b689-32870cbabd47",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "F-actin mass within the old network continuously decreases during contraction, and UtrCH stabilization slows both disassembly and contraction in a dose-dependent manner without changing network density, demonstrating direct coupling between disassembly and contraction rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C16-C17 are well-supported by quantitative fluorescence measurements (Figures 4B, 6B-E). The dose-dependent effects of UtrCH on both contraction and disassembly rates (C16), combined with constant density (C17), provide strong evidence for coupling. The measurements are internally consistent across multiple experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "cfd836e8-09b4-4d3b-b0ba-451e32575451",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Both motor-driven and disassembly-driven viscoelastic models can fit baseline contraction behavior, but only the disassembly-driven model correctly predicts network responses to perturbations: the motor-driven model incorrectly predicts accelerating contraction with UtrCH stabilization and minimal response to Latrunculin A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C18, C20, and C34 demonstrate rigorous model comparison. While both models fit control data (C12), the disassembly-driven model correctly predicts responses to UtrCH (C18, Figure 6F) and Latrunculin A (C20, Figure 7D), whereas the motor-driven model fails. The mechanistic explanation (C34) is consistent with model equations. This represents strong discriminatory evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "b0cea262-db2d-4aa9-b568-652733b16d4f",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Perturbations of non-muscle myosin II activity (blebbistatin, MRLC overexpression, ML-7, Y-27632) have no effect on chromosome transport and network contraction rates, though these treatments effectively modulate myosin II activity as confirmed by their effects on polar body extrusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14 are well-supported by experiments in Figure 5. The lack of effect on contraction (C13) combined with significant effects on polar body extrusion in the same oocytes (C14) provides strong evidence that myosin II does not drive this particular contractile process. The internal control is critical and well-executed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "29db82f4-bf5a-4fd2-b478-0b76ba5f1e19",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Latrunculin A treatment dramatically increases contraction rate approximately three-fold compared to controls, starting ~50 seconds after drug addition, consistent with enhanced depolymerization driving faster contraction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19 and C37 are well-supported by time-lapse imaging (Figure 7A-B). The quantification shows clear three-fold increase in contraction rate. The timing of the effect (~50s) is consistent with drug diffusion and action. This provides strong support for the disassembly-driven mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "6ce3e67b-880f-41b9-8312-de00c96d32e3",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Cytosim simulations demonstrate that disassembling networks with only cross-linkers do not contract, but introducing end-binding cross-linkers ('depolymerization harnessing factors') enables robust contraction in the absence of motors, with contraction rate relatively insensitive to boundary filament assembly rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 are supported by systematic Cytosim simulations (Figure 8\u2014figure supplement 1). The requirement for end-binding cross-linkers (C22) is demonstrated by comparison to cross-linkers alone (C21). The insensitivity to boundary assembly (C23) is shown across parameter ranges. These simulations are consistent with prior theoretical work (cited appropriately).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "46ff74c7-3fc9-4b96-b1e8-042c1e484a0c",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Cytosim simulations show that disassembly-driven contraction produces constant-speed contraction with stable network density, matching experimental observations, while motor-driven contraction accelerates and increases network density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 are supported by comparative simulations (Figure 8C-D). The qualitative differences between mechanisms\u2014constant vs. accelerating speed, stable vs. increasing density\u2014match experimental observations and provide additional discriminatory evidence. The caveat about 2D vs. 3D comparison is appropriately noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "4a2c4940-4071-4464-a0e3-2a00c3feaa83",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "SMIFH2 treatment, which inhibits formin FH2 domains, significantly decreases network contraction rate and F-actin mass loss similar to UtrCH stabilization, suggesting formins may act as 'depolymerization harnessing factors,' though specificity concerns and potential indirect effects require further validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C26 and C40 show SMIFH2 effects consistent with the disassembly-driven model (Figure 9). However, C52-C53 appropriately raise critical caveats: SMIFH2 specificity is uncharacterized in this system, and effects could be indirect through altered balance of actin assembly pathways. The authors acknowledge these limitations. The result is suggestive but requires additional validation with more specific tools.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "5031b93c-7c3a-4c7d-9ec7-dc2fccba0e61",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In vitro studies show that formin mDia1 can track depolymerizing ends and generate pulling forces, and formins have cross-linking activities, providing precedent for formins acting as depolymerization harnessing factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 accurately cite prior in vitro work demonstrating relevant formin activities. These citations provide mechanistic plausibility for the hypothesis but do not constitute direct evidence in the starfish oocyte system. The claims are appropriately presented as supporting context rather than direct evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "d814bb94-5dff-4ee0-a43e-5f579b3122a8",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "UtrCH slows chromosome transport in a dose-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C15 is directly supported by titration experiments shown in Figure 6A and 6C. The dose-dependent relationship is clearly demonstrated across multiple UtrCH concentrations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "c113bd14-dba7-4e91-bf0a-33052122c671",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "De-novo filament assembly at the NER boundary does not participate in force generation; rather, force originates in the bulk of the network, as contraction rate is insensitive to boundary assembly rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46 and C23 are supported by simulations (Figure 8\u2014figure supplement 1D) showing insensitivity to boundary assembly rate, and by experimental observations of imbalanced systems. The conclusion (C46) is appropriately stated as an inference from multiple lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "47cdffdb-dfd9-460b-8444-5a51340aca31",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study concludes that observations are well explained by a disassembly-driven contractile mechanism rather than myosin activity, and this system robustly drives chromosome transport to prevent aneuploidy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 represent the main conclusions, supported by the totality of experimental and modeling evidence. The lack of myosin involvement (C67) is supported by perturbation experiments (C13-C14). The disassembly-driven mechanism (C66) is supported by multiple lines of evidence including stabilization/destabilization experiments and model predictions. The functional significance (C68) connects to prior work (C27).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "fb703132-a615-4fc7-ab4e-d09f955f318d",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The F-actin network in starfish oocytes forms at NEBD, contracts homogeneously and isotropically to transport chromosomes, is essential to prevent aneuploidy, and cortical connections provide directionality toward the spindle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C27-C28 describe the biological system based on prior work (Mori et al., 2011) and provide essential context. These are well-established findings from previous studies that frame the current investigation. The citations are appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "2eeff1a6-e1f2-4247-bf41-3a68d4d2ec94",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors propose that this disassembly-driven contractile system represents a simple, robust architecture for chromosome transport in large oocytes, triggered by NEBD, functioning as a large-scale treadmilling system, and elegantly releasing chromosomes as the network loses connectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 represent interpretive synthesis in the Discussion. These inferences are well-supported by the experimental and modeling results. The proposed mechanism (C42, C45) integrates multiple observations. The predicted features (C43-C44) follow logically from the disassembly-driven model and are consistent with biological requirements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "d1cfabde-08c4-4ca1-853e-83c27a7f55fa",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors discuss potential molecular mechanisms for force generation by disassembly, noting that while actin polymerization-driven force is well-established and microtubule depolymerization can generate force, actin disassembly-driven force has limited in vivo evidence, with possible mechanisms including nucleotide hydrolysis-driven processes or entropic forces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 provide appropriate context from the literature regarding force generation mechanisms. These are accurately cited and appropriately presented as speculative possibilities (C50-C51) that were not directly tested. This represents honest acknowledgment of mechanistic uncertainties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "e804ac38-622e-478f-9341-32d7711ddd50",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The Introduction provides comprehensive context on F-actin networks in cells, noting that while contractile mechanisms in ordered assemblies are well understood, mechanisms in disordered networks remain elusive, and that both motors and filament dynamics contribute to various cellular processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C65 accurately summarize the state of the field based on appropriate citations. These provide essential background and motivation for the study. The characterization of knowledge gaps (C58) and the balance between motor and dynamics contributions (C56, C63) appropriately frame the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    },
+    {
+      "id": "3e073f3a-5f4c-4f27-8fb7-52b603f56f8b",
+      "content_id": "92f69cee-b165-4f1c-a245-7a1d89aaa418",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Latrunculin A is expected to block actin assembly and enhance depolymerization by sequestering monomers, shifting the equilibrium toward disassembly in dynamic networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 accurately describe the known mechanism of Latrunculin A based on prior work (Spector et al., 1989). The inference about shifting equilibrium (C36) is logical and well-established. This provides appropriate rationale for the experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:00:29.029691Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0928f370-21ef-4599-be11-bc680932b33c",
+      "result_id": "f10937be-5836-46fc-962e-7eb29d135b1a"
+    },
+    {
+      "claim_id": "93d85818-75b4-4d5c-9058-eedbd22c54d3",
+      "result_id": "f10937be-5836-46fc-962e-7eb29d135b1a"
+    },
+    {
+      "claim_id": "233af89b-ca86-4674-a72e-290a6c6d41e9",
+      "result_id": "f10937be-5836-46fc-962e-7eb29d135b1a"
+    },
+    {
+      "claim_id": "700d214b-651e-44cb-8872-8f74cdfd7fa4",
+      "result_id": "f10937be-5836-46fc-962e-7eb29d135b1a"
+    },
+    {
+      "claim_id": "f2db72cd-04fd-4a10-a205-189dbc7a3042",
+      "result_id": "aba99248-46b6-41a5-b632-1e8ee08c0c02"
+    },
+    {
+      "claim_id": "de6dda76-9f93-4377-8881-4db36862cd7d",
+      "result_id": "aba99248-46b6-41a5-b632-1e8ee08c0c02"
+    },
+    {
+      "claim_id": "e2430d97-4420-42e0-ae4a-dd13f4fc55d5",
+      "result_id": "aba99248-46b6-41a5-b632-1e8ee08c0c02"
+    },
+    {
+      "claim_id": "8c8efccc-eb0d-44d9-99d2-19590f088982",
+      "result_id": "aba99248-46b6-41a5-b632-1e8ee08c0c02"
+    },
+    {
+      "claim_id": "fce60c06-ce57-40ec-ac5e-438e9b6a2c16",
+      "result_id": "aba99248-46b6-41a5-b632-1e8ee08c0c02"
+    },
+    {
+      "claim_id": "7021d558-a92a-40c7-ba39-8c5402fe9b6f",
+      "result_id": "29ca774e-1af7-4e13-9bfe-0eb9917e644e"
+    },
+    {
+      "claim_id": "3fc8318d-cddc-4f74-a708-35c1af76f5c7",
+      "result_id": "29ca774e-1af7-4e13-9bfe-0eb9917e644e"
+    },
+    {
+      "claim_id": "47157892-7ca9-4e6f-aae4-c1cd963e4f2f",
+      "result_id": "29ca774e-1af7-4e13-9bfe-0eb9917e644e"
+    },
+    {
+      "claim_id": "ce85a9a0-5bc2-4fcb-ab5b-5bebe754cfc5",
+      "result_id": "29ca774e-1af7-4e13-9bfe-0eb9917e644e"
+    },
+    {
+      "claim_id": "fc13fe8c-a28a-4425-94ac-8cdbfd791500",
+      "result_id": "3c651022-e088-434f-b689-32870cbabd47"
+    },
+    {
+      "claim_id": "c9b71ca1-4c5a-48d4-95e3-f1b7637b2388",
+      "result_id": "3c651022-e088-434f-b689-32870cbabd47"
+    },
+    {
+      "claim_id": "b09dbeda-4364-40f0-a49b-046cd6aaf7d5",
+      "result_id": "3c651022-e088-434f-b689-32870cbabd47"
+    },
+    {
+      "claim_id": "77b76e47-e1bb-418e-9965-1e2d0acb593e",
+      "result_id": "cfd836e8-09b4-4d3b-b0ba-451e32575451"
+    },
+    {
+      "claim_id": "16cd286a-bf8d-4350-aff0-5e61c71b51bc",
+      "result_id": "cfd836e8-09b4-4d3b-b0ba-451e32575451"
+    },
+    {
+      "claim_id": "7e08bd87-8d3c-4c61-b95a-128d4c35eebd",
+      "result_id": "cfd836e8-09b4-4d3b-b0ba-451e32575451"
+    },
+    {
+      "claim_id": "59fe693a-6621-4b2a-bc3c-46c9ba5470db",
+      "result_id": "cfd836e8-09b4-4d3b-b0ba-451e32575451"
+    },
+    {
+      "claim_id": "95086ac3-a44f-4978-9835-cf98c5ee77b3",
+      "result_id": "b0cea262-db2d-4aa9-b568-652733b16d4f"
+    },
+    {
+      "claim_id": "0db3ea6c-7f66-4f46-91ae-9ea1fb780daa",
+      "result_id": "b0cea262-db2d-4aa9-b568-652733b16d4f"
+    },
+    {
+      "claim_id": "7a3476fe-7435-4624-ab8f-1b3ca70a1983",
+      "result_id": "29db82f4-bf5a-4fd2-b478-0b76ba5f1e19"
+    },
+    {
+      "claim_id": "7f2bd1cb-6e2e-4cc0-bd5f-fea40ded35b7",
+      "result_id": "29db82f4-bf5a-4fd2-b478-0b76ba5f1e19"
+    },
+    {
+      "claim_id": "da8f828e-b572-4894-8de5-7c511aaaac47",
+      "result_id": "6ce3e67b-880f-41b9-8312-de00c96d32e3"
+    },
+    {
+      "claim_id": "dd87fad2-6fd3-4a40-ae6c-6b59411a11a2",
+      "result_id": "6ce3e67b-880f-41b9-8312-de00c96d32e3"
+    },
+    {
+      "claim_id": "83d24884-67e1-4f58-a2bb-f97f78e1fc5d",
+      "result_id": "6ce3e67b-880f-41b9-8312-de00c96d32e3"
+    },
+    {
+      "claim_id": "f137c495-72c3-48c5-be75-8765651146e7",
+      "result_id": "46ff74c7-3fc9-4b96-b1e8-042c1e484a0c"
+    },
+    {
+      "claim_id": "4b184f9f-ecc9-4811-802e-8bb326aad5e6",
+      "result_id": "46ff74c7-3fc9-4b96-b1e8-042c1e484a0c"
+    },
+    {
+      "claim_id": "d9f72d0c-0063-45c8-a555-4def3c11d2b0",
+      "result_id": "4a2c4940-4071-4464-a0e3-2a00c3feaa83"
+    },
+    {
+      "claim_id": "6da06bea-a7ca-49f7-bb2f-78912a317521",
+      "result_id": "4a2c4940-4071-4464-a0e3-2a00c3feaa83"
+    },
+    {
+      "claim_id": "8916f751-5249-487a-8a93-9ca5527356d3",
+      "result_id": "4a2c4940-4071-4464-a0e3-2a00c3feaa83"
+    },
+    {
+      "claim_id": "6d209710-0268-44c2-bd2e-9f5e93379260",
+      "result_id": "4a2c4940-4071-4464-a0e3-2a00c3feaa83"
+    },
+    {
+      "claim_id": "55e494f0-837e-408e-82da-f3084b08ccbb",
+      "result_id": "5031b93c-7c3a-4c7d-9ec7-dc2fccba0e61"
+    },
+    {
+      "claim_id": "e1b4f78d-75c5-4c5a-9626-29e20c89d60b",
+      "result_id": "5031b93c-7c3a-4c7d-9ec7-dc2fccba0e61"
+    },
+    {
+      "claim_id": "892cb7fd-3e14-46da-be98-b9b44afc907d",
+      "result_id": "d814bb94-5dff-4ee0-a43e-5f579b3122a8"
+    },
+    {
+      "claim_id": "14598ae8-8cfe-424d-9f32-79461fac022f",
+      "result_id": "c113bd14-dba7-4e91-bf0a-33052122c671"
+    },
+    {
+      "claim_id": "83d24884-67e1-4f58-a2bb-f97f78e1fc5d",
+      "result_id": "c113bd14-dba7-4e91-bf0a-33052122c671"
+    },
+    {
+      "claim_id": "865e17e3-9268-4019-8ad7-4b5fbc2e3111",
+      "result_id": "47cdffdb-dfd9-460b-8444-5a51340aca31"
+    },
+    {
+      "claim_id": "62df1ada-d88b-441d-b7a4-a91adc68c6ef",
+      "result_id": "47cdffdb-dfd9-460b-8444-5a51340aca31"
+    },
+    {
+      "claim_id": "225c9224-1647-4af3-805d-418556365a63",
+      "result_id": "47cdffdb-dfd9-460b-8444-5a51340aca31"
+    },
+    {
+      "claim_id": "66af62fa-6b0e-40e0-9e98-3311c8c5f37c",
+      "result_id": "fb703132-a615-4fc7-ab4e-d09f955f318d"
+    },
+    {
+      "claim_id": "b56bc9ba-9376-419f-ad14-13b75d9315f4",
+      "result_id": "fb703132-a615-4fc7-ab4e-d09f955f318d"
+    },
+    {
+      "claim_id": "588a8a86-4059-4c65-b717-b44bfeb3b7d8",
+      "result_id": "fb703132-a615-4fc7-ab4e-d09f955f318d"
+    },
+    {
+      "claim_id": "469a2f62-44c6-4baf-9ea2-5c0cd5527cdf",
+      "result_id": "fb703132-a615-4fc7-ab4e-d09f955f318d"
+    },
+    {
+      "claim_id": "8addd56e-4686-436c-b903-21ced37cb584",
+      "result_id": "2eeff1a6-e1f2-4247-bf41-3a68d4d2ec94"
+    },
+    {
+      "claim_id": "a95eb8f4-e1e0-45e7-a2e9-00fd1720b089",
+      "result_id": "2eeff1a6-e1f2-4247-bf41-3a68d4d2ec94"
+    },
+    {
+      "claim_id": "59f24093-b3e8-4afa-8c16-54426c08dacd",
+      "result_id": "2eeff1a6-e1f2-4247-bf41-3a68d4d2ec94"
+    },
+    {
+      "claim_id": "cb294759-cb5c-478c-b5aa-bb7ff64a29ea",
+      "result_id": "2eeff1a6-e1f2-4247-bf41-3a68d4d2ec94"
+    },
+    {
+      "claim_id": "a53f9b70-361f-4b94-88a2-cbccce048365",
+      "result_id": "2eeff1a6-e1f2-4247-bf41-3a68d4d2ec94"
+    },
+    {
+      "claim_id": "7759927d-80b8-441b-8d1d-ec370bfeeac8",
+      "result_id": "d1cfabde-08c4-4ca1-853e-83c27a7f55fa"
+    },
+    {
+      "claim_id": "6d13ae30-1374-47a6-a22e-f4ac4754fc52",
+      "result_id": "d1cfabde-08c4-4ca1-853e-83c27a7f55fa"
+    },
+    {
+      "claim_id": "5be57977-ae19-48a8-bb7a-ea4ca00afa55",
+      "result_id": "d1cfabde-08c4-4ca1-853e-83c27a7f55fa"
+    },
+    {
+      "claim_id": "02de97ae-a5f6-4d25-ae3e-c9caca99f1fa",
+      "result_id": "d1cfabde-08c4-4ca1-853e-83c27a7f55fa"
+    },
+    {
+      "claim_id": "755c5f2d-e140-4c3e-9991-983dfb0268e4",
+      "result_id": "d1cfabde-08c4-4ca1-853e-83c27a7f55fa"
+    },
+    {
+      "claim_id": "992c1f67-8b77-4a4e-873f-435f30c01523",
+      "result_id": "e804ac38-622e-478f-9341-32d7711ddd50"
+    },
+    {
+      "claim_id": "e0d4fee5-c013-4895-92a9-4d49a2c6fd76",
+      "result_id": "e804ac38-622e-478f-9341-32d7711ddd50"
+    },
+    {
+      "claim_id": "696ac267-326b-4ad6-ba20-89fc2b2ebd9a",
+      "result_id": "e804ac38-622e-478f-9341-32d7711ddd50"
+    },
+    {
+      "claim_id": "9669e7be-40ae-4405-a320-c6838c41dcd5",
+      "result_id": "e804ac38-622e-478f-9341-32d7711ddd50"
+    },
+    {
+      "claim_id": "0646cf0c-77e1-42cd-b8d7-71102e675927",
+      "result_id": "e804ac38-622e-478f-9341-32d7711ddd50"
+    },
+    {
+      "claim_id": "753a78e6-c451-497f-8714-061d6a89e4d0",
+      "result_id": "e804ac38-622e-478f-9341-32d7711ddd50"
+    },
+    {
+      "claim_id": "2da38608-2560-4157-9077-313e35d96efa",
+      "result_id": "e804ac38-622e-478f-9341-32d7711ddd50"
+    },
+    {
+      "claim_id": "53fc2c29-2280-407b-a7ca-7d1deb988578",
+      "result_id": "e804ac38-622e-478f-9341-32d7711ddd50"
+    },
+    {
+      "claim_id": "b0545b06-c1c9-43ea-b6f2-838236a21cf4",
+      "result_id": "e804ac38-622e-478f-9341-32d7711ddd50"
+    },
+    {
+      "claim_id": "d4bf5bf3-1319-46e9-8c7e-69c00b6a3a91",
+      "result_id": "e804ac38-622e-478f-9341-32d7711ddd50"
+    },
+    {
+      "claim_id": "96262b4a-246e-4e1b-b285-e8191d11392e",
+      "result_id": "e804ac38-622e-478f-9341-32d7711ddd50"
+    },
+    {
+      "claim_id": "f0038661-0e37-4a1f-a33b-277b6bf4491d",
+      "result_id": "e804ac38-622e-478f-9341-32d7711ddd50"
+    },
+    {
+      "claim_id": "b6e14aa0-fea2-41b4-bae6-ec8cbadb6f99",
+      "result_id": "3e073f3a-5f4c-4f27-8fb7-52b603f56f8b"
+    },
+    {
+      "claim_id": "8ac45225-8381-4e77-98c3-6a0210b5eb12",
+      "result_id": "3e073f3a-5f4c-4f27-8fb7-52b603f56f8b"
+    }
+  ],
+  "comparisons": []
+}

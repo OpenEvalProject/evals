@@ -1,0 +1,1258 @@
+{
+  "submission": {
+    "id": "e3803c65-0656-429f-9229-c7eba54b3fe1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:57:17.146023Z",
+    "updated_at": "2025-12-01T22:57:17.146023Z"
+  },
+  "content": [
+    {
+      "id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "submission_id": "e3803c65-0656-429f-9229-c7eba54b3fe1",
+      "content_type": "manuscript",
+      "content_text": "# MERS-CoV spillover at the camel-human interface\n\n## Authors\n\n- Gytis Dudas<sup>1</sup> ([ORCID: 0000-0002-0227-4158](https://orcid.org/0000-0002-0227-4158)) \u2020\n- Luiz Max Carvalho<sup>2</sup>\n- Andrew Rambaut<sup>2</sup>\n- Trevor Bedford<sup>1</sup> ([ORCID: 0000-0002-4039-5794](https://orcid.org/0000-0002-4039-5794))\n\n### Affiliations\n\n1. Vaccine and Infectious Disease Division Fred Hutchinson Cancer Research Center Seattle United States\n2. Institute of Evolutionary Biology University of Edinburgh Edinburgh United Kingdom\n3. Fogarty International Center National Institutes of Health Bethesda United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMiddle East respiratory syndrome coronavirus (MERS-CoV) is a zoonotic virus from camels causing significant mortality and morbidity in humans in the Arabian Peninsula. The epidemiology of the virus remains poorly understood, and while case-based and seroepidemiological studies have been employed extensively throughout the epidemic, viral sequence data have not been utilised to their full potential. Here, we use existing MERS-CoV sequence data to explore its phylodynamics in two of its known major hosts, humans and camels. We employ structured coalescent models to show that long-term MERS-CoV evolution occurs exclusively in camels, whereas humans act as a transient, and ultimately terminal host. By analysing the distribution of human outbreak cluster sizes and zoonotic introduction times, we show that human outbreaks in the Arabian peninsula are driven by seasonally varying zoonotic transfer of viruses from camels. Without heretofore unseen evolution of host tropism, MERS-CoV is unlikely to become endemic in humans.\n\n## Introduction\n\nMiddle East respiratory syndrome coronavirus (MERS-CoV), endemic in camels in the Arabian Peninsula, is the causative agent of zoonotic infections and limited outbreaks in humans. The virus, first discovered in 2012 (Zaki et al., 2012; van Boheemen et al., 2012), has caused more than 2000 infections and over 700 deaths, according to the World Health Organization (WHO) (World Health Organization, 2017). Its epidemiology remains obscure, largely because infections are observed among the most severely affected individuals, such as older males with comorbidities (Assiri et al., 2013a; WHO MERS-Cov Research Group, 2013). While contact with camels is often reported, other patients do not recall contact with any livestock, suggesting an unobserved community contribution to the outbreak (WHO MERS-Cov Research Group, 2013). Previous studies on MERS-CoV epidemiology have used serology to identify factors associated with MERS-CoV exposure in potential risk groups (Reusken et al., 2015; Reusken et al., 2013). Such data have shown high seroprevalence in camels (M\u00fcller et al., 2014; Corman et al., 2014; Chu et al., 2014; Reusken et al., 2013; Reusken et al., 2014) and evidence of contact with MERS-CoV in workers with occupational exposure to camels (Reusken et al., 2015; M\u00fcller et al., 2015). Separately, epidemiological modelling approaches have been used to look at incidence reports through time, space and across hosts (Cauchemez et al., 2016).\n\nAlthough such epidemiological approaches yield important clues about exposure patterns and potential for larger outbreaks, much inevitably remains opaque to such approaches due to difficulties in linking cases into transmission clusters in the absence of detailed information. Where sequence data are relatively cheap to produce, genomic epidemiological approaches can fill this critical gap in outbreak scenarios (Liu et al., 2013; Gire et al., 2014; Grubaugh et al., 2017). These data often yield a highly detailed picture of an epidemic when complete genome sequencing is performed consistently and appropriate metadata collected (Dudas et al., 2017). Sequence data can help discriminate between multiple and single source scenarios (Gire et al., 2014; Quick et al., 2015), which are fundamental to quantifying risk (Grubaugh et al., 2017). Sequencing MERS-CoV has been performed as part of initial attempts to link human infections with the camel reservoir (Memish et al., 2014), nosocomial outbreak investigations (Assiri et al., 2013b) and routine surveillance (Wernery et al., 2015). A large portion of MERS-CoV sequences come from outbreaks within hospitals, where sequence data have been used to determine whether infections were isolated introductions or were part of a larger hospital-associated outbreak (Fagbo et al., 2015). Similar studies on MERS-CoV have taken place at broader geographic scales, such as cities (Cotten et al., 2013).\n\nIt is widely accepted that recorded human MERS-CoV infections are a result of at least several introductions of the virus into humans (Cotten et al., 2013) and that contact with camels is a major risk factor for developing MERS, per WHO guidelines (World Health Organization, 2016). Previous studies attempting to quantify the actual number of spillover infections have either relied on case-based epidemiological approaches (Cauchemez et al., 2016) or employed methods agnostic to signals of population structure within sequence data (Zhang et al., 2016). Here, we use a dataset of 274 MERS-CoV genomes to investigate transmission patterns of the virus between humans and camels.\n\nHere, we use an explicit model of metapopulation structure and migration between discrete subpopulations, referred to here as demes (Vaughan et al., 2014), derived from the structured coalescent (Notohara, 1990). Unlike approaches that model host species as a discrete phylogenetic trait of the virus using continuous-time Markov processes (or simpler, parsimony based, approaches) (Faria et al., 2013; Lycett et al., 2016), population structure models explicitly incorporate contrasts in deme effective population sizes and migration between demes. By estimating independent coalescence rates for MERS-CoV in humans and camels, as well as migration patterns between the two demes, we show that long-term viral evolution of MERS-CoV occurs exclusively in camels. Our results suggest that spillover events into humans are seasonal and might be associated with the calving season in camels. However, we find that MERS-CoV, once introduced into humans, follows transient transmission chains that soon abate. Using Monte Carlo simulations we show that $R_{0}$ for MERS-CoV circulating in humans is much lower than the epidemic threshold of 1.0 and that correspondingly the virus has been introduced into humans hundreds of times.\n\n## Results\n\n### MERS-CoV is predominantly a camel virus\n\nThe structured coalescent approach we employ (see Materials\u00a0and\u00a0methods) identifies camels as a reservoir host where most of MERS-CoV evolution takes place (Figure 1), while human MERS outbreaks are transient and terminal with respect to long-term evolution of the virus (Figure 1\u2014figure supplement 1). Across 174 MERS-CoV genomes collected from humans, we estimate a median of 56 separate camel-to-human cross-species transmissions (95% highest posterior density (HPD): 48\u201363). While we estimate a median of 3 (95% HPD: 0\u201312) human-to-camel migrations, the 95% HPD interval includes zero and we find that no such migrations are found in the maximum clade credibility tree (Figure 1). Correspondingly, we observe substantially higher camel-to-human migration rate estimates than human-to-camel migration rate estimates (Figure 1\u2014figure supplement 2). This inference derives from the tree structure wherein human viruses appear as clusters of highly related sequences nested within the diversity seen in camel viruses, which themselves show significantly higher diversity and less clustering. This manifests as different rates of coalescence with camel viruses showing a scaled effective population size $N_{e}\u2062\\tau$ of 3.49 years (95% HPD: 2.71\u20134.38) and human viruses showing a scaled effective population of 0.24 years (95% HPD: 0.14\u20130.34).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/31257/elife-31257-fig1-v3.jpg)\n\n**Figure 1.:** Maximum clade credibility (MCC) tree showing inferred ancestral hosts for MERS-CoV recovered with the structured coalescent. The vast majority of MERS-CoV evolution is inferred to occur in camels (orange) with human outbreaks (blue) representing evolutionary dead-ends for the virus. Confidence in host assignment is depicted as a colour gradient, with increased uncertainty in host assignment (posterior probabilities close to 0.5) shown as grey. While large clusters of human cases are apparent in the tree, significant contributions to human outbreaks are made by singleton sequences, likely representing recent cross-species transmissions that were caught early.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31257/elife-31257-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** This is the same tree as shown in Figure 1, but with contiguous stretches of MERS-CoV evolutionary history split by inferred host: camels (top in orange) and humans (bottom in blue). This visualisation highlights the ephemeral nature of MERS-CoV outbreaks in humans, compared to continuous circulation of the virus in camels.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31257/elife-31257-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Negligible flow of MERS-CoV lineages from humans into camels is recovered regardless of prior choice (note that rates are backwards in time). Plots show the 95% highest posterior density for the estimated migration rate from the human deme into the camel deme looking backwards in time (orange) and vice versa (blue). Dotted lines indicate exponential priors specified for migration rates, with mean 1.0 (bottom) or 10.0 (top).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/31257/elife-31257-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** MCC tree is presented the same as Figure 1 and Figure 1\u2014figure supplement 4, with colours indicating the most probable state reconstruction at internal nodes. Unlike the structured coalescent summary shown in Figure 1 where camels are reconstructed as the main host where MERS-CoV persists, the discrete trait approach identifies both camels and humans as major hosts with humans being the source of MERS-CoV infection in camels.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/31257/elife-31257-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** MCC tree is presented the same as Figure 1 and Figure 1\u2014figure supplement 3, with colours indicating the most probable state reconstruction at internal nodes. Similar to Figure 1\u2014figure supplement 3 enforcing equal coalescence rates between demes in a structured coalescent model identifies humans as a major MERS-CoV host and the source of viruses in camels.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/31257/elife-31257-fig1-figsupp5-v3.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Maximum likelihood tree shows genetic divergence between MERS-CoV genomes collected from camels (orange tips) and humans (blue tips).\n\nWe believe that the small number of inferred human-to-camel migrations are induced by the migration rate prior, while some are derived from phylogenetic proximity of human sequences to the apparent \u2018backbone\u2019 of the phylogenetic tree. This is most apparent in lineages in early-mid 2013 that lead up to sequences comprising the MERS-CoV clade dominant in 2015, where owing to poor sampling of MERS-CoV genetic diversity from camels the model cannot completely dismiss humans as a potential alternative host. The first sequences of MERS-CoV from camels do not appear in our data until November 2013. Our finding of negligible human-to-camel transmission is robust to choice of prior (Figure 1\u2014figure supplement 2).\n\nThe repeated and asymmetric introductions of short-lived clusters of MERS-CoV sequences from camels into humans leads us to conclude that MERS-CoV epidemiology in humans is dominated by zoonotic transmission (Figure 1 and Figure 1\u2014figure supplement 1). We observe dense terminal clusters of MERS-CoV circulating in humans that are of no subsequent relevance to the evolution of the virus. These clusters of presumed human-to-human transmission are then embedded within extensive diversity of MERS-CoV lineages inferred to be circulating in camels, a classic pattern of source-sink dynamics. Our findings suggest that instances of human infection with MERS-CoV are more common than currently thought, with exceedingly short transmission chains mostly limited to primary cases that might be mild and ultimately not detected by surveillance or sequencing. Structured coalescent analyses recover the camel-centered picture of MERS-CoV evolution despite sequence data heavily skewed towards non-uniformly sampled human cases and are robust to choice of prior. Comparing these results with a currently standard discrete trait analysis (Lemey et al., 2009) approach for ancestral state reconstruction shows dramatic differences in host reconstruction at internal nodes (Figure 1\u2014figure supplement 3). Discrete trait analysis reconstruction identifies both camels and humans as important hosts for MERS-CoV persistence, but with humans as the ultimate source of camel infections. A similar approach has been attempted previously (Zhang et al., 2016), but this interpretation of MERS-CoV evolution disagrees with lack of continuing human transmission chains outside of Arabian peninsula, low seroprevalence in humans and very high seroprevalence in camels across Saudi Arabia. We suspect that this particular discrete trait analysis reconstruction is false due to biased data, that\u00a0is, having nearly twice as many MERS-CoV sequences from humans ($n=174$) than from camels ($n=100$) and the inability of the model to account for and quantify vastly different rates of coalescence in the phylogenetic vicinity of both types of sequences. We can replicate these results by either applying the same model to current data (Figure 1\u2014figure supplement 3) or by enforcing equal coalescence rates within each deme in the structured coalescent model (Figure 1\u2014figure supplement 4).\n\n### MERS-CoV shows seasonal introductions\n\nWe use the posterior distribution of MERS-CoV introduction events from camels to humans (Figure 1) to model seasonal variation in zoonotic transfer of viruses. We identify four months (April, May, June, July) when the odds of MERS-CoV introductions are increased (Figure 2) and four when the odds are decreased (August, September, November, December). Camel calving is reported to occur from October to February (Almutairi et al., 2010), with rapidly declining maternal antibody levels in calves within the first weeks after birth (Wernery, 2001). It is possible that MERS-CoV sweeps through each new camel generation once critical mass of susceptibles is reached (Martinez-Bakker et al., 2014), leading to a sharp rise in prevalence of the virus in camels and resulting in increased force of infection into the human population. Strong influx of susceptibles and subsequent sweeping outbreaks in camels may explain evidence of widespread exposure to MERS-CoV in camels from seroepidemiology (M\u00fcller et al., 2014; Corman et al., 2014; Chu et al., 2014; Reusken et al., 2013; Reusken et al., 2014).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/31257/elife-31257-fig2-v3.jpg)\n\n**Figure 2.:** (A) Posterior density estimates partitioned by month showing the 95% highest posterior density interval for relative odds ratios of MERS-CoV introductions into humans. Posterior means are indicated with circles. Evidence for increased or decreased risk (95% HPD excludes 1.0) for introductions are indicated by black or white circles, respectively. Hatched area spanning October to February indicates the camel calving season. (B) Sequence cluster sizes and inferred dates of introduction events. Each introduction event is shown as a vertical line positioned based on the median introduction time, as recovered by structured coalescent analyses and coloured by time of year with height indicating number of descendant sequences recovered from human cases. 95% highest posterior density intervals for introductions of MERS-CoV into humans are indicated with coloured lines, coloured by median estimated introduction time. The black dotted line indicates the joint probability density for introductions. We find little correlation between date and size of introduction (Spearman $\u03c1=0.06$, $p=0.68$).\n\nAlthough we find evidence of seasonality in zoonotic spillover timing, no such relationship exists for sizes of human sequence clusters (Figure 2B). This is entirely expected, since little seasonality in human behaviour that could facilitate MERS-CoV transmission is expected following an introduction. Similarly, we do not observe any trend in human sequence cluster sizes over time (Figure 2B, Spearman $\u03c1=0.06$, $p=0.68$), suggesting that MERS-CoV outbreaks in humans are neither growing nor shrinking in size. This is not surprising either, since MERS-CoV is a camel virus that has to date, experienced little-to-no selective pressure to improve transmissibility between humans.\n\n### MERS-CoV is poorly suited for human transmission\n\nStructured coalescent approaches clearly show humans to be a terminal host for MERS-CoV, implying poor transmissibility. However, we wanted to translate this observation into an estimate of the basic reproductive number $R_{0}$ to provide an intuitive epidemic behaviour metric that does not require expertise in reading phylogenies. The parameter $R_{0}$ determines expected number of secondary cases in a single infections as well as the distribution of total cases that result from a single introduction event into the human population (Equation 1, Materials\u00a0and\u00a0methods). We estimate $R_{0}$ along with other relevant parameters via Monte Carlo simulation in two steps. First, we simulate case counts across multiple outbreaks totaling 2000 cases using Equation 1 and then we subsample from each case cluster to simulate sequencing of a fraction of cases. Sequencing simulations are performed via a multivariate hypergeometric distribution, where the probability of sequencing from a particular cluster depends on available sequencing capacity (number of trials), numbers of cases in the cluster (number of successes) and number of cases outside the cluster (number of failures). In addition, each hypergeometric distribution used to simulate sequencing is concentrated via a bias parameter, that enriches for large sequence clusters at the expense of smaller ones (for its effects see Figure 3\u2014figure supplement 1). This is a particularly pressing issue, since a priori we expect large hospital outbreaks of MERS to be overrepresented in sequence data, whereas sequences from primary cases will be sampled exceedingly rarely. We record the number, mean, standard deviation and skewness (third standardised moment) of sequence cluster sizes in each simulation (left-hand panel in Figure 3) and extract the subset of Monte Carlo simulations in which these summary statistics fall within the 95% highest posterior density observed in the empirical MERS-CoV data from structured coalescent analyses. We record $R_{0}$ values, as well as the number of case clusters (equivalent to number of zoonotic introductions), for these empirically matched simulations. A schematic of this Monte Carlo procedure is shown in Figure 3\u2014figure supplement 2. Since the total number of cases is fixed at 2000, higher $R_{0}$ results in fewer larger transmission clusters, while lower $R_{0}$ results in many smaller transmission clusters.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/31257/elife-31257-fig3-v3.jpg)\n\n**Figure 3.:** Leftmost scatter plot shows the distribution of individual Monte Carlo simulation sequence cluster size statistics (mean and skewness) coloured by the $R_{0}$ value used for the simulation. The dotted rectangle identifies the 95% highest posterior density bounds for sequence cluster size mean and skewness observed for empirical MERS-CoV data. The distribution of $R_{0}$ values that fall within 95% HPDs for sequence cluster size mean, standard deviation, skewness and number of introductions, is shown in the middle, on the same $y$-axis. Bins falling inside the 95% percentiles are coloured by $R_{0}$, as in the leftmost scatter plot. The distribution of total number of introductions associated with simulations matching MERS-CoV sequence clusters is shown on the right. Darker shade of grey indicates bins falling within the 95% percentiles. Monte Carlo simulations indicate $R_{0}$ for MERS-CoV in humans is likely to be below 1.0, with numbers of zoonotic transmissions numbering in the hundreds.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31257/elife-31257-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** From top to bottom each row corresponds to departures from completely random sequencing efforts with respect to case cluster size (bias parameter\u00a0=\u00a01.0) to sequencing increasingly biased towards capturing large case clusters (bias\u00a0=\u00a02.0, bias\u00a0=\u00a03.0). Leftmost scatter plots show the distribution of individual Monte Carlo simulation sequence cluster size statistics (mean and skewness) coloured by the $R_{0}$ value used for the simulation. The dotted rectangle identifies the 95% highest posterior density bounds for sequence cluster size mean and skewness observed for empirical MERS-CoV data. The distribution of $R_{0}$ values matching empirical data are shown in the middle, on the same $y$-axis across all levels of the bias parameter. Under unbiased sequencing (bias\u00a0=\u00a01.0) only 0.45% of simulations fit our phylogenetic observations, while 1.79% and 1.67% of simulations fit for bias levels of 2.0 and 3.0, respectively. Correspondingly, we estimate 11.6% support for a model with bias level 1.0, 45.7% support for a model with bias level 2.0, and 42.7% support for a model with bias level 3.0. Bins falling inside the 95% percentiles are coloured by $R_{0}$, as in the leftmost scatter plot. While the 95% percentiles for $R_{0}$ values are close to 1.0 (0.71\u20130.98) for the unbiased sequencing simulation (i.e. uniform sequencing efforts, in which every case is equally likely to be sequenced), we also note that increasing levels of bias are considerably more to likely to generate MERS-CoV-like sequence clusters. The distribution of total number of introductions associated with simulations matching MERS-CoV sequence clusters is shown in the plots on the right, on the same $y$-axis across all levels of bias. Darker shade of grey indicates bins falling within the 95% percentiles. The median number of cross-species introductions observed in simulations matching empirical data without bias are 346 (95% percentiles 262\u2013439). These numbers jump up to 568 (95% percentiles 430\u2013727) for bias\u00a0=\u00a02.0 and 656 (95% percentiles 488\u2013853) for bias\u00a0=\u00a03.0 simulations. Model averaging would suggest plausible numbers of introductions between 311 and 811.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31257/elife-31257-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Case clusters are simulated according to Equation 1 until an outbreak size of 2000 cases is reached. We sample 174 cases from each simulation to represent sequencing of human MERS cases. \u2018Sequencing\u2019 is carried out by using multivariate hypergeometric sampling, representing sampling cases without replacement to be sequenced. Sequencing simulations take place at three levels of bias: 1.0, where every case is equally likely to be sequenced, and 2.0 and 3.0, where cases from larger clusters are increasingly more likely to be sequenced. The distribution of simulated sequence clusters is summarised by its mean, median and standard deviation. A simulation is considered to match if the mean, median and standard deviation of its sequence cluster sizes falls within the 95% highest posterior density interval of observed MERS-CoV sequence clusters. $R_{0}$ values that ultimately generate data matching empirical observations, as well as associated numbers of \u2018introductions\u2019 are retained as estimates. These estimates are summarised in Figure 3.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/31257/elife-31257-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The plot is identical to Figure 3\u2014figure supplement 1, but instead of 2000 cases, simulations were run with 4000 cases. With more unobserved cases the R$_{0}$ values matching observed MERS-CoV sequence clusters can only be smaller, with a corresponding increase in numbers of zoonotic transmissions. However, the numbers of simulations that match MERS-CoV data go down as well.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/31257/elife-31257-fig3-figsupp4-v3.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Boxplots indicate frequency of case (blue, top) and sequence (red, bottom) cluster sizes across simulations at different bias levels, marginalised across $R_{0}$ values. Outliers are shown with transparency, medians are indicated with thick black lines. Case clusters exhibit a strong skew with large numbers of singleton introductions and a substantial tail at higher levels of bias.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/31257/elife-31257-fig3-figsupp5-v3.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Density of sequence cluster size percentiles (1 st\u201399th, calculated across a grid of 50 values) calculated for random states from the posterior distribution ($x$-axis) and matching simulations ($y$-axis). Most values fall on the one-to-one line, with a heavier tail in mid-sized sequence clusters in empirical data, manifesting as a greater density of points below the one-to-one line in the middle.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/31257/elife-31257-fig3-figsupp6-v3.jpg)\n\n**Figure 3\u2014figure supplement 6.:** Numbers indicate the total number of epidemiological simulations under each combination of bias and dispersion parameter $\\omega$ that result in MERS-CoV-like sequence cluster sizes. More simulations match observations with bias $>1$ and $\\omega\u22480.1$.\n\nWe find that observed phylogenetic patterns of sequence clustering strongly support $R_{0}$ below 1.0 (middle panel in Figure 3). Mean $R_{0}$ value observed in matching simulations is 0.72 (95% percentiles 0.57\u20130.90), suggesting the inability of the virus to sustain transmission in humans. Lower values for $R_{0}$ in turn suggest relatively large numbers of zoonotic transfers of viruses into humans (right-hand panel in Figure 3). Median number of cross-species introductions observed in matching simulations is 592 (95% percentiles 311\u2013811). Our results suggest a large number of unobserved MERS primary cases. Given this, we also performed simulations where the total number of cases is doubled to 4000 to explore the impact of dramatic underestimation of MERS cases. In these analyses, $R_{0}$ values tend to decrease even further as numbers of introductions go up, although very few simulations match currently observed MERS-CoV sequence data (Figure 3\u2014figure supplement 3).\n\nOverall, our analyses indicate that MERS-CoV is poorly suited for human-to-human transmission, with an estimated $R_{0}<0.90$ and sequence sampling likely to be biased towards large hospital outbreaks (Figure 3\u2014figure supplement 1). All matching simulations exhibit highly skewed distributions of case cluster sizes with long tails (Figure 3\u2014figure supplement 4), which is qualitatively similar to the results of (Cauchemez et al., 2016). We find that simulated sequence cluster sizes resemble observed sequence cluster sizes in the posterior distribution, with a slight reduction in mid-sized clusters in simulated data (Figure 3\u2014figure supplement 5). Given these findings, and the fact that large outbreaks of MERS occurred in hospitals, the combination of frequent spillover of MERS-CoV into humans and occasional outbreak amplification via poor hygiene practices (Assiri et al., 2013b; Chen et al., 2017) appear sufficient to explain observed epidemiological patterns of MERS-CoV.\n\n### Recombination shapes MERS-CoV diversity\n\nRecombination has been shown to occur in all genera of coronaviruses, including MERS-CoV (Lai et al., 1985; Makino et al., 1986; Keck et al., 1988; Kottier et al., 1995; Herrewegh et al., 1998). In order to quantify the degree to recombination has shaped MERS-CoV genetic diversity, we used two recombination detection approaches across partitions of taxa corresponding to inferred MERS-CoV clades. Both methods rely on sampling parental and recombinant alleles within the alignment, although each quantifies different signals of recombination. One hallmark of recombination is the ability to carry alleles derived via mutation from one lineage to another, which appear as repeated mutations taking place in the recipient lineage, somewhere else in the tree. The PHI (pairwise homoplasy index) test quantifies the appearance of these excessive repeat mutations (homoplasies) within an alignment (Bruen et al., 2006). Another hallmark of recombination is clustering of alleles along the genome, due to how template switching, the primary mechanism of recombination in RNA viruses, occurs. 3Seq relies on the clustering of nucleotide similarities along the genome between sequence triplets \u2013 two potential parent-donors and one candidate offspring-recipient sequences (Boni et al., 2007).\n\nBoth tests can give spurious results in cases of extreme rate heterogeneity and sampling over time (Dudas and Rambaut, 2016), but both tests have not been reported to fail simultaneously. PHI and 3Seq methods consistently identify most of the apparent \u2018backbone\u2019 of the MERS-CoV phylogeny as encompassing sequences with evidence of recombination (Figure 4\u2014figure supplement 1). Neither method can identify where in the tree recombination occurred, but each full asterisk in Figure 4\u2014figure supplement 1 should be interpreted as the minimum partition of data that still captures both donor and recipient alleles involved in a recombination event. This suggests a non-negligible contribution of recombination in shaping existing MERS-CoV diversity. As done previously (Dudas and Rambaut, 2016), we show large numbers of homoplasies in MERS-CoV data (Figure 4\u2014figure supplement 2) with some evidence of genomic clustering of such alleles. These results are consistent with high incidence of MERS-CoV in camels (M\u00fcller et al., 2014; Corman et al., 2014; Chu et al., 2014; Reusken et al., 2014; Ali et al., 2017), allowing for co-infection with distinct genotypes and thus recombination to occur\u00a0(Sabir et al., 2016).\n\nOwing to these findings, we performed a sensitivity analysis in which we partitioned the MERS-CoV genome into two fragments and identified human outbreak clusters within each fragment. We find strong similarity in the grouping of human cases into outbreak clusters between fragments (Figure 4A). Between the two trees in Figure 4B four (out of 54) \u2018human\u2019 clades are expanded where either singleton introductions or two-taxon clades in fragment 2 join other clades in fragment 1. For the reverse comparison, there are five \u2018human\u2019 clades (out of 53) in fragment 2 that are expanded. All such clades have low divergence (Figure 4B) and thus incongruences in human clades are more likely to be caused by differences in deme assignment rather than actual recombination. And while we observe evidence of distinct phylogenetic trees from different parts of the MERS-CoV genome (Figure 4B), human clades are minimally affected and large portions of the posterior probability density in both parts of the genome are concentrated in shared clades (Figure 4\u2014figure supplement 3). Additionally, we observe the same source-sink dynamics between camel and human populations in trees constructed from separate genomic fragments as were observed in the original full genome tree (Figures 1 and 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/31257/elife-31257-fig4-v3.jpg)\n\n**Figure 4.:** (A) Marginal posterior probabilities of taxa collected from humans belonging to the same clade in phylogenies derived from different parts of the genome. Taxa are ordered according to phylogeny of fragment 2 (genome positions 21001 to 29364) reduced to just the human tips and is displayed on the left. Human clusters are largely well-supported as monophyletic and consistent across trees of both genomic fragments. (B) Tanglegram connecting the same taxa between a phylogeny derived from fragment 1 (left, genome positions 1 to 21000) and fragment 2 (right, genome positions 21001 to 29364), reduced to just the human tips and branches with posterior probability $<0.1$ collapsed. Human clusters exhibit limited diversity and corresponding low levels of incongruence within an introduction cluster.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31257/elife-31257-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Maximum clade credibility tree of MERS-CoV genomes annotated with results of two recombination detection tests (PHI and 3Seq) applied to descendent sequences of each clade. Both tests identify large portions of existing sequence data as containing signals of recombination. Note that markings do not indicate where recombinations have occurred on the tree, merely the minimum distance in sequence/time space between recombining lineages.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31257/elife-31257-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Ancestral state reconstruction (right) identifies a large number of sites in which mutations have occurred more than once in the tree (homoplasies, orange) or are reversions (red) from a state arising in an ancestor. Mutations that apparently only occur once in the tree (synapomorphies) are shown in grey. The maximum likelihood phylogeny on the left is coloured by whether sequences were sampled in humans (blue) or camels (orange).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/31257/elife-31257-fig4-figsupp3-v3.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Central scatter plot shows the posterior probability of human clades shared between genomic fragments 1 and 2, in their respective trees. Left and bottom scatter plots track the posterior probability of human clades only observed in fragment 2 (left) or fragment 1 (bottom). The cumulative probability of human clades present in either tree are tracked by plots on the right (fragment 2) and top (fragment 1). Most of the probability mass is concentrated within human clades that are present in trees of both genomic fragment 1 and 2 (0.9701 and 0.9474 of all human clades across posteriors, respectively).\n\nObserved departures from strictly clonal evolution suggest that while recombination is an issue for inferring MERS-CoV phylogenies, its effect on the human side of MERS outbreaks is minimal, as expected if humans represent a transient host with little opportunity for co-infection. MERS-CoV evolution on the reservoir side is complicated by recombination, although is nonetheless still largely amenable to phylogenetic methods. Amongst other parameters of interest, recombination is expected to interfere with molecular clocks, where transferred genomic regions can give the impression of branches undergoing rapid evolution, or branches where recombination results in reversions appearing to evolve slow. In addition to its potential to influence tree topology, recombination in molecular sequence data is an erratic force with unpredictable effects. We suspect that the effects of recombination in MERS-CoV data are reigned in by a relatively small effective population size of the virus in Saudi Arabia (see next section) where haplotypes are fixed or nearly fixed, thus preventing an accumulation of genetic diversity that would then be reshuffled via recombination. Nevertheless the evolutionary rate of the virus appears to fall firmly within the expected range for RNA viruses: regression of nucleotide differences to Jordan-N3/2012 genome against sequence collection dates yields a rate of $4.59\\times10^{-4}$ subs/site/year, Bayesian structured coalescent estimate from primary analysis $9.57\\times10^{-4}$ (95% HPDs: $8.28-10.9\\times10^{-4}$) subs/site/year.\n\n### MERS-CoV shows population turnover in camels\n\nHere, we attempt to investigate MERS-CoV demographic patterns in the camel reservoir. We supplement camel sequence data with a single earliest sequence from each human cluster, treating viral diversity present in humans as a sentinel sample of MERS-CoV diversity circulating in camels. This removes conflicting demographic signals sampled during human outbreaks, where densely sampled closely related sequences from humans could be misconstrued as evidence of demographic crash in the viral population.\n\nDespite lack of convergence, neither of the two demographic reconstructions show evidence of fluctuations in the scaled effective population size ($N_{e}\u2062\\tau$) of MERS-CoV over time (Figure 5). We recover a similar demographic trajectory when estimating $N_{e}\u2062\\tau$ over time with a skygrid tree prior across the genome split into ten fragments with independent phylogenetic trees to account for confounding effects of recombination (Figure 5\u2014figure supplement 1). However, we do note that coalescence rate estimates are high relative to the sampling time period, with a mean estimate of $N_{e}\u2062\\tau$ at 3.49 years (95% HPD: 2.71\u20134.38), and consequently MERS-CoV phylogeny resembles a ladder, as often seen in human influenza A virus phylogenies (Bedford et al., 2011).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/31257/elife-31257-fig5-v3.jpg)\n\n**Figure 5.:** Demographic history of MERS-CoV in camels, as inferred via a skygrid coalescent tree prior (Gill et al., 2013). Three skygrid reconstructions are shown, red and orange for each of the stationary distributions reached by MCMC with the whole genome and a black one where the genome was split into ten partitions. Shaded interval indicates the 95% highest posterior density interval for the product of generation time and effective population size, $N_{e}\u2062\\tau$. Midline tracks the inferred median of $N_{e}\u2062\\tau$.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31257/elife-31257-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Inferred median $N_{e}\u2062\\tau$ recovered using a skygrid tree prior on whole genome (bottom) and ten genomic fragments with independent trees (left), coloured by time. Dotted line indicates the one-to-one line.\n\nThis empirically estimated effectived population can be compared to the expected effective population size in a simple epidemiological model. At endemic equilibrium, we expect scaled effective population size $N_{e}\u2062\\tau$ to follow $I/\u20092\u2062\\beta$, where $\\beta$ is the equilibrium rate of transmission and $I$ is the equilibrium number of infecteds (Frost and Volz, 2010). We assume that $\\beta$ is constant and is equal to the rate of recovery. Given a 20 day duration of infection in camels (Adney et al., 2014), we arrive at $\\beta=365/20=18.25$ infections per year. Given extremely high seroprevalence estimates within camels in Saudi Arabia (M\u00fcller et al., 2014; Corman et al., 2014; Chu et al., 2014; Reusken et al., 2013; Reusken et al., 2014), we expect camels to usually be infected within their first year of life. Therefore, we can estimate the rough number of camel infections per year as the number of calves produced each year. We find there are\u00a0830,000 camels in Saudi Arabia (Abdallah and Faye, 2013) and that female camels in Saudi Arabia have an average fecundity of 45% (Abdallah and Faye, 2013). Thus, we expect $830\u2009000\\times0.50\\times0.45=186\u2009750$ new calves produced yearly and correspondingly\u00a0186,750 new infections every year, which spread over 20 day intervals gives an average prevalence of $I=10\u2009233$ infections. This results in an expected scaled effective population size $N_{e}\u2062\\tau=280.4$ years.\n\nComparing expected $N_{e}\u2062\\tau$ to empirical $N_{e}\u2062\\tau$ we arrive at a ratio of 80.3 (64.0\u2013103.5). This is less than the equivalent ratio for human measles virus (Bedford et al., 2011) and is in line with the expectation from neutral evolutionary dynamics plus some degree of transmission heterogeneity (Volz et al., 2013) and seasonal troughs in prevalence. Thus, we believe that the ladder-like appearance of the MERS-CoV tree can likely be explained by entirely demographic factors.\n\n## Discussion\n\n### MERS-CoV epidemiology\n\nIn this study we aimed to understand the drivers of MERS coronavirus transmission in humans and what role the camel reservoir plays in perpetuating the epidemic in the Arabian peninsula by using sequence data collected from both hosts (174 from humans and 100 from camels). We showed that currently existing models of population structure (Vaughan et al., 2014) can identify distinct demographic modes in MERS-CoV genomic data, where viruses continuously circulating in camels repeatedly jump into humans and cause small outbreaks doomed to extinction (Figure 1\u2014figure supplement 1). This inference succeeds under different choices of priors for unknown demographic parameters (Figure 1\u2014figure supplement 2) and in the presence of strong biases in sequence sampling schemes (Figure 3). When rapid coalescence in the human deme is not allowed (Figure 1\u2014figure supplement 4) structured coalescent inference loses power and ancestral state reconstruction is nearly identical to that of discrete trait analysis (Figure 1\u2014figure supplement 3). When allowed different deme-specific population sizes, the structured coalescent model succeeds because a large proportion of human sequences fall into tightly connected clusters, which informs a low estimate for the population size of the human deme. This in turn informs the inferred state of long ancestral branches in the phylogeny, that\u00a0is, because these long branches are not immediately coalescing, they are most likely in camels.\n\nFrom sequence data, we identify at least 50 zoonotic introductions of MERS-CoV into humans from the reservoir (Figure 1), from which we extrapolate that hundreds more such introductions must have taken place (Figure 3). Although we recover migration rates from our model (Figure 1\u2014figure supplement 2), these only pertain to sequences and in no way reflect the epidemiologically relevant per capita rates of zoonotic spillover events. We also looked at potential seasonality in MERS-CoV spillover into humans. Our analyses indicated a period of three months where the odds of a sequenced spillover event are increased, with timing consistent with an enzootic amongst camel calves (Figure 2). As a result of our identification of large and asymmetric flow of viral lineages into humans we also find that the basic reproduction number for MERS-CoV in humans is well below the epidemic threshold (Figure 3). Having said that, there are highly customisable coalescent methods available that extend the methods used here to accommodate time varying migration rates and population sizes, integrate alternative sources of information and fit to stochastic nonlinear models (Rasmussen et al., 2014), which would be more appropriate for MERS-CoV. Some distinct aspects of MERS-CoV epidemiology could not be captured in our methodology, such as hospital outbreaks where $R_{0}$ is expected to be consistently closer to 1.0 compared to community transmission of MERS-CoV. Outside of coalescent-based models, there are population structure models that explicitly relate epidemiological parameters to the branching process observed in sequence data (K\u00fchnert et al., 2016), but often rely on specifying numerous informative priors and can suffer from MCMC convergence issues.\n\nStrong population structure in viruses often arises through limited gene flow, either due to geography (Dudas et al., 2017), ecology (Smith et al., 2009) or evolutionary forces (Turner et al., 2005; Dudas et al., 2015). On a smaller scale, population structure can unveil important details about transmission patterns, such as identifying reservoirs and understanding spillover trends and risk, much as we have done here. When properly understood naturally arising barriers to gene flow can be exploited for more efficient disease control and prevention, as well as risk management.\n\n### Transmissibility differences between zoonoses and pandemics\n\nSevere acute respiratory syndrome (SARS) coronavirus, a Betacoronavirus like MERS-CoV, caused a serious epidemic in humans in 2003, with over 8000 cases and nearly 800 deaths. Since MERS-CoV was also able to cause significant pathogenicity in the human host it was inevitable that parallels would be drawn between MERS-CoV and SARS-CoV at the time of MERS discovery in 2012. Although we describe the epidemiology of MERS-CoV from sequence data, indications that MERS-CoV has poor capacity to spread human-to-human existed prior to any sequence data. SARS-CoV swept through the world in a short period of time, but MERS cases trickled slowly and were restricted to the Arabian Peninsula or resulted in self-limiting outbreaks outside of the region, a pattern strongly indicative of repeat zoonotic spillover. Infectious disease surveillance and control measures remain limited, so much like the SARS epidemic in 2003 or the H1N1 pandemic in 2009, zoonotic pathogens with $R_{0}>1.0$ are probably going to be discovered after spreading beyond the original location of spillover. Even though our results show that MERS-CoV does not appear to present an imminent global threat, we would like to highlight that its epidemiology is nonetheless concerning.\n\nPathogens Bacillus anthracis, Andes hantavirus (Martinez et al., 2005), monkeypox (Reed et al., 2004) and influenza A are able to jump species barriers but only influenza A viruses have historically resulted in pandemics (Lipsitch et al., 2016). MERS-CoV may join the list of pathogens able to jump species barriers but not spread efficiently in the new host. Since its emergence in 2012, MERS-CoV has caused self-limiting outbreaks in humans with no evidence of worsening outbreaks over time. However, sustained evolution of the virus in the reservoir and continued flow of viral lineages into humans provides the substrate for a more transmissible variant of MERS-CoV to possibly emerge. Previous modelling studies (Antia et al., 2003; Park et al., 2013) suggest a positive relationship between initial $R_{0}$ in the human host and probability of evolutionary emergence of a novel strain which passes the supercritical threshold of $R_{0}>1.0$. This leaves MERS-CoV in a precarious position; on one hand its current $R_{0}$ of $\u223c$0.7 is certainly less than 1, but its proximity to the supercritical threshold raises alarm. With very little known about the fitness landscape or adaptive potential of MERS-CoV, it is incredibly challenging to predict the likelihood of the emergence more transmissible variants. In light of these difficulties, we encourage continued genomic surveillance of MERS-CoV in the camel reservoir and from sporadic human cases to rapidly identify a supercritical variant, if one does emerge.\n\n## Materials\u00a0and\u00a0methods\n\n### Sequence data\n\nAll MERS-CoV sequences were downloaded from GenBank and accession numbers are given in Supplementary file 1 (Assiri et al., 2016a,\u00a02016b; Azhar et al., 2014; van Boheemen et al., 2012; Briese et al., 2014; Chu et al., 2014;\u00a0Cotten et al., 2013, 2014; Drosten et al., 2013, 2015; Fagbo et al., 2015; Haagmans et al., 2014; Hemida et al., 2014; Hunter et al., 2016; Kandeil et al., 2016; Kapoor et al., 2014; Kim et al., 2015, 2016; Lamers et al., 2016; Lau et al., 2016; Lu et al., 2017; Park et al., 2016a, 2016b; Plipat et al., 2017; Raj et al., 2014; Sabir et al., 2016; Seong et al., 2016; Xie et al., 2015). Sequences without accessions were kindly shared by Ali M. Somily, Mazin Barry, Sarah S. Al Subaie, Abdulaziz A. BinSaeed, Fahad A. Alzamil, Waleed Zaher, Theeb Al Qahtani, Khaldoon Al Jerian, Scott J.N. McNabb, Imad A. Al-Jahdali, Ahmed M. Alotaibi, Nahid A. Batarfi, Matthew Cotten, Simon J. Watson, Spela Binter, and Paul Kellam prior to publication. Sequences available on GenBank but not associated with publications were shared by Meriadeg Ar Gouilh, Emad M. Elassal, Monica Galiano, Krista Queen and Ying Tao.\u00a0Fragments of some strains submitted to GenBank as separate accessions were assembled into a single sequence. Only sequences covering at least 50% of MERS-CoV genome were kept, to facilitate later analyses where the alignment is split into two parts in order to account for effects of recombination (Dudas and Rambaut, 2016). Sequences were annotated with available collection dates and hosts, designated as camel or human, aligned with MAFFT (Katoh and Standley, 2013), and edited manually. Protein coding sequences were extracted and concatenated, reducing alignment length from 30,130 down to 29,364, which allowed for codon-partitioned substitution models to be used. The final dataset consisted of 174 genomes from human infections and 100 genomes from camel infections (Supplementary file 1).\n\n### Phylogenetic analyses\n\n#### Primary analysis, structured coalescent\n\nFor our primary analysis, the MultiTypeTree module (Vaughan et al., 2014) of BEAST v2.4.3 (Bouckaert et al., 2014) was used to specify a structured coalescent model with two demes \u2013 humans and camels. At time of writing structured population models are available in BEAST v2 (Bouckaert et al., 2014) but not in BEAST v1 (Drummond et al., 2012). We use the more computationally intensive MultiTypeTree module (Vaughan et al., 2014) over approximate methods also available in BEAST v2, such as BASTA (De Maio et al., 2015), MASCOT (Mueller et al., 2017), and PhyDyn (Volz, 2012). Structured coalescent model implemented in the MultiTypeTree module (Vaughan et al., 2014) estimates four parameters: rate of coalescence in human viruses, rate of coalescence in camel viruses, rate of migration from the human deme to the camel deme and rate of migration from the camel deme to the human deme. Analyses were run on codon position partitioned data with two separate HKY+$\u0393_{4}$(Hasegawa et al., 1985; Yang, 1994) nucleotide substitution models specified for codon positions 1\u00a0+\u00a02 and 3. A relaxed molecular clock with branch rates drawn from a lognormal distribution (Drummond et al., 2006) was used to infer the evolutionary rate from date calibrated tips. Default priors were used for all parameters except for migration rates between demes for which an exponential prior with mean 1.0 was used. All analyses were run for 200 million steps across ten independent Markov chains (MCMC runs) and states were sampled every\u00a020,000 steps. Due to the complexity of multitype tree parameter space 50% of states from every analysis were discarded as burn-in, convergence assessed in Tracer v1.6 and states combined using LogCombiner distributed with BEAST v2.4.3\u00a0(Bouckaert et al., 2014). Three chains out of ten did not converge and were discarded altogether. This left\u00a070,000 states on which to base posterior inference. Posterior sets of typed (where migrating branches from structured coalescent are collapsed, and migration information is left as a switch in state between parent and descendant nodes) trees were summarised using TreeAnnotator v2.4.3 with the common ancestor heights option (Heled and Bouckaert, 2013). A maximum likelihood phylogeny showing just the genetic relationships between MERS-CoV genomes from camels and humans was recovered using PhyML (Guindon et al., 2003) under a HKY+$\u0393_{4}$(Hasegawa et al., 1985; Yang, 1994) nucleotide substitution model and is shown in Figure 1\u2014figure supplement 5.\n\n#### Control, structured coalescent with different prior\n\nAs a secondary analysis to test robustness to choice of prior, we set up an analysis where we increased the mean of the exponential distribution prior for migration rate to 10.0. All other parameters were identical to the primary analysis and as before 10 independent MCMC chains were run. In this case, two chains did not converge. This left\u00a080,000 states on which to base posterior inference. Posterior sets of typed trees were summarised using TreeAnnotator v2.4.3 with the common ancestor heights option (Heled and Bouckaert, 2013).\n\n#### Control, structured coalescent with equal deme sizes\n\nTo better understand where statistical power of the structured coalescent model lies we set up a tertiary analysis where a model was set up identically to the first structured coalescent analysis, but deme population sizes were enforced to have the same size. This analysis allowed us to differentiate whether statistical power in our analysis is coming from effective population size contrasts between demes or the backwards-in-time migration rate estimation. Five replicate chains were set up, two of which failed to converge after 200 million states. Combining the three converging runs left us with\u00a015,000 trees sampled from the posterior distribution, which were summarised in TreeAnnotator v2.4.3 with the common ancestor heights option (Heled and Bouckaert, 2013).\n\n#### Control, structured coalescent with more than one tree per genome\n\nDue to concerns that recombination might affect our conclusions (Dudas and Rambaut, 2016), as an additional secondary analysis, we also considered a scenario where alignments were split into two fragments (fragment 1 comprised of positions 1\u201321000, fragment 2 of positions 21000\u201329364), with independent clocks, trees and migration rates, but shared substitution models and deme population sizes. Fragment positions were chosen based on consistent identification of the region around nucleotide 21000 as a probable breakpoint by GARD (Kosakovsky Pond et al., 2006) by previous studies into SARS and MERS coronaviruses (Hon et al., 2008; Dudas and Rambaut, 2016). All analyses were set to run for 200 million states, subsampling every\u00a020,000 states. Chains not converging after 200 million states were discarded. 20% of the states were discarded as burn-in, convergence assessed with Tracer 1.6 and combined with LogCombiner. Three chains out of ten did not converge. This left\u00a070,000 states on which to base posterior inference. Posterior sets of typed trees were summarised using TreeAnnotator v2.4.3 with the common ancestor heights option (Heled and Bouckaert, 2013).\n\n#### Control, discrete trait analysis\n\nA currently widely used approach to infer ancestral states in phylogenies relies on treating traits of interest (such as geography, host, etc.) as features evolving along a phylogeny as continuous time Markov chains with an arbitrary number of states (Lemey et al., 2009). Unlike structured coalescent methods, such discrete trait approaches are independent from the tree (i.e. demographic) prior and thus unable to influence coalescence rates under different trait states. Such models have been used in the past to infer the number of MERS-CoV host jumps (Zhang et al., 2016) with results contradicting other sources of information. In order to test how a discrete trait approach compares to the structured coalescent we used our 274 MERS-CoV genome data set in BEAST v2.4.3 (Bouckaert et al., 2014) and specified identical codon-partitioned nucleotide substitution and molecular clock models to our structured coalescent analysis. To give the most comparable results, we used a constant population size coalescent model, as this is the demographic function for each deme in the structured coalescent model. Five replicate MCMC analyses were run for 200 million states, three of which converged onto the same posterior distribution. The converging chains were combined after removing 20 million states as burn-in to give a total of\u00a027,000 trees drawn from the posterior distribution. These trees were then summarised using TreeAnnotator v2.4.5 with the common ancestor heights option (Heled and Bouckaert, 2013).\n\n#### Introduction seasonality\n\nWe extracted the times of camel-to-human introductions from the posterior distribution of multitype trees. This distribution of introduction times was then discretised as follows: for sample $k=1,2,\u2026,L$ from the posterior, $Z_{i\u2062j\u2062k}$ was $1$ if there as an introduction in month $i$ and year $j$ and\u00a00 otherwise. We model the sum of introductions at month $i$ and year $j$ across the posterior sample $Y_{i\u2062j}=\\sum_{k=1}^{L}Z_{i\u2062j\u2062k}$ with the hierarchical model:\n\n$$\nY_{ij}\u223cBinomial(L,\\theta_{ij})\\theta_{ij}=inverse\u00a0logit(\\alpha_{j}+\\beta_{i})\\alpha_{j}\u223cNormal(\\mu_{y},\\sigma_{y})\\mu_{y}\u223cNormal(0,1)\\sigma_{y}\u223cCauchy(0,2.5)\\beta_{i}\u223cNormal(0,\\sigma_{m})\\sigma_{m}\u223cCauchy(0,2.5),\n$$\n\nwhere $\\alpha_{j}$ represents the contribution of year to expected introduction count and $\\beta_{i}$ represents the contribution of month to expected introduction count. Here, $inverse\u00a0logit(\\alpha_{j}+\\beta_{i})=\\frac{exp(\\alpha_{j}+\\beta_{i})}{exp(\\alpha_{j}+\\beta_{i})+1}$. We sampled posterior values from this model via the Markov chain Monte Carlo methods implemented in Stan (Carpenter et al., 2016). Odds ratios of introductions were computed for each month $i$ as $OR_{i}=exp\u2061(\\beta_{i})$.\n\n### Epidemiological analyses\n\nHere, we employ a Monte Carlo simulation approach to identify parameters consistent with observed patterns of sequence clustering (Figure 3\u2014figure supplement 2). Our structured coalescent analyses indicate that every MERS outbreak is a contained cross-species spillover of the virus from camels into humans. The distribution of the number of these cross-species transmissions and their sizes thus contain information about the underlying transmission process. At heart, we expect fewer larger clusters if fundamental reproductive number $R_{0}$ is large and more smaller clusters if $R_{0}$ is small. A similar approach was used in Grubaugh et al. (2017) to estimate $R_{0}$ for Zika introductions into Florida.\n\nBranching process theory provides an analytical distribution for the number of eventual cases $j$ in a transmission chain resulting from a single introduction event with $R_{0}$ and dispersion parameter $\\omega$\u00a0(Blumberg and Lloyd-Smith, 2013). This distribution follows\n\n$$\nPr(j|R_{0},\\omega)=\\frac{\u0393\u2062(\\omega\u2062j+j-1)}{\u0393\u2062(\\omega\u2062j)\u2062\u0393\u2062(j+1)}\\frac{(\\frac{R_{0}}{\\omega})^{j-1}}{(1+\\frac{R_{0}}{\\omega})^{\\omega\u2062j+j-1}}.\n$$\n\nHere, $R_{0}$ represents the expected number of secondary cases following a single infection and $\\omega$ represents the dispersion parameter assuming secondary cases follow a negative binomial distribution (Lloyd-Smith et al., 2005), so that smaller values represent larger degrees of heterogeneity in the transmission process.\n\nAs of 10 May 2017, the World Health Organization has been notified of 1952 cases of MERS-CoV (World Health Organization, 2017). We thus simulated final transmission chain sizes using Equation 1 until we reached an epidemic comprised of $N=2000$ cases. 10,000\u00a0simulations were run for 121 uniformly spaced values of $R_{0}$ across the range [0.5\u20131.1] with dispersion parameter $\\omega$ fixed to 0.1 following expectations from previous studies of coronavirus behavior (Lloyd-Smith et al., 2005). Each simulation results in a vector of outbreak sizes $\ud835\udc1c$, where $c_{i}$ is the size of the ith transmission cluster and $\\sum_{i=1}^{K}c_{i}=2000$ and $K$ is the number of clusters generated.\n\nFollowing the underlying transmission process generating case clusters $\ud835\udc1c$, we simulate a secondary process of sampling some fraction of cases and sequencing them to generate data analogous to what we empirically observe. We sample from the case cluster size vector $\ud835\udc1c$ without replacement according to a multivariate hypergeometric distribution (see\u00a0Algorithm 1: Multivariate hypergeometric sampling scheme). The resulting sequence cluster size vector $\ud835\udc2c$ contains $K$ entries, some of which are zero (i.e. case clusters not sequenced), but $\\sum_{i=1}^{K}s_{i}=174$ which reflects the number of human MERS-CoV sequences used in this study. Note that this \u2018sequencing capacity\u2019 parameter does not vary over time, even though MERS-CoV sequencing efforts have varied in intensity, starting out slow due to lack of awareness, methods and materials and increasing in response to hospital outbreaks later. As the default sampling scheme operates under equiprobable sequencing, we also simulated biased sequencing by using concentrated hypergeometric distributions where the probability mass function is squared (bias\u00a0=\u00a02) or cubed (bias\u00a0=\u00a03) and then normalized. Here, bias enriches the hypergeometric distribution so that sequences are sampled with weights proportional to $(c_{1}^{bias},c_{2}^{bias},\u2026,c_{k}^{bias})$. Thus, bias makes larger clusters more likely to be \u2018sequenced\u2019.\n\nAfter simulations were completed, we identified simulations in which the recovered distribution of sequence cluster sizes $\ud835\udc2c$ fell within the 95% highest posterior density intervals for four summary statistics of empirical MERS-CoV sequence cluster sizes recovered via structured coalescent analysis: number of sequence clusters, mean, standard deviation and skewness (third central moment). These values were 48\u201361 for number of sequence clusters, 2.87\u20133.65 for mean sequence cluster size, 4.84\u20136.02 for standard deviation of sequence cluster sizes, and 415.40\u2013621.06 for skewness of sequence cluster sizes.\n\nWe performed a smaller set of simulations with 2500 replicates and twice the number of cases, that\u00a0is,$\\sum_{i=1}^{K}C_{i}=4000$, to explore a dramatically underreported epidemic. Additionally, we performed additional smaller set of simulations on a rougher grid of $R_{0}$ values (23 values, 0.50\u20131.05), with 5 values of dispersion parameter $\\omega$ (0.002, 0.04, 0.1, 0.5, 1.0) and 3 levels of bias (1,2,3) to justify our choice of dispersion parameter $\\omega$ that was fixed to 0.1 in the main analyses (Figure 3\u2014figure supplement 6).\n\n### Algorithm 1:\u00a0Multivariate hypergeometric sampling scheme\n\nPseudocode describes the multivariate hypergeometric sampling scheme that simulates sequencing. Probability of sequencing a given number of cases from a case cluster depends on cluster size and sequences left (i.e.\u00a0\u2018sequencing capacity\u2019). The bias parameter determines how probability mass function of the hypergeometric distribution is concentrated.\n\nData:\u00a0Array of case cluster sizes in outbreak $\ud835\udc1c=(c_{1},c_{2},\u2026,c_{K})$, sequences available $M$, total outbreak size $N$, where $N=\\sum_{i=1}^{K}c_{i}$.\n\nResult:\u00a0Array of sequence cluster sizes sampled: $\ud835\udc2c=(s_{1},s_{2},\u2026,s_{K})$.\n\nDraw $s_{i}$ from a hypergeometric distribution with $c_{i}$ successes, $N-c_{i}$ failures after $M$ trials;\n\nwhile $i<Ki=i+1$\u2004do\n\n$i=i+1$;\n\n$M=M-s_{i-1}$;\n\nCompute the probability mass function (pmf) for all possible values of $s_{i}$,\n\n$\ud835\udc29=(p\u2062(0)^{bias},p\u2062(1)^{bias},\u2026,p\u2062(c_{i})^{bias})\\times(\\sum_{i}p_{i}^{bias})^{-1}$, where $p\u2062(\u22c5)$ is the pmf for a hypergeometric distribution with $c_{i}$ successes, $N-c_{i}$ failures after $M$ trials;\n\nDraw a sequence cluster size $s_{i}$ from array of potential sequence cluster sizes $(0,1,\u2026,c_{i})$ according to $\ud835\udc91$;\n\nend\n\nAdd remaining sequences to last sequence cluster $c_{K}=M-s_{K-1}$;\n\n### Demographic inference of MERS-CoV in the reservoir\n\nIn order to infer the demographic history of MERS-CoV in camels we used the results of structured coalescent analyses to identify introductions of the virus into humans. The oldest sequence from each cluster introduced into humans was kept for further analysis. This procedure removes lineages coalescing rapidly in humans, which would otherwise introduce a strong signal of low effective population size. These subsampled MERS-CoV sequences from humans were combined with existing sequence data from camels to give us a dataset with minimal demographic signal coming from epidemiological processes in humans. Sequences belonging to the outgroup clade where most of MERS-CoV sequences from Egypt fall were removed out of concern that MERS epidemics in Saudi Arabia and Egypt are distinct epidemics with relatively poor sampling in the latter. Were more sequences of MERS-CoV available from other parts of Africa we speculate they would fall outside of the diversity that has been sampled in Saudi Arabia and cluster with early MERS-CoV sequences from Jordan and sequences from Egyptian camels. However, currently there are no indications of what MERS-CoV diversity looks like in camels east of Saudi Arabia. A flexible skygrid tree prior (Gill et al., 2013) was used to recover estimates of scaled effective population size ($N_{e}\u2062\\tau$) at 50 evenly spaced grid points across six years, ending at the most recent tip in the tree (2015 August) in BEAST v1.8.4 (Drummond et al., 2012), under a relaxed molecular clock with rates drawn from a lognormal distribution (Drummond et al., 2006) and codon position partitioned (positions $1+2$ and $3$) HKY $+\u0393_{4}$ (Hasegawa et al., 1985; Yang, 1994) nucleotide substitution models. At time of writing advanced flexible coalescent tree priors from the skyline family, such as skygrid (Gill et al., 2013) are available in BEAST v1 (Drummond et al., 2012) but not in BEAST v2 (Bouckaert et al., 2014). We set up five independent MCMC chains to run for 500 million states, sampling every $50\u2009000$ states. This analysis suffered from poor convergence, where two chains converged onto one stationary distribution, two to another and the last chain onto a third stationary distribution, with high effective sample sizes. Demographic trajectories recovered by the two main stationary distributions are very similar and differences between the two appear to be caused by convergence onto subtly different tree topologies. This non-convergence effect may have been masked previously by the use of all available MERS-CoV sequences from humans which may have lead MCMC towards one of the multiple stationary distributions.\n\nTo ensure that recombination was not interfering with the skygrid reconstruction, we also split our MERS-CoV alignment into ten parts 2937 nucleotides long. These were then used as separate partitions with independent trees and clock rates in BEAST v1.8.4 (Drummond et al., 2012). Nucleotide substitution and relaxed clock models were set up identically to the whole genome skygrid analysis described above (Drummond et al., 2006; Hasegawa et al., 1985; Yang, 1994). Skygrid coalescent tree prior (Gill et al., 2013) was used jointly across all ten partitions for demographic inference. Five MCMC chains were set up, each running for 200 million states, sampling every\u00a020,000 states.\n\n### Data availability\n\nSequence data and all analytical code is publicly available at https://github.com/blab/mers-structure (Dudas, 2017). A copy is archived at https://github.com/elifesciences-publications/mers-structure.\n",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "6e29d526-4f72-49ca-9f85-0fb899874447",
+      "submission_id": "e3803c65-0656-429f-9229-c7eba54b3fe1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Neil M Ferguson, Imperial College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.31257.037](https://doi.org/10.7554/eLife.31257.037)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"MERS-CoV spillover at the camel-human interface\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Prabhat Jha as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Erik Volz (Reviewer #1); Christophe Fraser (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this paper, Dudas et al. perform a coalescent analysis of 274 MERS-Cov viruses. They conclude that 1) MERS is sustained in camels (R0>1) and not in humans (R0<1), and that most if not all cross species transmissions have been camel to human. 2) Cross species events are seasonal, but R0 in humans isn't. 3) The relatively low levels of genetic diversity in camel viruses can be explained by camel demography.\n\nEssential revisions:\n\n1) The population genetic model (the particular form of structured coalescent) is highly idealised and this may influence the quantitative conclusions, although we suspect the conclusions are quite robust qualitatively. This model specifically estimates the rate of a lineage moving between demes going backwards in time; the numbers cited for the camel->human rate is really the rate that a lineage in humans goes to a camel going down the tree. The relationship between these migration rates and the epidemiologically meaningful transmission rate is complex and depends among other things on the ratio of population sizes in both demes. Per-capita transmission rates could be estimated using an epidemiologically structured coalescent model (see e.g. papers by Volz and Rasmussen), which would ideally be stochastic due to bursty dynamics in humans. But this would be a large undertaking and so we suggest that for now the distinction is clarified. Overall, a little more discussion of the complexity and pitfalls when relating idealised population genetic models (like the island model used here) to a noisy nonlinear epidemic like this one might be merited.\n\n2) 'Our analyses recover these results despite sequence data heavily skewed towards non-uniformly sampled human cases and are robust to choice of prior.' This is a quite nice result and raises the question if skewed sampling would bias estimates if using a substitution model approach ('discrete trait analysis', DTA). It would strengthen the paper to include a comparison of the structured coalescent estimates to another method for ancestral states; the most popular approach in beast has been substitution models (DTA). These may give divergent results because of skewed sampling. It would be rather easy for the authors to run a DTA and if biased, this would serve as a good cautionary example when sampling is highly skewed towards one deme.\n\n3) A comparison to ML tree reconstruction could potentially be illuminating. We think you could be clearer about what drives the results in your paper. It is unusual for a phylogenetic ancestral reconstruction, that the results seem to be determined as much by the coalescent assumptions as by the tree topology. The two-patch model had a much higher coalescent rate in the human deme than in the camel deme \u2013 so long branches are only really possible in the camel deme. This may be why for example, staring at the top clade of Figure 1, one can see camel ancestry to a whole bunch of human sequences that are not topologically separated by camel sequences. If this is correct, these results may not necessarily be wrong, but it made us slightly uncomfortable that the results are driven by the coalescent model, not the tree topology. Please elaborate, either correcting us, or explaining better. A simple test of this hypothesis would be that an ML ancestral reconstruction on the ML tree would not give the same clusters. I don't think that would make the ML result correct, but it might be an enlightening comparison. Or you may prefer another way to address this.\n\n4) Easily addressed, but important. The paper already sounds a strong voice of concern in the final paragraph, but we think this could be even stronger. Antia et al. Nature 2003 first showed, using a simple branching process, that for most genetic landscapes, the probability of a pathogen evolving to state with R0>1 increases dramatically as a function of the wild-type R0. So R0~0.8 is much worse than R0~0.3. More sophisticated models have been done since, especially by Llyod-smith's group, but the basic result is sound. In the light of this theoretical work, your findings are not at all reassuring.\n\n5) More generally, the model choices need better explaining. Why delve into a structured coalescent in BEAST2 for the ancestral reconstruction, but go back to the Skygrid in BEAST1 for computations of Ne? We assume this is a pragmatic choice, and for the latter you carefully reduced the human clusters to reduce bias, but we think the rationale for your choices need laying out more clearly. Even if pragmatic rather than principled, (e.g. there are no structure coalescent options in BEAST1), we think it still needs to be stated why you made the choices you did. Especially since there are other recently-developed BEAST2 packages that could be used to fit the same structured coalescent model: BASTA and MASCOT, as well as the very flexible PhyDyn package (which might offer improvements in computation time).\n",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1e1ed4cf-620f-42a6-a71d-b3850e04d6dd",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C1",
+      "claim": "Middle East respiratory syndrome coronavirus (MERS-CoV) is a zoonotic virus from camels causing significant mortality and morbidity in humans in the Arabian Peninsula.",
+      "claim_type": "EXPLICIT",
+      "source": "Middle East respiratory syndrome coronavirus (MERS-CoV) is a zoonotic virus from camels causing significant mortality and morbidity in humans in the Arabian Peninsula.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations throughout the manuscript regarding MERS-CoV epidemiology and camel reservoir.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "20f6db57-ea50-4cb2-b295-8a9a7d96992f",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C2",
+      "claim": "Long-term MERS-CoV evolution occurs exclusively in camels.",
+      "claim_type": "EXPLICIT",
+      "source": "We employ structured coalescent models to show that long-term MERS-CoV evolution occurs exclusively in camels, whereas humans act as a transient, and ultimately terminal host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structured coalescent analyses presented in Figure 1 and related text showing camel-centered phylogenetic patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "8d0dd722-6070-4cce-a1fb-1eb7665eb105",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C3",
+      "claim": "Humans act as a transient and terminal host for MERS-CoV.",
+      "claim_type": "EXPLICIT",
+      "source": "We employ structured coalescent models to show that long-term MERS-CoV evolution occurs exclusively in camels, whereas humans act as a transient, and ultimately terminal host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through phylogenetic analysis showing human clusters as evolutionary dead-ends nested within camel diversity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "5789aa2a-b7e9-405f-962f-8f5f192805a6",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C4",
+      "claim": "Human outbreaks in the Arabian peninsula are driven by seasonally varying zoonotic transfer of viruses from camels.",
+      "claim_type": "EXPLICIT",
+      "source": "By analysing the distribution of human outbreak cluster sizes and zoonotic introduction times, we show that human outbreaks in the Arabian peninsula are driven by seasonally varying zoonotic transfer of viruses from camels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of introduction times shown in Figure 2 identifying seasonal patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "c35b1e78-5678-4eb8-b05a-5e39565d373c",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C5",
+      "claim": "Without heretofore unseen evolution of host tropism, MERS-CoV is unlikely to become endemic in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Without heretofore unseen evolution of host tropism, MERS-CoV is unlikely to become endemic in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the finding that R0 is below 1.0 and humans represent terminal hosts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "eb635873-d8e7-412a-aedc-07fb50d7e739",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C6",
+      "claim": "MERS-CoV was first discovered in 2012.",
+      "claim_type": "EXPLICIT",
+      "source": "The virus, first discovered in 2012 (Zaki et al., 2012; van Boheemen et al., 2012), has caused more than 2000 infections and over 700 deaths, according to the World Health Organization (WHO) (World Health Organization, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the original discovery papers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "c7305574-43c2-42b1-b6f9-42da0e60f70b",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C7",
+      "claim": "MERS-CoV has caused more than 2000 infections and over 700 deaths according to WHO.",
+      "claim_type": "EXPLICIT",
+      "source": "The virus, first discovered in 2012 (Zaki et al., 2012; van Boheemen et al., 2012), has caused more than 2000 infections and over 700 deaths, according to the World Health Organization (WHO) (World Health Organization, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from WHO data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "5a7714b4-5eba-484e-a0d3-ef8f8ab181bc",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C8",
+      "claim": "MERS-CoV infections are observed among the most severely affected individuals, such as older males with comorbidities.",
+      "claim_type": "EXPLICIT",
+      "source": "Its epidemiology remains obscure, largely because infections are observed among the most severely affected individuals, such as older males with comorbidities (Assiri et al., 2013a; WHO MERS-Cov Research Group, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to epidemiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "7d2268ef-2e34-4672-b504-13f9bbb809a1",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C9",
+      "claim": "Some MERS-CoV patients do not recall contact with any livestock, suggesting an unobserved community contribution to the outbreak.",
+      "claim_type": "EXPLICIT",
+      "source": "While contact with camels is often reported, other patients do not recall contact with any livestock, suggesting an unobserved community contribution to the outbreak (WHO MERS-Cov Research Group, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on epidemiological observations cited from WHO research group.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "0d1a18ba-dd48-47ac-82e3-5c1e1081654f",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C10",
+      "claim": "High seroprevalence of MERS-CoV has been shown in camels.",
+      "claim_type": "EXPLICIT",
+      "source": "Such data have shown high seroprevalence in camels (M\u00fcller et al., 2014; Corman et al., 2014; Chu et al., 2014; Reusken et al., 2013; Reusken et al., 2014) and evidence of contact with MERS-CoV in workers with occupational exposure to camels (Reusken et al., 2015; M\u00fcller et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple serological studies cited.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "20bc00fa-97a3-4b36-b89a-a5d5c8bf87d8",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C11",
+      "claim": "Workers with occupational exposure to camels show evidence of contact with MERS-CoV.",
+      "claim_type": "EXPLICIT",
+      "source": "Such data have shown high seroprevalence in camels (M\u00fcller et al., 2014; Corman et al., 2014; Chu et al., 2014; Reusken et al., 2013; Reusken et al., 2014) and evidence of contact with MERS-CoV in workers with occupational exposure to camels (Reusken et al., 2015; M\u00fcller et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by serological studies cited.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "8c453520-24c5-4a0d-8821-0bffdc13559f",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C12",
+      "claim": "A median of 56 separate camel-to-human cross-species transmissions were estimated across 174 MERS-CoV genomes collected from humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Across 174 MERS-CoV genomes collected from humans, we estimate a median of 56 separate camel-to-human cross-species transmissions (95% highest posterior density (HPD): 48\u201363).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from structured coalescent analysis of sequence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "369c28c1-6287-4a8c-a63a-c844b2d4cbd0",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C13",
+      "claim": "A median of 3 human-to-camel migrations were estimated, with 95% HPD interval including zero.",
+      "claim_type": "EXPLICIT",
+      "source": "While we estimate a median of 3 (95% HPD: 0\u201312) human-to-camel migrations, the 95% HPD interval includes zero and we find that no such migrations are found in the maximum clade credibility tree (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structured coalescent analysis results shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "e421c40c-0875-4aed-bd67-801f013b7bbc",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C14",
+      "claim": "Substantially higher camel-to-human migration rate estimates were observed than human-to-camel migration rate estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, we observe substantially higher camel-to-human migration rate estimates than human-to-camel migration rate estimates (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 2 displaying migration rate estimates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "073f9676-16aa-4123-8de7-fd0148d202b7",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C17",
+      "claim": "The vast majority of MERS-CoV evolution is inferred to occur in camels with human outbreaks representing evolutionary dead-ends for the virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Maximum clade credibility (MCC) tree showing inferred ancestral hosts for MERS-CoV recovered with the structured coalescent. The vast majority of MERS-CoV evolution is inferred to occur in camels (orange) with human outbreaks (blue) representing evolutionary dead-ends for the virus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 phylogenetic tree with host state reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "388260af-509a-4f1a-b66b-ad65e8d88104",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C18",
+      "claim": "Four months (April, May, June, July) show increased odds of MERS-CoV introductions.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify four months (April, May, June, July) when the odds of MERS-CoV introductions are increased (Figure 2) and four when the odds are decreased (August, September, November, December).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical modeling of introduction times shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "e779250c-8334-41a4-9ad6-7498b4ccac41",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C19",
+      "claim": "Four months (August, September, November, December) show decreased odds of MERS-CoV introductions.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify four months (April, May, June, July) when the odds of MERS-CoV introductions are increased (Figure 2) and four when the odds are decreased (August, September, November, December).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical modeling of introduction times shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "847117f0-a58d-4c3c-9ec9-9ab2358aed9b",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C20",
+      "claim": "Camel calving is reported to occur from October to February.",
+      "claim_type": "EXPLICIT",
+      "source": "Camel calving is reported to occur from October to February (Almutairi et al., 2010), with rapidly declining maternal antibody levels in calves within the first weeks after birth (Wernery, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature on camel reproduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "ab3bf341-d0c7-48d0-a679-6ca79e15a565",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C21",
+      "claim": "Maternal antibody levels in camel calves decline rapidly within the first weeks after birth.",
+      "claim_type": "EXPLICIT",
+      "source": "Camel calving is reported to occur from October to February (Almutairi et al., 2010), with rapidly declining maternal antibody levels in calves within the first weeks after birth (Wernery, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "9af9f1e5-2729-442c-9b57-d2367dddfa83",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C22",
+      "claim": "MERS-CoV may sweep through each new camel generation once critical mass of susceptibles is reached.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that MERS-CoV sweeps through each new camel generation once critical mass of susceptibles is reached (Martinez-Bakker et al., 2014), leading to a sharp rise in prevalence of the virus in camels and resulting in increased force of infection into the human population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on epidemiological theory cited and observed seasonality patterns.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "0e9e2f67-3ba7-4647-bac3-b344062d2a7e",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C23",
+      "claim": "Little correlation exists between date and size of MERS-CoV introduction (Spearman \u03c1=0.06, p=0.68).",
+      "claim_type": "EXPLICIT",
+      "source": "We find little correlation between date and size of introduction (Spearman \u03c1=0.06, p=0.68).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of introduction dates and cluster sizes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "2232fbde-f9dc-4f21-9f06-9d8f5a69412e",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C24",
+      "claim": "No trend in human sequence cluster sizes over time was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we do not observe any trend in human sequence cluster sizes over time (Figure 2B, Spearman \u03c1=0.06, p=0.68), suggesting that MERS-CoV outbreaks in humans are neither growing nor shrinking in size.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "0c8b19de-b17a-4746-9279-0d395f43cc8e",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C25",
+      "claim": "MERS-CoV outbreaks in humans are neither growing nor shrinking in size.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we do not observe any trend in human sequence cluster sizes over time (Figure 2B, Spearman \u03c1=0.06, p=0.68), suggesting that MERS-CoV outbreaks in humans are neither growing nor shrinking in size.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the lack of temporal trend in cluster sizes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "3b68eb14-9350-4ad5-992d-ca987e49a1a5",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C26",
+      "claim": "Mean R0 value observed in matching simulations is 0.72 (95% percentiles 0.57\u20130.90).",
+      "claim_type": "EXPLICIT",
+      "source": "Mean R0 value observed in matching simulations is 0.72 (95% percentiles 0.57\u20130.90), suggesting the inability of the virus to sustain transmission in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from Monte Carlo simulations matching empirical sequence cluster patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "7b4387bc-e25e-49c4-b7f9-db6d354ad7e0",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C27",
+      "claim": "R0 for MERS-CoV in humans is likely to be below 1.0.",
+      "claim_type": "EXPLICIT",
+      "source": "Monte Carlo simulations indicate R0 for MERS-CoV in humans is likely to be below 1.0, with numbers of zoonotic transmissions numbering in the hundreds.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3 based on Monte Carlo simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "9cb70c4e-a4d7-4e24-91b6-d03a7e5e50ae",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C28",
+      "claim": "Median number of cross-species introductions observed in matching simulations is 592 (95% percentiles 311\u2013811).",
+      "claim_type": "EXPLICIT",
+      "source": "Median number of cross-species introductions observed in matching simulations is 592 (95% percentiles 311\u2013811).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from Monte Carlo simulations matching empirical data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "8c5b0a02-a0ca-4d17-a989-6a543d9c0551",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C29",
+      "claim": "Recombination has been shown to occur in all genera of coronaviruses, including MERS-CoV.",
+      "claim_type": "EXPLICIT",
+      "source": "Recombination has been shown to occur in all genera of coronaviruses, including MERS-CoV (Lai et al., 1985; Makino et al., 1986; Keck et al., 1988; Kottier et al., 1995; Herrewegh et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published studies on coronavirus recombination.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "7d7aaba0-ad48-4c1b-83fe-c86aae1edd79",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C30",
+      "claim": "PHI and 3Seq methods consistently identify most of the apparent 'backbone' of the MERS-CoV phylogeny as encompassing sequences with evidence of recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "PHI and 3Seq methods consistently identify most of the apparent 'backbone' of the MERS-CoV phylogeny as encompassing sequences with evidence of recombination (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on recombination detection analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "106ab897-f024-4f84-8599-5b24f2b60d6c",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C31",
+      "claim": "Strong similarity in the grouping of human cases into outbreak clusters was found between genomic fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "We find strong similarity in the grouping of human cases into outbreak clusters between fragments (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4A comparing phylogenies from different genome fragments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "abb90e31-26c4-4e71-9351-544ad6d87484",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C32",
+      "claim": "Human clusters are largely well-supported as monophyletic and consistent across trees of both genomic fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "Human clusters are largely well-supported as monophyletic and consistent across trees of both genomic fragments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 4A showing marginal posterior probabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "933a2398-231e-427c-9b87-32a0879603c2",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C33",
+      "claim": "The same source-sink dynamics between camel and human populations were observed in trees constructed from separate genomic fragments as in the original full genome tree.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we observe the same source-sink dynamics between camel and human populations in trees constructed from separate genomic fragments as were observed in the original full genome tree (Figures 1 and 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by comparing Figure 1 and Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "4caa9a1b-4ad6-472d-b492-fe94aeec051b",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C37",
+      "claim": "There are 830,000 camels in Saudi Arabia.",
+      "claim_type": "EXPLICIT",
+      "source": "We find there are 830,000 camels in Saudi Arabia (Abdallah and Faye, 2013) and that female camels in Saudi Arabia have an average fecundity of 45% (Abdallah and Faye, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature on camel populations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "7f4af6b9-f2f7-4dac-8b79-5e8fa3a3fa2c",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C38",
+      "claim": "Female camels in Saudi Arabia have an average fecundity of 45%.",
+      "claim_type": "EXPLICIT",
+      "source": "We find there are 830,000 camels in Saudi Arabia (Abdallah and Faye, 2013) and that female camels in Saudi Arabia have an average fecundity of 45% (Abdallah and Faye, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature on camel reproduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "00470b60-92d5-46a0-872b-414898255c1c",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C40",
+      "claim": "The ratio of expected to empirical Ne\u03c4 for MERS-CoV is less than the equivalent ratio for human measles virus.",
+      "claim_type": "EXPLICIT",
+      "source": "This is less than the equivalent ratio for human measles virus (Bedford et al., 2011) and is in line with the expectation from neutral evolutionary dynamics plus some degree of transmission heterogeneity (Volz et al., 2013) and seasonal troughs in prevalence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison to published measles virus analysis.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "d92940be-9482-4c26-854a-1cdb56c1067d",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C41",
+      "claim": "The ladder-like appearance of the MERS-CoV tree can likely be explained by entirely demographic factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we believe that the ladder-like appearance of the MERS-CoV tree can likely be explained by entirely demographic factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison of expected and empirical effective population sizes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "75b69de3-f909-4606-bac1-b55d4889bab8",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C42",
+      "claim": "Structured coalescent models can identify distinct demographic modes in MERS-CoV genomic data.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that currently existing models of population structure (Vaughan et al., 2014) can identify distinct demographic modes in MERS-CoV genomic data, where viruses continuously circulating in camels repeatedly jump into humans and cause small outbreaks doomed to extinction (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through the structured coalescent analysis presented.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "abf8448a-9a53-402b-b055-7ad2830951d2",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C43",
+      "claim": "Viruses continuously circulating in camels repeatedly jump into humans and cause small outbreaks doomed to extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that currently existing models of population structure (Vaughan et al., 2014) can identify distinct demographic modes in MERS-CoV genomic data, where viruses continuously circulating in camels repeatedly jump into humans and cause small outbreaks doomed to extinction (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 1 and supported by phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "7c5a1e56-8180-4ee6-9919-c84999f7eda1",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C44",
+      "claim": "At least 50 zoonotic introductions of MERS-CoV into humans from the reservoir were identified from sequence data.",
+      "claim_type": "EXPLICIT",
+      "source": "From sequence data, we identify at least 50 zoonotic introductions of MERS-CoV into humans from the reservoir (Figure 1), from which we extrapolate that hundreds more such introductions must have taken place (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structured coalescent analysis shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "02b75202-3f09-450e-9275-f35293e71152",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C45",
+      "claim": "Hundreds more zoonotic introductions must have taken place beyond those identified from sequence data.",
+      "claim_type": "EXPLICIT",
+      "source": "From sequence data, we identify at least 50 zoonotic introductions of MERS-CoV into humans from the reservoir (Figure 1), from which we extrapolate that hundreds more such introductions must have taken place (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is extrapolated from Monte Carlo simulations shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "d0c93cd3-9d53-4ff2-b9d5-ea56eff8a471",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C46",
+      "claim": "SARS-CoV caused a serious epidemic in humans in 2003, with over 8000 cases and nearly 800 deaths.",
+      "claim_type": "EXPLICIT",
+      "source": "Severe acute respiratory syndrome (SARS) coronavirus, a Betacoronavirus like MERS-CoV, caused a serious epidemic in humans in 2003, with over 8000 cases and nearly 800 deaths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the SARS epidemic.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "e538908e-373e-41a1-96eb-28b22a77e274",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C47",
+      "claim": "SARS-CoV is a Betacoronavirus like MERS-CoV.",
+      "claim_type": "EXPLICIT",
+      "source": "Severe acute respiratory syndrome (SARS) coronavirus, a Betacoronavirus like MERS-CoV, caused a serious epidemic in humans in 2003, with over 8000 cases and nearly 800 deaths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established taxonomic knowledge about coronaviruses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "37201e0b-48fe-42a7-a114-5783a6339fa9",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C48",
+      "claim": "MERS-CoV's current R0 of ~0.7 is less than 1, but its proximity to the supercritical threshold raises alarm.",
+      "claim_type": "EXPLICIT",
+      "source": "This leaves MERS-CoV in a precarious position; on one hand its current R0 of \u223c0.7 is certainly less than 1, but its proximity to the supercritical threshold raises alarm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the R0 estimates from Monte Carlo simulations and epidemiological interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "23027962-f108-40aa-854d-571e93cfd311",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C49",
+      "claim": "The final dataset consisted of 174 genomes from human infections and 100 genomes from camel infections.",
+      "claim_type": "EXPLICIT",
+      "source": "The final dataset consisted of 174 genomes from human infections and 100 genomes from camel infections (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "4dea3b4f-3a3a-4692-b27b-da6f470058a5",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C53",
+      "claim": "Discrete trait analysis reconstruction identifies both camels and humans as important hosts for MERS-CoV persistence, but with humans as the ultimate source of camel infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Discrete trait analysis reconstruction identifies both camels and humans as important hosts for MERS-CoV persistence, but with humans as the ultimate source of camel infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 3 using discrete trait analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "12b91b4a-69bd-44ba-a8c8-c57a9f1360bc",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C54",
+      "claim": "The discrete trait analysis interpretation of MERS-CoV evolution disagrees with lack of continuing human transmission chains outside of Arabian peninsula, low seroprevalence in humans and very high seroprevalence in camels across Saudi Arabia.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar approach has been attempted previously (Zhang et al., 2016), but this interpretation of MERS-CoV evolution disagrees with lack of continuing human transmission chains outside of Arabian peninsula, low seroprevalence in humans and very high seroprevalence in camels across Saudi Arabia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparing discrete trait results to epidemiological evidence.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "66732ed8-496f-451c-b4a3-411d0b568658",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C55",
+      "claim": "The discrete trait analysis reconstruction is likely false due to biased data and the inability of the model to account for vastly different rates of coalescence.",
+      "claim_type": "EXPLICIT",
+      "source": "We suspect that this particular discrete trait analysis reconstruction is false due to biased data, that is, having nearly twice as many MERS-CoV sequences from humans (n=174) than from camels (n=100) and the inability of the model to account for and quantify vastly different rates of coalescence in the phylogenetic vicinity of both types of sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about model limitations based on data characteristics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "ac08ebc4-8d4c-4266-8d0c-d2232d1cd306",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C56",
+      "claim": "The dataset has nearly twice as many MERS-CoV sequences from humans (n=174) than from camels (n=100).",
+      "claim_type": "EXPLICIT",
+      "source": "We suspect that this particular discrete trait analysis reconstruction is false due to biased data, that is, having nearly twice as many MERS-CoV sequences from humans (n=174) than from camels (n=100) and the inability of the model to account for and quantify vastly different rates of coalescence in the phylogenetic vicinity of both types of sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the composition of the sequence dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "4d3b300f-2e6e-4e4b-89f6-da6c82909fe4",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C57",
+      "claim": "Instances of human infection with MERS-CoV are more common than currently thought.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that instances of human infection with MERS-CoV are more common than currently thought, with exceedingly short transmission chains mostly limited to primary cases that might be mild and ultimately not detected by surveillance or sequencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the large number of estimated introductions compared to observed cases.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "665cfac7-ac01-44ed-a868-087682ab673b",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C58",
+      "claim": "MERS-CoV transmission chains in humans are exceedingly short and mostly limited to primary cases that might be mild and ultimately not detected by surveillance or sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that instances of human infection with MERS-CoV are more common than currently thought, with exceedingly short transmission chains mostly limited to primary cases that might be mild and ultimately not detected by surveillance or sequencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the low R0 and large number of estimated introductions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "2d2a3cf1-b68a-49c0-b10e-9256c7abe04f",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C59",
+      "claim": "The combination of frequent spillover of MERS-CoV into humans and occasional outbreak amplification via poor hygiene practices appear sufficient to explain observed epidemiological patterns of MERS-CoV.",
+      "claim_type": "EXPLICIT",
+      "source": "Given these findings, and the fact that large outbreaks of MERS occurred in hospitals, the combination of frequent spillover of MERS-CoV into humans and occasional outbreak amplification via poor hygiene practices (Assiri et al., 2013b; Chen et al., 2017) appear sufficient to explain observed epidemiological patterns of MERS-CoV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the analysis results and cited hospital outbreak studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "61b79711-17d5-4613-920f-ecd7a01426d7",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C60",
+      "claim": "Large outbreaks of MERS occurred in hospitals.",
+      "claim_type": "EXPLICIT",
+      "source": "Given these findings, and the fact that large outbreaks of MERS occurred in hospitals, the combination of frequent spillover of MERS-CoV into humans and occasional outbreak amplification via poor hygiene practices (Assiri et al., 2013b; Chen et al., 2017) appear sufficient to explain observed epidemiological patterns of MERS-CoV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established from epidemiological reports cited.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "a2e240ed-70c8-45c8-a10b-357d263eeef5",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C61",
+      "claim": "Contact with camels is a major risk factor for developing MERS, per WHO guidelines.",
+      "claim_type": "EXPLICIT",
+      "source": "It is widely accepted that recorded human MERS-CoV infections are a result of at least several introductions of the virus into humans (Cotten et al., 2013) and that contact with camels is a major risk factor for developing MERS, per WHO guidelines (World Health Organization, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from WHO guidelines.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "4f99c4a3-49f4-4163-b3ed-e23654eb62de",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C62",
+      "claim": "Recorded human MERS-CoV infections are a result of at least several introductions of the virus into humans.",
+      "claim_type": "EXPLICIT",
+      "source": "It is widely accepted that recorded human MERS-CoV infections are a result of at least several introductions of the virus into humans (Cotten et al., 2013) and that contact with camels is a major risk factor for developing MERS, per WHO guidelines (World Health Organization, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous phylogenetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "8503ea8d-35e4-4195-aaab-98f89a5d09fa",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C63",
+      "claim": "As of 10 May 2017, the World Health Organization has been notified of 1952 cases of MERS-CoV.",
+      "claim_type": "EXPLICIT",
+      "source": "As of 10 May 2017, the World Health Organization has been notified of 1952 cases of MERS-CoV (World Health Organization, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from WHO data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "495cd174-c0c4-48ea-9ebd-33335749f0e2",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C64",
+      "claim": "Dispersion parameter \u03c9 was fixed to 0.1 following expectations from previous studies of coronavirus behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "10,000 simulations were run for 121 uniformly spaced values of R0 across the range [0.5\u20131.1] with dispersion parameter \u03c9 fixed to 0.1 following expectations from previous studies of coronavirus behavior (Lloyd-Smith et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited previous studies of coronavirus transmission heterogeneity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "d648185e-9488-4e06-a360-b8764b572fb8",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C65",
+      "claim": "The first sequences of MERS-CoV from camels do not appear in the data until November 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "The first sequences of MERS-CoV from camels do not appear in our data until November 2013.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the available sequence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "32b477fe-72d3-4865-9de0-a8ad3f23ce65",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C66",
+      "claim": "The finding of negligible human-to-camel transmission is robust to choice of prior.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding of negligible human-to-camel transmission is robust to choice of prior (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 1\u2014figure supplement 2 showing results under different priors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "5ca6fe55-bd1b-4f61-92ef-47b1266c5c92",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C67",
+      "claim": "Human viruses appear as clusters of highly related sequences nested within the diversity seen in camel viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "This inference derives from the tree structure wherein human viruses appear as clusters of highly related sequences nested within the diversity seen in camel viruses, which themselves show significantly higher diversity and less clustering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the phylogenetic pattern observed in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "17e5aea1-46c2-4a42-8172-85ce5eb8677a",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C68",
+      "claim": "Camel viruses show significantly higher diversity and less clustering than human viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "This inference derives from the tree structure wherein human viruses appear as clusters of highly related sequences nested within the diversity seen in camel viruses, which themselves show significantly higher diversity and less clustering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the phylogenetic pattern observed in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "5fe5d46b-2272-44cb-a263-365e7c3f3fe6",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C69",
+      "claim": "Dense terminal clusters of MERS-CoV circulating in humans are of no subsequent relevance to the evolution of the virus.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe dense terminal clusters of MERS-CoV circulating in humans that are of no subsequent relevance to the evolution of the virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the phylogenetic structure showing human clusters as terminal branches.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "a1406de3-e09e-42b3-9bf0-2d4bf53b34fe",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C70",
+      "claim": "Clusters of presumed human-to-human transmission are embedded within extensive diversity of MERS-CoV lineages inferred to be circulating in camels, a classic pattern of source-sink dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "These clusters of presumed human-to-human transmission are then embedded within extensive diversity of MERS-CoV lineages inferred to be circulating in camels, a classic pattern of source-sink dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the phylogenetic pattern and interprets it using ecological theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "a899ce2b-9078-4df4-9a1f-2d041b1cd037",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "claim_id": "C71",
+      "claim": "Structured coalescent analyses recover the camel-centered picture of MERS-CoV evolution despite sequence data heavily skewed towards non-uniformly sampled human cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Structured coalescent analyses recover the camel-centered picture of MERS-CoV evolution despite sequence data heavily skewed towards non-uniformly sampled human cases and are robust to choice of prior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the robustness of the structured coalescent results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4094bc40-10f4-4c18-b11f-4f652d45b562",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Structured coalescent analysis of 174 human and 100 camel MERS-CoV genomes demonstrates that long-term viral evolution occurs exclusively in camels, with humans acting as transient, terminal hosts. The analysis estimated a median of 56 camel-to-human transmissions (95% HPD: 48\u201363) and negligible human-to-camel transmission (median 3, 95% HPD: 0\u201312, with zero migrations in the maximum clade credibility tree). Human viral clusters appear as terminal branches nested within camel viral diversity, exhibiting classic source-sink dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C12\u2013C14, C17, C42\u2013C44, C66\u2013C71 collectively provide strong convergent evidence from structured coalescent modeling (Figure 1), showing asymmetric migration rates, distinct effective population sizes between hosts (camel Ne\u03c4 = 3.49 years vs. human Ne\u03c4 = 0.24 years), and phylogenetic patterns consistent with camel reservoir and human dead-end infections. The finding is robust to prior choice (C66, Figure 1\u2014figure supplement 2) and supported by multiple lines of phylogenetic evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "99049ea7-7c8a-4474-b550-4571473a162b",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "MERS-CoV introductions into humans show seasonal variation, with increased odds during April\u2013July and decreased odds during August, September, November, and December. This seasonality may be linked to camel calving season (October\u2013February) and subsequent decline in maternal antibodies in calves, potentially leading to viral sweeps through susceptible camel populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C18\u2013C19 present statistical evidence for seasonality from modeling of introduction times (Figure 2), with specific months showing significantly altered odds ratios. Claims C20\u2013C22 provide biological context from cited literature on camel reproduction and a plausible mechanistic hypothesis linking calving season to increased human spillover risk. The temporal association is statistically supported, though the mechanistic link remains somewhat speculative (C22).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "a7e95b38-788b-4754-b50a-26a156aade7e",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "No correlation exists between introduction date and outbreak cluster size (Spearman \u03c1=0.06, p=0.68), and no temporal trend in human sequence cluster sizes was observed, suggesting MERS-CoV outbreaks in humans are neither growing nor shrinking over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23\u2013C25 present consistent statistical evidence (Spearman correlation tests with non-significant p-values) from analysis of introduction dates and cluster sizes shown in Figure 2B. The inference that outbreaks are stable in size (C25) logically follows from the lack of temporal trend (C24), and is consistent with the terminal host hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "8d504fab-d201-4179-982d-34f2cd501a6e",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Monte Carlo simulations matching empirical MERS-CoV sequence cluster patterns estimate R0 for human transmission at 0.72 (95% percentiles 0.57\u20130.90), well below the epidemic threshold of 1.0. These simulations suggest hundreds of unobserved zoonotic introductions have occurred (median 592, 95% percentiles 311\u2013811), far exceeding the ~50 introductions identified directly from sequence data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26\u2013C28, C45, C48 are supported by Monte Carlo simulations (Figure 3) that match empirical sequence cluster statistics. The methodology accounts for sampling bias toward large hospital outbreaks (Figure 3\u2014figure supplement 1) and uses branching process theory (Equation 1) with dispersion parameter \u03c9=0.1 based on prior coronavirus studies (C64). The R0 estimate is consistent with the structured coalescent finding of humans as terminal hosts, and the large number of estimated introductions is a logical extrapolation from the low R0.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "8792c8fa-db06-4217-8e39-95c822147c1d",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Human MERS-CoV infections are likely more common than currently recognized, with most transmission chains being exceedingly short and limited to mild primary cases that escape surveillance. The combination of frequent spillover and occasional hospital-based outbreak amplification via poor hygiene practices appears sufficient to explain observed MERS-CoV epidemiological patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57\u2013C59 represent reasonable inferences from the low R0 estimates (C26\u2013C27), large number of estimated introductions (C28, C45), and cited evidence of hospital outbreaks (C60). The interpretation is consistent with the phylogenetic data showing many small clusters and is supported by epidemiological citations (Assiri et al., 2013b; Chen et al., 2017). However, direct evidence for mild undetected cases is limited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "a82e9692-19c9-4346-93f9-a60ecab2efa3",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Without unprecedented evolution of host tropism, MERS-CoV is unlikely to become endemic in humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C5 is a reasonable conclusion based on the R0 estimates well below 1.0 (C26\u2013C27) and the finding that humans are terminal hosts (C2\u2013C3). However, this is fundamentally a predictive statement about future evolution that cannot be definitively proven from current data. The conclusion is supported by the presented evidence but involves speculation about future evolutionary trajectories.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "3c0ebe3b-a029-4ca0-9774-9f23af4a0451",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Recombination is detectable in MERS-CoV genomes using PHI and 3Seq methods, particularly in the phylogenetic backbone. However, human outbreak clusters remain largely consistent and well-supported across different genomic fragments, and source-sink dynamics between camels and humans are preserved in trees from separate genome regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29\u2013C33 are supported by recombination detection analyses (Figure 4\u2014figure supplement 1) and comparison of phylogenies from genome fragments (Figure 4A, 4B). The finding that human clusters are robust to recombination (C31\u2013C32) is important for validating the main conclusions. The consistency of source-sink dynamics across fragments (C33) strengthens confidence in the primary structured coalescent results despite recombination.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "57b92018-65c9-4992-a731-2bb3e4baf781",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Discrete trait analysis produces results contradicting the structured coalescent, identifying humans as a major source of camel infections. The authors argue this discrete trait reconstruction is likely false due to biased sampling (174 human vs. 100 camel sequences) and the model's inability to account for vastly different coalescence rates between hosts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53\u2013C56 present a critical comparison between methods. The discrete trait analysis result (C53, Figure 1\u2014figure supplement 3) contradicts epidemiological evidence (C54) including seroprevalence data and lack of sustained human transmission outside Arabia. The authors' explanation (C55) regarding sampling bias (C56) and model limitations is reasonable and highlights an important methodological consideration. This strengthens confidence in the structured coalescent approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "d313757f-94db-4485-8e57-7753b4e8badd",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The ratio of expected to empirical Ne\u03c4 for MERS-CoV (80.3, range 64.0\u2013103.5) is less than that for human measles virus and consistent with neutral evolutionary dynamics plus transmission heterogeneity and seasonal prevalence troughs. The ladder-like phylogenetic tree appearance can be explained by demographic factors rather than selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37\u2013C38 provide demographic parameters from cited literature used to calculate expected Ne\u03c4. Claims C40\u2013C41 compare this to empirical estimates and interpret the ratio. The calculation is transparent and the comparison to measles (Bedford et al., 2011) provides context. The conclusion that demography rather than selection explains tree topology (C41) is reasonable given the Ne\u03c4 ratio, though alternative explanations are not exhaustively ruled out.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "d355a527-509c-433a-bb8f-89e007fe8d81",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background epidemiological context for MERS-CoV is established, including its zoonotic nature, discovery in 2012, case counts (>2000 infections, >700 deaths), demographic risk factors, seroprevalence patterns in camels and exposed workers, hospital outbreaks, and comparison to SARS-CoV.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6\u2013C11, C46\u2013C47, C60\u2013C63 provide established background information supported by appropriate citations to WHO data, epidemiological studies, and prior literature. These claims establish context but do not represent novel findings of this study. All are well-documented facts from prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    },
+    {
+      "id": "076f3466-75b1-4a4e-8164-e81e57914216",
+      "content_id": "ced6a9c2-7e95-4364-a75b-f247fe997de8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study dataset comprised 174 human and 100 camel MERS-CoV genomes. Monte Carlo simulations used dispersion parameter \u03c9=0.1 based on prior coronavirus studies. Camel sequences first appear in the dataset in November 2013, representing a data limitation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C64\u2013C65 describe methodological details and data characteristics. C49 clearly states the dataset composition. C64 justifies the choice of dispersion parameter with appropriate citation (Lloyd-Smith et al., 2005). C65 acknowledges a temporal limitation in camel sampling that could affect early phylogenetic inferences. These are straightforward descriptive claims supported by the methods section.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:17.146023Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "20f6db57-ea50-4cb2-b295-8a9a7d96992f",
+      "result_id": "4094bc40-10f4-4c18-b11f-4f652d45b562"
+    },
+    {
+      "claim_id": "8d0dd722-6070-4cce-a1fb-1eb7665eb105",
+      "result_id": "4094bc40-10f4-4c18-b11f-4f652d45b562"
+    },
+    {
+      "claim_id": "8c453520-24c5-4a0d-8821-0bffdc13559f",
+      "result_id": "4094bc40-10f4-4c18-b11f-4f652d45b562"
+    },
+    {
+      "claim_id": "369c28c1-6287-4a8c-a63a-c844b2d4cbd0",
+      "result_id": "4094bc40-10f4-4c18-b11f-4f652d45b562"
+    },
+    {
+      "claim_id": "e421c40c-0875-4aed-bd67-801f013b7bbc",
+      "result_id": "4094bc40-10f4-4c18-b11f-4f652d45b562"
+    },
+    {
+      "claim_id": "073f9676-16aa-4123-8de7-fd0148d202b7",
+      "result_id": "4094bc40-10f4-4c18-b11f-4f652d45b562"
+    },
+    {
+      "claim_id": "75b69de3-f909-4606-bac1-b55d4889bab8",
+      "result_id": "4094bc40-10f4-4c18-b11f-4f652d45b562"
+    },
+    {
+      "claim_id": "abf8448a-9a53-402b-b055-7ad2830951d2",
+      "result_id": "4094bc40-10f4-4c18-b11f-4f652d45b562"
+    },
+    {
+      "claim_id": "7c5a1e56-8180-4ee6-9919-c84999f7eda1",
+      "result_id": "4094bc40-10f4-4c18-b11f-4f652d45b562"
+    },
+    {
+      "claim_id": "32b477fe-72d3-4865-9de0-a8ad3f23ce65",
+      "result_id": "4094bc40-10f4-4c18-b11f-4f652d45b562"
+    },
+    {
+      "claim_id": "5ca6fe55-bd1b-4f61-92ef-47b1266c5c92",
+      "result_id": "4094bc40-10f4-4c18-b11f-4f652d45b562"
+    },
+    {
+      "claim_id": "17e5aea1-46c2-4a42-8172-85ce5eb8677a",
+      "result_id": "4094bc40-10f4-4c18-b11f-4f652d45b562"
+    },
+    {
+      "claim_id": "5fe5d46b-2272-44cb-a263-365e7c3f3fe6",
+      "result_id": "4094bc40-10f4-4c18-b11f-4f652d45b562"
+    },
+    {
+      "claim_id": "a1406de3-e09e-42b3-9bf0-2d4bf53b34fe",
+      "result_id": "4094bc40-10f4-4c18-b11f-4f652d45b562"
+    },
+    {
+      "claim_id": "a899ce2b-9078-4df4-9a1f-2d041b1cd037",
+      "result_id": "4094bc40-10f4-4c18-b11f-4f652d45b562"
+    },
+    {
+      "claim_id": "5789aa2a-b7e9-405f-962f-8f5f192805a6",
+      "result_id": "99049ea7-7c8a-4474-b550-4571473a162b"
+    },
+    {
+      "claim_id": "388260af-509a-4f1a-b66b-ad65e8d88104",
+      "result_id": "99049ea7-7c8a-4474-b550-4571473a162b"
+    },
+    {
+      "claim_id": "e779250c-8334-41a4-9ad6-7498b4ccac41",
+      "result_id": "99049ea7-7c8a-4474-b550-4571473a162b"
+    },
+    {
+      "claim_id": "847117f0-a58d-4c3c-9ec9-9ab2358aed9b",
+      "result_id": "99049ea7-7c8a-4474-b550-4571473a162b"
+    },
+    {
+      "claim_id": "ab3bf341-d0c7-48d0-a679-6ca79e15a565",
+      "result_id": "99049ea7-7c8a-4474-b550-4571473a162b"
+    },
+    {
+      "claim_id": "9af9f1e5-2729-442c-9b57-d2367dddfa83",
+      "result_id": "99049ea7-7c8a-4474-b550-4571473a162b"
+    },
+    {
+      "claim_id": "0e9e2f67-3ba7-4647-bac3-b344062d2a7e",
+      "result_id": "a7e95b38-788b-4754-b50a-26a156aade7e"
+    },
+    {
+      "claim_id": "2232fbde-f9dc-4f21-9f06-9d8f5a69412e",
+      "result_id": "a7e95b38-788b-4754-b50a-26a156aade7e"
+    },
+    {
+      "claim_id": "0c8b19de-b17a-4746-9279-0d395f43cc8e",
+      "result_id": "a7e95b38-788b-4754-b50a-26a156aade7e"
+    },
+    {
+      "claim_id": "3b68eb14-9350-4ad5-992d-ca987e49a1a5",
+      "result_id": "8d504fab-d201-4179-982d-34f2cd501a6e"
+    },
+    {
+      "claim_id": "7b4387bc-e25e-49c4-b7f9-db6d354ad7e0",
+      "result_id": "8d504fab-d201-4179-982d-34f2cd501a6e"
+    },
+    {
+      "claim_id": "9cb70c4e-a4d7-4e24-91b6-d03a7e5e50ae",
+      "result_id": "8d504fab-d201-4179-982d-34f2cd501a6e"
+    },
+    {
+      "claim_id": "02b75202-3f09-450e-9275-f35293e71152",
+      "result_id": "8d504fab-d201-4179-982d-34f2cd501a6e"
+    },
+    {
+      "claim_id": "37201e0b-48fe-42a7-a114-5783a6339fa9",
+      "result_id": "8d504fab-d201-4179-982d-34f2cd501a6e"
+    },
+    {
+      "claim_id": "4d3b300f-2e6e-4e4b-89f6-da6c82909fe4",
+      "result_id": "8792c8fa-db06-4217-8e39-95c822147c1d"
+    },
+    {
+      "claim_id": "665cfac7-ac01-44ed-a868-087682ab673b",
+      "result_id": "8792c8fa-db06-4217-8e39-95c822147c1d"
+    },
+    {
+      "claim_id": "2d2a3cf1-b68a-49c0-b10e-9256c7abe04f",
+      "result_id": "8792c8fa-db06-4217-8e39-95c822147c1d"
+    },
+    {
+      "claim_id": "c35b1e78-5678-4eb8-b05a-5e39565d373c",
+      "result_id": "a82e9692-19c9-4346-93f9-a60ecab2efa3"
+    },
+    {
+      "claim_id": "8c5b0a02-a0ca-4d17-a989-6a543d9c0551",
+      "result_id": "3c0ebe3b-a029-4ca0-9774-9f23af4a0451"
+    },
+    {
+      "claim_id": "7d7aaba0-ad48-4c1b-83fe-c86aae1edd79",
+      "result_id": "3c0ebe3b-a029-4ca0-9774-9f23af4a0451"
+    },
+    {
+      "claim_id": "106ab897-f024-4f84-8599-5b24f2b60d6c",
+      "result_id": "3c0ebe3b-a029-4ca0-9774-9f23af4a0451"
+    },
+    {
+      "claim_id": "abb90e31-26c4-4e71-9351-544ad6d87484",
+      "result_id": "3c0ebe3b-a029-4ca0-9774-9f23af4a0451"
+    },
+    {
+      "claim_id": "933a2398-231e-427c-9b87-32a0879603c2",
+      "result_id": "3c0ebe3b-a029-4ca0-9774-9f23af4a0451"
+    },
+    {
+      "claim_id": "4dea3b4f-3a3a-4692-b27b-da6f470058a5",
+      "result_id": "57b92018-65c9-4992-a731-2bb3e4baf781"
+    },
+    {
+      "claim_id": "12b91b4a-69bd-44ba-a8c8-c57a9f1360bc",
+      "result_id": "57b92018-65c9-4992-a731-2bb3e4baf781"
+    },
+    {
+      "claim_id": "66732ed8-496f-451c-b4a3-411d0b568658",
+      "result_id": "57b92018-65c9-4992-a731-2bb3e4baf781"
+    },
+    {
+      "claim_id": "ac08ebc4-8d4c-4266-8d0c-d2232d1cd306",
+      "result_id": "57b92018-65c9-4992-a731-2bb3e4baf781"
+    },
+    {
+      "claim_id": "4caa9a1b-4ad6-472d-b492-fe94aeec051b",
+      "result_id": "d313757f-94db-4485-8e57-7753b4e8badd"
+    },
+    {
+      "claim_id": "7f4af6b9-f2f7-4dac-8b79-5e8fa3a3fa2c",
+      "result_id": "d313757f-94db-4485-8e57-7753b4e8badd"
+    },
+    {
+      "claim_id": "00470b60-92d5-46a0-872b-414898255c1c",
+      "result_id": "d313757f-94db-4485-8e57-7753b4e8badd"
+    },
+    {
+      "claim_id": "d92940be-9482-4c26-854a-1cdb56c1067d",
+      "result_id": "d313757f-94db-4485-8e57-7753b4e8badd"
+    },
+    {
+      "claim_id": "1e1ed4cf-620f-42a6-a71d-b3850e04d6dd",
+      "result_id": "d355a527-509c-433a-bb8f-89e007fe8d81"
+    },
+    {
+      "claim_id": "eb635873-d8e7-412a-aedc-07fb50d7e739",
+      "result_id": "d355a527-509c-433a-bb8f-89e007fe8d81"
+    },
+    {
+      "claim_id": "c7305574-43c2-42b1-b6f9-42da0e60f70b",
+      "result_id": "d355a527-509c-433a-bb8f-89e007fe8d81"
+    },
+    {
+      "claim_id": "5a7714b4-5eba-484e-a0d3-ef8f8ab181bc",
+      "result_id": "d355a527-509c-433a-bb8f-89e007fe8d81"
+    },
+    {
+      "claim_id": "7d2268ef-2e34-4672-b504-13f9bbb809a1",
+      "result_id": "d355a527-509c-433a-bb8f-89e007fe8d81"
+    },
+    {
+      "claim_id": "0d1a18ba-dd48-47ac-82e3-5c1e1081654f",
+      "result_id": "d355a527-509c-433a-bb8f-89e007fe8d81"
+    },
+    {
+      "claim_id": "20bc00fa-97a3-4b36-b89a-a5d5c8bf87d8",
+      "result_id": "d355a527-509c-433a-bb8f-89e007fe8d81"
+    },
+    {
+      "claim_id": "d0c93cd3-9d53-4ff2-b9d5-ea56eff8a471",
+      "result_id": "d355a527-509c-433a-bb8f-89e007fe8d81"
+    },
+    {
+      "claim_id": "e538908e-373e-41a1-96eb-28b22a77e274",
+      "result_id": "d355a527-509c-433a-bb8f-89e007fe8d81"
+    },
+    {
+      "claim_id": "61b79711-17d5-4613-920f-ecd7a01426d7",
+      "result_id": "d355a527-509c-433a-bb8f-89e007fe8d81"
+    },
+    {
+      "claim_id": "a2e240ed-70c8-45c8-a10b-357d263eeef5",
+      "result_id": "d355a527-509c-433a-bb8f-89e007fe8d81"
+    },
+    {
+      "claim_id": "4f99c4a3-49f4-4163-b3ed-e23654eb62de",
+      "result_id": "d355a527-509c-433a-bb8f-89e007fe8d81"
+    },
+    {
+      "claim_id": "8503ea8d-35e4-4195-aaab-98f89a5d09fa",
+      "result_id": "d355a527-509c-433a-bb8f-89e007fe8d81"
+    },
+    {
+      "claim_id": "23027962-f108-40aa-854d-571e93cfd311",
+      "result_id": "076f3466-75b1-4a4e-8164-e81e57914216"
+    },
+    {
+      "claim_id": "495cd174-c0c4-48ea-9ebd-33335749f0e2",
+      "result_id": "076f3466-75b1-4a4e-8164-e81e57914216"
+    },
+    {
+      "claim_id": "d648185e-9488-4e06-a360-b8764b572fb8",
+      "result_id": "076f3466-75b1-4a4e-8164-e81e57914216"
+    }
+  ],
+  "comparisons": []
+}

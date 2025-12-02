@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Participants performed with high accuracy in both color (0.87 \u00b1 0.02) and motion (0.88 \u00b1 0.02) tasks, with no difference between tasks. Classic task-switch costs were replicated, showing significant interactions between previous and current trial tasks in both accuracy and RT, with task-repeat trials yielding higher accuracy and faster responses than task-switch trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 collectively demonstrate the basic behavioral effects. The accuracy data (C18-C20) and switch cost effects (C21-C24) are directly supported by statistical tests with appropriate sample size (N=22) and clear significance levels (p<0.001). These findings replicate well-established task-switching phenomena.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Motion trials were significantly faster than color trials (F1,21=21.3, p<0.001), and there was a significant main effect of the explicit pre-cue on RT (F4,84=4.3, p<0.005), with response speed scaling with predictive pre-cue information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are supported by appropriate statistical tests and are consistent with prior literature using similar paradigms. The main effect of task prediction on RT demonstrates that participants utilized the external cue information, which is critical for the study's design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Trial history effects extended back three trials (i-2 and i-3), showing significant interactions with current task performance in both accuracy and RT. The modulation effect decayed with increasing temporal distance, and trial history-based predictions biased participants toward expecting task repetitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 demonstrate robust trial history effects supported by statistical tests across multiple trial lags. The decay pattern (C31) and the inference about repetition bias (C32-C33) are well-supported by the data pattern shown in Figures 2E-H. These findings establish the presence of internally generated predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The joint-guidance model, which includes both cue-induced and internally generated task predictions, outperformed all other models with a protected exceedance probability of 0.997. The mean learning rate was 0.52, indicating participants weighted the most recent trial approximately equally with prior trial history.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by rigorous Bayesian model comparison and cross-validation procedures. The protected exceedance probability of 0.997 provides strong evidence for the joint-guidance model over alternatives. The learning rate estimate (C36-C37) is clearly reported and appropriately interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Trial history effects on behavior were approximately 3 times stronger than cue-induced effects (group mean \u03b2: 0.26, significantly lower than 0.5; t21=5.42, P<0.001). This bias toward internal predictions persisted even after excluding five participants who showed minimal reliance on cue-induced predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are well-supported by statistical tests and robustness checks. The finding that \u03b2 is significantly below 0.5 is striking and central to the paper's main conclusion. The exclusion analysis (C40-C41) strengthens the claim by ruling out the possibility that the effect is driven by participants who failed to understand the cue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "\u03b2 estimates were reliable across the experimental session, showing significant correlation between the first and last 3 runs (r=0.63, p=0.002) and no significant difference between these phases (t21=1.32, p=0.20), indicating stable reliance on internal versus external predictions throughout the experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 demonstrate the stability of the \u03b2 parameter estimates through appropriate correlation and comparison analyses. This addresses potential concerns about learning effects or changes in strategy over time, strengthening the validity of the main behavioral findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The mean estimated RT gain from using the pre-cue was positively correlated with \u03b2 estimates in both motion (r=0.74, p<0.001) and color (r=0.46, p=0.03) tasks, indicating a clear behavioral benefit for relying on external cues and demonstrating that reliance on internal predictions was sub-optimal in this context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by correlation analyses showing that greater reliance on external cues (higher \u03b2) is associated with better performance. This establishes that the observed bias toward internal predictions (low \u03b2) is indeed sub-optimal, which is critical for the paper's theoretical interpretation regarding cost-benefit trade-offs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Left dorsolateral prefrontal cortex (dlPFC) showed significantly above-chance encoding of the joint task prediction (Pjoint), which was not driven by univariate effects. Permutation testing confirmed that Pjoint better accounted for dlPFC activity patterns than other mixtures of internal and external predictions, and encoding strength decreased with distance from behaviorally-derived \u03b2 values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 are supported by rigorous MVPA analyses with appropriate controls. The univariate control analysis (C51) rules out confounds from task difficulty. The permutation tests (C52-C54) provide strong evidence for selective encoding of the integrated prediction. These findings support the key neural claim that dlPFC integrates internal and external predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Proactive switch demand (|Tprev - Pjoint|) was encoded in a widespread network including frontoparietal control regions, insula, dorsal striatum, and visual cortex. This suggests participants used task predictions to adjust both cognitive control and visual processing, with the frontoparietal network representing the degree of required task-set updating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by whole-brain MVPA results with appropriate multiple comparison correction. The widespread network encoding proactive switch demand is consistent with prior literature on cognitive control. The inference about visual processing adjustment (C57) is reasonable given the visual cortex involvement, though somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Reactive switch demand (PEjoint) was encoded in dmPFC/ACC and other regions at task-stimulus onset. The dmPFC showed the strongest and most selective encoding, with effects remaining significant when tested separately for motion and color trials, and encoding strength decreasing with distance from behaviorally-derived \u03b2 values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C67 are well-supported by MVPA results, permutation testing, and task-specific analyses. The dmPFC findings are consistent with extensive prior literature on prediction error encoding in this region (C59, C88). The selectivity analyses (C61-C66) provide strong evidence that dmPFC specifically encodes the joint prediction error rather than other related variables.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Robust encoding of PEint (prediction error of internally generated predictions) was observed in the frontoparietal control network and dorsal attention network, replicating prior findings and demonstrating that internally generated predictions from non-predictive sequences recruit the same neural substrates as those from predictive sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 are supported by MVPA results and comparison with prior work (Waskom et al., 2017). This replication strengthens the validity of the current findings and demonstrates generalizability across different types of trial sequences. The inference in C69 is well-justified by the similarity of neural substrates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "There was clear temporal segregation between frontoparietal encoding of proactive switch demand at pre-cue onset and dmPFC/ACC encoding of reactive switch demand at task-stimulus onset. This suggests the lateral frontoparietal network guides proactive control implementation while dmPFC/ACC detects prediction errors and signals the need for reactive control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by the temporal separation of neural effects shown in Figures 5A and 6A. The functional interpretations (C71-C72) are reasonable inferences from the data and consistent with the dual mechanisms of control framework and extensive prior literature. However, these remain interpretations rather than direct demonstrations of causal roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "External and internally generated predictions jointly guide task preparation with a bias for internal predictions. These predictions are integrated in dorsolateral prefrontal cortex and inform representations of proactive switch demand in frontoparietal cortex. Upon task-stimulus onset, dorsomedial prefrontal cortex encodes reactive switch demand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8 represent the main findings of the paper and are well-supported by the combined behavioral modeling (C34-C41) and neuroimaging results (C50-C67). The integration of behavioral and neural evidence provides converging support for these central claims about how the brain reconciles internal and external predictions to guide cognitive control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C74",
+      "C75",
+      "C79",
+      "C80"
+    ],
+    "result": "The seemingly irrational reliance on internally generated predictions may be attributable to lower costs of using internal predictions compared to external cue-based predictions. This could arise from the need to learn cue-task associations or because internal predictions represent a default, evolutionarily-grounded cognitive strategy that is cheap to generate but costly to override.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49, C74-C75, C79-C80 are explicitly speculative (labeled as SPECULATION in evidence_type). While these explanations are plausible and grounded in the EVC framework, they are not directly tested in the current study. The speculation is reasonable given the data, but additional experiments manipulating costs would be needed to support these claims definitively.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The internally generated predictions took the form of the hot-hand fallacy (increased expectations of task repetition with increasing run length), which is consistent with implicit predictions and suggests participants implicitly assumed trial history to be non-random.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by the behavioral pattern showing bias toward task repetitions and are consistent with prior literature distinguishing hot-hand (implicit) from gambler's fallacy (explicit) patterns. The inference that this reflects implicit processing (C82-C83) is well-justified by citations to relevant prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The findings suggest a novel extension of the EVC theory where cost-benefit optimization applies not only to control engagement after predictions are formed, but also to the earlier stage where different inputs to control demand predictions are reconciled. This reconciliation process would precede and influence EVC calculations in a hierarchical fashion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84, C93-C95 propose theoretical extensions based on the current findings. While these are reasonable inferences from the data, they represent theoretical proposals rather than directly tested hypotheses. The hierarchical relationship (C94) and overarching optimization procedure (C95) are speculative extensions that would require additional empirical work to validate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background claims establishing that cognitive control proactively configures processing based on predictions from external cues and internal cognitive history, that controlled processing incurs costs including switch costs, and that trial history effects can occur even with fully informative external cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9-C17 represent background knowledge and prior literature that frames the current study. These are well-supported by appropriate citations to established literature and are not controversial. They provide the necessary context for understanding the study's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Prior literature claims establishing that perception and decision-making rely on recent experience, that dlPFC represents task rules, that frontoparietal regions are involved in task-set regulation, that ACC/dmPFC encode prediction errors, and that the dual mechanisms framework distinguishes proactive and reactive control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78, C85-C92 represent citations to prior literature that support the interpretation of the current findings. These are appropriately cited and provide important context for understanding the neural results. The claims accurately represent the cited work and are used appropriately to interpret the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Methodological details including sample characteristics (N=22, 15 females, ages 22-35), exclusion criteria, experimental design (9 runs of 50 trials), task randomization, staircase procedure, data preprocessing, modeling constraints, MRI acquisition parameters, and statistical correction procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C111 provide methodological details that are clearly and completely reported. The sample size is adequate for the within-subjects design, exclusion criteria are appropriate, the experimental design is well-controlled, and the analysis methods are rigorous with appropriate corrections for multiple comparisons. These methodological details support the validity of the reported results.",
+    "result_type": "MINOR"
+  }
+]

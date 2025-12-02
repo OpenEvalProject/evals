@@ -1,0 +1,1484 @@
+{
+  "submission": {
+    "id": "c4db74d4-2fd5-4c43-baaa-14f37239b0e4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:12:19.332137Z",
+    "updated_at": "2025-12-02T01:12:19.332137Z"
+  },
+  "content": [
+    {
+      "id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "submission_id": "c4db74d4-2fd5-4c43-baaa-14f37239b0e4",
+      "content_type": "manuscript",
+      "content_text": "# Synergistic assembly of human pre-spliceosomes across introns and exons\n\n## Authors\n\n- Joerg E Braun<sup>1</sup> ([ORCID: 0000-0002-8309-6401](https://orcid.org/0000-0002-8309-6401))\n- Larry J Friedman<sup>2</sup> ([ORCID: 0000-0003-4946-8731](https://orcid.org/0000-0003-4946-8731))\n- Jeff Gelles<sup>2</sup> ([ORCID: 0000-0001-7910-3421](https://orcid.org/0000-0001-7910-3421)) \u2020\n- Melissa J Moore<sup>1</sup> \u2020\n\n### Affiliations\n\n1. RNA Therapeutics Institute University of Massachusetts Medical School Worcester United States\n2. Department of Biochemistry Brandeis University Waltham United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMost human genes contain multiple introns, necessitating mechanisms to effectively define exons and ensure their proper connection by spliceosomes. Human spliceosome assembly involves both cross-intron and cross-exon interactions, but how these work together is unclear. We examined in human nuclear extracts dynamic interactions of single pre-mRNA molecules with individual fluorescently tagged spliceosomal subcomplexes to investigate how cross-intron and cross-exon processes jointly promote pre-spliceosome assembly. U1 subcomplex bound to the 5' splice site of an intron acts jointly with U1 bound to the 5' splice site of the next intron to dramatically increase the rate and efficiency by which U2 subcomplex is recruited to the branch site/3' splice site of the upstream intron. The flanking 5' splice sites have greater than additive effects implying distinct mechanisms facilitating U2 recruitment. This synergy of 5' splice sites across introns and exons is likely important in promoting correct and efficient splicing of multi-intron pre-mRNAs.\n\n## Introduction\n\nSpliceosomes consist of the U1, U2, and U4/U6.U5 small nuclear ribonucleoproteins (snRNPs) and multiprotein Prp19-complex as major building blocks, plus many transiently interacting splicing factors (Wahl et al., 2009). This machinery recognizes and assembles stepwise at splice sites (SS) (U1 at 5'SS and U2 at the 3'SS/branch site) to form pre-spliceosomes, which are subsequently remodeled into catalytically active spliceosomes. Pre-spliceosomes can form on multi-intron pre-mRNAs through at least two different pathways. An intron can be recognized a) via cross-intron interactions leading directly to a catalytically active spliceosome, or b) via cross-exon interactions where the exons flanking an intron are first defined, after which cross-intron interactions between adjacent cross-exon complexes lead to spliceosome assembly (Mold\u00f3n and Query, 2010). On human pre-mRNAs, which characteristically harbor multiple long introns and short exons, exon definition predominates (Berget, 1995; Fox-Walsh et al., 2005). Indeed, splicing is greatly enhanced when a 5'SS is present across the exon downstream of an intron, highlighting the importance of exon definition in humans (Talerico and Berget, 1990; Yue and Akusj\u00e4rvi, 1999). Cross-exon pre-spliceosomes can transition into cross-intron pre-spliceosomes, each having a distinct protein composition; the latter can then productively splice the pre-mRNA (Chiara and Reed, 1995; Schneider et al., 2010). However, the mechanisms by which cross-intron and cross-exon pre-spliceosomes work together to facilitate pre-mRNA splicing remain unclear. In S. cerevisiae, where the cross-intron pathway predominates, single-molecule approaches have proven invaluable for elucidating the kinetic pathways and subcomplex dynamics involved in spliceosome assembly (Semlow et al., 2016; Warnasooriya and Rueda, 2014). Here we developed the tools necessary to implement colocalization single-molecule spectroscopy (CoSMoS) in human cell extracts and used this system to investigate the dynamic mechanism of cross-intron and cross-exon cooperation in human pre-spliceosome assembly.\n\n## Results\n\n### Single-molecule visualization of spliceosome assembly and function in human cell extract\n\nWe began by investigating whether human nuclear extracts can assemble catalytically-competent spliceosomes on surface-tethered pre-mRNA molecules. To do this, we utilized the pre-mRNA model substrate PIP85A (Moore and Sharp, 1992) (Figure 1A, Table 1). We refer to this RNA here as \u20185i3\u2019 to indicate that, reading in the 5'-to-3' direction, it contains a partial exon, a 5'SS (\u20185\u2019), an intron (i), a 3'SS (\u20183\u2019), and another partial exon. For this pre-mRNA 20 \u00b1 2% (s.d.) was converted to spliced products after 40 mins in human cell line HEK293 nuclear extract (Figure 1B). No spliced products were observed in the absence of ATP, which is required for spliceosome assembly. To monitor splicing of individual 5i3 molecules, we incorporated a green-excited dye into the 5' exon, a red-excited dye into the intron, and biotin at the end of the 3' exon (Figure 1C). We sparsely deposited this pre-mRNA onto a streptavidin-functionalized glass surface, added nuclear extract and followed green and red fluorescence from single pre-mRNA molecules over time. To exclude pre-mRNAs that lost intron signal due to RNA degradation, we selected only those molecules retaining 5' exon (green) fluorescence at the end of the 40 min experiment. Of these, 1.1 \u00b1 0.7% (s.e.) lost intron (red) fluorescence in a control conducted in the absence of ATP (likely due to photobleaching) whereas 18 \u00b1 4% (s.e.) lost intron fluorescence in the presence of ATP. This single-molecule assay specifically monitors intron release, while the bulk assay measures the second splicing step. Intron release requires an ATP-dependent structural rearrangement of the splicing machinery after the second splicing step, so as expected the lag phase was somewhat longer in the single-molecule assay (Figure 1C) than in the bulk splicing assay (Figure 1B). However, surface-tethered 5i3 pre-mRNA molecules were spliced with a similar efficiency (17%) to what is observed in solution (20%).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/37751/elife-37751-fig1-v2.jpg)\n\n**Figure 1.:** Introns and exons are schematized as blue lines and rectangles, respectively, with A indicating the branchpoint. For bulk analysis (B) trace-labeled 5i3 was incubated with nuclear extracts, aliquots were analyzed on denaturing gel (15%) and second step\u00a0splicing products quantified in graph. Second step splicing efficiency (\u00b1s.d.) was calculated as the amount of ligated exon product relative to the amount of 5i3 starting material at time zero. For single-molecule analysis (C), dyes tethered to the surface (red, green stars) were visualized using total internal reflection fluorescence microscopy using alternating red and green laser excitation (arrows); dye-labeled molecules in solution are not detectable. Fraction (\u00b1s.e.) of labeled introns remaining was calculated as the fraction of the N molecules retaining the exon dye fluorescence (green star) through the entire experiment duration which retained intron dye fluorescence (red star) at a particular time. Labeling of spliceosomal subcomplexes is shown in Figure 1\u2014figure supplements 1\u20135.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37751/elife-37751-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Western blots confirm expression of fSNAP-fusion proteins (black arrows) at levels similar to untagged endogenous proteins (gray arrows); Parental, untagged HEK293 cell line. Glyceraldehyde-3-phosphate dehydrogenase (GAPDH) and cytochrome c oxidase polypeptide IV (COX4) serve as loading controls. Fractions tagged (the amount of fSNAP-fusion protein relative\u00a0to\u00a0the total\u00a0amounts of both untagged endogenous protein and fSNAP-fusion protein) are listed in the table. Anti-U1-70K (Synaptic Systems, 203011, RRID:AB_887903), anti-U2B'' (American Research Products, 4G3, 03\u201357035), anti-Snu114 (Bethyl, A300-957A, RRID:AB_805780), anti-COX4 (Bethyl, A301-899A, RRID:AB_1524093), anti-GAPDH (Bethyl, A500-005A, RRID:AB_10895657), anti-rabbit-680 (LI-COR, 926\u201368021, RRID:AB_10706309), and anti-mouse-800 (LI-COR, 926\u201332212, RRID:AB_621847) antibodies were used according to manufacturer\u2019s recommendations.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/37751/elife-37751-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Indicated bait proteins were immunoprecipitated from nuclear extracts and aliquots from input (1%) and pulldown (30%) analyzed by Western blotting for immunoprecipitated bait protein (upper panel) and co-immunoprecipitated prey protein (both endogenous and fSNAP-tagged, gray and black arrows respectively). For co-immunoprecipitation the following antibodies were used according to manufacturer\u2019s recommendations: U1-70K, anti-SF3B155 (Bethyl, A300-996A, RRID:AB_805834); U2B'', anti-SF3B145 (Bethyl, A301-606A, RRID:AB_1078828); and Snu114, anti-Brr2 (Bethyl, A303-453A, RRID:AB_10949362). For Western blotting anti-SF3B155 (Bethyl, A300-996A, RRID:AB_805834), anti-U1-70K (Synaptic Systems, 203011, RRID:AB_887903), anti-SF3B145 (Bethyl, A301-606A, RRID:AB_1078828), anti-U2B'' (American Research Products, 4G3, 03\u201357035), anti-Brr2 (Bethyl, A303-453A, RRID:AB_10949362), anti-Snu114 (Bethyl, A300-957A, RRID:AB_805780), anti-rabbit-680 (LI-COR, 926\u201368021, RRID:AB_10706309), and anti-mouse-800 (LI-COR, 926\u201332212, RRID:AB_621847) were used according to manufacturer\u2019s recommendations.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/37751/elife-37751-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Fluorescence and Coomassie images of SDS-PAGE gel lanes show specific dye labeling of tagged spliceosomal components in nuclear extracts. Indicated migration position of unreacted dye was determined using control untagged nuclear extract spiked with the green-excited dye-benzylguanine adduct.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/37751/elife-37751-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Extracts were labeled at 200 nM, 1000 nM and 2000 nM benzylguanine-dye conjugate at 30\u00b0C for 1 hr. Fluorescence intensity in the region corresponding to each protein band is shown in the bar graph (N\u00a0=\u00a01) normalized to the fluorescence intensity at saturation (2000 nM). The fraction labeled of the tagged protein at 200 nM is estimated as ratio of labeled tagged protein at 200 nM and labeled tagged protein at saturation (2000 nM) and given in the table as \u2018labeling efficiency\u2019. Labeled fraction of total protein (tagged plus untagged) was calculated as the product of labeling efficiency and fraction tagged (Figure 1\u2014figure supplement 1).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/37751/elife-37751-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** 2nd step splicing efficiency was calculated as in Figure 1 at 40 min reaction time (N\u00a0=\u00a01). Protein concentration was determined using Bradford protein assay using bovine serum albumin as a standard (N\u00a0=\u00a01).\n\nTo enable single-molecule visualization of individual spliceosomal subcomplexes, we generated three HEK293 cell lines, each stably expressing C-terminally fSNAP-tagged U1-70K, U2B\u2019, or Snu114 at a level comparable to the endogenous protein (Figure 1\u2014figure supplement 1). Co-immunoprecipitation experiments confirmed efficient incorporation of the tagged protein into U1, U2, or U5 respectively (Figure 1\u2014figure supplement 2). Treatment of nuclear extracts with a green-excited dye-benzylguanine conjugate resulted in highly specific labeling of the fSNAP-tagged proteins (Figure 1\u2014figure supplement 3). Because spliceosomal subcomplex concentrations in human nuclear extracts exceed the low dye concentrations optimal for single-molecule fluorescence, we labeled the tagged proteins using a limiting dye concentration (200 nM). Under these conditions, 30%, 60%, and 50% of total (tagged plus untagged) U1-70K, U2B\u2019, and Snu114 were labeled, respectively (Figure 1\u2014figure supplement 4). Importantly, all tagged and dye-labeled extracts exhibited bulk splicing efficiencies comparable to extracts from the untagged parental cell line (Figure 1\u2014figure supplement 5).\n\n### Assembly of cross-intron and cross-exon pre-spliceosomes\n\nWe next used the labeled extracts in CoSMoS experiments in which we compared subcomplex dynamics on individual RNAs designed to promote assembly of cross-intron or cross-exon pre-spliceosomes (Figure 2A). The cross-intron RNA (5i3, Figure 2B) was identical to that in Figure 1 except that it contained a single red-excited dye adjacent to the biotin tether at the end of the 3' exon. An identically-labeled cross-exon RNA (3e5, Figure 2B) was constructed by swapping the 5' and 3' halves of 5i3. Thus, 5i3 and 3e5 consist of identical sequence segments, and differ only by whether the 5' and 3'SS are separated by an intron (i) or an exon (e). Simultaneous presence of the two RNA species at distinct, known locations on the slide surface allowed us to compare their behavior under identical experimental conditions within a single reaction chamber (Figure 2C). After introducing extract containing dye-labeled U1, we monitored the binding and dissociation of labeled U1 to individual RNA molecules and to control locations that had no RNA (e.g., Figure 2D). Similar experiments were performed using U2- and U5-labeled extracts.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/37751/elife-37751-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of a CoSMoS experiment in which green dye-labeled U1 is observed binding to red dye-labeled, surface-tethered RNAs. Introns and exons are schematized as blue and magenta lines and rectangles, respectively, with A indicating the branchpoint. Dyes (stars) linked to tethered RNAs were visualized using total internal reflection fluorescence microscopy using alternating red and green laser excitation (arrows); dye-labeled molecules in solution are not detectable. (B) Schematic of 5i3 and 3e5 RNAs, with features indicated as in (A). See Table 1 for RNA sequences. (C) Protocol: 5i3 (blue) and 3e5 (magenta) RNAs were sequentially deposited and located (squares) under red laser excitation. Non-overlapping control \u2018no RNA\u2019 locations (gray) were selected. Then, extract was introduced and spliceosomal subcomplex (e.g., U1) binding to individual RNA molecules was visualized under green laser excitation. Images (grayscale) are a small portion (2.6 \u03bcm x 2.6 \u03bcm) of the microscope field of view recorded at each stage of the process. See Figure 2\u2014figure supplement 3 for complete field of view. (D) Time series images (1 s per frame; 1.3 \u03bcm x 1.3 \u03bcm) of U1 fluorescence from example surface locations containing a single 5i3 RNA (top), a single 3e5 RNA (middle) or no detected RNA (bottom). Images with fluorescence spots (highlighted) indicate U1 binding. See Figure 2\u2014figure supplement 4 for additional traces and detected events. (E) Rastergrams aggregating U1, U2, and U5 binding time courses from random samples of 50 individual 5i3 and 3e5 RNA molecules over 2,400 s. Each row in these plots contains data from a single RNA molecule; color indicates presence and white indicates absence of bound spliceosomal subcomplex. In each panel, RNA molecules are sorted by the time of first subcomplex binding (latest to earliest); the percentage (\u00b1s.e.) of N observed RNA molecules that exhibited subcomplex binding during the experiment is indicated. Rastergrams for \u2018no RNA\u2019 control locations are shown in Figure 2\u2014figure supplement 1. (F) Cumulative distributions of U1, U2, and U5 dwell times on N observed 5i3 and 3e5 RNAs or control \u2018no RNA\u2019 locations. Data show the mean frequency per RNA molecule (or per \u2018no RNA\u2019 location) of subcomplex binding events with durations greater than or equal to the indicated dwell time. All frequencies on RNAs are substantially higher than the non-specific binding seen at \u2018no RNA\u2019 locations (note logarithmic scale). (G) Total frequencies (\u00b1s.e.) per RNA molecule of RNA-specific subcomplex binding. These RNA-specific binding frequencies correspond to the RNA minus the no RNA vertical axis intercepts of the curves in (F); they represent the total rate of subcomplex-RNA binding throughout the 2,400 s experiment averaged over all observed RNA molecules. (H) Frequencies (\u00b1s.e.) per RNA molecule of the subsets of RNA-specific subcomplex binding events shorter or longer than 50 s. (I) Specific occupancy (\u00b1s.e.), corresponding to the fraction of RNA molecules bound by the indicated fluorescent subcomplex averaged over the duration of the experiment. Numbers of RNA molecules observed in (G\u2013I) are the same as those reported in (F). The specific occupancy values are calculated as described (see Materials\u00a0and\u00a0methods) to correct for the small amount of binding observed at \u2018no RNA\u2019 locations. Source data for Figure 2: SourceDataFigure2.zip.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37751/elife-37751-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Data are from the experiments shown in Figure 2. The stated fraction (\u00b1s.e.) of the no RNA locations that exhibited subcomplex binding was calculated from the total sample of N no RNA locations reported in Figure 2F.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/37751/elife-37751-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Time points are 0, 10, 20, 30, and 40 min after nuclear extract addition.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/37751/elife-37751-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** RNA molecules were visualized under red laser excitation after both 5i3 and 3e5 molecules were tethered. The four brightest spots are fluorescent beads used as fiducial markers to correct for stage drift.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/37751/elife-37751-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** For each location both time records of fluorescence intensity (green) and image-analysis-based detection of a fluorescent spot (blue; colocalization or absence of colocalization; [Friedman and Gelles, 2015]) are shown.\n\nTo quantitatively characterize subcomplex binding to the surface tethered RNAs, we measured both the frequency of RNA-specific subcomplex binding events and the steady-state fractional occupancy RNA molecules by the subcomplex. U1 binding to 5i3 RNA was highly dynamic with many arrivals and departures per active RNA molecule (Figure 2E\u2013G) and a\u00a0high frequency of short (<50 s) binding events (Figure 2F and H). In comparison, progressively fewer 5i3 molecules bound U2 and U5 and the average occupancy of RNAs by these subcomplexes was also progressively lower (Figure 2F and I). Observed binding events were almost entirely RNA-specific; fewer and only short-duration binding events were observed at control \u2018no RNA\u2019 locations (Figure 2\u2014figure supplement 1). Overall, the kinetics of human spliceosomal subcomplex binding and dissociation on the cross-intron 5i3 substrate were similar to those observed in CoSMoS experiments on cross-intron RNAs in S. cerevisiae extracts (Hoskins et al., 2011; Shcherbakova et al., 2013).\n\nSpliceosomal subcomplex interactions with the cross-exon 3e5 RNA were quantitatively different from interactions with the cross-intron 5i3 RNA. 3e5 RNA molecules exhibited more frequent binding events (Figure 2F and G) and higher mean occupancy (Figure 2I) for all subcomplexes than 5i3 molecules. These differences might be partially explained by the inability of the cross-exon pre-mRNA to form a catalytically active spliceosome (Figure 2\u2014figure supplement 2), resulting in the greater accumulation of inactive spliceosome assembly intermediates at steady state. Consistent with this idea, U1, U2 and U5 exhibited a higher frequency of long-lived (>50 s) binding events on the splicing-inactive 3e5 RNA than on the spliceable cross-intron 5i3 RNA (Figure 2H). In addition, possible differences between 5i3 and 3e5 three-dimensional structures could also alter the kinetics of their interactions with snRNPs.\n\nWe next investigated the effects of SS consensus sequence mutations on U1 and U2 binding dynamics. We restricted alterations to short consensus subcomplex binding sequences to reduce the possibility of the mutations causing large-scale changes in the three-dimensional structures of the RNAs. Functional U2 association with pre-mRNA depends on a polypyrimidine tract and the 3'SS AG (Ruskin et al., 1988). As expected, multiple pyrimidine to purine substitutions within the polypyrimidine tract combined with a 3'SS AG to GG mutation (Figure 3A) greatly decreased the frequencies of RNA-specific U2 binding events, reducing binding to near-background levels (Figure 3\u2014figure supplement 1). U1 binding, however, was largely unaffected by these mutations, with U1 specific association frequencies and dwell time distributions on 5iX and Xe5 RNAs indistinguishable from those on 5i3 and 3e5, respectively (Figure 3B and Figure 3\u2014figure supplement 2). Thus, consistent with previous cross-intron data in yeast (S\u00e9raphin and Rosbash, 1991), human U1 binding is independent of U2 binding in both cross-intron and cross-exon contexts.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/37751/elife-37751-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematics of 5i3 and 3e5 RNAs without or with polypyrimidine tract and 3'SS mutations (X). See Table 1 for RNA sequences. (B) Dynamics of dye labeled U1 binding to the RNAs depicted in (A), in a CoSMoS experiment in which all four RNAs were simultaneously present. Cumulative dwell time distributions and frequencies of RNA-specific binding were measured and plotted as in Figure 2F and G. For clarity, pairs of distributions are plotted in separate left and right panels and the no RNA data from the experiment is shown in both. Corresponding rastergrams are shown in Figure 3\u2014figure supplement 2. (C) Schematics of 5i3 and 3e5 RNAs without or with 5'SS mutations (X). (D) Dynamics of dye-labeled U2 binding in two separate CoSMoS experiments, one with 5i3 and Xi3 RNAs (left) and one with 3e5 and 3eX (right). Corresponding rastergrams are shown in Figure 3\u2014figure supplement 4. Dependence of U1 binding on 5'SS mutations and dependence of U2 binding on polypyrimidine tract and 3'SS mutations are shown in Figure 3\u2014figure supplement 1 and Figure 3\u2014figure supplement 3 respectively. Source data for the single-molecule experiments in Figure 3, Figure 3\u2014figure supplement 1, Figure 3\u2014figure supplement 3, Figure 3\u2014figure supplement 5, and Figure 3\u2014figure supplement 6: SourceDataFigure3.zip, SourceDataFigure3S1.zip, SourceDataFigure3S3.zip, SourceDataFigure3S5.zip, and SourceDataFigure3S6.zip.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37751/elife-37751-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Rastergrams showing U2 binding data on 50 randomly selected individual 5i3 and 5iX pre-mRNA molecules and 'no RNA' control locations over the course of 2,400 s, sorted by the time of the first binding event to each RNA. The percentage (\u00b1s.e.) of N observed RNA molecules that exhibited subcomplex binding during the experiment is indicated. (B) Cumulative dwell time distributions of U2 binding events on wild-type 5i3 and mutated 5iX cross-intron RNAs, and at randomly selected locations with no RNA. (C) Frequencies (\u00b1s.e.) of RNA-specific U2 binding to 5i3 and 5iX RNAs calculated as in Figure 2G. (D\u2013F) Same as (A\u2013C), except for the 3e5 and Xe5 RNAs. Data in all three panels are from the same experiment.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/37751/elife-37751-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Data are from the experiment in Figure 3B. The percentage (\u00b1s.e.) of N observed RNA molecules (see Figure 3B) that exhibited subcomplex binding during the experiment is indicated.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/37751/elife-37751-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Rastergrams showing U1 binding data on 50 randomly selected individual 5i3 and Xi3 pre-mRNA molecules and control no RNA locations from the same experiment, sorted by the time of the first binding event at each RNA or no RNA location. The percentage (\u00b1s.e.) of N observed RNA molecules that exhibited subcomplex binding during the experiment is indicated. (B) Cumulative dwell time distributions of U1 binding events on wild-type 5i3 and mutated Xi3 cross-intron RNAs. (C) Frequency (\u00b1s.e.) of RNA-specific U1 binding to 5i3 and Xi3 RNAs calculated as in Figure 2G. Data in panels A, B, and C are all from the same experiment. (D\u2013F) Same as (A\u2013C), except for the 3e5 and 3eX RNAs. Data in all three panels are from the same experiment.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/37751/elife-37751-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** The percentage (\u00b1s.e.) of N observed RNA molecules (see Figure 3D) that exhibited subcomplex binding during the experiment is indicated. Data for the left and right halves of the figure are taken from the same experiments as the left and right halves of Figure 3D.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/37751/elife-37751-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (A) Rastergrams showing U5 binding to 50 randomly selected individual 5i3 and Xi3 pre-mRNA molecules and to 'no RNA' control locations over the course of 2,400 s, sorted by the time of the first binding event to each RNA. The percentage (\u00b1s.e.) of N observed RNA molecules that exhibited subcomplex binding during the experiment is indicated. (B) Cumulative dwell time distributions of U2 binding events on wild-type 5i3 and mutated Xi3 cross-intron RNAs, and at randomly selected locations with no RNA. (C) Frequencies (\u00b1s.e.) of RNA-specific U5 binding to 5i3 and Xi3 RNAs calculated as in Figure 2G.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/37751/elife-37751-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** (A) Bulk splicing assay (as in Figure 1A) shows specific inhibition of 5i3 pre-mRNA splicing upon addition of anti-U1 AMO at 10 \u00b5M final concentration as previously reported (Kaida et al., 2010). A non-complementary control AMO of the same length showed minimal inhibition (Kaida et al., 2010). (B) Single molecule observations of U2 binding to RNAs in extract preincubated with 10 \u00b5M control AMO. Rastergrams show U2 binding to 50 randomly selected individual 5i3 and 3e5 pre-mRNA molecules and control no RNA locations from the same experiment, sorted by the time of the first binding event at each RNA or no RNA location. The percentage (\u00b1s.e.) of N observed RNA molecules that exhibited subcomplex binding during the experiment is indicated. (C) Cumulative dwell time distributions of all U2 binding events from the experiment excerpted in (B). (D,E) Same as (B,C), except that the extract was preincubated with 10 \u00b5M anti-U1 AMO. (F) Frequency (\u00b1s.e.) of RNA-specific U2 binding in the presence of control and anti-U1 AMO to 5i3 (left) and 3e5 (right) calculated from data in (B\u2013E) as in Figure 2G.\n\n**Table 1.**\n RNAs.5 N-U, 5-aminoallyluridine. U-DY547, Dylight\u00a0547 dye conjugated to C5 of U through a six-carbon linker. Small letters indicate mutated bases in the mutant sequence variants. The cryptic 5'SS in Xi3e5 (see Figure 4B) is underlined.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>RNA name</th>\n      <th>RNA sequence (5' to 3')</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>5i3 (cross-intron, PIP85A)</td>\n      <td>GGGCGAAUUCGAGCUCACUCUCUUCCGCAUCGCUGUCUGCG AGGUACCCUACCAGGUGAGUAUGGAUCCCUCUAAAAGCGGG CAUGACUUCUAGAGUAGUCCAGGGUUUCCGAGGGUUUCCG UCGACGAUGUCAGCUCGUCUCGAGGGCGUACUAACUGGGC CCCUUCUUCUUUUUCCCUCAGGUCCUACACAACAUACUGCA GGACAAACUCUUCGCGGUCUCUGCAUGCAA</td>\n    </tr>\n    <tr>\n      <td>Xi3 (cross-intron, 5'SS mutant)</td>\n      <td>GGGCGAAUUCGAGCUCACUCUCUUCCGCAUCGCUGUCUGCG AGGUACCCUACCccccGAGUAUGGAUCCCUCUAAAAGCGGGCA UGACUUCUAGAGUAGUCCAGGGUUUCCGAGGGUUUCCGUCG ACGAUGUCAGCUCGUCUCGAGGGCGUACUAACUGGGCCCCUU CUUCUUUUUCCCUCAGGUCCUACACAACAUACUGCAGGACAA ACUCUUCGCGGUCUCUGCAUGCAA</td>\n    </tr>\n    <tr>\n      <td>5iX (cross-intron, polypyrimidine tract and 3'SS mutant)</td>\n      <td>GGGCGAAUUCGAGCUCACUCUCUUCCGCAUCGCUGUCUGCGA GGUACCCUACCAGGUGAGUAUGGAUCCCUCUAAAAGCGGGCAU GACUUCUAGAGUAGUCCAGGGUUUCCGAGGGUUUCCGUCGAC GAUGUCAGCUCGUCUCGAGGGCGUACUAACUGGGCCgCUaCaU gaUaUaCgCaCGGGUCCUACACAACAUACUGCAGGACAAACUCU UCGCGGUCUCUGCAUGCAA</td>\n    </tr>\n    <tr>\n      <td>3e5 (cross-exon)</td>\n      <td>GGGCGAAUUCGUCGACGAUGUCAGCUCGUCUCGAGGGCGUAC UAACUGGGCCCCUUCUUCUUUUUCCCUCAGGUCCUACACAAC AUACUGCAGGACAAACUCUUCGCGGUCUCUGCAUGCGAGCUC ACUCUCUUCCGCAUCGCUGUCUGCGAGGUACCCUACCAGGU GAGUAUGGAUCCCUCUAAAAGCGGGCAUGACUUCUAGAGUAG UCCAGGGUUUCCGAGGGUUUCCAA</td>\n    </tr>\n    <tr>\n      <td>3eX (cross-exon, 5'SS mutant)</td>\n      <td>GGGCGAAUUCGUCGACGAUGUCAGCUCGUCUCGAGGGCGUA CUAACUGGGCCCCUUCUUCUUUUUCCCUCAGGUCCUACACA ACAUACUGCAGGACAAACUCUUCGCGGUCUCUGCAUGCGAG CUCACUCUCUUCCGCAUCGCUGUCUGCGAGGUACCCUACCc cccGAGUAUGGAUCCCUCUAAAAGCGGGCAUGACUUCUAGAG UAGUCCAGGGUUUCCGAGGGUUUCCAA</td>\n    </tr>\n    <tr>\n      <td>Xe5 (cross-exon, polypyrimidine tract and 3'SS mutant)</td>\n      <td>GGGCGAAUUCGUCGACGAUGUCAGCUCGUCUCGAGGGCGU ACUAACUGGGCCgCUaCaUgaUaUaCgCaCgGGUCCUACACA ACAUACUGCAGGACAAACUCUUCGCGGUCUCUGCAUGCGA GCUCACUCUCUUCCGCAUCGCUGUCUGCGAGGUACCCUAC CAGGUGAGUAUGGAUCCCUCUAAAAGCGGGCAUGACUUCU AGAGUAGUCCAGGGUUUCCGAGGGUUUCCAA</td>\n    </tr>\n    <tr>\n      <td>5i3e5</td>\n      <td>GGGCGAAUUCGAGCUCACUCUCUUCCGCAUCGCUGUCUGC GAGGUACCCUACCAGGUGAGUAUGGAUCCCUCUAAAAGCGG GCAUGACUUCUAGAGUAGUCCAGGGUUUCCGAGGGUUUCC GUCGACGAUGUCAGCUCGUCUCGAGGGCGUACUAACUGGG CCCCUUCUUCUUUUUCCCUCAGGUCCUACACAACAUACUG CAGGACAAACUCUUCGCGGUCUCUGCAUGCGAGCUCACUC UCUUCCGCAUCGCUGUCUGCGAGGUACCCUACCAGGUGA GUAUGGAUCCCUCUAAAAGCGGGCAUGACUUCUAGAGUA GUCCAGGGUUUCCGAGGGUUUCCGACAAUUGCAUGAA</td>\n    </tr>\n    <tr>\n      <td>5i3eX</td>\n      <td>GGGCGAAUUCGAGCUCACUCUCUUCCGCAUCGCUGUCUG CGAGGUACCCUACCAGGUGAGUAUGGAUCCCUCUAAAAGC GGGCAUGACUUCUAGAGUAGUCCAGGGUUUCCGAGGGUU UCCGUCGACGAUGUCAGCUCGUCUCGAGGGCGUACUAAC UGGGCCCCUUCUUCUUUUUCCCUCAGGUCCUACACAACA UACUGCAGGACAAACUCUUCGCGGUCUCUGCAUGCGAGC UCACUCUCUUCCGCAUCGCUGUCUGCGAGGUACCCUACC ccccGAGUAUGGAUCCCUCUAAAAGCGGGCAUGACUUCUA GAGUAGUCCAGGGUUUCCGAGGGUUUCCGACAAUUGCAUGAA</td>\n    </tr>\n    <tr>\n      <td>Xi3e5</td>\n      <td>GGGCGAAUUCGAGCUCACUCUCUUCCGCAUCGCUGUCU GCGAGGUACCCUACCccccGAGUAUGGAUCCCUCUAAAAG CGGGCAUGACUUCUAGAGUAGUCCAGGGUUUCCGAGGG UUUCCGUCGACGAUGUCAGCUCGUCUCGAGGGCGUACU AACUGGGCCCCUUCUUCUUUUUCCCUCAGGUCCUACAC AACAUACUGCAGGACAAACUCUUCGCGGUCUCUGCAUG CGAGCUCACUCUCUUCCGCAUCGCUGUCUGCGAGGUAC CCUACCAGGUGAGUAUGGAUCCCUCUAAAAGCGGGCAU GACUUCUAGAGUAGUCCAGGGUUUCCGAGGGUUUCCG ACAAUUGCAUGAA</td>\n    </tr>\n    <tr>\n      <td>Xi3eX</td>\n      <td>GGGCGAAUUCGAGCUCACUCUCUUCCGCAUCGCUGUC UGCGAGGUACCCUACCccccGAGUAUGGAUCCCUCUAA AAGCGGGCAUGACUUCUAGAGUAGUCCAGGGUUUCCG AGGGUUUCCGUCGACGAUGUCAGCUCGUCUCGAGGGC GUACUAACUGGGCCCCUUCUUCUUUUUCCCUCAGGUC CUACACAACAUACUGCAGGACAAACUCUUCGCGGUCUC UGCAUGCGAGCUCACUCUCUUCCGCAUCGCUGUCUGC GAGGUACCCUACCccccGAGUAUGGAUCCCUCUAAAAGC GGGCAUGACUUCUAGAGUAGUCCAGGGUUUCCGAGGG UUUCCGACAAUUGCAUGAA</td>\n    </tr>\n    <tr>\n      <td>S1</td>\n      <td>GGGCGAAUUCGAGCUCACUCUCUUCCGCAUCGCUGUCUG</td>\n    </tr>\n    <tr>\n      <td>S2</td>\n      <td>CGAGGUACC(U-DY547)UACCAGGUGA</td>\n    </tr>\n    <tr>\n      <td>S3</td>\n      <td>GUAUGGAUCCCUC(5 N-U)AAAAGCGGGCA(5 N-U)GACU UCUAGAG(5 N-U)AGUCCAGGGUUUCCGA</td>\n    </tr>\n    <tr>\n      <td>S4</td>\n      <td>GGGUUUCCGUCGACGAUGUCAGCUCGUCUCGAGGGCGU ACUAACUGGGCCCCUUCUUCUUUUUCCCUCAGGUCCUA CACAACAUACUGCAGGACAAACUCUUCGCGGUCUCUGCAUGCAA</td>\n    </tr>\n  </tbody>\n</table>\n\nFunctional U1 association is blocked by mutation of the 5'SS consensus from AG/GU to CCCC (Roca et al., 2013). As expected, this mutation (Figure 3C) decreased the U1 association rate and eliminated RNA-specific long-duration (>60 s) U1 binding events in\u00a0both cross-intron and cross-exon contexts (Figure 3\u2014figure supplement 3). Thus long-duration U1 binding events reflect its association with the canonical 5'SS, as reported previously in S. cerevisiae extract (Larson and Hoskins, 2017). In contrast, short duration U1 binding events are still present (although reduced in frequency) after 5'SS mutation and may reflect sequence non-specific interactions with the RNA.\n\nSurprisingly, the 5'SS mutations affected U2 binding even more strongly than U1 binding. In both the cross-intron and cross-exon contexts, elimination of the canonical 5'SS decreased U2 binding frequency to background within experimental uncertainty (Figure 3D and Figure 3\u2014figure supplement 4). Absence of U5 binding to these RNAs (Figure 3\u2014figure supplement 5) confirmed that the mutations abolished the formation of functional pre-spliceosomes. These observations could indicate that observable U2 binding requires the U1 binding to a 5'SS positioned either cross-exon or cross-intron. Alternatively the results could also be explained if the 5'SS mutation indirectly affects U2 binding by affecting the pre-mRNA secondary structure. To exclude the latter possibility, we demonstrated U2 binding to the 5i3 and 3e5 was also eliminated in experiments (Figure 3\u2014figure supplement 6) in which U1 interaction with the 5'SS was blocked by the addition of a\u00a0morpholino oligonucleotide antisense to the U1 snRNA (Kaida et al., 2010). We conclude that U2 binding to the 3'SS is strongly dependent on U1 binding to a 5'SS either upstream (cross-intron) or downstream (cross-exon). This suggests an ordered human pre-spliceosome assembly pathway in which stable U2 association in the presence of ATP requires prior U1 binding, in contrast to the branched pathway observed in S. cerevisiae (Shcherbakova et al., 2013).\n\n### Synergistic effects of cross-intron and cross-exon 5'SS on pre-spliceosome assembly\n\nIn multi-intron pre-mRNAs, internal exons have 5'SS both upstream and downstream, either or both of which could bind U1 and act to recruit U2 to the 3'SS. In principle, the two U1s could act either independently or synergistically. If there is only one means by which U1 can recruit U2 (e.g., via binding to a single site on U2), the combined effect of two U1s on U2 binding would be at most the sum of their individual actions (Herschlag and Johnson, 1993). Such is the case for the activities of multiple SR proteins on splicing efficiency (Graveley et al., 1998). In contrast, if the upstream and downstream U1s can interact with U2 simultaneously, or if they accelerate different steps in the overall U2 recruitment process, their combined effect could be larger, that\u00a0is, synergistic. Such synergy was previously observed between two distinct sequence elements within a regulated splicing enhancer (Lynch and Maniatis, 1995).\n\nTo determine whether the upstream and downstream 5'SS independently or synergistically promote U2 binding, we constructed a pre-mRNA with 5'SS both upstream and downstream of the 3'SS (5i3e5, Figure 4A) as well as RNAs with mutations in either one 5'SS (Xi3e5 and 5i3eX) or both (Xi3eX). In these constructs, the sequences flanking both 5'SS were identical, minimizing potential sequence context effects. Consistent with the concept of exon definition (Talerico and Berget, 1990), splicing of 5i3e5 was 5-fold more efficient than 5i3eX in ensemble splicing reactions (Figure 4B). In fact, the effect of adding the downstream 5'SS was strong enough to activate an otherwise dormant cryptic 5'SS in the Xi3e5 construct. As expected, no splicing was observed on Xi3eX RNA.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/37751/elife-37751-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic of 5i3e5 RNAs without or with 5'SS mutations (X). Black brackets indicate two regions (113 nts) of identical sequence. (B) Ensemble splicing time courses of 32P-labeled RNA. Second step splicing efficiencies (\u00b1s.d.) were calculated as fraction of 5i3e5, 5i3eX, Xi3e5 and Xi3eX starting material at time zero. Arrow indicates 5' exon resulting from usage of a cryptic 5'SS 12 nts upstream of the canonical 5'SS in Xi3e5. (C) Cumulative dwell time distributions, RNA-specific binding frequencies (\u00b1s.e.) and time-averaged fractional occupancies (\u00b1s.e.) of\u00a0U2 binding to 5i3e5, 5i3eX, Xi3e5 and Xi3eX RNAs measured in the same experiment. Corresponding rastergrams are shown in Figure 4\u2014figure supplement 1. Analysis of time of first U2 binding event distributions is shown in Figure 4\u2014figure supplement 2. Source data for the single-molecule experiments in Figure 4: SourceDataFigure4.zip.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37751/elife-37751-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The percentage (\u00b1s.e.) of N (see Figure 4C) observed RNA molecules or no RNA locations that exhibited subcomplex binding during the experiment is indicated.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/37751/elife-37751-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Data include measurements on 5i3e5, 5i3eX, Xi3e5, and Xi3eX RNA molecules and no RNA control locations, all from the experiment in Figure 4C. For all four RNAs, data were consistent with a quantitative model (cyan fit lines; see [Friedman and Gelles, 2015]) that assumes a single rate-limiting step for U2 binding (with the indicated values for the apparent first-order association rate constant) to only a subpopulation (the \u2018active fraction\u2019) of the RNA molecules. The active fraction was determined from the fit to the 5i3e5 data and was held fixed at the indicated values (asterisks) for the other fits.\n\nWe next performed single-molecule observations of U2 binding to these same four RNAs, all tethered and observed in a single reaction chamber to facilitate their direct comparison. Consistent with the observation that U2 binding in the cross-intron and cross-exon contexts depends on a 5'SS (Figure 3C and D), no U2 binding above background levels was observed for the RNA with no 5'SS (Xi3eX) (Figure 4C and Figure 4\u2014figure supplement 1). Additionally, the shapes of the U2 dwell time distributions on 5i3eX and Xi3e5 (Figure 4C) were similar to those of the shorter 5i3 cross-intron and 3e5 cross-exon constructs (Figure 2F). Thus, the 5'SS dependence of U2 binding seen with the longer RNAs was qualitatively similar to that observed on the previously characterized shorter RNAs.\n\nStriking differences were apparent, however, when we compared the single 5'SS RNAs (Xi3e5 and 5i3eX) to the double 5'SS RNA (5i3e5) (Figure 4C and Figure 4\u2014figure supplement 1). The presence of flanking 5'SS both\u00a0upstream and downstream of the 3'SS dramatically increased U2 recruitment, with the RNA-specific U2 binding event frequency being more than 2.5 times the sum of the frequencies observed when either the upstream or downstream 5'SS was present alone. A similar effect was seen in the U2 occupancy measurements (Figure 4C), although the occupancy data is more difficult to interpret due to splicing via the cryptic splice site in Xi3e5. A much greater than additive effect was also seen when we compared the distributions of the time to the first U2 binding observed on each RNA (Figure 4\u2014figure supplement 2), a metric that is comparatively immune to artefacts from spot detection dropouts (Friedman and Gelles, 2015). Taken together, these data indicate that the upstream and downstream 5'SS act synergistically to accelerate the rate of stable U2 recruitment to the 3'SS.\n\n## Discussion\n\nHere we establish methods for observing the dynamics of spliceosomal subcomplexes on and the splicing of individual pre-mRNA molecules in human cell extract. The experiments reveal that the dynamics of U1 binding to the 5'SS are largely unaffected by the presence of U2 binding sites positioned either downstream (cross-exon) or upstream (cross-intron) of the 5'SS. In contrast, stable U2 binding to the 3'SS is accelerated by a 5'SS situated across either the adjacent intron or adjacent exon. Strikingly, when functional 5'SS are present together at both cross-intron and cross-exon locations, they synergistically promote U2 recruitment.\n\nThe more than additive effect of the flanking 5'SS indicates that U1 employs different molecular mechanisms/interactions across introns and across exons to accelerate U2 recruitment. A simple model that would explain this observed synergy of cross-exon and cross-intron 5'SS on U2 recruitment rate is that cross-exon U1 binding assists in recruiting the splicing factors that form a platform for U2 binding to the upstream 3'SS region, whereas the cross-intron U1-U2 interaction favors a U2 conformation capable of productive branch site engagement (Figure 5, left). Across exons, U1 is known to recruit U2AF (U2 auxiliary factor), which recognizes the polypyrimidine tract and 3'SS AG, and physically interacts with other proteins (e.g., SF1, p14, SF3B and SR proteins) required for stable U2 binding (Black, 2003). Across introns, U1 and U2 can interact via the DEAD-box protein Prp5, the ATPase activity of which promotes a structural change in U2 that makes the branch site recognition sequence more solvent accessible (Abu Dayyeh et al., 2002; O'Day et al., 1996; Xu et al., 2004). A different and not necessarily mutually exclusive model is that cross-exon and cross-intron U1 interactions could both help form the binding platform for U2, but by interacting with different proteins (e.g., the upstream U1 stabilizes SF1 and the downstream U1 stabilizes U2AF) (Black, 2003). This arrangement would increase the likelihood of U2 encountering a fully assembled binding platform when in a conformation capable of stable branch site engagement (Figure 5, right). Other mechanisms for synergy, such as those mediated by effects on RNA secondary structure, are also possible.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/37751/elife-37751-fig5-v2.jpg)\n\n**Figure 5.:** The cartoon illustrates how differing modes of U1 action from upstream (cross-intron) and downstream (cross-exon) sites can synergize to promote faster U2 binding when both flanking U1 sites are present. Double-headed arrows denote physical interactions in which one component may accelerate association or slow dissociation of another.\n\nModels of the type presented in Figure 5 assume that once a functional U1-U2 pre-spliceosome forms across the intron, interactions with U1 bound to the downstream 5'SS provide no additional U2 binding stabilization or stimulation of subsequent steps of spliceosome assembly (Figure 5, bottom). Such models predict that the presence of a downstream U1 will not affect the lifetimes of stable U2 complexes once formed. The data in Figure 4C are consistent with this prediction: both the overall shape of dwell time distributions and the ratios of binding frequency to occupancy are similar for the RNAs with (5i3e5: 1.0\u00a0\u00b1\u00a00.2 s\u22121) or without (5i3eX: 1.3\u00a0\u00b1\u00a00.9 s\u22121) the downstream site. Taken together, our data suggest that the synergistic stimulatory effect of the downstream 5'SS on splicing is exerted at the U2 recruitment step and the processes that enable it, not at the subsequent steps of spliceosome assembly and splicing.\n\nInappropriate skipping of otherwise constitutive internal exons can occur with exceptionally low frequency (~1 in 105 splicing events) (Fox-Walsh and Hertel, 2009). But the molecular mechanisms contributing to this remarkable accuracy were previously unclear. By implementing CoSMoS in extracts from human cells expressing genetically-tagged proteins, we here show that a major contributor to exon inclusion is collaboration between flanking 5'SS. This collaboration dramatically increases the rate of stable U2 recruitment during pre-spliceosome formation. Cross-intron and cross-exon 5'SS synergy on U2 recruitment rate explains how U1 can have such a strong effect on U2 recruitment despite its association with pre-mRNA being much more dynamic than U2. This mechanism is likely crucial for rapid definition of internal exons in multi-intron RNAs, enabling the human splicing machinery to avoid inappropriate exon skipping.\n\n## Materials and methods\n\n### Nuclear extract preparation\n\nStable HEK293 Tet-On Flp-In cell lines were generated to express fSNAP fusions of U1-70K, U2B'', and Snu114 at near endogenous levels as previously described (Singh et al., 2012). Stable HEK293 Tet-On Flp-In cell lines were generated from the Flp-In T-REx\u2212293 Cell Line (Invitrogen, R78007). The cells were purchased from Invitrogen and their resistance to Zeocin and their Flp-In competence were confirmed. No further authentication or mycoplasma contamination testing were performed. Plasmid pcDNA5-FRT-TetO-fSNAPc was generated by amplifying the open reading frame of fSNAP using PCR primers fSNAP-F and fSNAP-R (Table 2) and inserting into pcDNA5-FRT-TetO (Invitrogen) using the HindIII and XhoI restriction sites. Plasmids containing spliceosomal subcomplex protein-fSNAP fusions (Table 3) were generated by PCR amplification from HEK293 cDNA for U1-70K and U2B'', and from Kazusa DNA Research Institute cDNA clone ORK00375 (Nomura et al., 1994) for Snu114 using the specified primers (Table 2) and cloning the products into pcDNA5-TetO-fSNAPc using the KpnI and NotI restriction sites. Expression levels of the fSNAP fusion proteins were adjusted to endogenous level by inducing the U1-70K-fSNAP, U2B''-fSNAP, and Snu114-fSNAP Flp-In cell lines with 6 ng/ml, 3 ng/ml, and 3 ng/ml Doxycycline (BD Biosciences, 631311), respectively. Parental cells were not induced. Nuclear extracts were prepared as previously described (Lee et al., 1988). In brief, HEK293 cells were grown at 37\u00b0C 5% CO2 in DMEM medium supplemented with 10% FBS. Cells from 10 confluent 15 cm dishes were harvested and washed with ice cold PBS. Cells (900 \u00b5l) were resuspended in 900 \u00b5l Buffer A [10 mM Tris, 1.5 mM MgCl2, 10 mM KCl and 0.5 mM DTT, pH 7.9 at 4\u00b0C, supplemented with complete protease inhibitor cocktail (Roche, 04693159001)], transferred to a 2 ml Eppendorf tube, incubated for on ice 15 min and then disrupted by 10 passages through a 25 gauge needle. After centrifuging the lysate for 20 s at 12,000 \u00d7 g, the nuclear pellet was resuspended in 450 \u00b5l Buffer C [20 mM Tris, 25% (v/v) glycerol, 0.42 M NaCl, 1.5 mM MgCl2, 0.2 mM EDTA and 0.5 mM DTT, pH 7.9 at 4\u00b0C, supplemented with complete protease inhibitor cocktail (Roche, 04693159001)] and rapidly stirred in a 2 ml round-bottom microcentrifuge tube with a 12.7 \u00d7 3 mm stir bar for 30 min. After clarifying the lysate by centrifuging for 10 min at 12,000 \u00d7 g, the SNAP-Surface 549 dye-benzylguanine conjugate (New England BioLabs, S9112S) was added to the supernatant at a final concentration of 200 nM and incubated for 30 min at 30\u00b0C. After labeling, the supernatant was dialyzed 2 times for 2 hr each against Buffer E (20 mM Tris, 20% (v/v) glycerol, 0.1 M KCl, 0.2 mM EDTA and 0.5 mM DTT, pH 7.9 at 4\u00b0C). The dialysate (1 ml) was spun again for 10 min at 16,000 \u00d7 g and frozen in liquid nitrogen. Typical total protein concentration was 8.5 mg/ml. For negative control experiments, extracts were depleted of ATP using Centri-sep spin columns (Princeton Separations, CS-901) (Anderson and Moore, 2000). A single preparation of each of the three extracts was used in all reported experiments.\n\n**Table 3.**\n Plasmids.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Plasmid name</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>pcDNA5-FRT-TetO</td>\n      <td>Singh et al. (2012)</td>\n    </tr>\n    <tr>\n      <td>pcDNA5-FRT-TetO-fSNAPc</td>\n      <td>open reading frame of fSNAP inserted into pcDNA5-FRT-TetO using the HindIII and XhoI restriction sites</td>\n    </tr>\n    <tr>\n      <td>pcDNA5-FRT-TetO-U1-70K-fSNAPc</td>\n      <td>open reading frame of U1-70K inserted into pcDNA5-FRT-TetO-fSNAPc using the KpnI and NotI restriction sites</td>\n    </tr>\n    <tr>\n      <td>pcDNA5-FRT-TetO-U2B''-fSNAPc</td>\n      <td>open reading frame of U2B'' inserted into pcDNA5-FRT-TetO-fSNAPc using the KpnI and NotI restriction sites</td>\n    </tr>\n    <tr>\n      <td>pcDNA5-FRT-TetO-Snu114-fSNAPc</td>\n      <td>open reading frame of Snu114 inserted into pcDNA5-FRT-TetO-fSNAPc using the KpnI and NotI restriction sites</td>\n    </tr>\n    <tr>\n      <td>PIP85.A (=T7-5i3)</td>\n      <td>Moore and Sharp (1992), T7 transcription template for 5i3</td>\n    </tr>\n    <tr>\n      <td>T7-3e5</td>\n      <td>T7 transcription template for 3e5</td>\n    </tr>\n    <tr>\n      <td>T7-5iX</td>\n      <td>T7 transcription template for 5iX</td>\n    </tr>\n    <tr>\n      <td>T7-Xi3</td>\n      <td>T7 transcription template for Xi3</td>\n    </tr>\n    <tr>\n      <td>T7-3eX</td>\n      <td>T7 transcription template for 3eX</td>\n    </tr>\n    <tr>\n      <td>T7-Xe5</td>\n      <td>T7 transcription template for Xe5</td>\n    </tr>\n    <tr>\n      <td>T7-5i3e5</td>\n      <td>T7 transcription template for 5i3e5</td>\n    </tr>\n    <tr>\n      <td>T7-5i3eX</td>\n      <td>T7 transcription template for 5i3eX</td>\n    </tr>\n    <tr>\n      <td>T7-Xi3e5</td>\n      <td>T7 transcription template for Xi3e5</td>\n    </tr>\n    <tr>\n      <td>T7-Xi3eX</td>\n      <td>T7 transcription template for Xi3eX</td>\n    </tr>\n  </tbody>\n</table>\n\n### RNA preparation\n\nRadioactively labeled pre-mRNA substrate PIP85A (Table 1) was synthesized by in vitro transcription as previously described with a m7G(5')ppp(5')G 5' cap and [\u03b1-32P]UTP (Moore and Sharp, 1992).\n\nTwo color pre-mRNAs carrying a 3' biotin (Figure 1C) were prepared by splinted ligation as previously described (Crawford et al., 2013; Shcherbakova et al., 2013) using DNA oligonucleotides and RNA segments listed in Tables 1 and 2. Specifically, RNA segments S1 (with a m7G(5')ppp(5')G 5' cap) and S4 were produced in vitro by transcription by T7 RNA polymerase of templates generated by PCR from the plasmid PIP85A using the PCR primers S1-T7-F and S1-R or S4-T7-F and S4-R respectively. S2 and S3 were purchased from Dharmacon. Prior to the ligation 5' ends of S2, S3 and S4 were phosphorylated and S3 was labeled with AlexaFluor 647 NHS ester (Thermo Scientific, A20006) as previously described (Crawford et al., 2013; Shcherbakova et al., 2013). For the final splinted ligation S1, S2, S3, S4 RNA segments and the ligation splint oligonucleotide were annealed. The ligation resulted in an RNA where the 5' exon was labeled with a single green-excited dye (DY547) at position \u22127 relative to the 5'SS, the intron was labeled with on average two red-excited dyes (AlexaFluor 647) at positions 18,\u00a030 and/or 42 relative to the 5'SS, and a single biotin was added to the 3' end by Klenow extension with biotin-dCTP (Trilink Bio Technologies Inc, N5002) (Braun and Serebrov, 2017; Shcherbakova et al., 2013).\n\n**Table 2.**\n Oligonucleotides\u00a0and\u00a0antisense morpholino oligonucleotides\u00a0(AMO).m, 2'-O-methyl ribonucleotide; 3ddN, 3' dideoxy nucleotide.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Oligonucleotide name</th>\n      <th>Oligonucleotide sequence (5' to 3')</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>fSNAP-F</td>\n      <td>AGAGATAAGCTTTCCAGCGGTACCGAGCTCGGATC CAGCGGACCTAGGGAAACCTGCGGCCGCGGCTCCG GAGGCTCCGGCGGGAGCGGCATGGACAAAGACTGCGAAATG</td>\n    </tr>\n    <tr>\n      <td>fSNAP-R</td>\n      <td>ACAGATCTCGAGCTAACCCAGCCCAGGCTTGCCCAGTC</td>\n    </tr>\n    <tr>\n      <td>U1-70K-F</td>\n      <td>AGAGATGGTACCATGACCCAGTTCCTGCCGCCCAAC</td>\n    </tr>\n    <tr>\n      <td>U1-70K-R</td>\n      <td>ACAGATGCGGCCGCACTCCGGCGCAGCCTCCATC</td>\n    </tr>\n    <tr>\n      <td>U2B\u2019-F</td>\n      <td>AGAGATGGTACCATGGATATCAGACCAAATCATAC</td>\n    </tr>\n    <tr>\n      <td>U2B\u2019-R</td>\n      <td>ACAGATGCGGCCGCATTTCTTGGCGTATGTAATTTTC</td>\n    </tr>\n    <tr>\n      <td>Snu114-F</td>\n      <td>AGAGATGGTACCATGGATACCGACTTATATGATGAG</td>\n    </tr>\n    <tr>\n      <td>Snu114-R</td>\n      <td>ACAGATGCGGCCGCACATGGGGTAATTGAGCACAACATC</td>\n    </tr>\n    <tr>\n      <td>ligation splint</td>\n      <td>ACATCGTCGACGGAAACCCTCGGAAACCCTGGACTACT CTAGAAGTCATGCCCGCTTTTAGAGGGATCCATACTCA CCTGGTAAGGTACCTCGCAGACAGCGATGCGGAAGAG</td>\n    </tr>\n    <tr>\n      <td>S1-T7-F</td>\n      <td>TAATACGACTCACTATAGGGCGAATTCGAGCTCAC</td>\n    </tr>\n    <tr>\n      <td>S4-T7-F</td>\n      <td>TAATACGACTCACTATAGGGTTTCCGTCGACGATGTCAGCTC</td>\n    </tr>\n    <tr>\n      <td>S1-R</td>\n      <td>mCmAGACAGCGATGCGGAAG</td>\n    </tr>\n    <tr>\n      <td>S4-R</td>\n      <td>mUmUGCATGCAGAGACCGCGAAG</td>\n    </tr>\n    <tr>\n      <td>2-color RNA Klenow splint</td>\n      <td>GTTCCTTGCATGCAGAGACCGCGAAGAG/3ddC/</td>\n    </tr>\n    <tr>\n      <td>5i3 template-F</td>\n      <td>TAATACGACTCACTATAGGGCGAATTCGAGCTCAC</td>\n    </tr>\n    <tr>\n      <td>5i3 template-R</td>\n      <td>mUmUGCATGCAGAGACCGCGAAG</td>\n    </tr>\n    <tr>\n      <td>5i3 Klenow splint</td>\n      <td>GTTCTTCTTATTGCATGCAGAGACCGCGAAGAG/3ddC/</td>\n    </tr>\n    <tr>\n      <td>5i3 Klenow capture</td>\n      <td>CTCTTCGCGGTCTCTGCATGCAATAAGAAGAAC</td>\n    </tr>\n    <tr>\n      <td>3e5 template-F</td>\n      <td>TAATACGACTCACTATAGGGCGAATTCGTCGACG</td>\n    </tr>\n    <tr>\n      <td>3e5 template-R</td>\n      <td>mUmUGGAAACCCTCGGAAACCCTG</td>\n    </tr>\n    <tr>\n      <td>3e5 Klenow splint</td>\n      <td>GTTCTTCTTATTGGAAACCCTCGGAAACCCTGGA/3ddC/</td>\n    </tr>\n    <tr>\n      <td>3e5 Klenow capture</td>\n      <td>TCCAGGGTTTCCGAGGGTTTCCAATAAGAAGAAC</td>\n    </tr>\n    <tr>\n      <td>5i3e5 template-F</td>\n      <td>TAATACGACTCACTATAGGGCGAATTC</td>\n    </tr>\n    <tr>\n      <td>5i3e5 template-R</td>\n      <td>mUmUCATGCAATTGTCG</td>\n    </tr>\n    <tr>\n      <td>5i3e5 Klenow splint</td>\n      <td>GTTCTTATCTTATTCATGCAATTGTCGGAAACCCTC/3ddC/</td>\n    </tr>\n    <tr>\n      <td>5i3e5 Klenow capture</td>\n      <td>GAGGGTTTCCGACAATTGCATGAATAAGATAAGAAC</td>\n    </tr>\n    <tr>\n      <td>control-AMO</td>\n      <td>CCTCTTACCTCAGTTACAATTTATA</td>\n    </tr>\n    <tr>\n      <td>anti-U1-AMO</td>\n      <td>GGTATCTCCCCTGCCAGGTAAGTAT</td>\n    </tr>\n  </tbody>\n</table>\n\nOne-color pre-mRNAs (Figures 2, 3 and 4) were labeled at the 3' end by Klenow extension with both AlexaFluor 647 dUTP (Life Technologies, A32763) and biotin dCTP, resulting in one (5i3 and 3e5) or two (5i3e5) AlexaFluor 647 dyes and one biotin per pre-mRNA molecule. All oligonucleotides used for Klenow extensions are listed in Tables 1 and 2.\n\n### Western blotting\n\nProtein samples were separated by SDS-PAGE and transferred to a 0.45 \u03bcm pore size nitrocellulose membrane (Whatman, PROTRAN BA 85, 10 401 196). Proteins were detected using the indicated antibodies and an Odyssey CLx Imager (LI-COR) according to manufacturer\u2019s instructions.\n\n### Co-immunoprecipitation\n\nCells (one 15 cm dish per condition) were lysed in 3 ml Buffer 1 (10 mM Tris pH 7.4, 100 mM NaCl, 2.5 mM MgCl2) supplemented with 40 \u03bcg/ml digitonin. Nuclei were collected by pelleting at 2,000 \u00d7 g for 10 min and resuspended in 3 ml Buffer 1 supplemented with 0.1% Triton X-100 and complete protease inhibitor cocktail (Roche, 04693159001). The suspension was sonicated (Branson Digital Sonifier-250) for 8 s in bursts of 2 s and the NaCl concentration adjusted to 150 mM. This nuclear lysate was clarified by centrifugation at 15,000 \u00d7 g for 10 min and an input sample taken. Dynabeads Protein A (Life Technologies, 10002D) or Protein G (Life Technologies, 10001D) pre-incubated with respective antibodies were added and nutated for 2 hr. After four washes with Buffer 2 (20 mM Tris pH 7.4, 150 mM NaCl, 0.1% NP-40), bound proteins were eluted with SDS loading dye and analyzed by Western blotting as described above.\n\n### Fluorescence and Coomassie gels\n\nProtein samples were separated by denaturing polyacrylamide gel electrophoresis (SDS-PAGE). Gels were fixed in 25% isopropanol and 10% acetic acid, and fluorescence was imaged using a Typhoon scanner (GE Healthcare). Gels were subsequently stained with Coomassie Brilliant Blue dye R-250 (Thermo Scientific, 20278) to visualize total protein.\n\n### Bulk in vitro splicing assays\n\nSplicing reactions were performed at 30\u00b0C in 20 \u00b5l of 40% HEK 293 nuclear extract in final concentrations of 60 mM K+-MOPS pH 7.3, 2 mM ATP, 0.5 mM DTT, 2 mM MgOAc2, 20 mM potassium glutamate, 5 mM creatine phosphate, and 0.1 mg/ml E.coli tRNA with 20 fmol radioactively labeled pre-mRNA substrate. To make conditions correspond to those in the CoSMoS experiments, the bulk assays also included 0.9 U/ml B. cepacia protocatechuate dioxygenase (Sigma P8279; 5 U/mg; 9 mg/ml) and 5 mM protocatechuate (Sigma 37580, recrystallized from hot water before use) as an O2 scavenging system and 1 mM Trolox (6-hydroxy-2,5,7,8-tetramethylchroman-2-carboxylic acid, Aldrich, 23,881\u20133) as a triplet quencher (Hoskins et al., 2011). Where indicated, anti-U1 AMO or control AMO (Gene Tools, sequences are described in Table 2) were added at 10 \u00b5M final concentration as previously described (Kaida et al., 2010) and the splicing reaction was 20 min pre-incubated at 30\u00b0C prior to the addition of pre-mRNA substrate. After incubating at 30\u00b0C for times indicated, splicing reactions were stopped by adding 10 volumes of Stop Buffer (100 mM Tris-Cl-, 10 mM EDTA, 1% SDS, 150 mM NaCl, and 300 mM sodium acetate, pH 7.5). RNAs were extracted and separated by denaturing polyacrylamide (15%) gel electrophoresis. The dried gel was phosphorimaged with a Typhoon PhosphorImager and RNAs quantified using ImageQuant with signal intensities being normalized to their U content. Splicing efficiencies were calculated as the ratio of spliced RNA product (i.e., ligated exons) to pre-mRNA starting material at time zero.\n\n### Single molecule in vitro splicing assays\n\nGlass slides and cover slips were prepared as described previously (Friedman et al., 2006) except that PEGylation was only allowed to proceed for 3 hr at room temperature after which slides and coverslips were washed with 50 mM potassium phosphate buffer pH 7.4, dried with N2 gas and stored at \u221280\u00b0C until use. After assembly of reaction chambers with vacuum grease (up to five lanes per slide with a volume of\u00a0~25 \u00b5l each), individual lanes were rehydrated immediately before use with 50 mM potassium phosphate buffer pH 7.4.\n\nSingle-molecule fluorescence imaging used a micro-mirror total internal reflection fluorescence (TIRF) microscope with automatic focus (Friedman et al., 2006; Hoskins et al., 2011). Sample temperature was maintained at 30\u00b0C using a custom-built temperature control system (Paramanathan et al., 2014). Streptavidin-conjugated fluorescent beads (Life Technologies, T10711) were tethered to the surface (multiple beads per field of view) and were used as reference for stage drift correction. RNAs were tethered on the slide surface at a total density of\u00a0~0.2\u20130.5 fluorescent spots per \u00b5m2. When multiple different RNA species were tethered sequentially, a microscope image was taken after each round of deposition to individually identify the molecules of each RNA species. Splicing reactions (60 \u00b5l) were assembled as described for the bulk assays above (but without pre-mRNA) and introduced into individual slide lanes by capillary action and wicking; imaging was initiated immediately after reaction loading. For experiments with the two color pre-mRNA we acquired a 1 s duration frame every 5 min with 150 \u03bcW 633 nm (red) excitation except at the beginning and end of the experiment when we acquired one frame per second with 300 \u03bcW 532 nm (green) excitation. For experiments with the one color pre-mRNAs and labeled nuclear extracts we acquired sequences of 100 one-second duration frames with 300 \u03bcW 532 nm excitation alternating with a single one-second frame with 150 \u03bcW 633 nm excitation. All excitation powers are measured incident to the input micro-mirror.\n\n### Single molecule data analysis\n\nData analysis was performed using custom software (https://github.com/gelles-brandeis/CoSMoS_Analysis; copy archived at https://github.com/elifesciences-publications/CoSMoS_Analysis) implemented in MATLAB (MathWorks) as previously described (Friedman and Gelles, 2015; Hoskins et al., 2011); locations of fluorescent spots were identified by image analysis using the spot-picker algorithm (Friedman and Gelles, 2015). Locations of tethered RNA molecules and control locations were determined in drift-corrected, color-aligned images. For spliceosomal subcomplex detection, images were averaged with a five frame sliding window before spot picking. Binding frequencies were calculated as described (Friedman and Gelles, 2015). The provided source data files are \u2018intervals\u2019 files readable by imscroll (https://github.com/gelles-brandeis/CoSMoS_Analysis). The time-averaged specific occupancy of RNA molecules by a spliceosomal subcomplex (i.e., the fraction of time the RNA a fluorescently labeled subcomplex is bound to the RNA) was calculated as (fm - fc) / (1 - fc) where the subscripts m and c refer to RNA and no RNA control locations, respectively, and f represents the fraction of time that a fluorescent spot was present, averaged over all locations measured for each type. Note that this value underestimates the subcomplex occupancy since only a fraction of each subcomplex is labeled (Figure 1\u2014figure supplement 4). Standard error of the fractional occupancy was determined by bootstrapping (2,000 random samples). Distributions of time to first binding event were fit to background-corrected single-exponential models as described (Friedman and Gelles, 2015).\n",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "95f78450-18a8-41f7-a1a2-859e21795db1",
+      "submission_id": "c4db74d4-2fd5-4c43-baaa-14f37239b0e4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Timothy W Nilsen, Case Western Reserve University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.37751.043](https://doi.org/10.7554/eLife.37751.043)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review. The authors submitted a revised manuscript, which was accepted for publication without substantive changes. The decision letter after the initial peer review is shown below.]\n\nThank you for submitting your work entitled \"Synergistic assembly of human pre-spliceosomes across introns and exons\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Klemens Hertel (Reviewer #4).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nEach referee found the work to be potentially exciting but all raised significant concerns that must be addressed. eLife. We encourage you to resubmit if and when the concerns are thoroughly dealt with. Although any resubmission will be treated as a new paper, it will be reviewed by the same scientists that examined the original submission.\n\nReviewer #2:\n\nThis manuscript by Braun et al., describes an exciting and carefully executed set of experiments that provide direct evidence for a phenomena that has long been observed but difficult to quantitatively demonstrate. Specifically, this study uses the single molecule CoSMoS approach developed in the Moore and Gelles labs to investigate the role of cross-intron and cross-exon interactions in the binding of the U1 and U2 snRNP; an early step in the assembly of the spliceosome. Many previous studies have demonstrated that in mammalian systems, having binding sites for both U1 and U2 either across an intron or on either side of an exon promotes spliceosome assembly and, ultimately, splicing itself. This has been interpreted to indicate that U1 and U2 interact in a cross-intron or cross-exon manner to promote stable association of one or the other component. Previous studies with CoSMoS have called into question such cooperative assembly of U1 and U2 in yeast; however, here the authors address this question in a mammalian system.\n\nThe experiments are elegantly designed, in the use of consistent sequences in the various constructs and in the analysis of multiple substrate variants on the same slide to ensure all RNAs are experiencing the same conditions. Moreover, the major conclusion \u2013 that stable association of U2 is synergistically promoted by both cross-intron and cross-exon interactions with U1 \u2013 is well supported. One could ask for additional mutations outside the splice sites as controls (for instance in a 5i3e5 context), but it is unclear that this would really add much to the overall story.\n\nOne conspicuously absent piece of data is the binding of U1 to 3eX or Xi3eX. At least the first of these is critical if the authors are going to conclude that \"U2 binding was even more strongly affected by the 5\u2019SS mutations than U1\". It would also be interesting to know how mutation of a single 5\u2019SS in the 5i3e5 context impacts dwell times and frequencies of U1 overall. Finally, the authors also should provide data for the association of U2 with Xe5. One might imagine that this mutation doesn't reduce U2 frequency much if it is recruited via interaction with U1. This would be an interesting observation.\n\nReviewer #3:\n\nIn this manuscript, Braun et al. use single molecule fluorescence microscopy to study the formation dynamics of spliceosomal subcomplex assembly from human cell extracts. The authors measure the binding and dissociation kinetics between U1, U2 and U5 snRNPs and RNAs modelling cross-intron or cross-exon assembly. They use a surface immobilized pre-mRNA PIP81A. The same labs have pioneered the use of yeast cell extracts to study spliceosomal assembly at the single molecule level. Based on their data the authors propose that flanking U1 binding sites synergistically increase the rate of U2 binding.\n\nOverall, the manuscript is well written and the experiments are technically sound. However, some of the conclusions in the manuscript appear to be only weakly supported by the data. In addition, aspects of the RNA change between experiments, making it difficult to make solid conclusions. For example, it is not clear how non-specific binding to non-splice sites affects the observed binding patterns, or how potential changes in secondary/tertiary structures have not been formally ruled out. Based on these issues, I cannot recommend publication of this manuscript in eLife in its current form. The conclusions may very well hold, but additional experiments/clarifications are need-ed in order to strengthen the paper.\n\nStrengths\n\n- Single molecule splicing assays with mammalian cell extracts is an important step forward in the field, which has been limited to yeast cell extracts for about a decade.\n\n- The ability to begin addressing the question of cross-intron/exon spliceosomal assembly is important.\n\n- The approach to monitor multiple RNAs on the same slide and under the same conditions is a strength of the paper.\n\nWeaknesses\n\n- All of the experiments presented here use a no-RNA control. In my mind this is not the best control for these experiments. An RNA with scrambled, modified or re-moved 5' or 3' splice sites should be used as a control instead.\n\n- It is clear that many of the \"short\" (<50s) U1 binding events are non-specific. How these events are affecting the observed assembly pathways is an important question that needs to be solved in this manuscript. For example, control experiments with immunodepleted extracts (U1, etc.) could address this.\n\n- Although 5i3 and 3e5 consist of the same sequence elements the order of the elements could dramatically affect their secondary and tertiary structures. How do the structures of these RNA affect the observed results?\n\n- An important issue with the 3e5 experiments, is that there is no way to demonstrate that the observed binding events lead to bona fide splicing. Could the binding to these RNAs be completely off pathway?\n\n- In transcribed pre-mRNAs cross-intron and cross-exon spliceosome assembly will directly compete with each other, the observed higher stability of the cross-exon assembly would suggest that cross-intron assembly would not take place in many instances, potentially leading to aberrant splicing. How do the authors reconcile their results with this?\n\n- Subsection \u201cAssembly of cross-intron and cross-exon pre-spliceosomes\u201d, last paragraph: A simpler explanation is that the secondary structure of the Xi3 RNA prevents binding of the U2 sub-complex.\n\nReviewer #4:\n\nThis manuscript describes a set of carefully designed single molecule experiments aimed at understanding spliceosomal component recruitment to introns and exons. The authors analyze U1, U2, and U5 association/dissociation dynamics in the context of an intron-defined pre-mRNA substrate, which can splice, and in the context of an exon flanked by functional splice sites, which cannot splice. The results of U1, U2 and U5 dynamics indicate that binding U1 is independent of U2 binding or of additional U1 binding sites. Interestingly, the data also show that U2 dynamics are significantly influenced by additional U1 binding. It is shown that the non-spliceable construct 3e5 exhibited higher U1, U2, and U5 occupancy when compared to the splicing competent 5i3. The second major observation is that a downstream 5\u2019SS (5i3e5) enhances splicing efficiency and U2 occupancy. When carrying out mutational analyses of 5i3e5, deleting either 5\u2019SS alone or in combination, the authors observe more than additive effects on U2 occupancy. The authors conclude that the presence of a downstream 5' splice site synergistically promotes U2 recruitment.\n\nThe experiments presented examine in more detail previous observations and they provide novel insights. Several years ago, it was demonstrated that downstream 5' splice sites have a positive effect on in vitro splicing (Chiara and Reed, 1995; Yue and Akusjarvi, 1999). It was argued then that their presence improves splicing much like splicing enhancers do. The present work takes such observations a step further by demonstrating that U2 occupancy is much improved. The manuscript should include a discussion of these previous works.\n\nThe main figures supporting the notion of synergy is Figure 4. Permutations of 5i3e5 were tested, either mutating one of the two 5\u2019SS or both splice sites. Of concern here is the fact that Xi3e5 (the upstream intronic 5\u2019SS deleted) results in the activation of a cryptic splice site. Xi3e5 is therefore no longer a substrate without an intronic 5\u2019SS, but rather one that has a weaker intronic 5\u2019SS. It is unclear to what degree the data obtained for this substrate may cloud the conclusions. By design, it was expected that this construct should not splice at all. Rather, the mutation should have rendered the splicing competent cross intron construct into a splicing incompetent cross exon construct, similarly as illustrated in Figure 2. Based on consistency expectations, one would have expected that the Xi3e5 mutation display similar U2 occupancy as the 3e5 construct in Figure 2 \u2013 relatively high or ~4-fold higher than what is observed. Using the authors own arguments for explaining the occupancy difference between the splicing competent and incompetent substrates 3e5 and 5i3 (Figure 2), the low U2 signal of Xi3e5 could be caused by its undesired splicing activity. This discrepancy needs to be addressed as the entire argument of synergy rests in part on the Xi3e5 occupancy data point.\n",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ce5ee346-3ae1-46a1-b791-d702c160c845",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C1",
+      "claim": "Spliceosomes consist of the U1, U2, and U4/U6.U5 small nuclear ribonucleoproteins (snRNPs) and multiprotein Prp19-complex as major building blocks, plus many transiently interacting splicing factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Spliceosomes consist of the U1, U2, and U4/U6.U5 small nuclear ribonucleoproteins (snRNPs) and multiprotein Prp19-complex as major building blocks, plus many transiently interacting splicing factors (Wahl et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wahl et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "2fa892b6-5371-4f54-aea5-a396b0c75f51",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C2",
+      "claim": "Spliceosomal machinery recognizes and assembles stepwise at splice sites with U1 at 5'SS and U2 at the 3'SS/branch site to form pre-spliceosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This machinery recognizes and assembles stepwise at splice sites (SS) (U1 at 5'SS and U2 at the 3'SS/branch site) to form pre-spliceosomes, which are subsequently remodeled into catalytically active spliceosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "b02a7b31-b3e5-4823-84c8-f33296a36719",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C3",
+      "claim": "Pre-spliceosomes are subsequently remodeled into catalytically active spliceosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This machinery recognizes and assembles stepwise at splice sites (SS) (U1 at 5'SS and U2 at the 3'SS/branch site) to form pre-spliceosomes, which are subsequently remodeled into catalytically active spliceosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "12464143-ed5e-4378-8d3d-72e4279954fd",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C4",
+      "claim": "Pre-spliceosomes can form on multi-intron pre-mRNAs through at least two different pathways: cross-intron interactions and cross-exon interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-spliceosomes can form on multi-intron pre-mRNAs through at least two different pathways. An intron can be recognized a) via cross-intron interactions leading directly to a catalytically active spliceosome, or b) via cross-exon interactions where the exons flanking an intron are first defined, after which cross-intron interactions between adjacent cross-exon complexes lead to spliceosome assembly (Mold\u00f3n and Query, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mold\u00f3n and Query, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "d22160ab-6197-41aa-a472-a29d603d8907",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C5",
+      "claim": "On human pre-mRNAs, which characteristically harbor multiple long introns and short exons, exon definition predominates.",
+      "claim_type": "EXPLICIT",
+      "source": "On human pre-mRNAs, which characteristically harbor multiple long introns and short exons, exon definition predominates (Berget, 1995; Fox-Walsh et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Berget, 1995 and Fox-Walsh et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "c2dd9962-7ba1-4b0d-8bcf-4453d1565f72",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C6",
+      "claim": "Splicing is greatly enhanced when a 5'SS is present across the exon downstream of an intron.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, splicing is greatly enhanced when a 5'SS is present across the exon downstream of an intron, highlighting the importance of exon definition in humans (Talerico and Berget, 1990; Yue and Akusj\u00e4rvi, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Talerico and Berget, 1990 and Yue and Akusj\u00e4rvi, 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "9b1db328-dca3-4da6-86b5-512cb1f1e863",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C7",
+      "claim": "Cross-exon pre-spliceosomes can transition into cross-intron pre-spliceosomes, each having a distinct protein composition.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-exon pre-spliceosomes can transition into cross-intron pre-spliceosomes, each having a distinct protein composition; the latter can then productively splice the pre-mRNA (Chiara and Reed, 1995; Schneider et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chiara and Reed, 1995 and Schneider et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "f78fb11d-fc4c-4b46-8f21-9daef0ccaf07",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C8",
+      "claim": "Cross-intron pre-spliceosomes can productively splice the pre-mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-exon pre-spliceosomes can transition into cross-intron pre-spliceosomes, each having a distinct protein composition; the latter can then productively splice the pre-mRNA (Chiara and Reed, 1995; Schneider et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chiara and Reed, 1995 and Schneider et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "530e6a32-f706-448c-928e-f7d94beb0645",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C9",
+      "claim": "Single-molecule approaches have proven invaluable for elucidating the kinetic pathways and subcomplex dynamics involved in spliceosome assembly in S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "In S. cerevisiae, where the cross-intron pathway predominates, single-molecule approaches have proven invaluable for elucidating the kinetic pathways and subcomplex dynamics involved in spliceosome assembly (Semlow et al., 2016; Warnasooriya and Rueda, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Semlow et al., 2016 and Warnasooriya and Rueda, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "101f4783-b669-4763-b73e-c8e93905cdd7",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C10",
+      "claim": "20 \u00b1 2% (s.d.) of PIP85A pre-mRNA was converted to spliced products after 40 mins in human cell line HEK293 nuclear extract.",
+      "claim_type": "EXPLICIT",
+      "source": "For this pre-mRNA 20 \u00b1 2% (s.d.) was converted to spliced products after 40 mins in human cell line HEK293 nuclear extract (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "e3aa15fa-9b57-4bbd-9b55-4ba618bdd53b",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C11",
+      "claim": "No spliced products were observed in the absence of ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "No spliced products were observed in the absence of ATP, which is required for spliceosome assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "9379b088-c180-4c65-849f-64de510a8279",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C12",
+      "claim": "ATP is required for spliceosome assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "No spliced products were observed in the absence of ATP, which is required for spliceosome assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "0bb8cb34-70f2-4207-87e0-0e7ff42d4695",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C13",
+      "claim": "18 \u00b1 4% (s.e.) of surface-tethered pre-mRNA molecules lost intron fluorescence in the presence of ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 1.1 \u00b1 0.7% (s.e.) lost intron (red) fluorescence in a control conducted in the absence of ATP (likely due to photobleaching) whereas 18 \u00b1 4% (s.e.) lost intron fluorescence in the presence of ATP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from single-molecule observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "424219d5-b3d9-4b2f-8369-8974a3aaaa4f",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C14",
+      "claim": "1.1 \u00b1 0.7% (s.e.) of surface-tethered pre-mRNA molecules lost intron fluorescence in the absence of ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 1.1 \u00b1 0.7% (s.e.) lost intron (red) fluorescence in a control conducted in the absence of ATP (likely due to photobleaching) whereas 18 \u00b1 4% (s.e.) lost intron fluorescence in the presence of ATP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from single-molecule observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "13419163-e565-4af5-b742-5ac0ed988ea8",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C15",
+      "claim": "Intron release requires an ATP-dependent structural rearrangement of the splicing machinery after the second splicing step.",
+      "claim_type": "EXPLICIT",
+      "source": "Intron release requires an ATP-dependent structural rearrangement of the splicing machinery after the second splicing step, so as expected the lag phase was somewhat longer in the single-molecule assay (Figure 1C) than in the bulk splicing assay (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by inference from experimental observations and established knowledge",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "95509e7f-b392-4abd-a770-1b92b88dfb4b",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C16",
+      "claim": "Surface-tethered 5i3 pre-mRNA molecules were spliced with a similar efficiency (17%) to what is observed in solution (20%).",
+      "claim_type": "EXPLICIT",
+      "source": "However, surface-tethered 5i3 pre-mRNA molecules were spliced with a similar efficiency (17%) to what is observed in solution (20%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of experimental data from single-molecule and bulk assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "a2275d73-6b94-465b-a65d-58d42310ce2b",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C17",
+      "claim": "Three HEK293 cell lines were generated, each stably expressing C-terminally fSNAP-tagged U1-70K, U2B', or Snu114 at a level comparable to the endogenous protein.",
+      "claim_type": "EXPLICIT",
+      "source": "To enable single-molecule visualization of individual spliceosomal subcomplexes, we generated three HEK293 cell lines, each stably expressing C-terminally fSNAP-tagged U1-70K, U2B', or Snu114 at a level comparable to the endogenous protein (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "30548ff8-f51c-4d24-a737-de9e69369541",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C18",
+      "claim": "Co-immunoprecipitation experiments confirmed efficient incorporation of the tagged protein into U1, U2, or U5 respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-immunoprecipitation experiments confirmed efficient incorporation of the tagged protein into U1, U2, or U5 respectively (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "d1f1077c-348c-476f-bba4-909e4c084da0",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C19",
+      "claim": "Treatment of nuclear extracts with a green-excited dye-benzylguanine conjugate resulted in highly specific labeling of the fSNAP-tagged proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of nuclear extracts with a green-excited dye-benzylguanine conjugate resulted in highly specific labeling of the fSNAP-tagged proteins (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "d5c012b5-a953-4af0-882a-999f0ab7f4f8",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C20",
+      "claim": "Under limiting dye concentration (200 nM), 30%, 60%, and 50% of total (tagged plus untagged) U1-70K, U2B', and Snu114 were labeled, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, 30%, 60%, and 50% of total (tagged plus untagged) U1-70K, U2B', and Snu114 were labeled, respectively (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "89b772a4-0afb-4f28-bc5c-39dcd090e374",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C21",
+      "claim": "All tagged and dye-labeled extracts exhibited bulk splicing efficiencies comparable to extracts from the untagged parental cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, all tagged and dye-labeled extracts exhibited bulk splicing efficiencies comparable to extracts from the untagged parental cell line (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "6c827d07-6e67-4433-87ec-946ec5f30255",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C22",
+      "claim": "U1 binding to 5i3 RNA was highly dynamic with many arrivals and departures per active RNA molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "U1 binding to 5i3 RNA was highly dynamic with many arrivals and departures per active RNA molecule (Figure 2E\u2013G) and a high frequency of short (<50 s) binding events (Figure 2F and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2E-H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "1db37332-98aa-4ecf-810b-3180a6941eb4",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C23",
+      "claim": "U1 binding to 5i3 RNA exhibited a high frequency of short (<50 s) binding events.",
+      "claim_type": "EXPLICIT",
+      "source": "U1 binding to 5i3 RNA was highly dynamic with many arrivals and departures per active RNA molecule (Figure 2E\u2013G) and a high frequency of short (<50 s) binding events (Figure 2F and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2F and H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "9211b6b0-4347-4952-bf03-720626456fb9",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C24",
+      "claim": "Progressively fewer 5i3 molecules bound U2 and U5 compared to U1.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, progressively fewer 5i3 molecules bound U2 and U5 and the average occupancy of RNAs by these subcomplexes was also progressively lower (Figure 2F and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2F and I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "7ab8a18a-6ac1-4897-bbfa-8f4689d4d901",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C25",
+      "claim": "The average occupancy of 5i3 RNAs by U2 and U5 was progressively lower than by U1.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, progressively fewer 5i3 molecules bound U2 and U5 and the average occupancy of RNAs by these subcomplexes was also progressively lower (Figure 2F and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2F and I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "334ed045-54f9-4771-91af-9d4c74304fd0",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C26",
+      "claim": "Observed binding events were almost entirely RNA-specific with fewer and only short-duration binding events observed at control 'no RNA' locations.",
+      "claim_type": "EXPLICIT",
+      "source": "Observed binding events were almost entirely RNA-specific; fewer and only short-duration binding events were observed at control 'no RNA' locations (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "761b7eed-4811-4c7c-9b12-1c1dc3c1b529",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C27",
+      "claim": "The kinetics of human spliceosomal subcomplex binding and dissociation on the cross-intron 5i3 substrate were similar to those observed in CoSMoS experiments on cross-intron RNAs in S. cerevisiae extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the kinetics of human spliceosomal subcomplex binding and dissociation on the cross-intron 5i3 substrate were similar to those observed in CoSMoS experiments on cross-intron RNAs in S. cerevisiae extracts (Hoskins et al., 2011; Shcherbakova et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison with cited studies on S. cerevisiae",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "ba66329c-354f-45f1-8261-16ba9b14ebf2",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C28",
+      "claim": "3e5 RNA molecules exhibited more frequent binding events for all subcomplexes than 5i3 molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Spliceosomal subcomplex interactions with the cross-exon 3e5 RNA were quantitatively different from interactions with the cross-intron 5i3 RNA. 3e5 RNA molecules exhibited more frequent binding events (Figure 2F and G) and higher mean occupancy (Figure 2I) for all subcomplexes than 5i3 molecules.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2F and G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "db371cde-a909-4045-92f9-e76f14b999f9",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C29",
+      "claim": "3e5 RNA molecules exhibited higher mean occupancy for all subcomplexes than 5i3 molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Spliceosomal subcomplex interactions with the cross-exon 3e5 RNA were quantitatively different from interactions with the cross-intron 5i3 RNA. 3e5 RNA molecules exhibited more frequent binding events (Figure 2F and G) and higher mean occupancy (Figure 2I) for all subcomplexes than 5i3 molecules.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "0b29e5e3-4e25-4eca-a155-59e0fe3de0d6",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C30",
+      "claim": "The cross-exon pre-mRNA is unable to form a catalytically active spliceosome.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences might be partially explained by the inability of the cross-exon pre-mRNA to form a catalytically active spliceosome (Figure 2\u2014figure supplement 2), resulting in the greater accumulation of inactive spliceosome assembly intermediates at steady state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "4e32d637-2b32-4ce1-a262-60e689192081",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C31",
+      "claim": "U1, U2 and U5 exhibited a higher frequency of long-lived (>50 s) binding events on the splicing-inactive 3e5 RNA than on the spliceable cross-intron 5i3 RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, U1, U2 and U5 exhibited a higher frequency of long-lived (>50 s) binding events on the splicing-inactive 3e5 RNA than on the spliceable cross-intron 5i3 RNA (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "3c66d054-05cf-4cfb-a451-2c279812d877",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C32",
+      "claim": "Functional U2 association with pre-mRNA depends on a polypyrimidine tract and the 3'SS AG.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional U2 association with pre-mRNA depends on a polypyrimidine tract and the 3'SS AG (Ruskin et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ruskin et al., 1988",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "b845ba3b-965e-4f8c-a387-13d57b87f388",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C33",
+      "claim": "Multiple pyrimidine to purine substitutions within the polypyrimidine tract combined with a 3'SS AG to GG mutation greatly decreased the frequencies of RNA-specific U2 binding events, reducing binding to near-background levels.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, multiple pyrimidine to purine substitutions within the polypyrimidine tract combined with a 3'SS AG to GG mutation (Figure 3A) greatly decreased the frequencies of RNA-specific U2 binding events, reducing binding to near-background levels (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "6119ce68-ac55-465f-9a00-a1e3e24515c1",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C34",
+      "claim": "U1 binding was largely unaffected by polypyrimidine tract and 3'SS mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "U1 binding, however, was largely unaffected by these mutations, with U1 specific association frequencies and dwell time distributions on 5iX and Xe5 RNAs indistinguishable from those on 5i3 and 3e5, respectively (Figure 3B and Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B and Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "6d42f7a7-2041-4a3b-b82a-9e9e97371501",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C35",
+      "claim": "Human U1 binding is independent of U2 binding in both cross-intron and cross-exon contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, consistent with previous cross-intron data in yeast (S\u00e9raphin and Rosbash, 1991), human U1 binding is independent of U2 binding in both cross-intron and cross-exon contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and citation to S\u00e9raphin and Rosbash, 1991",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "10a96605-d171-4498-b1da-16b5f8738575",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C36",
+      "claim": "Mutation of the 5'SS consensus from AG/GU to CCCC blocks functional U1 association.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional U1 association is blocked by mutation of the 5'SS consensus from AG/GU to CCCC (Roca et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Roca et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "c6f3772c-95e3-484e-8dfd-b2fe1d62376c",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C37",
+      "claim": "5'SS mutation decreased the U1 association rate and eliminated RNA-specific long-duration (>60 s) U1 binding events in both cross-intron and cross-exon contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, this mutation (Figure 3C) decreased the U1 association rate and eliminated RNA-specific long-duration (>60 s) U1 binding events in both cross-intron and cross-exon contexts (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "890332de-ed70-4ca6-a4dd-d6f0245ee010",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C38",
+      "claim": "Long-duration U1 binding events reflect its association with the canonical 5'SS.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus long-duration U1 binding events reflect its association with the canonical 5'SS, as reported previously in S. cerevisiae extract (Larson and Hoskins, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and citation to Larson and Hoskins, 2017",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "951ee501-5350-486e-9cdd-7c7a6f55c358",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C39",
+      "claim": "Short duration U1 binding events are still present (although reduced in frequency) after 5'SS mutation and may reflect sequence non-specific interactions with the RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, short duration U1 binding events are still present (although reduced in frequency) after 5'SS mutation and may reflect sequence non-specific interactions with the RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and speculation about the nature of short binding events",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "11ed0621-7b1a-47bb-b023-1977d3382d8d",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C40",
+      "claim": "In both the cross-intron and cross-exon contexts, elimination of the canonical 5'SS decreased U2 binding frequency to background within experimental uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the 5'SS mutations affected U2 binding even more strongly than U1 binding. In both the cross-intron and cross-exon contexts, elimination of the canonical 5'SS decreased U2 binding frequency to background within experimental uncertainty (Figure 3D and Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3D and Figure 3\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "962a0783-b74b-45e5-8499-8e47ee4efaa7",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C41",
+      "claim": "Absence of U5 binding to 5'SS mutant RNAs confirmed that the mutations abolished the formation of functional pre-spliceosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Absence of U5 binding to these RNAs (Figure 3\u2014figure supplement 5) confirmed that the mutations abolished the formation of functional pre-spliceosomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "ad227e6d-d08f-44a7-abe3-a948e0ebfadf",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C42",
+      "claim": "U2 binding to the 5i3 and 3e5 was eliminated in experiments in which U1 interaction with the 5'SS was blocked by the addition of a morpholino oligonucleotide antisense to the U1 snRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "To exclude the latter possibility, we demonstrated U2 binding to the 5i3 and 3e5 was also eliminated in experiments (Figure 3\u2014figure supplement 6) in which U1 interaction with the 5'SS was blocked by the addition of a morpholino oligonucleotide antisense to the U1 snRNA (Kaida et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 6 and citation to Kaida et al., 2010",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "fa23cb31-a372-47ba-add2-e4b7f8002318",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C43",
+      "claim": "U2 binding to the 3'SS is strongly dependent on U1 binding to a 5'SS either upstream (cross-intron) or downstream (cross-exon).",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that U2 binding to the 3'SS is strongly dependent on U1 binding to a 5'SS either upstream (cross-intron) or downstream (cross-exon).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from multiple experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "5fbc477a-6fff-497d-93e2-f4255fe3e893",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C44",
+      "claim": "Human pre-spliceosome assembly follows an ordered pathway in which stable U2 association in the presence of ATP requires prior U1 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests an ordered human pre-spliceosome assembly pathway in which stable U2 association in the presence of ATP requires prior U1 binding, in contrast to the branched pathway observed in S. cerevisiae (Shcherbakova et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and comparison with cited study on S. cerevisiae",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "5327fb54-1b60-4d3a-8757-de9f72754793",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C45",
+      "claim": "S. cerevisiae exhibits a branched pathway for pre-spliceosome assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests an ordered human pre-spliceosome assembly pathway in which stable U2 association in the presence of ATP requires prior U1 binding, in contrast to the branched pathway observed in S. cerevisiae (Shcherbakova et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shcherbakova et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "dc39e1ee-eed7-4263-978a-ab2052f2a0da",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C46",
+      "claim": "Splicing of 5i3e5 was 5-fold more efficient than 5i3eX in ensemble splicing reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the concept of exon definition (Talerico and Berget, 1990), splicing of 5i3e5 was 5-fold more efficient than 5i3eX in ensemble splicing reactions (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4B and citation to Talerico and Berget, 1990",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "f69da7da-50ee-4651-a689-773f05182e5a",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C47",
+      "claim": "The effect of adding the downstream 5'SS was strong enough to activate an otherwise dormant cryptic 5'SS in the Xi3e5 construct.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the effect of adding the downstream 5'SS was strong enough to activate an otherwise dormant cryptic 5'SS in the Xi3e5 construct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from splicing assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "9053b716-14ab-4819-8207-123490f2f35c",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C48",
+      "claim": "No splicing was observed on Xi3eX RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, no splicing was observed on Xi3eX RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from splicing assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "8e1d6eac-fec9-4a59-a099-6413090d7254",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C49",
+      "claim": "No U2 binding above background levels was observed for the RNA with no 5'SS (Xi3eX).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the observation that U2 binding in the cross-intron and cross-exon contexts depends on a 5'SS (Figure 3C and D), no U2 binding above background levels was observed for the RNA with no 5'SS (Xi3eX) (Figure 4C and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4C and Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "3b07fc7b-03cb-48d6-aae3-d9bd4159ffbf",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C50",
+      "claim": "The shapes of the U2 dwell time distributions on 5i3eX and Xi3e5 were similar to those of the shorter 5i3 cross-intron and 3e5 cross-exon constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the shapes of the U2 dwell time distributions on 5i3eX and Xi3e5 (Figure 4C) were similar to those of the shorter 5i3 cross-intron and 3e5 cross-exon constructs (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4C and Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "0fc9d11c-f350-4ac9-801d-bd8894a07eab",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C51",
+      "claim": "The presence of flanking 5'SS both upstream and downstream of the 3'SS dramatically increased U2 recruitment, with the RNA-specific U2 binding event frequency being more than 2.5 times the sum of the frequencies observed when either the upstream or downstream 5'SS was present alone.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of flanking 5'SS both upstream and downstream of the 3'SS dramatically increased U2 recruitment, with the RNA-specific U2 binding event frequency being more than 2.5 times the sum of the frequencies observed when either the upstream or downstream 5'SS was present alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from single-molecule observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "d82effb4-97dd-4b7f-8c69-bbdfa9210ffa",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C52",
+      "claim": "The upstream and downstream 5'SS act synergistically to accelerate the rate of stable U2 recruitment to the 3'SS.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data indicate that the upstream and downstream 5'SS act synergistically to accelerate the rate of stable U2 recruitment to the 3'SS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from multiple measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "74dea58a-adf5-44e8-83eb-1b770e8eb967",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C53",
+      "claim": "The dynamics of U1 binding to the 5'SS are largely unaffected by the presence of U2 binding sites positioned either downstream (cross-exon) or upstream (cross-intron) of the 5'SS.",
+      "claim_type": "EXPLICIT",
+      "source": "The experiments reveal that the dynamics of U1 binding to the 5'SS are largely unaffected by the presence of U2 binding sites positioned either downstream (cross-exon) or upstream (cross-intron) of the 5'SS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from single-molecule observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "7f38bcca-74cf-4a98-a746-d5827638008a",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C54",
+      "claim": "Stable U2 binding to the 3'SS is accelerated by a 5'SS situated across either the adjacent intron or adjacent exon.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, stable U2 binding to the 3'SS is accelerated by a 5'SS situated across either the adjacent intron or adjacent exon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from single-molecule observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "82959520-9f69-4aa7-9ab7-d5e5d816faae",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C55",
+      "claim": "When functional 5'SS are present together at both cross-intron and cross-exon locations, they synergistically promote U2 recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, when functional 5'SS are present together at both cross-intron and cross-exon locations, they synergistically promote U2 recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from single-molecule observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "a01aa913-46a6-4677-8d11-d5616b285d66",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C56",
+      "claim": "The more than additive effect of the flanking 5'SS indicates that U1 employs different molecular mechanisms/interactions across introns and across exons to accelerate U2 recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "The more than additive effect of the flanking 5'SS indicates that U1 employs different molecular mechanisms/interactions across introns and across exons to accelerate U2 recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by inference from experimental data showing synergistic effects",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "4b54c9e1-ae7a-483a-9b23-2ed8fc8bd82c",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C57",
+      "claim": "Cross-exon U1 binding assists in recruiting the splicing factors that form a platform for U2 binding to the upstream 3'SS region.",
+      "claim_type": "EXPLICIT",
+      "source": "A simple model that would explain this observed synergy of cross-exon and cross-intron 5'SS on U2 recruitment rate is that cross-exon U1 binding assists in recruiting the splicing factors that form a platform for U2 binding to the upstream 3'SS region, whereas the cross-intron U1-U2 interaction favors a U2 conformation capable of productive branch site engagement (Figure 5, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by speculation based on experimental data and known interactions",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "ce849395-7fb9-40d0-a4b9-96ba259fe7a9",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C58",
+      "claim": "The cross-intron U1-U2 interaction favors a U2 conformation capable of productive branch site engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "A simple model that would explain this observed synergy of cross-exon and cross-intron 5'SS on U2 recruitment rate is that cross-exon U1 binding assists in recruiting the splicing factors that form a platform for U2 binding to the upstream 3'SS region, whereas the cross-intron U1-U2 interaction favors a U2 conformation capable of productive branch site engagement (Figure 5, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by speculation based on experimental data and known interactions",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "491b5120-5a10-47d0-84d8-90e54fbe1326",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C59",
+      "claim": "U1 is known to recruit U2AF (U2 auxiliary factor), which recognizes the polypyrimidine tract and 3'SS AG.",
+      "claim_type": "EXPLICIT",
+      "source": "Across exons, U1 is known to recruit U2AF (U2 auxiliary factor), which recognizes the polypyrimidine tract and 3'SS AG, and physically interacts with other proteins (e.g., SF1, p14, SF3B and SR proteins) required for stable U2 binding (Black, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Black, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "159f7ba4-0cee-41b3-9423-30249b1fbe53",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C60",
+      "claim": "U2AF physically interacts with other proteins (e.g., SF1, p14, SF3B and SR proteins) required for stable U2 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Across exons, U1 is known to recruit U2AF (U2 auxiliary factor), which recognizes the polypyrimidine tract and 3'SS AG, and physically interacts with other proteins (e.g., SF1, p14, SF3B and SR proteins) required for stable U2 binding (Black, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Black, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "3b4419b9-bd22-486d-96f3-186d0337ad22",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C61",
+      "claim": "U1 and U2 can interact via the DEAD-box protein Prp5.",
+      "claim_type": "EXPLICIT",
+      "source": "Across introns, U1 and U2 can interact via the DEAD-box protein Prp5, the ATPase activity of which promotes a structural change in U2 that makes the branch site recognition sequence more solvent accessible (Abu Dayyeh et al., 2002; O'Day et al., 1996; Xu et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Abu Dayyeh et al., 2002; O'Day et al., 1996; Xu et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "ed445945-d5f9-4fa3-954d-53b23bc848ed",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C62",
+      "claim": "The ATPase activity of Prp5 promotes a structural change in U2 that makes the branch site recognition sequence more solvent accessible.",
+      "claim_type": "EXPLICIT",
+      "source": "Across introns, U1 and U2 can interact via the DEAD-box protein Prp5, the ATPase activity of which promotes a structural change in U2 that makes the branch site recognition sequence more solvent accessible (Abu Dayyeh et al., 2002; O'Day et al., 1996; Xu et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Abu Dayyeh et al., 2002; O'Day et al., 1996; Xu et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "1c7b3572-d049-4066-86b7-ba5e3cd106b5",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C63",
+      "claim": "Both the overall shape of dwell time distributions and the ratios of binding frequency to occupancy are similar for the RNAs with (5i3e5: 1.0 \u00b1 0.2 s\u22121) or without (5i3eX: 1.3 \u00b1 0.9 s\u22121) the downstream site.",
+      "claim_type": "EXPLICIT",
+      "source": "The data in Figure 4C are consistent with this prediction: both the overall shape of dwell time distributions and the ratios of binding frequency to occupancy are similar for the RNAs with (5i3e5: 1.0 \u00b1 0.2 s\u22121) or without (5i3eX: 1.3 \u00b1 0.9 s\u22121) the downstream site.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "ff9a783e-10f0-449c-b341-02c1e6f69bf9",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C64",
+      "claim": "The synergistic stimulatory effect of the downstream 5'SS on splicing is exerted at the U2 recruitment step and the processes that enable it, not at the subsequent steps of spliceosome assembly and splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data suggest that the synergistic stimulatory effect of the downstream 5'SS on splicing is exerted at the U2 recruitment step and the processes that enable it, not at the subsequent steps of spliceosome assembly and splicing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by inference from experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "43b22ddb-7d28-4bee-a348-d68ca0a047d8",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C65",
+      "claim": "Inappropriate skipping of otherwise constitutive internal exons can occur with exceptionally low frequency (~1 in 10^5 splicing events).",
+      "claim_type": "EXPLICIT",
+      "source": "Inappropriate skipping of otherwise constitutive internal exons can occur with exceptionally low frequency (~1 in 105 splicing events) (Fox-Walsh and Hertel, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fox-Walsh and Hertel, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "b71430d1-bf78-4c26-8666-7db7985605f6",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C66",
+      "claim": "A major contributor to exon inclusion is collaboration between flanking 5'SS.",
+      "claim_type": "EXPLICIT",
+      "source": "By implementing CoSMoS in extracts from human cells expressing genetically-tagged proteins, we here show that a major contributor to exon inclusion is collaboration between flanking 5'SS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from single-molecule observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "ccca8308-ee1f-42bd-8ed9-c8f446033aa5",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C67",
+      "claim": "Collaboration between flanking 5'SS dramatically increases the rate of stable U2 recruitment during pre-spliceosome formation.",
+      "claim_type": "EXPLICIT",
+      "source": "This collaboration dramatically increases the rate of stable U2 recruitment during pre-spliceosome formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from single-molecule observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "38472f09-da31-4c16-8a7e-eb9e0eea98df",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C68",
+      "claim": "Cross-intron and cross-exon 5'SS synergy on U2 recruitment rate explains how U1 can have such a strong effect on U2 recruitment despite its association with pre-mRNA being much more dynamic than U2.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-intron and cross-exon 5'SS synergy on U2 recruitment rate explains how U1 can have such a strong effect on U2 recruitment despite its association with pre-mRNA being much more dynamic than U2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by inference from experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "911e3182-a51d-41cf-8edb-26d37701dddd",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C69",
+      "claim": "This mechanism is likely crucial for rapid definition of internal exons in multi-intron RNAs, enabling the human splicing machinery to avoid inappropriate exon skipping.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism is likely crucial for rapid definition of internal exons in multi-intron RNAs, enabling the human splicing machinery to avoid inappropriate exon skipping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by inference from experimental data and speculation about biological significance",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "f7136f0e-478c-4493-ab6a-9c2efeef3002",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C70",
+      "claim": "U1 subcomplex bound to the 5' splice site of an intron acts jointly with U1 bound to the 5' splice site of the next intron to dramatically increase the rate and efficiency by which U2 subcomplex is recruited to the branch site/3' splice site of the upstream intron.",
+      "claim_type": "EXPLICIT",
+      "source": "U1 subcomplex bound to the 5' splice site of an intron acts jointly with U1 bound to the 5' splice site of the next intron to dramatically increase the rate and efficiency by which U2 subcomplex is recruited to the branch site/3' splice site of the upstream intron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from single-molecule observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "1a37998c-b522-486a-8b7b-2dedafc22220",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C71",
+      "claim": "The flanking 5' splice sites have greater than additive effects implying distinct mechanisms facilitating U2 recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "The flanking 5' splice sites have greater than additive effects implying distinct mechanisms facilitating U2 recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing synergistic effects and inference about mechanisms",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "0ae6ca84-4f7f-4a9e-b6e4-d8db8d77235c",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "claim_id": "C72",
+      "claim": "This synergy of 5' splice sites across introns and exons is likely important in promoting correct and efficient splicing of multi-intron pre-mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "This synergy of 5' splice sites across introns and exons is likely important in promoting correct and efficient splicing of multi-intron pre-mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by inference from experimental data and speculation about biological significance",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cb8fb1dc-0ff0-44f2-aeda-668872615583",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on spliceosome composition, assembly pathways (cross-intron and cross-exon), and the predominance of exon definition in human pre-mRNAs, citing established literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 are all supported by citations to prior literature and represent established knowledge in the field. These claims provide necessary background context for the study but do not constitute novel findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "bd9d9a08-c3f2-4333-9464-6514f86b29ff",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Surface-tethered pre-mRNA molecules can be spliced in human nuclear extract with efficiency comparable to solution-phase reactions, validating the single-molecule assay system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C16 demonstrate that the single-molecule system recapitulates splicing observed in bulk assays (17-20% efficiency), with appropriate ATP dependence (C11-C12) and expected kinetic differences due to intron release mechanics (C15). This validates the experimental approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "2e5d61f6-447c-43ad-b550-4dbc725e9dbf",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Three stable HEK293 cell lines expressing fSNAP-tagged spliceosomal proteins (U1-70K, U2B'', Snu114) were generated and validated for proper incorporation into snRNPs and functional splicing activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 describe the generation and validation of tagged cell lines with supporting data from Western blots (C17), co-immunoprecipitation (C18), specific labeling (C19-C20), and functional assays (C21). This establishes the key reagents for the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "0803f8a5-2ed3-449b-8a95-3b4d3eaf66a5",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "U1 binding to cross-intron 5i3 RNA is highly dynamic with frequent short binding events, while U2 and U5 show progressively lower binding frequencies and occupancies, with kinetics similar to yeast systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 are supported by single-molecule data (Figure 2) showing U1 dynamics, progressive decrease in U2/U5 binding, RNA-specificity of binding events, and comparison to yeast. The data are internally consistent and appropriately controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "a00f6c0d-2959-400c-9e27-6bb0208d4203",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Cross-exon 3e5 RNA exhibits higher binding frequencies and occupancies for all subcomplexes compared to cross-intron 5i3 RNA, with more long-lived binding events, potentially due to inability to form catalytically active spliceosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 are supported by comparative single-molecule data (Figure 2) and bulk splicing assays showing lack of catalytic activity for 3e5 (C30). The interpretation that inactive complexes accumulate is reasonable, though alternative explanations (RNA structure differences) are acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "b494fcaa-9dab-49b1-be3b-7f8b8a1cc37c",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "U1 binding is independent of U2 binding in both cross-intron and cross-exon contexts, as demonstrated by mutations in the polypyrimidine tract and 3'SS that eliminate U2 binding but not U1 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 are supported by mutational analysis (Figure 3A-B, supplements) showing that 3'SS mutations abolish U2 binding (C33) but not U1 binding (C34), consistent with prior yeast data (C35). The experimental design appropriately tests independence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "f3e3da8f-e181-43e3-812e-95f37128c1b0",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "5'SS mutations eliminate long-duration U1 binding events that reflect canonical 5'SS association, while short-duration events persist and may represent non-specific interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 are supported by mutational analysis (Figure 3C, supplement 3) showing that 5'SS mutations eliminate long U1 binding events (C37-C38) but not short events (C39). The interpretation of long events as specific and short as potentially non-specific is reasonable but somewhat speculative for C39.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "fef2e66e-ca84-43cf-a98e-30082f03d705",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "U2 binding to the 3'SS is strongly dependent on U1 binding to a 5'SS in both cross-intron and cross-exon contexts, suggesting an ordered assembly pathway in humans distinct from the branched pathway in yeast.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 are supported by multiple lines of evidence: 5'SS mutations eliminate U2 binding (C40), U5 binding is also eliminated confirming loss of functional pre-spliceosomes (C41), and anti-U1 morpholino experiments confirm U1 dependence (C42). The conclusion of ordered assembly (C44) is a reasonable inference, though the contrast with yeast (C45) relies on cited literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "527be10d-937b-4219-b5fa-5be7f0e14e68",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Splicing of 5i3e5 (with both upstream and downstream 5'SS) is 5-fold more efficient than 5i3eX (with only upstream 5'SS), and the downstream 5'SS can activate a cryptic 5'SS in Xi3e5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 are supported by bulk splicing assays (Figure 4B) showing the 5-fold difference, cryptic site activation, and lack of splicing without any 5'SS. This demonstrates the functional importance of the downstream 5'SS consistent with exon definition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "cc12bc58-66d1-4ffb-a002-191c98c52bc9",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The presence of both upstream and downstream 5'SS synergistically increases U2 recruitment to the 3'SS, with binding frequency more than 2.5 times the sum of individual contributions, indicating distinct mechanisms for cross-intron and cross-exon U2 recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 are supported by single-molecule data (Figure 4C) showing no U2 binding without 5'SS (C49), similar dwell time distributions for single 5'SS constructs (C50), and dramatic synergistic increase with both 5'SS present (C51-C52). The >2.5-fold increase over additive effects strongly supports synergy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "c8d167ac-0a66-43d4-ad83-e0c13c2994d1",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "U1 binding dynamics are unaffected by U2 binding sites, but U2 binding is accelerated by 5'SS in either cross-intron or cross-exon positions, with synergistic effects when both are present, indicating distinct molecular mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 summarize key findings from the single-molecule experiments. C53-C55 are directly supported by the data, while C56 is a reasonable inference from the synergistic effects observed. The conclusion of distinct mechanisms is logical but not directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "559e63b1-a50b-4cf9-93f8-2b947ce704e0",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A model is proposed where cross-exon U1 recruits splicing factors forming a U2 binding platform, while cross-intron U1-U2 interaction promotes U2 conformational changes for branch site engagement, based on known protein interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C57-C62 present a mechanistic model to explain the observed synergy. While C59-C62 cite established protein interactions, C57-C58 are speculative models not directly tested in this study. The model is plausible and consistent with the data, but lacks direct experimental validation of the proposed mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "63085467-14cb-4cda-b1ea-035e1e7c21ed",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The synergistic effect of the downstream 5'SS is exerted at the U2 recruitment step rather than subsequent spliceosome assembly steps, as evidenced by similar dwell time distributions and binding frequency/occupancy ratios.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 are supported by analysis of dwell time distributions (Figure 4C) showing similar shapes and frequency/occupancy ratios for RNAs with or without downstream 5'SS. This suggests the downstream 5'SS affects recruitment but not subsequent stability, though the inference in C64 involves some interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "6abff45a-ef28-4f19-a5a7-e00f9ffc5e02",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Collaboration between flanking 5'SS is a major contributor to exon inclusion, dramatically increasing U2 recruitment rate and explaining how dynamic U1 binding can strongly affect U2 recruitment, which is crucial for avoiding inappropriate exon skipping.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C69 synthesize the study's findings into biological context. C65 cites prior work on exon skipping frequency, C66-C67 summarize the main findings, C68 provides mechanistic interpretation, and C69 discusses biological significance. The conclusions are well-supported by the data, though C69 involves some speculation about in vivo importance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    },
+    {
+      "id": "e78a4055-dd67-42bf-8102-66d921bd32df",
+      "content_id": "e8539404-06da-42f4-bddf-4fac32733259",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "U1 bound to flanking 5' splice sites acts synergistically to increase U2 recruitment rate and efficiency through distinct mechanisms, which is important for correct splicing of multi-intron pre-mRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 restate the main conclusions of the study. C70-C71 are directly supported by the experimental data showing synergistic effects, while C72 extrapolates to biological importance with appropriate caution ('likely important'). These represent the core findings of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:19.332137Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ce5ee346-3ae1-46a1-b791-d702c160c845",
+      "result_id": "cb8fb1dc-0ff0-44f2-aeda-668872615583"
+    },
+    {
+      "claim_id": "2fa892b6-5371-4f54-aea5-a396b0c75f51",
+      "result_id": "cb8fb1dc-0ff0-44f2-aeda-668872615583"
+    },
+    {
+      "claim_id": "b02a7b31-b3e5-4823-84c8-f33296a36719",
+      "result_id": "cb8fb1dc-0ff0-44f2-aeda-668872615583"
+    },
+    {
+      "claim_id": "12464143-ed5e-4378-8d3d-72e4279954fd",
+      "result_id": "cb8fb1dc-0ff0-44f2-aeda-668872615583"
+    },
+    {
+      "claim_id": "d22160ab-6197-41aa-a472-a29d603d8907",
+      "result_id": "cb8fb1dc-0ff0-44f2-aeda-668872615583"
+    },
+    {
+      "claim_id": "c2dd9962-7ba1-4b0d-8bcf-4453d1565f72",
+      "result_id": "cb8fb1dc-0ff0-44f2-aeda-668872615583"
+    },
+    {
+      "claim_id": "9b1db328-dca3-4da6-86b5-512cb1f1e863",
+      "result_id": "cb8fb1dc-0ff0-44f2-aeda-668872615583"
+    },
+    {
+      "claim_id": "f78fb11d-fc4c-4b46-8f21-9daef0ccaf07",
+      "result_id": "cb8fb1dc-0ff0-44f2-aeda-668872615583"
+    },
+    {
+      "claim_id": "530e6a32-f706-448c-928e-f7d94beb0645",
+      "result_id": "cb8fb1dc-0ff0-44f2-aeda-668872615583"
+    },
+    {
+      "claim_id": "101f4783-b669-4763-b73e-c8e93905cdd7",
+      "result_id": "bd9d9a08-c3f2-4333-9464-6514f86b29ff"
+    },
+    {
+      "claim_id": "e3aa15fa-9b57-4bbd-9b55-4ba618bdd53b",
+      "result_id": "bd9d9a08-c3f2-4333-9464-6514f86b29ff"
+    },
+    {
+      "claim_id": "9379b088-c180-4c65-849f-64de510a8279",
+      "result_id": "bd9d9a08-c3f2-4333-9464-6514f86b29ff"
+    },
+    {
+      "claim_id": "0bb8cb34-70f2-4207-87e0-0e7ff42d4695",
+      "result_id": "bd9d9a08-c3f2-4333-9464-6514f86b29ff"
+    },
+    {
+      "claim_id": "424219d5-b3d9-4b2f-8369-8974a3aaaa4f",
+      "result_id": "bd9d9a08-c3f2-4333-9464-6514f86b29ff"
+    },
+    {
+      "claim_id": "13419163-e565-4af5-b742-5ac0ed988ea8",
+      "result_id": "bd9d9a08-c3f2-4333-9464-6514f86b29ff"
+    },
+    {
+      "claim_id": "95509e7f-b392-4abd-a770-1b92b88dfb4b",
+      "result_id": "bd9d9a08-c3f2-4333-9464-6514f86b29ff"
+    },
+    {
+      "claim_id": "a2275d73-6b94-465b-a65d-58d42310ce2b",
+      "result_id": "2e5d61f6-447c-43ad-b550-4dbc725e9dbf"
+    },
+    {
+      "claim_id": "30548ff8-f51c-4d24-a737-de9e69369541",
+      "result_id": "2e5d61f6-447c-43ad-b550-4dbc725e9dbf"
+    },
+    {
+      "claim_id": "d1f1077c-348c-476f-bba4-909e4c084da0",
+      "result_id": "2e5d61f6-447c-43ad-b550-4dbc725e9dbf"
+    },
+    {
+      "claim_id": "d5c012b5-a953-4af0-882a-999f0ab7f4f8",
+      "result_id": "2e5d61f6-447c-43ad-b550-4dbc725e9dbf"
+    },
+    {
+      "claim_id": "89b772a4-0afb-4f28-bc5c-39dcd090e374",
+      "result_id": "2e5d61f6-447c-43ad-b550-4dbc725e9dbf"
+    },
+    {
+      "claim_id": "6c827d07-6e67-4433-87ec-946ec5f30255",
+      "result_id": "0803f8a5-2ed3-449b-8a95-3b4d3eaf66a5"
+    },
+    {
+      "claim_id": "1db37332-98aa-4ecf-810b-3180a6941eb4",
+      "result_id": "0803f8a5-2ed3-449b-8a95-3b4d3eaf66a5"
+    },
+    {
+      "claim_id": "9211b6b0-4347-4952-bf03-720626456fb9",
+      "result_id": "0803f8a5-2ed3-449b-8a95-3b4d3eaf66a5"
+    },
+    {
+      "claim_id": "7ab8a18a-6ac1-4897-bbfa-8f4689d4d901",
+      "result_id": "0803f8a5-2ed3-449b-8a95-3b4d3eaf66a5"
+    },
+    {
+      "claim_id": "334ed045-54f9-4771-91af-9d4c74304fd0",
+      "result_id": "0803f8a5-2ed3-449b-8a95-3b4d3eaf66a5"
+    },
+    {
+      "claim_id": "761b7eed-4811-4c7c-9b12-1c1dc3c1b529",
+      "result_id": "0803f8a5-2ed3-449b-8a95-3b4d3eaf66a5"
+    },
+    {
+      "claim_id": "ba66329c-354f-45f1-8261-16ba9b14ebf2",
+      "result_id": "a00f6c0d-2959-400c-9e27-6bb0208d4203"
+    },
+    {
+      "claim_id": "db371cde-a909-4045-92f9-e76f14b999f9",
+      "result_id": "a00f6c0d-2959-400c-9e27-6bb0208d4203"
+    },
+    {
+      "claim_id": "0b29e5e3-4e25-4eca-a155-59e0fe3de0d6",
+      "result_id": "a00f6c0d-2959-400c-9e27-6bb0208d4203"
+    },
+    {
+      "claim_id": "4e32d637-2b32-4ce1-a262-60e689192081",
+      "result_id": "a00f6c0d-2959-400c-9e27-6bb0208d4203"
+    },
+    {
+      "claim_id": "3c66d054-05cf-4cfb-a451-2c279812d877",
+      "result_id": "b494fcaa-9dab-49b1-be3b-7f8b8a1cc37c"
+    },
+    {
+      "claim_id": "b845ba3b-965e-4f8c-a387-13d57b87f388",
+      "result_id": "b494fcaa-9dab-49b1-be3b-7f8b8a1cc37c"
+    },
+    {
+      "claim_id": "6119ce68-ac55-465f-9a00-a1e3e24515c1",
+      "result_id": "b494fcaa-9dab-49b1-be3b-7f8b8a1cc37c"
+    },
+    {
+      "claim_id": "6d42f7a7-2041-4a3b-b82a-9e9e97371501",
+      "result_id": "b494fcaa-9dab-49b1-be3b-7f8b8a1cc37c"
+    },
+    {
+      "claim_id": "10a96605-d171-4498-b1da-16b5f8738575",
+      "result_id": "f3e3da8f-e181-43e3-812e-95f37128c1b0"
+    },
+    {
+      "claim_id": "c6f3772c-95e3-484e-8dfd-b2fe1d62376c",
+      "result_id": "f3e3da8f-e181-43e3-812e-95f37128c1b0"
+    },
+    {
+      "claim_id": "890332de-ed70-4ca6-a4dd-d6f0245ee010",
+      "result_id": "f3e3da8f-e181-43e3-812e-95f37128c1b0"
+    },
+    {
+      "claim_id": "951ee501-5350-486e-9cdd-7c7a6f55c358",
+      "result_id": "f3e3da8f-e181-43e3-812e-95f37128c1b0"
+    },
+    {
+      "claim_id": "11ed0621-7b1a-47bb-b023-1977d3382d8d",
+      "result_id": "fef2e66e-ca84-43cf-a98e-30082f03d705"
+    },
+    {
+      "claim_id": "962a0783-b74b-45e5-8499-8e47ee4efaa7",
+      "result_id": "fef2e66e-ca84-43cf-a98e-30082f03d705"
+    },
+    {
+      "claim_id": "ad227e6d-d08f-44a7-abe3-a948e0ebfadf",
+      "result_id": "fef2e66e-ca84-43cf-a98e-30082f03d705"
+    },
+    {
+      "claim_id": "fa23cb31-a372-47ba-add2-e4b7f8002318",
+      "result_id": "fef2e66e-ca84-43cf-a98e-30082f03d705"
+    },
+    {
+      "claim_id": "5fbc477a-6fff-497d-93e2-f4255fe3e893",
+      "result_id": "fef2e66e-ca84-43cf-a98e-30082f03d705"
+    },
+    {
+      "claim_id": "5327fb54-1b60-4d3a-8757-de9f72754793",
+      "result_id": "fef2e66e-ca84-43cf-a98e-30082f03d705"
+    },
+    {
+      "claim_id": "dc39e1ee-eed7-4263-978a-ab2052f2a0da",
+      "result_id": "527be10d-937b-4219-b5fa-5be7f0e14e68"
+    },
+    {
+      "claim_id": "f69da7da-50ee-4651-a689-773f05182e5a",
+      "result_id": "527be10d-937b-4219-b5fa-5be7f0e14e68"
+    },
+    {
+      "claim_id": "9053b716-14ab-4819-8207-123490f2f35c",
+      "result_id": "527be10d-937b-4219-b5fa-5be7f0e14e68"
+    },
+    {
+      "claim_id": "8e1d6eac-fec9-4a59-a099-6413090d7254",
+      "result_id": "cc12bc58-66d1-4ffb-a002-191c98c52bc9"
+    },
+    {
+      "claim_id": "3b07fc7b-03cb-48d6-aae3-d9bd4159ffbf",
+      "result_id": "cc12bc58-66d1-4ffb-a002-191c98c52bc9"
+    },
+    {
+      "claim_id": "0fc9d11c-f350-4ac9-801d-bd8894a07eab",
+      "result_id": "cc12bc58-66d1-4ffb-a002-191c98c52bc9"
+    },
+    {
+      "claim_id": "d82effb4-97dd-4b7f-8c69-bbdfa9210ffa",
+      "result_id": "cc12bc58-66d1-4ffb-a002-191c98c52bc9"
+    },
+    {
+      "claim_id": "74dea58a-adf5-44e8-83eb-1b770e8eb967",
+      "result_id": "c8d167ac-0a66-43d4-ad83-e0c13c2994d1"
+    },
+    {
+      "claim_id": "7f38bcca-74cf-4a98-a746-d5827638008a",
+      "result_id": "c8d167ac-0a66-43d4-ad83-e0c13c2994d1"
+    },
+    {
+      "claim_id": "82959520-9f69-4aa7-9ab7-d5e5d816faae",
+      "result_id": "c8d167ac-0a66-43d4-ad83-e0c13c2994d1"
+    },
+    {
+      "claim_id": "a01aa913-46a6-4677-8d11-d5616b285d66",
+      "result_id": "c8d167ac-0a66-43d4-ad83-e0c13c2994d1"
+    },
+    {
+      "claim_id": "4b54c9e1-ae7a-483a-9b23-2ed8fc8bd82c",
+      "result_id": "559e63b1-a50b-4cf9-93f8-2b947ce704e0"
+    },
+    {
+      "claim_id": "ce849395-7fb9-40d0-a4b9-96ba259fe7a9",
+      "result_id": "559e63b1-a50b-4cf9-93f8-2b947ce704e0"
+    },
+    {
+      "claim_id": "491b5120-5a10-47d0-84d8-90e54fbe1326",
+      "result_id": "559e63b1-a50b-4cf9-93f8-2b947ce704e0"
+    },
+    {
+      "claim_id": "159f7ba4-0cee-41b3-9423-30249b1fbe53",
+      "result_id": "559e63b1-a50b-4cf9-93f8-2b947ce704e0"
+    },
+    {
+      "claim_id": "3b4419b9-bd22-486d-96f3-186d0337ad22",
+      "result_id": "559e63b1-a50b-4cf9-93f8-2b947ce704e0"
+    },
+    {
+      "claim_id": "ed445945-d5f9-4fa3-954d-53b23bc848ed",
+      "result_id": "559e63b1-a50b-4cf9-93f8-2b947ce704e0"
+    },
+    {
+      "claim_id": "1c7b3572-d049-4066-86b7-ba5e3cd106b5",
+      "result_id": "63085467-14cb-4cda-b1ea-035e1e7c21ed"
+    },
+    {
+      "claim_id": "ff9a783e-10f0-449c-b341-02c1e6f69bf9",
+      "result_id": "63085467-14cb-4cda-b1ea-035e1e7c21ed"
+    },
+    {
+      "claim_id": "43b22ddb-7d28-4bee-a348-d68ca0a047d8",
+      "result_id": "6abff45a-ef28-4f19-a5a7-e00f9ffc5e02"
+    },
+    {
+      "claim_id": "b71430d1-bf78-4c26-8666-7db7985605f6",
+      "result_id": "6abff45a-ef28-4f19-a5a7-e00f9ffc5e02"
+    },
+    {
+      "claim_id": "ccca8308-ee1f-42bd-8ed9-c8f446033aa5",
+      "result_id": "6abff45a-ef28-4f19-a5a7-e00f9ffc5e02"
+    },
+    {
+      "claim_id": "38472f09-da31-4c16-8a7e-eb9e0eea98df",
+      "result_id": "6abff45a-ef28-4f19-a5a7-e00f9ffc5e02"
+    },
+    {
+      "claim_id": "911e3182-a51d-41cf-8edb-26d37701dddd",
+      "result_id": "6abff45a-ef28-4f19-a5a7-e00f9ffc5e02"
+    },
+    {
+      "claim_id": "f7136f0e-478c-4493-ab6a-9c2efeef3002",
+      "result_id": "e78a4055-dd67-42bf-8102-66d921bd32df"
+    },
+    {
+      "claim_id": "1a37998c-b522-486a-8b7b-2dedafc22220",
+      "result_id": "e78a4055-dd67-42bf-8102-66d921bd32df"
+    },
+    {
+      "claim_id": "0ae6ca84-4f7f-4a9e-b6e4-d8db8d77235c",
+      "result_id": "e78a4055-dd67-42bf-8102-66d921bd32df"
+    }
+  ],
+  "comparisons": []
+}

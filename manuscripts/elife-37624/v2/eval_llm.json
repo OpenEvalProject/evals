@@ -1,0 +1,149 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Free running clocks (limit cycle attractors) efficiently filter external noise by exploiting their flat direction but are vulnerable to internal noise, while damped 'hourglass' clocks (point attractors) show the opposite pattern. At high internal noise, damped clocks outperform free running clocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C19-C23 collectively demonstrate the core trade-off through Gillespie simulations of Kai-based clocks. The simulations show that free running clocks have lower population variance under external noise (C19) but higher variance under internal noise (C20), with precision measurements (C21-C23) confirming the crossover point. The theoretical mechanism is explained through limit cycle geometry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The trade-off between external and internal noise resistance is generalizable across diverse biochemical oscillator models, with large-amplitude free running oscillations most robust to external noise but fragile to internal noise, while damped oscillations show the opposite pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 demonstrate that the trade-off holds across eight different biochemical oscillator models from the literature (Neurospora, Arabidopsis, mammalian, cell cycle, Goodwin, Brusselator, repressilator). The consistency across diverse systems with different biochemical architectures supports the generality of the finding, though the analysis relies on parameters from original publications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36"
+    ],
+    "result": "The flat direction along limit cycle attractors enables selective filtering of external amplitude fluctuations while retaining phase information, but this same flat direction makes limit cycles susceptible to internal fluctuations. Point attractors lack flat directions and thus resist internal noise better.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C36 provide a mechanistic explanation through dynamical systems theory. The geometric analysis shows that limit cycles constrain trajectory deviations under external noise (C31, C33) while point attractors show larger deviations (C32, C34). The theoretical predictions are supported by simulations showing variance patterns consistent with the geometric constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Under internal noise, limit cycle populations develop significantly higher variance than point attractor populations due to diffusion along the flat direction, while point attractors maintain constant curvature and thus constant variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by Langevin simulations showing the predicted variance patterns. The theoretical explanation based on constant curvature for point attractors versus zero curvature along limit cycles is geometrically sound and matches simulation results in Figure 5b.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "With internal noise alone, there is no speed-precision trade-off; faster entraining clocks (point attractors) are more accurate because slower clocks accumulate more internal noise over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by simulations in Figure 6c showing that point attractors both entrain faster and maintain higher precision under internal noise. The reasoning that slower clocks are exposed to cumulative internal noise for longer periods is logically sound and consistent with the diffusion-based model of internal noise.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Experiments on the Kai system reveal limit cycles shifted relative to each other in phosphorylation space at different ATP levels corresponding to day and night conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by citation to Leypunskiy et al., 2017 and reproduced experimental data shown in Figure 3a. This provides empirical foundation for the limit cycle model used in the theoretical analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "The P. marinus clock lacks the KaiA-mediated negative feedback loop found in S. elongatus and consequently decays to distinct day or night states in constant conditions, representing a damped 'hourglass' clock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 are supported by citations to Dufresne et al., 2003 and Holtzendorff et al., 2008. These establish the biochemical basis for P. marinus as a damped oscillator model system, though the authors note the clock is not fully characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "P. marinus inhabits the open ocean with potentially more regular external conditions than S. elongatus's freshwater habitat, and has reduced genome/cell size linked to low protein copy number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 provide ecological and cellular context for why P. marinus might favor a damped clock. C45 is supported by citation to Bryant, 2003. C44 is presented as a hypothesis about environmental regularity that could explain clock architecture differences, though direct measurements of environmental variability in these habitats are not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Independent studies provide corroborating evidence: Monti et al. (2018) confirmed limit cycles are more robust to external noise, and Chew et al. (2018) experimentally showed S. elongatus is less robust to internal noise than P. marinus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 cite independent work that supports the main findings. These citations strengthen the conclusions by showing convergent evidence from both theoretical (Monti et al.) and experimental (Chew et al.) approaches, though the papers are listed as 'in press' and full details are not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C46"
+    ],
+    "result": "Background context: Circadian clocks are widespread across organisms, exist in both free-running and hourglass forms, and face both external noise from weather fluctuations and internal noise from finite copy number and other sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7, C13-C16, and C46 establish the biological and physical context for the study. These are well-established facts supported by appropriate citations and general knowledge in the field. They provide necessary background but are not novel findings of this work.",
+    "result_type": "MINOR"
+  }
+]

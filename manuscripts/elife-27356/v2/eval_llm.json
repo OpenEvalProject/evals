@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Suspension-induced differentiation of keratinocytes shows a marked drop in colony-forming ability between 4 and 8 hours, correlating with increased differentiation markers and decreased stem cell markers. At 4 hours, transcripts and proteins are only weakly correlated (Pearson correlation 0.19), suggesting post-transcriptional regulation during commitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C27 provide converging evidence from clonogenicity assays, RT-qPCR, immunofluorescence, transcriptomics, proteomics, and correlation analysis. The temporal window of commitment (4-8 hr) is well-defined by multiple independent measurements. The weak transcript-protein correlation at 4 hr specifically supports post-transcriptional mechanisms at commitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Phosphoproteomics analysis identified over 3500 high-confidence phosphorylation sites, with approximately two-thirds showing dephosphorylation at 4 hours that could not be attributed to decreased protein abundance. 47 differentially expressed phosphatases were identified between 0 and 4 hours, with 22 upregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by SILAC-MS phosphoproteomics data with appropriate quality thresholds (Andromeda score \u226530). The discordance between protein abundance and phosphorylation changes (C30) is demonstrated by direct comparison in Figure 1k. The identification of 22 upregulated phosphatases is based on intersection of proteomic and genomic datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Five phosphatases (DUSP6, PPTC7, PTPN1, PTPN13, and PPP3CA) promote differentiation: their knockdown significantly increased clonal growth (p<0.001), increased colony size, delayed loss of colony-forming ability in suspension, and delayed changes in differentiation markers without affecting growth rate or causing apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 are supported by multiple complementary assays: clonogenicity assays with statistical significance (p<0.001), colony size measurements, RT-qPCR for differentiation markers (TP63, TGM1), and live-cell imaging. The consistency across multiple readouts and the lack of effects on growth rate or apoptosis strengthen the conclusion that these phosphatases specifically regulate commitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C3"
+    ],
+    "result": "DUSP10 antagonizes commitment: its knockdown significantly reduced clonogenicity (p<0.001) and decreased keratinocyte growth rate, contrasting with the other five phosphatases. DUSP10 expression remained high at 8 hours while the pro-commitment phosphatases declined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 and C3 are supported by clonogenicity assays, live-cell imaging, and gene expression data. The opposite effects of DUSP10 compared to the other phosphatases (reduced vs. increased clonogenicity) and its distinct expression kinetics provide strong evidence for its antagonistic role in commitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "In reconstituted epidermis, knockdown of pro-commitment phosphatases did not prevent terminal differentiation but increased TP63-positive cells, increased epidermal thickness (except PTPN13), and resulted in suprabasal expression of Ki67 and TP63, with many cells co-expressing TP63 and IVL. These effects were confirmed with both siRNA and shRNA approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 are supported by histological analysis, immunofluorescence, and quantification in reconstituted epidermis using both transient (siRNA) and stable (shRNA) knockdown. The automated quantification of epidermal thickness adds rigor. The co-expression of stem (TP63) and differentiation (IVL) markers in suprabasal cells is a key phenotype suggesting disrupted commitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C2"
+    ],
+    "result": "The five pro-commitment phosphatases promote differentiation by negatively regulating ERK MAPK signaling. GO analysis identified ErbB1, adherens junctions, insulin, and MAPK signaling as top pathways affected by dephosphorylation at 4 hours. ERK1/2 phosphorylation sites were among the top 15 most decreased, and phosphatase knockdown resulted in higher phospho-ERK1/2 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 and C2 are supported by GO analysis of phosphoproteomics data, identification of specific ERK1/2 phosphorylation sites, and western blot validation showing increased phospho-ERK1/2 upon phosphatase knockdown. The consistency with prior literature (C54, C58) strengthens the interpretation. The mechanistic link between phosphatase activity and ERK regulation is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "AP1 transcription factors mediate epidermal differentiation downstream of MAPK signaling. Different AP1 factors changed with different kinetics during differentiation, with MAF subfamily members (MAF, MAFB, MAFG) significantly increasing. Knockdown of pro-commitment phosphatases reduced MAF AP1 factor induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are supported by RT-qPCR measurements of AP1 family members during differentiation and following phosphatase knockdown. The connection to prior literature (C59, C60, C62) is well-cited. The reduction in MAF factor induction upon phosphatase knockdown provides a mechanistic link between phosphatase activity, ERK regulation, and transcriptional control of differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "DUSP10 differs mechanistically from DUSP6: DUSP10 knockdown did not increase ERK1/2 activity but increased phospho-p38 at 0 hours. DUSP10 and DUSP6 differentially regulated AP1 factors. Overexpression of DUSP10 increased colony formation while DUSP6 overexpression reduced it; a phosphatase-dead DUSP6 mutant had no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 are supported by western blots for phospho-ERK1/2 and phospho-p38, RT-qPCR for AP1 factors, and clonogenicity assays following inducible overexpression. The use of a phosphatase-dead mutant (C69) provides strong evidence that DUSP6's effects require its catalytic activity. The differential regulation of p38 vs. ERK by DUSP10 vs. DUSP6 is consistent with known substrate specificities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C4",
+      "C5"
+    ],
+    "result": "Boolean network modeling reveals that a single network cannot recapitulate differentiation dynamics; instead, the network topology changes over time. At 4 hours (commitment), interactions are predominantly positive, creating instability, with DUSP6 positively regulated by all other phosphatases and a self-activating loop. At other time points, interactions are predominantly negative. This identifies a mandatory switch between stable stem and differentiated states via an unstable committed state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C78, C4, and C5 are supported by computational modeling using RE:IN and RE:SIN software applied to RT-qPCR data from knockdown experiments at multiple time points. The finding that positive feedback dominates at 4 hr is consistent with established network theory (C73) and the experimental observation of a narrow commitment window. The modeling approach is rigorous and the conclusions are logically derived from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Pharmacological perturbations validate the network model: both TSA and PKCi blocked terminal differentiation, but TSA-treated cells still underwent commitment while PKCi-treated cells did not. The phosphatase expression patterns under these treatments were compatible with different network states, with PKCi arresting cells in the stem state and TSA stabilizing the committed state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C87 are supported by clonogenicity assays, RT-qPCR measurements, and Boolean network analysis of drug-treated cells. The differential effects of TSA vs. PKCi on commitment (C81, C82) provide strong validation of the commitment window. The compatibility of phosphatase expression patterns with predicted network states (C85-C87) demonstrates the predictive power of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C7"
+    ],
+    "result": "Epidermal differentiation can be described by two saddle-node bifurcations in dynamical systems terminology, where stem and differentiated states are stable while commitment is inherently unstable and serves as a biological switch. An auto-regulatory phosphatase network maintains epidermal homeostasis by controlling the onset and duration of commitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C89, and C7 represent a theoretical synthesis of the experimental and modeling results. The saddle-node bifurcation framework is a standard approach in dynamical systems theory and is appropriately applied here. The conclusion that commitment is an unstable state is well-supported by the predominance of positive feedback at 4 hr and the narrow temporal window of commitment observed experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C6"
+    ],
+    "result": "Phosphatase expression is spatially regulated in human epidermis: DUSP6, PTPN1, and PPP3CA are highly expressed in integrin-high stem cell clusters, PPTC7 is enriched in integrin-low regions, and PTPN13 and DUSP10 are uniformly expressed. The inverse relationship between PPP3CA and PPTC7 expression agrees with network analysis showing negative regulation of PPP3CA by PPTC7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 and C6 are supported by wholemount immunofluorescence imaging of human epidermis with quantification. The correlation between integrin levels and stem cell identity is well-established (cited). The spatial patterns are consistent with the network interactions derived from knockdown experiments (C93), providing independent validation of the network model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Spatial regulation of phosphatases can be recreated in vitro on topographic substrates mimicking the epidermal-dermal interface. DUSP6 clusters on tops of features where stem cells accumulate, while DUSP10 is uniformly expressed. This indicates spatial regulation is independent of dermal cell signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are supported by immunofluorescence imaging on PDMS topographic substrates. The recapitulation of spatial patterns in vitro without dermal cells (C97) is a strong inference supported by the experimental design. This demonstrates that topographical cues alone can regulate phosphatase expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "The 22 upregulated phosphatases are dynamically expressed during calcium-induced stratification of human keratinocytes and differentiation of reconstituted human epidermis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C33 are supported by analysis of published datasets with appropriate citations. This provides independent validation that the identified phosphatases are relevant to epidermal differentiation in multiple experimental contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The key role of DUSP6 at commitment fits with its regulation by Serum Response Factor and its importance in controlling ERK MAPK signaling kinetics. The involvement of multiple phosphatases may protect against premature differentiation, and their patterned distribution suggests different phosphatases regulate commitment at different positions along the basement membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 are interpretations connecting the findings to prior literature (C98, C99) and proposing functional implications (C100, C101). While speculative, these interpretations are reasonable given the data. C98 and C99 are well-supported by citations. C100 and C101 are logical inferences but would benefit from additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The phenotype following phosphatase knockdown (suprabasal TP63+/IVL+ cells, upregulated ERK) mimics features of psoriatic lesions. This suggests commitment may be abnormally stabilized in psoriasis, and deregulated phosphatase expression could contribute to psoriasis pathophysiology through regulation of inflammatory cytokines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C106 connect the experimental findings to psoriasis. C102 is supported by the observation of similar phenotypes and a citation about ERK upregulation in psoriasis. However, C104 and C106 are explicitly speculative. While the connection is plausible and C105 is supported by citation, direct evidence linking the phosphatase network to psoriasis pathophysiology is lacking. This represents a hypothesis for future work rather than a demonstrated result.",
+    "result_type": "MINOR"
+  }
+]

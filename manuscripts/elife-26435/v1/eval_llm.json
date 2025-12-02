@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "UBQLN1 depletion in BJAB cells causes profound loss of proliferation that is reversible and correlates with the extent of UBQLN1 knockdown. After 48 hr of doxycycline treatment, BJAB cells lost >85% of UBQLN1 protein and showed dramatic reduction in survival and proliferation that was rapidly reversed upon doxycycline removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 provide converging evidence from western blot (C11), proliferation assays (C12), dose-response correlation (C13), and reversibility experiments (C14) that collectively demonstrate UBQLN1 is required for BJAB cell proliferation. The reversibility upon doxycycline removal (C14) provides strong evidence that the effect is specifically due to UBQLN1 depletion rather than off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "UBQLN1 depletion in BJAB cells leads to cytosolic accumulation of mislocalized nucleus-encoded mitochondrial proteins. Proteomic analysis identified 120 mitochondrial proteins enriched in cytosol, with strong enrichment of hydrophobic proteins, and 10-20 fold increase in cytosolic ATP5G1. The absence of mitochondrially-encoded proteins suggests this is not due to mitochondrial rupture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C15-C21 provide comprehensive proteomic evidence (TMT-MS3 analysis of >5100 proteins), bioinformatics validation (DAVID pathway analysis, Mitocarta 2.0 cross-referencing, GRAVY score analysis), and targeted validation (ATP5G1 western blot). The absence of mitochondrially-encoded proteins (C18) provides important negative control evidence ruling out mitochondrial damage. This represents a major finding identifying UBQLN1 substrates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Ubqln1-/- mice show selective B cell abnormalities, particularly deficiency in peritoneal B1a cells, with modest dysregulation of splenic marginal zone and follicular B cells, but otherwise normal B cell development and serum immunoglobulin levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C30 provide systematic immunophenotyping data showing specific B1a cell deficiency (C25) while other B cell compartments remain largely normal (C27-C29). The B1a deficiency is particularly significant given that these cells uniquely depend on BCR signaling for self-renewal (C26), providing a mechanistic link to the in vitro findings. The data are internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Ubqln1-/- B cells show profound defects in BCR-stimulated proliferation and cell size increase, but normal responses to LPS stimulation. The defect is specific to Ubqln1, as Ubqln2-/- and Ubqln4-/- B cells show normal responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 demonstrate BCR-specific proliferation defects through multiple assays (viability, CFSE dilution, cell size) with appropriate controls (LPS stimulation, other Ubqln family members). The specificity for BCR vs LPS stimulation (C35) and for Ubqln1 vs other family members (C36) strengthens the conclusion. However, the mechanism underlying this specificity requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Proteomic analysis of BCR-stimulated Ubqln1-/- B cells shows accumulation of ER and mitochondrial membrane proteins and enrichment of hydrophobic proteins similar to BJAB cells, though differences are smaller in whole-cell lysates compared to isolated cytosol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 provide proteomic evidence from primary B cells that parallels the BJAB findings. The authors appropriately note that whole-cell extracts show smaller differences than cytosolic fractions (C41) and provide a reasonable explanation (inability to resolve mislocalized vs properly localized proteins). DAVID pathway analysis (C42) and GRAVY score analysis (C43) support the conclusions, though the mitochondrial signature is less clear than in BJAB cytosol.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "BCR stimulation induces prolonged mitochondrial depolarization distinct from LPS stimulation, while both stimuli induce mitochondrial expansion and superoxide production. Mitochondrial function (ATP production, oxygen consumption) remains normal in Ubqln1-/- cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 provide multiple lines of evidence for BCR-specific mitochondrial depolarization (JC-1 assay) while showing normal mitochondrial expansion, superoxide production, ATP levels, and oxygen consumption. The finding that mitochondrial function is preserved (C47-C48) is important for the authors' model that toxicity arises from cytosolic accumulation rather than mitochondrial dysfunction. Data are well-controlled with appropriate comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Ubqln1-/- B cells show reduced apoptosis and impaired cell cycle entry after BCR ligation, with cells blocked in G0/G1. These cells are less likely than WT to both enter cell cycle and undergo apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 demonstrate cell cycle defects through Annexin V staining and DNA content analysis. The finding of reduced apoptosis (C50) combined with reduced cell cycle entry (C51) indicates a cytostatic rather than cytotoxic effect. The data are internally consistent and support the conclusion that Ubqln1-/- cells are arrested rather than dying.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Proximal BCR signaling (SYK, ERK1/2, AKT, NF\u03baB activation) and gene expression responses are intact in Ubqln1-/- B cells, indicating the proliferation defect is not due to impaired BCR signal transduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 provide important negative results showing normal proximal signaling by western blot and normal gene expression by RNAseq. This effectively rules out defective BCR signaling as the cause of proliferation defects and redirects attention to post-transcriptional mechanisms. The RNAseq data (C54) is particularly strong evidence as it provides genome-wide assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Ubqln1 is required for CCND2 and CCND3 protein upregulation after BCR stimulation despite normal mRNA induction. c-MYC protein accumulates normally, indicating selective post-transcriptional regulation of cyclins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 identify a specific molecular defect: normal cyclin D mRNA (C57) but absent protein accumulation (C59-C60) in Ubqln1-/- cells, while c-MYC is normal at both levels (C57-C58). This is a key mechanistic finding linking UBQLN1 function to cell cycle progression. The data are clear and well-controlled, though the mechanism of this selective effect requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Proteasome inhibition with MG132 does not rescue CCND2 protein levels in Ubqln1-/- cells, indicating that increased proteasomal degradation does not account for the lack of CCND2 accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 use proteasome inhibitor experiments to test whether enhanced degradation explains low CCND2 levels. The finding that MG132 increases c-MYC (C63) but not CCND2 (C65-C66) in WT cells, and fails to rescue CCND2 in Ubqln1-/- cells (C66), effectively rules out enhanced degradation as the mechanism. This redirects attention to translation defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Ubqln1-/- B cells show marked defect in global protein synthesis after BCR stimulation but not in resting state or after LPS stimulation. The defect is not due to increased proteasomal degradation and is also observed in UBQLN1-depleted BJAB cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C75 provide comprehensive evidence for translation defects using AHA incorporation assays in both primary B cells and BJAB cells. The BCR-specificity (C70-C72), normal resting synthesis (C69), and independence from proteasomal degradation (C73-C74) are well-demonstrated. The ~4-fold difference between LPS and BCR stimulation (C72) is particularly striking and mechanistically important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "TNP-ficoll immunization produces normal IgM responses in Ubqln1-/- mice. Co-stimulation with IL-4 or anti-CD40 partially rescues the viability and cell size defects of Ubqln1-/- B cells, while BAFF stimulation shows no Ubqln1-dependent differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 show that in vivo immune responses and co-stimulation can compensate for Ubqln1 deficiency. The TNP-ficoll response (C37) and rescue by IL-4/CD40 (C38) are consistent with the model that additional signals can overcome the BCR-specific defect. However, the mechanism of rescue is not fully elucidated and may involve effects on mitochondrial depolarization as discussed later.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "UBQLN1 depletion in BJAB cells causes rapid but reversible loss of proliferation, with proteomic analysis revealing accumulation of hydrophobic mitochondrial proteins in cytosol, consistent with prior work by Itakura et al. BJAB cells may be hypersensitive due to high mitochondrial protein expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 summarize and contextualize the BJAB findings. The consistency with Itakura et al. (C78) strengthens the conclusions. The speculation about BJAB hypersensitivity (C79) is reasonable given their 'Oxphos' classification but remains speculative without direct comparison of mitochondrial protein expression levels across cell lines.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "BCR ligation induces greater and more prolonged mitochondrial depolarization than TLR4 ligation, which attenuates mitochondrial protein import. The increased requirement for Ubqln1 in BCR-stimulated cells depends on the combination of increased mitochondrial protein synthesis and decreased import. IL-4 or CD40 co-stimulation ameliorates mitochondrial depolarization, explaining the rescue of proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 provide a mechanistic model linking BCR-specific mitochondrial depolarization to Ubqln1 requirement. The model is well-supported by the data showing BCR-specific depolarization (C80), established effects of depolarization on import (C81), and rescue by co-stimulation (C83-C84). However, C84 is somewhat inferential as the authors cite literature for the effect of IL-4/CD40 on depolarization rather than directly demonstrating it.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Mitochondria show no functional defect in Ubqln1-/- BCR-stimulated cells, suggesting that mitochondrial import machinery meets biogenesis demands and that nuclear-encoded mitochondrial proteins are made in excess. The toxic event relates to cytosolic accumulation rather than mitochondrial dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 draw important conclusions from the normal mitochondrial function data. The inference that proteins are made in excess (C86) is reasonable given normal function despite presumed reduced import. The conclusion that toxicity is cytosolic (C87) is well-supported by the combination of normal mitochondrial function and cytosolic protein accumulation. This is a key conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The Ubqln1-dependent step in BCR-induced proliferation is translation of induced mRNAs including Cyclin Ds. Accumulation of mislocalized mitochondrial proteins can depress cytosolic protein synthesis through a cellular stress response, as demonstrated in yeast studies. The protein synthesis defect in Ubqln1-/- cells is likely due to mislocalized mitochondrial protein accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 synthesize the findings into a mechanistic model. The translation defect (C88) is well-supported by the data. The connection to mislocalized mitochondrial proteins (C89-C92) is supported by citations to yeast studies showing similar phenomena. However, the specific molecular mechanism of translation inhibition in mammalian cells remains unclear and would benefit from additional investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "B cells are exceptionally dependent on UBQLN1 due to high relative expression. Loss-of-function mutations in UBQLN2 play an etiological role in familial ALS-FTD. Prolonged mitochondrial depolarization paired with amplified mitochondrial protein expression may represent a unifying stress requiring Ubqln expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C93 is an inference about expression patterns that is not directly demonstrated. Claim C94 cites established literature on UBQLN2 and ALS-FTD. Claim C95 is explicitly presented as a hypothesis and represents speculation about broader implications. While these claims provide important context and future directions, they extend beyond what is directly demonstrated in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Ubiquilins are ubiquitin receptors with UBL domains that bind proteasomes and UBA domains that bind ubiquitin chains. In yeast, DSK2 is required for degradation of polyubiquitinated proteins. UBQLN1 binds mitochondrial transmembrane proteins and delivers mislocalized mitochondrial proteins for proteasomal degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C10 provide background on Ubquilin family function based on established literature. These are well-supported by citations and represent accepted knowledge in the field. They provide essential context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C33",
+      "C56"
+    ],
+    "result": "B cells activated via BCR undergo c-MYC-dependent increase in cell size and protein content before cell division. Of the D-type cyclins, only Ccnd2 is required for murine B1a cell development, implying a specialized role in BCR-induced proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C56 cite established literature on B cell activation and cyclin D function. These provide important biological context for understanding why CCND2 deficiency would specifically affect BCR-induced proliferation and B1a cell development.",
+    "result_type": "MINOR"
+  }
+]

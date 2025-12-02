@@ -1,0 +1,346 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The SpA signal peptide is cleaved at the YSIRK/GXXS motif between Leu12 and Gly13. This was demonstrated through Edman degradation and MALDI-TOF mass spectrometry analysis of purified SpAED precursor species, identifying cleavage products SpAED-2 (N-terminus Gly13) and SpAED-3 (N-terminus Thr23).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C39-C42 are well-supported by direct biochemical evidence from Edman degradation (Figure 3) and mass spectrometry (Table 1). The cleavage site between Leu12 and Gly13 is precisely mapped using orthogonal analytical methods, providing strong convergent evidence for this novel finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C28",
+      "C43",
+      "C44"
+    ],
+    "result": "Specific amino acid substitutions and deletions in the YSIRK/GXXS motif (\u0394YSIRK, \u0394IA, \u0394GIAS, I9S, R10A, G15L, S18L) impair SpA precursor processing and secretion. The R10A substitution alters the cleavage site, while S18L and \u0394IA diminish cleavage without altering the site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28, C43-C44 are supported by systematic mutagenesis data (Figures 1-3) showing differential effects of mutations on precursor accumulation, processing, and cleavage site specificity. The immunoblotting, pulse-chase, and Edman degradation data converge to support structure-function relationships within the YSIRK/GXXS motif.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C31",
+      "C33",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "SpA signal peptide mutants defective for YSIRK/GXXS cleavage (particularly S18L, R10A, and \u0394IA) exhibit impaired septal secretion, with precursors accumulating in different cellular compartments and showing delayed processing and reduced cross-wall localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C30-C31, C33, C36-C38 are supported by cell fractionation (Figure 2a-b), pulse-chase (Figure 2c), and fluorescence microscopy (Figure 2d-e) data. The convergent evidence from multiple experimental approaches demonstrates that mutations affecting YSIRK/GXXS cleavage impair the septal secretion pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C107"
+    ],
+    "result": "The SpAED/S18L mutant co-purifies with SecA, SecDF, and LtaS, as well as other septal membrane proteins involved in peptidoglycan, wall teichoic acid, and lipoteichoic acid synthesis. SecA specifically co-purifies with SpAED/S18L but not with wild-type SpAED or SpAED/SP-SasF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C46-C49, C107 are supported by crosslinking and affinity purification experiments (Figure 4, Supplementary file 1). The differential co-purification of SecA with the S18L mutant versus wild-type provides evidence for SecA interaction with stalled precursors. However, the claim that SecA 'binds directly' (C107) is an inference that may overstate the evidence, as crosslinking could capture indirect associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C60",
+      "C62",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "SecA depletion blocks SpA precursor targeting to septal membranes, causing precursors to accumulate at polar membranes instead. Under SecA-depleting conditions, SpA precursor processing is slowed from 60 seconds to about 5 minutes, and cross-wall localization is abolished.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C60, C62, C79-C81 are supported by pulse-chase experiments (Figure 6a), fluorescence microscopy of cross-wall deposition (Figure 6b-c), and intracellular localization studies (Figure 8). The conditional SecA depletion system provides clear evidence that SecA is required for septal targeting of SpA precursors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C52",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "SecA is essential for S. aureus growth. The Pspac-secA strain grows normally with IPTG but exhibits growth retardation 6 hours after SecA depletion, despite SecA being depleted by 3 hours. This delayed growth defect suggests SecA depletion impairs replenishment of essential translocated proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C52, C54-C58 are supported by growth curves (Figure 5b), colony formation assays (Figure 5c), and immunoblotting (Figure 5d). The temporal disconnect between SecA depletion (3 hr) and growth defect (6 hr) is appropriately interpreted as reflecting downstream consequences of impaired protein secretion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "SecA is essential for secretion of both YSIRK/GXXS-containing precursors (Geh) and canonical signal peptide precursors (Nuc). SecA depletion reduces secretion of both protein types while not affecting membrane-localized sortase A production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C64-C66 are supported by immunoblotting data (Figure 6e) showing reduced secretion of Geh and Nuc upon SecA depletion, with sortase A serving as an appropriate control. This demonstrates SecA's general role in protein secretion beyond just YSIRK/GXXS-containing proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C84",
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Deletion of secDF diminishes but does not abolish SpA secretion into the cross-wall. The \u0394secDF mutant accumulates SpA precursors and shows reduced secretion of SpA, Geh, and Coa. Unlike SecA-depleted cells, secDF mutants retain some SpA precursor localization to septal membranes, suggesting SecDF aids translocation but is not required for targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C84, C87, C89-C92 are supported by immunoblotting (Figure 9a-b) and fluorescence microscopy (Figure 9c) data. The complementation experiments and comparison with SecA depletion phenotypes support the interpretation that SecDF functions in translocation rather than targeting. The distinction between SecDF and SecA phenotypes is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C94",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "LtaS depletion abolishes SpA precursor trafficking to septal membranes, causing mislocalization to polar membranes. This results in SpA deposition into polar peptidoglycan rather than cross-wall, diminishing overall surface distribution without affecting secretion of other proteins (Geh, Nuc).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C94, C96-C99 are supported by fluorescence microscopy (Figure 10b-d, f) and immunoblotting (Figure 10e) using the conditional LtaS depletion strain. The selective effect on SpA localization without affecting Geh/Nuc secretion supports the model that lipoteichoic acid synthesis is specifically required for septal targeting of YSIRK/GXXS precursors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C111",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "SecA-sfGFP localizes throughout the plasma membrane in S. aureus, including both septal and polar membranes, and is not spatially restricted to septal membranes or microdomains. Overexpression causes accumulation throughout plasma membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111, C76-C78 are supported by fluorescence microscopy of functional SecA-sfGFP fusion protein (Figure 7e). The complementation data (Figure 7b) validates that the fusion is functional. The broad membrane distribution is clearly documented, though the resolution of conventional fluorescence microscopy may limit detection of potential microdomains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The secA:sfGFP fusion is functional, as demonstrated by complementation of the Pspac-secA growth defect and restoration of SpA precursor processing. Even low levels of SecA-sfGFP (without ATc induction) restore processing, while ATc-induced overexpression accelerates processing beyond wild-type levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 are supported by growth complementation (Figure 7b), immunoblotting (Figure 7c), and pulse-chase experiments (Figure 7d). The dose-dependent effects on processing rate provide additional validation of SecA-sfGFP functionality and suggest SecA may be rate-limiting for secretion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C115"
+    ],
+    "result": "S. aureus mutants lacking EzrA, PBP2, PurL, ClpB, ClpC, PknB, or several other proteins that co-purified with SpAED/S18L did not exhibit defects in septal precursor translocation. RseP is not involved in YSIRK-GXXS signal peptide cleavage or septal secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C115 are supported by fluorescence microscopy screening (Figure 4\u2014figure supplement 1). This negative data appropriately narrows the list of candidate factors from the crosslinking experiment, though the screening appears qualitative rather than quantitative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "Precursor cleavage between Gly22 and Thr23 (within the hydrophobic core) was observed for all SpA variants, suggesting this represents a proteolytic event unrelated to YSIRK/GXXS motif function in septal targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by Edman degradation data (Figure 3) showing this cleavage occurs in all variants regardless of YSIRK/GXXS motif integrity. The interpretation that this is unrelated to septal targeting is reasonable given its invariance across functional and non-functional mutants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C88"
+    ],
+    "result": "S. aureus rnd2 and rnd3 mutants exhibit wild-type levels of SpAED secretion, and the \u0394secDF \u0394rnd23 triple mutant phenocopies the \u0394secDF single mutant. This indicates that Rnd2 and Rnd3 do not contribute to protein secretion in S. aureus, unlike SecDF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86, C88 are supported by immunoblotting data (Figure 9a-b). The genetic epistasis analysis appropriately demonstrates that the secretion defect is attributable to secDF loss rather than rnd2/rnd3, clarifying the roles of these related RND family proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C21",
+      "C29",
+      "C32",
+      "C34",
+      "C35",
+      "C59",
+      "C61"
+    ],
+    "result": "Wild-type SpAED is efficiently processed and secreted, with precursors found in cytoplasm and membrane, mature product in culture supernatant, and processing occurring within 60 seconds. Full-length SpA localizes to the cross-wall compartment, while SpASP-SasF (with canonical signal peptide) deposits into peripheral cell wall.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C29, C32, C34-C35, C59, C61 establish baseline wild-type behavior using cell fractionation (Figure 2a), pulse-chase (Figure 2c, 6a), and fluorescence microscopy (Figure 2d, 6b). These controls are essential for interpreting mutant phenotypes and are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "The K11A substitution in the YSIRK motif had no effect on SpAED precursor processing and secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by immunoblotting data (Figure 1b-c) showing wild-type-like processing and secretion. This negative result helps define which residues within the YSIRK motif are functionally important.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Six hours after SecA depletion, S. aureus cells become grossly enlarged with thin peptidoglycan layers and aberrant cross-wall formation, and SpA cannot be detected in the bacterial envelope.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is supported by fluorescence microscopy (Figure 6d). This morphological phenotype is consistent with impaired cell wall synthesis due to defective secretion of cell wall synthesis enzymes, though the specific mechanisms are not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C108",
+      "C109",
+      "C110",
+      "C113",
+      "C114"
+    ],
+    "result": "The authors propose a speculative model in which: (1) YSIRK/GXXS motif cleavage represents a mechanism for precursor translocation at septal membranes, potentially by relieving inhibition of the hydrophobic core; (2) septal accumulation of LtaS and lipoteichoic acids functions as a determinant for SecA-mediated targeting; (3) following cleavage, truncated SpA is translocated with aid from proton-motive force and SecDF chaperone activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C106, C108-C110, C113-C114 are explicitly speculative interpretations of the data. While the model is consistent with the observations, key mechanistic details remain untested: the protease responsible for YSIRK/GXXS cleavage is unknown, direct interactions are not demonstrated, and the proposed inhibitory mechanism is not validated. The model provides a framework for future work but lacks direct experimental support for the proposed mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "The broad membrane distribution of SecA is consistent with its proposed role in promoting precursor translocation at both polar and septal membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 is a reasonable inference from the SecA-sfGFP localization data (Figure 7e) combined with the functional data showing SecA is required for both septal and polar secretion. The interpretation is appropriately conservative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Background claims establishing prior knowledge about S. aureus surface protein secretion, the YSIRK/GXXS motif, sortase-mediated anchoring, SpA structure, and the distribution of YSIRK/GXXS motifs across bacterial species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C20, C100-C103 represent established knowledge from prior literature, appropriately cited throughout. These provide necessary context for the current work and are well-supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C8",
+      "C51",
+      "C82",
+      "C83",
+      "C93"
+    ],
+    "result": "Background claims about the essential nature and functions of SecA, SecDF, and LtaS based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C51, C82-C83, C93 are supported by appropriate citations to prior work. These establish the known functions of the secretion machinery components studied in this work.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,342 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Different bacterial pathogens produce dramatically different infection outcomes in Drosophila melanogaster, ranging from complete lethality (P. alcalifaciens, S. marcescens) to nearly complete survival (E. coli, E. carotovora) to intermediate outcomes where only a fraction of hosts die (P. rettgeri, E. faecalis, P. burhodogranariea).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are directly supported by survival data in Figure 1A showing clear differences in mortality across bacterial species. The experimental design is appropriate with controlled inoculum doses and the survival curves clearly demonstrate the three categories of outcomes described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Genetically identical, co-housed Drosophila given identical infections experience stochastic variation in infection outcomes, with the probability of survival varying among host genotypes but not being explained by differences in CO2 exposure during handling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 are well-supported by data from isogenic DGRP lines (Figure 1B) showing variable outcomes within genotypes and differences between genotypes. The CO2 control experiment (Figure 1\u2014figure supplement 1) appropriately rules out a potential confounding variable. The use of controlled genetics, age, and microbiota strengthens the conclusion of stochastic variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Surviving flies rarely clear bacterial infections completely but instead maintain chronic persistent infections at a stable bacterial load termed the Set Point Bacterial Load (SPBL), which varies by bacterial species, host genotype, and initial inoculum size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14, C87-C89 are supported by bacterial load measurements at 7 days post-injection (Figure 1C) and longitudinal data (Figure 1\u2014figure supplement 2). The data clearly show persistent infections with measurable bacterial loads in most surviving flies. Statistical comparisons demonstrate significant differences in SPBL across bacteria and host genotypes. The dose-dependence (Figure 1\u2014figure supplement 2B) is appropriately demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C55"
+    ],
+    "result": "Flies that die from infection do so at a stereotypical Bacterial Load Upon Death (BLUD) that is constant for a given host-pathogen combination regardless of time to death, but varies significantly across bacterial species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20, C55 are supported by bacterial load measurements from recently dead flies (Figure 2A-C). The data show remarkably consistent BLUD values within each bacterium-host combination despite variation in time to death (Figure 2B). The sampling protocol (within 30 minutes of death) is appropriate to avoid post-mortem bacterial proliferation. Statistical analyses confirm significant differences across bacterial species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The BLUD of P. rettgeri varies significantly across Drosophila species and D. melanogaster genotypes but does not depend on the initial inoculum dose, although higher doses lead to earlier death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 are supported by data in Figures 2D-E and Figure 2\u2014figure supplement 1. The variation across host species and genotypes is statistically significant. The dose-independence of BLUD (Figure 2\u2014figure supplement 1B) combined with dose-dependent survival kinetics (Figure 2\u2014figure supplement 1C-D) is a key finding that distinguishes BLUD as a tolerance parameter rather than a resistance parameter.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C72",
+      "C73",
+      "C84"
+    ],
+    "result": "The BLUD is independent of host immune function and represents a measure of disease tolerance (the maximal bacterial load that can be sustained before death) rather than resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C72-C73, C84 are supported by data showing no significant differences in BLUD between immune-deficient and wild-type hosts (Figure 2F). The interpretation that BLUD measures tolerance is logical given its independence from immune function. However, the claim is somewhat inferential as direct tolerance mechanisms are not identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C83"
+    ],
+    "result": "The BLUD provides a novel measure of bacterial pathogenicity or toxicity, representing the minimal density of bacteria that kills a host.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74 and C83 are supported by the observation that BLUD varies across bacterial species but is constant for a given bacterium (Figure 2C). The interpretation is logical, though the claim is somewhat inferential as the specific mechanisms of pathogenicity are not directly tested. The term 'pathogenicity' may be imprecise as the authors note BLUD doesn't correlate with speed of killing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Bacterial growth dynamics during infection fall into distinct patterns: avirulent bacteria (E. coli, E. carotovora) are controlled within hours; highly virulent bacteria (P. alcalifaciens, S. marcescens) grow unchecked until host death; and intermediate pathogens (P. rettgeri, E. faecalis, P. burhodogranariea) initially proliferate homogeneously in all hosts but then diverge into high-load and low-load groups. Early bacterial proliferation rates in vivo match in vitro growth rates in LB medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 are supported by time-course bacterial load measurements (Figure 3A-E) and comparison with in vitro growth (Figure 3\u2014figure supplement 1). The data clearly show the three distinct patterns described. The equivalence of in vivo and in vitro growth rates is well-demonstrated and supports the interpretation of unconstrained early bacterial growth. The emergence of bimodal distributions for intermediate pathogens is visually apparent in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Bacteria isolated from infected hosts (whether from high-load or low-load flies) are as virulent or more virulent than the original bacterial stock, indicating that bacterial evolution during infection does not explain the binary outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by re-infection experiments (Figure 4Aii). The experimental design appropriately tests whether bacterial adaptation explains infection outcomes. The finding that bacteria from both high-load and low-load flies show similar virulence rules out bacterial evolution as the primary driver of outcome variation. Sample sizes appear adequate though exact numbers are not clearly stated for all groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Phagocytosis is not a determinant of the switch between lethal and persistent P. rettgeri infection, as bimodal outcomes persist even in phagocytosis-deficient hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 are supported by bacterial load data from phagocytosis-deficient flies (Figure 5A) showing that high-load and low-load groups still emerge. The genetic ablation approach using Hml-Gal4>UAS-bax is appropriate. However, the conclusion is limited to the specific experimental conditions used and doesn't rule out more subtle roles for phagocytosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "The Imd pathway is required to control P. rettgeri infection and establish persistent infection, as all Imd-deficient flies die with high bacterial loads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are strongly supported by data from DreddEP142 mutants (Figure 5B) showing complete loss of infection control. The use of a well-characterized Imd pathway mutant is appropriate. The bacterial growth in mutants matches in vitro rates, supporting the interpretation that the Imd pathway is essential for control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The Toll pathway is required for control of Gram-positive E. faecalis but not Gram-negative P. rettgeri, demonstrating that the specific and appropriate arm of the humoral immune response is critical for bacterial control and establishment of persistent infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by data from Toll-deficient (spzrm7) mutants infected with P. rettgeri (Figure 5C) or E. faecalis (Figure 5D). The differential requirement for Toll pathway depending on bacterial type is consistent with established knowledge of Drosophila immunity. The data clearly show that Toll-deficient flies can control P. rettgeri but not E. faecalis, supporting the specificity claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42",
+      "C57",
+      "C58",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C97"
+    ],
+    "result": "A mathematical model based on bacterial growth rate (\u03bc), time to immune control (t\u0304c), and a tipping point threshold (ntip) accurately predicts infection outcomes. The model shows that both early bacterial growth parameters and time to control significantly impact survival, with the relative importance depending on the range of pathogens considered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C57-C58, C76-C80, C97 are supported by the strong correlation between model predictions and empirical survival data (Figure 6B, r=0.97) and likelihood analyses (Table 2). The model is conceptually sound and appropriately parameterized. The likelihood ratio tests properly assess parameter importance. However, the model makes several simplifying assumptions (e.g., deterministic death above ntip) that may not fully capture biological complexity. The model validation is strong but limited to the specific experimental system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Pre-activation of the Imd pathway through constitutive expression allows immediate bacterial control upon infection, though a small proportion of flies still succumb to infection, suggesting the Imd pathway alone is not always sufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by data from flies with constitutive Imd activation (Figure 7A). The immediate decrease in bacterial loads demonstrates effective early control. The observation that some flies still die is important but represents a small proportion. The interpretation that Imd alone is insufficient is reasonable but could benefit from additional mechanistic investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The effect of the immune response on bacterial growth becomes detectable at 2 hours post-injection for E. carotovora and E. faecalis, and at 8 hours post-injection for P. rettgeri.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by comparison of bacterial loads in wild-type versus immune-deficient flies (Figures 7B and 5D). The approach of identifying when loads diverge between genotypes is reasonable for estimating when immune control becomes effective. However, the temporal resolution is limited by the sampling intervals, and the exact timing may vary among individuals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Diptericin expression (a marker of Imd pathway activation) is low at injection, becomes detectable at 2 hours, and increases continuously through 8 hours post-infection. At 4 hours post-injection, there is substantial inter-individual variation in Diptericin expression (approximately 5-fold range).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by qPCR data (Figure 7C) from both pooled and individual flies. The temporal dynamics are clearly demonstrated. The inter-individual variation at 4 hours is evident in the single-fly data. However, the biological significance of this variation and its relationship to infection outcome requires further analysis (addressed in C53-C54).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Bacterial load in the head correlates with abdominal load, but at 8 hours post-injection, there is no significant correlation between Diptericin expression and bacterial load, indicating that variability in Imd activation is independent of bacterial load at early infection stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by correlation analyses (Figure 7\u2014figure supplement 1 and Figure 7D). The head-abdomen correlation validates the experimental approach. The lack of correlation between Diptericin and bacterial load at 8 hours is statistically supported (r=0.06, p=0.75). However, the interpretation that this represents independence of immune activation from bacterial load is somewhat inferential and could be affected by the timing of measurement or individual variation in both parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C56",
+      "C75",
+      "C85",
+      "C96",
+      "C98"
+    ],
+    "result": "Inter-individual variation in survival stems from variation in within-host bacterial growth determined by the immune response, with the timing and intensity of antimicrobial peptide production being the most crucial factor. Small differences in host or pathogen physiology during early infection can have dramatic effects on ultimate outcome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C75, C85, C96, C98 synthesize findings from multiple experiments. The conclusion is well-supported by the collective data showing: (1) immune pathways are required for control, (2) early bacterial growth dynamics predict outcomes, (3) immune activation varies among individuals, and (4) the mathematical model captures these relationships. However, the specific mechanisms underlying inter-individual variation in immune activation remain incompletely characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Death is unlikely to result from accumulated infectious damage but rather occurs as a consequence of sepsis or multiple organ failure when bacterial load reaches the BLUD threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C82 are inferred from the observation that BLUD is constant regardless of time to death. While this inference is logical, it remains speculative without direct evidence of sepsis or organ failure. The citation to Baue (1975) provides theoretical support but doesn't constitute direct experimental validation in this system. Additional mechanistic studies would be needed to confirm this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "On rare occasions, flies with persistent infections can suddenly die with bacterial loads reaching the BLUD, suggesting that persistent infections can re-emerge as acute infections under some conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 are supported by observational data mentioned in the text. However, the frequency of this phenomenon and the conditions that trigger it are not systematically characterized. This represents an interesting observation that warrants further investigation but is appropriately presented as a preliminary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The SPBL varies with host and pathogen genotype and is subject to selection in both. Forcing infection into a persistent state represents a disease tolerance strategy from the host perspective, while from the pathogen perspective, either persistence or acute lethality may be favored depending on transmission conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C93 are supported by data showing SPBL variation (Figure 1C). However, claims C94-C95 regarding evolutionary implications are speculative and not directly tested. While the evolutionary reasoning is plausible and supported by citations to theoretical work, these claims represent hypotheses for future testing rather than demonstrated results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C86"
+    ],
+    "result": "Background claims establishing context from prior literature regarding bimodal infection outcomes in other systems, Drosophila as a model system, and the Drosophila immune system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C71, C86 are appropriately cited from the literature and provide necessary context for the study. These represent established knowledge rather than novel findings from this work. The citations appear appropriate and accurate based on the claims made.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,194 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Plant-diversified farms with soybean borders and neighboring crops showed significantly reduced pest abundance across three major rice pest species over 15 years (2001-2015). Pink rice borer decreased by 28.8%, rice brown planthopper by 32.3%, and rice leaf roller by 20.0% compared to mono-rice farms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the monitoring data (C50-C53) shows statistically significant reductions in pest abundance with appropriate statistical tests, the lack of randomization in farm assignment (acknowledged in C84) introduces potential confounding. The diversified farms were all in Chongming district while mono-rice farms were in 8 other districts, raising concerns about geographic, soil, or management differences. The subsequent experimental validation (C7) partially addresses this concern, but the monitoring study alone cannot definitively establish causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Plant-diversified farms had 22.6% higher predator abundance (ladybird beetles, lacewings, and spiders) in rice fields compared to mono-rice farms from 2007-2015. Border and neighboring crops harbored substantial predator populations, with maize showing the highest abundance (141.9 individuals per 100 plants).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The statistical analysis (C54) shows significant differences in predator abundance with appropriate mixed-effects models. However, the same randomization concerns apply as with pest abundance. Additionally, predator monitoring only began in 2007 (6 years after the study start), and was conducted on a subset of farms (3-6 diversified, 6-10 mono-rice), potentially introducing selection bias. The correlation between higher predator abundance and lower pest abundance is demonstrated but causation requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Plant-diversified farms showed significant reductions in insecticide use from 2003-2015, with mean decreases of 16.8% in number of sprays, 18.5% in commercial insecticide amount, and 27.1% in active ingredient amount. No reduction was observed in the first two years (2001-2002).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal pattern (C61-C64) strengthens the causal interpretation, as the 2-year lag before insecticide reduction suggests a biological mechanism rather than pre-existing differences. The statistical analysis properly accounts for the interaction between farm type and year. However, the decision to apply insecticides was based on pest abundance reaching Economic Injury Levels, which could introduce circularity if pest monitoring differed between farm types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Plant-diversified farming showed generally higher grain yields in monitoring data, though the main-effects model found no significant farm type effect (p=0.991). Economic analysis showed a net advantage of 576 RMB per hectare per year (3.48% higher) for diversified farms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The lack of statistical significance for yield (C66) despite visual trends (C65) suggests high variability or insufficient power. The economic benefit (C67) is small and depends on multiple assumptions. The economic analysis acknowledges excluding costs of biodiversity loss and environmental impacts (C149), which limits interpretation. The marginally significant interaction effect (mentioned but not fully reported) complicates interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Two randomized common-location experiments (2009-2010 and 2013-2014) confirmed monitoring results, showing plant-diversified fields had significantly lower stem borer abundance (p=0.043), 14.21% less insecticide use (p=0.048), and marginally higher yields (p=0.054). Pest reductions averaged 15-17% and predator increases averaged 12.7%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The randomized experimental design (C138-C140) addresses the major limitation of the monitoring study. Statistical significance is achieved for stem borers and insecticide use, with marginal significance for other pests, predators, and yield. The consistency of effect sizes with monitoring data strengthens confidence. However, only two sites over two years with three replicates each provides limited statistical power, as acknowledged by power analyses (C80-C82).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Power analyses indicate that achieving 80% statistical power for marginally significant effects would require one additional experimental site for pest and predator abundance, two additional sites for grain yield, with adding years or replicates being less effective than adding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The power analysis (C150-C152) is methodologically sound, using 200 simulations with the SIMR package. The finding that spatial replication is more important than temporal or within-site replication is valuable for future study design. This appropriately acknowledges the limitations of the current experimental design and provides clear guidance for follow-up work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C93",
+      "C94"
+    ],
+    "result": "The mechanism for pest reduction is interpreted as a trophic cascade where diverse border and neighboring crops provide resources and habitat for predators, which can disperse up to 40 meters into rice fields, increasing predation on pests and ultimately benefiting rice yields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This mechanistic interpretation (C86-C89, C93-C94) is plausible and supported by citations to relevant literature (C87, C88), but is not directly tested in this study. The study demonstrates correlation between plant diversity, predator abundance, and pest reduction, but does not measure predator movement, predation rates, or resource use. Alternative explanations (e.g., pests avoiding diverse habitats, different microclimate effects) are not explicitly tested. The interpretation is reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The authors acknowledge that lack of randomization in the monitoring study might have affected results, but argue this is unlikely to account for main findings because all 34 farms are in Shanghai suburbs with similar weather and soil conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "While the authors acknowledge the limitation (C84), their dismissal of its importance is inadequately justified. Geographic clustering of treatments (all diversified farms in one district) could introduce systematic differences in pest pressure, management practices, farmer characteristics, or unmeasured environmental factors. The claim of similar conditions (C85) is not supported by quantitative data on soil properties, microclimate, or pest baseline levels. This is a critical limitation that undermines causal inference from the monitoring study alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Mixed-effects models with third-degree polynomials for yearly trends and parametric bootstrap tests (2500 samples) were used to analyze the longitudinal monitoring data with repeated measurements across 15 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical approach (C143-C145) is appropriate for the longitudinal data structure with repeated measurements. Mixed-effects models properly account for within-farm correlation, and third-degree polynomials are justified by the nonlinear trends shown in figures. Parametric bootstrap testing with 2500 samples provides robust significance testing. The methods are well-cited and standard for this type of analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Economic cost-benefit analysis considered insecticide costs, seed costs, labor for spraying and planting, and value of rice and soybean yields, but excluded other inputs and costs of biodiversity loss, pollution, and health impacts from pesticides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The economic analysis methodology (C146-C148) is clearly described and appropriately limited to costs and benefits that differ between treatments. The acknowledgment of excluded externalities (C149) is important and honest. However, this limitation means the economic analysis substantially underestimates the true benefits of reduced pesticide use, making the reported 3.48% advantage a conservative lower bound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The monitoring study design involved 28 mono-rice farms established in 8 districts in the early 1990s and 6 plant-diversified farms established in Chongming district in the late 1990s. The diversified farms had soybean borders around rice fields and neighboring crops (maize, eggplant, Chinese cabbage) around the growing area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The study design description (C45-C49) is factual and clearly documented. However, this design has the critical flaw that treatment assignment is completely confounded with geographic location, as all diversified farms are in one district. This non-random, geographically clustered design is the study's major limitation and necessitated the follow-up experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "The authors conclude that diversifying farming practices can make an important contribution to ecological intensification and sustainable use of ecosystem services in urban ecosystems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This broad conclusion (C8-C9) extends beyond what the data fully support. While the study demonstrates benefits of plant diversification in Shanghai rice systems, generalizing to all urban agriculture and all ecosystem services is not justified by this single system study. The conclusion is reasonable as a hypothesis or suggestion but overstates the certainty of the findings given the methodological limitations, particularly the lack of randomization in the main monitoring study.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,1932 @@
+{
+  "submission": {
+    "id": "14d40862-a23f-4d57-a7c4-f837f5cf7bd3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:28:04.989231Z",
+    "updated_at": "2025-12-02T00:28:04.989231Z"
+  },
+  "content": [
+    {
+      "id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "submission_id": "14d40862-a23f-4d57-a7c4-f837f5cf7bd3",
+      "content_type": "manuscript",
+      "content_text": "# Inhibitor-induced HER2-HER3 heterodimerisation promotes proliferation through a novel dimer interface\n\n## Authors\n\n- Jeroen Claus<sup>1</sup>\n- Gargi Patel<sup>2</sup>\n- Flavia Autore<sup>4</sup>\n- Audrey Colomba<sup>1</sup>\n- Gregory Weitsman<sup>2</sup>\n- Tanya N Soliman<sup>1</sup> ([ORCID: 0000-0002-4687-629X](https://orcid.org/0000-0002-4687-629X))\n- Selene Roberts<sup>5</sup> ([ORCID: 0000-0002-3732-0556](https://orcid.org/0000-0002-3732-0556))\n- Laura C Zanetti-Domingues<sup>5</sup>\n- Michael Hirsch<sup>5</sup>\n- Francesca Collu<sup>4</sup>\n- Roger George<sup>6</sup>\n- Elena Ortiz-Zapater<sup>7</sup>\n- Paul R Barber<sup>4</sup> ([ORCID: 0000-0002-8595-1141](https://orcid.org/0000-0002-8595-1141))\n- Boris Vojnovic<sup>4</sup>\n- Yosef Yarden<sup>10</sup>\n- Marisa L Martin-Fernandez<sup>5</sup>\n- Angus Cameron<sup>1</sup> \u2020\n- Franca Fraternali<sup>4</sup> \u2020\n- Tony Ng<sup>2</sup> \u2020\n- Peter J Parker<sup>1</sup> ([ORCID: 0000-0002-6218-2933](https://orcid.org/0000-0002-6218-2933)) \u2020\n\n### Affiliations\n\n1. Protein Phosphorylation Laboratory The Francis Crick Institute London United Kingdom\n2. Richard Dimbleby Department of Cancer Research, Randall Division and Division of Cancer Studies Kings College London London United Kingdom\n3. Sussex Cancer Centre Brighton and Sussex University Hospitals Brighton United States\n4. Randall Division of Cell & Molecular Biophysics Kings College London London United Kingdom\n5. Central Laser Facility, Research Complex at Harwell, Science and Technology Facilities Council Rutherford Appleton Laboratory Didcot United Kingdom\n6. The Structural Biology Science Technology Platform The Francis Crick Institute London United Kingdom\n7. Department of Asthma, Allergy and Respiratory Science King\u2019s College London, Guy\u2019s Hospital London United Kingdom\n8. UCL Cancer Institute University College London London United Kingdom\n9. Department of Oncology Cancer Research UK and Medical Research Council Oxford Institute for Radiation Oncology Oxford United Kingdom\n10. Department of Biological Regulation Weizmann Institute of Science Rehovot Israel\n11. Barts Cancer Institute Queen Mary University of London London United Kingdom\n12. Breast Cancer Now Research Unit, Department of Research Oncology Guy\u2019s Hospital King\u2019s College London School of Medicine London United Kingdom\n13. School of Cancer and Pharmaceutical Sciences King\u2019s College London, Guy\u2019s Campus London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nWhile targeted therapy against HER2 is an effective first-line treatment in HER2+ breast cancer, acquired resistance remains a clinical challenge. The pseudokinase HER3, heterodimerisation partner of HER2, is widely implicated in the resistance to HER2-mediated therapy. Here, we show that lapatinib, an ATP-competitive inhibitor of HER2, is able to induce proliferation cooperatively with the HER3 ligand neuregulin. This counterintuitive synergy between inhibitor and growth factor depends on their ability to promote atypical HER2-HER3 heterodimerisation. By stabilising a particular HER2 conformer, lapatinib drives HER2-HER3 kinase domain heterocomplex formation. This dimer exists in a head-to-head orientation distinct from the canonical asymmetric active dimer. The associated clustering observed for these dimers predisposes to neuregulin responses, affording a proliferative outcome. Our findings provide mechanistic insights into the liabilities involved in targeting kinases with ATP-competitive inhibitors and highlight the complex role of protein conformation in acquired resistance.\n\n## Introduction\n\nThe epidermal growth factor receptor (EGFR) family of receptor tyrosine kinases plays a major role in proliferative signalling in a variety of cancers (Baselga and Swain, 2009; Yarden and Pines, 2012). Apart from EGFR (also known as ErbB1), the family consists of the orphan receptor HER2 (ErbB2), the pseudokinase HER3 (ErbB3), and HER4 (ErbB4). Overexpression of HER2 is an oncogenic driver in approximately 20% of all breast cancers (Lovekin et al., 1991; Owens et al., 2004; Slamon et al., 1987). The high clinical relevance of these receptors has made them a target for directed therapy with both antibodies and small molecule kinase inhibitors. In the case of HER2+ breast cancer, the monoclonal antibody trastuzumab (Herceptin) and its cytotoxic drug-conjugated derivative trastuzumab-emtansine (Kadcyla), the monoclonal antibody blocking HER2-HER3 dimerisation pertuzumab (Perjeta), and the small molecule kinase inhibitor lapatinib (Tykerb/Tyverb) have been successful in the clinic (Blackwell et al., 2010; Cameron et al., 2017; Di\u00e9ras et al., 2017; Geyer et al., 2006; Krop et al., 2017; CLEOPATRA Study Group et al., 2015; EMILIA Study Group et al., 2012).\n\nWhile HER2 itself has no known ligand, HER3 binds the growth factor neuregulin (NRG, also known as heregulin or HRG) to induce heterodimerisation and signalling (Sliwkowski et al., 1994). HER3 has been implicated in therapeutic resistance to HER2-targeted therapy through a variety of mechanisms, including receptor rephosphorylation, HER3 overexpression and increased NRG production (reviewed in [Claus et al., 2014]). In terms of cellular signalling in response to HER-family kinase inhibition, HER3-mediated buffering through the Akt/PKB signalling axis has been shown to be an important factor in therapeutic resistance (Sergina et al., 2007).\n\nThe dimerisation of EGFR family members is a fluid process mediated by interaction dynamics in practically every domain of the receptor. For EGFR, the ligand-bound, active dimer shows an upright, back-to-back extracellular domain (ECD) interaction where both receptors have bound ligand, although singly-bound dimers can also occur (Garrett et al., 2002; Liu et al., 2012; Ogiso et al., 2002). Although HER2 has no known ligand, it natively adopts this upright, dimerisation-ready ectodomain conformation (Garrett et al., 2002). On the intracellular side, formation of the active kinase domain dimer is critically affected by the conformation of the juxtamembrane domain (JMD) (Jura et al., 2009a; Thiel and Carpenter, 2007). The kinase domains associate in an asymmetric dimer, which resembles the CDK/cyclin-like asymmetric dimer interface (Jeffrey et al., 1995; Zhang et al., 2006). In this canonical dimer,\u00a0one kinase (the \u2018activator\u2019) allows the dimerisation partner (the \u2018receiver\u2019) to adopt an active conformation and become catalytically active. These various conformations have also been observed in near-complete receptors using negative stain electron microscopy (Mi et al., 2011). Of note in these receptor dimer formations was the lack of active, asymmetrical kinase domain interactions when the receptor was bound to the ATP-competitive inhibitor lapatinib (Mi et al., 2011). Although these interactions have mainly been described in the context of EGFR homodimerisation, they remain a template for the interactions of the rest of the EGFR family. The conformation of the active kinase domain interaction has been validated for EGFR-HER3 and HER2-HER3 (Jura et al., 2009b; Littlefield et al., 2014; van Lengerich et al., 2017).\n\nA multitude of studies, using a variety of techniques, have confirmed that EGFR-family receptors can form higher order oligomers, and that the exact nature of these oligomers is modulated by a variety of conditions, including receptor density, ligand presence, ligand type and temperature-dependent membrane behaviour (Clayton et al., 2005; Clayton et al., 2007; Huang et al., 2016; Nagy et al., 2010; Needham et al., 2016; Saffarian et al., 2007; van Lengerich et al., 2017; Yang et al., 2007; Zhang et al., 2017).\n\nAgainst the backdrop of such a multitude of association modes, it is clear that conformational dynamics and structural rearrangements are an integral regulator of protein behaviour in the EGFR family.\n\nWe have shown previously that within a kinase, in this case PKC\u03b5, occupation of the nucleotide binding pocket with ATP (or an inhibitor) is a major determinant of protein behaviour, conferring the structural stability required for protein\u2013protein interactions to occur and priming sites to be stably phosphorylated (Cameron et al., 2009). Similar effects have been observed in several additional kinases, including PKB/Akt, IRE1, and AMPK (Okuzumi et al., 2009; Papa et al., 2003; Ross et al., 2017; Wang et al., 2012).\n\nA notable example of nucleotide binding pocket occupation inducing behaviour independent of catalysis has been described for the RAF family, originally in cRAF, where the inhibitor SB 203580 paradoxically induced activity (Eyers et al., 1998). More recently, a similar phenomenon has been shown in BRAF, where the small molecule kinase inhibitor vemurafenib blocks the oncogenic mutant V600E, but stabilises the wild type protein, promoting downstream proliferative signalling (Hatzivassiliou et al., 2010; McKay et al., 2011; Poulikakos et al., 2010; Thevakumaran et al., 2015). Within the EGFR family, we and others have shown previously that quinazoline inhibitors can cause homodimer formation of EGFR, and EGFR-MET heterodimerisation, by stabilising particular kinase domain conformers (Arteaga et al., 1997; Bublil et al., 2010; Lichtner et al., 2001; Ortiz-Zapater et al., 2017).\n\nThe structural, conformational role that nucleotide pocket occupation can fulfil is particularly interesting in the context of pseudokinases, which have lost their catalytic activity. Sequence analysis shows that many pseudokinases retain several of the conserved residues involved in ATP-binding (Boudeau et al., 2006; Claus et al., 2013). In vitro analysis of the pseudokinome showed that many pseudokinases have nucleotide binding capability (Murphy et al., 2014).\n\nIn the case of these ATP-binding pseudokinases, where nucleotide binding does not elicit phosphotransfer, the structural stability conferred by ATP binding may be integral to protein function. This has been observed for the pseudokinase STRAD, which requires ATP binding to sustain a heterotrimeric complex with LKB and MO25 (Zeqiraj et al., 2009a; Zeqiraj et al., 2009b). Similarly, in the pseudokinase FAM20A ATP-binding, albeit in a non-canonical orientation, is essential for stabilising the FAM20A/FAM20C complex (Cui et al., 2015; Cui et al., 2017). ATP binding is a structural requirement for the JAK2 JH2 V617F mutant to promote pathogenic signalling (Hammar\u00e9n et al., 2015). In the pseudokinase MLKL, ATP-binding pocket occupation is essential for membrane translocation and its role in necroptotic signalling (Hildebrand et al., 2014; Murphy et al., 2013).\n\nHER3 is able to bind ATP (crystallised as PDB ID 3KEX, 3LMG), as well as the Src/ABL inhibitor Bosutinib (PDB ID 4OTW) (Levinson and Boxer, 2014; Davis et al., 2011; Jura et al., 2009b; Murphy et al., 2014; Shi et al., 2010). Considering the importance of HER3 as a conformational partner in the HER2-HER3 heterodimer, and the established importance of ATP-binding for complex formation in other pseudokinases, the role of nucleotide binding pocket occupation in HER3 function warrants investigation.\n\nHere, we have integrated the study of kinase-autonomous conformational effects of nucleotide binding pocket occupation with that of HER2-HER3 heterointeraction modalities and downstream proliferative phenotypes in response to drug treatment. We show that nucleotide pocket occupation in both HER2 and the pseudokinase HER3 is of great conformational importance for kinase domain heterodimerisation and subsequent proliferative signalling. In HER2+ breast cancer cells this leads to an unexpected synergy between the HER3 ligand NRG and the HER2 inhibitor lapatinib, by which their concomitant binding promotes proliferation in 2D and 3D culture systems. Lapatinib is able to promote heterodimerisation between the kinase domains of full-length HER2 and HER3 in cells. However, this dimer interface is different from the canonical active EGFR-family dimer, and it is necessary for the lapatinib/NRG combinatorial proliferative phenotype. Both the lapatinib-induced heterodimer and the cooperative proliferation effects depend strongly on the ability for the pseudokinase HER3 to bind ATP. Consistent with the model, occupying the pseudokinase HER3 with the Src/Abl inhibitor bosutinib stabilises the pseudokinase domain to the extent that it actually promotes HER2-HER3 heterodimerisation and downstream proliferation.\n\n## Results\n\n### Lapatinib-NRG co-treatment shows a synergistic effect on proliferation, dependent on HER3 ATP binding\n\nThe sensitivity of a variety of oncogene-addicted cell lines to small molecule kinase inhibitors can be counter-acted by the addition of growth factors (Wilson et al., 2012). This includes the case of lapatinib-treated HER2+ breast cancer cell lines, where NRG is seen to mediate a rescue of drug toxicity (Novotny et al., 2016; Wilson et al., 2012). Using different experimental procedures, we have investigated further these competing effects of lapatinib and NRG on the proliferative behaviour of HER2+ breast cancer cells.\n\nIn SKBR3, BT474, AU565, and HCC1419 cells treated with a range of lapatinib concentrations for 72 hr, the addition of 10 nM NRG rescues the drug-induced cytotoxicity except at very high drug concentrations (Figure 1a, Figure 1\u2014figure supplement 1a\u2013c).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/32271/elife-32271-fig1-v2.jpg)\n\n**Figure 1.:** (a) CellTiter-Glo proliferation assay of SKBR3 cells after treatment for 72 hr with a range of lapatinib concentrations\u00a0\u00b1\u00a010 nM NRG. (b) Cell counting assay of SKBR3 cells treated for 72 hr with DMSO or 250 nM lapatinib\u00a0\u00b110 nM NRG, before quantification of cell number on a Vi-CELL counter. (c) Quantification of SKBR3 3D spheroid area after 8 days of treatment with a range of lapatinib concentrations\u00a0\u00b1\u00a010 nM NRG, with representative bright field micrographs. Scale bars 0.5 mm. All proliferation data represented as mean\u00a0\u00b1SEM of three independent experiments each performed in quadruplicate. Corresponding data and statistics available as Figure 1\u2014source data 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32271/elife-32271-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a\u2013f) BT474, AU565, HCC1419, ZR75, MCF7, and HCC1569 breast cancer cell lines were assayed for proliferation in the response to lapatinib\u00a0\u00b110 nM NRG as described in Figure 1a. BT474 and AU565 represent lapatinib-sensitive lines. HCC1419 and ZR75 represent partially-sensitive lines. MCF7 and HCC1569 represent lapatinib-insensitive lines. (g) Western blot analysis of endogenous EGFR family protein levels in SKBR3, BT474, AU565, HCC1419, ZR75, MCF7 and HCC1569 cell lines. (h\u2013i) SKBR3 and BT474 cells were treated for 72 hr with a titration of lapatinib\u00a0\u00b110 nM EGF, after which proliferation was measured using CellTiter-Glo. (j) CellTiter-Glo proliferation assay of SKBR3 cells with transient siRNA knockdown of HER3 using single oligonucleotides. Western blot denotes knockdown efficiency of HER3 si11 and HER3 si13 oligonucleotides. (k) CellTiter-Glo endpoint analysis of proliferation of SKBR3 spheroid cultures after 8 days of lapatinib\u00a0\u00b1NRG. (l) Western blot analysis of SKBR3 spheroid cultures in conditions matched to Figure 1c, Figure 1\u2014figure supplement 1k. One representative example of three independent experiments is shown. All proliferation data represented as mean\u00a0\u00b1SEM of three independent experiments each performed in triplicate, except for (j), which represents six independent experiments each performed in triplicate. Corresponding data and statistics available as Figure 1\u2014figure supplement 1\u2014source data 1.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32271/elife-32271-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) SKBR3 cells were treated for 72 hr with DMSO or 250 nM neratinib\u00a0\u00b110 nM NRG, before quantification of cell number on a Vi-CELL counter (b) Quantification of spheroid area after 8 days of treatment with a titration of neratinib. Representative bright field micrographs of SKBR3 cell 3D spheroids. Scale bars 0.5 mm. (c) CellTiter-Glo endpoint analysis of spheroid cultures from (b). (d) Western blot analysis of cell signalling in SKBR3 spheroids after 8 days of treatment. All proliferation data represented as mean\u00a0\u00b1SEM of three independent experiments each performed in triplicate. All western blot shows a representative example of three independent experiments. Corresponding data and statistics available as Figure 1\u2014figure supplement 2\u2014source data 1.\n\nInterestingly, in the case of the SKBR3, BT474 and AU565 cell lines,\u00a0low concentrations of lapatinib (~40\u2013400 nM) are able to enhance proliferation in conjunction with 10 nM NRG by 25\u201330% compared to growth factor alone (Figure 1a, Figure 1\u2014figure supplement 1a\u2013b). A partial response of this cooperative phenotype is observed in ZR75 and HCC1419 cells (Figure 1\u2014figure supplement 1c\u2013d). This phenotype in SKBR3 cells, while observed previously, has gone unremarked (Novotny et al., 2016; Wilson et al., 2012). We corroborated our results with a cell counting assay, in which SKBR3 cells were treated for 72 hr with 250 nM lapatinib or vehicle\u00a0\u00b110 nM NRG (Figure 1b). The emergent effect of lapatinib plus NRG depends on lapatinib sensitivity. Two breast cancer cell lines with low lapatinib sensitivity, MCF7 and HCC1569, show low inhibitor-growth factor cooperation (Figure 1\u2014figure supplement 1e\u2013f). The growth phenotype in ZR75 may be partially explained by its HER4 expression, considering that NRG is also a ligand for HER4 (Figure 1\u2014figure supplement 1g).\n\nAlthough HER3 has been shown to bind lapatinib in vitro with very low affinity (Kd\u00a0=\u00a05.5 \u03bcM) (Davis et al., 2011), the synergistic behaviour between lapatinib and NRG occurs in cells at a\u00a0~\u00a050 x lower dose than the in vitro Kd, indicating that any binding of lapatinib to HER3 would likely be minor under these conditions. Using a thermal shift assay (TSA), which measures a shift in the thermal stability of a protein after ligand/inhibitor binding in vitro, we also show that lapatinib does not strongly bind HER3 as compared to ATP and a panel of other inhibitors (Figure 2a, see further below).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/32271/elife-32271-fig2-v2.jpg)\n\n**Figure 2.:** (a) In vitro TSA binding assay of HER3 with selected kinase inhibitors. (b) In vitro TSA binding assay of HER2 with lapatinib and bosutinib. (c) Quantification of spheroid size after eight days of treatment with a titration of bosutinib with representative bright field micrographs of SKBR3 cell spheroids after eight days of bosutinib treatment. Scale bars signify 0.5 mm. (d) Transient co-transfection of MCF7 cells with HER2wt-GFP and HER3wt-RFP or HER3KGG-RFP. Cells were serum starved for one hour, followed by 10 nM NRG or vehicle for ten minutes. HER3 phosphorylation on Y1289 was measured by Western blot and analysed by densitometry relative to total HER3. (e) SKBR3 cells were transfected with RFP empty vector, HER3wt-RFP, HER3T787M-RFP or HER3KGG-RFP. 72 hr of bosutinib treatment was initiated 24 hr post-transfection. Proliferation was measured using CellTiter-Glo. TSA data represented as mean\u00a0\u00b1SEM of (a) two independent experiments each performed quadruplicate, or (b) three independent experiments each performed in at least quadruplicate. Proliferation data represented as mean\u00a0\u00b1SEM of three independent experiments each performed in at least triplicate. Western blot data shown as mean\u00a0\u00b1SD for three independent experiments. Western blot quantifications analysed by one-way ANOVA. ****p\u22640.0001 Corresponding data and statistics available as Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32271/elife-32271-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) TSA of HER3 kinase domain and a titration of bosutinib shows a \u0394Tm50 of 4.15\u00a0\u00b1\u00a01.94 nM. (b) SKBR3 cells were treated with a range of bosutinib concentrations for 72 hr and proliferation was measured using CellTiter-Glo (c) CellTiter-Glo endpoint quantification of spheroid cultures from Figure 2b. (d) Western blot analysis of spheroid cultures treated as in (c). (e) 2D proliferation of SKBR3 cells using a titration of bosutinib\u00a0\u00b1lapatinib (50 nM or 1 \u03bcM) for 72 hr. (f) SKBR3 cells were transiently transfected with vector-RFP, HER3wt-RFP, or HER3KGG-RFP and treated with lapatinib\u00a0\u00b110 nM NRG for 72 hr. (g) CETSA analysis of bosutinib binding to HER3wt, HER3KGG, or HER3T787M. Lysates of COS7 cells ectopically expressing HER3-RFP were treated with DMSO or 50 nM bosutinib, after which samples were split and matching samples incubated at either 42\u00b0C or 50\u00b0C. Western blot analysis shows HER3 recovery at 50\u00b0C compared to 42\u00b0C. Data in (a-f) presented as mean\u00a0\u00b1SEM of three independent experiments each performed in triplicate. Western blot data in (d) show a representative example of three independent experiments. Data in (g) presented as mean\u00a0\u00b1SD of four independent experiments. Corresponding data and statistics available as Figure 2\u2014figure supplement 1\u2014source data 1.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32271/elife-32271-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Flow cytometric analysis of membrane localisation of all HER3-RFP constructs used in this study. Live SKBR3 cells were stained with GFP-conjugated anti-HER3 to show the combination of transfected and endogenous HER3 on the membrane. All HER3-RFP constructs show membrane localisation, as represented by the top right quadrants. Representative flow cytometry plots from one of two independent experiments.\n\nWhile EGF treatment rescued SKBR3 cells from the effects of low-concentration lapatinib treatment, synergistic growth effects such as those observed with lapatinib-NRG co-treatment were not observed for lapatinib-EGF co-treated SKBR3 or BT474 cells (Figure 1\u2014figure supplement 1h\u2013i). Although NRG is also a growth factor ligand for HER4, protein levels of HER4 in SKBR3 cells are very low (Figure 1\u2014figure supplement 1g). Additionally, lapatinib is a strong inhibitor of both EGFR and HER4 (Davis et al., 2011). Taken together, these data seem to exclude a significant role for EGFR and HER4 in the synergistic growth observed for lapatinib-NRG co-treatment. Moreover, transient knockdown of HER3 with two different siRNA oligonucleotides shows a modest, but consistent reduction in the proliferative effect of ligand-inhibitor co-treatment, implicating HER3 as the relevant growth factor-binding receptor for this NRG response (Figure 1\u2014figure supplement 1j).\n\nThe proliferative effects of lapatinib and NRG on SKBR3 cells were also observed in 3D spheroid cultures. As seen in 2D culture systems, in 3D spheroid culture the addition of NRG to lapatinib-treated cells rescues SKBR3 cells from lapatinib-induced cytotoxicity/cytostasis (Figure 1c, Figure 1\u2014figure supplement 1k\u2013l). Lapatinib and NRG share a cooperative effect on the induction of proliferation in 3D spheroid cultures, where spheroid size is greater for inhibitor-ligand co-treatment conditions than for those treated with growth factor alone.\n\nThe irreversible inhibitor neratinib binds the same inactive conformation as lapatinib and with similar binding affinity (Davis et al., 2011). However, neratinib is an irreversible inhibitor and forms a covalent bond with HER2C805, a residue conserved in EGFR and HER4 but not HER3. Neratinib-NRG co-treatment did not show the synergistic proliferative phenotype observed with lapatinib-NRG, in either a cell counting assay, or in 3D spheroid formation (Figure 1\u2014figure supplement 2a\u2013d). Similarly, the induction of HER2 and HER3 phosphorylation seen in western blot analysis of lapatinib-NRG co-treated 3D spheroids was absent in neratinib-NRG co-treatment (Figure 1\u2014figure supplement 1l, Figure 1\u2014figure supplement 2d). This indicates that the proliferative phenotype observed for lapatinib is likely to necessitate a dynamic, reversible inhibitor binding.\n\nCollectively, the data from both 2D and 3D cultures show that there is a counterintuitive synergy between the HER2 inhibitor lapatinib and the HER3 ligand NRG in driving the proliferation of SKBR3 cells. This prompted us to examine the potential for novel allosteric regulation of HER2-HER3 heterotypic interactions by both ligand and inhibitors.\n\n### HER3 nucleotide pocket occupation is of structural importance\n\nTo study the effects of ATP binding on HER3 function, we aimed to both stabilise and destabilise the pseudokinase nucleotide-binding pocket. This would allow us to investigate the importance of the structural role that nucleotide binding pocket occupation has been shown to play in several (pseudo)kinases.\n\nTo separate the structural and trace catalytic roles that ATP-binding could fulfill in HER3, we used the ATP-competitive Src/Abl inhibitor bosutinib, which has been shown to bind strongly to HER3 but not to other EGFR family members (Levinson and Boxer, 2014; Davis et al., 2011). We compared bosutinib to a small panel of EGFR family inhibitors as well as an additional Src inhibitor, dasatinib, and measured HER3 thermal stability by TSA (Figure 2a, Figure 2\u2014figure supplement 1a). In line with previous observations, we confirmed that HER3 strongly binds bosutinib. Significantly, lapatinib was not able to provide a noticeable thermal shift, which corresponds to previously published results indicating HER3 does not bind lapatinib with high affinity (Davis et al., 2011). While lapatinib was able to confer strongly increased thermal stability to HER2, bosutinib was not (Figure 2b). This is in line with previously published data that indicates HER2 is not a strong bosutinib binder (Davis et al., 2011).\n\nWe hypothesised that bosutinib might be able to aid proliferation in a cellular context by stabilising the nucleotide binding pocket of HER3 and helping sustain dimer formation, analogous to vemurafenib-bound behaviour of BRAF. In a 2D proliferation assay, SKBR3 cells treated with bosutinib over 72 hr show a dose dependent induction of proliferation without additional NRG stimulation (Figure 2\u2014figure supplement 1b). This proliferative effect is sustained in eight-day treatments in 3D spheroid cultures (Figure 2c, Figure 2\u2014figure supplement 1d,e). The ability of bosutinib to induce SKBR3 cell proliferation appears to be an EGFR-family mediated event, as lapatinib treatment can curtail its effects in a dose-dependent manner (Figure 2\u2014figure supplement 1e).\n\nIn order to destabilise the HER3 nucleotide binding pocket we made the triple mutant HER3KGG. HER3K742 was mutated to methionine to hinder ATP \u03b1-phosphate coordination, which by itself has been shown to reduce HER3 mant-ATP binding affinity (Shi et al., 2010). To obstruct ATP binding further, double aspartates were introduced in the glycine-rich loop (HER3G716D/G718D) to mimic the pseudokinase-specific aspartate residue observed in the glycine-rich loop of VRK3 (Scheeff et al., 2009), adding a negative charge in the area where the ATP phosphates would normally sit. Introduction of this ATP-binding deficient HER3KGG mutant into MCF7 cells shows abrogation of ligand-induced trans-phosphorylation of HER3 by HER2 (Figure 2d). SKBR3 cells ectopically expressing HER3wt or HER3KGG show a differential proliferative behaviour upon lapatinib\u00a0\u00b1NRG treatment. This indicates a critical role for HER3 ATP binding in order to sustain inhibitor-growth factor cooperative proliferation (Figure 2\u2014figure supplement 1f).\n\nThe bosutinib binding of HER3wt, HER3KGG, and the proposed drug de-sensitised HER3T787M (Levinson and Boxer, 2014; Dong et al., 2017), was investigated using an in-cell thermal shift assay (CETSA)\u00a0(Jafari et al., 2014; Reinhard et al., 2015). Where wild type HER3 showed increased thermal stability in cells in the presence of 50 nM bosutinib, HER3KGG did not (Figure 2\u2014figure supplement 1g). Ectopic expression of wild type HER3, but not HER3KGG or HER3T787M, enhances bosutinib-mediated proliferation, indicating this behaviour is driven by bosutinib binding to HER3 directly (Figure 2e). Both HER3KGG and HER3T787M showed normal localization to the plasma membrane, as measured by flow cytometry, indicating that these mutations did not compromise the receptor and its traffic to the plasma membrane (Figure 2\u2014figure supplement 2).\n\nThe HER3KGG and bosutinib results indicate that nucleotide pocket occupation in HER3 is essential for its ability to sustain a proliferative signalling pathway under distinct circumstances: in the acute response to growth factor, in promoting ligand-inhibitor cooperative proliferation and even after treatment with a HER3-binding inhibitor. This indicates a critical structural role for HER3 ATP-binding pocket occupation in its ability to sustain heterointeractions and proliferation. Considering the proliferative effects observed with the HER3-binding inhibitor bosutinib, our results also suggest that any residual transferase activity HER3 retains does not appear to be important in these responses in vivo unless we invoke a hit-and-run mechanism of action for bosutinib on HER3 which would seem unlikely.\n\n### Lapatinib binding induces HER2-HER3 heterodimerisation\n\nThe stability conferred to a protein kinase by small molecule inhibitor binding has been shown to play an important role in the promotion of protein\u2013protein interactions. We investigated the potential role of lapatinib to similarly promote HER2-HER3 heterodimerisation by stabilising particular protein conformations in HER2 using a FRET-FLIM approach. We measured drug-induced heterodimerisation of HER2 and HER3, as we have done previously in the case of drug-induced dimerisation of the EGF receptor (Bublil et al., 2010; Coban et al., 2015).\n\nAt endogenous protein levels in SKBR3 cells, we observe lapatinib-driven HER2-HER3 heterodimerisation to levels similar to those seen with NRG (Figure 3a). Interestingly, the lapatinib-induced dimerisation occurs in the absence of exogenously added NRG, indicating a HER2-HER3 dimer that is driven primarily through intracellular domain interactions. MCF7 cells, which express low levels of endogenous HER2 and HER3 compared to SKBR3, also display lapatinib-induced heterodimerisation of ectopically expressed GFP-HER2wt and HA-HER3wt (Figure 3b).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/32271/elife-32271-fig3-v2.jpg)\n\n**Figure 3.:** (a) FRET-FLIM analysis of endogenous HER2-HER3 association in SKBR3 cells, serum starved for 1 hr, and stimulated with 6.7 nM NRG for 15 min, or inhibited with lapatinib (10 \u00b5M) for 1 hr, prior to fixation and staining with IgG anti-HER2-Cy5 and IgG anti-HER3-Alexa546 overnight, at 4\u00b0C. (b) MCF7 cells were transfected with vectors encoding HER2wt-GFP and HER3wt-HA. Cells were incubated as in (a) and stained with anti-HA antibody conjugated to Alexa-546 (controls treated with vehicle). (c) MCF7 cells were transfected with vectors encoding HER2wt-GFP and HER3wt-HA or HER3KGG-HA. Cells treated with lapatinib (10 \u00b5M) for 1 hr, prior to fixation and staining with anti-HA antibody conjugated to Alexa-546. (d) SKBR3 cells were treated with bosutinib (50 nM, 1 hr), and stained as in (b). (e, f) Molecules/cluster measurements from STORM data taken of SKBR3 cells labelled with HER2Affibody-Alexa488 and HER3Affibody-Alexa647 or NRG-Alexa647\u00a0\u00b114 nM lapatinib or 41 nM bosutinib. Cumulative FRET-FLIM histograms show average FRET efficiency from three independent experiments. **p\u22640.01; ****p\u22640.0001 Scale bars 5 \u03bcm. Clustering data represent mean combination of two independent experiments with each measuring\u00a0>1000 clusters. Clustering data presented as mean with 95% CI. Corresponding data and statistics available as Figure 3\u2014source data 1.\n\nAs discussed above, occupation of the nucleotide binding pocket in HER3 is of importance for its ability to sustain proliferation. This is also reflected in the case of lapatinib-induced heterodimer formation, where the introduction of the nucleotide pocket compromised HER3KGG mutant strongly disrupts inhibitor-promoted heterodimerisation (Figure 3c). In line with the proliferative effects described above, bosutinib was also able to directly promote heterodimerisation between HER2 and HER3 (Figure 3d).\n\nUsing stochastic optical reconstruction microscopy (STORM), we analysed receptor clustering in SKBR3 cells. Treatment with either NRG, lapatinib, or bosutinib showed a shift in cluster population size compared to control, implying the formation of higher-order oligomers rather than dimers (Figure 3e,f). The exact HER2-HER3 stoichiometry in these drug-treated oligomers remains elusive, because these experimental conditions allowed us to count only cluster size for either HER2 or HER3, not both at the same time. Therefore, it is expected that the observed HER3 clusters also contain uncounted HER2 receptors, and vice versa, as evident in the FRET-FLIM data.\n\n### Disruption of the active HER2-HER3 interface\n\nThe active signalling dimer in the EGFR family adopts an asymmetric orientation, in which there is a distinct division of labour in the activator-receiver pairing. One kinase (the activator kinase) does not phosphorylate substrates, but binds in a way that helps its heterodimerisation partner (the receiver kinase) in adopting an active conformation. The receiver kinase is then capable of substrate phosphorylation. Originally described for EGFR homodimerisation, and similar to the cyclin/CDK binding mode (Jeffrey et al., 1995; Zhang et al., 2006), this canonical active dimerisation interface has been reported across the EGFR family including the heterodimerisation of HER3, which can only perform the activator role (Jura et al., 2009b; Littlefield et al., 2014; van Lengerich et al., 2017). Mutations that disrupt this active interface in both the activator and receiver partner kinases are well-documented and are schematically highlighted (Figure 4a, Figure 4\u2014video 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/32271/elife-32271-fig4-v2.jpg)\n\n**Figure 4.:** (a) Schematic representation and molecular model of HER2-HER3 active, asymmetric kinase domain dimer orientation. Inset denotes interaction interface. (b) MCF7 cells were transfected with vectors encoding HER2wt-GFP or HER2I714Q-GFP and HER3wt-HA. Cells were treated as described in Figure 3 and HER2-HER3 association was measured by FRET-FLIM. (c) MCF7 cells were transfected with vectors encoding HER2-GFP and HER3wt-RFP or HER3V945R-RFP. Cells were incubated as described above, and treated with DMSO, lapatinib or NRG prior to fixation. Data represents mean\u00a0\u00b1SEM. *p\u22640.05; **p\u22640.01, ***p\u22640.001; ****p\u22640.0001 by one-way ANOVA. Scale bars\u00a0represent 5 \u03bcm. Corresponding data and statistics available as Figure 4\u2014source data 1. Molecular model for the interaction in (a) available as Figure 4\u2014source data 2.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32271/elife-32271-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Lapatinib docking in HER2, with the HER2 active site displayed in the inset. Lapatinib binds the inactive conformation of HER2 where the \u03b1-C helix is in the \u2018out\u2019 position. E770 and M774 on the HER2 \u03b1-C helix highlighted. (b) Lapatinib docked into the active conformation of HER2. The \u03b1-C helix is in the \u2018in\u2019 position, causing a steric clash between E770/M774 and lapatinib. Molecular models for inhibitor docking in (a) and (b) available as Figure 4\u2014figure supplement 1\u2014source datas 1 and 2.\n\nIn the case of the active, activator/receiver interface, HER3 buttresses the inward orientation of the HER2 \u03b1-C helix, leaving no space for the HER2 \u03b1-C helix to adopt the \u2018out\u2019 orientation characteristic of the inactive conformation. We modelled the potential effects of HER2 \u03b1-C helix positioning on lapatinib binding to test whether canonical activator/receiver orientation (in which the HER2 \u03b1-C helix is pushed inwards) would give sufficient space to still accommodate lapatinib. Our modelling showed that, for a HER2 \u03b1-C helix in the active, \u2018in\u2019 position, lapatinib binding results in a potential steric clash with HER2E770/M774 (Figure 4\u2014figure supplement 1a,b). A general decrease of the nucleotide binding pocket volume from 756 \u00c53 to 232 \u00c53 (calculated using SURFNET v1.5\u00a0(Laskowski, 1995)) supports these predictions.\n\nTo further test whether the lapatinib-induced HER2-HER3 is adopting the canonical activator/receiver orientation, we used FRET-FLIM to investigate lapatinib-induced dimer formation. The I714Q mutation in HER2, which renders the receptor receiver-impaired, disrupted the lapatinib-driven HER2-HER3 association, indicating it is retained in the lapatinib-induced dimer interface (Figure 4b). However, the reciprocal activator-impaired mutation in HER3 (HER3V945R) did not disrupt lapatinib-mediated heterodimerisation, although it efficiently suppressed the canonical active dimer after ligand-induced heterodimerisation (Figure 4c).\n\nIt is surmised that the inhibitor binding is able to robustly induce a heterodimer between HER2 and HER3, which is distinct from the canonical active heterodimer induced after growth factor stimulation. The orientation of this non-canonical lapatinib-driven heterodimer retains HER2I714 in the dimer interface, giving us a starting point for in silico molecular modelling to investigate potential dimer conformations distinct from the well-described active dimer.\n\n### Lapatinib drives a novel HER2-HER3 heterodimerisation interface\n\nIn the case of type II kinase inhibitors such as lapatinib, the inhibitor stabilises an inactive conformation of the kinase domain, where the \u03b1-C helix is tilted outwards. As HER3 lacks the conserved glutamate residue in the \u03b1-C helix, HER3K742 is unable to form the salt bridge normally observed in active kinase domain structures (Huse and Kuriyan, 2002). The HER3 ATP-bound conformation therefore does not show a classical active conformation with the \u03b1-C helix tilted inward (Jura et al., 2009b; Shi et al., 2010), but instead resembles the inactive conformation seen in kinases bound to type II inhibitors such as lapatinib. Because lapatinib-bound HER2 and ATP-bound HER3 adopt similar conformations, there is a possibility that the lapatinib-induced, inactive dimer is oriented symmetrically.\n\nIn the crystal lattices of EGFR and HER3 kinase domains, two different symmetrical interaction interfaces have been observed (Jura et al., 2009a; Jura et al., 2009b). We used molecular modelling to investigate the potential for HER3 and lapatinib-bound HER2 to adopt either of these conformers (Figure 5a\u2013b, Figure 5\u2014figure supplement 1a\u2013b). HER2I714 is present in the interaction interface of both the EGFR-like, staggered orientation, as well as in the head-to-head, HER3-like orientation. This falls in line with the FRET-FLIM data in Figure 4 that suggests the retained presence of the HER2I714 residue in the lapatinib-induced dimer interface.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/32271/elife-32271-fig5-v2.jpg)\n\n**Figure 5.:** (a) Lapatinib-bound HER2 (blue, lapatinib in yellow) and ATP analogue-bound HER3 (green, AMP-PNP in pink) were modelled in an EGFR-like symmetric dimer orientation (Jura et al., 2009a). Inset highlights the interaction interface. The schematic representation shows active dimer interface residues HER2I714 and HER3V945, as well as the two residues in HER2 unique to this interface for further mutational analysis. (b) Lapatinib-bound HER2 in the HER3-like head-to-head symmetric dimer orientation (Jura et al., 2009b). Dimer-specific residues are highlighted in the schematic. (c) MCF7 cells were transfected with vectors encoding HER2wt-GFP, HER2N764R/K765F-GFP or HER2I748R/V750R-GFP and HER3wt-HA. Cells were incubated for 24 hr, and inhibited with 10 \u00b5M lapatinib for 1 hr, prior to fixation and staining with anti-HA antibody conjugated to Alexa-546. Data represented as mean\u00a0\u00b1SEM. ****p\u22640.0001, as analysed by one-way ANOVA. Scale bars 5 \u03bcm corresponding data and statistics available as Figure 5\u2014source data 1. Molecular model for the interactions in (a) and (b) available as Figure 5\u2014source data 2 and 3. Residues marking the dimer interface of the lapatinib-induced HER2-HER3 heterodimer, in either the EGFR-like or HER3-like modelled conformations, including the per-residue solvent accessible surface area (in \u00c52) are available as Figure 5\u2014source data 4.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32271/elife-32271-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Molecular model of the lapatinib-induced HER2-HER3 dimer in the (a) EGFR-like and (b) HER3-like orientation with interface residues shown as sticks.\n\nOn the basis of these models, we designed pairs of mutations in HER2 that would exclusively disrupt one of the potential heterodimer orientations (Figure 5\u2014figure supplement 1, Figure 5\u2014video 1 and 2). For the EGFR-like, staggered dimer we substituted two hydrophobic residues on HER2 with two positively charged residues, HER2I748R/V750R, which should lead to repulsion from the positively charged residues, K998 and K999, lying on the HER3 side of the interface.\n\nLikewise, for the HER3-like, head-to-head dimer, we predicted that the HER2N764R/K765F mutant would disrupt the dimerisation interface. The substitution of an asparagine residue (HER2N764) with a positively charged arginine should lead to repulsion from a positively charged HER3 residue (HER3R702), lying within a radius of 4 \u00c5 and opposite to HER2N764, therefore causing severe disruption of the HER3-like dimer interface. Furthermore, the substitution of a lysine residue (HER2K765) with a bulky, hydrophobic residue such as phenylalanine should generate clashes at this HER2-HER3 interface.\n\nThese dimer interface mutants were introduced into our FRET-FLIM assay for investigation of the lapatinib-induced heterodimerisation conformer (Figure 5c). The HER2N764R/K765F mutant disrupted heterodimerisation upon lapatinib binding, whereas HER2I748R/V750R showed no difference in heterodimer formation.\u00a0These mutational FRET/FLIM data is consistent with our model that the lapatinib-induced HER2-HER3 heterodimer adopts a symmetrical, head-to-head orientation, similar to the one observed in the HER3 kinase domain crystal lattice (Jura et al., 2009b) (Figure 5b).\n\n### Head-to-head HER2-HER3 dimerisation is required for inhibitor-induced proliferation\n\nHaving presented modelling and FRET/FLIM data consistent with an orientation of the lapatinib-induced HER2-HER3 dimer being distinct from the active activator/receiver dimer interface, we sought to identify which type of HER2-HER3 interaction caused the NRG-lapatinib co-stimulatory growth observed in 2D proliferation assays.\n\nIn these assays, we did not ectopically introduce the HER2N764R/K765F mutant because, firstly, it might also disrupt the active, asymmetrical HER2-HER3 heterodimer interface and secondly, SKBR3 cells have vast numbers of endogenous HER2 receptors that would hinder analysis of the behaviour of ectopically expressed HER2N764R/K765F. Instead we identified HER3L700F as the reciprocal mutant to HER2N764R/K765F (Figure 6a, Figure 6\u2014video 1). We introduced HER3L700F into SKBR3 cells to investigate the role of the head-to-head, symmetric dimer interface in the lapatinib-NRG synergistic proliferation described above. While the HER3V945R active dimer mutant did not disrupt drug-growth factor cooperative proliferation, the HER3L700F mutant did (Figure 6d\u2013e). Both HER3L700F and HER3V945R were expressed on the cell surface, as measured by flow cytometry (Figure 2\u2014figure supplement 2). Combined, this indicates that the inhibitor-induced heterodimer of HER2 and HER3 is consistent with a head-to-head, symmetrical conformation, and it plays an important role in the synergistic proliferative effects of lapatinib and NRG. Although this conformation has been described from the HER3 kinase domain crystal lattice (Jura et al., 2009b), to our knowledge it is the first time a functional role has been ascribed to heterodimers consistent with this interface in cells.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/32271/elife-32271-fig6-v2.jpg)\n\n**Figure 6.:** (a) Molecular model of the lapatinib-induced HER2-HER3 dimer with the lapatinib-dimer interface residues HER2N764 and HER2K765 highlighted (purple), and a potential reciprocal residue HER3L700F (cyan). (b\u2013e) 2D proliferation assays of SKBR3 cells transfected with (b) RFP empty vector, (c) HER3wt, (d) HER3V945R, or (e) HER3L700F and treated with lapatinib\u00a0\u00b110 nM NRG as before. Data represents mean\u00a0\u00b1SEM for six independent experiments, each performed in triplicate. Corresponding data and statistics available as Figure 6\u2014source data 1.\n\n## Discussion\n\nThe conformational dynamics of HER2-HER3 heterodimerisation are an important consideration for evaluating existing and future targeted therapy intervention strategies against HER2+ breast cancer and other HER family driven cancers. Here, we show that the HER2 inhibitor lapatinib is paradoxically able to promote proliferative behaviour in HER2+ breast cancer cells when administered in the presence of the HER3 ligand NRG. The synergy between growth factor and inhibitor requires an intricate, multi-step cascade of conformational events.\n\nLapatinib itself is able to promote heterodimerisation between the kinase domains of HER2 and HER3, stabilising an orientation consistent with a symmetric, head-to-head kinase domain heterodimer that is distinct from the canonical, asymmetric, head-to-tail active kinase domain orientation that occurs throughout the EGFR family. An analogous interface has previously been observed in the HER3 kinase domain crystal lattice (Jura et al., 2009b); here, we have provided modelling and cellular evidence of a heterodimer with an interface consistent to the one observed in the HER3 kinase domain crystal lattice. Sequestering HER2 and HER3 in these inactive, lapatinib-bound heterodimers was of benefit to NRG-mediated proliferative signalling. Our results, in which inhibitor binding drives dimer formation that boosts signalling and proliferation, shows some parallels with the inhibitor-induced signalling phenotypes in the RAF-family (Eyers et al., 1998; Hatzivassiliou et al., 2010; McKay et al., 2011; Poulikakos et al., 2010; Thevakumaran et al., 2015)\n\nWhile the FRET-FLIM analysis of the lapatinib-induced dimerisation was not able to differentiate between heterodimers or higher order oligomers, our clustering data shows that lapatinib is likely to induce higher order oligomers. Because of the modelled symmetrical nature of these lapatinib-induced dimers, in which both lapatinib-bound HER2 and HER3 would be conformationally available as \u2018activator\u2019 receptors for additional oligomerization partners, it is not inconceivable they may act as nucleation points for larger oligomeric signalling platforms. Such signalling arrays, in which mutual cooperativity increases signaling output, have been proposed for EGFR oligomers (Huang et al., 2016).\n\nThe addition of ligand potentially causes rearrangements within these platforms through the ligand-induced conformational ballet of multi-level interactions between the various extracellular and intracellular domains of EGFR family receptors (reviewed in (Lemmon et al., 2014)). The formation of lapatinib-induced oligomeric platforms may facilitate a transition into active signalling heterodimers upon ligand binding, due to the availability of dimerisation partners in immediate proximity within these drug-induced oligomer platforms.\n\nBoth the lapatinib-induced HER2-HER3 heterodimerisation and the downstream lapatinib-NRG synergistic effects on proliferation depended on the ability of HER3 to bind ATP. Although usually classified as a pseudokinase, HER3 has been shown to retain a measure of autophosphorylation activity (not transphosphorylation) under specific circumstances (Shi et al., 2010). We show HER2-HER3 heterodimerisation and downstream proliferative effects can be elicited by the addition of the HER3-binding inhibitor bosutinib, indicating that nucleotide binding pocket occupation performs a structural role that is critical to HER3 function, and apparently independent of any retained catalytic activity. Observing increased heterointeractions and cellular proliferation due to inhibition of an activity-deficient kinase is a strong indication of the importance of ATP-binding in\u00a0certain\u00a0pseudokinases, and the necessity of pocket-occupied structural conformers in sustaining protein\u2013protein interactions and subsequent downstream signalling output.\n\nBecause of the importance of HER3 in HER2-targeted therapy resistance, its conserved ATP binding raised the possibility of targeting HER3 with ATP-competitive kinase inhibitors. Our data show, however, that stabilisation of the HER3 kinase domain with an ATP-competitive kinase inhibitor can have a stimulating effect on HER2+ breast cancer cell proliferation. This indicates that the development of small molecule targeted therapy against HER3 for use in HER2+ breast cancer needs to be directed away from stabilising the HER3 ATP binding pocket occupied conformer and rather towards stabilising the apo, inactive conformer. An exception to this might be the development of irreversible, adamantane-linked inhibitors of HER3 that target the receptor for proteosomal degradation (Xie et al., 2014).\n\nThe substantial effect that lower doses of lapatinib have on proliferation in the presence of growth factor may have an impact on the establishment of lapatinib-resistance in vivo. This is in accordance with the observation from xenograft models that resistance occurs much more readily if lapatinib is administered continuously at low doses than if it\u2019s used intermittently at high dose (Amin et al., 2010). Increased production of growth factors (including NRG) is a well-described resistance mechanism against HER2-targeted therapy (reviewed in\u00a0[Claus et al., 2014]). NRG production by the microenvironment has also been shown to play a role in metastatic spread of ovarian cancer cells that express high levels of HER3 (Pradeep et al., 2014). High expression levels of NRG in HER2+ breast cancer patients showed a strong correlation with disease recurrence (Xia et al., 2013). Several somatic mutations in HER3 observed in cancer fall within the extracellular domain and have a potential effect on ligand-binding affinity (Jaiswal et al., 2013). These mutations may exacerbate the inhibitor-growth factor synergistic behaviour reported here.\n\nOur results provide a potential molecular mechanism for the disappointing results observed in a recent Phase III study of lapatinib used in an adjuvant setting (ALTTO trial) (Piccart-Gebhart et al., 2016). The lapatinib-only arm of this study was terminated prematurely, and the effects observed in the adjuvant setting for both lapatinib-trastuzumab co-treatment and trastuzumab treatment followed by lapatinib were not significant. These clinical results indicate there are complicating factors in hindering lapatinib efficacy in patients, which may involve the expression levels of HER3 and NRG stimulation by a complex tumour microenvironment. The complex relationships between distinct protein conformation dynamics, formation of oligomeric assemblies, the availability of ligand, and the various effects on downstream signalling all need to be considered\u00a0when applying targeted therapy to avoid potentially unexpected enhanced cancer cell proliferation after inhibitor treatment.\n\n## Materials and methods\n\n### Reagents and antibodies\n\nNRG1 was purchased from PeproTech. Lapatinib was a kind gift from Professor Gy\u00f6rgy K\u00e9ri (Vichem Chemie Research Ltd Hungary). Bosutinib was purchased from LC Labs. Total HER2, HER3, PKB, HER2 pY877, HER3 pY1289, PKB pS473 and ERK1/2 pT202/pY204 antibodies were purchased from Cell Signaling Technology, anti-\u03b1-tubulin from Sigma, total ERK1/2 from Merck, and Alexa Fluor-488 conjugated anti-HER3 antibody from R&D systems.\n\n### Cell culture and plasmid transfection\n\nMCF7 and ZR75 cells were cultured in DMEM supplemented with 10% FCS, SKBR3 cells were grown in McCoys medium supplemented with 10% FCS. BT474, AU565, HCC1419, and HCC1569 cells were grown in RPMI with 10% FCS. For BT474 cells 10 \u03bcg/ml bovine insulin was included in the culture medium.\n\nCells were transfected with plasmid DNA using FuGENE 6, FuGENE HD (Roche), or Lipofectamine LTX (Thermo Fisher Scientific) according to the manufacturer\u2019s protocol.\n\nAll cell lines were sourced from the Francis Crick Institute's Cell Services facility, where they were tested negative for mycoplasma and authenticated via STR profiling.\n\n### Proliferation assays\n\nFor 2D proliferation assays, cells were plated at 1 \u00d7 104 cells/well in a 96-well plate. The following day they were subjected to treatment for 72 hr, followed by addition of CellTiter-Glo reagent (Promega) and measured on an EnVision plate reader (Perkin Elmer). CellTiter-Glo data were normalised to the growth factor-null/inhibitor-null untreated control. This caused some growth factor-treated plots to start at above-baseline levels, which is an indication of the proliferative effect that growth factor treatment had in these cells.\n\nFor 3D spheroid assays, 3 \u00d7 103 cells were plated in a 96-well, round-bottom, ultra-low attachment plate (Corning) in the presence of 1% Matrigel (Corning). After three days of growth, an equal volume of 2x media containing treatment conditions was added and refreshed every three days for a total of eight days of treatment. Phase contrast images were taken using a Zeiss Axiovert 40 CFL microscope with a Zeiss 5x A-plan objective and analysed using ImageJ.\n\n### Flow cytometry\n\nSKBR3 cells were transfected with RFP-HER3 mutants for 48 hr. Cells were pre-treated with 0.5 mM EDTA to facilitate removal from the substrate and stained for HER3 extracellular expression using Alexa Fluor-488 conjugated anti-HER3 antibody (R&D systems, clone 66223) as per manufacturer\u2019s instructions. Briefly, cells were blocked using mouse IgG (Santa Cruz Antibodies) for 15 min at room temperature, followed by incubation with conjugated antibody for 30 min at room temperature in the dark. Cells were washed in PBS, 0.5% BSA, 0.1% sodium azide three times before flow cytometric analysis using a BD Fortessa instrument (BD). Results were analysed using the Flo-Jo software.\n\n### FRET determination by FLIM measurements\n\nFluorescence resonance energy transfer (FRET) is used to quantitate direct protein\u2013protein interactions and post-translational modifications. Processing of cells for FRET determination by FLIM has been previously described (Barber et al., 2009; Parsons and Ng, 2002). FLIM was performed using time-correlated single-photon counting (TCSPC) with a multiphoton microscope system as described previously (Peter et al., 2005). For experiments measuring endogenous protein, FRET pairs were Cy5-conjugated anti-HER2 IgG, and Alexa546-conjugated anti-HER3 IgG. For exogenous protein measurements, FRET pairs were HER2-GFP and HER3-HA with an anti-HA IgG, tagged with a Cy3 fluorophore. FRET efficiency between the donor and acceptor bound proteins was calculated with the following equation in each pixel and averaged per cell: FRET eff\u00a0=\u00a01-tau(DA)/tau(control) where tau(DA) is the lifetime displayed by cells co-expressing the donor and acceptor, whereas tau (control) is the mean donor (GFP) lifetime, measured in the absence of the acceptor.\n\n### Modelling HER2-HER3 dimers\n\nWe modelled the HER2-HER3 dimer by comparative homology modelling using a multiple templates approach. The active, asymmetric HER2-HER3 dimer was modelled using the crystal structure of the active EGFR kinase domain (PDB ID 2GS2)\u00a0(Zhang et al., 2006) and one chain of the crystal structure of the HER3 homodimer (PDB ID 3KEX)\u00a0(Jura et al., 2009b) as templates. To build the EGFR-like, inactive, symmetric dimer we have used the crystal structure of the EGFR homodimer (PDB ID 3GT8)\u00a0(Jura et al., 2009a), the crystal structure of EGFR complexed with lapatinib (PDB ID 1XKK)\u00a0(Wood et al., 2004) and only one chain of the crystal structure of the HER3 homodimer (PDB ID 3KEX)\u00a0(Jura et al., 2009b). To build the HER3-like dimer, we have used the HER3 homodimer structure (PDB ID 3KEX)\u00a0(Jura et al., 2009b), the crystal structure of EGFR lapatinib-bound (PDB ID 1XKK)\u00a0(Wood et al., 2004) and the crystal structure of the inactive EGFR AMP-PNP bound (PDB ID 2GS7)\u00a0(Zhang et al., 2006). The sequence alignment used to build the model has been created by using PRALINE with the homology-extended alignment strategy (Simossis et al., 2005). We generated 200 three-dimensional models using the MODELLER package\u00a0(Sali and Blundell, 1993). The selected models were chosen on the basis of the MODELLER objective function's DOPE score.\n\nThe volume of the HER2 ATP binding pocket was calculated with the SURFNET 1.5 package\u00a0(Laskowski, 1995), where the cavity regions in a protein are built up by fitting a probe sphere of 1.4 \u00c53 into the spaces between atoms.\n\nThe structural alignment was performed using the multi-seq tool of the VMD 1.9.1 package\u00a0(Humphrey et al., 1996), and measurement of interaction surface buried residues was performed using POPScomp\u00a0(Kleinjung and Fraternali, 2005).\n\n### Receptor clustering assays\n\nSTORM imaging and cluster analyses are described in more detail at Bioprotocol (Roberts et al., 2018).\u00a0SKBR3 cells were treated with either 14 nM Lapatinib or 41 nM Bosutinib. HER2 and HER3 Affibody ligands were used to label the non-activated states of the receptors (HER2 from Affibody Inc. and plasmid encoding the HER3 affibody was a gift from John L\u00f6fblom, protein made in house and shown to bind specifically to HER3 receptors) and NRG-\u03b21 (Peprotech) was used to stimulate the cells. The conjugation of dyes (Invitrogen) to HER2 and HER3 ligands was done in house and the ratio of dye:ligand was confirmed to be\u00a0~1:1. The NRG-dye conjugate has been shown to be as active as the unlabelled protein. We incubated cells in 100 nM HER2Affibody-Alexa488\u00a0+\u00a050 nM HER3Affibody-Alexa647 or 100 nM HER2Affibody-Alexa488\u00a0+\u00a010 nM NRG-Alexa647\u00a0\u00b1drug for 1 hr. Cells were chemically fixed using 4% paraformaldehyde (EMS solutions)+0.5% glutaraldehyde (Sigma-Aldrich) diluted into ice-cold PBS.\n\nSamples were imaged using a Zeiss Elyra super-resolution microscope to stochastically excite the Alexa488 and Alexa647 fluorophores bound to the receptors in the cells and to image single molecules. Imaging was done in TIRF mode using a 100x oil immersion objective lens. We used a 405 nm laser line to aid fluorophore blinking and 488 nm or 640 nm laser lines to excite the fluorophores, alternating the lasers to image the two receptors independently every 300 frames, over a total of\u00a0~10,000 frames. The exposure time was 20 ms. A minimum of two replicates of each sample were imaged generating at least 12 regions (25.6 \u03bcm x 25.6 \u03bcm) covering at least one cell per region. The Zen software localised the single molecule spots in the cells, a threshold was set to discard background spots and the co-ordinates of the positive localisations (typically 30,000\u00a0+\u00a0for HER2 and 5,000\u00a0+\u00a0for HER3 per region) were passed into the Bayesian cluster identification algorithm (Rubin-Delanchy et al., 2015)\n\nThe clustering algorithm expects the background and clusters to be uniformly distributed over a rectangular ROI (Rubin-Delanchy et al., 2015). The analysed images mainly showed single cells. Of interest are the HER2 and HER3 receptors in the cell membrane, which were visible as a circular shape. In order to conform with the prerequisites of the clustering algorithms, rectangular regions have been manually selected that tightly cover the cell membrane using the most suitable angles (assessed by visual inspection). The whole cell membrane has been covered in this way. The data selected by these regions have been rotated so that the sides of the rectangles became parallel to the coordinate axis. The result was used as input for the clustering algorithm and the algorithm was applied as described by the protocol. The complete lists of molecules per cluster that have been produced by the algorithm were used for the presentation.\n\n### Recombinant HER3 KD purification\n\nThe baculoviral HER3 kinase domain construct was kindly provided by Prof. Mark Lemmon, University of Pennsylvania. Sf21 cells at 1 \u00d7 106 cells/ml were infected with P3 virus (7 \u00d7 107 pfu/ml) at an MOI of 1.0 and allowed to grow for three days. The cells were lysed in lysis buffer containing protease inhibitors, 1 mM DTT and 2 mM BME. The lysate was clarified by centrifugation and incubated with NiNTA resin (Qiagen) for 30 mins at 4\u00b0C, after which the resin was washed extensively with buffer containing 50 mM Hepes (pH 7.6), 300 mM NaCl, 2 mM BME, 5% glycerol, 10 mM imidazole. HER3 was eluted in the same buffer with 200 mM imidazole added.\n\nEach elution was centrifuged at 10,000 rpm to remove any precipitate or resin and applied to a S200 gel filtration column in 50 mM HEPES (pH 7.6), 300 mM NaCl, 2 mM BME, 2.5% glycerol.\n\n### Thermal shift assay (TSA)\n\nThermal shift assays were carried out as described in (Niesen et al., 2007). Briefly, in a 96-well RT-PCR plate (Life Technologies) 1 \u03bcg HER3 kinase domain/well was incubated with 1 \u03bcM inhibitor or 200 \u03bcM ATP/10 mM MgCl2 (as indicated) for 30 mins at 4\u00b0C in the presence of Sypro Orange dye (Sigma). HER2 TSA experiments were performed in a 384-well RT-PCR plate (Thermo Fisher Scientific). 0.5 \u03bcg of HER2 kinase domain/well was incubated with 1 \u03bcM lapatinib, 1 \u03bcM bosutinib, or 200 \u03bcM ATP/10 mM MgCl2 for 20 mins at 4\u00b0C. HER3 measurements were taken on an Applied Biosystems 7500 Fast Real-Time PCR machine, and HER2 measurements on an Applied Biosystems Quant Studio 7 PCR machine. Data were trimmed and a Boltzmann sigmoidal curve fitted in GraphPad Prism 6. The inflection point of the Boltzmann sigmoidal was taken as the Tm. Thermal shift \u0394Tm values were obtained by subtracting the Tm value of the kinase domain alone control.\n\n### Western blot analysis\n\nCells were plated at 0.5 \u00d7 105 cells/well in 24-well plates. Cells were lysed in 1x sample buffer (containing 1 mM DTT), sonicated and centrifuged. After centrifugation, the lysates were subjected to SDS-PAGE and analyzed by western blotting.\n\n### Cellular thermal shift assay (CETSA)\n\nCETSA was performed with COS7 cells transfected with HER3wt-RFP, HER3T787M-RFP or HER3KGG-RFP plasmids as described in (Jafari et al., 2014; Reinhard et al., 2015). Briefly, COS7 were treated with DMSO or 50 nM bosutinib for 1 hr at 37\u00b0C. Cells were washed with PBS, detached and washed again twice with cold PBS. Cell pellets were resuspended in cold PBS with protease inhibitors (Roche) and 100 \u03bcl of each cell suspension was transferred into 0.2 ml PCR tubes. PCR tubes were heated for 3 min at 42\u00b0C or 50\u00b0C in a thermal cycler (DNA Engine DYAD, MJ research, Peltier thermal cycler) and incubated at room temperature for 3 min. Tubes were then immediately transferred onto ice, 35 \u03bcl of cold PBS 1.4% NP-40 with protease inhibitors were added and tubes were snap-frozen. Samples were then subjected to two freeze-thaw (at 25\u00b0C) cycles and cell lysates were centrifuged at 20,000 g for 1 hr at 4\u00b0C. Supernatants were carefully removed and analysed by western blot.\n",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "c0264ce3-bfe7-4b96-bf23-818e9d4ceb38",
+      "submission_id": "14d40862-a23f-4d57-a7c4-f837f5cf7bd3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Benjamin F Cravatt, The Scripps Research Institute United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.32271.036](https://doi.org/10.7554/eLife.32271.036)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Inhibitor-induced HER2-HER3 heterodimerisation promotes proliferation through a novel dimer interface\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jonathan Cooper as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Nathanael S Gray (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe reviewers were generally quite impressed by the manuscript, noting that it represented a very nice molecular pharmacology detective story to try to explain the paradoxical activation of Her2 signaling upon treatment with an ATP-competitive Her2 inhibitor Lapatinib. Key observations supported by the data presented include 1) the Her2/Her3 dimer induced by lapatinib + neuregulin does not resemble the head to tail model for \"normal\" activation by neuregulin alone, but a head to head orientation, previously only observed in the HER3 crystal structure 2) the Her3 ATP site needs to be occupied by a ligand (ATP or bosutinib) for the hyperactivation to occur, 3) an irreversible version of lapatinib (neratinib) does not activate cell growth \u2013 presumably because the compound is irreversibly bound to HER2. The reviewers felt that these observations are an important contribution to our understanding of HER2/HER3 signaling in breast cancer. However, several points were raised for revision, including some that will require additional experiments.\n\nEssential revisions:\n\n1) The authors use various mutations in Her3 to show ATP binding by Her3 is important to maintain activating ability of lapatinib. They should show CETSA or other binding data for what these mutations do to bosutinib affinity of Her3 in cells. Also I wondered what bosutinib combined with lapatinib does in the presence of these mutations (synergy or antagonism and do the mutations abrogate this effect)? The authors could also have used the covalent Her3 binder TX1-85-1 (Nat Chem Biol. 2014 Dec; 10(12): 1006-1012.) which is more selective than bosutinib as a way to interrogate what Her3 ATP-site ligation does to the pharmacology of lapatinib.\n\n2) Much of the mechanistic analysis is done in SKBR3 cells, which from the data presented appear to be somewhat of an outlier in terms of the Neuregulin + lapatinib induction of growth. In Figure 1\u2014figure supplement 1 the authors investigate three other cells, BT474, MCF7, and ZR75. The first is a high Her2 expresser and also shows the same Neuregulin + lapatinib enhanced growth. Several more HER2 overexpressing cell lines should be tested for this effect (2-5 should suffice).\n",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "89f97a9a-de64-4af5-ab8a-090bf5ea223b",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C1",
+      "claim": "Lapatinib is an ATP-competitive inhibitor of HER2.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that lapatinib, an ATP-competitive inhibitor of HER2, is able to induce proliferation cooperatively with the HER3 ligand neuregulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a characterization of lapatinib.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "ebd1e3d5-5df1-4bd8-b539-e1e4fcbe4546",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C2",
+      "claim": "Lapatinib induces proliferation cooperatively with the HER3 ligand neuregulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that lapatinib, an ATP-competitive inhibitor of HER2, is able to induce proliferation cooperatively with the HER3 ligand neuregulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "bc17050b-2d7e-4a7e-94e1-13724ca8a0ee",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C3",
+      "claim": "The synergy between lapatinib and neuregulin depends on their ability to promote atypical HER2-HER3 heterodimerisation.",
+      "claim_type": "EXPLICIT",
+      "source": "This counterintuitive synergy between inhibitor and growth factor depends on their ability to promote atypical HER2-HER3 heterodimerisation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by FRET-FLIM data in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "50fc5f73-1079-4400-a7a1-8fd584f40c1f",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C4",
+      "claim": "Lapatinib stabilises a particular HER2 conformer.",
+      "claim_type": "EXPLICIT",
+      "source": "By stabilising a particular HER2 conformer, lapatinib drives HER2-HER3 kinase domain heterocomplex formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by molecular modeling and FRET-FLIM experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "a5d70a85-eb74-4dbf-8475-1e1ec89caf98",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C5",
+      "claim": "The lapatinib-induced HER2-HER3 dimer exists in a head-to-head orientation distinct from the canonical asymmetric active dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "This dimer exists in a head-to-head orientation distinct from the canonical asymmetric active dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by molecular modeling and mutational analysis in Figures 4-5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "1c794a89-a243-45e5-8a80-037fca9edfa2",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C6",
+      "claim": "HER2 overexpression is an oncogenic driver in approximately 20% of all breast cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of HER2 is an oncogenic driver in approximately 20% of all breast cancers (Lovekin et al., 1991; Owens et al., 2004; Slamon et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations from the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "46317fb3-c00a-4f16-9596-4005dbc5b8cc",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C7",
+      "claim": "HER3 binds the growth factor neuregulin to induce heterodimerisation and signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "While HER2 itself has no known ligand, HER3 binds the growth factor neuregulin (NRG, also known as heregulin or HRG) to induce heterodimerisation and signalling (Sliwkowski et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "52ad4a14-408c-4725-b810-2297039f3383",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C8",
+      "claim": "HER3 has been implicated in therapeutic resistance to HER2-targeted therapy through a variety of mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "HER3 has been implicated in therapeutic resistance to HER2-targeted therapy through a variety of mechanisms, including receptor rephosphorylation, HER3 overexpression and increased NRG production (reviewed in [Claus et al., 2014]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation to a review.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "34af4546-8248-474c-9770-0a4fa2197e99",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C9",
+      "claim": "In SKBR3, BT474, AU565, and HCC1419 cells treated with a range of lapatinib concentrations for 72 hr, the addition of 10 nM NRG rescues the drug-induced cytotoxicity except at very high drug concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "In SKBR3, BT474, AU565, and HCC1419 cells treated with a range of lapatinib concentrations for 72 hr, the addition of 10 nM NRG rescues the drug-induced cytotoxicity except at very high drug concentrations (Figure 1a, Figure 1\u2014figure supplement 1a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by experimental data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "2b51fc13-906c-48de-af2a-e9a4da400f95",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C10",
+      "claim": "Low concentrations of lapatinib (~40\u2013400 nM) are able to enhance proliferation in conjunction with 10 nM NRG by 25\u201330% compared to growth factor alone in SKBR3, BT474 and AU565 cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in the case of the SKBR3, BT474 and AU565 cell lines, low concentrations of lapatinib (~40\u2013400 nM) are able to enhance proliferation in conjunction with 10 nM NRG by 25\u201330% compared to growth factor alone (Figure 1a, Figure 1\u2014figure supplement 1a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by experimental data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "fa2cfcbe-768f-40bd-a301-b375a796240f",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C11",
+      "claim": "Lapatinib does not strongly bind HER3 as compared to ATP and a panel of other inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a thermal shift assay (TSA), which measures a shift in the thermal stability of a protein after ligand/inhibitor binding in vitro, we also show that lapatinib does not strongly bind HER3 as compared to ATP and a panel of other inhibitors (Figure 2a, see further below).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by TSA data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "7e61e470-26dd-451e-8ac4-b507ff139131",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C12",
+      "claim": "Neratinib-NRG co-treatment did not show the synergistic proliferative phenotype observed with lapatinib-NRG.",
+      "claim_type": "EXPLICIT",
+      "source": "Neratinib-NRG co-treatment did not show the synergistic proliferative phenotype observed with lapatinib-NRG, in either a cell counting assay, or in 3D spheroid formation (Figure 1\u2014figure supplement 2a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by experimental data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "95e6c699-ab71-43f8-af7c-5f63a0d14a3f",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C13",
+      "claim": "The proliferative phenotype observed for lapatinib is likely to necessitate a dynamic, reversible inhibitor binding.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the proliferative phenotype observed for lapatinib is likely to necessitate a dynamic, reversible inhibitor binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the comparison between lapatinib (reversible) and neratinib (irreversible) effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "b6d1dc6f-e74e-4e5b-b0a2-844ad00f14fa",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C14",
+      "claim": "Bosutinib strongly binds to HER3.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous observations, we confirmed that HER3 strongly binds bosutinib.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by TSA data in Figure 2a and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "8fe60178-caa0-46b1-ae56-93e904a7d6bb",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C15",
+      "claim": "Lapatinib was not able to provide a noticeable thermal shift to HER3.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly, lapatinib was not able to provide a noticeable thermal shift, which corresponds to previously published results indicating HER3 does not bind lapatinib with high affinity (Davis et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by TSA data and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "49e62e6e-4ac1-4a74-b719-e44660521c47",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C16",
+      "claim": "Lapatinib conferred strongly increased thermal stability to HER2.",
+      "claim_type": "EXPLICIT",
+      "source": "While lapatinib was able to confer strongly increased thermal stability to HER2, bosutinib was not (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by TSA data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "c5399159-2164-491a-a67d-4a3b62759241",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C17",
+      "claim": "SKBR3 cells treated with bosutinib over 72 hr show a dose dependent induction of proliferation without additional NRG stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In a 2D proliferation assay, SKBR3 cells treated with bosutinib over 72 hr show a dose dependent induction of proliferation without additional NRG stimulation (Figure 2\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by experimental data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "0c2a0a08-690b-43c2-ad60-628a45295152",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C18",
+      "claim": "Introduction of the ATP-binding deficient HER3KGG mutant into MCF7 cells shows abrogation of ligand-induced trans-phosphorylation of HER3 by HER2.",
+      "claim_type": "EXPLICIT",
+      "source": "Introduction of this ATP-binding deficient HER3KGG mutant into MCF7 cells shows abrogation of ligand-induced trans-phosphorylation of HER3 by HER2 (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Western blot data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "505c032f-a4cf-4dcd-bcf7-14a2492f56e9",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C19",
+      "claim": "SKBR3 cells ectopically expressing HER3wt or HER3KGG show a differential proliferative behaviour upon lapatinib \u00b1NRG treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "SKBR3 cells ectopically expressing HER3wt or HER3KGG show a differential proliferative behaviour upon lapatinib \u00b1NRG treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by experimental data in Figure 2\u2014figure supplement 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "9154b7a4-5987-4369-b193-2f9222bb11d4",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C20",
+      "claim": "Wild type HER3 showed increased thermal stability in cells in the presence of 50 nM bosutinib, while HER3KGG did not.",
+      "claim_type": "EXPLICIT",
+      "source": "Where wild type HER3 showed increased thermal stability in cells in the presence of 50 nM bosutinib, HER3KGG did not (Figure 2\u2014figure supplement 1g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by CETSA data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "abb98ea0-b7d7-4546-8192-6ff4765448ef",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C21",
+      "claim": "Ectopic expression of wild type HER3, but not HER3KGG or HER3T787M, enhances bosutinib-mediated proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopic expression of wild type HER3, but not HER3KGG or HER3T787M, enhances bosutinib-mediated proliferation, indicating this behaviour is driven by bosutinib binding to HER3 directly (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by experimental data shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "51f87d88-3958-4d00-b7e9-6826f7a05f00",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C22",
+      "claim": "Nucleotide pocket occupation in HER3 is essential for its ability to sustain a proliferative signalling pathway under distinct circumstances.",
+      "claim_type": "EXPLICIT",
+      "source": "The HER3KGG and bosutinib results indicate that nucleotide pocket occupation in HER3 is essential for its ability to sustain a proliferative signalling pathway under distinct circumstances: in the acute response to growth factor, in promoting ligand-inhibitor cooperative proliferation and even after treatment with a HER3-binding inhibitor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results with HER3KGG and bosutinib.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "3b3255e7-71c2-4c06-a2c6-fa5538e97477",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C23",
+      "claim": "At endogenous protein levels in SKBR3 cells, lapatinib-driven HER2-HER3 heterodimerisation occurs to levels similar to those seen with NRG.",
+      "claim_type": "EXPLICIT",
+      "source": "At endogenous protein levels in SKBR3 cells, we observe lapatinib-driven HER2-HER3 heterodimerisation to levels similar to those seen with NRG (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by FRET-FLIM data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "7421b1f2-62f0-40ef-a393-a0b4ea14203e",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C24",
+      "claim": "The lapatinib-induced dimerisation occurs in the absence of exogenously added NRG.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the lapatinib-induced dimerisation occurs in the absence of exogenously added NRG, indicating a HER2-HER3 dimer that is driven primarily through intracellular domain interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by FRET-FLIM data in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "e6e9d4d7-f2a2-446a-b2f4-178b4a49e391",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C25",
+      "claim": "MCF7 cells expressing low levels of endogenous HER2 and HER3 display lapatinib-induced heterodimerisation of ectopically expressed GFP-HER2wt and HA-HER3wt.",
+      "claim_type": "EXPLICIT",
+      "source": "MCF7 cells, which express low levels of endogenous HER2 and HER3 compared to SKBR3, also display lapatinib-induced heterodimerisation of ectopically expressed GFP-HER2wt and HA-HER3wt (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by FRET-FLIM data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "a8fe3d4f-c444-4faa-ba4b-374b83dfbfc0",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C26",
+      "claim": "The introduction of the nucleotide pocket compromised HER3KGG mutant strongly disrupts inhibitor-promoted heterodimerisation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is also reflected in the case of lapatinib-induced heterodimer formation, where the introduction of the nucleotide pocket compromised HER3KGG mutant strongly disrupts inhibitor-promoted heterodimerisation (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by FRET-FLIM data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "8a6b3d78-766a-4aac-885d-eb2b01f50e8c",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C27",
+      "claim": "Bosutinib was able to directly promote heterodimerisation between HER2 and HER3.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the proliferative effects described above, bosutinib was also able to directly promote heterodimerisation between HER2 and HER3 (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by FRET-FLIM data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "8c6eedc5-9236-451e-9a58-849ba14b5b0a",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C28",
+      "claim": "Treatment with either NRG, lapatinib, or bosutinib showed a shift in cluster population size compared to control, implying the formation of higher-order oligomers rather than dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with either NRG, lapatinib, or bosutinib showed a shift in cluster population size compared to control, implying the formation of higher-order oligomers rather than dimers (Figure 3e,f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by STORM data shown in Figure 3e,f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "4567a188-c814-4fda-b324-af5bb430d3d4",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C29",
+      "claim": "The active signalling dimer in the EGFR family adopts an asymmetric orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "The active signalling dimer in the EGFR family adopts an asymmetric orientation, in which there is a distinct division of labour in the activator-receiver pairing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with supporting context from the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "5c8875fe-bbe9-4a8c-a090-7ef154be4caa",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C30",
+      "claim": "For a HER2 \u03b1-C helix in the active, 'in' position, lapatinib binding results in a potential steric clash with HER2E770/M774.",
+      "claim_type": "EXPLICIT",
+      "source": "Our modelling showed that, for a HER2 \u03b1-C helix in the active, 'in' position, lapatinib binding results in a potential steric clash with HER2E770/M774 (Figure 4\u2014figure supplement 1a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by molecular modeling shown in the referenced figures.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "b32ea32e-010a-45c2-a9e1-9cbd644c9282",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C31",
+      "claim": "The I714Q mutation in HER2 disrupted the lapatinib-driven HER2-HER3 association.",
+      "claim_type": "EXPLICIT",
+      "source": "The I714Q mutation in HER2, which renders the receptor receiver-impaired, disrupted the lapatinib-driven HER2-HER3 association, indicating it is retained in the lapatinib-induced dimer interface (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by FRET-FLIM data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "ece1a2a0-9e65-4dee-b017-6349bcb8bcd4",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C32",
+      "claim": "The reciprocal activator-impaired mutation in HER3 (HER3V945R) did not disrupt lapatinib-mediated heterodimerisation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the reciprocal activator-impaired mutation in HER3 (HER3V945R) did not disrupt lapatinib-mediated heterodimerisation, although it efficiently suppressed the canonical active dimer after ligand-induced heterodimerisation (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by FRET-FLIM data shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "db1f6b97-0a18-4be4-a0ea-e3ca32cc5fe7",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C33",
+      "claim": "The inhibitor binding is able to robustly induce a heterodimer between HER2 and HER3, which is distinct from the canonical active heterodimer induced after growth factor stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is surmised that the inhibitor binding is able to robustly induce a heterodimer between HER2 and HER3, which is distinct from the canonical active heterodimer induced after growth factor stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the mutational analysis and FRET-FLIM data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "eb62e095-5cd0-4168-8819-d64582b57212",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C34",
+      "claim": "HER3 lacks the conserved glutamate residue in the \u03b1-C helix.",
+      "claim_type": "EXPLICIT",
+      "source": "As HER3 lacks the conserved glutamate residue in the \u03b1-C helix, HER3K742 is unable to form the salt bridge normally observed in active kinase domain structures (Huse and Kuriyan, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "d8a776cb-f32c-4999-b33e-e8c5f30afb78",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C35",
+      "claim": "The HER3 ATP-bound conformation does not show a classical active conformation with the \u03b1-C helix tilted inward.",
+      "claim_type": "EXPLICIT",
+      "source": "The HER3 ATP-bound conformation therefore does not show a classical active conformation with the \u03b1-C helix tilted inward (Jura et al., 2009b; Shi et al., 2010), but instead resembles the inactive conformation seen in kinases bound to type II inhibitors such as lapatinib.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "82c364c2-2ada-489f-870c-395a53f8d299",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C36",
+      "claim": "HER2I714 is present in the interaction interface of both the EGFR-like, staggered orientation, as well as in the head-to-head, HER3-like orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "HER2I714 is present in the interaction interface of both the EGFR-like, staggered orientation, as well as in the head-to-head, HER3-like orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on molecular modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "3f246492-b0af-485d-82ef-2128772d4545",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C37",
+      "claim": "The HER2N764R/K765F mutant disrupted heterodimerisation upon lapatinib binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The HER2N764R/K765F mutant disrupted heterodimerisation upon lapatinib binding, whereas HER2I748R/V750R showed no difference in heterodimer formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by FRET-FLIM data shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "db3efbf8-9685-451e-91a0-774de64c8ceb",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C38",
+      "claim": "The lapatinib-induced HER2-HER3 heterodimer adopts a symmetrical, head-to-head orientation, similar to the one observed in the HER3 kinase domain crystal lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "These mutational FRET/FLIM data is consistent with our model that the lapatinib-induced HER2-HER3 heterodimer adopts a symmetrical, head-to-head orientation, similar to the one observed in the HER3 kinase domain crystal lattice (Jura et al., 2009b) (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a conclusion drawn from mutational analysis and FRET-FLIM data, with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "29820b5d-bcf9-4d60-854e-f252dc749b5c",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C39",
+      "claim": "The HER3V945R active dimer mutant did not disrupt drug-growth factor cooperative proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "While the HER3V945R active dimer mutant did not disrupt drug-growth factor cooperative proliferation, the HER3L700F mutant did (Figure 6d\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by proliferation assay data shown in Figure 6d-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "a2408b21-b8e1-4d59-b551-353e1fd88f4d",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C40",
+      "claim": "The HER3L700F mutant disrupted drug-growth factor cooperative proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "While the HER3V945R active dimer mutant did not disrupt drug-growth factor cooperative proliferation, the HER3L700F mutant did (Figure 6d\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by proliferation assay data shown in Figure 6d-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "fdf1100f-bb04-4fd7-b4cb-88211e99f6f6",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C41",
+      "claim": "The inhibitor-induced heterodimer of HER2 and HER3 is consistent with a head-to-head, symmetrical conformation, and it plays an important role in the synergistic proliferative effects of lapatinib and NRG.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined, this indicates that the inhibitor-induced heterodimer of HER2 and HER3 is consistent with a head-to-head, symmetrical conformation, and it plays an important role in the synergistic proliferative effects of lapatinib and NRG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the mutational analysis and proliferation assay data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "7498d8a2-c300-4d59-8bc9-dfc429cf5aa7",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C42",
+      "claim": "This is the first time a functional role has been ascribed to heterodimers consistent with the HER3-like head-to-head interface in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this conformation has been described from the HER3 kinase domain crystal lattice (Jura et al., 2009b), to our knowledge it is the first time a functional role has been ascribed to heterodimers consistent with this interface in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a novel finding with a supporting citation to the structural work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "d3890d0a-0487-4402-8311-6971928c89e3",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C43",
+      "claim": "The conformational dynamics of HER2-HER3 heterodimerisation are an important consideration for evaluating existing and future targeted therapy intervention strategies against HER2+ breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "The conformational dynamics of HER2-HER3 heterodimerisation are an important consideration for evaluating existing and future targeted therapy intervention strategies against HER2+ breast cancer and other HER family driven cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "779320e1-7972-44f1-9bd2-e042e325bdf6",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C44",
+      "claim": "Lapatinib itself is able to promote heterodimerisation between the kinase domains of HER2 and HER3, stabilising an orientation consistent with a symmetric, head-to-head kinase domain heterodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Lapatinib itself is able to promote heterodimerisation between the kinase domains of HER2 and HER3, stabilising an orientation consistent with a symmetric, head-to-head kinase domain heterodimer that is distinct from the canonical, asymmetric, head-to-tail active kinase domain orientation that occurs throughout the EGFR family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion in the Discussion section, summarizing the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "432a5ca9-e2cb-418e-a530-766d03ba0bcc",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C45",
+      "claim": "Sequestering HER2 and HER3 in lapatinib-bound heterodimers was of benefit to NRG-mediated proliferative signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequestering HER2 and HER3 in these inactive, lapatinib-bound heterodimers was of benefit to NRG-mediated proliferative signalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion in the Discussion section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "53aaba0e-ec9c-4c62-b207-a68d2f20cf9f",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C46",
+      "claim": "Lapatinib is likely to induce higher order oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "While the FRET-FLIM analysis of the lapatinib-induced dimerisation was not able to differentiate between heterodimers or higher order oligomers, our clustering data shows that lapatinib is likely to induce higher order oligomers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by STORM data in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "1e8613c7-e3a2-459b-ae26-ab25960f0f97",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C47",
+      "claim": "Lapatinib-induced dimers may act as nucleation points for larger oligomeric signalling platforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the modelled symmetrical nature of these lapatinib-induced dimers, in which both lapatinib-bound HER2 and HER3 would be conformationally available as 'activator' receptors for additional oligomerization partners, it is not inconceivable they may act as nucleation points for larger oligomeric signalling platforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as speculation in the Discussion section.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "3f7c5616-3c09-4088-a0c9-8ec5bf3ddf83",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C48",
+      "claim": "The formation of lapatinib-induced oligomeric platforms may facilitate a transition into active signalling heterodimers upon ligand binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The formation of lapatinib-induced oligomeric platforms may facilitate a transition into active signalling heterodimers upon ligand binding, due to the availability of dimerisation partners in immediate proximity within these drug-induced oligomer platforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as speculation in the Discussion section.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "6f5de159-d4f2-4f44-9c8d-fe1a9b8be562",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C49",
+      "claim": "Both the lapatinib-induced HER2-HER3 heterodimerisation and the downstream lapatinib-NRG synergistic effects on proliferation depended on the ability of HER3 to bind ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the lapatinib-induced HER2-HER3 heterodimerisation and the downstream lapatinib-NRG synergistic effects on proliferation depended on the ability of HER3 to bind ATP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion in the Discussion section, summarizing the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "597d9905-5015-46a5-9908-d2b4c3720339",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C50",
+      "claim": "HER3 has been shown to retain a measure of autophosphorylation activity (not transphosphorylation) under specific circumstances.",
+      "claim_type": "EXPLICIT",
+      "source": "Although usually classified as a pseudokinase, HER3 has been shown to retain a measure of autophosphorylation activity (not transphosphorylation) under specific circumstances (Shi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "a4435a1d-8de1-46fa-a01e-61fe165b1eac",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C51",
+      "claim": "Nucleotide binding pocket occupation performs a structural role that is critical to HER3 function, and apparently independent of any retained catalytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We show HER2-HER3 heterodimerisation and downstream proliferative effects can be elicited by the addition of the HER3-binding inhibitor bosutinib, indicating that nucleotide binding pocket occupation performs a structural role that is critical to HER3 function, and apparently independent of any retained catalytic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion in the Discussion section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "811da8f8-b4c8-4c63-b5a0-b436bf2b5fe4",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C52",
+      "claim": "Stabilisation of the HER3 kinase domain with an ATP-competitive kinase inhibitor can have a stimulating effect on HER2+ breast cancer cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show, however, that stabilisation of the HER3 kinase domain with an ATP-competitive kinase inhibitor can have a stimulating effect on HER2+ breast cancer cell proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion in the Discussion section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "857aa29e-df77-4861-9a27-1b64c9854181",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C53",
+      "claim": "The development of small molecule targeted therapy against HER3 for use in HER2+ breast cancer needs to be directed away from stabilising the HER3 ATP binding pocket occupied conformer and rather towards stabilising the apo, inactive conformer.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the development of small molecule targeted therapy against HER3 for use in HER2+ breast cancer needs to be directed away from stabilising the HER3 ATP binding pocket occupied conformer and rather towards stabilising the apo, inactive conformer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recommendation in the Discussion section based on the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "ae1662f7-b1d1-485f-9fa7-16ff4ed6bf4e",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C54",
+      "claim": "The substantial effect that lower doses of lapatinib have on proliferation in the presence of growth factor may have an impact on the establishment of lapatinib-resistance in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The substantial effect that lower doses of lapatinib have on proliferation in the presence of growth factor may have an impact on the establishment of lapatinib-resistance in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as speculation in the Discussion section.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "49974a18-f065-4169-a6cb-a76b3401de23",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C55",
+      "claim": "Resistance to lapatinib occurs much more readily if lapatinib is administered continuously at low doses than if it's used intermittently at high dose in xenograft models.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in accordance with the observation from xenograft models that resistance occurs much more readily if lapatinib is administered continuously at low doses than if it's used intermittently at high dose (Amin et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "220abe00-67d5-4870-bb75-7803318122f2",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C56",
+      "claim": "Increased production of growth factors (including NRG) is a well-described resistance mechanism against HER2-targeted therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased production of growth factors (including NRG) is a well-described resistance mechanism against HER2-targeted therapy (reviewed in [Claus et al., 2014]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation to a review.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "e744b193-be34-4c66-b28c-7a6377bb9ed1",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C57",
+      "claim": "NRG production by the microenvironment has been shown to play a role in metastatic spread of ovarian cancer cells that express high levels of HER3.",
+      "claim_type": "EXPLICIT",
+      "source": "NRG production by the microenvironment has also been shown to play a role in metastatic spread of ovarian cancer cells that express high levels of HER3 (Pradeep et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "a72e955f-a4d8-4100-874c-c24e1ac4f01d",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C58",
+      "claim": "High expression levels of NRG in HER2+ breast cancer patients showed a strong correlation with disease recurrence.",
+      "claim_type": "EXPLICIT",
+      "source": "High expression levels of NRG in HER2+ breast cancer patients showed a strong correlation with disease recurrence (Xia et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "ad209c97-125d-4ef6-83f4-6d4c16f57f67",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C59",
+      "claim": "Several somatic mutations in HER3 observed in cancer fall within the extracellular domain and have a potential effect on ligand-binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Several somatic mutations in HER3 observed in cancer fall within the extracellular domain and have a potential effect on ligand-binding affinity (Jaiswal et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "b06d6fdc-8834-4dd7-ade4-842d42814321",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C60",
+      "claim": "The results provide a potential molecular mechanism for the disappointing results observed in a recent Phase III study of lapatinib used in an adjuvant setting (ALTTO trial).",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide a potential molecular mechanism for the disappointing results observed in a recent Phase III study of lapatinib used in an adjuvant setting (ALTTO trial) (Piccart-Gebhart et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion in the Discussion section with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "fb1e1fa2-3754-4852-9ea4-0d9423175573",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C61",
+      "claim": "The lapatinib-only arm of the ALTTO trial was terminated prematurely.",
+      "claim_type": "EXPLICIT",
+      "source": "The lapatinib-only arm of this study was terminated prematurely, and the effects observed in the adjuvant setting for both lapatinib-trastuzumab co-treatment and trastuzumab treatment followed by lapatinib were not significant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with reference to the ALTTO trial.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "70998218-4915-4523-b70a-9cf8b22fd8d2",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C62",
+      "claim": "HER2 has no known ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "While HER2 itself has no known ligand, HER3 binds the growth factor neuregulin (NRG, also known as heregulin or HRG) to induce heterodimerisation and signalling (Sliwkowski et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "3c77cf45-883f-418b-8876-db911a6b7c84",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C63",
+      "claim": "HER3 is a pseudokinase.",
+      "claim_type": "EXPLICIT",
+      "source": "The pseudokinase HER3, heterodimerisation partner of HER2, is widely implicated in the resistance to HER2-mediated therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "1c1612c6-9dd6-40f3-b712-4056cb827f6c",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C64",
+      "claim": "HER3 is able to bind ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "HER3 is able to bind ATP (crystallised as PDB ID 3KEX, 3LMG), as well as the Src/ABL inhibitor Bosutinib (PDB ID 4OTW) (Levinson and Boxer, 2014; Davis et al., 2011; Jura et al., 2009b; Murphy et al., 2014; Shi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "6543ed77-bb69-4bc3-ad7d-38a5923f1e47",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C65",
+      "claim": "Lapatinib binds HER3 in vitro with very low affinity (Kd = 5.5 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "Although HER3 has been shown to bind lapatinib in vitro with very low affinity (Kd = 5.5 \u03bcM) (Davis et al., 2011), the synergistic behaviour between lapatinib and NRG occurs in cells at a ~ 50 x lower dose than the in vitro Kd, indicating that any binding of lapatinib to HER3 would likely be minor under these conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "3e9fab3d-abfc-40d7-8127-6db874099cde",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C66",
+      "claim": "Transient knockdown of HER3 with two different siRNA oligonucleotides shows a modest, but consistent reduction in the proliferative effect of ligand-inhibitor co-treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, transient knockdown of HER3 with two different siRNA oligonucleotides shows a modest, but consistent reduction in the proliferative effect of ligand-inhibitor co-treatment, implicating HER3 as the relevant growth factor-binding receptor for this NRG response (Figure 1\u2014figure supplement 1j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by experimental data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "54bc7a45-4fe2-43c8-990f-d138e3de5ffa",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C67",
+      "claim": "The irreversible inhibitor neratinib binds the same inactive conformation as lapatinib and with similar binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "The irreversible inhibitor neratinib binds the same inactive conformation as lapatinib and with similar binding affinity (Davis et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "ce3f1ad0-3d41-4a70-bb34-72216049ec65",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C68",
+      "claim": "Neratinib is an irreversible inhibitor and forms a covalent bond with HER2C805.",
+      "claim_type": "EXPLICIT",
+      "source": "However, neratinib is an irreversible inhibitor and forms a covalent bond with HER2C805, a residue conserved in EGFR and HER4 but not HER3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "c5967589-3f69-4f8e-a455-4f1fb337efdd",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C69",
+      "claim": "The induction of HER2 and HER3 phosphorylation seen in western blot analysis of lapatinib-NRG co-treated 3D spheroids was absent in neratinib-NRG co-treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the induction of HER2 and HER3 phosphorylation seen in western blot analysis of lapatinib-NRG co-treated 3D spheroids was absent in neratinib-NRG co-treatment (Figure 1\u2014figure supplement 1l, Figure 1\u2014figure supplement 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Western blot data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "ab781f2b-43f6-414c-9aaa-cda67c8cafef",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C70",
+      "claim": "HER3K742 was mutated to methionine to hinder ATP \u03b1-phosphate coordination, which by itself has been shown to reduce HER3 mant-ATP binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "HER3K742 was mutated to methionine to hinder ATP \u03b1-phosphate coordination, which by itself has been shown to reduce HER3 mant-ATP binding affinity (Shi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "e4e69ff0-5242-4ec1-bed1-67ab55ac6f50",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C71",
+      "claim": "Both HER3KGG and HER3T787M showed normal localization to the plasma membrane, as measured by flow cytometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Both HER3KGG and HER3T787M showed normal localization to the plasma membrane, as measured by flow cytometry, indicating that these mutations did not compromise the receptor and its traffic to the plasma membrane (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by flow cytometry data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "e36709f5-9f9d-45a7-b14d-7914c529db93",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C72",
+      "claim": "The proliferative effects of lapatinib and NRG on SKBR3 cells were also observed in 3D spheroid cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "The proliferative effects of lapatinib and NRG on SKBR3 cells were also observed in 3D spheroid cultures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by experimental data in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "0648cec8-7a9d-43c8-9712-6103038042ed",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C73",
+      "claim": "In 3D spheroid culture the addition of NRG to lapatinib-treated cells rescues SKBR3 cells from lapatinib-induced cytotoxicity/cytostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen in 2D culture systems, in 3D spheroid culture the addition of NRG to lapatinib-treated cells rescues SKBR3 cells from lapatinib-induced cytotoxicity/cytostasis (Figure 1c, Figure 1\u2014figure supplement 1k\u2013l).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by experimental data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "9be7478a-6d30-4910-ba9d-b98ac26d3981",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C74",
+      "claim": "Lapatinib and NRG share a cooperative effect on the induction of proliferation in 3D spheroid cultures, where spheroid size is greater for inhibitor-ligand co-treatment conditions than for those treated with growth factor alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Lapatinib and NRG share a cooperative effect on the induction of proliferation in 3D spheroid cultures, where spheroid size is greater for inhibitor-ligand co-treatment conditions than for those treated with growth factor alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by experimental data in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "e9a2347a-78c0-40cc-87bb-0a7817ac625e",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C75",
+      "claim": "Bosutinib has been shown to bind strongly to HER3 but not to other EGFR family members.",
+      "claim_type": "EXPLICIT",
+      "source": "To separate the structural and trace catalytic roles that ATP-binding could fulfill in HER3, we used the ATP-competitive Src/Abl inhibitor bosutinib, which has been shown to bind strongly to HER3 but not to other EGFR family members (Levinson and Boxer, 2014; Davis et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "aa7dcf83-86b5-4b15-81c0-c628b5a5e1d7",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C76",
+      "claim": "HER2 is not a strong bosutinib binder.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with previously published data that indicates HER2 is not a strong bosutinib binder (Davis et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "cde47bb0-7edb-499e-b657-0c3e356bd097",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C77",
+      "claim": "The ability of bosutinib to induce SKBR3 cell proliferation appears to be an EGFR-family mediated event, as lapatinib treatment can curtail its effects in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of bosutinib to induce SKBR3 cell proliferation appears to be an EGFR-family mediated event, as lapatinib treatment can curtail its effects in a dose-dependent manner (Figure 2\u2014figure supplement 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by experimental data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "24de67c9-d2f6-469e-997b-71d712288f90",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C78",
+      "claim": "The active kinase domain dimer in the EGFR family is critically affected by the conformation of the juxtamembrane domain (JMD).",
+      "claim_type": "EXPLICIT",
+      "source": "On the intracellular side, formation of the active kinase domain dimer is critically affected by the conformation of the juxtamembrane domain (JMD) (Jura et al., 2009a; Thiel and Carpenter, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "38b72e11-6bc3-4ef2-99ed-54214bf2af98",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C79",
+      "claim": "The kinase domains associate in an asymmetric dimer, which resembles the CDK/cyclin-like asymmetric dimer interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The kinase domains associate in an asymmetric dimer, which resembles the CDK/cyclin-like asymmetric dimer interface (Jeffrey et al., 1995; Zhang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "2d957af0-79bf-46dc-b2b1-362a80b559e5",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C80",
+      "claim": "In the canonical dimer, one kinase (the 'activator') allows the dimerisation partner (the 'receiver') to adopt an active conformation and become catalytically active.",
+      "claim_type": "EXPLICIT",
+      "source": "In this canonical dimer, one kinase (the 'activator') allows the dimerisation partner (the 'receiver') to adopt an active conformation and become catalytically active.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about EGFR family kinase domain interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "ba21d3e8-bf5b-4bd0-91f9-7ad40f347ad1",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C81",
+      "claim": "There was a lack of active, asymmetrical kinase domain interactions when the receptor was bound to the ATP-competitive inhibitor lapatinib in near-complete receptors using negative stain electron microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note in these receptor dimer formations was the lack of active, asymmetrical kinase domain interactions when the receptor was bound to the ATP-competitive inhibitor lapatinib (Mi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "aa0ac988-cdf7-4e84-a212-fd73829f1487",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C82",
+      "claim": "The conformation of the active kinase domain interaction has been validated for EGFR-HER3 and HER2-HER3.",
+      "claim_type": "EXPLICIT",
+      "source": "The conformation of the active kinase domain interaction has been validated for EGFR-HER3 and HER2-HER3 (Jura et al., 2009b; Littlefield et al., 2014; van Lengerich et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "66bead88-9474-4bd9-a131-12948919e8cf",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C83",
+      "claim": "EGFR-family receptors can form higher order oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "A multitude of studies, using a variety of techniques, have confirmed that EGFR-family receptors can form higher order oligomers, and that the exact nature of these oligomers is modulated by a variety of conditions, including receptor density, ligand presence, ligand type and temperature-dependent membrane behaviour (Clayton et al., 2005; Clayton et al., 2007; Huang et al., 2016; Nagy et al., 2010; Needham et al., 2016; Saffarian et al., 2007; van Lengerich et al., 2017; Yang et al., 2007; Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with multiple supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "dc1d2052-d6a0-4e52-bbfd-f6866fa8563c",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C84",
+      "claim": "Occupation of the nucleotide binding pocket with ATP (or an inhibitor) is a major determinant of protein behaviour in PKC\u03b5, conferring the structural stability required for protein\u2013protein interactions to occur and priming sites to be stably phosphorylated.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown previously that within a kinase, in this case PKC\u03b5, occupation of the nucleotide binding pocket with ATP (or an inhibitor) is a major determinant of protein behaviour, conferring the structural stability required for protein\u2013protein interactions to occur and priming sites to be stably phosphorylated (Cameron et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "266bf490-a0d4-4f08-a9b8-74a367566ccd",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C85",
+      "claim": "Similar effects of nucleotide binding pocket occupation have been observed in several additional kinases, including PKB/Akt, IRE1, and AMPK.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar effects have been observed in several additional kinases, including PKB/Akt, IRE1, and AMPK (Okuzumi et al., 2009; Papa et al., 2003; Ross et al., 2017; Wang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "a195a214-0f4f-4d14-88ee-2c462eb43707",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C86",
+      "claim": "The inhibitor SB 203580 paradoxically induced activity in cRAF.",
+      "claim_type": "EXPLICIT",
+      "source": "A notable example of nucleotide binding pocket occupation inducing behaviour independent of catalysis has been described for the RAF family, originally in cRAF, where the inhibitor SB 203580 paradoxically induced activity (Eyers et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "c2571e75-6afc-44d2-bd59-086a46c806f2",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C87",
+      "claim": "In BRAF, the small molecule kinase inhibitor vemurafenib blocks the oncogenic mutant V600E, but stabilises the wild type protein, promoting downstream proliferative signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, a similar phenomenon has been shown in BRAF, where the small molecule kinase inhibitor vemurafenib blocks the oncogenic mutant V600E, but stabilises the wild type protein, promoting downstream proliferative signalling (Hatzivassiliou et al., 2010; McKay et al., 2011; Poulikakos et al., 2010; Thevakumaran et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "6a1e2592-a9e5-4f7e-90fc-c82436db5634",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C88",
+      "claim": "Quinazoline inhibitors can cause homodimer formation of EGFR, and EGFR-MET heterodimerisation, by stabilising particular kinase domain conformers.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the EGFR family, we and others have shown previously that quinazoline inhibitors can cause homodimer formation of EGFR, and EGFR-MET heterodimerisation, by stabilising particular kinase domain conformers (Arteaga et al., 1997; Bublil et al., 2010; Lichtner et al., 2001; Ortiz-Zapater et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "b040a2e6-3e02-45ee-be7a-3fe3d67d202f",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C89",
+      "claim": "Many pseudokinases retain several of the conserved residues involved in ATP-binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence analysis shows that many pseudokinases retain several of the conserved residues involved in ATP-binding (Boudeau et al., 2006; Claus et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "72cd65e2-70f9-44b7-9e78-89938ec5f7b5",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C90",
+      "claim": "In vitro analysis of the pseudokinome showed that many pseudokinases have nucleotide binding capability.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro analysis of the pseudokinome showed that many pseudokinases have nucleotide binding capability (Murphy et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "2a6cdd00-f7f9-4bf6-9dd2-6b8ea865df09",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C91",
+      "claim": "The pseudokinase STRAD requires ATP binding to sustain a heterotrimeric complex with LKB and MO25.",
+      "claim_type": "EXPLICIT",
+      "source": "This has been observed for the pseudokinase STRAD, which requires ATP binding to sustain a heterotrimeric complex with LKB and MO25 (Zeqiraj et al., 2009a; Zeqiraj et al., 2009b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "e403c958-b845-4413-b8b8-5d264a696d3f",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C92",
+      "claim": "In the pseudokinase FAM20A ATP-binding, albeit in a non-canonical orientation, is essential for stabilising the FAM20A/FAM20C complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in the pseudokinase FAM20A ATP-binding, albeit in a non-canonical orientation, is essential for stabilising the FAM20A/FAM20C complex (Cui et al., 2015; Cui et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "3bf16274-9ce9-4d9e-9b92-bb2829542213",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C93",
+      "claim": "ATP binding is a structural requirement for the JAK2 JH2 V617F mutant to promote pathogenic signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP binding is a structural requirement for the JAK2 JH2 V617F mutant to promote pathogenic signalling (Hammar\u00e9n et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "1a49292c-251c-4166-a14d-0c0f815f30c8",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "claim_id": "C94",
+      "claim": "In the pseudokinase MLKL, ATP-binding pocket occupation is essential for membrane translocation and its role in necroptotic signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "In the pseudokinase MLKL, ATP-binding pocket occupation is essential for membrane translocation and its role in necroptotic signalling (Hildebrand et al., 2014; Murphy et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5940dcbe-831f-4be4-b01d-e8e53ef14317",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Lapatinib and neuregulin (NRG) cooperatively enhance proliferation in HER2+ breast cancer cells. In multiple cell lines (SKBR3, BT474, AU565), low concentrations of lapatinib (40-400 nM) combined with 10 nM NRG increase proliferation by 25-30% compared to NRG alone, observed in both 2D and 3D culture systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C9, C10, C72-C74 provide converging evidence from multiple experimental systems (2D proliferation assays, cell counting, 3D spheroids) across multiple cell lines showing the synergistic proliferative effect. The data are internally consistent and replicated across different assay formats.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "c18b2e01-6dd5-433b-bbee-e0f0159d293a",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The lapatinib-NRG synergistic proliferation requires reversible inhibitor binding. The irreversible inhibitor neratinib, which forms a covalent bond with HER2C805, does not show the synergistic proliferative phenotype with NRG despite binding the same inactive conformation as lapatinib.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C13, C67-C69 demonstrate through comparative experiments that neratinib (irreversible) fails to reproduce the lapatinib (reversible) phenotype in both proliferation assays and phosphorylation studies. This supports the inference that dynamic, reversible binding is required for the synergistic effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "9dc45502-64e0-4f61-b534-a1e5aef93c15",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Lapatinib binds HER2 but not HER3, while bosutinib binds HER3 but not HER2. Thermal shift assays demonstrate that lapatinib confers strong thermal stability to HER2 but not HER3, whereas bosutinib shows the opposite selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C14-C16, C75-C76 are supported by TSA data (Figure 2a,b) and consistent with cited literature. The differential binding profiles are clearly demonstrated and form the basis for subsequent mechanistic experiments using these inhibitors as tools.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "a79042d4-4301-4b43-8189-9ea42250ab76",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Bosutinib, which binds HER3 but not HER2, induces proliferation in HER2+ breast cancer cells without additional NRG stimulation. This proliferation is enhanced by ectopic expression of wild-type HER3 but not ATP-binding deficient mutants, and can be curtailed by lapatinib treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C21, C27, C51-C52, C77 provide consistent evidence from proliferation assays, mutant studies, and drug combination experiments. The data support the conclusion that HER3 nucleotide pocket occupation has a structural role independent of catalytic activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "717093c0-7987-4e0d-9466-31a936773320",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ATP-binding pocket occupation in HER3 is essential for HER2-HER3 heterodimerization and proliferative signaling. The ATP-binding deficient HER3KGG mutant abolishes ligand-induced HER3 phosphorylation, disrupts lapatinib-induced heterodimerization, and eliminates cooperative proliferation with lapatinib and NRG.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20, C22, C26, C49, C70-C71 provide converging evidence from Western blots, FRET-FLIM, proliferation assays, and CETSA experiments. The HER3KGG mutant consistently disrupts HER3 function across multiple assays while maintaining proper membrane localization, supporting the structural role of ATP binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "c669574d-a710-40a0-9e61-b7350e9b204f",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Lapatinib directly induces HER2-HER3 heterodimerization in the absence of exogenous NRG. FRET-FLIM measurements show lapatinib-driven HER2-HER3 association at levels similar to NRG stimulation in both SKBR3 cells (endogenous receptors) and MCF7 cells (ectopically expressed receptors).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 are supported by FRET-FLIM data (Figure 3a,b) showing lapatinib-induced dimerization in multiple cell systems. The observation that this occurs without exogenous NRG indicates intracellular domain-driven interactions, though the inference about mechanism requires integration with other data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "b05597d8-e362-462f-b34c-5f673a3cddaa",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Treatment with NRG, lapatinib, or bosutinib induces higher-order oligomers rather than simple dimers. STORM imaging shows shifts in cluster population size compared to control, consistent with the known ability of EGFR-family receptors to form higher-order oligomers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28, C46, C83 are supported by STORM data (Figure 3e,f) and extensive literature on EGFR family oligomerization. However, the exact stoichiometry and composition of these oligomers remains uncertain as acknowledged by the authors, limiting mechanistic conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "ffa00fac-5337-44e7-abff-77a7d96d75a6",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The lapatinib-induced HER2-HER3 heterodimer is distinct from the canonical asymmetric active dimer. Molecular modeling predicts steric clashes between lapatinib and the active \u03b1-C helix conformation. Mutational analysis shows that the receiver-impaired HER2I714Q disrupts lapatinib-induced dimerization, while the activator-impaired HER3V945R does not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33, C38 integrate molecular modeling with FRET-FLIM mutational analysis (Figure 4). The differential effects of activator vs. receiver mutations provide strong evidence for a non-canonical dimer interface, though the modeling predictions require experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "627eca5b-98a9-4baa-874c-306b36b5a3a9",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The lapatinib-induced HER2-HER3 heterodimer adopts a symmetrical head-to-head orientation similar to the HER3 kinase domain crystal lattice. Mutations designed to disrupt the HER3-like interface (HER2N764R/K765F) abolish lapatinib-induced dimerization, while mutations targeting the EGFR-like interface (HER2I748R/V750R) do not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38, C41 combine molecular modeling with targeted mutational analysis (Figure 5). The selective disruption by HER2N764R/K765F but not HER2I748R/V750R provides strong support for the head-to-head model, though alternative interpretations of the mutational effects cannot be completely excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "da7cb3ac-fa8f-497a-b9c5-0ca42afd29bc",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The head-to-head HER2-HER3 dimer interface is functionally important for lapatinib-NRG cooperative proliferation. The HER3L700F mutant, designed to disrupt the head-to-head interface, abolishes drug-growth factor cooperative proliferation, while the HER3V945R active dimer mutant does not. This represents the first functional role ascribed to heterodimers consistent with the HER3-like head-to-head interface in cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 link the structural model to functional outcomes through proliferation assays (Figure 6). The differential effects of HER3L700F vs. HER3V945R provide strong support for the functional importance of the head-to-head interface, representing a novel finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "f7a607b8-d578-4b9e-8587-15b6919d6009",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The synergy between lapatinib and neuregulin depends on their ability to promote atypical HER2-HER3 heterodimerization. Lapatinib stabilizes a particular HER2 conformer that drives formation of a head-to-head kinase domain heterodimer distinct from the canonical asymmetric active dimer. Sequestering receptors in these lapatinib-bound heterodimers benefits NRG-mediated proliferative signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C44-C45 represent the integrated conclusion from multiple lines of evidence including FRET-FLIM, molecular modeling, mutational analysis, and proliferation assays. The mechanistic model is well-supported by the data, though some aspects (e.g., how sequestration benefits signaling) involve inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "b00c0377-0c4b-43d7-8d60-8f9bd6a70050",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Lapatinib-induced dimers may act as nucleation points for larger oligomeric signaling platforms that facilitate transition into active signaling heterodimers upon ligand binding due to the availability of dimerization partners in immediate proximity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C47-C48 are explicitly speculative as stated in the Discussion. While the symmetrical nature of the modeled dimer and STORM clustering data provide some basis for this hypothesis, direct experimental evidence for this mechanism is lacking.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "f18ebb71-a33f-4724-b1dc-2bc23b9dddb0",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Development of small molecule therapy against HER3 should target the apo, inactive conformer rather than stabilizing the ATP-binding pocket occupied conformer. The substantial proliferative effect of low-dose lapatinib in the presence of growth factor may impact establishment of lapatinib resistance in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53-C54 represent therapeutic recommendations and speculation about clinical implications. While based on the experimental findings, these claims involve extrapolation beyond the data and would require clinical validation. The connection to resistance mechanisms is plausible but not directly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "48efcee9-f7b1-42e5-89bd-6fd0d96627a7",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The findings provide a potential molecular mechanism for disappointing results in the ALTTO trial of lapatinib in adjuvant settings. This is consistent with literature showing that resistance occurs more readily with continuous low-dose lapatinib, that increased NRG production is a resistance mechanism, and that NRG expression correlates with disease recurrence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55-C61 connect the experimental findings to clinical observations through literature citations. While the mechanistic model could explain clinical outcomes, this represents post-hoc interpretation of trial results without direct experimental validation of the proposed mechanism in the clinical context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "51e328bf-d4e7-4e38-bc9d-8421c9a7d3b8",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background context on HER2 and HER3 in breast cancer: HER2 overexpression drives ~20% of breast cancers; HER2 has no known ligand while HER3 binds neuregulin; HER3 is a pseudokinase implicated in therapy resistance; HER3 can bind ATP and lapatinib binds HER3 with very low affinity in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8, C62-C65 represent established knowledge from the literature, properly cited. These provide necessary context for the study but are not novel findings. The characterizations are accurate based on the cited references.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "cf387b8e-b7e8-40d5-bc56-f62e2a047edd",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background on EGFR family kinase domain dimerization: The active dimer adopts an asymmetric activator-receiver orientation resembling CDK/cyclin interactions. HER3 lacks the conserved glutamate in the \u03b1-C helix and adopts an inactive-like conformation when ATP-bound. Lapatinib-bound receptors lack active asymmetrical kinase domain interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C34-C35, C78-C82 represent established structural biology knowledge properly cited from the literature. These provide essential mechanistic context for interpreting the novel findings but are not themselves new discoveries.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "35cf8f25-e21d-4c79-b7c6-687a8c93658d",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background on nucleotide binding pocket occupation in kinases and pseudokinases: ATP or inhibitor binding confers structural stability important for protein-protein interactions in multiple kinases (PKC\u03b5, PKB/Akt, IRE1, AMPK, RAF family). Many pseudokinases retain ATP-binding capability and require nucleotide binding for function (STRAD, FAM20A, JAK2 JH2, MLKL).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C94 provide comprehensive literature context on the structural role of nucleotide binding, properly cited. This background establishes the conceptual framework for investigating HER3 ATP binding but represents prior knowledge rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "b3238ec0-0b0b-4992-8fe2-e65cd881124e",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Transient knockdown of HER3 with siRNA shows a modest but consistent reduction in the proliferative effect of lapatinib-NRG co-treatment, implicating HER3 as the relevant growth factor-binding receptor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 is supported by experimental data (Figure 1\u2014figure supplement 1j) using two different siRNA oligonucleotides. However, the effect is described as modest, and the knockdown efficiency is not quantified in the claim, limiting the strength of the conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "ee199bbb-33d8-4469-bae9-b9e23c837e94",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The conformational dynamics of HER2-HER3 heterodimerization are an important consideration for evaluating existing and future targeted therapy intervention strategies against HER2+ breast cancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 represents a general conclusion drawn from the entire body of work. It is supported by the demonstrated complexity of HER2-HER3 interactions and the unexpected proliferative effects of inhibitor-ligand combinations, though it is more of a perspective than a testable result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    },
+    {
+      "id": "fc97811c-84c3-43a8-93d5-d23bd27aefc5",
+      "content_id": "a77ad581-1bda-4302-883e-5df2a6b1b23b",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "HER3 has been shown to retain a measure of autophosphorylation activity (not transphosphorylation) under specific circumstances.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 is a literature citation (Shi et al., 2010) providing context for HER3's classification as a pseudokinase. This is established prior knowledge relevant to interpreting the structural vs. catalytic roles of ATP binding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:28:04.989231Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ebd1e3d5-5df1-4bd8-b539-e1e4fcbe4546",
+      "result_id": "5940dcbe-831f-4be4-b01d-e8e53ef14317"
+    },
+    {
+      "claim_id": "34af4546-8248-474c-9770-0a4fa2197e99",
+      "result_id": "5940dcbe-831f-4be4-b01d-e8e53ef14317"
+    },
+    {
+      "claim_id": "2b51fc13-906c-48de-af2a-e9a4da400f95",
+      "result_id": "5940dcbe-831f-4be4-b01d-e8e53ef14317"
+    },
+    {
+      "claim_id": "e36709f5-9f9d-45a7-b14d-7914c529db93",
+      "result_id": "5940dcbe-831f-4be4-b01d-e8e53ef14317"
+    },
+    {
+      "claim_id": "0648cec8-7a9d-43c8-9712-6103038042ed",
+      "result_id": "5940dcbe-831f-4be4-b01d-e8e53ef14317"
+    },
+    {
+      "claim_id": "9be7478a-6d30-4910-ba9d-b98ac26d3981",
+      "result_id": "5940dcbe-831f-4be4-b01d-e8e53ef14317"
+    },
+    {
+      "claim_id": "7e61e470-26dd-451e-8ac4-b507ff139131",
+      "result_id": "c18b2e01-6dd5-433b-bbee-e0f0159d293a"
+    },
+    {
+      "claim_id": "95e6c699-ab71-43f8-af7c-5f63a0d14a3f",
+      "result_id": "c18b2e01-6dd5-433b-bbee-e0f0159d293a"
+    },
+    {
+      "claim_id": "54bc7a45-4fe2-43c8-990f-d138e3de5ffa",
+      "result_id": "c18b2e01-6dd5-433b-bbee-e0f0159d293a"
+    },
+    {
+      "claim_id": "ce3f1ad0-3d41-4a70-bb34-72216049ec65",
+      "result_id": "c18b2e01-6dd5-433b-bbee-e0f0159d293a"
+    },
+    {
+      "claim_id": "c5967589-3f69-4f8e-a455-4f1fb337efdd",
+      "result_id": "c18b2e01-6dd5-433b-bbee-e0f0159d293a"
+    },
+    {
+      "claim_id": "fa2cfcbe-768f-40bd-a301-b375a796240f",
+      "result_id": "9dc45502-64e0-4f61-b534-a1e5aef93c15"
+    },
+    {
+      "claim_id": "b6d1dc6f-e74e-4e5b-b0a2-844ad00f14fa",
+      "result_id": "9dc45502-64e0-4f61-b534-a1e5aef93c15"
+    },
+    {
+      "claim_id": "8fe60178-caa0-46b1-ae56-93e904a7d6bb",
+      "result_id": "9dc45502-64e0-4f61-b534-a1e5aef93c15"
+    },
+    {
+      "claim_id": "49e62e6e-4ac1-4a74-b719-e44660521c47",
+      "result_id": "9dc45502-64e0-4f61-b534-a1e5aef93c15"
+    },
+    {
+      "claim_id": "e9a2347a-78c0-40cc-87bb-0a7817ac625e",
+      "result_id": "9dc45502-64e0-4f61-b534-a1e5aef93c15"
+    },
+    {
+      "claim_id": "aa7dcf83-86b5-4b15-81c0-c628b5a5e1d7",
+      "result_id": "9dc45502-64e0-4f61-b534-a1e5aef93c15"
+    },
+    {
+      "claim_id": "c5399159-2164-491a-a67d-4a3b62759241",
+      "result_id": "a79042d4-4301-4b43-8189-9ea42250ab76"
+    },
+    {
+      "claim_id": "abb98ea0-b7d7-4546-8192-6ff4765448ef",
+      "result_id": "a79042d4-4301-4b43-8189-9ea42250ab76"
+    },
+    {
+      "claim_id": "8a6b3d78-766a-4aac-885d-eb2b01f50e8c",
+      "result_id": "a79042d4-4301-4b43-8189-9ea42250ab76"
+    },
+    {
+      "claim_id": "a4435a1d-8de1-46fa-a01e-61fe165b1eac",
+      "result_id": "a79042d4-4301-4b43-8189-9ea42250ab76"
+    },
+    {
+      "claim_id": "811da8f8-b4c8-4c63-b5a0-b436bf2b5fe4",
+      "result_id": "a79042d4-4301-4b43-8189-9ea42250ab76"
+    },
+    {
+      "claim_id": "cde47bb0-7edb-499e-b657-0c3e356bd097",
+      "result_id": "a79042d4-4301-4b43-8189-9ea42250ab76"
+    },
+    {
+      "claim_id": "0c2a0a08-690b-43c2-ad60-628a45295152",
+      "result_id": "717093c0-7987-4e0d-9466-31a936773320"
+    },
+    {
+      "claim_id": "505c032f-a4cf-4dcd-bcf7-14a2492f56e9",
+      "result_id": "717093c0-7987-4e0d-9466-31a936773320"
+    },
+    {
+      "claim_id": "9154b7a4-5987-4369-b193-2f9222bb11d4",
+      "result_id": "717093c0-7987-4e0d-9466-31a936773320"
+    },
+    {
+      "claim_id": "51f87d88-3958-4d00-b7e9-6826f7a05f00",
+      "result_id": "717093c0-7987-4e0d-9466-31a936773320"
+    },
+    {
+      "claim_id": "a8fe3d4f-c444-4faa-ba4b-374b83dfbfc0",
+      "result_id": "717093c0-7987-4e0d-9466-31a936773320"
+    },
+    {
+      "claim_id": "6f5de159-d4f2-4f44-9c8d-fe1a9b8be562",
+      "result_id": "717093c0-7987-4e0d-9466-31a936773320"
+    },
+    {
+      "claim_id": "ab781f2b-43f6-414c-9aaa-cda67c8cafef",
+      "result_id": "717093c0-7987-4e0d-9466-31a936773320"
+    },
+    {
+      "claim_id": "e4e69ff0-5242-4ec1-bed1-67ab55ac6f50",
+      "result_id": "717093c0-7987-4e0d-9466-31a936773320"
+    },
+    {
+      "claim_id": "3b3255e7-71c2-4c06-a2c6-fa5538e97477",
+      "result_id": "c669574d-a710-40a0-9e61-b7350e9b204f"
+    },
+    {
+      "claim_id": "7421b1f2-62f0-40ef-a393-a0b4ea14203e",
+      "result_id": "c669574d-a710-40a0-9e61-b7350e9b204f"
+    },
+    {
+      "claim_id": "e6e9d4d7-f2a2-446a-b2f4-178b4a49e391",
+      "result_id": "c669574d-a710-40a0-9e61-b7350e9b204f"
+    },
+    {
+      "claim_id": "8c6eedc5-9236-451e-9a58-849ba14b5b0a",
+      "result_id": "b05597d8-e362-462f-b34c-5f673a3cddaa"
+    },
+    {
+      "claim_id": "53aaba0e-ec9c-4c62-b207-a68d2f20cf9f",
+      "result_id": "b05597d8-e362-462f-b34c-5f673a3cddaa"
+    },
+    {
+      "claim_id": "66bead88-9474-4bd9-a131-12948919e8cf",
+      "result_id": "b05597d8-e362-462f-b34c-5f673a3cddaa"
+    },
+    {
+      "claim_id": "5c8875fe-bbe9-4a8c-a090-7ef154be4caa",
+      "result_id": "ffa00fac-5337-44e7-abff-77a7d96d75a6"
+    },
+    {
+      "claim_id": "b32ea32e-010a-45c2-a9e1-9cbd644c9282",
+      "result_id": "ffa00fac-5337-44e7-abff-77a7d96d75a6"
+    },
+    {
+      "claim_id": "ece1a2a0-9e65-4dee-b017-6349bcb8bcd4",
+      "result_id": "ffa00fac-5337-44e7-abff-77a7d96d75a6"
+    },
+    {
+      "claim_id": "db1f6b97-0a18-4be4-a0ea-e3ca32cc5fe7",
+      "result_id": "ffa00fac-5337-44e7-abff-77a7d96d75a6"
+    },
+    {
+      "claim_id": "db3efbf8-9685-451e-91a0-774de64c8ceb",
+      "result_id": "ffa00fac-5337-44e7-abff-77a7d96d75a6"
+    },
+    {
+      "claim_id": "82c364c2-2ada-489f-870c-395a53f8d299",
+      "result_id": "627eca5b-98a9-4baa-874c-306b36b5a3a9"
+    },
+    {
+      "claim_id": "3f246492-b0af-485d-82ef-2128772d4545",
+      "result_id": "627eca5b-98a9-4baa-874c-306b36b5a3a9"
+    },
+    {
+      "claim_id": "db3efbf8-9685-451e-91a0-774de64c8ceb",
+      "result_id": "627eca5b-98a9-4baa-874c-306b36b5a3a9"
+    },
+    {
+      "claim_id": "fdf1100f-bb04-4fd7-b4cb-88211e99f6f6",
+      "result_id": "627eca5b-98a9-4baa-874c-306b36b5a3a9"
+    },
+    {
+      "claim_id": "29820b5d-bcf9-4d60-854e-f252dc749b5c",
+      "result_id": "da7cb3ac-fa8f-497a-b9c5-0ca42afd29bc"
+    },
+    {
+      "claim_id": "a2408b21-b8e1-4d59-b551-353e1fd88f4d",
+      "result_id": "da7cb3ac-fa8f-497a-b9c5-0ca42afd29bc"
+    },
+    {
+      "claim_id": "fdf1100f-bb04-4fd7-b4cb-88211e99f6f6",
+      "result_id": "da7cb3ac-fa8f-497a-b9c5-0ca42afd29bc"
+    },
+    {
+      "claim_id": "7498d8a2-c300-4d59-8bc9-dfc429cf5aa7",
+      "result_id": "da7cb3ac-fa8f-497a-b9c5-0ca42afd29bc"
+    },
+    {
+      "claim_id": "bc17050b-2d7e-4a7e-94e1-13724ca8a0ee",
+      "result_id": "f7a607b8-d578-4b9e-8587-15b6919d6009"
+    },
+    {
+      "claim_id": "50fc5f73-1079-4400-a7a1-8fd584f40c1f",
+      "result_id": "f7a607b8-d578-4b9e-8587-15b6919d6009"
+    },
+    {
+      "claim_id": "a5d70a85-eb74-4dbf-8475-1e1ec89caf98",
+      "result_id": "f7a607b8-d578-4b9e-8587-15b6919d6009"
+    },
+    {
+      "claim_id": "779320e1-7972-44f1-9bd2-e042e325bdf6",
+      "result_id": "f7a607b8-d578-4b9e-8587-15b6919d6009"
+    },
+    {
+      "claim_id": "432a5ca9-e2cb-418e-a530-766d03ba0bcc",
+      "result_id": "f7a607b8-d578-4b9e-8587-15b6919d6009"
+    },
+    {
+      "claim_id": "1e8613c7-e3a2-459b-ae26-ab25960f0f97",
+      "result_id": "b00c0377-0c4b-43d7-8d60-8f9bd6a70050"
+    },
+    {
+      "claim_id": "3f7c5616-3c09-4088-a0c9-8ec5bf3ddf83",
+      "result_id": "b00c0377-0c4b-43d7-8d60-8f9bd6a70050"
+    },
+    {
+      "claim_id": "857aa29e-df77-4861-9a27-1b64c9854181",
+      "result_id": "f18ebb71-a33f-4724-b1dc-2bc23b9dddb0"
+    },
+    {
+      "claim_id": "ae1662f7-b1d1-485f-9fa7-16ff4ed6bf4e",
+      "result_id": "f18ebb71-a33f-4724-b1dc-2bc23b9dddb0"
+    },
+    {
+      "claim_id": "49974a18-f065-4169-a6cb-a76b3401de23",
+      "result_id": "48efcee9-f7b1-42e5-89bd-6fd0d96627a7"
+    },
+    {
+      "claim_id": "220abe00-67d5-4870-bb75-7803318122f2",
+      "result_id": "48efcee9-f7b1-42e5-89bd-6fd0d96627a7"
+    },
+    {
+      "claim_id": "e744b193-be34-4c66-b28c-7a6377bb9ed1",
+      "result_id": "48efcee9-f7b1-42e5-89bd-6fd0d96627a7"
+    },
+    {
+      "claim_id": "a72e955f-a4d8-4100-874c-c24e1ac4f01d",
+      "result_id": "48efcee9-f7b1-42e5-89bd-6fd0d96627a7"
+    },
+    {
+      "claim_id": "ad209c97-125d-4ef6-83f4-6d4c16f57f67",
+      "result_id": "48efcee9-f7b1-42e5-89bd-6fd0d96627a7"
+    },
+    {
+      "claim_id": "b06d6fdc-8834-4dd7-ade4-842d42814321",
+      "result_id": "48efcee9-f7b1-42e5-89bd-6fd0d96627a7"
+    },
+    {
+      "claim_id": "fb1e1fa2-3754-4852-9ea4-0d9423175573",
+      "result_id": "48efcee9-f7b1-42e5-89bd-6fd0d96627a7"
+    },
+    {
+      "claim_id": "1c794a89-a243-45e5-8a80-037fca9edfa2",
+      "result_id": "51e328bf-d4e7-4e38-bc9d-8421c9a7d3b8"
+    },
+    {
+      "claim_id": "46317fb3-c00a-4f16-9596-4005dbc5b8cc",
+      "result_id": "51e328bf-d4e7-4e38-bc9d-8421c9a7d3b8"
+    },
+    {
+      "claim_id": "52ad4a14-408c-4725-b810-2297039f3383",
+      "result_id": "51e328bf-d4e7-4e38-bc9d-8421c9a7d3b8"
+    },
+    {
+      "claim_id": "70998218-4915-4523-b70a-9cf8b22fd8d2",
+      "result_id": "51e328bf-d4e7-4e38-bc9d-8421c9a7d3b8"
+    },
+    {
+      "claim_id": "3c77cf45-883f-418b-8876-db911a6b7c84",
+      "result_id": "51e328bf-d4e7-4e38-bc9d-8421c9a7d3b8"
+    },
+    {
+      "claim_id": "1c1612c6-9dd6-40f3-b712-4056cb827f6c",
+      "result_id": "51e328bf-d4e7-4e38-bc9d-8421c9a7d3b8"
+    },
+    {
+      "claim_id": "6543ed77-bb69-4bc3-ad7d-38a5923f1e47",
+      "result_id": "51e328bf-d4e7-4e38-bc9d-8421c9a7d3b8"
+    },
+    {
+      "claim_id": "4567a188-c814-4fda-b324-af5bb430d3d4",
+      "result_id": "cf387b8e-b7e8-40d5-bc56-f62e2a047edd"
+    },
+    {
+      "claim_id": "eb62e095-5cd0-4168-8819-d64582b57212",
+      "result_id": "cf387b8e-b7e8-40d5-bc56-f62e2a047edd"
+    },
+    {
+      "claim_id": "d8a776cb-f32c-4999-b33e-e8c5f30afb78",
+      "result_id": "cf387b8e-b7e8-40d5-bc56-f62e2a047edd"
+    },
+    {
+      "claim_id": "24de67c9-d2f6-469e-997b-71d712288f90",
+      "result_id": "cf387b8e-b7e8-40d5-bc56-f62e2a047edd"
+    },
+    {
+      "claim_id": "38b72e11-6bc3-4ef2-99ed-54214bf2af98",
+      "result_id": "cf387b8e-b7e8-40d5-bc56-f62e2a047edd"
+    },
+    {
+      "claim_id": "2d957af0-79bf-46dc-b2b1-362a80b559e5",
+      "result_id": "cf387b8e-b7e8-40d5-bc56-f62e2a047edd"
+    },
+    {
+      "claim_id": "ba21d3e8-bf5b-4bd0-91f9-7ad40f347ad1",
+      "result_id": "cf387b8e-b7e8-40d5-bc56-f62e2a047edd"
+    },
+    {
+      "claim_id": "aa0ac988-cdf7-4e84-a212-fd73829f1487",
+      "result_id": "cf387b8e-b7e8-40d5-bc56-f62e2a047edd"
+    },
+    {
+      "claim_id": "dc1d2052-d6a0-4e52-bbfd-f6866fa8563c",
+      "result_id": "35cf8f25-e21d-4c79-b7c6-687a8c93658d"
+    },
+    {
+      "claim_id": "266bf490-a0d4-4f08-a9b8-74a367566ccd",
+      "result_id": "35cf8f25-e21d-4c79-b7c6-687a8c93658d"
+    },
+    {
+      "claim_id": "a195a214-0f4f-4d14-88ee-2c462eb43707",
+      "result_id": "35cf8f25-e21d-4c79-b7c6-687a8c93658d"
+    },
+    {
+      "claim_id": "c2571e75-6afc-44d2-bd59-086a46c806f2",
+      "result_id": "35cf8f25-e21d-4c79-b7c6-687a8c93658d"
+    },
+    {
+      "claim_id": "6a1e2592-a9e5-4f7e-90fc-c82436db5634",
+      "result_id": "35cf8f25-e21d-4c79-b7c6-687a8c93658d"
+    },
+    {
+      "claim_id": "b040a2e6-3e02-45ee-be7a-3fe3d67d202f",
+      "result_id": "35cf8f25-e21d-4c79-b7c6-687a8c93658d"
+    },
+    {
+      "claim_id": "72cd65e2-70f9-44b7-9e78-89938ec5f7b5",
+      "result_id": "35cf8f25-e21d-4c79-b7c6-687a8c93658d"
+    },
+    {
+      "claim_id": "2a6cdd00-f7f9-4bf6-9dd2-6b8ea865df09",
+      "result_id": "35cf8f25-e21d-4c79-b7c6-687a8c93658d"
+    },
+    {
+      "claim_id": "e403c958-b845-4413-b8b8-5d264a696d3f",
+      "result_id": "35cf8f25-e21d-4c79-b7c6-687a8c93658d"
+    },
+    {
+      "claim_id": "3bf16274-9ce9-4d9e-9b92-bb2829542213",
+      "result_id": "35cf8f25-e21d-4c79-b7c6-687a8c93658d"
+    },
+    {
+      "claim_id": "1a49292c-251c-4166-a14d-0c0f815f30c8",
+      "result_id": "35cf8f25-e21d-4c79-b7c6-687a8c93658d"
+    },
+    {
+      "claim_id": "3e9fab3d-abfc-40d7-8127-6db874099cde",
+      "result_id": "b3238ec0-0b0b-4992-8fe2-e65cd881124e"
+    },
+    {
+      "claim_id": "d3890d0a-0487-4402-8311-6971928c89e3",
+      "result_id": "ee199bbb-33d8-4469-bae9-b9e23c837e94"
+    },
+    {
+      "claim_id": "597d9905-5015-46a5-9908-d2b4c3720339",
+      "result_id": "fc97811c-84c3-43a8-93d5-d23bd27aefc5"
+    }
+  ],
+  "comparisons": []
+}

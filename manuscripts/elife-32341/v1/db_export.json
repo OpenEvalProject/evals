@@ -1,0 +1,1340 @@
+{
+  "submission": {
+    "id": "95f7c055-5cb5-401c-83eb-4ab2589d0b82",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:30:32.357565Z",
+    "updated_at": "2025-12-01T23:30:32.357565Z"
+  },
+  "content": [
+    {
+      "id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "submission_id": "95f7c055-5cb5-401c-83eb-4ab2589d0b82",
+      "content_type": "manuscript",
+      "content_text": "# CATaDa reveals global remodelling of chromatin accessibility during stem cell differentiation in vivo\n\n## Authors\n\n- Gabriel N Aughey<sup>1</sup> ([ORCID: 0000-0001-5610-9345](https://orcid.org/0000-0001-5610-9345))\n- Alicia Estacio Gomez<sup>1</sup>\n- Jamie Thomson<sup>1</sup>\n- Hang Yin<sup>1</sup>\n- Tony D Southall<sup>1</sup> ([ORCID: 0000-0002-8645-4198](https://orcid.org/0000-0002-8645-4198)) \u2020\n\n### Affiliations\n\n1. Department of Life Sciences Imperial College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring development eukaryotic gene expression is coordinated by dynamic changes in chromatin structure. Measurements of accessible chromatin are used extensively to identify genomic regulatory elements. Whilst chromatin landscapes of pluripotent stem cells are well characterised, chromatin accessibility changes in the development of somatic lineages are not well defined. Here we show that cell-specific chromatin accessibility data can be produced via ectopic expression of E. coli Dam methylase in vivo, without the requirement for cell-sorting (CATaDa). We have profiled chromatin accessibility in individual cell-types of Drosophila neural and midgut lineages. Functional cell-type-specific enhancers were identified, as well as novel motifs enriched at different stages of development. Finally, we show global changes in the accessibility of chromatin between stem-cells and their differentiated progeny. Our results demonstrate the dynamic nature of chromatin accessibility in somatic tissues during stem cell differentiation and provide a novel approach to understanding gene regulatory mechanisms underlying development.\n\n## Introduction\n\nDuring the development of a multicellular organism, gene expression is tightly regulated in response to spatially and temporally restricted signals. Changes to gene expression are accompanied by concomitant changes to chromatin structure and composition. Therefore chromatin states vary widely across developmental stages and cell types. Functional regions of a genome, including promoters and enhancers, can be identified by their relative lack of nucleosomes. These regions of \u2018open chromatin\u2019 can be assayed by their accessibility to extrinsic factors. Consequently, chromatin accessibility profiling techniques are commonly used to investigate chromatin states (reviewed in [Tsompana and Buck, 2014]). Chromatin is highly accessible in pluripotent cell types such as embryonic stem (ES) cells, but is compacted following differentiation (Meshorer and Misteli, 2006). It has been suggested that this open chromatin represents a permissive state to which multiple programmes of gene regulation may be rapidly applied upon differentiation (Gaspar-Maia et al., 2011).\n\nThe nature of chromatin accessibility across different developmental stages in vivo is less well understood. Imaging studies have been used to demonstrate gross changes to chromatin structure, for example changes to the distribution of heterochromatin have been observed in post-mitotic cells (Francastel et al., 2000; Le Gros et al., 2016). Molecular studies investigating chromatin states in vivo during development have tended to utilise heterogeneous tissues due to the fact that profiling the epigenome of individual cell types frequently requires physical isolation of cells or nuclei, which can be laborious and prone to human error (McClure and Southall, 2015). Therefore, there is a lack of information regarding cell-type-specific changes to chromatin states in in vivo models. Whilst recently developed methods such as ATAC-seq have become popular and address many of the limitations inherent to earlier techniques such as DNAse-seq (i.e. requires fewer cells and increased assay speed), these techniques still require the physical separation of cells and isolation of genomic DNA before chromatin accessibility is assayed (Buenrostro et al., 2013).\n\nIt has been suggested that ectopic expression of untethered DNA adenine methyltransferase (Dam) results in specific methylation of open chromatin regions whilst nucleosome bound DNA is protected (Wines et al., 1996; Bulanenkova et al., 2007; Boivin and Dura, 1998; Singh and Klar, 1992). However, the efficacy of using Dam methylation for chromatin accessibility profiling on a genomic scale is not clear. Furthermore, expression of Dam in a cell-type-specific manner, at levels low enough to avoid toxicity and oversaturated signal, has not been possible until now.\n\nTransgenic expression of fusions of Dam to DNA-binding proteins is a well-established method used to assess transcription factor occupancy (DNA adenine methyltransferase identification - DamID) (van Steensel and Henikoff, 2000). Recently, it was demonstrated that DamID could be adapted to profile DNA-protein interactions in a cell-type-specific manner by utilising ribosome re-initiation to attenuate transgene expression (Marshall et al., 2016; Aughey and Southall, 2016; Southall et al., 2013). This technique is referred to as Targeted DamID (TaDa). Here, we take advantage of TaDa to express untethered Dam in specific cell\u00a0types to produce chromatin accessibility profiles in vivo, without the requirement for cell separation. We show that Chromatin Accessibility profiling using Targeted DamID (CATaDa) yields comparable results to both FAIRE and ATAC-seq methods, indicating that it is a reliable and reproducible method for investigating chromatin states. By assaying multiple cell types within a tissue, we show that chromatin accessibility is dynamic throughout the development of Drosophila central nervous system (CNS) and midgut lineages. These data have also enabled us to identify enriched motifs from regulatory elements that dynamically change their accessibility during differentiation, as well as to identify functional cell-type-specific enhancers. Finally, we show that compared to their differentiated progeny, somatic stem cell Dam-methylation signals are more widely distributed across the genome, indicating a greater level of global chromatin accessibility.\n\n## Results\n\n### CATaDa produces chromatin accessibility profiles comparable to that of ATAC and FAIRE-seq in Drosophila eye discs\n\nWe reasoned that low-level expression of transgenic E. coli Dam, using tissue-specific GAL4 drivers in Drosophila, would specifically methylate regions of accessible chromatin exclusively in a cell-type of interest. Detection of these methylated sequences could yield chromatin accessibility profiles for defined cell populations in vivo (Figure 1). To determine if CATaDa produces an accurate reflection of chromatin accessibility, we compared data acquired using this approach with commonly used alternative techniques. A recent study generated ATAC and FAIRE-seq data from Drosophila imaginal eye discs (Davie et al., 2015). Using CATaDa, we expressed E. coli Dam in the eye disc of Drosophila third instar larvae so that we could compare Dam methylation profiles to these previously collected data.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/32341/elife-32341-fig1-v1.jpg)\n\n**Figure 1.:** (A\u2013B) E. coli Dam is expressed specifically in cell-types of interest using TaDa technique. (C) GATC motifs in regions of accessible chromatin are methylated by Dam, whilst areas of condensed chromatin prevent access to Dam thereby precluding methylation. (D) Methylated DNA is detected to produce chromatin accessibility profiles for individual cell-types of interest from a mixed population of cells.\n\nChromatin accessibility profiles produced with CATaDa in the eye disc were highly reproducible between replicates (r2\u00a0=\u00a00.947) (Figure 2\u2014figure supplement 1). CATaDa profiles showed good agreement with data produced with ATAC-seq and FAIRE-seq. Visual inspection of the data showed that many regions of accessible chromatin identified by ATAC and FAIRE are also represented by CATaDa, whilst condensed regions are reliably inaccessible (Figure 2A,B). We also observe that CATaDa profiles exhibited features consistent with chromatin accessibility. For example, open chromatin is enriched at transcriptional start sites (TSS) (Figure 2C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/32341/elife-32341-fig2-v1.jpg)\n\n**Figure 2.:** (A) Chromatin accessibility across chromosome three as determined by ATAC-seq, FAIRE-seq, and CATaDa. Note the reduced amount open chromatin proximal to the centromere regions in all three datasets. y-axes = reads per million (rpm). (B) Example locus showing data obtained by FAIRE, ATAC, and CATaDa. Peaks are broadly reproducible across techniques. (C) Aggregation plot of CATaDa signal at TSS with 2 kb regions up and downstream. Aggregated signal at TSS shows expected enrichment of Dam. (D) Aggregation plot of CATaDa signal at ATAC or FAIRE peaks, indicating enrichment of CATaDa signal at these loci. (E) Identification of ATAC peaks in CATaDa or FAIRE data. CATaDa and FAIRE identify 48.6% and 55.9% of ATAC peaks, respectively. FAIRE-seq peaks overlap more frequently with promoter proximal peaks (2 kb from TSS), whilst CATaDa peaks overlap with more ATAC peaks outside of promoter regions.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32341/elife-32341-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Correlation between CATaDa replicates for all cell types assayed in this study shows good agreement, indicating that the technique has high reproducibility. p<2.2 \u00d7 10\u221216 for all replicates, indicating highly significant correlations.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32341/elife-32341-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Correlation between peaks called in ATAC-seq and CATaDa. p<2.2 \u00d7 10\u221216, r2\u00a0=\u00a00.137967. (B) Thresholding of peak calling at lower rpm values results in a higher proportion of ATAC peaks being identified whilst having little effect on the number of peaks identified, which are seen in CATaDa data, but not ATAC. (C) Peaks identified only in CATaDa are significantly smaller than those seen to overlap with ATAC peaks. p<1 \u00d7 10\u221216.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/32341/elife-32341-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Frequency of GATC sites at peaks identified by ATAC-seq in eye-discs. There is a clear reduction of GATC frequency at loci corresponding to peaks which were identified with ATAC, but not CATaDa (green), compared to peaks identified by both methods (blue). (B) Frequency of GATC sites at peaks identified by FAIRE-seq in eye-discs. There is a clear reduction of GATC frequency at loci corresponding to peaks which were identified with FAIRE, but not CATaDa (green), compared to peaks identified by both methods (blue). (C) Frequency of GATC sites around transcriptional start sites (TSS). Promoter regions have a depletion of GATC sequences.\n\nWe observe that CATaDa signal frequency increases dramatically towards the centre of ATAC or FAIRE peaks (Figure 2D).The overlap of Dam identified peaks with ATAC and FAIRE peaks is 48.6% and 49.4%, respectively (In comparison, 55.9% of ATAC peaks are also identified in FAIRE data \u2013 Figure 2E). A Monte Carlo simulation determined that this is a highly significant overlap (p<1 \u00d7 10\u22125) and peak heights at shared ATAC and CATaDa peaks show\u00a0significant\u00a0correlation (p<1 \u00d7 10-16, r2\u00a0=\u00a00.138) (Figure 2\u2014figure supplement 2A). We found that increasing the stringency of our peak calling notably decreased the number of peaks identified that coincided with ATAC peaks, but had relatively little impact on unique CATaDa peak discovery (Figure 2\u2014figure supplement 2B). Given these data, we suggest that the majority of these peaks are not false positives, but are genuinely accessible sites that are not detected by ATAC-seq. Further examination of these unique peaks indicates that they are significantly smaller than the shared peaks (Figure 2\u2014figure supplement 2C). We also observe that for peaks identified in either ATAC or FAIRE data that are not present in CATaDa, there is a relative lack of GATC motifs, which suggests that there may be cases in which false negatives are observed due to the limitations of the resolution achievable by Dam methylation (Figure 2\u2014figure supplement 3A\u2013B). To further investigate the differences between CATaDa and ATAC or FAIRE-seq, we investigated the detection of peaks at different genomic features. We found that whilst CATaDa identified fewer peaks than FAIRE in regions proximal to gene promoters (when compared with ATAC), CATaDa was notably better at identification of non-promoter adjacent accessible sites in ATAC data compared to FAIRE-seq (Figure 2E). The lack of promoter peaks identified can again be explained by the relative depletion of GATC sites upstream of TSS (Figure 2\u2014figure supplement 3C).\n\nIt was previously shown that ATAC-seq and FAIRE-seq data demonstrated high chromatin accessibility at experimentally validated eye-antennal enhancers (Davie et al., 2015). CATaDa profiles similarly showed increased open chromatin at these regions (Figure 3A,B). We found that for 57.9% of FlyLight eye enhancers, a corresponding peak was called in CATaDa profiles (333 of 575 enhancers). CATaDa was comparable to FAIRE-seq and ATAC-seq which identified 48% and 68.7% respectively, of validated FlyLight enhancers as peaks (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/32341/elife-32341-fig3-v1.jpg)\n\n**Figure 3.:** (A) Example loci showing data obtained by FAIRE, ATAC, and CATaDa. Peaks are broadly reproducible across techniques. Flylight enhancers with validated expression in eye imaginal discs coincide with peaks in all three datasets. Corresponding expression pattern is shown in (i) and (ii) (eye disc images obtained from the FlyLight database [http://flweb.janelia.org/cgi-bin/flew.cgi]). (B) Aggregation plot showing average signal of ATAC (blue) and Dam (green) at 575 FlyLight enhancers with validated eye imaginal disc expression. Both techniques show increased open chromatin at these regions. (C) Venn diagram of FlyLight enhancers identified in Dam accessibility profiling, ATAC, or FAIRE-seq. The majority of enhancers identified by either ATAC or FAIRE are also found in the Dam data. Dam enhancers overlap most with ATAC (305 shared between ATAC and Dam of 575 total FlyLight enhancers).\n\n### CATaDa profiling shows dynamic changes in chromatin accessibility during differentiation of the nervous system\n\nIn Drosophila, neurons are derived from asymmetrically dividing neural stem cells (NSCs). NSC divisions produce one self-renewing daughter NSC and a ganglion mother cell (GMC), which divides once more to produce neurons or glia (Homem and Knoblich, 2012). To further test the technique and investigate how local and global chromatin accessibility changes during the process of nervous system differentiation, we expressed Dam in specific cells with GAL4 drivers that cover four different developmental stages within the lineage. These include NSCs (worniu- GAL4), GMCs and newly born neurons (R71C09-GAL4 [Figure 4\u2014figure supplement 1B, Li et al., 2014]), differentiated larval neurons (nSyb-GAL4), and also mature adult neurons (nSyb-GAL4) (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/32341/elife-32341-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic of CNS lineage progression indicating cell types examined in this study. (B) Example profiles resulting from Dam expression in the CNS. Genomic region encompassing Wnt2 and bruchpilot genes is shown. Multiple open chromatin regions are dynamic across development. Y-axes\u00a0=\u00a0reads per million (rpm). (C) Clustering of differentially accessible regions in CNS lineages indicates two major groupings in which chromatin is most accessible in either stem cells or mature neurons. (D) Motif analysis using these sequences results in identification of expected motifs (e.g. ase E-box motif in stem cell accessible loci), as well as novel motifs. Most highly enriched motifs for each cluster shown. All motifs E-values\u00a0<\u00a01 \u00d7 10\u22125. (E) log2 enrichment scores for selected GO terms in individual cell types. Clear trends can be seen as development progresses. (NSC, GMC, L3 neuron, adult neuron - from left to right). (i) GO terms are either enriched in stem cells becoming less significant as the lineage progresses or (ii) vice versa.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32341/elife-32341-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) A clear peak can be identified within the R71C09 sequence which shows greatest accessibility in the GMCs and youngest populations of neurons in the lineage (arrow). (B) Schematic indicating cell types assayed in this study with GAL4 diver lines used to drive Dam expression. (C) Expression pattern of R71C09-GAL4/UAS-GFP in the larval CNS. GFP is most strongly detected in cells adjacent to the neuroblast (Dpn - Red). These cells include presumptive GMCs (Dpn negative, Elav negative), and immature neurons (Elav - Blue).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32341/elife-32341-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Regions of open chromatin are enriched in progenitor cell types for (A) deadpan (dpn) (B) Cyclin E (CycE) (C) asense (ase), and (D) prospero (pros); whilst peaks of greater accessibility are apparent in differentiated neurons at the (E) neuronal Synaptobrevin (nSyb), and (F) Dopamine 1-like receptor 1 (Dop1R1) loci.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/32341/elife-32341-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Top five enrched motifs are shown for each group, unless fewer than five total enriched motifs were identified. Predicted transcription factors binding to observed motifs are shown if detected.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/32341/elife-32341-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Further examination of sub-clusters reveals novel motifs enriched in different cell types of neurogenesis. The ase-like motif (CAGCNG) described in Figure 4D is enriched specifically in the NSC-specific cluster but not for regions that are accessible in both NSC and GMCs/neurons.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/32341/elife-32341-fig4-figsupp5-v1.jpg)\n\nBy examining candidate genes differentially expressed during neural development, we observed that chromatin accessibility relates to gene expression in an expected manner. For example, intronic open chromatin peaks can be seen at the bruchpilot (brp) locus, in both third instar (L3) and adult neurons, whilst these peaks are reduced or absent in the progenitor cell types (Figure 4B). This corresponds with the expression of brp, which is specifically transcribed in neurons and has an important role in synapse function (Wagh et al., 2006). In contrast, the adjacent gene to brp, Wnt2, displays peaks which are most apparent in the NSC and intermediate cell types. Wnt signalling is known to be important for the control of stem cell populations, therefore, these results are also expected (Ring et al., 2014).\n\nSimilar patterns are observed at a number of other loci. At the asense (ase) locus, (a NSC-specific transcription factor), chromatin is highly accessible at the promoter and upstream intergenic region in NSCs (Figure 4\u2014figure supplement 2B). This signal is considerably reduced in fully differentiated neurons in which ase is not expressed. Interestingly, open chromatin is still detectable in these regions in the GMCs/newly born neurons. This pattern is also observed with other NSC expressed factors such as deadpan (dpn), CyclinE (CycE) and prospero (pros) (Figure 4\u2014figure supplement 2). Furthermore, GMC/newly born neuron profiles frequently show intermediate signal at these loci, indicating that functional elements required for regulation of NSC gene expression are not immediately rendered inaccessible following differentiation (Figure 4B and Figure 4\u2014figure supplement 2).\n\nIt is to be expected that many of the functional elements marked by accessible chromatin that are important for regulating gene expression in a given neural cell type would show dynamic accessibility across the lineage (i.e. stem cell-specific enhancers would not be expected to be open in mature neurons). We examined regions of differential chromatin accessibility to determine the extent to which chromatin accessibility is changed during development of the nervous system. Hierarchical clustering of regions of chromatin with differential accessibility between cell types reveals two major clusters in which chromatin is either open in stem cells but inaccessible in neurons, or vice versa (Figure 4C). Intriguingly, there are other clusters where maximal chromatin accessibility is observed in either GMCs/early neurons or larval neurons. Therefore, it is not as simple as NSC accessible regions progressively closing during differentiation and neuronal regions gradually opening. There are a large number of loci that are inaccessible in NSCs, then open in the intermediate GMCs/newly born neurons stage before being rendered inaccessible again in terminally differentiated neurons (Figure 4C). In addition, a cluster enriched in larval neurons demonstrates that the chromatin accessibility landscape of larval neurons, although similar, is distinct from adult neurons.\n\nRegions of open chromatin are thought to identify functional regulatory elements such as enhancers. Therefore, it is to be expected that these regions will be enriched for motifs belonging to transcription factors involved in neurogenesis. Identification of enriched motifs in sequences that were accessible in NSCs showed that expected transcription factor binding sites were highly enriched. For example, the E-box motif \u2013 CAGCNG \u2013 which is bound by the NSC proneural factor ase (Figure 4D) (Southall and Brand, 2009; Jarman et al., 1993). Regions in which open chromatin was specifically enriched in mature neurons yielded a sequence motif corresponding to the transcription factor, Ci. In all groups, sequence motifs were also identified for which no known binding partner could be identified (Figure 4\u2014figure supplement 3). Analysis of further subdivision of these clusters revealed yet more novel motifs for the individual cell types examined, as well as indicating that the ase-like motif is specifically enriched for sequences which are accessible solely in the NSCs, and not their progeny (Figure 4\u2014figure supplement 4).\n\nGene ontology (GO) analysis of genes at which enriched chromatin accessibility was observed yielded expected biological process terms for each of the cell types examined (Figure 4\u2014figure supplement 5). For example, terms such as \u2018neuroblast fate determination\u2019 and \u2018chromosome segregation\u2019 were more highly enriched in stem cells relative to neurons, whilst \u2018regulation of behaviour\u2019 and \u2018synaptic vesicle docking during exocytosis\u2019 were enriched for differentiated neurons but not NSCs (Figure 4E).\n\n### Chromatin accessibility in adult midgut cell types\n\nHaving observed chromatin accessibility changes in the cells of the developing CNS, we asked whether similar patterns would be observed in adult somatic stem cell lineages. The Drosophila midgut contains a pool of cycling intestinal stem cells (ISCs) that persists in the adult to maintain a population of terminally differentiated cells which mediate the absorptive and secretory functions of the organ (Jiang and Edgar, 2011; N\u00e1szai et al., 2015). In contrast to neurogenesis, a single committed immature progenitor cell (enteroblast \u2013 EB) is produced from stem cell divisions, which then differentiates without further divisions to produce the mature epithelial cells of the midgut (Ohlstein and Spradling, 2007). To examine chromatin accessibility in the cells of the adult midgut, we expressed Dam in the ISCs and EBs, as well as in the terminally differentiated absorptive cells, the enterocytes (ECs)(Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/32341/elife-32341-fig5-v1.jpg)\n\n**Figure 5.:** (A) Schematic of midgut lineage progression indicating cell types examined in this study. (B) Chromatin accessibility displays expected trends at the escargot locus, known to be expressed exclusively in ISCs and EBs, but not ECs. Upstream promoter region shows greatest chromatin accessibility in ISCs, compared to other cell types. Similarly, dynamic peaks are observed in both 3\u2019 and 5\u2019 distal regions (putative enhancer regions), which are absent in ECs. y-axes\u00a0=\u00a0reads per million (rpm). (C) Chromatin accessibility at the nubbin locus, known to be expressed exclusively in ECs. y-axes\u00a0=\u00a0reads per million (rpm). (D) Hierarchical clustering of differentially accessible regions in gut cell types. Major clusters are observed in which accessible chromatin is enriched specifically in either ISCs or ECs, whilst smaller clusters indicate fewer regions with up or down-regulated accessibility in EBs. (E) Principal component analysis (mean of all replicates) indicates distinct groupings of both lineages. (F) Correlation matrix (Spearman\u2019s rank) of means of all cells in CNS and midgut lineages. Individual lineages denoted with red outline. Note relatively high correlation between NSC and ISC (Asterisk \u2013 R2\u00a0=\u00a00.76), whilst NSC correlation with EC and adult neurons are comparable.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32341/elife-32341-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Top five enrched motifs are shown for each group, unless fewer than five total enriched motifs were identified. Predicted transcription factors binding to observed motifs are shown if detected.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32341/elife-32341-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) escargot locus \u2013 chromatin is highly accessible in the ICS but reduced in the differentiated ECs, this is reflected in the CNS in which NSCs have accessible chromatin but not neurons. (B) Cyclin A locus shows a similar pattern to esgcargot.\n\nAs with the CNS data, we observed predictable changes in chromatin accessibility at loci for genes with variable expression in the lineage. For example, escargot (esg) a transcription factor required for ISC self-renewal (Korzelius et al., 2014), displays multiple peaks of accessible chromatin at the gene body and surrounding region in ISCs and EBs, whilst little signal is observed in the ECs (Figure 5B). In contrast the nubbin locus (encoding EC marker \u2013 Pdm1), displays peaks predominantly in the EC data, with relatively closed chromatin in the progenitor cell types (Figure 5C). As observed in the CNS, hierarchical clustering revealed two major groups in which accessible chromatin was enriched in either in the stem cells (ISCs) or differentiated cell (ECs)\u00a0(Figure 5D). Smaller clusters were again evident in which accessible chromatin was up or downregulated exclusively in the intermediate EBs. However, this was much less pronounced than the changes observed in GMCs/early neurons of the developing CNS. This indicates that, similar to the CNS lineages, the majority of chromatin accessibility changes involved in specifying the fully differentiated cells do not occur until after EB maturation. As with the cells of the CNS, we were able to identify motifs specifically enriched in each of these groups (Figure 5\u2014figure supplement 1).\n\nISCs and NSCs fulfil similar roles in their respective organs in the production of highly specialised functional cells. However, whilst NSCs exist for a short amount of time during fly development to produce relatively long-lived neurons that persist in the adult CNS for the animal\u2019s lifetime, the ISCs act post-developmentally to constantly replenish ECs in the adult gut. By comparing the chromatin accessibility of these two cell types, it is apparent that there are similarities in their chromatin states. At loci involved in growth or cell division, we see similar accessibility profiles across differentiation between the two tissue types (Figure 5\u2014figure supplement 1). Given the similarities that we observed for individual loci between CNS and midgut lineages, we queried whether it was possible to observe trends between the cells in the two lineages on a global scale. Principal component analysis reveals two distinct clusters in which\u00a0>80% of the variance is explained in the first two principal components (Figure 5E). These clusters represent the two distinct tissue types, (CNS and midgut) rather than immature and differentiated cells. By examining the overall correlation between all cell types we observed a number of interesting features. Firstly, as expected all cell types correlated most closely with either their direct progeny or progenitor cell (Figure 5F). Therefore by clustering the data we were able to recapitulate the familial relationship between the cell types of the two lineages. The greatest similarities were observed between the intermediate progenitors and their cognate stem cells (R2\u00a0=\u00a00.94/0.98 for CNS and midgut respectively). Interestingly, the greatest correlation outside of a lineage was between the two stem cell types (R2\u00a0=\u00a00.76), whilst differentiated cells exhibited only weak correlation (ISCs vs NSC, R2\u00a0=\u00a00.51). This indicates that somatic stem cell types may utilise a broadly similar chromatin landscape for the maintenance of multipotency, whilst lineage-specific variation is relatively small.\n\n### Enhancer prediction from Dam accessibility data\n\nEnhancer activity is closely linked to gene expression, therefore, many tissue-specific enhancers are required to orchestrate correct spatial and temporal transcription (Pennacchio et al., 2013). However, identification of functional enhancers can be challenging. Chromatin accessibility data have previously been used to identify novel enhancers (Davie et al., 2015; Crawford et al., 2006). We reasoned that it would be possible to identify genomic regions corresponding to cell-type- specific enhancers by comparing dynamically accessible regions between cell types. In support of this, we observed that the sequence covered by the 71C09-GAL4 line used in this study to profile GMCs/newly born neurons, displayed a higher peak specifically at this region than in either the stem cell or differentiated neuron data (Figure 4\u2014figure supplement 1). Interestingly, a clear peak can still be observed in the NSC data, without concomitant reporter expression. Therefore, an enrichment of accessible chromatin does not necessarily correspond to an active enhancer in a given cell type. This is consistent with previous observations that DNase hypersensitive regions are often not active enhancers (Zhou et al., 2017; Thurman et al., 2012).\n\nWe selected accessible regions with large differences between at least two cell types in the lineage, which satisfied various criteria for us to designate them as putative enhancers (see Materials and methods). We then identified available reporter lines from the Vienna tiles (VT)(Kvon et al., 2014) and FlyLight (Jenett et al., 2012) collections of GAL4 reporter lines that contained sequences encompassing our predicted enhancers upstream of a GAL4 reporter, and verified their expression in the tissues of interest. We identified enhancer-GAL4 lines in which reporter expression matched our predictions for enhancer activity. In the CNS Vienna line VT017417 and FlyLight line GMR56E07 both showed expression in the early part of the lineage in the CNS, with GFP reporter expression detectable predominantly in NSCs and GMCs (Figure 6A,B). This is consistent with accessible chromatin readings from our CATaDa data for these cell types in which progenitor cells displayed prominent peaks, whereas differentiated neurons did not. Similarly, we were able to detect functional cell-type-specific enhancers in the midgut. The Vienna line, VT004241, showed reporter expression predominantly in Delta positive ISCs (Figure 6C). Therefore, it is possible to use CATaDa data to identify novel cell-type-specific enhancers in multiple tissues. Overall 17 of 30 lines (57%) tested showed GFP expression in tissues and cell types that closely matched our predictions based on CATaDa data. This is in line with the rate of enhancer prediction by previous methods (Kvon et al., 2014).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/32341/elife-32341-fig6-v1.jpg)\n\n**Figure 6.:** (A) Intronic putative enhancer region VT017417 within slit locus reveals expression of GFP reporter gene predominantly in GMCs (white arrow) and newly born neurons, as well as some NSCs (Dpn positive, yellow arrow). (B) Intergenic putative enhancer region GMR56E07 shows expression of GFP reporter gene predominantly in NSCs (yellow arrow), with some GMC expression (white arrow). (C) Intronic putative enhancer region VT004241 shows expression of GFP reporter predominantly in the ISCs (marked with Delta, white arrow). All scale bars\u00a0=\u00a020 \u00b5m.\n\n### Distribution of sequencing reads reveals changes in global chromatin accessibility during lineage development\n\nIt is commonly accepted that the global accessibility of chromatin in a given cell type correlates broadly with potency. Whilst there are multiple lines of evidence showing that pluripotent cells have high levels of open chromatin, little data exist to support this idea in somatic multipotent stem cells and their progeny. We reasoned that by examining the distribution of normalised mapped sequencing reads (for each GATC fragment) we would be able to determine the nature of open chromatin in a given cell type.\n\nInitial examination of read distributions indicated that differentiated neurons had fewer GATC fragments with lower read counts (Figure 7\u2014figure supplement 1A). However, having a limited number of replicates prevented a thorough statistical analysis of this relationship. To increase the significance of our analysis of read distributions, we decided to incorporate further neuronal and NSC datasets into our analysis, which were available to us as control data from existing DamID studies ([Marshall et al., 2016] and unpublished data). Including our previously described neuronal data, we examined the distribution of twelve adult and larval neuronal Dam accessibility datasets (derived from individual post-mitotic neuronal subtypes, cholinergic, GABAergic, and glutamatergic) and compared to data derived from NSCs.\n\nFrom these distributions it is apparent that majority of GATC fragments in the genome have very few corresponding mapped reads in all samples, whilst fragments having over\u00a0~10 reads per million (rpm) were relatively infrequent. In other words, most of the genome is inaccessible or accessible at very low levels, whilst hyper-accessible regions are comparatively rare in all cell types (Figure 7A). The greatest difference between the distributions of neurons and NSCs was apparent at very low read numbers. We observed that there was a significantly greater proportion of GATC fragments with low read counts but without being completely inaccessible (~1\u20133 rpm), in the NSC data compared to neurons (Figure 7A). This abundance of genomic regions in the stem cells with low-level chromatin accessibility indicates that open chromatin is more broadly distributed than in NSCs than neurons. We find that this trend is also apparent in the intermediate progenitor cell types, having intermediate amounts of GATC fragments mapping to low read counts (Figure 7B, Figure 7\u2014figure supplement 1A). Conversely, we observed a trend towards greater number of GATC fragments to which zero reads were mapped as differentiation progresses (Figure 7\u2014figure supplement 1B). These data demonstrate that differentiated cells are more likely to have regions of chromatin that are completely inaccessible to Dam, indicating a globally lower amount of accessible chromatin in neurons. These trends are also observed in the midgut cells, implying that global changes to accessible chromatin are a common feature of somatic stem cell lineages in vivo (Figure 7\u2014figure supplement 1C).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/32341/elife-32341-fig7-v1.jpg)\n\n**Figure 7.:** (A) Log transformed distribution of read counts at GATC fragments for neuronal (pink) or NSC replicates (blue). In addition to adult neuron data described in previous figures, CATaDa data for cholinergic, glutamatergic, and GABAergic adult neurons are included. NSC data include extra replicate from (Marshall et al., 2016). (B) Areas under curve for region bound by dotted lines in (A). Corresponding to\u00a0~1\u20133 rpm. Data include extra neuronal and NSC replicates shown in (A), as well as corresponding replicates at L3 for gutamatergic, GABAergic, and cholinergic neurons. Note that area under curve corresponds to proportion of GATC fragments having mapped reads within indicated range (i.e. NSCs have\u00a0~38% (median) of all GATC fragments within 1\u20133 rpm mapped reads, compared to\u00a0~32% for adult neurons. Results were considered significant at *p<0.05.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32341/elife-32341-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Mean distribution of reads for all cell types in the CNS. (B) Number of regions with zero mapped reads for cell types of the CNS. Results were considered significant at *p<0.05. (C) Mean distribution of reads for all cell types in the midgut.\n\n## Discussion\n\nRecent studies have provided insights into chromatin accessibility of individual cell-types using accessibility assays coupled with cell sorting (Pearson et al., 2016). Whilst these strategies have been proven to produce meaningful biological data, they suffer from being technically challenging, particularly with regards to cell isolation. We have demonstrated that CATaDa yields chromatin accessibility profiles for defined cell types in vivo without the need for cell isolation, fixation or the extraction of naked chromatin. In addition to its ease of use, CATaDa also has the advantage that the marking of accessible DNA occurs in vivo. Due to this, there are no artefacts associated with chemical fixation or washing of the chromatin prior to the assay (Baranello et al., 2016). Furthermore, widely used tissue dissociation protocols have recently been shown to result in substantial gene expression artefacts, a risk that is also circumvented by labelling the DNA in vivo (van den Brink et al., 2017). In addition, as Dam is expressed in vivo over several hours, the profiles produced will reflect dynamic changes to chromatin structure over the entire time period during which Dam is expressed.\n\nCATaDa is limited by its resolution, which is restricted by the frequency of GATC sites in the genome (median spacing of\u00a0~200 bp in Drosophila). However, this can be increased by using a modified Dam in conjunction with immunoprecipitation (Dam-IP)(Xiao et al., 2010; Xiao and Moore, 2011). Due to the dependence of Dam for methylation of GATC sequences, biases may be observed at loci which are depleted for GATC. It is worth noting that extensive sequence biases have also been reported for DNAse and ATAC-seq (Madrigal, 2015). Although single cell protocols have recently been developed for chromatin accessibility techniques (Jin et al., 2015a; Buenrostro et al., 2015), for routine experiments it is more usual to require a relatively large number of cells. For example, for FAIRE-seq it is recommended to have a minimum of 1 \u00d7 106 cells (Tsompana and Buck, 2014; Simon et al., 2013), whilst DNase-seq typically requires 1 \u00d7 107 cells (Tsompana and Buck, 2014; Song and Crawford, 2010). In contrast, DamID experiments can be performed with as few as 1000 cells (Tosti, 2017), therefore CATaDa is likely to also be effective with low cell numbers, making it competitive with ATAC-seq (500\u201350,000 cells) (Buenrostro et al., 2013; Marshall et al., 2016). Furthermore, single cell DamID has also recently been demonstrated, indicating that the minimum number of cells required for CATaDa is one (Kind et al., 2015).\n\nAlthough we see instances of false negatives in our peak identification with CATaDa due to lack of available GATC sites for methylation, we also observe a number of peaks unique to CATaDa. Whilst it is possible that these signals are the result of an experimental artefact, it seems likely that they are genuine accessible loci. This could be accounted for by the fact that Dam methylase is a relatively small protein compared to Tn5 transposase (utilised in ATAC-seq \u2013 55 and 32 KDa respectively [Naumann and Reznikoff, 2002; Boye et al., 1992]), Therefore, Dam may be able to methylate sites which are inaccessible to Tn5. Alternatively, Dam may be able to methylate some nucleosome bound DNA in which the GATC site is exposed to the nucleoplasm, which may be insufficient for transposition. Whilst the presence of some potential false positives and negatives in the data may be a problem for some applications, overall, CATaDa produces similar overall results to ATAC and FAIRE-seq. As there is already a significant amount of disagreement between ATAC and FAIRE-seq, it is impossible to say whether a unique peak called by any method is a true peak or not, and as these techniques work via different principles, it is likely that these differences reflect biases unique to each approach.\n\nDue to the technical differences between CATaDa and currently favoured alternatives (e.g. ATAC-seq), it is clear that the choice of which of these techniques is most appropriate is dependent on the application in question. The limited resolution of CATaDa means that it is not well suited for identifying precise limits of enhancer regions or nucleosome positions when compared to ATAC-seq. However, we have demonstrated that CATaDa resolution is sufficient to investigate broad differences in chromatin accessibility between samples, to identify enriched sequence motifs, and even to identify individual cell-type-specific enhancers. Therefore, the technique is suited to answering questions regarding the biology of cell-types of interest. The requirement for expression of Dam may represent difficulties for non-genetically-tractable model systems, or complicate experimental design if a mutant background is desired, (although it should be noted that in the latter case, a genetically encoded cell-type-specific marker may have to be included anyway to facilitate cell-separation for ATAC-seq or other approaches \u2013 therefore a complicated genetic background may be unavoidable). On the other hand, the advantages of being able to assay individual cell types residing within a complex tissue, are clear. If the driver used is specific enough, this may even be achieved with minimal or no dissection.\n\nTargeted DamID is rapidly being embraced by the Drosophila community with, at present, over 135 laboratories having requested the reagents and a number of papers already published (Southall et al., 2013; Dinges et al., 2017; Marshall and Brand, 2017; Cheetham and Brand, 2018; Jin et al., 2015b; Sp\u00e9der and Brand, 2018). Progress is also being made in adapting it for use in vertebrate models (Tosti, 2017). Whenever the binding of a protein of interest (POI) is investigated with this technique, Dam-only data (representing chromatin accessibility) for the cell type being assayed is also generated, as it is the control for which the Dam-POI is normalised. Therefore, researchers performing DamID experiments can now take advantage of this data, getting a \u20182-for-1 deal\u2019 whenever they use TaDa to profile the binding of a POI. Furthermore, much of these\u00a0data are already available from published studies that could be readily analysed to provide novel biological insights.\n\nThe sequence of events which lead to repression of open chromatin in the transition between stem cells and their progeny is not well defined. Through identification of functional elements of the genome at various stages in this process, we can begin to understand how the dynamic chromatin landscape impacts the regulation and maintenance of differentiated cell states. Interestingly, we observe that chromatin accessibility in intermediate cell types is broadly more similar to their stem cell precursors than their differentiated progeny in CNS and midgut lineages (Figure 4B,C, Figure 5B,C,F). This indicates that many stem-cell-specific regulatory regions remain accessible in intermediate cell types and are not fully repressed until terminal differentiation. This seems particularly surprising in the case of the EBs in the midgut considering that these cells do not undergo further mitotic divisions and are committed to a particular cell fate before their genesis by Notch signalling in the ISC (Ohlstein and Spradling, 2007). Furthermore, in the intermediate cells of the larval CNS (GMCs and immature neurons), a relatively high proportion of cells profiled are neurons, which express markers thought to be associated with fully differentiated cells, suggesting that these regulatory regions may be open prior to terminal fate specification.\n\nThe reason for these regions of chromatin remaining accessible in stem cell progeny is unclear, however there are several plausible explanations. Firstly, regions that are bound by transcription factors that activate transcription may be replaced by transcriptional repressors. Such repressive factors are known to have detectable open chromatin \u2018footprints\u2019, similarly to activating factors (Mall et al., 2017; Dinges et al., 2017). Alternatively, the same factors that bind in the stem cells may recruit new binding partners that alter their activity to initiate repression rather than activation of gene expression. This explanation would require that further modifications occur to the chromatin following repressor activity as open chromatin regions are lost in fully differentiated cells, suggesting that repressors may no longer be bound. Retention of open chromatin regions in intermediate cell types may also reflect increased plasticity, indicating that cell fate has not yet been fully determined and that lineage reversion or dedifferentiation is possible given the introduction of the correct combination of factors. This idea is supported by the fact that immature post-mitotic neurons have been experimentally induced to dedifferentiate by interventions that are ineffective in fully differentiated adult cells (Southall et al., 2014; Marshall and Brand, 2017). It has been suggested that in some physiological contexts differentiated cells may revert to replenish stem cell pools (Kai and Spradling, 2004; Yan et al., 2017; Cheetham and Brand, 2018; Jin et al., 2015b). This idea may help to explain retention of plasticity in these cell types.\n\nIt is widely asserted that terminally differentiated cells have limited accessible chromatin whilst their progenitors maintain a broadly open chromatin landscape. However, there are few studies that investigate this phenomenon in vivo. Furthermore, the chromatin state in lineage committed intermediate progenitor cell types has been little studied. With CATaDa we have acquired evidence to indicate that NSCs in the developing Drosophila CNS appear to have more broadly open chromatin landscapes than their fully differentiated progeny. These differences are predominantly in the range of 1 to 3 rpm, which reflects chromatin with very low accessibility. Furthermore, the intermediate or immature progenitors, in both the CNS and midgut, retain a relatively open chromatin state, similar to that of their stem cell precursors (Figure 4B\u2013C, Figure 5B,D,F). Together, these data support the model of stem cells containing more chromatin that has the potential to be accessed, whereas in differentiated cells, this flexibility is reduced and more regions are rendered completely inaccessible. In pluripotent stem cells, the more highly accessible chromatin landscape is thought to promote rapid initiation of multiple gene expression programmes. The fact that\u00a0this is also a feature of somatic stem cells suggests that these cells may retain an unexpected level of plasticity even after their terminal cell fate has been specified.\n\nIn conclusion, we have shown that cell-type-specific chromatin accessibility profiles can be obtained through tightly controlled expression of Dam methylase. These data can be used to predict cell-type-specific enhancers, as well as gaining insights into the global regulation of chromatin. Of particular interest are the dynamic changes in accessibility as cells progress towards terminal differentiation (e.g. the unique open regions observed in GMCs/early neurons) and the delayed compaction of stem cell gene associated chromatin. Also, analysis of the genome-wide distribution of chromatin accessibility supports a model of gradual compaction of large regions of low accessibility chromatin during differentiation. Overall, our results from profiling developing cell types illuminate the dynamic nature of chromatin accessibility in differentiation, and hint at organising principles which may apply to all somatic stem-cell lineages.\n\n## Materials\u00a0and\u00a0methods\n\n### Fly stocks\n\ntub-GAL80ts; UAS-LT3-NDam (Southall et al., 2013) was used to allow cell-specific expression of Dam. The following GAL4 driver lines were used to drive Dam expression in the CNS: wor-GAL4 (Albertson et al., 2004) for neuroblasts, GMR71C09-GAL4 (Bloomington #39575) for GMCs and newly born neurons and nSyb-GAL4 (Bloomington #51941) for mature larval and adult neurons. For expression of Dam in the gut the following lines were used for ISC, EB, and EC expression, respectively: esg-GAL4, UAS-2xEYFP/Cyo; Su(H)GBE-GAL80/TM3 Sb, Su(H) GBE-GAL4, UAS-CD8GFP/Cyo and {GawB}Myo31DFNP0001/CyO (Wang et al., 2014; Jiang et al., 2009). P{tubP-GAL4}LL7/TM6, Tb (Bloomington #5138) was used to drive ubiquitous expression in antennal-eye discs.\n\nChaMI04508-T2A-GAL4, Gad1MI09277-T2A-GAL4 and vGlutMI04979-T2A-GAL4 driver lines were used to drive expression in cholinergic, GABAergic and glutamatergic neurons, respectively (Diao et al., 2015).\n\n### Chromatin accessibility profiling using targeted DamID (CATaDa)\n\nTo induce tissue-specific Dam expression, GAL4 driver lines were crossed to GAL80ts; UAS-LT3-NDam virgin females. Embryos were collected for 4 hr then raised at 18\u00b0C. Animals were transferred to 29\u00b0C at either 7 days after embryo deposition for 24 hr to obtain third instar larval tissues, or three days after eclosion to obtain adult heads. Fifty brains or thirty antennal-eye discs were dissected in PBS with 100 mM EDTA for each replicate. 71C09-GAL4 > UAS-LT3-NDam ventral nerve cords (VNCs) were dissected and central brain and optic lobe regions discarded due to presence of observed 71 C09-GAL4 expression in a small subset of central brain neuroblasts. For midgut experiments, Animals were transferred to 29\u00b0C for 24 hr at three days after eclosion, and thirty midguts dissected per genotype. The gut regions dissected were between the crop and malpigian tubules. The amount of tissue dissected was chosen to ensure the presence of an appropriate number of Dam-expressing cells (~10000 (Southall et al., 2013)). (For this study, we chose to dissect all tissues due to non-specificity of some drivers, however, this should not be required if driver expression is specific). Genomic DNA extraction and sequencing library preparation was performed as described previously (Marshall et al., 2016), with minor modifications - MyTaq (Bioline) was used for PCR amplification of adapter ligated DNA. Libraries were sequenced using Illumina HiSeq single-end 50 bp sequencing. Two replicates of at least 10 million reads were acquired for each cell type. A third replicate was acquired for GMR71C09-GAL4 to allow for comparisons in Figure 7. Sequencing data were mapped back to release 6.03 of the Drosophila genome using a previously described pipeline, which was modified to output Dam-only datafiles (Marshall and Brand, 2015) (available at https://github.com/tonysouthall/damidseq_pipeline_output_Dam-only_data [Southall, 2017a; copy archived at\u00a0https://github.com/elifesciences-publications/damidseq_pipeline_output_Dam-only_data]). This includes mapping reads to the genome using bowtie and assigning to bins delimited by GATC sites.\n\n### Immunohistochemistry and imaging\n\n71C09-GAL4\u00a0>\u00a0UAS-mCD8-GFP third instar larval CNS or adult midgut were dissected in PBS and fixed for 20 min with 4% formaldehyde in PBS, 0.5 mM EGTA, 5 mM MgCl2. Tissues were stained with rat anti-elav (Developmental Studies Hybridoma Bank), chicken anti-GFP (Thermo scientific), mouse anti-Delta (Developmental Studies Hybridoma Bank), and guinea pig anti-deadpan (kind gift from A. Brand). Samples were imaged using a Zeiss LSM510 confocal microscope.\n\n### Peak calling\n\nPeaks were called and mapped to genes using a custom Perl program (available at https://github.com/tonysouthall/Peak_Calling_for_CATaDa [Southall, 2017b; copy archived at https://github.com/elifesciences-publications/Peak_Calling_for_CATaDa]). In brief, a false discovery rate (FDR) was calculated for peaks (formed of two or more consecutive GATC fragments) for the individual replicates. Then, each potential peak in the data was assigned a FDR. Any peaks with less than a 1% FDR were classified as significant. Significant peaks present in both replicates were used to form a final peak file. Any gene (genome release 6.11) within 5 kb of a peak (with no other genes in between) was identified as a potentially regulated gene.\n\n### Motif identification\n\nRegions of differentially accessible chromatin were identified by calculating GATC fragments for which a difference of\u00a0>20 rpm was observed between every replicate between at least two cell types.\u00a0~97% of these fragments lie within statistically significant (FDR\u00a0<\u00a01%) different (between respective cell types) regions. These regions were identified by running the peak calling program on comparison gff files (generated by subtraction with negative values zeroed). The other\u00a0~3% are GATC fragments that show\u00a0>20 rpm difference in isolation, therefore are not identified by the peak calling program. Hierarchical clustering was performed using Morpheus (Broad Institute, 2017). Sequences for major clusters showing enrichment for a given cell type were then analysed using MEME-ChIP (Bailey et al., 2009).\n\n### Gene ontology analysis\n\nPotentially regulated genes, with a peak height of at least 10 rpm were submitted to GOToolBox (Martin et al., 2004) for GO analysis. GO term enrichments (frequency in data set divided by expected frequency) were calculated for each cell type.\n\n### Cell-type-specific enhancer prediction\n\nGATC fragments were identified with at least a 10 rpm difference in all replicates between at least two cell types. Any peak\u00a0>2 kb from a transcriptional start site that did not overlap with coding sequence was designated an enhancer. Enhancers satisfying these criteria, which were covered by an available Vienna VT (Kvon et al., 2014) or Janelia FlyLight (Jenett et al., 2012) GAL4 line were chosen for validation based on the magnitude of the change in accessibility.\n\n### Statistical analysis and data presentation\n\nFor comparing Dam data with ATAC and FAIRE, Monte Carlo experiments were performed using a custom Perl script (available at https://github.com/tonysouthall/Monte_Carlo_simulation [Southall, 2017c; copy archived https://github.com/elifesciences-publications/Monte_Carlo_simulation]). Comparisons of areas under curve in Figure 7 were performed using Welch\u2019s ANOVA for heteroscedasticity with Games-Howell post-hoc test in R. For data with equal variances, ANOVA was used with Tukey post-hoc testing (e.g. Figure 7\u2014figure supplement 1). Results were considered significant at *p<0.05, **p<0.01. Principal component analyses and correlation matrix plots were produced using deepTools (Ram\u00edrez et al., 2014). Average TSS signal profiles were made using SeqPlots R/Bioconductor package (Stempor and Ahringer, 2016). All other figures were produced using the ggplot2 package in R.\n",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "743fb8b0-2f6e-4274-a25c-3dd40891cda4",
+      "submission_id": "95f7c055-5cb5-401c-83eb-4ab2589d0b82",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bruce Edgar, University of Utah United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.32341.028](https://doi.org/10.7554/eLife.32341.028)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"CATaDa reveals global remodelling of chromatin accessibility during stem cell differentiation in vivo\" for consideration by eLife. Your article has been favorably evaluated by K VijayRaghavan (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Gabriel E. Zentner (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. From the reviews, and discussion between the reviews, there was a consensus that the paper has greatest value in the category of \"Tools and Resources\", which is a specific type of short-format eLife paper. Thus I'd like to propose that we publish your paper, after revisions as discussed here and in the reviews, as a \"Tools and Resources\" article. Please consider that publishing in this category will in no way diminish the import of your work. On the contrary, since CATaDa is a unique and generally applicable tool, we expect it to be highly appreciated by our readership and widely cited. As to revisions, one thing all the reviewers agreed upon is the paper should include a more thorough, genome-wide comparison of the CATaDa, ATAC, and FAIRE methods for chromatin profiling, and discussion of the pros and cons of CATaDa in relative terms. This is important as ATAC and FAIRE are already widely used. A number of other suggested revisions can be found in the reviews, below. We hope you will consider publishing this interesting work as a Tools and Resources report.\n\nReviewer #1:\n\nThe technique detailed in the manuscript is an interesting alternative to currently used methods for chromatin analysis such as ATAC- and FAIRE-seq. In particular the possibility to forego the requirement to isolate the cell type of interest is very attractive, as it would speed up the process, thus limiting the time required for tissue manipulation prior to chromatin extraction. However, we feel that the following points could be improved:\n\n\u2022 A more complete, genome-wide comparison between CATaDa and ATACseq and FAIREseq is necessary to make this a useful into to this new method.\n\n\u2022 As different driver lines are used, it would be beneficial to test the expression levels of the Dam in the various cell types here discussed.\n\n\u2022 The technique is stated to be quite reproducible and Figure 2\u2014figure supplement 1 is introduced to support this. However, it is not explained what samples were plotted and also whether this correlation has been similarly observed for all samples and replicates or the samples plotted are simply the two showing the best correlation observed. Also, a similar plot for midgut cells would be required.\n\n\u2022 In the third paragraph of the subsection \u201cCATaDa profiling shows dynamic changes in chromatin accessibility during differentiation of the nervous system\u201d, it is shown that \"GMC/ newly born neuron profiles frequently show intermediate signal\" at several loci where gene expression is activated/inactivated during development. In how many of the loci where such behavior is experimentally known to occur can this be observed? Can similar patterns be identified with ATAC- and FAIRE-seq just as well?\n\n\u2022 In the fifth paragraph of the subsection \u201cCATaDa profiling shows dynamic changes in chromatin accessibility during differentiation of the nervous system\u201d, is discussed the ability to identify sequence motifs in regions of the NSC genome classified as open. However, only one example of identified motif (i.e. E-box) is reported. What other known motifs have been identified? Also, in regards of the motifs for which no known transcription factor could be identified, how likely are they to be true binding motifs rather than random sequences?\n\n\u2022 In regards to the Gene Ontology analysis described in the last paragraph of the subsection \u201cCATaDa profiling shows dynamic changes in chromatin accessibility during differentiation of the nervous system\u201d, it would be good if a supplementary table could be added, reporting the top categories and their relative significance of enrichment, rather than just list a few terms that were expected.\n\n\u2022 The comparison described in the last paragraph of the subsection \u201cChromatin accessibility in adult midgut cell types\u201d, between brain and midgut cells feels superfluous. Although it's good that brain and midgut cells cluster in two different groups, it is fairly obvious given the very different function of the two organs. This paragraph could be rewritten by giving more space to the direct comparison of NSC and ISC, highlighting similarities in the chromatin in the vicinity of genes (e.g.) related to growth and proliferation.\n\n\u2022 Subsection \u201cEnhancer prediction from Dam Accessibility data\u201d, last paragraph, it would be helpful to know how many reporter lines were tested and how many matched the prediction of enhancer activity. Also, this would be a good opportunity for further comparison with ATAC- and FAIRE-seq.\n\n\u2022 In Figure 5C, what cell type are the GFP+ Dl- cells?\n\n\u2022 Subsection \u201cDistribution of sequencing reads reveals changes in global chromatin accessibility during lineage development\u201d, second paragraph, it is stated that Figure 7\u2014figure supplement 1 was analyzed via \"visual inspection\". Some form of statistical test would go a long way to improve the reported observation.\n\n\u2022 When comparing GATC fragments as described in the \"Materials and methods\" section (\"Motif identification\" and \"Cell type specific enhancer prediction\" sections), it is not stated whether the difference in RPM values were selected via statistical tests or nor. In the latter case, it would be best to use the replicates in a statistical test to evaluate \"real\" differences between cell types.\n\nReviewer #2:\n\nVarious chromatin accessibility methods have been used to map potential regulatory elements, beginning with DNase I hypersensitive sites to more recent FARE and ATAC-seq methods. These methods can be useful when combined with other strategies that more directly report on the function of regulatory elements. In this study, the authors develop a method (CATaDa) to map open chromatin regions based on tissue-specific expression of the E. coli Dam methylase in Drosophila followed by mapping of GATC methylation sites. The main advantage of the method over previous approaches is that it requires fewer cells and does not require isolation of cells of interest. Using this method the authors profile chromatin accessibility of specific cell types in the Drosophila neuronal and midgut lineages and find changes in chromatin accessibility at different developmental stages.\n\nThe method the authors have developed clearly has some advantages over ATAC-seq, probably the most popular current method for assays of genome-wide chromatin accessibility. However, unlike ATAC-seq, this method requires the generation of transgenic animals that express Dam in specific cell types. This may limit its general use but the authors report great interest from the Drosophila community (based on requests for reagents). As acknowledged by the authors, the resolution of the method is limited by the occurrence of GATC sites (1/~250 bp). My main concern is that the profiling the authors report provides limited functional insight into the roles of specific enhancers or other regulatory elements in regulation of cell type-specific gene expression. The significance of the global changes in chromatin accessibility described by the authors also remains unclear.\n\nReviewer #3:\n\nChromatin accessibility is a hallmark of active regulatory regions and is dynamic during development. While many chromatin profiling approaches have been implemented in cultured cells, mapping chromatin accessibility in tissues has been more difficult due to the need to physically dissociate target cells from the organism of interest. Here, the authors present CATaDa, a variation on their earlier TaDa technique for tissue-specific in vivo profiling of protein-DNA interactions. CATaDa makes use of untethered Dam's propensity for methylating open regions of chromatin as a means to assay chromatin accessibility. The authors test CATaDa in neural and midgut stem cells from Drosophila, finding that chromatin accessibility changes during differentiation and is ultimately reduced in terminally differentiated cells. CATaDa also facilitated the detection of cell type-specific enhancer elements. I think the paper is a nice demonstration that Dam works as a reagent for tissue-specific profiling of chromatin accessibility in vivo (the stepwise changes in GO terms enriched in NSCs to neurons are particularly nice). The fact that CATaDa does not require cell isolation prior to chromatin profiling as FAIRE or ATAC-seq does makes it a strong choice for this purpose. I think the method will be useful, though I would like to see more extensive comparison to FAIRE and ATAC-seq.\n\nMy read of the manuscript is that CATaDa was a hammer in search of a nail, which turned out to be stem cell differentiation. My feeling is that the biological aspects of the story are case studies for the method (though it is of course good to have confirmation that chromatin accessibility generally decreases during stem cell differentiation in vivo) rather than a story in their own right. I am therefore inclined to think that the paper would be better suited to being a Tools and Resources article, as both the method and the data generated would be useful for the community.\n",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5f59af9a-32e2-4923-bbef-73ae8b402dd2",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C1",
+      "claim": "Cell-specific chromatin accessibility data can be produced via ectopic expression of E. coli Dam methylase in vivo, without the requirement for cell-sorting (CATaDa).",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that cell-specific chromatin accessibility data can be produced via ectopic expression of E. coli Dam methylase in vivo, without the requirement for cell-sorting (CATaDa).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states this as a main finding of the study, and the manuscript presents experimental data supporting this claim throughout.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "cc5332e7-0b5f-450a-87af-4b8bc4409859",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C2",
+      "claim": "Chromatin accessibility profiles produced with CATaDa in the eye disc were highly reproducible between replicates (r2 = 0.947).",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin accessibility profiles produced with CATaDa in the eye disc were highly reproducible between replicates (r2 = 0.947) (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides a specific correlation coefficient value and references Figure 2\u2014figure supplement 1 showing correlation plots.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "e12d30ee-4d22-4fb1-ae41-d2c82a8f91fc",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C3",
+      "claim": "CATaDa profiles showed good agreement with data produced with ATAC-seq and FAIRE-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "CATaDa profiles showed good agreement with data produced with ATAC-seq and FAIRE-seq.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents visual inspection data and quantitative comparisons between CATaDa and other methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "8c3f4e0b-1d61-498c-b4e8-4719edadb687",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C4",
+      "claim": "Open chromatin is enriched at transcriptional start sites (TSS) in CATaDa profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, open chromatin is enriched at transcriptional start sites (TSS) (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2C shows an aggregation plot demonstrating enrichment at TSS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "1753289e-bdb3-4b21-9ee4-3dbc8cfd6b16",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C5",
+      "claim": "The overlap of Dam identified peaks with ATAC and FAIRE peaks is 48.6% and 49.4%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The overlap of Dam identified peaks with ATAC and FAIRE peaks is 48.6% and 49.4%, respectively (In comparison, 55.9% of ATAC peaks are also identified in FAIRE data \u2013 Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific percentages of peak overlap between methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "594274b1-db7f-43cc-81d1-03592b24ae98",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C6",
+      "claim": "The overlap between CATaDa and ATAC peaks is highly significant (p<1 \u00d7 10\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "A Monte Carlo simulation determined that this is a highly significant overlap (p<1 \u00d7 10\u22125) and peak heights at shared ATAC and CATaDa peaks show significant correlation (p<1 \u00d7 10-16, r2 = 0.138) (Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Monte Carlo simulation was performed to assess statistical significance of the overlap.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "b3eca5ac-a7c9-495d-ac52-cec29f14dff0",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C7",
+      "claim": "CATaDa identified 57.9% of FlyLight eye enhancers (333 of 575 enhancers).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that for 57.9% of FlyLight eye enhancers, a corresponding peak was called in CATaDa profiles (333 of 575 enhancers).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numbers of validated enhancers identified by CATaDa.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "98955a5e-61e3-4024-973e-ae3566ea8791",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C9",
+      "claim": "In Drosophila, neurons are derived from asymmetrically dividing neural stem cells (NSCs).",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, neurons are derived from asymmetrically dividing neural stem cells (NSCs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Drosophila neurogenesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "fa699d65-670e-4573-be98-0301b98bf444",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C10",
+      "claim": "NSC divisions produce one self-renewing daughter NSC and a ganglion mother cell (GMC), which divides once more to produce neurons or glia.",
+      "claim_type": "EXPLICIT",
+      "source": "NSC divisions produce one self-renewing daughter NSC and a ganglion mother cell (GMC), which divides once more to produce neurons or glia (Homem and Knoblich, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Homem and Knoblich, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "051962a7-a5ac-44fe-86ba-00a215c0b08b",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C11",
+      "claim": "Hierarchical clustering of differentially accessible regions in CNS lineages indicates two major groupings in which chromatin is most accessible in either stem cells or mature neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Hierarchical clustering of regions of chromatin with differential accessibility between cell types reveals two major clusters in which chromatin is either open in stem cells but inaccessible in neurons, or vice versa (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 4C shows hierarchical clustering results demonstrating these two major groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "fa854b96-043a-4088-b75c-0f531496c16b",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C12",
+      "claim": "The E-box motif \u2013 CAGCNG \u2013 which is bound by the NSC proneural factor ase was highly enriched in regions of open chromatin in NSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Identification of enriched motifs in sequences that were accessible in NSCs showed that expected transcription factor binding sites were highly enriched. For example, the E-box motif \u2013 CAGCNG \u2013 which is bound by the NSC proneural factor ase (Figure 4D) (Southall and Brand, 2009; Jarman et al., 1993).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Motif analysis identified this sequence in NSC-accessible regions, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "f2440d4a-5896-4461-a03f-802e2c89107b",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C13",
+      "claim": "Regions in which open chromatin was specifically enriched in mature neurons yielded a sequence motif corresponding to the transcription factor, Ci.",
+      "claim_type": "EXPLICIT",
+      "source": "Regions in which open chromatin was specifically enriched in mature neurons yielded a sequence motif corresponding to the transcription factor, Ci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Motif analysis of neuron-specific accessible regions identified Ci binding motifs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "9b9dc129-1f10-4d6d-8227-7642b3892535",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C14",
+      "claim": "The Drosophila midgut contains a pool of cycling intestinal stem cells (ISCs) that persists in the adult to maintain a population of terminally differentiated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The Drosophila midgut contains a pool of cycling intestinal stem cells (ISCs) that persists in the adult to maintain a population of terminally differentiated cells which mediate the absorptive and secretory functions of the organ (Jiang and Edgar, 2011; N\u00e1szai et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Jiang and Edgar, 2011 and N\u00e1szai et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "6e8f8bf1-e89f-4491-aa4d-81b476b007a6",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C15",
+      "claim": "A single committed immature progenitor cell (enteroblast \u2013 EB) is produced from stem cell divisions, which then differentiates without further divisions to produce the mature epithelial cells of the midgut.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to neurogenesis, a single committed immature progenitor cell (enteroblast \u2013 EB) is produced from stem cell divisions, which then differentiates without further divisions to produce the mature epithelial cells of the midgut (Ohlstein and Spradling, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Ohlstein and Spradling, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "91d4ceb5-4d52-4867-a5d8-dd85d58607d4",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C16",
+      "claim": "escargot (esg) is a transcription factor required for ISC self-renewal.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, escargot (esg) a transcription factor required for ISC self-renewal (Korzelius et al., 2014), displays multiple peaks of accessible chromatin at the gene body and surrounding region in ISCs and EBs, whilst little signal is observed in the ECs (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by a citation to Korzelius et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "fc2fc0db-01b7-4ac5-b190-fe3d067706b3",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C17",
+      "claim": "Hierarchical clustering of differentially accessible regions in gut cell types revealed two major groups in which accessible chromatin was enriched in either in the stem cells (ISCs) or differentiated cell (ECs).",
+      "claim_type": "EXPLICIT",
+      "source": "As observed in the CNS, hierarchical clustering revealed two major groups in which accessible chromatin was enriched in either in the stem cells (ISCs) or differentiated cell (ECs) (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5D shows hierarchical clustering results for midgut cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "6c1b53d8-3b02-48c9-974f-efacf8b0f10f",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C18",
+      "claim": "Principal component analysis reveals two distinct clusters in which >80% of the variance is explained in the first two principal components, representing the two distinct tissue types (CNS and midgut).",
+      "claim_type": "EXPLICIT",
+      "source": "Principal component analysis reveals two distinct clusters in which >80% of the variance is explained in the first two principal components (Figure 5E). These clusters represent the two distinct tissue types, (CNS and midgut) rather than immature and differentiated cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5E shows PCA results demonstrating tissue-specific clustering.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "22d92ca9-25e7-4f7b-bca3-2a763700028c",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C19",
+      "claim": "The greatest correlation outside of a lineage was between the two stem cell types (R2 = 0.76).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the greatest correlation outside of a lineage was between the two stem cell types (R2 = 0.76), whilst differentiated cells exhibited only weak correlation (ISCs vs NSC, R2 = 0.51).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Correlation analysis between cell types across lineages shows highest similarity between stem cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "53fd3082-757f-4019-8fac-8022aa142970",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C20",
+      "claim": "Somatic stem cell types may utilise a broadly similar chromatin landscape for the maintenance of multipotency, whilst lineage-specific variation is relatively small.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that somatic stem cell types may utilise a broadly similar chromatin landscape for the maintenance of multipotency, whilst lineage-specific variation is relatively small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the correlation data showing high similarity between NSCs and ISCs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "3c69e93c-4f9f-4443-874f-1c0bcce1fe03",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C21",
+      "claim": "17 of 30 lines (57%) tested showed GFP expression in tissues and cell types that closely matched predictions based on CATaDa data.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall 17 of 30 lines (57%) tested showed GFP expression in tissues and cell types that closely matched our predictions based on CATaDa data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the success rate of enhancer prediction validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "cc61ca65-a085-4ee5-bc5c-e67b4e5fba40",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C22",
+      "claim": "The 57% enhancer prediction rate is in line with the rate of enhancer prediction by previous methods.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with the rate of enhancer prediction by previous methods (Kvon et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript compares its enhancer prediction success rate to previously published methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "55cf89cb-26df-4c4c-9140-5753241dcf45",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C23",
+      "claim": "Differentiated neurons had fewer GATC fragments with lower read counts compared to NSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial examination of read distributions indicated that differentiated neurons had fewer GATC fragments with lower read counts (Figure 7\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 7\u2014figure supplement 1A shows read distribution data comparing neurons and NSCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "f07b79ca-2326-4e17-9780-f99cece6d712",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C24",
+      "claim": "There was a significantly greater proportion of GATC fragments with low read counts but without being completely inaccessible (~1\u20133 rpm), in the NSC data compared to neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that there was a significantly greater proportion of GATC fragments with low read counts but without being completely inaccessible (~1\u20133 rpm), in the NSC data compared to neurons (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 7A shows distribution plots demonstrating this difference between NSCs and neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "7a224331-64c4-4f06-b72e-ee9b9f9a36e2",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C25",
+      "claim": "This abundance of genomic regions in the stem cells with low-level chromatin accessibility indicates that open chromatin is more broadly distributed than in NSCs than neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This abundance of genomic regions in the stem cells with low-level chromatin accessibility indicates that open chromatin is more broadly distributed than in NSCs than neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the read distribution data showing more low-accessibility regions in NSCs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "753d1ce9-6986-4dbb-ad0f-881b636606af",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C26",
+      "claim": "There was a trend towards greater number of GATC fragments to which zero reads were mapped as differentiation progresses.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, we observed a trend towards greater number of GATC fragments to which zero reads were mapped as differentiation progresses (Figure 7\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 7\u2014figure supplement 1B shows data on regions with zero mapped reads across cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "55183b30-5e9d-4f2e-991b-52dce49a1e21",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C27",
+      "claim": "Global changes to accessible chromatin are a common feature of somatic stem cell lineages in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "These trends are also observed in the midgut cells, implying that global changes to accessible chromatin are a common feature of somatic stem cell lineages in vivo (Figure 7\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript shows similar trends in both CNS and midgut lineages, supporting this generalization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "d833f33e-a668-4283-bfda-f0566495025d",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C28",
+      "claim": "Chromatin is highly accessible in pluripotent cell types such as embryonic stem (ES) cells, but is compacted following differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin is highly accessible in pluripotent cell types such as embryonic stem (ES) cells, but is compacted following differentiation (Meshorer and Misteli, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Meshorer and Misteli, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "f237e7ba-c933-4e73-bb46-e6bcee60abdc",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C29",
+      "claim": "It has been suggested that open chromatin in pluripotent cells represents a permissive state to which multiple programmes of gene regulation may be rapidly applied upon differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that this open chromatin represents a permissive state to which multiple programmes of gene regulation may be rapidly applied upon differentiation (Gaspar-Maia et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Gaspar-Maia et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "8764e9b5-c222-42b7-a357-fd938dff33da",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C30",
+      "claim": "Ectopic expression of untethered DNA adenine methyltransferase (Dam) results in specific methylation of open chromatin regions whilst nucleosome bound DNA is protected.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that ectopic expression of untethered DNA adenine methyltransferase (Dam) results in specific methylation of open chromatin regions whilst nucleosome bound DNA is protected (Wines et al., 1996; Bulanenkova et al., 2007; Boivin and Dura, 1998; Singh and Klar, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "eac73579-6c12-4db5-96ec-0a404d0ba54b",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C31",
+      "claim": "Transgenic expression of fusions of Dam to DNA-binding proteins is a well-established method used to assess transcription factor occupancy (DNA adenine methyltransferase identification - DamID).",
+      "claim_type": "EXPLICIT",
+      "source": "Transgenic expression of fusions of Dam to DNA-binding proteins is a well-established method used to assess transcription factor occupancy (DNA adenine methyltransferase identification - DamID) (van Steensel and Henikoff, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to van Steensel and Henikoff, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "fbe80d3b-18ae-47eb-a4c3-8ae3ecdb17a3",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C32",
+      "claim": "DamID can be adapted to profile DNA-protein interactions in a cell-type-specific manner by utilising ribosome re-initiation to attenuate transgene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it was demonstrated that DamID could be adapted to profile DNA-protein interactions in a cell-type-specific manner by utilising ribosome re-initiation to attenuate transgene expression (Marshall et al., 2016; Aughey and Southall, 2016; Southall et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Marshall et al., 2016; Aughey and Southall, 2016; Southall et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "fd3edd5a-5876-41ec-9991-6f3e6d36add0",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C33",
+      "claim": "CATaDa signal frequency increases dramatically towards the centre of ATAC or FAIRE peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that CATaDa signal frequency increases dramatically towards the centre of ATAC or FAIRE peaks (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2D shows aggregation plots demonstrating enrichment of CATaDa signal at ATAC and FAIRE peaks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "9edb5fb4-a21d-40de-82df-5501cd047411",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C34",
+      "claim": "For peaks identified in either ATAC or FAIRE data that are not present in CATaDa, there is a relative lack of GATC motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observe that for peaks identified in either ATAC or FAIRE data that are not present in CATaDa, there is a relative lack of GATC motifs, which suggests that there may be cases in which false negatives are observed due to the limitations of the resolution achievable by Dam methylation (Figure 2\u2014figure supplement 3A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2\u2014figure supplement 3A\u2013B shows GATC frequency at peaks identified by different methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "e7e13667-025c-4e01-bb0c-09e44531424d",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C35",
+      "claim": "CATaDa identified fewer peaks than FAIRE in regions proximal to gene promoters (when compared with ATAC).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that whilst CATaDa identified fewer peaks than FAIRE in regions proximal to gene promoters (when compared with ATAC), CATaDa was notably better at identification of non-promoter adjacent accessible sites in ATAC data compared to FAIRE-seq (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2E shows comparison of peak identification at different genomic features.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "7219c29f-8289-4460-a520-a97f727ae5ea",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C36",
+      "claim": "The lack of promoter peaks identified can be explained by the relative depletion of GATC sites upstream of TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of promoter peaks identified can again be explained by the relative depletion of GATC sites upstream of TSS (Figure 2\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2\u2014figure supplement 3C shows GATC frequency around TSS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "c388339e-d1c1-4611-80e8-92e918d9e2d4",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C37",
+      "claim": "bruchpilot (brp) is specifically transcribed in neurons and has an important role in synapse function.",
+      "claim_type": "EXPLICIT",
+      "source": "This corresponds with the expression of brp, which is specifically transcribed in neurons and has an important role in synapse function (Wagh et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Wagh et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "6a23b6e0-f4fd-4ec3-9fc1-042f464473fa",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C38",
+      "claim": "Wnt signalling is known to be important for the control of stem cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Wnt signalling is known to be important for the control of stem cell populations, therefore, these results are also expected (Ring et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Ring et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "ab92f836-1090-41f4-bf42-7c295f970047",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C39",
+      "claim": "Open chromatin is still detectable in GMCs/newly born neurons at NSC-specific gene loci, indicating that functional elements required for regulation of NSC gene expression are not immediately rendered inaccessible following differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, open chromatin is still detectable in these regions in the GMCs/newly born neurons. This pattern is also observed with other NSC expressed factors such as deadpan (dpn), CyclinE (CycE) and prospero (pros) (Figure 4\u2014figure supplement 2). Furthermore, GMC/newly born neuron profiles frequently show intermediate signal at these loci, indicating that functional elements required for regulation of NSC gene expression are not immediately rendered inaccessible following differentiation (Figure 4B and Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents data showing intermediate accessibility in GMCs/newly born neurons at NSC gene loci.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "8dd5e7ae-0efb-4b99-9b6d-b95ab26262ba",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C40",
+      "claim": "There are a large number of loci that are inaccessible in NSCs, then open in the intermediate GMCs/newly born neurons stage before being rendered inaccessible again in terminally differentiated neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "There are a large number of loci that are inaccessible in NSCs, then open in the intermediate GMCs/newly born neurons stage before being rendered inaccessible again in terminally differentiated neurons (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 4C shows hierarchical clustering revealing this pattern of accessibility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "35fae448-6858-4f01-b64f-83ad0a91ebe7",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C41",
+      "claim": "A cluster enriched in larval neurons demonstrates that the chromatin accessibility landscape of larval neurons, although similar, is distinct from adult neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a cluster enriched in larval neurons demonstrates that the chromatin accessibility landscape of larval neurons, although similar, is distinct from adult neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hierarchical clustering analysis shows distinct patterns for larval versus adult neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "890cda62-9720-4050-8bb0-6f2027637e4b",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C42",
+      "claim": "Chromatin accessibility in intermediate cell types is broadly more similar to their stem cell precursors than their differentiated progeny in CNS and midgut lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observe that chromatin accessibility in intermediate cell types is broadly more similar to their stem cell precursors than their differentiated progeny in CNS and midgut lineages (Figure 4B,C, Figure 5B,C,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Correlation and clustering analyses show this relationship between cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "e6d2266d-1278-4111-a0e4-c5a5f9a1a949",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C43",
+      "claim": "Many stem-cell-specific regulatory regions remain accessible in intermediate cell types and are not fully repressed until terminal differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that many stem-cell-specific regulatory regions remain accessible in intermediate cell types and are not fully repressed until terminal differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that intermediate cells show accessibility patterns more similar to stem cells.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "8135137a-845a-4bac-97e1-2207aa1c4729",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C44",
+      "claim": "Immature post-mitotic neurons have been experimentally induced to dedifferentiate by interventions that are ineffective in fully differentiated adult cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This idea is supported by the fact that immature post-mitotic neurons have been experimentally induced to dedifferentiate by interventions that are ineffective in fully differentiated adult cells (Southall et al., 2014; Marshall and Brand, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Southall et al., 2014 and Marshall and Brand, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "2d0b5825-2447-461c-85d8-71463de79e3d",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C45",
+      "claim": "In some physiological contexts differentiated cells may revert to replenish stem cell pools.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that in some physiological contexts differentiated cells may revert to replenish stem cell pools (Kai and Spradling, 2004; Yan et al., 2017; Cheetham and Brand, 2018; Jin et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "a9213597-d3f2-49e8-8227-d8c46d0ccf73",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C46",
+      "claim": "NSCs in the developing Drosophila CNS appear to have more broadly open chromatin landscapes than their fully differentiated progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "With CATaDa we have acquired evidence to indicate that NSCs in the developing Drosophila CNS appear to have more broadly open chromatin landscapes than their fully differentiated progeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Read distribution analysis shows NSCs have more regions with low-level accessibility than neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "f75be1b2-c6e5-4060-8746-136bc3fb3d68",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C47",
+      "claim": "The intermediate or immature progenitors, in both the CNS and midgut, retain a relatively open chromatin state, similar to that of their stem cell precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the intermediate or immature progenitors, in both the CNS and midgut, retain a relatively open chromatin state, similar to that of their stem cell precursors (Figure 4B\u2013C, Figure 5B,D,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Data from both lineages show intermediate cells have accessibility patterns similar to stem cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "1f666c74-f04e-40ba-b1ed-d94cca7d7b70",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C48",
+      "claim": "In pluripotent stem cells, the more highly accessible chromatin landscape is thought to promote rapid initiation of multiple gene expression programmes.",
+      "claim_type": "EXPLICIT",
+      "source": "In pluripotent stem cells, the more highly accessible chromatin landscape is thought to promote rapid initiation of multiple gene expression programmes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about pluripotent stem cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "7c5513a5-6d75-4038-b15b-0945b03a4ffe",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C49",
+      "claim": "The fact that broadly accessible chromatin is also a feature of somatic stem cells suggests that these cells may retain an unexpected level of plasticity even after their terminal cell fate has been specified.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that this is also a feature of somatic stem cells suggests that these cells may retain an unexpected level of plasticity even after their terminal cell fate has been specified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that somatic stem cells have broadly accessible chromatin like pluripotent cells.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "cb16d82e-3568-4c83-a90d-7327e47b7c4f",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C50",
+      "claim": "CATaDa yields chromatin accessibility profiles for defined cell types in vivo without the need for cell isolation, fixation or the extraction of naked chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "We have demonstrated that CATaDa yields chromatin accessibility profiles for defined cell types in vivo without the need for cell isolation, fixation or the extraction of naked chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the method and demonstrates its application without these requirements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "28ff6772-2212-4937-b71c-587c1792f09a",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C51",
+      "claim": "The marking of accessible DNA occurs in vivo in CATaDa, so there are no artefacts associated with chemical fixation or washing of the chromatin prior to the assay.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to its ease of use, CATaDa also has the advantage that the marking of accessible DNA occurs in vivo. Due to this, there are no artefacts associated with chemical fixation or washing of the chromatin prior to the assay (Baranello et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the method design, supported by a citation about fixation artifacts.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "bc4e552b-f86e-4a19-bade-e0eec97109ce",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C52",
+      "claim": "Widely used tissue dissociation protocols have recently been shown to result in substantial gene expression artefacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, widely used tissue dissociation protocols have recently been shown to result in substantial gene expression artefacts, a risk that is also circumvented by labelling the DNA in vivo (van den Brink et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to van den Brink et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "bba86368-e3e2-4f6e-9cdc-f75547603fca",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C53",
+      "claim": "As Dam is expressed in vivo over several hours, the profiles produced will reflect dynamic changes to chromatin structure over the entire time period during which Dam is expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, as Dam is expressed in vivo over several hours, the profiles produced will reflect dynamic changes to chromatin structure over the entire time period during which Dam is expressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the experimental design where Dam is expressed over time.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "c8a9690b-3c6b-48d5-9d47-59fad9255dca",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C54",
+      "claim": "CATaDa is limited by its resolution, which is restricted by the frequency of GATC sites in the genome (median spacing of ~200 bp in Drosophila).",
+      "claim_type": "EXPLICIT",
+      "source": "CATaDa is limited by its resolution, which is restricted by the frequency of GATC sites in the genome (median spacing of ~200 bp in Drosophila).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation based on the mechanism of Dam methylation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "2bb4d3b1-7b4e-4f2f-95bf-aa4e1d416386",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C55",
+      "claim": "The resolution of CATaDa can be increased by using a modified Dam in conjunction with immunoprecipitation (Dam-IP).",
+      "claim_type": "EXPLICIT",
+      "source": "However, this can be increased by using a modified Dam in conjunction with immunoprecipitation (Dam-IP)(Xiao et al., 2010; Xiao and Moore, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Xiao et al., 2010 and Xiao and Moore, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "a5acf3ff-31b4-4b00-ac1a-c0443f060cde",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C56",
+      "claim": "Extensive sequence biases have been reported for DNAse and ATAC-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that extensive sequence biases have also been reported for DNAse and ATAC-seq (Madrigal, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Madrigal, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "b40c2e81-53d6-4925-9f85-45db9984fb13",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C57",
+      "claim": "For FAIRE-seq it is recommended to have a minimum of 1 \u00d7 106 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, for FAIRE-seq it is recommended to have a minimum of 1 \u00d7 106 cells (Tsompana and Buck, 2014; Simon et al., 2013), whilst DNase-seq typically requires 1 \u00d7 107 cells (Tsompana and Buck, 2014; Song and Crawford, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to published protocols.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "cb958ba9-8218-445d-889a-cf7de80e0371",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C58",
+      "claim": "DamID experiments can be performed with as few as 1000 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, DamID experiments can be performed with as few as 1000 cells (Tosti, 2017), therefore CATaDa is likely to also be effective with low cell numbers, making it competitive with ATAC-seq (500\u201350,000 cells) (Buenrostro et al., 2013; Marshall et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Tosti, 2017 and other studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "8ed44052-8565-4319-ba45-804a7fe24467",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C59",
+      "claim": "Single cell DamID has been demonstrated, indicating that the minimum number of cells required for CATaDa is one.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, single cell DamID has also recently been demonstrated, indicating that the minimum number of cells required for CATaDa is one (Kind et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Kind et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "73e25cfa-a364-4613-acf7-0d6cf47846b8",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C60",
+      "claim": "Dam methylase is a relatively small protein compared to Tn5 transposase (55 and 32 KDa respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "This could be accounted for by the fact that Dam methylase is a relatively small protein compared to Tn5 transposase (utilised in ATAC-seq \u2013 55 and 32 KDa respectively [Naumann and Reznikoff, 2002; Boye et al., 1992]), Therefore, Dam may be able to methylate sites which are inaccessible to Tn5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations providing the molecular weights of these proteins.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "cb6ac2b6-4c9d-4981-9963-d92fffaa63c2",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C61",
+      "claim": "Dam may be able to methylate some nucleosome bound DNA in which the GATC site is exposed to the nucleoplasm, which may be insufficient for transposition.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, Dam may be able to methylate some nucleosome bound DNA in which the GATC site is exposed to the nucleoplasm, which may be insufficient for transposition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for differences between CATaDa and ATAC-seq results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "03d35425-c11d-4bfd-91e1-66819e253eec",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C62",
+      "claim": "Targeted DamID is rapidly being embraced by the Drosophila community with, at present, over 135 laboratories having requested the reagents.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeted DamID is rapidly being embraced by the Drosophila community with, at present, over 135 laboratories having requested the reagents and a number of papers already published (Southall et al., 2013; Dinges et al., 2017; Marshall and Brand, 2017; Cheetham and Brand, 2018; Jin et al., 2015b; Sp\u00e9der and Brand, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement provides a specific number and is supported by citations to published papers using the technique.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "f5cccbe8-355a-477e-8bcf-433a06caca6b",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C63",
+      "claim": "Progress is being made in adapting Targeted DamID for use in vertebrate models.",
+      "claim_type": "EXPLICIT",
+      "source": "Progress is also being made in adapting it for use in vertebrate models (Tosti, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Tosti, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "14da2675-bba8-4018-b70c-1baf70492626",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C64",
+      "claim": "Whenever the binding of a protein of interest (POI) is investigated with Targeted DamID, Dam-only data (representing chromatin accessibility) for the cell type being assayed is also generated, as it is the control for which the Dam-POI is normalised.",
+      "claim_type": "EXPLICIT",
+      "source": "Whenever the binding of a protein of interest (POI) is investigated with this technique, Dam-only data (representing chromatin accessibility) for the cell type being assayed is also generated, as it is the control for which the Dam-POI is normalised.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the experimental design of DamID experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "a5521ddc-7346-4d87-905c-dfc816da2f9e",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C65",
+      "claim": "Regions that are bound by transcription factors that activate transcription may be replaced by transcriptional repressors in stem cell progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, regions that are bound by transcription factors that activate transcription may be replaced by transcriptional repressors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for why some regions remain accessible in intermediate cells.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "355f6afe-96c9-4579-97e2-e1a3864d69b8",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C66",
+      "claim": "Repressive factors are known to have detectable open chromatin 'footprints', similarly to activating factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Such repressive factors are known to have detectable open chromatin 'footprints', similarly to activating factors (Mall et al., 2017; Dinges et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Mall et al., 2017 and Dinges et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "d1ea8fbc-638d-4224-bf7a-a9df40b76f77",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "claim_id": "C67",
+      "claim": "Retention of open chromatin regions in intermediate cell types may reflect increased plasticity, indicating that cell fate has not yet been fully determined and that lineage reversion or dedifferentiation is possible given the introduction of the correct combination of factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Retention of open chromatin regions in intermediate cell types may also reflect increased plasticity, indicating that cell fate has not yet been fully determined and that lineage reversion or dedifferentiation is possible given the introduction of the correct combination of factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed chromatin accessibility patterns.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c393a206-fe09-4484-9827-ac051033aecf",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CATaDa produces chromatin accessibility profiles comparable to ATAC-seq and FAIRE-seq in Drosophila eye discs, with high reproducibility between replicates (r\u00b2 = 0.947) and significant overlap with peaks identified by established methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7, C33-C36, and C50 collectively demonstrate that CATaDa produces reliable chromatin accessibility data. The high correlation between replicates (C2), significant overlap with ATAC/FAIRE peaks (C5, C6), enrichment at expected genomic features (C4, C33), and identification of validated enhancers (C7) provide converging evidence. The authors appropriately acknowledge technical limitations related to GATC site distribution (C34, C36).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "301f0e6f-341e-4a52-a2db-83541df81cc7",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Chromatin accessibility changes dynamically during CNS differentiation, with hierarchical clustering revealing major groups where chromatin is accessible in either stem cells or mature neurons, and intermediate cell types showing transient accessibility patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C39-C41 are supported by hierarchical clustering analysis (Figure 4C) showing distinct accessibility patterns across developmental stages. The identification of expected transcription factor motifs (C12, C13) in cell-type-specific accessible regions provides biological validation. The observation of intermediate accessibility in GMCs/newly born neurons (C39) is supported by data showing gradual chromatin changes during differentiation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "b44e20e8-795a-44ff-872e-c26f15a4a1cf",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Chromatin accessibility patterns in midgut lineages show similar dynamics to CNS, with stem cells (ISCs) and differentiated cells (ECs) forming distinct clusters. Notably, NSCs and ISCs show higher correlation (R\u00b2 = 0.76) than their differentiated progeny, suggesting shared chromatin landscapes in somatic stem cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 are directly supported by hierarchical clustering (Figure 5D) and PCA analysis (Figure 5E) showing tissue-specific rather than differentiation-state clustering. The high correlation between stem cell types across lineages (C19) supports the inference that somatic stem cells share chromatin features (C20), though this interpretation is somewhat speculative and would benefit from additional mechanistic validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "0378e7d5-440a-4cd5-9b1c-d2119ff12f7b",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CATaDa successfully predicts cell-type-specific enhancers with 57% validation rate (17 of 30 tested lines), comparable to previous chromatin accessibility-based enhancer prediction methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 are supported by experimental validation data showing GFP expression patterns matching predictions. The 57% success rate is appropriately contextualized by comparison to published methods (C22, citing Kvon et al., 2014), indicating this is a reasonable performance for enhancer prediction. The validation includes examples from both CNS and midgut (Figure 6).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "40c8585f-60d7-4c2a-b724-6de967014556",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "NSCs and ISCs exhibit more broadly distributed chromatin accessibility than their differentiated progeny, with significantly more genomic regions showing low-level accessibility (1-3 rpm) in stem cells compared to neurons, and intermediate cell types retaining relatively open chromatin states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C27, C46-C47 are supported by read distribution analysis (Figure 7) showing statistical differences in GATC fragment accessibility across cell types. The inclusion of additional neuronal datasets strengthens the analysis. Statistical testing (Welch's ANOVA with Games-Howell post-hoc) appropriately accounts for heteroscedasticity. The observation holds across both CNS and midgut lineages (C27), supporting generalization to somatic stem cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "7f319c0d-ee64-4f09-84ae-d2712fc4fc39",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Intermediate cell types (GMCs/newly born neurons and enteroblasts) show chromatin accessibility patterns more similar to their stem cell precursors than to their differentiated progeny, suggesting delayed chromatin compaction during differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are supported by correlation analyses and clustering data (Figures 4B-C, 5B-F) showing intermediate cells cluster more closely with stem cells. This pattern is observed in both CNS and midgut lineages. However, the interpretation that regulatory regions are \"not fully repressed until terminal differentiation\" (C43) is somewhat inferential and could reflect alternative mechanisms discussed by the authors (e.g., repressor binding).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "d85690a9-284c-4d25-8c51-d3ede3aeb2ba",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The broadly accessible chromatin in somatic stem cells may indicate retained cellular plasticity even after terminal cell fate specification, potentially enabling dedifferentiation or lineage reversion under appropriate conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C49 and C67 are explicitly speculative interpretations of the chromatin accessibility data. While the authors cite supporting evidence for dedifferentiation potential (C44, C45), the chromatin accessibility patterns alone do not directly demonstrate plasticity or dedifferentiation capacity. This hypothesis requires functional validation through dedifferentiation experiments or lineage tracing studies to be considered supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "3dc673e0-16e4-4e01-9575-42d6d33df217",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "CATaDa offers methodological advantages over cell-sorting-based methods by marking accessible DNA in vivo, avoiding artifacts from fixation, tissue dissociation, and capturing dynamic chromatin changes over the expression period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 are logically supported by the experimental design and appropriately cited literature on artifacts from fixation (C51, Baranello et al., 2016) and tissue dissociation (C52, van den Brink et al., 2017). The inference that in vivo labeling avoids these artifacts is reasonable, though direct comparative experiments would strengthen this claim. The temporal integration aspect (C53) is a logical consequence of Dam expression over hours.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "a7906966-9b9d-4672-8551-f2697053f1fa",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CATaDa resolution is limited by GATC site frequency (~200 bp median spacing in Drosophila), though this can be improved using modified Dam with immunoprecipitation, and other methods like ATAC-seq also exhibit sequence biases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 accurately describe technical limitations and are appropriately contextualized. The GATC spacing limitation (C54) is inherent to the method. The potential improvement via Dam-IP (C55) is supported by citations (Xiao et al., 2010; Xiao and Moore, 2011). The comparison to biases in other methods (C56, citing Madrigal, 2015) provides appropriate context that all methods have limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "d4b5d0da-15a4-4ee3-809f-92cd40a5254a",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CATaDa is competitive with ATAC-seq in terms of cell number requirements, potentially working with as few as 1,000 cells based on DamID performance, and theoretically down to single cells based on published single-cell DamID methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C57-C59 compare cell requirements across methods using cited literature. However, the authors have not directly demonstrated CATaDa performance with low cell numbers in this study. The inference that CATaDa will perform similarly to DamID (C58) is reasonable but unvalidated. The claim about single-cell capability (C59) is particularly speculative as it extrapolates from a different technique without experimental validation in the CATaDa context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "4a376f4b-b6e8-49e7-960f-5a5d3fc58963",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Dam methylase may access sites inaccessible to Tn5 transposase due to its smaller size (32 kDa vs 55 kDa) or ability to methylate partially exposed nucleosomal DNA, potentially explaining unique CATaDa peaks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C61 are explicitly speculative explanations for differences between CATaDa and ATAC-seq. While the size difference is factual (C60, appropriately cited), the mechanistic explanations (C61) are hypothetical and lack direct experimental support. These remain plausible hypotheses that would require biochemical validation to confirm.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    },
+    {
+      "id": "00a7e0cd-d65f-4908-9056-0164942da224",
+      "content_id": "009ff337-ce37-45be-88d4-091fabf1aa2d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background knowledge and methodological context claims about Drosophila development, chromatin biology, DamID methodology, and related published work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C9-C10, C14-C16, C28-C32, C37-C38, C44-C45, C48, C62-C63, C64-C66) represent established knowledge or appropriately cited prior work. They provide necessary context for interpreting the results but are not novel findings of this study. All citations appear appropriate and the factual claims about Drosophila biology and existing methods are standard knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:30:32.357565Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5f59af9a-32e2-4923-bbef-73ae8b402dd2",
+      "result_id": "c393a206-fe09-4484-9827-ac051033aecf"
+    },
+    {
+      "claim_id": "cc5332e7-0b5f-450a-87af-4b8bc4409859",
+      "result_id": "c393a206-fe09-4484-9827-ac051033aecf"
+    },
+    {
+      "claim_id": "e12d30ee-4d22-4fb1-ae41-d2c82a8f91fc",
+      "result_id": "c393a206-fe09-4484-9827-ac051033aecf"
+    },
+    {
+      "claim_id": "8c3f4e0b-1d61-498c-b4e8-4719edadb687",
+      "result_id": "c393a206-fe09-4484-9827-ac051033aecf"
+    },
+    {
+      "claim_id": "1753289e-bdb3-4b21-9ee4-3dbc8cfd6b16",
+      "result_id": "c393a206-fe09-4484-9827-ac051033aecf"
+    },
+    {
+      "claim_id": "594274b1-db7f-43cc-81d1-03592b24ae98",
+      "result_id": "c393a206-fe09-4484-9827-ac051033aecf"
+    },
+    {
+      "claim_id": "b3eca5ac-a7c9-495d-ac52-cec29f14dff0",
+      "result_id": "c393a206-fe09-4484-9827-ac051033aecf"
+    },
+    {
+      "claim_id": "fd3edd5a-5876-41ec-9991-6f3e6d36add0",
+      "result_id": "c393a206-fe09-4484-9827-ac051033aecf"
+    },
+    {
+      "claim_id": "9edb5fb4-a21d-40de-82df-5501cd047411",
+      "result_id": "c393a206-fe09-4484-9827-ac051033aecf"
+    },
+    {
+      "claim_id": "e7e13667-025c-4e01-bb0c-09e44531424d",
+      "result_id": "c393a206-fe09-4484-9827-ac051033aecf"
+    },
+    {
+      "claim_id": "7219c29f-8289-4460-a520-a97f727ae5ea",
+      "result_id": "c393a206-fe09-4484-9827-ac051033aecf"
+    },
+    {
+      "claim_id": "cb16d82e-3568-4c83-a90d-7327e47b7c4f",
+      "result_id": "c393a206-fe09-4484-9827-ac051033aecf"
+    },
+    {
+      "claim_id": "051962a7-a5ac-44fe-86ba-00a215c0b08b",
+      "result_id": "301f0e6f-341e-4a52-a2db-83541df81cc7"
+    },
+    {
+      "claim_id": "fa854b96-043a-4088-b75c-0f531496c16b",
+      "result_id": "301f0e6f-341e-4a52-a2db-83541df81cc7"
+    },
+    {
+      "claim_id": "f2440d4a-5896-4461-a03f-802e2c89107b",
+      "result_id": "301f0e6f-341e-4a52-a2db-83541df81cc7"
+    },
+    {
+      "claim_id": "ab92f836-1090-41f4-bf42-7c295f970047",
+      "result_id": "301f0e6f-341e-4a52-a2db-83541df81cc7"
+    },
+    {
+      "claim_id": "8dd5e7ae-0efb-4b99-9b6d-b95ab26262ba",
+      "result_id": "301f0e6f-341e-4a52-a2db-83541df81cc7"
+    },
+    {
+      "claim_id": "35fae448-6858-4f01-b64f-83ad0a91ebe7",
+      "result_id": "301f0e6f-341e-4a52-a2db-83541df81cc7"
+    },
+    {
+      "claim_id": "fc2fc0db-01b7-4ac5-b190-fe3d067706b3",
+      "result_id": "b44e20e8-795a-44ff-872e-c26f15a4a1cf"
+    },
+    {
+      "claim_id": "6c1b53d8-3b02-48c9-974f-efacf8b0f10f",
+      "result_id": "b44e20e8-795a-44ff-872e-c26f15a4a1cf"
+    },
+    {
+      "claim_id": "22d92ca9-25e7-4f7b-bca3-2a763700028c",
+      "result_id": "b44e20e8-795a-44ff-872e-c26f15a4a1cf"
+    },
+    {
+      "claim_id": "53fd3082-757f-4019-8fac-8022aa142970",
+      "result_id": "b44e20e8-795a-44ff-872e-c26f15a4a1cf"
+    },
+    {
+      "claim_id": "3c69e93c-4f9f-4443-874f-1c0bcce1fe03",
+      "result_id": "0378e7d5-440a-4cd5-9b1c-d2119ff12f7b"
+    },
+    {
+      "claim_id": "cc61ca65-a085-4ee5-bc5c-e67b4e5fba40",
+      "result_id": "0378e7d5-440a-4cd5-9b1c-d2119ff12f7b"
+    },
+    {
+      "claim_id": "55cf89cb-26df-4c4c-9140-5753241dcf45",
+      "result_id": "40c8585f-60d7-4c2a-b724-6de967014556"
+    },
+    {
+      "claim_id": "f07b79ca-2326-4e17-9780-f99cece6d712",
+      "result_id": "40c8585f-60d7-4c2a-b724-6de967014556"
+    },
+    {
+      "claim_id": "7a224331-64c4-4f06-b72e-ee9b9f9a36e2",
+      "result_id": "40c8585f-60d7-4c2a-b724-6de967014556"
+    },
+    {
+      "claim_id": "753d1ce9-6986-4dbb-ad0f-881b636606af",
+      "result_id": "40c8585f-60d7-4c2a-b724-6de967014556"
+    },
+    {
+      "claim_id": "55183b30-5e9d-4f2e-991b-52dce49a1e21",
+      "result_id": "40c8585f-60d7-4c2a-b724-6de967014556"
+    },
+    {
+      "claim_id": "a9213597-d3f2-49e8-8227-d8c46d0ccf73",
+      "result_id": "40c8585f-60d7-4c2a-b724-6de967014556"
+    },
+    {
+      "claim_id": "f75be1b2-c6e5-4060-8746-136bc3fb3d68",
+      "result_id": "40c8585f-60d7-4c2a-b724-6de967014556"
+    },
+    {
+      "claim_id": "890cda62-9720-4050-8bb0-6f2027637e4b",
+      "result_id": "7f319c0d-ee64-4f09-84ae-d2712fc4fc39"
+    },
+    {
+      "claim_id": "e6d2266d-1278-4111-a0e4-c5a5f9a1a949",
+      "result_id": "7f319c0d-ee64-4f09-84ae-d2712fc4fc39"
+    },
+    {
+      "claim_id": "7c5513a5-6d75-4038-b15b-0945b03a4ffe",
+      "result_id": "d85690a9-284c-4d25-8c51-d3ede3aeb2ba"
+    },
+    {
+      "claim_id": "d1ea8fbc-638d-4224-bf7a-a9df40b76f77",
+      "result_id": "d85690a9-284c-4d25-8c51-d3ede3aeb2ba"
+    },
+    {
+      "claim_id": "28ff6772-2212-4937-b71c-587c1792f09a",
+      "result_id": "3dc673e0-16e4-4e01-9575-42d6d33df217"
+    },
+    {
+      "claim_id": "bc4e552b-f86e-4a19-bade-e0eec97109ce",
+      "result_id": "3dc673e0-16e4-4e01-9575-42d6d33df217"
+    },
+    {
+      "claim_id": "bba86368-e3e2-4f6e-9cdc-f75547603fca",
+      "result_id": "3dc673e0-16e4-4e01-9575-42d6d33df217"
+    },
+    {
+      "claim_id": "c8a9690b-3c6b-48d5-9d47-59fad9255dca",
+      "result_id": "a7906966-9b9d-4672-8551-f2697053f1fa"
+    },
+    {
+      "claim_id": "2bb4d3b1-7b4e-4f2f-95bf-aa4e1d416386",
+      "result_id": "a7906966-9b9d-4672-8551-f2697053f1fa"
+    },
+    {
+      "claim_id": "a5acf3ff-31b4-4b00-ac1a-c0443f060cde",
+      "result_id": "a7906966-9b9d-4672-8551-f2697053f1fa"
+    },
+    {
+      "claim_id": "b40c2e81-53d6-4925-9f85-45db9984fb13",
+      "result_id": "d4b5d0da-15a4-4ee3-809f-92cd40a5254a"
+    },
+    {
+      "claim_id": "cb958ba9-8218-445d-889a-cf7de80e0371",
+      "result_id": "d4b5d0da-15a4-4ee3-809f-92cd40a5254a"
+    },
+    {
+      "claim_id": "8ed44052-8565-4319-ba45-804a7fe24467",
+      "result_id": "d4b5d0da-15a4-4ee3-809f-92cd40a5254a"
+    },
+    {
+      "claim_id": "73e25cfa-a364-4613-acf7-0d6cf47846b8",
+      "result_id": "4a376f4b-b6e8-49e7-960f-5a5d3fc58963"
+    },
+    {
+      "claim_id": "cb6ac2b6-4c9d-4981-9963-d92fffaa63c2",
+      "result_id": "4a376f4b-b6e8-49e7-960f-5a5d3fc58963"
+    },
+    {
+      "claim_id": "98955a5e-61e3-4024-973e-ae3566ea8791",
+      "result_id": "00a7e0cd-d65f-4908-9056-0164942da224"
+    },
+    {
+      "claim_id": "fa699d65-670e-4573-be98-0301b98bf444",
+      "result_id": "00a7e0cd-d65f-4908-9056-0164942da224"
+    },
+    {
+      "claim_id": "9b9dc129-1f10-4d6d-8227-7642b3892535",
+      "result_id": "00a7e0cd-d65f-4908-9056-0164942da224"
+    },
+    {
+      "claim_id": "6e8f8bf1-e89f-4491-aa4d-81b476b007a6",
+      "result_id": "00a7e0cd-d65f-4908-9056-0164942da224"
+    },
+    {
+      "claim_id": "91d4ceb5-4d52-4867-a5d8-dd85d58607d4",
+      "result_id": "00a7e0cd-d65f-4908-9056-0164942da224"
+    },
+    {
+      "claim_id": "d833f33e-a668-4283-bfda-f0566495025d",
+      "result_id": "00a7e0cd-d65f-4908-9056-0164942da224"
+    },
+    {
+      "claim_id": "f237e7ba-c933-4e73-bb46-e6bcee60abdc",
+      "result_id": "00a7e0cd-d65f-4908-9056-0164942da224"
+    },
+    {
+      "claim_id": "8764e9b5-c222-42b7-a357-fd938dff33da",
+      "result_id": "00a7e0cd-d65f-4908-9056-0164942da224"
+    },
+    {
+      "claim_id": "eac73579-6c12-4db5-96ec-0a404d0ba54b",
+      "result_id": "00a7e0cd-d65f-4908-9056-0164942da224"
+    },
+    {
+      "claim_id": "fbe80d3b-18ae-47eb-a4c3-8ae3ecdb17a3",
+      "result_id": "00a7e0cd-d65f-4908-9056-0164942da224"
+    },
+    {
+      "claim_id": "c388339e-d1c1-4611-80e8-92e918d9e2d4",
+      "result_id": "00a7e0cd-d65f-4908-9056-0164942da224"
+    },
+    {
+      "claim_id": "6a23b6e0-f4fd-4ec3-9fc1-042f464473fa",
+      "result_id": "00a7e0cd-d65f-4908-9056-0164942da224"
+    },
+    {
+      "claim_id": "8135137a-845a-4bac-97e1-2207aa1c4729",
+      "result_id": "00a7e0cd-d65f-4908-9056-0164942da224"
+    },
+    {
+      "claim_id": "2d0b5825-2447-461c-85d8-71463de79e3d",
+      "result_id": "00a7e0cd-d65f-4908-9056-0164942da224"
+    },
+    {
+      "claim_id": "1f666c74-f04e-40ba-b1ed-d94cca7d7b70",
+      "result_id": "00a7e0cd-d65f-4908-9056-0164942da224"
+    },
+    {
+      "claim_id": "03d35425-c11d-4bfd-91e1-66819e253eec",
+      "result_id": "00a7e0cd-d65f-4908-9056-0164942da224"
+    },
+    {
+      "claim_id": "f5cccbe8-355a-477e-8bcf-433a06caca6b",
+      "result_id": "00a7e0cd-d65f-4908-9056-0164942da224"
+    },
+    {
+      "claim_id": "14da2675-bba8-4018-b70c-1baf70492626",
+      "result_id": "00a7e0cd-d65f-4908-9056-0164942da224"
+    },
+    {
+      "claim_id": "a5521ddc-7346-4d87-905c-dfc816da2f9e",
+      "result_id": "00a7e0cd-d65f-4908-9056-0164942da224"
+    },
+    {
+      "claim_id": "355f6afe-96c9-4579-97e2-e1a3864d69b8",
+      "result_id": "00a7e0cd-d65f-4908-9056-0164942da224"
+    }
+  ],
+  "comparisons": []
+}

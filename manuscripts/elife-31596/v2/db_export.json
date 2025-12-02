@@ -1,0 +1,1778 @@
+{
+  "submission": {
+    "id": "b650a443-81ee-4b1d-b20f-169e671932b8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:04:27.841966Z",
+    "updated_at": "2025-12-02T00:04:27.841966Z"
+  },
+  "content": [
+    {
+      "id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "submission_id": "b650a443-81ee-4b1d-b20f-169e671932b8",
+      "content_type": "manuscript",
+      "content_text": "# Functional roles of Mg2+ binding sites in ion-dependent gating of a Mg2+ channel, MgtE, revealed by solution NMR\n\n## Authors\n\n- Tatsuro Maruyama<sup>1</sup>\n- Shunsuke Imai<sup>1</sup>\n- Tsukasa Kusakizako<sup>2</sup>\n- Motoyuki Hattori<sup>3</sup> ([ORCID: 0000-0002-5327-5337](https://orcid.org/0000-0002-5327-5337))\n- Ryuichiro Ishitani<sup>2</sup> ([ORCID: 0000-0002-4136-5685](https://orcid.org/0000-0002-4136-5685))\n- Osamu Nureki<sup>2</sup> ([ORCID: 0000-0003-1813-7008](https://orcid.org/0000-0003-1813-7008))\n- Koichi Ito<sup>6</sup>\n- Andr\u00e8s D Maturana<sup>7</sup>\n- Ichio Shimada<sup>1</sup> \u2020\n- Masanori Osawa<sup>1</sup> ([ORCID: 0000-0002-1285-4316](https://orcid.org/0000-0002-1285-4316)) \u2020\n\n### Affiliations\n\n1. Department of Physical Chemistry, Graduate School of Pharmaceutical Sciences The University of Tokyo Tokyo Japan\n2. Department of Biological Sciences, Graduate School of Science The University of Tokyo Tokyo Japan\n3. State Key Laboratory of Genetic Engineering, School of Life Sciences Fudan University Shanghai China\n4. Collaborative Innovation Center of Genetics and Development, School of Life Sciences Fudan University Shanghai China\n5. Department of Physiology and Biophysics, School of Life Sciences Fudan University Shanghai China\n6. Department of Computational Biology and Medical Sciences, Graduate School of Frontier Sciences The University of Tokyo Chiba Japan\n7. Department of Bioengineering Sciences, Graduate School of Bioagricultural Sciences Nagoya University Nagoya Japan\n8. Division of Physics for Life Functions, Faculty of Pharmacy Keio University Tokyo Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nMagnesium ions (Mg2+) are divalent cations essential for various cellular functions. Mg2+ homeostasis is maintained through Mg2+ channels such as MgtE, a prokaryotic Mg2+ channel whose gating is regulated by intracellular Mg2+ levels. Our previous crystal structure of MgtE in the Mg2+-bound, closed state revealed the existence of seven crystallographically-independent Mg2+-binding sites, Mg1\u2013Mg7. The role of Mg2+-binding to each site in channel closure remains unknown. Here, we investigated Mg2+-dependent changes in the structure and dynamics of MgtE using nuclear magnetic resonance spectroscopy. Mg2+-titration experiments, using wild-type and mutant forms of MgtE, revealed that the Mg2+ binding sites Mg1, Mg2, Mg3, and Mg6, exhibited cooperativity and a higher affinity for Mg2+, enabling the remaining Mg2+ binding sites, Mg4, Mg5, and Mg7, to play important roles in channel closure. This study revealed the role of each Mg2+-binding site in MgtE gating, underlying the mechanism of cellular Mg2+ homeostasis.\n\n## Introduction\n\nMagnesium ions (Mg2+) are the most abundant divalent metal ions within cells. They bind to a number of proteins and nucleic acids, regulating a wide range of biological processes such as ATP utilization, enzyme activation, and maintenance of genomic stability (Hartwig, 2001; Cowan, 2002). In humans, abnormal Mg2+ homeostasis is reportedly associated with several diseases including cardiovascular disease, diabetes, and high blood pressure (Alexander et al., 2008).\n\nCellular Mg2+ homeostasis is maintained by a class of transmembrane proteins termed Mg2+ transporters. The MgtE family of Mg2+ transporters in bacteria, which operates as Mg2+ channels (Hattori et al., 2009), is homologous to the eukaryotic SLC41 family (Goytain and Quamme, 2005a,\u00a02005b; Kolisek et al., 2008; Moomaw and Maguire, 2008; Sahni and Scharenberg, 2013). With respect to the role of the MgtE family in Mg2+ homeostasis, a Mg2+-sensor riboswitch upregulates the gene expression of MgtE in response to a decrease in intracellular Mg2+ levels (Dann et al., 2007); MgtE then restores and maintains the intracellular Mg2+ homeostasis. Our prior electrophysiological study of MgtE from Thermus thermophilus revealed that MgtE facilitates Mg2+ uptake across the cell membrane at intracellular Mg2+ concentrations lower than 5\u201310 mM, whereas at higher Mg2+ concentrations, MgtE does not allow further Mg2+ uptake (Hattori et al., 2009).\n\nWe have reported the crystal structure of full-length MgtE in the Mg2+-bound state, which revealed that it forms a homodimer comprised of an N-terminal cytoplasmic (CP) region (residues 1\u2013263) and a C-terminal transmembrane (TM) region (residues 264\u2013450) (Figure 1A) (Hattori et al., 2007b). The CP region consists of three parts, an N domain (residues 1\u2013131), a cystathionine-\u03b2-synthase (CBS) domain (residues 132\u2013245), and a plug helix (residues 246\u2013263); the plug helix connects the latter with the TM region. The two subunits in the dimer are related by a crystallographic 2-fold symmetry, with the ion-conducting pore being formed along the axis of symmetry at the centre of the dimer in the TM region. The ion-conducting pore is closed at the CP side of the TM region, which is stabilized by the interactions with the C-termini of the plug helices (Figure 1\u2014figure supplement 1). Thus, this portion appears to act as a gate for Mg2+ transport, with the structure obtained reflecting the closed MgtE state (Hattori et al., 2007b).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/31596/elife-31596-fig1-v2.jpg)\n\n**Figure 1.:** (A) The MgtE dimer (PDB code:2ZY9) viewed in the membrane plane, with the N domain (blue), the CBS domain (green), the plug helix (yellow), and the TM region (red) highlighted in one subunit. Mg2+ ions are shown as purple spheres. The gate region is circled (see Figure 1\u2014figure supplement 1). (B) Two subunits of the dimer are shown in green and grey, respectively. Ile C\u03b41 atoms in the grey\u00a0subunit are shown as red spheres. The Mg2+-binding sites in the dimer, Mg1-Mg7, are also labelled.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31596/elife-31596-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** MgtE structure in the Mg2+-bound, closed state (PDB code: 2ZY9) is shown in the same colour scheme as in Figure 1A. L263 residues in the C-termini of the plug helices and N424 residues in the TM helices are shown as red and yellow spheres, respectively. The direct interaction between these residues closes the ion- conducting pore at its cytoplasmic side; thus, this region is assumed to function as a gate in MgtE.\n\nIn the crystal structure, seven crystallographically independent Mg2+-binding sites (Mg1\u2013Mg7) can be identified, among which Mg1 is located on the 2-fold axis in the ion-conducting pore at the extracellular side of the TM region, whereas the other six sites are located in the CP region (Figure 1B). The Mg2+ ions bound to these sites coordinate with acidic residues, through at least one carboxylic group, and further bridge two different MgtE domains, either in the same or other subunits. Recently, the structural basis for ion selectivity was revealed through a high resolution crystal structure of the TM region, in which the Mg1 site accommodates a hydrated Mg2+ (Takeda et al., 2014). Electrophysiological investigation of MgtE Mg2+-binding site mutants indicated that every Mg2+-binding site in the CP region (Mg2\u2013Mg7) contributes to the formation of the MgtE closed state (Hattori et al., 2009).\n\nAlthough the structure of Mg2+-free full-length MgtE has not been reported, we have presented the crystal structure of the N-terminal 275 residues of MgtE, which includes the whole CP region (residues 1\u2013263) in both the Mg2+-free and -bound states (Hattori et al., 2007b). A structural comparison of the two states suggests that Mg2+ binding alters the relative orientation of the N and CBS domains in each subunit, as well as changing the inter-helical angle between the plug helices of the two subunits. Recently, a nuclear magnetic resonance (NMR) analysis of the MgtE CP region in the Mg2+-free state, conducted by our laboratory, revealed that the N domain tumbles widely in space, and that it transiently approaches the CBS domain (Imai et al., 2012). Based on these results, we have proposed a structural mechanism for MgtE gating, in which Mg2+ binding to the CP region of MgtE allosterically alters the conformation of the plug helices, resulting in gate closure. However, the concentration of Mg2+ required to saturate each Mg2+-binding site remains unknown, as does the site(s) to which Mg2+-binding causes the changes in the structure and dynamics of each portion of MgtE, resulting in the closed MgtE state.\n\nIn the present study, we used solution NMR spectroscopy to investigate Mg2+-dependent changes in the structure and dynamics of full-length MgtE. Mg2+-titration experiments using the wild-type and mutant forms of MgtE revealed the functional roles of each Mg2+-binding site: Whereas the Mg1, Mg2, Mg3, and Mg6 sites exhibit a higher affinity for Mg2+ and stabilize the structure of the TM region, the Mg4, Mg5, and Mg7 sites play critical roles in changing the conformation and dynamics of the CP region including the plug helices, leading to channel closure. This study thus revealed the Mg2+-dependent gating mechanism of MgtE that underlies cellular Mg2+ homeostasis.\n\n## Results\n\n### Methyl-TROSY signals of Ile \u03b41 methyl groups as probes of the conformation and dynamics of MgtE\n\nFull-length MgtE was overexpressed in Escherichia coli, solubilized in n-dodecyl-\u03b2-maltoside (DDM) micelles, and purified to homogeneity (Figure 2\u2014figure supplement 1). Size exclusion chromatography analysis indicated an apparent molecular weight of approximately 160 kDa, suggesting that MgtE formed a dimer in the micelles (Figure 2\u2014figure supplement 2).\n\nIn order to observe the solution NMR signals with sufficiently high resolution and sensitivity in such a large membrane protein, we elected to observe the methyl-TROSY spectra of Ile \u03b41 methyl groups in {u-2H, Ile\u03b41-[13CH3]}MgtE. This demonstrated that the fifteen Ile residues in full-length MgtE are widely distributed across the whole MgtE structure (Figure 1B), with I28 and I84 being located in the N-terminal domain; I168, I171, I190, I201, and I242 in the CBS domain; I260 in the plug helix; and I291, I293, I302, I338, I339, I397, and I438 in the TM region. Hereafter, each Ile residue is represented by its residue number and its location, such as I28N, I168CBS, I260Plug, and I291TM.\n\nWe next established the resonance assignments for twelve of the fifteen Ile \u03b41 methyl groups in the Mg2+-free and bound states, respectively, by comparing the methyl-TROSY spectra of fifteen individual Ile to Val mutants with that of the wild-type protein, in the absence and presence of 16 mM Mg2+ (Figure 2 and Table 1). The remaining three signals for I242CBS, I291TM, and I302TM were assigned only in the presence of 16 mM Mg2+, due to line broadening and/or degeneracy of the signals in the absence of Mg2+. It should be also noted that Mg2+-induced NMR spectral changes reflect the changes in the conformation and dynamics at each Ile site, but not the direct binding of Mg2+ to the Ile residues. This is because the distances between the Ile C\u03b41 atoms and Mg2+ are longer than 8.0 \u00c5 in the crystal structure of the Mg2+-bound MgtE (PDB code: 2ZY9), which is sufficiently longer than the sum of the radii of a methyl group (1.6 \u00c5) and a hydrated Mg2+ (4.8 \u00c5).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/31596/elife-31596-fig2-v2.jpg)\n\n**Figure 2.:** Methyl-TROSY spectra of {u-2H, Ile\u03b41-[13CH3]} MgtE reconstituted into DDM micelles in the presence of (A) 0, (B) 1.0, (C) 2.0, (D) 3.0, (E) 4.0, and (F) 5.0 mM Mg2+. The signal with an asterisk is unassigned.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31596/elife-31596-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Sodium dodecyl sulphate-polyacrylamide gel electrophoresis analysis of the purified full-length MgtE is shown.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31596/elife-31596-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) The elution profile of purified MgtE by size exclusion chromatography (SEC) on a Superdex 200 GL 10/300 column (black solid line), along with a standard sample of bovine serum albumin (BSA) (green dashed line). The running buffer was 20 mM HEPES-NaOH (pH 6.1), 100 mM NaCl, and 1 mM DDM. The elution volumes were 11.6 mL for purified MgtE, 14.1 mL, 12.3 mL, and 11.1 mL for the BSA monomer, dimer, and tetramer, respectively. (B) Estimated distribution coefficients (Kav) from the elution volume in (A) were plotted against logarithmic molecular weight (M.W.). The solid line is the best fit function as indicated in the graph of plots of the BSA monomer, dimer, and tetramer. The estimated apparent M.W. of purified MgtE (Kav\u00a0=\u00a00.23) is approximately 160 kDa, suggesting that the purified MgtE, whose theoretical M.W. is 50 kDa, exists as a dimer in DDM micelles, as the apparent M.W. of DDM micelles is 60 kDa.\n\n**Table 1.**\n Assignments of Ile \u03b41 methyl groups of full-length MgtE.Chemical shifts for \u03b41 methyl groups in Ile residues in the Mg2+-free and bound states are shown. Labels a and b are used to discriminate two signals from a single Ile residue. 1H chemical shifts were referenced to external sodium 2,2-dimethyl-2-silapentane-5-sulfonate (0 ppm), and 13C chemical shifts were referenced indirectly. Spectral width (eight ppm) in the 13C dimension was subtracted from the 13C chemical shift of I338 owing to spectral aliasing.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Methyl group</th>\n      <th colspan=\"2\">Mg2+-free state (0 mM Mg2+)</th>\n      <th colspan=\"2\">Mg2+-bound state (5.0 mM Mg2+)</th>\n    </tr>\n    <tr>\n      <th>1H (ppm)</th>\n      <th>13C (ppm)</th>\n      <th>1H (ppm)</th>\n      <th>13C (ppm)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>I28</td>\n      <td>0.729</td>\n      <td>14.16</td>\n      <td>0.714</td>\n      <td>14.13</td>\n    </tr>\n    <tr>\n      <td>I84</td>\n      <td>0.559</td>\n      <td>13.63</td>\n      <td>0.526</td>\n      <td>13.62</td>\n    </tr>\n    <tr>\n      <td>I168a</td>\n      <td>0.539</td>\n      <td>14.12</td>\n      <td>0.526</td>\n      <td>14.14</td>\n    </tr>\n    <tr>\n      <td>I168b</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.606</td>\n      <td>14.62</td>\n    </tr>\n    <tr>\n      <td>I171a</td>\n      <td>0.651</td>\n      <td>13.99</td>\n      <td>0.644</td>\n      <td>13.98</td>\n    </tr>\n    <tr>\n      <td>I171b</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.606</td>\n      <td>14.62</td>\n    </tr>\n    <tr>\n      <td>I190a</td>\n      <td>0.627</td>\n      <td>13.77</td>\n      <td>0.621</td>\n      <td>13.77</td>\n    </tr>\n    <tr>\n      <td>I190b</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.641</td>\n      <td>12.83</td>\n    </tr>\n    <tr>\n      <td>I201</td>\n      <td>0.606</td>\n      <td>14.62</td>\n      <td>0.599</td>\n      <td>14.33</td>\n    </tr>\n    <tr>\n      <td>I242</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.85</td>\n      <td>14.13</td>\n    </tr>\n    <tr>\n      <td>I260</td>\n      <td>0.771</td>\n      <td>13.13</td>\n      <td>0.762</td>\n      <td>13.15</td>\n    </tr>\n    <tr>\n      <td>I291</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u22120.171</td>\n      <td>11.63</td>\n    </tr>\n    <tr>\n      <td>I293</td>\n      <td>0.773</td>\n      <td>12.66</td>\n      <td>0.858</td>\n      <td>15.45</td>\n    </tr>\n    <tr>\n      <td>I302</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>0.872</td>\n      <td>14.68</td>\n    </tr>\n    <tr>\n      <td>I338</td>\n      <td>0.145</td>\n      <td>8.67</td>\n      <td>0.264</td>\n      <td>10.16</td>\n    </tr>\n    <tr>\n      <td>I339</td>\n      <td>0.799</td>\n      <td>12.66</td>\n      <td>0.798</td>\n      <td>12.65</td>\n    </tr>\n    <tr>\n      <td>I397</td>\n      <td>0.771</td>\n      <td>14.59</td>\n      <td>0.728</td>\n      <td>14.92</td>\n    </tr>\n    <tr>\n      <td>I438</td>\n      <td>0.674</td>\n      <td>13.54</td>\n      <td>0.693</td>\n      <td>13.58</td>\n    </tr>\n  </tbody>\n</table>\n\n### Mg2+-induced changes in the conformation and dynamics of MgtE as probed by Ile NMR signals\n\nFigure 2 shows a series of methyl-TROSY spectra at Mg2+ concentrations ranging from 0 to 5.0 mM. At 0 mM Mg2+ (Figure 2A), three markedly strong signals (I28N, I84N, and I260Plug) were observed, together with nine weak and/or broad signals (I168CBS, I171CBS, I190CBS, I201CBS, I293TM, I338TM, I339TM, I397TM, and I438TM). However, signals for I242CBS, I291TM, and I302TM were not observed.\n\nAs the Mg2+ concentration increased (Figure 2B\u20132F), different types of changes were observed, which are summarized in Figure 3. The three strong signals (I28N, I84N, and I260Plug; boxed in red in Figure 3) exhibited decreased intensities, whereas three new signals appeared for the three residues previously unobserved at 0 mM Mg2+ (I242CBS, I291TM, and I302TM; boxed in yellow in Figure 3). In addition, among the nine weak and/or broad signals, six signals exhibited chemical shift changes: I397TM and I438TM in a fast-to-intermediate exchange regime, and I201CBS, I293TM, and I338TM in a slow exchange regime (Figure 2, and cyan in Figure 3). The other three (I168CBS, I171CBS, I190CBS) of the nine weak and/or broad signals became split in the Mg2+-bound state (Figure 2, and magenta in Figure 3). Only the signal for I339TM exhibited no significant change.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/31596/elife-31596-fig3-v2.jpg)\n\n**Figure 3.:** (A) Superposition of the methyl-TROSY spectra in the Mg2+-free state (0 mM; black) and the bound state (5.0 mM; green). Upon Mg2+ binding, (i) the residues whose signals broadened are boxed in red, (ii) the residues whose signals appeared or were sharpened are boxed in yellow, (iii) the residues exhibiting chemical shift changes are boxed in cyan, with an arrow indicating the direction of the chemical shift changes, and (iv) the residues for which two signals were observed (split signals) are boxed in magenta. The right panels show the 1H cross-sections for the I28N, I84N, and I260Plug signals at Mg2+ concentrations of 0, 1.0, 2.0, 3.0, 4.0, and 5.0 mM. (B) Mapping of the residues whose signals exhibited the Mg2+-dependent changes in (A) on the Mg2+-bound crystal structure (PDB code:2ZY9). Ile C\u03b41 atoms are coloured as in (A), whereas the Ile C\u03b41 atom of I339, which exhibited no significant change, is coloured grey.\n\nThe NMR spectral changes apparently saturated at 4.0 mM Mg2+, above which the NMR spectra were essentially identical (see below for details). It has been reported that at Mg2+ concentration of 4 mM, or above, the MgtE channel closes (Hattori et al., 2009), suggesting that the NMR spectra at Mg2+ concentrations lower, or higher, than 4 mM reflect the open or closed states of MgtE, respectively.\n\n### Mg2+-concentration dependence of the NMR spectral changes\n\nIn order to investigate Mg2+-concentration dependence, the changes in the signal intensities and the chemical shifts for the well-resolved signals were plotted against Mg2+ concentration (Figure 4A and B). The plots showed sigmoid curves that were well-fitted with a Hill\u2019s equation, resulting in the Mg2+ concentration reaching the half maximal values of the changes ([Mg2+]1/2) of 0.8\u20132.5 mM, with Hill coefficient (n) values of 1.8\u20137.6. These results indicate that Mg2+ binding to multiple sites cooperatively affects the conformation and dynamics of the Ile residues at different locations in the MgtE molecule.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/31596/elife-31596-fig4-v2.jpg)\n\n**Figure 4.:** (A) Normalized signal intensities (R) and (B) chemical shift changes (\u0394\u03b4) of Ile\u03b41 methyl signals plotted against Mg2+ concentration ([Mg2+]). The solid lines represent the best fit curves of a Hill equation to the data. The estimated Mg2+ concentrations reaching the half maximal values of the changes ([Mg2+]1/2) and the Hill coefficients (n) are shown in each graph. (C) Superposition of the changes in the population of the Mg2+-bound conformation of the Ile \u03b41 methyl signals. The normalized changes in the chemical shift values and signal intensities in A and B were regarded as changes in the population of the Mg2+-bound conformation. The solid lines, coloured blue for the N domain, green for the CBS domain, yellow for the plug helix, and red for the TM region, represent the best fit curves of Hill equations to the data. The graphs of Ile residues in the TM and other regions are separated for clarity. (D) The positions of Ile residues (red) subjected to the analyses. (E) Apparent saturated Mg2+ concentrations, [Mg2+]sat at which the population of the Mg2+-bound conformation is above 90%. Apparent [Mg2+]sat is 3 mM for the Ile residues in the plug helix and the TM region, and 4 mM for the Ile residues in the N and CBS domains in the CP region.\n\nFigure 4C shows an overlay of the plots that normalize the change from the Mg2+-free state to the Mg2+-bound state; the Ile residues in the TM and other regions are shown in the upper and lower panels, respectively. Clearly, three Ile residues in the TM region (I302TM, I397TM, I438TM) and I260Plug experienced Mg2+-induced changes at Mg2+ concentrations of 0\u20132 mM, whereas the other Ile residues were affected at 2\u20133 mM Mg2+. The functionally more important Mg2+ concentrations are those at which the NMR spectral changes saturate (hereafter, referred to as [Mg2+]sat), above which each Ile residue adopts the closed MgtE conformation. The normalized plots in Figure 4C indicate that the apparent [Mg2+]sat values are 3 mM for the Ile residues in the plug helix and the TM region, and 4 mM for those in the N and CBS domains.\n\n### Role of each Mg2+ binding site in the Mg2+-induced conformational change in MgtE\n\nOur previous electrophysiological investigation indicated that Mg2+-binding sites, Mg2, Mg3, Mg5 and Mg7 in the CP region contribute to the formation of the closed state, in addition to Mg1 in the TM region (Hattori et al., 2009). We then examined the role of the rest of Mg2+-binding sites, Mg4 and Mg6, in the MgtE channel activity. Although wild-type closed at 10 mM Mg2+ on the periplasmic side, D91A/D247A mutant for Mg4 and D95A mutant for Mg6 did not close even at 20 mM Mg2+, which is similar to D226N/D250A mutant for Mg5 analysed previously (Figure 5\u2014figure supplement 1, panels A and B). Figure 5\u2014figure supplement 1C summarizes the Mg2+-concentration dependence of the open probability of the wild-type and the Mg2+-binding site mutants of MgtE, which was shown in the current and previous study (Hattori et al., 2009). These results indicate that mutation of any one of the Mg2+-binding sites, Mg2-Mg7, prevents the formation of the conformation in the closed state. In other words, every Mg2+-binding site, Mg2-Mg7, is required for the Mg2+-dependent closure of MgtE channel.\n\nIn order to uncover the role of Mg2+ binding to each site in the structural changes related to channel closure, we prepared seven mutants in which, based on the MgtE crystal structure, each of the sites (Mg1 to Mg7) was disabled by mutation of its Mg2+-coordinated acidic residue(s), and investigated the effect of the mutations on the Mg2+-dependent NMR spectral changes (Figure 5). The locations of Mg1\u2013Mg7 are indicated in the structure in Figure 1B, and are schematically depicted in Figure 6A. Since the spectra of these mutants in the Mg2+-free state are essentially identical to that of the wild-type, these mutations introduced no structural change in MgtE in the Mg2+-free state (Figure 5\u2014figure supplement 2).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/31596/elife-31596-fig5-v2.jpg)\n\n**Figure 5.:** (A) Methyl-TROSY spectrum of the D432A mutant for Mg1 in the presence of 4.0 mM Mg2+ (red) superimposed on the spectrum of the wild-type (WT) protein (black) in the presence (left) and absence (middle) of 4.0 mM Mg2+. Normalized signal intensities (R) for I28N, I84N, and I260Plug in the Mg1 mutant were plotted against Mg2+ concentration ([Mg2+]). (B\u2013D) Methyl-TROSY spectra of the D91A/D247A mutant of Mg4 (B, cyan), the D226N/D250A mutant of Mg5 (C, green), and the E59A mutant of Mg7 (D, orange) in the presence of 4.0\u20135.0 mM Mg2+, are overlaid on that of the wild-type (black) in the presence of 4.0 mM Mg2+. The signals differing from those in the wild-type are labelled. (E) The population of the Mg2+-bound conformation of I28N, I84N, and I260Plug plotted against Mg2+ concentrations ([Mg2+]). The solid lines are coloured black for the wild-type, cyan for the Mg4 mutant (D91A/D247A), green for Mg5 mutant (D226N/D250A), and orange for Mg7 mutant (E59A), respectively.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31596/elife-31596-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Membrane patches from E coli. giant spheroplasts expressing wild-type (WT) and Mg5- (D226N/D250A), Mg4- (D91A/D247A), or Mg6- (D95A) binding site mutants were clamped at voltage of \u221280 mV and single-channel currents were recorded in the presence of 0.2 mM or 20 mM Mg2+ on the periplasmic side. (B) Open probability of wild-type (WT) and Mg5-, Mg4-, or Mg6-binding site mutants in the presence of 0.2 mM or 20 mM Mg2+ on the periplasmic side was plotted. The data of wild-type in the presence of 20 mM Mg2+ were not plotted because no current upon channel-opening was observed. Experiments were repeated 3\u20134 times. (C) Plot of Mg2+-concentration dependence of the open probability of wild-type and Mg2+-binding site mutants of MgtE. Wild-type (WT) and Mg2-, Mg3-, Mg5-, or Mg7-binding site mutants were analysed at \u221240 mV in the previous paper (Hattori et al., 2009). Mg4- and Mg6-binding site mutants were analysed at \u221280 mV in this study. It should be noted that open probability of MgtE exhibited no membrane potential dependency (Hattori et al., 2009).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31596/elife-31596-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Methyl-TROSY spectrum of MgtE wild-type (black) in the absence of Mg2+ is overlaid with that of the D432A mutant for Mg1 (red), the E258Q mutant for Mg2 (light green), the D259N mutant for Mg3 (purple), the D91A/D247A mutant for Mg4 (cyan), the D226N/D250A mutant for Mg5 (green), the D95A mutant for Mg6 (blue), and the E59A mutant for Mg7 (orange) in the absence of Mg2+.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/31596/elife-31596-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A\u2013C) Methyl-TROSY spectrum of the E258Q mutant of the Mg2 site in the presence of 5.0 mM Mg2+ (A, light green), the D259N mutant of the Mg3 site in the presence of 5.0 mM Mg2+ (B, purple), and the D95N mutant of the Mg6 site in the presence of 4.0 mM Mg2+ (C, blue) superimposed on the spectrum of the wild-type (WT) protein (black) in the presence (left) and absence (middle) of 4.0 mM Mg2+, respectively. Normalized signal intensities (R) for I28N, I84N, and I260Plug were plotted against Mg2+ concentration ([Mg2+]). The solid lines in (B) represent the best fit curves of a Hill equation to the data. The estimated Mg2+ concentrations reaching half maximal values of the changes ([Mg2+]1/2) and the Hill coefficients (n) are shown in the graph.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/31596/elife-31596-fig6-v2.jpg)\n\n**Figure 6.:** (A) Positions of Mg2+-binding sites in one subunit. (B) Relationship between the Mg2+-binding sites and the Ile residues whose Mg2+-dependent changes of the NMR signal were affected by the mutations at each Mg2+-binding site. The mutated Mg2+-binding sites and the affected residues are connected with arrows. The Ile residues are coloured by the [Mg2+]1/2 values shown in Figure 4, as indicated.\n\nFigure 5A shows the methyl-TROSY spectra of the D432A mutant, in which the Mg2+-binding of Mg1 is impaired, in the presence of 4.0 mM Mg2+ (red), superimposed on the spectra of the wild-type MgtE in the presence (Figure 5A, left, black) or absence (Figure 5A, middle, black) of 4.0 mM Mg2+. The NMR spectra of the mutant (hereafter, referred to as the Mg1-binding mutant) differs from that of the wild-type in the presence of 4.0 mM Mg2+, as the signals for I190CBS, I201CBS, I242CBS, I291TM, I302TM, I338TM, I397TM, and I438TM did not appear in the former (Figure 5A). These differences in the signals from the CBS domain and the TM region suggest that, in the presence of a saturating amount of Mg2+, the conformation of these regions in the Mg1-binding mutant is different from that in the wild-type.\n\nIn addition, the markedly strong signal intensities seen for I28N, I84N, and I260Plug in the Mg1-binding mutant did not decrease as the Mg2+ concentration increased (Figure 5A, right), whereas those in wild-type MgtE significantly decreased in a Mg2+-dependent manner as shown in Figure 3A. These results indicate that, in the presence of 4.0 mM Mg2+, the conformation and dynamics of the N domain and the plug helix in the Mg1-binding mutant also differ from those of the wild-type MgtE.\n\nIn contrast, the spectrum of the Mg1-binding mutant in the presence of 4 mM Mg2+ is similar to that of the wild-type at 0 mM Mg2+ (Figure 5A, middle). The only differences are the missing of the signals for I168CBS, I338TM, I397TM, and I438TM, which were observed for the wild-type at 0 mM Mg2+. The missing of these signals is presumably caused by the exchange broadening between Mg2+-bound and unbound states for the sites Mg2-7 of the Mg1-binding mutant. These spectral comparisons strongly suggest that the mutation of the Mg1-binding site precludes the Mg2+-induced conformational changes in the whole MgtE molecule, as has been observed for the wild-type MgtE (Figure 6B, left).\n\nEssentially the same spectra, seen for the Mg1-binding mutant (D432A), were observed for the Mg2- (E258Q), Mg3- (D259N), and Mg6- (D95N) binding mutants (Figure 5\u2014figure supplement 3), suggesting that the mutation at the site Mg2, Mg3, or Mg6 also precludes the complete Mg2+-induced conformational changes in the whole MgtE molecule at 4 mM Mg2+. Therefore, the binding mutants for Mg2, Mg3, and Mg6 would all be expected to require higher Mg2+ concentration to saturate Mg2+-binding to all the sites that are not mutated.\n\nThese results indicate that Mg2+ binding to the Mg1, Mg2, Mg3, and Mg6 sites is required for the Mg2+-induced changes in the conformation and dynamics of the whole MgtE molecule (Figure 6B, left). Conversely, the Mg4- (D91A/D247A), Mg5- (D226N/D250A), and Mg7- (E59A) binding mutants exhibited Mg2+-induced spectral changes in the Ile residues in the TM region (I291TM, I302TM, I338TM, I397TM, and I438TM) identical to those seen in the wild-type protein, whereas the spectral changes for the Ile residues in the N domain (I28N and I84N), the CBS domain (I190CBS and I242CBS) and the plug helix (I260Plug) differed from the wild-type spectra (Figure 5B\u2013D, respectively).\n\nFor the Mg4-binding mutant (D91A/D247A), the Mg2+-induced change in I190CBS, which was seen in the wild-type protein, was not observed (Figure 5B). The Mg2+ concentrations, at which the intensity changes of the I28N and I84N signals saturated, which reflects the population of molecules in the Mg2+-bound conformation, were significantly higher (>10 and\u00a0>25 mM, respectively, estimated from curve fitting of the Hill\u2019s equation) compared to 4 mM for the wild-type (Figure 5E). The changes in the other Ile residues were identical to those in the wild-type protein. These results suggest that Mg2+ binding to the Mg4-binding site affects the structure and dynamics of the N and CBS domains, as shown by I28N, I84N, and I190CBS (Figure 6B, right).\n\nFor the Mg5-binding mutant (D226N/D250A), the Mg2+-induced changes in I190CBS and I242CBS were not observed (Figure 5C). The Mg2+ concentrations, at which the intensity changes of the I28N, I84N and I260Plug signals saturated, were significantly higher (>30,\u00a0>30, and\u00a0>8 mM, respectively), than the wild-type (4 mM) (Figure 5E). In addition, this mutant exhibited lower cooperativity for I260Plug (n\u00a0=\u00a00.8) than that of the wild type (n\u00a0=\u00a01.8). These results suggest that Mg2+ binding to the Mg5 site elicits changes in the structure and dynamics of the N and CBS domains, as well as the plug helix, as shown by I28N, I84N, I190CBS, I242CBS, and I260Plug (Figure 6B, right).\n\nFor the Mg7-binding site mutant (E59A), the majority of the Ile signals, except for I28N, I84N and I260Plug, exhibited Mg2+-dependent changes that were identical to those in the wild-type (Figure 5D). The Mg2+ concentrations, at which the intensity changes of the I28N and I84N signals saturated, were significantly higher (>10 and>7 mM, respectively), than the wild-type (4 mM) (Figure 5E). This mutant also exhibited lower cooperativity for I260Plug (n\u00a0=\u00a00.6) than that of the wild type (n\u00a0=\u00a01.8). These results suggest that Mg2+ binding to the Mg7 binding site elicits changes in the N domain and the plug helix, as shown by I28N, I84N, and I260Plug (Figure 6B, right).\n\nOverall, whereas Mg2+ binding to the Mg4-, Mg5-, and Mg7-binding sites does not affect Ile residues in the TM region, all affect the N domain Ile residues (Figure 6). Channel closure requires Mg2+ binding to all of the sites, Mg1\u2013Mg7 (Hattori et al., 2009), suggesting that Mg2+ binding to the Mg4, Mg5, and Mg7 sites causes channel closure via Mg2+-dependent structural changes in the N domain.\n\n## Discussion\n\nIn this study, we characterized the effects of Mg2+ binding on the structure and dynamics of MgtE in a site-specific manner, by observing the NMR signals of Ile \u03b41 methyl groups that are distal to specific Mg2+-binding sites. Notably, the spectral changes do not reflect Mg2+-binding directly but rather indicate changes in the conformation and dynamics of Ile residues from which the Mg2+-binding effects could be inferred. Solution NMR method is known as one of the methods to solve the three-dimensional structure of relatively small proteins. For larger proteins, NMR spectral changes caused by the functionally related stimuli such as ligand binding reflect the changes in the conformation and dynamics that are related to their functions. Together with the high resolution crystal structure of Mg2+-bound, closed state of MgtE (Hattori et al., 2009), Mg2+-dependent changes of the methyl-TROSY spectra could provide the information which sites of MgtE change its structure and dynamics between the Mg2+-saturated, closed state and the Mg2+-free or partially bound, open state.\n\n### Mg2+-dependent changes in the structure and dynamics of MgtE\n\nThe purified MgtE protein showed Mg2+-dependent spectral changes that were mostly saturated at 4.0 mM Mg2+. Based on a previous electrophysiological result that MgtE closes at cytoplasmic Mg2+ concentrations above 5\u201310 mM (Hattori et al., 2009), the NMR spectrum of MgtE above 4 mM is likely to reflect the conformation of MgtE in its closed state. Although the crystal structure of MgtE in the Mg2+-free state is not available, current NMR spectra provides structural information regarding the Mg2+-free MgtE and its changes upon Mg2+-binding.\n\nIn the Mg2+-free state, the NMR signals for I242CBS, I291TM, and I302TM were very broad, whereas I28N, I84N, and I260Plug had sharp, strong signals (Figure 2A). Together with our previous paramagnetic relaxation enhancement study, indicating that the N domain undergoes free tumbling motions in the Mg2+-free state (Imai et al., 2012), these findings suggest that Mg2+-free MgtE has a conformational equilibrium with different kinetics between the TM/CBS region and N/Plug region. The conformational equilibrium is suppressed by Mg2+-binding, as evidenced by sharpening/appearance of the weak and/or broad signals, and by broadening of the very sharp signals for I28N, I84N, and I260Plug, resulting in the formation of the closed state of MgtE.\n\n### The effects of Mg2+ binding at each site on the conformation and dynamics of MgtE\n\nMg2+-titration experiments for the wild-type and mutant forms of MgtE indicated that all the Ile residues in the TM region (IleTM) were affected by Mg2+ binding to the Mg1, Mg2, Mg3, and Mg6 sites, whereas mutation of the Mg4-, Mg5-, or Mg7-binding sites did not affect the Mg2+-induced changes in the structure and dynamics of the TM region (Figures 5 and 6, and Figure 5\u2014figure supplement 3). In addition to saturation of the changes for IleTM at 3 mM Mg2+ (Figure 4), Mg2+ binding to the Mg1, Mg2, Mg3 and Mg6 sites is suggested to saturate at 3 mM, which completes the Mg2+-dependent conformational changes in the TM region.\n\nBased on the fact that mutation at the Mg1-, Mg2-, Mg3-, or Mg6-binding sites also affected Mg2+-dependent changes in Ile residues in the CP region, Mg2+ binding to these sites is required for the structural/dynamic changes in the CP region as well as in the TM region. It should be noted that the structural changes in the TM region seem to occur in two steps (Figure 4). The residues I302TM, I397TM, and I438TM, which lie in the proximity of Mg1 at the extracellular side of the TM region, change at lower Mg2+ concentrations. On the other hand, the residues I291TM and I338TM, which locate at the intracellular side of the TM region, change at the Mg2+ concentrations similar to the changes of the Ile residues in the N and CBS domains. The structural changes in two steps seem to reflect that the latter residues at the intracellular side of the TM region are also affected by the Mg2+-binding to the Mg2+ sites, Mg2, Mg3 and/or Mg6 in the intracellular domains.\n\nConversely, Mg2+ binding to the remainder of the sites, Mg4, Mg5, and Mg7, regulates Ile residues only in the CP region consisting of the N and CBS domains as well as the plug helix, with no effect on the TM region. Specifically, binding at Mg4 affects Ile residues in the N and CBS domains, binding at Mg5 affects Ile residues in the N and CBS domains, as well as the plug helix, and binding at Mg7 affects Ile residues in the N domain and the plug helix (Figures 5 and 6, and Figure 5\u2014figure supplement 3). As shown in Figure 4, Mg2+-dependent changes in the Ile residues in the CP region saturate at 4 mM, strongly suggesting that Mg2+ binding to the Mg4, Mg5, and Mg7 sites saturates at 4 mM. This changes the conformation of the CP region including the N and CBS domains, resulting in the formation of the Mg2+-bound closed state, as observed in the crystal structure (Hattori et al., 2007b, Hattori et al., 2009).\n\n### Contribution of Mg4, Mg5, and Mg7 to gate closure\n\nIn the crystal structure of the full-length MgtE in the Mg2+-bound form (Hattori et al., 2007b, Hattori et al., 2009), Mg2+ bound at the Mg4 site forms a bridge between the N domain and the plug helix in the same subunit, whereas Mg2+ bound at the Mg5 and Mg7 sites forms inter-subunit bridges between the CBS domain and the plug helix, and between the N and CBS domains, respectively (schematically shown in Figure 7, right). Mg2+ binding to these sites neutralizes the electrostatic repulsion of the acidic residues forming the Mg2+-binding sites in the N and CBS domains and the plug helix, enabling the cooperative formation of a compact globular conformation in the closed state of MgtE.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/31596/elife-31596-fig7-v2.jpg)\n\n**Figure 7.:** In the Mg2+-free state, which MgtE does not adopt in physiological conditions, conformational equilibrium exists between the CBS domain and the TM region, whereas the N domain and the plug helix have high motional flexibility. Cooperative Mg2+ binding to Mg1, Mg2, Mg3, and Mg6 form the ion-conducting pore, whose gate is closed by cooperative Mg2+ binding to Mg4, Mg5, and Mg7. The Mg2+ bound at Mg4 forms a bridge between the N domain and the plug helix in the same subunit. The Mg2+ bound at Mg5 forms a bridge between the CBS domain in one subunit and the plug helix in the other subunit. The Mg2+ bound at Mg7 forms a bridge between the N domain in one subunit and the CBS domain in the other subunit. Together, these bound Mg2+ atoms may stabilize the domain orientations in close proximity to each other.\n\nThe closed gate is formed and stabilized by the interaction between N424TM and L263Plug on the cytoplasmic side of the ion-conducting pore in the TM region (Figure 1\u2014figure supplement 1) (Hattori et al., 2009). Thus, the I260Plug NMR signal, which is located in the C-terminal region of the plug helix, might serve as a good probe for the conformational change of the gate region. Although the fast motion of I260Plug is mostly suppressed at 3 mM (Figure 4), Mg2+ binding to Mg5 and Mg7, which affects I260Plug, saturates at 4 mM (Figure 6B). Therefore, the complete conformational change of I260Plug is likely to be achieved at 4 mM, which contributes to the stabilization of the closed gate.\n\n### Physiological relevance of MgtE gating\n\nFigure 7 schematically summarizes a model of the Mg2+-dependent gating of MgtE. The present study revealed that gating of MgtE occurs at Mg2+ concentrations of 4 mM. Below this threshold, MgtE adopts an open state, and allows the transport of extracellular Mg2+ into cells; thus, the intracellular Mg2+ level is maintained higher than the threshold. Consequently, under physiological conditions, MgtE is not in the Mg2+-free state. Cooperative Mg2+ binding to the Mg1-, Mg2-, Mg3-, and Mg6-binding sites, which changes the conformation and dynamics of the TM region, saturates at 3 mM, suggesting that these sites are also constitutively Mg2+-bound at the physiological Mg2+ level, which is higher than 4 mM.\n\nElectrophysiological results indicated that a mutation at Mg1 abolishes Mg2+ conductivity, whereas a mutation at either of the sites Mg2, Mg3, or Mg6 does not (Hattori et al., 2009 and Figure 5\u2014figure supplement 1C). These results are apparently inconsistent with the current NMR data that the Mg2+-binding to the Mg1-, Mg2-, Mg3-, and Mg6-binding sites is cooperative, i.e., the loss of the Mg2+-binding ability at either of the Mg2-, Mg3-, or Mg6-binding site, should impair the Mg2+-binding affinity of the Mg1-binding site, and therefore, should abolish the ion conductivity. This inconsistency is presumably due to the differences in the experimental conditions on the Mg2+ concentration between NMR and electrophysiological experiments. Whereas the Mg2+ concentration is constant in an NMR sample solution, ranging from 0 to 5 mM, those in the electrophysiological experiments are 90 mM and 0.2 mM, respectively, on the extracellular and intracellular sides. Among the seven Mg2+-binding sites, the Mg1-binding site is the only one among the seven sites that lies at the extracellular side of the TM region of MgtE (Figure 1B). This suggests that, under the condition for the electrophysiological experiments, high Mg2+ concentration at 90 mM on the extracellular side seems to force the Mg1-binding site of the Mg2-, Mg3-, and Mg6-binding mutants to accommodate a Mg2+ ion, leading to the channel opening of these mutants, in spite of the cooperativity revealed by NMR.\n\nThe mutation at either of the Mg2-, Mg3-, or Mg6-binding sites prevents the channel closure in the presence of 10\u201320 mM Mg2+ (Figure 5\u2014figure supplement 1). Therefore, the roles of the cooperative Mg2+ binding to the Mg1-, Mg2-, Mg3-, and Mg6-binding sites are likely to include the formation of an ion-conducting pore in the TM region mainly by the Mg1-binding site, and adjustment of the Mg2+-binding affinities of the Mg4, Mg5, and Mg7 sites, enabling the CP region to act as an Mg2+ sensor for gating in response to increases in intracellular Mg2+ levels above 4 mM. The functional roles of each of these Mg2+-binding sites therefore underlie the intracellular Mg2+ homeostasis mediated by MgtE.\n\n### Conclusion\n\nNMR analysis in combination with a high resolution crystal structure has provided site-specific information on changes in the protein conformation and dynamics of MgtE in relation to its function. By translating this information to SLC41 family members, human orthologues of the prokaryotic MgtE protein (Goytain and Quamme, 2005a; Kolisek et al., 2008; Moomaw and Maguire, 2008; Sahni and Scharenberg, 2013), it may be possible to identify a binding site for a novel ligand, which could be used to develop a novel treatment for diseases caused by abnormal Mg2+ levels, including cardiovascular disease, diabetes, and high blood pressure (Alexander et al., 2008).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Thermus thermophilus)</td>\n      <td>MgtE</td>\n      <td>doi: 10.1107/S1744309107032332</td>\n      <td>Uniprot ID: Q5SMG8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>BW25113 \u0394mgtA \u0394corA \u0394yhiD DE3</td>\n      <td>doi: 10.1038/emboj.2009.288</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET28a-MgtE</td>\n      <td>doi: 10.1107/S1744309107032332</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Plasmid construction and expression\n\nWe utilised a plasmid encoding full-length MgtE from T. thermophilus with an N-terminal His\u00a0\u00d7\u00a06 tag and an HRV-3C protease recognition site (Hattori et al., 2007a). The MgtE mutant constructs were generated through polymerase chain reaction-based mutagenesis. All MgtE proteins were expressed in E. coli C41 (DE3) cells. {u-2H, Ile\u03b41-[13CH3]}MgtE was expressed according to a previous study (Tugarinov et al., 2006).\n\n### Sample preparation\n\nMgtE and its mutants were purified as follows. The harvested cells were suspended in a buffer containing 50 mM HEPES-NaOH (pH 7.0), 150 mM NaCl and 20 mM imidazole, supplemented with 1 mM phenylmethylsulfonyl fluoride and lysed by sonication followed by centrifugation at 1,750\u00a0\u00d7\u00a0g for 10 min. The supernatants were then ultra-centrifuged at 100,000\u00a0\u00d7\u00a0g for 30 min. The pellet was solubilized for 2 hr at 277 K with a buffer containing 50 mM HEPES-NaOH (pH 7.0), 150 mM NaCl, 40 mM n-dodecyl -D-maltoside) (DDM), and 20 mM imidazole. After centrifugation at 14,000\u00a0\u00d7\u00a0g for 30 min, the supernatant was applied to a TALON column (Clontech, Mountain View, CA, USA). After washing the column with a buffer containing 50 mM HEPES-NaOH (pH 7.0), 150 mM NaCl, 1 mM DDM, and 20 mM imidazole, the protein was eluted with the same buffer supplemented with 150 mM imidazole. The N-terminal His\u00a0\u00d7\u00a06 tag was then cleaved using the HRV-3C protease. The cleaved His\u00a0\u00d7\u00a06 tag, undigested MgtE, and HRV-3C protease were removed by passing the sample through a HIS-select column (Sigma, St. Louis, MO, USA).\n\nFor the NMR experiments, the sample buffer was exchanged with NMR buffer (20 mM HEPES-NaOH (pH 7.2), 20 mM NaCl, 100% D2O). The pH value of the 100% D2O buffer was calibrated by adding 0.4 pH unit to the reading on the pH meter (Blanchard, 1984).\n\n### NMR spectroscopy\n\nNMR spectra were observed at 313 K on Bruker Avance 500, 600, or 800 MHz spectrometers equipped with a cryogenic probe. For Mg2+-titration experiments, small aliquots of the NMR buffer containing 20\u2013200 mM MgCl2 were added. The MgtE concentration was 200 \u03bcM, whereas the DDM was approximately 10 mM, estimated from the signal intensity of the DDM methyl signal in 1H 1D spectra.\n\nThe assignments of the Ile \u03b41 methyl-TROSY signals in the Mg2+-free and bound states were obtained by site-directed mutagenesis. We observed methyl-TROSY spectra for fifteen individual Ile mutants, in which each Ile residues was mutated to Val (i.e. I28V, I84V, I168V, I171V, I190V, I201V, I242V, I260V, I291V, I293V, I302V, I338V, I339V, I397V, or I438V). The spectra of these mutants were compared to those of the wild-type protein in the Mg2+-free and Mg2+-bound states, respectively. The missing signals in the spectra of the Ile mutants were assigned as the signals arising from the mutated Ile residues.\n\nChemical shift differences, \u0394\u03b4, were calculated using the equation:\n\n$$\n\u0394\\delta={(\u0394\\delta_{1H})+(\u0394\\delta_{13C}/5.8)^{2}}^{0.5}\n$$\n\nwhere \u0394\u03b41H and \u0394\u03b413C are the chemical shift differences in the 1H and 13C dimensions, respectively. The normalised factor (5.8) was determined from the ratio of the variance of methyl 1H and 13C chemical shifts, deposited in the Biological Magnetic Resonance Data Bank. The signal intensities of Ile\u03b41 methyl signals for a series of the titration spectra were normalised based on the intensity of the DDM methyl signal. The Mg2+ concentration reaching the half maximal values in the changes ([Mg2+]1/2) and Hill coefficients (n) were calculated using the equations\n\n$$\n\u0394=\u0394_{max}[Mg^{2+}]^{n}/([Mg^{2+}]_{1/2}^{n}+[Mg^{2+}]^{n})\n$$\n\nor\n\n$$\n\u0394^{\u2032}=1\u2212\u0394_{max}^{\u2032}[Mg^{2+}]^{n}/([Mg^{2+}]_{1/2}^{n}+[Mg^{2+}]^{n})\n$$\n\nwhere \u0394 and \u0394\u2019 are the changes in the chemical shift or the signal intensity of Ile \u03b41 methyl signals.\n\n### Patch-clamp analysis\n\nThe Mg2+-auxotrophic E. coli strain (BW25113 \u0394mgtA \u0394corA \u0394yhiD DE3) was transformed with each MgtE expressing plasmid, and maintained in growth medium supplemented with 100 mM MgSO4. E. coli giant spheroplasts were prepared as described previously (Hattori et al., 2009). Spheroplasts expressing wild-type and mutant forms of MgtE were plated on glass coverslips in a bath solution containing 200 mM N-methyl-D-glucamine, 90 mM MgCl2, 300 mM glucose and 10 mM HEPES (pH 7.2). Borosilicate pipettes (Harvard Apparatus, Kent, UK), with a resistance of 5\u20138 M\u03a9, were filled with a pipette solution (250 mM N-methyl-D-glucamine, 90 mM MgCl2, 300 mM glucose and 10 mM HEPES (pH 7.2). After gigal seal formation, a patch of membrane was excised and the bath solution was exchanged with a batch solution containing 290 mM N-methyl-D-glucamine, 0.2 mM MgCl2, 300 mM glucose and 10 mM HEPES (pH 7.2). The membrane patch voltage was clamped and currents were recorded using an Axopatch 200B amplifier (Axon CNS, Molecular Devices), coupled to an A/D converter (Axon CNS, Molecular Devices) and controlled by the pclamp10 software (Axon CNS, Molecular Devices). Currents were filtered at 2 kHz and sampled at 5 kHz.\n",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "c110890e-c51c-40cf-bd1a-eca543d45f82",
+      "submission_id": "b650a443-81ee-4b1d-b20f-169e671932b8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Olga Boudker, Weill Cornell Medical College United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.31596.020](https://doi.org/10.7554/eLife.31596.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Functional roles of Mg2+ binding sites in ion-dependent gating of a Mg2+ channel, MgtE, revealed by solution NMR\" for consideration by eLife. Your article has been favorably evaluated by Richard Aldrich (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Charles R Sanders (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision.\n\nThis is an interesting paper on the role of the binding of seven Mg(II) ions to the microbial MgtE channel, providing the apparent Mg(II) binding affinity as well as Hill coefficients informing on binding cooperativity. This was a technically challenging project in which a combination of sophisticated isotopic labeling methods and methyl-TROSY methods allowed NMR spectra to be acquired for some 15 assigned isoleucine residues (spread rather evenly throughout the protein). This took quite a lot of work for a >150 kDa detergent/intact channel complex. Binding was monitored examining the Mg(II)-concentration dependence of peak positions and/or intensity. Different peaks exhibited changes that led to different apparent Kd and Hill coefficients. Additional NMR studies conducted using Mg(II) ion binding site mutants, led to the realization that three of the Mg(II) sites form a distinct set of sites from the other 4 sites. In particular, the three sites are proposed to be responsible for stabilizing the open form of the channel, whereas the other 4 may help stabilize the channel but also exert other modulating effects, perhaps leading to channel closure at higher ion concentrations.\n\nThe reviewers agreed that the work is interesting and important. However, they felt that relating Mg(II) binding results to function would be critical to establish the role of the bound ions. In particular, it was pointed out that the binding data and structural inferences that suggest highly cooperative ion binding should be reconciled with existing functional data (e.g., Figure 2 of Nature Comm. 8: 148 (2017)), which show no cooperativity in the channel response to increased Mg(II) concentration. Furthermore, similar functional data on mutants targeting Mg(II) binding sites should help resolve the role of the groups of the sites. For example, mutations of sites 4, 5, and 7 should lead to a channel that does not close at elevated Mg(II) concentrations.\n\nReviewer #1:\n\nThe manuscript by Osawa et al. describes an elegant study of a bacterial magnesium channel MgtE (homologous to eukaryotic SLC41), which is responsible for the maintenance of the intracellular Mg levels. The channel is tightly regulated by Mg, and closes at Mg concentrations above 5 mM. Previous crystal structures showed that the dimeric channel contains one central Mg ion in the permeation pathway (Mg1) and 6 additional sites per subunit in three cytoplasmic regions: N-domain, CBS domain and plug helix. To address the role of the Mg binding sites, the authors employed Ile Methyl-TROSY NMR. They found that in the absence of Mg, N-domain and plug residue I260 showed high mobility. Titrating in Mg, led to changes of Ile peaks characteristics throughout the protein with EC50 varying between 0.8 and 2.5 mM, and with high Hill coefficients from 2 to 7. The authors mutated out each Mg binding site one at a time, and found Mg binding to sites Mg1, 2, 3 and 6 was essential for all conformational changes. In contrast, binding to sites Mg4, 5, and 7 was not essential for changes in TM regions, but was required for changes in N-domain, CBS domain, and plug helix (Mg 5 and 7). The authors construct a model whereby at low, but physiologically relevant Mg concentrations, Mg binds cooperatively to sites 1, 2, 3 and 6 to produce a conducting state; at higher concentrations Mg binds cooperatively to sites 4, 5 and 7, increasing interactions between N-domain and CBS and leading to channel closing. I found the work compelling even if there were some unresolved questions.\n\n1) While the spectra of WT apo protein and Mg1 mutant in the presence of 4 mM Mg are similar as the authors state, they are not identical. The authors should discuss what are the differences and what might be their origin. In Discussion (subsection \u201cThe effects of Mg2+ binding at each site on the conformation and dynamics of MgtE\u201d, first paragraph), the authors say that Mg binding to sites 1, 2, 3 and 6 affect Ile in TM region \"cooperatively\". The last term is ambiguous here. In particular, the TM Ile sites show Mg-dependent changes with different EC50s and Hill coefficients, such that, for example, I397 has EC50 of 0.8 (Nhill=2.8) while I338 has EC50 of 2 mM (Nhill=5.2). The latter residue shows sensitivity more similar to residues in the N- and CBS-domains. Therefore, while Mg binding to the sites might be cooperative, the structural changes in TM region may occur in two steps (with binding of Mg to the first and second sets of binding sites). This needs to be clarified.\n\n2) According to Figure 5E, Mg4 mutations do not affect Mg-dependent changes of I260Plug, while both Mg7 and Mg5 mutations decrease cooperativity, but not affinity. Text in the sixth and seventh paragraphs of the subsection \u201cRole of each Mg2+ binding site in the Mg2+-induced conformational change in MgtE\u201d contradicts the figure (also Figure 6B, right).\n\n3) The statement about cooperative binding to sites 4, 5, 7 is confusing. Binding to site 4 does not seem to affect the structural changes in the plug, while binding to sites 5 and 7 does.\n\n4) Can the signal changes, such as the chemical shift changes and peaks' sharpening/appearance be interpreted in terms of changes of protein dynamics?\n\n5) What kind of cooperative coupling is expected between the subunits in the dimer?\n\nReviewer #2:\n\nThis is an interesting paper on the role of the binding of seven Mg(II) ions to the microbial MgtE channel, providing the apparent Mg(II) binding affinity as well as Hill coefficients informing on binding cooperativity. This was a technically challenging project in which a combination of sophisticated isotopic labeling methods and methyl-TROSY methods allowed NMR spectra to be acquired for some 15 assigned isoleucine residues (spread rather evenly throughout the protein). This took quite a lot of work for a >150 kDa detergent/intact channel complex. Binding was monitored examining the Mg(II)-concentration dependence of peak positions and/or intensity. Different peaks exhibited changes that led to different apparent Kd and Hill coefficients. Along with the results of additional NMR studies conducted using Mg(II) ion binding site mutant, this led to the realization that three of the Mg(II) sites can regarded a distinct set of site from the other 4 sites. In particular, the three sites are proposed to be responsible for stabilizing the gated form of the channel, whereas the other 4 may help stabilize the channel but also exert other structural and/or dynamic roles in modulating Mg(II) channel function. Exactly what these other roles is was a little vague. This is an admirable and difficult study that significantly advances our understanding of Mg(II) channel structure and function. I especially admire the care with which they quantitative the Mg(II)-dependence of the very modest changes in NMR peaks positions/intensities.\n\nThis well written paper could be published essentially as is. However, the degree to which this NMR study established exactly what these two sets of Mg(II) binding events are doing in terms of channel function would be greatly enhanced by accompanying [Mg(II)]-dependent channel function measurements for both WT and the mutants they characterized by NMR. Such measurements are not reported in this paper. I would strongly encourage the authors to consider revising this paper to include the results of functional measurements (perhaps provided by expert collaborators). Without this, I view this paper as borderline in terms of providing enough new insight into MgtE channel function to justify publication in a journal with the stature of eLife.\n\nReviewer #3:\n\nMagnesium is a ubiquitous ion necessary for many biological functions with several unique chemical properties that differentiate it from other divalent cations such as Calcium. These include a very high energy of dehydration, small ionic but very large hydrated radius. How ion channels and transporters move Mg2+ in and out of compartments is important to understanding both the molecular mechanisms and function of this ion. The authors of this study use solution-NMR to study the dynamics of the prokaryotic Mg2+ channel, MgtE. The size and helix content make this a challenging NMR target. Addressing this, the group used methyl-TROSY with specific labeling of isoleucines as reporters of channel dynamics in detergent micelles. Coupled with site directed mutagenesis of residues responsible for binding Mg2+ residues (determined from previous functional and structural studies), the authors initially titrate and then use a set Mg2+ concentration to study what role binding plays in the dynamics of MgtE.\n\nThe authors have used NMR in previous studies to begin to address MgtE dynamics using PRE. Further, they've characterized the function of MgtE. Working from these previous studies, the authors combine this information to derive a model that asks how the dynamics of the transmembrane region, N-domain, CBS, and net cytoplasmic portion are related to the known Mg2+ binding sites. They arrive at a model where 4 of 7 Mg2+ sites act on the transmembrane domains and Plug Helix, whereas the remaining 3 of 7 Mg2+ sites are principally focused on dynamics in the cytoplasmic domain. They propose a model based on the absence or presence of Mg2+ on channel function. This is a useful finding that advances our knowledge of how the structure, dynamics and function reveal the mechanisms of Mg2+ permeation in an ion channel.\n\nQuestions/concerns:\n\n1) Physiological range \u2013 While 0.05% of dry weight mass of E. coli is Mg2+, and the estimated cellular concentrations are 30 mM, the free Mg2+ is estimated to be around 0.3 mM for E. coli. How does the model in Figure 7 account for this range and for the estimated binding affinities?\n\n2) It is suggested that the authors establish an explicit correlation between the behavior of the NMR-derived Mg2+ binding behavior at the different Mg2+-binding sites of MgtE, and the know Mg2+ dependence of the channel open probability, as determined by electrophysiological methods (perhaps as part of Figure 5?).\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Functional roles of Mg2+ binding sites in ion-dependent gating of a Mg2+ channel, MgtE, revealed by solution NMR\" for further consideration at eLife. Your revised article has been favorably evaluated by Richard Aldrich (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nThe main issue that the reviewers raised during the initial review was the lack of clear correspondence between the conformational responses of the protein to binding of Mg ions as detected by NMR and the functional behavior. The authors have addressed the criticism by providing functional data on mutations targeting every Mg binding site (either previously published or conducted specifically for this study). The data are succinctly summarized in the figure in their point-by-point response. What is still missing is putting these data in perspective of the current NMR study. In other words, how do these data agree (or disagree) with Figure 7? This is clearly a very complicated system, and perhaps not all data are expected to be in perfect correspondence, but key aspects should be addressed. For example, what is the role of sites 2, 3 and 5 if their mutations are not detrimental for channel opening but are for channel closing? I would have liked the authors to include the figure into the paper and discuss clearly to what extent their proposed model is or is not fully consistent with functional data.\n",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f9ee1a3c-5801-40df-8121-f52539a63165",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C1",
+      "claim": "Magnesium ions (Mg2+) are divalent cations essential for various cellular functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Magnesium ions (Mg2+) are divalent cations essential for various cellular functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about the biological role of magnesium ions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "5c29a88f-e602-4752-9a75-20688bfb653f",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C2",
+      "claim": "Mg2+ homeostasis is maintained through Mg2+ channels such as MgtE.",
+      "claim_type": "EXPLICIT",
+      "source": "Mg2+ homeostasis is maintained through Mg2+ channels such as MgtE, a prokaryotic Mg2+ channel whose gating is regulated by intracellular Mg2+ levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by references to prior research on MgtE function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "12b4fc0d-aae4-47e9-9512-cb2caeae61c9",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C3",
+      "claim": "MgtE is a prokaryotic Mg2+ channel whose gating is regulated by intracellular Mg2+ levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Mg2+ homeostasis is maintained through Mg2+ channels such as MgtE, a prokaryotic Mg2+ channel whose gating is regulated by intracellular Mg2+ levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior electrophysiological studies cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "1da0f324-21e1-4b37-b67e-8771a309b84c",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C4",
+      "claim": "The crystal structure of MgtE in the Mg2+-bound, closed state revealed the existence of seven crystallographically-independent Mg2+-binding sites, Mg1\u2013Mg7.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous crystal structure of MgtE in the Mg2+-bound, closed state revealed the existence of seven crystallographically-independent Mg2+-binding sites, Mg1\u2013Mg7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on previously published crystal structure data by the authors.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "7d6f52e1-41b1-4d96-804f-a15968d74d3d",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C5",
+      "claim": "The Mg2+ binding sites Mg1, Mg2, Mg3, and Mg6 exhibited cooperativity and a higher affinity for Mg2+.",
+      "claim_type": "EXPLICIT",
+      "source": "Mg2+-titration experiments, using wild-type and mutant forms of MgtE, revealed that the Mg2+ binding sites Mg1, Mg2, Mg3, and Mg6, exhibited cooperativity and a higher affinity for Mg2+, enabling the remaining Mg2+ binding sites, Mg4, Mg5, and Mg7, to play important roles in channel closure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on NMR titration experiments performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "0a2486d3-832c-47ec-bf5b-07ddf8c323a3",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C6",
+      "claim": "The Mg2+ binding sites Mg4, Mg5, and Mg7 play important roles in channel closure.",
+      "claim_type": "EXPLICIT",
+      "source": "Mg2+-titration experiments, using wild-type and mutant forms of MgtE, revealed that the Mg2+ binding sites Mg1, Mg2, Mg3, and Mg6, exhibited cooperativity and a higher affinity for Mg2+, enabling the remaining Mg2+ binding sites, Mg4, Mg5, and Mg7, to play important roles in channel closure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on NMR titration experiments and mutational analysis performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "413b3fb8-9875-40c7-9cb4-074c3e351b3d",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C7",
+      "claim": "Mg2+ ions bind to a number of proteins and nucleic acids, regulating a wide range of biological processes such as ATP utilization, enzyme activation, and maintenance of genomic stability.",
+      "claim_type": "EXPLICIT",
+      "source": "They bind to a number of proteins and nucleic acids, regulating a wide range of biological processes such as ATP utilization, enzyme activation, and maintenance of genomic stability (Hartwig, 2001; Cowan, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "88cef845-7c95-40d0-9c99-fc6bae62a29f",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C8",
+      "claim": "Abnormal Mg2+ homeostasis is reportedly associated with several diseases including cardiovascular disease, diabetes, and high blood pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, abnormal Mg2+ homeostasis is reportedly associated with several diseases including cardiovascular disease, diabetes, and high blood pressure (Alexander et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "34a55920-a15d-4d7e-9a24-0fafeb62e2ca",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C9",
+      "claim": "The MgtE family of Mg2+ transporters in bacteria operates as Mg2+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The MgtE family of Mg2+ transporters in bacteria, which operates as Mg2+ channels (Hattori et al., 2009), is homologous to the eukaryotic SLC41 family (Goytain and Quamme, 2005a, 2005b; Kolisek et al., 2008; Moomaw and Maguire, 2008; Sahni and Scharenberg, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior electrophysiological work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "cad0e824-d31a-4f46-b831-e6c775881bd7",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C10",
+      "claim": "The MgtE family is homologous to the eukaryotic SLC41 family.",
+      "claim_type": "EXPLICIT",
+      "source": "The MgtE family of Mg2+ transporters in bacteria, which operates as Mg2+ channels (Hattori et al., 2009), is homologous to the eukaryotic SLC41 family (Goytain and Quamme, 2005a, 2005b; Kolisek et al., 2008; Moomaw and Maguire, 2008; Sahni and Scharenberg, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "b0cd99e3-f082-494b-92d0-ce389ab2d8b8",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C11",
+      "claim": "A Mg2+-sensor riboswitch upregulates the gene expression of MgtE in response to a decrease in intracellular Mg2+ levels.",
+      "claim_type": "EXPLICIT",
+      "source": "With respect to the role of the MgtE family in Mg2+ homeostasis, a Mg2+-sensor riboswitch upregulates the gene expression of MgtE in response to a decrease in intracellular Mg2+ levels (Dann et al., 2007); MgtE then restores and maintains the intracellular Mg2+ homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "d3926a15-4361-4494-be4e-bf2c33e43909",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C12",
+      "claim": "MgtE facilitates Mg2+ uptake across the cell membrane at intracellular Mg2+ concentrations lower than 5\u201310 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "Our prior electrophysiological study of MgtE from Thermus thermophilus revealed that MgtE facilitates Mg2+ uptake across the cell membrane at intracellular Mg2+ concentrations lower than 5\u201310 mM, whereas at higher Mg2+ concentrations, MgtE does not allow further Mg2+ uptake (Hattori et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on prior electrophysiological experiments cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "13904712-9172-418e-8eca-d5bde01463eb",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C13",
+      "claim": "At Mg2+ concentrations higher than 5-10 mM, MgtE does not allow further Mg2+ uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "Our prior electrophysiological study of MgtE from Thermus thermophilus revealed that MgtE facilitates Mg2+ uptake across the cell membrane at intracellular Mg2+ concentrations lower than 5\u201310 mM, whereas at higher Mg2+ concentrations, MgtE does not allow further Mg2+ uptake (Hattori et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on prior electrophysiological experiments cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "0a3fc1ef-86a5-41b8-a4b2-f46623801b42",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C14",
+      "claim": "Full-length MgtE forms a homodimer comprised of an N-terminal cytoplasmic (CP) region (residues 1\u2013263) and a C-terminal transmembrane (TM) region (residues 264\u2013450).",
+      "claim_type": "EXPLICIT",
+      "source": "We have reported the crystal structure of full-length MgtE in the Mg2+-bound state, which revealed that it forms a homodimer comprised of an N-terminal cytoplasmic (CP) region (residues 1\u2013263) and a C-terminal transmembrane (TM) region (residues 264\u2013450) (Figure 1A) (Hattori et al., 2007b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the crystal structure reported by the authors and shown in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "1cb80a4b-6038-49a8-be29-1cf140b76868",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C15",
+      "claim": "The CP region consists of three parts: an N domain (residues 1\u2013131), a cystathionine-\u03b2-synthase (CBS) domain (residues 132\u2013245), and a plug helix (residues 246\u2013263).",
+      "claim_type": "EXPLICIT",
+      "source": "The CP region consists of three parts, an N domain (residues 1\u2013131), a cystathionine-\u03b2-synthase (CBS) domain (residues 132\u2013245), and a plug helix (residues 246\u2013263); the plug helix connects the latter with the TM region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the crystal structure analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "48c17b5d-2d2b-4a24-9e78-b2b7190a7588",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C16",
+      "claim": "The ion-conducting pore is closed at the CP side of the TM region, which is stabilized by the interactions with the C-termini of the plug helices.",
+      "claim_type": "EXPLICIT",
+      "source": "The ion-conducting pore is closed at the CP side of the TM region, which is stabilized by the interactions with the C-termini of the plug helices (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the crystal structure and shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "d139eaf4-100b-4f95-8f20-06a5a5a498c3",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C17",
+      "claim": "Mg1 is located on the 2-fold axis in the ion-conducting pore at the extracellular side of the TM region.",
+      "claim_type": "EXPLICIT",
+      "source": "In the crystal structure, seven crystallographically independent Mg2+-binding sites (Mg1\u2013Mg7) can be identified, among which Mg1 is located on the 2-fold axis in the ion-conducting pore at the extracellular side of the TM region, whereas the other six sites are located in the CP region (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the crystal structure shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "b623e5db-18a3-4297-a40c-1f78ccfcc46c",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C18",
+      "claim": "Six Mg2+-binding sites (Mg2-Mg7) are located in the CP region.",
+      "claim_type": "EXPLICIT",
+      "source": "In the crystal structure, seven crystallographically independent Mg2+-binding sites (Mg1\u2013Mg7) can be identified, among which Mg1 is located on the 2-fold axis in the ion-conducting pore at the extracellular side of the TM region, whereas the other six sites are located in the CP region (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the crystal structure shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "72e621c3-9ef1-4687-85c2-061644032780",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C19",
+      "claim": "The Mg2+ ions bound to the seven sites coordinate with acidic residues, through at least one carboxylic group, and further bridge two different MgtE domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The Mg2+ ions bound to these sites coordinate with acidic residues, through at least one carboxylic group, and further bridge two different MgtE domains, either in the same or other subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the crystal structure analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "5dfae3a4-6e10-4ab8-83f6-f62802dedc1e",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C20",
+      "claim": "The structural basis for ion selectivity was revealed through a high resolution crystal structure of the TM region, in which the Mg1 site accommodates a hydrated Mg2+.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the structural basis for ion selectivity was revealed through a high resolution crystal structure of the TM region, in which the Mg1 site accommodates a hydrated Mg2+ (Takeda et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior structural work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "d6d2a505-7eea-4b44-b2c6-2e13bf3b6aec",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C21",
+      "claim": "Electrophysiological investigation of MgtE Mg2+-binding site mutants indicated that every Mg2+-binding site in the CP region (Mg2\u2013Mg7) contributes to the formation of the MgtE closed state.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiological investigation of MgtE Mg2+-binding site mutants indicated that every Mg2+-binding site in the CP region (Mg2\u2013Mg7) contributes to the formation of the MgtE closed state (Hattori et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior electrophysiological work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "7059701e-a971-474f-ad98-f2f8ac8c25c3",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C22",
+      "claim": "Mg2+ binding alters the relative orientation of the N and CBS domains in each subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "A structural comparison of the two states suggests that Mg2+ binding alters the relative orientation of the N and CBS domains in each subunit, as well as changing the inter-helical angle between the plug helices of the two subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of crystal structures in Mg2+-free and Mg2+-bound states.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "59cd0f29-5f25-41c5-905b-cde79f8afd6e",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C23",
+      "claim": "Mg2+ binding changes the inter-helical angle between the plug helices of the two subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "A structural comparison of the two states suggests that Mg2+ binding alters the relative orientation of the N and CBS domains in each subunit, as well as changing the inter-helical angle between the plug helices of the two subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of crystal structures in Mg2+-free and Mg2+-bound states.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "df096121-b056-4adb-9a29-1d48f4b9e9d2",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C24",
+      "claim": "NMR analysis of the MgtE CP region in the Mg2+-free state revealed that the N domain tumbles widely in space, and that it transiently approaches the CBS domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a nuclear magnetic resonance (NMR) analysis of the MgtE CP region in the Mg2+-free state, conducted by our laboratory, revealed that the N domain tumbles widely in space, and that it transiently approaches the CBS domain (Imai et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior NMR work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "779456c4-3a9c-4d77-a236-5c8b23b893a5",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C25",
+      "claim": "Mg2+ binding to the CP region of MgtE allosterically alters the conformation of the plug helices, resulting in gate closure.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results, we have proposed a structural mechanism for MgtE gating, in which Mg2+ binding to the CP region of MgtE allosterically alters the conformation of the plug helices, resulting in gate closure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on prior structural and NMR data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "0184c55c-84f6-462a-ab56-babe2e974e91",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C26",
+      "claim": "Size exclusion chromatography analysis indicated an apparent molecular weight of approximately 160 kDa for purified MgtE, suggesting that MgtE formed a dimer in the micelles.",
+      "claim_type": "EXPLICIT",
+      "source": "Size exclusion chromatography analysis indicated an apparent molecular weight of approximately 160 kDa, suggesting that MgtE formed a dimer in the micelles (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on size exclusion chromatography data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "993ac576-c755-46d0-972a-2c3a4124032c",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C27",
+      "claim": "Fifteen Ile residues in full-length MgtE are widely distributed across the whole MgtE structure.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrated that the fifteen Ile residues in full-length MgtE are widely distributed across the whole MgtE structure (Figure 1B), with I28 and I84 being located in the N-terminal domain; I168, I171, I190, I201, and I242 in the CBS domain; I260 in the plug helix; and I291, I293, I302, I338, I339, I397, and I438 in the TM region.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the crystal structure shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "eb45046b-f453-4295-afa4-b53dc4bd477b",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C28",
+      "claim": "Resonance assignments were established for twelve of the fifteen Ile \u03b41 methyl groups in the Mg2+-free and bound states.",
+      "claim_type": "EXPLICIT",
+      "source": "We next established the resonance assignments for twelve of the fifteen Ile \u03b41 methyl groups in the Mg2+-free and bound states, respectively, by comparing the methyl-TROSY spectra of fifteen individual Ile to Val mutants with that of the wild-type protein, in the absence and presence of 16 mM Mg2+ (Figure 2 and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on NMR experiments comparing wild-type and mutant spectra shown in Figure 2 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "603a33e6-3b0b-42e4-aa5c-033de16a242b",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C29",
+      "claim": "The distances between the Ile C\u03b41 atoms and Mg2+ are longer than 8.0 \u00c5 in the crystal structure of the Mg2+-bound MgtE.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because the distances between the Ile C\u03b41 atoms and Mg2+ are longer than 8.0 \u00c5 in the crystal structure of the Mg2+-bound MgtE (PDB code: 2ZY9), which is sufficiently longer than the sum of the radii of a methyl group (1.6 \u00c5) and a hydrated Mg2+ (4.8 \u00c5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on distance measurements from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "df21e278-d7a8-430d-9c61-d82c43089016",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C30",
+      "claim": "Mg2+-induced NMR spectral changes reflect the changes in the conformation and dynamics at each Ile site, but not the direct binding of Mg2+ to the Ile residues.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be also noted that Mg2+-induced NMR spectral changes reflect the changes in the conformation and dynamics at each Ile site, but not the direct binding of Mg2+ to the Ile residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the distance measurements showing Ile residues are far from Mg2+ binding sites.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "37c5080b-c16a-4329-8e66-c7904fe97ee5",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C31",
+      "claim": "At 0 mM Mg2+, three markedly strong signals (I28N, I84N, and I260Plug) were observed, together with nine weak and/or broad signals.",
+      "claim_type": "EXPLICIT",
+      "source": "At 0 mM Mg2+ (Figure 2A), three markedly strong signals (I28N, I84N, and I260Plug) were observed, together with nine weak and/or broad signals (I168CBS, I171CBS, I190CBS, I201CBS, I293TM, I338TM, I339TM, I397TM, and I438TM).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on NMR spectra shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "2439cca3-22fb-4ecc-b757-967a9e389c23",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C32",
+      "claim": "Signals for I242CBS, I291TM, and I302TM were not observed at 0 mM Mg2+.",
+      "claim_type": "EXPLICIT",
+      "source": "However, signals for I242CBS, I291TM, and I302TM were not observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on NMR spectra at 0 mM Mg2+.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "865600d5-336e-4a5a-a53b-7771ec00dc6a",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C33",
+      "claim": "As the Mg2+ concentration increased, the three strong signals (I28N, I84N, and I260Plug) exhibited decreased intensities.",
+      "claim_type": "EXPLICIT",
+      "source": "As the Mg2+ concentration increased (Figure 2B\u20132F), different types of changes were observed, which are summarized in Figure 3. The three strong signals (I28N, I84N, and I260Plug; boxed in red in Figure 3) exhibited decreased intensities, whereas three new signals appeared for the three residues previously unobserved at 0 mM Mg2+ (I242CBS, I291TM, and I302TM; boxed in yellow in Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on NMR titration data shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "800965a4-de8f-4efb-8731-3e8c3bbcbd7b",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C34",
+      "claim": "Three new signals appeared for I242CBS, I291TM, and I302TM as Mg2+ concentration increased.",
+      "claim_type": "EXPLICIT",
+      "source": "As the Mg2+ concentration increased (Figure 2B\u20132F), different types of changes were observed, which are summarized in Figure 3. The three strong signals (I28N, I84N, and I260Plug; boxed in red in Figure 3) exhibited decreased intensities, whereas three new signals appeared for the three residues previously unobserved at 0 mM Mg2+ (I242CBS, I291TM, and I302TM; boxed in yellow in Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on NMR titration data shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "92bfeed4-09ea-493e-9ef0-fe8a998b697e",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C35",
+      "claim": "The NMR spectral changes apparently saturated at 4.0 mM Mg2+.",
+      "claim_type": "EXPLICIT",
+      "source": "The NMR spectral changes apparently saturated at 4.0 mM Mg2+, above which the NMR spectra were essentially identical (see below for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on NMR titration experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "79c1e56e-3656-400c-b1e6-6a9388a2aec0",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C36",
+      "claim": "At Mg2+ concentration of 4 mM, or above, the MgtE channel closes.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that at Mg2+ concentration of 4 mM, or above, the MgtE channel closes (Hattori et al., 2009), suggesting that the NMR spectra at Mg2+ concentrations lower, or higher, than 4 mM reflect the open or closed states of MgtE, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior electrophysiological work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "b5e67b4e-d330-4f2a-a3a2-c96a2683fadd",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C37",
+      "claim": "The NMR spectra at Mg2+ concentrations lower than 4 mM reflect the open state of MgtE.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that at Mg2+ concentration of 4 mM, or above, the MgtE channel closes (Hattori et al., 2009), suggesting that the NMR spectra at Mg2+ concentrations lower, or higher, than 4 mM reflect the open or closed states of MgtE, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation between NMR data and prior electrophysiological results.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "17bd7d13-eeb2-4a1b-a7c4-f3d56d834032",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C38",
+      "claim": "The NMR spectra at Mg2+ concentrations higher than 4 mM reflect the closed state of MgtE.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that at Mg2+ concentration of 4 mM, or above, the MgtE channel closes (Hattori et al., 2009), suggesting that the NMR spectra at Mg2+ concentrations lower, or higher, than 4 mM reflect the open or closed states of MgtE, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation between NMR data and prior electrophysiological results.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "19168242-8dce-4fe8-99f2-16bf17870a9a",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C39",
+      "claim": "The plots of signal intensities and chemical shifts versus Mg2+ concentration showed sigmoid curves that were well-fitted with a Hill's equation.",
+      "claim_type": "EXPLICIT",
+      "source": "The plots showed sigmoid curves that were well-fitted with a Hill's equation, resulting in the Mg2+ concentration reaching the half maximal values of the changes ([Mg2+]1/2) of 0.8\u20132.5 mM, with Hill coefficient (n) values of 1.8\u20137.6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of NMR titration data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "cb019f8a-4a56-47ba-9519-13487b0e41e7",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C40",
+      "claim": "Mg2+ binding to multiple sites cooperatively affects the conformation and dynamics of the Ile residues at different locations in the MgtE molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that Mg2+ binding to multiple sites cooperatively affects the conformation and dynamics of the Ile residues at different locations in the MgtE molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the Hill coefficient values greater than 1, indicating cooperativity.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "40a46b89-f924-4c9f-bc4f-4369559c2f2b",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C41",
+      "claim": "Three Ile residues in the TM region (I302TM, I397TM, I438TM) and I260Plug experienced Mg2+-induced changes at Mg2+ concentrations of 0\u20132 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearly, three Ile residues in the TM region (I302TM, I397TM, I438TM) and I260Plug experienced Mg2+-induced changes at Mg2+ concentrations of 0\u20132 mM, whereas the other Ile residues were affected at 2\u20133 mM Mg2+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of NMR titration data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "4d707790-9887-4593-9f94-0ac0c012d2fe",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C42",
+      "claim": "The apparent [Mg2+]sat values are 3 mM for the Ile residues in the plug helix and the TM region.",
+      "claim_type": "EXPLICIT",
+      "source": "The normalized plots in Figure 4C indicate that the apparent [Mg2+]sat values are 3 mM for the Ile residues in the plug helix and the TM region, and 4 mM for those in the N and CBS domains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of NMR titration data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "563bef5f-7c47-430e-b4ea-06934f0e0dc7",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C43",
+      "claim": "The apparent [Mg2+]sat values are 4 mM for the Ile residues in the N and CBS domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The normalized plots in Figure 4C indicate that the apparent [Mg2+]sat values are 3 mM for the Ile residues in the plug helix and the TM region, and 4 mM for those in the N and CBS domains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of NMR titration data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "8b515638-9e29-430b-9429-b7ab123c40d7",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C44",
+      "claim": "Wild-type MgtE closed at 10 mM Mg2+ on the periplasmic side.",
+      "claim_type": "EXPLICIT",
+      "source": "Although wild-type closed at 10 mM Mg2+ on the periplasmic side, D91A/D247A mutant for Mg4 and D95A mutant for Mg6 did not close even at 20 mM Mg2+, which is similar to D226N/D250A mutant for Mg5 analysed previously (Figure 5\u2014figure supplement 1, panels A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electrophysiological data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "579f3f7b-4e6b-41fd-b11a-f50d4232c2d9",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C45",
+      "claim": "D91A/D247A mutant for Mg4 did not close even at 20 mM Mg2+.",
+      "claim_type": "EXPLICIT",
+      "source": "Although wild-type closed at 10 mM Mg2+ on the periplasmic side, D91A/D247A mutant for Mg4 and D95A mutant for Mg6 did not close even at 20 mM Mg2+, which is similar to D226N/D250A mutant for Mg5 analysed previously (Figure 5\u2014figure supplement 1, panels A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electrophysiological data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "382aef4f-70e5-4bca-a522-d7a3e21c5eb8",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C46",
+      "claim": "D95A mutant for Mg6 did not close even at 20 mM Mg2+.",
+      "claim_type": "EXPLICIT",
+      "source": "Although wild-type closed at 10 mM Mg2+ on the periplasmic side, D91A/D247A mutant for Mg4 and D95A mutant for Mg6 did not close even at 20 mM Mg2+, which is similar to D226N/D250A mutant for Mg5 analysed previously (Figure 5\u2014figure supplement 1, panels A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electrophysiological data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "5a93bf28-8afa-4287-a94c-c17ba54e6e70",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C47",
+      "claim": "Mutation of any one of the Mg2+-binding sites, Mg2-Mg7, prevents the formation of the conformation in the closed state.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that mutation of any one of the Mg2+-binding sites, Mg2-Mg7, prevents the formation of the conformation in the closed state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the electrophysiological data showing that all mutants fail to close.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "06cb820a-480d-403c-9dfb-01cbf113eb75",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C48",
+      "claim": "Every Mg2+-binding site, Mg2-Mg7, is required for the Mg2+-dependent closure of MgtE channel.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, every Mg2+-binding site, Mg2-Mg7, is required for the Mg2+-dependent closure of MgtE channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the electrophysiological data showing that all mutants fail to close.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "0a955a46-928e-49a0-a5a9-e5c03a36b0ec",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C49",
+      "claim": "The spectra of Mg2+-binding site mutants in the Mg2+-free state are essentially identical to that of the wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the spectra of these mutants in the Mg2+-free state are essentially identical to that of the wild-type, these mutations introduced no structural change in MgtE in the Mg2+-free state (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on NMR spectra shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "283426d6-2766-4e85-b5bd-f885d7476d10",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C50",
+      "claim": "The mutations at Mg2+-binding sites introduced no structural change in MgtE in the Mg2+-free state.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the spectra of these mutants in the Mg2+-free state are essentially identical to that of the wild-type, these mutations introduced no structural change in MgtE in the Mg2+-free state (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the identical NMR spectra of mutants and wild-type in the Mg2+-free state.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "f18bc933-fd05-49ac-959b-f4c0b4d13644",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C51",
+      "claim": "The mutation of the Mg1-binding site precludes the Mg2+-induced conformational changes in the whole MgtE molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "These spectral comparisons strongly suggest that the mutation of the Mg1-binding site precludes the Mg2+-induced conformational changes in the whole MgtE molecule, as has been observed for the wild-type MgtE (Figure 6B, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from comparison of NMR spectra of the Mg1 mutant with wild-type.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "ffe02e81-5f08-4c25-a89a-b2262f37e42d",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C52",
+      "claim": "The mutation at the site Mg2, Mg3, or Mg6 precludes the complete Mg2+-induced conformational changes in the whole MgtE molecule at 4 mM Mg2+.",
+      "claim_type": "EXPLICIT",
+      "source": "Essentially the same spectra, seen for the Mg1-binding mutant (D432A), were observed for the Mg2- (E258Q), Mg3- (D259N), and Mg6- (D95N) binding mutants (Figure 5\u2014figure supplement 3), suggesting that the mutation at the site Mg2, Mg3, or Mg6 also precludes the complete Mg2+-induced conformational changes in the whole MgtE molecule at 4 mM Mg2+.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from comparison of NMR spectra shown in Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "82004537-76a5-4fe3-93ca-471b4d20b9b9",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C53",
+      "claim": "Mg2+ binding to the Mg1, Mg2, Mg3, and Mg6 sites is required for the Mg2+-induced changes in the conformation and dynamics of the whole MgtE molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that Mg2+ binding to the Mg1, Mg2, Mg3, and Mg6 sites is required for the Mg2+-induced changes in the conformation and dynamics of the whole MgtE molecule (Figure 6B, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the mutational analysis showing that mutations at these sites prevent conformational changes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "f43c8aac-8661-4d16-8d07-c52e70e63c9c",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C54",
+      "claim": "The Mg4-, Mg5-, and Mg7-binding mutants exhibited Mg2+-induced spectral changes in the Ile residues in the TM region identical to those seen in the wild-type protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the Mg4- (D91A/D247A), Mg5- (D226N/D250A), and Mg7- (E59A) binding mutants exhibited Mg2+-induced spectral changes in the Ile residues in the TM region (I291TM, I302TM, I338TM, I397TM, and I438TM) identical to those seen in the wild-type protein, whereas the spectral changes for the Ile residues in the N domain (I28N and I84N), the CBS domain (I190CBS and I242CBS) and the plug helix (I260Plug) differed from the wild-type spectra (Figure 5B\u2013D, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of NMR spectra shown in Figure 5B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "ae3ed0d2-d872-4881-9381-6b35f9aec0c9",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C55",
+      "claim": "Mg2+ binding to the Mg4-binding site affects the structure and dynamics of the N and CBS domains.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that Mg2+ binding to the Mg4-binding site affects the structure and dynamics of the N and CBS domains, as shown by I28N, I84N, and I190CBS (Figure 6B, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the NMR data on the Mg4 mutant.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "da7864a8-8913-41ae-a0d0-5cc569740066",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C56",
+      "claim": "Mg2+ binding to the Mg5 site elicits changes in the structure and dynamics of the N and CBS domains, as well as the plug helix.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that Mg2+ binding to the Mg5 site elicits changes in the structure and dynamics of the N and CBS domains, as well as the plug helix, as shown by I28N, I84N, I190CBS, I242CBS, and I260Plug (Figure 6B, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the NMR data on the Mg5 mutant.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "27de970b-fe89-433f-8dba-f2cd86763ac7",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C57",
+      "claim": "Mg2+ binding to the Mg7 binding site elicits changes in the N domain and the plug helix.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that Mg2+ binding to the Mg7 binding site elicits changes in the N domain and the plug helix, as shown by I28N, I84N, and I260Plug (Figure 6B, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the NMR data on the Mg7 mutant.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "6a490b86-1e8f-4f0a-aee0-b614fa14ed74",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C58",
+      "claim": "Mg2+ binding to the Mg4-, Mg5-, and Mg7-binding sites does not affect Ile residues in the TM region.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, whereas Mg2+ binding to the Mg4-, Mg5-, and Mg7-binding sites does not affect Ile residues in the TM region, all affect the N domain Ile residues (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of NMR data for these mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "fc59467e-670d-457c-b137-12f08e188fe4",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C59",
+      "claim": "Channel closure requires Mg2+ binding to all of the sites, Mg1\u2013Mg7.",
+      "claim_type": "EXPLICIT",
+      "source": "Channel closure requires Mg2+ binding to all of the sites, Mg1\u2013Mg7 (Hattori et al., 2009), suggesting that Mg2+ binding to the Mg4, Mg5, and Mg7 sites causes channel closure via Mg2+-dependent structural changes in the N domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior electrophysiological work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "5c536db9-2f4b-42f0-9325-f239535f8d3b",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C60",
+      "claim": "Mg2+ binding to the Mg4, Mg5, and Mg7 sites causes channel closure via Mg2+-dependent structural changes in the N domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Channel closure requires Mg2+ binding to all of the sites, Mg1\u2013Mg7 (Hattori et al., 2009), suggesting that Mg2+ binding to the Mg4, Mg5, and Mg7 sites causes channel closure via Mg2+-dependent structural changes in the N domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the NMR data showing these sites affect the N domain and the requirement for all sites for closure.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "208c5441-04e0-4c2d-9abf-2d32c599ab47",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C61",
+      "claim": "In the Mg2+-free state, the NMR signals for I242CBS, I291TM, and I302TM were very broad.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Mg2+-free state, the NMR signals for I242CBS, I291TM, and I302TM were very broad, whereas I28N, I84N, and I260Plug had sharp, strong signals (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on NMR spectra shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "396650d1-f3cc-4c87-a63d-c12ed8cfe833",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C62",
+      "claim": "Mg2+-free MgtE has a conformational equilibrium with different kinetics between the TM/CBS region and N/Plug region.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with our previous paramagnetic relaxation enhancement study, indicating that the N domain undergoes free tumbling motions in the Mg2+-free state (Imai et al., 2012), these findings suggest that Mg2+-free MgtE has a conformational equilibrium with different kinetics between the TM/CBS region and N/Plug region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the NMR data and prior paramagnetic relaxation enhancement studies.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "f9cb4a15-f330-420c-95f5-6abd6e0182d7",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C63",
+      "claim": "The conformational equilibrium is suppressed by Mg2+-binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The conformational equilibrium is suppressed by Mg2+-binding, as evidenced by sharpening/appearance of the weak and/or broad signals, and by broadening of the very sharp signals for I28N, I84N, and I260Plug, resulting in the formation of the closed state of MgtE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the changes in NMR signal characteristics upon Mg2+ binding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "8fa87907-d6c7-4855-87f5-5730239f6d12",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C64",
+      "claim": "All the Ile residues in the TM region were affected by Mg2+ binding to the Mg1, Mg2, Mg3, and Mg6 sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Mg2+-titration experiments for the wild-type and mutant forms of MgtE indicated that all the Ile residues in the TM region (IleTM) were affected by Mg2+ binding to the Mg1, Mg2, Mg3, and Mg6 sites, whereas mutation of the Mg4-, Mg5-, or Mg7-binding sites did not affect the Mg2+-induced changes in the structure and dynamics of the TM region (Figures 5 and 6, and Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on NMR data from mutational analysis shown in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "17eebb6a-f20e-442c-976e-1afb24e138ec",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C65",
+      "claim": "Mg2+ binding to the Mg1, Mg2, Mg3 and Mg6 sites saturates at 3 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to saturation of the changes for IleTM at 3 mM Mg2+ (Figure 4), Mg2+ binding to the Mg1, Mg2, Mg3 and Mg6 sites is suggested to saturate at 3 mM, which completes the Mg2+-dependent conformational changes in the TM region.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the saturation of NMR spectral changes at 3 mM Mg2+ for TM region residues.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "c2a7d251-b614-4d2b-98bc-869edc239dd7",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C66",
+      "claim": "Mg2+ binding to the Mg4, Mg5, and Mg7 sites saturates at 4 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4, Mg2+-dependent changes in the Ile residues in the CP region saturate at 4 mM, strongly suggesting that Mg2+ binding to the Mg4, Mg5, and Mg7 sites saturates at 4 mM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the saturation of NMR spectral changes at 4 mM Mg2+ for CP region residues.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "9b688c8c-8a63-4f35-a623-c34012b3a3c0",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C67",
+      "claim": "In the crystal structure of the full-length MgtE in the Mg2+-bound form, Mg2+ bound at the Mg4 site forms a bridge between the N domain and the plug helix in the same subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "In the crystal structure of the full-length MgtE in the Mg2+-bound form (Hattori et al., 2007b, Hattori et al., 2009), Mg2+ bound at the Mg4 site forms a bridge between the N domain and the plug helix in the same subunit, whereas Mg2+ bound at the Mg5 and Mg7 sites forms inter-subunit bridges between the CBS domain and the plug helix, and between the N and CBS domains, respectively (schematically shown in Figure 7, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the crystal structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "e1434cc5-ff05-4b5b-9968-60f860576086",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C68",
+      "claim": "Mg2+ bound at the Mg5 site forms an inter-subunit bridge between the CBS domain and the plug helix.",
+      "claim_type": "EXPLICIT",
+      "source": "In the crystal structure of the full-length MgtE in the Mg2+-bound form (Hattori et al., 2007b, Hattori et al., 2009), Mg2+ bound at the Mg4 site forms a bridge between the N domain and the plug helix in the same subunit, whereas Mg2+ bound at the Mg5 and Mg7 sites forms inter-subunit bridges between the CBS domain and the plug helix, and between the N and CBS domains, respectively (schematically shown in Figure 7, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the crystal structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "8b757b15-cde1-4508-b248-50c89b6e4670",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C69",
+      "claim": "Mg2+ bound at the Mg7 site forms an inter-subunit bridge between the N and CBS domains.",
+      "claim_type": "EXPLICIT",
+      "source": "In the crystal structure of the full-length MgtE in the Mg2+-bound form (Hattori et al., 2007b, Hattori et al., 2009), Mg2+ bound at the Mg4 site forms a bridge between the N domain and the plug helix in the same subunit, whereas Mg2+ bound at the Mg5 and Mg7 sites forms inter-subunit bridges between the CBS domain and the plug helix, and between the N and CBS domains, respectively (schematically shown in Figure 7, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the crystal structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "fabfa56f-c784-4853-9dd5-dcbcb93abf25",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C70",
+      "claim": "Mg2+ binding to Mg4, Mg5, and Mg7 sites neutralizes the electrostatic repulsion of the acidic residues forming the Mg2+-binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Mg2+ binding to these sites neutralizes the electrostatic repulsion of the acidic residues forming the Mg2+-binding sites in the N and CBS domains and the plug helix, enabling the cooperative formation of a compact globular conformation in the closed state of MgtE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural role of Mg2+ in bridging domains.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "7397d698-d35a-462f-8769-eda4c45bb6ad",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C71",
+      "claim": "The closed gate is formed and stabilized by the interaction between N424TM and L263Plug on the cytoplasmic side of the ion-conducting pore in the TM region.",
+      "claim_type": "EXPLICIT",
+      "source": "The closed gate is formed and stabilized by the interaction between N424TM and L263Plug on the cytoplasmic side of the ion-conducting pore in the TM region (Figure 1\u2014figure supplement 1) (Hattori et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the crystal structure and prior structural analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "ec065717-387c-4340-bc47-d39887343668",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C72",
+      "claim": "Gating of MgtE occurs at Mg2+ concentrations of 4 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "The present study revealed that gating of MgtE occurs at Mg2+ concentrations of 4 mM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the NMR data showing saturation of conformational changes at 4 mM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "ac22c6fa-3a15-47f2-b3ee-0f7238f9a30c",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C73",
+      "claim": "Below 4 mM Mg2+, MgtE adopts an open state, and allows the transport of extracellular Mg2+ into cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Below this threshold, MgtE adopts an open state, and allows the transport of extracellular Mg2+ into cells; thus, the intracellular Mg2+ level is maintained higher than the threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the gating threshold and the function of MgtE.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "b942b2a5-be0f-439d-ad38-13a806cf23a3",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C74",
+      "claim": "Under physiological conditions, MgtE is not in the Mg2+-free state.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, under physiological conditions, MgtE is not in the Mg2+-free state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fact that MgtE maintains intracellular Mg2+ above the gating threshold.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "905ede5c-6db3-47d4-a16f-eab6b0b859b7",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C75",
+      "claim": "Cooperative Mg2+ binding to the Mg1-, Mg2-, Mg3-, and Mg6-binding sites saturates at 3 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "Cooperative Mg2+ binding to the Mg1-, Mg2-, Mg3-, and Mg6-binding sites, which changes the conformation and dynamics of the TM region, saturates at 3 mM, suggesting that these sites are also constitutively Mg2+-bound at the physiological Mg2+ level, which is higher than 4 mM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the NMR data showing saturation at 3 mM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "cb1f5dd4-fb41-4e7c-b544-6e149b0199fd",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C76",
+      "claim": "The Mg1-, Mg2-, Mg3-, and Mg6-binding sites are constitutively Mg2+-bound at the physiological Mg2+ level.",
+      "claim_type": "EXPLICIT",
+      "source": "Cooperative Mg2+ binding to the Mg1-, Mg2-, Mg3-, and Mg6-binding sites, which changes the conformation and dynamics of the TM region, saturates at 3 mM, suggesting that these sites are also constitutively Mg2+-bound at the physiological Mg2+ level, which is higher than 4 mM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the saturation at 3 mM and the physiological Mg2+ level being higher than 4 mM.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "a821826d-426e-4c2f-a817-4694aaee50e5",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C77",
+      "claim": "A mutation at Mg1 abolishes Mg2+ conductivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiological results indicated that a mutation at Mg1 abolishes Mg2+ conductivity, whereas a mutation at either of the sites Mg2, Mg3, or Mg6 does not (Hattori et al., 2009 and Figure 5\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on prior electrophysiological data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "5f0f31f0-4626-4ccd-a68c-8481e5fbf60a",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C78",
+      "claim": "A mutation at either of the sites Mg2, Mg3, or Mg6 does not abolish Mg2+ conductivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiological results indicated that a mutation at Mg1 abolishes Mg2+ conductivity, whereas a mutation at either of the sites Mg2, Mg3, or Mg6 does not (Hattori et al., 2009 and Figure 5\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on prior electrophysiological data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "5abd70da-48e6-416c-8e71-c644c9f11776",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C79",
+      "claim": "The mutation at either of the Mg2-, Mg3-, or Mg6-binding sites prevents the channel closure in the presence of 10\u201320 mM Mg2+.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutation at either of the Mg2-, Mg3-, or Mg6-binding sites prevents the channel closure in the presence of 10\u201320 mM Mg2+ (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electrophysiological data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "c9909deb-c8ff-4061-bbc9-65b03a858990",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C80",
+      "claim": "The roles of the cooperative Mg2+ binding to the Mg1-, Mg2-, Mg3-, and Mg6-binding sites include the formation of an ion-conducting pore in the TM region mainly by the Mg1-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the roles of the cooperative Mg2+ binding to the Mg1-, Mg2-, Mg3-, and Mg6-binding sites are likely to include the formation of an ion-conducting pore in the TM region mainly by the Mg1-binding site, and adjustment of the Mg2+-binding affinities of the Mg4, Mg5, and Mg7 sites, enabling the CP region to act as an Mg2+ sensor for gating in response to increases in intracellular Mg2+ levels above 4 mM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined NMR and electrophysiological data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "cdc797ea-b73d-4b37-a796-e61fa0a62766",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C81",
+      "claim": "The roles of the cooperative Mg2+ binding to the Mg1-, Mg2-, Mg3-, and Mg6-binding sites include adjustment of the Mg2+-binding affinities of the Mg4, Mg5, and Mg7 sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the roles of the cooperative Mg2+ binding to the Mg1-, Mg2-, Mg3-, and Mg6-binding sites are likely to include the formation of an ion-conducting pore in the TM region mainly by the Mg1-binding site, and adjustment of the Mg2+-binding affinities of the Mg4, Mg5, and Mg7 sites, enabling the CP region to act as an Mg2+ sensor for gating in response to increases in intracellular Mg2+ levels above 4 mM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined NMR and electrophysiological data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "9495fb25-f142-4f87-bd56-71a54ad8f119",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C82",
+      "claim": "The CP region acts as an Mg2+ sensor for gating in response to increases in intracellular Mg2+ levels above 4 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the roles of the cooperative Mg2+ binding to the Mg1-, Mg2-, Mg3-, and Mg6-binding sites are likely to include the formation of an ion-conducting pore in the TM region mainly by the Mg1-binding site, and adjustment of the Mg2+-binding affinities of the Mg4, Mg5, and Mg7 sites, enabling the CP region to act as an Mg2+ sensor for gating in response to increases in intracellular Mg2+ levels above 4 mM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined NMR and electrophysiological data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "92a7c392-95e6-41b6-97b1-db91f6cf7be8",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C83",
+      "claim": "NMR analysis in combination with a high resolution crystal structure has provided site-specific information on changes in the protein conformation and dynamics of MgtE in relation to its function.",
+      "claim_type": "EXPLICIT",
+      "source": "NMR analysis in combination with a high resolution crystal structure has provided site-specific information on changes in the protein conformation and dynamics of MgtE in relation to its function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the study's approach and findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "22e0bb6d-c202-46b8-8a3a-6e3d15975287",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "claim_id": "C84",
+      "claim": "Translating this information to SLC41 family members may help identify a binding site for a novel ligand for treating diseases caused by abnormal Mg2+ levels.",
+      "claim_type": "EXPLICIT",
+      "source": "By translating this information to SLC41 family members, human orthologues of the prokaryotic MgtE protein (Goytain and Quamme, 2005a; Kolisek et al., 2008; Moomaw and Maguire, 2008; Sahni and Scharenberg, 2013), it may be possible to identify a binding site for a novel ligand, which could be used to develop a novel treatment for diseases caused by abnormal Mg2+ levels, including cardiovascular disease, diabetes, and high blood pressure (Alexander et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1a1a9774-b6e8-4589-bf6a-e436bf2b178a",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological context for MgtE as a prokaryotic Mg2+ channel involved in cellular Mg2+ homeostasis, homologous to the eukaryotic SLC41 family, with abnormal Mg2+ homeostasis linked to human diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C7-C11 provide well-established background knowledge supported by appropriate citations to prior literature. These claims accurately describe the biological role of Mg2+, the function of MgtE, and its relevance to human health, forming a solid foundation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "73323c91-8cde-4f97-8bf3-2c28b6e1c783",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The crystal structure of MgtE in the Mg2+-bound closed state reveals seven Mg2+-binding sites (Mg1-Mg7), with Mg1 in the transmembrane pore and Mg2-Mg7 in the cytoplasmic region, all coordinating with acidic residues and bridging different domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C14-C21 describe prior structural work by the authors and others, supported by crystal structure data (PDB: 2ZY9) and appropriate citations. The structural features are well-documented and provide the basis for the current NMR investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "ffd50963-f92d-45ba-941f-77ce79b5e06e",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Prior studies established that MgtE facilitates Mg2+ uptake at intracellular concentrations below 5-10 mM and closes at higher concentrations, with Mg2+ binding causing conformational changes in the N and CBS domains and altering the plug helix orientation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13, C22-C25 summarize prior electrophysiological and structural work cited in the manuscript. These establish the functional context and proposed gating mechanism that the current study aims to investigate in detail.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "d0d4394a-442f-4531-a705-c87efcab1d24",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Full-length MgtE forms a dimer in DDM micelles with an apparent molecular weight of ~160 kDa, and NMR resonance assignments were established for 12 of 15 Ile \u03b41 methyl groups distributed across the protein structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 describe methodological results supported by size exclusion chromatography data (Figure 2\u2014figure supplement 2) and NMR assignment experiments (Figure 2, Table 1). The oligomeric state and assignment strategy are well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "9a0cdd3d-0313-4235-9aff-ac0488264512",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mg2+-induced NMR spectral changes reflect conformational and dynamic changes at Ile sites rather than direct Mg2+ binding, as Ile C\u03b41 atoms are >8.0 \u00c5 from Mg2+ in the crystal structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 provide important methodological context supported by distance measurements from the crystal structure. This clarifies that NMR changes report on allosteric effects rather than direct coordination, which is critical for interpreting the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "aa4434b8-48c2-409a-b0c8-d89179c9a6ca",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Mg2+ titration experiments show that NMR spectral changes saturate at 4.0 mM Mg2+, with different residues exhibiting distinct patterns of signal intensity and chemical shift changes, corresponding to the transition from open to closed states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C38 describe the primary NMR titration results shown in Figures 2-3. The data clearly show Mg2+-dependent spectral changes that saturate at 4 mM, consistent with prior electrophysiological data (C36) showing channel closure at this concentration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "6055b092-6819-477a-8eff-139ec5f0aa7d",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Hill equation fitting of NMR titration data reveals cooperative Mg2+ binding (Hill coefficients 1.8-7.6) with differential saturation: TM region and plug helix residues saturate at 3 mM while N and CBS domain residues saturate at 4 mM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 describe quantitative analysis of the NMR data (Figure 4) showing cooperativity and differential saturation. The Hill coefficients >1 clearly indicate cooperativity, and the distinct saturation concentrations for different regions are well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "0fbe0230-6e21-4c53-8237-fa08e7791aed",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Electrophysiological analysis of Mg4, Mg5, and Mg6 binding site mutants shows that wild-type MgtE closes at 10 mM Mg2+ while all mutants fail to close even at 20 mM, demonstrating that every Mg2+-binding site (Mg2-Mg7) is required for channel closure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 present new electrophysiological data (Figure 5\u2014figure supplement 1) complementing prior work. The data clearly show that mutations at Mg4, Mg5, or Mg6 prevent closure, supporting the conclusion that all sites are required.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "7d7c2794-f570-41dc-8e99-389eecaa9659",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mg2+-binding site mutants show NMR spectra identical to wild-type in the Mg2+-free state, indicating that mutations do not alter the structure in the absence of Mg2+.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 are supported by NMR data (Figure 5\u2014figure supplement 2) showing spectral identity between mutants and wild-type at 0 mM Mg2+. This important control demonstrates that observed differences in Mg2+-bound states are due to loss of Mg2+ binding rather than structural perturbations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "ce89944f-10e5-4c28-91aa-f86ead598129",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mutations at Mg1, Mg2, Mg3, or Mg6 binding sites prevent Mg2+-induced conformational changes throughout the entire MgtE molecule, indicating these sites are required for global structural transitions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 are supported by NMR spectral comparisons (Figure 5A, Figure 5\u2014figure supplement 3) showing that these mutants fail to exhibit the full complement of Mg2+-induced changes seen in wild-type. The data clearly demonstrate the requirement for these sites in global conformational changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "790b3a6c-e7d2-439a-8287-ef9ed767b761",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Mutations at Mg4, Mg5, or Mg7 binding sites show normal Mg2+-induced changes in TM region residues but altered changes in cytoplasmic region residues, with Mg4 affecting N and CBS domains, Mg5 affecting N, CBS domains and plug helix, and Mg7 affecting N domain and plug helix.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 describe differential effects of Mg4, Mg5, and Mg7 mutants based on NMR data (Figure 5B-D). The data clearly show that these sites specifically affect cytoplasmic region residues while leaving TM region changes intact, revealing site-specific functional roles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "d5698e03-7aa8-4d03-887c-330b46c7e97a",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Channel closure requires Mg2+ binding to all sites (Mg1-Mg7), with Mg4, Mg5, and Mg7 causing closure via structural changes in the N domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 integrate electrophysiological data (cited from prior work) with the current NMR findings. The conclusion that Mg4, Mg5, and Mg7 mediate closure through N domain changes is well-supported by the combined data showing these sites affect N domain residues while being required for closure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "b3221d35-a1c2-4475-8e85-2184a049f349",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "In the Mg2+-free state, MgtE exhibits conformational equilibrium with different kinetics between TM/CBS and N/Plug regions, which is suppressed by Mg2+ binding to form the closed state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 interpret NMR line width data (Figure 2A) in the context of prior paramagnetic relaxation enhancement studies. The broad signals for some residues and sharp signals for others, combined with prior evidence of N domain mobility, support the conformational equilibrium model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "99147a85-d0aa-4c61-ad0a-a5e4be835b42",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "All TM region Ile residues are affected by Mg2+ binding to Mg1, Mg2, Mg3, and Mg6 sites, with binding to these sites saturating at 3 mM and completing conformational changes in the TM region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 synthesize mutational NMR data (Figures 5-6) with titration data (Figure 4). The conclusion that Mg1, Mg2, Mg3, and Mg6 control TM region changes and saturate at 3 mM is well-supported by the combined evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "312ea649-ae78-4b0d-b796-55a0eaeadeee",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Mg2+ binding to Mg4, Mg5, and Mg7 sites saturates at 4 mM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 is supported by the saturation of NMR changes for cytoplasmic region residues at 4 mM (Figure 4). This is consistent with the mutational data showing these sites control cytoplasmic region conformational changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "98f4b924-9836-4a6f-80a7-9a520a14a86d",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "In the crystal structure, Mg2+ at Mg4 bridges the N domain and plug helix within a subunit, while Mg2+ at Mg5 and Mg7 form inter-subunit bridges, neutralizing electrostatic repulsion to enable compact closed conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 describe structural features from the crystal structure (cited prior work, Figure 7) that explain the functional roles revealed by NMR. The bridging interactions provide a structural basis for the observed effects of these sites on domain organization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "40077ec6-179c-470d-b160-ddb19992c22b",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The closed gate is formed by N424TM-L263Plug interaction, with gating occurring at 4 mM Mg2+; below this threshold MgtE is open and allows Mg2+ transport, maintaining intracellular Mg2+ above 4 mM under physiological conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C74 integrate structural data (Figure 1\u2014figure supplement 1) with the NMR-determined gating threshold of 4 mM. The physiological interpretation is logical given that MgtE maintains Mg2+ homeostasis above the gating threshold.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "a54b5268-bc5b-4b5d-8b67-7c7b4b17220e",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Cooperative Mg2+ binding to Mg1, Mg2, Mg3, and Mg6 sites saturates at 3 mM, suggesting these sites are constitutively Mg2+-bound at physiological Mg2+ levels (>4 mM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76 are supported by the NMR data showing saturation at 3 mM (Figure 4) and the physiological context that intracellular Mg2+ is maintained above 4 mM. The inference that these sites are constitutively occupied is logical.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "9ae01cf9-2478-4007-8a1c-9f0de35d244b",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Electrophysiological data show that mutation at Mg1 abolishes Mg2+ conductivity while mutations at Mg2, Mg3, or Mg6 do not, though the latter prevent channel closure at 10-20 mM Mg2+.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 describe electrophysiological results from prior work and current study (Figure 5\u2014figure supplement 1). The differential effects on conductivity versus closure are well-documented and important for understanding site-specific functions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "ce1746bd-ca6d-40aa-89bb-ae1b28b0e65b",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The cooperative Mg2+ binding to Mg1, Mg2, Mg3, and Mg6 sites forms the ion-conducting pore and adjusts binding affinities of Mg4, Mg5, and Mg7 sites, enabling the cytoplasmic region to act as an Mg2+ sensor for gating above 4 mM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C82 present an integrated mechanistic model based on the combined NMR and electrophysiological data. The model that high-affinity sites (Mg1, Mg2, Mg3, Mg6) enable sensing by lower-affinity sites (Mg4, Mg5, Mg7) is well-supported by the differential saturation and functional data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "80264d5a-5c27-43ab-b71f-3fc6e97686b2",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "NMR analysis combined with crystal structure provides site-specific information on conformational and dynamic changes in MgtE related to its function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 is a summary statement accurately describing the study's approach and achievements. The combination of NMR and structural data has indeed provided detailed site-specific functional information.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    },
+    {
+      "id": "d3b66242-6ea3-4ef0-817e-b40b179c6793",
+      "content_id": "11220498-8460-4134-ac42-9f95973b02e1",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Translating this information to SLC41 family members may help identify binding sites for novel ligands to treat diseases caused by abnormal Mg2+ levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C84 is speculative about potential therapeutic applications. While the homology between MgtE and SLC41 is established (C10), the feasibility of translating these findings to drug development is uncertain and would require substantial additional work including structural characterization of SLC41 proteins and validation of the mechanistic similarities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:04:27.841966Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f9ee1a3c-5801-40df-8121-f52539a63165",
+      "result_id": "1a1a9774-b6e8-4589-bf6a-e436bf2b178a"
+    },
+    {
+      "claim_id": "5c29a88f-e602-4752-9a75-20688bfb653f",
+      "result_id": "1a1a9774-b6e8-4589-bf6a-e436bf2b178a"
+    },
+    {
+      "claim_id": "12b4fc0d-aae4-47e9-9512-cb2caeae61c9",
+      "result_id": "1a1a9774-b6e8-4589-bf6a-e436bf2b178a"
+    },
+    {
+      "claim_id": "413b3fb8-9875-40c7-9cb4-074c3e351b3d",
+      "result_id": "1a1a9774-b6e8-4589-bf6a-e436bf2b178a"
+    },
+    {
+      "claim_id": "88cef845-7c95-40d0-9c99-fc6bae62a29f",
+      "result_id": "1a1a9774-b6e8-4589-bf6a-e436bf2b178a"
+    },
+    {
+      "claim_id": "34a55920-a15d-4d7e-9a24-0fafeb62e2ca",
+      "result_id": "1a1a9774-b6e8-4589-bf6a-e436bf2b178a"
+    },
+    {
+      "claim_id": "cad0e824-d31a-4f46-b831-e6c775881bd7",
+      "result_id": "1a1a9774-b6e8-4589-bf6a-e436bf2b178a"
+    },
+    {
+      "claim_id": "b0cd99e3-f082-494b-92d0-ce389ab2d8b8",
+      "result_id": "1a1a9774-b6e8-4589-bf6a-e436bf2b178a"
+    },
+    {
+      "claim_id": "1da0f324-21e1-4b37-b67e-8771a309b84c",
+      "result_id": "73323c91-8cde-4f97-8bf3-2c28b6e1c783"
+    },
+    {
+      "claim_id": "0a3fc1ef-86a5-41b8-a4b2-f46623801b42",
+      "result_id": "73323c91-8cde-4f97-8bf3-2c28b6e1c783"
+    },
+    {
+      "claim_id": "1cb80a4b-6038-49a8-be29-1cf140b76868",
+      "result_id": "73323c91-8cde-4f97-8bf3-2c28b6e1c783"
+    },
+    {
+      "claim_id": "48c17b5d-2d2b-4a24-9e78-b2b7190a7588",
+      "result_id": "73323c91-8cde-4f97-8bf3-2c28b6e1c783"
+    },
+    {
+      "claim_id": "d139eaf4-100b-4f95-8f20-06a5a5a498c3",
+      "result_id": "73323c91-8cde-4f97-8bf3-2c28b6e1c783"
+    },
+    {
+      "claim_id": "b623e5db-18a3-4297-a40c-1f78ccfcc46c",
+      "result_id": "73323c91-8cde-4f97-8bf3-2c28b6e1c783"
+    },
+    {
+      "claim_id": "72e621c3-9ef1-4687-85c2-061644032780",
+      "result_id": "73323c91-8cde-4f97-8bf3-2c28b6e1c783"
+    },
+    {
+      "claim_id": "5dfae3a4-6e10-4ab8-83f6-f62802dedc1e",
+      "result_id": "73323c91-8cde-4f97-8bf3-2c28b6e1c783"
+    },
+    {
+      "claim_id": "d6d2a505-7eea-4b44-b2c6-2e13bf3b6aec",
+      "result_id": "73323c91-8cde-4f97-8bf3-2c28b6e1c783"
+    },
+    {
+      "claim_id": "d3926a15-4361-4494-be4e-bf2c33e43909",
+      "result_id": "ffd50963-f92d-45ba-941f-77ce79b5e06e"
+    },
+    {
+      "claim_id": "13904712-9172-418e-8eca-d5bde01463eb",
+      "result_id": "ffd50963-f92d-45ba-941f-77ce79b5e06e"
+    },
+    {
+      "claim_id": "7059701e-a971-474f-ad98-f2f8ac8c25c3",
+      "result_id": "ffd50963-f92d-45ba-941f-77ce79b5e06e"
+    },
+    {
+      "claim_id": "59cd0f29-5f25-41c5-905b-cde79f8afd6e",
+      "result_id": "ffd50963-f92d-45ba-941f-77ce79b5e06e"
+    },
+    {
+      "claim_id": "df096121-b056-4adb-9a29-1d48f4b9e9d2",
+      "result_id": "ffd50963-f92d-45ba-941f-77ce79b5e06e"
+    },
+    {
+      "claim_id": "779456c4-3a9c-4d77-a236-5c8b23b893a5",
+      "result_id": "ffd50963-f92d-45ba-941f-77ce79b5e06e"
+    },
+    {
+      "claim_id": "0184c55c-84f6-462a-ab56-babe2e974e91",
+      "result_id": "d0d4394a-442f-4531-a705-c87efcab1d24"
+    },
+    {
+      "claim_id": "993ac576-c755-46d0-972a-2c3a4124032c",
+      "result_id": "d0d4394a-442f-4531-a705-c87efcab1d24"
+    },
+    {
+      "claim_id": "eb45046b-f453-4295-afa4-b53dc4bd477b",
+      "result_id": "d0d4394a-442f-4531-a705-c87efcab1d24"
+    },
+    {
+      "claim_id": "603a33e6-3b0b-42e4-aa5c-033de16a242b",
+      "result_id": "9a0cdd3d-0313-4235-9aff-ac0488264512"
+    },
+    {
+      "claim_id": "df21e278-d7a8-430d-9c61-d82c43089016",
+      "result_id": "9a0cdd3d-0313-4235-9aff-ac0488264512"
+    },
+    {
+      "claim_id": "37c5080b-c16a-4329-8e66-c7904fe97ee5",
+      "result_id": "aa4434b8-48c2-409a-b0c8-d89179c9a6ca"
+    },
+    {
+      "claim_id": "2439cca3-22fb-4ecc-b757-967a9e389c23",
+      "result_id": "aa4434b8-48c2-409a-b0c8-d89179c9a6ca"
+    },
+    {
+      "claim_id": "865600d5-336e-4a5a-a53b-7771ec00dc6a",
+      "result_id": "aa4434b8-48c2-409a-b0c8-d89179c9a6ca"
+    },
+    {
+      "claim_id": "800965a4-de8f-4efb-8731-3e8c3bbcbd7b",
+      "result_id": "aa4434b8-48c2-409a-b0c8-d89179c9a6ca"
+    },
+    {
+      "claim_id": "92bfeed4-09ea-493e-9ef0-fe8a998b697e",
+      "result_id": "aa4434b8-48c2-409a-b0c8-d89179c9a6ca"
+    },
+    {
+      "claim_id": "79c1e56e-3656-400c-b1e6-6a9388a2aec0",
+      "result_id": "aa4434b8-48c2-409a-b0c8-d89179c9a6ca"
+    },
+    {
+      "claim_id": "b5e67b4e-d330-4f2a-a3a2-c96a2683fadd",
+      "result_id": "aa4434b8-48c2-409a-b0c8-d89179c9a6ca"
+    },
+    {
+      "claim_id": "17bd7d13-eeb2-4a1b-a7c4-f3d56d834032",
+      "result_id": "aa4434b8-48c2-409a-b0c8-d89179c9a6ca"
+    },
+    {
+      "claim_id": "19168242-8dce-4fe8-99f2-16bf17870a9a",
+      "result_id": "6055b092-6819-477a-8eff-139ec5f0aa7d"
+    },
+    {
+      "claim_id": "cb019f8a-4a56-47ba-9519-13487b0e41e7",
+      "result_id": "6055b092-6819-477a-8eff-139ec5f0aa7d"
+    },
+    {
+      "claim_id": "40a46b89-f924-4c9f-bc4f-4369559c2f2b",
+      "result_id": "6055b092-6819-477a-8eff-139ec5f0aa7d"
+    },
+    {
+      "claim_id": "4d707790-9887-4593-9f94-0ac0c012d2fe",
+      "result_id": "6055b092-6819-477a-8eff-139ec5f0aa7d"
+    },
+    {
+      "claim_id": "563bef5f-7c47-430e-b4ea-06934f0e0dc7",
+      "result_id": "6055b092-6819-477a-8eff-139ec5f0aa7d"
+    },
+    {
+      "claim_id": "8b515638-9e29-430b-9429-b7ab123c40d7",
+      "result_id": "0fbe0230-6e21-4c53-8237-fa08e7791aed"
+    },
+    {
+      "claim_id": "579f3f7b-4e6b-41fd-b11a-f50d4232c2d9",
+      "result_id": "0fbe0230-6e21-4c53-8237-fa08e7791aed"
+    },
+    {
+      "claim_id": "382aef4f-70e5-4bca-a522-d7a3e21c5eb8",
+      "result_id": "0fbe0230-6e21-4c53-8237-fa08e7791aed"
+    },
+    {
+      "claim_id": "5a93bf28-8afa-4287-a94c-c17ba54e6e70",
+      "result_id": "0fbe0230-6e21-4c53-8237-fa08e7791aed"
+    },
+    {
+      "claim_id": "06cb820a-480d-403c-9dfb-01cbf113eb75",
+      "result_id": "0fbe0230-6e21-4c53-8237-fa08e7791aed"
+    },
+    {
+      "claim_id": "0a955a46-928e-49a0-a5a9-e5c03a36b0ec",
+      "result_id": "7d7c2794-f570-41dc-8e99-389eecaa9659"
+    },
+    {
+      "claim_id": "283426d6-2766-4e85-b5bd-f885d7476d10",
+      "result_id": "7d7c2794-f570-41dc-8e99-389eecaa9659"
+    },
+    {
+      "claim_id": "f18bc933-fd05-49ac-959b-f4c0b4d13644",
+      "result_id": "ce89944f-10e5-4c28-91aa-f86ead598129"
+    },
+    {
+      "claim_id": "ffe02e81-5f08-4c25-a89a-b2262f37e42d",
+      "result_id": "ce89944f-10e5-4c28-91aa-f86ead598129"
+    },
+    {
+      "claim_id": "82004537-76a5-4fe3-93ca-471b4d20b9b9",
+      "result_id": "ce89944f-10e5-4c28-91aa-f86ead598129"
+    },
+    {
+      "claim_id": "f43c8aac-8661-4d16-8d07-c52e70e63c9c",
+      "result_id": "790b3a6c-e7d2-439a-8287-ef9ed767b761"
+    },
+    {
+      "claim_id": "ae3ed0d2-d872-4881-9381-6b35f9aec0c9",
+      "result_id": "790b3a6c-e7d2-439a-8287-ef9ed767b761"
+    },
+    {
+      "claim_id": "da7864a8-8913-41ae-a0d0-5cc569740066",
+      "result_id": "790b3a6c-e7d2-439a-8287-ef9ed767b761"
+    },
+    {
+      "claim_id": "27de970b-fe89-433f-8dba-f2cd86763ac7",
+      "result_id": "790b3a6c-e7d2-439a-8287-ef9ed767b761"
+    },
+    {
+      "claim_id": "6a490b86-1e8f-4f0a-aee0-b614fa14ed74",
+      "result_id": "790b3a6c-e7d2-439a-8287-ef9ed767b761"
+    },
+    {
+      "claim_id": "fc59467e-670d-457c-b137-12f08e188fe4",
+      "result_id": "d5698e03-7aa8-4d03-887c-330b46c7e97a"
+    },
+    {
+      "claim_id": "5c536db9-2f4b-42f0-9325-f239535f8d3b",
+      "result_id": "d5698e03-7aa8-4d03-887c-330b46c7e97a"
+    },
+    {
+      "claim_id": "208c5441-04e0-4c2d-9abf-2d32c599ab47",
+      "result_id": "b3221d35-a1c2-4475-8e85-2184a049f349"
+    },
+    {
+      "claim_id": "396650d1-f3cc-4c87-a63d-c12ed8cfe833",
+      "result_id": "b3221d35-a1c2-4475-8e85-2184a049f349"
+    },
+    {
+      "claim_id": "f9cb4a15-f330-420c-95f5-6abd6e0182d7",
+      "result_id": "b3221d35-a1c2-4475-8e85-2184a049f349"
+    },
+    {
+      "claim_id": "8fa87907-d6c7-4855-87f5-5730239f6d12",
+      "result_id": "99147a85-d0aa-4c61-ad0a-a5e4be835b42"
+    },
+    {
+      "claim_id": "17eebb6a-f20e-442c-976e-1afb24e138ec",
+      "result_id": "99147a85-d0aa-4c61-ad0a-a5e4be835b42"
+    },
+    {
+      "claim_id": "c2a7d251-b614-4d2b-98bc-869edc239dd7",
+      "result_id": "312ea649-ae78-4b0d-b796-55a0eaeadeee"
+    },
+    {
+      "claim_id": "9b688c8c-8a63-4f35-a623-c34012b3a3c0",
+      "result_id": "98f4b924-9836-4a6f-80a7-9a520a14a86d"
+    },
+    {
+      "claim_id": "e1434cc5-ff05-4b5b-9968-60f860576086",
+      "result_id": "98f4b924-9836-4a6f-80a7-9a520a14a86d"
+    },
+    {
+      "claim_id": "8b757b15-cde1-4508-b248-50c89b6e4670",
+      "result_id": "98f4b924-9836-4a6f-80a7-9a520a14a86d"
+    },
+    {
+      "claim_id": "fabfa56f-c784-4853-9dd5-dcbcb93abf25",
+      "result_id": "98f4b924-9836-4a6f-80a7-9a520a14a86d"
+    },
+    {
+      "claim_id": "7397d698-d35a-462f-8769-eda4c45bb6ad",
+      "result_id": "40077ec6-179c-470d-b160-ddb19992c22b"
+    },
+    {
+      "claim_id": "ec065717-387c-4340-bc47-d39887343668",
+      "result_id": "40077ec6-179c-470d-b160-ddb19992c22b"
+    },
+    {
+      "claim_id": "ac22c6fa-3a15-47f2-b3ee-0f7238f9a30c",
+      "result_id": "40077ec6-179c-470d-b160-ddb19992c22b"
+    },
+    {
+      "claim_id": "b942b2a5-be0f-439d-ad38-13a806cf23a3",
+      "result_id": "40077ec6-179c-470d-b160-ddb19992c22b"
+    },
+    {
+      "claim_id": "905ede5c-6db3-47d4-a16f-eab6b0b859b7",
+      "result_id": "a54b5268-bc5b-4b5d-8b67-7c7b4b17220e"
+    },
+    {
+      "claim_id": "cb1f5dd4-fb41-4e7c-b544-6e149b0199fd",
+      "result_id": "a54b5268-bc5b-4b5d-8b67-7c7b4b17220e"
+    },
+    {
+      "claim_id": "a821826d-426e-4c2f-a817-4694aaee50e5",
+      "result_id": "9ae01cf9-2478-4007-8a1c-9f0de35d244b"
+    },
+    {
+      "claim_id": "5f0f31f0-4626-4ccd-a68c-8481e5fbf60a",
+      "result_id": "9ae01cf9-2478-4007-8a1c-9f0de35d244b"
+    },
+    {
+      "claim_id": "5abd70da-48e6-416c-8e71-c644c9f11776",
+      "result_id": "9ae01cf9-2478-4007-8a1c-9f0de35d244b"
+    },
+    {
+      "claim_id": "c9909deb-c8ff-4061-bbc9-65b03a858990",
+      "result_id": "ce1746bd-ca6d-40aa-89bb-ae1b28b0e65b"
+    },
+    {
+      "claim_id": "cdc797ea-b73d-4b37-a796-e61fa0a62766",
+      "result_id": "ce1746bd-ca6d-40aa-89bb-ae1b28b0e65b"
+    },
+    {
+      "claim_id": "9495fb25-f142-4f87-bd56-71a54ad8f119",
+      "result_id": "ce1746bd-ca6d-40aa-89bb-ae1b28b0e65b"
+    },
+    {
+      "claim_id": "92a7c392-95e6-41b6-97b1-db91f6cf7be8",
+      "result_id": "80264d5a-5c27-43ab-b71f-3fc6e97686b2"
+    },
+    {
+      "claim_id": "22e0bb6d-c202-46b8-8a3a-6e3d15975287",
+      "result_id": "d3b66242-6ea3-4ef0-817e-b40b179c6793"
+    }
+  ],
+  "comparisons": []
+}

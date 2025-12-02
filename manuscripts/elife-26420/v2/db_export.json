@@ -1,0 +1,1997 @@
+{
+  "submission": {
+    "id": "bc686d11-2fbc-4e72-aa5a-3697e73fb639",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:24:57.939450Z",
+    "updated_at": "2025-12-01T19:24:57.939450Z"
+  },
+  "content": [
+    {
+      "id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "submission_id": "bc686d11-2fbc-4e72-aa5a-3697e73fb639",
+      "content_type": "manuscript",
+      "content_text": "# A cell cycle-independent, conditional gene inactivation strategy for differentially tagging wild-type and mutant cells\n\n## Authors\n\n- Sonal Nagarkar-Jaiswal<sup>1</sup> ([ORCID: 0000-0002-2369-3714](https://orcid.org/0000-0002-2369-3714)) \u2020\n- Sathiya N Manivannan<sup>2</sup> ([ORCID: 0000-0002-9470-2390](https://orcid.org/0000-0002-9470-2390))\n- Zhongyuan Zuo<sup>2</sup>\n- Hugo J Bellen<sup>1</sup> ([ORCID: 0000-0001-5992-5989](https://orcid.org/0000-0001-5992-5989)) \u2020\n\n### Affiliations\n\n1. Howard Hughes Medical Institute, Baylor College of Medicine Houston United States\n2. Department of Molecular and Human Genetics Baylor College of Medicine Houston United States\n3. Department of Neuroscience Baylor College of Medicine Houston United States\n4. Program in Developmental Biology Baylor College of Medicine Houston United States\n5. Jan and Dan Duncan Neurological Research Institute Texas Children\u2019s Hospital Houston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHere, we describe a novel method based on intronic MiMIC insertions described in Nagarkar-Jaiswal et al. (2015) to perform conditional gene inactivation in Drosophila. Mosaic analysis in Drosophila cannot be easily performed in post-mitotic cells. We therefore, therefore, developed Flip-Flop, a flippase-dependent in vivo cassette-inversion method that marks wild-type cells with the endogenous EGFP-tagged protein, whereas mutant cells are marked with mCherry upon inversion. We document the ease and usefulness of this strategy in differential tagging of wild-type and mutant cells in mosaics. We use this approach to phenotypically characterize the loss of SNF4A\u03b3, encoding the \u03b3 subunit of the AMP Kinase complex. The Flip-Flop method is efficient and reliable, and permits conditional gene inactivation based on both spatial and temporal cues, in a cell cycle-, and developmental stage-independent fashion, creating a platform for systematic screens of gene function in developing and adult flies with unprecedented detail.\n\n## Introduction\n\nFunctional gene annotation requires, among others, the knowledge of phenotypes observed in mutants of the gene of interest, as well as the expression pattern and subcellular localization of the protein. For Drosophila genes whose loss causes early developmental lethality, characterization of gene function in later stages of the animal\u2019s life cycle relies on generating mosaics. Currently, Mosaic Analysis with a Repressible Cell Marker (MARCM) (Lee and Luo, 1999) and CRISPR/Cas9-mediated somatic mutagenesis (Port et al., 2014; Xue et al., 2014) are the two major techniques used to study mutations in mosaics. While MARCM has been very successfully used in mitotically\u00a0active, developing tissues, the technique has two major limitations. First, the technique relies on mitotic recombination and can therefore not be used in non-dividing cells. Second, along with the mutation under study, other mutations in the chromosome distal to the FRT site also become homozygous in mutant cells, requiring \u2018rescue experiments\u2019 of the gene of interest to validate the results (Roegiers et al., 2009). Another strategy is based on CRISPR/Cas9-mediated somatic mutagenesis to generate mosaics (Port et al., 2014; Xue et al., 2014). The limitations of CRISPR/Cas9 are that the identity of the generated lesions for the gene of interest may vary in individual cells in the same animal or tissue. Moreover, the mutant cells are not marked and cannot be distinguished from neighboring wild-type cells.\n\nHere, we describe a new flippase (FLP)-dependent method \u2018Flip-Flop\u2019 that offers several advantages over the current techniques for generating mosaics. (1) The method does not rely on cell division and can, therefore, be broadly used for conditional gene inactivation in post-mitotic cells such as neurons. (2) It allows endogenous tagging of proteins with EGFP, which permits multiple applications, and (3) it simultaneously marks mutant cells with mCherry.\n\n## Results and discussion\n\n### The Flip-Flop construct and strategy\n\nWe engineered the \u2018Flip-Flop\u2019 cassette for conditional gene inactivation. This cassette contains two modules that are placed in opposite orientation: a protein-trap (PT) module and a gene-trap (GT) module (Figure 1A). The PT module carries a splice acceptor (SA), followed by an in-frame EGFP coding sequence, and a splice donor (SD) (Venken et al., 2011). The GT module similarly contains a SA, but is followed by the T2A peptide sequence, an mCherry coding sequence, stop codons in all three reading frames, and an SV40 polyA signal. The PT and GT modules are placed in opposite orientations and are flanked by inverted pairs of canonical FRT and FRT14 sites, forming a flip-excision switch (FLEx) (Schn\u00fctgen et al., 2003;\u00a0Xue et al., 2014). The entire cassette is nested between two inverted attB sites that facilitate Recombination-Mediated Cassette Exchange (RMCE) between the Flip-Flop cassette and a target Minos-Mediated Integration Cassette (MiMIC) that resides in a coding intron of the gene of interest. When integrated in the MiMIC in the PT orientation, Flip-Flop should result in expression of the endogenous protein with an internal EGFP tag. The internal EGFP tagging does not or subtly disrupt the protein\u2019s function in 77% of the cases (Nagarkar-Jaiswal et al., 2015). The cassette can then be converted from a PT to a GT, in vivo, by inverting the cassette\u2019s orientation through the expression of FLP that acts on the FLEx switch (Figure 1B). Following the switch from the PT to the GT orientation, transcription is precociously terminated by the polyA sequence. When this truncated transcript is translated, the T2A site induces a translational skip (Tang et al., 2009), truncating the native protein and re-initiating translation at the mCherry sequence (Figure 1B). Hence, inversion of the Flip-Flop cassette results in the generation of a truncated protein, which is typically non-functional, and simultaneously marks the cells that are actively transcribing the gene with mCherry. While mCherry\u2019s expression pattern recapitulates the spatiotemporal expression pattern of the recipient gene, it does not reproduce the endogenous subcellular localization of the protein (Figure 1B). In summary, expression of FLP will induce a Flip-Flop and produce mCherry-labeled mutant cells in which the gene is inactivated, whereas the surrounding cells are wild-type and express the EGFP-tagged protein.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/26420/elife-26420-fig1-v2.jpg)\n\n**Figure 1.:** (A) The architecture of the Flip-Flop cassette. The cassette consists of two independent modules (PT and GT), that are oriented in opposite orientations. The PT module contains a splice acceptor (SA), followed by an EGFP tag and a splice donor (SD). The GT module contains a SA sequence, followed by the T2A peptide coding sequence (which will induce a translational skip), the mCherry coding region, stop codons in all three coding frames, and an SV40 polyA transcriptional termination signal. Given the opposite orientation of both modules, only one of the SA sequence will be active with respect to the recipient gene. The two modules are nested within a pair of FRT and FRT14 inverted repeats, forming a flippase-responsive FLEx switch. Finally, the entire cassette is flanked by two inverted attB sequences that permit phiC31-mediated RMCE between the Flip-Flop cassette and pre-existing MiMIC elements. A comparison of the FRT and FRT14 sequence is shown below. The FRT14 sequence varies from the canonical FRT sequence at the residues highlighted in red. (B) Schematic showing the inversion of a PT-oriented Flip-Flop cassette, inserted into the coding intron of a hypothetical gene. Upon FLP-expression, the FLEx switch undergoes two recombination events: (1) recombination between the two FRT sites or between the two FRT14 sites leads to cassette inversion that is followed by (2) excision of either the pair of FRT sites or the pair of FRT14 sites, both of which have obtained the same orientation due to the flip. Since the remaining unpaired FRT and FRT14 sites are not able to recombine, the cassette will be locked in the GT orientation. Thus, the initial PT orientation allows the gene to be tracked by EGFP-tagged protein expression in tissues. FLP activity inverts the Flip-Flop cassette in random cells, generating a mosaic tissue consisting of cells that did not undergo the flip and are still expressing the EGFP-tagged protein and cells that inverted the Flip-Flop cassette into the GT orientation, which are marked by mCherry expression. (C) (a) Wing imaginal disc from a effMI05507EGFP-T2A-mCherry/+ third instar larva, expressing Eff-EGFP-Eff (b) Wing imaginal disc from a hsFLP; effMI05507EGFP-T2A-mCherry/+ third instar larva showing hsFLP-induced clones that loose the GFP signal (c) and express mCherry (d) Scale bar\u00a0=\u00a050 \u00b5m. (D) (a) Stage 6 egg chamber obtained from SNF4AyMI09417EGFP-T2A-mCherry/+ females reveals EGFP-SNF4A\u03b3-EGFP expression in all follicle cells. (b) Stage 6 egg chamber obtained from hsFLP; SNF4AyMI09417EGFP-T2A-mCherry/+ females shows a mosaic tissue with groups of cells that have retained EGFP expression, and others that have inverted the Flip-Flop cassette and can be recognized by loss of EGFP expression (c) and gain of mCherry expression (d), inversion of Flip-Flop cassette is marked with loss of EGFP and expression of mCherry. Scale bar\u00a0=\u00a010 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26420/elife-26420-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) (a) Gene structure of eff, showing the precise location of MiMIC insertion MI05507 (red triangle) as well as the orientation of the MiMIC cassette (red arrow) (based on FlyBase annotation release FB2017_01). The coding exons of isoforms that are tagged are shown in green, the 5\u2019 and 3\u2019 UTRs are shown in blue (b) Table describing the various alleles of eff used in this study, the nature of these alleles and their ability to complement a null allele eff[mer4]. (B)\u00a0(a) Gene structure of SNF4A\u03b3 showing the precise location of MiMIC insertion MI09417 (red triangle) and its orientation (red arrow) (based on FlyBase annotation release FB2017_01). The coding regions of isoforms that are tagged are shown in green, isoforms that is not tagged is shown in orange and the 5\u2019 and 3\u2019 UTRs are shown in blue. (b) Table displaying results of complementation tests performed between the various SNF4A\u03b3 alleles used in this study. MiMIC gene trap insertion SNF4A\u03b3MI09417 and the T2A-GAL4 derivative \u2013SNF4A\u03b3MI09417 T2A>GAL4 represent loss-of-function alleles of SNF4A\u03b3, as they fail to complement a deficiency (Df(3R)e-R1) spanning SNF4A\u03b3, as well as each other. The PT Flip-Flop insertion (SNF4A\u03b3MI09417-EGFP-T2A--mCherry) complements all tested loss-of-function alleles and hence produces a functional, EGFP-tagged protein.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26420/elife-26420-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Males carrying a hsFLP transgene and a null allele of the gene of interest are crossed to females carrying a Flip-Flop PT insertion in the same gene. The progeny is heat shocked to induce FLP expression and initiate Flip-Flop cassette inversion, generating mosaics (as described in Materials and methods) and the desired genotypes are analysed. (B) A similar scheme for inducing conditional gene inactivation in developing eyes, using ey-FLP. (C) Crossing scheme for conditional gene inactivation combining the Flip-Flop cassette with FLP expressed using the GAL4/UAS binary system. (D) Crossing scheme for Flip-Flop-mediated conditional gene inactivation using a T2A-GAL4 driver, inserted in the gene of interest. The T2A-GAL4 insertion creates a loss-of-function allele and simultaneously induces GAL4 expression according to the spatial and temporal pattern of the gene of interest. Hence, the T2A-GAL4-induced FLP expression will promote cassette inversion in all the cells that express the gene under study.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26420/elife-26420-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Gene structure of Cdep, showing the precise location of MiMIC insertion MI12769 (red triangle) as well as the orientation of the MiMIC cassette (red arrow) (based on FlyBase annotation release FB2017_01). The coding regions of isoforms that are tagged by the MiMIC are shown in green and the 5\u2019 and 3\u2019 UTRs are shown in blue. (b) A\u00a0table describing the various Cdep alleles used in this study, nature of the insertions and the ability of alleles to complement a gene trap alleles of Cdep. (B) (a) Eye-antennal discs from CdepMI12769EGFP-T2A-mCherry/+ larvae expressing Cdep-EGFP-Cdep (b) Eye-antennal discs from ey-FLP; CdepMI12769EGFP-T2A-mCherry/+ show patches of mCherry expressing cells, in which cassette inversion occurred. (c and d) Images displaying the individual GFP (c) and mCherry (d) channels of the eye-antennal disc shown in (b). Scale bar\u00a0=\u00a050 \u00b5m.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/26420/elife-26420-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A\u2013B) Third instar larval brains from heterozygous animals carrying the effMI05507-T2A-mCherry-EGFP GT-oriented insertion stained for mCherry (red) and GFP (green). (A) (a) Image of a third instar larval effMI05507-T2A-mCherry-EGFP /+ brain (b) ey-FLP-mediated cassette inversion leads to EGFP expression in nearly all eyeless\u2013expressing cells in the eye disc (white dotted line) and the third instar larval brain (blue dotted line). (c and d) Images displaying the individual GFP (c) and mCherry (d) channels of the larval brain shown in (b), scale bar\u00a0=\u00a050 \u00b5m. (B) Heat-shock-mediated FLP-expression induces cassette inversion and Eff-EGFP-Eff expression (green, a and c) in random subsets of cells in the third instar larval brain of effMI05507-T2A-mCherry-EGFP /+ animals, scale bar\u00a0=\u00a050 \u00b5m. (C) Table showing non-functional PT, and GT insertions in Nedd8 and Sik3 generated in this study. These alleles fail to complement the tested deficiencies. This indicates that the EGFP tag in these genes disrupts the proper functioning or the expression of these genes. Nevertheless, these PT insertions could be flipped efficiently using ey-FLP and hsFLP (data not shown).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/26420/elife-26420-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Eye-antennal discs from effMI5507EGFP-T2A-mCherry/+ (A), SNF4A\u03b3MI09417EGFP-T2A-mCherry/+ (B), Trim9MI12525EGFP-T2A-mCherry/+ (C), Sik3MI15336EGFP-T2A-mCherry/+ (D), Nedd8MI13778EGFP-T2A-mCherry/+ (E), and CdepMI12769EGFP-T2A-mCherry/+ (F) stained for EGFP (green), marking the tagged protein and for mCherry (red), marking mutant cells. (a) Eye-antennal discs from animals containing PT-oriented Flip-Flop insertions in the respective genes, revealing the expression pattern of the gene of interest. (b) ey-FLP-mediated cassette inversion for the respective genes, showing mosaic expression of mCherry upon inversion of the Flip-Flop cassette. (c and d) Images displaying the individual GFP (c) and mCherry (d) channels of the eye-antennal discs shown in (b) for each gene. The efficiency of cassette inversion for each gene is shown on right side. Scale bar\u00a0=\u00a050 \u00b5m.\n\n### Flip-Flop-mediated mosaics in mitotically active cells\n\nWe created PT insertions for nine genes using available MiMIC insertions: effete (eff), Nedd8, SNF4/AMP-activated protein kinase gamma subunit (SNF4A\u03b3) Chondrocyte-derived ezrin-like domain containing protein (Cdep), Tripartite motif containing 9 (Trim9), Salt-Induced kinase3 (Sik3), Ankyrin2 (Ank2), Circadian trip (Ctrip) and Ecdysone-induced protein 63E (Eip63E). Seven of the nine generated PT insertions complement the lethality associated with loss of the corresponding gene, suggesting that these internally tagged proteins are biologically functional, consistent with previous observations (Nagarkar-Jaiswal et al., 2015; Venken et al., 2011). The PT insertion in eff (Figure 1\u2014figure supplement 1A) introduces the\u00a0expression of internally tagged Eff (Eff-EGFP-Eff) in the wing discs of effMI05507-EGFP-T2A-mCherry larvae (Figure 1C a). Heat-shock-induced expression of FLP (hsFLP) (Figure 1\u2014figure supplement 2A) causes loss of the EGFP signal and induces mCherry expression in random subsets of cells (Figure 1C b-d). Similarly, the PT insertion in SNF4A\u03b3 (Figure 1\u2014figure supplement 1B a) leads to SNF4A\u03b3-EGFP-SNF4A\u03b3 expression in adult egg chambers (Figure 1D a). The SNF4A\u03b3 Flip-Flop cassette can be flipped to the GT orientation efficiently, generating large clones of cells expressing mCherry upon heat-shock (Figure 1D b-d). Finally, we tagged Cdep (Figure 1\u2014figure supplement 3A a-b), observed EGFP expression in the eye-antennal discs, and efficiently induced inversions using ey-FLP (Figure 1\u2014figure supplement 3B and Figure 1\u2014figure supplement 2B). Hence, the PT orientation insertions permit gene expression analysis and can effectively be inverted to create mCherry marked mutant cells.\n\nA comparison of the PTs generated using a previous, shorter, RMCE construct (GFSTF; Venken et al., 2011) and the PT of the Flip-Flop cassette did\u00a0not show any obvious difference in expression pattern or genetic properties based on complementation tests. In summary, if the protein traps are functional with the GFSTF cassette they are also functional with the EGFP-tagged proteins derived from the Flip-Flop.\n\nIn addition to the above-described PT lines, we generated GT-lines expressing mCherry for five genes: eff, Cdep, Trim9, Ank2, and Ctrip. Complementation tests with independently derived loss-of-function alleles (or deficiencies) indicate that these GT-alleles are indeed loss-of-function alleles. Note that none of these GT insertions induce an obvious dominant phenotype. We observed efficient conversion of an initial GT insertion to the PT orientation for effMI05507 T2A-mCherry-EGFP, using either the ey-FLP or hsFLP drivers in larval brains. As shown, the use of ey-FLP introduces Eff-EGFP-Eff expression in the eye discs (area within white dotted lines), as well as the area of the brain where eyeless is expressed (demarcated by blue dotted lines) (Figure 1\u2014figure supplement 4A). In contrast to the\u00a0ey-FLP, smaller clones of randomly positioned wild-type and mutant cells can be generated by stochastic FLP expression when applying heat shocks. Indeed, heat-shock-induced hsFLP expression brought about small patches of EGFP-positive cells in effMI05507 T2A-mCherry-EGFP larval brains (Figure 1\u2014figure supplement 4B). This type of experiment creates wild-type cells in an otherwise mutant animal and should help to assess whether a mutant phenotype can be attenuated or reverted, or not. In addition, these experiments may help identify in which tissue an essential gene is required.\n\nFinally, for Nedd8 and Sik3 we generated PT lines, but these insertions failed to complement corresponding deficiencies, showing that the internal EGFP tag disrupts protein function. Nevertheless, we were able to induce inversions for both genes using ey-FLP, confirming our observation that flipping the Flip-Flop cassette is efficient (Figure 1\u2014figure supplement 4C and Figure 1\u2014figure supplement 5D and E). In summary, both orientations of the Flip-Flop cassette could effectively be flipped.\n\nTo examine and compare the efficiency of the Flip-Flop inversions, we tested six genes using the same FLP-source, under identical conditions. For SNF4A\u03b3, Trim9 and eff, more than 95% of the cells undergo cassette inversion. For Nedd8, cdep, and Sik3, more than 70% cells displayed Flip-Flop inversions (Figure 1\u2014figure supplement 5). Hence, inducing Flip-Flop inversions in eye-antennal discs is highly efficient for all genes tested.\n\n### Conditional gene inactivation using Flip-Flop in post-mitotic cells\n\nNext, we tested if Flip-Flop can be used for gene inactivation in post-mitotic cells by using Trim9 as an example. Previously, Song et al. (2011) created an imprecise excision of a P-element (P{GawB}Trim9[NP4638]) inserted in the 5\u2032-regulatory region of Trim9 and reported that animals lacking the first few amino acids of Trim9 are viable and exhibit a droopy wing phenotype (Song et al., 2011). We generated both GT- (Trim9MI12525P T2A-mCherry-EGFP) and PT-oriented (Trim9MI12525EGFP- T2A-mCherry) Flip-Flop insertions in Trim9 (Figure 2\u2014figure supplement 1A a). The GT insertion is homozygous lethal and does not complement a deficiency (Trim9Df), while the PT insertion is viable in trans over Trim9Df (Figure 2\u2014figure supplement 1A b) suggesting that the PT encodes a functional protein. When the PT insertion in Trim9MI12525EGFP- T2A-mCherry/Trim9Df animals was inverted in all cells using a ubiquitously expressed (Actin-GAL) FLP, the animals died as second instar larvae. This, together with the lethality observed in the GT insertion, suggests that a strong loss of Trim9 leads to early developmental lethality.\n\nWe then examined the consequences of neuronal loss of Trim9, by inverting the Trim9MI12525EGFP T2A--mCherry PT insertion in larval and adult brains using neuronally expressed FLP (nSyb-GAL4>UAS-FLP) (Figure 1\u2014figure supplement 2C and Figure 2\u2014figure supplement 1B). Prior to the flip, in the PT orientation, Trim9 is expressed in numerous neurons in the larval brain (Figure 2A a-d) and the protein is localised to nuclei and cytoplasm (Figure 2A e-h). These cells do not express mCherry. Following inversion to the GT orientation, we detected mCherry expressing cells in the larval brain (Figure 2A a\u2019-d\u2019). Upon close examination, we observed three different populations of neurons. First, cells that have undergone cassette inversion and are marked with mCherry (Figure 2A e\u2019-h\u2019, indicated by number (1) Second, cells that are EGFP-positive (Trim9-EGFP-Trim9) and did not flip (Figure 2A e\u2019-h\u2019, indicated by number (2) Third, a population of cells that expresses both Trim9-EGFP-Trim9 as well as mCherry (Figure 2A e\u2019-h\u2019, indicated by number (3) Note that Trim9-EGFP-Trim9 levels are lower in these cells. We reason that these cells have undergone cassette inversion and are hence expressing mCherry, but that the Trim9-EGFP-Trim9 that was produced prior to the flip has not been fully degraded. Thus, the population of cells that express only mCherry must have lost most of the tagged Trim9 protein, whereas Trim9-EGFP-Trim9 perdures in a subset of cells that are yellow. Importantly, this allows analysis of protein perdurance. In addition, it permits researchers to only select and analyse those cells that are truly mutant and have lost the majority of the wild-type protein. Neuronal Trim9 inactivation does not affect the eclosion of the animal but leads to the\u00a0sterility of short-lived animals with droopy wings, corroborating previous observations associated with the loss of Trim9 (Song et al., 2011).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/26420/elife-26420-fig2-v2.jpg)\n\n**Figure 2.:** (A) A\u00a0third instar larval brain of nSyb-GAL4/+; Trim9MI12525EGFP-T2A-mCherry/Trim9Df, raised at 29\u00b0C stained for EGFP (green, a, d and f), mCherry (red, b, d and g) and Elav (blue, c, d and h). In the absence of UAS-FLP, only GFP signal is detected, reflecting the Trim9-EGFP-Trim9 expression pattern. In contrast, mCherry is not expressed. (b, d and g). Magnification of the region indicated by a white square in panel d (e\u2013h). Third instar larval brains of UAS-FLP/nSyb-GAL4; Trim9MI12525EGFP-T2A-mCherry/Trim9Df, expressing FLP under the control of nSyb-GAL4 show cassette inversion that leads to the loss of EGFP and gain of mCherry expression in neurons (a\u2019\u2013h\u2019). Magnification of the region indicated by a white square in panel (d\u2019) shows the existence of three populations of neurons (e\u2019\u2013h\u2019): neurons that express mCherry and have completely lost GFP expression (1), neurons that have not undergone cassette inversion and thus still express GFP but lack mCherry expression (2) and neurons that express both tags, suggesting they have recently undergone cassette flip (as indicated by mCherry expression), and still contain some remaining Trim9-EGFP-Trim9 protein that perdures following the cassette flip, scale bar\u00a0=\u00a050 \u00b5m (a, b, c, d, a\u2019, b\u2019, c\u2019 and d\u2019), scale bar\u00a0=\u00a05 \u00b5m (e, f, g, h, e\u2019, f\u2019, g\u2019 and h\u2019). (B) Adult brain of tubP-GAL80ts; Trim9MI12525EGFP-T2A-mCherry/Trim9Df; UAS-FLP/nSyb-GAL4 animals stained for EGFP (green), mCherry (red) and Elav (blue). The temperature-sensitive GAL80 (GAL80ts), expressed under a tubulin promoter (tubP) was used to prevent nSyb-GAL4 from driving expression of UAS-FLP during development. (a\u2013d) Adult brain of tubP-GAL80ts; Trim9MI12525EGFP-T2A-mCherry/Trim9Df; UAS-FLP/nSyb-GAL4 control animals, raised at 18\u00b0C display Trim9-EGFP-Trim9 (green, a and d) and do not show any mCherry expression (red, b and d). (a\u2019\u2013d\u2019) Adult brains of tubP-GAL80ts; Trim9MI12525EGFP-T2A-mCherry/Trim9Df; UAS-FLP/nSyb-GAL4 animals, raised at 18\u00b0C until 4 days after eclosion, and then shifted to 29\u00b0C to induce FLP-expression, show mCherry-expressing neuronal cells in which the cassette inversion has taken place (red, b\u2019 and d\u2019), scale bar\u00a0=\u00a050 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26420/elife-26420-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A)\u00a0(a) Gene structure of Trim9, showing the precise location of MiMIC insertion MI12525 (red triangle) as well as the orientation of the MiMIC cassette (red arrow) (based on FlyBase annotation release FB2017_01). The coding regions of isoforms that are tagged are shown in green and the 5\u2019 and 3\u2019 UTRs are shown in blue. (b) A\u00a0table describing the various Trim9 alleles used in this study, nature of the insertions, and the\u00a0ability of these alleles to complement a deficiency spanning Trim9. Though the PT-oriented Flip-Flop insertion in Trim9MI12525EGFP-T2A-mCherry is homozygous lethal, Trim9MI12525EGFP-T2A-mCherry/Trim9Df animals are viable, indicating the presence of a second-site, lethal mutation elsewhere on the Trim9MI12525EGFP-T2A--mCherry chromosome. (B) A\u00a0third instar larval brain of nSyb-GAL4 > UAS-2X-EGFP animals, stained for GFP (green, a and b), and neurons marked by the expression of Elav (blue, c) revealing the nSyb-GAL4 expression pattern in a developing larval brain. Scale bar\u00a0=\u00a050 \u00b5m.\n\nNext, we explored the use of the Flip-Flop cassette in post-mitotic, adult neurons. We expressed GAL80ts (a suppressor of GAL4 at low temperature) to prevent nSyb-GAL4 from inducing flips during development. tubP-GAL80ts; Trim9MI12525EGFP- T2A-mCherry/Trim9Df; UAS-FLP/nSyb-GAL4 animals were raised at 18\u00b0C until the fourth day of adulthood and were subsequently shifted to 29\u00b0C. Animals that were not shifted to 29\u00b0C did not express mCherry in adult brains (Figure 2B a-d). In contrast, those shifted to a higher temperature on the fourth day of adulthood showed loss of Trim9-EGFP-Trim9 expression and gain of mCherry in a large subset of neurons (Figure 2B a\u2019-d\u2019). Interestingly, animals shifted to 29\u00b0C do not show droopy wing phenotype, but have a reduced lifespan. This suggests that the droopy wing phenotype observed by Song et al. (2011) is due to the loss of neuronal Trim9 during development, and not because of loss of the gene in adults.\n\n### Loss of SNF4A\u03b3 in adults flies leads to severe neurodegeneration\n\nTo further explore the use of Flip-Flop in adult flies, we selected a subunit of the AMP-activated protein kinase (AMPK) complex. The AMPK complex is involved in sensing stresses such as a drop in the ratio of ATP/AMP, hypoxia, ischemia, and heat-shock (Hardie et al., 2003). The ATP/AMP ratio is sensed through an allosteric mechanism by the non-catalytic \u03b3 subunit of the AMPK complex, which in turn promotes the phosphorylation of the catalytic \u03b1 subunit enhancing \u03b1 subunit\u2019s kinase activity (Sanders et al., 2007; Scott et al., 2004). Phosphorylation of AMPK\u2019s targets by the \u03b1-subunit activates a signalling cascade that ultimately regulates fatty acid oxidation, autophagy, and mitochondrial biogenesis and boosts the ATP/AMP ratio within the cell (Hardie et al., 2012). Sensing the ATP/AMP ratio by the \u03b3 subunit is thus critical for the proper function of the AMPK complex, and together with the other AMPK subunits, the \u03b3 subunit is crucial for proper energy homeostasis (Hardie et al., 2003).\n\nIn Drosophila, the \u03b3 subunit is encoded by SNF4A\u03b3, with 16 transcriptional isoforms. Of these, 15 should be tagged using MI09417 (Figure 1\u2014figure supplement 1B a). We converted this MiMIC insertion into a T2A-GAL4 (Diao et al., 2015) allele (SNF4A\u03b3MI09417T2A>GAL4), and a Flip-Flop insertion in the PT orientation (SNF4A\u03b3MI09417EGFP- T2A-mCherry) (Figure 3A and Figure 1\u2014figure supplement 1B a). SNF4A\u03b3MI09417T2A>GAL4 truncates the SNF4A\u03b3 protein and simultaneously expresses GAL4 in the spatiotemporal pattern of SNF4A\u03b3. The SNF4A\u03b3MI09417 T2A>GAL4 allele fails to complement the SNF4A\u03b3Df and acts as a loss-of-function allele. On the other hand, SNF4A\u03b3MI09417EGFP-T2A-mCherry/SNF4A\u03b3MI09417 and SNF4A\u03b3MI09417EGFP-T2A-mCherry/SNF4A\u03b3Df animals are viable, indicating that the Flip-Flop insertion produces a functional SNF4A\u03b3-EGFP-SNF4A\u03b3 protein (Figure 1\u2014figure supplement 1B b).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/26420/elife-26420-fig3-v2.jpg)\n\n**Figure 3.:** (A) Gene structure of SNF4A\u03b3, displaying one of the transcriptional isoforms and the precise location of MiMIC insertion MI09417 (red triangle) as well as the orientation of the MiMIC cassette (red arrow). The structure of the T2A-GAL4 insertion (SNF4A\u03b3MI094177T2>GALl4) and the PT oriented Flip-Flop insertion (SNF4A\u03b3MI09417EGFP-T2A-mCherry) are shown below. (B) (a) Control third instar larva (SNF4A\u03b3MI09417EGFP-T2A-mCherry/SNF4A\u03b3MI09417 T2A>-GALl4; PT) and third instar larva in which SNF4A\u03b3 is inactivated through cassette flip, driven by the T2A-GAL4 insertion in SNF4A\u03b3 on the other chromosome (UAS-FLP;; SNF4A\u03b3MI094177EGFP-T2A-mCherry/SNF4A\u03b3MI09417T2A>GAL4; GT) (b) Expression of mCherry in larvae shown in (a). Arrowhead indicates auto-fluorescence of gut tissue in control animals (SNF4A\u03b3MI04147EGFP-T2A-mCherry/SNF4A\u03b3MI09417T2A-GAL4; PT), which differs from the mCherry signal in animals that underwent cassette flip (UAS-FLP;;SNF4A\u03b3MI09147EGFP-T2A-mCherry/SNF4A\u03b3MI09147 T2A>GAL4, GT). (c) Pupae of control (PT) and experiment genotypes (GT). Loss of SNF4A\u03b3 leads to premature pupariation and death. (C) ey-FLP-mediated cassette inversion in developing eyes leads to electroretinogram (ERG) defects. (Left) ERG trace obtained from control animals (SNF4A\u03b3MI09417EGFP-T2A-mCherry/SNF4A\u03b3Df) on day 1 and day 30. (Right) ERG trace obtained from experimental animals (ey-FLP; SNF4A\u03b3MI09417EGFP-T2A-mCherry/SNF4A\u03b3Df) in which ey-FLP-mediated cassette inversion induced loss of SNF4A\u03b3 in\u00a0>95% of the developing eye (see also Figure 1\u2014figure supplement 5B). (D) Histogram showing relative ERG amplitude (indicated by the red double-headed arrow in (C)), measured on days 1 and 30 of control animals (PT/green) and experimental animals with ey-FLP-mediated SNF4A\u03b3 inactivation (GT/red). (At least eight animals of each genotype were analysed. *** indicates a p-value<0.001 and ** indicates a p-value<0.01 obtained by performing a student T-test). (E) Image displaying adult eyes of control (SNF4A\u03b3MI09417EGFP-T2A-mCherry/SNF4A\u03b3Df, a\u2013c) and experimental (ey-FLP; SNF4A\u03b3MI09417EGFP-T2A-mCherry/SNF4A\u03b3Df, a\u2019\u2013c\u2019) animals stained with phalloidin (blue) marking the seven visible photoreceptors arranged within each ommatidium (red dotted circle), SNF4A\u03b3-EGFP-SNF4A\u03b3 expression (green) and mCherry expression (red). (b, b\u2019, c and c\u2019) mCherry channel (b, b\u2019) and phalloidin staining (c, c\u2019) of the image shown in (a and a\u2019). (a\u2019) eyFLP-driven loss of SNF4A\u03b3 induces mCherry expression (b\u2019) and leads to defects in photoreceptor arrangement and loss of individual rhabdomeres in ommatidia (red dotted circle) (c\u2019 indicated by numbers), whereas control ommatidia consistently contain seven visible rhabdomeres (c), scale bar\u00a0=\u00a05 \u00b5m.\n\nIn SNF4A\u03b3MI09147 T2A>GAL4 /SNF4A\u03b3MI09147EGFP- T2A-mCherry animals, SNF4\u03b3-EGFP-SNF4A\u03b3 is broadly expressed in larvae (data not shown). In the presence of UAS-FLP, the GAL4 from SNF4A\u03b3MI09417 T2A>GAL4 will drive FLP expression in cells expressing SNF4A\u03b3, which will convert the PT insertion into a GT insertion. The GT insertion, while expressing mCherry, leads to the loss of functional protein produced by the SNF4A\u03b3MI09147EGFP-T2A-mCherry allele. Hence, UAS-FLP;; SNF4A\u03b3MI09417EGFP-T2A-mCherry/SNF4A\u03b3MI094177 T2A>GAL4 animals lack expression of both alleles of SNF4A\u03b3 (Figure 1\u2014figure supplement 2D). These animals die as poorly\u00a0developed pupae and are slim and elongated in the larval stage (Figure 3B b-c). These larvae show a broad expression of mCherry that resembles the EGFP expression pattern from SNF4A\u03b3MI09417EGFP- T2A-mCherry allele (Figure 3B b).\n\nNext, we induced Flip-Flop inversion in eyes. The Drosophila eye is a highly organised structure that is composed of about 800 small functional units called ommatidia. Every ommatidium contains eight photoreceptor cells (R1-R7) each with a rhabdomere, the light-sensing organelle. Within each ommatidium, rhabdomeres are arranged in a highly stereotypic fashion (Figure 3E c control panel, indicated by numbers). In ey-FLP;;SNF4A\u03b3MI09417EGFP-T2A-mCherry/SNF4A\u03b3Df animals, almost all photoreceptors inverted from the PT- to GT- orientation, as revealed by mCherry expression (Figure 3E b\u2019). Inverting the cassette in SNF4A\u03b3 to a GT orientation reduces the amplitude of the electroretinogram (ERG) in 1-day-old flies. These animals did not show a stronger reduction in ERG amplitude when measured at day 30 and hence do not show further degeneration (Figure 3C and D). We also observed a reduction in the number of rhabdomeres as well as defects in photoreceptor organisation (Figure 3E\u2013c\u2019). The loss of SNF4A\u03b3 disrupts energy homeostasis, possibly prevents the photoreceptors from meeting their high-energy demand and leading to a reduction in their activity. Similar defects have been described in alicorn mutant eye clones (SNF4A\u03b1) (Spasi\u0107 et al., 2008).\n\nIt has been previously shown that SNF4A\u03b3 is required for autophagy (Lippai et al., 2008). We, therefore, analysed the role of SNF4A\u03b3 in autophagy in mutant cells generated by Flip-Flop inversion. To this end, we induced Flip-Flop-mediated loss of SNF4A\u03b3 in the adult gut and starved adults for 24 hr by growing them on agar lacking amino acids (aa) (Figure 4A). To analyse the induction of autophagy, we stained adult gut from these animals for p62, a marker that is degraded by autophagy. If SNF4A\u03b3 is required for autophagy, loss of SNF4A\u03b3 should lead to p62 accumulation in mutant cells, as they should not induce autophagy. However, we observed a loss of p62 in mutant cells (mCherry positive) and robust staining of p62 in control cells (EGFP positive, indicated by red arrows) (Figure 4B and Figure 4\u2014figure supplement 1). Interestingly, this parallels the observation by Sahani et al. (2014) in vertebrate cells. These authors observed that following prolonged amino acid starvation, the autophagy marker p62 is restored because of an increase in transcription and translation mediated by the availability of autophagy derived aa. Hence, we propose that loss of SNF4A\u03b3 blocks autophagy, deprives cells of aa during starvation, leading to a loss of p62. Similar data have been documented in Drosophila larvae and mammalian cells (B'chir et al., 2014; Colosetti et al., 2009; Duran et al., 2011; Erdi et al., 2012).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/26420/elife-26420-fig4-v2.jpg)\n\n**Figure 4.:** (A) Flow chart describing the experimental outline to induce autophagy in the adult gut (B) Image displaying the adult midgut from amino acid-starved hsFLP; SNF4A\u03b3MI09417EGFP-T2A-mCherry/ SNF4A\u03b3MI09417 animals, stained for GFP (a, d), mCherry (b, d), p62 (c, d) and DAPI (white) (d). Red arrows indicate control cells expressing SNF4A\u03b3-EGFP-SNF4A\u03b3, revealing higher levels of p62. In contrast, mutant cells are mCherry positive and have reduced p62 levels, indicating a defect in autophagy induction, scale bar\u00a0=\u00a05 \u00b5m (C) Haemotoxylin and Eosin staining on brain sections of SNF4A\u03b3MI09417EGFP-T2A-mCherry/SNF4A\u03b39417 (control) and hsFLP; SNF4A\u03b3MI09417EGFP-T2A-mCherry/ SNF4A\u03b3MI09417 experimental flies. hsFLP-induced cassette inversion in adult flies causes massive neurodegeneration, evident by the severe structural changes observed in brains of 3- and 10-day-old experimental animals (b and d), whereas age-matched control brains show no sign of neurodegeneration (a and c).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26420/elife-26420-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Image displaying the adult mid gut from amino acid starved hsFLP; SNF4A\u03b3MI09417EGFP-T2A-mCherry/ TM3,Sb[1] animals, stained for GFP (a, d), mCherry (b, d), p62 (c, d) and DAPI (white) (d). Red arrows indicate cells expressing SNF4A\u03b3-EGFP-SNF4A\u03b3 (hsFLP; SNF4A\u03b3MI09417EGFP-T2A-mCherry/ TM3,Sb[1]), and white arrows indicate mCherry-expressing cells (hsFLP; SNF4A\u03b3MI09417T2A-mCherry-EGFP/ TM3,Sb[1]). Both the populations show similar levels of p62. Scale bar\u00a0=\u00a05 \u00b5m.\n\nPrevious studies have described that developmental loss of SNF4A\u03b3 leads to neurodegeneration (Cook et al., 2012; Tsch\u00e4pe et al., 2002). To further characterise the role of SNF4A\u03b3 in Drosophila neurons, we used a post-mitotic GAL4 driver C155-GAL4, to drive UAS-FLP and obtain GT orientated Flip Flops in all neurons. Such pan-neuronal flip of SNF4A\u03b3MI09417EGFP-T2A-mCherry into a non-functional GT leads to severe locomotor defects in adult flies (data not shown). We also examined the role of SNF4A\u03b3 in adults using hsFLP-mediated cassette inversion. Flies of the genotype hsFLP; SNF4A\u03b3MI09417EGFP- T2A-mCherry / SNF4A\u03b3MI09417 were raised at 18\u00b0C and were given a 2-hr heat-shock at 37\u00b0C, 3 days after eclosion. Two days after the heat-shock, H and E staining of adult brains revealed severe neurodegeneration. The extent of neuronal loss did not worsen by day 10 (Figure 4C b and d). In addition, these flies typically die 3 to 4 weeks later. Following heat-shock, animals that do not carry hsFLP do not show obvious lesions in the brain (Figure 4C a and c). We conclude that loss of SNF4A\u03b3 leads to neuronal demise in adult flies.\n\nIn conclusion, the Flip-Flop strategy allows conditional gene inactivation and generation of mosaics for a side-by-side comparison of mutant and wild-type cells in the same tissue, while simultaneously marking wild-type and mutant cells with different fluorescent markers. By using different sources of FLP, one can control the spatial and temporal pattern of mosaic generation and gene inactivation. Using hsFLP, we show that Flip-Flop can be used to severely inhibit gene function during development, as well as in adults in both mitotically active and post-mitotic cells. Flip-Flop can therefore reliably be used to explore gene functions both during development and in adult flies. Recently, a similar Flippase-based conditional gene inactivation method \u2018FlpStop\u2019 was published (Fisher et al., 2017). Both the FlpStop and Flip-Flop strategies employ a similar Flex switch to induce local cassette inversion. However, there are several important differences between the two technologies. (1) FlpStop does not tag the endogenous protein with a fluorescent tag, while Flip-Flop produces an internally EGFP-tagged protein. While this may seem beneficial for genes where an internal tag is deleterious to the protein, we argue that for the majority of the genes the internal EGFP tag is not detrimental (this study; Nagarkar-Jaiswal et al., 2015). In contrast, endogenous tagging is very advantageous as it permits to track the expression and subcellular localization of a protein, allows anti-GFP antibody-mediated immunoprecipitations followed by mass spectroscopy (David-Morrison et al., 2016; Yoon et al., 2017), enables ChIP sequencing (N\u00e8gre et al., 2011), and permits mRNA or protein removal with iGFPi (Neum\u00fcller et al., 2012) or deGradFP (Caussinus et al., 2011; Nagarkar-Jaiswal et al., 2015; Urban et al., 2014). Finally, the EGFP tag allows us for the first time to track protein perdurance in mutant cells. (2) The second major difference between FlpStop and Flip-Flop relates to how mutant cells are marked. In FlpStop, tdTomato is expressed under the control of the UAS/GAL4 system. Hence, cells that have undergone inversion will express tdTomato, irrespective of the expression pattern of the gene. In contrast, Flip-Flop will label cells with mCherry only if they express the gene of interest. In summary, the ability to track the loss of the protein of interest in mutant cells concomitant with loss of the EGFP signal while simultaneously marking the mutant cells with mCherry from the same regulatory elements distinguishes Flip-Flop from all other mosaic analyses methods.\n\nWe would like to note that Flip-Flop insertions can be generated based on existing MiMIC insertions (Nagarkar-Jaiswal et al., 2015) as well as MiMIC-like elements introduced by CRISPR/Cas9 (Zhang et al., 2014) and can be extended to Drosophila cell culture system using RMCE (Manivannan et al., 2015). We, therefore, believe that the use of Flip-Flop will permit functional annotation of numerous genes in unprecedented detail.\n\n## Materials and methods\n\n### Plasmid construction\n\nFlip-Flop constructs were generated using the following steps: \u2018attB-FRT14-FRT-SA-(GGS)4-PhaseX-EGFP-(GGS)4-SD-{SA-3xSTOP-SV40pA}reverse orientation-FRT14-FRT-attB\u2019 for all three reading frames were synthesised in pUC57 (Genewiz). The T2A-mCherry fragments with appropriate coding frame were amplified using PCR and cloned as AgeI/HindIII fragment in pUC57-\u201cattB-FRT14-FRT-SA-(GGS)4-PhaseX-EGFP-(GGS)4-SD-{SA-3xSTOP-SV40pA} reverse orientation-FRT14-FRT-attB to create pFlip-Flop-P0, pFlip-Flop-P1 and pFlip-Flop-P2.\n\n### Generation of Flip-Flop fly lines via RMCE\n\nRMCE was performed as described in Nagarkar-Jaiswal et al., 2015.\n\n### Mosaic analysis\n\nMosaics were generated in larval imaginal discs and brain tissue using FLP expressed under the control of eyeless promoter (ey-FLP) or using GAL4 drivers (C155-GAL4 or nSyb-GAL4) to drive the expression of UAS-FLP. Corresponding crosses (Figure 1\u2014figure supplement 3) were raised at 25\u00b0C. For experiments where hsFLP was used to generate mosaics, embryos from corresponding crosses (Figure 1\u2014figure supplement 3) were collected for 24\u201330 hr. These embryos were given a heat-shock in a water bath at 37\u00b0C for one hr. Animals were raised at 25\u00b0C until the third larval instar stage before analysis. For adult mosaics, appropriate fly crosses (Figure 1\u2014figure supplement 2) were set up at 18\u00b0C. Three-day-old adult flies were heat shocked at 37\u00b0C in an air incubator for 2 hr. For ovaries (Figure 1\u2014figure supplement 3c), females were dissected 4 days after eclosion. For adult brains (Figure 4B), adults were recovered at 25\u00b0C and dissected on days 3 or 10.\n\n### Immunostaining\n\nLarval brain, imaginal discs, and adult brain staining were performed as described in Nagarkar-Jaiswal et al., 2015, adult ovary staining was performed as described in Urban et al. (2014). Adult eye staining was performed as described in Jaiswal et al. (2015).\n\n### Antibodies\n\nPrimary antibodies: chicken anti-GFP 1:500 (Abcam, ab13970; RRID:AB_300798), rabbit anti-DsRed 1:500 (Clontech, 632496; RRID:AB_10013483), rabbit anti p62 1:2000 (David-Morrison et al., 2016) and rat anti-Elav 1:500 (DSHB, 7E8A10) (O'Neill et al., 1994). Secondary antibodies: Alexa 488 (RRID:AB_142924; Invitrogen, Life Technologies, Grand Island, NY), Cy5 (RRID:AB_2338072 and RRID:AB_2338393) and Cy3 (RRID:AB_2338059) conjugated secondary antibodies (Jackson ImmunoResearch, West Grove, PA) were used at 1:500. Phalloidin conjugated with Alexa 647 (Invitrogen) was used at 1:500.\n\n### Electroretinogram (ERG)\n\nRecordings were performed as described in Nagarkar-Jaiswal et al. (2015).\n\n### Adult brain histology\n\nAdult fly heads were fixed in 8% glutaraldehyde (EM grade) and embedded in paraffin. Sections (10 \u00b5m) were prepared by a microtome (Leica) and stained with Hematoxylin and Eosin as described in Chouhan et al., 2016. At least three animals were examined for each genotype.\n",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "438dfe23-7e92-441d-b73f-fa52b3e2af37",
+      "submission_id": "bc686d11-2fbc-4e72-aa5a-3697e73fb639",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mani Ramaswami, Trinity College Dublin , Ireland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.26420.017](https://doi.org/10.7554/eLife.26420.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Flip-Flop, a facile, cell cycle-independent, conditional gene inactivation strategy differentially tagging wild-type and mutant cells\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and K VijayRaghavan as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Michael Buszczak (Reviewer# 1), Frank Schnorrer (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper describes a technique called Flip-Flop, which marks wild-type cells with EGFP-tagged endogenous protein and mutant cells with mCherry. Essentially the method relies on a newly designed MiMIC cassette. This cassette carries EGFP flanked by splice acceptor and donors and a T2A-mCherry flanked by a splice acceptor and multiple stop codons in the inverted orientation. Both fluorescent modules are flanked by FRT, FRT14 and AttB sites. Expressing flippase converts the protein trap into a mutagenic gene trap or vice versa. The authors use a number of specific examples to demonstrate the effectiveness of the technique.\n\nThe data are well-presented and the Flip-Flop technique will be useful to the research community, particularly in the clonal analysis of gene function in post-mitotic cells. This technique also enables the user to evaluate protein perdurance in mutant cells.\n\nEssential revisions:\n\nReviewer #1:\n\nOne way to make this technique far more accessible to various researchers would be to generate a transgenic source of the three Flip-Flop cassettes. This would enable the targeting of currently available MiMIC lines with the Flip-Flop cassette using genetic crosses rather than injections. Is this possible?\n\nThe local chromatin environment may influence Flip-Flopping in different genes in different tissues. Do the authors see any evidence for this? The authors should provide quantification and statistics for the efficiency of Flip-Flopping in different settings, in both different genes and different tissues.\n\nThe authors should acknowledge/discuss that the level to which a GT can reduce gene function will depend on its position within a given gene and the efficiency of splicing. There may also be concerns that protein truncations will act in a dominant negative or neomorphic manner, potentially complicating the interpretation of results. Further discussion of the various advantages and disadvantages of the technique would strength the impact of the paper. Users of Flip-Flop will still have to characterize the degree to which a particular GT disrupts normal gene function.\n\nReviewer #2:\n\nThis new strategy uses the MiMIC collection and a new plasmid that can be inserted into the 2 attP sites of the MiMIC lines. It enables an irreversible Flp-induced conversion from a GFP protein trap, which should be functional, to an T2A-Cherry gene trap, which produces a mutant truncated protein, in addition to cytoplasmic Cherry from the endogenous enhancer. A nice by-product is the Cherry labelling of the mutant cells, at least if the gene studied is expressed at detectable levels.\n\nThe authors show that cassette inversion does indeed generate non-functional alleles for 4 genes, for which GFP fusions as viable. Thus, supposedly the tagged protein is functional and the gene trap is lethal. However, these studies were not done in clones.\n\nFor 2 of these genes (Trim 9 and SNF4A \u03b3) they provide data for clonal loss of function phenotypes, in either all neurons during larval development for Trim9, resulting in sterility, or in all cells expressing SNF4a \u03b3 during development resulting in pupal lethality. For SNF4a they show that clonal loss of function during eye development also results in some defects. If loss of SNF4a \u03b3 is induced in all cells by heat shock specifically in adults the brain neurons degenerate.\n\nTogether, this suggests that the FlipFlop tool works well to induce loss of function phenotypes in a conditional manner for genes in which suitable MiMIC insertions exist. This allows conditional deletion of genes in the adult fly.\n\n1) For this tool to be used by the broad community it would be important to know how many of the GFP-Cherry genetrap insertions result in functional proteins. As this cassette is much larger than the regular MiMIC exchange cassette I find this critical. The authors test only 6 genes, from which 4 result in viable flies and 2 do not. I would expect at least 10 or 20 cassette exchanges to provide statistics on this important point. By the cassette exchange method using transgenes, as published by the authors in 2016 in eLife, it should be easy to do it for a larger number of genes.\n\n2) I am a bit disappointed by the phenotypical analysis done in this study. The authors don't use the power of the system, having mutant and wild-type cells next to each other to assess cellular phenotypes. The reason for that might be lack of time \u2013 see point 3.\n\n3) The Clandinin lab used a very similar Flp induced method (called FlpStop) to also generate conditional alleles with MiMIC lines. The Flip inversion method appears very similar. Differences are that the wild-type protein is not labelled in the wild type cells and the mutant cells are labelled by UAS-tomato rather than gene trap Cherry (the former might be of advantage at least if the protein of interest is expressed a low level). This other study induced conditional alleles for 6 genes showing that the strategy indeed appears to work generally. As this study was published in February 2017 in eLife (Fisher et al.) the authors should compare the 2 strategies at least in the Discussion of a revised version.\n",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e062943e-97f2-433f-b1e6-b227f974bb45",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C1",
+      "claim": "Mosaic analysis in Drosophila cannot be easily performed in post-mitotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Mosaic analysis in Drosophila cannot be easily performed in post-mitotic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a limitation of current methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "0640c59e-6b49-4bd9-b816-ad841eca8474",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C2",
+      "claim": "The Flip-Flop method marks wild-type cells with endogenous EGFP-tagged protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore, therefore, developed Flip-Flop, a flippase-dependent in vivo cassette-inversion method that marks wild-type cells with the endogenous EGFP-tagged protein, whereas mutant cells are marked with mCherry upon inversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly describes the dual marking system of the Flip-Flop method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "ec9423f5-7907-47ed-b201-f8d539f6a9d0",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C3",
+      "claim": "The Flip-Flop method marks mutant cells with mCherry upon inversion.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore, therefore, developed Flip-Flop, a flippase-dependent in vivo cassette-inversion method that marks wild-type cells with the endogenous EGFP-tagged protein, whereas mutant cells are marked with mCherry upon inversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly describes the dual marking system of the Flip-Flop method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "8639bfc5-829e-4182-a352-931b04ef7e3d",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C4",
+      "claim": "The Flip-Flop method permits conditional gene inactivation based on both spatial and temporal cues.",
+      "claim_type": "EXPLICIT",
+      "source": "The Flip-Flop method is efficient and reliable, and permits conditional gene inactivation based on both spatial and temporal cues, in a cell cycle-, and developmental stage-independent fashion, creating a platform for systematic screens of gene function in developing and adult flies with unprecedented detail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the spatial and temporal control capabilities of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "77b9f110-b808-487c-9d29-8f25ac42efcb",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C5",
+      "claim": "The Flip-Flop method is cell cycle-independent.",
+      "claim_type": "EXPLICIT",
+      "source": "The Flip-Flop method is efficient and reliable, and permits conditional gene inactivation based on both spatial and temporal cues, in a cell cycle-, and developmental stage-independent fashion, creating a platform for systematic screens of gene function in developing and adult flies with unprecedented detail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states that the method is cell cycle-independent.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "add50b63-f1a4-4018-8f86-8e232b7979a6",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C6",
+      "claim": "The Flip-Flop method is developmental stage-independent.",
+      "claim_type": "EXPLICIT",
+      "source": "The Flip-Flop method is efficient and reliable, and permits conditional gene inactivation based on both spatial and temporal cues, in a cell cycle-, and developmental stage-independent fashion, creating a platform for systematic screens of gene function in developing and adult flies with unprecedented detail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states that the method is developmental stage-independent.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "bff184ca-53ae-4663-8b41-5e56c225dde7",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C7",
+      "claim": "MARCM has been successfully used in mitotically active, developing tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "While MARCM has been very successfully used in mitotically active, developing tissues, the technique has two major limitations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites the successful use of MARCM in specific tissue types.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "5a74d4fd-88dd-4aa5-b3d7-da449ed86546",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C8",
+      "claim": "MARCM relies on mitotic recombination and cannot be used in non-dividing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the technique relies on mitotic recombination and can therefore not be used in non-dividing cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this as a limitation of MARCM.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "30ef6299-6fd6-406b-a998-d3df3aa9a0b2",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C9",
+      "claim": "In MARCM, mutations distal to the FRT site become homozygous in mutant cells along with the mutation under study.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, along with the mutation under study, other mutations in the chromosome distal to the FRT site also become homozygous in mutant cells, requiring 'rescue experiments' of the gene of interest to validate the results (Roegiers et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly describes this limitation of MARCM with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "4aa840f6-04e6-4269-b15f-5c2d45f76fef",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C10",
+      "claim": "CRISPR/Cas9-mediated somatic mutagenesis can generate mosaics in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Another strategy is based on CRISPR/Cas9-mediated somatic mutagenesis to generate mosaics (Port et al., 2014; Xue et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites studies demonstrating CRISPR/Cas9 use for mosaic generation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "c0605a33-580f-441b-b15c-6517239548c7",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C11",
+      "claim": "The identity of lesions generated by CRISPR/Cas9 may vary in individual cells in the same animal or tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "The limitations of CRISPR/Cas9 are that the identity of the generated lesions for the gene of interest may vary in individual cells in the same animal or tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this as a limitation of CRISPR/Cas9.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "f2691cff-a6f8-4ffa-a271-f8de3f37b814",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C12",
+      "claim": "Mutant cells generated by CRISPR/Cas9 are not marked and cannot be distinguished from neighboring wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the mutant cells are not marked and cannot be distinguished from neighboring wild-type cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this as a limitation of CRISPR/Cas9.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "01f5d89d-4400-407f-ba08-4b7259a2806d",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C13",
+      "claim": "The Flip-Flop method does not rely on cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "(1) The method does not rely on cell division and can, therefore, be broadly used for conditional gene inactivation in post-mitotic cells such as neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly lists this as an advantage of Flip-Flop.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "a8babd0c-9923-4757-bec2-a9885036619d",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C14",
+      "claim": "The Flip-Flop method can be used for conditional gene inactivation in post-mitotic cells such as neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "(1) The method does not rely on cell division and can, therefore, be broadly used for conditional gene inactivation in post-mitotic cells such as neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly lists this as an advantage of Flip-Flop.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "234e1a61-2db0-4827-a612-007e2131c155",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C15",
+      "claim": "The Flip-Flop method allows endogenous tagging of proteins with EGFP.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) It allows endogenous tagging of proteins with EGFP, which permits multiple applications, and (3) it simultaneously marks mutant cells with mCherry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly lists this as an advantage of Flip-Flop.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "2ebfe0d8-073d-4326-9e49-a7f90456f27f",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C16",
+      "claim": "The Flip-Flop cassette contains a protein-trap (PT) module and a gene-trap (GT) module placed in opposite orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "This cassette contains two modules that are placed in opposite orientation: a protein-trap (PT) module and a gene-trap (GT) module (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly describes the cassette architecture, and Figure 1A shows the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "4f150e04-dd3e-4485-bb9f-dd6140d7ec1d",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C17",
+      "claim": "The PT module carries a splice acceptor (SA), followed by an in-frame EGFP coding sequence, and a splice donor (SD).",
+      "claim_type": "EXPLICIT",
+      "source": "The PT module carries a splice acceptor (SA), followed by an in-frame EGFP coding sequence, and a splice donor (SD) (Venken et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the PT module components with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "d5284d1b-1447-4178-b8b8-60fc7325b704",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C18",
+      "claim": "The GT module contains a SA, followed by the T2A peptide sequence, an mCherry coding sequence, stop codons in all three reading frames, and an SV40 polyA signal.",
+      "claim_type": "EXPLICIT",
+      "source": "The GT module similarly contains a SA, but is followed by the T2A peptide sequence, an mCherry coding sequence, stop codons in all three reading frames, and an SV40 polyA signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the GT module components.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "6e155a56-b651-4cbd-8531-3a0d6e70bc63",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C19",
+      "claim": "The PT and GT modules are flanked by inverted pairs of canonical FRT and FRT14 sites, forming a flip-excision switch (FLEx).",
+      "claim_type": "EXPLICIT",
+      "source": "The PT and GT modules are placed in opposite orientations and are flanked by inverted pairs of canonical FRT and FRT14 sites, forming a flip-excision switch (FLEx) (Schn\u00fctgen et al., 2003; Xue et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the FLEx switch with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "71dfc2dd-9b8d-4594-9ce7-4672af49c2d1",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C20",
+      "claim": "The entire Flip-Flop cassette is nested between two inverted attB sites that facilitate RMCE.",
+      "claim_type": "EXPLICIT",
+      "source": "The entire cassette is nested between two inverted attB sites that facilitate Recombination-Mediated Cassette Exchange (RMCE) between the Flip-Flop cassette and a target Minos-Mediated Integration Cassette (MiMIC) that resides in a coding intron of the gene of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the attB sites and their function.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "42b7fda8-e345-4eb9-b86f-ea7b823a2c03",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C21",
+      "claim": "When integrated in the MiMIC in the PT orientation, Flip-Flop results in expression of the endogenous protein with an internal EGFP tag.",
+      "claim_type": "EXPLICIT",
+      "source": "When integrated in the MiMIC in the PT orientation, Flip-Flop should result in expression of the endogenous protein with an internal EGFP tag.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the outcome of PT orientation integration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "6018cc3f-5e5d-4ad6-9a4c-cd47b9e1de6d",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C22",
+      "claim": "Internal EGFP tagging does not or subtly disrupts the protein's function in 77% of the cases.",
+      "claim_type": "EXPLICIT",
+      "source": "The internal EGFP tagging does not or subtly disrupt the protein's function in 77% of the cases (Nagarkar-Jaiswal et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this percentage with a citation to a previous study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "e5c25b8c-9c1e-47c4-9361-9b0e1252da0e",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C23",
+      "claim": "The T2A site induces a translational skip.",
+      "claim_type": "EXPLICIT",
+      "source": "When this truncated transcript is translated, the T2A site induces a translational skip (Tang et al., 2009), truncating the native protein and re-initiating translation at the mCherry sequence (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the function of T2A with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "ba4f3a17-c7c8-4ca0-b255-697a78ba90c0",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C24",
+      "claim": "Inversion of the Flip-Flop cassette results in the generation of a truncated protein, which is typically non-functional.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, inversion of the Flip-Flop cassette results in the generation of a truncated protein, which is typically non-functional, and simultaneously marks the cells that are actively transcribing the gene with mCherry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that the truncated protein is typically non-functional.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "9afc205c-235f-4e0e-8058-cc778cafd6d9",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C25",
+      "claim": "mCherry's expression pattern recapitulates the spatiotemporal expression pattern of the recipient gene.",
+      "claim_type": "EXPLICIT",
+      "source": "While mCherry's expression pattern recapitulates the spatiotemporal expression pattern of the recipient gene, it does not reproduce the endogenous subcellular localization of the protein (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that mCherry expression follows the gene's expression pattern.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "052251dc-cc1e-46a8-bafd-6494c3cd87d3",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C26",
+      "claim": "mCherry does not reproduce the endogenous subcellular localization of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "While mCherry's expression pattern recapitulates the spatiotemporal expression pattern of the recipient gene, it does not reproduce the endogenous subcellular localization of the protein (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that mCherry does not show proper subcellular localization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "dd65e4f9-5333-489f-af98-868a0b970988",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C27",
+      "claim": "Seven of the nine generated PT insertions complement the lethality associated with loss of the corresponding gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven of the nine generated PT insertions complement the lethality associated with loss of the corresponding gene, suggesting that these internally tagged proteins are biologically functional, consistent with previous observations (Nagarkar-Jaiswal et al., 2015; Venken et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the complementation results with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "3b9a17a3-f337-4927-a223-c184f16e4913",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C28",
+      "claim": "The internally tagged proteins from seven PT insertions are biologically functional.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven of the nine generated PT insertions complement the lethality associated with loss of the corresponding gene, suggesting that these internally tagged proteins are biologically functional, consistent with previous observations (Nagarkar-Jaiswal et al., 2015; Venken et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly infers functionality from complementation data with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "ec936bcf-4e7f-416d-b1ed-337ab0c0558b",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C29",
+      "claim": "Heat-shock-induced expression of FLP causes loss of the EGFP signal and induces mCherry expression in random subsets of cells in eff wing discs.",
+      "claim_type": "EXPLICIT",
+      "source": "Heat-shock-induced expression of FLP (hsFLP) (Figure 1\u2014figure supplement 2A) causes loss of the EGFP signal and induces mCherry expression in random subsets of cells (Figure 1C b-d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly describes the experimental result, and Figure 1C shows the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "c29ccec0-d122-4be8-8965-eb7c9666eae9",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C30",
+      "claim": "The SNF4A\u03b3 Flip-Flop cassette can be flipped to the GT orientation efficiently, generating large clones of cells expressing mCherry upon heat-shock.",
+      "claim_type": "EXPLICIT",
+      "source": "The SNF4A\u03b3 Flip-Flop cassette can be flipped to the GT orientation efficiently, generating large clones of cells expressing mCherry upon heat-shock (Figure 1D b-d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly describes the efficiency of flipping with reference to figure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "e7419881-943b-4a0c-b9d7-c59a6424a8b3",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C31",
+      "claim": "For SNF4A\u03b3, Trim9 and eff, more than 95% of the cells undergo cassette inversion.",
+      "claim_type": "EXPLICIT",
+      "source": "For SNF4A\u03b3, Trim9 and eff, more than 95% of the cells undergo cassette inversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the inversion efficiency for these genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "16a91c62-2f02-46f6-ba7b-67ce646ddec1",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C32",
+      "claim": "For Nedd8, cdep, and Sik3, more than 70% cells displayed Flip-Flop inversions.",
+      "claim_type": "EXPLICIT",
+      "source": "For Nedd8, cdep, and Sik3, more than 70% cells displayed Flip-Flop inversions (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the inversion efficiency for these genes with reference to figure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "6132fddb-cbbc-4484-8cf8-f0e4ff35b11f",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C33",
+      "claim": "Inducing Flip-Flop inversions in eye-antennal discs is highly efficient for all genes tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, inducing Flip-Flop inversions in eye-antennal discs is highly efficient for all genes tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly concludes high efficiency based on the data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "36650ef3-5610-411a-b716-dc9ebeeb0c38",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C34",
+      "claim": "Song et al. (2011) reported that animals lacking the first few amino acids of Trim9 are viable and exhibit a droopy wing phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, Song et al. (2011) created an imprecise excision of a P-element (P{GawB}Trim9[NP4638]) inserted in the 5\u2032-regulatory region of Trim9 and reported that animals lacking the first few amino acids of Trim9 are viable and exhibit a droopy wing phenotype (Song et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly cites Song et al. (2011) for this observation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "1765fc9f-cb67-44c8-9fec-290e546e1ce5",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C35",
+      "claim": "The GT insertion in Trim9 is homozygous lethal and does not complement a deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "The GT insertion is homozygous lethal and does not complement a deficiency (Trim9Df), while the PT insertion is viable in trans over Trim9Df (Figure 2\u2014figure supplement 1A b) suggesting that the PT encodes a functional protein.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the complementation results with reference to figure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "f4207426-be63-4d3a-8042-b2f209073076",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C36",
+      "claim": "The PT insertion in Trim9 is viable in trans over Trim9Df.",
+      "claim_type": "EXPLICIT",
+      "source": "The GT insertion is homozygous lethal and does not complement a deficiency (Trim9Df), while the PT insertion is viable in trans over Trim9Df (Figure 2\u2014figure supplement 1A b) suggesting that the PT encodes a functional protein.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the complementation results with reference to figure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "7b92f8ea-f2fd-4557-8c0d-d55917f2d448",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C37",
+      "claim": "The PT insertion in Trim9 encodes a functional protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The GT insertion is homozygous lethal and does not complement a deficiency (Trim9Df), while the PT insertion is viable in trans over Trim9Df (Figure 2\u2014figure supplement 1A b) suggesting that the PT encodes a functional protein.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly infers functionality from complementation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "8b383418-56d2-47a3-9a70-b78b47b96599",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C38",
+      "claim": "When the PT insertion in Trim9 was inverted in all cells using ubiquitously expressed FLP, the animals died as second instar larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "When the PT insertion in Trim9MI12525EGFP- T2A-mCherry/Trim9Df animals was inverted in all cells using a ubiquitously expressed (Actin-GAL) FLP, the animals died as second instar larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the experimental result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "04a68f69-3c6d-457d-b12c-a464d0510c50",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C39",
+      "claim": "Strong loss of Trim9 leads to early developmental lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "This, together with the lethality observed in the GT insertion, suggests that a strong loss of Trim9 leads to early developmental lethality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly infers this conclusion from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "0c41db32-c477-4b36-abf9-44f2747ab0ba",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C40",
+      "claim": "Trim9 is expressed in numerous neurons in the larval brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to the flip, in the PT orientation, Trim9 is expressed in numerous neurons in the larval brain (Figure 2A a-d) and the protein is localised to nuclei and cytoplasm (Figure 2A e-h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly describes the expression pattern with reference to figure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "163bcd9c-9b97-4c3d-838a-ff159c0548b7",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C41",
+      "claim": "Trim9 protein is localised to nuclei and cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to the flip, in the PT orientation, Trim9 is expressed in numerous neurons in the larval brain (Figure 2A a-d) and the protein is localised to nuclei and cytoplasm (Figure 2A e-h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly describes the subcellular localization with reference to figure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "912867a9-4c49-43c3-99bb-ab395c63d011",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C42",
+      "claim": "Neuronal Trim9 inactivation does not affect the eclosion of the animal.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal Trim9 inactivation does not affect the eclosion of the animal but leads to the sterility of short-lived animals with droopy wings, corroborating previous observations associated with the loss of Trim9 (Song et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the phenotypic outcome with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "6070b57f-00f5-4607-9c13-2552078e6d05",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C43",
+      "claim": "Neuronal Trim9 inactivation leads to the sterility of short-lived animals with droopy wings.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal Trim9 inactivation does not affect the eclosion of the animal but leads to the sterility of short-lived animals with droopy wings, corroborating previous observations associated with the loss of Trim9 (Song et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the phenotypic outcome with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "6d8d823c-ade6-4cc1-bd36-2b8df5dcc177",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C44",
+      "claim": "Animals shifted to 29\u00b0C on the fourth day of adulthood showed loss of Trim9-EGFP-Trim9 expression and gain of mCherry in a large subset of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, those shifted to a higher temperature on the fourth day of adulthood showed loss of Trim9-EGFP-Trim9 expression and gain of mCherry in a large subset of neurons (Figure 2B a'-d').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly describes the experimental result with reference to figure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "374a4eff-70f0-4c7d-8489-01257fb731fa",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C45",
+      "claim": "Animals shifted to 29\u00b0C do not show droopy wing phenotype, but have a reduced lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, animals shifted to 29\u00b0C do not show droopy wing phenotype, but have a reduced lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the phenotypic outcome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "f2b17ec3-5c9f-43d9-b4e4-7991e12ba684",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C46",
+      "claim": "The droopy wing phenotype observed by Song et al. (2011) is due to the loss of neuronal Trim9 during development, and not because of loss of the gene in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the droopy wing phenotype observed by Song et al. (2011) is due to the loss of neuronal Trim9 during development, and not because of loss of the gene in adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly infers this conclusion from the experimental data with a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "dfa80444-67e9-4c9b-a582-5829c64c8fff",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C47",
+      "claim": "The AMPK complex is involved in sensing stresses such as a drop in the ratio of ATP/AMP, hypoxia, ischemia, and heat-shock.",
+      "claim_type": "EXPLICIT",
+      "source": "The AMPK complex is involved in sensing stresses such as a drop in the ratio of ATP/AMP, hypoxia, ischemia, and heat-shock (Hardie et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the function of AMPK with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "738e1235-0d26-4b9c-a4a5-f116f4e48d77",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C48",
+      "claim": "The ATP/AMP ratio is sensed through an allosteric mechanism by the non-catalytic \u03b3 subunit of the AMPK complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The ATP/AMP ratio is sensed through an allosteric mechanism by the non-catalytic \u03b3 subunit of the AMPK complex, which in turn promotes the phosphorylation of the catalytic \u03b1 subunit enhancing \u03b1 subunit's kinase activity (Sanders et al., 2007; Scott et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the mechanism with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "a93b8c3a-4564-4f99-8e47-e08be2964af9",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C49",
+      "claim": "Phosphorylation of AMPK's targets by the \u03b1-subunit activates a signalling cascade that regulates fatty acid oxidation, autophagy, and mitochondrial biogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylation of AMPK's targets by the \u03b1-subunit activates a signalling cascade that ultimately regulates fatty acid oxidation, autophagy, and mitochondrial biogenesis and boosts the ATP/AMP ratio within the cell (Hardie et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the signaling cascade with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "8909d7ac-6b26-4761-a02d-bebf3c1dcf33",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C50",
+      "claim": "The \u03b3 subunit of AMPK is crucial for proper energy homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensing the ATP/AMP ratio by the \u03b3 subunit is thus critical for the proper function of the AMPK complex, and together with the other AMPK subunits, the \u03b3 subunit is crucial for proper energy homeostasis (Hardie et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the importance of the \u03b3 subunit with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "c6af37df-7926-4897-88c7-cce29fcca9ec",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C51",
+      "claim": "In Drosophila, the \u03b3 subunit is encoded by SNF4A\u03b3, with 16 transcriptional isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, the \u03b3 subunit is encoded by SNF4A\u03b3, with 16 transcriptional isoforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the gene and number of isoforms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "1996a285-21b6-4567-8b0e-3fe5a333b5a2",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C52",
+      "claim": "15 of the 16 SNF4A\u03b3 transcriptional isoforms should be tagged using MI09417.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 15 should be tagged using MI09417 (Figure 1\u2014figure supplement 1B a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states which isoforms are tagged with reference to figure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "334747cd-fabe-4527-bc6c-8fe140138856",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C53",
+      "claim": "SNF4A\u03b3MI09417T2A>GAL4 truncates the SNF4A\u03b3 protein and simultaneously expresses GAL4 in the spatiotemporal pattern of SNF4A\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "SNF4A\u03b3MI09417T2A>GAL4 truncates the SNF4A\u03b3 protein and simultaneously expresses GAL4 in the spatiotemporal pattern of SNF4A\u03b3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the function of the T2A-GAL4 allele.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "6db7abce-9df5-4a91-8cab-8fb9c9224761",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C54",
+      "claim": "The SNF4A\u03b3MI09417 T2A>GAL4 allele fails to complement the SNF4A\u03b3Df and acts as a loss-of-function allele.",
+      "claim_type": "EXPLICIT",
+      "source": "The SNF4A\u03b3MI09417 T2A>GAL4 allele fails to complement the SNF4A\u03b3Df and acts as a loss-of-function allele.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the complementation result and functional status.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "7fea059f-eb4c-41df-b457-c54be01d79b8",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C55",
+      "claim": "SNF4A\u03b3MI09417EGFP-T2A-mCherry/SNF4A\u03b3MI09417 and SNF4A\u03b3MI09417EGFP-T2A-mCherry/SNF4A\u03b3Df animals are viable.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, SNF4A\u03b3MI09417EGFP-T2A-mCherry/SNF4A\u03b3MI09417 and SNF4A\u03b3MI09417EGFP-T2A-mCherry/SNF4A\u03b3Df animals are viable, indicating that the Flip-Flop insertion produces a functional SNF4A\u03b3-EGFP-SNF4A\u03b3 protein (Figure 1\u2014figure supplement 1B b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states the viability with reference to figure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "a5c3425a-64d0-4fb8-b29a-093bcca17425",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C56",
+      "claim": "The Flip-Flop insertion produces a functional SNF4A\u03b3-EGFP-SNF4A\u03b3 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, SNF4A\u03b3MI09417EGFP-T2A-mCherry/SNF4A\u03b3MI09417 and SNF4A\u03b3MI09417EGFP-T2A-mCherry/SNF4A\u03b3Df animals are viable, indicating that the Flip-Flop insertion produces a functional SNF4A\u03b3-EGFP-SNF4A\u03b3 protein (Figure 1\u2014figure supplement 1B b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly infers functionality from viability data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "5f3832ca-3f67-4957-8bc6-ae20102b7f9c",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C57",
+      "claim": "UAS-FLP;; SNF4A\u03b3MI09417EGFP-T2A-mCherry/SNF4A\u03b3MI094177 T2A>GAL4 animals die as poorly developed pupae.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, UAS-FLP;; SNF4A\u03b3MI09417EGFP-T2A-mCherry/SNF4A\u03b3MI094177 T2A>GAL4 animals lack expression of both alleles of SNF4A\u03b3 (Figure 1\u2014figure supplement 2D). These animals die as poorly developed pupae and are slim and elongated in the larval stage (Figure 3B b-c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly describes the phenotype with reference to figure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "e4756d99-ed74-4eb9-ac3b-6ad8cc558616",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C58",
+      "claim": "UAS-FLP;; SNF4A\u03b3MI09417EGFP-T2A-mCherry/SNF4A\u03b3MI094177 T2A>GAL4 larvae are slim and elongated.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, UAS-FLP;; SNF4A\u03b3MI09417EGFP-T2A-mCherry/SNF4A\u03b3MI094177 T2A>GAL4 animals lack expression of both alleles of SNF4A\u03b3 (Figure 1\u2014figure supplement 2D). These animals die as poorly developed pupae and are slim and elongated in the larval stage (Figure 3B b-c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly describes the phenotype with reference to figure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "733289f4-300c-47a6-8767-b6caefad587e",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C59",
+      "claim": "The Drosophila eye is composed of about 800 ommatidia.",
+      "claim_type": "EXPLICIT",
+      "source": "The Drosophila eye is a highly organised structure that is composed of about 800 small functional units called ommatidia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the number of ommatidia.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "84be294e-a863-413a-9283-0ebde1a54ece",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C60",
+      "claim": "Every ommatidium contains eight photoreceptor cells (R1-R7) each with a rhabdomere.",
+      "claim_type": "EXPLICIT",
+      "source": "Every ommatidium contains eight photoreceptor cells (R1-R7) each with a rhabdomere, the light-sensing organelle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the structure of ommatidia.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "45286255-29bc-47b4-b603-8f6b82706b4d",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C61",
+      "claim": "Inverting the cassette in SNF4A\u03b3 to a GT orientation reduces the amplitude of the electroretinogram (ERG) in 1-day-old flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Inverting the cassette in SNF4A\u03b3 to a GT orientation reduces the amplitude of the electroretinogram (ERG) in 1-day-old flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the experimental result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "d42342f3-c734-4071-b0c9-883ce9e76c74",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C62",
+      "claim": "Loss of SNF4A\u03b3 in the eye leads to a reduction in the number of rhabdomeres as well as defects in photoreceptor organisation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a reduction in the number of rhabdomeres as well as defects in photoreceptor organisation (Figure 3E\u2013c').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly describes the observed phenotype with reference to figure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "4939ef77-985e-401c-9808-e4d80cda04ee",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C63",
+      "claim": "The loss of SNF4A\u03b3 disrupts energy homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of SNF4A\u03b3 disrupts energy homeostasis, possibly prevents the photoreceptors from meeting their high-energy demand and leading to a reduction in their activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly infers this conclusion from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "cc6e1497-c104-4805-b611-c8c38fade169",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C64",
+      "claim": "Similar defects to those observed in SNF4A\u03b3 mutants have been described in alicorn mutant eye clones (SNF4A\u03b1).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar defects have been described in alicorn mutant eye clones (SNF4A\u03b1) (Spasi\u0107 et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly cites a previous study showing similar defects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "67b943db-a573-47f8-aae8-d62a69427b53",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C65",
+      "claim": "SNF4A\u03b3 is required for autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously shown that SNF4A\u03b3 is required for autophagy (Lippai et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly cites a previous study demonstrating this requirement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "dfa3f9d6-4fe1-4589-a53e-8171c29f48f9",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C66",
+      "claim": "Loss of SNF4A\u03b3 blocks autophagy, deprives cells of amino acids during starvation, leading to a loss of p62.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we propose that loss of SNF4A\u03b3 blocks autophagy, deprives cells of aa during starvation, leading to a loss of p62.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly proposes this mechanism based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "b1b1b92e-e064-4426-acc4-d6108c3f3dde",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C67",
+      "claim": "Similar data to the p62 loss in SNF4A\u03b3 mutants have been documented in Drosophila larvae and mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar data have been documented in Drosophila larvae and mammalian cells (B'chir et al., 2014; Colosetti et al., 2009; Duran et al., 2011; Erdi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly cites multiple studies showing similar data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "b1a0c4bb-e3f4-47ad-8141-ef28fe84b104",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C68",
+      "claim": "Previous studies have described that developmental loss of SNF4A\u03b3 leads to neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have described that developmental loss of SNF4A\u03b3 leads to neurodegeneration (Cook et al., 2012; Tsch\u00e4pe et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly cites previous studies demonstrating neurodegeneration.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "613d518e-c80e-4f31-8246-79060e0faf1c",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C69",
+      "claim": "Pan-neuronal flip of SNF4A\u03b3MI09417EGFP-T2A-mCherry into a non-functional GT leads to severe locomotor defects in adult flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Such pan-neuronal flip of SNF4A\u03b3MI09417EGFP-T2A-mCherry into a non-functional GT leads to severe locomotor defects in adult flies (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "26807d21-09f8-44d0-b22a-4b1f471ba6fa",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C70",
+      "claim": "Two days after heat-shock, H and E staining of adult brains revealed severe neurodegeneration in hsFLP; SNF4A\u03b3MI09417EGFP- T2A-mCherry / SNF4A\u03b3MI09417 flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Two days after the heat-shock, H and E staining of adult brains revealed severe neurodegeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the experimental result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "331ff052-f196-4e8e-a88d-31edb2ebcdfc",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C71",
+      "claim": "Loss of SNF4A\u03b3 leads to neuronal demise in adult flies.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that loss of SNF4A\u03b3 leads to neuronal demise in adult flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly concludes this from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "867f3c01-6122-4c3c-8cda-b06e22a9dbc1",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C72",
+      "claim": "The Flip-Flop strategy allows conditional gene inactivation and generation of mosaics for a side-by-side comparison of mutant and wild-type cells in the same tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, the Flip-Flop strategy allows conditional gene inactivation and generation of mosaics for a side-by-side comparison of mutant and wild-type cells in the same tissue, while simultaneously marking wild-type and mutant cells with different fluorescent markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly summarizes the capabilities of the Flip-Flop method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "41ab8c9b-ab48-4e6f-b973-d190686ad8b7",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C73",
+      "claim": "By using different sources of FLP, one can control the spatial and temporal pattern of mosaic generation and gene inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "By using different sources of FLP, one can control the spatial and temporal pattern of mosaic generation and gene inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this capability of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "9217c51e-214c-42dc-bdc8-369ec7e9c1ab",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C74",
+      "claim": "Flip-Flop can be used to severely inhibit gene function during development, as well as in adults in both mitotically active and post-mitotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using hsFLP, we show that Flip-Flop can be used to severely inhibit gene function during development, as well as in adults in both mitotically active and post-mitotic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the broad applicability of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "34491881-0108-495d-9e98-817a05ea59c4",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C75",
+      "claim": "A similar Flippase-based conditional gene inactivation method 'FlpStop' was recently published.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a similar Flippase-based conditional gene inactivation method 'FlpStop' was published (Fisher et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly cites the FlpStop method.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "e4266548-c624-463b-940b-4764943d66d7",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C76",
+      "claim": "Both the FlpStop and Flip-Flop strategies employ a similar Flex switch to induce local cassette inversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the FlpStop and Flip-Flop strategies employ a similar Flex switch to induce local cassette inversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly compares the two methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "34d1eb38-4f61-4f91-8b4e-9ac999f9ef6b",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C77",
+      "claim": "FlpStop does not tag the endogenous protein with a fluorescent tag, while Flip-Flop produces an internally EGFP-tagged protein.",
+      "claim_type": "EXPLICIT",
+      "source": "(1) FlpStop does not tag the endogenous protein with a fluorescent tag, while Flip-Flop produces an internally EGFP-tagged protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly compares the two methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "e2494929-1fb5-4088-a31c-c4db8bf0eaaa",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C78",
+      "claim": "For the majority of the genes the internal EGFP tag is not detrimental.",
+      "claim_type": "EXPLICIT",
+      "source": "While this may seem beneficial for genes where an internal tag is deleterious to the protein, we argue that for the majority of the genes the internal EGFP tag is not detrimental (this study; Nagarkar-Jaiswal et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly argues this point with citations to supporting data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "2079a588-f1d0-4b00-a634-45073872f981",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C79",
+      "claim": "Endogenous tagging permits tracking the expression and subcellular localization of a protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, endogenous tagging is very advantageous as it permits to track the expression and subcellular localization of a protein, allows anti-GFP antibody-mediated immunoprecipitations followed by mass spectroscopy (David-Morrison et al., 2016; Yoon et al., 2017), enables ChIP sequencing (N\u00e8gre et al., 2011), and permits mRNA or protein removal with iGFPi (Neum\u00fcller et al., 2012) or deGradFP (Caussinus et al., 2011; Nagarkar-Jaiswal et al., 2015; Urban et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly lists the advantages of endogenous tagging with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "bff3ca4b-86d9-48ff-9396-2982bd996d56",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C80",
+      "claim": "The EGFP tag allows tracking protein perdurance in mutant cells for the first time.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the EGFP tag allows us for the first time to track protein perdurance in mutant cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this novel capability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "acf8f116-33ea-4106-9fd2-140914961f0e",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C81",
+      "claim": "In FlpStop, tdTomato is expressed under the control of the UAS/GAL4 system.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) The second major difference between FlpStop and Flip-Flop relates to how mutant cells are marked. In FlpStop, tdTomato is expressed under the control of the UAS/GAL4 system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes how FlpStop marks mutant cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "0dde7533-51ad-4a8e-ba71-afdb87dd3c5c",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C82",
+      "claim": "In FlpStop, cells that have undergone inversion will express tdTomato, irrespective of the expression pattern of the gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, cells that have undergone inversion will express tdTomato, irrespective of the expression pattern of the gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the marking pattern in FlpStop.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "b639105b-09ba-44c0-8bde-9e3b9ed686ac",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C83",
+      "claim": "Flip-Flop will label cells with mCherry only if they express the gene of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Flip-Flop will label cells with mCherry only if they express the gene of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the marking pattern in Flip-Flop.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "04cf887d-d44c-4efd-94aa-890a4e3b7999",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C84",
+      "claim": "Flip-Flop insertions can be generated based on existing MiMIC insertions.",
+      "claim_type": "EXPLICIT",
+      "source": "We would like to note that Flip-Flop insertions can be generated based on existing MiMIC insertions (Nagarkar-Jaiswal et al., 2015) as well as MiMIC-like elements introduced by CRISPR/Cas9 (Zhang et al., 2014) and can be extended to Drosophila cell culture system using RMCE (Manivannan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the methods for generating Flip-Flop insertions with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "857d7b52-4ca8-40b9-b816-3b1fa2500873",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C85",
+      "claim": "Flip-Flop insertions can be generated based on MiMIC-like elements introduced by CRISPR/Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "We would like to note that Flip-Flop insertions can be generated based on existing MiMIC insertions (Nagarkar-Jaiswal et al., 2015) as well as MiMIC-like elements introduced by CRISPR/Cas9 (Zhang et al., 2014) and can be extended to Drosophila cell culture system using RMCE (Manivannan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the methods for generating Flip-Flop insertions with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "d8668155-655d-4829-a7c7-f1138677b243",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C86",
+      "claim": "Flip-Flop can be extended to Drosophila cell culture system using RMCE.",
+      "claim_type": "EXPLICIT",
+      "source": "We would like to note that Flip-Flop insertions can be generated based on existing MiMIC insertions (Nagarkar-Jaiswal et al., 2015) as well as MiMIC-like elements introduced by CRISPR/Cas9 (Zhang et al., 2014) and can be extended to Drosophila cell culture system using RMCE (Manivannan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the extension to cell culture with a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "ff5a66c1-7b1d-4d1b-aafd-01637452b214",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C87",
+      "claim": "The use of Flip-Flop will permit functional annotation of numerous genes in unprecedented detail.",
+      "claim_type": "EXPLICIT",
+      "source": "We, therefore, believe that the use of Flip-Flop will permit functional annotation of numerous genes in unprecedented detail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the potential impact of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "54a35d87-2488-4d8c-a588-b817cc919362",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C88",
+      "claim": "Following inversion to the GT orientation, three different populations of neurons are observed: cells expressing only mCherry, cells expressing only EGFP, and cells expressing both EGFP and mCherry.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon close examination, we observed three different populations of neurons. First, cells that have undergone cassette inversion and are marked with mCherry (Figure 2A e'-h', indicated by number (1) Second, cells that are EGFP-positive (Trim9-EGFP-Trim9) and did not flip (Figure 2A e'-h', indicated by number (2) Third, a population of cells that expresses both Trim9-EGFP-Trim9 as well as mCherry (Figure 2A e'-h', indicated by number (3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly describes the three populations observed with reference to figure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "3720b0e5-d1a6-4090-93f6-77baf29633b9",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C89",
+      "claim": "Cells expressing both EGFP and mCherry have undergone cassette inversion but retain Trim9-EGFP-Trim9 that was produced prior to the flip.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that Trim9-EGFP-Trim9 levels are lower in these cells. We reason that these cells have undergone cassette inversion and are hence expressing mCherry, but that the Trim9-EGFP-Trim9 that was produced prior to the flip has not been fully degraded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly infers this explanation from the observed data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "c8909522-5527-465b-84a1-7fa29939cd5d",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C90",
+      "claim": "The population of cells that express only mCherry must have lost most of the tagged Trim9 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the population of cells that express only mCherry must have lost most of the tagged Trim9 protein, whereas Trim9-EGFP-Trim9 perdures in a subset of cells that are yellow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly infers this conclusion from the observed data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "f3d01f80-e973-4f9c-993a-f604443f2683",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C91",
+      "claim": "The Flip-Flop method allows analysis of protein perdurance.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this allows analysis of protein perdurance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this capability of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "57d924d7-7068-49ef-b3de-7bbd67869820",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C92",
+      "claim": "The Flip-Flop method permits researchers to only select and analyse those cells that are truly mutant and have lost the majority of the wild-type protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it permits researchers to only select and analyse those cells that are truly mutant and have lost the majority of the wild-type protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this capability of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "5907465f-97a4-4b0d-b157-7210b625d2d0",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C93",
+      "claim": "Almost all photoreceptors in ey-FLP;;SNF4A\u03b3MI09417EGFP-T2A-mCherry/SNF4A\u03b3Df animals inverted from the PT- to GT- orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "In ey-FLP;;SNF4A\u03b3MI09417EGFP-T2A-mCherry/SNF4A\u03b3Df animals, almost all photoreceptors inverted from the PT- to GT- orientation, as revealed by mCherry expression (Figure 3E b').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly describes the inversion efficiency with reference to figure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "b43a498b-0884-4a75-a8a2-6ab938879445",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C94",
+      "claim": "Animals with ey-FLP-mediated SNF4A\u03b3 inactivation did not show a stronger reduction in ERG amplitude when measured at day 30 compared to day 1.",
+      "claim_type": "EXPLICIT",
+      "source": "These animals did not show a stronger reduction in ERG amplitude when measured at day 30 and hence do not show further degeneration (Figure 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly describes the ERG measurements with reference to figure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "ce260b95-3ba0-44da-9fe1-11c0cc86b037",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C95",
+      "claim": "Following prolonged amino acid starvation, the autophagy marker p62 is restored because of an increase in transcription and translation mediated by the availability of autophagy derived amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this parallels the observation by Sahani et al. (2014) in vertebrate cells. These authors observed that following prolonged amino acid starvation, the autophagy marker p62 is restored because of an increase in transcription and translation mediated by the availability of autophagy derived aa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly cites Sahani et al. (2014) for this observation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "597e90ef-98a5-4daf-9d46-fc3028aabddb",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C96",
+      "claim": "The extent of neuronal loss in hsFLP; SNF4A\u03b3MI09417EGFP- T2A-mCherry / SNF4A\u03b3MI09417 flies did not worsen by day 10 after heat shock.",
+      "claim_type": "EXPLICIT",
+      "source": "The extent of neuronal loss did not worsen by day 10 (Figure 4C b and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly describes the time course of neurodegeneration with reference to figure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "b82eb89c-5d0b-4fdb-96cc-e4d06dafeb72",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C97",
+      "claim": "Flies with heat-shock-induced SNF4A\u03b3 loss typically die 3 to 4 weeks after heat shock.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, these flies typically die 3 to 4 weeks later.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the lifespan of the experimental animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "0a2b9fe9-4d31-49a6-811e-2551881a404b",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C98",
+      "claim": "Animals that do not carry hsFLP do not show obvious lesions in the brain following heat-shock.",
+      "claim_type": "EXPLICIT",
+      "source": "Following heat-shock, animals that do not carry hsFLP do not show obvious lesions in the brain (Figure 4C a and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly describes the control experiment with reference to figure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "d6a38c1a-183e-4279-96f9-b2dd7b8e60e0",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C99",
+      "claim": "A comparison of the PTs generated using GFSTF and the PT of the Flip-Flop cassette did not show any obvious difference in expression pattern or genetic properties based on complementation tests.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of the PTs generated using a previous, shorter, RMCE construct (GFSTF; Venken et al., 2011) and the PT of the Flip-Flop cassette did not show any obvious difference in expression pattern or genetic properties based on complementation tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly compares the two constructs with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "b9d7f19a-ea83-4b37-8469-86ce8e3f705e",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C100",
+      "claim": "If the protein traps are functional with the GFSTF cassette they are also functional with the EGFP-tagged proteins derived from the Flip-Flop.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, if the protein traps are functional with the GFSTF cassette they are also functional with the EGFP-tagged proteins derived from the Flip-Flop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly concludes this from the comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "a91229af-e721-4973-9dfa-8b23870d5637",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C101",
+      "claim": "GT-alleles of eff, Cdep, Trim9, Ank2, and Ctrip are loss-of-function alleles based on complementation tests.",
+      "claim_type": "EXPLICIT",
+      "source": "Complementation tests with independently derived loss-of-function alleles (or deficiencies) indicate that these GT-alleles are indeed loss-of-function alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the complementation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "fce147fc-5137-472d-8cda-bc16e6ed023f",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C102",
+      "claim": "None of the GT insertions for eff, Cdep, Trim9, Ank2, and Ctrip induce an obvious dominant phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that none of these GT insertions induce an obvious dominant phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the lack of dominant phenotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "37709caf-0eb1-4937-9c68-d46524f733cc",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "claim_id": "C103",
+      "claim": "The ability to track the loss of the protein of interest in mutant cells concomitant with loss of the EGFP signal while simultaneously marking the mutant cells with mCherry from the same regulatory elements distinguishes Flip-Flop from all other mosaic analyses methods.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the ability to track the loss of the protein of interest in mutant cells concomitant with loss of the EGFP signal while simultaneously marking the mutant cells with mCherry from the same regulatory elements distinguishes Flip-Flop from all other mosaic analyses methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the unique features of Flip-Flop.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "59a0acec-6b33-4625-adda-7b65885636c0",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Current mosaic analysis methods in Drosophila have significant limitations. MARCM relies on mitotic recombination and cannot be used in post-mitotic cells, and also causes unintended homozygosity of distal mutations. CRISPR/Cas9-mediated somatic mutagenesis generates variable lesions and does not mark mutant cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C12 accurately describe well-established limitations of existing mosaic analysis techniques (MARCM and CRISPR/Cas9) with appropriate citations. These are factual statements about prior work that provide context for the new method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "bd0c11bb-daec-4c5a-b25b-9d43f2520f8f",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The Flip-Flop method is a novel FLP-dependent cassette inversion system that marks wild-type cells with endogenous EGFP-tagged protein and mutant cells with mCherry. The cassette contains PT and GT modules in opposite orientations flanked by FRT sites, does not rely on cell division, and produces functional EGFP-tagged proteins in 77% of cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3, C13-C26 describe the design and theoretical function of the Flip-Flop cassette with clear molecular details and appropriate citations (C22, C23). The architecture is well-documented in Figure 1A, and the 77% functionality rate is supported by prior published work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "8904b99e-f654-4dea-9bc3-02ccf2ad8bdd",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Flip-Flop insertions were generated for nine genes, with seven PT insertions complementing lethality and thus producing functional proteins. Heat-shock or ey-FLP-induced cassette inversion efficiently generates mCherry-marked mutant clones, with >95% inversion efficiency for SNF4A\u03b3, Trim9, and eff, and >70% for Nedd8, cdep, and Sik3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C33 present experimental validation of the method across multiple genes with quantitative efficiency data. The complementation tests (C27-C28) provide genetic evidence for functionality, and the inversion efficiencies (C31-C33) are supported by Figure 1\u2014figure supplement 5 showing representative images.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "bc2af238-61fa-494e-99f4-068686af2d5e",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Flip-Flop enables conditional gene inactivation in post-mitotic neurons, demonstrated with Trim9. Neuronal Trim9 inactivation causes sterility and droopy wings but does not affect eclosion. The method reveals three cell populations after inversion (mCherry-only, EGFP-only, and double-positive), allowing analysis of protein perdurance and selection of truly mutant cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C43, C88-C92 demonstrate Flip-Flop function in post-mitotic cells with Trim9 as a test case. The complementation data (C35-C37), phenotypic observations (C42-C43), and protein perdurance analysis (C88-C92) are well-supported by Figure 2A showing the three cell populations. The interpretation of protein perdurance is logical and novel.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "d003b93d-7552-411e-8113-cd0222db4528",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Temperature-shift experiments with Trim9 show that adult-specific neuronal inactivation (day 4 shift to 29\u00b0C) causes reduced lifespan but not droopy wings, indicating the droopy wing phenotype requires developmental loss of Trim9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 present temporal control experiments distinguishing developmental from adult requirements for Trim9. The experimental design using GAL80ts is appropriate, and the conclusion (C46) logically follows from comparing developmental versus adult inactivation phenotypes, supported by Figure 2B.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "3ce44550-dc94-4683-a4b3-4cb2a6398ca3",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SNF4A\u03b3 encodes the \u03b3 subunit of AMPK complex involved in energy homeostasis. The Flip-Flop PT insertion produces functional SNF4A\u03b3-EGFP-SNF4A\u03b3 protein (viable over deficiency), while the T2A-GAL4 allele is a loss-of-function that can drive FLP expression in the SNF4A\u03b3 pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C56 establish SNF4A\u03b3 biology (C47-C50 with appropriate citations) and validate the Flip-Flop alleles through complementation tests. The viability of PT insertion over deficiency (C55-C56) demonstrates functionality, while the T2A-GAL4 lethality (C54) confirms loss-of-function, supported by Figure 1\u2014figure supplement 1B.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "1a4429e6-0bcb-4c37-9668-3b8a5fb469a1",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Loss of SNF4A\u03b3 in developing eyes (using T2A-GAL4 to drive ubiquitous inversion or ey-FLP) causes larval lethality, reduced ERG amplitude, loss of rhabdomeres, and photoreceptor disorganization. The ERG defects do not worsen from day 1 to day 30, suggesting non-progressive dysfunction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C63, C93-C94 demonstrate SNF4A\u03b3 function in eye development with multiple phenotypic readouts (morphology, ERG). The near-complete inversion efficiency (C93) validates the approach, and the ERG time-course (C94) is quantified in Figure 3C-D. The interpretation linking energy homeostasis to photoreceptor function (C63) is reasonable though somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "d6830ea2-af7c-4ce9-a01e-4a19bf71abf7",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "SNF4A\u03b3 is required for autophagy. Loss of SNF4A\u03b3 in starved adult gut leads to reduced p62 levels in mutant cells, consistent with blocked autophagy depriving cells of amino acids. This parallels observations in vertebrate cells where prolonged starvation restores p62 through autophagy-derived amino acids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67, C95 present autophagy analysis with p62 as a marker. The prior requirement for SNF4A\u03b3 in autophagy (C65) is appropriately cited. The counterintuitive p62 loss (C66) is explained by referencing vertebrate work (C95), and similar observations are cited (C67). Figure 4B shows the data, though the interpretation is somewhat indirect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "14bfb188-ac50-41fa-836b-e17dd70bc504",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Adult-specific loss of SNF4A\u03b3 (heat-shock-induced) causes severe neurodegeneration within 2 days that does not worsen by day 10, and flies die 3-4 weeks later. Control animals without hsFLP show no brain lesions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71, C96-C98 demonstrate adult neurodegeneration phenotype with appropriate controls (C98). The prior work on developmental neurodegeneration (C68) provides context. The H&E staining (Figure 4C) clearly shows structural damage, and the time course (C96) indicates acute rather than progressive degeneration. The locomotor defects (C69) support the neurological dysfunction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "aad69d1f-0d36-4674-afe5-07e2f74e2500",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The Flip-Flop method permits conditional gene inactivation with spatial and temporal control in a cell cycle- and developmental stage-independent manner. Different FLP sources enable control of mosaic patterns, and the method works in both mitotically active and post-mitotic cells during development and in adults.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C72-C74 summarize the key capabilities demonstrated throughout the paper. The spatial control is shown with ey-FLP and tissue-specific GAL4 drivers, temporal control with heat-shock and GAL80ts, and cell cycle-independence is demonstrated in post-mitotic neurons (Trim9, SNF4A\u03b3 experiments). These are well-supported by the collective experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "26ccf2aa-4ed2-4780-860d-84fd0e8a7d3b",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Flip-Flop differs from the similar FlpStop method in key ways: Flip-Flop produces endogenous EGFP-tagged proteins (functional for most genes), enables tracking of protein expression/localization and perdurance in mutant cells, and marks mutant cells with mCherry only in cells expressing the gene of interest (not ubiquitously via UAS/GAL4).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C83, C103 provide a fair comparison with FlpStop, appropriately citing the concurrent publication (C75). The advantages of endogenous tagging (C78-C80) are supported by data in this study and prior work (C78 cites Nagarkar-Jaiswal et al., 2015). The distinction in marking strategy (C81-C83) is conceptually clear and represents a genuine difference in experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "d41d500b-0bd3-4c9e-b51a-cb712ac641c4",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Flip-Flop insertions can be generated from existing MiMIC insertions or CRISPR/Cas9-introduced MiMIC-like elements, and can be extended to Drosophila cell culture. The authors believe this will permit functional annotation of numerous genes in unprecedented detail.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C86 describe the generalizability of the approach with appropriate citations for the underlying technologies. Claim C87 is explicitly speculative ('we believe') about future impact, which is reasonable given the demonstrated proof-of-principle across multiple genes and the availability of existing MiMIC resources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "bd2d7f8e-3520-4843-931a-952914537aa7",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Flip-Flop PT insertions show similar expression patterns and genetic properties to previous GFSTF protein traps. GT-alleles for eff, Cdep, Trim9, Ank2, and Ctrip are loss-of-function based on complementation tests and do not cause dominant phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C102 provide validation that the larger Flip-Flop cassette does not disrupt protein trap function compared to shorter constructs (C99-C100), and confirm that GT insertions behave as expected loss-of-function alleles (C101-C102). These are important controls supported by complementation data, though the comparison is described as showing 'no obvious difference' which is somewhat qualitative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    },
+    {
+      "id": "e67b8670-bb53-49c4-acac-ad0bffa59c7a",
+      "content_id": "c794863f-b462-4d6d-9ce8-695ebccb276b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Similar eye defects to those observed in SNF4A\u03b3 mutants have been described in alicorn (SNF4A\u03b1) mutant eye clones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 appropriately cites prior work (Spasi\u0107 et al., 2008) showing similar phenotypes in the \u03b1 subunit of AMPK, which supports the interpretation that the observed defects are consistent with AMPK complex dysfunction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:57.939450Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e062943e-97f2-433f-b1e6-b227f974bb45",
+      "result_id": "59a0acec-6b33-4625-adda-7b65885636c0"
+    },
+    {
+      "claim_id": "bff184ca-53ae-4663-8b41-5e56c225dde7",
+      "result_id": "59a0acec-6b33-4625-adda-7b65885636c0"
+    },
+    {
+      "claim_id": "5a74d4fd-88dd-4aa5-b3d7-da449ed86546",
+      "result_id": "59a0acec-6b33-4625-adda-7b65885636c0"
+    },
+    {
+      "claim_id": "30ef6299-6fd6-406b-a998-d3df3aa9a0b2",
+      "result_id": "59a0acec-6b33-4625-adda-7b65885636c0"
+    },
+    {
+      "claim_id": "4aa840f6-04e6-4269-b15f-5c2d45f76fef",
+      "result_id": "59a0acec-6b33-4625-adda-7b65885636c0"
+    },
+    {
+      "claim_id": "c0605a33-580f-441b-b15c-6517239548c7",
+      "result_id": "59a0acec-6b33-4625-adda-7b65885636c0"
+    },
+    {
+      "claim_id": "f2691cff-a6f8-4ffa-a271-f8de3f37b814",
+      "result_id": "59a0acec-6b33-4625-adda-7b65885636c0"
+    },
+    {
+      "claim_id": "0640c59e-6b49-4bd9-b816-ad841eca8474",
+      "result_id": "bd0c11bb-daec-4c5a-b25b-9d43f2520f8f"
+    },
+    {
+      "claim_id": "ec9423f5-7907-47ed-b201-f8d539f6a9d0",
+      "result_id": "bd0c11bb-daec-4c5a-b25b-9d43f2520f8f"
+    },
+    {
+      "claim_id": "01f5d89d-4400-407f-ba08-4b7259a2806d",
+      "result_id": "bd0c11bb-daec-4c5a-b25b-9d43f2520f8f"
+    },
+    {
+      "claim_id": "a8babd0c-9923-4757-bec2-a9885036619d",
+      "result_id": "bd0c11bb-daec-4c5a-b25b-9d43f2520f8f"
+    },
+    {
+      "claim_id": "234e1a61-2db0-4827-a612-007e2131c155",
+      "result_id": "bd0c11bb-daec-4c5a-b25b-9d43f2520f8f"
+    },
+    {
+      "claim_id": "2ebfe0d8-073d-4326-9e49-a7f90456f27f",
+      "result_id": "bd0c11bb-daec-4c5a-b25b-9d43f2520f8f"
+    },
+    {
+      "claim_id": "4f150e04-dd3e-4485-bb9f-dd6140d7ec1d",
+      "result_id": "bd0c11bb-daec-4c5a-b25b-9d43f2520f8f"
+    },
+    {
+      "claim_id": "d5284d1b-1447-4178-b8b8-60fc7325b704",
+      "result_id": "bd0c11bb-daec-4c5a-b25b-9d43f2520f8f"
+    },
+    {
+      "claim_id": "6e155a56-b651-4cbd-8531-3a0d6e70bc63",
+      "result_id": "bd0c11bb-daec-4c5a-b25b-9d43f2520f8f"
+    },
+    {
+      "claim_id": "71dfc2dd-9b8d-4594-9ce7-4672af49c2d1",
+      "result_id": "bd0c11bb-daec-4c5a-b25b-9d43f2520f8f"
+    },
+    {
+      "claim_id": "42b7fda8-e345-4eb9-b86f-ea7b823a2c03",
+      "result_id": "bd0c11bb-daec-4c5a-b25b-9d43f2520f8f"
+    },
+    {
+      "claim_id": "6018cc3f-5e5d-4ad6-9a4c-cd47b9e1de6d",
+      "result_id": "bd0c11bb-daec-4c5a-b25b-9d43f2520f8f"
+    },
+    {
+      "claim_id": "e5c25b8c-9c1e-47c4-9361-9b0e1252da0e",
+      "result_id": "bd0c11bb-daec-4c5a-b25b-9d43f2520f8f"
+    },
+    {
+      "claim_id": "ba4f3a17-c7c8-4ca0-b255-697a78ba90c0",
+      "result_id": "bd0c11bb-daec-4c5a-b25b-9d43f2520f8f"
+    },
+    {
+      "claim_id": "9afc205c-235f-4e0e-8058-cc778cafd6d9",
+      "result_id": "bd0c11bb-daec-4c5a-b25b-9d43f2520f8f"
+    },
+    {
+      "claim_id": "052251dc-cc1e-46a8-bafd-6494c3cd87d3",
+      "result_id": "bd0c11bb-daec-4c5a-b25b-9d43f2520f8f"
+    },
+    {
+      "claim_id": "dd65e4f9-5333-489f-af98-868a0b970988",
+      "result_id": "8904b99e-f654-4dea-9bc3-02ccf2ad8bdd"
+    },
+    {
+      "claim_id": "3b9a17a3-f337-4927-a223-c184f16e4913",
+      "result_id": "8904b99e-f654-4dea-9bc3-02ccf2ad8bdd"
+    },
+    {
+      "claim_id": "ec936bcf-4e7f-416d-b1ed-337ab0c0558b",
+      "result_id": "8904b99e-f654-4dea-9bc3-02ccf2ad8bdd"
+    },
+    {
+      "claim_id": "c29ccec0-d122-4be8-8965-eb7c9666eae9",
+      "result_id": "8904b99e-f654-4dea-9bc3-02ccf2ad8bdd"
+    },
+    {
+      "claim_id": "e7419881-943b-4a0c-b9d7-c59a6424a8b3",
+      "result_id": "8904b99e-f654-4dea-9bc3-02ccf2ad8bdd"
+    },
+    {
+      "claim_id": "16a91c62-2f02-46f6-ba7b-67ce646ddec1",
+      "result_id": "8904b99e-f654-4dea-9bc3-02ccf2ad8bdd"
+    },
+    {
+      "claim_id": "6132fddb-cbbc-4484-8cf8-f0e4ff35b11f",
+      "result_id": "8904b99e-f654-4dea-9bc3-02ccf2ad8bdd"
+    },
+    {
+      "claim_id": "36650ef3-5610-411a-b716-dc9ebeeb0c38",
+      "result_id": "bc2af238-61fa-494e-99f4-068686af2d5e"
+    },
+    {
+      "claim_id": "1765fc9f-cb67-44c8-9fec-290e546e1ce5",
+      "result_id": "bc2af238-61fa-494e-99f4-068686af2d5e"
+    },
+    {
+      "claim_id": "f4207426-be63-4d3a-8042-b2f209073076",
+      "result_id": "bc2af238-61fa-494e-99f4-068686af2d5e"
+    },
+    {
+      "claim_id": "7b92f8ea-f2fd-4557-8c0d-d55917f2d448",
+      "result_id": "bc2af238-61fa-494e-99f4-068686af2d5e"
+    },
+    {
+      "claim_id": "8b383418-56d2-47a3-9a70-b78b47b96599",
+      "result_id": "bc2af238-61fa-494e-99f4-068686af2d5e"
+    },
+    {
+      "claim_id": "04a68f69-3c6d-457d-b12c-a464d0510c50",
+      "result_id": "bc2af238-61fa-494e-99f4-068686af2d5e"
+    },
+    {
+      "claim_id": "0c41db32-c477-4b36-abf9-44f2747ab0ba",
+      "result_id": "bc2af238-61fa-494e-99f4-068686af2d5e"
+    },
+    {
+      "claim_id": "163bcd9c-9b97-4c3d-838a-ff159c0548b7",
+      "result_id": "bc2af238-61fa-494e-99f4-068686af2d5e"
+    },
+    {
+      "claim_id": "912867a9-4c49-43c3-99bb-ab395c63d011",
+      "result_id": "bc2af238-61fa-494e-99f4-068686af2d5e"
+    },
+    {
+      "claim_id": "6070b57f-00f5-4607-9c13-2552078e6d05",
+      "result_id": "bc2af238-61fa-494e-99f4-068686af2d5e"
+    },
+    {
+      "claim_id": "54a35d87-2488-4d8c-a588-b817cc919362",
+      "result_id": "bc2af238-61fa-494e-99f4-068686af2d5e"
+    },
+    {
+      "claim_id": "3720b0e5-d1a6-4090-93f6-77baf29633b9",
+      "result_id": "bc2af238-61fa-494e-99f4-068686af2d5e"
+    },
+    {
+      "claim_id": "c8909522-5527-465b-84a1-7fa29939cd5d",
+      "result_id": "bc2af238-61fa-494e-99f4-068686af2d5e"
+    },
+    {
+      "claim_id": "f3d01f80-e973-4f9c-993a-f604443f2683",
+      "result_id": "bc2af238-61fa-494e-99f4-068686af2d5e"
+    },
+    {
+      "claim_id": "57d924d7-7068-49ef-b3de-7bbd67869820",
+      "result_id": "bc2af238-61fa-494e-99f4-068686af2d5e"
+    },
+    {
+      "claim_id": "6d8d823c-ade6-4cc1-bd36-2b8df5dcc177",
+      "result_id": "d003b93d-7552-411e-8113-cd0222db4528"
+    },
+    {
+      "claim_id": "374a4eff-70f0-4c7d-8489-01257fb731fa",
+      "result_id": "d003b93d-7552-411e-8113-cd0222db4528"
+    },
+    {
+      "claim_id": "f2b17ec3-5c9f-43d9-b4e4-7991e12ba684",
+      "result_id": "d003b93d-7552-411e-8113-cd0222db4528"
+    },
+    {
+      "claim_id": "dfa80444-67e9-4c9b-a582-5829c64c8fff",
+      "result_id": "3ce44550-dc94-4683-a4b3-4cb2a6398ca3"
+    },
+    {
+      "claim_id": "738e1235-0d26-4b9c-a4a5-f116f4e48d77",
+      "result_id": "3ce44550-dc94-4683-a4b3-4cb2a6398ca3"
+    },
+    {
+      "claim_id": "a93b8c3a-4564-4f99-8e47-e08be2964af9",
+      "result_id": "3ce44550-dc94-4683-a4b3-4cb2a6398ca3"
+    },
+    {
+      "claim_id": "8909d7ac-6b26-4761-a02d-bebf3c1dcf33",
+      "result_id": "3ce44550-dc94-4683-a4b3-4cb2a6398ca3"
+    },
+    {
+      "claim_id": "c6af37df-7926-4897-88c7-cce29fcca9ec",
+      "result_id": "3ce44550-dc94-4683-a4b3-4cb2a6398ca3"
+    },
+    {
+      "claim_id": "1996a285-21b6-4567-8b0e-3fe5a333b5a2",
+      "result_id": "3ce44550-dc94-4683-a4b3-4cb2a6398ca3"
+    },
+    {
+      "claim_id": "334747cd-fabe-4527-bc6c-8fe140138856",
+      "result_id": "3ce44550-dc94-4683-a4b3-4cb2a6398ca3"
+    },
+    {
+      "claim_id": "6db7abce-9df5-4a91-8cab-8fb9c9224761",
+      "result_id": "3ce44550-dc94-4683-a4b3-4cb2a6398ca3"
+    },
+    {
+      "claim_id": "7fea059f-eb4c-41df-b457-c54be01d79b8",
+      "result_id": "3ce44550-dc94-4683-a4b3-4cb2a6398ca3"
+    },
+    {
+      "claim_id": "a5c3425a-64d0-4fb8-b29a-093bcca17425",
+      "result_id": "3ce44550-dc94-4683-a4b3-4cb2a6398ca3"
+    },
+    {
+      "claim_id": "5f3832ca-3f67-4957-8bc6-ae20102b7f9c",
+      "result_id": "1a4429e6-0bcb-4c37-9668-3b8a5fb469a1"
+    },
+    {
+      "claim_id": "e4756d99-ed74-4eb9-ac3b-6ad8cc558616",
+      "result_id": "1a4429e6-0bcb-4c37-9668-3b8a5fb469a1"
+    },
+    {
+      "claim_id": "733289f4-300c-47a6-8767-b6caefad587e",
+      "result_id": "1a4429e6-0bcb-4c37-9668-3b8a5fb469a1"
+    },
+    {
+      "claim_id": "84be294e-a863-413a-9283-0ebde1a54ece",
+      "result_id": "1a4429e6-0bcb-4c37-9668-3b8a5fb469a1"
+    },
+    {
+      "claim_id": "45286255-29bc-47b4-b603-8f6b82706b4d",
+      "result_id": "1a4429e6-0bcb-4c37-9668-3b8a5fb469a1"
+    },
+    {
+      "claim_id": "d42342f3-c734-4071-b0c9-883ce9e76c74",
+      "result_id": "1a4429e6-0bcb-4c37-9668-3b8a5fb469a1"
+    },
+    {
+      "claim_id": "4939ef77-985e-401c-9808-e4d80cda04ee",
+      "result_id": "1a4429e6-0bcb-4c37-9668-3b8a5fb469a1"
+    },
+    {
+      "claim_id": "5907465f-97a4-4b0d-b157-7210b625d2d0",
+      "result_id": "1a4429e6-0bcb-4c37-9668-3b8a5fb469a1"
+    },
+    {
+      "claim_id": "b43a498b-0884-4a75-a8a2-6ab938879445",
+      "result_id": "1a4429e6-0bcb-4c37-9668-3b8a5fb469a1"
+    },
+    {
+      "claim_id": "67b943db-a573-47f8-aae8-d62a69427b53",
+      "result_id": "d6830ea2-af7c-4ce9-a01e-4a19bf71abf7"
+    },
+    {
+      "claim_id": "dfa3f9d6-4fe1-4589-a53e-8171c29f48f9",
+      "result_id": "d6830ea2-af7c-4ce9-a01e-4a19bf71abf7"
+    },
+    {
+      "claim_id": "b1b1b92e-e064-4426-acc4-d6108c3f3dde",
+      "result_id": "d6830ea2-af7c-4ce9-a01e-4a19bf71abf7"
+    },
+    {
+      "claim_id": "ce260b95-3ba0-44da-9fe1-11c0cc86b037",
+      "result_id": "d6830ea2-af7c-4ce9-a01e-4a19bf71abf7"
+    },
+    {
+      "claim_id": "b1a0c4bb-e3f4-47ad-8141-ef28fe84b104",
+      "result_id": "14bfb188-ac50-41fa-836b-e17dd70bc504"
+    },
+    {
+      "claim_id": "613d518e-c80e-4f31-8246-79060e0faf1c",
+      "result_id": "14bfb188-ac50-41fa-836b-e17dd70bc504"
+    },
+    {
+      "claim_id": "26807d21-09f8-44d0-b22a-4b1f471ba6fa",
+      "result_id": "14bfb188-ac50-41fa-836b-e17dd70bc504"
+    },
+    {
+      "claim_id": "331ff052-f196-4e8e-a88d-31edb2ebcdfc",
+      "result_id": "14bfb188-ac50-41fa-836b-e17dd70bc504"
+    },
+    {
+      "claim_id": "597e90ef-98a5-4daf-9d46-fc3028aabddb",
+      "result_id": "14bfb188-ac50-41fa-836b-e17dd70bc504"
+    },
+    {
+      "claim_id": "b82eb89c-5d0b-4fdb-96cc-e4d06dafeb72",
+      "result_id": "14bfb188-ac50-41fa-836b-e17dd70bc504"
+    },
+    {
+      "claim_id": "0a2b9fe9-4d31-49a6-811e-2551881a404b",
+      "result_id": "14bfb188-ac50-41fa-836b-e17dd70bc504"
+    },
+    {
+      "claim_id": "8639bfc5-829e-4182-a352-931b04ef7e3d",
+      "result_id": "aad69d1f-0d36-4674-afe5-07e2f74e2500"
+    },
+    {
+      "claim_id": "77b9f110-b808-487c-9d29-8f25ac42efcb",
+      "result_id": "aad69d1f-0d36-4674-afe5-07e2f74e2500"
+    },
+    {
+      "claim_id": "add50b63-f1a4-4018-8f86-8e232b7979a6",
+      "result_id": "aad69d1f-0d36-4674-afe5-07e2f74e2500"
+    },
+    {
+      "claim_id": "867f3c01-6122-4c3c-8cda-b06e22a9dbc1",
+      "result_id": "aad69d1f-0d36-4674-afe5-07e2f74e2500"
+    },
+    {
+      "claim_id": "41ab8c9b-ab48-4e6f-b973-d190686ad8b7",
+      "result_id": "aad69d1f-0d36-4674-afe5-07e2f74e2500"
+    },
+    {
+      "claim_id": "9217c51e-214c-42dc-bdc8-369ec7e9c1ab",
+      "result_id": "aad69d1f-0d36-4674-afe5-07e2f74e2500"
+    },
+    {
+      "claim_id": "34491881-0108-495d-9e98-817a05ea59c4",
+      "result_id": "26ccf2aa-4ed2-4780-860d-84fd0e8a7d3b"
+    },
+    {
+      "claim_id": "e4266548-c624-463b-940b-4764943d66d7",
+      "result_id": "26ccf2aa-4ed2-4780-860d-84fd0e8a7d3b"
+    },
+    {
+      "claim_id": "34d1eb38-4f61-4f91-8b4e-9ac999f9ef6b",
+      "result_id": "26ccf2aa-4ed2-4780-860d-84fd0e8a7d3b"
+    },
+    {
+      "claim_id": "e2494929-1fb5-4088-a31c-c4db8bf0eaaa",
+      "result_id": "26ccf2aa-4ed2-4780-860d-84fd0e8a7d3b"
+    },
+    {
+      "claim_id": "2079a588-f1d0-4b00-a634-45073872f981",
+      "result_id": "26ccf2aa-4ed2-4780-860d-84fd0e8a7d3b"
+    },
+    {
+      "claim_id": "bff3ca4b-86d9-48ff-9396-2982bd996d56",
+      "result_id": "26ccf2aa-4ed2-4780-860d-84fd0e8a7d3b"
+    },
+    {
+      "claim_id": "acf8f116-33ea-4106-9fd2-140914961f0e",
+      "result_id": "26ccf2aa-4ed2-4780-860d-84fd0e8a7d3b"
+    },
+    {
+      "claim_id": "0dde7533-51ad-4a8e-ba71-afdb87dd3c5c",
+      "result_id": "26ccf2aa-4ed2-4780-860d-84fd0e8a7d3b"
+    },
+    {
+      "claim_id": "b639105b-09ba-44c0-8bde-9e3b9ed686ac",
+      "result_id": "26ccf2aa-4ed2-4780-860d-84fd0e8a7d3b"
+    },
+    {
+      "claim_id": "37709caf-0eb1-4937-9c68-d46524f733cc",
+      "result_id": "26ccf2aa-4ed2-4780-860d-84fd0e8a7d3b"
+    },
+    {
+      "claim_id": "04cf887d-d44c-4efd-94aa-890a4e3b7999",
+      "result_id": "d41d500b-0bd3-4c9e-b51a-cb712ac641c4"
+    },
+    {
+      "claim_id": "857d7b52-4ca8-40b9-b816-3b1fa2500873",
+      "result_id": "d41d500b-0bd3-4c9e-b51a-cb712ac641c4"
+    },
+    {
+      "claim_id": "d8668155-655d-4829-a7c7-f1138677b243",
+      "result_id": "d41d500b-0bd3-4c9e-b51a-cb712ac641c4"
+    },
+    {
+      "claim_id": "ff5a66c1-7b1d-4d1b-aafd-01637452b214",
+      "result_id": "d41d500b-0bd3-4c9e-b51a-cb712ac641c4"
+    },
+    {
+      "claim_id": "d6a38c1a-183e-4279-96f9-b2dd7b8e60e0",
+      "result_id": "bd2d7f8e-3520-4843-931a-952914537aa7"
+    },
+    {
+      "claim_id": "b9d7f19a-ea83-4b37-8469-86ce8e3f705e",
+      "result_id": "bd2d7f8e-3520-4843-931a-952914537aa7"
+    },
+    {
+      "claim_id": "a91229af-e721-4973-9dfa-8b23870d5637",
+      "result_id": "bd2d7f8e-3520-4843-931a-952914537aa7"
+    },
+    {
+      "claim_id": "fce147fc-5137-472d-8cda-bc16e6ed023f",
+      "result_id": "bd2d7f8e-3520-4843-931a-952914537aa7"
+    },
+    {
+      "claim_id": "cc6e1497-c104-4805-b611-c8c38fade169",
+      "result_id": "e67b8670-bb53-49c4-acac-ad0bffa59c7a"
+    }
+  ],
+  "comparisons": []
+}

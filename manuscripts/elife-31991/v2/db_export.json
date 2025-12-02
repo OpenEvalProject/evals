@@ -1,0 +1,1757 @@
+{
+  "submission": {
+    "id": "676658e3-8018-47ea-b8c5-99fd49102350",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:22:13.609192Z",
+    "updated_at": "2025-12-01T22:22:13.609192Z"
+  },
+  "content": [
+    {
+      "id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "submission_id": "676658e3-8018-47ea-b8c5-99fd49102350",
+      "content_type": "manuscript",
+      "content_text": "# Serotonin enhances excitability and gamma frequency temporal integration in mouse prefrontal fast-spiking interneurons\n\n## Authors\n\n- Jegath C Athilingam<sup>1</sup> ([ORCID: 0000-0001-5768-0105](https://orcid.org/0000-0001-5768-0105))\n- Roy Ben-Shalom<sup>2</sup>\n- Caroline M Keeshen<sup>2</sup>\n- Vikaas S Sohal<sup>1</sup> ([ORCID: 0000-0002-2238-4186](https://orcid.org/0000-0002-2238-4186)) \u2020\n- Kevin J Bender<sup>2</sup> ([ORCID: 0000-0001-7084-1532](https://orcid.org/0000-0001-7084-1532)) \u2020\n\n### Affiliations\n\n1. Department of Psychiatry University of California, San Francisco San Francisco United States\n2. Department of Neurology University of California, San Francisco San Francisco United States\n3. Weill Institute for Neurosciences University of California, San Francisco San Francisco United States\n4. Kavli Institute for Fundamental Neuroscience University of California, San Francisco San Francisco United States\n5. Neuroscience Graduate Program University of California, San Francisco San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe medial prefrontal cortex plays a key role in higher order cognitive functions like decision making and social cognition. These complex behaviors emerge from the coordinated firing of prefrontal neurons. Fast-spiking interneurons (FSIs) control the timing of excitatory neuron firing via somatic inhibition and generate gamma (30\u2013100 Hz) oscillations. Therefore, factors that regulate how FSIs respond to gamma-frequency input could affect both prefrontal circuit activity and behavior. Here, we show that serotonin (5HT), which is known to regulate gamma power, acts via 5HT2A receptors to suppress an inward-rectifying potassium conductance in FSIs. This leads to depolarization, increased input resistance, enhanced spiking, and slowed decay of excitatory post-synaptic potentials (EPSPs). Notably, we found that slowed EPSP decay preferentially enhanced temporal summation and firing elicited by gamma frequency inputs. These findings show how changes in passive membrane properties can affect not only neuronal excitability but also the temporal filtering of synaptic inputs.\n\n## Introduction\n\nThe prefrontal cortex (PFC) organizes higher order cognitive functions ranging from decision making to social cognition\u00a0(Euston et al., 2012;\u00a0Dias et al., 1996;\u00a0Ray and Zald, 2012).These complex behaviors emerge from the coordinated firing of PFC neurons, resulting in neuronal oscillations\u00a0(Buzs\u00e1ki and Chrobak, 1995;\u00a0Buzs\u00e1ki and Wang, 2012).\u00a0Synchronized oscillations of neuronal activity in the gamma frequency range (30\u2013100 Hz) play a key role in information encoding (Buzs\u00e1ki and Chrobak, 1995;\u00a0Buzs\u00e1ki and Wang, 2012)\u00a0and\u00a0prefrontal gamma oscillations influence the performance of tasks related to cognitive flexibility and attention (Cho et al., 2015; Kim et al., 2016). The neuromodulator serotonin (5HT) has been shown to regulate gamma power in motor cortex (Puig et al., 2010), suggesting that it could play a role in regulating task-dependent changes in gamma oscillations. Furthermore, neuropsychiatric disease associated with deficits in PFC gamma synchrony, including schizophrenia and depression, are currently treated with medications that have high affinity for serotonin receptors (Meltzer and Massey, 2011). Overall, this suggests that serotonergic modulation of gamma oscillations is important for prefrontal function; however, the cellular mechanisms by which 5HT modulates gamma oscillations remain elusive.\n\nGamma oscillations are orchestrated by cortical fast-spiking interneurons (FSIs; Cardin et al., 2009; Sohal et al., 2009;\u00a0Bartos et al., 2007;\u00a0Bartos et al., 2002;\u00a0Galarreta and Hestrin, 2001). In contrast to neighboring excitatory cells, FSIs resonate intrinsically in the 30\u201350 Hz range (Bracci et al., 2003; Fellous et al., 2001; Pike et al., 2000). In turn, FSIs are more likely to generate action potentials in response to gamma-modulated sinusoidal waveforms (Pike et al., 2000), suggesting that action potential generation in FSIs may favor gamma frequency input. This process may be regulated by 5HT. Indeed, 5HT can increase FSI intrinsic excitability, as measured at the soma (Weber and Andrade, 2010; Zhou and Hablitz, 1999; Zhong and Yan, 2011), but whether this also changes how FSIs encode synaptic input is not known.\n\nHere, we used patch clamp electrophysiology, glutamate uncaging, optogenetic stimulation, and compartmental modeling to investigate how serotonergic modulation of FSIs can regulate the integration of synaptic inputs, particularly at gamma frequencies. We found that 5HT enhances the excitability of FSIs due to a depolarization caused by a suppression of inward-rectifying potassium channels. Furthermore, we found that this reduction of potassium conductance in FSI dendrites increases the time constant of synaptic potentials, leading to a selective enhancement of temporal summation of gamma frequency inputs. This made FSIs more likely to fire action potentials, specifically in response to gamma-frequency inputs, and resulted in more inhibition in the gamma frequency band in downstream pyramidal neurons. These results suggest that 5HT can play a role in modulating prefrontal circuit activity by enhancing the flow of gamma-frequency information through FSIs via modulation of passive membrane properties.\n\n## Results\n\n### Activating 5HT2A receptors increases FSI intrinsic excitability\n\nTo determine if 5HT modulated the intrinsic properties of FSIs, we performed whole-cell patch clamp recordings of fluorescent neurons in PV-Cre::Ai14 mice and applied 5HT (30 \u00b5M). 5HT consistently depolarized FSIs by 6.1\u00a0\u00b1\u00a01.1 mV, from \u221271\u00a0\u00b1\u00a01.3 mV to \u221266\u00a0\u00b1\u00a02.2 mV (Figure 1\u2014figure supplement 1B, p<0.005, paired t-test 5HT vs. baseline, n\u00a0=\u00a010; Figure 1C, p=0.03, 5HT n\u00a0=\u00a010 vs. time-locked controls n\u00a0=\u00a08, post-hoc Tukey comparison after one-way ANOVA with p=0.005) and increased input resistance by 31.1 \u00b1 6.0%, from 92.9\u00a0\u00b1\u00a011.5 M\u03a9 to 121.6\u00a0\u00b1\u00a016.9 M\u03a9 (Figure 1\u2014figure supplement 1C,\u00a0p=0.026, paired t-test 5HT vs. baseline, n\u00a0=\u00a010; Figure 1D, p=0.037 5HT n\u00a0=\u00a010 vs. time-locked controls n\u00a0=\u00a08, post-hoc Tukey comparison after one-way ANOVA with p=0.004). We found this concentration of 30 \u00b5M to be sub-saturating, eliciting approximately 80% of the maximal response (Figure 1\u2014figure supplement 2). 5HT depolarized FSIs even in the presence of ionotropic glutamatergic (10 \u00b5M CNQX, 100 \u00b5M DL-AP5) and GABAergic (10 \u00b5M SR95531) antagonists (Figure 1C\u2013D, p=0.043 for Vm and p=0.05 for Rin, 5HT\u00a0+\u00a0syn block n\u00a0=\u00a09 vs. time-locked controls n\u00a0=\u00a08, post-hoc Tukey comparison after one-way ANOVAs with p=0.005 for Vrest and p=0.004 for Rin), but effects were blocked (n\u00a0=\u00a07) by the 5HT2A antagonist MDL100907 (1 \u00b5M, Figure 1C\u2013D, p=0.024 for Vm and p=0.026 for Rin, 5HT vs. 5HT\u00a0+\u00a02A antagonist post-hoc Tukey comparison after one- way ANOVAs with p=0.005 for Vrest and p=0.004 for Rin). Thus, 5HT signals through 2A receptors expressed on FSIs.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/31991/elife-31991-fig1-v2.jpg)\n\n**Figure 1.:** (A) Experimental design: we recorded from fast-spiking interneurons labeled in a PV-Cre:: Ai14 in mPFC (top). Images of a recorded neuron in DIC and showing tdTomato expression (bottom). (B) Example FSI responses to hyperpolarizing (\u2212200 pA) and depolarizing (50 pA above rheobase) current steps at baseline and after application (Post, 10 min after drug wash in) of 5HT (30 \u00b5M, blue), 5HT\u00a0+\u00a0synaptic blockers (10 uM CNQX, 100 uM DL-AP5, 10 uM gabazine, green), 5HT\u00a0+\u00a0synaptic blockers+5HT2A antagonist (1 uM MDL-100907, purple), or time-locked control aCSF (gray). (C\u2013D) Subtracted change in membrane potential (C) and percent change in input resistance (D) after pharmacological manipulations listed above. (E) Experimental design: Cre-dependent ChR2 was injected into the dorsal raphe of SERT-Cre mice. Top and bottom rows: Images of ChR2 expression and 5HT immunohistochemistry in dorsal raphe injection side (top) and mPFC recording site (bottom). Confocal images of ChR2 (green), 5HT immunohistochemistry (red), and merged. Yellow sections indicate overlap. Arrows point to examples of overlap. (F) Top: FSIs in mPFC were injected with light depolarizing current to elicit spiking and ChR2 expressing terminals were activated with blue light (10 Hz, 10 s) to release endogenous 5HT (top). Bottom: Peristimulus time histograms of FSI firing rate during current step with ChR2-activated release of 5HT (G) These experiments were repeated after washing in a 5HT2A antagonist (1 uM MDL100907). (H) Experimental design: ChR2 was injected into one hemisphere of mPFC and FSIs were patched on the opposite hemisphere. (I) Example traces of FSI responses at baseline (black) and after 5HT (blue) in response to activation of synaptic inputs from ChR2-expressing terminals with either a train of blue light pulses (5 Hz, 2 mW, top) or single light flashes (0.5\u20131 mW, bottom). (J) Number of spikes fired in response to each light flash in the stimulus train depicted before and after application of 5HT. (K\u2013L) Change in amplitude (K) and decay time constant (tau, (L) of synaptic responses before (black) and after 5HT (blue). *p<0.05, **p<0.01.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31991/elife-31991-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Membrane potential (left axis) and input resistance (right axis) over time during application of 5HT. (B\u2013C) Membrane potential (B) and input resistance (C before (averaged \u22125 min to 0 min) and after (averaged 2 to 7 min) application of 5HT. (D) FSI firing rate in response to depolarizing current steps. (E) Single action potential (AP) of a recorded FSI. Arrows and dotted lines indicate how measurements were made for the rest of the figure panels. (F) Rheobase (minimal current needed to elicit spiking) before (black) and after 5HT (blue). (G) AP halfwidth (time for Vm to rise from point halfway between peak and trough to the peak and back to the halfway point) before (black) and after 5HT (blue). (H) After\u00a0hyperpolarization (membrane potential of AP trough) before (black) and after 5HT (blue). (I) Spike threshold (determined by max of third derivative of membrane potential) before (black) and after 5HT (blue). (J) Spike height (difference between peak and threshold) before (black) and after 5HT (blue). (K) AP rise time (time from threshold to peak) before (black) and after 5HT (blue). (L) AP fall time (time from peak to trough) before (black) and after 5HT (blue). ***p<0.005.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31991/elife-31991-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Change in membrane potential with various doses of 5HT. 0 mV indicates no change. (B) Percentage change in input resistance with various doses of 5HT. 100% indicates no change.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/31991/elife-31991-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Experimental design: We recorded from somatostatin (SOM)-expressing interneurons labeled in a SOM-Cre:: Ai14 in mPFC. Example somatostatin (SOM)-expressing interneuron responses to hyperpolarizing and depolarizing current steps at baseline (black) and after application of 5HT (blue). (B\u2013C) Membrane potential B) and input resistance (C) over time during application of 5HT.\n\nChanges in Vm and Rin can change neuronal firing properties. Indeed, 5HT increased spiking in response to somatic current injection (Figure 1B; Figure 1\u2014figure supplement 1D, p=0.028 for treatment factor, 5HT vs. baseline in repeated measures two-way ANOVA for firing rate vs. current curve with current and treatment as factors, n\u00a0=\u00a010; Figure 1\u2014figure supplement 1F, p = 0.001, rheobase, 5HT vs. baseline, paired t-test, n\u00a0=\u00a010). No other changes in intrinsic firing properties were noted after 5HT application (Figure 1\u2014figure supplement 1G\u2013L).\n\nTwo broad classes of cortical interneurons arise from the medial (MGE) and caudal (CGE) ganglionic eminences\u00a0(Rudy et al., 2011). Interneuron classes that arise from the CGE, including CCK and VIP interneurons, have been shown to express 5HT3A receptors exclusively (Lee et al., 2010); however, It is unclear whether the other major MGE-derived class, somatostatin-expressing interneurons (SOM), express 5HT2A receptors. Therefore, we made similar excitability measurements from fluorescently identified SOM\u00a0+\u00a0neurons (Figure 1\u2014figure supplement 3). Intrinsic excitability was unaltered by 5HT application (p=0.34 for Vm and p=0.14 for Rin, paired t-test 5HT vs. baseline, n\u00a0=\u00a06). Overall, this indicates that FSIs respond to serotonin in a unique manner.\n\nTo determine if activation of endogenous serotonergic fibers could also increase FSI excitability in mPFC, we expressed ChR2 in serotonergic neurons in the dorsal raphe nucleus. A Cre-dependent virus (AAV5-Ef1a-DIO-ChR2-eYFP) was injected into SERT-Cre mice, which express Cre-recombinase under the promoter for the serotonin transporter (Figure 1E). Immunohistochemistry confirmed that both ChR2 expressing cells in the DRN and axon terminals in mPFC contained 5HT (Figure 1E). After waiting 5+\u00a0months for trafficking of ChR2 to prefrontal terminals, whole-cell recordings were made from prefrontal FSIs and serotonergic terminals were stimulated with rhythmic flashes of light (470 nm,~2 mW, 5 ms flashes, 10 Hz for 10 s). Endogenous 5HT release increased FSI firing rate from 10.9\u00a0\u00b1\u00a03.8 Hz to 29.8\u00a0\u00b1\u00a06.8 Hz (Figure 1F, p=0.035, during stimulation vs. before stimulation, paired t-test, n\u00a0=\u00a07). This increase was blocked by the 5HT2AR antagonist MDL100907 (Figure 1G, 1 \u00b5M, p=0.32, during stimulation vs. before stimulation, paired t-test, n\u00a0=\u00a05).\n\nMembrane depolarization can increase excitability and, therefore, neuronal firing in response to synaptic inputs. To further investigate effects of 5HT on FSI responses to synaptic inputs (as opposed to somatic current injection), we optogenetically activated glutamatergic inputs from contralateral mPFC while recording from FSIs (Figure 1H\u2013I, 470 nm,\u00a0~2 mW, 5 ms flashes, 10 flashes at 5 Hz). 5HT application increased the number of spikes elicited by each light flash (Figure 1G, p<0.0001 for both treatment and flash number in repeated measures two-way ANOVA, p<0.0001 for the interaction term, p<0.05 for flashes 1\u20138 5HT vs. baseline post-hoc comparison Bonferroni correction, n\u00a0=\u00a09).\n\nBy increasing membrane resistivity, 5HT could affect how synaptic inputs are filtered along FSI dendrites. To test this hypothesis, we delivered single light flashes at lower light power (~0.5\u20131 mW) and recorded excitatory post-synaptic potentials (EPSPs) before and after 5HT application (Figure 1I bottom). Interestingly, EPSP amplitude did not change (Figure 1K, p=0.120, paired t-test 5HT vs. baseline, n\u00a0=\u00a07, Figure 1H). However, EPSPs decayed more slowly following 5HT application (Figure 1L, decay tau: baseline 10.4\u00a0\u00b1\u00a01.2 ms, 5HT: 17.4\u00a0\u00b1\u00a03.5 ms, p=0.037, same analysis, n\u00a0=\u00a07).\n\n### 5HT decreases inward-rectifying potassium channel function\n\n5HT could modulate FSI intrinsic properties by regulating membrane ion channels. Specifically, a decrease in the overall potassium conductance, either through a direct effect on the channel or through channel internalization, would explain both of our observations: a depolarization of Vm and an increase in Rin. To determine whether 5HT altered K+ channel function, we made voltage clamp recordings during a membrane potential ramp from \u2212130 mV to \u221250 mV over 3 s. We measured the total whole-cell current throughout the ramp before and after 5HT application (Figure 2A top). 5HT decreased the slope of the I-V curve (p=0.037, paired t-test 5HT vs. baseline, n\u00a0=\u00a07), indicating a decrease in membrane conductance. By subtracting the baseline I-V curve from 5HT, we calculated the I-V curve for the current modulated by 5HT (Figure 2A bottom). This current displayed inward rectification and reversed at \u221299\u00a0\u00b1\u00a04.7 mV, very close to the predicted reversal potential for K+ in our preparation (\u2212101 mV). Both the 5HT-mediated current (p=0.0007, KGluc\u00a0+MDL100907 vs. KGluc, post-hoc Tukey multiple comparison test with one-way ANOVA with p<0.0001, Figure 2F) and I-V curve slope change (p=0.04, same analysis, Figure 2E) were abolished (n\u00a0=\u00a03) with pre-application of MDL100907 (1 \u00b5M) (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/31991/elife-31991-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013B) Top: Current recorded during a voltage ramp (3 s) from \u2212150 mV to \u221250 mV before (black) and after 5HT (blue) using KGluconate in the internal solution (A) and with pre-application of the 5HT2A antagonist MDL100907 (1 \u00b5M). Bottom: The raw currents from the I-V curves subtracted from each other to show the current modulated by 5HT. (C) Top: Current in response to voltage ramp using CsMe internal solution to block K+ channels. Bottom: 5HT-mediated current. (D) Top: Current in response to same voltage ramp with barium chloride (400 \u00b5M) in the bath solution to block inward-rectifying K+ channels. Bottom: 5HT-mediated current. (E) The change in slope of the I-V curves (change in conductance) from A-D. (F) Quantification of charge transfer by 5HT in above conditions, calculated by taking the integral of bottom traces in A-D. *p<0.05, ***p<0.005.\n\n5HT-sensitive currents reversed at potassium equilibrium and were smaller in the outward direction, suggesting that 5HT modulates an inward rectifying K+ channel. To test this, we first repeated voltage ramps using a cesium-based internal solution to block K+ channels (Figure 2C). Both the 5HT-mediated current (p<0.0001, CsMe vs. KGluc, ANOVA with post-hoc Tukey multiple comparison test, Figure 2F) and changes in I-V curve (p=0.007, same analysis, Figure 2E) were absent (n\u00a0=\u00a06) in these conditions. Secondly, we switched back to a K-based internal solution and blocked inward-rectifying K+ channels using Ba+ (Figure 2D) at a concentration that fully blocks Kir ion flux across the entire voltage range of the ramp (400 \u00b5M, Alagem et al., 2001). Again, both the I-V curve changes (p<0.0001, BaCl2 vs. KGluc, ANOVA with post-hoc Tukey multiple comparison test, Figure 2E) and the 5HT-mediated current (p=0.01, same analysis, Figure 2F) were blocked (n\u00a0=\u00a05). Thus, 5HT reduces the conductance of inward rectifying potassium channels in FSIs.\n\nReducing K+ conductance in a compartmental model of a fast-spiking interneuron (Figure 3A) also increased Vm and Rin (Figure 3B); a reduction of gK by 60\u201370% across the cell was sufficient to recapitulate our experimental data. However, increased cable filtering and prolonged synaptic decay (tau) is likely due to reduction of K+ channel conductance specifically in the dendrites. Indeed, when K+ channel conductance was systematically reduced in different subcompartments (Figure 3C soma only, Figure 3D dendrites only, Figure 3E both\u00a0soma and dendrites), only dendritic reduction of gK resulted in an increase in synaptic time constant (Figure 3G). Interestingly, consistent with our experimental observations during optogenetic stimulation of inputs to FSIs (Figure 1L), no manipulation of gK affected EPSP amplitude in our model (Figure 3F).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/31991/elife-31991-fig3-v2.jpg)\n\n**Figure 3.:** (A) Morphology of FSI model. Black circle represents location of synapse. (B) Change in membrane potential (left axis) and input resistance (right axis) in response to reducing conductance of K\u00a0+\u00a0channels in both the soma and dendrites of model. Dashed black line indicates average effect from experimental data on Vm and Rin in response to 5HT application. (C\u2013E) Synaptic responses recorded at the model soma after reducing K\u00a0+\u00a0conductance by varying amounts (30\u201380%) only at the soma (C), only at the dendrites (D), or at both the soma and dendrites (E). (F\u2013G) EPSP amplitude (F) and synaptic time constant (G) after reducing K\u00a0+\u00a0conductance in soma (green), dendrites (purple), or both (blue).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31991/elife-31991-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Experimental design: Synapse was stimulated on dendrite and response was recorded at site of synapse in either voltage clamp or current clamp. (B) EPSP traces recorded in current clamp at dendrite at baseline and after reducing gK to mimic 5HT. (C) EPSC traces recorded in voltage clamp at dendrite with varying holding potentials and reducing gK.\u00a0(D) Experimental design: Synapse was placed at varying distances from soma (5\u2013200 \u00b5m) on a single dendrite and EPSP was recorded at the soma at baseline and after reducing gK. (E\u2013F) Change in EPSP amplitude (D) and tau (D) due to gK reduction as a function of distance from soma are shown.\n\nThis last observation can be understood using a simple computational model as follows. According to Ohm\u2019s law, increasing Rin might be expected to elicit an increase in EPSP amplitude (Vsyn\u00a0=\u00a0IsynRin). However, this could be countered by a decrease in driving force (Vm-Esyn) if the membrane depolarization from 5HT was sufficiently large. In fact, in our compartmental model, reducing the dendritic gK to mimic the experimentally observed effects of 5HT on somatic Vm and Rin caused a decrease in the EPSP amplitude and synaptic current when measured at the dendrite (90% of baseline amplitude, Figure 3\u2014figure supplement 1A\u2013C), indicating that this reduction in driving force dominates the dendritic response to synaptic stimulation. However, due to the increase in Rin, the dendritic EPSP also attenuates less as it travels toward the soma such that the EPSP amplitude, measured at the soma, is ultimately unchanged by this manipulation. As such, the effects of reducing dendritic gK on EPSP amplitude and tau should depend on the distance of the synapse from the soma (Figure 3\u2014figure supplement 1D). Indeed, in our model, placing the synapse closer to the soma (<100 \u00b5m) and reducing dendritic gK to match the observed effects of 5HT on Vm and Rm slightly reduced the somatic EPSP amplitude (Figure 3\u2014figure supplement 1E). By contrast, moving the model synapse further out along the dendrite (100\u2013150 \u00b5m) did not affect the EPSP amplitude, presumably indicating that for a range of dendritic locations, the effects on driving force and EPSP attenuation cancel out. At distances furthest from the soma (>150 \u00b5m), somatic EPSP amplitude was increased after reducing gK. We did consistently observe an increase in EPSP tau especially when the model synapse was placed far from the soma (Figure 3\u2014figure supplement 1F). These results from our computational model provide simple intuition as to how 5HT can modulate the EPSP decay without affecting EPSP amplitude.\n\nSince our modeling results suggest that 5HT acts mainly to suppress K+ channels located in the dendrites, we decided to test this experimentally by delivering 5HT exclusively to the dendrites using local iontophoresis under two-photon guidance (Figure 4A). 5HT significantly increased FSI firing rate when applied immediately adjacent to a dendrite (Figure 4B, p=0.001, before iontophoresis vs. after iontophoresis, paired t-test, n\u00a0=\u00a09). By computationally filtering out spikes from our traces, we determined that dendritic iontophoresis of 5HT elicited a 1.19\u00a0\u00b1\u00a00.69 mV depolarization of the soma (Figure 4\u2014figure supplement 1A-B).\u00a0By applying this same filtering technique to spike trains elicited by somatic current injection, we found that a somatic depolarization of 2.63\u00a0\u00b1\u00a01.57 mV of FSIs was sufficient to cause an increase in firing rate comparable to that observed by dendritic iontophoresis of 5HT (Figure 4\u2014figure supplement 1C). This effect disappeared when the iontophoretic pipette was withdrawn from the dendrite (Figure 4C\u2013D, p=0.14, same analysis, n\u00a0=\u00a07). By placing the iontophoretic pipette at varying distances from the dendrite, we determined that 5HT only increased firing rate when the pipette was\u00a0<5 \u00b5m away (space constant\u00a0=\u00a03.13 \u00b5m, Figure 4E). All iontophoretic sites were\u00a0>30 \u00b5m from the soma (Figure 4E), confirming that effects are due to local action of 5HT at receptors on the dendrite and not due to diffusion of 5HT to the soma.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/31991/elife-31991-fig4-v2.jpg)\n\n**Figure 4.:** (A,C) Experimental design: Neurons were patched and filled with Alexa-488. 5HT was applied locally to the dendrite using iontophoresis (50 ms), while FSIs were injected with a small amount of depolarizing current to elicit spiking. DIC and overlaid fluorescent images with iontophoretic pipette adjacent to (A) or withdrawn from (C) dendrite. (B,D) Firing rate in response to current injection with local 5HT iontophoresis adjacent to dendrite (B) or withdrawn from dendrite (D). (E) Change in firing rate with iontophoresis (FR 1 s before ionto pulse subtracted from FR after ionto pulse) at different distances from the dendrite. Solid black line in exponential fit to data. Space constant is 3.13 \u00b5m. (F) Distances of iontophoretic sites from the soma.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31991/elife-31991-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Average membrane potential recorded at the soma during dendritic iontophoresis with spikes removed via median filtering. Blue line indicates time of iontophoresis. (B) Change in membrane potential in the 2 s preceding and following iontophoresis. (C) Number of spikes fired in response to somatic square current injections versus change in membrane potential (computed by removing spikes from traces). Dotted lines on the y-axis indicate the firing rates pre (~10 Hz) and post (~18 Hz) iontophoresis. Dotted lines on the x-axis display the change in membrane potential required to elicit those firing rates. A depolarization of 2\u20133 mV is sufficient to change an FSI\u2019s firing rate from 10 to 18 Hz.\n\n### 5HT enhances the temporal integration of inputs at gamma frequencies\n\nBy prolonging the decay of synaptic potentials, 5HT could enhance the integration of multiple synaptic inputs within FSI dendrites. For example, 5HT could improve summation of a second EPSP that arrives during the period of prolonged decay (~10\u201320 ms after the first input, Figure 1I). This suggests that 5HT might promote temporal summation (and spike output) in response to inputs arriving specifically in the 50 to 100 Hz range (i.e. in line with the prolonged decay), To test this, we first mimicked glutamatergic input onto FSI dendrites using two-photon flash photolysis of caged-glutamate, as this technique allows precise control of the position and timing of synaptic activity. Slices were bathed in MNI-glutamate (2.5 mM), and glutamate was released at five specific sites (~1 \u00b5m apart) on FSI dendrites (720 nm 2-photon excitation, 0.5 ms pulses, Figure 5A). EPSPs were recorded at the soma before and after 5HT application (applied via iontophoresis directly above the slice for 5 s). 5HT delivered in this manner produced increases in membrane potential, input resistance, and firing rate comparable to bath application (Figure 5\u2014figure supplement 1). Consistent with ChR2 synaptic stimulation experiments (Figure 1H\u2013L) and compartmental modeling (Figure 3), 5HT did not affect single EPSP amplitude (Figure 5C, p=0.45, normalized change in amplitude: Post/Pre, one-sample t-test vs. 1, n\u00a0=\u00a039 dendrites, 25 cells). However, 5HT did increase the time constant of the EPSPs from 14.7\u00a0\u00b1\u00a00.6 ms to 18.6\u00a0\u00b1\u00a01.0 ms (Figure 5D, p=0.0002, change in tau: Post \u2013 Pre, one-sample t-test vs. 0, n\u00a0=\u00a039 dendrites, 25 cells). As with ChR2 synaptic stimulation, changes in EPSP decay peaked 10\u201320 ms after stimulation (Figure 5E), suggesting that the summation of synaptic inputs arriving within this time window may be preferentially enhanced by 5HT.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/31991/elife-31991-fig5-v2.jpg)\n\n**Figure 5.:** (A) Experimental design: Slices were bathed in a caged glutamate compound (MNI-Glutamate 2.5 mM) that is only biochemically active with photolysis. Glutamate was uncaged at five locations (1 \u00b5m apart) on a dendrite individually and then at all five together with varying interstimulus intervals (0.12, 5, 10, 20, 50 ms). (B) Amplitude-normalized EPSP in response to single uncaging events before (black) and after application of 5HT (blue). (C) Ratio of EPSP amplitudes (5HT/baseline) for single uncaging events (averaged per dendrite). Dotted line indicates no change. (D) Change in synaptic decay time constant (tau) of single uncaging events (averaged per dendrite) before and after 5HT. Dotted line indicates no change. (E) Difference of 5HT and baseline EPSP traces in B. (F) Example compound EPSPs in response to uncaging at all five dendritic locations at varying interstimulus intervals (0.12, 20, 50 ms). (G\u2013H) Ratio of fifth EPSP amplitude (G, 5HT/Baseline) and charge transfer (H, 5HT/Baseline integral) for different interstimulus intervals. *p<0.05, **p<0.01.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31991/elife-31991-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Experimental design: FSIs were patch clamped and an iontophoretic pipette containing 5HT (200 mM, pH\u00a0=\u00a04.5) or vehicle control solution (aCSF, pH\u00a0=\u00a04.5) was hovered just above the slice. (B\u2013D) Left panels: change in membrane potential (B), input resistance (C), and firing rate (D) in response to iontophoresis (5 s) of either 5HT (blue) or vehicle control (black) over time. Right panels: Quantification change in parameters before (\u2212100 to 0 s) or after (0 to 150 s) iontophoresis. *p<0.05, **p<0.01.\n\nTo examine frequency-specific effects of 5HT on temporal summation, we uncaged glutamate at all five sites using varying inter-stimulus intervals (0.12, 5, 10, 20, 50 ms, Figure 5F), and measured the amplitude of the last EPSP as well as the total integrated EPSP area. As predicted, 5HT significantly promoted summation, specifically at the 10 ms (p=0.05, change in fifth\u00a0EPSP amplitude: 5HT/Baseline, one-sample t-test vs. 1, n\u00a0=\u00a026 dendrites, 18 cells; p=0.006, change in area under curve: 5HT/Baseline, one-sample t-test vs. 1, n\u00a0=\u00a026 dendrites, 18 cells, Figure 5H) and 20 ms intervals (p<0.05, change in fifth\u00a0EPSP amplitude, same analysis as above, n\u00a0=\u00a029 dendrites, 20 cells, Figure 5G; p=0.0171, change in area under curve, same analysis as above, n\u00a0=\u00a029 dendrites, 20 cells, Figure 5H). Thus, by slowing the decay of synaptic potentials, 5HT promotes summation of gamma frequency inputs.\n\n### Computational models reproduce frequency-specific enhancement of summation by 5HT\n\nTo determine if the change in synaptic decay could fully account for the observed differences in temporal summation, we first used a simple algebraic model to explore the effect of changing the synaptic time constant independent of changes in membrane potential and resistivity. After creating an EPSP template using a double exponential equation, the decay time constant was altered to mimic the effect of 5HT (taubaseline\u00a0=\u00a015 ms, tau5HT = 23ms) and five template EPSPs were convolved at varying intervals (0\u201350 ms). Consistent with experimental data, changing the tau of the EPSP decay promoted summation of inputs at 10\u201320 ms intervals more than other frequencies (Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/31991/elife-31991-fig6-v2.jpg)\n\n**Figure 6.:** (A) Experimental design: Single EPSPs were modeled using a double exponential with two different decay constants (taubaseline\u00a0=\u00a015 ms, tau5HT = 23 ms) to match the change in tau observed with 5HT application. These template EPSPs were convolved five times with varying intervals (ISI). Example traces shown here of single EPSP, 20 ms ISI, and 50 ms ISI with baseline tau (black) and 5HT tau (blue). (B) The ratio of amplitude of the fifth\u00a0EPSP (slow tau/fast tau) as a function of interval. (C) Morphology of FSI model. Purple circles represent location of synapses. (D) Comparisons of model (blue) and experimental (black) intrinsic properties at baseline (circles) and after manipulations (blue\u00a0=\u00a0model: reducing gK by 70%, black\u00a0=\u00a0experimental: application of 5HT). (E) Synapses in model were stimulated at variable interstimulus intervals (ISI). Example traces for compound EPSPs with 0 ms, 20 ms, and 50 ms ISIs at baseline (black) and after reducing gK by 70% (blue). (F) The ratio of amplitude of the fifth\u00a0EPSP (reduced gK/baseline) as a function of ISI.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31991/elife-31991-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Experimental design: Five synapses were placed either on the same dendrite (1 \u00b5m apart, arrowhead, black), separate dendrites (blue), or soma (green). The synapses were stimulated at varying interstimulus intervals (0, 5, 10, 20, 50 ms) and voltage responses at the soma were recorded. (B) The ratio of amplitude of the fifth\u00a0EPSP (Reduced gK/Baseline) as a function of interval for different synapse locations. (C) Example traces for compound EPSPs with 0 ms, 20 ms, and 50 ms ISIs at baseline (black) and after reducing gK by 70% (blue) with synapses placed either on the soma (green) or separate dendrites (blue). (D) The ratio of amplitude of the fifth\u00a0EPSP (Reduced gK/Baseline) as a function of interval for different numbers of synapses (on same dendrite) activated. (E) The ratio of amplitude of the fifth\u00a0EPSP (Reduced gK/Baseline) as a function of internal for varying synapse weights.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31991/elife-31991-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Experimental design: Synaptic noise was included at various levels in a subset of dendrites of the compartmental model and synapses in model (Figure 6C) were stimulated at variable ISIs. Example traces for compound EPSPs at baseline (black, left) and after reducing gK by 70% (blue, middle) when initial input resistance was 45 M\u03a9 to closely match in vivo conditions. Gray traces are single example trials. (B\u2013C) Comparisons of model (colored) and experimental (gray) intrinsic properties at baseline (circles) and after manipulations (colored\u00a0=\u00a0model: reducing gK by 70%, black\u00a0=\u00a0experimental: application of 5HT). (D) The ratio of amplitude of the fifth EPSP (Reduced gK/Baseline) as a function of interval for different levels of synaptic noise to change baseline Rin.\n\nWe then implemented this change in tau in the FSI compartmental model by reducing gk in all compartments. To simulate our two-photon uncaging experiment, five model synapses along a single dendrite (1 \u00b5m apart, Figure 6C) were stimulated using varying interstimulus intervals (Figure 6E). A 70% reduction in gK throughout the neuron changed Vm, Rin, and tau by an amount comparable to the experimental effect of 5HT (Figure 6D). Furthermore, in the model, the reduction in gK and resultant change in tau could reproduce the frequency-specific enhancement of summation observed in our uncaging experiments. Specifically, inputs arriving within 10\u201320 ms were summated preferentially, as compared to higher (0\u20135 ms ISI) or lower (50 ms ISI) frequencies. Preferential summation at 10\u201320 ms ISIs was observed even when we varied synaptic strength, synapse placement on the dendritic arbor, or number of synapses recruited (Figure 6\u2014figure supplement 1). While the same general effect was observed when all synapses were clustered onto the soma, we found that peak amplitudes were attenuated, likely due to reductions in driving force from membrane depolarization (Figure 6\u2014figure supplement 1B-C).\u00a0Next, we included random background synaptic noise to reduce Rin and more closely simulate in vivo conditions. For these experiments, we included randomly fluctuating noise conductances that modeled both excitatory and inhibitory conductances on a subset of dendrites and stimulated synapses at baseline and after reducing K\u00a0+\u00a0conductance by 70%. As expected, inclusion of noise reduced the measured input resistance (Figure 6\u2014figure supplement 2C). But even when Rin was reduced up to 33%, summation remained tuned to enhancements for 10\u201320 ms (Figure 6\u2014figure supplement 2D). These values encompass those measured in vivo (47 M\u03a9; Pala and Petersen, 2015), suggesting that serotonin enhances frequency-specific summation over a broad range of background activity levels.\n\n### FSIs preferentially spike in response to gamma frequency inputs with 5HT\n\nPreferential summation of gamma-frequency inputs could, in turn, promote gamma-specific FSI output. To isolate the intrinsic effect of 5HT in FSIs and avoid any potential off target effects of 5HT modulation at other loci within the prefrontal microcircuit, we took a chemogenetic approach, expressing the Gq-coupled designer receptor hM3D (AAV-DJ-Ef1a-DIO-h3MD(Gq)-mCherry), which is activated by the exogenous ligand clozapine-N-oxide (CNO), or a control fluorophore virus (AAV-DJ-Ef1a-DIO-mCherry) in FSIs using PV-Cre+/- mice. CNO had no effect on Vm or Rin in FSIs expressing only the control fluorophore (Figure 7\u2014figure supplement 1). However, in FSIs expressing the Gq-DREADD receptor, CNO application increased Vm (Figure 7C; p<0.0001, paired t-test CNO vs. baseline, n\u00a0=\u00a07), Rin (Figure 7D; p=0.0004, paired t-test CNO vs. baseline), and spiking (Figure 7B) in FSIs, and produced similar changes in Kir function (Figure 7E), suggesting that hM3D receptors can co-opt signaling pathways downstream of 5HT2A receptors and mimic the effects of 5HT on FSI physiology.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/31991/elife-31991-fig7-v2.jpg)\n\n**Figure 7.:** (A) Experimental design: The Gq-coupled Designer Receptor Exclusively Activated by Designer Drugs (DREADD) was expressed specifically in FSIs using a Cre-dependent virus injected into PV-Cre mice. FSIs were identified with fluorescence for patching. (B) Example FSI responses to hyperpolarizing and depolarizing current steps at baseline (black) and after application of CNO to activate the Gq-DREADD (1 \u00b5M, blue). (C) Top: Current recorded during a voltage ramp (3 s) from \u2212150 mV to \u221250 mV before (black) and after CNO (blue). Bottom: The raw currents from the I-V curves subtracted from each other to show the current modulated by CNO. (D\u2013E) Changes in membrane potential (D) and input resistance (E) before and after CNO. (F) Experimental design: A stimulating electrode was placed in the tissue within 100 \u00b5m of the recorded FSI and a 2 s train of randomly distributed stimulating current pulses (200 \u00b5s) with varied interstimulus intervals (ISIs\u00a0=\u00a05, 10, 20, 50, 100 ms) was delivered. Example FSI responses to stimulus train at baseline (black) and after application of CNO (blue). (G) Expanded view of subthreshold responses indicated by dotted box in F. (H) Change in single EPSP amplitude with CNO. (I) Normalized change in EPSP integral (CNO/Baseline) with CNO application for different ISIs. (J) Change in the percentage of all spikes occurring at each ISI after CNO. *p<0.05, **p<0.01 ***p<0.005.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31991/elife-31991-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A\u2013B) Change in membrane potential (A) and input resistance (B) over time with application of CNO in FSIs that either express the Gq-coupled DREADD, hM3D(Gq)-mCherry (blue) or a control fluorophore, mCherry (black). CNO application begins at time 0.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31991/elife-31991-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A) Experimental design: A stimulating electrode was placed in the tissue within 100 \u00b5m of the recorded FSI and a 2 s train of randomly distributed stimulating current pulses (200 \u00b5s) with varied interstimulus intervals (ISIs\u00a0=\u00a05, 10, 20, 50, 100 ms) was delivered. Example FSI responses to stimulus train at baseline (black) and after application of the 5HT2A agonist \u03b1-methyl-5HT (blue). (B\u2013C) Change in membrane potential (B) and input resistance (C) with application of \u03b1-methyl-5HT. (D\u2013E) Change in amplitude (B) and tau (C) for subthreshold events with application of \u03b1-methyl-5HT. (F) Change in the percentage of all spikes occurring at each ISI after CNO. *p<0.05, **p<0.01 ***p<0.005.\n\nWe delivered a train of randomly distributed electrical stimuli (Figure 7F\u2013G) using predefined ISIs (5, 10, 20, 50, 100 ms) through a local stimulating electrode. Again, we observed no measurable change in single EPSP amplitude (p=0.13, paired t-test CNO vs. baseline, n\u00a0=\u00a07). Interestingly, CNO application mainly enhanced EPSPs following ISIs of 10 or 20 ms (p=0.04 for 10 ms and p=0.046 for 20 ms, normalized change in EPSP integral: CNO/baseline, one sample t-test vs. 1, n\u00a0=\u00a07, Figure 7I). The increased summation at these frequencies translated into an increase in the probability of firing in response to inputs after 10 ms ISIs. Specifically, CNO increased the percentage of spikes that occurred after stimulation with 10 ms ISI compared to other frequencies (p<0.0001 for treatment in ANOVA, p=0.002 for 10 ms vs. 20 ms, p<0.0001 for 10 ms vs. 50 ms, p=0.004 for 10 ms vs. 100 ms, post-hoc comparison with Tukey\u2019s correction, Figure 7I). While the Gq-DREADD activates the same downstream signaling cascades, it is not clear if its localization is\u00a0similar to that\u00a0of\u00a0endogenous 5HT2A receptors. Therefore, we performed similar experiments using a selective 5HT2A agonist \u03b1-methyl-5HT (30 \u00b5M). Effects on FSI Vm (p=0.002, paired t-test baseline vs. \u03b1-methyl-5HT, n\u00a0=\u00a05) and Rin (p=0.01, paired t-test baseline vs. \u03b1-methyl-5HT, n\u00a0=\u00a05) were similar with \u03b1-methyl-5HT as with endogenous 5HT and Gq-DREADD activation with CNO (Figure 7\u2014figure supplement 1;\u00a0Figure 7\u2014figure supplement 2B\u2013C). As in other experiments, we found that \u03b1-methyl-5HT did not change the amplitude (p=0.96, paired t-test baseline vs. \u03b1-methyl-5HT, n\u00a0=\u00a05, Figure 7\u2014figure supplement 2), but did increase the decay time (p=0.03, paired t-test baseline vs. \u03b1-methyl-5HT, n\u00a0=\u00a05, Figure 7\u2014figure supplement 2E) of subthreshold EPSPs. Furthermore, we replicated our earlier findings and found that 5HT2AR agonism increased the percentage of spikes that occurred after stimulation with 10 ms and 20 ms ISIs compared to other frequencies (p<0.001 for treatment in ANOVA, p=0.002 for 10 ms vs. 50 ms, p=0.002 for 10 ms vs. 100 ms, p=0.01 for 5 ms vs. 20 ms, p=0.002 for 20 ms vs. 50 ms and 100 ms post-hoc comparison with Tukey\u2019s correction, 6 cells, Figure 7\u2014figure supplement 2D). Thus, serotonergic signaling in FSIs seems to specifically enhance the ability of these cells to respond to gamma-frequency input.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/31991/elife-31991-fig8-v2.jpg)\n\n**Figure 8.:** (A) Experimental design: The Gq-DREADD was expressed specifically in FSIs using a cre-dependent virus injected into PV-Cre mice. Prefrontal slices were bathed in carbachol (2 \u00b5M) to induce spontaneous background synaptic activity. Non-fluorescent pyramidal neurons were chosen for patching using a high chloride internal solution to elicit inward IPSCs. CNQX (10 \u00b5M) was included in the bath to block AMPA currents. (B) Example traces of spontaneous IPSCs recorded at baseline (black) and after wash-in of CNO (blue). (C) Total number of IPSC events in 1\u00a0min at baseline and after CNO application. (D) Probability distribution of inter-event intervals for IPSCs recorded at baseline and after CNO. (E) Change in probability of inter-event intervals of different frequency bands. Theta\u00a0=\u00a048 Hz, alpha\u00a0=\u00a08\u201312 Hz, beta\u00a0=\u00a013\u201329 Hz, low gamma\u00a0=\u00a039\u201359 Hz, high gamma\u00a0=\u00a061\u2013100 Hz. *p<0.05, **p<0.01 ***p<0.005.\n\nDue to heavy reciprocal connectivity, FSIs are able to entrain the synchronous firing of neighboring interneurons and pyramidal cells, and an increased probability of firing in response to gamma frequency inputs in FSIs could promote gamma frequency inhibition in the prefrontal cortical microcircuit. Therefore, we recorded spontaneous inhibitory postsynaptic currents (IPSCs) in pyramidal neurons in an \u2018active\u2019 slice preparation (2 \u00b5M carbachol) at baseline and after Gq-DREADD activation in FSIs with CNO (Figure 8A\u2013B). We found that CNO dramatically increased the number of IPSCs recorded (p=0.04 paired t-test CNO vs. baseline, 5 cells, Figure 8C), indicating an overall increase in inhibition. Interestingly, we also found that the frequency of IPSCs shifted toward inter-event intervals of 10\u201320 ms (Figure 8D), corresponding to an increase in the probability of gamma frequency inhibitory events (Figure 8E). Thus, we conclude that 5HT increases gamma frequency inhibition in the prefrontal network.\n\n## Discussion\n\nHere, we provide a detailed examination of how changes to passive membrane properties by a neuromodulator alter temporal integration by a neuron. We find that by closing potassium channels, serotonin not only increases the excitability of FSIs, but also promotes synaptic integration in a frequency-specific manner, leading to preferential enhancement of responses to gamma frequency inputs, both in terms of EPSP summation, spiking, and network inhibition.\n\n### 5HT increases FSI excitability by altering intrinsic properties\n\nWe described the detailed cellular mechanism through which 5HT modulates FSI activity in the mPFC. Previous slice physiology studies showed that 5HT or a 5HT2A agonist could increase the frequency of spontaneous inhibitory post-synaptic currents (sIPSCs) recorded in pyramidal neurons (Weber and Andrade, 2010; Zhou and Hablitz, 1999) and that 5HT increased firing of FSIs (Weber and Andrade, 2010; Zhong and Yan, 2011). Here, we showed that 5HT increased FSI input resistance, membrane voltage, and AP excitability in response to both somatic current injection (Figure 1B, Figure 1\u2014figure supplement 1D) and optogenetically\u00a0evoked synaptic input (Figure 1H\u2013L). These changes in intrinsic properties reflect the reduction of an inward-rectifying potassium conductance in FSIs (Figure 2). These data may provide mechanistic insight into a previously observed increase in presynaptic facilitation of inhibitory glycinergic synapses (Mintz et al., 1989). Our results are in contrast to one study that found that 5HT differentially increases or decreases firing of distinct subpopulations of FSIs in vivo (Puig et al., 2010). However, these experiments were performed in a different species (rat) and in a more dorsolateral brain region (M2). Furthermore, systemic 5HT antagonists in that study could have influenced other cells in the network such that the observed effects may not reflect direct actions on FSIs.\n\n### 5HT promotes temporal summation of inputs arriving at gamma frequency by prolonging EPSP decay\n\nCompared to neighboring pyramidal cells, which can respond to synaptic input with the generation of dendritic superlinearities (Stuart and Spruston, 2015), FSI dendrites tend to function more as passive filters (Abrahamsson et al., 2012). As such, changes in passive membrane properties can have significant effects on integration in FSIs. Here, 5HT-mediated suppression of dendritic Kir conductances prolonged the decay of synaptic potentials without changing EPSP amplitude (Figure 1K\u2013L, Figure 5A\u2013E). This provides a mechanism for promoting the summation of inputs arriving during the period of prolonged decay, and specifically enhancing high gamma frequency (50\u2013100 Hz) inputs, as compared to input at other frequencies. FSIs also exhibit subthreshold resonance around 30 Hz (Bracci et al., 2003; Fellous et al., 2001; Pike et al., 2000) and network models show that this membrane resonance contributes to network gamma oscillations (Moca et al., 2014). Furthermore, FSIs show enhanced firing in response to gamma frequency modulation of sinusoidal current injected into the soma (Pike et al., 2000). However, no studies have explored whether synaptic integration in FSIs also favors gamma frequency inputs. Here, we show that the enhanced temporal integration of gamma frequency inputs elicited by 5HT also translates to a greater probability of FSI spiking by using a Gq-DREADD expressed exclusively in PV cells (Figure 7F\u2013I). By enhancing summation of inputs at these frequencies, 5HT could further enhance an intrinsic preference for FSIs to fire at gamma frequencies, and thus regulate the power of gamma oscillations.\n\n### Implications for serotonergic regulation of prefrontal circuit activity\n\nFSIs play a critical role in shaping cortical circuit activity. With abundant reciprocal connections and highly divergent synapses onto principal pyramidal cells, FSIs are able to precisely control the timing of spike discharges of large populations of cortical neurons\u00a0(Bartos et al., 2007;\u00a0McBain and Fisahn, 2001;\u00a0Tam\u00e1s et al., 2000).\u00a0These properties endow FSIs with the ability to orchestrate network oscillations (Cardin et al., 2009; Sohal et al., 2009), specifically in the gamma frequency range, which have been suggested to be important for information encoding (Buzs\u00e1ki and Chrobak, 1995;\u00a0Buzs\u00e1ki and Wang, 2012).\u00a0A\u00a0previous study (Puig et al., 2010) found that electrical stimulation of the dorsal raphe of rat both increased and decreased the activity of distinct populations of FSIs in secondary motor cortex via 5HT2A and 5HT1A receptors, respectively. Furthermore, this group found that blocking 5HT2ARs decreased the power of gamma oscillations, suggesting that 5HT2AR activation could contribute to increases in gamma oscillatory power. In our preparation, we did not find distinct subpopulations of FSIs with differential responses to 5HT; all recorded FSIs displayed an increase in membrane potential, input resistance, and excitability. Therefore, by regulating the temporal summation of inputs to FSIs and resulting FSI spiking, serotonergic actions on FSI dendrites may provide a substrate for regulating the power or frequency of network oscillatory activity, thereby enhancing information transfer to downstream structures (Sohal et al., 2009). Future studies should examine the effect of 5HT on FSI activity and gamma oscillations in vivo.\n\nSerotonin plays a complex role in prefrontal circuits and has been implicated in a wide array of prefrontal cognitive tasks from rule shifting (Clarke et al., 2007, 2004; Baker et al., 2011) and executive control (Koot et al., 2012; Carli et al., 2006) to working memory (Williams et al., 2002 )\u00a0and social cognition (Passamonti et al., 2012). While we focus here on the role of 5HT on FSIs, 5HT receptors are also expressed on pyramidal neurons (Araneda and Andrade, 1991;\u00a0Avesar and Gulledge, 2012)\u00a0and 5HT3a-expressing interneurons, including VIP, CCK, and others (Puig and Gulledge, 2011). Thus, it will be interesting in future studies to determine whether serotonergic regulation of one or all these populations is important for its behavioral effects.\n\n### Clinical relevance\n\nPrefrontal dysfunction is etiological to many major psychiatric disorders, including schizophrenia and depression (Drevets et al., 2008). Moreover, current treatments for these disorders often target serotonergic transmission. Selective serotonin reuptake inhibitors (SSRIs) remain the most commonly used treatments for depression (Risch and Nemeroff, 1992; Willner, 1985) and second-generation antipsychotics used in schizophrenia block the 5HT2A receptor with high affinity (Meltzer et al., 2003;\u00a0Meltzer and Massey, 2011). Classic hallucinogens such as lysergic acid diethylamide (LSD) activate the 5HT2A receptor (Titeler et al., 1988), implicating it in psychosis. Additionally, patients with schizophrenia show lower levels of the 5HT2A receptor in PFC (Arora et al., 1991; Selvaraj et al., 2014).\n\nImpairments in FSI function and gamma rhythms may also be involved in the pathophysiolology of schizophrenia (Gonzalez-Burgos et al., 2010;\u00a0Gonzalez-Burgos et al., 2015; Lewis et al., 2005; Uhlhaas and Singer, 2010). Previous work from our group showed that optogenetic activation of FSIs at gamma frequency is able to rescue impairments in cognitive flexibility in mice that model key aspects of schizophrenia (Cho et al., 2015). Furthermore, treatment with antipsychotic drugs that act on 5HT receptors can reduce gamma power (Schulz et al., 2012). The precise relationship between 5HT, prefrontal FSIs, and schizophrenia is still unclear. However, the findings of this study may contribute to understanding clinical actions of second-generation antipsychotics through their actions on prefrontal FSIs.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>\ufeff\ufeff\ufeffgenetic\u00a0reagent (M. musculus)</td>\n      <td>PV-Cre</td>\n      <td>Jackson Laboratory</td>\n      <td>Stock#:017320</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic\u00a0reagent (M. musculus)</td>\n      <td>Ai14</td>\n      <td>Jackson Laboratory</td>\n      <td>Stock#:007914</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic\u00a0reagent (M. musculus)</td>\n      <td>SERT-Cre</td>\n      <td>Jackson Laboratory</td>\n      <td>Stock#:014554</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>transfected construct (virus)</td>\n      <td>AAV5-Ef1-DIO-ChR2-eYFP</td>\n      <td>UNC Vector Core</td>\n      <td>AAV5-Ef1a-DIO-hChR2(H134R)-EYFP-WPRE-pA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>transfected construct (virus)</td>\n      <td>AAV5-CaMKII-ChR2-eYFP</td>\n      <td>UNC Vector Core</td>\n      <td>AAV5-CaMKIIa-hChR2(H134R)-EYFP</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>transfected construct (virus)</td>\n      <td>AAV-DJ-Ef1a-DIO-hM3D(Gq)-mCherry</td>\n      <td>Stanford Vector Core</td>\n      <td>GVVC-AAV-130</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>transfected construct (virus)</td>\n      <td>AAV-DJ-Ef1a-mCherry</td>\n      <td>Stanford Vector Core</td>\n      <td>GVVC-AAV-14</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>DL-AP5</td>\n      <td>Tocris</td>\n      <td>Catalog#:3693</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>CNQX</td>\n      <td>Tocris</td>\n      <td>Catalog#:1045</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>Gabazine</td>\n      <td>Tocris</td>\n      <td>Catalog#:1262</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>5HT</td>\n      <td>Tocris</td>\n      <td>Catalog#:3457</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>MDL100907</td>\n      <td>Tocris</td>\n      <td>Catalog#:4173</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>\u03b1\u2212methyl\u22125\u0397T</td>\n      <td>Tocris</td>\n      <td>Catalog#:0557</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>Carbachol</td>\n      <td>Tocris</td>\n      <td>Catalog#:2810</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>MNI-Glutamate</td>\n      <td>Tocris</td>\n      <td>Catalog#:1490</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>antibody (rabbit)</td>\n      <td>Rabbit anti-5HT</td>\n      <td>Immunostar</td>\n      <td>Catalog#:20080</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>antibody (mouse)</td>\n      <td>mouse anti-GFP</td>\n      <td>Invitrogen</td>\n      <td>Catalog#:A11120</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>antibody (goat)</td>\n      <td>Alexa 405 goat anti-rabbit</td>\n      <td>Invitrogen</td>\n      <td>Catalog#:A31556</td>\n      <td>1:250</td>\n    </tr>\n    <tr>\n      <td>antibody (goat)</td>\n      <td>Alexa 488 goat anti-mouse</td>\n      <td>Invitrogen</td>\n      <td>Catalog#:A11029</td>\n      <td>1:250</td>\n    </tr>\n  </tbody>\n</table>\n\n### Electrophysiology\n\nCoronal brain slices (250 \u00b5m) including medial prefrontal cortex were made from adult mice aging 8 weeks or older. We used the following transgenic mouse lines: PV-Cre (RRID: IMSR_JAX:008069), PV-Cre::Ai14 (RRID:MGI:2176738), and SERT-Cre (RRID: IMSR_JAX:014554). All experiments were conducted in accordance with procedures established by the Institutional Animal Care and Use Committee and Laboratory Animal Resource Center at the University of California, San Francisco. Slicing solution was chilled to 4\u00b0C and contained (in mM): 234 sucrose, 26 NaHCO3, 11 glucose, 10 MgSO4, 2.5 KCl, 1.25 NaH2PO4, 0.5 CaCl2, bubbled with 5% CO2/95% O2. Slices were incubated in artificial cerebrospinal fluid (aCSF) at 32\u00b0C for 30 min and then at room temperature until recording. aCSF contained (in mM): 123 NaCl, 26 NaHCO3, 11 glucose, 3 KCl, 2 CaCl2, 1.25 NaH2PO4, 1 MgCl2, also bubbled with 5% CO2/95% O2.\n\nNeurons were visualized using differential interference contrast or DODT contrast microscopy on an upright microscope (Olympus,\u00a0Burlingame,\u00a0CA). Recordings were made using a Multiclamp 700B (Molecular Devices,\u00a0Sunnyvale,\u00a0CA) amplifier and acquired with either pClamp or IgorPro (iontophoresis and uncaging experiments). Patch pipettes (2\u20135 M\u03a9 tip resistance) were filled with the following (in mM): 130 KGluconate, 10 KCl, 10 HEPES, 10 EGTA, 2 MgCl2, 2 MgATP, 0.3 Na3GTP. For some voltage clamp experiments, a cesium based internal solution was used that contained (in mM): 130 CsCH4O3S, 4 NaCl, 2 MgCl2, 10 EGTA, 10 HEPES, 2 MgATP, 0.5 Na3GTP. For recordings of inhibitory postsynaptic currents (IPSCs) in pyramidal neurons, a high\u00a0-chloride internal solution was used that contained (in mM): 120 CsCl, 15 CsMeSO4, 8 NaCl, 0.5 EGTA, 10 HEPES, 2 MgATP, 0.5 Na3GTP. All recordings were made at 32\u201334\u00b0C. Series resistance was compensated in all current clamp experiments and monitored throughout recordings. Recordings were discarded if Rs changed by\u00a0>25%.\n\nFast-spiking interneurons were identified by fluorescent visualization of td-Tomato (PV-Cre::Ai14 mice) or mCherry expressed by Cre-dependent viral injection (AAV5-hSyn-DIO-hM3D(Gq)-mCherry or AAV-DJ-Ef1a-DIO-mCherry, PV-Cre mice) or mCherry driven by the Dlxi12b enhancer (AAV5-Dlxi12b-mCherry, SERT-Cre mice).\n\nAll bath-applied drugs (Tocris,\u00a0Minneapolis,\u00a0MN) were dissolved in water (3, 15, 30, or 100 \u00b5M 5HT, 10 \u00b5M CNQX, 100 \u00b5M DL-AP5, 10 \u00b5M gabazine, 1 \u00b5M CNO, 30 \u00b5M \u03b1-methyl-5HT, 2 \u00b5M carbachol) or DMSO (1 \u00b5M MDL100907) before being diluted in aCSF. MNI-Glutamate (2.5 mM) was dissolved directly in aCSF as powder. Alexa 488 (Invitrogen) was dissolved in water and then diluted to 10 \u00b5M in internal solution. For experiments including iontophoresis, the 5HT or vehicle solutions were made to pH\u00a0=\u00a04.5 using 10N HCl. The experimenter was not blind to pharmacological treatment.\n\n### Viral injection for expression of ChR2 or fluorescent reporter\n\nViral injections were performed using standard mouse stereotactical methods. Mice were anesthetized for the duration of the surgery using isofluorane gas. After cleaning, an incision was made in the scalp, the skull was leveled, and small burr holes were drilled over the brain region of interest using a dental drill. Virus was injected through the burr holes using a microinjector (WPI,\u00a0Sarasota,\u00a0FL) at a speed of 150 nL/min and the scalp was closed using sutures or tissue adhesive (3M,\u00a0St.\u00a0Paul,\u00a0MN).\n\nFor expression of ChR2 in serotonergic neurons, we injected a Cre-dependent ChR2 virus (AAV5-Ef1a-DIO-ChR2-eYFP, 1 \u00b5L) into the dorsal raphe of SERT-Cre mice (>p40) and waited 5\u201315 months for trafficking of ChR2 to the axon terminals in mPFC. In these mice, we additionally injected an AAV-Dlxi12b-mCherry virus (750 nL) into the mPFC one month before patching to label interneurons for easy identification.\n\nFor stimulation of synaptic inputs into mPFC using ChR2, we injected a ChR2 virus driven by the CaMKII promoter (AAV5-CaMKII-ChR2-eYFP, 750 nL) unilaterally into PV-Cre::Ai14 mice and patched FSIs in the opposite hemisphere after waiting 4\u20135 weeks for expression.\n\nFor DREADD activation of fast-spiking interneurons, we injected a Cre-dependent virus expressing the Gq-DREADD (AAV-DJ-Ef1a-DIO-hM3D(Gq)-mCherry, 750 nL) or a control fluorophore (AAV-DJ-Ef1a-DIO-mCherry, 750 nL) into PV-Cre+/- mice and patched from fluorescent cells after waiting 5 weeks for expression.\n\nDorsal raphe injection coordinates were A/P=\u22124.55, M/L\u00a0=\u00a00.0, D/V\u00a0=\u00a0\u22123.0. mPFC injection coordinates were A/P=1.7, M/L =\u00a0\u00b10.3, D/V\u00a0=\u00a0\u22122.75\n\n### ChR2 stimulation\n\nWe stimulated ChR2 in terminals using 5 ms flashes of light generated by a Lambda DG-4 (Sutter Instruments) high-speed optical switch with a 300 W Xenon lamp delivered through a 470 nm excitation filter. For stimulation of 5HT terminals, light flashes were delivered at 10 Hz for 10 s through a 40x objective. For stimulation of ChR2 from contralateral PFC, we delivered a train of 10 light flashes at 5 Hz.\n\n### Electrical stimulation\n\nmPFC synapses were stimulated using an IsoFLEX stimulator (AMPI,\u00a0Israel, 200 \u00b5s pulse duration) via a bipolar glass stimulation electrode (Sutter,\u00a0Novato,\u00a0CA) placed within 100 \u00b5m of the patched cell. A 2-s stimulus train was delivered where stimulus pulses of varying interstimulus intervals (5, 10, 20, 50, 100 ms) were randomly distributed in the train.\n\n### Two-photon imaging, glutamate uncaging, and 5HT iontophoresis\n\nNeurons were visualized using a two-photon imaging system (Bruker,\u00a0Middleton,\u00a0WI) powered by two femtosecond lasers (Coherent, Ultra II) as previously described (Bender and Trussell, 2009). Internal solution was supplemented with 10 \u00b5M Alexa 488 and dendritic arbors were visualized with an 880 nm excitation source. For local application of 5HT to specific neuronal subcompartments or minimal 5HT application during uncaging experiments, borosilicate pipettes were filled with 200 mM 5HT in H2O (pH adjusted to 4.5). Scanning interference contrast images of slice morphology and the iontophoretic pipette were acquired with a photomultiplier tube downstream of a 770 nm longpass filter. The iotophoretic pipette was positioned upstream of the application site, relative to the overall flow of extracellular solution, either directly above the slice, near the recorded somata (within 10 \u00b5m) for uncaging experiments, or in proximity to a dendrite (0\u201315 \u00b5m). 5HT was applied using a 200 nA pulses (40 nA backing current) for 5 s (uncaging) or 50 ms (local iontophoresis) using an ION-100 current generator (Dagan,\u00a0Minneapolis,\u00a0MN).\n\nTo activate putative synaptic sites along FSI dendrites, 4-methoxy-7-nitroindolinyl-caged L-glutamate (MNI-glutamate, 2.5 mM, Tocris) was photolyzed using a 720 nm excitation source (0.5 ms duration, power determined empirically to produce 0.5\u20135 mV EPSPs at the soma). Five uncaging locations were chosen on a single dendrite spaced 1 \u00b5m apart. Glutamate was uncaged at each location individually and then at all locations together in a burst with varying interstimulus intervals (0.12, 5, 10, 20, 50 ms). The sequence of uncaging events always began at the most distal dendritic location, approaching the soma serially. Results were averaged over 4\u20137 repetitions at each interstimulus interval before and after iontophoretic 5HT application. Trials in which EPSP failures were noted due to preparation drift, or in which spikes were generated, were discarded from analysis.\n\n### Computational modeling\n\n#### Algebraic model\n\nA simple double exponential voltage response (template EPSP) was created using the following equation: (1/normfac)* (-exp(-t/tauslow))+exp(-t/taufast)) where normfac = (tauslow/taufast)^(taufast/(taufast-tauslow)) and t is time. The decay tau (tauslow) was set to either 15 ms (taubaseline) or 23 ms (tau5HT). The template EPSP was convolved five times at varying ISIs (0\u201350 ms). EPSP amplitude was calculated by taking the maximum of the convolved trace.\n\n#### Compartmental model in NEURON\n\nOur compartmental neuronal model was adapted from a model FSI from the Allen Institute for Brain Science (ID#: 469610831). All channel parameters from this model were translated into NEURON and commands were run in the hoc language. The original model contained only one mechanism for passive conductance (reversal potential e\u00a0=\u00a0\u221261.6229). This single passive mechanism was split into two separate mechanisms: K+ (Kpas, eK = \u2212107 mV) and Na+ passive (Napas, eNa\u00a0=\u00a053 mV) and the values of these conductances (g) were altered while maintaining their relative conductances to each other until the resting membrane potential and input resistance of the cell matched experimental values. Dendritic diameter was set to 1.5 \u00b5m (Guly\u00e1s et al., 1999)\u00a0and axial resistance (Ra) was set to 172 (N\u00f6renberg et al., 2010). Five double exponential synapses (esyn\u00a0=\u00a00 mV) were either placed at the midpoint of one dendrite (96 \u00b5m from soma, 1 \u00b5m apart). Synaptic parameters (tau, weight) were modified until the EPSP waveform matched experimental data. In some experiments, background synaptic noise was inserted as a point process into a subset of dendrites with a stochastic model containing fluctuating excitatory and inhibitory conductances (Michalikova et al., 2017). The level of background noise was varied by scaling total synaptic conductance to match Rin values obtained during in vivo whole-cell recordings of cortical FSIs (Pala and Petersen, 2015).\u00a0Each model was replicated 10 times with random noise. To mimic the effects of 5HT in the model neuron, the conductances of K\u00a0+\u00a0channels in the soma (Kpas, Kv3.1, SK) and dendrites (Kpas, Kv3.1, Mv2) were reduced by varying percentages (90\u201330%) and membrane potential and input resistance (calculated by Ohm\u2019s law for a \u221250 pA current step) were measured. Synapses were stimulated in the model alone or at varying intervals (5, 10, 20, 50 ms). Tau of the single synaptic response was calculated by fitting an exponential to the decay of the EPSP. EPSP amplitude was calculated by taking the maximum of the voltage response.\n\n### Immunohistochemistry\n\nBrain slices obtained for electrophysiological recording were drop-fixed in 4% paraformaldehyde in phosphate buffered solution overnight, then rinsed with phosphate-buffered saline (PBS), cryopreserved in 30% sucrose solution in PBS, and then re-sectioned at 50 \u00b5m using a freezing stage microtome. Sections were rinsed in PBS and blocked with blocking solution (Fisher B10710) for 1\u00a0hr. Sections were then incubated in primary antibodies diluted in 0.2% TritonX-100 in PBS overnight at 4\u00b0C. The following primary antibodies were used: Rabbit anti-5HT (Immunostar 20080; 1:500) and mouse anti-GFP (Invitrogen A11120; 1:500). Sections were then rinsed with PBS and incubated in secondary antibodies (1:250, Invitrogen: Alexa 405 goat anti-rabbit A31556, Alexa 488 goat anti-mouse A11029) for 4\u00a0hr. Finally, sections were rinsed and mounted (Fisher P36934). Images were obtained using a high speed wide-field microscope (Nikon Ti, with Andor Zyla 5.5 sCMOS) with a 10x/0.45 or 20x/0.75 (+\u00a0+\u00a060 x) Plan Apo objective. Fiji software was used to make adjustments for brightness and contrast. Widefield images were stitched with Fiji.\n\n### Statistical analysis\n\nAll data are shown as mean\u00a0\u00b11 SEM. We used student\u2019s t-test to compare pairs of groups if data were normally distributed (verified using Lillie test). If more than two groups were compared, we used ANOVA with post-hoc tests between groups corrected for multiple comparisons (Tukey). Sample sizes were chosen based on current standards in the field. No power analysis was done.\n\n### Ethics statement\n\nThis study was performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. All of the animals were handled according to approved institutional animal care and use committee (IACUC) protocols (AN170116, AN129822-02F) of the University of California, San Francisco. All surgery was performed under isofluorane anesthesia, and every effort was made to minimize suffering.\n",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "7c54a5f7-30ab-4427-a43a-dcf930943d94",
+      "submission_id": "676658e3-8018-47ea-b8c5-99fd49102350",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marlene Bartos, University of Freiburg Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.31991.022](https://doi.org/10.7554/eLife.31991.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Serotonin enhances excitability and gamma frequency temporal integration in prefrontal fast-spiking interneurons\" for consideration by eLife. Your article has been favorably evaluated by Gary Westbrook (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe study by Athilingam et al. examines conclusively the influence of 5HT on the excitability of PV interneurons of the medial prefrontal cortex in mice using in vitro electrophysiology, optogenetics, 2P single cell imaging, pharmacogenetics and single cell computation. The authors demonstrate that 5HT has a depolarizing effect on PVIs, increases the input resistance of PV cells by reducing potassium conductances and, finally, slows the decay of EPSPs, which in turn enhances the temporal summation of EPSPs. The reviewers, however, formulated some critical points that should be addressed.\n\nEssential revisions:\n\n1) The effect of 5HT iontophoresis on the EPSP time course and the summation of EPSPs cannot be directly compared with the expression of hM3D receptors because rAAVs will allow an expression of hM3D receptors on the entire dendritic tree plus axon whereas the expression of 5HT receptors may be more compartmentalized. Thus, the conclusions of this set of data (hM3D receptor-mediated) should be toned down.\n\n2) Figure 3 should include the data mentioned in the text: the change in EPSP amplitude as a function of distance along the somato-dendritic domain with and without 5HT-mediated effects (Rin, Vm).\n\n3) The relationship between the effects of 5HT on the enhanced summation of EPSPs evoked at gamma frequencies should be experimentally strengthened. One possibility could be to examine whether the effects of 5-HT on synaptic responses translates to more rhythmic spiking output of FSIs by measuring autocorrelograms. Alternatively, they may consider inducing gamma oscillations in slice preparations (e.g. bath application of kainite) and examine whether 5HT induces enhanced gamma power. If the experimental applications are not fruitful, the authors should acknowledge the limitations of their findings.\n\n4) Using Gq-DREADDs to examine downstream signaling pathways of 5-HT, assuming the 2A receptors are responsible for the effects of 5-HT, is an interesting approach. However, this method may not necessarily activate these signaling pathways in the same way that 5-HT does and the Gq pathway is not specific to 5-HT. The involvement of 5HT2A receptors should be directly tested. The authors should also administer CNO in uninjected mice as a control (see MacLaren et al. 2016, JNeurosci).\n\n5) \"[C]hanges in EPSP decay were most prominent in the 10-20 ms after the stimulus\". The increase looks quite similar over the 10-50 ms range. Therefore, provide statistical support for this statement.\n\n6) An outstanding question is how the effects described in the present study will translate to the intact brain. One study (Puig et al. 2010) found that 5-HT release decreased the amplitude of gamma oscillations in vivo. Please discuss more thoroughly the data in context to published work as well as future directions for examining the contribution of 5-HT to gamma oscillations.\n\n7) Figure 1 legend seems to be wrong. Panel numbers do not line up with descriptions.\n\n8) 50 \u00b5M 5HT seems like a high dose. Please provide some information regarding concentration-dependence of the response, and whether this is saturating.\n\n9) The computational modeling nicely complements the experimental results. However, it seems that the conclusions regarding retention of the 5HT-enhancing effects on gamma integration in vivo need to be fleshed out. If the in vivo condition can be modeled by an increase in leak (mixed Na/K) due to synaptic iGluRs, then the relative contribution of the Kir conductance to the overall leak conductance will be less than in the in vitro case. Is this what was modeled? The same absolute change in K conductance on top of an overall increased leak?\n",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9408a804-7d7f-49ab-9285-90975a5dc191",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C1",
+      "claim": "The medial prefrontal cortex plays a key role in higher order cognitive functions like decision making and social cognition.",
+      "claim_type": "EXPLICIT",
+      "source": "The medial prefrontal cortex plays a key role in higher order cognitive functions like decision making and social cognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Euston et al., 2012; Dias et al., 1996; Ray and Zald, 2012) as indicated in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "41f7afb7-0ee5-4914-8ca3-d283a1c28f5a",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C2",
+      "claim": "Fast-spiking interneurons control the timing of excitatory neuron firing via somatic inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Fast-spiking interneurons (FSIs) control the timing of excitatory neuron firing via somatic inhibition and generate gamma (30\u2013100 Hz) oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about FSI function in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "9b21cc2c-ccd2-47c1-a73d-f2ea6cb5f6e0",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C3",
+      "claim": "Fast-spiking interneurons generate gamma (30\u2013100 Hz) oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Fast-spiking interneurons (FSIs) control the timing of excitatory neuron firing via somatic inhibition and generate gamma (30\u2013100 Hz) oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about FSI function in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "e158fb3e-ab1a-4b76-8729-18d8bca534ab",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C4",
+      "claim": "Serotonin acts via 5HT2A receptors to suppress an inward-rectifying potassium conductance in FSIs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that serotonin (5HT), which is known to regulate gamma power, acts via 5HT2A receptors to suppress an inward-rectifying potassium conductance in FSIs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Figures 1 and 2 showing effects of 5HT and 5HT2A antagonists on FSI properties and potassium currents.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "91f5e093-acaa-4302-a5d8-3a48cf9f6697",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C5",
+      "claim": "Serotonin leads to depolarization of FSIs.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to depolarization, increased input resistance, enhanced spiking, and slowed decay of excitatory post-synaptic potentials (EPSPs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figure 1 showing membrane potential changes with 5HT application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "df49a994-604b-4c49-b60f-efd7118e35ee",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C6",
+      "claim": "Serotonin leads to increased input resistance in FSIs.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to depolarization, increased input resistance, enhanced spiking, and slowed decay of excitatory post-synaptic potentials (EPSPs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figure 1 showing input resistance changes with 5HT application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "3b2690f4-595a-4680-93bc-c8080771db79",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C7",
+      "claim": "Serotonin leads to enhanced spiking in FSIs.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to depolarization, increased input resistance, enhanced spiking, and slowed decay of excitatory post-synaptic potentials (EPSPs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figure 1 showing increased firing rates with 5HT application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "8a73a949-d3f2-4868-8d3e-cd634c9ef515",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C8",
+      "claim": "Serotonin leads to slowed decay of excitatory post-synaptic potentials (EPSPs) in FSIs.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to depolarization, increased input resistance, enhanced spiking, and slowed decay of excitatory post-synaptic potentials (EPSPs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figures 1 and 5 showing increased EPSP decay time constants with 5HT application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "100e39c6-d590-4bd2-9367-ff4bd4048d54",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C9",
+      "claim": "Slowed EPSP decay preferentially enhanced temporal summation and firing elicited by gamma frequency inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we found that slowed EPSP decay preferentially enhanced temporal summation and firing elicited by gamma frequency inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figures 5 and 7 showing frequency-specific enhancement of summation and spiking.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "a42c994d-4d96-4412-bdcd-75c02873449c",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C10",
+      "claim": "Synchronized oscillations of neuronal activity in the gamma frequency range (30\u2013100 Hz) play a key role in information encoding.",
+      "claim_type": "EXPLICIT",
+      "source": "Synchronized oscillations of neuronal activity in the gamma frequency range (30\u2013100 Hz) play a key role in information encoding (Buzs\u00e1ki and Chrobak, 1995; Buzs\u00e1ki and Wang, 2012) and prefrontal gamma oscillations influence the performance of tasks related to cognitive flexibility and attention (Cho et al., 2015; Kim et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Buzs\u00e1ki and Chrobak, 1995; Buzs\u00e1ki and Wang, 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "e9c35a25-6584-4b2e-bfe6-b5072eee71c8",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C11",
+      "claim": "Prefrontal gamma oscillations influence the performance of tasks related to cognitive flexibility and attention.",
+      "claim_type": "EXPLICIT",
+      "source": "Synchronized oscillations of neuronal activity in the gamma frequency range (30\u2013100 Hz) play a key role in information encoding (Buzs\u00e1ki and Chrobak, 1995; Buzs\u00e1ki and Wang, 2012) and prefrontal gamma oscillations influence the performance of tasks related to cognitive flexibility and attention (Cho et al., 2015; Kim et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Cho et al., 2015; Kim et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "9741d4e6-0118-4af7-8ef5-cb32184bea86",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C12",
+      "claim": "Serotonin has been shown to regulate gamma power in motor cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "The neuromodulator serotonin (5HT) has been shown to regulate gamma power in motor cortex (Puig et al., 2010), suggesting that it could play a role in regulating task-dependent changes in gamma oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Puig et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "fa698b05-c9f4-46ad-9f11-1b431106b5f3",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C13",
+      "claim": "Neuropsychiatric disease associated with deficits in PFC gamma synchrony, including schizophrenia and depression, are currently treated with medications that have high affinity for serotonin receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, neuropsychiatric disease associated with deficits in PFC gamma synchrony, including schizophrenia and depression, are currently treated with medications that have high affinity for serotonin receptors (Meltzer and Massey, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Meltzer and Massey, 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "a1aaa306-82fc-42c4-81d7-5ccbdec7e0e1",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C14",
+      "claim": "Gamma oscillations are orchestrated by cortical fast-spiking interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Gamma oscillations are orchestrated by cortical fast-spiking interneurons (FSIs; Cardin et al., 2009; Sohal et al., 2009; Bartos et al., 2007; Bartos et al., 2002; Galarreta and Hestrin, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Cardin et al., 2009; Sohal et al., 2009; Bartos et al., 2007; Bartos et al., 2002; Galarreta and Hestrin, 2001).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "cd1d9afc-722e-46c4-9f50-c3166e8a22c2",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C15",
+      "claim": "FSIs resonate intrinsically in the 30\u201350 Hz range.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to neighboring excitatory cells, FSIs resonate intrinsically in the 30\u201350 Hz range (Bracci et al., 2003; Fellous et al., 2001; Pike et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Bracci et al., 2003; Fellous et al., 2001; Pike et al., 2000).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "9f8015e7-9430-40cb-82ae-f260f55a5459",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C16",
+      "claim": "FSIs are more likely to generate action potentials in response to gamma-modulated sinusoidal waveforms.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, FSIs are more likely to generate action potentials in response to gamma-modulated sinusoidal waveforms (Pike et al., 2000), suggesting that action potential generation in FSIs may favor gamma frequency input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Pike et al., 2000).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "57a094ce-d401-4eb2-abd9-471e2b1b70dd",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C17",
+      "claim": "5HT can increase FSI intrinsic excitability, as measured at the soma.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, 5HT can increase FSI intrinsic excitability, as measured at the soma (Weber and Andrade, 2010; Zhou and Hablitz, 1999; Zhong and Yan, 2011), but whether this also changes how FSIs encode synaptic input is not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Weber and Andrade, 2010; Zhou and Hablitz, 1999; Zhong and Yan, 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "b4371064-b8db-41fb-b513-d298a75e3e85",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C18",
+      "claim": "5HT consistently depolarized FSIs by 6.1 \u00b1 1.1 mV, from \u221271 \u00b1 1.3 mV to \u221266 \u00b1 2.2 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "5HT consistently depolarized FSIs by 6.1 \u00b1 1.1 mV, from \u221271 \u00b1 1.3 mV to \u221266 \u00b1 2.2 mV (Figure 1\u2014figure supplement 1B, p<0.005, paired t-test 5HT vs. baseline, n = 10; Figure 1C, p=0.03, 5HT n = 10 vs. time-locked controls n = 8, post-hoc Tukey comparison after one-way ANOVA with p=0.005)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1B and Figure 1C with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "bbc9e4fa-aa88-428d-845a-db3cfc068b0d",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C19",
+      "claim": "5HT increased input resistance by 31.1 \u00b1 6.0%, from 92.9 \u00b1 11.5 M\u03a9 to 121.6 \u00b1 16.9 M\u03a9.",
+      "claim_type": "EXPLICIT",
+      "source": "and increased input resistance by 31.1 \u00b1 6.0%, from 92.9 \u00b1 11.5 M\u03a9 to 121.6 \u00b1 16.9 M\u03a9 (Figure 1\u2014figure supplement 1C, p=0.026, paired t-test 5HT vs. baseline, n = 10; Figure 1D, p=0.037 5HT n = 10 vs. time-locked controls n = 8, post-hoc Tukey comparison after one-way ANOVA with p=0.004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1C and Figure 1D with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "e647f373-44f5-43b1-96e7-421e7a1719b5",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C20",
+      "claim": "The concentration of 30 \u00b5M 5HT was sub-saturating, eliciting approximately 80% of the maximal response.",
+      "claim_type": "EXPLICIT",
+      "source": "We found this concentration of 30 \u00b5M to be sub-saturating, eliciting approximately 80% of the maximal response (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "4e8a35dc-ea29-42d8-9b5f-1f1ffd966859",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C21",
+      "claim": "5HT depolarized FSIs even in the presence of ionotropic glutamatergic and GABAergic antagonists.",
+      "claim_type": "EXPLICIT",
+      "source": "5HT depolarized FSIs even in the presence of ionotropic glutamatergic (10 \u00b5M CNQX, 100 \u00b5M DL-AP5) and GABAergic (10 \u00b5M SR95531) antagonists (Figure 1C\u2013D, p=0.043 for Vm and p=0.05 for Rin, 5HT + syn block n = 9 vs. time-locked controls n = 8, post-hoc Tukey comparison after one-way ANOVAs with p=0.005 for Vrest and p=0.004 for Rin)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C-D with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "56badef6-daea-4f31-a32e-833e82022c68",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C22",
+      "claim": "Effects of 5HT on FSI membrane potential and input resistance were blocked by the 5HT2A antagonist MDL100907.",
+      "claim_type": "EXPLICIT",
+      "source": "but effects were blocked (n = 7) by the 5HT2A antagonist MDL100907 (1 \u00b5M, Figure 1C\u2013D, p=0.024 for Vm and p=0.026 for Rin, 5HT vs. 5HT + 2A antagonist post-hoc Tukey comparison after one- way ANOVAs with p=0.005 for Vrest and p=0.004 for Rin).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C-D with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "439009dc-9d0e-40a5-b469-64c825d09245",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C23",
+      "claim": "5HT signals through 2A receptors expressed on FSIs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, 5HT signals through 2A receptors expressed on FSIs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing that 5HT2A antagonist blocks 5HT effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "24486368-5efc-4f47-95c3-6bf569181281",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C24",
+      "claim": "5HT increased spiking in FSIs in response to somatic current injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, 5HT increased spiking in response to somatic current injection (Figure 1B; Figure 1\u2014figure supplement 1D, p=0.028 for treatment factor, 5HT vs. baseline in repeated measures two-way ANOVA for firing rate vs. current curve with current and treatment as factors, n = 10; Figure 1\u2014figure supplement 1F, p = 0.001, rheobase, 5HT vs. baseline, paired t-test, n = 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B and Figure 1\u2014figure supplement 1D,F with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "b282c8e0-63cf-4c6a-9a7e-4b91c597dc30",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C25",
+      "claim": "No other changes in intrinsic firing properties were noted after 5HT application.",
+      "claim_type": "EXPLICIT",
+      "source": "No other changes in intrinsic firing properties were noted after 5HT application (Figure 1\u2014figure supplement 1G\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1G-L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "39b13061-8e45-4587-8bef-beda28fd7d6a",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C26",
+      "claim": "Two broad classes of cortical interneurons arise from the medial (MGE) and caudal (CGE) ganglionic eminences.",
+      "claim_type": "EXPLICIT",
+      "source": "Two broad classes of cortical interneurons arise from the medial (MGE) and caudal (CGE) ganglionic eminences (Rudy et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Rudy et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "6ebffad0-5e35-4516-bfcd-d60d843c682d",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C27",
+      "claim": "Interneuron classes that arise from the CGE, including CCK and VIP interneurons, express 5HT3A receptors exclusively.",
+      "claim_type": "EXPLICIT",
+      "source": "Interneuron classes that arise from the CGE, including CCK and VIP interneurons, have been shown to express 5HT3A receptors exclusively (Lee et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Lee et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "3b3ad0d9-053a-4a36-8b18-8ee5a0308341",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C28",
+      "claim": "Intrinsic excitability of somatostatin-expressing interneurons was unaltered by 5HT application.",
+      "claim_type": "EXPLICIT",
+      "source": "Intrinsic excitability was unaltered by 5HT application (p=0.34 for Vm and p=0.14 for Rin, paired t-test 5HT vs. baseline, n = 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data with statistical analysis on SOM+ neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "799e0c34-0db0-4124-8c26-c944268dfb04",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C29",
+      "claim": "FSIs respond to serotonin in a unique manner compared to other interneuron types.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this indicates that FSIs respond to serotonin in a unique manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the differential responses of FSIs and SOM+ interneurons to 5HT.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "e81a4dae-019e-4ba9-be34-a74436066bf8",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C30",
+      "claim": "Endogenous 5HT release increased FSI firing rate from 10.9 \u00b1 3.8 Hz to 29.8 \u00b1 6.8 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Endogenous 5HT release increased FSI firing rate from 10.9 \u00b1 3.8 Hz to 29.8 \u00b1 6.8 Hz (Figure 1F, p=0.035, during stimulation vs. before stimulation, paired t-test, n = 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1F with statistical analysis using optogenetic stimulation of serotonergic terminals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "ee612efc-f1d6-4feb-b7b4-56782e14a485",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C31",
+      "claim": "The increase in FSI firing rate from endogenous 5HT release was blocked by the 5HT2AR antagonist MDL100907.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase was blocked by the 5HT2AR antagonist MDL100907 (Figure 1G, 1 \u00b5M, p=0.32, during stimulation vs. before stimulation, paired t-test, n = 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1G with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "35be05f7-9e82-47a8-9580-3653bd3b3bc5",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C32",
+      "claim": "5HT application increased the number of spikes elicited by each light flash during optogenetic activation of glutamatergic inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "5HT application increased the number of spikes elicited by each light flash (Figure 1G, p<0.0001 for both treatment and flash number in repeated measures two-way ANOVA, p<0.0001 for the interaction term, p<0.05 for flashes 1\u20138 5HT vs. baseline post-hoc comparison Bonferroni correction, n = 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1G (note: text says 1G but likely refers to 1J based on figure) with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "afc1b7cd-041f-42f6-9a95-f5b040e082c5",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C33",
+      "claim": "EPSP amplitude did not change with 5HT application during optogenetic stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, EPSP amplitude did not change (Figure 1K, p=0.120, paired t-test 5HT vs. baseline, n = 7, Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1K with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "3d6a60c7-3b7c-44fd-9026-92a63bcaacf9",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C34",
+      "claim": "EPSPs decayed more slowly following 5HT application, with decay tau increasing from 10.4 \u00b1 1.2 ms to 17.4 \u00b1 3.5 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "However, EPSPs decayed more slowly following 5HT application (Figure 1L, decay tau: baseline 10.4 \u00b1 1.2 ms, 5HT: 17.4 \u00b1 3.5 ms, p=0.037, same analysis, n = 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1L with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "f829702d-67aa-47f3-8841-6612406c46d1",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C35",
+      "claim": "5HT decreased the slope of the I-V curve in FSIs.",
+      "claim_type": "EXPLICIT",
+      "source": "5HT decreased the slope of the I-V curve (p=0.037, paired t-test 5HT vs. baseline, n = 7), indicating a decrease in membrane conductance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from voltage clamp recordings with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "f7a20815-fde1-4f69-9d24-3d92bb9889ff",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C36",
+      "claim": "The current modulated by 5HT displayed inward rectification and reversed at \u221299 \u00b1 4.7 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "This current displayed inward rectification and reversed at \u221299 \u00b1 4.7 mV, very close to the predicted reversal potential for K+ in our preparation (\u2212101 mV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from voltage clamp recordings showing the reversal potential of the 5HT-sensitive current.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "2f4cb065-9a1a-472f-9774-84313ce2f34f",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C37",
+      "claim": "The 5HT-mediated current and I-V curve slope change were abolished with pre-application of MDL100907.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the 5HT-mediated current (p=0.0007, KGluc +MDL100907 vs. KGluc, post-hoc Tukey multiple comparison test with one-way ANOVA with p<0.0001, Figure 2F) and I-V curve slope change (p=0.04, same analysis, Figure 2E) were abolished (n = 3) with pre-application of MDL100907 (1 \u00b5M) (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B, E, F with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "3d5db8e0-3b20-4a85-8569-d0db422c74ff",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C38",
+      "claim": "5HT modulates an inward rectifying K+ channel in FSIs.",
+      "claim_type": "EXPLICIT",
+      "source": "5HT-sensitive currents reversed at potassium equilibrium and were smaller in the outward direction, suggesting that 5HT modulates an inward rectifying K+ channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing reversal potential and rectification properties of the 5HT-sensitive current.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "f7977b0e-8c4c-4ca9-81c9-95cca835e067",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C39",
+      "claim": "The 5HT-mediated current and changes in I-V curve were absent when using a cesium-based internal solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the 5HT-mediated current (p<0.0001, CsMe vs. KGluc, ANOVA with post-hoc Tukey multiple comparison test, Figure 2F) and changes in I-V curve (p=0.007, same analysis, Figure 2E) were absent (n = 6) in these conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C, E, F with statistical analysis using cesium-based internal solution to block K+ channels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "629f08da-2fad-482f-87e6-2223f0569920",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C40",
+      "claim": "The I-V curve changes and 5HT-mediated current were blocked by Ba+ at 400 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, both the I-V curve changes (p<0.0001, BaCl2 vs. KGluc, ANOVA with post-hoc Tukey multiple comparison test, Figure 2E) and the 5HT-mediated current (p=0.01, same analysis, Figure 2F) were blocked (n = 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D, E, F with statistical analysis using Ba+ to block inward-rectifying K+ channels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "75f5dd27-7c0d-4c6c-9679-0874b76d0119",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C41",
+      "claim": "5HT reduces the conductance of inward rectifying potassium channels in FSIs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, 5HT reduces the conductance of inward rectifying potassium channels in FSIs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from voltage clamp experiments with various pharmacological manipulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "610dc913-31d3-450f-a167-c1c17e29e704",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C42",
+      "claim": "Reducing K+ conductance in a compartmental model of a fast-spiking interneuron increased Vm and Rin.",
+      "claim_type": "EXPLICIT",
+      "source": "Reducing K+ conductance in a compartmental model of a fast-spiking interneuron (Figure 3A) also increased Vm and Rin (Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational modeling data shown in Figure 3A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "6a5f9050-2f57-43e2-8306-18e8792d7abe",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C43",
+      "claim": "A reduction of gK by 60\u201370% across the cell was sufficient to recapitulate experimental data on Vm and Rin changes.",
+      "claim_type": "EXPLICIT",
+      "source": "a reduction of gK by 60\u201370% across the cell was sufficient to recapitulate our experimental data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational modeling results matching experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "4b52f957-5e2d-4679-941e-b033490950b7",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C44",
+      "claim": "Only dendritic reduction of gK resulted in an increase in synaptic time constant in the computational model.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when K+ channel conductance was systematically reduced in different subcompartments (Figure 3C soma only, Figure 3D dendrites only, Figure 3E both soma and dendrites), only dendritic reduction of gK resulted in an increase in synaptic time constant (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational modeling data shown in Figure 3C-E, G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "bcecff0b-8480-43e4-b950-68df71aa97e1",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C45",
+      "claim": "No manipulation of gK affected EPSP amplitude in the computational model.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, consistent with our experimental observations during optogenetic stimulation of inputs to FSIs (Figure 1L), no manipulation of gK affected EPSP amplitude in our model (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational modeling data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "1e98a0ff-630e-42cc-846d-67e5e3cb96b5",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C46",
+      "claim": "Reducing dendritic gK to mimic 5HT caused a decrease in EPSP amplitude and synaptic current when measured at the dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, in our compartmental model, reducing the dendritic gK to mimic the experimentally observed effects of 5HT on somatic Vm and Rin caused a decrease in the EPSP amplitude and synaptic current when measured at the dendrite (90% of baseline amplitude, Figure 3\u2014figure supplement 1A\u2013C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational modeling data shown in Figure 3\u2014figure supplement 1A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "38dced36-a3c4-42e5-af78-fc7703ed92fa",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C47",
+      "claim": "The dendritic EPSP attenuates less as it travels toward the soma after reducing dendritic gK.",
+      "claim_type": "EXPLICIT",
+      "source": "However, due to the increase in Rin, the dendritic EPSP also attenuates less as it travels toward the soma such that the EPSP amplitude, measured at the soma, is ultimately unchanged by this manipulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from computational modeling results explaining why somatic EPSP amplitude remains unchanged despite dendritic changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "915e6936-31d2-48ae-aa08-4c2fd9f1e32f",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C48",
+      "claim": "5HT significantly increased FSI firing rate when applied immediately adjacent to a dendrite via iontophoresis.",
+      "claim_type": "EXPLICIT",
+      "source": "5HT significantly increased FSI firing rate when applied immediately adjacent to a dendrite (Figure 4B, p=0.001, before iontophoresis vs. after iontophoresis, paired t-test, n = 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B with statistical analysis using dendritic iontophoresis of 5HT.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "f8514a0f-beda-4101-b373-3ef4657e9abf",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C49",
+      "claim": "Dendritic iontophoresis of 5HT elicited a 1.19 \u00b1 0.69 mV depolarization of the soma.",
+      "claim_type": "EXPLICIT",
+      "source": "By computationally filtering out spikes from our traces, we determined that dendritic iontophoresis of 5HT elicited a 1.19 \u00b1 0.69 mV depolarization of the soma (Figure 4\u2014figure supplement 1A-B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "2188ea97-7588-4b1c-8a96-97368832b62c",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C50",
+      "claim": "A somatic depolarization of 2.63 \u00b1 1.57 mV of FSIs was sufficient to cause an increase in firing rate comparable to that observed by dendritic iontophoresis of 5HT.",
+      "claim_type": "EXPLICIT",
+      "source": "By applying this same filtering technique to spike trains elicited by somatic current injection, we found that a somatic depolarization of 2.63 \u00b1 1.57 mV of FSIs was sufficient to cause an increase in firing rate comparable to that observed by dendritic iontophoresis of 5HT (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "bb3d49e0-899c-418f-bd8c-5be38a316344",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C51",
+      "claim": "5HT only increased firing rate when the iontophoretic pipette was <5 \u00b5m away from the dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "By placing the iontophoretic pipette at varying distances from the dendrite, we determined that 5HT only increased firing rate when the pipette was <5 \u00b5m away (space constant = 3.13 \u00b5m, Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4E with distance-dependent effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "10204143-1920-4058-ba02-59c378e53aa6",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C52",
+      "claim": "All iontophoretic sites were >30 \u00b5m from the soma.",
+      "claim_type": "EXPLICIT",
+      "source": "All iontophoretic sites were >30 \u00b5m from the soma (Figure 4E), confirming that effects are due to local action of 5HT at receptors on the dendrite and not due to diffusion of 5HT to the soma.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4E documenting distances of iontophoretic sites from soma.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "b8742e41-8927-48da-90dc-178fd8251cbd",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C53",
+      "claim": "5HT did not affect single EPSP amplitude during glutamate uncaging experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with ChR2 synaptic stimulation experiments (Figure 1H\u2013L) and compartmental modeling (Figure 3), 5HT did not affect single EPSP amplitude (Figure 5C, p=0.45, normalized change in amplitude: Post/Pre, one-sample t-test vs. 1, n = 39 dendrites, 25 cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C with statistical analysis using glutamate uncaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "e7a74028-5322-473f-a18f-bb06f8084804",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C54",
+      "claim": "5HT increased the time constant of EPSPs from 14.7 \u00b1 0.6 ms to 18.6 \u00b1 1.0 ms during glutamate uncaging.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 5HT did increase the time constant of the EPSPs from 14.7 \u00b1 0.6 ms to 18.6 \u00b1 1.0 ms (Figure 5D, p=0.0002, change in tau: Post \u2013 Pre, one-sample t-test vs. 0, n = 39 dendrites, 25 cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5D with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "53a9b8d3-1281-4e65-97ef-6f297c920f48",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C55",
+      "claim": "Changes in EPSP decay peaked 10\u201320 ms after stimulation with 5HT.",
+      "claim_type": "EXPLICIT",
+      "source": "As with ChR2 synaptic stimulation, changes in EPSP decay peaked 10\u201320 ms after stimulation (Figure 5E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "f34c0152-c006-4264-931b-c31013ca1982",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C56",
+      "claim": "5HT significantly promoted summation at 10 ms inter-stimulus intervals during glutamate uncaging.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, 5HT significantly promoted summation, specifically at the 10 ms (p=0.05, change in fifth EPSP amplitude: 5HT/Baseline, one-sample t-test vs. 1, n = 26 dendrites, 18 cells; p=0.006, change in area under curve: 5HT/Baseline, one-sample t-test vs. 1, n = 26 dendrites, 18 cells, Figure 5H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5H with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "e8d9ceb4-f54d-4bd0-b1fe-eedcce8e17ee",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C57",
+      "claim": "5HT significantly promoted summation at 20 ms inter-stimulus intervals during glutamate uncaging.",
+      "claim_type": "EXPLICIT",
+      "source": "and 20 ms intervals (p<0.05, change in fifth EPSP amplitude, same analysis as above, n = 29 dendrites, 20 cells, Figure 5G; p=0.0171, change in area under curve, same analysis as above, n = 29 dendrites, 20 cells, Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5G-H with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "1ee37914-4915-4b61-bf25-d0fe6f02bd56",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C58",
+      "claim": "By slowing the decay of synaptic potentials, 5HT promotes summation of gamma frequency inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, by slowing the decay of synaptic potentials, 5HT promotes summation of gamma frequency inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from glutamate uncaging experiments showing frequency-specific enhancement of summation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "7d34c32e-47c9-4a61-b191-5f55435d7f97",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C59",
+      "claim": "Changing the synaptic time constant in an algebraic model promoted summation of inputs at 10\u201320 ms intervals more than other frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with experimental data, changing the tau of the EPSP decay promoted summation of inputs at 10\u201320 ms intervals more than other frequencies (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational modeling data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "5033f401-cb3f-4ec5-9706-016530c5dad9",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C60",
+      "claim": "A 70% reduction in gK throughout the neuron changed Vm, Rin, and tau by an amount comparable to the experimental effect of 5HT.",
+      "claim_type": "EXPLICIT",
+      "source": "A 70% reduction in gK throughout the neuron changed Vm, Rin, and tau by an amount comparable to the experimental effect of 5HT (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational modeling data shown in Figure 6D comparing model and experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "414be1b3-0223-44c1-91df-5171fa9955c3",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C61",
+      "claim": "In the compartmental model, the reduction in gK could reproduce the frequency-specific enhancement of summation observed in uncaging experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in the model, the reduction in gK and resultant change in tau could reproduce the frequency-specific enhancement of summation observed in our uncaging experiments. Specifically, inputs arriving within 10\u201320 ms were summated preferentially, as compared to higher (0\u20135 ms ISI) or lower (50 ms ISI) frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational modeling results matching experimental observations of frequency-specific summation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "15a67c17-0daf-455b-829c-7ff887fc843e",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C62",
+      "claim": "Preferential summation at 10\u201320 ms ISIs was observed even when synaptic strength, synapse placement, or number of synapses were varied in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Preferential summation at 10\u201320 ms ISIs was observed even when we varied synaptic strength, synapse placement on the dendritic arbor, or number of synapses recruited (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational modeling data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "3e5b0707-e9e3-4c4f-ab7e-1b87de5bf116",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C63",
+      "claim": "Even when Rin was reduced up to 33% by including background synaptic noise, summation remained tuned to enhancements for 10\u201320 ms in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "But even when Rin was reduced up to 33%, summation remained tuned to enhancements for 10\u201320 ms (Figure 6\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational modeling data shown in Figure 6\u2014figure supplement 2D with background synaptic noise.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "74f4cc6b-8850-4a86-bbfa-5d2e0830c4cd",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C64",
+      "claim": "CNO application increased Vm in FSIs expressing the Gq-DREADD receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in FSIs expressing the Gq-DREADD receptor, CNO application increased Vm (Figure 7C; p<0.0001, paired t-test CNO vs. baseline, n = 7)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7C with statistical analysis using chemogenetic activation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "cfde7710-849d-4c63-8dd1-bac59d04d259",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C65",
+      "claim": "CNO application increased Rin in FSIs expressing the Gq-DREADD receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Rin (Figure 7D; p=0.0004, paired t-test CNO vs. baseline)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7D with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "78e355f1-0c6d-417b-ba3f-3a8022cca585",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C66",
+      "claim": "CNO application increased spiking in FSIs expressing the Gq-DREADD receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "and spiking (Figure 7B) in FSIs",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "29dbf789-6d80-49bf-9c5d-2d179667354a",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C67",
+      "claim": "CNO application produced similar changes in Kir function as 5HT in FSIs expressing the Gq-DREADD receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "and produced similar changes in Kir function (Figure 7E), suggesting that hM3D receptors can co-opt signaling pathways downstream of 5HT2A receptors and mimic the effects of 5HT on FSI physiology.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7E with voltage clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "92b23a54-d66c-4e66-b996-5280c9c2cc8e",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C68",
+      "claim": "hM3D receptors can co-opt signaling pathways downstream of 5HT2A receptors and mimic the effects of 5HT on FSI physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that hM3D receptors can co-opt signaling pathways downstream of 5HT2A receptors and mimic the effects of 5HT on FSI physiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing similar effects of CNO on Gq-DREADD expressing FSIs as 5HT.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "9dcc9aa1-bcf4-4dfb-922c-3882588bb0ec",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C69",
+      "claim": "CNO application mainly enhanced EPSPs following ISIs of 10 or 20 ms during electrical stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, CNO application mainly enhanced EPSPs following ISIs of 10 or 20 ms (p=0.04 for 10 ms and p=0.046 for 20 ms, normalized change in EPSP integral: CNO/baseline, one sample t-test vs. 1, n = 7, Figure 7I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7I with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "b2c9cd0b-4179-46e2-8720-694f9af0e673",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C70",
+      "claim": "CNO increased the percentage of spikes that occurred after stimulation with 10 ms ISI compared to other frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, CNO increased the percentage of spikes that occurred after stimulation with 10 ms ISI compared to other frequencies (p<0.0001 for treatment in ANOVA, p=0.002 for 10 ms vs. 20 ms, p<0.0001 for 10 ms vs. 50 ms, p=0.004 for 10 ms vs. 100 ms, post-hoc comparison with Tukey's correction, Figure 7I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7I (note: text says 7I but likely refers to 7J based on figure) with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "8957ad9b-abd4-41b4-9afd-c870257b9bce",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C71",
+      "claim": "Effects on FSI Vm and Rin were similar with \u03b1-methyl-5HT as with endogenous 5HT and Gq-DREADD activation with CNO.",
+      "claim_type": "EXPLICIT",
+      "source": "Effects on FSI Vm (p=0.002, paired t-test baseline vs. \u03b1-methyl-5HT, n = 5) and Rin (p=0.01, paired t-test baseline vs. \u03b1-methyl-5HT, n = 5) were similar with \u03b1-methyl-5HT as with endogenous 5HT and Gq-DREADD activation with CNO (Figure 7\u2014figure supplement 1; Figure 7\u2014figure supplement 2B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7\u2014figure supplement 2B-C with statistical analysis using a 5HT2A agonist.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "fcd7faa8-bfad-426e-aaee-6f354199bc25",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C72",
+      "claim": "\u03b1-methyl-5HT did not change the amplitude of subthreshold EPSPs.",
+      "claim_type": "EXPLICIT",
+      "source": "As in other experiments, we found that \u03b1-methyl-5HT did not change the amplitude (p=0.96, paired t-test baseline vs. \u03b1-methyl-5HT, n = 5, Figure 7\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7\u2014figure supplement 2 with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "ea296fe8-cadb-445e-839e-438f89b4cc5c",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C73",
+      "claim": "\u03b1-methyl-5HT increased the decay time of subthreshold EPSPs.",
+      "claim_type": "EXPLICIT",
+      "source": "but did increase the decay time (p=0.03, paired t-test baseline vs. \u03b1-methyl-5HT, n = 5, Figure 7\u2014figure supplement 2E) of subthreshold EPSPs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7\u2014figure supplement 2E with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "0eb3ed4d-b370-40a7-9e14-f80e16c3c4b7",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C74",
+      "claim": "5HT2AR agonism increased the percentage of spikes that occurred after stimulation with 10 ms and 20 ms ISIs compared to other frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we replicated our earlier findings and found that 5HT2AR agonism increased the percentage of spikes that occurred after stimulation with 10 ms and 20 ms ISIs compared to other frequencies (p<0.001 for treatment in ANOVA, p=0.002 for 10 ms vs. 50 ms, p=0.002 for 10 ms vs. 100 ms, p=0.01 for 5 ms vs. 20 ms, p=0.002 for 20 ms vs. 50 ms and 100 ms post-hoc comparison with Tukey's correction, 6 cells, Figure 7\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7\u2014figure supplement 2D with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "d32c2934-9df4-4f6c-9ff7-fbd82d72d810",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C75",
+      "claim": "Serotonergic signaling in FSIs specifically enhances the ability of these cells to respond to gamma-frequency input.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, serotonergic signaling in FSIs seems to specifically enhance the ability of these cells to respond to gamma-frequency input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing frequency-specific enhancement of FSI responses to gamma frequency inputs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "25eaa9f8-5899-4e3a-ae40-8ae730ab0aea",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C76",
+      "claim": "CNO dramatically increased the number of IPSCs recorded in pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CNO dramatically increased the number of IPSCs recorded (p=0.04 paired t-test CNO vs. baseline, 5 cells, Figure 8C), indicating an overall increase in inhibition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 8C with statistical analysis recording IPSCs in pyramidal neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "58f98205-52d7-40f9-8b3e-86479b596156",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C77",
+      "claim": "The frequency of IPSCs shifted toward inter-event intervals of 10\u201320 ms after CNO application.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we also found that the frequency of IPSCs shifted toward inter-event intervals of 10\u201320 ms (Figure 8D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "554a491c-eb30-4190-9758-093e0019c0fc",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C78",
+      "claim": "5HT increases gamma frequency inhibition in the prefrontal network.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that 5HT increases gamma frequency inhibition in the prefrontal network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing increased probability of gamma frequency inhibitory events in pyramidal neurons after Gq-DREADD activation in FSIs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "82a3249e-cded-4798-80eb-69e75b8c1b74",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C79",
+      "claim": "FSI dendrites tend to function more as passive filters compared to pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to neighboring pyramidal cells, which can respond to synaptic input with the generation of dendritic superlinearities (Stuart and Spruston, 2015), FSI dendrites tend to function more as passive filters (Abrahamsson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Stuart and Spruston, 2015; Abrahamsson et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "1c727b98-1b19-4482-843a-df435de6c297",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C80",
+      "claim": "FSIs exhibit subthreshold resonance around 30 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "FSIs also exhibit subthreshold resonance around 30 Hz (Bracci et al., 2003; Fellous et al., 2001; Pike et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Bracci et al., 2003; Fellous et al., 2001; Pike et al., 2000).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "54284e95-4020-4b7d-8a7b-f43cd7bcf8d6",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C81",
+      "claim": "Membrane resonance in FSIs contributes to network gamma oscillations according to network models.",
+      "claim_type": "EXPLICIT",
+      "source": "and network models show that this membrane resonance contributes to network gamma oscillations (Moca et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Moca et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "f85dda5a-1add-4e1e-9e43-f2228252f0c5",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C82",
+      "claim": "FSIs show enhanced firing in response to gamma frequency modulation of sinusoidal current injected into the soma.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, FSIs show enhanced firing in response to gamma frequency modulation of sinusoidal current injected into the soma (Pike et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Pike et al., 2000).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "cedff209-3fac-4be7-9cd4-b0ca325838cf",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C83",
+      "claim": "FSIs are able to precisely control the timing of spike discharges of large populations of cortical neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "With abundant reciprocal connections and highly divergent synapses onto principal pyramidal cells, FSIs are able to precisely control the timing of spike discharges of large populations of cortical neurons (Bartos et al., 2007; McBain and Fisahn, 2001; Tam\u00e1s et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Bartos et al., 2007; McBain and Fisahn, 2001; Tam\u00e1s et al., 2000).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "1e537dba-0f89-4ac7-9015-582ee54c340a",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C84",
+      "claim": "FSIs orchestrate network oscillations, specifically in the gamma frequency range.",
+      "claim_type": "EXPLICIT",
+      "source": "These properties endow FSIs with the ability to orchestrate network oscillations (Cardin et al., 2009; Sohal et al., 2009), specifically in the gamma frequency range, which have been suggested to be important for information encoding (Buzs\u00e1ki and Chrobak, 1995; Buzs\u00e1ki and Wang, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Cardin et al., 2009; Sohal et al., 2009; Buzs\u00e1ki and Chrobak, 1995; Buzs\u00e1ki and Wang, 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "ef99c9be-a8d0-4236-b821-a7a127c30398",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C85",
+      "claim": "Electrical stimulation of the dorsal raphe increased and decreased the activity of distinct populations of FSIs in secondary motor cortex via 5HT2A and 5HT1A receptors, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study (Puig et al., 2010) found that electrical stimulation of the dorsal raphe of rat both increased and decreased the activity of distinct populations of FSIs in secondary motor cortex via 5HT2A and 5HT1A receptors, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Puig et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "ae7e4936-1ff6-4e96-b00d-2e8079eebff2",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C86",
+      "claim": "Blocking 5HT2ARs decreased the power of gamma oscillations in motor cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this group found that blocking 5HT2ARs decreased the power of gamma oscillations, suggesting that 5HT2AR activation could contribute to increases in gamma oscillatory power.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Puig et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "6659839a-8b40-4a25-bd0a-599bb1520bf6",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C87",
+      "claim": "5HT receptors are expressed on pyramidal neurons in prefrontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "While we focus here on the role of 5HT on FSIs, 5HT receptors are also expressed on pyramidal neurons (Araneda and Andrade, 1991; Avesar and Gulledge, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Araneda and Andrade, 1991; Avesar and Gulledge, 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "5feff62c-13bc-499c-8970-22062cbf42cd",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C88",
+      "claim": "5HT receptors are expressed on 5HT3a-expressing interneurons, including VIP, CCK, and others.",
+      "claim_type": "EXPLICIT",
+      "source": "and 5HT3a-expressing interneurons, including VIP, CCK, and others (Puig and Gulledge, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Puig and Gulledge, 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "83920bf9-dbe8-4278-b239-2e00a3d4999f",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C89",
+      "claim": "Prefrontal dysfunction is etiological to many major psychiatric disorders, including schizophrenia and depression.",
+      "claim_type": "EXPLICIT",
+      "source": "Prefrontal dysfunction is etiological to many major psychiatric disorders, including schizophrenia and depression (Drevets et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Drevets et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "85a44736-6f79-496c-b46c-4fb5fe21deda",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C90",
+      "claim": "Selective serotonin reuptake inhibitors (SSRIs) remain the most commonly used treatments for depression.",
+      "claim_type": "EXPLICIT",
+      "source": "Selective serotonin reuptake inhibitors (SSRIs) remain the most commonly used treatments for depression (Risch and Nemeroff, 1992; Willner, 1985)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Risch and Nemeroff, 1992; Willner, 1985).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "75e452be-3529-4a83-961f-7a847bf9a753",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C91",
+      "claim": "Second-generation antipsychotics used in schizophrenia block the 5HT2A receptor with high affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "and second-generation antipsychotics used in schizophrenia block the 5HT2A receptor with high affinity (Meltzer et al., 2003; Meltzer and Massey, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Meltzer et al., 2003; Meltzer and Massey, 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "c18bd4ba-03f5-467e-a558-0f8e238b915b",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C92",
+      "claim": "Classic hallucinogens such as lysergic acid diethylamide (LSD) activate the 5HT2A receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Classic hallucinogens such as lysergic acid diethylamide (LSD) activate the 5HT2A receptor (Titeler et al., 1988), implicating it in psychosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Titeler et al., 1988).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "9ee662f1-b3e2-4bab-a95c-7869625aafd5",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C93",
+      "claim": "Patients with schizophrenia show lower levels of the 5HT2A receptor in PFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, patients with schizophrenia show lower levels of the 5HT2A receptor in PFC (Arora et al., 1991; Selvaraj et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Arora et al., 1991; Selvaraj et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "01538d31-b0d7-4746-9dc2-371197f8c245",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C94",
+      "claim": "Impairments in FSI function and gamma rhythms may be involved in the pathophysiology of schizophrenia.",
+      "claim_type": "EXPLICIT",
+      "source": "Impairments in FSI function and gamma rhythms may also be involved in the pathophysiolology of schizophrenia (Gonzalez-Burgos et al., 2010; Gonzalez-Burgos et al., 2015; Lewis et al., 2005; Uhlhaas and Singer, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Gonzalez-Burgos et al., 2010; Gonzalez-Burgos et al., 2015; Lewis et al., 2005; Uhlhaas and Singer, 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "030e3b67-f689-40f8-9f6b-12af2e45789e",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C95",
+      "claim": "Optogenetic activation of FSIs at gamma frequency is able to rescue impairments in cognitive flexibility in mice that model key aspects of schizophrenia.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work from our group showed that optogenetic activation of FSIs at gamma frequency is able to rescue impairments in cognitive flexibility in mice that model key aspects of schizophrenia (Cho et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Cho et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "6264878b-eaf9-469a-8197-262219598e94",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C96",
+      "claim": "Treatment with antipsychotic drugs that act on 5HT receptors can reduce gamma power.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, treatment with antipsychotic drugs that act on 5HT receptors can reduce gamma power (Schulz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature (Schulz et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "59ec7ed1-c058-4184-b554-827f6dd345e8",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "claim_id": "C97",
+      "claim": "CNO had no effect on Vm or Rin in FSIs expressing only the control fluorophore.",
+      "claim_type": "EXPLICIT",
+      "source": "CNO had no effect on Vm or Rin in FSIs expressing only the control fluorophore (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7\u2014figure supplement 1 as a control experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "40572420-66c3-44cd-b4bb-e62332eb78d3",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Serotonin acts via 5HT2A receptors to increase FSI excitability by causing depolarization (6.1\u00b11.1 mV), increased input resistance (31.1\u00b16.0%), and enhanced spiking. These effects persist in the presence of synaptic blockers and are blocked by the 5HT2A antagonist MDL100907.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7, C18-C24, C30-C31 provide converging evidence from multiple experimental approaches (bath application, optogenetic release of endogenous 5HT, pharmacological manipulations) with appropriate statistical analyses and controls. The 5HT2A receptor specificity is demonstrated through antagonist blockade (C22, C31). Sample sizes are adequate (n=7-10 for most experiments).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "3252847d-61d4-4cd6-908e-530095ad9a1b",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The mechanism underlying 5HT effects on FSI excitability is suppression of inward-rectifying potassium (Kir) channels. The 5HT-sensitive current displays inward rectification, reverses near potassium equilibrium potential (-99\u00b14.7 mV), and is blocked by cesium-based internal solution, barium, and 5HT2A antagonist.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C41 provide strong mechanistic evidence through voltage-clamp experiments with multiple pharmacological controls (cesium, barium, MDL100907). The reversal potential matches predicted K+ equilibrium, and the rectification properties are consistent with Kir channels. However, sample size for antagonist experiments is small (n=3, C37).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "4555c8e1-28f2-4f2f-89f3-fd44b3bc59e0",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Compartmental modeling demonstrates that reducing K+ conductance by 60-70% recapitulates experimental observations. Critically, only dendritic reduction of gK increases synaptic time constant while leaving EPSP amplitude unchanged, matching experimental data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 show that computational modeling successfully predicts experimental outcomes. The model identifies dendritic localization as critical for the observed effects (C44), which is later validated experimentally. The explanation for unchanged EPSP amplitude despite increased Rin (C46-C47) is mechanistically sound, involving compensatory effects of reduced driving force and decreased attenuation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "8fe9de0d-5785-402c-813e-1129b76e0428",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Dendritic iontophoresis of 5HT increases FSI firing rate with a space constant of 3.13 \u03bcm, confirming local dendritic action. Effects occur only when the iontophoretic pipette is <5 \u03bcm from dendrites and >30 \u03bcm from soma, ruling out diffusion to the soma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 provide strong spatial evidence for dendritic localization using two-photon guided iontophoresis. The distance-dependence experiments (C51) and control for somatic distance (C52) are well-designed. The small somatic depolarization (1.19\u00b10.69 mV, C49) compared to bath application suggests local dendritic effects dominate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "13931b68-3887-4fd5-9c70-e21a061c3862",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "5HT slows EPSP decay (tau increases from 10.4\u00b11.2 ms to 17.4\u00b13.5 ms) without changing amplitude, preferentially enhancing temporal summation at 10-20 ms inter-stimulus intervals (50-100 Hz, gamma frequency range). This effect is observed with both optogenetic stimulation and glutamate uncaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9, C33-C34, C53-C58 demonstrate frequency-specific enhancement of temporal summation through multiple experimental approaches. The lack of amplitude change (C33, C53) combined with increased decay time (C34, C54) is consistent across methods. Statistical support is strong with appropriate sample sizes (n=18-29 dendrites for uncaging experiments).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "f7d08d86-51ea-4e74-b155-b04cd51e463c",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Computational modeling confirms that changing synaptic time constant alone is sufficient to produce frequency-specific enhancement of summation at 10-20 ms intervals. This effect is robust to variations in synaptic parameters and background noise levels that reduce Rin up to 33%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63 demonstrate that the computational model reproduces experimental observations across multiple parameter variations. The robustness testing (C62-C63) strengthens confidence that the mechanism operates under physiological conditions. The algebraic model (C59) isolates the tau effect, while the compartmental model (C60-C61) includes realistic biophysical constraints.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "ce799a33-ca3e-47ea-b573-2f89aa929e0b",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Chemogenetic activation of Gq-coupled DREADDs in FSIs mimics 5HT effects and preferentially enhances FSI spiking in response to gamma-frequency inputs (10 ms ISI). Similar results are obtained with the 5HT2A agonist \u03b1-methyl-5HT, confirming receptor specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C75 provide strong evidence for frequency-specific enhancement of spike output using orthogonal approaches (chemogenetics, pharmacology). The DREADD experiments include appropriate controls (C97). The convergence of results across methods (DREADD, 5HT2A agonist) strengthens the conclusion. Statistical analyses show clear frequency preference for 10 ms ISI (C70, C74).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "2b21e278-d8a1-4e5e-aff5-259f5dd89d05",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Chemogenetic activation of FSIs increases the number of IPSCs in pyramidal neurons and shifts inter-event intervals toward 10-20 ms (gamma frequency), demonstrating that 5HT-mediated effects on FSIs translate to increased gamma-frequency inhibition in the prefrontal network.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 demonstrate network-level consequences of FSI modulation. The experiments use an 'active slice' preparation with carbachol to simulate in vivo conditions. However, the sample size is small (n=5 cells, C76), and the experiments only show correlation between FSI activation and gamma-frequency IPSCs, not direct causation through the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "c21f4b81-656d-4ad3-89b1-5964b2737095",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "5HT application does not alter other intrinsic firing properties of FSIs beyond those related to membrane potential, input resistance, and rheobase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C25 is supported by systematic analysis of action potential properties shown in Figure 1\u2014figure supplement 1G-L. This negative result is important for establishing specificity of 5HT effects and is appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "1fa533aa-c8e2-44a5-a46a-e83c73e04a32",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Somatostatin-expressing interneurons do not show changes in excitability with 5HT application, indicating that FSIs respond to serotonin in a unique manner compared to other MGE-derived interneuron types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 provide important cell-type specificity through comparison with SOM+ interneurons. The lack of effect in SOM+ cells (p=0.34 for Vm, p=0.14 for Rin) with adequate sample size (n=6) supports the conclusion. However, the claim of 'unique' response (C29) is somewhat overstated as only one other interneuron type was tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "1354485d-1c59-4aa3-acd5-4b5a05727b21",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The concentration of 30 \u03bcM 5HT used in experiments is sub-saturating, eliciting approximately 80% of the maximal response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C20 is supported by dose-response data in Figure 1\u2014figure supplement 2. This is important for establishing that the experimental concentration is physiologically relevant and not producing ceiling effects. The characterization strengthens interpretation of all other results using this concentration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "f2a39822-a598-4a1d-bc0e-7bcd0cd1baf8",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "5HT application increases the number of spikes elicited by each light flash during optogenetic activation of glutamatergic inputs to FSIs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 is supported by data with strong statistical significance (p<0.0001 for treatment, flash number, and interaction) and adequate sample size (n=9). This demonstrates that 5HT enhances FSI responses to patterned synaptic input, bridging intrinsic excitability changes to synaptic integration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    },
+    {
+      "id": "1021bc5e-9d83-48c9-8f07-9f875911e297",
+      "content_id": "702be86f-20a3-406f-b867-71a5c93a18b1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "CNO has no effect on membrane potential or input resistance in FSIs expressing only control fluorophore, confirming specificity of DREADD effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C97 provides essential negative control for the chemogenetic experiments. This control is critical for ruling out off-target effects of CNO and validates the DREADD approach used in multiple key experiments (C64-C78).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:13.609192Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e158fb3e-ab1a-4b76-8729-18d8bca534ab",
+      "result_id": "40572420-66c3-44cd-b4bb-e62332eb78d3"
+    },
+    {
+      "claim_id": "91f5e093-acaa-4302-a5d8-3a48cf9f6697",
+      "result_id": "40572420-66c3-44cd-b4bb-e62332eb78d3"
+    },
+    {
+      "claim_id": "df49a994-604b-4c49-b60f-efd7118e35ee",
+      "result_id": "40572420-66c3-44cd-b4bb-e62332eb78d3"
+    },
+    {
+      "claim_id": "3b2690f4-595a-4680-93bc-c8080771db79",
+      "result_id": "40572420-66c3-44cd-b4bb-e62332eb78d3"
+    },
+    {
+      "claim_id": "b4371064-b8db-41fb-b513-d298a75e3e85",
+      "result_id": "40572420-66c3-44cd-b4bb-e62332eb78d3"
+    },
+    {
+      "claim_id": "bbc9e4fa-aa88-428d-845a-db3cfc068b0d",
+      "result_id": "40572420-66c3-44cd-b4bb-e62332eb78d3"
+    },
+    {
+      "claim_id": "4e8a35dc-ea29-42d8-9b5f-1f1ffd966859",
+      "result_id": "40572420-66c3-44cd-b4bb-e62332eb78d3"
+    },
+    {
+      "claim_id": "56badef6-daea-4f31-a32e-833e82022c68",
+      "result_id": "40572420-66c3-44cd-b4bb-e62332eb78d3"
+    },
+    {
+      "claim_id": "439009dc-9d0e-40a5-b469-64c825d09245",
+      "result_id": "40572420-66c3-44cd-b4bb-e62332eb78d3"
+    },
+    {
+      "claim_id": "24486368-5efc-4f47-95c3-6bf569181281",
+      "result_id": "40572420-66c3-44cd-b4bb-e62332eb78d3"
+    },
+    {
+      "claim_id": "e81a4dae-019e-4ba9-be34-a74436066bf8",
+      "result_id": "40572420-66c3-44cd-b4bb-e62332eb78d3"
+    },
+    {
+      "claim_id": "ee612efc-f1d6-4feb-b7b4-56782e14a485",
+      "result_id": "40572420-66c3-44cd-b4bb-e62332eb78d3"
+    },
+    {
+      "claim_id": "f829702d-67aa-47f3-8841-6612406c46d1",
+      "result_id": "3252847d-61d4-4cd6-908e-530095ad9a1b"
+    },
+    {
+      "claim_id": "f7a20815-fde1-4f69-9d24-3d92bb9889ff",
+      "result_id": "3252847d-61d4-4cd6-908e-530095ad9a1b"
+    },
+    {
+      "claim_id": "2f4cb065-9a1a-472f-9774-84313ce2f34f",
+      "result_id": "3252847d-61d4-4cd6-908e-530095ad9a1b"
+    },
+    {
+      "claim_id": "3d5db8e0-3b20-4a85-8569-d0db422c74ff",
+      "result_id": "3252847d-61d4-4cd6-908e-530095ad9a1b"
+    },
+    {
+      "claim_id": "f7977b0e-8c4c-4ca9-81c9-95cca835e067",
+      "result_id": "3252847d-61d4-4cd6-908e-530095ad9a1b"
+    },
+    {
+      "claim_id": "629f08da-2fad-482f-87e6-2223f0569920",
+      "result_id": "3252847d-61d4-4cd6-908e-530095ad9a1b"
+    },
+    {
+      "claim_id": "75f5dd27-7c0d-4c6c-9679-0874b76d0119",
+      "result_id": "3252847d-61d4-4cd6-908e-530095ad9a1b"
+    },
+    {
+      "claim_id": "610dc913-31d3-450f-a167-c1c17e29e704",
+      "result_id": "4555c8e1-28f2-4f2f-89f3-fd44b3bc59e0"
+    },
+    {
+      "claim_id": "6a5f9050-2f57-43e2-8306-18e8792d7abe",
+      "result_id": "4555c8e1-28f2-4f2f-89f3-fd44b3bc59e0"
+    },
+    {
+      "claim_id": "4b52f957-5e2d-4679-941e-b033490950b7",
+      "result_id": "4555c8e1-28f2-4f2f-89f3-fd44b3bc59e0"
+    },
+    {
+      "claim_id": "bcecff0b-8480-43e4-b950-68df71aa97e1",
+      "result_id": "4555c8e1-28f2-4f2f-89f3-fd44b3bc59e0"
+    },
+    {
+      "claim_id": "1e98a0ff-630e-42cc-846d-67e5e3cb96b5",
+      "result_id": "4555c8e1-28f2-4f2f-89f3-fd44b3bc59e0"
+    },
+    {
+      "claim_id": "38dced36-a3c4-42e5-af78-fc7703ed92fa",
+      "result_id": "4555c8e1-28f2-4f2f-89f3-fd44b3bc59e0"
+    },
+    {
+      "claim_id": "915e6936-31d2-48ae-aa08-4c2fd9f1e32f",
+      "result_id": "8fe9de0d-5785-402c-813e-1129b76e0428"
+    },
+    {
+      "claim_id": "f8514a0f-beda-4101-b373-3ef4657e9abf",
+      "result_id": "8fe9de0d-5785-402c-813e-1129b76e0428"
+    },
+    {
+      "claim_id": "2188ea97-7588-4b1c-8a96-97368832b62c",
+      "result_id": "8fe9de0d-5785-402c-813e-1129b76e0428"
+    },
+    {
+      "claim_id": "bb3d49e0-899c-418f-bd8c-5be38a316344",
+      "result_id": "8fe9de0d-5785-402c-813e-1129b76e0428"
+    },
+    {
+      "claim_id": "10204143-1920-4058-ba02-59c378e53aa6",
+      "result_id": "8fe9de0d-5785-402c-813e-1129b76e0428"
+    },
+    {
+      "claim_id": "8a73a949-d3f2-4868-8d3e-cd634c9ef515",
+      "result_id": "13931b68-3887-4fd5-9c70-e21a061c3862"
+    },
+    {
+      "claim_id": "100e39c6-d590-4bd2-9367-ff4bd4048d54",
+      "result_id": "13931b68-3887-4fd5-9c70-e21a061c3862"
+    },
+    {
+      "claim_id": "afc1b7cd-041f-42f6-9a95-f5b040e082c5",
+      "result_id": "13931b68-3887-4fd5-9c70-e21a061c3862"
+    },
+    {
+      "claim_id": "3d6a60c7-3b7c-44fd-9026-92a63bcaacf9",
+      "result_id": "13931b68-3887-4fd5-9c70-e21a061c3862"
+    },
+    {
+      "claim_id": "b8742e41-8927-48da-90dc-178fd8251cbd",
+      "result_id": "13931b68-3887-4fd5-9c70-e21a061c3862"
+    },
+    {
+      "claim_id": "e7a74028-5322-473f-a18f-bb06f8084804",
+      "result_id": "13931b68-3887-4fd5-9c70-e21a061c3862"
+    },
+    {
+      "claim_id": "53a9b8d3-1281-4e65-97ef-6f297c920f48",
+      "result_id": "13931b68-3887-4fd5-9c70-e21a061c3862"
+    },
+    {
+      "claim_id": "f34c0152-c006-4264-931b-c31013ca1982",
+      "result_id": "13931b68-3887-4fd5-9c70-e21a061c3862"
+    },
+    {
+      "claim_id": "e8d9ceb4-f54d-4bd0-b1fe-eedcce8e17ee",
+      "result_id": "13931b68-3887-4fd5-9c70-e21a061c3862"
+    },
+    {
+      "claim_id": "1ee37914-4915-4b61-bf25-d0fe6f02bd56",
+      "result_id": "13931b68-3887-4fd5-9c70-e21a061c3862"
+    },
+    {
+      "claim_id": "7d34c32e-47c9-4a61-b191-5f55435d7f97",
+      "result_id": "f7d08d86-51ea-4e74-b155-b04cd51e463c"
+    },
+    {
+      "claim_id": "5033f401-cb3f-4ec5-9706-016530c5dad9",
+      "result_id": "f7d08d86-51ea-4e74-b155-b04cd51e463c"
+    },
+    {
+      "claim_id": "414be1b3-0223-44c1-91df-5171fa9955c3",
+      "result_id": "f7d08d86-51ea-4e74-b155-b04cd51e463c"
+    },
+    {
+      "claim_id": "15a67c17-0daf-455b-829c-7ff887fc843e",
+      "result_id": "f7d08d86-51ea-4e74-b155-b04cd51e463c"
+    },
+    {
+      "claim_id": "3e5b0707-e9e3-4c4f-ab7e-1b87de5bf116",
+      "result_id": "f7d08d86-51ea-4e74-b155-b04cd51e463c"
+    },
+    {
+      "claim_id": "74f4cc6b-8850-4a86-bbfa-5d2e0830c4cd",
+      "result_id": "ce799a33-ca3e-47ea-b573-2f89aa929e0b"
+    },
+    {
+      "claim_id": "cfde7710-849d-4c63-8dd1-bac59d04d259",
+      "result_id": "ce799a33-ca3e-47ea-b573-2f89aa929e0b"
+    },
+    {
+      "claim_id": "78e355f1-0c6d-417b-ba3f-3a8022cca585",
+      "result_id": "ce799a33-ca3e-47ea-b573-2f89aa929e0b"
+    },
+    {
+      "claim_id": "29dbf789-6d80-49bf-9c5d-2d179667354a",
+      "result_id": "ce799a33-ca3e-47ea-b573-2f89aa929e0b"
+    },
+    {
+      "claim_id": "92b23a54-d66c-4e66-b996-5280c9c2cc8e",
+      "result_id": "ce799a33-ca3e-47ea-b573-2f89aa929e0b"
+    },
+    {
+      "claim_id": "9dcc9aa1-bcf4-4dfb-922c-3882588bb0ec",
+      "result_id": "ce799a33-ca3e-47ea-b573-2f89aa929e0b"
+    },
+    {
+      "claim_id": "b2c9cd0b-4179-46e2-8720-694f9af0e673",
+      "result_id": "ce799a33-ca3e-47ea-b573-2f89aa929e0b"
+    },
+    {
+      "claim_id": "8957ad9b-abd4-41b4-9afd-c870257b9bce",
+      "result_id": "ce799a33-ca3e-47ea-b573-2f89aa929e0b"
+    },
+    {
+      "claim_id": "fcd7faa8-bfad-426e-aaee-6f354199bc25",
+      "result_id": "ce799a33-ca3e-47ea-b573-2f89aa929e0b"
+    },
+    {
+      "claim_id": "ea296fe8-cadb-445e-839e-438f89b4cc5c",
+      "result_id": "ce799a33-ca3e-47ea-b573-2f89aa929e0b"
+    },
+    {
+      "claim_id": "0eb3ed4d-b370-40a7-9e14-f80e16c3c4b7",
+      "result_id": "ce799a33-ca3e-47ea-b573-2f89aa929e0b"
+    },
+    {
+      "claim_id": "d32c2934-9df4-4f6c-9ff7-fbd82d72d810",
+      "result_id": "ce799a33-ca3e-47ea-b573-2f89aa929e0b"
+    },
+    {
+      "claim_id": "25eaa9f8-5899-4e3a-ae40-8ae730ab0aea",
+      "result_id": "2b21e278-d8a1-4e5e-aff5-259f5dd89d05"
+    },
+    {
+      "claim_id": "58f98205-52d7-40f9-8b3e-86479b596156",
+      "result_id": "2b21e278-d8a1-4e5e-aff5-259f5dd89d05"
+    },
+    {
+      "claim_id": "554a491c-eb30-4190-9758-093e0019c0fc",
+      "result_id": "2b21e278-d8a1-4e5e-aff5-259f5dd89d05"
+    },
+    {
+      "claim_id": "b282c8e0-63cf-4c6a-9a7e-4b91c597dc30",
+      "result_id": "c21f4b81-656d-4ad3-89b1-5964b2737095"
+    },
+    {
+      "claim_id": "3b3ad0d9-053a-4a36-8b18-8ee5a0308341",
+      "result_id": "1fa533aa-c8e2-44a5-a46a-e83c73e04a32"
+    },
+    {
+      "claim_id": "799e0c34-0db0-4124-8c26-c944268dfb04",
+      "result_id": "1fa533aa-c8e2-44a5-a46a-e83c73e04a32"
+    },
+    {
+      "claim_id": "e647f373-44f5-43b1-96e7-421e7a1719b5",
+      "result_id": "1354485d-1c59-4aa3-acd5-4b5a05727b21"
+    },
+    {
+      "claim_id": "35be05f7-9e82-47a8-9580-3653bd3b3bc5",
+      "result_id": "f2a39822-a598-4a1d-bc0e-7bcd0cd1baf8"
+    },
+    {
+      "claim_id": "59ec7ed1-c058-4184-b554-827f6dd345e8",
+      "result_id": "1021bc5e-9d83-48c9-8f07-9f875911e297"
+    }
+  ],
+  "comparisons": []
+}

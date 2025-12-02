@@ -1,0 +1,374 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C20",
+      "C21",
+      "C22",
+      "C42",
+      "C66",
+      "C71",
+      "C72",
+      "C117"
+    ],
+    "result": "C. elegans behavioral responses are tuned to temporal properties of mechanosensory signals extending over many seconds, including derivatives and integrals. Different behaviors exhibit distinct kernel shapes: forward locomotion kernels are biphasic (derivative-like), while reversal kernels are Gaussian (amplitude-dependent) with ~3s integration windows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C20-C22, C42, C66, C71-C72, and C117 collectively demonstrate temporal processing over multi-second timescales through reverse correlation analysis. The diversity of kernel shapes (biphasic vs. Gaussian) from 1,784 animal-hours of recordings provides strong evidence that behavioral responses depend on temporal features beyond instantaneous amplitude. Six of nine behaviors showed significant kernels (C66), with appropriate controls (C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C25",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C118"
+    ],
+    "result": "Mechanosensory signals in the same neurons can be tailored to elicit specific behavioral responses by adjusting stimulus waveform. Five of six kernel-shaped stimuli significantly increased transitions to their predicted behaviors, demonstrating causal control of behavior through temporal patterning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C25, C77-C80, and C118 demonstrate that waveform shape causally determines behavioral outcomes. The kernel-shaped stimulation experiments (>13,500 presentations per kernel) showed five of six stimuli elicited predicted increases (three significantly), with none decreasing their respective behaviors (C78). This validates the reverse correlation approach and establishes that temporal patterning, not just neuronal identity, determines behavioral output.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C26",
+      "C27",
+      "C81",
+      "C83",
+      "C84",
+      "C136"
+    ],
+    "result": "A linear-nonlinear (LN) model successfully predicts C. elegans behavioral responses to mechanosensory stimuli, including novel stimuli not used during model fitting. The model correctly predicted signs and temporal profiles for all nine behaviors across multiple stimulus types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C26-C27, C81, C83-C84, and C136 demonstrate the LN model's predictive power. The model, fitted only on random noise data, correctly predicted responses to kernel-shaped stimuli (C26) and captured the sign and general trends for novel triangle-wave stimuli (C27, C84). The mostly linear non-linearities (C68) suggest kernels capture most response information, supporting model validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C95",
+      "C96",
+      "C98",
+      "C99",
+      "C100",
+      "C121",
+      "C123"
+    ],
+    "result": "C. elegans mechanosensory processing is context-dependent on short timescales. The same stimulus drives different behavioral outcomes depending on current behavior state. Speed-up and slow-down transitions show stereotyped, mirror-image kernels, suggesting relative rather than absolute velocity control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C28-C33, C95-C96, C98-C100, C121, and C123 demonstrate context-dependency through pairwise kernel analysis. Of 72 possible transitions, 27 showed significant kernels (C96 vs. 4 in controls C97). The stereotyped speed-up/slow-down kernels (C28-C30) and experimental validation (C31-C33, Figure 7) provide converging evidence. This extends prior work on long-timescale context effects (C94, C122) to seconds-long behaviors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C35",
+      "C101",
+      "C107",
+      "C108",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "C. elegans completely ignores mechanosensory stimuli during turn behavior. Kernels for transitions out of 'Turn' fail significance tests, and neither light pulses nor taps evoke significant changes in transition rates when animals are turning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C34-C35, C101, C107-C108, C111-C115 provide multiple lines of evidence for sensory gating during turns. All kernels for transitions from 'Turn' failed significance (C34, C111), and direct stimulation experiments showed no significant responses during turns (C35, C112, C114) while other states like 'Forward 5' responded robustly (C37, C115). Multiple hypothesis-corrected E-tests strengthen statistical rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C39"
+    ],
+    "result": "Plate tap evokes diverse behavioral responses in C. elegans beyond previously reported reversals: 14-fold increase in 'Fast Reverse', 4.5-fold increase in 'Turn' behavior ~5s post-stimulus, and novel slowing of forward locomotion. Optogenetic stimulation of mechanosensory neurons recapitulates tap responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 and C39 characterize tap responses from 40,409 animal-tap presentations. The 14-fold reversal increase (C15) confirms prior work, while the delayed turn increase (C16) and forward slowing (C17, described as novel) expand understanding. Optogenetic-tap similarity (C18) validates the optogenetic approach, with appropriate ATR controls (C19). The slowing response represents a genuinely new finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Similar behaviors have quantitatively similar kernels. Hierarchical clustering of kernel shapes groups behaviors by similarity: the two reversal states cluster together, as do slower forward states ('Forward 3' and '4') and faster forward states ('Forward 5' and '6').",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 and C73-C76 demonstrate that kernel similarity reflects behavioral similarity through hierarchical clustering analysis (Figure 3b). The clustering of reversal states (C24) and speed-based grouping of forward states (C74-C75) provides internal validation of the reverse correlation approach (C76). This organization suggests evolved tuning relationships between stimulus features and behavioral responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C124",
+      "C133"
+    ],
+    "result": "High-throughput optogenetic stimulation combined with automated behavior mapping enabled analysis of over 8,000 animal-hours of recordings. Behavior was classified into nine discrete states using unsupervised mapping of posture dynamics similar to Berman et al. (2014).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C54-C57, C124, and C133 describe the methodological approach. The scale (8,000+ animal-hours, C38) was crucial for revealing findings (C124). The behavior mapping approach (C54-C57) adapted established methods and classified behavior into nine states. While methodologically sound and well-documented, these are supporting technical achievements rather than primary scientific findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Transgenic strain AML67 expresses Chrimson and mCherry in mechanosensory neurons but exhibits reduced sensitivity to tap/touch compared to wild-type, presumably due to transcriptional competition. AML67 was selected as the most sensitive among generated alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 describe the transgenic strain used. The reduced sensitivity (C52, Figure 2\u2014figure supplement 4) is acknowledged and attributed to transcriptional competition (inference). Selection of the most sensitive allele (C53) represents appropriate experimental design. While the reduced sensitivity is a limitation, the optogenetic-tap similarity (C18) and ATR controls (C19, C67) validate the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Methodological choices were based on established principles: 60s inter-stimulus intervals minimize habituation; modulated light intensity produces graded membrane potentials; reverse correlation with the LN model framework enables kernel estimation and behavioral prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C58-C65 describe methodological rationale grounded in prior work. The 60s interval (C40) is justified by habituation literature. Graded optogenetic responses (C58-C59) are supported by citations. The LN model framework (C60-C65) is well-established in neuroscience. These represent appropriate application of standard methods rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Prior work established that six soft-touch mechanosensory neurons detect mechanical stimuli in C. elegans, with anterior neurons evoking reversals and posterior neurons evoking forward sprints. Touch receptor neurons adapt on millisecond timescales, while calcium transients occur over seconds. Touch-defective animals fail to escape predatory fungi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C14 summarize established knowledge from prior work (all supported by citations). These provide necessary background context but represent no new findings. The citations appear appropriate and accurately represent the cited work's conclusions. This background establishes the foundation for investigating temporal processing beyond the receptor level.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C43",
+      "C46",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The observation of temporal processing in C. elegans mechanosensation raises the possibility that such processing may be ubiquitous across sensory systems. The neural mechanisms may involve recurrent network activity downstream of touch receptors. The adaptive value may relate to distinguishing increasing vs. decreasing signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41, C43, C46, and C149 are explicitly speculative (C41, C43, C46 marked as speculation). While the speculation is reasonable given the findings and prior work in other systems (C143-C146), these remain hypotheses requiring future testing. Claims C147-C148 correctly identify the knowledge gap this work addresses. The speculation is appropriately qualified but cannot be evaluated as supported or unsupported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C152"
+    ],
+    "result": "The natural ecology and force statistics encountered by C. elegans are not well understood. The turn is part of an escape response that shares similarities with other organisms and is important for survival. Failing to complete turns could cause animals to return to danger.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C47-C50, and C152 provide context about C. elegans ecology and escape behavior. Claims about unknown ecology (C44-C45) and escape response characteristics (C47-C49, C152) are supported by citations. The inference about incomplete turns (C50) is logical. These provide important context for interpreting the turn-specific sensory gating but represent background knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Control experiments and theoretical predictions validate the reverse correlation approach. ATR-negative controls showed no significant kernels. The diversity of observed kernel shapes contradicts simple predictions that all kernels should be identical or narrow Gaussians. Non-linearities were mostly linear in the tested stimulus regime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 describe controls and predictions. ATR-negative controls appropriately showed no significant kernels (C67, Figure 3\u2014figure supplement 3). The theoretical predictions (C69-C70) establish expectations that the data violate, strengthening the case for temporal processing. Mostly linear non-linearities (C68) suggest the stimulus regime was appropriate and kernels capture most information. These support the main findings' validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Detailed analysis of responses to kernel-shaped and triangle-wave stimuli reveals specific tuning properties. 'Forward 4'-shaped stimuli increase 'Forward 3/4' but decrease 'Forward 5/6'. Triangle waves show that increasing intensity increases slow forward transitions while decreasing intensity increases fast forward transitions. Kernel shapes predict these patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C85-C87, C88-C92, and C93 provide detailed characterization of stimulus-response relationships. The 'Forward 4' example (C82) and triangle wave responses (C85-C87) demonstrate how temporal features determine outcomes. The kernel shape analysis (C88-C92) correctly predicts observed responses. These details support and extend the main findings about temporal processing, providing mechanistic insight into how kernel shapes relate to behavioral tuning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C122"
+    ],
+    "result": "Context-dependent sensory processing was previously known for long-timescale states (minutes-hours) like hunger and quiescence. The current work extends this to seconds-long behaviors. The stereotyped speed-up/slow-down kernels suggest evolution of relative rather than absolute velocity control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94, C102-C105, and C122 place findings in context of prior work. Prior long-timescale context effects (C94, C122) are well-documented. The inference about relative velocity control (C102-C103) is reasonable given the stereotyped, mirror-image kernels. Experimental validation with triangle waves (C104) and conclusion (C105) support this interpretation. This represents appropriate integration of new findings with existing knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C36"
+    ],
+    "result": "All behavior states except 'Turn' (and 'Forward 2' for some stimuli) showed at least one transition whose rate was significantly affected by mechanosensory stimulation. This demonstrates broad responsiveness to mechanosensory signals across most behavioral contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C109-C110 characterize the breadth of mechanosensory responsiveness. The systematic analysis across all behavior states (Figure 8\u2014figure supplements 1-2) with appropriate statistical correction demonstrates that most states respond to stimulation, making 'Turn' unique in its complete non-responsiveness. This supports the specificity of the turn-related sensory gating finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C116",
+      "C119",
+      "C120",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "This work provides new insights into C. elegans sensory processing, showing mechanosensory signals influence a broad set of behaviors including slowing. The high-throughput approach activating all mechanosensory neurons simultaneously was necessary but limits single-neuron resolution. Future work could use intersectional approaches to target subsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116, C119-C120, C125-C132 summarize contributions and limitations. The broad behavioral influence (C119-C120) and novel slowing response are established. The methodological trade-off (C125-C127) is clearly acknowledged: high throughput required simultaneous activation (C127), limiting single-neuron resolution. The discussion of future approaches (C130-C132) is appropriate. These represent fair assessment of scope and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Discrete behavior states were chosen as appropriate for discrete behaviors like turns, though continuous descriptions might better capture forward locomotion. The LN model was chosen for ubiquity and interpretability, though other models (like GRUs) could probe temporal processing. The LN model has limitations including assumed structure and inability to capture habituation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C135, C137-C142 discuss methodological choices and limitations. The rationale for discrete states (C134) and LN model (C137) is reasonable. Alternative approaches are appropriately acknowledged (C135, C138, C141-C142). LN model limitations (C139-C140) are fairly stated. This represents appropriate scientific discussion of methodological trade-offs, though the speculation about other models (C138) remains untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The temporal processing characterized here is to optogenetic signals, bypassing mechanoelectrical transduction. Future work is needed to characterize temporal processing of applied forces directly and to identify neural circuit mechanisms for temporal integration and context-dependent modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C151, C153-C155 identify important limitations and future directions. The scope limitation (C150) is clearly stated\u2014optogenetic stimulation bypasses transduction. The proposed future work (C151, C153-C154) addresses key mechanistic questions. The potential impact (C155) is appropriately qualified. These represent honest assessment of what remains unknown and appropriate suggestions for future investigation.",
+    "result_type": "MINOR"
+  }
+]

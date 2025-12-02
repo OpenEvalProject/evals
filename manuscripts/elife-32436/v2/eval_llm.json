@@ -1,0 +1,320 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "K-Ras4a, H-Ras, and N-Ras possess lysine fatty acylation that is resistant to hydroxylamine treatment, with K-Ras4a retaining 47% NH2OH-resistant fatty acylation. Mass spectrometry identified K-Ras4a K182 and H-Ras K170 as fatty acylated residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C36-C40 are well-supported by multiple complementary experimental approaches including Alk14 metabolic labeling, NH2OH resistance assays, and direct mass spectrometry identification of modified lysine residues (Figure 1). The quantification shows clear differences between Ras isoforms, and the NH2OH resistance distinguishes lysine from cysteine acylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "SIRT2 catalyzes the removal of lysine fatty acylation from K-Ras4a but not from H-Ras or N-Ras. SIRT2 shows better activity than SIRT1 on K-Ras4a, and SIRT2 knockdown significantly increases K-Ras4a lysine fatty acylation in cells. SIRT2 does not possess cysteine defatty-acylase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C41-C56 are strongly supported by convergent evidence from in vitro defatty-acylation assays with purified sirtuins, SIRT2 knockdown experiments showing increased K-Ras4a lysine fatty acylation, catalytic mutant controls (SIRT2-HY), and specificity demonstrated through lack of activity on 3KR mutant and cysteine-acylated substrates (Figure 2). The use of multiple complementary approaches strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "K-Ras4a is not regulated by SIRT2 via deacetylation, as acetylation was not detected on K-Ras4a by western blot or mass spectrometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by negative results from both western blot using anti-acetyllysine antibody (with and without HDAC inhibitor TSA) and mass spectrometry analysis (Figure 2\u2014figure supplement 1f). While negative results require careful interpretation, the use of positive controls (TSA treatment) and multiple detection methods strengthens the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Endogenous K-Ras4a contains lysine fatty acylation (primarily palmitoylation on K182) that can be removed by SIRT2 in the absence of Alk14 supplementation. SIRT2 is present in both soluble and membrane fractions and associates with K-Ras4a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are supported by 32P-NAD assays detecting native lysine fatty acylation, mass spectrometry identifying palmitoylation on K182, biotin pull-down assays showing SIRT2-dependent regulation of endogenous K-Ras4a, subcellular fractionation showing SIRT2 membrane localization, and co-immunoprecipitation demonstrating K-Ras4a-SIRT2 interaction (Figure 2h-i, Figure 2\u2014figure supplement 1g-i, Figure 2\u2014figure supplement 2). These experiments address the important question of whether the modification occurs endogenously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "K182, K184, and K185 of K-Ras4a are fatty acylated redundantly, and the 3KR mutation is needed to abolish lysine fatty acylation on the C-terminus of K-Ras4a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by systematic mutagenesis showing that individual K-to-R mutations do not eliminate fatty acylation as effectively as the 3KR mutant, and mass spectrometry of the K182A mutant detecting fatty acylation on K184 (Figure 3a-b). The redundancy explains why single mutations are insufficient and validates the use of the 3KR mutant as a lysine fatty acylation-deficient control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Prenylation on C186 is required for K-Ras4a fatty acylation, while cysteine palmitoylation on C180 plays an important but nonessential role in lysine fatty acylation occurrence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are supported by mutagenesis experiments showing that C186S completely abolishes fatty acylation while C180S substantially but not completely reduces lysine fatty acylation, and the C180S mutant retains NH2OH-resistant fatty acylation that is abolished by the C180S-3KR double mutant (Figure 3c-d). This establishes a hierarchy of modifications and suggests cysteine palmitoylation facilitates but is not absolutely required for lysine fatty acylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "SIRT2 removes lysine fatty acylation from K-Ras4a-WT and C180S mutant but not from the 3KR mutant, both in vitro and in cells, confirming that fatty acylation on K182/184/185 is regulated by SIRT2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by in vitro defatty-acylation assays and SIRT2 knockdown experiments in cells showing differential effects on WT versus 3KR mutant, and activity on C180S mutant (Figure 3e, Figure 3\u2014figure supplement 1a-b). The consistency between in vitro and cellular experiments, along with validation in Sirt2 KO MEF cells, strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "SIRT2-mediated lysine defatty-acylation promotes endomembrane localization of K-Ras4a. SIRT2 knockdown decreases intracellular punctate localization of K-Ras4a-WT but not the 3KR mutant or H-Ras, indicating that lysine fatty acylation inhibits endomembrane localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C76-C82 are supported by confocal microscopy showing differential effects of SIRT2 KD on K-Ras4a-WT versus 3KR mutant and H-Ras, with quantification of cytoplasmic versus whole cell intensity (Figure 4a-b). The use of multiple controls (3KR mutant, H-Ras, Sirt2 KO MEF cells) and consistent results across cell lines strengthen the conclusion. However, the mechanism by which defatty-acylation promotes endomembrane localization is not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The K-Ras4a-3KR mutant exhibits increased colocalization with trans-Golgi network, early endosome, recycling endosome, and lysosome markers compared to K-Ras4a-WT, suggesting that removal of lysine fatty acylation promotes K-Ras4a localization to endomembranes in endocytic pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are supported by colocalization analyses using Pearson's correlation coefficient with multiple endomembrane markers (STX6, EEA1, Rab11, LAMP1) showing significantly increased colocalization for 3KR mutant, but not with ER, trans-Golgi, or late endosome markers (Figure 4c-d, Figure 4\u2014figure supplement 1h-i). The specificity for certain endomembrane compartments is informative, though the functional significance of this localization pattern requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Lysine fatty acylation inhibits the ability of K-Ras4a-G12V to induce anchorage-independent growth, and SIRT2 promotes transformation through defatty-acylation. K-Ras4a-G12V-3KR shows significantly more colony formation than K-Ras4a-G12V, and SIRT2 knockdown more potently inhibits K-Ras4a-G12V-mediated colony formation than K-Ras4a-G12V-3KR or H-Ras-G12V.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C85-C89 are supported by soft agar colony formation assays showing differential effects of the 3KR mutation and SIRT2 KD on K-Ras4a-G12V versus controls (Figure 5). The quantification shows statistically significant differences (75% vs 45% decrease with SIRT2 KD). However, SIRT2 KD still affects 3KR and H-Ras transformation, which the authors acknowledge may be due to other SIRT2 substrates, introducing some uncertainty about specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Lysine fatty acylation does not affect K-Ras4a GTP loading, but SIRT2-dependent lysine defatty-acylation promotes localization of activated (GTP-loaded) K-Ras4a at endomembranes, as shown by increased colocalization of DsRed-RBD with K-Ras4a-3KR on intracellular puncta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 are supported by RBD pull-down assays showing no effect of 3KR mutation or SIRT2 KD on GTP loading, and confocal microscopy showing increased RBD colocalization with 3KR mutant at intracellular puncta that is decreased by SIRT2 KD for WT but not 3KR (Figure 6\u2014figure supplement 1a-g). This distinguishes effects on activation state from effects on localization of activated protein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "SIRT2-catalyzed lysine defatty-acylation of K-Ras4a does not affect binding to or activation of Raf1, PI3K, or RalGDS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 are supported by co-immunoprecipitation showing no effect of 3KR mutation or SIRT2 KD on binding to these effectors, and western blot analysis of phospho-Erk, phospho-Akt, and phospho-Jnk showing no differential effect on these pathways (Figure 6\u2014figure supplement 2a-b). This narrows down the mechanism by which lysine fatty acylation affects transformation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Removal of lysine fatty acylation from K-Ras4a by SIRT2 results in preferential association with A-Raf but not B-Raf or C-Raf. K-Ras4a-G12V-3KR shows greater A-Raf binding than K-Ras4a-G12V, and SIRT2 knockdown decreases A-Raf binding to K-Ras4a-G12V but not to K-Ras4a-G12V-3KR or H-Ras-G12V.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C97-C102 are supported by co-immunoprecipitation experiments showing differential A-Raf binding that is regulated by lysine fatty acylation and SIRT2, with appropriate controls (3KR mutant, H-Ras, B-Raf) (Figure 6a-b, Figure 6\u2014figure supplement 2c). The specificity for A-Raf among Raf family members is notable and mechanistically informative. The SILAC interactome study (Figure 6\u2014figure supplement 3) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "K-Ras4a-G12V-3KR shows more colocalization with A-Raf on endomembranes than K-Ras4a-G12V, and SIRT2 knockdown inhibits endomembrane recruitment of A-Raf by K-Ras4a-G12V but not by K-Ras4a-G12V-3KR, suggesting that lysine defatty-acylation facilitates endomembrane recruitment of A-Raf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 are supported by live cell imaging showing differential A-Raf colocalization with K-Ras4a-G12V versus 3KR mutant at endomembranes, with quantification showing significant differences (Figure 6c-d). The consistency with the biochemical interaction data strengthens the conclusion, though the claim that this \"facilitates\" recruitment is somewhat speculative as the mechanism is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "A-Raf is important for K-Ras4a-G12V-mediated transformation and for the regulation of K-Ras4a transforming activity by SIRT2-dependent lysine defatty-acylation. A-Raf knockdown partially suppresses K-Ras4a-G12V-induced colony formation and abrogates the effects of 3KR mutation and SIRT2 knockdown on transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 are supported by soft agar colony formation assays with A-Raf knockdown showing partial suppression of K-Ras4a-G12V transformation and elimination of differential effects between WT and 3KR mutant or between control and SIRT2 KD (Figure 6e, Figure 6\u2014figure supplement 4). This genetic epistasis experiment provides strong evidence for A-Raf's role in mediating the effects of lysine fatty acylation on transformation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6",
+      "C115",
+      "C116",
+      "C119"
+    ],
+    "result": "This study identifies lysine fatty acylation as a previously unknown regulatory mechanism for K-Ras4a and identifies the first physiological defatty-acylation substrate for SIRT2. The findings suggest that interference with K-Ras4a lysine fatty acylation could be an approach to anti-K-Ras therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C115-C116, C119 represent summary statements about the novelty and significance of the findings. The claim about lysine fatty acylation as a regulatory mechanism for Ras proteins is well-supported by the experimental data. The claim about K-Ras4a being the first physiological SIRT2 defatty-acylation substrate is supported by the data but depends on the definition of \"physiological\" and literature context. The therapeutic speculation (C116) is reasonable but remains to be tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C117",
+      "C118"
+    ],
+    "result": "Background claims about Ras proteins, protein fatty acylation, sirtuins, and K-Ras4a expression and function in cancer, based on established knowledge and cited literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C35, C111-C114, C117-C118 are background statements supported by citations to established literature. These provide context for the study but are not novel findings. The accuracy of these claims depends on the cited literature, which is generally well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "SIRT2 may provide a link between K-Ras4a signaling and cellular metabolism, and as a Ras regulator, may be an important therapeutic target for cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C121 are speculative statements about potential implications of the findings. While the biochemical logic is sound (acyl-CoA and NAD levels are metabolically regulated), these claims are not directly tested in the study. The therapeutic potential is supported by the transformation data but would require extensive additional validation.",
+    "result_type": "MINOR"
+  }
+]

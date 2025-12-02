@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Input resistance (Rin) of retrovirus-labeled neurons decays exponentially during maturation, starting at ~32 G\u03a9 at 7 days post injection (dpi) and showing a ~4-fold decay per week.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C27 are directly supported by experimental measurements shown in Figure 1\u2014figure supplement 1, with n=77 retrovirus-labeled neurons measured across developmental timepoints. The exponential decay function was fitted to the data with appropriate statistical parameters (R\u00b2=0.75), providing a calibration curve for estimating cell age from Rin measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Young neurons (2 weeks post injection) show >100-fold smaller AMPA-mediated EPSCs compared to mature neurons, but only ~4-fold smaller EPSPs, resulting in a ~25-fold larger EPSP/EPSC ratio that enables effective depolarization despite tiny synaptic currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are well-supported by direct voltage-clamp and current-clamp measurements with appropriate sample sizes (n=6-19 cells per group) and statistical comparisons. The data demonstrate that high input resistance in young neurons compensates for small synaptic currents, allowing glutamatergic synapses to effectively depolarize these cells. The conclusion (C32) logically follows from the experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Burst stimulation (5@50Hz) produces similar EPSP amplitudes in young and mature neurons despite vastly different synapse numbers, due to enhanced temporal summation in young cells. The burst-to-single EPSP ratio is ~4-times larger in young neurons and correlates strongly with membrane time constant (r=0.83, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 are supported by systematic measurements of burst and single EPSPs across developmental stages with appropriate statistical analyses. The correlation analysis (C39) and the homeostatic interpretation (C37, C41) are well-justified by the data showing that increased synapse number during maturation is balanced by decreased excitability, maintaining similar burst EPSP amplitudes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C52"
+    ],
+    "result": "Young neurons at 2-3 weeks post mitosis predominantly express 'silent synapses' characterized by high NMDA/AMPA receptor ratios, with NMDA currents ~50-fold smaller than in mature neurons, consistent with low synapse density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 and C52 are supported by voltage-clamp recordings showing high NMDA/AMPA ratios in young neurons (Figure 2) with appropriate sample sizes (n=6-12 young cells, n=7 mature cells) and statistical comparisons (p<0.01-0.05). The conclusion about low synapse density (C52) is a reasonable inference from the small NMDA current amplitudes and is consistent with cited morphological studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C53"
+    ],
+    "result": "NMDA receptors contribute ~54% to EPSP amplitude in young neurons versus ~16% in mature cells (p<0.0001), despite similar Mg\u00b2\u207a block (~3% open probability at -80mV). The high input resistance and slow membrane time constant of young neurons enable NMDA-mediated depolarization from resting potential, leading to dynamic unblocking during burst activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 and C53 are well-supported by pharmacological experiments with AP5 (n=9 young, n=5 mature cells) and I-V relationship measurements (n=6 young, n=4 mature cells). The finding that NMDA receptors contribute substantially to EPSPs despite normal Mg\u00b2\u207a block is a key mechanistic insight. However, C50 is speculative regarding GluN2B/2A subunit expression and relies on citation rather than direct measurement in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Burst stimulation evokes action potentials with similar probability in 2-3 week old neurons (88.4\u00b13.2%, n=38) and mature cells (100%, n=22, p=0.011), though young neurons show smaller spike amplitude (108.5\u00b12.5 mV vs 143.3\u00b11.3 mV), longer half-duration (5.2\u00b10.8 ms vs 1.6\u00b10.1 ms), and longer latency (98\u00b19 ms vs 45\u00b17 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 are supported by systematic current-clamp recordings with adequate sample sizes and statistical comparisons (all p<0.0001 except firing probability). The spike properties are consistent with lower density of voltage-gated channels in young neurons (C58), though this is an inference rather than direct measurement. The observation that single stimuli never evoke APs in young neurons with Rin>2G\u03a9 (C60) is noted but not quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "AP firing in young neurons is NMDA-receptor dependent and AMPA-receptor independent (CNQX has no effect, p=0.69; AP5 blocks firing), contrasting with mature neurons where AMPA receptors are critical. This demonstrates that silent synapses can be dynamically unsilenced by brief-burst activity to reliably evoke firing despite >100-fold smaller EPSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C69 are strongly supported by pharmacological experiments with CNQX and AP5 in both young (n=16-17) and mature (n=5) neurons. The differential effects of AMPA vs NMDA receptor blockade clearly demonstrate distinct mechanisms of AP generation in young versus mature cells. The conclusion that enhanced excitability compensates for low synapse number (C68-C69) is well-justified by the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Young neurons have 4-fold smaller dendritic cone diameter (86\u00b115 \u00b5m vs 324\u00b117 \u00b5m, p=0.0003, n=8 young, n=7 mature) and smaller cone height (127\u00b113 \u00b5m vs 188\u00b112 \u00b5m, p=0.0037), resulting in substantially smaller total dendritic volume and reduced probability of being targeted by entorhinal afferent fibers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by morphological measurements from biocytin-filled neurons (Figure 5) with appropriate sample sizes and statistical comparisons. The inference about reduced targeting probability (C73) logically follows from the smaller dendritic tree volume, though it is not directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The dendritic 'firing field' (spatial extent of stimulation sites that evoke APs) is ~5-times narrower in young neurons (76.7\u00b18.1 \u00b5m) than mature cells (360.8\u00b170.6 \u00b5m, p<0.0001, n=15 young, n=11 mature), consistent with smaller dendritic trees and sparse connectivity in young neurons versus broad connectivity in mature cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are well-supported by systematic spatial mapping experiments (Figure 6) with adequate sample sizes. The narrow firing fields in young neurons are consistent with their smaller dendritic trees (C76-C77) and demonstrate input specificity. The interpretation linking firing field width to dendritic morphology and synapse number is reasonable and supported by citations to prior morphological studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Paired recordings from neighboring neurons reveal that firing fields overlap by 82.9\u00b17.2% in mature cells (n=8) but only 16.1\u00b17.3% in young neurons (n=10, p<0.001), demonstrating that young neurons sample activity from spatially restricted, non-overlapping populations of presynaptic fibers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are strongly supported by paired whole-cell recordings from neighboring neurons with similar soma distances (~52-54 \u00b5m) in both groups. The minimal overlap in young neurons provides direct evidence for sparse and orthogonal connectivity. The experimental design appropriately controls for soma distance, and the statistical comparison is significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "In physiological conditions (ACSF with intact GABAergic transmission), young neurons show similar firing probability to gabazine but with shorter spike latency (48.8\u00b17.8 ms vs 77.1\u00b120.0 ms, n=6), more restricted temporal window (29-79 ms vs 26-140 ms), and smaller peak amplitude (91\u00b12 mV vs 101\u00b11 mV, p<0.0001), indicating that GABAergic transmission creates a window for early excitation followed by delayed shunting inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C90 are supported by experiments comparing firing in ACSF versus gabazine (n=6 young neurons). The temporal pattern of GABAergic effects is well-characterized, showing initial facilitation (<50 ms) followed by shunting inhibition (>80 ms). However, the mechanistic interpretation (C88-C89) is somewhat speculative, relying on inference from temporal patterns and citation to prior work rather than direct measurement of GABAergic conductances.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "In mature granule cells, intact GABAergic inhibition strongly reduces firing in ACSF (n=6), independent of stimulation electrode location, contrasting with the location-dependent effects in young neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 are supported by control experiments in mature neurons (Figure 8\u2014figure supplement 1) showing that GABAergic inhibition has different effects in mature versus young cells. However, the sample size is modest (n=6, with 2/6 showing no spikes in ACSF), and the quantitative comparison between center and lateral stimulation effects could be more thoroughly analyzed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The study demonstrates that 2-3 week old neurons generate input-specific sparse and orthogonal AP firing through NMDA-receptor dependent mechanisms at 'silent synapses'. Key factors include: (1) high input resistance enabling NMDA-mediated EPSPs from resting potential despite Mg\u00b2\u207a block, (2) efficient temporal summation during brief bursts leading to dynamic NMDA receptor unblocking, (3) homeostatic balance between increasing synapse number and decreasing excitability during maturation, (4) GABAergic modulation of firing time window, and (5) sparse non-overlapping connectivity generating orthogonal firing in neighboring cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching result integrates the major findings of the study (claims C3-C6, C22-C25, C93-C99) and is well-supported by the combined experimental evidence from electrophysiology, pharmacology, morphology, and paired recordings. The mechanistic insights (C95-C96) are directly demonstrated, and the functional implications (C97-C99) are reasonable inferences from the data. This represents the central contribution of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The study challenges the canonical model of NMDA receptor activation by showing that glutamatergic synapses can reliably induce APs in 2-3 week old neurons without AMPA receptors, through a mechanism where: (1) the 3% Mg\u00b2\u207a-resistant NMDA conductance at -80mV is sufficient to depolarize high-resistance young cells, (2) temporal summation during bursts dynamically unblocks remaining NMDA receptors, and (3) this creates a frequency filter requiring brief burst activity (~50Hz) rather than single spikes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105 and C108-C113 describe a key mechanistic insight that is well-supported by the combined electrophysiological and pharmacological data. The finding that AMPA receptors are not necessary for burst-evoked firing in high-resistance cells (C110) is directly demonstrated by CNQX experiments. The frequency filtering property (C111-C113) is a logical inference from the requirement for burst activity, though single-stimulus experiments are not extensively quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C134"
+    ],
+    "result": "Based on NMDA current measurements and the assumption of similar NMDA receptor density at silent and mature synapses, the study estimates that synapse density at 2-3 weeks is 2-15% of mature levels, corresponding to approximately 200-fold fewer synapses in 2-week-old cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118 and C134 involve calculations based on NMDA current ratios (~2% at 2 weeks, ~15% at 3 weeks) combined with an assumption about receptor density from cited literature (C117). While the NMDA current measurements are solid, the inference about synapse density relies on the untested assumption that NMDA receptor density per synapse is constant across development. This assumption may not hold, making the quantitative estimate uncertain. Direct morphological synapse counts would be needed to validate this inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "The study concludes that synaptic silence is not stereotypic but context-dependent, and that AP firing by silent synapses might apply to other neuron types during early development if they have high input resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 is a reasonable conclusion from the finding that silent synapses can evoke APs under specific conditions (high Rin, burst activity). However, C116 is speculative, extrapolating to other neuron types without direct evidence. While the speculation is reasonable, it represents a hypothesis for future testing rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C135",
+      "C136",
+      "C137",
+      "C142",
+      "C146",
+      "C148",
+      "C149"
+    ],
+    "result": "The study proposes that sparse connectivity combined with enhanced excitability enables highly specific NMDA-receptor activation by small subsets of afferent fibers, resolving the apparent contradiction between enhanced excitability and the need for sparse coding in pattern separation. This connectivity shifts from a 'low-number-high-impact' state in young neurons to a 'high-number-low-impact' state in mature cells, potentially supporting hippocampal information processing and learning as early as 3-4 weeks post mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133, C135-C137, C142, C146, C148-C149 integrate the experimental findings with prior behavioral literature to propose a functional model. The experimental support for sparse, orthogonal firing is strong (paired recordings, narrow firing fields). However, the functional interpretations regarding pattern separation (C131, C142) and contribution to learning (C146) are speculative, relying on correlation with behavioral studies rather than direct demonstration. The model is plausible and well-argued but represents a hypothesis requiring further testing with behavioral experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C147"
+    ],
+    "result": "The study identifies high input resistance, slow membrane time constant, and slow NMDA receptor gating kinetics as key factors enabling dynamic NMDA-receptor unblocking and AP firing driven by silent synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C147 accurately summarizes the key mechanistic factors identified in the study. Each factor is directly supported by experimental measurements: high Rin (C26-C27), slow membrane time constant correlating with burst summation (C39), and slower NMDA decay in young neurons (C49). This represents a well-supported mechanistic conclusion.",
+    "result_type": "MAJOR"
+  }
+]

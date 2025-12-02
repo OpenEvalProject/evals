@@ -1,0 +1,256 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "H4K31ac is a conserved but previously underestimated histone modification that occurs in apicomplexan parasites (T. gondii and P. falciparum) as well as metazoans. The H4K31 residue is located at the N-terminus of the H4 \u03b11 helix with its side chain extended in the major groove of DNA, and acetylation abolishes its water-mediated interaction with DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 are well-supported by mass spectrometry data (C1, C2), structural analysis (C3, C4), sequence alignments (C5), and citations to prior literature (C6, C7). The identification of H4K31ac in apicomplexans contradicts earlier views that it was restricted to metazoans, and this is supported by multiple independent studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "H4K31ac displays a euchromatic distribution pattern in both apicomplexan parasites and mammalian cells. In T. gondii and human cells, H4K31ac is distributed uniformly within nuclei and responds to HDAC inhibitor treatment. In P. falciparum, it shows a nuclear punctate pattern reminiscent of transcription factories, while in MEFs it is scattered through nucleoplasm but excluded from heterochromatic foci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13 are supported by immunofluorescence data across multiple cell types and organisms (Figures 1d, 2, 3). The HDACi response (C9, C10) provides functional validation of the modification's dynamic regulation. The euchromatic pattern is consistently observed across species, though with some organism-specific variations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "TgGCN5b is the H4K31 acetyltransferase and TgHDAC3 is the H4K31 deacetylase in T. gondii. Cyclopeptide HDAC inhibitors specifically enhance H4K31ac levels, and CRISPR-mediated disruption of TgHDAC3 causes hyperacetylation of H4K31. Among HATs tested, only TgGCN5b disruption resulted in reduced H4K31ac, and its depletion also reduced H3K14ac.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 are strongly supported by systematic CRISPR-mediated gene disruption experiments (Figures 4, 5, 6) combined with HDACi screening. The identification of TgGCN5b as the H4K31 acetyltransferase is based on loss-of-function evidence showing drastic reduction in H4K31ac upon its disruption, while other HAT candidates showed no effect. The dual substrate specificity (H4K31 and H3K14) is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C62",
+      "C63"
+    ],
+    "result": "H4K31me1 shows cell cycle-dependent localization in mammalian cells, being absent or barely detected in interphase nuclei but strongly decorating mitotic chromosome arms with signals more pronounced than the mitotic marker H3S10 phosphorylation. This suggests a possible role for H4K31me1 in cell division in mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21, C62-C63 are supported by immunofluorescence data showing the cell cycle-dependent distribution of H4K31me1 (Figure 7a, 7b). The quantification demonstrates statistically significant enrichment during mitosis compared to interphase. However, the functional role (C21, C63) remains speculative as no mechanistic experiments were performed to test this hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "In P. falciparum, H4K31me1 displays a peculiar condensed punctate pattern at the nuclear periphery, similar to H3K9me3 and reminiscent of heterochromatin/subtelomeric region clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 is supported by immunofluorescence data (Figure 7c) and comparison with known heterochromatin markers. The pattern is distinct from the diffuse H4K31ac distribution and consistent with heterochromatic localization, which is further validated by genome-wide ChIP-seq data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "In T. gondii, H4K31ac and H4K31me1 exhibit distinct, mutually exclusive genome-wide distribution patterns. H4K31ac is enriched at intergenic regions (75% outside gene bodies) with high signals at 5'UTR/promoters that drop sharply after the translational initiation site, similar to H3K14ac and H3K4me3. H4K31me1 shows a distinct pattern spanning from ATG to the entire gene body, representing a novel PTM restricted to gene bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 are strongly supported by genome-wide ChIP-seq data with biological replicates showing high correlation (Figure 8, Figure 8\u2014figure supplements). The mutually exclusive distribution is clearly demonstrated, and the average profiles show distinct patterns for the two modifications. The gene body-specific enrichment of H4K31me1 is a novel finding well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C47"
+    ],
+    "result": "In T. gondii, H4K31 modifications correlate with gene expression levels. Highly expressed genes (Q1) show high H4K31ac at promoters and gene bodies with absence of H4K31me1. Moderately expressed genes (Q2-Q3) show H4K31me1 in gene bodies with restricted H4K31ac at promoters, suggesting an inverse correlation between H4K31me1 and transcription yield. Transcriptionally repressed genes (Q4) show no enrichment of either modification but are enriched in H3K9me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30, C47 are supported by integrated ChIP-seq and RNA-seq analysis (Figure 9). The correlation between modification patterns and expression levels is clearly demonstrated across four expression quartiles. However, the mechanistic interpretation that H4K31me1 limits RNA polymerase II activity (C47) is inferential and not directly tested experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Stage-specific genes in T. gondii (ENO1, BAG1, and sexual stage genes) display bivalent chromatin domains characterized by co-enrichment of the repressive mark H3K9me3 and the activation mark H3K14ac. This bivalent signature is restricted to genes that become active in bradyzoite or sexual stages, potentially keeping them poised for rapid activation upon differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are supported by ChIP-seq data showing co-enrichment of H3K9me3 and H3K14ac at stage-specific genes (Figure 10a, 10b, Figure 10\u2014figure supplements). The bivalent domain concept is well-established in other systems (cited), and the data clearly show this pattern at developmentally regulated genes. However, the functional significance (poised for activation) is inferential and not experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "H4K31me1 can predict unannotated genes in T. gondii, even when expression levels are too low for RNA-seq detection. Additionally, H4K31me1 is enriched in chromosomal regions devoid of protein-coding genes that correlate with transcription of large RNA transcripts (20-70 kb) reminiscent of long noncoding RNAs (lncRNAs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 are supported by ChIP-seq and RNA-seq data (Figure 8\u2014figure supplement 2, Figure 10d, Figure 10\u2014figure supplement 5). The gene body-specific enrichment of H4K31me1 makes it a useful predictor of transcribed regions. The correlation with lncRNA transcription is demonstrated, though the functional significance of H4K31me1 at these loci is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "In P. falciparum, H4K31ac displays an even distribution throughout the genome similar to H3K4me3, with high acetylation at promoters and low rates at gene bodies of active genes. H4K31ac and the repressive mark H3K9me3 are inversely correlated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by genome-wide ChIP-seq data (Figure 11a, 11b, Figure 11\u2014figure supplements). The distribution pattern is consistent with a euchromatic mark associated with active transcription, and the inverse correlation with H3K9me3 is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C57",
+      "C60",
+      "C61"
+    ],
+    "result": "In P. falciparum, H4K31me1 is remarkably enriched at pericentromeric regions flanking cenH3-enriched centromeres, potentially replacing the H3K9me3-HP1 functions typically found at pericentromeric heterochromatin in other species. H4K31me1 is also enriched at some subtelomeric regions, specifically at TARE repeat blocks encoding lncRNAs, but shows limited enrichment at var and rifin genes. This represents a novel hallmark of heterochromatin in P. falciparum distinct from the canonical H3K9me3-HP1 system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42, C57, C60-C61 are strongly supported by genome-wide ChIP-seq data (Figures 11d, 12, Figure 11\u2014figure supplement 3, Figure 12\u2014figure supplements). The pericentromeric enrichment is clearly demonstrated across all chromosomes, and the absence of H3K9me3 and HP1 at these regions is confirmed. The proposed functional replacement of H3K9me3-HP1 (C40) is a reasonable inference but not experimentally validated. The limited enrichment at var genes distinguishes H4K31me1 from the canonical heterochromatin system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Acetylation of H4K31 was predicted to trigger substantial conformational changes in the nucleosome by disrupting water-mediated interactions with DNA and R35. However, X-ray crystallography of the H4Q31 mutant (mimicking acetylation) did not show large structural changes. Alternatively, H4K31ac may increase DNA unwrapping at the nucleosome entry-exit point, facilitating access to chromatin remodelers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 accurately represent the structural predictions and their experimental validation (or lack thereof). C43 is a reasonable prediction based on structural analysis (Figure 1c), C44 correctly cites contradictory crystallographic evidence, and C45 presents an alternative hypothesis from the literature. The evaluation appropriately acknowledges the uncertainty in the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C48",
+      "C55"
+    ],
+    "result": "The authors propose a mechanistic model where H4K31ac relieves nucleosomal repression to facilitate transcriptional machinery access, while H4K31me1 locks nucleosomes in a repressed conformation that may slow RNA Pol II progression and reduce transcription levels. H4K31 methylation would counteract the activating effects of H4K31 acetylation and succinylation by preventing open chromatin conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46, C48, C55 represent mechanistic interpretations based on the observed correlations between modifications and gene expression. While the genome-wide data support the associations, the proposed mechanisms are largely speculative and not directly tested. No experiments demonstrate that H4K31me1 actually slows RNA Pol II or that H4K31ac directly facilitates transcription machinery access. These remain plausible hypotheses requiring further experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C59",
+      "C64"
+    ],
+    "result": "The manuscript reviews prior literature on H4K31 modifications in other organisms, including its role in recruiting yFACT subunit Spt16 in budding yeast, ubiquitylation in human cells affecting transcription elongation, effects of H4K31 substitutions on yeast viability and silencing, succinylation detection in T. gondii, recognition by BRD4 bromodomain, and structural proximity to H3K56.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54, C59, C64 are literature review statements supported by appropriate citations. These provide context for the current findings and demonstrate the versatility of H4K31 modifications across species. The claims accurately represent the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C58"
+    ],
+    "result": "The manuscript discusses prior characterization of P. falciparum heterochromatin and speculates that the lack of H4K31me1 spreading may be due to absence of a competent protein reader that recognizes the PTM and recruits the methyltransferase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56 and C58 are appropriately supported. C56 accurately cites prior literature on P. falciparum heterochromatin characteristics. C58 is clearly presented as speculation to explain the observed limited spreading of H4K31me1, which is a reasonable hypothesis given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "The authors speculate that H4K31 methylation, unlike H3K56ac, may prevent histone exchange and slow histone turnover behind replication forks, contributing to stabilization of newly incorporated nucleosomes in chromatin during DNA replication in metazoans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C65 is clearly speculative and not supported by experimental data in the manuscript. While the mitotic enrichment of H4K31me1 is demonstrated, the proposed role in replication-coupled nucleosome assembly is purely hypothetical and would require direct experimental testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The study demonstrates that H4K31 acetylation and methylation are associated with distinct nuclear functions in T. gondii and P. falciparum, revealing the evolution of distinct epigenetic strategies to organize chromosome regions essential for cell division and gene expression in apicomplexan parasites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are summary statements well-supported by the comprehensive data presented throughout the manuscript. The distinct functions in the two parasites (gene body marking in T. gondii vs. pericentromeric heterochromatin in P. falciparum) are clearly demonstrated by genome-wide ChIP-seq and functional studies. This represents a major conclusion of the work.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,1924 @@
+{
+  "submission": {
+    "id": "9d488e58-78fc-4b63-a0e9-c1d127b14e4f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:00:17.665696Z",
+    "updated_at": "2025-12-01T19:00:17.665696Z"
+  },
+  "content": [
+    {
+      "id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "submission_id": "9d488e58-78fc-4b63-a0e9-c1d127b14e4f",
+      "content_type": "manuscript",
+      "content_text": "# SENP8 limits aberrant neddylation of NEDD8 pathway components to promote cullin-RING ubiquitin ligase function\n\n## Authors\n\n- Kate E Coleman<sup>1</sup> ([ORCID: 0000-0003-4676-4981](https://orcid.org/0000-0003-4676-4981))\n- Mikl\u00f3s B\u00e9k\u00e9s<sup>1</sup>\n- Jessica R Chapman<sup>2</sup>\n- Sarah B Crist<sup>1</sup>\n- Mathew JK Jones<sup>3</sup>\n- Beatrix M Ueberheide<sup>1</sup>\n- Tony T Huang<sup>1</sup> ([ORCID: 0000-0001-9291-5002](https://orcid.org/0000-0001-9291-5002)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Molecular Pharmacology New York University School of Medicine New York United States\n2. Proteomics Laboratory, Division of Advanced Research Technologies New York University School of Medicine New York United States\n3. Molecular Biology Program, Sloan Kettering Institute Memorial Sloan Kettering Cancer Center New York Unites States\n\n\u2020 Corresponding author\n\n## Abstract\n\nNEDD8 is a ubiquitin-like modifier most well-studied for its role in activating the largest family of ubiquitin E3 ligases, the cullin-RING ligases (CRLs). While many non-cullin neddylation substrates have been proposed over the years, validation of true NEDD8 targets has been challenging, as overexpression of exogenous NEDD8 can trigger NEDD8 conjugation through the ubiquitylation machinery. Here, we developed a deconjugation-resistant form of NEDD8 to stabilize the neddylated form of cullins and other non-cullin substrates. Using this strategy, we identified Ubc12, a NEDD8-specific E2 conjugating enzyme, as a substrate for auto-neddylation. Furthermore, we characterized SENP8/DEN1 as the protease that counteracts Ubc12 auto-neddylation, and observed aberrant neddylation of Ubc12 and other NEDD8 conjugation pathway components in SENP8-deficient cells. Importantly, loss of SENP8 function contributes to accumulation of CRL substrates and defective cell cycle progression. Thus, our study highlights the importance of SENP8 in maintaining proper neddylation levels for CRL-dependent proteostasis.\n\n## Introduction\n\nConjugation of the ubiquitin-like (Ubl) protein NEDD8 (neural precursor cell expressed developmentally downregulated protein 8) to target proteins, or neddylation, is a fundamental biological process that controls many key cellular functions, including cell cycle progression, the DNA damage response, and apoptosis. Like ubiquitylation, neddylation is catalyzed through an enzymatic cascade consisting of an E1-activating enzyme complex (NAE1/APPBP1-UBA3), two E2 enzymes (Ubc12/Ube2M and Ube2F) and several E3 enzymes such as Really Interesting New Gene (RING)-box protein 1 (Rbx1) and its close homologue Rbx2 (reviewed in [Soucy et al., 2010; Enchev et al., 2014; Brown and Jackson, 2015]). Additional proteins called DCUN1D1-5 (defective in cullin neddylation, domain containing 1\u20135) have been described in human cells as cofactors for RBX1 and RBX2, which potentiate neddylation activity (Kim et al., 2008; Kurz et al., 2008; Monda et al., 2013). The most well-studied target for NEDD8 conjugation are the cullins (CUL1,\u22122,\u20133,\u22124A,\u22124B,\u22125, and \u22127), which are the scaffold subunits of the largest family of ubiquitin E3 ligases, the cullin-RING ligases (CRLs). NEDD8 transfer from the E2 to a lysine (Lys) residue within the cullin promotes conformational changes that increase the catalytic activity of the CRL, while also blocking the binding of the CRL exchange factor CAND1 (Duda et al., 2008; Saha and Deshaies, 2008; Pierce et al., 2013). Structural changes induced by NEDD8 conjugation to cullin subunits ultimately contribute to the efficient ubiquitylation of downstream CRL substrates and their degradation by the 26S proteasome.\n\nBy inducing CRL activation and assembly in this way, NEDD8 ligation to cullins controls a high proportion of ubiquitylation events in cells (~10\u201320%) (Soucy et al., 2009), making this pathway an attractive target for pharmacological manipulation of protein turnover or proteostasis. An inhibitor of the NEDD8 E1 enzyme, MLN4924, has been recently developed and shown to potently and rapidly suppress neddylation in cells, thereby inhibiting CRL activity. Significantly, preclinical studies using MLN4924 have demonstrated its antitumor activity in several human tumor xenografts and hematological malignancies (Soucy et al., 2009, 2010; Brownell et al., 2010). While the antitumorigenic activity of MLN4924 has been largely attributed to CRL substrates, it is unknown whether non-cullin targets of neddylation could also play important roles in tumorigenesis.\n\nAlthough cullins are the primary substrates for NEDD8 conjugation, more recently several non-cullin neddylation targets have been described. Among this list of proteins are p53 (Xirodimas et al., 2004), E2F1 (Loftus et al., 2012; Aoki et al., 2013), ribosomal protein L11 (Sundqvist et al., 2009), Smurf1 (Xie et al., 2014) and Histone H4 (Ma et al., 2013b). In addition, large-scale proteomic surveys have uncovered several other neddylation substrates both within and outside the CRL pathway (Jones et al., 2008; Xirodimas et al., 2008). However, some of these non-cullin substrates remain to be fully validated as true NEDD8 targets, as these studies relied on overexpression of epitope-tagged NEDD8 constructs as bait. Since NEDD8 conjugation can also occur through the ubiquitylation machinery under these conditions (Hjerpe et al., 2012), it can be difficult to assign bona fide neddylation substrates in such experiments. Another challenge in the identification of non-cullin neddylation targets is the relatively low abundance and transient nature of NEDD8 modification events in cells, limiting neddylation detection at an endogenous level by proteomic approaches.\n\nLike other protein post-translational modifications (PTMs), neddylation is reversible. COP9 signalosome complex subunit 5 (CSN5), a metallo-protease and component of the eight-subunit COP9 signalosome complex (CSN), is the major cullin deneddylase in human cells (Lyapina et al., 2001; Cope, 2002). CSN is specific for neddylated cullins (Lingaraju et al., 2014; Cavadini et al., 2016); however, deneddylase(s) controlling non-cullin neddylated substrates have been poorly defined (Figure 1A). Recently, a cysteine protease called SENP8 (also known as DEN1 or NEDP1) has been characterized that functions distinctly from CSN in deneddylating primarily non-cullin substrates (Chan et al., 2008; Mergner et al., 2015) as well as hyper-neddylated cullins (Mendoza et al., 2003; Wu et al., 2003). SENP8 selectively interacts with NEDD8 and not ubiquitin (Gan-Erdene et al., 2003; Shen et al., 2005), and also plays a redundant role in proteolytic processing of the precursor form of NEDD8 in conjunction with ubiquitin C-terminal hydrolase isozyme 3 (UCHL3) (Wada et al., 1998; Wu et al., 2003). Criteria defining the unique substrate preferences of CSN and SENP8 are still not clear; however, a previous study showed distinct neddylation defects in DEN1null versus CSN5null\u00a0Drosophila larvae, suggesting that the two enzymes have non-overlapping functions (Chan et al., 2008). Moreover, the specific substrates for NEDD8 deconjugation by SENP8, as well as the phenotypic consequences of long-term SENP8 depletion, have not been thoroughly profiled in mammalian cells.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/24325/elife-24325-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematics of the regulation of NEDD8 substrates by modification with either WT- (left panel) or L73P-Nedd8 (right panel), and deneddylation by NEDD8-specific proteases. CSN is the deneddylase responsible for deconjugating NEDD8 from cullin substrates, but proteases regulating deneddylation of non-cullin substrates are largely uncharacterized. (B) Surface representation of NEDD8 (pdb: 1NDD) and details of its C-terminal tail, showing its proteolytic cleavage site and location of the L73P mutation. (C) Recombinant CRL1/Rbx1 was in vitro neddylated by purified His-NEDD8-WT or His-NEDD8-L73P, in the presence of E1 and E2 enzymes and ATP. Reactions were quenched, and recombinant CSN was added at increasing concentrations to monitor the ability of each NEDD8 moiety to be deconjugated from CUL1. OPT (1,10-orthophenatroline, 1 mM) was added to samples containing the highest concentration of CSN (last lane) to completely inhibit CSN activity. (D) FLAG-NEDD8-WT or FLAG-NEDD8-L73P was induced in HeLa-FlpIn-N8 cells using 1 ug/mL doxycycline for 48 hr prior to collection. Whole-cell lysates of untreated or Dox-treated cells were incubated with anti-FLAG beads to purify FLAG-NEDD8-conjugates. Immunoblots of input and IP samples were analyzed for FLAG-NEDD8-modified CUL1 and CUL2. (E) HeLa-FlpIn-N8 cells were treated with or without Dox as in D to induce FLAG-NEDD8-WT or FLAG-NEDD8-L73P, and subsequently incubated with or without the of the CRL inhibitor MLN4924 (5 \u00b5M for 4 hr) before harvesting. Whole-cell extracts were analyzed for FLAG-NEDD8-conjugated CUL1 and CUL2. (F) (left panel) Workflow for expression and purification of FLAG-NEDD8-WT and FLAG-NEDD8-L73P for MS analysis. (right panel) Percentages of total spectral counts detected in FLAG-IPs from cells expressing either FLAG-NEDD8-WT (orange bars) or FLAG-NEDD8-L73P (purple bars). The numbers in the columns indicate actual spectral counts. The IPs were performed on lysates from the same number of cells.\n\nTo capture and enrich for potentially low-level non-cullin neddylated substrates, we employed a strategy to stabilize and trap the \u2018neddylated\u2019 state of proteins by using an ectopically expressed, deconjugation-resistant mutant of NEDD8, as previously performed using uncleavable ubiquitin and SUMO modifiers (B\u00e9k\u00e9s et al., 2011, 2013). The deconjugation-resistant form of NEDD8 was expressed in cells using a doxycycline (Dox)-inducible expression system to minimize the potential of overexpression artifacts, followed by immuno-affinity purification and identification of neddylated substrates by mass spectrometry (MS). Strikingly, we observed enrichment of not only neddylated cullins using this technique but also several novel non-cullin targets, including the NEDD8 E2-conjugating enzyme, Ubc12. In a series of experiments, we confirmed that Ubc12 becomes auto-neddylated both in vitro and in cells, and that Ubc12 and other NEDD8 pathway components form aberrant\u00a0NEDD8-conjugates in the absence of deneddylating activity. Moreover, we identified SENP8, but not CSN, as the deconjugating enzyme responsible for reversing aberrant neddylation of non-cullin substrates. Importantly, SENP8 loss-of-function studies showed that SENP8 is required for proper CRL activation and G1/S phase cell cycle progression. Finally, to identify candidate substrates with altered ubiquitylation status that could contribute to this defective G1/S regulation, we performed an unbiased proteomics screen to compare the relative abundance of ubiquitylated peptides in parental versus SENP8 knockout cells. Using this approach, we uncovered several potentially relevant substrates with reduced ubiquitylation and proteasome-mediated degradation in SENP8-deficient cells that have important roles in cell cycle regulation. Therefore, our findings suggest a novel role for SENP8 in the quality control of the NEDD8 conjugation pathway through prevention of aberrant neddylation of pathway components and demonstrate the functional consequences of perturbing this regulation on CRL activation and cell growth control.\n\n## Results\n\n### Identification of novel neddylation substrates in cells by expression of a deconjugation-resistant NEDD8 mutant\n\nWe have previously demonstrated that mutation of leucine (Leu) 73 in ubiquitin, located at the P4 position of the DUB cleavage site at the C-terminus, to proline (Pro) renders conjugated ubiquitin resistant to cleavage by a wide range of deubiquitinating enzymes (DUBs) (B\u00e9k\u00e9s et al., 2013). The C-termini of Nedd8 and Ub are conserved, where the P4 position in NEDD8 is also a Leu residue. Therefore, to generate a deconjugation-resistant form of NEDD8 to be utilized in the identification of non-cullin neddylation substrates, we engineered the analogous mutation in NEDD8 (L73P) (Figure 1B). To test whether this mutant form of NEDD8 was indeed refractory to deneddylation, we expressed and purified recombinant His-tagged wild-type (WT) NEDD8 and the L73P NEDD8 mutant and used them to in vitro neddylate recombinant CUL1 (and other cullins, data not shown) followed by CSN-mediated deneddylation (Figure 1C). While WT NEDD8 was readily deconjugated from CUL1 with increasing concentrations of CSN in the reaction, the L73P NEDD8 mutant was resistant to cleavage from CUL1 at all CSN concentrations. As expected, the addition of the zinc-chelator ortho-phenanthroline (OPT) to the reaction mixture completely inhibited the metalloprotease activity of CSN, and neither WT nor L73P NEDD8 were cleaved from CUL1 under these conditions (Figure 1C). Collectively, these in vitro studies established NEDD8 L73P as a deneddylation-resistant mutant.\n\nNext, we used NEDD8 L73P as a tool to trap neddylated forms of substrates in cells, purify stabilized NEDD8-conjugates, and identify substrates and neddylation sites by MS. For this purpose, we generated Dox-inducible (Flp-In) HeLa cell lines expressing low levels of either FLAG-NEDD8-WT or FLAG-NEDD8-L73P, as had been previously developed for Ub (B\u00e9k\u00e9s et al., 2013), and used spectral counts to determine the relative abundance of WT- versus L73P-purified NEDD8 substrates. Immunoblot analysis of FLAG-immunoprecipitations (IPs) performed using these cell lines showed that both versions of ectopically expressed NEDD8 could be incorporated into CUL1- and CUL2-NEDD8 conjugates (Figure 1D). We observed increased recovery of FLAG-NEDD8-L73P-modified CUL1 compared to FLAG-NEDD8-WT-conjugated CUL1, likely reflecting the inability of the L73P mutant to be deneddylated in cells (Figure 1D). Consistent with previous reports (Soucy et al., 2009; Brownell et al., 2010), MLN4924 treatment blocked the conjugation of both endogenous NEDD8 and FLAG-NEDD8 to cullin substrates entirely (Figure 1E). Importantly, immunoblot analyses showed that both FLAG-NEDD8-WT and FLAG-NEDD8-L73P were incorporated into CUL1- and CUL2- conjugates at similar levels as endogenous NEDD8 (Figure 1E). Taken together, these experiments show the utility of both the WT and L73P NEDD8 constructs in isolating neddylated cullins and potentially other non-cullin substrates, in a manner that does not involve the spurious effects of NEDD8 overexpression studies.\n\nWe subsequently scaled up and purified both FLAG-NEDD8-WT and FLAG-NEDD8-L73P conjugates in sufficient quantities for MS analysis. (Figure 1F and Figure 1\u2014source data 1). As anticipated, both FLAG-NEDD8-WT and FLAG-NEDD8-L73P immunoprecipitated CUL1, \u22122, \u22124A, and \u22124B, although the relative abundance, based on spectral counting, of these cullin substrates was much higher in the FLAG-NEDD8-L73P IP samples (Figure 1F and Figure 1\u2014source data 1). Interestingly, several non-cullin neddylation targets were identified using this strategy (for a complete list, see Figure 1\u2014source data 1), most notably the NEDD8 E2 conjugating enzyme Ubc12 (Figure 1F) as well as other previously validated substrates such as Histone H4 (Ma et al., 2013b) and ribosomal protein L11 (Sundqvist et al., 2009). Given the particularly high prevalence of Ubc12 peptide spectral matches (PSMs) in the FLAG-NEDD8-L73P IPs, our results prompted us to further investigate Ubc12 as a potential novel neddylation substrate.\n\n### Validation of Ubc12 as a substrate for neddylation\n\nUpon further analysis of our MS results from the FLAG-NEDD8-L73P IP dataset, we determined that the site of NEDD8 conjugation to Ubc12 is Lys3, as we observed a K-\u03b5-GG remnant, characteristic of trypic digestion of either NEDD8 or ubiquitin, at this site (Figure 2A). This Ubc12 peptide was also acetylated at the N-terminus, in agreement with previous observations (Scott et al., 2011). Sequence alignments show that the Lys3 residue of Ubc12 is highly conserved across several eukaryotic orthologs (Figure 2A). Immunoblot analysis of identically prepared FLAG-NEDD8 IPs showed that Ubc12 is modified upon Dox-induced expression by FLAG-NEDD8-L73P, but not when pre-treated with MLN4924, (Figure 2B). suggesting that these represent neddylated Ubc12 species (Figure 2B). To confirm that these modified forms of Ubc12 resulted from NEDD8 conjugation and not ubiquitylation, we compared relative binding of either ubiquitin L73P or NEDD8 L73P to ectopically expressed Ubc12 in HEK 293T cells. Both WT and L73P HA-tagged NEDD8 constructs, but not the analogous WT and L73P HA-tagged Ub constructs, formed conjugates with co-transfected MycFlag-Ubc12 WT in these experiments (Figure 2C). We derived additional Ubc12 constructs to test whether the K3 site could support modification by NEDD8 L73P. As we noted that there were several alternative Lys sites at the N-terminus of Ubc12 that could potentially be modified other than K3 (indicated in the alignments in Figure 2A), we engineered an additional mutant (NK0) in which all N-terminal Lys residues were converted to Arginine (Arg). As shown in Figure 2D, mutations introduced into the NK0-Ubc12 mutant sufficiently blocked modification by co-transfected NEDD8-L73P. Furthermore, restoring a single Lys at position 3 (K3) in the NK0-Ubc12 mutant (N-K3) partially rescued the ability of Ubc12 to form conjugates with NEDD8-L73P (Figure 2D). Altogether, these results provide strong evidence that Ubc12 is a bona fide substrate for neddylation, and that N-terminal Lys sites, including K3, are critical for NEDD8 modification of Ubc12.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/24325/elife-24325-fig2-v1.jpg)\n\n**Figure 2.:** (A) An HCD MS2 spectrum of the doubly charged Ubc12 N-terminal peptide, MIKLFSLK, N-terminally acetylated and K-\u03b5-GG modified on Lys3 (top) and sequence alignment of Ubc12\u00a0N-termini from the indicated species (bottom). The conserved Lys3 residue in the Ubc12 N-terminus identified as a K-\u03b5-GG-modified residue from the MS dataset is highlighted in yellow. Lys residues mutated to Arg in the Ubc12 NK0 mutant are indicated by asterisks. Sequence alignments were generated using Clustal Omega. (B) HeLa-Flp-In-NEDD8 cells were either left untreated or treated with Dox to induce FLAG-NEDD8-L73P expression, and subsequently treated with MLN4924 (5 \u00b5M) for the indicated times. Immunoblots of input and anti-FLAG IP samples were analyzed for modified Ubc12 and CUL1. (C) HA-tagged (WT or L73P) NEDD8 or Ub constructs were co-transfected with MycFlag-Ubc12 in HEK293T cells. Conjugation of either NEDD8 or Ub to Ubc12 was analyzed by reciprocal IPs using either anti-HA or anti-Myc antibodies and immunoblotting. (D) MycFlag-tagged WT, NK0 , or N-K3 (NK0 mutant with K3 restored) Ubc12 constructs were co-transfected with Flag-Nedd8-L73P in HEK293T cells. Modified Ubc12 was analyzed in whole-cell lysates by immunoblotting with anti-Myc antibody. (E) WT or NK0 MycFlag-Ubc12 was co-expressed in HEK293T cells with HA-NEDD8-L73P. Cell lysates were incubated with anti-Myc antibody to IP MycFlag-Ubc12, and input and IP samples were analyzed by immunoblotting with the indicated antibodies. Asterisks signify non-specific bands. (F) WT MycFlag-Ubc12 was transfected into HEK293T cells in the presence or absence of HA-Nedd8-L73P. Anti-Myc antibody was used to IP MycFlag-Ubc12 from cell extracts, and input and IP samples were analyzed by immunoblotting with the indicated antibodies.\n\nIt was previously shown that the acetylated N-terminal Met in Ubc12 interacts with a hydrophobic pocket in the co-E3, DCN1 (DCUN1D1 in human cells), to promote cullin neddylation (Scott et al., 2011). Therefore, we sought to determine whether neddylation at the N-terminus of Ubc12 could also impact binding to DCN1 as well as other NEDD8 pathway components. We transiently transfected cells with either Flag-tagged WT or NK0 Ubc12 in the presence of HA-NEDD8-L73P and performed co-IPs in the presence of co-expressed HA-NEDD8-L73P to compare their relative interaction to DCN1 and other factors. Consistent with our previous experiments, only the WT Ubc12 construct, but not the NK0 mutant, could support modification with HA-NEDD8-L73P, which likely contributed to reduced interaction to DCN1 and Cul3 (Figure 2E). Consistently, WT Ubc12 co-purified with more DCN1 when it was not neddylated by HA-NEDD8-L73P co-expression (Figure 2F). Collectively, these results suggest that N-terminal neddylation of Ubc12 likely weakens binding to DCN1, which in turn may influence downstream NEDD8 pathway function.\n\n### SENP8 deneddylates Ubc12\n\nBased on our observation that Ubc12 neddylation is stabilized by the deconjugation-resistant FLAG-NEDD8-L73P mutant (Figure 2C), we predicted the presence of a Ubl protease that selectively deconjugates neddylated Ubc12 in cells. To identify the protease responsible for deneddylating Ubc12, we depleted cells for either of the two known deneddylating enzymes (CSN and SENP8) and examined effects on Ubc12 neddylation. Treatment of cells with siRNAs targeting SENP8, but not CSN5, resulted in increased levels of Ubc12 conjugates (Figure 3A). These results were corroborated by CRISPR/Cas9-mediated knockout of endogenous SENP8 using multiple sgRNA sequences in different cell lines (Figures 3B and 5B). To confirm that these modified forms of Ubc12 are NEDD8-conjugated, we additionally performed IPs for endogenous Ubc12 in WT and SENP8 knockout HEK293T cells. In immunoblot analyses of IP samples, probing with antibodies against Ubc12 and NEDD8 detected a band of similar molecular weight corresponding to di-neddylated Ubc12 in both SENP8 knockout cell lines, but not the parental cells (Figure 3\u2014figure supplement 1A). Additionally, higher molecular weight Ubc12 NEDD8-conjugates were no longer observed in either siRNA-depleted (Figure 3\u2014figure supplement 1B) or CRISPR-generated SENP8-deficient cells (Figure 3\u2014figure supplement 1C) following treatment with MLN4924. To determine whether SENP8 can directly deconjugate neddylated Ubc12, we utilized an in vitro deneddylation assay using purified components. As demonstrated previously (Huang et al., 2005), we observed that Ubc12 undergoes auto-neddylation when incubated with the E1 enzyme, ATP, and recombinant NEDD8 (WT or L73P) (Figure 3C). We also showed that Ubc12 auto-neddylation occurs in cis via its own catalytic Cys residue, as the catalytically inactive mutant of Ubc12 (C111A) is not neddylated in vitro (Figure 3\u2014figure supplement 2A), even in the presence of additional WT Ubc12 or when transfected in cells (Figure 3\u2014figure supplement 2B). This modification was removed when recombinant SENP8 was added to reactions containing WT NEDD8, but not the L73P mutant (Figure 3C). Moreover, in titration experiments using different concentrations of recombinant SENP8 or CSN proteases, we further showed that NEDD8 deconjugation from auto-neddylated Ubc12 only occurs in the presence of SENP8, but not CSN (Figure 3D). Taken together, these findings establish SENP8 as the primary protease that regulates Ubc12 auto-neddylation both in vitro and in cells.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/24325/elife-24325-fig3-v1.jpg)\n\n**Figure 3.:** (A) HeLa cells\u00a0were treated with control, CSN5, or SENP8 siRNAs for 48 hr prior to harvesting. Whole-cell lysates were analyzed by immunoblotting for the indicated proteins. (B) SENP8 knockout clones (#1 and #2) of HEK293T cells were derived as specified in Materials and methods. Cell lysates were analyzed by immunoblotting with the indicated antibodies. (C) Recombinant Ubc12 was auto-neddylated in vitro in the presence of E1 enzyme, ATP, and either WT or L73P His-tagged NEDD8. Reactions were quenched, and SENP8 was added to deneddylate Ubc12-NEDD8 conjugates. Deneddylation of recombinant Ubc12 was analyzed by SDS-PAGE and SYPRO staining. (D) Ubc12 was in vitro neddylated as in (C) in the presence of WT His-tagged NEDD8. Decreasing concentrations of either recombinant SENP8 or CSN were added to quenched reactions, and Ubc12 deneddylation was assessed by SDS-PAGE and SYPRO staining.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24325/elife-24325-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Whole-cell lysates of parental and SENP8-deficient HEK 293 T cells were incubated with or without Ubc12 antibody, and immune complexes were captured using Protein G beads. Input and IP samples were analyzed for NEDD8 or Ubc12 conjugates. Non-specific band is indicated by *. (B) HEK293T cells were treated with the indicated siRNAs for 48 hr and subsequently treated with or without 5 \u00b5M MLN4924. Cells were harvested for immunoblotting analysis at the indicated times following MLN4924 treatment. (C) CRISPR-generated SENP8 knockout cells were treated for the specified times with 5 \u00b5M MLN4924 and harvested for immunoblotting analysis.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/24325/elife-24325-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) In vitro neddylation reactions were performed with WT, NK0, or catalytically inactive (C111A) Ubc12 in the presence of E1, WT NEDD8, and ATP. As controls, reactions were performed with Ubc12 constructs only, E1 only, and untagged Ubc12 constructs. NEDD8 modification of Ubc12 was assessed by SDS-PAGE and SYPRO staining. (B) HA-tagged WT or L73P NEDD8 constructs were co-expressed with MycFLAG-tagged WT or C111A Ubc12 constructs in HEK293T cells. Ubc12 conjugates were analyzed by immunoblotting with anti-Myc antibody.\n\n### Proteomic analysis reveals aberrantly neddylated substrates in SENP8 knockout cells\n\nWe considered the possibility that SENP8 may play a role in restricting neddylation of other NEDD8 conjugation pathway regulators in addition to Ubc12. Supporting this notion, immunoblotting analysis of whole-cell extracts with an anti-NEDD8 antibody revealed a dramatic increase in protein neddylation in SENP8 knockout cells in comparison to control cells (Figure 4A). This suggests that SENP8 is likely to restrict aberrant or hyper-neddylation of non-cullin substrates in normal steady-state conditions.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/24325/elife-24325-fig4-v1.jpg)\n\n**Figure 4.:** (A) Lysates from parental and CRISPR-generated SENP8 knockout HEK293T cells were immunoblotted for the indicated proteins. For this figure and all subsequent figures, MCM7 serves as a loading control. (B) Workflow for identification of K-\u03b5-GG-remnant containing peptides in WT and SENP8 knockout cells by antibody-based enrichment and quantitative SILAC mass spectrometry. (C) Scatter plot showing Log2 ratios of all K-\u03b5-GG sites identified in both the forward and reverse SENP8 KO:WT SILAC samples, prepared as in B. K-\u03b5-GG sites of interest identified in both replicates are highlighted in red. Line of identity with slope\u00a0=\u00a01 is shown for reference. (D) Log2 ratios of K-\u03b5-GG modification sites highlighted in C. Error bars represent SEM.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24325/elife-24325-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Quantification of K-\u03b5-GG sites, peptides, proteins, and peptide spectrum matches (PSMs) in replicates 1 and 2 of Figure 4B. (B) Venn diagram showing degree of overlap between K-\u03b5-GG remnant peptides quantified in replicates 1 and 2. (C) Analysis of Gene Ontology (GO) annotations of K-\u03b5-GG remnant peptides with a SILAC ratio (SENP8 KO/WT) of\u00a0>2 from replicates 1 and 2 of Figure 4B. GO term analysis was performed using the DAVID Gene Functional Classification Tool (Huang et al., 2009b, 2009c).\n\nTo identify novel substrates for deneddylation by SENP8, we utilized an unbiased proteomic approachto quantify differences in NEDD8-derived di-Glycine (K-\u03b5-GG) remnants on trypsinized peptides from WT or SENP8 knockout cell lysates. For this purpose, we employed a previously developed strategy that involves antibody-based enrichment of peptides with the K-\u03b5-GG-remnant produced by tryptic digestion of proteins modified by NEDD8, ubiquitin, or the ubiquitin-like modifier ISG15 (Xu et al., 2010; Emanuele et al., 2011; Kim et al., 2011; Udeshi et al., 2013). As shown in the workflow schematic in Figure 4B, WT and SENP8 knockout HEK293T cells were alternatively labeled with light and heavy isotopes using the stable isotope labeling by amino acids in cell culture (SILAC) method (Ong and Mann, 2006), and subsequently lysed and mixed together at a 1:1 ratio based on protein concentration. The mixed lysate was then subjected to tryptic digestion and antibody-based enrichment for K-\u03b5-GG remnants prior to MS analysis. Two biological replicates are plotted in in Figure 4C comparing the SILAC ratios of all K-\u03b5-GG remnant peptides identified from two alternative labeling scheme experiments (forward and reverse SILAC) (see also Figure 4\u2014source data 1). We quantified 777 K-\u03b5-GG remnant peptides that were identified in both replicates (Figure 4\u2014figure supplement 1).\n\nOur quantitative analysis revealed large increases in the relative abundance of several individual K-\u03b5-GG-modified peptides in SENP8 knockout cells , highlighted in Figure 4C and D. Interestingly, many of these K-\u03b5-GG modification changes were observed for proteins involved in the NEDD8 conjugation pathway, including not only Ubc12, but also Ube1C, DCUN1D5, and NEDD8 itself (K11 and K48). We also observed a significant decrease in the NEDD8 modification of CUL5in the SENP8-deficient cell line (Figure 4C and D). Overall, these results provide further evidence to suggest that SENP8 prevents aberrant or hyper-neddylation on a global level of multiple proteins within the NEDD8 conjugation network.\n\nNext, we determined whether NEDD8 conjugation to the\u00a0NEDD8 pathway components identified by MS could be observed in SENP8-deficient cells by immunobloting (Figure 5A). Using lysates from two different cell lines (HEK293T and HeLa) in which SENP8 knockout clones were generated using multiple sgRNA sequences, we monitored changes in NEDD8 conjugation levels in target substrates based on the predicted mass shift for NEDD8 modification (9 kDa). We observed evidence for increased levels of NEDD8 conjugates, and in several cases even di-neddylated (N82) species, of several NEDD8 pathway constituents in all SENP8-deficient cell lines tested, including NAE1 (APPBP1)-UBA3, Ubc12, and DCUN1D1 and DCUN1D5 (Figure 5B). In agreement with our analyses in Figure 2, we also showed that relative binding of endogenous Ubc12 to DCN1 was reduced in the SENP8-deficient background in comparison to SENP8-corrected cells, suggesting that the aberrant neddylation observed in SENP8 knockout cells may contribute to a weakened Ubc12-DCN1 interaction (Figure 5\u2014figure supplement 1A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/24325/elife-24325-fig5-v1.jpg)\n\n**Figure 5.:** (A) Schematic of the NEDD8 conjugation pathway. Dotted arrows represent potential points of regulation by SENP8-mediated deneddylation. Orange circle represents NEDD8. (B and C) Cellular extracts from parental and CRISPR-generated SENP8 knockout HEK293T (left) and HeLa (right) cells were subjected to immunoblot analysis for (B) NEDD8 pathway components and (C) cullin subunits. NEDD8-conjugated substrates are indicated. MCM7 serves as a loading control. (D) Parental or SENP8 knockout HEK293T cells were transfected with empty vector (EV) or a FLAG-SENP8-WT construct and analyzed for NEDD8-conjugated proteins by immunoblotting. As a control, samples from each cell line were treated with 0.3 \u00b5M MLN4924 for 24 hr to completely inhibit neddylation of the indicated proteins.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24325/elife-24325-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) SENP8-deficient HEK293T cells were transfected with either EV or SENP8 WT plasmids, harvested, and endogenous Ubc12 was immunoprecipitated from lysates using anti-Ubc12 antibody. Relative binding to endogenous DCN1 was assessed by immunoblotting. (B) Parental or SENP8 knockout HEK293T cells were transfected with Ubc12 WT, Ubc12 NK0, and DCN1 plasmids, or treated with 5 \u00b5M MLN4924 for 1 hr as indicated. Cell lysates were analyzed by immunoblotting with the antibodies shown.\n\nIntriguingly, we also observed a decrease in total levels of the E2 conjugating enzyme UBE2F in the SENP8 knockout cell lines (Figure 5B). A previous study demonstrated that while Ubc12 targets all other cullin subunits for activation, UBE2F has a unique preference for CUL5 neddylation (Huang et al., 2009a). Thus, the decreased abundance of UBE2F in the SENP8 knockout cell lines could potentially explain the decreased presence of K-\u03b5-GG-modified CUL5 peptides in our quantitative MS experiments (Figure 4C and D). To examine cullin neddylation in closer detail, we performed immunoblotting analysis for CUL1, \u22122,\u20133, \u22124A, and \u22125 in WT and SENP8 knockout clones. Consistently, we observed a marked decrease in CUL5 as well as CUL1 neddylation in SENP8-deficient cells, whereas the neddylation of other cullin subunits was not substantially impacted (Figure 5C). Importantly, the neddylation defects observed in SENP8 knockout cells were reversed by complementation with ectopically\u00a0expressed\u00a0WT SENP8 (Figure 5D). We also observed a restoration of CUL1 and CUL5 neddylation levels when we overexpressed WT Ubc12 and DCN1 constructs in SENP8-deficient cells, further suggesting that loss of SENP8 affects optimal Ubc12/DCN1 function (Figure 5\u2014figure supplement 1B). These combined quantitative MS and immunoblotting analyses strongly indicate that SENP8 depletion contributes to a variety of neddylation abnormalities in cells.\n\n### SENP8 depletion contributes to decreased CRL activity and altered cell cycle progression\n\nBased on the decreased CUL1 and CUL5 neddylation upon loss of SENP8, we investigated the functional consequences of SENP8 depletion on the degradation of downstream CRL substrates. As several known CUL1 substrates play critical roles in controlling cell proliferation, we first analyzed the effects of SENP8 loss on cell cycle distribution, which can be monitored through flow cytometry analysis of DNA content. For these studies, we used SENP8-deficient and SENP8 WT-corrected HeLa cells, generated as described in Materials and methods (Figure 6A). Notably, we observed that the SENP8-deficient cells showed accelerated cell growth in comparison to parental HeLa cells (Figure 6B). To determine whether alterations in cell cycle distribution could account for this difference in overall growth rate, we performed analysis of DNA synthesis (measured by EdU incorporation) versus DNA content (measured by DAPI staining) by flow cytometry. Strikingly, we found that loss of SENP8 contributes to notable changes in the cell cycle profiles of asynchronously dividing cells, including a reduction in the subpopulation of G1 cells, and a concomitant increase of cells in S and G2/M phases (Figure 6C and D). Importantly, the reduction in G1 phase cells observed in SENP8-deficient cells was partially rescued through complementation with WT SENP8 (Figure 6C and D).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/24325/elife-24325-fig6-v1.jpg)\n\n**Figure 6.:** (A) SENP8 knockout (lanes 2\u20134) and SENP8-rescued (lanes 5\u20136) HeLa cell lines were generated as specified in Materials and methods. Whole-cell lysates were analyzed by immunoblotting with the indicated antibodies. (B) Parental and SENP8 knockout HeLa cells were plated and stained with crystal violet at the indicated times. OD590 was measured to calculate relative cell numbers at each time point for triplicate samples. Error bars represent SEM. p Values were calculated for the 96 hr time point by paired Student\u2019s t-test. For all figures, asterisks represent either *p<0.05 or **p<0.01. (C and D) Parental and SENP8 knockout HeLa cells were pulse-labeled with 10 \u00b5M EdU for 30 min and analyzed by flow cytometry for DNA synthesis (EdU) and DAPI staining for DNA content (10,000 events per sample). Percentages of cells in G1, S, and G2/M phases are graphed for three biological replicates. Error bars indicate SEM. p Values were calculated for G1 populations by paired Student\u2019s t test. (E) Parental, SENP8-deficient, and SENP8-rescued HeLa cells were synchronized in prometaphase by thymidine-nocodozole block, collected by mitotic shake-off, and released into fresh media for the indicated times. Percentages of EdU-positive cells from three biological replicates were analyzed at each time point following nocodozole release. Statistical significance was calculated using a paired Student\u2019s t test. Error bars indicate SEM.\n\nTo determine whether SENP8 loss affects the timing with which cells progress through the G1/S transition, we additionally synchronized cells in prometaphase by sequential thymidine and nocodozole blocks, and released cells into fresh media for times corresponding to G1 (2\u20136 hr) or S phase (6\u201310 hr). Entry into S phase was measured by pulse-labeling cells with EdU prior to collection (a marker for nascent DNA synthesis) and flow cytometry analysis. Interestingly, while EdU incorporation normally begins at 6\u20138 hr following release from nocodozole in the parental HeLa cell line, the accumulation of EdU positive cells occurs earlier at 4\u20136 hr in SENP8 knockout cells (Figure 6E). This premature EdU incorporation could be partially reversed by complementation with wild-type SENP8 (Figure 6E). Collectively, these results show that SENP8 function is important in maintaining proper cell growth and G1/S cell cycle progression.\n\n### SENP8-deficient cells show altered protein ubiquitylation levels and increased stability of key substrates involved in cell cycle regulation\n\nAs our results indicate reduced cullin neddylation and function in SENP8-deficient cells, we next sought to identify relevant CRL substrates with altered ubiquitylation and stability in these cells that could potentially contribute to the observed cell growth and proliferation defects. To identify and characterize these proteins in an unbiased manner, we again utilized the SILAC-MS and K-\u03b5-GG remnant peptide enrichment strategy as in Figure 4B, but this time both WT and SENP8-deficient HEK293T cells were treated with MG132 prior to harvesting to block proteasome-mediated degradation of ubiquitylated substrates (Figure 7A). Since K-\u03b5-GG remnants are also produced following tryptic digestion of ubiquitylated proteins, K-\u03b5-GG profiling and SILAC-MS analysis of MG132-treated cells should allow for the quantification of differentially ubiquitylated substrates in addition to neddylation targets in SENP8 knockout cells. The SILAC-MS analysis was done using two biological replicates (Figure 7B and Figure 7\u2014figure supplement 1). Interestingly, K-\u03b5-GG-modified peptides from proteins involved in cell proliferation were relatively more abundant in WT cells versus SENP8 knockout cells (Figure 7C and Figure 7\u2014figure supplement 1D), indicative of enhanced ubiquitylation of these targets. Importantly, these same K-\u03b5-GG peptides were either completely undetected or of low abundance in the untreated SILAC datasets from Figure 4B, as would be expected for MG132-sensitive substrates (Figure 7C, see also Figure 7\u2014source data 1). Notable targets with reduced ubiquitylation status in SENP8 knockout cells include substrates of the Cul1-based Skp1/Cul1/F-box protein (SCF)\u03b2TRCP E3 ubiquitin ligase complex, such as Cdc25A (Donzelli et al., 2002; Busino et al., 2003; Jin et al., 2003), UHRF1 (ICBP90) (Chen et al., 2013), and \u03b2-catenin (Latres et al., 1999; Walker et al., 2015), as well as other proteins identified as CRL substrates in previously published screens (Yen and Elledge, 2008; Emanuele et al., 2011).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/24325/elife-24325-fig7-v1.jpg)\n\n**Figure 7.:** (A) Workflow for identification of K-\u03b5-GG-modified peptides in MG132-treated WT and SENP8 knockout cells by antibody-based enrichment and quantitative SILAC-MS. Light- and Heavy-labeled HEK293T cells were treated with 10 \u00b5M of the proteasome inhibitor MG132 for 2 hr prior to harvesting and further processing. K-\u03b5-GG-remnant-containing peptides of interest in (C) are highlighted in red. (C) Scatter plot showing Log2 ratios of all K-\u03b5-GG sites identified in both the forward and reverse WT: SENP8 KO MG132-treated SILAC samples, prepared as in A. Line of identity with slope\u00a0=\u00a01 is shown for reference. (D) Log2 ratios of selected K-\u03b5-GG modification sites in untreated versus MG132-treated SILAC samples. Absence of bars indicates that a particular K-\u03b5-GG modification site was not detected. K-\u03b5-GG sites that were detected in only one of the two replicate samples are indicated by arrows. Error bars represent SEM. (C) Parental and SENP8 knockout HeLa cells were treated with 30 \u00b5g/ml cycloheximide (CHX) for the indicated times and subjected to immunoblot analysis for Cdc25A levels. As a control, cell lines were treated with 10 \u00b5M of the proteasome inhibitor MG132 for 1.5 hr. Percentages of Cdc25A remaining were quantified in the parental and CRISPR knockout cell lines by densitometry analysis using ImageJ software. (D) Relative levels of CRL substrates were analyzed in lysates from parental and SENP8-deficient HeLa cells by immunoblotting analysis. (E) Parental and SENP8 knockout HeLa cells were synchronized in prometaphase by sequential thymidine and nocodozole blocks, released into fresh media, and collected at the specified times. Cell lysates were subjected to immunoblotting analysis for the indicated proteins.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24325/elife-24325-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Quantification of K-\u03b5-GG sites, peptides, proteins, and PSMs in replicates 1 and 2 of Figure 7B. (B) Venn diagram showing degree of overlap between K-\u03b5-GG remnant peptides quantified in replicates 1 and 2 (C) Venn diagram comparing overlap between all K-\u03b5-GG-remnant containing peptides recovered from untreated (Figure 4B) and MG132-treated (Figure 7B) SILAC datasets. (D) Total PSMs detected from untreated (Figure 4B) and MG132-treated (Figure 7B) SILAC datasets for selected proteins of interest. Error bars represent SD. (E) Analysis of Gene Ontology (GO) terms of K-\u03b5-GG remnant peptides with a SILAC ratio (WT/SENP8 KO) of\u00a0>1.5 from replicates 1 and 2 of Figure 7B. GO term analysis was performed using the DAVID Gene Functional Classification Tool (Huang et al., 2009b, 2009c).\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/24325/elife-24325-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A) Parental and SENP8 knockout HeLa cells were treated with 30 \u00b5g/ml cycloheximide (CHX) for the indicated times and subjected to immunoblotting analysis for Set8 and UHRF1 levels. As a control, cell lines were treated with 10 \u00b5M of the proteasome inhibitor MG132 for 1.5 hr. Percentages of Set8 and UHRF1 remaining were quantified in the parental and CRISPR knockout cell lines by densitometry analysis using ImageJ software. (B) Parental and SENP8-deficient HEK293T cells were treated with 10 \u00b5M of MG132 for the specified times prior to harvesting for immunoblotting analysis.\n\nTo further explore whether the stability of relevant CRL substrates is impacted by SENP8 loss, we used cyclohexmide treatment to block de novo protein synthesis (Figure 7D and Figure 7\u2014figure supplement 2A) and compared total protein levels in asynchronous WT and SENP8 knockout cells by immunoblotting (Figure 7E). SENP8\u00a0deficiency results in the prolonged half-life of Cdc25A in cycloheximide chase assays, a protein which normally exhibits very rapid turnover in human cells (Busino et al., 2003) (Figure 7D). SENP8 loss also contributes to the reduced accumulation of higher molecular weight species of Cdc25A following MG132 treatment, indicative of decreased Cdc25A polyubiquitylation in comparison to WT cells. (Figure 7\u2014figure supplement 2B). Furthermore, asynchronous SENP8-deficient cells show increased total levels of proteins identified by our MS screen, as well as other key substrates of the SCFSkp2, CRL4Cdt2, and SCFFbw7 E3 ubiquitin ligases with involvement in DNA replication and cell cycle control. These proteins include the origin licensing factor Cdt1 (Li et al., 2003; Jin et al., 2006; Nishitani et al., 2006), the histone H4 lysine 20 monomethylase Set8 (PR-Set7) (Abbas et al., 2010; Centore et al., 2010; Wu et al., 2010), the cyclin-dependent kinase (CDK) inhibitor p21 (Bornstein et al., 2003; Abbas et al., 2008) (Figure 7E) and the regulatory cyclin for CDK2, Cyclin E1 (Koepp et al., 2001; Hao et al., 2007).\n\nConsidering the cell cycle regulatory roles of some of the ubiquitylated substrates identified in our SILAC-MS screen above (see Discussion for more details), we additionally monitored substrate levels in synchronized cells to determine downstream consequences on G1/S phase progression. For this purpose, we performed the same nocodozole-release experiment as in Figure 6E in parental and SENP8-deficient cells, and analyzed relative levels of cyclins and other G1/S regulatory proteins by immunoblotting. Notably, the characteristic G1/S degradation patterns of both Cdc25A and UHRF1, identified from our SILAC-MS screen in Figure 7B, were substantially altered in SENP8-deficient cells (Figure 7F). Accompanying the increased stability of these substrates, we found other evidence to support premature S phase entry in SENP8-deficient cells, such as increased levels of the E2F targets Cyclin E1 and Cyclin A2, and decreased accumulation of the G1 cyclin Cyclin D1 and the CDK inhibitor p27 (Resnitzky et al., 1994; Soucek et al., 1997; Sigl et al., 2009; Yuan\u00a0et al., 2014) (Figure 7F). Thus, we speculate that the increased stabilization of CRL substrates such as Cdc25A, UHRF1, and probably several other factors underlie the accelerated S phase entry and loss of proper G1/S phase regulation in SENP8-deficient cells.\n\n## Discussion\n\nIn this study, we developed a novel strategy to identify new non-cullin neddylation targets, adding to our current understanding of cellular roles for NEDD8 conjugation. Using a deconjugation-resistant FLAG-NEDD8-L73P mutant, we were able to isolate several NEDD8-conjugated proteins in cells for identification by MS (Figure 1), several of which were also found in previous analyses using ectopically-expressed NEDD8 (Jones et al., 2008; Xirodimas et al., 2008). Our system provides an advantage over previous proteomic approaches in that expression of even relatively low levels of the FLAG-NEDD8-L73P is sufficient to enable stabilization and IP of neddylated proteins for MS analysis, thus avoiding potential artificial effects of NEDD8 overexpression (Xirodimas et al., 2008; Kim et al., 2011; Hjerpe et al., 2012). This feature aided our detection of several NEDD8-conjugates unique to this study, including MCM7, DDB1, Rab14, FEM1C, RNF187 and others (see Figure 1\u2014source data 1 for complete list). Future work will be needed to further validate these as true neddylation substrates and functionally characterize these newly identified NEDD-conjugates in cells. Nevertheless, our MS dataset provides a valuable resource to expand upon previous studies of the NEDD8-modified proteome. Recently, several criteria for validation of bona fide neddylation substrates have been delineated (Enchev et al., 2014). In light of our current findings, we propose that identifying the physiological deneddylase could be added to these criteria to show potential dynamic and reversible neddylation of target substrates.\n\nWe identified and characterized the NEDD8 E2 conjugating enzyme Ubc12 as a novel substrate for auto-neddylation both in vitro and in cells (Figure 2). Through a combination of both MS-based analysis and Ubc12 Lys site mutagenesis, we identified the site of Ubc12 NEDD8 conjugation at its extreme N-terminus (K3). This modification is distinct from the site of Ubc12~NEDD8 thioester intermediate formation, occurring when NEDD8 is transferred from the active site of the E1 to the E2 active site Cys residue during the NEDD8 conjugation reaction (Huang et al., 2007). We have also shown that Ubc12 neddylation is sensitive to MLN4924 treatment and is dependent on the catalytic Cys residue of Ubc12. NEDD8 modification at the N-terminus of Ubc12 contributes to reduced DCN1 binding and consequently altered CRL activities, although the mechanism by which this occurs is still unclear. One possibility is that the NEDD8 modification could directly impede the initial interaction between the N-terminally acetylated Ubc12 and the hydrophobic binding pocket of DCN1 (Scott et al., 2011). Alternatively, NEDD8 modification could occur on pre-formed Dcn1-Ubc12 complex to induce a conformational change, leading to dissolution of the complex. Further in vitro analyses using purified components will be required to discriminate between these possibilities. Unexpectedly, from our SILAC-MS analysis (Figure 4), we identified additional components within the NEDD8 pathway that can form NEDD8-conjugates, including the E1 subunits UBA3 (UBE1C) and NAE1 (APPBP1), as well as the DCNLs DCUN1D1 and DCUN1D5. Future structural and biochemical work will be necessary to better understand the functional roles of these individual NEDD8 modifications in regulating the efficiency of NEDD8 conjugation to cullin and non-cullin substrates.\n\nFurthermore, we identified the NEDD8-specific cysteine protease, SENP8, as the deneddylase that deconjugates NEDD8 from Ubc12 and other NEDD8 pathway components in human cells. Generation of CRISPR-derived knockout cell lines allowed us to profile effects of SENP8 depletion on global neddylation changes through MS-based proteomics (Figure 4) and immunoblot analysis of NEDD8 conjugates (Figure 5). These analyses revealed that SENP8 deneddylating activity is important to inhibit the aberrant neddylation of Ubc12 and other NEDD8 pathway components in cells (Figures 4 and 5). We also uncovered several previously uncharacterized non-cullin neddylation substrates in the SENP8 knockout cells (see Figure 4\u2014source data 1 for complete list), complementing our MS analyses using L73P-NEDD8 in Figure 1F.\n\nSeveral adverse phenotypic consequences occur in SENP8 knockout cells, including decreased efficiency of NEDD8 conjugation to cullins (primarily CUL1 and CUL5), decreased CRL activity, and increased stabilization of CRL substrates, summarized in Figure 8. Accompanying these deficiencies, SENP8 knockout cells also showed aberrant G1/S cell cycle progression and accelerated cell growth (Figure 6). Interestingly, these cell cycle alterations partially phenocopy previously reported defects associated with the loss of either Cul1 (Dealy et al., 1999; Wang et al., 1999; Chen and Li, 2010) or Cul5 function (Burnatowska-Hledin et al., 2001; Buchwalter et al., 2008; Bradley et al., 2010; Ma et al., 2013a; Willis et al., 2017). Through an unbiased proteomic screen in which we enriched for K-\u03b5-GG remnant-containing peptides in MG132-treated cells, we were able to identify several candidate substrates with deregulated ubiquitylation status and stability in the SENP8 knockout cells that could potentially contribute to G1/S progression defects. One prominent example is the SCF\u03b2TrCP substrate Cdc25A. Cdc25A acts as a major regulator of both the G1/S and G2/M cell cycle transitions by dephosphorylating and activating Cyclin E/Cdk2 and Cyclin B/Cdk1 complexes, respectively (Strausfeld et al., 1991; Blomberg and Hoffmann, 1999). Several reports have observed shortening of G1 phase and increased cyclin E- and cyclin A-associated kinase activity following overexpression of Cdc25A (Blomberg and Hoffmann, 1999; Sexl et al., 1999). Therefore, the increased total levels (Figure 7E) and impaired degradation of Cdc25A during interphase (Figure 7F) observed in SENP8 knockout cells could potentially play a significant role in promoting the unscheduled dephosphorylation of CDK complexes and accelerated cell cycle progression phenotypes.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/24325/elife-24325-fig8-v1.jpg)\n\n**Figure 8.:** A model depicting the role of SENP8 in regulating reversible neddylation of NEDD8 conjugation pathway components.\n\nOther SCF\u03b2TrCP substrates with differential ubiquitylation status in SENP8 knockout cells identified through our SILAC-MS screen (Figure 7B) were \u03b2-catenin and UHRF1. Aberrant ubiquitylation and degradation of \u03b2-catenin in SENP8-deficient cells may have a significant influence on cell growth by affecting transcription of downstream Wnt target genes such as c-Myc and Cyclin D1 (He et al., 1998; Clevers and Nusse, 2012). UHRF1 (ICBP90), an E2F1 target, also plays a critical role in controlling the G1/S transition by methylating and suppressing certain tumor suppressor genes (Unoki et al., 2004; Jeanblanc et al., 2005; Alhosin et al., 2011; Taylor et al., 2013; Mudbhary et al., 2014). Interestingly, UHRF1 has been shown to bind to the methylated promoter region of the p14ARF tumor suppressor (Unoki et al., 2004), which we also found was significantly downregulated in SENP8-deficient cells (Figure 7E and F). Whether the elevated UHRF1 levels in SENP8 knockout cells account for this reduced expression of p14ARF is unclear. However, deregulated p14ARF levels may have a significant impact on the accelerated G1/S progression in SENP8 knockout cells, as p14ARF plays a critical role as a tumor suppressor protein by blocking mouse double minute (MDM2)-induced degradation of p53 (Stott et al., 1998), and inhibiting E2F transcriptional activity (Eymin et al., 2001). The combined effects of p14ARF levels, deregulated CRL substrates identified in our SILAC-MS screen (Figure 7B), and undiscovered substrates (including unknown CUL5 targets, which are largely uncharacterized) are likely to contribute to the deregulated cell cycle progression observed in SENP8-deficient cells.\n\nIt is also apparent from our studies that the decreased CRL function accompanying SENP8 loss does not affect all CRL substrates uniformly and is likely to have substrate-specific effects. For example, SENP8 depletion does not entirely phenocopy the effects of complete inhibition of CRL activity following MLN4924 treatment, as we did not see a significant increase in cells with\u00a0>4C DNA content (indicative of cells undergoing multiple rounds of replication without cell division, or re-replication) or induction of a DNA damage response in SENP8 knockout cells (data not shown). Similarly, using a CSN5-specific inhibitor developed by Novartis, it was recently shown that CSN inhibition does not have pleiotropic effects on all CRL substrates as MLN4924 treatment does (Schlierf et al., 2016), but results in substrate-specific stabilization. This effect was shown to be dependent on the auto-ubiquitylation of unique substrate recognition modules of CRLs following sustained neddylation and activation of CRL complexes. It is likely that SENP8 depletion has similar substrate-specific effects related to the dynamics of CRL activation and substrate-adapter auto-ubiquitylation influenced via aberrant neddylation of Ubc12.\n\nAn outstanding question from our study is concerning the biological role for auto-neddylation of NEDD8 pathway components: Is auto-neddylation simply a consequence of prolonged SENP8 depletion, or does it also occur in physiological conditions as a feedback mechanism regulating overstimulation of the NEDD8 pathway? Several recent studies have observed a correlation between overactivation of NEDD8 pathway components, including NEDD8, UBA3, NAE1, and Ubc12, with cancer progression and poor prognosis in human lung cancers (Li et al., 2014), colorectal cancers (Xie et al., 2014), and glioblastomas (Hua et al., 2015). Thus, auto-neddylation within the NEDD8 pathway may represent a deliberate quality control mechanism to limit adverse consequences associated with elevated NEDD8 conjugation and CRL activity. Consistent with this notion, we observed in our own study that NEDD8 conjugation to Ubc12 and other components occurs at defined Lys residues, which are evolutionarily conserved across species. If auto-neddylation of NEDD8 pathway components does in fact occur upon hyper-activation of the neddylation machinery in vivo, this also raises the question of how SENP8 deneddylating activity is regulated under such circumstances. Furthermore, what defines the unique substrate preferences of SENP8 versus those of CSN, the other major deneddylating enzyme in human cells? These issues and others will require further interrogation of SENP8 regulation to resolve. Nevertheless, our study characterizes the SENP8 protease as a key regulator of the NEDD8 pathway, implicating SENP8 as a potential pharmacological target to control CRL-mediated processes in cells.\n\n## Materials and methods\n\n### Cell culture and lysis conditions\n\nBoth HeLa (ATCC CCL-2) and HEK293T (ATCC CRL-3216) cells were originally obtained from ATCC cell bank. These cell banks, including ATCC, comprehensively perform authentication and quality control tests on all distributed lots of cell lines. These cell lines are not in the list of commonly misidentified cell lines maintained by the International Cell Line Authentication Committee. The identity of these cell lines have been confirmed via STR profiling. All cell lines were periodically assessed for mycoplasma contamination using the Roche MycoTOOL Detection Kit. For all of our experiments, low-passage number of around 5\u201310 was used. HEK293T, HeLa, and HeLa Trex Flp-In cells (a gift from P. Jallepalli) were routinely maintained in 10% FBS in DMEM media, supplemented with L-glutamine. Transfections were carried out using Fugene 6 (Promega) or Hiperfect (QIAGEN), for plasmids or siRNA oligonucleotides, respectively, according to the manufacturer\u2019s protocol. Cells were routinely harvested in PBS, and the pellets were frozen at \u221280\u00b0C prior to lysis. Cells were lysed in either denaturing SDS buffer (100 mM Tris [pH 6.8], 2% SDS and 20 mM \u03b2-Me) for direct analysis by SDS-PAGE or in nondenaturing buffer (50 mM Tris [pH 7.6], 150 mM NaCl, 2 mM EDTA, 0.5% NP-40, and protease inhibitor cocktail (Roche), and benzonase (Novagen) for IPs. For MLN4924 experiments, cells were treated with 5 \u00b5M MLN494 for 4 hr prior to harvesting. For cycloheximide chase experiments, cells were treated with 30 \u00b5g/ml cycloheximide or 10 \u00b5M MG132 for the indicated times before to harvesting in SDS lysis buffer. HeLa cells were synchronized in prometaphase by treatment with 2 mM thymidine for 18 hr followed by release into 100 ng/ml nocodozole for 10 hr. SILAC-labeled HEK293T cells were cultured in SILAC-heavy and light media for 10-doublings following protocols by the manufacturer (Pierce).\n\n### Antibodies, plasmids, and siRNAs\n\nAntibodies were purchased from the following sources for IP and/or immunoblotting: CUL1, \u22122,\u20133, \u22124A, \u22125, and Cdc25A (Bethyl), anti-FLAG M2 (Sigma), Ube2M (Ubc12), Ube1C (UBA3), APPBP1 (NAE1), DCUN1D1 (DCN1), Jab1 (CSN5), Rbx1, p21, \u03b1-tubulin, Cyclin E1, Cyclin B1, Cyclin A2, and p14ARF (Abcam), HA (Covance), p27 (BD), Cyclin D1, SENP8, Ube2F, Cdt1, MCM7, and c-Myc (Santa Cruz Biotechnologies) NEDD8, Set8, and UHRF1 (Cell Signaling Technologies), and DCUN1D5 (Proteintech). HA-tagged Ub expression constructs were described previously (B\u00e9k\u00e9s et al., 2013). HA-tagged NEDD8 constructs were generated by PCR and cloned into pcDNA3.1. FLAG-SENP8 plasmid was purchased from Addgene (#18066). The retroviral vector QCXP-FLAG-SENP8 was engineered by recombinational cloning (Gateway LR clonase, Invitrogen) between QCXIP CMV TO/DEST (Addgene 17386) and pDONR221 plasmid containing a FLAG-SENP8 PCR product insert (generated using FLAG-SENP8 plasmid as template). Retroviral packaging was performed using standard protocols in HEK293T Phoenix cells followed by infection and selection in HeLa cells using 1 \u00b5g/mL puromycin. Ubc12 plasmids were purchased from OriGene and mutants were generated using the QuickChange Kit (Stratagene). All plasmids used in this study have been verified by sequencing. The siRNAs were synthesized by Qiagen and used at 20 \u00b5M final concentration: All-star Negative Control siRNA, SENP8 #1 (CCACTGGAGTTTATTGGTCTA), SENP8 #2 (ACCAACTTATTTGAACATTTA), and CSN5 (AAGAACAATATCCGCAGGGAA).\n\n### Doxycyline-inducible FLAG-NEDD8 stable HeLa cell lines and CRISPR-mediated SENP8 knockout cells\n\nFlp-In-FLAG-NEDD8 HeLa cells were generated as described previously using Flippase (Flp) recombination target (FRT)/Flp-mediated recombination technology in HeLa-T-rex Flp-In cells (Tighe et al., 2008; B\u00e9k\u00e9s et al., 2013), and expression of FLAG-Nedd8 was induced with 1 \u03bcg/mL doxycycline for 24\u201348 hr. HeLa and HEK293T cells were co-transfected with Cas9 (Addgene #41815) and the gRNA-cloning vector (Addgene #41824) containing the following sgRNA target sequences against SENP8 coding sequences: sgRNA#1 \u2013 GGTAGCAGAGAAACTGG; sgRNA#2 \u2013 GTCATAGCTGTTTTGTT; sgRNA#3 \u2013 GACCAATAAACTCCAGT; sgRNA#4 \u2013 GTTGGAGTTATCATTGA (assembled by Gibson cloning) and transfected according the protocol described by Mali and Church et al. (Mali et al., 2013). SENP8 sgRNAs targeting the SENP8 coding region were designed by ZitFit tool (http://zifit.partners.org). Following transfection for 48 hr, cells were plated at 0.5 cell/well in 96-well dishes and cultured for 3 weeks. Individual outgrown clones were expanded and SENP8 knockout cells were verified by Western blotting. Out of\u00a0~15 SENP8 KO lines per cell line, three were chosen for further study per cell lines (data not shown).\n\n### Expression and purification of recombinant proteins\n\nFor the purification of His-NEDD8-WT and\u00a0-L73P constructs, NEDD8 was cloned into pET28b with an N-terminal His-tag. Briefly, E. coli codon-plus cells were\u00a0transformed with the above constructs, and recombinant protein expression was induced with 1 mM IPTG at 30\u00b0C for 3 hr. His-tagged proteins were purified by Ni2+-NTA followed by size exclusion chromatography on a Superdex-200 26/60 column in 20 mM Tris (pH 8.0), 350 mM NaCl, and 1 mM \u03b2-Me. His-tagged Ubc12 was produced in E. coli as previously (Huang et al., 2009c). His-SENP8 plasmid was a gift from Guy Salvesen and was purified as described previously (Mikolajczyk et al., 2007). Untagged Ubc12 and NAE1 were purchased from Boston Biochem. CUL1/Rbx1 and CUL3/Rbx1 were purchased from Ubiquigent. Purified COP9 signalosome was purchased from Enzo LifeScience. All constructs have been verified by sequencing and all recombinant proteins have been aliquoted and stored at \u221280\u00b0C until use.\n\n### MS analysis of FLAG-NEDD8 immunoprecipitations\n\nCell pellets from an equal number of cells were lysed in mRIPA buffer (20 mM Tris [pH 7.5], 1% NP-40, 0.5% CHAPS, 0.1% SDS, and 150 mM NaCl) supplemented with protease inhibitor cocktail (Roche) and 1 U/\u03bcl benzoase (Novagen), for 1 hr on ice. Lysates were cleared by centrifugation and the supernatant was incubated 100 \u03bcg M2-conjugated (anti-FLAG) magnetic DynaBeads (Sigma-Aldrich) for 1 hr at 4\u00b0C. The beads were washed in mRIPA buffer and in 100 mM ammonium bicarbonate (pH 8). FLAG-NEDD8 immunoprecipitation samples were reduced with 0.2 M dithiothreitol (DTT) at pH 8 for 1 hr at 57\u00b0C and subsequently alkylated using 0.5 M iodoacetamide at pH 8 for 45 min in the dark at RT. Then, 200 ng trypsin (Promega) was added to the samples still bound to the anti-FLAG beads. Digestion was allowed to proceed overnight with gentle shaking at room temperature. The resulting peptide mixture was removed from the beads and K-\u03b5-GG containing peptides were enriched with the PTMScan Ubiquitin Remnant Motif (K-\u03b5-GG) antibody (Cell Signaling Technology) following the kit instructions. Briefly, peptide samples were added to two vials of washed beads and the mixture was rotated at 4\u00b0C for 2 hr. Samples were centrifuged at 2000\u00a0x\u00a0g for 30 s at 4\u00b0C, the supernatant was removed, and the beads were washed twice with IAP buffer, and three times with water. Bound peptides were eluted with three rounds of 10 mM citric acid. Pooled elutions and supernatants were acidified with trifluoroacetic acid, concentrated in a SpeedVac concentrator and desalted as previously described (Cotto-Rios et al., 2012).\n\nAn aliquot of each IP supernatant and elution sample was loaded onto an Acclaim PepMap trap column in line with an EASY-Spray 50 cm x 75 \u00b5m ID PepMap C18 analytical HPLC column with 2 \u03bcm bead size using the auto sampler of an EASY-nLC 1000 HPLC (ThermoFisher) and solvent A (2% acetonitrile, 0.5% acetic acid). The peptides were gradient eluted into a Q Exactive (Thermo Scientific) mass spectrometer using a 120 min gradient from 2% to 40% solvent B (90% acetonitrile, 0.5% acetic acid), followed by a 10 min ramp up to 100% solvent B and was held at 100% for 10 min.\n\nHigh-resolution full MS spectra were acquired with a resolution of 70,000 (@ m/z 200), an AGC target of 1e6, with a maximum ion time of 120 ms, and scan range of 400 to 1500 m/z. Following each MS1, 20 data-dependent high-resolution HCD MS2 spectra were acquired. All MS2 spectra were collected of precursors of charge states 2\u20135 using the following instrument parameters: resolution of 17,500, AGC target of 5e4, maximum ion time of 250 ms, one microscan, 2 m/z isolation window, 30\u00a0s dynamic exclusion, and Normalized Collision Energy (NCE) of 27.\n\nAll acquired MS2 spectra were searched against a human uniprot database using Sequest within Proteome Discoverer (Thermo Scientific). In the search parameters, trypsin was selected with two missed cleavages, precursor mass tolerance was set to\u00a0\u00b110 ppm, and fragment ion mass tolerance was set to\u00a0\u00b10.02 Da. Carboxymethylation of Cys was added as a static modification. The following variable modifications were allowed: oxidation of methionine and deamidation of glutamine and asparagines, N-terminal acetylation, and lysine K-\u03b5-GG. All results were filtered to only include peptides identified with high confidence and proteins identified by at least two peptides. Due to the low efficiency of the K-\u03b5-GG antibody IP a number of K-\u03b5-GG modified peptides were identified in the flow through. Results from the mass spectrometric analysis of the K-\u03b5-GG IP flow through and elution were combined and peptide spectral matches from the flow through and elution were summed to generate the data shown in Figure 1F.\n\n### SILAC-MS analysis of K-\u03b5-GG-modified peptides\n\nLight and heavy SILAC K(13C(6))-labeled cells were lysed in 8M urea according to the manufacturer\u2019s protocol, quantified by BCA assay, and pooled 1:1. The mixed lysates were reduced with 0.2 M dithiothreitol (DTT) at pH 8 for 1 hr at 57\u00b0C and subsequently alkylated using 0.5 M iodoacetamide at pH 8 for 45 min in the dark at RT. Digestion with trypsin at a 1:100 ratio (Promega) was allowed to proceed overnight at room temperature. Peptide mixtures were desalted using a tC18 Sep-Pak Vac 3cc 200 mg capacity (Waters) and freeze dried using a lyophilizer (ScanVac).\n\nDried peptides were reconstituted in the provided IAP buffer and K-\u03b5-GG containing peptides were enriched with the PTMScan Ubiquitin Remnant Motif (K-\u03b5-GG) Kit (Cell Signaling Technology) following the kit instructions as described above.\n\nAn aliquot of the K-\u03b5-GG IP inputs and elutions were loaded as described above. The peptides were gradient eluted into a Q Exactive (Thermo Scientific) mass spectrometer using a 180 min gradient from 2% to 20% solvent B (90% acetonitrile, 0.5% acetic acid), 20 min from 20\u201340% solvent B, followed by a 10 min ramp up to 100% solvent B and was held at 100% for 20 min.\u00a0Acquisition was performed as described above.\n\nPeptide and protein identification and SILAC quantitation was performed using the MaxQuant software suite version 1.5.2.8 (Cox and Mann, 2008) against Uniprot Human database. For the first search, the peptide mass tolerance was set to 20 ppm and for the main search peptide mass tolerance was set to 4.5 ppm. Trypsin-specific cleavage was selected with two missed cleavages. Both peptide spectral match and protein FDR were set to 1% for identification. The multiplicity was set to two, with three maximum labeled residues, and the heavy label of Lys6 selected. Carboxymethyl of cysteine was added as a static modification. Oxidation of methionine, deamidation of glutamine and asparagine, acetylation of N-termini and GlyGly of lysine were allowed as variable modifications. Protein quantitation was performed using unique and razor peptides. Normalized SILAC ratios or the inverse were used to determine the relative abundance of K-\u03b5-GG modified peptides in SENP8 Knockout\u00a0cells as compared to WT.\n\n### Flow cytometry analysis\n\nCells to be analyzed by flow cytometry for DNA content were pulse-labeled with 10 \u03bcM EdU prior to trypsinization and fixation in 4% paraformaldehyde. EdU incorporation was detected using the Alexa Fluor 488 Click-iT EdU Flow Cytometry assay kit (Thermo Fisher Scientific) and DNA was counterstained with 1 \u00b5g/ml DAPI (Molecular Probes) prior to analysis. Flow cytometry data acquisition was performed on an LSR II and data analysis was performed using FACS Diva software (BD Pharmingen, San Diego, CA) or FlowJo software (Treestar, Ashland, OR).\n\n### In vitro Ubc12 auto-neddylation and deneddylation assays\n\nFor in vitro neddylation reactions, 1 \u00b5M NAE1, 2 \u00b5M Ubc12 and 15 \u00b5M Nedd8 were added to reactions containing 50 mM Tris, pH 7.6, 150 mM NaCl, 10 mM MgCl2, 1 mM DTT and 5 mM ATP. Reactions were incubated at 37\u00b0C for 15 min, terminated with 4X LDS loading buffer supplemented with 50 mM DTT and analyzed by SDS-PAGE and SYPRO staining. For CUL/Rbx1 neddylation reactions, CUL1/Rbx1 was also added at 1 \u00b5M\u00a0each and reactions were incubated for 30 min at 37\u00b0C (or 1 min at 37\u00b0C in the presence of DCN1). For deneddylation reactions, the initial neddylation reaction was quenched with 1 M DTT and 0.5 M EDTA, diluted twofold, and incubated for another 30 min at 37\u00b0C with purified CSN complex (0.5 \u00b5g).\n\n### Cell growth assay\n\nWT and SENP8-deficient HeLa cells were plated at a density of 1 \u00d7 105 cells/well of a 12-well dish and stained with crystal violet solution (0.5% crystal violet w/v, 25% methanol) at the following times after plating: 24, 48, 72, and 96 hr. OD590 was measured at each time point in triplicate to quantify relative cell numbers.\n",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "4c897958-9483-42d7-8909-d03a75674a26",
+      "submission_id": "9d488e58-78fc-4b63-a0e9-c1d127b14e4f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael Rape, University of California Berkeley , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.24325.021](https://doi.org/10.7554/eLife.24325.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"SENP8 limits aberrant neddylation of NEDD8 pathway components to promote cullin-RING ubiquitin ligase function\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Tony Hunter as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nPosttranslational modification with NEDD8 is required for activation of the large class of CULLIN-RING-ligases, and hence, it is essential for cell division and survival. As inhibitors of NEDD8 conjugation have entered clinical trials, it is important to understand the complete substrate spectrum of NEDDylation, as well as the regulation of this modification. Previously, several non-cullin NEDD8 substrates have been proposed; however, these studies have relied on overexpression of NEDD8, which can lead to non-specific protein modification through mis-targeting by ubiquitylation enzymes. Developing new methods to identify potential non-cullin NEDD8 substrates is, therefore, important.\n\nIn this manuscript B\u00e9k\u00e9s et al. developed a deconjugation-resistant form of NEDD8, and then exploited this protein to identify novel substrates that are modified with NEDD8 in the cell. Following this strategy, they successfully identified non-cullin neddylation targets including the NEDD8 E2, UBC12, which they showed undergoes neddylation on Lys3. They further showed that this modification interferes with the interaction of UBC12 with the co-E3 DCN1 thereby downregulating CUL neddylation. In parallel, they showed that SENP8 is the enzyme responsible for removing this modification from UBC12 as well from other substrates. Finally they demonstrated that SENP8 depletion contributes to accumulation of CRL substrates and defective cell cycle progression.\n\nMost experiments are well-conceived and executed well. This work clearly demonstrates that components of the neddylation machinery can be neddylated themselves and it is likely that sifting through the supplemental tables will reveal new neddylation targets that were not characterized in this work. However, several issues need to be addressed before this manuscript can be accepted for publication.\n\nEssential revisions:\n\n1) Further characterization of the inhibitory function of Ubc12 neddylation is required to provide a solid foundation for the phenotypes observed in this work. For example, it is a clear prediction that SENP8 should activate CRL1 in in vitro ubiquitylation assays. As all proteins are available, the authors should test this notion. A positive result in this experiment would also support the broad claims of SENP8 function in the title.\n\n2) The data suggesting that UBC12 neddylation inhibits the interaction of this protein with DCN1 is not particularly strong. The authors should purify neddylated UBC12 and test its ability to engage DCN1 in direct binding assays. Furthermore, they should re-introduce Lys3 into their NK0 mutant of UBC12 and test whether this is sufficient to disrupt interaction with DCN1 (the data concerning the K3R mutation are confusing, but this experiment should strengthen the notion that K3 neddylation has functional impact). A better description of the NK0 mutant in the text would also be helpful, including control experiments that demonstrate that the NK0 mutant of UBC12 does not interfere with acetylation of this protein.\n\n3) The last figure, Figure 6, describing the in vivo relevance of this autoneddylation/SENP8 pathway is rather incomplete, and for publication in eLife stronger physiological data are required, to establish that the perturbation in cell cycle progression observed in SENP8 knockdown cells is in fact due to a failure to deneddylate UBC12 and the resultant decrease in CRL activity, as opposed to the lack of SENP8 deneddylation of some other protein involved in cell cycle progression. For example, the authors could investigate their mass spec data for global changes in CRL substrate levels or they could look at more candidate CRL substrates and investigate the consequences of their stabilization (it is unclear whether the tested ones are the only ones with a phenotype, which would raise some doubts about the importance of this pathway). Along these lines, does NEDD8-L73P produce similar phenotypes as deletion of SENP8?\n\n4) A better statistical analysis and complete representation of the mass spec data is required. In particular, they need to clarify how many substrates were identified, how many were validated; what are real interactions and what is background?\n",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6fc3063e-5712-489f-8e28-b9b070bb00a2",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C1",
+      "claim": "NEDD8 is a ubiquitin-like modifier most well-studied for its role in activating the largest family of ubiquitin E3 ligases, the cullin-RING ligases (CRLs).",
+      "claim_type": "EXPLICIT",
+      "source": "NEDD8 is a ubiquitin-like modifier most well-studied for its role in activating the largest family of ubiquitin E3 ligases, the cullin-RING ligases (CRLs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about NEDD8's primary function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "e1b083dc-b5db-4010-9a3d-f75245711061",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C2",
+      "claim": "Overexpression of exogenous NEDD8 can trigger NEDD8 conjugation through the ubiquitylation machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "overexpression of exogenous NEDD8 can trigger NEDD8 conjugation through the ubiquitylation machinery",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hjerpe et al., 2012 in the Introduction section.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "c0e9682f-4f5a-49bf-9120-10ef158b11d8",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C3",
+      "claim": "A deconjugation-resistant form of NEDD8 (L73P mutant) was developed to stabilize the neddylated form of cullins and other non-cullin substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we developed a deconjugation-resistant form of NEDD8 to stabilize the neddylated form of cullins and other non-cullin substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding demonstrated through experimental data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "19f1d7b2-9238-4dac-be60-8a660c84d12a",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C4",
+      "claim": "Ubc12, a NEDD8-specific E2 conjugating enzyme, is a substrate for auto-neddylation.",
+      "claim_type": "EXPLICIT",
+      "source": "we identified Ubc12, a NEDD8-specific E2 conjugating enzyme, as a substrate for auto-neddylation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by MS data in Figure 1F and validation experiments in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "3fd0abbe-02ab-457a-b84e-32e3d6fc92f1",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C5",
+      "claim": "SENP8/DEN1 is the protease that counteracts Ubc12 auto-neddylation.",
+      "claim_type": "EXPLICIT",
+      "source": "we characterized SENP8/DEN1 as the protease that counteracts Ubc12 auto-neddylation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through in vitro deneddylation assays in Figure 3 and cellular experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "0b278cd4-0ab7-43f3-ab19-6c7db2093097",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C6",
+      "claim": "SENP8-deficient cells show aberrant neddylation of Ubc12 and other NEDD8 conjugation pathway components.",
+      "claim_type": "EXPLICIT",
+      "source": "observed aberrant neddylation of Ubc12 and other NEDD8 conjugation pathway components in SENP8-deficient cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunoblot and MS data in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "50490267-21c1-40f2-ab78-504890e60ec2",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C7",
+      "claim": "Loss of SENP8 function contributes to accumulation of CRL substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "loss of SENP8 function contributes to accumulation of CRL substrates",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through SILAC-MS analysis and immunoblotting in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "56c3eaac-2f41-43de-ac28-f3c9d5840552",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C8",
+      "claim": "Loss of SENP8 function contributes to defective cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "loss of SENP8 function contributes to accumulation of CRL substrates and defective cell cycle progression",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown through flow cytometry analysis in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "58e467cf-662d-4231-89c4-368a7632b8ff",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C9",
+      "claim": "Neddylation is catalyzed through an enzymatic cascade consisting of an E1-activating enzyme complex (NAE1/APPBP1-UBA3), two E2 enzymes (Ubc12/Ube2M and Ube2F) and several E3 enzymes such as Rbx1 and Rbx2.",
+      "claim_type": "EXPLICIT",
+      "source": "Like ubiquitylation, neddylation is catalyzed through an enzymatic cascade consisting of an E1-activating enzyme complex (NAE1/APPBP1-UBA3), two E2 enzymes (Ubc12/Ube2M and Ube2F) and several E3 enzymes such as Really Interesting New Gene (RING)-box protein 1 (Rbx1) and its close homologue Rbx2 (reviewed in [Soucy et al., 2010; Enchev et al., 2014; Brown and Jackson, 2015]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple review citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "87c78fda-fa26-4d40-837d-6805cba62580",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C10",
+      "claim": "NEDD8 transfer from the E2 to a lysine residue within the cullin promotes conformational changes that increase the catalytic activity of the CRL.",
+      "claim_type": "EXPLICIT",
+      "source": "NEDD8 transfer from the E2 to a lysine (Lys) residue within the cullin promotes conformational changes that increase the catalytic activity of the CRL, while also blocking the binding of the CRL exchange factor CAND1 (Duda et al., 2008; Saha and Deshaies, 2008; Pierce et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "0f0bdd99-0ebe-44da-813c-fc44fced0e1c",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C11",
+      "claim": "NEDD8 conjugation to cullin subunits controls approximately 10-20% of ubiquitylation events in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "NEDD8 ligation to cullins controls a high proportion of ubiquitylation events in cells (~10\u201320%) (Soucy et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Soucy et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "0d6b0237-b65c-4e44-9d91-a53a698eab32",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C12",
+      "claim": "MLN4924 is an inhibitor of the NEDD8 E1 enzyme that potently and rapidly suppresses neddylation in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "An inhibitor of the NEDD8 E1 enzyme, MLN4924, has been recently developed and shown to potently and rapidly suppress neddylation in cells, thereby inhibiting CRL activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Soucy et al., 2009, 2010 and Brownell et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "ef8ebaf7-fb8a-4cab-9032-a70ad3367a59",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C13",
+      "claim": "MLN4924 has demonstrated antitumor activity in several human tumor xenografts and hematological malignancies in preclinical studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly, preclinical studies using MLN4924 have demonstrated its antitumor activity in several human tumor xenografts and hematological malignancies (Soucy et al., 2009, 2010; Brownell et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to preclinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "91fdc9fa-fdc7-4b57-aef8-22d11839728e",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C14",
+      "claim": "p53 is a non-cullin neddylation target.",
+      "claim_type": "EXPLICIT",
+      "source": "Among this list of proteins are p53 (Xirodimas et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Xirodimas et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "edc29675-826e-4b10-860e-d1821b4493bc",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C15",
+      "claim": "E2F1 is a non-cullin neddylation target.",
+      "claim_type": "EXPLICIT",
+      "source": "E2F1 (Loftus et al., 2012; Aoki et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Loftus et al., 2012 and Aoki et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "6fbacca7-e9b6-44bc-b5dd-7d039ead3941",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C16",
+      "claim": "Ribosomal protein L11 is a non-cullin neddylation target.",
+      "claim_type": "EXPLICIT",
+      "source": "ribosomal protein L11 (Sundqvist et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sundqvist et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "43c9a494-282d-487d-8aef-26c20b802ba1",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C17",
+      "claim": "Smurf1 is a non-cullin neddylation target.",
+      "claim_type": "EXPLICIT",
+      "source": "Smurf1 (Xie et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Xie et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "4f13f700-ef5c-4b07-b064-c14b564fab16",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C18",
+      "claim": "Histone H4 is a non-cullin neddylation target.",
+      "claim_type": "EXPLICIT",
+      "source": "Histone H4 (Ma et al., 2013b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ma et al., 2013b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "225dbbd4-5858-4b8b-8276-6c89fbe405ab",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C19",
+      "claim": "CSN5 is the major cullin deneddylase in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "COP9 signalosome complex subunit 5 (CSN5), a metallo-protease and component of the eight-subunit COP9 signalosome complex (CSN), is the major cullin deneddylase in human cells (Lyapina et al., 2001; Cope, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lyapina et al., 2001 and Cope, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "e61044f2-a0cf-478e-8e14-aa1a216c624b",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C20",
+      "claim": "CSN is specific for neddylated cullins.",
+      "claim_type": "EXPLICIT",
+      "source": "CSN is specific for neddylated cullins (Lingaraju et al., 2014; Cavadini et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lingaraju et al., 2014 and Cavadini et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "97cecb97-7706-46c3-beb6-bc8dcfe17c54",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C21",
+      "claim": "SENP8 functions distinctly from CSN in deneddylating primarily non-cullin substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a cysteine protease called SENP8 (also known as DEN1 or NEDP1) has been characterized that functions distinctly from CSN in deneddylating primarily non-cullin substrates (Chan et al., 2008; Mergner et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chan et al., 2008 and Mergner et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "7396a271-54cb-49d3-babc-8ffe133ca58b",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C22",
+      "claim": "SENP8 deneddylates hyper-neddylated cullins.",
+      "claim_type": "EXPLICIT",
+      "source": "a cysteine protease called SENP8 (also known as DEN1 or NEDP1) has been characterized that functions distinctly from CSN in deneddylating primarily non-cullin substrates (Chan et al., 2008; Mergner et al., 2015) as well as hyper-neddylated cullins (Mendoza et al., 2003; Wu et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mendoza et al., 2003 and Wu et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "6f81f18b-3e57-40c0-944d-aefc93ced2ae",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C23",
+      "claim": "SENP8 selectively interacts with NEDD8 and not ubiquitin.",
+      "claim_type": "EXPLICIT",
+      "source": "SENP8 selectively interacts with NEDD8 and not ubiquitin (Gan-Erdene et al., 2003; Shen et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gan-Erdene et al., 2003 and Shen et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "816706e2-a796-4f9b-b807-13d697ffd80e",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C24",
+      "claim": "SENP8 plays a redundant role in proteolytic processing of the precursor form of NEDD8 in conjunction with UCHL3.",
+      "claim_type": "EXPLICIT",
+      "source": "also plays a redundant role in proteolytic processing of the precursor form of NEDD8 in conjunction with ubiquitin C-terminal hydrolase isozyme 3 (UCHL3) (Wada et al., 1998; Wu et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wada et al., 1998 and Wu et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "15134fc9-defa-4f66-96fe-6402a1eceac5",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C25",
+      "claim": "DEN1null and CSN5null Drosophila larvae show distinct neddylation defects, suggesting that the two enzymes have non-overlapping functions.",
+      "claim_type": "EXPLICIT",
+      "source": "a previous study showed distinct neddylation defects in DEN1null versus CSN5null Drosophila larvae, suggesting that the two enzymes have non-overlapping functions (Chan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Chan et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "63d74c28-eb24-47ad-b9ca-1059e663796c",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C26",
+      "claim": "The L73P mutation in NEDD8 is located at the P4 position of the C-terminal cleavage site.",
+      "claim_type": "EXPLICIT",
+      "source": "mutation of leucine (Leu) 73 in ubiquitin, located at the P4 position of the DUB cleavage site at the C-terminus, to proline (Pro)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B which displays the location of the L73P mutation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "74d2ab8b-d3be-4d37-b4b8-50e5e77e6e2a",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C27",
+      "claim": "The L73P mutation in ubiquitin renders conjugated ubiquitin resistant to cleavage by a wide range of deubiquitinating enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously demonstrated that mutation of leucine (Leu) 73 in ubiquitin, located at the P4 position of the DUB cleavage site at the C-terminus, to proline (Pro) renders conjugated ubiquitin resistant to cleavage by a wide range of deubiquitinating enzymes (DUBs) (B\u00e9k\u00e9s et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to B\u00e9k\u00e9s et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "d5f749d5-892f-41d7-8ec0-69efd453cd12",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C28",
+      "claim": "The P4 position in NEDD8 is a leucine residue, analogous to ubiquitin.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-termini of Nedd8 and Ub are conserved, where the P4 position in NEDD8 is also a Leu residue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence comparison and structural knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "4d15042f-6e70-4229-ba69-21cc6be85035",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C29",
+      "claim": "NEDD8 L73P is resistant to CSN-mediated deconjugation from CUL1 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "While WT NEDD8 was readily deconjugated from CUL1 with increasing concentrations of CSN in the reaction, the L73P NEDD8 mutant was resistant to cleavage from CUL1 at all CSN concentrations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 1C showing in vitro deneddylation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "748a8972-f474-4a89-b61d-49b3b1e2f3d4",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C30",
+      "claim": "Ortho-phenanthroline (OPT) completely inhibits the metalloprotease activity of CSN.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the addition of the zinc-chelator ortho-phenanthroline (OPT) to the reaction mixture completely inhibited the metalloprotease activity of CSN, and neither WT nor L73P NEDD8 were cleaved from CUL1 under these conditions (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "98ea0db8-686c-4858-b9c1-60ba1fd0d029",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C31",
+      "claim": "FLAG-NEDD8-L73P shows increased recovery of modified CUL1 compared to FLAG-NEDD8-WT.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed increased recovery of FLAG-NEDD8-L73P-modified CUL1 compared to FLAG-NEDD8-WT-conjugated CUL1, likely reflecting the inability of the L73P mutant to be deneddylated in cells (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1D immunoblot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "1edc88c7-e5af-4924-88f4-f978b8e44e9a",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C32",
+      "claim": "MLN4924 treatment blocks the conjugation of both endogenous NEDD8 and FLAG-NEDD8 to cullin substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports (Soucy et al., 2009; Brownell et al., 2010), MLN4924 treatment blocked the conjugation of both endogenous NEDD8 and FLAG-NEDD8 to cullin substrates entirely (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 1E and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "e7412acc-1fe2-41a3-90b7-ec7f87bc164d",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C33",
+      "claim": "FLAG-NEDD8-WT and FLAG-NEDD8-L73P are incorporated into CUL1- and CUL2-conjugates at similar levels as endogenous NEDD8.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, immunoblot analyses showed that both FLAG-NEDD8-WT and FLAG-NEDD8-L73P were incorporated into CUL1- and CUL2- conjugates at similar levels as endogenous NEDD8 (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1E immunoblot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "3e101d02-c49d-43fd-8eba-1ac63defae35",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C34",
+      "claim": "FLAG-NEDD8-L73P immunoprecipitates show higher relative abundance of cullin substrates (CUL1, -2, -4A, and -4B) compared to FLAG-NEDD8-WT based on spectral counting.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, both FLAG-NEDD8-WT and FLAG-NEDD8-L73P immunoprecipitated CUL1, \u22122, \u22124A, and \u22124B, although the relative abundance, based on spectral counting, of these cullin substrates was much higher in the FLAG-NEDD8-L73P IP samples (Figure 1F and Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1F spectral count data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "5b668aeb-3821-4614-a2e5-92515404ed7f",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C35",
+      "claim": "The site of NEDD8 conjugation to Ubc12 is Lys3.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon further analysis of our MS results from the FLAG-NEDD8-L73P IP dataset, we determined that the site of NEDD8 conjugation to Ubc12 is Lys3, as we observed a K-\u03b5-GG remnant, characteristic of trypic digestion of either NEDD8 or ubiquitin, at this site (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by MS/MS spectrum in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "95eefa8c-fa00-42ce-9b38-c8e1c4c531e7",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C36",
+      "claim": "The Ubc12 peptide containing Lys3 is acetylated at the N-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "This Ubc12 peptide was also acetylated at the N-terminus, in agreement with previous observations (Scott et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in MS data and supported by citation to Scott et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "fa5b85b0-661c-4036-992f-73c40928e7dd",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C37",
+      "claim": "The Lys3 residue of Ubc12 is highly conserved across several eukaryotic orthologs.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence alignments show that the Lys3 residue of Ubc12 is highly conserved across several eukaryotic orthologs (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the sequence alignment in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "c863ee77-d949-424d-9ba1-8d0c7bc3b9c3",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C38",
+      "claim": "Ubc12 is modified by FLAG-NEDD8-L73P in a manner that is blocked by MLN4924 pretreatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoblot analysis of identically prepared FLAG-NEDD8 IPs showed that Ubc12 is modified upon Dox-induced expression by FLAG-NEDD8-L73P, but not when pre-treated with MLN4924, (Figure 2B). suggesting that these represent neddylated Ubc12 species (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 2B immunoblot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "915695ee-a90c-460d-aae6-7f0076a9d933",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C39",
+      "claim": "WT and L73P HA-tagged NEDD8 constructs, but not HA-tagged Ub constructs, form conjugates with co-transfected MycFlag-Ubc12 WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Both WT and L73P HA-tagged NEDD8 constructs, but not the analogous WT and L73P HA-tagged Ub constructs, formed conjugates with co-transfected MycFlag-Ubc12 WT in these experiments (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 2C co-IP experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "f358a744-f82b-4461-8a88-f8905a66dc44",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C40",
+      "claim": "Mutations in the NK0-Ubc12 mutant (all N-terminal Lys residues converted to Arg) block modification by co-transfected NEDD8-L73P.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2D, mutations introduced into the NK0-Ubc12 mutant sufficiently blocked modification by co-transfected NEDD8-L73P.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 2D immunoblot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "376c64fe-ae32-465d-ae72-349ec221c1a1",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C41",
+      "claim": "Restoring a single Lys at position 3 (K3) in the NK0-Ubc12 mutant (N-K3) partially rescues the ability of Ubc12 to form conjugates with NEDD8-L73P.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, restoring a single Lys at position 3 (K3) in the NK0-Ubc12 mutant (N-K3) partially rescued the ability of Ubc12 to form conjugates with NEDD8-L73P (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 2D immunoblot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "7ee036a5-32e7-4fc2-914b-97770549013a",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C42",
+      "claim": "N-terminal Lys sites, including K3, are critical for NEDD8 modification of Ubc12.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results provide strong evidence that Ubc12 is a bona fide substrate for neddylation, and that N-terminal Lys sites, including K3, are critical for NEDD8 modification of Ubc12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutagenesis experiments in Figure 2D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "1d00846d-cb79-4731-9ff7-ea63cc0bb4b5",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C43",
+      "claim": "The acetylated N-terminal Met in Ubc12 interacts with a hydrophobic pocket in DCN1 to promote cullin neddylation.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously shown that the acetylated N-terminal Met in Ubc12 interacts with a hydrophobic pocket in the co-E3, DCN1 (DCUN1D1 in human cells), to promote cullin neddylation (Scott et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Scott et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "c1062e5d-7dfa-48b0-b767-937c7fc53ce5",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C44",
+      "claim": "Only WT Ubc12, but not the NK0 mutant, can support modification with HA-NEDD8-L73P.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our previous experiments, only the WT Ubc12 construct, but not the NK0 mutant, could support modification with HA-NEDD8-L73P, which likely contributed to reduced interaction to DCN1 and Cul3 (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 2E co-IP experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "afd468ee-1ccd-49b3-b68e-f536e64f8cfa",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C45",
+      "claim": "WT Ubc12 co-purifies with more DCN1 when it is not neddylated by HA-NEDD8-L73P co-expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, WT Ubc12 co-purified with more DCN1 when it was not neddylated by HA-NEDD8-L73P co-expression (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 2F co-IP experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "df0a8759-b0b4-4bba-9fc9-21a4765c0362",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C46",
+      "claim": "N-terminal neddylation of Ubc12 likely weakens binding to DCN1.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results suggest that N-terminal neddylation of Ubc12 likely weakens binding to DCN1, which in turn may influence downstream NEDD8 pathway function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the co-IP experiments in Figures 2E and 2F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "1a6c3870-e7f2-4e95-ac64-b79f03307e5f",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C47",
+      "claim": "Treatment of cells with siRNAs targeting SENP8, but not CSN5, results in increased levels of Ubc12 conjugates.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of cells with siRNAs targeting SENP8, but not CSN5, resulted in increased levels of Ubc12 conjugates (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3A immunoblot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "3b817272-2156-4de0-a4fb-c305b3b68a8b",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C48",
+      "claim": "CRISPR/Cas9-mediated knockout of endogenous SENP8 results in increased levels of Ubc12 conjugates.",
+      "claim_type": "EXPLICIT",
+      "source": "These results were corroborated by CRISPR/Cas9-mediated knockout of endogenous SENP8 using multiple sgRNA sequences in different cell lines (Figures 3B and 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figures 3B and 5B immunoblot analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "a1689fb3-0b03-499d-8f34-1c6a8689e335",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C49",
+      "claim": "A band corresponding to di-neddylated Ubc12 is detected in SENP8 knockout cell lines but not parental cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In immunoblot analyses of IP samples, probing with antibodies against Ubc12 and NEDD8 detected a band of similar molecular weight corresponding to di-neddylated Ubc12 in both SENP8 knockout cell lines, but not the parental cells (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "72c18448-fc98-484e-a27c-69f4f8a23b0d",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C50",
+      "claim": "Higher molecular weight Ubc12 NEDD8-conjugates are no longer observed in SENP8-deficient cells following treatment with MLN4924.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, higher molecular weight Ubc12 NEDD8-conjugates were no longer observed in either siRNA-depleted (Figure 3\u2014figure supplement 1B) or CRISPR-generated SENP8-deficient cells (Figure 3\u2014figure supplement 1C) following treatment with MLN4924.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3\u2014figure supplement 1B and 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "a6bef04f-cea9-42c5-b9dd-1822627b0d3e",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C51",
+      "claim": "Ubc12 undergoes auto-neddylation when incubated with the E1 enzyme, ATP, and recombinant NEDD8 (WT or L73P) in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "As demonstrated previously (Huang et al., 2005), we observed that Ubc12 undergoes auto-neddylation when incubated with the E1 enzyme, ATP, and recombinant NEDD8 (WT or L73P) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3C in vitro assay and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "26fee59b-9881-4eff-b1f9-693d43a731f4",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C52",
+      "claim": "Ubc12 auto-neddylation occurs in cis via its own catalytic Cys residue.",
+      "claim_type": "EXPLICIT",
+      "source": "We also showed that Ubc12 auto-neddylation occurs in cis via its own catalytic Cys residue, as the catalytically inactive mutant of Ubc12 (C111A) is not neddylated in vitro (Figure 3\u2014figure supplement 2A), even in the presence of additional WT Ubc12 or when transfected in cells (Figure 3\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3\u2014figure supplement 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "110d8e90-bb2d-45c7-b1c0-1d6b97ba2f34",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C53",
+      "claim": "Recombinant SENP8 removes NEDD8 from auto-neddylated Ubc12 in reactions containing WT NEDD8, but not the L73P mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "This modification was removed when recombinant SENP8 was added to reactions containing WT NEDD8, but not the L73P mutant (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3C in vitro deneddylation assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "99e564e0-887a-444f-b7f9-e7b2c46a033e",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C54",
+      "claim": "NEDD8 deconjugation from auto-neddylated Ubc12 occurs in the presence of SENP8, but not CSN.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in titration experiments using different concentrations of recombinant SENP8 or CSN proteases, we further showed that NEDD8 deconjugation from auto-neddylated Ubc12 only occurs in the presence of SENP8, but not CSN (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3D in vitro deneddylation assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "156ea8e3-0b36-4595-b90c-da53f699361f",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C55",
+      "claim": "SENP8 is the primary protease that regulates Ubc12 auto-neddylation both in vitro and in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings establish SENP8 as the primary protease that regulates Ubc12 auto-neddylation both in vitro and in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the combined in vitro and cellular experiments in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "f8312dd8-afaa-42b2-bad6-b0a37c15c08a",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C56",
+      "claim": "Immunoblotting analysis with an anti-NEDD8 antibody reveals a dramatic increase in protein neddylation in SENP8 knockout cells compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting this notion, immunoblotting analysis of whole-cell extracts with an anti-NEDD8 antibody revealed a dramatic increase in protein neddylation in SENP8 knockout cells in comparison to control cells (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 4A immunoblot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "fd941645-aadf-479d-ac82-82e52a36d94d",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C57",
+      "claim": "SENP8 is likely to restrict aberrant or hyper-neddylation of non-cullin substrates in normal steady-state conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that SENP8 is likely to restrict aberrant or hyper-neddylation of non-cullin substrates in normal steady-state conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the increased neddylation observed in SENP8 knockout cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "90dbddae-fd5f-47a0-97df-202f474098bf",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C58",
+      "claim": "K-\u03b5-GG modification of Ubc12, Ube1C, DCUN1D5, and NEDD8 itself (K11 and K48) show large increases in relative abundance in SENP8 knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, many of these K-\u03b5-GG modification changes were observed for proteins involved in the NEDD8 conjugation pathway, including not only Ubc12, but also Ube1C, DCUN1D5, and NEDD8 itself (K11 and K48).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4C and D quantitative MS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "2aa428fe-1cfa-4371-bb4a-13364ae18af7",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C59",
+      "claim": "A significant decrease in the NEDD8 modification of CUL5 is observed in SENP8-deficient cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a significant decrease in the NEDD8 modification of CUL5in the SENP8-deficient cell line (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4C and D quantitative MS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "6f3a1c31-7e73-42e8-9ec0-fc335350ad09",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C60",
+      "claim": "SENP8 prevents aberrant or hyper-neddylation on a global level of multiple proteins within the NEDD8 conjugation network.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results provide further evidence to suggest that SENP8 prevents aberrant or hyper-neddylation on a global level of multiple proteins within the NEDD8 conjugation network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the quantitative MS results in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "b542417e-ea3a-463f-b95b-ecff4b01f790",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C61",
+      "claim": "Increased levels of NEDD8 conjugates, including di-neddylated species, of NAE1 (APPBP1)-UBA3, Ubc12, DCUN1D1 and DCUN1D5 are observed in SENP8-deficient cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed evidence for increased levels of NEDD8 conjugates, and in several cases even di-neddylated (N82) species, of several NEDD8 pathway constituents in all SENP8-deficient cell lines tested, including NAE1 (APPBP1)-UBA3, Ubc12, and DCUN1D1 and DCUN1D5 (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 5B immunoblot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "9297fdb0-0844-4f30-bbda-05933a006f26",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C62",
+      "claim": "Relative binding of endogenous Ubc12 to DCN1 is reduced in the SENP8-deficient background compared to SENP8-corrected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our analyses in Figure 2, we also showed that relative binding of endogenous Ubc12 to DCN1 was reduced in the SENP8-deficient background in comparison to SENP8-corrected cells, suggesting that the aberrant neddylation observed in SENP8 knockout cells may contribute to a weakened Ubc12-DCN1 interaction (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 5\u2014figure supplement 1A co-IP experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "10664d3c-24c5-439a-b661-b0774f4759d5",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C63",
+      "claim": "A decrease in total levels of the E2 conjugating enzyme UBE2F is observed in SENP8 knockout cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, we also observed a decrease in total levels of the E2 conjugating enzyme UBE2F in the SENP8 knockout cell lines (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 5B immunoblot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "234a8590-da2a-4fe9-9bdb-a8bbe7d443a5",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C64",
+      "claim": "UBE2F has a unique preference for CUL5 neddylation.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study demonstrated that while Ubc12 targets all other cullin subunits for activation, UBE2F has a unique preference for CUL5 neddylation (Huang et al., 2009a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Huang et al., 2009a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "be3c2608-2a01-49cc-a659-407e824e6159",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C65",
+      "claim": "A marked decrease in CUL5 and CUL1 neddylation is observed in SENP8-deficient cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, we observed a marked decrease in CUL5 as well as CUL1 neddylation in SENP8-deficient cells, whereas the neddylation of other cullin subunits was not substantially impacted (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 5C immunoblot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "370de2e9-72dd-4df5-99c0-76455c1bfafa",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C66",
+      "claim": "The neddylation defects observed in SENP8 knockout cells are reversed by complementation with ectopically expressed WT SENP8.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the neddylation defects observed in SENP8 knockout cells were reversed by complementation with ectopically expressed WT SENP8 (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 5D immunoblot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "2c62f9a3-0824-4bd3-930c-de840468e44b",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C67",
+      "claim": "Overexpression of WT Ubc12 and DCN1 constructs in SENP8-deficient cells restores CUL1 and CUL5 neddylation levels.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a restoration of CUL1 and CUL5 neddylation levels when we overexpressed WT Ubc12 and DCN1 constructs in SENP8-deficient cells, further suggesting that loss of SENP8 affects optimal Ubc12/DCN1 function (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "bc487303-6328-46ba-b607-d4a36ac8e85c",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C68",
+      "claim": "SENP8-deficient cells show accelerated cell growth compared to parental HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we observed that the SENP8-deficient cells showed accelerated cell growth in comparison to parental HeLa cells (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 6B cell growth assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "10c0274b-90b2-43e2-9905-daabe1228f35",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C69",
+      "claim": "Loss of SENP8 contributes to a reduction in the subpopulation of G1 cells and a concomitant increase of cells in S and G2/M phases.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we found that loss of SENP8 contributes to notable changes in the cell cycle profiles of asynchronously dividing cells, including a reduction in the subpopulation of G1 cells, and a concomitant increase of cells in S and G2/M phases (Figure 6C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 6C and D flow cytometry analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "680367d9-8e51-428f-b85f-35c4edb85b3a",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C70",
+      "claim": "The reduction in G1 phase cells observed in SENP8-deficient cells is partially rescued through complementation with WT SENP8.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the reduction in G1 phase cells observed in SENP8-deficient cells was partially rescued through complementation with WT SENP8 (Figure 6C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 6C and D flow cytometry analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "bd46bb15-b54c-48da-b1b6-eadf29ba70f8",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C71",
+      "claim": "EdU incorporation begins at 6-8 hr following release from nocodozole in parental HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while EdU incorporation normally begins at 6\u20138 hr following release from nocodozole in the parental HeLa cell line, the accumulation of EdU positive cells occurs earlier at 4\u20136 hr in SENP8 knockout cells (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 6E flow cytometry analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "6e3220bf-2f82-40f9-adbb-793a326e73f0",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C72",
+      "claim": "The accumulation of EdU positive cells occurs earlier at 4-6 hr in SENP8 knockout cells following release from nocodozole.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while EdU incorporation normally begins at 6\u20138 hr following release from nocodozole in the parental HeLa cell line, the accumulation of EdU positive cells occurs earlier at 4\u20136 hr in SENP8 knockout cells (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 6E flow cytometry analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "ba61c48d-647d-4728-82bf-b001c4567b1f",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C73",
+      "claim": "Premature EdU incorporation in SENP8 knockout cells can be partially reversed by complementation with wild-type SENP8.",
+      "claim_type": "EXPLICIT",
+      "source": "This premature EdU incorporation could be partially reversed by complementation with wild-type SENP8 (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 6E flow cytometry analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "b77aa47f-ae80-448d-9ee8-f05e8fc572f0",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C74",
+      "claim": "SENP8 function is important in maintaining proper cell growth and G1/S cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results show that SENP8 function is important in maintaining proper cell growth and G1/S cell cycle progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the cell cycle and growth experiments in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "e9a75d8d-c664-4135-9700-ec54fdb34d2f",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C75",
+      "claim": "K-\u03b5-GG-modified peptides from proteins involved in cell proliferation are relatively more abundant in WT cells versus SENP8 knockout cells treated with MG132.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, K-\u03b5-GG-modified peptides from proteins involved in cell proliferation were relatively more abundant in WT cells versus SENP8 knockout cells (Figure 7C and Figure 7\u2014figure supplement 1D), indicative of enhanced ubiquitylation of these targets.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 7C SILAC-MS analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "ec0d1d0d-d860-4431-a01f-6dc308e7fd60",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C76",
+      "claim": "Notable targets with reduced ubiquitylation status in SENP8 knockout cells include Cdc25A, UHRF1, and \u03b2-catenin.",
+      "claim_type": "EXPLICIT",
+      "source": "Notable targets with reduced ubiquitylation status in SENP8 knockout cells include substrates of the Cul1-based Skp1/Cul1/F-box protein (SCF)\u03b2TRCP E3 ubiquitin ligase complex, such as Cdc25A (Donzelli et al., 2002; Busino et al., 2003; Jin et al., 2003), UHRF1 (ICBP90) (Chen et al., 2013), and \u03b2-catenin (Latres et al., 1999; Walker et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is identified from SILAC-MS data and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "0d710204-9f28-4ef6-ab61-339986cf1163",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C77",
+      "claim": "SENP8 deficiency results in the prolonged half-life of Cdc25A in cycloheximide chase assays.",
+      "claim_type": "EXPLICIT",
+      "source": "SENP8 deficiency results in the prolonged half-life of Cdc25A in cycloheximide chase assays, a protein which normally exhibits very rapid turnover in human cells (Busino et al., 2003) (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 7D cycloheximide chase assay and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "64dbfe3d-1617-4053-8f89-4dba1e6e5901",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C78",
+      "claim": "SENP8 loss contributes to reduced accumulation of higher molecular weight species of Cdc25A following MG132 treatment, indicative of decreased Cdc25A polyubiquitylation.",
+      "claim_type": "EXPLICIT",
+      "source": "SENP8 loss also contributes to the reduced accumulation of higher molecular weight species of Cdc25A following MG132 treatment, indicative of decreased Cdc25A polyubiquitylation in comparison to WT cells. (Figure 7\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 7\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "6a92abff-8c73-47d5-a957-df14d7ca3030",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C79",
+      "claim": "Asynchronous SENP8-deficient cells show increased total levels of Cdt1, Set8, and p21.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, asynchronous SENP8-deficient cells show increased total levels of proteins identified by our MS screen, as well as other key substrates of the SCFSkp2, CRL4Cdt2, and SCFFbw7 E3 ubiquitin ligases with involvement in DNA replication and cell cycle control. These proteins include the origin licensing factor Cdt1 (Li et al., 2003; Jin et al., 2006; Nishitani et al., 2006), the histone H4 lysine 20 monomethylase Set8 (PR-Set7) (Abbas et al., 2010; Centore et al., 2010; Wu et al., 2010), the cyclin-dependent kinase (CDK) inhibitor p21 (Bornstein et al., 2003; Abbas et al., 2008) (Figure 7E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 7E immunoblot analysis and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "1b439264-71aa-4b92-977c-a2cde5fbc57d",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C80",
+      "claim": "Asynchronous SENP8-deficient cells show increased total levels of Cyclin E1.",
+      "claim_type": "EXPLICIT",
+      "source": "the regulatory cyclin for CDK2, Cyclin E1 (Koepp et al., 2001; Hao et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 7E immunoblot analysis and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "73ff2c79-0cd1-40cf-bfd2-3b9ef07e5d1c",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C81",
+      "claim": "The characteristic G1/S degradation patterns of both Cdc25A and UHRF1 are substantially altered in SENP8-deficient cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the characteristic G1/S degradation patterns of both Cdc25A and UHRF1, identified from our SILAC-MS screen in Figure 7B, were substantially altered in SENP8-deficient cells (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 7F immunoblot analysis of synchronized cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "4940bcaf-62b2-4a30-b4f4-05b63107830b",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C82",
+      "claim": "SENP8-deficient cells show increased levels of the E2F targets Cyclin E1 and Cyclin A2.",
+      "claim_type": "EXPLICIT",
+      "source": "Accompanying the increased stability of these substrates, we found other evidence to support premature S phase entry in SENP8-deficient cells, such as increased levels of the E2F targets Cyclin E1 and Cyclin A2",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 7F immunoblot analysis and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "60f41a45-80cb-4ee8-a376-ac1fee4a22b7",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C83",
+      "claim": "SENP8-deficient cells show decreased accumulation of the G1 cyclin Cyclin D1 and the CDK inhibitor p27.",
+      "claim_type": "EXPLICIT",
+      "source": "and decreased accumulation of the G1 cyclin Cyclin D1 and the CDK inhibitor p27 (Resnitzky et al., 1994; Soucek et al., 1997; Sigl et al., 2009; Yuan et al., 2014) (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 7F immunoblot analysis and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "e8457eda-e243-4eb3-a52f-19e25733a76c",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C84",
+      "claim": "The increased stabilization of CRL substrates such as Cdc25A, UHRF1, and other factors likely underlies the accelerated S phase entry and loss of proper G1/S phase regulation in SENP8-deficient cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we speculate that the increased stabilization of CRL substrates such as Cdc25A, UHRF1, and probably several other factors underlie the accelerated S phase entry and loss of proper G1/S phase regulation in SENP8-deficient cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the combined data from Figures 6 and 7.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "9919cd7a-0566-4873-a31d-1c023f70611d",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C85",
+      "claim": "Cdc25A acts as a major regulator of both the G1/S and G2/M cell cycle transitions by dephosphorylating and activating Cyclin E/Cdk2 and Cyclin B/Cdk1 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Cdc25A acts as a major regulator of both the G1/S and G2/M cell cycle transitions by dephosphorylating and activating Cyclin E/Cdk2 and Cyclin B/Cdk1 complexes, respectively (Strausfeld et al., 1991; Blomberg and Hoffmann, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "ea210d5f-ad16-4689-9fb8-24c311d2ab09",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C86",
+      "claim": "Overexpression of Cdc25A results in shortening of G1 phase and increased cyclin E- and cyclin A-associated kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Several reports have observed shortening of G1 phase and increased cyclin E- and cyclin A-associated kinase activity following overexpression of Cdc25A (Blomberg and Hoffmann, 1999; Sexl et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "f07e63f0-d38c-4b7b-98c0-720616788508",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C87",
+      "claim": "The decreased CRL function accompanying SENP8 loss does not affect all CRL substrates uniformly and is likely to have substrate-specific effects.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also apparent from our studies that the decreased CRL function accompanying SENP8 loss does not affect all CRL substrates uniformly and is likely to have substrate-specific effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that not all CRL substrates are equally affected.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "faa82914-1533-4e1a-aace-eb3a2b839f10",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C88",
+      "claim": "SENP8 depletion does not result in a significant increase in cells with >4C DNA content or induction of a DNA damage response.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, SENP8 depletion does not entirely phenocopy the effects of complete inhibition of CRL activity following MLN4924 treatment, as we did not see a significant increase in cells with >4C DNA content (indicative of cells undergoing multiple rounds of replication without cell division, or re-replication) or induction of a DNA damage response in SENP8 knockout cells (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "94b11c71-27ed-45b8-a185-78648720c1eb",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C89",
+      "claim": "CSN inhibition results in substrate-specific stabilization dependent on auto-ubiquitylation of unique substrate recognition modules of CRLs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, using a CSN5-specific inhibitor developed by Novartis, it was recently shown that CSN inhibition does not have pleiotropic effects on all CRL substrates as MLN4924 treatment does (Schlierf et al., 2016), but results in substrate-specific stabilization. This effect was shown to be dependent on the auto-ubiquitylation of unique substrate recognition modules of CRLs following sustained neddylation and activation of CRL complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Schlierf et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "f5997e49-d2f2-4c2f-bc21-eccd757c0b19",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C90",
+      "claim": "There is a correlation between overactivation of NEDD8 pathway components (including NEDD8, UBA3, NAE1, and Ubc12) and cancer progression and poor prognosis in human lung cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Several recent studies have observed a correlation between overactivation of NEDD8 pathway components, including NEDD8, UBA3, NAE1, and Ubc12, with cancer progression and poor prognosis in human lung cancers (Li et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Li et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "43a7be57-b985-4a88-b058-b873621879e3",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C91",
+      "claim": "There is a correlation between overactivation of NEDD8 pathway components and cancer progression and poor prognosis in colorectal cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "colorectal cancers (Xie et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Xie et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "a6331ca7-3ecd-4d8c-a2c0-b55fdbce8eba",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C92",
+      "claim": "There is a correlation between overactivation of NEDD8 pathway components and cancer progression and poor prognosis in glioblastomas.",
+      "claim_type": "EXPLICIT",
+      "source": "and glioblastomas (Hua et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hua et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "62b1ad0f-82cb-4b04-bb2a-945c75c2e569",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C93",
+      "claim": "Auto-neddylation within the NEDD8 pathway may represent a quality control mechanism to limit adverse consequences associated with elevated NEDD8 conjugation and CRL activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, auto-neddylation within the NEDD8 pathway may represent a deliberate quality control mechanism to limit adverse consequences associated with elevated NEDD8 conjugation and CRL activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the findings of the study.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "759cb5a5-c593-4244-8c72-efc51c09562d",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C94",
+      "claim": "NEDD8 conjugation to Ubc12 and other components occurs at defined Lys residues which are evolutionarily conserved across species.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this notion, we observed in our own study that NEDD8 conjugation to Ubc12 and other components occurs at defined Lys residues, which are evolutionarily conserved across species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the MS data and sequence alignments in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "e682e133-bd18-4fd4-a45f-2eec602a160f",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C95",
+      "claim": "SENP8 is a key regulator of the NEDD8 pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, our study characterizes the SENP8 protease as a key regulator of the NEDD8 pathway",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the comprehensive characterization in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "a69043e9-3b16-4f30-959a-02e999cd2fe9",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "claim_id": "C96",
+      "claim": "SENP8 is a potential pharmacological target to control CRL-mediated processes in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "implicating SENP8 as a potential pharmacological target to control CRL-mediated processes in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the functional importance of SENP8 demonstrated in the study.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "24f03c78-ad03-468f-830d-7a7683b82680",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a deconjugation-resistant NEDD8 L73P mutant that is resistant to CSN-mediated cleavage in vitro and in cells, enabling stabilization and enrichment of neddylated substrates for mass spectrometry identification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C26-C34 collectively demonstrate the development and validation of the NEDD8 L73P mutant. In vitro deneddylation assays (C29, C30), cellular immunoprecipitation experiments (C31, C33), and MS analysis (C34) provide converging evidence that the L73P mutation at the P4 position renders NEDD8 resistant to CSN cleavage while maintaining normal conjugation activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "126fce52-bee7-423a-a8bd-331b0a59879f",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Ubc12, a NEDD8-specific E2 conjugating enzyme, is a substrate for auto-neddylation at its N-terminal lysine residues, particularly Lys3, which is evolutionarily conserved across species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C35-C42 provide strong evidence for Ubc12 as a neddylation substrate. MS/MS analysis identified K3 as the modification site (C35), mutagenesis experiments demonstrated that N-terminal lysines are critical (C40, C41), and the modification is specific to NEDD8 versus ubiquitin (C39). The evolutionary conservation (C37) and MLN4924 sensitivity (C38) further support this as a bona fide neddylation event.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "e1324b51-b2d5-422c-b41c-a0f8e93b5bf7",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "N-terminal neddylation of Ubc12 weakens its binding to the co-E3 ligase DCN1, potentially affecting downstream NEDD8 pathway function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 and C62 demonstrate through co-immunoprecipitation experiments that neddylated Ubc12 shows reduced interaction with DCN1 compared to unmodified Ubc12. The NK0 mutant (which cannot be neddylated) maintains DCN1 binding (C44), while WT Ubc12 shows reduced DCN1 binding when neddylated (C45). This is corroborated in SENP8-deficient cells (C62).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "7036998b-b89d-409c-ac15-870204b9586f",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SENP8 is the primary protease that regulates Ubc12 auto-neddylation both in vitro and in cells, functioning distinctly from CSN.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C47-C55 provide comprehensive evidence through multiple approaches: siRNA depletion (C47), CRISPR knockout (C48, C49), in vitro deneddylation assays (C51, C53, C54), and MLN4924 sensitivity (C50). The specificity for SENP8 over CSN is demonstrated through comparative experiments (C47, C54), and the cis mechanism is established (C52).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "ebdc2118-1458-4943-80f7-5a73ea777724",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SENP8-deficient cells show aberrant neddylation of multiple NEDD8 conjugation pathway components including Ubc12, NAE1, UBA3, DCUN1D1, DCUN1D5, and NEDD8 itself, with decreased CUL5 neddylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C56-C61 demonstrate through immunoblotting (C56, C61) and quantitative SILAC-MS analysis (C58, C59) that SENP8 loss leads to global neddylation defects. The identification of specific K-\u03b5-GG modifications on pathway components (C58) and the observation of di-neddylated species (C61) provide strong evidence for SENP8's role in preventing aberrant neddylation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "2974d17d-9309-412a-9e7d-3a556d64defb",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SENP8 deficiency leads to decreased levels of UBE2F and reduced CUL1 and CUL5 neddylation, which can be rescued by SENP8 complementation or overexpression of Ubc12 and DCN1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 demonstrate through immunoblotting that SENP8 knockout cells show decreased UBE2F levels (C63) and reduced CUL1/CUL5 neddylation (C65). The specificity for CUL5 is consistent with UBE2F's known preference (C64). Rescue experiments with SENP8 (C66) or Ubc12/DCN1 overexpression (C67) provide functional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "e54a8fab-d2ee-402e-a6b5-c3ba5b63db1d",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Loss of SENP8 function contributes to accelerated cell growth, altered cell cycle distribution with reduced G1 phase cells, and premature S phase entry, which can be partially rescued by SENP8 complementation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C68-C74 demonstrate through multiple assays that SENP8 deficiency affects cell cycle progression. Cell growth assays (C68), flow cytometry analysis of DNA content and EdU incorporation (C69-C73), and synchronized cell experiments (C71-C73) provide converging evidence. The partial rescue by SENP8 complementation (C70, C73) establishes causality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "30cd047e-ef58-4d1f-99ae-4c45bf7f2d3d",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Loss of SENP8 function leads to accumulation of CRL substrates including Cdc25A, UHRF1, Cdt1, Set8, p21, and Cyclin E1, with altered ubiquitylation status and increased protein stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C75-C84 provide comprehensive evidence through SILAC-MS analysis (C75, C76), cycloheximide chase assays (C77), immunoblotting of asynchronous (C79, C80) and synchronized cells (C81-C83). The reduced K-\u03b5-GG modification in MG132-treated SENP8 KO cells (C75) and prolonged half-life of substrates (C77) demonstrate decreased CRL activity. The speculation about mechanism (C84) is appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "c48c487c-3361-4d71-8735-1390545f0226",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "NEDD8 is a ubiquitin-like modifier that activates cullin-RING ligases through an enzymatic cascade, with NEDD8 conjugation to cullins controlling approximately 10-20% of cellular ubiquitylation events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C11 represent established background knowledge about the NEDD8 pathway, supported by multiple citations to review articles and primary literature. This provides the necessary context for the study but does not constitute a novel finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "8d773573-3447-42d8-9bf0-66675f715f6f",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "MLN4924 is an inhibitor of the NEDD8 E1 enzyme that blocks neddylation in cells and has demonstrated antitumor activity in preclinical studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C13, and C32 describe the established properties of MLN4924, supported by citations and confirmed experimentally in this study (C32). This serves as a control and validation tool but is not a novel finding of this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "0282192a-6c58-439a-a71a-d30593ff5a9d",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Several non-cullin proteins including p53, E2F1, ribosomal protein L11, Smurf1, and Histone H4 have been identified as neddylation targets in previous studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C18 cite prior literature identifying non-cullin neddylation substrates. These provide context for the current study's focus on identifying additional non-cullin substrates but are not novel findings of this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "92d7c556-fa32-4d2d-ab10-0aa75c12049b",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CSN5 is the major cullin deneddylase specific for neddylated cullins, while SENP8 functions distinctly in deneddylating primarily non-cullin substrates and hyper-neddylated cullins, with the two enzymes having non-overlapping functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C25 summarize established knowledge about CSN and SENP8 from prior literature, supported by multiple citations. This provides the rationale for investigating SENP8's specific substrates but represents background rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "0300d284-3de3-45a6-95c6-4c6ffa042313",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Overexpression of exogenous NEDD8 can trigger NEDD8 conjugation through the ubiquitylation machinery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C2 cites prior work (Hjerpe et al., 2012) describing a technical artifact that motivated the development of the L73P approach. This is background information justifying the methodological approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "07e2e614-b68c-46ab-9b80-6931aa23c622",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Cdc25A acts as a major regulator of G1/S and G2/M cell cycle transitions, and its overexpression results in shortened G1 phase and increased cyclin-associated kinase activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86 cite established knowledge about Cdc25A function from prior literature. This provides mechanistic context for interpreting the cell cycle defects observed in SENP8-deficient cells but is not a novel finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "a5bc0c3e-1c86-4303-94a4-b08d51439d0d",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The decreased CRL function accompanying SENP8 loss has substrate-specific effects and does not entirely phenocopy complete CRL inhibition by MLN4924 or CSN inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C89 provide important qualifications about the specificity of SENP8's effects. The observation that SENP8 depletion doesn't cause re-replication or DNA damage (C88) and the comparison to CSN inhibition (C89) help define the scope of SENP8's function. These are interpretive observations rather than primary findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "b3b37c14-9216-48d6-a8b3-3358b8a5424d",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Overactivation of NEDD8 pathway components correlates with cancer progression in multiple cancer types, and auto-neddylation may represent a quality control mechanism involving evolutionarily conserved lysine residues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90-C92 cite correlations from prior studies, while C93-C94 represent speculation about the biological significance of auto-neddylation. The speculation (C93) is reasonable given the data but lacks direct experimental validation. The evolutionary conservation (C94) is observed but its functional significance remains to be fully established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    },
+    {
+      "id": "575fafa3-de24-469a-97ab-31c47e133452",
+      "content_id": "7ef41ca4-fd51-480d-a1e2-796903ce0892",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "SENP8 is a key regulator of the NEDD8 pathway and a potential pharmacological target to control CRL-mediated processes in cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C96 represent the overall conclusions of the study. C95 is well-supported by the comprehensive characterization throughout the manuscript. C96 is speculative regarding therapeutic potential but is a reasonable inference based on SENP8's functional importance demonstrated in the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:00:17.665696Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c0e9682f-4f5a-49bf-9120-10ef158b11d8",
+      "result_id": "24f03c78-ad03-468f-830d-7a7683b82680"
+    },
+    {
+      "claim_id": "63d74c28-eb24-47ad-b9ca-1059e663796c",
+      "result_id": "24f03c78-ad03-468f-830d-7a7683b82680"
+    },
+    {
+      "claim_id": "74d2ab8b-d3be-4d37-b4b8-50e5e77e6e2a",
+      "result_id": "24f03c78-ad03-468f-830d-7a7683b82680"
+    },
+    {
+      "claim_id": "d5f749d5-892f-41d7-8ec0-69efd453cd12",
+      "result_id": "24f03c78-ad03-468f-830d-7a7683b82680"
+    },
+    {
+      "claim_id": "4d15042f-6e70-4229-ba69-21cc6be85035",
+      "result_id": "24f03c78-ad03-468f-830d-7a7683b82680"
+    },
+    {
+      "claim_id": "748a8972-f474-4a89-b61d-49b3b1e2f3d4",
+      "result_id": "24f03c78-ad03-468f-830d-7a7683b82680"
+    },
+    {
+      "claim_id": "98ea0db8-686c-4858-b9c1-60ba1fd0d029",
+      "result_id": "24f03c78-ad03-468f-830d-7a7683b82680"
+    },
+    {
+      "claim_id": "1edc88c7-e5af-4924-88f4-f978b8e44e9a",
+      "result_id": "24f03c78-ad03-468f-830d-7a7683b82680"
+    },
+    {
+      "claim_id": "e7412acc-1fe2-41a3-90b7-ec7f87bc164d",
+      "result_id": "24f03c78-ad03-468f-830d-7a7683b82680"
+    },
+    {
+      "claim_id": "3e101d02-c49d-43fd-8eba-1ac63defae35",
+      "result_id": "24f03c78-ad03-468f-830d-7a7683b82680"
+    },
+    {
+      "claim_id": "19f1d7b2-9238-4dac-be60-8a660c84d12a",
+      "result_id": "126fce52-bee7-423a-a8bd-331b0a59879f"
+    },
+    {
+      "claim_id": "5b668aeb-3821-4614-a2e5-92515404ed7f",
+      "result_id": "126fce52-bee7-423a-a8bd-331b0a59879f"
+    },
+    {
+      "claim_id": "95eefa8c-fa00-42ce-9b38-c8e1c4c531e7",
+      "result_id": "126fce52-bee7-423a-a8bd-331b0a59879f"
+    },
+    {
+      "claim_id": "fa5b85b0-661c-4036-992f-73c40928e7dd",
+      "result_id": "126fce52-bee7-423a-a8bd-331b0a59879f"
+    },
+    {
+      "claim_id": "c863ee77-d949-424d-9ba1-8d0c7bc3b9c3",
+      "result_id": "126fce52-bee7-423a-a8bd-331b0a59879f"
+    },
+    {
+      "claim_id": "915695ee-a90c-460d-aae6-7f0076a9d933",
+      "result_id": "126fce52-bee7-423a-a8bd-331b0a59879f"
+    },
+    {
+      "claim_id": "f358a744-f82b-4461-8a88-f8905a66dc44",
+      "result_id": "126fce52-bee7-423a-a8bd-331b0a59879f"
+    },
+    {
+      "claim_id": "376c64fe-ae32-465d-ae72-349ec221c1a1",
+      "result_id": "126fce52-bee7-423a-a8bd-331b0a59879f"
+    },
+    {
+      "claim_id": "7ee036a5-32e7-4fc2-914b-97770549013a",
+      "result_id": "126fce52-bee7-423a-a8bd-331b0a59879f"
+    },
+    {
+      "claim_id": "1d00846d-cb79-4731-9ff7-ea63cc0bb4b5",
+      "result_id": "e1324b51-b2d5-422c-b41c-a0f8e93b5bf7"
+    },
+    {
+      "claim_id": "c1062e5d-7dfa-48b0-b767-937c7fc53ce5",
+      "result_id": "e1324b51-b2d5-422c-b41c-a0f8e93b5bf7"
+    },
+    {
+      "claim_id": "afd468ee-1ccd-49b3-b68e-f536e64f8cfa",
+      "result_id": "e1324b51-b2d5-422c-b41c-a0f8e93b5bf7"
+    },
+    {
+      "claim_id": "df0a8759-b0b4-4bba-9fc9-21a4765c0362",
+      "result_id": "e1324b51-b2d5-422c-b41c-a0f8e93b5bf7"
+    },
+    {
+      "claim_id": "9297fdb0-0844-4f30-bbda-05933a006f26",
+      "result_id": "e1324b51-b2d5-422c-b41c-a0f8e93b5bf7"
+    },
+    {
+      "claim_id": "3fd0abbe-02ab-457a-b84e-32e3d6fc92f1",
+      "result_id": "7036998b-b89d-409c-ac15-870204b9586f"
+    },
+    {
+      "claim_id": "1a6c3870-e7f2-4e95-ac64-b79f03307e5f",
+      "result_id": "7036998b-b89d-409c-ac15-870204b9586f"
+    },
+    {
+      "claim_id": "3b817272-2156-4de0-a4fb-c305b3b68a8b",
+      "result_id": "7036998b-b89d-409c-ac15-870204b9586f"
+    },
+    {
+      "claim_id": "a1689fb3-0b03-499d-8f34-1c6a8689e335",
+      "result_id": "7036998b-b89d-409c-ac15-870204b9586f"
+    },
+    {
+      "claim_id": "72c18448-fc98-484e-a27c-69f4f8a23b0d",
+      "result_id": "7036998b-b89d-409c-ac15-870204b9586f"
+    },
+    {
+      "claim_id": "a6bef04f-cea9-42c5-b9dd-1822627b0d3e",
+      "result_id": "7036998b-b89d-409c-ac15-870204b9586f"
+    },
+    {
+      "claim_id": "26fee59b-9881-4eff-b1f9-693d43a731f4",
+      "result_id": "7036998b-b89d-409c-ac15-870204b9586f"
+    },
+    {
+      "claim_id": "110d8e90-bb2d-45c7-b1c0-1d6b97ba2f34",
+      "result_id": "7036998b-b89d-409c-ac15-870204b9586f"
+    },
+    {
+      "claim_id": "99e564e0-887a-444f-b7f9-e7b2c46a033e",
+      "result_id": "7036998b-b89d-409c-ac15-870204b9586f"
+    },
+    {
+      "claim_id": "156ea8e3-0b36-4595-b90c-da53f699361f",
+      "result_id": "7036998b-b89d-409c-ac15-870204b9586f"
+    },
+    {
+      "claim_id": "0b278cd4-0ab7-43f3-ab19-6c7db2093097",
+      "result_id": "ebdc2118-1458-4943-80f7-5a73ea777724"
+    },
+    {
+      "claim_id": "f8312dd8-afaa-42b2-bad6-b0a37c15c08a",
+      "result_id": "ebdc2118-1458-4943-80f7-5a73ea777724"
+    },
+    {
+      "claim_id": "fd941645-aadf-479d-ac82-82e52a36d94d",
+      "result_id": "ebdc2118-1458-4943-80f7-5a73ea777724"
+    },
+    {
+      "claim_id": "90dbddae-fd5f-47a0-97df-202f474098bf",
+      "result_id": "ebdc2118-1458-4943-80f7-5a73ea777724"
+    },
+    {
+      "claim_id": "2aa428fe-1cfa-4371-bb4a-13364ae18af7",
+      "result_id": "ebdc2118-1458-4943-80f7-5a73ea777724"
+    },
+    {
+      "claim_id": "6f3a1c31-7e73-42e8-9ec0-fc335350ad09",
+      "result_id": "ebdc2118-1458-4943-80f7-5a73ea777724"
+    },
+    {
+      "claim_id": "b542417e-ea3a-463f-b95b-ecff4b01f790",
+      "result_id": "ebdc2118-1458-4943-80f7-5a73ea777724"
+    },
+    {
+      "claim_id": "10664d3c-24c5-439a-b661-b0774f4759d5",
+      "result_id": "2974d17d-9309-412a-9e7d-3a556d64defb"
+    },
+    {
+      "claim_id": "234a8590-da2a-4fe9-9bdb-a8bbe7d443a5",
+      "result_id": "2974d17d-9309-412a-9e7d-3a556d64defb"
+    },
+    {
+      "claim_id": "be3c2608-2a01-49cc-a659-407e824e6159",
+      "result_id": "2974d17d-9309-412a-9e7d-3a556d64defb"
+    },
+    {
+      "claim_id": "370de2e9-72dd-4df5-99c0-76455c1bfafa",
+      "result_id": "2974d17d-9309-412a-9e7d-3a556d64defb"
+    },
+    {
+      "claim_id": "2c62f9a3-0824-4bd3-930c-de840468e44b",
+      "result_id": "2974d17d-9309-412a-9e7d-3a556d64defb"
+    },
+    {
+      "claim_id": "56c3eaac-2f41-43de-ac28-f3c9d5840552",
+      "result_id": "e54a8fab-d2ee-402e-a6b5-c3ba5b63db1d"
+    },
+    {
+      "claim_id": "bc487303-6328-46ba-b607-d4a36ac8e85c",
+      "result_id": "e54a8fab-d2ee-402e-a6b5-c3ba5b63db1d"
+    },
+    {
+      "claim_id": "10c0274b-90b2-43e2-9905-daabe1228f35",
+      "result_id": "e54a8fab-d2ee-402e-a6b5-c3ba5b63db1d"
+    },
+    {
+      "claim_id": "680367d9-8e51-428f-b85f-35c4edb85b3a",
+      "result_id": "e54a8fab-d2ee-402e-a6b5-c3ba5b63db1d"
+    },
+    {
+      "claim_id": "bd46bb15-b54c-48da-b1b6-eadf29ba70f8",
+      "result_id": "e54a8fab-d2ee-402e-a6b5-c3ba5b63db1d"
+    },
+    {
+      "claim_id": "6e3220bf-2f82-40f9-adbb-793a326e73f0",
+      "result_id": "e54a8fab-d2ee-402e-a6b5-c3ba5b63db1d"
+    },
+    {
+      "claim_id": "ba61c48d-647d-4728-82bf-b001c4567b1f",
+      "result_id": "e54a8fab-d2ee-402e-a6b5-c3ba5b63db1d"
+    },
+    {
+      "claim_id": "b77aa47f-ae80-448d-9ee8-f05e8fc572f0",
+      "result_id": "e54a8fab-d2ee-402e-a6b5-c3ba5b63db1d"
+    },
+    {
+      "claim_id": "50490267-21c1-40f2-ab78-504890e60ec2",
+      "result_id": "30cd047e-ef58-4d1f-99ae-4c45bf7f2d3d"
+    },
+    {
+      "claim_id": "e9a75d8d-c664-4135-9700-ec54fdb34d2f",
+      "result_id": "30cd047e-ef58-4d1f-99ae-4c45bf7f2d3d"
+    },
+    {
+      "claim_id": "ec0d1d0d-d860-4431-a01f-6dc308e7fd60",
+      "result_id": "30cd047e-ef58-4d1f-99ae-4c45bf7f2d3d"
+    },
+    {
+      "claim_id": "0d710204-9f28-4ef6-ab61-339986cf1163",
+      "result_id": "30cd047e-ef58-4d1f-99ae-4c45bf7f2d3d"
+    },
+    {
+      "claim_id": "64dbfe3d-1617-4053-8f89-4dba1e6e5901",
+      "result_id": "30cd047e-ef58-4d1f-99ae-4c45bf7f2d3d"
+    },
+    {
+      "claim_id": "6a92abff-8c73-47d5-a957-df14d7ca3030",
+      "result_id": "30cd047e-ef58-4d1f-99ae-4c45bf7f2d3d"
+    },
+    {
+      "claim_id": "1b439264-71aa-4b92-977c-a2cde5fbc57d",
+      "result_id": "30cd047e-ef58-4d1f-99ae-4c45bf7f2d3d"
+    },
+    {
+      "claim_id": "73ff2c79-0cd1-40cf-bfd2-3b9ef07e5d1c",
+      "result_id": "30cd047e-ef58-4d1f-99ae-4c45bf7f2d3d"
+    },
+    {
+      "claim_id": "4940bcaf-62b2-4a30-b4f4-05b63107830b",
+      "result_id": "30cd047e-ef58-4d1f-99ae-4c45bf7f2d3d"
+    },
+    {
+      "claim_id": "60f41a45-80cb-4ee8-a376-ac1fee4a22b7",
+      "result_id": "30cd047e-ef58-4d1f-99ae-4c45bf7f2d3d"
+    },
+    {
+      "claim_id": "e8457eda-e243-4eb3-a52f-19e25733a76c",
+      "result_id": "30cd047e-ef58-4d1f-99ae-4c45bf7f2d3d"
+    },
+    {
+      "claim_id": "6fc3063e-5712-489f-8e28-b9b070bb00a2",
+      "result_id": "c48c487c-3361-4d71-8735-1390545f0226"
+    },
+    {
+      "claim_id": "58e467cf-662d-4231-89c4-368a7632b8ff",
+      "result_id": "c48c487c-3361-4d71-8735-1390545f0226"
+    },
+    {
+      "claim_id": "87c78fda-fa26-4d40-837d-6805cba62580",
+      "result_id": "c48c487c-3361-4d71-8735-1390545f0226"
+    },
+    {
+      "claim_id": "0f0bdd99-0ebe-44da-813c-fc44fced0e1c",
+      "result_id": "c48c487c-3361-4d71-8735-1390545f0226"
+    },
+    {
+      "claim_id": "0d6b0237-b65c-4e44-9d91-a53a698eab32",
+      "result_id": "8d773573-3447-42d8-9bf0-66675f715f6f"
+    },
+    {
+      "claim_id": "ef8ebaf7-fb8a-4cab-9032-a70ad3367a59",
+      "result_id": "8d773573-3447-42d8-9bf0-66675f715f6f"
+    },
+    {
+      "claim_id": "1edc88c7-e5af-4924-88f4-f978b8e44e9a",
+      "result_id": "8d773573-3447-42d8-9bf0-66675f715f6f"
+    },
+    {
+      "claim_id": "91fdc9fa-fdc7-4b57-aef8-22d11839728e",
+      "result_id": "0282192a-6c58-439a-a71a-d30593ff5a9d"
+    },
+    {
+      "claim_id": "edc29675-826e-4b10-860e-d1821b4493bc",
+      "result_id": "0282192a-6c58-439a-a71a-d30593ff5a9d"
+    },
+    {
+      "claim_id": "6fbacca7-e9b6-44bc-b5dd-7d039ead3941",
+      "result_id": "0282192a-6c58-439a-a71a-d30593ff5a9d"
+    },
+    {
+      "claim_id": "43c9a494-282d-487d-8aef-26c20b802ba1",
+      "result_id": "0282192a-6c58-439a-a71a-d30593ff5a9d"
+    },
+    {
+      "claim_id": "4f13f700-ef5c-4b07-b064-c14b564fab16",
+      "result_id": "0282192a-6c58-439a-a71a-d30593ff5a9d"
+    },
+    {
+      "claim_id": "225dbbd4-5858-4b8b-8276-6c89fbe405ab",
+      "result_id": "92d7c556-fa32-4d2d-ab10-0aa75c12049b"
+    },
+    {
+      "claim_id": "e61044f2-a0cf-478e-8e14-aa1a216c624b",
+      "result_id": "92d7c556-fa32-4d2d-ab10-0aa75c12049b"
+    },
+    {
+      "claim_id": "97cecb97-7706-46c3-beb6-bc8dcfe17c54",
+      "result_id": "92d7c556-fa32-4d2d-ab10-0aa75c12049b"
+    },
+    {
+      "claim_id": "7396a271-54cb-49d3-babc-8ffe133ca58b",
+      "result_id": "92d7c556-fa32-4d2d-ab10-0aa75c12049b"
+    },
+    {
+      "claim_id": "6f81f18b-3e57-40c0-944d-aefc93ced2ae",
+      "result_id": "92d7c556-fa32-4d2d-ab10-0aa75c12049b"
+    },
+    {
+      "claim_id": "816706e2-a796-4f9b-b807-13d697ffd80e",
+      "result_id": "92d7c556-fa32-4d2d-ab10-0aa75c12049b"
+    },
+    {
+      "claim_id": "15134fc9-defa-4f66-96fe-6402a1eceac5",
+      "result_id": "92d7c556-fa32-4d2d-ab10-0aa75c12049b"
+    },
+    {
+      "claim_id": "e1b083dc-b5db-4010-9a3d-f75245711061",
+      "result_id": "0300d284-3de3-45a6-95c6-4c6ffa042313"
+    },
+    {
+      "claim_id": "9919cd7a-0566-4873-a31d-1c023f70611d",
+      "result_id": "07e2e614-b68c-46ab-9b80-6931aa23c622"
+    },
+    {
+      "claim_id": "ea210d5f-ad16-4689-9fb8-24c311d2ab09",
+      "result_id": "07e2e614-b68c-46ab-9b80-6931aa23c622"
+    },
+    {
+      "claim_id": "f07e63f0-d38c-4b7b-98c0-720616788508",
+      "result_id": "a5bc0c3e-1c86-4303-94a4-b08d51439d0d"
+    },
+    {
+      "claim_id": "faa82914-1533-4e1a-aace-eb3a2b839f10",
+      "result_id": "a5bc0c3e-1c86-4303-94a4-b08d51439d0d"
+    },
+    {
+      "claim_id": "94b11c71-27ed-45b8-a185-78648720c1eb",
+      "result_id": "a5bc0c3e-1c86-4303-94a4-b08d51439d0d"
+    },
+    {
+      "claim_id": "f5997e49-d2f2-4c2f-bc21-eccd757c0b19",
+      "result_id": "b3b37c14-9216-48d6-a8b3-3358b8a5424d"
+    },
+    {
+      "claim_id": "43a7be57-b985-4a88-b058-b873621879e3",
+      "result_id": "b3b37c14-9216-48d6-a8b3-3358b8a5424d"
+    },
+    {
+      "claim_id": "a6331ca7-3ecd-4d8c-a2c0-b55fdbce8eba",
+      "result_id": "b3b37c14-9216-48d6-a8b3-3358b8a5424d"
+    },
+    {
+      "claim_id": "62b1ad0f-82cb-4b04-bb2a-945c75c2e569",
+      "result_id": "b3b37c14-9216-48d6-a8b3-3358b8a5424d"
+    },
+    {
+      "claim_id": "759cb5a5-c593-4244-8c72-efc51c09562d",
+      "result_id": "b3b37c14-9216-48d6-a8b3-3358b8a5424d"
+    },
+    {
+      "claim_id": "e682e133-bd18-4fd4-a45f-2eec602a160f",
+      "result_id": "575fafa3-de24-469a-97ab-31c47e133452"
+    },
+    {
+      "claim_id": "a69043e9-3b16-4f30-959a-02e999cd2fe9",
+      "result_id": "575fafa3-de24-469a-97ab-31c47e133452"
+    }
+  ],
+  "comparisons": []
+}

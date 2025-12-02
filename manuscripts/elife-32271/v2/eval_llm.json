@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C9",
+      "C10",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Lapatinib and neuregulin (NRG) cooperatively enhance proliferation in HER2+ breast cancer cells. In multiple cell lines (SKBR3, BT474, AU565), low concentrations of lapatinib (40-400 nM) combined with 10 nM NRG increase proliferation by 25-30% compared to NRG alone, observed in both 2D and 3D culture systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C9, C10, C72-C74 provide converging evidence from multiple experimental systems (2D proliferation assays, cell counting, 3D spheroids) across multiple cell lines showing the synergistic proliferative effect. The data are internally consistent and replicated across different assay formats.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The lapatinib-NRG synergistic proliferation requires reversible inhibitor binding. The irreversible inhibitor neratinib, which forms a covalent bond with HER2C805, does not show the synergistic proliferative phenotype with NRG despite binding the same inactive conformation as lapatinib.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C13, C67-C69 demonstrate through comparative experiments that neratinib (irreversible) fails to reproduce the lapatinib (reversible) phenotype in both proliferation assays and phosphorylation studies. This supports the inference that dynamic, reversible binding is required for the synergistic effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C14",
+      "C15",
+      "C16",
+      "C75",
+      "C76"
+    ],
+    "result": "Lapatinib binds HER2 but not HER3, while bosutinib binds HER3 but not HER2. Thermal shift assays demonstrate that lapatinib confers strong thermal stability to HER2 but not HER3, whereas bosutinib shows the opposite selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C14-C16, C75-C76 are supported by TSA data (Figure 2a,b) and consistent with cited literature. The differential binding profiles are clearly demonstrated and form the basis for subsequent mechanistic experiments using these inhibitors as tools.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C21",
+      "C27",
+      "C51",
+      "C52",
+      "C77"
+    ],
+    "result": "Bosutinib, which binds HER3 but not HER2, induces proliferation in HER2+ breast cancer cells without additional NRG stimulation. This proliferation is enhanced by ectopic expression of wild-type HER3 but not ATP-binding deficient mutants, and can be curtailed by lapatinib treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C21, C27, C51-C52, C77 provide consistent evidence from proliferation assays, mutant studies, and drug combination experiments. The data support the conclusion that HER3 nucleotide pocket occupation has a structural role independent of catalytic activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C22",
+      "C26",
+      "C49",
+      "C70",
+      "C71"
+    ],
+    "result": "ATP-binding pocket occupation in HER3 is essential for HER2-HER3 heterodimerization and proliferative signaling. The ATP-binding deficient HER3KGG mutant abolishes ligand-induced HER3 phosphorylation, disrupts lapatinib-induced heterodimerization, and eliminates cooperative proliferation with lapatinib and NRG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20, C22, C26, C49, C70-C71 provide converging evidence from Western blots, FRET-FLIM, proliferation assays, and CETSA experiments. The HER3KGG mutant consistently disrupts HER3 function across multiple assays while maintaining proper membrane localization, supporting the structural role of ATP binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Lapatinib directly induces HER2-HER3 heterodimerization in the absence of exogenous NRG. FRET-FLIM measurements show lapatinib-driven HER2-HER3 association at levels similar to NRG stimulation in both SKBR3 cells (endogenous receptors) and MCF7 cells (ectopically expressed receptors).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by FRET-FLIM data (Figure 3a,b) showing lapatinib-induced dimerization in multiple cell systems. The observation that this occurs without exogenous NRG indicates intracellular domain-driven interactions, though the inference about mechanism requires integration with other data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C46",
+      "C83"
+    ],
+    "result": "Treatment with NRG, lapatinib, or bosutinib induces higher-order oligomers rather than simple dimers. STORM imaging shows shifts in cluster population size compared to control, consistent with the known ability of EGFR-family receptors to form higher-order oligomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C46, C83 are supported by STORM data (Figure 3e,f) and extensive literature on EGFR family oligomerization. However, the exact stoichiometry and composition of these oligomers remains uncertain as acknowledged by the authors, limiting mechanistic conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C38"
+    ],
+    "result": "The lapatinib-induced HER2-HER3 heterodimer is distinct from the canonical asymmetric active dimer. Molecular modeling predicts steric clashes between lapatinib and the active \u03b1-C helix conformation. Mutational analysis shows that the receiver-impaired HER2I714Q disrupts lapatinib-induced dimerization, while the activator-impaired HER3V945R does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33, C38 integrate molecular modeling with FRET-FLIM mutational analysis (Figure 4). The differential effects of activator vs. receiver mutations provide strong evidence for a non-canonical dimer interface, though the modeling predictions require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C41"
+    ],
+    "result": "The lapatinib-induced HER2-HER3 heterodimer adopts a symmetrical head-to-head orientation similar to the HER3 kinase domain crystal lattice. Mutations designed to disrupt the HER3-like interface (HER2N764R/K765F) abolish lapatinib-induced dimerization, while mutations targeting the EGFR-like interface (HER2I748R/V750R) do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38, C41 combine molecular modeling with targeted mutational analysis (Figure 5). The selective disruption by HER2N764R/K765F but not HER2I748R/V750R provides strong support for the head-to-head model, though alternative interpretations of the mutational effects cannot be completely excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The head-to-head HER2-HER3 dimer interface is functionally important for lapatinib-NRG cooperative proliferation. The HER3L700F mutant, designed to disrupt the head-to-head interface, abolishes drug-growth factor cooperative proliferation, while the HER3V945R active dimer mutant does not. This represents the first functional role ascribed to heterodimers consistent with the HER3-like head-to-head interface in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 link the structural model to functional outcomes through proliferation assays (Figure 6). The differential effects of HER3L700F vs. HER3V945R provide strong support for the functional importance of the head-to-head interface, representing a novel finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C44",
+      "C45"
+    ],
+    "result": "The synergy between lapatinib and neuregulin depends on their ability to promote atypical HER2-HER3 heterodimerization. Lapatinib stabilizes a particular HER2 conformer that drives formation of a head-to-head kinase domain heterodimer distinct from the canonical asymmetric active dimer. Sequestering receptors in these lapatinib-bound heterodimers benefits NRG-mediated proliferative signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C44-C45 represent the integrated conclusion from multiple lines of evidence including FRET-FLIM, molecular modeling, mutational analysis, and proliferation assays. The mechanistic model is well-supported by the data, though some aspects (e.g., how sequestration benefits signaling) involve inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Lapatinib-induced dimers may act as nucleation points for larger oligomeric signaling platforms that facilitate transition into active signaling heterodimers upon ligand binding due to the availability of dimerization partners in immediate proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C48 are explicitly speculative as stated in the Discussion. While the symmetrical nature of the modeled dimer and STORM clustering data provide some basis for this hypothesis, direct experimental evidence for this mechanism is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Development of small molecule therapy against HER3 should target the apo, inactive conformer rather than stabilizing the ATP-binding pocket occupied conformer. The substantial proliferative effect of low-dose lapatinib in the presence of growth factor may impact establishment of lapatinib resistance in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C54 represent therapeutic recommendations and speculation about clinical implications. While based on the experimental findings, these claims involve extrapolation beyond the data and would require clinical validation. The connection to resistance mechanisms is plausible but not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The findings provide a potential molecular mechanism for disappointing results in the ALTTO trial of lapatinib in adjuvant settings. This is consistent with literature showing that resistance occurs more readily with continuous low-dose lapatinib, that increased NRG production is a resistance mechanism, and that NRG expression correlates with disease recurrence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C61 connect the experimental findings to clinical observations through literature citations. While the mechanistic model could explain clinical outcomes, this represents post-hoc interpretation of trial results without direct experimental validation of the proposed mechanism in the clinical context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Background context on HER2 and HER3 in breast cancer: HER2 overexpression drives ~20% of breast cancers; HER2 has no known ligand while HER3 binds neuregulin; HER3 is a pseudokinase implicated in therapy resistance; HER3 can bind ATP and lapatinib binds HER3 with very low affinity in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C62-C65 represent established knowledge from the literature, properly cited. These provide necessary context for the study but are not novel findings. The characterizations are accurate based on the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C29",
+      "C34",
+      "C35",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Background on EGFR family kinase domain dimerization: The active dimer adopts an asymmetric activator-receiver orientation resembling CDK/cyclin interactions. HER3 lacks the conserved glutamate in the \u03b1-C helix and adopts an inactive-like conformation when ATP-bound. Lapatinib-bound receptors lack active asymmetrical kinase domain interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C34-C35, C78-C82 represent established structural biology knowledge properly cited from the literature. These provide essential mechanistic context for interpreting the novel findings but are not themselves new discoveries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Background on nucleotide binding pocket occupation in kinases and pseudokinases: ATP or inhibitor binding confers structural stability important for protein-protein interactions in multiple kinases (PKC\u03b5, PKB/Akt, IRE1, AMPK, RAF family). Many pseudokinases retain ATP-binding capability and require nucleotide binding for function (STRAD, FAM20A, JAK2 JH2, MLKL).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C94 provide comprehensive literature context on the structural role of nucleotide binding, properly cited. This background establishes the conceptual framework for investigating HER3 ATP binding but represents prior knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "Transient knockdown of HER3 with siRNA shows a modest but consistent reduction in the proliferative effect of lapatinib-NRG co-treatment, implicating HER3 as the relevant growth factor-binding receptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by experimental data (Figure 1\u2014figure supplement 1j) using two different siRNA oligonucleotides. However, the effect is described as modest, and the knockdown efficiency is not quantified in the claim, limiting the strength of the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "The conformational dynamics of HER2-HER3 heterodimerization are an important consideration for evaluating existing and future targeted therapy intervention strategies against HER2+ breast cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 represents a general conclusion drawn from the entire body of work. It is supported by the demonstrated complexity of HER2-HER3 interactions and the unexpected proliferative effects of inhibitor-ligand combinations, though it is more of a perspective than a testable result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "HER3 has been shown to retain a measure of autophosphorylation activity (not transphosphorylation) under specific circumstances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is a literature citation (Shi et al., 2010) providing context for HER3's classification as a pseudokinase. This is established prior knowledge relevant to interpreting the structural vs. catalytic roles of ATP binding.",
+    "result_type": "MINOR"
+  }
+]

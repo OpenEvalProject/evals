@@ -1,0 +1,1688 @@
+{
+  "submission": {
+    "id": "6498fff1-13fe-4780-9faa-72de9165f55e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:27:55.143166Z",
+    "updated_at": "2025-12-02T01:27:55.143166Z"
+  },
+  "content": [
+    {
+      "id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "submission_id": "6498fff1-13fe-4780-9faa-72de9165f55e",
+      "content_type": "manuscript",
+      "content_text": "# Synergy between the small intrinsically disordered protein Hsp12 and trehalose sustain viability after severe desiccation\n\n## Authors\n\n- Skylar Xantus Kim<sup>1</sup>\n- Gamze \u00c7amdere<sup>1</sup>\n- Xuchen Hu<sup>1</sup>\n- Douglas Koshland<sup>1</sup> ([ORCID: 0000-0003-3742-6294](https://orcid.org/0000-0003-3742-6294)) \u2020\n- Hugo Tapia<sup>1</sup> ([ORCID: 0000-0003-1901-2151](https://orcid.org/0000-0003-1901-2151)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAnhydrobiotes are rare microbes, plants and animals that tolerate severe water loss. Understanding the molecular basis for their desiccation tolerance may provide novel insights into stress biology and critical tools for engineering drought-tolerant crops. Using the anhydrobiote, budding yeast, we show that trehalose and Hsp12, a small intrinsically disordered protein (sIDP) of the hydrophilin family, synergize to mitigate completely the inviability caused by the lethal stresses of desiccation. We show that these two molecules help to stabilize the activity and prevent aggregation of model proteins both in vivo and in vitro. We also identify a novel in vitro role for Hsp12 as a membrane remodeler, a protective feature not shared by another yeast hydrophilin, suggesting that sIDPs have distinct biological functions.\n\n## Introduction\n\nIn the near future, global food security will be challenged by the effect of climate change on crop yields (Schwalm et al., 2017; Tirado et al., 2013). Potential solutions to more frequent drought may come from the study of diverse organisms, collectively named anhydrobiotes, which can survive extreme water loss. Anhydrobiotes include single celled organisms (bacteria and yeast), simple multicellular organisms (plant seeds), as well as complex multicellular plants and animals (resurrection ferns, tardigrades and nematodes). The acquisition of a desiccation tolerant state of all these organisms requires pre-exposure to a stress condition like nutrient starvation or reduced water that induces dramatic changes in the profile of gene expression and cellular constituents. Among all these changes, the identity of the stress effectors that are necessary and sufficient to mitigate all the stresses of desiccation remained unknown. Furthermore, the removal of water from organisms has the potential to induce many potential stresses, given the ubiquitous function of water in so many biological processes. Which of these potential stresses must be mitigated to allow desiccation tolerance also remains incomplete.\n\nAn important clue to the identification of critical stress effectors of desiccation came from the discovery that almost all anhydrobiotes have high levels of the disaccharide trehalose and small, hydrophilic, and intrinsically disordered proteins collectively called hydrophilins (Crowe et al., 1992; Potts, 2001). Recently, the in vivo requirements for trehalose and hydrophilins in desiccation tolerance have been addressed in nematodes, yeast and tardigrades that lack trehalose or hydrophilins because of either mutations or gene knock-downs using RNAi (Boothby et al., 2017; Erkut et al., 2011; Tapia and Koshland, 2014). The abrogation of these factors caused diverse impacts on desiccation tolerance, as measured by the organism\u2019s survival to drying. Nematodes lacking trehalose are extremely sensitive to short term desiccation, while yeast lacking trehalose are sensitive to only long term-tolerance desiccation (Erkut et al., 2011; Tapia and Koshland, 2014). At least one species of tardigrade is desiccation tolerant although naturally lacking trehalose (Boothby et al., 2017). Loss of individual different hydrophilins only partially reduces tolerance in nematodes, tardigrades, and yeast, and never to the degree as observed when lacking trehalose (Boothby et al., 2017; Calahan et al., 2011; Erkut et al., 2013). Indeed, in nematodes, even when a specific hydrophilin is missing,\u00a0>10% of nematodes survive, demonstrating moderately high levels of desiccation tolerance never observed in sensitive species (Erkut et al., 2013). The fact that loss of trehalose or individual hydrophilins can reduce desiccation tolerance shows they can mitigate one or more stresses of desiccation. However, the variability of their impact suggests that unknown combinations of trehalose, hydrophilins or additional, as yet unidentified, stress effectors must help mitigate the same or different lethal stresses of desiccation.\n\nTo complement these loss of function tests, we developed a system in budding yeast to examine the combinatorial roles of stress effectors in desiccation. Only 0.001% of exponentially dividing yeast cells survive desiccation compared to 20\u201340% survival of stationary phase cells (Calahan et al., 2011). To assess the sufficiency of different stress effectors (e.g. of trehalose or hydrophilins) to confer desiccation tolerance, we engineered exponentially dividing cells to have increased levels of only trehalose or individual tardigrade hydrophilins (independent of all the other cellular factors that differ between exponential and stationary phase cells) (Boothby et al., 2017). The desiccation tolerance of these cells increased by 1000-fold, but remained one to two orders of magnitude less than the tolerance naturally reached in stationary phase cells (Boothby et al., 2017; Tapia et al., 2015). These observations further reinforce the notion that robust desiccation tolerance likely requires an unknown combination of trehalose, hydrophilins or other stress effectors working in concert to alleviate one or more stresses imposed by complete water loss.\n\nWhat are the stresses imposed by desiccation? Given the ubiquitous molecular functions of water in biological processes, its absence has been proposed to induce a plethora of stresses. After drying, desiccation sensitive nematodes and yeast exhibit membrane blebbing and protein aggregation, respectively (Erkut et al., 2011; Tapia and Koshland, 2014). These results suggest that desiccation may induce perturbations to membrane integrity and proteostasis. In nematodes, a partial loss of desiccation tolerance has also been observed with defects in protection against ROS (Erkut et al., 2013). Different hydrophilins have been reported to localize to different organelles, suggesting that unique organellar stress (i.e. mitochondria) may be an important feature of desiccation stress (Candat et al., 2014; Hand et al., 2011). These results led to the idea that desiccation causes a variety of lethal stresses, impacting multiple cellular constituencies, that require a host of specific stress effectors to mitigate.\n\nWe sought to identify stress effectors sufficient for desiccation tolerance, and to characterize their molecular functions. Here, using genetic assays with stationary and exponential phase cells, we demonstrate that trehalose and a single hydrophilin, Hsp12, unexpectedly synergize to completely alleviate all of the lethal damage that occurs due to severe water loss. We provide evidence that these two small molecules have both independent and synergistic activities to counter the misfolding and aggregation of protein reporters that occurs upon desiccation both in vivo and in vitro. We identify a novel in vitro role for Hsp12 as a membrane remodeler, an activity likely required to provide desiccation tolerance. Finally, our data suggest that despite sharing many of the same properties (high glycine content, small size, high hydrophilicity, disordered secondary structure), yeast hydrophilins clearly have distinct functions. These findings have profound implications for both stress biology and potential translational applications.\n\n## Results\n\n### Trehalose and Hsp12 are necessary and sufficient for desiccation tolerance\n\nWe reasoned that previous screens of the yeast deletion collection for sensitivity to short-term desiccation sensitivity were unproductive because likely more than one stress effector needed to be inactivated to significantly compromise tolerance. At least one of these factors was likely trehalose, given its role in long-term desiccation tolerance. Therefore, we started with a base strain that was unable to synthesize trehalose (tps1\u2206) and introduced into it deletions for the remaining\u00a0~5000 non-essential genes in yeast (Tong et al., 2001). These double mutants were grown to stationary phase and assayed for survival after short-term and long-term desiccation. We identified three groups with distinct phenotypes. The strains in the first group were inviable when dried for six days (Supplementary file 2A2, Supplementary file 2B). The strains in the second group were inviable even in the absence of stress (Supplementary file 2A1). The strains in the third group suppressed the long-term desiccation sensitivity of a tps1\u2206 (Supplementary file 2A3). While the strains in these last two groups identify potentially interesting genes for future study, we focused on the first group; the gene deletions in this group potentially inactivated candidate stress effectors besides trehalose that were needed for short-term desiccation tolerance.\n\nOne candidate gene from this group was HSP12. Hsp12 encodes one of 12 previously identified yeast hydrophilins and is the most highly expressed member of the family in stationary phase cells (Garay-Arroyo et al., 2000). To further investigate the potential synergism between Hsp12 and trehalose we compared quantitatively short- and long-term desiccation tolerance of stationary phase cells that were wild type, tps1\u2206, hsp12\u2206 and tps1\u2206hsp12\u2206. After a 30 day desiccation period, the viability of stationary phase wild type cells decreased only two-fold (Figure 1A). Although the viability of tps1\u2206 cells was similar to that of wild type cells after two days of desiccation, after the 30 day desiccation period, tps1\u2206 cell viability dropped more than 100-fold (Figure 1A). This result corroborated our previous evidence demonstrating a requirement of trehalose for long-term but not short-term desiccation tolerance (Tapia and Koshland, 2014). While hsp12\u2206 cells exhibited wild type levels of desiccation tolerance after both short- and long-term desiccation, the tps1\u2206hsp12\u2206 cells displayed a 100-fold drop in viability after only 2 days of drying. Furthermore, after 30 days of desiccation, no viable tps1\u2206hsp12\u2206 cells remained (Figure 1A). These results revealed that trehalose and Hsp12 act cooperatively to promote tolerance to both short- and long-term desiccation. Furthermore, although tps1\u2206 and hsp12\u2206 had both been shown to confer elevated sensitivity to heat stress, the tps1\u2206hsp12\u2206 double mutant was no more heat-sensitive than either single mutant alone (Figure 1\u2014figure supplement 1) (Gibney et al., 2015; Welker et al., 2010). Thus, the protective synergism we observe between trehalose and Hsp12 is specific to desiccation stress.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/38337/elife-38337-fig1-v2.jpg)\n\n**Figure 1.:** (A) Yeast cells were grown to saturation (5 days), air-dried for 2, 15, or 30 days at 23\u00b0C, 60% relative humidity (RH), then rehydrated and assessed for viability by counting colony forming units (CFU). Desiccation tolerance of wild type, tps1\u2206, hsp12\u2206 and tps1\u2206hsp12\u2206 cells. (B) Yeast cells (nth1\u2206) were grown to mid-exponential phase (OD\u00a0<0.5) in minimal media lacking histidine. Cells were then transferred to either minimal media lacking histidine (SC-His, 0% trehalose) or minimal media lacking histidine with trehalose (SC-His, 2% trehalose) for 1 hr. Cells were collected, washed, and air dried for 2 d at 23\u00b0C, 60% relative humidity (RH), then rehydrated and assessed for viability by counting colony forming units (CFU). Yeast cells are\u00a0\u00b1\u00a0Trehalose transporter (AGT1) and\u00a0\u00b1\u00a0Hps12 (p423-GPD-Hsp12).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38337/elife-38337-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Cells (wild type, hsp12\u2206, tps1\u2206, or tps1\u2206 hsp12\u2206) were grown to midexponential phase (OD\u00a0<0.5) in non-selective media (YP, 1% yeast extract and 2% peptone) containing 2% glucose at 30C. Cells were plated and grown at either 30 or 37\u00b0C, or grown for one hour at 34\u00b0C (pre-heat shock) before growing at either 30 or 37\u00b0C. (B) Cells (wild type, hsp12\u2206, tps1\u2206, or tps1\u2206 hsp12\u2206) were grown to midexponential phase (OD\u00a0<0.5) in non-selective media (YP, 1% yeast extract and 2% peptone) containing 2% glucose at 30\u00b0C. Cells were then heat-shocked for 30 min at temperatures ranging from 42\u201360\u00b0C, followed by plating and growing at 30\u00b0C. Cells were also grown at 34\u00b0C prior to heat shock.\n\nWe have shown previously that exponentially-growing cells with increased intracellular trehalose show a 1000-fold increase in desiccation tolerance relative to wild-type cells (Tapia et al., 2015). Hence, we tested whether exponentially dividing cells with engineered high-level expression of Hsp12 would also exhibit increased desiccation tolerance. Normally, Hsp12 is not highly expressed in unstressed dividing cells (Praekelt and Meacock, 1990). Therefore, we swapped its promoter with a strong constitutive promoter to drive Hsp12 expression in dividing cells to a level similar to that observed in stationary phase cells. These dividing cells exhibited a 1000-fold increase in desiccation tolerance, comparable to survival conferred by increased intracellular trehalose (Figure 1B). Thus, Hsp12, like trehalose, had a significant ability to mitigate one or more of the lethal stresses imposed by desiccation.\n\nNext, we tested for potential synergy between trehalose and Hsp12 by examining the desiccation tolerance of exponentially-dividing yeast cells containing high levels of both factors. The desiccation tolerance of these cells was\u00a0~60 fold greater than cells that expressed only Hsp12 or trehalose. Furthermore, the absolute amount of tolerance (65\u201380% survival) was even greater than the tolerance of wild type cells in stationary phase (20\u201340% survival), the highest tolerance previously reported for yeast cells (Figure 1B) (Calahan et al., 2011). Our findings suggest that the functions of these two stress effectors must synergize to counter all the lethal effects of desiccation and subsequent rehydration on exponentially dividing yeast.\n\n### Hsp12 can protect protein activity and aggregation of soluble cytosolic proteins during desiccation\n\nDifferent in vitro experiments have suggested that trehalose helps prevent desiccation-induced proteotoxicity (Kaushik and Bhat, 2003; Olsson et al., 2016; Singer and Lindquist, 1998). With this in mind, we tested the ability of Hsp12 to modulate proteostasis under desiccation conditions. First, we examined the impact of Hsp12 on the in vitro activity of the well-established model proteostasis substrate citrate synthase (CS). We desiccated solutions of CS alone or with varying concentrations of Hsp12. These samples were rehydrated, and CS enzymatic activity was measured. Desiccation of CS caused an approximately 50% reduction in its enzymatic activity (Figure 2A). The presence of Hsp12 during drying maintained nearly all CS enzymatic activity in a concentration-dependent manner (Figure 2A). These results suggest that Hsp12 on its own can stabilize protein activity against desiccation in vitro.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/38337/elife-38337-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013B) (A) Enzymatic activity after drying of CS in presence of varying concentrations of Hsp12. CS enzymatic activity was measured by examining activity-induced changes in absorbance at 412 nm after drying compared to measurements before drying. (B) Citrate synthase desiccation-induced aggregation in the presence of varying concentrations of Hsp12. Absorbance at 340 nm. Citrate Synthase (0.12 mg). Absorbance measured after drying at 36\u00b0C for 24 hr followed by 5 hr at 23\u00b0C, then rehydration in water. Measurements after drying compared to measurements before drying. (C\u2013D) (C) Enzymatic activity after drying of CS in presence of varying concentrations of trehalose. CS enzymatic was measured by examining activity-induced changes in absorbance at 412 nm after drying compared to measurements before drying. (D) Citrate synthase desiccation-induced aggregation in the presence of varying concentrations of trehalose. Absorbance at 340 nm. Citrate Synthase (0.12 mg). Absorbance measured after drying at 36\u00b0C for 24 hr followed by 5 hr at 23\u00b0C, then rehydration in water. Measurements after drying compared to measurements before drying.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38337/elife-38337-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013B) Luciferase activity and aggregation as a reading of proteostasis of logarithmically growing and desiccated cells.\u00a0(A) Yeast strains (nth1\u2206,\u00a0+AGT1,\u00a0\u00b1Hps12) were transformed with a temperature-sensitive firefly luciferase-fusion protein expressed from the constitutive (GPD) promoter (p426-GPD-FFL) or empty vector (pEV, p426-GPD). These strains were grown to mid-log phase in media lacking uracil or media lacking uracil with trehalose (YPD, 2% trehalose) for 1 hr. Desiccated samples were air-dried for 2 days followed by rehydration in YPD or SC-HIS\u00a0+\u00a0cycloheximide (10 \u03bcl/ml, to block new FFL protein synthesis). Luciferase activity was measured in vivo by addition of 0.5 mM D-Luciferin to equal number of intact cells. Light emission was measured immediately with a luminometer. Percentage of activity was normalized to WT saturated \u2018wet\u2019 sample. (B) Cells were prepared as in A. Total cellular protein was extracted, and aggregated proteins were sedimented by high-speed centrifugation. The amounts of luciferase in the total protein fraction (total) and in high-speed supernatants (soluble) were determined by SDS-PAGE followed by immunoblotting with antiserum recognizing luciferase. (C\u2013D) Citrate synthase desiccation-induced activity and aggregation in the presence of constant concentrations of trehalose and varying concentrations of Hsp12. Absorbance at 340 nm. Citrate Synthase (0.12 mg) and trehalose (33 \u03bcg/ml). (B) CS aggregation was measured by examining absorbance measured after drying at 36\u00b0C for 24 hr followed by 5 hr at 23\u00b0C, then rehydration in water. Measurements after drying compared to measurements before drying.\n\nWe also examined the impact of Hsp12 on the in vivo activity of firefly luciferase (FFL) after desiccation. We expressed FFL in exponentially dividing wild type cells either expressing or not expressing Hsp12. Before desiccation, the levels of FFL luminescence were the same for all strains tested. After desiccation, luminescence in wild type cells not expressing Hsp12 was reduced by a factor of 105 (Figure 2\u2014figure supplement 1A). The presence of Hsp12 in these cells did not increase the activity of this very sensitive reporter (Figure 2\u2014figure supplement 1A). Thus, Hsp12 clearly is not competent to stabilize the activity of all proteins against desiccation.\n\nWe next examined the ability of Hsp12 to protect against desiccation-induced aggregation in vitro and in vivo. CS was incubated and desiccated alone or with Hsp12. When dried alone, CS demonstrated high levels of aggregation, a 20-fold increase in its aggregation (Figure 2B). Increasing amounts of Hsp12 added before desiccation decreased aggregation of CS in a concentration-dependent manner (Figure 2B). Significant solubilization of CS occurred at a 2:1 ratio of Hsp12 to CS (Figure 2B, 225:120 \u00b5g/ml). This stoichiometry suggests this solubilization function of Hsp12 is not enzymatic, consistent with Hsp12s high expression during stress in vivo. Similarly, we desiccated exponentially dividing cultures of strains that expressed FFL either expressing or not expressing Hsp12. Upon rehydration, we prepared lysates of these cultures and subjected them to centrifugation to separate soluble FFL from insoluble FFL that had aggregated with itself or other insoluble proteins. For all strains tested, equivalent amounts of total FFL were present in cell lysates (Figure 2\u2014figure supplement 1B). In the wild type strain not expressing Hsp12, no FFL was detected in the soluble fraction (Figure 2\u2014figure supplement 1B). Increased Hsp12 expression significantly increased luciferase solubility. Thus, both in vivo and in vitro, Hsp12 helps mitigate desiccation-induced protein aggregation.\n\n### Hsp12 proteostasis activities can act synergistically with, or independently of trehalose\n\nGiven the synergism between trehalose and Hsp12 to promote survival to desiccation, we used the CS and FFL assays to ask whether their activities in proteostasis also exhibited synergism. In vitro, trehalose, like Hsp12, increased the activity and solubility of CS after desiccation in a concentration dependent manner (Figure 2E,F). We looked for protective synergism of CS between trehalose and Hsp12 at suboptimal concentrations (Figure 2\u2014figure supplement 1C\u2013D). While trehalose and Hsp12 synergize to restore CS activity, limited synergistic protection against aggregation was observed. In vivo FFL activity was stabilized four-fold against desiccation in cells with high trehalose alone, but 14-fold in cells with both high Hsp12 and trehalose (Figure 2C). Thus, while Hsp12 had no effect on FFL activity on its own, it could synergize with trehalose to increase the activity of this reporter. Trehalose, like Hsp12, also increased the solubility of FFL after desiccation. Cells expressing both Hsp12 and trehalose further elevated FFL solubility (Figure 2C,D). These results demonstrate that Hsp12 and trehalose can modulate the activity and solubility of proteins independently or cooperatively depending upon the substrates, suggesting that Hsp12 and trehalose have both independent and dependent functions in proteostasis.\n\n### Hsp12 and trehalose act synergistically to propagate a membrane prion\n\nPreviously, we have used prion propagation as a sensitive measure of proteostasis (Tapia and Koshland, 2014). Prion propagation requires chaperones that promote oligomerization to generate new prions. Prion propagation also requires factors that prevent prion over-oligomerization. If the prion aggregate becomes too large, it fails to transfer into daughter cells during cell division, resulting in curing over time. Previously, we showed that [PSI+], a cytoplasmic prion, or [GAR+], a membrane-associated prion, are propagated efficiently between desiccated stationary phase cells and their daughter cells that form upon rehydration in growth media (Tapia and Koshland, 2014). This propagation is greatly impaired if the desiccated cells lack trehalose.\n\nUnlike tps1\u2206 cells, hsp12\u2206 cells were able to propagate [PSI+] with or without desiccation, suggesting that trehalose, but not Hsp12, is required to prevent [PSI+] hyper-aggregation (Figure 3A). This distinction provides another example of independent function of Hsp12 and trehalose in the proteostasis of cytosolic proteins. However, our analysis of the propagation of the membrane prion [GAR+] revealed a striking phenotype in the tps1\u2206hsp12\u2206 double mutant. Even in the absence of desiccation, the percentage of [GAR+] cells in tps1\u2206hsp12\u2206 cultures was reduced almost 500-fold relative to wild type or hsp12\u2206 cells, and 50-fold relative to tps1\u2206 (Figure 3B). Thus, Hsp12 and trehalose promote propagation of this membrane prion even under aqueous conditions. After desiccation, the percentage of [GAR+] cells was unchanged in hsp12\u2206 mutant cells but was undetectable in both the tps1\u2206 and tps1\u2206hsp12\u2206 cells (Figure 3B). The dramatic impact of tps1\u2206 alone on [GAR+] propagation after desiccation likely masked the additional impact of the loss of Hsp12.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/38337/elife-38337-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013B) Prion propagation as a measure of in vivo protein propagation after desiccation. (A) [PSI+] prion propagation before, and after desiccation. To assess [PSI+] prion state, cells were plated on media lacking adenine (SC-ADE) compared to non-dried controls. (B) [GAR+] prion propagation before, and after desiccation. To assess [GAR+] prion state, cells were plated on YP media with 2% glycerol and 0.05% glucosamine compared to non-dried controls.\n\n### Hsp12 remodels lipid vesicles\n\nThe synergistic function of trehalose and Hsp12 in [GAR+] propagation could be due to their direct effect on membrane proteins and/or an indirect effect on overall membrane structure and integrity. Intriguingly, prior studies indicate that trehalose stabilizes membranes in vitro and this stabilization may prevent disruptive phase transitions that occur upon rehydration (Crowe et al., 1984, 1987; Erkut et al., 2011; Leslie et al., 1994). Hsp12 also has been reported to increase membrane stability (Sales et al., 2000; Welker et al., 2010). An alternative/additional membrane function for Hsp12 was suggested by the fact the addition of certain lipids induce the transition of Hsp12 from a disordered state to one with secondary structure (Herbert et al., 2012; Singarapu et al., 2011; Welker et al., 2010). Secondary structure prediction and NMR data identify four alpha-helical regions in Hsp12, with each of the three larger helices having the features of an amphipathic helix (Herbert et al., 2012; Singarapu et al., 2011; Welker et al., 2010). Numerous membrane-remodeling proteins use amphipathic helices, embedding the hydrophobic face partway into the bilayer to shape membranes (Boucrot et al., 2012; Meinecke et al., 2013). Given these considerations, we hypothesized that Hsp12 might have membrane remodeling activities.\n\nOne readout of membrane remodeling activity is the capacity to vesiculate large liposomes into small vesicles (Boucrot et al., 2012). For example, proteins known to be involved in endocytic membrane trafficking lead to the vesiculation of liposomes (Boucrot et al., 2012). Therefore, we tested whether addition of Hsp12 to dimyristoylphosphatidylglycerol (DMPG) liposomes would generate nanovesicles. DMPG liposomes incubated in the absence of Hsp12 sedimented into the pellet fraction due to their large size (Figure 4A). By contrast, when incubated in the presence of Hsp12, DMPG appeared in the supernatant fraction (Figure 4A). Liposome vesiculation mediated by Hsp12 was incredibly robust and occurred even at low concentrations (Hsp12 - 1.5 \u03bcg/ml), with complete vesiculation occurring in a concentration-dependent manner (Figure 4B). To assess vesiculation directly, we examined these same samples by electron microscopy. Prior to the addition of Hsp12, liposomes exhibited expected spherical shapes and sizes (<200 nm). After the addition of Hsp12, very few intact liposomes were observed, replaced by membrane remnants (Figure 4C). Trehalose alone did not have any vesiculation activity nor did it inhibit the effect of Hsp12 on liposomes under the conditions tested (Figure 4A). These results show that Hsp12, but not trehalose, exhibits membrane remodeling activity in vitro and suggest that their synergistic impact on [GAR+] propagation may result from different biophysical activities.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/38337/elife-38337-fig4-v2.jpg)\n\n**Figure 4.:** (A) DMPG liposomes (5 mg/ml) where incubated for 1 hr at room temperature in the presence or absence of Hsp12 (25 \u03bcg/ml) and/or in the presence or absence of trehalose (2% final). Pellet (p) and supernatant (s) fractions where separated by high-speed centrifugation, and lipid distribution was assessed by SDS-PAGE followed by altered Coomassie staining (10% acetic acid only). (B) DMPG liposomes (5 mg/ml) where incubated for 1 hr at room temperature in the presence or absence of Hsp12 (1.5\u20135 \u03bcg/ml). Pellet (p) and supernatant (s) fractions where separated by high-speed centrifugation, lipid distribution was assessed by SDS-PAGE followed by altered Coomassie staining (10% acetic acid only). (C) Samples for electron microscopy were prepared the same as in A, with Hsp12 at 2.5 \u03bcg/ml. Images where taken from samples prior to centrifugation. Samples where spread on glow-discharged EM grids and stained using 2% uranyl acetate.\n\n### Desiccation protection is not conserved among all hydrophilins\n\nIn previously reported in vitro assays, different hydrophilin functions appear to be interchangeable (Chakrabortee et al., 2007; Goyal et al., 2005; Hand et al., 2011; Liu et al., 2011). Their interchangeability has led to models for a common function (for example, protein coating) based upon simple biophysical properties dictated by their shared primary sequence features of charge and glycine richness, and their unstructured state. This common function would explain the previously reported minor changes in desiccation sensitivity upon inactivation of individual hydrophilins, as their redundant functional properties should be present in all hydrophilins. To address possible functional redundancy, a single strain lacking all non-essential yeast hydrophilins was engineered (8X\u2206: hsp12\u2206 gre1\u2206 sip18\u2206 stf2\u2206 nop6\u2206 ybr016w\u2206 yjl144w\u2206 ynl190w\u2206) (Suzuki et al., 2011). However, even when lacking all non-essential hydrophilins, stationary phase yeast cells still demonstrated robust desiccation tolerance (Figure 5A). This result suggested that the lack of a phenotype was not due to hydrophilin redundancy. Indeed, we could not have observed a strong synergism between tps1\u2206 and hsp12\u2206 mutations if other hydrophilins could substitute for the missing Hsp12.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/38337/elife-38337-fig5-v2.jpg)\n\n**Figure 5.:** (A) Yeast cells were grown to saturation (5 days), air-dried for 2 days at 23\u00b0C, 60% relative humidity (RH), then rehydrated and assessed for viability by counting colony forming units (CFU). Desiccation tolerance of wild type vs. 8X\u2206: hsp12\u2206 gre1\u2206 sip18\u2206 stf2\u2206 nop6\u2206 ybr016w\u2206 yjl144w\u2206 ynl190w\u2206 cells. (B) Exponential Phase. Yeast cells (nth1\u2206, AGT1+) were grown to mid-exponential phase (OD\u00a0<0.5) in rich media (YPD). Cells were then transferred to either rich media (YPD, 0% trehalose) or rich media with trehalose (YPD, 2% trehalose) for 1 hr. Cells were collected, washed, and air dried for 2 d at 23\u00b0C, 60% relative humidity (RH), then rehydrated and assessed for viability by counting colony forming units (CFU). Stationary Phase. Yeast cells are\u00a0\u00b1\u00a0AGT1 (trehalose transporter) and\u00a0\u00b1\u00a0Stf2 (over-expression from 2\u03bc plasmid, GPD promoter). Yeast cells were grown to saturation (5 days), air-dried for 2 days at 23\u00b0C, 60% relative humidity (RH), then rehydrated and assessed for viability by counting colony forming units (CFU). Desiccation tolerance of wild type, tps1\u2206, stf2\u2206 and tps1\u2206stf2\u2206 cells. (C) Circular dichroism spectroscopy performed on 0.32 mg/ml Hsp12 or 0.32 mg/ml of Stf2 in the presence or absence of 1.2 mg/ml DMPG small unilamellar vesicles (SUVs), measuring from 250 to 190 nm. Units converted to Mean Molar Residue Ellipticity, accounting for concentration and protein size. (D) DMPG liposomes (5 mg/ml) where incubated for 1 hr at room temperature in the presence or absence of Stf2 (1.5\u20135 \u03bcg/ml). Pellet (p) and supernatant (s) fractions where separated by high-speed centrifugation, lipid distribution was assessed by SDS-PAGE followed by altered Coomassie staining (10% acetic acid only). (D) Samples for electron microscopy where the same as in A, with Stf2 at 5 \u03bcg/ml. Images where taken from samples prior to centrifugation. Samples where spread on glow-discharged EM grids and stained using 2% uranyl acetate.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38337/elife-38337-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Yeast cells (nth1\u2206) were grown to mid-exponential phase (OD\u00a0<0.5) in minimal media lacking histidine. Cells were collected, washed, and air dried for 2 d at 23\u00b0C, 60% relative humidity (RH), then rehydrated and assessed for viability by counting colony forming units (CFU). Yeast cells expressing empty vector EV, p3V5-Hsp12, pHsp12-3V5, p3V5-Stf2 or pStf2-3V5. (B) Protein was extracted from samples from (A), hydrophilin levels were determined by SDS-PAGE followed by immunoblotting with antiserum recognizing 3V5.\n\nTo address more directly whether the remarkable features of Hsp12 were common to other yeast hydrophilins, we studied a second yeast hydrophilin, Stf2, that is also expressed in stationary phase cells (Garay-Arroyo et al., 2000). Expressing high levels of Stf2 in exponentially-dividing cells did not significantly improve desiccation tolerance and failed to provide any synergistic tolerance with trehalose (Figure 5B, Figure 5\u2014figure supplement 1A,B). Additionally, deletion of Stf2 alone (stf2\u2206), or in combination with a loss of trehalose synthesis (tps1\u2206stf2\u2206) had no effect on the short-term desiccation tolerance of stationary phase yeast, unlike the pronounced increase in sensitivity displayed by tps1\u2206hsp12\u2206 cells (Figures 1A and 5B). Unlike Hsp12, Stf2 also did not exhibit any detectable secondary structure in the presence or absence of DMPG (Figure 5C, Hsp12\u00a0+\u00a0DMPG demonstrates classical alpha-helical CD signature). Stf2 also fails in vesiculating membranes (Figure 5D\u2013E). These functional differences between Hsp12 and Stf2 suggest that hydrophilins likely carry out distinct biological and molecular functions, despite sharing general physical properties. Moreover, the biological and biochemical differences between Hsp12 and Stf2 further support the view that the specific membrane remodeling activity of Hsp12 contributes to its desiccation tolerance-promoting function.\n\n## Discussion\n\nWe exploited the conditional desiccation tolerance of yeast to provide important new insights into the stress effectors of desiccation tolerance. While previous studies in yeast, nematodes and tardigrades have examined the impact of individual hydrophilins or trehalose on desiccation tolerance, no in vivo studies have looked at the combined effect of loss or gain of both trehalose and a hydrophilin. Here, we demonstrate that stationary phase yeast cells lacking both trehalose and Hsp12 (tps1\u2206hsp12\u2206) exhibit a greater than 100-fold loss in short-term desiccation tolerance and 10,000-fold loss in long-term desiccation. The magnitude of the desiccation sensitivity suggests that these two factors are critical to mitigate most of the lethal stresses associated with desiccation. In addition, we show that supplementing cells with only trehalose and Hsp12 was sufficient to make desiccation-sensitive dividing cells desiccation tolerant, this tolerance is higher than that which is observed naturally in stationary phase cells. This increase in desiccation tolerance was far greater than cells expressing each factor alone, again suggesting a synergistic interaction to suppress desiccation-induced stresses. In summary, while dividing cells have mechanisms to deal with the stresses imposed by subtler changes in available water; the new or increased amplitude of stresses imposed by severe/complete water loss can all be mitigated by trehalose and Hsp12 alone.\n\nHsp12 had not previously been implicated in desiccation tolerance. Rather, Hsp12 had been reported to mitigate lethality due to heat stress and osmolarity (Welker et al., 2010). We were unable to reproduce those findings. Furthermore, the heat stress that was used in the previous study was 58\u00b0C, a temperature that budding yeast is unlikely to experience in the wild or in fermenting vats. In contrast, desiccation occurs commonly in nature, so the desiccation tolerance conferred by Hsp12 is likely one of its physiological functions. Our results, coupled with the previous demonstration for the importance of individual hydrophilins for desiccation tolerance in tardigrade and nematodes provide compelling evidence for the causal roles of a hydrophilin in desiccation tolerance in all anhydrobiotes (Boothby et al., 2017; Erkut et al., 2013).\n\nSurprisingly, the important role of Hsp12 in desiccation tolerance appears to reflect a unique function amongst the hydrophilin family based on several considerations. First, if any of the other 11 hydrophilins in yeast had the same activity as Hsp12, then an hsp12\u2206 strain would not show synergistic desiccation sensitivity with tps1\u2206, and hsp12\u2206 would not have been picked up in our screen for trehalose desiccation synthetic-sensitivity. Second, desiccation sensitivity was not observed in a strain deleted for Hsp12 and all the other seven non-essential hydrophilin genes, again suggesting the absence of functional redundancy between hydrophilins. Third, further analysis of one of these eight hydrophilins, Stf2, showed that it displayed none of the synergism for desiccation tolerance or sensitivity with the presence or absence of trehalose that we observe with Hsp12. A previous report suggested that stf2\u2206 demonstrated a subtle 5-fold loss in desiccation tolerance that we do not observe; this previous study rehydrated cells with warmed media introducing a heat shock variable wherein the function of Stf2 might be required (L\u00f3pez-Mart\u00ednez et al., 2012). The apparent uniqueness of Hsp12 as a critical factor for desiccation tolerance challenges the notion that all hydrophilins belong to a redundant family of proteins with common biological functions. Indeed, the uniqueness of Hsp12 may be the tip of the iceberg in which studies of the other hydrophilins in yeast will reveal unique functions in different aspects of cell biology.\n\nWhat is the molecular function of Hsp12 underlying its distinct role in desiccation tolerance? Several studies have been reported the ability of hydrophilins in vitro to protect against protein aggregation and protein misfolding (Goyal et al., 2005; Hincha and Thalhammer, 2012). However, evidence for the in vivo relevance of these in vitro findings was lacking. Here, we show that Hsp12 demonstrates both of these activities with analyzed substrates both in vitro and in vivo. Specific protein substrates of Hsp12 may be critical for organismal desiccation tolerance. Support for this idea will require identifying such key substrates and testing their protection by Hsp12. However, we show that the in vivo ability of Hsp12 to promote desiccation tolerance correlates with the ability of Hsp12 to acquire secondary structure in the presence of lipids and to cause membrane vesiculation. This membrane remodeling activity is consistent with the requirement of Hsp12 and trehalose to allow propagation of the membrane prion [GAR+]. Given the impact of Hsp12 and trehalose on [GAR+] prion propagation in aqueous conditions, Hsp12\u2019s vesiculation function may play an important role during rehydration.\n\nThe synergistic biological interactions of trehalose and Hsp12 in desiccation tolerance may reflect their ability to modulate common stresses by different yet complementary mechanisms. As suggested by in vitro experiments, the protective effect of trehalose on cytosolic proteins may result from its ability to form an amorphous liquid glass inside cells in the absence of water, while Hsp12\u2019s protective effect may result from aiding in the formation and strength of trehalose in its vitrified state. Additionally, trehalose has also been proposed to protect against severe membrane damage during desiccation. Damage that escapes protection by trehalose may be removed by Hsp12\u2019s vesiculation function. Interestingly, it has recently been noted that intrinsically disordered proteins and protein regions have been shown to contribute to phase transitions leading to a more ordered cell (Alberti and Hyman, 2016; Mitrea and Kriwacki, 2016; Uversky et al., 2015). Hsp12 might protect proteins from aggregating via means of phase separating susceptible proteins and hence buffering the cytosol. Additional genetic and biochemical experiments will be needed to test these models.\n\nHsp12\u2019s lipid-induced folding, its in vitro membrane remodeling activity and its in vivo role in desiccation tolerance are not shared with Stf2, another yeast hydrophilin. These apparently unique features of Hsp12 provide new insights into hydrophilins and stress biology. Like yeast, most organisms express a large family of hydrophilins genes. However, the reason why hydrophilin families are so large remains a mystery. The distinct causal role of Hsp12 in desiccation tolerance reveals that the generic properties of hydrophilins of charge, glycine composition and disorder are not sufficient to mitigate the stresses of desiccation. Thus, other hydrophilins, like Stf2, must have other distinct functions. One simple idea is that these other functions mitigate yet to be determined cellular processes or different stresses.\n\nWe provide in vivo and in vitro evidence that both trehalose and Hsp12 can modulate proteostasis in response to desiccation. We show that in vivo they prevent desiccation-induced aggregation of firefly luciferase and of citrate synthase in vitro. Trehalose and Hsp12 also synergize, albeit weakly, to protect firefly luciferase activity in vivo, and individually they protect citrate synthase activity in vitro. Whether the stabilization of enzyme activity is different or just another manifestation of their anti-aggregation activity is not clear. Interestingly, the proteostasis functions of trehalose and Hsp12 are not identical as cells lacking only trehalose are compromised for [PSI+] and [GAR+] propagation while lacking cells Hsp12 alone are not. These differences likely indicate that trehalose and Hsp12 may modulate proteostasis by different mechanisms.\n\nWe propose a working model based upon the requirements of Hsp12 and trehalose for desiccation tolerance and observations reported previously. Trehalose prevents abnormal membrane vesicles in desiccated nematodes (Erkut et al., 2011). In vitro experiments suggest that trehalose intercalates into membranes to alter their melting properties (Crowe et al., 1984, 1987; Leslie et al., 1994). Based upon these observations we propose that desiccation induces membrane damage that can be prevented by intercalation of trehalose. If damage occurs, it could then be removed by Hsp12\u2019s remodeling activity. These distinct activities provide a possible explanation for the synergistic requirement for trehalose and Hsp12 in both short- and long-term desiccation tolerance.\n\nThe finding that trehalose and Hsp12 together are sufficient to mitigate the major stresses of desiccation has major implications for engineering desiccation/drought tolerance in other organisms. The ability to generate desiccation tolerance with only two factors makes this engineering eminently more feasible and approachable from an evolutionary perspective. Attempts to engineer plants to synthesize more trehalose have met with technical difficulties because of the disaccharide\u2019s additional roles in metabolism. Our results provide new impetus to overcome those hurdles. Furthermore, manipulation of Hsp12 expression has no known metabolic side effects, at least in budding yeast. Given the sufficiency of Hsp12 alone to confer partial desiccation tolerance, it will be very interesting to test whether Hsp12 by itself might confer drought tolerance to plants or other organisms that might benefit from this remarkable trait.\n\n## Materials and methods\n\n### Strains and growth conditions\n\nStandard yeast propagation and transformation procedures were used. Yeast strains are described in Supplementary file 3. Strains were grown in nonselective (YP, 1% yeast extract and 2% peptone) or selective (synthetic complete, SC) media containing 2% glucose lacking specific selectable amino acids. Cultures were grown to saturation from a single colony by incubating cultures 5 days at 30\u00b0C for stationary phase experiments. Cultures where grown to an OD \u2013 0.5 for mid-log experiments. All experiments were repeated at least two times on separate days with separate isolates when appropriate.\n\n### Desiccation tolerance assay\n\nSaturated Cultures: Approximately 107 cells were withdrawn from liquid cultures and washed twice in dilute water and then brought to a final volume of 1 ml. Undesiccated controls were plated for colony counting. Two hundred microliter aliquots were then transferred to a 96-well tissue culture plate (Becton Dickinson, 353075) and centrifugated, and water was removed without disturbing the cell pellet. Cells were allowed to desiccate in a 23\u00b0C incubator with a constant 60% relative humidity (RH), with the lid raised, for at least 48 hr. Long-term desiccation experiments were kept for indicated time periods in a 96-well tissue culture plates at 23\u00b0C, 60% RH. Samples were resuspended in assay buffer and plated for colony counting.\n\nLogarithmic Samples: Cells were grown to midexponential phase (OD\u00a0<0.5) in selective media, depending on strain and plasmid necessities. Cells were then transferred to inducible media:\u00a0\u00b12% trehalose, for 1 hr. Following induction, \u223c107 cells were withdrawn from liquid cultures and same parameters for drying where used as with saturated cultures. Data were entered into a spreadsheet (Microsoft Excel 2008 for Mac version 12.3), and the number of colony forming units per milliliter (cfu/mL) for each plate was computed. For each experiment, number of colony forming units per milliliter for the two controls was averaged. The relative viability of each of the two experimental samples was determined by dividing the number of colony forming units per milliliter for that sample by the average number of colony forming units per milliliter of the control plates. These two relative viability values were then averaged and their SD was computed using the STDEVP worksheet function.\n\n### Luciferase assay\n\nYeast cells (nth1\u2206, AGT1 strains) (\u00b12% Trehalose,\u00a0\u00b1Hsp12), bearing 2\u03bc plasmids that direct the expression of a temperature-sensitive firefly luciferase-fusion protein from the constitutive glyceraldehyde-3-phosphate (GPD) promoter (p426-GPD-FFL) or empty vector (pEV, p426-GPD), were grown to mid-log phase in SC \u2013His - Ura. Luciferase activity was measured in vivo by addition of 0.5 mM D-Luciferin (Sigma) to equal number of intact cells. Light emission was measured immediately with a TD-20/20 Luminometer (Turner Designs, Sunnyvale CA). Desiccated samples were air dried for two days followed by rehydration in SC-His - Ura\u00a0+\u00a0cycloheximide (10 \u03bcl/ml, to block new FFL protein synthesis) and subjected to the same assay treatment after rehydration. Measurements are reported as Relative Light Units. Using glass bead lysis, total cellular protein was extracted. After removing unbroken cells by low-speed centrifugation (1000 g for 3 min), cleared lysates were spun at high speed (350,000 g for 10 min, Beckman Coulter TLA-100) to collect insoluble aggregates. Total protein from cleared lysates and high-speed supernatants were then followed by SDS-PAGE and reacted with antiserum recognizing luciferase. All experiments were repeated three times on separate days with separate isolates.\n\n### Citrate synthase assay\n\n#### Citrate synthase preparation\n\nCitrate Synthase from Porcine Heart ammonium sulfate suspension (C3260) was purchased from Sigma Aldrich. Suspension was centrifugated at 14,000 rpm for 10 min at 4\u00b0C. Supernatant was discarded and the pellet was resuspended in 750 \u03bcl MilliQ water. To remove residual ammonium sulfate, citrate synthase was desalted in MilliQ water using a 5 ml HiTrap Desalting Column (GE Healthcare). Fractions were evaluated for protein content via staining 30 \u03bcl of each fraction with 100 \u03bcl of Coomassie protein assay reagent (Sigma) diluted 1:5 in MilliQ water. Fractions with detectable protein content were pooled and concentrated using an Amicon Ultra 0.5 ml 10K centrifugal filter unit (Merck Millipore Ltd). Final concentration determined via measuring absorbance at 280 nm on a Nanodrop 2000 spectrophotometer (Thermo Scientific).\n\n#### Citrate synthase aggregation and enzymatic activity assay\n\nCitrate synthase (CS) and protectants were added to MilliQ water to achieve final concentration of 0.12 mg/ml CS, and varying concentrations of protectants in 100 \u03bcl.\n\nFor measuring enzymatic activity, 1 \u03bcl of each sample was diluted by a factor of 17 in MilliQ water. 2 \u03bcl of this dilution was then mixed with 198 \u03bcl of Enzymatic Activity Assay Solution [100 mM oxaloacetic acid (Sigma-Aldrich), 100 mM 5,5\u2019-Dithiobis(2-nitrobenzoic acid) (Sigma-Aldrich), 150 mM Acetyl Coenzyme A (Sigma-Aldrich)] and absorbance at 412 nm was measured immediately and after 120 s in a 50 \u03bcl Micro Cell cuvette (Beckman Coulter) with measurements made with a 720 UV/Vis spectrophotomer (Beckman Coulter) equipped with a 50 \u03bcl Micro Cell adapter (Beckman Coulter). After measurement, samples were moved to 1.5 ml microcentrifuge tubes and set to dry in a Centrivap Concentrator (Labconco) set to 35\u00b0C and 29 bar for 24 hr. Samples were then moved to a 23\u00b0C incubator and allowed to incubate open to atmospheric pressure for an additional 5 hr. Samples were rehydrated in 100 \u03bcl MilliQ water, resuspended vigorously 5 min after addition of water. 2 \u03bcl of this resuspension was added to 198 \u03bcl Enzymatic Activity Assay Solution, mixed and moved to a cuvette, measuring absorbance at 412 nm immediately and after two minutes. Change in absorbance across two minutes after drying compared to before drying to achieve relative activity. For measuring aggregation, absorbance at 340 nm was measured for each sample before and after drying. Drying and rehydration performed as described for enzymatic activity assay. Measurements after drying subtracted from before drying measurements to achieve change in aggregation after drying. Cuvette was washed with MilliQ water and 95% ethanol between all measurements.\n\n### Expression and purification of Hsp12p\n\nBL21 E. coli cells transformed with a pET-15B vector with HSP12 behind a galactose-inducible promoter grown overnight in 30 ml cultures in LB with 100 ng/ml ampicillin. Transformants were grown up overnight in 30 mL cultures in LB with 100 ng/ml ampicillin at 37\u00b0C. 20 mL of this culture were added to 2L of LB with ampicillin and incubated at 37\u00b0 C until culture reached an OD600 of 0.5\u20130.9, as determined by spectrophotometry using a 720 UV/Vis spectrophotomer (Beckman Coulter). HSP12 expression induced by addition of IPTG (Isopropyl \u03b2-D-1-thiogalactopyranoside) to final concentration of 1 mM and incubation for an additional 4 hr at 37\u00b0C. Cultures were then pelleted by centrifugation at 4000 rpm for 30 min at 4\u00b0C. Discarded supernatant and resuspended cells in 50 mL of 1x PBS. Cells were frozen with liquid nitrogen, and stored at \u221280\u00b0C until use. Pellets were isolated and resuspended in lysis buffer (2 mM EDTA, 2 mM DTT, 20 mM HEPES, pH 7.4) then sonicated using a blunt tip sonicator set to 30% amplitude, 20 min, pulse 1 s on, 1 s off at 4\u00b0C. Sonication-lysed cells were then centrifugated and supernatant was collected. This sample was then boiled at 95\u00b0C for 15 mins and immediately moved to ice. A pale yellow precipitate was separated away from the proteins that are still soluble after boiling by centrifugation. Supernatant was then applied to a HiTrap Capto-Q ImpRes anion exchange column (GE Healthcare Life Sciences), and washed with lysis buffer with increasing concentrations of NaCl. Hsp12 was eventually eluted by buffer between 7.5 and 10 mM NaCl. The protein was then concentrated using a MW3000 filtration unit, aliquoted, frozen in liquid nitrogen, and stored at \u221280\u00b0C until use (Supplementary file 1).\n\n### Expression and purification of Stf2p\n\nSTF2 fused to GST was cloned into a pGEX6 vector behind a galactose-inducible promoter and transformed into BL21 cells. Transformants were grown overnight at 37\u00b0C in 30 mL of LB liquid media, selecting for plasmid with 75 ng/ml ampicillin. 2 L LB cultures with 75 ng/ml ampicillin were inoculated with 20 ml of these overnight cultures and set to 37\u00b0C and 140 rpm in an Innova 4330 incubator (New Brunswick Scientific). After 4 hr, expression of STF2 was induced with 4 mL of 0.1M IPTG and cultures were allowed to incubate overnight at 18\u00b0C. Cells were harvested and lysed in lysis buffer 2 (150\u00a0mM NaCl, 2 mM EDTA, 2 mM DTT, 20 mM HEPES, pH 7.4) using the same sonication method as above (see Purification of Hsp12). Then, lysed cells were centrifugated and the supernatant was collected. 1.5 ml of Pierce Glutathione Agarose beads from Thermo Fisher Scientific were added and incubated in the supernatant for an hour at 4\u00b0C. Beads were washed in 3 washes in lysis buffer 2, 3 washes in lysis buffer 3 (500\u00a0mM NaCl, 2 mM EDTA, 2 mM DTT, 20 mM HEPES, pH 7.4), and 3 washes in lysis buffer 2, and resuspended in lysis buffer 2. Prescission protease was added to washed beads and this mixture was incubated at 4\u00b0C overnight. The mixture was then centrifugated and the supernatant was collected, concentrated with an Amicon Ultra-4 Ultracel 3K centrifugal filter unit from Millipore, alliquoted, frozen in liquid nitrogen, and stored at \u221280\u00b0C (Supplementary Figure 1).\n\n### Prion phenotypic assays\n\nTo assess the prion state, cells were plated on media lacking adenine (SC-ADE) for [PSI+] strains, or on YP media with 0.05% Glucosamine and 2% Glycerol for [GAR+] growth was compared to their ability to grow on rich YPD/GAL media. To determine % Prion\u00a0=\u00a0100 X CFU Desiccated Cells (Prion Selective Media)/CFU Desiccated Cells (Non-Selective Rich Media).\n\n### Liposome preparation and vesiculation\n\nDMPG liposomes (Avanti Polar Lipids (840445) in 100 mM NaCl, 20 mM Tris-Hcl pH 7.4 were sonicated for 2 min in a water bath at room temperature. Liposomes were incubated with protein for 60 min and centrifugated at 250,000 g for 15 min in a Beckman Coulter TLA-100 rotor. Resuspended pellets and supernatants were analyzed by SDS-PAGE. Gels were stained with 0.1% Coomassie in 10% Acetic acid and destained in water. For EM, samples were spread prior to centrifugation on glow-discharged electron microscopy grids and stained using 2% uranyl acetate and viewed in a Joel 1200 EX Transmission Electron Microscope.\n\n### Preparing liposomes for circular dichroism\n\n1,2-dimyristoyl-sn-glycero-3-phospho-(1'-rac-glycerol) (DMPG) from Avanti Polar was stored in chloroform at \u221280\u00b0C in glass tubes until used. DMPG aliquots were thawed and aspirated using a stream of nitrogen gas to form a clear, dry film on the inside surface of the tube. Tubes were then placed inside a vacuum desiccator and sealed. Vacuum was then applied to the desiccator, and the samples were left at room temperature under vacuum overnight to remove any remaining chloroform. Then, they were resuspended in 10 mM sodium phosphate, pH 7.4 and moved to a 1.5 ml plastic microcentrifuge tube. Resuspended aliquots were then vortexed until a homogenous, cloudy white solution was formed. Tubes were placed on ice in a 4\u00b0C room, and sonicated using a probe tip sonicator equipped with a blunt tip and set to 20% amplification, 7.5 min, with pulses of 2 s on and 2 s off. Lipids were then spun down at 14,000 rpm at 4\u00b0C for 10 min to precipitate any metal shards from sonication. Supernatant was then moved to a new 1.5 ml microcentrifuge tube and left on ice until use in circular dichroism.\n\n### Circular dichroism spectra\n\nCircular Dichroism (CD) spectra were obtained as previously described with some adjustments, using an Aviv 2000 Circular Dichroism Spectrometer Model 410 (Aviv Biomedical Inc.) (12). CD signal was measured from 250 to 190 nm at 25\u00b0C, averaging measurements at every nm for 10 s. Hydrophilins and DMPG were kept on ice until added to samples. Once added, samples were mixed well by mixing and incubated at room temperature for 10 min before spectra were measured. A 1M stock of trehalose and 100 mM stock of SDS were prepared in 10 mM sodium phosphate, pH 7.4 and added to achieve desired concentrations. Proteins were added to samples to achieve a concentration of. 32 mg/ml. For samples with DMPG, DMPG was added to achieve a concentration of 1.32 mM (1.2 mg/ml. Samples were made at a volume of 400 and 300 \u03bcL were pipetted into a 0.1 cm cuvette for CD measurements. The cuvette was washed with water and ethanol between measurements, drying completely each time. Samples with protein were blanked against those with the same buffer and concentration of DMPG without hydrophilins. All spectra were converted to units of mean residue molar ellipticity before plotting on graph.\n\n### SGA strain construction\n\nStrains were construction according to published SGA protocol from Tong et al. with minor alterations. In brief, tps1\u2206 was grown overnight as well as every strain in the ATCC deletion collection. Using a 48-density prong, tps1\u2206 was pinned onto solid YEP\u00a0+\u00a0Galactose media and the deletion collection were pinned on top. This was allowed to grow overnight at 30\u00b0C. Cells were then replica plated onto YEP\u00a0+Galactose\u00a0+\u00a0G418 (100 mg/mL)\u00a0+\u00a0Hygromycin (100 mg/mL) to select for diploids. These were grown at 30\u00b0C overnight. Diploids were then replica plated onto sporulation media (10 g Potassium Acetate, 1 g Yeast Extract, 0.5 g Galactose, 0.1 g amino acid Histidine, Lysine, Leucine, and Uracil supplement, Zinc Acetate, 0.2 g Raffinose). Cells were sporulated for 5 days. After sporulation, we selected for MATa haploids on SC\u00a0+\u00a0Galactose \u2013 Histidine \u2013 Arginine\u00a0+\u00a0Canavanine (50 mg/L)\u00a0+\u00a0Thialysine (50 mg/L). Then we selected for G418 resistance on SC\u00a0+\u00a0Galactose \u2013 Histidine \u2013 Arginine\u00a0+\u00a0Canavanine (50 mg/L)\u00a0+\u00a0Thialysine (50 mg/L)\u00a0+\u00a0G418 (100 mg/mL). Finally, we selected for Hygromycin resistance on SC\u00a0+\u00a0Galactose \u2013 Histidine \u2013 Arginine\u00a0+\u00a0Canavanine (50 mg/L)\u00a0+\u00a0Thialysine (50 mg/L)\u00a0+\u00a0G418 (100 mg/mL)\u00a0+\u00a0Hygromycin (100 mg/mL).\n\n### High throughput desiccation tolerance assay\n\nSingle colonies of newly constructed double mutants are placed into 200 \u03bcL of YEP\u00a0+\u00a02% Galactose in wells of 96-well plates and allowed to grow to saturation at 30\u00b0C with agitation. Strains were then pinned using a 48-density prong onto YEP\u00a0+\u00a0Galactose plates and allowed to grow for 2 days as non-desiccated controls. 20 \u03bcL of each strain was also transferred into new 96-well plates to let air dry for 6 and 30 days at 23\u00b0C. Drying was done as previously mentioned. After desiccation, strains are rehydrated in 200 \u03bcL of YEP\u00a0+\u00a0Galactose and pinned onto solid media as before. Desiccation tolerance is assayed by comparing growth of strains after desiccation with non-desiccated controls.\n\n### Heat tolerance assay\n\nSupplemental Figure 1 (A) Cells (wild type, hsp12\u2206, tps1\u2206, or tps1\u2206 hsp12\u2206) were grown to midexponential phase (OD\u00a0<0.5) in non-selective media (YP, 1% yeast extract and 2% peptone) containing 2% glucose at 30C. Cells were plated and grown at either 30 or 37C, or grown for one hour at 34C (pre-heat shock) before growing at either 30 or 37C. (B) Cells (wild type, hsp12\u2206, tps1\u2206, or tps1\u2206 hsp12\u2206) were grown to midexponential phase (OD\u00a0<0.5) in non-selective media (YP, 1% yeast extract and 2% peptone) containing 2% glucose at 30C. Cells were then heat-shocked for 30 min at temperatures ranging from 42 to 60C, followed by plating and growing at 30C. Cells were also grown at 34C prior to heat shock.\n\n### 8X\u2206 strain construction\n\nKnocking out hydrophilin redundancies via cycles of sexual assortment and fluorescence selection (Green Monster Protocol) Adapted from Suzuki et al. (2011). Using deletion collection (a, BY4741), streak out and confirm deletions of interest. hsp12::G418, gre1::G418, sip18::G418, stf2::G418, ybr016w::G418, yjl144w::G418, and ynl190w::G418. Transform deletions with GFP-URA replacement cassette, plate on SC-URA. Confirm GFP replacements by PCR. Cross deletion GFP-URA strains with (Mat alpha) GMToolkit a and alpha, on a YPD plate, grow overnight. Replica plate on diploid selective media, SC-URA\u00a0+\u00a0Clonat (TKalpha) and SC-URA\u00a0+G418, (TKa). Sporulate diploid strains. Isolate random spores. Recover haploids for each strain in different mating type backgrounds. (a cells should grow on SC-URA-HIS, and alpha cells should grow on SC-URA-LEU.) Sexual cycling of green monsters. Pool deletions Mat a and Mat alpha in 1:1 mix. Take 100 ul from each strain (a and alpha). Mix well. Wash 1x in YPD, resuspend in 1 ml YPD. Spin down at 735 g for 5 min. Incubate mating mix at 30\u00b0C for 24 hr. Transfer 100 ul of mating mix into 5 ml of GNA-G418\u00a0+\u00a0Clonat (select for diploids) for 24 hr. Split equally into two tubes. Centrifuge at 735 g for 5 min. To pellet, add 5 ml of SC-HIS or SC-LEU, grow for 24 hr. For GFP induction: Spin down culture and resuspend in 5 ml of SC-HIS or SC-LEU with Doxycycline (10 ug/ml, final) and grow for 2 days at 30\u00b0C. Filter 500 ul of GFP induced culture using cells strainer into 1 ml of TE Buffer (pH 7.5) containing Doxycycline (10 ug/ml). Vortex before sorting. Flow Cytometry Cell Sorting. Prepare a BY4741 negative control and the appropiate 1x GFP strain and a 16x GFP control strains. Sort by fluorescent intensity. Confirm by PCR. Strain recovered: hsp12::GFP, gre1::GFP, sip18::GFP, stf2::GFP, ybr016w::GFP, yjl144w::GFP and ynl190w::GFP. nop6\u2206 was deleted from 7X\u2206 strain with Hygromycin cassette replacement nop6::Hyg.\n",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "dffeb039-0215-4d37-b0d9-c2fdbf191c28",
+      "submission_id": "6498fff1-13fe-4780-9faa-72de9165f55e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anthony A Hyman, Max Planck Institute of Molecular Cell Biology and Genetics Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.38337.023](https://doi.org/10.7554/eLife.38337.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Synergism between a sugar and a small intrinsically disordered protein mitigate the lethal stresses of severe water loss\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nAlthough the reviewers felt that the area was of interest, the felt that as it stands, the manuscript lacked sufficient depth to be considered for publication in eLife. The two reviewers are experts in the field of desiccation tolerance and as you can see, they both feel that there is a considerable literature out there, and that moving forward, it would be good to put your experiments in the context of these experiments.\n\nReviewer #1:\n\nThis manuscript by Kim et al. investigates the role of trehalose and the hydrophilin Hsp12 in desiccated budding yeast. The authors show that these two molecules prevent the aggregation and stabilize the activity of model proteins. They also propose a role for Hsp12 as a remodeler of membranes. There are several interesting observations in this paper. However, there are also many problems that significantly reduce my enthusiasm for the paper. The biggest problem is that similar findings have already been reported previously in budding yeast but also in other model organisms. I am therefore not sure whether this manuscript generates the level of advance that I would associate with a paper in eLife paper. To be truly novel, the paper would have to provide some deeper insight into the molecular mechanisms underlying the synergistic protective effect of trehalose and Hsp12.\n\n1) Figure 2A. The authors conclude from these data that luciferase is denatured. However, the amount of luminescence is generally quite low. Therefore, is it possible that water is needed for enzyme activity? Can the authors exclude this possibility? If they cannot, I suggest that they show directly that luciferase is denatured, for example by using dyes that bind to exposed hydrophobic regions.\n\n2) I think that yeast prions are not a good model for looking at how desiccation affects protein aggregation. The reason is that, in their yeast strains, the prion proteins are already in an aggregated state. Therefore, the authors can only look at propagation and not at de novo formation of prions. So what is the authors explanation for how trehalose affects [PSI+] prions? They conclude: \"These results suggest that trehalose is more effective than Hsp12 in preventing aggregation of this cytoplasmic prion.\" How can the authors conclude from these data that trehalose prevents aggregation? There are fewer prions in the absence of trehalose. This suggests that trehalose promotes aggregation and/or prion propagation. One possibility is that trehalose protects the [PSI+] aggregates from damage and that the prion state then gets lost from the cells in the absence of trehalose after recovery from desiccation. I think that this is very unlikely, because these aggregates are highly stable and probably not affected much by water loss. The presented data are also consistent with another scenario. The data in Figure 2C could also be explained by a synthetic lethality effect in which the [PSI+] cells are more sick in the absence of trehalose (did the authors correct for cell numbers or did they only count the number of cells on adenine-deficient plates?). The same reasoning applies to the [GAR+] data.\n\n3) Why did the authors perform the in vitro assay with citrate synthase and the in vivo assay with luciferase? Luciferase misfolding and aggregation is a well-established in vitro assay for protein misfolding and aggregation. Can the authors perform an in vitro assay with luciferase to make the in vitro and in vivo data more comparable?\n\n4) Is there a synergistic effect of trehalose and Hsp12 in the in vitro citrate synthase assay as found for luciferase expressed in yeast?\n\n5) What is the significance of these fragmented liposomes in Figure 3B? To me it looks as if Hsp12 does not protect lipid membranes but destroys them. How do yeast membranes look in the absence/presence of Hsp12 during and after desiccation?\n\n6) Figure 4C. These data are of poor quality. Can the authors quantify the amount of lipids? Also, can they demonstrate statistical significance? The same is true for Figure 3A.\n\nReviewer #2:\n\nThis manuscript is dedicated to investigation of the molecular basis of desiccation tolerance in Saccharomyces cerevisiae. Previously, the authors have shown that a disaccharide trehalose is necessary for the long-term desiccation tolerance but is not required for the short one. On the other hand, a previous screen for non-essential genes that are required for the short-term tolerance was not successful. Thus, the authors decided to perform a \"synthetically lethal\" screen. They used a strain that cannot produce trehalose and introduced into it deletions of about 5000 non-essential genes. These double mutants were investigated for their ability to survive short and long desiccation while being in the stationary phase. The screen has revealed three classes of mutants: 1) Inviable when subjected to short-term desiccation; 2) Inviable without application of stress; 3) Suppressors of trehalose deficient mutant subjected to long-term desiccation. This study describes the role of Hsp12, a gene from class I, in the desiccation tolerance. It is shown that trehalose and Hsp12p, a member of the hydrophilin family of proteins, are acting synergistically. Proteostatic properties of the protein and its possible interaction with membranes are investigated. In addition, the authors provide data that another member of hydrophilins, Stf2, does not play any role in the desiccation tolerance.\n\nI think that the performed screen is potentially very useful for understanding molecular mechanisms of the desiccation tolerance in the future. I have, however, several serious concerns on validity of some conclusions drawn and on the overall novelty of the findings presented.\n\n1) In fact, Hsp12p is a homolog of class III LEA (Late embryonic abundant) proteins in plants. There is a vast amount of literature on importance of these proteins in the draught resistance. Also in C. elegans, IDPs (Intrinsically disordered proteins) play a role in desiccation tolerance. In particular, RNAi against lea-1 and dur-1 (two members of LEA family) leads to very strong sensitivity to desiccation (Erkut at al., 2013). Moreover, there are several reports on importance of hydrophilins/LEAs for desiccation tolerance in the budding yeast (Lopez-Martinez et al., Yeast, 30, 319; Lopez-Martinez et al., 2012). Thus, the requirement of these proteins for the tolerance is well established. What is not clear, however, is the molecular function of LEAs in the living organism. Involvement in proteostasis, disaggregation of proteins, interaction with membranes and many other functions (including recently the phase separation) are proposed. Again, huge number of papers are dealing with the topic. Unfortunately, this manuscript, does not provide any additional, unambiguous information on the molecular mechanism of Hsp12p action.\n\n2) The interaction between tps1\u0394 and hsp12\u0394 is described in purely genetic frame. Are trehalose and Hsp12p connected also biochemically? Does amount of trehalose depend on the protein? In fact, the quantitative information on amounts of Hsp12p before and during the desiccation is totally missing. Is it induced during the desiccation? If yes, on which level? Interestingly, LEA-1 in C. elegans is the major protein that is elevated during the preconditioning of the worm for severe desiccation (Erkut at al., 2013). The authors say that the expression of Hsp12p is low. This would question the proposed non-enzymatic role of the protein in proteostasis or membrane remodeling.\n\n3) The authors show that Hsp12p when incubated with liposomes, induces their vesiculation into nanovesicles. Or in other words, their disintegration. Does this phenomenon has anything to do with the desiccation tolerance? Without showing this process in the cell, this property of the protein remains just an interesting observation.\n\n4) It is shown in the Figure 4 that another hydrophilin, Stf2p, is not required for the desiccation tolerance. This is in a direct contrast with a previously published paper (Lopez-Martinez et al., 2012). The authors should at least comment on this controversy.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for submitting your article \"Synergy between the small intrinsically disordered protein Hsp12 and trehalose sustain viability after desiccation\" for consideration by eLife.\n\nThe two reviewers feel that the manuscript is significantly improved, and together with the reviewing editor, would like to publish your paper, assuming you can make the necessary revisions below.\n\n1) It is still unclear whether Hsp12 has a membrane remodeling function in vivo or not. All they provide are in vitro experiments, the functional significance of which is unclear. They have to change the text to make this clear. For example, in the Abstract: \"We also identify a novel role for Hsp12 as a membrane remodeler, a protective feature not shared by another yeast hydrophilin, suggesting that sIDPs have distinct biological functions.\" They do not identify a function as membrane modeler in cells and they do not show whether this particular in vitro activity of Hsp12 is protective in desiccated cells. For this, they need a mutant that lacks the ability to remodel membranes that they then test in cells. Since they have not done this experiment, they have to tone down their conclusions regarding the membrane remodeling function.\n\n2) Section headline: \"Hsp12 and trehalose can act synergistically in membrane proteostasis.\" It is unclear whether the observed effect on prion propagation is because of altered membrane proteostasis. Therefore, they have to remove any claims that the prion assay reports on membrane proteostasis or proteostasis in general.\n\n3) \"Without trehalose, the [PSI+] prion hyper-aggregates in mother cells suggesting that trehalose functions during desiccation as an anti-protein aggregation factor as suggested by other in vitro and in vivo studies.\" The authors provide no evidence for prion hyper-aggregation in mother cells. They have to remove this claim. Also, what other in vitro and in vivo studies are they referring to here?\n\n4) Is the phenotype of HSP12 based on the vesiculation of membranes? I think the authors either should provide EM images of desiccated yeast (with and without HSP12) or take out from the Abstract the claim that they provide a novel role of HSP12 as a membrane remodeler. Very short hydration and then cryofixation with substitution could be a method. Here is the reference to a similar approach (Giddings et al., 2001, Methods Cell Biol.).\n",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3c931178-e2d8-47d6-bcfa-178ddd1d5075",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C1",
+      "claim": "Global food security will be challenged by the effect of climate change on crop yields in the near future.",
+      "claim_type": "EXPLICIT",
+      "source": "In the near future, global food security will be challenged by the effect of climate change on crop yields (Schwalm et al., 2017; Tirado et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schwalm et al., 2017 and Tirado et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "b2ad3102-b6ac-4050-8834-c1c5be3ae2ef",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C2",
+      "claim": "Anhydrobiotes include bacteria, yeast, plant seeds, resurrection ferns, tardigrades and nematodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Anhydrobiotes include single celled organisms (bacteria and yeast), simple multicellular organisms (plant seeds), as well as complex multicellular plants and animals (resurrection ferns, tardigrades and nematodes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about anhydrobiotes",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "889702df-97f7-4a83-95a4-a8999c42d8c8",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C3",
+      "claim": "Almost all anhydrobiotes have high levels of the disaccharide trehalose and small, hydrophilic, and intrinsically disordered proteins collectively called hydrophilins.",
+      "claim_type": "EXPLICIT",
+      "source": "An important clue to the identification of critical stress effectors of desiccation came from the discovery that almost all anhydrobiotes have high levels of the disaccharide trehalose and small, hydrophilic, and intrinsically disordered proteins collectively called hydrophilins (Crowe et al., 1992; Potts, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Crowe et al., 1992 and Potts, 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "3db50612-dc0c-44a8-bb89-3aa3be47458e",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C4",
+      "claim": "Nematodes lacking trehalose are extremely sensitive to short term desiccation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nematodes lacking trehalose are extremely sensitive to short term desiccation, while yeast lacking trehalose are sensitive to only long term-tolerance desiccation (Erkut et al., 2011; Tapia and Koshland, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Erkut et al., 2011 and Tapia and Koshland, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "261b5dd2-49fb-4e80-bda7-c4eb3342bb5c",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C5",
+      "claim": "Yeast lacking trehalose are sensitive to only long term-tolerance desiccation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nematodes lacking trehalose are extremely sensitive to short term desiccation, while yeast lacking trehalose are sensitive to only long term-tolerance desiccation (Erkut et al., 2011; Tapia and Koshland, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Erkut et al., 2011 and Tapia and Koshland, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "cecf78a8-244b-4ecf-aee7-ae69d3c49657",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C6",
+      "claim": "At least one species of tardigrade is desiccation tolerant although naturally lacking trehalose.",
+      "claim_type": "EXPLICIT",
+      "source": "At least one species of tardigrade is desiccation tolerant although naturally lacking trehalose (Boothby et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Boothby et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "9d26a3b5-7db6-476e-b75b-c1fb23a7260b",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C7",
+      "claim": "Only 0.001% of exponentially dividing yeast cells survive desiccation compared to 20\u201340% survival of stationary phase cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 0.001% of exponentially dividing yeast cells survive desiccation compared to 20\u201340% survival of stationary phase cells (Calahan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Calahan et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "480df31f-b754-4dfe-8cf6-750b8b51ea50",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C8",
+      "claim": "After drying, desiccation sensitive nematodes exhibit membrane blebbing.",
+      "claim_type": "EXPLICIT",
+      "source": "After drying, desiccation sensitive nematodes and yeast exhibit membrane blebbing and protein aggregation, respectively (Erkut et al., 2011; Tapia and Koshland, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Erkut et al., 2011 and Tapia and Koshland, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "6d1f851d-0b04-48d2-a569-dc27a07bb902",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C9",
+      "claim": "After drying, desiccation sensitive yeast exhibit protein aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "After drying, desiccation sensitive nematodes and yeast exhibit membrane blebbing and protein aggregation, respectively (Erkut et al., 2011; Tapia and Koshland, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Erkut et al., 2011 and Tapia and Koshland, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "0e460729-a9bf-4f69-af40-62ec0d44017d",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C10",
+      "claim": "Trehalose and Hsp12 synergize to completely alleviate all of the lethal damage that occurs due to severe water loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using genetic assays with stationary and exponential phase cells, we demonstrate that trehalose and a single hydrophilin, Hsp12, unexpectedly synergize to completely alleviate all of the lethal damage that occurs due to severe water loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from genetic assays described in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "96c53b61-1685-4452-8023-d005efa18b3f",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C11",
+      "claim": "Hsp12 encodes one of 12 previously identified yeast hydrophilins.",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp12 encodes one of 12 previously identified yeast hydrophilins and is the most highly expressed member of the family in stationary phase cells (Garay-Arroyo et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Garay-Arroyo et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "b3a41e74-1e8f-4acd-b606-584923ef212f",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C12",
+      "claim": "Hsp12 is the most highly expressed hydrophilin in stationary phase cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp12 encodes one of 12 previously identified yeast hydrophilins and is the most highly expressed member of the family in stationary phase cells (Garay-Arroyo et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Garay-Arroyo et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "49de8fad-c85a-4f3c-b170-8e1d97f15686",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C13",
+      "claim": "After a 30 day desiccation period, the viability of stationary phase wild type cells decreased only two-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "After a 30 day desiccation period, the viability of stationary phase wild type cells decreased only two-fold (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "77c061d0-2e31-4c5a-bf20-729b830a1956",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C14",
+      "claim": "After the 30 day desiccation period, tps1\u2206 cell viability dropped more than 100-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the viability of tps1\u2206 cells was similar to that of wild type cells after two days of desiccation, after the 30 day desiccation period, tps1\u2206 cell viability dropped more than 100-fold (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "32a685ba-432a-473d-adac-54393b18f565",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C15",
+      "claim": "hsp12\u2206 cells exhibited wild type levels of desiccation tolerance after both short- and long-term desiccation.",
+      "claim_type": "EXPLICIT",
+      "source": "While hsp12\u2206 cells exhibited wild type levels of desiccation tolerance after both short- and long-term desiccation, the tps1\u2206hsp12\u2206 cells displayed a 100-fold drop in viability after only 2 days of drying.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from desiccation tolerance assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "70442a1f-6132-436b-9c9c-680a1acb9b55",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C16",
+      "claim": "tps1\u2206hsp12\u2206 cells displayed a 100-fold drop in viability after only 2 days of drying.",
+      "claim_type": "EXPLICIT",
+      "source": "While hsp12\u2206 cells exhibited wild type levels of desiccation tolerance after both short- and long-term desiccation, the tps1\u2206hsp12\u2206 cells displayed a 100-fold drop in viability after only 2 days of drying.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from desiccation tolerance assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "618bbdee-0a2d-4021-9bdb-a1d938ff25ae",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C17",
+      "claim": "After 30 days of desiccation, no viable tps1\u2206hsp12\u2206 cells remained.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, after 30 days of desiccation, no viable tps1\u2206hsp12\u2206 cells remained (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "60e081ab-6dd1-4825-b510-5fec6d50a7e4",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C18",
+      "claim": "The tps1\u2206hsp12\u2206 double mutant was no more heat-sensitive than either single mutant alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, although tps1\u2206 and hsp12\u2206 had both been shown to confer elevated sensitivity to heat stress, the tps1\u2206hsp12\u2206 double mutant was no more heat-sensitive than either single mutant alone (Figure 1\u2014figure supplement 1) (Gibney et al., 2015; Welker et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1 and citations to Gibney et al., 2015 and Welker et al., 2010",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "db1c2f33-eccf-4bea-b81d-0a57e1cae718",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C19",
+      "claim": "The protective synergism between trehalose and Hsp12 is specific to desiccation stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the protective synergism we observe between trehalose and Hsp12 is specific to desiccation stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that the double mutant shows no additional heat sensitivity compared to single mutants",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "5caf9c28-bdb7-4426-910c-29405954f3da",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C20",
+      "claim": "Exponentially dividing cells with engineered high-level expression of Hsp12 exhibited a 1000-fold increase in desiccation tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "These dividing cells exhibited a 1000-fold increase in desiccation tolerance, comparable to survival conferred by increased intracellular trehalose (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "0b9919d6-6631-4248-ad60-8082817aed7d",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C21",
+      "claim": "The desiccation tolerance of exponentially-dividing yeast cells containing high levels of both trehalose and Hsp12 was ~60 fold greater than cells that expressed only Hsp12 or trehalose.",
+      "claim_type": "EXPLICIT",
+      "source": "The desiccation tolerance of these cells was ~60 fold greater than cells that expressed only Hsp12 or trehalose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from desiccation tolerance assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "287fb636-3a65-474c-8e87-82b2d6a76a92",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C22",
+      "claim": "The absolute amount of tolerance (65\u201380% survival) of exponentially-dividing cells with both trehalose and Hsp12 was even greater than the tolerance of wild type cells in stationary phase (20\u201340% survival).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the absolute amount of tolerance (65\u201380% survival) was even greater than the tolerance of wild type cells in stationary phase (20\u201340% survival), the highest tolerance previously reported for yeast cells (Figure 1B) (Calahan et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B and citation to Calahan et al., 2011",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "8ad2ac93-04f0-414a-afa0-af72b0e14778",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C23",
+      "claim": "Desiccation of CS caused an approximately 50% reduction in its enzymatic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Desiccation of CS caused an approximately 50% reduction in its enzymatic activity (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "b790940f-9fb7-4476-b43f-15a43da43181",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C24",
+      "claim": "The presence of Hsp12 during drying maintained nearly all CS enzymatic activity in a concentration-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of Hsp12 during drying maintained nearly all CS enzymatic activity in a concentration-dependent manner (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "6f838967-9b98-4a73-933f-ceab951bf66a",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C25",
+      "claim": "Hsp12 on its own can stabilize protein activity against desiccation in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that Hsp12 on its own can stabilize protein activity against desiccation in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the CS enzymatic activity data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "6a7527cf-0c76-4d4a-84c1-b28743195cd0",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C26",
+      "claim": "When dried alone, CS demonstrated high levels of aggregation, a 20-fold increase in its aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "When dried alone, CS demonstrated high levels of aggregation, a 20-fold increase in its aggregation (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "47a211ca-7f24-42be-b2d5-7fa98291683e",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C27",
+      "claim": "Increasing amounts of Hsp12 added before desiccation decreased aggregation of CS in a concentration-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing amounts of Hsp12 added before desiccation decreased aggregation of CS in a concentration-dependent manner (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "350e03a7-cdcf-46f0-9d96-49fa28a6c328",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C28",
+      "claim": "Significant solubilization of CS occurred at a 2:1 ratio of Hsp12 to CS.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant solubilization of CS occurred at a 2:1 ratio of Hsp12 to CS (Figure 2B, 225:120 \u00b5g/ml).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "0d33737e-0d5a-458a-a641-3b09d5d77ce1",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C29",
+      "claim": "The stoichiometry of Hsp12 to CS suggests this solubilization function of Hsp12 is not enzymatic.",
+      "claim_type": "EXPLICIT",
+      "source": "This stoichiometry suggests this solubilization function of Hsp12 is not enzymatic, consistent with Hsp12s high expression during stress in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the 2:1 stoichiometry observed",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "02aca9ab-3a8c-486b-a414-e7dd0ae08996",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C30",
+      "claim": "Increased Hsp12 expression significantly increased luciferase solubility after desiccation.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased Hsp12 expression significantly increased luciferase solubility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from luciferase solubility assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "cf836149-8f6a-4eb2-b5bd-d65abf88fa67",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C31",
+      "claim": "Both in vivo and in vitro, Hsp12 helps mitigate desiccation-induced protein aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, both in vivo and in vitro, Hsp12 helps mitigate desiccation-induced protein aggregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the CS and FFL aggregation data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "eb1d5b65-1c64-4ada-a5e8-f8d1bf8a6b94",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C32",
+      "claim": "Trehalose increased the activity and solubility of CS after desiccation in a concentration dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro, trehalose, like Hsp12, increased the activity and solubility of CS after desiccation in a concentration dependent manner (Figure 2E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2E,F (note: these panel labels appear to be incorrect in the text as the figure only shows panels A-D)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "291c5c9f-72cf-41bf-8d90-4ee699b03f05",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C33",
+      "claim": "In vivo FFL activity was stabilized four-fold against desiccation in cells with high trehalose alone, but 14-fold in cells with both high Hsp12 and trehalose.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo FFL activity was stabilized four-fold against desiccation in cells with high trehalose alone, but 14-fold in cells with both high Hsp12 and trehalose (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2C (note: this panel label appears to be incorrect as Figure 2 shows panels A-D with different content)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "108ae5c7-3525-4afa-81d8-87695a9806a8",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C34",
+      "claim": "Hsp12 and trehalose can modulate the activity and solubility of proteins independently or cooperatively depending upon the substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that Hsp12 and trehalose can modulate the activity and solubility of proteins independently or cooperatively depending upon the substrates, suggesting that Hsp12 and trehalose have both independent and dependent functions in proteostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the differential effects on CS and FFL",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "9b0eec08-b9be-46b7-8441-1dddcb5f3781",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C35",
+      "claim": "[PSI+] is a cytoplasmic prion.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we showed that [PSI+], a cytoplasmic prion, or [GAR+], a membrane-associated prion, are propagated efficiently between desiccated stationary phase cells and their daughter cells that form upon rehydration in growth media (Tapia and Koshland, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tapia and Koshland, 2014 and established knowledge",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "5f08ac73-7145-4151-bed1-ea8d1640acc8",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C36",
+      "claim": "[GAR+] is a membrane-associated prion.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we showed that [PSI+], a cytoplasmic prion, or [GAR+], a membrane-associated prion, are propagated efficiently between desiccated stationary phase cells and their daughter cells that form upon rehydration in growth media (Tapia and Koshland, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tapia and Koshland, 2014 and established knowledge",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "04742be2-52c2-4d6a-8b58-8a32e4d30091",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C37",
+      "claim": "hsp12\u2206 cells were able to propagate [PSI+] with or without desiccation.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike tps1\u2206 cells, hsp12\u2206 cells were able to propagate [PSI+] with or without desiccation, suggesting that trehalose, but not Hsp12, is required to prevent [PSI+] hyper-aggregation (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "f5551f70-c94e-4846-bf76-baa995a17542",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C38",
+      "claim": "Trehalose, but not Hsp12, is required to prevent [PSI+] hyper-aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike tps1\u2206 cells, hsp12\u2206 cells were able to propagate [PSI+] with or without desiccation, suggesting that trehalose, but not Hsp12, is required to prevent [PSI+] hyper-aggregation (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the [PSI+] propagation data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "c023be9a-b774-4335-8675-71f55f8cbbd7",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C39",
+      "claim": "Even in the absence of desiccation, the percentage of [GAR+] cells in tps1\u2206hsp12\u2206 cultures was reduced almost 500-fold relative to wild type or hsp12\u2206 cells, and 50-fold relative to tps1\u2206.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in the absence of desiccation, the percentage of [GAR+] cells in tps1\u2206hsp12\u2206 cultures was reduced almost 500-fold relative to wild type or hsp12\u2206 cells, and 50-fold relative to tps1\u2206 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "1fc74227-6dbc-463a-9d61-9b8d4d67f3f0",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C40",
+      "claim": "Hsp12 and trehalose promote propagation of the membrane prion [GAR+] even under aqueous conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Hsp12 and trehalose promote propagation of this membrane prion even under aqueous conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the [GAR+] propagation data in non-desiccated conditions",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "253b3963-1a01-4712-a0a7-79cd1a4dd70f",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C41",
+      "claim": "After desiccation, the percentage of [GAR+] cells was unchanged in hsp12\u2206 mutant cells but was undetectable in both the tps1\u2206 and tps1\u2206hsp12\u2206 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "After desiccation, the percentage of [GAR+] cells was unchanged in hsp12\u2206 mutant cells but was undetectable in both the tps1\u2206 and tps1\u2206hsp12\u2206 cells (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "1d8b4844-b724-42a3-84c9-301452501092",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C42",
+      "claim": "Trehalose stabilizes membranes in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, prior studies indicate that trehalose stabilizes membranes in vitro and this stabilization may prevent disruptive phase transitions that occur upon rehydration (Crowe et al., 1984, 1987; Erkut et al., 2011; Leslie et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Crowe et al., 1984, 1987; Erkut et al., 2011; Leslie et al., 1994",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "501d4b81-c313-4878-9570-f13ba2569f35",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C43",
+      "claim": "Hsp12 has been reported to increase membrane stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp12 also has been reported to increase membrane stability (Sales et al., 2000; Welker et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sales et al., 2000 and Welker et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "88a45553-c2af-47ad-b660-f72a1ae4398f",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C44",
+      "claim": "The addition of certain lipids induce the transition of Hsp12 from a disordered state to one with secondary structure.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative/additional membrane function for Hsp12 was suggested by the fact the addition of certain lipids induce the transition of Hsp12 from a disordered state to one with secondary structure (Herbert et al., 2012; Singarapu et al., 2011; Welker et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Herbert et al., 2012; Singarapu et al., 2011; Welker et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "9aa7f446-7c77-47a4-96cc-2e898759e1d0",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C45",
+      "claim": "Secondary structure prediction and NMR data identify four alpha-helical regions in Hsp12, with each of the three larger helices having the features of an amphipathic helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondary structure prediction and NMR data identify four alpha-helical regions in Hsp12, with each of the three larger helices having the features of an amphipathic helix (Herbert et al., 2012; Singarapu et al., 2011; Welker et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Herbert et al., 2012; Singarapu et al., 2011; Welker et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "f5346584-a24e-4e2d-a0f7-7e075261f09c",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C46",
+      "claim": "DMPG liposomes incubated in the absence of Hsp12 sedimented into the pellet fraction due to their large size.",
+      "claim_type": "EXPLICIT",
+      "source": "DMPG liposomes incubated in the absence of Hsp12 sedimented into the pellet fraction due to their large size (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "591f265a-672e-41ed-87f9-d4a20c8762d4",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C47",
+      "claim": "When incubated in the presence of Hsp12, DMPG appeared in the supernatant fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, when incubated in the presence of Hsp12, DMPG appeared in the supernatant fraction (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "69adec5b-7e7a-4158-948c-8b7681008040",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C48",
+      "claim": "Liposome vesiculation mediated by Hsp12 occurred even at low concentrations (Hsp12 - 1.5 \u03bcg/ml), with complete vesiculation occurring in a concentration-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Liposome vesiculation mediated by Hsp12 was incredibly robust and occurred even at low concentrations (Hsp12 - 1.5 \u03bcg/ml), with complete vesiculation occurring in a concentration-dependent manner (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "a5ca5811-1a59-4b78-9051-36e44ef39ad9",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C49",
+      "claim": "After the addition of Hsp12, very few intact liposomes were observed, replaced by membrane remnants.",
+      "claim_type": "EXPLICIT",
+      "source": "After the addition of Hsp12, very few intact liposomes were observed, replaced by membrane remnants (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by electron microscopy data shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "d4a53ce3-0732-4f30-98af-33a3c47a0aec",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C50",
+      "claim": "Trehalose alone did not have any vesiculation activity nor did it inhibit the effect of Hsp12 on liposomes under the conditions tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Trehalose alone did not have any vesiculation activity nor did it inhibit the effect of Hsp12 on liposomes under the conditions tested (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "66671438-66d6-4671-b4fc-a7259d2a16e6",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C51",
+      "claim": "Hsp12, but not trehalose, exhibits membrane remodeling activity in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that Hsp12, but not trehalose, exhibits membrane remodeling activity in vitro and suggest that their synergistic impact on [GAR+] propagation may result from different biophysical activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the liposome vesiculation data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "37a4eede-562c-4168-b5ec-2e0ec25081e8",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C52",
+      "claim": "Even when lacking all non-essential hydrophilins, stationary phase yeast cells still demonstrated robust desiccation tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even when lacking all non-essential hydrophilins, stationary phase yeast cells still demonstrated robust desiccation tolerance (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "360eade2-5f04-4113-84c1-1545cccf8910",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C53",
+      "claim": "Expressing high levels of Stf2 in exponentially-dividing cells did not significantly improve desiccation tolerance and failed to provide any synergistic tolerance with trehalose.",
+      "claim_type": "EXPLICIT",
+      "source": "Expressing high levels of Stf2 in exponentially-dividing cells did not significantly improve desiccation tolerance and failed to provide any synergistic tolerance with trehalose (Figure 5B, Figure 5\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5B and Figure 5\u2014figure supplement 1A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "01822b04-ae84-48f2-9bcf-69f3ef4fca3e",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C54",
+      "claim": "Deletion of Stf2 alone (stf2\u2206), or in combination with a loss of trehalose synthesis (tps1\u2206stf2\u2206) had no effect on the short-term desiccation tolerance of stationary phase yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, deletion of Stf2 alone (stf2\u2206), or in combination with a loss of trehalose synthesis (tps1\u2206stf2\u2206) had no effect on the short-term desiccation tolerance of stationary phase yeast, unlike the pronounced increase in sensitivity displayed by tps1\u2206hsp12\u2206 cells (Figures 1A and 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figures 1A and 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "a52b32e3-08ba-44ae-8437-e0e85bf7ec51",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C55",
+      "claim": "Unlike Hsp12, Stf2 did not exhibit any detectable secondary structure in the presence or absence of DMPG.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike Hsp12, Stf2 also did not exhibit any detectable secondary structure in the presence or absence of DMPG (Figure 5C, Hsp12 + DMPG demonstrates classical alpha-helical CD signature).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by circular dichroism data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "97bb46cb-3310-4653-bd43-5a745c67d491",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C56",
+      "claim": "Stf2 fails in vesiculating membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Stf2 also fails in vesiculating membranes (Figure 5D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5D\u2013E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "ba4e975d-4dee-4e0b-a99a-ba26163b65e3",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C57",
+      "claim": "Hydrophilins likely carry out distinct biological and molecular functions, despite sharing general physical properties.",
+      "claim_type": "EXPLICIT",
+      "source": "These functional differences between Hsp12 and Stf2 suggest that hydrophilins likely carry out distinct biological and molecular functions, despite sharing general physical properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the functional differences observed between Hsp12 and Stf2",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "8ed0f38a-fb37-410f-98b1-bd67024c8232",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C58",
+      "claim": "Stationary phase yeast cells lacking both trehalose and Hsp12 (tps1\u2206hsp12\u2206) exhibit a greater than 100-fold loss in short-term desiccation tolerance and 10,000-fold loss in long-term desiccation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that stationary phase yeast cells lacking both trehalose and Hsp12 (tps1\u2206hsp12\u2206) exhibit a greater than 100-fold loss in short-term desiccation tolerance and 10,000-fold loss in long-term desiccation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from desiccation tolerance assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "52d5b628-d642-4af1-9adf-e14261cb47b2",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C59",
+      "claim": "Supplementing cells with only trehalose and Hsp12 was sufficient to make desiccation-sensitive dividing cells desiccation tolerant, with tolerance higher than that which is observed naturally in stationary phase cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we show that supplementing cells with only trehalose and Hsp12 was sufficient to make desiccation-sensitive dividing cells desiccation tolerant, this tolerance is higher than that which is observed naturally in stationary phase cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from desiccation tolerance assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "5a5aa29d-ea7e-4177-8fa8-15b1eb2ceafd",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C60",
+      "claim": "Hsp12 had not previously been implicated in desiccation tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp12 had not previously been implicated in desiccation tolerance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on review of prior literature",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "3de167d8-b459-4058-81af-c268841127dc",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C61",
+      "claim": "Hsp12 had been reported to mitigate lethality due to heat stress and osmolarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, Hsp12 had been reported to mitigate lethality due to heat stress and osmolarity (Welker et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Welker et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "30bc4a38-ea92-49e0-a350-d3b975b8e84d",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C62",
+      "claim": "The authors were unable to reproduce the findings that Hsp12 mitigates heat stress.",
+      "claim_type": "EXPLICIT",
+      "source": "We were unable to reproduce those findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the authors' experimental attempts",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "faf46ed5-4b4b-40b9-840c-448a66e4cf97",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C63",
+      "claim": "Desiccation occurs commonly in nature, so the desiccation tolerance conferred by Hsp12 is likely one of its physiological functions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, desiccation occurs commonly in nature, so the desiccation tolerance conferred by Hsp12 is likely one of its physiological functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from ecological considerations and experimental data",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "e9898a28-6ff6-4830-8a6c-d7052e520c65",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C64",
+      "claim": "The important role of Hsp12 in desiccation tolerance appears to reflect a unique function amongst the hydrophilin family.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the important role of Hsp12 in desiccation tolerance appears to reflect a unique function amongst the hydrophilin family based on several considerations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple lines of experimental evidence",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "1aa867b2-9f38-4550-a0ad-87d1b57605d5",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C65",
+      "claim": "The uniqueness of Hsp12 as a critical factor for desiccation tolerance challenges the notion that all hydrophilins belong to a redundant family of proteins with common biological functions.",
+      "claim_type": "EXPLICIT",
+      "source": "The apparent uniqueness of Hsp12 as a critical factor for desiccation tolerance challenges the notion that all hydrophilins belong to a redundant family of proteins with common biological functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental data showing distinct functions",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "e432746c-a981-4105-b0e1-e55ee89cdc7e",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C66",
+      "claim": "Hsp12 demonstrates the ability to protect against protein aggregation and protein misfolding with analyzed substrates both in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that Hsp12 demonstrates both of these activities with analyzed substrates both in vitro and in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from CS and FFL assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "adb1e305-e26d-441f-b940-561fc0b03d77",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C67",
+      "claim": "The in vivo ability of Hsp12 to promote desiccation tolerance correlates with the ability of Hsp12 to acquire secondary structure in the presence of lipids and to cause membrane vesiculation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we show that the in vivo ability of Hsp12 to promote desiccation tolerance correlates with the ability of Hsp12 to acquire secondary structure in the presence of lipids and to cause membrane vesiculation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from correlation between structural and functional data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "43f1a8d1-1c3b-41da-b001-d4ac07778085",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C68",
+      "claim": "Hsp12's vesiculation function may play an important role during rehydration.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the impact of Hsp12 and trehalose on [GAR+] prion propagation in aqueous conditions, Hsp12's vesiculation function may play an important role during rehydration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference from the [GAR+] propagation data",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "c0456358-d0b7-4e99-a792-d9ec70f46840",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C69",
+      "claim": "The protective effect of trehalose on cytosolic proteins may result from its ability to form an amorphous liquid glass inside cells in the absence of water.",
+      "claim_type": "EXPLICIT",
+      "source": "As suggested by in vitro experiments, the protective effect of trehalose on cytosolic proteins may result from its ability to form an amorphous liquid glass inside cells in the absence of water, while Hsp12's protective effect may result from aiding in the formation and strength of trehalose in its vitrified state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative model based on in vitro experiments",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "eaac48db-d861-4538-9347-e393ae6463b3",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C70",
+      "claim": "Hsp12's protective effect may result from aiding in the formation and strength of trehalose in its vitrified state.",
+      "claim_type": "EXPLICIT",
+      "source": "As suggested by in vitro experiments, the protective effect of trehalose on cytosolic proteins may result from its ability to form an amorphous liquid glass inside cells in the absence of water, while Hsp12's protective effect may result from aiding in the formation and strength of trehalose in its vitrified state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative model based on experimental observations",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "ade680f0-aa9c-43cd-b45c-4093294f2fc4",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C71",
+      "claim": "Trehalose has been proposed to protect against severe membrane damage during desiccation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, trehalose has also been proposed to protect against severe membrane damage during desiccation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on prior literature and models",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "2d550dac-51a6-4bc4-b43c-236a5273750f",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C72",
+      "claim": "Damage that escapes protection by trehalose may be removed by Hsp12's vesiculation function.",
+      "claim_type": "EXPLICIT",
+      "source": "Damage that escapes protection by trehalose may be removed by Hsp12's vesiculation function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative model based on experimental observations",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "5040a434-13ea-4af8-9dad-fa2c4b7b08d1",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C73",
+      "claim": "Intrinsically disordered proteins and protein regions have been shown to contribute to phase transitions leading to a more ordered cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, it has recently been noted that intrinsically disordered proteins and protein regions have been shown to contribute to phase transitions leading to a more ordered cell (Alberti and Hyman, 2016; Mitrea and Kriwacki, 2016; Uversky et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Alberti and Hyman, 2016; Mitrea and Kriwacki, 2016; Uversky et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "3d2f1f94-0209-4b27-9f24-b5ff123aa666",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C74",
+      "claim": "Hsp12 might protect proteins from aggregating via means of phase separating susceptible proteins and hence buffering the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp12 might protect proteins from aggregating via means of phase separating susceptible proteins and hence buffering the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative model based on recent findings about IDPs",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "21e19f2d-ef7d-4c62-b897-3d6d2eda58a1",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C75",
+      "claim": "Both trehalose and Hsp12 can modulate proteostasis in response to desiccation.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide in vivo and in vitro evidence that both trehalose and Hsp12 can modulate proteostasis in response to desiccation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from proteostasis assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "49db16e0-d322-449e-b04c-1adc2e93112a",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C76",
+      "claim": "In vivo trehalose and Hsp12 prevent desiccation-induced aggregation of firefly luciferase.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that in vivo they prevent desiccation-induced aggregation of firefly luciferase and of citrate synthase in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from luciferase aggregation assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "36ffdbad-4f26-44ea-ae37-7661dedeb80a",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C77",
+      "claim": "Trehalose and Hsp12 prevent desiccation-induced aggregation of citrate synthase in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that in vivo they prevent desiccation-induced aggregation of firefly luciferase and of citrate synthase in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from CS aggregation assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "1f53a66e-c15b-4b46-bce3-3e47184c9737",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C78",
+      "claim": "Trehalose and Hsp12 synergize, albeit weakly, to protect firefly luciferase activity in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Trehalose and Hsp12 also synergize, albeit weakly, to protect firefly luciferase activity in vivo, and individually they protect citrate synthase activity in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from luciferase activity assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "718fe185-d9cf-4521-906d-6123eb8be49c",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C79",
+      "claim": "Trehalose and Hsp12 individually protect citrate synthase activity in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Trehalose and Hsp12 also synergize, albeit weakly, to protect firefly luciferase activity in vivo, and individually they protect citrate synthase activity in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from CS activity assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "1c479668-0a72-4229-ac77-fdb61ec48ff9",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C80",
+      "claim": "Trehalose and Hsp12 may modulate proteostasis by different mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences likely indicate that trehalose and Hsp12 may modulate proteostasis by different mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the differential effects on different prions",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "6fa74c99-4cb7-415c-afa7-e0a9305b798c",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C81",
+      "claim": "Trehalose prevents abnormal membrane vesicles in desiccated nematodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Trehalose prevents abnormal membrane vesicles in desiccated nematodes (Erkut et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Erkut et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "30849cd4-1d36-4ad9-aee6-b46f481514df",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C82",
+      "claim": "In vitro experiments suggest that trehalose intercalates into membranes to alter their melting properties.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro experiments suggest that trehalose intercalates into membranes to alter their melting properties (Crowe et al., 1984, 1987; Leslie et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Crowe et al., 1984, 1987; Leslie et al., 1994",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "f07d3832-bffb-4da0-8174-bb71410cb2a3",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C83",
+      "claim": "The finding that trehalose and Hsp12 together are sufficient to mitigate the major stresses of desiccation has major implications for engineering desiccation/drought tolerance in other organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding that trehalose and Hsp12 together are sufficient to mitigate the major stresses of desiccation has major implications for engineering desiccation/drought tolerance in other organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental findings and their potential applications",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "b9e0bef6-2dbf-45c1-a14d-abb29fdea5c5",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "claim_id": "C84",
+      "claim": "Manipulation of Hsp12 expression has no known metabolic side effects, at least in budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, manipulation of Hsp12 expression has no known metabolic side effects, at least in budding yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the authors' experimental observations",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c562547f-4831-482f-91e3-0d417ab54627",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Trehalose and Hsp12 synergize to provide desiccation tolerance in stationary phase yeast. The tps1\u0394hsp12\u0394 double mutant shows >100-fold loss in short-term (2 day) and complete loss after long-term (30 day) desiccation, while single mutants show wild-type or intermediate phenotypes. This synergy is specific to desiccation stress, not heat stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 provide quantitative viability data from Figure 1A showing the synergistic desiccation sensitivity of the double mutant. Claim C18 demonstrates specificity by showing no synergistic heat sensitivity. The data are internally consistent and supported by appropriate controls across multiple time points.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "d02fdb48-2c1a-4357-9479-e205037e1e3d",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Trehalose and Hsp12 are sufficient to confer desiccation tolerance to exponentially dividing cells. Engineered expression of both factors in dividing cells produces 65-80% survival after desiccation, exceeding the 20-40% survival of wild-type stationary phase cells and representing ~60-fold greater tolerance than either factor alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 provide quantitative data from Figure 1B demonstrating sufficiency. The comparison to stationary phase cells (C7, C22) establishes biological significance. However, the manuscript does not address whether other stationary phase factors might further enhance tolerance, which would strengthen the sufficiency claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "7e6b6ac4-eece-4adb-a834-42df2bd260c5",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Hsp12 protects citrate synthase (CS) from desiccation-induced inactivation and aggregation in vitro. Hsp12 maintains CS enzymatic activity in a concentration-dependent manner and reduces CS aggregation by ~20-fold, with significant effects at a 2:1 Hsp12:CS ratio, suggesting a non-enzymatic, stoichiometric mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C28 provide quantitative in vitro data from Figure 2A-B. The stoichiometric interpretation (C29) is reasonable given the 2:1 ratio. However, the manuscript does not provide statistical tests for the concentration-dependence claims, and error bars in figures should be better described in methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "d02e78e3-8a88-48f8-89cb-95d39eb1dbc0",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Hsp12 prevents desiccation-induced aggregation of firefly luciferase (FFL) in vivo. Increased Hsp12 expression significantly increases FFL solubility after desiccation, as measured by western blot of high-speed supernatants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C30 is supported by Figure 2\u2014figure supplement 1B showing increased soluble FFL with Hsp12 expression. However, the manuscript lacks quantification of the western blot bands and does not report the number of biological replicates for this experiment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "e03ddd80-71a3-48f7-9c19-447c2ff62133",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Trehalose and Hsp12 can act independently or synergistically on different protein substrates. Trehalose protects CS activity and solubility in vitro independently, while trehalose and Hsp12 synergize to protect FFL activity in vivo (4-fold vs 14-fold stabilization).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C32-C33 reference Figure 2E,F and 2C, but these panel labels appear inconsistent with the actual Figure 2 shown (which has panels A-D). This discrepancy makes it difficult to verify the data supporting these claims. The substrate-dependent effects are interesting but require clarification of the figure references.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "36fa4766-ea7a-4279-ac34-05e387c4e4a6",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Trehalose and Hsp12 differentially affect prion propagation. Hsp12\u0394 cells propagate the cytoplasmic prion [PSI+] normally, while the tps1\u0394hsp12\u0394 double mutant shows severe defects in propagating the membrane-associated prion [GAR+] even without desiccation (500-fold reduction vs wild-type).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41 are supported by Figure 3A-B showing differential effects on [PSI+] vs [GAR+]. The data demonstrate that trehalose and Hsp12 have distinct functions for different prion substrates. However, the manuscript does not explain why [GAR+] propagation is affected even in non-desiccated conditions, which seems inconsistent with the desiccation-specific phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "b384c575-92af-47aa-bea8-6621a2b15dc2",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Hsp12 exhibits membrane remodeling activity by vesiculating DMPG liposomes in vitro. Hsp12 causes liposomes to shift from pellet to supernatant fraction in a concentration-dependent manner (effective at 1.5 \u03bcg/ml), with electron microscopy showing membrane remnants replacing intact liposomes. Trehalose does not exhibit this activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50 are supported by Figure 4A-C showing biochemical fractionation and EM data. The concentration-dependence and specificity to Hsp12 (not trehalose) are well-documented. However, the manuscript does not test whether this activity is required for desiccation tolerance in vivo through structure-function analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "8822de06-deba-4d30-a034-a6c0064200b2",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Hsp12 has unique functions among yeast hydrophilins. An 8X\u0394 strain lacking all non-essential hydrophilins retains desiccation tolerance. Another hydrophilin, Stf2, does not synergize with trehalose, does not acquire secondary structure with lipids, and cannot vesiculate membranes, unlike Hsp12.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 are supported by Figure 5A-E comparing Hsp12 and Stf2 functions. The 8X\u0394 result (C52) is particularly important for ruling out redundancy. However, the manuscript only tests one other hydrophilin (Stf2) in detail, so the generalization about all hydrophilins having distinct functions (C57, C65) is somewhat overstated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "ddabc404-e040-4535-9fe1-95ef2e30732c",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Hsp12 undergoes a structural transition from disordered to ordered (alpha-helical) state upon lipid binding. Secondary structure prediction and NMR identify four alpha-helical regions, with three having amphipathic helix features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 are supported by citations to prior structural studies (Herbert et al., 2012; Singarapu et al., 2011; Welker et al., 2010). The current manuscript confirms this with CD spectroscopy (Figure 5C) showing alpha-helical signature for Hsp12+DMPG. This is prior work appropriately cited and confirmed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "b768c11b-5c66-441f-af28-05a162549e5a",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Hsp12's role in desiccation tolerance is a novel finding. Prior reports suggested Hsp12 functions in heat stress and osmolarity, but the authors could not reproduce heat stress findings. Desiccation is proposed as the physiological function given its natural occurrence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C62 states the authors could not reproduce prior heat stress findings, but Figure 1\u2014figure supplement 1 shows heat stress data that appears to show some phenotypes. The relationship between these data and the reproducibility claim is unclear. The argument for desiccation as the physiological function (C63) is reasonable but somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "7cf862a3-583c-412e-9651-4acaeb4f531f",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Hsp12 and trehalose modulate proteostasis through both independent and synergistic mechanisms. The correlation between Hsp12's in vivo desiccation tolerance function and its in vitro membrane remodeling and lipid-induced folding suggests these biochemical activities are functionally relevant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66-C67 establish correlation between structural properties and function, but causation is not demonstrated. The manuscript lacks structure-function experiments (e.g., mutations disrupting lipid binding or vesiculation) to test whether membrane remodeling is required for desiccation tolerance. The correlation is suggestive but not definitive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "7448ff3c-67e4-421b-aba0-778dbc06f091",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Proposed mechanistic models for trehalose and Hsp12 function. Trehalose may form a vitrified glass state protecting proteins, with Hsp12 potentially aiding vitrification or removing damaged membranes through vesiculation. Hsp12 might also protect through phase separation of aggregation-prone proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C70, C72, C74 are explicitly speculative models (evidence_type: SPECULATION). These are reasonable hypotheses based on the data, but the manuscript does not test them experimentally. They represent future directions rather than supported conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "c89dff00-82af-413e-a112-e9e57a2af612",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The sufficiency of trehalose and Hsp12 for desiccation tolerance has implications for engineering drought tolerance in crops. Hsp12 manipulation has no known metabolic side effects in yeast.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C83 is speculative about translational applications. Claim C84 about lack of side effects is based on the authors' observations but is not systematically tested. The manuscript does not present comprehensive metabolic or fitness assays to support this claim definitively.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "a052b78c-7135-4e91-b45a-85afcaacb86f",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background context on anhydrobiotes, desiccation tolerance, and prior findings. Anhydrobiotes include diverse organisms that survive water loss and typically contain trehalose and hydrophilins. Prior studies showed variable requirements for these factors across species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 provide background context supported by appropriate citations. These establish the scientific context for the current work. Claim C7 about yeast survival rates is particularly important as it establishes the baseline for comparison.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    },
+    {
+      "id": "12f7ebe2-511b-4eec-adbc-3f1ad588cf0f",
+      "content_id": "e8883a9e-f57d-4cd8-845a-d080f0bd6a36",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Additional background information on Hsp12, prions, trehalose, and intrinsically disordered proteins from prior literature. These claims establish known properties of the molecules being studied.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12, C35-C36, C42-C43, C71, C73, C81-C82 are background claims supported by appropriate citations to prior work. These provide necessary context but are not novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:55.143166Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0e460729-a9bf-4f69-af40-62ec0d44017d",
+      "result_id": "c562547f-4831-482f-91e3-0d417ab54627"
+    },
+    {
+      "claim_id": "49de8fad-c85a-4f3c-b170-8e1d97f15686",
+      "result_id": "c562547f-4831-482f-91e3-0d417ab54627"
+    },
+    {
+      "claim_id": "77c061d0-2e31-4c5a-bf20-729b830a1956",
+      "result_id": "c562547f-4831-482f-91e3-0d417ab54627"
+    },
+    {
+      "claim_id": "32a685ba-432a-473d-adac-54393b18f565",
+      "result_id": "c562547f-4831-482f-91e3-0d417ab54627"
+    },
+    {
+      "claim_id": "70442a1f-6132-436b-9c9c-680a1acb9b55",
+      "result_id": "c562547f-4831-482f-91e3-0d417ab54627"
+    },
+    {
+      "claim_id": "618bbdee-0a2d-4021-9bdb-a1d938ff25ae",
+      "result_id": "c562547f-4831-482f-91e3-0d417ab54627"
+    },
+    {
+      "claim_id": "60e081ab-6dd1-4825-b510-5fec6d50a7e4",
+      "result_id": "c562547f-4831-482f-91e3-0d417ab54627"
+    },
+    {
+      "claim_id": "db1c2f33-eccf-4bea-b81d-0a57e1cae718",
+      "result_id": "c562547f-4831-482f-91e3-0d417ab54627"
+    },
+    {
+      "claim_id": "8ed0f38a-fb37-410f-98b1-bd67024c8232",
+      "result_id": "c562547f-4831-482f-91e3-0d417ab54627"
+    },
+    {
+      "claim_id": "5caf9c28-bdb7-4426-910c-29405954f3da",
+      "result_id": "d02fdb48-2c1a-4357-9479-e205037e1e3d"
+    },
+    {
+      "claim_id": "0b9919d6-6631-4248-ad60-8082817aed7d",
+      "result_id": "d02fdb48-2c1a-4357-9479-e205037e1e3d"
+    },
+    {
+      "claim_id": "287fb636-3a65-474c-8e87-82b2d6a76a92",
+      "result_id": "d02fdb48-2c1a-4357-9479-e205037e1e3d"
+    },
+    {
+      "claim_id": "52d5b628-d642-4af1-9adf-e14261cb47b2",
+      "result_id": "d02fdb48-2c1a-4357-9479-e205037e1e3d"
+    },
+    {
+      "claim_id": "8ad2ac93-04f0-414a-afa0-af72b0e14778",
+      "result_id": "7e6b6ac4-eece-4adb-a834-42df2bd260c5"
+    },
+    {
+      "claim_id": "b790940f-9fb7-4476-b43f-15a43da43181",
+      "result_id": "7e6b6ac4-eece-4adb-a834-42df2bd260c5"
+    },
+    {
+      "claim_id": "6f838967-9b98-4a73-933f-ceab951bf66a",
+      "result_id": "7e6b6ac4-eece-4adb-a834-42df2bd260c5"
+    },
+    {
+      "claim_id": "6a7527cf-0c76-4d4a-84c1-b28743195cd0",
+      "result_id": "7e6b6ac4-eece-4adb-a834-42df2bd260c5"
+    },
+    {
+      "claim_id": "47a211ca-7f24-42be-b2d5-7fa98291683e",
+      "result_id": "7e6b6ac4-eece-4adb-a834-42df2bd260c5"
+    },
+    {
+      "claim_id": "350e03a7-cdcf-46f0-9d96-49fa28a6c328",
+      "result_id": "7e6b6ac4-eece-4adb-a834-42df2bd260c5"
+    },
+    {
+      "claim_id": "0d33737e-0d5a-458a-a641-3b09d5d77ce1",
+      "result_id": "7e6b6ac4-eece-4adb-a834-42df2bd260c5"
+    },
+    {
+      "claim_id": "02aca9ab-3a8c-486b-a414-e7dd0ae08996",
+      "result_id": "d02e78e3-8a88-48f8-89cb-95d39eb1dbc0"
+    },
+    {
+      "claim_id": "cf836149-8f6a-4eb2-b5bd-d65abf88fa67",
+      "result_id": "d02e78e3-8a88-48f8-89cb-95d39eb1dbc0"
+    },
+    {
+      "claim_id": "49db16e0-d322-449e-b04c-1adc2e93112a",
+      "result_id": "d02e78e3-8a88-48f8-89cb-95d39eb1dbc0"
+    },
+    {
+      "claim_id": "eb1d5b65-1c64-4ada-a5e8-f8d1bf8a6b94",
+      "result_id": "e03ddd80-71a3-48f7-9c19-447c2ff62133"
+    },
+    {
+      "claim_id": "291c5c9f-72cf-41bf-8d90-4ee699b03f05",
+      "result_id": "e03ddd80-71a3-48f7-9c19-447c2ff62133"
+    },
+    {
+      "claim_id": "108ae5c7-3525-4afa-81d8-87695a9806a8",
+      "result_id": "e03ddd80-71a3-48f7-9c19-447c2ff62133"
+    },
+    {
+      "claim_id": "1f53a66e-c15b-4b46-bce3-3e47184c9737",
+      "result_id": "e03ddd80-71a3-48f7-9c19-447c2ff62133"
+    },
+    {
+      "claim_id": "718fe185-d9cf-4521-906d-6123eb8be49c",
+      "result_id": "e03ddd80-71a3-48f7-9c19-447c2ff62133"
+    },
+    {
+      "claim_id": "04742be2-52c2-4d6a-8b58-8a32e4d30091",
+      "result_id": "36fa4766-ea7a-4279-ac34-05e387c4e4a6"
+    },
+    {
+      "claim_id": "f5551f70-c94e-4846-bf76-baa995a17542",
+      "result_id": "36fa4766-ea7a-4279-ac34-05e387c4e4a6"
+    },
+    {
+      "claim_id": "c023be9a-b774-4335-8675-71f55f8cbbd7",
+      "result_id": "36fa4766-ea7a-4279-ac34-05e387c4e4a6"
+    },
+    {
+      "claim_id": "1fc74227-6dbc-463a-9d61-9b8d4d67f3f0",
+      "result_id": "36fa4766-ea7a-4279-ac34-05e387c4e4a6"
+    },
+    {
+      "claim_id": "253b3963-1a01-4712-a0a7-79cd1a4dd70f",
+      "result_id": "36fa4766-ea7a-4279-ac34-05e387c4e4a6"
+    },
+    {
+      "claim_id": "f5346584-a24e-4e2d-a0f7-7e075261f09c",
+      "result_id": "b384c575-92af-47aa-bea8-6621a2b15dc2"
+    },
+    {
+      "claim_id": "591f265a-672e-41ed-87f9-d4a20c8762d4",
+      "result_id": "b384c575-92af-47aa-bea8-6621a2b15dc2"
+    },
+    {
+      "claim_id": "69adec5b-7e7a-4158-948c-8b7681008040",
+      "result_id": "b384c575-92af-47aa-bea8-6621a2b15dc2"
+    },
+    {
+      "claim_id": "a5ca5811-1a59-4b78-9051-36e44ef39ad9",
+      "result_id": "b384c575-92af-47aa-bea8-6621a2b15dc2"
+    },
+    {
+      "claim_id": "d4a53ce3-0732-4f30-98af-33a3c47a0aec",
+      "result_id": "b384c575-92af-47aa-bea8-6621a2b15dc2"
+    },
+    {
+      "claim_id": "66671438-66d6-4671-b4fc-a7259d2a16e6",
+      "result_id": "b384c575-92af-47aa-bea8-6621a2b15dc2"
+    },
+    {
+      "claim_id": "37a4eede-562c-4168-b5ec-2e0ec25081e8",
+      "result_id": "8822de06-deba-4d30-a034-a6c0064200b2"
+    },
+    {
+      "claim_id": "360eade2-5f04-4113-84c1-1545cccf8910",
+      "result_id": "8822de06-deba-4d30-a034-a6c0064200b2"
+    },
+    {
+      "claim_id": "01822b04-ae84-48f2-9bcf-69f3ef4fca3e",
+      "result_id": "8822de06-deba-4d30-a034-a6c0064200b2"
+    },
+    {
+      "claim_id": "a52b32e3-08ba-44ae-8437-e0e85bf7ec51",
+      "result_id": "8822de06-deba-4d30-a034-a6c0064200b2"
+    },
+    {
+      "claim_id": "97bb46cb-3310-4653-bd43-5a745c67d491",
+      "result_id": "8822de06-deba-4d30-a034-a6c0064200b2"
+    },
+    {
+      "claim_id": "ba4e975d-4dee-4e0b-a99a-ba26163b65e3",
+      "result_id": "8822de06-deba-4d30-a034-a6c0064200b2"
+    },
+    {
+      "claim_id": "e9898a28-6ff6-4830-8a6c-d7052e520c65",
+      "result_id": "8822de06-deba-4d30-a034-a6c0064200b2"
+    },
+    {
+      "claim_id": "1aa867b2-9f38-4550-a0ad-87d1b57605d5",
+      "result_id": "8822de06-deba-4d30-a034-a6c0064200b2"
+    },
+    {
+      "claim_id": "88a45553-c2af-47ad-b660-f72a1ae4398f",
+      "result_id": "ddabc404-e040-4535-9fe1-95ef2e30732c"
+    },
+    {
+      "claim_id": "9aa7f446-7c77-47a4-96cc-2e898759e1d0",
+      "result_id": "ddabc404-e040-4535-9fe1-95ef2e30732c"
+    },
+    {
+      "claim_id": "5a5aa29d-ea7e-4177-8fa8-15b1eb2ceafd",
+      "result_id": "b768c11b-5c66-441f-af28-05a162549e5a"
+    },
+    {
+      "claim_id": "3de167d8-b459-4058-81af-c268841127dc",
+      "result_id": "b768c11b-5c66-441f-af28-05a162549e5a"
+    },
+    {
+      "claim_id": "30bc4a38-ea92-49e0-a350-d3b975b8e84d",
+      "result_id": "b768c11b-5c66-441f-af28-05a162549e5a"
+    },
+    {
+      "claim_id": "faf46ed5-4b4b-40b9-840c-448a66e4cf97",
+      "result_id": "b768c11b-5c66-441f-af28-05a162549e5a"
+    },
+    {
+      "claim_id": "e432746c-a981-4105-b0e1-e55ee89cdc7e",
+      "result_id": "7cf862a3-583c-412e-9651-4acaeb4f531f"
+    },
+    {
+      "claim_id": "adb1e305-e26d-441f-b940-561fc0b03d77",
+      "result_id": "7cf862a3-583c-412e-9651-4acaeb4f531f"
+    },
+    {
+      "claim_id": "21e19f2d-ef7d-4c62-b897-3d6d2eda58a1",
+      "result_id": "7cf862a3-583c-412e-9651-4acaeb4f531f"
+    },
+    {
+      "claim_id": "36ffdbad-4f26-44ea-ae37-7661dedeb80a",
+      "result_id": "7cf862a3-583c-412e-9651-4acaeb4f531f"
+    },
+    {
+      "claim_id": "1c479668-0a72-4229-ac77-fdb61ec48ff9",
+      "result_id": "7cf862a3-583c-412e-9651-4acaeb4f531f"
+    },
+    {
+      "claim_id": "43f1a8d1-1c3b-41da-b001-d4ac07778085",
+      "result_id": "7448ff3c-67e4-421b-aba0-778dbc06f091"
+    },
+    {
+      "claim_id": "c0456358-d0b7-4e99-a792-d9ec70f46840",
+      "result_id": "7448ff3c-67e4-421b-aba0-778dbc06f091"
+    },
+    {
+      "claim_id": "eaac48db-d861-4538-9347-e393ae6463b3",
+      "result_id": "7448ff3c-67e4-421b-aba0-778dbc06f091"
+    },
+    {
+      "claim_id": "2d550dac-51a6-4bc4-b43c-236a5273750f",
+      "result_id": "7448ff3c-67e4-421b-aba0-778dbc06f091"
+    },
+    {
+      "claim_id": "3d2f1f94-0209-4b27-9f24-b5ff123aa666",
+      "result_id": "7448ff3c-67e4-421b-aba0-778dbc06f091"
+    },
+    {
+      "claim_id": "f07d3832-bffb-4da0-8174-bb71410cb2a3",
+      "result_id": "c89dff00-82af-413e-a112-e9e57a2af612"
+    },
+    {
+      "claim_id": "b9e0bef6-2dbf-45c1-a14d-abb29fdea5c5",
+      "result_id": "c89dff00-82af-413e-a112-e9e57a2af612"
+    },
+    {
+      "claim_id": "3c931178-e2d8-47d6-bcfa-178ddd1d5075",
+      "result_id": "a052b78c-7135-4e91-b45a-85afcaacb86f"
+    },
+    {
+      "claim_id": "b2ad3102-b6ac-4050-8834-c1c5be3ae2ef",
+      "result_id": "a052b78c-7135-4e91-b45a-85afcaacb86f"
+    },
+    {
+      "claim_id": "889702df-97f7-4a83-95a4-a8999c42d8c8",
+      "result_id": "a052b78c-7135-4e91-b45a-85afcaacb86f"
+    },
+    {
+      "claim_id": "3db50612-dc0c-44a8-bb89-3aa3be47458e",
+      "result_id": "a052b78c-7135-4e91-b45a-85afcaacb86f"
+    },
+    {
+      "claim_id": "261b5dd2-49fb-4e80-bda7-c4eb3342bb5c",
+      "result_id": "a052b78c-7135-4e91-b45a-85afcaacb86f"
+    },
+    {
+      "claim_id": "cecf78a8-244b-4ecf-aee7-ae69d3c49657",
+      "result_id": "a052b78c-7135-4e91-b45a-85afcaacb86f"
+    },
+    {
+      "claim_id": "9d26a3b5-7db6-476e-b75b-c1fb23a7260b",
+      "result_id": "a052b78c-7135-4e91-b45a-85afcaacb86f"
+    },
+    {
+      "claim_id": "480df31f-b754-4dfe-8cf6-750b8b51ea50",
+      "result_id": "a052b78c-7135-4e91-b45a-85afcaacb86f"
+    },
+    {
+      "claim_id": "6d1f851d-0b04-48d2-a569-dc27a07bb902",
+      "result_id": "a052b78c-7135-4e91-b45a-85afcaacb86f"
+    },
+    {
+      "claim_id": "96c53b61-1685-4452-8023-d005efa18b3f",
+      "result_id": "12f7ebe2-511b-4eec-adbc-3f1ad588cf0f"
+    },
+    {
+      "claim_id": "b3a41e74-1e8f-4acd-b606-584923ef212f",
+      "result_id": "12f7ebe2-511b-4eec-adbc-3f1ad588cf0f"
+    },
+    {
+      "claim_id": "9b0eec08-b9be-46b7-8441-1dddcb5f3781",
+      "result_id": "12f7ebe2-511b-4eec-adbc-3f1ad588cf0f"
+    },
+    {
+      "claim_id": "5f08ac73-7145-4151-bed1-ea8d1640acc8",
+      "result_id": "12f7ebe2-511b-4eec-adbc-3f1ad588cf0f"
+    },
+    {
+      "claim_id": "1d8b4844-b724-42a3-84c9-301452501092",
+      "result_id": "12f7ebe2-511b-4eec-adbc-3f1ad588cf0f"
+    },
+    {
+      "claim_id": "501d4b81-c313-4878-9570-f13ba2569f35",
+      "result_id": "12f7ebe2-511b-4eec-adbc-3f1ad588cf0f"
+    },
+    {
+      "claim_id": "ade680f0-aa9c-43cd-b45c-4093294f2fc4",
+      "result_id": "12f7ebe2-511b-4eec-adbc-3f1ad588cf0f"
+    },
+    {
+      "claim_id": "5040a434-13ea-4af8-9dad-fa2c4b7b08d1",
+      "result_id": "12f7ebe2-511b-4eec-adbc-3f1ad588cf0f"
+    },
+    {
+      "claim_id": "6fa74c99-4cb7-415c-afa7-e0a9305b798c",
+      "result_id": "12f7ebe2-511b-4eec-adbc-3f1ad588cf0f"
+    },
+    {
+      "claim_id": "30849cd4-1d36-4ad9-aee6-b46f481514df",
+      "result_id": "12f7ebe2-511b-4eec-adbc-3f1ad588cf0f"
+    }
+  ],
+  "comparisons": []
+}

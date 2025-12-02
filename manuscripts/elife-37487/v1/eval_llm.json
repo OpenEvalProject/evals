@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The authors engineered a light-controllable nicotinic acetylcholine receptor (\u03b22LinAChR) by introducing the E61C mutation in the mouse \u03b22 subunit and conjugating it with the photoswitchable ligand MAHoCh. This system enables bidirectional optical control: receptor function is normal in darkness, blocked under 380 nm light (cis configuration), and restored under 500 nm light (trans configuration).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 collectively describe the design and basic functional properties of \u03b22LinAChR. The molecular design is well-established (C1-C6), and the bidirectional photocontrol mechanism is clearly demonstrated (C7-C9). These claims are supported by structural data, photochemical principles, and functional characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "In heterologous expression (Neuro-2a cells), \u03b22LinAChR shows robust photocontrol with 71-82% inhibition under 380 nm light and full restoration under 525 nm light. The system is resistant to photobleaching and maintains antagonism in darkness for at least 10 minutes due to the thermal stability of cis-MAHoCh (half-life 74 min).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 provide quantitative validation of \u03b22LinAChR function in a heterologous system. Statistical significance is reported (p<0.05), appropriate controls are included, and the temporal stability is characterized. The data support the basic functionality of the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Viral transduction of \u03b22E61C in mouse VTA enables photocontrol of nicotinic currents in dopamine neurons. Expression is localized to the VTA (both TH+ and TH- neurons) without retrograde transport to PPN/LDT. Photo-inhibition is robust, specific, and does not affect total receptor numbers or other cellular properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C24 demonstrate successful implementation in native brain tissue. Immunohistochemistry confirms localized expression (C16-C17), electrophysiology shows functional photocontrol (C18-C21), and appropriate controls exclude off-target effects (C20, C23). The degree of photo-inhibition is smaller than in heterologous systems (C21), which is appropriately interpreted as partial incorporation of mutant subunits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "In vivo recordings from VTA dopamine neurons reveal that endogenous acetylcholine acting through \u03b22*nAChRs modulates neuronal firing patterns. Type 1 neurons (24/33 responding neurons) show decreased firing and reduced bursting under 390 nm light, with rapid rebound upon switching to 520 nm light, indicating that ambient ACh tonically activates these receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 describe the first major physiological finding using the optogenetic pharmacology approach. The data show appropriate controls (C29-C30), quantitative analysis (C31-C32), and statistical significance (C35). The interpretation that ambient ACh drives receptor activation (C34) is supported by the rebound effect. The causal relationship (C36) is justified by the temporal precision of the manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "A subset of VTA dopamine neurons (Type 2, 9/33) show increased firing under 390 nm light, suggesting that \u03b22*nAChRs can exert inhibitory control on some neurons, possibly through indirect network mechanisms or receptors on GABAergic interneurons. These neurons show no effect on burst firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 describe heterogeneous responses in VTA neurons. The observation is clearly documented (C37, C39), and the interpretation (C38) appropriately acknowledges uncertainty about the mechanism while proposing plausible explanations. This finding is consistent with known VTA heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Spontaneously-released ACh acts through post-synaptic \u03b22*nAChRs to bi-directionally modulate tonic firing and increase bursting activity of VTA DA neurons. This directly implicates nicotinic (not muscarinic) receptors and is consistent with previous optogenetic and pharmacological studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 synthesize the in vivo electrophysiology findings. The conclusion (C40) is supported by the Type 1 and Type 2 neuron data. The distinction from muscarinic receptors (C42) is valid given the receptor-specific manipulation. Consistency with prior work (C41, C43) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Photo-antagonizing \u03b22LinAChRs in VTA reduces the response of dopamine neurons to systemic nicotine administration. The nicotine-induced increase in firing rate and bursting is attenuated under 390 nm light and restored under 520 nm light, demonstrating reversible control of nicotine's effects with high spatiotemporal precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C51 demonstrate photocontrol of nicotine responses in vivo. The experimental design includes appropriate identification of DA neurons (C46), quantitative measurements (C47-C49), and controls showing normal responses in transduced animals (C50). The conclusion (C51) is justified by the data showing reversible, wavelength-dependent modulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Optical antagonism of VTA \u03b22*nAChRs is sufficient to reversibly control nicotine-induced conditioned place preference. Mice show preference under 520 nm light but not under 390 nm light, and this can be switched within the same animal. Locomotion is unaffected, indicating specificity for reward-related behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 demonstrate behavioral control using the optogenetic pharmacology approach. The experimental design includes appropriate controls (WT and \u03b22-/- mice, C55), within-subject reversibility (C56), and control for locomotor effects (C57). The conclusion that VTA \u03b22*nAChRs are sufficient for nicotine reinforcement (C58-C59) is strongly supported by the reversible, site-specific manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The optogenetic pharmacology approach using azobenzene photoswitches offers advantages over traditional optogenetics and other photosensitization strategies. It enables rapid, reversible, and specific control of neurotransmitter receptors in deep brain structures and freely behaving animals, with labeling that is rapid, long-lasting, and thermally stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C69 compare the current approach to alternatives and summarize its technical advantages. The comparisons to other methods (C60, C63-C65) are appropriately cited. The demonstration of deep brain and behavioral control (C66) is supported by the VTA experiments. The technical properties (C67-C69) are validated by the experimental data throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Viral transduction enables local, cell-type-specific expression of \u03b22E61C, which incorporates into functional heteromeric receptors alongside native subunits. The total receptor pool remains unchanged, likely due to limiting endogenous subunits. This approach allows targeting of post-synaptic receptors while leaving pre-synaptic receptors unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 describe the implementation strategy and its advantages. The localized expression (C70) is demonstrated by immunohistochemistry (C16-C17). Incorporation into heteromeric receptors (C71) is supported by functional photocontrol. The interpretation about receptor pool size (C72) is reasonable given the data (C22). The advantage of cell-type specificity (C73-C74) is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The results demonstrate that post-synaptic \u03b22 nAChRs in the VTA are sufficient to modulate both tonic and burst firing of DA neurons in response to endogenous ACh. This adds temporal and causal evidence to previous genetic studies and reveals heterogeneous responses consistent with known VTA diversity. The rapid rebound activity suggests substantial ambient ACh levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83 integrate the findings with existing literature. The contrast with the pre-synaptic hypothesis (C78-C79) is supported by the post-synaptic specificity of the manipulation. The temporal and causal contributions (C80) are valid advantages of the approach. The interpretation of rebound activity (C81) and heterogeneity (C82-C83) are well-supported and appropriately contextualized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "VTA \u03b22*nAChRs are key mediators of both cellular responses to nicotine and nicotine's rewarding properties. Blocking the excitatory phasic input from nicotine at VTA neurons is sufficient to prevent reinforcement learning, consistent with the role of these receptors in burst firing and reward processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C92 synthesize the behavioral and cellular findings to establish the role of VTA \u03b22*nAChRs in nicotine reward. The site-specific manipulation (C88) addresses the complexity of nicotine's actions (C85-C87). The sufficiency for reward (C89-C90) is demonstrated by the CPP experiments. The consistency with burst firing data (C91) and overall role in reward (C92) are well-supported conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Optogenetic pharmacology enables local, reversible 'knock-out' of specific receptor isoforms in vivo, allowing evaluation of consequences at cellular, circuit, and behavioral levels within the same animal. The approach may be applicable to other nAChR subtypes and circuits, potentially informing therapeutic strategies for neuropsychiatric disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 discuss the broader implications and future applications. The advantages over genetic knockouts (C93) are demonstrated by the reversibility and spatiotemporal control shown throughout the study. The potential applications (C94-C95) are appropriately framed as possibilities rather than demonstrated facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "VTA DA neurons exhibit tonic and burst firing patterns, with bursting being crucial for behavioral conditioning and controlled by PPN/LDT inputs. In brain slices, these neurons show only pacemaker activity due to severed afferents, necessitating in vivo approaches to study burst modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 provide established background knowledge that justifies the experimental approach. All claims are appropriately cited and represent accepted understanding in the field. This background motivates the in vivo experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The introduction establishes the biological context: ACh modulates VTA function through nAChRs, which are diverse, widely distributed, and implicated in various neurological disorders and addiction. Current tools (genetic and pharmacological) have limitations in temporal control and specificity. The study addresses these gaps using optogenetic pharmacology to reveal ACh's role in VTA DA neuron firing and nicotine reward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C115 provide background and rationale. These are appropriately cited statements of prior knowledge (C96-C112) and clear statements of the study's goals and findings (C113-C115). The background accurately represents the field and motivates the experimental approach.",
+    "result_type": "MINOR"
+  }
+]

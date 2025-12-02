@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "This manuscript is part of the Reproducibility Project: Cancer Biology, which conducts replications of high-profile cancer biology papers using pre-registered protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 accurately describe the RP:CB project structure and methodology, supported by appropriate citations. These are factual statements about the project framework rather than experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The original Lin et al. 2012 study reported that c-Myc globally amplifies expression of actively transcribed genes but not silent genes, with total RNA levels increasing upon c-Myc overexpression in P493-6 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 accurately summarize the findings from the original Lin et al. 2012 study. These are appropriately cited descriptions of prior work that establish the context for the replication attempt.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Subsequent studies have reported mixed results regarding c-Myc-dependent RNA amplification, with some suggesting indirect mechanisms through regulation of specific gene sets, and differences potentially explained by cell line variation or promoter affinity differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13 provide appropriate context from the literature published after the original study. All claims are properly cited and accurately represent the state of knowledge regarding c-Myc's transcriptional effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Western blot analysis confirmed that tetracycline treatment strongly decreased c-Myc protein levels in P493-6 cells, and c-Myc levels increased over time after tetracycline removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 are supported by Western blot data in Figure 1A showing clear c-Myc suppression with tetracycline and recovery after removal. This validates the experimental system used for the replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Total RNA levels increased upon c-Myc induction in both serum lots tested, though the effect was statistically significant only for serum lot two (1.43-fold increase, p=0.0024) and not for serum lot one (1.14-fold increase, p=0.347). Baseline RNA levels were lower than in the original study, but changes were in the same direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C16-C25 present detailed quantitative data with appropriate statistics. However, the inconsistent statistical significance between serum lots (C18 vs C21) and the substantial difference in baseline RNA levels compared to the original study (C24) raise concerns about reproducibility. The small sample size (n=3 per condition) and high variance in serum lot one limit confidence in the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Differences in total RNA levels between studies could be explained by variation in RNA expression during cell culture passage, low yield of RNA isolation procedures, or high variance in manual cell counting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C27-C29 are speculative explanations for observed differences. While C27 and C29 are supported by citations, C28 is purely speculative. These represent possible explanations but lack experimental validation, making them hypotheses rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "For serum lot one, NanoString analysis identified 708 active genes and 580 silent genes at 0 hr. Active genes showed median expression increases of 1.11-fold (0-1 hr), 1.50-fold (0-24 hr), and 1.36-fold (1-24 hr). Silent genes showed increases of 1.19-fold (0-1 hr) and 1.13-fold (0-24 hr), with a 0.05-fold decrease (1-24 hr).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C43 present detailed NanoString gene expression data with specific quantitative values. The data are internally consistent and supported by Figure 2. However, the magnitude of changes differs substantially from the original study, particularly for active genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The original study identified 755 active genes with larger fold-changes upon c-Myc induction (1.23 to 2.45-fold increases) and 514 silent genes with median expression unchanged, though 23-30% of silent genes showed some increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C56 accurately describe the original study's findings. The note that more than half of silent genes had no reported expression value (C46) is an important methodological observation that affects interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "There was high overlap in gene classification between the original and replication studies: 88.8-90.1% of active genes and 95.8-96.4% of silent genes were classified the same way.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 demonstrate good concordance in which genes were classified as active or silent between studies. This suggests the experimental systems were comparable despite differences in expression magnitude.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Wilcoxon signed-rank tests (paired analysis) showed statistically significant increases in expression for active genes at all time comparisons in both serum lots and for silent genes at most comparisons. Re-analysis of original data with paired tests also showed significant increases for both gene types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 present appropriate statistical analyses with paired tests as pre-registered. The results are clearly reported in Table 1. The finding that paired analysis of original data shows significant changes in silent genes (C65) contrasts with the original unpaired analysis, highlighting the importance of analytical approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The original study's unpaired tests showed active genes had statistically significant increases while silent genes did not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 accurately describes the original study's statistical findings, providing important context for understanding how analytical approach affects conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Both active and silent genes increased in expression upon c-Myc induction, but active genes showed significantly greater increases than silent genes, indicating different rates of expression change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 present an appropriate exploratory analysis comparing the magnitude of change between active and silent genes. The statistical test (Table 3) properly addresses whether the differences between gene types are significant, which is distinct from testing each type separately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Dichotomizing genes as active or silent has limitations including information loss. Subsequent studies using RNA-seq and continuous gene expression data support overall increased gene expression upon c-Myc induction. The current results are limited to 1369 genes and may not reflect the entire transcriptome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 provide important methodological context and limitations. C70 is supported by appropriate statistical citations. C71-C72 accurately cite subsequent studies. C73 is supported by Figure 2\u2014figure supplement 2. C74 appropriately acknowledges study limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Meta-analysis of total RNA levels (0 hr vs 24 hr) showed a statistically significant overall effect (d=2.52, p=0.0488) with consistent direction across studies. However, substantial within-study variation was observed between serum lots, with serum lot two (d=4.11) more similar to the original study (d=4.19) than serum lot one (d=0.83).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C80 present meta-analysis results with appropriate effect size calculations. However, the large confidence intervals, substantial heterogeneity between serum lots (C80), and barely significant p-value (p=0.0488) suggest the overall effect is uncertain. The serum lot dependency indicates uncontrolled experimental variables that affect reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Meta-analyses of active gene expression changes were statistically significant for all time comparisons (p<0.05), with consistent effect directions across studies. However, effect size point estimates did not overlap between studies' confidence intervals, and significant heterogeneity was detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C86 show statistical significance in meta-analyses but reveal substantial heterogeneity (C86) and non-overlapping confidence intervals (C85). While the direction of effects is consistent (C84), the magnitude differs significantly between studies, limiting confidence in the precise quantitative reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "For silent genes, meta-analyses showed mixed results: non-significant for 0-1 hr and 1-24 hr comparisons, with opposite directions between original and replication for 0-1 hr. The 0-24 hr comparison was statistically significant (p=7.10\u00d710\u207b\u00b9\u2077) with consistent direction, though the original study's point estimate fell outside replication confidence intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C95 reveal inconsistent results for silent genes across time points. The opposite directions for 0-1 hr (C91) and non-significant meta-analyses for two comparisons (C87-C88) contrast with the highly significant 0-24 hr result (C93). The heterogeneity (C90) and non-overlapping confidence intervals (C89, C94) indicate substantial variability that undermines confidence in reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "The two serum lots tested in the replication showed more similar effect sizes to each other than to the original study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is supported by the meta-analysis data showing that while both replication serum lots differed from the original study, they were more consistent with each other (e.g., C95). This suggests systematic differences between the original and replication experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "P493-6 cell proliferation depends on c-Myc and serum, with serum stimulating genes independent of c-Myc. Potential factors affecting replication include cell line genetic drift and changes in cellular volume affecting transcript abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 provide appropriate biological context supported by citations. C97-C98 explain the rationale for testing multiple serum lots. C99-C100 identify plausible sources of variation between studies, though these remain speculative without direct testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "P493-6 is a human Burkitt's lymphoma B cell line containing a conditional tetracycline-repressive MYC transgene, serving as a model for MYC activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 accurately describe the P493-6 cell line model system with appropriate citations. This is established knowledge about the experimental system.",
+    "result_type": "MINOR"
+  }
+]

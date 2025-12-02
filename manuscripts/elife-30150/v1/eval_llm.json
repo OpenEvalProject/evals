@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C64",
+      "C65"
+    ],
+    "result": "Combat-deployed military veterans (N=74) with deployment-related trauma completed a probabilistic learning task during fMRI. The sample included 39 veterans meeting DSM-IV criteria for PTSD and 29 trauma-exposed veterans without PTSD. Psychiatric diagnoses were assessed using gold-standard clinical interviews (SCID and CAPS).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 and C64-C65 describe the study design, sample characteristics, and diagnostic procedures. The use of validated diagnostic instruments (SCID, CAPS), clear inclusion criteria (combat deployment, Criterion A trauma), and well-defined groups provide a solid methodological foundation. Sample size is adequate for the analyses performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "Veterans showed robust learning in both loss and gain domains, reaching ~80% accuracy after 15 trials. Performance accuracy did not differ between PTSD and control groups in either domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 demonstrate that both groups learned the task successfully and performed comparably. This is critical for interpreting subsequent computational modeling results, as it rules out general performance deficits in PTSD. Statistical tests (t-tests) support the lack of group differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C74",
+      "C75",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Bayesian model selection showed that including associability in the reinforcement learning model significantly improved fit for the majority of participants (81%) during loss learning only (protected exceedance probability: 100% in loss, 0% in gain). This domain-specificity was confirmed through multiple validation approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 and C71-C75 provide converging evidence for domain-specific associability effects. The protected exceedance probability of 100% in loss and 0% in gain is compelling. Multiple validation tests (logistic regression showing condition interaction, model comparison with separated vs. combined parameters) strengthen confidence in the loss-specific effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The associability RL model showed excellent behavioral validity: predicted choices correlated highly with actual choices (r=0.997), reaction times increased with associability values (t68=8.28, p<0.001), and associability-modulated prediction error predicted switching behavior beyond prediction error alone (\u03c7\u00b2=323.0, p<0.001). Simulation confirmed that associability weight did not directly affect performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 and C76-C79 provide extensive model validation. The near-perfect correlation between predicted and observed choices (r=0.997), the theoretically-predicted relationship between associability and reaction time, and the demonstration that associability improves prediction of switching behavior all support model validity. The simulation showing no direct effect of associability weight on performance (C76) is crucial for ruling out confounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C48"
+    ],
+    "result": "Associability weights were significantly increased in participants with PTSD (t62=4.01, p<0.001) while unmodulated learning rate did not differ between groups (t62=0.63, p>0.1). This dissociation indicates that PTSD is associated with increased attention-based modulation of learning rather than general changes in error-based learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 and C48 demonstrate a theoretically-meaningful dissociation: PTSD affects associability updating but not basic learning rate. The statistical tests are appropriately powered and the effect size for associability weight is substantial (t=4.01). This selective effect supports the hypothesis that PTSD involves heightened attention-based learning modulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Compared to a separate cohort with major depressive disorder (MDD) but not PTSD (N=20), participants with PTSD had significantly higher associability weights (t57=7.25, p<0.001) but similar unmodulated learning rates (t57=1.44, p>0.1), indicating that increased associability-modulated learning is specific to PTSD and not general psychopathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 address an important specificity question given high PTSD-depression comorbidity. The comparison with a matched MDD cohort showing selective elevation of associability weight in PTSD (very large effect: t=7.25) but no difference in learning rate strengthens the claim that this is a PTSD-specific mechanism rather than a general feature of mood/anxiety disorders.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C29",
+      "C81",
+      "C82"
+    ],
+    "result": "Neural encoding of associability values showed a significant relationship with PTSD at FDR-corrected whole-brain significance in bilateral amygdala and insula. ROI analyses confirmed significant PTSD-related activation in these a priori regions (amygdala: t37=2.45, p<0.05; insula: t37=3.87, p<0.001). Results were robust to nonparametric permutation testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 and C81-C82 demonstrate neural correlates of the behavioral findings in theoretically-predicted regions. The use of both whole-brain FDR correction and a priori ROI analyses, plus validation with nonparametric permutation testing, provides strong evidence. The amygdala and insula findings align with prior literature on associability and PTSD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C4",
+      "C47"
+    ],
+    "result": "PTSD was not related to neural responses to prediction error at the whole-brain level or in prediction error-related ROIs (ventral striatum, vmPFC) derived from an independent reference cohort. However, participants showed significant prediction error activation in striatum independent of PTSD (left: t42=3.56, p<0.001; right: t42=3.02, p<0.005), confirming intact prediction error signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40, C4, and C47 demonstrate a critical null result: PTSD does not affect prediction error processing. The use of an independent reference cohort to define prediction error ROIs strengthens this conclusion by avoiding circularity. The demonstration of intact prediction error signaling across groups rules out general neural dysfunction and supports the specificity of associability effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C57"
+    ],
+    "result": "Hyperarousal and avoidance/numbing symptom clusters showed the most extensive neural responses corresponding with associability, while re-experiencing symptoms showed little relationship with associability-related neural activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 and C57 identify which PTSD symptom dimensions are most associated with associability mechanisms. The differential pattern across symptom clusters (strong effects for hyperarousal and avoidance/numbing, minimal effects for re-experiencing) provides clinically-relevant specificity and aligns with theoretical predictions about vigilance and attention in PTSD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C5",
+      "C58"
+    ],
+    "result": "The interaction of PTSD diagnosis, hyperarousal symptoms, and avoidance/numbing symptoms with neural associability activation in bilateral amygdala each significantly improved prediction of switching behavior after Bonferroni correction (all \u03c7\u00b2>12.0, p<0.005), while re-experiencing symptoms did not (\u03c7\u00b2=6.0, p>0.01). Similar patterns were observed for insula.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46, C5, and C58 demonstrate that neural associability signals interact with PTSD symptoms to predict actual behavior. The hierarchical logistic regression approach is appropriate, multiple comparison correction is applied, and the symptom-specific effects (hyperarousal and avoidance/numbing but not re-experiencing) align with the neural activation patterns. This links neural mechanisms to behavioral outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C49",
+      "C63"
+    ],
+    "result": "Neural substrates of associability value and behavioral parameter estimates of associability updating, but not prediction error, increased with PTSD during loss learning at both behavioral and neural levels. This indicates that PTSD is related to increased attention-based modulation of loss learning while prediction error-based learning is unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C49, and C63 summarize the core findings. The convergence of behavioral (increased associability weight) and neural (increased amygdala/insula activation to associability) evidence, combined with the absence of prediction error effects, provides strong support for the hypothesis that PTSD involves heightened attention-based learning modulation. The multi-level evidence (computational, behavioral, neural) is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C50"
+    ],
+    "result": "The authors conclude that increased attention-based learning may underlie aspects of PTSD, and that the disruptive effect of salient negative stimuli in PTSD is related to greater involvement of associability-related learning processes based on previous unexpected negative experiences rather than disrupted responses to immediate cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C50 represent the main interpretive conclusions. These are well-supported by the convergent behavioral, computational, and neural evidence showing selective increases in associability-modulated learning in PTSD. The dissociation from prediction error processing strengthens the interpretation that this reflects attention-based rather than immediate error-based mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C25",
+      "C55",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The authors interpret their findings in the context of prior literature and propose mechanisms by which increased associability updating could explain PTSD symptoms including hypervigilance, impaired extinction, and lack of habituation. These interpretations connect the computational findings to clinical phenomenology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C55-C62 provide theoretical integration and mechanistic proposals. While some of these are speculative (particularly C62), they are appropriately framed as interpretations and predictions. The connections to prior literature on PTSD symptoms and extinction are reasonable and generate testable hypotheses for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C80"
+    ],
+    "result": "The study employed appropriate experimental procedures including practice trials, performance-based payment, exclusion criteria for inattentive participants, and careful parameter estimation procedures to address identifiability issues. Multicollinearity was checked and found to be within acceptable limits (VIF=1.56).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 and C80 describe methodological details that enhance confidence in the results. The exclusion of participants with insufficient switching behavior, the approach to handling parameter identifiability (fixing inverse temperature), and the check for multicollinearity all represent appropriate methodological choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C59"
+    ],
+    "result": "The authors situate their work within established knowledge about PTSD symptoms, reinforcement learning theory, and the neural substrates of learning. They cite prior work showing heightened orienting to unexpected events, impaired fear extinction, and altered amygdala/insula function in PTSD, as well as the role of these regions in associability-based learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C7-C15, C51-C54, C56, and C59 represent background knowledge and prior findings. These are appropriately cited and accurately represent the literature. The integration of computational learning theory with PTSD neuroscience provides strong theoretical motivation for the study.",
+    "result_type": "MINOR"
+  }
+]

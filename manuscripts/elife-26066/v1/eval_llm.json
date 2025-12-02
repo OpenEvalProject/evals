@@ -1,0 +1,388 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C23",
+      "C30",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The study used 72 nano-plankton samples (5-20 \u03bcm size range) collected during the Tara Oceans expedition, which were fixed onboard using paraformaldehyde-glutaraldehyde buffer and stored at 4\u00b0C for up to several years. The sampling protocol involved gentle net towing with a 5 \u03bcm mesh for 10 minutes, with flowmeter quantification of filtered water volume, followed by resuspension and fixation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C23, C30, C74-C79 provide comprehensive documentation of the sample collection and preservation methodology. The sampling protocol is well-described with specific technical details (mesh size, towing duration, fixative concentrations), and the approach is supported by appropriate citations (Pesant et al., 2015; Marie et al., 1999; Kiernan, 2000). The fixation rationale is scientifically justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The sample preparation protocol involves loading samples into 8-well Lab-Tek II chambered coverglass slides pre-coated with poly-L-lysine, followed by centrifugation (1,000 rpm) to concentrate organisms onto the glass bottom. The protocol minimizes washing steps (only two required) and uses three fluorescent dyes (Hoechst33342, DiOC6(3), and PLL-AF546) for staining, with the entire process taking 1 hour for two samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 and C80-C91 describe a well-optimized sample preparation protocol with clear technical specifications. The rationale for each step is provided (e.g., minimizing cell loss, maintaining ionic composition), and the protocol is designed to preserve fragile organisms while enabling efficient staining. The time efficiency (1 hr for two samples) is explicitly stated and appears reasonable for the described procedures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C34",
+      "C35",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The study developed a novel fluorescent labeling strategy using four markers: Hoechst33342 for DNA/nuclei (blue), DiOC6(3) for intracellular membranes (green), chlorophyll autofluorescence for chloroplasts (red), and a custom-designed PLL-AF546 conjugate (cyan) for cell covers and extensions. The PLL-AF546 dye labels a wide range of exoskeletons made of polysaccharides, proteins, carbonate, and silicate through electrostatic binding and glutaraldehyde crosslinking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 and C34-C101 describe a comprehensive and well-justified fluorescent labeling strategy. The custom PLL-AF546 dye is particularly innovative, with detailed chemical rationale provided for its design (polymer size >300,000 mol wt to limit cell penetration, statistical binding ratio of 1 AF546 per 1500 lysine units). The chemical properties and binding mechanisms are clearly explained with appropriate scientific reasoning. The staining strategy is demonstrated to work on both live and fixed cells (C35).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Automated 3D fluorescence microscopy was performed using a Leica SP8 confocal laser scanning microscope with a 40X NA1.1 water immersion lens. The system acquired five channels (bright field and four fluorescent signals) in a two-step sequential acquisition over a 22 \u03bcm Z-range, with spatial sampling of 0.188\u00d70.188\u00d71.090 \u03bcm voxels. Fields of view (385.62 \u03bcm wide \u00d7 21.80 \u03bcm thick) were organized in a rectangular mosaic with 10% overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C38-C43, and C102-C114 provide comprehensive technical specifications for the imaging system. All critical parameters are explicitly stated (lens specifications, voxel size, field of view dimensions, scanning speed, pinhole settings). The two-step sequential acquisition strategy is designed to minimize spectral crosstalk between channels. The 10% overlap between fields of view is appropriate for detecting large cells at boundaries. The autofocus procedure and Z-stack initiation offset (-1 \u03bcm) are well-described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Fluorescent beads (InSpeck deep-red) were used as internal calibration standards in each multi-well plate to monitor the stability of illumination, optics, and PMTs across multiple acquisition runs spanning 10 months. The measured intensities from these beads were very stable across acquisitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 describe an appropriate quality control strategy for longitudinal imaging experiments. The use of fluorescent beads as internal standards is a standard practice in high-content imaging. The stability assessment is supported by Figure 1\u2014figure supplement 6, which shows consistent bead intensities across acquisitions. However, the claim of \"very stable\" intensities is somewhat qualitative and could benefit from quantitative metrics (e.g., coefficient of variation).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The e-HCFM imaging of 72 Tara Oceans samples generated approximately 2.5 Tb of raw data, corresponding to 336,655 planktonic particles. Each sample was imaged with a 40x lens over 8 hours, producing 396 fields of view over a 22 \u03bcm Z-range. Each particle was associated with 480 descriptors (3D biovolumes, intensity distribution, shape descriptors, and texture features) and multiple derived images for visual inspection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C47-C51 provide clear quantitative metrics for the imaging dataset. The data volume (2.5 Tb), number of objects (336,655), and processing time (8 hr per sample) are explicitly stated and appear consistent with the described imaging parameters (72 samples \u00d7 396 fovs/sample \u00d7 5 channels \u00d7 Z-stacks). The 480 descriptors per particle represent a comprehensive feature set for machine learning classification. The generation of multiple derived image types enhances the dataset's utility for visual validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Image analysis proceeded in three steps: (1) object identification using an 'almost-max projection' method and thresholding at mean + 1.5 standard deviations, (2) computation of per-object features, and (3) classification. Objects were size-filtered (>12.6 \u03bcm\u00b2), border objects were removed, and redundant detections in overlapping fields were eliminated. The chosen thresholding method detected 336,655 objects compared to 231,610 with Otsu thresholding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C129 describe a well-designed image analysis pipeline with appropriate technical choices. The 'almost-max projection' (taking the second-highest value) is a robust alternative to standard max-projection that reduces sensitivity to outliers. The thresholding method is justified by citation to prior work (Coelho et al., 2009) and empirically validated against Otsu thresholding. The size filtering threshold (12.6 \u03bcm\u00b2, corresponding to a 5 \u03bcm diameter circle) is appropriate for the target size range. The handling of overlapping fields and border objects follows best practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Particles were processed individually to sub-segment regions of biological interest (e.g., nuclei, chloroplasts) for each fluorescent channel using 3D thresholding and median filtering. Sub-objects smaller than 0.5 \u03bcm\u00b3 were filtered out. A total of 480 numeric 2D/3D features were computed for each particle, including biovolumes, intensity distribution, shape descriptors, and texture features (Haralick textures, linear binary patterns, Zernike moments, morphological features).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 and C130-C132 describe comprehensive feature extraction from both 2D projections and 3D volumes. The sub-object filtering threshold (0.5 \u03bcm\u00b3, approximately a sphere of radius 0.5 \u03bcm) is appropriate for removing noise while retaining biologically relevant structures. The feature set is diverse and includes established image analysis metrics (Haralick textures, Zernike moments) that are well-suited for capturing morphological and textural information. The computation of features on both 2D and 3D data maximizes information extraction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C46",
+      "C54",
+      "C55",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "A training set of 18,103 manually curated objects (5.4% of the dataset) was classified into a 4-level hierarchical framework with 155 categories (>30 specimens each). A random forest classifier with 500 trees was selected empirically as the best combination of accuracy and computational performance among several tested methods (support-vector machines, logistic regression, random forests).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C46, C54-C55, and C133-C138 describe a well-designed machine learning approach. The training set size (5.4% of data) is reasonable for the number of categories, though the minimum of 30 specimens per category is relatively small for some machine learning applications. The hierarchical framework is appropriate for taxonomic classification. The empirical selection of random forest is justified, and the use of 500 trees is standard practice. The implementation using scikit-learn (C138) ensures reproducibility. However, details about cross-validation strategy and prevention of overfitting are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The random forest classifier achieved 82.2% accuracy at the finest taxo-morphological level (often genus level) and 93.8% accuracy at the phylum/class level. This demonstrates efficient segregation of main plankton taxonomic groups despite considerable intra-group morphological diversity. Using only bright field channel features resulted in only 56.8% accuracy, demonstrating the added value of fluorescence labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 present strong classification performance that is well-supported by the data. The accuracy at phylum/class level (93.8%) is excellent and substantially better than prior methods cited in the introduction (70-90%). The comparison with bright field-only features (56.8% vs 82.2%) provides compelling evidence for the value of fluorescence labeling. However, the evaluation appears to be based on cross-validation of the training set rather than an independent test set, which could lead to optimistic accuracy estimates. The claim about 'efficient segregation' (C58) is supported by the high accuracy but is somewhat interpretive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The classifier provides a confidence score (difference between highest and second-highest probability) that can be used to filter predictions. At least 400 features are needed to achieve accuracy above 82%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 describe useful practical aspects of the classifier. The confidence score definition is clear and appropriate for filtering predictions (supported by Figure 3\u2014figure supplement 2). The feature number requirement (C62) is supported by Figure 3\u2014figure supplement 4, which shows classification accuracy as a function of feature count. However, the analysis of feature importance and optimal feature selection could be more detailed. The claim that \"at least 400 features are needed\" is somewhat imprecise\u2014the figure suggests a plateau around 400 features rather than a sharp threshold.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C12",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C36",
+      "C37",
+      "C52",
+      "C53"
+    ],
+    "result": "e-HCFM can image a wide phylogenetic diversity of planktonic eukaryotes (radiolarians, ciliates, amoebae, choanoflagellates, dinoflagellates, coccolithophores, diatoms) and obtain accurate 3D images over a broad taxonomic range. The protocol is highly effective at revealing internal and external cellular structures, including diverse biotic interactions. The fluorescent signals enhance segmentation performance and enable precise detection of thin transparent biomineral and organic structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C25-C28, C36-C37, C52-C53 describe the core capabilities of e-HCFM, which are well-supported by extensive visual evidence in Figures 1 and 2 and supplementary figures. The taxonomic breadth is demonstrated across multiple eukaryotic supergroups. The claim about 'accurate 3D images' is supported by the high-resolution confocal imaging and the quality of reconstructions shown. The detection of 'thin transparent biomineral and organic structures' (C53) is particularly well-demonstrated in Figure 1\u2014figure supplement 5. The ability to reveal biotic interactions (C37) is supported by multiple examples in Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C67",
+      "C68",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "e-HCFM can directly detect and quantify diverse biotic interactions, including: dinoflagellates hosting cyanobacteria, diatoms harboring epiphytic nanoflagellates, diatoms surrounded by coccolithophores, foraminifera hosting endosymbiotic microalgae, and ciliates in close interaction with diatoms. The epiphytic nanoflagellate-diatom interaction was automatically identified by machine learning with 88.5% recall (46/52 specimens correctly classified, 6 false positives from 18,051 other specimens).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C162 and C67-C68, C164-C166 demonstrate e-HCFM's capability to detect and classify biotic interactions. The visual evidence in Figure 2 and Figure 2\u2014figure supplement 1 clearly shows multiple types of interactions. The quantitative assessment of the nanoflagellate-diatom interaction classifier (C164-C166) provides strong validation: 88.5% recall with only 6 false positives from >18,000 negative examples indicates high specificity. This represents a significant advance over DNA-based methods that cannot directly observe physical associations. The diversity of interactions detected (symbiosis, epiphytism, endosymbiosis) demonstrates broad applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "e-HCFM enables linking cell biology features to taxonomy and ecology. The method enables use of 3D biovolumes and sub-cellular structures stratified by taxonomy. Concentration of major taxa increases differentially with phosphate concentration, with purely photosynthetic organisms (Bacillaryophyta) showing greater dependence on exogenous phosphate than mixotrophic or heterotrophic populations (Holodinophyta).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 demonstrate ecological applications of e-HCFM. The ability to stratify biovolumes by taxonomy (C64) is a clear advantage over traditional 2D methods. The phosphate-concentration relationship (C65-C66) is supported by Figure 3d with statistical analysis (Spearman correlations with p-values). The interpretation about differential phosphate dependence (C66) is consistent with prior literature (Lin et al., 2016) and provides global-scale support for previous findings. However, the correlational analysis does not establish causation, and confounding environmental variables are not discussed. The sample size for some taxonomic groups may be limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Image analysis requires approximately 40 CPU hours per acquisition (two wells, 768 data fovs, 48 control fovs) but is embarrassingly parallel after background estimation. With sufficient computational resources, analysis of one microscopy run can be performed in 20 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C145 provide clear computational performance metrics. The 40 CPU hours for serial processing and 20 minutes for parallel processing are explicitly stated and appear reasonable given the data volume and analysis complexity. The identification of the embarrassingly parallel nature of the pipeline after background estimation is important for scalability. However, the 'sufficient resources' needed for 20-minute processing are not quantified (number of cores/nodes required). The computational cost per sample could be better contextualized relative to acquisition time (8 hr per sample).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Statistical analysis of organism-environment relationships used all organisms from single samples (concatenating technical replicates), with counts normalized by seawater volume. Correlations were evaluated using Spearman correlation, and samples lacking relevant taxonomic groups were excluded from taxonomic-specific analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C149 describe appropriate statistical methods for ecological analysis. The concatenation of technical replicates (C146) is reasonable for increasing sample size. Normalization by seawater volume (C147) is essential for quantitative comparisons. The use of Spearman correlation (C148) is appropriate for potentially non-linear relationships and is more robust to outliers than Pearson correlation. The exclusion of samples lacking relevant taxa (C149) is a sensible approach to avoid zero-inflation. However, no correction for multiple testing is mentioned, which could be important given the number of taxonomic groups analyzed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The classifier returns probability estimates for each class, assigns objects to the class with highest probability, and provides a confidence score defined as the difference between the highest and second-highest probabilities. Feature importance was computed as Gini importance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C142 describe standard outputs from random forest classifiers as implemented in scikit-learn. The probability estimates and class assignment (C139-C140) are straightforward. The confidence score definition (C141) is reasonable and useful for filtering predictions. The use of Gini importance (C142) is a standard metric for random forests, though it has known limitations (bias toward high-cardinality features). The claims are well-supported but represent standard machine learning practices rather than novel methodological contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The software code is available under open source license at https://git.embl.de/coelho/eHCFM. All raw images and preprocessed thumbnails are publicly available at EBI-BioStudies (S-BSST51) and can be explored through the Image Data Resource platform. Metadata and contextual data are available at PANGAEA. The eHCFM dataset constitutes an additional Tara Oceans global resource complementing other eco-morpho-genetic datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C155 describe comprehensive data and code sharing that follows best practices for open science. The availability of code (C150), raw images (C151), and metadata (C154) with specific accession numbers and URLs enables reproducibility and reuse. The integration with established repositories (EBI-BioStudies, Image Data Resource, PANGAEA) ensures long-term accessibility. The planned release for online annotations at EcoTaxa (C153) will further enhance the dataset's utility. This represents exemplary data sharing for a large-scale imaging study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The introduction establishes that microbial eukaryotes have received less attention than other organisms, but recent meta-omics surveys reveal massive unknown diversity. Existing automated imaging approaches for plankton achieve 70-90% accuracy for a few to tens of taxonomic classes using low-resolution bright field images, but none provide sufficient quality to assess structural complexity in the 5-50 \u03bcm size range. e-HCFM adapts cell biology protocols to environmental samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C24 provide appropriate context and motivation for the study. The claims about historical focus on other organisms (C13) and recent discoveries of microbial eukaryote diversity (C15) are supported by appropriate citations. The characterization of existing methods (C16-C21) accurately represents the state of the field based on the cited literature. The identification of the gap\u2014lack of high-resolution imaging for the 5-50 \u03bcm size range (C21)\u2014provides clear motivation for e-HCFM. The claims are well-supported by citations and represent accurate assessment of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C29",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "e-HCFM allows linking identification and quantification of uncultured eukaryotes with ecological and functional traits. The main advantage is the use of 3D fluorescence microscopy in an automated and quantitative manner for environmental microbiology. The method can be applied to any aquatic environment and adapted for other habitats. Future applications could include visualization of other subcellular structures or expressed genes (FISH), and integration with single-cell omics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C69-C73 describe the significance and future potential of e-HCFM. The ability to link identification with ecological traits (C29) is demonstrated by the phosphate analysis results. The main advantage statement (C69) is well-supported by the comprehensive methodology and results. The claims about applicability to other environments (C71) and potential for additional applications (C72-C73) are reasonable extrapolations but are somewhat speculative (C70-C73 are marked as SPECULATION in evidence_type). The future challenge of combining imaging with single-cell omics (C73) is appropriately identified but represents aspirational rather than demonstrated capability.",
+    "result_type": "MINOR"
+  }
+]

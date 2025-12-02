@@ -1,0 +1,207 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors successfully replicated published C. elegans chemotaxis experiments using benzaldehyde as a positive control. Naive worms showed significant attraction to 1% benzaldehyde (n=11, p=0.002), which was lost upon pre-exposure to 100% benzaldehyde (n=12, p=0.036), consistent with prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 and C80-C81 demonstrate successful replication of established chemotaxis behavior with appropriate statistical support and blinded protocols. This validates the laboratory's ability to conduct C. elegans behavioral assays and provides a positive control for the subsequent magnetic field experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C55",
+      "C56",
+      "C57",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The authors constructed specialized infrastructure for magnetic field experiments, including six double-wrapped Helmholtz coils within a mu-metal shielded room surrounded by a Faraday cage. Radio frequency contamination was minimal (<0.1 nT between 0.1-10 MHz), and double-wrapped coils prevented temperature artifacts that could confound results given C. elegans' sensitivity to temperature changes <0.1\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 and C55-C57, C82-C84 describe rigorous experimental controls that address critical confounds absent in the original Vidal-Gadea study. The double-wrapped coil design eliminates thermal artifacts, which is essential given C. elegans' exquisite thermosensitivity (C57, supported by citation). The low RF contamination and shielding provide a clean magnetic environment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "In the vertical burrowing assay, the authors found no effect of inverting the magnetic field on worm migration for either starved (n1=38, n2=40, U=681, n.s.) or fed (n1=20, n2=35, U=300, n.s.) worms. The 95% confidence intervals did not encompass Vidal-Gadea's results, and worm distribution in the absence of magnetic stimuli was similar to that with applied fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 provide strong statistical evidence against magnetosensitivity in the vertical burrowing assay. The non-significant results with adequate sample sizes, non-overlapping confidence intervals with the original study (C34), and similar distributions with/without magnetic fields (C35) collectively indicate failure to replicate the Vidal-Gadea findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "In the horizontal plate assay, blind analysis revealed no directional preference when applying 32.5 \u00b5T (r=0.20, n=24, n.s.) or 65 \u00b5T (r=0.25, n=24, n.s.) magnetic stimuli, nor in control conditions. The authors used appropriate statistical methodology treating each plate as an experimental unit, avoiding the pseudoreplication error in the Vidal-Gadea study where individual worms on the same plate were treated as independent replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 and C60-C64 demonstrate failure to replicate horizontal plate assay results with proper statistical methodology. The identification of pseudoreplication in the original study (C63-C64, supported by citation to Lazic 2010) is a critical methodological critique that undermines the Vidal-Gadea conclusions. The current study's approach of treating plates as experimental units is statistically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C65",
+      "C66"
+    ],
+    "result": "In the magnetotaxis assay using a strong neodymium magnet (0.29 T, ~8000\u00d7 Earth strength), the authors observed no preference for the magnet-associated goal area (n=49, V=565, n.s.). However, worms grown on magnetite-contaminated agar showed weak but significant preference for the magnet (n=49, V=670.5, p=0.042), suggesting that exogenous iron contamination could produce false-positive magnetotaxis results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 demonstrate failure to replicate magnetotaxis under baseline conditions but reveal a potential artifact. The magnetite contamination experiment (C50) provides a plausible alternative explanation for apparent magnetotaxis (C66) and highlights the importance of controlling for iron contamination (C49, supported by Edelman et al. 2015 citation). The ecological implausibility of 0.29 T exposure (C65) further questions the biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors used identical biological materials and protocols as Vidal-Gadea (same worm source, magnets, plates, synchronization and starvation protocols) but implemented critical methodological improvements including strict blinding procedures for all assays, which were not reported for magnetic conditions in the original study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 and C58-C59 establish that the replication attempt used matched materials while adding essential controls. The observation that Vidal-Gadea did not report blinding to magnetic conditions (C59) identifies a significant methodological weakness that could introduce experimenter bias. The strict blinding implemented here (C58) strengthens the validity of the negative findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C7"
+    ],
+    "result": "The authors demonstrate a fundamental logical problem with the Vidal-Gadea hypothesis: if nematodes cannot distinguish up from down, adopting a fixed correction angle (e.g., 45\u00b0) relative to magnetic field inclination is equally likely to result in horizontal movement as vertical movement. The strategy only works if worms use the correction angle relative to an independent reference like gravity, which would obviate the need for magnetoreception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 and C7 present a compelling geometric argument against the proposed mechanism. The logic is sound: without an independent vertical reference, a fixed angular relationship to the magnetic field vector cannot reliably produce vertical movement. The observation that gravity sensing would make magnetoreception unnecessary (C70) exposes a fundamental conceptual flaw in the original hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C71",
+      "C72"
+    ],
+    "result": "The authors conclude that C. elegans is not a suitable model system for studying magnetoreception because they either lack a magnetic sense or their magnetotactic behavior is not robust. This conclusion is supported by their failure to replicate three different magnetic assays and is consistent with other unsuccessful attempts to demonstrate magnetoreception in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C71-C72 represent the main conclusion, supported by the comprehensive failure to replicate results across all three assays (vertical burrowing, horizontal plate, magnetotaxis), the identification of methodological flaws in the original study, the logical problems with the proposed mechanism, and independent corroboration from other failed replication attempts (C71, Njus et al. 2015).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The manuscript establishes the broader context that while magnetic sensation is well-documented in various migratory species (birds, mole rats, pigeons, turtles), the underlying molecular mechanisms remain largely unknown, and the lack of genetic tools in magnetosensitive species represents a major impediment to progress in the field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C8-C15 provide appropriate background context supported by multiple citations to established literature. These claims accurately represent the state of the field and motivate why a genetically tractable model organism would be valuable, though they ultimately conclude C. elegans is not suitable for this purpose.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The manuscript accurately describes the Vidal-Gadea et al. (2015) study, which claimed that C. elegans possess a magnetic sense for vertical orientation using a correction angle relative to Earth's magnetic field inclination, based on three behavioral assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C16-C18 accurately represent the prior work being challenged. These are descriptive claims about the Vidal-Gadea study supported by appropriate citations, establishing what is being replicated and critiqued.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C19",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The manuscript describes methodological details including worm maintenance conditions (N2 strain from CGC, maintained on OP50, 20\u00b0C, dark conditions, Earth-strength field in Vienna), synchronization procedures, and definitions of 'fed' (tested within 10 min of removal) versus 'starved' (30 min in liquid NGM) conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C73-C79 provide essential methodological details that enable assessment of experimental rigor and reproducibility. These are straightforward descriptive claims about experimental procedures that are adequately documented.",
+    "result_type": "MINOR"
+  }
+]

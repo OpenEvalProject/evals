@@ -1,0 +1,153 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C59",
+      "C64"
+    ],
+    "result": "Kainate receptor ATD dimers generally exhibit weaker association than AMPA receptor ATD dimers. With the exception of GluK3, kainate receptor homodimers are relatively weak, providing a larger thermodynamic driving force for heterodimer formation compared to AMPA receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C59, and C64 are well-supported by the comprehensive KD measurements in Tables 1 and 2. The data show kainate heterodimers range from 7.7-10.6 kcal/mol while AMPA heterodimers range from 9.4-11.4 kcal/mol. The weak kainate homodimers (except GluK3) are documented with specific KD values (GluK1: 1.2 \u00b5M, GluK2: 163 nM, GluK4: >1 mM, GluK5: 350 \u00b5M), providing clear quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C35"
+    ],
+    "result": "Both AMPA and kainate receptors show a general pattern of increased heterodimer stability compared to their constituent homodimers. GluK4 and GluK5 ATDs show strong preference for heterodimer assembly with GluK1 and GluK2, with heterodimer KD values in the nM range versus >350 \u00b5M for homodimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C35 are strongly supported by the measured KD values in Tables 1 and 2. For kainate receptors, GluK1/GluK5 (18 nM) and GluK2/GluK5 (12 nM) heterodimers are orders of magnitude more stable than GluK5 homodimers (350 \u00b5M). For AMPA receptors, heterodimers like GluA2/GluA3 (1.3 nM) are more stable than GluA3 homodimers (5.2 \u00b5M). The pattern is consistent across multiple receptor pairs with appropriate statistical confidence intervals provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "GluK3 ATD exhibits an exceptionally stable homodimer with no dissociation observed even at pM concentrations (KD <50 pM), which correlates with its unique gating properties. Despite this extreme stability, co-assembly with GluK2 has been demonstrated in functional studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is directly supported by experimental data in Figure 1C showing no concentration-dependent dissociation from 50 pM to 1.2 \u00b5M. Claims C69 and C70 are supported by appropriate citations to functional studies. The apparent contradiction between extreme homodimer stability and observed heterodimerization is acknowledged but not resolved experimentally in this work, representing a limitation rather than an error.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C58"
+    ],
+    "result": "AMPA receptor homodimers exhibit distinct kinetic behaviors: GluA1 shows slow dissociation kinetics (koff ~3\u00d710\u207b\u2074 sec\u207b\u00b9) while GluA2, GluA3, and GluA4 show at least an order of magnitude faster dissociation, potentially facilitating heterodimer formation pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C58 are supported by direct analysis of sedimentation patterns in Figure 4 and Lamm equation modeling. The concentration-independent peak position for GluA1 versus concentration-dependent shifts for GluA4 provide clear evidence for different kinetic regimes. The koff estimate for GluA1 (3\u00d710\u207b\u2074 sec\u207b\u00b9, 95% CI: 1-5\u00d710\u207b\u2074) is quantitatively determined with appropriate confidence intervals. The inference about facilitating heterodimer formation is reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C53",
+      "C54"
+    ],
+    "result": "AMPA receptor ATD binding energies mirror physiologically observed preferences, with the most stable heterodimers being GluA2/GluA3 (1.3 nM), GluA1/GluA2 (2.9 nM), and GluA1/GluA3 (8.3 nM). High-affinity heterodimer assembly is not limited to GluA2-containing complexes, and GluA3 shows the strongest preference for heterodimerization due to its weak homodimer (5.2 \u00b5M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C53, and C54 are well-supported by the comprehensive KD measurements in Table 2 and Figure 7. The measured affinities show clear quantitative differences with appropriate confidence intervals. The comparison to physiological preferences (C51) is qualitative but reasonable based on cited literature. The inference about GluA3's preference for heterodimerization (C54) is logically sound given the >1000-fold difference between its homodimer and heterodimer KD values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C55",
+      "C57",
+      "C74"
+    ],
+    "result": "DyLight 488 and EGFP are superior fluorescent labels for FDS-SV experiments compared to FAM, which induces artificial stabilization. Using improved labeling, GluA2 homodimerization is approximately 10-fold weaker than initially reported, and GluA1/GluA2 homodimers show similar affinities rather than the 50-fold difference observed with FAM labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C18, C55, C57, and C74 are supported by the authors' extensive prior work (cited appropriately) and the current measurements. The comparison between current results and FAM-labeled preparations from Rossmann et al. (2011) is explicit and quantitative. The methodological improvements are well-documented in cited prior work. However, the evaluation relies heavily on the authors' own prior publications, which could represent a form of self-validation bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "EGFP fusion proteins provide methodological advantages including well-controlled 1:1 labeling ratios and greater hydrodynamic distinction between homo- and heterodimer species due to their additional mass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72 and C73 are supported by the nature of fusion protein technology and the experimental results. The 1:1 labeling ratio is inherent to fusion proteins, and the improved hydrodynamic separation is demonstrated in the experimental data (e.g., Figure 4). These are straightforward technical advantages that are well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Similar guiding principles of subtype combination through preferential heterodimer formation may exist for other iGluR families beyond AMPA and kainate receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 is speculative and based on limited evidence from NMDA receptors cited from prior work. While the pattern observed for AMPA and kainate receptors is consistent, extrapolation to other iGluR families requires direct experimental validation. The claim is appropriately presented as speculation ('suggests') but lacks sufficient evidence for definitive support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Specific mutations were introduced to insert N-linked glycosylation sites in kainate receptor ATD constructs to prevent aggregation, and BSA was included in all experiments to minimize surface adsorption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C76, C77, and C78 describe methodological details that are clearly stated in the Materials and Methods section. The glycosylation site mutations are supported by citation to prior work (Kumar et al., 2011) showing their effectiveness. The BSA addition is a standard control procedure. These are straightforward methodological claims with appropriate documentation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background knowledge claims establish that glutamate receptor ion channels are tetramers encoded by 18 genes, assemble with modular architecture including ATD and LBD domains that form dimers, and that ATD dimerization (nM-\u00b5M range) is stronger than LBD dimerization (mM range), suggesting ATDs play a major role in controlling assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 represent established knowledge from the field, appropriately cited to prior literature. These claims provide necessary context but are not novel findings of this manuscript. The citations appear appropriate and the knowledge claims are consistent with the field's understanding. However, these are not results of the current work and serve as background.",
+    "result_type": "MINOR"
+  }
+]

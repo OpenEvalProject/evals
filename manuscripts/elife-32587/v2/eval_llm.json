@@ -1,0 +1,338 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C66",
+      "C67"
+    ],
+    "result": "Sensory integration for estimating arm inertia occurs discretely at collision events rather than continuously, with the nervous system compensating for visual-proprioceptive velocity differences by modifying the representation of arm inertia to maintain invariant kinetic energy estimates across modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C66-C67 collectively demonstrate the core finding through converging evidence: experimental data showing hypermetria after delayed pong (C27), individual differences explained by collision timing (C55), asymmetric group effects explained by robot mass (C56), and computational modeling explaining 61% of variance (C58). The event-driven hypothesis successfully rules out alternative explanations including proprioceptive recalibration (C59) and visuomotor gain (C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C26",
+      "C27",
+      "C30",
+      "C31"
+    ],
+    "result": "In Experiment I (frontal pong), all subjects improved performance with practice and exhibited systematic hypermetria in reaching movements after adaptation to delayed visual feedback, interpreted as a change in the representation of paddle mass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are directly supported by experimental data with appropriate statistical tests (paired t-test, p=0.04 for performance; p=0.02 for hypermetria). The control experiment showing no hypermetria without delay (C27) strengthens the causal interpretation. Claims C30-C31 represent the authors' hypothesis linking hypermetria to mass representation, which is reasonable but requires further validation from subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C37",
+      "C38",
+      "C39",
+      "C52",
+      "C53",
+      "C54",
+      "C56"
+    ],
+    "result": "In Experiments II and III (lateral pong), two groups showed equivalent learning rates but strikingly different reaching patterns: the LPR group (right court, heavier effective paddle mass of 1.5 kg) showed large hypermetria that generalized partially, while the LPL group (left court, lighter effective paddle mass of 1 kg) showed minimal hypermetria, with the difference explained by the mass-dependent scaling of the effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 are supported by appropriate statistical analyses (mixed-design ANOVA showing main effect of group, p=0.03). The asymmetric outcome despite identical kinematics (C37) is critical for ruling out kinematic models (C65). Claims C52-C54, C56 provide the mechanistic explanation through robot dynamics analysis (Figure 3G), with the mass proportionality derived from Equation 3. This elegant experimental design successfully dissociates kinematic from dynamic factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C50",
+      "C55"
+    ],
+    "result": "Participants adopted an energy-efficient strategy by hitting the ball at peak paddle velocity in baseline trials, and during adaptation to delay, they continuously worked toward recovering this energy-optimal behavior. Individual differences in timing behavior at collision events explain the three categorical outcomes (hypermetria, no effect, hypometria) observed across participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by experimental data (Figure 3A-B) and statistical analysis (paired t-test, p=0.02 for reduction in time difference). Claim C50 provides the mechanistic link between timing and mass perception. Claim C55 is supported by detailed individual case analyses (Figures 3D-F) showing that collision timing predicts outcome category. This provides strong evidence for the event-driven hypothesis by explaining individual variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C155",
+      "C156"
+    ],
+    "result": "A computational model incorporating both object mass and individual timing behavior explains 61% of total variance in reaching hypermetria, compared to only 28% when considering object mass alone, demonstrating that both components are necessary to account for the experimental results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by quantitative model analysis (Figure 4A) showing clear improvement in variance explained. The model uses maximum-likelihood estimation to combine visual and proprioceptive mass estimates (Equation 8) and predicts reaching trajectories through inverse dynamics. Claims C155-C156 describe appropriate model validation procedures. The substantial increase in explained variance (28% to 61%) provides strong quantitative support for the event-driven hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Alternative explanations including proprioceptive recalibration, visuomotor gain adaptation, and mass overestimation due to visual delay are ruled out by the experimental data, particularly the asymmetric outcomes between lateral pong groups that eliminate kinematic models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by correlation analyses (Figures 4C-D) showing no relationship between hypermetria and either sensory mismatch or visuomotor gain. Claims C61-C64 appropriately distinguish the current findings from prior delay adaptation studies through differences in temporal dynamics and prolonged exposure. Claim C65 is strongly supported by the asymmetric group results despite identical kinematics. This systematic elimination of alternatives strengthens the primary hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The invariance principle captures individual differences in dysmetria following temporal perturbation and provides a new interpretation for cerebellar ataxia, suggesting that patient-specific motor deficits may result from cerebellar dysfunction in temporal processing and alignment of multimodal sensory information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C5 is supported by experimental observation of individual differences (hypermetria and hypometria). However, claims C6, C108-C109 are speculative extensions to cerebellar ataxia without direct patient data. While the cited literature (C104-C107) establishes that cerebellar damage causes dysmetria and misrepresentation of arm dynamics, the causal link to temporal calibration errors remains hypothetical. This interpretation is plausible but requires validation in patient populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The nervous system exploits discrete contact events in object manipulation for sensory integration because these events provide simultaneous multimodal information that is spatially and temporally linked, enabling more accurate and reliable perception of the environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 establish the theoretical framework through appropriate citations to prior work on temporal recalibration and manipulation tasks. Claim C74 is a reasonable inference from the properties of multimodal events. Claim C75 represents the authors' interpretation of their experimental findings, which is supported by the data showing that adaptation effects depend on collision timing rather than continuous sensory integration. The logic is sound and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Contact events serve as rich sources of information for comparing predicted and actual sensory responses, allowing forward models to be updated at discrete events rather than continuously, which provides computational advantages and is consistent with eye-hand coordination studies showing that gaze fixates on contact locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by appropriate citations to prior work on predictive grip force. Claims C78-C80 represent reasonable inferences about forward model updating at events. Claims C81-C83 are supported by citations to eye-hand coordination studies. Claim C84 about computational advantages is a logical inference. The convergence of evidence from multiple domains (grip force, eye movements, current findings) provides strong support for the event-driven framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The event-driven framework for context estimation can be generalized to state estimation and error correction, with feedback integrated only when errors exceed task-dependent thresholds, allowing forward models to drift in task-irrelevant dimensions while maintaining task-relevant accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85, C87, C93 are explicitly speculative proposals for generalization. While claims C86, C91 are supported by general knowledge and claims C88, C90, C92 are supported by appropriate citations, the generalization from context estimation (mass) to state estimation (position/velocity) and error correction lacks direct experimental support. Claims C89-C90 about task-relevant vs. task-irrelevant dimensions are reasonable inferences but remain untested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Evidence from eye-tracking studies showing saccadic rather than smooth pursuit eye movements during reaching, with random timing and position, suggests that continuous state estimation demands cannot be satisfied even in simple reaching movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are supported by citation to Ariff et al., 2002, though the authors note conflicting evidence. Claim C96 is a reasonable inference from the saccadic eye movement pattern. However, this represents indirect support for the event-driven hypothesis from a different experimental paradigm, and the inference that saccadic eye movements indicate discrete state estimation is not definitively established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The cerebellum is critical for generating forward models and preparing predictive motor responses in anticipation of discrete sensory events, with cerebellar damage impairing predictive but not reactive adjustments across multiple task domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C103 are well-supported by extensive citations to prior literature on cerebellar function, including patient studies, imaging, and TMS. The convergent evidence from multiple methodologies and task domains (ball catching, locomotion, object manipulation, adaptation) provides strong support. Claim C102 represents a reasonable synthesis of the cited findings. This establishes the neurobiological plausibility of the event-driven framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Twenty-four neurologically intact right-handed volunteers participated in experiments using a calibrated robotic manipulandum with appropriate ethical approval and informed consent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C118 are straightforward factual statements about participants, ethical procedures, and experimental apparatus. These are adequately documented and meet standard requirements for human subjects research. The 1mm calibration precision (C116) and 1kHz/200Hz sampling rates (C117-C118) are appropriate for the experimental requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C123",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The pong game involved hitting a ball toward a target side within a rectangular court with randomized ball velocity changes and friction, while reaching movements were performed without visual feedback of hand position, guided only by proprioception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C131 provide detailed descriptions of the experimental tasks. The pong game design is appropriate for creating discrete collision events with multimodal feedback. The reaching task design (no visual feedback, proprioceptive guidance) is appropriate for assessing changes in internal models. The experimental procedures are clearly described and methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C136",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C143",
+      "C145",
+      "C146",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Three experimental groups were tested with reaching-pong-reaching sequences: frontal pong with 80ms delay (n=8, with n=5 control), and two lateral pong groups with 120ms delay in right (n=8) or left (n=8) courts, with appropriate randomization and counterbalancing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C150 describe the experimental protocols for the three groups. The design is appropriate for testing the hypotheses: Experiment I establishes the basic effect, while Experiments II-III dissociate kinematic from dynamic factors. The inclusion of a no-delay control (C138-C139), randomization (C132, C139, C150), and counterbalancing across courts (C145) demonstrate good experimental design. Sample sizes (n=8 per group) are modest but adequate given the within-subject design and effect sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C151",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The computational model uses the effective mass of the robot (spatially varying and configuration-dependent) combined with maximum-likelihood estimation of visual and proprioceptive mass estimates to predict reaching trajectories, with appropriate data filtering and outlier removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C153 correctly describe the effective mass concept for the five-bar linkage robot. Claims C154-C157 describe appropriate data processing methods (Butterworth filter, outlier removal at 10 SD). Claim C156 indicates model robustness to time window selection. Claim C158 specifies standard significance threshold. The computational methods are sound and adequately described, though more details on model validation would strengthen confidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The introduction establishes the theoretical framework: multisensory integration improves perception and motor control, but neural delays necessitate predictive internal models that combine priors with delayed feedback under uncertainty, with Bayesian integration providing a unifying framework, though the temporal structure of estimation remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C17 are well-supported by appropriate citations to established literature on sensory integration, internal models, and Bayesian frameworks. Claim C18 correctly identifies the knowledge gap addressed by the study. This provides appropriate theoretical context and motivation for the research, though it represents background knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Object manipulation is an effective testbed for sensorimotor integration because it engages multiple sensory modalities and requires knowledge of both arm and object dynamics, with vision providing information about mechanical properties in addition to proprioceptive and tactile feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 represent reasonable inferences about the properties of object manipulation tasks. Claim C23 is supported by multiple citations to prior work on visual perception of object properties. This provides appropriate justification for the experimental approach, though it represents established knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  }
+]

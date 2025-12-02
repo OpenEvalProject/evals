@@ -1,0 +1,399 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Exogenously added recombinant CD95L protein or overexpressed CD95/CD95L proteins do not protect cells from toxic shRNAs targeting CD95 or CD95L.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 demonstrate through multiple experimental approaches (soluble CD95L treatment, leucine-zipper CD95L, and overexpression of shRNA-resistant CD95/CD95L constructs) that neither exogenous nor overexpressed CD95/CD95L proteins protect cells from shRNA toxicity. The data in Figures 1A, 1D, 1F, and 1G consistently support this conclusion across different cell lines and experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "CRISPR/Cas9-mediated deletion of shRNA/siRNA target sites in CD95 or CD95L genes does not prevent toxicity, demonstrating that cell death is not due to knockdown of these genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 provide strong evidence through CRISPR/Cas9 gene editing experiments (Figures 2A-I) that cells with homozygous deletions of shRNA/siRNA target sites remain fully sensitive to the corresponding toxic RNAs. This definitively establishes that toxicity is not mediated through knockdown of CD95 or CD95L, as stated in C29.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The toxicity of CD95/CD95L-derived sequences requires canonical RNAi machinery and double-stranded RNA with specific structural features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 demonstrate through systematic structural modifications (Figure 3A-D) that toxicity requires: double-stranded RNA (not single-stranded), ribonucleotides (not DNA), 3' overhangs, and an unmodified 5' end on the guide strand. The competition experiment (C35-C36) further supports RISC involvement. These data collectively establish canonical RNAi mechanism involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Dicer-/- cells are resistant to toxic shRNAs but sensitive to siRNAs, while Drosha-/- cells are hypersensitive to both, suggesting that cellular miRNAs protect cells from DISE by competing for RISC occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 present compelling evidence from Dicer-/- and Drosha-/- cells (Figure 3E-G) showing differential sensitivity patterns consistent with the requirement for Dicer processing of shRNAs and the protective role of endogenous miRNAs. The hypersensitivity of both knockout cell types to siRNAs (C42) and the mechanistic explanation involving RISC competition (C43) are well-supported by the data and cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "The 6mer seed sequence of siL3 is critical for both RNAi activity and toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is supported by the chimeric siRNA experiments shown in Figure 3H, which systematically demonstrate that replacing nucleotides from the seed end abolishes both RNAi activity and toxicity, while replacements from the non-seed end have no effect until the seed region is affected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Toxic shRNAs cause early downregulation of 11 genes, including 6 critical survival genes identified in genome-wide screens, with significant enrichment (54.5%, p=3\u00d710\u207b\u2076) compared to the expected 6.6%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 are well-supported by the RNA-Seq analysis (Figure 4A-B) using stringent dual-method validation. The statistical enrichment of survival genes (C48) is properly calculated and highly significant. The kinetic analysis (C50) and functional validation (C46-C47) strengthen the conclusion that cells die from silencing multiple survival genes (C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Individual knockdown of seven survival genes reduces cell growth, and a mixture of siRNAs targeting these genes at 1 nM total concentration effectively kills cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by experimental validation (Figure 4C and Figure 4\u2014figure supplement 2B-C) demonstrating that individual and combined knockdown of identified survival genes recapitulates the toxic phenotype. The remarkably low concentration required (35.7 pM per siRNA) is particularly striking and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "Survival genes are significantly enriched among downregulated genes in all four RNA-Seq datasets, while nonsurvival genes show no enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is supported by GSEA analysis (Figure 4D) across all four experimental conditions, providing strong statistical evidence for preferential targeting of survival genes. The consistent pattern across different cell lines, vectors, and timepoints strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "DISE involves substantial downregulation of histones (12 of 16 significantly downregulated genes) and genes involved in mitotic cell cycle, DNA conformation change, and macromolecular complex assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by RNA-Seq data (Figure 4E-F) and Metascape analysis. The argument that histone loss is specific to DISE rather than a general feature of dying cells (C56) is supported by the analysis in Figure 4\u2014figure supplement 3, though this interpretation involves some inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Sylamer analysis identifies strong enrichment of cognate seed matches in 3'UTRs (but not ORFs) of downregulated genes, and 10 of 11 downregulated genes contain multiple seed matches for shL3 and/or shR6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are well-supported by Sylamer analysis (Figure 5A) and seed match mapping (Figure 5B). The statistical significance of enrichment and the specificity for 3'UTRs (C59) provide strong evidence for canonical RNAi-mediated targeting of survival genes through their 3'UTRs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Small RNA-Seq reveals that mature shRNAs are predominantly cleaved one nucleotide away from the expected position, and synthetic siRNAs based on these sequences are toxic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by small RNA-Seq data (Figure 5\u2014figure supplement 1A) and functional validation (Figure 5\u2014figure supplement 1B). This finding explains the discrepancy between expected and observed seed sequences in Sylamer analysis and confirms sequence-specific toxicity independent of the shRNA platform.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Sylamer analysis of shL1 and siL3 treatments confirms enrichment of guide strand seed matches in 3'UTRs of downregulated genes, with no enrichment of passenger strand sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 extend the Sylamer findings to additional experimental conditions (Figure 5\u2014figure supplement 2), demonstrating the generality of the mechanism. The absence of passenger strand enrichment (C65-C66) confirms that toxicity is mediated specifically by the guide strand.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Different toxic shRNAs with distinct seed sequences can target overlapping sets of survival genes, and survival genes with predicted seed matches are statistically more likely to be downregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by qPCR data (Figure 4\u2014figure supplement 1D) and Fisher's Exact test analysis (Figure 5C). The finding that shR7 targets 7 of 11 genes also targeted by shL3 despite different seed sequences (C67) suggests convergent targeting of survival gene networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The level of on-target knockdown and toxicity of shRNAs are not strictly correlated, with some toxic shRNAs efficiently silencing CD95 while others do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by data in Figure 5\u2014figure supplement 3, demonstrating that toxicity is not simply a function of on-target knockdown efficiency. This finding is important for understanding that DISE operates through off-target effects rather than on-target gene silencing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "DISE involves early selective silencing of survival genes through 3'UTR targeting followed by histone downregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is a well-supported summary inference integrating the RNA-Seq data, Sylamer analysis, kinetic studies, and mechanistic experiments. The temporal sequence (early survival gene silencing followed by histone loss) is supported by the kinetic data in Figure 4\u2014figure supplement 1C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "A screen of 4666 shRNAs reveals that toxic sequences are enriched in the CD95L ORF and CD95 3'UTR, with the Venus control showing no toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C72-C77 are supported by the pooled shRNA toxicity experiments (Figure 6\u2014figure supplement 1B). The differential toxicity patterns across different gene regions provide important insights into the distribution of DISE-inducing sequences. However, the mechanistic basis for this regional enrichment is not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The Toxicity Index (TI), based on the ratio of seed matches in survival vs. nonsurvival gene 3'UTRs, correlates with experimental toxicity and can predict shRNA toxicity to some extent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are supported by the TI analysis (Figure 7B) and validation with expression-matched genes (Figure 7\u2014figure supplement 1). The statistical significance of enrichment and the correlation between predicted and observed toxicity support the utility of TI as a predictive tool, though the authors appropriately note limitations ('to a certain extent').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Higher GC content in 6mer seed sequences correlates significantly with increased shRNA toxicity, consistent with reports of decreased on-target and increased off-target activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by correlation analysis (Figure 7C-E) and are consistent with published literature. However, the authors appropriately note that high GC content is not an absolute requirement for toxicity, and the mechanistic basis for this correlation could be more thoroughly explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "si/shRNAs with certain seed sequences kill cancer cells by targeting survival genes through RNAi independent of Drosha and Dicer, and high miRNA content may protect cells by competing for RISC occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 represent well-supported summary conclusions integrating the mechanistic studies with Dicer-/- and Drosha-/- cells, the RNA-Seq data, and the Sylamer analysis. The independence from Drosha/Dicer for siRNAs (but not shRNAs) is clearly demonstrated, and the protective role of miRNAs is a reasonable inference from the hypersensitivity data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C86",
+      "C87"
+    ],
+    "result": "DISE is a unique form of off-target effect where >80% of CD95/CD95L-targeting si/shRNAs kill cancer cells through canonical RNAi by targeting 3'UTRs of multiple survival genes, explaining the simultaneous activation of multiple cell death pathways and resistance to resistance development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C86-C87 represent the central thesis of the paper. The >80% figure (C1) is supported by Figure 1\u2014figure supplement 1 and published data. The mechanism involving canonical RNAi and survival gene targeting (C2) is extensively validated throughout the manuscript. The explanation for unique DISE properties (C87) is a reasonable inference supported by the data and cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "Drosha-/- and Dicer-/- cells are hypersensitive to DISE, suggesting that cellular miRNAs protect cells from this form of cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 are well-supported by the experimental data in Figure 3E and 3G with appropriate statistical analysis (p<0.0001). The inference that miRNAs protect cells (C4) is reasonable given the miRNA depletion in these cells and the competition model for RISC occupancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "Specific toxic RNAi-active sequences present in the genome can kill cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 is a proposal/conclusion based on the collective findings, particularly the shRNA screen identifying toxic sequences in CD95L ORF. While labeled as 'SPECULATION' in evidence type, this is actually a well-supported conclusion from the extensive experimental data, though it represents a conceptual synthesis rather than a directly tested hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "DsiRNAs targeting CD95L are toxic at 5 nM, and analysis of published genome-wide data shows that 67% of CD95/CD95L-targeting shRNAs killed >50% of 216 tested cancer cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 are supported by experimental data (Figure 1\u2014figure supplement 1B) and reanalysis of published datasets (Cowley et al., 2014). The consistency between the authors' findings and independent large-scale screens strengthens the generality of the DISE phenomenon.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "miR-30-based shRNAs show reduced toxicity and knockdown efficiency compared to pLKO/pTIP-based shRNAs, likely due to insufficient expression levels, while siL3 is toxic at concentrations as low as 1 nM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 are supported by comparative experiments (Figure 1\u2014figure supplement 2B-E) explaining the discrepancy with published screens using miR-30 platforms. The dose-response data for siL3 (C18) establishes that DISE can occur at very low concentrations when expression is sufficient.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "98.4% of AGO-associated RNAs are miRNAs in wild-type cells, while Drosha-/- and Dicer-/- cells show dramatic miRNA depletion but maintain AGO2 expression, allowing increased uptake of toxic RNAs into RISC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 integrate the authors' AGO pull-down data with published findings (Kim et al., 2016) to provide a mechanistic explanation for the hypersensitivity of miRNA-depleted cells. The inference about increased RISC availability (C92) is reasonable given the maintained AGO2 levels and depleted miRNA content.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "DISE preferentially affects transformed cells over normal cells, potentially explained by global miRNA downregulation in cancer cells freeing up RISC for DISE-inducing RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 combine previous findings (Hadji et al., 2014) with established knowledge about miRNA downregulation in cancer (Lu et al., 2005) to propose a mechanism for cancer cell selectivity. While the model is reasonable and consistent with the data, direct experimental validation of this specific mechanism in normal vs. cancer cells would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "DISE can be triggered in vivo to treat ovarian cancer without toxicity, suggesting potential for developing a novel cancer therapy based on this mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 are based on an accompanying manuscript (Murmann et al., 2017) demonstrating in vivo efficacy and safety. While the therapeutic potential (C100) is appropriately presented as speculative ('might be possible'), the in vivo proof-of-concept provides strong support for this possibility.",
+    "result_type": "MAJOR"
+  }
+]

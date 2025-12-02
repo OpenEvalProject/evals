@@ -1,0 +1,185 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "High-resolution Hi-C data from early Drosophila embryos was generated using an adapted in situ Hi-C protocol, producing ~452 million informative read pairs with appropriate quality control metrics and computational processing methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C14-C15, and C66-C73 collectively describe the experimental design, data generation, and quality control for the Hi-C experiments. The methods are clearly described, quality metrics are reported, and the data volume is substantial for high-resolution analysis. The experimental and computational approaches are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "Hi-C data from early Drosophila embryos recapitulates known features of nuclear organization including the Rabl configuration and clustering of centromeres and heterochromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 describe observations in the Hi-C data that match previously established features of Drosophila nuclear organization, supported by visual inspection of heatmaps and citations to prior studies. These serve as positive controls validating the Hi-C data quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C30",
+      "C53"
+    ],
+    "result": "TAD boundaries in early Drosophila embryos are short DNA elements (500-2000 bp) characterized by high chromatin accessibility, strong binding of insulator proteins (especially CP190 at 95.1% of boundaries), and enrichment of specific DNA sequence motifs, with a close bidirectional association between insulator protein binding sites and topological domain boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C18-C25, C30, and C53 provide converging evidence from Hi-C data, ChIP-seq, DNase-seq, and sequence analysis demonstrating the molecular characteristics of TAD boundaries. The high concordance between manual and computational boundary calls (952/1000), strong enrichment of CP190 (95.1%), and the bidirectional predictive relationship between boundaries and insulator binding provide robust support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Transcriptional activity is not required for TAD boundary formation, as evidenced by the absence of RNA polymerase II at 54.9% of boundaries, the presence of active promoters that do not form boundaries, pharmacological inhibition experiments, and invariance of boundaries between anterior and posterior embryo regions with different transcriptional profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 provide multiple lines of evidence arguing against transcription-dependent boundary formation. The data includes direct measurements (RNA polII ChIP), visual inspection of Hi-C maps, citation to pharmacological inhibition studies, and comparison of anterior/posterior samples. The evidence is consistent and addresses a key alternative hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "TAD boundaries correspond to polytene chromosome interband regions, with a striking correspondence observed at the finely-mapped 10A1-B1 locus where faint polytene bands correspond to TADs and interbands correspond to boundary elements, and strong enrichment of the interband marker Chriz at 87.9% of boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C31-C35 establish the correspondence between Hi-C boundaries and polytene interbands through comparison with prior cytological mapping (especially the detailed Vatolina et al. study) and enrichment of the interband marker Chriz. While based on limited genomic regions with fine mapping, the molecular correspondence (Chriz enrichment) supports generalization across the genome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "High-resolution Hi-C data can resolve fine polytene banding structures, revealing intricate internal organization within regions that appeared as single TADs at lower resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 demonstrate that the high resolution of the Hi-C data enables detection of fine-scale chromatin organization. The example of chromosome 2L region shows complex internal structure not visible at 15 kb resolution, validating the utility of the high-resolution approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Topological boundaries and their chromatin accessibility are constitutive features that remain invariant between anterior and posterior embryo halves and across developmental stages, despite substantial differences in transcriptional profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 provide multiple lines of evidence from Hi-C, ATAC-seq, and DNase-seq showing that boundaries are developmentally invariant. The correlation analysis, accessibility measurements, and consistency across stages support the conclusion that insulator-mediated chromatin organization is constitutive in early Drosophila embryos.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C61",
+      "C62"
+    ],
+    "result": "Looping interactions between domain boundaries are rare in early Drosophila embryos, with only 46 prominent examples identified genome-wide, including functionally significant cases like the Scr-ftz-Antp locus, and many involving transcriptionally active developmental genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C51, C61-C62 document the limited occurrence of boundary-boundary looping interactions through systematic manual inspection of Hi-C data. The identification of specific examples with known regulatory significance (e.g., Scr locus) and the observation that many involve active genes provide biological context for these rare events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C36",
+      "C59",
+      "C60",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "A chromatin extension model is proposed in which decompaction of boundary-insulator-interband regions drives chromosome organization by creating physical separation between adjacent domains, with insulators functioning by increasing physical distance through chromatin unpacking rather than through looping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C36, C59-C60, C63-C65 present a mechanistic model based on the observed correspondence between boundaries, insulators, and interbands. While the model is consistent with the data (low compaction ratios at interbands, rare looping), it remains speculative as direct evidence for the proposed mechanism of chromatin extension is not provided. The model is plausible but requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C52",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Prior work has established the organization of polytene chromosomes into bands and interbands, identified insulators and their properties, demonstrated TAD organization in Drosophila, and shown correspondence between large TADs and polytene bands, with interbands characterized by insulator protein binding, DNase sensitivity, and association with gene promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C13 and C52-C58 accurately summarize relevant prior work through appropriate citations. These claims provide essential context for the current study and are well-supported by the cited literature. The authors correctly attribute findings to prior studies.",
+    "result_type": "MINOR"
+  }
+]

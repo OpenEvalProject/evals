@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C66"
+    ],
+    "result": "rap-2 acts genetically downstream of plx-1 to regulate synaptic tiling, and cycling between GTP- and GDP-bound forms of RAP-2 is critical for this function. Expression of constitutively GTP-bound (G12V), GDP-bound (S17A), or null (gk11) rap-2 mutants all show similar synaptic tiling defects as plx-1 mutants, with no enhancement in double mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic epistasis is well-demonstrated with multiple independent alleles (C52-C54), appropriate controls (C50-C51), and consistent phenotypes across GTP-locked, GDP-locked, and null mutants (C55-C58). The lack of enhancement in double mutants (C60-C61) supports same-pathway function. RT-qPCR confirms mutation effects are not due to expression changes (C53). Statistical significance is shown (C47, C52, C59).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C76",
+      "C77"
+    ],
+    "result": "rap-1 and rap-3 do not contribute to synaptic tiling in DA neurons, demonstrating functional specificity of rap-2. rap-1 null mutants show no tiling defects and cannot rescue rap-2 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Expression data (C44-C45) and genetic analysis (C62-C63) consistently show rap-1 and rap-3 are not involved. The cross-rescue experiment (C76-C77) demonstrates functional specificity. This is important negative control data that strengthens the rap-2-specific conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C78"
+    ],
+    "result": "rap-2 functions cell-autonomously in DA neurons to regulate synaptic tiling. DA neuron-specific expression rescues the tiling defect, while muscle or DB neuron expression does not. DA9-specific expression rescues only the DA9 phenotype, not DA8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Tissue-specific rescue experiments are well-controlled with appropriate negative tissues (C67-C68) and positive rescue in DA neurons (C69). The DA9-specific partial rescue (C70-C71) demonstrates cell autonomy and contrasts with plx-1's non-autonomous function (C73). Multiple promoters and quantification of both DA8 and DA9 domains strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Human Rap2a can functionally replace C. elegans rap-2 in synaptic tiling, suggesting evolutionary conservation of this mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Cross-species rescue (C74) with statistical support (Figure 2D, G) demonstrates functional conservation. This is strengthened by prior biochemical evidence that mammalian PlexinA3 acts as RapGAP (C21, C92). However, this is a single heterologous expression experiment without detailed characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "PLX-1 locally inactivates RAP-2 at the anterior edge of the DA9 synaptic domain to delineate the synaptic tiling border. FLIM-FRET measurements show lower Rap2A activity at the tiling border in wild-type but not plx-1 mutants, and this local inactivation is independent of synapses and requires PLX-1's GAP domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The FLIM-FRET approach is sophisticated and shows spatial differences in Rap2 activity (C84, C86). However, critical concerns exist: (1) The sensor uses human Rap2A, not C. elegans RAP-2, with validation only in HeLa cells (C48); (2) No direct demonstration that the sensor reports C. elegans RAP-2 activity; (3) The interpretation that higher activity in synaptic regions reflects local inactivation at borders (C84-C85) could alternatively reflect higher RAP-2 concentration where synapses form; (4) The unc-104 experiment (C88-C89) addresses this but relies on identifying a 'putative' border without synapses; (5) Statistical analysis shows significance but with modest effect sizes and potential for spatial registration artifacts. The conclusion is plausible but requires validation with C. elegans-specific sensors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "mig-15 (TNIK) acts genetically downstream of plx-1 and rap-2 to regulate synaptic tiling. Multiple mig-15 alleles show severe tiling defects that are not enhanced by plx-1 or rap-2 mutations. The CNH domain required for Rap2 interaction is necessary for function. mig-15 mutants show more severe defects than plx-1/rap-2, suggesting additional pathway involvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent alleles (C106) including one in the CNH domain (C107-C109) support the genetic pathway. Epistasis analysis (C110-C111) is appropriate. The synaptic tiling defect is distinguished from axon guidance defects (C101-C105) with proper controls (C104). PLX-1::GFP localization is maintained in mig-15 mutants (C112), supporting downstream function. The observation of more severe phenotypes (C114-C115) is appropriately interpreted as suggesting additional pathways rather than contradicting the main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "mig-15 functions cell-autonomously in DA neurons to regulate synaptic tiling. DA neuron-specific expression rescues the tiling defect, and DA9-specific expression rescues the DA9 phenotype. Expression of kinase-dead mig-15 causes dominant-negative tiling defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Tissue-specific rescue experiments (C116-C118) parallel the rap-2 analysis and show cell autonomy (C119, C122). The dominant-negative experiment (C121) provides additional functional evidence, though the kinase-dead mutation is based on mammalian TNIK homology (C120) rather than direct biochemical validation in C. elegans. The observation of shortened synaptic domains with DA9-specific rescue (C123) foreshadows the synapse number regulation function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "mig-15 negatively regulates synapse number independently of its role in synaptic tiling. Overexpression reduces synapse number while loss-of-function increases it, without affecting axon morphology. This function is independent of plx-1/rap-2 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gain- and loss-of-function experiments (C124, C126) show opposite effects on synapse number with statistical support. The independence from plx-1/rap-2 is demonstrated by the lack of synapse number changes in those mutants (C132) and no difference between mig-15(OE) and rap-2; mig-15(OE) (C150-C151). Functional consequences are shown with locomotion defects (C129-C131). The distinction between tiling and synapse number is a key conceptual advance. However, the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "mig-15 inhibits synapse formation by negatively regulating synaptic F-actin. Branched F-actin distribution is extended in rap-2 and mig-15 mutants and reduced with mig-15 overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The F-actin measurements using GFP::ut-CH (C136-C138) show consistent changes correlating with synapse number alterations. The connection to prior work on ARP2/3-dependent F-actin in presynaptic development (C135) provides mechanistic context. However, the measurements are of F-actin distribution length, not amount or dynamics, and the causal relationship between F-actin changes and synapse number is inferred rather than directly tested (e.g., no rescue experiments with F-actin manipulations).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The PLX-1/RAP-2 signaling pathway coordinates the position of the synaptic tiling border according to synapse number. When mig-15 overexpression reduces DA9 synapse number, the tiling border shifts posteriorly and DA8 expands, but this shift does not occur in plx-1 or rap-2 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mig-15 overexpression experiments (C140-C145) elegantly demonstrate that reducing synapse number in DA9 causes compensatory DA8 expansion while maintaining tiling. The PLX-1::GFP shift (C145) provides molecular evidence for border repositioning. The critical test that this coordination requires plx-1/rap-2 (C148-C149) strongly supports the model. This represents an important conceptual advance showing that tiling is not just about inhibition but about coordinating synapse distribution. Statistical support is provided throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C152",
+      "C153"
+    ],
+    "result": "Overall conclusion: Rap2 GTPase (rap-2) and TNIK (mig-15) act downstream of Plexin (plx-1) to restrict presynaptic assembly and coordinate synaptic tiling by regulating the spatial distribution of synapses along the nerve cord.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary conclusion (C1, C2, C9, C152, C153) is well-supported by the collective evidence from genetic, cell biological, and functional analyses. The pathway is established through multiple independent approaches with appropriate controls and statistical validation. The distinction between tiling coordination and synapse number regulation adds mechanistic depth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C155",
+      "C160",
+      "C162",
+      "C163",
+      "C166",
+      "C169",
+      "C173",
+      "C181"
+    ],
+    "result": "Speculative proposals about mechanisms and mammalian conservation: The authors propose that Sema/Plexin in mammals utilize Rap2/TNIK, that neurons use different surface proteins but common intracellular mechanisms, that RAP-2 may locally regulate MIG-15 activity, that multiple RapGEFs act redundantly, that TNIK integrates multiple pathways, and that disruption causes neurological disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly stated as proposals and speculations (C155, C160, C162, C163, C166, C169, C173, C181) based on the current findings and literature. They are reasonable hypotheses but lack direct experimental support in this study. The mammalian conservation proposal (C155) is supported by the human Rap2a rescue (C74-C75) and prior biochemical work (C21, C92), but requires validation in mammalian synaptic systems. The disease relevance (C181) is based on genetic associations (C175-C180) but is correlative.",
+    "result_type": "MINOR"
+  }
+]

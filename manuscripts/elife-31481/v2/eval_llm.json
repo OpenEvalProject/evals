@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C94"
+    ],
+    "result": "The BPTF PHD finger binds to the H3K4me3 tail in the nucleosome context with dramatically reduced affinity compared to free peptide, despite adopting the same binding mode and making no contacts with the nucleosome core.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C18-C23, C27-C32, and C94 collectively demonstrate through NMR titrations and BLI that PHD finger binding to H3KC4me3-NCP is substantially weaker (low millimolar Kd vs. low micromolar for peptide) while maintaining the same binding mode (same CSP trajectories). The data from multiple orthogonal techniques (NMR, BLI, mass spec validation of MLA) converge on this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The H3 tail in the nucleosome context is unstructured but exhibits significant chemical shift differences from the free peptide along its entire length, suggesting a distinct conformational environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 are supported by NMR assignments and chemical shift analysis showing that while the H3 tail remains disordered (random coil by CSI3.0), it experiences significant CSPs throughout its length compared to free peptide. The observation of only 32 peaks and their chemical shift characteristics are consistent with prior studies and support a dynamic but distinct nucleosomal environment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C48",
+      "C49"
+    ],
+    "result": "The H3 tail robustly associates with the nucleosome core in trans, independent of linker DNA, as demonstrated by NMR titrations showing slow exchange kinetics and spectral similarity to the native nucleosomal H3 tail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43, C48-C49 are supported by NMR titration experiments showing characteristic slow exchange behavior (signal loss and reappearance) and spectral similarity between trans-bound and native H3 tails. The use of tailless NCPs (tlNCPs) demonstrates the interaction is with the core, not other tails, and occurs even without linker DNA (147 bp construct).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C50",
+      "C51",
+      "C98"
+    ],
+    "result": "MD simulations reveal that H3 tails consistently collapse onto the nucleosome core DNA regardless of initial conformation, adopting an ensemble of structurally heterogeneous but energetically similar conformations that interconvert rapidly on the NMR timescale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47, C50-C51, and C98 are supported by MD simulation data showing consistent tail collapse (Rg reduction from 45\u00c5 to ~26\u00c5), high conformational heterogeneity (RMSD of 50\u00c5 between final frames), yet fast exchange on NMR timescale (single peaks observed). The simulations used three different initial conformations and multiple replicates, strengthening the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C64",
+      "C65"
+    ],
+    "result": "The H3 tail interaction with the nucleosome core is driven by electrostatic contacts with DNA, as demonstrated by NMR spectral similarity between DNA-bound and nucleosomal H3 tails and MM-GBSA calculations showing favorable DNA binding energy (\u0394G = -70.8 \u00b1 4.0 kcal/mol) dominated by basic residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C59, C64-C65 are supported by convergent NMR and computational evidence. NMR shows marked spectral similarity between H3 tail bound to 21bp DNA and nucleosomal H3 tail. MD simulations with MM-GBSA analysis show tails package onto DNA surface with favorable binding energy driven by arginines and lysines, while histone-tail interactions are disfavorable. The electrostatic nature is further supported by salt titration effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C66"
+    ],
+    "result": "H3K4me3 modification does not significantly alter H3 tail-DNA interactions or tail structure, as shown by nearly identical MD simulation results and NMR spectra showing only local perturbations around K4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 and C66 are supported by both MD simulations (similar Rg, secondary structure, and \u0394G values between unmodified and H3K4me3 NCPs) and NMR data showing perturbations only near K4. This is consistent with methylation not altering the lysine charge, thus maintaining electrostatic interactions with DNA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "DNA binding of the H3 tail competitively inhibits PHD finger association, with a 15-fold reduction in affinity for the full-length tail (Kd = 180 \u00b1 30 \u03bcM vs. 12 \u00b1 1 \u03bcM), while the short H3(1-10) peptide shows minimal effect, indicating multiple contacts along the tail are required for high-avidity DNA interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 are supported by systematic NMR titrations comparing PHD binding to peptides with and without pre-bound DNA. The differential effect between short (H3(1-10)) and long (H3(1-44)) peptides, with quantitative Kd determination for the latter, demonstrates that multiple contacts along the tail mediate the competitive inhibition. The same CSP trajectories confirm the binding mode is unchanged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Acetylation of lysines 14, 18, 23, and 27 significantly weakens H3 tail-DNA interactions (\u0394G = -52.1 \u00b1 2.7 kcal/mol vs. -70.8 \u00b1 4.0 kcal/mol, p=0.0003) through both direct loss of lysine-DNA contacts and indirect weakening of neighboring residue interactions, while maintaining similar tail compaction and structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 are supported by MD simulations with MM-GBSA analysis showing statistically significant weakening of DNA binding upon acetylation. The detailed per-residue analysis (C77) showing that acetylated lysines account for only 33% of the total change, with neighboring residues contributing 37%, provides mechanistic insight. The maintenance of similar Rg and secondary structure (C74-C75) indicates the effect is primarily electrostatic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Mutation of arginines 8, 17, and 26 to alanine produces the weakest DNA binding of all tested NCPs (\u0394G = -45.1 \u00b1 2.7 kcal/mol), with the decrease attributed almost entirely to the direct loss of arginine-DNA contacts, demonstrating that while modifications weaken tail-DNA interactions, they do not abolish them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by MD simulations showing the 3xR-A mutant has the lowest DNA binding energy, with MM-GBSA analysis attributing the decrease directly to the alanine mutations rather than indirect effects on neighboring residues (contrasting with acetylation results). The still-favorable binding energy supports that multiple contacts mediate the interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Glutamine serves as a valid acetyl-lysine mimetic for these studies, as demonstrated by good agreement between simulations of acetylated and glutamine-substituted NCPs for Rg, secondary structure, and DNA interaction energy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 are supported by direct comparison of MD simulations with acetylated lysine vs. glutamine substitutions at the same positions, showing agreement in key structural and energetic parameters. This validation is important for interpreting the experimental NMR data with glutamine mutants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Neutralizing basic residues or introducing negative charges through mutation or phosphorylation increases PHD finger accessibility to H3K4me3-NCPs, with binding affinity trending as: unmodified < 4xK-Q \u2248 phos < 3xR-A, consistent with computational predictions and demonstrating that multiple contacts along the tail mediate high-avidity DNA interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C93 are supported by systematic NMR titrations of PHD finger with various modified/mutated NCPs, showing the same binding mode (CSP trajectories) but increased accessibility. The trend in binding affinities matches computational predictions (C90), and the observation that even the 3xR-A mutant doesn't fully recover peptide-level binding (C92) supports the high-avidity, multi-contact model (C93). The greater effect of arginine vs. lysine neutralization (C91) is consistent with MM-GBSA data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C17",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The BPTF PHD finger binds H3(1-10)K4me3 peptide with low micromolar affinity through a well-characterized binding mode, and the methyl-lysine analogue (MLA) shows moderately weaker binding (~10-fold) than true methylated lysine, as confirmed by mass spectrometry validation of complete alkylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15-C17, C24-C26 establish the baseline peptide binding characteristics and validate the MLA approach. The NMR data showing extensive CSPs in the binding pocket, low \u03bcM affinity consistent with prior work, and mass spec confirmation of proper alkylation provide solid foundation. The comparison to Chen et al. 2018 regarding MLA affinity loss is appropriately cited and experimentally confirmed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background on nucleosome structure, histone tail PTMs, and prior evidence for tail-DNA interactions from crystallography, biochemistry, and computational studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C14 provide established background knowledge supported by appropriate citations to prior literature. These contextual claims are well-supported by the cited references and represent accurate summaries of the field's understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The nucleosome context has a dramatic impact on chromatin signaling events at histone tails, with inhibition of PHD finger binding due to tail conformation, suggesting PTM crosstalk may be mediated by conformational changes within the nucleosome structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 and C100-C101 represent the main conclusions of the study, which are well-supported by the collective experimental and computational evidence. Claim C99 and C101 about PTM crosstalk being mediated by tail conformation are reasonable hypotheses supported by the data showing that modifications outside the PHD binding site affect accessibility, though they represent interpretations rather than direct demonstrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C102",
+      "C103"
+    ],
+    "result": "Modifications outside effector domain binding sites might alter accessibility through conformational changes, and DNA-binding domains could potentially displace histone tails to increase accessibility, as observed in several histone effector domains with dual DNA-binding capability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83 and C102 are speculative hypotheses about mechanisms, while C103 cites examples of dual-function domains. While C83 is supported by the data showing modifications affect accessibility, it remains a suggested mechanism. C102 is explicitly speculative. C103 is well-supported by citations but represents context rather than a tested result of this study.",
+    "result_type": "MINOR"
+  }
+]

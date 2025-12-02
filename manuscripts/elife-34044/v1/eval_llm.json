@@ -1,0 +1,420 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The authors developed a visual discrimination task in head-fixed mice running on a treadmill where mice discriminate between gratings oriented at 90\u00b0 (target) and 45\u00b0 (distractor) by controlling stimulus position through running speed. Wild-type mice learned the task to >85% accuracy in 23\u00b17 days, while transgenic VGat-ChR2-EYFP mice required 50\u00b120 days (p=0.0096).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C40 describe the behavioral task design and training outcomes with appropriate controls (spatial phase randomization, eye position stability, stimulus freezing period). The significant difference in learning rates between wild-type and transgenic mice is properly documented with statistical testing. The task design is well-characterized and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C50",
+      "C81"
+    ],
+    "result": "Optogenetic silencing of contralateral V1 reduced discrimination performance to chance levels (51\u00b13% accuracy), while ipsilateral V1 silencing had no effect (88\u00b16% vs 89\u00b16% accuracy). ROC analysis confirmed that an ideal observer could not discriminate stimuli during contralateral V1 silencing (55\u00b16% accuracy). Control experiments showed V1 silencing did not impair the motor ability to position stimuli in a detection task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 and C50 demonstrate necessity of contralateral V1 through optogenetic silencing with appropriate controls (ipsilateral silencing, detection task). The use of ROC analysis to confirm chance-level performance beyond binary classification strengthens the conclusion. Statistical tests and multiple control conditions support the claim that V1 is required for discrimination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C113",
+      "C116"
+    ],
+    "result": "Permanent surgical ablation of contralateral V1 reduced task performance to chance levels (p>0.3) even 10 days post-lesion. Control experiments ruled out effects of training gaps, anesthesia, or non-specific surgical effects. The absence of recovery after permanent lesions is consistent with an instructive rather than permissive role of V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 and C113 provide converging evidence from permanent lesions with appropriate controls. The lack of recovery over 10 days distinguishes V1's role from motor cortical areas that show rapid recovery. However, the sample size for some controls is small (n=1 for ipsilateral lesion), which slightly weakens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The cortical response to visual stimuli began 40\u00b15 ms after stimulus onset, measured as the earliest deflection in local field potential exceeding 3 standard deviations from baseline. Current source density analysis confirmed this earliest deflection corresponded to layer 4 of V1, consistent with prior reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 describe standard electrophysiological measurements with clear methodology and validation through current source density analysis. The consistency with prior work (Niell and Stryker, 2008) and anatomical verification strengthen the result. The measurement approach is well-established and appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C70"
+    ],
+    "result": "About 46% of neurons discriminated target from distractor over 300 ms (p<0.012, ROC analysis with Benjamini-Hochberg correction). At 40 ms after cortical response onset, only ~20% of discriminating units showed above-chance discrimination, increasing to ~50% by 80 ms (median accuracy 66%, range 58-79%) and reaching 74% accuracy by 300 ms. During the initial 80 ms, discriminating units fired only 25\u00b14% of their total spikes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 and C70 present ROC analysis results with appropriate statistical corrections for multiple comparisons. The temporal progression of discrimination ability is well-characterized across the neural population. The data support the conclusion that discrimination information emerges rapidly in the first 80 ms, though the analysis relies on post-hoc classification of 'discriminating units' which could introduce selection bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C97"
+    ],
+    "result": "Discriminating units preferring the target showed peak responses to orientations >90\u00b0 (109\u00b18\u00b0) during passive viewing, while those preferring the distractor peaked at <45\u00b0 (30\u00b120\u00b0). The difference in spike number during passive viewing correlated with discrimination ability during the task (R\u00b2=0.35), indicating that orientation tuning and trial-to-trial variability determine discrimination capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 and C97 link passive tuning properties to task performance through correlation analysis. The R\u00b2=0.35 indicates moderate correlation, suggesting orientation tuning explains some but not all variance in discrimination ability. The relationship is logical and supported by data, though the correlation is modest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C82"
+    ],
+    "result": "When V1 was silenced 44\u00b16 ms after cortical response onset, performance was near chance (54\u00b15%). Delaying silencing to 80 ms sharply increased accuracy to 76\u00b17%, and by 300 ms animals performed at control levels (92\u00b15% vs 94\u00b12% no LED). This demonstrates the minimal duration of V1 activity for above-chance discrimination lies between 40-80 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 and C82 present the core optogenetic silencing experiment with clear temporal resolution. The sharp transition in performance between 44 and 80 ms provides strong evidence for a critical time window. Multiple animals (n=8) and appropriate controls strengthen the conclusion. The LED onset jitter (4 ms s.d.) is acceptable for the temporal resolution claimed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C83",
+      "C101"
+    ],
+    "result": "To validate the 40-80 ms time window as threshold duration, mice were trained on a harder discrimination task (15\u00b0 vs 45\u00b0 difference). Silencing V1 at 80 ms reduced performance significantly more for the 15\u00b0 task compared to the 45\u00b0 task (p<0.05, n=3 mice), confirming that performance at 80 ms is sensitive to task difficulty as predicted for a threshold duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69, C83, and C101 provide critical validation that the 80 ms window represents a threshold rather than an arbitrary timepoint. The prediction-testing approach strengthens the interpretation. However, the sample size is small (n=3) and only one harder discrimination level was tested, limiting generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C76",
+      "C84"
+    ],
+    "result": "During the 80 ms critical window, discriminating units fired 0.6\u00b10.1 action potentials for their preferred stimulus and 0.22\u00b10.06 for non-preferred. In 80% of trials, units fired zero or one spike, and only 11% of trials had two spikes. The spike count distribution matched Poisson statistics (R\u00b2=97\u00b15%). Thus, most discriminating units fire at most one action potential during the threshold time window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72, C76, and C84 quantify single-unit activity during the critical window with clear statistics. The Poisson fit validates the spike count distributions. The conclusion that most neurons fire \u22641 spike is directly supported by the data. This is a key finding linking the behavioral threshold to minimal neural activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The median time to first action potential was 70\u00b110 ms for preferred stimuli and 80\u00b120 ms for non-preferred stimuli. The mean latency difference between first spikes for preferred vs non-preferred stimuli was 12\u00b16 ms (p=0.03, t-test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 characterize first spike timing with appropriate statistics. The significant but modest latency difference (12 ms) suggests timing contributes to discrimination. The analysis is straightforward and well-supported, though the functional significance of this small difference could be questioned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "ROC analysis using only the first action potential from each trial showed that ~33% of units could discriminate by 300 ms (compared to 46% using all spikes), and 54% of these units discriminated above chance at 80 ms. This demonstrates that the first action potential substantially contributes to discrimination ability within the initial 80 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 use first-spike-only ROC analysis to isolate the contribution of initial spikes. The reduction from 46% to 33% discriminating units indicates first spikes carry substantial but not complete information. The analysis appropriately addresses the paper's central question about first spike sufficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C102",
+      "C103"
+    ],
+    "result": "Pooling analysis showed that ~5 discriminating neurons (or ~20 total neurons) could explain behavioral accuracy during the initial 80 ms. An independent observer pooling ~100 neurons could discriminate within 30 ms. Since mice perform at chance with only 40 ms of V1 activity, downstream areas require longer integration times than an ideal observer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C102-C103 use pooling analysis to estimate neural population requirements. The discrepancy between ideal observer (30 ms) and behavioral threshold (40-80 ms) is interesting but the pooling analysis has limitations: neurons were pooled across experiments, potentially underestimating correlated noise. The conclusion about downstream integration is logical but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C27",
+      "C28",
+      "C29",
+      "C80",
+      "C87",
+      "C88",
+      "C130"
+    ],
+    "result": "The threshold duration of V1 activity for perceptual discrimination is 40-80 ms, during which the vast majority of discriminating neurons fire one or no spikes (<16% fire >2 spikes). This establishes that the first visually evoked spikes in V1 are sufficient to enable perceptual discrimination, demonstrating that mice can discriminate visual stimuli when most V1 neurons are prevented from firing more than their first action potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7, C27-C29, C80, C87-C88, and C130 represent the paper's main conclusion, integrating behavioral optogenetic silencing with electrophysiology. The convergence of evidence from multiple approaches (silencing timing, spike counts, first-spike analysis) strongly supports this conclusion. This is the central finding that most neurons need fire only once for discrimination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Extending the time window beyond 80 ms increases behavioral performance, ideal observer discrimination accuracy, and the fraction of discriminating neurons. Longer windows allow more neurons to fire their first spike and enable second and third spikes to contribute to discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 describe how performance improves with longer V1 activity duration. The data from Figures 3, 4, and 6 support these observations. This contextualizes the 40-80 ms threshold as sufficient but not optimal, which is important for interpreting the main finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C13"
+    ],
+    "result": "Prior work has hypothesized that brief time windows of activity in each cortical area may be sufficient for perceptual decisions, but direct measurements of these time windows have been lacking due to technical limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C8-C9, and C13 establish the background and motivation for the study. These are accurate characterizations of the field based on cited literature (Fabre-Thorpe et al., 1998) and identify a genuine gap in knowledge that the current work addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Technical challenges in measuring minimal cortical activity duration include demonstrating necessity of a brain area (activity may carry information without being required) and controlling response duration (brief stimuli trigger prolonged responses). Visual masking approaches have limitations: they add rather than remove activity, affect the entire visual system, and cannot disambiguate suppression from mask-generated activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C21 accurately describe methodological challenges in the field with appropriate citations. The critique of visual masking is fair and well-supported by cited work. This justifies the optogenetic approach used in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Optogenetic approaches in mice enable selective, rapid, and complete silencing of specific brain areas at arbitrary delays after stimulus presentation. Unlike visual masking, optogenetic silencing prevents activity from exiting the silenced area rather than adding activity, allowing precise control of visually evoked activity duration during discrimination tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 describe the optogenetic method with appropriate citations to prior work. The advantages over visual masking are clearly stated and accurate. This establishes the methodological foundation for the study's main experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C90",
+      "C96"
+    ],
+    "result": "Prior work shows that stimulus detection can be reported with single spikes from cortical stimulation, but discrimination has only been reported with repetitive stimulation. Similar findings about essential roles of first spikes have been reported in olfactory systems. The 40-80 ms time window is consistent with observations in somatosensory cortex during detection tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86, C90, and C96 accurately cite relevant prior work (Histed and Maunsell 2014; Romo et al. 1998; Resulaj and Rinberg 2015; Wilson et al. 2017; Sachidhanandam et al. 2013). These comparisons appropriately contextualize the current findings within the broader literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Mouse visual cortical neurons have broad orientation tuning (30-40\u00b0 half-width at half-max). Given trial-to-trial variability, narrower orientation differences between stimuli may require more spikes per neuron or more neurons, potentially requiring V1 activity longer than 80 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 make logical inferences about task difficulty based on known properties of mouse V1. This prediction is tested and confirmed in the harder discrimination experiment (Claims C67-C69), validating the reasoning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Downstream areas may integrate spikes over longer periods than strictly necessary due to noise, unrelated changes, or needing to reconfigure population activity before integrating stimulus information. Future work identifying downstream areas and recording from them during V1 silencing will be needed to investigate these possibilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C106 are speculative explanations for why behavioral thresholds exceed ideal observer thresholds. While the speculation is reasonable and cites relevant work, these are untested hypotheses. The authors appropriately acknowledge this requires future experiments, but the claims remain uncertain without additional data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Visual cortex is not necessary for all visually guided behaviors in rodents; subcortical areas can support innate behaviors or learned detection tasks. Some mice showed biased stimulus positioning during V1 silencing, though the mechanism (subcortical areas or other strategies) remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 accurately characterize prior work on subcortical visual processing with appropriate citations. The observation about positioning bias is noted but not fully explained, which is appropriately acknowledged. This contextualizes the specificity of V1's role in discrimination vs detection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "V1 is required for discrimination (consistent with recent work), and the absence of recovery after permanent ablation contrasts with motor cortex lesions where behavior recovers within days. This pattern, combined with chance-level performance during pre-stimulus silencing and near-complete recovery with 80 ms of activity, suggests V1 plays an instructive rather than merely permissive role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117 build an argument for V1's instructive role through comparison with motor cortex studies. The logic is sound and supported by the lesion data, though the distinction between instructive and permissive roles could be debated. The authors appropriately acknowledge this interpretation while providing supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Sufficiency of sensory cortex for perceptual decisions has been demonstrated in somatosensory and taste systems, and controlled perturbations affect visual decisions predictably. Artificially recapitulating cortical activity patterns through direct stimulation will eventually provide definitive answers about V1's instructive role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 accurately cite relevant prior work and propose future experiments. The suggestion about artificial recapitulation is reasonable speculation about how to definitively test the instructive vs permissive question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The findings may not generalize to visual masking, where neural mechanisms are poorly understood. The current study addresses the simpler question of minimal activity duration for a single stimulus. Key differences from masking include: optogenetics silences rather than adds activity, is area-specific, and can silence after most neurons fire \u22641 spike (whereas masking stimuli elicit multiple spikes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C127 appropriately acknowledge limitations in generalizing to visual masking while clearly distinguishing the current approach. The contrasts with masking studies are accurate and well-cited. This demonstrates appropriate scientific caution about the scope of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Determining lower temporal limits of cortical activity reveals minimal neuronal output enabling decisions and defines the time downstream areas need to extract sufficient information. The relationship between this time window and the time window for an outside observer to extract information is unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 describe the conceptual framework and open questions addressed by the study. These are logical inferences about what can be learned from measuring minimal activity duration. The acknowledgment of uncertainty about the relationship to ideal observer time windows is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C131"
+    ],
+    "result": "The study provides direct evidence for minimal V1 processing time for perceptual decisions and characterizes neural activity during this period. This validates the hypothesis that rapid human visual discrimination could be accomplished with individual neurons firing zero or one action potential in each brain area. Future work will identify which downstream areas read out these first essential V1 spikes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C131 summarize the study's contributions and place them in the context of hypotheses about rapid visual processing. The connection to human vision is appropriately tentative. The identification of future directions is reasonable.",
+    "result_type": "MAJOR"
+  }
+]

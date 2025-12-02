@@ -1,0 +1,413 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The study generated WGBS data from 10 non-diabetic islet samples (mean coverage 13X) and 450k array data from 32 samples. Methylation levels were highly correlated across donors (WGBS rho=0.71, 450k rho=0.98), and the two methods showed high correlation at overlapping sites (rho=0.89).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 provide consistent quantitative data on sample sizes, coverage, and correlation metrics with appropriate statistical measures (Spearman's rho). The high correlations justify pooling samples for subsequent analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C31"
+    ],
+    "result": "The 450k methylation array interrogates only ~2% of genome-wide CpG sites, disproportionately targeting hypomethylated promoter regions while poorly covering enhancer states (~2.9% of strong enhancers), with significant differences in methylation distributions compared to WGBS across chromatin states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 demonstrate systematic bias in 450k array coverage through quantitative comparisons with WGBS, supported by statistical tests (KS test D=0.40, p<2.2\u00d710\u207b\u00b9\u2076). The data clearly establish the array's limitations for interrogating regulatory regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "WGBS captures 99% median PPA per locus for T2D GWAS variants, while the 450k array captures only 16% median PPA, and the upgraded 850k array would capture ~39%. At the DGKB locus, 450k captures <1% vs 99% for WGBS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 provide quantitative evidence with specific examples demonstrating WGBS superiority for GWAS variant coverage. The statistical comparison (KS-test p<2.2\u00d710\u207b\u00b9\u2076) and locus-specific example strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The study identified 37.1k LMRs and 13.6k UMRs from WGBS data. LMRs showed significant enrichment for enhancer states (69.2% overlap, log2FE=2.2-2.9) and UMRs for active promoters (90.8% overlap, log2FE=3.9), with both enriched for eQTLs and TFBS (Bonferroni p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 present consistent enrichment data with appropriate statistical corrections (Bonferroni) and effect sizes. The overlap percentages and fold-enrichments support the conclusion that LMRs/UMRs correspond to functional regulatory regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Previously identified T2D-associated dDMRs show limited overlap with functional regulatory regions (2.2% with LMRs, 2.4% with UMRs) and only modest enrichment (log2FE=0.4-1.0) for islet regulatory annotations, suggesting most dDMRs do not directly mediate genetic T2D risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 provide quantitative overlap data and enrichment metrics showing weak association between dDMRs and functional elements. The inference that most dDMRs are unlikely to mediate genetic risk is logically supported by the modest enrichments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "ATAC-seq identified 141k open chromatin regions showing 78% overlap with published data. These regions showed substantial overlap with LMRs (53% of LMRs, log2FE=3.8) and UMRs (98% of UMRs, log2FE=3.4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 provide consistent quantitative data on ATAC-seq peak identification and overlap with methylation-defined regions. The high overlap with published data validates the approach, and enrichment statistics support functional relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Integration of WGBS, ATAC-seq, and ChIP-seq data using chromHMM generated 15 chromatin states, identifying two strong enhancer subclasses (32k 'open', 110k 'closed') and three weak enhancer subclasses (38k 'open', 78k 'lowly-methylated', 206k 'closed'). Most (55%) 'open' enhancers were distinct from previously described 'stretch' enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 describe a systematic chromatin state analysis with clear quantitative results. The identification of enhancer subclasses based on multiple epigenomic marks is methodologically sound, and comparison with prior annotations validates novelty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "FGWAS analysis showed significant T2D enrichment limited to four enhancer states in single-feature analysis, with open strong enhancers showing highest enrichment (joint log2FE=4.1, CI=3.3-4.8) compared to closed strong enhancers (log2FE=2.4, CI=0.5-3.3). Open chromatin predominantly drove the enrichment signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C68 present consistent FGWAS enrichment results with confidence intervals. The differential enrichment between open and closed enhancers is statistically supported, and the conclusion about open chromatin's predominant role is backed by comparative analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "LMRs showed significant enrichment for T2D association (log2FE=3.2, CI=2.3-3.9), while UMRs, PMDs, and dDMRs showed no significant enrichment. Nested model analysis confirmed open chromatin as the main driver with LMRs contributing independently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 provide quantitative enrichment data with confidence intervals clearly distinguishing significant from non-significant associations. The nested model approach appropriately tests the independent contributions of different features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "FGWAS analysis for fasting glucose corroborated T2D findings, showing significant enrichment in strong enhancers with open chromatin and hypomethylation, with open chromatin primarily responsible for enhanced enrichment despite reduced statistical power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 demonstrate consistency across related traits. The acknowledgment of reduced power due to fewer FG GWAS loci is appropriate, yet the concordant findings strengthen the overall conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "FGWAS fine-mapping identified 52 genome-wide significant segments (49 known T2D loci). The augmented chromatin state model reduced median credible set size from 23 to 17 SNPs and increased median top variant PPA from 0.31 to 0.39, with open chromatin predominantly driving the improvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C86 demonstrate improved fine-mapping resolution through integration of epigenomic data. The quantitative improvements in credible set size and PPA are clearly documented, and the attribution to open chromatin is supported by comparative analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "At 11 of 15 insulin secretion-associated loci, islet 'open strong enhancer' states captured >60% of PPA (median 92%). In contrast, at insulin resistance loci, most PPA (median 64%) was attributable to non-islet enhancer states, demonstrating tissue-specific utility of islet annotations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 show clear differential enrichment patterns between physiologically distinct loci. The quantitative data support the conclusion that islet regulatory annotations are particularly useful for insulin secretion-related loci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Of 54 prioritized variants (PPA\u226510% in enriched states), 20 had sufficient data for allelic imbalance testing. Three variants showed significant allelic imbalance (FDR<0.05): rs11257655 (CDC123/CAMK1D), rs10842991 (KLHDC5), and rs11708067 (ADCY5), all overlapping open enhancer regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 describe a systematic approach to variant prioritization and testing. The identification of three significant variants with appropriate FDR correction and their consistent overlap with open enhancers supports functional relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "At CDC123/CAMK1D, rs11257655 accounts for 95% of reweighted PPA, shows allelic imbalance with the risk allele increasing chromatin accessibility, is in high LD (r\u00b2=0.82) with the CAMK1D eQTL lead variant, and has been experimentally shown to affect CAMK1D expression and FOXA1/FOXA2 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 integrate multiple lines of evidence (FGWAS, allelic imbalance, eQTL, experimental data from citations) converging on rs11257655 as causal. The high PPA and consistent functional data strongly support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "At KLHDC5, genetic fine-mapping alone could not prioritize among 23 high-LD variants. Epigenomic reweighting and allelic imbalance testing identified rs10842991 (reweighted PPA=13%) as likely causal, overlapping a PAX6 binding motif in an islet-specific enhancer, with the risk allele predicted to enhance PAX6 binding and increase KLHDC5 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C107 demonstrate how epigenomic data resolves ambiguity from genetic data alone. The integration of allelic imbalance, motif analysis, tissue-specificity, and eQTL data provides strong convergent evidence for rs10842991.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "At ADCY5, epigenomic reweighting prioritized rs11708067 (PPA=92%) from multiple high-LD variants. The risk allele shows decreased chromatin accessibility (p=1.2\u00d710\u207b\u2076), associates with reduced ADCY5 expression and increased methylation, and Capture-C confirmed physical contact between the enhancer and ADCY5 promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C113 integrate FGWAS, allelic imbalance, eQTL/mQTL, and 3D chromatin interaction data. The Capture-C validation of enhancer-promoter contact with appropriate statistical testing (FDR correction) strongly supports rs11708067 as causal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Integration of open chromatin and DNA methylation with ChIP-seq enhances regulatory annotation resolution, defining enhancer subsets with markedly different impacts on T2D risk. DNA accessibility predominates over hypomethylation, with T2D risk primarily in LMRs rather than UMRs, dDMRs, or PMDs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 synthesize findings from multiple analyses showing consistent patterns. The conclusions are well-supported by the enrichment data and comparative analyses throughout the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Only a small minority of previously identified T2D-associated dDMRs overlap functional islet regulatory regions, and dDMRs as a whole show no significant enrichment for T2D association signals, suggesting most dDMR signal involves stochastic effects or secondary consequences of diabetes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 are supported by the overlap and enrichment analyses (C47-C51, C71). The inference about stochastic effects is reasonable given the lack of enrichment, though the authors appropriately note they cannot exclude all causal contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "The FGWAS approach is limited by its assumption of a single causal variant per region, which may not hold for all loci with multiple independent signals or multiple small-effect variants on a single risk haplotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 appropriately acknowledge methodological limitations. This is a known constraint of FGWAS and the authors correctly identify scenarios where the assumption may be violated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "Despite using substantially larger sample numbers than previous studies, power to detect allelic imbalance was restricted to common variants with relatively large effects due to limited islet sample numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 appropriately acknowledges study limitations. With 17 ATAC-seq samples, power is indeed limited for detecting small effects or rare variants, as evidenced by only 20 of 54 prioritized variants having sufficient data for testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C125"
+    ],
+    "result": "The genomic data was generated only from non-diabetic donor islets, limiting the ability to assess epigenomic changes in diabetic states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C125 accurately describes a study limitation. While this design is appropriate for identifying genetic risk mechanisms, it precludes assessment of disease-state epigenomic changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Human genetic studies emphasize pancreatic islet dysfunction's dominant contribution to T2D. Recent GWAS identified numerous T2D loci, mostly affecting insulin secretion and beta-cell function, with most signals mapping to non-coding genome and disproportionately to islet regulatory elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C11 provide appropriate context supported by multiple citations. These establish the scientific rationale for the study's focus on islet epigenomics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Prior work showed DNA methylation and open chromatin data can uncover disease biology, but existing islet methylation studies used limited arrays or focused on dDMRs rather than GWAS integration. Open chromatin studies had small sample sizes, and islet annotations were largely absent from major projects like GTEx and ENCODE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 accurately characterize prior work limitations with appropriate citations, establishing the gap this study addresses. The biological fact about islet composition (C16) justifies the need for islet-specific studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The study provides unprecedented detail on islet methylation and chromatin accessibility, generating a refined regulatory map with improved T2D signal enrichment. The integrative analysis enables comprehensive assessment of regulatory impacts at loci like CDC123 and ADCY5, with findings supported by recent independent studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C114-C118 summarize the study's contributions. The characterization as 'unprecedented detail' is justified by the comprehensive WGBS and larger ATAC-seq sample sizes compared to prior work, and independent validation (C117) strengthens conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "T2D and fasting glucose GWAS signal enrichment was concentrated in islet enhancer subsets with open chromatin and hypomethylation (open chromatin predominant). At CDC123, ADCY5, and KLHDC5, combining fine-mapping with chromatin state maps and allelic imbalance pinpointed likely causal variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 accurately summarize the main findings. These are well-supported by the detailed analyses in the results section and represent the study's key contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C30",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Methylation levels are highly correlated across short genomic distances (0.1-2 kb). Hypomethylation indicates regulatory function, with LMRs (10-50% methylation, <30 CpGs) denoting enhancers and UMRs (>30 CpGs) representing promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C38-C40 cite established principles from prior literature that provide the conceptual framework for interpreting methylation patterns. These are appropriately used as background knowledge.",
+    "result_type": "MINOR"
+  }
+]

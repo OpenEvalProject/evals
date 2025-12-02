@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Comparative genomic analysis reveals that bHLH-PAS proteins are present across all animal groups and in the single-celled eukaryote Capsaspora owczarzaki, but absent in choanoflagellates. Sponges and ctenophores lack true one-to-one HIF\u03b1 orthologs, and phylogenetic analysis suggests this reflects primary absence rather than secondary loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C26 are supported by phylogenetic analysis (Figure 2) and comparative genomics data (Figure 1a,b). The tree topology clearly positions sponge and ctenophore sequences as sister to all HIF-SIM-NPAS proteins, supporting the interpretation of primary absence. The methodology appears sound with appropriate phylogenetic methods (RAxML, bootstrap analysis).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Analysis of the hydroxylation motif L[D/E]x[L/R]AP[F/Y]I critical for HIF\u03b1 regulation shows variation across animal clades but complete absence in sponges. A similar motif (LAMRAPYI) was found only in one ctenophore (Euplokamis dunlapae) but not in eight other ctenophores examined, and the surrounding sequence does not align well with known ODD domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C38 are well-supported by sequence analysis (Figure 3). The authors appropriately caution about proline-rich regions causing alignment artifacts and note that LAP/RAP motifs can occur by chance. The negative finding in 25 of 26 sponge datasets and 8 of 9 ctenophore datasets is compelling, though reliance on transcriptomes (rather than complete genomes) for some species is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Key HIF pathway components VHL and EGL9/PHD are absent in sponges and ctenophores. FIH/HIF1AN homologs were found in sponges but this protein has other targets and may serve functions unrelated to oxygen metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 are supported by comparative genomics and phylogenetic analysis (Figure 1b, Figure 2 supplements 1-3). The absence of VHL and EGL9/PHD in sponges and ctenophores, combined with their presence in other animals, strongly supports the conclusion that these taxa lack the canonical HIF pathway. The caveat about FIH having other targets (C44) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Transcriptome analysis of Tethya wilhelma exposed to low oxygen (0.25-2% AS) for 4 days revealed only 128 differentially expressed genes (out of 37,000), none with predicted functions in metabolism or stress. This contrasts sharply with HIF-mediated responses in placozoans and cnidarians.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 are supported by RNA-seq data with appropriate statistical correction (Benjamini-Hochberg, p<0.01). The minimal transcriptional response (128/37,000 genes, ~0.3%) with no metabolic/stress genes is striking and contrasts with cited responses in other animals. However, the comparison relies on different oxygen levels and exposure times across studies, which could affect interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Exposure to complete anoxia for 1 hour induced a much stronger transcriptional response (5,981 differentially expressed genes) including some metabolic genes, suggesting stress. Cryptochrome was strongly upregulated, and all six bHLH-PAS proteins showed some upregulation, though the regulatory mechanisms remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C63 are supported by RNA-seq data showing a dramatic difference between hypoxia (128 DEGs) and anoxia (5,981 DEGs). The identification of metabolic genes and cryptochrome upregulation is data-driven. However, the authors appropriately acknowledge limitations (C60, C61) - the regulatory mechanisms are unknown and survival duration under anoxia was not tested. The distinction between hypoxia tolerance and anoxia stress is important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Tethya wilhelma contraction behavior was unaffected by oxygen levels between 4-100% AS but ceased at \u22641.86% AS. Despite cessation of full-body contractions, transcriptomes showed no significant differences from controls (p=0.06), and local sub-contractions resumed at 0.25% AS, suggesting viability under these conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C72 are supported by behavioral observations, oxygen uptake measurements (Figure 4), and statistical analysis of transcriptomes (Figure 5a, Adonis test). The GLMM analysis with repeated measures is appropriate. The p-value of 0.06 (C69) is marginally non-significant, which the authors correctly interpret as no significant difference. The inference that sponges remain viable (C72) is reasonable given the combined behavioral and transcriptional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C93",
+      "C94",
+      "C127"
+    ],
+    "result": "The HIF pathway evolved only once in animals, after the divergence of sponges and ctenophores from the lineage leading to Bilateria + Cnidaria + Placozoa. Therefore, the last common ancestor of animals lacked the HIF pathway, contradicting previous assumptions that HIF is a universal metazoan trait.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C74, C93, C94, and C127 represent the central evolutionary conclusion, supported by the combined genomic, phylogenetic, and experimental evidence. The phylogenetic distribution of HIF components (Figure 6) clearly shows acquisition after divergence of both sponges and ctenophores, making this conclusion independent of the sponge-vs-ctenophore-first debate. This is a well-supported major finding that revises understanding of animal evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Sponges and ctenophores likely detect oxygen through alternative mechanisms such as allosteric regulation of heme proteins, O2-sensitive ion channels, and mitochondrial responses. Hydrogen sulfide may serve as an indirect oxygen sensor, with enzymes in the sulfide-removal pathway conserved across non-bilaterian groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 are supported by comparative genomics (Figure 1 supplement 1) showing conservation of sulfide metabolism enzymes, combined with established biochemical knowledge (citations to Chandel and Schumacker 2000, Powell and Somero 1986, Cooper and Brown 2008). The proposal is logical and well-grounded, though direct experimental evidence for these mechanisms in sponges is not provided in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The bHLH-PAS domain combination is found only in metazoans and Capsaspora owczarzaki, predating animal origins. PAS domains can bind small molecules, and bHLH-PAS proteins may be indirectly affected by redox state through ligands like flavins, potentially affecting dimerization and transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 are supported by comparative genomics and structural knowledge (citation to Wu et al. 2016). The presence in C. owczarzaki clearly demonstrates pre-animal origin. However, C87 is speculative about redox effects on dimerization - this is presented as a hypothesis rather than demonstrated fact, which the authors appropriately signal with \"conceivably.\"",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The ctenophore Euplokamis dunlapae has a bHLH-PAS protein with an ODD-like motif, but homologs in other ctenophores lack this motif. The function is unlikely to be HIF\u03b1-like since EGL9 and VHL are absent from ctenophores. Additional investigation is needed to resolve oxygen regulation in ctenophores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C91 identify an interesting anomaly but appropriately conclude uncertainty. The presence of the motif in only 1 of 9 ctenophores (C30-C31), its phylogenetic position (C88), poor alignment with known ODD domains (C32), and absence of binding partners (C90) all suggest this is not a functional HIF\u03b1 ortholog. However, the authors correctly note (C91) that more data, especially a complete E. dunlapae genome, is needed for definitive conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Both sponges and ctenophores inhabit low-oxygen environments in nature (3-8 \u03bcM O2), with some sponges enduring seasonal anoxia. Ctenophores are abundant in oxygen minimum zones. Cnidarians, which possess HIF, have similar distributions, demonstrating that adaptation to low-oxygen is not dependent on HIF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C109 are well-supported by multiple field studies (citations to Mosch et al. 2012, Levin 2003, Bell and Barnes 2000, Reiswig and Miller 1998, Purcell et al. 2001, Parris et al. 2014, Beatteay 2012, Thuesen et al. 2005). The comparison with cnidarians (C108-C109) effectively demonstrates that HIF is not required for low-oxygen adaptation. This ecological context strengthens the evolutionary interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Placozoans appear sensitive to low oxygen (dying after 5 hr at 10 \u03bcM O2) despite having the HIF pathway, occupying shallow coastal waters, and feeding at trophic levels predicted to be supported in low-oxygen environments. This sensitivity is difficult to explain given their body plan and trophic style.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C116 are supported by citations (Loenarz et al. 2011, Eitel et al. 2013, Fenchel and Finlay 1995, Mills and Canfield 2017) and logical comparison with sponges. The paradox is genuine - placozoans have HIF but are oxygen-sensitive, while sponges lack HIF but are oxygen-tolerant. This observation challenges simple correlations between HIF presence and low-oxygen tolerance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "All metazoans outside sponges and ctenophores have the HIF pathway. Oxygen-dependent transcriptional control has evolved convergently in multiple eukaryotic lineages (fungi, Dictyostelium, plants, animals) using different protein components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C122 are supported by the current study's data combined with literature (Lee et al. 2009, van der Wel et al. 2005, Licausi et al. 2011). The convergent evolution argument is compelling given that different protein components are used across lineages (C121). This contextualizes the animal HIF pathway within broader eukaryotic evolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C128",
+      "C129"
+    ],
+    "result": "The ancestral absence of HIF suggests that early metazoans and the metazoan LCA did not regulate transcription in response to oxygen and could have functioned under environmental oxygen as low as 0.25% atmospheric saturation. This has implications for understanding animal origins in low-oxygen Neoproterozoic oceans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C123-C126, C128-C129 integrate the molecular findings with geological context. The inference that the metazoan LCA lacked HIF-mediated transcriptional oxygen sensing (C123, C126) follows logically from the phylogenetic distribution. The extrapolation to 0.25% AS tolerance (C125, C129) is based on the T. wilhelma experiments (C128) but assumes this represents ancestral capacity. This is reasonable but involves some phylogenetic inference beyond direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C95"
+    ],
+    "result": "Phylogenetic analyses place either sponges or ctenophores as sister to other animals, with Placozoa sister to Cnidaria + Bilateria. Molecular clock estimates suggest non-bilaterian phyla emerged rapidly between 850-820 Ma, independent of ctenophore phylogenetic position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92 and C95 accurately summarize the state of animal phylogeny debates and are supported by appropriate citations (Dohrmann and W\u00f6rheide 2017). These claims provide essential context for interpreting the HIF distribution but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The HIF pathway is a key oxygen-sensing mechanism in previously examined animal lineages, consisting of HIF\u03b1/HIF\u03b2 transcription factors regulated by oxygen-dependent hydroxylation and degradation. Prior to this study, HIF had not been evaluated in sponges and ctenophores, leaving unclear whether it extends to all animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C16 establish the background and motivation for the study through appropriate citations (Loenarz et al. 2011, Semenza 2007, Bruick and McKnight 2001, Min et al. 2002, Kaelin and Ratcliffe 2008, Wang et al. 2014, Mills et al. 2014, Mentel et al. 2014). These are accurate representations of prior knowledge and clearly identify the gap this study addresses.",
+    "result_type": "MINOR"
+  }
+]

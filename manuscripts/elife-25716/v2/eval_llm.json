@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C6",
+      "C57",
+      "C58",
+      "C59",
+      "C67",
+      "C69",
+      "C70",
+      "C73",
+      "C74",
+      "C127"
+    ],
+    "result": "Collagen induces phosphorylation in trans between DDR1 dimers. Co-expression of signalling-incompetent DDR1 mutants (receiver) with functional DDR1 (donor) results in collagen-induced phosphorylation of receiver DDR1 on both juxtamembrane (Y513) and activation loop tyrosines. This phosphorylation requires donor kinase activity but not receiver kinase activity, and can be elicited by different collagen types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C5, C67, C69, C70, C73, and C74 provide direct experimental evidence from co-expression studies showing trans-phosphorylation. The use of covalently dimerized constructs (C73, C74) definitively demonstrates that phosphorylation occurs between dimers rather than within dimers. Multiple independent experimental approaches (different mutants, different ligands) converge on the same conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C71",
+      "C72"
+    ],
+    "result": "Enforced covalent DDR1 dimerization through cysteine substitution at position T416 does not affect receptor function. The mature forms of cysteine-substituted DDR1 mutants are efficiently dimerized and retain collagen-induced activation capability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C71 state that covalent dimerization does not affect function, supported by citation to previous work. Claim C72 provides experimental evidence showing efficient dimerization of the constructs. The functional competence is demonstrated throughout the manuscript by showing that these constructs can be phosphorylated in response to collagen.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C61",
+      "C75",
+      "C76",
+      "C77",
+      "C137"
+    ],
+    "result": "The receiver ectodomain is not required for phosphorylation in trans. Deletion of the entire DDR1 ectodomain does not impair the ability of donor DDR1 to promote collagen-induced phosphorylation of the ectodomain deletion mutant, and co-clustering with catalytically active DDR1 is independent of ectodomain contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C75, and C137 are directly supported by experimental data shown in Figure 3. The ectodomain deletion constructs (C76, C77) are phosphorylated when co-expressed with functional donor DDR1, demonstrating that ectodomain contacts are not required for trans-phosphorylation. The preferential phosphorylation of dimers over monomers (C77) further supports the specificity of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C60",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Phosphorylation in trans requires specific transmembrane domain interactions. Mutations in the leucine-based sequence motif of the DDR1 transmembrane domain abolish phosphorylation between dimers despite proper surface expression and the presence of cysteine-linked dimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C84, and C85 are supported by experimental data in Figure 4 showing that TM1 mutations prevent trans-phosphorylation. Claims C82 and C83 demonstrate that the mutations do not affect trafficking, ruling out this confounding factor. The requirement for specific TM domain interactions is consistent with previous work (C81, C139) and reinforces the key role of the TM domain in signaling (C138, C140).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C89",
+      "C90",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C130",
+      "C132",
+      "C133"
+    ],
+    "result": "Phosphorylation in trans does not require kinase activity of the receiver. Kinase-dead receiver constructs are efficiently phosphorylated on both juxtamembrane (Y513) and activation loop tyrosines when co-expressed with functional donor DDR1, indicating that the receiver dimer functions as a substrate for the donor kinase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92, C93, and C94 provide direct experimental evidence from Figure 6 showing phosphorylation of kinase-dead receivers. Claims C89 and C132 demonstrate activation loop phosphorylation independent of receiver kinase activity. The conclusion that receivers function as substrates (C96, C131, C133) is a reasonable inference from these data, though the mechanism by which inactive kinases serve as substrates could be explored further.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Catalytic activity of the donor kinase is necessary for phosphorylation between dimers. Neither kinase-dead DDR1a nor a truncated DDR1 construct lacking the kinase domain can act as donor kinases to induce phosphorylation of receiver constructs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97 and C98 are directly supported by experimental data in Figure 7. The negative results with kinase-dead and kinase-deleted donors provide essential controls demonstrating that donor kinase activity is required. This complements the findings that receiver kinase activity is not required (previous result).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C154"
+    ],
+    "result": "Phosphorylation between DDR dimers does not require identical cytoplasmic regions. DDR1a (lacking the Y513-containing segment) and DDR2 can both serve as donor kinases to phosphorylate DDR1b receiver constructs, indicating no strict requirement for a particular juxtamembrane sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86 and C87 are supported by experimental data in Figure 5 showing that both DDR1a and DDR2 can phosphorylate DDR1b receivers. The inference that identical cytoplasmic regions are not required (C88, C154) is well-supported by these data. This finding has important functional implications for signaling between different DDR isoforms and family members.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Phosphorylation between dimers is independent of the specific activation mode of the donor kinase. A multimeric IgM antibody (mAb-513) can induce phosphorylation of ectodomain-deleted receiver constructs when co-expressed with functional donor DDR1, similar to collagen-induced activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99, C101, C102, and C103 are supported by experimental data in Figure 8. The antibody-induced phosphorylation provides an important control showing that the trans-phosphorylation mechanism is not specific to collagen activation. The dependence on transmembrane domain interactions (C103) is consistent with collagen-induced phosphorylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C146",
+      "C147"
+    ],
+    "result": "Ligand multivalency is not required for signaling between dimers. A short collagen-mimetic peptide that cannot form higher-order aggregates efficiently induces phosphorylation between DDR1 dimers, suggesting that DDR1 clustering is receptor-mediated rather than achieved through ligand cross-linking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109 and C110 are supported by experimental data in Figure 9. The use of monomeric peptides (C107, C108) provides strong evidence that ligand multivalency is not required. The inference that clustering is receptor-mediated (C147) is reasonable, though direct visualization of clustering with peptide ligands would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C126"
+    ],
+    "result": "Collagen binding results in redistribution of DDR1 into a more compact structure on the cell surface. This ligand-induced clustering is prevented by a function-blocking antibody and represents a key step in DDR1 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111, C112, and C126 are supported by immunofluorescence data in Figure 10. The prevention of clustering by a function-blocking antibody (C113, C114) provides strong evidence that clustering is essential for activation (C115). However, the resolution of widefield microscopy limits the ability to definitively characterize the nature and size of the clusters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "Phosphorylated DDR1 is strictly limited to collagen-ligand contact areas. Collagen-coated beads efficiently recruit and phosphorylate DDR1, but unlike Eph receptors, phosphorylated DDR1 remains confined to the bead contact areas even after prolonged incubation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118 and C119 are supported by bead recruitment assay data in Figure 11A. The spatial restriction of phosphorylation to ligand contact zones distinguishes DDR1 from Eph receptors and supports a model of localized signaling clusters. The comparison to Eph receptors (C117) provides important context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Mutant DDR1 lacking its ectodomain is recruited into DDR1 signaling clusters at ligand contact sites. When co-expressed with functional DDR1, the ectodomain-deleted construct is efficiently recruited to collagen-coated beads and phosphorylated specifically at the bead contact area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121, C122, and C123 are supported by bead recruitment data in Figure 11B. The recruitment of ectodomain-deleted DDR1 to ligand contact zones (C9, C124) provides strong evidence for lateral association of DDR1 dimers. This experiment elegantly demonstrates that receptors without ligand-binding capability can be recruited into signaling clusters through lateral interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C56",
+      "C125",
+      "C136"
+    ],
+    "result": "DDR1 is activated by a unique mechanism in which collagen binding promotes lateral association of DDR1 dimers and phosphorylation between dimers. This mechanism is distinct from all other RTK families and involves activation loop phosphorylation that may contribute to release of kinase autoinhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the main conclusion of the study (C10, C125, C136), supported by the collective evidence from all experimental results. The mechanism is well-supported by multiple independent lines of evidence including co-expression studies, covalent dimerization, ectodomain deletion, TM domain mutations, and microscopy. The hypothesis about release of autoinhibition (C136) is reasonable but speculative and would require structural or additional biochemical studies to confirm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Under standard transfection conditions, DDR1 expression levels in HEK293 cells are similar to those on the breast cancer cell line T47D but approximately three times higher than on primary keratinocytes. Ligand-induced dimer phosphorylation is detected at a range of expression levels including those comparable to keratinocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78, C79, and C80 are supported by flow cytometry and Western blot data in Figure 3\u2014figure supplements 1 and 2. These controls address the important concern that overexpression might create artificial aggregates. The detection of trans-phosphorylation at physiological expression levels strengthens the biological relevance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C66"
+    ],
+    "result": "The DDR1b-Y513F mutant is phosphorylated on the activation loop upon collagen stimulation but cannot be phosphorylated at tyrosine-513. The ligand-binding defective mutant DDR1b-W53A does not respond to collagen with increased autophosphorylation when expressed alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C63, and C66 are supported by experimental data in Figure 1B and 1C. These characterizations of the donor and receiver constructs are essential controls for the co-expression experiments. The Y513F mutant serves as an effective donor that allows specific detection of receiver phosphorylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C141",
+      "C142"
+    ],
+    "result": "Weakened transmembrane domain contacts may affect the conformation of the cytoplasmic region so that it no longer functions as a substrate for donor DDR1 kinase, or transmembrane domain contacts may be required for DDR1 clustering through direct receptor-receptor contacts or another membrane protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C141 and C142 are explicitly speculative (\"It is possible that...\", \"may also be required...\"). While these are reasonable hypotheses to explain the requirement for TM domain interactions, they are not directly tested in the manuscript. Additional experiments would be needed to distinguish between these mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C155",
+      "C156"
+    ],
+    "result": "Catalytically incompetent DDR1 isoforms could contribute to signaling when co-expressed with catalytically competent DDR1 isoforms or DDR2, with the signaling outcome likely dependent on the balance between catalytically active and inactive receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C155 and C156 are speculative functional implications of the findings. While the co-expression data support the possibility that inactive isoforms could be phosphorylated by active ones, the actual functional consequences and the balance between active and inactive receptors in physiological contexts are not tested. This represents an interesting hypothesis for future work.",
+    "result_type": "MINOR"
+  }
+]

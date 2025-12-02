@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "RSFC pattern transitions in awake rats are nonrandom and highly reproducible. Split-group analysis showed reproducibility of 0.86 without and 0.77 with regression of spatial similarities (C29, C30). Individual-level reproducibility was significant with mean correlation of 0.57 (C33). These transitions follow specific temporal sequences not dictated by pattern similarity (C31, C32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C28-C34 provide converging evidence from group-level (split-group r=0.77-0.86) and individual-level (r=0.57) analyses demonstrating nonrandom RSFC transitions. The finding remains robust after controlling for spatial similarity between patterns, supporting that transitions follow specific sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "RSFC pattern transitions in rats are independent of head motion. Reproducibility between high- and low-motion subgroups (0.786) was similar to random splits (C35). Motion levels were consistent between frames in and not in transitions (p=0.44, C37). Correlation between motion and transition occurrence was minimal (r=-0.034, C38). Results were robust across motion censoring thresholds (C40, C41).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 provide multiple independent lines of evidence ruling out motion artifacts: subgroup comparisons, frame-level motion analysis, correlation analysis, and threshold sensitivity testing. The convergence of these approaches strongly supports that transitions are motion-independent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C67"
+    ],
+    "result": "RSFC pattern transitions in rats occur both within and across brain systems. Within-system transitions were more frequent, shown by denser near-diagonal elements in the transition matrix (C42). However, significant cross-system transitions were observed including striatal-thalamic, striatal-somatosensory, striatal-prefrontal, striatal-hippocampal, hippocampal-amygdala, and amygdala-motor transitions (C43).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by visual inspection of the thresholded transition matrix (Figure 4) showing both within-system (diagonal) and cross-system (off-diagonal) transitions. C67 provides supporting citation for why within-system transitions are frequent. The pattern is clearly demonstrated in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The rat RSFC pattern transition network exhibits prominent community structure. The network had 242 edges with 15.5% connection density (C44). Nine modules were identified using Louvain algorithm (C45), indicating RSFC patterns within modules have higher transition probability than across modules (C46).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 describe graph-theoretic properties of the transition network shown in Figure 5. The quantitative metrics (242 edges, 9 modules) and interpretation of community structure are directly supported by the graph analysis. The methodology (Louvain algorithm) is appropriate and well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Six hub RSFC patterns were identified in rats including retrosplenial cortex, dorsal superior/inferior colliculi, hippocampus, anterior ventral thalamus, striatum, and motor cortex networks (C47). Most hub transitions were bidirectional (C48). These hubs play pivotal roles in transitions involving multiple brain systems (C49).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by hub analysis shown in Figures 6-7. The identification of six hubs with score \u22653 using multiple graph metrics (node strength, betweenness centrality, path length, clustering coefficient) is methodologically sound. Figure 7 demonstrates their central role in multi-system transitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "RSFC pattern transitions in humans are nonrandom and highly reproducible. Split-group reproducibility was 0.9955 without and 0.9954 with regression of pattern similarities (C50, C51). Individual-level mean correlation was 0.60 (C52). These findings are consistent with rat data, suggesting nonrandom transitions are conserved across species (C53).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 demonstrate extremely high reproducibility in human data (r>0.995) using 812 HCP subjects. The consistency with rat findings (C53) is supported by similar analytical approaches yielding comparable patterns. The large sample size and high reproducibility provide strong evidence for cross-species conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Human RSFC pattern transitions show both within-system and cross-system transitions. Transitions tended to occur within the same brain system (C54), but considerable across-system transitions were also evident (C55).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by the human transition matrix shown in Figure 9, which displays similar patterns to rat data with denser near-diagonal (within-system) but also substantial off-diagonal (cross-system) elements. The visual evidence clearly supports both claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Human RSFC pattern transitions contain multiple hubs across brain systems including default-mode (5 nodes), cingulo-opercular (8 nodes), dorsal attention (2 nodes), ventral attention (4 nodes), fronto-parietal (4 nodes), parietal memory (1 node), and visual (5 nodes) networks (C56). These hubs were predominantly integrative networks (C57) that are central in human RSFC pattern transitions (C58).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by hub analysis shown in Figure 10. The identification of 29 hub nodes (hub score \u22653) across multiple systems is methodologically sound. The observation that most hubs are integrative networks (C57) is an important functional characterization supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C60"
+    ],
+    "result": "Spontaneous brain activity is nonrandom temporally (C8), and this feature is conserved between rodents and humans (C9). The study demonstrates that spontaneous brain activity is not only nonrandom spatially but also temporally (C60).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C60 represent the primary conclusions of the study, supported by the convergence of findings in both rat and human data showing nonrandom, reproducible RSFC pattern transitions. The cross-species validation strengthens the conclusion that temporal nonrandomness is a conserved mammalian feature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "A library of 40 characteristic RSFC patterns was obtained using seed-based analysis with parcels from a whole-brain parcellation (C25). The parcellation maximized within-parcel and minimized cross-parcel similarity (C62). BOLD co-activation patterns of single frames represent their RSFC patterns (C26), validated by high correlation (0.91) between averaged matched frames and reference patterns (C27). 89.9% of frames met matching criteria (C63), indicating reference patterns captured most spontaneous activity (C64).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27, C62-C64 describe the methodological foundation validated by Figure 2 showing high spatial correlation (0.91) between averaged frames and reference patterns. The 89.9% frame matching rate and parcellation properties provide strong support for the approach. However, C26 relies on prior work (Liu & Duyn 2013) as a key assumption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Split-group reproducibility was somewhat higher in humans than rats (C81), likely due to much larger sample size in humans (406/406 vs 20/21 per subgroup) averaging out individual variability (C82).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 make a reasonable comparative observation (human r\u22480.995 vs rat r\u22480.86) with a plausible explanation based on sample size differences. The interpretation is supported by similar individual-level reproducibility (human 0.60 vs rat 0.57), suggesting group-level differences reflect averaging effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The study used 41 Long-Evans rats (C83), with 31 rats' data reanalyzed from prior work (C84). Rats were acclimated for 7 days (C85) and fully awake during imaging (C86). Mean breathing rate was 86.2\u00b115.5 Hz, within normal range (C87), indicating good adaptation (C88). Preprocessing removed 1.75% of volumes for high motion (C89) and first 10 volumes per run (C90). Human data came from 812 HCP subjects (C91).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C91 provide methodological details that are factual statements about experimental procedures and data sources. The breathing rate measurement (C87) provides physiological validation of the awake imaging approach. These details are adequately documented and support the study's rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Single rsfMRI frames could exhibit features of more than one RSFC pattern (C92). Matching a frame to its most similar reference pattern is only an approximation (C93).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 acknowledge a methodological limitation that frames may contain mixed patterns. This is an honest assessment of the approach's constraints. The authors appropriately note this as a limitation while demonstrating the method's validity through high correlation (0.91) between matched frames and reference patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The introduction establishes background knowledge: spontaneous brain activity provides RSFC measures (C1), RSFC is non-stationary (C2), prior studies focused on spatial characteristics (C3), but temporal relationships remain elusive (C4). Multiple citations support the importance of spontaneous activity (C10-C11), RSFC methodology (C12-C13), dynamic RSFC findings (C15-C20), and animal model validity (C21-C22). The gap in knowledge is whether transitions are random or organized (C24).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C10-C24 establish the study's context and rationale through extensive citations to prior work. These background claims are well-supported by the literature and accurately characterize the field's state of knowledge and the gap the study addresses. The citations appear appropriate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "This study for the first time characterized the temporal organization between successive brain connectivity configurations (C59).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C59 asserts novelty ('for the first time') but this is difficult to verify without comprehensive literature review. While the study makes important contributions, the claim of absolute priority should be evaluated cautiously. The study does provide novel insights into transition organization, but whether it is truly 'first' requires independent verification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The discussion contextualizes findings with prior work on neuronal activity patterns (C65-C66), within-system connectivity (C67), anatomical projections (C68), bidirectional processing (C69), subcortical relationships (C70), hippocampal roles (C71-C74), thalamic functions (C75-C78), striatal projections (C79), and human network dynamics (C80).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C80 provide extensive discussion linking the study's findings to prior literature. These claims are appropriately supported by citations and help interpret the results in broader context. However, C69 is explicitly speculative ('we speculate'), which is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Pivotal RSFC patterns in transitions were identified using graph theory analysis (C6). Spontaneous brain activity is nonrandom spatially (C7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is supported by the hub analysis (Figures 6-7) identifying pivotal patterns using graph metrics. Claim C7 about spatial nonrandomness is supported by prior knowledge and the study's use of characteristic RSFC patterns, though it is not a primary finding of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "The rat brain has approximately 6000 brain voxels at the spatial resolution of 0.5 \u00d7 0.5 \u00d7 1 mm\u00b3 (C61).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is a straightforward calculation based on the imaging parameters and rat brain size. This is verifiable and appears accurate for the stated resolution.",
+    "result_type": "MINOR"
+  }
+]

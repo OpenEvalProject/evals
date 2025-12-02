@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "IRS-1 physically interacts with the AP2 clathrin adaptor complex through its \u03bc2 subunit via three Yxx\u03a6 motifs (containing Tyr608, Tyr628, and Tyr658) in the central region of IRS-1 (residues 543-865). This interaction is specific to IRS-1 (not IRS-2) and occurs independently of IGF-I stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by multiple complementary experimental approaches: yeast two-hybrid screening (C1), co-immunoprecipitation in multiple cell types (C2, C3), domain mapping with truncation mutants (C4), site-directed mutagenesis (C5, C6), and crystal structure determination (C7). The structural data confirms that IRS-1 Yxx\u03a6 motifs bind \u03bc2 in the same pockets used by canonical AP2 cargo proteins (C7, C8), providing mechanistic insight. The specificity for IRS-1 over IRS-2 is clearly demonstrated (C2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The IRS-1-AP2 interaction is maintained during IGF-I stimulation, with non-phosphorylated IRS-1 preferentially binding to AP2. The data suggest low stoichiometry of IRS-1 tyrosine phosphorylation after IGF-I stimulation, with a pool of non-phosphorylated IRS-1 available for AP2 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 are supported by co-immunoprecipitation experiments showing maintained IRS-1-AP2 interaction after IGF-I treatment (C9) and pull-down assays demonstrating that tyrosine-phosphorylated IRS-1 is not efficiently pulled down by \u03bc2 (C10). The inference about low phosphorylation stoichiometry (C11) and existence of a non-phosphorylated pool (C12) is reasonable given that AP2 cannot bind phosphorylated Yxx\u03a6 motifs and the interaction persists after stimulation. However, direct quantification of phosphorylation stoichiometry would strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Long-term IGF-I stimulation (3-12 hours) causes significant reduction of phosphorylated IGF-IR at the cell surface in L6 cells, while short-term stimulation (5-60 minutes) does not affect surface IGF-IR levels. IGF-IR ubiquitination peaks at 60 minutes after IGF-I stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by surface biotinylation assays showing time-dependent changes in surface phospho-IGF-IR (C13, C14) and ubiquitination assays (C15). The temporal distinction between short-term and long-term effects is clearly demonstrated with appropriate controls. The data establish the kinetics of IGF-IR down-regulation, which is essential context for understanding IRS-1's regulatory role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Overexpression of wild-type IRS-1, but not the 3YA mutant (lacking AP2-binding motifs) or IRS-2, sustains phospho-IGF-IR at the cell surface after prolonged IGF-I stimulation. This surface retention function is independent of IRS-1 tyrosine phosphorylation, as demonstrated by the \u0394PTB mutant that cannot be phosphorylated but still promotes IGF-IR surface retention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 are strongly supported by surface biotinylation experiments comparing multiple IRS-1 constructs (wild-type, 3YA, \u0394PTB) and IRS-2. The specificity for IRS-1 over IRS-2 (C17) and the requirement for AP2-binding motifs (C18) are clearly demonstrated. The independence from tyrosine phosphorylation (C20, C21) is convincingly shown using the \u0394PTB mutant, which separates the endocytic regulatory function from the canonical signaling function. This represents a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Long-term IGF-I-induced reduction of phospho-IGF-IR requires clathrin-mediated endocytosis via AP2 (but not AP1). IGF-I triggers IGF-IR endocytosis from the cell surface, with recycling contributing to apparent surface maintenance. Multiple transport mechanisms (endocytosis, recycling, and biosynthesis) regulate surface IGF-IR levels, while PTP1B plays a negligible role in phospho-IGF-IR down-regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 are well-supported by siRNA knockdown experiments (C22, C23), pharmacological inhibition of recycling with primaquine (C24, C25) and protein synthesis with cycloheximide (C26), and expression of a PTP1B substrate-trapping mutant (C28). The specificity for AP2 over AP1 (C23) is important for establishing the mechanism. The inference about multiple transport mechanisms (C27) is reasonable given the experimental evidence, though more direct measurements of each process would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "IGF-IR undergoes both basal (AP2-independent) and ligand-activated (AP2-dependent) endocytosis. Internalized IGF-IR is detected within 15-60 minutes, but phospho-IGF-IR remains predominantly at the cell surface within 1 hour of stimulation. At 6 hours post-stimulation, phospho-IGF-IR accumulates in lysosomes in an AP2-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 are supported by multiple complementary approaches: surface biotinylation with MesNa stripping (C29), immunofluorescence with a double-tagged IGF-IR construct (C30, C32), AP2 knockdown experiments (C31, C34), and LysoTracker colocalization (C33). The distinction between basal and ligand-activated endocytosis (C31) and the temporal progression from surface to lysosomes (C32, C33) are clearly demonstrated. The inference that ligand-activated IGF-IR undergoes AP2-dependent endocytosis (C35) is well-supported by the AP2 knockdown preventing lysosomal targeting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Live-cell TIRF microscopy reveals that IGF-IR gradually colocalizes with AP2-positive structures 30 minutes after IGF-I stimulation, with IGF-IR clustering and accumulating in pre-existing AP2 spots. The rate of IGF-IR recruitment to AP2 is significantly slower than EGFR, which rapidly redistributes to AP2 spots after EGF stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are well-supported by live-cell TIRF microscopy with quantitative colocalization analysis. The comparison with EGFR (C38, C39) provides important context showing that IGF-IR has distinct endocytic kinetics compared to a canonical rapidly-internalized RTK. The temporal resolution and quantification strengthen these observations. This establishes that IGF-IR has inherently slower recruitment to clathrin-coated structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Wild-type IRS-1, but not the 3YA mutant, slows the reduction of surface IGF-IR after ligand stimulation (measured with primaquine to block recycling) and significantly inhibits targeting of phospho-IGF-IR to AP2-positive spots. This demonstrates that IRS-1 binding to AP2 inhibits ligand-induced association of IGF-IR with clathrin-coated structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are strongly supported by surface biotinylation assays with primaquine treatment (C40, C41) and TIRF microscopy with quantitative colocalization analysis (C42). The specificity for wild-type IRS-1 over the 3YA mutant clearly demonstrates the requirement for AP2 binding. The inference that IRS-1 inhibits IGF-IR recruitment to CCPs (C43) is well-supported by the direct visualization data. This provides mechanistic insight into how IRS-1 delays IGF-IR internalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "IRS-1 overexpression does not affect transferrin uptake but partially reduces integrin \u03b21 internalization and modestly delays EGFR endocytosis. IRS-1 does not change the number of AP2 spots but colocalizes with AP2 at submembranous actin fibers. These findings suggest IRS-1 can influence endocytosis of some receptors other than IGF-IR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are supported by appropriate assays for each cargo: fluorescent transferrin uptake (C44), antibody uptake for integrin \u03b21 (C45), and EGFR-GFP localization (C46). The selectivity (affecting integrin and EGFR but not transferrin) is interesting and suggests specificity in IRS-1's effects. The observation about AP2 spot number (C48) and IRS-1 localization to actin fibers (C49) provides additional mechanistic context. However, the effects on non-IGF-IR cargos are modest and the mechanism is not fully elucidated, making this a supporting rather than central finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "IRS-1 knockdown accelerates the reduction of phospho-IGF-IR (~2-fold faster) and causes earlier accumulation of phospho-IGF-IR in lysosomes. These effects, along with the partial reduction in total IGF-IR levels, are rescued by combined AP2 knockdown, demonstrating that IRS-1 depletion accelerates IGF-IR internalization in an AP2-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 are well-supported by siRNA knockdown experiments with quantification (C50), immunofluorescence with LysoTracker (C51), and rescue experiments with combined IRS-1/AP2 knockdown (C52, C53). The rescue by AP2 knockdown (C52, C53) is particularly strong evidence that the effects are mediated through the AP2-dependent endocytic pathway. This loss-of-function approach complements the gain-of-function experiments with IRS-1 overexpression, providing convergent evidence for IRS-1's role in regulating IGF-IR internalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "IRS-1 is degraded 3-6 hours after IGF-I stimulation in an mTORC1-dependent manner. Pharmacological inhibition of mTORC1 prevents both IRS-1 degradation and the reduction of phospho-IGF-IR, blocking IGF-IR clustering and colocalization with AP2. However, in IRS-1-depleted cells, phospho-IGF-IR reduction occurs even with mTORC1 inhibition, indicating that mTORC1-mediated IRS-1 degradation is required for IGF-IR internalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 are well-supported by immunoblotting showing time-dependent IRS-1 degradation (C56), pharmacological inhibition with rapamycin and Torin1 (C57, C58), TIRF microscopy (C59), and epistasis experiments combining mTORC1 inhibition with IRS-1 knockdown (C60). The epistasis experiment (C60) is particularly strong evidence that IRS-1 acts downstream of mTORC1 in regulating IGF-IR internalization. This establishes an important regulatory mechanism linking mTORC1 feedback to IGF-IR endocytosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "IRS-1 is critical for sustained activation of Akt and FoxO phosphorylation in response to IGF-I. Wild-type IRS-1 overexpression (but not the 3YA mutant or IRS-2) significantly prolongs Akt and FoxO1 phosphorylation. Conversely, IRS-1 depletion causes transient rather than sustained Akt-FoxO signaling, which is rescued by re-expression of IRS-1. This demonstrates that IRS-1 sustains Akt-FoxO signaling through its role in prolonging IGF-IR surface retention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C71 are well-supported by immunoblotting experiments with multiple phosphorylation sites on Akt and FoxO proteins, comparing wild-type and mutant IRS-1, IRS-2, and IRS-1 knockdown with rescue. The temporal dynamics are clearly demonstrated, showing sustained vs. transient patterns. The specificity for IRS-1 over IRS-2 (C66) and the requirement for AP2-binding motifs (C65) link this signaling phenotype to the endocytic regulatory function. The compensatory increase in IRS-2 during short-term stimulation (C68) is a reasonable explanation for the minimal effect at early timepoints, though this is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Long-term IGF-I stimulation significantly reduces mRNA expression of FoxO-regulated atrophy-related genes (Atrogin1, Murf1, Smart, Musa1, Lc3b, Gabarapl1) in L6 myotubes. This IGF-I-induced suppression is markedly attenuated in IRS-1-depleted cells, which also show reduced myotube diameter. This indicates that IRS-1 depletion leads to insufficient suppression of FoxO target genes despite transient Akt activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by quantitative RT-PCR for multiple FoxO target genes (C72, C73) and myotube diameter measurements (C74). The attenuation of gene suppression in IRS-1-depleted cells (C73) provides functional validation that the altered signaling dynamics have biological consequences. The myotube diameter phenotype (C74) further supports physiological relevance. The inference about insufficient suppression despite transient Akt activation (C75) is well-supported by the signaling data in the previous result group.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "IRS-1 plays a dual role as both a signaling adaptor and an endocytic regulator of IGF-IR. IRS-1 binds AP2 to prevent IGF-IR recruitment into clathrin-coated structures, enhancing surface retention of activated IGF-IR. This function is critical for sustained PI3K-Akt pathway activation and is based on IRS-1's interaction with AP2 (not AP1). The mechanism likely involves IRS-1 competing with IGF-IR for AP2 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C84 represent integrative conclusions drawn from the experimental results. The dual role of IRS-1 (C79) is well-supported by the demonstration of two independent functions. The mechanism involving AP2 binding (C77, C80, C81) is supported by the mutant analysis and specificity for AP2 over AP1 (C82). The competition model (C84) is reasonable speculation based on the data, though direct competition assays would strengthen this claim. The link to sustained Akt signaling (C78) is supported by the signaling experiments. Overall, these integrative claims are well-supported by the body of experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The ability of IRS-1 to promote IGF-IR surface retention is separable from its tyrosine phosphorylation-mediated signaling function. The IRS-1 \u0394PTB mutant, which cannot be phosphorylated, promotes IGF-IR surface retention as effectively as wild-type IRS-1. This demonstrates that non-phosphorylated IRS-1 acts as an inhibitory factor for IGF-IR internalization via AP2 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 are strongly supported by experiments with the \u0394PTB mutant showing equivalent surface retention effects as wild-type IRS-1 (C86) despite inability to be phosphorylated. This separation of functions is a key mechanistic insight demonstrating that the endocytic regulatory role is independent of the canonical signaling role. The biochemical data showing non-phosphorylated IRS-1 binding to AP2 (from earlier claims) further supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Ectopic IRS-1 expression affects endocytosis of some receptors other than IGF-IR (integrin \u03b21 and EGFR, but not transferrin receptor). IRS-1 may locally regulate specific cargo recruitment to clathrin-coated pits through association with AP2 at the actin cytoskeleton.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C89 is supported by experimental data showing effects on integrin and EGFR endocytosis. However, claim C90 is speculative, based on the observation of IRS-1 localization to actin fibers but lacking direct mechanistic evidence for local regulation. The selectivity of effects (some cargos but not others) is interesting but not fully explained. The mechanism by which IRS-1 affects non-IGF-IR cargos and whether this occurs through direct or indirect mechanisms remains unclear. More experiments would be needed to establish this mechanism definitively.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The ability of IRS-1 to control IGF-IR internalization is negatively regulated by mTORC1. mTORC1 feedback signaling leads to IRS-1 degradation, which functions as a brake release to trigger IGF-IR internalization. The time required for mTORC1-mediated IRS-1 degradation determines the initiation timing of IGF-IR internalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 are supported by the mTORC1 inhibition experiments showing that preventing IRS-1 degradation blocks IGF-IR internalization (C91, C92). The epistasis experiments with IRS-1 knockdown demonstrate that IRS-1 acts downstream of mTORC1. The inference about timing (C93) is reasonable based on the temporal data, though more precise kinetic measurements would strengthen this claim. This establishes an important regulatory circuit linking mTORC1 feedback to IGF-IR endocytosis control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Clathrin-mediated endocytosis is required for long-term attenuation of activated IGF-IR. Stable IRS-1 expression inhibits ligand-dependent IGF-IR internalization, leading to sustained IGF-IR and Akt signaling. This effect requires both IRS-1's interaction with AP2 and its ability to engage PI3K. The ability to interact with AP2, enhance IGF-IR surface retention, and prolong Akt signaling is specific to IRS-1 (not IRS-2), making IRS-1 a pivotal modulator of IGF signaling duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 represent integrative conclusions well-supported by the experimental data. The requirement for CME (C94) is demonstrated by knockdown experiments. The dual requirement for AP2 binding and PI3K engagement (C96) is supported by experiments with the 3YA and \u0394PTB mutants. The specificity for IRS-1 over IRS-2 (C97) is clearly demonstrated throughout the study. The conclusion that IRS-1 modulates signaling duration while both IRS proteins can mediate signaling activation (C98) is a key conceptual advance supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Prolonged Akt signaling elicited by IRS-1-mediated IGF-IR surface retention affects FoxO-targeting gene expression. IRS-1-mediated delay of IGF-IR internalization is likely a common mechanism for long-term IGF actions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is well-supported by the gene expression and myotube diameter data showing functional consequences of altered signaling dynamics. Claim C100 is reasonable speculation based on the established importance of long-term IGF actions in growth and metabolism, though it extends beyond the direct experimental evidence. The link between signaling duration and gene expression provides important functional validation of the mechanism, but broader testing in other cell types and physiological contexts would strengthen the generality of this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "This study establishes a new role for IRS-1 as an endocytic regulator of IGF-IR that ensures sustained IGF bioactivity, independent of its classic role as a signaling adaptor. IRS-1 modulates how long ligand-activated IGF-IR remains at the cell surface by inhibiting recruitment into clathrin-coated structures. IRS-1 depletion accelerates IGF-IR endocytosis, causing a shift from sustained to transient Akt activation and augmented FoxO-mediated transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C107 represent the main conclusions of the study, which are well-supported by the comprehensive experimental evidence. The establishment of a new role for IRS-1 (C107) is justified by the demonstration of a function independent of tyrosine phosphorylation. The mechanism involving inhibition of recruitment to clathrin-coated structures (C105) is supported by multiple lines of evidence. The functional consequences on signaling dynamics and gene expression (C106) provide important validation. These conclusions appropriately synthesize the experimental findings into a coherent model.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The computational model consists of four rhythm generators (RGs) controlling each limb, coupled by commissural interneurons (CINs) mediating left-right interactions and long propriospinal neurons (LPNs) mediating homolateral and diagonal interactions. Each RG contains flexor and extensor centers with mutual inhibition, and the model incorporates specific neuronal populations (V0D, V0V, V3, CINi CINs and Shox2, LPNi, V0V, V0D LPNs) with defined connectivity patterns based on experimental data. The model receives two brainstem drives: one to flexor centers and inhibitory to V0 CINs/LPNs, and another constant drive to extensor centers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C47 describe the model architecture comprehensively, with structure shown in Figures 1-3. The model design is based on established concepts (asymmetric flexion-dominated CPG organization) and incorporates connectivity patterns consistent with experimental data from Ruder et al., 2016. The mathematical implementation is detailed in Materials and methods with specific equations and parameters provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The model reproduces speed-dependent gait transitions from walk to trot to gallop to bound with increasing brainstem drive (parameter \u03b1 from 0 to 1.05, corresponding to frequencies 2-12 Hz). The model exhibits lateral-sequence walk at 2-4 Hz, trot at 4-10.5 Hz, gallop at 9-11 Hz, and bound at 11-12 Hz. Frequency increases primarily through shortening of extension phase while flexion phase remains constant. The frequency ranges, phase differences, and step cycle compositions match experimental observations in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C66 are well-supported by simulation data shown in Figure 4, with quantitative comparisons to experimental data from Bellardita and Kiehn, 2015. The model successfully reproduces the characteristic features of each gait including phase relationships and temporal patterns. The consistency between model predictions and experimental observations across multiple gait parameters provides strong validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C114",
+      "C115"
+    ],
+    "result": "The model proposes that gait transitions are controlled by brainstem drive acting differentially on CINs and LPNs. At low drive, diagonal V0D LPNs dominate to ensure stable walk. With increasing drive, inhibition of V0 CINs/LPNs shifts the balance from alternation-promoting to synchronization-promoting pathways, causing transitions from walk to trot (when diagonal V0V LPNs become stronger than V0D) and from trot to gallop/bound (when V3/CINi overcome V0V). The trot-to-gallop transition exhibits hysteresis and resembles a subcritical pitchfork bifurcation. Diagonal V0V LPNs are critical for stable gallop, which was not present in the previous model lacking these connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C77, C114-C115 describe the mechanistic basis for gait transitions, supported by bifurcation analysis shown in Figure 5A and mathematical characterization of the dynamics. The comparison with the previous model (Danner et al., 2016) demonstrates the critical role of diagonal LPNs. The proposed mechanism is internally consistent with the model structure and produces behavior matching experimental observations including hysteresis in gait transitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C15",
+      "C16"
+    ],
+    "result": "The model reproduces experimental observations from genetically transformed mice: deletion of V0V neurons (or V2a which relays inputs to V0V) results in selective loss of trot while maintaining walk, gallop, and bound; deletion of both V0V and V0D neurons eliminates all alternating gaits, leaving only bound stable across all frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 are supported by model simulations shown in Figure 5B,D, which match experimental observations from Bellardita and Kiehn, 2015 (claims C15-C16). The model correctly predicts the specific gait deficits resulting from deletion of identified neuronal populations, providing strong validation of the proposed circuit organization and the roles of V0V and V0D neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C1",
+      "C18",
+      "C83"
+    ],
+    "result": "Deletion of cervical-to-lumbar LPNs in the model results in emergence of new stable states at medium and high drive values, causing speed-dependent disruption of left-right coordination. At low speeds, walk/trot remain stable; at medium speeds, both trot and gallop are stable with hind limbs showing disturbed coordination; at high speeds, both fore and hind limbs show coordination deficits. The disturbance is mainly caused by loss of diagonal V0V LPNs, while homolateral LPNs maintain fore-hind alternation and local V0V CINs maintain some left-right alternation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 are supported by bifurcation analysis and simulations shown in Figure 6. The model predictions match experimental observations from Ruder et al., 2016 (claims C1, C18, C83) regarding speed-dependent coordination deficits after LPN ablation. The mechanistic explanation identifying diagonal V0V LPNs as the primary source of disruption is a logical inference from comparing different deletion conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "With increased noise, the intact model shows increased variability but maintains alternation, while the model with deleted cervical-to-lumbar LPNs exhibits spontaneous transitions between stable states, with hind limbs switching between synchronization and alternation. The model reproduces the speed-dependent pattern of misaligned steps observed experimentally: coordination remains appropriate at low speeds, hind limb coordination is disturbed at medium speeds, and both fore and hind coordination is affected at high speeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 are supported by simulations with noise shown in Figure 7. The model with increased noise and LPN deletion exhibits spontaneous state transitions consistent with experimental observations from Ruder et al., 2016 (claim C93). The quantitative comparison of step alignment proportions (Figure 7C-E vs C1-E1) shows good agreement with experimental data across different speeds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C6",
+      "C111"
+    ],
+    "result": "The model demonstrates that gait transitions can occur rapidly (1-2 cycles) with changes in brainstem drive, matching experimental observations. Additionally, the model shows that inputs specifically to CINs and LPNs (independent of drive to RGs) can alter interlimb coordination and induce gait changes without significantly affecting locomotor frequency. Examples include: inhibition of V0V CINs/LPNs during trot inducing transition to bound, excitation of V0V CINs during gallop inducing transition to trot, and selective excitation of cervical V0V CINs altering fore limb coordination during gallop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100, C6, C111 are supported by simulations shown in Figure 8. The rapid gait transitions (Figure 8A-C) match experimental data from Bellardita and Kiehn, 2015 (Figure 8D-E). The demonstrations of frequency-independent gait changes through targeted inputs to CINs/LPNs (Figure 8G-I) are novel predictions from the model that are mechanistically consistent with the circuit architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The model proposes specific functional roles for different LPN populations: diagonal V0D LPNs support walk, diagonal V0V LPNs together with local V0V CINs stabilize trot, and homolateral LPNs ensure fore-hind alternation in all gaits. These CIN and diagonal LPN connections contribute to speed-dependent gait transitions from walk to trot to gallop and bound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C116-C118 summarize the main functional conclusions from the model, which are supported by the collective evidence from simulations, bifurcation analyses, and deletion studies presented throughout the Results section. The proposed roles are consistent with the model's ability to reproduce experimental observations and represent testable predictions about the specific contributions of different neuronal populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C20",
+      "C21",
+      "C105",
+      "C106",
+      "C107",
+      "C110"
+    ],
+    "result": "The authors propose that CINs and LPNs represent the main targets for supraspinal and sensory afferent signals adjusting gait. This hypothesis is based on the model prediction that gait transitions are caused by brainstem drives acting on neurons coupling the RGs, combined with experimental evidence that CINs and LPNs receive supraspinal inputs and sensory afferent inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C20, C105, C110 are hypotheses/suggestions based on model predictions and literature citations (C21, C106, C107). While the model demonstrates that inputs to CINs/LPNs can control gait, and experimental evidence confirms these neurons receive supraspinal and sensory inputs, direct experimental validation that these are the 'main targets' for gait control is lacking. The hypothesis is plausible and supported by circumstantial evidence but requires experimental testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C17",
+      "C19",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C50",
+      "C76",
+      "C95",
+      "C108",
+      "C119"
+    ],
+    "result": "The manuscript cites established knowledge about quadrupedal locomotion including: mice exhibit speed-dependent gait transitions; each limb is controlled by a separate CPG; interlimb coordination is mediated by CINs and LPNs; MLR stimulation causes speed-dependent gait changes; and anatomical/physiological properties of LPNs. These citations provide the experimental foundation and context for the computational model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C14, C17, C19, C33-C39, C50, C76, C95, C108, C119 are supported by multiple citations to established experimental literature. These represent accurate summaries of prior work that provide the biological basis for the model. The citations are appropriate and the claims accurately represent the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "The model reproduces speed-dependent gait expression in intact and genetically transformed mice (V2a, V0V, V0D deletions) and the disruption of hindlimb coordination following ablation of descending LPNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 are summary statements supported by the detailed results presented in Figures 4-7 and corresponding claims. The model successfully reproduces multiple experimental observations from Bellardita and Kiehn, 2015 and Ruder et al., 2016, providing comprehensive validation across different experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "The authors hypothesize that diagonally projecting inhibitory LPNs are of V0D type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C40 is explicitly stated as a hypothesis by the authors. While it is consistent with the known properties of V0D neurons and the model successfully incorporates this assumption, direct experimental identification of these neurons as V0D type is lacking. This represents a testable prediction from the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The model implements two brainstem drives: constant drive to extensor centers (potentially representing reticulospinal/vestibulospinal inputs and/or sensory feedback) and variable drive to flexor centers that increases locomotor frequency through rhythmic bursting and flexor-extensor alternation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 describe the model's implementation of brainstem drives. C102-C104 are directly supported by the model structure and behavior. C101 is speculative about what the extensor drive might represent physiologically, but is appropriately qualified and supported by relevant citations. The model implementation is consistent with experimental observations of MLR-driven locomotion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors note that afferent feedback influence on other limbs should be mediated by CINs and LPNs (logical inference from anatomy), that mechanical coupling can influence coordination, and that gaits involve changes in kinematics and muscle activation beyond phase relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 is a logical inference from anatomical organization (C108) and is reasonable. Claims C112-C113 are supported by citations and represent acknowledged limitations of the current model, which focuses on central interactions without biomechanics or detailed muscle activation patterns.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C8",
+      "C12",
+      "C15",
+      "C16",
+      "C69",
+      "C70"
+    ],
+    "result": "61% (31/51) of tested E. coli genes can functionally replace their essential yeast orthologs, with replaceability depending on mitochondrial localization (4/14 genes) and start codon correction (2/4 genes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C8, C12, C15, C16, C69, and C70 collectively demonstrate the main finding with clear experimental evidence. The initial 49% replaceability (C8) increased to 61% (C2, C69) after accounting for mitochondrial targeting (C12) and start codon modifications (C15). Growth curves (C9) and microscopy data (C13) provide validation. The fraction requiring modifications (C16, C70) is correctly calculated as 6/31.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Replaceability is determined at the pathway/process level rather than by sequence similarity, with the fraction of replaceable interaction partners being the most predictive feature (AUC 0.73) and a combined Random Forest classifier achieving AUC 0.79.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C17-C21, and C71-C73 are well-supported by computational analysis shown in Figure 3. The finding that sequence similarity is not highly predictive (C17, C18) while pathway-level features dominate (C19, C21) is clearly demonstrated. The AUC values are explicitly stated and the Random Forest performance (C20) provides quantitative validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C26",
+      "C28",
+      "C33",
+      "C34",
+      "C68"
+    ],
+    "result": "The heme biosynthesis pathway is a near-universally swappable pathway, with each yeast enzyme replaceable by bacterial, plant, or human orthologs, including non-orthologous functional analogs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C22, C26, C28, C33, C34, and C68 demonstrate comprehensive replaceability of the heme pathway across kingdoms. The data includes plasmid-based complementation (C26, C28), CRISPR-edited chromosomal replacements (C33, C34), and integration with literature (C68). Growth curves in Figure 4B and complementation assays in supplementary figures provide strong experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C88"
+    ],
+    "result": "Bacterialization with E. coli ferrochelatase (Ec-hemH) causes accumulation and secretion of protoporphyrin IX in yeast, creating a pink phenotype that is reduced by mitochondrial localization and eliminated by deletion of the upstream enzyme HEM14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 and C88 describe a well-characterized phenotype with multiple lines of evidence. The pink phenotype is consistent across clones (C36), identified as protoporphyrin IX by spectroscopy (C38), reduced by proper localization (C37), and eliminated by blocking its synthesis (C40, C41). The mechanistic interpretation (C88) is well-supported by the data in Figure 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C53",
+      "C54"
+    ],
+    "result": "Most Arabidopsis heme pathway genes can replace yeast orthologs, with co-expression of At-HEMA1 and At-GSA2 required for the first step, and chloroplast localization signals being recognized as mitochondrial signals in yeast, except for At-HEME1/At-HEME2 which cannot replace Sc-HEM12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C46, C48, C49, C50, C53, and C54 demonstrate systematic testing of plant genes with clear positive and negative results. The requirement for co-expression (C45, C46), the general replaceability of paralogs (C48, C49, C50), the effect of removing chloroplast signals (C53), and the failure of At-HEME genes (C54) are all experimentally demonstrated in Figure 6 and supplements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61"
+    ],
+    "result": "All human heme biosynthesis genes can replace their yeast orthologs when properly expressed, with Hs-UROS requiring native promoter regulation to avoid toxicity and Hs-UROD requiring correction of a G303V mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 and C61 demonstrate complete humanization of the yeast heme pathway. Prior work (C55, C56) is extended by solving the Hs-UROS toxicity issue through chromosomal integration (C57) and correcting the Hs-UROD mutation (C58). The data in Figure 6 and supplements provide clear experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Four of 14 E. coli genes with mitochondrially-localized yeast orthologs could functionally replace yeast genes after adding a mitochondrial localization signal, with correct mitochondrial trafficking confirmed by microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 describe a systematic approach to addressing subcellular localization. The identification of 15 mitochondrial genes (C10), the failure of 14 without MLS (C11), the rescue of 4 with MLS (C12), and microscopy confirmation (C13) are clearly demonstrated in Figure 2 and supplements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Two E. coli genes (Ec-rcsC and Ec-tadA) with alternative start codons could replace their yeast orthologs after changing their start codons to ATG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C15 describe a straightforward experimental result. The prevalence of alternative start codons in E. coli (C14) is cited, and the successful replacement after ATG conversion (C15) is shown in Figure 2B with growth curve validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The first step of heme biosynthesis differs between yeast (single enzyme Sc-Hem1) and E. coli (two enzymes Ec-HemA and Ec-HemL), but co-expression of the two E. coli enzymes with mitochondrial localization signals successfully replaces yeast function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 describe pathway differences and successful complementation. The biochemical differences (C23, C24) and compartmentalization (C25) are well-established and cited. The experimental demonstration of complementation by co-expression (C26) is shown in Figure 4 supplement 2A.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Non-orthologous E. coli genes Ec-HemD and Ec-HemG, which carry out identical reactions to yeast Sc-Hem4 and Sc-Hem14, successfully replaced their functionally analogous yeast genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C28 demonstrate functional replaceability independent of orthology. The non-orthologous relationship (C27) is established by sequence analysis, and successful complementation (C28) is shown in Figure 4 supplement 2B, supporting the concept of functional conservation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "E. coli Ec-HemG and Ec-HemH localize to the yeast plasma membrane rather than mitochondria, can individually replace yeast genes, but concurrent replacement of both results in a viable but defective strain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 describe localization and functional consequences. The yeast mitochondrial localization (C29), E. coli membrane prediction (C30), observed plasma membrane localization in yeast (C31), and growth defect from dual replacement (C32) are demonstrated in Figure 4 supplements with microscopy and growth curves.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C63",
+      "C64"
+    ],
+    "result": "Plant chloroplast localization signals and human mitochondrial localization signals are both recognized by yeast mitochondrial localization machinery, as demonstrated by EGFP-tagged protein localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C52, C63, and C64 demonstrate cross-kingdom recognition of targeting signals. Microscopy data in Figure 6 supplements 2A and 2B clearly show mitochondrial localization of EGFP-tagged plant and human proteins, supporting the conclusions about signal recognition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "Metabolism-associated genes replace more often than informational genes (transcription, translation), supporting the complexity hypothesis for horizontal gene transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is supported by the GO category analysis in Figure 3C showing differential replaceability across biological processes. The connection to the complexity hypothesis is appropriately cited and the data pattern matches the theoretical prediction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C89"
+    ],
+    "result": "The yeast protoporphyrin IX secretion phenotype resembles human protoporphyria and might be exploited to investigate disease-causing mutations in human Hs-FECH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42 and C43 accurately describe human protoporphyria with appropriate citations. However, C89 is explicitly speculative ('might in the future be exploited') and represents a proposed future application rather than a demonstrated result. No validation experiments with disease mutations are presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C85",
+      "C86"
+    ],
+    "result": "Of 58 essential yeast genes with 1:1 E. coli orthologs, 51 provided informative assays, with appropriate controls demonstrating that yeast genes can complement their own deletions when expressed from plasmids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C85, and C86 describe the experimental design and controls. The dataset definition (C6, C7) is shown in Figure 1A, and the controls (C85, C86) are demonstrated in supplementary figures, validating the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The heme biosynthesis pathway has a complex evolutionary history involving endosymbiotic gene transfer from mitochondria and chloroplasts, with yeast and humans retaining the ancestral eukaryotic pathway while plants adopted the chloroplast system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 and C97-C100 describe evolutionary history with appropriate citations. The synthesis is illustrated in Figure 7 and integrates the experimental findings with established evolutionary knowledge. The claims are well-supported by cited literature and consistent with the replaceability data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Background context establishing that eukaryotes and prokaryotes diverged ~2 billion years ago, share hundreds of genes, and that prior studies have demonstrated functional conservation between human and yeast orthologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5, C75-C84 provide background context with appropriate citations. These are well-established facts from the literature that motivate the study. C75 represents a summary conclusion that is supported by the experimental data presented in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "Mitochondrial localization of heme biosynthesis enzymes, while needed to fully recover growth rates, is not essential for viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is supported by the observation that Ec-HemG and Ec-HemH localize to the plasma membrane (C31) yet still support viability (Figure 4 supplement 3), though with reduced growth rates that are improved by adding mitochondrial localization signals (C34).",
+    "result_type": "MINOR"
+  }
+]

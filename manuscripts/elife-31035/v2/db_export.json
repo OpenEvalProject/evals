@@ -1,0 +1,2213 @@
+{
+  "submission": {
+    "id": "35ac281e-0ae1-4e4b-8a0e-0ca840ccfe65",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:43:57.254091Z",
+    "updated_at": "2025-12-01T22:43:57.254091Z"
+  },
+  "content": [
+    {
+      "id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "submission_id": "35ac281e-0ae1-4e4b-8a0e-0ca840ccfe65",
+      "content_type": "manuscript",
+      "content_text": "# Phenotype inference in an Escherichia coli strain panel\n\n## Authors\n\n- Marco Galardini<sup>1</sup> ([ORCID: 0000-0003-2018-8242](https://orcid.org/0000-0003-2018-8242))\n- Alexandra Koumoutsi<sup>2</sup> ([ORCID: 0000-0001-8368-4193](https://orcid.org/0000-0001-8368-4193))\n- Lucia Herrera-Dominguez<sup>2</sup>\n- Juan Antonio Cordero Varela<sup>1</sup> ([ORCID: 0000-0002-7373-5433](https://orcid.org/0000-0002-7373-5433))\n- Anja Telzerow<sup>2</sup>\n- Omar Wagih<sup>1</sup>\n- Morgane Wartel<sup>2</sup>\n- Olivier Clermont<sup>3</sup>\n- Erick Denamur<sup>3</sup>\n- Athanasios Typas<sup>2</sup> \u2020\n- Pedro Beltrao<sup>1</sup> ([ORCID: 0000-0002-2724-7703](https://orcid.org/0000-0002-2724-7703)) \u2020\n\n### Affiliations\n\n1. European Molecular Biology Laboratory European Bioinformatics Institute (EMBL-EBI) Hinxton United Kingdom\n2. Genome Biology Unit European Molecular Biology Laboratory (EMBL) Heidelberg Germany\n3. INSERM, IAME, UMR1137 Paris France\n4. Universit\u00e9 Paris Diderot Paris France\n5. APHP, H\u00f4pitaux Universitaires Paris Nord Val-de-Seine Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nUnderstanding how genetic variation contributes to phenotypic differences is a fundamental question in biology. Combining high-throughput gene function assays with mechanistic models of the impact of genetic variants is a promising alternative to genome-wide association studies. Here we have assembled a large panel of 696 Escherichia coli strains, which we have genotyped and measured their phenotypic profile across 214 growth conditions. We integrated variant effect predictors to derive gene-level probabilities of loss of function for every gene across all strains. Finally, we combined these probabilities with information on conditional gene essentiality in the reference K-12 strain to compute the growth defects of each strain. Not only could we reliably predict these defects in up to 38% of tested conditions, but we could also directly identify the causal variants that were validated through complementation assays. Our work demonstrates the power of forward predictive models and the possibility of precision genetic interventions.\n\n## Introduction\n\nUnderstanding the genetic and molecular basis of phenotypic differences among individuals is a long-standing problem in biology. Genetic variants responsible for observed phenotypes are commonly discovered through statistical approaches, collectively termed Genome-Wide Association Studies (GWAS, Bush and Moore, 2012), which have dominated research in this field for the past decade. While such approaches are powerful in elucidating trait heritability and disease associations (Yang et al., 2010; Welter et al., 2014), they often fall short in pinpointing causal variants, either due to lack of power to resolve variants in linkage disequilibrium (Edwards et al., 2013) or for the dispersion of weak association signals across a large number of regions across the genome (Boyle et al., 2017). Furthermore, by definition GWAS studies are unable to assess the impact of previously unseen or rare variants, which can often have a large effect on phenotype (Bodmer and Bonilla, 2008). Therefore, the development of mechanistic models that address the impact of genetic variation on the phenotype can bypass the current bottlenecks of GWAS studies (Lehner, 2013).\n\nIn principle, phenotypes could be inferred from the genome sequence of an individual by combining molecular variant effect predictions with prior knowledge on the contribution of individual genes to a phenotype of interest. Such knowledge is now readily available by chemical genetics approaches, in which genome-wide knock-out (KO) libraries of different organisms are profiled across multiple growth conditions (Kamath et al., 2003; Dietzl et al., 2007; Hillenmeyer et al., 2008; Nichols et al., 2011; Price et al., 2016). One output of such screens are genes whose function is required for growth in a given condition (also termed \u2018conditionally essential genes\u2019). Variants negatively affecting the function of those genes are likely to be associated with individuals displaying a significant growth defect in that same condition. This approach would then effectively be a way to prioritize variants with respect to their impact on the growth on a particular condition. The impact of variants on gene function can be reliably inferred using different computational approaches (Thusberg et al., 2011; Kulshreshtha et al., 2016), which can offer mechanistic insights into how such variants impact on a protein\u2019s structure and function. As rare or previously unseen variants can also be used by this approach, there lies the possibility to deliver predictions of phenotypes at the level of the individual, with no prior model training. Combining variant effector predictors with gene conditional essentiality has been previously tested with some success in the budding yeast Saccharomyces cerevisiae, but only on a limited number of individuals and conditions (15 and 20, respectively, Jelier et al., 2011). Given the continuous increase in genome-wide gene functional studies, there is an opportunity to apply such an approach more broadly.\n\nIn contrast to eukaryotes, diversity within the same bacterial species can result in two individuals differing by as much as half of their genomic content. Escherichia coli is not only one of the most studied organisms to date (Blount, 2015), but also one of the most genetically diverse bacterial species (Lukjancenko et al., 2010; Tenaillon et al., 2010). Individuals of this species (strains), exhibit a diverse range of genetic diversity, from highly homologous regions to large differences in gene content, collectively termed \u2018pan-genome\u2019 (Medini et al., 2005). Phenotypic variability is therefore likely to arise from a combination of single nucleotide variants (SNVs) and changes in gene content. Since gene conditional essentiality has been heavily profiled for the reference E. coli strain (K-12, Nichols et al., 2011; Price et al., 2016), here we set out to systematically test the applicability of such genotype-to-phenotype predictive models for this species. We reasoned that it would also test the limits of the underlying assumption of this model, which is that the effect of the loss of function of a gene is independent of the genetic background (Dowell et al., 2010).\n\nWe therefore collected a large and diverse panel of E. coli strains (N\u00a0=\u00a0894), for which we measured growth across 214 conditions, as well as obtained the genomic sequences for the majority of the strains (N\u00a0=\u00a0696). For each gene in each sequenced strain we calculated a \u2018gene disruption score\u2019 by evaluating the impact of non-synonymous variants and gene loss. We then applied a model that combines the gene disruption scores with the prior knowledge on conditional gene essentiality to predict conditional growth defects across strains. The model yielded significant predictive power for 38% of conditions having a minimum number of strains with growth defects (at least 5% of tested strains). We independently validated a number of causal variants with complementation assays, demonstrating the feasibility of precision genetic interventions. Since our predictions did not apply equally well for all conditions, we conclude that the set of conditionally essential genes has diverged substantially across strains. Overall, we anticipate that the E. coli reference panel presented here will become a community resource to address the multiple facets of the genotype to phenotype research, ultimately enabling the development of biotechnological and personalized medical applications.\n\n## Results\n\n### The phenotypic landscape of the E. coli collection\n\nWe have assembled a large genetic reference panel of 894 E. coli strains able to capture the genetic and phenotypic diversity of the species. These are broadly divided into natural isolates (N\u00a0=\u00a0527) and strains derived from evolution experiments (N\u00a0=\u00a0367). Out of these, 321 had available genome sequences, and we obtained the genomes of additional 375, reaching a total of 696 strains. The full list of strains, including name, collection of origin and links to relevant references is provided in Supplementary file 1 and online at https://evocellnet.github.io/ecoref.\n\nTo test our capacity to develop genotype-to-phenotype predictive models we measured the fitness of this strain collection on a large variety of conditions (N\u00a0=\u00a0214). We used high-density colony arrays and measured colony size as a proxy for fitness, similar to what has been applied before for the E. coli K-12 knockout (KO) library (Nichols et al., 2011). We used the deviation of each strain\u2019s colony size from itself across all conditions and all other strains in the same condition as our final phenotypic measure (Collins et al., 2006). Thereby we obtained a list of conditions for which we know whether a tested strain has grown significantly less than the expectation (Figure 1A and Materials\u00a0and\u00a0methods). Both biological replicates (Figure 1B) and strains present in two distinct plates (Figure 1\u2014figure supplement 1) were positively correlated (Pearson\u2019s r 0.693 and 0.648, respectively), indicating that we measured phenotypes with high confidence. Clustering of conditions based on phenotypic profiles across all strains was consistent with the conditions macro-categories (e.g. stresses versus nutrient sources) and with the number of sensitive strains (Figure 1C). The correlation of phenotypic profiles also clustered drugs with same mode of action (MoA), as shown by comparing the clusters\u2019 purity against those of random clusters (Figure 1D). The full phenotypic matrix for each strain across all conditions contains 114,004 single measurements (Supplementary file 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/31035/elife-31035-fig1-v2.jpg)\n\n**Figure 1.:** coli strain collection. (A) Phenotypic screening experimental design and data analysis. (B) Phenotypic measurements replicability, as measured by pairwise comparing the S-scores of all three biological replicates. (C) Hierarchical clustering of condition correlation profiles; the threshold is defined as the furthest distance at which the minimum average Pearson\u2019s correlation inside each cluster is above 0.3. The two colored bands on top indicate the number of strains with growth defects for each condition and its category, showing consistent clustering. Gray-colored cells in the matrix represent missing values due to poor overlap of strains tested in the two conditions. (D) Clusters purity (computed for drug targets) for each hierarchical distance threshold, against that of random clusters (100 repetitions) shows that drugs with similar target tend to cluster together. (E) Pearson\u2019s correlation between phylogenetic and phenotypic distances, based on phylogenetic independent contrasts (see Materials and methods). (F) Core genome SNP tree for all strains in the collection. Grey shades in the inner ring indicate the number of conditions tested for each strain, red shades in the outer ring indicate the proportion of tested conditions in which the strain shows a significant growth defect. The black arrow indicates the reference strain.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31035/elife-31035-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013C) S-scores for each replicate are compared against each other (D) S-scores comparison between strains present in multiple 1536 plates.\n\nIf all genetic variants were to contribute to phenotypic divergence between strains we would expect to observe a strong positive correlation between those two metrics. This was not the case even when taking into account the phylogenetic dependencies between strains (r\u00a0=\u00a00.07, see Materials and methods). This finding reinforces the idea that most variants across these strains have a neutral impact on their phenotypes. Of particular interest are those strains derived from evolution experiments, such as the members of the LTEE collection (Tenaillon et al., 2016). While most strains (189 out of 266 tested) grew as expected in all tested conditions, a significant fraction (N\u00a0=\u00a077) exhibited at least one conditional growth defect phenotype. Again, the phylogenetic distance from the parental strains (REL606 and REL607) is not correlated with the proportion of growth phenotypes (Pearson\u2019s r: 0.08), even though hypermutators exhibit a slightly higher number of phenotypes (Cohen\u2019s d: 0.513). These results clearly underline that simple metrics of phylogenetic similarity are not predictive of differences in phenotype. Instead, few DNA variants are sufficient to cause clear phenotypic differences, indicating the importance of statistical or predictive strategies to prioritize those variants.\n\nIn toto, we have assembled an E. coli reference strain panel, which we have broadly phenotyped. This phenotyping resource recapitulates known biology, surveying a rich phenotypic space and providing insights into the evolution of phenotypes within the species.\n\n### Gene level predictions of variant effects\n\nAs most DNA variants are likely to be neutral in their impact on gene function, variant effect predictors are required to build phenotype predictive models for each strain. For this we derived structural models and protein alignments covering 60.2% and 94.7% of the E. coli K-12 proteome, respectively (or 50.9% and 95.9% of all protein residues) and used them to compute the impact of all possible nonsynonymous variants (see Materials and methods, available at http://mutfunc.com). The impact of multiple non-synonymous variants within a gene was then combined using a probabilistic approach (Jelier et al., 2011), into a single likelihood measure of gene disruption (here termed \u2018gene disruption score\u2019, Figure 2A and Materials and methods). We also assumed that reference genes missing completely from a strain would have a high gene disruption score.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/31035/elife-31035-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic representation of how all substitutions affecting a particular gene are combined to compute the gene disruption score. (B) Average gene disruption score across all strains for four categories of genes conserved in all strains (\u2018core genome\u2019). Conserved genes are defined as those genes found in more (or less) than 95% of the bacterial species present in the eggNOG orthology database (Huerta-Cepas et al., 2016a). Statistically significant differences (Cohen\u2019s d value\u00a0>0.3) are reported. (C) Gene-gene correlation profile of gene disruption across all strains shows clusters of potentially functionally related proteins. (D\u2013E) The gene disruption profiles as a predictor of genes function. (D) Pairwise correlation of gene disruption scores inside each annotation set (colored boxes) and inside a random set of genes of the same size (grey boxes). (E) Gene-gene correlation profile of gene disruption scores in protein complexes; shown here a subset with high disruption score correlation.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31035/elife-31035-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Correlation between phylogenetic distance from the reference strain and average disruption across all reference genes. (B) Significant reduction in correlation after correction of the disruption score (see Materials and methods). (C\u2013E) Prediction of gene functional associations using disruption score profiles. (C) ROC curve using disruption score profiles across all genes. (D\u2013E) Higher predictive power of the gene disruption profile when restricted to accessory genes, including (D) or not (E) the information about gene presence absence.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/31035/elife-31035-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic representation of the computation of the prediction score and its evaluation; for each condition the predicted score is computed using the disruption score of the conditionally essential genes. The score is then evaluated against the actual phenotypes through a Precision-Recall curve. (B) Higher predictive power for conditions with higher proportion of growth phenotypes. For each condition set, the PR-AUC value for each condition is reported, together with the median and mean value (C) Significance of the PR-AUC value reported for the condition \u2018Clindamycin 3 \u03bcg/ml\u2019, against the distribution of three randomization strategies. \u2018Shuffled strains\u2019 indicates a prediction in which the actual strains\u2019 phenotypes have been shuffled; \u2018shuffled sets\u2019 indicates a prediction where the conditionally essential genes of a different condition have been used, and \u2018random set\u2019 indicates a prediction where a random gene set has been used as conditionally essential genes. For all three randomizations we report a significant difference between the actual prediction and the distribution of the randomizations (q-values of 1E-30, 0.05 and 1E-22, respectively). See Figure 3\u2014figure supplement 2 for the other conditions. (D) Genome-wide gene associations are in agreement with the predictive score; the enrichment of conditionally essential genes in the results of the gene association analysis is significantly higher in conditions with higher PR-AUC.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31035/elife-31035-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Influence of the different predictors of the impact of mutations on each condition PR-AUC. \u2018SNPs\u2019 indicates single nucleotide variants only, \u2018Accessory genome\u2019 gene presence-absence patterns, \u2018All predictors\u2019 the combination of both, plus stop codon substitutions. (B\u2013C) Proportion of well-predicted conditions (PR-AUC\u00a0>=\u00a00.1 and Pearson\u2019s FDR-corrected p-value<=0.01) over total conditions with at least 1% and 5% sick strains. Marker\u2019s size is proportional to the $\u2212log_{10}$\u00a0of the FDR-corrected p-value. (E) Conditions with higher predictive power (measured as PR-AUC) also have an enrichment of sick strains at the top of the predicted score, as measured by the Gene Set Enrichment Analysis (GSEA); sick strains are used as \u2018gene sets\u2019. A pseudocount of 10\u22124 has been added to the GSEA p-values. (F) Prediction performance improves when using the weighting scheme to account for conservation of gene essentiality, especially for well-predicted conditions.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31035/elife-31035-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** \u2018Shuffled strains\u2019 indicates a prediction in which the actual strains\u2019 phenotypes has been shuffled; \u2018shuffled sets\u2019 indicates a prediction where the conditionally essential genes of a different condition have been used, and \u2018random set\u2019 indicates a prediction where a random gene set has been used as conditionally essential genes. Conditions are ordered by the significance of the difference between the actual prediction and the \u2018Random genes\u2019 bootstrap. The proportion of conditions where the actual prediction is significantly different than the randomizations (q-value\u00a0<0.05) are 52%, 21% and 33.3% for the \u2018shuffled strains\u2019, \u2018shuffled sets\u2019 and \u2018random genes\u2019 randomizations, respectively.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/31035/elife-31035-fig4-v2.jpg)\n\n**Figure 4.:** (A) Precision-Recall curve for the two example conditions. Dashed lines represent the average Precision-Recall curve for the same predictions carried out using 10\u2019000 random gene sets of the same size of the actual conditionally essential genes for both conditions. Vertical lines represent the mean absolute deviation for the precision across the randomizations. The two randomization sets are significantly different than the actual predictions (q-values of 1E-33 and 0.02, respectively). (B) Receiver operating characteristic curve for the two example conditions. Dashed lines represent the same randomizations as in (A). (C\u2013D) For each condition, the gene disruption score for the conditionally essential gene across all strains is reported, together with the resulting predicted conditional score and actual binary phenotypes (pale red: healthy and red: growth defect). Strains are sorted according to the predicted conditional score, while genes are sorted according to their weight in the predictive model; only the top 10 conditionally essential genes are shown. The inset reports the disruption score, predicted score and actual phenotypes for the top 25 strains.\n\nThe gene disruption score can be considered as a relevant measure of the impact of mutations on gene function. Essential and phylogenetically conserved genes show lower average gene disruption scores across all strains, as compared to less conserved or random ones (Figure 2B). We also observed that genes that are predicted to lose their function together across all strains (Figure 2C) tend to be functionally associated (Figure 2D and E), in particular for genes belonging to the accessory genome (i.e. genes not present in all strains, Figure 2\u2014figure supplement 1). These observations suggest that the gene disruption score is a biologically relevant measure of the impact of mutations at the gene level and that it could be used for growth phenotype predictions.\n\n### Predictive models of conditional growth defects\n\nWe combined the gene disruption scores for each gene in each strain with the genes\u2019 conditional essentiality to obtain conditional growth predictive models. For each condition, we evaluated the impact of those variants affecting the genes that are essential for that same condition in the reference K-12 strain. We selected 148 conditions in which at least one strain displayed a growth defect and the E. coli K-12 KO collection had also been tested for (Nichols et al., 2011 and Herrera-Dominguez et al., unpublished). For those, we computed a conditional score that would rank the strains according to their predicted growth level in the tested condition, from normal growth to the most defective growth phenotype (see Materials and methods). Briefly, if a strain has many detrimental variants in genes important for growth in a given condition, our predictive score will rank that strain as being highly sensitive in that condition. We then compared this predicted ranking with the experimental fitness measurements. The Area Under the Curve of a Precision-Recall curve (PR-AUC) was used for assessing our predictive power (Figure 3A and Materials and methods). We note that this predictive score is condition specific and no parameter fitting or training was used.\n\nOur predictive score is able to discriminate strains with normal growth from ones with growth defects with significantly higher power than randomized scores. Both the predicted impact of single nucleotide variants and gene presence/absence patterns contribute to the predictive power of the model (Figure 3\u2014figure supplement 1). The predictive power increases for conditions in which more strains displayed growth defects (Figure 3B). We verified the significance of our predictions through the comparison against three randomization strategies: shuffled strains, shuffled gene sets and random gene sets (see Materials and methods). For all three strategies we observed a clear dependency between the PR-AUC value and the significance of our predictions (Figure 3C and Figure 3\u2014figure supplement 2). Since some conditions are similar and share a significant fraction of their conditionally essential genes, we sometimes observe a skew in the performance of the \u2018shuffled set\u2019 randomizations (Figure 3C). We correctly predicted 20% of conditions that have at least 1% of poorly growing strains, with higher predictive capacity for conditions with larger number of strains with growth defects, reaching 38% for all conditions with more than 5% of poorly growing strains (Figure 3\u2014figure supplement 1). Weighting the contribution of the conditionally essential genes to each condition also improved the predictive power, particularly for well-predicted conditions (Figure 3\u2014figure supplement 1, Materials and methods).\n\nTo independently validate our predictive models, we carried out a GWAS analysis based on genes presence/absence and the growth phenotypes. Consistent with the validity of our models, we found that for conditions we predict with higher confidence (PR-AUC\u00a0>=\u00a00.1), there is a significant overlap between the K-12 genes predicted to be essential in the condition and the genes associated with poor growth by the association analysis (Figure 3D, Fisher\u2019s exact test, p-value 0.005).\n\nWe further examined two well predicted conditions (PR-AUC\u00a0>0.35), pseudomonic acid 2 \u03bcg/ml (the antibiotic mupirocin) and minimal media with the addition of amino acid mix, to inspect our predictive model (Figure 4). Both conditions showed an enrichment of strains with growth defects at high predicted scores (GSEA p-values of 0.001 and\u00a0<10\u22126, respectively), which is a common property of conditions with higher PR-AUC (Figure 3\u2014figure supplement 1). The reference K-12 strain harbors many conditionally essential genes in minimal media (N\u00a0=\u00a0181), providing an example for which growth phenotypes are well predicted from deleterious effects across a large number of genes in different strains. In contrast, pseudomonic acid is a condition with few (N\u00a0=\u00a010) conditionally essential genes, thus making it easier to evaluate the contribution of single genes to the phenotype. Of the 25 strains with highest predicted score in pseudomonic acid, 13 have been misclassified by the model. Seven misclassified strains had high disruption scores in either lpcA or rfaE, two genes involved in the biosynthesis of a lipopolysaccharide (LPS) precursor (L-glycero-\u03b2-D-manno-heptose). Both, when deleted in K-12, cause a strong growth defect under pseudomonic acid. Only 1 of the correctly predicted strains had a mutation in one of those two genes (IAI36), suggesting that this pathway might be conditionally essential only in K-12. Another example of incorrect predictions involves two strains (ECOR-27 and ECOR-58) that share very similar disruption score profiles for the conditionally essential genes in pseudomonic acid (Figure 4C), but only ECOR-27 had a growth defect in this condition. Both strains harbor a single nonsynonymous mutation in acrB (E414G for ECOR-27 and I466T for ECOR-58), which, in both cases, is predicted as highly deleterious. Changes in conditional essentiality or epistatic effects are possible explanations for this misclassification, and therefore mapping and incorporating this information in our models could significantly benefit predictions in the future.\n\n### Experimental validation of causal variants\n\nSince we use mechanistic models in our phenotype predictions to calculate the impact of non-synonymous genetic variants, we can then also directly pinpoint the causal variants and implement genetic therapies to correct growth phenotypes. We tested this by ranking the mutated conditionally essential genes in each condition according to their predicted ability to rescue growth phenotypes (Figure 5A and Materials and methods). Several genes were predicted to restore many growth phenotypes (Figure 5B), including the genes forming the AcrAB-TolC multidrug efflux pump, which were predicted to restore growth in up to\u00a0~1000 condition-strain pairs (1012 acrB, 494 acrA and 517 tolC, respectively), reflecting the importance of this efflux system in drug resistance (Li et al., 2015).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/31035/elife-31035-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic representation of the experimental approach. (B) Distribution of the number of predicted restored phenotypes per gene; red stripes indicate the genes that were experimentally tested. (C) Growth change between the target strain with the empty plasmid against the one expressing the reference copy of the target gene (complementation). Strains for which a change in phenotype is predicted are compared to those where no change is predicted. (D\u2013F) Detailed representation of the results of the complementation experiment in three conditions. Mean colony area and the 95% confidence intervals are reported. Significant differences (t-test p-value<0.01) between colony area of the strains with the empty and complemented plasmids are reported. \u2018Other complementation\u2019 reports strains expressing a different gene than the focal one, indicated between parenthesis. (G) Cartoon representation of AcrB 3D structure (PDB entry: 2dr6). Only one of the three monomers is highlighted in blue; colored spheres represent known non-synonymous variants in the reported strains.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31035/elife-31035-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Replicability in colony size (measured in pixels) after outer frame and spatial correction between the two replicates. (B) Overview of the results of the complementation experiments. Mean colony area and the 95% confidence intervals are reported. Significant differences (t-test p-value<0.01) between colony area of the strains with the empty and complemented plasmids are reported. Conditions CHIR090.MECILLINAM, MECILLINNAM and OXACILLIN.5UM have been excluded from further analysis, as the deletion strain from the KEIO collection (positive control) does not show a sick phenotype with an empty plasmid.\n\nWe selected eight genes to experimentally verify our predictions, including genes involved in either drug resistance (acrAB, soxSR and slt) or auxotrophic growth (glnD and proAB). We then selected conditions for which the introduction of the reference allele in the target strains was predicted to restore growth, and controls where no improvement in phenotype was expected (Materials and methods). We also introduced the plasmid expressing the reference allele in the reference strain as a negative control and in the corresponding deletion strain from the KEIO collection (Baba et al., 2006) as a positive control. Overall, we observed a high correlation between replicates of this experiment (Pearson\u2019s r: 0.94, Figure 5\u2014figure supplement 1). In total, we tested 64 strain-condition combinations, detecting a significant difference (p-value 8.4E-11, two-sided t-test) in colony size change between strain-condition pairs in which we had predicted growth will be restored (N\u00a0=\u00a014) versus ones we had not (N\u00a0=\u00a050) (Figure 5C and Materials and methods). This validated the effectiveness of our predictive models and more generally confirmed that genetic variants can be used to predict causal mutations and prioritise strategies for reverting/modifying phenotypes.\n\nWe investigated three conditions in more detail: pseudomonic acid 2 \u03bcg/ml with an acrB complementation, pyocyanin 10 \u03bcg/ml (a toxic secondary metabolite produced by Pseudomonas aeruginosa) with a soxSR complementation and the L-glutamine amino acid as nitrogen source with a proAB complementation (Figure 5D\u2013F and Figure 5\u2014figure supplement 1 for all conditions and strains). In all cases, strains harboring the gene(s) predicted to restore the phenotypes grew significantly better than strains carrying the empty plasmid (t-test p-value<0.01). In contrast, none of the strains harboring a different complementation gene showed a significant increase in colony size. In one case we detected an unexpected increase in colony size for one of the strains where we hadn\u2019t predicted any change (strain IAI39 expressing AcrB, Figure 5D). We hypothesize that the original growth phenotype is either due to an incorrectly classified variant in acrB or due to another variant that acts on the expression of this efflux pump.\n\nOf the five strains expressing the reference allele of acrB tested in pseudomonic acid, three harbored nonsynonymous variants in their chromosomal copy. One of them (IAI30) was predicted to increase its colony size after the complementation, whereas the other two (ECOR-42 and ECOR-28) were not predicted to be affected by the complementation (Figure 5D). We mapped those nonsynonymous variants to the three-dimensional structure of AcrB (Murakami et al., 2006) to inspect their potential impact on the protein function (Figure 5G). Both ECOR-42 and ECOR-28 harbor a single deleterious nonsynonymous variant (SIFT, p-value~0.01) in the transmembrane domain of the protein (A915D and T1013I, respectively). Strain IAI30 on the other hand carries two nonsynonymous variants: E567V and H596N, both located in the AcrB PC1 subdomain, which is involved in the entry of the ligand that will be then extruded by the efflux pump (Murakami et al., 2006; Seeger et al., 2006). Since the E567V variant is predicted to be highly deleterious (SIFT, p-value~0.001), we presume that it impairs the fundamental drug uptake function of the AcrAB-TolC multidrug efflux pump, while the variants in the other two strains might not be significantly affecting the pump\u2019s function. This example shows how mechanistic interpretations of the impact of genetic variants can direct insights into the emergence of fitness defects and suggest potential gene therapeutic strategies, down to the level of the single genetic variant.\n\n## Discussion\n\nAs part of this study, we have assembled and phenotyped a large, phylogenetically diverse E. coli resource strain collection. We observed little to no correlation between genotypic and phenotypic distance across strains. This demonstrates the need of assessing the impact of genetic variability as most variants are likely to be neutral. We combined these mechanistic interpretations of the impact of non-synonymous variants in the genomes of all these strains with prior knowledge on E. coli K-12 gene conditional essentiality to predict conditional growth defects of strains in the collection. This resulted in reliable predictions for up to 38% of the tested growth conditions. Our mechanistic-based model directly pinpoints the causal variants and allows us to design successful genetic therapies, something that is often the bottleneck in traditional GWAS approaches. Moreover, our approach opens up the door for predicting strain functional capacities in less studied microbes, such as those present in the human microbiome, with sole requirements being the strain genome sequence and knowledge of gene function in a model strain.\n\nDespite the significant predictive power, we still could not reliably predict the strains phenotypic response in a number of conditions. Epistatic interactions, the impact of synonymous variants, variants in non-coding regions and the large accessory genome are four possible factors influencing phenotypic diversity. Models that account for these factors could therefore be required for more accurate predictive models. As compared to the previous application of this method to S. cerevisiae strains (Jelier et al., 2011), we observed a lower overall accuracy. The larger and more diverse strains cohort, the higher diversity in conditions tested, including several concentrations for each chemical, and the larger genetic diversity in bacteria are potential causes for the differences we have observed. Most importantly, we postulate that conditional essentiality may not be conserved across strains and therefore that it interacts with each specific genetic background. Previous work in two closely related S. cerevisiae strains and five human cancer cell lines has shown that gene-specific phenotypes can diverge considerably (Ryan et al., 2012; Hart et al., 2015). Given their higher genetic variability, this genetic background dependence of gene-specific phenotypes is expected to be stronger in E. coli and other bacteria, even though this remains to be tested. Despite these limitations we believe that we have demonstrated how gene function assays and genetic variant prioritization can be leveraged to deliver growth predictions and genetic intervention strategies. Future iterations based on a more complete understanding on conservation of conditional essentiality should improve these predictions.\n\nFinally, we propose this strain collection as a valuable community resource to develop and test genotype-to-phenotype models, following the example of previous successful genetic reference panels (Ayroles et al., 2009; Liti et al., 2009; Bennett et al., 2010; Atwell et al., 2010; 1001 Genomes Consortium, 2016; Weinstein et al., 2013; 1000 Genomes Project Consortium et al., 2015). Any additional molecular and phenotypic measurement on the collection members will amplify the benefit for the entire research community, moving us closer to understanding the basic biological question of how genetic variation translates to differences among individuals.\n\n## Materials and methods\n\n### Genome sequencing, assembly and annotation\n\nStrains whose genome sequence were not yet available were sequenced using various Illumina paired-end platforms (Supplementary file 1). The resulting sequencing reads were quality checked using FastQC version 0.11.3, and contaminating sequencing adapters were removed using seq_crumbs version 0.1.9. Reads were assembled with Spades (Bankevich et al., 2012) version 3.5.0, using different k-mer sizes according to reads length and with the \u2018careful\u2019 option to reduce assembly errors; contigs below 200 base pairs were excluded. Resulting assembled contigs were annotated for coding genes, ribosomal RNAs and tRNAs using Prokka (Seemann, 2014) version 1.11. Strains not belonging to the E. coli species were excluded from subsequent analysis after being highlighted by Kraken (Wood and Salzberg, 2014) version 0.10.5. When available, typing information was used to spot incorrect genome sequences due to culture contaminations or other factors; known strains typing was compared to the ones predicted from the genome sequence using mlst version 2.8. Strain names were amended when possible (see the \u2018Notes\u2019 column in Supplementary file 1). The ECOR collection was carefully checked for inconsistencies, as it is well known that different \u2018versions\u2019 of this collection are circulating in the scientific community (Johnson et al., 2001; Clermont et al., 2015). The genome sequences were further checked for duplicated genomes: strains with highly similar genomes but highly divergent phenotypes (phenotypes S-score correlation below 0.6) were flagged and the genome belonging to the most likely incorrect strain was removed. If the conflict could not be resolved (i.e. using known typing information) both genomes were removed. Highly similar genomes were defined as those genomes whose distance was found to be below 0.001, as measured by mash (Ondov et al., 2016), version 1.1. Despite the draft status of the genomes presented in this study, we observed a similar core genome size as the one computed using a set of 376 complete E. coli genomes downloaded from NCBI\u2019s RefSeq (data not shown).\n\n### SNP calling and annotation\n\nDue to the variability in sequencing technologies or lack of the original reads for the already sequenced strains in the collection (N\u00a0=\u00a0373), SNPs were called through a whole genome alignment between each strain and the genome of the reference individual (Escherichia coli str. K-12 substr. MG1655, RefSeq accession: NC_000913.3, strain collection identifier NT12001), using ParSNP (Treangen et al., 2014) version 1.2. Repeated regions in the reference genome were highlighted and masked through nucmer (Kurtz et al., 2004) version 3.1 and Bedtools (Quinlan and Hall, 2010) version 2.26.0. SNPs were then phased, and annotated using SnpEff (Cingolani et al., 2012) version 4.1g.\n\n### Pangenome analysis\n\nGenes present in the reference individual but absent in each strain were highlighted by computing hierarchical orthologous group using OMA (Altenhoff et al., 2013) version 1.0.6. Each strain was previously re-annotated using Prokka (Seemann, 2014) version 1.11 to harmonize gene calls.\n\n### Phylogenetics\n\nStrains phylogenetic tree was computed using a single ParSNP (Treangen et al., 2014) analysis, which generates a whole genome nucleotide alignment across all strains, which is then used as an input for FastTree (Price et al., 2010) version 2.1.7. The tree was visualized using the ete3 library (Huerta-Cepas et al., 2016a) version 3.0.0.\n\nPhylogenetic distances between pairs of strains has been computed using phylogenetic independent contrasts, in order to account for phylogenetic interdependencies between strains (Felsenstein, 1985). In short, we have first restricted the phenotypic data to those strains and conditions with less than 10% missing data; we then imputed the rest using the average S-score for each strain, using the scikit-learn library (Pedregosa et al., 2011) version 0.17.1. For each condition we then computed the phylogenetic independent contrasts across the internal nodes of the strains\u2019 tree, using the ape, geiger and phytools libraries (Paradis et al., 2004; Harmon et al., 2008;\u00a0Revell, 2012), versions 5.0, 2.0.6 and 0.6\u201320, respectively. The phenotypic distance between nodes was then computed using the euclidean distance between the phylogenetic independent contrasts across all conditions, using the nadist library version 0.1.0.\n\n### Computation of all possible mutations and their effect\n\nThe impact of all possible nonsynonymous substitutions on the reference individual has been precomputed to speed up the lookup process. Functional impact of nonsynonymous substitutions has been computed using SIFT (Ng and Henikoff, 2001) version 5.1.1, using uniref50 as a sequence search database. Structural impact of nonsynonymous substitutions has been computed using FoldX (Guerois et al., 2002) version 4; both 3-D structures present in the PDB database and homology models were used. Homology models were created using ModPipe (Pieper et al., 2014) version 2.2.0. Conversion from PDB to Uniprot residues coordinates was derived from the SIFTS (Velankar et al., 2013) database. PDB structures were \u2018repaired\u2019 to fix residues\u2019 torsion angles and Van der Waals clashes before computing the impact of non-synonymous variants on structural stability. All the precomputed impacts of all possible nonsynonymous substitutions are available through the mutfunc database (http://mutfunc.com).\n\n### Computation of the disruption score\n\nFor each strain and each protein coding genes we have computed the overall impact of all nonsynonymous and nonsense substitutions, in a similar approach as the one used for Saccharomyces cerevisiae (Jelier et al., 2011). The output of each predictor (a deleterious probability for SIFT and a \u0394\u0394G value for FoldX) has been converted to the probability of the substitution being neutral $p(neutral)$. Mutations with known impact on the reference individual have been downloaded from Uniprot (UniProt Consortium, 2015, N\u00a0=\u00a03673) and used to derive such conversion; since only 580 mutations are reported to have a neutral impact, we added all observed nonsynonymous variants affecting known essential genes (as reported in the OGEE database, Chen et al., 2017) to the list of tolerated mutations. The distribution of the negative natural logarithm of the SIFT probability (plus a pseudocount equivalent to the lowest observed SIFT probability) for all the 6460 mutations was binned and the $p(neutral)$\u00a0was computed as the proportion of tolerated mutations over the total number of mutations in each bin. A logistic regression curve was then fitted to the binned distribution to derive the conversion between the SIFT probability and $p(neutral)$. For FoldX we used a similar approach, but using the computed \u0394\u0394G value. The fitted logistic regression curves resulted in the following $P(neutral)$functions:\n\n$$\nP(neutral_{SIFT})=\\frac{1}{(1+e^{\u2212(0.625log(SIFT+1.527E^{\u22124})+1.971)})}\n$$\n\n\n\n$$\nP(neutral_{FoldX})=\\frac{1}{(1+e^{\u2212(1.465FoldX+1.201)})}\n$$\n\nThe $P(neutral)$\u00a0value attributed to nonsense mutations was assigned through heuristics: if the new stop codon was found within the last 16 residues of the protein it was given a\u00a0$P(neutral)$ value of 0.99, reflecting its unlikelihood of disrupting the function of the protein, 0.01 otherwise. Losing a start or a stop codon was given a $P(neutral)$\u00a0value of 0.01, as they are very likely to impair protein function.\n\nWe gave a\u00a0$P(neutral)$ value of 0.01 to those genes that were found to be present in the reference individual but absent in the target strain, reflecting the fact that their function is most likely to be absent from the target strain.\n\nWe inferred the probability that each gene had its function affected by the ensemble of the substitutions in each strain by computing a disruption score, equivalent to the $P(AF)$ (probability of the function being affected) used in S. cerevisiae study (Jelier et al., 2011).\n\n$$\nP(AF)=1\u2212\\prodi=1kP_{i}(neutral)\n$$\n\nWhere k is the ensemble of nonsynonymous and nonsense substitutions observed in each gene. When both FoldX and SIFT predictions were available for a given substitution, we used the SIFT prediction only. Variants with relatively high frequency (>=10%) in the strains collection were not considered, as well as those reference genes that are absent in a significant number of strains (>=10%), as we reasoned that they are unlikely to be deleterious given their high observed frequency. Given that many strains of the collection are closely related (e.g. strains derived from the LTEE collection), we clustered them based on phylogenetic distance before applying the filtering. We also didn\u2019t consider variants and absent reference genes shared by all members of the LTEE strain collection, as those variants are present in the collection founder strain and therefore unlikely to affect the evolved clones phenotypes. Disruption scores for all proteins across all strains can be found in Supplementary file 5.\n\n### Use of the disruption score as a functional association predictor\n\nWe used the proteins pairwise Pearson\u2019s correlation of disruption scores as a predictor of genes functional associations. We used four benchmarking sets: operons, as derived from the DOOR database (Mao et al., 2014), protein complexes and pathways derived from the EcoCyc database (Keseler et al., 2013), and protein-protein interactions derived from a recent yeast two-hybrid experiment (Rajagopala et al., 2014). The distribution of the disruption score correlation for each pair of related genes was compared against the same number of gene pairs randomly drawn from all reference genes. We also assessed the predictive power of the disruption score correlations by drawing a receiving operator characteristics curve (ROC) across each correlation threshold, using the scikit-learn library (Pedregosa et al., 2011) version 0.17.1.\n\n### Strains phenotyping\n\nThe strains phenotypes were measured in a similar way as the E. coli reverse genetic screen (Nichols et al., 2011). The strain collection was plated in three solid agar plates, each one containing 1536 single colonies, so that each strain was plated at least four times in each plate, each time with different neighboring strains. For each condition we prepared three replicates (each one using a different source plate to reduce batch effects) with the concentrations indicated in Supplementary file 2 and the addition of the Cosmos dye (CAS number 573-58-0) and Coomasie brilliant blue R-250 (CAS number 6104-59-2). The solution stains colonies when biofilm is being developed. Plates were stored in darkness at room temperature, unless otherwise required by the specific condition (i.e. higher temperature), and photographs of the plates were taken until colonies were found to be overgrowing into each other. Most of the conditions (N\u00a0=\u00a0197) were tested at the same time and under the same laboratory conditions as the KEIO KO collection (Herrera-Dominguez et al., unpublished).\n\nA series of colony parameters were extracted from each photograph, using Iris (Kritikos et al., 2017) version 0.9.4.71: colony size, opacity, roundness and color intensity. The most appropriate time point for each condition was determined by imposing a restriction on median colony size; between 1900 and 3600 pixels for the first two plates, and between 1300 and 3600 for the last plate, which contained the strains derived from evolution experiments, which tend to grow less than the natural isolates. The time points passing the first threshold were then sorted by the proportion of colonies with high roundness (>0.8), which is indicative of the overall quality of the plate, proportion of colonies over the minimum median colony size threshold, the spread of the colony size distribution (the lower the better), and mean colony size correlation across replicates.\n\nA series of additional quality control measures were taken on the colony parameters. In order to remove systematic pinning defects, colonies appearing to be missing (colony size of zero pixels) in more than 66% of the tested plates were removed, unless all the internal replicates were found to be missing. Colonies with abnormal circularity were removed, as they were mostly due to incorrect colony recognition by the software: colonies with size below 1000 pixels and circularity below 0.5 and colonies with size above 1000 pixels and circularity below 0.3 were removed. Putative contaminations were spotted and removed through a variance jackknife approach: first, the size of two outermost rows and columns colonies was corrected to match the median of the rest of the plate, then for each strain, each of the four replicates inside the plate was tested whether it contributed to more than 90% of the total colony size variance. If so, the replicate was flagged as a contamination and removed. The same approach was repeated using colony circularity, with a variance threshold of 95%.\n\nThe final colony sizes were used as an input for the EMAP algorithm (Collins et al., 2006), with default parameters, in order to derive an S-score, which informs on the deviation of each strain from the expected growth in each condition. Final S-scores were quantile-normalized, and significant phenotypes were highlighted using a 5% FDR correction similar to the one used in the E. coli reverse genetic screen (Nichols et al., 2011), using the statsmodels library version 0.6.1. The phenotypic data is available in Supplementary file 4.\n\n### Computation of the conditional score and its assessment\n\nConditionally essential genes were derived for each condition of the E. coli reverse genetic screen overlapping with the conditions tested on the natural isolates collection. Mutants with a significant growth phenotype were considered to derive the list of conditionally essential genes. The conditional score for each strain, indicating the growth prediction, was computed as follows:\n\n$$\nS_{s,c}=\\sumg=1l\\frac{1}{E_{s}}W_{g,c}log(1\u2212P_{s,g(AF)})\n$$\n\nWhere s and c represent the strain and condition, respectively, g each conditionally essential gene for condition c (with size l), and $E_{s}$representing a correction term for the disruption score, in order to remove the effect of phylogenetic distance (Figure 2\u2014figure supplement 1).\n\n$$\nE_{s}=\\frac{1}{n}\\sumg=1nlog(1\u2212P_{s,g}(AF))\n$$\n\nWhere n represents all the reference genes. The term\u00a0$W_{g,c}$\u00a0is used to weight the contribution of each conditionally essential gene to the conditional score, and it is computed as follows:\n\n$$\nW_{g,c}=\u2212log_{10}(F_{g,c})\\frac{C_{g}}{N_{c}}\n$$\n\nWhere $F_{g,c}$\u00a0is the FDR-corrected p-value of gene g in condition c, $C_{g}$\u00a0is the number of conditions in the chemical genomics screen where gene g shows a significant phenotype, and $N_{c}$\u00a0the total number of tested conditions in the chemical genomics screen.\n\nThe conditional score was assessed by computing a Precision-Recall curve, whose area (PR-AUC) was used as a direct measure of the predictive power of the method; the growth phenotypes were considered true positives. The PR curve and its AUC were computed using the scikit-learn library (Pedregosa et al., 2011) version 0.17.1. Three randomization approaches were used to generate control conditional scores: one using strains shuffling, one using conditionally essential gene sets shuffling, and one using random conditionally essential gene sets. Each randomization strategy has been used to generate 10,000 randomized scores, which were scaled to the actual one before assessment.\n\nThe conditionally essential gene sets, the conditional score and the PR-AUC values are available in Supplementary file 5.\n\n### Association of accessory genes with phenotypes\n\nAccessory genes from the strains collection pangenome were computed from the harmonized genome annotations made by Prokka (Seemann, 2014), using Roary (Page et al., 2015) version 3.6.1. The accessory genes were associated to each condition\u2019s phenotypes using Scoary (Brynildsrud et al., 2016) version 1.4.0, with default parameters. Genes with corrected p-value (Benjamini-Hochberg) of association below 0.05 were considered significant. The enrichment of conditionally essential genes among the significant reference gene hits was assessed through a Fisher\u2019s exact test, as implemented in the SciPy library, version 0.17.0.\n\n### Systematic in-silico complementation of conditionally essential genes\n\nThe potential to restore growth phenotypes through the introduction of reference alleles was predicted systematically in each strain by changing the disruption score to zero in each conditionally essential gene, and reporting the change in the conditional score : with respect to the maximum possible conditional score:\n\n$$\nS_{s,c}^{max}=\\sumg=1l\\frac{1}{E_{s}}W_{g,c}log(1\u2212P_{max}(AF))\n$$\n\nWhere $P_{max}(AF)$\u00a0is the maximum disruption score observed across all genes and strains. Any $\u0394S_{s,c}$ higher than 1% of $S_{s,c}^{max}$\u00a0was considered as potentially able to restore a growth phenotype.\n\n### Experimental complementation of predicted phenotype-causing genes\n\nIn order to experimentally verify our predictions, we introduced the reference (BW25113) gene in a low copy plasmid. For the slt gene, we used the available plasmid from the TransBac library (H. Dose and H. Mori, unpublished resource, Otsuka et al., 2015). For acrA, acrB and glnD, we used the available plasmid from the mobile plasmid library (Saka et al., 2005). We amplified acrAB, soxSR, proAB from BW25113 and ligated into pNTR-SD (the backbone plasmid for the mobile plasmid library). Deletions of acrAB, soxSR, proAB in the reference strain were made using the lambda red recombination approach (Datsenko and Wanner, 2000). The resulting seven plasmids and the two empty plasmid controls were introduced into BW25113 (negative control), in the deletion strains from the Keio collection or constructed by us (positive control) and in the targets strains. All resulting strains were pinned using a Singer Rotor robot in 10 different conditions, on two solid agar plates, so that each strain is pinned at least four times per plate. The plates were incubated at room temperature and multiple photographs were taken until colonies were found to be overgrowing into each other. Iris (Kritikos et al., 2017) version 0.9.7 was used to extract colony size from the pictures.\n\n### Code, data and strains collection availability\n\nNew genomic sequences have been deposited at the European Nucleotide Archive (ENA) with accession number PRJEB20550.\n\nThe source code used to perform the analysis reported here and generate the figures is available as Source code 1 and at the following URLs: https://github.com/mgalardini/screenings, https://github.com/mgalardini/pangenome_variation, https://github.com/mgalardini/ecopredict (copies archived at https://github.com/elifesciences-publications/screenings, https://github.com/elifesciences-publications/pangenome_variation\u00a0and https://github.com/elifesciences-publications/ecopredict). Code is mostly based on the Python programming language, and using the following libraries: Numpy (Vanvan Derder Walt et al., 2011) version 1.10.4, SciPy version 0.17.0, Pandas (McKinney, 2010) version 0.18.0, Biopython (Cock et al., 2009) version 1.68, scikit-learn (Pedregosa et al., 2011) version 0.17.1, fastcluster (M\u00fcllner, 2013) version 1.1.20, statsmodels version 0.6.1, PyVCF version 0.6.8, ete3 (Huerta-Cepas et al., 2016a) version 3.0.0, Matplotlib (Hunter, 2007) version 1.5.1, Seaborn (Waskom et al., 2016) version 0.7.1 and svgutils version 0.2.0.\n\nGenomic and phenotypic data, as well as relevant information on how to obtain the members of the strain collection is available at the following URL: https://evocellnet.github.io/ecoref.\n",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "3305ed9e-f1dc-45c3-b41e-05fa6754238b",
+      "submission_id": "35ac281e-0ae1-4e4b-8a0e-0ca840ccfe65",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Naama Barkai, Weizmann Institute of Science Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.31035.023](https://doi.org/10.7554/eLife.31035.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Phenotype inference in an Escherichia coli strain panel\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Naama Barkai as the Senior Editor and Reviewing Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs you will see below, the reviewers appreciated the extensive analysis and believe that the data will be a useful resource for the community. Please see below technical issues that were raised by the reviewers, which should be addressed in full, as you revise your submission for the Tools and Resources section.\n\nReviewer #1:\n\nThis paper does an extensive analysis and prediction of phenotypes caused by mutations in a large E. coli strain panel evaluated over several hundred conditions.\n\nOverall, my concern with this paper applies similarly to many large-scale, high-throughput works I see: The authors have done so much, and are trying to present so many different results and approaches in one paper, that it's difficult to evaluate what exactly was achieved. This paper is either a monumental achievement or a collection of trivial results, and I find it difficult to distinguish between the two possibilities.\n\nI am tentatively willing to give the authors the benefit of the doubt, but I have specific questions and concerns that would strengthen my confidence in the work.\n\n- \"We detected no strong positive correlation\" this is a strange sentence, in particular if it then lists a significant negative correlation. I think the authors need to explain first why they would expect a positive correlation.\n\nAlso, with regards to these correlations, because of the phylogenetic dependency among strains they should be calculated on phylogenetic independent contrasts. Alternatively, it would be better to not report a p value than to report an incorrect one.\n\n- Figure 3A: The precision-recall curves don't look particularly impressive. They rapidly decay to a precision below 0.5, at which point more cases are called incorrectly than correctly.\n\n- Figure 3B: This figure is not properly explained. First, what are the small gray dots? Second, what are the three thick gray dots labeled as shuffled strains, shuffled sets, and random sets? Each randomization should provide a distribution which then is compared to one PR-AUC value. If the true PR-AUC value is rare under reshuffling, then it is significant. This relationship is not in any way visible in the figure.\n\n- Figure 4: Again, the precision-recall curve looks pretty bad. I grant that there's some enrichment of phenotypes towards the top end of the predicted phenotype scale, but the prediction quality is not impressive and it's not clear to me whether a trivial predictor (e.g., one only evaluating whether an amino acid has been changed towards a highly biochemically dissimilar one) could do just as well.\n\n- Section on \"Experimental validation of causal variants\": It is not entirely clear to me what has been achieved here. If a mutation knocks out an essential gene then clearly that defect can be rescued via complementation. So the achievement would have to be to predict that a gene is essential only under specific conditions. Is that what was done? And if so, how? Was essentiality simply observed, by noting that strains with mutations in certain genes wouldn't grow under specific conditions? Or was it somehow inferred from some other data?\n\n- \"with prior knowledge on gene essentiality\" I'm not entirely convinced that gene essentiality matters all that much. A mutation in a non-essential gene can have a substantial fitness effect, and a mutation in an essential gene that doesn't fully disable that gene's function may have only a minor fitness effect.\n\n- It is unclear to me whether the code underlying the mutfunc database has been provided or not. The database looks nice, but I'm generally wary of any bioinformatics tool that I can't download and run on my own machine. The authors provide several pipelines (https://github.com/mgalardini/screenings, https://github.com/mgalardini/pangenome_variation, https://github.com/mgalardini/ecopredict), but none seems to perform the task of the mutfunc database.\n\nReviewer #2:\n\nWe have read the study entitled \"Phenotype inference in an Escherichia coli strain panel\" by Galardini et al. This study performs phenotypic screens for 894 E. coli strains across 214 growth conditions. Most of the strains (696) have full genome sequence available. Gene-level functional predictions were correct in up to 38% of cases. This dataset will become an important and useful resource for the systems biology and microbiology community. We would appreciate of the authors addressed our minor comments below:\n\nWe commend the authors for putting all of their data in easily accessible format on github with links out to all of the available assemblies and phenotype measurements. This inclusion will ensure that the resource is easy to use for the research community. However, one question remains regarding the new annotations for each strain. Are these available anywhere? It was difficult to find them both on the web or in the authors\u2019 supplemental files.\n\nThe authors previously used this approach on yeast with a median predictive performance of 0.76 (Jelier et al. 2011), but were only able to reliably predict 38% of the conditions tested in this instance. Could the authors comment on why their performance was lower?\n\nWhy did the authors use ParSNP to compute phylogeny rather than other methods (such as MLST, whole genome alignment, etc). The authors look for a correlation between phylogeny and genotype. Could the lack of correlation be due to assumptions made when calculating the phylogeny?\n\nWhy did the authors choose to incubate the most of the conditions at room temperature rather than the more common 37C? Might this significantly impact their results (i.e. would growth capabilities change if incubated at 37C?).\n\nHow do the authors define the \"accessory genes/genome\". Are these simply all genes that are not part of the core genome? Could the authors comment on the completeness of the genomic sequences in the data set?\n\nWere SNPs only called for sequences in common with the reference E. coli K12 genome? Would that potentially explain some of the discrepancies between the model predictions and the experimental outcome?\n\nDoes the term \"mechanistic\" appropriately describe the method used? Especially when one considers disruption scores in many areas of a genome and the conditional essentiality of genes?\n",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8533a20b-6b8b-4f03-8eac-68abe9c66609",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C1",
+      "claim": "The study assembled a large panel of 696 Escherichia coli strains that were genotyped.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we have assembled a large panel of 696 Escherichia coli strains, which we have genotyped and measured their phenotypic profile across 214 growth conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the abstract with specific numbers of strains and conditions tested.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "28f07fa5-6d97-4cdb-b308-1ebac6401142",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C2",
+      "claim": "The study measured phenotypic profiles of the E. coli strains across 214 growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we have assembled a large panel of 696 Escherichia coli strains, which we have genotyped and measured their phenotypic profile across 214 growth conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the abstract with specific number of conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "2d321183-c210-44df-87c5-9a210a8d950c",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C3",
+      "claim": "The study integrated variant effect predictors to derive gene-level probabilities of loss of function for every gene across all strains.",
+      "claim_type": "EXPLICIT",
+      "source": "We integrated variant effect predictors to derive gene-level probabilities of loss of function for every gene across all strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the abstract describing the computational methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "1f2e3a3b-8f5f-490e-925d-32b82df9ef32",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C4",
+      "claim": "The study combined gene-level loss of function probabilities with information on conditional gene essentiality in the reference K-12 strain to compute growth defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we combined these probabilities with information on conditional gene essentiality in the reference K-12 strain to compute the growth defects of each strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the abstract describing the predictive model approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "7b09c344-be81-40e2-bb44-82db7995688f",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C5",
+      "claim": "The predictive model could reliably predict growth defects in up to 38% of tested conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only could we reliably predict these defects in up to 38% of tested conditions, but we could also directly identify the causal variants that were validated through complementation assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the abstract with specific percentage of successful predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "cb886d3a-d925-4958-9a70-cbc61070e798",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C6",
+      "claim": "Causal variants identified by the model were validated through complementation assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only could we reliably predict these defects in up to 38% of tested conditions, but we could also directly identify the causal variants that were validated through complementation assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the abstract describing experimental validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "8050af6f-b6b6-4f9e-877c-c187f1a1460f",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C7",
+      "claim": "GWAS studies often fall short in pinpointing causal variants due to lack of power to resolve variants in linkage disequilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "While such approaches are powerful in elucidating trait heritability and disease associations (Yang et al., 2010; Welter et al., 2014), they often fall short in pinpointing causal variants, either due to lack of power to resolve variants in linkage disequilibrium (Edwards et al., 2013) or for the dispersion of weak association signals across a large number of regions across the genome (Boyle et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Edwards et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "dcb360be-ea2c-4a55-8ecf-43183b558006",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C8",
+      "claim": "GWAS studies often fall short in pinpointing causal variants due to dispersion of weak association signals across a large number of regions across the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "While such approaches are powerful in elucidating trait heritability and disease associations (Yang et al., 2010; Welter et al., 2014), they often fall short in pinpointing causal variants, either due to lack of power to resolve variants in linkage disequilibrium (Edwards et al., 2013) or for the dispersion of weak association signals across a large number of regions across the genome (Boyle et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Boyle et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "22c83309-3554-420a-933c-a5d7319c4baf",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C9",
+      "claim": "GWAS studies are unable to assess the impact of previously unseen or rare variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, by definition GWAS studies are unable to assess the impact of previously unseen or rare variants, which can often have a large effect on phenotype (Bodmer and Bonilla, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bodmer and Bonilla, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "9d80d6bf-01fc-4677-8d23-9241f190d7a7",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C10",
+      "claim": "Rare variants can often have a large effect on phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, by definition GWAS studies are unable to assess the impact of previously unseen or rare variants, which can often have a large effect on phenotype (Bodmer and Bonilla, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bodmer and Bonilla, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "d4da7565-e963-40d0-be41-23a86eac97e7",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C11",
+      "claim": "Genome-wide knock-out libraries of different organisms have been profiled across multiple growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Such knowledge is now readily available by chemical genetics approaches, in which genome-wide knock-out (KO) libraries of different organisms are profiled across multiple growth conditions (Kamath et al., 2003; Dietzl et al., 2007; Hillenmeyer et al., 2008; Nichols et al., 2011; Price et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to studies in different organisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "9ef59a1f-1925-47d6-99b7-51a62cbd4bc2",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C12",
+      "claim": "The impact of variants on gene function can be reliably inferred using different computational approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "The impact of variants on gene function can be reliably inferred using different computational approaches (Thusberg et al., 2011; Kulshreshtha et al., 2016), which can offer mechanistic insights into how such variants impact on a protein's structure and function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Thusberg et al., 2011 and Kulshreshtha et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "fe1e9d0f-7de5-4a60-b218-13c3ea8f874c",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C13",
+      "claim": "Combining variant effect predictors with gene conditional essentiality has been previously tested with some success in Saccharomyces cerevisiae on 15 individuals and 20 conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining variant effector predictors with gene conditional essentiality has been previously tested with some success in the budding yeast Saccharomyces cerevisiae, but only on a limited number of individuals and conditions (15 and 20, respectively, Jelier et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jelier et al., 2011 with specific numbers provided.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "863558b0-4dc4-4d8c-9dee-d2282646171e",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C14",
+      "claim": "Diversity within the same bacterial species can result in two individuals differing by as much as half of their genomic content.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to eukaryotes, diversity within the same bacterial species can result in two individuals differing by as much as half of their genomic content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General statement about bacterial diversity based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "2f911cde-4a27-409a-9f9b-9f070a3673b9",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C15",
+      "claim": "Escherichia coli is one of the most studied organisms to date.",
+      "claim_type": "EXPLICIT",
+      "source": "Escherichia coli is not only one of the most studied organisms to date (Blount, 2015), but also one of the most genetically diverse bacterial species (Lukjancenko et al., 2010; Tenaillon et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Blount, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "ec1d610f-7527-4770-accb-444f71e1f642",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C16",
+      "claim": "Escherichia coli is one of the most genetically diverse bacterial species.",
+      "claim_type": "EXPLICIT",
+      "source": "Escherichia coli is not only one of the most studied organisms to date (Blount, 2015), but also one of the most genetically diverse bacterial species (Lukjancenko et al., 2010; Tenaillon et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lukjancenko et al., 2010 and Tenaillon et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "4f143ae1-f891-4526-882c-2508733da69c",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C17",
+      "claim": "Gene conditional essentiality has been heavily profiled for the reference E. coli strain K-12.",
+      "claim_type": "EXPLICIT",
+      "source": "Since gene conditional essentiality has been heavily profiled for the reference E. coli strain (K-12, Nichols et al., 2011; Price et al., 2016), here we set out to systematically test the applicability of such genotype-to-phenotype predictive models for this species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Nichols et al., 2011 and Price et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "2666b6d0-e437-4b53-b3d1-db2360fade51",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C18",
+      "claim": "The study collected a panel of 894 E. coli strains.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore collected a large and diverse panel of E. coli strains (N = 894), for which we measured growth across 214 conditions, as well as obtained the genomic sequences for the majority of the strains (N = 696).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific number of strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "e8995519-e50f-4757-96cd-78356b727bff",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C19",
+      "claim": "The study obtained genomic sequences for 696 strains.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore collected a large and diverse panel of E. coli strains (N = 894), for which we measured growth across 214 conditions, as well as obtained the genomic sequences for the majority of the strains (N = 696).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific number of sequenced strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "b5c907b1-5578-4335-a3a8-42b71eb240cd",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C20",
+      "claim": "The model yielded significant predictive power for 38% of conditions having at least 5% of tested strains with growth defects.",
+      "claim_type": "EXPLICIT",
+      "source": "The model yielded significant predictive power for 38% of conditions having a minimum number of strains with growth defects (at least 5% of tested strains).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific percentage and threshold.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "78f68dd4-c347-4dea-b24b-9f8c5aa181f0",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C21",
+      "claim": "The E. coli strain panel includes 527 natural isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "These are broadly divided into natural isolates (N = 527) and strains derived from evolution experiments (N = 367).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific number.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "e28a63db-7c53-4c85-824e-2099fe8aff60",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C22",
+      "claim": "The E. coli strain panel includes 367 strains derived from evolution experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "These are broadly divided into natural isolates (N = 527) and strains derived from evolution experiments (N = 367).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific number.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "7f446bc1-6634-4712-812c-348a9916f2f1",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C23",
+      "claim": "321 strains had available genome sequences at the start of the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of these, 321 had available genome sequences, and we obtained the genomes of additional 375, reaching a total of 696 strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific number.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "4c9c86c3-53e5-409e-beb7-17cdca8e9270",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C24",
+      "claim": "The study obtained genome sequences for an additional 375 strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of these, 321 had available genome sequences, and we obtained the genomes of additional 375, reaching a total of 696 strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific number.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "dbf1acd8-61de-4cb1-bd18-c97c0f3c9b65",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C25",
+      "claim": "Colony size was used as a proxy for fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "We used high-density colony arrays and measured colony size as a proxy for fitness, similar to what has been applied before for the E. coli K-12 knockout (KO) library (Nichols et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with citation to similar methodology.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "5532f64d-83de-46a5-bbb0-c44ca1f5106f",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C26",
+      "claim": "Biological replicates were positively correlated with Pearson's r of 0.693.",
+      "claim_type": "EXPLICIT",
+      "source": "Both biological replicates (Figure 1B) and strains present in two distinct plates (Figure 1\u2014figure supplement 1) were positively correlated (Pearson's r 0.693 and 0.648, respectively), indicating that we measured phenotypes with high confidence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated with specific correlation value and reference to Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "0f02c5d0-d20e-4438-8131-374284d21d84",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C27",
+      "claim": "Strains present in two distinct plates were positively correlated with Pearson's r of 0.648.",
+      "claim_type": "EXPLICIT",
+      "source": "Both biological replicates (Figure 1B) and strains present in two distinct plates (Figure 1\u2014figure supplement 1) were positively correlated (Pearson's r 0.693 and 0.648, respectively), indicating that we measured phenotypes with high confidence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated with specific correlation value and reference to Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "a0e2a9a8-63b5-4647-a154-01c5858f2a5c",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C28",
+      "claim": "The full phenotypic matrix contains 114,004 single measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "The full phenotypic matrix for each strain across all conditions contains 114,004 single measurements (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific number of measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "00352f5d-a612-4c0a-a1f2-0e18e7570101",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C29",
+      "claim": "Phylogenetic distance is not correlated with phenotypic distance (r = 0.07).",
+      "claim_type": "EXPLICIT",
+      "source": "This was not the case even when taking into account the phylogenetic dependencies between strains (r = 0.07, see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific correlation value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "0b6f8460-ca00-411d-b8f8-e76984107572",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C30",
+      "claim": "Most strains from the LTEE collection (189 out of 266 tested) grew as expected in all tested conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "While most strains (189 out of 266 tested) grew as expected in all tested conditions, a significant fraction (N = 77) exhibited at least one conditional growth defect phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "f1987350-01ba-4f08-8db4-bd4f61fac617",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C31",
+      "claim": "77 LTEE strains exhibited at least one conditional growth defect phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "While most strains (189 out of 266 tested) grew as expected in all tested conditions, a significant fraction (N = 77) exhibited at least one conditional growth defect phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific number.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "898c68b3-1e36-482d-aff9-3cf230cd5aa2",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C32",
+      "claim": "Phylogenetic distance from parental strains is not correlated with the proportion of growth phenotypes in LTEE strains (Pearson's r: 0.08).",
+      "claim_type": "EXPLICIT",
+      "source": "Again, the phylogenetic distance from the parental strains (REL606 and REL607) is not correlated with the proportion of growth phenotypes (Pearson's r: 0.08), even though hypermutators exhibit a slightly higher number of phenotypes (Cohen's d: 0.513).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific correlation value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "60a13a28-f483-4fb5-a48d-76a905e0b9c2",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C33",
+      "claim": "Hypermutators exhibit a slightly higher number of phenotypes (Cohen's d: 0.513).",
+      "claim_type": "EXPLICIT",
+      "source": "Again, the phylogenetic distance from the parental strains (REL606 and REL607) is not correlated with the proportion of growth phenotypes (Pearson's r: 0.08), even though hypermutators exhibit a slightly higher number of phenotypes (Cohen's d: 0.513).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific effect size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "0546363b-aa6f-4929-8eb4-8b686f2f4352",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C34",
+      "claim": "Structural models cover 60.2% of the E. coli K-12 proteome.",
+      "claim_type": "EXPLICIT",
+      "source": "For this we derived structural models and protein alignments covering 60.2% and 94.7% of the E. coli K-12 proteome, respectively (or 50.9% and 95.9% of all protein residues) and used them to compute the impact of all possible nonsynonymous variants (see Materials and methods, available at http://mutfunc.com).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific percentage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "c4570f0b-c218-4264-8e84-2640ef93ca00",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C35",
+      "claim": "Protein alignments cover 94.7% of the E. coli K-12 proteome.",
+      "claim_type": "EXPLICIT",
+      "source": "For this we derived structural models and protein alignments covering 60.2% and 94.7% of the E. coli K-12 proteome, respectively (or 50.9% and 95.9% of all protein residues) and used them to compute the impact of all possible nonsynonymous variants (see Materials and methods, available at http://mutfunc.com).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific percentage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "88f0c750-7006-45f8-b740-4912ebfe2d5b",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C36",
+      "claim": "Structural models cover 50.9% of all protein residues in E. coli K-12.",
+      "claim_type": "EXPLICIT",
+      "source": "For this we derived structural models and protein alignments covering 60.2% and 94.7% of the E. coli K-12 proteome, respectively (or 50.9% and 95.9% of all protein residues) and used them to compute the impact of all possible nonsynonymous variants (see Materials and methods, available at http://mutfunc.com).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific percentage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "6a711b59-4caa-480b-b573-16c4059bd9ca",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C37",
+      "claim": "Protein alignments cover 95.9% of all protein residues in E. coli K-12.",
+      "claim_type": "EXPLICIT",
+      "source": "For this we derived structural models and protein alignments covering 60.2% and 94.7% of the E. coli K-12 proteome, respectively (or 50.9% and 95.9% of all protein residues) and used them to compute the impact of all possible nonsynonymous variants (see Materials and methods, available at http://mutfunc.com).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific percentage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "7c3c5701-8f3b-441f-b13b-b7d716210944",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C38",
+      "claim": "Essential and phylogenetically conserved genes show lower average gene disruption scores across all strains compared to less conserved or random genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Essential and phylogenetically conserved genes show lower average gene disruption scores across all strains, as compared to less conserved or random ones (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated with reference to Figure 2B showing the comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "0a913dc6-f699-485e-b61b-92cd54037562",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C39",
+      "claim": "Genes that are predicted to lose their function together across all strains tend to be functionally associated.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that genes that are predicted to lose their function together across all strains (Figure 2C) tend to be functionally associated (Figure 2D and E), in particular for genes belonging to the accessory genome (i.e. genes not present in all strains, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated with references to multiple figures showing the associations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "e523bc64-07c9-4f1a-adac-ad307a7323f5",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C40",
+      "claim": "The study selected 148 conditions in which at least one strain displayed a growth defect and the E. coli K-12 KO collection had also been tested.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected 148 conditions in which at least one strain displayed a growth defect and the E. coli K-12 KO collection had also been tested for (Nichols et al., 2011 and Herrera-Dominguez et al., unpublished).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific number of conditions and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "fae29aa3-9233-4085-9ab2-4056194c60be",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C41",
+      "claim": "Both the predicted impact of single nucleotide variants and gene presence/absence patterns contribute to the predictive power of the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the predicted impact of single nucleotide variants and gene presence/absence patterns contribute to the predictive power of the model (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated with reference to supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "bb80a7cf-59b6-4818-ab2b-0e0580e699de",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C42",
+      "claim": "The study correctly predicted 20% of conditions that have at least 1% of poorly growing strains.",
+      "claim_type": "EXPLICIT",
+      "source": "We correctly predicted 20% of conditions that have at least 1% of poorly growing strains, with higher predictive capacity for conditions with larger number of strains with growth defects, reaching 38% for all conditions with more than 5% of poorly growing strains (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated with specific percentage and reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "e2bb8819-7301-4215-8669-100d5bb5b689",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C43",
+      "claim": "For conditions with more than 5% of poorly growing strains, the predictive capacity reached 38%.",
+      "claim_type": "EXPLICIT",
+      "source": "We correctly predicted 20% of conditions that have at least 1% of poorly growing strains, with higher predictive capacity for conditions with larger number of strains with growth defects, reaching 38% for all conditions with more than 5% of poorly growing strains (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated with specific percentage and reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "05b9f546-d33b-4cc6-a25e-ec0d9b5b0c0c",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C44",
+      "claim": "Weighting the contribution of conditionally essential genes improved the predictive power, particularly for well-predicted conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Weighting the contribution of the conditionally essential genes to each condition also improved the predictive power, particularly for well-predicted conditions (Figure 3\u2014figure supplement 1, Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated with reference to supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "d5ac66aa-65bd-4f35-92d2-a9564b65b004",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C45",
+      "claim": "For conditions predicted with higher confidence (PR-AUC >= 0.1), there is a significant overlap between K-12 genes predicted to be essential and genes associated with poor growth by association analysis (Fisher's exact test, p-value 0.005).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the validity of our models, we found that for conditions we predict with higher confidence (PR-AUC >= 0.1), there is a significant overlap between the K-12 genes predicted to be essential in the condition and the genes associated with poor growth by the association analysis (Figure 3D, Fisher's exact test, p-value 0.005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated with specific statistical test and p-value, with reference to Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "a15b19cf-c16b-4078-93ac-19040ada050f",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C46",
+      "claim": "The reference K-12 strain harbors 181 conditionally essential genes in minimal media.",
+      "claim_type": "EXPLICIT",
+      "source": "The reference K-12 strain harbors many conditionally essential genes in minimal media (N = 181), providing an example for which growth phenotypes are well predicted from deleterious effects across a large number of genes in different strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific number of genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "d20a90ca-6671-4285-add4-479564c75d4d",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C47",
+      "claim": "Pseudomonic acid is a condition with 10 conditionally essential genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, pseudomonic acid is a condition with few (N = 10) conditionally essential genes, thus making it easier to evaluate the contribution of single genes to the phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific number of genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "8a240c6d-40f3-45e6-8d13-5898c37ff41b",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C48",
+      "claim": "Of the 25 strains with highest predicted score in pseudomonic acid, 13 have been misclassified by the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 25 strains with highest predicted score in pseudomonic acid, 13 have been misclassified by the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "c71da134-a43f-4233-812f-a67b9f1da65f",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C49",
+      "claim": "Seven misclassified strains had high disruption scores in either lpcA or rfaE.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven misclassified strains had high disruption scores in either lpcA or rfaE, two genes involved in the biosynthesis of a lipopolysaccharide (LPS) precursor (L-glycero-\u03b2-D-manno-heptose).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific number and gene names.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "be5eb314-4122-4892-9819-56dc5b3317dd",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C50",
+      "claim": "lpcA and rfaE are genes involved in the biosynthesis of a lipopolysaccharide (LPS) precursor (L-glycero-\u03b2-D-manno-heptose).",
+      "claim_type": "EXPLICIT",
+      "source": "Seven misclassified strains had high disruption scores in either lpcA or rfaE, two genes involved in the biosynthesis of a lipopolysaccharide (LPS) precursor (L-glycero-\u03b2-D-manno-heptose).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated describing gene function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "eeb2b4a3-f75d-4cc2-a567-0cc9a95d957e",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C51",
+      "claim": "Only 1 of the correctly predicted strains (IAI36) had a mutation in lpcA or rfaE.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 1 of the correctly predicted strains had a mutation in one of those two genes (IAI36), suggesting that this pathway might be conditionally essential only in K-12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific strain name.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "e4b1d988-db2e-42a4-af94-b48d294caac7",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C52",
+      "claim": "The lpcA/rfaE pathway might be conditionally essential only in K-12.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 1 of the correctly predicted strains had a mutation in one of those two genes (IAI36), suggesting that this pathway might be conditionally essential only in K-12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the observation that most misclassified strains had mutations in these genes.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "57b5df7e-a988-4d0e-a538-ead9de98c55e",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C53",
+      "claim": "ECOR-27 and ECOR-58 share very similar disruption score profiles for the conditionally essential genes in pseudomonic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Another example of incorrect predictions involves two strains (ECOR-27 and ECOR-58) that share very similar disruption score profiles for the conditionally essential genes in pseudomonic acid (Figure 4C), but only ECOR-27 had a growth defect in this condition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated with reference to Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "e9531236-9e94-4660-b6f4-47fc50b18477",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C54",
+      "claim": "Only ECOR-27 had a growth defect in pseudomonic acid, not ECOR-58.",
+      "claim_type": "EXPLICIT",
+      "source": "Another example of incorrect predictions involves two strains (ECOR-27 and ECOR-58) that share very similar disruption score profiles for the conditionally essential genes in pseudomonic acid (Figure 4C), but only ECOR-27 had a growth defect in this condition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated with specific strain names.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "4134a991-1c77-493a-b4f9-61c41e0a547f",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C55",
+      "claim": "ECOR-27 harbors a single nonsynonymous mutation in acrB (E414G).",
+      "claim_type": "EXPLICIT",
+      "source": "Both strains harbor a single nonsynonymous mutation in acrB (E414G for ECOR-27 and I466T for ECOR-58), which, in both cases, is predicted as highly deleterious.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific mutation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "291778bf-f646-4cb5-80cd-4ab0abbcb1a4",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C56",
+      "claim": "ECOR-58 harbors a single nonsynonymous mutation in acrB (I466T).",
+      "claim_type": "EXPLICIT",
+      "source": "Both strains harbor a single nonsynonymous mutation in acrB (E414G for ECOR-27 and I466T for ECOR-58), which, in both cases, is predicted as highly deleterious.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific mutation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "48c5923f-9c49-497c-8518-65f6eac31ad0",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C57",
+      "claim": "Both E414G and I466T mutations in acrB are predicted as highly deleterious.",
+      "claim_type": "EXPLICIT",
+      "source": "Both strains harbor a single nonsynonymous mutation in acrB (E414G for ECOR-27 and I466T for ECOR-58), which, in both cases, is predicted as highly deleterious.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated based on computational predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "bd01aa81-5cad-4df1-a71e-2328e91eece7",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C58",
+      "claim": "Changes in conditional essentiality or epistatic effects are possible explanations for the misclassification of ECOR-58.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in conditional essentiality or epistatic effects are possible explanations for this misclassification, and therefore mapping and incorporating this information in our models could significantly benefit predictions in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about possible causes of prediction failure.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "a7bb49ee-1f63-4756-907c-583a4616ff6d",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C59",
+      "claim": "The AcrAB-TolC multidrug efflux pump genes were predicted to restore growth in up to ~1000 condition-strain pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Several genes were predicted to restore many growth phenotypes (Figure 5B), including the genes forming the AcrAB-TolC multidrug efflux pump, which were predicted to restore growth in up to ~1000 condition-strain pairs (1012 acrB, 494 acrA and 517 tolC, respectively), reflecting the importance of this efflux system in drug resistance (Li et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated with specific numbers and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "8018d0e3-c925-4465-87d9-2473feafa325",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C60",
+      "claim": "acrB was predicted to restore growth in 1012 condition-strain pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Several genes were predicted to restore many growth phenotypes (Figure 5B), including the genes forming the AcrAB-TolC multidrug efflux pump, which were predicted to restore growth in up to ~1000 condition-strain pairs (1012 acrB, 494 acrA and 517 tolC, respectively), reflecting the importance of this efflux system in drug resistance (Li et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated with specific number.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "5c761898-3e08-44ef-b29a-7469833dfccc",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C61",
+      "claim": "acrA was predicted to restore growth in 494 condition-strain pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Several genes were predicted to restore many growth phenotypes (Figure 5B), including the genes forming the AcrAB-TolC multidrug efflux pump, which were predicted to restore growth in up to ~1000 condition-strain pairs (1012 acrB, 494 acrA and 517 tolC, respectively), reflecting the importance of this efflux system in drug resistance (Li et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated with specific number.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "223211eb-0af2-431d-b18e-c386b1ee7ef4",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C62",
+      "claim": "tolC was predicted to restore growth in 517 condition-strain pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Several genes were predicted to restore many growth phenotypes (Figure 5B), including the genes forming the AcrAB-TolC multidrug efflux pump, which were predicted to restore growth in up to ~1000 condition-strain pairs (1012 acrB, 494 acrA and 517 tolC, respectively), reflecting the importance of this efflux system in drug resistance (Li et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated with specific number.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "3a8c4e24-1244-4216-bd38-7992a051ae93",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C63",
+      "claim": "The AcrAB-TolC efflux system is important in drug resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Several genes were predicted to restore many growth phenotypes (Figure 5B), including the genes forming the AcrAB-TolC multidrug efflux pump, which were predicted to restore growth in up to ~1000 condition-strain pairs (1012 acrB, 494 acrA and 517 tolC, respectively), reflecting the importance of this efflux system in drug resistance (Li et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Li et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "c0ed1919-cf3a-456c-af10-855b549d0614",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C64",
+      "claim": "The study selected eight genes to experimentally verify predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected eight genes to experimentally verify our predictions, including genes involved in either drug resistance (acrAB, soxSR and slt) or auxotrophic growth (glnD and proAB).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific number and gene names.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "947d777a-fe0e-4ef1-aceb-175cd24573a1",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C65",
+      "claim": "The study tested 64 strain-condition combinations in complementation experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we tested 64 strain-condition combinations, detecting a significant difference (p-value 8.4E-11, two-sided t-test) in colony size change between strain-condition pairs in which we had predicted growth will be restored (N = 14) versus ones we had not (N = 50) (Figure 5C and Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated with specific number.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "9cdee8d8-a96e-46d4-a35b-838157f520c0",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C66",
+      "claim": "There was a significant difference (p-value 8.4E-11, two-sided t-test) in colony size change between strain-condition pairs predicted to be restored (N = 14) versus those not predicted (N = 50).",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we tested 64 strain-condition combinations, detecting a significant difference (p-value 8.4E-11, two-sided t-test) in colony size change between strain-condition pairs in which we had predicted growth will be restored (N = 14) versus ones we had not (N = 50) (Figure 5C and Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated with specific statistical test, p-value, and sample sizes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "a9600262-8e04-44d3-9d3a-22b7bd60b913",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C67",
+      "claim": "Strains harboring the gene(s) predicted to restore phenotypes grew significantly better than strains carrying the empty plasmid (t-test p-value<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, strains harboring the gene(s) predicted to restore the phenotypes grew significantly better than strains carrying the empty plasmid (t-test p-value<0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific statistical test and threshold.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "55ca8d3a-642e-452c-b26d-e35e0bec5b30",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C68",
+      "claim": "None of the strains harboring a different complementation gene showed a significant increase in colony size.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, none of the strains harboring a different complementation gene showed a significant increase in colony size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a negative control result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "858e3ec3-5964-4b00-b96c-a9a371d43833",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C69",
+      "claim": "Five strains expressing the reference allele of acrB were tested in pseudomonic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the five strains expressing the reference allele of acrB tested in pseudomonic acid, three harbored nonsynonymous variants in their chromosomal copy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific number.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "dcebda8d-80ce-48ee-abb2-04aa60395186",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C70",
+      "claim": "Three of the five strains expressing the reference allele of acrB harbored nonsynonymous variants in their chromosomal copy.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the five strains expressing the reference allele of acrB tested in pseudomonic acid, three harbored nonsynonymous variants in their chromosomal copy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific number.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "004321b7-bbb9-458d-ac6d-8f3a80944434",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C71",
+      "claim": "ECOR-42 harbors a single deleterious nonsynonymous variant (A915D) in the transmembrane domain of AcrB.",
+      "claim_type": "EXPLICIT",
+      "source": "Both ECOR-42 and ECOR-28 harbor a single deleterious nonsynonymous variant (SIFT, p-value~0.01) in the transmembrane domain of the protein (A915D and T1013I, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific mutation and location.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "4b9714dc-abc5-422f-a011-879fb7050500",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C72",
+      "claim": "ECOR-28 harbors a single deleterious nonsynonymous variant (T1013I) in the transmembrane domain of AcrB.",
+      "claim_type": "EXPLICIT",
+      "source": "Both ECOR-42 and ECOR-28 harbor a single deleterious nonsynonymous variant (SIFT, p-value~0.01) in the transmembrane domain of the protein (A915D and T1013I, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific mutation and location.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "0bceda8c-15da-4289-84c7-5c0578f8b1e7",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C73",
+      "claim": "Strain IAI30 carries two nonsynonymous variants in AcrB: E567V and H596N.",
+      "claim_type": "EXPLICIT",
+      "source": "Strain IAI30 on the other hand carries two nonsynonymous variants: E567V and H596N, both located in the AcrB PC1 subdomain, which is involved in the entry of the ligand that will be then extruded by the efflux pump (Murakami et al., 2006; Seeger et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific mutations and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "6a76f2e0-b9ca-4b02-b2b4-8fa79fcdc168",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C74",
+      "claim": "E567V and H596N are both located in the AcrB PC1 subdomain.",
+      "claim_type": "EXPLICIT",
+      "source": "Strain IAI30 on the other hand carries two nonsynonymous variants: E567V and H596N, both located in the AcrB PC1 subdomain, which is involved in the entry of the ligand that will be then extruded by the efflux pump (Murakami et al., 2006; Seeger et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "6a595d7d-28e9-446a-8f67-fce4845d0dfd",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C75",
+      "claim": "The AcrB PC1 subdomain is involved in the entry of the ligand that will be extruded by the efflux pump.",
+      "claim_type": "EXPLICIT",
+      "source": "Strain IAI30 on the other hand carries two nonsynonymous variants: E567V and H596N, both located in the AcrB PC1 subdomain, which is involved in the entry of the ligand that will be then extruded by the efflux pump (Murakami et al., 2006; Seeger et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Murakami et al., 2006 and Seeger et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "f56e3e1a-239d-48d7-b8dc-cd04de33ed14",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C76",
+      "claim": "The E567V variant is predicted to be highly deleterious (SIFT, p-value~0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Since the E567V variant is predicted to be highly deleterious (SIFT, p-value~0.001), we presume that it impairs the fundamental drug uptake function of the AcrAB-TolC multidrug efflux pump, while the variants in the other two strains might not be significantly affecting the pump's function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with specific SIFT p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "e024f123-b3fb-432a-9ba0-2792eb45ee07",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C77",
+      "claim": "The E567V variant likely impairs the fundamental drug uptake function of the AcrAB-TolC multidrug efflux pump.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the E567V variant is predicted to be highly deleterious (SIFT, p-value~0.001), we presume that it impairs the fundamental drug uptake function of the AcrAB-TolC multidrug efflux pump, while the variants in the other two strains might not be significantly affecting the pump's function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the high deleteriousness prediction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "2acc565a-3974-49a0-8d20-79f56bbc0501",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C78",
+      "claim": "The variants in ECOR-42 and ECOR-28 might not be significantly affecting the AcrB pump's function.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the E567V variant is predicted to be highly deleterious (SIFT, p-value~0.001), we presume that it impairs the fundamental drug uptake function of the AcrAB-TolC multidrug efflux pump, while the variants in the other two strains might not be significantly affecting the pump's function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on comparison with IAI30 variant.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "8deb620b-4840-4ff1-bb4b-750e319ce2ee",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C79",
+      "claim": "The study observed little to no correlation between genotypic and phenotypic distance across strains.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed little to no correlation between genotypic and phenotypic distance across strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "22b17fce-2e64-4893-85e7-424143e307a0",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C80",
+      "claim": "The mechanistic-based model directly pinpoints the causal variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Our mechanistic-based model directly pinpoints the causal variants and allows us to design successful genetic therapies, something that is often the bottleneck in traditional GWAS approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as an advantage of the approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "27a56a11-d7b2-4c43-aa7a-70f94b4820fd",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C81",
+      "claim": "The approach opens up the door for predicting strain functional capacities in less studied microbes with sole requirements being the strain genome sequence and knowledge of gene function in a model strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our approach opens up the door for predicting strain functional capacities in less studied microbes, such as those present in the human microbiome, with sole requirements being the strain genome sequence and knowledge of gene function in a model strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a potential application.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "ab9baddc-1e8c-48d6-b4ba-07e9a5999394",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C82",
+      "claim": "Epistatic interactions, the impact of synonymous variants, variants in non-coding regions and the large accessory genome are four possible factors influencing phenotypic diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Epistatic interactions, the impact of synonymous variants, variants in non-coding regions and the large accessory genome are four possible factors influencing phenotypic diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as possible explanations for prediction limitations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "aef271cd-cd32-4c98-a0cc-9bcb6aa40409",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C83",
+      "claim": "The study observed a lower overall accuracy compared to the previous application of this method to S. cerevisiae strains.",
+      "claim_type": "EXPLICIT",
+      "source": "As compared to the previous application of this method to S. cerevisiae strains (Jelier et al., 2011), we observed a lower overall accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "c5dd856a-45f1-4e0e-a7d3-2a39dc62787f",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C84",
+      "claim": "The larger and more diverse strains cohort, the higher diversity in conditions tested, and the larger genetic diversity in bacteria are potential causes for the differences in accuracy compared to S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "The larger and more diverse strains cohort, the higher diversity in conditions tested, including several concentrations for each chemical, and the larger genetic diversity in bacteria are potential causes for the differences we have observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about causes of lower accuracy.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "7f967d9a-6da8-44d5-aa94-cbceb1a7c306",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C85",
+      "claim": "Conditional essentiality may not be conserved across strains and may interact with each specific genetic background.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, we postulate that conditional essentiality may not be conserved across strains and therefore that it interacts with each specific genetic background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on prediction results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "6ae579e3-5530-4ee6-ad25-b2f09a021460",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C86",
+      "claim": "Previous work in two closely related S. cerevisiae strains and five human cancer cell lines has shown that gene-specific phenotypes can diverge considerably.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work in two closely related S. cerevisiae strains and five human cancer cell lines has shown that gene-specific phenotypes can diverge considerably (Ryan et al., 2012; Hart et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ryan et al., 2012 and Hart et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "55549dd2-1ee4-4a82-92b3-3aa5a73ff334",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C87",
+      "claim": "Genetic background dependence of gene-specific phenotypes is expected to be stronger in E. coli and other bacteria given their higher genetic variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Given their higher genetic variability, this genetic background dependence of gene-specific phenotypes is expected to be stronger in E. coli and other bacteria, even though this remains to be tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on known genetic variability of bacteria.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "c0c889e3-8fbe-499e-bc4c-7eb69c4ccae6",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C88",
+      "claim": "Strains were sequenced using various Illumina paired-end platforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Strains whose genome sequence were not yet available were sequenced using various Illumina paired-end platforms (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "24c9c52c-82a3-43ee-b327-143c98f89d29",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C89",
+      "claim": "Reads were assembled with Spades version 3.5.0.",
+      "claim_type": "EXPLICIT",
+      "source": "Reads were assembled with Spades (Bankevich et al., 2012) version 3.5.0, using different k-mer sizes according to reads length and with the 'careful' option to reduce assembly errors; contigs below 200 base pairs were excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in Materials and methods with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "b5bd1d06-9c5d-4622-898c-a52f8db474f3",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C90",
+      "claim": "Contigs below 200 base pairs were excluded from assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "Reads were assembled with Spades (Bankevich et al., 2012) version 3.5.0, using different k-mer sizes according to reads length and with the 'careful' option to reduce assembly errors; contigs below 200 base pairs were excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "8e2ce909-52e3-46fd-9eb8-91a682ad36cc",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C91",
+      "claim": "Assembled contigs were annotated using Prokka version 1.11.",
+      "claim_type": "EXPLICIT",
+      "source": "Resulting assembled contigs were annotated for coding genes, ribosomal RNAs and tRNAs using Prokka (Seemann, 2014) version 1.11.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in Materials and methods with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "922dced0-47ca-43d0-802a-1f12f5971bf2",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C92",
+      "claim": "SNPs were called through whole genome alignment using ParSNP version 1.2.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the variability in sequencing technologies or lack of the original reads for the already sequenced strains in the collection (N = 373), SNPs were called through a whole genome alignment between each strain and the genome of the reference individual (Escherichia coli str. K-12 substr. MG1655, RefSeq accession: NC_000913.3, strain collection identifier NT12001), using ParSNP (Treangen et al., 2014) version 1.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in Materials and methods with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "875a3c1c-2892-451e-84dc-1a1fe066c82e",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C93",
+      "claim": "The reference strain is Escherichia coli str. K-12 substr. MG1655 (RefSeq accession: NC_000913.3).",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the variability in sequencing technologies or lack of the original reads for the already sequenced strains in the collection (N = 373), SNPs were called through a whole genome alignment between each strain and the genome of the reference individual (Escherichia coli str. K-12 substr. MG1655, RefSeq accession: NC_000913.3, strain collection identifier NT12001), using ParSNP (Treangen et al., 2014) version 1.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "491ee4cb-3236-4bf0-b491-7ddf837cce03",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C94",
+      "claim": "Functional impact of nonsynonymous substitutions was computed using SIFT version 5.1.1.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional impact of nonsynonymous substitutions has been computed using SIFT (Ng and Henikoff, 2001) version 5.1.1, using uniref50 as a sequence search database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in Materials and methods with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "f10ebda7-9f7d-41d8-baae-7d294934b04a",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C95",
+      "claim": "Structural impact of nonsynonymous substitutions was computed using FoldX version 4.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural impact of nonsynonymous substitutions has been computed using FoldX (Guerois et al., 2002) version 4; both 3-D structures present in the PDB database and homology models were used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in Materials and methods with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "a06ac398-5c4b-4952-ad95-d91c721a1ec5",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C96",
+      "claim": "Homology models were created using ModPipe version 2.2.0.",
+      "claim_type": "EXPLICIT",
+      "source": "Homology models were created using ModPipe (Pieper et al., 2014) version 2.2.0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in Materials and methods with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "0806dfd3-99d5-4a53-afc0-9137daf705c9",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C97",
+      "claim": "Mutations with known impact on the reference individual were downloaded from Uniprot (N = 3673).",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations with known impact on the reference individual have been downloaded from Uniprot (UniProt Consortium, 2015, N = 3673) and used to derive such conversion; since only 580 mutations are reported to have a neutral impact, we added all observed nonsynonymous variants affecting known essential genes (as reported in the OGEE database, Chen et al., 2017) to the list of tolerated mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in Materials and methods with citation and specific number.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "bfc977f4-97ae-48d8-8a65-bf11fee45fa1",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C98",
+      "claim": "Only 580 mutations from Uniprot are reported to have a neutral impact.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations with known impact on the reference individual have been downloaded from Uniprot (UniProt Consortium, 2015, N = 3673) and used to derive such conversion; since only 580 mutations are reported to have a neutral impact, we added all observed nonsynonymous variants affecting known essential genes (as reported in the OGEE database, Chen et al., 2017) to the list of tolerated mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in Materials and methods with specific number.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "ccf9b84c-b900-474d-a0de-c51203a47dbb",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C99",
+      "claim": "Variants with relatively high frequency (>=10%) in the strains collection were not considered in the disruption score calculation.",
+      "claim_type": "EXPLICIT",
+      "source": "Variants with relatively high frequency (>=10%) in the strains collection were not considered, as well as those reference genes that are absent in a significant number of strains (>=10%), as we reasoned that they are unlikely to be deleterious given their high observed frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in Materials and methods with specific threshold.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "6897f029-d9b9-4f29-9e32-f0b5afc343b6",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C100",
+      "claim": "Reference genes that are absent in a significant number of strains (>=10%) were not considered in the disruption score calculation.",
+      "claim_type": "EXPLICIT",
+      "source": "Variants with relatively high frequency (>=10%) in the strains collection were not considered, as well as those reference genes that are absent in a significant number of strains (>=10%), as we reasoned that they are unlikely to be deleterious given their high observed frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in Materials and methods with specific threshold.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "4a35dc36-02ca-4db0-9597-8b9f55a1f762",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C101",
+      "claim": "The strain collection was plated in three solid agar plates, each containing 1536 single colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "The strain collection was plated in three solid agar plates, each one containing 1536 single colonies, so that each strain was plated at least four times in each plate, each time with different neighboring strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "54e444bc-9bdf-4ceb-85a0-15bcf15d0d98",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C102",
+      "claim": "Each strain was plated at least four times in each plate with different neighboring strains.",
+      "claim_type": "EXPLICIT",
+      "source": "The strain collection was plated in three solid agar plates, each one containing 1536 single colonies, so that each strain was plated at least four times in each plate, each time with different neighboring strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "94353147-fdcc-4057-ae88-750866f3a380",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C103",
+      "claim": "Three replicates were prepared for each condition.",
+      "claim_type": "EXPLICIT",
+      "source": "For each condition we prepared three replicates (each one using a different source plate to reduce batch effects) with the concentrations indicated in Supplementary file 2 and the addition of the Cosmos dye (CAS number 573-58-0) and Coomasie brilliant blue R-250 (CAS number 6104-59-2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "805f4542-32d8-42d1-b4cd-347cd9fea705",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C104",
+      "claim": "Colony parameters were extracted using Iris version 0.9.4.71.",
+      "claim_type": "EXPLICIT",
+      "source": "A series of colony parameters were extracted from each photograph, using Iris (Kritikos et al., 2017) version 0.9.4.71: colony size, opacity, roundness and color intensity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in Materials and methods with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "3f9145d8-f338-497b-b18f-7572afcbd09d",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C105",
+      "claim": "The EMAP algorithm was used to derive S-scores with default parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "The final colony sizes were used as an input for the EMAP algorithm (Collins et al., 2006), with default parameters, in order to derive an S-score, which informs on the deviation of each strain from the expected growth in each condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in Materials and methods with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "b783794a-7bd4-41c9-875a-b772c2d1dd8b",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C106",
+      "claim": "New genomic sequences have been deposited at the European Nucleotide Archive (ENA) with accession number PRJEB20550.",
+      "claim_type": "EXPLICIT",
+      "source": "New genomic sequences have been deposited at the European Nucleotide Archive (ENA) with accession number PRJEB20550.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "fbec752d-bc79-41bb-8edc-109b0fab082e",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C107",
+      "claim": "The correlation between replicates of the complementation experiment was high (Pearson's r: 0.94).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we observed a high correlation between replicates of this experiment (Pearson's r: 0.94, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated with specific correlation value and reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "918c5d1a-d383-4d80-a82e-ec1843fc8ff2",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C108",
+      "claim": "The clustering of conditions based on phenotypic profiles was consistent with the conditions macro-categories.",
+      "claim_type": "EXPLICIT",
+      "source": "Clustering of conditions based on phenotypic profiles across all strains was consistent with the conditions macro-categories (e.g. stresses versus nutrient sources) and with the number of sensitive strains (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated with reference to Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "4ae5f4b9-b8eb-4010-bc55-c528daf63c9b",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C109",
+      "claim": "The correlation of phenotypic profiles clustered drugs with same mode of action.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation of phenotypic profiles also clustered drugs with same mode of action (MoA), as shown by comparing the clusters' purity against those of random clusters (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated with reference to Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "e1b42ab0-9f45-4e2d-bad6-8bab5ef3c2db",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C110",
+      "claim": "Most variants across these strains have a neutral impact on their phenotypes.",
+      "claim_type": "IMPLICIT",
+      "source": "This finding reinforces the idea that most variants across these strains have a neutral impact on their phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the lack of correlation between genetic and phenotypic distance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "82eb9970-0ff1-4238-95f2-6019a1942301",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C111",
+      "claim": "Few DNA variants are sufficient to cause clear phenotypic differences.",
+      "claim_type": "EXPLICIT",
+      "source": "These results clearly underline that simple metrics of phylogenetic similarity are not predictive of differences in phenotype. Instead, few DNA variants are sufficient to cause clear phenotypic differences, indicating the importance of statistical or predictive strategies to prioritize those variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated based on observations from LTEE strains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "7cde0457-2908-4ed3-9fa6-221cb50ffd84",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C112",
+      "claim": "The effect of the loss of function of a gene is assumed to be independent of the genetic background.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that it would also test the limits of the underlying assumption of this model, which is that the effect of the loss of function of a gene is independent of the genetic background (Dowell et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as an assumption of the model with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "a04f0c8e-fb8c-4806-8353-cd02b63d666e",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "claim_id": "C113",
+      "claim": "The set of conditionally essential genes has diverged substantially across strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Since our predictions did not apply equally well for all conditions, we conclude that the set of conditionally essential genes has diverged substantially across strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on variable prediction accuracy across conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c0e5101a-9faa-4ade-be8b-49fb33339c03",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study assembled a large E. coli strain panel consisting of 894 strains (527 natural isolates and 367 from evolution experiments), of which 696 were genotyped and all were phenotyped across 214 growth conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C18-C24 provide consistent, specific numbers for the strain collection composition and sequencing efforts. The numbers are internally consistent (321 + 375 = 696 sequenced strains out of 894 total), and the methodology for genome sequencing is described in detail (C88-C93). This represents a well-documented resource assembly.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "804b0ad9-e40a-4055-a36b-3e72b1a306f8",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Phenotypic measurements using colony size as a fitness proxy showed high reproducibility with biological replicates correlated at r=0.693 and technical replicates at r=0.648, generating 114,004 measurements across the strain-condition matrix.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 and C101-C105 describe the phenotyping methodology and quality metrics with specific correlation values and sample sizes. The experimental design includes appropriate replication (3 biological replicates, 4 technical replicates per strain per plate) and the correlation values indicate reasonable reproducibility for high-throughput phenotyping, though not exceptional.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "904d540b-ded8-45d9-82bc-842b55db2786",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Phenotypic profiles clustered conditions by biological categories and grouped drugs by mode of action better than random expectation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C109 with supporting Figure 1C-D demonstrate that the phenotypic data recapitulates known biological relationships. The comparison to random clusters provides appropriate statistical validation. This validates the biological relevance of the phenotypic measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "b94d0571-b0a7-4419-a3a9-4f58b7a74d57",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Phylogenetic distance shows little to no correlation with phenotypic distance (r=0.07-0.08), suggesting most genetic variants have neutral phenotypic effects and that few variants are sufficient to cause phenotypic differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C32, C79-C111 consistently report very low correlations between genetic and phenotypic distance using phylogenetic independent contrasts to account for relatedness. The interpretation that most variants are neutral is reasonable given the low correlation, though alternative explanations (e.g., epistasis, non-additive effects) are not fully explored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "019cff74-5799-4de6-a6fa-5cdc93e4c547",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Among LTEE strains, 77 of 266 tested (29%) exhibited at least one conditional growth defect, with hypermutators showing slightly more phenotypes (Cohen's d=0.513).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 provide specific numbers and effect sizes for LTEE strain phenotypes. The modest effect size for hypermutators (Cohen's d=0.513) is appropriately characterized as 'slight.' The data demonstrate phenotypic variation even among closely related evolved strains.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "5efb22ad-c4e5-4d1e-b044-3c898a388772",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Variant effect prediction used structural models covering 60.2% of proteins (50.9% of residues) and sequence alignments covering 94.7% of proteins (95.9% of residues), with functional impacts computed using SIFT and structural impacts using FoldX.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 and C94-C96 provide specific coverage statistics and cite established tools (SIFT, FoldX, ModPipe) with version numbers. The dual approach using both sequence and structure-based predictions is methodologically sound, though the incomplete coverage (especially for structural models) is a limitation acknowledged by the specific percentages reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "6c5ffd47-33e2-49d1-949c-574e3ff843b7",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Gene disruption scores show biological validity: essential and conserved genes have lower disruption scores, and genes with correlated disruption patterns tend to be functionally associated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 with Figure 2B-E demonstrate that the disruption score metric captures biologically meaningful information. The validation against known essential genes, conserved genes, and functional associations (operons, complexes, pathways) provides multiple independent lines of evidence for the score's validity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "49b6efc1-d36f-4010-8e69-db353ebb996c",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The predictive model combining gene disruption scores with K-12 conditional essentiality data achieved significant predictive power for 38% of conditions with \u22655% strains showing growth defects (20% for conditions with \u22651% affected strains), with both SNVs and gene presence/absence contributing to predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C20, C40-C43 describe the predictive model and its performance with specific percentages. The performance improves with higher prevalence of phenotypes, which is expected. However, the 38% success rate means 62% of conditions are not well-predicted, indicating substantial limitations. The model is appropriately validated against randomizations (C45) and independent GWAS analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "83faa67c-3352-46d2-a796-335077c38ecb",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Weighting conditionally essential genes by their conservation improved predictions, and well-predicted conditions (PR-AUC\u22650.1) showed significant overlap with genes identified by independent association analysis (Fisher's exact test p=0.005).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 describe model improvements and independent validation. The Fisher's exact test provides statistical support for the model's validity. The weighting scheme is a reasonable methodological refinement, though the improvement is stated to be mainly for already well-predicted conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "dfd6fba3-6956-4d52-a568-5260174a9e90",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Analysis of pseudomonic acid predictions revealed that 13 of 25 top-scoring strains were misclassified, with 7 having mutations in lpcA/rfaE (LPS biosynthesis genes), suggesting these genes may be conditionally essential only in K-12.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C52 provide detailed analysis of prediction failures with specific numbers. The interpretation that lpcA/rfaE essentiality may be strain-specific is reasonable speculation (C52) based on the observation that only 1 correctly predicted strain had mutations in these genes. This illustrates an important limitation: conditional essentiality may not be conserved across strains.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "8e14c855-e759-40e3-bc3b-1fea39d023df",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "ECOR-27 and ECOR-58 have similar disruption profiles and both carry deleterious acrB mutations (E414G and I466T respectively), yet only ECOR-27 showed growth defects, suggesting epistatic effects or changes in conditional essentiality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C58 describe a specific case of prediction failure with molecular details. The observation is well-documented, and the speculation about epistasis or variable essentiality (C58) is appropriately cautious. This case study effectively illustrates the model's limitations and the complexity of genotype-phenotype relationships.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "028c6ae4-5b45-4811-a2d7-651346255ed4",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Complementation experiments validated causal variant predictions: 64 strain-condition combinations were tested, showing significant differences (p=8.4\u00d710\u207b\u00b9\u00b9) between predicted restorations (N=14) and controls (N=50), with all predicted complementations showing significant growth improvement (p<0.01).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C59-C68 describe systematic experimental validation with appropriate statistical tests and controls. The highly significant p-value (8.4\u00d710\u207b\u00b9\u00b9) for the overall comparison and individual t-tests (p<0.01) for each complementation provide strong evidence. The inclusion of negative controls (different genes, empty plasmids) strengthens the conclusions. This is a key validation of the predictive model's utility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "7305615e-d002-4b8e-b7aa-1cc5b56ce58f",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Detailed analysis of acrB complementation in pseudomonic acid revealed that IAI30's E567V variant (SIFT p~0.001) in the PC1 ligand-entry subdomain likely impairs efflux function, while ECOR-42 and ECOR-28 transmembrane variants (A915D, T1013I) may not significantly affect function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C78 provide molecular-level interpretation of complementation results using structural information and deleteriousness predictions. The mapping to 3D structure (Figure 5G) and functional domain knowledge (C75) support the mechanistic interpretation. However, C77-C78 involve speculation about functional effects that could benefit from additional biochemical validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "ab159c53-958c-413d-8670-a1e05a4e549d",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The mechanistic model directly identifies causal variants enabling genetic interventions, and could potentially predict functional capacities in less-studied microbes requiring only genome sequence and model strain gene function knowledge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C80 is supported by the successful complementation experiments (C6, C66-C68). Claim C81 is speculative about future applications but reasonable given the demonstrated proof-of-concept. The advantage over GWAS in identifying causal variants is valid, though the 38% prediction success rate indicates substantial room for improvement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "45c16bb3-728c-483e-ab18-c4c745321299",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The model shows lower accuracy than previous S. cerevisiae applications, potentially due to larger strain diversity, more conditions tested, and bacterial genetic diversity. The authors conclude that conditional essentiality has diverged substantially across strains and may be genetic background-dependent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C85, C87, C113 discuss limitations and provide reasonable speculation about causes. The comparison to S. cerevisiae (C83, C86) is appropriate. The conclusion about divergence of conditional essentiality (C113) follows logically from variable prediction accuracy across conditions. However, these remain hypotheses requiring direct testing through systematic conditional essentiality profiling in multiple strains.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "265c00ed-1105-46ee-8dd5-384dffd397b2",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Detailed computational methods are provided including sequencing platforms, assembly (Spades v3.5.0), annotation (Prokka v1.11), SNP calling (ParSNP v1.2), and variant filtering thresholds (\u226510% frequency excluded), with data deposited at ENA (PRJEB20550) and high experimental reproducibility (r=0.94 for complementation).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C93, C97-C100, C106-C107 provide comprehensive methodological details with specific software versions and parameters. The 10% frequency threshold for variant filtering (C99-C100) is reasonable but somewhat arbitrary. Data deposition (C106) supports reproducibility. These methodological details are essential for reproducibility but represent standard practices rather than novel contributions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    },
+    {
+      "id": "22f80f42-080f-43e0-aaa7-ecaa6b0616ee",
+      "content_id": "2995b6f5-c2de-4fd1-ac51-03e4299a5ade",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The manuscript contextualizes the work within existing literature on GWAS limitations, variant effect prediction, chemical genetics, E. coli diversity, and previous applications in S. cerevisiae, establishing the rationale and novelty of the approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C17, C63, C75, C86, C112 cite appropriate prior work to establish context. The citations appear accurate based on the claims made. The assumption that gene loss-of-function effects are independent of genetic background (C112) is explicitly stated and appropriately questioned by the results. This background effectively motivates the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:43:57.254091Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8533a20b-6b8b-4f03-8eac-68abe9c66609",
+      "result_id": "c0e5101a-9faa-4ade-be8b-49fb33339c03"
+    },
+    {
+      "claim_id": "28f07fa5-6d97-4cdb-b308-1ebac6401142",
+      "result_id": "c0e5101a-9faa-4ade-be8b-49fb33339c03"
+    },
+    {
+      "claim_id": "2666b6d0-e437-4b53-b3d1-db2360fade51",
+      "result_id": "c0e5101a-9faa-4ade-be8b-49fb33339c03"
+    },
+    {
+      "claim_id": "e8995519-e50f-4757-96cd-78356b727bff",
+      "result_id": "c0e5101a-9faa-4ade-be8b-49fb33339c03"
+    },
+    {
+      "claim_id": "78f68dd4-c347-4dea-b24b-9f8c5aa181f0",
+      "result_id": "c0e5101a-9faa-4ade-be8b-49fb33339c03"
+    },
+    {
+      "claim_id": "e28a63db-7c53-4c85-824e-2099fe8aff60",
+      "result_id": "c0e5101a-9faa-4ade-be8b-49fb33339c03"
+    },
+    {
+      "claim_id": "7f446bc1-6634-4712-812c-348a9916f2f1",
+      "result_id": "c0e5101a-9faa-4ade-be8b-49fb33339c03"
+    },
+    {
+      "claim_id": "4c9c86c3-53e5-409e-beb7-17cdca8e9270",
+      "result_id": "c0e5101a-9faa-4ade-be8b-49fb33339c03"
+    },
+    {
+      "claim_id": "dbf1acd8-61de-4cb1-bd18-c97c0f3c9b65",
+      "result_id": "804b0ad9-e40a-4055-a36b-3e72b1a306f8"
+    },
+    {
+      "claim_id": "5532f64d-83de-46a5-bbb0-c44ca1f5106f",
+      "result_id": "804b0ad9-e40a-4055-a36b-3e72b1a306f8"
+    },
+    {
+      "claim_id": "0f02c5d0-d20e-4438-8131-374284d21d84",
+      "result_id": "804b0ad9-e40a-4055-a36b-3e72b1a306f8"
+    },
+    {
+      "claim_id": "a0e2a9a8-63b5-4647-a154-01c5858f2a5c",
+      "result_id": "804b0ad9-e40a-4055-a36b-3e72b1a306f8"
+    },
+    {
+      "claim_id": "4a35dc36-02ca-4db0-9597-8b9f55a1f762",
+      "result_id": "804b0ad9-e40a-4055-a36b-3e72b1a306f8"
+    },
+    {
+      "claim_id": "54e444bc-9bdf-4ceb-85a0-15bcf15d0d98",
+      "result_id": "804b0ad9-e40a-4055-a36b-3e72b1a306f8"
+    },
+    {
+      "claim_id": "94353147-fdcc-4057-ae88-750866f3a380",
+      "result_id": "804b0ad9-e40a-4055-a36b-3e72b1a306f8"
+    },
+    {
+      "claim_id": "805f4542-32d8-42d1-b4cd-347cd9fea705",
+      "result_id": "804b0ad9-e40a-4055-a36b-3e72b1a306f8"
+    },
+    {
+      "claim_id": "3f9145d8-f338-497b-b18f-7572afcbd09d",
+      "result_id": "804b0ad9-e40a-4055-a36b-3e72b1a306f8"
+    },
+    {
+      "claim_id": "918c5d1a-d383-4d80-a82e-ec1843fc8ff2",
+      "result_id": "904d540b-ded8-45d9-82bc-842b55db2786"
+    },
+    {
+      "claim_id": "4ae5f4b9-b8eb-4010-bc55-c528daf63c9b",
+      "result_id": "904d540b-ded8-45d9-82bc-842b55db2786"
+    },
+    {
+      "claim_id": "00352f5d-a612-4c0a-a1f2-0e18e7570101",
+      "result_id": "b94d0571-b0a7-4419-a3a9-4f58b7a74d57"
+    },
+    {
+      "claim_id": "898c68b3-1e36-482d-aff9-3cf230cd5aa2",
+      "result_id": "b94d0571-b0a7-4419-a3a9-4f58b7a74d57"
+    },
+    {
+      "claim_id": "8deb620b-4840-4ff1-bb4b-750e319ce2ee",
+      "result_id": "b94d0571-b0a7-4419-a3a9-4f58b7a74d57"
+    },
+    {
+      "claim_id": "e1b42ab0-9f45-4e2d-bad6-8bab5ef3c2db",
+      "result_id": "b94d0571-b0a7-4419-a3a9-4f58b7a74d57"
+    },
+    {
+      "claim_id": "82eb9970-0ff1-4238-95f2-6019a1942301",
+      "result_id": "b94d0571-b0a7-4419-a3a9-4f58b7a74d57"
+    },
+    {
+      "claim_id": "0b6f8460-ca00-411d-b8f8-e76984107572",
+      "result_id": "019cff74-5799-4de6-a6fa-5cdc93e4c547"
+    },
+    {
+      "claim_id": "f1987350-01ba-4f08-8db4-bd4f61fac617",
+      "result_id": "019cff74-5799-4de6-a6fa-5cdc93e4c547"
+    },
+    {
+      "claim_id": "60a13a28-f483-4fb5-a48d-76a905e0b9c2",
+      "result_id": "019cff74-5799-4de6-a6fa-5cdc93e4c547"
+    },
+    {
+      "claim_id": "0546363b-aa6f-4929-8eb4-8b686f2f4352",
+      "result_id": "5efb22ad-c4e5-4d1e-b044-3c898a388772"
+    },
+    {
+      "claim_id": "c4570f0b-c218-4264-8e84-2640ef93ca00",
+      "result_id": "5efb22ad-c4e5-4d1e-b044-3c898a388772"
+    },
+    {
+      "claim_id": "88f0c750-7006-45f8-b740-4912ebfe2d5b",
+      "result_id": "5efb22ad-c4e5-4d1e-b044-3c898a388772"
+    },
+    {
+      "claim_id": "6a711b59-4caa-480b-b573-16c4059bd9ca",
+      "result_id": "5efb22ad-c4e5-4d1e-b044-3c898a388772"
+    },
+    {
+      "claim_id": "491ee4cb-3236-4bf0-b491-7ddf837cce03",
+      "result_id": "5efb22ad-c4e5-4d1e-b044-3c898a388772"
+    },
+    {
+      "claim_id": "f10ebda7-9f7d-41d8-baae-7d294934b04a",
+      "result_id": "5efb22ad-c4e5-4d1e-b044-3c898a388772"
+    },
+    {
+      "claim_id": "a06ac398-5c4b-4952-ad95-d91c721a1ec5",
+      "result_id": "5efb22ad-c4e5-4d1e-b044-3c898a388772"
+    },
+    {
+      "claim_id": "7c3c5701-8f3b-441f-b13b-b7d716210944",
+      "result_id": "6c5ffd47-33e2-49d1-949c-574e3ff843b7"
+    },
+    {
+      "claim_id": "0a913dc6-f699-485e-b61b-92cd54037562",
+      "result_id": "6c5ffd47-33e2-49d1-949c-574e3ff843b7"
+    },
+    {
+      "claim_id": "2d321183-c210-44df-87c5-9a210a8d950c",
+      "result_id": "49b6efc1-d36f-4010-8e69-db353ebb996c"
+    },
+    {
+      "claim_id": "1f2e3a3b-8f5f-490e-925d-32b82df9ef32",
+      "result_id": "49b6efc1-d36f-4010-8e69-db353ebb996c"
+    },
+    {
+      "claim_id": "e523bc64-07c9-4f1a-adac-ad307a7323f5",
+      "result_id": "49b6efc1-d36f-4010-8e69-db353ebb996c"
+    },
+    {
+      "claim_id": "fae29aa3-9233-4085-9ab2-4056194c60be",
+      "result_id": "49b6efc1-d36f-4010-8e69-db353ebb996c"
+    },
+    {
+      "claim_id": "bb80a7cf-59b6-4818-ab2b-0e0580e699de",
+      "result_id": "49b6efc1-d36f-4010-8e69-db353ebb996c"
+    },
+    {
+      "claim_id": "e2bb8819-7301-4215-8669-100d5bb5b689",
+      "result_id": "49b6efc1-d36f-4010-8e69-db353ebb996c"
+    },
+    {
+      "claim_id": "7b09c344-be81-40e2-bb44-82db7995688f",
+      "result_id": "49b6efc1-d36f-4010-8e69-db353ebb996c"
+    },
+    {
+      "claim_id": "b5c907b1-5578-4335-a3a8-42b71eb240cd",
+      "result_id": "49b6efc1-d36f-4010-8e69-db353ebb996c"
+    },
+    {
+      "claim_id": "05b9f546-d33b-4cc6-a25e-ec0d9b5b0c0c",
+      "result_id": "83faa67c-3352-46d2-a796-335077c38ecb"
+    },
+    {
+      "claim_id": "d5ac66aa-65bd-4f35-92d2-a9564b65b004",
+      "result_id": "83faa67c-3352-46d2-a796-335077c38ecb"
+    },
+    {
+      "claim_id": "a15b19cf-c16b-4078-93ac-19040ada050f",
+      "result_id": "dfd6fba3-6956-4d52-a568-5260174a9e90"
+    },
+    {
+      "claim_id": "d20a90ca-6671-4285-add4-479564c75d4d",
+      "result_id": "dfd6fba3-6956-4d52-a568-5260174a9e90"
+    },
+    {
+      "claim_id": "8a240c6d-40f3-45e6-8d13-5898c37ff41b",
+      "result_id": "dfd6fba3-6956-4d52-a568-5260174a9e90"
+    },
+    {
+      "claim_id": "c71da134-a43f-4233-812f-a67b9f1da65f",
+      "result_id": "dfd6fba3-6956-4d52-a568-5260174a9e90"
+    },
+    {
+      "claim_id": "be5eb314-4122-4892-9819-56dc5b3317dd",
+      "result_id": "dfd6fba3-6956-4d52-a568-5260174a9e90"
+    },
+    {
+      "claim_id": "eeb2b4a3-f75d-4cc2-a567-0cc9a95d957e",
+      "result_id": "dfd6fba3-6956-4d52-a568-5260174a9e90"
+    },
+    {
+      "claim_id": "e4b1d988-db2e-42a4-af94-b48d294caac7",
+      "result_id": "dfd6fba3-6956-4d52-a568-5260174a9e90"
+    },
+    {
+      "claim_id": "57b5df7e-a988-4d0e-a538-ead9de98c55e",
+      "result_id": "8e14c855-e759-40e3-bc3b-1fea39d023df"
+    },
+    {
+      "claim_id": "e9531236-9e94-4660-b6f4-47fc50b18477",
+      "result_id": "8e14c855-e759-40e3-bc3b-1fea39d023df"
+    },
+    {
+      "claim_id": "4134a991-1c77-493a-b4f9-61c41e0a547f",
+      "result_id": "8e14c855-e759-40e3-bc3b-1fea39d023df"
+    },
+    {
+      "claim_id": "291778bf-f646-4cb5-80cd-4ab0abbcb1a4",
+      "result_id": "8e14c855-e759-40e3-bc3b-1fea39d023df"
+    },
+    {
+      "claim_id": "48c5923f-9c49-497c-8518-65f6eac31ad0",
+      "result_id": "8e14c855-e759-40e3-bc3b-1fea39d023df"
+    },
+    {
+      "claim_id": "bd01aa81-5cad-4df1-a71e-2328e91eece7",
+      "result_id": "8e14c855-e759-40e3-bc3b-1fea39d023df"
+    },
+    {
+      "claim_id": "cb886d3a-d925-4958-9a70-cbc61070e798",
+      "result_id": "028c6ae4-5b45-4811-a2d7-651346255ed4"
+    },
+    {
+      "claim_id": "a7bb49ee-1f63-4756-907c-583a4616ff6d",
+      "result_id": "028c6ae4-5b45-4811-a2d7-651346255ed4"
+    },
+    {
+      "claim_id": "8018d0e3-c925-4465-87d9-2473feafa325",
+      "result_id": "028c6ae4-5b45-4811-a2d7-651346255ed4"
+    },
+    {
+      "claim_id": "5c761898-3e08-44ef-b29a-7469833dfccc",
+      "result_id": "028c6ae4-5b45-4811-a2d7-651346255ed4"
+    },
+    {
+      "claim_id": "223211eb-0af2-431d-b18e-c386b1ee7ef4",
+      "result_id": "028c6ae4-5b45-4811-a2d7-651346255ed4"
+    },
+    {
+      "claim_id": "c0ed1919-cf3a-456c-af10-855b549d0614",
+      "result_id": "028c6ae4-5b45-4811-a2d7-651346255ed4"
+    },
+    {
+      "claim_id": "947d777a-fe0e-4ef1-aceb-175cd24573a1",
+      "result_id": "028c6ae4-5b45-4811-a2d7-651346255ed4"
+    },
+    {
+      "claim_id": "9cdee8d8-a96e-46d4-a35b-838157f520c0",
+      "result_id": "028c6ae4-5b45-4811-a2d7-651346255ed4"
+    },
+    {
+      "claim_id": "a9600262-8e04-44d3-9d3a-22b7bd60b913",
+      "result_id": "028c6ae4-5b45-4811-a2d7-651346255ed4"
+    },
+    {
+      "claim_id": "55ca8d3a-642e-452c-b26d-e35e0bec5b30",
+      "result_id": "028c6ae4-5b45-4811-a2d7-651346255ed4"
+    },
+    {
+      "claim_id": "858e3ec3-5964-4b00-b96c-a9a371d43833",
+      "result_id": "7305615e-d002-4b8e-b7aa-1cc5b56ce58f"
+    },
+    {
+      "claim_id": "dcebda8d-80ce-48ee-abb2-04aa60395186",
+      "result_id": "7305615e-d002-4b8e-b7aa-1cc5b56ce58f"
+    },
+    {
+      "claim_id": "004321b7-bbb9-458d-ac6d-8f3a80944434",
+      "result_id": "7305615e-d002-4b8e-b7aa-1cc5b56ce58f"
+    },
+    {
+      "claim_id": "4b9714dc-abc5-422f-a011-879fb7050500",
+      "result_id": "7305615e-d002-4b8e-b7aa-1cc5b56ce58f"
+    },
+    {
+      "claim_id": "0bceda8c-15da-4289-84c7-5c0578f8b1e7",
+      "result_id": "7305615e-d002-4b8e-b7aa-1cc5b56ce58f"
+    },
+    {
+      "claim_id": "6a76f2e0-b9ca-4b02-b2b4-8fa79fcdc168",
+      "result_id": "7305615e-d002-4b8e-b7aa-1cc5b56ce58f"
+    },
+    {
+      "claim_id": "6a595d7d-28e9-446a-8f67-fce4845d0dfd",
+      "result_id": "7305615e-d002-4b8e-b7aa-1cc5b56ce58f"
+    },
+    {
+      "claim_id": "f56e3e1a-239d-48d7-b8dc-cd04de33ed14",
+      "result_id": "7305615e-d002-4b8e-b7aa-1cc5b56ce58f"
+    },
+    {
+      "claim_id": "e024f123-b3fb-432a-9ba0-2792eb45ee07",
+      "result_id": "7305615e-d002-4b8e-b7aa-1cc5b56ce58f"
+    },
+    {
+      "claim_id": "2acc565a-3974-49a0-8d20-79f56bbc0501",
+      "result_id": "7305615e-d002-4b8e-b7aa-1cc5b56ce58f"
+    },
+    {
+      "claim_id": "22b17fce-2e64-4893-85e7-424143e307a0",
+      "result_id": "ab159c53-958c-413d-8670-a1e05a4e549d"
+    },
+    {
+      "claim_id": "27a56a11-d7b2-4c43-aa7a-70f94b4820fd",
+      "result_id": "ab159c53-958c-413d-8670-a1e05a4e549d"
+    },
+    {
+      "claim_id": "ab9baddc-1e8c-48d6-b4ba-07e9a5999394",
+      "result_id": "45c16bb3-728c-483e-ab18-c4c745321299"
+    },
+    {
+      "claim_id": "aef271cd-cd32-4c98-a0cc-9bcb6aa40409",
+      "result_id": "45c16bb3-728c-483e-ab18-c4c745321299"
+    },
+    {
+      "claim_id": "c5dd856a-45f1-4e0e-a7d3-2a39dc62787f",
+      "result_id": "45c16bb3-728c-483e-ab18-c4c745321299"
+    },
+    {
+      "claim_id": "7f967d9a-6da8-44d5-aa94-cbceb1a7c306",
+      "result_id": "45c16bb3-728c-483e-ab18-c4c745321299"
+    },
+    {
+      "claim_id": "55549dd2-1ee4-4a82-92b3-3aa5a73ff334",
+      "result_id": "45c16bb3-728c-483e-ab18-c4c745321299"
+    },
+    {
+      "claim_id": "a04f0c8e-fb8c-4806-8353-cd02b63d666e",
+      "result_id": "45c16bb3-728c-483e-ab18-c4c745321299"
+    },
+    {
+      "claim_id": "c0c889e3-8fbe-499e-bc4c-7eb69c4ccae6",
+      "result_id": "265c00ed-1105-46ee-8dd5-384dffd397b2"
+    },
+    {
+      "claim_id": "24c9c52c-82a3-43ee-b327-143c98f89d29",
+      "result_id": "265c00ed-1105-46ee-8dd5-384dffd397b2"
+    },
+    {
+      "claim_id": "b5bd1d06-9c5d-4622-898c-a52f8db474f3",
+      "result_id": "265c00ed-1105-46ee-8dd5-384dffd397b2"
+    },
+    {
+      "claim_id": "8e2ce909-52e3-46fd-9eb8-91a682ad36cc",
+      "result_id": "265c00ed-1105-46ee-8dd5-384dffd397b2"
+    },
+    {
+      "claim_id": "922dced0-47ca-43d0-802a-1f12f5971bf2",
+      "result_id": "265c00ed-1105-46ee-8dd5-384dffd397b2"
+    },
+    {
+      "claim_id": "875a3c1c-2892-451e-84dc-1a1fe066c82e",
+      "result_id": "265c00ed-1105-46ee-8dd5-384dffd397b2"
+    },
+    {
+      "claim_id": "0806dfd3-99d5-4a53-afc0-9137daf705c9",
+      "result_id": "265c00ed-1105-46ee-8dd5-384dffd397b2"
+    },
+    {
+      "claim_id": "bfc977f4-97ae-48d8-8a65-bf11fee45fa1",
+      "result_id": "265c00ed-1105-46ee-8dd5-384dffd397b2"
+    },
+    {
+      "claim_id": "ccf9b84c-b900-474d-a0de-c51203a47dbb",
+      "result_id": "265c00ed-1105-46ee-8dd5-384dffd397b2"
+    },
+    {
+      "claim_id": "6897f029-d9b9-4f29-9e32-f0b5afc343b6",
+      "result_id": "265c00ed-1105-46ee-8dd5-384dffd397b2"
+    },
+    {
+      "claim_id": "b783794a-7bd4-41c9-875a-b772c2d1dd8b",
+      "result_id": "265c00ed-1105-46ee-8dd5-384dffd397b2"
+    },
+    {
+      "claim_id": "fbec752d-bc79-41bb-8edc-109b0fab082e",
+      "result_id": "265c00ed-1105-46ee-8dd5-384dffd397b2"
+    },
+    {
+      "claim_id": "8050af6f-b6b6-4f9e-877c-c187f1a1460f",
+      "result_id": "22f80f42-080f-43e0-aaa7-ecaa6b0616ee"
+    },
+    {
+      "claim_id": "dcb360be-ea2c-4a55-8ecf-43183b558006",
+      "result_id": "22f80f42-080f-43e0-aaa7-ecaa6b0616ee"
+    },
+    {
+      "claim_id": "22c83309-3554-420a-933c-a5d7319c4baf",
+      "result_id": "22f80f42-080f-43e0-aaa7-ecaa6b0616ee"
+    },
+    {
+      "claim_id": "9d80d6bf-01fc-4677-8d23-9241f190d7a7",
+      "result_id": "22f80f42-080f-43e0-aaa7-ecaa6b0616ee"
+    },
+    {
+      "claim_id": "d4da7565-e963-40d0-be41-23a86eac97e7",
+      "result_id": "22f80f42-080f-43e0-aaa7-ecaa6b0616ee"
+    },
+    {
+      "claim_id": "9ef59a1f-1925-47d6-99b7-51a62cbd4bc2",
+      "result_id": "22f80f42-080f-43e0-aaa7-ecaa6b0616ee"
+    },
+    {
+      "claim_id": "fe1e9d0f-7de5-4a60-b218-13c3ea8f874c",
+      "result_id": "22f80f42-080f-43e0-aaa7-ecaa6b0616ee"
+    },
+    {
+      "claim_id": "863558b0-4dc4-4d8c-9dee-d2282646171e",
+      "result_id": "22f80f42-080f-43e0-aaa7-ecaa6b0616ee"
+    },
+    {
+      "claim_id": "2f911cde-4a27-409a-9f9b-9f070a3673b9",
+      "result_id": "22f80f42-080f-43e0-aaa7-ecaa6b0616ee"
+    },
+    {
+      "claim_id": "ec1d610f-7527-4770-accb-444f71e1f642",
+      "result_id": "22f80f42-080f-43e0-aaa7-ecaa6b0616ee"
+    },
+    {
+      "claim_id": "4f143ae1-f891-4526-882c-2508733da69c",
+      "result_id": "22f80f42-080f-43e0-aaa7-ecaa6b0616ee"
+    },
+    {
+      "claim_id": "3a8c4e24-1244-4216-bd38-7992a051ae93",
+      "result_id": "22f80f42-080f-43e0-aaa7-ecaa6b0616ee"
+    },
+    {
+      "claim_id": "6a595d7d-28e9-446a-8f67-fce4845d0dfd",
+      "result_id": "22f80f42-080f-43e0-aaa7-ecaa6b0616ee"
+    },
+    {
+      "claim_id": "6ae579e3-5530-4ee6-ad25-b2f09a021460",
+      "result_id": "22f80f42-080f-43e0-aaa7-ecaa6b0616ee"
+    },
+    {
+      "claim_id": "7cde0457-2908-4ed3-9fa6-221cb50ffd84",
+      "result_id": "22f80f42-080f-43e0-aaa7-ecaa6b0616ee"
+    }
+  ],
+  "comparisons": []
+}

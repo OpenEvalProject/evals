@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Mtmr2 is identified as a member of the native Piezo2 interactome in DRG and is expressed in Piezo2-positive sensory neurons, with the two proteins in close proximity as demonstrated by PLA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 establish Mtmr2 as a significantly enriched Piezo2 interactor (C1), validate its expression in Piezo2-positive DRG neurons (C2, C54-C56), and demonstrate physical proximity via PLA (C3). The data from interactomics, immunohistochemistry, and PLA converge to support this result, though PLA in HEK293 cells shows high background requiring careful interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C65"
+    ],
+    "result": "Mtmr2 overexpression suppresses Piezo2-mediated RA-MA currents in both HEK293 cells and DRG neurons, with specificity for Piezo2 over Piezo1 and Kv1.1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C11 demonstrate that Mtmr2 overexpression reduces Piezo2 RA-MA current amplitude in HEK293 cells (C4) and DRG neurons (C9), increases displacement threshold in HEK293 cells (C5), while maintaining inactivation kinetics (C6, C11). Specificity is shown by lack of effect on Kv1.1 (C7) and Piezo1 (C8). The convergent electrophysiological data across two cell systems strongly support this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Mtmr2 knockdown potentiates Piezo2 RA-MA currents in DRG neurons without altering Piezo2 expression levels or membrane localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C18 show successful Mtmr2 knockdown (C12) increases RA-MA current amplitude (C16) without changing Piezo2 mRNA (C13), membrane expression (C14), or percentage of Piezo2-positive neurons (C15). The displacement threshold and inactivation kinetics remain unchanged (C17-C18). This bidirectional modulation (overexpression vs. knockdown) strongly supports Mtmr2's regulatory role on Piezo2 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Mtmr2 knockdown causes redistribution of MA current subpopulations with increased RA-MA and decreased IA-MA cells, while SA-MA currents remain unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 demonstrate that Mtmr2 knockdown does not affect IA-MA (C19) or SA-MA (C20) current amplitudes but causes significant redistribution of MA current subpopulations (C21). The data suggest specificity for Piezo2-mediated RA-MA currents, though the biological interpretation of the IA-MA population shift is acknowledged as uncertain due to unclear molecular identity of IA-MA currents.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C67"
+    ],
+    "result": "The catalytic activity of Mtmr2 is required for suppression of Piezo2 currents, as demonstrated by the catalytically inactive C417S mutant failing to suppress currents while maintaining physical proximity to Piezo2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 establish that Mtmr2 catalyzes PI(3,5)P2 dephosphorylation (C22-C24), and the catalytically inactive C417S mutant does not suppress Piezo2 currents (C25) despite maintaining proximity to Piezo2 (C27). This demonstrates that enzymatic activity, not just physical interaction, is required for functional modulation. The trend toward potentiation with C417S (C26) suggests possible dominant-negative effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C62",
+      "C77"
+    ],
+    "result": "Pharmacological inhibition of PI(3,5)P2 synthesis with Apilimod, but not PI(3)P synthesis with Wortmannin, reverses the potentiation of RA-MA currents caused by Mtmr2 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 show that Apilimod (PIKfyve inhibitor) significantly reduces RA-MA currents in Mtmr2 knockdown neurons (C29-C30), while Wortmannin has minimal effect (C28). Apilimod has no effect in wild-type neurons (C31), consistent with low basal PI(3,5)P2 levels. This pharmacological evidence supports PI(3,5)P2 as the key lipid mediator, though Wortmannin's lack of effect could reflect technical limitations or biological redundancy in PI(3)P synthesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Osmotic stress modulates Piezo2 RA-MA currents in a manner consistent with PI(3,5)P2-dependent regulation: extracellular hypotonicity counteracts Mtmr2 overexpression-induced suppression, while intracellular hypotonicity prevents Mtmr2 knockdown-induced potentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 demonstrate that osmotic manipulation of PI(3,5)P2 levels produces predicted effects on RA-MA currents: extracellular hypotonicity (expected to increase PI(3,5)P2) rescues Mtmr2 overexpression phenotype (C32), while intracellular hypotonicity (expected to decrease PI(3,5)P2) reverses Mtmr2 knockdown phenotype (C33). This is supported by prior literature on osmotic regulation of PI(3,5)P2 (C68-C70). The physiological manipulation provides strong support for the PI(3,5)P2 mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Mtmr2 knockdown does not alter cellular mechanical properties (Young's elastic modulus or tether force) as measured by AFM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 show no significant differences in Young's elastic modulus or tether force between Mtmr2 knockdown and control neurons. This negative result is important as it argues against global changes in membrane mechanics as the mechanism of Piezo2 modulation. However, the authors appropriately note that local changes in membrane tension near Piezo2 cannot be excluded by these measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C63"
+    ],
+    "result": "Piezo2 contains a PI(3,5)P2 binding region similar to TRPML1 that binds PI(3,5)P2 and PI(4,5)P2 in peptide-lipid binding assays, while the corresponding Piezo1 region does not bind PI(3,5)P2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 identify a polybasic region in Piezo2 with similarity to TRPML1's PI(3,5)P2 binding motif (C36). Peptide-lipid binding assays show the Piezo2 peptide binds PI(3,5)P2 and PI(4,5)P2 (C37-C38), while a 3Q mutant does not bind any lipid (C40). Despite 50% sequence identity (C41), the Piezo1 peptide does not bind PI(3,5)P2 (C42). This in vitro binding data supports direct lipid-protein interaction, though the physiological relevance requires validation in full-length protein context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "A Piezo2 mutant with the PI(3,5)P2 binding domain swapped with the corresponding Piezo1 sequence (P1 mutant) shows reduced sensitivity to Mtmr2 overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 demonstrate that the Piezo2 P1 mutant is only slightly attenuated by Mtmr2 overexpression, in contrast to the pronounced suppression of wild-type Piezo2. This domain-swap experiment provides functional evidence that the identified PI(3,5)P2 binding region confers sensitivity to Mtmr2-dependent regulation. The result supports the mechanistic link between the binding motif and functional modulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Piezo2 ion channels are critical determinants of light touch and proprioception in vertebrates, mediating RA-MA currents in DRG sensory neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 establish the biological context for the study, citing extensive prior literature demonstrating Piezo2's role in vertebrate mechanosensation. These are well-established facts in the field supported by multiple independent studies. This background information provides the rationale for investigating Piezo2 regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Prior work has established that Piezo2 RA-MA currents are modulated by lipids (PI(4,5)P2, PI(4)P, cholesterol), membrane tension, and protein-protein interactions (STOML3, Pericentrin).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 summarize established literature on Piezo2 regulation, providing context for the current study. These are well-documented findings from prior publications that establish the precedent for lipid and protein regulation of Piezo2. This background supports the rationale for investigating Mtmr2 and PI(3,5)P2 as novel regulators.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The authors propose a working model where Mtmr2 physically associates with Piezo2 to ensure localization in PI(3,5)P2 microdomains, allowing local control of Piezo2 function through dynamic regulation of PI(3,5)P2 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64 and C88-C90 present a mechanistic model based on the experimental data and known properties of PI(3,5)P2 microdomains. While the model is consistent with the data, key aspects remain speculative: (i) direct physical binding between Mtmr2 and Piezo2 is inferred from PLA but not definitively proven, (ii) the existence and composition of PI(3,5)P2 microdomains in DRG neurons is assumed based on other cell types, and (iii) whether Mtmr2 actively recruits Piezo2 to specific membrane compartments is not directly tested. The model is plausible but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Additional Mtmr family members (Mtmr1 and Mtmr5) were identified in the Piezo2 interactome, suggesting possible involvement of a multiprotein Mtmr complex in Piezo2 regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C76 identify Mtmr1 and Mtmr5 in the Piezo2 interactome and speculate about a multiprotein complex. While the interactomics identification (C73) is data-supported, the functional significance is entirely speculative (C76). The authors appropriately acknowledge this as a possibility requiring future investigation. No functional data on Mtmr1 or Mtmr5 effects on Piezo2 are presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "PI(3,5)P2 is a low-abundance lipid that can serve diverse cellular functions and is dynamically regulated in membrane microdomains in response to cellular stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 summarize established knowledge about PI(3,5)P2 biology from extensive prior literature. These are well-documented properties of PI(3,5)P2 that provide important context for understanding how it could regulate Piezo2. The microdomain organization (C86-C87) is particularly relevant to the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The authors speculate that Mtmr2-controlled PI(3,5)P2 availability could cause local changes in membrane tension, which has been shown to affect Piezo1 MA currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C92 present speculation about membrane tension as a potential mechanism linking PI(3,5)P2 to Piezo2 function. While membrane tension effects on Piezo1 are established (C92), the connection to PI(3,5)P2 and Piezo2 is speculative (C91). The AFM data (C34-C35) show no global changes in mechanical properties, and the authors acknowledge that local changes cannot be measured. This remains an untested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "The authors draw parallels to AMPA receptor regulation by PI(3,5)P2-controlled endosomal trafficking and note that Piezo1 has been localized to the endoplasmic reticulum, suggesting possible intracellular localization of Piezo2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C94 cite prior work on AMPA receptors and Piezo1 to speculate about possible intracellular localization of Piezo2. While the cited precedents are valid, no data on Piezo2 intracellular localization are presented. The authors appropriately frame this as speculation requiring future investigation. The parallel to AMPA receptors provides a plausible alternative mechanism but remains untested for Piezo2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Multiple Mtmr2 mutations have been implicated in Charcot-Marie-Tooth type 4B1 (CMT4B1) disease, a peripheral neuropathy characterized by abnormalities in myelination and nerve conduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 cite established literature linking Mtmr2 mutations to CMT4B1 disease. This is well-documented in the field and provides important context for the potential physiological and pathological relevance of Mtmr2 function in peripheral neurons. The authors appropriately suggest that investigating Piezo2 function in Mtmr2 mutant mice would be warranted.",
+    "result_type": "MINOR"
+  }
+]

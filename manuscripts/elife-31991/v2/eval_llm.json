@@ -1,0 +1,211 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C18",
+      "C19",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C30",
+      "C31"
+    ],
+    "result": "Serotonin acts via 5HT2A receptors to increase FSI excitability by causing depolarization (6.1\u00b11.1 mV), increased input resistance (31.1\u00b16.0%), and enhanced spiking. These effects persist in the presence of synaptic blockers and are blocked by the 5HT2A antagonist MDL100907.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7, C18-C24, C30-C31 provide converging evidence from multiple experimental approaches (bath application, optogenetic release of endogenous 5HT, pharmacological manipulations) with appropriate statistical analyses and controls. The 5HT2A receptor specificity is demonstrated through antagonist blockade (C22, C31). Sample sizes are adequate (n=7-10 for most experiments).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The mechanism underlying 5HT effects on FSI excitability is suppression of inward-rectifying potassium (Kir) channels. The 5HT-sensitive current displays inward rectification, reverses near potassium equilibrium potential (-99\u00b14.7 mV), and is blocked by cesium-based internal solution, barium, and 5HT2A antagonist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 provide strong mechanistic evidence through voltage-clamp experiments with multiple pharmacological controls (cesium, barium, MDL100907). The reversal potential matches predicted K+ equilibrium, and the rectification properties are consistent with Kir channels. However, sample size for antagonist experiments is small (n=3, C37).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Compartmental modeling demonstrates that reducing K+ conductance by 60-70% recapitulates experimental observations. Critically, only dendritic reduction of gK increases synaptic time constant while leaving EPSP amplitude unchanged, matching experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 show that computational modeling successfully predicts experimental outcomes. The model identifies dendritic localization as critical for the observed effects (C44), which is later validated experimentally. The explanation for unchanged EPSP amplitude despite increased Rin (C46-C47) is mechanistically sound, involving compensatory effects of reduced driving force and decreased attenuation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Dendritic iontophoresis of 5HT increases FSI firing rate with a space constant of 3.13 \u03bcm, confirming local dendritic action. Effects occur only when the iontophoretic pipette is <5 \u03bcm from dendrites and >30 \u03bcm from soma, ruling out diffusion to the soma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 provide strong spatial evidence for dendritic localization using two-photon guided iontophoresis. The distance-dependence experiments (C51) and control for somatic distance (C52) are well-designed. The small somatic depolarization (1.19\u00b10.69 mV, C49) compared to bath application suggests local dendritic effects dominate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C33",
+      "C34",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "5HT slows EPSP decay (tau increases from 10.4\u00b11.2 ms to 17.4\u00b13.5 ms) without changing amplitude, preferentially enhancing temporal summation at 10-20 ms inter-stimulus intervals (50-100 Hz, gamma frequency range). This effect is observed with both optogenetic stimulation and glutamate uncaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C33-C34, C53-C58 demonstrate frequency-specific enhancement of temporal summation through multiple experimental approaches. The lack of amplitude change (C33, C53) combined with increased decay time (C34, C54) is consistent across methods. Statistical support is strong with appropriate sample sizes (n=18-29 dendrites for uncaging experiments).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Computational modeling confirms that changing synaptic time constant alone is sufficient to produce frequency-specific enhancement of summation at 10-20 ms intervals. This effect is robust to variations in synaptic parameters and background noise levels that reduce Rin up to 33%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 demonstrate that the computational model reproduces experimental observations across multiple parameter variations. The robustness testing (C62-C63) strengthens confidence that the mechanism operates under physiological conditions. The algebraic model (C59) isolates the tau effect, while the compartmental model (C60-C61) includes realistic biophysical constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Chemogenetic activation of Gq-coupled DREADDs in FSIs mimics 5HT effects and preferentially enhances FSI spiking in response to gamma-frequency inputs (10 ms ISI). Similar results are obtained with the 5HT2A agonist \u03b1-methyl-5HT, confirming receptor specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C75 provide strong evidence for frequency-specific enhancement of spike output using orthogonal approaches (chemogenetics, pharmacology). The DREADD experiments include appropriate controls (C97). The convergence of results across methods (DREADD, 5HT2A agonist) strengthens the conclusion. Statistical analyses show clear frequency preference for 10 ms ISI (C70, C74).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Chemogenetic activation of FSIs increases the number of IPSCs in pyramidal neurons and shifts inter-event intervals toward 10-20 ms (gamma frequency), demonstrating that 5HT-mediated effects on FSIs translate to increased gamma-frequency inhibition in the prefrontal network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 demonstrate network-level consequences of FSI modulation. The experiments use an 'active slice' preparation with carbachol to simulate in vivo conditions. However, the sample size is small (n=5 cells, C76), and the experiments only show correlation between FSI activation and gamma-frequency IPSCs, not direct causation through the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "5HT application does not alter other intrinsic firing properties of FSIs beyond those related to membrane potential, input resistance, and rheobase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by systematic analysis of action potential properties shown in Figure 1\u2014figure supplement 1G-L. This negative result is important for establishing specificity of 5HT effects and is appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Somatostatin-expressing interneurons do not show changes in excitability with 5HT application, indicating that FSIs respond to serotonin in a unique manner compared to other MGE-derived interneuron types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 provide important cell-type specificity through comparison with SOM+ interneurons. The lack of effect in SOM+ cells (p=0.34 for Vm, p=0.14 for Rin) with adequate sample size (n=6) supports the conclusion. However, the claim of 'unique' response (C29) is somewhat overstated as only one other interneuron type was tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "The concentration of 30 \u03bcM 5HT used in experiments is sub-saturating, eliciting approximately 80% of the maximal response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 is supported by dose-response data in Figure 1\u2014figure supplement 2. This is important for establishing that the experimental concentration is physiologically relevant and not producing ceiling effects. The characterization strengthens interpretation of all other results using this concentration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "5HT application increases the number of spikes elicited by each light flash during optogenetic activation of glutamatergic inputs to FSIs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by data with strong statistical significance (p<0.0001 for treatment, flash number, and interaction) and adequate sample size (n=9). This demonstrates that 5HT enhances FSI responses to patterned synaptic input, bridging intrinsic excitability changes to synaptic integration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "CNO has no effect on membrane potential or input resistance in FSIs expressing only control fluorophore, confirming specificity of DREADD effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 provides essential negative control for the chemogenetic experiments. This control is critical for ruling out off-target effects of CNO and validates the DREADD approach used in multiple key experiments (C64-C78).",
+    "result_type": "MINOR"
+  }
+]

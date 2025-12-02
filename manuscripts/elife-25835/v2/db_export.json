@@ -1,0 +1,2301 @@
+{
+  "submission": {
+    "id": "715db208-160e-4ac9-a911-9cf06ba05097",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:56:37.476893Z",
+    "updated_at": "2025-12-01T19:56:37.476893Z"
+  },
+  "content": [
+    {
+      "id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "submission_id": "715db208-160e-4ac9-a911-9cf06ba05097",
+      "content_type": "manuscript",
+      "content_text": "# Building bridges between cellular and molecular structural biology\n\n## Authors\n\n- Ardan Patwardhan<sup>1</sup> ([ORCID: 0000-0001-7663-9028](https://orcid.org/0000-0001-7663-9028)) \u2020\n- Robert Brandt<sup>2</sup>\n- Sarah J Butcher<sup>3</sup>\n- Lucy Collinson<sup>4</sup>\n- David Gault<sup>6</sup>\n- Kay Gr\u00fcnewald<sup>7</sup>\n- Corey Hecksel<sup>8</sup>\n- Juha T Huiskonen<sup>9</sup>\n- Andrii Iudin<sup>10</sup>\n- Martin L Jones<sup>5</sup> ([ORCID: 0000-0003-0994-5652](https://orcid.org/0000-0003-0994-5652))\n- Paul K Korir<sup>11</sup>\n- Abraham J Koster<sup>12</sup>\n- Ingvar Lagerstedt<sup>13</sup>\n- Catherine L Lawson<sup>14</sup>\n- David Mastronarde<sup>15</sup>\n- Matthew McCormick<sup>16</sup>\n- Helen Parkinson<sup>17</sup>\n- Peter B Rosenthal<sup>18</sup>\n- Stephan Saalfeld<sup>19</sup> ([ORCID: 0000-0002-4106-1761](https://orcid.org/0000-0002-4106-1761))\n- Helen R Saibil<sup>20</sup>\n- Sirarat Sarntivijai<sup>21</sup>\n- Irene Solanes Valero<sup>23</sup>\n- Sriram Subramaniam<sup>24</sup>\n- Jason R Swedlow<sup>25</sup>\n- Ilinca Tudose<sup>22</sup>\n- Martyn Winn<sup>26</sup>\n- Gerard J Kleywegt<sup>27</sup> \u2020\n\n### Affiliations\n\n1. Cellular Structure and 3D Bioimaging European Molecular Biology Laboratory, European Bioinformatics Institute Wellcome Genome Campus, Hinxton United Kingdom\n2. Visualization Sciences Group FEI M\u00e9rignac France\n3. Institute of Biotechnology and the Department of Biosciences University of Helsinki Helsinki Finland\n4. Electron Microscopy Science Technology Platform Francis Crick Institute London United Kingdom\n5. Electron Microscopy Science Technology Platform Francis Crick Institute London United Kingdom\n6. Centre for Gene Regulation and Expression University of Dundee Dundee United Kingdom\n7. Division of Structural Biology, Wellcome Trust Centre for Human Genetics University of Oxford Oxford United Kingdom\n8. National Center for Macromolecular Imaging, Verna and Marrs McLean Department of Biochemistry and Molecular Biology Baylor College of Medicine Houston United States\n9. Division of Structural Biology, Wellcome Trust Centre for Human Genetics University of Oxford Oxford United Kingdom\n10. Cellular Structure and 3D Bioimaging European Molecular Biology Laboratory, European Bioinformatics Institute Wellcome Genome Campus, Hinxton United Kingdom\n11. Cellular Structure and 3D Bioimaging European Molecular Biology Laboratory, European Bioinformatics Institute Wellcome Genome Campus, Hinxton United Kingdom\n12. Department of Molecular Cell Biology Leiden University Medical Center Leiden The Netherlands\n13. European Molecular Biology Laboratory, European Bioinformatics Institute Wellcome Genome Campus, Hinxton United Kingdom\n14. Center for Integrative Proteomics Research and the Research Collaboratory for Structural Bioinformatics Rutgers, The State University of New Jersey Piscataway United States\n15. Department of Molecular, Cellular, and Developmental Biology University of Colorado Boulder United States\n16. Kitware, Inc. Carrboro United States\n17. Molecular Archival Resources European Molecular Biology Laboratory, European Bioinformatics Institute Wellcome Genome Campus, Hinxton United Kingdom\n18. Structural Biology of Cells and Viruses Francis Crick Institute London United Kingdom\n19. Janelia Research Campus Howard Hughes Medical Institute Ashburn United States\n20. Institute of Structural and Molecular Biology, Department of Crystallography Birkbeck College London United Kingdom\n21. Molecular Archival Resources European Molecular Biology Laboratory, European Bioinformatics Institute Wellcome Genome Campus, Hinxton United Kingdom\n22. Molecular Archival Resources European Molecular Biology Laboratory, European Bioinformatics Institute Wellcome Genome Campus, Hinxton United Kingdom\n23. European Molecular Biology Laboratory, European Bioinformatics Institute Wellcome Genome Campus, Hinxton United Kingdom\n24. Laboratory for Cell Biology, Center for Cancer Research National Cancer Institute Bethesda United States\n25. Centre for Gene Regulation and Expression and the Division of Computational Biology University of Dundee Dundee United Kingdom\n26. Scientific Computing Department Science and Technology Facilities Council Research Complex at Harwell, Didcot United Kingdom\n27. Molecular and Cellular Structure Cluster European Molecular Biology Laboratory, European Bioinformatics Institute Wellcome Genome Campus, Hinxton United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe integration of cellular and molecular structural data is key to understanding the function of macromolecular assemblies and complexes in their in vivo context. Here we report on the outcomes of a workshop that discussed how to integrate structural data from a range of public archives. The workshop identified two main priorities: the development of tools and file formats to support segmentation (that is, the decomposition of a three-dimensional volume into regions that can be associated with defined objects), and the development of tools to support the annotation of biological structures.\n\n## Introduction\n\nTo obtain an integrated view of how molecular machinery operates inside cells, biologists are increasingly combining structural data at different length scales, obtained using a range of techniques such as electron tomography, electron microscopy, NMR spectroscopy and X-ray crystallography. Structural data is held in public archives such as the Electron Microscopy Data Bank (EMDB; emdb-empiar.org; Tagari et al., 2002), the Electron Microscopy Public Image Archive (EMPIAR; empiar.org; Iudin et al., 2016), and the Protein Data Bank (PDB; wwpdb.org; Bernstein et al., 1977)\n\nIntegration between PDB and EMDB data is based on atomic models in the PDB that have been fitted to or built into EMDB volume maps. For purified biological molecules or larger defined complexes this approach is done routinely. Sequence information from the models can be used to link to other bioinformatics resources such as the Universal Protein Resource (UniProt; uniprot.org; UniProt Consortium, 2013). However, atomic models are not always available for a variety of reasons, such as when molecular averaging fails to obtain high-resolution features or the inherently lower resolution associated\u00a0with molecules being imaged in more complex or even cellular environments. In such cases, the identification of features often relies on prior knowledge or correlation of structural data obtained at different scales.\n\nOnce features have been identified, segmentation (defined here as the decomposition of the 3D volume into regions that can be associated with defined objects) can be employed to facilitate and visualise the interpretation of the map. For example, in a recent study the segmentation of electron and soft X-ray tomography reconstructions was used to study leakage and breakage of the membranes in erythrocytes infected by Plasmodium falciparum, and documented the dramatic changes in the morphology of cells during egress (Hale et al., 2017). The soft X-ray tomograms provided overviews of the membrane compartments in intact, vitrified cells (Figure 1). It should be noted that the word 'segmentation' may have different interpretations: for example, in whole animal, pre-clinical and medical imaging, segmentation includes a concept of a model that is used for fitting of the features. In this manuscript we limit the definition to the separation of density into distinct sub-domains.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/25835/elife-25835-fig1-v2.jpg)\n\n**Figure 1.:** Soft X-ray tomography shows loss of mechanical integrity of the red cell membrane in the final stages of egress. Panels A-C depict schizonts treated with a selective malarial cGMP-dependent protein kinase G inhibitor (C2), and panels D-F depict schizonts treated with a broad-spectrum cysteine protease inhibitor, E64, which allows parasitophorous vacuole membrane (PVM) rupture but prevents erythrocyte membrane rupture, resulting in merozoites trapped in the blood cell. (A) Slice from tomogram of C2-arrested schizont. (B) Outlines of erythrocyte membrane (red), PVM (yellow), and parasites (cyan) in the tomogram slice in A. (C) 3D rendering of the schizont. The vacuole (yellow) is densely packed with merozoites (cyan) that have been collectively rather than individually rendered, for clarity. The overall height of the cell is \u223c5 \u03bcm. (D) Tomogram slice from an E64-arrested schizont, shown with outlining of membranes in E. Remnants of the PVM are visible. (F) 3D rendering of the schizont. Figure and legend adapted with permission from Hale et al. (2017). Scale bar 1 \u03bcm.\n\nIn tomography, where multiple copies of nearly identical objects are found, 3D sub-tomogram averaging and 3D classification may be employed to obtain higher resolution reconstructions. This process often involves combining information from multiple tomograms. Since the higher resolution afforded by sub-tomogram averaging provides more structural detail, displaying sub-tomogram averages at the original tomogram positions and orientations may reveal important information about the organization and distribution of the object within a cellular and functional context. If properly annotated such data can be further mined with other questions in mind by other researchers. For example, researchers recently created composite maps of Lassa virus particles by inserting the sub-tomogram average structure of the Lassa virus glycoprotein spike back into the original tomographic reconstructions, revealing the organisation and copy number of the spikes on the virus surface (Figure 2; Li et al., 2016). Another example revealed the lateral clustering of viral membrane proteins mediating membrane fusion (Maurer et al., 2013).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/25835/elife-25835-fig2-v2.jpg)\n\n**Figure 2.:** Left to right: A slice from a tomographic volume of Lassa viruses, a sub-tomogram average of the glycoprotein spike, and the sub-tomogram average inserted back onto a virus reconstruction. Images adapted from Li et al., 2016 (under a CC BY 4.0 license).\n\nThe archiving of segmentation data in EMDB entries was identified as an area requiring urgent attention in previous workshops on \u201cData-Management Challenges in 3D Electron Microscopy\u201d in 2011 (Patwardhan et al., 2012) and \u201cA 3D Cellular Context for the Macromolecular World\u201d in 2012 (Patwardhan et al., 2014), as was the improved biological annotation of structural data to make it more accessible to the wider biological audience and to enable integration with structural and other bioinformatics resources. Crucially for data integration we need \u201cstructured biological annotation\u201d which is here defined as the association of data with identifiers (e.g., accession codes from UniProt) and ontologies taken from well established bioinformatics resources. (Ontologies are formal collections of statements defining concepts, relationships and constraints; for example, the mitochondrial large and small ribosomal subunits are parts of the mitochondrial ribosome which, in turn, is a part of the mitochondrion). To our knowledge, none of the segmentation formats widely used in electron microscopy and related fields currently support structured biological annotation. Furthermore, spatial transformations relating sub-tomograms to their parent tomograms are not currently captured in EMDB. Moreover, wider usage of both segmentation and transformation data by non-expert users is hindered by a plurality of formats.\n\nTo discuss and address the challenges of representing and capturing segmentations and transformation data, the Protein Data Bank in Europe (PDBe) organised an expert workshop on \u201c3D Segmentations and Transformations - Building Bridges between Cellular and Molecular Structural Biology\u201d in December 2015. The objectives were:\n\nHere we report and discuss the main outcomes of the workshop, which was attended by a range of participants including software developers, users of segmentation software, ontology experts, and experts in structure and data archiving.\n\n## Data models and file formats for segmentations and transformations\n\nPrior to the workshop, PDBe developed a draft data model to support segmentations and their annotations in EMDB that could accommodate segmentation descriptions from a range of existing formats and software packages as well as structured biological annotation. It supported the key features of major segmentation packages such as Amira (www.fei.com/software/amira), IMOD (Kremer et al., 1996) and Chimera (Pettersen et al., 2004), and provided scope for extension and flexibility as the field developed. However, the draft data model did not cover minor features (e.g., surface rendering parameters), especially those that are only relevant in the context of a particular software package. The data model was implemented in an XML schema with the following features:\n\nThe draft data model was intended primarily for internal use in EMDB. However, the meeting participants strongly favoured a broader scope so that the format could serve the entire biological segmentation field. This would also make it easier to support the development of translators between different formats and possibly contribute to a reduction of the number of formats (or at least prevent further proliferation of formats). Representatives for several major software packages used for segmentation including IMOD (D.M.), Amira (R.B.) and Chimera (Tom Goddard, personal communication) have expressed a commitment to providing read/write capabilities for the developed format if standard libraries are made available.\n\nThe draft data model included support for various colour models including RGB, HSV and colour names. Participants argued that it would be sufficient to support only the most commonly used one, namely the RGB model, as the other models can be converted to it.\n\nParticipants also noted that it might be useful to allow quantification of the estimated certainty of a biological annotation, for example a score for the agreement between a sub-tomogram average and a corresponding region from an originating tomogram. There may also be alternative biological annotations in various combinations (logical OR, XOR, AND, etc.). The quantification of alternative annotations could become very complex to represent and use, and the participants agreed to initially limit the scope to a single annotation per segment and to let the need for more complex representations be driven by actual use cases.\n\nConcerning the transformations between sub-tomogram averages and tomograms, the participants agreed that this information should be incorporated into the segmentation data model; it simply requires adding support for multiple transformations of the same 3D volume representation. It was agreed that the convention to define affine transformations should be well-defined in terms of the transformation, the order in which they are applied, the direction of the transformation, and the orientations and origins of coordinate systems.\n\nWith respect to correlative multi-modal imaging it was recognized that there would eventually be a need to go beyond affine transformations, for example to represent distortions and deformations of slice data, but the participants did not come to a conclusion about a coherent extensible format. Often, a segment consists of multiple spatially transformed copies of the same primitive. This is also relevant for sub-tomogram averages as the same volume is to be spatially transformed into multiple locations within a tomogram. To accommodate these situations, every segment can be associated with a list of transformations. This representation will also be useful in the context of template matching for describing the transformations between the template and the 3D volume.\n\nThe draft data model was developed in XSD (XML Schema Definition). The definition of data models is greatly facilitated by tools that enable GUI-based development of schemas such as Oxygen and XMLSpy. Code generators such as generateDS create object-model wrappers from schemas that enable reading, writing and manipulation of XML files, thus allowing for rapid prototyping. Various XML validators also allow the correctness of a file relative to a schema to be tested. However, concerns were raised about the verbosity of the XML format and the efficiency with which it can be used. Participants proposed that while XML may be the natural format for a schema defined in XSD, it would be useful to consider other more compact and efficient formats such as JSON and HDF5 (a binary format that allows for efficient representation of hierarchal metadata and data in a single container). Both JSON and HDF5 are now widely supported with libraries in most major programming languages, including Python and C/C++, to facilitate reading and writing. To this end, utilities to convert between the XML, JSON and HDF5 representations of the segmentation data model are currently in development at PDBe.\n\nFuture format development will be an iterative process involving extensive consultation with relevant stakeholders to obtain consensus in and support from the community of developers, yielding a format that they will support. A \"Segmentation and transformation file format working group\" has been established by a subset of the workshop participants, and other developers working on segmentation who are interested in joining the group are asked to contact AP.\n\nPDBe has already modified the data model based on the feedback from the meeting, and this will continue in several rounds of consultation with the working group. The schema is versioned to keep track of changes. To facilitate adoption of the format, dubbed EMDB-SFF (SFF=Segmentation File Format), PDBe is developing translators to/from other commonly used formats. The code for these translators is provided as free open source and distributed via the CCP-EM SVN repository. Comments on the schema should be sent to AP.\n\n## Structured biological annotation\n\nAs previously explained, structured biological annotation is the association of data with identifiers and ontologies taken from well-established bioinformatics resources. The use of structured biological annotation is not common practice in the electron microscopy or structural biology communities. Therefore, ontology experts were invited to the workshop to explain why these are useful and what resources and tools are available for assigning annotations. Use-cases such as mouse imaging data helped to explain the principles and practice of structured biological annotation. By the end of the meeting there was a clearer appreciation of the importance of structured biological annotation for searching and linking imaging data across different scales, between different imaging and structural databases and with other bioinformatics resources.\n\nStructured annotation would enable the seamless integration of structural, imaging and bioinformatics data from different resources, thus making it possible to provide problem-centric views of biology that incorporate structural and imaging data and are easily accessible by the broader biological community (and in contrast to the highly specialised structure-centric resources that are available today and mainly serve domain-specific communities). However, there were concerns that many in the electron microscopy community would find navigating the landscape of ontologies challenging and that this approach would only gain traction in the community if tools were developed to simplify the biological annotation process.\n\nIt was also discussed whether annotation should be performed by the depositor or by EMDB curators. While curators could be trained to a high level of expertise in the use of ontologies, they would not necessarily have enough knowledge about the sample and the specifics of the biological system underlying the study. It was concluded that depositors should perform the annotation, with curators overseeing and checking annotations.\n\n## Tools for structured biological annotation\n\nStructured biological annotation for electron microscopy will rely on a range of established ontologies such as Gene Ontology (GO; Gene Ontology Consortium, 2008), Experimental Factor Ontology (EFO; Malone et al., 2010), Protein Ontology (PRO; Natale et al., 2014), Cellular Microscopy Phenotype Ontology (CMPO; Jupp et al., 2016), NCBI organismal classification (NCBITaxon), integrated cross-species for anatomical structures (UBERON; Mungall et al., 2012), imaging modality and sample preparation from Fbbi (Orloff et al., 2013), Foundational Model of Anatomy (FMA) and Cell Ontology (CL; Diehl et al., 2016). It may also include identifiers from resources such as UniProt and the Complex Portal, which in turn contain cross-reference information to other useful standardised vocabularies and common terminology identifiers, such as the OMIM and KEGG (Kanehisa et al., 2016) pathways. This cross-reference information is useful when linking data coded with these terminologies to the ontologies.\n\nSeveral of these resources provide application programming interfaces (APIs) that can be used to access the information programmatically and provide search functionality. The Samples, Phenotypes and Ontologies Team (SPOT) at EMBL-EBI has developed tools such as Zooma and the Ontology Lookup Service (OLS; Jupp et al., 2015), which aggregate information from a wide range of ontologies and provide APIs to access these tools. These APIs can be used when building tools for segmentation annotation to provide simplified views and search facilities for ontological terms.\n\nAt the workshop, PDBe presented mock-ups of a web-based segmentation annotation tool (SAT; Figure 3). This tool would allow a user to add structured biological annotation to segmentations obtained from a variety of different software packages and then output an annotated segmentation file in EMDB-SFF that could be deposited to EMDB or EMPIAR. Annotation could either be done during deposition, in which case the biological annotation from the segmentation file could be harvested by the deposition system to facilitate the deposition process, or it could be done post deposition. The workflow would consist of: (i) the user uploading segmentation files (there could be several if the segments have been saved as separate files) and the corresponding map (unless it is already released in EMDB or EMPIAR); (ii) conversion to an EMDB-SFF file; (iii) use of a GUI-based interface to view the segmentations overlaid on the map and to select segmentations and add annotation; (iv) output of a fully annotated EMDB-SFF file that could be uploaded to EMDB (Figure 4).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/25835/elife-25835-fig3-v2.jpg)\n\n**Figure 3.:** Image slices are shown with the segmentations overlaid. (A) The top right panel presents a tree that enables the user to select the segment to be annotated, and existing annotations are shown in the middle right panel. The bottom right panel provides pre-defined lists of annotation terms for frequently studied assemblies and complexes. The image in the left panel is adapted from M\u00fcller et al. (2014) (under a CC BY 3.0 license). (B) The top right and middle right panels are similar to those in A. The bottom right panel provides a search option to find relevant terms. The image in the left panel is adapted from Santarella-Mellwig et al., 2013 (under a CC BY 4.0 license).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/25835/elife-25835-fig4-v2.jpg)\n\n**Figure 4.:** A user launches the Segmentation-Annotation Tool and uploads segmentations obtained with third-party software. After the segmentation has been annotated with biologically meaningful terms, a segmentation file is written in EMDB-SFF format; this file can be uploaded to the Electron Microscopy Data Bank when the structure is deposited. Once released, the EMDB-SFF file can be used for the integration of structural data between different imaging scales and across resources. The Volume browser mock-up (bottom right) contains images adapted from Bennett et al. (2007) and Bennett et al. (2009) (under a CC0 1.0 license). The 3D rendering was generated from EMDB entry EMD-5020 and PDB entry 3dno (Liu et al., 2008).\n\nTwo different options were presented for how annotation could take place (Figure 3). Many macromolecular systems for which data are deposited in EMDB fall into broad categories such as ribosomes, proteasomes, chaperonins and so on: for each of these categories, and with the added information about taxonomy, lists of likely components could be generated to facilitate annotation (Figure 3A). Similarly for cellular level annotation, lists of cellular components could be used. As it would not be possible to cover every potential scenario with pre-defined lists, the other option is to provide a search facility that offers potentially applicable terms from available ontologies (Figure 3B).\n\nThe workshop participants expressed strong support for the development of the SAT and the functionality depicted in the mock-ups but raised concerns about a number of issues: the upload of data to a web server \u2013 some users may find it challenging to upload large maps and segmentations; the need to annotate segmentations twice \u2013 users would typically add free text annotations in the software used for the segmentation and would the need to re-annotate in the SAT; finding the 'right' metadata terms (particularly in cases where a search yields more than one term, and it is not clear which is the most relevant term); annotating a hierarchical segmentation. (The SAT mock-up accommodates annotation on only one level of hierarchy: this might be sufficient in many cases, but it could become problematic as more automated segmentation techniques are developed and their usage expands.)\n\nA desktop version of the SAT would help users concerned about the upload of large amounts of data to a web-server. Another option would be to integrate the functionality for structured biological annotation into existing packages such as IMOD, Chimera and Amira; this would also avoid the problem of users having to annotate the segmentations twice. This alternative would require the development of libraries and widgets that facilitate the use of ontologies and the EMDB-SFF by third parties. For example, the program for segmentation in IMOD already has a 'Name Wizard' plugin that helps the user to choose standardized object names from a CSV file: however, additional development would be need to provide access to on-line ontologies.\n\nParticipants agreed that PDBe should start by developing the web-based SAT because it could reuse a number of components that are already being used in other electron microscopy-related web services (such as the Volume slicer; Salavert-Torres et al., 2016), followed by the desktop version. Once the SAT reaches a certain level of maturity PDBe could work with third-party developers to integrate the annotation functionality into their packages.\n\nBy far the greatest challenge is developing the functionality to find the appropriate biological metadata (Malone et al., 2016) and tools such as Zooma and OLS will be useful for this purpose. A \"Segmentation annotation working group\" has been established by a subset of the workshop participants to provide data sets and use cases to aid the design of the SAT and to help with its testing. Members of the electron microscopy community and related communities who are interested in joining the group are asked to contact AP.\n\n## Discussion\n\nThe EMDB-SFF data model has undergone a round of updates based on the feedback from the meeting. The development of the file format and the segmentation annotation tools will be iterative, with user-testing and feedback from the working groups being integral parts of the process. The file format and tools are expected to be ready by late 2017, although they might not offer all the features discussed above.\n\nWide acceptance and support of the EMDB-SFF format by software developers working on segmentations and transformations will be crucial. Providing well-documented open-source tools for working with the format will help in this regard, and the Collaborative Computational Project for Electron cryo-Microscopy (CCP-EM) has committed to distributing these tools, and including them in training events for users and developers. However, the scope of the format is not limited to the cryo-EM field. For example, segmentation is an essential element of the workflow for interpreting data in 3D scanning electron microscopy (3D-SEM; Patwardhan et al., 2014). It will also be possible to provide support for segmentations for other imaging modalities (and also for imaging on other length scales), although the range of biological ontologies and vocabularies will need to be expanded. It should also be possible to support techniques that combine imaging modalities (such as correlative light and electron microscopy), but this will involve extra work on the transformation model.\n\nIt was clear from the discussions regarding the annotation of segmentations that there are significant language barriers between the fields. Overcoming these barriers is a prerequisite for progress, as is the development of new tools that will facilitate annotation.\n\nThis workshop was an important milestone in that it defined concrete actionable outcomes to address the challenges involved in the integration of cellular and molecular structural data in the public archives. This integration will provide researchers with \"problem-centric views\" of data from many different sources, and will also help the wider biological and medical communities by making make structural data more accessible.\n",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "d5b66caa-16bb-4a43-9bc9-aef65dcbfbc9",
+      "submission_id": "715db208-160e-4ac9-a911-9cf06ba05097",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Werner K\u00fchlbrandt, Max Planck Institute of Biophysics , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.25835.007](https://doi.org/10.7554/eLife.25835.007)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"3D segmentation and transformation \u2013 building bridges between cellular and molecular structural biology\" to eLife for consideration as a Feature Article. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and John Kuriyan as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission\n\nSummary:\n\nThe manuscript by Patwardhan et al., reports on the outcome of a workshop at the European Bioinformatics Institute (EBI) in Hinxton nr. Cambridge, UK. The workshop brought together experienced users and stakeholders from twelve different research laboratories and companies around the world. The purpose of the workshop was to come up with a roadmap for the annotation of structural data on the sub-cellular to cellular scale (primarily electron cryo-tomography and correlated light-EM (CLEM)), and to develop formats and tools for annotation that would be made available to the communities of structural and cellular biologists. Of particular interest will be tools for the integration of structural data from tomography, high-resolution cryoEM, protein crystallography and NMR and the development for a structured biological annotation tool for interactive annotation of tomographic and similar volumes, before uploading them to the EMDB data bank. This is a very worthwhile endeavour that will greatly benefit the future of structural and molecular cell biology. The manuscript itself is a valuable resource in that it provides numerous links to tools and websites that will be useful to many in the community.\n\nEssential revisions:\n\n1) Segmentation is considered from the perspective of structural biology, PDB and EMDB data, as well as sub-tomogram averaging. While integration of structures in the biological context is certainly a worthwhile effort, these are not true segmentation tasks. In fact, true segmentation tasks as in brain connectomics or cell biology are not mentioned at all.\n\n2) The cross-correlation coefficient between a sub-tomogram average and the original volume is not useful as a means of quantification, as is well documented in the literature.\n\n3) The article should distinguish more clearly between segmentation and template matching, and between annotations and metadata.\n\n4) The expression \"structured biological annotation\" is used repeatedly in the manuscript but is difficult to understand. The authors should explain what they mean more clearly.\n",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f423bad0-cfe9-4337-81fe-fc017f78baf8",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C1",
+      "claim": "The integration of cellular and molecular structural data is key to understanding the function of macromolecular assemblies and complexes in their in vivo context.",
+      "claim_type": "EXPLICIT",
+      "source": "The integration of cellular and molecular structural data is key to understanding the function of macromolecular assemblies and complexes in their in vivo context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the importance of data integration, presented as an established principle in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "52ae206f-61cf-40fd-a9d9-f49e9dcdee0e",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C2",
+      "claim": "A workshop was held that discussed how to integrate structural data from a range of public archives.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report on the outcomes of a workshop that discussed how to integrate structural data from a range of public archives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly reports on a workshop that occurred.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "ec5fe5be-7496-46a9-8330-abb959f46ef5",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C3",
+      "claim": "The workshop identified development of tools and file formats to support segmentation as a main priority.",
+      "claim_type": "EXPLICIT",
+      "source": "The workshop identified two main priorities: the development of tools and file formats to support segmentation (that is, the decomposition of a three-dimensional volume into regions that can be associated with defined objects), and the development of tools to support the annotation of biological structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the outcomes of the workshop.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "d183ed5f-f862-45c1-9ac6-5b77b9ed928d",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C4",
+      "claim": "The workshop identified development of tools to support the annotation of biological structures as a main priority.",
+      "claim_type": "EXPLICIT",
+      "source": "The workshop identified two main priorities: the development of tools and file formats to support segmentation (that is, the decomposition of a three-dimensional volume into regions that can be associated with defined objects), and the development of tools to support the annotation of biological structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the outcomes of the workshop.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "e2cd7855-c351-47ed-88c9-18170661ad76",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C5",
+      "claim": "Biologists are increasingly combining structural data at different length scales obtained using a range of techniques including electron tomography, electron microscopy, NMR spectroscopy and X-ray crystallography.",
+      "claim_type": "EXPLICIT",
+      "source": "To obtain an integrated view of how molecular machinery operates inside cells, biologists are increasingly combining structural data at different length scales, obtained using a range of techniques such as electron tomography, electron microscopy, NMR spectroscopy and X-ray crystallography.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a current trend in biological research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "98e2384e-a721-41e6-8488-13eb236b0243",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C6",
+      "claim": "Structural data is held in the Electron Microscopy Data Bank (EMDB).",
+      "claim_type": "EXPLICIT",
+      "source": "Structural data is held in public archives such as the Electron Microscopy Data Bank (EMDB; emdb-empiar.org; Tagari et al., 2002), the Electron Microscopy Public Image Archive (EMPIAR; empiar.org; Iudin et al., 2016), and the Protein Data Bank (PDB; wwpdb.org; Bernstein et al., 1977)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites established databases where structural data is archived.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "f0509224-2ac7-465d-8470-c85a315184d7",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C7",
+      "claim": "Structural data is held in the Electron Microscopy Public Image Archive (EMPIAR).",
+      "claim_type": "EXPLICIT",
+      "source": "Structural data is held in public archives such as the Electron Microscopy Data Bank (EMDB; emdb-empiar.org; Tagari et al., 2002), the Electron Microscopy Public Image Archive (EMPIAR; empiar.org; Iudin et al., 2016), and the Protein Data Bank (PDB; wwpdb.org; Bernstein et al., 1977)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites established databases where structural data is archived.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "ee83e876-ee1a-4fc6-9763-965de87bab33",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C8",
+      "claim": "Structural data is held in the Protein Data Bank (PDB).",
+      "claim_type": "EXPLICIT",
+      "source": "Structural data is held in public archives such as the Electron Microscopy Data Bank (EMDB; emdb-empiar.org; Tagari et al., 2002), the Electron Microscopy Public Image Archive (EMPIAR; empiar.org; Iudin et al., 2016), and the Protein Data Bank (PDB; wwpdb.org; Bernstein et al., 1977)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites established databases where structural data is archived.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "bff2b6b4-7f38-42f0-b08b-8cce3619cc71",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C9",
+      "claim": "Integration between PDB and EMDB data is based on atomic models in the PDB that have been fitted to or built into EMDB volume maps.",
+      "claim_type": "EXPLICIT",
+      "source": "Integration between PDB and EMDB data is based on atomic models in the PDB that have been fitted to or built into EMDB volume maps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the current method for integrating data between two databases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "bf19cc8b-5de3-4f97-905b-9f663b07095b",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C10",
+      "claim": "For purified biological molecules or larger defined complexes, fitting atomic models to EMDB volume maps is done routinely.",
+      "claim_type": "EXPLICIT",
+      "source": "For purified biological molecules or larger defined complexes this approach is done routinely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes established practice in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "680add26-3ebc-4210-b3e7-70abf58a62ed",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C11",
+      "claim": "Sequence information from atomic models can be used to link to other bioinformatics resources such as UniProt.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence information from the models can be used to link to other bioinformatics resources such as the Universal Protein Resource (UniProt; uniprot.org; UniProt Consortium, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites UniProt as a resource that can be linked via sequence information.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "d492494e-223d-4054-ae9c-555c5a087a90",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C12",
+      "claim": "Atomic models are not always available for a variety of reasons including when molecular averaging fails to obtain high-resolution features.",
+      "claim_type": "EXPLICIT",
+      "source": "However, atomic models are not always available for a variety of reasons, such as when molecular averaging fails to obtain high-resolution features or the inherently lower resolution associated with molecules being imaged in more complex or even cellular environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes limitations in obtaining atomic models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "9e18bcd0-bdbe-4a58-933f-b76e6851636c",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C13",
+      "claim": "Atomic models are not always available due to the inherently lower resolution associated with molecules being imaged in more complex or even cellular environments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, atomic models are not always available for a variety of reasons, such as when molecular averaging fails to obtain high-resolution features or the inherently lower resolution associated with molecules being imaged in more complex or even cellular environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes limitations in obtaining atomic models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "8322b436-0077-4b96-9a0c-fb7c37ffdc77",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C14",
+      "claim": "When atomic models are not available, the identification of features often relies on prior knowledge or correlation of structural data obtained at different scales.",
+      "claim_type": "EXPLICIT",
+      "source": "In such cases, the identification of features often relies on prior knowledge or correlation of structural data obtained at different scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes alternative approaches when atomic models are unavailable.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "d17ffd3e-e8ee-4683-a894-b398adceb3d6",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C15",
+      "claim": "Segmentation can be employed to facilitate and visualise the interpretation of the map once features have been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Once features have been identified, segmentation (defined here as the decomposition of the 3D volume into regions that can be associated with defined objects) can be employed to facilitate and visualise the interpretation of the map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the utility of segmentation in structural biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "2bf4934a-25df-4dbb-b476-016b11aa4dcc",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C16",
+      "claim": "In a recent study, segmentation of electron and soft X-ray tomography reconstructions was used to study leakage and breakage of the membranes in erythrocytes infected by Plasmodium falciparum.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in a recent study the segmentation of electron and soft X-ray tomography reconstructions was used to study leakage and breakage of the membranes in erythrocytes infected by Plasmodium falciparum, and documented the dramatic changes in the morphology of cells during egress (Hale et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a specific study that used segmentation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "3fe70641-72bd-418c-bcfd-b15de3739076",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C17",
+      "claim": "Soft X-ray tomograms provided overviews of the membrane compartments in intact, vitrified cells in the Plasmodium falciparum study.",
+      "claim_type": "EXPLICIT",
+      "source": "The soft X-ray tomograms provided overviews of the membrane compartments in intact, vitrified cells (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes findings from a cited study and references Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "ca25922d-c719-40ac-b624-d2c1fbc27b1e",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C18",
+      "claim": "In tomography where multiple copies of nearly identical objects are found, 3D sub-tomogram averaging and 3D classification may be employed to obtain higher resolution reconstructions.",
+      "claim_type": "EXPLICIT",
+      "source": "In tomography, where multiple copies of nearly identical objects are found, 3D sub-tomogram averaging and 3D classification may be employed to obtain higher resolution reconstructions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a technique used in tomography.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "88261e6f-4e28-4d2b-b13d-08d76a96e126",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C19",
+      "claim": "Sub-tomogram averaging often involves combining information from multiple tomograms.",
+      "claim_type": "EXPLICIT",
+      "source": "This process often involves combining information from multiple tomograms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a characteristic of the sub-tomogram averaging process.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "00990dfb-dcdf-4d4a-8e88-f661cbdd4b11",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C20",
+      "claim": "Displaying sub-tomogram averages at the original tomogram positions and orientations may reveal important information about the organization and distribution of the object within a cellular and functional context.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the higher resolution afforded by sub-tomogram averaging provides more structural detail, displaying sub-tomogram averages at the original tomogram positions and orientations may reveal important information about the organization and distribution of the object within a cellular and functional context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the potential benefits of a particular visualization approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "90f97cd1-f526-4598-a0d6-c702e874179e",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C21",
+      "claim": "Researchers created composite maps of Lassa virus particles by inserting the sub-tomogram average structure of the Lassa virus glycoprotein spike back into the original tomographic reconstructions.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, researchers recently created composite maps of Lassa virus particles by inserting the sub-tomogram average structure of the Lassa virus glycoprotein spike back into the original tomographic reconstructions, revealing the organisation and copy number of the spikes on the virus surface (Figure 2; Li et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript cites a specific study and references Figure 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "af03b2c7-2b94-4ece-b712-69a20e80fc17",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C22",
+      "claim": "Composite maps of Lassa virus particles revealed the organisation and copy number of the spikes on the virus surface.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, researchers recently created composite maps of Lassa virus particles by inserting the sub-tomogram average structure of the Lassa virus glycoprotein spike back into the original tomographic reconstructions, revealing the organisation and copy number of the spikes on the virus surface (Figure 2; Li et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript cites findings from a specific study and references Figure 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "18767f17-a600-4958-8ef9-d628e0b6901b",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C23",
+      "claim": "A study revealed the lateral clustering of viral membrane proteins mediating membrane fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Another example revealed the lateral clustering of viral membrane proteins mediating membrane fusion (Maurer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "8fd347c9-f1cc-4677-a6ef-fb45f5d13ced",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C24",
+      "claim": "The archiving of segmentation data in EMDB entries was identified as an area requiring urgent attention in a 2011 workshop on 'Data-Management Challenges in 3D Electron Microscopy'.",
+      "claim_type": "EXPLICIT",
+      "source": "The archiving of segmentation data in EMDB entries was identified as an area requiring urgent attention in previous workshops on \"Data-Management Challenges in 3D Electron Microscopy\" in 2011 (Patwardhan et al., 2012) and \"A 3D Cellular Context for the Macromolecular World\" in 2012 (Patwardhan et al., 2014), as was the improved biological annotation of structural data to make it more accessible to the wider biological audience and to enable integration with structural and other bioinformatics resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous workshops that identified this need.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "ac1de04a-c2a5-4f60-9cef-63faef93efd3",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C25",
+      "claim": "The archiving of segmentation data in EMDB entries was identified as an area requiring urgent attention in a 2012 workshop on 'A 3D Cellular Context for the Macromolecular World'.",
+      "claim_type": "EXPLICIT",
+      "source": "The archiving of segmentation data in EMDB entries was identified as an area requiring urgent attention in previous workshops on \"Data-Management Challenges in 3D Electron Microscopy\" in 2011 (Patwardhan et al., 2012) and \"A 3D Cellular Context for the Macromolecular World\" in 2012 (Patwardhan et al., 2014), as was the improved biological annotation of structural data to make it more accessible to the wider biological audience and to enable integration with structural and other bioinformatics resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous workshops that identified this need.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "45ab67d4-ef8f-498d-99f2-b30c2d64ee7f",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C26",
+      "claim": "Improved biological annotation of structural data was identified as an area requiring urgent attention in previous workshops to make it more accessible to the wider biological audience.",
+      "claim_type": "EXPLICIT",
+      "source": "The archiving of segmentation data in EMDB entries was identified as an area requiring urgent attention in previous workshops on \"Data-Management Challenges in 3D Electron Microscopy\" in 2011 (Patwardhan et al., 2012) and \"A 3D Cellular Context for the Macromolecular World\" in 2012 (Patwardhan et al., 2014), as was the improved biological annotation of structural data to make it more accessible to the wider biological audience and to enable integration with structural and other bioinformatics resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous workshops that identified this need.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "d28789a0-6c0c-456b-8aae-95caf0884848",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C27",
+      "claim": "Improved biological annotation of structural data was identified as an area requiring urgent attention in previous workshops to enable integration with structural and other bioinformatics resources.",
+      "claim_type": "EXPLICIT",
+      "source": "The archiving of segmentation data in EMDB entries was identified as an area requiring urgent attention in previous workshops on \"Data-Management Challenges in 3D Electron Microscopy\" in 2011 (Patwardhan et al., 2012) and \"A 3D Cellular Context for the Macromolecular World\" in 2012 (Patwardhan et al., 2014), as was the improved biological annotation of structural data to make it more accessible to the wider biological audience and to enable integration with structural and other bioinformatics resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous workshops that identified this need.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "8b66c413-152c-473a-ab97-0c0e710de548",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C28",
+      "claim": "Structured biological annotation is defined as the association of data with identifiers and ontologies taken from well established bioinformatics resources.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially for data integration we need \"structured biological annotation\" which is here defined as the association of data with identifiers (e.g., accession codes from UniProt) and ontologies taken from well established bioinformatics resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a definition for structured biological annotation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "fd58c127-9978-433a-b503-91d33fd3fb55",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C29",
+      "claim": "None of the segmentation formats widely used in electron microscopy and related fields currently support structured biological annotation.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, none of the segmentation formats widely used in electron microscopy and related fields currently support structured biological annotation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of segmentation formats based on the authors' knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "2a2443a0-d956-4ac3-9b37-3474b634ecba",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C30",
+      "claim": "Spatial transformations relating sub-tomograms to their parent tomograms are not currently captured in EMDB.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, spatial transformations relating sub-tomograms to their parent tomograms are not currently captured in EMDB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the current EMDB system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "6384d9b4-a32c-48b2-a2a5-9a82dae6c6da",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C31",
+      "claim": "Wider usage of both segmentation and transformation data by non-expert users is hindered by a plurality of formats.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, wider usage of both segmentation and transformation data by non-expert users is hindered by a plurality of formats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a barrier to broader adoption of these data types.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "433adf4d-f98a-4435-b78f-2d9df4ce1ddc",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C32",
+      "claim": "The Protein Data Bank in Europe (PDBe) organised an expert workshop on '3D Segmentations and Transformations - Building Bridges between Cellular and Molecular Structural Biology' in December 2015.",
+      "claim_type": "EXPLICIT",
+      "source": "To discuss and address the challenges of representing and capturing segmentations and transformation data, the Protein Data Bank in Europe (PDBe) organised an expert workshop on \"3D Segmentations and Transformations - Building Bridges between Cellular and Molecular Structural Biology\" in December 2015.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on a workshop that was organized.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "4c57decc-143a-4436-9aac-0df3250fbacf",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C33",
+      "claim": "The workshop was attended by a range of participants including software developers, users of segmentation software, ontology experts, and experts in structure and data archiving.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report and discuss the main outcomes of the workshop, which was attended by a range of participants including software developers, users of segmentation software, ontology experts, and experts in structure and data archiving.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the composition of workshop attendees.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "3e812268-cba3-4f2e-8925-84866b902407",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C34",
+      "claim": "Prior to the workshop, PDBe developed a draft data model to support segmentations and their annotations in EMDB.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to the workshop, PDBe developed a draft data model to support segmentations and their annotations in EMDB that could accommodate segmentation descriptions from a range of existing formats and software packages as well as structured biological annotation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes preparatory work done before the workshop.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "e8a3b4f6-2203-4d78-a4d1-48f482a98050",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C35",
+      "claim": "The draft data model could accommodate segmentation descriptions from a range of existing formats and software packages as well as structured biological annotation.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to the workshop, PDBe developed a draft data model to support segmentations and their annotations in EMDB that could accommodate segmentation descriptions from a range of existing formats and software packages as well as structured biological annotation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the capabilities of the draft data model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "372f9bd1-c694-4fcc-86ba-fc987ad373cb",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C36",
+      "claim": "The draft data model supported the key features of major segmentation packages such as Amira, IMOD and Chimera.",
+      "claim_type": "EXPLICIT",
+      "source": "It supported the key features of major segmentation packages such as Amira (www.fei.com/software/amira), IMOD (Kremer et al., 1996) and Chimera (Pettersen et al., 2004), and provided scope for extension and flexibility as the field developed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the capabilities of the draft data model and cites the software packages.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "68d4ffda-e139-401f-a225-28afa07312f3",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C37",
+      "claim": "The draft data model provided scope for extension and flexibility as the field developed.",
+      "claim_type": "EXPLICIT",
+      "source": "It supported the key features of major segmentation packages such as Amira (www.fei.com/software/amira), IMOD (Kremer et al., 1996) and Chimera (Pettersen et al., 2004), and provided scope for extension and flexibility as the field developed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the design philosophy of the draft data model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "a7a6a363-ddd8-4459-a16b-189a74e9d59e",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C38",
+      "claim": "The draft data model did not cover minor features that are only relevant in the context of a particular software package.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the draft data model did not cover minor features (e.g., surface rendering parameters), especially those that are only relevant in the context of a particular software package.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes limitations of the draft data model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "53f5b5ca-d2ff-4bda-bd9d-c58536de76d7",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C39",
+      "claim": "The draft data model was intended primarily for internal use in EMDB.",
+      "claim_type": "EXPLICIT",
+      "source": "The draft data model was intended primarily for internal use in EMDB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the original intended scope of the data model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "bfda47b2-e19e-4567-996d-f7f6b169bed2",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C40",
+      "claim": "Meeting participants strongly favoured a broader scope for the data model so that the format could serve the entire biological segmentation field.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the meeting participants strongly favoured a broader scope so that the format could serve the entire biological segmentation field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on feedback from workshop participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "f1317ead-e96d-4010-830e-27499d78a12b",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C41",
+      "claim": "A broader scope for the data model would make it easier to support the development of translators between different formats.",
+      "claim_type": "EXPLICIT",
+      "source": "This would also make it easier to support the development of translators between different formats and possibly contribute to a reduction of the number of formats (or at least prevent further proliferation of formats).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes anticipated benefits of broadening the scope.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "e9e0c729-a56b-422b-a485-10e1be0a421b",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C42",
+      "claim": "A broader scope for the data model could possibly contribute to a reduction of the number of formats or at least prevent further proliferation of formats.",
+      "claim_type": "EXPLICIT",
+      "source": "This would also make it easier to support the development of translators between different formats and possibly contribute to a reduction of the number of formats (or at least prevent further proliferation of formats).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes anticipated benefits of broadening the scope.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "b71da735-0ea2-47bd-ac78-a55b19665b02",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C43",
+      "claim": "Representatives for IMOD, Amira and Chimera have expressed a commitment to providing read/write capabilities for the developed format if standard libraries are made available.",
+      "claim_type": "EXPLICIT",
+      "source": "Representatives for several major software packages used for segmentation including IMOD (D.M.), Amira (R.B.) and Chimera (Tom Goddard, personal communication) have expressed a commitment to providing read/write capabilities for the developed format if standard libraries are made available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on commitments made by software developers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "1a5de9cd-a72b-4137-a6c5-9cd025212a28",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C44",
+      "claim": "The draft data model included support for various colour models including RGB, HSV and colour names.",
+      "claim_type": "EXPLICIT",
+      "source": "The draft data model included support for various colour models including RGB, HSV and colour names.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes features of the draft data model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "691aba03-74fb-4eea-b7bf-382ab46b4b01",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C45",
+      "claim": "Participants argued that it would be sufficient to support only the RGB colour model, as the other models can be converted to it.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants argued that it would be sufficient to support only the most commonly used one, namely the RGB model, as the other models can be converted to it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on feedback from workshop participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "0e9c97c3-112d-47b5-8637-9f11a97b7b36",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C46",
+      "claim": "Participants noted that it might be useful to allow quantification of the estimated certainty of a biological annotation.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants also noted that it might be useful to allow quantification of the estimated certainty of a biological annotation, for example a score for the agreement between a sub-tomogram average and a corresponding region from an originating tomogram.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on suggestions from workshop participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "e9956174-5a70-400d-8be9-b81ede25b9c7",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C47",
+      "claim": "There may be alternative biological annotations in various combinations (logical OR, XOR, AND, etc.).",
+      "claim_type": "EXPLICIT",
+      "source": "There may also be alternative biological annotations in various combinations (logical OR, XOR, AND, etc.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript discusses potential complexity in annotation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "bfd6c808-0026-4b36-81d1-e14d8d10be9e",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C48",
+      "claim": "The participants agreed to initially limit the scope to a single annotation per segment and to let the need for more complex representations be driven by actual use cases.",
+      "claim_type": "EXPLICIT",
+      "source": "The quantification of alternative annotations could become very complex to represent and use, and the participants agreed to initially limit the scope to a single annotation per segment and to let the need for more complex representations be driven by actual use cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on decisions made by workshop participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "69505239-b321-41b1-a3af-89610add4702",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C49",
+      "claim": "The participants agreed that transformation information between sub-tomogram averages and tomograms should be incorporated into the segmentation data model.",
+      "claim_type": "EXPLICIT",
+      "source": "Concerning the transformations between sub-tomogram averages and tomograms, the participants agreed that this information should be incorporated into the segmentation data model; it simply requires adding support for multiple transformations of the same 3D volume representation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on decisions made by workshop participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "e1b6b802-cd53-45b8-ba70-7127fba4fac8",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C50",
+      "claim": "Incorporating transformation information simply requires adding support for multiple transformations of the same 3D volume representation.",
+      "claim_type": "EXPLICIT",
+      "source": "Concerning the transformations between sub-tomogram averages and tomograms, the participants agreed that this information should be incorporated into the segmentation data model; it simply requires adding support for multiple transformations of the same 3D volume representation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the technical requirement for incorporating transformations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "8903c480-56a3-4e02-9b61-7c32252af3a1",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C51",
+      "claim": "It was agreed that the convention to define affine transformations should be well-defined in terms of the transformation, the order in which they are applied, the direction of the transformation, and the orientations and origins of coordinate systems.",
+      "claim_type": "EXPLICIT",
+      "source": "It was agreed that the convention to define affine transformations should be well-defined in terms of the transformation, the order in which they are applied, the direction of the transformation, and the orientations and origins of coordinate systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on agreements made by workshop participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "37b34173-4372-4f18-8836-040b90f3586f",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C52",
+      "claim": "With respect to correlative multi-modal imaging it was recognized that there would eventually be a need to go beyond affine transformations.",
+      "claim_type": "EXPLICIT",
+      "source": "With respect to correlative multi-modal imaging it was recognized that there would eventually be a need to go beyond affine transformations, for example to represent distortions and deformations of slice data, but the participants did not come to a conclusion about a coherent extensible format.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on discussions at the workshop.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "2bcf9df4-b1ef-4028-bf4d-5b9728ee0e2b",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C53",
+      "claim": "The participants did not come to a conclusion about a coherent extensible format for representing distortions and deformations of slice data.",
+      "claim_type": "EXPLICIT",
+      "source": "With respect to correlative multi-modal imaging it was recognized that there would eventually be a need to go beyond affine transformations, for example to represent distortions and deformations of slice data, but the participants did not come to a conclusion about a coherent extensible format.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on the outcome of workshop discussions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "24a6e7d4-8773-4f96-bb5a-5ec9caf3f032",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C54",
+      "claim": "Often, a segment consists of multiple spatially transformed copies of the same primitive.",
+      "claim_type": "EXPLICIT",
+      "source": "Often, a segment consists of multiple spatially transformed copies of the same primitive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a common scenario in segmentation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "d57c142e-6578-4039-8b76-f7788202d6f4",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C55",
+      "claim": "Every segment can be associated with a list of transformations to accommodate situations where a segment consists of multiple spatially transformed copies of the same primitive.",
+      "claim_type": "EXPLICIT",
+      "source": "To accommodate these situations, every segment can be associated with a list of transformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a design feature of the data model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "bea7a666-37da-4cd1-a3cc-cc96f2e540f3",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C56",
+      "claim": "The draft data model was developed in XSD (XML Schema Definition).",
+      "claim_type": "EXPLICIT",
+      "source": "The draft data model was developed in XSD (XML Schema Definition).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the technical implementation of the data model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "f1f01bd9-4960-43ab-abbf-f378b1a8ae25",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C57",
+      "claim": "The definition of data models is greatly facilitated by tools that enable GUI-based development of schemas such as Oxygen and XMLSpy.",
+      "claim_type": "EXPLICIT",
+      "source": "The definition of data models is greatly facilitated by tools that enable GUI-based development of schemas such as Oxygen and XMLSpy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes tools that aid in data model development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "dc773d13-84e6-4a77-9270-6633582fae52",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C58",
+      "claim": "Code generators such as generateDS create object-model wrappers from schemas that enable reading, writing and manipulation of XML files.",
+      "claim_type": "EXPLICIT",
+      "source": "Code generators such as generateDS create object-model wrappers from schemas that enable reading, writing and manipulation of XML files, thus allowing for rapid prototyping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the functionality of code generation tools.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "c3bc9885-7594-4697-8ffc-7e710bb13e7b",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C59",
+      "claim": "Concerns were raised about the verbosity of the XML format and the efficiency with which it can be used.",
+      "claim_type": "EXPLICIT",
+      "source": "However, concerns were raised about the verbosity of the XML format and the efficiency with which it can be used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on concerns raised by workshop participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "3d4e1d9c-8620-448c-9500-1480277a80ed",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C60",
+      "claim": "Participants proposed that it would be useful to consider other more compact and efficient formats such as JSON and HDF5.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants proposed that while XML may be the natural format for a schema defined in XSD, it would be useful to consider other more compact and efficient formats such as JSON and HDF5 (a binary format that allows for efficient representation of hierarchal metadata and data in a single container).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on suggestions from workshop participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "2dfcf989-cdbc-402b-ba9b-2973eb947f6d",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C61",
+      "claim": "Both JSON and HDF5 are now widely supported with libraries in most major programming languages, including Python and C/C++.",
+      "claim_type": "EXPLICIT",
+      "source": "Both JSON and HDF5 are now widely supported with libraries in most major programming languages, including Python and C/C++, to facilitate reading and writing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the current state of support for these formats.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "fc683462-f8fb-445c-9cfb-31386f69baaf",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C62",
+      "claim": "Utilities to convert between the XML, JSON and HDF5 representations of the segmentation data model are currently in development at PDBe.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, utilities to convert between the XML, JSON and HDF5 representations of the segmentation data model are currently in development at PDBe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on ongoing development work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "dea61e77-d6db-442d-a766-32a05509e113",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C63",
+      "claim": "Future format development will be an iterative process involving extensive consultation with relevant stakeholders to obtain consensus in and support from the community of developers.",
+      "claim_type": "EXPLICIT",
+      "source": "Future format development will be an iterative process involving extensive consultation with relevant stakeholders to obtain consensus in and support from the community of developers, yielding a format that they will support.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the planned approach for future development.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "01da6a10-57f0-4381-a6a2-df5666db540f",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C64",
+      "claim": "A 'Segmentation and transformation file format working group' has been established by a subset of the workshop participants.",
+      "claim_type": "EXPLICIT",
+      "source": "A \"Segmentation and transformation file format working group\" has been established by a subset of the workshop participants, and other developers working on segmentation who are interested in joining the group are asked to contact AP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on the formation of a working group.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "df791ebf-8c83-4e9a-b92b-3bc6c196bdbc",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C65",
+      "claim": "PDBe has already modified the data model based on the feedback from the meeting.",
+      "claim_type": "EXPLICIT",
+      "source": "PDBe has already modified the data model based on the feedback from the meeting, and this will continue in several rounds of consultation with the working group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on actions taken after the workshop.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "d9e7b389-d628-45a2-b608-6da15a28063d",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C66",
+      "claim": "The schema is versioned to keep track of changes.",
+      "claim_type": "EXPLICIT",
+      "source": "The schema is versioned to keep track of changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a feature of the schema management.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "604b136a-814b-4841-ac57-c4b53c478125",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C67",
+      "claim": "PDBe is developing translators to/from other commonly used formats to facilitate adoption of the EMDB-SFF format.",
+      "claim_type": "EXPLICIT",
+      "source": "To facilitate adoption of the format, dubbed EMDB-SFF (SFF=Segmentation File Format), PDBe is developing translators to/from other commonly used formats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on ongoing development work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "eb24237a-ac37-4fc5-b108-5a4c10a4ffe1",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C68",
+      "claim": "The code for translators is provided as free open source and distributed via the CCP-EM SVN repository.",
+      "claim_type": "EXPLICIT",
+      "source": "The code for these translators is provided as free open source and distributed via the CCP-EM SVN repository.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes how the code is being made available.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "46960915-ab69-4e66-b1bd-c9e118fabbb2",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C69",
+      "claim": "The use of structured biological annotation is not common practice in the electron microscopy or structural biology communities.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of structured biological annotation is not common practice in the electron microscopy or structural biology communities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the current state of practice in these fields.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "61f18000-663c-4694-8a9d-6eea91f5fac6",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C70",
+      "claim": "Ontology experts were invited to the workshop to explain why structured biological annotations are useful and what resources and tools are available for assigning annotations.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, ontology experts were invited to the workshop to explain why these are useful and what resources and tools are available for assigning annotations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the composition and activities of the workshop.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "30c716a2-0577-41b0-b8d7-8288e216a553",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C71",
+      "claim": "By the end of the meeting there was a clearer appreciation of the importance of structured biological annotation for searching and linking imaging data across different scales.",
+      "claim_type": "EXPLICIT",
+      "source": "By the end of the meeting there was a clearer appreciation of the importance of structured biological annotation for searching and linking imaging data across different scales, between different imaging and structural databases and with other bioinformatics resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on the outcome of workshop discussions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "a14fe5d4-0fde-46db-9211-3123e68c8227",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C72",
+      "claim": "Structured annotation would enable the seamless integration of structural, imaging and bioinformatics data from different resources.",
+      "claim_type": "EXPLICIT",
+      "source": "Structured annotation would enable the seamless integration of structural, imaging and bioinformatics data from different resources, thus making it possible to provide problem-centric views of biology that incorporate structural and imaging data and are easily accessible by the broader biological community (and in contrast to the highly specialised structure-centric resources that are available today and mainly serve domain-specific communities).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes anticipated benefits of structured annotation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "bbdec75d-68e9-48cd-9d75-7840c6f158be",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C73",
+      "claim": "There were concerns that many in the electron microscopy community would find navigating the landscape of ontologies challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there were concerns that many in the electron microscopy community would find navigating the landscape of ontologies challenging and that this approach would only gain traction in the community if tools were developed to simplify the biological annotation process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on concerns raised at the workshop.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "85ccfb7f-977c-433d-8f8d-19856e4fb7e3",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C74",
+      "claim": "The structured annotation approach would only gain traction in the community if tools were developed to simplify the biological annotation process.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there were concerns that many in the electron microscopy community would find navigating the landscape of ontologies challenging and that this approach would only gain traction in the community if tools were developed to simplify the biological annotation process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on concerns and predictions from workshop participants.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "8175d94c-7614-4542-8132-710c51fefa1f",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C75",
+      "claim": "It was discussed whether annotation should be performed by the depositor or by EMDB curators.",
+      "claim_type": "EXPLICIT",
+      "source": "It was also discussed whether annotation should be performed by the depositor or by EMDB curators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on topics discussed at the workshop.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "2386d2dc-5935-4cd2-8787-82474f85e399",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C76",
+      "claim": "While curators could be trained to a high level of expertise in the use of ontologies, they would not necessarily have enough knowledge about the sample and the specifics of the biological system underlying the study.",
+      "claim_type": "EXPLICIT",
+      "source": "While curators could be trained to a high level of expertise in the use of ontologies, they would not necessarily have enough knowledge about the sample and the specifics of the biological system underlying the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents reasoning discussed at the workshop.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "b3f91900-31c7-4bdb-9873-7ed483aaf7d9",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C77",
+      "claim": "It was concluded that depositors should perform the annotation, with curators overseeing and checking annotations.",
+      "claim_type": "EXPLICIT",
+      "source": "It was concluded that depositors should perform the annotation, with curators overseeing and checking annotations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on conclusions reached at the workshop.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "2363032b-5bd5-4f54-a612-5c91bd0f3586",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C78",
+      "claim": "Structured biological annotation for electron microscopy will rely on a range of established ontologies such as Gene Ontology (GO).",
+      "claim_type": "EXPLICIT",
+      "source": "Structured biological annotation for electron microscopy will rely on a range of established ontologies such as Gene Ontology (GO; Gene Ontology Consortium, 2008), Experimental Factor Ontology (EFO; Malone et al., 2010), Protein Ontology (PRO; Natale et al., 2014), Cellular Microscopy Phenotype Ontology (CMPO; Jupp et al., 2016), NCBI organismal classification (NCBITaxon), integrated cross-species for anatomical structures (UBERON; Mungall et al., 2012), imaging modality and sample preparation from Fbbi (Orloff et al., 2013), Foundational Model of Anatomy (FMA) and Cell Ontology (CL; Diehl et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites established ontologies that will be used.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "7f2cbe2f-8abe-4cdd-9494-01963d9ef62a",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C79",
+      "claim": "Structured biological annotation for electron microscopy may include identifiers from resources such as UniProt and the Complex Portal.",
+      "claim_type": "EXPLICIT",
+      "source": "It may also include identifiers from resources such as UniProt and the Complex Portal, which in turn contain cross-reference information to other useful standardised vocabularies and common terminology identifiers, such as the OMIM and KEGG (Kanehisa et al., 2016) pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes resources that may be used for annotation and cites them.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "38cfd57d-2778-4e18-958d-64300fe137ea",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C80",
+      "claim": "Several ontology resources provide application programming interfaces (APIs) that can be used to access the information programmatically and provide search functionality.",
+      "claim_type": "EXPLICIT",
+      "source": "Several of these resources provide application programming interfaces (APIs) that can be used to access the information programmatically and provide search functionality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes technical capabilities of ontology resources.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "ff9a7a9d-3abf-4d76-9ed0-26a365e8f2e4",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C81",
+      "claim": "The Samples, Phenotypes and Ontologies Team (SPOT) at EMBL-EBI has developed tools such as Zooma and the Ontology Lookup Service (OLS).",
+      "claim_type": "EXPLICIT",
+      "source": "The Samples, Phenotypes and Ontologies Team (SPOT) at EMBL-EBI has developed tools such as Zooma and the Ontology Lookup Service (OLS; Jupp et al., 2015), which aggregate information from a wide range of ontologies and provide APIs to access these tools.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites tools developed by SPOT.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "28aa9dff-3898-42f5-a27b-2705ca218bd6",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C82",
+      "claim": "Zooma and OLS aggregate information from a wide range of ontologies and provide APIs to access these tools.",
+      "claim_type": "EXPLICIT",
+      "source": "The Samples, Phenotypes and Ontologies Team (SPOT) at EMBL-EBI has developed tools such as Zooma and the Ontology Lookup Service (OLS; Jupp et al., 2015), which aggregate information from a wide range of ontologies and provide APIs to access these tools.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the functionality of these tools and cites them.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "af12205e-9771-461a-a9cb-4789701b84f4",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C83",
+      "claim": "These APIs can be used when building tools for segmentation annotation to provide simplified views and search facilities for ontological terms.",
+      "claim_type": "EXPLICIT",
+      "source": "These APIs can be used when building tools for segmentation annotation to provide simplified views and search facilities for ontological terms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes how existing APIs can be leveraged.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "c356bfcc-0841-4431-ad71-b6d2ada40df4",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C84",
+      "claim": "At the workshop, PDBe presented mock-ups of a web-based segmentation annotation tool (SAT).",
+      "claim_type": "EXPLICIT",
+      "source": "At the workshop, PDBe presented mock-ups of a web-based segmentation annotation tool (SAT; Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports on presentations made at the workshop and references Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "4b3e93c8-bf47-488d-927e-6494a72294c0",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C85",
+      "claim": "The SAT would allow a user to add structured biological annotation to segmentations obtained from a variety of different software packages.",
+      "claim_type": "EXPLICIT",
+      "source": "This tool would allow a user to add structured biological annotation to segmentations obtained from a variety of different software packages and then output an annotated segmentation file in EMDB-SFF that could be deposited to EMDB or EMPIAR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the intended functionality of the proposed tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "635c96b9-b7ac-4585-91ce-219539e9b9a0",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C86",
+      "claim": "The SAT would output an annotated segmentation file in EMDB-SFF that could be deposited to EMDB or EMPIAR.",
+      "claim_type": "EXPLICIT",
+      "source": "This tool would allow a user to add structured biological annotation to segmentations obtained from a variety of different software packages and then output an annotated segmentation file in EMDB-SFF that could be deposited to EMDB or EMPIAR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the intended functionality of the proposed tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "dbd006b0-6468-4457-b5b5-660345c282ad",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C87",
+      "claim": "Annotation could be done during deposition, in which case the biological annotation from the segmentation file could be harvested by the deposition system to facilitate the deposition process.",
+      "claim_type": "EXPLICIT",
+      "source": "Annotation could either be done during deposition, in which case the biological annotation from the segmentation file could be harvested by the deposition system to facilitate the deposition process, or it could be done post deposition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes potential workflows for using the tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "cde4cb35-c3e0-42a6-9f91-7eed958ba3de",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C88",
+      "claim": "Annotation could be done post deposition.",
+      "claim_type": "EXPLICIT",
+      "source": "Annotation could either be done during deposition, in which case the biological annotation from the segmentation file could be harvested by the deposition system to facilitate the deposition process, or it could be done post deposition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes potential workflows for using the tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "ebf393df-cb4e-4ce9-b415-84bec67fdc4c",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C89",
+      "claim": "The workshop participants expressed strong support for the development of the SAT and the functionality depicted in the mock-ups.",
+      "claim_type": "EXPLICIT",
+      "source": "The workshop participants expressed strong support for the development of the SAT and the functionality depicted in the mock-ups but raised concerns about a number of issues: the upload of data to a web server \u2013 some users may find it challenging to upload large maps and segmentations; the need to annotate segmentations twice \u2013 users would typically add free text annotations in the software used for the segmentation and would the need to re-annotate in the SAT; finding the 'right' metadata terms (particularly in cases where a search yields more than one term, and it is not clear which is the most relevant term); annotating a hierarchical segmentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on feedback from workshop participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "02402bc1-923e-4399-839d-38bf0a42d993",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C90",
+      "claim": "Workshop participants raised concerns about the upload of data to a web server, as some users may find it challenging to upload large maps and segmentations.",
+      "claim_type": "EXPLICIT",
+      "source": "The workshop participants expressed strong support for the development of the SAT and the functionality depicted in the mock-ups but raised concerns about a number of issues: the upload of data to a web server \u2013 some users may find it challenging to upload large maps and segmentations; the need to annotate segmentations twice \u2013 users would typically add free text annotations in the software used for the segmentation and would the need to re-annotate in the SAT; finding the 'right' metadata terms (particularly in cases where a search yields more than one term, and it is not clear which is the most relevant term); annotating a hierarchical segmentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on concerns raised by workshop participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "11ec8676-d5b2-4d48-a4ae-762fd363959e",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C91",
+      "claim": "Workshop participants raised concerns about the need to annotate segmentations twice, as users would typically add free text annotations in the software used for the segmentation and would need to re-annotate in the SAT.",
+      "claim_type": "EXPLICIT",
+      "source": "The workshop participants expressed strong support for the development of the SAT and the functionality depicted in the mock-ups but raised concerns about a number of issues: the upload of data to a web server \u2013 some users may find it challenging to upload large maps and segmentations; the need to annotate segmentations twice \u2013 users would typically add free text annotations in the software used for the segmentation and would the need to re-annotate in the SAT; finding the 'right' metadata terms (particularly in cases where a search yields more than one term, and it is not clear which is the most relevant term); annotating a hierarchical segmentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on concerns raised by workshop participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "5296be83-ea27-4cde-9efc-58c167f1e848",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C92",
+      "claim": "Workshop participants raised concerns about finding the 'right' metadata terms, particularly in cases where a search yields more than one term and it is not clear which is the most relevant term.",
+      "claim_type": "EXPLICIT",
+      "source": "The workshop participants expressed strong support for the development of the SAT and the functionality depicted in the mock-ups but raised concerns about a number of issues: the upload of data to a web server \u2013 some users may find it challenging to upload large maps and segmentations; the need to annotate segmentations twice \u2013 users would typically add free text annotations in the software used for the segmentation and would the need to re-annotate in the SAT; finding the 'right' metadata terms (particularly in cases where a search yields more than one term, and it is not clear which is the most relevant term); annotating a hierarchical segmentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on concerns raised by workshop participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "eebeae71-c73e-4905-b38d-a3098ab56995",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C93",
+      "claim": "Workshop participants raised concerns about annotating a hierarchical segmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "The workshop participants expressed strong support for the development of the SAT and the functionality depicted in the mock-ups but raised concerns about a number of issues: the upload of data to a web server \u2013 some users may find it challenging to upload large maps and segmentations; the need to annotate segmentations twice \u2013 users would typically add free text annotations in the software used for the segmentation and would the need to re-annotate in the SAT; finding the 'right' metadata terms (particularly in cases where a search yields more than one term, and it is not clear which is the most relevant term); annotating a hierarchical segmentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on concerns raised by workshop participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "42398db4-87aa-4038-979f-4cd6930752e6",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C94",
+      "claim": "The SAT mock-up accommodates annotation on only one level of hierarchy.",
+      "claim_type": "EXPLICIT",
+      "source": "(The SAT mock-up accommodates annotation on only one level of hierarchy: this might be sufficient in many cases, but it could become problematic as more automated segmentation techniques are developed and their usage expands.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a limitation of the proposed tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "da040cf9-c1c0-4cda-ba76-033a36bad075",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C95",
+      "claim": "A desktop version of the SAT would help users concerned about the upload of large amounts of data to a web-server.",
+      "claim_type": "EXPLICIT",
+      "source": "A desktop version of the SAT would help users concerned about the upload of large amounts of data to a web-server.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes a solution to address concerns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "c98521f9-4b83-4a3f-a076-dd0082570926",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C96",
+      "claim": "Another option would be to integrate the functionality for structured biological annotation into existing packages such as IMOD, Chimera and Amira.",
+      "claim_type": "EXPLICIT",
+      "source": "Another option would be to integrate the functionality for structured biological annotation into existing packages such as IMOD, Chimera and Amira; this would also avoid the problem of users having to annotate the segmentations twice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes an alternative approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "d19591a3-c8c5-4d12-9602-cc67f5912460",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C97",
+      "claim": "Integrating annotation functionality into existing packages would avoid the problem of users having to annotate the segmentations twice.",
+      "claim_type": "EXPLICIT",
+      "source": "Another option would be to integrate the functionality for structured biological annotation into existing packages such as IMOD, Chimera and Amira; this would also avoid the problem of users having to annotate the segmentations twice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a benefit of the proposed alternative approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "bb6f2833-cfad-43fe-8e8b-9027bf5e610a",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C98",
+      "claim": "Integration of annotation functionality into existing packages would require the development of libraries and widgets that facilitate the use of ontologies and the EMDB-SFF by third parties.",
+      "claim_type": "EXPLICIT",
+      "source": "This alternative would require the development of libraries and widgets that facilitate the use of ontologies and the EMDB-SFF by third parties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes requirements for implementing the alternative approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "1ee24588-fb4c-4a63-9e64-7cdc9183a79b",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C99",
+      "claim": "The program for segmentation in IMOD already has a 'Name Wizard' plugin that helps the user to choose standardized object names from a CSV file.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the program for segmentation in IMOD already has a 'Name Wizard' plugin that helps the user to choose standardized object names from a CSV file: however, additional development would be need to provide access to on-line ontologies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes existing functionality in IMOD.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "3a93a90a-39bf-459d-9fc9-37032e3bc580",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C100",
+      "claim": "Additional development would be needed to provide access to on-line ontologies in IMOD.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the program for segmentation in IMOD already has a 'Name Wizard' plugin that helps the user to choose standardized object names from a CSV file: however, additional development would be need to provide access to on-line ontologies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes development needs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "9f30cb0a-e7ae-4920-add4-c9d7325dd599",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C101",
+      "claim": "Participants agreed that PDBe should start by developing the web-based SAT.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants agreed that PDBe should start by developing the web-based SAT because it could reuse a number of components that are already being used in other electron microscopy-related web services (such as the Volume slicer; Salavert-Torres et al., 2016), followed by the desktop version.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on decisions made by workshop participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "e529b98e-7965-4a2b-9407-cb1fd807fbc2",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C102",
+      "claim": "The web-based SAT could reuse a number of components that are already being used in other electron microscopy-related web services such as the Volume slicer.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants agreed that PDBe should start by developing the web-based SAT because it could reuse a number of components that are already being used in other electron microscopy-related web services (such as the Volume slicer; Salavert-Torres et al., 2016), followed by the desktop version.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites existing components that can be reused.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "60c016fe-1d3b-4f70-ad8a-efd0e82ac71e",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C103",
+      "claim": "Once the SAT reaches a certain level of maturity PDBe could work with third-party developers to integrate the annotation functionality into their packages.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the SAT reaches a certain level of maturity PDBe could work with third-party developers to integrate the annotation functionality into their packages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes future plans.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "e60d18ae-66f9-4889-8723-e7797f0b994e",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C104",
+      "claim": "The greatest challenge is developing the functionality to find the appropriate biological metadata.",
+      "claim_type": "EXPLICIT",
+      "source": "By far the greatest challenge is developing the functionality to find the appropriate biological metadata (Malone et al., 2016) and tools such as Zooma and OLS will be useful for this purpose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies a key challenge and cites relevant work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "78dc5f8a-6b12-414c-bd66-5e30a4bccafc",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C105",
+      "claim": "Tools such as Zooma and OLS will be useful for developing the functionality to find the appropriate biological metadata.",
+      "claim_type": "EXPLICIT",
+      "source": "By far the greatest challenge is developing the functionality to find the appropriate biological metadata (Malone et al., 2016) and tools such as Zooma and OLS will be useful for this purpose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes tools that can help address the challenge.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "b568320a-77f2-46e5-8088-e50006b6594e",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C106",
+      "claim": "A 'Segmentation annotation working group' has been established by a subset of the workshop participants.",
+      "claim_type": "EXPLICIT",
+      "source": "A \"Segmentation annotation working group\" has been established by a subset of the workshop participants to provide data sets and use cases to aid the design of the SAT and to help with its testing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on the formation of a working group.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "70630a02-1879-4056-b5ce-3f75b848d23b",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C107",
+      "claim": "The segmentation annotation working group will provide data sets and use cases to aid the design of the SAT and to help with its testing.",
+      "claim_type": "EXPLICIT",
+      "source": "A \"Segmentation annotation working group\" has been established by a subset of the workshop participants to provide data sets and use cases to aid the design of the SAT and to help with its testing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the purpose of the working group.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "3acd9d46-e93e-48b5-8faf-f46aed3e1945",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C108",
+      "claim": "The EMDB-SFF data model has undergone a round of updates based on the feedback from the meeting.",
+      "claim_type": "EXPLICIT",
+      "source": "The EMDB-SFF data model has undergone a round of updates based on the feedback from the meeting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on actions taken after the workshop.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "2bb2fb13-9c3a-4db3-a4d3-dfccefef5536",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C109",
+      "claim": "The development of the file format and the segmentation annotation tools will be iterative, with user-testing and feedback from the working groups being integral parts of the process.",
+      "claim_type": "EXPLICIT",
+      "source": "The development of the file format and the segmentation annotation tools will be iterative, with user-testing and feedback from the working groups being integral parts of the process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the planned development approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "c88b8c3e-0e17-4aa4-9fef-41a9ec5e941e",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C110",
+      "claim": "The file format and tools are expected to be ready by late 2017, although they might not offer all the features discussed.",
+      "claim_type": "EXPLICIT",
+      "source": "The file format and tools are expected to be ready by late 2017, although they might not offer all the features discussed above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a timeline for development.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "5093ce68-500a-48d5-8aee-1bf0cb5193f5",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C111",
+      "claim": "Wide acceptance and support of the EMDB-SFF format by software developers working on segmentations and transformations will be crucial.",
+      "claim_type": "EXPLICIT",
+      "source": "Wide acceptance and support of the EMDB-SFF format by software developers working on segmentations and transformations will be crucial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies a key factor for success.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "568f113f-d154-4d47-9272-2806096f7e0c",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C112",
+      "claim": "Providing well-documented open-source tools for working with the format will help in gaining acceptance and support.",
+      "claim_type": "EXPLICIT",
+      "source": "Providing well-documented open-source tools for working with the format will help in this regard, and the Collaborative Computational Project for Electron cryo-Microscopy (CCP-EM) has committed to distributing these tools, and including them in training events for users and developers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes strategies for promoting adoption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "8106ff88-c134-4486-a8df-72dcfa31fe53",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C113",
+      "claim": "The Collaborative Computational Project for Electron cryo-Microscopy (CCP-EM) has committed to distributing the EMDB-SFF tools and including them in training events for users and developers.",
+      "claim_type": "EXPLICIT",
+      "source": "Providing well-documented open-source tools for working with the format will help in this regard, and the Collaborative Computational Project for Electron cryo-Microscopy (CCP-EM) has committed to distributing these tools, and including them in training events for users and developers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on commitments made by CCP-EM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "d5234c9b-2236-47e9-9b11-df62229e6216",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C114",
+      "claim": "The scope of the EMDB-SFF format is not limited to the cryo-EM field.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the scope of the format is not limited to the cryo-EM field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the broader applicability of the format.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "86888cd8-edac-4421-b9cf-88b8f87f22e4",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C115",
+      "claim": "Segmentation is an essential element of the workflow for interpreting data in 3D scanning electron microscopy (3D-SEM).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, segmentation is an essential element of the workflow for interpreting data in 3D scanning electron microscopy (3D-SEM; Patwardhan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites the importance of segmentation in another imaging modality.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "6add83ab-f6f9-4c72-9b76-ce046377f514",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C116",
+      "claim": "It will be possible to provide support for segmentations for other imaging modalities and for imaging on other length scales, although the range of biological ontologies and vocabularies will need to be expanded.",
+      "claim_type": "EXPLICIT",
+      "source": "It will also be possible to provide support for segmentations for other imaging modalities (and also for imaging on other length scales), although the range of biological ontologies and vocabularies will need to be expanded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript discusses future extensibility of the format.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "7e8e7668-a9f0-40cb-a879-ff6ac019f91a",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C117",
+      "claim": "It should be possible to support techniques that combine imaging modalities such as correlative light and electron microscopy, but this will involve extra work on the transformation model.",
+      "claim_type": "EXPLICIT",
+      "source": "It should also be possible to support techniques that combine imaging modalities (such as correlative light and electron microscopy), but this will involve extra work on the transformation model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript discusses future extensibility and associated challenges.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "923c89d9-1691-4e9c-ab96-a449d76f8eaa",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C118",
+      "claim": "There are significant language barriers between the fields that were discussed at the workshop.",
+      "claim_type": "EXPLICIT",
+      "source": "It was clear from the discussions regarding the annotation of segmentations that there are significant language barriers between the fields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports on observations from the workshop.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "75e63773-b905-4e12-92a2-2e8f779bad29",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C119",
+      "claim": "Overcoming language barriers between fields is a prerequisite for progress in integrating cellular and molecular structural data.",
+      "claim_type": "EXPLICIT",
+      "source": "Overcoming these barriers is a prerequisite for progress, as is the development of new tools that will facilitate annotation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies a key requirement for progress.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "21c53467-06cb-4a35-9ab3-b7087541a34f",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C120",
+      "claim": "The development of new tools that will facilitate annotation is a prerequisite for progress in integrating cellular and molecular structural data.",
+      "claim_type": "EXPLICIT",
+      "source": "Overcoming these barriers is a prerequisite for progress, as is the development of new tools that will facilitate annotation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies a key requirement for progress.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "86445248-3ff1-4087-a31e-26d05d03bb20",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C121",
+      "claim": "The workshop was an important milestone in that it defined concrete actionable outcomes to address the challenges involved in the integration of cellular and molecular structural data in the public archives.",
+      "claim_type": "EXPLICIT",
+      "source": "This workshop was an important milestone in that it defined concrete actionable outcomes to address the challenges involved in the integration of cellular and molecular structural data in the public archives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript evaluates the significance of the workshop.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "5607e9b1-56d9-4b0d-b2a4-d22d88591f38",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C122",
+      "claim": "Integration of cellular and molecular structural data will provide researchers with 'problem-centric views' of data from many different sources.",
+      "claim_type": "EXPLICIT",
+      "source": "This integration will provide researchers with \"problem-centric views\" of data from many different sources, and will also help the wider biological and medical communities by making make structural data more accessible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes anticipated benefits of data integration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "6bf6c944-966e-4c39-92ab-53724a58deca",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "claim_id": "C123",
+      "claim": "Integration of cellular and molecular structural data will help the wider biological and medical communities by making structural data more accessible.",
+      "claim_type": "EXPLICIT",
+      "source": "This integration will provide researchers with \"problem-centric views\" of data from many different sources, and will also help the wider biological and medical communities by making make structural data more accessible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes anticipated benefits of data integration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9f5e3fd1-7e56-4d51-b53e-ad30244e0a86",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A workshop on '3D Segmentations and Transformations - Building Bridges between Cellular and Molecular Structural Biology' was held in December 2015, attended by diverse stakeholders, and identified two main priorities: development of tools and file formats for segmentation, and development of tools for biological structure annotation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4, C32-C33 provide consistent documentation of the workshop occurrence, participants, and outcomes. This is a straightforward reporting of an event with clearly stated priorities, supported by the manuscript's direct statements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "1fdc6ae3-303e-47b4-adca-2b6db859326c",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PDBe developed a draft data model (EMDB-SFF) in XSD format that supports segmentation from major packages (Amira, IMOD, Chimera) and structured biological annotation. Workshop participants recommended broadening scope beyond EMDB-internal use, simplifying color model support to RGB only, and considering alternative formats (JSON, HDF5) to address XML verbosity concerns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C62 collectively document the data model development, its features, workshop feedback, and planned improvements. The progression from draft model to community feedback to planned modifications is logically consistent and well-documented. Software developer commitments (C43) add credibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "af54253e-ff17-41ea-9721-fa36ca0316a3",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Workshop participants agreed to initially limit annotation complexity to single annotations per segment, incorporate transformation information for sub-tomogram averages, define affine transformation conventions precisely, and support multiple transformations per segment. Non-affine transformations for correlative imaging were recognized as future needs without reaching consensus on implementation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C55 document specific technical decisions made at the workshop regarding annotation complexity, transformations, and future extensibility. The decisions show appropriate scoping (limiting initial complexity while acknowledging future needs), and the lack of consensus on non-affine transformations (C52-C53) demonstrates honest reporting of unresolved issues.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "a0601d57-756e-453d-914d-26a1f5009a2e",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Post-workshop, PDBe modified the data model based on feedback, established a working group for iterative development, implemented version control, and began developing format translators distributed as open source via CCP-EM. The format and tools were expected to be ready by late 2017, though potentially without all discussed features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C68 and C108-C110 document concrete actions taken after the workshop. The iterative development approach with community consultation (C63, C109) is appropriate for standards development. The timeline (C110) includes appropriate caveats about feature completeness, showing realistic planning.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "a327601f-0ca6-4e5a-9e2c-4d7b547adc4b",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Structured biological annotation is not common practice in electron microscopy/structural biology communities. Workshop discussions with ontology experts led to clearer appreciation of annotation importance for data integration, but raised concerns about complexity. It was concluded that depositors should perform annotation with curator oversight, contingent on tool development to simplify the process.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C77 document the current state of practice, workshop educational activities, and conclusions about annotation workflow. The reasoning for depositor-led annotation (C76) is sound\u2014depositors have domain knowledge while curators have ontology expertise. The recognition that adoption depends on tool development (C74) shows realistic assessment of barriers.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "afaff070-a136-4546-b242-404801826d0f",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Structured biological annotation for electron microscopy will rely on established ontologies (GO, EFO, PRO, CMPO, NCBITaxon, UBERON, Fbbi, FMA, CL) and identifiers from resources (UniProt, Complex Portal). Tools like Zooma and OLS from EMBL-EBI's SPOT team provide APIs that can be leveraged for building segmentation annotation tools.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C83 identify specific ontology resources and tools with appropriate citations. The proposed use of existing APIs (C83) is a reasonable technical approach. However, this is primarily a plan rather than demonstrated implementation, though the resources cited are well-established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "fa63b001-45cb-4d34-8b05-a5895c3b1e94",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "PDBe presented mock-ups of a web-based Segmentation Annotation Tool (SAT) that would enable structured biological annotation of segmentations and output EMDB-SFF files. Workshop participants supported the concept but raised concerns about data upload size, duplicate annotation effort, term selection difficulty, and hierarchical segmentation. Solutions proposed include desktop version, integration into existing packages (IMOD, Chimera, Amira), and phased development starting with web-based tool. A segmentation annotation working group was established to provide test cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84-C107 document tool mock-ups and extensive discussion of implementation challenges. While the concerns raised (C90-C93) are valid and the proposed solutions (C95-C98, C101) are reasonable, these remain plans rather than implemented solutions. The mock-ups (referenced in Figure 3) show conceptual design but not functional software. The greatest challenge identified (C104) regarding metadata search functionality is acknowledged but not solved. This represents important planning but lacks demonstrated implementation or validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "7594519a-4bf4-4b64-a239-a720cc20acbd",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Wide acceptance of EMDB-SFF by software developers is crucial for success. CCP-EM committed to distributing tools and including them in training. The format scope extends beyond cryo-EM to other imaging modalities (e.g., 3D-SEM) and length scales, though this will require expanding ontologies and additional work on transformation models for correlative techniques.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C111-C117 address adoption strategy and extensibility. The CCP-EM commitment (C113) provides concrete support for dissemination. The recognition of broader applicability (C114-C115) with acknowledgment of required additional work (C116-C117) shows appropriate scoping. However, actual adoption and extension remain future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "df6993fa-d130-4f76-8d3e-f71d0f0035df",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The workshop identified significant language barriers between fields as obstacles to progress. Overcoming these barriers and developing annotation tools are prerequisites for integrating cellular and molecular structural data. The workshop defined concrete actionable outcomes that will enable 'problem-centric views' of data and make structural data more accessible to broader biological and medical communities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C118-C123 provide overall assessment of workshop significance and anticipated impact. The identification of language barriers (C118) is an important observation. The characterization of the workshop as defining 'concrete actionable outcomes' (C121) is supported by the documented decisions and plans. However, the anticipated benefits (C122-C123) remain prospective rather than demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "d98a5bc3-6ebe-44ba-ae22-96a6e2200094",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Integration of cellular and molecular structural data across length scales and techniques (electron tomography, EM, NMR, X-ray crystallography) is key to understanding macromolecular function in vivo. Current integration between PDB and EMDB relies on atomic models fitted to volume maps, which works routinely for purified molecules and enables linking to bioinformatics resources like UniProt.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C11 establish the scientific context and current state of data integration. These are well-established principles in structural biology supported by citations to major databases (EMDB, EMPIAR, PDB, UniProt). The description of current integration methods (C9-C10) reflects standard practice in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "cdb87e97-5151-4ad4-9f03-22d4dac499e6",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Atomic models are not always available due to resolution limitations in complex/cellular environments or failed molecular averaging. In such cases, feature identification relies on prior knowledge or multi-scale data correlation, and segmentation facilitates interpretation. Examples include Plasmodium falciparum-infected erythrocytes (soft X-ray tomography), Lassa virus glycoprotein spike organization (sub-tomogram averaging), and viral membrane protein clustering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C23 describe limitations of current methods and provide cited examples (Hale et al. 2017, Li et al. 2016, Maurer et al. 2013) with figure references. The examples appropriately illustrate the utility of segmentation and sub-tomogram averaging in cellular contexts. The cited studies provide evidence for the described approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    },
+    {
+      "id": "591be6df-aef8-426c-a4c8-04807459fd9a",
+      "content_id": "af818a39-0320-4415-ac11-7a7f787f8032",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Previous workshops (2011, 2012) identified archiving segmentation data and improving biological annotation as urgent needs. Structured biological annotation (defined as association with identifiers and ontologies from established resources) is not currently supported by widely-used segmentation formats. EMDB does not capture spatial transformations between sub-tomograms and parent tomograms, and format plurality hinders non-expert usage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C31 document prior identification of needs (with citations to Patwardhan et al. 2012, 2014), define key terminology (C28), and describe current limitations. The statement that no segmentation formats support structured annotation (C29) is qualified as 'to our knowledge,' appropriately acknowledging potential limitations in the authors' survey. The identified gaps (C30-C31) provide clear motivation for the workshop.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:56:37.476893Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "52ae206f-61cf-40fd-a9d9-f49e9dcdee0e",
+      "result_id": "9f5e3fd1-7e56-4d51-b53e-ad30244e0a86"
+    },
+    {
+      "claim_id": "ec5fe5be-7496-46a9-8330-abb959f46ef5",
+      "result_id": "9f5e3fd1-7e56-4d51-b53e-ad30244e0a86"
+    },
+    {
+      "claim_id": "d183ed5f-f862-45c1-9ac6-5b77b9ed928d",
+      "result_id": "9f5e3fd1-7e56-4d51-b53e-ad30244e0a86"
+    },
+    {
+      "claim_id": "433adf4d-f98a-4435-b78f-2d9df4ce1ddc",
+      "result_id": "9f5e3fd1-7e56-4d51-b53e-ad30244e0a86"
+    },
+    {
+      "claim_id": "4c57decc-143a-4436-9aac-0df3250fbacf",
+      "result_id": "9f5e3fd1-7e56-4d51-b53e-ad30244e0a86"
+    },
+    {
+      "claim_id": "3e812268-cba3-4f2e-8925-84866b902407",
+      "result_id": "1fdc6ae3-303e-47b4-adca-2b6db859326c"
+    },
+    {
+      "claim_id": "e8a3b4f6-2203-4d78-a4d1-48f482a98050",
+      "result_id": "1fdc6ae3-303e-47b4-adca-2b6db859326c"
+    },
+    {
+      "claim_id": "372f9bd1-c694-4fcc-86ba-fc987ad373cb",
+      "result_id": "1fdc6ae3-303e-47b4-adca-2b6db859326c"
+    },
+    {
+      "claim_id": "68d4ffda-e139-401f-a225-28afa07312f3",
+      "result_id": "1fdc6ae3-303e-47b4-adca-2b6db859326c"
+    },
+    {
+      "claim_id": "a7a6a363-ddd8-4459-a16b-189a74e9d59e",
+      "result_id": "1fdc6ae3-303e-47b4-adca-2b6db859326c"
+    },
+    {
+      "claim_id": "53f5b5ca-d2ff-4bda-bd9d-c58536de76d7",
+      "result_id": "1fdc6ae3-303e-47b4-adca-2b6db859326c"
+    },
+    {
+      "claim_id": "bfda47b2-e19e-4567-996d-f7f6b169bed2",
+      "result_id": "1fdc6ae3-303e-47b4-adca-2b6db859326c"
+    },
+    {
+      "claim_id": "f1317ead-e96d-4010-830e-27499d78a12b",
+      "result_id": "1fdc6ae3-303e-47b4-adca-2b6db859326c"
+    },
+    {
+      "claim_id": "e9e0c729-a56b-422b-a485-10e1be0a421b",
+      "result_id": "1fdc6ae3-303e-47b4-adca-2b6db859326c"
+    },
+    {
+      "claim_id": "b71da735-0ea2-47bd-ac78-a55b19665b02",
+      "result_id": "1fdc6ae3-303e-47b4-adca-2b6db859326c"
+    },
+    {
+      "claim_id": "1a5de9cd-a72b-4137-a6c5-9cd025212a28",
+      "result_id": "1fdc6ae3-303e-47b4-adca-2b6db859326c"
+    },
+    {
+      "claim_id": "691aba03-74fb-4eea-b7bf-382ab46b4b01",
+      "result_id": "1fdc6ae3-303e-47b4-adca-2b6db859326c"
+    },
+    {
+      "claim_id": "bea7a666-37da-4cd1-a3cc-cc96f2e540f3",
+      "result_id": "1fdc6ae3-303e-47b4-adca-2b6db859326c"
+    },
+    {
+      "claim_id": "c3bc9885-7594-4697-8ffc-7e710bb13e7b",
+      "result_id": "1fdc6ae3-303e-47b4-adca-2b6db859326c"
+    },
+    {
+      "claim_id": "3d4e1d9c-8620-448c-9500-1480277a80ed",
+      "result_id": "1fdc6ae3-303e-47b4-adca-2b6db859326c"
+    },
+    {
+      "claim_id": "2dfcf989-cdbc-402b-ba9b-2973eb947f6d",
+      "result_id": "1fdc6ae3-303e-47b4-adca-2b6db859326c"
+    },
+    {
+      "claim_id": "fc683462-f8fb-445c-9cfb-31386f69baaf",
+      "result_id": "1fdc6ae3-303e-47b4-adca-2b6db859326c"
+    },
+    {
+      "claim_id": "0e9c97c3-112d-47b5-8637-9f11a97b7b36",
+      "result_id": "af54253e-ff17-41ea-9721-fa36ca0316a3"
+    },
+    {
+      "claim_id": "e9956174-5a70-400d-8be9-b81ede25b9c7",
+      "result_id": "af54253e-ff17-41ea-9721-fa36ca0316a3"
+    },
+    {
+      "claim_id": "bfd6c808-0026-4b36-81d1-e14d8d10be9e",
+      "result_id": "af54253e-ff17-41ea-9721-fa36ca0316a3"
+    },
+    {
+      "claim_id": "69505239-b321-41b1-a3af-89610add4702",
+      "result_id": "af54253e-ff17-41ea-9721-fa36ca0316a3"
+    },
+    {
+      "claim_id": "e1b6b802-cd53-45b8-ba70-7127fba4fac8",
+      "result_id": "af54253e-ff17-41ea-9721-fa36ca0316a3"
+    },
+    {
+      "claim_id": "8903c480-56a3-4e02-9b61-7c32252af3a1",
+      "result_id": "af54253e-ff17-41ea-9721-fa36ca0316a3"
+    },
+    {
+      "claim_id": "37b34173-4372-4f18-8836-040b90f3586f",
+      "result_id": "af54253e-ff17-41ea-9721-fa36ca0316a3"
+    },
+    {
+      "claim_id": "2bcf9df4-b1ef-4028-bf4d-5b9728ee0e2b",
+      "result_id": "af54253e-ff17-41ea-9721-fa36ca0316a3"
+    },
+    {
+      "claim_id": "24a6e7d4-8773-4f96-bb5a-5ec9caf3f032",
+      "result_id": "af54253e-ff17-41ea-9721-fa36ca0316a3"
+    },
+    {
+      "claim_id": "d57c142e-6578-4039-8b76-f7788202d6f4",
+      "result_id": "af54253e-ff17-41ea-9721-fa36ca0316a3"
+    },
+    {
+      "claim_id": "dea61e77-d6db-442d-a766-32a05509e113",
+      "result_id": "a0601d57-756e-453d-914d-26a1f5009a2e"
+    },
+    {
+      "claim_id": "01da6a10-57f0-4381-a6a2-df5666db540f",
+      "result_id": "a0601d57-756e-453d-914d-26a1f5009a2e"
+    },
+    {
+      "claim_id": "df791ebf-8c83-4e9a-b92b-3bc6c196bdbc",
+      "result_id": "a0601d57-756e-453d-914d-26a1f5009a2e"
+    },
+    {
+      "claim_id": "d9e7b389-d628-45a2-b608-6da15a28063d",
+      "result_id": "a0601d57-756e-453d-914d-26a1f5009a2e"
+    },
+    {
+      "claim_id": "604b136a-814b-4841-ac57-c4b53c478125",
+      "result_id": "a0601d57-756e-453d-914d-26a1f5009a2e"
+    },
+    {
+      "claim_id": "eb24237a-ac37-4fc5-b108-5a4c10a4ffe1",
+      "result_id": "a0601d57-756e-453d-914d-26a1f5009a2e"
+    },
+    {
+      "claim_id": "3acd9d46-e93e-48b5-8faf-f46aed3e1945",
+      "result_id": "a0601d57-756e-453d-914d-26a1f5009a2e"
+    },
+    {
+      "claim_id": "2bb2fb13-9c3a-4db3-a4d3-dfccefef5536",
+      "result_id": "a0601d57-756e-453d-914d-26a1f5009a2e"
+    },
+    {
+      "claim_id": "c88b8c3e-0e17-4aa4-9fef-41a9ec5e941e",
+      "result_id": "a0601d57-756e-453d-914d-26a1f5009a2e"
+    },
+    {
+      "claim_id": "46960915-ab69-4e66-b1bd-c9e118fabbb2",
+      "result_id": "a327601f-0ca6-4e5a-9e2c-4d7b547adc4b"
+    },
+    {
+      "claim_id": "61f18000-663c-4694-8a9d-6eea91f5fac6",
+      "result_id": "a327601f-0ca6-4e5a-9e2c-4d7b547adc4b"
+    },
+    {
+      "claim_id": "30c716a2-0577-41b0-b8d7-8288e216a553",
+      "result_id": "a327601f-0ca6-4e5a-9e2c-4d7b547adc4b"
+    },
+    {
+      "claim_id": "a14fe5d4-0fde-46db-9211-3123e68c8227",
+      "result_id": "a327601f-0ca6-4e5a-9e2c-4d7b547adc4b"
+    },
+    {
+      "claim_id": "bbdec75d-68e9-48cd-9d75-7840c6f158be",
+      "result_id": "a327601f-0ca6-4e5a-9e2c-4d7b547adc4b"
+    },
+    {
+      "claim_id": "85ccfb7f-977c-433d-8f8d-19856e4fb7e3",
+      "result_id": "a327601f-0ca6-4e5a-9e2c-4d7b547adc4b"
+    },
+    {
+      "claim_id": "8175d94c-7614-4542-8132-710c51fefa1f",
+      "result_id": "a327601f-0ca6-4e5a-9e2c-4d7b547adc4b"
+    },
+    {
+      "claim_id": "2386d2dc-5935-4cd2-8787-82474f85e399",
+      "result_id": "a327601f-0ca6-4e5a-9e2c-4d7b547adc4b"
+    },
+    {
+      "claim_id": "b3f91900-31c7-4bdb-9873-7ed483aaf7d9",
+      "result_id": "a327601f-0ca6-4e5a-9e2c-4d7b547adc4b"
+    },
+    {
+      "claim_id": "2363032b-5bd5-4f54-a612-5c91bd0f3586",
+      "result_id": "afaff070-a136-4546-b242-404801826d0f"
+    },
+    {
+      "claim_id": "7f2cbe2f-8abe-4cdd-9494-01963d9ef62a",
+      "result_id": "afaff070-a136-4546-b242-404801826d0f"
+    },
+    {
+      "claim_id": "38cfd57d-2778-4e18-958d-64300fe137ea",
+      "result_id": "afaff070-a136-4546-b242-404801826d0f"
+    },
+    {
+      "claim_id": "ff9a7a9d-3abf-4d76-9ed0-26a365e8f2e4",
+      "result_id": "afaff070-a136-4546-b242-404801826d0f"
+    },
+    {
+      "claim_id": "28aa9dff-3898-42f5-a27b-2705ca218bd6",
+      "result_id": "afaff070-a136-4546-b242-404801826d0f"
+    },
+    {
+      "claim_id": "af12205e-9771-461a-a9cb-4789701b84f4",
+      "result_id": "afaff070-a136-4546-b242-404801826d0f"
+    },
+    {
+      "claim_id": "c356bfcc-0841-4431-ad71-b6d2ada40df4",
+      "result_id": "fa63b001-45cb-4d34-8b05-a5895c3b1e94"
+    },
+    {
+      "claim_id": "4b3e93c8-bf47-488d-927e-6494a72294c0",
+      "result_id": "fa63b001-45cb-4d34-8b05-a5895c3b1e94"
+    },
+    {
+      "claim_id": "635c96b9-b7ac-4585-91ce-219539e9b9a0",
+      "result_id": "fa63b001-45cb-4d34-8b05-a5895c3b1e94"
+    },
+    {
+      "claim_id": "dbd006b0-6468-4457-b5b5-660345c282ad",
+      "result_id": "fa63b001-45cb-4d34-8b05-a5895c3b1e94"
+    },
+    {
+      "claim_id": "cde4cb35-c3e0-42a6-9f91-7eed958ba3de",
+      "result_id": "fa63b001-45cb-4d34-8b05-a5895c3b1e94"
+    },
+    {
+      "claim_id": "ebf393df-cb4e-4ce9-b415-84bec67fdc4c",
+      "result_id": "fa63b001-45cb-4d34-8b05-a5895c3b1e94"
+    },
+    {
+      "claim_id": "02402bc1-923e-4399-839d-38bf0a42d993",
+      "result_id": "fa63b001-45cb-4d34-8b05-a5895c3b1e94"
+    },
+    {
+      "claim_id": "11ec8676-d5b2-4d48-a4ae-762fd363959e",
+      "result_id": "fa63b001-45cb-4d34-8b05-a5895c3b1e94"
+    },
+    {
+      "claim_id": "5296be83-ea27-4cde-9efc-58c167f1e848",
+      "result_id": "fa63b001-45cb-4d34-8b05-a5895c3b1e94"
+    },
+    {
+      "claim_id": "eebeae71-c73e-4905-b38d-a3098ab56995",
+      "result_id": "fa63b001-45cb-4d34-8b05-a5895c3b1e94"
+    },
+    {
+      "claim_id": "42398db4-87aa-4038-979f-4cd6930752e6",
+      "result_id": "fa63b001-45cb-4d34-8b05-a5895c3b1e94"
+    },
+    {
+      "claim_id": "da040cf9-c1c0-4cda-ba76-033a36bad075",
+      "result_id": "fa63b001-45cb-4d34-8b05-a5895c3b1e94"
+    },
+    {
+      "claim_id": "c98521f9-4b83-4a3f-a076-dd0082570926",
+      "result_id": "fa63b001-45cb-4d34-8b05-a5895c3b1e94"
+    },
+    {
+      "claim_id": "d19591a3-c8c5-4d12-9602-cc67f5912460",
+      "result_id": "fa63b001-45cb-4d34-8b05-a5895c3b1e94"
+    },
+    {
+      "claim_id": "bb6f2833-cfad-43fe-8e8b-9027bf5e610a",
+      "result_id": "fa63b001-45cb-4d34-8b05-a5895c3b1e94"
+    },
+    {
+      "claim_id": "1ee24588-fb4c-4a63-9e64-7cdc9183a79b",
+      "result_id": "fa63b001-45cb-4d34-8b05-a5895c3b1e94"
+    },
+    {
+      "claim_id": "3a93a90a-39bf-459d-9fc9-37032e3bc580",
+      "result_id": "fa63b001-45cb-4d34-8b05-a5895c3b1e94"
+    },
+    {
+      "claim_id": "9f30cb0a-e7ae-4920-add4-c9d7325dd599",
+      "result_id": "fa63b001-45cb-4d34-8b05-a5895c3b1e94"
+    },
+    {
+      "claim_id": "e529b98e-7965-4a2b-9407-cb1fd807fbc2",
+      "result_id": "fa63b001-45cb-4d34-8b05-a5895c3b1e94"
+    },
+    {
+      "claim_id": "60c016fe-1d3b-4f70-ad8a-efd0e82ac71e",
+      "result_id": "fa63b001-45cb-4d34-8b05-a5895c3b1e94"
+    },
+    {
+      "claim_id": "e60d18ae-66f9-4889-8723-e7797f0b994e",
+      "result_id": "fa63b001-45cb-4d34-8b05-a5895c3b1e94"
+    },
+    {
+      "claim_id": "78dc5f8a-6b12-414c-bd66-5e30a4bccafc",
+      "result_id": "fa63b001-45cb-4d34-8b05-a5895c3b1e94"
+    },
+    {
+      "claim_id": "b568320a-77f2-46e5-8088-e50006b6594e",
+      "result_id": "fa63b001-45cb-4d34-8b05-a5895c3b1e94"
+    },
+    {
+      "claim_id": "70630a02-1879-4056-b5ce-3f75b848d23b",
+      "result_id": "fa63b001-45cb-4d34-8b05-a5895c3b1e94"
+    },
+    {
+      "claim_id": "5093ce68-500a-48d5-8aee-1bf0cb5193f5",
+      "result_id": "7594519a-4bf4-4b64-a239-a720cc20acbd"
+    },
+    {
+      "claim_id": "568f113f-d154-4d47-9272-2806096f7e0c",
+      "result_id": "7594519a-4bf4-4b64-a239-a720cc20acbd"
+    },
+    {
+      "claim_id": "8106ff88-c134-4486-a8df-72dcfa31fe53",
+      "result_id": "7594519a-4bf4-4b64-a239-a720cc20acbd"
+    },
+    {
+      "claim_id": "d5234c9b-2236-47e9-9b11-df62229e6216",
+      "result_id": "7594519a-4bf4-4b64-a239-a720cc20acbd"
+    },
+    {
+      "claim_id": "86888cd8-edac-4421-b9cf-88b8f87f22e4",
+      "result_id": "7594519a-4bf4-4b64-a239-a720cc20acbd"
+    },
+    {
+      "claim_id": "6add83ab-f6f9-4c72-9b76-ce046377f514",
+      "result_id": "7594519a-4bf4-4b64-a239-a720cc20acbd"
+    },
+    {
+      "claim_id": "7e8e7668-a9f0-40cb-a879-ff6ac019f91a",
+      "result_id": "7594519a-4bf4-4b64-a239-a720cc20acbd"
+    },
+    {
+      "claim_id": "923c89d9-1691-4e9c-ab96-a449d76f8eaa",
+      "result_id": "df6993fa-d130-4f76-8d3e-f71d0f0035df"
+    },
+    {
+      "claim_id": "75e63773-b905-4e12-92a2-2e8f779bad29",
+      "result_id": "df6993fa-d130-4f76-8d3e-f71d0f0035df"
+    },
+    {
+      "claim_id": "21c53467-06cb-4a35-9ab3-b7087541a34f",
+      "result_id": "df6993fa-d130-4f76-8d3e-f71d0f0035df"
+    },
+    {
+      "claim_id": "86445248-3ff1-4087-a31e-26d05d03bb20",
+      "result_id": "df6993fa-d130-4f76-8d3e-f71d0f0035df"
+    },
+    {
+      "claim_id": "5607e9b1-56d9-4b0d-b2a4-d22d88591f38",
+      "result_id": "df6993fa-d130-4f76-8d3e-f71d0f0035df"
+    },
+    {
+      "claim_id": "6bf6c944-966e-4c39-92ab-53724a58deca",
+      "result_id": "df6993fa-d130-4f76-8d3e-f71d0f0035df"
+    },
+    {
+      "claim_id": "f423bad0-cfe9-4337-81fe-fc017f78baf8",
+      "result_id": "d98a5bc3-6ebe-44ba-ae22-96a6e2200094"
+    },
+    {
+      "claim_id": "e2cd7855-c351-47ed-88c9-18170661ad76",
+      "result_id": "d98a5bc3-6ebe-44ba-ae22-96a6e2200094"
+    },
+    {
+      "claim_id": "98e2384e-a721-41e6-8488-13eb236b0243",
+      "result_id": "d98a5bc3-6ebe-44ba-ae22-96a6e2200094"
+    },
+    {
+      "claim_id": "f0509224-2ac7-465d-8470-c85a315184d7",
+      "result_id": "d98a5bc3-6ebe-44ba-ae22-96a6e2200094"
+    },
+    {
+      "claim_id": "ee83e876-ee1a-4fc6-9763-965de87bab33",
+      "result_id": "d98a5bc3-6ebe-44ba-ae22-96a6e2200094"
+    },
+    {
+      "claim_id": "bff2b6b4-7f38-42f0-b08b-8cce3619cc71",
+      "result_id": "d98a5bc3-6ebe-44ba-ae22-96a6e2200094"
+    },
+    {
+      "claim_id": "bf19cc8b-5de3-4f97-905b-9f663b07095b",
+      "result_id": "d98a5bc3-6ebe-44ba-ae22-96a6e2200094"
+    },
+    {
+      "claim_id": "680add26-3ebc-4210-b3e7-70abf58a62ed",
+      "result_id": "d98a5bc3-6ebe-44ba-ae22-96a6e2200094"
+    },
+    {
+      "claim_id": "d492494e-223d-4054-ae9c-555c5a087a90",
+      "result_id": "cdb87e97-5151-4ad4-9f03-22d4dac499e6"
+    },
+    {
+      "claim_id": "9e18bcd0-bdbe-4a58-933f-b76e6851636c",
+      "result_id": "cdb87e97-5151-4ad4-9f03-22d4dac499e6"
+    },
+    {
+      "claim_id": "8322b436-0077-4b96-9a0c-fb7c37ffdc77",
+      "result_id": "cdb87e97-5151-4ad4-9f03-22d4dac499e6"
+    },
+    {
+      "claim_id": "d17ffd3e-e8ee-4683-a894-b398adceb3d6",
+      "result_id": "cdb87e97-5151-4ad4-9f03-22d4dac499e6"
+    },
+    {
+      "claim_id": "2bf4934a-25df-4dbb-b476-016b11aa4dcc",
+      "result_id": "cdb87e97-5151-4ad4-9f03-22d4dac499e6"
+    },
+    {
+      "claim_id": "3fe70641-72bd-418c-bcfd-b15de3739076",
+      "result_id": "cdb87e97-5151-4ad4-9f03-22d4dac499e6"
+    },
+    {
+      "claim_id": "ca25922d-c719-40ac-b624-d2c1fbc27b1e",
+      "result_id": "cdb87e97-5151-4ad4-9f03-22d4dac499e6"
+    },
+    {
+      "claim_id": "88261e6f-4e28-4d2b-b13d-08d76a96e126",
+      "result_id": "cdb87e97-5151-4ad4-9f03-22d4dac499e6"
+    },
+    {
+      "claim_id": "00990dfb-dcdf-4d4a-8e88-f661cbdd4b11",
+      "result_id": "cdb87e97-5151-4ad4-9f03-22d4dac499e6"
+    },
+    {
+      "claim_id": "90f97cd1-f526-4598-a0d6-c702e874179e",
+      "result_id": "cdb87e97-5151-4ad4-9f03-22d4dac499e6"
+    },
+    {
+      "claim_id": "af03b2c7-2b94-4ece-b712-69a20e80fc17",
+      "result_id": "cdb87e97-5151-4ad4-9f03-22d4dac499e6"
+    },
+    {
+      "claim_id": "18767f17-a600-4958-8ef9-d628e0b6901b",
+      "result_id": "cdb87e97-5151-4ad4-9f03-22d4dac499e6"
+    },
+    {
+      "claim_id": "8fd347c9-f1cc-4677-a6ef-fb45f5d13ced",
+      "result_id": "591be6df-aef8-426c-a4c8-04807459fd9a"
+    },
+    {
+      "claim_id": "ac1de04a-c2a5-4f60-9cef-63faef93efd3",
+      "result_id": "591be6df-aef8-426c-a4c8-04807459fd9a"
+    },
+    {
+      "claim_id": "45ab67d4-ef8f-498d-99f2-b30c2d64ee7f",
+      "result_id": "591be6df-aef8-426c-a4c8-04807459fd9a"
+    },
+    {
+      "claim_id": "d28789a0-6c0c-456b-8aae-95caf0884848",
+      "result_id": "591be6df-aef8-426c-a4c8-04807459fd9a"
+    },
+    {
+      "claim_id": "8b66c413-152c-473a-ab97-0c0e710de548",
+      "result_id": "591be6df-aef8-426c-a4c8-04807459fd9a"
+    },
+    {
+      "claim_id": "fd58c127-9978-433a-b503-91d33fd3fb55",
+      "result_id": "591be6df-aef8-426c-a4c8-04807459fd9a"
+    },
+    {
+      "claim_id": "2a2443a0-d956-4ac3-9b37-3474b634ecba",
+      "result_id": "591be6df-aef8-426c-a4c8-04807459fd9a"
+    },
+    {
+      "claim_id": "6384d9b4-a32c-48b2-a2a5-9a82dae6c6da",
+      "result_id": "591be6df-aef8-426c-a4c8-04807459fd9a"
+    }
+  ],
+  "comparisons": []
+}

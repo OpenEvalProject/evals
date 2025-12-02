@@ -1,0 +1,353 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C29"
+    ],
+    "result": "Bioinformatic analysis predicts that AKAP79 contains extended regions of intrinsic disorder in the N-terminal 350 amino acids, with the C-terminal region being more ordered. A short linear motif (SLiM) at residues 122-136, containing the LKIP sequence, is predicted within a disordered region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C6, and C29 are supported by bioinformatic predictions using established algorithms (IUPred, PONDR, ANCHOR, SLiMPred) and are consistent with each other. The predictions are shown in Figure 1 and provide a computational foundation for subsequent experimental work. While these are predictions rather than direct experimental measurements of disorder, they are appropriately presented as such and are validated by later structural and functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "AKAP79 contains previously characterized binding sites for PKA (C-terminal helix), PKC/calmodulin, and PP2B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, and C5 are well-supported by multiple prior studies (Carr et al. 1991, Gold et al. 2006, Coghlan et al. 1995, Dell'Acqua et al. 2002, and others). These are established features of AKAP79 that provide context for the current work. The citations are appropriate and the claims accurately represent prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The AKAP79-PP2B-CaM complex has a molecular mass of 160 kDa by SEC-MALS, corresponding to a 1:1:1:1 stoichiometry, and exhibits properties consistent with intrinsic disorder based on early elution from size-exclusion chromatography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C8 are directly supported by SEC-MALS data (Figure 1J), which provides quantitative molecular mass determination. The 1:1:1:1 stoichiometry is a reasonable inference from the measured mass. Claim C9 is appropriately qualified as a suggestion based on the known behavior of disordered proteins in SEC. The discrepancy between SEC elution (450-550 kDa apparent) and SEC-MALS (160 kDa actual) is consistent with extended conformations of disordered proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Dormant AKAP79-PP2B complexes exist in flexible, extended topologies with particle lengths varying from 160 to 240 \u00c5, segregating into two populations with mean lengths of 184 \u00b1 16 \u00c5 and 228 \u00b1 5 \u00c5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C13, and C14 are supported by negative-stain EM analysis with appropriate quantification (n=10,967 particles total). The bimodal distribution is shown in Figure 3B with statistical fitting. The measurements are consistent across multiple class averages and 3D reconstructions. The sample size is adequate and the analysis methods (reference-free and reference-based alignment) are appropriate for this type of structural study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Active AKAP79/PP2B/CaM complexes are more uniform and compact than dormant complexes, with a single population having mean length 178 \u00b1 17 \u00c5. Despite different topologies, dormant and active complexes occupy similar volumes (7.4 \u00d7 10^5 \u00c5^3), suggesting additional intermolecular contacts in the active state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 are well-supported by EM analysis (n=20,461 particles for active complex) shown in Figures 3F-J. The transition from bimodal (dormant) to unimodal (active) distribution is clear. The volume measurements with matched isosurface thresholds provide quantitative support for C18. Claim C19 is a reasonable inference from the structural data, though it remains an interpretation that is later validated by cross-linking experiments (Figure 5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Multimodal labeling experiments localize the N-terminus of AKAP79 to the top of the active complex, the C-terminus to the core, and the PP2B catalytic A subunit to the lower lobe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C21, and C22 are supported by three independent labeling approaches: anti-MBP Fab fragments (Figure 4A-G), nanogold-NiNTA conjugates (Figure 4H-M), and anti-Flag Fab fragments (Figure 4N-R). The use of multiple orthogonal labeling methods strengthens confidence in the subunit assignments. The results are internally consistent and provide a spatial framework for interpreting the complex architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Chemical cross-linking reveals that the PIAIIIT motif (residues 337-343) is the sole PP2B contact in dormant complexes, while the active complex shows four additional AKAP79-PP2B A subunit interfaces plus a Ca2+-dependent contact between AKAP79 K126 and PP2B B subunit K165.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 are supported by ReACT cross-linking mass spectrometry data (Figure 5A-D, Supplementary file 1). The differential cross-linking patterns between dormant and active states provide molecular-level evidence for conformational reorganization. The identification of the K126-K165 cross-link exclusively in the active complex is particularly significant. The cross-linking data are appropriately presented with expect scores and PPM errors in the supplementary material.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The LKIP sequence (residues 125-128) in AKAP79 resembles an LxVP phosphatase interaction motif and is predicted by molecular modeling to bind the cyclosporin-binding pocket on PP2B, with residues downstream (rather than upstream) of the core motif making additional contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C29, C31, C32, and C33 are supported by sequence analysis, bioinformatic predictions (Figure 1D-E), and molecular modeling (Figure 5G). The comparison to LxVP motifs is appropriate given the structural similarity, and the distinction regarding downstream vs. upstream contacts is clearly stated. However, C31 and C32 rely on computational modeling (Rosetta FlexPepDock) which, while reasonable, represents a prediction that requires experimental validation. The subsequent biochemical experiments (Figure 6) provide this validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C37",
+      "C39",
+      "C40"
+    ],
+    "result": "Residues 122-136 of AKAP79 form a Ca2+/CaM-dependent PP2B-binding region, with the LKIP motif (125-128) being essential for this interaction, as demonstrated by peptide arrays and GST pull-down assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C35, C37, C39, and C40 are supported by solid-phase peptide array analysis (Figure 6B) and GST pull-down experiments (Figure 6D). The Ca2+ dependence is clearly demonstrated by EDTA treatment abolishing binding. The deletion mutant lacking LKIP (\u0394122-136) provides strong evidence for the necessity of this region. The experiments include appropriate controls and are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "AKAP79-associated PP2B retains full catalytic activity as measured by diFMUP phosphatase assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by phosphatase activity measurements shown in Figure 6\u2014figure supplement 1. This is an important control demonstrating that AKAP79 binding does not inhibit PP2B catalytic activity, distinguishing the regulatory mechanism from simple inhibition. The use of a small molecule substrate (diFMUP) is appropriate for measuring intrinsic catalytic activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Binding affinity measurements show that the PIAIIIT region binds PP2B with Kd = 5.6 \u03bcM, the LKIP-containing N-terminal fragment with Kd = 81 \u03bcM, and full-length AKAP79 with Kd = 12 \u03bcM, indicating PIAIIIT is the primary anchoring determinant while LKIP provides an auxiliary interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 are supported by AlphaScreen competition assays (Figure 6E) with n=4 replicates for each measurement. The Kd values are internally consistent: the full-length protein (12 \u03bcM) binds more tightly than the LKIP fragment alone (81 \u03bcM) but similarly to the PIAIIIT region (5.6 \u03bcM), supporting the interpretation that PIAIIIT is the primary determinant. The inference in C45 and C46 is well-supported by the quantitative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The W352A/F356A double mutant of PP2B, which disrupts the LxVP-binding pocket, shows reduced binding to the LKIP-containing N-terminal fragment of AKAP79 but retains binding to the PIAIIIT-containing fragment, indicating the LKIP region uses a similar but not identical mode of interaction to LxVP motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by mutagenesis and GST pull-down experiments (Figure 6F-G). The use of the W352A/F356A mutant is well-justified by prior structural studies (Rodr\u00edguez et al. 2009). The differential effects on N-terminal vs. C-terminal fragment binding provide strong evidence for the specificity of the LKIP interaction. The conclusion in C50 is appropriately qualified as 'analogous, but not identical.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "AKAP79 utilizes distal PP2B binding determinants both upstream and downstream of the LKIP motif, distinguishing it from conventional PP2B-interacting partners that use residues upstream of the LxVP core.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51 and C52 are supported by the peptide array data (Figure 6B) showing that determinants flanking the core LKIP sequence contribute to binding, and by the cross-linking data showing contacts beyond the core motif. The comparison to conventional LxVP-containing proteins is supported by citation to Sheftic et al. 2016. This represents a mechanistic distinction that is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Co-immunoprecipitation experiments show that PP2B associates with AKAP79-CaNAR and AKAP79\u0394L-CaNAR (but not AKAP79\u0394P-CaNAR), and that ionomycin treatment (1 \u03bcM) enhances PP2B detection, indicating that engaging the LKIP motif favors stable AKAP79-PP2B interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C54, and C55 are supported by co-immunoprecipitation experiments (Figure 7C-D) with appropriate quantification. The differential binding of the deletion mutants is consistent with the biochemical data. The enhancement by ionomycin (which increases Ca2+) is consistent with the Ca2+-dependent nature of the LKIP interaction. However, C55 is an inference that could be stated more cautiously, as enhanced detection could reflect increased binding or improved complex stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "FRET imaging with AKAP79-CaNAR reporters shows that the AKAP79\u0394L variant (lacking LKIP) reaches half-maximal response faster than wild-type (2.41 vs. 3.58 min at 1 \u03bcM ionomycin) and exhibits higher maximal responses at low ionomycin (100 nM), with these differences being independent of reporter expression levels and total calcium responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 are supported by live-cell FRET imaging (Figure 7E-J, Figure 7\u2014figure supplement 1) with adequate sample sizes (n=17-31 cells). The kinetic analysis is appropriate, and the controls (expression level independence, RCaMP calcium measurements) strengthen the conclusions. The statistical significance is indicated (p<0.001 for kinetics, p<0.01 for maximal response at 100 nM). The data support the interpretation that the LKIP motif modulates calcium sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The LKIP motif serves to desensitize PP2B toward low calcium levels while maintaining maximal activity at high calcium, likely by stabilizing a PP2B conformation that does not relieve auto-inhibition as readily as non-anchored phosphatase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C62 are well-supported by the FRET imaging data showing differential responses at 100 nM vs. 1 \u03bcM ionomycin. Claims C63 and C64 represent mechanistic interpretations that are reasonable given the data but involve some speculation. The proposed mechanism (stabilizing a less readily activated conformation) is plausible but not directly demonstrated. The authors appropriately use qualifying language ('likely,' 'we propose') for these interpretive claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Cyclosporin A/cyclophilin A cocktails diminish PP2B binding to the LKIP-containing N-terminal region of AKAP79 but not to the PIAIIIT-containing fragment, suggesting the LKIP motif may influence the clinical action of immunosuppressant drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65 and C66 are supported by competition experiments (Figure 8A-B) showing differential effects of cyclosporin on N-terminal vs. C-terminal fragment binding. This is consistent with the modeling showing LKIP occupies the cyclosporin-binding site. Claim C67 is appropriately qualified as speculative ('may influence') and represents a reasonable hypothesis for future investigation rather than a demonstrated result. The clinical implications are interesting but require further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C74",
+      "C75",
+      "C76",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Conformational flexibility within AKAP79-PP2B complexes is a fundamental element of their molecular action, with intrinsic disorder conferring a dynamic range of enzyme activity. Phosphatase activation induces topological reorganization from extended to globular conformations, and combinatorial recruitment of binding partners tailors the overall conformation for customized physiological roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C68, C69, C74, C75, C76, C100, C101, C102) represent the major conceptual conclusions of the study. They are well-supported by the combined EM, cross-linking, biochemical, and cellular data presented throughout the manuscript. The EM data clearly demonstrate conformational changes upon activation (Figure 3), the cross-linking data reveal the molecular basis (Figure 5), and the FRET experiments show functional consequences (Figure 7). While some aspects involve interpretation and speculation (particularly C69, C74, C101, C102), these are appropriately qualified and represent reasonable syntheses of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The PIAIIIT motif forms the conformational core for dormant assemblies, while the bimodal size distribution may reflect differential deployment of other SLiMs. Upon activation, additional SLiMs are engaged to form a more compact but fully active complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is well-supported by the cross-linking data (Figure 5A) showing PIAIIIT as the sole contact in dormant complexes. Claims C78 and C79 involve more speculation about the molecular basis of the bimodal distribution and the engagement of additional SLiMs. While plausible and consistent with the data, these represent interpretations that could benefit from additional experimental validation. The authors appropriately use qualifying language ('may reflect') for C78.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The manuscript places the AKAP79-PP2B findings in the broader context of anchored enzyme regulation, citing examples from PKA, PKC, and other phosphatase-targeting systems to support the general principle that intrinsic disorder and conformational flexibility are important for anchored enzyme function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 and C80-C85 are appropriately supported by citations to prior literature and serve to contextualize the current findings within the broader field of anchored signaling. These claims accurately represent the cited work and draw reasonable parallels to the AKAP79-PP2B system. The comparisons to PP1-targeting subunits (C84-C85) and the historical context of LxVP motifs (C80-C82) are particularly relevant and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The LKIP motif sets distance parameters for anchored phosphatase activity contingent on prior PIAIIIT binding, creating an elastic signaling environment that permits the phosphatase to reach nearby substrates through cooperative action of multiple binding surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86 and C87 represent mechanistic interpretations based on the FRET imaging data (Figure 7) and the structural/biochemical findings. While these are reasonable syntheses of the data, they involve some speculation about the spatial organization and dynamics of the complex in cells. The FRET data support the functional consequences of LKIP engagement, but the specific spatial model is inferred rather than directly demonstrated. The authors appropriately present these as interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The manuscript discusses the pathophysiological relevance of PP2B regulation, citing evidence that PP2B ablation or inhibition causes diabetes-related phenotypes, while AKAP150 knockin mice lacking the PIAIIIT motif show improved glucose handling, suggesting that disrupting PP2B tethering (rather than catalytic activity) may have therapeutic potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 are appropriately supported by citations to prior literature (Bernal-Mizrachi et al. 2004, Heit et al. 2006, Heisel et al. 2004, Hinke et al. 2012, and others). These claims accurately represent the cited work and draw reasonable connections to the current findings. Claims C91, C92, and C93 involve some speculation about therapeutic implications, which is appropriately qualified. This discussion provides important context for the potential significance of the LKIP motif findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The LKIP motif attenuates anchored phosphatase activity at low calcium levels, with effects relieved at high calcium. Proximity to L-type calcium channels may profoundly influence temporal phosphatase action, particularly in cardiovascular and neuronal systems where AKAP79/150 complexes regulate ion channels and receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94 and C95 are well-supported by the FRET imaging data (Figure 7). Claims C96-C99 involve speculation about physiological contexts, appropriately supported by citations to relevant literature (Nieves-Cintr\u00f3n et al. 2016, Nystoriak et al. 2014, 2017, Brandon et al. 2003, and others). While these represent hypotheses for future investigation rather than demonstrated results, they are reasonable extrapolations from the current findings and prior knowledge. The authors appropriately use qualifying language ('may,' 'we postulate').",
+    "result_type": "MAJOR"
+  }
+]

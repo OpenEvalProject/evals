@@ -1,0 +1,326 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C18",
+      "C91",
+      "C103"
+    ],
+    "result": "Quantitative SILAC-based surface proteomics identified 258 membrane proteins in MCF10A cells, with 17 significantly upregulated and 22 downregulated by KRASG12V expression (fold-change >\u00b11.75, p<0.01). These proteins showed enrichment for cell adhesion, cell motion, and cell-cell adhesion functions. Biological replicates showed 88% overlap and good correlation (R\u00b2=0.7676), though correlation with RNAseq data was modest (R\u00b2=0.422).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proteomic approach is technically sound with appropriate enrichment strategy, statistical thresholds, and biological replicates. The 88% overlap and R\u00b2=0.77 correlation between replicates demonstrates reproducibility. The modest RNA-protein correlation (R\u00b2=0.42) is acknowledged and consistent with known post-transcriptional regulation. GO analysis appropriately identifies functional enrichment. Statistical criteria (p<0.01, FC>1.75) are reasonable though somewhat arbitrary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C73",
+      "C74",
+      "C92",
+      "C93",
+      "C104"
+    ],
+    "result": "Pharmacological inhibitor studies revealed that 13 of the KRAS-altered surface proteins were reversibly regulated by MEK inhibition, while AKT and EGFR inhibitors had minimal effects. Nearly half of KRAS-enriched surface proteins decreased with MEK inhibition, establishing MAPK as the dominant pathway regulating the KRAS surfaceome in MCF10A cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative inhibitor approach effectively dissects pathway contributions. The dramatic difference between MEKi effects (13 proteins reversed) versus AKTi/EGFRi (minimal changes) provides strong evidence for MAPK dominance. Biological replicates showed reasonable correlation (R\u00b2=0.61 for MEKi). However, the study uses subtoxic drug concentrations without showing complete pathway inhibition by western blot for all conditions, and potential off-target effects or feedback mechanisms (acknowledged for AKTi, C121) could confound interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "A 'catch-and-release' phage display strategy generated 116 unique recombinant antibodies against seven KRAS-induced surface proteins (CDCP1, ICAM1, ITGB5, NT5E, LTBR, CD55, ANPEP). All seven targets showed elevated expression on MCF10A KRASG12V cells by flow cytometry, correlating well with proteomic measurements, and none of the antibodies bound the Fc-domain control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The antibody generation pipeline is well-designed with appropriate controls (Fc-domain, CRISPRi knockdown validation, overexpression validation). The catch-and-release strategy effectively eliminates Fc-binding clones. Flow cytometry validation orthogonally confirms proteomic findings. However, the claim that flow data 'generally correlated well' with proteomics (C31) is qualitative without quantitative correlation analysis. The selection of seven targets was manual rather than systematic, introducing potential bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C76",
+      "C117"
+    ],
+    "result": "Profiling across eight cancer cell lines with RAS mutations showed that five of seven targets (CDCP1, CD55, NT5E, ICAM1, LTBR) were highly expressed in at least half the lines, with CDCP1 ubiquitously abundant. MEK inhibition decreased CDCP1 expression in nearly all cell lines tested, while AKT inhibition paradoxically increased expression of CDCP1, NT5E, and CD55 in multiple cases. Western blot confirmed MAPK signaling drives both CDCP1 expression and surface localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The multi-cell line profiling strengthens generalizability beyond MCF10A. The ubiquitous CDCP1 expression across diverse RAS-mutant lines is compelling. The MEKi effect on CDCP1 is consistent across cell lines and validated by western blot. The AKTi paradox is acknowledged as potential feedback activation (C121, citing Iida 2013). However, the study lacks quantification of pathway inhibition efficiency across all cell lines, and two targets (ANPEP, ITGA5) showed no expression, raising questions about MCF10A-specific versus general KRAS effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C82",
+      "C106",
+      "C123"
+    ],
+    "result": "A CRISPRi screen of >1600 surface proteins revealed that >50 genes caused significant growth reduction (phenotype<-1, p<0.05) in KRASG12V cells grown without growth factors, while only 12 genes affected wild-type MCF10A growth. KRASG12V cells showed strong dependence on MAPK pathway components (RAF/MEK/ERK) but minimal dependence on PI3K/AKT. Synthetic lethal genes fell into two main categories: integrin-mediated cell adhesion and Wnt signaling components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CRISPRi screen is well-designed with appropriate controls (non-targeting sgRNAs, wild-type comparison, growth factor conditions). The dramatic difference between KRASG12V (>50 hits) and wild-type (12 hits) cells demonstrates KRAS-specific dependencies. Pathway control genes (EGFR, MAPK, PI3K) behave as expected, validating the approach. Individual sgRNA validation confirms screen results (C53, Figure 4E). However, the screen was performed in a single cell type (MCF10A), limiting generalizability. The statistical threshold (phenotype<-1, p<0.05) is reasonable but the choice of 'three strongest sgRNAs' for scoring could introduce bias if off-target effects are present.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C72",
+      "C107"
+    ],
+    "result": "Comparison of proteomic and CRISPRi datasets revealed minimal overlap, with only two genes (ITGB5 and CDCP1) identified as both upregulated and essential. CDCP1 knockdown resulted in ~40% growth reduction over 15 days in KRASG12V cells, confirming its functional importance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The minimal overlap between differential expression and essentiality is appropriately acknowledged as expected (C124), since these are distinct properties. The identification of CDCP1 as both upregulated and essential makes it a particularly attractive target. The individual sgRNA validation (C53) with >98% knockdown and 40% growth reduction provides strong functional evidence. However, the growth assay is performed only in MCF10A KRASG12V cells, and validation in patient-derived cancer cell lines would strengthen the claim of therapeutic relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C79",
+      "C84",
+      "C128",
+      "C129"
+    ],
+    "result": "CDCP1 showed high expression on PDAC cell lines (~2.9 million copies/cell on HPAC) but no expression on non-tumorigenic HPNE cells. A CDCP1 antibody-drug conjugate (ADC) selectively killed HPAC cells at concentrations as low as 10 pM with >60% viability reduction at 0.8 nM, while HPNE cells were unaffected up to 20 nM. Similar toxicity was observed in two additional RAS-mutant cell lines (MiaPaCa2, SW620).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ADC experiments demonstrate impressive selectivity (>2000-fold therapeutic window between HPAC and HPNE). The high CDCP1 copy number (2.9M) is quantified by saturation binding and comparable to HER2 in breast cancer (C80), supporting ADC feasibility. The secondary ADC format (primary IgG + secondary-MMAF conjugate) is a limitation compared to direct conjugation, though the authors acknowledge this (C130). Replication in three cell lines strengthens the finding. However, the study lacks in vivo ADC efficacy data, and the rapid proliferation caveat (not all cells killed due to steady-state dynamics) is appropriately noted but not quantitatively addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C85",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "A CDCP1-CD3 bispecific T-cell engager (BiTE) activated 75% of T-cells at 1 nM when co-cultured with HPAC cells, while co-culture with HPNE cells or treatment with Fab lacking anti-CD3 resulted in minimal activation, demonstrating tumor-selective T-cell engagement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The BiTE experiment shows clear tumor selectivity with appropriate controls (HPNE cells, Fab without anti-CD3 scFv). The 75% T-cell activation at 1 nM is substantial. However, this is an in vitro proof-of-concept using a reporter cell line (Jurkat NFAT-GFP) rather than primary T-cells, and lacks cytotoxicity data. The study does not address potential on-target/off-tumor toxicity in vivo, which is critical for BiTE therapeutics. The comparison to FDA-approved BiTEs (C131-C132) provides context but doesn't validate efficacy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C77",
+      "C86",
+      "C110",
+      "C112",
+      "C113",
+      "C134"
+    ],
+    "result": "89Zr-labeled CDCP1 Fab showed tumor localization in HPAC xenografts within 4 hours, with pronounced staining by 8 hours. Tumor uptake was significantly reduced with heat-denatured Fab or in A549 xenografts (low CDCP1 expression, 60,000 copies/cell). Strikingly, MEKi treatment highly diminished tumor localization, demonstrating CDCP1 expression as a consequence of RAS-dependent MAPK signaling in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vivo imaging provides compelling evidence for CDCP1 as a MAPK-dependent biomarker. Multiple controls strengthen the conclusion: heat-denatured Fab (specificity), A549 xenografts (expression-dependent uptake), and MEKi treatment (pathway dependence). The A549 control is particularly elegant, using a RAS-mutant line where KRAS knockdown doesn't affect growth (C113), providing a 'RAS-independent' comparison. Quantification of biodistribution (Figure 5I, Supplementary Figure 5-3) supports imaging observations. However, the antibody lacks mouse CDCP1 cross-reactivity (C118), preventing assessment of normal tissue uptake. The study uses immunocompromised mice, precluding evaluation of immune-related toxicity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Background context establishing that RAS mutations drive ~1/3 of human malignancies (particularly pancreatic, lung, colorectal cancers from epithelial tissue), RAS is a membrane-localized signaling hub activating multiple pathways (MAPK, PI3K), and little is understood about RAS regulation of the cell surface proteome despite its importance for cell communication and immune engagement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts from the literature, appropriately cited (Roberts and Der 2007, Stephen et al. 2014, Downward 2003, Pylayeva-Gupta et al. 2011, Hanahan and Weinberg 2011). The claims accurately represent prior knowledge and provide appropriate context for the study. The statement about limited understanding of RAS surfaceome regulation (C101) is a reasonable assessment of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The MCF10A cell line was chosen as an isogenic model because it is non-malignant, diploid, harbors minimal genetic modifications, and is readily transduced with lentivirus. MCF10A cells with KRASG12V undergo malignant transformation phenotypes including increased proliferation and loss of cell adhesion. The authors hypothesized that RAS signaling in any epithelial cell type would produce a common surfaceome signature, despite MCF10A being mammary-derived and RAS being rarely implicated in breast cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rationale for using MCF10A is sound and well-justified. The transformation phenotypes are supported by citation (Stolze et al. 2015, C4-C5). The authors appropriately acknowledge the limitation that MCF10A is mammary-derived while RAS is rare in breast cancer (C89), but argue the benefits outweigh this caveat. The hypothesis about common epithelial surfaceome signatures (C90) is reasonable and partially validated by the subsequent cancer cell line profiling showing CDCP1 expression across diverse RAS-mutant cancers. However, the failure of ANPEP and ITGA5 to show expression in cancer cell lines (C34) suggests some MCF10A-specific effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C51",
+      "C52",
+      "C71",
+      "C83",
+      "C94",
+      "C95",
+      "C116"
+    ],
+    "result": "Literature context establishing that >90% of surface proteins are N-glycosylated (justifying enrichment strategy), the seven selected targets have diverse cancer-relevant functions (adhesion, migration, immune evasion, metastasis), CDCP1 is known to drive cancer progression through integrin signaling, and RAS overexpression contributes to malignant phenotypes dependent on membrane protein function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately cite relevant literature to establish context for target selection and mechanistic interpretation. The N-glycosylation statistic (C6) justifies the enrichment approach. The functional descriptions of targets (C23-C27) are accurately cited. The CDCP1 literature (C51-C52, C71, C83) appropriately establishes prior knowledge of its role in cancer, though the current work extends this to demonstrate MAPK-dependent regulation. The connection between RAS and membrane protein-dependent phenotypes (C94-C95) is appropriately cited and provides rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors propose that RAS signaling coordinately regulates surface protein networks to drive malignant phenotypes (loss of adhesion, migration, growth). Specifically, KRAS-transformed cells display high expression of multiple integrins (ITGB5/ITGB1/ITGA5/ITGA3) with CDCP1, and TCGA data shows CDCP1 and these integrins are elevated in RAS-mutant pancreatic cancers, suggesting coordinated regulation may contribute to invasiveness and metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The coordinated regulation model is supported by multiple lines of evidence: GO enrichment for adhesion/migration proteins (C14), co-upregulation of CDCP1 and integrins (C70), functional dependence on integrin signaling in CRISPRi screen (C48), and TCGA validation (C115). The mechanistic link through CDCP1/integrin/AKT signaling is supported by prior literature (C71, Casar et al. 2014). However, the causal claim that this coordination 'drives' malignant phenotypes (C69) is somewhat overstated\u2014the data show correlation and functional dependence but don't definitively prove causation. The speculation about metastasis (C114) is appropriately hedged ('may partially be a consequence').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C81",
+      "C118"
+    ],
+    "result": "The authors propose that RAS-induced surface proteins could serve as biomarkers for MAPK signaling and drug efficacy. CDCP1 normal tissue expression is restricted compared to HER2 based on GTEX database analysis, though the mouse xenograft experiment doesn't fairly assess tumor selectivity since the antibody lacks mouse CDCP1 cross-reactivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biomarker potential is supported by the in vivo imaging showing MEKi-dependent CDCP1 expression (C67-C68). The GTEX analysis (C81) provides preliminary evidence for restricted normal tissue expression, though this is database-level mRNA data rather than protein validation. The authors appropriately acknowledge the limitation of lacking mouse cross-reactivity (C118), which prevents assessment of normal tissue uptake. Additional immunohistochemistry on human normal tissues would strengthen the tumor selectivity claim. The comparison to HER2 (C81) provides useful context for therapeutic potential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C111",
+      "C119",
+      "C120"
+    ],
+    "result": "The authors conclude that this work presents a technological platform for systematically discovering and generating antibodies to surface markers regulated by oncogene signaling, which could be applied to target 'undruggable' oncogenes like RAS from outside the cell. Five of seven KRAS-induced proteins were broadly distributed on RAS-mutant cancer cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The integrated platform (proteomics \u2192 antibody generation \u2192 functional screening \u2192 therapeutic validation) is indeed novel and well-executed. The successful application to CDCP1 demonstrates proof-of-concept. However, the claim about targeting 'undruggable' oncogenes (C120) is somewhat aspirational\u2014the approach targets downstream consequences rather than the oncogene itself. The broad distribution of five targets (C105) supports generalizability, though the failure of two targets (ANPEP, ITGA5) in cancer cell lines (C34) suggests not all MCF10A findings translate. The platform's true value will depend on whether other targets beyond CDCP1 prove therapeutically viable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C130",
+      "C135",
+      "C136"
+    ],
+    "result": "Various methodological observations and interpretations: AKTi may cause feedback MAPK activation (explaining paradoxical CDCP1 increase), Wnt signaling importance in KRAS malignancies was recently reported by others, differential expression and essentiality are distinct properties (explaining minimal overlap), CDCP1 was observed in prior proteomics work, the antibodies don't functionally inhibit CDCP1, CDCP1 essentiality makes downregulation unlikely as resistance mechanism, direct MMAF conjugation might improve ADC potency, and modest RNA-protein correlation is expected due to post-transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are appropriate interpretations and acknowledgments of limitations. The feedback activation explanation (C121) is supported by citation (Iida et al. 2013). The Wnt finding (C122) appropriately credits prior work (Wang et al. 2015). The distinction between expression and essentiality (C124) is a valid point. The lack of functional inhibition (C126) is honestly reported. The RNA-protein correlation discussion (C135-C136) appropriately cites literature showing similar correlations. These claims demonstrate scientific rigor in interpretation and acknowledgment of limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C80",
+      "C128",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Supporting context: CDCP1 is important for RAS-addicted cell proliferation (linking function to expression), HER2+ breast cancers express ~2M HER2 copies/cell (comparison for CDCP1 expression level), high surface protein expression is rare and important for ADC targeting, and FDA-approved BiTE antibodies that bind tumor antigens and CD3 recruit T-cells to induce activation and killing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These contextual claims appropriately establish benchmarks and precedents. The CDCP1 essentiality (C78) is supported by the CRISPRi data. The HER2 comparison (C80) is established knowledge providing useful context for the 2.9M CDCP1 copies/cell finding. The ADC expression requirement (C128) is appropriately cited (Bornstein 2015). The BiTE mechanism (C131-C133) accurately describes the therapeutic modality with appropriate citations (Wu et al. 2015, Yuraszeck et al. 2017).",
+    "result_type": "MINOR"
+  }
+]

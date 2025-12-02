@@ -1,0 +1,2191 @@
+{
+  "submission": {
+    "id": "ff341633-3bde-4c0b-b5bf-80ee7b1c837c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:14:14.822895Z",
+    "updated_at": "2025-12-01T23:14:14.822895Z"
+  },
+  "content": [
+    {
+      "id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "submission_id": "ff341633-3bde-4c0b-b5bf-80ee7b1c837c",
+      "content_type": "manuscript",
+      "content_text": "# Hsf1 and Hsp70 constitute a two-component feedback loop that regulates the yeast heat shock response\n\n## Authors\n\n- Joanna Krakowiak<sup>1</sup>\n- Xu Zheng<sup>1</sup>\n- Nikit Patel<sup>2</sup>\n- Zo\u00eb A Feder<sup>1</sup>\n- Jayamani Anandhakumar<sup>2</sup>\n- Kendra Valerius<sup>1</sup>\n- David S Gross<sup>3</sup> \u2020\n- Ahmad S Khalil<sup>1</sup> \u2020\n- David Pincus<sup>1</sup> ([ORCID: 0000-0002-9651-6858](https://orcid.org/0000-0002-9651-6858)) \u2020\n\n### Affiliations\n\n1. Whitehead Institute for Biomedical Research Cambridge United States\n2. Department of Biomedical Engineering and Biological Design Center Boston University Boston United States\n3. Department of Biochemistry and Molecular Biology Louisiana State University Health Sciences Center Shreveport United States\n4. Wyss Institute for Biologically Inspired Engineering Harvard University Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nModels for regulation of the eukaryotic heat shock response typically invoke a negative feedback loop consisting of the transcriptional activator Hsf1 and a molecular chaperone. Previously we identified Hsp70 as the chaperone responsible for Hsf1 repression and constructed a mathematical model that recapitulated the yeast heat shock response (Zheng et al., 2016). The model was based on two assumptions: dissociation of Hsp70 activates Hsf1, and transcriptional induction of Hsp70 deactivates Hsf1. Here we validate these assumptions. First, we severed the feedback loop by uncoupling Hsp70 expression from Hsf1 regulation. As predicted by the model, Hsf1 was unable to efficiently deactivate in the absence of Hsp70 transcriptional induction. Next, we mapped a discrete Hsp70 binding site on Hsf1 to a C-terminal segment known as conserved element 2 (CE2). In vitro, CE2 binds to Hsp70 with low affinity (9 \u00b5M), in agreement with model requirements. In cells, removal of CE2 resulted in increased basal Hsf1 activity and delayed deactivation during heat shock, while tandem repeats of CE2 sped up Hsf1 deactivation. Finally, we uncovered a role for the N-terminal domain of Hsf1 in negatively regulating DNA binding. These results reveal the quantitative control mechanisms underlying the heat shock response.\n\n## Introduction\n\nThe heat shock response is a transcriptional program conserved in eukaryotes from yeast to humans in which genes encoding molecular chaperones and other components of the protein homeostasis (proteostasis) machinery are activated to counteract proteotoxic stress (Anckar and Sistonen, 2011; Richter et al., 2010). The master transcriptional regulator of the heat shock response, Heat shock factor 1 (Hsf1), binds as a trimer to its cognate DNA motif \u2013 the heat shock element (HSE) \u2013 in the promoters and enhancers of its target genes (Gross et al., 1990; Hentze et al., 2016; Sorger and Nelson, 1989; Xiao et al., 1991).\n\nIn yeast, Hsf1 is essential under all conditions because it is required to drive the high level of basal chaperone expression needed to sustain growth (McDaniel et al., 1989; Sol\u00eds et al., 2016). Mammalian Hsf1 is dispensable under non-heat shock conditions because it exclusively controls stress-inducible expression of its target regulon, while high-level basal chaperone expression is Hsf1-independent (Mahat et al., 2016). Hsf1 has been shown to play pro-cancer roles both in tumor cells and the supporting stroma (Dai et al., 2012; Dai et al., 2007; Santagata et al., 2011; Scherz-Shouval et al., 2014). In addition to supplying high levels of chaperones to cancer cells, Hsf1 takes on specialized transcriptional roles to support malignant growth, and its activity is associated with poor prognosis in a range of human cancers (Mendillo et al., 2012; Santagata et al., 2011; Scherz-Shouval et al., 2014). Conversely, lack of Hsf1 activity has been proposed to contribute to the development of neurodegenerative diseases associated with protein aggregates (Gomez-Pastor et al., 2017; Neef et al., 2011). Despite the potential therapeutic benefits of modulating Hsf1 activity, a quantitative description of the regulatory mechanisms that control its activity in any cell type remains lacking.\n\nPhosphorylation, SUMOylation, acetylation, chaperone binding (Hsp40, Hsp70, Hsp90 and/or TRiC/CCT), intrinsic thermosensing and an RNA aptamer have all been suggested to regulate Hsf1 in various model systems (Anckar and Sistonen, 2011; Baler et al., 1993; Cotto et al., 1996; Hentze et al., 2016; Hietakangas et al., 2003; Holmberg et al., 2001; Kline and Morimoto, 1997; Neef et al., 2014; Shamovsky et al., 2006; Shi et al., 1998; Westerheide et al., 2009; Xia et al., 1998; Zheng et al., 2016; Zhong et al., 1998; Zou et al., 1998). These diverse mechanisms can operate on Hsf1 by impinging on a number of steps required for activation including nuclear localization, trimerization, DNA binding and recruitment of the transcriptional machinery. Our recent work in Saccharomyces cerevisiae demonstrated that binding and dissociation of the chaperone Hsp70 is the primary ON/OFF switch for Hsf1, while phosphorylation is dispensable for activation but serves to amplify the transcriptional output (Zheng et al., 2016).\n\nBased on these results, we generated a mathematical model of the yeast heat shock response. Given that we observed heat shock-dependent dissociation of Hsp70 from Hsf1, and that the genes encoding Hsp70 are major targets of Hsf1, we centered the model on a simple feedback loop in which Hsf1 activates expression of Hsp70, which in turn represses Hsf1 activity. While the model was able to recapitulate experimental data of Hsf1 activity during heat shock and correctly predicted the outcome of defined perturbations, its two central tenets remain untested: (1) Hsp70 directly binds to Hsf1 at a specific regulatory site; (2) Transcriptional induction of Hsp70 provides negative feedback required to deactivate Hsf1. Here, we provide direct evidence supporting these core model assumptions by severing the transcriptional feedback loop, rendering Hsf1 unable to deactivate, and mapping a direct Hsp70 binding site on Hsf1 through which Hsp70 represses its potent C-terminal transactivation domain. These results suggest that the heat shock response circuitry in this model system can be abstracted to a simple two-component feedback loop.\n\n## Results\n\n### Hsp70-mediated negative feedback is required to deactivate Hsf1\n\nOur model of the heat shock response is centered on a feedback loop in which Hsf1 regulates expression of its negative modulator, Hsp70 (Figure 1A). When the temperature is raised, the concentration of unfolded proteins exceeds the capacity of Hsp70. Hsp70 is titrated away from Hsf1, freeing Hsf1 to induce more Hsp70. Once sufficient Hsp70 has been produced to restore proteostasis, Hsp70 binds and deactivates Hsf1. In addition to producing more Hsp70, Hsf1 also induces expression of an inert YFP reporter that can be used as a proxy for Hsf1 activity. In the yeast strains used here, this YFP reporter is integrated into the genome under the control of a promoter containing four repeats of the heat shock cis-element (4xHSE) recognized by Hsf1 (Zheng et al., 2016).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/31668/elife-31668-fig1-v3.jpg)\n\n**Figure 1.:** (A) The Hsf1 regulatory circuit described by the mathematical model. To generate the feedback-severed yeast strain (\u2206FBL), all four Hsp70 paralogs (SSA1/2/3/4) were deleted from the genome and 2 copies of SSA2 under the control of the Hsf1-independent TEF1 promoter were integrated to achieve comparable Hsp70 expression under basal conditions. (B) Simulated and experimental heat shock time courses comparing the HSE-YFP reporter in wild type and \u2206FBL cells. The experimental points represent the average of the median HSE-YFP level in three biological replicates, and the error bars are the standard deviation of the replicates. (C) Western blot of the expression of Hsp70 (Ssa1/2), the Hsf1 and glycolytic enzyme GAPDH (Tdh1/2/3) in wild type and \u2206FBL cells under non-heat shock and 60 min heat shock conditions. The values for the ratio of Ssa1/2:GAPDH are the average of two biological replicates. (D) Dilution series spot assay of wild type, ssa1/2\u2206 and \u2206FBL cells grown at 30\u00b0C and 37\u00b0C for 36 hr. (E) Wild type and \u2206FBL cells expressing the Hsp104-mKate aggregation reporter along with the HSE-YFP imaged over a heat shock time course showing transient accumulation of Hsp104 foci and sustained induction of HSE-YFP levels in the \u2206FBL cells. (F) Quantification of the number of Hsp104-mKate foci in wild type and \u2206FBL cells over a heat shock time course. N\u00a0>\u00a0100 cells for each time point. Error bars represent the standard error of the mean.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31668/elife-31668-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The original value for \u03b2 was 1.778 min\u22121 and the updated value is 0.3557 min\u22121.\n\nTo test the model, we severed the feedback loop, both computationally and experimentally, and monitored Hsf1 activity over time following a shift from 25\u00b0C to 39\u00b0C by simulating and measuring the HSE-YFP reporter. We cut the feedback loop in the mathematical model by removing the equation relating the production of Hsp70 to the concentration of free Hsf1 without changing any parameters or initial conditions. In the absence of Hsf1-dependent transcription of Hsp70, the model predicted that the HSE-YFP reporter should be activated with the same kinetics as that of the wild type, but should continue to accumulate long after the response is attenuated in the wild type (Figure 1B).\n\nTo experimentally test this in yeast cells, we decoupled expression of all four cytosolic Hsp70 paralogs (SSA1/2/3/4) from Hsf1 regulation while maintaining the expression of total Hsp70 near its endogenous levels under non-heat shock conditions. This was achieved by integrating two copies of SSA2 under the control of the Hsf1-independent TEF1 promoter into the genome and deleting ssa1/2/3/4. We named this strain \u2206FBL to denote that we had removed the feedback loop (Figure 1A). As expected, wild type cells were able to increase Hsp70 levels during heat shock. By contrast, \u2206FBL cells were unable to induce Hsp70 during heat shock, though the Hsp70 level was constitutively elevated (Figure 1C). We performed a heat shock time course in WT and \u2206FBL cells and compared the expression of the HSE-YFP reporter by flow cytometry. As predicted by the simulation, the \u2206FBL strain activated the reporter with identical kinetics to the wild type during the early phase of the response, but failed to attenuate induction during prolonged exposure to elevated temperature (Figure 1B). While the simulation correctly predicted the experimental results qualitatively, the model underestimated the amount of time required to observe the separation between the wild type and \u2206FBL strains, suggesting the strength of the feedback had been exaggerated in the first iteration of the model (Figure 1\u2014figure supplement 1). By reducing the strength of the feedback loop, we were able to quantitatively match the behavior of both the wild type and \u2206FBL cells (Figure 1B, see Materials\u00a0and\u00a0methods for the updated parameter value).\n\nThe inability of Hsf1 to deactivate in the \u2206FBL strain could result either from a specific disruption of the \u2018OFF switch\u2019 or from a general failure of the cells to restore proteostasis. In other words, does cutting the feedback loop simply result in sustained stress, or is the prolonged Hsf1 activity the result of specifically breaking its deactivation mechanism? To distinguish these possibilities, we first compared growth of wild type, \u2206FBL and ssa1/2\u2206 cells at 30\u00b0C and 37\u00b0C. The ssa1/2\u2206 cells \u2013 which retain viability due to Hsf1-mediated induction of SSA3/4 \u2013 displayed severely impaired growth at 30\u00b0C and were inviable at 37\u00b0C (Figure 1D). By contrast, the wild type and \u2206FBL strains grew equally at 30\u00b0C, and the \u2206FBL strain showed only a slight reduction in growth at 37\u00b0C (Figure 1D). Surprisingly, removal of both SSA3 and SSA4 \u2013 the major heat shock-inducible Hsp70 genes in yeast \u2013 had only modest phenotypic consequences at elevated temperature. The reduced growth of the \u2206FBL mutant at 37\u00b0C could be a consequence of either an inadequate or overzealous heat shock response, and does not necessarily indicate a general failure to restore proteostasis. To directly monitor the loss and restoration of proteostasis, we imaged wild type and \u2206FBL cells expressing Hsp104-mKate over a heat shock time course. Hsp104 is a disaggregase that forms puncta marking protein aggregates when tagged with a fluorescent protein (Sol\u00eds et al., 2016). Upon acute heat shock, the number of Hsp104-mKate foci spiked in both wild type and \u2206FBL cells, but dissolved with the same kinetics in both strains (Figure 1E,F). These data suggest that the \u2206FBL cells can restore proteostasis just as efficiently as wild type cells and that the prolonged Hsf1 activation in the \u2206FBL cells is due to a spdeactivation defect. Since Hsp104 requires Hsp70 for efficient activity (Seyffer et al., 2012; Winkler et al., 2012), there must be sufficient Hsp70 expressed under basal conditions to allow Hsp104 to operate. While Hsp104 may not recognize all classes of unfolded proteins and aggregates, these results suggest that the transcriptional negative feedback loop is required to deactivate Hsf1 once proteostasis has been restored.\n\n### Scanning mutagenesis reveals three independent repressive segments in Hsf1\n\nIn addition to positioning the transcriptional feedback loop as the core regulatory circuit that controls Hsf1 activity, the model also posits that Hsp70 binding is the mechanism that represses Hsf1. If this assumption were true, then disrupting the binding interaction should increase Hsf1 activity under non-heat shock conditions (Figure 2\u2014figure supplement 1). To test this, we generated a series of 48 Hsf1 mutants in which we systematically removed 12 amino acid segments along the nonessential N- and C-terminal regions of Hsf1 (Figure 2A). We integrated these mutants into the genome as the only copy of HSF1 in a strain background bearing the HSE-YFP reporter and assayed for activity by measuring YFP levels under non-heat shock and heat shock conditions by flow cytometry (Zheng et al., 2016). To benchmark the assays, we used wild type Hsf1 and mutants lacking the entire N- and C-terminal regions. As previously shown, removal of the N-terminal region led to significantly increased Hsf1 activity under both non-heat shock and heat shock conditions in this assay (Sorger, 1990; Zheng et al., 2016), while removal of the C-terminal region significantly reduced Hsf1 activity under both conditions (Figure 2A). In the N-terminal region, we found two distinct 12 amino acid segments that when deleted resulted in increased Hsf1 activity (amino acids 85\u201396 and 121\u2013132) (Figure 2A). In the C-terminal region, removal of two consecutive 12 amino acid segments as well as truncation of the final six amino acids resulted in increased Hsf1 activity (amino acids 528\u2013539, 540\u2013551 and 828\u2013833) (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/31668/elife-31668-fig2-v3.jpg)\n\n**Figure 2.:** (A) Screen for functional determinants. The indicated Hsf1 mutants were integrated into the genome as the only copy of Hsf1 expressed from the endogenous HSF1 promoter in a strain expressing the HSE-YFP reporter. Hsf1\u2206N is a deletion of the first 145 amino acids following the methionine; Hsf1\u2206C is a truncation of the last 409 amino acids of Hsf1, retaining the first 424 amino acids. Each mutant in the scanning deletion analysis is missing a stretch of 12 amino acids in either the N-terminal 149 residues or final 414 C-terminal residues. Each strain was assayed in triplicate for its HSE-YFP level under non-heat shock (NHS) and heat shock (HS) conditions by flow cytometry. The error bars are the standard deviation of the replicates. Statistical significance was determined by one-way ANOVA (*p<0.05; **p<0.01). (B) Analysis of double and triple mutants of the functional segments. \u2206N1 and \u2206N2 represent \u220685\u201396 and \u2206121\u2013132, respectively, and each independently contribute to Hsf1 activity. CE2 is a region spanning the consecutive C-terminal determinants defined in (A) that is conserved among a subset of fungal species. Statistical significance was determined by one-way ANOVA comparing each double mutant to both of the single mutant parents (*p<0.05 for both tests).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31668/elife-31668-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The \u2018wild type\u2019 rate is 2.783 min\u22121 as in the previous iteration of the model (not shown on the graph) (Zheng et al., 2016).\n\nTo determine if these segments acted independently, we generated double mutants. Combining the N-terminal deletions (\u220685\u201396/\u2206121\u2013132) resulted in a mutant with significantly greater basal activity than either of the single mutants, suggesting that these segments operate independently to repress Hsf1 activity (p<0.05, Figure 2B). We will refer to these N-terminal segments as N1 and N2. By contrast, combining the consecutive C-terminal segments (\u2206528\u2013539/\u2206540\u2013551) resulted in a double mutant with the same activity as the single deletions, suggesting that a unique functional determinant encompasses these segments (Figure 2B). Consistent with this notion, a region spanning these two segments comprises a previously identified element conserved in Hsf1 in other fungal species known as \u2018conserved element 2\u2019 (CE2) (Figure 2B) (Jakobsen and Pelham, 1991; Nicholls et al., 2011). Indeed, specific removal of CE2 was sufficient to match the increased level of Hsf1 activity observed in the \u2206528\u2013539/\u2206540\u2013551 mutant (Figure 2B). Additional removal of the final six amino acids provided no further increase in Hsf1 activity, consistent with previous studies suggesting a non-additive interaction between these elements (Figure 2B) (Hashikawa and Sakurai, 2004; Yamamoto et al., 2007). However, combining the N1/N2 and CE2 deletions resulted in an Hsf1 mutant with significantly greater activity than either the \u2206N1/\u2206N2 mutant or the \u2206CE2 mutant (Figure 2B). Together, the scanning mutagenesis revealed three independent repressive segments on Hsf1 (N1, N2, and CE2).\n\n### The Hsf1 N-terminal region modulates DNA binding\n\nThe segments we identified with increased HSE-YFP levels could function either by enhancing the association of Hsf1 with HSEs (i.e., increasing DNA binding) or by boosting the transactivation capacity of Hsf1 (i.e., increasing recruitment of the transcriptional machinery). To directly test the ability to bind to HSEs in cells, we performed chromatin immunoprecipitation (ChIP) of wild type Hsf1, Hsf1\u2206N, Hsf1\u2206C, Hsf1\u2206N1/\u2206N2, Hsf1\u2206CE2 and Hsf1\u2206N1/\u2206N2/\u2206CE2 under non-heat shock and acute (5 min) heat shock conditions. Following ChIP enrichment, we assayed for association with the synthetic 4xHSE promoter that drives the YFP reporter as well as five endogenous target gene promoters (HSC82, HSP82, SSA4, HSP26 and TMA10) by qPCR. Under non-heat shock conditions, wild type Hsf1 binding ranged over nearly two orders of magnitude across these targets, from 0.14% of input at the TMA10 promoter to 12.0% of input at the 4xHSE promoter (Figure 3\u2014figure supplement 1A). Upon acute heat shock, the inducibility of Hsf1 binding also varied widely across these targets, with induction of greater than 100-fold for TMA10 and less than 1.5-fold for HSC82 (Figure 3\u2014figure supplement 1A). These data are inconsistent with the notion that Hsf1 is constitutively bound to its target genes (Gross et al., 1990; Jakobsen and Pelham, 1988; Sorger et al., 1987).\n\nInterestingly, the Hsf1\u2206N mutant showed significantly increased association with the 4xHSE and SSA4 promoters under non-heat shock conditions (Figure 3A, Figure 3\u2014figure supplement 1A). This increased binding to the 4xHSE promoter was accompanied by increased transcriptional output of the YFP reporter in Hsf1\u2206N cells (Figure 3B). Northern blot analysis of expression of the endogenous SSA transcripts corroborated the HSE-YFP results (Figure 3\u2014figure supplement 1B). These data suggest a simple relationship between DNA binding and transcription for the Hsf1\u2206N mutant: the N-terminal region of Hsf1 inhibits DNA binding and thereby reduces transcriptional activity.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/31668/elife-31668-fig3-v3.jpg)\n\n**Figure 3.:** (A) Chromatin immunoprecipitation of Hsf1 followed by quantitative PCR of the 4xHSE promoter in the indicated Hsf1 wild type and mutant strains under non-heat shock and heat shock conditions (solid and outlined bars, respectively). Error bars show the standard deviation of biological replicates. Statistical significance was determined by one-way ANOVA (*p<0.05; **p<0.01). (B) Relationship between Hsf1 binding at the 4xHSE promoter as determined by ChIP-qPCR and transcriptional activity as measured by levels of the HSE-YFP reporter under non-heat shock (NHS) and heat shock (HS) conditions for the panel of mutants assayed in (A).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31668/elife-31668-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) ChIP-qPCR of Hsf1 mutants at endogenous target promoters under non-heat shock and 39\u00b0C heat shock conditions. Error bars show the standard deviation of biological replicates. Statistical significance was determined by one-way ANOVA (*p<0.05; **p<0.01). (B) Northern blot analysis of SSA transcripts under non-heat shock conditions and following a 30 min heat shock at 39\u00b0C. The labeled probe recognizes all four SSA paralogs of Hsp70. The probe was generated by random priming off a 500 bp PCR product of a region of conserved sequence shared by SSA1/2/3/4.\n\nConsistent with a role for the N-terminal segment in regulating DNA binding, the Hsf1\u2206N1/\u2206N2 mutant mirrored Hsf1\u2206N in both its increased binding to the 4xHSE promoter and increased transcription of the YFP reporter under non-heat shock conditions relative to wild type (Figure 3A,B). However, unlike the complete ablation of the N-terminal region, Hsf1\u2206N1/\u2206N2 showed no increase in association with the SSA4 promoter compared to wild type (Figure 3\u2014figure supplement 1A), suggesting that its enhanced association with endogenous targets may be limited. Neither Hsf1\u2206CE2 nor Hsf1\u2206N1/\u2206N2/\u2206CE2 showed significant differences compared to wild type at any of the six target promoters under either non-heat shock or heat shock conditions, indicating that CE2 has no effect on Hsf1 DNA binding (Figure 3\u2014figure supplement 1). Remarkably, under heat shock conditions, none of the five mutants showed significant differences in binding to the 4xHSE promoter compared to wild type (Figure 3A). Thus, during heat shock, the differences in YFP reporter levels reflect the different transactivation abilities of the series of mutants, spanning more than 16-fold between Hsf1\u2206C and Hsf1\u2206N1/\u2206N2/\u2206CE2 (Figure 3B). Taken together, the ChIP results suggest that the N-terminal region inhibits DNA binding at select promoters with a major contribution from the N1 and N2 segments. This effect may be direct, reflecting an intrinsically higher affinity of Hsf1\u2206N or Hsf1\u2206N1/\u2206N2 for DNA, or indirect, a consequence of enhanced ability to recruit chromatin remodeling enzymes to open local chromatin structure.\n\n### CE2 is necessary for Hsf1 to bind to Hsp70\n\nSince CE2 affects Hsf1 transactivation but not DNA binding, we hypothesized that it could be a binding site for Hsp70. To test this, we performed serial immunoprecipitation from whole cell lysates followed by mass spectrometry (IP/MS) of 3xFLAG/V5-tagged Hsf1 mutants to identify specific interactions with chaperone proteins (Zheng and Pincus, 2017). We measured Hsp70 binding to wild type Hsf1, Hsf1\u2206N, Hsf1\u2206C, Hsf1\u2206N1/\u2206N2, Hsf1\u2206CE2 and Hsf1\u2206N1/\u2206N2/\u2206CE2 under non-heat shock conditions, performing three biological replicates for each. Removal of the entire N-terminal region or the N1/N2 segments had no effect on Hsp70 binding relative to wild type (Figure 4A). By contrast, removal of the full C-terminal region significantly reduced the association of Hsf1 with Hsp70 (Figure 4A). Moreover, specific removal of CE2 \u2013 either alone or in combination with the N1/N2 deletions \u2013 also resulted in significantly diminished association with Hsp70, nearly matching removal of the entire C-terminal region (Figure 4A). Analysis of an additional biological replicate by Western blotting corroborated the IP/MS results (Figure 4A). The residual Hsp70 that co-precipitated with Hsf1\u2206CE2 was refractory to dissociation upon heat shock, suggesting that this secondary interaction is unlikely to be regulatory (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/31668/elife-31668-fig4-v3.jpg)\n\n**Figure 4.:** (A) Co-immunoprecipitation of Hsf1 and Hsp70. The indicated Hsf1 mutants, C-terminally tagged with 3xFLAG-V5, were serially precipitated and subjected to mass spectrometry as described. The ratio of Hsp70 (Ssa1/2) to Hsf1 was determined in three biological replicates (bar graph, error bars are the standard deviation). Statistical significance was determined by one-way ANOVA (*p<0.05; **p<0.01). An additional replicate was analyzed by Western blot using antibodies against Ssa1/2 and the FLAG tag to recognize Hsf1. The FLAG blot was cropped in the middle to show the much smaller Hsf1\u2206C. The immunoblot results are not as quantitative as MS and therefore were not used in generating bar graph. (B) Cells expressing C-terminally 3xFLAG-V5-tagged wild type Hsf1 and Hsf1\u2206CE2 were either left untreated or heat shocked for 5 min at 39\u00b0C before serial Hsf1 immunoprecipitation and analyzed by Western blot using antibodies against Ssa1/2 and the FLAG tag to recognize Hsf1. (C) Cells expressing the indicated mutants of Hsf1, expressed as the only copy of Hsf1, were assayed for HSE-YFP levels under non-heat shock conditions by flow cytometry. The error bars are the standard deviation of three replicates. Statistical significance was determined by one-way ANOVA (*p<0.05; **p<0.01). (D) In vitro Hsf1:Hsp70 binding assay. Recombinant Hsf1-V5 and 3xFLAG-Ssa2 were purified, incubated together and assayed for binding by anti-FLAG immunoprecipitation followed by epitope-tag-specific Western blot. Addition of 5-fold molar excess of wild type Hsf1-6xHIS but not Hsf1\u2206CE2-6xHIS diminished the amount of Hsf1-V5 bound to 3xFLAG-Ssa2.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31668/elife-31668-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Untagged wild type Hsf1 and Hsf1\u2206CE2 were incubated at the indicated molar ratios and the amount of Hsf1-V5 bound to 3xFLAG-Ssa2 was quantified.\n\nIf CE2 is a direct binding site for Hsp70, then its primary sequence should control the affinity. Since Hsp70 binds best to peptides with hydrophobic and basic amino acids (Van Durme et al., 2009), we reasoned that mutation of three basic residues in CE2 to acidic residues should disrupt Hsp70 binding and lead to increased Hsf1 activity under non-heat shock conditions. Indeed, the Hsf1R537E,K541D,R543E triple mutant (referred to as ce2-mut) displayed increased levels of the HSE-YFP reporter under non-heat shock conditions, phenocopying \u2206CE2 (Figure 4C). Conversely, introduction of two additional repeats of the wild type CE2 sequence (3xCE2) into Hsf1 reduced the basal level of the reporter (Figure 4C).\n\nTo test if CE2 is required for Hsf1 to directly bind to Hsp70, we utilized an in vitro binding assay we previously established to monitor interaction between recombinant purified Hsf1 and Hsp70 (Zheng et al., 2016). Whereas wild type Hsf1-6xHIS was able to outcompete wild type Hsf1-V5 for binding to Ssa2 (the most highly expressed yeast Hsp70) at 5-fold molar excess, Hsf1\u2206CE2-6xHIS was not (Figure 4D, Figure 4\u2014figure supplement 1). Together, these results demonstrate that CE2 is necessary for Hsp70 to bind to Hsf1 and repress its basal activity.\n\n### CE2 is sufficient to bind to Hsp70\n\nCE2 could be necessary for Hsf1 to bind to Hsp70 either because it is a direct binding site or because it influences the conformation of Hsp70 to expose a binding site located elsewhere. To test if CE2 is sufficient to bind to Hsp70, we developed an in vitro fluorescence polarization assay. We obtained synthetic peptides consisting of the wild type CE2 sequence or the ce2-mut sequence labeled at their N-termini with 5-carboxyfluorescein (5-FAM) (Figure 5A). Neither peptide aggregated in solution. We titrated the concentration of recombinant yeast Hsp70 (Ssa2) and measured polarization of the 5-FAM fluorophore. Using this assay, we determined that Ssa2 directly binds to CE2 with a dissociation constant (Kd) of 9 \u00b5M, while the Kd for the ce2-mut peptide is reduced more than 5-fold (extrapolated to be 52 \u00b5M).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/31668/elife-31668-fig5-v3.jpg)\n\n**Figure 5.:** (A) Fluorescence polarization assay of CE2 and ce2-mut peptides labeled with 5-carboxyfluorescein (5-FAM) and recombinant Hsp70 (Ssa2). Peptides were maintained at 100 nM while Hsp70 was titrated at the indicated concentrations. Reactions were incubated for 30 min at room temperature prior to measurement. (B) Schematic of the \u2018decoy\u2019 assay. Overexpression of mKate-based decoy constructs activates Hsf1 in trans by titrating away Hsp70. (C) Decoy assay results. Cells bearing the indicated decoy constructs were induced with 1 \u00b5M estradiol for 16 hr at 30\u00b0C and measured by flow cytometry. The HSE-YFP values in each cell were normalized by the expression of the decoy as measured by mKate fluorescence. Data are represented as median values of 10,000 cells relative to the median value of mKate alone. Error bars are the standard deviation of 3 biological replicates. Statistical significance was determined by one-way ANOVA (*p<0.05; **p<0.01).\n\nTo test if the CE2 sequence is sufficient to bind to Hsp70 in cells, we deployed the \u2018decoy\u2019 assay we previously developed as a proxy to monitor Hsp70 binding (Zheng et al., 2016). In this experiment, we overexpressed synthetic constructs fused to a scaffold consisting of the well-folded fluorescent protein mKate that we can use to quantify expression. If the sequence appended to mKate binds to Hsp70, then it will titrate Hsp70 from endogenous Hsf1 and we will observe activation of the HSE-YFP reporter (Figure 5B). As a positive control, we used the previous decoy construct containing the full Hsf1 N- and C-termini (NHsf1-CHsf1), and we used mKate alone as a negative control. Addition of a single CE2 sequence to mKate modestly but significantly increased the HSE-YFP level, while addition of two or three tandem CE2 segments dramatically induced the HSE-YFP reporter, to a greater extent than even the NHsf1-CHsf1 decoy (Figure 5C). By contrast, no induction was observed for the ce2-mut decoys, even in the presence of three tandem repeats (Figure 5C). Thus, both in vitro and in cells, CE2 is sufficient to bind to Hsp70.\n\n### Hsp70 affinity tunes the dynamics of the heat shock response\n\nFinally, we returned to our mathematical model to predict the effects that modulating Hsp70:Hsf1 affinity would have on the dynamics of the heat shock response. Intuitively, simulations in which we increased the affinity showed faster deactivation kinetics and a lower maximal output, while decreasing the affinity showed slower deactivation and increased maximal output (Figure 6A, Figure 6\u2014figure supplement 1A). To test these predictions experimentally, we utilized Hsf13xCE2 to increase affinity for Hsp70 and the Hsf1\u2206CE2 and Hsf1ce2-mut to reduce affinity. In agreement with the model, Hsf13xCE2 deactivated more rapidly than wild type, while Hsf1\u2206CE2 and Hsf1ce2-mut displayed delayed deactivation kinetics in a heat shock time course (Figure 6B, Figure 6\u2014figure supplement 1B). Thus, the affinity for Hsp70 tunes Hsf1 activation dynamics.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/31668/elife-31668-fig6-v3.jpg)\n\n**Figure 6.:** (A) Simulations of HSE-YFP levels over a heat shock time course as a function of increased rate of dissociation (reduced affinity) of Hsp70 from Hsf1. (B) Experimental heat shock time course of HSE-YFP levels in cells expressing wild type Hsf1, Hsf1\u2206CE2 or Hsf13xCE2. Each point represents the average of the median HSE-YFP level in three biological replicates, and the error bars are the standard deviation of the replicates.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31668/elife-31668-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Simulations of HSE-YFP levels over a heat shock time course at 3-fold higher (blue) and 5-fold lower (green) affinity for Hsp70. (B) Experimental heat shock time course of HSE-YFP levels in cells expressing WT Hsf1 (gray) and Hsf1ce2-mut (red). Each point represents the average of the median HSE-YFP level in three biological replicates, and the error bars are the standard deviation of the replicates.\n\n## Discussion\n\nIn this study, we tested the assumptions of our mathematical model of the heat shock response by severing the Hsp70 transcriptional feedback loop and mapping an Hsp70 binding site on Hsf1. While we uncovered more biological complexity in Hsf1 regulation than we represent in the model, we validated the model\u2019s central tenets \u2013 that Hsp70 binding and dissociation turn Hsf1 off and on, and that transcriptional induction of Hsp70 represents a critical negative feedback loop required for the homeostatic regulation of Hsf1. Moreover, we found the model to be remarkably powerful in its ability to predict the dynamics of Hsf1 activity when challenged with targeted perturbations to the system architecture despite its oversimplified structure. These results argue that conceptualizing the heat shock response as a two-component feedback loop \u2013 in which Hsf1 positively regulates Hsp70 expression and Hsp70 negatively regulates Hsf1 activity \u2013 is an appropriate abstraction that captures the essence of the regulatory network. Whether this simplifying abstraction can be applied to HSF1 regulation in metazoans remains to be determined.\n\nAt a more mechanistic level, our screen for functional determinants in the N- and C-terminal regions of Hsf1 revealed three distinct segments in Hsf1 that independently exert negative regulation. The two N-terminal segments contribute to hitherto unknown repression of Hsf1 DNA binding, while the single C-terminal segment, CE2, is a binding site for Hsp70 through which Hsp70 represses Hsf1 transactivation. Although, as its name suggests, CE2 is conserved, it is restricted to a subset of yeast species and is absent in mammalian HSF1 sequences. Its amino acid composition, consisting of hydrophobic and basic residues, is reminiscent of peptide sequences known to bind to Hsp70 in vitro (Van Durme et al., 2009), though the affinity we measured (9 \u00b5M) is relatively weak. Given the stoichiometry of Hsp70:Hsf1 in cells (>500:1) (Ghaemmaghami et al., 2003) this weak affinity is likely necessary to allow for stress-dependent dissociation of the complex and has been a constant requirement of our mathematical model since its inception (Zheng et al., 2016). Thus, while CE2 is not conserved in mammalian genomes in primary sequence, it would seem facile to evolve a distinct but functionally analogous hydrophobic and basic segment to allow for weak Hsp70 binding. Notably, even though we found no evidence that the N1 segment is an additional Hsp70 binding site on endogenous Hsf1, its sequence is also predicted to be an Hsp70 binding site and is capable of binding to Hsp70 when overexpressed (S. Peffer and K. Morano, personal communication).\n\nIn addition to mechanistic insight into Hsp70 binding, our results for the first time reveal the existence of intramolecular determinants that negatively regulate Hsf1 DNA binding. While removal of the N-terminal region of Hsf1 leads to increased activity, at least in certain genomic contexts (Sorger, 1990) \u2013 suggesting that this region is repressive \u2013 the N-terminus also has a transactivation function and is important for efficient recruitment of Mediator during heat shock (Kim and Gross, 2013). Here we show that removal of the full N-terminal region results in increased association with select target gene promoters under non-heat shock conditions (Figure 3A), indicating a context-dependent role for this yeast-specific region in regulating DNA binding and suggesting a mechanistic basis for the increased transcriptional activity of Hsf1\u2206N relative to wild type Hsf1. In particular, the N1/N2 segments suppress DNA binding at the synthetic 4xHSE promoter, as Hsf1\u2206N/\u2206N2 displayed increased association (Figure 3A). If N1 were a bona fide second Hsp70 binding site (S. Peffer and K. Morano, personal communication), then this observation suggests that Hsp70 regulates both Hsf1 DNA binding and transactivation. Alternatively, if the N1/N2 segments impede DNA binding independent of Hsp70, then an additional heat shock-dependent mechanism would be required to relieve this block. Perhaps, by analogy to the intrinsic ability of human HSF1 to trimerize and bind DNA at elevated temperature (Hentze et al., 2016), the N1/N2 segments could contribute to direct thermosensing by mediating a temperature-dependent conformational change that increases DNA binding ability. Under either scenario, it is possible that the effect is indirect, and that deletion of N1/N2 results in the unmasking of the C-terminal activation domain.\n\nPutting our observations together, we propose that Hsf1 can exist in one of four states in the yeast nucleus (Figure 7):\n\n![Figure 7.](https://cdn.elifesciences.org/articles/31668/elife-31668-fig7-v3.jpg)\n\n**Figure 7.:** State 1: C-terminal activation domain (CTA) closed/DBD unbound Hsp70 is bound to CE2 keeping the CTA closed; the N-terminal region is engaged in blocking the DBD from accessing available HSEs via the N1/N2 segments. State 2 CTA open/DBD unbound: Hsp70 has dissociated from CE2; the CTA is open and can potentially recruit the transcriptional machinery; the N-terminal region continues to hinder DNA binding. State 3 CTA closed/DBD bound: Hsp70 remains bound to CE2 keeping the CTA closed; the N-terminal region has reoriented to allow HSE binding; Hsf1 weakly recruits the transcriptional machinery. State 4 CTA open/DBD bound: Hsp70 has dissociated from CE2 and the CTA is open; the N-terminal region has reoriented to allow HSE binding; Hsf1 avidly recruits the transcriptional machinery.\n\nThe dual mechanisms of Hsf1 regulation described here \u2013 control of DNA binding and accessibility of the transactivation domain \u2013 in addition to the fine-tuning capacity we previously demonstrated for phosphorylation (Zheng et al., 2016), combine to exert exquisite quantitative control over the Hsf1 activity and the expression of its target gene regulon. We propose that these regulatory mechanisms enable cells to precisely tailor an optimal response to a variety of environmental and internal stresses.\n\n## Materials\u00a0and\u00a0methods\n\n### Yeast strains, plasmids and cell growth\n\nYeast cells were cultured in SDC media and dilution series spot assays were performed as described (Zheng et al., 2016). Strains and plasmids are listed in Supplementary files 1 and 2.\n\n### Mathematical modleling\n\nModeling was performed as described (Zheng et al., 2016).\n\n#### Model parameter\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>Previous Paper model values</th>\n      <th>This paper\u2019s model values</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>k1, k3</td>\n      <td>166.8 min\u22121 a.u.\u22121</td>\n      <td>166.8 min\u22121 a.u.\u22121</td>\n    </tr>\n    <tr>\n      <td>k2</td>\n      <td>2.783 min\u22121</td>\n      <td>2.783 min\u22121</td>\n    </tr>\n    <tr>\n      <td>k4</td>\n      <td>0.0464 min\u22121</td>\n      <td>0.0464 min\u22121</td>\n    </tr>\n    <tr>\n      <td>k5</td>\n      <td>4.64e-7 min\u22121</td>\n      <td>4.64e-7 min\u22121</td>\n    </tr>\n    <tr>\n      <td>\u03b2</td>\n      <td>1.778 min\u22121</td>\n      <td>0.3557 min\u22121</td>\n    </tr>\n    <tr>\n      <td>Kd</td>\n      <td>0.0022 a.u.</td>\n      <td>0.0022 a.u.</td>\n    </tr>\n    <tr>\n      <td>kdil (fixed)</td>\n      <td>0 min\u22121</td>\n      <td>0 min\u22121</td>\n    </tr>\n    <tr>\n      <td>n (fixed)</td>\n      <td>3</td>\n      <td>3</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Initial conditions\n\n<table>\n  <thead>\n    <tr>\n      <th>Species</th>\n      <th>Initial value (a.u.)</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>[HSP]o</td>\n      <td>1</td>\n      <td>Free Hps70</td>\n    </tr>\n    <tr>\n      <td>[Hsf1]o</td>\n      <td>0</td>\n      <td>Free Hsf1</td>\n    </tr>\n    <tr>\n      <td>[HSP\u2022Hsf1]o</td>\n      <td>0.002</td>\n      <td>HSP70\u2022Hsf1 complex</td>\n    </tr>\n    <tr>\n      <td>[HSP\u2022UP]o</td>\n      <td>0</td>\n      <td>Hsp70\u2022UP complex</td>\n    </tr>\n    <tr>\n      <td>[YFP]o</td>\n      <td>3</td>\n      <td>Initial YFP concentration</td>\n    </tr>\n    <tr>\n      <td>[UP]o (@ 39\u00b0C)</td>\n      <td>10.51</td>\n      <td>UP concentration at 39\u00b0C</td>\n    </tr>\n  </tbody>\n</table>\n\n### Flow cytometry\n\nHeat shock experiments, heat shock time courses and decoy assays were performed and HSE-YFP levels were quantified by flow cytometry as described (Zheng et al., 2016). Data were processed in FlowJo 10. Data were left ungated and YFP fluorescence was normalized by side scatter (SSC) for each cell.\n\n### Spinning disc confocal imaging\n\nImaging was performed as described (Zheng et al., 2016). Hsp104-mKate foci were quantified manually in ImageJ.\n\n### Chromatin immunoprecipitation (ChIP)\n\nHsf1 ChIP was performed and quantified by qPCR as described (Anandhakumar et al., 2016).\n\n### Serial 3xflag/V5 immunoprecipitation\n\nHsf1-3xFLAG-V5 was serially immunoprecipitated and analyzed by mass spectrometry and Western blotting as described (Zheng et al., 2016; Zheng and Pincus, 2017).\n\n### Recombinant protein purification, binding and competition assay\n\nRecombinant proteins were expressed and purified as described and the in vitro binding assay between Hsf1 and Ssa2 was performed as described (Zheng et al., 2016).\n\n### Fluorescence polarization assay\n\nCE2 and ce2-mut peptides labeled at their N-termini with 5-carboxyfluorescein (5-FAM) were obtained at\u00a0>95% purity from GenScript. Fluorescence polarization was measured on a Tecan M1000 plate reader with absorbance at 480 nm and emission at 525 nm with increasing concentrations of 6x-HIS-3xFLAG-Ssa2. The peptides were kept constant at 100 nM. The reaction volume for each data point was 30 \u00b5l, and the measurements were performed in black, flat-bottomed 384 well plates after incubation for 30 min at room temperature. Binding curves were fitted using Prism software (Graph Pad) and Kd values were extracted.\n",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "f68e0672-5c3b-42e2-9180-b605496d2c7f",
+      "submission_id": "ff341633-3bde-4c0b-b5bf-80ee7b1c837c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tony Hunter, Salk Institute for Biological Studies United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.31668.023](https://doi.org/10.7554/eLife.31668.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Hsf1 and Hsp70 constitute a two-component feedback loop that regulates the yeast heat shock response\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jonathan Cooper as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Peter M Douglas (Reviewer #2).\n\nThe reviewers and the Reviewing Editor have drafted this decision to help you prepare a revised submission.\n\nHere the authors have followed up their 2016 eLife paper where they reported that Hsp70/Ssa1-4 chaperone binding to the Hsf1 transcription factor was the main mechanism of negative regulation of Hsf1 in yeast, and that competition of Hsp70 away from Hsf1 in response to increased levels of unfolded protein induced by heat shock was the primary mechanism of activation of heat shock-induced Hsf1 target gene transcription. They also showed that the extensive phosphorylation of Hsf1 observed upon heat shock was dispensable for Hsf1 activation, but instead played a role in amplifying the Hsf1 transcriptional output. On this basis, they proposed that Hsf1 activity was regulated by two feedback loops \u2013 normally Hsp70 is in excess and can sequester Hsf1 by direct binding; following heat shock Hsf1 is released, and, among other target genes, drives expression of Hsp70, which then re-sequesters Hsf1 shutting off the response.\n\nIn this paper they tested their model in two ways. First, they engineered a yeast strain in which the four Ssa/Hsp70 genes were deleted and replaced by two copies of Ssa2 driven by a constitutive promoter, and showed that in this strain heat shock induced expression of an Hsf1-driven YFP gene with similar kinetics to WT, but that YFP expression was not shut off as heat shock persisted. Second, they showed that Hsp70 was able to bind to Hsf1 directly, and mapped the major binding site to a conserved element CE2 in the C-terminal tail of Hsf1.\n\nThe reviewers have discussed the reviews with one another and concur that this is a nice follow up to their prior paper, and is in principle appropriate for a Research Advance. However, although the data provide support for the model that the authors proposed in their earlier paper, the reviewers had a number of concerns that need to be addressed before publication\n\nEssential points that need to be addressed:\n\n1) The authors claim to have identified the binding site of Hsp70 on Hsf1. However, although their results indicate that CE2 is necessary for Hsp70 binding to Hsf1, they do not show that the CE2 motif is sufficient. For example, CE2 could influence the conformation of Hsf1 to expose an Hsp70 binding site that is located somewhere else, e.g. at the very C-terminal end of Hsf1, which also influenced the Hsf1 reporter activity. They should use a peptide-binding assay to demonstrate that this Hsf1 segment can be directly bound by Hsp70, and determine the Kd for binding this segment, and compare this value with the Kd of the Hsp70-Hsf1 complex used in their simulation. The authors should also create point mutations in this segment predicted to decrease the affinity of Hsp70 for Hsf1 more gradually, like replacing large hydrophobic residues (Leu or Tyr) for alanine or serine, or introducing negative charge in the CE2 region. These mutations should lead to predictable changes in the heat shock response that the authors could compare with simulations in their model.\n\n2) Figure 1B: It would be good to include (e.g. in the supplement) a chemical equation representation of the model with each arrow labeled with the appropriate parameter and indicating which parameters were changed in comparison to the previous version of the model. Although the model is described in the earlier published paper, the model is essential for the reader to understand this paper and inclusion of the model would facilitate understanding the study without continuous reference to the previous paper. Also, the authors mention that the original parameters did not represent their data correctly and that they had to change some parameters. It would be interesting to show a comparison of the simulation results in Figure 1B with the previous and the new parameter values side by side.\n\n3) Figure 1C: The key to the interpretation of the results is accurate quantification of the levels of Ssa/Hsp70 in the cells under different conditions. The authors used Pgk1 levels to normalize Ssa1/2 levels, but because its levels were increased in heat-shocked cells, Pgk1 cannot be used as a reliable loading control for quantification of Ssa1/2, and the authors need to use another protein whose levels do not change upon heat shock for quantification. In this regard, the quantification data need error bars, and significance analysis should be performed. Accurate Ssa/Hsp70 quantification is a critical issue, because as it stands the level of Ssa1/2 was apparently higher in the constitutive \u0394FBL cells than in WT cells in the absence of heat shock (it is estimated as 1.6 fold higher). If this is the case and the sequestration model is correct, one might have expected the Hsf1-driven YFP response upon heat shock to be somewhat delayed in the constitutive strain. In addition, the Ssa2/Hsp70 level after heat shock induction in the WT strain was apparently not that much higher than in the constitutive strain without heat shock and yet this sufficient to shut off YFP expression \u2013 this raises the issue of whether the level of Hsf1, which was not measured, was the same in these two strains.\n\n4) Figure 3: In the ChIP analysis, the \u0394N1/\u0394N2/\u0394CE2 Hsf1 pulled down less HSE promoter DNA than the \u0394N1/\u0394N2 Hsf1 variant. According to the authors the N1 and the N2 region repress DNA binding in an Hsp70 independent manner, while CE2 contains the Hsp70 binding site for downregulation of the HSR. Why then does additional deletion of the Hsp70 binding site, i.e. prevention of Hsp70 binding, reduce DNA binding of the \u2206N1/\u2206N2 Hsf1? Does Hsp70 association with to Hsf1 increase DNA binding? The ChIP data for those mutants are not consistent with the HSE-YFP reporter assay. With respect to DNA binding, the N1/N2 and CE2 elements seem to counteract each other, while with respect to Hsf1 transcriptional activity N1/N2 and CE2 act synergistically. Also, N1/N2 only affected the binding to the artificial 4xHSE promoter but not to any of the other promoters tested, and CE2 does not affect binding to any of the promoters in the context of the wild type Hsf1 protein. The question is whether either one of these elements affects expression of a reporter from a natural promoter. The authors should test their deletion variants using a reporter construct with a natural promoter like the Hsp82 and SSA4 promoters. In this regard, the fact that the \u0394CE2 mutants resulted in direct upregulation of HSE-YFP activation, disagrees with previous work with C. albicans showing that CE2 is required for full expression of HSE genes (Nicholls et al., 2011), and this needs an explanation. In addition, the authors also fail to explain why individual deletions in the C-terminus cause increased YFP (but none caused decreased), while deleting the entire C-terminus results in a reduction in YFP.\n\n5) Finally, it is not clear that this feedback mechanism applies to anything other than yeasts, since the CE2 element does not appear to be conserved in human HSF1, and this point merits at least some discussion.\n",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "dae4b60d-5abe-4e76-8c2e-46e057dbf688",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C1",
+      "claim": "Hsf1 and Hsp70 constitute a two-component feedback loop that regulates the yeast heat shock response",
+      "claim_type": "EXPLICIT",
+      "source": "Hsf1 and Hsp70 constitute a two-component feedback loop that regulates the yeast heat shock response",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main claim of the paper, supported by experimental data including feedback loop severing experiments, binding assays, and mathematical modeling",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "60edd327-2650-4e4a-bb15-4e0f153da463",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C2",
+      "claim": "Hsp70 is the chaperone responsible for Hsf1 repression",
+      "claim_type": "EXPLICIT",
+      "source": "Previously we identified Hsp70 as the chaperone responsible for Hsf1 repression and constructed a mathematical model that recapitulated the yeast heat shock response (Zheng et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work by the authors",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "97888dc2-a58e-434b-a0e9-a9f28d761a96",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C3",
+      "claim": "Dissociation of Hsp70 activates Hsf1",
+      "claim_type": "EXPLICIT",
+      "source": "The model was based on two assumptions: dissociation of Hsp70 activates Hsf1, and transcriptional induction of Hsp70 deactivates Hsf1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption that is validated through experimental data in the manuscript",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "3156c4ef-7404-45b8-9594-4760d0ba3cab",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C4",
+      "claim": "Transcriptional induction of Hsp70 deactivates Hsf1",
+      "claim_type": "EXPLICIT",
+      "source": "The model was based on two assumptions: dissociation of Hsp70 activates Hsf1, and transcriptional induction of Hsp70 deactivates Hsf1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption validated by feedback loop severing experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "a70e3de3-22de-4a76-baad-da59fd6a18b6",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C5",
+      "claim": "Hsf1 was unable to efficiently deactivate in the absence of Hsp70 transcriptional induction",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by the model, Hsf1 was unable to efficiently deactivate in the absence of Hsp70 transcriptional induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from the \u2206FBL strain shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "1225ef66-b036-4196-b5b2-d7c35217516d",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C6",
+      "claim": "CE2 is a discrete Hsp70 binding site on Hsf1",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we mapped a discrete Hsp70 binding site on Hsf1 to a C-terminal segment known as conserved element 2 (CE2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by co-immunoprecipitation, in vitro binding assays, and fluorescence polarization data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "06544e33-3396-4f48-b37f-68c4f4a6e4fa",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C7",
+      "claim": "CE2 binds to Hsp70 with low affinity (9 \u00b5M) in vitro",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro, CE2 binds to Hsp70 with low affinity (9 \u00b5M), in agreement with model requirements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by fluorescence polarization assay data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "2d771296-cabd-46f4-8447-7b11d8543c2e",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C8",
+      "claim": "Removal of CE2 resulted in increased basal Hsf1 activity",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, removal of CE2 resulted in increased basal Hsf1 activity and delayed deactivation during heat shock, while tandem repeats of CE2 sped up Hsf1 deactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by flow cytometry data measuring HSE-YFP reporter levels",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "05bd39aa-b569-44bd-b690-aeb442c03e23",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C9",
+      "claim": "Removal of CE2 resulted in delayed deactivation during heat shock",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, removal of CE2 resulted in increased basal Hsf1 activity and delayed deactivation during heat shock, while tandem repeats of CE2 sped up Hsf1 deactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by heat shock time course data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "76b1a007-5f65-4684-8f5a-a0802528f5fd",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C10",
+      "claim": "Tandem repeats of CE2 sped up Hsf1 deactivation",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, removal of CE2 resulted in increased basal Hsf1 activity and delayed deactivation during heat shock, while tandem repeats of CE2 sped up Hsf1 deactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by heat shock time course data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "eec670e9-4cde-4118-a08c-46ad9c8c78bb",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C11",
+      "claim": "The N-terminal domain of Hsf1 negatively regulates DNA binding",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we uncovered a role for the N-terminal domain of Hsf1 in negatively regulating DNA binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-qPCR data showing increased DNA binding in N-terminal deletion mutants",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "51d07b97-9b7c-4076-bf7e-d09dd1bc1bd5",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C12",
+      "claim": "The heat shock response is a transcriptional program conserved in eukaryotes from yeast to humans",
+      "claim_type": "EXPLICIT",
+      "source": "The heat shock response is a transcriptional program conserved in eukaryotes from yeast to humans in which genes encoding molecular chaperones and other components of the protein homeostasis (proteostasis) machinery are activated to counteract proteotoxic stress (Anckar and Sistonen, 2011; Richter et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "a890c962-fab5-4b4a-80ad-c175dc40972f",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C13",
+      "claim": "Heat shock factor 1 (Hsf1) is the master transcriptional regulator of the heat shock response",
+      "claim_type": "EXPLICIT",
+      "source": "The master transcriptional regulator of the heat shock response, Heat shock factor 1 (Hsf1), binds as a trimer to its cognate DNA motif \u2013 the heat shock element (HSE) \u2013 in the promoters and enhancers of its target genes (Gross et al., 1990; Hentze et al., 2016; Sorger and Nelson, 1989; Xiao et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "794bdeb9-1e55-492a-ae72-53e01d2d16a2",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C14",
+      "claim": "Hsf1 binds as a trimer to the heat shock element (HSE)",
+      "claim_type": "EXPLICIT",
+      "source": "The master transcriptional regulator of the heat shock response, Heat shock factor 1 (Hsf1), binds as a trimer to its cognate DNA motif \u2013 the heat shock element (HSE) \u2013 in the promoters and enhancers of its target genes (Gross et al., 1990; Hentze et al., 2016; Sorger and Nelson, 1989; Xiao et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "a869f2e7-e070-48f0-8535-b713075f3e07",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C15",
+      "claim": "In yeast, Hsf1 is essential under all conditions",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, Hsf1 is essential under all conditions because it is required to drive the high level of basal chaperone expression needed to sustain growth (McDaniel et al., 1989; Sol\u00eds et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "f7d5457a-b56d-4fb7-b4ad-e718d2d9d096",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C16",
+      "claim": "Hsf1 is required to drive the high level of basal chaperone expression needed to sustain growth in yeast",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, Hsf1 is essential under all conditions because it is required to drive the high level of basal chaperone expression needed to sustain growth (McDaniel et al., 1989; Sol\u00eds et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "912b4ef5-b47e-4dc6-a4d6-a3e32003d540",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C17",
+      "claim": "Mammalian Hsf1 is dispensable under non-heat shock conditions",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian Hsf1 is dispensable under non-heat shock conditions because it exclusively controls stress-inducible expression of its target regulon, while high-level basal chaperone expression is Hsf1-independent (Mahat et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "219ba307-21b3-46f2-a8b9-be3b58838104",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C18",
+      "claim": "Mammalian Hsf1 exclusively controls stress-inducible expression of its target regulon",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian Hsf1 is dispensable under non-heat shock conditions because it exclusively controls stress-inducible expression of its target regulon, while high-level basal chaperone expression is Hsf1-independent (Mahat et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "aab413ac-6343-4d06-84e6-e01061fc6920",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C19",
+      "claim": "High-level basal chaperone expression is Hsf1-independent in mammals",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian Hsf1 is dispensable under non-heat shock conditions because it exclusively controls stress-inducible expression of its target regulon, while high-level basal chaperone expression is Hsf1-independent (Mahat et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "0c38b506-ff91-4bff-bf3d-1809569e5a9f",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C20",
+      "claim": "Hsf1 plays pro-cancer roles both in tumor cells and the supporting stroma",
+      "claim_type": "EXPLICIT",
+      "source": "Hsf1 has been shown to play pro-cancer roles both in tumor cells and the supporting stroma (Dai et al., 2012; Dai et al., 2007; Santagata et al., 2011; Scherz-Shouval et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "c5245e0a-d07f-4a6e-a743-d364b46d0474",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C21",
+      "claim": "Hsf1 takes on specialized transcriptional roles to support malignant growth",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to supplying high levels of chaperones to cancer cells, Hsf1 takes on specialized transcriptional roles to support malignant growth, and its activity is associated with poor prognosis in a range of human cancers (Mendillo et al., 2012; Santagata et al., 2011; Scherz-Shouval et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "0b814371-32c5-4bce-94b4-8d1f0cfefae6",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C22",
+      "claim": "Hsf1 activity is associated with poor prognosis in a range of human cancers",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to supplying high levels of chaperones to cancer cells, Hsf1 takes on specialized transcriptional roles to support malignant growth, and its activity is associated with poor prognosis in a range of human cancers (Mendillo et al., 2012; Santagata et al., 2011; Scherz-Shouval et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "7ac3b08a-788c-43ce-beb9-4ffe8e25465d",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C23",
+      "claim": "Lack of Hsf1 activity has been proposed to contribute to the development of neurodegenerative diseases associated with protein aggregates",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, lack of Hsf1 activity has been proposed to contribute to the development of neurodegenerative diseases associated with protein aggregates (Gomez-Pastor et al., 2017; Neef et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "e76a1573-db54-4ba0-9053-0199d7a18d48",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C24",
+      "claim": "A quantitative description of the regulatory mechanisms that control Hsf1 activity in any cell type remains lacking",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the potential therapeutic benefits of modulating Hsf1 activity, a quantitative description of the regulatory mechanisms that control its activity in any cell type remains lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field prior to this work",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "01bab787-0fcb-4c2a-a2f4-9495a42c920c",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C25",
+      "claim": "Binding and dissociation of the chaperone Hsp70 is the primary ON/OFF switch for Hsf1",
+      "claim_type": "EXPLICIT",
+      "source": "Our recent work in Saccharomyces cerevisiae demonstrated that binding and dissociation of the chaperone Hsp70 is the primary ON/OFF switch for Hsf1, while phosphorylation is dispensable for activation but serves to amplify the transcriptional output (Zheng et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work by the authors",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "147fe47b-6039-4e0f-aafa-1de05fbfd2c2",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C26",
+      "claim": "Phosphorylation is dispensable for Hsf1 activation but serves to amplify the transcriptional output",
+      "claim_type": "EXPLICIT",
+      "source": "Our recent work in Saccharomyces cerevisiae demonstrated that binding and dissociation of the chaperone Hsp70 is the primary ON/OFF switch for Hsf1, while phosphorylation is dispensable for activation but serves to amplify the transcriptional output (Zheng et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work by the authors",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "fa0bff38-25d8-419d-850a-3e761a6938e9",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C27",
+      "claim": "The mathematical model was able to recapitulate experimental data of Hsf1 activity during heat shock",
+      "claim_type": "EXPLICIT",
+      "source": "While the model was able to recapitulate experimental data of Hsf1 activity during heat shock and correctly predicted the outcome of defined perturbations, its two central tenets remain untested",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work and data in this manuscript",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "d1864924-305d-4e48-a49b-1794cd54ccaf",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C28",
+      "claim": "The mathematical model correctly predicted the outcome of defined perturbations",
+      "claim_type": "EXPLICIT",
+      "source": "While the model was able to recapitulate experimental data of Hsf1 activity during heat shock and correctly predicted the outcome of defined perturbations, its two central tenets remain untested",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental validation of model predictions shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "01b0948f-2bb0-4c17-9234-d278487fc506",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C29",
+      "claim": "When the temperature is raised, the concentration of unfolded proteins exceeds the capacity of Hsp70",
+      "claim_type": "EXPLICIT",
+      "source": "When the temperature is raised, the concentration of unfolded proteins exceeds the capacity of Hsp70.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation based on established understanding of heat shock response",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "cf426984-fee8-4fb6-adee-d6412132445a",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C30",
+      "claim": "Hsp70 is titrated away from Hsf1 during heat shock",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp70 is titrated away from Hsf1, freeing Hsf1 to induce more Hsp70.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation supported by previous work cited in the manuscript",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "4e1999ed-5a8a-421f-8a55-afb1af119ad6",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C31",
+      "claim": "Once sufficient Hsp70 has been produced to restore proteostasis, Hsp70 binds and deactivates Hsf1",
+      "claim_type": "EXPLICIT",
+      "source": "Once sufficient Hsp70 has been produced to restore proteostasis, Hsp70 binds and deactivates Hsf1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation supported by experimental data in this manuscript",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "79c9dc91-0c43-4843-b8bf-6d519cb0a971",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C32",
+      "claim": "The \u2206FBL strain activated the reporter with identical kinetics to the wild type during the early phase of the response",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by the simulation, the \u2206FBL strain activated the reporter with identical kinetics to the wild type during the early phase of the response, but failed to attenuate induction during prolonged exposure to elevated temperature (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "b550f22c-20f6-47db-987f-776c0380553c",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C33",
+      "claim": "The \u2206FBL strain failed to attenuate induction during prolonged exposure to elevated temperature",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by the simulation, the \u2206FBL strain activated the reporter with identical kinetics to the wild type during the early phase of the response, but failed to attenuate induction during prolonged exposure to elevated temperature (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "f22dc143-55c0-4c82-9fce-d695eb7a3648",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C34",
+      "claim": "The model underestimated the amount of time required to observe the separation between the wild type and \u2206FBL strains",
+      "claim_type": "EXPLICIT",
+      "source": "While the simulation correctly predicted the experimental results qualitatively, the model underestimated the amount of time required to observe the separation between the wild type and \u2206FBL strains, suggesting the strength of the feedback had been exaggerated in the first iteration of the model (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of simulation and experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "f6368c69-905c-4c7f-922a-5325d02a9b59",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C35",
+      "claim": "The strength of the feedback had been exaggerated in the first iteration of the model",
+      "claim_type": "EXPLICIT",
+      "source": "While the simulation correctly predicted the experimental results qualitatively, the model underestimated the amount of time required to observe the separation between the wild type and \u2206FBL strains, suggesting the strength of the feedback had been exaggerated in the first iteration of the model (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the discrepancy between model and experimental data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "e22b87d1-f5d8-4886-b0dc-70ee88018c29",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C36",
+      "claim": "By reducing the strength of the feedback loop, the model was able to quantitatively match the behavior of both the wild type and \u2206FBL cells",
+      "claim_type": "EXPLICIT",
+      "source": "By reducing the strength of the feedback loop, we were able to quantitatively match the behavior of both the wild type and \u2206FBL cells (Figure 1B, see Materials and methods for the updated parameter value).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by updated model simulations shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "813d0403-b447-4a8b-9d80-a7166f03311d",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C37",
+      "claim": "The wild type and \u2206FBL strains grew equally at 30\u00b0C",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the wild type and \u2206FBL strains grew equally at 30\u00b0C, and the \u2206FBL strain showed only a slight reduction in growth at 37\u00b0C (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by spot assay data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "8230a092-5722-4912-92e3-ca4f7a24ee33",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C38",
+      "claim": "The \u2206FBL strain showed only a slight reduction in growth at 37\u00b0C",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the wild type and \u2206FBL strains grew equally at 30\u00b0C, and the \u2206FBL strain showed only a slight reduction in growth at 37\u00b0C (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by spot assay data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "63784864-2910-41e7-bdca-572b6c049b65",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C39",
+      "claim": "The ssa1/2\u2206 cells displayed severely impaired growth at 30\u00b0C and were inviable at 37\u00b0C",
+      "claim_type": "EXPLICIT",
+      "source": "The ssa1/2\u2206 cells \u2013 which retain viability due to Hsf1-mediated induction of SSA3/4 \u2013 displayed severely impaired growth at 30\u00b0C and were inviable at 37\u00b0C (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by spot assay data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "21f944f5-0f14-4eee-8341-2964fbc15b1b",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C40",
+      "claim": "Removal of both SSA3 and SSA4 had only modest phenotypic consequences at elevated temperature",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, removal of both SSA3 and SSA4 \u2013 the major heat shock-inducible Hsp70 genes in yeast \u2013 had only modest phenotypic consequences at elevated temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by growth assay data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "c83f8e82-4e13-4eec-917e-50793b7aa126",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C41",
+      "claim": "Upon acute heat shock, the number of Hsp104-mKate foci spiked in both wild type and \u2206FBL cells",
+      "claim_type": "EXPLICIT",
+      "source": "Upon acute heat shock, the number of Hsp104-mKate foci spiked in both wild type and \u2206FBL cells, but dissolved with the same kinetics in both strains (Figure 1E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data shown in Figure 1E,F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "c03de36c-e675-4023-88b8-ea43619f0b09",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C42",
+      "claim": "Hsp104-mKate foci dissolved with the same kinetics in both wild type and \u2206FBL strains",
+      "claim_type": "EXPLICIT",
+      "source": "Upon acute heat shock, the number of Hsp104-mKate foci spiked in both wild type and \u2206FBL cells, but dissolved with the same kinetics in both strains (Figure 1E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data shown in Figure 1E,F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "8fc678dd-4c47-4152-970d-d83f245cca31",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C43",
+      "claim": "The \u2206FBL cells can restore proteostasis just as efficiently as wild type cells",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the \u2206FBL cells can restore proteostasis just as efficiently as wild type cells and that the prolonged Hsf1 activation in the \u2206FBL cells is due to a spdeactivation defect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the Hsp104-mKate foci dissolution data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "79e3494d-9195-4316-bf5f-24cf57303298",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C44",
+      "claim": "The prolonged Hsf1 activation in the \u2206FBL cells is due to a deactivation defect",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the \u2206FBL cells can restore proteostasis just as efficiently as wild type cells and that the prolonged Hsf1 activation in the \u2206FBL cells is due to a spdeactivation defect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the combination of proteostasis restoration and sustained Hsf1 activity",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "57255948-2b63-4c62-b790-0e25664d82b2",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C45",
+      "claim": "Hsp104 requires Hsp70 for efficient activity",
+      "claim_type": "EXPLICIT",
+      "source": "Since Hsp104 requires Hsp70 for efficient activity (Seyffer et al., 2012; Winkler et al., 2012), there must be sufficient Hsp70 expressed under basal conditions to allow Hsp104 to operate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "e90e0d6e-48bb-4ae8-9394-3d263b1ab055",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C46",
+      "claim": "There must be sufficient Hsp70 expressed under basal conditions to allow Hsp104 to operate in \u2206FBL cells",
+      "claim_type": "EXPLICIT",
+      "source": "Since Hsp104 requires Hsp70 for efficient activity (Seyffer et al., 2012; Winkler et al., 2012), there must be sufficient Hsp70 expressed under basal conditions to allow Hsp104 to operate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that Hsp104 functions normally in \u2206FBL cells",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "cd1eb7eb-a2dd-4680-94c8-69055e4a1603",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C47",
+      "claim": "The transcriptional negative feedback loop is required to deactivate Hsf1 once proteostasis has been restored",
+      "claim_type": "EXPLICIT",
+      "source": "While Hsp104 may not recognize all classes of unfolded proteins and aggregates, these results suggest that the transcriptional negative feedback loop is required to deactivate Hsf1 once proteostasis has been restored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the \u2206FBL experimental results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "5e3349e4-1b2a-4163-898a-0b27f7647cd4",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C48",
+      "claim": "Removal of the N-terminal region led to significantly increased Hsf1 activity under both non-heat shock and heat shock conditions",
+      "claim_type": "EXPLICIT",
+      "source": "As previously shown, removal of the N-terminal region led to significantly increased Hsf1 activity under both non-heat shock and heat shock conditions in this assay (Sorger, 1990; Zheng et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work and data in Figure 2A",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "bd80f363-4c06-4b86-9d66-d04fda7536ac",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C49",
+      "claim": "Removal of the C-terminal region significantly reduced Hsf1 activity under both non-heat shock and heat shock conditions",
+      "claim_type": "EXPLICIT",
+      "source": "while removal of the C-terminal region significantly reduced Hsf1 activity under both conditions (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "563127b9-887d-462f-99bd-eaa862b0135e",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C50",
+      "claim": "In the N-terminal region, two distinct 12 amino acid segments when deleted resulted in increased Hsf1 activity (amino acids 85\u201396 and 121\u2013132)",
+      "claim_type": "EXPLICIT",
+      "source": "In the N-terminal region, we found two distinct 12 amino acid segments that when deleted resulted in increased Hsf1 activity (amino acids 85\u201396 and 121\u2013132) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by scanning mutagenesis data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "cc5b9fdb-4521-4d67-bce9-6292ee372717",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C51",
+      "claim": "In the C-terminal region, removal of two consecutive 12 amino acid segments as well as truncation of the final six amino acids resulted in increased Hsf1 activity (amino acids 528\u2013539, 540\u2013551 and 828\u2013833)",
+      "claim_type": "EXPLICIT",
+      "source": "In the C-terminal region, removal of two consecutive 12 amino acid segments as well as truncation of the final six amino acids resulted in increased Hsf1 activity (amino acids 528\u2013539, 540\u2013551 and 828\u2013833) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by scanning mutagenesis data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "1b9cd26f-fd26-43e0-ab3e-93dade06a7b8",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C52",
+      "claim": "Combining the N-terminal deletions (\u220685\u201396/\u2206121\u2013132) resulted in a mutant with significantly greater basal activity than either of the single mutants",
+      "claim_type": "EXPLICIT",
+      "source": "Combining the N-terminal deletions (\u220685\u201396/\u2206121\u2013132) resulted in a mutant with significantly greater basal activity than either of the single mutants, suggesting that these segments operate independently to repress Hsf1 activity (p<0.05, Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "223c08e0-6d60-4bd3-82fe-512b8e26296b",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C53",
+      "claim": "The N-terminal segments N1 and N2 operate independently to repress Hsf1 activity",
+      "claim_type": "EXPLICIT",
+      "source": "Combining the N-terminal deletions (\u220685\u201396/\u2206121\u2013132) resulted in a mutant with significantly greater basal activity than either of the single mutants, suggesting that these segments operate independently to repress Hsf1 activity (p<0.05, Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the additive effect of the double deletion",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "69b32bcc-d28c-418a-b65e-d5bb97ee948f",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C54",
+      "claim": "Combining the consecutive C-terminal segments (\u2206528\u2013539/\u2206540\u2013551) resulted in a double mutant with the same activity as the single deletions",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, combining the consecutive C-terminal segments (\u2206528\u2013539/\u2206540\u2013551) resulted in a double mutant with the same activity as the single deletions, suggesting that a unique functional determinant encompasses these segments (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "a8bbbea2-9051-41a4-b277-0a4614fe4a2f",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C55",
+      "claim": "A unique functional determinant encompasses the C-terminal segments 528-551",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, combining the consecutive C-terminal segments (\u2206528\u2013539/\u2206540\u2013551) resulted in a double mutant with the same activity as the single deletions, suggesting that a unique functional determinant encompasses these segments (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the non-additive effect of the double deletion",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "64c8627f-c213-4ae7-b6b7-b03d5b0ef808",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C56",
+      "claim": "A region spanning segments 528-551 comprises a previously identified element conserved in Hsf1 in other fungal species known as 'conserved element 2' (CE2)",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this notion, a region spanning these two segments comprises a previously identified element conserved in Hsf1 in other fungal species known as 'conserved element 2' (CE2) (Figure 2B) (Jakobsen and Pelham, 1991; Nicholls et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to previous work and sequence alignment shown in Figure 2B",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "98b5e2e8-24b5-4af9-8b8b-76d30e75f5f8",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C57",
+      "claim": "Specific removal of CE2 was sufficient to match the increased level of Hsf1 activity observed in the \u2206528\u2013539/\u2206540\u2013551 mutant",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, specific removal of CE2 was sufficient to match the increased level of Hsf1 activity observed in the \u2206528\u2013539/\u2206540\u2013551 mutant (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "4bbc4f85-dc35-403f-9c29-64ba9a9a2dbe",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C58",
+      "claim": "Combining the N1/N2 and CE2 deletions resulted in an Hsf1 mutant with significantly greater activity than either the \u2206N1/\u2206N2 mutant or the \u2206CE2 mutant",
+      "claim_type": "EXPLICIT",
+      "source": "However, combining the N1/N2 and CE2 deletions resulted in an Hsf1 mutant with significantly greater activity than either the \u2206N1/\u2206N2 mutant or the \u2206CE2 mutant (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "e7821bb9-d806-4a9e-a1bd-2b92adf3d9dc",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C59",
+      "claim": "The scanning mutagenesis revealed three independent repressive segments on Hsf1 (N1, N2, and CE2)",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the scanning mutagenesis revealed three independent repressive segments on Hsf1 (N1, N2, and CE2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference based on the mutagenesis data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "6300d999-ef17-40d2-b2fd-e50313f22b79",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C60",
+      "claim": "Under non-heat shock conditions, wild type Hsf1 binding ranged over nearly two orders of magnitude across target promoters",
+      "claim_type": "EXPLICIT",
+      "source": "Under non-heat shock conditions, wild type Hsf1 binding ranged over nearly two orders of magnitude across these targets, from 0.14% of input at the TMA10 promoter to 12.0% of input at the 4xHSE promoter (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-qPCR data shown in Figure 3\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "d0b29870-b213-4363-b226-05de6a2a146b",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C61",
+      "claim": "Upon acute heat shock, the inducibility of Hsf1 binding varied widely across target promoters",
+      "claim_type": "EXPLICIT",
+      "source": "Upon acute heat shock, the inducibility of Hsf1 binding also varied widely across these targets, with induction of greater than 100-fold for TMA10 and less than 1.5-fold for HSC82 (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-qPCR data shown in Figure 3\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "acf04e39-24e3-407d-b3d8-6cffb72f7cd3",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C62",
+      "claim": "Hsf1 is not constitutively bound to its target genes",
+      "claim_type": "EXPLICIT",
+      "source": "These data are inconsistent with the notion that Hsf1 is constitutively bound to its target genes (Gross et al., 1990; Jakobsen and Pelham, 1988; Sorger et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the variable binding observed in ChIP experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "361ef398-0365-48a2-b48d-27eaae733666",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C63",
+      "claim": "The Hsf1\u2206N mutant showed significantly increased association with the 4xHSE and SSA4 promoters under non-heat shock conditions",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the Hsf1\u2206N mutant showed significantly increased association with the 4xHSE and SSA4 promoters under non-heat shock conditions (Figure 3A, Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-qPCR data shown in Figure 3A and Figure 3\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "7966c4f5-3eed-4dfb-827f-597a9dfeeb20",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C64",
+      "claim": "Increased binding to the 4xHSE promoter was accompanied by increased transcriptional output of the YFP reporter in Hsf1\u2206N cells",
+      "claim_type": "EXPLICIT",
+      "source": "This increased binding to the 4xHSE promoter was accompanied by increased transcriptional output of the YFP reporter in Hsf1\u2206N cells (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "36e358d9-c339-47b1-b2fe-5e55e58406e0",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C65",
+      "claim": "The N-terminal region of Hsf1 inhibits DNA binding and thereby reduces transcriptional activity",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest a simple relationship between DNA binding and transcription for the Hsf1\u2206N mutant: the N-terminal region of Hsf1 inhibits DNA binding and thereby reduces transcriptional activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the correlation between increased DNA binding and increased transcription in the \u2206N mutant",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "8975532f-3a0f-4310-a97a-830a36f63c69",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C66",
+      "claim": "The Hsf1\u2206N1/\u2206N2 mutant mirrored Hsf1\u2206N in both its increased binding to the 4xHSE promoter and increased transcription of the YFP reporter under non-heat shock conditions relative to wild type",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a role for the N-terminal segment in regulating DNA binding, the Hsf1\u2206N1/\u2206N2 mutant mirrored Hsf1\u2206N in both its increased binding to the 4xHSE promoter and increased transcription of the YFP reporter under non-heat shock conditions relative to wild type (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "5655ee95-6e95-4b90-8b39-5f2c28fd2064",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C67",
+      "claim": "Hsf1\u2206N1/\u2206N2 showed no increase in association with the SSA4 promoter compared to wild type",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike the complete ablation of the N-terminal region, Hsf1\u2206N1/\u2206N2 showed no increase in association with the SSA4 promoter compared to wild type (Figure 3\u2014figure supplement 1A), suggesting that its enhanced association with endogenous targets may be limited.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-qPCR data shown in Figure 3\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "e44eb72d-85a9-4c4b-ac3a-b4eafede7e5b",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C68",
+      "claim": "The enhanced association of Hsf1\u2206N1/\u2206N2 with endogenous targets may be limited",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike the complete ablation of the N-terminal region, Hsf1\u2206N1/\u2206N2 showed no increase in association with the SSA4 promoter compared to wild type (Figure 3\u2014figure supplement 1A), suggesting that its enhanced association with endogenous targets may be limited.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the differential effects at different promoters",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "45133f6e-84b3-43af-be10-f21c3c413461",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C69",
+      "claim": "Neither Hsf1\u2206CE2 nor Hsf1\u2206N1/\u2206N2/\u2206CE2 showed significant differences compared to wild type at any of the six target promoters under either non-heat shock or heat shock conditions",
+      "claim_type": "EXPLICIT",
+      "source": "Neither Hsf1\u2206CE2 nor Hsf1\u2206N1/\u2206N2/\u2206CE2 showed significant differences compared to wild type at any of the six target promoters under either non-heat shock or heat shock conditions, indicating that CE2 has no effect on Hsf1 DNA binding (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-qPCR data shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "1de670f9-d12a-47b9-a538-9fa4283ca63a",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C70",
+      "claim": "CE2 has no effect on Hsf1 DNA binding",
+      "claim_type": "EXPLICIT",
+      "source": "Neither Hsf1\u2206CE2 nor Hsf1\u2206N1/\u2206N2/\u2206CE2 showed significant differences compared to wild type at any of the six target promoters under either non-heat shock or heat shock conditions, indicating that CE2 has no effect on Hsf1 DNA binding (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the lack of difference in ChIP signal",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "0cf161a9-0c6b-454e-993a-e6efaa030fd4",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C71",
+      "claim": "Under heat shock conditions, none of the five mutants showed significant differences in binding to the 4xHSE promoter compared to wild type",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, under heat shock conditions, none of the five mutants showed significant differences in binding to the 4xHSE promoter compared to wild type (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-qPCR data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "e2ebf018-bf9b-47d8-98bd-b1d2f8cdda54",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C72",
+      "claim": "During heat shock, the differences in YFP reporter levels reflect the different transactivation abilities of the series of mutants",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, during heat shock, the differences in YFP reporter levels reflect the different transactivation abilities of the series of mutants, spanning more than 16-fold between Hsf1\u2206C and Hsf1\u2206N1/\u2206N2/\u2206CE2 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the observation that DNA binding is similar but transcription differs",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "a85955f6-50e2-4ee3-88d0-e5bd9e5d98e7",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C73",
+      "claim": "The N-terminal region inhibits DNA binding at select promoters with a major contribution from the N1 and N2 segments",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the ChIP results suggest that the N-terminal region inhibits DNA binding at select promoters with a major contribution from the N1 and N2 segments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference based on the ChIP data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "f0376456-9008-42b0-a1d8-17ac15ba8acb",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C74",
+      "claim": "The effect of the N-terminal region on DNA binding may be direct, reflecting an intrinsically higher affinity of Hsf1\u2206N or Hsf1\u2206N1/\u2206N2 for DNA",
+      "claim_type": "EXPLICIT",
+      "source": "This effect may be direct, reflecting an intrinsically higher affinity of Hsf1\u2206N or Hsf1\u2206N1/\u2206N2 for DNA, or indirect, a consequence of enhanced ability to recruit chromatin remodeling enzymes to open local chromatin structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about possible mechanisms",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "5262624c-89c4-4aa1-be97-de1cba527b9a",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C75",
+      "claim": "The effect of the N-terminal region on DNA binding may be indirect, a consequence of enhanced ability to recruit chromatin remodeling enzymes to open local chromatin structure",
+      "claim_type": "EXPLICIT",
+      "source": "This effect may be direct, reflecting an intrinsically higher affinity of Hsf1\u2206N or Hsf1\u2206N1/\u2206N2 for DNA, or indirect, a consequence of enhanced ability to recruit chromatin remodeling enzymes to open local chromatin structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about possible mechanisms",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "5a4b1a1c-9cd5-44df-b76f-07df2574c997",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C76",
+      "claim": "Removal of the entire N-terminal region or the N1/N2 segments had no effect on Hsp70 binding relative to wild type",
+      "claim_type": "EXPLICIT",
+      "source": "Removal of the entire N-terminal region or the N1/N2 segments had no effect on Hsp70 binding relative to wild type (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by IP/MS data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "4640a236-347b-454e-a576-023059dabb99",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C77",
+      "claim": "Removal of the full C-terminal region significantly reduced the association of Hsf1 with Hsp70",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, removal of the full C-terminal region significantly reduced the association of Hsf1 with Hsp70 (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by IP/MS data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "7d66c3de-14f8-474a-a945-8262bf503bee",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C78",
+      "claim": "Specific removal of CE2 resulted in significantly diminished association with Hsp70",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, specific removal of CE2 \u2013 either alone or in combination with the N1/N2 deletions \u2013 also resulted in significantly diminished association with Hsp70, nearly matching removal of the entire C-terminal region (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by IP/MS data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "00cd33d6-4227-4afc-938a-0f3e68e3c284",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C79",
+      "claim": "The residual Hsp70 that co-precipitated with Hsf1\u2206CE2 was refractory to dissociation upon heat shock",
+      "claim_type": "EXPLICIT",
+      "source": "The residual Hsp70 that co-precipitated with Hsf1\u2206CE2 was refractory to dissociation upon heat shock, suggesting that this secondary interaction is unlikely to be regulatory (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "890c0a60-8ef0-4951-9bcd-14ab56e03e23",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C80",
+      "claim": "The secondary Hsp70 interaction with Hsf1\u2206CE2 is unlikely to be regulatory",
+      "claim_type": "EXPLICIT",
+      "source": "The residual Hsp70 that co-precipitated with Hsf1\u2206CE2 was refractory to dissociation upon heat shock, suggesting that this secondary interaction is unlikely to be regulatory (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the lack of heat shock-dependent dissociation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "967d0352-bb88-4c2a-abec-a028027c188b",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C81",
+      "claim": "The Hsf1R537E,K541D,R543E triple mutant (ce2-mut) displayed increased levels of the HSE-YFP reporter under non-heat shock conditions, phenocopying \u2206CE2",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the Hsf1R537E,K541D,R543E triple mutant (referred to as ce2-mut) displayed increased levels of the HSE-YFP reporter under non-heat shock conditions, phenocopying \u2206CE2 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "ccca14d6-7bad-4d59-8990-f5fcabc289d3",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C82",
+      "claim": "Introduction of two additional repeats of the wild type CE2 sequence (3xCE2) into Hsf1 reduced the basal level of the reporter",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, introduction of two additional repeats of the wild type CE2 sequence (3xCE2) into Hsf1 reduced the basal level of the reporter (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "90405192-6dc5-4c67-8d14-0964358639f6",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C83",
+      "claim": "Wild type Hsf1-6xHIS was able to outcompete wild type Hsf1-V5 for binding to Ssa2 at 5-fold molar excess",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas wild type Hsf1-6xHIS was able to outcompete wild type Hsf1-V5 for binding to Ssa2 (the most highly expressed yeast Hsp70) at 5-fold molar excess, Hsf1\u2206CE2-6xHIS was not (Figure 4D, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro binding assay data shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "dbbcf7d1-6ead-4c9d-98a2-62e818dcb3ac",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C84",
+      "claim": "Hsf1\u2206CE2-6xHIS was not able to outcompete wild type Hsf1-V5 for binding to Ssa2 at 5-fold molar excess",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas wild type Hsf1-6xHIS was able to outcompete wild type Hsf1-V5 for binding to Ssa2 (the most highly expressed yeast Hsp70) at 5-fold molar excess, Hsf1\u2206CE2-6xHIS was not (Figure 4D, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro binding assay data shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "0c73fe45-be9f-4f65-8143-7c86d3d6855d",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C85",
+      "claim": "CE2 is necessary for Hsp70 to bind to Hsf1 and repress its basal activity",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results demonstrate that CE2 is necessary for Hsp70 to bind to Hsf1 and repress its basal activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference based on multiple lines of experimental evidence",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "e9b66e13-2d1a-485f-b828-476481debab6",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C86",
+      "claim": "Ssa2 directly binds to CE2 with a dissociation constant (Kd) of 9 \u00b5M",
+      "claim_type": "EXPLICIT",
+      "source": "Using this assay, we determined that Ssa2 directly binds to CE2 with a dissociation constant (Kd) of 9 \u00b5M, while the Kd for the ce2-mut peptide is reduced more than 5-fold (extrapolated to be 52 \u00b5M).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by fluorescence polarization assay data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "a59fb9e6-cf0d-492a-aa8c-0d165af7f7e6",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C87",
+      "claim": "The Kd for the ce2-mut peptide binding to Ssa2 is reduced more than 5-fold (extrapolated to be 52 \u00b5M)",
+      "claim_type": "EXPLICIT",
+      "source": "Using this assay, we determined that Ssa2 directly binds to CE2 with a dissociation constant (Kd) of 9 \u00b5M, while the Kd for the ce2-mut peptide is reduced more than 5-fold (extrapolated to be 52 \u00b5M).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by fluorescence polarization assay data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "235e380a-045c-4709-906b-6933105145b0",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C88",
+      "claim": "Addition of a single CE2 sequence to mKate modestly but significantly increased the HSE-YFP level",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of a single CE2 sequence to mKate modestly but significantly increased the HSE-YFP level, while addition of two or three tandem CE2 segments dramatically induced the HSE-YFP reporter, to a greater extent than even the NHsf1-CHsf1 decoy (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by decoy assay data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "b2c34474-8fce-431e-97f8-5dba680509b0",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C89",
+      "claim": "Addition of two or three tandem CE2 segments dramatically induced the HSE-YFP reporter, to a greater extent than even the NHsf1-CHsf1 decoy",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of a single CE2 sequence to mKate modestly but significantly increased the HSE-YFP level, while addition of two or three tandem CE2 segments dramatically induced the HSE-YFP reporter, to a greater extent than even the NHsf1-CHsf1 decoy (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by decoy assay data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "aebebe50-b0dd-46d8-9577-a69ff8865e63",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C90",
+      "claim": "No induction was observed for the ce2-mut decoys, even in the presence of three tandem repeats",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, no induction was observed for the ce2-mut decoys, even in the presence of three tandem repeats (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by decoy assay data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "550b3883-54ab-4a79-b2c3-552f4316410e",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C91",
+      "claim": "Both in vitro and in cells, CE2 is sufficient to bind to Hsp70",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, both in vitro and in cells, CE2 is sufficient to bind to Hsp70.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference based on fluorescence polarization and decoy assay data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "0e1df467-0b1e-49b8-a7f9-522a96000b50",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C92",
+      "claim": "Simulations in which affinity was increased showed faster deactivation kinetics and a lower maximal output",
+      "claim_type": "EXPLICIT",
+      "source": "Intuitively, simulations in which we increased the affinity showed faster deactivation kinetics and a lower maximal output, while decreasing the affinity showed slower deactivation and increased maximal output (Figure 6A, Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by model simulations shown in Figure 6A and Figure 6\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "feff99c8-be50-46d5-8e60-e8dd3089732f",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C93",
+      "claim": "Simulations in which affinity was decreased showed slower deactivation and increased maximal output",
+      "claim_type": "EXPLICIT",
+      "source": "Intuitively, simulations in which we increased the affinity showed faster deactivation kinetics and a lower maximal output, while decreasing the affinity showed slower deactivation and increased maximal output (Figure 6A, Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by model simulations shown in Figure 6A and Figure 6\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "af256929-9d46-4bf7-8940-b73cc7c910b9",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C94",
+      "claim": "Hsf13xCE2 deactivated more rapidly than wild type",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the model, Hsf13xCE2 deactivated more rapidly than wild type, while Hsf1\u2206CE2 and Hsf1ce2-mut displayed delayed deactivation kinetics in a heat shock time course (Figure 6B, Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental heat shock time course data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "7af42d1c-123f-4e5e-b77e-7a292c982a28",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C95",
+      "claim": "Hsf1\u2206CE2 and Hsf1ce2-mut displayed delayed deactivation kinetics in a heat shock time course",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the model, Hsf13xCE2 deactivated more rapidly than wild type, while Hsf1\u2206CE2 and Hsf1ce2-mut displayed delayed deactivation kinetics in a heat shock time course (Figure 6B, Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental heat shock time course data shown in Figure 6B and Figure 6\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "c2ca7478-f873-4ed0-a114-1fa4a5cb861d",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C96",
+      "claim": "The affinity for Hsp70 tunes Hsf1 activation dynamics",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the affinity for Hsp70 tunes Hsf1 activation dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference based on the correlation between affinity changes and dynamics",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "84d77309-7ca7-49e3-bb7d-2b1e0afae3a2",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C97",
+      "claim": "The model was remarkably powerful in its ability to predict the dynamics of Hsf1 activity when challenged with targeted perturbations to the system architecture",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found the model to be remarkably powerful in its ability to predict the dynamics of Hsf1 activity when challenged with targeted perturbations to the system architecture despite its oversimplified structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment based on the agreement between model predictions and experimental results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "6da11807-c4a7-4f47-b5b2-660c9b6c59f1",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C98",
+      "claim": "Conceptualizing the heat shock response as a two-component feedback loop is an appropriate abstraction that captures the essence of the regulatory network",
+      "claim_type": "EXPLICIT",
+      "source": "These results argue that conceptualizing the heat shock response as a two-component feedback loop \u2013 in which Hsf1 positively regulates Hsp70 expression and Hsp70 negatively regulates Hsf1 activity \u2013 is an appropriate abstraction that captures the essence of the regulatory network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the success of the simplified model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "71ee7711-6861-4ec7-9ef6-40cfa6928fb6",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C99",
+      "claim": "Whether this simplifying abstraction can be applied to HSF1 regulation in metazoans remains to be determined",
+      "claim_type": "EXPLICIT",
+      "source": "Whether this simplifying abstraction can be applied to HSF1 regulation in metazoans remains to be determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the current work",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "1c4861ee-3dbb-4108-9a4b-fc2445946be3",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C100",
+      "claim": "The amino acid composition of CE2, consisting of hydrophobic and basic residues, is reminiscent of peptide sequences known to bind to Hsp70 in vitro",
+      "claim_type": "EXPLICIT",
+      "source": "Its amino acid composition, consisting of hydrophobic and basic residues, is reminiscent of peptide sequences known to bind to Hsp70 in vitro (Van Durme et al., 2009), though the affinity we measured (9 \u00b5M) is relatively weak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature and comparison to measured affinity",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "6abc8b03-9952-405d-969b-a17230bf2b5b",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C101",
+      "claim": "The weak affinity of CE2 for Hsp70 is likely necessary to allow for stress-dependent dissociation of the complex",
+      "claim_type": "EXPLICIT",
+      "source": "Given the stoichiometry of Hsp70:Hsf1 in cells (>500:1) (Ghaemmaghami et al., 2003) this weak affinity is likely necessary to allow for stress-dependent dissociation of the complex and has been a constant requirement of our mathematical model since its inception (Zheng et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the stoichiometry and model requirements",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "3f16c8f5-b446-4bb5-9069-0b2f1045b273",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C102",
+      "claim": "The stoichiometry of Hsp70:Hsf1 in cells is greater than 500:1",
+      "claim_type": "EXPLICIT",
+      "source": "Given the stoichiometry of Hsp70:Hsf1 in cells (>500:1) (Ghaemmaghami et al., 2003) this weak affinity is likely necessary to allow for stress-dependent dissociation of the complex and has been a constant requirement of our mathematical model since its inception (Zheng et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "1f8d633d-88f0-42c4-a4e8-2f862511000d",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C103",
+      "claim": "While CE2 is not conserved in mammalian genomes in primary sequence, it would seem facile to evolve a distinct but functionally analogous hydrophobic and basic segment to allow for weak Hsp70 binding",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while CE2 is not conserved in mammalian genomes in primary sequence, it would seem facile to evolve a distinct but functionally analogous hydrophobic and basic segment to allow for weak Hsp70 binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about evolutionary mechanisms",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "c9aec2a9-50ec-4619-b77b-d2da9c759e1b",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C104",
+      "claim": "The N-terminus of Hsf1 has a transactivation function and is important for efficient recruitment of Mediator during heat shock",
+      "claim_type": "EXPLICIT",
+      "source": "While removal of the N-terminal region of Hsf1 leads to increased activity, at least in certain genomic contexts (Sorger, 1990) \u2013 suggesting that this region is repressive \u2013 the N-terminus also has a transactivation function and is important for efficient recruitment of Mediator during heat shock (Kim and Gross, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "8232407e-afd4-4f82-9088-7875b656c1d1",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C105",
+      "claim": "Removal of the full N-terminal region results in increased association with select target gene promoters under non-heat shock conditions",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that removal of the full N-terminal region results in increased association with select target gene promoters under non-heat shock conditions (Figure 3A), indicating a context-dependent role for this yeast-specific region in regulating DNA binding and suggesting a mechanistic basis for the increased transcriptional activity of Hsf1\u2206N relative to wild type Hsf1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "936d2d39-c010-419b-82b3-a39705290c88",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C106",
+      "claim": "The N-terminal region has a context-dependent role in regulating DNA binding",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that removal of the full N-terminal region results in increased association with select target gene promoters under non-heat shock conditions (Figure 3A), indicating a context-dependent role for this yeast-specific region in regulating DNA binding and suggesting a mechanistic basis for the increased transcriptional activity of Hsf1\u2206N relative to wild type Hsf1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the selective increase in DNA binding at certain promoters",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "627ff97f-28aa-4fbe-8f68-320de64e6486",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C107",
+      "claim": "Hsf1 can exist in one of four states in the yeast nucleus",
+      "claim_type": "EXPLICIT",
+      "source": "Putting our observations together, we propose that Hsf1 can exist in one of four states in the yeast nucleus (Figure 7):",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed based on the experimental findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "6c026f60-9e1d-4a5e-a02f-0b03e8ee2753",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C108",
+      "claim": "The dual mechanisms of Hsf1 regulation \u2013 control of DNA binding and accessibility of the transactivation domain \u2013 combine to exert exquisite quantitative control over Hsf1 activity",
+      "claim_type": "EXPLICIT",
+      "source": "The dual mechanisms of Hsf1 regulation described here \u2013 control of DNA binding and accessibility of the transactivation domain \u2013 in addition to the fine-tuning capacity we previously demonstrated for phosphorylation (Zheng et al., 2016), combine to exert exquisite quantitative control over the Hsf1 activity and the expression of its target gene regulon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the findings of this work and previous work",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "29ebe3f0-0eed-43d3-b069-a774eb593bcf",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C109",
+      "claim": "These regulatory mechanisms enable cells to precisely tailor an optimal response to a variety of environmental and internal stresses",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that these regulatory mechanisms enable cells to precisely tailor an optimal response to a variety of environmental and internal stresses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed functional consequence of the regulatory mechanisms",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "aeade226-13e6-41ae-a92f-a0381bc25e6c",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C110",
+      "claim": "Wild type cells were able to increase Hsp70 levels during heat shock",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, wild type cells were able to increase Hsp70 levels during heat shock.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Western blot data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "cc8d3929-16c7-4959-8297-083dbd393abb",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C111",
+      "claim": "\u2206FBL cells were unable to induce Hsp70 during heat shock",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, \u2206FBL cells were unable to induce Hsp70 during heat shock, though the Hsp70 level was constitutively elevated (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "b85f5bda-1fcd-4fbe-8cb8-6159e37be4c3",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C112",
+      "claim": "The Hsp70 level was constitutively elevated in \u2206FBL cells",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, \u2206FBL cells were unable to induce Hsp70 during heat shock, though the Hsp70 level was constitutively elevated (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "c3e76958-31fe-4d59-b70f-db6d86d7c405",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C113",
+      "claim": "Hsp104 is a disaggregase that forms puncta marking protein aggregates when tagged with a fluorescent protein",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp104 is a disaggregase that forms puncta marking protein aggregates when tagged with a fluorescent protein (Sol\u00eds et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "0a7e60a0-5984-42a3-85dd-679d91aeedff",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C114",
+      "claim": "SSA3 and SSA4 are the major heat shock-inducible Hsp70 genes in yeast",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, removal of both SSA3 and SSA4 \u2013 the major heat shock-inducible Hsp70 genes in yeast \u2013 had only modest phenotypic consequences at elevated temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about yeast Hsp70 genes",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "880ac102-85ff-4bad-82a5-b9880aff3eb1",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "claim_id": "C115",
+      "claim": "Ssa2 is the most highly expressed yeast Hsp70",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas wild type Hsf1-6xHIS was able to outcompete wild type Hsf1-V5 for binding to Ssa2 (the most highly expressed yeast Hsp70) at 5-fold molar excess, Hsf1\u2206CE2-6xHIS was not (Figure 4D, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about yeast Hsp70 expression",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "99c2d7be-f3d2-458f-8d4c-993563074c07",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors demonstrate that Hsf1 and Hsp70 constitute a two-component feedback loop regulating the yeast heat shock response. By severing the feedback loop (\u2206FBL strain), they show that transcriptional induction of Hsp70 is required for Hsf1 deactivation. The mathematical model predicted this behavior and was refined to quantitatively match experimental data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 show experimental validation that \u2206FBL cells fail to deactivate Hsf1 as predicted by the model (C28). The model was updated (C34-C36) to better match experimental kinetics. Multiple lines of evidence including Western blots (C110-C112), growth assays (C37-C40), and proteostasis restoration assays (C41-C47) support the feedback loop mechanism. The convergence of modeling and experimental approaches provides strong support for this core result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "4eb5b3b9-17a9-44ab-ba4f-3e9cc937bd3e",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CE2 (conserved element 2) is identified as a discrete, necessary and sufficient Hsp70 binding site on Hsf1. CE2 binds Hsp70 with low affinity (Kd = 9 \u00b5M) in vitro, and removal of CE2 abolishes most Hsp70 binding to Hsf1 in cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple complementary approaches support this result: scanning mutagenesis identified CE2 (C50-C51, C54-C57), IP/MS showed CE2 is necessary for Hsp70 binding (C76-C78), fluorescence polarization measured direct binding with appropriate affinity (C86-C87), and decoy assays demonstrated sufficiency (C88-C91). The convergence of necessity and sufficiency experiments with quantitative binding measurements provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "b6d5edd3-71fe-4804-bbd4-9b2fe661c47c",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The affinity of CE2 for Hsp70 tunes the dynamics of Hsf1 activation and deactivation. Removal of CE2 increases basal activity and delays deactivation, while additional CE2 copies accelerate deactivation. Model simulations correctly predicted these effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The model predictions (C92-C93) were experimentally validated (C94-C95) showing that CE2 copy number modulates response dynamics. Point mutations in CE2 (C81) phenocopy deletion, and additional CE2 copies (C82) have opposite effects. The quantitative agreement between model and experiment across multiple perturbations strongly supports this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "e47efa5b-8444-4814-8154-7ce0c307fc7a",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The N-terminal region of Hsf1, particularly segments N1 and N2, negatively regulates DNA binding at select promoters. Deletion of these segments increases DNA binding and transcriptional activity under non-heat shock conditions in a context-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "ChIP-qPCR data (C60-C61, C63, C66-C67) demonstrate that N-terminal deletions increase DNA binding at specific promoters (4xHSE, SSA4) but not others, supporting context-dependence (C68, C106). The correlation between increased DNA binding and increased transcription (C64) provides mechanistic support. The additive effect of N1/N2 deletions (C52-C53) indicates independent function. However, the mechanism (direct vs. indirect) remains uncertain (C74-C75).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "b8aad4ef-5a1f-47bf-bd3b-ade5738adb85",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CE2 regulates Hsf1 transactivation but not DNA binding. Under heat shock conditions, all mutants show similar DNA binding despite different transcriptional outputs, indicating that CE2 affects transactivation capacity independently of DNA binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "ChIP data (C69, C71) show that CE2 deletion does not affect DNA binding at any tested promoter under either condition. The observation that mutants with similar DNA binding show >16-fold differences in transcription (C72) directly supports the conclusion that CE2 regulates transactivation independently of DNA binding. This is consistent with CE2 being an Hsp70 binding site that occludes the C-terminal activation domain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "c4f084f0-8fa5-4a39-b589-abfb2f925dae",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "\u2206FBL cells restore proteostasis as efficiently as wild-type cells despite sustained Hsf1 activation, indicating that prolonged Hsf1 activity results from a specific deactivation defect rather than failure to restore proteostasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Hsp104-mKate foci dissolution kinetics are identical in WT and \u2206FBL cells (C41-C42), demonstrating equivalent proteostasis restoration. This observation, combined with sustained Hsf1 activity in \u2206FBL cells, supports the inference that the feedback loop is specifically required for deactivation (C44, C47). The logic is sound, though Hsp104 may not detect all classes of protein aggregates, as the authors acknowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "ecf285d5-d68b-4dc9-beaa-200e6fdc3729",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The \u2206FBL strain shows only modest growth defects despite inability to induce Hsp70 during heat shock, while deletion of SSA1/2 causes severe growth defects. Basal Hsp70 levels in \u2206FBL cells are constitutively elevated and sufficient for near-normal growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Growth assays (C37-C39) clearly show differential phenotypes between \u2206FBL and ssa1/2\u2206 strains. Western blots (C110-C112) confirm that \u2206FBL cells have elevated basal Hsp70 but cannot induce it further. The surprising finding that SSA3/4 deletion has modest effects (C40) is well-documented. These observations support the conclusion that basal Hsp70 is sufficient for most cellular functions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "ed2139cc-77a9-47f6-baf2-2382ea615670",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Wild-type Hsf1 but not Hsf1\u2206CE2 can compete for Hsp70 binding in vitro, demonstrating that CE2 is required for direct Hsf1-Hsp70 interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The competition assay (C83-C84) provides direct biochemical evidence that CE2 is necessary for Hsp70 binding. This complements the cellular IP/MS data and strengthens the conclusion that CE2 is a direct binding site. The use of purified recombinant proteins eliminates concerns about indirect effects through other cellular factors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "b9147634-345d-470f-a907-d9bc538d29ea",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CE2 is sufficient to bind Hsp70 in cells. Tandem CE2 repeats fused to mKate activate Hsf1 in trans by titrating Hsp70, while ce2-mut repeats do not, demonstrating sequence-specific sufficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The decoy assay (C88-C90) elegantly demonstrates sufficiency by showing dose-dependent Hsf1 activation with increasing CE2 copy number, while mutant CE2 has no effect. This cellular assay complements the in vitro fluorescence polarization data and provides strong evidence for sufficiency. The use of a well-folded scaffold (mKate) controls for nonspecific effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "49089dec-9e2e-4bfb-8676-12794692c51d",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Residual Hsp70 binding to Hsf1\u2206CE2 is refractory to heat shock-dependent dissociation, suggesting this secondary interaction is not regulatory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Western blot data (C79) directly shows that residual Hsp70 binding in \u2206CE2 mutants does not dissociate upon heat shock, unlike wild-type. The inference that this interaction is non-regulatory (C80) is reasonable given that regulatory interactions should be stress-responsive. However, the functional significance of this secondary interaction remains unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "868a392d-4572-45f2-be70-31adb0d07538",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The weak affinity of CE2 for Hsp70 (9 \u00b5M) is likely necessary for stress-dependent dissociation given the high Hsp70:Hsf1 stoichiometry (>500:1) in cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The measured affinity (C100) and cellular stoichiometry (C102) are well-documented. The inference that weak affinity is necessary for dissociation (C101) is logical and consistent with model requirements. However, this remains an inference rather than direct experimental demonstration. The argument is strengthened by the model's requirement for weak binding since its inception.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "0ef458e5-f1d5-4961-b8ef-b2d9e1847fcb",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors propose a four-state model for Hsf1 regulation integrating DNA binding control and transactivation domain accessibility. These dual mechanisms enable precise quantitative control over Hsf1 activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The four-state model (C107) integrates the experimental findings on N-terminal regulation of DNA binding and CE2-mediated regulation of transactivation. The model is consistent with all experimental observations. The conclusion about quantitative control (C108) is supported by the data, though the proposed functional consequence (C109) is speculative. The model provides a useful framework for understanding Hsf1 regulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    },
+    {
+      "id": "30d6fe75-b6a2-46cd-91b6-7caa1af5efb6",
+      "content_id": "bd1cd7f7-0a6d-4fd8-aaea-ed7ed573c07d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims about the heat shock response, Hsf1 function, and prior work establish context for the current study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are well-supported by citations to established literature and represent accepted knowledge in the field. They provide necessary context but are not novel findings of this study. Claims about prior work by the authors (C2, C25-C26) are appropriately cited. Speculative claims (C99, C103) are clearly identified as such.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:14.822895Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dae4b60d-5abe-4e76-8c2e-46e057dbf688",
+      "result_id": "99c2d7be-f3d2-458f-8d4c-993563074c07"
+    },
+    {
+      "claim_id": "60edd327-2650-4e4a-bb15-4e0f153da463",
+      "result_id": "99c2d7be-f3d2-458f-8d4c-993563074c07"
+    },
+    {
+      "claim_id": "97888dc2-a58e-434b-a0e9-a9f28d761a96",
+      "result_id": "99c2d7be-f3d2-458f-8d4c-993563074c07"
+    },
+    {
+      "claim_id": "3156c4ef-7404-45b8-9594-4760d0ba3cab",
+      "result_id": "99c2d7be-f3d2-458f-8d4c-993563074c07"
+    },
+    {
+      "claim_id": "a70e3de3-22de-4a76-baad-da59fd6a18b6",
+      "result_id": "99c2d7be-f3d2-458f-8d4c-993563074c07"
+    },
+    {
+      "claim_id": "fa0bff38-25d8-419d-850a-3e761a6938e9",
+      "result_id": "99c2d7be-f3d2-458f-8d4c-993563074c07"
+    },
+    {
+      "claim_id": "d1864924-305d-4e48-a49b-1794cd54ccaf",
+      "result_id": "99c2d7be-f3d2-458f-8d4c-993563074c07"
+    },
+    {
+      "claim_id": "01b0948f-2bb0-4c17-9234-d278487fc506",
+      "result_id": "99c2d7be-f3d2-458f-8d4c-993563074c07"
+    },
+    {
+      "claim_id": "cf426984-fee8-4fb6-adee-d6412132445a",
+      "result_id": "99c2d7be-f3d2-458f-8d4c-993563074c07"
+    },
+    {
+      "claim_id": "4e1999ed-5a8a-421f-8a55-afb1af119ad6",
+      "result_id": "99c2d7be-f3d2-458f-8d4c-993563074c07"
+    },
+    {
+      "claim_id": "79c9dc91-0c43-4843-b8bf-6d519cb0a971",
+      "result_id": "99c2d7be-f3d2-458f-8d4c-993563074c07"
+    },
+    {
+      "claim_id": "b550f22c-20f6-47db-987f-776c0380553c",
+      "result_id": "99c2d7be-f3d2-458f-8d4c-993563074c07"
+    },
+    {
+      "claim_id": "f22dc143-55c0-4c82-9fce-d695eb7a3648",
+      "result_id": "99c2d7be-f3d2-458f-8d4c-993563074c07"
+    },
+    {
+      "claim_id": "f6368c69-905c-4c7f-922a-5325d02a9b59",
+      "result_id": "99c2d7be-f3d2-458f-8d4c-993563074c07"
+    },
+    {
+      "claim_id": "e22b87d1-f5d8-4886-b0dc-70ee88018c29",
+      "result_id": "99c2d7be-f3d2-458f-8d4c-993563074c07"
+    },
+    {
+      "claim_id": "84d77309-7ca7-49e3-bb7d-2b1e0afae3a2",
+      "result_id": "99c2d7be-f3d2-458f-8d4c-993563074c07"
+    },
+    {
+      "claim_id": "6da11807-c4a7-4f47-b5b2-660c9b6c59f1",
+      "result_id": "99c2d7be-f3d2-458f-8d4c-993563074c07"
+    },
+    {
+      "claim_id": "1225ef66-b036-4196-b5b2-d7c35217516d",
+      "result_id": "4eb5b3b9-17a9-44ab-ba4f-3e9cc937bd3e"
+    },
+    {
+      "claim_id": "06544e33-3396-4f48-b37f-68c4f4a6e4fa",
+      "result_id": "4eb5b3b9-17a9-44ab-ba4f-3e9cc937bd3e"
+    },
+    {
+      "claim_id": "563127b9-887d-462f-99bd-eaa862b0135e",
+      "result_id": "4eb5b3b9-17a9-44ab-ba4f-3e9cc937bd3e"
+    },
+    {
+      "claim_id": "cc5b9fdb-4521-4d67-bce9-6292ee372717",
+      "result_id": "4eb5b3b9-17a9-44ab-ba4f-3e9cc937bd3e"
+    },
+    {
+      "claim_id": "69b32bcc-d28c-418a-b65e-d5bb97ee948f",
+      "result_id": "4eb5b3b9-17a9-44ab-ba4f-3e9cc937bd3e"
+    },
+    {
+      "claim_id": "a8bbbea2-9051-41a4-b277-0a4614fe4a2f",
+      "result_id": "4eb5b3b9-17a9-44ab-ba4f-3e9cc937bd3e"
+    },
+    {
+      "claim_id": "64c8627f-c213-4ae7-b6b7-b03d5b0ef808",
+      "result_id": "4eb5b3b9-17a9-44ab-ba4f-3e9cc937bd3e"
+    },
+    {
+      "claim_id": "98b5e2e8-24b5-4af9-8b8b-76d30e75f5f8",
+      "result_id": "4eb5b3b9-17a9-44ab-ba4f-3e9cc937bd3e"
+    },
+    {
+      "claim_id": "e7821bb9-d806-4a9e-a1bd-2b92adf3d9dc",
+      "result_id": "4eb5b3b9-17a9-44ab-ba4f-3e9cc937bd3e"
+    },
+    {
+      "claim_id": "5a4b1a1c-9cd5-44df-b76f-07df2574c997",
+      "result_id": "4eb5b3b9-17a9-44ab-ba4f-3e9cc937bd3e"
+    },
+    {
+      "claim_id": "4640a236-347b-454e-a576-023059dabb99",
+      "result_id": "4eb5b3b9-17a9-44ab-ba4f-3e9cc937bd3e"
+    },
+    {
+      "claim_id": "7d66c3de-14f8-474a-a945-8262bf503bee",
+      "result_id": "4eb5b3b9-17a9-44ab-ba4f-3e9cc937bd3e"
+    },
+    {
+      "claim_id": "0c73fe45-be9f-4f65-8143-7c86d3d6855d",
+      "result_id": "4eb5b3b9-17a9-44ab-ba4f-3e9cc937bd3e"
+    },
+    {
+      "claim_id": "e9b66e13-2d1a-485f-b828-476481debab6",
+      "result_id": "4eb5b3b9-17a9-44ab-ba4f-3e9cc937bd3e"
+    },
+    {
+      "claim_id": "a59fb9e6-cf0d-492a-aa8c-0d165af7f7e6",
+      "result_id": "4eb5b3b9-17a9-44ab-ba4f-3e9cc937bd3e"
+    },
+    {
+      "claim_id": "550b3883-54ab-4a79-b2c3-552f4316410e",
+      "result_id": "4eb5b3b9-17a9-44ab-ba4f-3e9cc937bd3e"
+    },
+    {
+      "claim_id": "2d771296-cabd-46f4-8447-7b11d8543c2e",
+      "result_id": "b6d5edd3-71fe-4804-bbd4-9b2fe661c47c"
+    },
+    {
+      "claim_id": "05bd39aa-b569-44bd-b690-aeb442c03e23",
+      "result_id": "b6d5edd3-71fe-4804-bbd4-9b2fe661c47c"
+    },
+    {
+      "claim_id": "76b1a007-5f65-4684-8f5a-a0802528f5fd",
+      "result_id": "b6d5edd3-71fe-4804-bbd4-9b2fe661c47c"
+    },
+    {
+      "claim_id": "967d0352-bb88-4c2a-abec-a028027c188b",
+      "result_id": "b6d5edd3-71fe-4804-bbd4-9b2fe661c47c"
+    },
+    {
+      "claim_id": "ccca14d6-7bad-4d59-8990-f5fcabc289d3",
+      "result_id": "b6d5edd3-71fe-4804-bbd4-9b2fe661c47c"
+    },
+    {
+      "claim_id": "0e1df467-0b1e-49b8-a7f9-522a96000b50",
+      "result_id": "b6d5edd3-71fe-4804-bbd4-9b2fe661c47c"
+    },
+    {
+      "claim_id": "feff99c8-be50-46d5-8e60-e8dd3089732f",
+      "result_id": "b6d5edd3-71fe-4804-bbd4-9b2fe661c47c"
+    },
+    {
+      "claim_id": "af256929-9d46-4bf7-8940-b73cc7c910b9",
+      "result_id": "b6d5edd3-71fe-4804-bbd4-9b2fe661c47c"
+    },
+    {
+      "claim_id": "7af42d1c-123f-4e5e-b77e-7a292c982a28",
+      "result_id": "b6d5edd3-71fe-4804-bbd4-9b2fe661c47c"
+    },
+    {
+      "claim_id": "c2ca7478-f873-4ed0-a114-1fa4a5cb861d",
+      "result_id": "b6d5edd3-71fe-4804-bbd4-9b2fe661c47c"
+    },
+    {
+      "claim_id": "eec670e9-4cde-4118-a08c-46ad9c8c78bb",
+      "result_id": "e47efa5b-8444-4814-8154-7ce0c307fc7a"
+    },
+    {
+      "claim_id": "5e3349e4-1b2a-4163-898a-0b27f7647cd4",
+      "result_id": "e47efa5b-8444-4814-8154-7ce0c307fc7a"
+    },
+    {
+      "claim_id": "bd80f363-4c06-4b86-9d66-d04fda7536ac",
+      "result_id": "e47efa5b-8444-4814-8154-7ce0c307fc7a"
+    },
+    {
+      "claim_id": "563127b9-887d-462f-99bd-eaa862b0135e",
+      "result_id": "e47efa5b-8444-4814-8154-7ce0c307fc7a"
+    },
+    {
+      "claim_id": "1b9cd26f-fd26-43e0-ab3e-93dade06a7b8",
+      "result_id": "e47efa5b-8444-4814-8154-7ce0c307fc7a"
+    },
+    {
+      "claim_id": "223c08e0-6d60-4bd3-82fe-512b8e26296b",
+      "result_id": "e47efa5b-8444-4814-8154-7ce0c307fc7a"
+    },
+    {
+      "claim_id": "4bbc4f85-dc35-403f-9c29-64ba9a9a2dbe",
+      "result_id": "e47efa5b-8444-4814-8154-7ce0c307fc7a"
+    },
+    {
+      "claim_id": "e7821bb9-d806-4a9e-a1bd-2b92adf3d9dc",
+      "result_id": "e47efa5b-8444-4814-8154-7ce0c307fc7a"
+    },
+    {
+      "claim_id": "6300d999-ef17-40d2-b2fd-e50313f22b79",
+      "result_id": "e47efa5b-8444-4814-8154-7ce0c307fc7a"
+    },
+    {
+      "claim_id": "d0b29870-b213-4363-b226-05de6a2a146b",
+      "result_id": "e47efa5b-8444-4814-8154-7ce0c307fc7a"
+    },
+    {
+      "claim_id": "acf04e39-24e3-407d-b3d8-6cffb72f7cd3",
+      "result_id": "e47efa5b-8444-4814-8154-7ce0c307fc7a"
+    },
+    {
+      "claim_id": "361ef398-0365-48a2-b48d-27eaae733666",
+      "result_id": "e47efa5b-8444-4814-8154-7ce0c307fc7a"
+    },
+    {
+      "claim_id": "7966c4f5-3eed-4dfb-827f-597a9dfeeb20",
+      "result_id": "e47efa5b-8444-4814-8154-7ce0c307fc7a"
+    },
+    {
+      "claim_id": "36e358d9-c339-47b1-b2fe-5e55e58406e0",
+      "result_id": "e47efa5b-8444-4814-8154-7ce0c307fc7a"
+    },
+    {
+      "claim_id": "8975532f-3a0f-4310-a97a-830a36f63c69",
+      "result_id": "e47efa5b-8444-4814-8154-7ce0c307fc7a"
+    },
+    {
+      "claim_id": "5655ee95-6e95-4b90-8b39-5f2c28fd2064",
+      "result_id": "e47efa5b-8444-4814-8154-7ce0c307fc7a"
+    },
+    {
+      "claim_id": "e44eb72d-85a9-4c4b-ac3a-b4eafede7e5b",
+      "result_id": "e47efa5b-8444-4814-8154-7ce0c307fc7a"
+    },
+    {
+      "claim_id": "a85955f6-50e2-4ee3-88d0-e5bd9e5d98e7",
+      "result_id": "e47efa5b-8444-4814-8154-7ce0c307fc7a"
+    },
+    {
+      "claim_id": "8232407e-afd4-4f82-9088-7875b656c1d1",
+      "result_id": "e47efa5b-8444-4814-8154-7ce0c307fc7a"
+    },
+    {
+      "claim_id": "936d2d39-c010-419b-82b3-a39705290c88",
+      "result_id": "e47efa5b-8444-4814-8154-7ce0c307fc7a"
+    },
+    {
+      "claim_id": "45133f6e-84b3-43af-be10-f21c3c413461",
+      "result_id": "b8aad4ef-5a1f-47bf-bd3b-ade5738adb85"
+    },
+    {
+      "claim_id": "1de670f9-d12a-47b9-a538-9fa4283ca63a",
+      "result_id": "b8aad4ef-5a1f-47bf-bd3b-ade5738adb85"
+    },
+    {
+      "claim_id": "0cf161a9-0c6b-454e-993a-e6efaa030fd4",
+      "result_id": "b8aad4ef-5a1f-47bf-bd3b-ade5738adb85"
+    },
+    {
+      "claim_id": "e2ebf018-bf9b-47d8-98bd-b1d2f8cdda54",
+      "result_id": "b8aad4ef-5a1f-47bf-bd3b-ade5738adb85"
+    },
+    {
+      "claim_id": "c83f8e82-4e13-4eec-917e-50793b7aa126",
+      "result_id": "c4f084f0-8fa5-4a39-b589-abfb2f925dae"
+    },
+    {
+      "claim_id": "c03de36c-e675-4023-88b8-ea43619f0b09",
+      "result_id": "c4f084f0-8fa5-4a39-b589-abfb2f925dae"
+    },
+    {
+      "claim_id": "8fc678dd-4c47-4152-970d-d83f245cca31",
+      "result_id": "c4f084f0-8fa5-4a39-b589-abfb2f925dae"
+    },
+    {
+      "claim_id": "79e3494d-9195-4316-bf5f-24cf57303298",
+      "result_id": "c4f084f0-8fa5-4a39-b589-abfb2f925dae"
+    },
+    {
+      "claim_id": "57255948-2b63-4c62-b790-0e25664d82b2",
+      "result_id": "c4f084f0-8fa5-4a39-b589-abfb2f925dae"
+    },
+    {
+      "claim_id": "e90e0d6e-48bb-4ae8-9394-3d263b1ab055",
+      "result_id": "c4f084f0-8fa5-4a39-b589-abfb2f925dae"
+    },
+    {
+      "claim_id": "cd1eb7eb-a2dd-4680-94c8-69055e4a1603",
+      "result_id": "c4f084f0-8fa5-4a39-b589-abfb2f925dae"
+    },
+    {
+      "claim_id": "813d0403-b447-4a8b-9d80-a7166f03311d",
+      "result_id": "ecf285d5-d68b-4dc9-beaa-200e6fdc3729"
+    },
+    {
+      "claim_id": "8230a092-5722-4912-92e3-ca4f7a24ee33",
+      "result_id": "ecf285d5-d68b-4dc9-beaa-200e6fdc3729"
+    },
+    {
+      "claim_id": "63784864-2910-41e7-bdca-572b6c049b65",
+      "result_id": "ecf285d5-d68b-4dc9-beaa-200e6fdc3729"
+    },
+    {
+      "claim_id": "21f944f5-0f14-4eee-8341-2964fbc15b1b",
+      "result_id": "ecf285d5-d68b-4dc9-beaa-200e6fdc3729"
+    },
+    {
+      "claim_id": "aeade226-13e6-41ae-a92f-a0381bc25e6c",
+      "result_id": "ecf285d5-d68b-4dc9-beaa-200e6fdc3729"
+    },
+    {
+      "claim_id": "cc8d3929-16c7-4959-8297-083dbd393abb",
+      "result_id": "ecf285d5-d68b-4dc9-beaa-200e6fdc3729"
+    },
+    {
+      "claim_id": "b85f5bda-1fcd-4fbe-8cb8-6159e37be4c3",
+      "result_id": "ecf285d5-d68b-4dc9-beaa-200e6fdc3729"
+    },
+    {
+      "claim_id": "90405192-6dc5-4c67-8d14-0964358639f6",
+      "result_id": "ed2139cc-77a9-47f6-baf2-2382ea615670"
+    },
+    {
+      "claim_id": "dbbcf7d1-6ead-4c9d-98a2-62e818dcb3ac",
+      "result_id": "ed2139cc-77a9-47f6-baf2-2382ea615670"
+    },
+    {
+      "claim_id": "235e380a-045c-4709-906b-6933105145b0",
+      "result_id": "b9147634-345d-470f-a907-d9bc538d29ea"
+    },
+    {
+      "claim_id": "b2c34474-8fce-431e-97f8-5dba680509b0",
+      "result_id": "b9147634-345d-470f-a907-d9bc538d29ea"
+    },
+    {
+      "claim_id": "aebebe50-b0dd-46d8-9577-a69ff8865e63",
+      "result_id": "b9147634-345d-470f-a907-d9bc538d29ea"
+    },
+    {
+      "claim_id": "00cd33d6-4227-4afc-938a-0f3e68e3c284",
+      "result_id": "49089dec-9e2e-4bfb-8676-12794692c51d"
+    },
+    {
+      "claim_id": "890c0a60-8ef0-4951-9bcd-14ab56e03e23",
+      "result_id": "49089dec-9e2e-4bfb-8676-12794692c51d"
+    },
+    {
+      "claim_id": "1c4861ee-3dbb-4108-9a4b-fc2445946be3",
+      "result_id": "868a392d-4572-45f2-be70-31adb0d07538"
+    },
+    {
+      "claim_id": "6abc8b03-9952-405d-969b-a17230bf2b5b",
+      "result_id": "868a392d-4572-45f2-be70-31adb0d07538"
+    },
+    {
+      "claim_id": "3f16c8f5-b446-4bb5-9069-0b2f1045b273",
+      "result_id": "868a392d-4572-45f2-be70-31adb0d07538"
+    },
+    {
+      "claim_id": "627ff97f-28aa-4fbe-8f68-320de64e6486",
+      "result_id": "0ef458e5-f1d5-4961-b8ef-b2d9e1847fcb"
+    },
+    {
+      "claim_id": "6c026f60-9e1d-4a5e-a02f-0b03e8ee2753",
+      "result_id": "0ef458e5-f1d5-4961-b8ef-b2d9e1847fcb"
+    },
+    {
+      "claim_id": "29ebe3f0-0eed-43d3-b069-a774eb593bcf",
+      "result_id": "0ef458e5-f1d5-4961-b8ef-b2d9e1847fcb"
+    },
+    {
+      "claim_id": "51d07b97-9b7c-4076-bf7e-d09dd1bc1bd5",
+      "result_id": "30d6fe75-b6a2-46cd-91b6-7caa1af5efb6"
+    },
+    {
+      "claim_id": "a890c962-fab5-4b4a-80ad-c175dc40972f",
+      "result_id": "30d6fe75-b6a2-46cd-91b6-7caa1af5efb6"
+    },
+    {
+      "claim_id": "794bdeb9-1e55-492a-ae72-53e01d2d16a2",
+      "result_id": "30d6fe75-b6a2-46cd-91b6-7caa1af5efb6"
+    },
+    {
+      "claim_id": "a869f2e7-e070-48f0-8535-b713075f3e07",
+      "result_id": "30d6fe75-b6a2-46cd-91b6-7caa1af5efb6"
+    },
+    {
+      "claim_id": "f7d5457a-b56d-4fb7-b4ad-e718d2d9d096",
+      "result_id": "30d6fe75-b6a2-46cd-91b6-7caa1af5efb6"
+    },
+    {
+      "claim_id": "912b4ef5-b47e-4dc6-a4d6-a3e32003d540",
+      "result_id": "30d6fe75-b6a2-46cd-91b6-7caa1af5efb6"
+    },
+    {
+      "claim_id": "219ba307-21b3-46f2-a8b9-be3b58838104",
+      "result_id": "30d6fe75-b6a2-46cd-91b6-7caa1af5efb6"
+    },
+    {
+      "claim_id": "aab413ac-6343-4d06-84e6-e01061fc6920",
+      "result_id": "30d6fe75-b6a2-46cd-91b6-7caa1af5efb6"
+    },
+    {
+      "claim_id": "0c38b506-ff91-4bff-bf3d-1809569e5a9f",
+      "result_id": "30d6fe75-b6a2-46cd-91b6-7caa1af5efb6"
+    },
+    {
+      "claim_id": "c5245e0a-d07f-4a6e-a743-d364b46d0474",
+      "result_id": "30d6fe75-b6a2-46cd-91b6-7caa1af5efb6"
+    },
+    {
+      "claim_id": "0b814371-32c5-4bce-94b4-8d1f0cfefae6",
+      "result_id": "30d6fe75-b6a2-46cd-91b6-7caa1af5efb6"
+    },
+    {
+      "claim_id": "7ac3b08a-788c-43ce-beb9-4ffe8e25465d",
+      "result_id": "30d6fe75-b6a2-46cd-91b6-7caa1af5efb6"
+    },
+    {
+      "claim_id": "e76a1573-db54-4ba0-9053-0199d7a18d48",
+      "result_id": "30d6fe75-b6a2-46cd-91b6-7caa1af5efb6"
+    },
+    {
+      "claim_id": "01bab787-0fcb-4c2a-a2f4-9495a42c920c",
+      "result_id": "30d6fe75-b6a2-46cd-91b6-7caa1af5efb6"
+    },
+    {
+      "claim_id": "147fe47b-6039-4e0f-aafa-1de05fbfd2c2",
+      "result_id": "30d6fe75-b6a2-46cd-91b6-7caa1af5efb6"
+    },
+    {
+      "claim_id": "57255948-2b63-4c62-b790-0e25664d82b2",
+      "result_id": "30d6fe75-b6a2-46cd-91b6-7caa1af5efb6"
+    },
+    {
+      "claim_id": "71ee7711-6861-4ec7-9ef6-40cfa6928fb6",
+      "result_id": "30d6fe75-b6a2-46cd-91b6-7caa1af5efb6"
+    },
+    {
+      "claim_id": "1f8d633d-88f0-42c4-a4e8-2f862511000d",
+      "result_id": "30d6fe75-b6a2-46cd-91b6-7caa1af5efb6"
+    },
+    {
+      "claim_id": "c9aec2a9-50ec-4619-b77b-d2da9c759e1b",
+      "result_id": "30d6fe75-b6a2-46cd-91b6-7caa1af5efb6"
+    },
+    {
+      "claim_id": "c3e76958-31fe-4d59-b70f-db6d86d7c405",
+      "result_id": "30d6fe75-b6a2-46cd-91b6-7caa1af5efb6"
+    },
+    {
+      "claim_id": "0a7e60a0-5984-42a3-85dd-679d91aeedff",
+      "result_id": "30d6fe75-b6a2-46cd-91b6-7caa1af5efb6"
+    },
+    {
+      "claim_id": "880ac102-85ff-4bad-82a5-b9880aff3eb1",
+      "result_id": "30d6fe75-b6a2-46cd-91b6-7caa1af5efb6"
+    }
+  ],
+  "comparisons": []
+}

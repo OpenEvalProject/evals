@@ -1,0 +1,570 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C23",
+      "C26",
+      "C27"
+    ],
+    "result": "The authors estimate that approximately 0.12% of mouse cortical capillaries are obstructed each day (lasting >20 min) based on in vivo imaging showing 2 in 20,334 capillaries obstructed over 2 hours and validation with DiI-labeled microspheres showing 3.69 \u00b1 0.97 obstructed capillaries per mm\u00b3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C23, C26, and C27 provide converging evidence from two independent methods (in vivo imaging and DiI microsphere labeling) that yield nearly identical obstruction rates (0.118% vs 0.14% per day). The consistency between methods and the large sample size (>20,000 capillaries) strongly support this quantitative estimate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Capillary obstructions occur preferentially in superficial cortical layers and at lower branch orders (peaking at 3rd arteriole branch order), with no significant difference in distribution between spontaneous and microsphere-induced obstructions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C29-C32 are supported by statistical analyses showing significant differences in branch order distribution (Figure 1C,D with p<0.0001) and depth distribution (Figure 1B). The finding that spontaneous and microsphere obstructions show similar distributions (p=0.65) validates the microsphere model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C42"
+    ],
+    "result": "75-80% of obstructed capillaries recanalize within 24 hours, with no significant difference in recanalization rates between spontaneous and microsphere-induced obstructions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C42 are supported by longitudinal imaging data (Figure 2D) showing recanalization time courses for both obstruction types with statistical analysis confirming no significant difference (p=0.99). The consistency between spontaneous and induced obstructions strengthens the validity of the microsphere model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C53",
+      "C54"
+    ],
+    "result": "30% of all obstructed capillaries are pruned by 21 days (49/162 capillaries), with no significant difference in pruning rates between spontaneous and microsphere-induced obstructions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C53, and C54 are directly supported by longitudinal imaging data summarized in Figure 2H showing 49/162 capillaries (30.2%) were pruned by 21 days. Statistical comparison shows no significant difference between obstruction types (p=0.48), validating the microsphere model for studying pruning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C48",
+      "C50",
+      "C51"
+    ],
+    "result": "Some capillaries that initially recanalized were subsequently pruned at later timepoints, potentially explained by a second spontaneous obstruction occurring between imaging sessions, as previously obstructed capillaries show higher re-obstruction probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C48, C50, and C51 are supported by direct observation (Figure 2F,G) and experimental evidence from double microsphere injections (Figure 2\u2014figure supplement 5) showing significantly higher obstruction probability in previously obstructed capillaries. The inference about missed second obstructions (C51) is reasonable given the imaging intervals and higher re-obstruction risk.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Pruning of obstructed capillaries involves stepwise regression of endothelial cells, with increased endothelial cell nuclei density at pruned branch points suggesting endothelial cells regress and integrate into adjacent capillaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C35-C38 are supported by longitudinal imaging showing stepwise pruning progression (Figure 2A) and quantitative analysis showing significantly increased endothelial cell nuclei at pruned branch points (p<0.0001, Figure 2B). The inference about endothelial cell integration (C38) is reasonable based on the increased nuclei density and comparison to developmental processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C40",
+      "C41"
+    ],
+    "result": "Capillary pruning is not compensated for by sprouting angiogenesis, with zero sprouts observed in 162 capillaries followed over 21 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C40, and C41 are directly supported by the observation of 0 sprouts in 162 capillaries over 21 days from longitudinal imaging. This is a clear negative result with adequate sample size and observation period. The conclusion is appropriately stated as definitive for this experimental context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C60",
+      "C61",
+      "C62",
+      "C81"
+    ],
+    "result": "A mathematical model based on measured obstruction rates (0.12% per day) and pruning probability (30%) predicts 12% capillary loss over one year and 88% remaining after 13.5 months, closely matching experimental measurements of 90 \u00b1 8% remaining in aged mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C60, C61, C62, and C81 are supported by the close agreement between predicted (88% remaining) and measured (90 \u00b1 8% remaining) capillary density in aged mice (p=0.52, Figure 4D). The model is based on empirically measured parameters and the prediction falls within the experimental error range, providing strong support for the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C71",
+      "C72",
+      "C73",
+      "C77"
+    ],
+    "result": "VEGF-R2 signaling plays a critical role in dictating capillary recanalization and pruning, as genetic knockdown (tamoxifen in Tek-CreERT2 X Kdr+/fl mice) or pharmacological inhibition (SU5416) significantly enhanced recanalization rates and reduced pruning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C71-C73, and C77 are supported by converging evidence from two independent approaches (genetic and pharmacological) showing significantly improved recanalization and reduced pruning (Figures 5F-I). The effects are specific as they are not explained by cardiovascular changes, initial microsphere density, or RBC velocity alterations (C74-C76).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Capillary pruning induces a transient increase in blood flow velocity and flux in adjacent capillaries, particularly upstream of the pruned segment, representing a long-lasting perturbation over several days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by hemodynamic measurements showing significant increases in RBC velocity and flux in upstream capillaries adjacent to pruned segments (Figure 3B-E), while control capillaries remained stable. The statistical significance and temporal persistence over multiple imaging timepoints support the conclusion of long-lasting perturbation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C119"
+    ],
+    "result": "Proximity to the nearest flowing capillary was the only vascular factor that predicted recanalization success, while capillary branch order, blood flow velocity, and lumen diameter in upstream/downstream capillaries were not predictive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C47, and C119 are supported by systematic analysis of multiple vascular parameters (Figure 2\u2014figure supplement 3) showing only distance to nearest flowing vessel significantly differentiated recanalized vs pruned capillaries. The comprehensive testing of alternative predictors strengthens the specificity of this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Obstructed capillaries show significantly reduced pVEGF-R2 expression 30 minutes after obstruction, while recanalized capillaries at 3 hours exhibit bimodal pVEGF-R2 expression with either significantly lower or higher levels than controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by quantitative immunohistochemistry showing significant reduction in pVEGF-R2 in obstructed capillaries (p=0.0006) and bimodal distribution in recanalized capillaries (Figure 5B). The temporal dynamics and bimodal distribution provide mechanistic insight into VEGF-R2's role in recanalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "VEGF injection (i.c.v.) significantly increased obstruction density 24 hours after microsphere injection compared to vehicle, suggesting VEGF-R2 activation impairs recanalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by quantitative analysis showing significantly increased microsphere density with VEGF treatment (p=0.01, Figure 5C). This gain-of-function experiment complements the loss-of-function studies (C71-C72) and supports the conclusion that VEGF-R2 signaling negatively regulates recanalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C33",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The 4 \u00b5m microsphere model successfully obstructs 3.67% of cortical capillaries without causing global cardiovascular dysfunction, cell death, or organ dysfunction, and yields similar recanalization and pruning rates as spontaneous obstructions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C86-C90 are supported by comprehensive validation showing no significant changes in cardiovascular parameters, blood chemistry, or cell death markers (Figure 1\u2014figure supplement 2-3), and similar outcomes to spontaneous obstructions. This extensive validation supports the microsphere model as a valid experimental approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Almost all microsphere obstructions (98%) recanalized by extruding the obstruction back into circulation, while only 2% recanalized by angiophagy (extrusion through the vessel wall).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by direct observation from longitudinal imaging showing 3/162 capillaries (2%) recanalized via angiophagy (Figure 2E, Figure 2\u2014figure supplement 2). The low rate of angiophagy is acknowledged as potentially influenced by microsphere composition and size (C91-C92).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "On average, there was no significant lasting deformation of newly separated capillaries after pruning compared to controls based on inter-capillary distance measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by quantitative measurements of inter-capillary distance at time 0 and +21 days showing no significant difference (Figure 2\u2014figure supplement 1). This addresses a potential concern about structural consequences of pruning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "The rate of capillary obstructions did not differ significantly between awake and isoflurane-anesthetized mice, ruling out spontaneous obstructions as purely artifacts of anesthetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 is supported by statistical comparison showing no significant difference in obstruction rates between awake and anesthetized conditions (p=0.29 for volume, p=0.10 for length). This control experiment strengthens the validity of findings obtained under anesthesia.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "VEGF-R2 knockdown (tamoxifen) and inhibition (SU5416) significantly reduced vascular pVEGF-R2 expression without causing global cardiovascular changes, differences in initial microsphere density, or alterations in RBC velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70, C74-C76 are supported by immunohistochemistry and western blot showing reduced VEGF-R2 signaling (Figure 5E, Figure 5\u2014figure supplement 1A) and comprehensive controls showing no confounding effects (Figure 5\u2014figure supplements 1-2). These controls strengthen the specificity of VEGF-R2 effects on recanalization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Delayed pruning of initially recanalized capillaries could not be predicted by changes in blood flow velocity, width, or flux in the recanalized primary capillary or connected secondary capillaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by analysis showing no significant differences in hemodynamic parameters for capillaries that were later pruned (Figure 2\u2014figure supplement 4). This negative result is important for understanding the mechanisms underlying delayed pruning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "10 of 16 mice had non-flowing capillary segments present at the start of imaging, indicating spontaneous obstructions were not unique to a few mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 is supported by direct observation showing obstructions distributed across 10/16 mice (range 1-4 per mouse). This demonstrates that spontaneous obstructions are a general phenomenon rather than an artifact of individual animals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "Microsphere obstructions were spread across the cortex affecting all major cerebral vascular territories in an anterior to posterior manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is supported by spatial distribution analysis (Figure 1\u2014figure supplement 4) showing microspheres distributed across cortical regions from -2 mm to +1.5 mm relative to bregma. This demonstrates the model produces widespread rather than focal obstructions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "There is a 69.8% chance an obstructed capillary will be intact and flowing at 21 days, either by extruding the emboli back into circulation (110/162) or through angiophagy (3/162).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is directly supported by the summary data in Figure 2H showing 113/162 capillaries (69.8%) were flowing at 21 days. This represents a straightforward calculation from the observed outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C59",
+      "C101"
+    ],
+    "result": "The study replicated well-established reports of age-related reduction in capillary density, with Evans-blue-based estimates in young adult mice closely matching other published studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C101 are supported by comparison with multiple prior studies (Figure 4A-C) and close agreement with published capillary density estimates, particularly from the Kleinfeld lab. This validation strengthens confidence in the measurement approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The mouse cortex occupies approximately 180 mm\u00b3 with an estimated 3.6 million capillaries, suggesting at any given time one could expect a few hundred obstructed capillaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are supported by citations to anatomical studies (Badea et al., 2007; Schmid et al., 2017) and straightforward calculation (0.12% of 3.6 million \u2248 4,320 obstructions per day, or a few hundred at any given time). This contextualization helps interpret the biological significance of the obstruction rate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C17"
+    ],
+    "result": "The brain is an energetically demanding organ with kilometers of capillaries that are inherently narrow (~3-5 \u00b5m diameter) high resistance tubes serving as the primary site of nutrient and gas exchange.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C13, and C17 are supported by established scientific knowledge and citation to Attwell et al., 2010. These are well-accepted facts that provide important context for understanding capillary obstruction susceptibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C18",
+      "C20"
+    ],
+    "result": "Prior literature establishes that cognitive decline with aging and neurodegenerative diseases is associated with capillary loss, capillaries are susceptible to obstruction, and progressive rarefaction of cerebrovascular networks occurs with aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16, C18, and C20 are supported by appropriate citations to prior literature. These claims accurately represent the state of knowledge and provide essential context for the current study's motivation and significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C19",
+      "C126"
+    ],
+    "result": "No prior study has comprehensively followed the long-term outcome of capillary obstructions and mechanisms dictating their fate, or tracked obstructions in animal models of vascular cognitive impairment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C19 and C126 represent statements about gaps in the literature. While the authors' review of existing studies supports these claims, it is difficult to definitively verify the absence of such studies without exhaustive literature review. The claims appear reasonable based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C25"
+    ],
+    "result": "Spontaneous obstructions present with a gap in capillary lumen fluorescence (mean diameter 3.85 \u00b1 1.25 \u00b5m) created by stalled cells or debris, and analysis was restricted to obstructions lasting >20 minutes to exclude transient events. DiI-coated 1 \u00b5m microspheres can stamp spontaneously obstructed capillaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C22, and C25 describe methodological approaches supported by Figure 1A and citations to prior work on transient obstructions. The DiI microsphere stamping method is a novel technical contribution that is well-described and validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "VEGF-R2 is a critical regulator of endothelial cell function that is very sensitive to changes in hemodynamic shear stress, and DiI-coated microspheres leave an indelible stamp of obstruction location even in recanalized capillaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is supported by citations to Olsson et al., 2006 and Tzima et al., 2005, providing rationale for focusing on VEGF-R2. Claim C64 is supported by Figure 5A showing DiI labeling persists in recanalized capillaries. These establish the technical and conceptual foundation for the VEGF-R2 experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Capillary occlusion alters blood flow in branches up and downstream, microvessel loss can lead to abnormalities in local perfusion, and even small numbers of pruning events can significantly alter local blood flow and capillary density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by citation to Schaffer et al., 2006 and modeling studies, combined with the current hemodynamic measurements (Figure 3). The integration of prior work with current findings supports the conclusion about the functional significance of pruning events.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C85",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Previous studies used larger microspheres (10-100 \u00b5m) to model ischemic strokes, and the composition and size of obstructions likely affects recanalization routes, with different rates of angiophagy expected for natural emboli versus microspheres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85, C91-C93 are supported by citations to prior microsphere studies and Lam et al., 2010. These claims appropriately acknowledge limitations of the microsphere model and contextualize the low angiophagy rate observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "Isoflurane has pleiotropic effects that influence synaptic transmission, blood flow, and ischemic cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is supported by citations to studies on isoflurane effects. This acknowledges a potential confounding factor, though the awake vs. anesthetized comparison (C28) addresses this concern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Failure to remove obstructions inevitably leads to capillary pruning, and the accumulation of obstructions over time is at least partially responsible for age-related loss of microvascular density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95 and C96 are supported by the observation that all non-recanalized capillaries were pruned (C35) and the close match between predicted and measured age-related capillary loss (C61). The conclusion is appropriately qualified as 'at least partially responsible' acknowledging other potential mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Lack of compensatory sprouting should not be surprising given prior studies showing limited angiogenesis in mature brain, and the small fraction of obstructed capillaries did not lead to hypoxia or cell death that would trigger angiogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 are supported by citations to prior longitudinal imaging studies and the lack of Fluorojade C staining (Figure 1\u2014figure supplement 3B). This provides reasonable explanation for the absence of sprouting observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C100",
+      "C102",
+      "C103"
+    ],
+    "result": "Discrepancies in empirical estimates of capillary loss with age may reflect different methodologies, as many prior rat studies used alkaline phosphatase staining which assumes ubiquitous vascular expression that does not vary with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100, C102, and C103 provide critical evaluation of methodological differences between studies. The concerns about alkaline phosphatase staining are reasonable and highlight the advantage of the Evans blue approach used in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Historically, TPA was believed to be the main recanalization mechanism, but the window for TPA-mediated recanalization is short and many obstructions are not susceptible to thrombolytics. Angiophagy was recently discovered as an alternative clearance mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C108 are supported by appropriate citations to del Zoppo and Mabuchi, 2003 and Grutzendler et al., 2014. These claims accurately represent the evolution of understanding about recanalization mechanisms and contextualize the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Leukocytes could potentially have engulfed microspheres and transported them across the capillary wall, and the manner and frequency of angiophagy-like events is likely influenced by emboli size and composition, with larger occlusions having more severe consequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 represent appropriate acknowledgment of alternative explanations (C109) and limitations (C110-C111) of the microsphere model. These caveats are reasonable and demonstrate scientific rigor in interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "VEGF-R2 is coupled to nitric oxide and other signaling pathways that could mediate changes in vessel tone, though recent studies question NO's role as a major capillary dilator. Hemodynamic forces from upstream/downstream capillaries are not likely critical factors in recanalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 discuss potential mechanisms and are supported by appropriate citations and the negative findings in Figure 2\u2014figure supplement 3. These represent reasonable speculation about mechanisms while acknowledging uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Smooth muscle actin-positive pericytes at precapillary arterioles and lower branch order capillaries regulate capillary flow and undergo prolonged constriction after ischemic stroke. Pericytes may contribute to recanalization by regulating vessel tone and to pruning through matrix metalloprotease activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C116 are supported by citations to Hill et al., 2015 and Hall et al., 2014. However, claims C117-C118 represent speculation about pericyte roles in the current context without direct experimental evidence. While reasonable hypotheses, they remain untested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C127",
+      "C128"
+    ],
+    "result": "The incidence of capillary obstructions and recanalization rates could be influenced by disease states, and this study offers a mechanism for microvessel loss in healthy aging that could extend to risk factors for dementia, providing a framework for understanding microcirculatory changes in cognitive impairment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C125, C127-C128 represent appropriate discussion of broader implications and future directions. Claims about disease relevance are appropriately qualified as speculation (C120, C125, C127, C128) while being grounded in cited literature about vascular contributions to dementia (C121-C124).",
+    "result_type": "MINOR"
+  }
+]

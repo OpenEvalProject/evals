@@ -1,0 +1,227 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C17",
+      "C18"
+    ],
+    "result": "The manuscript provides background on microtubule (MT) structure, assembly, and dynamic instability, including the role of GTP binding and hydrolysis, the structural transition from kinked to straight tubulin conformations during polymerization, and the GTP cap model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 describe well-established background knowledge about MT biology, structure, and dynamics, supported by appropriate citations to the literature. These claims provide necessary context for the study but do not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The manuscript reviews two competing models of MT assembly (allosteric and lattice models) and summarizes prior experimental and computational evidence supporting each model, including recent mutation studies that suggest allosteric regulation may play a role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C33 accurately summarize prior work and the state of the field, providing appropriate citations. This establishes the scientific context and motivation for the current study but does not constitute a novel result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C108",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors performed multiple microsecond-long MD simulations of GTP- and GDP-tubulin dimers in solution and analyzed them in comparison to ~100 tubulin structures from the PDB, including 62 kinked and 29 straight conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C108, C110-C113 describe the computational methodology and dataset. The simulation setup is clearly described with appropriate technical details, and the PDB dataset is well-characterized. This represents sound methodological design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Principal component analysis (PCA) of experimental tubulin structures reveals that the first conformational mode (~90% of variance) describes dimer bending around an anchor point at the intradimer interface involving the H8 helix, while the second mode (~5% of variance) describes a breathing motion. No intermediate curvature structures were observed in the experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 describe the PCA analysis of experimental structures shown in Figure 2. The analysis is appropriate and the results are clearly presented. The identification of the anchor point and bending modes is well-supported by the data, though the absence of intermediate structures (C38) may reflect experimental limitations rather than their true absence in solution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Comparison of simulated GTP- and GDP-tubulin ensembles shows that the nucleotide state strongly affects tubulin bending flexibility, with GDP-tubulin being more conformationally confined and GTP-tubulin exploring a broader range of curvatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by the simulation data shown in Figure 3. The visual comparison clearly shows different conformational sampling between GTP and GDP states. However, the lack of transitions between straight and kinked states within the simulation timescale raises questions about whether equilibrium has been achieved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Ensemble separation analysis reveals that the conformational change separating the two simulated states involves rearrangements in individual monomers and at the intradimer interface, is uncoupled from bending motion, and is independent of nucleotide state. Tubulin easily samples a wide range of curvatures independently of starting conformation, with GDP-tubulin sampling a more restricted range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by the 2D free energy profiles in Figure 4. The analysis demonstrates orthogonality between the ensemble separation coordinate and bending, and shows nucleotide-dependent differences in curvature sampling. The methodology is appropriate and the conclusions are justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "Two different bending modes exist: splay-bend (SB) and twist-bend (TB), which differ in how the dimer bends relative to the MT axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is supported by the functional mode analysis shown in Figure 5. The structural characterization of these two modes is clear and well-presented, representing an important finding about tubulin conformational dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Free energy calculations show that GTP-tubulin favors a broad range of almost isoenergetic curvatures (1-2 kT differences), while GDP-tubulin has much lower bending flexibility (steeper free energy curves). GTP does not shift tubulin toward straight conformations; rather, intermediate kinking is preserved in both nucleotide states, but GTP increases flexibility without changing average conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C57-C61 are supported by the free energy profiles in Figure 6. The umbrella sampling calculations appear technically sound with appropriate error analysis (Figure 6\u2014figure supplement 1). This is a key finding that challenges both canonical models. However, the calculated free energy of kinking for GDP-tubulin (6.6 \u00b1 0.8 kT) agrees well with experimental estimates (~5 kT), providing validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C66",
+      "C67",
+      "C68",
+      "C75",
+      "C91"
+    ],
+    "result": "Two anchor point states exist that are separated by a large free energy barrier (~20 kT), with the splay-bend (SB) state strongly favored over the twist-bend (TB) state (\u0394\u0394G = 8.6 \u00b1 2.4 kT, ~99.98% SB population). The conformational change involves rearrangements of the H7 helix and H7-H8 loop, leading to a shift in anchor point position, and does not require dimer bending.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C66-C68, C75, and C91 are supported by the free energy calculations in Figure 7. The umbrella sampling methodology is appropriate and error analysis is provided (Figure 7\u2014figure supplement 1). The large barrier and strong preference for SB state are clearly demonstrated. This is a major finding, though the functional significance remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors propose a new unified model of MT assembly that reconciles the lattice and allosteric models. In this model, tubulin exists in two anchor point states (SB and TB) in solution, both capable of nucleotide-dependent bending. The average conformation is intermediately kinked regardless of nucleotide state, but GTP binding increases bending flexibility rather than shifting conformation. Straightening occurs through induced fit at the MT lattice, compensated by lateral and longitudinal bond energies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C86 and C105-C107 present the proposed unified model based on the simulation results. While the model is consistent with the computational data presented (C3-C6, C57-C61, C75), it remains a hypothesis that requires experimental validation. The model makes testable predictions but has not been directly tested. The agreement with some prior experimental observations (C77, C85-C86) provides indirect support, but alternative explanations cannot be ruled out. The claim that this resolves discrepancies between previous models is premature without experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C89",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors speculate on how the high SB-TB barrier (~20 kT) might be overcome during MT assembly, proposing that lateral and longitudinal bond formation provides sufficient energy (estimated at -20.4 kT from literature values) to drive the transition at the MT tip.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C98 are largely speculative (C87, C89, C92-C93 explicitly marked as speculation). While the calculation in C98 using literature bond energies is reasonable, it relies on lower-bound estimates and does not account for entropic costs or other factors. The preference for the first scenario (C94) is based on absence of evidence rather than positive evidence. This represents plausible speculation but lacks direct support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors speculate that the SB-TB barrier may control MT assembly/disassembly kinetics and catastrophe rates, potentially resolving the inability of current mechanochemical models to reproduce experimental MT lifetimes, lengths, and their dependence on tubulin concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C104 are speculative (C99, C104 explicitly marked as speculation). While the limitations of current models are well-documented (C100-C103 supported by citations), the claim that the SB-TB barrier resolves these issues is hypothetical and untested. This represents an interesting hypothesis for future work but lacks direct evidence.",
+    "result_type": "MINOR"
+  }
+]

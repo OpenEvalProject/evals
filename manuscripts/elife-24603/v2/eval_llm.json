@@ -1,0 +1,392 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C101",
+      "C102",
+      "C126"
+    ],
+    "result": "The theoretical model predicts that Golgi cisterna morphology is controlled by membrane spontaneous curvature, with curvature generators (e.g., budding machinery) stabilizing flat cisternae and their release triggering flat-to-curled transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C53, C101-C102, and C126 collectively describe the core theoretical predictions of the biophysical model. The model is mathematically formulated (Equations 1-22), numerically solved, and produces internally consistent predictions shown in Figures 2-3. The predictions follow logically from the Helfrich bending energy framework and established thermodynamic principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C63",
+      "C64",
+      "C104"
+    ],
+    "result": "The model predicts that rigid lipid nanodomains have minimal effect on flat-to-curled transitions but cannot stabilize flat cisternae without curvature generators at the rim.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44, C63-C64, and C104 describe model predictions about nanodomain effects, supported by computational results in Figures 2A, 4, and the Appendix. The insensitivity to nanodomain fraction is explained by the entropic cost of partitioning (C44), which is a thermodynamically sound argument.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C52",
+      "C57",
+      "C59",
+      "C93"
+    ],
+    "result": "The model predicts bistability and hysteresis in cisterna shape transitions, where both flat and curled configurations can be locally stable depending on the history of curvature generator levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C52, C57, C59, and C93 describe the bistability prediction, which is a standard feature of systems with energy barriers (Figure 3A-B). The hysteresis prediction (C57, C59) follows from established principles of bistable systems, supported by appropriate citations. Experimental evidence for hysteresis (C93) is provided in Figure 6B-E showing differential recovery kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The model predicts preferential partitioning of rigid nanodomains from the highly curved rim to the flatter central region, with enhanced partitioning in curled cisternae and upon reduction of spontaneous curvature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 and C105-C107 describe nanodomain redistribution predictions shown in Figure 3C. These predictions follow logically from minimizing bending energy (rigid domains avoid high curvature) balanced against entropic costs of inhomogeneous distribution. The model framework (Equations 6-9) appropriately accounts for both contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C84",
+      "C103"
+    ],
+    "result": "Short-chain ceramide treatment causes release of clathrin-HC from Golgi membranes within 30 min, preceding and accompanying the flat-to-curled cisterna transition observed by 30 min to 4 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80, C84, and C103 describe experimental observations shown in Figure 6A-D. Immunofluorescence microscopy (C76) and immuno-electron microscopy (C78-C80) provide direct visual evidence. The temporal correlation between clathrin release and cisterna curling supports the model's prediction that curvature generator release drives morphological transitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "During washout after short-chain ceramide treatment, clathrin-HC recovery (2-6 hr) occurs much faster than recovery of flat cisterna morphology (16+ hr) and protein colocalization (12-24 hr).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C92 describe washout kinetics shown in Figures 6A-E and Figure 6\u2014figure supplement 1. The differential recovery times are directly measured by quantitative microscopy methods. The observation that morphology recovery lags behind clathrin recovery (C87, C92) provides experimental support for the model's hysteresis prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C121"
+    ],
+    "result": "The model predicts that the experimentally observed 30% increase in DAG levels (1.4% to 1.8%) does not directly drive the flat-to-curled transition through membrane curvature effects, as DAG distributes nearly homogeneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 and C121 describe model predictions shown in Figure 5B-C. The computational analysis (Equation 21) appropriately accounts for both DAG's curvature-generating potential and entropic costs of redistribution. The prediction that DAG remains homogeneously distributed (C73) is consistent with prior studies (Derganc, 2007; Sorre et al., 2009) and follows from the small molecular size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "SM metabolism indirectly controls Golgi morphology through a DAG-triggered, PKD-dependent signaling cascade that releases PI(4)P-binding proteins, rather than through direct mechanical effects of DAG on membrane curvature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C122-C125 integrate experimental observations (C75, C122 supported by Capasso et al., 2017) with the model's predictions (C121, C72-C74) to propose a signaling mechanism. The hypothesis (C125) is well-supported by: (1) experimental evidence that DAG increases don't cause morphological changes directly (Figure 5), (2) established DAG-PKD-PI(4)P signaling pathway (C75, C122), and (3) spatial separation of phosphoinositides from SM-rich domains (C123).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C37"
+    ],
+    "result": "The model assumes mechanical equilibration of cisterna shape occurs much faster (\u03c4_mech ~ 1 ms) than compositional changes through membrane fluxes (\u03c4_flux ~ 100 s), justifying a free energy minimization approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C37 describe key model assumptions. The timescale estimates are calculated from established hydrodynamic principles (\u03c4_mech = \u03b7R\u00b3/\u03ba) and experimental flux data (Dmitrieff et al., 2013). The ~10\u2075-fold separation in timescales strongly justifies treating shape as equilibrated for any given composition, making the free energy minimization approach (C37) appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Increasing cisterna surface area shifts shape transition curves to higher spontaneous curvature values but does not increase sensitivity to nanodomain area fraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 describe model predictions for larger cisternae (r_flat = 1000 nm vs 500 nm) shown in Figure 4\u2014figure supplement 1. The predictions are internally consistent with the model framework and represent straightforward parameter variations. The shift to higher J_s values (C65) makes physical sense as larger cisternae have proportionally larger rim areas requiring more curvature generators to stabilize.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The narrow luminal space of Golgi cisternae can be maintained by protein arrays bridging parallel membranes or by membrane adhesion between adjacent cisternae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 cite experimental evidence from cryo-electron tomography (Engel et al., 2015) and studies in HeLa cells (Lee et al., 2014). These are established observations used to justify the model's geometric constraints (constant luminal thickness 2h). The claims appropriately acknowledge alternative mechanisms without requiring one specific explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "The measured radii of flat cisternae (r_flat = 510\u00b121 nm) and curled cisternae (R = 270\u00b126 nm) are consistent with the model's area conservation constraint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 compares experimental measurements from immuno-EM (Figure 6C) to the theoretical constraint (Equation A2). The agreement between measured values and area conservation provides validation that the model's geometric assumptions are reasonable. However, the claim would be stronger with explicit calculation showing the consistency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C108",
+      "C110"
+    ],
+    "result": "The authors hypothesize that lateral segregation of Golgi enzymes from substrates results from nanodomain repartitioning, with recovery of protein colocalization (12 hr) reflecting recovery of nanodomain levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108 and C110 are explicitly speculative (C108 uses \"conjecture,\" C110 uses \"propose\"). While the hypothesis connects model predictions (nanodomain redistribution, Figure 3C) to experimental observations (protein segregation, van Galen et al., 2014), no direct experimental evidence is provided linking nanodomains to protein localization. The 12 hr recovery time (C110) is measured (Figure 6E) but its connection to nanodomain recovery is assumed, not demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The authors propose that curvature-generating proteins have a dual role: forming transport carriers and stabilizing flat cisterna morphology through a positive feedback loop, with maintenance requiring combined effort of multiple protein classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C129 and C133-C135 are explicitly hypothetical (\"suggest,\" \"propose\"). While the dual role hypothesis (C128) is consistent with the model and experimental observations, it lacks direct experimental validation. The positive feedback loop (C129) is a reasonable inference but remains speculative. The proposal about multiple protein classes (C133-C134) is supported by circumstantial evidence (C130-C132) but requires further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Background claims about Golgi structure and function: the Golgi complex plays a central role in protein processing and transport, consists of polarized flattened cisternae in higher eukaryotes, and maintains stable morphology despite membrane traffic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide established background knowledge supported by appropriate citations (Emr et al., 2009; Klumperman, 2011; Glick and Luini, 2011; Stanley, 2011; Guo et al., 2014). These are well-accepted facts in cell biology that provide context for the study. No critical evaluation of these background claims is needed as they are not novel findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Prior work by the authors showed that disrupting SM organization at Golgi membranes leads to reduced lateral lipid order, inhibited transport carrier formation, defects in protein glycosylation, and transformation from flat to curled cisternae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 and C97-C100 summarize the authors' previous work (Duran et al., 2012; van Galen et al., 2014). These are appropriately cited and provide the experimental motivation for the current theoretical study. The claims accurately represent the prior findings and establish the key observations that the model aims to explain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Theoretical framework: membrane shape results from curvature generation and stabilization; bending energy depends on deviations from spontaneous curvature and membrane rigidity; liquid-ordered domains have higher rigidity and resist curvature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 and C21-C23 describe established biophysical principles supported by appropriate citations (Helfrich, 1973; Shibata et al., 2009; Campelo et al., 2014; Roux et al., 2005; Heinrich et al., 2010; Dimova, 2014). These principles form the theoretical foundation of the model and are well-established in membrane biophysics. The application to Golgi cisternae (C18, C23) represents logical inference from these principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The budding machinery generates membrane curvature for transport carrier formation, localizes preferentially at curved cisterna rims, and helps stabilize these highly bent membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 combine established knowledge (C29-C30, supported by Kirchhausen, 2000; Campelo and Malhotra, 2012; Rothman, 2010; Lavieu et al., 2013; Popoff et al., 2011; Engel et al., 2015) with model predictions (C31-C32). The stabilization role (C31) is a theoretical prediction that follows logically from the curvature-generating properties of these proteins. The prediction is later experimentally validated (C76-C84).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Short-chain ceramide treatment causes local changes in Golgi lipid homeostasis, including a 30% increase in DAG levels from 1.4 to 1.8 mol%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 cite experimental data from Duran et al., 2012. The DAG increase (C68) provides specific quantitative data used in the model (Figure 5B). These are established experimental observations from prior work that provide input parameters for testing the model's predictions about DAG's role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Curling of Golgi cisternae induced by short-chain ceramide is accompanied by lateral segregation of Golgi-resident proteins TGN46 and p230.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 cites prior work (van Galen et al., 2014) describing protein segregation that accompanies cisterna curling. This established observation is used as a readout for monitoring cisterna morphology recovery in the washout experiments (C90-C91, Figure 6E). The claim appropriately acknowledges that the driving mechanism remains unknown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The Golgi complex typically consists of 4-8 stacked flat cisternae with large surface-to-volume ratio, with processing events at the central flat part and transport carrier formation at the rims.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 provide established structural and functional organization of the Golgi, supported by appropriate citations (Emr et al., 2009; Griffiths et al., 1989; Glick and Nakano, 2009; Rothman, 2010; Popoff et al., 2011; van Galen et al., 2014; Engel et al., 2015). These are well-accepted features that provide context for understanding how morphological changes might affect function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "DAG is a key regulator of transport carrier biogenesis that can generate membrane curvature, recruits PKD to the TGN, and whose levels affect protein export and Golgi morphology; active PKD phosphorylates multiple substrates including PI4KIII\u03b2, CERT, and OSBP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C120 summarize established knowledge about DAG's roles and PKD signaling, supported by extensive citations (Baron and Malhotra, 2002; Bard and Malhotra, 2006; Fern\u00e1ndez-Ulibarri et al., 2007; Malhotra and Campelo, 2011; Carrasco and M\u00e9rida, 2007; Leikin et al., 1996; Szule et al., 2002; Maeda et al., 2001; Liljedahl et al., 2001; Hausser et al., 2005; Fugmann et al., 2007; Nhek et al., 2010; Litvak et al., 2005). This background provides context for understanding DAG's indirect role in morphology control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C127",
+      "C130",
+      "C131",
+      "C132",
+      "C136",
+      "C137"
+    ],
+    "result": "Multiple classes of curvature-generating proteins are recruited to the Golgi; altered SM metabolism doesn't affect COPI localization, but PI(4) kinase knockdown or 15\u00b0C incubation causes cisterna curling with release of specific coat components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127, C130-C132, C136-C137 cite experimental evidence from multiple sources (Cruz-Garcia et al., 2013; Bonazzi et al., 2005; Campelo and Malhotra, 2012; Capasso et al., 2017; Yamaguchi et al., 2016; Mart\u00ednez-Alonso et al., 2005; Lee et al., 2014). These observations support the idea that different curvature generators may have distinct roles and that multiple mechanisms can trigger cisterna curling. The evidence is appropriately cited but represents prior work, not new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "Experimental evidence suggests existence of nanoscopic SM-enriched liquid-ordered domains at Golgi membranes, though direct visualization remains challenging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 appropriately acknowledge both the evidence for SM-enriched domains and the technical challenges in visualizing them, supported by multiple citations (Gkantiragas et al., 2001; Klemm et al., 2009; Duran et al., 2012; Bankaitis et al., 2012; Deng et al., 2016). This honest assessment of the evidence's limitations is important context for the model, which treats nanodomains as a key component despite visualization challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "The authors previously suggested that short-chain SM might not be able to generate liquid-ordered nanodomains at Golgi membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C12 is explicitly speculative (\"suggested,\" \"might\") based on prior findings (Duran et al., 2012). This hypothesis about short-chain SM's inability to form nanodomains provides motivation for the current study but lacks direct experimental validation. The speculation is reasonable given the observed effects on membrane order, but remains unproven.",
+    "result_type": "MINOR"
+  }
+]

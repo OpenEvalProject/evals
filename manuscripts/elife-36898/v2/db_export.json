@@ -1,0 +1,1777 @@
+{
+  "submission": {
+    "id": "ffd5be47-9f4c-4803-817c-402d6d94d1e7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:52:20.089033Z",
+    "updated_at": "2025-12-02T01:52:20.089033Z"
+  },
+  "content": [
+    {
+      "id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "submission_id": "ffd5be47-9f4c-4803-817c-402d6d94d1e7",
+      "content_type": "manuscript",
+      "content_text": "# Mitotic progression, arrest, exit or death relies on centromere structural integrity, rather than de novo transcription\n\n## Authors\n\n- Marco Novais-Cruz<sup>1</sup>\n- Maria Alba Abad<sup>3</sup>\n- Wilfred FJ van IJcken<sup>4</sup> ([ORCID: 0000-0002-0421-8301](https://orcid.org/0000-0002-0421-8301))\n- Niels Galjart<sup>5</sup>\n- A Arockia Jeyaprakash<sup>3</sup>\n- Helder Maiato<sup>1</sup> ([ORCID: 0000-0002-6200-9997](https://orcid.org/0000-0002-6200-9997)) \u2020\n- Cristina Ferr\u00e1s<sup>1</sup> ([ORCID: 0000-0003-1134-7387](https://orcid.org/0000-0003-1134-7387)) \u2020\n\n### Affiliations\n\n1. Chromosome Instability & Dynamics Laboratory, Instituto de Biologia Molecular e Celular Universidade do Porto Porto Portugal\n2. Instituto de Investiga\u00e7\u00e3o e Inova\u00e7\u00e3o em Sa\u00fade (i3S) Universidade do Porto Porto Portugal\n3. Wellcome Trust Centre for Cell Biology University of Edinburgh Edinburgh United Kingdom\n4. Center for Biomics Erasmus Medical Center Rotterdam Netherlands\n5. Department of Cell Biology Erasmus Medical Center Rotterdam Netherlands\n6. Cell Division Group, Experimental Biology Unit, Department of Biomedicine, Faculdade de Medicina Universidade do Porto Porto Portugal\n\n\u2020 Corresponding author\n\n## Abstract\n\nRecent studies have challenged the prevailing dogma that transcription is repressed during mitosis. Transcription was also proposed to sustain a robust spindle assembly checkpoint (SAC) response. Here, we used live-cell imaging of human cells, RNA-seq and qPCR to investigate the requirement for de novo transcription during mitosis. Under conditions of persistently unattached kinetochores, transcription inhibition with actinomycin D, or treatment with other DNA-intercalating drugs, delocalized the chromosomal passenger complex (CPC) protein Aurora B from centromeres, compromising SAC signaling and cell fate. However, we were unable to detect significant changes in mitotic transcript levels. Moreover, inhibition of transcription independently of DNA intercalation had no effect on Aurora B centromeric localization, SAC response, mitotic progression, exit or death. Mechanistically, we show that DNA intercalating agents reduce the interaction of the CPC with nucleosomes. Thus, mitotic progression, arrest, exit or death is determined by centromere structural integrity, rather than de novo transcription.\n\n## Introduction\n\nWhen cells commit to mitosis the nuclear envelope disassembles and chromatin organizes into highly condensed chromosomes. This causes the displacement of several transcription factors from DNA and the inactivation of the transcription machinery in a cell-cycle-dependent manner (Gottesfeld and Forbes, 1997; Kim et al., 1997; Konrad, 1963; Mart\u00ednez-Balb\u00e1s et al., 1995; Murphy and Attardi, 1973; Parsons and Spencer, 1997; Prescott and Bender, 1962; Rizkallah and Hurt, 2009; Segil et al., 1996; Shermoen and O'Farrell, 1991; Spencer et al., 2000; Taylor, 1960). Because the half-life of most transcripts exceeds the normal duration of mitosis (typically\u00a0~30 min in human cells), the prevailing dogma was that transcription is largely repressed and dispensable during mitosis in higher eukaryotes (Gottesfeld and Forbes, 1997; Konrad, 1963; Mart\u00ednez-Balb\u00e1s et al., 1995; Murphy and Attardi, 1973; Prescott and Bender, 1962; Rizkallah and Hurt, 2009; Spencer et al., 2000; Taylor, 1960).\n\nSeveral recent studies have challenged this notion and provided evidence that the level of chromatin compaction on mitotic chromosomes is highly heterogeneous (Nishino et al., 2012), allowing accessibility of some transcription factors and chromatin-modifying enzymes (Burke et al., 2005; Chen et al., 2005; Dey et al., 2009; Egli et al., 2008; Gauthier-Rouvi\u00e8re et al., 1991; Michelotti et al., 1997; Segil et al., 1996; Yan et al., 2006). Noteworthy, a post-translationally modified form of RNA Polymerase II that is normally associated with transcription elongation was found to bind mitotic chromosomes at their centromeres (Chan et al., 2012; Dirks and Snaar, 1999; Liu et al., 2015; Molina et al., 2016), suggesting that some transcription is still taking place during mitosis.\n\nTranscription might also play an instrumental role during a prolonged mitosis due to incapacity to satisfy the spindle assembly checkpoint (SAC), a signaling mechanism that can delay mitosis up to several hours in the presence of unattached kinetochores (Musacchio, 2015b). In line with this hypothesis, the master mitotic regulator Cyclin B1 was proposed to be actively transcribed during mitosis and to be required to sustain a robust SAC response (Mena et al., 2010; Sciortino et al., 2001).\n\nCentromere assembly, which underlies the catalytic mechanism behind the SAC, has also been recently proposed to depend on transcription of centromeric \u03b1-satellite DNA and to be regulated by non-coding RNAs (Blower, 2016; Carone et al., 2009; Chan et al., 2012; Du et al., 2010; Grenfell et al., 2016; Li et al., 2008; Liu et al., 2015; Nakano et al., 2003; Pezer and Ugarkovi\u0107, 2008; Ro\u0161i\u0107 et al., 2014; Topp et al., 2004; Wong et al., 2007; Zhang et al., 2005). In particular, the centromeric localization and activation of Aurora B, the catalytic subunit of the chromosomal passenger complex (CPC) required for SAC response and error correction during mitosis (Carmena et al., 2012; Santaguida et al., 2011) was shown to be dependent on centromeric transcription (Blower, 2016; Grenfell et al., 2016). However, whether centromeric transcription persists during mitosis remains debatable.\n\nFinally, a recent study using pulse-labeling of nascent transcripts and RNA-seq of mitotic-enriched cell populations reported that over 8000 transcripts are expressed de novo during mitosis and mitotic exit to prepare cells for the subsequent interphase (Palozola et al., 2017).\n\nAlthough some level of transcription might still take place during mitosis, the experiments supporting this conclusion were based on the analysis of synchronized, yet impure, mitotic cell populations, fixed material and a diverse range of transcription inhibitors with imprecise temporal control of transcriptional repression. Moreover, it remains unclear whether transcription is required for normal mitotic progression and exit. For these reasons, we sought to investigate the requirement of de novo transcription during mitosis using direct live-cell imaging and a wide range of transcription inhibitors. We found that the capacity of human cells to progress, sustain, exit or die in mitosis is independent of de novo transcription. In agreement, quantitative RNA-seq and qPCR analysis failed to unveil potential transcripts produced de novo during mitosis. Finally, we uncovered that DNA-intercalating agents, which include well-established transcription inhibitors, such as actinomycin D, reduce the interaction of the CPC with nucleosomes and significantly compromise centromere structural integrity and function in a transcription-independent manner. Our findings raise awareness about the use of some transcription inhibitors in living cells and shed light on a long-lasting controversy.\n\n## Results\n\n### Actinomycin D compromises spindle assembly checkpoint robustness in a transcription-independent manner\n\nWe reasoned that if de novo transcription takes place during a normal mitosis, its role would be exacerbated during a prolonged mitosis. To test this, we used live-cell imaging to quantify the duration of mitosis in human HeLa cells treated with the microtubule depolymerizing drug nocodazole, which generates persistently unattached kinetochores that prevent SAC satisfaction. After 3 hr in nocodazole, we directly monitored cells that became committed to mitosis, as determined by typical cell rounding, and inhibited transcription with the well-established DNA-intercalating drug actinomycin D (Figure 1A). Consistent with previous observations in fixed cells (Becker et al., 2010), we found that live cells treated with nocodazole remained in mitosis for 19.2\u00a0\u00b1\u00a07.0 hr (median\u00a0\u00b1\u00a0SD, n\u00a0=\u00a0386 cells), whereas cells treated with nocodazole followed by actinomycin D persisted in mitosis for only 16.1\u00a0\u00b1\u00a05.6 hr (n\u00a0=\u00a0301 cells, p<0.0001, Mann-Whitney Rank Sum Test, Figure 1B,C and Video 1). Interestingly, approximately 90% of nocodazole-treated cells died after a prolonged mitotic delay, whereas 54% of the cells treated with nocodazole and actinomycin D underwent mitotic slippage (Rieder and Maiato, 2004) (Figure 1B,D and Video 1). Thus, treatment with actinomycin D compromises the capacity of cells to sustain a prolonged mitotic delay and interferes with their fate.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/36898/elife-36898-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic representation of the experimental protocol used to study the effect of actinomycin D (ActD) on mitotic cells by live cell imaging. (B) Selected time frames from phase contrast microscopy of HeLa cells treated with nocodazole and either DMSO (NOC), ActD (NOC\u00a0+\u00a0ActD) or ActD with MG132 (NOC\u00a0+\u00a0ActD\u00a0+ MG132). Images were acquired every 15 min. Arrows highlight examples of control (NOC) and ActD with MG132 (NOC\u00a0+\u00a0ActD\u00a0+ MG132) cells entering and dying in mitosis after a prolonged arrest. In cells treated with ActD (NOC\u00a0+\u00a0ActD), arrow highlights an example of a cell entering mitosis and then exiting mitosis through mitotic slippage. Scale bar\u00a0=\u00a010 \u00b5m. Time\u00a0=\u00a0hr:min. (C) Scattered plot showing the duration of the mitotic arrest of HeLa cells treated with nocodazole and either Mps1 inhibitor (NOC\u00a0+\u00a0Mps1 i) or ActD (NOC\u00a0+\u00a0ActD) with or without MG132. The red line represents the mean and the error bars represent the standard deviation from a pool of at least three independent experiments (NOC, 19.2\u00a0\u00b1\u00a07.0 hr, n\u00a0=\u00a0386; NOC\u00a0+\u00a0MG132, 30.1\u00a0\u00b1\u00a014.7 hr, n\u00a0=\u00a0108; NOC\u00a0+\u00a0Mps1 i, 5.4\u00a0\u00b1\u00a02.6 hr, n\u00a0=\u00a0154; NOC\u00a0+\u00a0Mps1 i+MG132, 30.9\u00a0\u00b1\u00a018.1 hr, n\u00a0=\u00a0150; NOC\u00a0+\u00a0ActD, 16.1\u00a0\u00b1\u00a05.6 hr, n\u00a0=\u00a0301; NOC\u00a0+\u00a0ActD\u00a0+ MG132, 20.3\u00a0\u00b1\u00a09.4 hr, n\u00a0=\u00a065; median\u00a0\u00b1SD; **p\u22640.01, ****p\u22640.0001, Mann-Whitney Rank Sum Test). (D) Cell fate of mitotic HeLa cells treated with the same drugs as in 1C. (E) Selected time frames from phase contrast and fluorescence microscopy of Cyclin B1-Venus HeLa cells treated with DMSO or ActD in the presence of nocodazole. Images were acquired every 15 min. For ActD-treated cells (NOC\u00a0+\u00a0ActD) arrows highlight a mitotic cell showing reduction of Cyclin B1 over time. Scale bar\u00a0=\u00a010 \u00b5m. Time\u00a0=\u00a0hr:min. (F) Cyclin B1 degradation curves for control and ActD-treated Cyclin B1-Venus HeLa cells after nocodazole treatment with or without MG132. Fluorescence intensities were normalized to the level at time\u00a0=\u00a00. The curves depict mean Cyclin B1-Venus fluorescent intensity from all analyzed cells per condition (NOC n\u00a0=\u00a012; NOC\u00a0+\u00a0MG132 n\u00a0=\u00a010; NOC\u00a0+\u00a0ActD n\u00a0=\u00a09; NOC\u00a0+\u00a0ActD\u00a0+ MG132 n\u00a0=\u00a010; from time\u00a0=\u00a00 to 26 time frames), and error bars represent the standard deviation (*p\u22640.05, **p\u22640.01, ****p\u22640.0001 relative to control, Analysis of covariance).\n\n![Video 1.](https://cdn.elifesciences.org/articles/36898/elife-36898-video1.mp4.jpg)\n\n**Video 1.:** Images were acquired every 15 min.\u00a0Time\u00a0=\u00a0h:min.\n\nThe relationship between the capacity to sustain a robust SAC response and the subsequent cell fate after a mitotic delay has been shown to depend on the kinetics of anaphase-promoting complex (APC)-mediated Cyclin B1 degradation, with slower degradation promoting mitotic cell death, and faster degradation promoting mitotic slippage (Brito and Rieder, 2006; Gascoigne and Taylor, 2008). We therefore tested whether inhibition of Cyclin B1 proteolysis with the proteasome inhibitor MG132 could rescue the faster exit and different fate of cells treated with nocodazole and actinomycin D. As controls, we modulated mitotic duration either by inhibition of the SAC kinase Mps1 (to accelerate mitotic exit), or inhibition of the proteasome with MG132 (to delay mitotic exit) after nocodazole treatment. Accordingly, cells treated with nocodazole and MG132 increased the mitotic delay relative to cells treated only with nocodazole (from 19.2\u00a0\u00b1\u00a07.0 hr to 30.1\u00a0\u00b1\u00a014.7 hr, p<0.0001, Mann-Whitney Rank Sum Test, Figure 1C and Video 1), and caused cell death in mitosis in 100% of the cases (Figure 1D and Video 1). Conversely, acute SAC inactivation through Mps1 inhibition after nocodazole treatment significantly decreased the mitotic delay relative to nocodazole-treated cells (from 19.2\u00a0\u00b1\u00a07.0 hr to 5.4\u00a0\u00b1\u00a02.6 hr, p<0.0001, Mann-Whitney Rank Sum Test, Figure 1C and Video 1), and caused almost immediate mitotic slippage in 100% of the cells (Figure 1D and Video 1). Proteasome inhibition with MG132 reverted the Mps1 inhibition phenotype, increasing mitotic duration and switching cell fate from mitotic slippage to death (p<0.0001, Mann-Whitney Rank Sum Test, Figure 1C,D and Video 1). Most important, the ability of actinomycin D to reduce the mitotic delay and induce slippage in cells treated with nocodazole was rescued after inhibition of proteasome activity with MG132 (p\u22640.01, Mann-Whitney Rank Sum Test, Figure 1C,D and Video 1). Overall, these experiments suggest that actinomycin D compromises SAC response and the capacity to sustain a prolonged mitotic delay, in a proteasome-dependent manner.\n\nThe conclusions above are at odds with models in which SAC response depends on de novo transcription of Cyclin B1 during mitosis (Mena et al., 2010; Sciortino et al., 2001). To clarify this issue, we used quantitative time-lapse fluorescence microscopy to monitor the levels and respective kinetics of degradation of Cyclin B1 tagged at its endogenous genomic locus with Venus (Collin et al., 2013) (Figure 1E). In agreement with previous reports, Cyclin B1-Venus fluorescence decayed very slowly in the presence of nocodazole, likely due to residual APC activity (Figure 1F) (Brito and Rieder, 2006). Treatment of nocodazole-arrested cells with actinomycin D caused a faster decline in Cyclin B1-Venus (p<0.0001, Analysis of Covariance (ANCOVA), Figure 1F). Interestingly, Cyclin B1-Venus levels in nocodazole-treated cells remained constant for several hours after inhibition of the proteasome with MG132, regardless of the presence of actinomycin D (p\u22640.05, ANCOVA, Figure 1F). We concluded that actinomycin D compromises SAC robustness and the capacity to prevent APC-mediated Cyclin B1 degradation, independently of de novo transcription.\n\n### Actinomycin D compromises the localization of Aurora B and Mad1 at centromeres/kinetochores\n\nTo determine how actinomycin D compromises SAC robustness during a prolonged mitosis, we investigated the localization of the SAC-related proteins Aurora B (at centromeres) and Mad1 (at unattached kinetochores). Accordingly, we added actinomycin D for 8 hr in cells pre-treated with nocodazole, which was kept throughout the entire duration of the experiment. To assist in the identification of mitotic cells, while assessing Aurora B activity on chromosomes, we also investigated the phosphorylation of Histone H3 at Serine 10 [pH3S10; (Crosio et al., 2002)]. In contrast with nocodazole-treatment in which all mitotic cells showed high levels of pH3S10, addition of actinomycin D reduced or abolished pH3S10 accumulation in approximately 17% of the nocodazole-treated cells (Figure 2A,B). Importantly, these cells still showed signs of chromosome condensation (as determined by DAPI staining of DNA) that were indistinguishable from neighbouring cells with normal levels of pH3S10 (Figure 2A). Moreover, the observed reduction/abolishment of pH3S10 was not associated with a pre-apoptotic state, as those cells were negative for a cleaved form of caspase 3 (Figure 2A). In line with the observed reduction/abolishment of pH3S10, these cells also showed abnormally low levels of total Aurora B and its active phosphorylated form on Threonine 232 (Yasui et al., 2004). Noteworthy, even in those nocodazole- and actinomycin D-treated cells that showed high levels of pH3S10, Aurora B, including its active form, was found displaced along the chromosome arms (Figure 2A). Similar findings were found in non-transformed RPE1 cells (Figure 2\u2014figure supplement 1A\u2013B). Thus, actinomycin D compromises normal Aurora B localization and activity.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/36898/elife-36898-fig2-v2.jpg)\n\n**Figure 2.:** (A) Representative immunofluorescence images of HeLa cells treated with DMSO (NOC) or ActD for 8 hr (NOC\u00a0+\u00a0ActD) after nocodazole treatment with the indicated antibodies. In the NOC\u00a0+\u00a0ActD condition orange arrows highlight a mitotic cell with reduced levels of phosphorylated Histone H3 (H3\u2013pS10) and devoid of the active form of Aurora B (AurB pT232). Yellow arrows highlight a mitotic cell with abolished levels of phospho H3 (H3\u2013pS10) and devoid of total Aurora B. Scale bar\u00a0=\u00a05 \u00b5m. (B) Percentage of mitotic phospho H3-negative cells in control (NOC) and 8 hr actinomycin D (NOC\u00a0+\u00a0ActD)-treated HeLa cells. The bar graph represents the mean and the standard deviation from three independent experiments (NOC 0.0\u00a0\u00b1\u00a00.0, n\u00a0=\u00a0600; NOC\u00a0+\u00a0ActD, 16.1\u00a0\u00b1\u00a04.5, n\u00a0=\u00a0600; **p\u22640.01 relative to control, t test) (C) Representative immunofluorescence images of Hela cells treated with DMSO (NOC) or ActD for 4 hr (NOC\u00a0+\u00a0ActD) after nocodazole treatment with the indicated antibodies. Scale bar\u00a0=\u00a05 \u00b5m. 10x magnification of a pair of kinetochores are shown in the right. Dashed circle encompasses a single kinetochore and the arrow indicates the position of centromeric Aurora B. Scale bar\u00a0=\u00a00.5 \u00b5m. (D) Normalized ratio of pAurora B/ACA fluorescence signal at inner centromere of NOC and NOC\u00a0+\u00a0ActD. Each dot represents an individual kinetochore. The red line represents the mean of all quantified kinetochores and the error bars represent the standard deviation from a pool of at least two independent experiments. (NOC, 1.00\u00a0\u00b1\u00a00.48, n\u00a0=\u00a0474; NOC\u00a0+\u00a0ActD, 0.63\u00a0\u00b1\u00a00.23, n\u00a0=\u00a0309; ****p\u22640.0001 relative to control, Mann-Whitney Rank Sum Test). (E) Normalized ratio of Mad1/ACA fluorescence signal at outer kinetochores of NOC and NOC\u00a0+\u00a0ActD cells. Each dot represents an individual kinetochore. The red line represents the mean of all quantified kinetochores and the error bars represent the standard deviation from a pool of at least two independent experiments. (NOC, 1.00\u00a0\u00b1\u00a00.39, n\u00a0=\u00a0261; NOC\u00a0+\u00a0ActD, 0.55\u00a0\u00b1\u00a00.39, n\u00a0=\u00a0258; ****p\u22640.0001 relative to control, Mann-Whitney Rank Sum Test).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36898/elife-36898-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative immunofluorescence images of RPE1 cells treated with DMSO (NOC) or ActD for 4 hr (NOC\u00a0+\u00a0ActD) after nocodazole treatment with the indicated antibodies. Scale bar\u00a0=\u00a05 \u00b5m. (D) Normalized ratio of pAurora B/ACA fluorescence signal at inner centromere of NOC and NOC\u00a0+\u00a0ActD. Each dot represents an individual kinetochore. The red line represents the mean of all quantified kinetochores and the error bars represent the standard deviation from a pool of two technical replicates (NOC, 1.00\u00a0\u00b1\u00a00.42, n\u00a0=\u00a092; NOC\u00a0+\u00a0ActD, 0.83\u00a0\u00b1\u00a00.47, n\u00a0=\u00a092; *p\u22640.05 relative to control, Mann-Whitney Rank Sum Test).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36898/elife-36898-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Selected time frames from fluorescence microscopy of HeLa LAP-Aurora B cells treated with DMSO, ActD, CHX or AurBi after nocodazole treatment. Images were acquired every 10 min. Scale bar\u00a0=\u00a05 \u00b5m. Time\u00a0=\u00a0h:min. (B) Relative fluorescence intensity curves of centromeric GFP-Aurora B for control, ActD, CHX and AurBi treated HeLa cells after nocodazole treatment. Fluorescence intensities were normalized to the level at time\u00a0=\u00a00. The curves depict mean GFP-Aurora B fluorescent intensity from analyzed cells (NOC n\u00a0=\u00a09; NOC\u00a0+\u00a0ActD n\u00a0=\u00a08; NOC\u00a0+\u00a0CHX n\u00a0=\u00a07; NOC\u00a0+\u00a0AurBi n\u00a0=\u00a08; from time\u00a0=\u00a00 to 30 time frames), and error bars represent the standard deviation (n.s. p>0.05, ****p\u22640.0001 relative to control, Analysis of covariance). Plus symbol on the graph indicates the time when the drugs were added.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/36898/elife-36898-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Representative immunofluorescence images of HeLa cells treated with DMSO (NOC) or CHX for 4 hr (NOC\u00a0+CHX) after NOC treatment with the indicated antibodies. Scale bar\u00a0=\u00a05 \u00b5m. 10x magnification of a pair of kinetochores are shown in the right. Dashed circles encompass single kinetochores and the arrow indicate the position of centromeric Aurora B. Scale bar\u00a0=\u00a00.5 \u00b5m. (B) Normalized ratio of pAurora B/ACA fluorescence signal at centromeres of NOC and NOC\u00a0+\u00a0CHX treated cells. Each dot represents an individual kinetochore. The red line represents the mean of all quantified kinetochores and the error bars represent the standard deviation from a pool of two technical replicates. (NOC, 1.00\u00a0\u00b1\u00a00.48, n\u00a0=\u00a0474; NOC\u00a0+\u00a0CHX, 1.09\u00a0\u00b1\u00a00.40, n\u00a0=\u00a0116; n.s. p>0.05 relative to control, Mann-Whitney Rank Sum Test). (C) Representative immunofluorescence images of HeLa cells treated with DMSO (NOC) or Aurora B inhibitor for 4 hr (NOC\u00a0+\u00a0AurBi) after NOC treatment with the indicated antibodies. Scale bar\u00a0=\u00a05 \u00b5m.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/36898/elife-36898-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Representative immunofluorescence images of HeLa cells treated with DMSO (NOC) or ActD for 4 hr (NOC\u00a0+\u00a0ActD) after nocodazole treatment with the indicated antibodies. Scale bar\u00a0=\u00a05 \u00b5m. (B) Normalized ratio of pMPS1/ACA fluorescence signal at outer kinetochores of NOC and NOC\u00a0+\u00a0ActD cells. Each dot represents an individual kinetochore. The red line represents the mean of all quantified kinetochores and the error bars represent the standard deviation from a pool of two technical replicates (NOC, 1.00\u00a0\u00b1\u00a00.48, n\u00a0=\u00a099; NOC\u00a0+\u00a0ActD, 0.93\u00a0\u00b1\u00a00.57, n\u00a0=\u00a099; n.s. p>0.05 relative to control, Mann-Whitney Rank Sum Test). (C) Representative immunofluorescence images of HeLa cells treated with DMSO (NOC) or ActD for 4 hr (NOC\u00a0+\u00a0ActD) after nocodazole treatment with the indicated antibodies. Scale bar\u00a0=\u00a05 \u00b5m. (D) Normalized ratio of pH3T3/DAPI fluorescence signal of NOC and NOC\u00a0+\u00a0ActD cells. Each dot represents an individual cell. The red line represents the mean of all cells and the error bars represent the standard deviation from a pool of two technical replicates (NOC, 1.00\u00a0\u00b1\u00a00.48, n\u00a0=\u00a021; NOC\u00a0+\u00a0ActD, 0.82\u00a0\u00b1\u00a00.16, n\u00a0=\u00a022; n.s. p>0.05 relative to control, t test).\n\nIn order to get spatiotemporal insight into the effect of actinomycin D on Aurora B localization, we monitored GFP-Aurora B by quantitative fluorescence live-cell microscopy in nocodazole-treated cells. Additionally, we further tested whether Aurora B localization was dependent on mitotic translation and on its own kinase activity by inhibiting protein synthesis with cycloheximide and treating cells with the Aurora B inhibitor ZM447439, respectively. We found that while Aurora B centromeric levels remained constant over a 5-hr period in cells treated either with nocodazole alone or nocodazole and cycloheximide, actinomycin D caused the displacement of Aurora B from centromeres onto chromosome arms 2 hr after addition of actinomycin D, leading to a 30% reduction of centromeric fluorescence after 4 hr (p<0.0001, ANCOVA, Figure 2\u2014figure supplement 2A,B). Curiously, Aurora B inhibition led to an enrichment of its own levels at centromeres, without any detectable displacement onto chromosome arms (Figure 2\u2014figure supplement 2A,B). These observations were confirmed by immunofluorescence analysis in fixed cells (Figure 2C,D and Figure 2\u2014figure supplement 3A\u2013C). These data directly demonstrate that actinomycin D displaces Aurora B from centromeres.\n\nWe then tested whether actinomycin D treatment compromised the localization of Mad1 at unattached kinetochores. We found that addition of actinomycin D for 4 hr to nocodazole-treated cells led to a 45% reduction of Mad1 at the outer kinetochore (Figure 2C,E). Similar findings have previously been reported for the SAC proteins Bub1 and BubR1 (Becker et al., 2010). Importantly, actinomycin D treatment for 4 hr did not affect the kinetochore localization of active Mps1 (Mps1 pT676; (Jelluma et al., 2008)) (Figure 2\u2014figure supplement 4A,B) or the phosphorylation of histone H3 at threonine 3 (H3T3p), a proxy for Haspin activity previously implicated in Aurora B recruitment to centromeres (Kelly et al., 2010; Wang et al., 2010) (Figure 2\u2014figure supplement 4C,D). Taken together, these experiments show that actinomycin D compromises the normal localization of Aurora B at centromeres and SAC proteins to unattached kinetochores, independently of an effect over Mps1 and Haspin kinase activity.\n\n### Actinomycin D or Aurora B inhibition disturbs the kinetochore recruitment of Knl1 and Mad1\n\nNext, we investigated whether the reduction of Mad1 at unattached kinetochores in the presence of actinomycin D was induced by the perturbation of Aurora B localization and activity at centromeres. To do so, we started by evaluating the status of known Aurora B substrates within the KMN network (Welburn et al., 2010) after actinomycin D treatment. Consistent with an attenuation of Aurora B activity at centromeres, we found that addition of actinomycin D for 4 hr to nocodazole-treated cells led to a 22% and 43% reduction on the phosphorylation levels of Knl1 and Dsn1 (a member of the Mis12 complex), respectively (Figure 3A\u2013D). Interestingly, we also found a 29% reduction in total Knl1 (Figure 3E,F), whereas total Dsn1, Hec1 (a member of the Ndc80 complex) and CENP-A were unaffected by actinomycin D treatment (Figure 3G,H, Figure 3\u2014figure supplement 1A\u2013D). Thus, perturbation of Aurora B centromeric localization by actinomycin D translates into a local reduction of activity and the consequent decrease in phosphorylation of key Aurora B substrates at the kinetochore. Moreover, while actinomycin D treatment for 4 hr does not perturb the normal localization of CENP-A and members of the Ndc80 and Mis12 complex, it compromises the recruitment of Knl1 to unattached kinetochores.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/36898/elife-36898-fig3-v2.jpg)\n\n**Figure 3.:** (A) Representative immunofluorescence images of HeLa cells treated with DMSO (NOC) or ActD for 4 hr (NOC\u00a0+\u00a0ActD) after nocodazole treatment with the indicated antibodies. Scale bar\u00a0=\u00a05 \u00b5m. (B) Normalized ratio of pKNL1/ACA fluorescence signal at outer kinetochores of NOC and NOC\u00a0+\u00a0ActD cells. Each dot represents an individual kinetochore. The red line represents the mean of all quantified kinetochores and the error bars represent the standard deviation from a pool of two technical replicates (NOC, 1.00\u00a0\u00b1\u00a00.40, n\u00a0=\u00a0126; NOC\u00a0+\u00a0ActD, 0.79\u00a0\u00b1\u00a00.35, n\u00a0=\u00a0126; ****p\u22640.0001 relative to control, t test). (C) Representative immunofluorescence images of Hela cells treated with DMSO (NOC) or ActD for 4 hr (NOC\u00a0+\u00a0ActD) after nocodazole treatment with the indicated antibodies. Scale bar\u00a0=\u00a05 \u00b5m. (D) Normalized ratio of pDNS1/ACA fluorescence signal at outer kinetochores of NOC and NOC\u00a0+\u00a0ActD cells. Each dot represents an individual kinetochore. The red line represents the mean of all quantified kinetochores and the error bars represent the standard deviation from a pool of two technical replicates (NOC, 1.00\u00a0\u00b1\u00a00.37, n\u00a0=\u00a0116; NOC\u00a0+\u00a0ActD, 0.57\u00a0\u00b1\u00a00.29, n\u00a0=\u00a0116; ****p\u22640.0001 relative to control, Mann-Whitney Rank Sum Test). (E) Representative immunofluorescence images of HeLa cells treated with DMSO (NOC) or ActD for 4 hr (NOC\u00a0+\u00a0ActD) after nocodazole treatment with the indicated antibodies. Scale bar\u00a0=\u00a05 \u00b5m. (F) Normalized ratio of KNL1/ACA fluorescence signal at outer kinetochores of NOC and NOC\u00a0+\u00a0ActD cells. Each dot represents an individual kinetochore. The red line represents the mean of all quantified kinetochores and the error bars represent the standard deviation from a pool of two technical replicates (NOC, 1.00\u00a0\u00b1\u00a00.34, n\u00a0=\u00a0160; NOC\u00a0+\u00a0ActD, 0.71\u00a0\u00b1\u00a00.34, n\u00a0=\u00a0160; ****p\u22640.0001 relative to control, Mann-Whitney Rank Sum Test). (G) Representative immunofluorescence images of HeLa cells treated with DMSO (NOC) or ActD for 4 hr (NOC\u00a0+\u00a0ActD) after nocodazole treatment with the indicated antibodies. Scale bar\u00a0=\u00a05 \u00b5m. (H) Normalized ratio of DSN1/ACA fluorescence signal at outer kinetochores of NOC and NOC\u00a0+\u00a0ActD cells. Each dot represents an individual kinetochore. The red line represents the mean of all quantified kinetochores and the error bars represent the standard deviation from a pool of two technical replicates (NOC, 1.00\u00a0\u00b1\u00a00.34, n\u00a0=\u00a0110; NOC\u00a0+\u00a0ActD, 0.96\u00a0\u00b1\u00a00.32, n\u00a0=\u00a0110; n.s. p>0.05 relative to control, t test).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36898/elife-36898-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Scale bar\u00a0=\u00a05 \u00b5m. (B) Normalized ratio of HEC1/ACA fluorescence signal at outer kinetochores of NOC and NOC\u00a0+\u00a0ActD cells. Each dot represents an individual kinetochore. The red line represents the mean of all quantified kinetochores and the error bars represent the standard deviation from a pool of two technical replicates (NOC, 1.00\u00a0\u00b1\u00a00.30, n\u00a0=\u00a0112; NOC\u00a0+\u00a0ActD, 0.93\u00a0\u00b1\u00a00.32, n\u00a0=\u00a0112; n.s. p>0.05 relative to control, Mann-Whitney Rank Sum Test). (C) Representative immunofluorescence images of HeLa cells treated with DMSO (NOC) or ActD for 4 hr (NOC\u00a0+\u00a0ActD) after nocodazole treatment with the indicated antibodies. Scale bar\u00a0=\u00a05 \u00b5m. (D) Normalized ratio of CENP-A/ACA fluorescence signal at outer kinetochores of NOC and NOC\u00a0+\u00a0ActD cells. Each dot represents an individual kinetochore. The red line represents the mean of all quantified kinetochores and the error bars represent the standard deviation from a pool of two technical replicates (NOC, 1.00\u00a0\u00b1\u00a00.35, n\u00a0=\u00a0116; NOC\u00a0+\u00a0ActD, 1.04\u00a0\u00b1\u00a00.26, n\u00a0=\u00a0116; n.s. p>0.05 relative to control, Mann-Whitney Rank Sum Test).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36898/elife-36898-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Representative immunofluorescence images of HeLa cells treated with DMSO (NOC) or Aurora B inhibitor for 4 hr (NOC\u00a0+\u00a0AurBi) after NOC treatment with the indicated antibodies. Scale bar\u00a0=\u00a05 \u00b5m. (B) Normalized ratio of Mad1/ACA fluorescence signal at outer kinetochores of NOC and NOC\u00a0+\u00a0AurBi cells. Each dot represents an individual kinetochore. The red line represents the mean of all quantified kinetochores and the error bars represent the standard deviation from a pool of two technical replicates (NOC, 1.00\u00a0\u00b1\u00a00.36, n\u00a0=\u00a0105; NOC\u00a0+\u00a0AurBi, 0.62\u00a0\u00b1\u00a00.29, n\u00a0=\u00a0110; ****p\u22640.0001 relative to control, Mann-Whitney Rank Sum Test). (C) Representative immunofluorescence images of HeLa cells treated with DMSO (NOC) or Aurora B inhibitor for 4 hr (NOC\u00a0+\u00a0AurBi) after NOC treatment with the indicated antibodies. Scale bar\u00a0=\u00a05 \u00b5m. (D) Normalized ratio of KNL1/ACA fluorescence signal at outer kinetochores of NOC and NOC\u00a0+\u00a0AurBi cells. Each dot represents an individual kinetochore. The red line represents the mean of all quantified kinetochores and the error bars represent the standard deviation from a pool of two technical replicates (NOC, 1.00\u00a0\u00b1\u00a00.34, n\u00a0=\u00a099; NOC\u00a0+\u00a0AurBi, 0.72\u00a0\u00b1\u00a00.37, n\u00a0=\u00a092; ****p\u22640.0001 relative to control, t test).\n\nBecause Knl1 is known to recruit several SAC proteins (including Mad1) to kinetochores (Musacchio, 2015a), we tested whether Knl1 and Mad1 recruitment to kinetochores depends on Aurora B activity at centromeres. We found that, similar to actinomycin D treatment, Aurora B inhibition in nocodazole-treated cells caused a 38% and 28% reduction of Mad1 and Knl1 at unattached kinetochores, respectively (Figure 3\u2014figure supplement 2A\u2013D). Importantly, it has previously been shown that constitutive targeting of Aurora B to centromeres by expressing a Cenp-B-INCENP fusion protein was able to rescue SAC response in actinomycin D-treated cells (Becker et al., 2010). Overall, these data suggest that perturbation of Aurora B localization and consequent decrease in activity at centromeres is the primary effect of Actinomycin D treatment and this likely accounts for the weakened SAC response due to a downstream effect over Knl1 and Mad1 recruitment.\n\n### Actinomycin D does not affect total CPC protein levels nor the levels of mitotic transcripts\n\nWestern blot analysis revealed that Aurora B, as well as the total protein levels of the CPC regulatory subunits Survivin and Borealin remained unchanged relative to controls (including inhibition of translation during mitosis with cycloheximide or Aurora B inhibition with ZM447439) after 4 hr treatment with actinomycin D (Figure 4A\u2013C). To test whether Aurora B was regulated by an effect of actinomycin D over mitotic transcription, we performed a comparative genome-wide RNA-seq analysis between cells treated either with nocodazole alone or nocodazole and actinomycin D. Importantly, only mitotic cells were analyzed, as they were obtained by shake-off after nocodazole treatment and subsequently transferred to new culture flasks before addition of actinomycin D (Figure 4A). Our quantitative transcriptome analysis did not reveal any significant changes either in annotated or novel assembled transcripts (including all biotypes) upon actinomycin D treatment, ruling out differential gene expression after transcription inhibition during mitosis. Importantly, we confirmed that Cyclin B1, as well as all key mitotic regulators, including Aurora B, were not de novo transcribed even during a prolonged mitosis (Figure 4D; see Materials and methods).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/36898/elife-36898-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic representation of the experimental protocol used to study the effect of ActD in NOC induced mitotic arrested cells by western blot, RNA-seq and qPCR. (B) Western blot analysis of asynchronous (I), G2, and mitotic HeLa cell extracts (Mitosis) with the indicated antibodies. Mitotic extracts were derived from isolated mitotic cells treated cells with DMSO (control), ActD (ActD), cycloheximide (CHX) or Aurora B inhibitor (AurBi). \u03b1-tubulin was used as loading control. Approximate molecular weights are shown on the left. (C) Quantification of western blot is depicted in B. The bar represents the mean and the standard deviation from three independent experiments. (D) Normalized expression after RNA-seq of the indicated genes in control or ActD-treated mitotic cells. Error bars represent standard deviations from two independent experiments. (E) Normalized expression after qPCR of human alpha satellite gene in control or ActD-treated mitotic cells (NOC, 1.00\u00a0\u00b1\u00a00.01; NOC\u00a0+\u00a0ActD, 0.95\u00a0\u00b1\u00a00.02, median\u00a0\u00b1SD from three technical replicates, n.s. p>0.05 relative to control, Mann-Whitney Rank Sum Test). (F) Agarose gel electrophoresis of the qPCR product after amplification of cDNA, obtained from control or ActD-treated mitotic cells, with primers specific for the human alpha-satellite and GAPDH.\n\nDue to the low mappability of the centromere, RNA-seq reads could not be properly aligned to these regions. Consequently, the role of centromeric transcription, namely of regulatory non-coding RNAs, could not be properly assessed in the previous experiment. Nevertheless, we were able to directly measure by qPCR the expression of centromeric \u03b1-satellite RNA relative to a control house-keeping gene (GAPDH) in cells that had been arrested in mitosis with nocodazole, in the presence or absence of actinomycin D. We found that actinomycin D treatment did not reduce the level of centromeric \u03b1-satellite RNA (Figure 4E,F). Taken together, our results demonstrate that inhibition of transcription with actinomycin D during a prolonged mitosis caused by persistently unattached kinetochores does not impair normal transcript levels, including centromeric \u03b1-satellite RNA, nor the normal levels of CPC proteins.\n\n### Inhibition of transcription independently of DNA-intercalation does not affect spindle assembly checkpoint robustness nor the capacity to trigger mitotic cell death\n\nSo far, our results indicated that actinomycin D compromises SAC response and Aurora B centromeric localization independently of de novo transcription. Therefore, we reasoned that actinomycin D could displace Aurora B from centromeres, not by inhibiting mitotic transcription, but through its ability to intercalate with DNA. In line with this hypothesis, it was previously shown that actinomycin D, but not \u03b1-amanitin [a potent and selective inhibitor of RNA polymerase II that triggers the degradation of the largest RNA polymerase II subunit (Nguyen et al., 1996), interferes with the normal centromeric localization of Aurora B (Becker et al., 2010). However, \u03b1-amanitin is a slow-uptake drug and inhibition of transcription was not confirmed in these studies. For this reason, we first compared the effect of \u03b1-amanitin with that of actinomycin D or triptolide, a fast and irreversible transcription inhibitor that prevents the formation of the \u2018transcription bubble\u2019 without intercalating with DNA (Titov et al., 2011; Visp\u00e9 et al., 2009). To determine the extent of transcription inhibition by these drugs, we used qPCR to amplify Mcl1, a short half-life transcript isolated from asynchronous cells after 4 hr treatment either with \u03b1-amanitin, actinomycin D or triptolide. As suspected, we could not detect any significant effect of \u03b1-amanitin over Mcl1 transcript levels relative to controls (Figure 5A). In sharp contrast, treatment with either actinomycin D or triptolide resulted in a 5-fold decrease in Mcl1 transcript levels (Figure 5A) and led interphase cells to death within 4\u20135 hr in the presence of either actinomycin D or triptolide (Videos 1 and 2), suggesting an efficient and equivalent inhibition of transcription in both scenarios. Finally, we confirmed that, within the time course of our experiment, triptolide, but not \u03b1-amanitin, caused the degradation of the large subunit of RNA Polymerase II (Figure 5\u2014figure supplement 1A). Thus, triptolide, but not \u03b1-amanitin, efficiently inhibits transcription in living cells and it does so independently of DNA intercalation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/36898/elife-36898-fig5-v2.jpg)\n\n**Figure 5.:** (A) Normalized expression of Mcl1 in asynchronous control HeLa cells or cells treated with ActD, triptolide or \u03b1-amanitin (ActD, 0.23\u00a0\u00b1\u00a00.02, Triptolide, 0.14\u00a0\u00b1\u00a00.03; \u03b1-amanitin, 1.13\u00a0\u00b1\u00a00.2, median\u00a0\u00b1SD from three technical replicates, n.s. p>0.05, ****p\u22640.0001 relative to control, t test). (B) Scatter plot showing the duration of the mitotic arrest of control (NOC) and HeLa cells treated with Triptolide (NOC\u00a0+\u00a0Triptolide) after nocodazole treatment. The red line represents the mean and the error bars represent the standard deviation from a pool of at least two independent experiments. (NOC, 19.2\u00a0\u00b1\u00a07.0 hr, n\u00a0=\u00a0386; NOC\u00a0+\u00a0Triptolide, 30.1\u00a0\u00b1\u00a014.7 hr, n\u00a0=\u00a0301; median\u00a0\u00b1SD; n.s. p>0.05, Mann-Whitney Rank Sum Test) (C) Cell fate of mitotic HeLa cells treated with the same drugs as in 4B. (D) Representative immunofluorescence images of HeLa cells treated with DMSO (NOC) or Triptolide for 4 hr (NOC\u00a0+\u00a0Triptolide) after nocodazole treatment with the indicated antibodies. Scale bar\u00a0=\u00a05 \u00b5m. 10x magnification of a pair of kinetochores are shown in the right. Dashed circle encompasses a single kinetochore and the arrow indicates the position of centromeric Aurora B. Scale bar\u00a0=\u00a00.5 \u00b5m. (E) Normalized ratio of pAurora B/ACA fluorescence signal at inner centromere of NOC and NOC\u00a0+\u00a0Triptolide. Each dot represents an individual kinetochore. The red line represents the mean of all quantified kinetochores and the error bars represent the standard deviation from a pool of two independent experiments. (NOC, 1.00\u00a0\u00b1\u00a00.48, n\u00a0=\u00a0474; NOC\u00a0+\u00a0Triptolide, 1.05\u00a0\u00b1\u00a00.00.40, n\u00a0=\u00a0296; n.s. p>0.05 relative to control, Mann-Whitney Rank Sum Test) (F) Selected time frames from fluorescence microscopy of HeLa LAP-Aurora B cells treated with DMSO or Triptolide after nocodazole treatment. Images were acquired every 10 min. Scale bar\u00a0=\u00a05 \u00b5m. Time\u00a0=\u00a0h:min. (G) Relative fluorescence intensity curves of centromeric GFP-Aurora B for control and Triptolide-treated HeLa cells after nocodazole treatment. Fluorescence intensities were normalized to the level at time\u00a0=\u00a00. The curves depict mean GFP-Aurora B fluorescent intensity from analyzed cells (NOC n\u00a0=\u00a09; NOC\u00a0+\u00a0Triptolide n\u00a0=\u00a08; from time\u00a0=\u00a00 to 30 time frames), and error bars represent the standard deviation (n.s. p>0.05 relative to control, Analysis of covariance). Plus symbol on the graph indicates the time when the drug was added.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36898/elife-36898-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Western blot analysis of control asynchronous HeLa cells extracts or asynchronous HeLa cells treated with \u03b1-amanitin or Triptolide with the indicated antibodies. Cell lysates were resolved with 7% SDS-PAGE. \u03b1-tubulin was used as loading control. Dashed lines indicate that intervening lanes have been spliced out. Approximate molecular weights indicated on the left.\n\n![Video 2.](https://cdn.elifesciences.org/articles/36898/elife-36898-video2.mp4.jpg)\n\n**Video 2.:** Images were acquired every 15 min. Time = h:min.\n\nNext, we investigated whether transcription inhibition with triptolide compromises SAC robustness in cells treated with nocodazole. We found no significant differences in mitotic duration between nocodazole-treated cells with or without triptolide (19.3\u00a0\u00b1\u00a07.1 hr vs 19.5\u00a0\u00b1\u00a05.8 hr, respectively, median\u00a0\u00b1SD, n\u00a0=\u00a0301 cells, p=0.65, Mann-Whitney Rank Sum Test, Figure 5B and Video 2). Moreover, contrary to what was previously observed in the case of actinomycin D, we did not detect any effect of triptolide over cell fate after the mitotic delay imposed by nocodazole treatment and most cells died in mitosis (Figure 5C and Video 2). Triptolide also did not cause the displacement of Aurora B from centromeres in both fixed and live-cell assays (Figure 5D\u2013G). These results, supported by our RNA-seq data, indicate that SAC robustness, Aurora B centromeric localization, as well as the capacity to die in mitosis after a prolonged mitotic delay is independent of de novo transcription.\n\n### DNA intercalation interferes with the interaction between the CPC and nucleosomes\n\nOur previous results suggest that DNA intercalation, rather than transcriptional inhibition, causes the displacement of Aurora B from centromeres. To test this, we took advantage from another bona fide DNA intercalating compound, ethidium bromide, which has not been implicated in transcription inhibition (Bensaude, 2011). Indeed, we found that interphase cells were able to enter mitosis after treatment with ethidium bromide (Video 2). Additionally, Mcl1 transcript levels were only slightly decreased (without statistic significance) after 4 hr of ethidium bromide treatment (Figure 6A). In agreement, cells treated with nocodazole and ethidium bromide spent slightly less time in mitosis when compared to cells treated with nocodazole only, but the difference was not statistically relevant (19.2\u00a0\u00b1\u00a07.0 hr vs 18.1\u00a0\u00b1\u00a05.9 hr, median\u00a0\u00b1SD, n\u00a0=\u00a0386;151 cells/condition, p=0.13, Mann-Whitney Rank Sum Test, Figure 6B and Video 2). However, similar to actinomycin D, ethidium bromide caused a significant effect over cell fate after the mitotic delay imposed by nocodazole, causing mitotic slippage in approximately 50% of the cells (Figure 6C and Video 2). Ethidium bromide also displaced Aurora B from centromeres in fixed cells, although to a less extent when compared with actinomycin D (Figure 6D,E). These data suggest that DNA intercalating drugs interfere with normal Aurora B localization at centromeres and compromise cell fate after a prolonged mitosis.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/36898/elife-36898-fig6-v2.jpg)\n\n**Figure 6.:** (A) Normalized expression of Mcl1 in asynchronous control HeLa cells or cells treated with ethidium bromide (EtBr) (EtBr, 0.71\u00a0\u00b1\u00a00.06, median\u00a0\u00b1SD from three technical replicates, n.s. p>0.05, Mann-Whitney Rank Sum Test). (B) Scattered plot showing the duration of the mitotic arrest of control (NOC) and Hela cells treated with ethidium bromide (NOC\u00a0+\u00a0EtBr) after nocodazole treatment (NOC, 19.2\u00a0\u00b1\u00a07.0 hr, n\u00a0=\u00a0386; NOC\u00a0+\u00a0EtBr, 18.1\u00a0\u00b1\u00a05.9 hr, n\u00a0=\u00a0151; median\u00a0\u00b1SD; n.s. p>0.05, Mann-Whitney Rank Sum Test). The red line represents the mean and the error bars represent the standard deviation from a pool of at least two independent experiments. (C) Cell fate of mitotic HeLa cells treated with the same drugs as in 5B. (D) Representative immunofluorescence images of HeLa cells treated with DMSO (NOC) or ethidium bromide for 4 hr (NOC\u00a0+\u00a0EtBr) after nocodazole treatment with the indicated antibodies. Scale bar\u00a0=\u00a05 \u00b5m. 10x magnification of a pair of kinetochores are shown in the right. Dashed circle encompasses a single kinetochore and the arrow indicate the position of centromeric Aurora B. Scale bar\u00a0=\u00a00.5 \u00b5m. (E) Normalized ratio of pAurora B/ACA fluorescence signal at inner centromere of NOC and NOC\u00a0+\u00a0EtBr. Each dot represents an individual kinetochore. The red line represents the mean of all quantified kinetochores and the error bars represent the standard deviation. (NOC, 1.00\u00a0\u00b1\u00a00.48, n\u00a0=\u00a0474; NOC\u00a0+\u00a0EtBr, 0.79\u00a0\u00b1\u00a00.23, n\u00a0=\u00a0143; ****p\u22640.0001 relative to control, Mann-Whitney Rank Sum Test). (F) Shows the Electrophoretic Mobility Shift Assay (EMSA) experiments carried out to assess the binding chromosomal passenger complex (CPC) ability to recombinant nucleosome core particles (NCPs) in the presence of DMSO, ActD, Triptolide or EtBr. Different molar concentrations (0, 25 and 50 nM) of CPC were tested. (G) The bar diagram shows the densitometric profile of the autoradiograph depicted in F. The bar represents the mean\u00a0\u00b1SD from at least three independent experiments (n.s. p>0.05, *p\u22640.05 relative to control, t test).\n\nTo directly test whether DNA intercalating drugs interfere with the capacity of Aurora B to associate with centromeric chromatin, we probed the ability of the CPC Centromere Targeting Module (CPC-CTM), composed by full-length Borealin, full-length Survivin and INCENP 1\u201358, to bind recombinant nucleosome core particles (NCPs) by means of Electrophoretic Mobility Shift Assays (EMSA), in the presence or absence of actinomycin D, ethidium bromide or triptolide (Figure 6F). Consistent with our fixed and live-cell data, actinomycin D or ethidium bromide-treated NCPs showed\u00a0~50% reduction in CPC-CTM binding, when compared to DMSO- or Triptolide-treated NCPs (p\u22640.05, t test, Figure 6G). Thus, DNA intercalating drugs interfere with centromere integrity.\n\n### The capacity to satisfy the spindle assembly checkpoint and resume mitosis and cytokinesis after a prolonged mitotic delay does not require de novo transcription\n\nLastly, we tested whether the capacity to progress and exit mitosis requires de novo mitotic transcription. To assure an efficient transcriptional repression during mitosis, we performed a nocodazole washout experiment. Accordingly, HeLa cells were incubated for 5 hr with nocodazole and the transcription inhibitors (actinomycin D or triptolide) were added in the last 2 hr of the mitotic blockage. Nocodazole was subsequently washed out and the cells were allowed to progress through mitosis only in the presence of the transcription inhibitors (Figure 7A,B and Video 3). Live-cell imaging was used to directly determine the duration of mitosis, while assessing cell fate. We found that control and triptolide-treated cells took a similar time to exit mitosis after nocodazole washout (79.1\u00a0\u00b1\u00a028.7 min vs 86.2\u00a0\u00b1\u00a031.7 min, median\u00a0\u00b1\u00a0SD, n\u00a0=\u00a0116;113 cells/condition, p=0.11, Mann-Whitney Rank Sum Test, Figure 7C and Video 3) without any apparent defect (Figure 7D and Video 3). In contrast, actinomycin D-treated cells showed a significant delay in mitotic exit (Figure 7C and Video 3) and underwent mitotic slippage (33%) or failed cytokinesis (47%) (Figure 7D and Video 3). Close inspection of actinomycin D-treated cells after nocodazole washout by immunofluorescence revealed persistent DNA bridges at the cleavage furrow (Figure 7\u2014figure supplement 1A), which might have accounted for the observed failure in completing cytokinesis. Taken together, these experiments indicate that the capacity of human cells to progress and exit mitosis, including the completion of cytokinesis, is independent of de novo transcription.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/36898/elife-36898-fig7-v2.jpg)\n\n**Figure 7.:** (A) Schematic representation of the experimental protocol used to study the effect of the transcription inhibitors ActD and triptolide on mitotic progression. (B) Selected time frames from phase contrast microscopy of HeLa cells treated after the NOC washout with DMSO, ActD or Triptolide. Images were acquired every 20 min. For control (DMSO) and Triptolide (Triptolide), arrows highlight a normal mitotic progression after nocodazole washout. For ActD-treated cells (ActD), arrows highlight a cell that fails to divide after release from nocodazole arrest. Scale bar\u00a0=\u00a010 \u00b5m. Time\u00a0=\u00a0hr:min. (C) Scattered plot showing the mitotic duration between nocodazole washout and anaphase onset in control (DMSO), ActD and Triptolide treated HeLa cells (DMSO, 79.1\u00a0\u00b1\u00a028.8 min, n\u00a0=\u00a0116; ActD, 140.5\u00a0\u00b1\u00a055.7 hr, n\u00a0=\u00a079; Triptolide, 86.2\u00a0\u00b1\u00a031.9 hr, n\u00a0=\u00a0113, median\u00a0\u00b1SD from a pool of two technical replicates, n.s. p>0.05, ****p\u22640.0001, Mann-Whitney Rank Sum Test). (D) Cell fate of mitotic HeLa cells treated with the same drugs as in 7B.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36898/elife-36898-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Representative immunofluorescence images of HeLa cells treated with DMSO, ActD or Triptolide for 2 hr after the NOC washout with the indicated antibodies. For ActD-treated cells, arrow highlights a cell with missegregated DNA in the spindle midzone. Scale bar\u00a0=\u00a05 \u00b5m. Dashed square encompasses a DNA bridge on the midzone and respective 5x magnification.\n\n![Video 3.](https://cdn.elifesciences.org/articles/36898/elife-36898-video3.mp4.jpg)\n\n**Video 3.:** Images were acquired every 20 min. Time = hr:min.\n\n## Discussion\n\nWhether transcription is permissive and required during mitosis is a recurrent debate in the field. The resolution of this long-lasting controversy has been hampered by the difficulty to efficiently and specifically repress transcription during mitosis, which often takes only\u00a0~30 min in human cells. It has, however, been proposed that the master mitotic regulator Cyclin B1 is actively transcribed during mitosis (Sciortino et al., 2001) and de novo transcription is required to sustain a mitotic delay under conditions that prevent SAC satisfaction for several hours (Mena et al., 2010). Centromere/kinetochore assembly has also been linked to active transcription (Bobkov et al., 2018; Carone et al., 2009; Chan et al., 2012; Du et al., 2010; Grenfell et al., 2016; Li et al., 2008; Liu et al., 2015; Nakano et al., 2003; Pezer and Ugarkovi\u0107, 2008; Ro\u0161i\u0107 et al., 2014; Topp et al., 2004; Wong et al., 2007; Zhang et al., 2005), including the localization and activity of Aurora B, as shown in Xenopus egg extracts (Blower, 2016; Grenfell et al., 2016). More recently, an entire transcription program was proposed to remain constitutively active during mitosis and mitotic exit in human cells (Palozola et al., 2017; Strzyz, 2017; Timmers and Verrijzer, 2017), but whether this potential program is required for mitotic progression and exit was not elucidated.\n\nBy combining direct live-cell imaging, while monitoring the efficiency and specificity of transcription inhibition at the whole genome level, we show that the capacity of human cells to sustain, progress, exit or die in mitosis does not require de novo transcription. Moreover, we demonstrate that commonly used transcription inhibitors, such as actinomycin D and \u03b1-amanitin show serious limitations in live-cell experiments that aim to understand mitosis. Actinomycin D and other DNA intercalating agents caused partial dissociation of the CPC from nucleosomes, thereby compromising Aurora B centromeric localization and SAC response. On the other hand, the slow uptake drug \u03b1-amanitin failed to efficiently inhibit transcription even after several hours in mitosis. Most importantly, efficient inhibition of mitotic transcription independently of DNA intercalation using triptolide had no discernible effect over Aurora B centromeric localization or SAC response. We concluded that centromere integrity, rather than mitotic transcription, is required for proper localization and activity of Aurora B and to mount a robust SAC able to sustain mitosis in human cells for several hours in the event of unattached kinetochores. These findings are consistent with a role of Aurora B in the SAC under conditions that prevent microtubule attachment (Santaguida et al., 2011) and our work offers a possible explanation for such a role. Accordingly, we showed that both Aurora B activity and its stable association with centromeres are important for normal Knl1 and Mad1 recruitment to unattached kinetochores. However, at this stage, we cannot formally exclude other effects caused by a prolonged actinomycin D treatment under conditions that prevent SAC satisfaction.\n\nIn light of a recent study reporting the identification of over 900 nascent transcripts from allegedly metaphase cells (Palozola et al., 2017), it was surprising that our genome wide RNA-seq or qPCR analyses failed to reveal any significant alteration in gene expression, including Cyclin B1 and other mitotic genes, during a prolonged mitosis after transcription inhibition with actinomycin D. However, in the previous study, nocodazole-treated cells were only 95% pure and transcripts isolated 40 min after nocodazole washout might have derived from cells that had already exited mitosis and reached early G1 stage where transcription is expected to be permissive (Hsiung et al., 2016). Thus, the use of synchronized, yet impure, cell populations, as opposed to monitoring transcription inhibition only after cells commit to mitosis by direct live-cell imaging, might account for the differences observed between studies. Nevertheless, it remains possible that, as cells progress through mitosis and enter anaphase, de novo transcription starts to be permissive, despite its dispensability for the completion of and exit from mitosis.\n\nConsistent with a global shut-down of transcription during prometaphase (the physiological equivalent of nocodazole-arrested cells), RNA Polymerase II is generally found displaced from chromatin (Hsiung et al., 2016), with the notorious exception of the centromeric region (Chan et al., 2012). Because recent studies have suggested that non-coding RNAs associate with centromere and kinetochore proteins, including CENP-A, CENP-C and Aurora B (Blower, 2016; Carone et al., 2009; Du et al., 2010; Ferri et al., 2009; Molina et al., 2017, 2016; Ro\u0161i\u0107 et al., 2014; Wong et al., 2007), it is possible that transcription of non-coding RNAs plays a role in centromere assembly and function. However, whether this occurs during mitosis or during G1, when centromere assembly takes place in mammalian cells (Jansen et al., 2007) remains unclear. Centromeric transcription is involved in nucleosome disassembly during interphase (Boeger et al., 2003) to facilitate the replacement of histone H3 by CENP-A (McKittrick et al., 2004; Tagami et al., 2004). Intriguingly, the observation that the elongating form of RNA Polymerase II is present at centromeres during mitosis (Chan et al., 2012) leave open the possibility that some level of local transcription of non-coding RNAs might still take place. However, it should be noted that a recent study in S. pombe indicated that RNA Polymerase II stalls at centromeric DNA and the level of stalling is directly proportional to the level of cnp1p (centromere-specific histone H3) nucleosome assembly (Catania et al., 2015).\n\nWhile we were unable to experimentally exclude that non-coding RNAs are being transcribed from the centromere during a prolonged mitosis, we failed to detect any significant change in the total levels of \u03b1-satellite RNA after transcription inhibition, in agreement with previous reports (Liu et al., 2015). Indeed, experimental increase of \u03b1-satellite RNA levels were shown to reduce the binding of Sgo1 to nucleosomes (Liu et al., 2015) and led to problems in chromosome segregation (Chan et al., 2017; Zhu et al., 2011), suggesting that the levels of \u03b1-satellite RNA must be tightly regulated to ensure a faithful mitosis.\n\nOverall, our results demonstrate that, regardless of our capacity to detect residual transcription that might still take place on specific chromosomal loci during mitosis, this is not required for human cells to sustain, progress, exit or die in mitosis.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HeLa parental</td>\n      <td>Provided by Y. Mimori-Kiyosue</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>GFP-Aurora B HeLa</td>\n      <td>Provided by M. Lampson</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>Cyclin B1- Venus HeLa</td>\n      <td>Provided by J. Pines</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Aurora B pT232 (Rabbit Polyclonal)</td>\n      <td>Rockland Immuno chemicals</td>\n      <td>Cat#600-401-677</td>\n      <td>IF: (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Aim1 (Mouse Monoclonal)</td>\n      <td>BD Biosciences</td>\n      <td>Cat#611083</td>\n      <td>IF: (1:500) WB: (1:1,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Mad1 (Mouse Monoclonal)</td>\n      <td>Merck Millipore</td>\n      <td>Cat#MABE867</td>\n      <td>IF: (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-phospho- Histone H3 Ser10 (Mouse Monoclonal)</td>\n      <td>Abcam</td>\n      <td>Cat#ab14955</td>\n      <td>IF: (1:100,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Cleaved Caspase-3 (Rabbit Polyclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat#9661</td>\n      <td>IF: (1:1,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Centromere antibody (Human)</td>\n      <td>Fitzgerald</td>\n      <td>Cat#90C-CS1058</td>\n      <td>IF: (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-phospho- Mps1 Thr676 (Rabbit Polyclonal)</td>\n      <td>a gift from G. Kops</td>\n      <td></td>\n      <td>IF: (1:2,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-phospho- Histone H3 Thr3 (Mouse Monoclonal)</td>\n      <td>a gift from J. Higgins</td>\n      <td></td>\n      <td>IF: (1:1,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-HEC1 (Mouse Monoclonal)</td>\n      <td>a gift from R. Gassmann</td>\n      <td></td>\n      <td>IF: (1:2,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-KNL1 (Rabbit Polyclonal)</td>\n      <td>a gift from R. Gassmann</td>\n      <td></td>\n      <td>IF: (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-phosho DSN1 (Rabbit Polyclonal)</td>\n      <td>a gift from I. Cheeseman</td>\n      <td></td>\n      <td>IF: (1:1,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-phospho KNL1 (Rabbit Polyclonal)</td>\n      <td>a gift from I. Cheeseman</td>\n      <td></td>\n      <td>IF: (1:1,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-CENPA (Mouse Monoclonal)</td>\n      <td>a gift from L. Jansen</td>\n      <td></td>\n      <td>IF: (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-DSN1 (Mouse Monoclonal)</td>\n      <td>a gift from A. Musacchio</td>\n      <td></td>\n      <td>IF: (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa 488- or 568-or 647 secondaries</td>\n      <td>Invitrogen</td>\n      <td></td>\n      <td>IF: (1:1,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Survivin (Rabbit Polyclonal)</td>\n      <td>Novus Biologicals</td>\n      <td>Cat#NB500-201</td>\n      <td>WB: (1:1,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Borealin (Rabbit Polyclonal)</td>\n      <td>a gift from R. Gassmann</td>\n      <td></td>\n      <td>WB: (1:1,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-\u03b1-tubulin clone B-512 (Mouse Monoclonal)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#T5168</td>\n      <td>WB: (1:5,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-RNA Pol II S2 (Rabbit Polyclonal)</td>\n      <td>Abcam</td>\n      <td>Cat#ab5095</td>\n      <td>WB: (1:1,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mouse or anti-rabbit</td>\n      <td>Jackson Immuno Research</td>\n      <td></td>\n      <td>WB: (1:5,000)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Nocodazole</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#M1404</td>\n      <td>1 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>MG132</td>\n      <td>EMD Millipore</td>\n      <td>Cat#133407-82-6</td>\n      <td>5 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Mps1-IN-1</td>\n      <td>Provided by N. Gray</td>\n      <td></td>\n      <td>10 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>RO3306</td>\n      <td>Roche</td>\n      <td>Cat#SML0569</td>\n      <td>10 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Actinomycin D</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#A9415</td>\n      <td>8 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>\u03b1-amanitin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#A2263</td>\n      <td>2 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Triptolide</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#T3652</td>\n      <td>1 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cycloheximide</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#01810</td>\n      <td>35.5 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Ethidium Bromide</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#E8751</td>\n      <td>25 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ZM447439 (Aurora B inhibitor)</td>\n      <td>Selleckchem.com</td>\n      <td>Cat#S1103</td>\n      <td>3.3 \u03bcM</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture and reagents\n\nGFP-Aurora B expressing HeLa cells and Cyclin B1-Venus expressing HeLa cells were provided by M. Lampson and J. Pines, respectively. All cell lines including parental HeLa cells were grown in DMEM or L15 medium supplemented with 10% FBS (Invitrogen) and penicillin/streptomycin (100 IU/ml and 100 \u00b5g/ml) in a 37\u00b0C incubator with 5% CO2. Microtubule depolymerization was induced by nocodazole (Sigma-Aldrich) at 1 \u00b5M for 2\u201316 hr, according to the experiment. To inhibit the proteasome, induce a metaphase arrest, and prevent exit due to a compromised SAC, cells were treated with 5 \u00b5M MG132 (EMD Millipore). For Mps1 inhibition, cells were treated with 10 \u00b5M Mps1-IN-1 (provided by N. Gray). For Aurora B inhibition, cells were treated with 3.3 \u00b5M ZM447439 for 4 hr prior to immunofluorescence. G2-enriched extracts were derived from cells incubated for 16 hr with the Cdk1 inhibitor RO3306 (Roche) at 10 \u00b5M, whereas mitotic extracts were obtained by shake-off upon nocodazole treatment. For transcription inhibition, actinomycin D, \u03b1-amanitin and triptolide (all from Sigma-Aldrich) were added to final concentration of 8 \u00b5M, 2 \u00b5M and 1 \u00b5M, respectively. To inhibit translation, cells were treated with 35.5 \u00b5M cycloheximide (Sigma-Aldrich). Ethidium bromide (Sigma-Aldrich) was used at final concentration of 25 \u00b5M. The cell lines were routinely tested negative for mycoplasma contamination.\n\n### Live cell imaging\n\nControl and transcriptionally repressed HeLa cells were imaged with phase-contrast microscopy (Axiovert 200M; Carl Zeiss; 20\u00a0\u00d7\u00a0objective lens; A-Plan Ph1; 0.3 NA) equipped with a CCD camera (CoolSNAP HQ2; Photometrics) at 37\u00b0C in DMEM supplemented with 10% FBS. To determine mitotic timing, images were captured every 15 min for 72 hr using the Micro-Manager 1.3 software (www.micro-manager.org). In the washout experiment, images were captured every 20 min for 24 hr. HeLa cells stably expressing GFP-Aurora B (LAP-Aurora B) were imaged with an inverted microscope (TE2000U; Nikon; 20\u00a0\u00d7\u00a0objective lens; LWD; 0.4 NA) equipped with an electron-multiplying charge-coupled device (CCD) camera (iXonEM+; Andor Technology) at 37\u00b0C in DMEM phenol red free medium (Invitrogen) supplemented with 10% FBS and 25 mM HEPES. Eleven 1 \u00b5m separated z-planes covering the entire volume of the mitotic spindle were collected every hour for 6 hr using the NIS-Elements Viewer software (Nikon). Cyclin B1-Venus were imaged every 15 min for 7 hr using an IN Cell Analyzer 2000 microscope (GE Healthcare) at 37\u00b0C in phenol red DMEM free medium supplemented with 10% FBS. The duration of all drug treatments in live-cell experiments are schematically illustrated in each respective figure. All images were analyzed with open source image analysis software ImageJ and cell profiler.\n\n### Immunofluorescence microscopy\n\nHeLa cells were fixed with 4% paraformaldehyde for 10 min and subsequently extracted in 0.3% Triton X-100 in 1 x PBS for 10 min. After short washes in PBS with 0.1% Triton X-100 and blocking with 10% FBS in PBS with 0.1% Triton X-100, all primary antibodies were incubated at 4\u00b0C overnight. Then, the cells were washed with PBS containing 0.1% Triton X-100 and incubated with the respective secondary antibodies for 1 hr at room temperature. DNA was counterstained with DAPI (1 \u03bcg/ml; Sigma-Aldrich) before coverslips were mounted in 90% glycerol\u00a0+10% Tris, pH 8.5,+0.5% N-propyl gallate on glass slides. Rabbit anti-Aurora B pT232 (1:500; Rockland Immunochemicals Inc.), mouse anti-Aim1 (1:500; BD Biosciences), mouse anti-Mad1 (1:500; Merck Millipore), mouse anti-phospho-Histone H3 Ser10 (1:100,000; Abcam), rabbit anti-Cleaved Caspase-3 (1:1,000; Cell Signaling Technology), human anti-centromere antibody (ACA; 1:500, Fitzgerald Industries International), rabbit anti-phospho-Mps1 Thr676 (1:2000, a gift from G. Kops), mouse anti-phospho-Histone H3 Thr3 (1:1000, a gift from J. Higgins), mouse anti-HEC1 (1:2000, a gift from R. Gassmann), rabbit anti-KNL1 (1:500, a gift from R. Gassmann), rabbit anti-phosho-DSN1 and anti-phospho-KNL1 (1:1000, a gift from I. Cheeseman), mouse anti-CENPA (1:200, a gift from L. Jansen) and mouse DSN1 (1:200, a gift from A. Musacchio) were used as primary antibodies, and Alexa Fluor 488, 568, and 647 (Invitrogen) were used as secondary antibodies (1:1,000). Images were acquired on an AxioImager Z1 (63\u00d7, Plan oil differential interference contrast objective lens, 1.4 NA; all from Carl Zeiss) equipped with a charge-coupled device (CCD) camera (ORCA-R2; Hamamatsu Photonics) using the Zen software (Carl Zeiss) and blind deconvolved using Autoquant X (Media Cybernetics). Forty-one 0.2 \u00b5m separated z-planes covering the entire mitotic cell were collected. Images were analyzed in ImageJ, processed in Photoshop CS4 (Adobe) and represented with a maximum intensity projection of a deconvolved z stack.\n\n### Fluorescence quantification\n\nFor quantitative measurements, all images compared were acquired using identical acquisition settings. Image analysis was performed using ImageJ. Briefly, individual kinetochores were identified by ACA staining and marked by a region of interest (ROI). The average fluorescence intensity of signals (pixel gray levels) of pAurora B at the inner centromere and Mad1 at kinetochores were measured on the focused z plan, and the background fluorescence was measured outside the ROI and subtracted. Fluorescence intensity measurements were normalized to the ACA signals. The results are reported after normalized to relative fluorescence levels in control samples. Approximately 1,300 KT pairs from 140 cells were analyzed for pAurora B and for Mad1, approximately 500 KT pairs from 50 cells were analyzed. The mean fluorescence intensity of LAP-Aurora B signals (pixel gray levels) from the live cell imaging was measured on the sum projection and the background fluorescence was measured outside the ROI and subtracted. Fluorescence intensities were normalized to the level at time\u00a0=\u00a00 and represented as a function of time. Approximately eight cells were analyzed per condition.\n\n### Western blot\n\nHeLa cells were ressuspended and lysed in NP-40 lysis buffer (20 mM HEPES-KOH pH 7.9, 1 mM EDTA, 1 mM EGTA, 150 mM NaCl, 0.5% (v/v) NP-40, 20% (v/v) Glycerol, 2 mM DTT, 1 mM PMSF) supplemented with protease and phosphatase inhibitors. The protein concentration was measured using the Bradford protein assay and 50 \u00b5g of proteins were resuspended in Protein Loading Buffer. Proteins were separated into a 4\u201320% SDS-PAGE and transferred to a nitrocellulose Hybond-C membrane using an iBlot Gel Transfer Device (Thermo Scientific). The membranes were blocked with 5% milk in PBS with 0.1% Tween-20 (PBST) at room temperature during 1 hr, and all primary antibodies were incubated at 4\u00b0C overnight. After five washes in PBST, the membranes were incubated with the secondary antibodies during 1 hr at room temperature. The membranes were washed in the same conditions than previously and the detection was performed with Clarity Western ECL Substrate (Bio-Rad). The following antibodies were used for western blot: rabbit anti-Survivin (1:1000; Novus Biologicals), mouse anti-Aim1 (1:1000; BD Biosciences), rabbit anti-Borealin (1:1000; provided by R. Gassmann), mouse anti-\u03b1-tubulin (clone B-512, 1:5,000; Sigma-Aldrich) and rabbit RNA Pol II S2 (1:1000; Abcam) were used as primary antibodies, and anti\u2013rabbit and anti\u2013mouse antibodies were used as secondary antibodies (1:5,000; Jackson ImmunoResearch Laboratories, Inc.).\n\n### RNA extraction and transcription analysis by RT-qPCR\n\nTotal RNA was isolated from interphase and mitotic HeLa cells (shake-off) using trizol (Life technologies). Reverse transcriptase reaction was performed with 500 ng of total RNA with iscript (Bio-rad) using the random primers and oligo(dTs) supplied, following the manufacturer\u2019s instructions. All primer sequences are in Supplemental Material. For each analysis, gapdh was used for normalization. RT-qPCRs were performed in the iCycler iQ5 Real-Time PCR Detection System (Bio-Rad Laboratories). The data obtained were analyzed using the Bio-Rad iQ5 Optical System Software v2.1 (BioRad Laboratories). The amplified products were additionally analyzed on agarose gel electrophoresis.\n\n### RNA library preparation for RNAome sequencing\n\nQuantity and total RNA integrity was checked following isolation using an Agilent Technologies 2100 Bioanalyzer. Sample with RNA Integrity Number (RIN) value greater than eight were selected. The RNA samples were prepared as described before in (Derks et al., 2015) with the following modifications. Five micrograms of total RNA were depleted according to the Illumina Ribo-zero magnetic protocol (www.illumina.com). The Ribo-zero-treated RNA was purified using Agencourt RNAClean XP Beads. RNA was fragmented on a Covaris S220. One microliter of the sheared rRNA depleted RNA was loaded on an Agilent Technologies 21000 Bioanalyzer RNA Pico chip to determine successful ribosomal RNA depletion. The sheared RNA sample was concentrated in a Thermo scientific SPD100 speedvac to 5 \u00b5l and a sequencing library was prepared according to the Illumina TruSeq Small RNA protocol (www.illumina.com). In short, adapters are subsequently ligated to the 3\u2019end and the 5\u2019end of the RNA. The RNA is reverse transcribed, amplified by PCR and run on SDS-PAGE gel. RNA fragments between 140\u00a0and500 bp are cut out of the gel and purified. One microliter was loaded on an Agilent Technologies 2100 Bioanalyzer using a DNA 1000 assay to determine the library concentration and quality.\n\n### Bridge amplification and sequencing by synthesis\n\nCluster generation was performed according to the Illumina TruSeq SR Cluster kit v2 (cBot) Reagents Preparation Guide (www.illumina.com). Briefly, six RNAome libraries were pooled together to get a stock of 2 nM. Five microliter of the 2 nM stock was denaturated with NaOH, diluted to 11 pM and hybridized onto the flowcell. The hybridized products were sequentially amplified, linearized and end-blocked according to the Illumina Single Read Multiplex Sequencing user guide. After hybridization of the sequencing primer, sequencing-by-synthesis was performed using the HiSeq 2000 with a 36-cycle protocol. The sequenced fragments were denaturated with NaOH using the HiSeq 2000 and the index-primer was hybridized onto the fragments. The index was sequenced with a six-cycle protocol.\n\n### Bioinformatics analysis\n\nRaw FASTQ files were aligned to the human genome (NCBI/build37.1) and annotated using Gencode version 25. De novo transcriptome assembly was performed using Gencode annotation and the StringTie assembler (Pertea et al., 2015). Mapping of sequence reads was performed using STAR aligner and transcript detection and quantification was performed using Cufflinks. Gene/transcript levels were compared between control and actinomycin D-treated samples using the ballgown program (Frazee et al., 2014).\n\n### Data deposition\n\nProcessed RNA-seq have been deposited and can be consulted at ArrayExpress under accession number E-MTAB-6661 (http://www.ebi.ac.uk/fg/annotare/).\n\n### CPC-CTM expression and purification\n\nFull length (f.l.) Survivin was cloned as a 3C-cleavable His-GFP tagged protein in a pRSET vector (Thermo Fisher Scientific), f.l. Borealin was cloned as a TEV-cleavable His-tagged protein in a pETM vector (gift from C. Romier, IGBMC, Strasbourg), and INCENP1-58 was cloned as an untagged protein in a pMCNcs vector. The complex of f.l. Survivin, f.l. Borealin and INCENP1-58 was prepared by co-expressing the subunits in E. Coli strain BL21 pLysS with an overnight induction at 18\u00b0C. Cells were lysed in lysis buffer containing 25 mM Hepes pH 7.5, 500 mM NaCl, 25 mM Imidazole, 2 mM \u03b2-mercaptoethanol (Bme). The complex was purified by affinity chromatography using a HisTrap HP column (GE Healthcare). The protein-bound column was washed with lysis buffer, followed by 25 mM Hepes pH 7.5, 1 M NaCl, 50 mM KCl, 10 mM MgCl, 25 mM Imidazole, 2 mM ATP, 2 mM Bme and proteins were eluted using 25 mM Hepes pH 7.5, 500 mM NaCl, 500 mM Imidazole, 2 mM Bme. Tags were cleaved during an overnight incubation with 3C and TEV while dialysing against 25 mM Hepes pH 7.5, 150 mM NaCl, 4 mM dithiothreitol (DTT) at 4\u00b0C. The complex was further purified by a cation exchange chromatography (HiTrap SP, GE Healthcare) followed by gel filtration using a Superdex 200 increase 10/300 column (GE Healthcare) equilibrated with 25 mM Hepes pH 8, 200 mM NaCl, 4 mM DTT.\n\n### Expression and purification of recombinant histones and refolding of histone octamers\n\nHuman H2A and H2B and Xenopus laevis H3 and H4 were purified as described before (Luger et al., 1999, Methods Mol Biol) with minor changes. LB media was used instead of 2X TY-AC media for expression of H2A, H2B and H3 in E. coli BL21 (DE3) pLysS cells and H4 in E. coli BL21 cells. The preparation of inclusion bodies was performed using a Dounce glass/glass homogenizer. After solubilisation of the inclusion bodies and the three-step dialysis against Urea dialysis buffer (7 M Urea, 100 mM NaCl, 10 mM Tris pH 8, 1 mM EDTA, 5 mM Bme), the sample was applied to a HiTrap Q anion exchange column and then to a HiTrap SP cation exchange column (GE Healthcare). The histones were eluted from the HiTrap SP column using a linear gradient from 100 mM to 1 M NaCl in 7 M Urea, 10 mM Tris pH 8, 1 mM EDTA and 1 mM DTT. After the ion exchange step, purified recombinant histones were dialyzed against water with 5 mM Bme, lyophilized and stored at \u221280\u00b0C. Refolding of histone octamers was performed as previously described (Luger et al., 1999, Methods Mol Biol). Briefly, lyophilized core histones were resuspended in unfolding buffer (7M Guanidine HCl, 20 mM Tris pH 7.5, 10 mM DTT) and mixed to equimolar ratios. The histone mix was then dialyzed against three changes of 500 ml refolding buffer (10 mM Tris pH 8, 2M NaCl, 1 mM EDTA, 5 mM Bme) and the octamers were purified by size exclusion chromatography using a Superdex 200 increase 10/300 column (GE Healthcare) equilibrated with refolding buffer. Pooled fractions with equimolar ratios of histones were stored at \u221280\u00b0C.\n\n### Nucleosome core particle reconstitution and drug treatment\n\nThe 147 bp 601 Widom positioning sequence was amplified from a pBS-601Widom vector with 5\u2019 IR700 labelled primers. Mononucleosome reconstitution was carried out using the salt gradient dialysis method (Luger et al., 1999, Methods Mol Biol). Histone octamers were added to DNA to a 0.9 molar ratio of octamer to DNA after adjusting the salt concentration to 2 M NaCl. The mixture was then dialysed against TE buffer (10 mM Tris pH 8, 1 mM EDTA, 50 mM NaCl) by gradually decreasing the ionic strength from 2 M to 50 mM NaCl over a period of 20 hr using a peristaltic pump. Reconstituted NCPs were treated with DMSO, 80 \u00b5m Actinomycin D, 10 \u00b5m Triptolide or 25 \u00b5m Ethidium Bromide for 1 hr at 4\u00b0C before incubating them with the CPC-CTM recombinant protein.\n\n### Electrophoretic mobility shift assay\n\nElectrophoretic mobility assay (EMSA) was used to detect specific interaction between CPC and the nucleosome core particles (NCPs). 25 and 50 nM recombinant CPC-CTM was added to 5 nM IR700-labelled NCPs in reaction buffer (25 mM Hepes pH 7.5, 100 mM NaCl, 1 mM DTT, 10% Glycerol). Reactions were incubated 30 min at 4\u00b0C and resolved in a 0.5% agarose gel in 1X Tris-CAPS buffer (60 mM Tris, 40 mM CAPS pH 9.3). The fluorescent bound and unbound NCPs were detected with Odyssey CLx Infrared Imaging System (LI-COR Biosciences). The ratio of CPC-bound NCPs to free NCPs was quantified using the Image Studio software (LI-COR Biosciences). Signal at the 0 nM CPC lane was subtracted from all values to account for any effect on NCPs destabilization upon drug treatment (EtBr-treated nucleosomes showed a faint smear above the unbound-NCP band indicating a slight NCP destabilization upon EtBr treatment).\n\n### Statistical analysis\n\nFor statistical analysis, we first performed a proportion test or unpaired Student\u2019s t-test to confirm using p\u00a0values that we have sampled a sufficient number of cells or kinetochores for concluding on the reported differences. Second, we measured standard error of the mean (SEM) across experimental repeats or across cells and confirmed that the reported differences were not only based on differences in mean values, but also the spread of the mean values between experiments, cells or kinetochores. SD values were obtained across experiments or cells as indicated in the figure legend. Statistical analysis was performed using Graphpad Prism version 5. p-Values were calculated with a Student\u2019s t test. For data that did not follow a normal distribution, statistical analysis was performed using a Mann-Whitney Rank Sum test.\n",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "7f48c647-8194-4060-bda4-4f31ed42e4e6",
+      "submission_id": "ffd5be47-9f4c-4803-817c-402d6d94d1e7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jon Pines, The Gurdon Institute United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.36898.024](https://doi.org/10.7554/eLife.36898.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Mitotic progression, arrest, exit or death is determined by centromere integrity, independently of de novo transcription\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Jon Pines as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Anna Akhmanova as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity:; Patrick Meraldi (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this study the authors have investigated whether transcription is required for exit from or arrest or death in mitosis. This is a topical and contentious issue and thus appropriate for eLife. The authors have carried out a thorough study and conclude that the compounds used to inhibit transcription perturb mitosis through their action to intercalate into centromeric DNA rather than through inhibiting transcription, and that compounds inhibiting RNA Pol II directly do not have the same effect. They further show that intercalation in centromeres perturbs mitosis by displacing Aurora B from centromeres.\n\nEssential revisions:\n\n1) Although the comparison of ActD and Triptolide is extremely interesting the analysis in Figure 4A suggests that transcription in interphase cells is not fully blocked. To draw any conclusions from negative data upon Triptolide inhibition it is extremely important to have 100% inhibition of transcription. It can be that full inhibition of transcription would actually give an effect even from a compound that does not intercalate DNA.\n\n2) The reason behind mislocalization of CPC in ActD inhibited cells should be further investigated. Is H3T3p affected \u2013 a readout of Haspin activity \u2013 or is it the underlying nucleosome structure? Looking at marks for CPC localization in ActD would be worth doing. Alternatively, do intercalating agents change the kinetochore structure, in particular the SAC recruitment platform (KNL1 and Ndc80 staining).\n\n3) While the authors show that intercalating agents lead to lower levels of phospho (active) Aurora-B and Mad1 at kinetochores, they do not prove that the faster mitotic slippage is directly caused by lower Aurora B levels at kinetochores. This is important, since it is not even clear in the field whether complete loss of Aurora B abolishes the SAC (it certainly leads to a delay in Mps1 recruitment).\n\nTo do this the authors could measure Aurora-B activity at centromeres/kinetochores in nocodazole treated cells +/- Actinomycin D with phospho-CENP-A or phospho-Dsn1 antibodies; titrate down Aurora-B activity to the same levels with the Aurora-B inhibitor ZM1, and test whether this is sufficient to weaken Mad1 recruitment and enhance mitotic slippage. Probing for non-phosphorylated Dsn1 at the same time would give a read out of kinetochore integrity. Alternatively, the authors could force Aurora-B at centromeres with an CENP-B-INCENP construct and ask whether this rescues the effect of intercalating agents. If the authors can rescue the cell fate effect by artificial recruitment of CPC to centromeres this would strongly support their model.\n\n4) It would also be reassuring to repeat a key result with a non-transformed cell line.\n",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5e35ffea-be88-4e0a-acca-6308cc817809",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C1",
+      "claim": "Transcription was proposed to sustain a robust spindle assembly checkpoint (SAC) response.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription was also proposed to sustain a robust spindle assembly checkpoint (SAC) response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature in the abstract.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "1bbec28a-7a12-4338-924c-f182f99d71ca",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C2",
+      "claim": "Under conditions of persistently unattached kinetochores, transcription inhibition with actinomycin D delocalized the chromosomal passenger complex (CPC) protein Aurora B from centromeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Under conditions of persistently unattached kinetochores, transcription inhibition with actinomycin D, or treatment with other DNA-intercalating drugs, delocalized the chromosomal passenger complex (CPC) protein Aurora B from centromeres, compromising SAC signaling and cell fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, including immunofluorescence and live-cell imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "eb648a07-04a3-4241-b5df-3eed88c83d14",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C3",
+      "claim": "Treatment with other DNA-intercalating drugs delocalized Aurora B from centromeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Under conditions of persistently unattached kinetochores, transcription inhibition with actinomycin D, or treatment with other DNA-intercalating drugs, delocalized the chromosomal passenger complex (CPC) protein Aurora B from centromeres, compromising SAC signaling and cell fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data with ethidium bromide and other DNA-intercalating agents.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "4edb25b3-2d25-4303-8fb3-f4b362611b5e",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C4",
+      "claim": "Actinomycin D compromised SAC signaling and cell fate.",
+      "claim_type": "EXPLICIT",
+      "source": "Under conditions of persistently unattached kinetochores, transcription inhibition with actinomycin D, or treatment with other DNA-intercalating drugs, delocalized the chromosomal passenger complex (CPC) protein Aurora B from centromeres, compromising SAC signaling and cell fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by live-cell imaging data showing reduced mitotic duration and altered cell fate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "08d125ff-bc8d-4e5d-8d95-c74675a7b8cd",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C5",
+      "claim": "No significant changes in mitotic transcript levels were detected after actinomycin D treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we were unable to detect significant changes in mitotic transcript levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq and qPCR data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "0ff6024d-bbf2-4b74-87f3-4a2fa4228d33",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C6",
+      "claim": "Inhibition of transcription independently of DNA intercalation had no effect on Aurora B centromeric localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, inhibition of transcription independently of DNA intercalation had no effect on Aurora B centromeric localization, SAC response, mitotic progression, exit or death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experiments with triptolide, a non-DNA-intercalating transcription inhibitor.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "524a5f24-3feb-4ba4-855b-be80fd9df7b4",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C7",
+      "claim": "Inhibition of transcription independently of DNA intercalation had no effect on SAC response.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, inhibition of transcription independently of DNA intercalation had no effect on Aurora B centromeric localization, SAC response, mitotic progression, exit or death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by live-cell imaging data with triptolide treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "28a2eed4-ac22-4d0e-ab97-e6355923f46d",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C8",
+      "claim": "Inhibition of transcription independently of DNA intercalation had no effect on mitotic progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, inhibition of transcription independently of DNA intercalation had no effect on Aurora B centromeric localization, SAC response, mitotic progression, exit or death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by live-cell imaging data showing similar mitotic duration with triptolide treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "b2ab1f45-5163-4a55-9595-2c6cd01f8310",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C9",
+      "claim": "DNA intercalating agents reduce the interaction of the CPC with nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, we show that DNA intercalating agents reduce the interaction of the CPC with nucleosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by EMSA experiments showing reduced CPC binding to nucleosomes in the presence of DNA-intercalating drugs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "29ea3509-4ddc-4402-9f02-849c2d08dcd8",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C10",
+      "claim": "Mitotic progression, arrest, exit or death is determined by centromere structural integrity, rather than de novo transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, mitotic progression, arrest, exit or death is determined by centromere structural integrity, rather than de novo transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined experimental results showing that transcription inhibition without DNA intercalation does not affect mitotic outcomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "1752d25a-8061-44f8-a66b-da821cfc329f",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C11",
+      "claim": "Transcription is largely repressed during mitosis in higher eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the half-life of most transcripts exceeds the normal duration of mitosis (typically ~30 min in human cells), the prevailing dogma was that transcription is largely repressed and dispensable during mitosis in higher eukaryotes (Gottesfeld and Forbes, 1997; Konrad, 1963; Mart\u00ednez-Balb\u00e1s et al., 1995; Murphy and Attardi, 1973; Prescott and Bender, 1962; Rizkallah and Hurt, 2009; Spencer et al., 2000; Taylor, 1960).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature establishing the prevailing dogma.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "50523f9f-56f9-4520-a79d-34cb71decb48",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C12",
+      "claim": "The level of chromatin compaction on mitotic chromosomes is highly heterogeneous.",
+      "claim_type": "EXPLICIT",
+      "source": "Several recent studies have challenged this notion and provided evidence that the level of chromatin compaction on mitotic chromosomes is highly heterogeneous (Nishino et al., 2012), allowing accessibility of some transcription factors and chromatin-modifying enzymes (Burke et al., 2005; Chen et al., 2005; Dey et al., 2009; Egli et al., 2008; Gauthier-Rouvi\u00e8re et al., 1991; Michelotti et al., 1997; Segil et al., 1996; Yan et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "3b0dbb36-c704-43e4-8501-e42717e98558",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C13",
+      "claim": "A post-translationally modified form of RNA Polymerase II binds mitotic chromosomes at their centromeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Noteworthy, a post-translationally modified form of RNA Polymerase II that is normally associated with transcription elongation was found to bind mitotic chromosomes at their centromeres (Chan et al., 2012; Dirks and Snaar, 1999; Liu et al., 2015; Molina et al., 2016), suggesting that some transcription is still taking place during mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "34ad0043-86c2-4270-b04e-80e1b7910a55",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C14",
+      "claim": "Cyclin B1 was proposed to be actively transcribed during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this hypothesis, the master mitotic regulator Cyclin B1 was proposed to be actively transcribed during mitosis and to be required to sustain a robust SAC response (Mena et al., 2010; Sciortino et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "30a80481-8ade-4141-80f7-bd4c75983607",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C15",
+      "claim": "Centromere assembly has been proposed to depend on transcription of centromeric \u03b1-satellite DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Centromere assembly, which underlies the catalytic mechanism behind the SAC, has also been recently proposed to depend on transcription of centromeric \u03b1-satellite DNA and to be regulated by non-coding RNAs (Blower, 2016; Carone et al., 2009; Chan et al., 2012; Du et al., 2010; Grenfell et al., 2016; Li et al., 2008; Liu et al., 2015; Nakano et al., 2003; Pezer and Ugarkovi\u0107, 2008; Ro\u0161i\u0107 et al., 2014; Topp et al., 2004; Wong et al., 2007; Zhang et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "d2d44894-f9ee-45e9-8c38-fbea505a314e",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C16",
+      "claim": "The centromeric localization and activation of Aurora B was shown to be dependent on centromeric transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the centromeric localization and activation of Aurora B, the catalytic subunit of the chromosomal passenger complex (CPC) required for SAC response and error correction during mitosis (Carmena et al., 2012; Santaguida et al., 2011) was shown to be dependent on centromeric transcription (Blower, 2016; Grenfell et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "37216b5e-2cbb-44ab-965d-932b07e1e375",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C17",
+      "claim": "Over 8000 transcripts are expressed de novo during mitosis and mitotic exit.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, a recent study using pulse-labeling of nascent transcripts and RNA-seq of mitotic-enriched cell populations reported that over 8000 transcripts are expressed de novo during mitosis and mitotic exit to prepare cells for the subsequent interphase (Palozola et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "605e0575-8376-4187-acd4-dbeff564ddd5",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C18",
+      "claim": "Cells treated with nocodazole remained in mitosis for 19.2 \u00b1 7.0 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous observations in fixed cells (Becker et al., 2010), we found that live cells treated with nocodazole remained in mitosis for 19.2 \u00b1 7.0 hr (median \u00b1 SD, n = 386 cells), whereas cells treated with nocodazole followed by actinomycin D persisted in mitosis for only 16.1 \u00b1 5.6 hr (n = 301 cells, p<0.0001, Mann-Whitney Rank Sum Test, Figure 1B,C and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by live-cell imaging data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "5f76141c-f315-422a-b108-d6f3a1888404",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C19",
+      "claim": "Cells treated with nocodazole followed by actinomycin D persisted in mitosis for only 16.1 \u00b1 5.6 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous observations in fixed cells (Becker et al., 2010), we found that live cells treated with nocodazole remained in mitosis for 19.2 \u00b1 7.0 hr (median \u00b1 SD, n = 386 cells), whereas cells treated with nocodazole followed by actinomycin D persisted in mitosis for only 16.1 \u00b1 5.6 hr (n = 301 cells, p<0.0001, Mann-Whitney Rank Sum Test, Figure 1B,C and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by live-cell imaging data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "1113329c-de91-4eb4-bd5f-5d2e230f7823",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C20",
+      "claim": "Approximately 90% of nocodazole-treated cells died after a prolonged mitotic delay.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, approximately 90% of nocodazole-treated cells died after a prolonged mitotic delay, whereas 54% of the cells treated with nocodazole and actinomycin D underwent mitotic slippage (Rieder and Maiato, 2004) (Figure 1B,D and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by live-cell imaging data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "23cde8fa-317b-4939-9f98-3a024c0d33d9",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C21",
+      "claim": "54% of the cells treated with nocodazole and actinomycin D underwent mitotic slippage.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, approximately 90% of nocodazole-treated cells died after a prolonged mitotic delay, whereas 54% of the cells treated with nocodazole and actinomycin D underwent mitotic slippage (Rieder and Maiato, 2004) (Figure 1B,D and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by live-cell imaging data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "b6a8cff6-3cf5-48a6-8b34-4ec9c1a9e7c0",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C22",
+      "claim": "Treatment with actinomycin D compromises the capacity of cells to sustain a prolonged mitotic delay.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, treatment with actinomycin D compromises the capacity of cells to sustain a prolonged mitotic delay and interferes with their fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the live-cell imaging data showing reduced mitotic duration and altered cell fate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "f1e5bc91-d088-41e5-851f-b270224b4adc",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C23",
+      "claim": "Slower Cyclin B1 degradation promotes mitotic cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "The relationship between the capacity to sustain a robust SAC response and the subsequent cell fate after a mitotic delay has been shown to depend on the kinetics of anaphase-promoting complex (APC)-mediated Cyclin B1 degradation, with slower degradation promoting mitotic cell death, and faster degradation promoting mitotic slippage (Brito and Rieder, 2006; Gascoigne and Taylor, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "bf39c828-7c5e-47dc-9488-1d37da620d01",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C24",
+      "claim": "Faster Cyclin B1 degradation promotes mitotic slippage.",
+      "claim_type": "EXPLICIT",
+      "source": "The relationship between the capacity to sustain a robust SAC response and the subsequent cell fate after a mitotic delay has been shown to depend on the kinetics of anaphase-promoting complex (APC)-mediated Cyclin B1 degradation, with slower degradation promoting mitotic cell death, and faster degradation promoting mitotic slippage (Brito and Rieder, 2006; Gascoigne and Taylor, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "346ff5da-76b1-4a27-afc9-452b4cb2858b",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C25",
+      "claim": "Cells treated with nocodazole and MG132 increased the mitotic delay relative to cells treated only with nocodazole from 19.2 \u00b1 7.0 hr to 30.1 \u00b1 14.7 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, cells treated with nocodazole and MG132 increased the mitotic delay relative to cells treated only with nocodazole (from 19.2 \u00b1 7.0 hr to 30.1 \u00b1 14.7 hr, p<0.0001, Mann-Whitney Rank Sum Test, Figure 1C and Video 1), and caused cell death in mitosis in 100% of the cases (Figure 1D and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by live-cell imaging data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "9c634616-a875-4fa3-ab04-02dc56a690b2",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C26",
+      "claim": "Nocodazole and MG132 treatment caused cell death in mitosis in 100% of the cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, cells treated with nocodazole and MG132 increased the mitotic delay relative to cells treated only with nocodazole (from 19.2 \u00b1 7.0 hr to 30.1 \u00b1 14.7 hr, p<0.0001, Mann-Whitney Rank Sum Test, Figure 1C and Video 1), and caused cell death in mitosis in 100% of the cases (Figure 1D and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by live-cell imaging data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "8ff59cd4-5c6f-4b3f-8cfd-1d4558f40bc9",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C27",
+      "claim": "Acute SAC inactivation through Mps1 inhibition after nocodazole treatment significantly decreased the mitotic delay from 19.2 \u00b1 7.0 hr to 5.4 \u00b1 2.6 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, acute SAC inactivation through Mps1 inhibition after nocodazole treatment significantly decreased the mitotic delay relative to nocodazole-treated cells (from 19.2 \u00b1 7.0 hr to 5.4 \u00b1 2.6 hr, p<0.0001, Mann-Whitney Rank Sum Test, Figure 1C and Video 1), and caused almost immediate mitotic slippage in 100% of the cells (Figure 1D and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by live-cell imaging data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "c66eceae-1294-4558-884c-b8e9dffc84f8",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C28",
+      "claim": "Mps1 inhibition after nocodazole treatment caused almost immediate mitotic slippage in 100% of the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, acute SAC inactivation through Mps1 inhibition after nocodazole treatment significantly decreased the mitotic delay relative to nocodazole-treated cells (from 19.2 \u00b1 7.0 hr to 5.4 \u00b1 2.6 hr, p<0.0001, Mann-Whitney Rank Sum Test, Figure 1C and Video 1), and caused almost immediate mitotic slippage in 100% of the cells (Figure 1D and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by live-cell imaging data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "1219a021-b0a1-419f-b8fb-9ade3938de7a",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C29",
+      "claim": "Proteasome inhibition with MG132 reverted the Mps1 inhibition phenotype, increasing mitotic duration and switching cell fate from mitotic slippage to death.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteasome inhibition with MG132 reverted the Mps1 inhibition phenotype, increasing mitotic duration and switching cell fate from mitotic slippage to death (p<0.0001, Mann-Whitney Rank Sum Test, Figure 1C,D and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by live-cell imaging data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "aec6e2fc-700a-45d0-a417-0f0d2bc372ef",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C30",
+      "claim": "The ability of actinomycin D to reduce the mitotic delay and induce slippage in cells treated with nocodazole was rescued after inhibition of proteasome activity with MG132.",
+      "claim_type": "EXPLICIT",
+      "source": "Most important, the ability of actinomycin D to reduce the mitotic delay and induce slippage in cells treated with nocodazole was rescued after inhibition of proteasome activity with MG132 (p\u22640.01, Mann-Whitney Rank Sum Test, Figure 1C,D and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by live-cell imaging data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "b1e6dd1c-707b-4757-a83a-a52382797643",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C31",
+      "claim": "Actinomycin D compromises SAC response in a proteasome-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these experiments suggest that actinomycin D compromises SAC response and the capacity to sustain a prolonged mitotic delay, in a proteasome-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the rescue experiments with MG132.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "e4992990-1d1d-4d57-80c2-ec3e25dd2c83",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C32",
+      "claim": "Cyclin B1-Venus fluorescence decayed very slowly in the presence of nocodazole, likely due to residual APC activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous reports, Cyclin B1-Venus fluorescence decayed very slowly in the presence of nocodazole, likely due to residual APC activity (Figure 1F) (Brito and Rieder, 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by live-cell imaging data presented in Figure 1F and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "6e944d01-36f7-4697-b760-2e8d7f5cafce",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C33",
+      "claim": "Treatment of nocodazole-arrested cells with actinomycin D caused a faster decline in Cyclin B1-Venus.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of nocodazole-arrested cells with actinomycin D caused a faster decline in Cyclin B1-Venus (p<0.0001, Analysis of Covariance (ANCOVA), Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by live-cell imaging data presented in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "8df2c821-acfd-4d80-af09-c4cea527b8cd",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C34",
+      "claim": "Cyclin B1-Venus levels in nocodazole-treated cells remained constant for several hours after inhibition of the proteasome with MG132, regardless of the presence of actinomycin D.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Cyclin B1-Venus levels in nocodazole-treated cells remained constant for several hours after inhibition of the proteasome with MG132, regardless of the presence of actinomycin D (p\u22640.05, ANCOVA, Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by live-cell imaging data presented in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "c60ca89f-ec12-45e7-80ba-e3a7cdc9416b",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C35",
+      "claim": "Actinomycin D compromises SAC robustness and the capacity to prevent APC-mediated Cyclin B1 degradation, independently of de novo transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "We concluded that actinomycin D compromises SAC robustness and the capacity to prevent APC-mediated Cyclin B1 degradation, independently of de novo transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the Cyclin B1 degradation experiments and the lack of effect on transcript levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "b42e6549-8d93-45df-ad74-ca8dbb8de3ac",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C36",
+      "claim": "Addition of actinomycin D for 8 hr in cells pre-treated with nocodazole reduced or abolished pH3S10 accumulation in approximately 17% of the nocodazole-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast with nocodazole-treatment in which all mitotic cells showed high levels of pH3S10, addition of actinomycin D reduced or abolished pH3S10 accumulation in approximately 17% of the nocodazole-treated cells (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "a47dd45f-ed3b-4298-8b20-8a1e5ca316d5",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C37",
+      "claim": "Cells with reduced/abolished pH3S10 after actinomycin D treatment still showed signs of chromosome condensation indistinguishable from neighbouring cells with normal levels of pH3S10.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these cells still showed signs of chromosome condensation (as determined by DAPI staining of DNA) that were indistinguishable from neighbouring cells with normal levels of pH3S10 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data presented in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "1cee5850-2fda-4c08-bcbc-b5288185f67d",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C38",
+      "claim": "The observed reduction/abolishment of pH3S10 was not associated with a pre-apoptotic state.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the observed reduction/abolishment of pH3S10 was not associated with a pre-apoptotic state, as those cells were negative for a cleaved form of caspase 3 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data presented in Figure 2A showing absence of cleaved caspase 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "260e1cd9-148a-4d5b-9f10-7f3a0ad5199e",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C39",
+      "claim": "Cells with reduced/abolished pH3S10 after actinomycin D treatment showed abnormally low levels of total Aurora B and its active phosphorylated form on Threonine 232.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the observed reduction/abolishment of pH3S10, these cells also showed abnormally low levels of total Aurora B and its active phosphorylated form on Threonine 232 (Yasui et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data presented in Figure 2A and citation to previous work on Aurora B phosphorylation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "5245c38d-4300-478e-8fa3-26a56c1ca69d",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C40",
+      "claim": "In nocodazole- and actinomycin D-treated cells that showed high levels of pH3S10, Aurora B, including its active form, was found displaced along the chromosome arms.",
+      "claim_type": "EXPLICIT",
+      "source": "Noteworthy, even in those nocodazole- and actinomycin D-treated cells that showed high levels of pH3S10, Aurora B, including its active form, was found displaced along the chromosome arms (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data presented in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "9d2c76ae-25c1-48af-80ab-21c4e3e9d60a",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C41",
+      "claim": "Actinomycin D compromises normal Aurora B localization and activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, actinomycin D compromises normal Aurora B localization and activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the immunofluorescence data showing Aurora B mislocalization and reduced activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "ab9d933c-c7ed-4cbe-9d8a-29da4801737d",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C42",
+      "claim": "Addition of actinomycin D for 4 hr to nocodazole-treated cells led to a 45% reduction of Mad1 at the outer kinetochore.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that addition of actinomycin D for 4 hr to nocodazole-treated cells led to a 45% reduction of Mad1 at the outer kinetochore (Figure 2C,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data presented in Figure 2C,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "309a5bf3-a48c-41fa-b724-c46881483c82",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C43",
+      "claim": "Actinomycin D treatment for 4 hr did not affect the kinetochore localization of active Mps1 (Mps1 pT676).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, actinomycin D treatment for 4 hr did not affect the kinetochore localization of active Mps1 (Mps1 pT676; (Jelluma et al., 2008)) (Figure 2\u2014figure supplement 4A,B) or the phosphorylation of histone H3 at threonine 3 (H3T3p), a proxy for Haspin activity previously implicated in Aurora B recruitment to centromeres (Kelly et al., 2010; Wang et al., 2010) (Figure 2\u2014figure supplement 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data presented in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "306d9421-689b-4470-8465-2f52dc36ae6f",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C44",
+      "claim": "Actinomycin D treatment for 4 hr did not affect the phosphorylation of histone H3 at threonine 3 (H3T3p).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, actinomycin D treatment for 4 hr did not affect the kinetochore localization of active Mps1 (Mps1 pT676; (Jelluma et al., 2008)) (Figure 2\u2014figure supplement 4A,B) or the phosphorylation of histone H3 at threonine 3 (H3T3p), a proxy for Haspin activity previously implicated in Aurora B recruitment to centromeres (Kelly et al., 2010; Wang et al., 2010) (Figure 2\u2014figure supplement 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data presented in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "0d05480e-90ad-41ce-b7ab-44a23fe0aa39",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C45",
+      "claim": "Actinomycin D compromises the normal localization of Aurora B at centromeres and SAC proteins to unattached kinetochores, independently of an effect over Mps1 and Haspin kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these experiments show that actinomycin D compromises the normal localization of Aurora B at centromeres and SAC proteins to unattached kinetochores, independently of an effect over Mps1 and Haspin kinase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the immunofluorescence data showing no effect on Mps1 and Haspin activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "cc5417b0-0972-4358-84ef-8dd03cb74f72",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C46",
+      "claim": "Addition of actinomycin D for 4 hr to nocodazole-treated cells led to a 22% reduction in phosphorylation levels of Knl1.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with an attenuation of Aurora B activity at centromeres, we found that addition of actinomycin D for 4 hr to nocodazole-treated cells led to a 22% and 43% reduction on the phosphorylation levels of Knl1 and Dsn1 (a member of the Mis12 complex), respectively (Figure 3A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "899e1f0f-267d-4e2b-96e8-b3662c24a9f0",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C47",
+      "claim": "Addition of actinomycin D for 4 hr to nocodazole-treated cells led to a 43% reduction in phosphorylation levels of Dsn1.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with an attenuation of Aurora B activity at centromeres, we found that addition of actinomycin D for 4 hr to nocodazole-treated cells led to a 22% and 43% reduction on the phosphorylation levels of Knl1 and Dsn1 (a member of the Mis12 complex), respectively (Figure 3A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "b78f0874-7a40-4975-9c33-d267fba6cdee",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C48",
+      "claim": "Actinomycin D treatment led to a 29% reduction in total Knl1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we also found a 29% reduction in total Knl1 (Figure 3E,F), whereas total Dsn1, Hec1 (a member of the Ndc80 complex) and CENP-A were unaffected by actinomycin D treatment (Figure 3G,H, Figure 3\u2014figure supplement 1A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "0a8e4323-3e2e-4566-a169-fdfbdb31a70a",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C49",
+      "claim": "Total Dsn1, Hec1 and CENP-A were unaffected by actinomycin D treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we also found a 29% reduction in total Knl1 (Figure 3E,F), whereas total Dsn1, Hec1 (a member of the Ndc80 complex) and CENP-A were unaffected by actinomycin D treatment (Figure 3G,H, Figure 3\u2014figure supplement 1A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data presented in Figure 3 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "9bb19f48-90ff-4ba7-834d-3e27a6954194",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C50",
+      "claim": "Perturbation of Aurora B centromeric localization by actinomycin D translates into a local reduction of activity and the consequent decrease in phosphorylation of key Aurora B substrates at the kinetochore.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, perturbation of Aurora B centromeric localization by actinomycin D translates into a local reduction of activity and the consequent decrease in phosphorylation of key Aurora B substrates at the kinetochore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the immunofluorescence data showing reduced phosphorylation of Aurora B substrates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "2f0527ff-c159-484f-ade7-832799535ff1",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C51",
+      "claim": "Actinomycin D treatment for 4 hr compromises the recruitment of Knl1 to unattached kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, while actinomycin D treatment for 4 hr does not perturb the normal localization of CENP-A and members of the Ndc80 and Mis12 complex, it compromises the recruitment of Knl1 to unattached kinetochores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the immunofluorescence data showing reduced Knl1 levels at kinetochores.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "59ac2f55-8298-4d6c-9e7c-6145f30abfc4",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C52",
+      "claim": "Aurora B inhibition in nocodazole-treated cells caused a 38% reduction of Mad1 at unattached kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, similar to actinomycin D treatment, Aurora B inhibition in nocodazole-treated cells caused a 38% and 28% reduction of Mad1 and Knl1 at unattached kinetochores, respectively (Figure 3\u2014figure supplement 2A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data presented in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "b5413135-74d4-49ca-875c-c49cd5a57304",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C53",
+      "claim": "Aurora B inhibition in nocodazole-treated cells caused a 28% reduction of Knl1 at unattached kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, similar to actinomycin D treatment, Aurora B inhibition in nocodazole-treated cells caused a 38% and 28% reduction of Mad1 and Knl1 at unattached kinetochores, respectively (Figure 3\u2014figure supplement 2A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data presented in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "31c0e098-388e-4b0e-8a47-19731e11f691",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C54",
+      "claim": "Constitutive targeting of Aurora B to centromeres by expressing a Cenp-B-INCENP fusion protein was able to rescue SAC response in actinomycin D-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, it has previously been shown that constitutive targeting of Aurora B to centromeres by expressing a Cenp-B-INCENP fusion protein was able to rescue SAC response in actinomycin D-treated cells (Becker et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "05ae1557-eefc-437f-9590-238df57b14b4",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C55",
+      "claim": "Perturbation of Aurora B localization and consequent decrease in activity at centromeres is the primary effect of Actinomycin D treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these data suggest that perturbation of Aurora B localization and consequent decrease in activity at centromeres is the primary effect of Actinomycin D treatment and this likely accounts for the weakened SAC response due to a downstream effect over Knl1 and Mad1 recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined experimental results showing Aurora B mislocalization and downstream effects on Knl1 and Mad1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "5c33931a-7538-42bc-9df0-0e0ca4e5e7fd",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C56",
+      "claim": "Aurora B, Survivin and Borealin total protein levels remained unchanged after 4 hr treatment with actinomycin D.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis revealed that Aurora B, as well as the total protein levels of the CPC regulatory subunits Survivin and Borealin remained unchanged relative to controls (including inhibition of translation during mitosis with cycloheximide or Aurora B inhibition with ZM447439) after 4 hr treatment with actinomycin D (Figure 4A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "5c3b24ed-e1d2-48b0-aab0-ae5cfc9c4bd8",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C57",
+      "claim": "Quantitative transcriptome analysis did not reveal any significant changes in annotated or novel assembled transcripts upon actinomycin D treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Our quantitative transcriptome analysis did not reveal any significant changes either in annotated or novel assembled transcripts (including all biotypes) upon actinomycin D treatment, ruling out differential gene expression after transcription inhibition during mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "72500705-0109-43b6-8c36-89b6ac5b71bc",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C58",
+      "claim": "Cyclin B1 and all key mitotic regulators, including Aurora B, were not de novo transcribed even during a prolonged mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we confirmed that Cyclin B1, as well as all key mitotic regulators, including Aurora B, were not de novo transcribed even during a prolonged mitosis (Figure 4D; see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data presented in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "9a00b8be-7a1c-43dd-86a3-ff365e907498",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C59",
+      "claim": "Actinomycin D treatment did not reduce the level of centromeric \u03b1-satellite RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that actinomycin D treatment did not reduce the level of centromeric \u03b1-satellite RNA (Figure 4E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data presented in Figure 4E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "87f1291d-fa78-4ad1-903f-6c2c513e212b",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C60",
+      "claim": "Inhibition of transcription with actinomycin D during a prolonged mitosis does not impair normal transcript levels, including centromeric \u03b1-satellite RNA, nor the normal levels of CPC proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results demonstrate that inhibition of transcription with actinomycin D during a prolonged mitosis caused by persistently unattached kinetochores does not impair normal transcript levels, including centromeric \u03b1-satellite RNA, nor the normal levels of CPC proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined RNA-seq, qPCR, and Western blot data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "89f6416d-7775-4e63-a4ee-2cb638f41f64",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C61",
+      "claim": "\u03b1-amanitin did not cause any significant effect over Mcl1 transcript levels relative to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "As suspected, we could not detect any significant effect of \u03b1-amanitin over Mcl1 transcript levels relative to controls (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data presented in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "d1367572-b64d-4b2a-9591-b7f21803c24d",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C62",
+      "claim": "Treatment with either actinomycin D or triptolide resulted in a 5-fold decrease in Mcl1 transcript levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In sharp contrast, treatment with either actinomycin D or triptolide resulted in a 5-fold decrease in Mcl1 transcript levels (Figure 5A) and led interphase cells to death within 4\u20135 hr in the presence of either actinomycin D or triptolide (Videos 1 and 2), suggesting an efficient and equivalent inhibition of transcription in both scenarios.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data presented in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "e5561aac-87fe-4f97-8c40-6eae2dfff8d8",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C63",
+      "claim": "Triptolide, but not \u03b1-amanitin, caused the degradation of the large subunit of RNA Polymerase II.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we confirmed that, within the time course of our experiment, triptolide, but not \u03b1-amanitin, caused the degradation of the large subunit of RNA Polymerase II (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data presented in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "0d40b3bc-debd-452c-b54a-cfcac9b6948e",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C64",
+      "claim": "Triptolide efficiently inhibits transcription in living cells independently of DNA intercalation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, triptolide, but not \u03b1-amanitin, efficiently inhibits transcription in living cells and it does so independently of DNA intercalation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the qPCR and Western blot data showing efficient transcription inhibition by triptolide without DNA intercalation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "bb37c6fb-ae76-4efd-9da9-6eb9f636fb3a",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C65",
+      "claim": "There were no significant differences in mitotic duration between nocodazole-treated cells with or without triptolide (19.3 \u00b1 7.1 hr vs 19.5 \u00b1 5.8 hr).",
+      "claim_type": "EXPLICIT",
+      "source": "We found no significant differences in mitotic duration between nocodazole-treated cells with or without triptolide (19.3 \u00b1 7.1 hr vs 19.5 \u00b1 5.8 hr, respectively, median \u00b1SD, n = 301 cells, p=0.65, Mann-Whitney Rank Sum Test, Figure 5B and Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by live-cell imaging data presented in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "2d631446-39f5-437d-acd1-2bf6ac49b1b1",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C66",
+      "claim": "Triptolide did not cause the displacement of Aurora B from centromeres in both fixed and live-cell assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Triptolide also did not cause the displacement of Aurora B from centromeres in both fixed and live-cell assays (Figure 5D\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence and live-cell imaging data presented in Figure 5D\u2013G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "40450dde-2149-4f95-ab65-cd56303f747a",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C67",
+      "claim": "SAC robustness, Aurora B centromeric localization, and the capacity to die in mitosis after a prolonged mitotic delay is independent of de novo transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "These results, supported by our RNA-seq data, indicate that SAC robustness, Aurora B centromeric localization, as well as the capacity to die in mitosis after a prolonged mitotic delay is independent of de novo transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the triptolide experiments showing no effect on Aurora B localization or SAC response.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "901b2dff-0af2-4b22-8071-bd4d473a8404",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C68",
+      "claim": "Mcl1 transcript levels were only slightly decreased (without statistic significance) after 4 hr of ethidium bromide treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that interphase cells were able to enter mitosis after treatment with ethidium bromide (Video 2). Additionally, Mcl1 transcript levels were only slightly decreased (without statistic significance) after 4 hr of ethidium bromide treatment (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data presented in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "dd8fb030-8229-4ade-baf9-666a79c6ca05",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C69",
+      "claim": "Cells treated with nocodazole and ethidium bromide spent slightly less time in mitosis when compared to cells treated with nocodazole only (19.2 \u00b1 7.0 hr vs 18.1 \u00b1 5.9 hr), but the difference was not statistically relevant.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, cells treated with nocodazole and ethidium bromide spent slightly less time in mitosis when compared to cells treated with nocodazole only, but the difference was not statistically relevant (19.2 \u00b1 7.0 hr vs 18.1 \u00b1 5.9 hr, median \u00b1SD, n = 386;151 cells/condition, p=0.13, Mann-Whitney Rank Sum Test, Figure 6B and Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by live-cell imaging data presented in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "79c9ef0c-57e8-4a20-aaa8-47b9b38f927e",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C70",
+      "claim": "Ethidium bromide caused a significant effect over cell fate after the mitotic delay imposed by nocodazole, causing mitotic slippage in approximately 50% of the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, similar to actinomycin D, ethidium bromide caused a significant effect over cell fate after the mitotic delay imposed by nocodazole, causing mitotic slippage in approximately 50% of the cells (Figure 6C and Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by live-cell imaging data presented in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "588b5a0c-51e5-4ec3-93ec-a927ca8cd3bf",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C71",
+      "claim": "Ethidium bromide displaced Aurora B from centromeres in fixed cells, although to a less extent when compared with actinomycin D.",
+      "claim_type": "EXPLICIT",
+      "source": "Ethidium bromide also displaced Aurora B from centromeres in fixed cells, although to a less extent when compared with actinomycin D (Figure 6D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data presented in Figure 6D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "21128712-9133-4b03-8d4b-ede21233c87b",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C72",
+      "claim": "DNA intercalating drugs interfere with normal Aurora B localization at centromeres and compromise cell fate after a prolonged mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that DNA intercalating drugs interfere with normal Aurora B localization at centromeres and compromise cell fate after a prolonged mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the ethidium bromide experiments showing Aurora B mislocalization and altered cell fate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "4847a2cc-6754-41ec-a235-f0889a9e7f8f",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C73",
+      "claim": "Actinomycin D or ethidium bromide-treated NCPs showed ~50% reduction in CPC-CTM binding, when compared to DMSO- or Triptolide-treated NCPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our fixed and live-cell data, actinomycin D or ethidium bromide-treated NCPs showed ~50% reduction in CPC-CTM binding, when compared to DMSO- or Triptolide-treated NCPs (p\u22640.05, t test, Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by EMSA data presented in Figure 6F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "038dca48-8a0d-49d1-9642-03a4cb1003a0",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C74",
+      "claim": "DNA intercalating drugs interfere with centromere integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, DNA intercalating drugs interfere with centromere integrity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the EMSA data showing reduced CPC binding to nucleosomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "4dfb4faf-d8e2-4e65-8ccd-7cf68c19bb7b",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C75",
+      "claim": "Control and triptolide-treated cells took a similar time to exit mitosis after nocodazole washout (79.1 \u00b1 28.7 min vs 86.2 \u00b1 31.7 min).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that control and triptolide-treated cells took a similar time to exit mitosis after nocodazole washout (79.1 \u00b1 28.7 min vs 86.2 \u00b1 31.7 min, median \u00b1 SD, n = 116;113 cells/condition, p=0.11, Mann-Whitney Rank Sum Test, Figure 7C and Video 3) without any apparent defect (Figure 7D and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by live-cell imaging data presented in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "6202e61b-a1ae-4289-ada1-ed66597430a0",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C76",
+      "claim": "Actinomycin D-treated cells showed a significant delay in mitotic exit after nocodazole washout.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, actinomycin D-treated cells showed a significant delay in mitotic exit (Figure 7C and Video 3) and underwent mitotic slippage (33%) or failed cytokinesis (47%) (Figure 7D and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by live-cell imaging data presented in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "61d47b69-cc47-4118-b51d-3b436edbf424",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C77",
+      "claim": "Actinomycin D-treated cells underwent mitotic slippage (33%) or failed cytokinesis (47%) after nocodazole washout.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, actinomycin D-treated cells showed a significant delay in mitotic exit (Figure 7C and Video 3) and underwent mitotic slippage (33%) or failed cytokinesis (47%) (Figure 7D and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by live-cell imaging data presented in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "4218ad2c-832a-4b67-9230-0485fd311aa2",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C78",
+      "claim": "Actinomycin D-treated cells after nocodazole washout showed persistent DNA bridges at the cleavage furrow.",
+      "claim_type": "EXPLICIT",
+      "source": "Close inspection of actinomycin D-treated cells after nocodazole washout by immunofluorescence revealed persistent DNA bridges at the cleavage furrow (Figure 7\u2014figure supplement 1A), which might have accounted for the observed failure in completing cytokinesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data presented in Figure 7\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "8e618f92-8d3b-4abe-9312-5642e8ab6b2b",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C79",
+      "claim": "The capacity of human cells to progress and exit mitosis, including the completion of cytokinesis, is independent of de novo transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these experiments indicate that the capacity of human cells to progress and exit mitosis, including the completion of cytokinesis, is independent of de novo transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the nocodazole washout experiments showing normal mitotic progression with triptolide.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "83651619-c0b4-492c-a6cf-2f4b54e2be22",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C80",
+      "claim": "The capacity of human cells to sustain, progress, exit or die in mitosis does not require de novo transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining direct live-cell imaging, while monitoring the efficiency and specificity of transcription inhibition at the whole genome level, we show that the capacity of human cells to sustain, progress, exit or die in mitosis does not require de novo transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined experimental results with triptolide showing no effect on mitotic outcomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "889d7248-2833-44e8-ae54-c647737f22e2",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C81",
+      "claim": "Actinomycin D and other DNA intercalating agents caused partial dissociation of the CPC from nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Actinomycin D and other DNA intercalating agents caused partial dissociation of the CPC from nucleosomes, thereby compromising Aurora B centromeric localization and SAC response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by EMSA data showing reduced CPC binding to nucleosomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "72198623-dd85-4c94-88e2-07fa4bc8a963",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C82",
+      "claim": "\u03b1-amanitin failed to efficiently inhibit transcription even after several hours in mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the slow uptake drug \u03b1-amanitin failed to efficiently inhibit transcription even after several hours in mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by qPCR data showing no effect on Mcl1 transcript levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "bda39c8a-3339-47bd-a8e3-44e204a0ebd6",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C83",
+      "claim": "Efficient inhibition of mitotic transcription independently of DNA intercalation using triptolide had no discernible effect over Aurora B centromeric localization or SAC response.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, efficient inhibition of mitotic transcription independently of DNA intercalation using triptolide had no discernible effect over Aurora B centromeric localization or SAC response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by immunofluorescence and live-cell imaging data with triptolide.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "22cebf1c-5cf1-49d8-9263-21d6b07f3a13",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C84",
+      "claim": "Centromere integrity, rather than mitotic transcription, is required for proper localization and activity of Aurora B and to mount a robust SAC.",
+      "claim_type": "EXPLICIT",
+      "source": "We concluded that centromere integrity, rather than mitotic transcription, is required for proper localization and activity of Aurora B and to mount a robust SAC able to sustain mitosis in human cells for several hours in the event of unattached kinetochores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined experimental results showing that DNA intercalation, not transcription inhibition, affects Aurora B and SAC.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "1078b385-d799-4a6a-8d11-166abf3d593e",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C85",
+      "claim": "Aurora B activity and its stable association with centromeres are important for normal Knl1 and Mad1 recruitment to unattached kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we showed that both Aurora B activity and its stable association with centromeres are important for normal Knl1 and Mad1 recruitment to unattached kinetochores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the immunofluorescence data showing reduced Knl1 and Mad1 levels after Aurora B perturbation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "5f5a74d4-9edf-4140-b942-fb6c8fa1590c",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C86",
+      "claim": "RNA Polymerase II is generally found displaced from chromatin during prometaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a global shut-down of transcription during prometaphase (the physiological equivalent of nocodazole-arrested cells), RNA Polymerase II is generally found displaced from chromatin (Hsiung et al., 2016), with the notorious exception of the centromeric region (Chan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "eeb017b9-b687-40db-90b3-ed7248b7e0a0",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C87",
+      "claim": "Centromeric transcription is involved in nucleosome disassembly during interphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Centromeric transcription is involved in nucleosome disassembly during interphase (Boeger et al., 2003) to facilitate the replacement of histone H3 by CENP-A (McKittrick et al., 2004; Tagami et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "d75b4f69-fa1c-4bc5-afcd-1634e72a6bf5",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C88",
+      "claim": "Experimental increase of \u03b1-satellite RNA levels reduced the binding of Sgo1 to nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, experimental increase of \u03b1-satellite RNA levels were shown to reduce the binding of Sgo1 to nucleosomes (Liu et al., 2015) and led to problems in chromosome segregation (Chan et al., 2017; Zhu et al., 2011), suggesting that the levels of \u03b1-satellite RNA must be tightly regulated to ensure a faithful mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "eef659dc-7c98-4036-a96f-5a93094fcedf",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C89",
+      "claim": "Experimental increase of \u03b1-satellite RNA levels led to problems in chromosome segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, experimental increase of \u03b1-satellite RNA levels were shown to reduce the binding of Sgo1 to nucleosomes (Liu et al., 2015) and led to problems in chromosome segregation (Chan et al., 2017; Zhu et al., 2011), suggesting that the levels of \u03b1-satellite RNA must be tightly regulated to ensure a faithful mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "950ddd2e-4408-4895-b1c7-c10a4c9c0ea9",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C90",
+      "claim": "The levels of \u03b1-satellite RNA must be tightly regulated to ensure a faithful mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, experimental increase of \u03b1-satellite RNA levels were shown to reduce the binding of Sgo1 to nucleosomes (Liu et al., 2015) and led to problems in chromosome segregation (Chan et al., 2017; Zhu et al., 2011), suggesting that the levels of \u03b1-satellite RNA must be tightly regulated to ensure a faithful mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the cited studies showing effects of altered \u03b1-satellite RNA levels.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "cc3ebf46-bb00-45de-917a-d7d83cecb1d0",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "claim_id": "C91",
+      "claim": "Regardless of the capacity to detect residual transcription during mitosis, this is not required for human cells to sustain, progress, exit or die in mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our results demonstrate that, regardless of our capacity to detect residual transcription that might still take place on specific chromosomal loci during mitosis, this is not required for human cells to sustain, progress, exit or die in mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined experimental results showing normal mitotic outcomes with triptolide treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0626037b-060f-4173-8c2d-619ea89eea97",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Actinomycin D treatment reduces mitotic duration in nocodazole-arrested cells from 19.2\u00b17.0 hr to 16.1\u00b15.6 hr and alters cell fate, with 54% undergoing mitotic slippage versus 90% death in controls. This effect is rescued by proteasome inhibition with MG132, suggesting actinomycin D compromises SAC response in a proteasome-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C31 provide converging evidence from live-cell imaging with appropriate statistical tests (Mann-Whitney, p<0.0001) and adequate sample sizes (n=301-386 cells). The rescue experiments with MG132 and Mps1 inhibitor provide strong mechanistic support. The data consistently show actinomycin D effects on mitotic timing and cell fate that are reversed by proteasome inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "7dd28b13-f7f3-47d5-a4c6-ebb0c44d3405",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Actinomycin D accelerates Cyclin B1 degradation in nocodazole-arrested cells, but this effect is blocked by proteasome inhibition with MG132. The authors conclude this occurs independently of de novo transcription.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C32-C34 show clear effects on Cyclin B1 degradation kinetics with appropriate statistical analysis (ANCOVA, p<0.0001). However, C35's conclusion that this is 'independent of de novo transcription' is premature at this stage, as the transcription-independence is only established later with triptolide experiments. The mechanistic link between actinomycin D treatment and transcription-independence requires additional evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "23e5e321-b09e-43b3-94d4-f28bd2b396c4",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Actinomycin D treatment causes Aurora B mislocalization from centromeres and reduces Mad1 recruitment to kinetochores (45% reduction) without affecting Mps1 or Haspin activity. In ~17% of cells, pH3S10 is reduced/abolished while chromosome condensation remains normal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C45 are well-supported by immunofluorescence data with appropriate quantification and statistical analysis. The observation that Mps1 and Haspin activity are unaffected (C43-C44) strengthens the specificity of the Aurora B effect. Sample sizes appear adequate (n=258-474 kinetochores) and controls are appropriate. The phenotypic characterization is thorough.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "b6abeefd-301c-4b92-940f-83a14f86fdd0",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Actinomycin D reduces phosphorylation of Aurora B substrates Knl1 (22%) and Dsn1 (43%), and decreases total Knl1 levels (29%) without affecting Dsn1, Hec1, or CENP-A. Aurora B inhibition produces similar effects on Mad1 (38% reduction) and Knl1 (28% reduction), suggesting Aurora B mislocalization is the primary mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C55 provide strong mechanistic evidence linking Aurora B mislocalization to downstream effects on kinetochore proteins. The parallel experiments with Aurora B inhibitor (C52-C53) strengthen the causal interpretation. The selectivity (some proteins affected, others not) supports specificity. Citation to rescue experiments (C54) from prior work adds support. Statistical analysis appears appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "893a88a6-0ec2-4aaf-9c89-723b21ba12d7",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Actinomycin D treatment does not alter total protein levels of Aurora B, Survivin, or Borealin, nor does it change transcript levels of mitotic regulators including Cyclin B1, Aurora B, or centromeric \u03b1-satellite RNA, as measured by Western blot, RNA-seq, and qPCR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C60 provide multiple lines of evidence (Western blot, RNA-seq, qPCR) showing no changes in protein or transcript levels. The RNA-seq analysis appears comprehensive, examining both annotated and novel transcripts. The qPCR validation for \u03b1-satellite RNA addresses a specific hypothesis about centromeric transcription. However, RNA-seq has limitations for repetitive centromeric regions, which the authors acknowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "d9c45b52-e11b-4850-94af-a1b9a02020c2",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Triptolide, a non-DNA-intercalating transcription inhibitor, efficiently reduces Mcl1 transcripts (5-fold) and causes RNA Pol II degradation, but does not affect mitotic duration (19.3\u00b17.1 vs 19.5\u00b15.8 hr), Aurora B localization, or cell fate in nocodazole-arrested cells. In contrast, \u03b1-amanitin fails to inhibit transcription effectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C67 provide the critical control experiment distinguishing transcription inhibition from DNA intercalation effects. The comparison of three inhibitors (actinomycin D, triptolide, \u03b1-amanitin) with different mechanisms is well-designed. Triptolide's efficacy is validated by Mcl1 reduction and Pol II degradation (C62-C63), while its lack of effect on mitotic parameters (C65-C66) is clearly demonstrated. This is the key experiment supporting the main conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "6b326f22-6b5d-49ad-afe2-b00e9d97a371",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Ethidium bromide, a DNA intercalator that does not inhibit transcription (Mcl1 levels unchanged), causes Aurora B displacement from centromeres and induces mitotic slippage in ~50% of cells, similar to actinomycin D. EMSA experiments show ~50% reduction in CPC binding to nucleosomes with actinomycin D or ethidium bromide but not triptolide.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C74 provide strong mechanistic evidence that DNA intercalation, not transcription inhibition, causes Aurora B mislocalization. The EMSA experiments (C73) directly demonstrate reduced CPC-nucleosome binding with DNA intercalators but not triptolide, providing molecular-level support. The ethidium bromide control is well-chosen as it intercalates DNA without inhibiting transcription. Statistical analysis is appropriate (t-test, p\u22640.05).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "4c44bcdc-3d4f-452f-8073-f02a6560fa09",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "After nocodazole washout, triptolide-treated cells exit mitosis normally (86.2\u00b131.7 min vs 79.1\u00b128.7 min control), while actinomycin D-treated cells show delayed exit and defects including mitotic slippage (33%) and cytokinesis failure (47%) with persistent DNA bridges.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C79 demonstrate that transcription inhibition without DNA intercalation does not impair mitotic progression or exit. The nocodazole washout experiment is well-designed to test mitotic progression capacity. Statistical analysis is appropriate (Mann-Whitney, p=0.11 for triptolide vs control). The observation of DNA bridges in actinomycin D-treated cells (C78) provides a plausible mechanism for cytokinesis failure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "2362cd5c-c286-4a36-ab4f-6c1fc7bbccd6",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The main conclusion is that mitotic progression, arrest, exit, and death are determined by centromere structural integrity rather than de novo transcription. DNA intercalating drugs (actinomycin D, ethidium bromide) compromise Aurora B localization and SAC signaling by reducing CPC-nucleosome interactions, while transcription inhibition without DNA intercalation (triptolide) has no effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C10, C80-C84, and C91 represent the paper's central conclusion, which is well-supported by the convergence of multiple experimental approaches: (1) differential effects of actinomycin D vs triptolide, (2) ethidium bromide phenocopying actinomycin D, (3) EMSA showing direct effects on CPC-nucleosome binding, (4) lack of transcriptional changes by RNA-seq/qPCR, and (5) normal mitotic progression with triptolide. The logic is sound and the evidence is compelling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "3f3c43f4-3de1-4ed5-a3c0-a574f0c8cefb",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior work has proposed that transcription is required for SAC response, with specific claims about Cyclin B1 transcription during mitosis, centromeric transcription regulating Aurora B, and over 8000 transcripts expressed de novo during mitosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C11-C17 accurately represent prior literature through appropriate citations. These claims establish the context and rationale for the current study by summarizing the prevailing hypotheses that the authors are testing. The citations appear appropriate and the characterization of prior work is fair.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "3b04f488-a387-4fc2-bf79-234be3f4bdd8",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior work has shown that slower Cyclin B1 degradation promotes mitotic cell death while faster degradation promotes mitotic slippage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 accurately cite prior work establishing the relationship between Cyclin B1 degradation kinetics and cell fate. This provides important context for interpreting the actinomycin D effects on Cyclin B1 degradation and cell fate observed in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "8dde6311-8022-477f-9beb-9cd04d025c6c",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "\u03b1-amanitin failed to efficiently inhibit transcription even after several hours in mitosis, as evidenced by lack of effect on Mcl1 transcript levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 is supported by qPCR data (C61) showing no significant effect on Mcl1 levels. This negative result is important for interpreting prior studies using \u03b1-amanitin and explains why the authors chose triptolide as the non-intercalating transcription inhibitor. The explanation about \u03b1-amanitin being a slow-uptake drug provides mechanistic context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "f564b10a-bc19-4613-bb5b-690b6dacda95",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Aurora B activity and stable centromeric association are important for normal Knl1 and Mad1 recruitment to unattached kinetochores.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 is supported by the parallel effects of actinomycin D and Aurora B inhibitor on Knl1 and Mad1 levels (C42, C46-C48, C52-C53). This represents a mechanistic insight into how Aurora B mislocalization affects SAC signaling, though the specific molecular mechanisms are not fully elucidated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    },
+    {
+      "id": "be492ab6-a15f-4485-a9a1-5e80f8ae7eb5",
+      "content_id": "d6098221-6250-4a33-b2a2-b90201b88bab",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior work has shown that RNA Polymerase II localizes to centromeres during prometaphase, centromeric transcription is involved in nucleosome disassembly during interphase, and \u03b1-satellite RNA levels must be tightly regulated for faithful mitosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C90 accurately represent prior literature on centromeric transcription and its proposed roles. These claims provide important context for the discussion of why centromeric transcription might occur and how it could affect centromere function, even though the current study shows it is not required during mitosis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:52:20.089033Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "605e0575-8376-4187-acd4-dbeff564ddd5",
+      "result_id": "0626037b-060f-4173-8c2d-619ea89eea97"
+    },
+    {
+      "claim_id": "5f76141c-f315-422a-b108-d6f3a1888404",
+      "result_id": "0626037b-060f-4173-8c2d-619ea89eea97"
+    },
+    {
+      "claim_id": "1113329c-de91-4eb4-bd5f-5d2e230f7823",
+      "result_id": "0626037b-060f-4173-8c2d-619ea89eea97"
+    },
+    {
+      "claim_id": "23cde8fa-317b-4939-9f98-3a024c0d33d9",
+      "result_id": "0626037b-060f-4173-8c2d-619ea89eea97"
+    },
+    {
+      "claim_id": "b6a8cff6-3cf5-48a6-8b34-4ec9c1a9e7c0",
+      "result_id": "0626037b-060f-4173-8c2d-619ea89eea97"
+    },
+    {
+      "claim_id": "346ff5da-76b1-4a27-afc9-452b4cb2858b",
+      "result_id": "0626037b-060f-4173-8c2d-619ea89eea97"
+    },
+    {
+      "claim_id": "9c634616-a875-4fa3-ab04-02dc56a690b2",
+      "result_id": "0626037b-060f-4173-8c2d-619ea89eea97"
+    },
+    {
+      "claim_id": "8ff59cd4-5c6f-4b3f-8cfd-1d4558f40bc9",
+      "result_id": "0626037b-060f-4173-8c2d-619ea89eea97"
+    },
+    {
+      "claim_id": "c66eceae-1294-4558-884c-b8e9dffc84f8",
+      "result_id": "0626037b-060f-4173-8c2d-619ea89eea97"
+    },
+    {
+      "claim_id": "1219a021-b0a1-419f-b8fb-9ade3938de7a",
+      "result_id": "0626037b-060f-4173-8c2d-619ea89eea97"
+    },
+    {
+      "claim_id": "aec6e2fc-700a-45d0-a417-0f0d2bc372ef",
+      "result_id": "0626037b-060f-4173-8c2d-619ea89eea97"
+    },
+    {
+      "claim_id": "b1e6dd1c-707b-4757-a83a-a52382797643",
+      "result_id": "0626037b-060f-4173-8c2d-619ea89eea97"
+    },
+    {
+      "claim_id": "e4992990-1d1d-4d57-80c2-ec3e25dd2c83",
+      "result_id": "7dd28b13-f7f3-47d5-a4c6-ebb0c44d3405"
+    },
+    {
+      "claim_id": "6e944d01-36f7-4697-b760-2e8d7f5cafce",
+      "result_id": "7dd28b13-f7f3-47d5-a4c6-ebb0c44d3405"
+    },
+    {
+      "claim_id": "8df2c821-acfd-4d80-af09-c4cea527b8cd",
+      "result_id": "7dd28b13-f7f3-47d5-a4c6-ebb0c44d3405"
+    },
+    {
+      "claim_id": "c60ca89f-ec12-45e7-80ba-e3a7cdc9416b",
+      "result_id": "7dd28b13-f7f3-47d5-a4c6-ebb0c44d3405"
+    },
+    {
+      "claim_id": "b42e6549-8d93-45df-ad74-ca8dbb8de3ac",
+      "result_id": "23e5e321-b09e-43b3-94d4-f28bd2b396c4"
+    },
+    {
+      "claim_id": "a47dd45f-ed3b-4298-8b20-8a1e5ca316d5",
+      "result_id": "23e5e321-b09e-43b3-94d4-f28bd2b396c4"
+    },
+    {
+      "claim_id": "1cee5850-2fda-4c08-bcbc-b5288185f67d",
+      "result_id": "23e5e321-b09e-43b3-94d4-f28bd2b396c4"
+    },
+    {
+      "claim_id": "260e1cd9-148a-4d5b-9f10-7f3a0ad5199e",
+      "result_id": "23e5e321-b09e-43b3-94d4-f28bd2b396c4"
+    },
+    {
+      "claim_id": "5245c38d-4300-478e-8fa3-26a56c1ca69d",
+      "result_id": "23e5e321-b09e-43b3-94d4-f28bd2b396c4"
+    },
+    {
+      "claim_id": "9d2c76ae-25c1-48af-80ab-21c4e3e9d60a",
+      "result_id": "23e5e321-b09e-43b3-94d4-f28bd2b396c4"
+    },
+    {
+      "claim_id": "ab9d933c-c7ed-4cbe-9d8a-29da4801737d",
+      "result_id": "23e5e321-b09e-43b3-94d4-f28bd2b396c4"
+    },
+    {
+      "claim_id": "309a5bf3-a48c-41fa-b724-c46881483c82",
+      "result_id": "23e5e321-b09e-43b3-94d4-f28bd2b396c4"
+    },
+    {
+      "claim_id": "306d9421-689b-4470-8465-2f52dc36ae6f",
+      "result_id": "23e5e321-b09e-43b3-94d4-f28bd2b396c4"
+    },
+    {
+      "claim_id": "0d05480e-90ad-41ce-b7ab-44a23fe0aa39",
+      "result_id": "23e5e321-b09e-43b3-94d4-f28bd2b396c4"
+    },
+    {
+      "claim_id": "cc5417b0-0972-4358-84ef-8dd03cb74f72",
+      "result_id": "b6abeefd-301c-4b92-940f-83a14f86fdd0"
+    },
+    {
+      "claim_id": "899e1f0f-267d-4e2b-96e8-b3662c24a9f0",
+      "result_id": "b6abeefd-301c-4b92-940f-83a14f86fdd0"
+    },
+    {
+      "claim_id": "b78f0874-7a40-4975-9c33-d267fba6cdee",
+      "result_id": "b6abeefd-301c-4b92-940f-83a14f86fdd0"
+    },
+    {
+      "claim_id": "0a8e4323-3e2e-4566-a169-fdfbdb31a70a",
+      "result_id": "b6abeefd-301c-4b92-940f-83a14f86fdd0"
+    },
+    {
+      "claim_id": "9bb19f48-90ff-4ba7-834d-3e27a6954194",
+      "result_id": "b6abeefd-301c-4b92-940f-83a14f86fdd0"
+    },
+    {
+      "claim_id": "2f0527ff-c159-484f-ade7-832799535ff1",
+      "result_id": "b6abeefd-301c-4b92-940f-83a14f86fdd0"
+    },
+    {
+      "claim_id": "59ac2f55-8298-4d6c-9e7c-6145f30abfc4",
+      "result_id": "b6abeefd-301c-4b92-940f-83a14f86fdd0"
+    },
+    {
+      "claim_id": "b5413135-74d4-49ca-875c-c49cd5a57304",
+      "result_id": "b6abeefd-301c-4b92-940f-83a14f86fdd0"
+    },
+    {
+      "claim_id": "31c0e098-388e-4b0e-8a47-19731e11f691",
+      "result_id": "b6abeefd-301c-4b92-940f-83a14f86fdd0"
+    },
+    {
+      "claim_id": "05ae1557-eefc-437f-9590-238df57b14b4",
+      "result_id": "b6abeefd-301c-4b92-940f-83a14f86fdd0"
+    },
+    {
+      "claim_id": "5c33931a-7538-42bc-9df0-0e0ca4e5e7fd",
+      "result_id": "893a88a6-0ec2-4aaf-9c89-723b21ba12d7"
+    },
+    {
+      "claim_id": "5c3b24ed-e1d2-48b0-aab0-ae5cfc9c4bd8",
+      "result_id": "893a88a6-0ec2-4aaf-9c89-723b21ba12d7"
+    },
+    {
+      "claim_id": "72500705-0109-43b6-8c36-89b6ac5b71bc",
+      "result_id": "893a88a6-0ec2-4aaf-9c89-723b21ba12d7"
+    },
+    {
+      "claim_id": "9a00b8be-7a1c-43dd-86a3-ff365e907498",
+      "result_id": "893a88a6-0ec2-4aaf-9c89-723b21ba12d7"
+    },
+    {
+      "claim_id": "87f1291d-fa78-4ad1-903f-6c2c513e212b",
+      "result_id": "893a88a6-0ec2-4aaf-9c89-723b21ba12d7"
+    },
+    {
+      "claim_id": "89f6416d-7775-4e63-a4ee-2cb638f41f64",
+      "result_id": "d9c45b52-e11b-4850-94af-a1b9a02020c2"
+    },
+    {
+      "claim_id": "d1367572-b64d-4b2a-9591-b7f21803c24d",
+      "result_id": "d9c45b52-e11b-4850-94af-a1b9a02020c2"
+    },
+    {
+      "claim_id": "e5561aac-87fe-4f97-8c40-6eae2dfff8d8",
+      "result_id": "d9c45b52-e11b-4850-94af-a1b9a02020c2"
+    },
+    {
+      "claim_id": "0d40b3bc-debd-452c-b54a-cfcac9b6948e",
+      "result_id": "d9c45b52-e11b-4850-94af-a1b9a02020c2"
+    },
+    {
+      "claim_id": "bb37c6fb-ae76-4efd-9da9-6eb9f636fb3a",
+      "result_id": "d9c45b52-e11b-4850-94af-a1b9a02020c2"
+    },
+    {
+      "claim_id": "2d631446-39f5-437d-acd1-2bf6ac49b1b1",
+      "result_id": "d9c45b52-e11b-4850-94af-a1b9a02020c2"
+    },
+    {
+      "claim_id": "40450dde-2149-4f95-ab65-cd56303f747a",
+      "result_id": "d9c45b52-e11b-4850-94af-a1b9a02020c2"
+    },
+    {
+      "claim_id": "901b2dff-0af2-4b22-8071-bd4d473a8404",
+      "result_id": "6b326f22-6b5d-49ad-afe2-b00e9d97a371"
+    },
+    {
+      "claim_id": "dd8fb030-8229-4ade-baf9-666a79c6ca05",
+      "result_id": "6b326f22-6b5d-49ad-afe2-b00e9d97a371"
+    },
+    {
+      "claim_id": "79c9ef0c-57e8-4a20-aaa8-47b9b38f927e",
+      "result_id": "6b326f22-6b5d-49ad-afe2-b00e9d97a371"
+    },
+    {
+      "claim_id": "588b5a0c-51e5-4ec3-93ec-a927ca8cd3bf",
+      "result_id": "6b326f22-6b5d-49ad-afe2-b00e9d97a371"
+    },
+    {
+      "claim_id": "21128712-9133-4b03-8d4b-ede21233c87b",
+      "result_id": "6b326f22-6b5d-49ad-afe2-b00e9d97a371"
+    },
+    {
+      "claim_id": "4847a2cc-6754-41ec-a235-f0889a9e7f8f",
+      "result_id": "6b326f22-6b5d-49ad-afe2-b00e9d97a371"
+    },
+    {
+      "claim_id": "038dca48-8a0d-49d1-9642-03a4cb1003a0",
+      "result_id": "6b326f22-6b5d-49ad-afe2-b00e9d97a371"
+    },
+    {
+      "claim_id": "4dfb4faf-d8e2-4e65-8ccd-7cf68c19bb7b",
+      "result_id": "4c44bcdc-3d4f-452f-8073-f02a6560fa09"
+    },
+    {
+      "claim_id": "6202e61b-a1ae-4289-ada1-ed66597430a0",
+      "result_id": "4c44bcdc-3d4f-452f-8073-f02a6560fa09"
+    },
+    {
+      "claim_id": "61d47b69-cc47-4118-b51d-3b436edbf424",
+      "result_id": "4c44bcdc-3d4f-452f-8073-f02a6560fa09"
+    },
+    {
+      "claim_id": "4218ad2c-832a-4b67-9230-0485fd311aa2",
+      "result_id": "4c44bcdc-3d4f-452f-8073-f02a6560fa09"
+    },
+    {
+      "claim_id": "8e618f92-8d3b-4abe-9312-5642e8ab6b2b",
+      "result_id": "4c44bcdc-3d4f-452f-8073-f02a6560fa09"
+    },
+    {
+      "claim_id": "1bbec28a-7a12-4338-924c-f182f99d71ca",
+      "result_id": "2362cd5c-c286-4a36-ab4f-6c1fc7bbccd6"
+    },
+    {
+      "claim_id": "eb648a07-04a3-4241-b5df-3eed88c83d14",
+      "result_id": "2362cd5c-c286-4a36-ab4f-6c1fc7bbccd6"
+    },
+    {
+      "claim_id": "4edb25b3-2d25-4303-8fb3-f4b362611b5e",
+      "result_id": "2362cd5c-c286-4a36-ab4f-6c1fc7bbccd6"
+    },
+    {
+      "claim_id": "b2ab1f45-5163-4a55-9595-2c6cd01f8310",
+      "result_id": "2362cd5c-c286-4a36-ab4f-6c1fc7bbccd6"
+    },
+    {
+      "claim_id": "29ea3509-4ddc-4402-9f02-849c2d08dcd8",
+      "result_id": "2362cd5c-c286-4a36-ab4f-6c1fc7bbccd6"
+    },
+    {
+      "claim_id": "83651619-c0b4-492c-a6cf-2f4b54e2be22",
+      "result_id": "2362cd5c-c286-4a36-ab4f-6c1fc7bbccd6"
+    },
+    {
+      "claim_id": "889d7248-2833-44e8-ae54-c647737f22e2",
+      "result_id": "2362cd5c-c286-4a36-ab4f-6c1fc7bbccd6"
+    },
+    {
+      "claim_id": "bda39c8a-3339-47bd-a8e3-44e204a0ebd6",
+      "result_id": "2362cd5c-c286-4a36-ab4f-6c1fc7bbccd6"
+    },
+    {
+      "claim_id": "22cebf1c-5cf1-49d8-9263-21d6b07f3a13",
+      "result_id": "2362cd5c-c286-4a36-ab4f-6c1fc7bbccd6"
+    },
+    {
+      "claim_id": "cc3ebf46-bb00-45de-917a-d7d83cecb1d0",
+      "result_id": "2362cd5c-c286-4a36-ab4f-6c1fc7bbccd6"
+    },
+    {
+      "claim_id": "5e35ffea-be88-4e0a-acca-6308cc817809",
+      "result_id": "3f3c43f4-3de1-4ed5-a3c0-a574f0c8cefb"
+    },
+    {
+      "claim_id": "1752d25a-8061-44f8-a66b-da821cfc329f",
+      "result_id": "3f3c43f4-3de1-4ed5-a3c0-a574f0c8cefb"
+    },
+    {
+      "claim_id": "50523f9f-56f9-4520-a79d-34cb71decb48",
+      "result_id": "3f3c43f4-3de1-4ed5-a3c0-a574f0c8cefb"
+    },
+    {
+      "claim_id": "3b0dbb36-c704-43e4-8501-e42717e98558",
+      "result_id": "3f3c43f4-3de1-4ed5-a3c0-a574f0c8cefb"
+    },
+    {
+      "claim_id": "34ad0043-86c2-4270-b04e-80e1b7910a55",
+      "result_id": "3f3c43f4-3de1-4ed5-a3c0-a574f0c8cefb"
+    },
+    {
+      "claim_id": "30a80481-8ade-4141-80f7-bd4c75983607",
+      "result_id": "3f3c43f4-3de1-4ed5-a3c0-a574f0c8cefb"
+    },
+    {
+      "claim_id": "d2d44894-f9ee-45e9-8c38-fbea505a314e",
+      "result_id": "3f3c43f4-3de1-4ed5-a3c0-a574f0c8cefb"
+    },
+    {
+      "claim_id": "37216b5e-2cbb-44ab-965d-932b07e1e375",
+      "result_id": "3f3c43f4-3de1-4ed5-a3c0-a574f0c8cefb"
+    },
+    {
+      "claim_id": "f1e5bc91-d088-41e5-851f-b270224b4adc",
+      "result_id": "3b04f488-a387-4fc2-bf79-234be3f4bdd8"
+    },
+    {
+      "claim_id": "bf39c828-7c5e-47dc-9488-1d37da620d01",
+      "result_id": "3b04f488-a387-4fc2-bf79-234be3f4bdd8"
+    },
+    {
+      "claim_id": "72198623-dd85-4c94-88e2-07fa4bc8a963",
+      "result_id": "8dde6311-8022-477f-9beb-9cd04d025c6c"
+    },
+    {
+      "claim_id": "1078b385-d799-4a6a-8d11-166abf3d593e",
+      "result_id": "f564b10a-bc19-4613-bb5b-690b6dacda95"
+    },
+    {
+      "claim_id": "5f5a74d4-9edf-4140-b942-fb6c8fa1590c",
+      "result_id": "be492ab6-a15f-4485-a9a1-5e80f8ae7eb5"
+    },
+    {
+      "claim_id": "eeb017b9-b687-40db-90b3-ed7248b7e0a0",
+      "result_id": "be492ab6-a15f-4485-a9a1-5e80f8ae7eb5"
+    },
+    {
+      "claim_id": "d75b4f69-fa1c-4bc5-afcd-1634e72a6bf5",
+      "result_id": "be492ab6-a15f-4485-a9a1-5e80f8ae7eb5"
+    },
+    {
+      "claim_id": "eef659dc-7c98-4036-a96f-5a93094fcedf",
+      "result_id": "be492ab6-a15f-4485-a9a1-5e80f8ae7eb5"
+    },
+    {
+      "claim_id": "950ddd2e-4408-4895-b1c7-c10a4c9c0ea9",
+      "result_id": "be492ab6-a15f-4485-a9a1-5e80f8ae7eb5"
+    }
+  ],
+  "comparisons": []
+}

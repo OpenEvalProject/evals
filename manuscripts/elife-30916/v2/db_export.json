@@ -1,0 +1,2340 @@
+{
+  "submission": {
+    "id": "f4eabc2f-0fc4-46e2-b441-e12cf2f05dbb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:18:43.582569Z",
+    "updated_at": "2025-12-02T00:18:43.582569Z"
+  },
+  "content": [
+    {
+      "id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "submission_id": "f4eabc2f-0fc4-46e2-b441-e12cf2f05dbb",
+      "content_type": "manuscript",
+      "content_text": "# Computer-guided design of optimal microbial consortia for immune system modulation\n\n## Authors\n\n- Richard R Stein<sup>1</sup> ([ORCID: 0000-0002-5110-6863](https://orcid.org/0000-0002-5110-6863)) \u2020\n- Takeshi Tanoue<sup>5</sup>\n- Rose L Szabady<sup>7</sup>\n- Shakti K Bhattarai<sup>8</sup>\n- Bernat Olle<sup>7</sup>\n- Jason M Norman<sup>7</sup>\n- Wataru Suda<sup>6</sup>\n- Kenshiro Oshima<sup>9</sup>\n- Masahira Hattori<sup>9</sup>\n- Georg K Gerber<sup>10</sup> ([ORCID: 0000-0002-9149-5509](https://orcid.org/0000-0002-9149-5509))\n- Chris Sander<sup>1</sup>\n- Kenya Honda<sup>5</sup>\n- Vanni Bucci<sup>8</sup> ([ORCID: 0000-0002-3257-2922](https://orcid.org/0000-0002-3257-2922)) \u2020\n\n### Affiliations\n\n1. cBio Center, Department of Biostatistics and Computational Biology Dana-Farber Cancer Institute Boston United States\n2. Department of Biostatistics Harvard T.H. Chan School of Public Health Boston United States\n3. Department of Systems Biology Harvard Medical School Boston United States\n4. Broad Institute of MIT and Harvard Cambridge United States\n5. RIKEN Center for Integrative Medical Sciences Yokohama Japan\n6. Department of Microbiology and Immunology Keio University School of Medicine Tokyo Japan\n7. Vedanta Biosciences Cambridge United States\n8. Engineering and Applied Sciences PhD Program University of Massachusetts Dartmouth North Dartmouth United States\n9. Graduate School of Frontier Sciences The University of Tokyo Kashiwa Japan\n10. Massachusetts Host-Microbiome Center, Department of Pathology Brigham and Women\u2019s Hospital, Harvard Medical School Boston United States\n11. Department of Cell Biology Harvard Medical School Boston United States\n12. Department of Biology University of Massachusetts Dartmouth North Dartmouth United States\n13. Center for Microbial Informatics and Statistics University of Massachusetts Dartmouth North Dartmouth United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nManipulation of the gut microbiota holds great promise for the treatment of diseases. However, a major challenge is the identification of therapeutically potent microbial consortia that colonize the host effectively while maximizing immunologic outcome. Here, we propose a novel workflow to select optimal immune-inducing consortia from microbiome compositicon and immune effectors measurements. Using published and newly generated microbial and regulatory T-cell (Treg) data from germ-free mice, we estimate the contributions of twelve Clostridia strains with known immune-modulating effect to Treg induction. Combining this with a longitudinal data-constrained ecological model, we predict the ability of every attainable and ecologically stable subconsortium in promoting Treg activation and rank them by the Treg Induction Score (TrIS). Experimental validation of selected consortia indicates a strong and statistically significant correlation between predicted TrIS and measured Treg. We argue that computational indexes, such as the TrIS, are valuable tools for the systematic selection of immune-modulating bacteriotherapeutics.\n\n## Introduction\n\nThe intestinal microbiota has been shown to critically influence a multitude of host physiological functions, often through modulation of the immune system (Gevers et al., 2014; Paun et al., 2016). Evidence includes studies in germ-free mice, which show that both pro-inflammatory T-helper 17 (Th17) cells and anti-inflammatory regulatory T-cells (Treg) are reduced in numbers in the intestinal lamina propria relative to conventional or specific pathogen-free mice (Atarashi et al., 2008), and that repopulation with specific bacteria can reconstitute them (Atarashi et al., 2015; Ivanov et al., 2009). One route to how the microbiota influences immune system activation is by the production of small molecules (Donia and Fischbach, 2015). Microbially produced short-chain fatty acids (SCFAs) were shown to facilitate extrathymic differentiation of immune system modulatory Treg (Arpaia et al., 2013; Atarashi et al., 2013; Smith et al., 2013) and are implicated in Treg-dependent anti-inflammatory properties of a mix of 17 human-derived Clostridia\u00a0strains (Atarashi et al., 2013; Tanoue et al., 2016). Interestingly, individual Clostridia strains only have a modest effect on Treg induction \u2013 optimal induction relies on the synergistic interplay of several strains (Atarashi et al., 2013; Belkaid and Hand, 2014). Because of these properties, there is currently great interest in the manipulation of this community for the treatment of inflammatory and allergic diseases (Honda and Littman, 2012; Olle, 2013; Vieira et al., 2016). Efforts involving transplantation of bacteria from healthy humans to humans with C. difficile infections or with metabolic diseases have provided evidence that microbiota repopulation could be used as possible strategy for disease prevention and treatment (van Nood et al., 2013; Vrieze et al., 2012). For this reason, intestinal supplementation of defined compositions of gut bacteria to treat a range of diseases is currently being pursued by multiple bio-pharmaceutical companies (Garber, 2015). Determining what microbial consortia can colonize the host and stably coexist with an already resident microbial community, while inducing the desired immune response, is still a major challenge that hinders the translation of these efforts into the clinic (Maldonado-G\u00f3mez et al., 2016; Weil and Hohmann, 2015).\n\nIn previous work, some\u00a0of\u00a0us identified a set of 17 potent\u00a0Treg-inducing\u00a0Clostridia strains to select candidate\u00a0subsets\u00a0from (Atarashi et al., 2013). The\u00a0determination of maximally immune-phenotype inducing combinations from these 17 strains is,\u00a0however, experimentally infeasible as it would require the testing of 217\u20131\u00a0=\u00a0131071 possible subsets\u00a0in mice (Faith et al., 2014). Therefore, a computational approach to prioritize which subsets to validate experimentally would have great utility. To our knowledge, to date there has been no model that allows for the simultaneous prediction of the dynamics of both the microbiota and the host immune response. Building on the approach to select for optimal bacterial combinations from (Faith et al., 2014) and other efforts aimed at identifying potential immune-modulating microbes (Geva-Zatorsky et al., 2017; Schirmer et al., 2016), we overcome this problem by proposing a mathematical modeling-based framework that, by resolving microbiome\u2013immune system interactions with parameters constrained to experimental observations of microbiome and immune effectors, allows computational optimization of immune-stimulating bacterial combinations. To achieve this, we use a series of logically connected analyses that capture CD4+FOXP3+ Treg accumulation in the colonic lamina propria (Omenetti and Pizarro, 2015; Round and Mazmanian, 2010) in response to the dynamics of human-derived Clostridia strains in germ-free mice, which had previously\u00a0been\u00a0shown to potently induce Treg expansion (Atarashi et al., 2013) (Figure 1). To constrain this proposed model framework to experimental data, we combine previously published (Atarashi et al., 2013) and newly generated fluorescence-activated cell scanning (FACS) data with simulated and newly generated time-series colonization data from germ-free mice (Figure 2A). Subsequently, by applying a microbiome\u2013Treg mathematical model to this combined data set, we infer each strain\u2019s individual contribution to the CD4+FOXP3+ Treg pool (Figure 2B) and obtain an estimate of every possible\u00a0consortium\u2019s Treg induction potential. To justify the usage of predicted mono-colonization concentrations from a previously developed microbiome ecological model (Bucci et al., 2016), we validate its ability in predicting temporal dynamics in response to different subsets of Treg-inducing strains (Figure 3A) and quantify the deviation of data and predictions (Figure 3B). Introduction of the TrIS, which assigns a score to every predicted steady-state microbial composition, enables us to identify combinations that robustly maximize Treg induction (Figure 4A). We analyze the relationship of TrIS and biomass (Figure 4B) as well as metabolic features of the consortia (Figure 4C and D). Most importantly, we\u00a0demonstrate the utility of our approach in predicting the potency of selected microbial combinations by validating the Treg induction and colonization ability of model-predicted strong,\u00a0intermediate and weak Treg-inducing consortia in vivo (Figure 4E).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/30916/elife-30916-fig1-v2.jpg)\n\n**Figure 1.:** A microbiome\u2013immune system mathematical model describing the activation of regulatory T-cells (Treg) in response to colonization profiles of Treg-stimulating Clostridia strains is the central\u00a0element of this work.\u00a0It consists of a previously derived microbiome ecological model that describes the short and long-term temporal dynamics of Clostridia strains in germ-free mice (Bucci et al., 2016) and is supplemented by a microbiome\u2013Treg model of CD4+FOXP3+ Treg activation in response to long-term compositions in the microbiome. The individual contribution of each strain to the measured Treg\u00a0activation is inferred\u00a0using long-term colonization data from mouse experiments with subsets of these strains and corresponding measurements of Treg induction. The Treg-induction score, TrIS, which accounts for ecological stability and immune activation, assigns a score to every possible strain combination and thereby identifies candidate probiotic consortia for experimental validation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/30916/elife-30916-fig2-v2.jpg)\n\n**Figure 2.:** (A) To infer the strain-resolved CD4+FOXP3+ Treg induction parameters CD4+FOXP3+ Treg abundance measurements and corresponding microbiome colonization data are used.\u00a0CD4+FOXP3+ Treg data of single strains originates from previously published measurements from Atarashi et al. (2013). Because in Atarashi et al. (2013) microbial mono-colonization levels were not measured, a previously published predictive model (Bucci et al., 2016) was\u00a0used\u00a0to simulate\u00a0these experiments. In addition, newly generated CD4+FOXP3+ Treg and colonization mouse stool data from three 11-strain combinations was included into the analysis (see also Figure 3). The 11-strain combinations were chosen according to results of the \u2018keystoneness\u2019 analysis previously described in Bucci et al. (2016). The microbiome compositions of these three 11-strain combinations were estimated by strain-specific qPCR. (B) The resulting CD4+FOXP3+ Treg induction parameters quantify the contribution of each individual strain to Treg induction. (Coefficients are scaled by the microbial mono-colonization concentrations for display reasons.)\n\n![Figure 3.](https://cdn.elifesciences.org/articles/30916/elife-30916-fig3-v2.jpg)\n\n**Figure 3.:** (A) The model-predicted dynamics of three 11-strain combinations from the 13 Clostridia strains described in Bucci et al. (2016) (areas) are compared to measured data from germ-free mice (stacked bars) and each panel corresponds to an individual mouse (Figure 2A). Predictions were obtained by numerically integrating the corresponding generalized Lotka\u2013Volterra equations with parameters from Bucci et al. (2016) using only each mouse\u2019s initial microbial composition. In timelines/mouse 1\u20135, Strain 15 is absent referring to 11-strain set I (five biological replicates); in timelines 6\u20139, Strain 4 is absent (11-strain set II; four biological replicates), and in timelines 10\u201314, Strain 29 is absent (11-strain set III; five biological replicates). Data were obtained by qPCR of genes specific to each strain. Densities are computed as averages of three technical replicates. The number of mice used in each condition was chosen consistently with previous experimental work (Atarashi et al., 2013; Bucci et al., 2016) and combined with extensive in silico testing of the inference error as a function of sampling frequency and noise levels (Bucci et al., 2016). (B) Spearman\u2019s rank correlation coefficient between observed and predicted data was computed at different time points. All displayed coefficients have a p-value of less than 10\u221216.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/30916/elife-30916-fig4-v2.jpg)\n\n**Figure 4.:** (A) Predicted Treg Induction Score (TrIS) in germ-free mice as a function of probiotic consortium size. Each data point represents one of the 2N\u22121 possible non-trivial consortia of size N. The five highest and lowest TrIS consortia of size seven are highlighted by violet and cyan filled dots, respectively, as well as, the 4-strain consortia used for experimental validation in subpanel E. (B) Distribution of the TrIS plotted against the total population density of each model-predicted consortium. This analysis shows a strong correlation (Spearman\u2019s Rank Correlation with coefficient 0.88 and p<0.05) between TrIS and total microbial density. The color of each dot represents the abundance of Strain 27, which is predicted to strongly colonize in high-TrIS subsets. (C) Heatmap of consortium membership of the five highest and lowest TrIS-consortia of size seven and their predicted Treg induction and estimated butyrate production using data from Atarashi et al. (2013). (D) Estimation of potential SCFA output based on single-strain in vivo metabolic profiling from Atarashi et al. (2013). The five highest TrIS consortia of size seven (from 4C) are predicted to have a significantly higher SCFA output relative to the five lowest ones. (E) Five 4-strain consortia were used for experimental validation: the two highest-ranked consortia (H1 and H2, respectively), the lowest-ranked consortium (L) and two intermediates (M1, M2). M1 and M2 were included because of interest in other disease areas. The experimentally introduced strains are listed next to each bar/consortium. Strains with numbers in black were detected by 16S rRNA sequencing in mouse stool samples, strains with numbers in gray were introduced but failed to colonize. A Pearson\u2019s correlation of 0.97 between the predicted TrIS and the average of each consortium\u2019s measured CD4+FOXP3+ Treg percentage proves the ability of the TrIS-based selection to correctly recover the experimentally observed Treg induction. (Pearson\u2019s correlation of all points has a value of 0.54.) Importantly, the H2 consortium displays an average increase in immune activity of 107% relative to the average germ-free mouse control. Eight biological replicates were used for GF, H1 and H2, five biological replicates were used for M1, M2 and three biological replicates were used for L. Replication and design of the validation experiment for Treg induction assessment is consistent with work from us and others (Atarashi et al., 2013; Narushima et al., 2014).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30916/elife-30916-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** In contrast to Figure 4B,\u00a0which highlights only the abundance of Strain 27\u00a0in\u00a0each\u00a0consortium, the predicted total population density of the microbial consortia is compared to the TrIS while the color in each subpanel represents the corresponding strain\u2019s abundance.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30916/elife-30916-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Metabolic profiling results of fecal content of selected consortia with respect to acetic acid. (B) Comparison of predicted mean germ-free normalized acetate concentrations based on single-strain measurements in caecal content from (Atarashi et al., 2013) with the observed germ-free mean normalized acetic acid levels in mouse stool from (A).\n\nWe envision that our framework, while in this study tailored to finding combinations ameliorating auto-inflammatory conditions, may also have direct relevance to other immune-system enhancing applications such as the optimal delivery of probiotic-based cancer immunotherapies (Garrett, 2015).\n\n## Results\n\n### Generation of multimodal microbiome\u2013Treg data\u00a0set\n\nThe goal of this study is to develop a mathematical modeling-based framework to rapidly and systematically select microbial consortia that maximize a desired immune outcome when introduced in a specific host microbial background. To achieve this, we combine (i) a microbiome ecological model that accurately describes the dynamics of these bacteria in the host with (ii) a microbiome\u2013Treg mathematical model that characterizes the contribution of every strain to the immune phenotype of interest given corresponding microbiome colonization data (Figure 1). For (i), we gathered newly produced quantitative polymerase chain reaction (qPCR) colonization data from gnotobiotic mice and combined it with a previously published microbiome ecological model of the dynamics of 12 Treg-inducing Clostridia strains that are part of an original consortium of 17 Treg-inducing strains discovered by some of us (Atarashi et al., 2013) (see also Table 1 for a breakdown of strains used in each study). In contrast to the original study of (Bucci et al., 2016), we included only 12 of the 13 strains used there because, based on the modeling and analysis of Bucci et al. (2016), Strain 6 from the 13-strain set was predicted to not stably colonize in the presence of the other 12 strains. The published colonization data have been reported in our previous work (Bucci et al., 2016) and include time-series measurements of microbial abundances by qPCR under dietary perturbations. These are used to derive a predictive microbiome ecology model in gnotobiotic conditions based on an extension of the generalized Lotka\u2013Volterra (gLV) equations (Hofbauer and Sigmund, 1998) as introduced in Stein et al. (2013). For the newly generated dataset, we gavaged 14 mice with one of three possible 11-strain subsets from the 12-strain subset of original 13 strains (Figure 2) and used the derived stool measurements to validate the ability of our mathematical model in predicting unseen conditions. The three 11-strain subsets were chosen based on our \u2018keystoneness\u2019 definition, a measure describing the marginal predicted quantitative effect of removing each strain from the full community (Bucci et al., 2016). Specifically, we included two 11-strain combinations each missing one of the two highest keystoneness-scoring strains (VE202 Strain 15 and VE202 Strain 4) and one 11-strain combination which lacks the lowest keystoneness scoring strain (VE202 Strain 29). In analogy to Bucci et al. (2016), each strain\u2019s density was profiled over time by qPCR with strain-specific primers (see Materials and methods). To resolve the contribution of each of these to Treg induction for point (ii) we coupled the colonization data from fecal content with newly collected and published FACS measurements of the CD4+FOXP3+ Treg population in the lamina propria of these mice (Figure 2A). As it is crucial to capture each strain\u2019s contribution alone and in combination with others, we also included CD4+FOXP3+ Treg measurements from our previously published mono-colonization experiments (Atarashi et al., 2013) (Figure 2A). Due to the fact that the single-strain mono-colonization concentrations were not measured in these experiments (Atarashi et al., 2013), we simulated them using the microbiome ecological model and parameters from (Bucci et al., 2016). This choice was supported by the model's capability in predicting unseen validation data (Figure 3A). Spearman\u2019s rank-order correlation coefficient ranges from 0.92 to 0.98 (p-value<10\u221216) between observations and predictions depending on the time point (Figure 3B).\n\n**Table 1.**\n List of strains used with respect to our previous published work.The original publication (Atarashi et al., 2013) reported on 17 immune-modulating bacteria. In Bucci et al. (2016), a dynamical ecological model for 13 of the original 17 strains was presented. These 13 strains were selected because they do not harbor antibiotic resistance genes. For our study, we used a 12-strain subset of these 13 strains based on ecological stability considerations. Colonization and CD4+FOXP3+Treg data for the three 11-strain sets, measured by qPCR and FACS, were used along with the simulated\u00a0mono-colonization concentrations (Figure 2) and\u00a0included\u00a0into the microbiome\u2013immune system model (Figure 1). The resulting parameters were employed to predict ecologically stable subsets with different Treg induction potentials. 4-strain subsets were selected to validate the predictions of the mathematical model (see main text and Figure 3). Strain 1: Clostridium saccharogumia/Clostridium ramosum JCM1298, Strain 3: Flavonibacter plautii/Pseudoflavonifractor capillosus, Strain 4: Clostridium hathewayi/Clostridium saccharolyticum WM1, Strain 6: Blautia coccoides/Lachnospiraceae bacterium, Strain 7: Clostridium bolteae, Strain 8: Clostridium sp. MLG055/Erysipelotrichaceae bacterium 2 44A, Strain 9: Clostridium\u00a0indolis/Anaerostipes caccae DSM 14662, Strain 13: Anaerotruncus colihominis, Strain 14: Ruminococcus sp. ID8/Lachnospiraceae bacterium 2 1 46FAA, Strain 15: Clostridium asparagiforme/Clostridium lavalense, Strain 16: Clostridium symbiosum, Strain 18: Clostridium ramosum, Strain 21: Eubacterium fissicatena/Eubacterium contortum/Clostridium sp. D5, Strain 26: Clostridium scindens/Lachnospiraceae bacterium 5 1 57FAA, Strain 27: Lacnospiraceae bacterium A4/Lachno bacterium 3 1 57FAA CT1, Strain 28: Clostridium sp. 316002/08, Strain 29: Lacnospiraceae bacterium A4/Lachno bacterium 3 1 57FAA CT1.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Atarashi et al., 2013</th>\n      <th>Bucci et al., 2016</th>\n      <th>11-str. I</th>\n      <th>11-str. II</th>\n      <th>11-str. III</th>\n      <th>H1</th>\n      <th>H2</th>\n      <th>M1</th>\n      <th>M2</th>\n      <th>L</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain\u00a01</td>\n      <td>x</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain 3</td>\n      <td>x</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain 4</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td></td>\n      <td>x</td>\n      <td></td>\n      <td>x</td>\n      <td>x</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain 6</td>\n      <td>x</td>\n      <td>x</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain 7</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain 8</td>\n      <td>x</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain 9</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>x</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain 13</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain 14</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td></td>\n      <td></td>\n      <td>x</td>\n      <td></td>\n      <td>x</td>\n    </tr>\n    <tr>\n      <td>Strain 15</td>\n      <td>x</td>\n      <td>x</td>\n      <td></td>\n      <td>x</td>\n      <td>x</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>x</td>\n    </tr>\n    <tr>\n      <td>Strain 16</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>x</td>\n      <td>x</td>\n    </tr>\n    <tr>\n      <td>Strain 18</td>\n      <td>x</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain 21</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain 26</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain 27</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td></td>\n      <td>x</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain 28</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td></td>\n      <td>x</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain 29</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td>x</td>\n      <td></td>\n      <td>x</td>\n      <td>x</td>\n      <td></td>\n      <td>x</td>\n      <td>x</td>\n    </tr>\n  </tbody>\n</table>\n\n### Derivation of the microbiome\u2013Treg mathematical model\n\nWe used the described microbiome colonization data and corresponding CD4+FOXP3+ Treg measurements to determine the contribution of each strain\u00a0to the Treg\u00a0pool. We begin by subdividing the population of CD4+ T-cells into two major subpopulations depending on their\u00a0intracellular FOXP3 expression: CD4+FOXP3+ Treg and the remainder among the CD4+ T-cells, the conventional CD4+FOXP3\u2212 T-cells (Bilate and Lafaille, 2012; Rudensky, 2011). The concentration\u00a0of\u00a0CD4+\u00a0T-cells\u00a0at time\u00a0$t$\u00a0in the colonic lamina propria, $c_{T}(t)$, is then the combination of these two T-cell populations, $c_{T}(t)=c_{FOXP3^{+}}(t)+c_{FOXP3^{\u2212}}(t)$. To include a variety of effects into our model, we assume T-cell dynamics to follow the gLV equations (Gerber, 2014; Hofbauer and Sigmund, 1998), which also account for the effect of the\u00a0microbial strains in the lumen on the CD4+FOXP3\u2212 T-cell subpopulation. In addition, we use an extension of the standard gLV equations to include the impact of the Clostridia strains in\u00a0terms\u00a0of external perturbations (Stein et al., 2013). The resulting microbiome\u2013Treg mathematical model is found as,\n\n$$\n\\frac{dc_{FOXP3^{+}}(t)}{dt}=c_{FOXP3^{+}}(t)(\\alpha_{FOXP3^{+}}+\\beta_{FOXP3^{+}FOXP3^{+}}c_{FOXP3^{+}}(t)\\sumk=1K+\\beta_{FOXP3^{+}FOXP3^{\u2212}}c_{FOXP3^{\u2212}}(t)+\\sumk=1K\\epsilon_{i_{k}}c_{strain_{i_{k}}}(t))\n$$\n\nwhere $\\alpha_{FOXP3^{+}}$ denotes the basal growth rate and $\\beta_{FOXP3^{+}FOXP3^{+}}$ the self-interaction term of the CD4+FOXP3+ Treg population. The interaction terms $\\beta_{FOXP3^{+}FOXP3^{-}}$ and $\\beta_{FOXP3^{-}FOXP3^{+}}$ represent the effect of the CD4+FOXP3\u2212 T-cell on the CD4+FOXP3+ Treg population and of the CD4+FOXP3+ Treg\ufeff on the CD4+FOXP3\u2212 T-cell population, respectively (d\u2019Onofrio, 2005). Consequently, positive interaction parameters correspond to activation, negative ones to inhibition. Moreover, $\\epsilon_{i_{k}}$ denotes the effect of strain $i_{k}$ on the CD4+FOXP3+ Treg population. For long-term observations, $t\u2192\u221e$, the dynamics of $\u00a0c_{FOXP3^{+}}(t)$ are given by its (non-trivial) steady-state solution, which simplifies the then static microbiome\u2013Treg mathematical model of the relative CD4+FOXP3+ proportion in steady state, $r_{FOXP3^{+},ss}$, to a linear regression problem,\n\n$$\nr_{FOXP3^{+},ss}=\\alpha~+\\sumk=1K\\epsilon~_{i_{k}}c_{strain_{i_{k},ss}}.\n$$\n\nHere, we use that the absolute and relative abundance of the CD4+FOXP3+Treg population are coupled by $\u00a0c_{FOXP3^{+/\u2212},ss}=c_{T,ss}\u22c5r_{FOXP3^{+/\u2212},ss}$ (see Materials and methods). We assume that the steady-state CD4+ T-cell concentration is constant, $c_{T,ss}=const.$, across all microbial compositions. We justify this because we are dealing with genetically similar mice and a set of closely related Clostridia. This assumption is however not justifiable when comparing non-colonized and colonized germ-free mice (Faith et al., 2014).\n\nAssigning to $r_{FOXP3^{+},ss}$\u00a0the measured FACS-derived\u00a0CD4+FOXP3+ Treg proportions after 35 days and to $c_{strain_{i_{k}},ss}$ the corresponding microbial profiles, we infer each strain's contribution to the CD4+FOXP3+ Treg pool (Figure 2B) by solving Equation (2) with an $\u2113^{2}$-penalized least-square regression with one shrinkage parameter,\u00a0which\u00a0is determined in a leave-one-sample-out cross-validation (Stein et al., 2013). The resulting normalized root-mean square deviation on left-out samples was found to be 12%.\n\n### Derivation of the Treg\u00a0Induction Score (TrIS) and selection of Treg-inducing consortia\n\nAfter deriving a model to predict our candidate strains dynamics in germ-free conditions and having resolved each strain\u2019s contribution to Treg expansion, we aim to use this information to computationally select for consortia that maximize Treg induction while being ecologically robust (Bucci et al., 2016; Stein et al., 2013). To specify a measure of ecological robustness as well as immune induction potential for microbial consortia in germ-free mice, we define the Treg Induction Score (TrIS) as the average predicted regulatory T-cell activation of a given consortium of K strains $strain_{i_{1}},\u22ef,strain_{i_{K}}$ while ignoring contributions from the host,\n\n$$\nTrIS({strain_{i_{1}},\u22ef,strain_{i_{K}}})=\\frac{1}{N}\\sumn=1N\\sumk=1K\\epsilon~_{i_{k}}c_{strain_{i_{k}},ss}^{(n)}.\n$$\n\nIf the predicted steady state of the microbial consortium $(c_{strain_{i_{1}}}^{(n)},\u2026,c_{strain_{i_{K}}}^{(n)})_{ss}$ that is computed from the $n$-th Markov Chain Monte Carlo (MCMC) parameter estimate (Bucci et al., 2016) is biologically meaningful, i.e. positive, and stable, then $c_{strain_{i_{k}},ss}^{(n)}$ denotes the steady-state concentration of strain $i_{k}$; otherwise $c_{strain_{i_{k}},ss}^{(n)}$ is set to 0. Hence, the value of the TrIS is indicative of the expected CD4+FOXP3+ Treg induction (after removing the host contribution) and it is of the same unit as the FACS measurements. We evaluated TrIS for every possible strain combination that would stably colonize the gut in germ-free background. In our computation, of the 212\u20131 = 4095 possible steady-state strain configurations evaluated in N = 22,500 MCMC parameter estimates, 84% are found to be biologically meaningful\u00a0and\u00a0stable. Interestingly, while the average TrIS increases with consortium size, our analysis shows that a subset size of seven already contains bacterial combinations maximizing induction (Figure 4A). Furthermore, in addition to the strong correlation between TrIS and the predicted total bacterial abundance in the consortium, we observed that high-induction consortia display an especially large enrichment in the abundance of Strain 27 (Figure 4B, Figure 4\u2014figure supplement 1). Because short-chain fatty acids have been previously associated with colonic Treg induction (Arpaia et al., 2013) and increase in density upon supplementation with these strains (Atarashi et al., 2013), we decided to test if modeling-predicted high Treg-inducing consortia were also enriched in SCFAs. We therefore compared the top 5-inducing microbial consortia of size seven against their same-size counterpart bottom 5 (Figure 4C). We predicted the SCFA concentration for each of the predicted compositions by summing the scaled metabolic outputs of each strain measured in mono-colonization experiments (Atarashi et al., 2013; Narushima et al., 2014) and normalized by the strain\u2019s model-predicted mono-colonization density. We performed a Welch two-samples t-test for each of the predicted SCFAs concentrations and found significant enrichment for all estimated SCFAs (p<0.05, one tailed) in the high-TrIS consortia compared to the low ones (Figure 4D).\n\n### Experimental validation of mathematical model predictions\n\nWe decided to experimentally\u00a0test our approach's ability to correctly predict consortium\u00a0ranking with\u00a0respect\u00a0to Treg-induction. Due to regulatory constraints on the used probiotic strains \u2013 limiting us to a maximum of four strains at a time in follow-up experiments \u2013 we selected five 4-strain combinations with a variety of predicted immune effects. We measured CD4+FOXP3+ Treg induction for five microbial consortia of size four and the germ-free control. We chose the two highest TrIS consortia (H1, H2 with rank 1 and 2, respectively), the lowest one (L with rank 495) and two TrIS-intermediate consortia of interest (M1, M2 with rank 129 and 452, respectively). Strains contained in each of the five consortia are detailed in Table 1. We correlated the TrIS score with the mean observed CD4+FOXP3+ Treg percentage and found a significant Pearson correlation with\u00a0coefficient of 0.97 and p-value<0.01 (Figure 4E). Importantly, when using 16S rRNA sequencing to investigate the resulting colonization profiles for these combinations, we observed that the high TrIS-scoring consortia (H1, H2, M1) all stably colonized while the two low-scoring consortia only displayed a subset of the introduced strains. This result remarkably reflects the nature of our scoring system which, in addition to immune activation potential, also incorporates colonization success (Equation 3).\n\nBecause the SCFA enrichment analysis from in vivo measurements of individual strains (Figure 4C) predicted acetate to be significantly increased in the five high versus low Treg-inducing consortia of size seven, we decided to compare the measured acetic acid concentrations (Figure 4\u2014figure supplement 2A) to predictions of acetate in the two high (H1 and H2) and low (L) Treg-inducing 4-strain consortia (Figure 4\u2014figure supplement 2B). ANOVA and subsequent post-hoc Tukey test showed significance in the measured enrichment of H1 compared to L (adjusted p-value<0.05) and of H1 compared to H2 (adjusted p-value<0.05) (Figure 4\u2014figure supplement 2A). However, no statistical difference was observed between measurements in H2 and L (adjusted p-value<0.05). Remarkably, the model-predicted germ-free\u00a0normalized\u00a0acetate enrichment and the observed acetic acid concentration (normalized by the mean\u00a0in\u00a0germ-free conditions) are well correlated (Figure 4\u2014figure supplement 2B).\n\n## Discussion\n\nManipulation of the intestinal microbiota with defined bacterial consortia for the treatment of disease is a promising route for future therapeutics (Hansen and Sartor, 2015). However, choosing bacterial combinations from the vast combinatorial space of microbes that effectively colonize a host (possibly with a dysbiotic microbiota) and at the same time maximize a desired host phenotype requires an enormous number of expensive and time-consuming experimental trials (Faith et al., 2014). While data mining and statistical approaches could aid in this process, the majority of available microbiome analysis methods is still based on correlations (Gerber, 2014; Morgan et al., 2015) and inept at predicting unseen phenotypes. Identification of causal associations between microbes and host phenotype has been recently achieved by\u00a0using an experimentally\u00a0based microbe\u2013phenotype triangulation (Surana and Kasper, 2017). However, this approach remains impractical when the goal is to explore and rank all possible microbiome consortium combinations with respect to a host phenotype of interest. In this study, we leveraged our previous computational methods to forecast temporal microbiome dynamics and make predictions on stability in the context of infectious and inflammatory diseases including C. difficile colonization and inflammatory bowel disease (Bucci et al., 2016; Buffie et al., 2015; Stein et al., 2013).\n\nSpecifically, we have presented a novel modeling-based method that combines dynamical predictions from data-driven models of the microbiome and the interactions between microbes and the immune response (such as CD4+FOXP3+ Treg) and thereby enables the rational design of immune-modulating bacterial consortia. Limiting our scope to long-term steady-state dynamics, we were able to derive a microbiome\u2013Treg mathematical model which is constrained by experimental observations from multimodal data. In the presented work, the used data modalities are qPCR and 16S rRNA sequencing data to estimate microbial abundances and FACS to assess CD4+FOXP3+ Treg induction, respectively. However, the proposed framework is naturally extensible to other host data, for example data from metabolite profiling, immune readouts (e.g. CD8 T-cell activation, Th1/Th17 cell depletion) or host transcriptome profiling (Atarashi et al., 2017; Morgan et al., 2015). To evaluate candidate consortia that could be relevant to the treatment of auto-inflammatory diseases, we introduced the Treg Induction Score, TrIS, as a novel metric that accounts for both ecological stability and efficacy in immune modulation. This metric allowed us to rationally identify combinations that would stably colonize and at the same time produce substantial Treg induction in germ-free mice. Remarkably, in validation experiments of five distinct modeling-guided consortia with predicted diverse induction potential, we proved the ability of our approach to successfully select microbial combinations with a desired therapeutic activity. To our knowledge, this is to date, the first study in which observation-constrained in silico modeling of microbiome and host phenotype has successfully guided the rational design of drugs of defined bacterial consortia.\n\nOur work relies on the gLV model assumption for both microbiome and CD4+ regulatory T-cell dynamics which, despite being very versatile, has some limitations including the lack of third or higher\u00a0order interactions or saturation effects (Wangersky, 1978). Moreover, with the data available to us, we needed to assume that the overall T-cell density\u00a0at steady state is constant across mice and different microbiome compositions. While this assumption was reasonable for the data we analyzed (see Results), the addition of future measurements on total T-cell abundance will likely improve the prediction accuracy of our model as well as provide important\u00a0insight into the variability of T-cell population size in response to microbial immune induction.\n\nWe performed our data and modeling analysis in germ-free mice. While previous work by some of us showed that the amount\u00a0of Treg induction is independent of the germ-free background (IQI, Balb/c or C57BL/6) (Atarashi et al., 2015), it is noteworthy that our model, which was trained on IQI mice\u00a0data, robustly predicted both Treg induction and acetate enrichment of C57BL/6 colonized mice as used in the validation experiments.\n\nOur predictions suggest some degree of consistency in terms of functional outcome (e.g. enrichment in acetate) of high-scoring consortia relative to low-scoring ones in germ-free mice. However, before translating these findings into therapeutic development, future studies will need to be performed in not germ-free settings (e.g. SPF mice, humanized mice) in order to account for the effects of an already-established flora. Individual-specific microbiome features may constrain the colonization potential of the selected strains due to specific ecological network effects (Smits et al., 2016), which suggests the need for a careful characterization of the ecological interactions between the proposed probiotic product and a specific recipient community (e.g. a single ulcerative colitis patient (Atarashi et al., 2013)).\n\nTreatment of auto-immune diseases overall is not necessarily achieved by the exclusive optimization of one objective function (e.g. for ulcerative colitis, the maximization of Treg activation), but may need the simultaneous manipulation of a multi-process host immune spectrum, which could include the concomitant reduction of pro-inflammatory phenotypes (Atarashi et al., 2015). Given new data availability and careful experimental design, we believe that the modeling framework proposed in this study could overcome these problems by introducing constraints into the scoring metric that account for pre-colonized mouse model features. To the limit, in the presence of a large training data set that would include sufficient information on individual patient variation, our workflow will give us the unprecedented potential of testing microbiota manipulation on a personalized level in silico.\n\nMathematical\u00a0modeling-based methods have the potential to greatly accelerate the development of treatment of human disease (Michor and Beal, 2015). In this work, we develop and demonstrate in a first-of-a-kind experimental validation the usefulness of a mathematical microbiome\u2013immune system model.\u00a0It can be considered a stepping-stone to the\u00a0accelerated prototyping and rational design of microbiome therapies.\n\n## Materials and methods\n\n### Derivation of the microbiome\u2013Treg induction mathematical model\n\nWe assume the following dynamics for the CD4+FOXP3+ regulatory T-cell\u00a0population:\n\n$$\n\\frac{dc_{FOXP3^{+}}(t)}{dt}=c_{FOXP3^{+}}(t)(\\alpha_{FOXP3^{+}}+\\beta_{FOXP3^{+}FOXP3^{+}}c_{FOXP3^{+}}(t)+\u00a0\\beta_{FOXP3^{+}FOXP3^{\u2212}}c_{FOXP3^{\u2212}}(t)+\\sumk=1K\\epsilon_{i_{k}}c_{strain_{i_{k}}}(t)).\n$$\n\nHere, $\\alpha_{FOXP3^{+}}$ denotes the basal growth rate and $\\beta_{FOXP3^{+}FOXP3^{+}}$ the self-interaction term of the CD4+FOXP3+ Treg\u00a0population, while the interaction parameters $\\beta_{FOXP3^{+}FOXP3^{-}}$ and $\\beta_{FOXP3^{-}FOXP3^{+}}$ characterize the effect of the CD4+FOXP3\u2212\u00a0T-cells\u00a0on the CD4+FOXP3+ Treg\u00a0population and of the CD4+FOXP3+\u00a0Treg\u00a0on the CD4+FOXP3\u2212 T-cell population, respectively (d\u2019Onofrio, 2005).\u00a0Moreover, $\\epsilon_{i_{k}}$\u00a0denotes the effect of strain $i_{k}$ on the CD4+FOXP3+ Treg\u00a0population. The non-trivial steady-state solution (i.e., the algebraic solution of the right-hand side of Equation (1) set to 0 with $c_{FOXP3^{+}}\\neq0$) is found as,\n\n$$\nc_{FOXP3^{+},ss}=\u2212\\frac{1}{\\beta_{FOXP3^{+}FOXP3^{+}}}(\\alpha_{FOXP3^{+}}+\\beta_{FOXP3^{+}FOXP3^{\u2212}}c_{FOXP3^{\u2212},\u00a0ss}+\\sumk=1K\\epsilon_{i_{k}}c_{strain_{i_{k},ss}}).\n$$\n\nUsing $c_{T,ss}=c_{FOXP3^{+},ss}+c_{FOXP3^{\u2212},ss},$ the steady-state concentrations of the CD4+FOXP3+ Treg and CD4+FOXP3\u2212 populations, $c_{FOXP3^{+/\u2212},ss}$, are derived from the FACS-based relative abundances $r_{FOXP3^{+/\u2212},ss}$ by, $\u00a0c_{FOXP3^{+/\u2212},ss}=\u00a0c_{T,ss}\u22c5r_{FOXP3^{+/\u2212},\u00a0ss}=c_{T,ss}(1\u2212r_{FOXP3^{\u2212/+},ss})$. Finally, the linear relationship between the relative abundances, $r_{FOXP3^{+},ss}$, and the strain densities, $c_{strain_{i_{k},ss}}$, is found as,\n\n$$\nr_{FOXP3^{+},ss}=\\frac{1}{\\beta_{FOXP3^{+}FOXP3^{\u2212}}\u2212\\beta_{FOXP3^{+}FOXP3^{+}}}(\\frac{\\alpha_{FOXP3^{+}}}{c_{T,ss}}+\\beta_{FOXP3^{+}FOXP3^{\u2212}}+\\frac{1}{c_{T,ss}}\\sumk=1K\\epsilon_{i_{k}}c_{strain_{i_{k},ss}})\u2261\\alpha~+\\sumk=1K\\epsilon~_{i_{k}}c_{strain_{i_{k},ss}}\n$$\n\nassuming constant concentration of CD4+ T-cells, $c_{T,ss}=const.$,\u00a0across all possible microbiome compositions. The unknown parameters $\\alpha~$ and $\\epsilon~_{i_{k}}$ are estimated in an $\u2113^{2}$-penalized least-square regression (so-called ridge regression) with a positive\u00a0shrinkage parameter $\\lambda$, which is determined in a leave-one-sample-out cross-validation as $\\lambda^{*}=2$.\n\n### Collection of experimental data for training the microbiome\u2013immune system model\n\n#### Strain abundance profiling\n\nIn our previous work (Bucci et al., 2016), we have inferred a mathematical model describing the dynamics of a 13-strain subset from the original 17-strain human-derived Clostridia consortium from Atarashi et al. (2013) in germ-free mice. Using newly generated data from the same experimental setup, we are now able to assess its predictive quality for three distinct 11-strain subsets. The three 11-strain compositions were selected based on their capability to maintain stability in the simulations when either one of two high (Strain 15 and Strain 4, here referred to as cases I and II, respectively) or one low (Strain 29; III) keystone strain was removed (Bucci et al., 2016). For the experimental validation, germ-free IQI mice were purchased from Sankyo Laboratories (Japan), randomized and maintained in germ-free vinyl isolators in the animal facility of RIKEN. Twelve Treg-inducing Clostridia strains were selected from the previously reported VE202 consortium consisting of 17 Treg-inducing strains (4, 7, 9, 13\u201316, 21, 26\u201329) and were individually cultured in modified Eggerth Gagnon broth under strictly anaerobic conditions (80% N2, 10% H2, 10% CO2) at 37\u00b0C in an anaerobic chamber (Coy Laboratory Products, Grass Lake, MI) to confluence. The cultured bacterial strains were then mixed and the three mixtures of 11 strains (described above) were orally inoculated into five IQI germ-free adult mice each. One mouse for condition II died and was therefore discarded from the study. After an initial 9-day interval of acclimation, we collected fecal pellets at 2\u20134 days interval until day 35, time at which mice were euthanized and analyzed for CD4+FOXP3 induction as in Atarashi et al. (2013). Colonization levels for each strain were assessed by amplifying strain-specific regions with qPCR as described in Bucci et al. (2016). Bacterial genomic DNA was extracted from 1 to 2 fecal pellets using QIAamp DNA Stool Mini Kit (Qiagen, Hilden, Germany). The amount of DNA was quantified using a Qubit dsDNA HS assay kit and Qubit fluorometer (Invitrogen, Carlsbad, CA). DNA was then subjected to qPCR using Thunderbird SYBR qPCR Mix (TOYOBO, Osaka, Japan) and a LightCycler 480 (Roche) with primers specific to 16S ribosomal RNA (rRNA) genes of the 12 Clostridia strains as in Bucci et al. (2016). Quantification of each strain in each sample was accomplished using standard curves of known concentrations of DNAs purified from each strain individually cultured in vitro. Strain densities in each sample were calculated by dividing the above absolute quantification numbers by the weight of the extracted fecal DNA. The 11-strain experiments were ethically approved by RIKEN, Keio and Azabu Universities under protocol H24-9(14) from RIKEN.\n\n### Estimation of CD4+FOXP3+ Treg \u2013 Isolation of intestinal lamina propria lymphocytes and flow cytometry\n\nThe colons were collected and opened longitudinally, washed with PBS to remove all luminal contents and shaken in Hanks\u2019 balanced salt solution (HBSS) containing 5 mM EDTA for 20 min at 37\u00b0C. After removing epithelial cells, muscle layers and fat tissue using forceps, the lamina propria layers were cut into small pieces and incubated with RPMI1640 containing 4% fetal bovine serum, 0.5 mg/ml collagenase D, 0.5 mg/ml dispase and 40 mg/ml DNase I (all Roche Diagnostics, Risch-Rotkreuz, Switzerland) for 1 hr at 37\u00b0C in a shaking water bath. The digested tissues were washed with HBSS containing 5 mM EDTA, resuspended in 5 ml of 40% Percoll (GE Healthcare, Boston, MA) and overlaid on 2.5 ml of 80% Percoll in a 15 ml Falcon tube. Percoll gradient separation was performed by centrifugation at 850 g for 25 min at 25\u00b0C. The lamina propria lymphocytes were collected from the interface of the Percoll gradient and suspended in ice-cold PBS. For analysis of Treg, isolated lymphocytes were labeled with the LIVE/DEAD fixable dead cell stain kit (Life Technologies, Carlsbad, CA) to exclude dead cells from the analysis. Then, surface and intracellular staining of CD3, CD4 and FOXP3 was performed using the BV605-labeled anti-CD3 (17A2, Biolegend, San Diego, CA), BV421-labeled anti-CD4 (RM4-5, Biolegend), Alexa700-labeled anti-FOXP3 antibody (FJK-16 s, eBioscience, San Diego, CA), and FOXP3 staining buffer set (eBioscience). The antibody-stained cells were analyzed with LSR Fortessa and data were analyzed using FlowJo software (Tree Star, Ashland, OR).\n\n### Measurement of organic acids\n\nOrganic acid concentrations in caecal contents were determined by gas chromatography-mass spectrometry (GC-MS). Caecal contents (10 mg) were disrupted using 3 mm zirconia/silica beads (BioSpec Products) and homogenized in extraction solution containing 100 ml of internal standard (100 mM crotonic acid), 50 ml of HCl and 200 ml of ether. After vigorous shaking using a Shakemaster neo (Bio Medical Science) at 1500 rpm for 10 min, homogenates were centrifuged at 1000 g for 10 min and then the top ether layer was collected and transferred into new glass vials. Aliquots (80 ml) of the ether extracts were mixed with 16 ml of N-tert-butyldimethylsilyl-N-methyltrifluoroacetamide (MTBSTFA). The vials were sealed tightly by screwing and heated at 80\u00b0C for 20 min in a water bath, and left at room temperature for 48 hr for derivatization. The samples were then run through a 6890N Network GC System (Agilent Technologies) equipped with HP-5MS column (0.25 mm 330 m 30.25 mm) and\u00a05973 Network Mass Selective Detector (Agilent Technologies, Santa Clara, CA). Pure helium (99.9999%) was used as a carrier gas and delivered at a flow rate of 1.2 ml/min. The head pressure was set at 10 psi with split 10:1. The inlet and transfer line temperatures were 250 \u00b5C and 260 \u00b5C, respectively. The following temperature program was used: 60 \u00b5C (3 min), 60\u2013120\u00b0C (5\u00b0C/min), 120\u2013300\u00b0C (20\u00b0C/min). One microliter quantity of each sample was injected with a run time of 30 min. Organic acid concentrations were quantified by comparing their peak areas with the standards.\n\n### Numerical simulations of the three 11-strain subsets used for microbiome\u2013Treg model training\n\nWe used 22,500 sets of Markov Chain Monte Carlo generalized Lotka\u2013Volterra parameter sets determined by applying the Bayesian Variable Selection algorithm within MDSINE to the data of Bucci et al. (2016), and the first time point of measured microbial profiles for each of the 14 validation mice as initial condition, to simulate the gLV system of differential equations corresponding to each mouse microbiome (Figure 3A). Prediction accuracy was evaluated by calculating the Spearman correlation coefficient between observed and predicted data (Figure 3B).\n\n### Simulation of mono-colonization abundances\n\nAs the experimental data from Atarashi et al. (2013) only provided CD4+FOXP3+\u00a0T-cell\u00a0levels for the mono-strain colonization experiments at 35 days after inoculation but no measurement of the long-term microbial concentrations in the gut, we used instead the corresponding estimated mono-strain colonization densities obtained from the gLV model (section above and Figure 2A). In general, the long-term behavior of the gLV system is determined by its steady states which are uniquely defined by the inferred model parameters (Stein et al., 2013). We computed the\u00a0parameter median in each single model variable\u00a0from the 22,500 MCMC parameter\u00a0sets. These\u00a0median\u00a0parameters were\u00a0then used to deduce the steady-state densities, which were together with the measured CD4+FOXP3 proportions included into the training\u00a0of the microbiome\u2013Treg model.\n\n### Collection of CD4+FOXP3+ Treg data from 4-strain experiments for validation of the modeling-based predictions\n\nBacterial strains 4, 7, 9, 14, 15, 16, 27, 28, 29 were grown anaerobically in PYG broth (Peptone, Yeast and Glucose broth from Anaerobe Systems, Cat no: AS-822) until they reached stationary phase (48 hr for strains 27 and 29, 24 hr for the remaining strains). Each 200 \u00b5l-mouse dose of a 4-strain LBP contained 50 \u00b5l of 20 times concentrated stationary phase culture. Germ-free C57BL/6 mice aged 6\u20138 weeks were randomized and gavaged with a total dose of 5\u00b7107\u20132\u00b7108 bacteria in a 200 \u00b5l, and maintained under gnotobiotic conditions for four weeks. Use of a C57BL/6 background for these experiments was motivated by availability of animals at the facility where we performed the validation and justified by the fact that previous work from us has shown that Treg induction by our Clostridia strains does not differ between Balb/c, IQI, and C57BL/6 mice (Atarashi et al., 2015). Mice were then sacrificed, colons harvested, and lamina propria leukocytes isolated and stained for CD3+CD4+FOXP3+ Treg as described above. Eight mice each were used for consortia High 1 (H1-strains: 7, 27, 28, 29) and High 2 (H2-strains: 4, 7, 27, 29). Five mice each were used for the intermediate high (M1-strains: 4, 7, 14, 28), and intermediate low consortia (M2-strains: 9, 16, 27, 29). Three mice were used for Low 1 (L1-strains: 14, 15, 16, 29). Colonization profiling was determined through 16S rRNA sequencing (as above) and verified by blasting representative sequences to a 16S VE202 fasta database. The 4-strain validation experiments were performed in the Massachusetts Host Microbiome Center under IACUC protocol 2016N000141.\n",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "97a0a7f3-c908-43d9-9211-8813a91ed8af",
+      "submission_id": "f4eabc2f-0fc4-46e2-b441-e12cf2f05dbb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Rob Knight, University of California, San Diego United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.30916.016](https://doi.org/10.7554/eLife.30916.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Computational prediction of immune effectors from the microbiome to select for optimal immune\u2013modulating consortia\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Wendy Garrett as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, the authors colonize germ\u2013free mice with individual bacterial strains, and test for induction of Tregs. They then use this information to construct a model for induction of Tregs by a complex microbial community, reducing the number of combinations that must be tested explicitly. Specifically, they predict strong\u2013 and weak\u2013inducing consortia and provide experimental validation of fit to the model. The authors use existing qPCR data from 13 strains and a generalized Lotka\u2013Volterra model they previously published as the basis for the experimental validation. They deploy this model on 11\u2013strain and 4\u2013strain consortia. The three 11\u2013strain combinations consist of two that lack strains with the highest \"keystone\" scores, and one that lacks the strain with the lowest score. They also test five 4\u2013strain consortia, again collecting information on the dynamics. They also provide additional predictions relevant to ulcerative colitis.\n\nIn our view, this manuscript provides a fascinating example of validation of computational predictions relating specific microbial strains to immune response. However, we believe that although the work is impressive, additional validation needs to be done and that the last disease test case is less convincing than the rest of the work. We recommend that this be either removed or that experimental validation be provided.\n\nOverall this is an impressive body of work and, as the authors note, point the way towards better rational design of microbial communities that alter the immune system.\n\nEssential revisions:\n\n1) Several of the figures are misleading or unreadable. Figure 3 shows observed vs predicted data and r2 in log space, but the results are likely to look much worse in linear space given the pattern of scatter, and this should be disclosed to readers rather than concealed.\n\n2) Figure 4B is unreadable, and per\u2013strain correlations should be summarized in a different way that is easier to understand.\n\n3) Figure 5A is also unreadable and it is impossible to match up the stacked bar and area presentation; some other form of showing the data is needed.\n\n4) Because the pathway data are normalized, Mann\u2013Whitney U is not appropriate (in related tasks, its false discovery rate has been shown to be up to 95%) and appropriate statistics for differential abundance that take compositionality into account should be used.\n\n5) The theoretical predictions for the consortia transferred into mice with UC patient stool, while intriguing, should ideally be backed by experiment. The results showing model fit to data for the 4\u2013strain communities are impressive but much weaker than the rhetoric in the text implies: Spearman rho of \u20130.47 means that more than three quarters of the variance in the rank order of the data, let alone the quantitative data, is not explained by their explanatory variable. So, although the association is statistically significant, its power to predict results is low. This component should be removed.\n\n6) The authors have only moderate support for their primary hypothesis: that immune response as a function of microbial consortia can be predicted via a model. In the GF mouse case, I see the key data testing this hypothesis in Figure 4E. While the stated correlation is significant, I'm concerned this statistic is being used inappropriately. Incorporating the replicates into the correlation seems ill\u2013advised (doing so, for example, could let you compute a correlation involving only two groups provided each had enough replicates within). Rather, if the authors want to use the replicates, an ANOVA with post\u2013hoc tests seems more appropriate. Perhaps even better, the authors could correlate the mean observed percentage of CD4+FOXP3+ to the mean predicted TrIS across the 5 groups. The trends look promising. But, this may be too small a number of groups to actually power such a correlation; hence, my overall concern that there's not enough data validating the model.\n\n7) The manuscript needs to make clear when the authors are using new vs. previously published, and in silico vs. measured data. Examples include Figure 4, which analyses the in-silico results using a mixture of metabolomic predictions and experimental validation. It seems Figure 1 and Figure 2 are efforts to clear up that confusion. Unfortunately, they didn't work in my case; perhaps it\u2019s worth trying to merge those figures into a single flow chart?\n\n8) Some variables in Equations 1\u20133 aren't explicitly defined in the text (and don't seem to be in the Materials and methods section either), including i, \u03b1, \u03b2, \u03b5, and n. These need to be defined.\n\n9) How many strains were available and how many strains were actually selected? The numbers mentioned in the text are inconsistent in different parts. I provide only a few examples below, but this inconsistency is present throughout the text.\n\n\u2013 Introduction: \"a mixture of 17 human\u2013derived Clostridia (ref 9)\".\n\n\u2013 Introduction: \"our previous work identified on the order of 15 possible candidate strains to select from (ref 9)\".\n\n\u2013 Results section: \"we gavaged 14 mice with one of three possible 11\u2013strain subsets from the original 13 strains (Figure 2)\".\n\n\u2013 Figure 1: \"12 therapeutically relevant Clostridia strains in the lumen\".\n\n\u2013 Figure 2: \"13 strain cocktail\".\n\nBottom line, the authors should provide a clear layout/table of the strains that were identified in ref 9, of the strains that were used in the paper, and of the combinations. At the moment, this part is very confusing, and the numbers do not match throughout the text.\n\n10) How many GF mice were actually used, and why do the authors use IQI GF mice for some experiments, and C57BL/6 GF mice for others? The mouse genetic background was changed for no apparent reason.\n\nAlso Introduction: \"we gavaged 14 mice with one of three possible 11\u2013strain subsets from the original 13 strains (Figure 2)\".\n\nMaterials and methods section: \"the three mixtures of 11 strains (described above) were orally inoculated into five IQI germ\u2013free adult mice each.\"\n\nHow many mice were actually gavages with the 11 strains? 14 or 5? Please clarify the experimental design.\n",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5209ba49-5b90-46ed-ad95-89a8db65bfa4",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C1",
+      "claim": "The intestinal microbiota critically influences a multitude of host physiological functions, often through modulation of the immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "The intestinal microbiota has been shown to critically influence a multitude of host physiological functions, often through modulation of the immune system (Gevers et al., 2014; Paun et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Gevers et al., 2014; Paun et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "4ce219ce-83e8-4534-966d-bb22c1d47fdb",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C2",
+      "claim": "Both pro-inflammatory T-helper 17 (Th17) cells and anti-inflammatory regulatory T-cells (Treg) are reduced in numbers in the intestinal lamina propria of germ-free mice relative to conventional or specific pathogen-free mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence includes studies in germ-free mice, which show that both pro-inflammatory T-helper 17 (Th17) cells and anti-inflammatory regulatory T-cells (Treg) are reduced in numbers in the intestinal lamina propria relative to conventional or specific pathogen-free mice (Atarashi et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research (Atarashi et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "315aa61e-34f6-4e7d-a5d8-ed05b6d3ca40",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C3",
+      "claim": "Repopulation of germ-free mice with specific bacteria can reconstitute Th17 cells and Treg.",
+      "claim_type": "EXPLICIT",
+      "source": "repopulation with specific bacteria can reconstitute them (Atarashi et al., 2015; Ivanov et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Atarashi et al., 2015; Ivanov et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "706ea20f-2409-4ed0-bd42-fd8c71eb26b6",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C4",
+      "claim": "The microbiota influences immune system activation through the production of small molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "One route to how the microbiota influences immune system activation is by the production of small molecules (Donia and Fischbach, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research (Donia and Fischbach, 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "a52dcdca-4720-4114-820b-46ec254e7bf2",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C5",
+      "claim": "Microbially produced short-chain fatty acids (SCFAs) facilitate extrathymic differentiation of immune system modulatory Treg.",
+      "claim_type": "EXPLICIT",
+      "source": "Microbially produced short-chain fatty acids (SCFAs) were shown to facilitate extrathymic differentiation of immune system modulatory Treg (Arpaia et al., 2013; Atarashi et al., 2013; Smith et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Arpaia et al., 2013; Atarashi et al., 2013; Smith et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "aa942e00-ff0f-40a6-b6d0-4b3767ac6569",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C6",
+      "claim": "SCFAs are implicated in Treg-dependent anti-inflammatory properties of a mix of 17 human-derived Clostridia strains.",
+      "claim_type": "EXPLICIT",
+      "source": "are implicated in Treg-dependent anti-inflammatory properties of a mix of 17 human-derived Clostridia strains (Atarashi et al., 2013; Tanoue et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Atarashi et al., 2013; Tanoue et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "05571695-5647-4231-b779-b0c770917ffb",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C7",
+      "claim": "Individual Clostridia strains only have a modest effect on Treg induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, individual Clostridia strains only have a modest effect on Treg induction \u2013 optimal induction relies on the synergistic interplay of several strains (Atarashi et al., 2013; Belkaid and Hand, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Atarashi et al., 2013; Belkaid and Hand, 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "35300216-7c69-4ab2-9eaf-de848cdd502a",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C8",
+      "claim": "Optimal Treg induction relies on the synergistic interplay of several Clostridia strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, individual Clostridia strains only have a modest effect on Treg induction \u2013 optimal induction relies on the synergistic interplay of several strains (Atarashi et al., 2013; Belkaid and Hand, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Atarashi et al., 2013; Belkaid and Hand, 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "818d0f49-83fc-4b10-8cb1-3628b4e6ea53",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C9",
+      "claim": "There is great interest in the manipulation of the Clostridia community for the treatment of inflammatory and allergic diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of these properties, there is currently great interest in the manipulation of this community for the treatment of inflammatory and allergic diseases (Honda and Littman, 2012; Olle, 2013; Vieira et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Honda and Littman, 2012; Olle, 2013; Vieira et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "fdf9c4b9-3406-4575-9010-3aaefba27545",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C10",
+      "claim": "Microbiota repopulation from healthy humans to humans with C. difficile infections has provided evidence that it could be used as a strategy for disease prevention and treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Efforts involving transplantation of bacteria from healthy humans to humans with C. difficile infections or with metabolic diseases have provided evidence that microbiota repopulation could be used as possible strategy for disease prevention and treatment (van Nood et al., 2013; Vrieze et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (van Nood et al., 2013; Vrieze et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "da347287-7ed4-47ae-8c02-9d936a37efba",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C11",
+      "claim": "Microbiota repopulation from healthy humans to humans with metabolic diseases has provided evidence that it could be used as a strategy for disease prevention and treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Efforts involving transplantation of bacteria from healthy humans to humans with C. difficile infections or with metabolic diseases have provided evidence that microbiota repopulation could be used as possible strategy for disease prevention and treatment (van Nood et al., 2013; Vrieze et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (van Nood et al., 2013; Vrieze et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "9df88a45-8133-4e52-8a2c-ae7eb566e936",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C12",
+      "claim": "Intestinal supplementation of defined compositions of gut bacteria to treat a range of diseases is currently being pursued by multiple bio-pharmaceutical companies.",
+      "claim_type": "EXPLICIT",
+      "source": "For this reason, intestinal supplementation of defined compositions of gut bacteria to treat a range of diseases is currently being pursued by multiple bio-pharmaceutical companies (Garber, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research (Garber, 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "a4d841b9-aeca-4752-b480-624acd85a605",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C13",
+      "claim": "Determining what microbial consortia can colonize the host and stably coexist with an already resident microbial community, while inducing the desired immune response, is a major challenge that hinders translation into the clinic.",
+      "claim_type": "EXPLICIT",
+      "source": "Determining what microbial consortia can colonize the host and stably coexist with an already resident microbial community, while inducing the desired immune response, is still a major challenge that hinders the translation of these efforts into the clinic (Maldonado-G\u00f3mez et al., 2016; Weil and Hohmann, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Maldonado-G\u00f3mez et al., 2016; Weil and Hohmann, 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "86442390-c736-4051-a07c-d5139dd2b518",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C14",
+      "claim": "A set of 17 potent Treg-inducing Clostridia strains was previously identified.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous work, some of us identified a set of 17 potent Treg-inducing Clostridia strains to select candidate subsets from (Atarashi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research (Atarashi et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "f68d47af-a640-4f22-bd83-a7b3c112af7c",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C15",
+      "claim": "Testing all possible subsets of 17 strains would require testing 131,071 combinations in mice, which is experimentally infeasible.",
+      "claim_type": "EXPLICIT",
+      "source": "The determination of maximally immune-phenotype inducing combinations from these 17 strains is, however, experimentally infeasible as it would require the testing of 217\u20131 = 131071 possible subsets in mice (Faith et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mathematical calculation and a citation (Faith et al., 2014).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "36fa076f-24d1-40eb-9d90-65282b6eb674",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C16",
+      "claim": "A computational approach to prioritize which subsets to validate experimentally would have great utility.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, a computational approach to prioritize which subsets to validate experimentally would have great utility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the infeasibility of testing all combinations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "a15373a0-f59a-4d3a-ae69-9b3bf5daab68",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C17",
+      "claim": "To date there has been no model that allows for the simultaneous prediction of the dynamics of both the microbiota and the host immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, to date there has been no model that allows for the simultaneous prediction of the dynamics of both the microbiota and the host immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "cfa0fae6-0b26-47b8-9b95-abd6b0b9a42b",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C18",
+      "claim": "The study proposes a mathematical modeling-based framework that allows computational optimization of immune-stimulating bacterial combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "we overcome this problem by proposing a mathematical modeling-based framework that, by resolving microbiome\u2013immune system interactions with parameters constrained to experimental observations of microbiome and immune effectors, allows computational optimization of immune-stimulating bacterial combinations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the work presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "1e002046-a415-498a-8f23-476bd9007590",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C19",
+      "claim": "The study uses a series of logically connected analyses that capture CD4+FOXP3+ Treg accumulation in the colonic lamina propria in response to the dynamics of human-derived Clostridia strains in germ-free mice.",
+      "claim_type": "EXPLICIT",
+      "source": "To achieve this, we use a series of logically connected analyses that capture CD4+FOXP3+ Treg accumulation in the colonic lamina propria (Omenetti and Pizarro, 2015; Round and Mazmanian, 2010) in response to the dynamics of human-derived Clostridia strains in germ-free mice, which had previously been shown to potently induce Treg expansion (Atarashi et al., 2013) (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology with supporting citations (Omenetti and Pizarro, 2015; Round and Mazmanian, 2010; Atarashi et al., 2013).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "68db4d09-0331-4a72-b4ea-e52224175cff",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C20",
+      "claim": "The study combines previously published and newly generated FACS data with simulated and newly generated time-series colonization data from germ-free mice.",
+      "claim_type": "EXPLICIT",
+      "source": "To constrain this proposed model framework to experimental data, we combine previously published (Atarashi et al., 2013) and newly generated fluorescence-activated cell scanning (FACS) data with simulated and newly generated time-series colonization data from germ-free mice (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the data sources used in the study, referencing both published data (Atarashi et al., 2013) and newly generated data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "a0c61a1d-0988-45f0-8dc2-f7cf9ed48fba",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C21",
+      "claim": "The study infers each strain's individual contribution to the CD4+FOXP3+ Treg pool by applying a microbiome\u2013Treg mathematical model.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, by applying a microbiome\u2013Treg mathematical model to this combined data set, we infer each strain's individual contribution to the CD4+FOXP3+ Treg pool (Figure 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the analytical approach and references Figure 2B showing the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "4890665e-cee7-4113-85e8-c828b515c998",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C22",
+      "claim": "The study validates the microbiome ecological model's ability to predict temporal dynamics in response to different subsets of Treg-inducing strains.",
+      "claim_type": "EXPLICIT",
+      "source": "To justify the usage of predicted mono-colonization concentrations from a previously developed microbiome ecological model (Bucci et al., 2016), we validate its ability in predicting temporal dynamics in response to different subsets of Treg-inducing strains (Figure 3A) and quantify the deviation of data and predictions (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes validation experiments with results shown in Figures 3A and 3B, referencing a previously published model (Bucci et al., 2016).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "e5d9eb8c-3c4f-40fa-9f74-c56f1dee7e3d",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C23",
+      "claim": "The TrIS assigns a score to every predicted steady-state microbial composition.",
+      "claim_type": "EXPLICIT",
+      "source": "Introduction of the TrIS, which assigns a score to every predicted steady-state microbial composition, enables us to identify combinations that robustly maximize Treg induction (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the TrIS metric introduced in the study, with results shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "577237a5-9ac7-4d50-a59e-6011a309a796",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C24",
+      "claim": "The study demonstrates the utility of the approach in predicting the potency of selected microbial combinations by validating Treg induction and colonization ability of model-predicted strong, intermediate and weak Treg-inducing consortia in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, we demonstrate the utility of our approach in predicting the potency of selected microbial combinations by validating the Treg induction and colonization ability of model-predicted strong, intermediate and weak Treg-inducing consortia in vivo (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes validation experiments with results shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "0a42a411-d2e8-45c2-aa38-deeeb0d98a6a",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C25",
+      "claim": "The framework may have direct relevance to other immune-system enhancing applications such as the optimal delivery of probiotic-based cancer immunotherapies.",
+      "claim_type": "EXPLICIT",
+      "source": "We envision that our framework, while in this study tailored to finding combinations ameliorating auto-inflammatory conditions, may also have direct relevance to other immune-system enhancing applications such as the optimal delivery of probiotic-based cancer immunotherapies (Garrett, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications, supported by a citation (Garrett, 2015).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "41accc3c-0a0d-42c6-8c0d-d08d1c7f7e65",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C26",
+      "claim": "The study uses 12 Treg-inducing Clostridia strains that are part of an original consortium of 17 Treg-inducing strains.",
+      "claim_type": "EXPLICIT",
+      "source": "For (i), we gathered newly produced quantitative polymerase chain reaction (qPCR) colonization data from gnotobiotic mice and combined it with a previously published microbiome ecological model of the dynamics of 12 Treg-inducing Clostridia strains that are part of an original consortium of 17 Treg-inducing strains discovered by some of us (Atarashi et al., 2013) (see also Table 1 for a breakdown of strains used in each study).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the strains used in the study, referencing published work (Atarashi et al., 2013) and Table 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "1ec49ab2-eede-410b-b976-36dc357f8a1c",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C27",
+      "claim": "Strain 6 from the 13-strain set was predicted to not stably colonize in the presence of the other 12 strains.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the original study of (Bucci et al., 2016), we included only 12 of the 13 strains used there because, based on the modeling and analysis of Bucci et al. (2016), Strain 6 from the 13-strain set was predicted to not stably colonize in the presence of the other 12 strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on modeling predictions from a previous study (Bucci et al., 2016).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "778e329d-0f79-4e0a-aa74-81d97ce33c36",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C28",
+      "claim": "The published colonization data include time-series measurements of microbial abundances by qPCR under dietary perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "The published colonization data have been reported in our previous work (Bucci et al., 2016) and include time-series measurements of microbial abundances by qPCR under dietary perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes data from a previous publication (Bucci et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "ad626a51-bc74-4a97-a119-94d65b7e163a",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C29",
+      "claim": "The colonization data are used to derive a predictive microbiome ecology model based on an extension of the generalized Lotka\u2013Volterra equations.",
+      "claim_type": "EXPLICIT",
+      "source": "These are used to derive a predictive microbiome ecology model in gnotobiotic conditions based on an extension of the generalized Lotka\u2013Volterra (gLV) equations (Hofbauer and Sigmund, 1998) as introduced in Stein et al. (2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling approach with citations to foundational work (Hofbauer and Sigmund, 1998; Stein et al., 2013).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "fb3d2bf1-13f7-4628-b5db-d19cac1af709",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C30",
+      "claim": "14 mice were gavaged with one of three possible 11-strain subsets from the 12-strain subset.",
+      "claim_type": "EXPLICIT",
+      "source": "For the newly generated dataset, we gavaged 14 mice with one of three possible 11-strain subsets from the 12-strain subset of original 13 strains (Figure 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design with reference to Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "112d3d8c-8d79-4f65-bd71-af6f2e6c5884",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C31",
+      "claim": "The three 11-strain subsets were chosen based on the 'keystoneness' definition.",
+      "claim_type": "EXPLICIT",
+      "source": "The three 11-strain subsets were chosen based on our 'keystoneness' definition, a measure describing the marginal predicted quantitative effect of removing each strain from the full community (Bucci et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the selection criteria with reference to a previous publication (Bucci et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "d076e4c0-090f-473d-ab00-ab3f5597ee55",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C32",
+      "claim": "Two 11-strain combinations each missing one of the two highest keystoneness-scoring strains (VE202 Strain 15 and VE202 Strain 4) were included.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we included two 11-strain combinations each missing one of the two highest keystoneness-scoring strains (VE202 Strain 15 and VE202 Strain 4) and one 11-strain combination which lacks the lowest keystoneness scoring strain (VE202 Strain 29).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific strain combinations used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "82311a23-0658-4517-bd86-22dc85cb69ed",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C33",
+      "claim": "One 11-strain combination lacks the lowest keystoneness scoring strain (VE202 Strain 29).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we included two 11-strain combinations each missing one of the two highest keystoneness-scoring strains (VE202 Strain 15 and VE202 Strain 4) and one 11-strain combination which lacks the lowest keystoneness scoring strain (VE202 Strain 29).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific strain combinations used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "fbb50a9e-d09c-4aa3-b2ce-20468f4b5d9e",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C34",
+      "claim": "Each strain's density was profiled over time by qPCR with strain-specific primers.",
+      "claim_type": "EXPLICIT",
+      "source": "In analogy to Bucci et al. (2016), each strain's density was profiled over time by qPCR with strain-specific primers (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology with reference to a previous publication (Bucci et al., 2016).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "722ef83c-1a04-4fb6-b176-6885438d258a",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C35",
+      "claim": "The colonization data from fecal content was coupled with newly collected and published FACS measurements of the CD4+FOXP3+ Treg population in the lamina propria.",
+      "claim_type": "EXPLICIT",
+      "source": "To resolve the contribution of each of these to Treg induction for point (ii) we coupled the colonization data from fecal content with newly collected and published FACS measurements of the CD4+FOXP3+ Treg population in the lamina propria of these mice (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the data integration approach with reference to Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "a76566b5-0986-4ec4-98ac-ee93164e23e8",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C36",
+      "claim": "CD4+FOXP3+ Treg measurements from previously published mono-colonization experiments were included.",
+      "claim_type": "EXPLICIT",
+      "source": "As it is crucial to capture each strain's contribution alone and in combination with others, we also included CD4+FOXP3+ Treg measurements from our previously published mono-colonization experiments (Atarashi et al., 2013) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the inclusion of previously published data (Atarashi et al., 2013) shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "902a930d-6b7f-4d06-9f1b-dc3db584abdb",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C37",
+      "claim": "Single-strain mono-colonization concentrations were not measured in the previous mono-colonization experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the fact that the single-strain mono-colonization concentrations were not measured in these experiments (Atarashi et al., 2013), we simulated them using the microbiome ecological model and parameters from (Bucci et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the previous data (Atarashi et al., 2013) and the approach taken to address it using the model from (Bucci et al., 2016).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "b7afd9b1-60b2-4e3b-87a9-542d20b39f8c",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C38",
+      "claim": "The model's capability in predicting unseen validation data supports the use of simulated mono-colonization concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "This choice was supported by the model's capability in predicting unseen validation data (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a justification based on model validation results shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "78647c5c-d057-492f-8782-93afeb43ba20",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C39",
+      "claim": "Spearman's rank-order correlation coefficient ranges from 0.92 to 0.98 (p-value<10\u221216) between observations and predictions depending on the time point.",
+      "claim_type": "EXPLICIT",
+      "source": "Spearman's rank-order correlation coefficient ranges from 0.92 to 0.98 (p-value<10\u221216) between observations and predictions depending on the time point (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the validation analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "9bb50c3c-5bee-49bd-a0d8-ce07663e4be1",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C40",
+      "claim": "The population of CD4+ T-cells is subdivided into two major subpopulations: CD4+FOXP3+ Treg and CD4+FOXP3\u2212 T-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We begin by subdividing the population of CD4+ T-cells into two major subpopulations depending on their intracellular FOXP3 expression: CD4+FOXP3+ Treg and the remainder among the CD4+ T-cells, the conventional CD4+FOXP3\u2212 T-cells (Bilate and Lafaille, 2012; Rudensky, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge in immunology, supported by citations (Bilate and Lafaille, 2012; Rudensky, 2011).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "aa11e5d0-9948-4f6d-a6cb-3ecd3c8a1a16",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C41",
+      "claim": "T-cell dynamics are assumed to follow the generalized Lotka\u2013Volterra equations.",
+      "claim_type": "EXPLICIT",
+      "source": "To include a variety of effects into our model, we assume T-cell dynamics to follow the gLV equations (Gerber, 2014; Hofbauer and Sigmund, 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a modeling assumption with supporting citations (Gerber, 2014; Hofbauer and Sigmund, 1998).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "1acb0163-7b58-4ee2-806a-9d49aa5aa167",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C42",
+      "claim": "The study uses an extension of the standard gLV equations to include the impact of the Clostridia strains in terms of external perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we use an extension of the standard gLV equations to include the impact of the Clostridia strains in terms of external perturbations (Stein et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a modeling approach with a citation (Stein et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "b6ae0705-4fd7-4f9a-b18f-1409c929db25",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C44",
+      "claim": "The assumption of constant steady-state CD4+ T-cell concentration is justified because the study deals with genetically similar mice and a set of closely related Clostridia.",
+      "claim_type": "EXPLICIT",
+      "source": "We justify this because we are dealing with genetically similar mice and a set of closely related Clostridia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a justification for the modeling assumption based on the experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "ffc87058-c5ff-4e71-8352-2b68d2cdd494",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C45",
+      "claim": "The assumption of constant steady-state CD4+ T-cell concentration is not justifiable when comparing non-colonized and colonized germ-free mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This assumption is however not justifiable when comparing non-colonized and colonized germ-free mice (Faith et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a limitation of the assumption with a citation (Faith et al., 2014).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "48181aa0-3433-4bba-883d-fc193612ee7c",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C47",
+      "claim": "The resulting normalized root-mean square deviation on left-out samples was found to be 12%.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting normalized root-mean square deviation on left-out samples was found to be 12%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the cross-validation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "83b4ef90-b326-4986-9ac5-34b03cc7a8cb",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C48",
+      "claim": "Of the 4095 possible steady-state strain configurations evaluated, 84% are found to be biologically meaningful and stable.",
+      "claim_type": "EXPLICIT",
+      "source": "In our computation, of the 212\u20131 = 4095 possible steady-state strain configurations evaluated in N = 22,500 MCMC parameter estimates, 84% are found to be biologically meaningful and stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "e10b2ef5-1694-48eb-8066-b138af016760",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C49",
+      "claim": "While the average TrIS increases with consortium size, a subset size of seven already contains bacterial combinations maximizing induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while the average TrIS increases with consortium size, our analysis shows that a subset size of seven already contains bacterial combinations maximizing induction (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "604f83a0-2aea-4d81-92ef-ce59546e013c",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C50",
+      "claim": "There is a strong correlation between TrIS and the predicted total bacterial abundance in the consortium.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in addition to the strong correlation between TrIS and the predicted total bacterial abundance in the consortium, we observed that high-induction consortia display an especially large enrichment in the abundance of Strain 27 (Figure 4B, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis shown in Figure 4B and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "22e0f69e-fc31-4a3b-8684-40fe1c56ca05",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C51",
+      "claim": "High-induction consortia display an especially large enrichment in the abundance of Strain 27.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in addition to the strong correlation between TrIS and the predicted total bacterial abundance in the consortium, we observed that high-induction consortia display an especially large enrichment in the abundance of Strain 27 (Figure 4B, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis shown in Figure 4B and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "fe628370-209e-4c88-ac90-0439f7a1aefb",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C52",
+      "claim": "Short-chain fatty acids have been previously associated with colonic Treg induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Because short-chain fatty acids have been previously associated with colonic Treg induction (Arpaia et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous research with a citation (Arpaia et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "e8e38f86-c0c1-4aa9-a44e-b0192248dd31",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C53",
+      "claim": "SCFAs increase in density upon supplementation with these Clostridia strains.",
+      "claim_type": "EXPLICIT",
+      "source": "and increase in density upon supplementation with these strains (Atarashi et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous research with a citation (Atarashi et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "c7a0e00c-e949-45a0-a963-433c0cdff627",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C54",
+      "claim": "The top 5-inducing microbial consortia of size seven were compared against their bottom 5 counterparts for SCFA enrichment.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore compared the top 5-inducing microbial consortia of size seven against their same-size counterpart bottom 5 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the comparative analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "9c4db418-93a4-4360-b01a-1676685d1bee",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C55",
+      "claim": "The SCFA concentration for each predicted composition was predicted by summing the scaled metabolic outputs of each strain measured in mono-colonization experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "We predicted the SCFA concentration for each of the predicted compositions by summing the scaled metabolic outputs of each strain measured in mono-colonization experiments (Atarashi et al., 2013; Narushima et al., 2014) and normalized by the strain's model-predicted mono-colonization density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for predicting SCFA concentrations using data from previous publications (Atarashi et al., 2013; Narushima et al., 2014).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "bfd3a20a-a157-4fd6-a37c-5c7cc5c040b5",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C56",
+      "claim": "Significant enrichment for all estimated SCFAs (p<0.05, one tailed) was found in the high-TrIS consortia compared to the low ones.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed a Welch two-samples t-test for each of the predicted SCFAs concentrations and found significant enrichment for all estimated SCFAs (p<0.05, one tailed) in the high-TrIS consortia compared to the low ones (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the analysis shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "0f97570c-73e0-49bf-b4f9-b94b6b87fe1c",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C57",
+      "claim": "Five 4-strain combinations with a variety of predicted immune effects were selected for experimental testing.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to regulatory constraints on the used probiotic strains \u2013 limiting us to a maximum of four strains at a time in follow-up experiments \u2013 we selected five 4-strain combinations with a variety of predicted immune effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design for validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "556cd15b-29c3-47f6-b6dc-cbb1af3a6049",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C58",
+      "claim": "CD4+FOXP3+ Treg induction was measured for five microbial consortia of size four and the germ-free control.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured CD4+FOXP3+ Treg induction for five microbial consortia of size four and the germ-free control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental measurements performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "40ed6ce6-873e-4988-a77f-83b88135c3b4",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C59",
+      "claim": "The two highest TrIS consortia (H1 and H2 with rank 1 and 2, respectively), the lowest one (L with rank 495) and two TrIS-intermediate consortia (M1, M2 with rank 129 and 452, respectively) were chosen for validation.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose the two highest TrIS consortia (H1, H2 with rank 1 and 2, respectively), the lowest one (L with rank 495) and two TrIS-intermediate consortia of interest (M1, M2 with rank 129 and 452, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific consortia selected for validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "efc142d9-2e03-4c3c-8e3f-e7e5d41a9f6d",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C60",
+      "claim": "A significant Pearson correlation with coefficient of 0.97 and p-value<0.01 was found between the TrIS score and the mean observed CD4+FOXP3+ Treg percentage.",
+      "claim_type": "EXPLICIT",
+      "source": "We correlated the TrIS score with the mean observed CD4+FOXP3+ Treg percentage and found a significant Pearson correlation with coefficient of 0.97 and p-value<0.01 (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the validation experiment shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "7b5fc561-bc30-4e15-b008-714d0cef7a03",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C61",
+      "claim": "The high TrIS-scoring consortia (H1, H2, M1) all stably colonized while the two low-scoring consortia only displayed a subset of the introduced strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, when using 16S rRNA sequencing to investigate the resulting colonization profiles for these combinations, we observed that the high TrIS-scoring consortia (H1, H2, M1) all stably colonized while the two low-scoring consortia only displayed a subset of the introduced strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the colonization profiling experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "e2d44693-9480-4c02-b7aa-5a08cdc94285",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C62",
+      "claim": "The H2 consortium displays an average increase in immune activity of 107% relative to the average germ-free mouse control.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the H2 consortium displays an average increase in immune activity of 107% relative to the average germ-free mouse control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the validation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "124620ab-b64a-4703-9222-24410d20e776",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C63",
+      "claim": "ANOVA and subsequent post-hoc Tukey test showed significance in the measured enrichment of H1 compared to L (adjusted p-value<0.05) for acetic acid concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "ANOVA and subsequent post-hoc Tukey test showed significance in the measured enrichment of H1 compared to L (adjusted p-value<0.05) and of H1 compared to H2 (adjusted p-value<0.05) (Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the metabolic profiling analysis shown in Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "aef93422-458f-4b1f-ad2b-8e8f11788490",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C64",
+      "claim": "ANOVA and subsequent post-hoc Tukey test showed significance in the measured enrichment of H1 compared to H2 (adjusted p-value<0.05) for acetic acid concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "ANOVA and subsequent post-hoc Tukey test showed significance in the measured enrichment of H1 compared to L (adjusted p-value<0.05) and of H1 compared to H2 (adjusted p-value<0.05) (Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the metabolic profiling analysis shown in Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "13b5628e-a7e0-412f-9c4f-0088a8c5e08c",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C65",
+      "claim": "No statistical difference was observed between measurements in H2 and L for acetic acid concentrations (adjusted p-value<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "However, no statistical difference was observed between measurements in H2 and L (adjusted p-value<0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the metabolic profiling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "92b6c005-22c5-4a3e-9e8f-1c73c6678922",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C66",
+      "claim": "The model-predicted germ-free normalized acetate enrichment and the observed acetic acid concentration are well correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the model-predicted germ-free normalized acetate enrichment and the observed acetic acid concentration (normalized by the mean in germ-free conditions) are well correlated (Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the comparison of predicted and observed metabolite concentrations shown in Figure 4\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "0d83d4bc-03bf-47e7-aa71-0cee13da8f4d",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C67",
+      "claim": "Choosing bacterial combinations from the vast combinatorial space of microbes that effectively colonize a host and maximize a desired host phenotype requires an enormous number of expensive and time-consuming experimental trials.",
+      "claim_type": "EXPLICIT",
+      "source": "However, choosing bacterial combinations from the vast combinatorial space of microbes that effectively colonize a host (possibly with a dysbiotic microbiota) and at the same time maximize a desired host phenotype requires an enormous number of expensive and time-consuming experimental trials (Faith et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the challenge in the field, supported by a citation (Faith et al., 2014).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "84f1ef76-b4c6-47de-87ed-8c0789b52ed7",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C68",
+      "claim": "The majority of available microbiome analysis methods is still based on correlations and inept at predicting unseen phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "While data mining and statistical approaches could aid in this process, the majority of available microbiome analysis methods is still based on correlations (Gerber, 2014; Morgan et al., 2015) and inept at predicting unseen phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of current methods, supported by citations (Gerber, 2014; Morgan et al., 2015).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "a036f1e1-fa19-49cf-8a0a-d4cda748b4e6",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C69",
+      "claim": "Identification of causal associations between microbes and host phenotype has been recently achieved by using an experimentally based microbe\u2013phenotype triangulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Identification of causal associations between microbes and host phenotype has been recently achieved by using an experimentally based microbe\u2013phenotype triangulation (Surana and Kasper, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on recent research with a citation (Surana and Kasper, 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "6171206f-7ce1-41d7-a0d8-4c16e1d51b37",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C70",
+      "claim": "The microbe-phenotype triangulation approach remains impractical when the goal is to explore and rank all possible microbiome consortium combinations with respect to a host phenotype of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this approach remains impractical when the goal is to explore and rank all possible microbiome consortium combinations with respect to a host phenotype of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the limitations of the triangulation approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "6611d13d-0584-4bce-8837-4c68d9a22ba0",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C71",
+      "claim": "The study leveraged previous computational methods to forecast temporal microbiome dynamics and make predictions on stability in the context of infectious and inflammatory diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we leveraged our previous computational methods to forecast temporal microbiome dynamics and make predictions on stability in the context of infectious and inflammatory diseases including C. difficile colonization and inflammatory bowel disease (Bucci et al., 2016; Buffie et al., 2015; Stein et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the foundation of the current work with citations to previous publications (Bucci et al., 2016; Buffie et al., 2015; Stein et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "d89fb3fd-fb13-4a81-b301-ed08d924249d",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C72",
+      "claim": "The study presents a novel modeling-based method that combines dynamical predictions from data-driven models of the microbiome and the interactions between microbes and the immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we have presented a novel modeling-based method that combines dynamical predictions from data-driven models of the microbiome and the interactions between microbes and the immune response (such as CD4+FOXP3+ Treg) and thereby enables the rational design of immune-modulating bacterial consortia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main contribution of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "915c299b-9fea-4bb0-9d14-affa25f64c41",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C73",
+      "claim": "The proposed framework is naturally extensible to other host data, for example data from metabolite profiling, immune readouts, or host transcriptome profiling.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the proposed framework is naturally extensible to other host data, for example data from metabolite profiling, immune readouts (e.g. CD8 T-cell activation, Th1/Th17 cell depletion) or host transcriptome profiling (Atarashi et al., 2017; Morgan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential extensibility of the framework, with citations (Atarashi et al., 2017; Morgan et al., 2015).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "91a045c8-886d-4450-9ee6-dc25358ce5f7",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C74",
+      "claim": "This is the first study in which observation-constrained in silico modeling of microbiome and host phenotype has successfully guided the rational design of drugs of defined bacterial consortia.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is to date, the first study in which observation-constrained in silico modeling of microbiome and host phenotype has successfully guided the rational design of drugs of defined bacterial consortia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty and significance of the work.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "f7c1258d-5010-49ba-b9b0-364b07fbad76",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C75",
+      "claim": "The gLV model assumption has limitations including the lack of third or higher order interactions or saturation effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work relies on the gLV model assumption for both microbiome and CD4+ regulatory T-cell dynamics which, despite being very versatile, has some limitations including the lack of third or higher order interactions or saturation effects (Wangersky, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a limitation of the modeling approach with a citation (Wangersky, 1978).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "4f046741-f3be-43ea-9bc5-3e515a521145",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C76",
+      "claim": "The assumption that the overall T-cell density at steady state is constant across mice and different microbiome compositions was necessary with the available data.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, with the data available to us, we needed to assume that the overall T-cell density at steady state is constant across mice and different microbiome compositions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a modeling assumption necessitated by data limitations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "669b3794-1079-4858-be01-5d770d9e3175",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C77",
+      "claim": "The addition of future measurements on total T-cell abundance will likely improve the prediction accuracy of the model.",
+      "claim_type": "EXPLICIT",
+      "source": "While this assumption was reasonable for the data we analyzed (see Results), the addition of future measurements on total T-cell abundance will likely improve the prediction accuracy of our model as well as provide important insight into the variability of T-cell population size in response to microbial immune induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about how future data could improve the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "6e267683-e229-4692-947f-ee2065b191cf",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C78",
+      "claim": "Previous work showed that the amount of Treg induction is independent of the germ-free background (IQI, Balb/c or C57BL/6).",
+      "claim_type": "EXPLICIT",
+      "source": "While previous work by some of us showed that the amount of Treg induction is independent of the germ-free background (IQI, Balb/c or C57BL/6) (Atarashi et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous research with a citation (Atarashi et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "2292cfea-0dea-47a1-9af7-41e01d64c431",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C79",
+      "claim": "The model, which was trained on IQI mice data, robustly predicted both Treg induction and acetate enrichment of C57BL/6 colonized mice used in the validation experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "it is noteworthy that our model, which was trained on IQI mice data, robustly predicted both Treg induction and acetate enrichment of C57BL/6 colonized mice as used in the validation experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "221b5320-0492-4ab5-a726-84dc88d4ec02",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C80",
+      "claim": "The predictions suggest some degree of consistency in terms of functional outcome (e.g. enrichment in acetate) of high-scoring consortia relative to low-scoring ones in germ-free mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Our predictions suggest some degree of consistency in terms of functional outcome (e.g. enrichment in acetate) of high-scoring consortia relative to low-scoring ones in germ-free mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "21335fa1-40e5-4cbf-a380-25bab0d430d4",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C81",
+      "claim": "Before translating these findings into therapeutic development, future studies will need to be performed in not germ-free settings.",
+      "claim_type": "EXPLICIT",
+      "source": "However, before translating these findings into therapeutic development, future studies will need to be performed in not germ-free settings (e.g. SPF mice, humanized mice) in order to account for the effects of an already-established flora.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the need for future work before clinical translation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "a713fac2-f009-46a6-b39d-5a67074e9e28",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C82",
+      "claim": "Individual-specific microbiome features may constrain the colonization potential of the selected strains due to specific ecological network effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual-specific microbiome features may constrain the colonization potential of the selected strains due to specific ecological network effects (Smits et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a consideration for future applications, supported by a citation (Smits et al., 2016).",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "5d43d3c9-73f6-488b-93a5-ea425bd2a07b",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C83",
+      "claim": "Treatment of auto-immune diseases may need the simultaneous manipulation of a multi-process host immune spectrum.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of auto-immune diseases overall is not necessarily achieved by the exclusive optimization of one objective function (e.g. for ulcerative colitis, the maximization of Treg activation), but may need the simultaneous manipulation of a multi-process host immune spectrum, which could include the concomitant reduction of pro-inflammatory phenotypes (Atarashi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a consideration about the complexity of treating auto-immune diseases, with a citation (Atarashi et al., 2015).",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "5af4c0b3-df54-424b-a475-9331a8e4799b",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C84",
+      "claim": "The modeling framework could overcome problems by introducing constraints into the scoring metric that account for pre-colonized mouse model features.",
+      "claim_type": "EXPLICIT",
+      "source": "Given new data availability and careful experimental design, we believe that the modeling framework proposed in this study could overcome these problems by introducing constraints into the scoring metric that account for pre-colonized mouse model features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about how the framework could be extended.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "97a58007-4769-4cfa-9fb0-d60d93e55a86",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C85",
+      "claim": "In the presence of a large training data set that would include sufficient information on individual patient variation, the workflow will give the potential of testing microbiota manipulation on a personalized level in silico.",
+      "claim_type": "EXPLICIT",
+      "source": "To the limit, in the presence of a large training data set that would include sufficient information on individual patient variation, our workflow will give us the unprecedented potential of testing microbiota manipulation on a personalized level in silico.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the future potential of the approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "6da6919f-1360-4509-8a64-4461cd168495",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C86",
+      "claim": "Mathematical modeling-based methods have the potential to greatly accelerate the development of treatment of human disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Mathematical modeling-based methods have the potential to greatly accelerate the development of treatment of human disease (Michor and Beal, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the potential of mathematical modeling, supported by a citation (Michor and Beal, 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "912412fd-0781-4ad8-9120-c6cdc62afbe8",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C87",
+      "claim": "The mathematical microbiome\u2013immune system model can be considered a stepping-stone to the accelerated prototyping and rational design of microbiome therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "It can be considered a stepping-stone to the accelerated prototyping and rational design of microbiome therapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the significance and potential impact of the work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "fddd8fcc-4f20-4478-a5ca-dfc76022947d",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C88",
+      "claim": "Germ-free IQI mice were purchased from Sankyo Laboratories (Japan) for the experimental validation.",
+      "claim_type": "EXPLICIT",
+      "source": "For the experimental validation, germ-free IQI mice were purchased from Sankyo Laboratories (Japan), randomized and maintained in germ-free vinyl isolators in the animal facility of RIKEN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of experimental animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "cc53a489-789d-4b66-83b1-811ec1711f87",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C89",
+      "claim": "Twelve Treg-inducing Clostridia strains were selected from the previously reported VE202 consortium consisting of 17 Treg-inducing strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Twelve Treg-inducing Clostridia strains were selected from the previously reported VE202 consortium consisting of 17 Treg-inducing strains (4, 7, 9, 13\u201316, 21, 26\u201329)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the strains used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "f91e3263-5d3b-4f26-b2eb-7f6062ea3b66",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C90",
+      "claim": "The cultured bacterial strains were individually cultured in modified Eggerth Gagnon broth under strictly anaerobic conditions at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "and were individually cultured in modified Eggerth Gagnon broth under strictly anaerobic conditions (80% N2, 10% H2, 10% CO2) at 37\u00b0C in an anaerobic chamber (Coy Laboratory Products, Grass Lake, MI) to confluence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the bacterial culture conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "84bbf299-751c-4521-8d12-2f895deac388",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C91",
+      "claim": "The three mixtures of 11 strains were orally inoculated into five IQI germ-free adult mice each.",
+      "claim_type": "EXPLICIT",
+      "source": "The cultured bacterial strains were then mixed and the three mixtures of 11 strains (described above) were orally inoculated into five IQI germ-free adult mice each.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "93126165-e638-4b1c-a720-0ef9c0253b3f",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C92",
+      "claim": "One mouse for condition II died and was therefore discarded from the study.",
+      "claim_type": "EXPLICIT",
+      "source": "One mouse for condition II died and was therefore discarded from the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an experimental outcome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "1796d8f1-1440-4889-b082-24c9e9d1d569",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C93",
+      "claim": "Fecal pellets were collected at 2\u20134 days interval until day 35 after an initial 9-day interval of acclimation.",
+      "claim_type": "EXPLICIT",
+      "source": "After an initial 9-day interval of acclimation, we collected fecal pellets at 2\u20134 days interval until day 35, time at which mice were euthanized and analyzed for CD4+FOXP3 induction as in Atarashi et al. (2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental timeline and procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "b0ebc523-c408-4284-b6e5-e15baa803d58",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C94",
+      "claim": "Colonization levels for each strain were assessed by amplifying strain-specific regions with qPCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Colonization levels for each strain were assessed by amplifying strain-specific regions with qPCR as described in Bucci et al. (2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for assessing colonization, referencing a previous publication (Bucci et al., 2016).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "41060e5d-0cac-4f68-adc3-0f126d6715e6",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C95",
+      "claim": "Bacterial genomic DNA was extracted from 1 to 2 fecal pellets using QIAamp DNA Stool Mini Kit.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial genomic DNA was extracted from 1 to 2 fecal pellets using QIAamp DNA Stool Mini Kit (Qiagen, Hilden, Germany).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the DNA extraction method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "7b28fcdc-7a4d-4552-8a64-ea2483c1c745",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C96",
+      "claim": "The amount of DNA was quantified using a Qubit dsDNA HS assay kit and Qubit fluorometer.",
+      "claim_type": "EXPLICIT",
+      "source": "The amount of DNA was quantified using a Qubit dsDNA HS assay kit and Qubit fluorometer (Invitrogen, Carlsbad, CA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the DNA quantification method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "1ec3ae44-b1cb-40eb-ba53-415c7a68ba88",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C97",
+      "claim": "DNA was subjected to qPCR using Thunderbird SYBR qPCR Mix and a LightCycler 480 with primers specific to 16S ribosomal RNA genes of the 12 Clostridia strains.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA was then subjected to qPCR using Thunderbird SYBR qPCR Mix (TOYOBO, Osaka, Japan) and a LightCycler 480 (Roche) with primers specific to 16S ribosomal RNA (rRNA) genes of the 12 Clostridia strains as in Bucci et al. (2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the qPCR method, referencing a previous publication (Bucci et al., 2016).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "6ef496dd-a412-4973-a8ce-b33709535922",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C98",
+      "claim": "Quantification of each strain in each sample was accomplished using standard curves of known concentrations of DNAs purified from each strain individually cultured in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of each strain in each sample was accomplished using standard curves of known concentrations of DNAs purified from each strain individually cultured in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the quantification method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "6e84a582-c4ec-4531-a291-1113e07a6b1b",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C99",
+      "claim": "Strain densities in each sample were calculated by dividing the absolute quantification numbers by the weight of the extracted fecal DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Strain densities in each sample were calculated by dividing the above absolute quantification numbers by the weight of the extracted fecal DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the calculation method for strain densities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "bfb1684f-182f-4ddd-bb93-ac41b6d3a086",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C100",
+      "claim": "The 11-strain experiments were ethically approved by RIKEN, Keio and Azabu Universities under protocol H24-9(14) from RIKEN.",
+      "claim_type": "EXPLICIT",
+      "source": "The 11-strain experiments were ethically approved by RIKEN, Keio and Azabu Universities under protocol H24-9(14) from RIKEN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ethical approval for the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "7dbb0edd-b942-4091-b33a-3bd28ded4514",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C101",
+      "claim": "The colons were collected and opened longitudinally, washed with PBS to remove all luminal contents.",
+      "claim_type": "EXPLICIT",
+      "source": "The colons were collected and opened longitudinally, washed with PBS to remove all luminal contents and shaken in Hanks' balanced salt solution (HBSS) containing 5 mM EDTA for 20 min at 37\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the tissue preparation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "f3788a26-df6f-416c-a8fe-400c1bdf45dc",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C102",
+      "claim": "After removing epithelial cells, muscle layers and fat tissue, the lamina propria layers were cut into small pieces and incubated with RPMI1640 containing enzymes for 1 hr at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "After removing epithelial cells, muscle layers and fat tissue using forceps, the lamina propria layers were cut into small pieces and incubated with RPMI1640 containing 4% fetal bovine serum, 0.5 mg/ml collagenase D, 0.5 mg/ml dispase and 40 mg/ml DNase I (all Roche Diagnostics, Risch-Rotkreuz, Switzerland) for 1 hr at 37\u00b0C in a shaking water bath.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the tissue digestion method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "24de0044-b390-4a7c-a097-7b15960c40de",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C103",
+      "claim": "Percoll gradient separation was performed by centrifugation at 850 g for 25 min at 25\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Percoll gradient separation was performed by centrifugation at 850 g for 25 min at 25\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the cell separation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "b464d88c-cf66-49ae-8385-e885c48392d7",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C104",
+      "claim": "The lamina propria lymphocytes were collected from the interface of the Percoll gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "The lamina propria lymphocytes were collected from the interface of the Percoll gradient and suspended in ice-cold PBS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the cell collection method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "323319b3-098a-47b3-b51c-8cbdcba7286d",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C105",
+      "claim": "Isolated lymphocytes were labeled with the LIVE/DEAD fixable dead cell stain kit to exclude dead cells from the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "For analysis of Treg, isolated lymphocytes were labeled with the LIVE/DEAD fixable dead cell stain kit (Life Technologies, Carlsbad, CA) to exclude dead cells from the analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the cell viability staining method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "9b1c517f-8165-4445-b1fb-bcf66804c282",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C106",
+      "claim": "Surface and intracellular staining of CD3, CD4 and FOXP3 was performed using specific antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, surface and intracellular staining of CD3, CD4 and FOXP3 was performed using the BV605-labeled anti-CD3 (17A2, Biolegend, San Diego, CA), BV421-labeled anti-CD4 (RM4-5, Biolegend), Alexa700-labeled anti-FOXP3 antibody (FJK-16 s, eBioscience, San Diego, CA), and FOXP3 staining buffer set (eBioscience).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the antibody staining method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "775dd91f-8ecf-4b77-be8d-2b48684b4b20",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C107",
+      "claim": "The antibody-stained cells were analyzed with LSR Fortessa and data were analyzed using FlowJo software.",
+      "claim_type": "EXPLICIT",
+      "source": "The antibody-stained cells were analyzed with LSR Fortessa and data were analyzed using FlowJo software (Tree Star, Ashland, OR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the flow cytometry analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "6edc5fbf-4183-4ee6-a0a3-42378acce195",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C108",
+      "claim": "Organic acid concentrations in caecal contents were determined by gas chromatography-mass spectrometry (GC-MS).",
+      "claim_type": "EXPLICIT",
+      "source": "Organic acid concentrations in caecal contents were determined by gas chromatography-mass spectrometry (GC-MS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for measuring organic acids.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "a2bddf3b-c9b5-409a-8639-a5c3ee5dc0c8",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C109",
+      "claim": "Caecal contents (10 mg) were disrupted using 3 mm zirconia/silica beads and homogenized in extraction solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Caecal contents (10 mg) were disrupted using 3 mm zirconia/silica beads (BioSpec Products) and homogenized in extraction solution containing 100 ml of internal standard (100 mM crotonic acid), 50 ml of HCl and 200 ml of ether.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample preparation method for metabolite analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "dedb08c4-9dc3-44d0-829c-5d7e6dc4767a",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C110",
+      "claim": "22,500 sets of Markov Chain Monte Carlo generalized Lotka\u2013Volterra parameter sets were used for simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "We used 22,500 sets of Markov Chain Monte Carlo generalized Lotka\u2013Volterra parameter sets determined by applying the Bayesian Variable Selection algorithm within MDSINE to the data of Bucci et al. (2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational approach using parameters from a previous publication (Bucci et al., 2016).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "3aad3b9b-6f76-4ad6-8e62-1cb330de05c9",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C111",
+      "claim": "Prediction accuracy was evaluated by calculating the Spearman correlation coefficient between observed and predicted data.",
+      "claim_type": "EXPLICIT",
+      "source": "Prediction accuracy was evaluated by calculating the Spearman correlation coefficient between observed and predicted data (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the method for evaluating prediction accuracy, with results shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "b4586f80-6be3-46dc-8b15-3be7ebbae1fa",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C112",
+      "claim": "The parameter median in each single model variable was computed from the 22,500 MCMC parameter sets.",
+      "claim_type": "EXPLICIT",
+      "source": "We computed the parameter median in each single model variable from the 22,500 MCMC parameter sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method for determining model parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "e48e7f33-98fa-41a4-9b17-18592add5031",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C113",
+      "claim": "These median parameters were used to deduce the steady-state densities for mono-colonization experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "These median parameters were then used to deduce the steady-state densities, which were together with the measured CD4+FOXP3 proportions included into the training of the microbiome\u2013Treg model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how the model parameters were used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "b82f9e5f-acaf-4b8d-8e0b-2739bfdc9d51",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C114",
+      "claim": "Bacterial strains 4, 7, 9, 14, 15, 16, 27, 28, 29 were grown anaerobically in PYG broth until they reached stationary phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial strains 4, 7, 9, 14, 15, 16, 27, 28, 29 were grown anaerobically in PYG broth (Peptone, Yeast and Glucose broth from Anaerobe Systems, Cat no: AS-822) until they reached stationary phase (48 hr for strains 27 and 29, 24 hr for the remaining strains).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the bacterial culture conditions for the validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "365b1ad3-598f-4180-89a4-00edece225a3",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C115",
+      "claim": "Each 200 \u00b5l-mouse dose of a 4-strain LBP contained 50 \u00b5l of 20 times concentrated stationary phase culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Each 200 \u00b5l-mouse dose of a 4-strain LBP contained 50 \u00b5l of 20 times concentrated stationary phase culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dosing preparation for the validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "1c9d7937-6dd4-49c5-8483-84a80022552e",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C116",
+      "claim": "Germ-free C57BL/6 mice aged 6\u20138 weeks were gavaged with a total dose of 5\u00b710^7\u20132\u00b710^8 bacteria in a 200 \u00b5l volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Germ-free C57BL/6 mice aged 6\u20138 weeks were randomized and gavaged with a total dose of 5\u00b7107\u20132\u00b7108 bacteria in a 200 \u00b5l, and maintained under gnotobiotic conditions for four weeks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure for the validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "a92cffcf-264f-4903-84d3-c9cf7e51a60b",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C117",
+      "claim": "Use of a C57BL/6 background for the validation experiments was motivated by availability of animals at the facility.",
+      "claim_type": "EXPLICIT",
+      "source": "Use of a C57BL/6 background for these experiments was motivated by availability of animals at the facility where we performed the validation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the choice of mouse strain for the validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "aa04edb8-335b-48d4-a30f-685553e1b129",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C118",
+      "claim": "Previous work has shown that Treg induction by Clostridia strains does not differ between Balb/c, IQI, and C57BL/6 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "and justified by the fact that previous work from us has shown that Treg induction by our Clostridia strains does not differ between Balb/c, IQI, and C57BL/6 mice (Atarashi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This justifies the use of C57BL/6 mice with a citation to previous work (Atarashi et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "222ab0c4-d0e2-4fc1-82d3-a1318f1b0a36",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C119",
+      "claim": "Eight mice each were used for consortia High 1 (H1) and High 2 (H2).",
+      "claim_type": "EXPLICIT",
+      "source": "Eight mice each were used for consortia High 1 (H1-strains: 7, 27, 28, 29) and High 2 (H2-strains: 4, 7, 27, 29).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample size for the validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "fe690d4e-8435-4f9f-9805-60142d0ba5a9",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C120",
+      "claim": "Five mice each were used for the intermediate high (M1) and intermediate low consortia (M2).",
+      "claim_type": "EXPLICIT",
+      "source": "Five mice each were used for the intermediate high (M1-strains: 4, 7, 14, 28), and intermediate low consortia (M2-strains: 9, 16, 27, 29).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample size for the validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "519be713-763a-4cd4-abbb-fbcf9bf1eded",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C121",
+      "claim": "Three mice were used for Low 1 (L1) consortium.",
+      "claim_type": "EXPLICIT",
+      "source": "Three mice were used for Low 1 (L1-strains: 14, 15, 16, 29).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample size for the validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "7a80f6ae-4371-4975-8818-c4c7ae7f3d7f",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C122",
+      "claim": "Colonization profiling was determined through 16S rRNA sequencing and verified by blasting representative sequences to a 16S VE202 fasta database.",
+      "claim_type": "EXPLICIT",
+      "source": "Colonization profiling was determined through 16S rRNA sequencing (as above) and verified by blasting representative sequences to a 16S VE202 fasta database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for verifying colonization in the validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "353a6f77-b4fc-41f3-8afd-99fba531a7a9",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C123",
+      "claim": "The 4-strain validation experiments were performed in the Massachusetts Host Microbiome Center under IACUC protocol 2016N000141.",
+      "claim_type": "EXPLICIT",
+      "source": "The 4-strain validation experiments were performed in the Massachusetts Host Microbiome Center under IACUC protocol 2016N000141.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the location and ethical approval for the validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "256535c3-e31c-40e2-a982-10249fa0ee65",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "claim_id": "C124",
+      "claim": "There is a strong correlation (Spearman's Rank Correlation with coefficient 0.88 and p<0.05) between TrIS and total microbial density.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis shows a strong correlation (Spearman's Rank Correlation with coefficient 0.88 and p<0.05) between TrIS and total microbial density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the analysis described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ab75891e-f878-4876-88f4-8f0f21b97df8",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological context and motivation for the study by reviewing prior work on microbiota-immune interactions, particularly the role of Clostridia strains in Treg induction, and identifies the challenge of determining optimal bacterial consortia for therapeutic applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C13 are all supported by appropriate citations to published literature and establish well-accepted background knowledge in the field. These claims provide the scientific rationale for the study and are appropriately referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "e611658b-b4dd-47d7-a0c4-91d4024b17ad",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The study identifies a gap in existing approaches: testing all possible subsets of 17 Treg-inducing Clostridia strains would require 131,071 experiments, which is experimentally infeasible, and no existing model can simultaneously predict microbiota dynamics and immune response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17 correctly identify the computational challenge (C15 is mathematically correct: 2^17-1 = 131,071) and the gap in existing modeling approaches. These claims are well-supported by citations and logical reasoning.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "6bfa66e6-05ec-4b8b-b8cd-d8e6b84a2f86",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The study presents a novel mathematical modeling framework that integrates microbiome ecological dynamics with immune response predictions to enable computational optimization of immune-stimulating bacterial combinations, representing the first successful application of observation-constrained in silico modeling to guide rational design of defined bacterial consortia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C19, C72, and C74 describe the core methodological innovation of the study. The framework is demonstrated through experimental validation (C24, C60), supporting the claim of novelty. However, the claim of being 'first' (C74) should be interpreted cautiously as it depends on the specific definition of 'observation-constrained in silico modeling.'",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "06e002dc-9d7a-4435-901d-7ec66d95785f",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The study uses 12 Treg-inducing Clostridia strains (excluding Strain 6 based on stability predictions) and generates new colonization data from 14 mice gavaged with three different 11-strain subsets selected based on 'keystoneness' analysis, with strain densities profiled by qPCR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C34 describe the experimental design and data generation. The exclusion of Strain 6 (C27) is justified by prior modeling work. The selection of 11-strain subsets based on keystoneness (C31-C33) is a rational experimental design choice. Methods are appropriately detailed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "1d6ab1d1-c172-4543-ab11-933bab91a590",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study combines newly generated and previously published FACS data with colonization measurements, using simulated mono-colonization concentrations from a previously validated ecological model to compensate for missing measurements in prior experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C35-C38 describe the data integration strategy. The use of simulated mono-colonization data (C37) is justified by model validation (C38, C39), though this introduces model-dependency into the training data. This is a reasonable approach given data limitations but represents a potential source of circularity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "060e02f7-73b1-4d24-b874-547d3e26032d",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The microbiome ecological model demonstrates strong predictive capability for temporal dynamics of different strain subsets, with Spearman correlation coefficients ranging from 0.92 to 0.98 (p<10^-16) between observations and predictions across time points.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C38, C39, C110, and C111 describe model validation with quantitative metrics. The high correlation coefficients (C39) and highly significant p-values provide strong statistical support. Figure 3A-B visually confirms good agreement between predictions and observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "1c711cd1-0df4-4b01-acc2-6817c04f36ed",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The microbiome-Treg mathematical model is based on generalized Lotka-Volterra equations extended to include microbial perturbations, with the assumption that steady-state CD4+ T-cell concentration is constant across mice with different microbiome compositions (justified for genetically similar mice and closely related Clostridia, but not for comparing colonized vs. non-colonized germ-free mice).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C40-C42, C44-C45 describe the mathematical modeling framework. The gLV framework is well-established (C41), but the assumption of constant total T-cell density (C44) is a significant simplification. While the authors justify this for their specific experimental conditions (C44), they acknowledge it's not universally valid (C45). This assumption could affect the accuracy of predictions, particularly for extreme cases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "d1fd57b9-b534-453a-b45b-d35f27ebbeee",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study infers each strain's individual contribution to the CD4+FOXP3+ Treg pool using L2-penalized least-square regression, achieving a normalized root-mean square deviation of 12% on left-out samples in cross-validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21 and C47 describe the parameter inference approach and its performance. The 12% RMSD (C47) indicates reasonable model fit. The use of cross-validation is appropriate for assessing generalization. However, the manuscript does not provide details on the number of folds or samples, which would be important for fully evaluating this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "07b10d15-e6e7-4698-a826-08ba896b8854",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The Treg Induction Score (TrIS) was computed for all possible strain combinations, with 84% of 4,095 possible configurations being biologically meaningful and stable, and analysis showing that consortia of size seven already contain combinations that maximize Treg induction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C48, and C49 describe the TrIS metric and computational screening results. The finding that 84% of combinations are stable (C48) is a computational result from the model. The observation that size-seven consortia maximize induction (C49) is an interesting finding shown in Figure 4A, though it's based on model predictions rather than experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "9f626ed2-cf4d-4083-abf0-aa6ddaf7aebc",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "High TrIS consortia show strong correlation with predicted total bacterial abundance (Spearman correlation 0.88, p<0.05) and are particularly enriched in Strain 27.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C51, and C124 describe correlations between TrIS and microbial features. The statistical significance is reported (C124), and the enrichment of Strain 27 (C51) is shown in Figure 4B and Figure 4\u2014figure supplement 1. These are model-based predictions that identify potential mechanistic features.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "a8c1b71d-06d5-44d6-af4f-8480288e5e04",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "High-TrIS consortia are predicted to have significantly higher SCFA production than low-TrIS consortia (p<0.05 for all SCFAs by Welch t-test), based on scaling single-strain metabolic outputs by predicted abundances.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 describe the SCFA enrichment analysis. The approach of scaling single-strain measurements by predicted abundances (C55) is reasonable but assumes additive effects without interactions. The statistical significance (C56) supports the prediction, though this is based on model predictions rather than direct measurements of the consortia.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "67e51a9c-db07-4de2-9cdb-40ede7feb1ae",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Experimental validation of five 4-strain consortia with varying predicted TrIS shows a significant Pearson correlation of 0.97 (p<0.01) between TrIS and observed CD4+FOXP3+ Treg percentage, with the H2 consortium showing 107% increase in immune activity relative to germ-free controls, and high-TrIS consortia successfully colonizing while low-TrIS consortia showed incomplete colonization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C62 describe the key experimental validation. The very high correlation (r=0.97, p<0.01, C60) between predicted and observed Treg induction is remarkable and strongly supports the model's predictive capability. The observation that colonization success correlates with TrIS (C61) validates the ecological component. However, the sample sizes vary (8 for H1/H2, 5 for M1/M2, 3 for L, C119-C121), with the low-TrIS group having only 3 replicates, which may limit statistical power for that comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "663e7957-9bc4-46b8-be0e-0e7fe435476f",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Metabolic profiling shows significant acetic acid enrichment in H1 compared to both L and H2 (adjusted p<0.05), but not between H2 and L, with model-predicted acetate enrichment correlating well with observed acetic acid concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C66 describe metabolic validation results. The statistical analysis (C63-C65) shows partial agreement with predictions\u2014H1 is significantly enriched, but H2 is not significantly different from L (C65), which is inconsistent with the TrIS ranking. The correlation between predicted and observed acetate (C66) is described as 'well correlated' but no quantitative metric is provided. This suggests the metabolic predictions are less accurate than the Treg predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "a0fee92c-84d2-4349-85f2-df5cea3c4202",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors acknowledge limitations of the gLV model (lack of higher-order interactions and saturation effects) and the assumption of constant T-cell density, noting that future measurements of total T-cell abundance would likely improve model accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 appropriately acknowledge model limitations. The gLV limitations (C75) are well-known in the field. The constant T-cell density assumption (C76) is a significant simplification that could affect predictions. The suggestion for future improvements (C77) is reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "ed9394aa-fae2-4d16-8328-6dee758a3ec6",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The model trained on IQI mice data successfully predicted both Treg induction and acetate enrichment in C57BL/6 mice used for validation, suggesting consistency in functional outcomes across mouse strains in germ-free conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80 address cross-strain generalization. The successful prediction across mouse strains (C79) is supported by prior work showing strain-independence of Treg induction (C78). This strengthens confidence in the model's generalizability, at least within germ-free contexts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "0183d4a4-0987-4415-a75f-f4294b0f0759",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors note that translation to therapeutic applications will require studies in non-germ-free settings to account for established flora and individual-specific microbiome features, and that treatment of autoimmune diseases may require simultaneous manipulation of multiple immune processes beyond Treg activation alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C85 appropriately discuss limitations for clinical translation and future directions. These are reasonable considerations about the gap between germ-free mouse models and clinical applications. The speculation about personalized approaches (C85) is appropriately framed as future potential.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The manuscript provides detailed methods for bacterial culture, mouse experiments, colonization profiling by qPCR, Treg quantification by FACS, and metabolite analysis by GC-MS, with appropriate ethical approvals and justification for experimental choices including mouse strain selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C123 describe experimental methods in detail. The methods appear rigorous and appropriate for the study objectives. Sample sizes (C119-C121) are consistent with prior work in the field. Ethical approvals are documented (C100, C123). The justification for using C57BL/6 mice (C117-C118) is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    },
+    {
+      "id": "b668f302-39eb-44a4-b2f6-889b3d03c9f2",
+      "content_id": "d65eaef1-1bc0-4ffe-a9c3-a7afaf066922",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors propose that the framework could be extended to other immune-modulating applications such as cancer immunotherapy and could incorporate additional data types including metabolite profiling, other immune readouts, or transcriptome data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25 and C73 are appropriately framed as speculative future applications. The extensibility to other immune phenotypes and data types is plausible given the modular nature of the framework, though these remain to be demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:43.582569Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5209ba49-5b90-46ed-ad95-89a8db65bfa4",
+      "result_id": "ab75891e-f878-4876-88f4-8f0f21b97df8"
+    },
+    {
+      "claim_id": "4ce219ce-83e8-4534-966d-bb22c1d47fdb",
+      "result_id": "ab75891e-f878-4876-88f4-8f0f21b97df8"
+    },
+    {
+      "claim_id": "315aa61e-34f6-4e7d-a5d8-ed05b6d3ca40",
+      "result_id": "ab75891e-f878-4876-88f4-8f0f21b97df8"
+    },
+    {
+      "claim_id": "706ea20f-2409-4ed0-bd42-fd8c71eb26b6",
+      "result_id": "ab75891e-f878-4876-88f4-8f0f21b97df8"
+    },
+    {
+      "claim_id": "a52dcdca-4720-4114-820b-46ec254e7bf2",
+      "result_id": "ab75891e-f878-4876-88f4-8f0f21b97df8"
+    },
+    {
+      "claim_id": "aa942e00-ff0f-40a6-b6d0-4b3767ac6569",
+      "result_id": "ab75891e-f878-4876-88f4-8f0f21b97df8"
+    },
+    {
+      "claim_id": "05571695-5647-4231-b779-b0c770917ffb",
+      "result_id": "ab75891e-f878-4876-88f4-8f0f21b97df8"
+    },
+    {
+      "claim_id": "35300216-7c69-4ab2-9eaf-de848cdd502a",
+      "result_id": "ab75891e-f878-4876-88f4-8f0f21b97df8"
+    },
+    {
+      "claim_id": "818d0f49-83fc-4b10-8cb1-3628b4e6ea53",
+      "result_id": "ab75891e-f878-4876-88f4-8f0f21b97df8"
+    },
+    {
+      "claim_id": "fdf9c4b9-3406-4575-9010-3aaefba27545",
+      "result_id": "ab75891e-f878-4876-88f4-8f0f21b97df8"
+    },
+    {
+      "claim_id": "da347287-7ed4-47ae-8c02-9d936a37efba",
+      "result_id": "ab75891e-f878-4876-88f4-8f0f21b97df8"
+    },
+    {
+      "claim_id": "9df88a45-8133-4e52-8a2c-ae7eb566e936",
+      "result_id": "ab75891e-f878-4876-88f4-8f0f21b97df8"
+    },
+    {
+      "claim_id": "a4d841b9-aeca-4752-b480-624acd85a605",
+      "result_id": "ab75891e-f878-4876-88f4-8f0f21b97df8"
+    },
+    {
+      "claim_id": "86442390-c736-4051-a07c-d5139dd2b518",
+      "result_id": "e611658b-b4dd-47d7-a0c4-91d4024b17ad"
+    },
+    {
+      "claim_id": "f68d47af-a640-4f22-bd83-a7b3c112af7c",
+      "result_id": "e611658b-b4dd-47d7-a0c4-91d4024b17ad"
+    },
+    {
+      "claim_id": "36fa076f-24d1-40eb-9d90-65282b6eb674",
+      "result_id": "e611658b-b4dd-47d7-a0c4-91d4024b17ad"
+    },
+    {
+      "claim_id": "a15373a0-f59a-4d3a-ae69-9b3bf5daab68",
+      "result_id": "e611658b-b4dd-47d7-a0c4-91d4024b17ad"
+    },
+    {
+      "claim_id": "cfa0fae6-0b26-47b8-9b95-abd6b0b9a42b",
+      "result_id": "6bfa66e6-05ec-4b8b-b8cd-d8e6b84a2f86"
+    },
+    {
+      "claim_id": "1e002046-a415-498a-8f23-476bd9007590",
+      "result_id": "6bfa66e6-05ec-4b8b-b8cd-d8e6b84a2f86"
+    },
+    {
+      "claim_id": "d89fb3fd-fb13-4a81-b301-ed08d924249d",
+      "result_id": "6bfa66e6-05ec-4b8b-b8cd-d8e6b84a2f86"
+    },
+    {
+      "claim_id": "91a045c8-886d-4450-9ee6-dc25358ce5f7",
+      "result_id": "6bfa66e6-05ec-4b8b-b8cd-d8e6b84a2f86"
+    },
+    {
+      "claim_id": "41accc3c-0a0d-42c6-8c0d-d08d1c7f7e65",
+      "result_id": "06e002dc-9d7a-4435-901d-7ec66d95785f"
+    },
+    {
+      "claim_id": "1ec49ab2-eede-410b-b976-36dc357f8a1c",
+      "result_id": "06e002dc-9d7a-4435-901d-7ec66d95785f"
+    },
+    {
+      "claim_id": "778e329d-0f79-4e0a-aa74-81d97ce33c36",
+      "result_id": "06e002dc-9d7a-4435-901d-7ec66d95785f"
+    },
+    {
+      "claim_id": "ad626a51-bc74-4a97-a119-94d65b7e163a",
+      "result_id": "06e002dc-9d7a-4435-901d-7ec66d95785f"
+    },
+    {
+      "claim_id": "fb3d2bf1-13f7-4628-b5db-d19cac1af709",
+      "result_id": "06e002dc-9d7a-4435-901d-7ec66d95785f"
+    },
+    {
+      "claim_id": "112d3d8c-8d79-4f65-bd71-af6f2e6c5884",
+      "result_id": "06e002dc-9d7a-4435-901d-7ec66d95785f"
+    },
+    {
+      "claim_id": "d076e4c0-090f-473d-ab00-ab3f5597ee55",
+      "result_id": "06e002dc-9d7a-4435-901d-7ec66d95785f"
+    },
+    {
+      "claim_id": "82311a23-0658-4517-bd86-22dc85cb69ed",
+      "result_id": "06e002dc-9d7a-4435-901d-7ec66d95785f"
+    },
+    {
+      "claim_id": "fbb50a9e-d09c-4aa3-b2ce-20468f4b5d9e",
+      "result_id": "06e002dc-9d7a-4435-901d-7ec66d95785f"
+    },
+    {
+      "claim_id": "68db4d09-0331-4a72-b4ea-e52224175cff",
+      "result_id": "1d6ab1d1-c172-4543-ab11-933bab91a590"
+    },
+    {
+      "claim_id": "722ef83c-1a04-4fb6-b176-6885438d258a",
+      "result_id": "1d6ab1d1-c172-4543-ab11-933bab91a590"
+    },
+    {
+      "claim_id": "a76566b5-0986-4ec4-98ac-ee93164e23e8",
+      "result_id": "1d6ab1d1-c172-4543-ab11-933bab91a590"
+    },
+    {
+      "claim_id": "902a930d-6b7f-4d06-9f1b-dc3db584abdb",
+      "result_id": "1d6ab1d1-c172-4543-ab11-933bab91a590"
+    },
+    {
+      "claim_id": "b7afd9b1-60b2-4e3b-87a9-542d20b39f8c",
+      "result_id": "1d6ab1d1-c172-4543-ab11-933bab91a590"
+    },
+    {
+      "claim_id": "4890665e-cee7-4113-85e8-c828b515c998",
+      "result_id": "060e02f7-73b1-4d24-b874-547d3e26032d"
+    },
+    {
+      "claim_id": "b7afd9b1-60b2-4e3b-87a9-542d20b39f8c",
+      "result_id": "060e02f7-73b1-4d24-b874-547d3e26032d"
+    },
+    {
+      "claim_id": "78647c5c-d057-492f-8782-93afeb43ba20",
+      "result_id": "060e02f7-73b1-4d24-b874-547d3e26032d"
+    },
+    {
+      "claim_id": "dedb08c4-9dc3-44d0-829c-5d7e6dc4767a",
+      "result_id": "060e02f7-73b1-4d24-b874-547d3e26032d"
+    },
+    {
+      "claim_id": "3aad3b9b-6f76-4ad6-8e62-1cb330de05c9",
+      "result_id": "060e02f7-73b1-4d24-b874-547d3e26032d"
+    },
+    {
+      "claim_id": "9bb50c3c-5bee-49bd-a0d8-ce07663e4be1",
+      "result_id": "1c711cd1-0df4-4b01-acc2-6817c04f36ed"
+    },
+    {
+      "claim_id": "aa11e5d0-9948-4f6d-a6cb-3ecd3c8a1a16",
+      "result_id": "1c711cd1-0df4-4b01-acc2-6817c04f36ed"
+    },
+    {
+      "claim_id": "1acb0163-7b58-4ee2-806a-9d49aa5aa167",
+      "result_id": "1c711cd1-0df4-4b01-acc2-6817c04f36ed"
+    },
+    {
+      "claim_id": "b6ae0705-4fd7-4f9a-b18f-1409c929db25",
+      "result_id": "1c711cd1-0df4-4b01-acc2-6817c04f36ed"
+    },
+    {
+      "claim_id": "ffc87058-c5ff-4e71-8352-2b68d2cdd494",
+      "result_id": "1c711cd1-0df4-4b01-acc2-6817c04f36ed"
+    },
+    {
+      "claim_id": "a0c61a1d-0988-45f0-8dc2-f7cf9ed48fba",
+      "result_id": "d1fd57b9-b534-453a-b45b-d35f27ebbeee"
+    },
+    {
+      "claim_id": "48181aa0-3433-4bba-883d-fc193612ee7c",
+      "result_id": "d1fd57b9-b534-453a-b45b-d35f27ebbeee"
+    },
+    {
+      "claim_id": "e5d9eb8c-3c4f-40fa-9f74-c56f1dee7e3d",
+      "result_id": "07b10d15-e6e7-4698-a826-08ba896b8854"
+    },
+    {
+      "claim_id": "83b4ef90-b326-4986-9ac5-34b03cc7a8cb",
+      "result_id": "07b10d15-e6e7-4698-a826-08ba896b8854"
+    },
+    {
+      "claim_id": "e10b2ef5-1694-48eb-8066-b138af016760",
+      "result_id": "07b10d15-e6e7-4698-a826-08ba896b8854"
+    },
+    {
+      "claim_id": "604f83a0-2aea-4d81-92ef-ce59546e013c",
+      "result_id": "9f626ed2-cf4d-4083-abf0-aa6ddaf7aebc"
+    },
+    {
+      "claim_id": "22e0f69e-fc31-4a3b-8684-40fe1c56ca05",
+      "result_id": "9f626ed2-cf4d-4083-abf0-aa6ddaf7aebc"
+    },
+    {
+      "claim_id": "256535c3-e31c-40e2-a982-10249fa0ee65",
+      "result_id": "9f626ed2-cf4d-4083-abf0-aa6ddaf7aebc"
+    },
+    {
+      "claim_id": "fe628370-209e-4c88-ac90-0439f7a1aefb",
+      "result_id": "a8c1b71d-06d5-44d6-af4f-8480288e5e04"
+    },
+    {
+      "claim_id": "e8e38f86-c0c1-4aa9-a44e-b0192248dd31",
+      "result_id": "a8c1b71d-06d5-44d6-af4f-8480288e5e04"
+    },
+    {
+      "claim_id": "c7a0e00c-e949-45a0-a963-433c0cdff627",
+      "result_id": "a8c1b71d-06d5-44d6-af4f-8480288e5e04"
+    },
+    {
+      "claim_id": "9c4db418-93a4-4360-b01a-1676685d1bee",
+      "result_id": "a8c1b71d-06d5-44d6-af4f-8480288e5e04"
+    },
+    {
+      "claim_id": "bfd3a20a-a157-4fd6-a37c-5c7cc5c040b5",
+      "result_id": "a8c1b71d-06d5-44d6-af4f-8480288e5e04"
+    },
+    {
+      "claim_id": "0f97570c-73e0-49bf-b4f9-b94b6b87fe1c",
+      "result_id": "67e51a9c-db07-4de2-9cdb-40ede7feb1ae"
+    },
+    {
+      "claim_id": "556cd15b-29c3-47f6-b6dc-cbb1af3a6049",
+      "result_id": "67e51a9c-db07-4de2-9cdb-40ede7feb1ae"
+    },
+    {
+      "claim_id": "40ed6ce6-873e-4988-a77f-83b88135c3b4",
+      "result_id": "67e51a9c-db07-4de2-9cdb-40ede7feb1ae"
+    },
+    {
+      "claim_id": "efc142d9-2e03-4c3c-8e3f-e7e5d41a9f6d",
+      "result_id": "67e51a9c-db07-4de2-9cdb-40ede7feb1ae"
+    },
+    {
+      "claim_id": "7b5fc561-bc30-4e15-b008-714d0cef7a03",
+      "result_id": "67e51a9c-db07-4de2-9cdb-40ede7feb1ae"
+    },
+    {
+      "claim_id": "e2d44693-9480-4c02-b7aa-5a08cdc94285",
+      "result_id": "67e51a9c-db07-4de2-9cdb-40ede7feb1ae"
+    },
+    {
+      "claim_id": "124620ab-b64a-4703-9222-24410d20e776",
+      "result_id": "663e7957-9bc4-46b8-be0e-0e7fe435476f"
+    },
+    {
+      "claim_id": "aef93422-458f-4b1f-ad2b-8e8f11788490",
+      "result_id": "663e7957-9bc4-46b8-be0e-0e7fe435476f"
+    },
+    {
+      "claim_id": "13b5628e-a7e0-412f-9c4f-0088a8c5e08c",
+      "result_id": "663e7957-9bc4-46b8-be0e-0e7fe435476f"
+    },
+    {
+      "claim_id": "92b6c005-22c5-4a3e-9e8f-1c73c6678922",
+      "result_id": "663e7957-9bc4-46b8-be0e-0e7fe435476f"
+    },
+    {
+      "claim_id": "f7c1258d-5010-49ba-b9b0-364b07fbad76",
+      "result_id": "a0fee92c-84d2-4349-85f2-df5cea3c4202"
+    },
+    {
+      "claim_id": "4f046741-f3be-43ea-9bc5-3e515a521145",
+      "result_id": "a0fee92c-84d2-4349-85f2-df5cea3c4202"
+    },
+    {
+      "claim_id": "669b3794-1079-4858-be01-5d770d9e3175",
+      "result_id": "a0fee92c-84d2-4349-85f2-df5cea3c4202"
+    },
+    {
+      "claim_id": "6e267683-e229-4692-947f-ee2065b191cf",
+      "result_id": "ed9394aa-fae2-4d16-8328-6dee758a3ec6"
+    },
+    {
+      "claim_id": "2292cfea-0dea-47a1-9af7-41e01d64c431",
+      "result_id": "ed9394aa-fae2-4d16-8328-6dee758a3ec6"
+    },
+    {
+      "claim_id": "221b5320-0492-4ab5-a726-84dc88d4ec02",
+      "result_id": "ed9394aa-fae2-4d16-8328-6dee758a3ec6"
+    },
+    {
+      "claim_id": "21335fa1-40e5-4cbf-a380-25bab0d430d4",
+      "result_id": "0183d4a4-0987-4415-a75f-f4294b0f0759"
+    },
+    {
+      "claim_id": "a713fac2-f009-46a6-b39d-5a67074e9e28",
+      "result_id": "0183d4a4-0987-4415-a75f-f4294b0f0759"
+    },
+    {
+      "claim_id": "5d43d3c9-73f6-488b-93a5-ea425bd2a07b",
+      "result_id": "0183d4a4-0987-4415-a75f-f4294b0f0759"
+    },
+    {
+      "claim_id": "5af4c0b3-df54-424b-a475-9331a8e4799b",
+      "result_id": "0183d4a4-0987-4415-a75f-f4294b0f0759"
+    },
+    {
+      "claim_id": "97a58007-4769-4cfa-9fb0-d60d93e55a86",
+      "result_id": "0183d4a4-0987-4415-a75f-f4294b0f0759"
+    },
+    {
+      "claim_id": "fddd8fcc-4f20-4478-a5ca-dfc76022947d",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "cc53a489-789d-4b66-83b1-811ec1711f87",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "f91e3263-5d3b-4f26-b2eb-7f6062ea3b66",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "84bbf299-751c-4521-8d12-2f895deac388",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "93126165-e638-4b1c-a720-0ef9c0253b3f",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "1796d8f1-1440-4889-b082-24c9e9d1d569",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "b0ebc523-c408-4284-b6e5-e15baa803d58",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "41060e5d-0cac-4f68-adc3-0f126d6715e6",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "7b28fcdc-7a4d-4552-8a64-ea2483c1c745",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "1ec3ae44-b1cb-40eb-ba53-415c7a68ba88",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "6ef496dd-a412-4973-a8ce-b33709535922",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "6e84a582-c4ec-4531-a291-1113e07a6b1b",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "bfb1684f-182f-4ddd-bb93-ac41b6d3a086",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "7dbb0edd-b942-4091-b33a-3bd28ded4514",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "f3788a26-df6f-416c-a8fe-400c1bdf45dc",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "24de0044-b390-4a7c-a097-7b15960c40de",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "b464d88c-cf66-49ae-8385-e885c48392d7",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "323319b3-098a-47b3-b51c-8cbdcba7286d",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "9b1c517f-8165-4445-b1fb-bcf66804c282",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "775dd91f-8ecf-4b77-be8d-2b48684b4b20",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "6edc5fbf-4183-4ee6-a0a3-42378acce195",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "a2bddf3b-c9b5-409a-8639-a5c3ee5dc0c8",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "b82f9e5f-acaf-4b8d-8e0b-2739bfdc9d51",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "365b1ad3-598f-4180-89a4-00edece225a3",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "1c9d7937-6dd4-49c5-8483-84a80022552e",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "a92cffcf-264f-4903-84d3-c9cf7e51a60b",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "aa04edb8-335b-48d4-a30f-685553e1b129",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "222ab0c4-d0e2-4fc1-82d3-a1318f1b0a36",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "fe690d4e-8435-4f9f-9805-60142d0ba5a9",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "519be713-763a-4cd4-abbb-fbcf9bf1eded",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "7a80f6ae-4371-4975-8818-c4c7ae7f3d7f",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "353a6f77-b4fc-41f3-8afd-99fba531a7a9",
+      "result_id": "394ba12a-aa34-4b44-abb7-e9e75c1e143c"
+    },
+    {
+      "claim_id": "0a42a411-d2e8-45c2-aa38-deeeb0d98a6a",
+      "result_id": "b668f302-39eb-44a4-b2f6-889b3d03c9f2"
+    },
+    {
+      "claim_id": "915c299b-9fea-4bb0-9d14-affa25f64c41",
+      "result_id": "b668f302-39eb-44a4-b2f6-889b3d03c9f2"
+    }
+  ],
+  "comparisons": []
+}

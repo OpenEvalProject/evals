@@ -1,0 +1,220 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C71",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C105",
+      "C115",
+      "C118"
+    ],
+    "result": "Dopaminergic medication during learning (day 1) prevented memory decay over 24 hours in Parkinson's disease patients. Specifically, patients ON medication during learning showed preserved or slightly improved memory scores between 30 minutes and 24 hours, while those OFF medication showed decreased memory scores. The ON-OFF vs OFF-OFF comparison showed a significant difference (p=0.0106, surviving Bonferroni correction), suggesting dopamine affects consolidation within a short window (~1.5 hours) after learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 provide converging statistical evidence (ANOVA, t-tests with multiple comparison correction) showing medication state during learning affects 24-hour memory retention. The experimental design (C76-C78) establishes a narrow time window for dopaminergic effects. The result is internally consistent across multiple statistical tests and appropriately corrected for multiple comparisons (C31). However, the main ANOVA showed only marginal significance (p=0.114, C29), with the effect emerging in planned comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C55",
+      "C56",
+      "C57",
+      "C72",
+      "C73",
+      "C104",
+      "C116",
+      "C117",
+      "C119"
+    ],
+    "result": "Dopaminergic medication state during learning or testing did not affect expression of positive reinforcement (choose-A) or negative reinforcement (avoid-B) in any of the three experiments. PD patients did not differ from healthy controls on these measures. This pattern held across immediate testing (Experiments 2 and 3), 24-hour delayed testing (Experiment 1), and both filtered and unfiltered data analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple experiments with consistent null findings across different testing delays and task variants provide strong evidence against medication effects on reinforcement expression. Statistical tests consistently show p>0.1 for medication effects (C37, C47, C55) with small effect sizes. The replication failure is acknowledged and discussed extensively. However, the near-chance performance in Experiment 3 (C58, C86-C87) raises questions about task sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C27",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C52",
+      "C58",
+      "C59",
+      "C69",
+      "C74",
+      "C106",
+      "C107"
+    ],
+    "result": "The modified PST (2 pairs, smiling/frowning face feedback) produced significantly better learning and performance than the original PST (3 pairs, written feedback). Experiments 1 and 2 achieved ~78% final learning accuracy, while Experiment 3 achieved only ~61% (p<0.000001). Novel pairs performance in Experiment 3 was near chance (49-57%), while Experiments 1 and 2 showed above-chance performance with higher avoid-B than choose-A scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 provide strong statistical evidence (F=18.416, p<0.000001) for task version effects on learning. The comparison is well-controlled as all experiments used similar populations and procedures. The dramatic difference in performance (C58, C86-C87) between task versions is clearly documented. This finding has important implications for interpreting the replication failure, as participants may not have learned the original task sufficiently to show medication effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C108"
+    ],
+    "result": "Experiment 3 failed to replicate the findings of Frank et al. (2004) despite closely matched samples in age, gender, and disease severity. The current study's participants showed near-chance performance (53% choose-A, 51% avoid-B) compared to Frank et al.'s 78% and 82%, respectively. The only demographic difference was fewer years of education in the current sample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 provide statistical comparisons showing demographic matching (p>0.1 for age, gender, disease severity). The performance difference (C86-C87) is substantial and well-documented. However, the interpretation that education differences (C90) explain the failure is weakened by the fact that Experiment 1 participants also had lower education but could learn the modified task. The authors appropriately conclude the effect may be weak (C108).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Experiment 1 employed a within-subjects design where 18 PD patients were tested in four medication conditions (ON-ON, ON-OFF, OFF-ON, OFF-OFF) across two days, with learning on day 1 and testing at immediate, 30-minute, and 24-hour delays. The modified PST used 2 pairs (80-20%, 65-35% reward probabilities) with smiling/frowning face feedback instead of the original 3 pairs with written feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design is clearly described with appropriate detail about participant characteristics (C109-C110), medication withdrawal procedures (C111-C112), and task modifications (C113-C114). The within-subjects design (C24) is appropriate for controlling individual differences. Safety considerations for medication withdrawal are documented (C112). The design is adequate to test the stated hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C50",
+      "C66",
+      "C70"
+    ],
+    "result": "Across experiments, avoid-B performance was generally higher than choose-A performance in the modified PST (Experiments 1 and 2), while the original PST (Experiment 3) showed approximately equal performance on both measures. Experiment 3 had significantly lower avoid-B scores than Experiments 1 and 2 (p=0.000005 and p=0.000013, respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66 and C70 provide clear statistical evidence for differences in avoid-B performance across experiments. The pattern is consistent and well-documented. This finding suggests the task modifications affected how participants learned from negative feedback, which is relevant for interpreting the overall results. The statistical comparisons are appropriately corrected for multiple comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C45",
+      "C53"
+    ],
+    "result": "Novel pairs test accuracy positively correlated with final learning block accuracy across all three experiments (r=0.44-0.67, all p<0.001), indicating that participants who learned the task better during training performed better on the transfer test.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlations are consistently positive and significant across all experiments (C33, C45, C53), providing convergent evidence. This is an expected finding that validates the task structure - better learning should predict better test performance. The effect sizes are moderate to strong, and the statistical significance is clear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The literature supports that dopamine can affect memory consolidation through multiple mechanisms. Dopamine given before or after learning can improve consolidation, with synaptic tagging and capture models suggesting effects within hours of learning. The PST is assumed to rely on basal ganglia functioning, and both sleep and dopamine have been shown to affect consolidation of procedural learning tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 cite multiple studies supporting dopaminergic effects on consolidation. The theoretical framework (synaptic tagging and capture, C80) is well-established. However, these are all citations to prior work rather than findings from the current study. The claims appropriately acknowledge ongoing debates about time course (C79) and note that some mechanisms haven't been investigated in the RL domain (C84).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The introduction reviews established theories and prior findings on dopamine's role in reinforcement learning, including the reward prediction error hypothesis, the Go-NoGo model of basal ganglia function, and previous studies showing dopaminergic modulation of positive and negative reinforcement in Parkinson's disease patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C22) accurately summarize prior work with appropriate citations. The theoretical framework is well-established in the field. However, these are background claims rather than novel findings from the current study. The authors appropriately cite original sources (Schultz et al., Frank et al., Shiner et al., etc.) and distinguish between established knowledge and specific prior findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The discussion contextualizes the null findings within the broader literature, noting that while many studies have found dopaminergic effects on reinforcement learning, there are also inconsistencies in the literature. Factors such as laterality of pathology, test-retest reliability, stimulus discriminability, and procedural variations may contribute to inconsistent findings across studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C99 appropriately cite multiple studies showing both consistent patterns and exceptions in the literature. The discussion of potential moderating factors (laterality C93-C94, reliability C95-C96, discriminability C97-C98) is well-supported by citations. The theoretical discussion of D1/D2 mechanisms (C100-C102) provides a plausible explanation for null findings. However, these are interpretive claims about the literature rather than direct findings from the current study.",
+    "result_type": "MINOR"
+  }
+]

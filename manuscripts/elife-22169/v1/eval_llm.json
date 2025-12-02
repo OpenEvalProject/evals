@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Participants successfully learned the motivational Go/NoGo task and exhibited a motivational bias where cue valence influenced Go responding. Subjects made more Go responses to Win cues than Avoid cues, and this effect was significant for both Go and NoGo cues, as well as for both correct and incorrect Go responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 provide converging behavioral evidence with appropriate statistical tests (all p<0.001) demonstrating both task learning and motivational bias. The effects are shown across multiple response types (correct/incorrect, Go/NoGo cues) with consistent patterns, supported by figures showing trial-by-trial learning curves.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C3",
+      "C39"
+    ],
+    "result": "Computational modeling revealed that motivational biases reflect both Pavlovian and instrumental mechanisms. Model M4, which included both a Pavlovian response bias parameter (\u03c0) and an instrumental learning bias parameter (\u03ba), provided the best fit to the data. Both parameters showed positive estimates across the group (\u03c0: 96.4% posterior >0; \u03ba: 100% posterior >0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 demonstrate rigorous model comparison using WAIC with clear evidence favoring the composite model M4. The Bayesian parameter estimation provides strong quantitative support (>95% posterior probability) for both mechanisms. Model validation through one-step-ahead predictions and simulations (C38) confirms the model captures key behavioral features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Methylphenidate (MPH) enhanced the effect of cue valence on Go responding proportionally to working memory span, with high-span subjects showing increased motivational bias under MPH and low-span subjects showing decreased bias. This effect was driven by incorrect Go responses rather than correct responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 provide consistent statistical evidence for the span-dependent drug effect (Valence\u00d7Drug\u00d7Listening Span: p=0.016), with appropriate breakdown analyses showing the effect is specific to incorrect Go responses (p<0.001) but not correct responses (p=0.152). The drug-specific nature is confirmed by showing the span-dependent bias emerged under MPH (p=0.032) but not placebo (p=0.335).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40"
+    ],
+    "result": "Computational modeling of MPH effects revealed that the drug independently modulated both Pavlovian response bias (\u03c0MPH) and induced a diffuse learning bias (\u03baMPH-diffuse), but not selective learning bias. The composite model M6 containing both parameters best explained the data, with both parameters covarying significantly with working memory span.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C38 provide comprehensive computational evidence through hierarchical model comparison (WAIC), parameter estimation showing significant correlations with listening span (\u03c0MPH: R=0.24, p=0.020; \u03baMPH-diffuse: R=0.22, p=0.032), and model validation through both simulation and one-step-ahead prediction methods that successfully replicate the span-dependent MPH effect. The dissociation between diffuse and selective learning mechanisms is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C41"
+    ],
+    "result": "Trait impulsivity did not significantly predict the effect of MPH on motivational bias, whereas working memory span did. The direction of MPH effects covaried with working memory span but not trait impulsivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C41 provide clear negative results for impulsivity (all p>0.05) contrasted with positive results for working memory span. This dissociation is important for understanding individual differences in drug response and is appropriately reported with statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "MPH increased subjective positive affect and alertness while decreasing calmness across subjects, but these mood changes did not covary with working memory span and therefore cannot explain the MPH effects on Pavlovian activation and biased instrumental learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 appropriately address a potential confound by showing that while MPH had general mood effects, these were orthogonal to the effects of interest (no covariation with working memory span). This strengthens the interpretation that the computational effects are not simply due to mood changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The study collected 106 participants, with 7 excluded due to dropout, protocol violations, or insufficient task engagement, resulting in a final sample of 99 subjects (48 receiving MPH first).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 provide transparent reporting of sample size, attrition, and exclusions with clear justifications. The final sample size of 99 is appropriate for detecting individual differences in drug effects, and exclusion criteria are reasonable and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The motivational Go/NoGo task used probabilistic feedback (80% validity), with each of 8 cues presented 40 times over approximately 30 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 describe basic task parameters that are clearly specified and appropriate for the experimental design. The 80% feedback validity allows for learning while maintaining uncertainty, and 40 trials per cue provides sufficient data for computational modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C54"
+    ],
+    "result": "Working memory span was assessed using the Listening Span Test, which has been validated in PET studies showing positive correlations with striatal dopamine synthesis capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 and C54 provide appropriate justification for using working memory span as a proxy for dopamine synthesis capacity, citing relevant PET validation studies (Cools et al., 2008; Landau et al., 2009). This strengthens the interpretation of individual differences in drug response.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C55"
+    ],
+    "result": "Trait impulsivity was assessed using the Barratt Impulsiveness Scale (BIS-11), which has been related to D2 autoreceptor availability in prior research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 and C55 appropriately describe the impulsivity measure and its theoretical relationship to dopamine function, supported by relevant citations. While this measure did not predict drug effects in the current study, its inclusion was theoretically motivated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "MPH blocks dopamine and noradrenaline transporters, has maximal plasma concentration at 2 hours with a half-life of 2-3 hours, and the task was performed on average 2 hours after capsule intake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 provide appropriate pharmacological background and demonstrate that task timing was optimized for peak drug effects. The pharmacokinetic information is supported by citation (Kimko et al., 1999) and the timing is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The computational modeling approach estimated action weights for each response option using hierarchical Bayesian methods, with model comparison performed using WAIC (Watanabe-Akaike Information Criteria).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 describe standard and appropriate computational methods. WAIC is a well-established model comparison metric, and the interpretation guidelines (differences of 2-6, 6-10, >10 for positive, strong, very strong evidence) are properly cited (Kass and Raftery, 1995).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The theoretical framework proposes that dopamine bursts following reward prediction errors enhance LTP in corticostriatal synapses associated with performed responses, while dopamine dips following negative prediction errors promote LTD in the Go pathway and LTP in the NoGo pathway. Prolonged dopamine release after DAT blockade might reduce selectivity and diffuse credit assignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 present a well-supported theoretical framework based on extensive prior literature (multiple citations to optogenetic, electrophysiological, and behavioral studies). The mechanistic predictions are logical extensions of established dopamine function in striatal learning, though the specific predictions about MPH effects (C43) remain theoretical until tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "MPH altered the extent to which subjects were influenced by cue and outcome valence by extending dopamine presence in the synaptic cleft, which would be less selective in potentiating actions selected immediately prior to rewards.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 integrate the empirical findings with mechanistic interpretation. C50 is directly supported by the data, C51 is supported by citation (Dreyer and Hounsgaard, 2013), and C52 is a reasonable theoretical prediction based on known mechanisms and cited work (Yagishita et al., 2014), though it remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53",
+      "C56"
+    ],
+    "result": "Individuals vary strongly in the extent to which MPH increases extracellular dopamine, and baseline dopamine cell activity is a better predictor of MPH effects than D2 autoreceptor availability or DAT occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C56 are supported by appropriate citations to prior PET studies (Volkow et al., 2002). This provides important context for why working memory span (related to synthesis capacity) but not impulsivity (related to D2 receptors) predicted drug effects in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The introduction establishes that catecholamines modulate motivated action, with prior work proposing Pavlovian mechanisms. Dopamine has been linked to behavioral activation in reward contexts, with enhanced dopamine increasing appetitive PIT and reduced striatal dopamine decreasing it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 provide appropriate background from prior literature, all supported by relevant citations. These claims establish the theoretical foundation and prior empirical work that motivates the current study's hypotheses about dissociating Pavlovian and instrumental mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "Cue- and outcome-based biases were altered independently by methylphenidate, with effects varying across individuals based on working memory span as a proxy for baseline dopamine synthesis capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 accurately summarize the main findings from the abstract. These are high-level summary claims that are supported by the detailed results presented in claims C22-C41. The independent alteration of cue- and outcome-based biases is demonstrated through the computational modeling showing distinct parameters for Pavlovian and learning biases.",
+    "result_type": "MAJOR"
+  }
+]

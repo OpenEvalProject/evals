@@ -1,0 +1,352 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C8",
+      "C9"
+    ],
+    "result": "TCR\u03b2 CDR3 sequences from mouse splenic CD4+ T cells form similarity networks when the top 1000 most frequent sequences are connected by Levenshtein distance of 1, with significantly more clustering (647\u00b1104 clustered nodes, 1282\u00b1383 edges) than random sequence networks (225\u00b164 clustered nodes, 152\u00b152 edges).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 provide comprehensive characterization of the network construction methodology (C4, C5) and quantitative results from both experimental (C8) and control (C9) analyses across 12 mice. The statistical differences between frequent and random networks are clearly demonstrated with appropriate replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "TCR network structure differs from BCR networks: TCR abundance does not correlate with network connectivity (R\u00b2=0.11\u00b10.07), and clusters are characterized by homogeneous J-segment usage but heterogeneous V-segment usage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 establish key structural features distinguishing TCR from BCR networks. The lack of correlation between abundance and connectivity (C10) is quantified, and the J/V segment usage patterns (C11-C13) are consistently observed across samples with mechanistic explanation provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "TCR similarity networks are conserved across mouse strains (CD8 T cells, C3H.HeSnJ strain) and in humans, though human networks show lower connectivity (207\u00b179 clustered nodes in humans vs 647\u00b1104 in mice) than inbred mouse networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 demonstrate cross-species and cross-strain conservation of network architecture with appropriate quantification. The comparison between human and mouse connectivity is supported by data from 11 human subjects and includes proper randomized controls (C19).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C6",
+      "C7"
+    ],
+    "result": "TCR similarity networks are driven by conserved evolutionary forces rather than somatic hypermutation, which distinguishes them from BCR networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 establish the biological distinction (T cells lack SHM), and C20 draws the appropriate inference from the cross-species conservation data. The conclusion is logically supported by the contrast with BCR network formation mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Public CDR3 sequences occupy central positions in TCR networks with high connectivity, while private sequences are peripheral or unconnected, as demonstrated by significant correlation between sharing level and network connectivity (R=0.69\u00b10.03, p<2.2e-16) in both mice and humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 establish the relationship between sequence sharing and network position through multiple measures (degree, betweenness centrality) with strong statistical support. The pattern is validated in both species (C24) and confirmed with independent centrality metrics (C23).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "A substantial number of CDR3 sequences (27,337 out of 5.6 million total unique sequences) are shared between mice and humans, with higher sharing levels in one species predicting increased probability of presence in the other species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 quantify cross-species sequence sharing with clear denominators and demonstrate the correlation between sharing levels across species. The finding that >25% of public sequences are found in both species (C31) is particularly striking and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "86 cross-species public CDR3 sequences are shared between mice (\u226525/28) and humans (11/11), characterized by restricted J-segment usage (J\u03b22.7/2.3 in humans, J\u03b22.5/2.7 in mice), and these CS-public sequences show significantly higher network connectivity than species-specific public sequences, with correlated connectivity patterns between species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 comprehensively characterize CS-public sequences with clear definitions, quantitative connectivity comparisons (C35), and cross-species correlation analysis (C36-C37). The restricted J-segment usage (C33) and frequency observations (C38) are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Simulations of random TCR generation produce more CS-public sequences (221\u00b19) than observed experimentally (86), with the same restricted J-segment usage, suggesting that J-segment homology contributes to but is insufficient for CS-public sequence formation, and that additional selection mechanisms influence their existence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 present simulation results that appropriately separate genetic recombination biases from selection effects. The partial overlap between simulated and observed sequences (C42) and the mechanistic interpretation (C41, C43) are logically sound, though C43 acknowledges uncertainty about specific mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Networks formed by the 1000 most public sequences show dramatically higher connectivity (965 clustered nodes, 3387 edges in mice; 969 nodes, 4398 edges in humans) compared to networks of private sequences (38\u00b115 nodes, 20\u00b17 edges).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 provide clear quantitative comparisons demonstrating the relationship between sequence sharing and network connectivity. The dramatic differences between public and private sequence networks are well-documented in both species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Previously annotated TCR sequences (124 from mice, 30 from humans) show enrichment for self/self-like reactivities (autoimmunity, cancer, allograft) in network clusters (81% of clustered vs 69% overall, p=0.0035), with sequences of similar annotation tending to cluster together, while pathogen-associated sequences are less clustered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C58 acknowledge limitations of CDR3\u03b2-only analysis (C47-C49) while demonstrating statistically significant enrichment of self-reactive sequences in clusters (C51). Multiple specific examples (C53-C56) support the general pattern, though the analysis is limited by reliance on literature annotations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "DN thymocytes (pre-selection) show significantly reduced network connectivity compared to splenic CD4+ T cells (post-selection), with lower convergent recombination (fewer nucleotide sequences encoding the same amino acid sequence), suggesting that MHC-dependent positive selection promotes network cluster formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 use an appropriate developmental comparison to test the role of selection. The convergent recombination analysis (C61) provides mechanistic insight, and the inference about positive selection (C62) is logically supported by the data, though the sample size (n=3) is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Quad-KO mice lacking MHC-I, MHC-II, CD4, and CD8 show significantly reduced TCR network connectivity compared to wild-type controls, confirming that MHC-dependent thymic selection promotes dense network formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 use a genetic model to test the role of MHC-dependent selection, complementing the DN thymocyte analysis. The conclusion (C64) is supported by convergent evidence from two independent experimental approaches (DN cells and Quad-KO mice).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Quad-KO mice show reduced frequency of CS-public sequences compared to wild-type mice (p=4.318e-09 vs 28 WT mice; p=0.01781 vs Quad-WT controls), indicating that while recombination biases and J-segment homology influence CS-public sequence generation, additional MHC-dependent selection forces influence their abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 extend the Quad-KO analysis to CS-public sequences specifically, with appropriate statistical comparisons. The conclusion (C70-C71) appropriately integrates simulation results with experimental data to distinguish genetic from selective mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Immunization with p277 or OVA peptides increases repertoire inequality through expansion of private clones, reduces network connectivity (clustered nodes and edges decrease), and these changes reverse spontaneously 2 months post-immunization in OVA-immunized mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 demonstrate dynamic changes in repertoire structure following immune perturbation with appropriate controls (two different antigens) and time course analysis. The reversibility observation (C76) is particularly important for establishing that network disruption is not permanent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Aging is associated with increased repertoire inequality, decreased network connectivity, and increased abundance of private sequences in both mice and humans, with strong anti-correlation between Gini coefficient and number of connected nodes (Spearman \u03c1=-0.661 in mice, -0.865 in humans).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 demonstrate parallel aging effects in both species with strong statistical support. The correlation analysis (C80-C81) links repertoire evenness to network structure quantitatively, though the cross-sectional design limits causal inference about aging mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "CTLA4 checkpoint blockade reduces TCR network connectivity (p<0.05) and decreases public sequence frequency while increasing private sequence frequency (p=0.01947) in paired pre/post-treatment samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 analyze published data with appropriate paired statistical tests. The findings parallel immunization effects, though the analysis is limited by reliance on secondary data and the specific checkpoint blockade mechanism is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C92"
+    ],
+    "result": "Juvenile Idiopathic Arthritis patients show increased levels of public TCRs compared to healthy donors (p=0.0006), contrasting with the reduced public TCR levels seen in immunization and aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85, C92 demonstrate a disease-specific pattern distinct from other immune perturbations. The statistical significance is strong, though the analysis is limited to a single autoimmune condition and the mechanistic basis for increased public TCRs in JIA is not established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C93"
+    ],
+    "result": "In young healthy individuals, TCR repertoires are focused around public and CS-public sequences with high network connectivity and evenness, but this architecture is modified by immunization and aging through expansion of private clones, with network organization and evenness restored upon immune response resolution, and these features are linked and modulated by immune state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C93 synthesize the major findings into a coherent model of repertoire organization and dynamics. The conclusions are well-supported by the collective evidence, though C91 appropriately acknowledges speculation about mechanisms of age-related changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "MHC-dependent antigen selection contributes to dense network formation through preferential selection and survival of T cells with specific CDR3 sequences recognizing self-antigens, explaining increased convergent recombination and connectivity of similar sequences, with these selection processes operating on top of recombination biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C100 present a mechanistic model supported by DN thymocyte and Quad-KO data (C94), though the specific selection mechanisms (C95-C98) involve some speculation. The model appropriately integrates genetic and selective forces (C99-C100) and is consistent with cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Private TCR sequences generate poorly connected networks, and TCR networks differ structurally from BCR networks in that TCR abundance and connectivity are uncorrelated, unlike BCR networks where SHM creates correlation between these features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 establish a key distinction between TCR and BCR network architecture. The contrast is supported by the correlation analyses (C10) and is consistent with the known biological differences in how these repertoires are generated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The cross-species conservation of TCR networks suggests evolutionary advantage, and the hypothesis is proposed that CS-public sequences recognize conserved self-epitopes with implications for self-maintenance, autoimmunity, and cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C106 present reasonable hypotheses based on the cross-species conservation data, but these remain speculative. C104 cites supporting literature about CDR3\u03b2 motifs, but direct experimental evidence linking CS-public sequences to specific conserved antigens is lacking. The hypotheses require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "T lymphocytes focus their attention to specific regions in sequence space, as revealed by analysis of the CDR3 region which is the most diverse TCR segment and interacts with antigenic peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 summarize the main conceptual finding. C108 establishes the biological rationale for focusing on CDR3, and C107 is well-supported by the network clustering data throughout the manuscript.",
+    "result_type": "MAJOR"
+  }
+]

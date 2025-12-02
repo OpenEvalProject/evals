@@ -1,0 +1,1552 @@
+{
+  "submission": {
+    "id": "e1c055da-6753-477c-863e-f62b59338443",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:00:10.300715Z",
+    "updated_at": "2025-12-02T01:00:10.300715Z"
+  },
+  "content": [
+    {
+      "id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "submission_id": "e1c055da-6753-477c-863e-f62b59338443",
+      "content_type": "manuscript",
+      "content_text": "# Chiral cell sliding drives left-right asymmetric organ twisting\n\n## Authors\n\n- Mikiko Inaki<sup>1</sup>\n- Ryo Hatori<sup>1</sup>\n- Naotaka Nakazawa<sup>1</sup>\n- Takashi Okumura<sup>1</sup>\n- Tomoki Ishibashi<sup>1</sup>\n- Junichi Kikuta<sup>2</sup>\n- Masaru Ishii<sup>2</sup>\n- Kenji Matsuno<sup>1</sup> ([ORCID: 0000-0001-6140-8833](https://orcid.org/0000-0001-6140-8833)) \u2020\n- Hisao Honda<sup>3</sup> \u2020\n\n### Affiliations\n\n1. Department of Biological Sciences Graduate School of Science, Osaka University Toyonaka Japan\n2. Department of Immunology and Cell Biology Graduate School of Medicine, Osaka University Suita Japan\n3. Department of Physiology and Cell Biology Graduate School of Medicine, Kobe University Kobe Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nPolarized epithelial morphogenesis is an essential process in animal development. While this process is mostly attributed to directional cell intercalation, it can also be induced by other mechanisms. Using live-imaging analysis and a three-dimensional vertex model, we identified \u2018cell sliding,\u2019 a novel mechanism driving epithelial morphogenesis, in which cells directionally change their position relative to their subjacent (posterior) neighbors by sliding in one direction. In Drosophila embryonic hindgut, an initial left-right (LR) asymmetry of the cell shape (cell chirality in three dimensions), which occurs intrinsically before tissue deformation, is converted through LR asymmetric cell sliding into a directional axial twisting of the epithelial tube. In a Drosophila inversion mutant showing inverted cell chirality and hindgut rotation, cell sliding occurs in the opposite direction to that in wild-type. Unlike directional cell intercalation, cell sliding does not require junctional remodeling. Cell sliding may also be involved in other cases of LR-polarized epithelial morphogenesis.\n\n## Introduction\n\nLeft-right (LR) asymmetry is a basic feature of metazoan development. Although the outer structures of bilaterians appear bilaterally symmetric, their internal organs are often LR asymmetric in morphology and positioning. The mechanisms for LR asymmetry formation have been studied extensively in vertebrates (Hirokawa et al., 2012; Nakamura and Hamada, 2012; Vandenberg and Levin, 2013; Yoshiba and Hamada, 2014). In mice, a leftward flow of extraembryonic fluid, called nodal flow, is generated in the node by the clockwise rotation of cilia. The nodal flow breaks the LR symmetry and eventually induces left-side-specific gene expressions, including Nodal, Lefty, and Pitx-2, the so-called nodal cassette genes (Nonaka et al., 2002; Nonaka et al., 1998; Okada and Hirokawa, 1999). In addition to nodal flow, various other mechanisms are used in different vertebrates, but they also ultimately lead to the left-side-specific expressions of nodal cassette genes (Levin, 2005), which influence the LR asymmetric morphology and positioning of internal organs (Huang et al., 2014; Yoshiba and Hamada, 2014). However, it was recently reported that the LR asymmetric looping of the zebrafish heart develops by a tissue-intrinsic mechanism, independent of nodal (No\u00ebl et al., 2013). Therefore, parallel mechanisms are involved in the LR asymmetric development of vertebrates.\n\nLR asymmetry has been reported at the cellular level, as well as in organs (Chen et al., 2012; Wan et al., 2011; Xu et al., 2007). Many mammalian cell lines adopt an LR asymmetric shape when cultured on a micropattern (Chen et al., 2012; Raymond et al., 2016; Wan et al., 2011; Worley et al., 2015). The LR asymmetric cell shape is termed \u2018cell chirality\u2019 because the cell shape cannot be superimposed on its mirror image. Cell chirality is observed in both the shape and behavior of cells. Cultured zebrafish melanophores show chirality in cellular locomotion and in cytoplasm swirling (Yamanaka and Kondo, 2015). Fibroblasts from human foreskin seeded on a micropattern exhibit a chiral swirling of actin fibers (Tee et al., 2015), and cultured neutrophils show LR-biased movement in the absence of positional cues (Xu et al., 2007). However, the physiological roles of cell chirality in vertebrates remain unknown.\n\nAn in vivo function of cell chirality was first discovered in the Drosophila embryonic hindgut (Taniguchi et al., 2011), which first forms as a bilaterally symmetric structure and then rotates 90\u00b0 counterclockwise as viewed from the posterior, showing dextral looping (Hozumi et al., 2006). The posterior end of the hindgut does not rotate, and thus the hindgut twists as a whole. The hindgut epithelial cells are probably responsible for this rotation, since the LR defect in hindgut rotation in mutants is fully rescued when the responsible genes are expressed specifically in hindgut epithelial cells (Hozumi et al., 2006; Taniguchi et al., 2011). Before the directional rotation begins, the anterior-posterior axis of the hindgut can be defined, because its simple tubular structure extends in the anterior-posterior direction, and the hindgut epithelial cells exhibit an LR asymmetric shape of their apical surface with respect to the anterior-posterior axis (Taniguchi et al., 2011). Because hindgut epithelial cells have apical-basal polarity, like other epithelial cells, their LR asymmetric shape can be regarded as chiral. The LR asymmetric shape eventually disappears and the cells become symmetric after the rotation (Taniguchi et al., 2011). A previous computer simulation showed that the introduction and subsequent dissolution of cell chirality are sufficient to induce the rotation of a model epithelial tube (Taniguchi et al., 2011). During the rotation, neither cell proliferation nor cell death occurs in the hindgut (Lengyel and Iwaki, 2002; Wells et al., 2013), indicating that cell-shape changes and/or cell rearrangements are involved in this process. Together, these observations indicate that cell chirality drives the counterclockwise rotation of the hindgut. However, the cellular dynamic mechanism by which cellular chirality is converted into axial rotation of the hindgut remains unknown.\n\nIn addition to cell chirality, various other cellular dynamic mechanisms contribute to the morphological changes of epithelial tissues, such as cell intercalation and cell deformation. Cell intercalation involves anisotropic cell-boundary remodeling (Bertet et al., 2004). For example, if cells intercalate in a medial direction, the tissue becomes narrower and elongates along the axis perpendicular to the medial direction (Honda et al., 2008; Tada and Heisenberg, 2012; Uriu et al., 2014). Polarized cell intercalation is important in convergent extension, which induces morphological changes in early embryogenesis, such as the germband extension in Drosophila and the dorsal mesoderm extension in zebrafish and Xenopus (Bertet et al., 2004; Shih and Keller, 1992). Convergent extension is also required for organogenesis. For example, tubular structures, such as the Drosophila trachea and hindgut and the vertebrate kidney and cochlea, elongate by convergent extension (Chen et al., 1998; Iwaki and Lengyel, 2002; Karner et al., 2009; Wang et al., 2005). Cell intercalation also contributes to LR asymmetric morphogenesis. For example, LR biased junctional remodeling induces the directional rotation of the Drosophila male genitalia (Sato et al., 2015a). Cell deformation is another mechanism that plays important roles in epithelial morphogenesis. During gastrulation and neurulation, the apical constriction of epithelial cells is important for invagination and tubular structure formation (Inoue et al., 2016; Munjal and Lecuit, 2014). Thus, one of these cellular dynamic mechanisms or an as-yet undescribed mechanism might be involved in the cell-chirality-driven hindgut rotation.\n\nHere, to investigate the cell dynamics underlying the counterclockwise rotation of the Drosophila hindgut, we first performed live imaging and revealed a novel cellular behavior we call \u2018chiral cell sliding,\u2019 in which cells directionally change their position relative to their subjacent (posterior) neighbors by sliding in one direction. We found that this cell sliding did not require junctional remodeling. We then performed an improved 3D computer simulation analysis of the cell-chirality-driven hindgut rotation, which confirmed that chiral cell sliding is a dynamic cellular process induced by the dissolution of cell chirality. Our findings collectively showed that chiral cell sliding is a novel mechanism that induces anisotropic changes in tissue morphology.\n\n## Results\n\n### Drosophila hindgut epithelial cells show chiral sliding\n\nOur previous genetic analyses suggested that the hindgut itself generates the mechanical force that drives its rotation (Taniguchi et al., 2011). Here, we found that an explanted wild-type hindgut rotated counterclockwise in vitro, confirming that the hindgut itself generates an active force to accomplish the rotation (Figure 1\u2014figure supplement 1, Figure 1\u2014video 1). To investigate what kind of cellular behaviors contribute to the hindgut rotation in vivo, we observed the movement of hindgut epithelial cells by live imaging. We used a Gal4-UAS system (Brand and Perrimon, 1993). The expression of UAS-redstinger (a nuclear marker) and UAS-myrGFP (a membrane marker) was driven by a hindgut-specific driver, byn-gal4 (Barolo et al., 2004; Iwaki and Lengyel, 2002; Pfeiffer et al., 2012). We aligned embryos in the anterior-posterior direction, observed them from the dorsal side, and took movies for 2 hr from the onset of hindgut rotation. The hindgut started to rotate at late embryonic stage 12, when the germ band was almost completely retracted (Figure 1A1). Before rotation, the hindgut is LR symmetric and has a hook-like shape pointing to the ventral side of the embryo (Lengyel and Iwaki, 2002). The hindgut twisted 90\u00b0 counterclockwise, and this rotation was fully complete by 2 hr (Figures 1A1\u20133, Figure 1\u2014video 2). After completion of the rotation, the hindgut had a hook shape that pointed rightward (Figure 1A3).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/32506/elife-32506-fig1-v1.jpg)\n\n**Figure 1.:** (A) Drosophila embryonic hindgut visualized by UAS-myr-GFP (membrane in green) and UAS-redstinger (nuclei in magenta) driven by byn-Gal4, starts to rotate at late stage 12, when the germ band is almost completely retracted (dashed line in A1). The hindgut rotates anticlockwise (A2) and completes the rotation in 2 hr, exhibiting a rightward pointing hook shape (A3). Time after the start of rotation is indicated at upper right. (B) Schematic of the hindgut before rotation. Lateral (left), dorsal (right), and posterior (bottom) views are shown. The hindgut is LR symmetric with the hook shape pointing in the ventral direction. The regions observed in the displacement measurements are indicated by red (dorsal) and blue (ventral) rectangles. (C, D) Cell nuclei in the dorsal (C) and ventral (D) sides of the hindgut, schematically shown as red and blue circles in B (posterior view), respectively, visualized by byn-Gal4 and UAS-redstinger (C) or UAS-stinger (D). Three central columns of cells are marked by colored circles. Cells slid leftward on both the dorsal and ventral sides. (E) Schematic of the displacement quantification. The coordinates of two cells located along the anterior-posterior axis at two time points were observed. The subjacent cell was set at (0,0), and the relative displacement of the upper cell in the x direction was measured. (F) Quantification of the cell movement during wild-type hindgut rotation. Dorsal cells showed minus directional movement (red bar, n\u00a0=\u00a0126, N\u00a0=\u00a05) while ventral cells showed plus directional movement (blue bar, n\u00a0=\u00a078, N\u00a0=\u00a012), indicating that the cells on both sides moved leftward. Cells in the rectum region (shown as a control, ctl) did not show LR displacement (open bar, n\u00a0=\u00a091, N\u00a0=\u00a05). Error bars indicate SEM. *, p<0.05. For all images, anterior is up. A, anterior; P, posterior; L, left; R, right.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32506/elife-32506-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The hindgut isolated from an embryo carrying UAS-GFP-moesin and en-Gal4 (otherwise wild type) was subjected to explant culture and imaged. Of the explanted hindguts, 85% (11 out of 13) showed normal counterclockwise rotation. Under these conditions, the GFP signal was detected in the ventral but not the dorsal half of the hindgut before its rotation. Due to the counterclockwise rotation of the hindgut, the GFP signal moved to the left side of the hindgut.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32506/elife-32506-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Cells in the root-most part of the hindgut did not show LR displacement but were gradually separated from each other in the AP direction. We could track these cells for more than 90 min.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/32506/elife-32506-fig2-v1.jpg)\n\n**Figure 2.:** (A) Cell nuclei and membranes of hindgut epithelial cells in Myo31DF mutants were visualized as in Figure 1. The rotation started at late stage 12, as judged by the position of the germ band (dashed line in A1). Myo31DF embryos show inverted rotation of the hindgut (A2). After rotation, the hindgut shows a leftward-pointing hook shape (A3). Time after the start of rotation is indicated at upper right. (B, C) Cell movement on the dorsal (B) and ventral (C) sides of the hindgut in Myo31DF mutants. Cells slide rightward on both the dorsal and ventral sides. (D) Quantification of the cell movement in Myo31DF mutants as calculated in Figure 1F. Dorsal cells showed plus directional movement (red bar, n\u00a0=\u00a0134, N\u00a0=\u00a05) while ventral cells showed minus directional movement (blue bar, n\u00a0=\u00a040, N\u00a0=\u00a06), indicating that the cells on both sides moved rightward, which is opposite to the wild-type cell movement. Cells in the rectum region were used as a control (ctl) (open bar, n\u00a0=\u00a0129, N\u00a0=\u00a05). Error bars indicate SEM. *, p<0.05. For all images, anterior is up. L, left; R, right.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/32506/elife-32506-fig3-v1.jpg)\n\n**Figure 3.:** (A,B) Still shots of cell nuclei (magenta) and boundaries (green) of wild-type (A) and Myo31DF (B) hindgut epithelial cells visualized as in Figure 1A. Cells maintained their junctions (white arrowheads) during sliding. (C,D) Angle change of the cell boundaries during rotation in the wild-type (C) and Myo31DF (D) hindgut. Initial cell boundaries are shown in yellow. Boundaries tilting in a counter-clockwise direction (ccw) are shown in red, while those in a clockwise direction (cw) are in blue. White bars show unchanged (uc) boundaries. (E) Schemes for boundary tilting. (F) Frequency of boundaries showing ccw, uc, and cw in the wild-type (n\u00a0=\u00a055, N\u00a0=\u00a05) and Myo31DF hindgut (n\u00a0=\u00a050, N\u00a0=\u00a05). **, p<0.01, *, p<0.05. For all images, anterior is up. A, anterior; P, posterior; L, left; R, right.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32506/elife-32506-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A, B) Cell nuclei (magenta) and boundaries (green) of wild type (A) and Myo31DF mutant (B) hindgut epithelial cells were visualized as in Figure 1A. Cells that were initially in contact with each other (yellow circles) were separated by an intervening cell (black circles). In wild type and Myo31DF mutants, no significant LR bias in the direction of intercalation was detected, as shown in Table 1. (C, D) Frequencies of angles of cell boundaries undergoing cell rearrangements in wild type (C) (n\u00a0=\u00a014, N\u00a0=\u00a05) and Myo31DF mutants (D) (n\u00a0=\u00a018, N\u00a0=\u00a07). For all images, anterior is up. L, left; R, right.\n\nWe analyzed the cell displacement by observing the positions of nuclei. This analysis was done in 2D, because the z resolution (1.5\u20131.7 \u03bcm) was much lower than the xy resolution (0.313 \u03bcm). To minimize the loss of displacement by projecting the image to 2D, we analyzed only the central three columns of cells (Figures 1B,C1\u20133). It is important to consider the hook shape of the hindgut when analyzing the displacement. Cells located in the hook part of the anterior region of the hindgut are affected more by the rotation of the whole hindgut than cells located in the posterior root part. Even when cells do not change their relative positions, they appear to move leftward if they are located posterior to the hook peak, whereas they appear to move rightward when located anterior to the hook peak (Figure 1B). To minimize this apparent LR asymmetric displacement that is intrinsically associated with the hook-like structure, we analyzed the cell displacement in the sub-root part of the hindgut, which is about 20\u201340% of the hindgut in length (red and blue boxes in Figure 1B).\n\nUsing time-laps movies, we tracked cells located in the dorsal side of the hindgut by their nuclear position in individual time frames (5 min intervals) (red boxes in Figure 1B). The cells changed their position relative to the cells located below them (posterior in the embryo) by sliding leftward (Figures 1C1\u20133, Figure 1\u2014video 3). We next measured the relative displacement in the x direction of each cell against its subjacent neighbor [placed at (0,0) in xy coordinates] every 30 min (Figure 1E). \u2018Minus\u2019 displacement indicates leftward movement, while \u2018plus\u2019 displacement indicates rightward movement. The displacement of wild-type epithelial cells in the dorsal side was about \u22120.5 \u03bcm, indicating that the cells moved significantly leftward in relation to their subjacent neighbors (Figure 1F, dorsal). As a control, we measured the LR displacement in the root-most part of the hindgut, where our time-lapse analysis did not detect displacement (Figure 1\u2014figure supplement 2) and found that the value was negligible (Figure 1F, ctl).\n\nTo confirm that this movement was not caused by an apparent displacement caused by the hook-like shape of the hindgut, we also measured cell movement on the ventral side (blue boxes in Figure 1B). If cell displacement contributed to the rotation, the cell displacement in the ventral side should occur in the opposite direction to that in the dorsal side (Figure 1B). In contrast, an apparent displacement associated with the hook-like structure of the hindgut should be observed in the same direction, even on the ventral side. For this experiment, we used two-photon confocal microscopy, because the ventral side is more than 50 \u03bcm deep from the dorsal surface of the embryo. We visualized the cell nuclei using UAS-stinger (a nuclear GFP) (Barolo et al., 2004) or UAS-NLS-tdTomato with byn-Gal4, by the same technique used for the dorsal side (Figures 1D1 and 2, Figure 1\u2014video 4). Although we could only obtain data from low numbers of cells because most images of the deep ventral region gave poor signals, even using two-photon microscopy, the results revealed a significant opposite directional movement of cells on the ventral side (Figure 1F, ventral). These results together suggested that during the counterclockwise rotation of the hindgut, cells change their position relative to their subjacent cells (posterior neighbors) by sliding in the direction of rotation (Figure 1C,D,F). Here, we refer to this novel cellular behavior as \u2018cell sliding.\u2019\n\n### Cells slide in the opposite direction during inverted hindgut rotation in Myo31DF mutants\n\nTo investigate the contribution of cell sliding to the directional rotation of the hindgut, we also examined the dynamic hindgut cell behavior in a null mutant of the Myosin31DF (Myo31DF) gene, which encodes the Drosophila ortholog of Myosin ID (Hozumi et al., 2006; Sp\u00e9der et al., 2006). In Myo31DF mutants, the LR asymmetry of various organs is reversed (Hozumi et al., 2006; Sp\u00e9der et al., 2006). More than 80% of the Myo31DF embryos showed inverted hindgut rotation, with sinistral looping (Figures 2A1\u20133, Figure 2\u2014video 1) (Hozumi et al., 2006). In Myo31DF mutants, the cell chirality of the hindgut epithelial cells before the onset of rotation is also inverted (Taniguchi et al., 2011). Furthermore, the chirality of Myo31DF cells is determined cell-autonomously (Hatori et al., 2014).\n\nUsing the same analysis as for wild type, we examined the behavior of hindgut epithelial cells in the dorsal side of the hindgut during its inverted rotation in Myo31DF homozygotes. We found that these cells changed their relative position by sliding rightward, which is the opposite direction to that observed in the wild-type cells (Figures 2B1\u20133, Figure 2\u2014video 2), and the ventral cells slid to the left side (Figure 2C1 and , Figure 2\u2014video 3). Quantitative analysis confirmed that the cells on both the dorsal and ventral sides of the Myo31DF hindgut slid in a direction opposite to that of wild-type cells (Figure 2D, dorsal and ventral, cf. Figure 1F). As a control, we again measured the LR displacement in the root-most part of the hindgut where the rotation was negligible, and confirmed that cell sliding was hardly observed (Figure 2D, ctl). These results showed that the direction of cell sliding is consistent with the rotation direction of the wild-type and Myo31DF hindgut. In addition, the enantiomorphic status of the cell chirality before rotation also coincided with the directionality of the rotation of the wild-type and Myo31DF hindgut (Taniguchi et al., 2011). Therefore, the initial cell chirality appeared to determine the direction of the cell sliding.\n\n### Cell sliding appears to depend on cell-shape change but not junctional remodeling\n\nIt was possible that the cell sliding we observed was coupled with anisotropic cell intercalation, which plays many important roles in epithelial morphogenesis (Bertet et al., 2004; Sato et al., 2015a). In particular, Sato et al. showed that directional cell intercalation is important in male genitalia rotation, another case of LR asymmetric morphogenesis in Drosophila (Sato et al., 2015a). To evaluate the potential contribution of LR directional cell intercalation to the cell sliding observed in the hindgut epithelium, we analyzed junctional remodeling, which is a critical feature of cell intercalation (Bertet et al., 2004). To investigate the junctional dynamics during cell sliding, we tracked the cell boundaries using UAS-myrGFP and byn-gal4 in vivo (Figure 3A,B). The results revealed that cells maintained their junctions during cell sliding in both the wild type and the Myo31DF mutant in most cases (Figure 3A,B, Figure 3\u2014video 1, Figure 3\u2014video 2). The frequency of cell-intercalation events accompanied by junctional remodeling was 9.2 and 6.0% for wild type and the Myo31DF mutant, respectively (Table 1, Figure 3\u2014figure supplement 1A,B). Therefore, more than 90% of the cell junctions were not remodeled during cell sliding, suggesting that the cell sliding does not necessarily require junctional remodeling.\n\n**Table 1.**\n Frequency of cell-intercalation events.Table 1-source data 1Source data for Table 1.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Genotype</th>\n      <th colspan=\"3\">Frequency of intercalation (%)</th>\n      <th rowspan=\"2\">n</th>\n    </tr>\n    <tr>\n      <th>Leftward</th>\n      <th>Rightward</th>\n      <th>Total</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>+/+</td>\n      <td>4.0</td>\n      <td>4.8</td>\n      <td>9.2*</td>\n      <td>250</td>\n    </tr>\n    <tr>\n      <td>Myo31DF</td>\n      <td>2.2</td>\n      <td>3.3</td>\n      <td>6.0*</td>\n      <td>182</td>\n    </tr>\n  </tbody>\n</table>\n\n_Frequency is defined as the number of intercalation events divided by the total number of examined cells, in 30 min.When two cells in a column had initial contact and were subsequently separated by another intervening cell, cell intercalation was said to occur, and the direction from which the intervening cell came was determined.*includes one event that was not distinguished as leftward or rightward._\n\nAlthough the frequency of junctional remodeling was low, it still might have been associated with LR directional cell intercalation. Therefore, we also examined the directionality of the cell intercalation during hindgut rotation. When two cells in a column had initial contact and were subsequently separated by another intervening cell, cell intercalation was said to occur, and the direction from which the intervening cell came was determined (Figure 3\u2014figure supplement 1A,B). The frequency of leftward versus rightward intercalations was similar in both the wild-type and Myo31DF hindguts (Table 1), indicating that the direction of cell intercalation during hindgut rotation does not have an LR bias. We also measured the angles of the cell boundaries undergoing junctional remodeling in the wild-type and Myo31DF hindgut as described by Sato et al. (Sato et al., 2015a). In both the wild-type and Myo31DF hindgut, all of the diminishing cell boundaries had an angle with an absolute value less than 30\u00b0, and most of them were within\u00a0\u00b110\u00b0 (Figure 3\u2014figure supplement 1C,D). These results further indicated that cell intercalation does not have a major role in the LR directional rotation of the hindgut. Instead, this LR symmetrical cell intercalation contributes to elongation of the hindgut in the anterior-posterior direction through convergent extension (Iwaki and Lengyel, 2002). However, it might also amplify the LR asymmetry by increasing the length of the tilted cell columns.\n\nIn male genitalia rotation, the distribution of Myosin II (MyoII) to the apical cell boundary is anisotropic, which is responsible for the LR asymmetric junctional remodeling (Sato et al., 2015a). Here, we investigated the distribution of MyoII in cell boundaries of the hindgut epithelium. We performed live imaging of MyoII using UAS-sqhGFP driven by byn-gal4 to visualize the medial and junctional MyoII in the apical regions of hindgut epithelial cells. However, we failed to detect clear anisotropy in the distribution of MyoII (Figure 3\u2014video 3). This finding was consistent with our observation that an LR bias in cell interactions was not observed in the hindgut epithelium (Table 1, Figure 3\u2014figure supplement 1).\n\nOur results suggest that the cell sliding is not caused by cell intercalation but by cell deformation that is probably associated with the dissolution of cell chirality during the hindgut rotation, as reported before (Taniguchi et al., 2011). To investigate this possibility, we examined the cell-shape change during the cell sliding by measuring the angle changes in the boundaries between cells aligned in a column every 30 min during hindgut rotation (Figure 3C,D). We then classified the changes in these angles as counter-clockwise (ccw), unchanged (uc), and clockwise (cw) (Figure 3E). The boundaries between cells aligned in a column tended to tilt in a ccw direction in wild type and in a cw direction in Myo31DF mutants during hindgut rotation (Figure 3F). These results suggested that cell sliding is accompanied by cell deformation associated with the dissolution of cell chirality.\n\n### Simulation of cell chirality-induced cellular behavior by a Vertex model\n\nTo verify that the cell sliding observed in vivo is responsible for the hindgut rotation, we performed a computer simulation analysis. We previously constructed a computer model that suggested that the dissolution of cell chirality in the epithelial cells induces rotation of the hindgut epithelial tube (Taniguchi et al., 2011). However, this prototype model was a 2D polygonal model artificially converted to a tube in 3D space, in which the vertices moved in 2D (Taniguchi et al., 2011). In addition, the model did not precisely recapitulate the architecture of the hindgut epithelial tube, so it could not be used to verify the cellular dynamics during hindgut rotation. Thus, in the present study, we performed a computer simulation using a 3D cell-based vertex model for tissues (Honda and Nagai, 2015; Honda et al., 2008; Honda et al., 2004; Nagai and Honda, 2001).\n\nA new vertex model for a cell sheet in a 3D space, in which vertices can move in 3D, was constructed (Figure 4A). In this model, 452 cells (mean polygonal area of about 1) were placed in a 3D space in which the relative diameter and length of the tube reflected the in vivo situation (for the definition of the polygon area, see Materials and methods and Figure 4\u2014figure supplement 1). The initial configuration of the model tube was obtained computationally (see Materials and methods). In the model, the LR asymmetry (chirality) of the hindgut epithelial cells in vivo was recapitulated qualitatively, which was achieved by anisotropic contraction of the edges (see Materials and methods) (Taniguchi et al., 2011). The axes of the model cell polygons tended to tilt leftward before starting the twist (t\u00a0=\u00a00) (Figure 4C), as observed in vivo (Figure 4\u2014figure supplement 2). In addition, the boundaries of the model cell polygons slanted leftward (\u221290 to 0\u00b0) more frequently than rightward (0 to 90\u00b0) before starting the twist (t\u00a0=\u00a00) (Figure 4D), as previously reported in vivo (Taniguchi et al., 2011). In the previous study, the dissolution of cell chirality was achieved by releasing the anisotropic edge contraction (Taniguchi et al., 2011). Thus, we performed a relaxing procedure in the computer simulation, in which there was no anisotropic contraction of the edges (w\u03b1k\u00a0=\u00a01, everywhere). The process of structural changes in the model hindgut is shown as still shots at t\u00a0=\u00a01.0 and t\u00a0=\u00a080.0 (Figure 4A). The tube had twisted 88.5\u00b0 at t\u00a0=\u00a080.0, forming a left-handed screw (its tip was oriented anteriorly), which could be observed by coloring blue an array of cells that lined up straight along the anterior-posterior axis of the model gut tube before the twist and gradually became slanted during the twisting (Figure 4A, Figure 4\u2014video 1). The tube then continued to twist more slowly (91.0\u00b0 at t\u00a0=\u00a0100).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/32506/elife-32506-fig4-v1.jpg)\n\n**Figure 4.:** (A) Still shots of the twisting tube in a left-handed screw (its tip is oriented anteriorly). Twist angles were 10.7\u00b0 (t\u00a0=\u00a01.0) and 88.5\u00b0 (t\u00a0=\u00a080.0). Cells in a line along the tube length were colored blue to show the twisting. (B) A computer simulation without reconnection of vertices. The model tube still rotated to a similar extent as that with reconnection. Twist angle was 83.1\u00b0 (t\u00a0=\u00a080.0). (C, D) Distributions of the directions of polygon axes (C) and edges (D) in the simulation. Dark, light, and white columns denote data at t\u00a0=\u00a00, 1.0, and 80.0, respectively. Polygons projected on a cylindrical surface were used for this analysis as described in the Methods. Ordinate, percentage of angle distribution. Abscissa, angle \u03b8, \u221290 to 90\u00b0. The axis of the polygon was the major axis of an ellipse of inertia, which was an approximation of a polygon. (E) Polygonal patterns (t\u00a0=\u00a00, 1.0, and 80.0) projected on a flat plane as described in Methods. An array of four polygons colored orange show a leftward tilt during t\u00a0=\u00a00\u201380.0. Blue lines show the direction of the polygon axis (the major axis of a momental ellipse). The length of the blue line shows the degree of deviation of the polygon from a circular shape. Vertical turquois lines indicate the center of the top and bottom orange-colored cells, and arrows indicate the degree of cell sliding during the rotation. (F) A model for inverted rotation in which enantiomorphic cell chirality was introduced. Twist angles were \u221213.5\u00b0 (t\u00a0=\u00a01.0) and \u221276.8\u00b0 (t\u00a0=\u00a080.0), respectively. In A,B,E,F \u2018t\u2019 represents the number of simulation steps.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32506/elife-32506-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Determination of two specific edges by cell polarity. A plane (blue rectangle) was defined that was perpendicular to the polarity direction (blue arrow) and included the polygon center. The plane crossed two polygon edges (illustrated by thick black lines) to which a stronger contraction was applied. (B) A sheet of polygons in a 3D space. The polygonal pattern was described by the positions of vertices. The 3D positional vectors of the vertices were calculated using the cell-based vertex dynamics for tissues. (C) Reconnection of vertices in 3D space. Neighboring polygons (designated by *) were separated and other neighboring polygons intercalated between them.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32506/elife-32506-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Blue and white columns denote data before (n\u00a0=\u00a070, N\u00a0=\u00a05) and after (n\u00a0=\u00a074, N\u00a0=\u00a06) the rotation, respectively.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/32506/elife-32506-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) The initial configuration (t\u00a0=\u00a00) was the same as in Figure 4A. When the vertices at the top and bottom of the tube were fixed, the tube could not rotate. (B, C) Histograms showing the frequency of polygon axes (B) and edges (C) with each angle against the tube axis in the simulation. Dark, light, and white columns denote data at t\u00a0=\u00a00, 1.0, and 80.0, respectively. (D) Polygonal patterns (t\u00a0=\u00a00, 1.0, and 80.0) projected on a flat plane as described in Figure 4E. The chirality decreased, but the polygons did not slide in one direction.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/32506/elife-32506-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A, B) Histograms showing the frequency of polygon axes (A) and edges (B) with each angle against the tube axis in the simulation of inverted rotation (see Figure 4F). Dark, light, and white columns denote data at t\u00a0=\u00a00, 1.0, and 80.0, respectively. An initial rightward biased distribution of polygon axes and edges became neutral after the rotation. (C) Polygonal patterns (t\u00a0=\u00a00, 1.0, and 80.0) projected on a flat plane as described in Figure 4E. Polygons changed their relative positions in a rightward direction.\n\nTo examine the cellular dynamics associated with the hindgut tube twisting using the model, we characterized the changes in the polygon structures over time (Figure 4C\u2013E). We found that most of the initial leftward tilt of the cell axes shifted to neutral as the simulation progressed (Figure 4C), which recapitulated the in vivo observation (Figure 4\u2014figure supplement 2). This simulation also demonstrated that the dominance of leftward tilted cell boundaries at the beginning became less prominent or almost disappeared after the rotation (Figure 4D), which was also consistent with our previous observation in vivo (Taniguchi et al., 2011). Thus, during the rotation, the cell chirality was gradually lost in the model hindgut.\n\nOur in vivo analyses above indicated that cell sliding is a potential dynamic cell process for driving hindgut rotation. To test this possibility using the model, we investigated the detailed changes occurring in individual polygons during the twisting of the model hindgut tube, as shown in a higher magnification image of the model (Figure 4E). We found that in the early phases of the simulation, the polygons quickly became rounder or less polarized in shape, suggesting that the loss of chirality in the cell shape began even before the polygons started to prominently change their relative positions (Figure 4E, t\u00a0=\u00a01.0). This rapid cell deformation was also observed quantitatively, as the initial leftward biases of the cell axes (dark-colored bars, Figure 4C) and cell boundaries (dark-colored bars, Figure 4D) were largely abolished at t\u00a0=\u00a01.0 (light-colored bars, Figure 4C,D). Subsequently (t\u00a0=\u00a080.0), the polygons slowly changed their relative positions in a leftward direction (Figure 4E, t\u00a0=\u00a080.0). Thus, the loss of cell chirality began before the changes in the relative positions of the cells (called cell sliding in this study). During cell sliding, the cell shape change became less prominent but still continued, given that the LR biases observed at t\u00a0=\u00a01.0 were further randomized at t\u00a0=\u00a080.0 (compare light-colored and white bars, Figure 4C,D). These results suggested that the mechanical force was not yet balanced at t\u00a0=\u00a01.0, which presumably induced further events, including the cell sliding. The time lag between the initiations of cell deformation and of cell sliding suggests that these two events were mechanically distinct, probably due to the different viscoelastic properties of individual cells versus cell aggregates in our model (Honda et al., 2004). However, it was difficult to analyze such a time lag in vivo, because we could not simultaneously obtain high-resolution time-lapse images of nuclei and cell boundaries due to the thickness of the hindgut. Nevertheless, our 3D vertex model recapitulated chiral cell sliding that was associated with a loss of cell chirality.\n\nOur simulation suggested that the cell chirality loss and the cell sliding are mechanically distinguishable processes. This idea was supported by another theoretical simulation, in which we fixed the vertices at the top and bottom of the tube, so the tube could not rotate (Figure 4\u2014figure supplement 3A\u2013D). In this simulation, the polygons did not slide in one direction (Figure 4\u2014figure supplement 3D), while the cell chirality was still lost (Figure 4\u2014figure supplement 3B,C), indicating that the cell sliding or gut-tube rotation is not required for the loss of cell chirality. These results also showed that the loss of cell chirality and the cell sliding are not always coupled, further suggesting that they are distinct mechanical events. Therefore, this simulation further supported the idea that the mechanical force bias induced by cell chirality drives directional cell sliding and gut-tube rotation.\n\nIn the in vivo studies above, we also showed that the cell chirality and chiral cell sliding in Myo31DF mutants in which the direction of hindgut rotation was reversed were mirror images of their wild-type counterparts (Taniguchi et al., 2011). This result suggested that the initial enantiomorphism of the cell chirality determines the direction of cell sliding, which consequently defines the direction of the hindgut rotation. To verify this idea, we performed another simulation recapitulating the inverted rotation of the model gut tube. In this simulation, we introduced the enantiomorphic chirality into the 3D vertex model, and otherwise the same parameters were used as described above. We found that the inverted rotation and cell sliding were recapitulated in this simulation (Figure 4F, Figure 4\u2014figure supplement 4, Figure 4\u2014video 2). These results supported the idea that the initial cell chirality determines the direction of cell sliding, as predicted in the in vivo studies above.\n\nOur in vivo studies suggested that cell intercalation does not play a major role in the LR directional rotation of the hindgut. Consistent with this idea, we found that cell intercalation rarely occurred during the simulation, although our model allowed for it [it occurred only 12 times for 452 vertices (2.7%) by t\u00a0=\u00a080]; for example, we did not observe any cell intercalation among the array of blue colored cells (Figure 4A). The frequency of cell intercalation in vivo (9.2% every 30 min for 60 min) was much higher than that of our vertex model. This discrepancy was probably because our model did not include the anterior-posterior elongation (convergent extension) of the hindgut, which occurs in vivo at the same time as the hindgut rotation (Lengyel and Iwaki, 2002). Cell intercalation is known to be required for the convergent extension of the hindgut (Johansen et al., 2003). To confirm that cell deformation rather than cell intercalation is a major driving force of the cell sliding and the hindgut rotation, we generated a computer simulation that did not allow junctional remodeling (Figure 4B). In this simulation, the cells still slid and the tube rotated (twist angle 83.1\u00b0 at t\u00a0=\u00a080). In this respect, the cell sliding might be considered a type of autonomous shear deformation at the multicellular level, although it is not directly induced by the loss of chirality in the shape of each individual cell or by a simple LR asymmetric elongation of the cell. Thus, collectively, the simulations indicated that cell sliding induced by a cell-chirality-provoked mechanical force bias is a dynamic cellular process connecting cell chirality and LR asymmetric tube twisting. In conclusion, our in vivo and in silico analyses both demonstrated that cell sliding converts the intrinsic chirality of the cell shape into the LR asymmetric epithelial morphogenesis though chiral cell deformation.\n\n## Discussion\n\n### Chiral cell sliding in LR asymmetric rotations of organs\n\nThe morphogenesis of epithelial cell sheets in the absence of cell number change has been explained as a consequence of cell-shape changes and/or cell rearrangements. Regarding cell rearrangements, the cell intercalation in convergent extension, in which cells intercalate in a medial direction to induce cell sheets to elongate in an anterior-posterior direction, is well described (Bertet et al., 2004; Honda et al., 2008; Uriu et al., 2014). Directional cell intercalation is also important in the LR asymmetric rotation of the male genitalia in Drosophila (Sato et al., 2015a). However, in the present study, we revealed that the LR asymmetric rotation of the embryonic Drosophila hindgut is achieved by chiral cell sliding, in which cells change their relative position against their subjacent neighbors in one direction. In contrast to directional cell intercalation, this cell sliding does not necessarily require cell rearrangements (Figure 3A,B). Indeed, we showed that a computer simulation in which cell-boundary remodeling was prohibited still rotated as well as our standard 3D vertex model hindgut (Figure 4B). Thus, in the hindgut case, we speculate that the accumulation of small chiral cell sliding events between adjacent cells in the hindgut epithelial tube are sufficient to induce the 90\u00b0 rotation of the hindgut epithelial tube, because of the large difference between the radius and the height of this organ.\n\nConsidering that cell sliding and cell rearrangement may not be mutually exclusive, the definition of cell sliding may be extended. For example, theoretical models of Drosophila male genitalia rotation include the sliding motion of cells (Sato et al., 2015a, 2015b), although this mechanism also requires cell rearrangements, because a large amount of cell displacement takes place. In any event, for the dynamic cell events induced by cell chirality, cell sliding appears to drive the LR asymmetric rotation of tissues with or without cell intercalations. Thus, cell sliding may be a commonly used mechanism in LR asymmetric morphogenesis, although it has not been demonstrated to date.\n\nDirectional cell intercalation often requires a biased subcellular distribution of Myosin II (Bertet et al., 2004; Sato et al., 2015a). For example, during the LR asymmetric rotation of Drosophila genitalia, LR asymmetric cell intercalation is induced by the LR asymmetric distribution of Myosin II (Sato et al., 2015a). However, in the Drosophila hindgut, a biased Myosin II distribution was not detected in fixed (Hatori et al., 2014; Taniguchi et al., 2011) or live tissues (this study). Given that chiral cell sliding requires a very small amount of change in the relative positions of cells, a large bias in the amount of Myosin II may not be required. Indeed, our simulation revealed that the anisotropic contraction of edges before but not during the rotation was sufficient to induce whole-organ rotation (Figure 4A), whereas the anisotropic contraction of edges needs to be maintained in the computer simulation to recapitulate the rotation of Drosophila male genitalia (Sato et al., 2015a). Thus, if there is any bias in the subcellular distribution of Myosin II, it might be too subtle to detect by the methods we used (Hatori et al., 2014; Taniguchi et al., 2011). Alternatively, force-generating mechanisms other than the biased expression of Myosin II might be used in the LR asymmetric rotation of the hindgut.\n\n### Cell chirality causes LR asymmetric organogenesis\n\nIn our computer simulation, we recapitulated the LR directional axial rotation of the gut tube, which is driven by a mechanical force bias induced by cell chirality. Our analyses of the model cells in the simulations suggested that the rotation of the model gut tube is achieved through two steps: the first is a deformation in the shape of each cell (loss of cell chirality) without a change in the relative positions of anterior-posterior neighboring cells, and the second is a change in the relative positions of anterior-posterior neighboring cells (called cell sliding in this study), which presumably drives the rotation of the model gut tube. Although the cell deformation and cell sliding temporally overlapped in part (Figure 4A,C\u2013E), the following observations suggested that these two events are mechanically distinct. First, the initiation of cell chirality loss mostly preceded the onset of cell sliding (Figure 4A,C\u2013E). The timing of the model gut tube rotation coincided with that of the cell sliding (Figure 4A,E), but not of the cell chirality loss (Figure 4C\u2013E), suggesting that the rotation of the model gut tube involves two cellular dynamic steps. Second, in a simulation prohibiting the tube rotation, cell sliding did not occur, although the loss of cell chirality was still observed (Figure 4\u2014figure supplement 3), indicating that the loss of cell chirality is not always coupled with cell sliding. Based on these results, we speculated that the loss of cell chirality and the cell sliding are distinct mechanical processes.\n\nThe differences between the cell chirality loss and cell sliding could be explained by their distinct mechanical properties. In our simulation, the equalization of the initial anisotropic contractile force was the only source driving subsequent events. During the balancing processes, individual cells were deformed quickly; most of the deformation was achieved by t\u00a0=\u00a01.0, although the force balance had not yet been neutralized given that the deformation continued to t\u00a0=\u00a080.0 (Figure 4C,D). In vertex models, a viscoelastic property is generally reflected in the speed of the response upon a force application (Honda et al., 2008, 2004). Thus, we speculate that changes in the relative positions of cells (cell sliding) slowly occurred after the major dissolution of cell chirality, due to the difference in viscoelastic properties of the individual cell versus the cell aggregate, until the initial anisotropy of the force was neutralized. In turn, completion of the cell sliding led to global stabilization of the model tube.\n\nOur conclusions about the mechanical properties of chiral cell sliding were based on the computer simulation. However, our ideas did not contradict the observations made in the embryonic hindgut in vivo. In this study, we also found that the hindgut itself generates the active force for driving its rotation. Considering that cell chirality was observed before the hindgut rotation and was lost during the rotation in vivo, the cancelation of cell chirality is probably a primary driving force for the subsequent events including the cell sliding and hindgut rotation, in vivo. This result also excludes the possibility that the cell sliding is a consequence of hindgut rotation driven by an external force, further supporting the validity of our computer simulation for analyzing the relationship between cell chirality loss and cell sliding. In addition, the enantiomorphism of the initial cell chirality is correlated with the LR direction of the cell sliding, based on our analyses of the LR inversion mutant, Myo31DF (Figure 2D). Thus, the LR direction of the cell sliding appears to depend on the initial cell chirality. These results are consistent with the conclusions obtained from our computer simulations. In conclusion, we propose that chiral cell sliding is a cell dynamic mechanism that connects cell chirality with the LR asymmetric rotation of the hindgut tube.\n\n### Prospective roles of cell chirality based on its evolutionary conservation\n\nIn vertebrates, organ laterality is thought to be determined by the LR body axis established by Nodal cassette gene expressions, which is distinct from the mechanisms reported for Drosophila (Huang et al., 2014; Yoshiba and Hamada, 2014). However, a recent study revealed that LR asymmetry formation in the zebrafish heart does not depend on nodal gene expression (No\u00ebl et al., 2013). Moreover, explanted linear hearts of various species develop dextral looping in culture (Bacon, 1945; Manning and McLachlan, 1990; No\u00ebl et al., 2013), suggesting that the heart LR asymmetry formation is tissue-intrinsic. In Drosophila, which lacks the Nodal cassette gene functions, various organs use cell chirality as a common strategy to establish LR asymmetry in a tissue-intrinsic manner, in the absence of an LR body axis (Gonz\u00e1lez-Morales et al., 2015; Sato et al., 2015a; Taniguchi et al., 2011; Vorbr\u00fcggen et al., 1997). To date, cell chirality in tissues has been observed only in Drosophila (Gonz\u00e1lez-Morales et al., 2015; Sato et al., 2015a; Taniguchi et al., 2011). However, cell chirality has been reported in cultured cells, including those of vertebrates (Chen et al., 2012; Raymond et al., 2016; Wan et al., 2011; Xu et al., 2007). Importantly, many cell types from various organs show a chiral cell shape (Chen et al., 2012; Raymond et al., 2016; Wan et al., 2011). Therefore, cell chirality may play specific roles in the LR asymmetric organogenesis in vertebrates as well.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (D. melanogaster)</td>\n      <td>byn-Gal4</td>\n      <td>Iwaki and Lengyel (2002), PMID:12175491</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (D. melanogaster)</td>\n      <td>UAS-redstinger</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC Cat# 8547, RRID:BDSC_8547</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (D. melanogaster)</td>\n      <td>UAS-stinger</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC Cat# 28845, RRID:BDSC_28845</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (D. melanogaster)</td>\n      <td>UAS-myrGFP (JFRC29)</td>\n      <td>Pfeiffer et al. (2012), PMID: 22493255</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (D. melanogaster)</td>\n      <td>UAS-NLS-tdTomato</td>\n      <td>this study</td>\n      <td></td>\n      <td>An NLS-tdTomato fragment obtained from pQC NLS TdTomato IX (Addgene, #37347) was cloned into 20\u00a0\u00d7\u00a0UAS vector. Insertion site is attP2.</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (D. melanogaster)</td>\n      <td>UAS-sqhGFP</td>\n      <td>this study</td>\n      <td></td>\n      <td>A sqhGFP fragment obtained from a sqhGFP fly strain (BL 57144) was cloned into pUAST (Brand and Perrimon, 1993). Random insertion.</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (D. melanogaster)</td>\n      <td>Myo31DFL152</td>\n      <td>Hozumi et al. (2006), PMID: 16598258</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Live imaging\n\nDechorionized Drosophila embryos were placed on grape juice agar plates. Late stage 12 embryos of the appropriate genotype were selected under florescence microscopy and mounted dorsal side up on double sticky tape on slide glasses. We added oxygen-permeable Halocarbon oil 27 (Sigma), and overlaid a coverslip of regular thickness over the embryos using 0.17\u20130.25 mm-thick coverslips as spacers. We imaged embryos every 5 min for 2 hr with a scanning laser confocal microscope, LSM 700 (Zeiss) or A1 (Nikon) at 22\u201325\u00b0C. The fly strains used were byn-Gal4 (Iwaki and Lengyel, 2002), UAS-redstinger (BL8547) (Barolo et al., 2004), UAS-stinger (BL28845), UAS-myrGFP (JFRC29) (Pfeiffer et al., 2012), UAS-NLS-tdTomato, UAS-sqhGFP (see below), and Myo31DFL152 (Hozumi et al., 2006).\n\n### Quantitative analysis of cell movement and cell deformation\n\nFor the cell movement analysis, we tracked the position of the cell nucleus manually using ImageJ software and measured the x,y coordinates every 30 min. We also used a particle analysis plugin for tracking, and obtained comparable results. We only analyzed the three central columns of cells in the root part of the hindgut, to minimize the influence of the tubular hook shape of the hindgut on the displacement measurements. In the analysis, we set the subjacent cell position as (0,0) and measured the relative displacement of the upper cell in the x direction (Figure 1E). Statistical analyses were performed using Student\u2019s t-test. For the cell deformation analysis, we measured the angle changes in the boundaries between cells aligned in a column every 30 min. Statistical analyses were performed using the \u03c72 test. For the cell intercalation analysis, we used both the cell nucleus and boundary images. We defined cell intercalation as two cells that had initial contact and were separated by another cell within 30 min. We calculated the frequency by dividing the number of intercalation events by the total number of examined cells. We also examined the direction from which the intervening cell came and the angles of the diminishing cell boundaries. Statistical analyses were performed using the \u03c72 test.\n\n### Computer simulation\n\nSummary: The model tube consisted of 452 polygonal cells. The polygons covered the surface of the tube without overlaps or gaps. The height of the tube was 28.7, its diameter was 5.0, and the mean polygonal area was about 1. The cell number and ratio of the height to diameter reflected those of the hindgut in vivo. The polygonal pattern of the surface was described by the positions of vertices (x-, y-, z-coordinates) of the polygons. Movements of the vertices were calculated by differential equations, such as the cell-based vertex dynamics for tissues, which has a potential energy term (see below). The potential energy term mainly involved the edge energy and elastic energy of the polygonal area. According to vertex dynamics, when the vertices moved, the edge energy and the surface elastic energy were reduced. We added another process to the system of differential equations: when the edge length became less than a critical length \u03b4, a reconnection of vertices took place causing a change in the polygon shape (Figure 4\u2014figure supplement 1). Thus, we could obtain a stable state of the tube using computer simulations. Numerical calculations of the differential equations were performed using the Runge-Kutta method with step size h (=0.005).\n\nInitial model tube for computer simulations including cells with chiral properties: We made an initial tube recapitulating the in vivo hindgut, in which the cell axes tilted leftward as shown in Figure 4C, as follows. In a rectangular area (15.75\u00a0\u00d7\u00a028.7) we distributed 452 circular dishes (diameter\u00a0=\u00a00.82) at random with the periodic boundary condition, and performed Dirichlet (or Voronoi) tessellation (Honda, 1978). The rectangle was converted into a cylinder in 3D space as described by Honda et al. (2008), resulting in a model tube consisting of 452 polygons.\n\nFor each cell to have chiral properties, we introduced anisotropic contraction of the edges of the polygonal cells. Each cell had its own polarity, which was defined as a deflection angle from the anterior-posterior axis (AP axis) of the system at the initial stage of the simulations. That is, we considered a plane (blue rectangle) that was perpendicular to the polarity direction (blue arrow) and included the central point of the polygon (Figure 4\u2014figure supplement 1A). The plane crossed two edges of the polygon, and the two edges (expressed by thick black lines) were the specific edges undergoing the strongest contraction. Thus, the polarity determined two special edges that were approximately parallel to the polarity direction. The special edges had a high energy density (w\u03b1k, w\u03b1k-fold higher than that of the other edges) and contracted more strongly. The polygons then became elongated and assumed a chiral shape. To give chiral properties to the polygons for which the polygon axes tilted leftward, we applied vertex dynamics to the model tube, where the deflection angle was\u00a0+30\u00b0 and weight was applied to the strongly contracting edges, w\u03b1kk3.5. The vertex dynamics stopped at t\u00a0=\u00a05.0. As a result, we obtained a tube as described in Figure 4A (t\u00a0=\u00a00).\n\nFor the computer simulation of inverted twisting (Figure 4F, Figure 4\u2014figure supplement 4), we used another initial tube as shown in Figure 1E (t\u00a0=\u00a00), by similar methods except that the deflection angle was \u221235\u00b0 and t\u00a0=\u00a010.0. The parameter values were not exactly enantiomorphic between the two initial tubes, because the original tube from which the two initial tubes were made was not perfectly symmetric. For the computer simulation of stopped rotation (Figure 4\u2014figure supplement 3), we used the same initial tube as we used for the wild-type chirality (see Figure 4A, t\u00a0=\u00a00). In this case, the rotation of the vertices at the top and bottom of the tube was fixed; that is, the x- and y-coordinates of the vertices were fixed.\n\nVertex dynamics for a sheet in 3D space: A tube composed of multiple cells was considered as a curved sheet consisting of polygons without gaps or overlaps. The edges (boundaries between cells) and area of the polygons (cell volume) were expressed as x-, y-, and z-coordinates of the vertices (Figure 4\u2014figure supplement 1B). The spatial relationships between neighboring vertices were defined by the surrounding polygons (Honda et al., 2004; Nagai and Honda, 2001). The vertices obeyed the equation of motion:\n\n$$\n\u03b7\u00a0dr_{i}/dt\u00a0=\u00a0\u2212\u25bd_{i}U(i=1,...,n_{v})\n$$\n\nwhere ri is a 3D-positional vector of vertex i, $\u25bd_{i}$ is the nabla differential operator, and nv is the total vertex number (nv\u00a0=\u00a0904). The left side of Equation (1) represents a viscous drag force proportional to the vertex velocity dri/dt with a positive constant \u03b7 (an analog of the coefficient of viscosity). Vertices do not have mass (inertia), so the motion of the vertices and polygons is completely damped. Differentiation of the potential U with respect to time t yields the following inequality using Equation (1),\u00a0\n\n$$\ndU/dt\u00a0=\u00a0\u03a3_{\u0131}\u25bd_{i}\u00a0Udr_{i}/dt\u00a0=\u00a0\u2212\u03b7\u00a0\u03a3_{\u0131}\u00a0(dr_{i}/dt)^{2}\\leq0.\n$$\n\nThe inequality indicates that vertices move to decrease U (strictly, not to increase U). We obtained a stable shape described by vertices using Equation (1).\n\nThe right side of Equation (1) represents a potential force (driving force), that\u00a0is, minus the gradient of the potential U. The potential U includes various terms related to the edges and surface areas of polygons and the tube volume, which are all expressed by vertex positions. Therefore, U is a function of the vertex coordinates.\n\nIn the present study, the potential U contains terms for edge energy (UL), elastic surface energy (UES), elastic volume energy (UEV), and the boundary restriction energy of the top and bottom of the tube (UB):\n\n$$\nU\u00a0=\u00a0U_{L}\u00a0+\u00a0U_{ES}\u00a0+\u00a0U_{EV}\u00a0+\u00a0U_{B}.\n$$\n\nThe potential UL denotes the total edge energy of the cells:\n\n$$\nU_{L}\u00a0=\u00a0\\sigma_{L}\u03a3^{n}\u00a0_{a}\u00a0(\u03a3^{na}\u00a0_{k}\u00a0w_{ak}L_{ak}).\n$$\n\nThe term ( Sn\u03b1k w\u03b1kL\u03b1k) in Equation (4) represents the edge energy of cell \u03b1. n\u03b1 is the edge number of cell \u03b1. L\u03b1k and w\u03b1k are the edge length and weight applied to the respective edge. The weight, w\u03b1k, depends on the edge species. When an edge contracts strongly, w\u03b1k is large (=1.3 or 2.0); otherwise, w\u03b1kk1.0. \u03b1k designates the k-th edge of polygon \u03b1. n is the total polygon number except for the top and bottom polygons (n\u00a0=\u00a0452). \u03c3L is the edge energy density.\n\nThe potential UES denotes the total elastic energy of the polygon area:\n\n$$\nU_{ES}\u00a0=\u00a0\u03ba_{S}\u03a3^{n}\u00a0_{a}\u00a0(S_{a}\u2212S_{o})^{2},\n$$\n\nwhere S\u03b1 and So are the polygon area at time t and the polygon area at the relaxed state, respectively. \u03baS is the elastic energy density of the polygon area.\n\nThe potential UEV denotes the elastic energy of the tube:\n\n$$\nU_{EV}\u00a0=\u00a0\u03ba_{V}\u00a0(V_{a}\u2212V_{o})^{2},\n$$\n\nwhere V\u03b1 and Vo are the tube volume at time t and the tube volume at the relaxed state, respectively. \u03baV is the elastic energy density of the tube volume.\n\nThe potential UB denotes the boundary restriction energy of the top and bottom of the tube:\n\n$$\nU_{B}=\u03ba_{B}{\u03a3_{j}^{nvTop}[(r_{j}\u2212r_{Top})^{2}\u2212R_{Top}^{2}]^{2}+\u03a3_{j}^{nvBottom}[(r_{j}\u2212r_{Bottom})^{2}\u2212R_{Bottom}^{2}]^{2}}.\n$$\n\nCenters of the top and bottom polygons of the tube are rTop and rBottom, respectively. The vertices of the top and bottom polygons of the tube are restricted to the circles of the top and bottom ends of the tube (radii are RTop and RBottom, respectively). \u03baB is the elastic constant of the circular array of vertices of the top and bottom polygons.\n\nThus, Equation (1) takes the form:\n\n$$\n\u03b7dr_{i}/dt=\u2212\u25bd_{i}{\\sigma_{L}\u03a3_{a}^{n}(\u03a3_{k}^{na}w_{ak}L_{ak})+\u03ba_{S}\u03a3_{a}^{n}(S_{a}\u2212S_{o})^{2}+\u03ba_{V}(V_{a}\u2212V_{o})^{2}+\u03ba_{B}\u03a3_{j}^{nvTop}[(r_{j}\u2212r_{Top})^{2}\u2212R_{Top}^{2}]^{2}+\u03ba_{B}\u03a3_{j}^{nvBottom}[(r_{j}\u2212r_{Bottom})^{2}\u2212R_{Bottom}^{2}]^{2}}.\n$$\n\nTo reduce the parameter number without a loss of generality, we introduced a new length unit Ro and rewrote Equation (8) using new dimensionless quantities $r_{i}\",\u00a0\u25bd_{i}\",\u00a0S_{a}\"and\u00a0V\"$ as follows:\n\n$$\nr_{i}=r_{i}\"R_{o},\u25bd_{i}=\u25bd_{i}\"/R_{o},L_{ak}=L_{ak}\"R_{o},S_{a}=S_{a}\"R_{o}^{2},S_{o}=S_{o}\"R_{o}^{2},V=V\"R_{o}^{3},V_{o}\"R_{o}^{3},r_{Top}=r_{Top}\"R_{o},r_{Bottom}=r_{Bottom}\"R_{o},R_{Top}=R_{Top}\"R_{o},R_{Bottom}=R_{Bottom}\"R_{o}.\n$$\n\nThus, Equation (8) takes the form:\u00a0\n\n$$\ndr_{i}\"/dt\"=\u2212\u25bd_{i}\"{\\sigma_{L}\"\u03a3_{a}^{n}(\u03a3_{k}^{na}w_{ak}\"L_{ak}\")+\u03ba_{S\"}\u03a3_{a}^{n}(S_{a}\"\u2212S_{o}\")^{2}+\u03ba_{V}\"(V\"\u2212V_{0}\")^{2}+\u03ba_{B}\"\u03a3_{j}^{nvTop}[(r_{j}\"\u2212r_{Top}\")^{2}\u2212R_{Top}\"^{2}]^{2}+\u03ba_{B}\"\u03a3_{j}^{nvBottom}[(r_{j}\"\u2212r_{Bottom}\")^{2}\u2212R_{Bottom}\"^{2}]^{2}}.\n$$\n\nin which the new quantities are defined as follows:\u00a0\n\n$$\nt\"=t/(\u03b7R_{o}),\\sigma_{L}\"=\\sigma_{L},w_{ak}\"=w_{ak},\u03ba_{S}\"=\u03ba_{S}R_{o}^{3},\u03ba_{V}\"=\u03ba_{V}R_{o}^{5},\u03ba_{B}\"=\u03ba_{B}R_{o}^{3}.\n$$\n\nWe take Ro (=So1/2)=1, so that So\u00a0=\u00a01. Equation (10) lacks explicit parameters corresponding to \u03b7. Thus, without a loss of generality, we can describe cell behaviors using the simple parameters \u03baS, \u03baV, and \u03baB. Below, the cell motions were measured in terms of the new length unit Ro = So1/2 and the new time unit 1/(\u03b7Ro), which are the characteristic length scale and time scale of the tube, respectively.\n\nHereafter, we omit the primes (\u201d) on the rescaled quantities in Equation (9).\n\n$$\ndr_{i}/dt=\u2212\u25bd_{i}{\\sigma_{L}\u03a3_{a}^{n}(\u03a3_{k}^{na}w_{ak}L_{ak})+\u03ba_{S}\u03a3_{a}^{n}(S_{a}\u2212S_{o})^{2}+\u03ba_{V}(V\u2212V_{0})^{2}+\u03ba_{B}\u03a3_{j}^{nvTop}[(r_{j}\u2212r_{Top})^{2}\u2212R_{Top}^{2}]^{2}+\u03ba_{B}\u03a3_{j}^{nvBottom}[(r_{j}\u2212r_{Bottom})^{2}\u2212R_{Bottom}^{2}]^{2}}.\n$$\n\nWe used the parameter values \u03c3L = 2.2, \u03baS = 10.0, \u03baV = 0.2, \u03baB = 1.0, RTop\u00a0=RTop\u00a0=\u00a02.5, and Vo = 566.64 to obtain a stable shape of the tube.\n\nElementary process of reconnecting neighboring vertices: In addition to the equations of motion, our model involves an elementary process of reconnecting neighboring vertices (Honda et al., 2004; Nagai and Honda, 2001). We extended the reconnection into the 3D space as shown in Figure 4\u2014figure supplement 1C. When the length of an edge connecting two neighboring vertices became shorter than a critical length \u03b4(=0.3), the relationship of the neighboring vertices changed and the neighbors reconnected with each other.\n\nWe also performed a computer simulation that did not allow the reconnection of vertices to test whether cell intercalation is required for the hindgut rotation (Figure 4B).\n\n### Shape analysis of polygons\n\nPolygons on the tube surface were projected onto a geometrical cylinder (diameter of 5.0), and the surface of the cylinder was extended to a flat plane. To analyze the directions of cell axes and edges statistically, projected polygons, except for polygons close to the peripheral parts of the tube, were used. To determine the polygon shape, a polygon was approximated by a momental ellipse (ellipse of inertia), and the direction of the major axis of the ellipse was defined as the direction of the polygon. The degree of deviation from the circle was defined as (dmax \u2212 dmin)/(dmax\u00a0+dmin), where dmax and dmin were the lengths of the major and minor axes of the ellipse, respectively.\n\n### Explant culture of hindgut\n\nThe culture medium consisted of equal volumes of M3 medium and fly extract. Embryos expressing UAS-GFP-moesin (Chihara et al., 2003) driven by en-Gal4 (Bloomington Stock Center) were dechorionated using double-sided tape. In the hindgut, UAS-GFP-moesin is specifically expressed in the dorsal side, which allowed us to determine the direction of hindgut rotation. The hindgut was dissected with a tungsten needle and mounted in the medium. Images were captured using an LSM 5 PASCAL laser-scanning microscope (Zeiss).\n\n### Transgenic flies\n\nWe generated transgenic lines carrying UAS-NLS-tdTomato and UAS-sqhGFP. For UAS-NLS-tdTomato, we first made a vector with 20\u00a0\u00d7\u00a0UAS by inserting a 10\u00a0\u00d7\u00a0UAS fragment amplified from pJFRC81 (Pfeiffer et al., 2012) by PCR using the primers AAAGCTAGCTCAACGACAGGAGCACGATC and AAAGACGTCTCAACGACAGGAGCACGATC, into pJFRC81. An NLS-tdTomato fragment (NotI-NheI) from pQC NLS TdTomato IX (Addgene, #37347) was inserted into the NotI and XbaI sites of the vector. For UAS-sqhGFP, a sqhGFP fragment was amplified by PCR from genomic DNA isolated from a sqhGFP fly strain (BL 57144) using the primers CACCGCGGCCGCATGTCATCCCGTAAGACCGC and CACCGGTACCCTATTTGTATAGTTCATCCA, and cloned into the NotI and KpnI sites of pUAST (Brand and Perrimon, 1993). To generate transgenic lines, we used the attP2 site for UAS-NLS-tdTomato and random insertion for UAS-sqhGFP. For imaging analyses, flies carrying UAS-sqhGFP insertions in the second and third chromosomes were used.\n\n### Videos\n\nTo track the movement of nuclei, we adjusted the depth of the z stack or z slice at each time point to make clear time-lapse movies, because the hindgut cells change their z position over time.\n",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "e1691429-2a97-4034-a7a4-925529fdad99",
+      "submission_id": "e1c055da-6753-477c-863e-f62b59338443",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Elisabeth Knust, Max Planck Institute of Cell Biology and Genetics Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.32506.034](https://doi.org/10.7554/eLife.32506.034)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Chiral cell sliding drives left-right asymmetric organ twisting\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and K VijayRaghavan as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors have studied the cellular dynamic mechanism underlying left-right asymmetric organ twisting, in particular, how cellular chirality is converted into axial rotation of the Drosophila hindgut. They first constructed a 3D vertex model that can recapitulate in vivo cellular behaviors. Analysis of the model suggested a novel mechanism in which cells directionally change their positions relative to their neighbors without cell intercalation, which they termed \"cell sliding\". As predicted by the model, cell sliding was observed in hindgut epithelial cells that undergo axial rotation, and the direction of cell sliding was reversed in a mutant Drosophila with hindgut rotation inversed. In all, the current results suggest that cellular chirality, which already exists in individual cells of the hindgut, will induce directional cell sliding, which in turn result in the hindgut twisting. This is a beautiful study combining mathematical modeling and experimental biology, and cell sliding is a new concept for cell biology in general (but see cautionary comments below!)\n\nEssential revisions:\n\n1) The manuscript by Inaki and colleagues propose a new cellular mechanism \"cell sliding\" that drives tissue morphogenesis in Drosophila embryonic hindgut rotation. This is one of the follow-up papers from the same lab, which showed that this hindgut rotation is driven by the cell chirality, more specifically the anisotropic contractility of cell boundaries (Taniguchi et al., 2011).\n\nIn this manuscript, the authors first use a 3D cell-base vertex model, and show that the cells lost their chirality before tissue rotation (or cell sliding). The authors' reasons that this temporal difference between the cancellation of cell chirality and the cell sliding arise from the viscoelastic nature of the tissue. The authors then present the experimental data characterizing the \"cell sliding\". By tracking the position of the nucleus and the angle of the cell boundary, the authors show that the cells translocate their position during the hindgut rotation. Furthermore, the authors find that the cell boundary associates with cell interaction is rare and that most of the boundaries rotate its angle without junctional remodeling. In addition to the analyses of wild-type case, the authors perform a computational simulation, live imaging, and analyses for Myo31F mutant, which exhibit reverse hindgut rotation.\n\nThe evidence to claim that the \"cell sliding\" is an active process, which drives tissue rotation, is weak. The major data the authors put forward to claim this point is the in silico results showing the cancellation of cell chirality precedes the cell sliding (and tissue rotation). Based on this observation, the authors argue that the cell sliding is caused by the cancellation of cell chirality. This claim raises a few important questions. What would be the mechanisms (or driving force) of cell sliding (and tissue rotation) under the circumstance where the cell chirality is neutralized before the rotation? If the tissue rotation is a result of the viscoelastic response of the tissue after \"relaxing procedure\", then how this response cause only the cell sliding during tissue rotation but not the cell chirality change? Moreover, it is not clear whether this time lag between the cancellation of cell chirality and the cell sliding can be observed in Drosophila embryonic hindgut.\n\nOverall, the current manuscript is not sufficient to reject the possibility that the cell sliding observed here was a consequence of tissue rotation, i.e., a passive process. The authors need to carefully discuss these contrary possibilities.\n\n2) The term \"cell sliding\" can be misleading, since, for most cases, the adjacent cells still share the same boundary without moving away from each other. Cell sliding needs a clear definition. Is it the cell shape change? Even if we can exclude the possible role of cell intercalation, it is not clear how the authors reach the conclusion that it is chiral cell sliding that drives asymmetry. What drives the chiral cell sliding then? I suppose that it is planar cell shape chirality. How do the two differ from each other?\n\n3) The section on chiral properties of cells doesn't seem sufficient to induce a chiral bias. The determination of special edges needs to be biased towards a specific direction to induce asymmetry. Also, how is the deflection angle defined? Was it used as an input for the simulation?\n\n4) In the numerical simulation, the neighbor exchange is enabled. What if it is disabled? Will the asymmetric looping be still possible? What will happen to the angle of twisting?\n\n5) Could cell intercalation be possibly a mechanism for amplifying the asymmetry? Will all cells tilted, and the intercalation can increase the total length without inducing too much stretching/elongation of the cells?\n\n6) There are significant concerns regarding the organization of this manuscript. The Table 1 and Figure 3\u2014video 3 may be used as a motive for the entire study, instead of merely mentioning them towards the end. It may be more reasonable to follow the table and video with experimental findings on cell sliding and end with numerical simulation.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Chiral cell sliding drives left-right asymmetric organ twisting\" for further consideration at eLife. Your revised article has been favorably evaluated by K VijayRaghavan (Senior Editor), a Reviewing Editor, and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below. Along with responding to these comments from the reviewers, please expand your explanations/interpretations of the data and the speculations of the potential mechanisms. This doesn't require any additional experiments or simulations.\n\nReviewer #1:\n\nThis manuscript studied cellular biophysics involving in the left-right asymmetric twisting of Drosophila embryonic hindgut. They developed a 3D tubular model for studying gut asymmetric rotation, and proposed that cell asymmetric sliding instead of cell intercalation determines the directionality of gut looping. Overall, the research topic is important and interesting. With the revision, the quality of manuscript has largely improved. However, there are still some concerns for the authors to consider:\n\n1) One confusing part of the manuscript is regarding the relationships between cell deformation, cell sliding, cell chirality (and its loss) and tissue rotation. This is also reflected in previous comments raised by the reviewers and editor. It is partially due to the adopted definition of cell chirality in the manuscript, which is defined as the directional biases of major axes, or cell alignment (Figure 3). However, based on this definition, cell alignment direction geometrically changes with individual cell deformation, which drives cell sliding at a multicellular level. Therefore, all these three are coupled with one another, and, in my opinion, that based on the current definition of \"observed cell chirality\", it is impossible to distinguish between them or tell which ones occur first and later.\n\nReviewer #3:\n\nOverall, the author responded to the reviewers\u2019 comments nicely in the rebuttal. However, I personally feel that many of the comments were not reflected into the main text, keeping some of the claims vague. Although I still think this manuscript has a good potential to be published in eLife, I feel that the current manuscript doesn't reach a level suitable for publication.\n\nOne of the major questions was what is the potential mechanism of cell sliding after the cell chirality is neutralized (question 1). However, this is not clearly explained/speculated in the main text.\n\ni) The author explained in the rebuttal that \"the loss of cell chirality still continued during the cell sliding\", but \"the dissolution of cell chirality is a mechanically quicker process than the cell sliding\". It is not clear which data showed \"the loss of cell chirality still continued during the cell sliding\", and which section of the text explained this statement. Moreover, it is not easy to understand the claim that the loss of cell chirality is quicker process than cell sliding, but the loss of cell chirality is in progress (or still continue) during cell sliding. It would be great if the authors expand the explanations in the main text and help the reader to understand.\n\nii) Later, the author claimed \"cell deformation occurring during the course of cell chirality loss drives the cell sliding\". It is not clear which data support this statement, and what is the rationale to support this statement.\n\niii) In the rebuttal letter, the authors stated \"to address the point raised by the reviewer, we modified our description of the loss of cell chirality as follows\". However, what the authors did were 1) making some words changes including from \"the cancellation of cell chirality\" to \"the loss of cell chirality\", and 2) adding a statement \"which was reminiscent of the cell sliding observed in vivo\". Basically, no scientific information/explanation was added in the main text to answer the question. I would strongly suggest the authors to add words/sentences in the main text to clarify the original question: what is the potential mechanism (active driving forces) of cell sliding after the cell chirality is neutralized (and which data support the claim)?\n\nQuestion 1: The author added a sentence in the Discussion section: \"\u2026the driving force for hindgut rotation resides in the hindgut epithelial cells themselves\". This statement was clearly supported by the explant experiment. However, it is not clear to me how this statement supports the idea \"excluding the possibility that chiral cell sliding is a consequence of the hindgut tube rotation\". This could be just a wording issue. It would be great if the author expand the Discussion section and help the reader to understand. It is possible that this ambiguity could be eliminated once the mechanism of cell sliding is clearly explained.\n\nQuestion 2: The author's responses were \"As also pointed out in our reply to Comment 1, there is a cause and effect relationship between the dissolution of cell chirality and the cell sliding. Regarding this issue, please see our reply to Comment 1.\" It is still not clear where the cause-and-effect relationship came from and which data support this relationship. I do not feel that the comment 1 by the authors did not answer to the question. Please see the comments above.\n",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a58c15f5-c216-4875-b9e6-8d372b99afd3",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C1",
+      "claim": "The Drosophila embryonic hindgut first forms as a bilaterally symmetric structure and then rotates 90\u00b0 counterclockwise as viewed from the posterior, showing dextral looping.",
+      "claim_type": "EXPLICIT",
+      "source": "An in vivo function of cell chirality was first discovered in the Drosophila embryonic hindgut (Taniguchi et al., 2011), which first forms as a bilaterally symmetric structure and then rotates 90\u00b0 counterclockwise as viewed from the posterior, showing dextral looping (Hozumi et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies (Taniguchi et al., 2011; Hozumi et al., 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "9ada6b1e-9a6e-4916-9d25-97bf64b178b0",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C2",
+      "claim": "The posterior end of the hindgut does not rotate, and thus the hindgut twists as a whole.",
+      "claim_type": "EXPLICIT",
+      "source": "The posterior end of the hindgut does not rotate, and thus the hindgut twists as a whole.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "6c73e837-a528-4381-bcc6-4fadfd453e5a",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C3",
+      "claim": "The hindgut epithelial cells are probably responsible for hindgut rotation, since the LR defect in hindgut rotation in mutants is fully rescued when the responsible genes are expressed specifically in hindgut epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The hindgut epithelial cells are probably responsible for this rotation, since the LR defect in hindgut rotation in mutants is fully rescued when the responsible genes are expressed specifically in hindgut epithelial cells (Hozumi et al., 2006; Taniguchi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies showing rescue experiments.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "a76cbc3f-aa7d-44f8-8ca4-5a0530693a40",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C4",
+      "claim": "Before the directional rotation begins, the hindgut epithelial cells exhibit an LR asymmetric shape of their apical surface with respect to the anterior-posterior axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Before the directional rotation begins, the anterior-posterior axis of the hindgut can be defined, because its simple tubular structure extends in the anterior-posterior direction, and the hindgut epithelial cells exhibit an LR asymmetric shape of their apical surface with respect to the anterior-posterior axis (Taniguchi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "2d6bfadb-1790-4e77-8a2b-351e044b088e",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C5",
+      "claim": "The LR asymmetric shape of hindgut epithelial cells eventually disappears and the cells become symmetric after the rotation.",
+      "claim_type": "EXPLICIT",
+      "source": "The LR asymmetric shape eventually disappears and the cells become symmetric after the rotation (Taniguchi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "02b34e9e-3464-4ceb-9772-0ec2bf46351c",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C6",
+      "claim": "A previous computer simulation showed that the introduction and subsequent dissolution of cell chirality are sufficient to induce the rotation of a model epithelial tube.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous computer simulation showed that the introduction and subsequent dissolution of cell chirality are sufficient to induce the rotation of a model epithelial tube (Taniguchi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "20f02262-1a22-45ec-bca0-d8b0143aac75",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C7",
+      "claim": "During the rotation, neither cell proliferation nor cell death occurs in the hindgut.",
+      "claim_type": "EXPLICIT",
+      "source": "During the rotation, neither cell proliferation nor cell death occurs in the hindgut (Lengyel and Iwaki, 2002; Wells et al., 2013), indicating that cell-shape changes and/or cell rearrangements are involved in this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "c7e61162-8dd2-4c45-8883-60d29853b5c6",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C8",
+      "claim": "Cell-shape changes and/or cell rearrangements are involved in hindgut rotation.",
+      "claim_type": "EXPLICIT",
+      "source": "During the rotation, neither cell proliferation nor cell death occurs in the hindgut (Lengyel and Iwaki, 2002; Wells et al., 2013), indicating that cell-shape changes and/or cell rearrangements are involved in this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the absence of cell proliferation and death.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "64326e78-5fe9-48fb-8be3-62df143da37f",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C9",
+      "claim": "Cell chirality drives the counterclockwise rotation of the hindgut.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these observations indicate that cell chirality drives the counterclockwise rotation of the hindgut.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple observations cited in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "f04c9da8-8a2d-478d-b5ac-4ed415bd47ba",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C10",
+      "claim": "An explanted wild-type hindgut rotated counterclockwise in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that an explanted wild-type hindgut rotated counterclockwise in vitro, confirming that the hindgut itself generates an active force to accomplish the rotation (Figure 1\u2014figure supplement 1, Figure 1\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "607229a8-ba15-42d1-b0f7-6f88a5307716",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C11",
+      "claim": "The hindgut itself generates an active force to accomplish the rotation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that an explanted wild-type hindgut rotated counterclockwise in vitro, confirming that the hindgut itself generates an active force to accomplish the rotation (Figure 1\u2014figure supplement 1, Figure 1\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that explanted hindguts rotate in vitro.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "8d9ec4ec-6b1f-4ae3-9d7f-fb0e7f7c168a",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C12",
+      "claim": "Of the explanted hindguts, 85% (11 out of 13) showed normal counterclockwise rotation.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the explanted hindguts, 85% (11 out of 13) showed normal counterclockwise rotation.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is quantitative data from the explant culture experiment shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "91f393fb-5b50-4076-a991-b40b03ed700d",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C13",
+      "claim": "The hindgut started to rotate at late embryonic stage 12, when the germ band was almost completely retracted.",
+      "claim_type": "EXPLICIT",
+      "source": "The hindgut started to rotate at late embryonic stage 12, when the germ band was almost completely retracted (Figure 1A1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from live imaging data shown in Figure 1A1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "937e8ba7-e63a-493f-97e9-4997724c179f",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C14",
+      "claim": "The hindgut twisted 90\u00b0 counterclockwise, and this rotation was fully complete by 2 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The hindgut twisted 90\u00b0 counterclockwise, and this rotation was fully complete by 2 hr (Figures 1A1\u20133, Figure 1\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from live imaging data shown in Figures 1A1-3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "26f23468-a2a2-4f85-8f3d-60a8a9589e8b",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C15",
+      "claim": "Cells changed their position relative to the cells located below them (posterior in the embryo) by sliding leftward on the dorsal side of the hindgut.",
+      "claim_type": "EXPLICIT",
+      "source": "Using time-laps movies, we tracked cells located in the dorsal side of the hindgut by their nuclear position in individual time frames (5 min intervals) (red boxes in Figure 1B). The cells changed their position relative to the cells located below them (posterior in the embryo) by sliding leftward (Figures 1C1\u20133, Figure 1\u2014video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from live imaging data shown in Figures 1C1-3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "da9bee80-cb86-4cdb-88d1-288110831daf",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C16",
+      "claim": "The displacement of wild-type epithelial cells in the dorsal side was about \u22120.5 \u03bcm, indicating that the cells moved significantly leftward in relation to their subjacent neighbors.",
+      "claim_type": "EXPLICIT",
+      "source": "The displacement of wild-type epithelial cells in the dorsal side was about \u22120.5 \u03bcm, indicating that the cells moved significantly leftward in relation to their subjacent neighbors (Figure 1F, dorsal).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data from cell tracking analysis shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "c59d7151-1266-4fc6-9310-a19184184dae",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C17",
+      "claim": "Cells on the ventral side of the hindgut showed a significant opposite directional movement compared to dorsal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we could only obtain data from low numbers of cells because most images of the deep ventral region gave poor signals, even using two-photon microscopy, the results revealed a significant opposite directional movement of cells on the ventral side (Figure 1F, ventral).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data from cell tracking analysis shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "40240d3d-a701-4c6e-8673-155a06ff7868",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C18",
+      "claim": "During the counterclockwise rotation of the hindgut, cells change their position relative to their subjacent cells (posterior neighbors) by sliding in the direction of rotation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results together suggested that during the counterclockwise rotation of the hindgut, cells change their position relative to their subjacent cells (posterior neighbors) by sliding in the direction of rotation (Figure 1C,D,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the cell tracking data shown in Figures 1C, D, and F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "53627aa6-8130-430c-a13d-1eeed7a4f90b",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C19",
+      "claim": "In Myo31DF mutants, the LR asymmetry of various organs is reversed.",
+      "claim_type": "EXPLICIT",
+      "source": "In Myo31DF mutants, the LR asymmetry of various organs is reversed (Hozumi et al., 2006; Sp\u00e9der et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "150fe4e5-fe13-45fb-b80a-64e1e8c6427d",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C20",
+      "claim": "More than 80% of the Myo31DF embryos showed inverted hindgut rotation, with sinistral looping.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 80% of the Myo31DF embryos showed inverted hindgut rotation, with sinistral looping (Figures 2A1\u20133, Figure 2\u2014video 1) (Hozumi et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from observations of Myo31DF mutants, supported by citation and shown in Figures 2A1-3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "5370087d-0984-4134-aa6c-a7d34b08531c",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C21",
+      "claim": "In Myo31DF mutants, the cell chirality of the hindgut epithelial cells before the onset of rotation is inverted.",
+      "claim_type": "EXPLICIT",
+      "source": "In Myo31DF mutants, the cell chirality of the hindgut epithelial cells before the onset of rotation is also inverted (Taniguchi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "8d14bbaa-1bce-4275-9c9a-93b844cb61b8",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C22",
+      "claim": "The chirality of Myo31DF cells is determined cell-autonomously.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the chirality of Myo31DF cells is determined cell-autonomously (Hatori et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "a6d2ab05-e395-4579-9b95-13a3b5d83baa",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C23",
+      "claim": "Hindgut epithelial cells in Myo31DF mutants changed their relative position by sliding rightward, which is the opposite direction to that observed in wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that these cells changed their relative position by sliding rightward, which is the opposite direction to that observed in the wild-type cells (Figures 2B1\u20133, Figure 2\u2014video 2), and the ventral cells slid to the left side (Figure 2C1 and , Figure 2\u2014video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from live imaging data shown in Figures 2B1-3 and 2C1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "64843102-b66d-479e-83c4-7a5f944870b3",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C24",
+      "claim": "Quantitative analysis confirmed that the cells on both the dorsal and ventral sides of the Myo31DF hindgut slid in a direction opposite to that of wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative analysis confirmed that the cells on both the dorsal and ventral sides of the Myo31DF hindgut slid in a direction opposite to that of wild-type cells (Figure 2D, dorsal and ventral, cf. Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data from cell tracking analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "f7b6218a-c54f-4ad7-95e3-d9b6584eb0ca",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C25",
+      "claim": "The direction of cell sliding is consistent with the rotation direction of the wild-type and Myo31DF hindgut.",
+      "claim_type": "EXPLICIT",
+      "source": "These results showed that the direction of cell sliding is consistent with the rotation direction of the wild-type and Myo31DF hindgut.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing cell sliding directions with rotation directions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "36affa76-149d-4ed2-a88e-8e6ba284a570",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C26",
+      "claim": "The initial cell chirality appeared to determine the direction of the cell sliding.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the initial cell chirality appeared to determine the direction of the cell sliding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the correlation between cell chirality and sliding direction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "cbe89a68-de21-4ab7-9eb7-ce118db6e87a",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C27",
+      "claim": "Cells maintained their junctions during cell sliding in both the wild type and the Myo31DF mutant in most cases.",
+      "claim_type": "EXPLICIT",
+      "source": "The results revealed that cells maintained their junctions during cell sliding in both the wild type and the Myo31DF mutant in most cases (Figure 3A,B, Figure 3\u2014video 1, Figure 3\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from live imaging data shown in Figures 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "45cbc092-9f28-48a3-b62b-e3709d660587",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C28",
+      "claim": "The frequency of cell-intercalation events accompanied by junctional remodeling was 9.2 and 6.0% for wild type and the Myo31DF mutant, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of cell-intercalation events accompanied by junctional remodeling was 9.2 and 6.0% for wild type and the Myo31DF mutant, respectively (Table 1, Figure 3\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data from cell intercalation analysis shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "84e6f4ab-2bf0-42ec-b75e-19d901b13121",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C29",
+      "claim": "More than 90% of the cell junctions were not remodeled during cell sliding.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, more than 90% of the cell junctions were not remodeled during cell sliding, suggesting that the cell sliding does not necessarily require junctional remodeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the frequency data in Table 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "bdab48e6-6170-4b9a-8b9b-89f542b615c9",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C30",
+      "claim": "Cell sliding does not necessarily require junctional remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, more than 90% of the cell junctions were not remodeled during cell sliding, suggesting that the cell sliding does not necessarily require junctional remodeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the low frequency of junctional remodeling during cell sliding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "7ff48242-f094-44d9-81ac-74d403a8dca2",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C31",
+      "claim": "The frequency of leftward versus rightward intercalations was similar in both the wild-type and Myo31DF hindguts.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of leftward versus rightward intercalations was similar in both the wild-type and Myo31DF hindguts (Table 1), indicating that the direction of cell intercalation during hindgut rotation does not have an LR bias.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data from cell intercalation analysis shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "c7ff2459-8fbd-4aa0-bc37-860a46645465",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C32",
+      "claim": "The direction of cell intercalation during hindgut rotation does not have an LR bias.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of leftward versus rightward intercalations was similar in both the wild-type and Myo31DF hindguts (Table 1), indicating that the direction of cell intercalation during hindgut rotation does not have an LR bias.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the intercalation frequency data in Table 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "d7c61fbd-e279-42d4-a702-9395bc62ae12",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C33",
+      "claim": "In both the wild-type and Myo31DF hindgut, all of the diminishing cell boundaries had an angle with an absolute value less than 30\u00b0, and most of them were within \u00b110\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "In both the wild-type and Myo31DF hindgut, all of the diminishing cell boundaries had an angle with an absolute value less than 30\u00b0, and most of them were within \u00b110\u00b0 (Figure 3\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data from cell boundary angle analysis shown in Figure 3\u2014figure supplement 1C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "7dadb7d2-438d-49a9-8ef1-30fda1a5a717",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C34",
+      "claim": "Cell intercalation does not have a major role in the LR directional rotation of the hindgut.",
+      "claim_type": "EXPLICIT",
+      "source": "These results further indicated that cell intercalation does not have a major role in the LR directional rotation of the hindgut.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the lack of LR bias in cell intercalation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "5d4fa412-7971-431b-a4d7-0c1c493927d7",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C35",
+      "claim": "LR symmetrical cell intercalation contributes to elongation of the hindgut in the anterior-posterior direction through convergent extension.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, this LR symmetrical cell intercalation contributes to elongation of the hindgut in the anterior-posterior direction through convergent extension (Iwaki and Lengyel, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "eec5ed8a-2b2f-4371-9d58-f1217c1d5c46",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C36",
+      "claim": "No clear anisotropy in the distribution of MyoII was detected in hindgut epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we failed to detect clear anisotropy in the distribution of MyoII (Figure 3\u2014video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from live imaging of MyoII shown in Figure 3\u2014video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "b4f29293-c28e-4f78-a8d0-d6c4392a7025",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C37",
+      "claim": "The boundaries between cells aligned in a column tended to tilt in a ccw direction in wild type and in a cw direction in Myo31DF mutants during hindgut rotation.",
+      "claim_type": "EXPLICIT",
+      "source": "The boundaries between cells aligned in a column tended to tilt in a ccw direction in wild type and in a cw direction in Myo31DF mutants during hindgut rotation (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data from cell boundary angle analysis shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "c40818fd-eb03-4e42-9024-554b1a564608",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C38",
+      "claim": "Cell sliding is accompanied by cell deformation associated with the dissolution of cell chirality.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggested that cell sliding is accompanied by cell deformation associated with the dissolution of cell chirality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed cell boundary tilting during rotation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "4d4fb6a0-da1d-42c5-be0e-296136925732",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C39",
+      "claim": "The model tube had twisted 88.5\u00b0 at t = 80.0, forming a left-handed screw.",
+      "claim_type": "EXPLICIT",
+      "source": "The tube had twisted 88.5\u00b0 at t = 80.0, forming a left-handed screw (its tip was oriented anteriorly), which could be observed by coloring blue an array of cells that lined up straight along the anterior-posterior axis of the model gut tube before the twist and gradually became slanted during the twisting (Figure 4A, Figure 4\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from the computer simulation shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "f95dc40a-a3f9-4e0c-93b4-972cf4ab0fec",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C40",
+      "claim": "The 3D vertex model recapitulated chiral cell sliding that was associated with a loss of cell chirality.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, our 3D vertex model recapitulated chiral cell sliding that was associated with a loss of cell chirality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the computer simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "d252f4bd-197f-47da-a7f0-481dd1c3c940",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C41",
+      "claim": "In the early phases of the simulation, the polygons quickly became rounder or less polarized in shape, suggesting that the loss of chirality in the cell shape began even before the polygons started to prominently change their relative positions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in the early phases of the simulation, the polygons quickly became rounder or less polarized in shape, suggesting that the loss of chirality in the cell shape began even before the polygons started to prominently change their relative positions (Figure 4E, t = 1.0).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the computer simulation shown in Figure 4E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "95abc024-7dad-42b2-a872-af332445eb04",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C42",
+      "claim": "The loss of cell chirality began before the changes in the relative positions of the cells (called cell sliding in this study).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the loss of cell chirality began before the changes in the relative positions of the cells (called cell sliding in this study).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the temporal sequence observed in the simulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "b09e184b-9b14-4c9b-a5b5-2dce4350b2ed",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C43",
+      "claim": "The time lag between the initiations of cell deformation and of cell sliding suggests that these two events were mechanically distinct, probably due to the different viscoelastic properties of individual cells versus cell aggregates in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "The time lag between the initiations of cell deformation and of cell sliding suggests that these two events were mechanically distinct, probably due to the different viscoelastic properties of individual cells versus cell aggregates in our model (Honda et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed time lag in the simulation, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "4e13082d-75ea-48ef-822c-97f913ce5734",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C44",
+      "claim": "In a simulation where the vertices at the top and bottom of the tube were fixed, the polygons did not slide in one direction while the cell chirality was still lost.",
+      "claim_type": "EXPLICIT",
+      "source": "In this simulation, the polygons did not slide in one direction (Figure 4\u2014figure supplement 3D), while the cell chirality was still lost (Figure 4\u2014figure supplement 3B,C), indicating that the cell sliding or gut-tube rotation is not required for the loss of cell chirality.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from a modified computer simulation shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "e72235a0-849d-492f-8610-dfa712138185",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C45",
+      "claim": "The cell sliding or gut-tube rotation is not required for the loss of cell chirality.",
+      "claim_type": "EXPLICIT",
+      "source": "In this simulation, the polygons did not slide in one direction (Figure 4\u2014figure supplement 3D), while the cell chirality was still lost (Figure 4\u2014figure supplement 3B,C), indicating that the cell sliding or gut-tube rotation is not required for the loss of cell chirality.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the modified simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "479a880c-92d6-40c5-a798-b27124052a8f",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C46",
+      "claim": "The loss of cell chirality and the cell sliding are not always coupled.",
+      "claim_type": "EXPLICIT",
+      "source": "These results also showed that the loss of cell chirality and the cell sliding are not always coupled, further suggesting that they are distinct mechanical events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modified simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "65088c5d-839b-459c-ba75-f06eff525a7d",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C47",
+      "claim": "The mechanical force bias induced by cell chirality drives directional cell sliding and gut-tube rotation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, this simulation further supported the idea that the mechanical force bias induced by cell chirality drives directional cell sliding and gut-tube rotation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "b8cfc0ea-2780-4b69-b8b0-e573a62934fa",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C48",
+      "claim": "The inverted rotation and cell sliding were recapitulated in a simulation with enantiomorphic chirality.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the inverted rotation and cell sliding were recapitulated in this simulation (Figure 4F, Figure 4\u2014figure supplement 4, Figure 4\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from a computer simulation with inverted chirality shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "e4a137d7-c817-45ca-9754-aba3a7f7f75c",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C49",
+      "claim": "The initial cell chirality determines the direction of cell sliding.",
+      "claim_type": "EXPLICIT",
+      "source": "These results supported the idea that the initial cell chirality determines the direction of cell sliding, as predicted in the in vivo studies above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the inverted chirality simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "c54a4999-304f-468b-9719-2e045b978939",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C50",
+      "claim": "Cell intercalation rarely occurred during the simulation (it occurred only 12 times for 452 vertices (2.7%) by t = 80).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, we found that cell intercalation rarely occurred during the simulation, although our model allowed for it [it occurred only 12 times for 452 vertices (2.7%) by t = 80]; for example, we did not observe any cell intercalation among the array of blue colored cells (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data from the computer simulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "8a161daa-717d-46db-ae47-d14b6fe17e76",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C51",
+      "claim": "In a computer simulation that did not allow junctional remodeling, the cells still slid and the tube rotated (twist angle 83.1\u00b0 at t = 80).",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that cell deformation rather than cell intercalation is a major driving force of the cell sliding and the hindgut rotation, we generated a computer simulation that did not allow junctional remodeling (Figure 4B). In this simulation, the cells still slid and the tube rotated (twist angle 83.1\u00b0 at t = 80).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from a modified computer simulation shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "ebe60028-92cc-4e14-870b-95f4c48b0007",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C52",
+      "claim": "Cell sliding induced by a cell-chirality-provoked mechanical force bias is a dynamic cellular process connecting cell chirality and LR asymmetric tube twisting.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, collectively, the simulations indicated that cell sliding induced by a cell-chirality-provoked mechanical force bias is a dynamic cellular process connecting cell chirality and LR asymmetric tube twisting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the computer simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "b50fcad2-9ea1-4753-9ce7-ce3ebed1a711",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C53",
+      "claim": "Cell sliding converts the intrinsic chirality of the cell shape into the LR asymmetric epithelial morphogenesis though chiral cell deformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our in vivo and in silico analyses both demonstrated that cell sliding converts the intrinsic chirality of the cell shape into the LR asymmetric epithelial morphogenesis though chiral cell deformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from both in vivo and in silico analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "88d9d5ab-a140-49e3-8379-1a538d8bb3df",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C54",
+      "claim": "In mice, a leftward flow of extraembryonic fluid, called nodal flow, is generated in the node by the clockwise rotation of cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, a leftward flow of extraembryonic fluid, called nodal flow, is generated in the node by the clockwise rotation of cilia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about vertebrate LR asymmetry.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "7b299a98-af87-4e81-a45d-b0f5534632f1",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C55",
+      "claim": "The nodal flow breaks the LR symmetry and eventually induces left-side-specific gene expressions, including Nodal, Lefty, and Pitx-2, the so-called nodal cassette genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The nodal flow breaks the LR symmetry and eventually induces left-side-specific gene expressions, including Nodal, Lefty, and Pitx-2, the so-called nodal cassette genes (Nonaka et al., 2002; Nonaka et al., 1998; Okada and Hirokawa, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "d27af01c-4c1d-4057-afee-7e4e6c09f90e",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C56",
+      "claim": "It was recently reported that the LR asymmetric looping of the zebrafish heart develops by a tissue-intrinsic mechanism, independent of nodal.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it was recently reported that the LR asymmetric looping of the zebrafish heart develops by a tissue-intrinsic mechanism, independent of nodal (No\u00ebl et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "6270071d-4f83-4ceb-852c-ed95bd8de7d3",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C57",
+      "claim": "Many mammalian cell lines adopt an LR asymmetric shape when cultured on a micropattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Many mammalian cell lines adopt an LR asymmetric shape when cultured on a micropattern (Chen et al., 2012; Raymond et al., 2016; Wan et al., 2011; Worley et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "1a9ba53c-8c05-43b0-8a13-dc793482a329",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C58",
+      "claim": "Cultured zebrafish melanophores show chirality in cellular locomotion and in cytoplasm swirling.",
+      "claim_type": "EXPLICIT",
+      "source": "Cultured zebrafish melanophores show chirality in cellular locomotion and in cytoplasm swirling (Yamanaka and Kondo, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "ca2c4b7f-b05e-4df2-bbcd-1786e72064fa",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C59",
+      "claim": "Fibroblasts from human foreskin seeded on a micropattern exhibit a chiral swirling of actin fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "Fibroblasts from human foreskin seeded on a micropattern exhibit a chiral swirling of actin fibers (Tee et al., 2015), and cultured neutrophils show LR-biased movement in the absence of positional cues (Xu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "a5d97c5f-03e1-4032-8905-3a0d22ecf011",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C60",
+      "claim": "Cultured neutrophils show LR-biased movement in the absence of positional cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Fibroblasts from human foreskin seeded on a micropattern exhibit a chiral swirling of actin fibers (Tee et al., 2015), and cultured neutrophils show LR-biased movement in the absence of positional cues (Xu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "630ad9a0-f372-415a-ac04-2c2e3024c7fb",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C61",
+      "claim": "The physiological roles of cell chirality in vertebrates remain unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the physiological roles of cell chirality in vertebrates remain unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "435f0a48-566a-4396-8cc0-bf91a85c6dbe",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C62",
+      "claim": "Cell intercalation is known to be required for the convergent extension of the hindgut.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell intercalation is known to be required for the convergent extension of the hindgut (Johansen et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "0deb8251-eda3-4793-bf1b-b8ec46a30540",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C63",
+      "claim": "Cell chirality was observed before the hindgut rotation and was lost during the rotation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that cell chirality was observed before the hindgut rotation and was lost during the rotation in vivo, the cancelation of cell chirality is probably a primary driving force for the subsequent events including the cell sliding and hindgut rotation, in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from in vivo studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "ae530f15-b119-4061-804b-9a7ed2518d74",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C64",
+      "claim": "The cancelation of cell chirality is probably a primary driving force for the subsequent events including the cell sliding and hindgut rotation, in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that cell chirality was observed before the hindgut rotation and was lost during the rotation in vivo, the cancelation of cell chirality is probably a primary driving force for the subsequent events including the cell sliding and hindgut rotation, in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the temporal sequence of events observed in vivo.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "eac5c937-abee-4797-995c-ada5c1bf7d00",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C65",
+      "claim": "Explanted linear hearts of various species develop dextral looping in culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, explanted linear hearts of various species develop dextral looping in culture (Bacon, 1945; Manning and McLachlan, 1990; No\u00ebl et al., 2013), suggesting that the heart LR asymmetry formation is tissue-intrinsic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "5def2c76-0505-45cb-8d2e-0d54aab99b22",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C66",
+      "claim": "The heart LR asymmetry formation is tissue-intrinsic.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, explanted linear hearts of various species develop dextral looping in culture (Bacon, 1945; Manning and McLachlan, 1990; No\u00ebl et al., 2013), suggesting that the heart LR asymmetry formation is tissue-intrinsic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that explanted hearts develop asymmetry in culture.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "2aa8d746-dbaf-415f-a718-ecc472906a7b",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C67",
+      "claim": "In Drosophila, various organs use cell chirality as a common strategy to establish LR asymmetry in a tissue-intrinsic manner, in the absence of an LR body axis.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, which lacks the Nodal cassette gene functions, various organs use cell chirality as a common strategy to establish LR asymmetry in a tissue-intrinsic manner, in the absence of an LR body axis (Gonz\u00e1lez-Morales et al., 2015; Sato et al., 2015a; Taniguchi et al., 2011; Vorbr\u00fcggen et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "f086b182-b7f7-4ebb-b7a8-0520d16f74cd",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C68",
+      "claim": "Cell chirality in tissues has been observed only in Drosophila to date.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, cell chirality in tissues has been observed only in Drosophila (Gonz\u00e1lez-Morales et al., 2015; Sato et al., 2015a; Taniguchi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "a1411b72-34cd-4a4d-9ee2-5ba45601c05b",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C69",
+      "claim": "Cell chirality has been reported in cultured cells, including those of vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "However, cell chirality has been reported in cultured cells, including those of vertebrates (Chen et al., 2012; Raymond et al., 2016; Wan et al., 2011; Xu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "75b2f5af-2524-4e69-8da9-f342119900c5",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C70",
+      "claim": "Many cell types from various organs show a chiral cell shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, many cell types from various organs show a chiral cell shape (Chen et al., 2012; Raymond et al., 2016; Wan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "626a1c63-164d-4eca-b036-5a64fe45259d",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C71",
+      "claim": "Cell chirality may play specific roles in the LR asymmetric organogenesis in vertebrates as well.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, cell chirality may play specific roles in the LR asymmetric organogenesis in vertebrates as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the observation of cell chirality in vertebrate cells.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "ca7a5653-25ff-4234-996c-b808b790a5fc",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C72",
+      "claim": "Cell sliding is a novel mechanism driving epithelial morphogenesis, in which cells directionally change their position relative to their subjacent (posterior) neighbors by sliding in one direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Using live-imaging analysis and a three-dimensional vertex model, we identified 'cell sliding,' a novel mechanism driving epithelial morphogenesis, in which cells directionally change their position relative to their subjacent (posterior) neighbors by sliding in one direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by both in vivo and in silico data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "bfe1d972-3360-4f22-b141-3fa4095c39fd",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C73",
+      "claim": "In Drosophila embryonic hindgut, an initial left-right (LR) asymmetry of the cell shape (cell chirality in three dimensions), which occurs intrinsically before tissue deformation, is converted through LR asymmetric cell sliding into a directional axial twisting of the epithelial tube.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila embryonic hindgut, an initial left-right (LR) asymmetry of the cell shape (cell chirality in three dimensions), which occurs intrinsically before tissue deformation, is converted through LR asymmetric cell sliding into a directional axial twisting of the epithelial tube.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by both in vivo and in silico data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "32f7370d-2041-4ce1-b50d-bf29ba0f6594",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C74",
+      "claim": "In a Drosophila inversion mutant showing inverted cell chirality and hindgut rotation, cell sliding occurs in the opposite direction to that in wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "In a Drosophila inversion mutant showing inverted cell chirality and hindgut rotation, cell sliding occurs in the opposite direction to that in wild-type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study of Myo31DF mutants, supported by in vivo data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "f029c95e-58d5-46e6-adc2-6b3d3e3514be",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C75",
+      "claim": "Unlike directional cell intercalation, cell sliding does not require junctional remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike directional cell intercalation, cell sliding does not require junctional remodeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that most cell junctions are maintained during cell sliding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "6f5b91b7-c6c0-4d0c-8b5a-30913f389833",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "claim_id": "C76",
+      "claim": "Cell sliding may also be involved in other cases of LR-polarized epithelial morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell sliding may also be involved in other cases of LR-polarized epithelial morphogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the findings of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "64e7994f-58d6-4aaa-a7aa-c80e1d3485ad",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Drosophila embryonic hindgut undergoes 90\u00b0 counterclockwise rotation driven by cell chirality. Prior work established that hindgut epithelial cells exhibit LR asymmetric cell shape (cell chirality) before rotation, which disappears after rotation, and that this process occurs without cell proliferation or death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 are well-supported by citations to prior work (Taniguchi et al., 2011; Hozumi et al., 2006; Lengyel and Iwaki, 2002; Wells et al., 2013). These establish the foundational knowledge about hindgut rotation, cell chirality, and the absence of cell proliferation/death during rotation. The claims accurately represent established prior findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "86a6c681-5b63-461e-8a0c-0b85b7800ec2",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Explanted wild-type hindguts rotate counterclockwise in vitro, demonstrating that the hindgut generates intrinsic active force for rotation. 85% (11/13) of explanted hindguts showed normal counterclockwise rotation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12 are supported by experimental data shown in Figure 1\u2014figure supplement 1. The explant culture experiment with quantitative data (85% success rate) provides direct evidence that the hindgut autonomously generates rotational force. However, the sample size is relatively small (n=13).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "3aeeb181-bcf4-4dbc-977b-48953d09deed",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Live imaging reveals that during hindgut rotation, cells slide leftward on the dorsal side (displacement ~-0.5 \u03bcm) and rightward on the ventral side relative to their posterior neighbors, with this directional cell sliding occurring in the direction of rotation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C18 are supported by live imaging data in Figures 1A-F. The quantitative displacement measurements show statistically significant directional movement on both dorsal and ventral sides. The control measurements in the rectum region showing negligible displacement strengthen the conclusion. The ventral side data has lower cell numbers due to imaging limitations, but shows consistent opposite directionality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "696882b4-b690-459c-b020-06b51bb6447a",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In Myo31DF mutants with inverted cell chirality, hindgut rotation is inverted (>80% show sinistral looping), and cells slide in the opposite direction to wild-type (rightward on dorsal, leftward on ventral), suggesting that initial cell chirality determines the direction of cell sliding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C26 are supported by data in Figures 2A-D and citations to prior work. The quantitative analysis of cell sliding in Myo31DF mutants shows opposite directionality compared to wild-type, consistent with the inverted rotation phenotype. The correlation between inverted cell chirality (C21, cited) and inverted sliding direction supports the causal inference in C26.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "772fdb6f-e00c-4aaf-b03c-3db856e38b21",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Cell sliding occurs predominantly without junctional remodeling (>90% of junctions maintained), with cell intercalation frequency of 9.2% (wild-type) and 6.0% (Myo31DF). Cell intercalation shows no LR directional bias and does not play a major role in LR directional hindgut rotation, but contributes to anterior-posterior elongation through convergent extension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C35 are supported by data in Figures 3A-B, Table 1, and Figure 3\u2014figure supplement 1. The quantitative analysis shows low frequency of junctional remodeling and lack of LR bias in intercalation direction. The cell boundary angle analysis (C33) further supports that intercalation is not directionally biased. The conclusion that cell sliding does not require junctional remodeling (C30) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "fac3d7fd-e1af-4558-8273-6c5f0e31d12a",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "No clear anisotropy in MyoII distribution was detected in hindgut epithelial cells. Cell boundaries between cells in a column tilt counterclockwise in wild-type and clockwise in Myo31DF mutants during rotation, suggesting cell sliding is accompanied by cell deformation associated with dissolution of cell chirality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 are supported by data in Figure 3\u2014video 3 and Figure 3F. The absence of MyoII anisotropy (C36) distinguishes this mechanism from other LR asymmetric processes. The quantitative analysis of cell boundary tilting (C37, Figure 3F) provides evidence for cell deformation during sliding. The inference about cell deformation and chirality dissolution (C38) is reasonable given the observed boundary tilting patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "1a6baa61-6d91-46e8-9740-efd3799d67c7",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A 3D vertex model simulation recapitulates chiral cell sliding with 88.5\u00b0 twist at t=80. The simulation shows that loss of cell chirality (cells becoming rounder) begins before prominent changes in relative cell positions (cell sliding), with a time lag suggesting these are mechanically distinct events due to different viscoelastic properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 are supported by simulation data in Figures 4A, C-E. The temporal sequence showing early cell shape changes (t=1.0) followed by cell sliding is clearly demonstrated. The interpretation of mechanical distinction (C43) is reasonable and supported by citation to Honda et al., 2004. However, the claim about viscoelastic properties is somewhat speculative as it's based on model assumptions rather than direct experimental measurement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "630a7855-62c3-4250-9811-ef9c32ada571",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In a simulation with fixed tube ends preventing rotation, cell chirality is still lost but cells do not slide directionally, demonstrating that cell sliding/rotation is not required for chirality loss and that these processes are not always coupled. This supports that mechanical force bias from cell chirality drives directional cell sliding and rotation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 are supported by simulation data in Figure 4\u2014figure supplement 3. The modified simulation provides a critical control showing that chirality loss and cell sliding can be uncoupled, strengthening the mechanistic interpretation. The conclusion that force bias from chirality drives sliding (C47) is well-supported by this dissociation experiment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "7b39562d-b831-479b-ad99-a5a4102d7c2c",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A simulation with enantiomorphic (inverted) chirality recapitulates inverted rotation and cell sliding, supporting that initial cell chirality determines the direction of cell sliding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 are supported by simulation data in Figure 4F and Figure 4\u2014figure supplement 4. The inverted chirality simulation successfully recapitulates the Myo31DF mutant phenotype, providing computational validation of the relationship between chirality direction and sliding direction observed in vivo.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "feb9526f-4324-4a38-8425-2a1a39fb13c6",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cell intercalation rarely occurs in the simulation (2.7% by t=80). A simulation without junctional remodeling still produces cell sliding and tube rotation (83.1\u00b0 at t=80), confirming that cell deformation rather than intercalation drives sliding and rotation. Cell sliding induced by cell-chirality-provoked mechanical force bias connects cell chirality to LR asymmetric tube twisting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 are supported by simulation data in Figures 4A-B. The low intercalation frequency in the standard simulation and the successful rotation in the no-remodeling simulation provide strong computational evidence that cell deformation, not intercalation, is the primary mechanism. The conclusion (C52) is well-supported by the collective simulation results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "1ef1e8e9-95b0-4388-91fc-9abafe3fe4fe",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Cell sliding is a novel mechanism of epithelial morphogenesis where cells directionally change position relative to posterior neighbors. In Drosophila hindgut, initial LR asymmetry of cell shape (cell chirality) is converted through LR asymmetric cell sliding into directional axial twisting. In Myo31DF mutants, cell sliding occurs in the opposite direction. Unlike directional cell intercalation, cell sliding does not require junctional remodeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53, C72-C75 represent the main conclusions of the study, supported by both in vivo (Figures 1-3) and in silico (Figure 4) analyses. The identification of cell sliding as a distinct mechanism is well-supported by: (1) quantitative cell tracking showing directional movement, (2) low frequency of junctional remodeling, (3) simulation recapitulating the process, and (4) opposite directionality in Myo31DF mutants. These are the core novel findings of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "3c750cb8-0150-4643-9423-4ec6f5e4205a",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background on LR asymmetry mechanisms in vertebrates (nodal flow, nodal cassette genes) and recent findings of tissue-intrinsic mechanisms. Cell chirality has been observed in cultured mammalian cells, zebrafish melanophores, human fibroblasts, and neutrophils, but physiological roles in vertebrates remain unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C61 are well-supported by appropriate citations to prior literature. These claims accurately represent established knowledge about vertebrate LR asymmetry mechanisms and cell chirality in cultured cells. The statement that physiological roles remain unknown (C61) appropriately frames the gap in knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "cee5b1e8-5d9b-45a2-8625-cfae150c6608",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Cell intercalation is required for convergent extension of the hindgut (prior work). Cell chirality was observed before hindgut rotation and lost during rotation in vivo, suggesting that cancelation of cell chirality is probably the primary driving force for cell sliding and hindgut rotation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 are supported by citation (C62) and in vivo observations (C63). The inference about chirality cancelation as the driving force (C64) is reasonable given the temporal sequence, though the word 'probably' appropriately indicates this is an interpretation. This conclusion is further supported by the simulation results showing chirality loss precedes sliding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "3ed56f09-2204-4e4a-b543-0db89aa1f5be",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Discussion of evolutionary conservation and potential roles of cell chirality: explanted hearts develop dextral looping (tissue-intrinsic), Drosophila organs use cell chirality for LR asymmetry, cell chirality observed only in Drosophila tissues to date but reported in cultured vertebrate cells from various organs, suggesting cell chirality may play roles in vertebrate LR organogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C71 are supported by appropriate citations. These discussion points accurately represent prior work and make reasonable speculations (C71) about potential roles in vertebrates based on the conservation of cell chirality across species. The speculation is appropriately qualified with 'may play specific roles.'",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    },
+    {
+      "id": "261e9e52-79c2-45d5-9918-902b7bd4e3f2",
+      "content_id": "7ae90ef2-d87d-4b3a-9c95-e8e12d186c4d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Cell sliding may be involved in other cases of LR-polarized epithelial morphogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C76 is a speculation about broader applicability of the cell sliding mechanism. While reasonable given the findings, this claim lacks direct supporting evidence from the current study. The speculation is appropriately qualified with 'may,' but no data is provided to test this hypothesis in other systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:00:10.300715Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a58c15f5-c216-4875-b9e6-8d372b99afd3",
+      "result_id": "64e7994f-58d6-4aaa-a7aa-c80e1d3485ad"
+    },
+    {
+      "claim_id": "9ada6b1e-9a6e-4916-9d25-97bf64b178b0",
+      "result_id": "64e7994f-58d6-4aaa-a7aa-c80e1d3485ad"
+    },
+    {
+      "claim_id": "6c73e837-a528-4381-bcc6-4fadfd453e5a",
+      "result_id": "64e7994f-58d6-4aaa-a7aa-c80e1d3485ad"
+    },
+    {
+      "claim_id": "a76cbc3f-aa7d-44f8-8ca4-5a0530693a40",
+      "result_id": "64e7994f-58d6-4aaa-a7aa-c80e1d3485ad"
+    },
+    {
+      "claim_id": "2d6bfadb-1790-4e77-8a2b-351e044b088e",
+      "result_id": "64e7994f-58d6-4aaa-a7aa-c80e1d3485ad"
+    },
+    {
+      "claim_id": "02b34e9e-3464-4ceb-9772-0ec2bf46351c",
+      "result_id": "64e7994f-58d6-4aaa-a7aa-c80e1d3485ad"
+    },
+    {
+      "claim_id": "20f02262-1a22-45ec-bca0-d8b0143aac75",
+      "result_id": "64e7994f-58d6-4aaa-a7aa-c80e1d3485ad"
+    },
+    {
+      "claim_id": "c7e61162-8dd2-4c45-8883-60d29853b5c6",
+      "result_id": "64e7994f-58d6-4aaa-a7aa-c80e1d3485ad"
+    },
+    {
+      "claim_id": "64326e78-5fe9-48fb-8be3-62df143da37f",
+      "result_id": "64e7994f-58d6-4aaa-a7aa-c80e1d3485ad"
+    },
+    {
+      "claim_id": "f04c9da8-8a2d-478d-b5ac-4ed415bd47ba",
+      "result_id": "86a6c681-5b63-461e-8a0c-0b85b7800ec2"
+    },
+    {
+      "claim_id": "607229a8-ba15-42d1-b0f7-6f88a5307716",
+      "result_id": "86a6c681-5b63-461e-8a0c-0b85b7800ec2"
+    },
+    {
+      "claim_id": "8d9ec4ec-6b1f-4ae3-9d7f-fb0e7f7c168a",
+      "result_id": "86a6c681-5b63-461e-8a0c-0b85b7800ec2"
+    },
+    {
+      "claim_id": "91f393fb-5b50-4076-a991-b40b03ed700d",
+      "result_id": "3aeeb181-bcf4-4dbc-977b-48953d09deed"
+    },
+    {
+      "claim_id": "937e8ba7-e63a-493f-97e9-4997724c179f",
+      "result_id": "3aeeb181-bcf4-4dbc-977b-48953d09deed"
+    },
+    {
+      "claim_id": "26f23468-a2a2-4f85-8f3d-60a8a9589e8b",
+      "result_id": "3aeeb181-bcf4-4dbc-977b-48953d09deed"
+    },
+    {
+      "claim_id": "da9bee80-cb86-4cdb-88d1-288110831daf",
+      "result_id": "3aeeb181-bcf4-4dbc-977b-48953d09deed"
+    },
+    {
+      "claim_id": "c59d7151-1266-4fc6-9310-a19184184dae",
+      "result_id": "3aeeb181-bcf4-4dbc-977b-48953d09deed"
+    },
+    {
+      "claim_id": "40240d3d-a701-4c6e-8673-155a06ff7868",
+      "result_id": "3aeeb181-bcf4-4dbc-977b-48953d09deed"
+    },
+    {
+      "claim_id": "53627aa6-8130-430c-a13d-1eeed7a4f90b",
+      "result_id": "696882b4-b690-459c-b020-06b51bb6447a"
+    },
+    {
+      "claim_id": "150fe4e5-fe13-45fb-b80a-64e1e8c6427d",
+      "result_id": "696882b4-b690-459c-b020-06b51bb6447a"
+    },
+    {
+      "claim_id": "5370087d-0984-4134-aa6c-a7d34b08531c",
+      "result_id": "696882b4-b690-459c-b020-06b51bb6447a"
+    },
+    {
+      "claim_id": "8d14bbaa-1bce-4275-9c9a-93b844cb61b8",
+      "result_id": "696882b4-b690-459c-b020-06b51bb6447a"
+    },
+    {
+      "claim_id": "a6d2ab05-e395-4579-9b95-13a3b5d83baa",
+      "result_id": "696882b4-b690-459c-b020-06b51bb6447a"
+    },
+    {
+      "claim_id": "64843102-b66d-479e-83c4-7a5f944870b3",
+      "result_id": "696882b4-b690-459c-b020-06b51bb6447a"
+    },
+    {
+      "claim_id": "f7b6218a-c54f-4ad7-95e3-d9b6584eb0ca",
+      "result_id": "696882b4-b690-459c-b020-06b51bb6447a"
+    },
+    {
+      "claim_id": "36affa76-149d-4ed2-a88e-8e6ba284a570",
+      "result_id": "696882b4-b690-459c-b020-06b51bb6447a"
+    },
+    {
+      "claim_id": "cbe89a68-de21-4ab7-9eb7-ce118db6e87a",
+      "result_id": "772fdb6f-e00c-4aaf-b03c-3db856e38b21"
+    },
+    {
+      "claim_id": "45cbc092-9f28-48a3-b62b-e3709d660587",
+      "result_id": "772fdb6f-e00c-4aaf-b03c-3db856e38b21"
+    },
+    {
+      "claim_id": "84e6f4ab-2bf0-42ec-b75e-19d901b13121",
+      "result_id": "772fdb6f-e00c-4aaf-b03c-3db856e38b21"
+    },
+    {
+      "claim_id": "bdab48e6-6170-4b9a-8b9b-89f542b615c9",
+      "result_id": "772fdb6f-e00c-4aaf-b03c-3db856e38b21"
+    },
+    {
+      "claim_id": "7ff48242-f094-44d9-81ac-74d403a8dca2",
+      "result_id": "772fdb6f-e00c-4aaf-b03c-3db856e38b21"
+    },
+    {
+      "claim_id": "c7ff2459-8fbd-4aa0-bc37-860a46645465",
+      "result_id": "772fdb6f-e00c-4aaf-b03c-3db856e38b21"
+    },
+    {
+      "claim_id": "d7c61fbd-e279-42d4-a702-9395bc62ae12",
+      "result_id": "772fdb6f-e00c-4aaf-b03c-3db856e38b21"
+    },
+    {
+      "claim_id": "7dadb7d2-438d-49a9-8ef1-30fda1a5a717",
+      "result_id": "772fdb6f-e00c-4aaf-b03c-3db856e38b21"
+    },
+    {
+      "claim_id": "5d4fa412-7971-431b-a4d7-0c1c493927d7",
+      "result_id": "772fdb6f-e00c-4aaf-b03c-3db856e38b21"
+    },
+    {
+      "claim_id": "eec5ed8a-2b2f-4371-9d58-f1217c1d5c46",
+      "result_id": "fac3d7fd-e1af-4558-8273-6c5f0e31d12a"
+    },
+    {
+      "claim_id": "b4f29293-c28e-4f78-a8d0-d6c4392a7025",
+      "result_id": "fac3d7fd-e1af-4558-8273-6c5f0e31d12a"
+    },
+    {
+      "claim_id": "c40818fd-eb03-4e42-9024-554b1a564608",
+      "result_id": "fac3d7fd-e1af-4558-8273-6c5f0e31d12a"
+    },
+    {
+      "claim_id": "4d4fb6a0-da1d-42c5-be0e-296136925732",
+      "result_id": "1a6baa61-6d91-46e8-9740-efd3799d67c7"
+    },
+    {
+      "claim_id": "f95dc40a-a3f9-4e0c-93b4-972cf4ab0fec",
+      "result_id": "1a6baa61-6d91-46e8-9740-efd3799d67c7"
+    },
+    {
+      "claim_id": "d252f4bd-197f-47da-a7f0-481dd1c3c940",
+      "result_id": "1a6baa61-6d91-46e8-9740-efd3799d67c7"
+    },
+    {
+      "claim_id": "95abc024-7dad-42b2-a872-af332445eb04",
+      "result_id": "1a6baa61-6d91-46e8-9740-efd3799d67c7"
+    },
+    {
+      "claim_id": "b09e184b-9b14-4c9b-a5b5-2dce4350b2ed",
+      "result_id": "1a6baa61-6d91-46e8-9740-efd3799d67c7"
+    },
+    {
+      "claim_id": "4e13082d-75ea-48ef-822c-97f913ce5734",
+      "result_id": "630a7855-62c3-4250-9811-ef9c32ada571"
+    },
+    {
+      "claim_id": "e72235a0-849d-492f-8610-dfa712138185",
+      "result_id": "630a7855-62c3-4250-9811-ef9c32ada571"
+    },
+    {
+      "claim_id": "479a880c-92d6-40c5-a798-b27124052a8f",
+      "result_id": "630a7855-62c3-4250-9811-ef9c32ada571"
+    },
+    {
+      "claim_id": "65088c5d-839b-459c-ba75-f06eff525a7d",
+      "result_id": "630a7855-62c3-4250-9811-ef9c32ada571"
+    },
+    {
+      "claim_id": "b8cfc0ea-2780-4b69-b8b0-e573a62934fa",
+      "result_id": "7b39562d-b831-479b-ad99-a5a4102d7c2c"
+    },
+    {
+      "claim_id": "e4a137d7-c817-45ca-9754-aba3a7f7f75c",
+      "result_id": "7b39562d-b831-479b-ad99-a5a4102d7c2c"
+    },
+    {
+      "claim_id": "c54a4999-304f-468b-9719-2e045b978939",
+      "result_id": "feb9526f-4324-4a38-8425-2a1a39fb13c6"
+    },
+    {
+      "claim_id": "8a161daa-717d-46db-ae47-d14b6fe17e76",
+      "result_id": "feb9526f-4324-4a38-8425-2a1a39fb13c6"
+    },
+    {
+      "claim_id": "ebe60028-92cc-4e14-870b-95f4c48b0007",
+      "result_id": "feb9526f-4324-4a38-8425-2a1a39fb13c6"
+    },
+    {
+      "claim_id": "b50fcad2-9ea1-4753-9ce7-ce3ebed1a711",
+      "result_id": "1ef1e8e9-95b0-4388-91fc-9abafe3fe4fe"
+    },
+    {
+      "claim_id": "ca7a5653-25ff-4234-996c-b808b790a5fc",
+      "result_id": "1ef1e8e9-95b0-4388-91fc-9abafe3fe4fe"
+    },
+    {
+      "claim_id": "bfe1d972-3360-4f22-b141-3fa4095c39fd",
+      "result_id": "1ef1e8e9-95b0-4388-91fc-9abafe3fe4fe"
+    },
+    {
+      "claim_id": "32f7370d-2041-4ce1-b50d-bf29ba0f6594",
+      "result_id": "1ef1e8e9-95b0-4388-91fc-9abafe3fe4fe"
+    },
+    {
+      "claim_id": "f029c95e-58d5-46e6-adc2-6b3d3e3514be",
+      "result_id": "1ef1e8e9-95b0-4388-91fc-9abafe3fe4fe"
+    },
+    {
+      "claim_id": "88d9d5ab-a140-49e3-8379-1a538d8bb3df",
+      "result_id": "3c750cb8-0150-4643-9423-4ec6f5e4205a"
+    },
+    {
+      "claim_id": "7b299a98-af87-4e81-a45d-b0f5534632f1",
+      "result_id": "3c750cb8-0150-4643-9423-4ec6f5e4205a"
+    },
+    {
+      "claim_id": "d27af01c-4c1d-4057-afee-7e4e6c09f90e",
+      "result_id": "3c750cb8-0150-4643-9423-4ec6f5e4205a"
+    },
+    {
+      "claim_id": "6270071d-4f83-4ceb-852c-ed95bd8de7d3",
+      "result_id": "3c750cb8-0150-4643-9423-4ec6f5e4205a"
+    },
+    {
+      "claim_id": "1a9ba53c-8c05-43b0-8a13-dc793482a329",
+      "result_id": "3c750cb8-0150-4643-9423-4ec6f5e4205a"
+    },
+    {
+      "claim_id": "ca2c4b7f-b05e-4df2-bbcd-1786e72064fa",
+      "result_id": "3c750cb8-0150-4643-9423-4ec6f5e4205a"
+    },
+    {
+      "claim_id": "a5d97c5f-03e1-4032-8905-3a0d22ecf011",
+      "result_id": "3c750cb8-0150-4643-9423-4ec6f5e4205a"
+    },
+    {
+      "claim_id": "630ad9a0-f372-415a-ac04-2c2e3024c7fb",
+      "result_id": "3c750cb8-0150-4643-9423-4ec6f5e4205a"
+    },
+    {
+      "claim_id": "435f0a48-566a-4396-8cc0-bf91a85c6dbe",
+      "result_id": "cee5b1e8-5d9b-45a2-8625-cfae150c6608"
+    },
+    {
+      "claim_id": "0deb8251-eda3-4793-bf1b-b8ec46a30540",
+      "result_id": "cee5b1e8-5d9b-45a2-8625-cfae150c6608"
+    },
+    {
+      "claim_id": "ae530f15-b119-4061-804b-9a7ed2518d74",
+      "result_id": "cee5b1e8-5d9b-45a2-8625-cfae150c6608"
+    },
+    {
+      "claim_id": "eac5c937-abee-4797-995c-ada5c1bf7d00",
+      "result_id": "3ed56f09-2204-4e4a-b543-0db89aa1f5be"
+    },
+    {
+      "claim_id": "5def2c76-0505-45cb-8d2e-0d54aab99b22",
+      "result_id": "3ed56f09-2204-4e4a-b543-0db89aa1f5be"
+    },
+    {
+      "claim_id": "2aa8d746-dbaf-415f-a718-ecc472906a7b",
+      "result_id": "3ed56f09-2204-4e4a-b543-0db89aa1f5be"
+    },
+    {
+      "claim_id": "f086b182-b7f7-4ebb-b7a8-0520d16f74cd",
+      "result_id": "3ed56f09-2204-4e4a-b543-0db89aa1f5be"
+    },
+    {
+      "claim_id": "a1411b72-34cd-4a4d-9ee2-5ba45601c05b",
+      "result_id": "3ed56f09-2204-4e4a-b543-0db89aa1f5be"
+    },
+    {
+      "claim_id": "75b2f5af-2524-4e69-8da9-f342119900c5",
+      "result_id": "3ed56f09-2204-4e4a-b543-0db89aa1f5be"
+    },
+    {
+      "claim_id": "626a1c63-164d-4eca-b036-5a64fe45259d",
+      "result_id": "3ed56f09-2204-4e4a-b543-0db89aa1f5be"
+    },
+    {
+      "claim_id": "6f5b91b7-c6c0-4d0c-8b5a-30913f389833",
+      "result_id": "261e9e52-79c2-45d5-9918-902b7bd4e3f2"
+    }
+  ],
+  "comparisons": []
+}

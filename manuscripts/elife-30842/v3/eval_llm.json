@@ -1,0 +1,343 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "CBL0137 binds DNA via intercalation and destabilizes nucleosomes in a dose-dependent manner without causing DNA damage. At lower concentrations, DNA unfolds from H2A/H2B dimers; at higher concentrations, complete nucleosome disassembly occurs with transition to Z-DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C13 are consistently supported by cited previous work (Safina et al., 2017) and represent established mechanistic understanding of CBL0137 action. The dose-dependent effects on nucleosome structure are well-documented, and the absence of DNA damage is clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C25"
+    ],
+    "result": "CBL0137 activates p53 through a non-canonical pathway involving CK2 phosphorylation at serine 392, without activating DNA damage response kinases or phosphorylating N-terminal serines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 and C25 are supported by cited previous work (Gasparian et al., 2011). The absence of classical DNA damage markers (ATM, ATR, DNA-PK activation, N-terminal p53 phosphorylation) and presence of alternative CK2-mediated phosphorylation is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "FACT (SPT16/SSRP1) undergoes chromatin-trapping (c-trapping) in response to CBL0137-induced nucleosome destabilization, binding to exposed nucleosome surfaces and Z-DNA via different domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C24 are supported by a combination of established knowledge about FACT composition (C17) and cited previous work (Safina et al., 2017; others). The c-trapping phenomenon and FACT binding to partially disassembled nucleosomes and Z-DNA is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "CBL0137 activates transcription of normally silenced heterochromatic regions (centromeric/pericentromeric repeats, endogenous retroviruses), leading to dsRNA accumulation and type I interferon response activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 and C54-C57 are supported by multiple experimental approaches: RNA-seq showing increased repetitive element transcription (C56, Figure 6D), Northern blot detecting B1 SINE transcripts (C55, Figure 6C), immunofluorescence showing dsRNA accumulation (C54, Figure 6A,B), and multiple assays demonstrating IFN response (RT-PCR, Western blot, reporter assays).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "CBL0137 induces interferon response in both FACT-positive and FACT-negative mouse tissues, with Ifit3 upregulated in all organs and IFN signaling pathway enriched in GSEA analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 are supported by microarray data (Figures 1-2) showing tissue-specific FACT expression (C30-C31), consistent Ifit3 upregulation across organs (C32, Figure 1D), and GSEA demonstrating IFN pathway enrichment (C33-C34, Figure 2A,C). The FACT-independence is inferred from observing IFN response in FACT-negative tissues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "CBL0137 induces rapid IFN response kinetics in mouse tissues, with peak Irf7 induction at 24 hours and Isg15/Usp18 induction as early as 6 hours, faster than other small molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 are supported by time-course RT-PCR and Western blot data (Figure 3D-H). The kinetics data clearly show dose-dependent responses with specific timing. The comparison to other inducers (C39) is based on literature comparison, though direct head-to-head experiments are not shown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "CBL0137 induces IFN-inducible genes in normal fibroblasts (stronger in p53-null cells) but not in tumor cells by standard assays; however, ISRE reporter assays detect IFN response in tumor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 are supported by RT-PCR and Western blot data (Figure 4A-C) showing induction in fibroblasts with p53-dependence, and reporter assays (Figure 4D-E) demonstrating IFN response in tumor cells. The methodological difference (direct gene measurement vs. reporter) explains the apparent discrepancy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "CBL0137-induced IFN response requires Ifnar1 and Irf7 but not Irf1, and is enhanced by p53 loss, demonstrating dependence on canonical IFN signaling components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 are supported by RT-PCR and Western blot data using knockout MEF cells and mice (Figure 5A-B). The genetic experiments clearly demonstrate the requirement for Ifnar1 and Irf7, lack of requirement for Irf1, and enhancement by p53 loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Z-DNA formation induced by high-dose CBL0137 does not mediate the IFN response, as ZBP1 knockout does not affect ISRE reporter activity and Z-DNA is absent at IFN-inducing concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by ZBP1 knockout experiments (Figure 6\u2014figure supplement 1A-B) showing no effect on ISRE reporter, and immunofluorescence (Figure 6\u2014figure supplement 1C) showing absence of Z-DNA at concentrations inducing IFN response. This effectively rules out Z-DNA as the IFN trigger.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Both CBL0137 and HDAC inhibitor TSA activate transcription from silenced chromatin, but TSA causes weaker IFN response despite similar chromatin opening effects, with different mechanisms (histone acetylation vs. histone eviction).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 are supported by multiple assays: flow cytometry showing GFP activation (C60, Figure 7A), RT-PCR showing gene induction (C61, Figure 7B), reporter assays showing differential IFN response (C62, Figure 7C), and Western blots showing different mechanisms (C63-C64, Figure 7D). The concentration comparison (C65) is cited from previous work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Nucleosome 'opening' with H1 displacement, occurring at lower CBL0137 concentrations (0.5-1 \u03bcM) than core histone eviction, is sufficient to allow heterochromatin transcription and TRAIN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by live cell imaging showing H1 redistribution at lower concentrations (C67, Figure 8A-B) and correlation with TRAIN concentration range (C68). However, C66 and C69 involve some inference about the 'opened' nucleosome state, as direct structural evidence is not provided. The proposal is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C73",
+      "C74"
+    ],
+    "result": "CBL0137 inhibits oncogene-induced transformation in an interferon-dependent manner, as demonstrated by reduced transformed foci only in Ifnar1+/+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C73-C74 are supported by transformation assay data (Figure 9A) showing significant reduction in transformed foci with CBL0137 treatment only in cells with functional IFN receptor. The Ifnar1-dependence clearly demonstrates the role of IFN signaling in this anticancer effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C75",
+      "C76"
+    ],
+    "result": "CBL0137 inhibits tumor growth in mice in an interferon-dependent manner, with wild-type tumors showing complete growth arrest while Ifnar1-/- tumors continue growing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C75-C76 are supported by tumor growth experiments (Figure 9B-C) showing differential response based on Ifnar1 status. The complete growth arrest in wild-type tumors versus continued growth in Ifnar1-/- tumors clearly demonstrates the importance of IFN signaling in CBL0137's anticancer activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "CBL0137 effects on nucleosomes are dose-dependent and reversible at lower concentrations: <1 \u03bcM causes opening with H1 loss, 1-5 \u03bcM causes dimer detachment, >5 \u03bcM causes complete disassembly and irreversible cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 are supported by a combination of current data (H1 redistribution imaging, Figure 8) and cited previous work (Safina et al., 2017) for higher concentration effects. The reversibility observations (C80-C82) are stated as experimental observations. The dose-response relationship is consistent across multiple experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "FACT responds to CBL0137-induced chromatin damage through concentration-dependent mechanisms: nucleosome-trapping at 0.3-1 \u03bcM and Z-DNA binding at >3 \u03bcM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 are supported by cited previous work (Safina et al., 2017; Tsunaka et al., 2016; others) for FACT binding properties and current observations of concentration-dependent effects. The mechanistic model is well-supported by structural and biochemical data from multiple sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "IFN response activation is the most prominent FACT-independent effect of CBL0137, showing bell-shaped dose response with maximum at 0.5-1 \u03bcM, likely triggered by dsRNA from heterochromatin transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are supported by comprehensive data showing IFN response across tissues and cell types, dose-response curves showing peak at 0.5-1 \u03bcM, and dsRNA detection. The mechanistic proposal (C90) is well-supported by the combination of heterochromatin transcription and dsRNA accumulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "H1 displacement may selectively make heterochromatin accessible to RNA polymerase, and chromatin opening without complete disassembly is sufficient for anticancer effects in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C93 involve significant inference and speculation. While C92-C93 are supported by the correlation between effective concentrations for IFN response and anticancer activity, C91 is a proposed mechanism without direct experimental validation. The selective transcription of heterochromatin is observed but the specific role of H1 displacement requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C4",
+      "C70"
+    ],
+    "result": "HDAC inhibitors also induce TRAIN, though the degree depends on cell type and mode of chromatin opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C70 are supported by experiments with TSA showing IFN gene induction in MEF cells (Figure 7B) and differential responses in different cell types (Figure 7C). However, the TRAIN response to TSA is weaker than to CBL0137, suggesting cell-type and mechanism-specific differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C5",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "TRAIN may be a general mechanism ensuring epigenetic integrity by eliminating cells with desilenced chromatin, potentially evolved from antiviral defense and serving as an epigenetic lock maintaining differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C97-C100 are explicitly speculative proposals about the biological function and evolutionary origin of TRAIN. While the observations of TRAIN in multiple contexts (DNA demethylation, chromatin opening) support the generality, the proposed functions as epigenetic quality control and evolutionary origins are hypotheses requiring further experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C29",
+      "C71",
+      "C72"
+    ],
+    "result": "TRAIN was previously observed with DNA demethylation, and CBL0137 previously showed cancer prevention in tumor-prone mice, potentially through IFN-mediated elimination of transformed cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C71-C72 are supported by cited previous work. C29 references prior TRAIN observations with demethylating agents, C71 cites previous cancer prevention studies with CBL0137, and C72 cites literature on differential IFN sensitivity of transformed vs. normal cells. These provide important context for the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "CBL0137's effects suggest potential applications as pharmacodynamic markers in clinical trials and as tools for studying epigenetic regulation and therapeutic epigenetic manipulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C96 are speculative proposals about future applications. While C94 has some support from detection of IFN factors in mouse plasma, C95-C96 are suggestions for potential uses without experimental validation. These represent reasonable hypotheses based on the mechanism but require further development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Loss of FACT via c-trapping may contribute to activation of silenced transcription, as FACT mutations in yeast cause cryptic transcription and FACT is important for centromeric chromatin assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C59 cite relevant previous work from yeast and mammalian systems, but the connection to TRAIN in CBL0137-treated cells is inferential. The authors observe IFN response in FACT-negative tissues, suggesting FACT-independent mechanisms are also important. The contribution of FACT loss to heterochromatin transcription remains unclear.",
+    "result_type": "MINOR"
+  }
+]

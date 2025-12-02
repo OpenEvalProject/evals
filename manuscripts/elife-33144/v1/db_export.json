@@ -1,0 +1,2179 @@
+{
+  "submission": {
+    "id": "79216a57-2e03-4a2f-a70b-1d63e286a059",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:29:43.583098Z",
+    "updated_at": "2025-12-02T00:29:43.583098Z"
+  },
+  "content": [
+    {
+      "id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "submission_id": "79216a57-2e03-4a2f-a70b-1d63e286a059",
+      "content_type": "manuscript",
+      "content_text": "# Network oscillation rules imposed by species-specific electrical coupling\n\n## Authors\n\n- Stefanos Stagkourakis<sup>1</sup> ([ORCID: 0000-0003-1218-791X](https://orcid.org/0000-0003-1218-791X))\n- Carolina Th\u00f6rn P\u00e9rez<sup>1</sup> ([ORCID: 0000-0002-3480-8599](https://orcid.org/0000-0002-3480-8599))\n- Arash Hellysaz<sup>1</sup> ([ORCID: 0000-0003-4512-3795](https://orcid.org/0000-0003-4512-3795))\n- Rachida Ammari<sup>1</sup>\n- Christian Broberger<sup>1</sup> ([ORCID: 0000-0002-7050-8809](https://orcid.org/0000-0002-7050-8809)) \u2020\n\n### Affiliations\n\n1. Department of Neuroscience Karolinska Institutet Stockholm Sweden\n\n\u2020 Corresponding author\n\n## Abstract\n\nElectrical junctions are widespread within the mammalian CNS. Yet, their role in organizing neuronal ensemble activity remains incompletely understood. Here, in a functionally well-characterized system \u2013 neuroendocrine tuberoinfundibular dopamine (TIDA) neurons - we demonstrate a striking species difference in network behavior: rat TIDA cells discharge in highly stereotyped, robust, synchronized slow oscillations, whereas mouse oscillations are faster, flexible and show substantial cell-to-cell variability. We show that these distinct operational modes are explained by the presence of strong TIDA-TIDA gap junction coupling in the rat, and its complete absence in the mouse. Both species, however, encompass a similar heterogeneous range of intrinsic resonance frequencies, suggesting similar network building blocks. We demonstrate that gap junctions select and impose the slow network rhythm. These data identify a role for electrical junctions in determining oscillation frequency and show how related species can rely on distinct network strategies to accomplish adaptive control of hormone release.\n\n## Introduction\n\nThe default activity pattern of a neuronal network emerges from the combination of the intrinsic electrical characteristics of the constituent neurons and the wiring and properties of cell-to-cell connections within the circuit. In order to understand the operations of the brain, it is therefore necessary to elucidate the precise contribution of membrane electrophysiology, as well as different modes of communication, to ensemble activity. Neuronal gap junctions (Furshpan and Potter, 1957; Watanabe, 1958; Bennett et al., 1963) impact on both these features. While once surmised to be exclusive to invertebrate species and/or early development, steadily accumulating evidence has established that electrical junctions formed by gap junctions are both common and consequential within many populations in the adult, mammalian CNS (see Connors and Long, 2004). By mediating ultra-fast, subthreshold, bidirectional (albeit not always symmetrical) cell-cell communication, gap junctions have been implicated most obviously in the synchronization (e.g. Christie et al., 1989; Beierlein et al., 2000; Dugu\u00e9 et al., 2009) of neuronal activity. The particular kinetics of electrical junctions further allow them to for\u00a0example interact with the parallel chemical synaptic transmission between neurons (e.g. Llinas et al., 1974; Mathy et al., 2014; see Pereda, 2014) and spread intracellular messengers between cells (Tsien and Weingart, 1974). The presence of gap junctions changes the computational rules within circuits.\n\nGap junctions are of particular interest in the context of neuronal oscillations, a collective behavior that involves the coordination, and often harmonization, of neuronal discharge (e.g. Manor et al., 1997b; Draguhn et al., 1998; Hormuzdi et al., 2001). Oscillations are intrinsic to brain networks throughout the neuraxis (see Buzs\u00e1ki and Watson, 2012), appearing in wide, but stereotyped, frequency spectra. Shifts in network frequency have been proposed to correspond to changes in the information carried across neuronal transmission (see Singer and Gray, 1995), and a switch in period can denote the conversion of a physiological oscillation into a pathological rhythm (Kostopoulos et al., 1981). While the issue of whether (and if so, how) gap junctions influence, or even set, the specific frequency of a network oscillation has been the subject of a limited number of elegant modeling and theoretical studies (Kepler et al., 1990; Meunier, 1992; Pedersen et al., 2005), there is little experimental data addressing this important issue. This dearth of information can in no small measure be ascribed to limitations in the available methodological repertoire: pharmacological tools are compromised by poor specificity (e.g. Beaumont and Maccaferri, 2011), whereas genetically manipulated animals, although informative in several aspects, often exhibit incomplete loss-of-function (De Zeeuw et al., 2003; Lee et al., 2014). Additional models could thus be of substantial value to forward our understanding. Here, studying the neuroendocrine tuberoinfundibular dopamine (TIDA) neurons, which oscillate between depolarized UP and hyperpolarized DOWN states (Lyons et al., 2010), we uncover an unexpected rat-mouse species difference in electrical coupling that we exploit to reveal principles of how gap junctions can constrain and dictate ensemble network behavior.\n\n## Results\n\nTuberoinfundibular dopamine neurons in the hypothalamic dorsomedial arcuate nucleus (dmArc) of rats exhibit a slow, robust, highly rhythmic, synchronized network oscillation in vitro (Lyons et al., 2010). Reports on mouse TIDA neurons, however, describe notably irregular fast phasic firing (Brown et al., 2012; Roman\u00f2 et al., 2013; Zhang and van den Pol, 2015). Such dichotomy across analogous rodent circuits are rare in the literature. This intriguing observation prompted us to systematically compare rat and mouse TIDA neurons under identical recording conditions to first determine if these discordant accounts reflect a species difference proper or discrepancies in methodology.\n\nMale rat TIDA cells identified by their location in the dmArc (Figure 1A\u2013B) and characteristic electrical properties (Lyons et al., 2010), exhibited a stereotyped slow (0.15\u00a0\u00b1\u00a00.01 Hz; n\u00a0=\u00a029, Figure 1C,G) and highly regular (coefficient of variation (CV) for frequency\u00a0=\u00a01.99 \u00b1 0.69%; n\u00a0=\u00a08 slices; Figure 1H) oscillation with similar membrane voltage across neurons within slices and between animals (Lyons et al., 2010) (Figure 2A,B,D). In striking contrast, while age- and sex-matched mouse TIDA neurons (Figure 1D,E), identified by using transgenic dopamine transporter (DAT; encoded by the Slc6a3 gene)-tdTomato\u2013expressing mice (Figure 1E), also exhibited sub - or supra-threshold phasic firing across different experimental conditions (Figure 1F, n\u00a0=\u00a0284/311; Figure 2B\u2013E), these oscillations were significantly faster (0.39\u00a0\u00b1\u00a00.05 Hz; n\u00a0=\u00a018\u201329 per group, Figure 1F,G), less rhythmic (Figure 1H), of a wide range of frequencies within the same slice (Figure 1G; CV\u00a0=\u00a041.48 \u00b1 6.19%; n\u00a0=\u00a08 slices) and more depolarized (mouse oscillation nadir \u221251.2\u00a0\u00b1\u00a00.9 mV vs. rat \u221266.0\u00a0\u00b1\u00a01.1 mV; n\u00a0=\u00a018 per group).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/33144/elife-33144-fig1-v1.jpg)\n\n**Figure 1.:** (A\u2013B) Distribution of TH-immunostained TIDA neurons (green) in the rat dorsomedial arcuate nucleus (dmArc; coronal section). ME, median eminence; 3V, third ventricle. (C) Patch clamp recordings from a rat TIDA neuron show a slow and robust oscillation evident in whole-cell current clamp (top), on-cell (middle) as well as voltage clamp (bottom) configurations. (D\u2013E) Mouse TIDA neurons in the dmArc visualized by dopamine transporter (DAT)-driven tdTomato fluorescence (red) and TH immunostaining (green). (F) Whole-cell current clamp recording (top) from a mouse TIDA neuron shows fast and irregular phasic firing, also evident in on-cell configuration (middle), whereas no oscillatory current is seen voltage-clamp mode (bottom). (G) Frequency distribution of the oscillation frequency in rat (blue) vs mouse (purple) TIDA neurons, with a narrow range of slow frequencies in rat and a wide range of faster oscillation frequencies in mouse (n\u00a0=\u00a029\u2013115 per group). (H), Representative autocorrelograms of rat and mouse TIDA oscillation. (I) Whole-cell current clamp recording: Progressive hyperpolarization fails to alter oscillation frequency in rat TIDA cells. (J, K,) Quantification of rat TIDA oscillation frequency (J) and amplitude (K) at different voltages (\u221260 mV, \u221280 mV and \u2212100 mV; n\u00a0=\u00a07, one-way ANOVA with Bonferroni as post-hoc test). (L) Progressive hyperpolarization (as in I) gradually slows oscillation frequency in mouse TIDA cells, with ultimate collapse of the oscillation below \u221280 mV. (M, N) Quantification of mouse TIDA oscillation frequency (M) and amplitude (N) at different voltages (n\u00a0=\u00a034, one-way ANOVA with Bonferroni as post-hoc test).\u00a0(O\u2013T) Test for entrainability of TIDA neurons in rat vs mouse arcuate slices during whole-cell current clamp recording. (O) Rat TIDA neuron immediately prior to ZAP current (I; sinusoidal current of gradually increasing frequency) injection presented in (P). (P) Bottom trace; injection of ZAP I does not change the rat TIDA neuron\u2019s oscillation frequency. (Q) Mouse TIDA neuron immediately prior to ZAP I injection presented in (R). (R) Injection of ZAP I entrains mouse TIDA neurons. (S) Cross correlation coefficient example and T) quantification between the injected ZAP I and the membrane voltage response in the two species (n\u00a0=\u00a010 per group, p<0.0001, unpaired t-test; rat shown in blue, mouse shown in purple). Data expressed as mean\u00a0\u00b1s.e.m.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/33144/elife-33144-fig2-v1.jpg)\n\n**Figure 2.:** (A) Representative whole-cell current clamp recording of a TIDA neuron from a hypothalamic rat brain slice. (B\u2013D) Representative whole-cell current clamp recordings of three mouse TIDA neurons, illustrate the wide spectrum of electrical activity (subthreshold oscillating, suprathreshold oscillating and silent) found in the murine TIDA population. (E) Quantification of the percentage of neurons found at the three different states shown in (b\u2013d) under different recording conditions. Note that the proportions remain the same regardless of network volume (slice thickness, 300 or 400 \u03bcm) or temperature (24\u00b0C or 34\u00b0C).\n\nIn addition to these temporal discrepancies, oscillation robustness varied markedly between species. An oscillatory current was seen in voltage clamp mode only in rat TIDA neurons (Figure 1C,F). Furthermore, rat TIDA oscillation frequency was insensitive to hyperpolarization (Figure 1I\u2013K), whereas mouse TIDA cells progressively decreased their frequency in response to negative current until it collapsed to a stable membrane potential below ca. \u221280 mV (Figure 1L\u2013N). To evaluate entrainability, we used the sinusoidal (\u2018ZAP\u2019; Hutcheon and Yarom, 2000b) current command of increasing frequency. Rat TIDA oscillations maintained their frequency when challenged with ZAP I (Figure 1O,P). In contrast, application of the same protocol to mouse TIDA neurons resulted in a full entrainment of the cells\u2019 rhythm (Figure 1Q,R). The cross-correlation coefficient of the frequency of the recorded cell and the current command was thus significantly lower in rat (0.61\u00a0\u00b1\u00a00.03; n\u00a0=\u00a010) compared to mouse (0.87\u00a0\u00b1\u00a00.01; n\u00a0=\u00a010; Figure 1S,T), demonstrating the rat TIDA oscillation is robust against perturbation, in contrast to the mouse.\n\nWe next addressed if the rat-mouse differences in single-cell features are reflected at the network level. Paired recordings from rat TIDA neurons revealed pronounced phase-locked synchronicity between cells (n\u00a0=\u00a063 pairs; Figure 3A,B; see also Lyons et al., 2010) in contrast to mouse TIDA cells, which were asynchronous (n\u00a0=\u00a040 pairs; Figure 3C,D). To record TIDA activity at the population level we performed two-photon Ca2+ imaging. Using Oregon green-BAPTA in rat slices, a cluster of cells in the dmArc exhibited spontaneous, slow synchronized Ca2+ oscillations (0.15\u00a0\u00b1\u00a00.01 Hz; Figure 3E,F,I). Ca2+ fluxes were visualized in murine TIDA cells using DAT-GCaMP3 mice. Simultaneous whole-cell and Ca2+ recordings in mouse TIDA neurons revealed strongly correlated fluctuations in membrane potential and Ca2+ activity, indicating that they reflect the same underlying cellular phenomena (Figure 3\u2014figure supplement 1). In agreement with electrophysiology, cells exhibited asynchronous, fast (0.40\u00a0\u00b1\u00a00.05 Hz; Figure 3G\u2013I) oscillation frequencies, with large variability. These data show that the species differences found at the single-cell level are paralleled in the rat and mouse TIDA network.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/33144/elife-33144-fig3-v1.jpg)\n\n**Figure 3.:** (A) Paired whole-cell recordings were performed to test synchronous activity between cells. (B) Representative paired rat TIDA neuron recordings (left) shown superimposed and filtered for action potentials at right to reveal near identical membrane voltage fluctuations. (C) Representative paired mouse TIDA neuron recordings (left) reveal asynchronicity when superimposed (right). (D) Left; cross-correlation coefficient in example paired recordings from rat (blue) and mouse (purple) TIDA neurons. Right; quantification of cross-correlation coefficient at 0 s lag (n\u00a0=\u00a021\u201331 respectively, p<0.0001, unpaired t-test). (E) Ca2+ imaging of rat TIDA neurons. Lower inset: oscillating cells in the dmArc slice shown highly connected by relative cross-correlation. (F) Representative Ca2+ imaging traces of five rat TIDA neurons in same slice revealing synchronous oscillations. (G) Ca2+ imaging of mouse TIDA neurons. Lower inset: Cells in the dmArc in the same slice exhibit minimal cross-correlation. (H) Representative Ca2+\u00a0imaging traces of five mouse TIDA neurons in same slice revealing asynchronous oscillation. (I) Left; cross-correlation coefficient in rat (blue) Ca2+\u00a0imaging traces vs cross-correlation coefficient in mouse (purple) TIDA neurons. Right; quantification of cross correlation coefficient at 0 s lag (n\u00a0=\u00a014\u201321 respectively). Data expressed as mean\u00a0\u00b1s.e.m. Image scale bars (E G) 50 \u03bcm. 3V, third ventricle.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33144/elife-33144-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A-D) Calcium images from a single TIDA neuron in different time points. Dark colours represent low-calcium activity, brighter colors represent high-calcium activity in the cell, scale bar is 10 \u00b5m. (E) Simultaneous calcium imaging and whole-cell in DAT-GCaMP3 mouse TIDA neuron. Shadow areas refer to the previous images at a peak of florescence (A and C, high-calcium activity) and low fluorescence (B and D, low-calcium activity). (F) Bleach correction by exponential frame subtraction performed with Image J EMBL tools.\n\nWe next sought to identify the mechanism behind these differences. Network behavior emerges from the intrinsic properties of neurons and their connectivity schemes. In whole-cell recordings, rat and mouse TIDA neurons were found to have similar electrophysiological signatures, such as a prominent A-like K+ current, anomalous inward rectification and slow after\u00a0hyperpolarization (Lyons et al., 2010; Zhang and van den Pol, 2015) - Figure 4A,B,E,F), albeit of partly different amplitude (Figure 4I\u2013K). In both species, oscillations were abolished in the presence of tetrodotoxin (TTX; Figure 4L), suggesting a similar dependence on the persistent Na+ current for phasic firing (Lyons et al., 2010). Cytoarchitectonic comparison of the TIDA somata size, dendritic lengths and branching (evaluated using Sholl analysis) revealed no differences (Figure 4\u2014figure supplement 1). These results indicate that a difference in chemical synaptic or electrical coupling is likely to underlie the two distinct patterns of electrical activity. Importantly, in both rats and mice, oscillations persisted during blockade of fast ionotropic glutamate and GABA transmission (Figure 4M), suggesting that chemical synapses are not required for the expression of rhythmic behavior. Our attention therefore turned to electrical junctions (see Pereda, 2015; Connors, 2017) and their potential role in the TIDA circuit. Earlier work (Lyons et al., 2010) has suggested the existence of gap junctions in rat TIDA neurons, but direct evidence for electrical coupling has been lacking.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/33144/elife-33144-fig4-v1.jpg)\n\n**Figure 4.:** (A,E) Current and (B,F) voltage step protocols identify characteristic rat (A\u2013D) and mouse (E\u2013H) TIDA cell conductances, namely the K+-mediated inward rectification (Kir), an A-like current (IA) and the depolarization-induced after\u00a0hyperpolarization (AHP). (,G) Input resistance of TIDA neurons across membrane voltage reveals a sigmoidal plot in both species. (D,H) Higher input resistance at \u221260 mV in both rat (n\u00a0=\u00a018) and mouse (n\u00a0=\u00a016) TIDA neurons (one-way ANOVA with Bonferroni as post-hoc test). (I)\u00a0Quantification of the A-like current and (J) the AHP current (n\u00a0=\u00a011 and 30 per group). (K) Comparison of the Rinput at \u221295 mV, as an indicator of the Kir current activity.\u00a0(L) Application of the antagonist of voltage-gated Na+ channels, TTX, abolished the oscillation and switched it to a persistent UP state in rat (blue; n\u00a0=\u00a032) as well as in mouse (purple; n\u00a0=\u00a022) TIDA neurons. (M) Oscillation persists in both rat (n\u00a0=\u00a011) and mouse (n\u00a0=\u00a06) TIDA neurons under fast ionotropic blockade, using AMPA and NMDA glutamate receptor blockers combined with Gabazine as a GABAA receptor blocker. (A\u2013D), rat and (E\u2013H), mouse.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33144/elife-33144-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013C) Cell soma size (A), total dendrite length (B) and dendrite branching distribution (C) in TIDA neuron is statistically similar between the two species (n\u00a0=\u00a05 cells per group).\n\nRecordings of sub-threshold voltage transfer (Bennett, 1966) in rat TIDA neuron pairs revealed electrical coupling in 51% (n\u00a0=\u00a032/63) of pairs with a high coupling coefficient (CC\u00a0=\u00a00.18\u00a0\u00b1\u00a00.02; Figure 5A\u2013F). This electrical coupling is in the highest range reported in the mammalian brain (Curti et al., 2012), with single pairs reaching as high as 0.48 CC. Coupling was typically asymmetrical (strongest: weakest ratio, 1.52\u00a0\u00b1\u00a00.17; n\u00a0=\u00a016; Figure 5F, top). In notable contrast, mouse TIDA neuron pairs (n\u00a0=\u00a040) showed no evidence of electrical coupling and/or synchrony (Figure 5G\u2013L). In addition, immunostaining for the dominant neuronal gap junction-forming protein connexin 36 (Cx36; Rash et al., 2000) was performed. Punctate Cx36 immunoreactivity was found distributed along rat (n\u00a0=\u00a04 animals), but not mouse (n\u00a0=\u00a07 animals), TH-ir dendrites and somata (Figure 5M,N), even though the antibody readily detects Cx36 in other mouse brain populations (Figure 5\u2014figure supplement 1). These data identify an absolute species difference in TIDA gap junction connectivity. The lack of electrical coupling in the mouse TIDA neurons can also explain their higher input resistance (Figure 4C,D,G,H; cf. De Zeeuw et al., 2003), and their more fragile oscillation dynamics (Figure 1C,F,I\u2013T).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/33144/elife-33144-fig5-v1.jpg)\n\n**Figure 5.:** (A) Paired TIDA neuron recordings were performed to test for reciprocal electrical connectivity in rat slices. (B) Representative recording showing bidirectional electrical coupling in rat slices. Example trace illustrating the effect of negative current injection first into cell one and then into cell 2. (C,D,) High-resolution trace during negative current injection. Note the different response amplitude in cell1 vs cell2, suggestive of asymmetrical electrical synapses. (E) Frequency distribution of the coupling coefficient, average 0.18\u00a0\u00b1\u00a00.02, n\u00a0=\u00a032 pairs. (F) Top; Different coupling coefficient between cell 1 and cell 2, indicative of asymmetrical electrical synapses (n\u00a0=\u00a016, p<0.01, unpaired t-test). Bottom; Cumulative frequency of the coupling coefficient ratio, indicative of the high-degree of functional coupling asymmetry. (G) Similar to (A) paired recordings were performed in mouse TIDA neurons. (H) Representative recording showing the absence of electrical coupling in mouse slices. Example trace illustrating the effect of negative current injection first into cell 1 and then into cell 2. (I) and J) indicate portions of recordings illustrated at higher resolution in (K) and (L), respectively. (K, L,) High-resolution traces illustrating lack of electrical coupling between mouse TIDA neurons (n\u00a0=\u00a040 pairs). (M, N,) Cx35/36 immunostaining (green) of the dmArc shows punctate presumed gap junctions (arrows) on the soma and dendrites of rat (M), but not mouse (N), TIDA neurons. TH (red) used to identify TIDA neurons, DAPI (blue) shows cell nuclei. Scale bars for (M N) 10 \u00b5m.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33144/elife-33144-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Coronal maximum intensity projections of high power confocal micrographs from C57BL/6 mice (A B) and SD rats (C D) stained for parvalbumin (PV; red), connexin-36 (Cx36; green) and DAPI (blue). Note high density of Cx36- immunoreactive (-ir) puncta in the inferior olive (A C) as well as Cx36-ir puncta in close proximity to PV-ir cell somata and dendrites in the cingulate cortex in both mice (B) and rats (D). Scale bar in (D)\u00a0=\u00a05 \u00b5m for (A\u2013D).\n\nThese findings challenge common assumptions that analogous populations in the rat and mouse brains obey similar connectivity schemes by identifying a binary difference in electrical coupling between these two commonly studied model species. The evolutionary and physiological implications of this contrariety remain to be explored, but given that TIDA neurons control prolactin secretion (Grattan, 2015), it is likely to have bearing on for\u00a0example species diversity in reproduction and parenting (Robitaille and Bovet, 1976; Bronson, 1979b; Bronson, 1979a; Limonta et al., 1985; Lonstein and De Vries, 2000; Lee et al., 2006). At the network level, our data reconcile the discrepancies in reports of rat (Lyons et al., 2010; Stagkourakis et al., 2016) and mouse (Brown et al., 2012; Roman\u00f2 et al., 2013) TIDA electrical behavior. Importantly, the rodent TIDA species difference in electrical coupling offers an experimental model to address functional aspects of the role of gap junctions in rhythmically active systems, in a manner that avoids the poor pharmacological specificity of gap junction-blocking compounds (e.g. Beaumont and Maccaferri, 2011) and the potential for residual electrical coupling in Cx gene-deleted mice (De Zeeuw et al., 2003; Lee et al., 2014).\n\nWe therefore next used the rat and mouse TIDA networks to address the poorly understood questions if gap junctions play a role in selecting for network frequency, and if and how neurons with heterogeneous frequencies are accommodated within a tightly electrically coupled network. For this purpose, we applied the ZAP function protocol (Puil et al., 1986; Puil et al., 1994; Tohidi and Nadim, 2009; Tseng and Nadim, 2010) to identify the preferred (or intrinsic resonance) frequency of individual cells, a feature intimately linked to oscillatory potential (Lampl and Yarom, 1997; Hutcheon and Yarom, 2000a). The ZAP protocol was applied to TIDA neurons (in the presence of TTX to remove any confounding synaptic influence; it should be noted that this pharmacological manipulation also removes the influence of the persistent Na+\u00a0current on resonance) to identify their preferred frequencies, which were then compared to spontaneous oscillation frequencies recorded from the same cells (Figure 6A). In mouse TIDA neurons, preferred (0.35\u00a0\u00b1\u00a00.03 Hz; n\u00a0=\u00a015; Figure 6E,F) and oscillation (0.39\u00a0\u00b1\u00a00.05 Hz; n\u00a0=\u00a015) frequencies were not significantly different (Figure 6G) and were distributed over a similar spectrum (typically 0.2\u20130.6 Hz), suggesting that mouse TIDA cells set their own pace. Intriguingly, the preferred frequencies in rat TIDA neurons showed a similarly wide range and mean (0.30\u00a0\u00b1\u00a00.02 Hz; n\u00a0=\u00a032; Figure 6B,C) as their mouse counterparts. Yet, the rat oscillation frequencies, as described above, were clustered within a narrow interval at a significantly lower average value (0.14\u00a0\u00b1\u00a00.006 Hz; rat oscillation vs. preferred frequency p<0.0001; paired t-test; Figure 6D).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/33144/elife-33144-fig6-v1.jpg)\n\n**Figure 6.:** (A) Schematic illustration of the current clamp protocol used to determine the resonance frequency of TIDA neurons. (B) Voltage response (blue) of a rat TIDA neuron to a 100 s 0.05\u201310 Hz ZAP current injection (black trace below) yields a maximum amplitude at the neuron\u2019s preferred resonance frequency (red arrow). (C) Impedance profile of rat TIDA neurons in the frequency domain. The red circle indicates the resonance frequency at the maximum impedance value (0.30\u00a0\u00b1\u00a00.02 Hz, n\u00a0=\u00a032). (D) Quantification of resonance frequency vs oscillation frequency in rat TIDA neurons (n\u00a0=\u00a032, p<0.0001, paired t-test). (E) Recording of mouse preferred resonance frequency as in (B). (F) Impedance profile of mouse TIDA neurons in the frequency domain. The red circle indicates the resonance frequency at the maximum impedance value (0.35\u00a0\u00b1\u00a00.03 Hz, n\u00a0=\u00a015). (G) Resonance frequency vs oscillation frequency in mouse TIDA neurons (n\u00a0=\u00a015, p>0.05, paired t-test).\n\nThis observation suggests that electrical coupling places constraints on the network oscillation frequency emerging from cells with variable preferred frequencies. We therefore hypothesized that gap junction transmission, via passive or active filtering mediated through pre- and post-junctional neurites, allows current to flow at higher amplitude at certain frequencies. To test this possibility, the ZAP protocol was now applied in electrically connected pairs with high CC (>0.2) where the ZAP function was injected into one (\u2018prejunctional\u2019) neuron and the resultant voltage response (from which resonance can be extracted; Figure 7A,B) was recorded from both the pre-junctional cell and its coupled (\u2018post-junctional\u2019) partner. Recordings were performed in TTX to ensure that only gap junction transmission served as a conduit between cells. The protocol was applied in both directions, sequentially. Using this configuration, prejunctional resonance (0.31\u00a0\u00b1\u00a00.01 Hz; Figure 7C) was found to be higher than postjunctional resonance (0.17\u00a0\u00b1\u00a00.02 Hz, Figure 7D), which, in turn, was not significantly different from oscillation frequency (0.13\u00a0\u00b1\u00a00.01 Hz; p>0.05, Figure 7E,F). Notably, both postjunctional resonance and oscillation frequency were clustered within a narrow interval, in contrast to the broad range of prejunctional resonance frequencies (Figure 7E,F). These findings directly implicate gap junction transmission in the harmonization of faster cell frequencies to a slow population rhythm.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/33144/elife-33144-fig7-v1.jpg)\n\n**Figure 7.:** (A) Schematic of the current clamp protocol used to record the transfer of a ZAP function command through electrical synapses by measurements of resonance frequency in coupled TIDA neurons. (B) Paired recording of electrically connected rat TIDA neurons. Voltage response of Cell 1 (purple; prejunctional) to the 100 s ZAP current injection that sweeps a 0.05\u201310 Hz frequency (black trace) range, yields a maximum amplitude at a preferred resonance frequency. Cell 2 membrane voltage response (orange; postjunctional) indicates maximum amplitude at a different resonance frequency. (C) The impedance profile of the prejunctional resonance in the frequency domain. The red circle indicates the resonance frequency at the maximum impedance value (0.31\u00a0\u00b1\u00a00.03 Hz; n\u00a0=\u00a016). (D) Postjunctional resonance impedance profile; note lower average resonance frequency (red circle; 0.17\u00a0\u00b1\u00a00.02 Hz; n\u00a0=\u00a016). (E) Comparison of pre- and post-junctional resonance frequency vs oscillation frequency (n\u00a0=\u00a016, one-way ANOVA with Bonferroni as post-hoc test). (F) Frequency distribution of pre- (purple) and post-junctional (orange) resonance frequency vs oscillation frequency (turquoise) (n\u00a0=\u00a016 per group).\n\n## Discussion\n\nIn the present study, a naturally occurring absolute difference in electrical coupling among hypothalamic rodent TIDA neurons was used to investigate the role of electrical junctions in network rhythmicity. First, we show that rat (electrically coupled) and mouse (electrically uncoupled) TIDA neurons exhibit fundamentally different oscillatory activity: while electrically coupled TIDA cells discharge in a stereotyped, highly regular, synchronized slow rhythm, the same neurons in the absence of electrical coupling, display a range of faster, asynchronous, and less regular frequencies. We exploit these differences to show that, while both species harbor a similar range of cellular heterogeneity within the TIDA population (assessed as preferred frequency and membrane properties), the presence of gap junctions imposes a slow, harmonized, narrow frequency band across the ensemble. The main findings and conclusions are summarized in Figure 8.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/33144/elife-33144-fig8-v1.jpg)\n\n**Figure 8.:** (A) In the electrically coupled network (as observed in rat TIDA neurons), neurons exhibit a robust, stereotyped, slow, synchronized oscillation. In this network, frequency is immune to perturbation and cannot be manipulated by progressive hyperpolarization (B) or by ZAP current injection (C). (D) The prejunctional resonance of individual neurons does not dictate the network oscillation frequency; rather, the gap junction-mediated postjunctional resonance commands the oscillation frequency of the syncytium. (E) In the uncoupled network configuration (as observed in mouse TIDA neurons), neurons exhibit a diverse range of membrane potential oscillations. Their phasic voltage fluctuations are strongly sensitive to progressive hyperpolarization (F) and are highly entrainable, as tested via ZAP current injections (G). (H) The fast prejunctional resonance of individual neurons matches their oscillation frequency, allowing them to march to the beat of their own intrinsic properties.\n\nComputational studies have proposed a variety of rules for how frequency is set in an oscillatory electrically coupled network (Kepler et al., 1990; Meunier, 1992; Pedersen et al., 2005). Our experimental data show that in a gap junction-linked hypothalamic dopamine circuit, the network assumes a harmonized slow rhythm emerging from the preferred resonance frequency imposed by the electrical coupling. Early studies of neuronal gap junctions suggested that they operate as low-pass current filters (Furshpan and Potter, 1957). As oscillatory current passes between cells through gap junctions \u2013 and filtered via the active and passive properties of membranes on either side of the junction \u2013 the variable frequencies generated by individual TIDA neurons are restricted and streamlined toward a slow network frequency. The mechanistic demonstration of the role of gap junctions in current transfer (Figure 7) argues against the interpretation that the low frequency of the rhythm in this system is the result of \u2018network load\u2019 (Hooper and Marder, 1987; Meunier, 1992), the drag imposed upon a connected neural ensemble by its slowest members, whose biophysical constraints may act as a brake on the entire network. The specific frequency emerging out of the electrically coupled network is likely not to be an exclusive product of the biophysical properties of the proteins (in this case Cx36) that form the conducting connexons; there have been several Cx36-linked rhythmically active populations described in the CNS, which oscillate in a wide range of frequencies. Other factors specific to the coupled population, for\u00a0example the subcellular distribution of gap junctions, cellular geometry and associated proteins, may be hypothesized to contribute.\n\nThese findings also allow for some observations on biological diversity, by revealing how two related species have adopted different cellular solutions to a common biological problem \u2013 the adaptive control of pituitary prolactin secretion. While the two rodent TIDA populations responsible for this control accommodate a similar range of cellular heterogeneity among their intrinsic oscillators, the connectivity that imposes network rules thus differs critically (Figure 8). In the rat TIDA network, cellular diversity is shown to be accommodated through a powerful gap junction connectivity. Cellular diversity also within seemingly homogeneous neuronal populations has been demonstrated to be not only a core characteristic of how nervous systems are organized, but a feature that contributes critically to the flexibility and adaptability necessary for survival under variable environmental conditions (Manor et al., 1997a; Golowasch et al., 1999; Manor et al., 2000; Prinz et al., 2004; Grashow et al., 2010; see Marder et al., 2015). How the different configurations (electrically connected vs. not connected) impact on the physiology of the two species remains to be determined, but it may be speculated that these features are of particular potential benefit in a system tasked with adjusting the animal for recurrent reproductive stages, including pregnancy, and is subject to circadian modulation, as is the case for the TIDA-prolactin axis (Grattan et al., 2008).\n\nDiversity within neuronal networks, as described here in the TIDA system, presents a trade-off: while it increases flexibility, it also risks compromising reliable circuit performance. One means of ensuring robustness is thus by adding constraining properties in the mode(s) whereby the cells are connected. We here provide evidence that connecting intrinsically oscillating neurons together via strong electrical coupling can impose a slow network rhythm that overrides the individual frequencies of cells within the population. This work suggests a principle whose applicability to other systems can now be addressed.\n\n## Materials\u00a0and\u00a0methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source of reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Mouse strain, strain background</td>\n      <td>DAT-Cre mouse (C57Bl/6J)</td>\n      <td>Reference: PMID 17227870.</td>\n      <td></td>\n      <td>Gift from Dr. N-G Larsson, Karolinska Institutet.</td>\n    </tr>\n    <tr>\n      <td>Mouse strain, strain background</td>\n      <td>tdTomato floxed mouse (C57Bl/6J)</td>\n      <td>www.jax.org/strain/007905</td>\n      <td></td>\n      <td>The Jackson Laboratory</td>\n    </tr>\n    <tr>\n      <td>Mouse strain, strain background</td>\n      <td>GCaMP3 floxed mouse (C57Bl/6J)</td>\n      <td>www.jax.org/strain/014538</td>\n      <td></td>\n      <td>The Jackson Laboratory</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-tyrosine hydroxylase</td>\n      <td>Source: Millipore. Reference: PMID 25794171</td>\n      <td>AB152</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-connexin 35/36</td>\n      <td>Source: Millipore. Reference: PMID 26760208.</td>\n      <td>MAB3045</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB code for network analysis</td>\n      <td>Source: PMID 25278844</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nKey reagents and their sources are listed in the Key Resources Table. The data that support the findings of this study are available from the corresponding author upon reasonable request.\n\n### Animals\n\nAll animal experiments were performed on male animals on\u00a0postnatal days 21\u201328, had received approval by the local ethical board, Stockholms Norra Djurf\u00f6rs\u00f6ksetiska N\u00e4mnd, and were performed in accordance with the European Communities Council Directive of November 24, 1986 (86/609/EEC). Sprague Dawley rats (Charles River), DAT-Cre-tdTomato-floxed and DAT-Cre-GCaMP3-floxed C57Bl/6J mice (own breeding \u2013 described in [Ekstrand et al., 2007]) were housed with ad libitum access to standard chow and tap water in a temperature-controlled environment under 12 hr light/dark conditions with lights on at 6:00 A.M.\n\n### Whole-cell recordings\n\nFor electrophysiological experiments, animals were deeply anesthetized with sodium pentobarbital and decapitated. Only one experiment was performed on each slice. The brain was rapidly removed and placed in ice-cold (2\u20134\u00b0C) and oxygenated (95%O2/5%CO2) slicing solution containing the following (in mM): 214 sucrose, 26 NaHCO3, 10 D-glucose, 1.2 NaH2PO4, 2.0 KCl, 1.3 MgSO4 and 2.4 CaCl2. A modification of the technique developed by Aghajanian and Rasmussen (1989) was used to increase tissue viability. The meninges were gently removed, and the brain was blocked and glued to a vibratome (Leica VT-1000) in which 250\u00a0\u03bcm-thick coronal sections of the hypothalamus containing the dmArc were prepared unless otherwise stated. After slicing, tissue was immediately transferred to an extracellular recording solution (aCSF) containing (in mM): 127 NaCl, 26 NaHCO3, 10 D-glucose, 1.2 NaH2PO4, 2.0 KCl, 1.3 MgSO4, 2.4 CaCl2, in a continuously oxygenated holding chamber at 35\u00b0C for a period of 30 min. A minimum of 1 hr of recovery was allowed after which intracellular whole-cell single unit recordings were performed from TIDA neurons located in the dmArc. For whole-cell recordings, slices were transferred to a submerged chamber and placed on an elevated grid that allows perfusion both above and below the slice. An Axio Examiner D1 upright microscope (Carl Zeiss) was used for infrared differential interference contrast visualization of cells. Recordings were performed at near-physiological temperature (34 \u00b1 1\u00b0C) apart from subset of experiments described in Figure 2 performed in room temperature (24 \u00b1 1\u00b0C), and slices were continuously perfused with oxygenated recording solution at a rate of 4 ml/min. Whole-cell current- and voltage-clamp recordings were performed with pipettes (3\u20137 M\u03a9 when filled with intracellular solution) made from borosilicate glass capillaries (World Precision Instruments) pulled on a P-97 Flaming/Brown micropipette puller (Sutter Instruments). The intracellular recording solution used in experiments contained (in mM) 140 K-gluconate, 10 KCl, 10 HEPES, 1 EGTA, and 2 Na2ATP, pH 7.3 (with KOH). All pharmacological compounds were bath applied. Blockade of ionotropic glutamatergic and GABAergic transmission was achieved by adding 10 \u03bcM of the AMPA/kainic acid antagonist 6-cyano-7-nitroquinoxaline-2,3-dione (CNQX), 25 \u03bcM of the NMDA antagonist DL-2-amino-5-phosphonopentanoic acid (AP5) and 10 \u03bcM of gabazine (all from Abcam) to the extracellular recording solution. The concentration used for TTX (Alomone Labs) was 0.5 \u03bcM. (-)-quinpirole hydrochloride, 5-HT, prolactin and TRH were obtained from Sigma.\n\n### Paired recordings and electrical coupling\n\nThe strength of coupling between neurons was quantified by the coupling coefficient (CC), which was typically measured by injecting a 0.5 s current step to one neuron and measuring the resulting voltage deflections in both neurons. To minimize distortion of CC by voltage-activated conductances, the current step amplitude was set sufficiently large to produce a steady voltage response in the coupled neuron. For TIDA neurons with input resistance (Rinput) of 500\u2013700 M\u03a9 and a minimum CC of 0.05, we used 20\u201340 pA current injections while both cells were entering the DOWN state (phase1) resulting in 20\u201340 mV presynaptic deflections (\u0394V) in the injected cell, resulting in stable deflections (\u0394V) equal to or larger than 1 mV in the postjunctional cell. 50-sweep negative pulse protocols were routinely used allowing quantification of CC at different voltages via sweep averages. CC was calculated at different voltages, as conductances can amplify/dampen both prejunctional and postjunctional measurements and coupling (Curti et al., 2012; Haas and Landisman, 2011). For current injection I1 into cell 1, the coupling measured in cell 2 is CC12=\u0394V2/\u0394V1 and vice versa for CC21. The quantity CC12 measures coupling in the direction of cell 2. Postjunctional resistance between pairs was 80\u00a0\u00b1\u00a010 M\u2126 (n\u00a0=\u00a010).\n\nRecordings were performed using a Multiclamp 700B amplifier, a DigiData 1440 and pClamp10.2 software (Molecular Devices). Slow and fast capacitative components were automatically compensated for. Access resistance was monitored throughout the experiments, and neurons in which the series resistance was more than 25 M\u03a9 or changed 15% were excluded from the statistics. Liquid junction potential was 16.4 mV and not compensated. Sampling frequency in all electrophysiology data was 10 kHz. Raw data in figures were filtered at 1 kHz or 2 kHz for illustrative purposes.\n\n### Logarithmic ZAP function\n\nTo investigate the possibility of resonance/preferred frequency of TIDA neurons, we performed sinusoidal current injections of fixed amplitude but sweeping frequencies in a given range. The impedance (Z) Amplitude Profile (ZAP) was thus generated for TIDA neurons to determine neurons\u2019 preferred frequency (Tseng and Nadim, 2010) generated by a combination of passive and active properties (Puil et al., 1986). The ZAP current is described as:\n\n$$\nI_{ZAP}=I_{max}sin\u2061(2\\piftxt)\n$$\n\nwhere f(t) produces the range of frequencies that the ZAP function sweeps. We used an exponential chirp function for f(t) to increase the sampling duration of lower frequencies:\n\n$$\nf(t)=\\frac{f_{min}}{L}e^{Lt}-1\n$$\n\nwhere\n\n$$\nL[log(fmax/fmin)]/totalchirpduration\n$$\n\nAs an optimal frequency range of the ZAP function input allowing accurate determination of the TIDA impedance characteristics, fmin was set to 0.05 Hz and fmax as 10 Hz. The amplitude of the ZAP current was selected as the minimum amplitude that produced a voltage response within the physiological range of the TIDA neuron subthreshold oscillation\u00a0(\u221280 mV to \u221240 mV). This amplitude was typically set to 15\u201320 pA. Extra caution was placed at targeting resonance within close limits of the membrane voltage, since resonance is described to be voltage dependent (Puil et al., 1987). This protocol was performed in the presence of TTX, resulting in a resting membrane potential and eliminating AP interference with likely resonance mechanisms. A bias direct current (DC) of\u00a0\u223c\u221220 pA was added to compensate for the depolarizing action of TTX. Furthermore, to avoid transients at the beginning of the oscillations, the ZAP waveform was preceded with three cycles of a sinusoidal waveform of the fmin before transition into the ZAP function.\n\nThe impedance of neurons was calculated as a function of the frequency of the injected ZAP current. Impedance contains information about both amplitude and phase of oscillation and is calculated as a function of the input frequency as follows:\n\n$$\nZ(f)=\\frac{V~(f)}{I~f}\n$$\n\nwhere $V~$ and $I~$ are, the Fourier transforms of the membrane potential V and the ZAP current I, respectively (Hutcheon and Yarom, 2000b). Z(f) is a complex number; the absolute value of Z is the impedance power and is plotted as a function of frequency. For simplicity here we ignore phase, and in our results, we refer to the impedance power as impedance. Lastly, as negative control for the resonance experiments we analyzed the impedance of a passive neuron showing, as expected, no peak. Additionally, as previous studies suggest (Puil et al., 1994), we tested and concluded that direction (slow-to-fast vs fast-to-slow frequencies) and frequency spectrum (0.05 - 3 Hz vs 0.05 \u2013 10 Hz) of the ZAP current do not alter the TIDA neuron resonance frequency.\n\n### Entrainment of TIDA neurons\n\nTo test entrainability of TIDA neurons, the ZAP function was applied in the 0.05\u20133 Hz frequency spectrum. The amplitude of the current was determined individually per neuron, as the amount of negative current required to induce a \u221210 mV \u0394V in the DOWN state (phase 1).\n\n### Dye loading and Ca2+imaging\n\nFor bulk loading of TIDA neurons in rats, the Ca2+-sensitive dye Oregon Green BAPTA-1 AM (OGB-1 AM, Invitrogen) was first dissolved in 0.5% DMSO, 0.01% Pluronic F-127 (Molecular Probes), 0.002% Cremophor (Sigma-Aldrich) and further diluted in aCSF to a final concentration of 20 \u00b5M. Slices were incubated for 40 min in oxygenated aCSF containing the cell-permeable OGB-1 AM dye solution. The activity of oscillating neurons of rats (AM dye) and mice (DAT-GCaMP3) was monitored by imaging fluorescence changes under visual control by two-photon imaging and CCD camera (water immersion objective, Zeiss) at ~900 nm. Scanning and image acquisition were controlled by custom software (LSM) during periods of 120 s at intervals of 300 ms. Imaging frames were acquired at 3 Hz. Image sequences were analyzed with custom programs written in ImageJ (NIH) and MATLAB\u00a0(Smedler et al., 2014). The recorded intensity signals are presented as relative changes of fluorescence in each of the selected ROIs and expressed as (\u0394F/F0), where F0 is the baseline fluorescence measured over a period of low activity of each cell. Simultaneous Ca2+imaging and whole-cell recordings (Figure 3\u2014figure supplement 1) were performed on a Zeiss microscope system (Carl Zeiss, Germany). Fluorescence images were captured with a CCD camera (Evolve, Photometrics) during periods of 120 s at intervals of 300 ms. A 64x water-dipping objective was used when a neuron was being simultaneously patched. In these cases, no EGTA was used in the intracellular solution. Whole-cell recordings were performed through visualizing positive cells and then adjusting to DIC images. For temporal\u00a0synchronization of acquired images and recorded membrane potential oscillations, marker pulses indicating the occurrence of each frame were obtained from the imaging system and recorded together with the intracellular signal using pClamp10.2 software.\n\n### Immunofluorescence\n\nRats and mice were perfused first with pre-fixative (50 mm sodium phosphate buffer, 0.1% sodium nitrite, 0.9% NaCl and 1 unit/mL of heparin, pH 7.4) and next with cold fixative (0.16 m sodium phosphate buffer, 0.2% picric acid, 1\u20132% formaldehyde prepared from freshly depolymerized paraformaldehyde, pH 7.4), and finally with 10% sucrose/25 mM sodium phosphate buffer (pH 7.4), to wash out excess fixative. Tissues were stored at 4\u00b0C for 24\u201348 hr in cryoprotectant (25 mM sodium phosphate buffer, 10% sucrose, 0.04% sodium azide, pH 7.4). Tissue sections (14 \u03bcm) were processed for conventional immunofluorescence, using primary anti-connexin-35/36 (Cx36) immunoglobulin (1:2000; mouse monoclonal, MAB3045, Millipore), combined with anti-tyrosine hydroxylase (TH) antiserum (1:2000; raised in rabbit, AB152, Millipore), counterstained with DAPI and mounted with ProLong Gold (ThermoFisher). Confocal micrographs were acquired with an Olympus FV1000 microscope and analyzed and processed in BitPlane Imaris. For final images, brightness, contrast and sharpness were adjusted digitally.\n\n### Cell filling and reconstruction\n\nMouse (n\u00a0=\u00a05 cells from 4 animals) and rat (n\u00a0=\u00a05 cells from 5 animals) TIDA neurons were recorded in whole-cell mode with intracellular pipette solution as above, with the addition of 0.2% neurobiotin. After recording, slices were placed in fixative (4% paraformaldehyde/0.16% picric acid), washed in PBS and incubated at 4\u00b0C for 72 hr in a solution containing FITC-conjugated avidin (1:2500, 43\u20134411, Zymed) and mouse anti-tyrosine hydroxylase immunoglobulin (1:2000, MAB318, Millipore). After extensive washing, slices were incubated in secondary Alexa-594-conjugated donkey-anti-mouse antiserum (1:500; Invitrogen, Carlsbad, CA; A21202) for 16 hr at 4\u00b0C, washed again and mounted with 2.5% DABCO in glycerol. TIDA identity of all filled cells was confirmed with TH immunoreactivity. Cells were digitally reconstructed in MBF Neurolucida using a Zeiss Axio Imager M1 with a 63x objective and morphological parameters were extracted from the virtual neurons with MBF Neurolucida Explorer. Sholl analysis was performed by counting the number of line crossings on concentric circles spaced 20 \u00b5m apart.\n\n### Data analysis\n\nElectrophysiological data analysis was performed with Clampfit (Molecular Devices), OriginPro8 (OriginLab) and custom written MatLab routines. Statistical analysis was performed using GraphPad Prism6, and statistical significance was set at p<0.05. All data are presented as means\u00a0\u00b1\u00a0SEM. Significance levels used in figures are shown as: single asterisk (*)=p\u00a0<\u00a00.05, double asterisks (**)=p\u00a0<\u00a00.01 and triple asterisks (***) when p<0.001. Results were analyzed using the unpaired two-tailed Student\u2019s t-test unless otherwise stated. In sections stating that data were analyzed using one-way ANOVA, post-hoc analysis was performed with Tukey\u2019s range test.\n",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "0f207710-8a1e-4955-aa24-57e2961bff7f",
+      "submission_id": "79216a57-2e03-4a2f-a70b-1d63e286a059",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ronald L Calabrese, Emory University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.33144.017](https://doi.org/10.7554/eLife.33144.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Network Oscillation Rules Imposed by Species-Specific Electrical Coupling\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom Ronald Calabrese is a member of our Board of Reviewing Editors and the evaluation has been overseen by Eve Marder as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Farzan Nadim (Reviewer #2); Yosef Yarom (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis very interesting paper reports on a species difference in electrical coupling between neuroendocrine tuberoinfundibular dopamine (TIDA) neurons in rats vs. mice. It leverages this rather simple observation into a done-by-nature experiment to show how electrical coupling can set network period in a network that shows rhythmic activity. The authors make the conclusion that the coupling in the rat system not only harmonizes network period but also acts as a filter to set a network period that is below the average period of the resonance frequency in the individual neurons. The authors use sophisticated electrophysiological methods to approach these questions and provide strong quantitative data.\n\nThe general appeal of this work derives from the important species difference uncovered, albeit the functional implications for the TIDA network are unexplored, and the very nice exploration of how network period is set in the rat TIDA network.\n\nEssential revisions:\n\nThere are concerns that although the observations are sound that they are in some cases over interpreted.\n\n1) Whereas the presence and absence of gap junctions is rather convincing, the conclusion that it is the sole difference between the species is not fully supported. Figure 4 is supposed to show similar membrane properties, but other than the input resistance there is no quantitative comparison and some seeming inconsistencies. For example, the current clamp records show there is little effect IA like current in mouse neurons (Figure 4E) and the voltage clamp records do not show any AHP current in mouse neurons (Figure 4F). Finally, one would like to know, if there is a difference in size of neurons between species that could account for the different in input resistance. The cells presented in Figure 5 (M and N) seems to support such a possibility. The authors should quantify as much as possible and should temper their claims about equivalence of membrane properties.\n\n2) The use of ZAP current injection to measure the resonance properties of the neurons, demonstrating that although both types of neurons display similar resonance, the frequency of oscillation in the coupled network is lower than the resonance frequency is convincing. This was followed by an elegant experiment where cross gap-junction resonance was measured. However, the conclusion derived from this experiment is not fully justified. We do not agree that the data: \"challenge the idea of electrical synapses operating merely as low pass current filters\" Nor do we agree that the junction \"acts as a band-pass filter for selecting and setting the oscillation frequency\". In fact, the reduction in the resonance frequency across the junction, seems to conform to the low pass filtering expected due to passive or active filtering by the pre/post-junctional neurites.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Network Oscillation Rules Imposed by Species-Specific Electrical Coupling\" for further consideration at eLife. Your revised article has been favorably evaluated by Eve Marder (Senior editor), a Reviewing editor, and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below.\n\nReviewer #2:\n\nThe revisions have made the manuscript better and the overall quality of the data is commendable. I have no major comments other than my previous point of whether there is any broader message other than rats are not mice.\n\nReviewer #3:\n\nThe authors adequately responded to all my comments, adding new information and rephrase some of the statements. My only concern is the finding that the two types of cells differ in their IA current (by a factor of 2-3; Figure 4I). To the best of my understanding this should shift the resonance frequency of the cells to higher value and yet Figure 6 shows similar resonance. An explanation is needed here.\n",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7106dbda-d388-4c7c-a0c7-13dade8ee065",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C1",
+      "claim": "Electrical junctions are widespread within the mammalian CNS.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrical junctions are widespread within the mammalian CNS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about the prevalence of electrical junctions in the mammalian central nervous system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "4d1fde7b-ef89-4d30-8cfc-6ee0adaeb7fe",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C2",
+      "claim": "The role of electrical junctions in organizing neuronal ensemble activity remains incompletely understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, their role in organizing neuronal ensemble activity remains incompletely understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a gap in current scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "ca102aba-d440-40cd-b7ca-2e831a35eed5",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C3",
+      "claim": "Rat TIDA cells discharge in highly stereotyped, robust, synchronized slow oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "rat TIDA cells discharge in highly stereotyped, robust, synchronized slow oscillations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, including electrophysiological recordings and calcium imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "e2f0362f-d805-41e2-87d3-b602c9ab102a",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C4",
+      "claim": "Mouse TIDA oscillations are faster, flexible and show substantial cell-to-cell variability.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas mouse oscillations are faster, flexible and show substantial cell-to-cell variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from mouse TIDA neuron recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "4cd9cbdf-7de0-4bd2-b6b8-060b5c2d9fd8",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C5",
+      "claim": "Rat TIDA neurons have strong TIDA-TIDA gap junction coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that these distinct operational modes are explained by the presence of strong TIDA-TIDA gap junction coupling in the rat",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by paired recordings showing electrical coupling and Cx36 immunostaining data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "9565bbf1-76e1-489f-81a4-bb491e92e13f",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C6",
+      "claim": "Mouse TIDA neurons completely lack gap junction coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "and its complete absence in the mouse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by paired recordings showing no electrical coupling and absence of Cx36 immunostaining in mouse TIDA neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "e4d35824-bc7d-4526-a750-9b561c48b0f7",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C7",
+      "claim": "Both rat and mouse species encompass a similar heterogeneous range of intrinsic resonance frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Both species, however, encompass a similar heterogeneous range of intrinsic resonance frequencies, suggesting similar network building blocks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ZAP function experiments measuring preferred frequencies in both species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "dc14d442-936f-488d-b8d8-829650608f11",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C8",
+      "claim": "Gap junctions select and impose the slow network rhythm in rat TIDA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that gap junctions select and impose the slow network rhythm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experiments showing that postjunctional resonance frequency matches oscillation frequency in electrically coupled rat TIDA neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "905e7526-7c39-489d-b2c6-f1a6f07d1ffd",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C9",
+      "claim": "Electrical junctions determine oscillation frequency in neuronal networks.",
+      "claim_type": "EXPLICIT",
+      "source": "These data identify a role for electrical junctions in determining oscillation frequency",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the experimental comparison of rat and mouse TIDA networks.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "dd1202af-02e4-46a8-bf40-40e4ef7792ae",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C10",
+      "claim": "Related species can rely on distinct network strategies to accomplish adaptive control of hormone release.",
+      "claim_type": "EXPLICIT",
+      "source": "and show how related species can rely on distinct network strategies to accomplish adaptive control of hormone release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed differences in electrical coupling between rat and mouse TIDA neurons.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "ad5c4ddd-205e-46de-b9ec-658a74bc8d01",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C11",
+      "claim": "Neuronal gap junctions were once surmised to be exclusive to invertebrate species and/or early development.",
+      "claim_type": "EXPLICIT",
+      "source": "While once surmised to be exclusive to invertebrate species and/or early development, steadily accumulating evidence has established that electrical junctions formed by gap junctions are both common and consequential within many populations in the adult, mammalian CNS (see Connors and Long, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical statement about past scientific understanding, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "dcfe4384-0f0d-41d8-9f75-df5e478725fd",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C12",
+      "claim": "Electrical junctions formed by gap junctions are both common and consequential within many populations in the adult, mammalian CNS.",
+      "claim_type": "EXPLICIT",
+      "source": "While once surmised to be exclusive to invertebrate species and/or early development, steadily accumulating evidence has established that electrical junctions formed by gap junctions are both common and consequential within many populations in the adult, mammalian CNS (see Connors and Long, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "35d72cba-9fca-492d-bd87-c47fb667276f",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C13",
+      "claim": "Gap junctions mediate ultra-fast, subthreshold, bidirectional cell-cell communication.",
+      "claim_type": "EXPLICIT",
+      "source": "By mediating ultra-fast, subthreshold, bidirectional (albeit not always symmetrical) cell-cell communication",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the properties of gap junctions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "8a73b1d1-3c61-454d-9225-73181bc2f28f",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C14",
+      "claim": "Gap junctions have been implicated in the synchronization of neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "gap junctions have been implicated most obviously in the synchronization (e.g. Christie et al., 1989; Beierlein et al., 2000; Dugu\u00e9 et al., 2009) of neuronal activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "b4f432a3-a957-4533-86e6-6bc549aea5d2",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C15",
+      "claim": "Gap junctions can interact with parallel chemical synaptic transmission between neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The particular kinetics of electrical junctions further allow them to for example interact with the parallel chemical synaptic transmission between neurons (e.g. Llinas et al., 1974; Mathy et al., 2014; see Pereda, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "268a2351-844b-46cc-bf43-4f2ece6e22b3",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C16",
+      "claim": "Gap junctions can spread intracellular messengers between cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and spread intracellular messengers between cells (Tsien and Weingart, 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "9b87b9d5-0238-4820-b18a-b15272bac1a0",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C17",
+      "claim": "The presence of gap junctions changes the computational rules within circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of gap junctions changes the computational rules within circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the functional impact of gap junctions, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "cdc241ae-5e8c-4a3d-9c84-a5fe8432f9be",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C18",
+      "claim": "Oscillations are intrinsic to brain networks throughout the neuraxis.",
+      "claim_type": "EXPLICIT",
+      "source": "Oscillations are intrinsic to brain networks throughout the neuraxis (see Buzs\u00e1ki and Watson, 2012), appearing in wide, but stereotyped, frequency spectra.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "851f9f40-924b-4a67-9f49-67722b809830",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C19",
+      "claim": "Shifts in network frequency have been proposed to correspond to changes in the information carried across neuronal transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Shifts in network frequency have been proposed to correspond to changes in the information carried across neuronal transmission (see Singer and Gray, 1995)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "e443d5ed-6d3f-47c3-b5cb-5a3bb5087f8a",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C20",
+      "claim": "A switch in period can denote the conversion of a physiological oscillation into a pathological rhythm.",
+      "claim_type": "EXPLICIT",
+      "source": "and a switch in period can denote the conversion of a physiological oscillation into a pathological rhythm (Kostopoulos et al., 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "52f416c6-5574-4ee6-80e5-57a0edceca23",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C21",
+      "claim": "There is little experimental data addressing how gap junctions influence or set the specific frequency of a network oscillation.",
+      "claim_type": "EXPLICIT",
+      "source": "While the issue of whether (and if so, how) gap junctions influence, or even set, the specific frequency of a network oscillation has been the subject of a limited number of elegant modeling and theoretical studies (Kepler et al., 1990; Meunier, 1992; Pedersen et al., 2005), there is little experimental data addressing this important issue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a gap in experimental evidence, with citation to theoretical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "a34ded4d-f112-4ed4-87b9-07dd29e545b6",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C22",
+      "claim": "Pharmacological tools for studying gap junctions are compromised by poor specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "This dearth of information can in no small measure be ascribed to limitations in the available methodological repertoire: pharmacological tools are compromised by poor specificity (e.g. Beaumont and Maccaferri, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "600a3547-e57f-414b-bc89-954bb41783f0",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C23",
+      "claim": "Genetically manipulated animals often exhibit incomplete loss-of-function of gap junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas genetically manipulated animals, although informative in several aspects, often exhibit incomplete loss-of-function (De Zeeuw et al., 2003; Lee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "dc4bbd73-87da-44f4-8a1a-174512c12cc5",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C24",
+      "claim": "TIDA neurons oscillate between depolarized UP and hyperpolarized DOWN states.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, studying the neuroendocrine tuberoinfundibular dopamine (TIDA) neurons, which oscillate between depolarized UP and hyperpolarized DOWN states (Lyons et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "918608ee-b671-4c1d-ac86-240f98bd6766",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C25",
+      "claim": "Tuberoinfundibular dopamine neurons in the hypothalamic dorsomedial arcuate nucleus of rats exhibit a slow, robust, highly rhythmic, synchronized network oscillation in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Tuberoinfundibular dopamine neurons in the hypothalamic dorsomedial arcuate nucleus (dmArc) of rats exhibit a slow, robust, highly rhythmic, synchronized network oscillation in vitro (Lyons et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "0bf69f40-cf29-43d2-abb4-1a3396411ee0",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C26",
+      "claim": "Reports on mouse TIDA neurons describe notably irregular fast phasic firing.",
+      "claim_type": "EXPLICIT",
+      "source": "Reports on mouse TIDA neurons, however, describe notably irregular fast phasic firing (Brown et al., 2012; Roman\u00f2 et al., 2013; Zhang and van den Pol, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "2f0adae4-15b8-47ac-b1c7-833634a40eb6",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C27",
+      "claim": "Dichotomy across analogous rodent circuits are rare in the literature.",
+      "claim_type": "EXPLICIT",
+      "source": "Such dichotomy across analogous rodent circuits are rare in the literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the rarity of such observations in scientific literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "afb95170-d16a-4a18-91de-8f1f8bf094dd",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C28",
+      "claim": "Male rat TIDA cells exhibit a stereotyped slow oscillation at 0.15 \u00b1 0.01 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Male rat TIDA cells identified by their location in the dmArc (Figure 1A\u2013B) and characteristic electrical properties (Lyons et al., 2010), exhibited a stereotyped slow (0.15 \u00b1 0.01 Hz; n = 29, Figure 1C,G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from electrophysiological recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "e7718f5d-1b6c-4def-8fd5-d14ccc818947",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C29",
+      "claim": "Rat TIDA neurons exhibit a highly regular oscillation with coefficient of variation for frequency of 1.99 \u00b1 0.69%.",
+      "claim_type": "EXPLICIT",
+      "source": "and highly regular (coefficient of variation (CV) for frequency = 1.99 \u00b1 0.69%; n = 8 slices; Figure 1H) oscillation",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from electrophysiological recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "f0ba02d1-98d9-41f1-9838-8a8d2f8f8ac8",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C30",
+      "claim": "Mouse TIDA neurons exhibit significantly faster oscillations (0.39 \u00b1 0.05 Hz) than rat TIDA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "these oscillations were significantly faster (0.39 \u00b1 0.05 Hz; n = 18\u201329 per group, Figure 1F,G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from electrophysiological recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "70d41836-0d0e-43f1-a020-d0aa5d8935a0",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C31",
+      "claim": "Mouse TIDA neurons are less rhythmic than rat TIDA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "less rhythmic (Figure 1H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data comparing autocorrelograms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "9b88d607-e63b-42ce-91ae-04bfca9ee4d6",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C32",
+      "claim": "Mouse TIDA neurons show a wide range of frequencies within the same slice with CV = 41.48 \u00b1 6.19%.",
+      "claim_type": "EXPLICIT",
+      "source": "of a wide range of frequencies within the same slice (Figure 1G; CV = 41.48 \u00b1 6.19%; n = 8 slices)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from electrophysiological recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "e1994438-c1ed-44a5-839b-ab1afd0e4875",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C33",
+      "claim": "Mouse TIDA oscillation nadir is more depolarized (-51.2 \u00b1 0.9 mV) than rat (-66.0 \u00b1 1.1 mV).",
+      "claim_type": "EXPLICIT",
+      "source": "and more depolarized (mouse oscillation nadir \u221251.2 \u00b1 0.9 mV vs. rat \u221266.0 \u00b1 1.1 mV; n = 18 per group).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from electrophysiological recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "8446a0f6-3fc4-4bd2-a681-adbde7af8c52",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C34",
+      "claim": "An oscillatory current is seen in voltage clamp mode only in rat TIDA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "An oscillatory current was seen in voltage clamp mode only in rat TIDA neurons (Figure 1C,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from voltage clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "a3ca7359-9e2d-42c5-be4c-619d18cc1b51",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C35",
+      "claim": "Rat TIDA oscillation frequency is insensitive to hyperpolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, rat TIDA oscillation frequency was insensitive to hyperpolarization (Figure 1I\u2013K)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data showing no change in frequency with hyperpolarizing current.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "19031ffd-093b-4fb9-bc6e-d2b3ca8022fe",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C36",
+      "claim": "Mouse TIDA cells progressively decrease their frequency in response to negative current until it collapses below ca. \u221280 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas mouse TIDA cells progressively decreased their frequency in response to negative current until it collapsed to a stable membrane potential below ca. \u221280 mV (Figure 1L\u2013N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data showing frequency changes with hyperpolarization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "250baedc-e3b7-41c4-a779-52628e5b8c17",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C37",
+      "claim": "Rat TIDA oscillations maintain their frequency when challenged with ZAP current.",
+      "claim_type": "EXPLICIT",
+      "source": "Rat TIDA oscillations maintained their frequency when challenged with ZAP I (Figure 1O,P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from ZAP current injection experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "3a3db7dc-182f-44f3-b362-c35074c78df0",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C38",
+      "claim": "Application of ZAP current to mouse TIDA neurons results in full entrainment of the cells' rhythm.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, application of the same protocol to mouse TIDA neurons resulted in a full entrainment of the cells' rhythm (Figure 1Q,R).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from ZAP current injection experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "d661ec99-03ae-4b68-9c81-fabb2724df87",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C39",
+      "claim": "The cross-correlation coefficient between recorded cell frequency and current command is significantly lower in rat (0.61 \u00b1 0.03) compared to mouse (0.87 \u00b1 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "The cross-correlation coefficient of the frequency of the recorded cell and the current command was thus significantly lower in rat (0.61 \u00b1 0.03; n = 10) compared to mouse (0.87 \u00b1 0.01; n = 10; Figure 1S,T)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from ZAP current injection experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "c90d00c1-745b-4f05-8da6-82adea4180d7",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C40",
+      "claim": "The rat TIDA oscillation is robust against perturbation, in contrast to the mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "demonstrating the rat TIDA oscillation is robust against perturbation, in contrast to the mouse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cross-correlation coefficient data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "6398bb51-5e67-4d33-b9b6-8041be496519",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C41",
+      "claim": "Paired recordings from rat TIDA neurons reveal pronounced phase-locked synchronicity between cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Paired recordings from rat TIDA neurons revealed pronounced phase-locked synchronicity between cells (n = 63 pairs; Figure 3A,B; see also Lyons et al., 2010)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from paired electrophysiological recordings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "43653abe-9dac-4426-a543-952c5b94f2ac",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C42",
+      "claim": "Mouse TIDA cells are asynchronous.",
+      "claim_type": "EXPLICIT",
+      "source": "in contrast to mouse TIDA cells, which were asynchronous (n = 40 pairs; Figure 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from paired electrophysiological recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "780764cc-019d-44b2-ac1d-e854cf5affb2",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C43",
+      "claim": "A cluster of rat TIDA cells in the dmArc exhibit spontaneous, slow synchronized Ca2+ oscillations at 0.15 \u00b1 0.01 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Oregon green-BAPTA in rat slices, a cluster of cells in the dmArc exhibited spontaneous, slow synchronized Ca2+ oscillations (0.15 \u00b1 0.01 Hz; Figure 3E,F,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from two-photon calcium imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "edd8ec71-3d20-4618-98c0-7ebfd9ddbde8",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C44",
+      "claim": "Fluctuations in membrane potential and Ca2+ activity are strongly correlated in mouse TIDA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous whole-cell and Ca2+ recordings in mouse TIDA neurons revealed strongly correlated fluctuations in membrane potential and Ca2+ activity, indicating that they reflect the same underlying cellular phenomena (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from simultaneous electrophysiology and calcium imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "15d3c70e-3678-4507-8b34-e6c932a78a1a",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C45",
+      "claim": "Mouse TIDA cells exhibit asynchronous, fast Ca2+ oscillations (0.40 \u00b1 0.05 Hz) with large variability.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with electrophysiology, cells exhibited asynchronous, fast (0.40 \u00b1 0.05 Hz; Figure 3G\u2013I) oscillation frequencies, with large variability.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from calcium imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "e774e390-45bd-4724-8169-41441353eb94",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C46",
+      "claim": "The species differences found at the single-cell level are paralleled in the rat and mouse TIDA network.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that the species differences found at the single-cell level are paralleled in the rat and mouse TIDA network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of single-cell and network-level data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "e10e353e-6707-4c50-8c26-5a4ab291db61",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C47",
+      "claim": "Rat and mouse TIDA neurons have similar electrophysiological signatures including a prominent A-like K+ current, anomalous inward rectification and slow after hyperpolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "In whole-cell recordings, rat and mouse TIDA neurons were found to have similar electrophysiological signatures, such as a prominent A-like K+ current, anomalous inward rectification and slow after hyperpolarization (Lyons et al., 2010; Zhang and van den Pol, 2015) - Figure 4A,B,E,F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from electrophysiological recordings and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "428a65ed-a56c-431a-b232-580d24752e65",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C48",
+      "claim": "Rat and mouse TIDA neurons have partly different amplitude of electrophysiological properties.",
+      "claim_type": "EXPLICIT",
+      "source": "albeit of partly different amplitude (Figure 4I\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from electrophysiological recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "8cc02717-08d9-4b9b-9584-b945f9b2d487",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C49",
+      "claim": "Oscillations in both rat and mouse TIDA neurons are abolished in the presence of tetrodotoxin (TTX).",
+      "claim_type": "EXPLICIT",
+      "source": "In both species, oscillations were abolished in the presence of tetrodotoxin (TTX; Figure 4L)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from TTX application experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "37a9c930-e932-4747-93d1-3a3f88175eda",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C50",
+      "claim": "TIDA neuron oscillations depend on the persistent Na+ current for phasic firing.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting a similar dependence on the persistent Na+ current for phasic firing (Lyons et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the TTX abolition of oscillations and supported by citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "df54f67a-fc5e-4469-855a-3a6e13ade9bb",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C51",
+      "claim": "Oscillations persist in both rat and mouse TIDA neurons during blockade of fast ionotropic glutamate and GABA transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, in both rats and mice, oscillations persisted during blockade of fast ionotropic glutamate and GABA transmission (Figure 4M)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from pharmacological blockade experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "5ed35e67-080c-4635-9994-25561001ae86",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C52",
+      "claim": "Chemical synapses are not required for the expression of rhythmic behavior in TIDA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that chemical synapses are not required for the expression of rhythmic behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the persistence of oscillations during blockade of fast synaptic transmission.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "bc509850-e12f-4be2-8fe3-843567e49f5f",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C53",
+      "claim": "Earlier work has suggested the existence of gap junctions in rat TIDA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier work (Lyons et al., 2010) has suggested the existence of gap junctions in rat TIDA neurons, but direct evidence for electrical coupling has been lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "8eff0d0a-2271-4f56-bdd7-7966117d4438",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C54",
+      "claim": "Direct evidence for electrical coupling in rat TIDA neurons has been lacking prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier work (Lyons et al., 2010) has suggested the existence of gap junctions in rat TIDA neurons, but direct evidence for electrical coupling has been lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a gap in previous evidence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "7fb6c7c8-a4bd-4fb8-8d3e-1cbcd9e16743",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C55",
+      "claim": "Electrical coupling is found in 51% of rat TIDA neuron pairs with a high coupling coefficient of 0.18 \u00b1 0.02.",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings of sub-threshold voltage transfer (Bennett, 1966) in rat TIDA neuron pairs revealed electrical coupling in 51% (n = 32/63) of pairs with a high coupling coefficient (CC = 0.18 \u00b1 0.02; Figure 5A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from paired electrophysiological recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "e62f0999-ce23-4873-8c41-34a8c5211834",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C56",
+      "claim": "Electrical coupling in rat TIDA neurons is in the highest range reported in the mammalian brain.",
+      "claim_type": "EXPLICIT",
+      "source": "This electrical coupling is in the highest range reported in the mammalian brain (Curti et al., 2012), with single pairs reaching as high as 0.48 CC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to previously reported values, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "83c34e72-952e-4ad4-8a08-158085f0f2b5",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C57",
+      "claim": "Electrical coupling in rat TIDA neurons is typically asymmetrical with strongest:weakest ratio of 1.52 \u00b1 0.17.",
+      "claim_type": "EXPLICIT",
+      "source": "Coupling was typically asymmetrical (strongest: weakest ratio, 1.52 \u00b1 0.17; n = 16; Figure 5F, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from paired electrophysiological recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "e90aa247-6610-4366-ae9f-63af4b92a475",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C58",
+      "claim": "Mouse TIDA neuron pairs show no evidence of electrical coupling and/or synchrony.",
+      "claim_type": "EXPLICIT",
+      "source": "In notable contrast, mouse TIDA neuron pairs (n = 40) showed no evidence of electrical coupling and/or synchrony (Figure 5G\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from paired electrophysiological recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "f999bbab-40e2-4ea4-98db-a3a29edf233c",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C59",
+      "claim": "Punctate Cx36 immunoreactivity is distributed along rat TH-ir dendrites and somata.",
+      "claim_type": "EXPLICIT",
+      "source": "Punctate Cx36 immunoreactivity was found distributed along rat (n = 4 animals), but not mouse (n = 7 animals), TH-ir dendrites and somata (Figure 5M,N)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from immunohistochemistry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "0121978a-87bc-49ad-a663-848af7c8652d",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C60",
+      "claim": "Cx36 immunoreactivity is not found in mouse TIDA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Punctate Cx36 immunoreactivity was found distributed along rat (n = 4 animals), but not mouse (n = 7 animals), TH-ir dendrites and somata (Figure 5M,N)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from immunohistochemistry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "f4aadb1b-6330-4f9e-9a75-2a9eab6c142c",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C61",
+      "claim": "The antibody readily detects Cx36 in other mouse brain populations.",
+      "claim_type": "EXPLICIT",
+      "source": "even though the antibody readily detects Cx36 in other mouse brain populations (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from immunohistochemistry in other brain regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "3ac1ccf8-0295-4c1c-8af1-4fb98eb64909",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C62",
+      "claim": "There is an absolute species difference in TIDA gap junction connectivity between rat and mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "These data identify an absolute species difference in TIDA gap junction connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the combined electrophysiological and immunohistochemical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "9ca54f5b-9102-4691-a3dd-551d158fe047",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C63",
+      "claim": "The lack of electrical coupling in mouse TIDA neurons explains their higher input resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of electrical coupling in the mouse TIDA neurons can also explain their higher input resistance (Figure 4C,D,G,H; cf. De Zeeuw et al., 2003)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the relationship between electrical coupling and input resistance, supported by citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "708a21ce-5870-470e-a204-5647c696b234",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C64",
+      "claim": "The lack of electrical coupling in mouse TIDA neurons explains their more fragile oscillation dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "and their more fragile oscillation dynamics (Figure 1C,F,I\u2013T).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the comparison of oscillation robustness between species.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "109b5c75-ffa9-4da3-84c3-d1a7c9e3b17a",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C65",
+      "claim": "The rat-mouse species difference in electrical coupling offers an experimental model to address functional aspects of gap junctions in rhythmically active systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the rodent TIDA species difference in electrical coupling offers an experimental model to address functional aspects of the role of gap junctions in rhythmically active systems, in a manner that avoids the poor pharmacological specificity of gap junction-blocking compounds (e.g. Beaumont and Maccaferri, 2011) and the potential for residual electrical coupling in Cx gene-deleted mice (De Zeeuw et al., 2003; Lee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the utility of the model system, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "069386d0-fbc7-4b44-b55d-904305257840",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C66",
+      "claim": "Preferred frequency and oscillation frequency are not significantly different in mouse TIDA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse TIDA neurons, preferred (0.35 \u00b1 0.03 Hz; n = 15; Figure 6E,F) and oscillation (0.39 \u00b1 0.05 Hz; n = 15) frequencies were not significantly different (Figure 6G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from ZAP function experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "0519729d-686f-4dcd-8c1b-72fa5f9c2085",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C67",
+      "claim": "Mouse TIDA cells set their own pace.",
+      "claim_type": "EXPLICIT",
+      "source": "and were distributed over a similar spectrum (typically 0.2\u20130.6 Hz), suggesting that mouse TIDA cells set their own pace.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the match between preferred and oscillation frequencies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "1536b896-2925-492f-963d-b7f51acc5b6d",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C68",
+      "claim": "The preferred frequencies in rat TIDA neurons show a similarly wide range and mean (0.30 \u00b1 0.02 Hz) as their mouse counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the preferred frequencies in rat TIDA neurons showed a similarly wide range and mean (0.30 \u00b1 0.02 Hz; n = 32; Figure 6B,C) as their mouse counterparts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from ZAP function experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "138d3e4c-9c16-4c8d-b935-3a369eca4e2a",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C69",
+      "claim": "Rat oscillation frequencies are clustered within a narrow interval at a significantly lower average value (0.14 \u00b1 0.006 Hz) than preferred frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, the rat oscillation frequencies, as described above, were clustered within a narrow interval at a significantly lower average value (0.14 \u00b1 0.006 Hz; rat oscillation vs. preferred frequency p<0.0001; paired t-test; Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data comparing oscillation and preferred frequencies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "e99d966f-4caa-4bb1-a29c-b724d02dae63",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C70",
+      "claim": "Electrical coupling places constraints on the network oscillation frequency emerging from cells with variable preferred frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that electrical coupling places constraints on the network oscillation frequency emerging from cells with variable preferred frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that rat oscillation frequency is lower than preferred frequency.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "3c81f32a-5ff3-48dd-a203-9e8315cb79c0",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C71",
+      "claim": "Gap junction transmission allows current to flow at higher amplitude at certain frequencies via passive or active filtering.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore hypothesized that gap junction transmission, via passive or active filtering mediated through pre- and post-junctional neurites, allows current to flow at higher amplitude at certain frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed to explain the observed data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "541b90f7-ddaa-44db-a4e8-e36d7bd4c13b",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C72",
+      "claim": "Prejunctional resonance (0.31 \u00b1 0.01 Hz) is higher than postjunctional resonance (0.17 \u00b1 0.02 Hz) in electrically coupled rat TIDA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this configuration, prejunctional resonance (0.31 \u00b1 0.01 Hz; Figure 7C) was found to be higher than postjunctional resonance (0.17 \u00b1 0.02 Hz, Figure 7D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from paired ZAP function experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "e472e3c5-42d9-4905-a626-bec406643933",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C73",
+      "claim": "Postjunctional resonance is not significantly different from oscillation frequency (0.13 \u00b1 0.01 Hz) in rat TIDA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "which, in turn, was not significantly different from oscillation frequency (0.13 \u00b1 0.01 Hz; p>0.05, Figure 7E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from paired ZAP function experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "dcf294bf-bd20-4280-8f68-1afc78798c94",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C74",
+      "claim": "Both postjunctional resonance and oscillation frequency are clustered within a narrow interval, in contrast to the broad range of prejunctional resonance frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, both postjunctional resonance and oscillation frequency were clustered within a narrow interval, in contrast to the broad range of prejunctional resonance frequencies (Figure 7E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from paired ZAP function experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "67c4a32b-2073-4b04-ad95-f5ea3768b3a5",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C75",
+      "claim": "Gap junction transmission is implicated in the harmonization of faster cell frequencies to a slow population rhythm.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings directly implicate gap junction transmission in the harmonization of faster cell frequencies to a slow population rhythm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the postjunctional resonance experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "3ab7afc4-9563-43b5-9b9e-6c9edda42849",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C76",
+      "claim": "Electrically coupled TIDA cells discharge in a stereotyped, highly regular, synchronized slow rhythm.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we show that rat (electrically coupled) and mouse (electrically uncoupled) TIDA neurons exhibit fundamentally different oscillatory activity: while electrically coupled TIDA cells discharge in a stereotyped, highly regular, synchronized slow rhythm",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "afd8cd1c-7c38-487a-ba7c-4b09fdaf68fb",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C77",
+      "claim": "TIDA neurons in the absence of electrical coupling display a range of faster, asynchronous, and less regular frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "the same neurons in the absence of electrical coupling, display a range of faster, asynchronous, and less regular frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "23b52223-ed31-4bd0-a780-416cc4a02a16",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C78",
+      "claim": "Both rat and mouse species harbor a similar range of cellular heterogeneity within the TIDA population.",
+      "claim_type": "EXPLICIT",
+      "source": "We exploit these differences to show that, while both species harbor a similar range of cellular heterogeneity within the TIDA population (assessed as preferred frequency and membrane properties)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "0857e585-c997-41b0-9472-8cafd22d2699",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C79",
+      "claim": "The presence of gap junctions imposes a slow, harmonized, narrow frequency band across the TIDA ensemble.",
+      "claim_type": "EXPLICIT",
+      "source": "the presence of gap junctions imposes a slow, harmonized, narrow frequency band across the ensemble.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "7e8ab3a1-9359-4da6-8a2b-a7a1e3d4f890",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C80",
+      "claim": "In a gap junction-linked hypothalamic dopamine circuit, the network assumes a harmonized slow rhythm emerging from the preferred resonance frequency imposed by the electrical coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experimental data show that in a gap junction-linked hypothalamic dopamine circuit, the network assumes a harmonized slow rhythm emerging from the preferred resonance frequency imposed by the electrical coupling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "96ec237c-a57d-49ff-acee-161f1f4c227e",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C81",
+      "claim": "Early studies of neuronal gap junctions suggested that they operate as low-pass current filters.",
+      "claim_type": "EXPLICIT",
+      "source": "Early studies of neuronal gap junctions suggested that they operate as low-pass current filters (Furshpan and Potter, 1957).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "938faeb5-309c-44ea-a788-03da6d2a63cc",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C82",
+      "claim": "As oscillatory current passes between cells through gap junctions, the variable frequencies generated by individual TIDA neurons are restricted and streamlined toward a slow network frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "As oscillatory current passes between cells through gap junctions \u2013 and filtered via the active and passive properties of membranes on either side of the junction \u2013 the variable frequencies generated by individual TIDA neurons are restricted and streamlined toward a slow network frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation of the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "3da12b65-bfcd-4d61-a767-3e97c53eb1c7",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C83",
+      "claim": "The mechanistic demonstration of the role of gap junctions in current transfer argues against the interpretation that the low frequency is the result of 'network load'.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanistic demonstration of the role of gap junctions in current transfer (Figure 7) argues against the interpretation that the low frequency of the rhythm in this system is the result of 'network load' (Hooper and Marder, 1987; Meunier, 1992), the drag imposed upon a connected neural ensemble by its slowest members, whose biophysical constraints may act as a brake on the entire network.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the experimental findings in the context of previous theoretical work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "cb6e83b1-0234-4b10-b9bc-404b688c5b82",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C84",
+      "claim": "The specific frequency emerging out of the electrically coupled network is likely not to be an exclusive product of the biophysical properties of Cx36.",
+      "claim_type": "EXPLICIT",
+      "source": "The specific frequency emerging out of the electrically coupled network is likely not to be an exclusive product of the biophysical properties of the proteins (in this case Cx36) that form the conducting connexons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the determinants of network frequency.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "a6906d9e-d813-4a64-b4df-535b4f9c1c9f",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C85",
+      "claim": "There have been several Cx36-linked rhythmically active populations described in the CNS, which oscillate in a wide range of frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "there have been several Cx36-linked rhythmically active populations described in the CNS, which oscillate in a wide range of frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the diversity of Cx36-linked oscillations in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "3f463bcd-60f8-4c40-8b49-82646524059d",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C86",
+      "claim": "Other factors specific to the coupled population may contribute to the specific network frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Other factors specific to the coupled population, for example the subcellular distribution of gap junctions, cellular geometry and associated proteins, may be hypothesized to contribute.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential contributing factors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "eaa4f2b6-7239-4c06-89ff-f203774bc60b",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C87",
+      "claim": "Two related rodent species have adopted different cellular solutions to the common biological problem of adaptive control of pituitary prolactin secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings also allow for some observations on biological diversity, by revealing how two related species have adopted different cellular solutions to a common biological problem \u2013 the adaptive control of pituitary prolactin secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings in an evolutionary context.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "d40c545a-93ba-426b-af44-563fa9fa051b",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C88",
+      "claim": "The two rodent TIDA populations accommodate a similar range of cellular heterogeneity among their intrinsic oscillators.",
+      "claim_type": "EXPLICIT",
+      "source": "While the two rodent TIDA populations responsible for this control accommodate a similar range of cellular heterogeneity among their intrinsic oscillators, the connectivity that imposes network rules thus differs critically (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "1a233d41-4ba7-4a48-b568-51f77ed37bf4",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C89",
+      "claim": "In the rat TIDA network, cellular diversity is accommodated through powerful gap junction connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the rat TIDA network, cellular diversity is shown to be accommodated through a powerful gap junction connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "14d81c31-aefa-46b7-a579-bb8fdebfdfc4",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C90",
+      "claim": "Cellular diversity within seemingly homogeneous neuronal populations contributes critically to the flexibility and adaptability necessary for survival under variable environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular diversity also within seemingly homogeneous neuronal populations has been demonstrated to be not only a core characteristic of how nervous systems are organized, but a feature that contributes critically to the flexibility and adaptability necessary for survival under variable environmental conditions (Manor et al., 1997a; Golowasch et al., 1999; Manor et al., 2000; Prinz et al., 2004; Grashow et al., 2010; see Marder et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "a46b6b46-4427-4b38-be80-dfccdd072f55",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C91",
+      "claim": "The TIDA-prolactin axis is subject to circadian modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "but it may be speculated that these features are of particular potential benefit in a system tasked with adjusting the animal for recurrent reproductive stages, including pregnancy, and is subject to circadian modulation, as is the case for the TIDA-prolactin axis (Grattan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "6cbee333-6c2d-465f-a816-97ba55219ad1",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C92",
+      "claim": "Diversity within neuronal networks increases flexibility but risks compromising reliable circuit performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Diversity within neuronal networks, as described here in the TIDA system, presents a trade-off: while it increases flexibility, it also risks compromising reliable circuit performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle inferred from the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "b9038cc7-56b2-4f69-919c-b9e5253c3ed7",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C93",
+      "claim": "Connecting intrinsically oscillating neurons together via strong electrical coupling can impose a slow network rhythm that overrides the individual frequencies of cells within the population.",
+      "claim_type": "EXPLICIT",
+      "source": "We here provide evidence that connecting intrinsically oscillating neurons together via strong electrical coupling can impose a slow network rhythm that overrides the individual frequencies of cells within the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main experimental finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "78b97f97-333b-4907-b221-ba37862c2f9e",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C94",
+      "claim": "All animal experiments were performed on male animals on postnatal days 21\u201328.",
+      "claim_type": "EXPLICIT",
+      "source": "All animal experiments were performed on male animals on postnatal days 21\u201328",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "5772f5f9-5487-4c29-88b2-503e62754704",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C95",
+      "claim": "Experiments had received approval by the local ethical board, Stockholms Norra Djurf\u00f6rs\u00f6ksetiska N\u00e4mnd.",
+      "claim_type": "EXPLICIT",
+      "source": "had received approval by the local ethical board, Stockholms Norra Djurf\u00f6rs\u00f6ksetiska N\u00e4mnd",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "552b9641-17af-45c4-ada7-08a4336f08b4",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C96",
+      "claim": "Experiments were performed in accordance with the European Communities Council Directive of November 24, 1986 (86/609/EEC).",
+      "claim_type": "EXPLICIT",
+      "source": "and were performed in accordance with the European Communities Council Directive of November 24, 1986 (86/609/EEC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about regulatory compliance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "13622dca-8657-4e1d-b300-1bc6cf1386b9",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C97",
+      "claim": "Recordings were performed at near-physiological temperature (34 \u00b1 1\u00b0C) apart from subset of experiments performed in room temperature (24 \u00b1 1\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings were performed at near-physiological temperature (34 \u00b1 1\u00b0C) apart from subset of experiments described in Figure 2 performed in room temperature (24 \u00b1 1\u00b0C)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about recording conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "fd250554-2cb9-4c2c-b69b-2039ab67880b",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C98",
+      "claim": "The concentration used for TTX was 0.5 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "The concentration used for TTX (Alomone Labs) was 0.5 \u03bcM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about drug concentration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "0e249924-1271-4626-8c54-edbba78ca71b",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C99",
+      "claim": "Postjunctional resistance between pairs was 80 \u00b1 10 M\u03a9.",
+      "claim_type": "EXPLICIT",
+      "source": "Postjunctional resistance between pairs was 80 \u00b1 10 M\u03a9 (n = 10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data about electrical properties of coupled neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "bdd89525-3ed2-4060-acd8-fe586d09c4cd",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C100",
+      "claim": "Liquid junction potential was 16.4 mV and not compensated.",
+      "claim_type": "EXPLICIT",
+      "source": "Liquid junction potential was 16.4 mV and not compensated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about recording conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "7d792381-7910-4fac-83fb-784292093d75",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C101",
+      "claim": "Sampling frequency in all electrophysiology data was 10 kHz.",
+      "claim_type": "EXPLICIT",
+      "source": "Sampling frequency in all electrophysiology data was 10 kHz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about data acquisition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "7898993a-224d-44a7-8e92-a59e27e545e2",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C102",
+      "claim": "The TIDA species difference in electrical coupling likely has bearing on species diversity in reproduction and parenting.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolutionary and physiological implications of this contrariety remain to be explored, but given that TIDA neurons control prolactin secretion (Grattan, 2015), it is likely to have bearing on for example species diversity in reproduction and parenting (Robitaille and Bovet, 1976; Bronson, 1979b; Bronson, 1979a; Limonta et al., 1985; Lonstein and De Vries, 2000; Lee et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the physiological implications, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "d4d26ebc-7980-4220-90be-f5fca8739757",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C103",
+      "claim": "TIDA neurons control prolactin secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "given that TIDA neurons control prolactin secretion (Grattan, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "45756d78-4f14-4299-b1d8-e7a1edb1fd31",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C104",
+      "claim": "Rat TIDA neurons are located in the dorsomedial arcuate nucleus (dmArc).",
+      "claim_type": "EXPLICIT",
+      "source": "Male rat TIDA cells identified by their location in the dmArc (Figure 1A\u2013B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is anatomical information supported by imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "34be2473-7340-495f-8304-65b336f642e4",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C105",
+      "claim": "Mouse TIDA neurons were identified using transgenic dopamine transporter (DAT)-tdTomato-expressing mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In striking contrast, while age- and sex-matched mouse TIDA neurons (Figure 1D,E), identified by using transgenic dopamine transporter (DAT; encoded by the Slc6a3 gene)-tdTomato\u2013expressing mice (Figure 1E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological detail about cell identification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "b9a42bae-4ee9-4204-8f9b-d4edea7fdde5",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C106",
+      "claim": "284 out of 311 mouse TIDA neurons exhibited sub- or supra-threshold phasic firing.",
+      "claim_type": "EXPLICIT",
+      "source": "also exhibited sub - or supra-threshold phasic firing across different experimental conditions (Figure 1F, n = 284/311; Figure 2B\u2013E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data about the proportion of active neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "02b94d80-9fdd-447c-9997-bb727db5574f",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C107",
+      "claim": "Rat and mouse TIDA neurons have no differences in cytoarchitectonic features including somata size, dendritic lengths and branching.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytoarchitectonic comparison of the TIDA somata size, dendritic lengths and branching (evaluated using Sholl analysis) revealed no differences (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from morphological analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "b7a1f5de-a2bb-41a2-a410-32cbc3a9119a",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C108",
+      "claim": "A difference in chemical synaptic or electrical coupling is likely to underlie the two distinct patterns of electrical activity in rat and mouse TIDA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that a difference in chemical synaptic or electrical coupling is likely to underlie the two distinct patterns of electrical activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similarity in intrinsic properties but difference in network behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "488c265a-7292-4a9b-9b8a-d3becf83d942",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "claim_id": "C109",
+      "claim": "Connexin 36 (Cx36) is the dominant neuronal gap junction-forming protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, immunostaining for the dominant neuronal gap junction-forming protein connexin 36 (Cx36; Rash et al., 2000) was performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0168740d-f69e-48eb-acc5-112bb225eb98",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Rat TIDA neurons exhibit stereotyped, slow (0.15 \u00b1 0.01 Hz), highly regular (CV = 1.99 \u00b1 0.69%) oscillations that are robust to perturbation. These oscillations are insensitive to hyperpolarization and resist entrainment by ZAP current injection, as evidenced by a low cross-correlation coefficient (0.61 \u00b1 0.03) between injected current and membrane voltage response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C28-29, C34-35, C37, C39-40 provide converging electrophysiological evidence from multiple recording configurations (whole-cell, on-cell, voltage clamp) demonstrating the stereotyped, robust nature of rat TIDA oscillations. The quantitative measurements of frequency, regularity, and resistance to perturbation are well-documented with appropriate sample sizes and statistical comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "212c1d95-9d7f-4abf-bb63-2196cf17832c",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mouse TIDA neurons exhibit faster (0.39 \u00b1 0.05 Hz), less rhythmic oscillations with substantial cell-to-cell variability (CV = 41.48 \u00b1 6.19%) and more depolarized nadir (-51.2 \u00b1 0.9 mV vs. rat -66.0 \u00b1 1.1 mV). These oscillations are sensitive to hyperpolarization and highly entrainable by ZAP current (cross-correlation coefficient 0.87 \u00b1 0.01).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C30-33, C36, C38-39 provide comprehensive electrophysiological characterization of mouse TIDA oscillations with appropriate quantification and statistical comparisons to rat. The data consistently demonstrate the flexible, variable nature of mouse oscillations across multiple experimental paradigms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "a94c5425-a347-496c-8eba-2239fd1794e3",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Network-level recordings reveal synchronized oscillations in rat TIDA neurons (paired recordings and Ca2+ imaging at 0.15 \u00b1 0.01 Hz) but asynchronous activity in mouse TIDA neurons (Ca2+ imaging at 0.40 \u00b1 0.05 Hz). The species differences observed at single-cell level are paralleled at the network level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-46 demonstrate consistency between single-cell electrophysiology and network-level measurements using both paired recordings and Ca2+ imaging. The correlation between membrane potential and Ca2+ activity (C44) validates the imaging approach. Sample sizes are adequate (n=63 rat pairs, n=40 mouse pairs).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "eeb4a93c-051b-4e66-ac76-aefbcb32f3c2",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Rat and mouse TIDA neurons share similar intrinsic electrophysiological properties (A-like K+ current, inward rectification, slow AHP) and morphology, with oscillations in both species abolished by TTX and persisting during blockade of fast synaptic transmission. These similarities suggest that differences in coupling, rather than intrinsic properties or chemical synapses, underlie the distinct network behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-52, C107-108 systematically rule out intrinsic cellular differences and chemical synaptic mechanisms as explanations for the species difference. The TTX experiments (C49-50) and synaptic blockade experiments (C51-52) are appropriately controlled. The morphological analysis (C107) provides additional support that structural differences are not responsible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "9ce9a850-0f8e-46d3-b8b0-fcf49a13dd6b",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Rat TIDA neurons exhibit strong electrical coupling with 51% of pairs showing coupling (n=32/63) with high coupling coefficient (0.18 \u00b1 0.02), typically asymmetrical (ratio 1.52 \u00b1 0.17). Punctate Cx36 immunoreactivity is distributed along rat TH-immunoreactive dendrites and somata.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C55-57, C59 provide direct electrophysiological evidence of electrical coupling through paired recordings with appropriate voltage transfer measurements. The coupling coefficients are among the highest reported in mammalian brain (C56), and the immunohistochemical data (C59) provides anatomical confirmation. The sample size (63 pairs) is substantial.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "0bb5e841-4f2a-4ab3-98cb-805b2cd8bf65",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Mouse TIDA neurons completely lack electrical coupling, with no evidence in paired recordings (n=40 pairs) and absence of Cx36 immunoreactivity, despite the antibody detecting Cx36 in other mouse brain regions. This represents an absolute species difference in gap junction connectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C58, C60-62 provide strong negative evidence through paired recordings showing zero coupling in 40 pairs and absence of Cx36 immunostaining. The positive control (C61) demonstrating antibody functionality in other brain regions is critical for validating the negative result. The conclusion of absolute species difference (C62) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "8d301703-c2b5-4174-a3b7-dba8825802d0",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Both rat and mouse TIDA neurons harbor a similar heterogeneous range of intrinsic resonance frequencies (rat: 0.30 \u00b1 0.02 Hz; mouse: 0.35 \u00b1 0.03 Hz). In mouse, preferred and oscillation frequencies match (0.35 vs. 0.39 Hz, not significant), suggesting individual neurons set their own pace.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C66-68, C78 demonstrate through ZAP function experiments that both species have similar ranges of preferred frequencies despite different network behaviors. The statistical comparison showing no difference between mouse preferred and oscillation frequencies (C66) supports the interpretation that uncoupled neurons oscillate at their intrinsic frequency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "9e11352d-6083-4e0d-a5d0-673043fc380a",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In rat TIDA neurons, gap junctions impose a slow network rhythm by filtering frequencies. Oscillation frequency (0.14 \u00b1 0.006 Hz) is significantly lower than preferred frequency (0.30 \u00b1 0.02 Hz, p<0.0001). Postjunctional resonance (0.17 \u00b1 0.02 Hz) matches oscillation frequency and is lower than prejunctional resonance (0.31 \u00b1 0.01 Hz), directly implicating gap junction transmission in harmonizing faster cell frequencies to a slow population rhythm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C69-70, C72-75, C79-80 provide mechanistic evidence through paired ZAP function experiments showing frequency filtering across gap junctions. The key finding that postjunctional resonance matches oscillation frequency (C73) while being lower than prejunctional resonance (C72) directly demonstrates the filtering mechanism. The experimental design with TTX to isolate gap junction effects is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "ded28a05-7a84-4f20-a15b-b3371e26af79",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The lack of electrical coupling in mouse TIDA neurons explains their higher input resistance and more fragile oscillation dynamics compared to rat.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-64 provide mechanistic interpretation linking the absence of gap junctions to observed physiological differences. The higher input resistance in mouse (referenced in Figure 4C,D,G,H) is consistent with lack of electrical coupling, as gap junctions provide additional current pathways. The fragile dynamics interpretation is supported by the entrainment and hyperpolarization sensitivity data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "6f4aabce-d9af-4a2c-bdc5-05e59b4aa811",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Electrical junctions determine oscillation frequency in neuronal networks, and related species can rely on distinct network strategies (electrical coupling vs. no coupling) to accomplish adaptive control of hormone release. Strong electrical coupling can impose a slow network rhythm that overrides individual cell frequencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-10, C76-77, C87-89, C93 represent the main conclusions synthesizing the experimental findings. These are well-supported by the comprehensive comparison of rat and mouse TIDA networks showing that the presence/absence of gap junctions is the key determinant of network behavior. The evolutionary interpretation (C87) is reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "3bca6c19-2bd5-4c79-bbaa-d548cbd11fbc",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The rat-mouse species difference in electrical coupling offers an experimental model to study gap junction function that avoids limitations of pharmacological blockers (poor specificity) and genetic knockouts (incomplete loss-of-function).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65, C22-23 correctly identify methodological advantages of the natural species difference model. The citations support the limitations of existing approaches. This represents a valid contribution to methodology for studying gap junction function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "9af5efbe-b0b1-4283-8140-4022b01cbaed",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Gap junctions filter oscillatory current through active and passive membrane properties, restricting variable frequencies toward a slow network frequency. This mechanism argues against 'network load' as the explanation for slow frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-83 provide mechanistic interpretation of the filtering results. The argument against network load (C83) is supported by the demonstration that postjunctional resonance, not the slowest cells, determines network frequency. The interpretation is consistent with early gap junction studies showing low-pass filtering properties.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "32e376f6-731d-4099-9bd4-f8897fd7a8b0",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The specific network frequency is likely not exclusively determined by Cx36 biophysical properties, as multiple Cx36-linked populations oscillate at different frequencies. Other factors like subcellular gap junction distribution, cellular geometry, and associated proteins may contribute.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84-86 are speculative (evidence_type: SPECULATION) and acknowledge uncertainty about determinants of specific frequency. While the observation about diverse Cx36-linked oscillation frequencies (C85) is valid, the proposed contributing factors (C86) are hypothetical and not tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "3a5f7693-55e7-486e-a858-282e969f0ca2",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Cellular diversity within neuronal populations contributes to flexibility and adaptability, which may be particularly beneficial for systems like the TIDA-prolactin axis that undergo recurrent reproductive stages and circadian modulation. However, diversity presents a trade-off between flexibility and reliable circuit performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-92 place findings in broader context of network diversity. C90 is well-supported by extensive citations to previous literature. C91 is supported by citation regarding circadian modulation. C92 represents a reasonable general principle inferred from the findings, though the specific physiological implications remain speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "0bc287f0-5d44-4c0b-9ab1-4f471c6f8014",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The species difference in electrical coupling likely has bearing on species diversity in reproduction and parenting, given that TIDA neurons control prolactin secretion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C102-103 are speculative about physiological implications. While C103 (TIDA control of prolactin) is well-established by citation, the connection to reproduction/parenting differences (C102) is hypothetical and not tested. The evolutionary and physiological implications remain to be explored as the authors acknowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "de48647d-f0af-4019-aa4a-489bb33c1394",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background claims establishing that electrical junctions are widespread in mammalian CNS, mediate fast bidirectional communication, and have been implicated in synchronization, but their role in determining oscillation frequency remains poorly understood due to methodological limitations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-2, C11-21 provide literature context supported by appropriate citations. These establish the knowledge gap (C2, C21) that motivates the study and document the historical evolution of understanding about gap junctions (C11-12). The methodological limitations (C21-23) justify the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "64d20ff7-8e71-452d-8120-eac38deed81b",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Prior literature describes rat TIDA neurons as exhibiting slow, synchronized oscillations while mouse TIDA neurons show irregular fast firing. Such dichotomy across analogous rodent circuits is rare, motivating systematic comparison.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-27 establish the literature discrepancy that motivated the study. All are supported by appropriate citations to previous work. The observation that such dichotomies are rare (C27) provides justification for detailed investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "093caa61-950f-41de-89e2-e27557ec0a93",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Methodological details including animal subjects (male, P21-28), ethical approvals, recording conditions (34\u00b0C), drug concentrations, electrical properties, and cell identification methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-101, C104-107 provide essential methodological information. These are factual statements about experimental procedures that are necessary for reproducibility. The details are appropriate and clearly stated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "7bb1993a-3ed7-4f8f-84b7-aab25668c813",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Hypothesis that gap junction transmission allows current to flow at higher amplitude at certain frequencies via passive or active filtering through pre- and post-junctional neurites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 is explicitly labeled as a hypothesis (evidence_type: SPECULATION) that was subsequently tested through the paired ZAP function experiments (C72-75). The hypothesis is reasonable based on known gap junction properties and led to productive experiments that supported it.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    },
+    {
+      "id": "a9fae482-f935-451a-a220-ca2491531dfa",
+      "content_id": "d84c226c-038b-4f2c-a1df-2cfb9b6a687d",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Connexin 36 (Cx36) is the dominant neuronal gap junction-forming protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C109 is a well-established fact supported by citation (Rash et al., 2000) that justifies the choice of Cx36 for immunohistochemical analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:43.583098Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ca102aba-d440-40cd-b7ca-2e831a35eed5",
+      "result_id": "0168740d-f69e-48eb-acc5-112bb225eb98"
+    },
+    {
+      "claim_id": "afb95170-d16a-4a18-91de-8f1f8bf094dd",
+      "result_id": "0168740d-f69e-48eb-acc5-112bb225eb98"
+    },
+    {
+      "claim_id": "e7718f5d-1b6c-4def-8fd5-d14ccc818947",
+      "result_id": "0168740d-f69e-48eb-acc5-112bb225eb98"
+    },
+    {
+      "claim_id": "8446a0f6-3fc4-4bd2-a681-adbde7af8c52",
+      "result_id": "0168740d-f69e-48eb-acc5-112bb225eb98"
+    },
+    {
+      "claim_id": "a3ca7359-9e2d-42c5-be4c-619d18cc1b51",
+      "result_id": "0168740d-f69e-48eb-acc5-112bb225eb98"
+    },
+    {
+      "claim_id": "250baedc-e3b7-41c4-a779-52628e5b8c17",
+      "result_id": "0168740d-f69e-48eb-acc5-112bb225eb98"
+    },
+    {
+      "claim_id": "d661ec99-03ae-4b68-9c81-fabb2724df87",
+      "result_id": "0168740d-f69e-48eb-acc5-112bb225eb98"
+    },
+    {
+      "claim_id": "c90d00c1-745b-4f05-8da6-82adea4180d7",
+      "result_id": "0168740d-f69e-48eb-acc5-112bb225eb98"
+    },
+    {
+      "claim_id": "e2f0362f-d805-41e2-87d3-b602c9ab102a",
+      "result_id": "212c1d95-9d7f-4abf-bb63-2196cf17832c"
+    },
+    {
+      "claim_id": "f0ba02d1-98d9-41f1-9838-8a8d2f8f8ac8",
+      "result_id": "212c1d95-9d7f-4abf-bb63-2196cf17832c"
+    },
+    {
+      "claim_id": "70d41836-0d0e-43f1-a020-d0aa5d8935a0",
+      "result_id": "212c1d95-9d7f-4abf-bb63-2196cf17832c"
+    },
+    {
+      "claim_id": "9b88d607-e63b-42ce-91ae-04bfca9ee4d6",
+      "result_id": "212c1d95-9d7f-4abf-bb63-2196cf17832c"
+    },
+    {
+      "claim_id": "e1994438-c1ed-44a5-839b-ab1afd0e4875",
+      "result_id": "212c1d95-9d7f-4abf-bb63-2196cf17832c"
+    },
+    {
+      "claim_id": "19031ffd-093b-4fb9-bc6e-d2b3ca8022fe",
+      "result_id": "212c1d95-9d7f-4abf-bb63-2196cf17832c"
+    },
+    {
+      "claim_id": "3a3db7dc-182f-44f3-b362-c35074c78df0",
+      "result_id": "212c1d95-9d7f-4abf-bb63-2196cf17832c"
+    },
+    {
+      "claim_id": "d661ec99-03ae-4b68-9c81-fabb2724df87",
+      "result_id": "212c1d95-9d7f-4abf-bb63-2196cf17832c"
+    },
+    {
+      "claim_id": "6398bb51-5e67-4d33-b9b6-8041be496519",
+      "result_id": "a94c5425-a347-496c-8eba-2239fd1794e3"
+    },
+    {
+      "claim_id": "43653abe-9dac-4426-a543-952c5b94f2ac",
+      "result_id": "a94c5425-a347-496c-8eba-2239fd1794e3"
+    },
+    {
+      "claim_id": "780764cc-019d-44b2-ac1d-e854cf5affb2",
+      "result_id": "a94c5425-a347-496c-8eba-2239fd1794e3"
+    },
+    {
+      "claim_id": "edd8ec71-3d20-4618-98c0-7ebfd9ddbde8",
+      "result_id": "a94c5425-a347-496c-8eba-2239fd1794e3"
+    },
+    {
+      "claim_id": "15d3c70e-3678-4507-8b34-e6c932a78a1a",
+      "result_id": "a94c5425-a347-496c-8eba-2239fd1794e3"
+    },
+    {
+      "claim_id": "e774e390-45bd-4724-8169-41441353eb94",
+      "result_id": "a94c5425-a347-496c-8eba-2239fd1794e3"
+    },
+    {
+      "claim_id": "e10e353e-6707-4c50-8c26-5a4ab291db61",
+      "result_id": "eeb4a93c-051b-4e66-ac76-aefbcb32f3c2"
+    },
+    {
+      "claim_id": "428a65ed-a56c-431a-b232-580d24752e65",
+      "result_id": "eeb4a93c-051b-4e66-ac76-aefbcb32f3c2"
+    },
+    {
+      "claim_id": "8cc02717-08d9-4b9b-9584-b945f9b2d487",
+      "result_id": "eeb4a93c-051b-4e66-ac76-aefbcb32f3c2"
+    },
+    {
+      "claim_id": "37a9c930-e932-4747-93d1-3a3f88175eda",
+      "result_id": "eeb4a93c-051b-4e66-ac76-aefbcb32f3c2"
+    },
+    {
+      "claim_id": "df54f67a-fc5e-4469-855a-3a6e13ade9bb",
+      "result_id": "eeb4a93c-051b-4e66-ac76-aefbcb32f3c2"
+    },
+    {
+      "claim_id": "5ed35e67-080c-4635-9994-25561001ae86",
+      "result_id": "eeb4a93c-051b-4e66-ac76-aefbcb32f3c2"
+    },
+    {
+      "claim_id": "02b94d80-9fdd-447c-9997-bb727db5574f",
+      "result_id": "eeb4a93c-051b-4e66-ac76-aefbcb32f3c2"
+    },
+    {
+      "claim_id": "b7a1f5de-a2bb-41a2-a410-32cbc3a9119a",
+      "result_id": "eeb4a93c-051b-4e66-ac76-aefbcb32f3c2"
+    },
+    {
+      "claim_id": "4cd9cbdf-7de0-4bd2-b6b8-060b5c2d9fd8",
+      "result_id": "9ce9a850-0f8e-46d3-b8b0-fcf49a13dd6b"
+    },
+    {
+      "claim_id": "7fb6c7c8-a4bd-4fb8-8d3e-1cbcd9e16743",
+      "result_id": "9ce9a850-0f8e-46d3-b8b0-fcf49a13dd6b"
+    },
+    {
+      "claim_id": "e62f0999-ce23-4873-8c41-34a8c5211834",
+      "result_id": "9ce9a850-0f8e-46d3-b8b0-fcf49a13dd6b"
+    },
+    {
+      "claim_id": "83c34e72-952e-4ad4-8a08-158085f0f2b5",
+      "result_id": "9ce9a850-0f8e-46d3-b8b0-fcf49a13dd6b"
+    },
+    {
+      "claim_id": "f999bbab-40e2-4ea4-98db-a3a29edf233c",
+      "result_id": "9ce9a850-0f8e-46d3-b8b0-fcf49a13dd6b"
+    },
+    {
+      "claim_id": "9565bbf1-76e1-489f-81a4-bb491e92e13f",
+      "result_id": "0bb5e841-4f2a-4ab3-98cb-805b2cd8bf65"
+    },
+    {
+      "claim_id": "e90aa247-6610-4366-ae9f-63af4b92a475",
+      "result_id": "0bb5e841-4f2a-4ab3-98cb-805b2cd8bf65"
+    },
+    {
+      "claim_id": "0121978a-87bc-49ad-a663-848af7c8652d",
+      "result_id": "0bb5e841-4f2a-4ab3-98cb-805b2cd8bf65"
+    },
+    {
+      "claim_id": "f4aadb1b-6330-4f9e-9a75-2a9eab6c142c",
+      "result_id": "0bb5e841-4f2a-4ab3-98cb-805b2cd8bf65"
+    },
+    {
+      "claim_id": "3ac1ccf8-0295-4c1c-8af1-4fb98eb64909",
+      "result_id": "0bb5e841-4f2a-4ab3-98cb-805b2cd8bf65"
+    },
+    {
+      "claim_id": "e4d35824-bc7d-4526-a750-9b561c48b0f7",
+      "result_id": "8d301703-c2b5-4174-a3b7-dba8825802d0"
+    },
+    {
+      "claim_id": "069386d0-fbc7-4b44-b55d-904305257840",
+      "result_id": "8d301703-c2b5-4174-a3b7-dba8825802d0"
+    },
+    {
+      "claim_id": "0519729d-686f-4dcd-8c1b-72fa5f9c2085",
+      "result_id": "8d301703-c2b5-4174-a3b7-dba8825802d0"
+    },
+    {
+      "claim_id": "1536b896-2925-492f-963d-b7f51acc5b6d",
+      "result_id": "8d301703-c2b5-4174-a3b7-dba8825802d0"
+    },
+    {
+      "claim_id": "23b52223-ed31-4bd0-a780-416cc4a02a16",
+      "result_id": "8d301703-c2b5-4174-a3b7-dba8825802d0"
+    },
+    {
+      "claim_id": "dc14d442-936f-488d-b8d8-829650608f11",
+      "result_id": "9e11352d-6083-4e0d-a5d0-673043fc380a"
+    },
+    {
+      "claim_id": "138d3e4c-9c16-4c8d-b935-3a369eca4e2a",
+      "result_id": "9e11352d-6083-4e0d-a5d0-673043fc380a"
+    },
+    {
+      "claim_id": "e99d966f-4caa-4bb1-a29c-b724d02dae63",
+      "result_id": "9e11352d-6083-4e0d-a5d0-673043fc380a"
+    },
+    {
+      "claim_id": "541b90f7-ddaa-44db-a4e8-e36d7bd4c13b",
+      "result_id": "9e11352d-6083-4e0d-a5d0-673043fc380a"
+    },
+    {
+      "claim_id": "e472e3c5-42d9-4905-a626-bec406643933",
+      "result_id": "9e11352d-6083-4e0d-a5d0-673043fc380a"
+    },
+    {
+      "claim_id": "dcf294bf-bd20-4280-8f68-1afc78798c94",
+      "result_id": "9e11352d-6083-4e0d-a5d0-673043fc380a"
+    },
+    {
+      "claim_id": "67c4a32b-2073-4b04-ad95-f5ea3768b3a5",
+      "result_id": "9e11352d-6083-4e0d-a5d0-673043fc380a"
+    },
+    {
+      "claim_id": "0857e585-c997-41b0-9472-8cafd22d2699",
+      "result_id": "9e11352d-6083-4e0d-a5d0-673043fc380a"
+    },
+    {
+      "claim_id": "7e8ab3a1-9359-4da6-8a2b-a7a1e3d4f890",
+      "result_id": "9e11352d-6083-4e0d-a5d0-673043fc380a"
+    },
+    {
+      "claim_id": "9ca54f5b-9102-4691-a3dd-551d158fe047",
+      "result_id": "ded28a05-7a84-4f20-a15b-b3371e26af79"
+    },
+    {
+      "claim_id": "708a21ce-5870-470e-a204-5647c696b234",
+      "result_id": "ded28a05-7a84-4f20-a15b-b3371e26af79"
+    },
+    {
+      "claim_id": "905e7526-7c39-489d-b2c6-f1a6f07d1ffd",
+      "result_id": "6f4aabce-d9af-4a2c-bdc5-05e59b4aa811"
+    },
+    {
+      "claim_id": "dd1202af-02e4-46a8-bf40-40e4ef7792ae",
+      "result_id": "6f4aabce-d9af-4a2c-bdc5-05e59b4aa811"
+    },
+    {
+      "claim_id": "3ab7afc4-9563-43b5-9b9e-6c9edda42849",
+      "result_id": "6f4aabce-d9af-4a2c-bdc5-05e59b4aa811"
+    },
+    {
+      "claim_id": "afd8cd1c-7c38-487a-ba7c-4b09fdaf68fb",
+      "result_id": "6f4aabce-d9af-4a2c-bdc5-05e59b4aa811"
+    },
+    {
+      "claim_id": "eaa4f2b6-7239-4c06-89ff-f203774bc60b",
+      "result_id": "6f4aabce-d9af-4a2c-bdc5-05e59b4aa811"
+    },
+    {
+      "claim_id": "d40c545a-93ba-426b-af44-563fa9fa051b",
+      "result_id": "6f4aabce-d9af-4a2c-bdc5-05e59b4aa811"
+    },
+    {
+      "claim_id": "1a233d41-4ba7-4a48-b568-51f77ed37bf4",
+      "result_id": "6f4aabce-d9af-4a2c-bdc5-05e59b4aa811"
+    },
+    {
+      "claim_id": "b9038cc7-56b2-4f69-919c-b9e5253c3ed7",
+      "result_id": "6f4aabce-d9af-4a2c-bdc5-05e59b4aa811"
+    },
+    {
+      "claim_id": "109b5c75-ffa9-4da3-84c3-d1a7c9e3b17a",
+      "result_id": "3bca6c19-2bd5-4c79-bbaa-d548cbd11fbc"
+    },
+    {
+      "claim_id": "a34ded4d-f112-4ed4-87b9-07dd29e545b6",
+      "result_id": "3bca6c19-2bd5-4c79-bbaa-d548cbd11fbc"
+    },
+    {
+      "claim_id": "600a3547-e57f-414b-bc89-954bb41783f0",
+      "result_id": "3bca6c19-2bd5-4c79-bbaa-d548cbd11fbc"
+    },
+    {
+      "claim_id": "938faeb5-309c-44ea-a788-03da6d2a63cc",
+      "result_id": "9af5efbe-b0b1-4283-8140-4022b01cbaed"
+    },
+    {
+      "claim_id": "3da12b65-bfcd-4d61-a767-3e97c53eb1c7",
+      "result_id": "9af5efbe-b0b1-4283-8140-4022b01cbaed"
+    },
+    {
+      "claim_id": "cb6e83b1-0234-4b10-b9bc-404b688c5b82",
+      "result_id": "32e376f6-731d-4099-9bd4-f8897fd7a8b0"
+    },
+    {
+      "claim_id": "a6906d9e-d813-4a64-b4df-535b4f9c1c9f",
+      "result_id": "32e376f6-731d-4099-9bd4-f8897fd7a8b0"
+    },
+    {
+      "claim_id": "3f463bcd-60f8-4c40-8b49-82646524059d",
+      "result_id": "32e376f6-731d-4099-9bd4-f8897fd7a8b0"
+    },
+    {
+      "claim_id": "14d81c31-aefa-46b7-a579-bb8fdebfdfc4",
+      "result_id": "3a5f7693-55e7-486e-a858-282e969f0ca2"
+    },
+    {
+      "claim_id": "a46b6b46-4427-4b38-be80-dfccdd072f55",
+      "result_id": "3a5f7693-55e7-486e-a858-282e969f0ca2"
+    },
+    {
+      "claim_id": "6cbee333-6c2d-465f-a816-97ba55219ad1",
+      "result_id": "3a5f7693-55e7-486e-a858-282e969f0ca2"
+    },
+    {
+      "claim_id": "7898993a-224d-44a7-8e92-a59e27e545e2",
+      "result_id": "0bc287f0-5d44-4c0b-9ab1-4f471c6f8014"
+    },
+    {
+      "claim_id": "d4d26ebc-7980-4220-90be-f5fca8739757",
+      "result_id": "0bc287f0-5d44-4c0b-9ab1-4f471c6f8014"
+    },
+    {
+      "claim_id": "7106dbda-d388-4c7c-a0c7-13dade8ee065",
+      "result_id": "de48647d-f0af-4019-aa4a-489bb33c1394"
+    },
+    {
+      "claim_id": "4d1fde7b-ef89-4d30-8cfc-6ee0adaeb7fe",
+      "result_id": "de48647d-f0af-4019-aa4a-489bb33c1394"
+    },
+    {
+      "claim_id": "ad5c4ddd-205e-46de-b9ec-658a74bc8d01",
+      "result_id": "de48647d-f0af-4019-aa4a-489bb33c1394"
+    },
+    {
+      "claim_id": "dcfe4384-0f0d-41d8-9f75-df5e478725fd",
+      "result_id": "de48647d-f0af-4019-aa4a-489bb33c1394"
+    },
+    {
+      "claim_id": "35d72cba-9fca-492d-bd87-c47fb667276f",
+      "result_id": "de48647d-f0af-4019-aa4a-489bb33c1394"
+    },
+    {
+      "claim_id": "8a73b1d1-3c61-454d-9225-73181bc2f28f",
+      "result_id": "de48647d-f0af-4019-aa4a-489bb33c1394"
+    },
+    {
+      "claim_id": "b4f432a3-a957-4533-86e6-6bc549aea5d2",
+      "result_id": "de48647d-f0af-4019-aa4a-489bb33c1394"
+    },
+    {
+      "claim_id": "268a2351-844b-46cc-bf43-4f2ece6e22b3",
+      "result_id": "de48647d-f0af-4019-aa4a-489bb33c1394"
+    },
+    {
+      "claim_id": "9b87b9d5-0238-4820-b18a-b15272bac1a0",
+      "result_id": "de48647d-f0af-4019-aa4a-489bb33c1394"
+    },
+    {
+      "claim_id": "cdc241ae-5e8c-4a3d-9c84-a5fe8432f9be",
+      "result_id": "de48647d-f0af-4019-aa4a-489bb33c1394"
+    },
+    {
+      "claim_id": "851f9f40-924b-4a67-9f49-67722b809830",
+      "result_id": "de48647d-f0af-4019-aa4a-489bb33c1394"
+    },
+    {
+      "claim_id": "e443d5ed-6d3f-47c3-b5cb-5a3bb5087f8a",
+      "result_id": "de48647d-f0af-4019-aa4a-489bb33c1394"
+    },
+    {
+      "claim_id": "52f416c6-5574-4ee6-80e5-57a0edceca23",
+      "result_id": "de48647d-f0af-4019-aa4a-489bb33c1394"
+    },
+    {
+      "claim_id": "dc4bbd73-87da-44f4-8a1a-174512c12cc5",
+      "result_id": "64d20ff7-8e71-452d-8120-eac38deed81b"
+    },
+    {
+      "claim_id": "918608ee-b671-4c1d-ac86-240f98bd6766",
+      "result_id": "64d20ff7-8e71-452d-8120-eac38deed81b"
+    },
+    {
+      "claim_id": "0bf69f40-cf29-43d2-abb4-1a3396411ee0",
+      "result_id": "64d20ff7-8e71-452d-8120-eac38deed81b"
+    },
+    {
+      "claim_id": "2f0adae4-15b8-47ac-b1c7-833634a40eb6",
+      "result_id": "64d20ff7-8e71-452d-8120-eac38deed81b"
+    },
+    {
+      "claim_id": "78b97f97-333b-4907-b221-ba37862c2f9e",
+      "result_id": "093caa61-950f-41de-89e2-e27557ec0a93"
+    },
+    {
+      "claim_id": "5772f5f9-5487-4c29-88b2-503e62754704",
+      "result_id": "093caa61-950f-41de-89e2-e27557ec0a93"
+    },
+    {
+      "claim_id": "552b9641-17af-45c4-ada7-08a4336f08b4",
+      "result_id": "093caa61-950f-41de-89e2-e27557ec0a93"
+    },
+    {
+      "claim_id": "13622dca-8657-4e1d-b300-1bc6cf1386b9",
+      "result_id": "093caa61-950f-41de-89e2-e27557ec0a93"
+    },
+    {
+      "claim_id": "fd250554-2cb9-4c2c-b69b-2039ab67880b",
+      "result_id": "093caa61-950f-41de-89e2-e27557ec0a93"
+    },
+    {
+      "claim_id": "0e249924-1271-4626-8c54-edbba78ca71b",
+      "result_id": "093caa61-950f-41de-89e2-e27557ec0a93"
+    },
+    {
+      "claim_id": "bdd89525-3ed2-4060-acd8-fe586d09c4cd",
+      "result_id": "093caa61-950f-41de-89e2-e27557ec0a93"
+    },
+    {
+      "claim_id": "7d792381-7910-4fac-83fb-784292093d75",
+      "result_id": "093caa61-950f-41de-89e2-e27557ec0a93"
+    },
+    {
+      "claim_id": "45756d78-4f14-4299-b1d8-e7a1edb1fd31",
+      "result_id": "093caa61-950f-41de-89e2-e27557ec0a93"
+    },
+    {
+      "claim_id": "34be2473-7340-495f-8304-65b336f642e4",
+      "result_id": "093caa61-950f-41de-89e2-e27557ec0a93"
+    },
+    {
+      "claim_id": "b9a42bae-4ee9-4204-8f9b-d4edea7fdde5",
+      "result_id": "093caa61-950f-41de-89e2-e27557ec0a93"
+    },
+    {
+      "claim_id": "02b94d80-9fdd-447c-9997-bb727db5574f",
+      "result_id": "093caa61-950f-41de-89e2-e27557ec0a93"
+    },
+    {
+      "claim_id": "3c81f32a-5ff3-48dd-a203-9e8315cb79c0",
+      "result_id": "7bb1993a-3ed7-4f8f-84b7-aab25668c813"
+    },
+    {
+      "claim_id": "488c265a-7292-4a9b-9b8a-d3becf83d942",
+      "result_id": "a9fae482-f935-451a-a220-ca2491531dfa"
+    }
+  ],
+  "comparisons": []
+}

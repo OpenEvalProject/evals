@@ -1,0 +1,338 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Three roGFP2-based probes (roGFP2-Orp1, Grx1-roGFP2, and unfused roGFP2) can be stably expressed in E. coli and respond to oxidizing and reducing agents. All three probes can be fully oxidized with AT-2 and fully reduced with DTT, with their redox state measurable via the 405/488 nm fluorescence ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 are well-supported by experimental data shown in Figure 1A-I. The microscopy images demonstrate stable expression, and the spectroscopy data clearly show reversible oxidation/reduction responses to AT-2 and DTT for all three probes. The methodology is appropriate and the results are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C78",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "roGFP2-Orp1 responds to exogenous H2O2 in a dose-dependent manner in E. coli. At low concentrations (10 \u00b5M-1 mM), the probe oxidizes and recovers, indicating bacterial detoxification capacity. At 10 mM H2O2, permanent oxidation occurs without recovery, suggesting bacteria cannot detoxify such high concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 and C104-C107 are supported by experimental data in Figure 1J showing dose-dependent probe oxidation and recovery kinetics. The inference about bacterial detoxification capacity (C45, C107) is reasonable based on the recovery patterns observed, though direct measurement of detoxification enzymes would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "PLB-985 cells can be differentiated to neutrophil-like cells using DMSO and IFN\u03b3 treatment. After 5 days, differentiated cells show significantly increased CD11b and CD64 expression, unchanged CD16 and CD66b expression, and morphological changes typical of neutrophils.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 are well-supported by flow cytometry data (Figure 2A-D) and microscopy images (Figure 2E-H). The characterization includes appropriate surface markers and morphological assessment. The use of established differentiation protocols (C51, C52) is properly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Differentiated PLB-985 cells effectively phagocytize IgG-opsonized E. coli. Phagocytosis is significantly reduced with undifferentiated cells, non-opsonized bacteria, or when IFN\u03b3 is omitted during differentiation. DMSO+IFN\u03b3 differentiation with opsonized bacteria provides optimal phagocytic capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 are supported by microscopy (Figure 3A-F) and flow cytometry data (Figure 3G-I). The experimental design includes appropriate controls (undifferentiated cells, non-opsonized bacteria, different differentiation conditions). The methodological choice (C65) is justified by the comparative data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C108"
+    ],
+    "result": "All three roGFP2-based probes (roGFP2-Orp1, Grx1-roGFP2, and unfused roGFP2) are oxidized when E. coli is phagocytized by neutrophil-like PLB-985 cells. The oxidation shows gradual kinetics, reaching a plateau after 60 minutes and remaining stable for 2 hours. No oxidation occurs with medium alone or undifferentiated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C66-C70, and C108 are strongly supported by experimental data in Figure 4A-C. The observation that all three probes show virtually identical kinetics despite their different specificities is a key finding. Appropriate controls (medium, undifferentiated cells) are included.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C80"
+    ],
+    "result": "Probe oxidation in bacteria is dependent on phagocytosis. Cytochalasin D treatment blocks phagocytosis and prevents probe oxidation for all three roGFP2-based probes. This indicates bacteria are exposed to reactive oxygen species only when internalized, and phagocytosis is the rate-limiting step for probe oxidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C71-C77, and C80 are well-supported by experimental data in Figure 5. Cytochalasin D effectively blocks phagocytosis (verified with both E. coli and Zymosan) and prevents probe oxidation. The inference that bacteria are exposed to ROS only when internalized (C77) is logical, though extracellular ROS could theoretically exist at undetectable levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C125"
+    ],
+    "result": "Individual bacteria experience rapid probe oxidation within seconds upon phagocytosis, as shown by live-cell microscopy. Non-phagocytized bacteria remain in a reduced state. The gradual increase in bulk probe oxidation reflects the gradual phagocytosis of individual bacteria over time, indicating bacteria experience maximal oxidative stress within the phagolysosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C81-C83, and C125 are supported by quantitative fluorescence microscopy data (Figure 6, Video 1). The single-cell resolution provides strong evidence for rapid oxidation upon phagocytosis. The inference about rate-limiting phagocytosis (C83) is well-justified by comparing bulk and single-cell kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C86",
+      "C87",
+      "C88",
+      "C119",
+      "C123",
+      "C124",
+      "C144",
+      "C145"
+    ],
+    "result": "Probe oxidation is dependent on NADPH oxidase (NOX2). PLB-985 cells lacking gp91phox (the catalytic subunit of NOX2) cannot induce significant probe oxidation in E. coli. Differentiated PLB-985 cells produce ROS when stimulated with PMA or opsonized E. coli, as measured by DCF fluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C86-C88, C119, C123-C124, and C144-C145 are supported by experimental data in Figures 7 and 8. The use of NOX2-deficient cells provides strong genetic evidence for NOX2 dependence. The DCF assay confirms ROS production. The inference that superoxide absence prevents thiol redox breakdown (C145) is logical given NOX2's role in the oxidative burst cascade.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C89",
+      "C108",
+      "C109"
+    ],
+    "result": "All three roGFP2-based probes show virtually identical oxidation kinetics during phagocytosis, despite their different specificities. This unexpected observation is inconsistent with H2O2 as the main oxidizing factor, since Grx1-roGFP2 is not directly affected by H2O2 and unfused roGFP2 reacts slowly with H2O2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C89, C108-C109 are supported by data in Figures 4, 5, 9, and 10. The similar kinetics across probes with different specificities is a critical observation that challenges the initial H2O2 hypothesis. The reasoning is sound and properly cites prior literature on probe specificities (C90-C93, C110-C114).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "All three roGFP2-based probes are oxidized instantly and non-specifically by HOCl in vitro and in E. coli. Addition of 10 \u00b5M or more HOCl to E. coli expressing any probe leads to instant oxidation. Previous in vitro studies showed that probe specificity breaks down in the presence of strong oxidants like HOCl.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C94-C97, C115-C117 are supported by experimental data in Figure 9A-C and citations to prior work. The instant oxidation response to HOCl for all three probes is consistent across concentrations. The reference to prior in vitro work (C9, C94-C96, C115) properly contextualizes the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C10",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Probe oxidation is dependent on myeloperoxidase (MPO). Pre-treatment of neutrophil-like cells with the MPO inhibitor ABAH significantly attenuates probe oxidation and ROS release for all three probes, without affecting phagocytosis. This indicates HOCl is the major reactive species causing thiol oxidation, though incomplete inhibition suggests other ROS may contribute or ABAH may not fully inhibit MPO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C10, C99-C102, C141-C143 are supported by experimental data in Figures 7 and 10. ABAH treatment reduces but does not eliminate probe oxidation, which is appropriately acknowledged. The conclusion that HOCl is the major species (C102) is justified, though the incomplete inhibition introduces some uncertainty about other contributing factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C118",
+      "C147",
+      "C148"
+    ],
+    "result": "Based on in vitro studies showing non-specific HOCl-mediated probe oxidation and MPO inhibition experiments, the authors conclude that HOCl is the major reactive species during the onset of the respiratory burst in neutrophils and initiates non-specific thiol oxidation in phagocytized bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118, C147-C148 represent the main conclusion of the study. This is well-supported by the convergence of multiple lines of evidence: (1) all probes show identical kinetics despite different specificities, (2) all probes respond instantly to HOCl in vitro, (3) MPO inhibition attenuates oxidation, and (4) NOX2 is required. The conclusion is appropriately qualified as 'major' rather than exclusive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The initial hypothesis was that H2O2 plays a major role in microbial oxidation during early phagocytosis. roGFP2-Orp1 typically shows high specificity for H2O2, Grx1-roGFP2 equilibrates with glutathione redox potential but is not directly affected by H2O2 (even at 100 \u00b5M in vitro), and unfused roGFP2 slowly equilibrates with glutathione and shows no significant oxidation by H2O2 in vivo or in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103, C110-C114 establish the initial hypothesis and probe characteristics based on established literature. These are properly cited and provide essential context for interpreting the unexpected finding that all probes behave identically during phagocytosis. This background is critical for understanding why the results challenge the H2O2 hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C48",
+      "C49",
+      "C50",
+      "C84",
+      "C85",
+      "C123",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C146"
+    ],
+    "result": "Background on phagocytic immune cell function and the oxidative burst: Phagocytic cells kill pathogens with antimicrobial agents including ROS from the oxidative burst. The respiratory burst involves NOX2-mediated superoxide production, conversion to H2O2, and MPO-catalyzed HOCl formation. Individuals with CGD or NOX2-deficient mice are susceptible to infection. Investigation of the phagosomal environment is challenging due to its complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C22, C48-C50, C84-C85, C123, C126-C131, and C146 provide established background knowledge properly supported by citations to previous literature. These claims accurately represent the current understanding of phagocytic killing mechanisms and set up the scientific context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Background on redox-sensitive probes: Most fluorescent redox-sensitive dyes have limitations (non-specificity, irreversibility, non-quantitative). H2DCF/DCF is widely used but mainly qualitative. roGFP2-based probes can be genetically introduced, targeted to compartments, and provide ratiometric quantification. The probes have different specificities: roGFP2-Orp1 for H2O2, Grx1-roGFP2 for glutathione redox potential, and unfused roGFP2 reacts slowly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C36 and C90-C93 provide essential background on probe technology, properly supported by citations. This establishes why roGFP2-based probes were chosen and explains their expected specificities, which is crucial for interpreting the unexpected finding that all probes behave identically during phagocytosis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The PLB-985 cell line, when differentiated to neutrophils, has been reported to express slightly less myeloperoxidase and have weaker functional responses than blood neutrophils in some studies, though other studies report comparable or exceeding superoxide production and MPO activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122 acknowledge variability in the literature regarding PLB-985 cell function compared to primary neutrophils. This is appropriately cited and represents a fair assessment of the model system's limitations and strengths.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Discussion of HOCl's role in bacterial killing: HOCl generation in phagolysosomes has been directly observed. MPO acts as a sink for H2O2, suggesting H2O2 doesn't accumulate to bactericidal levels. HOCl and chloramines appear to play the major role in oxidizing bacterial macromolecules. GFP bleaching in phagocytized bacteria suggested significant cytoplasmic HOCl. The current approach provides strong evidence for HOCl/chloramines in bacterial cytoplasm within seconds of phagocytosis. Interestingly, most MPO-deficient individuals don't suffer from infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C140 integrate the current findings with previous literature. The discussion is well-supported by appropriate citations and logically connects prior observations (GFP bleaching, MPO as H2O2 sink) with the current real-time tracking data. The mention of MPO deficiency (C140) appropriately acknowledges complexity in the biological system.",
+    "result_type": "MINOR"
+  }
+]

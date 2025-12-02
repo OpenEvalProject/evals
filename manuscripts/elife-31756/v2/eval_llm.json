@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "TGF-\u03b2-induced SMAD1/5 phosphorylation requires both TGFBR1 and ACVR1 type I receptors, as demonstrated by pharmacological inhibitor studies showing that SB-431542 (TGFBR1 inhibitor) and LDN-193189 (BMP type I receptor inhibitor) each partially inhibit SMAD1/5 phosphorylation, while their combination completely blocks it without affecting SMAD2 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inhibitor studies (C20-C25) provide strong pharmacological evidence with appropriate controls showing differential effects on SMAD1/5 vs SMAD2 phosphorylation. The dose-response relationship (C22) and combination effects (C25) support the conclusion that both receptor classes are required (C26). The deduction of specific receptors (C27) is appropriately qualified as being based on expression profiles and prior knockdown data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "In vitro kinase assays demonstrate that ACVR1, not TGFBR1, is the receptor kinase that directly phosphorylates SMAD1 on both serines of the SVS motif in a defined sequential order (penultimate serine first, then terminal serine), while TGFBR1 is a poor substrate for SMAD1 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vitro kinase assays (C28-C31) provide direct biochemical evidence with appropriate controls (SMAD2 phosphorylation). The phospho-site mapping experiments (C32-C33) rigorously identify specific phosphorylation sites and their order. The conclusion (C34) is well-supported by converging biochemical evidence, though the physiological relevance of the sequential phosphorylation order could be further validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "TGFBR1 phosphorylates and activates ACVR1 through phosphorylation of the ACVR1 GS domain, establishing a novel mechanism of type I receptor activation where one type I receptor activates another. This is demonstrated through in vitro kinase assays, optogenetic experiments, and GS domain mutant studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent experimental approaches converge on this conclusion: in vitro kinase assays (C35-C36), optogenetic experiments with light-inducible receptor activation (C37-C40), appropriate controls including kinase-dead mutants (C42), and GS domain mutants (C43-C45). The requirement for GS domain phosphorylation (C44-C45) provides strong mechanistic support. This represents a paradigm-shifting finding with robust experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "TGF-\u03b2 stimulation leads to higher-order receptor clustering at the cell surface rather than formation of a heterotetrameric complex containing TGFBR2/TGFBR1/ACVR1, as demonstrated by experiments with TGF-\u03b23 variants (TGF-\u03b23WW and TGF-\u03b23WD) that can engage different numbers of receptor pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The use of engineered TGF-\u03b23 variants (C46-C49) with defined receptor-binding properties provides an elegant experimental approach. The observation that TGF-\u03b23WD (which can only engage one receptor pair) still induces SMAD1/5 phosphorylation (C53) supports the clustering model (C54) over a heterotetrameric model. However, the claim that TGF-\u03b23WW/WD don't bind ACVR1 (C50-C51) is based on unpublished data, which slightly weakens this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "TGF-\u03b2 activates ACVR1 in vivo in a TGFBR1-dependent manner, as demonstrated by an ACVR1 biosensor (ACVR1-IPF) showing increased fluorescence upon TGF-\u03b2 treatment that is blocked by TGFBR1 inhibition and independent of BMP signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ACVR1-IPF biosensor provides direct real-time evidence of ACVR1 activation in living cells (C55). The pharmacological controls (C56), independence from BMP signaling (C57), and validation in multiple cell types (C58) strengthen the conclusion. The biosensor approach complements the optogenetic and biochemical data, providing orthogonal validation of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "TGF-\u03b2-induced pSMAD1/5\u2013SMAD4 complexes bind to chromatin at sites enriched for SMAD1/5 binding motifs and preferentially regulate canonical BMP target genes, particularly ID genes (ID1, ID3, ID4), which are major early transcriptional targets dependent on SMAD1/5 but not SMAD3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ChIP-seq analysis (C60-C65) is comprehensive with appropriate filtering and validation by ChIP-qPCR. Motif enrichment analysis (C66-C67) identifies expected SMAD1/5\u2013SMAD4 binding sites supporting the conclusion (C68). The functional validation using siRNA knockdowns (C69-C70) and pharmacological inhibitors (C71) demonstrates SMAD-specific gene regulation. The convergence of genomic, biochemical, and functional data strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Approximately one quarter (1398 of 5798) of TGF-\u03b2-regulated genes at 48 hours depend on SMAD1/5 signaling, with enrichment for genes involved in cytoskeleton regulation, focal adhesions, junctions, and EMT, demonstrating that SMAD1/5 signaling plays a crucial role in long-term transcriptional responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-seq analysis comparing parental and \u0394SMAD1/5 NMuMG cells (C77) provides genome-wide quantitative data with appropriate statistical cutoffs. The gene set enrichment analysis (C79) identifies biologically relevant pathways. The ~25% figure (C5, C77) is clearly stated with defined criteria. The conclusion about long-term transcriptional importance (C78) is well-supported, though validation of a subset of genes by qPCR would strengthen confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "TGF-\u03b2-induced EMT requires signaling through both SMAD3 and SMAD1/5 pathways, as demonstrated by loss of EMT markers (CDH1 delocalization and TJP1 loss) in CRISPR knockout cells, siRNA knockdowns, and pharmacological inhibition studies in multiple cell lines (NMuMG and EpRas).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary approaches validate this conclusion: CRISPR knockout (C80), siRNA knockdowns (C82), and pharmacological inhibitors (C83-C84). The validation in two independent cell lines (C85) strengthens generalizability. The use of established EMT markers (CDH1, TJP1) and mesenchymal markers (C81) provides appropriate readouts. The convergence of genetic and pharmacological evidence strongly supports the dual pathway requirement (C86).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C8",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "ID1 is the prominent ID family member upregulated by TGF-\u03b2 in NMuMG cells and is essential for TGF-\u03b2-induced EMT, as demonstrated by siRNA knockdown experiments showing that ID1 depletion prevents EMT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of ID1 as a major target is supported by ChIP-seq (C6) and expression analysis (C87). The functional requirement is demonstrated by siRNA knockdown using both pooled and individual siRNAs (C88), which is good experimental practice. The conclusion that ID1 is essential for EMT (C89) is well-supported by the loss-of-function data, though the mechanism by which ID1 promotes EMT could be further elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "TGF-\u03b2-induced SMAD1/5 phosphorylation exhibits cell-type-specific and culture-condition-dependent kinetics that are distinct from SMAD2/3 phosphorylation kinetics. In MDA-MB-231 and NMuMG cells, SMAD1/5 phosphorylation is transient (peaking at 1 hour), while in BT-549 cells it is sustained, and the transience requires new transcription and TGFBR2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinetics are well-documented across multiple cell lines and conditions (C9-C12) with appropriate time courses. The cell-type specificity (C13) and independence from SMAD2/3 kinetics (C14) are clearly demonstrated. The actinomycin D experiments (C15-C16) provide mechanistic insight into the transience. The refractoriness experiments (C17-C19) support TGFBR2 requirement. However, the identity of the transcription-dependent inhibitor remains unknown, which is acknowledged as future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "TGF-\u03b2 employs a novel mode of receptor activation where one type I receptor (TGFBR1) activates another (ACVR1), and the full TGF-\u03b2-induced transcriptional program requires combinatorial signaling via both SMAD2/3 and SMAD1/5 pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a synthesis claim that integrates multiple major findings from the paper. The novel receptor activation mechanism (C90) is supported by the convergence of in vitro, optogenetic, and biosensor data. The combinatorial signaling model (C91) is supported by the RNA-seq data showing ~25% of genes depend on SMAD1/5, the ChIP-seq showing distinct binding patterns, and the functional requirement for both pathways in EMT. This represents the central conceptual advance of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Background knowledge about TGF-\u03b2 family signaling, including the canonical two-branch model and previous observations of TGF-\u03b2-induced SMAD1/5 phosphorylation, with conflicting prior conclusions about receptor requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the scientific context and prior knowledge (C1, C111-C117) with appropriate citations. The acknowledgment of conflicting prior studies (C122-C123) appropriately frames the controversy that this work resolves. The historical context about ACVR1 (C118-C119) and ACVRL1 in endothelial cells (C120-C121) provides important precedent for the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Discussion of the biological context and implications of ID1 in cancer, EMT, and TGF-\u03b2 signaling, including prior observations about ID1 regulation in different cellular contexts and its roles in tumor progression and metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims synthesize prior literature (C75-C76, C92-C93, C104-C110) to contextualize the current findings. The discussion appropriately cites previous work and acknowledges context-dependent roles of ID1 (C99, C104-C105). The claims about BMP vs TGF-\u03b2 responses (C94-C97) and the explanation of prior observations (C98) integrate the current findings with existing knowledge. These are appropriate discussion points rather than new experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Background on TGF-\u03b2's dual role in cancer, including its tumor suppressive effects at early stages and tumor promoting effects (including EMT induction) at later stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish well-documented background knowledge about TGF-\u03b2 in cancer with appropriate citations to reviews (C124-C129). This contextualizes why understanding TGF-\u03b2-induced EMT and its mechanisms is important. The claims are appropriately presented as established knowledge rather than new findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1913 @@
+{
+  "submission": {
+    "id": "5102c652-6ee8-46ef-a547-03bc8a5db4a9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:16:07.917224Z",
+    "updated_at": "2025-12-02T01:16:07.917224Z"
+  },
+  "content": [
+    {
+      "id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "submission_id": "5102c652-6ee8-46ef-a547-03bc8a5db4a9",
+      "content_type": "manuscript",
+      "content_text": "# Multimodal cell tracking from systemic administration to tumour growth by combining gold nanorods and reporter genes\n\n## Authors\n\n- Joan Comenge<sup>1</sup>\n- Jack Sharkey<sup>2</sup>\n- Oihane Fragueiro<sup>4</sup>\n- Bettina Wilm<sup>2</sup> ([ORCID: 0000-0002-9245-993X](https://orcid.org/0000-0002-9245-993X))\n- Mathias Brust<sup>4</sup> ([ORCID: 0000-0001-6301-7123](https://orcid.org/0000-0001-6301-7123))\n- Patricia Murray<sup>2</sup> ([ORCID: 0000-0003-1316-148X](https://orcid.org/0000-0003-1316-148X))\n- Raphael Levy<sup>1</sup> ([ORCID: 0000-0001-5728-0531](https://orcid.org/0000-0001-5728-0531)) \u2020\n- Antonius Plagge<sup>2</sup> ([ORCID: 0000-0001-6592-1343](https://orcid.org/0000-0001-6592-1343)) \u2020\n\n### Affiliations\n\n1. Institute of Integrative Biology University of Liverpool Liverpool United Kingdom\n2. Department of Cellular and Molecular Physiology University of Liverpool Liverpool United Kingdom\n3. Centre for Preclinical Imaging, Institute of Translational Medicine University of Liverpool Liverpool United Kingdom\n4. Department of Chemistry University of Liverpool Liverpool United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nUnderstanding the fate of exogenous cells after implantation is important for clinical applications. Preclinical studies allow imaging of cell location and survival. Labelling with nanoparticles enables high sensitivity detection, but cell division and cell death cause signal dilution and false positives. By contrast, genetic reporter signals are amplified by cell division. Here, we characterise lentivirus-based bi-cistronic reporter gene vectors and silica-coated gold nanorods (GNRs) as synergistic tools for cell labelling and tracking. Co-expression of the bioluminescence reporter luciferase and the optoacoustic reporter near-infrared fluorescent protein iRFP720 enabled cell tracking over time in mice. Multispectral optoacoustic tomography (MSOT) showed immediate biodistribution of GNR-labelled cells after intracardiac injection and successive clearance of GNRs (day 1\u201315) with high resolution, while optoacoustic iRFP720 detection indicated tumour growth (day 10\u201340). This multimodal cell tracking approach could be applied widely for cancer and regenerative medicine research to monitor short- and long-term biodistribution, tumour formation and metastasis.\n\n## Introduction\n\nNon-invasive optical imaging methods for preclinical in vivo research include bioluminescence (BLI) and fluorescence as well as photoacoustic/optoacoustic tomography, a technology that has only been developed recently (Deliolanis et al., 2014; Wang and Yao, 2016; Weber et al., 2016). These imaging modalities have enabled great progress in the tracking of labelled cells longitudinally over time in animal models of disease, which has become especially relevant for cancer research and cell-based regenerative medicine therapies (de Almeida et al., 2011; James and Gambhir, 2012; Sharkey et al., 2016). The resolution and sensitivity of optical imaging in animals is limited by autofluorescence, absorption and scattering of excitation and/or emission light, especially in deep tissues. The optimal window for in vivo optical imaging lies in the near infrared (NIR) spectrum (~650\u2013900 nm), since absorption through the main endogenous chromophores (oxy-haemoglobin, deoxy-haemoglobin, melanin, water and lipids) are minimal in this spectral range (Weber et al., 2016). For permanent cell labelling and tracking, genetic modification with reporter genes is the method of choice, although fluorescent tags and nanoparticles have been developed recently for sensitive short-term cell tracking over a period of a few cell divisions (Comenge et al., 2016; Dixon et al., 2016).\n\nUsing luciferase reporter genes, bioluminescence constitutes the most sensitive optical modality due to its excellent signal-to-noise ratio, as light emission only occurs in the presence of a functional enzyme and its required co-factors. Firefly, luciferase has become the most widely used reporter as its substrates, D-luciferin or CycLuc1 (Evans et al., 2014), are very well tolerated by animals and, compared to other luciferases, its peak light emission at around 562 nm is closest to the infrared window for in vivo imaging (de Almeida et al., 2011). Although highly sensitive in vivo cell tracking via bioluminescence imaging of firefly luciferase is well established (de Almeida et al., 2011; Mezzanotte et al., 2013), this modality provides poor information about the spatial localisation of cells. Fluorescence has recently gained importance for animal imaging, since novel near-infrared fluorescent proteins (iRFPs) were developed from bacterial phytochrome photoreceptors (Shcherbakova et al., 2015; Shcherbakova and Verkhusha, 2013). Similar to bioluminescence imaging, fluorescence only allows limited spatial resolution due to the high scattering coefficient of photons in tissues.\n\nOn the other hand, photoacoustic imaging is based on the generation of ultrasound waves after absorption of light emitted by a pulsed laser. The sound waves are well transmitted in fluid media and less prone to scattering through tissues than emitted light. In fact, acoustic scattering is three orders of magnitude less than photon scattering (Wang and Hu, 2012), which overcomes deep tissue spatial resolution drawbacks of other optical-based imaging technologies. Interestingly, some iRFPs, such as iRFP720, have an absorption profile in the NIR window, thus enabling their use as reporter genes for photoacoustic imaging, and allowing deep tissue imaging and tumour monitoring in mice (Deliolanis et al., 2014; Jiguet-Jiglaire et al., 2014). For example, new iRFPs have been proven to be useful genetic photoacoustic reporters in mammary gland and brain tumour monitoring, which establishes them as dual-modality imaging probes (Deliolanis et al., 2014; Filonov et al., 2012; Krumholz et al., 2014). In addition, in multispectral optoacoustic tomography (MSOT), a rapid multiwavelength excitation allows the distinction between different absorbers simultaneously after applying multispectral unmixing algorithms (Tzoumas et al., 2014). Hence, a number of endogenous (e.g. deoxy- and oxyhaemoglobin) or exogenously introduced targets can be imaged in vivo via MSOT, including fluorescent proteins and nanoparticles.\n\nSince light absorption triggers the photoacoustic response, contrast agents with a high molar extinction coefficient facilitate their distinction from endogenous chromophores (Lemaster and Jokerst, 2017). In this regard, GNRs are an attractive choice since the extinction coefficients are in the range of 4\u20135.5 \u00d7 109 M\u22121cm\u22121 for longitudinal surface plasmon between 728 and 845 nm (Orendorff and Murphy, 2006), that\u00a0is orders of magnitude higher than endogenous absorbers or other types of contrast agents (e.g. AlexaFluor750 and iRFP720 coefficients are 2.5 \u00d7 105 and 9.6 \u00d7 104 M\u22121cm\u22121, respectively [Shcherbakova and Verkhusha, 2013; Ntziachristos and Razansky, 2010]). We recently demonstrated how, after coating GNRs with a 35 nm silica shell, the optical properties of GNRs are maintained even in harsh environments such as the endosomal vesicles (Comenge et al., 2016). This enabled very sensitive photoacoustic imaging of labelled cells, pushing the limits of detection into a range useful for biologically-relevant applications including cell tracking (Wang and Jokerst, 2016). However, cell division and cell death result in a decrease of GNR concentration and therefore a decrease of photoacoustic intensity. Thus, for long-term photoacoustic tracking of cells, adequate reporter genes are required.\n\nHere, we characterise newly generated lentivirus-based bi-cistronic reporter gene vectors and silica-coated GNRs as synergistic tools for co-labelling of cells and tracking in multiple imaging modalities at different stages after cell administration. The GNR-860 offered an excellent photoacoustic sensitivity that enabled detection of a very low number of cells. Reporter gene vectors mediated co-expression of the most sensitive bioluminescent reporter, firefly luciferase, and the most red-shifted near-infrared fluorescent protein, iRFP720, which also acted as a photoacoustic reporter in MSOT. Whilst GNR-860 enabled early detection of cells by photoacoustic tomography after systemic injection, reporter genes were needed to monitor any potential tumour growth with the same technique. In addition, co-expression of luciferase allowed bioluminescence imaging. Although this modality does not offer the spatial resolution of photoacoustic tomography, it was used here to continuously monitor cell viability as well as for validating the photoacoustic results. The combination of the two cell labelling strategies (nanoparticles and genetic labelling) allowed short-term and long-term multimodal imaging of deep tissues with high spatial resolution without compromising sensitivity. It enabled the non-invasive monitoring of the initial cell biodistribution on a sub-organ level as well as the detection of tumour formation from very early stages, thus opening opportunities for gaining a better understanding of the safety of stem cell therapies, which is required for moving towards clinical translation (Ankrum and Karp, 2010).\n\n## Results and discussion\n\n### Gold nanorod synthesis and cell labelling\n\nTwo types of GNRs with distinct optical spectra were prepared following previously published protocols (Nikoobakht and El-Sayed, 2003; Ye et al., 2012). The rationale for evaluating two types of gold nanorods in this study is as follows. First, detection of GNRs at different wavelengths would support the versatility of the approach, for example when combining them with other reporter molecules, that\u00a0is it is not dependent upon preparing the exact same nanorods as reported here. Second, having two different probes provided us with a powerful control for false positive signals as explained in more detail below in the context of Figure 4. The first batch consisted of GNRs with a longitudinal surface plasmon resonance (LSPR) peak at 710 nm (GNR-710). Their core size was 60.0\u00a0\u00b1\u00a07.5 nm by 25.7\u00a0\u00b1\u00a03.7 nm with an average aspect ratio of 2.3\u00a0\u00b1\u00a00.3. The second batch had a LSPR peak at 860 nm (GNR-860). In this case, their size was 93.8\u00a0\u00b1\u00a09.3 nm by 25.2\u00a0\u00b1\u00a04.4 nm with an average aspect ratio of 3.8\u00a0\u00b1\u00a00.5) (Figure 1a). Both GNRs were prepared to have LSPR bands in the NIR to favour their detection deep inside tissues.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/33140/elife-33140-fig1-v1.jpg)\n\n**Figure 1.:** (a) Representative transmission electron microscopy (TEM) pictures of GNR-710 (top) and GNR-860 (bottom). (b) TEM pictures of GNR-710 (top panels) and GNR-860 (bottom panels) inside cells. In both cases, the silica shell provides steric hindrance to minimise plasmon coupling in cellular vesicles. (c) Vis-NIR spectrum of GNRs in solution. (d) Vis-NIR spectrum of cells labelled with the corresponding GNRs. Dashed lines correspond to GNRs in solution. (e) Cell viability at different optical densities. Viability was assessed in triplicate and results are given as %\u00b1SD relative to cells that were cultured without GNRs.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33140/elife-33140-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Silica shell provided steric hindrance to minimise plasmon coupling effects.\n\nWe have recently demonstrated that a 35 nm silica shell is needed to minimise plasmon coupling between GNRs after cell uptake (Comenge et al., 2016). This enables the preservation of intrinsic optical properties resulting in an increased sensitivity for photoacoustic detection. Hence, both GNR batches were coated with a silica shell as previously described (Comenge et al., 2016). Specifically, GNR-710 and GNRs-860 nm have a silica shell thickness of 38.7\u00a0\u00b1\u00a01.9 nm and 35.7\u00a0\u00b1\u00a01.6 nm, respectively (Figure 1a).\n\nA murine MSC line was selected for labelling and tracking, since these cells have the capability to differentiate into mesenchymal derivatives, but can also form tumours occasionally (Comenge et al., 2016; Kuzma-Kuzniarska et al., 2012). The cells, which had first been transfected with a reporter gene vector (see below), were incubated with different concentrations of GNR-710 and GNR-860 for 24 hr. To provide a better comparison between GNRs of different sizes, we standardize and report the GNR concentrations by the optical density (O.D.) of the peak, because absorption is what triggers the photoacoustic response. For reference, O.D.\u00a0=\u00a04 corresponds to\u00a0~100 pM GNR-710 and\u00a0~72.5 pM GNR-860 (calculated by relating the absorbance at 400 nm of GNRs before silica coating to concentrations of molecular gold) (Pastoriza-Santos and Liz-Marz\u00e1n, 2013).\n\nTo characterize their uptake, cells were incubated with GNRs at 0.D.\u00a0=\u00a03 for 24 hr. TEM images of cells show GNRs localised inside vesicles, with silica shells separating the gold cores (Figure 1b, and Figure 1\u2014figure supplement 1). In line with our previous report, the optical properties of GNRs were largely preserved after cell uptake (Figure 1c,d). Preservation of the absorbance intensity and the shape of the plasmon band are prerequisite for an optimal photoacoustic detection of GNR-labelled cells since it relies on a spectral deconvolution to differentiate intrinsic absorbers from probes.\n\nTo confirm that the cell labelling does not cause any toxicity, cell viability after exposure to a range of GNR concentrations up to O.D.\u00a0=\u00a04 was assessed (Figure 1e). Only at the highest GNR concentration was a slight decrease in cell viability observed: 92.0 \u00b1 2.6% and 91.7 \u00b1 1.6% for GNR-710 and GNR-860, respectively. These results are in agreement with our previous work, in which we showed that silica-coated GNRs did not affect cell viability, proliferation or differentiation potential of the mMSCs (Comenge et al., 2016).\n\n### Generation of iRFP720-Luciferase bi-cistronic lentivirus reporter gene vectors and characterisation of labelled cells\n\nTo combine the sensitivity of bioluminescence imaging with the spatial resolution of MSOT, we generated bi-cistronic lentivirus vectors for expression of firefly luciferase and iRFP720 from the general eukaryotic EF1\u03b1 promoter (Figure 2a). We compared vectors containing either an internal ribosome entry site (IRES) (Hellen and Sarnow, 2001) or a self-cleaving 2A element (Szymczak and Vignali, 2005; Szymczak et al., 2004), to determine the most efficient method of translating the second open reading frame (ORF; encoding luciferase) from a single mRNA. Following transfection with lentivirus vectors, the mMSCs were selected by FACS for iRFP720 fluorescence, to obtain a pure IRES-vector and a pure E2A-vector transfected cell population, respectively, with similar levels of expression of the first ORF protein (iRFP720) (Figure 2b). Co-expression of iRFP720 and luciferase in individual cells was confirmed by immunocytochemistry (Figure 2c), which also indicated that, in contrast to luciferase, iRFP720 was preferentially localised in the nucleus. To compare the levels of expression of luciferase from the IRES-vector and E2A-vector transfected cells, fluorescent and bioluminescent signals were quantified in cell suspensions using an IVIS Spectrum imager. For both types of reporter cells (IRES-vector and E2A-vector transfected), the fluorescence signal intensity for iRFP720 was the same, but the E2A-vector-transfected cells showed a five times higher luciferase bioluminescence (Figure 2d,e). These data indicate that in the context of our bi-cistronic lentivirus vectors, a superior translation efficiency of the second ORF from a single mRNA was achieved via an E2A element as compared to an IRES element. We therefore used the pHIV-iRFP720-E2A-Luc vector in all further experiments described herein. Proof of principle of the application of this vector for multi-modal imaging was tested in preliminary experiments, in which cells were injected subcutaneously and monitored with bioluminescence, fluorescence and photoacoustic imaging (Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/33140/elife-33140-fig2-v1.jpg)\n\n**Figure 2.:** (a)\u00a0Scheme of the vectors that mediate co-expression of iRFP720 and firefly luciferase either via IRES- or E2A-mediated mechanisms (not drawn to scale). Arrows above and below the scheme indicate the reporter gene transcript and open reading frames, respectively. (b) FACS analyses of iRFP720 fluorescent signal intensity in purified mMSC populations, which had been transfected with either the IRES or E2A vector, respectively, indicated similar levels of expression of the first ORF. (c) Confocal fluorescence microscopy of transfected cells for co-expression of iRFP720 and luciferase (immunofluorescence). In contrast to Luc, iRFP720 tends to accumulate in the nucleus (yellow triangles). (d, e) Comparison of fluorescent and bioluminescent signal intensities from IRES and E2A vector-transfected cell populations using IVIS Spectrum imaging. Although both cell suspensions provided very similar levels of fluorescence from the first reporter ORF (iRFP720) in the region of interest (ROI), bioluminescence levels were 5-fold higher in the E2A vector-transfected cell population, indicating a more efficient translation of the second ORF (luciferase) from the E2A element than from the IRES. Fluorescence was measured first, followed by addition of CycLuc1 to the same cell suspensions and bioluminescence imaging.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33140/elife-33140-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** 1.25 \u00d7 105 (1), 2.5 \u00d7 105 (2), 5 \u00d7 105 (3) and 1 \u00d7 106 (4) cells were injected at the indicated regions and imaged immediately and over a period of one month after injection. A substantial loss of signal intensity over the first few days post-injection, which can be attributed to cell death, resulted in undetectability of the 1.25 \u00d7 105 (1) and 2.5 \u00d7 105 (2) cell injection clusters on day 3. However, survival of a small number of cells and subsequent tumour formation in the region of the lowest injected cell number (1) is evident after four weeks. Photoacoustic (MSOT) detection of iRFP720 is shown in tomographic transverse body sections at the site of highest cell concentration (1 \u00d7 106, (4)) on the day of injection and on day 3, and for the larger tumour (1) on day 28. The photoacoustic signals are colour coded in arbitrary MSOT units and the green circle indicates the location of the spine for orientation. For iRFP720 fluorescence (FL) the 710/760 nm excitation/emission filter set was used. Exposure time was 1 s for both, FL and bioluminescence (BL). Multi-spectral data reconstruction for MSOT was performed employing a guided-ICA algorithm against the photoacoustic spectra of iRFP720-E2A-Luc cells in phantoms.\n\n### Imaging biodistribution of cells after intracardiac injection\n\nDetection of labelled cells after subcutaneous injection has provided indications that gold nanorods (our previous work [Comenge et al., 2016]) and genetic reporters (Figure 2\u2014figure supplement 1) could enable cell tracking. Similar proof of principle of the utility of nanoparticles as contrast agents for photoacoustic cell detection has often been obtained by imaging labelled cells implanted locally (Jokerst et al., 2012; Nam et al., 2012). Here, we address the much more challenging case of a systemic injection where cells spread through the body and the signal, therefore, becomes diluted. Specifically, 1.5 \u00d7 106 mMSCs transduced with the iRFP720-E2A-Luc lentivirus and labelled with GNRs were administered via ultrasound-guided intracardiac injection into the left ventricle. Left ventricle administration was chosen for cells to enter the arterial circulation rather than the venous. This allows cells to pass through all organs before returning to the right ventricle and subsequently lungs, where they become sequestered in the pulmonary microvasculature (Kean et al., 2013; Fischer et al., 2009). To provide a detailed assessment of cell localisation, we combined photoacoustic tomography imaging at 1 mm steps with bioluminescence detection. While bioluminescence imaging provides excellent sensitivity, its anatomical resolution is poor, mainly due to the high scattering of photons by tissue (Patterson et al., 1989; Ntziachristos et al., 2005). By contrast, photoacoustic imaging provides superior spatial resolution (150 \u00b5m in our system) (Ntziachristos and Razansky, 2010). To demonstrate the potential of this multimodal approach to precisely determine the localisation of distributed nanorod-labelled cells, we show the correlation between bioluminescence imaging and MSOT imaging (Figure 3). Cell localisation in the head, liver and kidney regions was clearly observed with both imaging modalities (Figure 3a,b), and the cell presence within organs was confirmed in the photoacoustic scans through the respective regions (Figure 3c). This distribution is in agreement with other, different types of assessments in previous reports (Basse et al., 1988). The presence of cells in the brain region is probably due to cell trapping in small capillaries, as reported also in other studies after intracardiac injection of cells (Heyn et al., 2006). As shown in our parallel work (Scarfe et al., 2017), the mMSCs remain in the lumen of the brain capillaries and do not cross the blood-brain barrier. It should be noted here that there was no difference in the bioluminescence signal biodistribution when cells with or without gold nanorods were injected, indicating that GNR uptake does not affect the overall behaviour of the cells (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/33140/elife-33140-fig3-v1.jpg)\n\n**Figure 3.:** (a) Bioluminescence imaging in dorsal (top panel) and ventral (bottom panel) position after cell administration. Mirrors were placed on the side of the mouse to provide a lateral view. (b) MSOT imaging of the same animal: 3D reconstruction for the whole animal showed the correlation between GNR-860 signal with bioluminescence imaging (360\u00b0 animation available in Figure 3\u2014video 1). (c) Cross sections corresponding to the planes shown in (b) before and after the injection of cells. Sub-organ localisation of cells can be observed here (see main text for details and source data at Zenodo (https://zenodo.org/record/1021607) (doi: 10.5281/zenodo.1021607) for the whole set of cross section images). The brain, liver and kidney are outlined. Colour scales are 3.0 \u00d7 105 to 1.8 \u00d7 106 radiance units (\u03c1 \u00b7 s\u22121 \u00b7 cm\u22122 \u00b7 sr\u22121) in (a) and 0.9 to 21 MSOT intensity (a.u.) in (b) and (c).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33140/elife-33140-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** A similar pattern was observed in all three cases, showing that GNRs did not affect overall cell distribution.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/33140/elife-33140-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Transverse sections showing three regions of interest (brain, liver/spinal cord and kidneys) before and after the administration of cells. The results here are in agreement with the results for GNR-860 in the main text Figure 3. Colour scale is 0.8 to 25 MSOT intensity (a.u.). Note also that for GNR-710, we observed signal interferences in the intestines. This interference is likely due to a similar photoacoustic profile of food, since this signal appeared also before the administration of cells, which helped to discriminate between interference and actual signal originating from GNRs.\n\nTo further test the robustness and specificity of the signal, additional controls were performed. First, following the same imaging protocols, we observed a similar biodistribution pattern for mice injected with either GNR-710 or GNR-860-labelled cells (Figure 3\u2014figure supplement 1, and Figure 3\u2014figure supplement 2). Second, when we applied the unmixing algorithm with the \u2018wrong\u2019 spectrum (i.e. the GNR-710 spectrum to an animal injected with GNR-860-labelled cells, and vice versa), no GNR-specific signals were detected in photoacoustic images pre- and post-injection (Figure 4). Third, when the photoacoustic spectra of regions of interest before and after injection of cells were extracted, an increase in the photoacoustic intensity was only observed in the range of wavelengths in which corresponding GNRs have the higher absorbance, while intensity in the other wavelengths remained similar (Figure 4\u2014figure supplement 1). It has to be noted that in some cases there were regions with an endogenous absorbance similar to GNRs (e.g. food in the intestines has similar spectra as GNR-710), which can lead to misinterpretation (Figure 3\u2014figure supplement 2). For this reason, a scan was performed before cells were injected, which allowed detection of any potential endogenous interference with the GNR signal. Using a multimodal imaging approach (in this case luminescence and photoacoustic) also assisted in discounting any false positive signals. As expected, the photoacoustic signal provided by iRFP720 expression was not strong enough to detect the cells immediately after injection by means of photoacoustic imaging (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/33140/elife-33140-fig4-v1.jpg)\n\n**Figure 4.:** Signal before and after treatment with GNR-710-labelled cells (upper panel) and GNR-860-labelled cells (bottom panel) in transverse sections at the level of the kidney region of the corresponding mouse. Signals were observed in the kidney only when the spectra of the respective component (GNR-710 in upper panel and GNR-860 in bottom panel) was applied. Note also that iRFP720 unmixing did not result in a signal at this stage. Colour scales are 0.1 to 14, 0.9 to 21, and 0.0 to 15 MSOT intensity (a.u.) for GNR-710, GNR-860, and iRFP720, respectively.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33140/elife-33140-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Photoacoustic spectra of three regions of interest (left kidney, spinal cord and head) before and after administration of GNR-710-labeled cells (left) and GNR-860-labeled cells (right). Note that the spectra corresponding to the scans before cell administration are similar in both cases, whilst they acquire the characteristic profile of their corresponding GNRs after cell administration. No wavelengths between 940 and 1025 were selected to avoid absorption by water, which has one absorption band in this region.\n\n### Clearance and fate of the cells and GNRs after initial biodistribution\n\nOne day after GNR-labelled cell infusion, only between 15\u201322% of the initial bioluminescence signal in whole mice persisted (Figure 5b), decreasing to less than 4% by day 5. Such substantial amounts of cell death following cell infusion were expected from previous reports (T\u00f6gel et al., 2008; Bentzon et al., 2005). A similar degree of cell death was observed with cells not labelled with GNRs, indicating that cell loss in vivo was not caused by GNR labelling (Figure 5\u2014source data 1). Interestingly, after 24 hr, the bioluminescence signal and the photoacoustic signal for GNRs were no longer localised in the same regions/organs (Figure 5a\u2013c), indicating that the vast majority of GNRs followed a different fate than the remaining luciferase-expressing cells. Specifically, although the luminescence intensity had decreased substantially by 24 hr, the distribution of the signal remained the same (Figure 5b). By contrast, the MSOT signal for GNR-860 increased dramatically in the liver over the same timescale, but was substantially reduced in regions such as the kidneys and head where it had been predominant immediately after cell injection (Figure 5a,c). Whilst luminescent signal is based on living cells, photoacoustic signal can be produced from GNRs independently, irrespective of whether they are within cells, or if the cells are viable. Thus, these data suggest that the liver plays an important role in the clearance of GNRs and potentially associated cell debris following the massive loss of cells during the first 24 hr after injection, as previously reported (Eggenhofer et al., 2012; Khabbal et al., 2015). In addition, these findings are in line with reports describing nanoparticle clearance through the hepato-biliary tract (Longmire et al., 2008; Hirn et al., 2011; Lankveld et al., 2011). We observed that the clearance could be continuously monitored in a longitudinal fashion since the photoacoustic signal in the liver dropped by 47% after 5 days and by 73% after 25 days (Figure 5d).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/33140/elife-33140-fig5-v1.jpg)\n\n**Figure 5.:** (a) MSOT signal in kidneys disappeared almost completely at day 1. (b) Total bioluminescence decreased by 78% at day one indicating a large amount of cell death. (c) In contrast to the kidneys, MSOT signal in the\u00a0liver increased substantially at day 1, although bioluminescence had declined in this tissue at this stage as shown in (b), which suggests that GNRs accumulated in the liver. (d) After day 1, MSOT signal in liver decreased progressively. Colour scales in (a) and (c) are 0.5 to 8 MSOT intensity (a.u.). Colour scale in (b) is 7.0 \u00d7 104 to 5.8 \u00d7 105 radiance units (\u03c1 \u00b7 s\u22121 \u00b7 cm\u22122 \u00b7 sr\u22121).\n\n### Tumour monitoring\n\nFollowing the substantial loss in cell viability over the first 24 hr, signal intensity declined further and by day 5 cells were no longer detectable by BLI in the regions where they had first accumulated (i.e. brain, kidneys and spinal cord, Figure 3). However, we now observed BLI signals from cells that had settled in different locations (Figure 6\u2014figure supplement 1). The signal intensity increased over the following weeks as cells grew into tumours (Figure 6\u2014figure supplement 1). Since the mMSC cell line had been reported to form osteoid structures in vivo (Kuzma-Kuzniarska et al., 2012), and recent results from our group have revealed the capacity of the cells to form osteosarcomas (Scarfe et al., 2017), we anticipated the possibility of tumour development. In other studies, this process has been typically monitored by bioluminescence imaging (Jenkins et al., 2005), which allows the intensity of the signal to be correlated with the number of living cells. However, bioluminescence is limited by the poor spatial resolution at depths beyond 1 mm due to photon scattering. We therefore evaluated the potential of MSOT to determine the precise localisation of internal tumours as well as their size and shape. We used the constitutive expression of iRFP720 for the long-term monitoring of tumour growth by means of photoacoustic imaging. Presence of iRFP720 resulted in a change of the photoacoustic spectra in the regions where cells were forming tumours (Figure 6, and Figure 6\u2014figure supplement 2). The fact that the iRFP720 absorption spectrum is very different from the main endogenous absorbers (a sharp band peaking at 690\u2013700 nm, Figure 6\u2014figure supplement 2) facilitated its detection even with minimal changes of photoacoustic intensity\u00a0compared to the background.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/33140/elife-33140-fig6-v1.jpg)\n\n**Figure 6.:** (a) Bioluminescence images showing different tumours spread along the mouse body. Dashed lines indicate the approximate region shown in the MSOT scans. (b) Corresponding\u00a0MSOT transverse sections showing the precise localisation of different tumours after applying the multispectral processing for iRFP720. (c) Ex vivo bioluminescence imaging confirmed the localisation of relevant tumours imaged with MSOT. (d) Ex vivo picture of the tumours shown in (c) with a detail of kidneys in the inset. (e) Orthoslice images of tumour 2b in (b). Frontal view (left) and tilted view (right) provide a better spatial visualisation of the tumour\u00b4s precise localisation, extending anterior from the dorsal part of the right kidney. Colour scales are 1.4 \u00d7 108 to 8.5 \u00d7 108 radiance units (\u03c1 \u00b7 s\u22121 \u00b7 cm\u22122 \u00b7 sr\u22121) in (a) and 2.6 \u00d7 108 to 5.3 \u00d7 109 radiance units in (c). Colour scale in (b) is 0.4 to 15 MSOT intensity units (a.u.).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33140/elife-33140-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Several tumours developed and became detectable from five days after cell injection. Colour scales have been adjusted to show tumour localisation. They cannot be standardized here due to the great increase of intensity after tumour growth.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/33140/elife-33140-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** The characteristic spectrum of iRFP720 is obtained after analysing the photoacoustic intensities at the working wavelengths. A random region below the tumour was chosen as a control region for comparison.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/33140/elife-33140-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** No signal was observed in organs such as liver (top left), stomach and attached spleen (bottom left), and heart and lungs, indicating the specificity of the signal.\n\nMice developed tumours in different locations whether the cells were labelled with GNRs or not (Figure 6 without GNRs and Figure 8 with GNRs). This process could be monitored longitudinally by bioluminescence and MSOT as shown in Figure 6, where a number of tumours formed in a mouse 30 days after administration of cells labelled with the iRFP720-Luciferase vector. After scanning the animal in 1 mm steps, multispectral processing of the corresponding cross sections (Figure 6b) revealed the presence of tumours on the right shoulder (1), spinal cord (2), in the region dorsal of the kidney (2a and 2b), back (3), hip (4 and 5), and right leg (6). Tumours 2a and 2b are very illustrative of the outcomes that can be achieved with this approach. From the in vivo bioluminescence images (Figure 6a), it is difficult to determine the localisation of the tumours as either subcutaneous or in deep tissues, and with which organs they are associated. Analysis of photoacoustic images revealed that those tumours were growing in an unusual position close to and dorsal of the kidneys (Figure 6b). Ex vivo luminescence imaging confirmed the observations made with in vivo photoacoustic tomography (e.g. tumour masses 2a and 2b were found attached to the anterior-dorsal part of the kidneys) (Figure 6c). Expression of iRFP720 was also confirmed by ex vivo fluorescence imaging of these tumours (Figure 6\u2014figure supplement 3).\n\nIn addition to improving the anatomical localisation of internal tumours, photoacoustic tomography using iRFP720 expression also allowed precise longitudinal monitoring of tumour development from very early stages. The example in Figure 7 shows the growth of tumour 4 (Figure 6) from day 13 to day 30 after cell injection. The excellent spatial resolution enabled the localisation of this tumour in the vicinity of the pelvic ilium from day 13. The tumour mean diameter at this stage was 1.2 mm. By day 19, 23 and 30 it had expanded to 2.0, 2.2 and 3.3 mm, respectively. Furthermore, changes in the shape of the tumour were also monitored from day 23 onwards when it branched off into two ramifications, which grew attached to the main part of the tumour (Figure 7 and Figure 7\u2014video 1).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/33140/elife-33140-fig7-v1.jpg)\n\n**Figure 7.:** Tumour four in Figure 6 was chosen to demonstrate the potential of the MSOT approach in monitoring tumour growth longitudinally over time. A small tumour was localised in the pelvic ilium region at day 13 and its growth was monitored from day 13 to day 30. 3D reconstructions of the tumour are shown on the right panel (360\u00b0 animations are available as Figure 7\u2014video 1). Changes in size can be determined with this technique. Colour scale is 0.4 to 15 MSOT intensity units (a.u.).\n\nIn a second example, the presence of several tumours was determined 40 days after injection of GNR-860 and reporter gene-labelled cells (Figure 8). Although GNRs were not used as contrast agents for tumour imaging, since the vast majority of them were cleared out following cell death, tumour growth was monitored with high spatial resolution via iRFP720 expression. The mouse shown in Figure 8 developed tumours in both shoulders, in the right dorsal kidney/adrenal gland region, towards the liver, and in several positions of the hip region. A late developing (days 33\u201340), but fast-growing tumour in the left shoulder was used to demonstrate the capabilities of iRFP720 MSOT imaging to obtain detailed spatial information in 3D reconstructions as shown in Figure 8c.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/33140/elife-33140-fig8-v1.jpg)\n\n**Figure 8.:** Localisation of tumours 40 days after systemic injection of cells imaged by bioluminescence (a) and MSOT (b). (c) Growth of the tumour on the left shoulder was monitored from day 33 to day 40 and is shown in 3D reconstruction. Colour scale in (a) is 1.4 \u00d7 108 to 1.3 \u00d7 109 radiance units (\u03c1 \u00b7 s\u22121 \u00b7 cm\u22122 \u00b7 sr\u22121) and in (b) is 1.2 to 14 MSOT intensity units (a.u.). The black pixels visible within the tumour region in (b) are an experimental artefact (see Figure 8\u2014figure supplement 1 for additional discussion).\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33140/elife-33140-fig8-figsupp1-v1.jpg)\n\n**Figure 8\u2014figure supplement 1.:** The negative areas in the reconstructed MSOT images (appearing as black pixels in some of our figures) have a variety of origins. For all of the figures of this article, v3.6 of the MSOT software was used. v3.8 has now been released. It includes a better model for the receive characteristics of the transducer that reduces the number of negative pixels as can be seen above. Thank you to Stefan Morscher and Thomas Sardella of iTheraMedical for helpful discussion and providing the figure\u00a0below. M1 is mouse GNR-860 (group III in Table 1 of the Materials\u00a0and\u00a0methods section) and M2 is a control mouse (group I in Table 1 of the Materials and methods section).\n\nOverall, our analysis reveals that MSOT provides an excellent method to monitor tumour growth longitudinally from very early stages onwards (from sub mm size). Only some tumours growing in very peripheral positions of the animal could not be monitored due to technical or procedural limitations of the MSOT imaging system. For example, the nose could not be imaged as it was placed in the nose cone for air and anaesthesia supply during the imaging process. Also, since the animal was placed on its back, it was very difficult to avoid an air layer being trapped between the legs and the main body, which impaired sound propagation. Abundant use of ultrasound gel in this region minimised this effect and allowed data to be obtained as shown in Figure 6 (tumour 6), although the quality of the image was not as good as in other regions of the body. Any tumours in the lungs could not have been monitored with photoacoustic imaging due to a different sound propagation in air. However, the presence of tumours in the lungs could be ruled out from the bioluminescence images.\n\n### Conclusions\n\nWe demonstrate here a multimodal imaging approach, which utilises a combination of GNRs and reporter genes to track cells immediately after systemic injection and longitudinally over time during the development of tumours. We show that multispectral optoacoustic tomography achieves high spatial resolution of the initial cell distribution through analysis of the GNR signal. Whilst expression of iRFP720 is initially undetectable, due to the scattered distribution of cells, it provides long-term tumour monitoring capability in MSOT as clustered iRFP720-positive cells lead to a stronger photoacoustic signal. Additionally, bioluminescence imaging of luciferase allowed for the most sensitive detection of live cells for comparison and validation of the MSOT results.\n\nThe silica-coated GNRs provided the excellent photoacoustic sensitivity required to monitor the broad distribution of labelled cells shortly after systemic intra-cardiac injection. Because the GNRs maintained their optical signature when taken up by the cells, spectral unmixing could be applied in MSOT, which allowed GNR signals to be distinguished from other reporters (e.g. iRFP720) and endogenous absorbers, resulting in highly specific cell detection. Over the medium term, that is several days post-injection, photoacoustic GNR signals and luciferase bioluminescence signals became separated, indicating nanoparticle clearance and surviving cells, respectively. The GNR signal became localised to the liver, which is in line with the known clearance pathway of nanoparticles and associated cell debris through the hepato-biliary system.\n\nUsing the genetic reporters, longitudinal monitoring of surviving cells and tumour formation was achieved via luciferase bioluminescence and iRFP720 photoacoustic tomography. Compared to other optical-based imaging technologies, the superior deep-tissue spatial resolution of MSOT provided precise information about anatomical localisation and morphology of tumours from very early stages (<1 mm diameter).\n\nBeyond the specific study of the biodistribution and tumour development of an exemplary mesenchymal cell line performed here, we emphasise the technological potential of these labelling tools for non-invasive in vivo imaging and cell tracking. In particular, research fields such as cell-based regenerative medicine therapies and cancer biology might find new applications using these labelling reagents and imaging approaches for cell monitoring and safety studies.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th colspan=\"2\">Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>SCID hairless outbred (SHO) mice</td>\n      <td colspan=\"2\">mice</td>\n      <td>Charles River Laboratories</td>\n      <td>ID_Crl:SHO-PrkdcscidHrhr</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mouse mesenchymal stem cell line</td>\n      <td colspan=\"2\">mMSC</td>\n      <td>ATCC</td>\n      <td>ID_ATCC:CRL-12424</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Lentivirus vector</td>\n      <td colspan=\"2\">pHIV-iRFP720-E2A-Luc</td>\n      <td>this paper</td>\n      <td>ID_GenBank:MF693179;  ID_Addgene:104587</td>\n      <td>lentivirus vector for bi-cistronic expression of iRFP720 and firefly luciferase</td>\n    </tr>\n    <tr>\n      <td>Gold nanorods</td>\n      <td colspan=\"2\">GNR</td>\n      <td>this paper</td>\n      <td></td>\n      <td>gold nanorods were produced at the Department of Chemistry, University of Liverpool</td>\n    </tr>\n  </tbody>\n</table>\n\n### Reagents\n\nThe following chemicals were purchased from Sigma-Aldrich (Gillingham, UK). HAuCl4 \u00b73H2O (>99.0%), NaBH4 (>99.99%), AgNO3(99.0%), hexadecyltrimethylammonium bromide (CTAB,>99%), L-ascorbic acid (reagent grade), tetraethyl orthosilicate (TEOS, 99.999%), O-[2-(3-Mercaptopropionylamino)ethyl]-O\u2032-methylpolyethylene glycol (mPEG-SH, MW: 5000 Da), 5-bromosalicylic acid. Monocarboxy (1-mercaptoundec-11-yl) hexaethylene glycol (PEG-COOH, MW 526.73 Da) was obtained from Prochimia (Sopot, Poland). Dulbecco's modified eagle's medium (DMEM), phosphate-buffered saline (PBS), penicillin-streptomycin, biliverdin and polybrene were also obtained from Sigma Aldrich. Foetal bovine serum (FBS) was purchased from Life-Technologies. D-Luciferin was purchased from Promega (Southampton, UK) and CycLuc1 from Glixx Laboratories (Southborough, USA).\n\n### Gold nanorod synthesis\n\nGNR synthesis were based on previously published protocols (Nikoobakht and El-Sayed, 2003; Ye et al., 2012). First, seeds were prepared by adding 0.6 mL of ice-cold NaBH4 (0.01 M) to a mixture of 5 mL CTAB (0.2 M) and 5 mL of HAuCl4 (0.5 mM) under vigorous stirring. The growth solution for GNR-710 was prepared by mixing 50 mL of CTAB (0.2M), 1.8 mL of AgNO3 (4 mM), 50 mL of HAuCl4 (1 mM) and 0.8 mL of ascorbic acid (0.1 M). Finally, 0.2 mL of freshly synthesised seeds was added to the growth solution. The reaction was kept in a water bath at 28\u00b0C for 3 hr. The growth solution for GNR-860 was prepared by adding 440 mg of 5-bromosalicylic acid to 100 mL of CTAB (0.1 M) and heat up the mixture to 60\u00b0C. After cooling down the solution to 30\u00b0C, 4.8 mL of AgNO3 (4 mM) was added and left undisturbed for 15 min. Then, 50 mL of HAuCl4 (1 mM) was added and left under low stirring for 15 min at 30\u00b0C. Afterwards, 256 \u00b5L of ascorbic acid was added under vigorous agitation for 30 s. Finally, 160 \u00b5L of seeds were added and the solution was kept at 28\u00b0C for 12 hr. Silica coating was performed as described in our previous work (Comenge et al., 2016), which was based on slight modifications of a protocol by Fern\u00e1ndez-L\u00f3pez et al (Fern\u00e1ndez-L\u00f3pez et al., 2009).\n\nGNRs were visualized using a Tecnai G3 Spirit transmission electron microscope (TEM) at 120 keV. Formvar/carbon-coated 200 mesh copper grid (TAAB) were dipped in a solution of the GNRs of interest and left to dry in air. More than 100 GNRs were considered for image analysis.\n\n### Lentivirus vectors\n\nLentivirus vectors were constructed on the pHIV-Luciferase backbone (a gift from Bryan Welm, Addgene plasmid # 21375). The iRFP720 ORF was obtained from plasmid piRFP720-N1 (a gift from Vladislav Verkhusha, Addgene plasmid # 45461) (Shcherbakova and Verkhusha, 2013) and cloned as an EcoRI/XbaI fragment upstream of the IRES element of pHIV-Luciferase, resulting in the pHIV-iRFP720-IRES-Luc vector. To achieve a more efficient translation of the second ORF, the IRES element was replaced with an E2A peptide motif (Szymczak and Vignali, 2005; Szymczak et al., 2004) using a two-step PCR protocol to create the pHIV-iRFP720-E2A-Luc plasmid. The complete sequence of the E2A plasmid version has been submitted to the NCBI GenBank database (accession number: MF693179). Lentivirus particles were produced in HEK293T cells, which were purchased for this work from ATCC (ATCC CRL-3216) and free of mycoplasma when tested with the e-Myco Mycoplasma PCR Detection Kit (iNtRON Biotechnology, cat. no. 25235). Cells were transfected via calcium phosphate co-transfection of the reporter gene plasmid, packaging plasmid psPAX2 and envelope plasmid pMD2.G (both a gift of Didier Trono, Addgene plasmids #12260 and #12259, respectively) as described (Kutner et al., 2009). Virus-containing cell culture supernatant was collected three days post-transfection, centrifuged at 500 g and filtered through 0.45 \u00b5m pores.\n\n### Mouse mesenchymal stem/stromal cell (mMSC) line culture, labelling and immunofluorescence\n\nWe chose the mouse MSC line D1 ORL UVA [D1](ATCC CRL-12424) for labelling and tracking, since these cells have the potential to differentiate into mesenchymal derivatives, but can occasionally also form tumours as previously shown (Comenge et al., 2016; Kuzma-Kuzniarska et al., 2012). The mMSC cell line was purchased for this work from ATCC and free of mycoplasma when tested with the e-Myco Mycoplasma PCR Detection Kit (iNtRON Biotechnology, cat. no. 25235). Furthermore, the mMSC cells were re-authenticated by Science Exchange \u2013 IDEXX BioResearch using short tandem repeat (STR) profiling. They were found to be of mouse origin and no other mammalian interspecies contamination was detected. They were grown in DMEM supplemented with 10% FBS and 2 mM L-Glutamine. Cells were transfected with purified reporter gene virus particles for 24 hr. iRFP720-expressing cells were sorted using a BD FACSAria III with red laser and APC-CyTM7 filter. Cells expressing high levels of iRFP720 were selected and maintained for all further experiments. Before IVIS imaging of cells, biliverdin was added to the culture medium for 24 hr to increase its concentration beyond levels present in FBS and to improve its uptake by cells for incorporation into iRFP720 as a chromophore. For analysis of reporter gene expression by immunofluorescence, mMSCs were grown on glass cover slips, fixed with 4% paraformaldehyde/PBS, washed with PBS, blocked and stained with an anti-firefly luciferase antibody (Abcam, Cambridge, UK, ab21176, diluted in 1:500 in PBS/10% donkey serum/0.25% Triton-X100) and a donkey-anti-rabbit-AlexaFluor488 secondary antibody (Molecular Probes, A21206). Fluorescence of iRFP720 was assessed directly using a Zeiss LSM510 Multiphoton microscope.\n\nGNR-labelling was performed as previously published (Comenge et al., 2016). Briefly, cells were treated with cell medium containing GNRs at the concentration/optical density indicated in the Results (always 79% cell medium, 20% GNRs in water, 1% penicillin-streptomycin). Unless otherwise stated, cells were labelled to a GNR O.D.\u00a0=\u00a03.0. Then, cells were dissociated with trypsin, resuspended in fresh medium, washed twice with PBS, and counted using an automated cell counter (TC10, BioRad, Watford, UK).\n\n### Cell viability\n\nCell viability was assessed with Cell Titer Glo ATP Assay (Promega). Cells were labelled as described above by seeding 104 mMSCs cells in 96-well plates. Cells were incubated with GNRs-710 and GNR-860 at a final O.D. in media\u00a0=\u00a01, 2, 3.2, and 4 (80% media and 20% GNRs solution in each case) for 24 hr. After labelling, cells were washed three times with PBS. 50 \u03bcL of medium were added to each well and then 25 \u03bcL of the ATP reagent was added. The plate was mixed in an orbital shaker and, after 10 min, the contents of the plate were transferred to white, opaque, 96-well plates and the luminescence measured with a plate reader (Fluostar Omega, BMG Labtech, Aylesbury, UK). Each condition was assessed in triplicate and results are given as %\u00b1SD relative to cells that were incubated without GNRs as described above.\n\n### Preparation of cells for TEM\n\nCells were fixed with a solution containing 1% paraformaldehyde and 3% glutaraldehyde in 0.1 M cacodylate buffer (pH 7.4). Then, cells were incubated with a reduced osmium staining solution, containing 2% OsO4 and 1.5% K4[Fe(CN)6], for 1 hr. This was followed by a second 1 hr osmium staining (2% OsO4) step and overnight staining with 1% uranyl acetate. Cells were washed with water for 3 min, three times after every staining step. Samples were then dehydrated in graded ethanol (30%, 50%, 70%, 90% and 2 \u00d7 100%) for 5 min each. Finally, samples were infiltrated with medium TAAB resin 812 and embedded within the same resin. The resin was cured for 48 hr at 60\u00b0C. Finally, ultrathin sections of 350 \u03bcm x 350 \u03bcm x 74 nm were cut and placed in 200-mesh Formvar/Carbon filmed grids. They were post-stained with uranyl acetate (4% UA in a 50:50 ethanol/water solution) and Reynolds lead citrate before TEM imaging.\n\n### Animals\n\n8\u201310 week-old female SCID hairless outbred (SHO) mice (Charles River, Margate, UK) were housed in individually ventilated cages at a 12 hr light/dark cycle, with ad libitum access to food and water. Experimental animal protocols were performed in accordance with the guidelines under the Animals (Scientific Procedures) Act 1986 (licence PPL70/8741) and approved by the University of Liverpool Animal Welfare and Ethical Review Body. The tumour burden was monitored and kept within recommended limits in accordance with guidelines for the welfare and use of animals in cancer research (Workman et al., 2010). Experiments are reported in line with the ARRIVE guidelines. These experiments aimed at evaluating the potential of MSOT to track cells over the short and long-term. The number of animals was chosen so that a range of tumour positions and sizes could be observed (Table 1). Image quantification is presented to demonstrate the information that can be extracted from this approach. In each case, the numbers correspond to the particular animal presented. The data for these exemplar animals as well as for the other animals are available in the data repository Zenodo (Comenge et al., 2017).\n\n**Table 1.**\n Summary of mice used and analysed for the experiment.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Group</th>\n      <th>Transfected</th>\n      <th>GNR-710</th>\n      <th>GNR-860</th>\n      <th>Number of animals</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>I (control)</td>\n      <td>\u2713</td>\n      <td></td>\n      <td></td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>II (GNR-710)</td>\n      <td>\u2713</td>\n      <td>\u2713</td>\n      <td></td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>III (GNR-860)</td>\n      <td>\u2713</td>\n      <td></td>\n      <td>\u2713</td>\n      <td>4</td>\n    </tr>\n  </tbody>\n</table>\n\n### Intracardiac injection and imaging\n\nTransfected cells were labelled with GNR-710 and GNR-860 at O.D.\u00a0=\u00a02.4 as detailed above. 1.5 \u00d7 106 cells in 100 \u00b5L PBS were prepared for intracardiac injection as described below. All cell injection and imaging procedures of mice were carried out under general isoflurane/oxygen anaesthesia.\n\nThe imaging routine at day 0 was composed of the following sequence of steps: 1) a baseline MSOT scan; 2) the ultrasound-guided (Prospect imaging system, S-Sharp, New Taipei City, Taiwan) intracardiac injection of cells into the left ventricle; 3) a second MSOT scan after 10 min for acclimatisation; 4) BLI, for which the mouse received an intraperitoneal injection of D-luciferin (approximately 150 \u00b5g/g body weight) 15 min before whole body imaging using an IVIS Spectrum system (Perkin Elmer, Seer Green, UK). All data were analysed with Living Image (Perkin Elmer) and data are displayed in radiance units. On subsequent days, the MSOT scan and BLI were repeated in the same manner.\n\nFor intracardiac injection of cells, mice were positioned supine on a heated platform. Fur around the chest area was removed using depilatory cream and limbs were taped down to keep the mouse position fixed. Ultrasound gel was applied liberally to the chest area and the ultrasound transducer (Prospect imaging system, S-Sharp) was positioned above the chest so the long axis view of the left ventricle was visible. 100 \u00b5l of cell suspension was drawn up into an insulin syringe (29 G) and, using the ultrasound image as guidance, was inserted into the left ventricle of the heart. Cell suspension was then administered slowly over a period of approximately 30 s.\n\nFor optoacoustic imaging, an MSOT inVision 256-TF small animal imaging system (iThera Medical GmbH, Munich, Germany) was used (Morscher et al., 2014). After acclimatisation for 10 min inside the water bath, a whole-body scan was performed on the mouse with 1 mm steps and the following wavelengths for acquisition: 660, 670, 680, 690, 700, 705, 710, 715, 720,\u00a0725, 735, 750, 765, 780, 795, 810, 820, 830, 840, 850, 860, 870, 880, 890, 900, 910, 920, 930, 940, 1025, 1050, 1075, and 1100 nm. Heavy water was used in the water bath due to its low absorbance at wavelengths\u00a0>\u00a0910 nm (contrary to regular water). Linear-mode-based reconstruction and guided ICA multispectral processing were applied using viewMSOT software v3.6 (iThera Medical GmbH).\n",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "bf17c86c-d0db-4c53-b854-8490b532b97d",
+      "submission_id": "5102c652-6ee8-46ef-a547-03bc8a5db4a9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Randy Schekman, Howard Hughes Medical Institute, University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.33140.028](https://doi.org/10.7554/eLife.33140.028)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Multimodal cell tracking from systemic administration to tumour growth by combining gold nanorods and reporter genes\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Fiona Watt as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Jesse Jokerst (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn their manuscript submitted to eLife, Comenge et al. describe a new way of combining genetic reporters and optoacoustic tomography to track grafted tumour-forming cells in mice. Their experimental system uses a viral vector which expresses both luciferase and a near infrared fluorescence protein, and they co-label these cells with gold nanorods (GNR). The GNRs allow the detection of small numbers of cells soon after grafting, whereas the fluorescent reporter signal becomes stronger with increasing cells numbers and enables Comenge et al. to track grafted cells by MSOT with a resolution superior to bioluminescence. The authors demonstrate the feasibility of their technology in mice injected with a mesenchymal stem cell line, which develops detectable tumours 2-3 weeks post-injection.\n\nThe study is of high technical quality, and the technical tools and methods reported here could be very useful for several research areas that use in vivo imaging, such as experimental cell therapy. The dual reporter strategy expands the time window for graft detection, and combines sensitivity of GNRs with the persistence of a genetic reporter. The findings are novel and validated by the well-established bioluminescence imaging technology.\n\nEssential revisions:\n\nThe authors are encouraged to do a subcutaneous injection. This would decouple imaging issues from delivery issues. In addition, from Figure 3A it looks as though most of the injected cells go to the brain. This is confusing \u2013 the authors should explain why the cells did not go to the liver or lung and whether they cross the blood-brain barrier.\n\nMinor points:\n\n1) Figure 2A: The genetic map of the reporter constructs lacks a scale bar and does not seem to be drawn to scale. ORFs should be represented such that they are distinguishable from promoters and other genetic elements.\n\n2) Figure 2C: The authors should add a DNA staining such as DAPI, otherwise it is hard to judge cytoplasmic vs. nuclear localization of iRFP720 and luciferase.\n\n3) \"Hence, both GNR batches were coated with a silica shell as previously described.\" Please add reference.\n\n4) The rationale for two types of GNRs is not clear and should be explained.\n\n5) What was the efficiency of transfection with the iRFP construct?\n\n6) \"Interestingly, from this stage onwards the bioluminescence images no longer correlated with the photoacoustic imaging (Figure 5A-C).\" What do you mean by this point? Time point? If so, please be more explicit.\n\n7) How do detection limits compare between the two techniques? Which is more sensitive? GNRs or iRFP or bioluminescence?\n\n8) Why does the GNR signal drop? Is it because the cells die and release their cargo and macrophages take it to the liver? Or are viable cells taken to the liver.\n\n9) Is there dilution of GNR contrast agent over time as the cells divide?\n\n10) Some additional citations to photoacoustic imaging are appropriate here:a) http://onlinelibrary.wiley.com/doi/10.1002/wnan.1404/fullb) http://downloads.hindawi.com/journals/sci/2016/9240652.pdf\n",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "612164b8-2d2d-4a1b-b8a5-baddbdf02d87",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C1",
+      "claim": "GNR-710 has a core size of 60.0 \u00b1 7.5 nm by 25.7 \u00b1 3.7 nm with an average aspect ratio of 2.3 \u00b1 0.3.",
+      "claim_type": "EXPLICIT",
+      "source": "The first batch consisted of GNRs with a longitudinal surface plasmon resonance (LSPR) peak at 710 nm (GNR-710). Their core size was 60.0 \u00b1 7.5 nm by 25.7 \u00b1 3.7 nm with an average aspect ratio of 2.3 \u00b1 0.3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific measurements of GNR-710 dimensions obtained from experimental characterization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "fc70e5a6-701a-41b8-9d69-110c716ec93d",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C2",
+      "claim": "GNR-860 has a core size of 93.8 \u00b1 9.3 nm by 25.2 \u00b1 4.4 nm with an average aspect ratio of 3.8 \u00b1 0.5.",
+      "claim_type": "EXPLICIT",
+      "source": "The second batch had a LSPR peak at 860 nm (GNR-860). In this case, their size was 93.8 \u00b1 9.3 nm by 25.2 \u00b1 4.4 nm with an average aspect ratio of 3.8 \u00b1 0.5)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific measurements of GNR-860 dimensions obtained from experimental characterization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "337af60e-237d-4470-950f-34dcc646e3a3",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C3",
+      "claim": "Both GNR batches were prepared to have LSPR bands in the NIR to favor their detection deep inside tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Both GNRs were prepared to have LSPR bands in the NIR to favour their detection deep inside tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design rationale stated by the authors based on known optical properties of NIR wavelengths in tissue.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "ed5c4d4e-5c03-4417-bfe9-929c75318449",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C4",
+      "claim": "A 35 nm silica shell is needed to minimize plasmon coupling between GNRs after cell uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently demonstrated that a 35 nm silica shell is needed to minimise plasmon coupling between GNRs after cell uptake (Comenge et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "f0a6fa68-a363-411c-b151-521a425c957d",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C5",
+      "claim": "GNR-710 has a silica shell thickness of 38.7 \u00b1 1.9 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, GNR-710 and GNRs-860 nm have a silica shell thickness of 38.7 \u00b1 1.9 nm and 35.7 \u00b1 1.6 nm, respectively (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific measurements of silica shell thickness and references Figure 1a showing TEM images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "892307bd-178c-480e-8d33-fc4031c79b62",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C6",
+      "claim": "GNR-860 has a silica shell thickness of 35.7 \u00b1 1.6 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, GNR-710 and GNRs-860 nm have a silica shell thickness of 38.7 \u00b1 1.9 nm and 35.7 \u00b1 1.6 nm, respectively (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific measurements of silica shell thickness and references Figure 1a showing TEM images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "8d79fb0a-dcee-478a-a90e-e959afe4992e",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C7",
+      "claim": "The murine MSC line has the capability to differentiate into mesenchymal derivatives but can also form tumours occasionally.",
+      "claim_type": "EXPLICIT",
+      "source": "A murine MSC line was selected for labelling and tracking, since these cells have the capability to differentiate into mesenchymal derivatives, but can also form tumours occasionally (Comenge et al., 2016; Kuzma-Kuzniarska et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "39c15c9a-f9d0-4c0f-b0a3-6b87a5f09f34",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C8",
+      "claim": "O.D. = 4 corresponds to approximately 100 pM GNR-710.",
+      "claim_type": "EXPLICIT",
+      "source": "For reference, O.D. = 4 corresponds to ~100 pM GNR-710 and ~72.5 pM GNR-860 (calculated by relating the absorbance at 400 nm of GNRs before silica coating to concentrations of molecular gold) (Pastoriza-Santos and Liz-Marz\u00e1n, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated value based on absorbance measurements and a cited method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "cb015bdd-60c0-4896-b520-d7fa7b5eee9c",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C9",
+      "claim": "O.D. = 4 corresponds to approximately 72.5 pM GNR-860.",
+      "claim_type": "EXPLICIT",
+      "source": "For reference, O.D. = 4 corresponds to ~100 pM GNR-710 and ~72.5 pM GNR-860 (calculated by relating the absorbance at 400 nm of GNRs before silica coating to concentrations of molecular gold) (Pastoriza-Santos and Liz-Marz\u00e1n, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated value based on absorbance measurements and a cited method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "6d67f2bd-365d-4ae6-baa7-8b9ffc3e343f",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C10",
+      "claim": "GNRs are localized inside vesicles after cell uptake, with silica shells separating the gold cores.",
+      "claim_type": "EXPLICIT",
+      "source": "TEM images of cells show GNRs localised inside vesicles, with silica shells separating the gold cores (Figure 1b, and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in TEM images presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "9fb635a3-9dff-499d-a388-bfc5b45a3ad2",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C11",
+      "claim": "The optical properties of GNRs were largely preserved after cell uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our previous report, the optical properties of GNRs were largely preserved after cell uptake (Figure 1c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by spectroscopic data shown in Figure 1c,d and is consistent with previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "83c00eb0-79ad-40de-b345-08626ee17954",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C12",
+      "claim": "Preservation of the absorbance intensity and the shape of the plasmon band are prerequisite for optimal photoacoustic detection of GNR-labelled cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Preservation of the absorbance intensity and the shape of the plasmon band are prerequisite for an optimal photoacoustic detection of GNR-labelled cells since it relies on a spectral deconvolution to differentiate intrinsic absorbers from probes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical explanation based on the principles of photoacoustic imaging and spectral unmixing.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "bf39cf2b-8474-40d0-96ee-371a12b51b5e",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C13",
+      "claim": "At the highest GNR concentration (O.D. = 4), cell viability was 92.0 \u00b1 2.6% for GNR-710 and 91.7 \u00b1 1.6% for GNR-860.",
+      "claim_type": "EXPLICIT",
+      "source": "Only at the highest GNR concentration was a slight decrease in cell viability observed: 92.0 \u00b1 2.6% and 91.7 \u00b1 1.6% for GNR-710 and GNR-860, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from cell viability assays shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "5776311a-86e2-4ff1-b991-e3610aa3caf9",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C14",
+      "claim": "Silica-coated GNRs did not affect cell viability, proliferation or differentiation potential of the mMSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are in agreement with our previous work, in which we showed that silica-coated GNRs did not affect cell viability, proliferation or differentiation potential of the mMSCs (Comenge et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work and is consistent with current experimental results.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "c26e9cbb-76ac-439f-8aae-25cd50b0488b",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C15",
+      "claim": "Bi-cistronic lentivirus vectors were generated for expression of firefly luciferase and iRFP720 from the general eukaryotic EF1\u03b1 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "To combine the sensitivity of bioluminescence imaging with the spatial resolution of MSOT, we generated bi-cistronic lentivirus vectors for expression of firefly luciferase and iRFP720 from the general eukaryotic EF1\u03b1 promoter (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design and construction of the vectors shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "62663c38-3e47-4f1f-8418-0dcfdba9fd2d",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C16",
+      "claim": "The E2A-vector-transfected cells showed a five times higher luciferase bioluminescence compared to IRES-vector-transfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For both types of reporter cells (IRES-vector and E2A-vector transfected), the fluorescence signal intensity for iRFP720 was the same, but the E2A-vector-transfected cells showed a five times higher luciferase bioluminescence (Figure 2d,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data from IVIS Spectrum imaging comparing the two vector types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "895ad3d8-ddc2-43b6-8e00-a06369e01879",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C17",
+      "claim": "A superior translation efficiency of the second ORF from a single mRNA was achieved via an E2A element as compared to an IRES element.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that in the context of our bi-cistronic lentivirus vectors, a superior translation efficiency of the second ORF from a single mRNA was achieved via an E2A element as compared to an IRES element.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data comparing IRES and E2A vectors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "09163359-b16a-49ff-9aad-2c6f0c216ddb",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C18",
+      "claim": "In contrast to luciferase, iRFP720 was preferentially localized in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-expression of iRFP720 and luciferase in individual cells was confirmed by immunocytochemistry (Figure 2c), which also indicated that, in contrast to luciferase, iRFP720 was preferentially localised in the nucleus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in immunocytochemistry images shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "cec3acab-4360-4932-930c-084f4c7c3789",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C19",
+      "claim": "1.5 \u00d7 10^6 mMSCs transduced with the iRFP720-E2A-Luc lentivirus and labelled with GNRs were administered via ultrasound-guided intracardiac injection into the left ventricle.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, 1.5 \u00d7 106 mMSCs transduced with the iRFP720-E2A-Luc lentivirus and labelled with GNRs were administered via ultrasound-guided intracardiac injection into the left ventricle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure for cell administration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "31c87388-c2cd-42a3-b9a2-5a1526bac38e",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C20",
+      "claim": "Left ventricle administration was chosen for cells to enter the arterial circulation rather than the venous.",
+      "claim_type": "EXPLICIT",
+      "source": "Left ventricle administration was chosen for cells to enter the arterial circulation rather than the venous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological choice explained by the authors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "fbabfbc4-833f-47b1-b32f-a33cac4301a4",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C21",
+      "claim": "Left ventricle administration allows cells to pass through all organs before returning to the right ventricle and subsequently lungs, where they become sequestered in the pulmonary microvasculature.",
+      "claim_type": "EXPLICIT",
+      "source": "This allows cells to pass through all organs before returning to the right ventricle and subsequently lungs, where they become sequestered in the pulmonary microvasculature (Kean et al., 2013; Fischer et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known physiological outcome supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "d094277c-aec4-4408-b374-3ace4a28c16c",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C22",
+      "claim": "Bioluminescence imaging provides excellent sensitivity but its anatomical resolution is poor, mainly due to the high scattering of photons by tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "While bioluminescence imaging provides excellent sensitivity, its anatomical resolution is poor, mainly due to the high scattering of photons by tissue (Patterson et al., 1989; Ntziachristos et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation of bioluminescence imaging supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "c8b80e9e-32c9-4199-97ff-cc11d5b4fb60",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C23",
+      "claim": "Photoacoustic imaging provides superior spatial resolution (150 \u00b5m in the system used).",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, photoacoustic imaging provides superior spatial resolution (150 \u00b5m in our system) (Ntziachristos and Razansky, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification of the imaging system used, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "70b477a5-6203-4a2f-8213-46cac6b83162",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C24",
+      "claim": "Cell localization in the head, liver and kidney regions was clearly observed with both bioluminescence and MSOT imaging modalities.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell localisation in the head, liver and kidney regions was clearly observed with both imaging modalities (Figure 3a,b), and the cell presence within organs was confirmed in the photoacoustic scans through the respective regions (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by imaging data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "fc056f72-1ddb-464c-83f5-639024f50dd9",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C25",
+      "claim": "The distribution pattern after intracardiac injection is in agreement with other, different types of assessments in previous reports.",
+      "claim_type": "EXPLICIT",
+      "source": "This distribution is in agreement with other, different types of assessments in previous reports (Basse et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "f7289076-c7ac-4468-b216-b5a629edbbab",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C26",
+      "claim": "The presence of cells in the brain region is probably due to cell trapping in small capillaries.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of cells in the brain region is probably due to cell trapping in small capillaries, as reported also in other studies after intracardiac injection of cells (Heyn et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation supported by citation to similar observations in other studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "6a61f1cd-a03e-4d57-b39e-4c6a7fb34a7c",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C27",
+      "claim": "The mMSCs remain in the lumen of the brain capillaries and do not cross the blood-brain barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in our parallel work (Scarfe et al., 2017), the mMSCs remain in the lumen of the brain capillaries and do not cross the blood-brain barrier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to parallel work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "d78988d7-6103-4f63-87b8-d6f15e7fc0b3",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C28",
+      "claim": "There was no difference in the bioluminescence signal biodistribution when cells with or without gold nanorods were injected.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted here that there was no difference in the bioluminescence signal biodistribution when cells with or without gold nanorods were injected, indicating that GNR uptake does not affect the overall behaviour of the cells (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparative imaging data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "2af613b8-2c09-4cb1-8b5e-f500f074f86f",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C29",
+      "claim": "GNR uptake does not affect the overall behaviour of the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted here that there was no difference in the bioluminescence signal biodistribution when cells with or without gold nanorods were injected, indicating that GNR uptake does not affect the overall behaviour of the cells (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that biodistribution patterns are the same with or without GNRs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "009ed242-0f53-46fb-b45c-04a4546a3068",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C30",
+      "claim": "When the 'wrong' spectrum was applied (i.e. the GNR-710 spectrum to an animal injected with GNR-860-labelled cells, and vice versa), no GNR-specific signals were detected in photoacoustic images pre- and post-injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, when we applied the unmixing algorithm with the 'wrong' spectrum (i.e. the GNR-710 spectrum to an animal injected with GNR-860-labelled cells, and vice versa), no GNR-specific signals were detected in photoacoustic images pre- and post-injection (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control experiment demonstrating specificity of the signal, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "2067e3ed-76e7-465e-a1c7-de7735a32ac1",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C31",
+      "claim": "An increase in the photoacoustic intensity was only observed in the range of wavelengths in which corresponding GNRs have the higher absorbance.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, when the photoacoustic spectra of regions of interest before and after injection of cells were extracted, an increase in the photoacoustic intensity was only observed in the range of wavelengths in which corresponding GNRs have the higher absorbance, while intensity in the other wavelengths remained similar (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by spectral analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "52489e03-da1b-40fd-aed0-0137574d953f",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C32",
+      "claim": "The photoacoustic signal provided by iRFP720 expression was not strong enough to detect the cells immediately after injection by means of photoacoustic imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the photoacoustic signal provided by iRFP720 expression was not strong enough to detect the cells immediately after injection by means of photoacoustic imaging (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the imaging data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "a108cb88-8c77-41ae-815a-0489ced52d07",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C33",
+      "claim": "One day after GNR-labelled cell infusion, only between 15\u201322% of the initial bioluminescence signal in whole mice persisted.",
+      "claim_type": "EXPLICIT",
+      "source": "One day after GNR-labelled cell infusion, only between 15\u201322% of the initial bioluminescence signal in whole mice persisted (Figure 5b), decreasing to less than 4% by day 5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data from bioluminescence imaging shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "3dd5c880-38a4-4752-8f66-fbc284c23940",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C34",
+      "claim": "By day 5 after cell infusion, less than 4% of the initial bioluminescence signal persisted.",
+      "claim_type": "EXPLICIT",
+      "source": "One day after GNR-labelled cell infusion, only between 15\u201322% of the initial bioluminescence signal in whole mice persisted (Figure 5b), decreasing to less than 4% by day 5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data from bioluminescence imaging shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "46d457e0-0d42-4c93-bcca-2bc5a9a8f963",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C35",
+      "claim": "Substantial amounts of cell death following cell infusion were expected from previous reports.",
+      "claim_type": "EXPLICIT",
+      "source": "Such substantial amounts of cell death following cell infusion were expected from previous reports (T\u00f6gel et al., 2008; Bentzon et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "68871389-17d4-4b8f-937a-e83410b55c5b",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C36",
+      "claim": "A similar degree of cell death was observed with cells not labelled with GNRs, indicating that cell loss in vivo was not caused by GNR labelling.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar degree of cell death was observed with cells not labelled with GNRs, indicating that cell loss in vivo was not caused by GNR labelling (Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparative data showing similar cell death rates with and without GNR labelling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "ad1e3f7b-dbc9-4998-9c91-007d2b44f002",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C37",
+      "claim": "After 24 hr, the bioluminescence signal and the photoacoustic signal for GNRs were no longer localized in the same regions/organs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, after 24 hr, the bioluminescence signal and the photoacoustic signal for GNRs were no longer localised in the same regions/organs (Figure 5a\u2013c), indicating that the vast majority of GNRs followed a different fate than the remaining luciferase-expressing cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the imaging data shown in Figure 5a-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "5a2b4086-99f3-4344-ba65-615080635f67",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C38",
+      "claim": "The vast majority of GNRs followed a different fate than the remaining luciferase-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, after 24 hr, the bioluminescence signal and the photoacoustic signal for GNRs were no longer localised in the same regions/organs (Figure 5a\u2013c), indicating that the vast majority of GNRs followed a different fate than the remaining luciferase-expressing cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that GNR and bioluminescence signals are in different locations after 24 hours.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "35f19d96-c4de-4042-86cb-7a17c3189b89",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C39",
+      "claim": "The MSOT signal for GNR-860 increased dramatically in the liver over 24 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the MSOT signal for GNR-860 increased dramatically in the liver over the same timescale, but was substantially reduced in regions such as the kidneys and head where it had been predominant immediately after cell injection (Figure 5a,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the MSOT imaging data shown in Figure 5a,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "698a0bf5-acea-4435-bf49-34b9a8f54564",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C40",
+      "claim": "The MSOT signal for GNR-860 was substantially reduced in regions such as the kidneys and head where it had been predominant immediately after cell injection.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the MSOT signal for GNR-860 increased dramatically in the liver over the same timescale, but was substantially reduced in regions such as the kidneys and head where it had been predominant immediately after cell injection (Figure 5a,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the MSOT imaging data shown in Figure 5a,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "39ab4f19-5e0c-45fe-bef5-142f738bdcfb",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C41",
+      "claim": "Photoacoustic signal can be produced from GNRs independently, irrespective of whether they are within cells, or if the cells are viable.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst luminescent signal is based on living cells, photoacoustic signal can be produced from GNRs independently, irrespective of whether they are within cells, or if the cells are viable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental property of the two imaging modalities based on their mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "1c5e24a4-9334-45d4-b146-d9fafd0ae983",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C42",
+      "claim": "The liver plays an important role in the clearance of GNRs and potentially associated cell debris following the massive loss of cells during the first 24 hr after injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these data suggest that the liver plays an important role in the clearance of GNRs and potentially associated cell debris following the massive loss of cells during the first 24 hr after injection, as previously reported (Eggenhofer et al., 2012; Khabbal et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the imaging data and supported by citations to previous reports.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "349d9283-bf89-405e-9d20-98c1fe0ecff0",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C43",
+      "claim": "These findings are in line with reports describing nanoparticle clearance through the hepato-biliary tract.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, these findings are in line with reports describing nanoparticle clearance through the hepato-biliary tract (Longmire et al., 2008; Hirn et al., 2011; Lankveld et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies on nanoparticle clearance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "c9302a04-ee31-4bde-9045-982600782156",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C44",
+      "claim": "The photoacoustic signal in the liver dropped by 47% after 5 days.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the clearance could be continuously monitored in a longitudinal fashion since the photoacoustic signal in the liver dropped by 47% after 5 days and by 73% after 25 days (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data from longitudinal MSOT imaging shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "98edd5e7-3213-42cb-903e-5fb817e7efe8",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C45",
+      "claim": "The photoacoustic signal in the liver dropped by 73% after 25 days.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the clearance could be continuously monitored in a longitudinal fashion since the photoacoustic signal in the liver dropped by 47% after 5 days and by 73% after 25 days (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data from longitudinal MSOT imaging shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "d73b49d4-9f12-4aa5-8313-c288fde719ae",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C46",
+      "claim": "By day 5, cells were no longer detectable by BLI in the regions where they had first accumulated (i.e. brain, kidneys and spinal cord).",
+      "claim_type": "EXPLICIT",
+      "source": "Following the substantial loss in cell viability over the first 24 hr, signal intensity declined further and by day 5 cells were no longer detectable by BLI in the regions where they had first accumulated (i.e. brain, kidneys and spinal cord, Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the bioluminescence imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "9f92a0fe-235e-47e7-8593-969e5da4205a",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C47",
+      "claim": "BLI signals from cells that had settled in different locations were observed after day 5.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we now observed BLI signals from cells that had settled in different locations (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the bioluminescence imaging data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "5cea0222-965f-48ad-8ed2-4fb39e0422e9",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C48",
+      "claim": "The signal intensity increased over the following weeks as cells grew into tumours.",
+      "claim_type": "EXPLICIT",
+      "source": "The signal intensity increased over the following weeks as cells grew into tumours (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in longitudinal bioluminescence imaging data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "97206b1c-6f6b-4104-a72b-cb854f997202",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C49",
+      "claim": "The mMSC cell line had been reported to form osteoid structures in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the mMSC cell line had been reported to form osteoid structures in vivo (Kuzma-Kuzniarska et al., 2012), and recent results from our group have revealed the capacity of the cells to form osteosarcomas (Scarfe et al., 2017), we anticipated the possibility of tumour development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "1bcd6d76-56f4-40fd-b1c7-dbfc4a2e613c",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C50",
+      "claim": "Recent results from the authors' group have revealed the capacity of the cells to form osteosarcomas.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the mMSC cell line had been reported to form osteoid structures in vivo (Kuzma-Kuzniarska et al., 2012), and recent results from our group have revealed the capacity of the cells to form osteosarcomas (Scarfe et al., 2017), we anticipated the possibility of tumour development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to recent work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "ef09957e-3544-4dbb-bc38-389f35ae0a61",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C51",
+      "claim": "Bioluminescence is limited by the poor spatial resolution at depths beyond 1 mm due to photon scattering.",
+      "claim_type": "EXPLICIT",
+      "source": "However, bioluminescence is limited by the poor spatial resolution at depths beyond 1 mm due to photon scattering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation of bioluminescence imaging based on the physics of light scattering in tissue.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "794d35a6-0b20-4877-b82e-a18ed6fc32b7",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C52",
+      "claim": "Presence of iRFP720 resulted in a change of the photoacoustic spectra in the regions where cells were forming tumours.",
+      "claim_type": "EXPLICIT",
+      "source": "Presence of iRFP720 resulted in a change of the photoacoustic spectra in the regions where cells were forming tumours (Figure 6, and Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by spectral analysis shown in Figure 6 and Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "78f8c7fd-b4b6-4fc2-841b-e4b551d5636c",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C53",
+      "claim": "The iRFP720 absorption spectrum is very different from the main endogenous absorbers (a sharp band peaking at 690\u2013700 nm).",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that the iRFP720 absorption spectrum is very different from the main endogenous absorbers (a sharp band peaking at 690\u2013700 nm, Figure 6\u2014figure supplement 2) facilitated its detection even with minimal changes of photoacoustic intensity compared to the background.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by spectral data shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "4edef231-6020-44ca-8542-c6553732e608",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C54",
+      "claim": "Multispectral processing of MSOT cross sections revealed the presence of tumours on the right shoulder, spinal cord, in the region dorsal of the kidney, back, hip, and right leg.",
+      "claim_type": "EXPLICIT",
+      "source": "After scanning the animal in 1 mm steps, multispectral processing of the corresponding cross sections (Figure 6b) revealed the presence of tumours on the right shoulder (1), spinal cord (2), in the region dorsal of the kidney (2a and 2b), back (3), hip (4 and 5), and right leg (6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the MSOT imaging data shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "ef8525b3-c6ab-4fca-8b52-197d9ecccf4e",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C55",
+      "claim": "Ex vivo luminescence imaging confirmed the observations made with in vivo photoacoustic tomography.",
+      "claim_type": "EXPLICIT",
+      "source": "Ex vivo luminescence imaging confirmed the observations made with in vivo photoacoustic tomography (e.g. tumour masses 2a and 2b were found attached to the anterior-dorsal part of the kidneys) (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by ex vivo imaging data shown in Figure 6c that validates the in vivo MSOT findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "2493aefe-7fbc-4e1c-8e87-c5248475b2ef",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C56",
+      "claim": "Expression of iRFP720 was confirmed by ex vivo fluorescence imaging of tumours.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of iRFP720 was also confirmed by ex vivo fluorescence imaging of these tumours (Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by ex vivo fluorescence imaging data shown in Figure 6\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "5d81509b-b9e5-4a32-bf24-7dd607d489ea",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C57",
+      "claim": "Photoacoustic tomography using iRFP720 expression allowed precise longitudinal monitoring of tumour development from very early stages.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to improving the anatomical localisation of internal tumours, photoacoustic tomography using iRFP720 expression also allowed precise longitudinal monitoring of tumour development from very early stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the longitudinal imaging data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "83da9154-703d-4487-8832-1d79d3cabf61",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C58",
+      "claim": "The tumour mean diameter at day 13 was 1.2 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "The excellent spatial resolution enabled the localisation of this tumour in the vicinity of the pelvic ilium from day 13. The tumour mean diameter at this stage was 1.2 mm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from MSOT imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "8219368f-12c7-4a53-80fa-328755368ef5",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C59",
+      "claim": "By day 19, 23 and 30, the tumour had expanded to 2.0, 2.2 and 3.3 mm, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "By day 19, 23 and 30 it had expanded to 2.0, 2.2 and 3.3 mm, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These are measurements from longitudinal MSOT imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "0ef86f5b-ad5f-49a9-947f-b4258f6e821c",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C60",
+      "claim": "Changes in the shape of the tumour were monitored from day 23 onwards when it branched off into two ramifications, which grew attached to the main part of the tumour.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, changes in the shape of the tumour were also monitored from day 23 onwards when it branched off into two ramifications, which grew attached to the main part of the tumour (Figure 7 and Figure 7\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the MSOT imaging data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "743c2d61-815c-4968-b914-7ad165f42cc6",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C61",
+      "claim": "GNRs were not used as contrast agents for tumour imaging, since the vast majority of them were cleared out following cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Although GNRs were not used as contrast agents for tumour imaging, since the vast majority of them were cleared out following cell death, tumour growth was monitored with high spatial resolution via iRFP720 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the longitudinal imaging studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "a5731632-3fe5-4b38-b83a-3f1778edf906",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C62",
+      "claim": "MSOT provides an excellent method to monitor tumour growth longitudinally from very early stages onwards (from sub mm size).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our analysis reveals that MSOT provides an excellent method to monitor tumour growth longitudinally from very early stages onwards (from sub mm size).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the imaging data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "e8e7c77e-670f-4d65-a6eb-7000aaa2d3b5",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C63",
+      "claim": "Some tumours growing in very peripheral positions of the animal could not be monitored due to technical or procedural limitations of the MSOT imaging system.",
+      "claim_type": "EXPLICIT",
+      "source": "Only some tumours growing in very peripheral positions of the animal could not be monitored due to technical or procedural limitations of the MSOT imaging system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors based on their observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "91615c66-1de7-4a1c-ab1b-5cc73ddb2adb",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C64",
+      "claim": "The nose could not be imaged as it was placed in the nose cone for air and anaesthesia supply during the imaging process.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the nose could not be imaged as it was placed in the nose cone for air and anaesthesia supply during the imaging process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical limitation of the imaging setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "ca11407a-8573-4536-b548-1068d3b52738",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C65",
+      "claim": "Any tumours in the lungs could not have been monitored with photoacoustic imaging due to a different sound propagation in air.",
+      "claim_type": "EXPLICIT",
+      "source": "Any tumours in the lungs could not have been monitored with photoacoustic imaging due to a different sound propagation in air.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental limitation of photoacoustic imaging based on the physics of sound propagation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "2a5586e9-e67a-48a0-bfc3-56ec5c9ed72b",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C66",
+      "claim": "The presence of tumours in the lungs could be ruled out from the bioluminescence images.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the presence of tumours in the lungs could be ruled out from the bioluminescence images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the bioluminescence imaging data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "9fae3dd0-04e5-4baf-9460-6624e75b45af",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C67",
+      "claim": "Multispectral optoacoustic tomography achieves high spatial resolution of the initial cell distribution through analysis of the GNR signal.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that multispectral optoacoustic tomography achieves high spatial resolution of the initial cell distribution through analysis of the GNR signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the imaging data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "2bea5648-486f-4a96-88fd-bb92ead68d6c",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C68",
+      "claim": "Expression of iRFP720 is initially undetectable due to the scattered distribution of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst expression of iRFP720 is initially undetectable, due to the scattered distribution of cells, it provides long-term tumour monitoring capability in MSOT as clustered iRFP720-positive cells lead to a stronger photoacoustic signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the imaging data showing no iRFP720 signal immediately after injection but strong signal during tumour growth.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "5da52b9f-11e5-45d6-970f-65465b5ca567",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C69",
+      "claim": "Clustered iRFP720-positive cells lead to a stronger photoacoustic signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst expression of iRFP720 is initially undetectable, due to the scattered distribution of cells, it provides long-term tumour monitoring capability in MSOT as clustered iRFP720-positive cells lead to a stronger photoacoustic signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that iRFP720 becomes detectable when cells cluster into tumours.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "81c8cff9-4ff4-4c9c-a537-a082c493be43",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C70",
+      "claim": "Bioluminescence imaging of luciferase allowed for the most sensitive detection of live cells for comparison and validation of the MSOT results.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, bioluminescence imaging of luciferase allowed for the most sensitive detection of live cells for comparison and validation of the MSOT results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated throughout the manuscript where BLI and MSOT data are compared.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "897e03ba-3568-45b1-962f-55898cce47d7",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C71",
+      "claim": "The silica-coated GNRs provided the excellent photoacoustic sensitivity required to monitor the broad distribution of labelled cells shortly after systemic intra-cardiac injection.",
+      "claim_type": "EXPLICIT",
+      "source": "The silica-coated GNRs provided the excellent photoacoustic sensitivity required to monitor the broad distribution of labelled cells shortly after systemic intra-cardiac injection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the imaging data showing detection of cells immediately after injection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "8f1b4c1c-5888-4c8d-a5ec-1d5e590c90e2",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C72",
+      "claim": "Because the GNRs maintained their optical signature when taken up by the cells, spectral unmixing could be applied in MSOT.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the GNRs maintained their optical signature when taken up by the cells, spectral unmixing could be applied in MSOT, which allowed GNR signals to be distinguished from other reporters (e.g. iRFP720) and endogenous absorbers, resulting in highly specific cell detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the spectral unmixing results shown throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "1e9eb64e-aa40-41e1-bbed-a2defe226c27",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C73",
+      "claim": "Spectral unmixing allowed GNR signals to be distinguished from other reporters (e.g. iRFP720) and endogenous absorbers, resulting in highly specific cell detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the GNRs maintained their optical signature when taken up by the cells, spectral unmixing could be applied in MSOT, which allowed GNR signals to be distinguished from other reporters (e.g. iRFP720) and endogenous absorbers, resulting in highly specific cell detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the spectral unmixing results and control experiments shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "e3906130-458d-4b79-9135-642de114a1a0",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C74",
+      "claim": "Over the medium term (several days post-injection), photoacoustic GNR signals and luciferase bioluminescence signals became separated, indicating nanoparticle clearance and surviving cells, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the medium term, that is several days post-injection, photoacoustic GNR signals and luciferase bioluminescence signals became separated, indicating nanoparticle clearance and surviving cells, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the longitudinal imaging data showing divergence of GNR and bioluminescence signals.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "f292aebe-3693-4195-b80d-ca3752191b00",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C75",
+      "claim": "The GNR signal became localized to the liver, which is in line with the known clearance pathway of nanoparticles and associated cell debris through the hepato-biliary system.",
+      "claim_type": "EXPLICIT",
+      "source": "The GNR signal became localised to the liver, which is in line with the known clearance pathway of nanoparticles and associated cell debris through the hepato-biliary system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the imaging data and is consistent with known nanoparticle clearance mechanisms.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "544fec4f-ef2f-478b-b5e5-da1f634a6388",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C76",
+      "claim": "Longitudinal monitoring of surviving cells and tumour formation was achieved via luciferase bioluminescence and iRFP720 photoacoustic tomography using the genetic reporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the genetic reporters, longitudinal monitoring of surviving cells and tumour formation was achieved via luciferase bioluminescence and iRFP720 photoacoustic tomography.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the longitudinal imaging data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "68ddb478-ae41-4c86-be1b-106fc97914c9",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C77",
+      "claim": "Compared to other optical-based imaging technologies, the superior deep-tissue spatial resolution of MSOT provided precise information about anatomical localisation and morphology of tumours from very early stages (<1 mm diameter).",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to other optical-based imaging technologies, the superior deep-tissue spatial resolution of MSOT provided precise information about anatomical localisation and morphology of tumours from very early stages (<1 mm diameter).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the MSOT imaging data showing detection and characterization of small tumours.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "44907091-84ef-4155-b2c0-1c1559335581",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C78",
+      "claim": "The optimal window for in vivo optical imaging lies in the near infrared (NIR) spectrum (~650\u2013900 nm), since absorption through the main endogenous chromophores (oxy-haemoglobin, deoxy-haemoglobin, melanin, water and lipids) are minimal in this spectral range.",
+      "claim_type": "EXPLICIT",
+      "source": "The optimal window for in vivo optical imaging lies in the near infrared (NIR) spectrum (~650\u2013900 nm), since absorption through the main endogenous chromophores (oxy-haemoglobin, deoxy-haemoglobin, melanin, water and lipids) are minimal in this spectral range (Weber et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "43f10d74-b8c5-4c0b-b3a1-78f8c26a751d",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C79",
+      "claim": "Firefly luciferase has become the most widely used reporter as its substrates, D-luciferin or CycLuc1, are very well tolerated by animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Firefly, luciferase has become the most widely used reporter as its substrates, D-luciferin or CycLuc1 (Evans et al., 2014), are very well tolerated by animals and, compared to other luciferases, its peak light emission at around 562 nm is closest to the infrared window for in vivo imaging (de Almeida et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "f26682b2-ef6e-416f-b0a1-a607eb2d7725",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C80",
+      "claim": "Compared to other luciferases, firefly luciferase peak light emission at around 562 nm is closest to the infrared window for in vivo imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Firefly, luciferase has become the most widely used reporter as its substrates, D-luciferin or CycLuc1 (Evans et al., 2014), are very well tolerated by animals and, compared to other luciferases, its peak light emission at around 562 nm is closest to the infrared window for in vivo imaging (de Almeida et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "fd5f0e35-7002-4e21-9e43-adde7154df1f",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C81",
+      "claim": "Acoustic scattering is three orders of magnitude less than photon scattering.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, acoustic scattering is three orders of magnitude less than photon scattering (Wang and Hu, 2012), which overcomes deep tissue spatial resolution drawbacks of other optical-based imaging technologies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "474cd614-9c86-4e7c-8de3-dadd523cee20",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C82",
+      "claim": "Some iRFPs, such as iRFP720, have an absorption profile in the NIR window, thus enabling their use as reporter genes for photoacoustic imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, some iRFPs, such as iRFP720, have an absorption profile in the NIR window, thus enabling their use as reporter genes for photoacoustic imaging, and allowing deep tissue imaging and tumour monitoring in mice (Deliolanis et al., 2014; Jiguet-Jiglaire et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "5aa9bdde-6be3-4b21-a81a-e1546d3f7cb9",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C83",
+      "claim": "New iRFPs have been proven to be useful genetic photoacoustic reporters in mammary gland and brain tumour monitoring.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, new iRFPs have been proven to be useful genetic photoacoustic reporters in mammary gland and brain tumour monitoring, which establishes them as dual-modality imaging probes (Deliolanis et al., 2014; Filonov et al., 2012; Krumholz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "84f6f7f9-72c5-4d94-8a13-1d5aeda3e827",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C84",
+      "claim": "GNRs have extinction coefficients in the range of 4\u20135.5 \u00d7 10^9 M^\u22121cm^\u22121 for longitudinal surface plasmon between 728 and 845 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, GNRs are an attractive choice since the extinction coefficients are in the range of 4\u20135.5 \u00d7 109 M\u22121cm\u22121 for longitudinal surface plasmon between 728 and 845 nm (Orendorff and Murphy, 2006), that is orders of magnitude higher than endogenous absorbers or other types of contrast agents (e.g. AlexaFluor750 and iRFP720 coefficients are 2.5 \u00d7 105 and 9.6 \u00d7 104 M\u22121cm\u22121, respectively [Shcherbakova and Verkhusha, 2013; Ntziachristos and Razansky, 2010]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "c3dcc811-979f-4293-8319-5c1401bd4b4f",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C85",
+      "claim": "GNR extinction coefficients are orders of magnitude higher than endogenous absorbers or other types of contrast agents.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, GNRs are an attractive choice since the extinction coefficients are in the range of 4\u20135.5 \u00d7 109 M\u22121cm\u22121 for longitudinal surface plasmon between 728 and 845 nm (Orendorff and Murphy, 2006), that is orders of magnitude higher than endogenous absorbers or other types of contrast agents (e.g. AlexaFluor750 and iRFP720 coefficients are 2.5 \u00d7 105 and 9.6 \u00d7 104 M\u22121cm\u22121, respectively [Shcherbakova and Verkhusha, 2013; Ntziachristos and Razansky, 2010]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison based on cited values for different contrast agents.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "7c72fbec-2d27-4a9a-bd8d-d39da8801222",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C86",
+      "claim": "AlexaFluor750 has an extinction coefficient of 2.5 \u00d7 10^5 M^\u22121cm^\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, GNRs are an attractive choice since the extinction coefficients are in the range of 4\u20135.5 \u00d7 109 M\u22121cm\u22121 for longitudinal surface plasmon between 728 and 845 nm (Orendorff and Murphy, 2006), that is orders of magnitude higher than endogenous absorbers or other types of contrast agents (e.g. AlexaFluor750 and iRFP720 coefficients are 2.5 \u00d7 105 and 9.6 \u00d7 104 M\u22121cm\u22121, respectively [Shcherbakova and Verkhusha, 2013; Ntziachristos and Razansky, 2010]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited value for the extinction coefficient of AlexaFluor750.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "562f9f45-a61f-42d6-97da-40b68853388b",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C87",
+      "claim": "iRFP720 has an extinction coefficient of 9.6 \u00d7 10^4 M^\u22121cm^\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, GNRs are an attractive choice since the extinction coefficients are in the range of 4\u20135.5 \u00d7 109 M\u22121cm\u22121 for longitudinal surface plasmon between 728 and 845 nm (Orendorff and Murphy, 2006), that is orders of magnitude higher than endogenous absorbers or other types of contrast agents (e.g. AlexaFluor750 and iRFP720 coefficients are 2.5 \u00d7 105 and 9.6 \u00d7 104 M\u22121cm\u22121, respectively [Shcherbakova and Verkhusha, 2013; Ntziachristos and Razansky, 2010]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited value for the extinction coefficient of iRFP720.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "1cc87c5d-c0d7-44dd-8bad-b7abaa7c20ec",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C88",
+      "claim": "After coating GNRs with a 35 nm silica shell, the optical properties of GNRs are maintained even in harsh environments such as the endosomal vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently demonstrated how, after coating GNRs with a 35 nm silica shell, the optical properties of GNRs are maintained even in harsh environments such as the endosomal vesicles (Comenge et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "247d556b-8fc5-45be-801d-816d1909430e",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C89",
+      "claim": "Cell division and cell death result in a decrease of GNR concentration and therefore a decrease of photoacoustic intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, cell division and cell death result in a decrease of GNR concentration and therefore a decrease of photoacoustic intensity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the dilution and loss of GNRs with cell division and death.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "a9938aa8-ab92-49a5-ad4e-06692617b810",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C90",
+      "claim": "For long-term photoacoustic tracking of cells, adequate reporter genes are required.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, for long-term photoacoustic tracking of cells, adequate reporter genes are required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that GNRs are diluted/cleared over time.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "75218404-9ea1-4370-8250-b1c99e69d27f",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C91",
+      "claim": "The combination of the two cell labelling strategies (nanoparticles and genetic labelling) allowed short-term and long-term multimodal imaging of deep tissues with high spatial resolution without compromising sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of the two cell labelling strategies (nanoparticles and genetic labelling) allowed short-term and long-term multimodal imaging of deep tissues with high spatial resolution without compromising sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the imaging data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "cd52c048-b9cb-40a6-b47e-62e9ab9d7db2",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C92",
+      "claim": "The multimodal approach enabled the non-invasive monitoring of the initial cell biodistribution on a sub-organ level as well as the detection of tumour formation from very early stages.",
+      "claim_type": "EXPLICIT",
+      "source": "It enabled the non-invasive monitoring of the initial cell biodistribution on a sub-organ level as well as the detection of tumour formation from very early stages, thus opening opportunities for gaining a better understanding of the safety of stem cell therapies, which is required for moving towards clinical translation (Ankrum and Karp, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the imaging data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "8a53eaec-db26-4d77-a6e6-bc942cf51ccc",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "claim_id": "C93",
+      "claim": "This multimodal cell tracking approach could be applied widely for cancer and regenerative medicine research to monitor short- and long-term biodistribution, tumour formation and metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "This multimodal cell tracking approach could be applied widely for cancer and regenerative medicine research to monitor short- and long-term biodistribution, tumour formation and metastasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications of the approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d61e18be-840f-4df7-b7d3-790e9b996ead",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Two batches of gold nanorods (GNR-710 and GNR-860) were synthesized with distinct core sizes and aspect ratios, and coated with silica shells of approximately 35-39 nm thickness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C5, and C6 provide specific dimensional measurements for both GNR batches obtained from TEM characterization. The measurements include error estimates and are supported by imaging data in Figure 1a. The silica shell thicknesses are consistent with the design requirement stated in C4.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "2ed3b4fa-3b4d-49c0-b0c9-2e0d60f516d0",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Silica-coated GNRs were designed with NIR absorption properties and a 35 nm silica shell to preserve optical properties after cellular uptake, which is essential for photoacoustic detection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 establish the design rationale supported by prior work (C4). Claims C10-C11 demonstrate through TEM and spectroscopic data that GNRs maintain their optical properties within cellular vesicles. Claim C12 explains the technical necessity of this preservation for spectral unmixing in photoacoustic imaging.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "370916cf-bdab-40fc-be51-b2824c7ea708",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Silica-coated GNRs showed minimal cytotoxicity, with cell viability remaining above 91% even at the highest tested concentration (O.D. = 4).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C13 provides quantitative viability data from triplicate measurements shown in Figure 1e. Claim C14 contextualizes these findings with previous work. The data demonstrate acceptable biocompatibility for the labeling approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "933a958e-b04b-4f41-93f7-72d9b32b68d3",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A bi-cistronic lentiviral vector using an E2A element achieved superior co-expression of iRFP720 and firefly luciferase compared to an IRES-based vector, with 5-fold higher luciferase expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 describe the vector design and comparative performance data from IVIS imaging (Figure 2d,e). The E2A vector showed equivalent iRFP720 expression but 5-fold higher luciferase activity. Claim C18 adds subcellular localization information from immunocytochemistry. The quantitative comparison is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "8b993cb7-45f2-43cb-a86b-3423f9750780",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "After intracardiac injection into the left ventricle, GNR-labeled cells distributed to the head, liver, and kidney regions, with cells trapped in brain capillaries but not crossing the blood-brain barrier.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 describe the injection methodology and physiological rationale. Claims C24-C27 report the observed biodistribution pattern confirmed by both bioluminescence and MSOT imaging (Figure 3), with support from prior literature for the distribution pattern and capillary trapping mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "4b4760a8-96df-44fa-8035-e7403ff9cfaf",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "GNR uptake did not affect the overall biodistribution behavior of cells, as demonstrated by identical bioluminescence patterns in cells with or without GNR labeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 report a critical control experiment shown in Figure 3\u2014figure supplement 1, demonstrating that the labeling strategy does not alter cell behavior. This is essential for validating the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "4cee5e84-84f2-4baf-9e18-4fa1a96d8658",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Spectral unmixing controls demonstrated high specificity of GNR detection, with no signal when incorrect spectra were applied and wavelength-specific intensity increases matching GNR absorption profiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 describe rigorous control experiments (Figures 4 and 4\u2014figure supplement 1) demonstrating spectral specificity. Claim C32 notes the expected limitation that iRFP720 signal was insufficient for immediate post-injection detection due to cell dispersion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "3cc6f624-664f-4def-b430-d0191e3d9583",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Massive cell death occurred within 24 hours post-injection, with only 15-22% of cells surviving at day 1 and less than 4% by day 5, which was not caused by GNR labeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 provide quantitative bioluminescence data (Figure 5b) showing progressive cell loss. Claims C35-C36 contextualize this finding with prior literature and demonstrate through control experiments that GNR labeling was not responsible for cell death.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "0af08fd1-1331-43e9-91a8-062a7819f946",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "After 24 hours, GNR and bioluminescence signals diverged spatially, with GNRs accumulating in the liver while viable cells remained elsewhere, indicating hepatic clearance of GNRs from dead cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 describe the observed spatial divergence of signals in Figure 5a-c. Claims C41-C43 provide the mechanistic interpretation based on the different signal sources (GNRs vs. living cells) and known nanoparticle clearance pathways, supported by multiple citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "b08d50ed-0246-4bb4-ac04-a8e252062b83",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Longitudinal MSOT imaging tracked GNR clearance from the liver, with photoacoustic signal decreasing by 47% at day 5 and 73% at day 25.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 provide quantitative longitudinal data from Figure 5d demonstrating progressive clearance of GNRs from the liver over 25 days, validating the ability to monitor nanoparticle fate long-term.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "39f3e311-d283-4637-8c8f-55befe1ee332",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "After initial cell death in primary distribution sites, surviving cells formed tumors at new locations starting around day 5, with signal intensity increasing over subsequent weeks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 describe the temporal progression from initial cell loss to tumor formation observed in bioluminescence imaging (Figure 6\u2014figure supplement 1). Claims C49-C50 provide context from prior literature about the tumorigenic potential of this cell line.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "e9c078ed-7c88-4e83-9c78-710f991863a5",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "MSOT imaging using iRFP720 expression enabled precise localization of multiple tumors throughout the body, with findings validated by ex vivo bioluminescence and fluorescence imaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 describe the spectral basis for iRFP720 detection (Figure 6\u2014figure supplement 2). Claim C54 reports the identification of multiple tumors in specific anatomical locations from MSOT cross-sections (Figure 6b). Claims C55-C56 provide validation through ex vivo imaging (Figure 6c and 6\u2014figure supplement 3).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "fa769a7b-86c8-4838-9a9d-05ad4b1879f8",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "MSOT enabled longitudinal monitoring of tumor growth from very early stages, tracking a tumor from 1.2 mm diameter at day 13 to 3.3 mm at day 30, including morphological changes such as branching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C60 describe detailed longitudinal tracking of tumor growth with specific size measurements at multiple timepoints (Figure 7). The spatial resolution of MSOT enabled detection of sub-millimeter tumors and morphological changes, demonstrating a key advantage of the technique.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "78c9dd4f-bf2a-4ac8-bd80-2751b371e2d7",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "MSOT provided excellent longitudinal tumor monitoring from sub-millimeter stages, though some peripheral tumors and lung tumors could not be imaged due to technical limitations of the system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 notes that GNRs were cleared and not used for tumor imaging. Claim C62 summarizes the overall capability demonstrated. Claims C63-C66 acknowledge specific technical limitations (nose cone positioning, air-tissue interfaces) while noting that bioluminescence could rule out lung involvement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "084a9290-d358-401f-b9fa-d3c83566419a",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The multimodal approach achieved high-resolution short-term cell tracking via GNR photoacoustic signals and long-term tumor monitoring via iRFP720, with bioluminescence providing sensitive validation of cell viability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C73 synthesize the key findings demonstrating complementary roles of the labeling strategies. GNRs enabled immediate high-resolution detection of dispersed cells through spectral unmixing, while iRFP720 enabled long-term monitoring as cells clustered into tumors. Bioluminescence provided orthogonal validation throughout.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "4f1bd5a9-163b-4765-a7f6-6d7b7a52f8f7",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The combined nanoparticle and genetic labeling strategy enabled tracking of both nanoparticle clearance (hepatobiliary pathway) and surviving cell fate (tumor formation) with superior spatial resolution compared to other optical imaging methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 summarize the temporal evolution of the two labeling strategies and their complementary information content. The divergence of signals over days revealed distinct fates for GNRs versus cells, with MSOT providing sub-millimeter spatial resolution for tumor detection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "7b9eebb6-d7c4-4b9b-af11-7d231294f594",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The multimodal cell tracking approach enabled non-invasive monitoring of initial cell biodistribution at sub-organ resolution and detection of tumor formation from very early stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C92 provide high-level conclusions supported by the comprehensive imaging data throughout the manuscript. The combination of techniques achieved both high spatial resolution and high sensitivity across different temporal phases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "9ebd04e8-07df-4110-94bf-ff5a0772d78f",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biophysical rationale for the multimodal approach, including NIR optical window properties, luciferase characteristics, acoustic versus photon scattering, iRFP properties, and GNR extinction coefficients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C87 provide established knowledge from the literature (all supported by citations) that justifies the choice of reporters and imaging modalities. These include the NIR optical window, luciferase properties, acoustic scattering advantages, iRFP absorption characteristics, and GNR extinction coefficients that are orders of magnitude higher than other contrast agents.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "01c1398f-7dfd-43b5-8574-3ebf0ed4e9dc",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The manuscript establishes the complementary strengths and limitations of bioluminescence imaging (high sensitivity, poor spatial resolution) versus photoacoustic imaging (superior spatial resolution of 150 \u03bcm).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 and C51 describe well-established properties of the two imaging modalities supported by citations. These technical characteristics justify the multimodal approach and explain why different modalities are optimal at different stages.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "3921befd-f2ae-49b7-968a-698ff6a02343",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The manuscript establishes that while silica coating preserves GNR optical properties in harsh cellular environments, cell division and death dilute GNR signals, necessitating genetic reporters for long-term tracking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 cites prior work on silica shell protection. Claims C89-C90 provide logical reasoning for why nanoparticle labeling alone is insufficient for long-term tracking, motivating the dual-labeling strategy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    },
+    {
+      "id": "b9dc0c4b-5fed-471a-9866-bc4ca04ca123",
+      "content_id": "bd12ca30-e65f-4b20-861a-70d20617953e",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The authors propose that this multimodal cell tracking approach could be widely applied for cancer and regenerative medicine research to monitor biodistribution, tumor formation, and metastasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C93 is a speculative statement about potential future applications. While the demonstrated capabilities support this possibility, the claim represents a prospective application rather than a demonstrated result. The generalizability to other cell types and disease models remains to be established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:16:07.917224Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "612164b8-2d2d-4a1b-b8a5-baddbdf02d87",
+      "result_id": "d61e18be-840f-4df7-b7d3-790e9b996ead"
+    },
+    {
+      "claim_id": "fc70e5a6-701a-41b8-9d69-110c716ec93d",
+      "result_id": "d61e18be-840f-4df7-b7d3-790e9b996ead"
+    },
+    {
+      "claim_id": "f0a6fa68-a363-411c-b151-521a425c957d",
+      "result_id": "d61e18be-840f-4df7-b7d3-790e9b996ead"
+    },
+    {
+      "claim_id": "892307bd-178c-480e-8d33-fc4031c79b62",
+      "result_id": "d61e18be-840f-4df7-b7d3-790e9b996ead"
+    },
+    {
+      "claim_id": "337af60e-237d-4470-950f-34dcc646e3a3",
+      "result_id": "2ed3b4fa-3b4d-49c0-b0c9-2e0d60f516d0"
+    },
+    {
+      "claim_id": "ed5c4d4e-5c03-4417-bfe9-929c75318449",
+      "result_id": "2ed3b4fa-3b4d-49c0-b0c9-2e0d60f516d0"
+    },
+    {
+      "claim_id": "6d67f2bd-365d-4ae6-baa7-8b9ffc3e343f",
+      "result_id": "2ed3b4fa-3b4d-49c0-b0c9-2e0d60f516d0"
+    },
+    {
+      "claim_id": "9fb635a3-9dff-499d-a388-bfc5b45a3ad2",
+      "result_id": "2ed3b4fa-3b4d-49c0-b0c9-2e0d60f516d0"
+    },
+    {
+      "claim_id": "83c00eb0-79ad-40de-b345-08626ee17954",
+      "result_id": "2ed3b4fa-3b4d-49c0-b0c9-2e0d60f516d0"
+    },
+    {
+      "claim_id": "bf39cf2b-8474-40d0-96ee-371a12b51b5e",
+      "result_id": "370916cf-bdab-40fc-be51-b2824c7ea708"
+    },
+    {
+      "claim_id": "5776311a-86e2-4ff1-b991-e3610aa3caf9",
+      "result_id": "370916cf-bdab-40fc-be51-b2824c7ea708"
+    },
+    {
+      "claim_id": "c26e9cbb-76ac-439f-8aae-25cd50b0488b",
+      "result_id": "933a958e-b04b-4f41-93f7-72d9b32b68d3"
+    },
+    {
+      "claim_id": "62663c38-3e47-4f1f-8418-0dcfdba9fd2d",
+      "result_id": "933a958e-b04b-4f41-93f7-72d9b32b68d3"
+    },
+    {
+      "claim_id": "895ad3d8-ddc2-43b6-8e00-a06369e01879",
+      "result_id": "933a958e-b04b-4f41-93f7-72d9b32b68d3"
+    },
+    {
+      "claim_id": "09163359-b16a-49ff-9aad-2c6f0c216ddb",
+      "result_id": "933a958e-b04b-4f41-93f7-72d9b32b68d3"
+    },
+    {
+      "claim_id": "cec3acab-4360-4932-930c-084f4c7c3789",
+      "result_id": "8b993cb7-45f2-43cb-a86b-3423f9750780"
+    },
+    {
+      "claim_id": "31c87388-c2cd-42a3-b9a2-5a1526bac38e",
+      "result_id": "8b993cb7-45f2-43cb-a86b-3423f9750780"
+    },
+    {
+      "claim_id": "fbabfbc4-833f-47b1-b32f-a33cac4301a4",
+      "result_id": "8b993cb7-45f2-43cb-a86b-3423f9750780"
+    },
+    {
+      "claim_id": "70b477a5-6203-4a2f-8213-46cac6b83162",
+      "result_id": "8b993cb7-45f2-43cb-a86b-3423f9750780"
+    },
+    {
+      "claim_id": "fc056f72-1ddb-464c-83f5-639024f50dd9",
+      "result_id": "8b993cb7-45f2-43cb-a86b-3423f9750780"
+    },
+    {
+      "claim_id": "f7289076-c7ac-4468-b216-b5a629edbbab",
+      "result_id": "8b993cb7-45f2-43cb-a86b-3423f9750780"
+    },
+    {
+      "claim_id": "6a61f1cd-a03e-4d57-b39e-4c6a7fb34a7c",
+      "result_id": "8b993cb7-45f2-43cb-a86b-3423f9750780"
+    },
+    {
+      "claim_id": "d78988d7-6103-4f63-87b8-d6f15e7fc0b3",
+      "result_id": "4b4760a8-96df-44fa-8035-e7403ff9cfaf"
+    },
+    {
+      "claim_id": "2af613b8-2c09-4cb1-8b5e-f500f074f86f",
+      "result_id": "4b4760a8-96df-44fa-8035-e7403ff9cfaf"
+    },
+    {
+      "claim_id": "009ed242-0f53-46fb-b45c-04a4546a3068",
+      "result_id": "4cee5e84-84f2-4baf-9e18-4fa1a96d8658"
+    },
+    {
+      "claim_id": "2067e3ed-76e7-465e-a1c7-de7735a32ac1",
+      "result_id": "4cee5e84-84f2-4baf-9e18-4fa1a96d8658"
+    },
+    {
+      "claim_id": "52489e03-da1b-40fd-aed0-0137574d953f",
+      "result_id": "4cee5e84-84f2-4baf-9e18-4fa1a96d8658"
+    },
+    {
+      "claim_id": "a108cb88-8c77-41ae-815a-0489ced52d07",
+      "result_id": "3cc6f624-664f-4def-b430-d0191e3d9583"
+    },
+    {
+      "claim_id": "3dd5c880-38a4-4752-8f66-fbc284c23940",
+      "result_id": "3cc6f624-664f-4def-b430-d0191e3d9583"
+    },
+    {
+      "claim_id": "46d457e0-0d42-4c93-bcca-2bc5a9a8f963",
+      "result_id": "3cc6f624-664f-4def-b430-d0191e3d9583"
+    },
+    {
+      "claim_id": "68871389-17d4-4b8f-937a-e83410b55c5b",
+      "result_id": "3cc6f624-664f-4def-b430-d0191e3d9583"
+    },
+    {
+      "claim_id": "ad1e3f7b-dbc9-4998-9c91-007d2b44f002",
+      "result_id": "0af08fd1-1331-43e9-91a8-062a7819f946"
+    },
+    {
+      "claim_id": "5a2b4086-99f3-4344-ba65-615080635f67",
+      "result_id": "0af08fd1-1331-43e9-91a8-062a7819f946"
+    },
+    {
+      "claim_id": "35f19d96-c4de-4042-86cb-7a17c3189b89",
+      "result_id": "0af08fd1-1331-43e9-91a8-062a7819f946"
+    },
+    {
+      "claim_id": "698a0bf5-acea-4435-bf49-34b9a8f54564",
+      "result_id": "0af08fd1-1331-43e9-91a8-062a7819f946"
+    },
+    {
+      "claim_id": "39ab4f19-5e0c-45fe-bef5-142f738bdcfb",
+      "result_id": "0af08fd1-1331-43e9-91a8-062a7819f946"
+    },
+    {
+      "claim_id": "1c5e24a4-9334-45d4-b146-d9fafd0ae983",
+      "result_id": "0af08fd1-1331-43e9-91a8-062a7819f946"
+    },
+    {
+      "claim_id": "349d9283-bf89-405e-9d20-98c1fe0ecff0",
+      "result_id": "0af08fd1-1331-43e9-91a8-062a7819f946"
+    },
+    {
+      "claim_id": "c9302a04-ee31-4bde-9045-982600782156",
+      "result_id": "b08d50ed-0246-4bb4-ac04-a8e252062b83"
+    },
+    {
+      "claim_id": "98edd5e7-3213-42cb-903e-5fb817e7efe8",
+      "result_id": "b08d50ed-0246-4bb4-ac04-a8e252062b83"
+    },
+    {
+      "claim_id": "d73b49d4-9f12-4aa5-8313-c288fde719ae",
+      "result_id": "39f3e311-d283-4637-8c8f-55befe1ee332"
+    },
+    {
+      "claim_id": "9f92a0fe-235e-47e7-8593-969e5da4205a",
+      "result_id": "39f3e311-d283-4637-8c8f-55befe1ee332"
+    },
+    {
+      "claim_id": "5cea0222-965f-48ad-8ed2-4fb39e0422e9",
+      "result_id": "39f3e311-d283-4637-8c8f-55befe1ee332"
+    },
+    {
+      "claim_id": "97206b1c-6f6b-4104-a72b-cb854f997202",
+      "result_id": "39f3e311-d283-4637-8c8f-55befe1ee332"
+    },
+    {
+      "claim_id": "1bcd6d76-56f4-40fd-b1c7-dbfc4a2e613c",
+      "result_id": "39f3e311-d283-4637-8c8f-55befe1ee332"
+    },
+    {
+      "claim_id": "794d35a6-0b20-4877-b82e-a18ed6fc32b7",
+      "result_id": "e9c078ed-7c88-4e83-9c78-710f991863a5"
+    },
+    {
+      "claim_id": "78f8c7fd-b4b6-4fc2-841b-e4b551d5636c",
+      "result_id": "e9c078ed-7c88-4e83-9c78-710f991863a5"
+    },
+    {
+      "claim_id": "4edef231-6020-44ca-8542-c6553732e608",
+      "result_id": "e9c078ed-7c88-4e83-9c78-710f991863a5"
+    },
+    {
+      "claim_id": "ef8525b3-c6ab-4fca-8b52-197d9ecccf4e",
+      "result_id": "e9c078ed-7c88-4e83-9c78-710f991863a5"
+    },
+    {
+      "claim_id": "2493aefe-7fbc-4e1c-8e87-c5248475b2ef",
+      "result_id": "e9c078ed-7c88-4e83-9c78-710f991863a5"
+    },
+    {
+      "claim_id": "5d81509b-b9e5-4a32-bf24-7dd607d489ea",
+      "result_id": "fa769a7b-86c8-4838-9a9d-05ad4b1879f8"
+    },
+    {
+      "claim_id": "83da9154-703d-4487-8832-1d79d3cabf61",
+      "result_id": "fa769a7b-86c8-4838-9a9d-05ad4b1879f8"
+    },
+    {
+      "claim_id": "8219368f-12c7-4a53-80fa-328755368ef5",
+      "result_id": "fa769a7b-86c8-4838-9a9d-05ad4b1879f8"
+    },
+    {
+      "claim_id": "0ef86f5b-ad5f-49a9-947f-b4258f6e821c",
+      "result_id": "fa769a7b-86c8-4838-9a9d-05ad4b1879f8"
+    },
+    {
+      "claim_id": "743c2d61-815c-4968-b914-7ad165f42cc6",
+      "result_id": "78c9dd4f-bf2a-4ac8-bd80-2751b371e2d7"
+    },
+    {
+      "claim_id": "a5731632-3fe5-4b38-b83a-3f1778edf906",
+      "result_id": "78c9dd4f-bf2a-4ac8-bd80-2751b371e2d7"
+    },
+    {
+      "claim_id": "e8e7c77e-670f-4d65-a6eb-7000aaa2d3b5",
+      "result_id": "78c9dd4f-bf2a-4ac8-bd80-2751b371e2d7"
+    },
+    {
+      "claim_id": "91615c66-1de7-4a1c-ab1b-5cc73ddb2adb",
+      "result_id": "78c9dd4f-bf2a-4ac8-bd80-2751b371e2d7"
+    },
+    {
+      "claim_id": "ca11407a-8573-4536-b548-1068d3b52738",
+      "result_id": "78c9dd4f-bf2a-4ac8-bd80-2751b371e2d7"
+    },
+    {
+      "claim_id": "2a5586e9-e67a-48a0-bfc3-56ec5c9ed72b",
+      "result_id": "78c9dd4f-bf2a-4ac8-bd80-2751b371e2d7"
+    },
+    {
+      "claim_id": "9fae3dd0-04e5-4baf-9460-6624e75b45af",
+      "result_id": "084a9290-d358-401f-b9fa-d3c83566419a"
+    },
+    {
+      "claim_id": "2bea5648-486f-4a96-88fd-bb92ead68d6c",
+      "result_id": "084a9290-d358-401f-b9fa-d3c83566419a"
+    },
+    {
+      "claim_id": "5da52b9f-11e5-45d6-970f-65465b5ca567",
+      "result_id": "084a9290-d358-401f-b9fa-d3c83566419a"
+    },
+    {
+      "claim_id": "81c8cff9-4ff4-4c9c-a537-a082c493be43",
+      "result_id": "084a9290-d358-401f-b9fa-d3c83566419a"
+    },
+    {
+      "claim_id": "897e03ba-3568-45b1-962f-55898cce47d7",
+      "result_id": "084a9290-d358-401f-b9fa-d3c83566419a"
+    },
+    {
+      "claim_id": "8f1b4c1c-5888-4c8d-a5ec-1d5e590c90e2",
+      "result_id": "084a9290-d358-401f-b9fa-d3c83566419a"
+    },
+    {
+      "claim_id": "1e9eb64e-aa40-41e1-bbed-a2defe226c27",
+      "result_id": "084a9290-d358-401f-b9fa-d3c83566419a"
+    },
+    {
+      "claim_id": "e3906130-458d-4b79-9135-642de114a1a0",
+      "result_id": "4f1bd5a9-163b-4765-a7f6-6d7b7a52f8f7"
+    },
+    {
+      "claim_id": "f292aebe-3693-4195-b80d-ca3752191b00",
+      "result_id": "4f1bd5a9-163b-4765-a7f6-6d7b7a52f8f7"
+    },
+    {
+      "claim_id": "544fec4f-ef2f-478b-b5e5-da1f634a6388",
+      "result_id": "4f1bd5a9-163b-4765-a7f6-6d7b7a52f8f7"
+    },
+    {
+      "claim_id": "68ddb478-ae41-4c86-be1b-106fc97914c9",
+      "result_id": "4f1bd5a9-163b-4765-a7f6-6d7b7a52f8f7"
+    },
+    {
+      "claim_id": "75218404-9ea1-4370-8250-b1c99e69d27f",
+      "result_id": "7b9eebb6-d7c4-4b9b-af11-7d231294f594"
+    },
+    {
+      "claim_id": "cd52c048-b9cb-40a6-b47e-62e9ab9d7db2",
+      "result_id": "7b9eebb6-d7c4-4b9b-af11-7d231294f594"
+    },
+    {
+      "claim_id": "44907091-84ef-4155-b2c0-1c1559335581",
+      "result_id": "9ebd04e8-07df-4110-94bf-ff5a0772d78f"
+    },
+    {
+      "claim_id": "43f10d74-b8c5-4c0b-b3a1-78f8c26a751d",
+      "result_id": "9ebd04e8-07df-4110-94bf-ff5a0772d78f"
+    },
+    {
+      "claim_id": "f26682b2-ef6e-416f-b0a1-a607eb2d7725",
+      "result_id": "9ebd04e8-07df-4110-94bf-ff5a0772d78f"
+    },
+    {
+      "claim_id": "fd5f0e35-7002-4e21-9e43-adde7154df1f",
+      "result_id": "9ebd04e8-07df-4110-94bf-ff5a0772d78f"
+    },
+    {
+      "claim_id": "474cd614-9c86-4e7c-8de3-dadd523cee20",
+      "result_id": "9ebd04e8-07df-4110-94bf-ff5a0772d78f"
+    },
+    {
+      "claim_id": "5aa9bdde-6be3-4b21-a81a-e1546d3f7cb9",
+      "result_id": "9ebd04e8-07df-4110-94bf-ff5a0772d78f"
+    },
+    {
+      "claim_id": "84f6f7f9-72c5-4d94-8a13-1d5aeda3e827",
+      "result_id": "9ebd04e8-07df-4110-94bf-ff5a0772d78f"
+    },
+    {
+      "claim_id": "c3dcc811-979f-4293-8319-5c1401bd4b4f",
+      "result_id": "9ebd04e8-07df-4110-94bf-ff5a0772d78f"
+    },
+    {
+      "claim_id": "7c72fbec-2d27-4a9a-bd8d-d39da8801222",
+      "result_id": "9ebd04e8-07df-4110-94bf-ff5a0772d78f"
+    },
+    {
+      "claim_id": "562f9f45-a61f-42d6-97da-40b68853388b",
+      "result_id": "9ebd04e8-07df-4110-94bf-ff5a0772d78f"
+    },
+    {
+      "claim_id": "d094277c-aec4-4408-b374-3ace4a28c16c",
+      "result_id": "01c1398f-7dfd-43b5-8574-3ebf0ed4e9dc"
+    },
+    {
+      "claim_id": "c8b80e9e-32c9-4199-97ff-cc11d5b4fb60",
+      "result_id": "01c1398f-7dfd-43b5-8574-3ebf0ed4e9dc"
+    },
+    {
+      "claim_id": "ef09957e-3544-4dbb-bc38-389f35ae0a61",
+      "result_id": "01c1398f-7dfd-43b5-8574-3ebf0ed4e9dc"
+    },
+    {
+      "claim_id": "1cc87c5d-c0d7-44dd-8bad-b7abaa7c20ec",
+      "result_id": "3921befd-f2ae-49b7-968a-698ff6a02343"
+    },
+    {
+      "claim_id": "247d556b-8fc5-45be-801d-816d1909430e",
+      "result_id": "3921befd-f2ae-49b7-968a-698ff6a02343"
+    },
+    {
+      "claim_id": "a9938aa8-ab92-49a5-ad4e-06692617b810",
+      "result_id": "3921befd-f2ae-49b7-968a-698ff6a02343"
+    },
+    {
+      "claim_id": "8a53eaec-db26-4d77-a6e6-bc942cf51ccc",
+      "result_id": "b9dc0c4b-5fed-471a-9866-bc4ca04ca123"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1845 @@
+{
+  "submission": {
+    "id": "8e554d11-8ea7-4f4f-8e5d-0e5bba6a8905",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:18:30.173822Z",
+    "updated_at": "2025-12-01T21:18:30.173822Z"
+  },
+  "content": [
+    {
+      "id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "submission_id": "8e554d11-8ea7-4f4f-8e5d-0e5bba6a8905",
+      "content_type": "manuscript",
+      "content_text": "# Host proteostasis modulates influenza evolution\n\n## Authors\n\n- Angela M Phillips<sup>1</sup> ([ORCID: 0000-0002-9806-7574](https://orcid.org/0000-0002-9806-7574))\n- Luna O Gonzalez<sup>2</sup>\n- Emmanuel E Nekongo<sup>1</sup>\n- Anna I Ponomarenko<sup>1</sup>\n- Sean M McHugh<sup>3</sup>\n- Vincent L Butty<sup>4</sup>\n- Stuart S Levine<sup>4</sup>\n- Yu-Shan Lin<sup>3</sup> ([ORCID: 0000-0001-6460-2877](https://orcid.org/0000-0001-6460-2877))\n- Leonid A Mirny<sup>5</sup> ([ORCID: 0000-0002-0785-5410](https://orcid.org/0000-0002-0785-5410))\n- Matthew D Shoulders<sup>1</sup> ([ORCID: 0000-0002-6511-3431](https://orcid.org/0000-0002-6511-3431)) \u2020\n\n### Affiliations\n\n1. Department of Chemistry Massachusetts Institute of Technology Cambridge United States\n2. Department of Mathematics Massachusetts Institute of Technology Cambridge United States\n3. Department of Chemistry Tufts University Medford United States\n4. BioMicro Center Massachusetts Institute of Technology Cambridge United States\n5. Department of Physics Massachusetts Institute of Technology Cambridge United States\n6. Institute for Medical Engineering and Science Massachusetts Institute of Technology Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPredicting and constraining RNA virus evolution require understanding the molecular factors that define the mutational landscape accessible to these pathogens. RNA viruses typically have high mutation rates, resulting in frequent production of protein variants with compromised biophysical properties. Their evolution is necessarily constrained by the consequent challenge to protein folding and function. We hypothesized that host proteostasis mechanisms may be significant determinants of the fitness of viral protein variants, serving as a critical force shaping viral evolution. Here, we test that hypothesis by propagating influenza in host cells displaying chemically-controlled, divergent proteostasis environments. We find that both the nature of selection on the influenza genome and the accessibility of specific mutational trajectories are significantly impacted by host proteostasis. These findings provide new insights into features of host\u2013pathogen interactions that shape viral evolution, and into the potential design of host proteostasis-targeted antiviral therapeutics that are refractory to resistance.\n\n## Introduction\n\nMinimalist pathogens like RNA viruses survive dynamic host environments by virtue of their extreme adaptability. This adaptability is driven by a high rate of genetic variation, mediated by error-prone genome replication (Sanju\u00e1n et al., 2010). Most missense mutations have deleterious consequences for protein function, often owing to either thermodynamic (reduced stability of the native state or enhanced stability of unfolded/misfolded states) or kinetic (slow folding or enhanced misfolding/aggregation) effects on folding (DePristo et al., 2005). In the context of viruses, these phenomena may underpin the observation that the distribution of mutational fitness effects can be largely accounted for by considering protein folding biophysics (Wylie and Shakhnovich, 2011; Ch\u00e9ron et al., 2016; Tokuriki and Tawfik, 2009a). Indeed, stable proteins tend to be more evolvable, as any given missense mutation is less likely to severely disrupt protein folding or structure (Bloom et al., 2006; Gong et al., 2013).\n\nIn cells, protein folding challenges are addressed by proteostasis networks composed of chaperones and quality control factors that work in concert to shepherd nascent proteins to folded, functional conformations (Balch et al., 2008; Hartl et al., 2011; Powers and Balch, 2013). Important work focused primarily on the Hsp90 chaperone has suggested a critical role for chaperones in modulating the evolution of their endogenous clients, (Cowen and Lindquist, 2005; Queitsch et al., 2002; Lachowiec et al., 2015; Sangster et al., 2007, 2008a, 2008b; Rohner et al., 2013; Whitesell et al., 2014; Geiler-Samerotte et al., 2016; Rutherford and Lindquist, 1998) in part by buffering deleterious effects of non-synonymous mutations. The consequences of Hsp90 activity for protein evolution may be due to Hsp90 directly engaging an evolving client protein (termed a primary effect). Alternatively, the effects of Hsp90 may be secondary, mediated indirectly by Hsp90 influencing the folding of other endogenous clients that themselves engage relevant evolving proteins. For instance, Hsp90-dependent azole resistance in Candida albicans is mediated by secondary effects of Hsp90 on calcineurin, an Hsp90 client that regulates responses to environmental stimuli (Cowen and Lindquist, 2005). Efforts to look beyond Hsp90 to understand how other components of the metazoan proteostasis machinery modulate evolution (e.g., Hsp40/70 chaperones or protein misfolding stress responses like the heat shock response) have been slowed by the paucity of chemical biology tools to perturb the activities of these systems. However, Tawfik and coworkers have shown that the GroEL/ES chaperonin system can govern the fitness of certain client protein variants in bacteria (Tokuriki and Tawfik, 2009b), and computational modeling suggests that other chaperones may also have roles in evolution (Bogumil and Dagan, 2012; Cetinba\u015f and Shakhnovich, 2013).\n\nChaperones and other proteostasis mechanisms are theoretically well-positioned to address the biophysical challenges created by high mutation rates in viruses. Intriguingly, most RNA viruses lack autonomous chaperones or other co-factors to assist\u00a0their proteins\u00a0with folding. Instead, viral proteins engage host chaperones, (Melville et al., 1999; Momose et al., 2002; Naito et al., 2007; York et al., 2014; Watanabe et al., 2010) and host chaperone inhibitors have been shown to limit the viability of certain RNA viruses (Geller et al., 2007; Heaton et al., 2016; Taguwa et al., 2015; Chase et al., 2008; Geller et al., 2012). However, the possibility that host chaperones can shape the evolution of viral pathogens has not been investigated.\n\nIn summary, it is clear that: (1) high genetic variability is essential to support RNA virus adaptability; (2) missense mutations important for viral adaptation are often biophysically\u00a0deleterious, constraining the accessible mutational landscape; and (3) many viruses engage host chaperones to fold their proteins. An important but still untested hypothesis is that host proteostasis modulates RNA virus evolutionary trajectories. Experimentally testing this hypothesis requires methods to regulate the host cell\u2019s proteostasis network without significantly perturbing cell health or the ability of an RNA virus to propagate. Here, we achieve this goal in the context of long-term influenza propagation by using small molecules to either modulate the heat shock response in a stress-independent manner (Shoulders et al., 2013; Moore et al., 2016) or to inhibit Hsp90 at sub-lethal concentrations (Ying et al., 2012). We find that the resulting perturbations to host proteostasis mechanisms significantly impact both the extent and the nature of selection pressure on the influenza genome. We conclude that host proteostasis is a critical, under-appreciated player in influenza evolution, with significant implications for our ability to predict and prevent the evolution of influenza and other RNA viral pathogens.\n\n## Results\n\n### Small molecule-based strategies create three distinctive host proteostasis environments for influenza evolution experiments\n\nEukaryotic cells dynamically match proteostasis network capacity to demand via compartment-specific stress responses. Thus, one biologically relevant strategy to create an altered proteostasis environment is to induce such responses. We focused on the heat shock response, (\u00c5kerfelt et al., 2010) because numerous influenza proteins must fold and/or function in the cytosol and nucleus (Watanabe et al., 2010). Typical methods to induce heat shock factor 1 (HSF1), the master regulator of the heat shock response and thus of cytosolic and nuclear chaperone and quality control protein levels, involve treatment with toxins or acute heat stress. These methods are not useful for our studies because they engender massive protein misfolding stress in host cells that rapidly become apoptotic, preventing influenza propagation. An alternative strategy is to over-express a constitutively active form of HSF1 lacking amino acids 186\u2013202 (termed cHSF1), (Voellmy, 2005) but high levels of cHSF1 over-expression outside the physiologically relevant regime are typically toxic (Ryno et al., 2014).\n\nInstead, we took a chemical genetic approach, fusing cHSF1 to a destabilized variant of E. coli dihydrofolate reductase (DHFR) (Shoulders et al., 2013; Iwamoto et al., 2010). The DHFR.cHSF1 fusion is targeted for rapid proteasomal degradation and is therefore non-functional (Figure 1A), unless cells are treated with the DHFR-stabilizing pharmacologic chaperone trimethoprim (TMP). We created a stable, clonal Madin Darby canine kidney (MDCK) cell line expressing DHFR.cHSF1. In these cells, termed MDCKHSF1 cells, we can dosably induce cHSF1 transcriptional activity by TMP treatment in a stress-independent manner within the biologically relevant regime (Figure 1B), avoiding cytotoxicity that would be induced by stressors or cHSF1 overexpression and yet still providing robust access to cells expressing enhanced levels of HSF1 targets (Figure 1\u2014figure supplement 1A\u2013C). To control for any possible unintended consequences of TMP treatment or expression of a DHFR-fusion protein in our evolution experiments, we also created a control MDCK cell line expressing DHFR.YFP (MDCKYFP). This MDCKYFP cell line does not display TMP-dependent upregulation of HSF1-dependent chaperones, indicating that TMP induces HSF1 activity in our MDCKHSF1 cells specifically by stabilizing DHFR.cHSF1 (Figure 1\u2014figure supplement 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/28652/elife-28652-fig1-v1.jpg)\n\n**Figure 1.:** (A) Destabilized domain technology for stress-independent control of HSF1 activity with trimethoprim (TMP). (B) Dosable induction of HSF1 activity by increasing concentrations of TMP shown by increases in Hsp70 transcripts up to physiologically relevant levels; arsenite is a positive control for endogenous HSF1 activation. Transcript levels normalized to vehicle-treated MDCKYFP cells; error bars represent SEM between biological triplicates. (C) 10 nM STA-9090 does not induce a compensatory heat shock response (representative blot shown; N\u00a0=\u00a03). Figure 1\u2014figure supplement 1. Validation of chemical biology tools used to perturb proteostasis. Figure 1\u2014figure supplement 2. Heat shock protein transcript expression during influenza infection in modulated proteostasis environments.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28652/elife-28652-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Resazurin assay shows that cells treated with small molecules (TMP for cHSF1 and YFP activation; STA-9090 for Hsp90 inhibition) have similar metabolic activity over the course of 72 and 48 hr, respectively, corresponding to the duration of pretreatment and mock-infection. The Y-axis represents the fold-change in fluorescence units relative to vehicle-treated cells; error bars represent SEM between biological triplicates. (B) Chaperone transcript levels in MDCKHSF1 cells (\u2013/+10 \u03bcM TMP), relative to vehicle-treated MDCKYFP cells. A typical stress-induced heat shock response is illustrated upon treatment with 100 \u03bcM arsenite. The average of biological triplicates is plotted with error bars representing 95% confidence intervals. (C) Chaperone protein levels in HSF1-activated (+10 \u03bcM TMP) MDCKHSF1 cells, relative to vehicle-treated MDCKHSF1 cells. The average of biological triplicates is plotted with error bars representing SEM. (D) Cellular thermal shift assay demonstrates STA-9090-mediated Hsp90 stabilization. MDCKHSF1 cells were treated with 0.01% DMSO or 10 nM STA-9090 for 4 hr prior to heating. Error bars represent SEM between three biological replicates.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/28652/elife-28652-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Infections were performed at an MOI of 1 virion/cell; RNA was harvested 8 hr post-infection. 100 \u03bcM arsenite was used to induce the heat shock response as a positive control. A transcript encoding the influenza matrix,\u00a0M, segment was used as a positive control for productive infection; copy number was determined by absolute qPCR. The average of biological triplicates is plotted with error bars representing 95% confidence intervals.\n\nA second approach to create an altered folding environment is to inhibit individual chaperones. Here, we employed the Hsp90 inhibitor STA-9090, a small molecule capable of targeting multiple Hsp90 isoforms (Ying et al., 2012). Notably, Hsp90 inhibition using high concentrations of STA-9090 can cause an undesirable compensatory heat shock response (Moore et al., 2016), resulting in activation of HSF1 and upregulation of Hsp70, Hsp40, and other HSF1 targets.\u00a0Such compensatory HSF1 activation would convolute interpretation of our results. Thus, we treated with the highest possible STA-9090 concentration that does not induce a compensatory heat shock response in MDCK cells. We selected the concentration used via a functional assay for all experiments, examining Hsp70 protein levels by immunoblotting to ensure the absence of any heat shock response signature (Figure 1C). To confirm that we are still engaging Hsp90 at the low STA-9090 concentration used in our serial passaging experiments, we performed a cellular thermal shift assay (Martinez Molina et al., 2013) and observed a small but highly reproducible increase in Hsp90 thermal stability upon STA-9090 treatment (Figure 1\u2014figure supplement 1D).\n\nBecause Hsp90 inhibition can be employed in our MDCKHSF1 cell line, these methods access three distinctive host proteostasis environments in a single cell line dependent only on small molecule treatment. The use of just a single cell line for experiments (MDCKHSF1) and for controls (MDCKYFP) minimizes any possible cell line-dependent bias in our evolution experiments. Importantly, monitoring chaperone levels in the context of influenza A/Wuhan/1995 (H3N2) infection shows that, under our infection conditions, influenza itself neither induces heat shock protein transcripts nor interferes with our method to activate HSF1. Thus, we have full user control of the host proteostasis environment during a progressing infection (Figure 1\u2014figure supplement 2).\n\nTo further characterize these perturbed host environments, we performed RNA-Seq for each treatment in the MDCKHSF1 and MDCKYFP cell lines. We observed a total of only 118 transcripts whose expression is altered\u00a0\u22652 fold with a p-value\u00a0<10\u20135 in any one or more of the treatments employed, indicating that we are remodeling only a small portion of the transcriptome (comprehensive quality control and RNA-Seq results are provided in Figure 2\u2014source data 1\u20132). A heat map for these 118 genes highlights that two distinctive cellular environments are indeed created by HSF1 activation and Hsp90 inhibition in MDCKHSF1 cells (Figure 2A). Moreover, only two transcripts meet these cutoffs upon TMP treatment in MDCKYFP cells, confirming that the remodeled proteostasis environment upon TMP treatment of MDCKHSF1 cells is specifically due to HSF1 activation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/28652/elife-28652-fig2-v1.jpg)\n\n**Figure 2.:** (A) Differential expression analysis of MDCKHSF1 cells treated for 24 hr with 10 \u03bcM TMP (+HSF1) or 10 nM STA-9090 (+Hsp90 inhibitor) and MDCKYFP cells treated for 24 hr with 10 \u03bcM TMP (+YFP), normalized to vehicle treatment in the corresponding cell line. Transcripts displaying\u00a0\u22652 fold changes in expression with p-values\u00a0<10\u20135 for any of the treatments are included in the heat map (118 transcripts total). (B) Volcano plots showing the global distribution of expressed transcripts upon HSF1 activation or Hsp90 inhibition as in Figure 2A. Transcripts displaying\u00a0\u22652 fold changes in expression with p-values\u00a0<10\u20135 are shaded red. Outliers and transcripts encoding proteostasis network components, stress response genes, and transcription factor modulators are labeled. *=unannotated canine genes homologous to the indicated gene across multiple species; **=unannotated canine genes that fell within the indicated paralog gene family with partial homology. (C) Heat map showing the differential expression of heat shock response and unfolded protein response gene transcripts upon HSF1 activation or Hsp90 inhibition as in Figure 2A. Figure 2\u2014source data 1. RNA-Seq characterization of MDCKHSF1 and MDCKYFP cells: quality control metrics. Figure 2\u2014source data 2. RNA-Seq characterization of MDCKHSF1 and MDCKYFP cells: differential transcript expression. Figure 2\u2014source data 3. RNA-Seq characterization of MDCKHSF1 and MDCKYFP cells: list of all transcripts displaying\u00a0\u22652 fold changes in expression with p-values\u00a0<10\u20135 for each treatment.\n\nThe volcano plots in Figure 2B show the distribution of differentially expressed genes for HSF1 activation and Hsp90 inhibition in MDCKHSF1 cells, relative to the basal environment, with selected transcripts labeled (for a list of all transcripts meeting these thresholds see Figure 2\u2014source data 3). As expected, stress-independent HSF1 activation upregulates numerous classic heat shock response genes (Ryno et al., 2014), including HSP70, BAG3, HSP90AA1, DNAJB1, and FKBP4 (Figure 2B). This remodeling of the cellular proteostasis network is limited to nuclear and cytosolic proteostasis mechanisms, as ER proteostasis network components are not induced by TMP treatment of the MDCKHSF1 cells (Figure 2C). Moreover, transcript-level proteostasis network remodeling is not observed upon STA-9090 treatment, with the exception of a 2.2-fold induction of HSPB1, as expected given the low concentration of inhibitor employed. We observe modest upregulation of several transcripts involved in transcription factor regulation and DNA damage upon HSF1 activation, such as CAMK1, RELB, and PARP3, consistent with the intimate role of HSF1 in cytoprotection (Morimoto and Santoro, 1998). STA-9090 slightly upregulates several interferon response-related transcripts, including OAS2 and MX2 (2.9 and 2.2 fold-change, respectively), a phenomenon that has been previously reported upon treatment with other Hsp90 inhibitors (Yang et al., 2006; Donz\u00e9 et al., 2001; Shang and Tomasi, 2006). In summary, our RNA-Seq data are fully consistent with the chemically-controlled creation of three unique host cell proteostasis environments in MDCKHSF1 cells.\n\n### Serial passaging to emulate influenza evolution\n\nWe next serially passaged influenza A/Wuhan/1995 in our three distinctive, small molecule-controlled host environments to test the hypothesis that host proteostasis impacts influenza evolution. Prior to each infection, we split a population of MDCKHSF1 cells and treated with TMP to activate HSF1, STA-9090 to inhibit Hsp90, or vehicle (Figure 3A). We infected at a low multiplicity of infection (MOI), ranging from 0.001 to 0.04 infectious virions/cell, to minimize non-viable variants hitchhiking with functional variants owing to co-infection of a single cell (Figure 3\u2014figure supplement 1A). We performed 23 serial passages in biological triplicate in each proteostasis environment. We also performed identical passaging experiments\u00a0\u00b1\u00a0TMP in our MDCKYFP cells to control for any possible off-target effects of TMP treatment or expression of a DHFR-fusion protein in our evolution experiments (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/28652/elife-28652-fig3-v1.jpg)\n\n**Figure 3.:** (A) Serial passaging workflow in modified proteostasis environments in MDCKHSF1 cells. (B) Serial passaging workflow in control MDCKYFP cells. (C) Hemagglutination titers at intermittent passages for each folding environment; error bars represent SEM for biological triplicates. (D) Dn/Ds ratios for each viral population, normalized to the ratio of non-synonymous sites to synonymous sites in the influenza genome (3.5). Figure 3\u2014figure supplement 1. Multiplicity of infection and hemagglutination titers during serial passaging.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28652/elife-28652-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Multiplicity of infection at intermittent passages during serial passaging, determined via a TCID50 assay. (B) Hemagglutination titers for each passage of serial passaging. Error bars represent SEM between biological triplicates.\n\nFollowing each passage, clarified viral supernatant was harvested for hemagglutination titering and subsequent infection to initiate the next passage (Figure 3C, Figure 3\u2014figure supplement 1B). Importantly, infectious titering at intermittent passages confirmed that the MOI did not vary systematically between the three distinctive proteostasis environments (Figure 3\u2014figure supplement 1A). Thus, differences observed in evolutionary trajectories cannot be attributed to either systematically altered rates of viral growth in the three different host proteostasis environments studied here or to gross differences in cell health.\n\nNext, we sought to evaluate whether our serial passaging strategy provides a valid platform for modeling influenza evolution. In the absence of a strong exogenous selection pressure, such as an antiviral drug or antibody, we would predict that the influenza genome experiences purifying selection, meaning that most amino acid substitutions result in reduced fitness relative to the wild-type consensus sequence. We assessed the extent of purifying selection by determining the ratio of non-synonymous to synonymous substitutions at each passage, normalized to the ratio of non-synonymous sites to synonymous sites in the influenza genome (3.5: 1), defined as Dn/Ds. As expected, non-synonymous mutations are selected against in all folding environments, as indicated by a Dn/Ds\u00a0<\u00a01 throughout our serial passaging (Figure 3D) (Breen et al., 2012).\n\n### Nature of selection pressure differs in modified proteostasis environments\n\nTo comparatively evaluate the selection pressure placed on influenza by our three distinctive host proteostasis environments, we constructed variant frequency distributions (site frequency spectra; SFS) for each viral population (Nielsen, 2005). In the SFS (Figure 4A\u2013B), we separate mutations present above our sequencing error threshold (1.5%) in a given viral population into either non-synonymous or synonymous groups. The bars in the SFS charts represent the portion of variants in a viral population that fall within a given frequency bin, averaged across biological triplicates. As expected, the resulting SFS for non-synonymous mutations (Figure 4A) show that early passages consist entirely of low frequency variants. As the passaging experiment progresses, the high mutation rate of influenza maintains a substantial population of low frequency variants. However, the proportion of low frequency variants in the viral population decreases as selected mutations increase in frequency and become fixed. This phenomenon is highlighted in later passages as variants begin to occupy high frequency bins and a bimodal, U-shaped distribution emerges.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/28652/elife-28652-fig4-v1.jpg)\n\n**Figure 4.:** Average between biological triplicates is plotted; error bars represent SEM. The Mann-Whitney test was used to compare the distributions of the SFS and assess statistical significance of these differences; resulting p-values are shown for passage 11 SFS. Figure 4\u2014figure supplement 1. Trajectories for non-synonymous and synonymous mutations that increase in frequency during serial passaging. Figure 4\u2014source data 1. List of ten highest % frequency non-synonymous mutations for each proteostasis environment and passage. Figure 4\u2014source data 2. List of ten highest % frequency synonymous mutations for each proteostasis environment and passage.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28652/elife-28652-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Trajectories are grouped by biological replicate and color-coded by gene segment.\n\nThe time resolution afforded by our serial passaging and sequencing strategy provides the opportunity to assess the strength of selection pressure on the influenza genome. Non-synonymous mutations fix latest in the Hsp90-inhibited environment and earliest in the HSF1-activated environment (Figure 4A; outlined in green). For instance, in the Hsp90-inhibited environment, no mutations have exceeded 60% frequency by passage 9 or 80% frequency by passage 11. In contrast, in the HSF1-activated environment, mutations exceed 80% frequency as early as passage 9 and become fixed (>90%) by passage 11. The basal environment lies between these two extremes, with mutations exceeding only 70% frequency by passage 9 and with no mutations yet being fixed at passage 11.\n\nAs mutations in each environment increase in frequency, all the distributions achieve similar U-shaped, bimodal distributions by passage 23. For the basal and HSF1-activated environments, the distributions become U-shaped by passage 11, whereas for the Hsp90-inhibited environment, this distribution emerges only after passage 19. To assess the significance of these differences in the shape of the SFS, we applied the Mann-Whitney test, which is a statistical test for comparing two distributions (Mann and Whitney, 1947). Indeed, by passage 11, the first passage at which we observe fixed mutations in any environment, the shape of the non-synonymous SFS for influenza evolved in the Hsp90-inhibited environment is significantly different from that of influenza evolved in the basal and HSF1-activated environments (Figure 4A). This reduced rate of adaptation in Hsp90-inhibited versus basal and HSF1-activated environments is also evident from plotting individual mutation trajectories (Figure 4\u2014figure supplement 1), revealing specific mutations that increase in frequency more gradually when Hsp90 is inhibited. In contrast, the overall shapes of the basal and HSF1-activated SFS are not significantly different.\n\nAs an internal control, we also examined the SFS and mutation trajectories for synonymous variants (Figure 4B). We find that synonymous mutations for each environment have similar SFS within each passage, and that the Mann-Whitney test cannot distinguish between the synonymous SFS in different proteostasis environments at any stage of the serial passaging experiment (Figure 4B). Moreover, unlike non-synonymous mutations (see below and also see Figure 4\u2014source data 1), specific synonymous mutations do not fix reproducibly in one particular environment (Figure 4\u2014source data 2). This observation is consistent with our expectation that, although the influenza genome does undergo selection at the RNA level (Air et al., 1990), the host proteostasis-based perturbations of HSF1 activation and Hsp90 inhibition should primarily affect influenza evolution by modulating protein-level folding/function. The similar SFS for synonymous mutations also confirm that differences between folding environments for non-synonymous mutations cannot be attributed to altered viral growth rates.\n\nTaken together, these observations draw an intriguing picture of the impact of host proteostasis on viral evolution. On the one hand, there is little effect on strongly deleterious mutations, as illustrated by the similar Dn/Ds ratios across environments (Figure 3D). On the other hand, the rate of adaptation by accumulation of advantageous mutations is significantly reduced in the Hsp90-inhibited environment, as compared to the basal and HSF1-activated environments. This signature of altered selection pressure in distinctive host proteostasis environments highlights the importance of this under-appreciated factor impacting viral evolution.\n\n### Influenza protein mutational landscapes are modulated by host proteostasis\n\nThe data in Figure 4 show that the host proteostasis environment is a determinant of the nature of selection pressure placed on the influenza genome. Next, we examined how the mutational landscapes of individual influenza proteins are influenced by these same environments. We anticipated perturbations of HSF1- and Hsp90-mediated proteostasis mechanisms might affect the mutational landscape of polymerase subunits, as their interactions with cytosolic chaperones are well-established (Momose et al., 2002; Naito et al., 2007; Chase et al., 2008). Moreover, our sequencing coverage of the polymerase subunits PA and PB1 was sufficient to rigorously analyze the distribution of mutations in those two genes. We aligned all non-synonymous variants present in passage 23 to the secondary structure, the amino acid relative surface accessibility, and the amino acid conservation score (or site entropy; Figure 5A\u2013B). Using this analysis, we identified regions of PA and PB1 (outlined in Figure 5A\u2013B) with a high density of non-synonymous, but not synonymous, mutations with frequencies above our sequencing error threshold (1.5%). We termed these regions mutational hotspots.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/28652/elife-28652-fig5-v1.jpg)\n\n**Figure 5.:** Aligned variants were observed in any of three biological replicates. (A) Alignment of PA variants to secondary structure, relative surface accessibility, and site entropy. Residues 560\u2013660 are shown, highlighting a mutational hotspot that occurs in all proteostasis environments outlined in red. (B) Alignment of PB1 variants to secondary structure, relative surface accessibility, and site entropy. Residues 1\u2013100 are shown, highlighting a mutational hotspot observed only when HSF1 is activated outlined in purple. (C) Mutational hotspots mapped onto the PA-PB1 complex crystal structure (PDBID 4WSB) (Reich et al., 2014). PA hotspot is shaded red; PB1 hotspot is shaded purple. (D) List of amino acid substitutions likely to affect PA-PB1 binding that appear in the HSF1-activated and/or Hsp90-inhibited environments. (E) Binding free energy* of the PAC\u2013PB1N complex (kcal/mol; calculated as the contribution (PAC\u2013PB1N complex) \u2013 contribution (PAC) \u2013 contribution (PB1N)). Binding free energies shown for simulations with wild-type and mutant subunits; reported error is SEM. *Excludes contribution from solute configuration entropy. Figure 5\u2014source data 1. Energy contributions from molecular dynamics simulations.\n\nMost mutational hotspots appear in all host environments, indicating sites under strong positive selection in this experimental setting and/or suggesting inherent mutational tolerance of those protein regions that is independent of host proteostasis. For example, in polymerase PA, residues 590\u2013640 comprise a mutational hotspot present in every host environment (Figure 5A). The region is surface-exposed prior to polymerase complex assembly (Figure 5A, relative surface accessibility; RSA) and the mutations largely occur at sites known to be hypervariable (Figure 5A, site entropy; SE) (Pei and Grishin, 2001; Bao et al., 2008). In contrast, certain other mutational hotspots are specific to or absent from one or more host proteostasis environments. For example, we observe eight mutations in the N-terminal 100 residues of PB1 in the HSF1-activated environment, two mutations in the baseline environment, and only one mutation in the Hsp90-inhibited environment (Figure 5B).\n\nThe identification of mutational hotspots in the N-terminal domain of PB1 and residues 590\u2013640 of PA is interesting, as their interaction is required for assembly of the mature polymerase complex (Figure 5C) (Reich et al., 2014; Perez and Donis, 2001; Obayashi et al., 2008). In particular, residues 9\u201313 of PB1 span the loop portion of a helix-loop-helix motif (Figure 5B, secondary structure; SS) that critically defines the interface (Figure 5C, purple) with PA (Figure 5C, red) (Reich et al., 2014; Perez and Donis, 2001; Obayashi et al., 2008). Our observation that amino acid substitutions in PA at the interface are tolerated in all host environments while substitutions in PB1 at the interface are tolerated only when HSF1 is activated (Figure 5A\u2013B) prompted us to further investigate the consequences of these amino acid substitutions. First, we selected mutations that alter amino acid residues known to make direct contacts at the PA\u2013PB1 interface (Liu and Yao, 2010) and that exceed 1.5% frequency (our sequencing error threshold) for at least two passages (Figure 5D). To estimate their effects on PA:PB1 complex stability, we performed molecular dynamics simulations between wild-type and mutant forms of PAC (specifically, a C-terminal PA domain covering residues 257\u2013716) and PB1N (an N-terminal PB1 domain spanning the first 15 residues) (Liu and Yao, 2010). We observed that the PA variants, which occur in both the HSF1-activated and Hsp90-inhibited environments, have slightly less favorable binding energy with wild-type PB1N (Figure 5E). The PB1 variants, which occur exclusively in the HSF1-activated environment, are also destabilizing, with the K11E substitution very strongly destabilizing the complex (Figure 5E).\n\nThese data suggest that, whereas our perturbations of host proteostasis may be necessary to accommodate strongly destabilizing mutations in PB1, they may not be important for moderately destabilizing variants in PA. We note that co-occurrence of certain PA variants (e.g., E629K in PA) can compensate for the strongly destabilizing effects of observed PB1 substitutions (e.g., the combination of E629K in PA and K11E in PB1 results in a stable complex; Figure 5\u2014source data 1). However, the mutation frequencies are not strongly correlated in our data and likely occur in distinctive influenza genomes. Cumulatively, these observations indicate that host proteostasis impacts the fitness of destabilizing amino acid substitutions in influenza proteins in a protein-specific manner.\n\n### Divergent mutational trajectories in HSF1-activated versus Hsp90-inhibited environments\n\nNext, we analyzed the mutational trajectories of variants present at high frequency in our founder virus to identify those with significantly altered fitness between proteostasis environments. Such variants had the opportunity to be selected for or against in all environments and thus are less subject to the stochasticity inherent in a serial passaging-based evolution experiment. As we would expect, some non-synonymous variants (e.g., HA N262K, NS1 F150S, and PB2 F14S) follow similar trajectories regardless of host proteostasis (Figure 4\u2014source data 1). Much more interesting are the HA and PA variants that exhibit divergent trajectories upon serial passaging in distinct folding environments (Figure 6A\u2013B and Figure 4\u2014source data 1). Notably, we do not observe any synonymous variants with consistently divergent trajectories between environments (Figure 4\u2014source data 2) indicating that the divergent PA and HA trajectories are in fact due to selection at the protein level.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/28652/elife-28652-fig6-v1.jpg)\n\n**Figure 6.:** (A) Mutational trajectories of HA variants for each biological replicate in all three proteostasis environments; note that the N144T, V242I, and M246I variants all have identical trajectories. (B) Mutational trajectories of the PA H425Q variant for each biological replicate in all three proteostasis environments. (C) Reverse genetics competition between H452Q and wild-type PA in each proteostasis environment. Average variant allele frequency was normalized to that in the basal proteostasis environment. SEM for biological triplicates is shown. Statistical significance was calculated using a Student\u2019s t-test.\n\nIn HA, three variants (N144T, V242I, and M246I) present at 20% frequency in our founder virus become fixed by passage 19 in all replicates of the HSF1-activated and basal environments, but in only one replicate of the Hsp90-inhibited environment (Figure 6A). Moreover, these variants completely fall out of two replicates of the Hsp90-inhibited environment by passage 9. All three mutations share identical mutational trajectories and V242I and M246I occur together in sequencing reads. Hence, the trajectory of only one variant, N144T, is shown in Figure 6A. The three mutations occur in the globular head domain of HA that binds cellular sialic acid and has inherently high mutational tolerance (Thyagarajan and Bloom, 2014). These mutations may increase the affinity of HA for MDCK sialic acid receptors, but may be less fit when Hsp90 is inhibited. HA folding occurs in the endoplasmic reticulum, which contains an Hsp90 isoform (Grp94) that is also inhibited by STA-9090 (Marzec et al., 2012). In the absence of active Grp94, these HA variants may have compromised folding and/or intracellular trafficking, resulting in diminished fitness relative to wild-type HA regardless of any functional advantage they may confer in other host proteostasis environments.\n\nIn PA, we observed that the H452Q variant is present at 20% frequency in the founder virus and becomes fixed in two replicates of the Hsp90-inhibited environment (Figure 6B). This variant does not become fixed in the basal environment, and is selected against in the HSF1-activated environment. Interestingly, although the H452Q mutation is far from the PA endonuclease site, (Reich et al., 2014) it is known to occur preferentially in reassorted viruses compared to pure strains, which is indicative of a fitness cost (Zeldovich et al., 2015).\n\nTo unequivocally determine the fitness of the H452Q variant relative to wild-type PA in HSF1-activated and Hsp90-inhibited host cells, we performed reverse genetics to enable head-to-head competition of the variants, thereby quantitatively establishing their relative fitness in our three distinct host proteostasis environments. We prepared wild-type and H452Q PA-containing influenza populations that were otherwise genetically identical. Next, we co-infected host cells displaying HSF1-activated, basal, or Hsp90-inhibited folding environments with equivalent amounts of each virus at low MOI and sequenced the resulting populations after the competition to quantify variant fitness relative to wild-type. We found that Hsp90 inhibition does indeed significantly enhance the fitness of the H452Q variant relative to wild-type PA, while HSF1 activation significantly reduces it (Figure 6C). One likely possibility is that Hsp90 delays subunit assembly or directs destabilized PA variants to degradation, as H452Q has a predicted \u0394\u0394G of\u00a0+1.10 kcal/mol relative to wild-type PA (Yin et al., 2007). In either scenario, this observation that the fitness of an otherwise deleterious amino acid substitution in a non-autonomous Hsp90 client can be enhanced by chaperone inhibition but reduced by HSF1 activation is provocative.\n\n## Discussion\n\nConsiderable evidence suggests that autonomous chaperone networks can critically influence the evolution of their endogenous client protein partners (Cowen and Lindquist, 2005; Queitsch et al., 2002; Lachowiec et al., 2015; Sangster et al., 2007, 2008a, 2008b; Rohner et al., 2013; Whitesell et al., 2014; Geiler-Samerotte et al., 2016; Rutherford and Lindquist, 1998; Tokuriki and Tawfik, 2009b). However, prior to this work, the possibility that host chaperones significantly modulate pathogen evolution had not been rigorously investigated. Moreover, in eukaryotic systems, research has focused largely on Hsp90 inhibition. Here, we not only define a new role for host proteostasis in influenza evolution, but we also show that two unique proteostasis perturbations, HSF1 activation and Hsp90 inhibition, have distinctive consequences for client protein evolution. These consequences are revealed at the levels of the whole genome, individual genes, and specific mutations.\n\nAt the whole\u00a0genome-level, our data indicate that non-synonymous mutations are fixed more slowly when Hsp90 is inhibited and more quickly when HSF1 is activated. Moreover, the overall shape of the Hsp90-inhibited passage 11 SFS is significantly different from that observed in the other two environments. Changes in the rate of adaptation could be caused by buffering of mildly deleterious mutations or by potentiation of advantageous variants (Cowen and Lindquist, 2005; Queitsch et al., 2002; Lachowiec et al., 2015; Sangster et al., 2007, 2008a, 2008b; Rohner et al., 2013; Whitesell et al., 2014; Geiler-Samerotte et al., 2016; Rutherford and Lindquist, 1998; Cetinba\u015f and Shakhnovich, 2013). In the case of buffering, the rate of fixation of advantageous variants (driver mutations) would be decreased if the effects of mildly deleterious variants linked with the driver (passenger mutations) are rendered more damaging by Hsp90 inhibition (McFarland et al., 2013, 2014). In the case of potentiation, Hsp90 activity could necessitate emergence of the observed high frequency variants. Alternatively, Hsp90 activity may reduce weakly deleterious effects of driver mutations on their carrier proteins (e.g., disrupted folding caused by an otherwise beneficial mutation), thereby increasing the selective advantage provided by the drivers. Though we cannot yet fully resolve which of these factors, or combinations thereof, are at play here, overall, we observe that host proteostasis indeed modulates the pace of influenza evolution.\n\nAt the level of individual genes, we find that mutational tolerance at the interface of the PA:PB1 influenza polymerase complex, a region essential for polymerase assembly and activity, is impacted by host proteostasis. Interestingly, moderately destabilizing variants in PA are tolerated in all three host proteostasis environments studied. In contrast, amino acid substitutions in the N-terminus of PB1 are observed only when HSF1 is activated. These PB1 variants strongly destabilize the PB1:PA complex and thus may be accessible only in host cells with high chaperone levels. Indeed, polymerase assembly is known to be mediated by cytosolic host chaperones (Naito et al., 2007). These observations indicate that the evolution of the influenza polymerase complex may be modulated by host proteostasis in significant ways.\n\nAt the level of individual mutations, our data demonstrate that host proteostasis impacts the fitness of specific mutations in at least two viral proteins. Intriguingly, the directionality of this effect seems to be specific to a given variant or protein. For example, the apparently destabilizing H452Q PA variant is significantly more fit when Hsp90 is inhibited, but significantly less fit when HSF1 is activated. These results highlight that the impact of proteostasis perturbation on evolution is currently difficult to predict a priori and demands further study, as one might by default assume that chaperone inhibition would enhance the fitness costs of such a mutation. We also identified variants in HA that behave in the opposite manner, displaying apparently enhanced fitness when HSF1 is activated. These divergent effects of host proteostasis on the fitness of individual variants illustrate the complexity of the interactions between viral proteins and host proteostasis mechanisms.\n\nThus, we observe that host proteostasis modulates the nature of selection on the influenza genome, the mutational tolerance of specific influenza proteins, and the trajectories of particular variants. These results are especially compelling because consequences of altered host proteostasis for influenza evolution are emerging in the course of a relatively short-timescale evolution experiment, and without exerting additional selection pressure such as treatment with antiviral drugs. As in previous studies on the role of Hsp90 in the evolution of their endogenous protein clients, our observations may derive from direct interactions between host proteostasis components and influenza proteins, or from indirect consequences of perturbing proteostasis. Untangling these possibilities will require detailed biophysical and mechanistic studies.\n\nRegardless of its precise origin, this role for host proteostasis in modulating both the pace and the directionality of influenza evolution is provocative. Our observations raise a number of intriguing questions for future work. How do host proteostasis mechanisms beyond the heat shock response modulate influenza evolution, and what specific chaperones beyond Hsp90 are involved? Can we quantitatively evaluate the magnitude and ultimately predict the directionality of these effects? Are these effects direct consequences of host chaperones engaging influenza clients? If not, what are the mediators? How does host proteostasis impact the evolution of rapidly evolving viruses beyond just influenza? Do physiological states involving altered or perturbed proteostasis (e.g., fever or host-switching) impact viral evolution? Defining the molecular details of this interplay between host proteostasis and viral evolution will be essential to fully elucidate the factors potentiating and constraining viral evolution. Moreover, such studies may eventually enable design of improved antiviral therapeutics and antibodies that are refractory to the evolution of resistance.\n\n## Materials and methods\n\n### Cell culture\n\nMDCK cells were generously provided by Prof. Jianzhu Chen (MIT), and were originally purchased from American Type Culture Collection (Manassas, VA). The identity of these cells was authenticated by STR\u00a0profiling. MDCK cells were cultured at 37\u00b0C in a 5% CO2 atmosphere in DMEM (CellGro) supplemented with 10% fetal bovine serum (CellGro) and 1% penicillin/streptomycin/glutamine (CellGro). Cells were transduced with lentiviruses encoding either the DHFR.HSF1(\u0394186\u2013202) or DHFR.YFP gene. Heterostable cells expressing the construct of interest were then selected using 4 \u03bcg/mL puromycin. Single colonies were generated by diluting cells to\u00a0~40 cells per 96-well plate, expanding the resulting colonies, and functionally testing by qPCR or fluorescence microscopy in the presence or absence of trimethoprim (TMP; 10 \u03bcM). All cell lines were periodically tested for mycoplasma using the MycoSensor PCR Assay Kit from Agilent (302109).\n\n### Influenza virus\n\nAll experiments were performed with influenza A/Wuhan/1995 (H3N2), which was generously provided by Prof. Jianzhu Chen (MIT).\n\n### Compounds and antibodies\n\nSTA-9090 was purchased from MedChem Express, sodium arsenite 0.1 N standardized solution was purchased from Alfa Aesar, TPCK-trypsin was purchased from Sigma Aldrich, TMP was purchased from Alpha Aesar. Mouse monoclonal anti-\u03b2-actin was obtained from Sigma (A1978). Rabbit polyclonal anti-HSP70/72 and rabbit polyclonal anti-Hsp40 antibodies were obtained from Enzo Life Sciences (ADI-SPA-811-D and ADI-SPA-400D, respectively). The\u00a0rabbit monoclonal anti-HSP90 antibody was obtained from Cell Signaling Technologies (C45G5).\n\n### Immunoblotting\n\nMDCKHSF1 cells were seeded at 200,000 cells/well in a 6-well plate and treated with 0.01% DMSO, 10 \u03bcM TMP, or 10 and 25 nM STA-9090 for 48 hr prior to harvesting cell lysates. 100 \u03bcg of protein lysate was separated on a 12% SDS-PAGE polyacrylamide gel, followed by transfer to a nitrocellulose membrane. Hsp70, Hsp40, Hsp90, and actin protein levels were determined using the antibodies described above. Membranes were incubated with 680 or 800 nm fluorophore-labeled secondary antibodies (LI-COR Biosciences,\u00a0Lincoln,\u00a0NE) prior to detection using a LI-COR Biosciences Odyssey Imager. Band intensity quantification was performed using Image J.\n\n### qPCR\n\nMDCKHSF1 cells were seeded at 100,000 cells/well in a 12-well plate and treated with 0.01% DMSO, 10 \u03bcM TMP, or 10 nM STA-9090 for 24 hr. MDCKYFP cells were treated with 0.01% DMSO or 10 \u03bcM TMP for 24 hr, or 100 \u03bcM arsenite for 2 hr as a positive control for heat shock response activation. To monitor chaperone levels during influenza infection, MDCKHSF1 cells were infected with influenza A/Wuhan/1995 at an MOI of 1 for 8 hr to properly mimic the actual environment of a cell infected with a single influenza virion as in our serial passaging experiment. Cellular RNA was harvested using the Omega RNA Extraction kit with Homogenizer Columns. 1 \u03bcg RNA was used to prepare cDNA using random primers (total reaction volume\u00a0=\u00a020 \u03bcL; Applied Biosystems High-Capacity Reverse Transcription kit). The reverse transcription reaction was diluted to 80 \u03bcL with water, and 2 \u03bcL of each sample was used for qPCR with 2\u00a0\u00d7\u00a0Sybr Green (Roche) and primers for canis RPLP2 (housekeeping gene), Hsp70, Hsp40, Hsp90, and influenza Matrix (Supplementary file 1). Hsp transcript levels were normalized to RPLP2. For qPCR of influenza-infected cells, a standard curve was prepared with a pDZ plasmid backbone containing the Influenza PR8 M segment to determine influenza Matrix copy number, which was used as a positive control for productive infection.\n\n### RNA-Seq\n\nFor the MDCKHSF1 cell line characterization (Figure 2), MDCKHSF1 cells were seeded at 100,000 cells/well in a 12-well plate and treated with 0.01% DMSO, 10 \u03bcM TMP, or 10 nM STA-9090 for 24 hr. MDCKYFP cells were treated with 0.01% DMSO or 10 \u03bcM TMP. Each treatment was done in biological triplicate. Cellular RNA was harvested using the Qiagen RNeasy Plus Mini Kit with QIAshredder homogenization columns. RNA-Seq libraries were prepared using the Illumina NeoPrep system and were sequenced on an Illumina HiSeq SE40.\n\n### RNA-Seq analysis\n\nQuality control: Reads were aligned against canFam3 (Sept. 2011) using bwa mem v. 0.7.12-r1039\u00a0[RRID:SCR_010910] with flags \u2013t 16 \u2013f.\u00a0Mapping rates, fraction of multiply-mapping reads, number of unique 20-mers at the 5\u2019 end of the reads, insert size distributions and fraction of ribosomal RNAs were calculated using dedicated perl scripts and bedtools v. 2.25.0\u00a0[RRID:SCR_006646]\u00a0(Quinlan and Hall, 2010;\u00a0Huang et al., 2009). In addition, each resulting bam file was randomly down-sampled to a million reads, which were aligned against canFam3 and read density across genomic features were estimated for RNA-Seq-specific quality control metrics (Figure 2\u2014source data 1).\n\nRNA-Seq mapping and quantitation: Reads were aligned against canFam3/ENSEMBL 86 (Aken et al., 2017) annotation using STAR v. 2.5.3a with the following flags -runThreadN 8 --runMode alignReads --outFilterType BySJout --outFilterMultimapNmax 20 --alignSJoverhangMin 8 --alignSJDBoverhangMin 1 --outFilterMismatchNmax 999 --alignIntronMin 10 --alignIntronMax 1000000 --alignMatesGapMax 1000000 --outSAMtype BAM SortedByCoordinate --quantMode TranscriptomeSAM with --genomeDir pointing to a 75nt-junction canFam3 STAR suffix array (Dobin et al., 2013). Gene expression was quantitated using RSEM v. 1.3.0 [RRID:SCR_013027]\u00a0with the following flags for all libraries: rsem-calculate-expression --calc-pme --alignments -p 8 --forward-prob 0 against an annotation matching the STAR SA reference (Li and Dewey, 2011). Posterior mean estimates (pme) of counts and estimated RPKM were retrieved.\n\nDifferential expression analysis: Treatments were compared against DMSO for MDCKHSF1 and MDCKYFP cell lines independently. Briefly, differential expression analysis\u00a0was performed in the R statistical environment (R v. 3.2.3) using Bioconductor\u2019s DESeq 2 package on the protein-coding genes only [RRID:SCR_000154]\u00a0(Love et al., 2014). Dataset parameters were estimated using the estimateSizeFactors(), and estimateDispersions() functions; read counts across conditions were modeled based on a negative binomial distribution and a Wald test was used to test for differential expression (nbinomWaldtest(), all packaged into the DESeq() function), using the treatment type as a contrast. Fold-changes, p-values and Benjamin-Hochberg-adjusted p-values (BH) were reported for each protein-coding gene (Figure 2\u2014source data 2). Transcripts changing\u00a0\u22652 fold with a p-value<10\u20135 are included in Figure 2\u2014source data 3. For the annotation of these transcripts, the reference gene annotation was canFam3/ENSEMBL 86\u00a0[RRID:SCR_002344]. Canine genes lacking an official gene symbol were manually annotated by individual inspection of the orthology tracks in the UCSC genome browser and reviewing the orthology and paralogy evidence in the ENSEMBL database (release 89). Presumed genes/gene families were assigned based on the depth of gene model conservation across species and orthologs and paralogs assigned by ENSEMBL. If transcripts not identified in the reference annotation displayed very strong homology across multiple species, transcripts were annotated with a single asterisk \u2018*' or termed \u2018gene, by homology\u2019 in Figure 2B and Figure 2\u2014source data 3, respectively. Alternatively, if transcripts not identified in the reference annotation fell within paralog gene families with partial homology they were annotated with a double asterisk \u2018**' or termed \u2018gene-like\u2019 in Figure 2B and Figure 2\u2014source data 3, respectively.\n\n### Cellular thermal shift assay (CETSA)\n\nFor each biological replicate, MDCKHSF1 cells were seeded at 3,000,000 cells/plate in 15 cm plates and treated with 0.01% DMSO or 10 nM STA-9090 for 4 hr .\u00a0After drug treatment, cells were harvested by trypsinizing, washed twice with PBS, and resuspended in PBS (with DMSO or STA-9090) at a concentration of 20,000,000 cells/mL. This cell suspension was heated in a thermocycler at a temperature gradient (100 \u03bcL per temperature per treatment condition) for 3 min, followed by 3 min at room temperature\u00a0(Martinez Molina et al., 2013). Samples were then lysed in a modified RIPA buffer without SDS. Lysate was then separated by centrifugation and run (in technical triplicate) on an SDS-PAGE gel in reducing loading buffer. Protein\u00a0bands\u00a0were transferred to a nitrocellulose membrane, which was probed with an Hsp90 primary antibody (C45G5). Membranes were incubated with 800 nm fluorophore-labeled secondary antibodies (LI-COR Biosciences) prior to detection using a LI-COR Biosciences Odyssey Imager. Band intensity quantification was performed using Image J, and the\u00a0signal\u00a0was normalized to the band intensity at 37\u00b0C. Technical replicates were averaged within each biological replicate; biological triplicates were then averaged, with the SEM propagated.\n\n### Serial passaging and hemagglutination-based titering\n\nSerial passaging experiments were performed on a 12-well scale in biological triplicate, at 100,000 cells/well and an MOI of 0.002 virions/cell, as estimated\u00a0by hemagglutination\u00a0titering. Cells were pre-treated with TMP or DMSO for 24 hr or with STA-9090 for 90 min prior to influenza infection to establish altered proteostasis environments. All infections were performed in DMEM supplemented with penicillin-streptomycin, glutamine, 1 \u03bcg/mL TPCK-trypsin, and the relevant small molecules for modulating proteostasis capacity. Infections were allowed to proceed for 48 hr, after which the viral supernatant was harvested, cleared of cellular debris by centrifugation, and titered using a hemagglutination assay (Eisfeld et al., 2014). Viral supernatant was diluted 2-fold across round-bottom 96-well plates with PBS and incubated with human red blood cells (3.92\u00a0\u00d7\u00a0107 RBC/mL; Innovative Research) for 30\u2013120 min. Wells displaying agglutination were marked influenza-positive, and the titer was determined based on the lowest dilution that was still influenza-positive. Influenza was serially passaged in both the MDCKHSF1 and MDCKYFP cell lines in biological triplicate for each treatment condition (0.01% DMSO, 10 \u03bcM TMP, and 10 nM STA-9090) for 23 passages. Titering was performed in technical duplicate for each biological replicate, with minimal variation observed between technical replicates.\n\n### Infectious viral titering via tissue culture infectious dose (TCID50) assay\n\nWe employed a TCID50 assay based on that described by Thyagarajan and Bloom (Thyagarajan and Bloom, 2014). Briefly, eight 10-fold dilutions of each virus were prepared in quadruplicate in 96-well plates. 5,000 MDCKHSF1 cells were then added to each well and incubated at 37\u00b0C for 72 hr, after which the wells were scored for the presence of cytopathic effect. The dilutions of virus displaying cytopathic effect in the MDCKHSF1 cells were then used to calculate the TCID50/\u03bcL using https://github.com/jbloomlab/reedmuenchcalculator as described by Thyagarajan and Bloom, (Thyagarajan and Bloom, 2014) where virions/\u03bcL\u00a0=\u00a00.69*TCID50/\u03bcL.\n\n### Reverse genetics\n\nThe H452Q PA variant was introduced by site directed mutagenesis on a wild-type PA pHW2000 reverse genetics plasmid for the influenza A/Wuhan/1995 H3N2 strain (generous gift from Prof. Hui-Ling Yen at Hong Kong University) (Cheung et al., 2014). The corresponding mutant and wild-type viruses were made by co-transfection on a co-culture of MDCK and HEK 293T cells, previously described by Hoffman et al (Hoffmann et al., 2000). Viruses were titered using a TCID50 assay (Thyagarajan and Bloom, 2014) to perform competition experiments starting with approximately the same amount of wild-type and mutant virus. Competitions were performed under conditions identical to that of the serial passaging experiments, in biological triplicate. RNA from the P0 and P1 viral supernatant was harvested and prepared for sequencing, as described below.\n\n### Deep sequencing\n\nRNA was extracted from 140 \u03bcL influenza supernatant from passages P0, P2, P9, P11, P19 and P23 using the Qiagen RNA Mini Kit and eluted in 40 \u03bcL molecular biology grade H2O. dsDNA was made from 2.5 \u03bcL template RNA using universal influenza primers as previously described, (Zhou et al., 2009) except that the small segments were amplified separately from the polymerase segments and pooled following PCR. The amplicons were separated on a 0.8% agarose analytical gel to verify the presence of each influenza genomic segment (8 total). 1 ng of each sample was prepared using the Illumina NexteraXT Sample Preparation kit, omitting the bead normalization step. The concentration of dsDNA in each sample was quantified by Qubit; samples were pooled in sets of 24 and sequenced on an Illumina MiSeq 300v2 cartridge to obtain 2\u00a0\u00d7\u00a0150 base pair paired-end reads. RNA from the reverse genetics competition experiments was sequenced using the same protocol, except primers that specifically amplified\u00a0~900 bp of the PA gene spanning the mutation site were used for PCR (Supplementary file 1).\n\n### Sequencing data analysis\n\nSequencing reads were aligned against the influenza\u00a0A/Wuhan/1995 complete CDS sequence, or the influenza\u00a0A/Wuhan/1995 PA sequence (for reverse genetics sequencing), using bwa mem 0.7.10-r789\u00a0[RRID:SCR_010910]. Allele pileups were generated using samtools v.0.1.19 mpileup\u00a0[RRID:SCR_002105] with flags -d 10000000 --excl-flags 2052, and allele counts/frequencies were extracted (Li, 2011; Li et al., 2009). Only positions with greater than 600-fold coverage in all replicates of each sample were included in the analysis. Variant alleles present at greater than 1.5% frequency are included in the site frequency spectra (Figure 4), protein alignment (Figure 5), and mutational trajectories (Figure 6) analyses. This frequency threshold is the lowest mutation frequency at which a mutation can be reliably detected in a sample that is sequenced in technical duplicate, for our specific sequencing method and instrument. A 600-fold coverage threshold requires that we observe such a mutation a minimum of nine times.\n\nAll trajectories for mutations that increase in frequency during passaging are included in Figure 4\u2014figure supplement 1. Increasing trajectories are those best fitting an increasing exponential model\u00a0$ae^{bx}$, where a\u00a0>\u00a00 and b\u00a0>\u00a00.1. Best fit was determined by comparing least squares regression value. Selected mutations with divergent trajectories between environments are plotted in Figure 6.\n\nSite frequency spectra were generated by binning all mutations meeting our coverage (600-fold) and frequency (>1.5%) thresholds into 10% frequency bins and averaging the portion of mutations within a given frequency bin across biological triplicates. To quantify differences in the passage 11 site frequency spectra, the Mann-Whitney test was performed using Graph Pad Prism software (details in statistics section below).\n\nAlignment analyses were performed by aligning mutations meeting our coverage and frequency thresholds to the corresponding secondary structure and relative surface accessibility using DSSP, (Kabsch and Sander, 1983; Joosten et al., 2011; Bloom, 2014) as well as to the site entropy, which was computed using all full-length protein sequences from the Influenza Virus Resource for all Influenza A PA and PB1 sequences except bat influenza sequences (Pei and Grishin, 2001; Bao et al., 2008; Katoh and Standley, 2013). Observed mutations were also mapped onto the corresponding protein crystal structure (PA-PB1 PBDID 4WSB) (Reich et al., 2014). Mutational hotspots were manually determined as regions with a high density of exclusively non-synonymous mutations.\n\nSequencing reads from reverse genetics competition experiments were aligned to the PA reference sequence to determine %-frequency of mutant and wild-type alleles. The ratio of mutant to wild-type PA was calculated for each replicate of each proteostasis environment; the resulting ratio was normalized to the average ratio of mutant to wild-type PA in the basal proteostasis environment. Ratios were then averaged for each set of biological replicates and plotted as a bar chart with SEM. An unpaired t-test was used to assess statistical significance between host environments. Mutant protein stability predictions were made using Eris, (Yin et al., 2007) employing the fixed backbone setting.\n\n### Statistics\n\nAll experiments were performed in at least biological triplicate, which we define as replicates that are independent for the entirety of the experiment (i.e., from plating the cells, to treating the cells, to acquiring the data). To quantify differences in the passage 11 site frequency spectra (Figure 4), the Mann-Whitney test was performed using Graph Pad Prism software (nonparametric, one-tailed). This test was performed on the passage 11 site frequency spectra because this is the first passage at which we observe fixed mutations in any environment. A one-tailed test was used as we expect mutation frequency spectra to shift in a one-directional manner as mutations become fixed and the distribution becomes U-shaped. All mutation frequencies observed in the two distributions (where each distribution represents three biological triplicate data sets) to be compared were ranked. Each set of ranks was then compared to determine if the distributions are significantly different. The Mann-Whitney (Mann and Whitney, 1947) U values were: 2109 (HSF1 (N\u00a0=\u00a073; median\u00a0=\u00a04.92) vs. Hsp90-inhibited (N\u00a0=\u00a071; median\u00a0=\u00a03.472) non-synonymous), 661 (HSF1 (N\u00a0=\u00a041; median\u00a0=\u00a04.01) vs. Hsp90-inhibited (N\u00a0=\u00a034; median\u00a0=\u00a03.212) synonymous), 2340 (basal (N\u00a0=\u00a079; median\u00a0=\u00a04.787) vs. Hsp90-inhibited (N\u00a0=\u00a071; median\u00a0=\u00a03.472) non-synonymous), 776 (basal (N\u00a0=\u00a048; median\u00a0=\u00a03.934) vs. Hsp90-inhibited (N\u00a0=\u00a034; median\u00a0=\u00a03.212) synonymous), 2819 (HSF1 (N\u00a0=\u00a073; median\u00a0=\u00a04.92) vs. basal (N\u00a0=\u00a079; median\u00a0=\u00a04.787) non-synonymous), 970 (HSF1 (N\u00a0=\u00a041; median\u00a0=\u00a04.01) vs. basal (N\u00a0=\u00a048; median\u00a0=\u00a03.934) synonymous). To assess statistical significance for the reverse genetics competition experiment (Figure 6C), an unpaired t-test was performed between each set of conditions, each with three biological replicate data sets (basal vs. HSF1: p-value\u00a0=0.0019; t\u00a0=\u00a04.192; df\u00a0=\u00a010; basal vs. Hsp90-inhibited: p-value\u00a0=0.0091; t\u00a0=\u00a03.224; df\u00a0=\u00a010; HSF1 vs. Hsp90-inhibited: p-value\u00a0<0.0001; t\u00a0=\u00a012.45; df\u00a0=\u00a010). To assess statistical significance for the CETSA (Figure 1\u2014figure supplement 1D), the vehicle and STA-9090 conditions were compared across biological triplicates (technical triplicates for each biological triplicate) by an F-test (p-value\u00a0<0.0001, F(DFn, DFd)=16.48(1,194)).\n\n### Molecular dynamics simulations\n\nThe wild type PAC\u2013PB1N complex was taken from the crystal structure with PDBID 2ZNL (Obayashi et al., 2008). PAC is the C-terminal PA domain (residues 257\u2013716), and PB1N is the N-terminal domain (residues 1\u201315) of PB1. In 2ZNL there are some missing residues (residues 349\u2013353; 372\u2013397; 550\u2013557), but they were distant from the PAC\u2013PB1N binding site. As all of these missing residues were far from the binding site they were not added back in. Furthermore, as described below, only residues 398\u2013716 of PAC were allowed to move and the rest of PAC was position-restrained throughout the simulations. For each segment of PAC, the termini were far away from the interaction site and thus were left uncapped. The N-terminus of PB1N was also left uncapped; however, the C-terminus of the short 15-residue PB1N was capped with an N-methyl group to remove the artificial negative charge. All mutations of the wild-type complex were made using the Pymol molecular modeling package (DeLano, 2002). All MD simulations were performed using the GROMACS 4.6.7 suite (Hess et al., 2008). All simulations were performed using the AMBER99 force field (Hornak et al., 2006) and TIP3P (Jorgensen et al., 1983) water. Each initial complex structure (wild-type and mutant subunits) was first immersed in a cubic box containing pre-equilibrated water molecules. The dimensions of the water box were 102 \u00c5\u00a0\u00d7109 \u00c5 \u00d7 79 \u00c5. Counter-ions were added as necessary to neutralize the system. The solvated system was then energy-minimized using the steepest descent algorithm for a maximum of 5000 iterations with a force constant of 1000 kJ mol\u20131 nm\u20132 applied to all non-hydrogen atoms. Next, a further energy minimization was performed without any constraints where the steepest descent method switched to conjugate gradient every 500 steps for a maximum of 2500 total steps. The system then underwent a two-stage equilibration process. The first stage of equilibration was a 100 ps NVT (isochoric\u2013isothermal) simulation and consisted of a gentle annealing of the system from 0 to 300 K over the first 50 ps. Throughout the first stage of equilibration, a position restraint was applied to all non-hydrogen atoms with a force constant of 1000 kJ mol\u20131 nm\u20132. The temperature was maintained at 300 K using the V-rescale thermostat (Bussi et al., 2007) with a coupling time constant of 1.0 ps. The complex and solvent molecules were coupled to separate thermostats to avoid the \u2018hot solvent-cold solute\u2019 problem (Cheng and Merz, 1996; Lingenheil et al., 2008). The second stage of equilibration was a 500 ps NPT (isobaric\u2013isothermal) simulation where position restraints were applied to all non-hydrogen atoms of residues 257\u2013348 and 354\u2013371 of PAC, as these residues are far from the PAC\u2013PB1N interaction site. The pressure was regulated using the Berendsen barostat (Berendsen et al., 1984) with a reference pressure of 1 bar and a pressure coupling constant of 2.0 ps. The leapfrog algorithm (Hockney, 1970) with a time step of 2 fs was used for dynamics evolution. All bonds\u00a0involving\u00a0hydrogen were constrained using the LINCS algorithm (Hess et al., 1997). All neighbor searching, electrostatic interactions and van der Waals interactions were truncated at 1.4 nm. Long-range Coulomb interactions were treated using the particle mesh Ewald (PME) summation (Essmann et al., 1995) with a Fourier spacing of 0.12 nm and a PME order of 4. A long-range dispersion correction for energy and pressure was applied to account for the 1.4 nm cut-off of Lennard-Jones interactions (Allen and Tildesley, 1987). All production runs followed the same scheme as the second equilibration stage and were run for 20 ns total.\n\nBinding free energy calculations were performed on the last 10 ns of each production simulation. The last 10 ns of each simulation were stripped of water molecules and counter ions. From these, snapshots were extracted every 10 ps giving 1000 snapshots for the last 10 ns. The binding free energy was calculated as described by Liu\u00a0and\u00a0Yao (Liu and Yao, 2010). Here, the binding free energy was calculated as Htotal, GB = Egas + Gsol,GB, and thus did not contain any contribution from solute configuration entropy. Since our focus here is on the relative order of binding affinities and the complexes have similar binding poses, the solute configuration entropy is thus omitted (Rastelli et al., 2010; Hou et al., 2011a, 2011b; Wang et al., 2001). The GBSA implicit solvent model (Still et al., 1990) was used with a dielectric constant of 80. The OBC(II) (Onufriev et al., 2004) algorithm was used to calculate the Born radii with a frequency of 1 and a cutoff of 1.4 nm. A surface tension of 3.01248 kJ mol\u20131 nm\u20132 was set using the Ace-approximation. Averages and standard error of mean were calculated based on 200 snapshot increments.\n",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "2b33aebe-123f-4663-b08a-8f3d7ef793f9",
+      "submission_id": "8e554d11-8ea7-4f4f-8e5d-0e5bba6a8905",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peter Palese, Mount Sinai Hospital United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.28652.021](https://doi.org/10.7554/eLife.28652.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Host Proteostasis Modulates Influenza Evolution\" for consideration by eLife. Your article has been reviewed by three peer reviewers and the evaluation has been overseen by a Reviewing Editor and Wenhui Li as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nPhillips and colleagues present work demonstrating that unique cellular proteostasis environments dictate the mutational landscape of influenza A virus over serial passage in MDCK cells. The authors utilize a unique chemical/biology approach to either inhibit or activate nodes of the cellular heat shock protein family network (nuclear: HSF1 activation, cytoplasmic: Hsp90 inhibition). Influenza A/Wuhan/95 virus was chosen, and as the virus is shown to have comparable RNA dependent RNA RNA polymerase mutational kinetics to a more pathogenic H5N1 virus, studying proteostasis' role in shaping viral protein adaptation may provide insights on pathogenesis. The study reveals changes to the mutational trajectory and adaptation of influenza virus, which may be dependent on cellular proteostasis involvement\n\nEssential revisions:\n\n1) It is shown that viral infection itself does not activate the HSR. It is also shown that STA treatment does not activate the HSR. However, the authors need to demonstrate that viral infection + STA does not activate the HSR. It is possible that STA treatment sensitizes the cytosolic environment to viral infection, which would lead to increased HSR activation that could complicate the analysis.\n\n2) A major question regarding this manuscript is 'Does HSF1 activation influence viral trajectories\u2019? However, this is not clear despite statements to that effect in the discussion. It isn't clear that the HSF1 activated environment shows significant differences in the data shown in Figure 3A. The stats for the HSP90 inhibited environment are shown, but no stats for the HSF1 activated environment are shown. Similarly, the data shown in Figure 5 do not show the basal environment. This makes it difficult to determine whether effects are coming from increased HSF1 activity or reduced Hsp90 activity. Even if the data are not significant between HSF1 and basal, it is still important to include the stats to help determine where these effects are coming from.\n\n3) The method for determining viral titer is problematic. The authors use a hemagglutination assay, which measures viral particles but not infectious particles. In the event that the acquired mutations changed the ratios of infectious to un-infectious particles, the passaging would have been performed at different multiplicities of infection. This would obviously complicate the interpretation of the results. I would suggest that the authors determine plaque forming units as well as hemagglutinating units across their passages to ensure there was no change.\n\n4) The authors are overexpressing a transcription factor (HSF1) that not only regulates the HSR pathway, but also regulates genes involved in DNA damage repair and metabolism. As such, there are expected transcriptomic changes beyond what is presented in Figure 1\u2014figure supplement 1. The RNAseq results are extremely filtered \u2013 a global analysis needs to be shown, as other changes to the cell upon HSF1 activation may influence the response to influenza and its subsequent mutational adaptation. The same logic can be applied to the authors' Hsp90 inhibition setting, as pre-infection inhibition of a well-known nuclear chaperone likely has manifest consequences on access of transcription or nuclear factors. This setting should not be thought of as \"cytoplasmic,\" but in fact, may have intimate connections to the authors' HSF1 setting. To clarify their system, the authors should display global transcriptomics for both chemical treatment mock (no virus) and chemical treatment infected (+ virus) settings.\n",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c72559e9-5a0c-4c87-8860-5653f9008444",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C1",
+      "claim": "RNA viruses typically have high mutation rates, resulting in frequent production of protein variants with compromised biophysical properties.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA viruses typically have high mutation rates, resulting in frequent production of protein variants with compromised biophysical properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about RNA viruses supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "df3b4488-60f1-444f-80c2-991f52cf4647",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C2",
+      "claim": "Host proteostasis mechanisms are significant determinants of the fitness of viral protein variants, serving as a critical force shaping viral evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that host proteostasis mechanisms may be significant determinants of the fitness of viral protein variants, serving as a critical force shaping viral evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the central hypothesis of the study, tested through experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "44400c42-a238-4ead-b255-b833a1fc9ed7",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C3",
+      "claim": "Both the nature of selection on the influenza genome and the accessibility of specific mutational trajectories are significantly impacted by host proteostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that both the nature of selection on the influenza genome and the accessibility of specific mutational trajectories are significantly impacted by host proteostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from serial passaging experiments and sequencing analysis presented in Figures 3-6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "f2314d4f-3bcc-4fa5-ba30-def2ed5a280d",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C4",
+      "claim": "Most missense mutations have deleterious consequences for protein function, often owing to either thermodynamic or kinetic effects on folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Most missense mutations have deleterious consequences for protein function, often owing to either thermodynamic (reduced stability of the native state or enhanced stability of unfolded/misfolded states) or kinetic (slow folding or enhanced misfolding/aggregation) effects on folding (DePristo et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to DePristo et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "fc47652e-798f-485b-98c9-c58b6bfff03d",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C5",
+      "claim": "The distribution of mutational fitness effects in viruses can be largely accounted for by considering protein folding biophysics.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of viruses, these phenomena may underpin the observation that the distribution of mutational fitness effects can be largely accounted for by considering protein folding biophysics (Wylie and Shakhnovich, 2011; Ch\u00e9ron et al., 2016; Tokuriki and Tawfik, 2009a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Wylie and Shakhnovich, 2011; Ch\u00e9ron et al., 2016; Tokuriki and Tawfik, 2009a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "8f74c30e-7c47-4b29-82ea-76342497fda1",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C6",
+      "claim": "Stable proteins tend to be more evolvable, as any given missense mutation is less likely to severely disrupt protein folding or structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, stable proteins tend to be more evolvable, as any given missense mutation is less likely to severely disrupt protein folding or structure (Bloom et al., 2006; Gong et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bloom et al., 2006; Gong et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "5f39a28a-da6a-480c-aeb3-524446dd6a34",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C7",
+      "claim": "Proteostasis networks are composed of chaperones and quality control factors that work in concert to shepherd nascent proteins to folded, functional conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, protein folding challenges are addressed by proteostasis networks composed of chaperones and quality control factors that work in concert to shepherd nascent proteins to folded, functional conformations (Balch et al., 2008; Hartl et al., 2011; Powers and Balch, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Balch et al., 2008; Hartl et al., 2011; Powers and Balch, 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "50936654-3755-487d-acbc-eeb186ba38a6",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C8",
+      "claim": "Hsp90 chaperone plays a critical role in modulating the evolution of its endogenous clients.",
+      "claim_type": "EXPLICIT",
+      "source": "Important work focused primarily on the Hsp90 chaperone has suggested a critical role for chaperones in modulating the evolution of their endogenous clients, (Cowen and Lindquist, 2005; Queitsch et al., 2002; Lachowiec et al., 2015; Sangster et al., 2007, 2008a, 2008b; Rohner et al., 2013; Whitesell et al., 2014; Geiler-Samerotte et al., 2016; Rutherford and Lindquist, 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work on Hsp90.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "d2ae31ea-cbe1-416c-b786-aa2ce40e9180",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C9",
+      "claim": "Hsp90 activity can buffer deleterious effects of non-synonymous mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Important work focused primarily on the Hsp90 chaperone has suggested a critical role for chaperones in modulating the evolution of their endogenous clients, (Cowen and Lindquist, 2005; Queitsch et al., 2002; Lachowiec et al., 2015; Sangster et al., 2007, 2008a, 2008b; Rohner et al., 2013; Whitesell et al., 2014; Geiler-Samerotte et al., 2016; Rutherford and Lindquist, 1998) in part by buffering deleterious effects of non-synonymous mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work on Hsp90.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "b6631f08-6fd9-430e-adc3-15d42f947ffd",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C10",
+      "claim": "Hsp90-dependent azole resistance in Candida albicans is mediated by secondary effects of Hsp90 on calcineurin.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Hsp90-dependent azole resistance in Candida albicans is mediated by secondary effects of Hsp90 on calcineurin, an Hsp90 client that regulates responses to environmental stimuli (Cowen and Lindquist, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Cowen and Lindquist, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "131033d6-39bd-4ba6-a310-3c8eb86c7453",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C11",
+      "claim": "The GroEL/ES chaperonin system can govern the fitness of certain client protein variants in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Tawfik and coworkers have shown that the GroEL/ES chaperonin system can govern the fitness of certain client protein variants in bacteria (Tokuriki and Tawfik, 2009b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Tokuriki and Tawfik, 2009b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "edad695e-f171-43da-b46f-fd602610839c",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C12",
+      "claim": "Computational modeling suggests that chaperones other than Hsp90 may have roles in evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "and computational modeling suggests that other chaperones may also have roles in evolution (Bogumil and Dagan, 2012; Cetinba\u015f and Shakhnovich, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bogumil and Dagan, 2012; Cetinba\u015f and Shakhnovich, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "6b939639-7854-46bb-b5f8-7581ab1632c4",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C13",
+      "claim": "Most RNA viruses lack autonomous chaperones or other co-factors to assist their proteins with folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, most RNA viruses lack autonomous chaperones or other co-factors to assist their proteins with folding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about RNA viruses supported by established knowledge in virology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "d6f3dbdc-3cbe-4070-993b-d0a465303d4e",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C14",
+      "claim": "Viral proteins engage host chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, viral proteins engage host chaperones, (Melville et al., 1999; Momose et al., 2002; Naito et al., 2007; York et al., 2014; Watanabe et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Melville et al., 1999; Momose et al., 2002; Naito et al., 2007; York et al., 2014; Watanabe et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "72d05da8-d413-488d-ad2d-bfbcd3d7dfc8",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C15",
+      "claim": "Host chaperone inhibitors have been shown to limit the viability of certain RNA viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "and host chaperone inhibitors have been shown to limit the viability of certain RNA viruses (Geller et al., 2007; Heaton et al., 2016; Taguwa et al., 2015; Chase et al., 2008; Geller et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Geller et al., 2007; Heaton et al., 2016; Taguwa et al., 2015; Chase et al., 2008; Geller et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "ae6f940b-e067-4c59-a1c6-d702d486bbcd",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C16",
+      "claim": "The possibility that host chaperones can shape the evolution of viral pathogens has not been investigated prior to this work.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the possibility that host chaperones can shape the evolution of viral pathogens has not been investigated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' assessment of the literature and sets up the novelty of their work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "2b93882b-8f5d-4a06-8618-dc5e36ef6fee",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C17",
+      "claim": "High genetic variability is essential to support RNA virus adaptability.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, it is clear that: (1) high genetic variability is essential to support RNA virus adaptability;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on established knowledge in virology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "817d702b-70c0-4376-8ffe-571ac35d4d58",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C18",
+      "claim": "Missense mutations important for viral adaptation are often biophysically deleterious, constraining the accessible mutational landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) missense mutations important for viral adaptation are often biophysically deleterious, constraining the accessible mutational landscape;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on established knowledge and prior citations in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "7ffed8bc-8346-45b9-8dbb-c45d07d93621",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C19",
+      "claim": "Many viruses engage host chaperones to fold their proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "and (3) many viruses engage host chaperones to fold their proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on prior citations in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "25c328df-e79e-4763-8a50-6127e00c513e",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C20",
+      "claim": "TMP treatment of MDCKHSF1 cells dosably induces cHSF1 transcriptional activity in a stress-independent manner within the biologically relevant regime.",
+      "claim_type": "EXPLICIT",
+      "source": "In these cells, termed MDCKHSF1 cells, we can dosably induce cHSF1 transcriptional activity by TMP treatment in a stress-independent manner within the biologically relevant regime (Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "299be45e-5208-47c3-94d9-204de36a677b",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C21",
+      "claim": "TMP treatment of MDCKHSF1 cells provides robust access to cells expressing enhanced levels of HSF1 targets without cytotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "avoiding cytotoxicity that would be induced by stressors or cHSF1 overexpression and yet still providing robust access to cells expressing enhanced levels of HSF1 targets (Figure 1\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "229991f0-08ca-4222-8e11-374b5686a703",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C22",
+      "claim": "MDCKYFP cell line does not display TMP-dependent upregulation of HSF1-dependent chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "This MDCKYFP cell line does not display TMP-dependent upregulation of HSF1-dependent chaperones, indicating that TMP induces HSF1 activity in our MDCKHSF1 cells specifically by stabilizing DHFR.cHSF1 (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "fc807d51-5e8c-4071-a5d9-b57d54682054",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C23",
+      "claim": "10 nM STA-9090 does not induce a compensatory heat shock response.",
+      "claim_type": "EXPLICIT",
+      "source": "10 nM STA-9090 does not induce a compensatory heat shock response (representative blot shown; N = 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "12420467-9ff2-4eda-ab93-da708b291d09",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C24",
+      "claim": "Influenza itself neither induces heat shock protein transcripts nor interferes with the method to activate HSF1 under the infection conditions used.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, monitoring chaperone levels in the context of influenza A/Wuhan/1995 (H3N2) infection shows that, under our infection conditions, influenza itself neither induces heat shock protein transcripts nor interferes with our method to activate HSF1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "597ec1d1-98a7-431a-9503-4008f5b84d52",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C25",
+      "claim": "A total of only 118 transcripts have expression altered \u22652 fold with a p-value <10\u20135 in any one or more of the treatments employed.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a total of only 118 transcripts whose expression is altered \u22652 fold with a p-value <10\u20135 in any one or more of the treatments employed, indicating that we are remodeling only a small portion of the transcriptome",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-Seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "9a10d7fd-e0ac-496b-82e0-f2ebf32ecebe",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C26",
+      "claim": "Two distinctive cellular environments are created by HSF1 activation and Hsp90 inhibition in MDCKHSF1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A heat map for these 118 genes highlights that two distinctive cellular environments are indeed created by HSF1 activation and Hsp90 inhibition in MDCKHSF1 cells (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-Seq data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "d4377fb2-9107-4af7-86f6-c00c66527ca3",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C27",
+      "claim": "Only two transcripts meet the cutoffs (\u22652 fold change, p-value <10\u20135) upon TMP treatment in MDCKYFP cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, only two transcripts meet these cutoffs upon TMP treatment in MDCKYFP cells, confirming that the remodeled proteostasis environment upon TMP treatment of MDCKHSF1 cells is specifically due to HSF1 activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-Seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "84b0f5c6-5a67-4a99-919c-fea89651589c",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C28",
+      "claim": "Stress-independent HSF1 activation upregulates numerous classic heat shock response genes including HSP70, BAG3, HSP90AA1, DNAJB1, and FKBP4.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, stress-independent HSF1 activation upregulates numerous classic heat shock response genes (Ryno et al., 2014), including HSP70, BAG3, HSP90AA1, DNAJB1, and FKBP4 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-Seq data shown in Figure 2B and citation to Ryno et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "d451a54e-bfd7-4c4f-9d65-c13e812727f6",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C29",
+      "claim": "Remodeling of the cellular proteostasis network by HSF1 activation is limited to nuclear and cytosolic proteostasis mechanisms, as ER proteostasis network components are not induced.",
+      "claim_type": "EXPLICIT",
+      "source": "This remodeling of the cellular proteostasis network is limited to nuclear and cytosolic proteostasis mechanisms, as ER proteostasis network components are not induced by TMP treatment of the MDCKHSF1 cells (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-Seq data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "fbd63b46-2f7d-4bb2-beb7-edf2dfb3bbde",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C30",
+      "claim": "Transcript-level proteostasis network remodeling is not observed upon STA-9090 treatment, with the exception of a 2.2-fold induction of HSPB1.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, transcript-level proteostasis network remodeling is not observed upon STA-9090 treatment, with the exception of a 2.2-fold induction of HSPB1, as expected given the low concentration of inhibitor employed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-Seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "46e24b51-ec95-4ee3-95fb-007f301d391b",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C31",
+      "claim": "HSF1 activation modestly upregulates several transcripts involved in transcription factor regulation and DNA damage, such as CAMK1, RELB, and PARP3.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe modest upregulation of several transcripts involved in transcription factor regulation and DNA damage upon HSF1 activation, such as CAMK1, RELB, and PARP3, consistent with the intimate role of HSF1 in cytoprotection (Morimoto and Santoro, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-Seq data and citation to Morimoto and Santoro, 1998.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "fe6f869a-ca0a-4e6e-8d43-ea7f582ef46c",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C32",
+      "claim": "STA-9090 slightly upregulates several interferon response-related transcripts, including OAS2 and MX2 (2.9 and 2.2 fold-change, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "STA-9090 slightly upregulates several interferon response-related transcripts, including OAS2 and MX2 (2.9 and 2.2 fold-change, respectively), a phenomenon that has been previously reported upon treatment with other Hsp90 inhibitors (Yang et al., 2006; Donz\u00e9 et al., 2001; Shang and Tomasi, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-Seq data and citations to Yang et al., 2006; Donz\u00e9 et al., 2001; Shang and Tomasi, 2006.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "f27f631f-92c2-46b5-b788-ee87fb768a6b",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C33",
+      "claim": "The MOI did not vary systematically between the three distinctive proteostasis environments during serial passaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, infectious titering at intermittent passages confirmed that the MOI did not vary systematically between the three distinctive proteostasis environments (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "f4e9a958-0aff-4d48-9405-c7a8f0e9d0f7",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C34",
+      "claim": "Differences observed in evolutionary trajectories cannot be attributed to either systematically altered rates of viral growth in the three different host proteostasis environments or to gross differences in cell health.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, differences observed in evolutionary trajectories cannot be attributed to either systematically altered rates of viral growth in the three different host proteostasis environments studied here or to gross differences in cell health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the MOI and titer data showing no systematic differences between environments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "14b23f6e-d0e6-41c8-a180-47a78f5c73de",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C35",
+      "claim": "Non-synonymous mutations are selected against in all folding environments, as indicated by a Dn/Ds < 1 throughout serial passaging.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, non-synonymous mutations are selected against in all folding environments, as indicated by a Dn/Ds < 1 throughout our serial passaging (Figure 3D) (Breen et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3D and citation to Breen et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "0a42dfe4-3e02-4f4a-a62e-78ac93eb0c4f",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C36",
+      "claim": "Non-synonymous mutations fix latest in the Hsp90-inhibited environment and earliest in the HSF1-activated environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-synonymous mutations fix latest in the Hsp90-inhibited environment and earliest in the HSF1-activated environment (Figure 4A; outlined in green).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by site frequency spectra data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "dba0d000-1464-4d60-bec1-33abe60924f8",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C37",
+      "claim": "In the Hsp90-inhibited environment, no mutations have exceeded 60% frequency by passage 9 or 80% frequency by passage 11.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in the Hsp90-inhibited environment, no mutations have exceeded 60% frequency by passage 9 or 80% frequency by passage 11.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by site frequency spectra data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "3e3ebc21-3f14-4370-adcc-023800be10b9",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C38",
+      "claim": "In the HSF1-activated environment, mutations exceed 80% frequency as early as passage 9 and become fixed (>90%) by passage 11.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the HSF1-activated environment, mutations exceed 80% frequency as early as passage 9 and become fixed (>90%) by passage 11.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by site frequency spectra data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "13e4ef1e-11fb-44f6-8e15-d11ea27e92ca",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C39",
+      "claim": "By passage 11, the shape of the non-synonymous SFS for influenza evolved in the Hsp90-inhibited environment is significantly different from that of influenza evolved in the basal and HSF1-activated environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, by passage 11, the first passage at which we observe fixed mutations in any environment, the shape of the non-synonymous SFS for influenza evolved in the Hsp90-inhibited environment is significantly different from that of influenza evolved in the basal and HSF1-activated environments (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis (Mann-Whitney test) of site frequency spectra data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "781685fb-72b5-4296-b5e0-703f6e380cc5",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C40",
+      "claim": "Synonymous mutations for each environment have similar SFS within each passage.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that synonymous mutations for each environment have similar SFS within each passage, and that the Mann-Whitney test cannot distinguish between the synonymous SFS in different proteostasis environments at any stage of the serial passaging experiment (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of site frequency spectra data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "e531310e-b44d-4775-812c-0217c92701cf",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C41",
+      "claim": "Specific synonymous mutations do not fix reproducibly in one particular environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, unlike non-synonymous mutations (see below and also see Figure 4\u2014source data 1), specific synonymous mutations do not fix reproducibly in one particular environment (Figure 4\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014source data 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "e1edac05-bef4-4f9f-8a4e-00d8de65fee9",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C42",
+      "claim": "The host proteostasis-based perturbations of HSF1 activation and Hsp90 inhibition primarily affect influenza evolution by modulating protein-level folding/function.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is consistent with our expectation that, although the influenza genome does undergo selection at the RNA level (Air et al., 1990), the host proteostasis-based perturbations of HSF1 activation and Hsp90 inhibition should primarily affect influenza evolution by modulating protein-level folding/function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that synonymous mutations show similar patterns across environments while non-synonymous mutations differ, and is supported by citation to Air et al., 1990.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "b63d1e45-769a-4465-a3b8-8103ed2151ad",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C43",
+      "claim": "There is little effect of host proteostasis on strongly deleterious mutations, as illustrated by the similar Dn/Ds ratios across environments.",
+      "claim_type": "EXPLICIT",
+      "source": "On the one hand, there is little effect on strongly deleterious mutations, as illustrated by the similar Dn/Ds ratios across environments (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "902332ba-7e47-40d3-a741-233ce401e055",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C44",
+      "claim": "The rate of adaptation by accumulation of advantageous mutations is significantly reduced in the Hsp90-inhibited environment, as compared to the basal and HSF1-activated environments.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the rate of adaptation by accumulation of advantageous mutations is significantly reduced in the Hsp90-inhibited environment, as compared to the basal and HSF1-activated environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by site frequency spectra data and statistical analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "ab0c2096-9c33-4ff8-8ef6-1d72b3fe46af",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C45",
+      "claim": "Residues 590\u2013640 of polymerase PA comprise a mutational hotspot present in every host environment.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in polymerase PA, residues 590\u2013640 comprise a mutational hotspot present in every host environment (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mutational analysis data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "20ad46b2-5081-4f36-92cc-0d0a8a36fb63",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C46",
+      "claim": "Eight mutations occur in the N-terminal 100 residues of PB1 in the HSF1-activated environment, two mutations in the baseline environment, and only one mutation in the Hsp90-inhibited environment.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we observe eight mutations in the N-terminal 100 residues of PB1 in the HSF1-activated environment, two mutations in the baseline environment, and only one mutation in the Hsp90-inhibited environment (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mutational analysis data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "b6c7f444-9c2a-4b89-a539-c427509ae3e9",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C47",
+      "claim": "Residues 9\u201313 of PB1 span the loop portion of a helix-loop-helix motif that critically defines the interface with PA.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, residues 9\u201313 of PB1 span the loop portion of a helix-loop-helix motif (Figure 5B, secondary structure; SS) that critically defines the interface (Figure 5C, purple) with PA (Figure 5C, red) (Reich et al., 2014; Perez and Donis, 2001; Obayashi et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural data shown in Figure 5B-C and citations to Reich et al., 2014; Perez and Donis, 2001; Obayashi et al., 2008.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "b2775def-1f4a-4a79-a7a7-a4389af7bbf8",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C48",
+      "claim": "PA variants that occur in both the HSF1-activated and Hsp90-inhibited environments have slightly less favorable binding energy with wild-type PB1N.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the PA variants, which occur in both the HSF1-activated and Hsp90-inhibited environments, have slightly less favorable binding energy with wild-type PB1N (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by molecular dynamics simulation data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "13c96cb8-4fa5-45a5-8aad-07d19824b788",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C49",
+      "claim": "PB1 variants that occur exclusively in the HSF1-activated environment are destabilizing, with the K11E substitution very strongly destabilizing the PA-PB1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The PB1 variants, which occur exclusively in the HSF1-activated environment, are also destabilizing, with the K11E substitution very strongly destabilizing the complex (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by molecular dynamics simulation data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "99579ed8-6571-4555-a766-ab382864d970",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C50",
+      "claim": "Co-occurrence of certain PA variants (e.g., E629K in PA) can compensate for the strongly destabilizing effects of observed PB1 substitutions (e.g., K11E in PB1).",
+      "claim_type": "EXPLICIT",
+      "source": "We note that co-occurrence of certain PA variants (e.g., E629K in PA) can compensate for the strongly destabilizing effects of observed PB1 substitutions (e.g., the combination of E629K in PA and K11E in PB1 results in a stable complex; Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by molecular dynamics simulation data shown in Figure 5\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "3460f69f-62cf-42ca-9871-5d2b30693b43",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C51",
+      "claim": "Host proteostasis impacts the fitness of destabilizing amino acid substitutions in influenza proteins in a protein-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Cumulatively, these observations indicate that host proteostasis impacts the fitness of destabilizing amino acid substitutions in influenza proteins in a protein-specific manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the differential effects of proteostasis perturbations on PA versus PB1 variants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "d2cb1e46-f6ba-4abb-a271-58e3ea9e41b4",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C52",
+      "claim": "Three HA variants (N144T, V242I, and M246I) present at 20% frequency in the founder virus become fixed by passage 19 in all replicates of the HSF1-activated and basal environments, but in only one replicate of the Hsp90-inhibited environment.",
+      "claim_type": "EXPLICIT",
+      "source": "In HA, three variants (N144T, V242I, and M246I) present at 20% frequency in our founder virus become fixed by passage 19 in all replicates of the HSF1-activated and basal environments, but in only one replicate of the Hsp90-inhibited environment (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mutational trajectory data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "d288c11e-1f76-4438-8ebb-59d500616214",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C53",
+      "claim": "The three HA variants (N144T, V242I, and M246I) completely fall out of two replicates of the Hsp90-inhibited environment by passage 9.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these variants completely fall out of two replicates of the Hsp90-inhibited environment by passage 9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mutational trajectory data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "0d6ccd9b-507a-406e-98f4-80a36f7186b6",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C54",
+      "claim": "The three HA mutations (N144T, V242I, and M246I) occur in the globular head domain of HA that binds cellular sialic acid and has inherently high mutational tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "The three mutations occur in the globular head domain of HA that binds cellular sialic acid and has inherently high mutational tolerance (Thyagarajan and Bloom, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Thyagarajan and Bloom, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "2b0b7a76-0e53-4042-9841-3fa9b1157972",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C55",
+      "claim": "The PA H452Q variant is present at 20% frequency in the founder virus and becomes fixed in two replicates of the Hsp90-inhibited environment.",
+      "claim_type": "EXPLICIT",
+      "source": "In PA, we observed that the H452Q variant is present at 20% frequency in the founder virus and becomes fixed in two replicates of the Hsp90-inhibited environment (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mutational trajectory data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "ce14fbf8-460f-43c5-a3df-e5c966f86907",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C56",
+      "claim": "The PA H452Q variant does not become fixed in the basal environment, and is selected against in the HSF1-activated environment.",
+      "claim_type": "EXPLICIT",
+      "source": "This variant does not become fixed in the basal environment, and is selected against in the HSF1-activated environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mutational trajectory data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "43b02d1d-71e2-45b8-9d25-52bece3122cf",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C57",
+      "claim": "The H452Q mutation is known to occur preferentially in reassorted viruses compared to pure strains, which is indicative of a fitness cost.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, although the H452Q mutation is far from the PA endonuclease site, (Reich et al., 2014) it is known to occur preferentially in reassorted viruses compared to pure strains, which is indicative of a fitness cost (Zeldovich et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Reich et al., 2014 and Zeldovich et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "115c14a2-1fc7-45a6-9398-15f14bece22f",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C58",
+      "claim": "Hsp90 inhibition significantly enhances the fitness of the H452Q PA variant relative to wild-type PA, while HSF1 activation significantly reduces it.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Hsp90 inhibition does indeed significantly enhance the fitness of the H452Q variant relative to wild-type PA, while HSF1 activation significantly reduces it (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reverse genetics competition experiment data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "812efe44-ff01-463c-8c0c-fc40bb52de0d",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C59",
+      "claim": "H452Q PA has a predicted \u0394\u0394G of +1.10 kcal/mol relative to wild-type PA.",
+      "claim_type": "EXPLICIT",
+      "source": "One likely possibility is that Hsp90 delays subunit assembly or directs destabilized PA variants to degradation, as H452Q has a predicted \u0394\u0394G of +1.10 kcal/mol relative to wild-type PA (Yin et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational prediction using Eris, cited as Yin et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "152f93c8-71dc-49c8-b217-f9760b9d74dc",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C60",
+      "claim": "Prior to this work, the possibility that host chaperones significantly modulate pathogen evolution had not been rigorously investigated.",
+      "claim_type": "EXPLICIT",
+      "source": "However, prior to this work, the possibility that host chaperones significantly modulate pathogen evolution had not been rigorously investigated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' assessment of the literature and establishes the novelty of their work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "c018168c-51a3-4862-968a-bab54f3db8b3",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C61",
+      "claim": "Two unique proteostasis perturbations, HSF1 activation and Hsp90 inhibition, have distinctive consequences for client protein evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in eukaryotic systems, research has focused largely on Hsp90 inhibition. Here, we not only define a new role for host proteostasis in influenza evolution, but we also show that two unique proteostasis perturbations, HSF1 activation and Hsp90 inhibition, have distinctive consequences for client protein evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "a9494f57-def6-49a5-b14e-824123be0af3",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C62",
+      "claim": "Non-synonymous mutations are fixed more slowly when Hsp90 is inhibited and more quickly when HSF1 is activated.",
+      "claim_type": "EXPLICIT",
+      "source": "At the whole genome-level, our data indicate that non-synonymous mutations are fixed more slowly when Hsp90 is inhibited and more quickly when HSF1 is activated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by site frequency spectra data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "baf622f5-154c-4716-ae99-3563390b588d",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C63",
+      "claim": "The overall shape of the Hsp90-inhibited passage 11 SFS is significantly different from that observed in the other two environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the overall shape of the Hsp90-inhibited passage 11 SFS is significantly different from that observed in the other two environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of site frequency spectra data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "b93a6e20-5174-4163-9059-9cd8c41839ee",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C64",
+      "claim": "Moderately destabilizing variants in PA are tolerated in all three host proteostasis environments studied.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, moderately destabilizing variants in PA are tolerated in all three host proteostasis environments studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mutational analysis and molecular dynamics data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "435e9c7c-abdf-46ce-8b10-2f0ff9fd906b",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C65",
+      "claim": "Amino acid substitutions in the N-terminus of PB1 are observed only when HSF1 is activated.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, amino acid substitutions in the N-terminus of PB1 are observed only when HSF1 is activated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mutational analysis data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "417211b8-e59e-440d-b95f-236f3b1426b4",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C66",
+      "claim": "PB1 variants strongly destabilize the PB1:PA complex and thus may be accessible only in host cells with high chaperone levels.",
+      "claim_type": "EXPLICIT",
+      "source": "These PB1 variants strongly destabilize the PB1:PA complex and thus may be accessible only in host cells with high chaperone levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from molecular dynamics data and the observation that these variants only appear in HSF1-activated environments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "80f8f9ae-485c-423e-946e-3a98582f5768",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C67",
+      "claim": "Polymerase assembly is known to be mediated by cytosolic host chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, polymerase assembly is known to be mediated by cytosolic host chaperones (Naito et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Naito et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "d5bf6976-37e6-4c16-8baf-70e315c9b446",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C68",
+      "claim": "The evolution of the influenza polymerase complex may be modulated by host proteostasis in significant ways.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations indicate that the evolution of the influenza polymerase complex may be modulated by host proteostasis in significant ways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the data showing differential mutational tolerance at the PA-PB1 interface in different proteostasis environments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "8246577d-9abe-4f2b-ab27-fc60e2adb6b9",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C69",
+      "claim": "Host proteostasis impacts the fitness of specific mutations in at least two viral proteins (PA and HA).",
+      "claim_type": "EXPLICIT",
+      "source": "At the level of individual mutations, our data demonstrate that host proteostasis impacts the fitness of specific mutations in at least two viral proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mutational trajectory and reverse genetics data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "f58e9859-7eb1-47f0-b458-8ee2693ccb08",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C70",
+      "claim": "The directionality of the effect of host proteostasis on mutation fitness seems to be specific to a given variant or protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the directionality of this effect seems to be specific to a given variant or protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that PA H452Q and HA variants respond differently to proteostasis perturbations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "4bb37dcc-5df3-4e4a-910e-8efb141638a4",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C71",
+      "claim": "The apparently destabilizing H452Q PA variant is significantly more fit when Hsp90 is inhibited, but significantly less fit when HSF1 is activated.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the apparently destabilizing H452Q PA variant is significantly more fit when Hsp90 is inhibited, but significantly less fit when HSF1 is activated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reverse genetics competition data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "d97e9aeb-f99b-4e44-b111-0a67ed71bd6d",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C72",
+      "claim": "Host proteostasis modulates the nature of selection on the influenza genome, the mutational tolerance of specific influenza proteins, and the trajectories of particular variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we observe that host proteostasis modulates the nature of selection on the influenza genome, the mutational tolerance of specific influenza proteins, and the trajectories of particular variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim supported by all the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "67729a41-cba9-4b9a-9257-eba1b202c6f3",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C73",
+      "claim": "The consequences of altered host proteostasis for influenza evolution are emerging in the course of a relatively short-timescale evolution experiment, and without exerting additional selection pressure such as treatment with antiviral drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are especially compelling because consequences of altered host proteostasis for influenza evolution are emerging in the course of a relatively short-timescale evolution experiment, and without exerting additional selection pressure such as treatment with antiviral drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim emphasizes the significance of the findings given the experimental design.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "2856c764-08c1-4bd8-a8b1-4d1e0640a9f4",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C74",
+      "claim": "The observations may derive from direct interactions between host proteostasis components and influenza proteins, or from indirect consequences of perturbing proteostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "As in previous studies on the role of Hsp90 in the evolution of their endogenous protein clients, our observations may derive from direct interactions between host proteostasis components and influenza proteins, or from indirect consequences of perturbing proteostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim acknowledges uncertainty about the mechanism and is speculative.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "66240c45-1bd3-4f4b-88d7-dab8f14ac9d1",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C75",
+      "claim": "This role for host proteostasis in modulating both the pace and the directionality of influenza evolution is provocative.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of its precise origin, this role for host proteostasis in modulating both the pace and the directionality of influenza evolution is provocative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an evaluative statement about the significance of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "7da49f8e-e012-439c-b3ea-5f724cada118",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C76",
+      "claim": "Defining the molecular details of the interplay between host proteostasis and viral evolution will be essential to fully elucidate the factors potentiating and constraining viral evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Defining the molecular details of this interplay between host proteostasis and viral evolution will be essential to fully elucidate the factors potentiating and constraining viral evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a forward-looking statement about future research needs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "1105c995-931d-4d37-9adf-2bada51a0706",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C77",
+      "claim": "Such studies may eventually enable design of improved antiviral therapeutics and antibodies that are refractory to the evolution of resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, such studies may eventually enable design of improved antiviral therapeutics and antibodies that are refractory to the evolution of resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications of the research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "12a36713-aeaf-4e70-894f-f74cdf5376cc",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C78",
+      "claim": "MDCK cells were cultured at 37\u00b0C in a 5% CO2 atmosphere in DMEM supplemented with 10% fetal bovine serum and 1% penicillin/streptomycin/glutamine.",
+      "claim_type": "EXPLICIT",
+      "source": "MDCK cells were cultured at 37\u00b0C in a 5% CO2 atmosphere in DMEM (CellGro) supplemented with 10% fetal bovine serum (CellGro) and 1% penicillin/streptomycin/glutamine (CellGro).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing cell culture conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "782c9415-8fef-4dd1-8c59-8686bbf6889a",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C79",
+      "claim": "All experiments were performed with influenza A/Wuhan/1995 (H3N2).",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments were performed with influenza A/Wuhan/1995 (H3N2), which was generously provided by Prof. Jianzhu Chen (MIT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the viral strain used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "f0e4ce61-0f5b-400f-8d95-459a7b4bcf43",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C80",
+      "claim": "Serial passaging experiments were performed on a 12-well scale in biological triplicate, at 100,000 cells/well and an MOI of 0.002 virions/cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Serial passaging experiments were performed on a 12-well scale in biological triplicate, at 100,000 cells/well and an MOI of 0.002 virions/cell, as estimated by hemagglutination titering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the serial passaging protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "b37bb50b-94fd-4278-84dc-4b2ee82e6de0",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C81",
+      "claim": "Cells were pre-treated with TMP or DMSO for 24 hr or with STA-9090 for 90 min prior to influenza infection to establish altered proteostasis environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were pre-treated with TMP or DMSO for 24 hr or with STA-9090 for 90 min prior to influenza infection to establish altered proteostasis environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the treatment protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "d383b819-6bf9-4524-9a4c-0fb920e3a1e4",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C82",
+      "claim": "Infections were allowed to proceed for 48 hr, after which the viral supernatant was harvested, cleared of cellular debris by centrifugation, and titered using a hemagglutination assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Infections were allowed to proceed for 48 hr, after which the viral supernatant was harvested, cleared of cellular debris by centrifugation, and titered using a hemagglutination assay (Eisfeld et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the infection and titering protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "240b184b-43ca-4c8c-9e8b-bc68ac5a917e",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C83",
+      "claim": "Only positions with greater than 600-fold coverage in all replicates of each sample were included in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Only positions with greater than 600-fold coverage in all replicates of each sample were included in the analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the sequencing data analysis criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "b2647b5d-8e49-4efa-b851-e7850c2ba799",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C84",
+      "claim": "Variant alleles present at greater than 1.5% frequency are included in the site frequency spectra, protein alignment, and mutational trajectories analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Variant alleles present at greater than 1.5% frequency are included in the site frequency spectra (Figure 4), protein alignment (Figure 5), and mutational trajectories (Figure 6) analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the frequency threshold for variant inclusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "0ca05022-b186-4df0-a068-c29853697d57",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C85",
+      "claim": "The 1.5% frequency threshold is the lowest mutation frequency at which a mutation can be reliably detected in a sample that is sequenced in technical duplicate, for the specific sequencing method and instrument used.",
+      "claim_type": "EXPLICIT",
+      "source": "This frequency threshold is the lowest mutation frequency at which a mutation can be reliably detected in a sample that is sequenced in technical duplicate, for our specific sequencing method and instrument.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological justification for the frequency threshold chosen.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "1337ea1f-079e-4de3-85a3-5f9901af5963",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C86",
+      "claim": "The Mann-Whitney test was used to compare the distributions of the SFS and assess statistical significance of differences.",
+      "claim_type": "EXPLICIT",
+      "source": "To quantify differences in the passage 11 site frequency spectra (Figure 4), the Mann-Whitney test was performed using Graph Pad Prism software (nonparametric, one-tailed).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the statistical test used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "af558399-c42f-4661-b58e-a0323c31e2e1",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C87",
+      "claim": "An unpaired t-test was used to assess statistical significance for the reverse genetics competition experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess statistical significance for the reverse genetics competition experiment (Figure 6C), an unpaired t-test was performed between each set of conditions, each with three biological replicate data sets",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the statistical test used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "af670559-5eb0-4973-8eab-0ff9cb364237",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C88",
+      "claim": "All MD simulations were performed using the GROMACS 4.6.7 suite with the AMBER99 force field and TIP3P water.",
+      "claim_type": "EXPLICIT",
+      "source": "All MD simulations were performed using the GROMACS 4.6.7 suite (Hess et al., 2008). All simulations were performed using the AMBER99 force field (Hornak et al., 2006) and TIP3P (Jorgensen et al., 1983) water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the molecular dynamics simulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "0294c5a2-3874-406a-915b-59fe0f5c0cc2",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C89",
+      "claim": "Binding free energy calculations were performed on the last 10 ns of each production simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding free energy calculations were performed on the last 10 ns of each production simulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the binding energy calculation protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "95cafa83-9827-46c1-a676-2fae3c8659e6",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C90",
+      "claim": "The binding free energy was calculated as Htotal, GB = Egas + Gsol,GB, and thus did not contain any contribution from solute configuration entropy.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the binding free energy was calculated as Htotal, GB = Egas + Gsol,GB, and thus did not contain any contribution from solute configuration entropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the binding energy calculation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "db9255ed-dd2e-429c-85d8-c2cb7a5515dc",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "claim_id": "C91",
+      "claim": "The solute configuration entropy is omitted because the focus is on the relative order of binding affinities and the complexes have similar binding poses.",
+      "claim_type": "EXPLICIT",
+      "source": "Since our focus here is on the relative order of binding affinities and the complexes have similar binding poses, the solute configuration entropy is thus omitted (Rastelli et al., 2010; Hou et al., 2011a, 2011b; Wang et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological justification for omitting entropy calculations, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "dc57193b-ff40-4b91-bff6-f7199e840d56",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a chemical genetic system using DHFR.cHSF1 fusion protein stabilized by trimethoprim (TMP) to dosably activate HSF1 in MDCK cells without cytotoxicity or stress, and validated that 10 nM STA-9090 inhibits Hsp90 without inducing compensatory heat shock response. Control experiments confirmed specificity and lack of interference from influenza infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24 are well-supported by experimental data in Figures 1B, 1C, and supplementary figures showing dose-dependent HSF1 activation, lack of cytotoxicity, specificity of the system, and absence of compensatory responses. The control cell line (MDCKYFP) and multiple validation assays provide strong evidence for the tool's functionality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "cd590316-89c8-476e-af66-6d706b110025",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "RNA-Seq analysis revealed that HSF1 activation and Hsp90 inhibition create two distinctive proteostasis environments with minimal transcriptome-wide changes (118 transcripts altered \u22652-fold, p<10\u207b\u2075). HSF1 activation specifically upregulates cytosolic/nuclear heat shock response genes without affecting ER proteostasis, while Hsp90 inhibition shows minimal proteostasis remodeling but slight interferon response upregulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C32 are strongly supported by comprehensive RNA-Seq data presented in Figure 2 and source data files. The differential expression analysis, volcano plots, and heat maps clearly demonstrate the specific and limited transcriptional changes. Statistical thresholds are appropriate and control experiments with MDCKYFP cells confirm specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "f6558ef6-73b5-4f14-8f1a-09dce84f61d9",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Serial passaging of influenza A/Wuhan/1995 (H3N2) was performed in three proteostasis environments (basal, HSF1-activated, Hsp90-inhibited) in biological triplicate for 23 passages at low MOI (0.002). Viral titers and MOI remained consistent across environments, and Dn/Ds ratios <1 confirmed purifying selection throughout passaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 and C80-C82 are supported by experimental data in Figures 3C-D and supplementary figures. The consistent MOI and titers across environments (C33-C34) validate that observed evolutionary differences are not due to growth rate differences. The Dn/Ds analysis (C35) appropriately demonstrates purifying selection. Methodological details are clearly described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "3b514ea6-7ba3-4a88-b8f4-b914da29c34b",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Site frequency spectra analysis revealed that non-synonymous mutations fix significantly more slowly in the Hsp90-inhibited environment compared to basal and HSF1-activated environments. By passage 11, the Hsp90-inhibited SFS shape was significantly different from the other two environments (Mann-Whitney test), with mutations exceeding 80% frequency in HSF1-activated but not reaching 60% in Hsp90-inhibited environments by passage 9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39, C62-C63 are strongly supported by site frequency spectra data in Figure 4A with appropriate statistical analysis (Mann-Whitney test). The temporal resolution of the experiment allows clear observation of differential fixation rates. The statistical significance is properly assessed and p-values are reported. The biological interpretation is consistent with the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "0e06c9c6-fcaf-4807-9ecc-872bc74081b9",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Synonymous mutations showed similar site frequency spectra across all proteostasis environments at every passage, with no environment-specific fixation patterns. This indicates that proteostasis perturbations primarily affect protein-level selection rather than RNA-level processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 are supported by data in Figure 4B and source data showing no significant differences in synonymous SFS between environments (Mann-Whitney test). This internal control strengthens the interpretation that non-synonymous mutation differences are due to protein folding effects. The reasoning connecting synonymous mutation patterns to protein-level effects is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "43ceb11a-9096-44c8-ab9f-0a986bafb79d",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Host proteostasis has minimal effect on strongly deleterious mutations (similar Dn/Ds ratios across environments) but significantly reduces the rate of adaptation by advantageous mutations in the Hsp90-inhibited environment compared to basal and HSF1-activated environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 are supported by Dn/Ds data (Figure 3D) and site frequency spectra analysis (Figure 4). The interpretation distinguishes between effects on strongly deleterious versus mildly deleterious/advantageous mutations, which is appropriate given the data. However, the mechanistic distinction between buffering and potentiation effects remains uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "c632b8d7-1dc1-415d-bc9d-7c8b9c288245",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Mutational hotspot analysis revealed that PA residues 590-640 tolerate mutations in all environments, while PB1 N-terminal mutations (residues 9-13 at the PA-PB1 interface) occur predominantly in the HSF1-activated environment (8 mutations) versus baseline (2) and Hsp90-inhibited (1) environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47, C64-C65 are supported by mutational analysis data in Figure 5A-B with structural context. The differential mutational tolerance at the PA-PB1 interface across environments is clearly demonstrated. The structural information (helix-loop-helix motif) provides mechanistic context. Sequencing coverage thresholds are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "16656bc1-8e4d-4341-84f3-d7c025a3bd5c",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Molecular dynamics simulations showed that PA variants occurring in multiple environments have moderately destabilizing effects on PA-PB1 binding, while PB1 variants exclusive to HSF1-activated environments (especially K11E) strongly destabilize the complex. Compensatory mutations can restore stability. Binding energies were calculated excluding solute configuration entropy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50, C66, C88-C91 are supported by molecular dynamics data in Figure 5E and source data. The computational methods are appropriately described (GROMACS, AMBER99, TIP3P). The justification for omitting entropy (C91) is reasonable given the focus on relative binding affinities with similar poses, though this is a simplification. The correlation between computational predictions and experimental observations strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "773be78b-490e-4a45-a405-ec039df786b3",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Host proteostasis impacts the fitness of destabilizing amino acid substitutions in influenza proteins in a protein-specific manner, with significant implications for polymerase complex evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51 and C68 are appropriately inferred from the differential effects observed for PA versus PB1 variants (C45-C50, C64-C66). The protein-specific nature of proteostasis effects is clearly demonstrated by the contrasting mutational landscapes. This is a well-supported synthesis of the polymerase data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "7eabdcfa-76ba-484c-9037-5a1d48c06a4c",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Three HA variants (N144T, V242I, M246I) present at 20% in the founder virus became fixed in HSF1-activated and basal environments by passage 19 but were eliminated from two Hsp90-inhibited replicates by passage 9. These mutations occur in the HA globular head domain with high mutational tolerance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 are supported by mutational trajectory data in Figure 6A. The divergent trajectories across environments are clearly shown. The structural context (globular head domain) and citation to Thyagarajan and Bloom (2014) regarding mutational tolerance provide appropriate background. The observation is reproducible across replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "f165ae7a-bee4-4e37-ae0b-fa6682425e25",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The PA H452Q variant (20% in founder virus) became fixed in Hsp90-inhibited environments but was selected against in HSF1-activated environments. Reverse genetics competition experiments confirmed that Hsp90 inhibition significantly enhances H452Q fitness while HSF1 activation reduces it. The mutation is predicted to be destabilizing (\u0394\u0394G +1.10 kcal/mol).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59, C71 are strongly supported by mutational trajectory data (Figure 6B) and reverse genetics competition experiments (Figure 6C) with appropriate statistics (unpaired t-test, p<0.01). The computational prediction (C59) using Eris provides mechanistic context. The reverse genetics experiment directly validates the fitness effects observed in serial passaging, providing strong causal evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "dcec5c8d-8d3a-4a66-b3df-62398335e99c",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Host proteostasis impacts the fitness of specific mutations in at least two viral proteins (PA and HA), with directionality of effects being variant- and protein-specific. Overall, host proteostasis modulates selection on the influenza genome, mutational tolerance of specific proteins, and trajectories of particular variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70, C72 appropriately synthesize the findings from HA and PA variant analyses (C52-C58). The observation that different variants respond differently to proteostasis perturbations (HA variants favored by HSF1 activation, PA H452Q favored by Hsp90 inhibition) demonstrates protein/variant-specific effects. This is a well-supported summary of the major findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "b304eb4b-c41c-4c87-af89-930c5a14aa1f",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The central hypothesis that host proteostasis mechanisms significantly determine viral protein variant fitness and shape viral evolution is supported. HSF1 activation and Hsp90 inhibition have distinctive consequences for influenza evolution, emerging over a relatively short timescale without additional selection pressure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3, C61, C73 represent the overarching conclusions supported by the comprehensive experimental data throughout the manuscript. The hypothesis is tested through multiple complementary approaches (serial passaging, sequencing, molecular dynamics, reverse genetics). The short timescale and absence of drug selection pressure (C73) strengthen the significance of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "90d1ee62-dfa3-4145-9fa6-485fc2c2b7cd",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Sequencing analysis used appropriate thresholds (>600-fold coverage, >1.5% variant frequency) justified as the reliable detection limit for technical duplicates. Statistical analyses employed Mann-Whitney tests for SFS comparisons and unpaired t-tests for reverse genetics experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C87 describe methodological choices that are appropriately justified. The 1.5% frequency threshold (C84-C85) is reasonable given technical duplicate sequencing and represents 9+ observations at 600-fold coverage. Statistical test choices (Mann-Whitney for distribution comparisons, t-test for competition experiments) are appropriate for the data types.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "cf02f96f-0c6d-4797-b8c4-9fa32b8a681e",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The introduction establishes background knowledge about RNA virus mutation rates, protein folding biophysics, proteostasis networks, and prior work on chaperones (especially Hsp90) in evolution. RNA viruses lack autonomous chaperones and engage host chaperones, but the role of host proteostasis in viral evolution had not been investigated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C4-C15, C17-C19 represent background knowledge and literature review supported by appropriate citations. These establish the rationale for the study. Claim C16 about lack of prior investigation is an assessment of the literature that sets up the novelty, which is reasonable given the citations provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "9fc73943-06e5-4fe8-a587-71526a9d94b4",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior to this work, the possibility that host chaperones significantly modulate pathogen evolution had not been rigorously investigated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16 and C60 represent the authors' assessment of the literature to establish novelty. While such claims are inherently difficult to prove definitively (absence of evidence), the extensive literature review and citations suggest this assessment is reasonable. The distinction between endogenous client evolution (well-studied) and pathogen evolution (not studied) is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "f251bb2e-fa28-45d0-96bf-426a9e9ca4ea",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The observations may derive from direct or indirect interactions between host proteostasis and influenza proteins. Defining molecular details will be essential for understanding viral evolution, and may eventually enable design of resistance-refractory antivirals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C77 are speculative statements about mechanisms and future directions. C74 appropriately acknowledges uncertainty about direct versus indirect effects. C75 is an evaluative statement. C76-C77 are forward-looking statements about future research needs and potential applications. These are reasonable but not directly tested in the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    },
+    {
+      "id": "3edb152e-123d-42e7-9914-0b82d7de13bb",
+      "content_id": "51da8422-8a6c-49a7-9a3d-99a8dfb9d091",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "MDCK cells were cultured under standard conditions (37\u00b0C, 5% CO2, DMEM with supplements). All experiments used influenza A/Wuhan/1995 (H3N2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 are straightforward methodological details that are clearly stated and standard for the field. These provide essential information for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.173822Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "25c328df-e79e-4763-8a50-6127e00c513e",
+      "result_id": "dc57193b-ff40-4b91-bff6-f7199e840d56"
+    },
+    {
+      "claim_id": "299be45e-5208-47c3-94d9-204de36a677b",
+      "result_id": "dc57193b-ff40-4b91-bff6-f7199e840d56"
+    },
+    {
+      "claim_id": "229991f0-08ca-4222-8e11-374b5686a703",
+      "result_id": "dc57193b-ff40-4b91-bff6-f7199e840d56"
+    },
+    {
+      "claim_id": "fc807d51-5e8c-4071-a5d9-b57d54682054",
+      "result_id": "dc57193b-ff40-4b91-bff6-f7199e840d56"
+    },
+    {
+      "claim_id": "12420467-9ff2-4eda-ab93-da708b291d09",
+      "result_id": "dc57193b-ff40-4b91-bff6-f7199e840d56"
+    },
+    {
+      "claim_id": "597ec1d1-98a7-431a-9503-4008f5b84d52",
+      "result_id": "cd590316-89c8-476e-af66-6d706b110025"
+    },
+    {
+      "claim_id": "9a10d7fd-e0ac-496b-82e0-f2ebf32ecebe",
+      "result_id": "cd590316-89c8-476e-af66-6d706b110025"
+    },
+    {
+      "claim_id": "d4377fb2-9107-4af7-86f6-c00c66527ca3",
+      "result_id": "cd590316-89c8-476e-af66-6d706b110025"
+    },
+    {
+      "claim_id": "84b0f5c6-5a67-4a99-919c-fea89651589c",
+      "result_id": "cd590316-89c8-476e-af66-6d706b110025"
+    },
+    {
+      "claim_id": "d451a54e-bfd7-4c4f-9d65-c13e812727f6",
+      "result_id": "cd590316-89c8-476e-af66-6d706b110025"
+    },
+    {
+      "claim_id": "fbd63b46-2f7d-4bb2-beb7-edf2dfb3bbde",
+      "result_id": "cd590316-89c8-476e-af66-6d706b110025"
+    },
+    {
+      "claim_id": "46e24b51-ec95-4ee3-95fb-007f301d391b",
+      "result_id": "cd590316-89c8-476e-af66-6d706b110025"
+    },
+    {
+      "claim_id": "fe6f869a-ca0a-4e6e-8d43-ea7f582ef46c",
+      "result_id": "cd590316-89c8-476e-af66-6d706b110025"
+    },
+    {
+      "claim_id": "f27f631f-92c2-46b5-b788-ee87fb768a6b",
+      "result_id": "f6558ef6-73b5-4f14-8f1a-09dce84f61d9"
+    },
+    {
+      "claim_id": "f4e9a958-0aff-4d48-9405-c7a8f0e9d0f7",
+      "result_id": "f6558ef6-73b5-4f14-8f1a-09dce84f61d9"
+    },
+    {
+      "claim_id": "14b23f6e-d0e6-41c8-a180-47a78f5c73de",
+      "result_id": "f6558ef6-73b5-4f14-8f1a-09dce84f61d9"
+    },
+    {
+      "claim_id": "f0e4ce61-0f5b-400f-8d95-459a7b4bcf43",
+      "result_id": "f6558ef6-73b5-4f14-8f1a-09dce84f61d9"
+    },
+    {
+      "claim_id": "b37bb50b-94fd-4278-84dc-4b2ee82e6de0",
+      "result_id": "f6558ef6-73b5-4f14-8f1a-09dce84f61d9"
+    },
+    {
+      "claim_id": "d383b819-6bf9-4524-9a4c-0fb920e3a1e4",
+      "result_id": "f6558ef6-73b5-4f14-8f1a-09dce84f61d9"
+    },
+    {
+      "claim_id": "0a42dfe4-3e02-4f4a-a62e-78ac93eb0c4f",
+      "result_id": "3b514ea6-7ba3-4a88-b8f4-b914da29c34b"
+    },
+    {
+      "claim_id": "dba0d000-1464-4d60-bec1-33abe60924f8",
+      "result_id": "3b514ea6-7ba3-4a88-b8f4-b914da29c34b"
+    },
+    {
+      "claim_id": "3e3ebc21-3f14-4370-adcc-023800be10b9",
+      "result_id": "3b514ea6-7ba3-4a88-b8f4-b914da29c34b"
+    },
+    {
+      "claim_id": "13e4ef1e-11fb-44f6-8e15-d11ea27e92ca",
+      "result_id": "3b514ea6-7ba3-4a88-b8f4-b914da29c34b"
+    },
+    {
+      "claim_id": "a9494f57-def6-49a5-b14e-824123be0af3",
+      "result_id": "3b514ea6-7ba3-4a88-b8f4-b914da29c34b"
+    },
+    {
+      "claim_id": "baf622f5-154c-4716-ae99-3563390b588d",
+      "result_id": "3b514ea6-7ba3-4a88-b8f4-b914da29c34b"
+    },
+    {
+      "claim_id": "781685fb-72b5-4296-b5e0-703f6e380cc5",
+      "result_id": "0e06c9c6-fcaf-4807-9ecc-872bc74081b9"
+    },
+    {
+      "claim_id": "e531310e-b44d-4775-812c-0217c92701cf",
+      "result_id": "0e06c9c6-fcaf-4807-9ecc-872bc74081b9"
+    },
+    {
+      "claim_id": "e1edac05-bef4-4f9f-8a4e-00d8de65fee9",
+      "result_id": "0e06c9c6-fcaf-4807-9ecc-872bc74081b9"
+    },
+    {
+      "claim_id": "b63d1e45-769a-4465-a3b8-8103ed2151ad",
+      "result_id": "43ceb11a-9096-44c8-ab9f-0a986bafb79d"
+    },
+    {
+      "claim_id": "902332ba-7e47-40d3-a741-233ce401e055",
+      "result_id": "43ceb11a-9096-44c8-ab9f-0a986bafb79d"
+    },
+    {
+      "claim_id": "ab0c2096-9c33-4ff8-8ef6-1d72b3fe46af",
+      "result_id": "c632b8d7-1dc1-415d-bc9d-7c8b9c288245"
+    },
+    {
+      "claim_id": "20ad46b2-5081-4f36-92cc-0d0a8a36fb63",
+      "result_id": "c632b8d7-1dc1-415d-bc9d-7c8b9c288245"
+    },
+    {
+      "claim_id": "b6c7f444-9c2a-4b89-a539-c427509ae3e9",
+      "result_id": "c632b8d7-1dc1-415d-bc9d-7c8b9c288245"
+    },
+    {
+      "claim_id": "b93a6e20-5174-4163-9059-9cd8c41839ee",
+      "result_id": "c632b8d7-1dc1-415d-bc9d-7c8b9c288245"
+    },
+    {
+      "claim_id": "435e9c7c-abdf-46ce-8b10-2f0ff9fd906b",
+      "result_id": "c632b8d7-1dc1-415d-bc9d-7c8b9c288245"
+    },
+    {
+      "claim_id": "b2775def-1f4a-4a79-a7a7-a4389af7bbf8",
+      "result_id": "16656bc1-8e4d-4341-84f3-d7c025a3bd5c"
+    },
+    {
+      "claim_id": "13c96cb8-4fa5-45a5-8aad-07d19824b788",
+      "result_id": "16656bc1-8e4d-4341-84f3-d7c025a3bd5c"
+    },
+    {
+      "claim_id": "99579ed8-6571-4555-a766-ab382864d970",
+      "result_id": "16656bc1-8e4d-4341-84f3-d7c025a3bd5c"
+    },
+    {
+      "claim_id": "417211b8-e59e-440d-b95f-236f3b1426b4",
+      "result_id": "16656bc1-8e4d-4341-84f3-d7c025a3bd5c"
+    },
+    {
+      "claim_id": "af670559-5eb0-4973-8eab-0ff9cb364237",
+      "result_id": "16656bc1-8e4d-4341-84f3-d7c025a3bd5c"
+    },
+    {
+      "claim_id": "0294c5a2-3874-406a-915b-59fe0f5c0cc2",
+      "result_id": "16656bc1-8e4d-4341-84f3-d7c025a3bd5c"
+    },
+    {
+      "claim_id": "95cafa83-9827-46c1-a676-2fae3c8659e6",
+      "result_id": "16656bc1-8e4d-4341-84f3-d7c025a3bd5c"
+    },
+    {
+      "claim_id": "db9255ed-dd2e-429c-85d8-c2cb7a5515dc",
+      "result_id": "16656bc1-8e4d-4341-84f3-d7c025a3bd5c"
+    },
+    {
+      "claim_id": "3460f69f-62cf-42ca-9871-5d2b30693b43",
+      "result_id": "773be78b-490e-4a45-a405-ec039df786b3"
+    },
+    {
+      "claim_id": "d5bf6976-37e6-4c16-8baf-70e315c9b446",
+      "result_id": "773be78b-490e-4a45-a405-ec039df786b3"
+    },
+    {
+      "claim_id": "d2cb1e46-f6ba-4abb-a271-58e3ea9e41b4",
+      "result_id": "7eabdcfa-76ba-484c-9037-5a1d48c06a4c"
+    },
+    {
+      "claim_id": "d288c11e-1f76-4438-8ebb-59d500616214",
+      "result_id": "7eabdcfa-76ba-484c-9037-5a1d48c06a4c"
+    },
+    {
+      "claim_id": "0d6ccd9b-507a-406e-98f4-80a36f7186b6",
+      "result_id": "7eabdcfa-76ba-484c-9037-5a1d48c06a4c"
+    },
+    {
+      "claim_id": "2b0b7a76-0e53-4042-9841-3fa9b1157972",
+      "result_id": "f165ae7a-bee4-4e37-ae0b-fa6682425e25"
+    },
+    {
+      "claim_id": "ce14fbf8-460f-43c5-a3df-e5c966f86907",
+      "result_id": "f165ae7a-bee4-4e37-ae0b-fa6682425e25"
+    },
+    {
+      "claim_id": "43b02d1d-71e2-45b8-9d25-52bece3122cf",
+      "result_id": "f165ae7a-bee4-4e37-ae0b-fa6682425e25"
+    },
+    {
+      "claim_id": "115c14a2-1fc7-45a6-9398-15f14bece22f",
+      "result_id": "f165ae7a-bee4-4e37-ae0b-fa6682425e25"
+    },
+    {
+      "claim_id": "812efe44-ff01-463c-8c0c-fc40bb52de0d",
+      "result_id": "f165ae7a-bee4-4e37-ae0b-fa6682425e25"
+    },
+    {
+      "claim_id": "4bb37dcc-5df3-4e4a-910e-8efb141638a4",
+      "result_id": "f165ae7a-bee4-4e37-ae0b-fa6682425e25"
+    },
+    {
+      "claim_id": "8246577d-9abe-4f2b-ab27-fc60e2adb6b9",
+      "result_id": "dcec5c8d-8d3a-4a66-b3df-62398335e99c"
+    },
+    {
+      "claim_id": "f58e9859-7eb1-47f0-b458-8ee2693ccb08",
+      "result_id": "dcec5c8d-8d3a-4a66-b3df-62398335e99c"
+    },
+    {
+      "claim_id": "d97e9aeb-f99b-4e44-b111-0a67ed71bd6d",
+      "result_id": "dcec5c8d-8d3a-4a66-b3df-62398335e99c"
+    },
+    {
+      "claim_id": "df3b4488-60f1-444f-80c2-991f52cf4647",
+      "result_id": "b304eb4b-c41c-4c87-af89-930c5a14aa1f"
+    },
+    {
+      "claim_id": "44400c42-a238-4ead-b255-b833a1fc9ed7",
+      "result_id": "b304eb4b-c41c-4c87-af89-930c5a14aa1f"
+    },
+    {
+      "claim_id": "c018168c-51a3-4862-968a-bab54f3db8b3",
+      "result_id": "b304eb4b-c41c-4c87-af89-930c5a14aa1f"
+    },
+    {
+      "claim_id": "67729a41-cba9-4b9a-9257-eba1b202c6f3",
+      "result_id": "b304eb4b-c41c-4c87-af89-930c5a14aa1f"
+    },
+    {
+      "claim_id": "240b184b-43ca-4c8c-9e8b-bc68ac5a917e",
+      "result_id": "90d1ee62-dfa3-4145-9fa6-485fc2c2b7cd"
+    },
+    {
+      "claim_id": "b2647b5d-8e49-4efa-b851-e7850c2ba799",
+      "result_id": "90d1ee62-dfa3-4145-9fa6-485fc2c2b7cd"
+    },
+    {
+      "claim_id": "0ca05022-b186-4df0-a068-c29853697d57",
+      "result_id": "90d1ee62-dfa3-4145-9fa6-485fc2c2b7cd"
+    },
+    {
+      "claim_id": "1337ea1f-079e-4de3-85a3-5f9901af5963",
+      "result_id": "90d1ee62-dfa3-4145-9fa6-485fc2c2b7cd"
+    },
+    {
+      "claim_id": "af558399-c42f-4661-b58e-a0323c31e2e1",
+      "result_id": "90d1ee62-dfa3-4145-9fa6-485fc2c2b7cd"
+    },
+    {
+      "claim_id": "c72559e9-5a0c-4c87-8860-5653f9008444",
+      "result_id": "cf02f96f-0c6d-4797-b8c4-9fa32b8a681e"
+    },
+    {
+      "claim_id": "f2314d4f-3bcc-4fa5-ba30-def2ed5a280d",
+      "result_id": "cf02f96f-0c6d-4797-b8c4-9fa32b8a681e"
+    },
+    {
+      "claim_id": "fc47652e-798f-485b-98c9-c58b6bfff03d",
+      "result_id": "cf02f96f-0c6d-4797-b8c4-9fa32b8a681e"
+    },
+    {
+      "claim_id": "8f74c30e-7c47-4b29-82ea-76342497fda1",
+      "result_id": "cf02f96f-0c6d-4797-b8c4-9fa32b8a681e"
+    },
+    {
+      "claim_id": "5f39a28a-da6a-480c-aeb3-524446dd6a34",
+      "result_id": "cf02f96f-0c6d-4797-b8c4-9fa32b8a681e"
+    },
+    {
+      "claim_id": "50936654-3755-487d-acbc-eeb186ba38a6",
+      "result_id": "cf02f96f-0c6d-4797-b8c4-9fa32b8a681e"
+    },
+    {
+      "claim_id": "d2ae31ea-cbe1-416c-b786-aa2ce40e9180",
+      "result_id": "cf02f96f-0c6d-4797-b8c4-9fa32b8a681e"
+    },
+    {
+      "claim_id": "b6631f08-6fd9-430e-adc3-15d42f947ffd",
+      "result_id": "cf02f96f-0c6d-4797-b8c4-9fa32b8a681e"
+    },
+    {
+      "claim_id": "131033d6-39bd-4ba6-a310-3c8eb86c7453",
+      "result_id": "cf02f96f-0c6d-4797-b8c4-9fa32b8a681e"
+    },
+    {
+      "claim_id": "edad695e-f171-43da-b46f-fd602610839c",
+      "result_id": "cf02f96f-0c6d-4797-b8c4-9fa32b8a681e"
+    },
+    {
+      "claim_id": "6b939639-7854-46bb-b5f8-7581ab1632c4",
+      "result_id": "cf02f96f-0c6d-4797-b8c4-9fa32b8a681e"
+    },
+    {
+      "claim_id": "d6f3dbdc-3cbe-4070-993b-d0a465303d4e",
+      "result_id": "cf02f96f-0c6d-4797-b8c4-9fa32b8a681e"
+    },
+    {
+      "claim_id": "72d05da8-d413-488d-ad2d-bfbcd3d7dfc8",
+      "result_id": "cf02f96f-0c6d-4797-b8c4-9fa32b8a681e"
+    },
+    {
+      "claim_id": "2b93882b-8f5d-4a06-8618-dc5e36ef6fee",
+      "result_id": "cf02f96f-0c6d-4797-b8c4-9fa32b8a681e"
+    },
+    {
+      "claim_id": "817d702b-70c0-4376-8ffe-571ac35d4d58",
+      "result_id": "cf02f96f-0c6d-4797-b8c4-9fa32b8a681e"
+    },
+    {
+      "claim_id": "7ffed8bc-8346-45b9-8dbb-c45d07d93621",
+      "result_id": "cf02f96f-0c6d-4797-b8c4-9fa32b8a681e"
+    },
+    {
+      "claim_id": "ae6f940b-e067-4c59-a1c6-d702d486bbcd",
+      "result_id": "9fc73943-06e5-4fe8-a587-71526a9d94b4"
+    },
+    {
+      "claim_id": "152f93c8-71dc-49c8-b217-f9760b9d74dc",
+      "result_id": "9fc73943-06e5-4fe8-a587-71526a9d94b4"
+    },
+    {
+      "claim_id": "2856c764-08c1-4bd8-a8b1-4d1e0640a9f4",
+      "result_id": "f251bb2e-fa28-45d0-96bf-426a9e9ca4ea"
+    },
+    {
+      "claim_id": "66240c45-1bd3-4f4b-88d7-dab8f14ac9d1",
+      "result_id": "f251bb2e-fa28-45d0-96bf-426a9e9ca4ea"
+    },
+    {
+      "claim_id": "7da49f8e-e012-439c-b3ea-5f724cada118",
+      "result_id": "f251bb2e-fa28-45d0-96bf-426a9e9ca4ea"
+    },
+    {
+      "claim_id": "1105c995-931d-4d37-9adf-2bada51a0706",
+      "result_id": "f251bb2e-fa28-45d0-96bf-426a9e9ca4ea"
+    },
+    {
+      "claim_id": "12a36713-aeaf-4e70-894f-f74cdf5376cc",
+      "result_id": "3edb152e-123d-42e7-9914-0b82d7de13bb"
+    },
+    {
+      "claim_id": "782c9415-8fef-4dd1-8c59-8686bbf6889a",
+      "result_id": "3edb152e-123d-42e7-9914-0b82d7de13bb"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1767 @@
+{
+  "submission": {
+    "id": "e5659d31-7a4f-4f87-a167-ed1ae37772fd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:41:30.652666Z",
+    "updated_at": "2025-12-01T21:41:30.652666Z"
+  },
+  "content": [
+    {
+      "id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "submission_id": "e5659d31-7a4f-4f87-a167-ed1ae37772fd",
+      "content_type": "manuscript",
+      "content_text": "# Conserved neural circuit structure across Drosophila larval development revealed by comparative connectomics\n\n## Authors\n\n- Stephan Gerhard<sup>1</sup> ([ORCID: 0000-0003-4454-6171](https://orcid.org/0000-0003-4454-6171))\n- Ingrid Andrade<sup>1</sup>\n- Richard D Fetter<sup>1</sup>\n- Albert Cardona<sup>1</sup> ([ORCID: 0000-0003-4941-6536](https://orcid.org/0000-0003-4941-6536)) \u2020\n- Casey M Schneider-Mizell<sup>1</sup> ([ORCID: 0000-0001-9477-3853](https://orcid.org/0000-0001-9477-3853)) \u2020\n\n### Affiliations\n\n1. Janelia Research Campus Howard Hughes Medical Institute Ashburn United States\n2. Department of Physiology, Development and Neuroscience University of Cambridge Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring postembryonic development, the nervous system must adapt to a growing body. How changes in neuronal structure and connectivity contribute to the maintenance of appropriate circuit function remains unclear. Previously , we measured the cellular neuroanatomy underlying synaptic connectivity in Drosophila (Schneider-Mizell et al., 2016). Here, we examined how neuronal morphology and connectivity change between first instar and third instar larval stages using serial section electron microscopy. We reconstructed nociceptive circuits in a larva of each stage and found consistent topographically arranged connectivity between identified neurons. Five-fold increases in each size, number of terminal dendritic branches, and total number of synaptic inputs were accompanied by cell type-specific connectivity changes that preserved the fraction of total synaptic input associated with each pre-synaptic partner. We propose that precise patterns of structural growth act to conserve the computational function of a circuit, for example determining the location of a dangerous stimulus.\n\n## Introduction\n\nAs an animal undergoes postembryonic development, its nervous system must continually adapt to a changing body. While developing neural circuits can produce new behaviors, such as the addition of new swimming strategies in zebrafish (Bj\u00f6rnfors and El Manira, 2016), in many cases circuit function is conserved as an animal grows. For example, as a Drosophila larva grows from a first instar just out of the egg to a third instar ready to pupariate, its body wall surface area grows by two orders of magnitude (Keshishian et al., 1993). To accommodate this growth, mechanosensory neurons grow their dendrites to maintain receptive fields (Grueber et al., 2002), while larval motor neurons add more synapses at the neuromuscular junction and change firing properties to maintain functional responses in much larger muscles (Keshishian et al., 1993; Guan et al., 1996; Davis and Goodman, 1998; Rasse et al., 2005). Similar functional maintenance has been observed in central circuits as well, from the frequency selectivity of cricket mechanosensory interneurons (Murphey and Chiba, 1990) to motor rhythms in crustacean stomatogastric ganglion (STG) (Bucher et al., 2005).\n\nA neuron\u2019s function arises from the combination of its morphology, synaptic connectivity, and ion channel properties. If morphology and membrane properties co-vary in precise ways, a neuron\u2019s integration properties can be consistent across homologous cells, even between species with very different brain sizes (Cuntz et al., 2013). Homeostatic regulation of functional and structural properties has been proposed as a key principle in neuronal development, allowing consistent output in the presence of both growth and an uncertain or ever-changing environment (K\u00e4mper and Murphey, 1994; Bucher et al., 2005; Marder and Goaillard, 2006; Tripodi et al., 2008; Giachello and Baines, 2017).\n\nIt remains unclear how neuronal circuits adapt during development by changing their anatomical structure \u2014 varying size, adding branches, or producing new synaptic connections \u2014 as opposed to adaptation in intrinsic functional properties like ion channel expression and distribution. Studies of circuit variability offer hints, since variability reflects differences in the outcomes of neurons following the same developmental rules. For rhythmic pattern generator circuits, similar temporal dynamics can be produced in many different ways. Simulations of STG have found that numerous different combinations of intrinsic functional parameters and synaptic weights are able to produce extremely similar dynamics (Grashow et al., 2010; O'Leary et al., 2014; Prinz et al., 2004). Correspondingly, the morphological structure of neurons (Otopalik et al., 2017) and their functional connection strengths (Goaillard et al., 2009) have been observed to have high inter-animal variability while still generating similar motor patterns. Observations of inter-animal variability in leach heartbeat networks (Norris et al., 2011; Roffman et al., 2012) suggest that this may be a general principle for rhythm generating circuits.\n\nHowever, synaptic-resolution electron microscopy (EM) reconstructions from Drosophila sensory systems have found relatively low intra-animal variation in number of synaptic contacts between columnarly repeated neurons in the adult visual system (Takemura et al., 2015) or bilaterally repeated neurons in the mechanosensatory (Ohyama et al., 2015), visual (Larderet et al., 2017), and olfactory (Berck et al., 2016) systems. Comparisons between individuals at this scale have been limited due to incomplete image volumes (Ohyama et al., 2015) or high error rates with early reconstruction methods (Takemura et al., 2013).\n\nHere, we used detailed circuit reconstruction from EM to study the circuitry of identified neurons across postembryonic development in two Drosophila larvae. Despite considerable growth in body size between hatching and pupariation, almost no new functional neurons are added to the larval nervous system (Truman and Bate, 1988) and behavior remains largely unchanged (Almeida-Carvalho et al., 2017). Nonetheless, electrophysiological and light microscopy analysis has shown that central neurons become larger (Zwart et al., 2013) and have more synapses both in total (Zwart et al., 2013) and in specific connections (Couton et al., 2015).\n\n## Results\n\n### mdIV axon terminals increase in size and number of synapses\n\nWe focused on nociception, a somatosensory modality crucial for larvae to avoid wide-ranging sources of damage, such as parasitoid wasp attack (Hwang et al., 2007; Robertson et al., 2013) or intense light (Xiang et al., 2010). Nociceptive stimuli are detected by the three multidendritic class IV sensory neurons (mdIVs) (Hwang et al., 2007) in each hemisegment, with dendrites that tile the body wall (Figure 1A) (Grueber et al., 2002). We began by investigating the structure of the mdIV axon terminals at first and third instar stages. The mdIV terminals in abdominal segment A1 of an early first instar larva EM volume (L1v) were previously reconstructed (Ohyama et al., 2015). We generated a new serial section transmission EM volume of a late third instar larva (L3v) spanning several abdominal segments of the ventral nerve cord (VNC) (Figure 1\u2014figure supplement 1A,B). In the L3v, we manually reconstructed the six mdIV terminals (three per hemisegment) in abdominal segment A3 (Figure 1B,C and Figure 1\u2014figure supplement 1C) using the web-based tool CATMAID (Saalfeld et al., 2009; Schneider-Mizell et al., 2016). Segment A3 was chosen due to its centrality in the L3v and lack of image artifacts or missing sections. In all cases, we reconstructed neurons as skeletons, expressing the 3D topology of neuronal arbors, but not their diameter or volume. The identity of each mdIV terminal was determined based on stereotyped morphological features such as antero-posterior projections, midline crossing, and nerve bundle (Figure 1B,C and Figure 1\u2014figure supplement 2) (Merritt and Whitington, 1995; Grueber et al., 2007; Ohyama et al., 2015).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/29089/elife-29089-fig1-v2.jpg)\n\n**Figure 1.:** (A) Cartoon comparison of the dendritic fields of the three nociceptive mdIV sensory neurons from a single hemisegment at first and third instar stages; sagittal view; anterior to left. (B) Dorsal view of EM reconstructions of all mdIV terminals from a single abdominal segment in the L1v (left; segment A1, first instar larva) and L3v (right; segment A3, third instar larva) data. Colors are as in A. The vertical extent of the gray box indicates the width of the neuropil; anterior to left; dashed line indicates midline. (C) Morphology of the terminals of each mdIV subtype, presented as in B. Unbranched primary projections from the nerve are cropped. (D) Dorsal view of a single vdaB terminal from the L1v and L3v, shown with synapses (outputs, red; inputs, cyan). Dashed line indicates midline. (E) Number of synaptic outputs on each mdIV terminal. L1v (solid bars), L3v (empty bars); left/right bar corresponds to left/right neuron. (F) Fold-change in synaptic outputs in the L1v and L3v. For each mdIV subtype, left and right neurons were averaged. (G) A standard polyadic synapse. In this example, taken from the L3v, the single pre-synaptic site (red arrowhead) has four post-synaptic contacts (cyan arrowheads). (H) Normalized histogram of number of post-synaptic contacts per pre-synaptic site on mdIV terminals (No significant difference; p=0.5641, two-sided Kolmogorov-Smirnov test). n.s. not significant; *p$<$0.05. **p$<$0.01. ***p$<$0.001.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29089/elife-29089-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic of the region of the third instar larva CNS sectioned and imaged for the L3v. Anterior is up. (B) A single section of L3v includes the complete neuropil (region inside white outline) and all soma (region outside white outline). Dorsal is up. (C) Ventromedial neuropile indicated in the blue outline in B. Neurite cross-sections highlighted in orange correspond to ipsilateral mdIV axons. (D\u2013F\u2019) Example synapses from vdaB (E), v\u2019ada (E,E\u2019), and ddaC (F,F\u2019) terminals. Vesicles and pre-synaptic specializations highlighted by the red arrowhead. Post-synaptic neurons from LNs described in the main text are highlighted. Note the combination of small and dense core vesicles found in all three mdIV neurons.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29089/elife-29089-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A, A\u2019), Dorsal view of all mdIV terminals from the L1v (A) and L3v (A\u2019), identities as labeled. Views are at the same scale. Dashed lines indicate lateral neuropil boundaries, solid line the midline. (B, B\u2019) ddaC terminals in the L1v (B) and L3v (B\u2019), left and right shown separately for clarity, as in all subsequent panels. ddaC can be distinguished by a midline crossing where the axon initially approaches the midline from the nerve and a projection into the adjacent segment posterior with little to no midline crossing. (C, C\u2019), v\u2019ada terminals in the L1v (C) and L3v (C\u2019) can be distinguished by a lack of midline crossings and a projection into the adjacent segments anterior and, typically, posterior. D, D\u2019, vdaB terminals in the L1v (D) and L3v (D\u2019) can be distinguished by a midline crossing both where the axon initially approaches the midline and a second midline crossing in the adjacent segment anterior. Note that for all mdIV types, there is some variability \u2014 extra or missing branches, such as the missing posterior branch of the right L1v v\u2019ada, are true reflections of the data \u2014 although certain features remain typical across most cell types.\n\nThe morphology of mdIV axon terminals remained similar across larval stages, with\u00a0growth in overall size but no change\u00a0in branching patterns (Figure 1B\u2013D and Figure 1\u2014figure supplement 2). However, the number of synaptic outputs increased by a factor of 4.7, from a mean of 185 synapses per terminal to 872 synapses per terminal (Figure 1E,F). Insect synapses are polyadic, with multiple post-synaptic targets per pre-synaptic site (Figure 1G), thus this increase could arise from either changes in the number of distinct pre-synaptic sites or the number of targets per pre-synaptic site. We found no significant difference between the distribution of number of post-synaptic targets for mdIV pre-synaptic sites in the L1v compared to the L3v (Figure 1H), suggesting the structure of individual polyadic synapses remains unchanged.\n\n### Nociceptive interneurons increase in total dendritic cable length and synaptic inputs\n\nThe pattern of sensory input onto second-order interneurons is a key component of early sensory processing. To comprehensively identify all second-order mdIV neurons in the L1v, we used all pre- or post-synaptic contacts with mdIV terminals to seed further reconstructions (Figure 2A). We found that there are 13 distinct cell types stereotypically connected to mdIV terminals (Figure 2\u2014figure supplement 1A\u2013C). Five types were local neurons (LNs), with dendrites covering 1\u20132 segments (Figure 2B); three were regional, with dendrites covering 3\u20135 segments; four were ascending neurons projecting across the entire VNC; and one was a descending neuron with an axon that projected along the whole VNC (Figure 2\u2014figure supplement 1A). One cell type (A02n) was comprised of two indistinguishable cells per hemisegment, unusual for the larva, making a total of twelve LNs cells per segment. Note that two LNs, A09a and A09c, have been the focus of previous work under the names \u2019Basin-2\u2019 and \u2019Basin-4\u2019 (Ohyama et al., 2015; Jovanic et al., 2016). Second-order nociceptive interneurons formed a sparse network (Figure 2\u2014figure supplement 1B,C), without the densely connected local interneurons found in other early processing of other Drosophila sensory modalities like olfaction (Berck et al., 2016; Liu and Wilson, 2013) or mechanosensation (Jovanic et al., 2016; Tuthill and Wilson, 2016).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/29089/elife-29089-fig2-v2.jpg)\n\n**Figure 2.:** (A), Starting from the synapses of the mdIVs in segment A1 of the L1v, we reconstructed all synaptic partners (grays). See Figure 2\u2014figure supplement 1 for details of each cell type. Dorsal view, gray outline indicates CNS boundary; anterior is to left. (B) Examples of the anatomy of all five classes of LNs from the L1v. Posterior view; gray outline indicates neuropile boundary, orange shows mdIV position. (C) Based on the mdIV reconstructions in the L3v (orange), we reconstructed the same populations of all mdIV LNs in segment A3 (grays; 12 LN cells in total). (D) Examples of the anatomy of all five classes of LNs from the L3v, shown as in B. (E) All neurons were split into axonal and dendritic compartments based on well-separated synaptic input and output domains. The example shown is the A02n from D. (F), Total dendritic cable length for all LNs. (G) Number of synaptic inputs onto LN dendrites. (H) Fold-change in dendritic cable length and dendritic synaptic inputs between the L1v and L3v LNs.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29089/elife-29089-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) All cell types synaptically connected to mdIV terminals in the L1v. Cell types were organized by spatial extent of the dendrites. Dorsal views of a single example of each interneuron cell type (black) and the mdIV terminals of segment A1 (orange), anterior to left. Outline indicates CNS boundary. Local neurons (LNs) had dendrites spanning 1\u20132 segments, regional neurons (RNs) had dendrites spanning 3+\u00a0segments but not the whole VNC, a descending neuron (DN) had dendrites in subesophageal zone (SEZ) and an axon in VNC, and ascending neurons (ANs) had cell bodies in the posterior tip and projections that spanned the entire VNC toward the brain. See Supplemental Atlas for more views of cell types. (B) Connectivity between individual cells in the mdIV network expressed as an adjacency matrix. Entries indicate the number of synaptic contacts from the column neuron to the row neuron. Black lines separate mdIV/LN/RN/DN/AN classes. Note that mdIV order is clockwise from ventral left. (C) Connectivity between cell types in the mdIV network. Each column indicates connections from cell types in the left category to all cell types. Line thickness indicates number of synapses. Connections not observed at least twice at a 3+\u00a0synapse level are not shown here. In addition to the LN networks discussed elsewhere, we also find a strong pathway for feedback regulation of mdIV terminals. The SEZ neuron SeIN138 has an axonal projection descending through every abdominal segment, along which it both receives synaptic input from and outputs back onto mdIV terminals of all subtypes, offering a local axo-axonal feedback pathway across just a few microns of axonal arbor. Interestingly, SeIN136 also receives dendritic input near the SEZ from two ascending mdIV projection neurons, A08m and TePn19, that receive mdIV input throughout the nerve cord. This mdIV$\u2192$AN$\u2192$DN$\u2192$mdIV pathway could allow every mdIV terminal across the body to be presynaptically regulated by ascending nociceptive input coming from any one location on the body. No other cell type was strongly or consistently pre-synaptic to mdIV terminals, suggesting this is the only such direct pathway.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29089/elife-29089-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Total axonal cable length for A02n, A09l, and A10a. The LNs A09a and A09c had incomplete axons in the L3v due to the limited extent of the image volume and are omitted from axon-related analysis here. (B) Number of synaptic inputs onto LN axons. (C) Number of axonal outputs for LNs. (D) Number of synaptic outputs on the dendrites of each LN. All neuron types that exhibited dendritic outputs in the L3v also had them in the L1v, suggesting that all of the basic categories of connections are preserved. (E) Fold-change between the L1v and L3v for the properties in A\u2013D. Colors correspond to cell types. Axonal cable scales significantly less than dendritic cable (p=0.009, two sided t-test with Bonferroni correction), though other differences between axonal and dendritic property scaling are not significant. (F) Segregation index for complete LNs, which measures the degree of input/output segregation of a neuron (one indicates a completely segregated neuron, with all outputs in one region and all inputs in another; 0 indicated a neuron with completely intermixed inputs and outputs. See Materials\u00a0and\u00a0methods for precise definition.) Note that segregation index is generally maintained as a cell\u00a0type-specific property across larval stages.\n\nTo measure how second-order nociceptive interneurons change across larval growth, we reconstructed all twelve third instar LNs in the L3v (Figure 2C). Each LN was morphologically identifiable, despite increases in size, arbor complexity, and synaptic count (Figure 2B,D). For every LN, the spatial segregation of synaptic input and synaptic output made it possible to split neuronal arbors into a separate dendritic domain and axonal domain (Figure 2E). Dendritic cable length, defined as the sum total length of all dendritic neurites, increased by an average factor of $4.69\\pm0.28$, consistent with the increase measured from light microscopy in larval motor neurons (Zwart et al., 2013) (Figure 2F,H). The number of synaptic inputs onto LN dendrites increased similarly, by an average factor of $5.28\\pm0.52$ (Figure 2G,H). Only three LN types had axons fully contained in the L3v (A02n, A08l, and A10a), but our data suggest that axons and dendrites differed in their overall morphological growth (Figure 2\u2014figure supplement 2A\u2013E). In particular, axonal cable length increased by an average factor of only $2.15\\pm0.33$, significantly less than the scale-up of dendritic cable (Figure 2\u2014figure supplement 2A,E), and close to the overall 1.7\u20131.8 times scale-up of neuropile width (L1v: 43 $\\mu$m; L3v, 72 $\\mu$) and segment length (L1v, 15 $\\mu$m; L3v, 27 $\\mu$m). Only those LN types that exhibited dendritic outputs in the L1v also did so in the L3v (Figure 2\u2014figure supplement 2D). For each LN the broad pattern of segregation between synaptic inputs and outputs, which indicates the degree of local dendritic output and axonal pre-synaptic input, was preserved over postembryonic development (Figure 2\u2014figure supplement 2F).\n\n### Nociceptive interneurons maintain a topographically-arranged distribution of mdIV synaptic inputs across larval development\n\nSince both mdIV terminals and LN dendrites grow more synapses, we next measured how the synaptic connectivity from mdIVs onto LNs changed across larval development. Every LN in the L3v received synaptic input from mdIVs (Figure 1\u2014figure supplement 1D\u2013F). On average, the total count of synaptic input from mdIVs differed by a factor of $5.77\\pm1.11$ from the L1v (Figure 3A,C). However, the normalized synaptic input, defined here as the number of synapses in a connection divided by the total number of dendritic input synapses on the post-synaptic neuron, remained strikingly stable, changing by an average factor of $1.09\\pm0.20$ (Figure 3B,C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/29089/elife-29089-fig3-v2.jpg)\n\n**Figure 3.:** (A) Number of synaptic inputs onto LNs from mdIV terminals in the same segment. (B) Normalized dendritic synaptic input from mdIV terminals for each LN. (C) Fold-change in number of synapses and normalized synaptic inputs from mdIVs for each LN type. (D) Heatmap of normalized dendritic input from each mdIV terminal onto each LN for L1v (left) and L3v (right). Note that mdIV terminals are ordered clockwise from ventral left. (E) Normalized dendritic input from mdIVs onto LNs is strongly correlated across animals and developmental time points. Each data point corresponds to average normalized dendritic input from an mdIV type onto an LN type. (Pearson\u2019s r\u00a0=\u00a00.77, p$<$0.001 to be different from zero). (F) Asymmetry between normalized mdIV synaptic input into left and right LNs, measured as coefficient of variation. Asymmetry in the L3v is significantly lower (p=0.006, paired two sided t-test). (G) Cartoon of the larval body wall viewed from posterior. The dendritic receptive field of each mdIV covers approximately 1/6 of the circumference of the animal. (H) Mean body wall orientation of mdIV input into each LN in the L1v (left) and L3v (right), computed as the average of unit vectors pointing at the center of each mdIV dendrite receptive field, weighted by number of synaptic inputs from that neuron. Arrow color corresponds to LN type. n.s. not significant; *p$<$0.05. **p$<$0.01. ***p$<$0.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29089/elife-29089-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Synaptic connectivity between LN cell types in the L1v (solid bars) and L3v (empty bars). Each bar plot depicts the number of synapses each cell of the post-synaptic cell type (rows) receives from all cells of the pre-synaptic cell type (columns). Cell types are labeled with spatial receptive fields from Figure 3H. Each cell type that was strongly connected in the L1v was again connected in the L3v. Strikingly, the dorsally oriented A09a targeted the dorsally oriented A02n and the ventrolaterally oriented A09c and A09l targeted the ventrolaterally oriented A10a, suggesting feed-forward topographic microcircuits. (B) Normalized synaptic connectivity between LNs. (C) Mean strength, measured as normalized synaptic inputs, for specific connections between cell types in the L1v and L3v. The number of data points is too small to make a statistical conclusion.\n\nLNs do not receive synaptic input equally from all mdIV subtypes. The normalized synaptic input into each LN from each mdIV axon was highly structured in both L1v and L3v data (Figure 3D). For each mdIV type and LN type, the average normalized synaptic input was significantly correlated between L1v and L3v (Figure 3E). Moreover, the variability between left and right cells of the same type was significantly lower in the L3v than the L1v (Figure 3F). These observations suggest that there is, effectively, a target value for the normalized synaptic input for each connection and this value is achieved more precisely as the nervous system develops postembryonically.\n\nWe speculated that the ability to respond according to location of stimuli on the body wall is likely to be an important conserved function of mdIV circuitry. Each segment of the body wall is spanned by six mdIVs whose dendritic fields divide the left and right sides into dorsal, lateral, and ventral thirds (Figure 3G) (Grueber et al., 2002). For each LN, we approximated the mean orientation of its input as the average of unit vectors oriented toward the center of each mdIV dendritic field, weighted by its associated synaptic count (Figure 3H) (see Materials\u00a0and\u00a0methods). We found that LN orientations span the body wall, and the orientation of LNs are conserved across development. Further, LN inputs are arranged so that a nociceptive stimulus smaller than a single mdIV\u2019s dendrite, for example a wasp ovipositor (Robertson et al., 2013), is likely to drive different populations of LNs based on its exact location, with the smallest difference being between left and right ventral regions (Figure 3D). Interestingly, only LNs with similar input orientations synaptically connect to one another (Figure 3\u2014figure supplement 1), suggesting that convergent feed-forward motifs are specifically present within sets of neurons likely to be driven at the same time. Conservation of synaptic input through larval development thus preserves the topographical structure of the nociceptive circuit, both in sensory input and interactions between interneurons.\n\n### The likelihood of synaptic contact between nearby neurons is stereotyped, cell\u00a0type-specific, and conserved across larval development\n\nTo better understand how synaptic and morphological changes work together to maintain specific patterns of normalized synaptic input, we analyzed the relationship between the spatial location of neuronal arbors and their connectivity. A post-synaptic neuron can only connect to pre-synaptic sites that are nearby in space, or \u2018potential synapses\u2019. Numerically strong connections could arise either due to a low probability of connecting to many nearby potential synapses, or to a high probability of connecting to fewer potential synapses. To distinguish these scenarios, we measured \u2018filling fraction\u2019 (Stepanyants et al., 2002), defined as the fraction of potential synapses that are actually connected (Figure 4A,B) (see Methods). In both the L1v and L3v, filling fraction ranged from 0.01 to 0.47, indicating that some connections from mdIV types to LNs were realized much more often than others. Filling fraction correlated strongly with the overall count of synapses in a connection, suggesting that numerically strong connections are produced through high connection probability, not only increased potential synapse counts (Figure 4C,D). Moreover, filling fraction was significantly correlated between the L1v and L3v (Figure 4E), suggesting that the local propensity to form stable synapses with a nearby cell type is preserved across development.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/29089/elife-29089-fig4-v2.jpg)\n\n**Figure 4.:** (A) Description of 'filling fraction\u2019 for a connection from Neuron 1 (purple) to Neuron 2 (black). Neurons can only be connected where they are adjacent to one another in space. A pre-synaptic site on Neuron 1 is a potential synapse from Neuron 1 to Neuron 2 if any part of Neuron 2 passes within a given radius (dashed circles). Filling fraction is defined as the number of potential synapses (red and green dashed circles) that are actually connected (green dashed circles only). (B) Dependence of filling fraction on the potential synapse radius for four example connections. For subsequent figures, we chose 2 $\\mu$m (filled circles) as a compromise between the typical size of a terminal branch and a shoulder in the filling-fraction versus radius curve. (C\u2013D) Mean filling fraction vs. mean number of synapses in the L1v (C) and L3v (D). Each data point represents the average value for connections from mdIV types onto LN types. The high correlation in both (L1v, Pearson $r$ = 0.99, p$<$0.001 different from zero; L3v, Pearson $r$ = 0.93, p$<$0.001) suggests that increased connection probability, not merely access to differing numbers of pre-synaptic synapses, helps set cell\u00a0type-specific differences in synaptic counts. (E) Filling fraction of mdIV type to LN type connections in the L1v and L3v are significantly correlated with one another (Pearson $r$ = 0.64, p=0.009).\n\nPost-synaptic connections are not evenly distributed throughout a neuron\u2019s dendrite. Most synaptic input onto a neuron is located on \u2018twigs\u2019, spine-like microtubule-free terminal branches hosting a small number of synapses, in contrast to the microtubule-containing \u2018backbone\u2019 that spans the soma and all of the main branches of a neuron (Leiss et al., 2009; Schneider-Mizell et al., 2016) (Figure 5A,B). In order to host an increased number of synaptic inputs, a neuron\u2019s twigs would need to change, growing more twigs or hosting more synapses per twig. To measure this, we manually identified all twigs in the twelve LNs (Figure 5\u2014figure supplement 1). We found that the number of twigs increased by an average factor of $2.70\\pm0.36$ (Figure 5C). The total length of dendritic cable that twigs span increased by a factor of $5.85\\pm0.31$, significantly more than dendritic backbone ($3.31\\pm0.20$) (Figure 5D). Both the fraction of dendritic cable comprised of twigs (Figure 5E,F) and the fraction of dendritic input synapses onto twigs (Figure 5G,H) increased significantly, suggesting that twigs become even more central to dendritic input.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/29089/elife-29089-fig5-v2.jpg)\n\n**Figure 5.:** (A) Definition of microtubule-containing \u2018backbone\u2019 (black) and microtubule-free, spine-like \u2018twigs\u2019 (red). (B) Example A02n cell (from the L3v) where all twigs are labeled, posterior view. (C) Number of twigs in each LN in the L1v and L3v. Inset: Fold-change in number of twigs between the L1v and L3v. (D) Fold-change in length of cable comprised of twigs or backbone in the L1v and L3v. Twigs increase more than backbone (two sided t-test). (E) Fraction of dendritic cable comprised of twigs for all LNs. (F) The average fraction of dendritic cable comprised of twigs per cell type was larger in L3v than L1v (two sided, paired t-test). (G) Input synapses that contact twigs as a fraction of all input synapses for all LNs. (H) The fraction of input synapses that are onto twigs increased significantly (two-sided, p=0.003, paired t-test). (I) Cartoon definition of Strahler order. Terminal tips are defined to have Strahler order 1. Where two branches with the same Strahler order converge, the value increments by one. The most core, proximal neurites thus have the highest Strahler order. (J) An example A09a cell from the L1v with branches labeled by Strahler order (Dorsal view). (K) Fraction of dendritic cable for each LN cell by Strahler order. The relative amount of cable with low Strahler order (i.e. distal) is approximately conserved between the L1v and L3v neurons. n.s. not significant; *p$<$0.05. **p$<$0.01. ***p$<$0.001.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29089/elife-29089-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Backbones are shown in black, twigs with colors. Neurons from the L1v are shown to left (Regular letters), neurons from the L3v to right (Primed letters). Posterior view with dorsal up. Scales are consistent across all figures, scale bars are 20 $\\mu$m.\n\n### An increased number of small twigs host a larger fraction of synaptic input\n\nMeasuring twigs requires painstaking visual inspection of EM imagery, so we also looked at a purely topological measure of neuronal arbor structure, Strahler order (Binzegger et al., 2005), that matches intuitive definitions of proximal and distal branches (Figure 5I,J). We found that the fraction of dendritic cable that is last or next-to-last (Strahler order 1 or 2) order is similar not only across development, but also across cell types (Figure 5K). For this observation to be consistent with the relative increase in dendritic twigs for cable, the properties of individual twigs must change so that twigs in the L3v have branches with higher Strahler order than in the L1v. This suggests that in the larva, neurons grow their dendrites by both increasing the number of twigs, while also modestly increasing the length of the backbone neurites from which they sprout.\n\n### Twigs remain short and continue to host few synaptic inputs\n\nTo get better insight into how twigs changed between the first and third instar, we measured the properties of individual twigs on LNs. Typical dendritic twigs in both the L1v and L3v are small. They were short in both total length and maximum depth from twig root, had few branch points, and few post-synaptic sites (Figure 6A). However, twigs in the L3v were slightly longer than their L1v counterparts and had significantly more branch points (Figure 6A). The median distance between adjacent twigs along neuronal backbone remains similar (L1v: 0.83 $\\mu\u2062m$; L3v: 1.03 $\\mu\u2062m$), suggesting that the density of twigs on branches remains similar even as neurons grow. In a few cases, we also found that there were quantitative differences between the twig properties of different cell types (e.g. A02n twigs were significantly longer and had greater maximum depth than those of other LNs Figure 6\u2014figure supplement 1), suggesting that individual cell types can deviate from the typical case.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/29089/elife-29089-fig6-v2.jpg)\n\n**Figure 6.:** (A) Distribution of morphological and synaptic properties of distinct twigs in the L1v and L3v LNs. Total twig length and maximum twig depth are in $\\mu$m, branch points and synapses are integer. Boxes are interquartile intervals, blue dashes are median values, and whiskers correspond to 5/95 percentiles. Wilcoxon rank sum test with Bonferroni correction. (B) Number of distinct twigs in a connection versus number of synapses in the same connection. The blue line indicates a linear fit to connections with five or more synapses (slope shown). The gray region corresponds to the disallowed situation of more twigs connected than synapses. (C) Histogram of number of synapses per twig in each mdIV$\u2192$LN connection. (D) The fraction of synapses in the connection from a v\u2019ada to an A09a in the L1v (9 synapses onto twigs) and L3v (56 synapses onto twigs) recovered after simulated random omission of twigs (N\u00a0=\u00a05000 instances), as a function of omission probability. Thick lines show median value, shaded region the 5/95 percentile value. The dashed horizontal line indicates the 25% of synapses recovered. (E) Maximum error rate permitting the recovery of 25% of synapses with probability $>$0.05 for each observed mdIV$\u2192$LN connection (i.e. where the horizontal dashed line crosses into the shaded area in D). Each data point is a single mdIV axon\u2019s synapses with a single LN. The vertical line indicates the error rate for twigs found previously for manual annotation of motor neurons (Schneider-Mizell et al., 2016). n.s. not significant; *p$<$0.05. **p$<$0.01. ***p$<$0.001.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29089/elife-29089-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** For each panel, bars indicate interquartile intervals, whiskers show 5/95 percentile lines. White dashes indicate median. Each bar collects twigs from all cells in the cell type, and each twig was weighted equally. (A) Box plots of total cable length per twig by cell type and developmental stage. (B) Box plots of maximum twig depth (distance from distal tip to twig base) by cell type and developmental stage. (C) Box plots of number of branch points per twig by cell type and developmental stage. (D) Box plots of number of input synapses per twig by cell type and developmental stage. (E) Box plots of minimum distance between twig bases along neuronal backbone by cell type and developmental stage. *p$<$0.05, **p$<$0.01, ***p$<$0.001, n.s.: not significant, two-sided t-test with Bonferonni correction.\n\n### The number of distinct twigs involved in a connection increases with the number of synaptic contacts\n\nWe next asked how the input from a pre-synaptic sensory neuron is distributed across the twigs on an LN\u2019s dendrite for each mdIV$\u2192$LN connection. Consistent with previous work in the first instar motor system (Schneider-Mizell et al., 2016), mdIV$\u2192$LN connections with many synaptic contacts were distributed across many twigs in both the L1v and L3v \u2014 approximately one twig for every 2.5 synapses in a connection in the L3v (Figure 6B). Within a single mdIV$\u2192$LN connection, the vast majority of twigs (L1v: 92.5%; L3v: 81%) hosted only 1 or 2 of the many possible synaptic contacts (Figure 6C).\n\nA practical consequence of numerically strong but anatomically distributed synaptic connectivity is that EM reconstruction becomes robust to random errors. The vast majority of manual errors in previous larval reconstructions was the omission of single dendritic twigs (Schneider-Mizell et al., 2016). To measure how twig omission rate would affect accuracy in measuring mdIV input into LNs, we simulated the effect of removing random twigs from LN reconstructions. For each mdIV$\u2192$LN connection, we simulated removing twigs from our anatomical reconstructions with a given omission probability between 0 and\u00a01 (N\u00a0=\u00a05000 simulations per value), and measured the fraction of synapses that would remain observed in the resulting arbor (Figure 6D,E). For concreteness in comparing connections, we found the maximum error rate for which the probability of detecting fewer than 25% of the observed synapses was $\\leq$5% (Figure 6E). The anatomical and numerical redundancy of synapses on LN dendrites resulted in connections that would be detectable with at least 25% of the actual number of synapses, even if twigs were missed at the same rate (12%) as observed in previous work with the same reconstruction method (Figure 6E). Numerically strong connections in the L3v were particularly robust, and would still be detectable with a 50% false negative rate (Figure 6E). For large neurons, a strategy of incomplete sampling could thus quickly identify numerically strong synaptic partners at the cost of precise measurement of synaptic count.\n\n## Discussion\n\nWe have shown how in Drosophila neuronal arbor morphology changes across postembryonic development while circuit connectivity properties remain largely unchanged. Our findings establish a quantitative foundation for the previous observation that numerically strong connectivity in the L1v predicted the presence of functional connectivity in third instar larvae tested experimentally (Ohyama et al., 2015; Zwart et al., 2016; Fushiki et al., 2016; Heckscher et al., 2015; Jovanic et al., 2016). In all neurons measured, the basic anatomical elements of connectivity \u2014 polyadic synapses and small post-synaptic twigs \u2014 remained similar, while neurons grew five-fold in total synaptic input and cable length. For the highly stereotyped, numerically strong mdIV$\u2192$LN connections, the number of synaptic contacts scaled almost identically to the total number of inputs, suggesting the fraction of total inputs per connection is a developmentally conserved value. Interestingly, although cell types ranged considerably in size at any given time point, the fold-increase in total cable length and synapse count was nearly constant across cell types. We note that the sensory connections we focused on here are excitatory (Ohyama et al., 2015). An interesting avenue of future work would be to examine if inhibitory connections follow similar developmental rules.\n\n### Compensatory changes in synaptic connectivity and the maintenance of circuit function\n\nThe tight control of normalized synaptic input is likely to be in the service of circuit function. Our data suggest that, as neurons grow, there is a consistent compensatory growth in synaptic inputs from sensory neurons. This observation suggests that central neurons adapt structurally to compensate for increasing volume with concurrent increases in excitatory synaptic currents by adding synaptic contacts, as seen at the neuromuscular junction (Rasse et al., 2005). It is possible that such structural changes are also accompanied by functional changes, for example in neurotransmitter receptor or release properties.\n\nNeuronal computations depend on how dendrites integrate synaptic inputs. In visual system interneurons in the adult fly, dendritic geometry and membrane properties work together so that, near the spike initiation zone, the functional weight of a synaptic input does not depend strongly on its location on the dendrite (Cuntz et al., 2013). Similarly, simulations based on adult Drosophila olfactory projection neurons reconstructed from EM found that the functional responses were simply proportional to the number of synapses activated, even after shuffling input locations (Tobin et al., 2017). Taken together, this suggests linear dendritic integration of excitatory input may be common, at least in early sensory processing. In our data, each mdIV input into LNs typically increased by a common factor, irrespective of specific pre-synaptic cell type. Linear integration would thus imply that the relative functional weight of each mdIV type is preserved across development. The higher scaling of synaptic count in the numerically weakest connections (e.g. mdIV$\u2192$A09a) could potentially reflect small deviations from linear integration for low numbers of synaptic input.\n\nThe same developmental rules that allow neurons to maintain circuit function as the body grows would also be well-suited to handle natural variability, for example from reduced growth due to food restriction (Mirth and Riddiford, 2007). Indeed, it is possible that the use of consistent homeostatic rules for cell\u00a0type-specific connectivity and integration could allow circuits to remain functionally or computationally similar over large evolutionary changes in neuron size. Such homology has been observed in Calliphora\u00a0and\u00a0Drosophila\u00a0visual system neurons, which were found to differ in scale by a factor of four in each spatial dimension but have retained similar electrotonic structures (Cuntz et al., 2013).\n\nStringent structural stereotypy observed here stands in contrast to rhythm-generating circuits in other invertebrates, in which large variability can be found in morphological and functional properties (Goaillard et al., 2009; Norris et al., 2011; Roffman et al., 2012; Otopalik et al., 2017). One possibility is that the computation of certain features from sensory input imposes tighter constraints on circuit structure than the production of periodic activity. The ability to combine detailed measurements of structure with cell\u00a0type-specific genetic reagents (Pfeiffer et al., 2008; Pfeiffer et al., 2010) will allow this hypothesis to be tested across different circuits in the fly and to better elucidate the detailed mechanisms underlying their structural development.\n\n## Materials and methods\n\n### Sample preparation and electron microscopy\n\nThe L1v is fully described in (Ohyama et al., 2015). In brief, the central nervous system from a 6 hr old [iso] Canton S G1 x [iso] w$^{1118}$5905 female larva were dissected and, after chemical fixation, stained en bloc with 1% uranyl acetate, dehydrated, and embedded in Epon resin. Serial 50 nm sections were cut and stained with uranyl acetate and Sato\u2019s lead (Sato, 1968). Sections were imaged at 3.8$\\times$3.8 nm using Leginon (Suloway et al., 2005) on an FEI Spirit TEM (Hillsboro). Images were montaged in TrakEM2 (Saalfeld et al., 2010; Cardona et al., 2012) and aligned using elastic registration (Saalfeld et al., 2012).\n\nFor the L3v, the central nervous systems from a 96 hr wandering third instar [iso] Canton S G1 x [iso] w$^{1118}$5905 larva was dissected in PBS and immediately transferred to 125 $\\mu$l of 2% glutaraldehyde in 0.1 M Na cacodylate buffer, pH 7.4 in a 0.5 dram glass vial (Electron Microscopy Sciences, cat. no. 72630\u201305) on ice. 125 $\\mu$l of 2% OsO$_{4}$ in 0.1 M Na-cacodylate buffer, pH 7.4 was then added and briefly mixed immediately before microwave assisted fixation on ice conducted with a Pelco BioWave PRO microwave oven (Ted Pella, Inc.) at 350W, 375W and 400W pulses for 30 s each, separated by 60 s intervals. Samples were rinsed 3 \u00d7 30 s at 350W with 0.1 M Na-cacodylate buffer, separated by 60 s intervals, and post-fixed with 1% OsO$_{4}$ in 0.1 M Na-cacodylate buffer at 350W, 375W and 400W pulses for 30 s each, separated by 60 s pauses. After rinsing with distilled water 3 \u00d7 30 s at 350W with 60 s pauses between pulses, the samples were stained en bloc with 7.5% uranyl acetate in water overnight at 4$^{\u2218}$C. Samples were then rinsed 3\u00a0$\\times$\u00a05 min with distilled water, dehydrated in an ethanol series followed by propylene oxide, infiltrated and finally embedded in Epon resin. Serial 50 nm sections were cut using a Diatome diamond knife and a Leica UC6 ultramicrotome, and picked up on Pioloform support films with 2 nm C on Synaptek slot grids. Sections were stained with uranyl acetate followed by Sato\u2019s lead (Sato, 1968) prior to imaging. An FEI Spirit TEM operated at 80kV was used to image the serial sections at 2.3 \u00d7 2.3 nm pixel resolution using Leginon (Suloway et al., 2005).\n\n### L3v image volume registration\n\nThe L3v consisted of $\u2248$300,000 4k\u00a0$\\times$\u00a04k image tiles, which were montaged and aligned using linear and nonlinear methods (Saalfeld et al., 2012) in TrakEM2 (Cardona et al., 2012). Filters for brightness and contrast correction were applied before montaging (Default min and max, normalized local contrast, enhance contrast). Images were first montaged in a section with two passes of linear montaging, first targeting only a translation transformation, and in the second pass targeting an affine transformation. This was followed by an elastic, non-linear montaging pass. For alignment between sections, parameter exploration was performed on a scaled down substack (scale factor 10) of 5 sections, targeting extraction of approximately 2000 features, 100 correspondences and an average displacement of 10 pixels. Linear alignment was applied to all sections using an affine transformation model. The \u201dTest Block Matching Parameters\u2019 tool (http://imagej.net/Test_Block_Matching_Parameters) was used on five adjacent sections to find optimal parameters for the elastic registration pass. Elastic alignment was applied with local smoothness filter approximating an affine local transformation. The resulting aligned image stack was exported to an image tile pyramid with six scale levels for browsing and circuit reconstruction in CATMAID (Saalfeld et al., 2009; Schneider-Mizell et al., 2016). The L3v image stack is available at https://neurodata.io/.\n\n### Neuron reconstruction\n\nFor the annotation of mdIV targets in the L1v, we manually reconstructed all neurons pre- and post-synaptic to the previously-described mdIV terminals in segment A1 (Ohyama et al., 2015). Circuit reconstruction in both datasets was performed in CATMAID following annotation and review procedures described previously (Schneider-Mizell et al., 2016). For 1004/1096 post-synaptic connections and 85/85 pre-synaptic connections, we were able to reconstruct an identifiable neuron. This included 173 neurites spanning a total of 30.2 mm in cable length, 13,824 synaptic inputs, and 18,624 synaptic outputs. For each cell type that exhibited more than 3 synapses of input from or output onto mdIV terminals on both left and right sides of the body, we fully reconstructed and comprehensively reviewed a left and right pair of neurons. No unpaired medial neurons were found. For segmentally repeated cell types that exhibited multiple segments of connection, we chose to review examples from the segment with the most synapses from mdIVs, typically segment A1. Reconstructions here were performed by CMSM (30.2%, 104,335/345,917 nodes), IA (28.0%, 96,999/345,917 nodes), Javier Valdes Aleman (8.7%, 29,942/345,917 nodes), Laura Herren (8.1%, 28,165/345,917 nodes), Waleed Osman (7.1%, 24,727/345,917 nodes), and 3% or less each from several other contributors. Comprehensive reviews of arbors and synapses in the L1v were performed by AC and CMSM.\n\nFor annotation of the new L3v, we specifically targeted mdIV axons in segment A3 using characteristic anatomical features, particularly entry nerves and the ventromedial location of pre-synaptic boutons. This segment was selected for its centrality in the EM volume and lack of section gaps. Interneurons were identified based on cell body location, neuropil entry point of the primary neurite and characteristic branching structures. To identify target cells from imagery, the principal branches of candidates were reconstructed until they could be conclusively identified from characteristic features. The reconstruction of 6 mdIV terminals and 12 specific LNs spanned 15.3 mm, 10035 synaptic inputs, and 13499 outputs. Reconstructions were performed by IA (50.8%, 91,836/180,753 nodes), SG (21.9%, 39,654/180,753 nodes), CMSM (19.3%, 34,927/180,753 nodes), AC (6.4%, 11,611/180,753 nodes), and Waleed Osman (1.5%, 2,725/180,753 nodes). Comprehensive reviews of arbors and synapses in the L3v were performed by SG, AC and CMSM.\n\n### Analysis\n\nNeurons were exported from CATMAID (Saalfeld et al., 2009; Schneider-Mizell et al., 2016) through custom python scripts and imported into python or MATLAB (The Mathworks, Inc.) environments for analysis. Analysis was performed with custom MATLAB scripts with statistics performed using SciPy and R. Morphology and connectivity data were exported from CATMAID and imported into Matlab as a custom neuron data structure to ease analysis. Neuron data structures contained the spatial and topological information for every skeleton node in reconstructions, as well as their polyadic synapses, and annotations such as the location of twig roots and cell bodies. The data structures permitted network-based analysis and visualization using custom scripts and the Brain Connectivity Toolbox (Rubinov and Sporns, 2010). Analysis scripts and files describing neuronal morphology, synapse locations and connectivity can be found at https://github.com/ceesem/Larva_development_structure_2017 (Schneider-Mizell, 2017). A copy is archived at https://github.com/elifesciences-publications/Larva_development_structure_2017.\n\nNeurons were split into axonal and dendritic compartments to maximize spatial segregation along the arbor between synaptic inputs and outputs using previously describes algorithms (Schneider-Mizell et al., 2016). The synaptic segregation index ($S$) was defined as before (Schneider-Mizell et al., 2016):\n\n$$\nS=-\\frac{1}{S_{0}\u2062(N_{a\u2062x}+N_{d\u2062e\u2062n})}\u2062\\sumi=a\u2062x,d\u2062e\u2062nN_{i}\u2062(l\u2062o\u2062g\u2062(p_{i})+l\u2062o\u2062g\u2062(1-p_{i}))\n$$\n\nwhere $N_{i}$ is the number of synaptic contacts in compartment $i$ (either axon or dendrite), $p_{i}$ is the fraction of synaptic contacts that are inputs, and $S_{0}=-(l\u2062o\u2062g\u2062(p)+l\u2062o\u2062g\u2062(1-p))$ for $p$ being the fraction of all synaptic contacts that are inputs (Schneider-Mizell et al., 2016). $S_{0}$ is the maximum possible value of $S$ for a fully unsegregated neuron with the same numbers of synaptic inputs and outputs.\n\nFor the receptive field orientation analysis, we defined six unit vectors in a 2D plane $u_{j}^=cos\u2061(\\theta_{j})\u2062x^+sin\u2061(\\theta_{j})\u2062y^$, with the angle $\\theta_{j}$ corresponding to the approximate center of each of the mdIV terminals ($\\theta_{j}=j\u2062\\pi/3$, with v\u2019ada R corresponding to $j=0$ and the mdIVs ordered counterclockwise). The mean orientation of interneuron $i$, $r\u2192_{i}$, was computed as\n\n$$\nr_{i}\u2192=\\frac{1}{\\sum_{j=0}^{5}A_{i\u2062j}}\u2062\\sumj=05A_{i\u2062j}\u2062u_{j}^\n$$\n\nwhere $A_{i\u2062j}$ is the number of synapses from mdIV neuron $j$ to LN $i$ and the sums are over all six mdIVs.\n\nFor the filling fraction analysis, we computed potential synapses for a connection from an mdIV terminal onto an LN by computationally removing all terminal branches (Strahler order 1) from the LN dendrites and measuring the number of pre-synaptic sites that were within a distance ($d=2\u2062\\mu\u2062m$ unless specified) of the arbor. This approximates a distance that could feasibly be spanned by typical twig growth without overestimating a neuron\u2019s spatial extent.\n\nFor the random twig omission errors for a given mdIV$\u2192$LN connection, we assumed that each twig could be omitted with an independent probability $p$. We generated 5000 random instances for each LN and value of $p$. The synaptic counts were computed by considering only synaptic connections on remaining, non-removed twigs.\n",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "834af6c1-473a-4a21-a329-5a0caca1a8d9",
+      "submission_id": "e5659d31-7a4f-4f87-a167-ed1ae37772fd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ronald L Calabrese, Emory University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.29089.019](https://doi.org/10.7554/eLife.29089.019)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Conserved neural circuit structure across Drosophila larva development revealed by comparative connectomics\" for consideration by eLife. Your article has been favorably evaluated by Eve Marder (Senior Editor) and three reviewers, one of whom, Ronald L Calabrese (Reviewer #2), is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Hermann Cuntz (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is a strong advance on an important paper in eLife in 2016, which reported new methods to apply quantitative arbor and network context to iteratively proofread and reconstruct circuits and create anatomically enriched wiring diagrams in Drosophila. They used these methods to measure the morphological underpinnings of connectivity in new and existing reconstructions of Drosophila sensorimotor (larva 1st instar L1v) circuits in the brain and VNC. They extend this work here by similarly reconstructing nociceptive networks in segment A3 of the VNC in new [encompassing segment A3 of the third instar larva (L3v)] and existing serial section electron microscopy volumes. They report a remarkable conservation of connectivity (topographically-arranged circuit structure) across instars despite considerable neuronal growth and increases in total number of synapses. Five-fold increases in size of interneurons were associated with compensatory structural changes that maintained cell-type-specific synaptic input as a fraction of total inputs. They argue that their new data on A3 VNC in L3V validates the use of the L1V total nervous system volume to determine connectivity across larval stages, and that patterns of structural growth in larval development act to conserve the computational function of a circuit, for example determining the location of a nociceptive stimulus. The work is carefully done with appropriate quantification and statistics. The connectome established and the atlas of neurons will be very useful for fly workers who wish to pursue behavioral or developmental studies.\n\nEssential revisions:\n\n1) The study is written in a very compact manner and would gain from substantial rearranging of the story and adding descriptive text. The story constantly switches between mdIVs and LNs, and it is very difficult to understand why. All sections of the text are too short.\n\n2) The Materials and methods section on the data analysis is completely missing.\n\n3) The figures need some rethinking and corrections. The terms/labels in the figures are often not described (not even used) in the main text, which makes them difficult to understand. Some of the supplemental figures could also be incorporated into the main article (e.g. Figure 2\u2014Figure supplement 3 and Figure 2\u2014figure supplement 4). Many figure panels mentioned in the text are entirely missing in the figures.\n",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d56f7fce-46a6-4d34-99cc-496d6f4ec113",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C1",
+      "claim": "The nervous system must adapt to a growing body during postembryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "During postembryonic development, the nervous system must adapt to a growing body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about developmental biology presented in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "05be13b0-e6b3-49ad-91cf-d28f044734c9",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C2",
+      "claim": "Cellular neuroanatomy underlying synaptic connectivity in Drosophila was previously measured.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously , we measured the cellular neuroanatomy underlying synaptic connectivity in Drosophila (Schneider-Mizell et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "99802fda-2e17-4fc3-8f36-ea143e3496fc",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C3",
+      "claim": "Neuronal morphology and connectivity change between first instar and third instar larval stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we examined how neuronal morphology and connectivity change between first instar and third instar larval stages using serial section electron microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main research question addressed by the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "ece2e7d0-d206-4eba-967f-63819eb18d33",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C4",
+      "claim": "Nociceptive circuits were reconstructed in a larva of each stage.",
+      "claim_type": "EXPLICIT",
+      "source": "We reconstructed nociceptive circuits in a larva of each stage and found consistent topographically arranged connectivity between identified neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the experimental approach and findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "22656afd-ae2f-4a55-8c5e-d9a1b4330d47",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C5",
+      "claim": "There is consistent topographically arranged connectivity between identified neurons across larval stages.",
+      "claim_type": "EXPLICIT",
+      "source": "We reconstructed nociceptive circuits in a larva of each stage and found consistent topographically arranged connectivity between identified neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main finding from the reconstruction data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "9b10c688-c371-4700-8383-7e5d3c1b7fe8",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C6",
+      "claim": "Five-fold increases occur in size, number of terminal dendritic branches, and total number of synaptic inputs between first and third instar.",
+      "claim_type": "EXPLICIT",
+      "source": "Five-fold increases in each size, number of terminal dendritic branches, and total number of synaptic inputs were accompanied by cell type-specific connectivity changes that preserved the fraction of total synaptic input associated with each pre-synaptic partner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "8f94c1c5-0770-409e-b62e-8d41a4a60e7a",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C7",
+      "claim": "Cell type-specific connectivity changes preserve the fraction of total synaptic input associated with each pre-synaptic partner.",
+      "claim_type": "EXPLICIT",
+      "source": "Five-fold increases in each size, number of terminal dendritic branches, and total number of synaptic inputs were accompanied by cell type-specific connectivity changes that preserved the fraction of total synaptic input associated with each pre-synaptic partner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main finding about connectivity preservation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "3b6d4f8b-65ee-44ef-86d0-a4a4c53b3c16",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C8",
+      "claim": "Precise patterns of structural growth act to conserve the computational function of a circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that precise patterns of structural growth act to conserve the computational function of a circuit, for example determining the location of a dangerous stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "61f2a402-9a79-4ade-9cb8-8cd380b3eb89",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C9",
+      "claim": "Developing neural circuits can produce new behaviors, such as the addition of new swimming strategies in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "While developing neural circuits can produce new behaviors, such as the addition of new swimming strategies in zebrafish (Bj\u00f6rnfors and El Manira, 2016), in many cases circuit function is conserved as an animal grows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "f5af9e82-0967-43cc-b395-38e3d867e6fe",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C10",
+      "claim": "In many cases circuit function is conserved as an animal grows.",
+      "claim_type": "EXPLICIT",
+      "source": "While developing neural circuits can produce new behaviors, such as the addition of new swimming strategies in zebrafish (Bj\u00f6rnfors and El Manira, 2016), in many cases circuit function is conserved as an animal grows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General statement about developmental neurobiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "07a12dd4-9a08-4876-9782-ced0177144f2",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C11",
+      "claim": "A Drosophila larva's body wall surface area grows by two orders of magnitude from first instar to third instar.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, as a Drosophila larva grows from a first instar just out of the egg to a third instar ready to pupariate, its body wall surface area grows by two orders of magnitude (Keshishian et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "ee7bb3b7-86c5-42b6-93f8-2f458cb1d89b",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C12",
+      "claim": "Mechanosensory neurons grow their dendrites to maintain receptive fields during larval growth.",
+      "claim_type": "EXPLICIT",
+      "source": "To accommodate this growth, mechanosensory neurons grow their dendrites to maintain receptive fields (Grueber et al., 2002), while larval motor neurons add more synapses at the neuromuscular junction and change firing properties to maintain functional responses in much larger muscles (Keshishian et al., 1993; Guan et al., 1996; Davis and Goodman, 1998; Rasse et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "0e9d1662-a6ff-4d4c-8f9d-2783a13ec2a0",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C13",
+      "claim": "Larval motor neurons add more synapses at the neuromuscular junction during growth.",
+      "claim_type": "EXPLICIT",
+      "source": "To accommodate this growth, mechanosensory neurons grow their dendrites to maintain receptive fields (Grueber et al., 2002), while larval motor neurons add more synapses at the neuromuscular junction and change firing properties to maintain functional responses in much larger muscles (Keshishian et al., 1993; Guan et al., 1996; Davis and Goodman, 1998; Rasse et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "6c370d75-0314-4db9-98e1-3775bc95ee1b",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C14",
+      "claim": "Larval motor neurons change firing properties to maintain functional responses in much larger muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "To accommodate this growth, mechanosensory neurons grow their dendrites to maintain receptive fields (Grueber et al., 2002), while larval motor neurons add more synapses at the neuromuscular junction and change firing properties to maintain functional responses in much larger muscles (Keshishian et al., 1993; Guan et al., 1996; Davis and Goodman, 1998; Rasse et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "39a8f2f9-a351-4395-ae8f-7748b7ddd2bc",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C15",
+      "claim": "Functional maintenance has been observed in cricket mechanosensory interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar functional maintenance has been observed in central circuits as well, from the frequency selectivity of cricket mechanosensory interneurons (Murphey and Chiba, 1990) to motor rhythms in crustacean stomatogastric ganglion (STG) (Bucher et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "b1b8289b-3e22-4134-a96e-def4753a123c",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C16",
+      "claim": "Functional maintenance has been observed in motor rhythms in crustacean stomatogastric ganglion.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar functional maintenance has been observed in central circuits as well, from the frequency selectivity of cricket mechanosensory interneurons (Murphey and Chiba, 1990) to motor rhythms in crustacean stomatogastric ganglion (STG) (Bucher et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "bedcc0ba-08f2-449d-ad15-2eb0171f716d",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C17",
+      "claim": "A neuron's function arises from the combination of its morphology, synaptic connectivity, and ion channel properties.",
+      "claim_type": "EXPLICIT",
+      "source": "A neuron's function arises from the combination of its morphology, synaptic connectivity, and ion channel properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General principle of neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "fb91083d-6df1-4bb9-8830-26de6241f2f6",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C18",
+      "claim": "If morphology and membrane properties co-vary in precise ways, a neuron's integration properties can be consistent across homologous cells, even between species with very different brain sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "If morphology and membrane properties co-vary in precise ways, a neuron's integration properties can be consistent across homologous cells, even between species with very different brain sizes (Cuntz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "f996218a-05cf-43c3-a909-a088e8db31f8",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C19",
+      "claim": "Homeostatic regulation of functional and structural properties has been proposed as a key principle in neuronal development.",
+      "claim_type": "EXPLICIT",
+      "source": "Homeostatic regulation of functional and structural properties has been proposed as a key principle in neuronal development, allowing consistent output in the presence of both growth and an uncertain or ever-changing environment (K\u00e4mper and Murphey, 1994; Bucher et al., 2005; Marder and Goaillard, 2006; Tripodi et al., 2008; Giachello and Baines, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "ab91029c-a858-4f02-864f-8fff7769f85a",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C20",
+      "claim": "Simulations of STG have found that numerous different combinations of intrinsic functional parameters and synaptic weights are able to produce extremely similar dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations of STG have found that numerous different combinations of intrinsic functional parameters and synaptic weights are able to produce extremely similar dynamics (Grashow et al., 2010; O'Leary et al., 2014; Prinz et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "48e55106-63d5-4ba8-9d99-673c0141aa30",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C21",
+      "claim": "The morphological structure of neurons and their functional connection strengths have been observed to have high inter-animal variability while still generating similar motor patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, the morphological structure of neurons (Otopalik et al., 2017) and their functional connection strengths (Goaillard et al., 2009) have been observed to have high inter-animal variability while still generating similar motor patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "a9677337-7261-4ef8-a909-b723e3cc193f",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C22",
+      "claim": "Synaptic-resolution electron microscopy reconstructions from Drosophila sensory systems have found relatively low intra-animal variation in number of synaptic contacts between columnarly repeated neurons in the adult visual system.",
+      "claim_type": "EXPLICIT",
+      "source": "However, synaptic-resolution electron microscopy (EM) reconstructions from Drosophila sensory systems have found relatively low intra-animal variation in number of synaptic contacts between columnarly repeated neurons in the adult visual system (Takemura et al., 2015) or bilaterally repeated neurons in the mechanosensatory (Ohyama et al., 2015), visual (Larderet et al., 2017), and olfactory (Berck et al., 2016) systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "44fb9cdc-3f21-4bbd-b9a3-946b73e423f8",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C23",
+      "claim": "Synaptic-resolution electron microscopy reconstructions from Drosophila sensory systems have found relatively low intra-animal variation in number of synaptic contacts between bilaterally repeated neurons in the mechanosensatory, visual, and olfactory systems.",
+      "claim_type": "EXPLICIT",
+      "source": "However, synaptic-resolution electron microscopy (EM) reconstructions from Drosophila sensory systems have found relatively low intra-animal variation in number of synaptic contacts between columnarly repeated neurons in the adult visual system (Takemura et al., 2015) or bilaterally repeated neurons in the mechanosensatory (Ohyama et al., 2015), visual (Larderet et al., 2017), and olfactory (Berck et al., 2016) systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "7b39d3df-a8da-479c-97ce-8758da9bc1a8",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C24",
+      "claim": "Almost no new functional neurons are added to the larval nervous system between hatching and pupariation.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite considerable growth in body size between hatching and pupariation, almost no new functional neurons are added to the larval nervous system (Truman and Bate, 1988) and behavior remains largely unchanged (Almeida-Carvalho et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "66119e14-9a8b-41de-9b01-764528e18e78",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C25",
+      "claim": "Behavior remains largely unchanged between hatching and pupariation in Drosophila larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite considerable growth in body size between hatching and pupariation, almost no new functional neurons are added to the larval nervous system (Truman and Bate, 1988) and behavior remains largely unchanged (Almeida-Carvalho et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "1bf85d4b-b176-4163-9f09-fe6b6369be38",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C26",
+      "claim": "Central neurons become larger during larval development.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, electrophysiological and light microscopy analysis has shown that central neurons become larger (Zwart et al., 2013) and have more synapses both in total (Zwart et al., 2013) and in specific connections (Couton et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "b2f9851d-9f01-46d4-95bc-a89e3aec970a",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C27",
+      "claim": "Central neurons have more synapses both in total and in specific connections during larval development.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, electrophysiological and light microscopy analysis has shown that central neurons become larger (Zwart et al., 2013) and have more synapses both in total (Zwart et al., 2013) and in specific connections (Couton et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "8b830f14-d13c-4440-89f7-f2a6ee45f328",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C28",
+      "claim": "Nociceptive stimuli are detected by the three multidendritic class IV sensory neurons (mdIVs) in each hemisegment.",
+      "claim_type": "EXPLICIT",
+      "source": "Nociceptive stimuli are detected by the three multidendritic class IV sensory neurons (mdIVs) (Hwang et al., 2007) in each hemisegment, with dendrites that tile the body wall (Figure 1A) (Grueber et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "60751cab-5c44-4fc4-bec6-44e2cf7bf6b1",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C29",
+      "claim": "mdIV dendrites tile the body wall.",
+      "claim_type": "EXPLICIT",
+      "source": "Nociceptive stimuli are detected by the three multidendritic class IV sensory neurons (mdIVs) (Hwang et al., 2007) in each hemisegment, with dendrites that tile the body wall (Figure 1A) (Grueber et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "29d17bab-10dc-4e52-822f-8b27b1142c61",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C30",
+      "claim": "The mdIV terminals in abdominal segment A1 of an early first instar larva EM volume were previously reconstructed.",
+      "claim_type": "EXPLICIT",
+      "source": "The mdIV terminals in abdominal segment A1 of an early first instar larva EM volume (L1v) were previously reconstructed (Ohyama et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "88a06780-e647-416f-a13d-828de4e1fb94",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C31",
+      "claim": "A new serial section transmission EM volume of a late third instar larva (L3v) was generated spanning several abdominal segments of the ventral nerve cord.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated a new serial section transmission EM volume of a late third instar larva (L3v) spanning several abdominal segments of the ventral nerve cord (VNC) (Figure 1\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the experimental data generation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "7e498120-1dfa-4f35-967c-abc5517b7488",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C32",
+      "claim": "The six mdIV terminals (three per hemisegment) in abdominal segment A3 were manually reconstructed in the L3v.",
+      "claim_type": "EXPLICIT",
+      "source": "In the L3v, we manually reconstructed the six mdIV terminals (three per hemisegment) in abdominal segment A3 (Figure 1B,C and Figure 1\u2014figure supplement 1C) using the web-based tool CATMAID (Saalfeld et al., 2009; Schneider-Mizell et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the reconstruction methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "728c01cf-f874-4087-b77a-8b1149eef18e",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C33",
+      "claim": "Neurons were reconstructed as skeletons, expressing the 3D topology of neuronal arbors, but not their diameter or volume.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, we reconstructed neurons as skeletons, expressing the 3D topology of neuronal arbors, but not their diameter or volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the reconstruction methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "b85d921e-8447-45dd-9dae-799da033ad4d",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C34",
+      "claim": "The identity of each mdIV terminal was determined based on stereotyped morphological features such as antero-posterior projections, midline crossing, and nerve bundle.",
+      "claim_type": "EXPLICIT",
+      "source": "The identity of each mdIV terminal was determined based on stereotyped morphological features such as antero-posterior projections, midline crossing, and nerve bundle (Figure 1B,C and Figure 1\u2014figure supplement 2) (Merritt and Whitington, 1995; Grueber et al., 2007; Ohyama et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the identification methodology with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "91a54687-1345-4fb6-95fd-1c6fe0a3153a",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C35",
+      "claim": "The morphology of mdIV axon terminals remained similar across larval stages, with growth in overall size but no change in branching patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "The morphology of mdIV axon terminals remained similar across larval stages, with growth in overall size but no change in branching patterns (Figure 1B\u2013D and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data and figures showing morphology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "5be5716f-45ba-4797-80f8-bf0e6a2b047a",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C36",
+      "claim": "The number of synaptic outputs increased by a factor of 4.7, from a mean of 185 synapses per terminal to 872 synapses per terminal.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the number of synaptic outputs increased by a factor of 4.7, from a mean of 185 synapses per terminal to 872 synapses per terminal (Figure 1E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative finding from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "af74f5f6-e955-4bb9-935d-5ee3a93d4421",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C37",
+      "claim": "Insect synapses are polyadic, with multiple post-synaptic targets per pre-synaptic site.",
+      "claim_type": "EXPLICIT",
+      "source": "Insect synapses are polyadic, with multiple post-synaptic targets per pre-synaptic site (Figure 1G), thus this increase could arise from either changes in the number of distinct pre-synaptic sites or the number of targets per pre-synaptic site.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "General knowledge about insect synapses with reference to figure.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "34bcc553-aa78-4cee-8f51-4b82f4a69263",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C38",
+      "claim": "There is no significant difference between the distribution of number of post-synaptic targets for mdIV pre-synaptic sites in the L1v compared to the L3v.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no significant difference between the distribution of number of post-synaptic targets for mdIV pre-synaptic sites in the L1v compared to the L3v (Figure 1H), suggesting the structure of individual polyadic synapses remains unchanged.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical finding from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "37b0969e-07ef-4e2c-9a8f-9789cd67b05c",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C39",
+      "claim": "The structure of individual polyadic synapses remains unchanged across larval stages.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no significant difference between the distribution of number of post-synaptic targets for mdIV pre-synaptic sites in the L1v compared to the L3v (Figure 1H), suggesting the structure of individual polyadic synapses remains unchanged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the statistical finding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "8ad914fa-ca65-4279-a85e-565d689f960c",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C40",
+      "claim": "There are 13 distinct cell types stereotypically connected to mdIV terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that there are 13 distinct cell types stereotypically connected to mdIV terminals (Figure 2\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from comprehensive reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "11a573f2-d5e8-47f8-8310-ae69dc72e8f7",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C41",
+      "claim": "Five types of mdIV-connected neurons were local neurons (LNs), with dendrites covering 1\u20132 segments.",
+      "claim_type": "EXPLICIT",
+      "source": "Five types were local neurons (LNs), with dendrites covering 1\u20132 segments (Figure 2B); three were regional, with dendrites covering 3\u20135 segments; four were ascending neurons projecting across the entire VNC; and one was a descending neuron with an axon that projected along the whole VNC (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Classification based on morphological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "d13a021c-38a2-4ae9-a22b-40795855f48e",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C42",
+      "claim": "Three types of mdIV-connected neurons were regional, with dendrites covering 3\u20135 segments.",
+      "claim_type": "EXPLICIT",
+      "source": "Five types were local neurons (LNs), with dendrites covering 1\u20132 segments (Figure 2B); three were regional, with dendrites covering 3\u20135 segments; four were ascending neurons projecting across the entire VNC; and one was a descending neuron with an axon that projected along the whole VNC (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Classification based on morphological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "2c3d3272-2599-4d25-8c2d-158f62d0c656",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C43",
+      "claim": "Four types of mdIV-connected neurons were ascending neurons projecting across the entire VNC.",
+      "claim_type": "EXPLICIT",
+      "source": "Five types were local neurons (LNs), with dendrites covering 1\u20132 segments (Figure 2B); three were regional, with dendrites covering 3\u20135 segments; four were ascending neurons projecting across the entire VNC; and one was a descending neuron with an axon that projected along the whole VNC (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Classification based on morphological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "54c493bb-3bf3-489b-a213-d902fb1cc225",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C44",
+      "claim": "One type of mdIV-connected neuron was a descending neuron with an axon that projected along the whole VNC.",
+      "claim_type": "EXPLICIT",
+      "source": "Five types were local neurons (LNs), with dendrites covering 1\u20132 segments (Figure 2B); three were regional, with dendrites covering 3\u20135 segments; four were ascending neurons projecting across the entire VNC; and one was a descending neuron with an axon that projected along the whole VNC (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Classification based on morphological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "92442ad6-ec65-4dfc-9999-6aeb49ab3f00",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C45",
+      "claim": "One cell type (A02n) was comprised of two indistinguishable cells per hemisegment, making a total of twelve LNs cells per segment.",
+      "claim_type": "EXPLICIT",
+      "source": "One cell type (A02n) was comprised of two indistinguishable cells per hemisegment, unusual for the larva, making a total of twelve LNs cells per segment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from reconstruction data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "7d450900-1d43-4ed8-b7e2-b49fd4736c8b",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C46",
+      "claim": "Two LNs, A09a and A09c, have been the focus of previous work under the names 'Basin-2' and 'Basin-4'.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that two LNs, A09a and A09c, have been the focus of previous work under the names 'Basin-2' and 'Basin-4' (Ohyama et al., 2015; Jovanic et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "7a9c3135-f30d-461a-9aa0-8653846afc57",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C47",
+      "claim": "Second-order nociceptive interneurons formed a sparse network, without the densely connected local interneurons found in other early processing of other Drosophila sensory modalities like olfaction or mechanosensation.",
+      "claim_type": "EXPLICIT",
+      "source": "Second-order nociceptive interneurons formed a sparse network (Figure 2\u2014figure supplement 1B,C), without the densely connected local interneurons found in other early processing of other Drosophila sensory modalities like olfaction (Berck et al., 2016; Liu and Wilson, 2013) or mechanosensation (Jovanic et al., 2016; Tuthill and Wilson, 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison with other systems supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "c5d42596-1b28-4fed-8728-57b7cc069c81",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C48",
+      "claim": "All twelve third instar LNs were reconstructed in the L3v.",
+      "claim_type": "EXPLICIT",
+      "source": "To measure how second-order nociceptive interneurons change across larval growth, we reconstructed all twelve third instar LNs in the L3v (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Describes the reconstruction work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "3780dad1-9b39-465b-a74f-8c65ca78b655",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C49",
+      "claim": "Each LN was morphologically identifiable, despite increases in size, arbor complexity, and synaptic count.",
+      "claim_type": "EXPLICIT",
+      "source": "Each LN was morphologically identifiable, despite increases in size, arbor complexity, and synaptic count (Figure 2B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from morphological analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "f2155834-b3ca-48c6-a65c-9ad795c0769b",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C50",
+      "claim": "For every LN, the spatial segregation of synaptic input and synaptic output made it possible to split neuronal arbors into a separate dendritic domain and axonal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "For every LN, the spatial segregation of synaptic input and synaptic output made it possible to split neuronal arbors into a separate dendritic domain and axonal domain (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Methodological finding from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "cf1acf75-eeb8-4407-9c63-bab45ecc0881",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C54",
+      "claim": "Only those LN types that exhibited dendritic outputs in the L1v also did so in the L3v.",
+      "claim_type": "EXPLICIT",
+      "source": "Only those LN types that exhibited dendritic outputs in the L1v also did so in the L3v (Figure 2\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding about consistency of dendritic outputs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "fbc5cd8d-14b2-4734-80bb-c7e98010cbf3",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C55",
+      "claim": "For each LN the broad pattern of segregation between synaptic inputs and outputs was preserved over postembryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "For each LN the broad pattern of segregation between synaptic inputs and outputs, which indicates the degree of local dendritic output and axonal pre-synaptic input, was preserved over postembryonic development (Figure 2\u2014figure supplement 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding about preservation of segregation patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "64d56040-023e-40c0-acdf-6431376857fc",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C56",
+      "claim": "Every LN in the L3v received synaptic input from mdIVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Every LN in the L3v received synaptic input from mdIVs (Figure 1\u2014figure supplement 1D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from connectivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "a771ecff-698e-46fd-98b0-0904420e22c5",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C59",
+      "claim": "LNs do not receive synaptic input equally from all mdIV subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "LNs do not receive synaptic input equally from all mdIV subtypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General observation from connectivity data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "ef0eafea-e22f-4f57-9573-9ccb82d0ee1e",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C60",
+      "claim": "The normalized synaptic input into each LN from each mdIV axon was highly structured in both L1v and L3v data.",
+      "claim_type": "EXPLICIT",
+      "source": "The normalized synaptic input into each LN from each mdIV axon was highly structured in both L1v and L3v data (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from connectivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "36fc86bb-bf85-4489-bb7e-fde6067ead1d",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C61",
+      "claim": "For each mdIV type and LN type, the average normalized synaptic input was significantly correlated between L1v and L3v.",
+      "claim_type": "EXPLICIT",
+      "source": "For each mdIV type and LN type, the average normalized synaptic input was significantly correlated between L1v and L3v (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical finding from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "1e35a503-4dc7-42cc-a815-fb79e480b568",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C62",
+      "claim": "The variability between left and right cells of the same type was significantly lower in the L3v than the L1v.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the variability between left and right cells of the same type was significantly lower in the L3v than the L1v (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical finding from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "0b2f2d4b-71ea-4818-876e-0598a7dfbef8",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C63",
+      "claim": "There is effectively a target value for the normalized synaptic input for each connection and this value is achieved more precisely as the nervous system develops postembryonically.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that there is, effectively, a target value for the normalized synaptic input for each connection and this value is achieved more precisely as the nervous system develops postembryonically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the correlation and variability findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "58025185-1dd3-42a7-b8ff-1c26f865c246",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C64",
+      "claim": "Each segment of the body wall is spanned by six mdIVs whose dendritic fields divide the left and right sides into dorsal, lateral, and ventral thirds.",
+      "claim_type": "EXPLICIT",
+      "source": "Each segment of the body wall is spanned by six mdIVs whose dendritic fields divide the left and right sides into dorsal, lateral, and ventral thirds (Figure 3G) (Grueber et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "aeb4d94e-f19d-4f13-9f3f-6ac18d0bfc87",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C65",
+      "claim": "LN orientations span the body wall, and the orientation of LNs are conserved across development.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that LN orientations span the body wall, and the orientation of LNs are conserved across development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from orientation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "95f096bd-3b49-44c0-adde-426e11d034c0",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C66",
+      "claim": "LN inputs are arranged so that a nociceptive stimulus smaller than a single mdIV's dendrite is likely to drive different populations of LNs based on its exact location.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, LN inputs are arranged so that a nociceptive stimulus smaller than a single mdIV's dendrite, for example a wasp ovipositor (Robertson et al., 2013), is likely to drive different populations of LNs based on its exact location, with the smallest difference being between left and right ventral regions (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from the connectivity pattern with citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "6644caa5-659a-418f-93db-3a6693855b70",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C67",
+      "claim": "Only LNs with similar input orientations synaptically connect to one another.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, only LNs with similar input orientations synaptically connect to one another (Figure 3\u2014figure supplement 1), suggesting that convergent feed-forward motifs are specifically present within sets of neurons likely to be driven at the same time.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from connectivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "e91472d5-ba58-4007-94b2-f066e5d5ddd1",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C68",
+      "claim": "Conservation of synaptic input through larval development preserves the topographical structure of the nociceptive circuit, both in sensory input and interactions between interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Conservation of synaptic input through larval development thus preserves the topographical structure of the nociceptive circuit, both in sensory input and interactions between interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary inference from the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "5f394559-14e8-447b-9bd6-7fb434c5f9f8",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C69",
+      "claim": "Filling fraction ranged from 0.01 to 0.47 in both the L1v and L3v.",
+      "claim_type": "EXPLICIT",
+      "source": "In both the L1v and L3v, filling fraction ranged from 0.01 to 0.47, indicating that some connections from mdIV types to LNs were realized much more often than others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative finding from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "aa528d24-bb85-49cd-8cbf-5df974d65d1b",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C70",
+      "claim": "Filling fraction correlated strongly with the overall count of synapses in a connection.",
+      "claim_type": "EXPLICIT",
+      "source": "Filling fraction correlated strongly with the overall count of synapses in a connection, suggesting that numerically strong connections are produced through high connection probability, not only increased potential synapse counts (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical finding from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "79018cf0-be18-418b-90bd-f35ac9ec51df",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C71",
+      "claim": "Numerically strong connections are produced through high connection probability, not only increased potential synapse counts.",
+      "claim_type": "EXPLICIT",
+      "source": "Filling fraction correlated strongly with the overall count of synapses in a connection, suggesting that numerically strong connections are produced through high connection probability, not only increased potential synapse counts (Figure 4C,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the correlation finding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "c65c69e1-8c89-4469-840d-22f320b364b4",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C72",
+      "claim": "Filling fraction was significantly correlated between the L1v and L3v.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, filling fraction was significantly correlated between the L1v and L3v (Figure 4E), suggesting that the local propensity to form stable synapses with a nearby cell type is preserved across development.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical finding from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "38497a2d-6c11-4aff-8fd6-b308532fd961",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C73",
+      "claim": "The local propensity to form stable synapses with a nearby cell type is preserved across development.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, filling fraction was significantly correlated between the L1v and L3v (Figure 4E), suggesting that the local propensity to form stable synapses with a nearby cell type is preserved across development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the correlation finding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "7b4d015f-5c1d-4d64-84ce-15572bdfc10a",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C74",
+      "claim": "Most synaptic input onto a neuron is located on 'twigs', spine-like microtubule-free terminal branches hosting a small number of synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Most synaptic input onto a neuron is located on 'twigs', spine-like microtubule-free terminal branches hosting a small number of synapses, in contrast to the microtubule-containing 'backbone' that spans the soma and all of the main branches of a neuron (Leiss et al., 2009; Schneider-Mizell et al., 2016) (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "cb30f3e9-8465-42e2-b007-03b01d2fc33e",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C77",
+      "claim": "Both the fraction of dendritic cable comprised of twigs and the fraction of dendritic input synapses onto twigs increased significantly.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the fraction of dendritic cable comprised of twigs (Figure 5E,F) and the fraction of dendritic input synapses onto twigs (Figure 5G,H) increased significantly, suggesting that twigs become even more central to dendritic input.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical finding from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "ecd2aed3-6f26-4bcd-a28c-dcc7edf4afb5",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C78",
+      "claim": "Twigs become even more central to dendritic input during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the fraction of dendritic cable comprised of twigs (Figure 5E,F) and the fraction of dendritic input synapses onto twigs (Figure 5G,H) increased significantly, suggesting that twigs become even more central to dendritic input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the statistical findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "c2568926-fdbd-4195-aaca-113dd945f077",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C79",
+      "claim": "The fraction of dendritic cable that is last or next-to-last (Strahler order 1 or 2) order is similar not only across development, but also across cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the fraction of dendritic cable that is last or next-to-last (Strahler order 1 or 2) order is similar not only across development, but also across cell types (Figure 5K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from Strahler order analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "d68b9076-8f76-4a4f-94d1-850e3337d7a7",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C80",
+      "claim": "Neurons grow their dendrites by both increasing the number of twigs, while also modestly increasing the length of the backbone neurites from which they sprout.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that in the larva, neurons grow their dendrites by both increasing the number of twigs, while also modestly increasing the length of the backbone neurites from which they sprout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the Strahler order and twig findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "4dbded4b-97db-4a38-8fab-7a4770f7369d",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C81",
+      "claim": "Typical dendritic twigs in both the L1v and L3v are small.",
+      "claim_type": "EXPLICIT",
+      "source": "Typical dendritic twigs in both the L1v and L3v are small. They were short in both total length and maximum depth from twig root, had few branch points, and few post-synaptic sites (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from twig property analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "2abe7d22-8111-4fa5-b9e4-fd50dab658aa",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C82",
+      "claim": "Twigs in the L3v were slightly longer than their L1v counterparts and had significantly more branch points.",
+      "claim_type": "EXPLICIT",
+      "source": "However, twigs in the L3v were slightly longer than their L1v counterparts and had significantly more branch points (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical finding from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "c8a0f6b1-390a-4991-9f4d-ba5c969226eb",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C87",
+      "claim": "The anatomical and numerical redundancy of synapses on LN dendrites resulted in connections that would be detectable with at least 25% of the actual number of synapses, even if twigs were missed at the same rate (12%) as observed in previous work with the same reconstruction method.",
+      "claim_type": "EXPLICIT",
+      "source": "The anatomical and numerical redundancy of synapses on LN dendrites resulted in connections that would be detectable with at least 25% of the actual number of synapses, even if twigs were missed at the same rate (12%) as observed in previous work with the same reconstruction method (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from simulation analysis with reference to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "d05ce9ab-5b44-4e65-83da-cf9bf456bd1b",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C88",
+      "claim": "Numerically strong connections in the L3v were particularly robust, and would still be detectable with a 50% false negative rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerically strong connections in the L3v were particularly robust, and would still be detectable with a 50% false negative rate (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Finding from simulation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "965046c3-0d85-41b5-9f4c-de671b55fb8d",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C89",
+      "claim": "For large neurons, a strategy of incomplete sampling could quickly identify numerically strong synaptic partners at the cost of precise measurement of synaptic count.",
+      "claim_type": "EXPLICIT",
+      "source": "For large neurons, a strategy of incomplete sampling could thus quickly identify numerically strong synaptic partners at the cost of precise measurement of synaptic count.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the robustness findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "a88f2214-8d5b-4e5d-ae00-1247662df6c7",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C90",
+      "claim": "Neuronal arbor morphology changes across postembryonic development while circuit connectivity properties remain largely unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown how in Drosophila neuronal arbor morphology changes across postembryonic development while circuit connectivity properties remain largely unchanged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "52f8720b-af04-447d-b333-d849ce3cad62",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C91",
+      "claim": "Numerically strong connectivity in the L1v predicted the presence of functional connectivity in third instar larvae tested experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings establish a quantitative foundation for the previous observation that numerically strong connectivity in the L1v predicted the presence of functional connectivity in third instar larvae tested experimentally (Ohyama et al., 2015; Zwart et al., 2016; Fushiki et al., 2016; Heckscher et al., 2015; Jovanic et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "cc9c31aa-b2f8-405b-81f6-eb264afb3b10",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C92",
+      "claim": "In all neurons measured, the basic anatomical elements of connectivity \u2014 polyadic synapses and small post-synaptic twigs \u2014 remained similar, while neurons grew five-fold in total synaptic input and cable length.",
+      "claim_type": "EXPLICIT",
+      "source": "In all neurons measured, the basic anatomical elements of connectivity \u2014 polyadic synapses and small post-synaptic twigs \u2014 remained similar, while neurons grew five-fold in total synaptic input and cable length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "ff7f57af-9190-4bd1-afe6-790fa4b15845",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C95",
+      "claim": "Although cell types ranged considerably in size at any given time point, the fold-increase in total cable length and synapse count was nearly constant across cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, although cell types ranged considerably in size at any given time point, the fold-increase in total cable length and synapse count was nearly constant across cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "376629b8-b5e2-457e-b1b5-c10876639048",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C96",
+      "claim": "The sensory connections focused on here are excitatory.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the sensory connections we focused on here are excitatory (Ohyama et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "b2d05f76-25de-438f-9425-3158fa97b34a",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C97",
+      "claim": "The tight control of normalized synaptic input is likely to be in the service of circuit function.",
+      "claim_type": "EXPLICIT",
+      "source": "The tight control of normalized synaptic input is likely to be in the service of circuit function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "9affa567-8b4e-44fe-9a89-8cee31670058",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C98",
+      "claim": "As neurons grow, there is a consistent compensatory growth in synaptic inputs from sensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that, as neurons grow, there is a consistent compensatory growth in synaptic inputs from sensory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "121f5a7f-919a-437f-9c96-1f1e0fb202e7",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C99",
+      "claim": "Central neurons adapt structurally to compensate for increasing volume with concurrent increases in excitatory synaptic currents by adding synaptic contacts, as seen at the neuromuscular junction.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that central neurons adapt structurally to compensate for increasing volume with concurrent increases in excitatory synaptic currents by adding synaptic contacts, as seen at the neuromuscular junction (Rasse et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation with citation to prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "220cd6ce-140e-4038-99b8-a4c1706143c7",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C100",
+      "claim": "In visual system interneurons in the adult fly, dendritic geometry and membrane properties work together so that, near the spike initiation zone, the functional weight of a synaptic input does not depend strongly on its location on the dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "In visual system interneurons in the adult fly, dendritic geometry and membrane properties work together so that, near the spike initiation zone, the functional weight of a synaptic input does not depend strongly on its location on the dendrite (Cuntz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "7a7d7ac0-3950-41d4-ad12-2e1b2538338b",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C101",
+      "claim": "Simulations based on adult Drosophila olfactory projection neurons reconstructed from EM found that the functional responses were simply proportional to the number of synapses activated, even after shuffling input locations.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, simulations based on adult Drosophila olfactory projection neurons reconstructed from EM found that the functional responses were simply proportional to the number of synapses activated, even after shuffling input locations (Tobin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "6d524fff-28f1-4012-b5f5-666c5b56702c",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C102",
+      "claim": "Linear dendritic integration of excitatory input may be common, at least in early sensory processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, this suggests linear dendritic integration of excitatory input may be common, at least in early sensory processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from cited prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "dc0bf614-df8a-4cd6-889c-4333d86a6612",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C103",
+      "claim": "Linear integration would imply that the relative functional weight of each mdIV type is preserved across development.",
+      "claim_type": "EXPLICIT",
+      "source": "In our data, each mdIV input into LNs typically increased by a common factor, irrespective of specific pre-synaptic cell type. Linear integration would thus imply that the relative functional weight of each mdIV type is preserved across development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the data and linear integration assumption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "406a7574-24ee-4a0d-a5d3-d033e6e12b3a",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C104",
+      "claim": "The same developmental rules that allow neurons to maintain circuit function as the body grows would also be well-suited to handle natural variability, for example from reduced growth due to food restriction.",
+      "claim_type": "EXPLICIT",
+      "source": "The same developmental rules that allow neurons to maintain circuit function as the body grows would also be well-suited to handle natural variability, for example from reduced growth due to food restriction (Mirth and Riddiford, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation with citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "1e34d2bd-43e2-471d-b481-99c6baee8d3a",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C105",
+      "claim": "The use of consistent homeostatic rules for cell type-specific connectivity and integration could allow circuits to remain functionally or computationally similar over large evolutionary changes in neuron size.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it is possible that the use of consistent homeostatic rules for cell type-specific connectivity and integration could allow circuits to remain functionally or computationally similar over large evolutionary changes in neuron size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about evolutionary implications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "95312ca6-ab7e-4a6c-8373-d15e3b43e7df",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C106",
+      "claim": "Calliphora and Drosophila visual system neurons differ in scale by a factor of four in each spatial dimension but have retained similar electrotonic structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Such homology has been observed in Calliphora and Drosophila visual system neurons, which were found to differ in scale by a factor of four in each spatial dimension but have retained similar electrotonic structures (Cuntz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "1341a50c-ee19-4f3b-913c-9445607e0c6d",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C107",
+      "claim": "Stringent structural stereotypy observed here stands in contrast to rhythm-generating circuits in other invertebrates, in which large variability can be found in morphological and functional properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Stringent structural stereotypy observed here stands in contrast to rhythm-generating circuits in other invertebrates, in which large variability can be found in morphological and functional properties (Goaillard et al., 2009; Norris et al., 2011; Roffman et al., 2012; Otopalik et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with prior work supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "b6d07412-c124-47b8-a0ac-f6b7a7c4cc4d",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "claim_id": "C108",
+      "claim": "The computation of certain features from sensory input may impose tighter constraints on circuit structure than the production of periodic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that the computation of certain features from sensory input imposes tighter constraints on circuit structure than the production of periodic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about circuit constraints.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "be84628f-14d2-4d3f-88a7-003fc47b3ab2",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors used serial section electron microscopy to reconstruct nociceptive circuits in first instar (L1v) and third instar (L3v) Drosophila larvae, finding consistent topographically arranged connectivity between identified neurons across developmental stages. Neurons were reconstructed as skeletons expressing 3D topology, and mdIV terminals were identified based on stereotyped morphological features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 and C31-C34 describe the core experimental approach and main finding. The methodology is clearly described with appropriate detail about reconstruction methods (C32-C34), and the finding of consistent topographic connectivity (C5) is supported by the comprehensive reconstruction data presented throughout the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "a7f3d2f0-5948-462b-bf37-5b2bf792a33b",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "mdIV axon terminal morphology remained similar across larval stages with growth in size but no change in branching patterns, while synaptic outputs increased 4.7-fold (from mean 185 to 872 synapses per terminal). The structure of individual polyadic synapses remained unchanged, as there was no significant difference in the distribution of post-synaptic targets per pre-synaptic site between L1v and L3v.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 are well-supported by quantitative data (C36) and statistical analysis (C38). The finding that morphology is preserved while synapse number increases substantially is a key result, and the polyadic synapse structure analysis provides mechanistic insight. Figure 1 provides visual and quantitative support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "cc540414-beb8-4f43-9bea-692e565fc8c0",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Comprehensive reconstruction identified 13 distinct cell types stereotypically connected to mdIV terminals, including 5 local neuron (LN) types, 3 regional types, 4 ascending types, and 1 descending type. All 12 LNs in L3v were reconstructed and remained morphologically identifiable despite increases in size, arbor complexity, and synaptic count. Second-order nociceptive interneurons formed a sparse network, contrasting with other Drosophila sensory modalities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C49 describe the comprehensive circuit reconstruction and classification. The identification of 13 cell types (C40) and their classification (C41-C44) is supported by morphological data. The finding of sparse connectivity (C47) is an important comparative observation supported by citations. The reconstruction completeness and cell identifiability (C48-C49) are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "6c43ecdf-6cc7-4f97-b664-5bdf4023429d",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "For every LN, spatial segregation of synaptic input and output enabled splitting neuronal arbors into separate dendritic and axonal domains. The pattern of segregation between inputs and outputs was preserved over postembryonic development, and only LN types exhibiting dendritic outputs in L1v also showed them in L3v.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C54-C55 describe preserved organizational features of LN structure. The spatial segregation finding (C50) is methodologically important and supported by Figure 2E. The preservation of segregation patterns (C55) and consistency of dendritic outputs (C54) demonstrate developmental conservation at the subcellular level.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "542cd1d8-81e9-4ee4-8303-84dae7302aa8",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Five-fold increases in size, terminal dendritic branches, and total synaptic inputs were accompanied by cell type-specific connectivity changes that preserved the fraction of total synaptic input from each pre-synaptic partner. Normalized synaptic input from each mdIV to each LN was highly structured and significantly correlated between L1v and L3v, with variability between left/right cells significantly lower in L3v, suggesting target values for normalized synaptic input achieved more precisely during development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 and C56-C63 constitute the central finding about connectivity preservation. The quantitative measurements (C6, C61) and statistical analyses (C61-C62) strongly support the conclusion. The inference about target values (C63) is reasonable given the correlation and reduced variability data. This is the paper's most significant contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "f966f507-cca5-413c-8615-94fa56071d5d",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "LN inputs are topographically organized according to body wall location, with orientations conserved across development. This arrangement allows different LN populations to be driven based on precise stimulus location. Only LNs with similar input orientations connect to one another, preserving topographical circuit structure through development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68 describe the topographic organization of the circuit. The orientation analysis (C65) and its conservation are supported by Figure 3H. The functional inference about stimulus localization (C66) is reasonable given the anatomical data. The finding about LN-LN connectivity (C67) adds mechanistic insight. Overall well-supported by data and analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "25f0a822-124a-4eb6-9e22-3b190c5f8e10",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Filling fraction (the fraction of potential synapses that are actually connected) ranged from 0.01 to 0.47 and correlated strongly with overall synapse count, indicating numerically strong connections arise through high connection probability rather than only increased potential synapse counts. Filling fraction was significantly correlated between L1v and L3v, suggesting preserved local propensity to form stable synapses across development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C73 introduce and analyze the filling fraction metric. The quantitative measurements (C69) and correlations (C70, C72) are well-supported by Figure 4. The mechanistic interpretation (C71, C73) follows logically from the data. This provides important insight into how connectivity patterns are established and maintained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "ceaecc0f-1d0e-4af6-aef3-313002e896c6",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Dendritic twigs (microtubule-free terminal branches) host most synaptic input and become more central to dendritic input during development, with both the fraction of dendritic cable comprised of twigs and fraction of input synapses onto twigs increasing significantly. The fraction of cable with low Strahler order is conserved across development and cell types, suggesting neurons grow dendrites by increasing twig number while modestly increasing backbone length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74, C77-C80 describe the structural basis for increased synaptic input. The twig analysis (C77) is supported by statistical tests shown in Figure 5. The Strahler order analysis (C79) provides complementary topological evidence. The growth model inference (C80) is reasonable given both lines of evidence. Well-supported by manual annotation and quantitative analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "ed3584cf-843a-45eb-8a03-eaed182d098c",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Dendritic twigs in both L1v and L3v are small (short length, shallow depth, few branch points and synapses), but L3v twigs are slightly longer and have significantly more branch points than L1v counterparts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82 provide detailed characterization of twig properties. The quantitative measurements and statistical comparisons are shown in Figure 6A. The finding that twigs remain small but show modest increases is important for understanding how synaptic capacity scales. Well-supported by data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "4a54ff43-4d2f-4a1f-9a7c-acc10cc60305",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The anatomical and numerical redundancy of synapses on LN dendrites makes connections detectable with at least 25% of actual synapses even with 12% twig omission rate. Numerically strong L3v connections are particularly robust, detectable with 50% false negative rate. This suggests incomplete sampling strategies could identify strong synaptic partners in large neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C89 present simulation results about reconstruction robustness. The analysis (Figure 6D-E) appropriately uses error rates from prior work (C87) and provides practical insights for connectomics methodology (C89). The simulations are well-designed and the conclusions are supported by the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "2eec8fd6-32e7-4168-9d75-941f70a9e4ec",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Neuronal arbor morphology changes across postembryonic development while circuit connectivity properties remain largely unchanged. Basic anatomical elements (polyadic synapses and small post-synaptic twigs) remained similar while neurons grew five-fold in synaptic input and cable length. The fold-increase in cable length and synapse count was nearly constant across cell types despite considerable size variation at any time point.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C92, C95 summarize the main findings. These summary claims are well-supported by the comprehensive data presented throughout the manuscript. The consistency of scaling across cell types (C95) is an important observation. Claim C91 appropriately connects to prior functional studies, though this relies on citations rather than new data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "752e6760-f713-417a-9b66-1a29ce9ee3e2",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors propose that precise patterns of structural growth conserve computational circuit function, with tight control of normalized synaptic input serving circuit function through consistent compensatory growth in synaptic inputs as neurons grow. Central neurons may adapt structurally to compensate for increasing volume with concurrent increases in excitatory synaptic currents by adding synaptic contacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C8, C97-C99 present interpretations and proposed mechanisms. While the structural observations are well-supported, the functional claims (C8, C97) are speculative (as noted in evidence_type). The compensatory growth interpretation (C98-C99) is reasonable given the data but lacks direct functional validation. These remain hypotheses requiring future experimental testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "02271c2b-6a96-4761-85d2-bdb15e9a3efb",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Based on prior work showing linear dendritic integration in adult Drosophila visual and olfactory systems, the authors suggest linear integration may be common in early sensory processing. If true, this would imply the relative functional weight of each mdIV type is preserved across development since each mdIV input typically increased by a common factor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C100-C103 build on cited prior work (C100-C101) to make inferences about the current system. The logic is sound (C103) given the assumption of linear integration (C102), but this assumption is not directly tested in the current manuscript. The inference is reasonable but requires experimental validation of integration properties in larval LNs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "1281eecb-f850-46b7-8f63-2bc305236af6",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors speculate that developmental rules maintaining circuit function during growth could handle natural variability (e.g., from food restriction) and that consistent homeostatic rules could allow circuits to remain functionally similar over evolutionary changes in neuron size, citing observed homology between Calliphora and Drosophila visual neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C104-C106 are speculative extensions (C104-C105) supported by one comparative example (C106). While the speculation is reasonable and interesting, these claims go beyond the data presented. They represent hypotheses for future work rather than supported conclusions from the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    },
+    {
+      "id": "1288930c-8657-4cd3-a23e-defa12f6907c",
+      "content_id": "e83a681e-14f9-49da-8031-e1d24ca071b7",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The stringent structural stereotypy observed contrasts with rhythm-generating circuits in other invertebrates showing high variability. The authors speculate that computing features from sensory input may impose tighter constraints on circuit structure than producing periodic activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C107-C108 make a comparative observation (C107, supported by citations) and offer a speculative explanation (C108). While the contrast with STG is interesting, the mechanistic explanation (C108) is purely speculative without direct evidence. This represents an interesting hypothesis but not a supported conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:41:30.652666Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "99802fda-2e17-4fc3-8f36-ea143e3496fc",
+      "result_id": "be84628f-14d2-4d3f-88a7-003fc47b3ab2"
+    },
+    {
+      "claim_id": "ece2e7d0-d206-4eba-967f-63819eb18d33",
+      "result_id": "be84628f-14d2-4d3f-88a7-003fc47b3ab2"
+    },
+    {
+      "claim_id": "22656afd-ae2f-4a55-8c5e-d9a1b4330d47",
+      "result_id": "be84628f-14d2-4d3f-88a7-003fc47b3ab2"
+    },
+    {
+      "claim_id": "88a06780-e647-416f-a13d-828de4e1fb94",
+      "result_id": "be84628f-14d2-4d3f-88a7-003fc47b3ab2"
+    },
+    {
+      "claim_id": "7e498120-1dfa-4f35-967c-abc5517b7488",
+      "result_id": "be84628f-14d2-4d3f-88a7-003fc47b3ab2"
+    },
+    {
+      "claim_id": "728c01cf-f874-4087-b77a-8b1149eef18e",
+      "result_id": "be84628f-14d2-4d3f-88a7-003fc47b3ab2"
+    },
+    {
+      "claim_id": "b85d921e-8447-45dd-9dae-799da033ad4d",
+      "result_id": "be84628f-14d2-4d3f-88a7-003fc47b3ab2"
+    },
+    {
+      "claim_id": "91a54687-1345-4fb6-95fd-1c6fe0a3153a",
+      "result_id": "a7f3d2f0-5948-462b-bf37-5b2bf792a33b"
+    },
+    {
+      "claim_id": "5be5716f-45ba-4797-80f8-bf0e6a2b047a",
+      "result_id": "a7f3d2f0-5948-462b-bf37-5b2bf792a33b"
+    },
+    {
+      "claim_id": "34bcc553-aa78-4cee-8f51-4b82f4a69263",
+      "result_id": "a7f3d2f0-5948-462b-bf37-5b2bf792a33b"
+    },
+    {
+      "claim_id": "37b0969e-07ef-4e2c-9a8f-9789cd67b05c",
+      "result_id": "a7f3d2f0-5948-462b-bf37-5b2bf792a33b"
+    },
+    {
+      "claim_id": "8ad914fa-ca65-4279-a85e-565d689f960c",
+      "result_id": "cc540414-beb8-4f43-9bea-692e565fc8c0"
+    },
+    {
+      "claim_id": "11a573f2-d5e8-47f8-8310-ae69dc72e8f7",
+      "result_id": "cc540414-beb8-4f43-9bea-692e565fc8c0"
+    },
+    {
+      "claim_id": "d13a021c-38a2-4ae9-a22b-40795855f48e",
+      "result_id": "cc540414-beb8-4f43-9bea-692e565fc8c0"
+    },
+    {
+      "claim_id": "2c3d3272-2599-4d25-8c2d-158f62d0c656",
+      "result_id": "cc540414-beb8-4f43-9bea-692e565fc8c0"
+    },
+    {
+      "claim_id": "54c493bb-3bf3-489b-a213-d902fb1cc225",
+      "result_id": "cc540414-beb8-4f43-9bea-692e565fc8c0"
+    },
+    {
+      "claim_id": "92442ad6-ec65-4dfc-9999-6aeb49ab3f00",
+      "result_id": "cc540414-beb8-4f43-9bea-692e565fc8c0"
+    },
+    {
+      "claim_id": "7a9c3135-f30d-461a-9aa0-8653846afc57",
+      "result_id": "cc540414-beb8-4f43-9bea-692e565fc8c0"
+    },
+    {
+      "claim_id": "c5d42596-1b28-4fed-8728-57b7cc069c81",
+      "result_id": "cc540414-beb8-4f43-9bea-692e565fc8c0"
+    },
+    {
+      "claim_id": "3780dad1-9b39-465b-a74f-8c65ca78b655",
+      "result_id": "cc540414-beb8-4f43-9bea-692e565fc8c0"
+    },
+    {
+      "claim_id": "f2155834-b3ca-48c6-a65c-9ad795c0769b",
+      "result_id": "6c43ecdf-6cc7-4f97-b664-5bdf4023429d"
+    },
+    {
+      "claim_id": "cf1acf75-eeb8-4407-9c63-bab45ecc0881",
+      "result_id": "6c43ecdf-6cc7-4f97-b664-5bdf4023429d"
+    },
+    {
+      "claim_id": "fbc5cd8d-14b2-4734-80bb-c7e98010cbf3",
+      "result_id": "6c43ecdf-6cc7-4f97-b664-5bdf4023429d"
+    },
+    {
+      "claim_id": "9b10c688-c371-4700-8383-7e5d3c1b7fe8",
+      "result_id": "542cd1d8-81e9-4ee4-8303-84dae7302aa8"
+    },
+    {
+      "claim_id": "8f94c1c5-0770-409e-b62e-8d41a4a60e7a",
+      "result_id": "542cd1d8-81e9-4ee4-8303-84dae7302aa8"
+    },
+    {
+      "claim_id": "64d56040-023e-40c0-acdf-6431376857fc",
+      "result_id": "542cd1d8-81e9-4ee4-8303-84dae7302aa8"
+    },
+    {
+      "claim_id": "a771ecff-698e-46fd-98b0-0904420e22c5",
+      "result_id": "542cd1d8-81e9-4ee4-8303-84dae7302aa8"
+    },
+    {
+      "claim_id": "ef0eafea-e22f-4f57-9573-9ccb82d0ee1e",
+      "result_id": "542cd1d8-81e9-4ee4-8303-84dae7302aa8"
+    },
+    {
+      "claim_id": "36fc86bb-bf85-4489-bb7e-fde6067ead1d",
+      "result_id": "542cd1d8-81e9-4ee4-8303-84dae7302aa8"
+    },
+    {
+      "claim_id": "1e35a503-4dc7-42cc-a815-fb79e480b568",
+      "result_id": "542cd1d8-81e9-4ee4-8303-84dae7302aa8"
+    },
+    {
+      "claim_id": "0b2f2d4b-71ea-4818-876e-0598a7dfbef8",
+      "result_id": "542cd1d8-81e9-4ee4-8303-84dae7302aa8"
+    },
+    {
+      "claim_id": "58025185-1dd3-42a7-b8ff-1c26f865c246",
+      "result_id": "f966f507-cca5-413c-8615-94fa56071d5d"
+    },
+    {
+      "claim_id": "aeb4d94e-f19d-4f13-9f3f-6ac18d0bfc87",
+      "result_id": "f966f507-cca5-413c-8615-94fa56071d5d"
+    },
+    {
+      "claim_id": "95f096bd-3b49-44c0-adde-426e11d034c0",
+      "result_id": "f966f507-cca5-413c-8615-94fa56071d5d"
+    },
+    {
+      "claim_id": "6644caa5-659a-418f-93db-3a6693855b70",
+      "result_id": "f966f507-cca5-413c-8615-94fa56071d5d"
+    },
+    {
+      "claim_id": "e91472d5-ba58-4007-94b2-f066e5d5ddd1",
+      "result_id": "f966f507-cca5-413c-8615-94fa56071d5d"
+    },
+    {
+      "claim_id": "5f394559-14e8-447b-9bd6-7fb434c5f9f8",
+      "result_id": "25f0a822-124a-4eb6-9e22-3b190c5f8e10"
+    },
+    {
+      "claim_id": "aa528d24-bb85-49cd-8cbf-5df974d65d1b",
+      "result_id": "25f0a822-124a-4eb6-9e22-3b190c5f8e10"
+    },
+    {
+      "claim_id": "79018cf0-be18-418b-90bd-f35ac9ec51df",
+      "result_id": "25f0a822-124a-4eb6-9e22-3b190c5f8e10"
+    },
+    {
+      "claim_id": "c65c69e1-8c89-4469-840d-22f320b364b4",
+      "result_id": "25f0a822-124a-4eb6-9e22-3b190c5f8e10"
+    },
+    {
+      "claim_id": "38497a2d-6c11-4aff-8fd6-b308532fd961",
+      "result_id": "25f0a822-124a-4eb6-9e22-3b190c5f8e10"
+    },
+    {
+      "claim_id": "7b4d015f-5c1d-4d64-84ce-15572bdfc10a",
+      "result_id": "ceaecc0f-1d0e-4af6-aef3-313002e896c6"
+    },
+    {
+      "claim_id": "cb30f3e9-8465-42e2-b007-03b01d2fc33e",
+      "result_id": "ceaecc0f-1d0e-4af6-aef3-313002e896c6"
+    },
+    {
+      "claim_id": "ecd2aed3-6f26-4bcd-a28c-dcc7edf4afb5",
+      "result_id": "ceaecc0f-1d0e-4af6-aef3-313002e896c6"
+    },
+    {
+      "claim_id": "c2568926-fdbd-4195-aaca-113dd945f077",
+      "result_id": "ceaecc0f-1d0e-4af6-aef3-313002e896c6"
+    },
+    {
+      "claim_id": "d68b9076-8f76-4a4f-94d1-850e3337d7a7",
+      "result_id": "ceaecc0f-1d0e-4af6-aef3-313002e896c6"
+    },
+    {
+      "claim_id": "4dbded4b-97db-4a38-8fab-7a4770f7369d",
+      "result_id": "ed3584cf-843a-45eb-8a03-eaed182d098c"
+    },
+    {
+      "claim_id": "2abe7d22-8111-4fa5-b9e4-fd50dab658aa",
+      "result_id": "ed3584cf-843a-45eb-8a03-eaed182d098c"
+    },
+    {
+      "claim_id": "c8a0f6b1-390a-4991-9f4d-ba5c969226eb",
+      "result_id": "4a54ff43-4d2f-4a1f-9a7c-acc10cc60305"
+    },
+    {
+      "claim_id": "d05ce9ab-5b44-4e65-83da-cf9bf456bd1b",
+      "result_id": "4a54ff43-4d2f-4a1f-9a7c-acc10cc60305"
+    },
+    {
+      "claim_id": "965046c3-0d85-41b5-9f4c-de671b55fb8d",
+      "result_id": "4a54ff43-4d2f-4a1f-9a7c-acc10cc60305"
+    },
+    {
+      "claim_id": "a88f2214-8d5b-4e5d-ae00-1247662df6c7",
+      "result_id": "2eec8fd6-32e7-4168-9d75-941f70a9e4ec"
+    },
+    {
+      "claim_id": "52f8720b-af04-447d-b333-d849ce3cad62",
+      "result_id": "2eec8fd6-32e7-4168-9d75-941f70a9e4ec"
+    },
+    {
+      "claim_id": "cc9c31aa-b2f8-405b-81f6-eb264afb3b10",
+      "result_id": "2eec8fd6-32e7-4168-9d75-941f70a9e4ec"
+    },
+    {
+      "claim_id": "ff7f57af-9190-4bd1-afe6-790fa4b15845",
+      "result_id": "2eec8fd6-32e7-4168-9d75-941f70a9e4ec"
+    },
+    {
+      "claim_id": "3b6d4f8b-65ee-44ef-86d0-a4a4c53b3c16",
+      "result_id": "752e6760-f713-417a-9b66-1a29ce9ee3e2"
+    },
+    {
+      "claim_id": "b2d05f76-25de-438f-9425-3158fa97b34a",
+      "result_id": "752e6760-f713-417a-9b66-1a29ce9ee3e2"
+    },
+    {
+      "claim_id": "9affa567-8b4e-44fe-9a89-8cee31670058",
+      "result_id": "752e6760-f713-417a-9b66-1a29ce9ee3e2"
+    },
+    {
+      "claim_id": "121f5a7f-919a-437f-9c96-1f1e0fb202e7",
+      "result_id": "752e6760-f713-417a-9b66-1a29ce9ee3e2"
+    },
+    {
+      "claim_id": "220cd6ce-140e-4038-99b8-a4c1706143c7",
+      "result_id": "02271c2b-6a96-4761-85d2-bdb15e9a3efb"
+    },
+    {
+      "claim_id": "7a7d7ac0-3950-41d4-ad12-2e1b2538338b",
+      "result_id": "02271c2b-6a96-4761-85d2-bdb15e9a3efb"
+    },
+    {
+      "claim_id": "6d524fff-28f1-4012-b5f5-666c5b56702c",
+      "result_id": "02271c2b-6a96-4761-85d2-bdb15e9a3efb"
+    },
+    {
+      "claim_id": "dc0bf614-df8a-4cd6-889c-4333d86a6612",
+      "result_id": "02271c2b-6a96-4761-85d2-bdb15e9a3efb"
+    },
+    {
+      "claim_id": "406a7574-24ee-4a0d-a5d3-d033e6e12b3a",
+      "result_id": "1281eecb-f850-46b7-8f63-2bc305236af6"
+    },
+    {
+      "claim_id": "1e34d2bd-43e2-471d-b481-99c6baee8d3a",
+      "result_id": "1281eecb-f850-46b7-8f63-2bc305236af6"
+    },
+    {
+      "claim_id": "95312ca6-ab7e-4a6c-8373-d15e3b43e7df",
+      "result_id": "1281eecb-f850-46b7-8f63-2bc305236af6"
+    },
+    {
+      "claim_id": "1341a50c-ee19-4f3b-913c-9445607e0c6d",
+      "result_id": "1288930c-8657-4cd3-a23e-defa12f6907c"
+    },
+    {
+      "claim_id": "b6d07412-c124-47b8-a0ac-f6b7a7c4cc4d",
+      "result_id": "1288930c-8657-4cd3-a23e-defa12f6907c"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1935 @@
+{
+  "submission": {
+    "id": "631f1544-7896-4627-bde9-3b9788dcce45",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:28:29.933951Z",
+    "updated_at": "2025-12-01T22:28:29.933951Z"
+  },
+  "content": [
+    {
+      "id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "submission_id": "631f1544-7896-4627-bde9-3b9788dcce45",
+      "content_type": "manuscript",
+      "content_text": "# Molecular basis of fatty acid taste in Drosophila\n\n## Authors\n\n- Ji-Eun Ahn<sup>1</sup> ([ORCID: 0000-0002-3390-3578](https://orcid.org/0000-0002-3390-3578))\n- Yan Chen<sup>1</sup> ([ORCID: 0000-0002-5321-3064](https://orcid.org/0000-0002-5321-3064))\n- Hubert Amrein<sup>1</sup> ([ORCID: 0000-0001-8799-7250](https://orcid.org/0000-0001-8799-7250)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cellular Medicine, Health Science Center Texas A&M University College Station, Texas United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nBehavioral studies have established that Drosophila appetitive taste responses towards fatty acids are mediated by sweet sensing Gustatory Receptor Neurons (GRNs). Here we show that sweet GRN activation requires the function of the Ionotropic Receptor genes IR25a, IR76b and IR56d. The former two IR genes are expressed in several neurons per sensillum, while IR56d expression is restricted to sweet GRNs. Importantly, loss of appetitive behavioral responses to fatty acids in IR25a and IR76b mutant flies can be completely rescued by expression of respective transgenes in sweet GRNs. Interestingly, appetitive behavioral responses of wild type flies to hexanoic acid reach a plateau at ~1%, but decrease with higher concentration, a property mediated through IR25a/IR76b independent activation of bitter GRNs. With our previous report on sour taste, our studies suggest that IR-based receptors mediate different taste qualities through cell-type specific IR subunits.\n\n## Introduction\n\nDetection of food compounds plays a critical role in feeding behavior. Likewise, the ability to avoid harmful chemicals is essential to navigate the evaluation of suboptimal food sources that might contain toxins or are contaminated with microorganism producing harmful chemicals. Hence, animals have evolved chemoreceptors to detect and discriminate between nutritious food chemicals, and chemoreceptors that sense non-nutritious and potentially harmful chemicals. Receptors for sugars, amino acids and fatty acids have been identified in mammals (Cartoni et al., 2010; Galindo et al., 2012; Max et al., 2001; Montmayeur et al., 2001; Nelson et al., 2001; Zhao et al., 2003), and other vertebrates (Ishimaru et al., 2005), albeit in some, receptor types for certain nutritious chemicals have been lost (Baldwin et al., 2014; Jiang et al., 2012; Jin et al., 2011; Lagerstr\u00f6m et al., 2006; Zhao et al., 2012). In mice, these various types of receptors are expressed in distinct populations of taste cells located mainly in taste buds on the tongue. For example, three different groups of cells respond to calorie-rich carbohydrates, amino acids and fatty acids, respectively, while a separate group of cells is dedicated to the detection of salt (NaCl), a modest amount of which is essential for many cellular functions. Lastly, two functionally distinct types of taste cells detect diverse organic, but repugnant chemicals (phenols, alkaloids etc.) and acids, perceived as bitter and sour, respectively (Liman et al., 2014). Thus, the intrinsic quality of different taste chemicals is initially encoded in the taste periphery, which is transmitted through dedicated sensory pathways, a concept generally referred as the labeled line hypothesis of taste coding (Dethier, 1978; Di Lorenzo, 2000; Spector and Travers, 2005).\n\nWith the exception of sugars, perception of nutritious chemicals is relatively poorly understood in insects. In Drosophila, food and other soluble chemicals are detected by taste sensilla (comparable to mammalian taste buds) located on the labial palps and the legs. Most of these sensilla harbor four Gustatory Receptor Neurons (GRNs), each of which is thought to mediate a taste quality: sweet, water, low salt, and bitter/high salt (Liman et al., 2014; Vosshall and Stocker, 2007). The only appetitive taste modality that has been studied in detail is that of sweet taste, elicited by a relative small group of dietary sugars, such as glucose, sucrose, trehalose, maltose, melizitose and raffinose, found mostly in fruits. Genetic studies, combined with behavioral analysis, electrophysiology and Ca2+ imaging have revealed that a group of eight sugar Gustatory receptor genes (Gr5a, Gr61a and Gr64a-f) is mostly responsible for the detection of sugars (Dahanukar et al., 2007; Fujii et al., 2015; Jiao et al., 2008; Miyamoto et al., 2013; Slone et al., 2007; Yavuz et al., 2014). With the exception of Gr5a, all sugar Gr genes are expressed at most in a single GRN\u00a0per\u00a0sensillum (Fujii et al., 2015; Slone et al., 2007), which is generally referred to as the sweet GRN. Indeed, electrophysiological studies on a small number of labellar taste sensilla (Dahanukar et al., 2007) and both Ca2+ imaging and electrophysiological recordings on tarsal sensilla of the most distal segment of the forelegs (Ling et al., 2014; Miyamoto et al., 2013; Yavuz et al., 2014) have confirmed that sweet GRNs respond specifically to sugars, but not to bitter compounds or salt. Interestingly, sweet GRNs vary in the number of expressed sugar Gr genes (Fujii et al., 2015), providing different GRNs with the potential for distinct sugar sensing specificities.\n\nIn contrast to sweet taste, little is known about the cellular and molecular basis of amino acid and fatty acid taste in insects. While both these nutrients are essential for growth and development during larval life, their relevance in adults is mainly restricted to females, which require fat and protein for the production of eggs. Evidence for appetitive taste of fatty acids in Drosophila has been demonstrated using the classical Proboscis Extension Reflex (PER) assay (Masek and Keene, 2013), but whether flies can sense amino acids through their taste sensory system is less clear and appears at least in part to depend on the internal nutrient status (Toshima and Tanimura, 2012). Regardless, no defined set of taste neurons that respond to amino acids have been described to date.\n\nHere, we employed a genetic approach to investigate the cellular and molecular basis for fatty acid taste. Using Ca2+ imaging, we report that tarsal sweet GRNs are activated by fatty acids, and we show that IR25a and IR76b are\u00a0expressed in numerous GRNs, including sweet GRNs, where they are required for their activation by fatty acids, but not by sugars. RNAi knock-down of a third IR transcript, IR56d, in sweet GRNs also abolished fatty acid responses both at the behavioral as well as the cellular level. In contrast to IR25a and IR76b, which are also required for sour taste and expressed in respective acid sensing GRNs (Chen and Amrein, 2017), expression of IR56d is confined to sweet GRNs, suggesting a more restricted role for this receptor in fatty acid taste.\n\nIn contrast to responses to sugars, which increase in a concentration dependent manner to reach a plateau, we observed that wild type flies show maximal PER responses at modest concentrations to one fatty acids, (hexanoic acid), while higher concentrations led to a reduction in PER responses. Interestingly, we found that hexanoic acid also activates bitter GRNs, albeit in an IR25a/IR76b independent manner, suggesting that bitter and sweet GRN activation modulate feeding response to this ligand. Consistent with this hypothesis, inhibition of neural transmission of sweet GRNs abolishes PER responses completely, while the same manipulation of bitter GRNs results in further increase in PER responses to hexanoic acid. These observations suggest a model in which activation of bitter GRNs counteract the activation of sweet GRNs to suppress feeding responses to hexanoic acid, possibly to moderate intake of this nutrient compound.\n\n## Results\n\nThe notion that sweet GRNs are exclusively tuned to sugar has recently been challenged, as it was shown that flies exhibit sweet GRN -dependent appetitive behavioral responses to fatty acids (Masek and Keene, 2013). Thus, we first wanted to confirm these findings using flies with intact and functionally impaired, tetanus toxin (TNT) expressing sweet GRNs, respectively (Figure 1). Both sets of control flies (Gr64f-GAL4/+ and\u00a0+\u00a0/UAS-TNT) showed robust PER responses to fatty acids and the sugar sucrose when tarsi were stimulated, while flies with inactivated sweet GRNs (Gr64f-GAL4/UAS-TNT) lost PER responses to all these food chemicals (Figure 1A). We note that somewhat lower PER responses were elicited when the labellum was stimulated with fatty acids (Figure 1\u2014figure supplement 1). To explore whether fatty acid taste requires the sugar Gr genes, we used a sugar Gr deficient fly strain (Gr5aLexA; \u0394Gr61a \u0394Gr64a-f) (Fujii et al., 2015; Yavuz et al., 2014) and tested PER responses to fatty acids and sucrose (Figure 1B). While PER responses to fatty acids were unaffected or higher in these octuple mutant flies, they were severely reduced to sucrose (Figure 1B), indicating that other receptors must be expressed in sweet GRNs to detect fatty acids. Use of different taste receptors for mediating the two taste modalities is consistent with the finding that mutations in norpA, which encodes a phospholipase C, affected PER responses to fatty acids, but not to sugars (Masek and Keene, 2013). Moreover, and consistent with this behavioral phenotype, sweet taste neurons of norpA mutant flies had strongly reduced responses to fatty acids, but not sucrose, using a Ca2+ imaging assay (Figure 1\u2014figure supplement 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/30115/elife-30115-fig1-v2.jpg)\n\n**Figure 1.:** (A) Sweet GRNs are necessary for fatty acid sensing. Inactivation of sweet GRNs (Gr64f-GAL4/UAS-TNT) leads to loss of PER responses to both sucrose and fatty acids. Control flies (Gr64f-GAL4/+ and UAS-TNT/+) show robust PER responses to fatty acids and sucrose. Each bar represents the mean\u00a0\u00b1\u00a0SEM of PER responses (n\u00a0=\u00a060\u201370 flies). Bars with different letters are significantly different (Kruskal-Wallis test by ranks with Dunn\u2019s multiple comparison tests, p<0.05). Each y-axis delineates groups for Kruskal-Wallis test. (B) Sugar Gr genes are dispensable for fatty acid sensing. Octuple mutant flies lacking all sugar Gr genes (Gr5aLexA\ufeff;\u0394Gr61a\u0394Gr64a-f) exhibit PER responses to fatty acids similar to flies with functional sugar Gr genes (w1118), but they have severely reduced PER response to sucrose. The residual PER responses to sucrose of octuple mutant flies is mediated by Gr43a (Miyamoto et al., 2012). Each bar represents the mean\u00a0\u00b1\u00a0SEM of PER responses (n\u00a0=\u00a042\u201383 flies). Asterisks indicate a significant difference between the mutant and control flies (Two-tailed, Mann-Whitney U test, ***p<0.001, ns: not significant). Each y-axis delineates groups for Mann-Whitney U test. The genotype of octuple mutant flies is R1 Gr5aLexA; +; \u0394Gr61a \u0394Gr64a-f (Yavuz et al., 2014). Source data for summary graphs are provided in Figure 1\u2014source data 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30115/elife-30115-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** No difference in PER responses to sugar is observed between the\u00a0leg and the\u00a0labial palp stimulation. Each bar represents the mean\u00a0\u00b1\u00a0SEM of PER responses (n\u00a0=\u00a042\u2013118 flies). Asterisks indicate a significant difference between the leg and the labellum of wild-type flies (w1118) (Two-tailed, Mann-Whitney U test, ***p<0.001, *p<0.05, ns: not significant). Each y-axis delineates groups for Mann-Whitney U test. Source data for summary graphs are provided in Figure 1\u2014figure supplement 1\u2014source data 1.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30115/elife-30115-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Ca2+ responses of the\u00a05b-, 5s-, or 5v-associated sweet GRNs of norpA mutant flies to indicated ligands. Ca2+ responses to hexanoic and octanoic acids are significantly reduced in the\u00a05b (A)- and the\u00a05s (B)-associated sweet GRNs of norpA mutant flies, and they are fully or partially rescued when UAS-norpA is expressed in sweet GRNs. Ca2+ responses to linoleic acid are significantly reduced only in the sweet GRN associated with 5s (B) and 5v (C) sensilla from norpA mutant flies. Each bar represents the mean\u00a0\u00b1\u00a0SEM of Ca2+ imaging with 3\u201335 female prothoracic legs. Bars with different letters are significantly different (Kruskal-Wallis test by ranks with Dunn\u2019s multiple comparison tests, p<0.05). Each y-axis delineates groups for Kruskal-Wallis test. Fly genotypes: Gr64f-GAL4 UAS-GCaMP6m/+ (Control, black bar), norpAP24; Gr64f-GAL4 UAS-GCaMP6m/+ (norpA-/-, white) and norpAP24; Gr64f-GAL4 UAS-GCaMP6m/UAS-norpA (Rescue, grey). Source data for summary graphs are provided in Figure 1\u2014figure supplement 2\u2014source data 1.\n\n### Broadly expressed IR25a and IR76b are required for PER responses to fatty acids\n\nIn mammals, fatty acid taste is mediated by at least two G-protein coupled receptors, GPR40 and GPR120 (Cartoni et al., 2010; Matsumura et al., 2007). However, BLAST searchers showed that no homologs for these genes are found in the Drosophila genome. To identity putative candidates for Drosophila fatty acid taste receptors, we turned our attention to members of the Ionotropic Receptor (IR) gene family. IRs are\u00a0derived from ionotropic Glutamate Receptors (iGluRs) genes and expanded in number during arthropod evolution, comprising a family of 61 genes in Drosophila (Benton et al., 2009; Croset et al., 2010). The role of IR proteins has been extensively characterized in the olfactory system, where they form multimeric receptors for the detection of an array of different odorant molecules (Abuin et al., 2011; Ai et al., 2013; Benton et al., 2009; Hussain et al., 2016; Silbering et al., 2011), but IR based receptors have also been implicated in temperature sensing (Knecht et al., 2016; Ni et al., 2016), humidity sensing (Enjin et al., 2016; Knecht et al., 2017; Knecht et al., 2016) and taste perception (Croset et al., 2016; Ganguly et al., 2017; Hussain et al., 2016; Koh et al., 2014; Zhang et al., 2013). Of particular interest were IR25a and IR76b, because these two genes are enriched in taste neurons (Cameron et al., 2010). We therefore examined the expression of IR-GAL4/QF drivers for both genes and found that they were indeed expressed in multiple GRNs per sensillum (Figure 2). In tarsal sensilla, their expression largely overlapped (Figure 2F) and included the sweet and bitter GRNs that express sugar and bitter Gr genes, respectively (Figure 2B\u2013E), thus identifying them as possible subunits of fatty acid taste\u00a0receptors. Both genes were also expressed in multiple neurons\u00a0per\u00a0sensillum in the labial palps, albeit co-expression was incomplete in this taste organ (Figure 2\u2014figure supplement 1). To examine a possible role for IR25a and IR76b in fatty acid taste, we conducted PER assays with flies from each mutant strain to hexanoic, octanoic and linoleic acids and found that PER responses were abolished in both IR25a-/- and IR76b-/- flies, a phenotype completely (hexanoic acid\u00a0and octanoic acid) or partially (linoleic acid) rescued when expression was restored with UAS-IR25a or UAS-IR76b transgenes (Figure 3A and B). Additionally, IR25a-/- and IR76b-/- flies showed normal PER responses to sucrose, indicating that the role of these two genes is specific to fatty acid taste and not required for sweet taste to sugars. Importantly, when IR25a function was provided in sweet GRNs of IR25a-/- flies, their PER responses were restored to levels indistinguishable from controls (Figure 3C). Likewise, expression of IR76b in sweet GRNs\u00a0alone also rescued PER responses to fatty acids in IR76b-/- flies (Figure 3D). Together, these observations indicate that the functions of IR25a and IR76b are required in sweet GRNs for robust PER responses to fatty acids, but not to sugars.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/30115/elife-30115-fig2-v2.jpg)\n\n**Figure 2.:** (A) Drawing of the fifth tarsal segment of the prothoracic leg that is used for immunofluorescence experiments (B\u2013F). Tarsal taste sensilla are indicated. (B and C) IR25a and IR76b are expressed in sweet GRNs. Immunostaining with anti-GFP (green) and anti-mCD8 (B; magenta) or anti-HA (C; magenta) antibodies on whole-mount preparations of the fifth tarsal segment of the prothoracic leg from flies of the genotypes: IR25a-GAL4/UAS-mCD8:RFP; Gr64fLexA lexAop-rCD2:GFP (B) or IR76b-QF UAS-mCD8:GFP/Gr64f-GAL4;QUAS-mtd-Tomato-3xHA/+ (C). Arrows refer to a GRN of a sensillum expressing both Gr64f and the indicated IR genes. (D and E) IR25a and IR76b are expressed in bitter GRNs. Immunostaining with anti-GFP (green) and anti-IR25a (D; magenta) or anti-HA (E; magenta) antibodies on whole-mount preparations of the fifth tarsal segment of the prothoracic leg from flies of the genotypes: Gr33aGAL4/UAS-mCD8:GFP (D) or IR76b-QF UAS-mCD8:GFP/Gr33aGAL4;QUAS-mtd-Tomato-3xHA/+ (E). Arrows refer to a GRN of a sensillum expressing both Gr33a and the indicated IR genes. (F) IR25a and IR76b are largely co-expressed in tarsal GRNs. Immunostaining with anti-GFP (green) and anti-HA (magenta) antibodies on whole-mount preparations of the fifth tarsal segment of the prothoracic leg from flies of the genotypes: IR76b-QF UAS-mCD8:GFP/IR25a-GAL4;QUAS-mtd-Tomato-3xHA/+. Arrows refer to GRNs expressing both IR25a and IR76b genes. Numbers indicate the average count of IR or Gr expressing GRNs/sensillum. Due to close proximity, neurons could not always be associated with either the 5s and 5v sensillum, and the cell count was therefore pooled.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30115/elife-30115-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Immunostaining with anti-GFP (green) and anti-mCD8 (B; magenta) or anti-IR25a (D; magenta) or anti-HA (A, C, and E; magenta) antibodies on whole-mount preparations of the labial palp from flies expressing IR25a-GAL4/IR76b-QF UAS-mCD8:GFP;QUAS-mtd-Tomato-3xHA/+ (A), IR25a-GAL4/UAS-mCD8:RFP; Gr64fLexA lexAop-rCD2:GFP (B), IR76b-QF UAS-mCD8:GFP/Gr64f-GAL4;QUAS-mtd-Tomato-3xHA/+ (C), Gr33aGAL4/UAS-mCD8:GFP (D) or IR76b-QF UAS-mCD8:GFP/Gr33aGAL4;QUAS-mtd-Tomato-3xHA/+ (E) transgenes. IR25a and IR76b are co-expressed in many GRNs (A). However, only small subsets of IR25a or IR76b expressing cells are co-labeled with markers for sweet GRNs (B and C) or makers for bitter GRNs (D and E).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/30115/elife-30115-fig3-v2.jpg)\n\n**Figure 3.:** (A and B) Mutations in IR25a or IR76b abolish PER responses to fatty acids. IR25a (A) and IR76b (B) mutant flies show significantly reduced PER responses to fatty acids, which are rescued by expression of UAS-IR25a and UAS-IR76b respectively, under control of their respective GAL4 drivers. Expression of UAS-IR25a transgenes only partially rescues PER responses to linoleic acid (A). Each bar represents the mean\u00a0\u00b1\u00a0SEM of PER responses (n\u00a0=\u00a034\u2013116 flies). Bars with different letters are significantly different (Kruskal-Wallis test by ranks with Dunn\u2019s multiple comparison tests, p<0.05). Each y-axis delineates groups for Kruskal-Wallis test. Fly genotypes: wild-type: w1118 (black), mutants: IR25a1/IR25a1 and IR76b1/IR76b1 (white), IR25a1 IR25a-GAL4/IR25a1 and IR76b-GAL4/+; IR76b1/IR76b1 (dotted), IR25a1 UAS-IR25a/IR25a1 and UAS-IR76b/+; IR76b1 (lines), and rescue: IR25a1 IR25a-GAL4/IR25a1 UAS-IR25a (red), IR76b-GAL4/UAS-IR76b; IR76b1/IR76b1 (blue). (C and D) Functions of IR25a and IR76b in sweet GRNs are required and sufficient for fatty acid taste. IR25a (C) or IR76b (D) mutant flies show significantly reduced PER responses to fatty acids but not to sucrose. Restoring expression by UAS-IR25a (C) or UAS-IR76b (D) in sweet GRNs of IR25a or IR76b mutant flies is sufficient to rescue the loss of PER responses to fatty acids. Each bar represents the mean\u00a0\u00b1\u00a0SEM of PER responses (n\u00a0=\u00a022\u2013124 flies). Bars with different letters are significantly different (Kruskal-Wallis test by ranks with Dunn\u2019s multiple comparison tests, p<0.05). Each y-axis delineates groups for Kruskal-Wallis test. Fly genotypes: control flies: wild-type: w1118 (black), mutants: IR25a1/IR25a1 and IR76b2/IR76b2 (white), IR25a1 Gr64f-GAL4/IR25a1 and Gr64f-GAL4/+; IR76b2/IR76b2 (dotted), IR25a1 UAS-IR25a/IR25a1 and UAS-IR76b/+; IR76b2/IR76b2 (lines), and rescue: IR25a1 Gr64f-GAL4/IR25a1 UAS-IR25a (red), Gr64f-GAL4/UAS-IR76b; IR76b2/IR76b2 (blue). Source data for summary graphs are provided in Figure 3\u2014source data 1.\n\n### Sweet neurons require IR25a and IR76b for fatty acid sensing\n\nTo obtain direct evidence that IR25a and IR76b mediate fatty acid sensing in taste neurons, we performed Ca2+ imaging experiments on tarsal sensilla preparations (Miyamoto et al., 2013, 2012) of wild type control flies (w1118), IR25a-/- and IR76b-/- flies that expressed the calcium sensor GCaMP6m in sweet GRNs (Dahanukar et al., 2007; Fujii et al., 2015) (Figure 4). We measured Ca2+ responses in sweet GRNs of the taste sensilla in the fifth tarsal segment of the prothoracic leg (5b, 5s and 5v; Figure 4A; the 5a sensillum is mainly dedicated to pheromone sensing, and no sugar or fatty acid responses were observed in these GRNs). In wild type flies, the sweet GRNs of 5b and 5s sensilla showed robust Ca2+ increases to hexanoic and octanoic acids and modest, but significant increases to linoleic acid (Figure 4B and C). Only weak Ca2+ responses were observed in the 5v-associated sweet GRNs. Importantly, Ca2+ responses were absent in 5b- and 5s-associated sweet GRNs of IR25a-/- or IR76b-/- flies (Figure 4D and E). IR25a or IR76b requirement for cellular fatty acid responses was confirmed by transgene rescue experiments, which restored Ca2+ increases to the level observed in w1118 controls flies (Figure 4D and E).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/30115/elife-30115-fig4-v2.jpg)\n\n**Figure 4.:** (A) Diagram of the fifth tarsal segment of the prothoracic leg. Ca2+ imaging was carried out for the sweet GRN of the 5b, 5s and 5v sensilla (the Gr64f-GAL4 expressing GRN in the 5a sensillum does not respond to sugar and was not included in our analysis). (B) Representative still images of the fifth tarsal segment of the prothoracic leg show maximum Ca2+ responses of the sweet GRNs upon stimulation by indicated ligands. \u0394F indicates the changes in fluorescence light intensity of the cell body before/after ligand stimulation. (C) Representative fluorescence traces (top) and corresponding Ca2+ responses (bottom) of the sweet GRN associated with the 5b, 5s and 5v sensilla after stimulation with indicated ligands. The gray line underneath the fluorescence traces indicates time of ligand application. Hexanoic and octanoic acids elicit strong Ca2+ responses in the sweet GRN associated with 5b and 5s sensilla, but not the 5v sensillum. The 5v-associated sweet GRN shows weak, but significant Ca2+ responses to linoleic acid when compared to carrier. 10 mM sucrose was used as a positive control. Each bar represents the mean\u00a0\u00b1\u00a0SEM of Ca2+ imaging with 13\u201357 female prothoracic legs. Two-tailed, Mann-Whitney U test versus 0.2% ethanol (carrier), ***p<0.001, ns: not significant. Fly genotype is Gr64f-GAL4/+; UAS-GCaMP6m/+. Note that traces and graphs for a second UAS-GCaMP6m reporter (located on the second chromosome and used to analyze IR76b mutant flies) are shown in Figure 4\u2014figure supplement 1A and B. (D and E) IR25a and IR76b are necessary in sweet GRNs for fatty acid responses. Ca2+ responses of 5b-, 5s- and 5v-associated sweet GRNs of IR25a (D) or IR76b (E) mutant flies to indicated ligands. Ca2+ responses to hexanoic and octanoic acids are abolished in 5b- and 5s-associated sweet GRNs of both IR25a and IR76b mutant flies, and they are fully rescued when UAS-IR25a or UAS-IR76b expression is provided in sweet GRNs. Ca2+ responses to linoleic acid are significantly reduced only in the sweet GRN associated with 5s and 5v sensilla from IR76b mutant flies (E). Each bar represents the mean\u00a0\u00b1\u00a0SEM of Ca2+ imaging with 16\u201350 female prothoracic legs. Bars with different letters are significantly different (Kruskal-Wallis test by ranks with Dunn\u2019s multiple comparison tests, p<0.05). Each y-axis delineates groups for Kruskal-Wallis test. Fly genotypes D: Gr64f-GAL4/+; UAS-GCaMP6m/+ (Control, black bar), IR25a2 Gr64f-GAL4/IR25a2; UAS-GCaMP6m/+ (IR25a-/-, white) and IR25a2 Gr64f-GAL4/IR25a2 UAS-IR25a; UAS-GCaMP6m/+ (Rescue, grey); Fly Genotypes E: Gr64f-GAL4 UAS-GCaMP6m/+ (Control, black), Gr64f-GAL4 UAS-GCaMP6m/+; IR76b2/IR76b2 (IR76b-/-, white) and Gr64f-GAL4 UAS-GCaMP6m/UAS-IR76b; IR76b2/IR76b2 (Rescue, grey). For representative traces of these genotypes, see Figure 4\u2014figure supplement 1C and D. Source data for summary graphs are provided in Figure 4\u2014source data 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30115/elife-30115-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A and B) Representative fluorescence traces (A) and corresponding Ca2+ responses (B) of control flies (Gr64f-GAL4 UAS-GCaMP6m/+) of the 5b-, 5s- and 5v- associated sweet GRNs upon stimulation with indicated ligands. The gray line underneath the fluorescence traces indicates time of ligand application. Error bar represents the mean\u00a0\u00b1\u00a0SEM of Ca2+ imaging from 13 to 26 recordings of female prothoracic legs (B). Two-tailed, Mann-Whitney U test versus 0.2% ethanol (carrier), ***p<0.001, ns: not significant. (C and D) Representative fluorescence traces of the\u00a05b-, 5s- and 5v- associated sweet GRNs of IR25a (C) or IR76b (D) mutant flies to indicated ligands. The gray line underneath the fluorescence traces indicates time of ligand application. Fly genotypes C: Gr64f-GAL4/+; UAS-GCaMP6m/+ (control, black line), IR25a2 Gr64f-GAL4/IR25a2; UAS-GCaMP6m/+ (IR25a-/-, magenta line) and IR25a2 Gr64f-GAL4/IR25a2 UAS-IR25a; UAS-GCaMP6m/+ (rescue, green line). Fly genotypes (D) Gr64f-GAL4 UAS-GCaMP6m/+ (control, light grey line), Gr64f-GAL4 UAS-GCaMP6m/+; IR76b2/IR76b2 (IR76b-/-, blue line) and Gr64f-GAL4 UAS-GCaMP6m/UAS-IR76b; IR76b2/IR76b2 (rescue, orange line). Source data for summary graphs are provided in Figure 4\u2014figure supplement 1\u2014source data 1.\n\n### The\u00a0IR56d gene\u00a0is sweet GRN specific and required for fatty acid taste\n\nIR25a and IR76b are expressed in multiple GRNs per sensillum (Figure 2), including a recently characterized sour GRN where they are required to sense carboxylic acids and HCl (Chen and Amrein, 2017). This finding, together with the observation that IRs are likely to form tetrameric complexes containing three and possibly four different IR subunits (Abuin et al., 2011) led us to search for additional IR genes involved in fatty acid taste. We therefore examined seven candidate IR genes based on their expression in taste sensilla (Cameron et al., 2010; Koh et al., 2014) for effects on PER when functionally perturbed. RNAi knock-down of one of these genes, IR56d, led to a significant reduction in PER responses\u00a0to all fatty acids (Figure 5A), while knock-downs of\u00a0or\u00a0of mutations in the other six\u00a0IR\u00a0genes had no effect (Figure 5\u2014figure supplement 1). We next expressed GCaMP6m in sweet GRNs, along with the RNAiIR56d construct and carried out Ca2+ imaging experiments of sweet GRNs. As expected, we observed an almost complete loss of GRN activation to hexanoic and octanoic acids (Figure 5B and C), similar as observed for IR25a or IR76b mutants (Figure 4D and E). Finally, we examined expression of an IR56d-GAL4 line in the tarsal segments of the prothoracic leg (Koh et al., 2014). Indeed, antibody staining of tarsi of flies also expressing a marker for sweet GRNs showed complete overlap between IR56d and Gr64f, while no expression was observed in bitter GRNs, labeled by Gr66a-LexA (Figure 5E and F). Taken together, these experiments imply that the fatty acid taste\u00a0receptor in sweet GRNs is composed of at least three subunits, IR25a, IR76b and the more narrowly expressed IR56d subunit. However, they do not exclude the possibility of yet a fourth IR being part of a fatty acid taste\u00a0receptor complex.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/30115/elife-30115-fig5-v2.jpg)\n\n**Figure 5.:** (A) PER responses\u00a0are reduced to all three fatty acids, but not to sucrose, in flies expressing an UAS-RNAiIR56d construct in sweet GRNs. Targeted knockdown of IR56d is conducted by expression of UAS-IR56dRNAi under control of Gr64f-GAL4. Each bar represents the mean\u00a0\u00b1\u00a0SEM of PER responses (n\u00a0=\u00a049\u201359 flies). Bars with different letters are significantly different (Kruskal-Wallis test by ranks with Dunn\u2019s multiple comparison tests, p<0.05). Each y-axis delineates groups for Kruskal-Wallis test. Fly genotypes: control flies: Gr64f-GAL4/+ (grey), UAS-IR56dRNAi/+ (lines) and IR56d knock-down fly: Gr64f-GAL4/+; UAS-IR56dRNAi/+ (white). (B and C) Ca2+ responses in 5b- (B) and 5s- (C) associated sweet GRNs of flies expressing UAS-GCaMP6m and UAS-RNAiIR56d in sweet GRNs show loss of fatty acid induced neural activation, compared to neurons of control flies. Targeted knockdown of IR56d in sweet GRNs has no effect on Ca2+ responses to linoleic acid. 10 mM sucrose was used as a positive control. Each bar represents the mean\u00a0\u00b1\u00a0SEM of Ca2+ imaging with 3\u201321 female prothoracic legs. Asterisks indicate a significant difference between the IR56dRNAi and control flies (Two-tailed, Mann-Whitney U test, **p<0.01, ns: not significant). Each y-axis delineates groups for Mann-Whitney U test. Fly genotypes: Gr64f-GAL4 UAS-GCaMP6m/+ (control, black) and Gr64f-GAL4 UAS-GCaMP6m/+; UAS-IR56dRNAi/+ (IR56dRNAi, white). (D) Drawing of the fifth tarsal segment of the prothoracic leg that is used for immunofluorescence experiments (E and F). Tarsal taste sensilla are indicated. (E and F) Expression of IR56d-GAL4 is restricted to a single GRN in all sensilla examined and co-localizes with Gr64f-LexA (E). No expression of IR56d-GAL4 is observed in Gr66a-LexA expressing\u00a0bitter GRNs associated with 5s sensilla (F). Immunostaining with anti-GFP (green) and anti-mCD8 (magenta) antibodies on whole-mount preparations of tarsal segments of the prothoracic leg from flies of the genotypes: UAS-mCD8:RFP lexAop-rCD2:GFP;IR56d-GAL4/+;Gr64fLexA/TM6c (E) and UAS-mCD8:RFP lexAop-rCD2:GFP;Gr66a-LexA/IR56d-GAL4;+/TM6c (F). Arrows refer to a GRN of a sensillum expressing both Gr64f and IR56d genes. Source data for summary graphs are provided in Figure 5\u2014source data 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30115/elife-30115-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) PER responses to fatty acids in flies in which IR gene knockdown by RNA interference was done under the control of Gr64f-GAL4. For each genotype, 4 to 12 flies were used and average PER response was calculated, based on three times stimulations with each ligand; with the exception of IR56dRNAi, no obvious reduction of PER was apparent in any of the tested flies. For IR56dRNAi, an extensive PER analysis was carried out (see Figure 5). Note that the UAS-IR94hRNAi line was from another genetic background (Bloomington Drosophila Stock Center), which might explain the higher fatty acid response. Fly genotypes: control: w1118 (black); Gr64f-GAL4/UAS-IR11aRNAi (Gr64f\u00a0>\u00a0IR11aRNAi, white), Gr64f-GAL4/+;UAS-IR21aRNAi/+ (Gr64f\u00a0>\u00a0IR21aRNAi, grids), Gr64f-GAL4/+;UAS-IR56bRNAi/+ (Gr64f\u00a0>\u00a0IR56bRNAi/+, dots), Gr64f-GAL4/UAS-IR94hRNAi (Gr64f\u00a0>\u00a0IR94hRNAi, lines) and Gr64f-GAL4/+;UAS-IR56dRNAi/+ (Gr64f\u00a0>\u00a0IR56dRNAi, red). (B) PER responses to fatty acids in flies homozygous for the indicated mutation. Each bar represents the mean\u00a0\u00b1\u00a0SEM of three to six PER assays (6\u201312 flies per assay, 44\u201377 flies in total). For IR56b mutants, only 4 to 12 flies were tested and no SEM could be determined. No statistical significant differences in PER responses to fatty acids were observed for IR52c or IR62a mutants, when compared to controls; PER responses to sugar (asterisk) is higher in IR52c mutant flies compared to controls (w1118; two-tailed, Mann-Whitney U test, **p<0.01). Source data for summary graphs are provided in Figure 5\u2014figure supplement 1\u2014source data 1.\n\n### Bitter GRNs modulate acceptance behavior of hexanoic acid\n\nBecause IR25a and IR76b are also found in bitter GRNs, we carried out Ca2+ imaging experiments using Gr33aGAL4, a bitter GRN specific marker (Moon et al., 2009). Bitter GRNs of both the s- and b-type sensilla strongly responded to denatonium, a bitter tasting compound. Intriguingly, strong Ca2+ increases were also observed in the 5b-associated bitter GRN to hexanoic acid, while octanoic or linoleic acid elicited no significant responses (Figure 6A and B; note that octanoic and linoleic acids could only be tested at 0.2%, due to low solubility; see Materials and methods). These observations indicate that at least hexanoic acid activates both appetitive and repulsive GRNs. However, and in contrast to sweet GRNs, bitter GRN responses to hexanoic acid did not require IR25a or IR76b (Figure 6C and D), indicating that these neurons employ a different molecular receptor.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/30115/elife-30115-fig6-v2.jpg)\n\n**Figure 6.:** (A) Representative still images of the fifth tarsal segment of the prothoracic leg show maximum Ca2+ responses in the bitter GRNs associated with 5b and 5 s sensilla upon stimulation by indicated ligands. \u0394F indicates the changes in fluorescence light intensity of the cell body before/after ligand application. (B) Representative fluorescence traces (top) and corresponding Ca2+ responses (bottom) of the 5b- and 5s-associated bitter GRNs upon stimulation by indicated ligands. The gray line underneath the fluorescence traces indicates time of ligand application. Hexanoic acid elicits highly significant Ca2+ responses in the 5b- associated bitter GRNs (compared to carrier). 1 mM denatonium was used as a positive ligand control. 1% ethanol was used as a carrier to facilitate solubilization\u00a0of high concentrations of hexanoic acid (2.5%). Each bar represents the mean\u00a0\u00b1\u00a0SEM of Ca2+ imaging with 10\u201330 female prothoracic legs. Two-tailed, Mann-Whitney U test versus carrier (1% ethanol), ***p<0.001, ns: not significant. Fly genotype is Gr33aGAL4 UAS-GCaMP6m/+. (C and D) Cellular responses to fatty acid in bitter GRNs do not require IR25a and IR76b. Ca2+ responses of the\u00a05b-assoicated bitter GRNs of IR25a (C) or IR76b (D) mutant flies to indicated ligands. Ca2+ responses of GRNs of mutants to hexanoic acid were not significantly reduced when compared to control flies. Each bar represents the mean\u00a0\u00b1\u00a0SEM of Ca2+ imaging with 4\u201342 female prothoracic legs. Bars with different letters are significantly different (Kruskal-Wallis test by ranks with Dunn\u2019s multiple comparison tests, p<0.05). Each y-axis delineates groups for Kruskal-Wallis test. Fly genotypes C: Gr33aGAL4/+; UAS-GCaMP6m/+ (Control, black), IR25a2 Gr33aGAL4/IR25a2; UAS-GCaMP6m/+ (IR25a-/-, white), and IR25a2 Gr33aGAL4/IR25a2 UAS-IR25a; UAS-GCaMP6m/+ (Rescue, grey); Fly Genotypes D: Gr33aGAL4 UAS-GCaMP6m/+ (Control, black), Gr33aGAL4 UAS-GCaMP6m/+; IR76b2/IR76b2 (Ir76b-/-, white) and Gr33aGAL4 UAS-GCaMP6m/UAS-IR76b; IR76b2/IR76b2 (Rescue, grey). See Figure 6\u2014figure supplement 1\u2014source data 1\u00a0for hexanoic acid responses of 5s-associated bitter GRNs from IR25a or IR76b mutant flies. Source data for summary graphs are provided in Figure 6\u2014source data 1.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30115/elife-30115-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Because the overall responses are so low, the relevance of differences between some genotypes in the IR25a group is unclear. Each bar represents the mean\u00a0\u00b1\u00a0SEM of Ca2+ imaging with 4\u201339 female prothoracic legs. Bars with different letters are significantly different (Kruskal-Wallis test by ranks with Dunn\u2019s multiple comparison tests, p<0.05). Each y-axis delineates groups for Kruskal-Wallis test. Genotypes are same as genotypes in Figure 6C and D. Source data for summary graphs are provided in Figure 6\u2014figure supplement 1\u2014source data 1.\n\nTo investigate hexanoic acid response characteristics in more detail, we compared dose response profiles of sweet and bitter GRNs of 5b sensilla (Figure 7A). Interestingly, sweet GRNs reached maximal activation already at the modest concentration of 1% (Figure 7A, left). In contrast, maximal activation of bitter GRNs was reached at the highest applicable concentration (2.5%; Figure 7A,\u00a0right). These observations suggest that bitter GRNs might counteract the activity of sweet GRNs above a certain concentration threshold (>1%) and possibly modulate taste behavior. Indeed, w1118 flies exhibited a maximal PER response at\u00a0~1%, whereas higher concentrations of hexanoic acid led to a decrease in PER responses (Figure 7B). In contrast, when we inhibited the activity of bitter GRNs by either expressing TNT or the inward-rectifier potassium channel Kir2.1, PER responses stayed at the same high level or continued to increase with increasing hexanoic acid concentration (Figure 7C and\u00a0Figure 7\u2014figure supplement 2). Thus, activation of bitter GRNs appears to suppress PER responses at high (2.5%) hexanoic acid concentration. To test whether the decrease of sweet GRN responses was mediated through lateral inhibition, we compared Ca2+ responses of sweet GRNs to 2.5% hexanoic acid in the presence and absence of functional bitter GRNs. However, hexanoic acid elicited the same Ca2+ responses in sweet GRNs, regardless of whether functional bitter GRNs were present (Figure 7D).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/30115/elife-30115-fig7-v2.jpg)\n\n**Figure 7.:** (A) Hexanoic acid dose response profiles of the sweet (left) and the bitter (right) GRNs associated with the 5b sensilla. sweet GRN reaches a maximal response already at 1%, while bitter GRNs responses further increases as ligand concentration increases. Each bar represents the mean\u00a0\u00b1\u00a0SEM of Ca2+ imaging with 7\u201330 female prothoracic legs. Bars with different letters are significantly different (Kruskal-Wallis test by ranks with Dunn\u2019s multiple comparison tests, p<0.05). Each y-axis delineates groups for Kruskal-Wallis test. Fly genotypes: Gr64f-GAL4 UAS-GCaMP6m/+ and Gr33aGAL4/+;UAS-GCaMP6m/+. For\u00a0hexanoic acid response profiles of the sweet GRNs,\u00a0or the bitter GRN associated with 5 s/5v sensilla,\u00a0see\u00a0Figure 7\u2014figure supplement 1. (B) PER responses of wild-type flies (w1118) to different concentrations of hexanoic acid. At high concentration (2.5%) hexanoic acids induces a much lower PER response compared to more modest concentrations (0.5%\u20131%). Each symbol represents the mean\u00a0\u00b1\u00a0SEM of PER responses (n\u00a0=\u00a061\u2013142 flies). Symbols with different letters are significantly different (Kruskal-Wallis test by ranks with Dunn\u2019s multiple comparison tests, p<0.01). Each y-axis delineates groups for Kruskal-Wallis test. (C) Inactivation of bitter GRN leads to concentration dependent PER responses to hexanoic acid, while control flies show a response profile similar to w1118 flies (see B). Each symbol represents the mean\u00a0\u00b1\u00a0SEM of PER responses (n\u00a0=\u00a023\u2013121 flies). Symbols with different letters are significantly different (Kruskal-Wallis test by ranks with Dunn\u2019s multiple comparison tests, p<0.05). Each square bracket delineates groups for Kruskal-Wallis test. Fly genotypes: Gr33aGAL4/+ (Gr33aGAL4 alone), UAS-TNT/+ (UAS-TNT alone) and Gr33aGAL4/UAS-TNT. (D) Inactivation of bitter GRNs has no effect on cellular responses of sweet GRNs to hexanoic acid. Ca2+ responses of sweet GRNs to 2.5% hexanoic acid are similar regardless of whether a functional bitter GRN is present. Bitter GRNs was inactivated by expressing UAS-TNT under the control of Gr33aGAL4. Each bar represents the mean\u00a0\u00b1\u00a0SEM of 10\u201315 female GRNs from prothoracic legs. Two-tailed, Mann-Whitney U test between the flies lacking functional bitter GRNs and control flies, p<0.05, ns: not significant. Each y-axis delineates groups for Mann-Whitney U test. Fly genotypes: Gr64fLexA/lexAop-GCaMP6m (control) and Gr33aGAL4/UAS-TNT; Gr64fLexA/lexAop-GCaMP6m (Gr33a\u00a0>\u00a0TNT). Source data for summary graphs are provided in Figure 7\u2014source data 1.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30115/elife-30115-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Both the 5s- (A) and the 5v- (B) associated sweet GRN show a maximal Ca2+ response at the relative low concentration of 0.5% hexanoic acid. The 5s-associated bitter GRNs shows only weak Ca2+ response to hexanoic acid, but they are significantly higher than responses to carrier (C). Each bar represents the mean\u00a0\u00b1\u00a0SEM of Ca2+ imaging with 13\u201355 female prothoracic legs. Bars with different letters are significantly different (Kruskal-Wallis test by ranks with Dunn\u2019s multiple comparison tests, p<0.05). Each y-axis delineates groups for Kruskal-Wallis test. Genotypes are same as genotypes in Figure 7A. Source data for summary graphs are provided in Figure 7\u2014figure supplement 1\u2014source data 1.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30115/elife-30115-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Flies lacking functional bitter GRNs (Gr33aGAL4/UAS-Kir2.1) show significantly higher PER responses to 2.5% hexanoic acid concentration, compared to control flies (Gr33aGAL4 or UAS-Kir2.1 alone). Each symbol represents the mean\u00a0\u00b1\u00a0SEM of PER responses (n\u00a0=\u00a033\u2013121 flies). Symbols with different letters represent significant differences (Kruskal-Wallis test by ranks with Dunn\u2019s multiple comparison tests, p<0.05). Each square bracket delineates groups for Kruskal-Wallis test. Fly genotypes: Gr33aGAL4/+ (Gr33aGAL4 alone), UAS-Kir2.1-GFP/+ (UAS-Kir2.1 alone) and Gr33aGAL4/UAS-Kir2.1-GFP (Gr33aGAL4/UAS-Kir2.1). Source data for summary graphs are provided in Figure 7\u2014figure supplement 2\u2014source data 1.\n\n## Discussion\n\nIR genes have emerged as a second large gene family encoding chemoreceptors in insects. In the Drosophila olfactory system, IRs function as multimeric receptors in coeloconic olfactory sensory neurons (OSN) and are thought to sense volatile carboxylic acids, amines and aldehydes (Abuin et al., 2011; Benton et al., 2009; Hussain et al., 2016; Silbering et al., 2011). Expression analyses have shown that each coeloconic OSN expresses up to four IR genes, including high levels of either IR8a or IR25a (Abuin et al., 2011). IR25a and IR8a are distinct from other IRs in that they are more conserved to each other and iGluRs, and they share a long amino terminal domain absent in all other IRs (Croset et al., 2010). These observations, along with functional analyses of basiconic olfactory neurons that express combinations of IR genes, led to a model in which IR based olfactory receptors are tetrameric complexes thought to consist of up to three different subunits that contain at least one core unit (IR8a or IR25a) and two additional IRs that determine ligand binding specificity (Abuin et al., 2011; Silbering et al., 2011). The findings presented in this paper expand this concept to taste receptors that sense fatty acids through the sweet GRNs found in tarsal taste sensilla.\n\n### IR25a and IR76b mediate fatty acid taste in sweet GRNs\n\nOur analysis extends the multimodal role of IR25a and IR76b to the taste systems. Consistent with gene expression arrays (Cameron et al., 2010), we showed in this paper that up to three GRNs, including many sweet and bitter GRNs, co-express IR25a and IR76b. Our functional studies have established a novel role for these two IR proteins in fatty acid taste, which revealed that these two subunits are not only critically important to elicit PER responses in flies when challenged with fatty acids, but are also necessary for fatty acid induced Ca2+ increases in tarsal sweet GRNs. Based on these findings and with consideration of their established role in other sensory systems, we propose that IR25a and IR76b play central roles in sweet GRNs in a multimeric receptor complex for initiating appetitive taste behavior to these chemicals. Intriguingly, both genes are also co-expressed in \ufeff\ufeff\ufeff two\u00a0other\u00a0GRNs of most tarsal taste sensilla, strongly arguing for additional taste functions. While the subset of tarsal bitter GRNs activated by hexanoic acid does not require either gene, we have discovered that the third GRN (the sour GRN) is narrowly tuned to acids in an\u00a0IR25a/IR76b dependent manner (Chen and Amrein, 2017). These observations suggest that modality specific IRs are likely expressed in a cell-type specific fashion whereby they complement IR25a/IR76b to function as either a fatty acid or a sour taste\u00a0receptor. Indeed, our screen identified IR56d, a gene that is expressed in sweet GRNs of tarsal taste sensilla, as a likely candidate encoding an IR subunit specific for a\u00a0fatty acid taste\u00a0receptor (Figure 5). It remains to be seen whether IR25a, IR76b and IR56d comprise all subunits that constitute this receptor or whether yet additional IRs are necessary to mediate responses to these chemicals.\n\nThe fact that different food chemicals can activate a single class of neurons raises the question how flies discriminate between sugars and fatty acids. First, we note the difference in sensitivity of appetitive GRNs to sugars and fatty acids, respectively: The most responsive GRN for sugars is the one associated with the 5v sensilla, followed by that with the 5s and finally the 5b sensilla, while the responsiveness for fatty acids is the reverse (5b > 5s > 5v; Figure 4). Second, fatty acids induces weaker PER responses from stimulation of the labial palps as opposed to tarsi, while sugars induce equally strong PER responses from stimulation of\u00a0either\u00a0taste organ (Figure 1\u2014figure supplement 1) (Fujii et al., 2015). Third, at least some fatty acids activate bitter GRNs (Figure 6), and hence, generate more complex activation patterns in the brain than sugars, which are not known to activate neurons other than sweet GRNs. These properties may provide a rationale for differential coding of these two classes of chemicals in the brain. Finally, sugars but not fatty acids are soluble in water, and hence, the specific solvents in which these chemicals are presented provides different textural quality, which was recently shown to play a role in taste perception (Zhang et al., 2016).\n\nNorpA, which encodes a phospholipase C (PLC), plays a critical role in sweet GRNs for appetitive feeding responses to fatty acids, but it is dispensable for behavioral responses to sugars (Masek and Keene, 2013). We found that its absence also selectively abolishes Ca2+ responses to fatty acids, but not sugars, in sweet cells (Figure 1\u2014figure supplement 2). NorpA is known for its role as downstream effector of G-protein coupled receptors in the fly\u2019s visual system (Bloomquist et al., 1988; Wilson and Ostroy, 1987), but interestingly it is also required for olfactory responses in neurons of the maxillary palps (Riesgo-Escovar et al., 1995), which express ORs that are thought to function as ligand-gated ion channels (Sato et al., 2008; Wicher et al., 2008). We note that fatty acid taste in mammals is in part mediated by two G \u2013 protein coupled receptors, GPR40 and GPR120 (Cartoni et al., 2010; Matsumura et al., 2007), and that one of these (GPR120) was found to signal through a phospholipase C (Reed and Xia, 2015). Thus, future studies will be necessary to gain insights for how PLC mediates chemosensory responses through ORs and the phylogenetically unrelated IRs.\n\n### IRs form multimodal receptors that mediate diverse sensory cues\n\nMutlimeric IR based receptors were recently shown to be required in non-chemosensory processes. Specifically, Dorsal Organ Cool Cells (DOCCs) located in the larval brain, express and require the function of three IRs (IR21a IR25a and IR93a), thereby allowing larvae to avoid temperatures below\u00a0~20\u00b0C (Knecht et al., 2016; Ni et al., 2016). Similarly, two sets of cells in the antennal sacculus of adult flies, requiring the functions of IR25a and IR93a and either IR40a or IR68a, were shown to mediate a fly\u2019s preferred humidity environment, which is generally in the dry range, but is also dependent on the fly\u2019s hydration state (Enjin et al., 2016; Knecht et al., 2017; Knecht et al., 2016). Intriguingly, these non-chemosensory IR complexes share a common theme with the fatty acid and carboxylic acid taste\u00a0receptors (Chen and Amrein, 2017) in that they all require a core unit (IR25a) and two additional IRs that mediate specificity for a particular stimulus type (i.e. temperature, humidity, fat, acid).\n\nAn IR76b based sodium channel and an IR76b based amino acid receptor appear to lack an obligate core unit (IR25a or IR8a) found in olfactory receptors or fatty acid and carboxylic acid taste receptors. The IR76b sodium channel mediates salt responses in a heterologous systems independently of any other IRs (Zhang et al., 2013), while a proposed multimeric IR76b containing receptor mediates amino acids taste in wild type and IR25a mutant flies (IR8a is not expressed in taste neurons) (Ganguly et al., 2017). It will be interesting to elucidate the compositions of complete IR based amino acid and sour taste\u00a0receptors, and \u2013 with regard of amino acid receptors \u2013 to identify the neurons that mediate this taste modality.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"4\">Antibodies</td>\n    </tr>\n    <tr>\n      <td>Chicken polyclonal anti-GFP</td>\n      <td>Anti-GFP</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>PA1-86341; RRID: AB_931091</td>\n    </tr>\n    <tr>\n      <td>Rat monoclonal anti-mCD8</td>\n      <td>Anti-mCD8</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>MCD0800; RRID: AB_10392843</td>\n    </tr>\n    <tr>\n      <td>Rabbit polyclonal anti-IR25a</td>\n      <td>Anti-IR25a</td>\n      <td>Benton et al. (2009)</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Mouse monoclonal anti-HA</td>\n      <td>Anti-HA</td>\n      <td>Covance Research Product Inc.</td>\n      <td>MMS-101P; RRID: AB_2314672</td>\n    </tr>\n    <tr>\n      <td>Alexa 488 conjugated goat anti-chicken</td>\n      <td>Green</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>A11039; RRID: AB_2534096</td>\n    </tr>\n    <tr>\n      <td>Cy3-conjugated goat anti-rat</td>\n      <td>Magenta</td>\n      <td>Jackson Immunoresearch Laboratories Inc.</td>\n      <td>112-165-072; RRID: AB_2338248</td>\n    </tr>\n    <tr>\n      <td>Cy3-conjugated goat anti-rabbit</td>\n      <td>Magenta</td>\n      <td>Jackson Immunoresearch Laboratories Inc.</td>\n      <td>111-166-003; RRID: AB_2338000</td>\n    </tr>\n    <tr>\n      <td>Cy3-conjugated goat anti-mouse</td>\n      <td>Magenta</td>\n      <td>Jackson Immunoresearch Laboratories Inc.</td>\n      <td>115-166-072; RRID: AB_2338706</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Chemical compounds</td>\n    </tr>\n    <tr>\n      <td>Hexanoic acid</td>\n      <td>Hexanoic acid</td>\n      <td>Sigma-Aldrich</td>\n      <td>H12137</td>\n    </tr>\n    <tr>\n      <td>Octanoic acid</td>\n      <td>Octanoic acid</td>\n      <td>Sigma-Aldrich</td>\n      <td>O3907</td>\n    </tr>\n    <tr>\n      <td>Linoleic acid</td>\n      <td>Linoleic acid</td>\n      <td>Sigma-Aldrich</td>\n      <td>L1376</td>\n    </tr>\n    <tr>\n      <td>Denatonium benzoate</td>\n      <td>Denatonium</td>\n      <td>Sigma-Aldrich</td>\n      <td>D5765</td>\n    </tr>\n    <tr>\n      <td>Sucrose</td>\n      <td>Sucrose</td>\n      <td>Amresco</td>\n      <td>M1117</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Experimental Models: Organisms/Strains</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: w1118</td>\n      <td>Wild-type control</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC: 3605; FlyBase: FBst0003605</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: w*; P{Gr64f-GAL4.9.7}5/CyO; MKRS/TM2</td>\n      <td>Gr64f-GAL4</td>\n      <td>Dahanukar et al. (2007)</td>\n      <td>Flybase: FBst0057669</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: w*; TI{LexA::VP16}Gr64fLexA</td>\n      <td>Gr64fLexA</td>\n      <td>Fujii et al. (2015)</td>\n      <td>Flybase: FBti0168176</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: w*; TI{GAL4}Gr33aGAL4</td>\n      <td>Gr33aGAL4</td>\n      <td>Moon et al. (2009)</td>\n      <td>Flybase: FBst0031425</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: w*; P{UAS-TeTxLC.tnt}G2</td>\n      <td>UAS-TNT</td>\n      <td>Sweeney et al. (1995)</td>\n      <td>Flybase: FBst0028838</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: w*; P{lexAop-rCD2-GFP}</td>\n      <td>lexAop-rCD2:GFP</td>\n      <td>Lai and Lee (2006)</td>\n      <td>Flybase: FBst0066687</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: w*;P{10XUAS-IVS-mCD8::RFP}attP40</td>\n      <td>UAS-mCD8:RFP</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC: 32219; Flybase: FBti0131967</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: w1118; PBac{20XUAS-IVS-GCaMP6m}VK00005</td>\n      <td>UAS-GCaMP6m</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC: 42750; Flybase:\u00a0FBst0042750</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: y1 w*; P{UAS-mCD8::GFP.L}LL5,P{UAS-mCD8::GFP.L}2</td>\n      <td>UAS-mCD8:GFP</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC: 5137; Flybase:\u00a0FBst0005137</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: y1 w1118; P{QUAS-mtdTomato-3xHA}26</td>\n      <td>QUAS-mtd-Tomato-3xHA</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC: 30005; Flybase:\u00a0FBst0030005</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: y1 sc* v1; P{TRiP.HMC03664}attP40</td>\n      <td>UAS-IR94h-RNAi</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC: 53675; Flybase: FBst0053675</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: w1118; Mi{ET1}IR52cMB04402</td>\n      <td>Mi{ET1}IR52cMB04402</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC: 24580; Flybase: FBst0024580</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: w1118; Mi{ET1}IR56bMB09950</td>\n      <td>Mi{ET1}IR56bMB09950</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC: 27818; Flybase:\u00a0FBst0027818</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: y1 w*;Mi{MIC}IR62aMI00895 lml1MI00895/TM3, Sb1, Ser1</td>\n      <td>Mi{Mic}IR62aMI00895</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC: 32713; Flybase: FBst0032713</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: w1118;P{UAS-norpA.WT}2</td>\n      <td>UAS-norpA</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC: 35529; Flybase:\u00a0FBst0035529</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: w*; TI{TI}IR25a1/CyO</td>\n      <td>IR25a1/CyO</td>\n      <td>Benton et al. (2009)</td>\n      <td>Flybase: FBst0041737</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: w*; P{IR25a-GAL4.A}236.1; TM2/TM6B, Tb1</td>\n      <td>IR25a-GAL4</td>\n      <td>Abuin et al. (2011)</td>\n      <td>Flybase: FBst0041728</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: w*; M{UAS-IR25a.attB}</td>\n      <td>UAS-IR25a</td>\n      <td>Abuin et al. (2011)</td>\n      <td>Flybase: FBal0249355</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: {KK104276}VIE-260B</td>\n      <td>UAS-IR11a-RNAi</td>\n      <td>Vienna Drosophila Resource Center</td>\n      <td>VDRC ID: 100422; Flybase: FBgn0030385</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: w1118; P{GD773}v2472</td>\n      <td>UAS-IR21a-RNAi</td>\n      <td>Vienna Drosophila Resource Center</td>\n      <td>VDRC ID: 2472; Flybase: FBgn0031209</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: w1118; P{GD2094}v4704</td>\n      <td>UAS-IR56b-RNAi</td>\n      <td>Vienna Drosophila Resource Center</td>\n      <td>VDRC ID: 4704; Flybase: FBgn0034456</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: w1118; P{GD2096}v6112</td>\n      <td>UAS-IR56d-RNAi</td>\n      <td>Vienna Drosophila Resource Center</td>\n      <td>VDRC ID: 6112; Flybase: FBgn0034458</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: w*; IR76b1</td>\n      <td>IR76b1/IR76b1</td>\n      <td>Zhang et al. (2013)</td>\n      <td>Flybase: FBst0051309</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: w*; IR76b2</td>\n      <td>IR76b2/IR76b2</td>\n      <td>Zhang et al. (2013)</td>\n      <td>Flybase: FBst0051310</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: w*; P{IR76b-GAL4.1.5}2</td>\n      <td>IR76b-GAL4,</td>\n      <td>Zhang et al. (2013)</td>\n      <td>Flybase: FBst0051311</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: w*; P{UAS-IR76b.Z}2/CyO; TM2/TM6B, Tb1</td>\n      <td>UAS-IR76b</td>\n      <td>Zhang et al. (2013)</td>\n      <td>Flybase: FBst0052610</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: w*; P{IR76b-QF.1.5}</td>\n      <td>IR76b-QF</td>\n      <td>Zhang et al. (2013)</td>\n      <td>Flybase: FBtp0085487</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: w*; P{UAS-Hsap\\KCNJ2.EGFP}1</td>\n      <td>UAS-Kir2.1-GFP</td>\n      <td>Baines et al. (2001); Paradis et al. (2001)</td>\n      <td>Flybase: FBst0006596</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: w*; norpA36(P24)</td>\n      <td>norpAP24</td>\n      <td>Masek and Keene (2013)</td>\n      <td>Flybase: FBst0009048</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: w*; P{IR56d-GAL4.K}7\u20132/CyO; P{UAS-mCD8::GFP.L}LL6</td>\n      <td>IR56d-GAL4</td>\n      <td>Koh et al. (2014)</td>\n      <td>Flybase: FBst0060708</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster: w*; Gr66a-LexA/CyO; TM2/TM6B</td>\n      <td>Gr66a-LexA</td>\n      <td>Thistle et al. (2012)</td>\n      <td>Flybase: FBal0277069</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Software and Algorithms</td>\n    </tr>\n    <tr>\n      <td>NIS-Elements</td>\n      <td>N/A</td>\n      <td>Nikon</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Prism software</td>\n      <td>Prism software</td>\n      <td>GraphPad Software 5.0 Inc</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Other</td>\n    </tr>\n    <tr>\n      <td>Nikon Eclipse Ti inverted microscope</td>\n      <td>Nikon Eclipse Ti inverted microscope</td>\n      <td>Nikon</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Nikon A1 confocal microscope</td>\n      <td>Nikon A1R confocal microscope system</td>\n      <td>Nikon</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>35 mM Glass bottom dish</td>\n      <td>Glass bottom culture dish</td>\n      <td>MatTek Corporation</td>\n      <td>P35G-0\u201310 C</td>\n    </tr>\n  </tbody>\n</table>\n\n### Drosophila stocks\n\nFlies were maintained on standard corn meal food in plastic vials under a 12 hr light/dark cycle at 25\u00b0 C. The w1118 strain was used as a wild-type control. Fly lines used: Gr64f-Gal4 (Dahanukar et al., 2007); Gr64fLexA (Fujii et al., 2015); Gr33aGAL4 (Moon et al., 2009); UAS-TNT (Sweeney et al., 1995); lexAop-rCD2:GFP (Lai and Lee, 2006); UAS-mCD8:RFP, UAS-GCaMP6m, UAS-mCD8:GFP, QUAS-mtd-Tomato-3xHA, UAS-IR94h-RNAi, Mi{ET1}IR52cMB04402, Mi{ET1}IR56bMB09950, Mi{Mic}IR62aMI00895 and UAS-norpA (Bloomington Drosophila Stock Center, numbers 32219, 42750, 5137, 30005, 53675, 24580, 27818, 32713 and 35529); IR25a1 (Benton et al., 2009); IR25a-GAL4, UAS-IR25a (Abuin et al., 2011); UAS-IR11a-RNAi, UAS-IR21a-RNAi, UAS-IR56b-RNAi and UAS-IR56d-RNAi (Vienna Drosophila Resource Center, transformant ID 100422, 2472, 4704 and 6112); IR76b1, IR76b2, IR76b-GAL4, UAS-IR76b, IR76b-QF (Zhang et al., 2013); UAS-Kir2.1-GFP (Baines et al., 2001; Paradis et al., 2001); norpAP24 (Masek and Keene, 2013); IR56d-GAL4 (Koh et al., 2014) and Gr66a-LexA (Thistle et al., 2012).\n\n### Chemicals\n\nHexanoic (Cat No. H12137), octanoic (Cat No. O3907) and linoleic acids (Cat No. L1376), and denatonium benzoate (Cat No. D5765) were purchased from Sigma-Aldrich(St.\u00a0Louis,\u00a0MO)\u00a0with a purity of\u00a0>98%. Sucrose (Cat No. M1117) was purchased from Amresco\u00a0(Solon,\u00a0OH). Stock solutions of fatty acids were prepared in 80% ethanol, except for hexanoic acid (in 20% ethanol) and kept at \u221220\u00b0 C. A stock solution for denatonium benzoate was prepared in Millipore Q water and kept at 4\u00b0 C for up to one week. Stock solutions were diluted to the final concentration using Millipore Q water prior to each experiment. Sucrose and denatonium benzoate solutions were also mixed with ethanol to obtain the same final concentration of ethanol.\n\n### Proboscis extension reflex (PER) assay\n\nPER assays were carried out as described in Slone et al. (Slone et al., 2007) with some modifications. Briefly, files were collected on the day of eclosion and kept in standard corn meal food for 3\u20137 days at 25\u00b0C. Before performing PER assays, flies were starved for 24 to 26 hr at 25\u00b0C in vials with a water-saturated Whatman filter paper. Flies were immobilized by cooling on ice, mounted by their backs/wings on a microscope slide using double-sided Scotch tape and allowed to recover for 30 min at room temperature. Prior to the PER assay, flies were allowed to drink water until satiation to ensure PER responses were nutrient derived. Flies that showed no response to water were excluded. Taste solutions were delivered with a 10 \u03bcl pipette to legs for up to\u00a0~four s. Each fly was tested three times with each taste solutions, and flies were allowed to drink water between each new application. A PER response was recorded as positive (1) if the proboscis was fully extended, otherwise it was recorded as negative (0). PER response scores (%) from a single fly was 0% (0/3 responses in the three applications), 33% (1/3), 66% (2/3) or 100% (3/3).\n\n### Immunofluorescence\n\nFlies were aged for 4\u20137 days in standard corn meal food at 25\u00b0C before dissection. Labella were detached from the proboscis, while the tarsi were cut off above the fourth segment. Tissues were placed in eppendorf tubes containing fixation buffer (phosphate buffered saline with 4% paraformaldehyde and 0.2% triton X-100) for 30 min at room temperature. Tissues were washed twice in washing buffer (phosphate buffered saline containing 0.2% triton X-100) for 30 to 60 min at room temperature and incubated with the primary antibodies (chicken anti\u2013GFP, 1:2000 dilution; rat anti\u2013mCD8, 1:200 dilution, Thermo Fisher Scientific; rabbit anti-IR25a, 1:1000 dilution, (Benton et al., 2009); mouse anti-HA, 1:1000 dilution, Covance Research Product Inc.) at 4\u00b0C overnight in washing buffer containing 5% heat-inactivated goat serum. Tissues were washed twice in washing buffer for 30 to 60 min at room temperature and incubated with the secondary antibodies (goat anti\u2013chicken ALEXA 488, 1:500 dilution, Thermo Fisher Scientific; goat anti\u2013rat Cy3, 1:300 dilution; goat anti-rabbit Cy3, 1:300 dilution; goat anti-mouse Cy3, 1:100 dilution, Jackson Immunoresearch Laboratories Inc.) in washing buffer containing 5% heat-inactivated goat serum for 3 hr at room temperature. Tissues were washed twice in washing buffer for 30 to 60 min at room temperature. All incubations, except incubations with antibody, were performed under gentle mixing. Tissues were mounted with VectaShield (Vector Lab) on a microscope slide and images were obtained using a Nikon A1R confocal microscope system.\n\n### Calcium imaging\n\nCalcium imaging for tarsal taste neurons was performed based on the protocol described in Miyamoto et al. (Miyamoto et al., 2013, 2012) with minor modification. Briefly, female files were collected on the day of eclosion and kept in standard corn meal food for 3\u20138 days at 25\u00b0C. The prothoracic leg was cut with a razor blade between the femur and the tibia, and silicone lubricant (Dow Corning) was applied to seal the cut area of the leg. Legs were mounted laterally on a glass bottom culture dish (MatTek Corporation) using double-sided scotch tape and covered with 1% agarose, leaving the fourth and fifth tarsal segments exposed for ligand application. Millipore Q water (100 \u00b5l) was applied to cover the preparation, which was placed on the stage of a Nikon eclipse Ti inverted microscope. Images were obtained every 500 ms, starting 15 s before application and ending 105 s after ligand application. Three to five different ligands (100 \u03bcl) were tested in each preparation. Sucrose or denatonium ligands were included in each preparation to ensure functionality of sweet or bitter GRNs, respectively. The sequence of ligand application was sucrose (or denatonium) solution, carrier (0.2 or 1% ethanol in water) and fatty acid solution. When fatty acids were tested, 0.2% ethanol was used as a carrier for all Ca2+ imaging experiments (1% ethanol when testing 2.5% hexanoic acid), because ethanol concentration above 1% destabilizes the preparation. Maximal concentration of octanoic and linoleic acids was 0.2% in 1% ethanol solution due to insolubility at higher concentrations. Preparations were washed with 200 \u03bcl of Millipore Q water five times after a ligand was tested, and equilibrated for 3 min before the next ligand was applied. Fluorescence light intensity of tarsal taste neurons was measured in the cell bodies. Background auto fluorescence, obtained from adjacent region, was subtracted. Baseline fluorescence was determined from the average of five frame measurements, taken immediately before ligand application. An equation for \u2206F/F (%) was fluorescence light intensity of the cell body \u2013 baseline/baseline x 100. \u2206F/F (max %) was calculated as the maximum value within 30 s after ligand application.\n\n### Statistical analysis\n\nStatistical analyses were conducted using Prism software (GraphPad Software 5.0 Inc.). PER assay and Ca2+ imaging data were analyzed with nonparametric statistics because tested groups did not meet the assumption for normal distribution based on D`Agostino-Perason and Shapiro-Wilk normality tests. For comparison between multiple groups (data of all figures, except Figures 1B, 4C, 5B, C, 6B, 7D and Figure 1\u2014figure supplement 1, Figure 4\u2014figure supplement 1B and Figure 5\u2014figure supplement 1B), Kruskal-Wallis test by ranks (nonparametric one-way ANOVA) was performed to test for difference of rank distribution. As post hoc test, Dunn\u2019s multiple comparison tests were employed to compare two specific groups. Mann-Whitney U test (nonparametric t test) with two-tailed P value was used to compare means of two groups (Figures 1B, 4C, 5B, C, 6B, 7D and Figure 1\u2014figure supplement 1, Figure 4\u2014figure supplement 1B and Figure 5\u2014figure supplement 1B). Sample size for PER assays and Ca2+ imaging experiments were based on Slone et al. (Slone et al., 2007) and Miyamoto et al. (Miyamoto et al., 2012)\n",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "cf952e55-93d7-459b-bed7-0f099487801f",
+      "submission_id": "631f1544-7896-4627-bde9-3b9788dcce45",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mani Ramaswami, Trinity College Dublin Ireland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.30115.033](https://doi.org/10.7554/eLife.30115.033)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Molecular Basis of Fatty Acid Taste in Drosophila\" for consideration by eLife. Your article has been favorably evaluated by a Senior Editor and three reviewers, one of whom, Mani Ramaswami (Reviewer #1), is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this letter to indicate our reservations about the depth of your analysis to support a quite interesting conclusion. We request that you respond to the essential revisions below..\n\nSummary:\n\nThe paper identifies two IRs as components of a fatty acid receptor in sensory neurons, and shows that these are expressed in taste sensory neuron subclasses that respond via other receptors to sweet and bitter molecules respectively. Through several experiments and arguments, the authors propose that behavioural responses to fatty acids are mediated by higher level integration of signals from distinct groups of sensory neurons.\n\nThe detection of fatty acids is not only of fundamental interest but also relevant to host-seeking in disease vectors, which may use carboxylic acids as host-relevant cues. Thus, the findings are potentially significant. While, all the experiments provided are well done and convincing, the work does not at this stage make several key points as extensively or clearly as required for publication in eLife.\n\nEssential revisions:\n\n1) Most critically required is the clear identification of a receptor subunit that is specific to fatty acids. The work shows that the detection of the fatty acids hexanoic and octanoic acid by \"sweet neurons\" in the leg depends on and requires the Ionotropic receptors IR25a and IR76b. However, Ir76b and Ir25a, which are widely studied, are each broadly expressed and involved in detecting many different chemicals. The authors' observations add fatty acids to these chemicals, but given their wide expression, it seems unlikely that these two IRs constitute a receptor for fatty acids, at least without one additional, specifically expressed IR involved. So, while the findings are novel, they do not yet describe molecular basis of fatty acid detection yet. At this point, implicating ir25a and ir76b in sensing a given chemical is not enough. A revised manuscript must make substantial progress towards discovering the specificity components.\n\n2) Since NorpA (a phospholipase C) is required for the behavioral response, the authors should examine whether the responses they see in the sweet leg neurons are affected in the NorpA mutants. Either way this will be an important result. NorpA could act independently of the IRs or, alternatively, upstream or downstream of the IRs. In the latter case, it would be quite exciting as mammalian fatty acid detection involves GPCRs and such an observation would indicate that the IRs are acting permissively, downstream of such receptors. Viable norpA nulls are available (it is even on the X making imaging in the mutant background easier), so this should be a relatively simple experiment.\n\n3) It is important to know whether Ir8a is involved in the response, as a recent study using Anopheles IRs (Pitts et al., 2017) shows a different IR combination, IR8a/IR75k, forms a hexanoic/octanoic acid receptor in oocytes. The expression data suggests Ir8a probably isn't involved, but since there are Ir8a nulls available to formally test this, it should be examined. This is also a simple experiment.\n\n4) The data is based on detection by the tarsi. The fact that this does not apply to the labellum is cited as data not shown, and is not explored further. The Discussion reads \"Moreover, labellar stimulation using fatty acids induces weak if any PER responses (J.-E.A. and H.A., unpublished data).\" And further down, \"Intriguingly, these non/chemosensory IR complexes share a common theme with the fatty acid receptors, and carboxylic acid receptors that mediate sour taste in the non/bitter/non-sweet GRN of tarsal taste sensilla (Y.C. and H.A., unpublished data)\u2026\" Relevant data should be shown in the Results section and discussed clearly.\n\n5) In Figure 3, data are shown for Ir25a (C,D), but not for 76b. As all others were carried out in tandem for the two. Data should be shown for both or there should be an explanation for the omission.\n\n6) The mechanism by which sweet and bitter neurons might interact is touched upon but not developed. The authors state \"While the subset of tarsal bitter GRNs activated by hexanoic acid does not require either gene, we have discovered that the third GRN (the sour GRN) is narrowly tuned to acids in a IR25a/IR76b dependent manner (Y.C. and H.A., unpublished data).\" Intriguing, but not helpful for the manuscript.\n\n7) One could also take Figure 6 a bit more in a rigorous direction. For example, there is only one concentration (2.5% hexanoic acid) for the critical point that the paper wants to make. What about mixtures (the authors mentioned the differences in solubility in water, but precisely this point could perhaps be addressed?). It also seems somewhat anticlimactic to end with Figure 6D. These suggest a feeling of incompleteness. Also, the response is not general to carboxylic acids, but just hexanoic acid, so these GNs may not be important regulators of overall fatty acid intake.\n\nWith strong and clear responses to the issue of how fatty acids are detected by sweet sensory neurons (and by testing whether the specificity factor is also expressed in bitter/ sour GRNs) it is possible that points 6 and 7 could be addressed by rewriting the manuscript to more clearly indicate what is known and hypothesised about FA sensing via other GN classes.\n",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4ebcd327-64e7-4ba8-8a3f-ca7ed0c3e367",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C1",
+      "claim": "Drosophila appetitive taste responses towards fatty acids are mediated by sweet sensing Gustatory Receptor Neurons (GRNs).",
+      "claim_type": "EXPLICIT",
+      "source": "Behavioral studies have established that Drosophila appetitive taste responses towards fatty acids are mediated by sweet sensing Gustatory Receptor Neurons (GRNs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to behavioral studies (Masek and Keene, 2013) and confirmed by experimental data in the manuscript showing that inactivation of sweet GRNs abolishes PER responses to fatty acids.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "582af3e5-1b5f-4944-8268-e7c2a1270a97",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C2",
+      "claim": "Sweet GRN activation by fatty acids requires the function of IR25a, IR76b and IR56d genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that sweet GRN activation requires the function of the Ionotropic Receptor genes IR25a, IR76b and IR56d.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing loss of fatty acid responses in mutants and rescue experiments presented in Figures 3, 4, and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "52dd07df-a918-4d7b-b6b9-ec9a3e2e96f2",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C3",
+      "claim": "IR25a and IR76b are expressed in several neurons per sensillum.",
+      "claim_type": "EXPLICIT",
+      "source": "The former two IR genes are expressed in several neurons per sensillum, while IR56d expression is restricted to sweet GRNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 2, demonstrating expression patterns of IR25a and IR76b in multiple GRNs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "fd373863-0631-4907-9ac2-dd52f148706f",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C4",
+      "claim": "IR56d expression is restricted to sweet GRNs.",
+      "claim_type": "EXPLICIT",
+      "source": "The former two IR genes are expressed in several neurons per sensillum, while IR56d expression is restricted to sweet GRNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by immunofluorescence data in Figure 5E and F showing complete overlap between IR56d and Gr64f (sweet GRN marker) and no expression in bitter GRNs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "7c12b1c0-ae3c-4f96-aca7-bb0bde64511d",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C5",
+      "claim": "Loss of appetitive behavioral responses to fatty acids in IR25a and IR76b mutant flies can be completely rescued by expression of respective transgenes in sweet GRNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, loss of appetitive behavioral responses to fatty acids in IR25a and IR76b mutant flies can be completely rescued by expression of respective transgenes in sweet GRNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by rescue experiments shown in Figure 3C and D, where expression of UAS-IR25a or UAS-IR76b in sweet GRNs restores PER responses to fatty acids.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "cb14614e-d2c1-4c6b-bd17-48e0dee4c958",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C6",
+      "claim": "Appetitive behavioral responses of wild type flies to hexanoic acid reach a plateau at ~1%, but decrease with higher concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, appetitive behavioral responses of wild type flies to hexanoic acid reach a plateau at ~1%, but decrease with higher concentration, a property mediated through IR25a/IR76b independent activation of bitter GRNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by dose-response data in Figure 7B showing maximal PER responses at 1% hexanoic acid with reduced responses at 2.5%.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "2321085b-a774-4334-b128-4719c97eb061",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C7",
+      "claim": "The decrease in PER responses to hexanoic acid at higher concentrations is mediated through IR25a/IR76b independent activation of bitter GRNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, appetitive behavioral responses of wild type flies to hexanoic acid reach a plateau at ~1%, but decrease with higher concentration, a property mediated through IR25a/IR76b independent activation of bitter GRNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data in Figure 6C and D showing that bitter GRN responses to hexanoic acid do not require IR25a or IR76b, and Figure 7C showing that inactivation of bitter GRNs prevents the decrease in PER at high hexanoic acid concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "a5bff2d6-7a75-4f59-9a1a-47048576c468",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C8",
+      "claim": "IR-based receptors mediate different taste qualities through cell-type specific IR subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "With our previous report on sour taste, our studies suggest that IR-based receptors mediate different taste qualities through cell-type specific IR subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by inference from the current data on fatty acid taste and citation to previous work on sour taste (Chen and Amrein, 2017), showing that IR25a and IR76b function in different GRN types with different cell-type specific IR subunits.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "2cecd05f-5880-4de4-8688-fd32ad325454",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C9",
+      "claim": "Inactivation of sweet GRNs leads to loss of PER responses to both sucrose and fatty acids.",
+      "claim_type": "EXPLICIT",
+      "source": "Inactivation of sweet GRNs (Gr64f-GAL4/UAS-TNT) leads to loss of PER responses to both sucrose and fatty acids.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by experimental data shown in Figure 1A, where flies with tetanus toxin-expressing sweet GRNs show abolished PER responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "49e255da-6cf9-4ca3-aee9-b2e9c505b9a8",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C10",
+      "claim": "Control flies show robust PER responses to fatty acids and sucrose.",
+      "claim_type": "EXPLICIT",
+      "source": "Control flies (Gr64f-GAL4/+ and UAS-TNT/+) show robust PER responses to fatty acids and sucrose.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data in Figure 1A showing PER responses in control genotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "559b72a7-deca-41e0-aa7c-eaed024a527c",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C11",
+      "claim": "Octuple mutant flies lacking all sugar Gr genes exhibit PER responses to fatty acids similar to flies with functional sugar Gr genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Octuple mutant flies lacking all sugar Gr genes (Gr5aLexA\ufeff;\u0394Gr61a\u0394Gr64a-f) exhibit PER responses to fatty acids similar to flies with functional sugar Gr genes (w1118), but they have severely reduced PER response to sucrose.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data in Figure 1B comparing PER responses between octuple mutants and wild-type controls.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "34ce7571-2bcd-4867-9afd-fe32b5b7111e",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C12",
+      "claim": "Octuple mutant flies lacking all sugar Gr genes have severely reduced PER response to sucrose.",
+      "claim_type": "EXPLICIT",
+      "source": "Octuple mutant flies lacking all sugar Gr genes (Gr5aLexA\ufeff;\u0394Gr61a\u0394Gr64a-f) exhibit PER responses to fatty acids similar to flies with functional sugar Gr genes (w1118), but they have severely reduced PER response to sucrose.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data in Figure 1B showing significantly reduced sucrose responses in octuple mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "5d7f10ca-a064-4ace-9c0b-0c5c2e2ebb38",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C13",
+      "claim": "The residual PER responses to sucrose of octuple mutant flies is mediated by Gr43a.",
+      "claim_type": "EXPLICIT",
+      "source": "The residual PER responses to sucrose of octuple mutant flies is mediated by Gr43a (Miyamoto et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by Miyamoto et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "04da9801-6932-43d2-a7ad-c4e70b2ee3bf",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C14",
+      "claim": "Sugar Gr genes are dispensable for fatty acid sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "Sugar Gr genes are dispensable for fatty acid sensing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data in Figure 1B showing that octuple mutants lacking sugar Gr genes maintain normal fatty acid responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "169a748d-b78f-49e6-a58c-9cd6349998b2",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C15",
+      "claim": "Sweet taste neurons of norpA mutant flies have strongly reduced responses to fatty acids, but not sucrose.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, and consistent with this behavioral phenotype, sweet taste neurons of norpA mutant flies had strongly reduced responses to fatty acids, but not sucrose, using a Ca2+ imaging assay (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Ca2+ imaging data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "e1c4bfa1-8c84-4834-9a19-a3d8d2f0ff00",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C16",
+      "claim": "Mutations in norpA affected PER responses to fatty acids, but not to sugars.",
+      "claim_type": "EXPLICIT",
+      "source": "Use of different taste receptors for mediating the two taste modalities is consistent with the finding that mutations in norpA, which encodes a phospholipase C, affected PER responses to fatty acids, but not to sugars (Masek and Keene, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Masek and Keene, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "6da87a1d-0c98-407a-9d79-562539c22715",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C17",
+      "claim": "NorpA encodes a phospholipase C.",
+      "claim_type": "EXPLICIT",
+      "source": "Use of different taste receptors for mediating the two taste modalities is consistent with the finding that mutations in norpA, which encodes a phospholipase C, affected PER responses to fatty acids, but not to sugars (Masek and Keene, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the norpA gene, cited from Masek and Keene, 2013.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "6e2ddc05-ca28-4342-b941-46650e31e7d1",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C18",
+      "claim": "IR25a and IR76b are enriched in taste neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Of particular interest were IR25a and IR76b, because these two genes are enriched in taste neurons (Cameron et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Cameron et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "a1f9638a-15fc-4541-be66-4cae4a3ba222",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C19",
+      "claim": "IR25a and IR76b are expressed in multiple GRNs per sensillum.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore examined the expression of IR-GAL4/QF drivers for both genes and found that they were indeed expressed in multiple GRNs per sensillum (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data in Figure 2 showing expression patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "60269225-2e00-4c75-8e59-c968c7cecef8",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C20",
+      "claim": "IR25a and IR76b expression largely overlapped in tarsal sensilla.",
+      "claim_type": "EXPLICIT",
+      "source": "In tarsal sensilla, their expression largely overlapped (Figure 2F) and included the sweet and bitter GRNs that express sugar and bitter Gr genes, respectively (Figure 2B\u2013E), thus identifying them as possible subunits of fatty acid taste receptors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by co-localization data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "ccdaeba4-ae5f-4de2-9425-a23c44693a00",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C21",
+      "claim": "IR25a and IR76b are expressed in sweet GRNs that express sugar Gr genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In tarsal sensilla, their expression largely overlapped (Figure 2F) and included the sweet and bitter GRNs that express sugar and bitter Gr genes, respectively (Figure 2B\u2013E), thus identifying them as possible subunits of fatty acid taste receptors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data in Figure 2B and C showing co-expression with Gr64f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "0801a213-a330-4a1b-bc81-e345de33e170",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C22",
+      "claim": "IR25a and IR76b are expressed in bitter GRNs that express bitter Gr genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In tarsal sensilla, their expression largely overlapped (Figure 2F) and included the sweet and bitter GRNs that express sugar and bitter Gr genes, respectively (Figure 2B\u2013E), thus identifying them as possible subunits of fatty acid taste receptors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data in Figure 2D and E showing co-expression with Gr33a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "ce243528-a3eb-4ef9-968f-b21bdc89ffec",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C23",
+      "claim": "PER responses were abolished in both IR25a-/- and IR76b-/- flies to hexanoic, octanoic and linoleic acids.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine a possible role for IR25a and IR76b in fatty acid taste, we conducted PER assays with flies from each mutant strain to hexanoic, octanoic and linoleic acids and found that PER responses were abolished in both IR25a-/- and IR76b-/- flies, a phenotype completely (hexanoic acid and octanoic acid) or partially (linoleic acid) rescued when expression was restored with UAS-IR25a or UAS-IR76b transgenes (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by PER assay data in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "2b0e444b-d484-4f70-a43d-d3e60d51154c",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C24",
+      "claim": "The loss of PER responses to hexanoic and octanoic acids in IR25a and IR76b mutants is completely rescued by transgene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine a possible role for IR25a and IR76b in fatty acid taste, we conducted PER assays with flies from each mutant strain to hexanoic, octanoic and linoleic acids and found that PER responses were abolished in both IR25a-/- and IR76b-/- flies, a phenotype completely (hexanoic acid and octanoic acid) or partially (linoleic acid) rescued when expression was restored with UAS-IR25a or UAS-IR76b transgenes (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by rescue experiment data in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "a6282789-41bb-43ea-84ac-c3fe2e5c5a09",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C25",
+      "claim": "The loss of PER responses to linoleic acid in IR25a and IR76b mutants is partially rescued by transgene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine a possible role for IR25a and IR76b in fatty acid taste, we conducted PER assays with flies from each mutant strain to hexanoic, octanoic and linoleic acids and found that PER responses were abolished in both IR25a-/- and IR76b-/- flies, a phenotype completely (hexanoic acid and octanoic acid) or partially (linoleic acid) rescued when expression was restored with UAS-IR25a or UAS-IR76b transgenes (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by rescue experiment data in Figure 3A and B showing partial rescue for linoleic acid.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "5fee6f53-5478-43e3-8462-c0bc42101100",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C26",
+      "claim": "IR25a-/- and IR76b-/- flies showed normal PER responses to sucrose.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, IR25a-/- and IR76b-/- flies showed normal PER responses to sucrose, indicating that the role of these two genes is specific to fatty acid taste and not required for sweet taste to sugars.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by PER data in Figure 3C and D showing normal sucrose responses in mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "fc4705f8-05a1-4428-aacb-bdb32f26aa7e",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C27",
+      "claim": "The role of IR25a and IR76b is specific to fatty acid taste and not required for sweet taste to sugars.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, IR25a-/- and IR76b-/- flies showed normal PER responses to sucrose, indicating that the role of these two genes is specific to fatty acid taste and not required for sweet taste to sugars.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that mutants have normal sucrose responses but abolished fatty acid responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "49916a69-0ca1-4dcf-b795-166aa39321fe",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C28",
+      "claim": "Expression of IR25a in sweet GRNs of IR25a-/- flies restores PER responses to fatty acids to levels indistinguishable from controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, when IR25a function was provided in sweet GRNs of IR25a-/- flies, their PER responses were restored to levels indistinguishable from controls (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by rescue experiment data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "546b03fd-fdd0-4a1c-8b67-0b56692fe1d0",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C29",
+      "claim": "Expression of IR76b in sweet GRNs alone rescues PER responses to fatty acids in IR76b-/- flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, expression of IR76b in sweet GRNs alone also rescued PER responses to fatty acids in IR76b-/- flies (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by rescue experiment data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "5e3e8123-fcf8-4e8a-a78a-2514789f9265",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C30",
+      "claim": "The functions of IR25a and IR76b are required in sweet GRNs for robust PER responses to fatty acids, but not to sugars.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these observations indicate that the functions of IR25a and IR76b are required in sweet GRNs for robust PER responses to fatty acids, but not to sugars.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined data showing that expression in sweet GRNs is sufficient for rescue of fatty acid responses but not required for sugar responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "2af59160-c597-4f49-95fb-40d8b1a2d559",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C31",
+      "claim": "Sweet GRNs of 5b and 5s sensilla showed robust Ca2+ increases to hexanoic and octanoic acids in wild type flies.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild type flies, the sweet GRNs of 5b and 5s sensilla showed robust Ca2+ increases to hexanoic and octanoic acids and modest, but significant increases to linoleic acid (Figure 4B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Ca2+ imaging data shown in Figure 4B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "4b0aba8f-7af3-421b-ba61-dbda0a4157a7",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C32",
+      "claim": "Sweet GRNs of 5b and 5s sensilla showed modest, but significant Ca2+ increases to linoleic acid in wild type flies.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild type flies, the sweet GRNs of 5b and 5s sensilla showed robust Ca2+ increases to hexanoic and octanoic acids and modest, but significant increases to linoleic acid (Figure 4B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Ca2+ imaging data shown in Figure 4B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "95179741-d6b8-4760-a638-066ef20ccf66",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C33",
+      "claim": "Only weak Ca2+ responses to fatty acids were observed in the 5v-associated sweet GRNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Only weak Ca2+ responses were observed in the 5v-associated sweet GRNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Ca2+ imaging data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "f131ebfb-8843-47e3-9315-02c9b8a42ed6",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C34",
+      "claim": "Ca2+ responses to fatty acids were absent in 5b- and 5s-associated sweet GRNs of IR25a-/- or IR76b-/- flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, Ca2+ responses were absent in 5b- and 5s-associated sweet GRNs of IR25a-/- or IR76b-/- flies (Figure 4D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Ca2+ imaging data in Figure 4D and E showing loss of responses in mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "5a0def93-1200-4df0-9ffe-54e3761fe75c",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C35",
+      "claim": "Transgene rescue experiments restored Ca2+ increases to fatty acids to the level observed in w1118 control flies.",
+      "claim_type": "EXPLICIT",
+      "source": "IR25a or IR76b requirement for cellular fatty acid responses was confirmed by transgene rescue experiments, which restored Ca2+ increases to the level observed in w1118 controls flies (Figure 4D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by rescue experiment data in Figure 4D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "36458a4d-725f-4cbe-b2fd-357989e8f745",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C36",
+      "claim": "RNAi knock-down of IR56d led to a significant reduction in PER responses to all fatty acids.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAi knock-down of one of these genes, IR56d, led to a significant reduction in PER responses to all fatty acids (Figure 5A), while knock-downs of or of mutations in the other six IR genes had no effect (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by PER assay data in Figure 5A showing reduced responses with IR56d RNAi.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "7261a086-1484-4076-b0c3-cbe043bc841b",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C37",
+      "claim": "Knock-downs of or mutations in six other candidate IR genes had no effect on PER responses to fatty acids.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAi knock-down of one of these genes, IR56d, led to a significant reduction in PER responses to all fatty acids (Figure 5A), while knock-downs of or of mutations in the other six IR genes had no effect (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data in Figure 5\u2014figure supplement 1 showing no effects for other IR genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "343aa744-0f78-447a-9b0c-b6a166bc310e",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C38",
+      "claim": "Expression of RNAi against IR56d in sweet GRNs leads to an almost complete loss of GRN activation to hexanoic and octanoic acids.",
+      "claim_type": "EXPLICIT",
+      "source": "We next expressed GCaMP6m in sweet GRNs, along with the RNAiIR56d construct and carried out Ca2+ imaging experiments of sweet GRNs. As expected, we observed an almost complete loss of GRN activation to hexanoic and octanoic acids (Figure 5B and C), similar as observed for IR25a or IR76b mutants (Figure 4D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Ca2+ imaging data in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "e178ec41-70c6-46e4-80b0-13daac7e2d27",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C39",
+      "claim": "IR56d-GAL4 shows complete overlap with Gr64f in tarsal segments.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we examined expression of an IR56d-GAL4 line in the tarsal segments of the prothoracic leg (Koh et al., 2014). Indeed, antibody staining of tarsi of flies also expressing a marker for sweet GRNs showed complete overlap between IR56d and Gr64f, while no expression was observed in bitter GRNs, labeled by Gr66a-LexA (Figure 5E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data in Figure 5E showing co-localization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "7329f1f8-9c0b-4f9f-aa41-596edd83b071",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C40",
+      "claim": "No expression of IR56d was observed in bitter GRNs labeled by Gr66a-LexA.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we examined expression of an IR56d-GAL4 line in the tarsal segments of the prothoracic leg (Koh et al., 2014). Indeed, antibody staining of tarsi of flies also expressing a marker for sweet GRNs showed complete overlap between IR56d and Gr64f, while no expression was observed in bitter GRNs, labeled by Gr66a-LexA (Figure 5E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data in Figure 5F showing no co-localization with Gr66a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "0fd40698-eda0-4e43-bc5b-d73e451015a9",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C41",
+      "claim": "The fatty acid taste receptor in sweet GRNs is composed of at least three subunits: IR25a, IR76b and IR56d.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these experiments imply that the fatty acid taste receptor in sweet GRNs is composed of at least three subunits, IR25a, IR76b and the more narrowly expressed IR56d subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined genetic and expression data showing that all three genes are required for fatty acid responses in sweet GRNs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "000ebc34-bd6a-4f0f-85fd-eebe0d53ee2e",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C42",
+      "claim": "The experiments do not exclude the possibility of a fourth IR being part of a fatty acid taste receptor complex.",
+      "claim_type": "EXPLICIT",
+      "source": "However, they do not exclude the possibility of yet a fourth IR being part of a fatty acid taste receptor complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement acknowledging limitations of the current data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "cfe224e4-e106-4fe5-9eb0-aadaaa5d609c",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C43",
+      "claim": "Bitter GRNs of both the s- and b-type sensilla strongly responded to denatonium.",
+      "claim_type": "EXPLICIT",
+      "source": "Bitter GRNs of both the s- and b-type sensilla strongly responded to denatonium, a bitter tasting compound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Ca2+ imaging data in Figure 6B showing responses to denatonium.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "43e7cbc1-6581-45b8-99a8-badc9f9653fd",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C44",
+      "claim": "Strong Ca2+ increases were observed in the 5b-associated bitter GRN to hexanoic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, strong Ca2+ increases were also observed in the 5b-associated bitter GRN to hexanoic acid, while octanoic or linoleic acid elicited no significant responses (Figure 6A and B; note that octanoic and linoleic acids could only be tested at 0.2%, due to low solubility; see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Ca2+ imaging data in Figure 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "04fdc1c2-4e0c-4b21-baaa-803192081a5a",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C45",
+      "claim": "Octanoic or linoleic acid elicited no significant responses in bitter GRNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, strong Ca2+ increases were also observed in the 5b-associated bitter GRN to hexanoic acid, while octanoic or linoleic acid elicited no significant responses (Figure 6A and B; note that octanoic and linoleic acids could only be tested at 0.2%, due to low solubility; see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Ca2+ imaging data in Figure 6B showing no significant responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "54f92379-2ec0-40fd-9547-2851033a2cc1",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C46",
+      "claim": "Hexanoic acid activates both appetitive and repulsive GRNs.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations indicate that at least hexanoic acid activates both appetitive and repulsive GRNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that hexanoic acid activates both sweet GRNs (appetitive) and bitter GRNs (repulsive).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "4949c7b5-1c94-4959-be89-375bf2db2de4",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C47",
+      "claim": "Bitter GRN responses to hexanoic acid did not require IR25a or IR76b.",
+      "claim_type": "EXPLICIT",
+      "source": "However, and in contrast to sweet GRNs, bitter GRN responses to hexanoic acid did not require IR25a or IR76b (Figure 6C and D), indicating that these neurons employ a different molecular receptor.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Ca2+ imaging data in Figure 6C and D showing normal responses in IR25a and IR76b mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "52a941c4-406d-47d2-adb3-7eba68f838ec",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C48",
+      "claim": "Bitter GRNs employ a different molecular receptor than sweet GRNs for hexanoic acid detection.",
+      "claim_type": "EXPLICIT",
+      "source": "However, and in contrast to sweet GRNs, bitter GRN responses to hexanoic acid did not require IR25a or IR76b (Figure 6C and D), indicating that these neurons employ a different molecular receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that bitter GRN responses to hexanoic acid are IR25a/IR76b-independent while sweet GRN responses are IR25a/IR76b-dependent.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "e08f0e45-d4ed-427e-b7d1-9d1f9dc068a3",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C49",
+      "claim": "Sweet GRNs reached maximal activation to hexanoic acid at the modest concentration of 1%.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, sweet GRNs reached maximal activation already at the modest concentration of 1% (Figure 7A, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by dose-response Ca2+ imaging data in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "19105a7b-f65a-4118-8377-0ee5440214d7",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C50",
+      "claim": "Maximal activation of bitter GRNs to hexanoic acid was reached at the highest applicable concentration (2.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, maximal activation of bitter GRNs was reached at the highest applicable concentration (2.5%; Figure 7A, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by dose-response Ca2+ imaging data in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "d9b013c0-1056-48be-924a-966dbe2da1d0",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C51",
+      "claim": "Bitter GRNs might counteract the activity of sweet GRNs above a certain concentration threshold (>1%) and possibly modulate taste behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that bitter GRNs might counteract the activity of sweet GRNs above a certain concentration threshold (>1%) and possibly modulate taste behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on inference from the dose-response profiles of sweet and bitter GRNs.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "f437b78a-c0ce-41bb-a7e3-2cf0e8b15460",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C52",
+      "claim": "w1118 flies exhibited a maximal PER response to hexanoic acid at ~1%, whereas higher concentrations led to a decrease in PER responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, w1118 flies exhibited a maximal PER response at ~1%, whereas higher concentrations of hexanoic acid led to a decrease in PER responses (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by dose-response PER data in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "a95d775d-caf7-43f8-bc00-72c42845cf94",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C53",
+      "claim": "When bitter GRNs are inhibited by expressing TNT or Kir2.1, PER responses to hexanoic acid stayed at the same high level or continued to increase with increasing concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when we inhibited the activity of bitter GRNs by either expressing TNT or the inward-rectifier potassium channel Kir2.1, PER responses stayed at the same high level or continued to increase with increasing hexanoic acid concentration (Figure 7C and Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by PER data in Figure 7C and Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "0379bd8d-84e2-4ec8-952a-cf08a662fa02",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C54",
+      "claim": "Activation of bitter GRNs appears to suppress PER responses at high (2.5%) hexanoic acid concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, activation of bitter GRNs appears to suppress PER responses at high (2.5%) hexanoic acid concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that inhibiting bitter GRNs prevents the decrease in PER at high hexanoic acid concentrations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "3b91d16f-ee1a-4faa-8291-66a0804d66e2",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C55",
+      "claim": "Hexanoic acid elicited the same Ca2+ responses in sweet GRNs, regardless of whether functional bitter GRNs were present.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether the decrease of sweet GRN responses was mediated through lateral inhibition, we compared Ca2+ responses of sweet GRNs to 2.5% hexanoic acid in the presence and absence of functional bitter GRNs. However, hexanoic acid elicited the same Ca2+ responses in sweet GRNs, regardless of whether functional bitter GRNs were present (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Ca2+ imaging data in Figure 7D showing no difference in sweet GRN responses with or without functional bitter GRNs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "75870d92-84a8-499b-877c-9be9eb2a589d",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C56",
+      "claim": "The decrease of sweet GRN responses to hexanoic acid is not mediated through lateral inhibition from bitter GRNs.",
+      "claim_type": "IMPLICIT",
+      "source": "To test whether the decrease of sweet GRN responses was mediated through lateral inhibition, we compared Ca2+ responses of sweet GRNs to 2.5% hexanoic acid in the presence and absence of functional bitter GRNs. However, hexanoic acid elicited the same Ca2+ responses in sweet GRNs, regardless of whether functional bitter GRNs were present (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the observation that sweet GRN responses are unchanged when bitter GRNs are inactivated.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "2e6a30e5-b762-45f0-9595-58763b276ab3",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C57",
+      "claim": "IR genes have emerged as a second large gene family encoding chemoreceptors in insects.",
+      "claim_type": "EXPLICIT",
+      "source": "IR genes have emerged as a second large gene family encoding chemoreceptors in insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, supported by citations to Benton et al., 2009 and Croset et al., 2010.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "a21e4896-dc50-4672-aa0b-dbfa726080e1",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C58",
+      "claim": "IRs are derived from ionotropic Glutamate Receptors (iGluRs) genes.",
+      "claim_type": "EXPLICIT",
+      "source": "IRs are derived from ionotropic Glutamate Receptors (iGluRs) genes and expanded in number during arthropod evolution, comprising a family of 61 genes in Drosophila (Benton et al., 2009; Croset et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Benton et al., 2009 and Croset et al., 2010.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "eab47130-afe7-472f-a780-fbb6a553dd70",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C59",
+      "claim": "The IR gene family comprises 61 genes in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "IRs are derived from ionotropic Glutamate Receptors (iGluRs) genes and expanded in number during arthropod evolution, comprising a family of 61 genes in Drosophila (Benton et al., 2009; Croset et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Benton et al., 2009 and Croset et al., 2010.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "8a547e61-d6dc-46e6-a42e-de6a80cfaa8c",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C60",
+      "claim": "In the Drosophila olfactory system, IRs function as multimeric receptors in coeloconic olfactory sensory neurons (OSN).",
+      "claim_type": "EXPLICIT",
+      "source": "In the Drosophila olfactory system, IRs function as multimeric receptors in coeloconic olfactory sensory neurons (OSN) and are thought to sense volatile carboxylic acids, amines and aldehydes (Abuin et al., 2011; Benton et al., 2009; Hussain et al., 2016; Silbering et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "4a2e55b9-cb70-40f8-9801-054df9df520e",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C61",
+      "claim": "IRs in olfactory neurons are thought to sense volatile carboxylic acids, amines and aldehydes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Drosophila olfactory system, IRs function as multimeric receptors in coeloconic olfactory sensory neurons (OSN) and are thought to sense volatile carboxylic acids, amines and aldehydes (Abuin et al., 2011; Benton et al., 2009; Hussain et al., 2016; Silbering et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "94aca0b1-fabc-4dd5-8386-dbd537e0abbe",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C62",
+      "claim": "Each coeloconic OSN expresses up to four IR genes, including high levels of either IR8a or IR25a.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression analyses have shown that each coeloconic OSN expresses up to four IR genes, including high levels of either IR8a or IR25a (Abuin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Abuin et al., 2011.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "c75ef2ee-ee94-4c51-b2df-1c55d223de07",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C63",
+      "claim": "IR25a and IR8a are distinct from other IRs in that they are more conserved to each other and iGluRs.",
+      "claim_type": "EXPLICIT",
+      "source": "IR25a and IR8a are distinct from other IRs in that they are more conserved to each other and iGluRs, and they share a long amino terminal domain absent in all other IRs (Croset et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Croset et al., 2010.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "a715b85d-365c-470f-a335-732f8595b43b",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C64",
+      "claim": "IR25a and IR8a share a long amino terminal domain absent in all other IRs.",
+      "claim_type": "EXPLICIT",
+      "source": "IR25a and IR8a are distinct from other IRs in that they are more conserved to each other and iGluRs, and they share a long amino terminal domain absent in all other IRs (Croset et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Croset et al., 2010.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "338f9029-139d-450f-b565-c8106b06535c",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C65",
+      "claim": "IR based olfactory receptors are tetrameric complexes thought to consist of up to three different subunits that contain at least one core unit (IR8a or IR25a) and two additional IRs that determine ligand binding specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations, along with functional analyses of basiconic olfactory neurons that express combinations of IR genes, led to a model in which IR based olfactory receptors are tetrameric complexes thought to consist of up to three different subunits that contain at least one core unit (IR8a or IR25a) and two additional IRs that determine ligand binding specificity (Abuin et al., 2011; Silbering et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model based on established knowledge, supported by citations to Abuin et al., 2011 and Silbering et al., 2011.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "eb0dfec1-4ffb-4766-a25f-998d0160a42f",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C66",
+      "claim": "Up to three GRNs, including many sweet and bitter GRNs, co-express IR25a and IR76b.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with gene expression arrays (Cameron et al., 2010), we showed in this paper that up to three GRNs, including many sweet and bitter GRNs, co-express IR25a and IR76b.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by immunofluorescence data in Figure 2 and citation to Cameron et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "db1084bf-2900-403c-9334-f5e763ed462b",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C67",
+      "claim": "IR25a and IR76b play central roles in sweet GRNs in a multimeric receptor complex for initiating appetitive taste behavior to fatty acids.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these findings and with consideration of their established role in other sensory systems, we propose that IR25a and IR76b play central roles in sweet GRNs in a multimeric receptor complex for initiating appetitive taste behavior to these chemicals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the experimental data and inference from established knowledge about IR function in other systems.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "292c390f-5176-4449-8020-7a0e23ad9d02",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C68",
+      "claim": "Both IR25a and IR76b are co-expressed in two other GRNs of most tarsal taste sensilla, strongly arguing for additional taste functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, both genes are also co-expressed in \ufeff\ufeff\ufeff two other GRNs of most tarsal taste sensilla, strongly arguing for additional taste functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the expression data showing IR25a and IR76b in multiple GRN types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "9d6f7287-e3f0-4bdf-837a-973a67220437",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C69",
+      "claim": "The third GRN (the sour GRN) is narrowly tuned to acids in an IR25a/IR76b dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "While the subset of tarsal bitter GRNs activated by hexanoic acid does not require either gene, we have discovered that the third GRN (the sour GRN) is narrowly tuned to acids in an IR25a/IR76b dependent manner (Chen and Amrein, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Chen and Amrein, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "0b99c3cc-b643-4bfc-9c57-5befbe3489f0",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C70",
+      "claim": "Modality specific IRs are likely expressed in a cell-type specific fashion whereby they complement IR25a/IR76b to function as either a fatty acid or a sour taste receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that modality specific IRs are likely expressed in a cell-type specific fashion whereby they complement IR25a/IR76b to function as either a fatty acid or a sour taste receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model inferred from the observation that IR25a/IR76b function in different taste modalities with different cell-type specific IR subunits.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "ef4ca013-af73-4439-8e4f-345cfcfb4b7a",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C71",
+      "claim": "The most responsive GRN for sugars is the one associated with the 5v sensilla, followed by that with the 5s and finally the 5b sensilla.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we note the difference in sensitivity of appetitive GRNs to sugars and fatty acids, respectively: The most responsive GRN for sugars is the one associated with the 5v sensilla, followed by that with the 5s and finally the 5b sensilla, while the responsiveness for fatty acids is the reverse (5b > 5s > 5v; Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Ca2+ imaging data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "5b03924c-e49f-45dd-b8ae-e1fdc20f8d8e",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C72",
+      "claim": "The responsiveness of GRNs for fatty acids is the reverse of that for sugars (5b > 5s > 5v).",
+      "claim_type": "EXPLICIT",
+      "source": "First, we note the difference in sensitivity of appetitive GRNs to sugars and fatty acids, respectively: The most responsive GRN for sugars is the one associated with the 5v sensilla, followed by that with the 5s and finally the 5b sensilla, while the responsiveness for fatty acids is the reverse (5b > 5s > 5v; Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Ca2+ imaging data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "97a0ffbc-1efd-48be-b8ee-0f35780bb981",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C73",
+      "claim": "Fatty acids induce weaker PER responses from stimulation of the labial palps as opposed to tarsi.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, fatty acids induces weaker PER responses from stimulation of the labial palps as opposed to tarsi, while sugars induce equally strong PER responses from stimulation of either taste organ (Figure 1\u2014figure supplement 1) (Fujii et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by PER data in Figure 1\u2014figure supplement 1 and citation to Fujii et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "e539fc84-9eaa-4a8b-a554-fae40d623742",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C74",
+      "claim": "Sugars induce equally strong PER responses from stimulation of either the labial palps or tarsi.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, fatty acids induces weaker PER responses from stimulation of the labial palps as opposed to tarsi, while sugars induce equally strong PER responses from stimulation of either taste organ (Figure 1\u2014figure supplement 1) (Fujii et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by PER data in Figure 1\u2014figure supplement 1 and citation to Fujii et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "23733349-3bb0-45f2-9be4-56f226f22eee",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C75",
+      "claim": "At least some fatty acids activate bitter GRNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, at least some fatty acids activate bitter GRNs (Figure 6), and hence, generate more complex activation patterns in the brain than sugars, which are not known to activate neurons other than sweet GRNs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Ca2+ imaging data in Figure 6 showing bitter GRN activation by hexanoic acid.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "48ce544b-f3dd-4db2-acd9-9d7d0dd3b600",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C76",
+      "claim": "Sugars are not known to activate neurons other than sweet GRNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, at least some fatty acids activate bitter GRNs (Figure 6), and hence, generate more complex activation patterns in the brain than sugars, which are not known to activate neurons other than sweet GRNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "a8087abc-07d0-4712-bdcb-d0840b1cf940",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C77",
+      "claim": "Sugars but not fatty acids are soluble in water.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, sugars but not fatty acids are soluble in water, and hence, the specific solvents in which these chemicals are presented provides different textural quality, which was recently shown to play a role in taste perception (Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established chemical knowledge, with citation to Zhang et al., 2016 for the role of texture in taste perception.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "254f9239-5234-4a74-af3f-32872dba1e66",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C78",
+      "claim": "The specific solvents in which chemicals are presented provides different textural quality, which plays a role in taste perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, sugars but not fatty acids are soluble in water, and hence, the specific solvents in which these chemicals are presented provides different textural quality, which was recently shown to play a role in taste perception (Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Zhang et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "915507f9-f857-43d3-9a64-0850eb6ce128",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C79",
+      "claim": "NorpA plays a critical role in sweet GRNs for appetitive feeding responses to fatty acids.",
+      "claim_type": "EXPLICIT",
+      "source": "NorpA, which encodes a phospholipase C (PLC), plays a critical role in sweet GRNs for appetitive feeding responses to fatty acids, but it is dispensable for behavioral responses to sugars (Masek and Keene, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Masek and Keene, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "54057c12-2f70-40ce-bd17-e27c17965255",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C80",
+      "claim": "NorpA is dispensable for behavioral responses to sugars.",
+      "claim_type": "EXPLICIT",
+      "source": "NorpA, which encodes a phospholipase C (PLC), plays a critical role in sweet GRNs for appetitive feeding responses to fatty acids, but it is dispensable for behavioral responses to sugars (Masek and Keene, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Masek and Keene, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "b7ed1e1b-d9d5-4bc6-bfb0-fa3b6b2146a8",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C81",
+      "claim": "NorpA is known for its role as downstream effector of G-protein coupled receptors in the fly's visual system.",
+      "claim_type": "EXPLICIT",
+      "source": "NorpA is known for its role as downstream effector of G-protein coupled receptors in the fly's visual system (Bloomquist et al., 1988; Wilson and Ostroy, 1987), but interestingly it is also required for olfactory responses in neurons of the maxillary palps (Riesgo-Escovar et al., 1995), which express ORs that are thought to function as ligand-gated ion channels (Sato et al., 2008; Wicher et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Bloomquist et al., 1988 and Wilson and Ostroy, 1987.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "a7c60241-af0c-4f3e-a93d-87d230a1b06b",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C82",
+      "claim": "NorpA is required for olfactory responses in neurons of the maxillary palps.",
+      "claim_type": "EXPLICIT",
+      "source": "NorpA is known for its role as downstream effector of G-protein coupled receptors in the fly's visual system (Bloomquist et al., 1988; Wilson and Ostroy, 1987), but interestingly it is also required for olfactory responses in neurons of the maxillary palps (Riesgo-Escovar et al., 1995), which express ORs that are thought to function as ligand-gated ion channels (Sato et al., 2008; Wicher et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Riesgo-Escovar et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "aed9412d-2f90-460e-a40a-4de4a073d011",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C83",
+      "claim": "Maxillary palp neurons express ORs that are thought to function as ligand-gated ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "NorpA is known for its role as downstream effector of G-protein coupled receptors in the fly's visual system (Bloomquist et al., 1988; Wilson and Ostroy, 1987), but interestingly it is also required for olfactory responses in neurons of the maxillary palps (Riesgo-Escovar et al., 1995), which express ORs that are thought to function as ligand-gated ion channels (Sato et al., 2008; Wicher et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Sato et al., 2008 and Wicher et al., 2008.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "aad53373-79b9-48f8-b7cd-0925309e5307",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C84",
+      "claim": "In mammals, fatty acid taste is in part mediated by two G-protein coupled receptors, GPR40 and GPR120.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that fatty acid taste in mammals is in part mediated by two G \u2013 protein coupled receptors, GPR40 and GPR120 (Cartoni et al., 2010; Matsumura et al., 2007), and that one of these (GPR120) was found to signal through a phospholipase C (Reed and Xia, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Cartoni et al., 2010 and Matsumura et al., 2007.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "6e242f57-695e-4a01-8f50-ca780585b8b4",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C85",
+      "claim": "GPR120 was found to signal through a phospholipase C.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that fatty acid taste in mammals is in part mediated by two G \u2013 protein coupled receptors, GPR40 and GPR120 (Cartoni et al., 2010; Matsumura et al., 2007), and that one of these (GPR120) was found to signal through a phospholipase C (Reed and Xia, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Reed and Xia, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "16fe8aed-b17d-408a-9420-2d099f40331e",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C86",
+      "claim": "Multimeric IR based receptors were recently shown to be required in non-chemosensory processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutlimeric IR based receptors were recently shown to be required in non-chemosensory processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on temperature and humidity sensing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "296a38ec-9887-4426-a2bf-81a6611f7885",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C87",
+      "claim": "Dorsal Organ Cool Cells (DOCCs) located in the larval brain express and require the function of three IRs (IR21a IR25a and IR93a), thereby allowing larvae to avoid temperatures below ~20\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, Dorsal Organ Cool Cells (DOCCs) located in the larval brain, express and require the function of three IRs (IR21a IR25a and IR93a), thereby allowing larvae to avoid temperatures below ~20\u00b0C (Knecht et al., 2016; Ni et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Knecht et al., 2016 and Ni et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "99f9a17a-67eb-484f-9c84-61cd84610187",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C88",
+      "claim": "Two sets of cells in the antennal sacculus of adult flies, requiring the functions of IR25a and IR93a and either IR40a or IR68a, mediate a fly's preferred humidity environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, two sets of cells in the antennal sacculus of adult flies, requiring the functions of IR25a and IR93a and either IR40a or IR68a, were shown to mediate a fly's preferred humidity environment, which is generally in the dry range, but is also dependent on the fly's hydration state (Enjin et al., 2016; Knecht et al., 2017; Knecht et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Enjin et al., 2016; Knecht et al., 2017; and Knecht et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "2b7c5ceb-323e-446d-9f7d-12071bba7379",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C89",
+      "claim": "A fly's preferred humidity environment is generally in the dry range, but is also dependent on the fly's hydration state.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, two sets of cells in the antennal sacculus of adult flies, requiring the functions of IR25a and IR93a and either IR40a or IR68a, were shown to mediate a fly's preferred humidity environment, which is generally in the dry range, but is also dependent on the fly's hydration state (Enjin et al., 2016; Knecht et al., 2017; Knecht et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Enjin et al., 2016; Knecht et al., 2017; and Knecht et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "ed892470-51d1-436e-90de-a21d688cb6a4",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C90",
+      "claim": "Non-chemosensory IR complexes share a common theme with the fatty acid and carboxylic acid taste receptors in that they all require a core unit (IR25a) and two additional IRs that mediate specificity for a particular stimulus type.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, these non-chemosensory IR complexes share a common theme with the fatty acid and carboxylic acid taste receptors (Chen and Amrein, 2017) in that they all require a core unit (IR25a) and two additional IRs that mediate specificity for a particular stimulus type (i.e. temperature, humidity, fat, acid).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on inference from multiple studies showing similar IR receptor architecture across different sensory modalities.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "6fcf6747-de1a-4d63-a73f-4638f5c5cf06",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C91",
+      "claim": "An IR76b based sodium channel mediates salt responses in a heterologous system independently of any other IRs.",
+      "claim_type": "EXPLICIT",
+      "source": "The IR76b sodium channel mediates salt responses in a heterologous systems independently of any other IRs (Zhang et al., 2013), while a proposed multimeric IR76b containing receptor mediates amino acids taste in wild type and IR25a mutant flies (IR8a is not expressed in taste neurons) (Ganguly et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Zhang et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "62a0af9f-64e3-495b-a77a-64367ff3d73c",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C92",
+      "claim": "A proposed multimeric IR76b containing receptor mediates amino acids taste in wild type and IR25a mutant flies.",
+      "claim_type": "EXPLICIT",
+      "source": "The IR76b sodium channel mediates salt responses in a heterologous systems independently of any other IRs (Zhang et al., 2013), while a proposed multimeric IR76b containing receptor mediates amino acids taste in wild type and IR25a mutant flies (IR8a is not expressed in taste neurons) (Ganguly et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ganguly et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "9facaec6-1ece-4944-9f71-a1d95a57eed2",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "claim_id": "C93",
+      "claim": "IR8a is not expressed in taste neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The IR76b sodium channel mediates salt responses in a heterologous systems independently of any other IRs (Zhang et al., 2013), while a proposed multimeric IR76b containing receptor mediates amino acids taste in wild type and IR25a mutant flies (IR8a is not expressed in taste neurons) (Ganguly et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from Ganguly et al., 2017.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "aea46e87-951f-441b-808d-f55c6e99ea96",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Sweet GRNs are necessary for appetitive behavioral responses to fatty acids. Inactivation of sweet GRNs using tetanus toxin abolishes PER responses to both fatty acids and sucrose, while control flies show robust responses to both stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9, and C10 are well-supported by behavioral data in Figure 1A showing complete loss of PER responses when sweet GRNs are inactivated, confirming prior findings that sweet GRNs mediate fatty acid taste. The controls demonstrate the specificity of the manipulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "24e21ec0-829a-42c9-8209-1f52dc6ab97e",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Sugar Gustatory receptor genes are dispensable for fatty acid sensing but required for full sucrose responses. Octuple mutants lacking all sugar Gr genes maintain normal fatty acid responses but show severely reduced sucrose responses, with residual sucrose responses mediated by Gr43a.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 are supported by PER data in Figure 1B demonstrating that fatty acid responses are intact in octuple mutants while sucrose responses are significantly reduced. This establishes that different receptors mediate fatty acid versus sugar taste in sweet GRNs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "785bfbc5-e50d-4328-88c5-eb4b0d00a77e",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "NorpA (phospholipase C) is specifically required for fatty acid but not sugar responses in sweet GRNs. Mutations in norpA selectively abolish fatty acid-induced Ca2+ responses while leaving sucrose responses intact.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17, C79-C80 are supported by Ca2+ imaging data in Figure 1\u2014figure supplement 2 and citations to prior work. The selective requirement for norpA in fatty acid but not sugar responses provides additional evidence for distinct receptor mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "0138c3d6-4b21-4382-a801-6e27c5e3ad1b",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "IR25a and IR76b are broadly expressed in multiple GRNs per sensillum, including both sweet and bitter GRNs in tarsal sensilla. Their expression largely overlaps in tarsal sensilla and includes neurons expressing sugar and bitter Gr genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C22 and C66 are well-supported by immunofluorescence data in Figure 2 showing co-localization of IR25a and IR76b with markers for sweet (Gr64f) and bitter (Gr33a) GRNs. The expression patterns are consistent with cited gene expression arrays.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "5bec5091-f2b1-4113-af2b-97d5c54aadcb",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "IR25a and IR76b are required for behavioral responses to fatty acids but not sugars. Mutations in either gene abolish PER responses to hexanoic, octanoic, and linoleic acids, with complete rescue for hexanoic/octanoic acids and partial rescue for linoleic acid. Mutants show normal sucrose responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C27 are strongly supported by PER data in Figure 3A-B showing loss of fatty acid responses in mutants and rescue by transgene expression. The specificity for fatty acids over sugars is clearly demonstrated, though the partial rescue for linoleic acid suggests additional complexity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "31944429-3e97-403e-b56e-fa6ef9b56d62",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Expression of IR25a or IR76b specifically in sweet GRNs is sufficient to rescue fatty acid taste responses in respective mutants. This demonstrates that the function of these genes in sweet GRNs is both necessary and sufficient for fatty acid taste.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 and C5 are supported by cell-type specific rescue experiments in Figure 3C-D showing that expression in sweet GRNs alone fully restores PER responses to fatty acids. This is a critical result establishing sufficiency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "937a7752-7508-456a-be49-7932f051ee40",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Sweet GRNs of 5b and 5s sensilla show robust Ca2+ responses to hexanoic and octanoic acids in wild-type flies, with modest responses to linoleic acid. These responses are absent in IR25a and IR76b mutants and restored by transgene rescue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C35 are well-supported by Ca2+ imaging data in Figure 4 showing concentration-dependent responses in wild-type flies, loss of responses in mutants, and rescue. This provides direct cellular evidence for IR25a/IR76b function in fatty acid detection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "bd828d80-c8b5-402f-9ed7-124bd168f928",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "IR56d is a third IR subunit required for fatty acid taste, with expression restricted to sweet GRNs. RNAi knockdown of IR56d reduces PER responses to all fatty acids and abolishes Ca2+ responses to hexanoic and octanoic acids. IR56d shows complete overlap with Gr64f and no expression in bitter GRNs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 and C4 are supported by RNAi data in Figure 5A-C, Ca2+ imaging showing loss of responses, and immunofluorescence in Figure 5E-F demonstrating sweet GRN-specific expression. This identifies IR56d as a cell-type specific subunit of the fatty acid receptor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "168b7165-8ead-47a5-8199-f69b41475914",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Hexanoic acid activates both sweet and bitter GRNs. The 5b-associated bitter GRN shows strong Ca2+ responses to hexanoic acid but not to octanoic or linoleic acids, while bitter GRNs respond strongly to the bitter compound denatonium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 and C75 are supported by Ca2+ imaging data in Figure 6A-B showing activation of bitter GRNs by hexanoic acid. This establishes that hexanoic acid has dual taste qualities, activating both appetitive and aversive pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "2208272e-0d83-4587-ba73-94076ae83841",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Bitter GRN responses to hexanoic acid are independent of IR25a and IR76b, indicating a different molecular receptor mechanism than in sweet GRNs. This IR-independent pathway mediates the decrease in PER responses at high hexanoic acid concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 and C7 are supported by Ca2+ imaging data in Figure 6C-D showing normal bitter GRN responses in IR25a/IR76b mutants, and behavioral data in Figure 7C showing that bitter GRN inactivation prevents the decrease in PER at high concentrations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "4031f007-ae53-40eb-9253-bda3d061ee9e",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Sweet and bitter GRNs show different dose-response profiles to hexanoic acid. Sweet GRNs reach maximal activation at 1% hexanoic acid, while bitter GRNs show maximal activation at 2.5%. Wild-type flies show maximal PER at ~1% with decreased responses at higher concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50, C6, and C52 are supported by dose-response Ca2+ imaging in Figure 7A and PER data in Figure 7B. The differential activation profiles provide a mechanistic basis for concentration-dependent behavioral modulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "0eba6ace-f2f2-43d8-9188-5841a3a95c08",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Activation of bitter GRNs suppresses PER responses to high concentrations of hexanoic acid. When bitter GRNs are inactivated by expressing TNT or Kir2.1, PER responses remain high or continue to increase with increasing hexanoic acid concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 are supported by behavioral data in Figure 7C and Figure 7\u2014figure supplement 2 showing that bitter GRN inactivation prevents the decrease in PER at high hexanoic acid concentrations. This demonstrates functional antagonism between sweet and bitter pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "17e2544c-a05e-44f0-8b7f-9c50d218be26",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The modulation of behavioral responses by bitter GRNs does not occur through lateral inhibition of sweet GRNs. Sweet GRN Ca2+ responses to 2.5% hexanoic acid are unchanged when bitter GRNs are inactivated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 are supported by Ca2+ imaging data in Figure 7D showing no difference in sweet GRN responses with or without functional bitter GRNs. This rules out peripheral lateral inhibition and suggests central integration of sweet and bitter signals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "4cb2881a-b893-48c0-b841-13e126ac4541",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "IR-based receptors mediate different taste qualities through cell-type specific IR subunits. IR25a and IR76b function as core subunits in multiple GRN types, combining with cell-type specific IRs (IR56d in sweet GRNs for fatty acid taste, other IRs in sour GRNs for acid taste) to create modality-specific receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C8, C67-C70 represent a synthesis of the current findings with prior work on sour taste. The model is well-supported by the expression patterns, genetic requirements, and cell-type specific rescue experiments, though it remains a proposed model requiring further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "aa9d80a6-f576-4023-b876-5a66c9064ab2",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Sweet GRNs show differential sensitivity to sugars versus fatty acids across sensillum types, and fatty acids elicit weaker PER responses from labial palps compared to tarsi. For sugars, 5v > 5s > 5b, while for fatty acids, 5b > 5s > 5v. Sugars induce equal PER responses from both taste organs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C74 are supported by Ca2+ imaging data in Figure 4 and PER data in Figure 1\u2014figure supplement 1. These observations suggest differential receptor expression or sensitivity across GRN populations and taste organs, potentially contributing to discrimination between chemical classes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "f3116e29-84ef-4053-a382-28a8d04bde87",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "IRs are a large gene family (61 genes in Drosophila) derived from ionotropic glutamate receptors that function as multimeric chemoreceptors in olfactory neurons. IR25a and IR8a serve as core subunits with distinct structural features, combining with additional IRs to form tetrameric complexes that determine ligand specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C65 represent established knowledge in the field, supported by multiple citations to prior work. This background provides the conceptual framework for understanding IR function in taste, though it is not a novel finding of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "c34341e2-1d5b-4f70-9acb-2ec2cb6474dd",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Sugars and fatty acids differ in their chemical properties and sensory coding. Sugars are water-soluble and activate only sweet GRNs, while fatty acids require organic solvents and activate multiple GRN types. Solvent differences may provide textural cues contributing to taste perception.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 combine established chemical knowledge with observations from the current study. The role of texture in taste perception is supported by citation to Zhang et al., 2016. These differences may contribute to discrimination between chemical classes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "9f01d138-f961-4ffe-81e1-0f7085662f3d",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "NorpA functions downstream of diverse receptor types in Drosophila sensory systems, including G-protein coupled receptors in vision and ORs in olfaction. In mammals, fatty acid taste involves GPR40 and GPR120, with GPR120 signaling through phospholipase C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C85 represent established knowledge from prior work, supported by multiple citations. This provides context for understanding norpA function in fatty acid taste and suggests potential evolutionary conservation of signaling mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "b8aea94a-1c35-4135-bbdb-a3652dbc4d06",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "IR-based receptors mediate non-chemosensory functions including temperature and humidity sensing. These receptors share a common architecture with taste receptors, requiring IR25a as a core unit plus two additional IRs for stimulus specificity (IR21a/IR93a for temperature, IR40a or IR68a/IR93a for humidity).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C90 represent recent findings from other groups, supported by citations to multiple studies. This demonstrates the versatility of IR-based receptors and supports the proposed model of modular receptor assembly, though it is not a novel finding of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "6f3e79e3-65ec-449b-8bad-a7220c212d63",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "IR76b can function independently or in multimeric complexes depending on context. IR76b mediates salt responses independently in heterologous systems, while a proposed multimeric IR76b receptor mediates amino acid taste in flies. IR8a is not expressed in taste neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C93 are supported by citations to prior work. This highlights the functional diversity of IR76b and provides context for its role in fatty acid taste, though the amino acid receptor composition remains incompletely characterized.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "6ec466e1-1449-44df-bdb7-e6fed7cd7aa5",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The possibility of a fourth IR subunit in the fatty acid taste receptor complex cannot be excluded by the current experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C42 is a reasonable acknowledgment of experimental limitations. While three IR subunits (IR25a, IR76b, IR56d) have been identified, the authors appropriately note that additional subunits may exist, consistent with tetrameric receptor models from olfaction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    },
+    {
+      "id": "33bacc8f-5903-4fa6-a9e0-fdd2e27c8851",
+      "content_id": "593f0e8f-98f0-4ce5-a0cf-361d4b426e49",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Bitter GRNs might counteract sweet GRN activity above a concentration threshold of >1% hexanoic acid to modulate taste behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 is a speculative interpretation based on the dose-response profiles in Figure 7A. While the behavioral data in Figure 7C support functional antagonism, the specific threshold and mechanism remain to be fully characterized. The claim is reasonable but requires further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:29.933951Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4ebcd327-64e7-4ba8-8a3f-ca7ed0c3e367",
+      "result_id": "aea46e87-951f-441b-808d-f55c6e99ea96"
+    },
+    {
+      "claim_id": "2cecd05f-5880-4de4-8688-fd32ad325454",
+      "result_id": "aea46e87-951f-441b-808d-f55c6e99ea96"
+    },
+    {
+      "claim_id": "49e255da-6cf9-4ca3-aee9-b2e9c505b9a8",
+      "result_id": "aea46e87-951f-441b-808d-f55c6e99ea96"
+    },
+    {
+      "claim_id": "559b72a7-deca-41e0-aa7c-eaed024a527c",
+      "result_id": "24e21ec0-829a-42c9-8209-1f52dc6ab97e"
+    },
+    {
+      "claim_id": "34ce7571-2bcd-4867-9afd-fe32b5b7111e",
+      "result_id": "24e21ec0-829a-42c9-8209-1f52dc6ab97e"
+    },
+    {
+      "claim_id": "5d7f10ca-a064-4ace-9c0b-0c5c2e2ebb38",
+      "result_id": "24e21ec0-829a-42c9-8209-1f52dc6ab97e"
+    },
+    {
+      "claim_id": "04da9801-6932-43d2-a7ad-c4e70b2ee3bf",
+      "result_id": "24e21ec0-829a-42c9-8209-1f52dc6ab97e"
+    },
+    {
+      "claim_id": "169a748d-b78f-49e6-a58c-9cd6349998b2",
+      "result_id": "785bfbc5-e50d-4328-88c5-eb4b0d00a77e"
+    },
+    {
+      "claim_id": "e1c4bfa1-8c84-4834-9a19-a3d8d2f0ff00",
+      "result_id": "785bfbc5-e50d-4328-88c5-eb4b0d00a77e"
+    },
+    {
+      "claim_id": "6da87a1d-0c98-407a-9d79-562539c22715",
+      "result_id": "785bfbc5-e50d-4328-88c5-eb4b0d00a77e"
+    },
+    {
+      "claim_id": "915507f9-f857-43d3-9a64-0850eb6ce128",
+      "result_id": "785bfbc5-e50d-4328-88c5-eb4b0d00a77e"
+    },
+    {
+      "claim_id": "54057c12-2f70-40ce-bd17-e27c17965255",
+      "result_id": "785bfbc5-e50d-4328-88c5-eb4b0d00a77e"
+    },
+    {
+      "claim_id": "6e2ddc05-ca28-4342-b941-46650e31e7d1",
+      "result_id": "0138c3d6-4b21-4382-a801-6e27c5e3ad1b"
+    },
+    {
+      "claim_id": "a1f9638a-15fc-4541-be66-4cae4a3ba222",
+      "result_id": "0138c3d6-4b21-4382-a801-6e27c5e3ad1b"
+    },
+    {
+      "claim_id": "60269225-2e00-4c75-8e59-c968c7cecef8",
+      "result_id": "0138c3d6-4b21-4382-a801-6e27c5e3ad1b"
+    },
+    {
+      "claim_id": "ccdaeba4-ae5f-4de2-9425-a23c44693a00",
+      "result_id": "0138c3d6-4b21-4382-a801-6e27c5e3ad1b"
+    },
+    {
+      "claim_id": "0801a213-a330-4a1b-bc81-e345de33e170",
+      "result_id": "0138c3d6-4b21-4382-a801-6e27c5e3ad1b"
+    },
+    {
+      "claim_id": "eb0dfec1-4ffb-4766-a25f-998d0160a42f",
+      "result_id": "0138c3d6-4b21-4382-a801-6e27c5e3ad1b"
+    },
+    {
+      "claim_id": "ce243528-a3eb-4ef9-968f-b21bdc89ffec",
+      "result_id": "5bec5091-f2b1-4113-af2b-97d5c54aadcb"
+    },
+    {
+      "claim_id": "2b0e444b-d484-4f70-a43d-d3e60d51154c",
+      "result_id": "5bec5091-f2b1-4113-af2b-97d5c54aadcb"
+    },
+    {
+      "claim_id": "a6282789-41bb-43ea-84ac-c3fe2e5c5a09",
+      "result_id": "5bec5091-f2b1-4113-af2b-97d5c54aadcb"
+    },
+    {
+      "claim_id": "5fee6f53-5478-43e3-8462-c0bc42101100",
+      "result_id": "5bec5091-f2b1-4113-af2b-97d5c54aadcb"
+    },
+    {
+      "claim_id": "fc4705f8-05a1-4428-aacb-bdb32f26aa7e",
+      "result_id": "5bec5091-f2b1-4113-af2b-97d5c54aadcb"
+    },
+    {
+      "claim_id": "49916a69-0ca1-4dcf-b795-166aa39321fe",
+      "result_id": "31944429-3e97-403e-b56e-fa6ef9b56d62"
+    },
+    {
+      "claim_id": "546b03fd-fdd0-4a1c-8b67-0b56692fe1d0",
+      "result_id": "31944429-3e97-403e-b56e-fa6ef9b56d62"
+    },
+    {
+      "claim_id": "5e3e8123-fcf8-4e8a-a78a-2514789f9265",
+      "result_id": "31944429-3e97-403e-b56e-fa6ef9b56d62"
+    },
+    {
+      "claim_id": "7c12b1c0-ae3c-4f96-aca7-bb0bde64511d",
+      "result_id": "31944429-3e97-403e-b56e-fa6ef9b56d62"
+    },
+    {
+      "claim_id": "2af59160-c597-4f49-95fb-40d8b1a2d559",
+      "result_id": "937a7752-7508-456a-be49-7932f051ee40"
+    },
+    {
+      "claim_id": "4b0aba8f-7af3-421b-ba61-dbda0a4157a7",
+      "result_id": "937a7752-7508-456a-be49-7932f051ee40"
+    },
+    {
+      "claim_id": "95179741-d6b8-4760-a638-066ef20ccf66",
+      "result_id": "937a7752-7508-456a-be49-7932f051ee40"
+    },
+    {
+      "claim_id": "f131ebfb-8843-47e3-9315-02c9b8a42ed6",
+      "result_id": "937a7752-7508-456a-be49-7932f051ee40"
+    },
+    {
+      "claim_id": "5a0def93-1200-4df0-9ffe-54e3761fe75c",
+      "result_id": "937a7752-7508-456a-be49-7932f051ee40"
+    },
+    {
+      "claim_id": "36458a4d-725f-4cbe-b2fd-357989e8f745",
+      "result_id": "bd828d80-c8b5-402f-9ed7-124bd168f928"
+    },
+    {
+      "claim_id": "7261a086-1484-4076-b0c3-cbe043bc841b",
+      "result_id": "bd828d80-c8b5-402f-9ed7-124bd168f928"
+    },
+    {
+      "claim_id": "343aa744-0f78-447a-9b0c-b6a166bc310e",
+      "result_id": "bd828d80-c8b5-402f-9ed7-124bd168f928"
+    },
+    {
+      "claim_id": "e178ec41-70c6-46e4-80b0-13daac7e2d27",
+      "result_id": "bd828d80-c8b5-402f-9ed7-124bd168f928"
+    },
+    {
+      "claim_id": "7329f1f8-9c0b-4f9f-aa41-596edd83b071",
+      "result_id": "bd828d80-c8b5-402f-9ed7-124bd168f928"
+    },
+    {
+      "claim_id": "fd373863-0631-4907-9ac2-dd52f148706f",
+      "result_id": "bd828d80-c8b5-402f-9ed7-124bd168f928"
+    },
+    {
+      "claim_id": "0fd40698-eda0-4e43-bc5b-d73e451015a9",
+      "result_id": "bd828d80-c8b5-402f-9ed7-124bd168f928"
+    },
+    {
+      "claim_id": "cfe224e4-e106-4fe5-9eb0-aadaaa5d609c",
+      "result_id": "168b7165-8ead-47a5-8199-f69b41475914"
+    },
+    {
+      "claim_id": "43e7cbc1-6581-45b8-99a8-badc9f9653fd",
+      "result_id": "168b7165-8ead-47a5-8199-f69b41475914"
+    },
+    {
+      "claim_id": "04fdc1c2-4e0c-4b21-baaa-803192081a5a",
+      "result_id": "168b7165-8ead-47a5-8199-f69b41475914"
+    },
+    {
+      "claim_id": "54f92379-2ec0-40fd-9547-2851033a2cc1",
+      "result_id": "168b7165-8ead-47a5-8199-f69b41475914"
+    },
+    {
+      "claim_id": "23733349-3bb0-45f2-9be4-56f226f22eee",
+      "result_id": "168b7165-8ead-47a5-8199-f69b41475914"
+    },
+    {
+      "claim_id": "4949c7b5-1c94-4959-be89-375bf2db2de4",
+      "result_id": "2208272e-0d83-4587-ba73-94076ae83841"
+    },
+    {
+      "claim_id": "52a941c4-406d-47d2-adb3-7eba68f838ec",
+      "result_id": "2208272e-0d83-4587-ba73-94076ae83841"
+    },
+    {
+      "claim_id": "2321085b-a774-4334-b128-4719c97eb061",
+      "result_id": "2208272e-0d83-4587-ba73-94076ae83841"
+    },
+    {
+      "claim_id": "e08f0e45-d4ed-427e-b7d1-9d1f9dc068a3",
+      "result_id": "4031f007-ae53-40eb-9253-bda3d061ee9e"
+    },
+    {
+      "claim_id": "19105a7b-f65a-4118-8377-0ee5440214d7",
+      "result_id": "4031f007-ae53-40eb-9253-bda3d061ee9e"
+    },
+    {
+      "claim_id": "cb14614e-d2c1-4c6b-bd17-48e0dee4c958",
+      "result_id": "4031f007-ae53-40eb-9253-bda3d061ee9e"
+    },
+    {
+      "claim_id": "f437b78a-c0ce-41bb-a7e3-2cf0e8b15460",
+      "result_id": "4031f007-ae53-40eb-9253-bda3d061ee9e"
+    },
+    {
+      "claim_id": "a95d775d-caf7-43f8-bc00-72c42845cf94",
+      "result_id": "0eba6ace-f2f2-43d8-9188-5841a3a95c08"
+    },
+    {
+      "claim_id": "0379bd8d-84e2-4ec8-952a-cf08a662fa02",
+      "result_id": "0eba6ace-f2f2-43d8-9188-5841a3a95c08"
+    },
+    {
+      "claim_id": "3b91d16f-ee1a-4faa-8291-66a0804d66e2",
+      "result_id": "17e2544c-a05e-44f0-8b7f-9c50d218be26"
+    },
+    {
+      "claim_id": "75870d92-84a8-499b-877c-9be9eb2a589d",
+      "result_id": "17e2544c-a05e-44f0-8b7f-9c50d218be26"
+    },
+    {
+      "claim_id": "582af3e5-1b5f-4944-8268-e7c2a1270a97",
+      "result_id": "4cb2881a-b893-48c0-b841-13e126ac4541"
+    },
+    {
+      "claim_id": "a5bff2d6-7a75-4f59-9a1a-47048576c468",
+      "result_id": "4cb2881a-b893-48c0-b841-13e126ac4541"
+    },
+    {
+      "claim_id": "db1084bf-2900-403c-9334-f5e763ed462b",
+      "result_id": "4cb2881a-b893-48c0-b841-13e126ac4541"
+    },
+    {
+      "claim_id": "292c390f-5176-4449-8020-7a0e23ad9d02",
+      "result_id": "4cb2881a-b893-48c0-b841-13e126ac4541"
+    },
+    {
+      "claim_id": "9d6f7287-e3f0-4bdf-837a-973a67220437",
+      "result_id": "4cb2881a-b893-48c0-b841-13e126ac4541"
+    },
+    {
+      "claim_id": "0b99c3cc-b643-4bfc-9c57-5befbe3489f0",
+      "result_id": "4cb2881a-b893-48c0-b841-13e126ac4541"
+    },
+    {
+      "claim_id": "ef4ca013-af73-4439-8e4f-345cfcfb4b7a",
+      "result_id": "aa9d80a6-f576-4023-b876-5a66c9064ab2"
+    },
+    {
+      "claim_id": "5b03924c-e49f-45dd-b8ae-e1fdc20f8d8e",
+      "result_id": "aa9d80a6-f576-4023-b876-5a66c9064ab2"
+    },
+    {
+      "claim_id": "97a0ffbc-1efd-48be-b8ee-0f35780bb981",
+      "result_id": "aa9d80a6-f576-4023-b876-5a66c9064ab2"
+    },
+    {
+      "claim_id": "e539fc84-9eaa-4a8b-a554-fae40d623742",
+      "result_id": "aa9d80a6-f576-4023-b876-5a66c9064ab2"
+    },
+    {
+      "claim_id": "2e6a30e5-b762-45f0-9595-58763b276ab3",
+      "result_id": "f3116e29-84ef-4053-a382-28a8d04bde87"
+    },
+    {
+      "claim_id": "a21e4896-dc50-4672-aa0b-dbfa726080e1",
+      "result_id": "f3116e29-84ef-4053-a382-28a8d04bde87"
+    },
+    {
+      "claim_id": "eab47130-afe7-472f-a780-fbb6a553dd70",
+      "result_id": "f3116e29-84ef-4053-a382-28a8d04bde87"
+    },
+    {
+      "claim_id": "8a547e61-d6dc-46e6-a42e-de6a80cfaa8c",
+      "result_id": "f3116e29-84ef-4053-a382-28a8d04bde87"
+    },
+    {
+      "claim_id": "4a2e55b9-cb70-40f8-9801-054df9df520e",
+      "result_id": "f3116e29-84ef-4053-a382-28a8d04bde87"
+    },
+    {
+      "claim_id": "94aca0b1-fabc-4dd5-8386-dbd537e0abbe",
+      "result_id": "f3116e29-84ef-4053-a382-28a8d04bde87"
+    },
+    {
+      "claim_id": "c75ef2ee-ee94-4c51-b2df-1c55d223de07",
+      "result_id": "f3116e29-84ef-4053-a382-28a8d04bde87"
+    },
+    {
+      "claim_id": "a715b85d-365c-470f-a335-732f8595b43b",
+      "result_id": "f3116e29-84ef-4053-a382-28a8d04bde87"
+    },
+    {
+      "claim_id": "338f9029-139d-450f-b565-c8106b06535c",
+      "result_id": "f3116e29-84ef-4053-a382-28a8d04bde87"
+    },
+    {
+      "claim_id": "48ce544b-f3dd-4db2-acd9-9d7d0dd3b600",
+      "result_id": "c34341e2-1d5b-4f70-9acb-2ec2cb6474dd"
+    },
+    {
+      "claim_id": "a8087abc-07d0-4712-bdcb-d0840b1cf940",
+      "result_id": "c34341e2-1d5b-4f70-9acb-2ec2cb6474dd"
+    },
+    {
+      "claim_id": "254f9239-5234-4a74-af3f-32872dba1e66",
+      "result_id": "c34341e2-1d5b-4f70-9acb-2ec2cb6474dd"
+    },
+    {
+      "claim_id": "b7ed1e1b-d9d5-4bc6-bfb0-fa3b6b2146a8",
+      "result_id": "9f01d138-f961-4ffe-81e1-0f7085662f3d"
+    },
+    {
+      "claim_id": "a7c60241-af0c-4f3e-a93d-87d230a1b06b",
+      "result_id": "9f01d138-f961-4ffe-81e1-0f7085662f3d"
+    },
+    {
+      "claim_id": "aed9412d-2f90-460e-a40a-4de4a073d011",
+      "result_id": "9f01d138-f961-4ffe-81e1-0f7085662f3d"
+    },
+    {
+      "claim_id": "aad53373-79b9-48f8-b7cd-0925309e5307",
+      "result_id": "9f01d138-f961-4ffe-81e1-0f7085662f3d"
+    },
+    {
+      "claim_id": "6e242f57-695e-4a01-8f50-ca780585b8b4",
+      "result_id": "9f01d138-f961-4ffe-81e1-0f7085662f3d"
+    },
+    {
+      "claim_id": "16fe8aed-b17d-408a-9420-2d099f40331e",
+      "result_id": "b8aea94a-1c35-4135-bbdb-a3652dbc4d06"
+    },
+    {
+      "claim_id": "296a38ec-9887-4426-a2bf-81a6611f7885",
+      "result_id": "b8aea94a-1c35-4135-bbdb-a3652dbc4d06"
+    },
+    {
+      "claim_id": "99f9a17a-67eb-484f-9c84-61cd84610187",
+      "result_id": "b8aea94a-1c35-4135-bbdb-a3652dbc4d06"
+    },
+    {
+      "claim_id": "2b7c5ceb-323e-446d-9f7d-12071bba7379",
+      "result_id": "b8aea94a-1c35-4135-bbdb-a3652dbc4d06"
+    },
+    {
+      "claim_id": "ed892470-51d1-436e-90de-a21d688cb6a4",
+      "result_id": "b8aea94a-1c35-4135-bbdb-a3652dbc4d06"
+    },
+    {
+      "claim_id": "6fcf6747-de1a-4d63-a73f-4638f5c5cf06",
+      "result_id": "6f3e79e3-65ec-449b-8bad-a7220c212d63"
+    },
+    {
+      "claim_id": "62a0af9f-64e3-495b-a77a-64367ff3d73c",
+      "result_id": "6f3e79e3-65ec-449b-8bad-a7220c212d63"
+    },
+    {
+      "claim_id": "9facaec6-1ece-4944-9f71-a1d95a57eed2",
+      "result_id": "6f3e79e3-65ec-449b-8bad-a7220c212d63"
+    },
+    {
+      "claim_id": "000ebc34-bd6a-4f0f-85fd-eebe0d53ee2e",
+      "result_id": "6ec466e1-1449-44df-bdb7-e6fed7cd7aa5"
+    },
+    {
+      "claim_id": "d9b013c0-1056-48be-924a-966dbe2da1d0",
+      "result_id": "33bacc8f-5903-4fa6-a9e0-fdd2e27c8851"
+    }
+  ],
+  "comparisons": []
+}

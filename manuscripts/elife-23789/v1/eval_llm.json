@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C46"
+    ],
+    "result": "Kenyon cells (KC) and dopamine neurons (DAn) form axoaxonic reciprocal synapses in the mushroom body lobes. This was demonstrated using trans-synaptic GFP reconstitution (GRASP) experiments showing bidirectional connectivity, with synaptic puncta visualized by structured illumination microscopy and validated by appropriate negative controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C33-C36 provide converging anatomical evidence from GRASP experiments showing reciprocal connectivity in both directions (DAn\u2192KC and KC\u2192DAn) with proper controls. Claim C46 integrates this with functional TTX experiments (C44-C45) demonstrating monosynaptic transmission. The combination of anatomical and functional evidence strongly supports the existence of reciprocal synapses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Kenyon cells provide functional synaptic input to dopamine neurons that is monosynaptic. Artificial stimulation of KC using ATP/P2X2 or optogenetic methods produces robust cAMP and calcium responses in DAn terminals, and these responses persist in the presence of TTX, confirming direct synaptic transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C42-C43 demonstrate functional connectivity using two independent stimulation methods (ATP/P2X2 and optogenetics). Claims C44-C45 provide critical TTX controls showing that responses are monosynaptic rather than polysynaptic. However, C40-C41 reveal a technical concern about leaky P2X2 expression in controls, though optogenetic validation (C43, C51) addresses this limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C81"
+    ],
+    "result": "The KC\u2192DAn synapse is cholinergic, mediated by nicotinic acetylcholine receptors (nAChRs). Pharmacological blockade with mecamylamide inhibits KC-evoked responses in DAn (60-85% inhibition), and focal ACh application directly activates DAn terminals in a TTX-insensitive manner, indicating postsynaptic nAChRs on DAn axons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 show dose-dependent inhibition by the nAChR antagonist mecamylamide with two independent stimulation methods. Claims C52-C54 demonstrate direct ACh responsiveness of DAn terminals that is TTX-insensitive, confirming local postsynaptic specializations. The convergence of pharmacological and focal application experiments strongly supports cholinergic transmission via nAChRs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Knockdown of specific nAChR subunits (\u03b11, \u03b14, \u03b15) in dopamine neurons impairs aversive olfactory learning. RNAi-mediated knockdown of these subunits using TH-gal4 or the more restricted MB058B split-gal4 driver produces modest but significant learning deficits without affecting sensory controls, indicating that cholinergic input to DAn is required for normal learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 provide behavioral evidence with appropriate genetic controls (parental lines and subunit-specific effects). Claim C59 confirms that sensory abilities are intact, ruling out trivial explanations. The consistency across multiple nAChR subunits and two different drivers (broad TH-gal4 and restricted MB058B) supports the conclusion, though the effect sizes are modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Silencing Kenyon cells with Kir2.1 reduces presynaptic calcium responses in \u03b12\u03b1'2 PPL1 dopamine neurons during olfactory conditioning, odor presentation, and shock delivery. This demonstrates that KC input amplifies DAn activity during learning, consistent with a positive gain signal for dopamine release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 show reduced DAn calcium responses when KC are silenced during multiple stimulus conditions, with appropriate temperature-matched controls (C65). The finding that both odor and shock responses are reduced (C64) is surprising but well-documented. Claims C66-C67 provide reasonable interpretations linking reduced calcium to reduced dopamine release and learning deficits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Kenyon cell input shapes the magnitude of ongoing dopamine neuron activity. Silencing KC with Kir2.1 reduces total ongoing activity and peak magnitude in \u03b12\u03b1'2 PPL1 neurons without changing peak number, indicating that KC input modulates but does not generate spontaneous DAn activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 demonstrate selective reduction in peak magnitude but not frequency when KC are silenced, with proper controls (C75-C76). Claim C71 notes improved detection with syt:GCaMP6s compared to previous reporters. The dissociation between peak number and magnitude (C73-C74) supports the interpretation (C77) that KC input modulates rather than generates ongoing activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Reciprocal connections between KC and DAn form a positive feedback loop required for optimal olfactory learning. During conditioning, DAn receive US input which is conveyed to KC; coincident olfactory input to KC then provides cholinergic feedback to DAn, amplifying dopamine release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative claim (C6, C85) is supported by the combination of anatomical reciprocal connectivity (Result 1), functional cholinergic transmission (Results 2-3), behavioral deficits when the KC\u2192DAn connection is disrupted (Result 4), and reduced DAn responses when KC are silenced (Result 5). Claims C86-C88 provide a coherent mechanistic model consistent with all experimental findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C39",
+      "C79",
+      "C80"
+    ],
+    "result": "The DAn\u2192KC half of the reciprocal synapse employs dopamine as neurotransmitter and produces cAMP responses in KC. Artificial stimulation of DAn induces dose-dependent cAMP elevation in KC, though the authors acknowledge possible co-release of other neurotransmitters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 demonstrates functional DAn\u2192KC transmission with dose-dependent cAMP responses. Claim C39 notes these responses are larger than the reverse direction. Claim C79 is based on established knowledge that these are dopaminergic neurons, with appropriate acknowledgment of uncertainty about co-transmitters (C80). The functional demonstration is solid though the neurotransmitter identity relies partly on prior characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "The uas-P2X2 control genotype shows leaky expression in PPL1 dopamine neurons, producing significant calcium responses to ATP despite the absence of a driver.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 documents an important technical issue with the P2X2 system. Claim C41 interprets this as leaky expression, contrasting with prior reports. This finding prompted the authors to validate results with optogenetics (C42-C43, C51), which is appropriate. The leaky expression complicates interpretation of P2X2 experiments but does not invalidate the main conclusions since optogenetic validation was performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Knockdown of nAChR subunits in dopamine neurons does not affect sleep patterns compared to control flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 reports negative results for sleep phenotypes, which is important given that the DAn\u2192KC circuit is involved in sleep regulation. This control helps establish specificity of the learning phenotype. The data are shown in Figure 3\u2014figure supplement 1 with appropriate monitoring methods described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Both phasic/evoked and chronic/ongoing activity of dopamine neurons is influenced by direct cholinergic input from Kenyon cells through axoaxonic reciprocal synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 integrates findings from evoked responses (Result 5, C62-C67) and ongoing activity (Result 6, C72-C77). This summary claim is well-supported by the combination of functional imaging experiments showing KC input affects both types of DAn activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "There may be other mediators of the reciprocal connection between KC and DAn besides acetylcholine, based on the observation of both cAMP and calcium responses in DAn with KC stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C82 is speculative, acknowledging that mecamylamide does not produce complete inhibition and that both cAMP and calcium responses are observed. While this is a reasonable hypothesis, no direct evidence for additional mediators is provided. The incomplete inhibition could also reflect incomplete receptor blockade or technical limitations of the pharmacological approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors propose that ongoing DAn activity provides moment-by-moment updates of external/internal states that reconfigure KC\u2192MBOn information flow, and that the DAn/KC/MBOn circuit forms a recurrent network for sensory integration and decision-making, with local feedback loops providing computational benefits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C93 are explicitly speculative (\"plausible,\" \"may\") and represent interpretive models rather than direct experimental findings. While these models are consistent with the data and cited literature, they extend beyond what is directly demonstrated. The proposals are reasonable hypotheses for future testing but lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "Non-KC cholinergic input to dopamine neurons may contribute to memory acquisition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C94 acknowledges an important limitation: the experiments cannot exclude contributions from other cholinergic sources. This is an appropriate caveat given that Kir2.1 silencing and nAChR knockdown approaches affect all KC or all DAn nAChRs respectively, without synapse-specific resolution. This limitation does not invalidate the main findings but indicates the need for more specific tools.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The introduction establishes four major tenets of Drosophila olfactory learning based on prior literature: (1) KC synaptic modulation underlies learning, (2) KC modulation employs cAMP signaling, (3) MBOn receive KC input and influence behavior, and (4) DAn provide US input for conditioning. Additional complexity includes compartment-specific plasticity rules and ongoing DAn activity correlated with behavioral state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C32 and C68-C70 summarize established knowledge from cited literature, providing context for the current study. These are appropriately cited background claims that set up the rationale for investigating KC\u2192DAn connectivity. The citations appear appropriate and the summary of prior work is accurate based on the references provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Kenyon cells are cholinergic and nAChRs in mushroom body output neurons are required for memory retrieval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 cite Barnstedt et al., 2016 for established knowledge that KC are cholinergic and that nAChRs in MBOn are required for retrieval. This provides important context for investigating cholinergic transmission from KC to DAn. The citation is appropriate background information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "There is a need to develop new tools that allow silencing or activating specific synaptic connections between neurons without affecting other functions in the same cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is a perspective/opinion statement in the discussion, motivated by the challenges encountered in the study (e.g., inability to exclude non-KC cholinergic input, C94). This is a reasonable conclusion given the experimental limitations and represents an appropriate call for future methodological development rather than a testable claim.",
+    "result_type": "MINOR"
+  }
+]

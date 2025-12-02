@@ -1,0 +1,409 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C33",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors developed and applied an unsupervised, scalable approach to quantify protein localization changes across 24 experimental screens consisting of nearly 400,000 images and 15.5 million cells. The method bins cells by cell cycle stage and type, calculates quantitative features, and produces protein change profiles without requiring retraining for new datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C27-C30, C33, C38-C43 collectively describe the methodological approach and its application. The method is well-documented with clear descriptions of the binning strategy (C39-C41), feature extraction, and unsupervised change detection (C27-C30). The scale of application (C4, C33, C38) is factually stated and supported by the data presented. The reproducibility between replicates (C44-C45) provides validation of the method's reliability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C34",
+      "C35",
+      "C50",
+      "C52",
+      "C59",
+      "C63",
+      "C65"
+    ],
+    "result": "The integrative analysis differentiated specific from generalized protein localization responses and identified functionally enriched clusters. Specific examples include stress-responsive proteins (Msn2) shared between rapamycin and hydroxyurea treatments, cell-cycle proteins responding to both hydroxyurea and \u03b1-factor, and mating response proteins specific to \u03b1-factor treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C34-C35, and specific examples (C50, C52, C59, C63, C65) are well-supported by clustering analysis, GO enrichment results (Table 1), and validation with prior literature. The heat map in Figure 2 provides visual evidence of distinct clustering patterns, and manual evaluation of images confirms predicted localization changes for key clusters (C46-C48).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors discovered that three transcription factors (Msn2, Dot6, Rtg3) share similar localization change patterns in response to rapamycin and hydroxyurea. Time-lapse microscopy revealed that Rtg3 exhibits pulsatile dynamics in standard medium, with rapamycin treatment significantly increasing the duration of nuclear localization (175 min vs 123 min, p=0.0003).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C88 form a coherent narrative supported by multiple lines of evidence: clustering analysis (C70-C72, Figure 3), consistency with prior literature for Msn2 and Dot6 (C73-C74, C78-C81), and novel time-lapse microscopy data for Rtg3 (C83-C88, Figure 4). The statistical analysis (C87-C88) with replicate experiments and significant p-values provides strong quantitative support. This contradicts prior work (C82, C166) but the authors provide plausible explanations (C167).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Subsets of ribosomal proteins exhibit perturbation-specific localization changes, contrasting with their general transcriptional response to stress. For example, Rpl40a and Rpl40b redistributed from nucleus to cytoplasm following prolonged rapamycin treatment, potentially reflecting reduced ribosomal biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 are supported by clustering analysis (Figure 5), image data (C90, C94), and comparison with prior work on transcriptional responses (C91). The interpretation regarding extra-ribosomal functions (C92-C93, C95) is appropriately speculative (C95) and supported by citations. The observation of perturbation-specific responses for ribosomal subunits is a novel finding that contrasts with known general transcriptional responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "A novel reciprocal pattern of localization changes was detected for membrane and Golgi proteins: following rapamycin treatment, proteins shifted toward the vacuole, while following hydroxyurea treatment, the same proteins shifted toward the membrane. This pattern occurred in multiple proteins and was confirmed by image evaluation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 and C154-C158 describe a novel finding supported by clustering analysis (Figure 6), protein change profiles, and direct image observation. The reciprocal nature of the pattern is clearly demonstrated (C97-C98, C101-C102), and the authors appropriately note that the pattern's occurrence in multiple proteins increases confidence in its biological significance (C157). The visualization was essential for discovery (C156, C158).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Protein localization changes represent an independent layer of regulation that is generally not correlated with transcriptional or protein abundance changes. While some clusters show coordination between localization and abundance changes (e.g., Cluster J in \u0394rpd3), most proteins with strong localization changes have weak transcript and abundance changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 and C103-C115 are supported by systematic comparison analyses (Figure 7, Figure 7\u2014figure supplement 1). The low correlation between localization and transcript profiles (C103) and the observation that localization changes are more specific than abundance changes (C109-C110) are demonstrated quantitatively. Manual validation confirms the lack of correlation is not due to false positives (C115). The exception for Cluster J (C111, C113-C114) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Clusters of proteins with similar localization change patterns are not primarily explained by physical protein-protein interactions or shared subcellular compartments. Most clusters show weak or no enrichment for protein-protein interactions, and clusters vary in their heterogeneity of untreated wild-type localizations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C126 are supported by enrichment analysis (Figure 8A) and analysis of subcellular localization distributions (Figure 8B). While some clusters show enrichment for interactions (C117, e.g., Cluster A), most do not (C118), supporting the hypothesis that coordinated localization changes arise from diverse mechanisms (C116, C119). The heterogeneity analysis (C120-C126) demonstrates that clustering is based on shared trends in protein movement rather than simply co-localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The integrative approach successfully identified biologically relevant localization changes in kinase deletion mutant screens despite technical challenges (fewer cells, morphological differences, no replicates). Examples include stress-responsive proteins forming nuclear foci in elm1\u0394 and ribosomal subunits with increased nuclear localization in hal5\u0394.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C141 demonstrate the generalizability of the approach to challenging datasets. Despite acknowledged limitations (C128-C129), the method identified clusters with biological relevance supported by prior literature (C131, C133, C138-C139) and image validation (C132, C134, C136-C137, Figures 9-10). This demonstrates robustness and applicability to exploratory analysis situations with limited prior knowledge (C140-C141).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "The unsupervised localization change detection method produces reproducible results, with strong correlation between replicates of the same perturbation and weak correlation between different perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are directly supported by correlation analysis shown in Figure 1\u2014figure supplement 1A-D. The strong within-perturbation correlation and weak between-perturbation correlation validate the method's ability to detect perturbation-specific changes reproducibly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Manual evaluation of images shows that clusters with stronger signals in protein change profiles have higher ratios of visible localization changes, while clusters with moderate signals contain more subtle or ambiguous changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by systematic manual evaluation (Supplementary file 1) with quantitative results. The correlation between signal strength and visibility of changes provides validation of the computational method, though the authors appropriately acknowledge that weaker signals may represent subtle but real changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "The unbiased approach associated Crz1 with the mating response in \u03b1-factor perturbation, a finding initially unexpected but subsequently confirmed by independent work during the course of this research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C164 describe a successful prediction validated by independent work (C163, Carb\u00f3 et al., 2017). This demonstrates the value of unbiased, high-throughput exploratory analysis for revealing unexpected connections (C164). The finding is supported by clustering (Cluster T) and image data (C68).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "The discovery of Rtg3 pulsing dynamics was enabled by associating protein behavior across multiple perturbations, demonstrating that integrative analysis can reveal properties missed by more comprehensive single-protein experimental approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C170 provide a meta-analysis of the Rtg3 discovery. The authors appropriately acknowledge the contradiction with prior work (C166), provide plausible explanations (C167), and explain how their less comprehensive data (C168) enabled discovery through association (C169). This supports the value of the integrative approach (C170).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "The authors acknowledge multiple potential sources of false positives and negatives in their high-throughput approach, including contamination, segmentation artifacts, and clustering limitations. They recommend validation by human evaluation of images, which their method makes tractable by reducing the search space from hundreds of thousands to hundreds of images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C190 provide a thorough and honest assessment of method limitations with specific examples (C173-C174, C180-C181, C183). The recommendation for validation (C186-C190) is practical and acknowledges the complementary nature of computational and manual approaches. The discussion of limitations is appropriately critical and demonstrates scientific rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C32"
+    ],
+    "result": "The authors position their work within the context of prior research on protein localization and integrative analysis, noting that while systematic protein localization studies are valuable, integration of localization data across perturbations is rare. They claim to present the first quantitative integrative cluster analysis of protein localization changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C26, and C32 provide context and motivation supported by appropriate citations. The characterization of prior work as analyzing perturbations independently (C2, C22) and the limitations of existing approaches (C23-C24) are well-documented. The novelty claim (C32) appears reasonable given the cited literature, though comprehensive verification of \"first\" claims is challenging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C31",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The integrative approach provides contextual information to distinguish specific from general responses, enables detection of subtle differences in protein responses, and scales analysis from tens of thousands to hundreds of thousands of images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C148-C153 summarize the advantages of the integrative approach, supported by the results presented throughout the manuscript. The ability to distinguish specific from general responses (C31, C148) is demonstrated by multiple examples. The scalability claim (C152-C153) is factually supported by the data analyzed (C4, C38).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The current integrative approach provides advantages over prior flux network representations by enabling comparison across perturbations and separating proteins into specific and functionally enriched groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C147 compare the current work with the authors' prior approaches, supported by citations (C144, C146). The limitation of flux networks for cross-perturbation comparison (C145) is a reasonable assessment, and the advantage of the current approach (C147) is demonstrated by the separation of mating response and cell-cycle proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The analysis is unbiased by prior biological knowledge, yet identifies many known responses to perturbations, providing validation while also enabling association of new genes with known responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C161 describe the unbiased nature of the method and its validation through recovery of known biology. The numerous examples of known responses identified (C160) provide strong validation, while the discovery of new associations (C161, e.g., Crz1) demonstrates the method's utility for hypothesis generation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197"
+    ],
+    "result": "The authors compare their imaging-based approach with predictive methods based on protein-protein interactions and mRNA expression, arguing that predictive approaches will miss many localization dynamics. They observe that nucleus-cytoplasm transitions are common in their data, which may differ from predictions or reflect technical biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C191-C197 provide a comparison with predictive approaches, supported by citations (C191, C194, C196-C197). The observation that not all clusters overlap with interaction or expression data (C193) supports the argument that localization changes arise from diverse mechanisms. The authors appropriately acknowledge potential technical biases (C196) while noting discrepancies with predictions (C197).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204"
+    ],
+    "result": "The authors discuss future prospects for integrative proteomic analyses of image screens and potential applications to human cells, drug target identification, and tissue/cell type comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C198-C204 are speculative statements about future applications (C198-C200, C202-C204) supported by citations to relevant emerging technologies (C198, C201, C204). While the potential applications are reasonable extrapolations from the current work, they remain speculative and would require experimental validation. These are appropriately framed as possibilities rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C142",
+      "C143"
+    ],
+    "result": "Images contain additional information beyond localization changes, including cell morphology and protein abundance, which could in principle be incorporated into high-throughput integrative analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C143 are supported by citations to prior work (C142) and represent a reasonable statement about future possibilities. The authors appropriately frame this as speculative (\"in principle\") while noting the potential for extending their approach.",
+    "result_type": "MINOR"
+  }
+]

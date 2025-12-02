@@ -1,0 +1,346 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C8",
+      "C9"
+    ],
+    "result": "Cold-warming (CW) treatment (4\u00b0C cold shock followed by warming at 20\u00b0C) induces a specific transcriptional response in C. elegans, with 604 genes significantly regulated. The response is temperature-dependent, requires the warming phase, and is distinct from heat shock response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 provide converging evidence from RNA-seq (C1, C5, C6), gene ontology analysis (C2), and QPCR validation (C5, C8, C9) demonstrating a specific CW-induced transcriptional program. The requirement for warming (C8) and lack of heat shock response (C9) establish specificity. Triplicate samples and multiple experimental approaches support robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C7",
+      "C10"
+    ],
+    "result": "asp-17, encoding an aspartyl-like protease, is a robust CW-inducible reporter gene with low baseline expression, high-fold induction by CW, transcriptional regulation, and predominant expression in intestinal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C7, and C10 provide direct experimental evidence from GFP reporters and smFISH demonstrating asp-17's suitability as a CW reporter. The characterization is well-supported by multiple imaging modalities and is consistent with the RNA-seq data (C1). Claim C4 provides established background knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Forward genetic screening identified isy-1 as a cell-autonomous negative regulator of asp-17. The dma50 mutation causes a conserved glutamate-to-lysine substitution in ISY-1, and isy-1 encodes an evolutionarily conserved RNA-binding protein with ubiquitous tissue distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C22 present a comprehensive genetic characterization including forward screening (C11-C13), molecular cloning (C14), sequence analysis (C15-C17), localization (C18), and rescue experiments (C19-C20). The convergence of RNAi phenocopying, rescue by wild-type transgenes, and tissue-specific rescue (C19-C20) strongly supports isy-1 as the causal gene. The conservation analysis (C15, C17) adds evolutionary context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "ISY-1 regulates asp-17 expression by controlling zip-10 mRNA levels. zip-10 encodes a bZIP transcription factor that is drastically up-regulated in isy-1 mutants and is genetically epistatic to isy-1 in asp-17 regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 establish a clear genetic pathway through RNA-seq identification (C27-C29), genetic epistasis (C30), and enhanced CW response in isy-1 mutants (C25). The specificity of zip-10 up-regulation (C28-C29) and complete epistasis (C30) provide strong evidence for the regulatory relationship. The inference in C31 is well-supported by the genetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "CW induces drastic up-regulation of ZIP-10 protein levels in a warming-dependent manner, and ZIP-10 is required for CW-induced asp-17 expression. ISY-1 levels are not regulated by CW.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C41 provide extensive western blot evidence demonstrating CW-induced ZIP-10 protein up-regulation (C34-C39) and its requirement for asp-17 induction (C41). The warming-phase requirement (C38) parallels asp-17 regulation. The lack of ISY-1 regulation by CW (C32-C33) supports ISY-1 as a constitutive gatekeeper. Multiple controls (C35) and time courses (C38-C39) strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "ZIP-10 is required for CW induction of a subset of CW-inducible genes including cpr-3 but not others like srr-6 and F53A9.1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 demonstrate specificity of ZIP-10 function through QPCR analysis of multiple CW-inducible genes. The differential requirement establishes that ZIP-10 controls a specific subset rather than all CW responses, supporting pathway specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "ISY-1 suppresses asp-17 by decreasing zip-10 levels, while CW up-regulates ZIP-10 protein abundance to promote asp-17 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 synthesize the genetic and expression data into a coherent model. The inferences are well-supported by the epistasis experiments (C30), expression analyses (C28, C34, C41), and rescue experiments (C19-C20). The model is consistent with all presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C54",
+      "C55"
+    ],
+    "result": "ISY-1 and CW regulate zip-10 primarily at the transcriptional level, not through splicing or post-transcriptional mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 and C54-C55 use multiple approaches (intronic GFP reporter, RNA-seq splice junction analysis, promoter reporter, RNAi against translation/stability factors) to rule out alternative mechanisms. The convergence of negative results for splicing and post-transcriptional regulation, combined with positive promoter reporter data (C49), supports transcriptional regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "CW specifically increases ZIP-10 abundance in both cytosol and nucleus without affecting housekeeping proteins, and this induction requires warming and is enhanced by prolonged cold shock. Non-thermal stresses do not induce ZIP-10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 provide detailed characterization of ZIP-10 regulation specificity through western blots of different stress conditions (C50), subcellular fractionation (C51), housekeeping protein controls (C52), and time course analysis (C53). The specificity for CW over other stresses strengthens the biological significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "ISY-1 regulates zip-10 expression via mir-60 microRNA. ISY-1 binds primary mir-60 transcripts, maintains mature mir-60 levels, and loss of mir-60 leads to up-regulation of zip-10 and its target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C65 establish the mir-60 mechanism through RIP-QPCR (C58-C61), mature miRNA quantification (C63), and genetic analysis (C64-C65). The connection to human ISY1 function (C56) and prior C. elegans data (C57) provide context. The specificity of mir-60 effects on ZIP-10-dependent genes (C64-C65) supports the pathway model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Increased mir-60 binding to ISY-1 after CW may represent a feedback mechanism to limit over-activation of zip-10-dependent genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C62 is explicitly speculative ('perhaps as a feedback mechanism'). While the increased binding is supported by data (C61), the functional interpretation as feedback lacks direct experimental validation. This hypothesis requires testing through perturbation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The 3'UTR of zip-10 is not regulated by CW or isy-1, but ISY-1 controls zip-10 expression via mir-60 through microRNA processing and likely regulation of upstream transcriptional activators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 provide experimental evidence ruling out 3'UTR regulation (C66) while demonstrating ISY-1's effects on ZIP-10 baseline and CW response (C67-C68). Claims C69-C70 synthesize the data into a mechanistic model. While C70 contains speculation about 'additional upstream transcriptional zip-10 regulators,' the core mir-60 mechanism is well-supported by C58-C65.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "ZIP-10 directly binds to and activates the asp-17 promoter. 246 genes are commonly regulated by CW and isy-1 mutations, and their promoters are enriched for AT-rich motifs, with asp-17 containing 16 such motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 integrate transcriptomics (C71-C72), bioinformatics (C73-C74), protein domain analysis (C75), and ChIP-QPCR (C76) to demonstrate direct ZIP-10 binding to asp-17 promoter. The significant correlation (R=0.54, p=0) between CW and isy-1 transcriptomes (C72), motif enrichment (C73-C74), and CW-specific ChIP signal (C76) provide strong convergent evidence for direct transcriptional activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Loss of zip-10 or asp-17 confers resistance to prolonged CW stress, while ectopic zip-10 overexpression promotes organismic death. The death-promoting effect requires ZIP-10's transactivation domain and is specific to zip-10 among bZIP family members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 demonstrate the paradoxical pro-death function of ZIP-10 through survival assays (C78), gain-of-function experiments (C79), specificity controls with other zip genes (C80), and domain mutant analysis (C81). The convergence of loss-of-function and gain-of-function phenotypes, along with domain-specific requirements, strongly supports ZIP-10's role in promoting organismic death.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "isy-1 mutants are resistant to prolonged cold stress despite zip-10 being epistatic to isy-1 for asp-17 regulation. This is explained by pleiotropic activation of stress-coping transcription factors (HIF-1, HSF-1, DAF-16) in isy-1 mutants through dysregulation of multiple microRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 resolve an apparent paradox through RNA-seq (C84), genetic suppression (C85), and small RNA-seq (C86). The demonstration that HIF-1/HSF-1/DAF-16 targets are up-regulated in isy-1 mutants (C84) but not by CW (C88), combined with partial suppression by daf-16 loss (C85), explains the cold tolerance phenotype. The small RNA-seq data (C86) provides a mechanistic basis for pleiotropy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "CW activates a ZIP-10-driven transcriptional program that promotes organismic death (phenoptosis) in a developmental stage-dependent manner, with stronger effects in adults than larvae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 demonstrate developmental specificity through western blots (C89) and stage-specific survival assays (C90). The synthesis in C91 is well-supported by the combined genetic, expression, and phenotypic data. The inference of 'phenoptosis' is justified by the pro-death function and stage-specificity, though the evolutionary interpretation requires additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "ZIP-10 transcriptional targets include cathepsin-type proteases CPR-3 and ASP-17. Ectopic expression of zip-10 promotes organismic death, and the pro-death role likely depends on duration and severity of cold exposure. Similar death-promoting effects have been described for mammalian bZIP transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 characterize ZIP-10 targets and contextualize findings. The identification of protease targets (C92) is supported by QPCR data (Figure 4E). The pro-death effects (C95) are demonstrated by survival assays. Claim C96 is a reasonable inference from the dose-response data. Claim C97 provides comparative context through citations, strengthening the biological plausibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "ISY-1 acts as a gatekeeper for ZIP-10-driven CW response by maintaining mir-60 levels and regulating zip-10 transcription. Additional cold-responding sensors upstream of ZIP-10 remain to be identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 synthesize the regulatory mechanism. The gatekeeper model (C101) is well-supported by constitutive ZIP-10 target expression in isy-1 mutants and lack of ISY-1 regulation by CW. The transcriptional regulation (C102) is supported by reporter and expression data. Claim C103 appropriately identifies a gap in understanding while providing reasonable speculation about unknown upstream regulators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The ZIP-10 pathway may have evolved to promote kin selection through programmed organismic death (phenoptosis) under resource-limiting and thermal stress conditions. Mathematical modeling and experimental data support this hypothesis, with stronger effects in older adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C113 present an evolutionary hypothesis. While the experimental data (C109) and mathematical modeling (C108) are supported, the evolutionary interpretation is largely speculative (C104, C110-C111, C113). The kin selection theory (C105) and examples of phenoptosis (C106) are established concepts, but direct evidence that the ZIP-10 pathway evolved for kin selection is lacking. The hypothesis is plausible and testable but requires validation in ecologically relevant contexts. Claim C107 about laboratory conditions is reasonable inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Background context: Heat shock responses are well-characterized through HSF, but cold shock response mechanisms in multicellular organisms remain poorly understood. C. elegans responds differently to moderate (10-15\u00b0C) versus severe (0-4\u00b0C) hypothermia, with transcriptional responses to severe cold likely manifesting during warming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C127 provide established background knowledge supported by appropriate citations. These claims contextualize the study's significance by highlighting the gap in understanding cold shock responses (C117-C119) and the distinction between moderate and severe hypothermia responses in C. elegans (C124-C127). The inference in C127 provides rationale for the experimental design.",
+    "result_type": "MINOR"
+  }
+]

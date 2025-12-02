@@ -1,0 +1,2150 @@
+{
+  "submission": {
+    "id": "3e89c913-b1c5-412f-9475-e10944226d03",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:01:56.722243Z",
+    "updated_at": "2025-12-01T23:01:56.722243Z"
+  },
+  "content": [
+    {
+      "id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "submission_id": "3e89c913-b1c5-412f-9475-e10944226d03",
+      "content_type": "manuscript",
+      "content_text": "# Dynamic clustering of dynamin-amphiphysin helices regulates membrane constriction and fission coupled with GTP hydrolysis\n\n## Authors\n\n- Tetsuya Takeda<sup>1</sup> ([ORCID: 0000-0002-3183-6551](https://orcid.org/0000-0002-3183-6551)) \u2020\n- Toshiya Kozai<sup>2</sup>\n- Huiran Yang<sup>1</sup>\n- Daiki Ishikuro<sup>2</sup>\n- Kaho Seyama<sup>1</sup>\n- Yusuke Kumagai<sup>2</sup>\n- Tadashi Abe<sup>1</sup>\n- Hiroshi Yamada<sup>1</sup>\n- Takayuki Uchihashi<sup>3</sup>\n- Toshio Ando<sup>3</sup> \u2020\n- Kohji Takei<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Graduate School of Medicine Dentistry and Pharmaceutical Sciences, Okayama University Okayama Japan\n2. Department of Physics, College of Science and Engineering Kanazawa University Kanazawa Japan\n3. CREST JST Saitama Japan\n4. Department of Physics, School of Science Nagoya University Nagoya Japan\n5. Bio-AFM Frontier Research Center, College of Science and Engineering Kanazawa University Kanazawa Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nDynamin is a mechanochemical GTPase essential for membrane fission during clathrin-mediated endocytosis. Dynamin forms helical complexes at the neck of clathrin-coated pits and their structural changes coupled with GTP hydrolysis drive membrane fission. Dynamin and its binding protein amphiphysin cooperatively regulate membrane remodeling during the fission, but its precise mechanism remains elusive. In this study, we analyzed structural changes of dynamin-amphiphysin complexes during the membrane fission using electron microscopy (EM) and high-speed atomic force microscopy (HS-AFM). Interestingly, HS-AFM analyses show that the dynamin-amphiphysin helices are rearranged to form clusters upon GTP hydrolysis and membrane constriction occurs at protein-uncoated regions flanking the clusters. We also show a novel function of amphiphysin in size control of the clusters to enhance biogenesis of endocytic vesicles. Our approaches using combination of EM and HS-AFM clearly demonstrate new mechanistic insights into the dynamics of dynamin-amphiphysin complexes during membrane fission.\n\n## Introduction\n\nClathrin-mediated endocytosis (CME) is the best characterized endocytic pathway by which cells incorporate extracellular molecules into cells as cargoes of clathrin-coated vesicles (Kirchhausen et al., 2014; McMahon and Boucrot, 2011). CME is required for various essential processes including neuronal transmission, signal transduction and other cell membrane activities such as cell adhesion and migration. For precise progression of membrane invagination and fission during CME, various proteins need to be assembled in a temporally and spatially coordinated manner at the site of endocytosis.\n\nOne of those endocytic proteins, dynamin, is a GTPase essential for membrane fission in CME (Antonny et al., 2016; Ferguson and De Camilli, 2012; Schmid and Frolov, 2011). There are three dynamin isoforms in mammals: dynamin 1 and dynamin 3, two tissue-specific isoforms which are highly expressed in neurons, and dynamin 2, an ubiquitously expressed isoform (Cao et al., 1998; Cook et al., 1996, 1994). Structural studies from several groups demonstrated that dynamin consists of five structurally distinct domains: a GTPase domain, a bundle signaling element (BSE), a stalk, a pleckstrin homology (PH) domain and a proline-rich domain (PRD) from N-terminus to C-terminus (Faelber et al., 2011; Ford et al., 2011; Reubold et al., 2015). The GTPase domain is responsible for hydrolysis of GTP (guanosine triphosphate) and the PH domain is required for membrane association by binding to negatively charged phospholipids such as PI (4,5) P2 (phosphatidylinositol 4,5-bisphosphate). The stalk structure serves as a binding interface for dimerization and oligomerization of dynamin. The BSE, which is located between the stalk and GTPase domain, functions as a flexible hinge required for structural changes of dynamin upon GTP hydrolysis. Dynamin forms helical oligomers which was first observed in presynaptic terminals of shibire mutant flies at restrictive temperature (Koenig and Ikeda, 1989). Dynamin also assembles into helices at the neck of endocytic pits in the isolated presynaptic nerve terminals treated with slowly\u00a0hydrolyzable GTP analogue GTP\u03b3S (guanosine 5'-O-[gamma-thio]triphosphate) (Takei et al., 1995). Similar dynamin helices were reconstituted in vitro either with liposomes (Sweitzer and Hinshaw, 1998; Takei et al., 1998) or without liposomes in a low-salt condition (Hinshaw and Schmid, 1995).\n\nThere is a consensus view about the dynamin-mediated membrane constriction and fission which is well supported by previous studies from different groups: membrane constriction is required, but not sufficient, for fission (Antonny et al., 2016; Faelber et al., 2012; Schmid and Frolov, 2011). However, it is still controversial how constriction is achieved, and what GTP energy is used for. For example, membrane constriction could be achieved by assembly into the highly\u00a0constricted state when dynamin is bound to GTP (Chen et al., 2004; Mattila et al., 2015; Mears et al., 2007; Zhang and Hinshaw, 2001). Alternatively, membrane constriction could be achieved by hydrolysis of GTP that induces a conformational change leading to constriction (Cocucci et al., 2014; Marks et al., 2001; Roux et al., 2006). However, precise mechanisms involved in dynamin-mediated membrane constriction and fission remain unclear.\n\nAmphiphysin is a BAR domain protein required for membrane invagination in CME (Wigge et al., 1997). Amphiphysin has a lipid interacting BAR (Bin\u2013Amphiphysin\u2013Rvs) domain in its N-terminal, a medial clathrin/AP-2 binding (CLAP) domain and C-terminal Src homology 3 (SH3) domain. The BAR domain of amphiphysin forms crescent-shaped dimer and its concave surface serves as a platform for bending membrane or sensing membrane curvature (Peter et al., 2004). The CLAP domain binds to clathrin and AP-2, major components of clathrin-coated pits, and helps to recruit amphiphysin to the sites of CME. In addition, the C-terminal SH3 domain of amphiphysin binds directly to the PRD of dynamin 1 (David et al., 1996; Takei et al., 1999) and enhances dynamin\u2019s GTPase activity in the presence of liposomes (Takei et al., 1999; Yoshida et al., 2004). Amphiphysin copolymerizes with dynamin 1 into helical complexes, which form membrane tubules in vitro (Takei et al., 1999; Yoshida et al., 2004) similar to those formed from synaptic plasma membranes (Takei et al., 1995). Furthermore, injection of specific antibodies against amphiphysin into the giant synapse in lampreys (Evergren et al., 2004) or amphiphysin KO in mice (Di Paolo et al., 2002) causes suppressed endocytosis in synaptic vesicle recycling. These results suggest that dynamin mediates membrane fission in CME in collaboration with amphiphysin in vivo. However, the precise contribution of amphiphysin in the dynamin-mediated membrane fission remains elusive.\n\nIn this study, we analyzed dynamics of dynamin-amphiphysin helical complexes using an approach combining electron microscopy (EM) and high-speed atomic force microscopy (HS-AFM). Firstly, we show that the dynamin-amphiphysin helices are rearranged to form clusters upon GTP hydrolysis, and membrane constriction occurs at protein-uncoated regions between the clusters. Secondly, we reveal that GTP hydrolysis is required and sufficient for the cluster formation by dynamin-amphiphysin complexes by EM analyses. Finally, we show a novel function of amphiphysin in controlling cluster size, which in turn regulates biogenesis of endocytic vesicles. These findings provide new insights into the mechanism of membrane constriction and fission by dynamin-amphiphysin complexes.\n\n## Results\n\n### GTP hydrolysis is required and sufficient for membrane constriction by dynamin-amphiphysin complexes\n\nTo elucidate the mechanisms of dynamin-mediated membrane fission, we reconstituted the minimum system in vitro and analyzed the time course of its structural changes using EM. Human dynamin 1 and amphiphysin were purified (Figure 1\u2014figure supplement 1A) and their activity to form ring-shaped complexes in a buffer of physiological ionic strength and pH condition (Figure 1\u2014figure supplement 1B) at different stoichiometry of dynamin and amphiphysin (Figure 1\u2014figure supplement 2A) were confirmed. As previously described (Sweitzer and Hinshaw, 1998; Takei et al., 1999), the dynamin-amphiphysin complexes induced tubulation of large unilamellar vesicles (LUVs) in the absence of GTP (Figure 1A, No GTP) and it is not stoichiometry dependent (Figure 1\u2014figure supplement 2B). Immediately after the addition of 1 mM GTP, the appearance of lipid tubules was not affected (Figure 1A, GTP 1 s), but they started to form multiple constriction sites over time (Figure 1A, GTP 5 s, 10 s and 30 s) and membrane fission occurred finally and numerous vesicles were generated within 1 min (Figure 1A, GTP 1 min). The membrane fission activity by dynamin-amphiphysin complexes was stoichiometry sensitive: the membrane fission occurred efficiently at 1:0.5 or 1:1 molar ratio of dynamin and amphiphysin (Figure 1-figure supplement 2C, 1:0.5 and 1:1), while the fission activity was less efficient when dynamin and amphiphysin were mixed at 1:2 ratio (Figure 1-figure supplement 2C, 1:2), probably due to lower stimulatory effect of amphiphysin on dynamin GTPase activity at the higher molecular ratio (Yoshida et al., 2004).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/30246/elife-30246-fig1-v2.jpg)\n\n**Figure 1.:** (A) Electron micrographs of lipid tubules induced by dynamin-amphiphysin helical complex before GTP addition (No GTP) and at different time points after addition of 1 mM GTP (GTP 1 s, GTP 5 s, GTP 10 s, GTP 30 s and GTP 1 min). More than thirty samples from three individual experiments were examined and representative images are shown. Scale bar is 200 nm. (B) Electron micrographs of lipid tubules induced by dynamin-amphiphysin helical complex without guanine nucleotide (No GTP) or with a transition states analogue of GTPase reaction, by adding 1 mM each of slowly hydrolyzable GTP analogue (GTP\u03b3S), nonhydrolyzable GTP analogue (GMP-PNP), GDP combined with vanadate (GDP\u00a0+\u00a0vanadate), GDP (GDP), or GTP (GTP) for 10 min. More than thirty samples from three individual experiments were examined and representative images are shown. Scale bar is 200 nm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30246/elife-30246-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) SDS-PAGE of purified dynamin (Dynamin) and amphiphysin (Amphiphysin). (B) Negative staining electron micrographs of dynamin alone (Dynamin), dynamin and amphiphysin (Dynamin\u00a0+\u00a0Amphiphysin) and amphiphysin alone (Amphiphysin) incubated in cytosolic buffer with physiological salt concentration and PH (see Materials and methods). Scale bar is 100 nm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30246/elife-30246-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Dynamin (2.3 \u03bcM) were mixed with 1.15 \u03bcM, 2.3 \u03bcM and 4.6 \u03bcM of amphiphsyin (1:0.5, 1:1 and 1:2 in molar ratio) and formation of the ring-shaped complexes (A), tubulation of liposomes (B) and membrane fission (C) were analyzed by EM. Scale bars are 100 nm and 500 nm for (A) and (B), (C), respectively.\n\nNext, we tried to clarify how the membrane constriction and fission by dynamin-amphiphysin helices are correlated with guanine nucleotide conditions during GTP hydrolysis. The appearance of lipid tubules (Figure 1B, No GTP) was not affected in the presence of either slowly\u00a0hydrolyzable GTP analogue GTP\u03b3S (Figure 1B, GTP\u03b3S) or non-hydrolyzable GTP analogue GMP-PNP (guanosine 5\u2032-[\u03b2,\u03b3-imido]triphosphate) (Figure 1B, GMP-PNP). In contrast, in the presence of GDP (guanosine diphosphate) and vanadate, the complex which mimics the GDP\u22c5Pi transition state, lipid tubules were constricted at multiple sites (Figure 1B, GDP\u00a0+\u00a0vanadate). Addition of only GDP did not cause membrane constriction or fission, but membrane tubules were deformed (Figure 1B, GDP). Finally, numerous vesicles were generated 10 min after the addition of 1 mM GTP, in which multiple rounds of GTP hydrolysis were likely to have taken place (Figure 1B, GTP). Taken these results together, GTP hydrolysis is essential for both membrane constriction and fission by the dynamin-amphiphysin complexes, but subsequent dissociation of GTP hydrolytic products (GDP and/or phosphate) is required for completing membrane fission.\n\n### GTP hydrolysis induces clustering of dynamin-amphiphysin helices\n\nAlthough we determined the requirement of GTP hydrolysis in membrane constriction and fission by the dynamin-amphiphysin complexes, structural changes of the complexes were not clearly resolved in the in vitro assay system using LUVs. To improve the resolution, we used rigid lipid nanotubes containing glycolipid galactosylceramide (GalCer) (Wilson-Kubalek et al., 1998), instead of using LUVs in the in vitro assay system. Lipid nanotubes are rod-shaped liposomes and similar in size to the unconstricted necks of clathrin-coated pits observed in vivo (Figure 2A, Nanotube). Dynamin-amphiphysin complexes assembled into helices on the lipid nanotubes (Figure 2A, No GTP), which is similar to those formed by dynamin alone (Stowell et al., 1999). Interestingly, the dynamin-amphiphysin helices transiently formed clusters after the addition of GTP (Figure 2A, GTP 1 s and 20 s, brackets). The dynamin-amphiphysin clusters were disorganized over time and partially dissociated from the nanotubes (Figure 2A, GTP 30 s and 1 min).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/30246/elife-30246-fig2-v2.jpg)\n\n**Figure 2.:** (A) Electron micrographs of a lipid nanotube (Nanotube) and those with dynamin-amphiphysin complexes before GTP addition (No GTP) and at different time points after GTP addition (GTP 1 s, GTP 20 s, GTP 30 s, and GTP 1 min). Clusters of dynamin-amphiphysin helical complexes are indicated (white brackets). More than thirty samples from three individual experiments were examined and representative images are shown. Scale bar is 100 nm. (B) Electron micrographs of lipid nanotubes after addition of dynamin-amphiphysin complexes without guanine nucleotide (No GTP) or with a transition states analogue of GTPase reaction, by adding 1 mM each of slowly hydrolysable GTP analogue (GTP\u03b3S), nonhydrolyzable GTP analogue (GMP-PNP), GDP combined with vanadate (GDP\u00a0+\u00a0vanadate), GDP (GDP) and GTP (GTP) for 10 min. More than 30 samples from three individual experiments were examined and representative images are shown. Clusters of dynamin-amphiphysin helical complexes are indicated (white brackets). The average pitch of helices in the clusters is 15.00\u00a0\u00b1\u00a02.2 nm (mean pitch\u00a0\u00b1\u00a0s.e.m., n\u00a0=\u00a063 from 7 nanotubes) in GDP\u00a0+\u00a0vanadate, while the average pitch of the helical complexes is 20.0\u00a0\u00b1\u00a00.5 nm (mean pitch\u00a0\u00b1\u00a0s.e.m., n=81 from 9 nanotubes) in No GTP control. Scale bar is 100 nm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30246/elife-30246-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Dynamin (2.3 \u03bcM) were mixed with 1.15 \u03bcM, 2.3 \u03bcM and 4.6 \u03bcM of amphiphsyin (1:0.5, 1:1 and 1:2 in molar ratio) and their structure on lipid nanotubes in the absence of nucleotides (no nucleotides) and in the presence of 1 mM GDP and vanadate (GDP-vanadate) were analyzed by EM. Clusters formed by a few helical turns of dynamin-amphiphysin complexes are indicated (white brackets). Scale bar is 100 nm.\n\nTo correlate the dynamics of dynamin-amphiphysin complexes with GTP hydrolysis, we examined structural changes of the complexes on lipid nanotubes at different transition states of GTP hydrolysis. The appearance of dynamin-amphiphysin helices was unchanged even in the presence of GTP\u03b3S or GMP-PNP (Figure 2B, No GTP, GTP\u03b3S and GMP-PNP). Interestingly, addition of GDP and vanadate induced rearrangement of the dynamin-amphiphysin helical complexes to form clusters similar to those observed after the addition of GTP (Figure 2B, GDP\u00a0+\u00a0vanadate). The average pitch of helices in the clusters were shorter (15.0\u00a0\u00b1\u00a00.3 nm, mean pitch\u00a0\u00b1\u00a0s.e.m.) compared to the average pitch of the helical complexes in No GTP control (20.0\u00a0\u00b1\u00a00.5 nm, mean pitch\u00a0\u00b1\u00a0s.e.m.) (Figure 2\u2014source data 1). Furthermore, unlike membrane fission activity (Figure 1\u2014figure supplement 2C), clustering behavior of the dynamin-amphiphysin complexes on the lipid nanotubes were not stoichiometry dependent (Figure 2\u2014figure supplement 1,\u00a01:0.5, 1:1 and 1:2, white brackets). In contrast, GDP alone did not affect the distribution of dynamin-amphiphysin helices (Figure 2B, GDP). Finally, the dynamin-amphiphysin helical complexes were disorganized and eventually dissociated from the lipid nanotubes 10 min after the addition of 1 mM GTP (Figure 2B, GTP). Taken these results together, the dynamin-amphiphysin helical complexes transiently form clusters in the GTP hydrolysis transition state of GDP\u22c5Pi during which membrane tubules are constricted.\n\n### Dynamic clustering of dynamin-amphiphysin helical complexes upon GTP hydrolysis is\u00a0revealed by\u00a0HS-AFM\n\nTo elucidate the dynamics of dynamin-amphiphysin helical complexes during the membrane constriction and fission, we analyzed the clustering process of the complexes using HS-AFM (Ando et al., 2013). LUVs were stably immobilized on the carbon-coated and glow-discharged mica substrate (Figure 3\u2014figure supplement 1A; Video 1), and they were successfully tubulated in the presence of dynamin and amphiphysin (Figure 3\u2014figure supplement 1B; Video 2). The dynamin-amphiphysin helices on the lipid tubules were aligned with an almost regular pitch (22.0\u00a0\u00b1\u00a00.7 nm, mean pitch\u00a0\u00b1\u00a0s.e.m.) and they were immobile before GTP addition (Figure 3A, 0 s and 21 s; Video 3; Figure 3\u2014source data 1). Interestingly, the dynamin-amphiphysin helices became mobile after GTP addition and eventually formed clusters consisting of a few helices with shorter pitch (15.7\u00a0\u00b1\u00a00.3 nm, mean pitch\u00a0\u00b1\u00a0s.e.m.) (Figure 3A, from 42 s to 131 s; Video 3; Figure 3\u2014source data 1). Particle tracking analyses of the individual dynamin-amphiphysin helices showed that the dynamin-amphiphysin complexes were static before GTP addition (Figure 3B, 5-21 s; Video 4), but addition of 1 mM GTP stimulated longitudinal movement of the helical complexes, leading to the cluster formation (Figure 3B, 38-54 s, 38\u201386 s and 38\u2013118 s; Video 5). Although membrane fission was not observed in this sample probably due to a strong attachment of the lipid tubule to the substrate, the helices had a tendency to constrict during the cluster formation (Figure 3C; Figure 3\u2014figure supplement 2; Figure 3\u2014source data 2; Figure 3\u2014figure supplement 2\u2014source data 1). These results suggest that dynamin-amphiphysin helical complexes undergo two modes of structural changes, longitudinal clustering and radial constriction, during GTP hydrolysis.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/30246/elife-30246-fig3-v2.jpg)\n\n**Figure 3.:** (A) HS-AFM images captured at 1 frame/s of dynamin-amphiphysin helical complexes on membrane tubules before (0 s and 21 s) and after GTP addition at different time points (42 s, 63 s, 84 s, 100 s, 115 s and 131 s). Dynamin-amphiphysin helices (arrowheads) are assembled into three distinct clusters (1, 2 and 3 at 131 s). The pitch of dynamin-amphiphysin helices on the lipid tubule was 22.0\u00a0\u00b1\u00a00.7 nm (mean pitch\u00a0\u00b1\u00a0s.e.m., n\u00a0=\u00a036 from 3 time points) before GTP addition and 15.7\u00a0\u00b1\u00a00.3 nm (mean pitch\u00a0\u00b1\u00a0s.e.m., n\u00a0=\u00a036 from 9 time points) after GTP addition. (B) Particle tracking of dynamin-amphiphysin helices before (5\u201321 s) and after addition of 1 mM GTP (38\u201354 s, 38\u201386 s and 38\u2013118 s) from Videos 4 and 5, respectively. Particle tracking of the complexes in the cluster 2 (light blue, dark blue and magenta) and cluster 3 (red, yellow and green) are shown. (C) Dynamin-amphiphysin helices tend to constrict during clustering. Average heights before (0\u00a0\u2264\u00a0t\u00a0\u2264\u00a0100 s) and after clustering (101 s\u00a0\u2264\u00a0t) are 38.4\u00a0\u00b1\u00a00.2 nm and 36.5\u00a0\u00b1\u00a00.2 nm for cluster 1, 32.6\u00a0\u00b1\u00a00.2 nm and 32.6\u00a0\u00b1\u00a00.2 nm for cluster 2, 27.9\u00a0\u00b1\u00a00.1 nm and 26.8\u00a0\u00b1\u00a00.2 nm for cluster 3, respectively. The heights were measured from the substrate surface. The marks *** indicate p<0.001 and n.s. is not significant, respectively.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30246/elife-30246-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) HS-AFM images of a LUV. Scale bar is 50 nm. (B) Lipid tubules induced from LUVs in the presence of dynamin-amphiphysin complexes. Scale bar is 200 nm.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30246/elife-30246-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Maximum heights of each helices plotted as a function of time (left panels) and their average helix heights before (0\u2013100 s) and after clustering (101sec-) are shown for clusters\u00a01, 2 and 3 (A, B and C, respectively). ***: p<0.001, **: p<0.01, *: p<0.1, n.s.: not significant.\n\n![Video 1.](https://cdn.elifesciences.org/articles/30246/elife-30246-video1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/30246/elife-30246-video2.mp4.jpg)\n\n![Video 3.](https://cdn.elifesciences.org/articles/30246/elife-30246-video3.mp4.jpg)\n\n![Video 4.](https://cdn.elifesciences.org/articles/30246/elife-30246-video4.mp4.jpg)\n\n![Video 5.](https://cdn.elifesciences.org/articles/30246/elife-30246-video5.mp4.jpg)\n\n### Membrane fission occurs at protein-uncoated regions flanking dynamin-amphiphysin clusters\n\nWe next tried to correlate the cluster formation of dynamin-amphiphysin helical complexes with membrane constriction and fission. In the representative sample in which membrane constriction and fission occurred, a few dynamin-amphiphysin helices merged to form a cluster over time after GTP addition (Figure 4A, 0 s, 125.3 s, 185.5 s and 227.5 s; Video 6; Figure 4\u2014source data 1). Interestingly, membrane constriction occurred at flanking regions of the cluster where membrane was bare of dynamin-amphiphysin complexes (Figure 4A, fission point (FP).1 and FP.2). The heights at sites marked with FP.1 and FP.2 were not changed before constriction (Figure 4B, before constriction; Figure 4\u2014source data 2), but they became lower in a stepwise manner from a pre-constriction height of around 30 nm down to 20\u201325 nm or below (Figure 4B, after constriction; Figure 4\u2014source data 2). Similar longitudinal redistribution of the dynamin-amphiphysin helices before membrane constriction was also observed in another sample, in which constriction occurred at one end of clustered dynamin-amphiphysin complexes (Figure 4c, arrow; Video 8). These results strongly suggest that membrane constriction and fission occur at the protein-uncoated regions created as a result of the clustering of dynamin-amphiphysin helical complexes.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/30246/elife-30246-fig4-v2.jpg)\n\n**Figure 4.:** (A) Clips of HS-AFM images captured at 0.42 frames/s showing membrane fission by dynamin-amphiphysin complexes (0 s, 125.3 s, 185.5 s and 227.5 s) in Video 6. Membrane fission occurred at flanking regions of a dynamin-amphiphysin cluster. Corresponding height profiles along the red line (shown in the 0 s image) passing through the two fission points (arrows marked with FP.1 and FP.2) are shown below, together with clustered dynamin-amphiphysin helical complexes (red arrowheads). (B) Height profiles at fission points (FP.1 and FP.2) over time before (Video 7) and after constriction (Video 6). The heights of the lipid tubules from the substrate surface were measured at the fission points. (C) Clips of HS-AFM images showing clustering dynamin-amphiphysin complexes and membrane constriction at flanking regions of the cluster (arrow). HS-AFM images are shown in pseudo color. Scale bar is 40 nm.\n\n![Video 6.](https://cdn.elifesciences.org/articles/30246/elife-30246-video6.mp4.jpg)\n\n![Video 7.](https://cdn.elifesciences.org/articles/30246/elife-30246-video7.mp4.jpg)\n\n![Video 8.](https://cdn.elifesciences.org/articles/30246/elife-30246-video8.mp4.jpg)\n\n### Amphiphysin contributes to efficient vesicle formation by controlling cluster formation\n\nWe previously demonstrated that amphiphysin stimulates the GTPase activity of dynamin and thus enhances vesicle biogenesis (Yoshida et al., 2004). In this study, we also noticed that the average size of vesicles formed by dynamin-amphiphysin complexes (70.0\u00a0\u00b1\u00a02.9 nm, mean diameter\u00a0\u00b1\u00a0s.e.m.) was significantly smaller compared to those formed by dynamin alone (204.6\u00a0\u00b1\u00a012.3 nm, mean diameter\u00a0\u00b1\u00a0s.e.m.) after GTP addition (Figure 5A; Figure 5\u2014source data 1). Consistently, dynamin-amphiphysin complex formed constriction sites with shorter intervals (150.3\u00a0\u00b1\u00a09.8 nm, mean intervals\u00a0\u00b1\u00a0s.e.m.) compared to those formed by dynamin alone (193.5\u00a0\u00b1\u00a015.8 nm, mean intervals\u00a0\u00b1\u00a0s.e.m.) in the presence of GDP and vanadate (Figure 5B; Figure 5\u2014source data 2). To further elucidate roles of amphiphysin in the membrane constriction and fission, the cluster formation by dynamin alone was compared to that by dynamin-amphiphysin complexes, using lipid nanotubes. As already described, dynamin-amphiphysin complexes formed clusters with a few helices in the presence of GDP and vanadate (34.2\u00a0\u00b1\u00a01.7 nm, mean cluster size\u00a0\u00b1\u00a0s.e.m.) (Figure 5C, Dynamin\u00a0+\u00a0Amphiphysin; Figure 5\u2014source data 3). In contrast, dynamin alone formed larger-sized clusters consist of more helical complexes (59.3\u00a0\u00b1\u00a04.7 nm, mean cluster size\u00a0\u00b1\u00a0s.e.m.) (Figure 5C, Dynamin; Figure 5\u2014source data 3). These results suggest that amphiphysin contributes to the effective generation of properly sized vesicles by controlling the cluster formation of dynamin-amphiphysin helical complexes.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/30246/elife-30246-fig5-v2.jpg)\n\n**Figure 5.:** (A) Representative EM images of membrane vesicles generated by dynamin-amphiphysin complexes (Dynamin\u00a0+\u00a0Amphiphysin) or dynamin alone (Dynamin) after addition of GTP. Size distribution of generated vesicles are shown in the right panel. The average sizes of vesicles were 70.0\u00a0\u00b1\u00a00.6 nm (mean diameter\u00a0\u00b1\u00a0s.e.m., n\u00a0>\u00a030, N\u00a0=\u00a03) for dynamin-amphiphysin complexes and 204.6\u00a0\u00b1\u00a01.1 nm (mean diameter\u00a0\u00b1\u00a0s.e.m., n\u00a0>\u00a045, N\u00a0=\u00a03) for dynamin alone. Scale bar is 200 nm. (B) Representative EM images of membrane constriction induced by dynamin-amphiphysin complexes (Dynamin\u00a0+\u00a0Amphiphysin) and dynamin alone (Dynamin) in the presence of GDP and vanadate. Distribution of intervals between constriction sites (arrows) are quantified in the right panel. The average intervals of constriction sites induced are 150.3\u00a0\u00b1\u00a09.8 nm (mean intervals\u00a0\u00b1\u00a0s.e.m., n\u00a0=\u00a025 from 7 tubes) by dynamin-amphiphysin complexes and 193.5\u00a0\u00b1\u00a015.8 nm (mean intervals\u00a0\u00b1\u00a0s.e.m., n\u00a0=\u00a046 from 15 tubes) by dynamin alone. Scale bar is 200 nm. (C) Clustering of dynamin-amphiphysin complexes (Dynamin\u00a0+\u00a0Amphiphysin) and dynamin alone (Dynamin) on lipid nanotubes in the presence of GDP and vanadate. Clusters of dynamin-amphiphysin helices are indicated (white brackets). Distribution of cluster size were shown as scattered plot in the right panel. Average size of the clusters formed by dynamin-amphiphysin complexes and dynamin alone are 34.2\u00a0\u00b1\u00a01.7 nm (mean cluster size\u00a0\u00b1\u00a0s.e.m., n\u00a0=\u00a036 from 7 tubes) and 59.3\u00a0\u00b1\u00a04.7 nm (mean cluster size\u00a0\u00b1\u00a0s.e.m., n\u00a0=\u00a030 from 5 tubes) respectively. Scale bar is 100 nm.\n\n## Discussion\n\nIn this study, we analyzed dynamics of dynamin-amphiphysin helical complexes during membrane constriction and fission using EM and HS-AFM. EM analyses showed that GTP hydrolysis is required for both membrane constriction and fission, but dissociation of hydrolytic products (GDP and/or phosphate) seems necessary for the completion of membrane fission (Figure 1). In the presence of GTP or GDP and vanadate, dynamin-amphiphysin helical complexes are reorganized, resulting in the formation of clusters consisting of a few dynamin-amphiphysin helices (Figure 2). HS-AFM analyses directly demonstrated that GTP hydrolysis induces dynamic longitudinal movement of the dynamin-amphiphysin helices as well as constriction during the cluster formation (Figure 3). Interestingly, HS-AFM analyses also demonstrated that membrane constriction and fission occur at the \u2018protein-uncoated\u2019 regions created as a result of cluster formation of dynamin-amphiphysin complexes (Figure 4). Finally, we found that amphiphysin contributes to effective biogenesis of endocytic vesicles by regulating size of the clusters formed by dynamin-amphiphysin helical complexes (Figure 5).\n\nThere is a consensus view about the requirement of GTP hydrolysis in membrane fission, but the requirement of GTP hydrolysis in membrane constriction is still controversial (Antonny et al., 2016). Membrane tubules are constricted in the presence of non-hydrolyzable GTP analogue (Chen et al., 2004; Mears et al., 2007; Zhang and Hinshaw, 2001) and more constricted with a GTP-loaded GTPase defective K44A mutant (Sundborger et al., 2014). In both cases, membrane tubules are evenly constricted and periodical membrane constriction sites which lead to membrane fission is not created. In the present study, we showed that membrane constriction sites are created in the presence of GDP and vanadate, which mimicked a transition state of GTP hydrolysis (GDP\u22c5Pi), suggesting that complete hydrolysis of GTP is required for the formation of constriction sites leading to membrane fission (Figure 1B). Membrane fission has never been observed in the presence of GDP and vanadate, suggesting that release of GTP hydrolytic products (GDP and/or phosphate) is a prerequisite for membrane fission. Further analyses will more precisely reveal which intermediate state in the GTPase reaction is responsible for the membrane fission or how many GTPase cycles are required for it.\n\nIn this study, we revealed that dynamin-amphiphysin helical complexes are rearranged to form their clusters upon GTP hydrolysis (Figure 2 and Figure 3) and membrane fission occurs at the flanking \u2018protein-uncoated\u2019 membrane regions (Figure 4). In the \u2018constrictase\u2019 model, dynamin constricts membrane until the membrane neck reaches to the hemi-fission state, which leads to spontaneous membrane fission (Chen et al., 2004; Hinshaw and Schmid, 1995; Mears et al., 2007). However, several lines of evidences are apparently inconsistent with this simple model. For instance, the super-constricted state of dynamin does not constrict the membrane sufficiently enough to reach the hemi-fission state (Sundborger et al., 2014) and membrane tension and/or torsion is required to overcome the energy barrier to fission (Bashkirov et al., 2008; Morlot et al., 2012; Roux et al., 2006). In this study, we showed that GTP hydrolysis induces constriction of the dynamin-amphiphysin helices as well as clustering (Figure 3). These radial and longitudinal remodeling of the dynamin-amphiphysin helices may give local tension and/or torsion to the membrane tube at the edge of the clusters to drive membrane fission. Alternatively, the dynamin-amphiphysin clusters may serve as a lipid diffusion barrier that causes friction leading to membrane scission (Simunovic et al., 2017). Longitudinal rearrangement upon GTP hydrolysis similar to the cluster formation by the dynamin-amphiphysin complexes was also observed in an EM study on the dynamics of dynamin with lipid nanotubes (Stowell et al., 1999) and more recently by HS-AFM analyses on dynamics of \u0394PRD dynamin (Colom et al., 2017), suggesting that the longitudinal rearrangement is an intrinsic property of dynamin during membrane fission.\n\nIn our previous studies, we showed that amphiphysin enhances dynamin\u2019s GTPase activity in the presence of liposomes (Takei et al., 1999; Yoshida et al., 2004). In this study, we revealed that amphiphysin may also contributes to effective vesicle biogenesis by controlling the number of constriction sites via cluster formation of dynamin-amphiphysin helices in a long membrane tubule formed in vitro (Figure 5). Although precise mechanisms of the cluster size control by amphiphysin remains unclear, amphiphysin could have roles either in determining the number of dynamin-amphiphysin helices comprising the clusters, or in positioning of breakage points in dynamin-amphiphysin helices to induce clustering. Tubular structures have long been known to be present in various synapses, and they are described as \u2018membrane tubules\u2019 (Heuser and Miledi, 1971), \u2018cisternae\u2019 (Heuser and Reese, 1973), \u2018synaptic tubules\u2019 (Samorajski et al., 1966) or \u2018anastomosing tubules\u2019 (Ekstr\u00f6m von Lubitz, 1981). The tubules are enriched in endocytic proteins including dynamin, synaptojanin, amphiphysin, and endophilin (Fuchs et al., 2014; Takei et al., 1998), and the presence of the tubules becomes more prominent when synapses are stimulated (Fuchs et al., 2014; Takei et al., 1998), or when membrane fission is blocked in dynamin 1 K.O. mice (Ferguson et al., 2007). These findings strongly suggest that the tubular structures represent endocytic intermediate at which dynamin-amphiphysin-dependent synergic vesicle formation takes place in the synapse. Besides amphiphysin, other BAR domain proteins, endophilin and syndapin, are also implicated in synaptic vesicle recycling (Dittman and Ryan, 2009; Koch et al., 2011; Milosevic et al., 2011). Interestingly, recent study showed that endophilin potently inhibits the dynamin-mediated membrane fission by intercalating dynamin rungs and preventing their trans-interactions required for membrane fission (Hohendahl et al., 2017). Although the dynamin-mediated membrane fission is also inhibited when an excess of amphiphysin co-assembles with dynamin (Figure 1\u2014figure supplement 2C), it is rather stimulatory when the molar ratio of dynamin to amphiphsyin is around 1:1 (Yoshida et al., 2004). One of the important future goals of dynamin study would be to clarify regulatory mechanisms by which dynamin alters its interactions with various BAR domain proteins in physiological contexts such as synaptic vesicle recycling.\n\nIn conclusion, live imaging analyses using HS-AFM in this study and a study from another group (Colom et al., 2017) gave new mechanistic insights into the dynamin-mediated membrane fission. Combinatory approaches using high temporal resolution imaging with HS-AFM and high spatial resolution structural analyses with X-ray crystallography or Cryo-EM will be the most powerful approach in resolving various dynamic membrane remodeling processes in the future.\n\n## Materials and methods\n\n### Purification of dynamin1 and amphiphysin\n\nHuman dynamin1 was purified using the method of Warnock et al. with some modification (Warnock et al., 1996). Sf9 cells grown in 600 ml of SF-900II SFM (Thermo Fisher Scientific, Waltham, MA) to the cell density of 1\u00a0\u00d7\u00a0106 cells/ml and the cells were infected with baculoviruses expressing dynamin1. After cultivation of cells at 28\u00b0C\u00a0for 69 hr, the infected Sf9 cells were harvested by centrifugation at 500\u00a0\u00d7\u00a0g for 10 min. The cell pellet was resuspended by 1/20 of the culture volume (30 ml) of HCB (Hepes column buffer)100 (20 mM Hepes, 100 mM NaCl, 2 mM EGTA, 1 mM MgCl2, 1 mM DTT, 1 mM PMSF, 1 \u03bcg/ml Pepstatin A, 40 \u03bcM ALLN, pH 7.2) and cells were sonicated using a sonicator (Advanced-Digital SONIFIER model 250, BRANSON). The cell lysate was mixed with equal volume of HCB0 (20 mM Hepes, 2 mM EGTA, 1 mM MgCl2, 1 mM DTT, 1 mM PMSF, 1 \u03bcg/ml Pepstatin A, 40 \u03bcM ALLN, pH 7.2) to make HCB50 (20 mM Hepes, 50 mM NaCl, 2 mM EGTA, 1 mM MgCl2, 1 mM DTT, 1 mM PMSF, 1 \u03bcg/ml Pepstatin A, 40 \u03bcM ALLN, pH7.2) and centrifuged at 210,000\u00a0\u00d7\u00a0g for 1 hr at 4\u00b0C. Ammonium sulfate was added to the cleared lysate to the 30% saturation and incubated at 4\u00b0C for 30 min and centrifuged at 10,000\u00a0\u00d7\u00a0g for 10 min to recover the dynamin1 containing fraction in the pellet. The dynamin1 pellet was resuspended with 20 ml of HCB50 and dialyzed against 2L of HCB50 for total 4 hr (2 hr, 2 times) using dialysis membrane (Spectra/Por\u00a0Dialysis Membrane MWCO: 3500). The dialyzed dynamin1 fraction was applied to Mono Q5/50 GL column (GE healthcare) and bound proteins were eluted stepwise using HCB50, HCB100, HCB250 and HCB1000 buffers. Purified dynamin1 was recovered in HCB250 fraction and purity was determined by SDS-PAGE (Figure 1\u2014figure supplement 1A, Dynamin).\n\nHuman amphiphysin was purified following manufacture\u2019s instruction (GE Healthcare) with slight modifications. Host bacteria BL21 (DE3) transformed with an expression construct for GST fusions of human amphiphysin (pGEX6P2-HsAMPH) were grown in 1 L of LB medium to the cell density of 0.6\u20130.8 (OD 600 nm) at 37\u00b0C and then protein expression was induced at 18\u00b0C for 12 hr in the presence of 0.1 mM IPTG. The bacterial cells were harvested by centrifugation at 7000\u00a0\u00d7\u00a0g for 10 min and cell pellet was resuspended by 1/10 culture volume (100 ml) of Elution/Wash 300 buffer (50 mM Tris-HCl, pH 8.0, 300 mM NaCl). The resuspended cells were sonicated using Advanced-Digital SONIFIER model 250D (Branson) and centrifuged at 261,000\u00a0\u00d7\u00a0g for 30 min at 4\u00b0C and cleared lysate was recovered in supernatant. To the cleared lysate, 1/100 culture volume (1 ml in bed volume) of Glutathione Sepharose 4B Beads (GE Healthcare) was added and they are mixed using rotating mixer for 1 hr at 4\u00b0C. The beads were washed with the Elution/Wash 300 buffer for 5 times in a repeated cycle of centrifugation at 420\u00a0\u00d7\u00a0g for 5 min at 4\u00b0C followed by mixing with rotator for 5 min at 4\u00b0C. The beads with purified GST fusions of amphiphsyin were equilibrated with PreScission Buffer (50 mM Tris-HCl, 150 mM NaCl, 1 mM EDTA, 1 mM DTT, pH 7.0) and GST-tag was removed by PreScission Protease (GE Healthcare) by incubating for 12 hr at 4\u00b0C. The purified amphiphysin was recovered by centrifuge (12,000\u00a0\u00d7\u00a0g, 5 min at 4\u00b0C) using spin column (Ultrafree-Mc, GV 0.22 \u03bcm, Millipore) and purity was determined by SDS-PAGE (Figure 1\u2014figure supplement 1A, Amphiphysin).\n\n### Preparation of LUVs and lipid nanotubes\n\nLarge unilamellar vesicles (LUVs) and lipid nanotubes were prepared as previously described (Takei et al., 2001). For LUVs, 70% PS (Cat. No 840032C, Avanti), 10% biotinPE (Avanti) and 20% cholesterol (Avanti) were mixed and, for lipid nanotubes 40% NFA Galactocerebrosides (Sigma C1516), 40% PC (Avanti), 10% PI(4,5)P2 (Calbiochem) and 10% cholesterol (Avanti) were mixed in 250 \u03bcl of chloroform in a glass vial (Mighty Vial No.01 4 ml, Maruemu Cat. No 5-115-03). Then chloroform was evaporated using slow-flow nitrogen gas to produce lipid a lipid film on the glass and then completely dried in a vacuum desiccator for 30 min. The dried lipid was rehydrated by water-saturated nitrogen gas followed by addition of 250 \u03bcl of filtered 0.3M sucrose for 2 hr at 37\u00b0C. The resultant LUVs and lipid nanotubes were passed through 0.4 \u03bcm- and 0.2\u03bcm- polycarbonate filters respectively 11 times using Avanti Mini extruder. The LUVs and lipid nanotubes (1 mg/ml of final concentration) were stored in dark at 4\u00b0C avoiding photooxidation.\n\n### EM imaging of in vitro assay with liposomes and dynamin-amphiphysin complexes\n\nLUVs and lipid nanotubes were diluted to 0.17 mg/ml in cytosolic buffer (25 mM Hepes-KOH, pH 7.2, 25 mM KCl, 2.5 mM Magnesium acetate, 0.1 M K-glutamate, pH 7.4). Dynamin-amphiphysin complexes (1:1 in molar ratio) were diluted to 2.3 \u03bcM in the cytosolic buffer. Formvar filmed EM grids were carbon-coated, then glow-discharged. Droplets of the diluted lipids (10 \u03bcl each) were prepared on Parafilm and adsorbed on EM grids for 5 min at room temperature. Then the EM grids with lipids were transferred to other droplets of the diluted dynamin-amphiphysin complexes and incubated for 30 min at room temperature in a humid chamber. To see the temporal effect of GTP hydrolysis, the EM grids were transferred to 1 mM of GTP and incubated for various time periods (from 1 s to 10 min). The reaction was terminated by quick removal of the GTP solution by filter paper at room temperature. Alternatively, the EM grids were incubated either GTP, GTP\u03b3S, GMP-PNP, GDP plus Vanadate and GDP to analyze GTP hydrolysis transition state structures. The EM grids were negatively stained with filtered 2% uranyl acetate and observed with transmission electron microscope (HITACHI H-7650).\n\n### HS-AFM imaging\n\nAll AFM images shown in this article were capture by a laboratory-built HS-AFM in which the amplitude-modulation mode was used. For the HS-AFM imaging, a small cantilever with dimensions of 7 \u03bcm long, 2 \u03bcm wide, and 90 nm thick was used (Olympus). Its nominal spring constant and resonant frequency were\u00a0~0.2 N/m and\u00a0~800 kHz in an aqueous solution, respectively. To obtain a sharp tip, an amorphous carbon pillar was grown on the original bird-beak tip of the cantilever by electron beam deposition (EBD) and then sharpened by a plasma etching in an argon environment. The typical radius of the EBD tip was approximately 2 nm after sharpening. For the amplitude-modulation imaging, the cantilever was oscillated with amplitude less than 10 nm under free oscillation condition and the set-point was set at\u00a0~90% of the free oscillation amplitude. For HS-AFM imaging of liposomes and dynamin-amphiphysin complexes with lipid tubules or nanotubes, we used mica covered with carbon film. After coating a freshly cleaved mica surface with carbon film, hydrophilic treatment was carried out by a grow discharge. The liposomes (0.17 mg/ml) were deposited on the hydrophilic mica surface and incubated for 5 min at room temperature followed by deposition of proteins (0.6 \u03bcM of dynamin1 and amphiphysin) for 30 min at room temperature. After the incubation, the sample was thoroughly washed by cytosolic buffer to remove excess liposomes and proteins. After the washing, the cantilever tip was approached and the imaging was performed under the buffer.\n\n### Quantitative data analyses of EM and HS-AFM images\n\nThe EM and HS-AFM images were randomly captured to avoid data manipulation and representative images were shown in all the figures. The average pitch between the dynamin-amphiphysin helices in EM images (Figure 2) and HS-AFM images (Figure 3), diameter of vesicles, intervals between constriction sites and size of clusters generated by either dynamin-amphiphysin complex or dynamin (Figure 5), were all measured by FIJI (Schindelin et al., 2012). Experimental data were statistically analyzed using Excel (Microsoft) or Prism 7 (GraphPad software).\n",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "52582d3d-6a97-4ac6-808a-7a7aee17e3cd",
+      "submission_id": "3e89c913-b1c5-412f-9475-e10944226d03",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Aur\u00e9lien Roux, University of Geneva Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.30246.032](https://doi.org/10.7554/eLife.30246.032)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Dynamic clustering of dynamin-amphiphysin rings regulates membrane constriction and fission coupled with GTP hydrolysis\" for consideration by eLife. Your article has been favorably evaluated by Vivek Malhotra (Senior Editor), a Reviewing Editor, and three reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Aur\u00e9lien Roux (Reviewer #1) and Simon Scheuring (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nOverall, your findings are of interest, but the reviewers found some aspects of the mechanisms of amphiphysin/dynamin clustering confusing and the fission model also raised contradictory arguments.\n\nWe invite you to submit a revised manuscript provided you can address the following major points satisfactorily.\n\nMajor points:\n\n1) Explain in better terms how amphiphysin participates in the clustering of dynamin rings. In particular, the reviewers were concerned by the distinction between helices and rings: do dynamin and amphiphysin polymerize as ring, that are then clustered, or is the helical pitch of dynamin helix changed by amphiphysin? Another possibility suggested by the reviewers is that the dynamin helix could be \"broken\" into rings by amphiphysin, which are then further clustered.\n\n2) Regarding your model of fission: It is unclear how your model differs from previously proposed models. The reviewers agree that both the figure and the text should be changed to explain better the role of amphiphysin in clustering of rings/helices of dynamin.\n\n3) Some of the authors have shown previously that the stimulatory action of amphiphysin on dynamin is curvature-dependent, and most probably stoichiometry dependent. The reviewers thus ask to clarify what is the stoichiometry of amphiphysin to dynamin (concentration ratios), and to perform similar EM experiment as shown in Figure 1 (No AFM experiment are requested) with 2-3 different stoichiometries to test how this clustering behavior as well as the fission efficiency is affected by amphiphysin/dynamin ratio.\n\nReviewer #1:\n\nThe manuscript by Takeda et al. focuses on the dynamics of dynamin/amphiphysin copolymer upon GTP hydrolysis. The authors use a combination of beautiful electron microscopy techniques and high-speed AFM to show that upon GTP hydrolysis, adjacent rings of dynamin cluster by pairs or more. They also show at the nanometric scale that fission occurs in between those pairs rings. The AFM images show that the pairing is due to dynamic clustering of rings rather than depolymerization/polymerization of rings in another state. Overall, the paper is very convincing and balanced in its arguments. Moreover, it shows how a large structure such as the dynamin helix can dynamically change conformation under the influence of partners and nucleotides. It is also consistent with a recent publication on dynamin, also using high-speed AFM (Colom et al. PNAS 2017) and showing similar dynamics of the dynamin helix, but with less precision. I thus strongly recommend publication.\n\nI however have one experiment to suggest. I guess the authors have used a stoichiometry of 1:1 to generate the dynamin:amphiphysin complex (I could not find the information at second read, but remembered it was 1:1). I was wondering how the results would evolved as a function of the stoichiometry: does increasing amphiphysin's ratio increases clustering dynamics? I think EM data on this would suffice, and this experiment is not essential.\n\nReviewer #2:\n\nThe authors have used a combination of high-resolution microscopy, negative staining electron microscopy and high speed AFM to study the organization of amphiphysin and dynamin on membranes. It was previously shown that amphiphysin amplified the enzymatic activity of dynamin and that dynamin-induced scission during endocytosis was perturbed when amphiphysin was deleted. But, the mechanism behind this \"boosting\" activity is still unclear. Thus, the question is still open. The most interesting result of the paper is the observation of the non-regular helix formed by amphiphysin + dynamin when GTP is present. However, I globally find that this paper is not rigorous enough, with no clear contribution to the understanding of the boosting effect and unjustified conclusions. I thus do not recommend publication of the paper in eLife.\n\n1) In their paper, the authors generally describe the arrangement of the proteins on soft or rigid tubes as rings rather than as helices. However, although these proteins form rings in solution (Figure 1\u2014figure supplement 1 on this point is not different from those from Takei et al. (NCB, 1999)\u2026), it is well accepted they form helices on tubules, either independently or together. This point is particularly important for the discussion of the effect of GTP hydrolysis. Indeed, rings refer to independent structures, which might interact laterally, while helices are continuous structures and their change of organization would be completely different.\n\n2) The authors observe the reorganization of the helices on rigid lipid nanotubes, as well as on soft tubules, in the presence of GTP or GDP + Vanadate. They describe their observation as a \"clustering\" of the rings, which is quite misleading. Indeed, the regularity of the protein organization is perturbed, with a non-even distribution of the helices; however clustering again would be more adapted to rings than to helices. Moreover, with dynamin alone, a change of the helix pitch is also observed (Figure 5C) and in this case, larger \"clusters\" than in the presence of amphiphysin are obtained. Unfortunately, the authors do not discuss the structural origin of this \"clustering\" effect and of the effect of amphiphysin on the organization of the dynamin helices during GTP hydrolysis.\n\n3) From HS-AFM, the authors observe the dynamics of tubule constriction. The authors did not discuss the very long time required for this constriction, a few minutes after GTP addition. Moreover, they do not observe fission, which they claim is due to the strong attachment of the tubules to the substrate. They conclude that constriction occurs on the bare membrane near the edge of the dynamin/amphiphysin \"cluster\", and from that extrapolate that scission would occur at the same place, although not observed here. Moreover, some constriction seems also to occur under the proteins since the height decreases (Figure 4A, 227s), but this point is not discussed. The paper from Colom et al. (PNAS, 2017) that uses HS-AFM on dynamin alone has shown that constriction occurs under the dynamin helix; it would be insightful to discuss the results in comparison with this paper. Eventually, the statistics is rather poor (1 or 2 examples) and the quality of the HS-AFM data is not very good.\n\n4) The authors show that the size of the vesicles generated by fission of the tubules is smaller when amphiphysin is present as compared with dynamin alone. They suggest that the vesicle size is related to the distance between \"ring clusters\" on tubules. However, in vivo amphiphysin is involved with dynamin in clathrin-mediated endocytosis, at the neck of spherical buds, and not on tubules. It is thus exaggerating to extrapolate from the observation on the size of vesicles generated in vitro from the scission of tubules, conclusions on the control of vesicle size during clathrin-mediated endocytosis.\n\n5) Overall, it is not clear for me what insight is brought by the \"clusterase model\" to the fission mechanism. In fact, no real mechanism is proposed that explains how amphiphysin facilitates fission, rather a very vague list of possible effects (Discussion) without solid physical basis.\n\nReviewer #3:\n\nThe paper \"Dynamic clustering of dynamin-amphiphysin rings regulates membrane constriction and fission coupled with GTP hydrolysis\" presents EM and HS-AFM data of dynamin-amphiphysin complexes on lipid tubules and nanorods providing insights into the constriction/fission mechanism of the proteins.\n\nThe topic is timely, the data is of highest quality, and the insights of large interest in fields ranging from biophysics to cell biology.\n\nThere are essentially 4 major findings:\n\n1) Dynamin-amphiphysin rings cluster upon GTP hydrolysis.\n\n2) Membrane constriction occurs at protein uncoated regions (between clusters).\n\n3) GTP hydrolysis is required and sufficient for clustering.\n\n4) Amphiphysin controls the cluster size.\n\nAltogether, the authors propose a \"clusterase\" model as the new functional mechanism of action. The authors put the new finding into cellular context (Discussion, third paragraph) which is very nice.\n\nEvidence is presented for all four findings. Some aspects should be strengthened:\n\nClustering: what happens between the clusters? Either the dynamin helix would have a huge pitch (that always occurs on the invisible backside of tubule \u2013 very unlikely) or the helix is broken when clusters form. In this respect \"clustering\" would be \"breakage\". I am puzzled why the authors do not comment about this. It might be a most important aspect of their findings that amphiphysin is a dynamin helix breaker.\n\nClustering regulation by amphiphysin: The authors compare +amphiphysin with pure dynamin tubules. Would it be possible to test the hypothesis by addition of low (different) amounts of amphiphysin and analyze by EM cluster size?\n\nFigure 6 is missing? As a consequence I am not understanding the proposed fission process.\n\nOverstatement:\n\nAbstract and Introduction, last paragraph: The use of EM and AFM is in no way \"our new approaches\" or \"a novel approach combining\". There are papers since the 90s that combine EM and AFM, and also papers combining EM and HS-AFM (e.g., Colom et al. 2017).\n\nStatistics:\n\nThe authors give numbers to the 1/10 of the \u00c5 (e.g. helical pitch), which does not make sense.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Dynamic clustering of dynamin-amphiphysin helices regulates membrane constriction and fission coupled with GTP hydrolysis\" for further consideration at eLife. Your revised article has been favorably evaluated by Vivek Malhotra (Senior Editor), a Reviewing Editor, and three reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\n1) The model does not make much sense in physical terms, and has raised questions from the reviewers (see below). We thus request you to remove the model figure and the text describing the model, as it does not preclude the essential findings of the authors.\n\n2) Since a recent eLife paper has been published on dynamin-endophilin structure and inhibition (Hohendahl et al. Life 2017), the results of which are consistent with the stoichiometric experiments added by the authors of this manuscript, the reviewers request that you cite this paper and comment it in the discussion part.\n\nReviewer #1:\n\nThe authors have fully answered my questions, and have improved the manuscript by providing data with stoichiometric experiments with amphiphysin and dynamin. They clarified the points asked by other reviewers. I thus recommend this paper for publication.\n\nReviewer #2:\n\nI am satisfied with the answers of the authors related to helix versus ring and the new experiments showing that when the relative amphiphysin:dynamin ratio increases, scission is less efficient. This is online with the paper from Hohendahl A, et al. (2017) in eLife for endophilin. I think this paper should be cited.\n\nNevertheless, I still have a serious problem with the last part of the Discussion and the model, which is totally handwaving with no physical consistency. This is only a cartoon that takes up the images of the paper, but without solid mechanism. For instance, on Figure 6C, how is it possible to create torsion in a fluid membrane and why would tension increase? If constriction occurs under the amphiphysin-dynamin ring, why would the tubule radius decrease next to the coat, and not increase, in particular if there is some friction under the coat that tend to perturb lipid diffusion? I don't understand how the friction model from Simunivic et al. (2017) could work here. In the absence of clear physical description that justifies these possible mechanisms, I wonder what is so new in this manuscript and groundbreaking compared to the PNAS paper from Colom et al. that would justify publication in eLife.\n\nReviewer #3:\n\nThe author's responses to the first round of reviewers' comments are careful and additional experiments have been performed. Notably, the experiments with varying dynamin:amphiphysin ratios clarify several questions.\n\nThe manuscript reads well, and overstatements and vague statements have been removed. In my view the paper provides valuable and novel data showing \"Dynamic clustering of dynamin-amphiphysin helices\", a timely and important topic, and as such deserves publication in eLife in this revised and improved form.\n",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0ab651dd-a9cf-4124-a60f-fb9b1550b269",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C1",
+      "claim": "Dynamin is a mechanochemical GTPase essential for membrane fission during clathrin-mediated endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynamin is a mechanochemical GTPase essential for membrane fission during clathrin-mediated endocytosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the field, supported by extensive prior research and cited throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "e17569b7-0828-4730-b683-d6e1d9543a25",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C2",
+      "claim": "Dynamin forms helical complexes at the neck of clathrin-coated pits.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynamin forms helical complexes at the neck of clathrin-coated pits and their structural changes coupled with GTP hydrolysis drive membrane fission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field and is supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "f80cbc4f-084d-410c-b029-3cce45d3cda7",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C3",
+      "claim": "Structural changes of dynamin coupled with GTP hydrolysis drive membrane fission.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynamin forms helical complexes at the neck of clathrin-coated pits and their structural changes coupled with GTP hydrolysis drive membrane fission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by prior research and is the basis for the current study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "ab31c855-3022-48c4-af68-720fd27d2109",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C4",
+      "claim": "Dynamin-amphiphysin helices are rearranged to form clusters upon GTP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "HS-AFM analyses show that the dynamin-amphiphysin helices are rearranged to form clusters upon GTP hydrolysis and membrane constriction occurs at protein-uncoated regions flanking the clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by HS-AFM imaging data shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "58fa240d-15db-4019-8e88-2d38522ef836",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C5",
+      "claim": "Membrane constriction occurs at protein-uncoated regions flanking the dynamin-amphiphysin clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "HS-AFM analyses show that the dynamin-amphiphysin helices are rearranged to form clusters upon GTP hydrolysis and membrane constriction occurs at protein-uncoated regions flanking the clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by HS-AFM data in Figure 4 showing constriction at flanking regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "37d8e43e-0414-49d4-9d97-08249df1cda2",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C6",
+      "claim": "Amphiphysin has a novel function in size control of dynamin-amphiphysin clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "We also show a novel function of amphiphysin in size control of the clusters to enhance biogenesis of endocytic vesicles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by EM data in Figure 5 comparing cluster sizes with and without amphiphysin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "bcd7bda2-6b84-4914-9599-6d2b2a8f28f9",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C7",
+      "claim": "Amphiphysin enhances biogenesis of endocytic vesicles through cluster size control.",
+      "claim_type": "EXPLICIT",
+      "source": "We also show a novel function of amphiphysin in size control of the clusters to enhance biogenesis of endocytic vesicles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing smaller vesicles and shorter intervals between constriction sites with amphiphysin (Figure 5).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "83f1afe4-e8ef-4105-8aae-c5f45b4e9cbc",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C8",
+      "claim": "Clathrin-mediated endocytosis is the best characterized endocytic pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Clathrin-mediated endocytosis (CME) is the best characterized endocytic pathway by which cells incorporate extracellular molecules into cells as cargoes of clathrin-coated vesicles (Kirchhausen et al., 2014; McMahon and Boucrot, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "799a39a5-a193-42b8-8496-2afab1bbc7ea",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C9",
+      "claim": "CME is required for neuronal transmission, signal transduction, cell adhesion and migration.",
+      "claim_type": "EXPLICIT",
+      "source": "CME is required for various essential processes including neuronal transmission, signal transduction and other cell membrane activities such as cell adhesion and migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the biological importance of CME.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "ce643e1e-80e8-48cd-8982-00271eed0e65",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C10",
+      "claim": "There are three dynamin isoforms in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "There are three dynamin isoforms in mammals: dynamin 1 and dynamin 3, two tissue-specific isoforms which are highly expressed in neurons, and dynamin 2, an ubiquitously expressed isoform (Cao et al., 1998; Cook et al., 1996, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "f997b9e8-b6da-4a1e-b7b7-addd632f9487",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C11",
+      "claim": "Dynamin 1 and dynamin 3 are tissue-specific isoforms highly expressed in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "There are three dynamin isoforms in mammals: dynamin 1 and dynamin 3, two tissue-specific isoforms which are highly expressed in neurons, and dynamin 2, an ubiquitously expressed isoform (Cao et al., 1998; Cook et al., 1996, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "9780b82a-71ae-4db3-8a33-2cb3d3c50a5f",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C12",
+      "claim": "Dynamin 2 is an ubiquitously expressed isoform.",
+      "claim_type": "EXPLICIT",
+      "source": "There are three dynamin isoforms in mammals: dynamin 1 and dynamin 3, two tissue-specific isoforms which are highly expressed in neurons, and dynamin 2, an ubiquitously expressed isoform (Cao et al., 1998; Cook et al., 1996, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "4e90c112-f8b5-40d9-a8c5-31f85cd38fc2",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C13",
+      "claim": "Dynamin consists of five structurally distinct domains: a GTPase domain, a bundle signaling element (BSE), a stalk, a pleckstrin homology (PH) domain and a proline-rich domain (PRD).",
+      "claim_type": "EXPLICIT",
+      "source": "Structural studies from several groups demonstrated that dynamin consists of five structurally distinct domains: a GTPase domain, a bundle signaling element (BSE), a stalk, a pleckstrin homology (PH) domain and a proline-rich domain (PRD) from N-terminus to C-terminus (Faelber et al., 2011; Ford et al., 2011; Reubold et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "bc7789d4-5f57-40f0-bcf8-47009a90b575",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C14",
+      "claim": "The GTPase domain is responsible for hydrolysis of GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "The GTPase domain is responsible for hydrolysis of GTP (guanosine triphosphate) and the PH domain is required for membrane association by binding to negatively charged phospholipids such as PI (4,5) P2 (phosphatidylinositol 4,5-bisphosphate).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about dynamin domain functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "fde4870d-6b7e-4991-98b2-fb1e21c5fb53",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C15",
+      "claim": "The PH domain is required for membrane association by binding to negatively charged phospholipids such as PI(4,5)P2.",
+      "claim_type": "EXPLICIT",
+      "source": "The GTPase domain is responsible for hydrolysis of GTP (guanosine triphosphate) and the PH domain is required for membrane association by binding to negatively charged phospholipids such as PI (4,5) P2 (phosphatidylinositol 4,5-bisphosphate).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about dynamin domain functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "d0e8088f-e6c7-47b6-a524-3934926668cc",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C16",
+      "claim": "The stalk structure serves as a binding interface for dimerization and oligomerization of dynamin.",
+      "claim_type": "EXPLICIT",
+      "source": "The stalk structure serves as a binding interface for dimerization and oligomerization of dynamin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about dynamin structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "4a7637a6-8e96-4522-bd9f-45bb025134eb",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C17",
+      "claim": "The BSE functions as a flexible hinge required for structural changes of dynamin upon GTP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The BSE, which is located between the stalk and GTPase domain, functions as a flexible hinge required for structural changes of dynamin upon GTP hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about dynamin domain functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "92bbe638-4bcf-4f13-862b-1e4c60bef0e2",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C18",
+      "claim": "Dynamin helical oligomers were first observed in presynaptic terminals of shibire mutant flies at restrictive temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynamin forms helical oligomers which was first observed in presynaptic terminals of shibire mutant flies at restrictive temperature (Koenig and Ikeda, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "ee65c45e-150f-4af4-8691-97b1b56c2a36",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C19",
+      "claim": "Dynamin assembles into helices at the neck of endocytic pits in isolated presynaptic nerve terminals treated with GTP\u03b3S.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynamin also assembles into helices at the neck of endocytic pits in the isolated presynaptic nerve terminals treated with slowly hydrolyzable GTP analogue GTP\u03b3S (guanosine 5'-O-[gamma-thio]triphosphate) (Takei et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "e08cdf85-227e-4a64-a16f-4c3e2683747e",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C20",
+      "claim": "Dynamin helices can be reconstituted in vitro with liposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar dynamin helices were reconstituted in vitro either with liposomes (Sweitzer and Hinshaw, 1998; Takei et al., 1998) or without liposomes in a low-salt condition (Hinshaw and Schmid, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "0ce48f23-1556-483e-8c1c-ea2c98b9d407",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C21",
+      "claim": "Dynamin helices can be reconstituted in vitro without liposomes in a low-salt condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar dynamin helices were reconstituted in vitro either with liposomes (Sweitzer and Hinshaw, 1998; Takei et al., 1998) or without liposomes in a low-salt condition (Hinshaw and Schmid, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "7381f6e4-a41b-478c-9b05-0c7947312989",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C22",
+      "claim": "Membrane constriction is required, but not sufficient, for fission.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a consensus view about the dynamin-mediated membrane constriction and fission which is well supported by previous studies from different groups: membrane constriction is required, but not sufficient, for fission (Antonny et al., 2016; Faelber et al., 2012; Schmid and Frolov, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a consensus view in the field supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "543ec4f3-f158-4cae-952e-7f9d3cef2567",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C23",
+      "claim": "It is controversial how membrane constriction is achieved by dynamin.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is still controversial how constriction is achieved, and what GTP energy is used for.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the current state of debate in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "ac83866a-485f-4c77-8b3e-a6ea4de41c1c",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C24",
+      "claim": "It is controversial what GTP energy is used for in dynamin-mediated membrane fission.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is still controversial how constriction is achieved, and what GTP energy is used for.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the current state of debate in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "15146949-3b4f-4b16-9af4-88ff5bee9f4c",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C25",
+      "claim": "Membrane constriction could be achieved by assembly into the highly constricted state when dynamin is bound to GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, membrane constriction could be achieved by assembly into the highly constricted state when dynamin is bound to GTP (Chen et al., 2004; Mattila et al., 2015; Mears et al., 2007; Zhang and Hinshaw, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is one proposed mechanism supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "4fadd776-f60d-4f90-81ab-fe4285cb15c0",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C26",
+      "claim": "Membrane constriction could be achieved by hydrolysis of GTP that induces a conformational change leading to constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, membrane constriction could be achieved by hydrolysis of GTP that induces a conformational change leading to constriction (Cocucci et al., 2014; Marks et al., 2001; Roux et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an alternative proposed mechanism supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "1ae77ad8-b68c-4348-a5bd-23af0f1b684d",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C27",
+      "claim": "Amphiphysin is a BAR domain protein required for membrane invagination in CME.",
+      "claim_type": "EXPLICIT",
+      "source": "Amphiphysin is a BAR domain protein required for membrane invagination in CME (Wigge et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "37f961f9-9889-474b-9d22-b32126ae1fdb",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C28",
+      "claim": "Amphiphysin has a lipid interacting BAR domain in its N-terminal, a medial clathrin/AP-2 binding (CLAP) domain and C-terminal Src homology 3 (SH3) domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Amphiphysin has a lipid interacting BAR (Bin\u2013Amphiphysin\u2013Rvs) domain in its N-terminal, a medial clathrin/AP-2 binding (CLAP) domain and C-terminal Src homology 3 (SH3) domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge about amphiphysin.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "1678854d-bc56-4402-8291-29b220ce7d5a",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C29",
+      "claim": "The BAR domain of amphiphysin forms crescent-shaped dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The BAR domain of amphiphysin forms crescent-shaped dimer and its concave surface serves as a platform for bending membrane or sensing membrane curvature (Peter et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "9fb3bf00-e5da-435d-8b32-5c139b671898",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C30",
+      "claim": "The concave surface of the BAR domain serves as a platform for bending membrane or sensing membrane curvature.",
+      "claim_type": "EXPLICIT",
+      "source": "The BAR domain of amphiphysin forms crescent-shaped dimer and its concave surface serves as a platform for bending membrane or sensing membrane curvature (Peter et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "ad62e49d-4506-458a-93cc-3eaeae8a3197",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C31",
+      "claim": "The CLAP domain binds to clathrin and AP-2.",
+      "claim_type": "EXPLICIT",
+      "source": "The CLAP domain binds to clathrin and AP-2, major components of clathrin-coated pits, and helps to recruit amphiphysin to the sites of CME.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about amphiphysin domain functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "494a88f6-ea46-4897-8b74-6ac34ee95f80",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C32",
+      "claim": "The CLAP domain helps to recruit amphiphysin to the sites of CME.",
+      "claim_type": "EXPLICIT",
+      "source": "The CLAP domain binds to clathrin and AP-2, major components of clathrin-coated pits, and helps to recruit amphiphysin to the sites of CME.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the binding function of the CLAP domain.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "66b85c81-00dd-46d6-b073-af1f44f693ff",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C33",
+      "claim": "The C-terminal SH3 domain of amphiphysin binds directly to the PRD of dynamin 1.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the C-terminal SH3 domain of amphiphysin binds directly to the PRD of dynamin 1 (David et al., 1996; Takei et al., 1999) and enhances dynamin's GTPase activity in the presence of liposomes (Takei et al., 1999; Yoshida et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "0331ae78-5cf6-414c-8660-bb5dc05e2290",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C34",
+      "claim": "The SH3 domain of amphiphysin enhances dynamin's GTPase activity in the presence of liposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the C-terminal SH3 domain of amphiphysin binds directly to the PRD of dynamin 1 (David et al., 1996; Takei et al., 1999) and enhances dynamin's GTPase activity in the presence of liposomes (Takei et al., 1999; Yoshida et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "ed1192a3-551a-4c94-a6ef-df95767966a2",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C35",
+      "claim": "Amphiphysin copolymerizes with dynamin 1 into helical complexes which form membrane tubules in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Amphiphysin copolymerizes with dynamin 1 into helical complexes, which form membrane tubules in vitro (Takei et al., 1999; Yoshida et al., 2004) similar to those formed from synaptic plasma membranes (Takei et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "ece9ef97-e78e-4f02-b3b9-37771f27b751",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C36",
+      "claim": "Injection of specific antibodies against amphiphysin into the giant synapse in lampreys causes suppressed endocytosis in synaptic vesicle recycling.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, injection of specific antibodies against amphiphysin into the giant synapse in lampreys (Evergren et al., 2004) or amphiphysin KO in mice (Di Paolo et al., 2002) causes suppressed endocytosis in synaptic vesicle recycling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "e202c345-8573-4354-abbd-8f60c5737468",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C37",
+      "claim": "Amphiphysin KO in mice causes suppressed endocytosis in synaptic vesicle recycling.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, injection of specific antibodies against amphiphysin into the giant synapse in lampreys (Evergren et al., 2004) or amphiphysin KO in mice (Di Paolo et al., 2002) causes suppressed endocytosis in synaptic vesicle recycling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "4e819159-ea96-40c3-a48d-5d90956d52d9",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C38",
+      "claim": "Dynamin mediates membrane fission in CME in collaboration with amphiphysin in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that dynamin mediates membrane fission in CME in collaboration with amphiphysin in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cited studies showing functional importance of amphiphysin.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "054c6bb8-3e96-47f0-a244-8eaae7354ad3",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C39",
+      "claim": "Dynamin-amphiphysin complexes induced tubulation of large unilamellar vesicles (LUVs) in the absence of GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously described (Sweitzer and Hinshaw, 1998; Takei et al., 1999), the dynamin-amphiphysin complexes induced tubulation of large unilamellar vesicles (LUVs) in the absence of GTP (Figure 1A, No GTP) and it is not stoichiometry dependent (Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EM data in Figure 1A and is consistent with prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "48a2382d-74f0-424c-8b26-1bd29704935a",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C40",
+      "claim": "Tubulation of LUVs by dynamin-amphiphysin complexes is not stoichiometry dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously described (Sweitzer and Hinshaw, 1998; Takei et al., 1999), the dynamin-amphiphysin complexes induced tubulation of large unilamellar vesicles (LUVs) in the absence of GTP (Figure 1A, No GTP) and it is not stoichiometry dependent (Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EM data in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "3ba486d4-4509-4942-b875-decf0850a788",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C41",
+      "claim": "Lipid tubules started to form multiple constriction sites over time after GTP addition.",
+      "claim_type": "EXPLICIT",
+      "source": "Immediately after the addition of 1 mM GTP, the appearance of lipid tubules was not affected (Figure 1A, GTP 1 s), but they started to form multiple constriction sites over time (Figure 1A, GTP 5 s, 10 s and 30 s) and membrane fission occurred finally and numerous vesicles were generated within 1 min (Figure 1A, GTP 1 min).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation supported by EM time course data in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "9647c42c-25e6-4682-b95c-da722b053c22",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C42",
+      "claim": "Membrane fission occurred and numerous vesicles were generated within 1 min after GTP addition.",
+      "claim_type": "EXPLICIT",
+      "source": "Immediately after the addition of 1 mM GTP, the appearance of lipid tubules was not affected (Figure 1A, GTP 1 s), but they started to form multiple constriction sites over time (Figure 1A, GTP 5 s, 10 s and 30 s) and membrane fission occurred finally and numerous vesicles were generated within 1 min (Figure 1A, GTP 1 min).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation supported by EM time course data in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "f3fae69b-4fb4-4602-a393-4c4ca0e5a28a",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C43",
+      "claim": "Membrane fission activity by dynamin-amphiphysin complexes was stoichiometry sensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "The membrane fission activity by dynamin-amphiphysin complexes was stoichiometry sensitive: the membrane fission occurred efficiently at 1:0.5 or 1:1 molar ratio of dynamin and amphiphysin (Figure 1-figure supplement 2C, 1:0.5 and 1:1), while the fission activity was less efficient when dynamin and amphiphysin were mixed at 1:2 ratio (Figure 1-figure supplement 2C, 1:2), probably due to lower stimulatory effect of amphiphysin on dynamin GTPase activity at the higher molecular ratio (Yoshida et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EM data in Figure 1\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "8d6cc287-97e7-45b6-b0b6-678af8fd4cba",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C44",
+      "claim": "Membrane fission occurred efficiently at 1:0.5 or 1:1 molar ratio of dynamin and amphiphysin.",
+      "claim_type": "EXPLICIT",
+      "source": "The membrane fission activity by dynamin-amphiphysin complexes was stoichiometry sensitive: the membrane fission occurred efficiently at 1:0.5 or 1:1 molar ratio of dynamin and amphiphysin (Figure 1-figure supplement 2C, 1:0.5 and 1:1), while the fission activity was less efficient when dynamin and amphiphysin were mixed at 1:2 ratio (Figure 1-figure supplement 2C, 1:2), probably due to lower stimulatory effect of amphiphysin on dynamin GTPase activity at the higher molecular ratio (Yoshida et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EM data in Figure 1\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "18952c73-581e-45c9-9c8a-b5353dac9ea8",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C45",
+      "claim": "Fission activity was less efficient when dynamin and amphiphysin were mixed at 1:2 ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "The membrane fission activity by dynamin-amphiphysin complexes was stoichiometry sensitive: the membrane fission occurred efficiently at 1:0.5 or 1:1 molar ratio of dynamin and amphiphysin (Figure 1-figure supplement 2C, 1:0.5 and 1:1), while the fission activity was less efficient when dynamin and amphiphysin were mixed at 1:2 ratio (Figure 1-figure supplement 2C, 1:2), probably due to lower stimulatory effect of amphiphysin on dynamin GTPase activity at the higher molecular ratio (Yoshida et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EM data in Figure 1\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "9ea005bd-02e4-49fb-b43f-60f1c60645c8",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C46",
+      "claim": "Lower fission efficiency at 1:2 ratio is probably due to lower stimulatory effect of amphiphysin on dynamin GTPase activity at the higher molecular ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "The membrane fission activity by dynamin-amphiphysin complexes was stoichiometry sensitive: the membrane fission occurred efficiently at 1:0.5 or 1:1 molar ratio of dynamin and amphiphysin (Figure 1-figure supplement 2C, 1:0.5 and 1:1), while the fission activity was less efficient when dynamin and amphiphysin were mixed at 1:2 ratio (Figure 1-figure supplement 2C, 1:2), probably due to lower stimulatory effect of amphiphysin on dynamin GTPase activity at the higher molecular ratio (Yoshida et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative explanation supported by citation to prior work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "ef63f3d4-1e09-47ed-8de4-aed0f20f6e50",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C47",
+      "claim": "The appearance of lipid tubules was not affected in the presence of GTP\u03b3S.",
+      "claim_type": "EXPLICIT",
+      "source": "The appearance of lipid tubules (Figure 1B, No GTP) was not affected in the presence of either slowly hydrolyzable GTP analogue GTP\u03b3S (Figure 1B, GTP\u03b3S) or non-hydrolyzable GTP analogue GMP-PNP (guanosine 5\u2032-[\u03b2,\u03b3-imido]triphosphate) (Figure 1B, GMP-PNP).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EM data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "969dba6b-2c43-401a-8e50-96c46a8cd877",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C48",
+      "claim": "The appearance of lipid tubules was not affected in the presence of GMP-PNP.",
+      "claim_type": "EXPLICIT",
+      "source": "The appearance of lipid tubules (Figure 1B, No GTP) was not affected in the presence of either slowly hydrolyzable GTP analogue GTP\u03b3S (Figure 1B, GTP\u03b3S) or non-hydrolyzable GTP analogue GMP-PNP (guanosine 5\u2032-[\u03b2,\u03b3-imido]triphosphate) (Figure 1B, GMP-PNP).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EM data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "e68e6c3e-def8-4dc8-8fa9-10003750c15f",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C49",
+      "claim": "In the presence of GDP and vanadate, lipid tubules were constricted at multiple sites.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the presence of GDP (guanosine diphosphate) and vanadate, the complex which mimics the GDP\u22c5Pi transition state, lipid tubules were constricted at multiple sites (Figure 1B, GDP + vanadate).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation supported by EM data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "c294a7a5-dead-43bd-8651-a86603e21dc7",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C50",
+      "claim": "GDP and vanadate mimics the GDP\u22c5Pi transition state.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the presence of GDP (guanosine diphosphate) and vanadate, the complex which mimics the GDP\u22c5Pi transition state, lipid tubules were constricted at multiple sites (Figure 1B, GDP + vanadate).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about GDP-vanadate as a transition state analog.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "800d2c9d-04cb-4870-b473-23f20a0f1be8",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C51",
+      "claim": "Addition of only GDP did not cause membrane constriction or fission, but membrane tubules were deformed.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of only GDP did not cause membrane constriction or fission, but membrane tubules were deformed (Figure 1B, GDP).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EM data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "0fa4e1ce-b82c-4bc2-8c9d-1b50d408f547",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C52",
+      "claim": "Numerous vesicles were generated 10 min after the addition of 1 mM GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, numerous vesicles were generated 10 min after the addition of 1 mM GTP, in which multiple rounds of GTP hydrolysis were likely to have taken place (Figure 1B, GTP).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EM data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "7e324c54-db88-44ba-877d-080e776ab962",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C53",
+      "claim": "Multiple rounds of GTP hydrolysis were likely to have taken place 10 min after GTP addition.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, numerous vesicles were generated 10 min after the addition of 1 mM GTP, in which multiple rounds of GTP hydrolysis were likely to have taken place (Figure 1B, GTP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the time course and the observation of vesicle formation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "9cf7d9dd-4bbd-4bdb-8846-68066dd73e15",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C54",
+      "claim": "GTP hydrolysis is essential for both membrane constriction and fission by the dynamin-amphiphysin complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken these results together, GTP hydrolysis is essential for both membrane constriction and fission by the dynamin-amphiphysin complexes, but subsequent dissociation of GTP hydrolytic products (GDP and/or phosphate) is required for completing membrane fission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the EM data in Figure 1B showing effects of different nucleotide states.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "8120757c-8d32-43d3-a9f9-cb7313636692",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C55",
+      "claim": "Subsequent dissociation of GTP hydrolytic products (GDP and/or phosphate) is required for completing membrane fission.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken these results together, GTP hydrolysis is essential for both membrane constriction and fission by the dynamin-amphiphysin complexes, but subsequent dissociation of GTP hydrolytic products (GDP and/or phosphate) is required for completing membrane fission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the EM data showing constriction with GDP-vanadate but fission only with GTP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "1b0b9303-8d56-457d-82d2-abfa27ef3432",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C56",
+      "claim": "Dynamin-amphiphysin complexes assembled into helices on the lipid nanotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynamin-amphiphysin complexes assembled into helices on the lipid nanotubes (Figure 2A, No GTP), which is similar to those formed by dynamin alone (Stowell et al., 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EM data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "e7093064-2612-4ebf-a8da-423c37681d02",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C57",
+      "claim": "Dynamin-amphiphysin helices on lipid nanotubes are similar to those formed by dynamin alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynamin-amphiphysin complexes assembled into helices on the lipid nanotubes (Figure 2A, No GTP), which is similar to those formed by dynamin alone (Stowell et al., 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison to cited prior work and EM data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "af6c6217-081b-496f-982a-4b4099d3168a",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C58",
+      "claim": "The dynamin-amphiphysin helices transiently formed clusters after the addition of GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the dynamin-amphiphysin helices transiently formed clusters after the addition of GTP (Figure 2A, GTP 1 s and 20 s, brackets).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation supported by EM time course data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "9f268f23-87ed-486d-bd87-b3173d86965a",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C59",
+      "claim": "The dynamin-amphiphysin clusters were disorganized over time and partially dissociated from the nanotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamin-amphiphysin clusters were disorganized over time and partially dissociated from the nanotubes (Figure 2A, GTP 30 s and 1 min).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EM time course data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "fa07fff4-3305-472d-bba3-d168c6508c67",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C60",
+      "claim": "The appearance of dynamin-amphiphysin helices was unchanged in the presence of GTP\u03b3S or GMP-PNP.",
+      "claim_type": "EXPLICIT",
+      "source": "The appearance of dynamin-amphiphysin helices was unchanged even in the presence of GTP\u03b3S or GMP-PNP (Figure 2B, No GTP, GTP\u03b3S and GMP-PNP).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EM data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "baeddd62-f5a7-4f34-aa50-9113941f21a0",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C61",
+      "claim": "Addition of GDP and vanadate induced rearrangement of the dynamin-amphiphysin helical complexes to form clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, addition of GDP and vanadate induced rearrangement of the dynamin-amphiphysin helical complexes to form clusters similar to those observed after the addition of GTP (Figure 2B, GDP + vanadate).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation supported by EM data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "748326d5-c9dd-46ea-83f5-335da575c842",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C62",
+      "claim": "The average pitch of helices in the clusters was 15.0 \u00b1 0.3 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The average pitch of helices in the clusters were shorter (15.0 \u00b1 0.3 nm, mean pitch \u00b1 s.e.m.) compared to the average pitch of the helical complexes in No GTP control (20.0 \u00b1 0.5 nm, mean pitch \u00b1 s.e.m.) (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "175f642b-52ed-4918-b2a3-c9dbd3864ed3",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C63",
+      "claim": "The average pitch of the helical complexes in No GTP control was 20.0 \u00b1 0.5 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The average pitch of helices in the clusters were shorter (15.0 \u00b1 0.3 nm, mean pitch \u00b1 s.e.m.) compared to the average pitch of the helical complexes in No GTP control (20.0 \u00b1 0.5 nm, mean pitch \u00b1 s.e.m.) (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "430998ff-5463-4893-9723-5df93f394527",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C64",
+      "claim": "GDP alone did not affect the distribution of dynamin-amphiphysin helices.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, GDP alone did not affect the distribution of dynamin-amphiphysin helices (Figure 2B, GDP).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EM data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "8e65ccaf-23c2-4777-8da5-b985f6fca1b6",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C65",
+      "claim": "The dynamin-amphiphysin helical complexes were disorganized and eventually dissociated from the lipid nanotubes 10 min after the addition of 1 mM GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the dynamin-amphiphysin helical complexes were disorganized and eventually dissociated from the lipid nanotubes 10 min after the addition of 1 mM GTP (Figure 2B, GTP).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EM data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "0f5194bc-ddd3-4f9b-82f5-8cead8ed4e51",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C66",
+      "claim": "The dynamin-amphiphysin helical complexes transiently form clusters in the GTP hydrolysis transition state of GDP\u22c5Pi during which membrane tubules are constricted.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken these results together, the dynamin-amphiphysin helical complexes transiently form clusters in the GTP hydrolysis transition state of GDP\u22c5Pi during which membrane tubules are constricted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the EM data showing clustering with GDP-vanadate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "fdbd02a3-d920-48ed-9240-b1bce10bf5ee",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C67",
+      "claim": "Clustering behavior of the dynamin-amphiphysin complexes on the lipid nanotubes was not stoichiometry dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, unlike membrane fission activity (Figure 1\u2014figure supplement 2C), clustering behavior of the dynamin-amphiphysin complexes on the lipid nanotubes were not stoichiometry dependent (Figure 2\u2014figure supplement 1, 1:0.5, 1:1 and 1:2, white brackets).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EM data in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "bdc59132-decc-4269-a721-376630d9292b",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C68",
+      "claim": "LUVs were stably immobilized on the carbon-coated and glow-discharged mica substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "LUVs were stably immobilized on the carbon-coated and glow-discharged mica substrate (Figure 3\u2014figure supplement 1A; Video 1), and they were successfully tubulated in the presence of dynamin and amphiphysin (Figure 3\u2014figure supplement 1B; Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HS-AFM data in Figure 3\u2014figure supplement 1A and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "d571bf44-58e4-462a-bb93-a3c340e07e44",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C69",
+      "claim": "LUVs were successfully tubulated in the presence of dynamin and amphiphysin.",
+      "claim_type": "EXPLICIT",
+      "source": "LUVs were stably immobilized on the carbon-coated and glow-discharged mica substrate (Figure 3\u2014figure supplement 1A; Video 1), and they were successfully tubulated in the presence of dynamin and amphiphysin (Figure 3\u2014figure supplement 1B; Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HS-AFM data in Figure 3\u2014figure supplement 1B and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "c4228d79-e759-4001-a579-af7ddba92975",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C70",
+      "claim": "The dynamin-amphiphysin helices on the lipid tubules were aligned with an almost regular pitch of 22.0 \u00b1 0.7 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamin-amphiphysin helices on the lipid tubules were aligned with an almost regular pitch (22.0 \u00b1 0.7 nm, mean pitch \u00b1 s.e.m.) and they were immobile before GTP addition (Figure 3A, 0 s and 21 s; Video 3; Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from HS-AFM data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "46c71e5f-acbf-4d79-9505-1856907e0152",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C71",
+      "claim": "The dynamin-amphiphysin helices were immobile before GTP addition.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamin-amphiphysin helices on the lipid tubules were aligned with an almost regular pitch (22.0 \u00b1 0.7 nm, mean pitch \u00b1 s.e.m.) and they were immobile before GTP addition (Figure 3A, 0 s and 21 s; Video 3; Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HS-AFM data in Figure 3A and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "4e1ba57a-2126-4216-b48d-eebca083d93e",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C72",
+      "claim": "The dynamin-amphiphysin helices became mobile after GTP addition and eventually formed clusters consisting of a few helices with shorter pitch of 15.7 \u00b1 0.3 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the dynamin-amphiphysin helices became mobile after GTP addition and eventually formed clusters consisting of a few helices with shorter pitch (15.7 \u00b1 0.3 nm, mean pitch \u00b1 s.e.m.) (Figure 3A, from 42 s to 131 s; Video 3; Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation supported by HS-AFM data in Figure 3A and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "26ba7ed0-71f8-4033-979e-d32cd1c56860",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C73",
+      "claim": "Dynamin-amphiphysin complexes were static before GTP addition.",
+      "claim_type": "EXPLICIT",
+      "source": "Particle tracking analyses of the individual dynamin-amphiphysin helices showed that the dynamin-amphiphysin complexes were static before GTP addition (Figure 3B, 5-21 s; Video 4), but addition of 1 mM GTP stimulated longitudinal movement of the helical complexes, leading to the cluster formation (Figure 3B, 38-54 s, 38\u201386 s and 38\u2013118 s; Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by particle tracking analysis in Figure 3B and Video 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "c9a12ca7-9ddc-4833-8cb0-2ac2f2a74ff2",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C74",
+      "claim": "Addition of 1 mM GTP stimulated longitudinal movement of the helical complexes, leading to the cluster formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Particle tracking analyses of the individual dynamin-amphiphysin helices showed that the dynamin-amphiphysin complexes were static before GTP addition (Figure 3B, 5-21 s; Video 4), but addition of 1 mM GTP stimulated longitudinal movement of the helical complexes, leading to the cluster formation (Figure 3B, 38-54 s, 38\u201386 s and 38\u2013118 s; Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation supported by particle tracking analysis in Figure 3B and Video 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "f231a6dc-cd42-4b55-a75b-1421e32566bf",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C75",
+      "claim": "The helices had a tendency to constrict during the cluster formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although membrane fission was not observed in this sample probably due to a strong attachment of the lipid tubule to the substrate, the helices had a tendency to constrict during the cluster formation (Figure 3C; Figure 3\u2014figure supplement 2; Figure 3\u2014source data 2; Figure 3\u2014figure supplement 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by height measurements in Figure 3C and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "da9c2951-d767-4a76-92d0-f111766e0139",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C76",
+      "claim": "Membrane fission was not observed in this sample probably due to a strong attachment of the lipid tubule to the substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Although membrane fission was not observed in this sample probably due to a strong attachment of the lipid tubule to the substrate, the helices had a tendency to constrict during the cluster formation (Figure 3C; Figure 3\u2014figure supplement 2; Figure 3\u2014source data 2; Figure 3\u2014figure supplement 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the lack of observed fission.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "7806630c-e938-46c9-a936-5615d8b08639",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C77",
+      "claim": "Dynamin-amphiphysin helical complexes undergo two modes of structural changes: longitudinal clustering and radial constriction during GTP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that dynamin-amphiphysin helical complexes undergo two modes of structural changes, longitudinal clustering and radial constriction, during GTP hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the HS-AFM data showing both types of movements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "0193566c-c88c-4930-9f98-54cd0b181b9a",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C78",
+      "claim": "A few dynamin-amphiphysin helices merged to form a cluster over time after GTP addition.",
+      "claim_type": "EXPLICIT",
+      "source": "In the representative sample in which membrane constriction and fission occurred, a few dynamin-amphiphysin helices merged to form a cluster over time after GTP addition (Figure 4A, 0 s, 125.3 s, 185.5 s and 227.5 s; Video 6; Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HS-AFM time course data in Figure 4A and Video 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "11c5c544-3072-4227-9f61-8cdaaadab1f7",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C79",
+      "claim": "Membrane constriction occurred at flanking regions of the cluster where membrane was bare of dynamin-amphiphysin complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, membrane constriction occurred at flanking regions of the cluster where membrane was bare of dynamin-amphiphysin complexes (Figure 4A, fission point (FP).1 and FP.2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary observation supported by HS-AFM data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "18a1a56c-d34a-4f72-8d11-10a46097d175",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C80",
+      "claim": "The heights at sites marked with FP.1 and FP.2 were not changed before constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "The heights at sites marked with FP.1 and FP.2 were not changed before constriction (Figure 4B, before constriction; Figure 4\u2014source data 2), but they became lower in a stepwise manner from a pre-constriction height of around 30 nm down to 20\u201325 nm or below (Figure 4B, after constriction; Figure 4\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by height profile data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "5a8d180d-08a1-47dc-9efb-56051d5d31ad",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C81",
+      "claim": "The heights at FP.1 and FP.2 became lower in a stepwise manner from around 30 nm down to 20\u201325 nm or below after constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "The heights at sites marked with FP.1 and FP.2 were not changed before constriction (Figure 4B, before constriction; Figure 4\u2014source data 2), but they became lower in a stepwise manner from a pre-constriction height of around 30 nm down to 20\u201325 nm or below (Figure 4B, after constriction; Figure 4\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by height profile data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "8f356e99-7370-480b-9cdd-0a644da7b066",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C82",
+      "claim": "Membrane constriction and fission occur at the protein-uncoated regions created as a result of the clustering of dynamin-amphiphysin helical complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "These results strongly suggest that membrane constriction and fission occur at the protein-uncoated regions created as a result of the clustering of dynamin-amphiphysin helical complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the HS-AFM data in Figure 4 showing constriction at bare membrane regions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "39f82e17-514d-4030-9616-9ce4ca25c9cd",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C83",
+      "claim": "The average size of vesicles formed by dynamin-amphiphysin complexes was 70.0 \u00b1 2.9 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we also noticed that the average size of vesicles formed by dynamin-amphiphysin complexes (70.0 \u00b1 2.9 nm, mean diameter \u00b1 s.e.m.) was significantly smaller compared to those formed by dynamin alone (204.6 \u00b1 12.3 nm, mean diameter \u00b1 s.e.m.) after GTP addition (Figure 5A; Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from EM data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "f4854b68-8a9e-45d6-942f-e7c0ad3c1ade",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C84",
+      "claim": "The average size of vesicles formed by dynamin alone was 204.6 \u00b1 12.3 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we also noticed that the average size of vesicles formed by dynamin-amphiphysin complexes (70.0 \u00b1 2.9 nm, mean diameter \u00b1 s.e.m.) was significantly smaller compared to those formed by dynamin alone (204.6 \u00b1 12.3 nm, mean diameter \u00b1 s.e.m.) after GTP addition (Figure 5A; Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from EM data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "89a56204-cd47-4158-978a-a716fa231f7a",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C85",
+      "claim": "Vesicles formed by dynamin-amphiphysin complexes were significantly smaller compared to those formed by dynamin alone.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we also noticed that the average size of vesicles formed by dynamin-amphiphysin complexes (70.0 \u00b1 2.9 nm, mean diameter \u00b1 s.e.m.) was significantly smaller compared to those formed by dynamin alone (204.6 \u00b1 12.3 nm, mean diameter \u00b1 s.e.m.) after GTP addition (Figure 5A; Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative comparison of EM data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "4c76ecc2-d9a2-4f9a-98b4-d7e8980a478c",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C86",
+      "claim": "Dynamin-amphiphysin complex formed constriction sites with shorter intervals (150.3 \u00b1 9.8 nm) compared to those formed by dynamin alone (193.5 \u00b1 15.8 nm) in the presence of GDP and vanadate.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, dynamin-amphiphysin complex formed constriction sites with shorter intervals (150.3 \u00b1 9.8 nm, mean intervals \u00b1 s.e.m.) compared to those formed by dynamin alone (193.5 \u00b1 15.8 nm, mean intervals \u00b1 s.e.m.) in the presence of GDP and vanadate (Figure 5B; Figure 5\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from EM data in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "d9bab60f-0f02-4bf0-bf79-4c14ecb694d5",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C87",
+      "claim": "Dynamin-amphiphysin complexes formed clusters with a mean size of 34.2 \u00b1 1.7 nm in the presence of GDP and vanadate.",
+      "claim_type": "EXPLICIT",
+      "source": "As already described, dynamin-amphiphysin complexes formed clusters with a few helices in the presence of GDP and vanadate (34.2 \u00b1 1.7 nm, mean cluster size \u00b1 s.e.m.) (Figure 5C, Dynamin + Amphiphysin; Figure 5\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from EM data in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "12c120e3-d3da-4345-baec-9d6b105bad2c",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C88",
+      "claim": "Dynamin alone formed larger-sized clusters with a mean size of 59.3 \u00b1 4.7 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, dynamin alone formed larger-sized clusters consist of more helical complexes (59.3 \u00b1 4.7 nm, mean cluster size \u00b1 s.e.m.) (Figure 5C, Dynamin; Figure 5\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from EM data in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "591e3b7e-d08f-46a4-88d9-58075d31b9c5",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C89",
+      "claim": "Amphiphysin contributes to the effective generation of properly sized vesicles by controlling the cluster formation of dynamin-amphiphysin helical complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that amphiphysin contributes to the effective generation of properly sized vesicles by controlling the cluster formation of dynamin-amphiphysin helical complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data in Figure 5 showing smaller clusters and vesicles with amphiphysin.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "ee38be10-87ed-4b8c-964e-7eb0b4d2ae93",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C90",
+      "claim": "Membrane tubules are constricted in the presence of non-hydrolyzable GTP analogue.",
+      "claim_type": "EXPLICIT",
+      "source": "Membrane tubules are constricted in the presence of non-hydrolyzable GTP analogue (Chen et al., 2004; Mears et al., 2007; Zhang and Hinshaw, 2001) and more constricted with a GTP-loaded GTPase defective K44A mutant (Sundborger et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior studies supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "db585c7f-5c8f-461d-82ef-5fe43e398a16",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C91",
+      "claim": "Membrane tubules are more constricted with a GTP-loaded GTPase defective K44A mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Membrane tubules are constricted in the presence of non-hydrolyzable GTP analogue (Chen et al., 2004; Mears et al., 2007; Zhang and Hinshaw, 2001) and more constricted with a GTP-loaded GTPase defective K44A mutant (Sundborger et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior studies supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "169c6fcc-fb11-45c5-8bfd-9f8de18698a5",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C92",
+      "claim": "Membrane tubules are evenly constricted with non-hydrolyzable GTP analogues and periodical membrane constriction sites which lead to membrane fission are not created.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, membrane tubules are evenly constricted and periodical membrane constriction sites which lead to membrane fission is not created.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior observations in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "9f6a8e32-5f91-4f52-bfe1-b050c41dc546",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C93",
+      "claim": "Membrane constriction sites are created in the presence of GDP and vanadate.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, we showed that membrane constriction sites are created in the presence of GDP and vanadate, which mimicked a transition state of GTP hydrolysis (GDP\u22c5Pi), suggesting that complete hydrolysis of GTP is required for the formation of constriction sites leading to membrane fission (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by EM data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "ed581d7b-20fb-461d-ad1e-9e9f6ed7da84",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C94",
+      "claim": "Complete hydrolysis of GTP is required for the formation of constriction sites leading to membrane fission.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, we showed that membrane constriction sites are created in the presence of GDP and vanadate, which mimicked a transition state of GTP hydrolysis (GDP\u22c5Pi), suggesting that complete hydrolysis of GTP is required for the formation of constriction sites leading to membrane fission (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion inferred from the EM data showing constriction with GDP-vanadate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "9c8c00dc-2e3c-4081-b9d5-759dcd78a210",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C95",
+      "claim": "Membrane fission has never been observed in the presence of GDP and vanadate.",
+      "claim_type": "EXPLICIT",
+      "source": "Membrane fission has never been observed in the presence of GDP and vanadate, suggesting that release of GTP hydrolytic products (GDP and/or phosphate) is a prerequisite for membrane fission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the current study and prior work.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "5109f490-f6a3-483f-b212-a4e9188da0ab",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C96",
+      "claim": "Release of GTP hydrolytic products (GDP and/or phosphate) is a prerequisite for membrane fission.",
+      "claim_type": "EXPLICIT",
+      "source": "Membrane fission has never been observed in the presence of GDP and vanadate, suggesting that release of GTP hydrolytic products (GDP and/or phosphate) is a prerequisite for membrane fission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that fission does not occur with GDP-vanadate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "318602a4-fee3-4c32-8876-907b2203d457",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C97",
+      "claim": "The super-constricted state of dynamin does not constrict the membrane sufficiently enough to reach the hemi-fission state.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the super-constricted state of dynamin does not constrict the membrane sufficiently enough to reach the hemi-fission state (Sundborger et al., 2014) and membrane tension and/or torsion is required to overcome the energy barrier to fission (Bashkirov et al., 2008; Morlot et al., 2012; Roux et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior studies supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "76bb371c-6a54-4969-8ca8-5fdbabc00111",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C98",
+      "claim": "Membrane tension and/or torsion is required to overcome the energy barrier to fission.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the super-constricted state of dynamin does not constrict the membrane sufficiently enough to reach the hemi-fission state (Sundborger et al., 2014) and membrane tension and/or torsion is required to overcome the energy barrier to fission (Bashkirov et al., 2008; Morlot et al., 2012; Roux et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior studies supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "11a619c7-c3a1-41c9-bf75-ffafc7b8ddf4",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C99",
+      "claim": "GTP hydrolysis induces constriction of the dynamin-amphiphysin helices as well as clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we showed that GTP hydrolysis induces constriction of the dynamin-amphiphysin helices as well as clustering (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by HS-AFM data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "1bb7494e-3f0d-458d-843e-fba05cb242ee",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C100",
+      "claim": "Radial and longitudinal remodeling of the dynamin-amphiphysin helices may give local tension and/or torsion to the membrane tube at the edge of the clusters to drive membrane fission.",
+      "claim_type": "EXPLICIT",
+      "source": "These radial and longitudinal remodeling of the dynamin-amphiphysin helices may give local tension and/or torsion to the membrane tube at the edge of the clusters to drive membrane fission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanistic explanation for how clustering leads to fission.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "5346f61b-7774-4efe-8df7-421140089f49",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C101",
+      "claim": "The dynamin-amphiphysin clusters may serve as a lipid diffusion barrier that causes friction leading to membrane scission.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the dynamin-amphiphysin clusters may serve as a lipid diffusion barrier that causes friction leading to membrane scission (Simunovic et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an alternative speculative mechanism supported by citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "5fc64063-d279-4d29-acfc-2d80f2b11b56",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C102",
+      "claim": "Longitudinal rearrangement upon GTP hydrolysis similar to the cluster formation by the dynamin-amphiphysin complexes was observed in an EM study on the dynamics of dynamin with lipid nanotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "Longitudinal rearrangement upon GTP hydrolysis similar to the cluster formation by the dynamin-amphiphysin complexes was also observed in an EM study on the dynamics of dynamin with lipid nanotubes (Stowell et al., 1999) and more recently by HS-AFM analyses on dynamics of \u0394PRD dynamin (Colom et al., 2017), suggesting that the longitudinal rearrangement is an intrinsic property of dynamin during membrane fission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior studies supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "0bc563b4-6ea5-4a68-a611-10ca601640b8",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C103",
+      "claim": "Longitudinal rearrangement was observed by HS-AFM analyses on dynamics of \u0394PRD dynamin.",
+      "claim_type": "EXPLICIT",
+      "source": "Longitudinal rearrangement upon GTP hydrolysis similar to the cluster formation by the dynamin-amphiphysin complexes was also observed in an EM study on the dynamics of dynamin with lipid nanotubes (Stowell et al., 1999) and more recently by HS-AFM analyses on dynamics of \u0394PRD dynamin (Colom et al., 2017), suggesting that the longitudinal rearrangement is an intrinsic property of dynamin during membrane fission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from a recent study supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "573c0960-32a5-4f64-ad05-bf57e0050b1b",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C104",
+      "claim": "The longitudinal rearrangement is an intrinsic property of dynamin during membrane fission.",
+      "claim_type": "EXPLICIT",
+      "source": "Longitudinal rearrangement upon GTP hydrolysis similar to the cluster formation by the dynamin-amphiphysin complexes was also observed in an EM study on the dynamics of dynamin with lipid nanotubes (Stowell et al., 1999) and more recently by HS-AFM analyses on dynamics of \u0394PRD dynamin (Colom et al., 2017), suggesting that the longitudinal rearrangement is an intrinsic property of dynamin during membrane fission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of similar behavior in different studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "4e948206-997e-45e1-ad77-b06a61688b0b",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C105",
+      "claim": "Amphiphysin enhances dynamin's GTPase activity in the presence of liposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In our previous studies, we showed that amphiphysin enhances dynamin's GTPase activity in the presence of liposomes (Takei et al., 1999; Yoshida et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the authors' prior work supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "c395cec8-ce29-443b-887a-2dba6bf49877",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C106",
+      "claim": "Tubular structures have long been known to be present in various synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Tubular structures have long been known to be present in various synapses, and they are described as 'membrane tubules' (Heuser and Miledi, 1971), 'cisternae' (Heuser and Reese, 1973), 'synaptic tubules' (Samorajski et al., 1966) or 'anastomosing tubules' (Ekstr\u00f6m von Lubitz, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior studies supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "0bd80d4a-4eb8-4657-b0a3-8b7947665ed3",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C107",
+      "claim": "The tubules are enriched in endocytic proteins including dynamin, synaptojanin, amphiphysin, and endophilin.",
+      "claim_type": "EXPLICIT",
+      "source": "The tubules are enriched in endocytic proteins including dynamin, synaptojanin, amphiphysin, and endophilin (Fuchs et al., 2014; Takei et al., 1998), and the presence of the tubules becomes more prominent when synapses are stimulated (Fuchs et al., 2014; Takei et al., 1998), or when membrane fission is blocked in dynamin 1 K.O. mice (Ferguson et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior studies supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "396f74aa-b9f1-4b55-8161-78f1b452bdee",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C108",
+      "claim": "The presence of the tubules becomes more prominent when synapses are stimulated.",
+      "claim_type": "EXPLICIT",
+      "source": "The tubules are enriched in endocytic proteins including dynamin, synaptojanin, amphiphysin, and endophilin (Fuchs et al., 2014; Takei et al., 1998), and the presence of the tubules becomes more prominent when synapses are stimulated (Fuchs et al., 2014; Takei et al., 1998), or when membrane fission is blocked in dynamin 1 K.O. mice (Ferguson et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior studies supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "f51cb6ac-955b-4eaf-8dab-28fa4bda824a",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C109",
+      "claim": "The presence of the tubules becomes more prominent when membrane fission is blocked in dynamin 1 K.O. mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The tubules are enriched in endocytic proteins including dynamin, synaptojanin, amphiphysin, and endophilin (Fuchs et al., 2014; Takei et al., 1998), and the presence of the tubules becomes more prominent when synapses are stimulated (Fuchs et al., 2014; Takei et al., 1998), or when membrane fission is blocked in dynamin 1 K.O. mice (Ferguson et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior studies supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "df1a0365-254a-48b4-9d88-a662bdf6f389",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C110",
+      "claim": "The tubular structures represent endocytic intermediate at which dynamin-amphiphysin-dependent synergic vesicle formation takes place in the synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings strongly suggest that the tubular structures represent endocytic intermediate at which dynamin-amphiphysin-dependent synergic vesicle formation takes place in the synapse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cited observations about tubule composition and behavior.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "9c69cad7-5f58-4f33-bd99-ec30a21a6046",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C111",
+      "claim": "Other BAR domain proteins, endophilin and syndapin, are also implicated in synaptic vesicle recycling.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides amphiphysin, other BAR domain proteins, endophilin and syndapin, are also implicated in synaptic vesicle recycling (Dittman and Ryan, 2009; Koch et al., 2011; Milosevic et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior studies supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "995c47f9-7f6b-4f05-83cf-e527517969d6",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C112",
+      "claim": "Endophilin potently inhibits the dynamin-mediated membrane fission by intercalating dynamin rungs and preventing their trans-interactions required for membrane fission.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, recent study showed that endophilin potently inhibits the dynamin-mediated membrane fission by intercalating dynamin rungs and preventing their trans-interactions required for membrane fission (Hohendahl et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from a recent study supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "0b9e56e8-ea2b-46a8-aeb5-80e7107a00a1",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C113",
+      "claim": "The dynamin-mediated membrane fission is inhibited when an excess of amphiphysin co-assembles with dynamin.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the dynamin-mediated membrane fission is also inhibited when an excess of amphiphysin co-assembles with dynamin (Figure 1\u2014figure supplement 2C), it is rather stimulatory when the molar ratio of dynamin to amphiphsyin is around 1:1 (Yoshida et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 1\u2014figure supplement 2C and prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "a4803987-8638-4170-bf4a-40be1566339e",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "claim_id": "C114",
+      "claim": "Dynamin-mediated membrane fission is stimulatory when the molar ratio of dynamin to amphiphysin is around 1:1.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the dynamin-mediated membrane fission is also inhibited when an excess of amphiphysin co-assembles with dynamin (Figure 1\u2014figure supplement 2C), it is rather stimulatory when the molar ratio of dynamin to amphiphsyin is around 1:1 (Yoshida et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior work supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b05fc055-84a9-4ca8-b782-4d96b463d2a0",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "GTP hydrolysis is required for membrane constriction and fission by dynamin-amphiphysin complexes. EM time-course experiments show that lipid tubules form multiple constriction sites over time after GTP addition, leading to vesicle generation within 1 minute. Non-hydrolyzable GTP analogues (GTP\u03b3S, GMP-PNP) do not induce constriction, while GDP+vanadate (mimicking the GDP\u00b7Pi transition state) induces constriction but not fission. Complete fission requires dissociation of hydrolytic products.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C55 are well-supported by systematic EM experiments in Figure 1 showing temporal progression and nucleotide-state dependence. The use of multiple nucleotide analogs provides strong evidence for the requirement of GTP hydrolysis for constriction and product release for fission. The experimental design appropriately tests different stages of the GTPase cycle.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "727b07ca-bad5-4045-9ea8-5f586654d3ea",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Dynamin-amphiphysin helical complexes transiently form clusters upon GTP hydrolysis. EM analysis using lipid nanotubes shows that helices form clusters after GTP addition with shortened pitch (15.0\u00b10.3 nm vs 20.0\u00b10.5 nm in controls). Clustering occurs specifically in the GDP\u00b7Pi transition state (mimicked by GDP+vanadate) but not with non-hydrolyzable GTP analogues or GDP alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C66 are supported by EM data in Figure 2 showing clustering behavior correlated with nucleotide states. Quantitative pitch measurements provide objective evidence. The use of lipid nanotubes improves resolution compared to LUVs. The clustering is reproducibly observed and correlates with the transition state of GTP hydrolysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "c80b06af-3df6-4077-84b4-b69e688a225c",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "HS-AFM reveals dynamic clustering and constriction of dynamin-amphiphysin helices during GTP hydrolysis. Before GTP addition, helices are immobile with regular pitch (22.0\u00b10.7 nm). After GTP addition, helices become mobile, undergo longitudinal movement, and form clusters with shorter pitch (15.7\u00b10.3 nm). Particle tracking demonstrates that GTP stimulates longitudinal movement leading to cluster formation, accompanied by radial constriction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C77 and C99 are strongly supported by HS-AFM data in Figure 3 and Videos 3-5. The real-time imaging directly demonstrates the dynamic process of clustering and provides quantitative measurements of pitch changes and helix mobility. Particle tracking analysis objectively documents the longitudinal movement. This represents a significant technical achievement providing direct visualization of the process.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "f1a6dbfd-c9bb-4617-924d-1072343da4ef",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Membrane constriction and fission occur at protein-uncoated regions flanking dynamin-amphiphysin clusters. HS-AFM imaging shows that after cluster formation, membrane constriction occurs at bare membrane regions adjacent to clusters. Height measurements show stepwise reduction from ~30 nm to 20-25 nm or below at these flanking sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C82 are well-supported by HS-AFM data in Figure 4 and Videos 6-8. The spatial correlation between cluster formation and constriction at flanking regions is clearly demonstrated. Quantitative height profiles provide objective evidence for constriction. This is a key mechanistic finding showing where fission occurs relative to protein localization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "f492b750-a5d8-4720-91ff-1d041c7c8e22",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Amphiphysin controls cluster size and enhances efficient vesicle biogenesis. Vesicles formed by dynamin-amphiphysin complexes (70.0\u00b12.9 nm) are significantly smaller than those formed by dynamin alone (204.6\u00b112.3 nm). Constriction site intervals are shorter with amphiphysin (150.3\u00b19.8 nm vs 193.5\u00b115.8 nm). Dynamin-amphiphysin clusters (34.2\u00b11.7 nm) are smaller than dynamin-only clusters (59.3\u00b14.7 nm).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C89 are supported by quantitative EM measurements in Figure 5 with appropriate statistical analysis. The comparison between dynamin alone and dynamin-amphiphysin complexes is systematic and shows consistent effects on vesicle size, constriction intervals, and cluster size. This reveals a novel regulatory function of amphiphysin beyond GTPase stimulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "2d050cb9-d7de-4efe-8cb6-f820a752fe1c",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Membrane fission activity by dynamin-amphiphysin complexes is stoichiometry sensitive, with optimal activity at 1:0.5 or 1:1 molar ratios and reduced efficiency at 1:2 ratio.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 are supported by EM data in Figure 1\u2014figure supplement 2C showing stoichiometry-dependent fission. However, C46 is speculative regarding the mechanism. The observation is clear but the mechanistic explanation requires further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "3a6e91c4-849b-4a73-b9dd-bd3dada01e5a",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Clustering behavior of dynamin-amphiphysin complexes on lipid nanotubes is not stoichiometry dependent, unlike fission activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 is supported by EM data in Figure 2\u2014figure supplement 1 showing clustering at different stoichiometric ratios. This distinguishes clustering from fission activity and suggests different regulatory mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "47b31f44-2974-42a2-8dc8-b74e8d057a42",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Dynamin-amphiphysin complexes induce tubulation of LUVs in the absence of GTP, and this tubulation is not stoichiometry dependent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 are supported by EM data in Figure 1A and Figure 1\u2014figure supplement 2B. This confirms prior observations and validates the in vitro system used in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "4d7ffb7d-f4f0-4803-8199-083314cde226",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Membrane fission was not observed in one HS-AFM sample, probably due to strong attachment of the lipid tubule to the substrate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C76 is explicitly speculative. While the observation is documented, the explanation is not tested. Alternative explanations (e.g., incomplete GTP hydrolysis, insufficient protein coverage) are not ruled out.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "f9698148-78cf-4002-9dca-b6c4f96f552f",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Two potential mechanisms are proposed for how clustering drives fission: (1) radial and longitudinal remodeling creates local tension/torsion at cluster edges, or (2) clusters serve as lipid diffusion barriers causing friction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C100-C101 are explicitly speculative mechanistic proposals. While C101 cites supporting work (Simunovic et al., 2017), neither mechanism is directly tested in this study. These represent hypotheses for future investigation rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background claims establishing the biological context, protein structures, and prior knowledge about dynamin and amphiphysin in clathrin-mediated endocytosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C38 represent established knowledge from the field, supported by appropriate citations. These provide necessary context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "7070a8ff-b920-4641-838e-310901f5d209",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Discussion claims contextualizing the current findings within prior literature on dynamin mechanisms, membrane fission requirements, and roles of BAR domain proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C90-C114 appropriately cite and discuss prior work to contextualize the current findings. These are accurate representations of the literature and help interpret the new results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    },
+    {
+      "id": "5da54af0-f859-44ba-9358-a302b17dc98a",
+      "content_id": "79a271ba-78d7-437f-b34f-003e8d20e592",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Complete GTP hydrolysis is required for formation of constriction sites, and release of hydrolytic products is required for completing fission. Multiple rounds of GTP hydrolysis likely occur during the 10-minute time course.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C96 are well-supported by the nucleotide analog experiments. C53 is a reasonable inference from the time course. The conclusion that product release is required for fission is strongly supported by the observation that GDP-vanadate causes constriction but not fission.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:01:56.722243Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3ba486d4-4509-4942-b875-decf0850a788",
+      "result_id": "b05fc055-84a9-4ca8-b782-4d96b463d2a0"
+    },
+    {
+      "claim_id": "9647c42c-25e6-4682-b95c-da722b053c22",
+      "result_id": "b05fc055-84a9-4ca8-b782-4d96b463d2a0"
+    },
+    {
+      "claim_id": "ef63f3d4-1e09-47ed-8de4-aed0f20f6e50",
+      "result_id": "b05fc055-84a9-4ca8-b782-4d96b463d2a0"
+    },
+    {
+      "claim_id": "969dba6b-2c43-401a-8e50-96c46a8cd877",
+      "result_id": "b05fc055-84a9-4ca8-b782-4d96b463d2a0"
+    },
+    {
+      "claim_id": "e68e6c3e-def8-4dc8-8fa9-10003750c15f",
+      "result_id": "b05fc055-84a9-4ca8-b782-4d96b463d2a0"
+    },
+    {
+      "claim_id": "800d2c9d-04cb-4870-b473-23f20a0f1be8",
+      "result_id": "b05fc055-84a9-4ca8-b782-4d96b463d2a0"
+    },
+    {
+      "claim_id": "0fa4e1ce-b82c-4bc2-8c9d-1b50d408f547",
+      "result_id": "b05fc055-84a9-4ca8-b782-4d96b463d2a0"
+    },
+    {
+      "claim_id": "9cf7d9dd-4bbd-4bdb-8846-68066dd73e15",
+      "result_id": "b05fc055-84a9-4ca8-b782-4d96b463d2a0"
+    },
+    {
+      "claim_id": "8120757c-8d32-43d3-a9f9-cb7313636692",
+      "result_id": "b05fc055-84a9-4ca8-b782-4d96b463d2a0"
+    },
+    {
+      "claim_id": "1b0b9303-8d56-457d-82d2-abfa27ef3432",
+      "result_id": "727b07ca-bad5-4045-9ea8-5f586654d3ea"
+    },
+    {
+      "claim_id": "af6c6217-081b-496f-982a-4b4099d3168a",
+      "result_id": "727b07ca-bad5-4045-9ea8-5f586654d3ea"
+    },
+    {
+      "claim_id": "9f268f23-87ed-486d-bd87-b3173d86965a",
+      "result_id": "727b07ca-bad5-4045-9ea8-5f586654d3ea"
+    },
+    {
+      "claim_id": "fa07fff4-3305-472d-bba3-d168c6508c67",
+      "result_id": "727b07ca-bad5-4045-9ea8-5f586654d3ea"
+    },
+    {
+      "claim_id": "baeddd62-f5a7-4f34-aa50-9113941f21a0",
+      "result_id": "727b07ca-bad5-4045-9ea8-5f586654d3ea"
+    },
+    {
+      "claim_id": "748326d5-c9dd-46ea-83f5-335da575c842",
+      "result_id": "727b07ca-bad5-4045-9ea8-5f586654d3ea"
+    },
+    {
+      "claim_id": "175f642b-52ed-4918-b2a3-c9dbd3864ed3",
+      "result_id": "727b07ca-bad5-4045-9ea8-5f586654d3ea"
+    },
+    {
+      "claim_id": "430998ff-5463-4893-9723-5df93f394527",
+      "result_id": "727b07ca-bad5-4045-9ea8-5f586654d3ea"
+    },
+    {
+      "claim_id": "8e65ccaf-23c2-4777-8da5-b985f6fca1b6",
+      "result_id": "727b07ca-bad5-4045-9ea8-5f586654d3ea"
+    },
+    {
+      "claim_id": "0f5194bc-ddd3-4f9b-82f5-8cead8ed4e51",
+      "result_id": "727b07ca-bad5-4045-9ea8-5f586654d3ea"
+    },
+    {
+      "claim_id": "bdc59132-decc-4269-a721-376630d9292b",
+      "result_id": "c80b06af-3df6-4077-84b4-b69e688a225c"
+    },
+    {
+      "claim_id": "d571bf44-58e4-462a-bb93-a3c340e07e44",
+      "result_id": "c80b06af-3df6-4077-84b4-b69e688a225c"
+    },
+    {
+      "claim_id": "c4228d79-e759-4001-a579-af7ddba92975",
+      "result_id": "c80b06af-3df6-4077-84b4-b69e688a225c"
+    },
+    {
+      "claim_id": "46c71e5f-acbf-4d79-9505-1856907e0152",
+      "result_id": "c80b06af-3df6-4077-84b4-b69e688a225c"
+    },
+    {
+      "claim_id": "4e1ba57a-2126-4216-b48d-eebca083d93e",
+      "result_id": "c80b06af-3df6-4077-84b4-b69e688a225c"
+    },
+    {
+      "claim_id": "26ba7ed0-71f8-4033-979e-d32cd1c56860",
+      "result_id": "c80b06af-3df6-4077-84b4-b69e688a225c"
+    },
+    {
+      "claim_id": "c9a12ca7-9ddc-4833-8cb0-2ac2f2a74ff2",
+      "result_id": "c80b06af-3df6-4077-84b4-b69e688a225c"
+    },
+    {
+      "claim_id": "f231a6dc-cd42-4b55-a75b-1421e32566bf",
+      "result_id": "c80b06af-3df6-4077-84b4-b69e688a225c"
+    },
+    {
+      "claim_id": "7806630c-e938-46c9-a936-5615d8b08639",
+      "result_id": "c80b06af-3df6-4077-84b4-b69e688a225c"
+    },
+    {
+      "claim_id": "11a619c7-c3a1-41c9-bf75-ffafc7b8ddf4",
+      "result_id": "c80b06af-3df6-4077-84b4-b69e688a225c"
+    },
+    {
+      "claim_id": "0193566c-c88c-4930-9f98-54cd0b181b9a",
+      "result_id": "f1a6dbfd-c9bb-4617-924d-1072343da4ef"
+    },
+    {
+      "claim_id": "11c5c544-3072-4227-9f61-8cdaaadab1f7",
+      "result_id": "f1a6dbfd-c9bb-4617-924d-1072343da4ef"
+    },
+    {
+      "claim_id": "18a1a56c-d34a-4f72-8d11-10a46097d175",
+      "result_id": "f1a6dbfd-c9bb-4617-924d-1072343da4ef"
+    },
+    {
+      "claim_id": "5a8d180d-08a1-47dc-9efb-56051d5d31ad",
+      "result_id": "f1a6dbfd-c9bb-4617-924d-1072343da4ef"
+    },
+    {
+      "claim_id": "8f356e99-7370-480b-9cdd-0a644da7b066",
+      "result_id": "f1a6dbfd-c9bb-4617-924d-1072343da4ef"
+    },
+    {
+      "claim_id": "39f82e17-514d-4030-9616-9ce4ca25c9cd",
+      "result_id": "f492b750-a5d8-4720-91ff-1d041c7c8e22"
+    },
+    {
+      "claim_id": "f4854b68-8a9e-45d6-942f-e7c0ad3c1ade",
+      "result_id": "f492b750-a5d8-4720-91ff-1d041c7c8e22"
+    },
+    {
+      "claim_id": "89a56204-cd47-4158-978a-a716fa231f7a",
+      "result_id": "f492b750-a5d8-4720-91ff-1d041c7c8e22"
+    },
+    {
+      "claim_id": "4c76ecc2-d9a2-4f9a-98b4-d7e8980a478c",
+      "result_id": "f492b750-a5d8-4720-91ff-1d041c7c8e22"
+    },
+    {
+      "claim_id": "d9bab60f-0f02-4bf0-bf79-4c14ecb694d5",
+      "result_id": "f492b750-a5d8-4720-91ff-1d041c7c8e22"
+    },
+    {
+      "claim_id": "12c120e3-d3da-4345-baec-9d6b105bad2c",
+      "result_id": "f492b750-a5d8-4720-91ff-1d041c7c8e22"
+    },
+    {
+      "claim_id": "591e3b7e-d08f-46a4-88d9-58075d31b9c5",
+      "result_id": "f492b750-a5d8-4720-91ff-1d041c7c8e22"
+    },
+    {
+      "claim_id": "f3fae69b-4fb4-4602-a393-4c4ca0e5a28a",
+      "result_id": "2d050cb9-d7de-4efe-8cb6-f820a752fe1c"
+    },
+    {
+      "claim_id": "8d6cc287-97e7-45b6-b0b6-678af8fd4cba",
+      "result_id": "2d050cb9-d7de-4efe-8cb6-f820a752fe1c"
+    },
+    {
+      "claim_id": "18952c73-581e-45c9-9c8a-b5353dac9ea8",
+      "result_id": "2d050cb9-d7de-4efe-8cb6-f820a752fe1c"
+    },
+    {
+      "claim_id": "9ea005bd-02e4-49fb-b43f-60f1c60645c8",
+      "result_id": "2d050cb9-d7de-4efe-8cb6-f820a752fe1c"
+    },
+    {
+      "claim_id": "fdbd02a3-d920-48ed-9240-b1bce10bf5ee",
+      "result_id": "3a6e91c4-849b-4a73-b9dd-bd3dada01e5a"
+    },
+    {
+      "claim_id": "054c6bb8-3e96-47f0-a244-8eaae7354ad3",
+      "result_id": "47b31f44-2974-42a2-8dc8-b74e8d057a42"
+    },
+    {
+      "claim_id": "48a2382d-74f0-424c-8b26-1bd29704935a",
+      "result_id": "47b31f44-2974-42a2-8dc8-b74e8d057a42"
+    },
+    {
+      "claim_id": "da9c2951-d767-4a76-92d0-f111766e0139",
+      "result_id": "4d7ffb7d-f4f0-4803-8199-083314cde226"
+    },
+    {
+      "claim_id": "1bb7494e-3f0d-458d-843e-fba05cb242ee",
+      "result_id": "f9698148-78cf-4002-9dca-b6c4f96f552f"
+    },
+    {
+      "claim_id": "5346f61b-7774-4efe-8df7-421140089f49",
+      "result_id": "f9698148-78cf-4002-9dca-b6c4f96f552f"
+    },
+    {
+      "claim_id": "0ab651dd-a9cf-4124-a60f-fb9b1550b269",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "e17569b7-0828-4730-b683-d6e1d9543a25",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "f80cbc4f-084d-410c-b029-3cce45d3cda7",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "83f1afe4-e8ef-4105-8aae-c5f45b4e9cbc",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "799a39a5-a193-42b8-8496-2afab1bbc7ea",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "ce643e1e-80e8-48cd-8982-00271eed0e65",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "f997b9e8-b6da-4a1e-b7b7-addd632f9487",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "9780b82a-71ae-4db3-8a33-2cb3d3c50a5f",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "4e90c112-f8b5-40d9-a8c5-31f85cd38fc2",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "bc7789d4-5f57-40f0-bcf8-47009a90b575",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "fde4870d-6b7e-4991-98b2-fb1e21c5fb53",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "d0e8088f-e6c7-47b6-a524-3934926668cc",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "4a7637a6-8e96-4522-bd9f-45bb025134eb",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "92bbe638-4bcf-4f13-862b-1e4c60bef0e2",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "ee65c45e-150f-4af4-8691-97b1b56c2a36",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "e08cdf85-227e-4a64-a16f-4c3e2683747e",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "0ce48f23-1556-483e-8c1c-ea2c98b9d407",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "7381f6e4-a41b-478c-9b05-0c7947312989",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "543ec4f3-f158-4cae-952e-7f9d3cef2567",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "ac83866a-485f-4c77-8b3e-a6ea4de41c1c",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "15146949-3b4f-4b16-9af4-88ff5bee9f4c",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "4fadd776-f60d-4f90-81ab-fe4285cb15c0",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "1ae77ad8-b68c-4348-a5bd-23af0f1b684d",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "37f961f9-9889-474b-9d22-b32126ae1fdb",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "1678854d-bc56-4402-8291-29b220ce7d5a",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "9fb3bf00-e5da-435d-8b32-5c139b671898",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "ad62e49d-4506-458a-93cc-3eaeae8a3197",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "494a88f6-ea46-4897-8b74-6ac34ee95f80",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "66b85c81-00dd-46d6-b073-af1f44f693ff",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "0331ae78-5cf6-414c-8660-bb5dc05e2290",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "ed1192a3-551a-4c94-a6ef-df95767966a2",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "ece9ef97-e78e-4f02-b3b9-37771f27b751",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "e202c345-8573-4354-abbd-8f60c5737468",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "4e819159-ea96-40c3-a48d-5d90956d52d9",
+      "result_id": "0e7c4cfb-f3a0-433c-986a-0c51b3a4a776"
+    },
+    {
+      "claim_id": "c294a7a5-dead-43bd-8651-a86603e21dc7",
+      "result_id": "7070a8ff-b920-4641-838e-310901f5d209"
+    },
+    {
+      "claim_id": "ee38be10-87ed-4b8c-964e-7eb0b4d2ae93",
+      "result_id": "7070a8ff-b920-4641-838e-310901f5d209"
+    },
+    {
+      "claim_id": "db585c7f-5c8f-461d-82ef-5fe43e398a16",
+      "result_id": "7070a8ff-b920-4641-838e-310901f5d209"
+    },
+    {
+      "claim_id": "169c6fcc-fb11-45c5-8bfd-9f8de18698a5",
+      "result_id": "7070a8ff-b920-4641-838e-310901f5d209"
+    },
+    {
+      "claim_id": "318602a4-fee3-4c32-8876-907b2203d457",
+      "result_id": "7070a8ff-b920-4641-838e-310901f5d209"
+    },
+    {
+      "claim_id": "76bb371c-6a54-4969-8ca8-5fdbabc00111",
+      "result_id": "7070a8ff-b920-4641-838e-310901f5d209"
+    },
+    {
+      "claim_id": "5fc64063-d279-4d29-acfc-2d80f2b11b56",
+      "result_id": "7070a8ff-b920-4641-838e-310901f5d209"
+    },
+    {
+      "claim_id": "0bc563b4-6ea5-4a68-a611-10ca601640b8",
+      "result_id": "7070a8ff-b920-4641-838e-310901f5d209"
+    },
+    {
+      "claim_id": "573c0960-32a5-4f64-ad05-bf57e0050b1b",
+      "result_id": "7070a8ff-b920-4641-838e-310901f5d209"
+    },
+    {
+      "claim_id": "4e948206-997e-45e1-ad77-b06a61688b0b",
+      "result_id": "7070a8ff-b920-4641-838e-310901f5d209"
+    },
+    {
+      "claim_id": "c395cec8-ce29-443b-887a-2dba6bf49877",
+      "result_id": "7070a8ff-b920-4641-838e-310901f5d209"
+    },
+    {
+      "claim_id": "0bd80d4a-4eb8-4657-b0a3-8b7947665ed3",
+      "result_id": "7070a8ff-b920-4641-838e-310901f5d209"
+    },
+    {
+      "claim_id": "396f74aa-b9f1-4b55-8161-78f1b452bdee",
+      "result_id": "7070a8ff-b920-4641-838e-310901f5d209"
+    },
+    {
+      "claim_id": "f51cb6ac-955b-4eaf-8dab-28fa4bda824a",
+      "result_id": "7070a8ff-b920-4641-838e-310901f5d209"
+    },
+    {
+      "claim_id": "df1a0365-254a-48b4-9d88-a662bdf6f389",
+      "result_id": "7070a8ff-b920-4641-838e-310901f5d209"
+    },
+    {
+      "claim_id": "9c69cad7-5f58-4f33-bd99-ec30a21a6046",
+      "result_id": "7070a8ff-b920-4641-838e-310901f5d209"
+    },
+    {
+      "claim_id": "995c47f9-7f6b-4f05-83cf-e527517969d6",
+      "result_id": "7070a8ff-b920-4641-838e-310901f5d209"
+    },
+    {
+      "claim_id": "0b9e56e8-ea2b-46a8-aeb5-80e7107a00a1",
+      "result_id": "7070a8ff-b920-4641-838e-310901f5d209"
+    },
+    {
+      "claim_id": "a4803987-8638-4170-bf4a-40be1566339e",
+      "result_id": "7070a8ff-b920-4641-838e-310901f5d209"
+    },
+    {
+      "claim_id": "7e324c54-db88-44ba-877d-080e776ab962",
+      "result_id": "5da54af0-f859-44ba-9358-a302b17dc98a"
+    },
+    {
+      "claim_id": "9f6a8e32-5f91-4f52-bfe1-b050c41dc546",
+      "result_id": "5da54af0-f859-44ba-9358-a302b17dc98a"
+    },
+    {
+      "claim_id": "ed581d7b-20fb-461d-ad1e-9e9f6ed7da84",
+      "result_id": "5da54af0-f859-44ba-9358-a302b17dc98a"
+    },
+    {
+      "claim_id": "9c8c00dc-2e3c-4081-b9d5-759dcd78a210",
+      "result_id": "5da54af0-f859-44ba-9358-a302b17dc98a"
+    },
+    {
+      "claim_id": "5109f490-f6a3-483f-b212-a4e9188da0ab",
+      "result_id": "5da54af0-f859-44ba-9358-a302b17dc98a"
+    }
+  ],
+  "comparisons": []
+}

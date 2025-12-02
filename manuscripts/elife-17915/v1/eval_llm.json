@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C41"
+    ],
+    "result": "A conserved genetic lifespan calendar exists in mammals, characterized by transcriptome trajectory turning points (TTTPs) that peak at 26 years in humans and 5 months in mice, with sex-specific delays in females. This calendar enables age prediction and defines a critical reorganization period in young adulthood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C41 collectively demonstrate a robust finding across multiple datasets (human Braincloud, mouse hippocampus) with strong statistical support (p<1\u00d710\u207b\u00b3\u00b2\u00b3 for mouse sex differences, R\u00b2=0.88-0.94 for age prediction). The TTTP peak is replicated across species, validated with multiple regression methods, and shows consistent sex differences. Control analyses (removing X-chromosome genes) strengthen the findings. The 90% cumulative TTTP threshold by age 40 in humans provides additional temporal specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Gene expression trajectories accurately predict chronological age using support vector machines with high precision (R\u00b2=0.88 in humans, R\u00b2=0.94 in mice) using minimal gene sets (40 probes in humans, 100 in mice).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 present age prediction results with clear performance metrics and appropriate machine learning methodology. The high R\u00b2 values across the entire age range and the minimal number of features required demonstrate robust predictive power. However, the manuscript lacks details on cross-validation strategy and potential overfitting assessment, though the general approach appears sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C49",
+      "C53"
+    ],
+    "result": "Cell-type specific gene expression changes follow a sequential pattern across the lifespan, with neuronal changes prominent in young adults and conserved across species and brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C49, C53 are supported by EWCE analysis across multiple datasets (Braincloud, Somel, mouse hippocampus) with Bonferroni-corrected significance. The sequential pattern of endothelial\u2192microglial\u2192neuronal\u2192oligodendrocyte changes is demonstrated with appropriate statistical controls. The conservation across human neocortex and mouse hippocampus strengthens the biological significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Postsynaptic density (PSD) genes and PSD95 supercomplex genes show significant enrichment in TTTPs during young adulthood (22-33 years in humans, 126-151 days in mice), validated across multiple datasets and analytical methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 demonstrate synaptic gene enrichment with multiple lines of evidence: PeGeT scores (p<0.0009 for hPSD, p=0.0019 for PSD95), ALiGeT windows validated in independent datasets (Braincloud, Somel, BrainSpan), and DeGeT enrichment across consecutive age sets. The convergence of evidence across species, brain regions, and analytical methods strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Mouse synaptosome proteomics reveals age-dependent changes in Ca\u00b2\u207a- and Na\u207a/K\u207a-ATPases during early adulthood, recapitulating previous findings of decreased ATPase activity in aged rodents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by mass spectrometry data showing differential expression of ion channels and ATPases (FDR-adjusted p<0.005). The finding is consistent with cited prior work, providing orthogonal validation of transcriptome results at the protein level. However, the manuscript would benefit from more detailed quantification of the specific ATPase changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C75",
+      "C78",
+      "C79",
+      "C81"
+    ],
+    "result": "Schizophrenia susceptibility genes show significant enrichment in TTTPs during young adulthood (22-26 years), with earlier onset in males (20-26 years) than females (26-28 years), and are predominantly down-regulated prior to turning points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C81 present a major finding linking genetic susceptibility to age of onset. The enrichment is validated across multiple gene sets (integrative, de novo, GWAS), analytical methods (ALiGeT, DeGeT, PeGeT), and datasets (Braincloud, Somel, BrainSpan). The sex difference (p=4.7\u00d710\u207b\u00b9\u2074) aligns with clinical observations. Proteomic validation in mice (p=0.018) and directional bias (91% down-regulated) strengthen the mechanistic interpretation. Multiple control analyses address potential confounders.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Adult-onset monogenic neurological disorders show enrichment in synaptic proteins that change during maturation (p=0.00008), with no equivalent enrichment for congenital disorders, supporting a role for the genetic calendar in disease timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C90 demonstrate selective enrichment of adult-onset disorders using Human Phenotype Ontology annotations with appropriate statistical testing. The negative control (congenital disorders, p=0.45) strengthens the specificity of the finding. The specific examples (Atp2a2, Atp1a3, Vcp, Atl1, Dmxl2) with fold-change data and p-values provide molecular detail. However, the small sample size (6 detected genes from 39 total) limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "Six other major brain disorders (autism, intellectual disabilities, multiple sclerosis, ALS, Parkinson's, Alzheimer's) showed no significant enrichment in prefrontal cortex early adult turning points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C91 reports negative findings for other disorders. While the authors appropriately note limitations (different gene list sizes, tissue specificity, technical approaches), the negative results are difficult to interpret definitively. The lack of enrichment could reflect true biological differences, insufficient power, inappropriate tissue sampling, or methodological limitations. The authors acknowledge these caveats, making this an appropriately cautious negative result rather than a definitive conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The young adult brain undergoes dramatic reorganization of gene expression around age 26, largely completed by age 40, with enrichment in neuronal and synaptic genes including PSD proteins and PSD95 supercomplexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 synthesize multiple lines of evidence into a coherent model of young adult brain reorganization. The 90% plateau by age 40 corresponds with anatomical data on frontal cortex development (C95, cited). The enrichment in specific molecular complexes (PSD, PSD95) provides mechanistic detail. This represents a well-supported integration of transcriptomic and proteomic findings with appropriate citations to supporting anatomical literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The genetic calendar modifies synapse proteome composition and cellular processes across the lifespan, with early endothelial changes corresponding to vasculature maturation, oligodendrocyte changes to precursor cell regulation, and microglial upregulation coinciding with synaptic pruning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 integrate the cell-type enrichment findings with established developmental biology. The interpretations are supported by appropriate citations (vasculature: Caley and Maxwell 1970, Daneman et al. 2010; oligodendrocytes: He et al. 2009; microglia/pruning: Schafer et al. 2012). The temporal sequence aligns with known developmental milestones, providing biological plausibility to the transcriptomic observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The genetic calendar model proposes that schizophrenia results from mutations in genes whose expression reorganization in young adults produces inappropriate synapse signaling, explaining the age of onset, sex differences, and progression of the disorder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C106 present a mechanistic model that integrates the empirical findings. While the model is consistent with the data presented (TTTP enrichment, sex differences, synaptic gene involvement), it remains speculative regarding causation. The model explains correlation between gene expression changes and disease onset but does not demonstrate that the expression changes cause disease. Functional validation in model systems would be needed to elevate this from a plausible hypothesis to a supported mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Specific schizophrenia-susceptibility genes with prominent TTTPs (Rgs4, Snap25, Kalrn, Htr2a, Nrg1) have established synaptic functions and their altered expression associates with psychiatric symptoms and earlier age of onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 identify specific genes linking the genetic calendar to schizophrenia pathophysiology. The genes are supported by high TTTP scores from the data and by citations to prior work on their psychiatric relevance (Etain et al. 2010, Guillozet-Bongaarts et al. 2014, Yin et al. 2013, Hill et al. 2006, Weickert et al. 2012, Abdolmaleky et al. 2011). This provides molecular specificity to the broader enrichment findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The genetic lifespan calendar reduces expression below critical thresholds in young adults, relevant to multiple neurological and psychiatric diseases including those with psychiatric comorbidity (Atp2a2 in Darier's disease, Atp1a3 in rapid-onset dystonia Parkinsonism).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 extend the genetic calendar concept beyond schizophrenia to other disorders. The specific examples are well-documented in the literature (Gordon-Smith et al. 2010, Brashear et al. 2012) and the proteomic data showing 50-80% reductions in haploinsufficiency disease genes provides quantitative support. This broadens the significance of the genetic calendar beyond a single disorder.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The genetic lifespan calendar represents an evolutionarily conserved mechanism that continuously modifies brain circuits by regulating postsynaptic protein levels, potentially adapting the organism for age-specific challenges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C116 present broad evolutionary and functional interpretations of the genetic calendar. While the conservation between humans and mice supports evolutionary antiquity, the proposed adaptive function (C116) is speculative. The claims about continuous modification and behavioral modulation are logical extensions of the data but lack direct experimental support. These represent reasonable hypotheses requiring further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "Environmental triggers of psychosis (cannabis, drugs of abuse) act on synaptic signaling mechanisms reorganized during the TTTP-peak, and schizophrenia gene enrichment persists when fetal samples are excluded, supporting a postnatal brain aging disorder model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 address gene-environment interactions and alternative models. C117 is supported by citations on drug effects on synaptic signaling (Camp et al. 2011, Abbas et al. 2009). C118 provides an important control analysis (Figure 5\u2014figure supplement 6) demonstrating that the enrichment is not dependent on fetal samples, addressing competing hypotheses about fetal origins of schizophrenia.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "The conserved TTTP-peak between mice and humans may assist in refining animal models of adult-onset brain disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C119 is a speculative statement about potential applications. While the conservation of the TTTP-peak is well-established in the manuscript, the utility for animal model development remains to be demonstrated. This represents a reasonable suggestion for future work rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C29"
+    ],
+    "result": "Prior literature establishes that psychiatric disorders arise during late brain development (teenage years/early twenties), with schizophrenia onset in mid-twenties showing 33% heritability and involving postsynaptic proteins, while correlation-based approaches are insufficient for analyzing age-dependent transcriptional complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C22, C29 summarize established knowledge from prior work with appropriate citations. These provide context for the current study and justify the methodological approach. The citations appear accurate and the characterization of prior work is fair. C22's critique of correlation-based methods is supported by the development of novel methods (TTTP, DeGeT, ALiGeT) that capture trajectory complexity.",
+    "result_type": "MINOR"
+  }
+]

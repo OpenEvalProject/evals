@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C29"
+    ],
+    "result": "MD simulations show that the 3BNC60 antibody lineage progressively increases in flexibility during affinity maturation. The P61A reversal mutation disrupts \u03b2-sheet structure causing partial unfolding, and conformational entropy calculations demonstrate progressive flexibility increase from germline to mature antibody.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 and C29 are well-supported by MD simulation data (Figures 1A, 3) showing RMSF and conformational entropy changes. The P61A mutation effect is consistent with experimental observations (C17), and the progressive flexibility increase is quantified through multiple metrics. The 100ns trajectories with five replicates provide adequate sampling for the conclusions drawn.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C30"
+    ],
+    "result": "MD simulations demonstrate that the CH103 antibody lineage becomes progressively more rigid during affinity maturation, following the traditional paradigm. This rigidification is attributed to reorientation of light chain relative to heavy chain and is consistent with non-broadly neutralizing antibody behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 and C30 are supported by MD simulation data (Figures 1B, 3) showing decreased RMSF and conformational entropy. The mechanistic explanation from Fera et al. (C20) provides context, and consistency with prior studies (C21) strengthens the conclusion. However, the magnitude of changes appears smaller than for 3BNC60, which is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C31"
+    ],
+    "result": "MD simulations reveal complex flexibility evolution in the PGT121 lineage where the intermediate (3hr/109L) is more flexible than both germline and mature forms. The increased flexibility in the intermediate is explained by loss of stabilizing hydrogen bonds between S27 and G68 due to the S27A mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 and C31 are supported by MD simulation data (Figures 1C, 1F, 2B, 3) and structural analysis (Figure 2\u2014figure supplement 1). The molecular mechanism involving hydrogen bond disruption is well-characterized. However, C27 acknowledges the explanation is complicated and other residues may contribute. The use of a chimeric construct rather than a true intermediate is a limitation but is appropriately disclosed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "Flexibility throughout antibodies can be significantly changed by mutations in both FWR and CDR regions, and affinity maturation in bnAbs does not always follow the rigidification paradigm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 is a synthesis conclusion supported by the combined MD simulation results from all three lineages (C16-C27, C29-C31). The evidence demonstrates diverse flexibility trajectories depending on lineage, contradicting the universal rigidification paradigm. This is a well-supported overarching conclusion from the MD work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C40"
+    ],
+    "result": "Affinity maturation model predicts that when germline BCRs bind strongly to conserved residues (high Ec), antibodies evolve by accumulating CDR mutations that strengthen binding and FWR mutations that increase rigidity, following the CH103-like pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C40 are supported by computational model simulations (Figures 4A, 6A). The model reproduces expected behavior for strong initial binding and is consistent with CH103 MD results and experimental data (C32). The qualitative nature of the model is appropriate for the mechanistic insights provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C41"
+    ],
+    "result": "Affinity maturation model predicts that when germline BCRs bind weakly to conserved residues, antibodies must acquire FWR mutations that increase flexibility early in maturation to survive selection against multiple variant antigens. Without flexibility changes, GC reactions are 35% less likely to succeed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 and C41 are supported by computational model simulations (Figures 4B, 6B). The 35% failure rate when flexibility changes are disallowed (C36) provides strong evidence for the necessity of flexibility evolution. The prediction of early FWR mutations (C41) is supported by phylogenetic data from Klein et al. (C42), providing experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The affinity maturation model predicts that after acquiring sufficiently strong binding to conserved residues (Ec), antibodies undergo rigidification through framework mutations, resulting in higher potency. This explains why PGT121 is more potent than 3BNC60.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by model simulations (Figures 4A, 4C) showing the transition from flexibility to rigidity as Ec strengthens. The explanation for PGT121 potency (C39) is consistent with MD results showing intermediate flexibility. However, C39 is somewhat speculative as direct potency comparisons are limited (acknowledged in C56-C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "The model predicts that if germline B cells binding strongly to conserved epitope residues can be activated, there is no need to induce FWR mutations affecting flexibility during subsequent immunization, considerably simplifying immunogen design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are logical inferences from the model results (C34-C41) and represent the key translational implication. The conclusion follows from the observation that strong initial Ec leads to CH103-like trajectories without requiring flexibility evolution. Citations to relevant immunogen design strategies (C44) provide context. This is appropriately framed as a suggestion rather than a definitive prescription.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The affinity maturation model reproduces experimentally observed binding affinity increases and shows qualitative robustness to parameter variations, including changes in antigen similarity (\u03bb).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54 and C60-C62 demonstrate model validation and robustness. Figure 4\u2014figure supplement 1 shows agreement with single-antigen AM experiments. Testing with \u03bb = 0.8 (C61-C62, Figure 4\u2014figure supplement 2) confirms qualitative patterns persist despite parameter changes. The authors appropriately acknowledge the qualitative nature of the model and do not claim quantitative precision.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Varying the generic binding energy parameter E0 in the affinity maturation model affects the preferred maturation pathway, with stronger E0 promoting 3BNC60-like trajectories and weaker E0 promoting CH103-like trajectories or GC extinction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by systematic parameter exploration (Figures 4\u2014figure supplement 3, 6\u2014figure supplement 1). The analysis shows how E0 modulates the balance between flexibility-increasing and rigidity-increasing mutations. The need to adjust antigen concentration when E0 is weak (C66) demonstrates appropriate consideration of parameter interactions. This sensitivity analysis strengthens confidence in the model's qualitative predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C58",
+      "C59"
+    ],
+    "result": "MD simulations used CHARMM36 force field with five 100ns trajectories per structure. Quasi-harmonic entropy analysis overestimates absolute entropy but relative differences are meaningful. Truncation of constant regions does not affect conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 and C58-C59 describe methodological details that are appropriately documented. The 100ns \u00d7 5 replicates provide reasonable sampling for flexibility analysis. The caveat about entropy overestimation (C58) is appropriately acknowledged, and the validation of truncation effects (C59, Figure 2\u2014figure supplement 2) addresses a potential concern. These are standard practices for this type of analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The affinity maturation model incorporates experimentally-derived parameters for B cell division rates, mutation probabilities, mutation outcomes, and the distribution of CDR vs FWR mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 describe model parameters derived from experimental literature with appropriate citations. The parameters for division rates (C47), mutation probabilities (C48), CDR hotspots (C49), mutation outcomes (C50), and deleterious mutation bias (C51) are all supported by cited experimental studies. This grounding in experimental data strengthens the model's biological realism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Background claims establish that HIV affects 37 million people with 2 million new infections in 2014, bnAbs show promise in animal models, but naturally evolve rarely and past vaccination attempts have failed to induce them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide background context supported by appropriate citations. These establish the motivation for the study. C2 lacks a specific citation but represents established knowledge. C7 appropriately acknowledges recent progress while noting the absence of an efficient protocol. These background claims are well-supported and provide appropriate context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background claims describe affinity maturation biology, unusual features of bnAbs including high somatic hypermutation in CDRs and FWRs, the role of FWR mutations in breadth, and the contradiction with the traditional rigidification paradigm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 provide biological background supported by appropriate citations. The description of affinity maturation (C8), bnAb structural features (C9), FWR mutation effects (C10-C13), and the traditional paradigm (C14) are well-documented. The analogy to PDZ domain adaptation (C15) provides conceptual motivation. These background claims appropriately frame the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C42",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Experimental observations from the literature show CH103 germline bound strongly to founder virus, 3BNC60 ancestors showed lower potency/breadth, viral diversification precedes bnAb development, and FWR mutations in 3BNC60 emerged early based on phylogenetic analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 and C42 are supported by appropriate citations and provide key experimental context for interpreting the model results. C55 establishes the biological relevance of sequential antigen exposure. C56-C57 provide indirect potency comparisons with appropriate caveats about data availability. These claims appropriately integrate prior experimental work with the current computational findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Prior studies showed that if B cells interact with multiple antigen variants in every cycle, bnAbs are less likely to evolve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by citations to Wang et al. 2015 and Shaffer et al. 2016. This prior finding justifies the modeling choice to have B cells encounter single variants at a time. The claim appropriately acknowledges relevant prior work that informs model design decisions.",
+    "result_type": "MINOR"
+  }
+]

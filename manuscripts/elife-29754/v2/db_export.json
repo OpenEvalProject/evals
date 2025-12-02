@@ -1,0 +1,1915 @@
+{
+  "submission": {
+    "id": "4cd5df3f-6ba4-4a44-99e3-1038e4106beb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:36:59.225045Z",
+    "updated_at": "2025-12-01T21:36:59.225045Z"
+  },
+  "content": [
+    {
+      "id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "submission_id": "4cd5df3f-6ba4-4a44-99e3-1038e4106beb",
+      "content_type": "manuscript",
+      "content_text": "# Small conductance Ca2+-activated K+ channels induce the firing pause periods during the activation of Drosophila nociceptive neurons\n\n## Authors\n\n- Koun Onodera<sup>1</sup> ([ORCID: 0000-0002-4203-9865](https://orcid.org/0000-0002-4203-9865))\n- Shumpei Baba<sup>1</sup>\n- Akira Murakami<sup>2</sup>\n- Tadashi Uemura<sup>1</sup> ([ORCID: 0000-0001-7204-3606](https://orcid.org/0000-0001-7204-3606))\n- Tadao Usui<sup>1</sup> ([ORCID: 0000-0002-0507-1495](https://orcid.org/0000-0002-0507-1495)) \u2020\n\n### Affiliations\n\n1. Graduate School of Biostudies Kyoto University Kyoto Japan\n2. Faculty of Science Kyoto University Kyoto Japan\n3. Graduate School of Informatics Kyoto University Kyoto Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn Drosophila larvae, Class IV sensory neurons respond to noxious thermal stimuli and provoke heat avoidance behavior. Previously, we showed that the activated neurons displayed characteristic fluctuations of firing rates, which consisted of repetitive high-frequency spike trains and subsequent pause periods, and we proposed that the firing rate fluctuations enhanced the heat avoidance (Terada et al., 2016). Here, we further substantiate this idea by showing that the pause periods and the frequency of fluctuations are regulated by small conductance Ca2+-activated K+ (SK) channels, and the SK knockdown larvae display faster heat avoidance than control larvae. The regulatory mechanism of the fluctuations in the Class IV neurons resembles that in mammalian Purkinje cells, which display complex spikes. Furthermore, our results suggest that such fluctuation coding in Class IV neurons is required to convert noxious thermal inputs into effective stereotyped behavior as well as general rate coding.\n\n## Introduction\n\nAnimals sense diverse environmental inputs, including noxious ones, by using specific sensory organs. In principle, sensory neurons convert the intensity of stimuli into the magnitude of firing rates upon sensory transduction (Adrian, 1926). For instance, mammalian C-fiber nociceptors convert gentle touch stimuli into relatively low firing rates, whereas injurious forces elicit higher rates (Delmas et al., 2011). The \u2018rate coding\u2019 is valuable for sensory transduction, particularly with regard to stimulus intensity; however, the firing rate has an intrinsic upper limit because interspike intervals (ISIs) cannot be shorter than refractory periods, when the membrane is unable to respond to another stimulus (Berry and Meister, 1998; Hodgkin and Huxley, 1952). This implies that firing rates should saturate at high intensities, at which point the sensory inputs are no longer converted properly in an intensity-to-firing rate correspondence. Therefore, we assume that some sensory neurons may use other coding mechanisms that are employed in the central nervous system (Avissar et al., 2013; Haddad et al., 2013).\n\nIn Drosophila larvae, Class IV dendritic arborization neurons (Class IV neurons) are primary nociceptive neurons that respond to multiple stimuli, including high temperature, strong mechanical force, and short-wavelength light (Hwang et al., 2007; Tracey et al., 2003; Xiang et al., 2010). When the neurons are activated by noxious thermal stimuli, for instance, their sensory transduction provokes heat avoidance behavior where larvae rotate around the long body axis in a corkscrew-like manner. A large number of genes responsible for the neuronal activation were identified by evaluating behavioral phenotypes and monitoring Ca2+ dynamics in mutant strains (Lee et al., 2005; Neely et al., 2011; Tracey et al., 2003; Zhong et al., 2012); however, there have been few studies which have investigated the coding mechanism of the nociception by recording electrical activity (Terada et al., 2016; Xiang et al., 2010).\n\nPreviously, we built a measurement system using a 1460 nm infrared (IR) laser as a local heating device (Figure 1\u2014figure supplement 1A) and found that Class IV neurons responded to noxious thermal stimuli with evoked characteristic fluctuations of firing rates, which consisted of repetitive high-frequency spike trains and subsequent quiescent periods (Terada et al., 2016). The occurrence of such \u2018burst-and-pause\u2019 firing patterns was coordinated with large Ca2+ increments over the entire dendritic arbors (designated as dendritic Ca2+ transients here) and was mediated by L-type voltage-gated Ca2+ channels (VGCCs). Knocking down L-type VGCCs in neurons abolished the burst-and-pause firing patterns, and the knockdown larvae displayed delayed heat avoidance behavior. Therefore, we hypothesized that the burst-and-pause firing patterns should be output signals transducing high intensity stimuli and provoking the robust avoidance behavior. However, the regulatory mechanism of the firing patterns remained unclear because L-type VGCCs produce depolarizing currents but not hyperpolarizing ones, which should underlie \u2018pause\u2019 periods. Here, we show that the pause period and the number of the burst-and-pause firing patterns are regulated by small conductance Ca2+-activated K+ (SK) channels, and that SK knockdown larvae display relatively fast heat avoidance. Furthermore, we show that one of the downstream neurons dramatically changes the response to two optogenetic activations of the Class IV neurons which have distinct numbers of burst-and-pause firing patterns. These findings strengthen the hypothesis and suggest that the \u2018fluctuation coding\u2019 is required to convert high intensities of noxious thermal stimuli into the robust, appropriate avoidance behavior as well as general rate coding.\n\n## Results\n\n### Dendritic Ca2+ transients precede unconventional spikes\n\nTo understand the molecular mechanism that generates burst-and-pause firing patterns in response to thermal stimuli, we first examined the temporal relationship with dendritic Ca2+ transients, whose occurrence was coordinated with the specific firing patterns in an all-or-none fashion. The temporal relationship between the Ca2+ transients and unconventional spikes (USs; Figure 1A) was unclear because the temporal resolution of monitoring Ca2+ dynamics was 30 Hz in our previous work (Terada et al., 2016), which was lower than the minimum frequency required to measure differences between spike timings (100\u2013500 Hz; L\u00fctcke et al., 2013). Therefore, we monitored Ca2+ dynamics with higher temporal resolution (100 Hz) by using a genetically encoded Ca2+ indicator GCaMP5G (Akerboom et al., 2012), which was brighter than the ratiometric indicator TN-XXL (Mank et al., 2008) as employed in our previous work (Terada et al., 2016). We then found that all the dendritic Ca2+ transients occurred concurrently with USs (Figure 1B,C and D). In contrast, when no US occurred or before the first US occurred, Ca2+ transients were never observed. To accurately measure the onset of Ca2+ transients with stochastic fluctuations, we used an event detection algorithm based on a Schmitt trigger approach (Grewe et al., 2010; L\u00fctcke et al., 2013) and fit each transient to exponential curves. We then found that the onset of Ca2+ transients preceded first-US timings and that the Ca2+ transients with multiple USs were stepwise (Figure 1E and F; \u0394t = \u2212 50.3\u00a0\u00b1\u00a09.2 ms, mean\u00a0\u00b1\u00a0s.e.m.). We also found that the peak amplitudes of Ca2+ transients displayed a positive linear correlation with the number of USs (Figure 1G; p=1.0\u00a0\u00d7\u00a010\u221211, rho\u00a0=\u00a00.82, Spearman\u2019s rank correlation test). Furthermore, ISIs were shorter before onsets of pauses (Figure 1H; p<0.05, paired-sample t-test with Bonferroni correction).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/29754/elife-29754-fig1-v2.jpg)\n\n**Figure 1.:** Dual recordings of Ca2+ dynamics and extracellular membrane potential in Class IV neurons expressing GCaMP5G. A 44 mW IR laser was focused onto the proximal dendritic arbors in filet preparations for 1 s (red-dashed boxes in B and C). (A) Pie chart of recordings (total n\u00a0=\u00a044 cells). To the right, the example illustrates the definition of unconventional spikes (USs, an index of the burst-and-pause firing patterns) as follows: (i) The first and second ISIs of four sequential spikes are less than 9 ms. (ii) The third ISI is longer than 20 ms. Here, sets of the three spikes except for the last one are designated as USs. (B\u2013D) Time courses of Ca2+ levels at distal dendrites (top) and spike trains (bottom). Data are classified into trials without USs (B) and with USs (C\u2013D). Gray lines indicate dendritic Ca2+ transients from each cell, and the green line represents the averaged amplitude. Red raster lines indicate USs. (B) Trials without USs did not generate Ca2+ transients (n\u00a0=\u00a019 cells; \u0394F/F0\u00a0=\u00a00.52 \u00b1 0.87%, mean\u00a0\u00b1\u00a0s.e.m. after laser irradiation). (C) Trials with USs generated Ca2+ transients (n\u00a0=\u00a025 cells; \u0394F/F0\u00a0=\u00a09.33 \u00b1 1.57%, mean\u00a0\u00b1\u00a0s.e.m. after laser irradiation). The first USs occurred at 0.55\u00a0\u00b1\u00a00.04 s (mean\u00a0\u00b1\u00a0s.e.m.). (D)Data (C) are aligned at the first-US end timings. The onset of the increase in Ca2+ levels approximately coincided with the first-US timings. (E)Representative time course of Ca2+ transients (gray) and the fitting traces (blue). The onset of Ca2+ transients actually preceded the first-US timings, and the Ca2+ transients with multiple USs were stepwise (right). (F) Temporal differences between the onset of Ca2+ transients and the first-US timings. The former occurred earlier than the latter (\u0394t = \u2212 50.3\u00a0\u00b1\u00a09.2 ms, mean\u00a0\u00b1\u00a0s.e.m.). (G) Amplitudes of Fpeak are plotted against total US numbers for each trial. Short black bars indicate the averages of Fpeak, and the green line is a linear regression of plotted data (p=1.0\u00a0\u00d7\u00a010\u221211, rho\u00a0=\u00a00.82, Spearman\u2019s rank correlation test). (H) Time course of ISIs. X of ISIX indicates the order of ISIs: (black) ISI\u22128\u2013ISI2 are the minimum ISI trains of non-US trials in Figure 1B. (red) ISI0 indicates the ISIs of the first-US end, and ISI1 represents the pause periods in Figure 1C. At the right, the y-axis was magnified to show that ISIs became shorter before the occurrence of the pause (mean\u00a0\u00b1\u00a0s.e.m.; *p<0.05, paired-sample t-test with Bonferroni correction).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29754/elife-29754-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) A schematic diagram of the recording system. As a heating device, the IR-laser beam passes through an objective and targets Class IV neurons in whole- or filet-mounted larvae. We measured firing responses of the neuronal somata using an extracellular recording electrode in filet preparations, and acquired Ca2+ or Cl\u2212 dynamics in whole-mount or filet preparations. (B) Maximum firing rates from Figure 1B\u2013C regarding the US number. The maximum firing rates of US trials (Figure 1C) was larger than that of non-US ones (Figure 1B; mean\u00a0\u00b1\u00a0s.e.m.; ***p<0.001, Student\u2019s t-test with Bonferroni correction), but it did not significantly change among trials with varying numbers of US.\n\nWe hypothesized that the Ca2+ influx mediated by L-type VGCCs amplifies membrane depolarization, which narrows down ISIs of bursts and also induces subsequent pauses. Therefore, we searched for ion channels responsible for generating inhibitory currents that could hyperpolarize membrane potentials during pause periods. We anticipated that activities of such channels must be regulated by intracellular Ca2+ concentration ([Ca2+]i) either directly or indirectly.\n\n### Electrophysiological screen of Cl\u2212 channels and K+ channels\n\nTo elucidate the regulatory mechanism of the pause, we screened ion channels that might generate hyperpolarizing currents: such channels include outward K+ and inward Cl\u2212 channels. The direction of passive transport of each ion through channels is dependent on the electrochemical gradient across the plasma membrane, but the intracellular Cl\u2212 concentration ([Cl\u2212]i) is largely different among cells (Kaila et al., 2014) and the direction of Cl\u2212 transport in Class IV neurons was unclear. We therefore monitored Cl\u2212 dynamics by a genetically encoded FRET-based Cl\u2212 indicator, SuperClomeleon (Grimley et al., 2013; Figure 2A) and found that the FRET ratio increased at both somata and distal dendrites upon IR-laser irradiation (Figure 2B and C). Because the FRET ratio of SuperClomeleon rises as the [Cl\u2212]i falls, we expected that the [Cl\u2212]i should decrease upon stimulation. These results suggest that the passive Cl\u2212 transport in Class IV neurons is outward and generates depolarizing currents but not hyperpolarizing ones. In parallel, we investigated the role of one of the Ca2+-activated Cl\u2212 channels, Subdued (Jang et al., 2015), and showed that it can contribute to membrane excitation in the neurons (Figure 2\u2014figure supplement 1). Thus, we excluded Cl\u2212 channels as candidate sources of hyperpolarizing currents.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/29754/elife-29754-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013C) Cl\u2212 dynamics of Class IV neurons expressing SuperClomeleon. The IR laser (30 and 46 mW) was focused onto the proximal dendritic arbors in whole-mount preparations for 1 s (red-dashed boxes in B). (A) A schematic diagram of Cl\u2212 indicator SuperClomeleon. The FRET ratio decreases upon an influx of Cl\u2212, due to quenching of YFP fluorescence by reversible Cl\u2212 binding. Left is a representative CFP image before IR-laser irradiation. (B) Time courses of the FRET ratio at somata (left) and distal dendrites (right) in wild-type neurons. Both of them increased upon IR-laser irradiation. Gray lines indicate each of the Cl\u2212 changes, and black lines represent the averaged amplitudes. The apparent efflux of Cl\u2212 ions was unexpected. (C) Amplitudes of \u0394Rpeak of SuperClomeleon increased with IR-laser power (mean\u00a0\u00b1\u00a0s.e.m.; ***p<0.001, Student\u2019s t-test). (D\u2013F) Responses of screened neurons expressing the Ca2+ indicator TN-XXL. The 48 mW IR laser was focused onto the proximal dendritic arbors in filet preparations for 1 s (red-dashed box in D). **p<0.05, ***p<0.01 versus control. (D) Representative recordings of control, Ca-\u03b11D (L-type VGCC \u03b11 subunit gene) RNAi and K+ channel-coding gene (Shaker, Shal, SK, Irk2 and Task7) RNAi neurons. (E) Boxplot of the total US number in screened neurons. The US number increased in five different gene knockdown neurons (Sh, Shal, SK, Irk2 and Task7; Wilcoxon rank sum test). (F) Amplitudes of the dendritic Ca2+ transients in screened channels. The amplitudes did not decrease except for Ca-\u03b11D RNAi neurons (mean\u00a0\u00b1\u00a0s.e.m.; Student\u2019s t-test). Bottom horizontal labels indicate symbols of knocked down genes and upper labels represent channel families: Kv, voltage-gated K+ channel; KCa, Ca2+-activated K+ channel; Kir, Inward rectifier K+ channel; K2P, Two-pore domain K+ channel.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29754/elife-29754-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The gating property of subdued channels is dependent on heat, voltage and Ca2+, and the expression in Class IV neuron is required for larval heat avoidance behavior (Jang et al., 2015). Considering the results of the Cl\u2212 ion direction (Figure 2B\u2013C), the possibility of subdued channels contributing to inhibitory currents is low, although an effect of the Subdued channels on neuronal activity cannot be completely excluded. (see below). (A\u2013B) Avoidance behavior of wild-type and subdued mutant larvae expressing TN-XXL in response to thermal stimulation (46\u00b0C and 50\u00b0C). The onsets of avoidance behavior were delayed at both temperatures, and the fraction of no response was increased in mutant larvae at 46\u00b0C. (A) The distribution of response latency (Wilcoxon rank sum test). NR, no response group. (B) Percentage of larvae responding within 5 s with 95% Clopper-Pearson confidence intervals (Fisher\u2019s exact test). (C\u2013F) Responses of wild-type and subdued mutant neurons expressing TN-XXL with different IR-laser power (30, 38 and 44 mW). The IR laser was focused onto the proximal dendritic arbors in filet preparations for 1 s (upper red line in C). (C) Raster plots of firing (left) and magnitudes of the \u0394Rpeak corresponding to dendritic Ca2+ transients (right). Trials are sorted by descending order of the magnitude of the \u0394Rpeak. Red raster lines indicate USs. (D) Spike numbers decreased in subdued mutant neurons only at low IR-laser power (30 mW; boxplot; Student\u2019s t-test). (E\u2013F) subdued mutant neurons did not significantly change the number of USs (E; boxplot, Wilcoxon rank sum test) or the amplitudes of the dendritic Ca2+ transients (F; mean\u00a0\u00b1\u00a0s.e.m., Student\u2019s t-test). (G\u2013H) Cl\u2212 dynamics of subdued mutant neurons expressing SuperClomeleon. The IR laser (30 and 46 mW) was focused onto the proximal dendritic arbors in whole-mount preparations for 1 s (red-dashed boxes in G). (G) Time courses of the FRET ratio of SuperClomeleon at somata (left) and distal dendrites (right) in subdued mutant neurons. The ratio increased upon IR irradiation. Light blue lines indicate each of the Cl\u2212 changes, and dark lines represent the averaged amplitudes. (H)\u00a0Amplitudes of the \u0394Rpeak for SuperClomeleon increased with IR-laser power in subdued mutant neurons (mean\u00a0\u00b1\u00a0s.e.m., Student\u2019s t-test), but they were not significantly different from the values obtained for wild-type neurons in Figure 2C. Furthermore, there were no changes in physiological activities in subdued knockdown neurons (data not shown). These results suggested that Subdued channels can contribute to membrane excitation in Class IV neurons, although their function may be rather limited; in any case, the channels were not a source of inhibitory currents. *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29754/elife-29754-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Representative traces of control, Ca-\u03b11D, and SK RNAi neurons. Firing rates (middle) were computed from spike trains (top) by Gaussian kernel methods (\u03c3\u00a0=\u00a025 ms; Shimazaki and Shinomoto, 2010). The temporal differences in the firing rate were calculated (bottom, per 10 ms), and peaks of the time derivative were specified below a threshold (\u221212 Hz/10 ms) where the firing rate decreased by 60 Hz for 50 ms. The local minimum was more closely matched to detect burst-and-pause firing patterns than the local maximum that was used in our previous work (Terada et al., 2016). (B) Bar plots of the maximum firing rates in screened neurons (mean\u00a0\u00b1\u00a0s.e.m., Student\u2019s t-test). (C) Boxplots of the peak numbers in screened neurons. The peak number increased in five different gene knockdown neurons (Sh, Shal, SK, Irk2 and Task7; Wilcoxon rank sum test). Bottom horizontal labels indicate symbols of knocked down genes and upper labels indicate channel families: Kv, voltage-gated K+ channel; KCa, Ca2+-activated K+ channel; Kir, Inward rectifier K+ channel; K2P, Two-pore domain K+ channel. **p<0.05, ***p<0.01 versus control.\n\nNext, we focused on the roles of various K+ channels as mediators of hyperpolarization. The Drosophila melanogaster genome has 29 genes that encode pore-forming subunits of K+ channels, including 11 voltage-gated K+ channels (Sh, eag, etc.), 11 two-pore domain K+ channels (Task6, sand, etc.; Pimentel et al., 2016) and others (Figure 2\u2014source data 1). We first knocked down each of the candidate genes in Class IV neurons and recorded electrical activities of the knockdown neurons upon IR-laser irradiation, and examined the properties of burst-and-pause firing patterns. We found that the number of USs was significantly increased in five different gene knockdown neurons (Sh, Shal, SK, Irk2, and Task7; Figure 2D and E; p<0.05, Wilcoxon rank sum test). The five knockdown neurons also exhibited an increased number of \u2018peaks\u2019 (Figure 2\u2014figure supplement 2; p<0.05, Wilcoxon rank sum test), as defined in our previous study (Terada et al., 2016). Furthermore, although knocking down L-type VGCC abolishes dendritic Ca2+ transients (Terada et al., 2016), the five K+ channel knockdowns did not decrease the amplitudes of the Ca2+ transients (Figure 2F). These results suggested that these candidates participate in an unknown mechanism downstream of the Ca2+ influx. Notably, SK encodes a small conductance Ca2+-activated K+ channel, which can be activated by dendritic Ca2+ influx, and therefore could be one of the major factors underlying hyperpolarization. Thus, we explored how SK channels contributed to shaping the burst-and-pause firing patterns.\n\n### SK channels generate pause periods\n\nTo investigate the physiological roles of SK channels, we stimulated the knockdown neurons with different IR-laser powers. We then found that SK knockdown increased the firing properties, including the US number, peak number and maximum firing rate, even with low laser powers (Figure 3A\u2013D, Figure 3\u2014figure supplement 1A). Importantly, the SK knockdown shortened the pause periods (Figure 3E; median of pause period: [ppk-Gal4] 103.9 ms, [UAS-SK RNAi] 112.9 ms, [ppk>SK RNAi] 46.75 ms; p<0.001, Student\u2019s t-test with Holm correction), which suggested that SK-dependent current regulates the pause period. Similar firing changes were also observed in two additional SK knockdown neurons, targeting two different sequences in the SK gene (Figure 3\u2014figure supplement 2A\u2013D, Figure 3\u2014figure supplement 1B). We speculated that SK channels would be dramatically activated by the sudden increase in [Ca2+]i through L-type VGCCs, and would generate a transient hyperpolarizing K+ current. Nevertheless, it was important to rule out a more trivial explanation for the changes in firing patterns in the SK knockdown neurons, which might possibly be due to altered dendritic architecture. We quantified the dendritic morphology of SK knockdown neurons and concluded that the altered physiological responses were not due to morphological defects in the dendritic arbors (Figure 3\u2014figure supplement 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/29754/elife-29754-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013E) Responses of two control neurons (ppk-Gal4 and UAS-SK RNAiHMJ21196) and SK knockdown neurons (ppk>SK RNAiHMJ21196) with different IR-laser power settings (36, 40 and 48 mW). The IR laser was focused onto the proximal dendritic arbors in filet preparations for 1 s. (A)Raster plots of firing (left) and magnitudes of the \u0394Rpeak corresponding to dendritic Ca2+ transients (right). Trials are sorted in descending order of the magnitude of the \u0394Rpeak. Red raster lines indicate USs. (B\u2013D) SK knockdown neurons increased the US number, peak number (B and C; boxplots; Wilcoxon rank sum test with Holm correction), and amplitude of the dendritic Ca2+ transients (D; mean\u00a0\u00b1\u00a0s.e.m.; Student\u2019s t-test with Holm correction) with three different laser powers. (E) Boxplots of the pause periods triggered by the 48 mW IR laser. Pause periods were shortened in SK knockdown neurons (median: [ppk-Gal4] 103.9 ms (n\u00a0=\u00a014), [UAS-SK RNAi] 112.9 ms (n\u00a0=\u00a021), [ppk\u00a0>SK RNAi] 46.75 ms (n\u00a0=\u00a034); Student\u2019s t-test with Holm correction). (F\u2013G) Avoidance behavior of two control larvae and SK knockdown larvae in response to thermal stimulation (42, 44, and 46\u00b0C). (F) The distribution of response latency. SK knockdown larvae displayed fast onsets of responses upon moderate stimulation (44\u00b0C; median: [ppk-Gal4] 3.80 s, [UAS-SK RNAi] 4.86 s, [ppk>SK RNAi] 1.80 s; Wilcoxon rank sum test with Holm correction). Neither control nor SK knockdown larvae showed avoidance behavior upon lower stimulation (42\u00b0C), whereas most of the larvae displayed it with higher stimulation (46\u00b0C). NR, no response group. \u2018a\u2019 is a P value versus ppk-Gal4, and \u2018b\u2019 is that versus UAS-SK RNAi. (G) Percentage of larvae responding within 5 s with 95% Clopper-Pearson confidence intervals. The response rate of SK knockdown larvae increased upon moderate stimulation (44\u00b0C: [ppk-Gal4] 56.9%, [UAS-SK RNAi] 50.0%, [ppk>SK RNAi] 79.2%; Fisher\u2019s exact test with Holm correction). *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29754/elife-29754-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (Left 3 columns) Data were classified into two groups: non-US and US. When USs occurred, the maximum firing rate tended to increase and several time points of the maximum firing rate overlapped with US timings. Gray bars indicate mean\u00a0+\u00a0s.e.m., and the right scatter plots show the distribution of all trials (see the bottom box). (Right 1 column) Maximum firing rate including both non-US and US trials. SK knockdown tended to increase the maximum firing rates upon all laser powers tested. Black bars indicate mean\u00a0+s.e.m. (A) Quantification of Figure 3A. (B) Quantification of Figure 3\u2014figure supplement 2A. *p<0.05, **p<0.01, ***p<0.001, Student\u2019s t-test with Holm correction.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29754/elife-29754-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A\u2013D) Responses of control neurons and two different SK knockdown neurons (ppk>SK RNAiGD12601, ppk>SK RNAiKK107699) with different target sequences. The 44 mW IR laser was focused onto the proximal dendritic arbors in filet preparations for 1 s (upper red line in A). (A) Raster plots of firing. Red raster lines indicate USs. (B and C) Both SK knockdowns increased the US number and peak number in Class IV neurons (Wilcoxon rank sum test with Holm correction). (D) Boxplots of the pause periods. Pause periods tended to decrease in the SK knockdown neurons (median: [Control] 55.3 ms (n\u00a0=\u00a015), [SK RNAiGD] 51.1 ms (n\u00a0=\u00a029), and [SK RNAiKK] 38.1 ms (n\u00a0=\u00a024); Student\u2019s t-test with Holm correction). (E\u2013F) Avoidance behavior of control and the two SK knockdown larvae in response to thermal stimulation (42\u00b0C and 44\u00b0C). The SK knockdown larvae displayed faster onsets of responses, and the frequency of responses tended to increase compared to the control (42\u00b0C). (E) The distribution of response latency (Wilcoxon rank sum test with Holm correction). NR, no response group. (F) Percentage of larvae responding within 5 s with 95% Clopper-Pearson confidence intervals (Fisher\u2019s exact test with Holm correction). The pause periods were not completely abolished upon SK knockdown (see also Figure 3E), which raised the possibility that other Ca2+-activated K+ channels (e.g., slowpoke and slo2) could compensate for the loss of SK function. However, the pause periods of SK knockdown neurons did not decrease further by adding charybdotoxin (1 \u00b5M; KCa blocker; data not shown). *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/29754/elife-29754-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** It was recently reported that heat avoidance behavior is impaired in neuropeptide knockdown larvae, which show defects in the dendritic morphology of Class IV neurons (Honjo et al., 2016). This observation raised the possibility that such morphological defects might affect electrophysiological responses of the neurons. Therefore, we examined whether the SK knockdown also caused gross morphological defects in the neurons or not. To quantify dendritic morphology, we measured dendritic coverage (Honjo et al., 2016) with modifications. (A)Image processing for measuring dendritic coverage (see also Materials and methods). (B)Representative images of two control neurons and SK knockdown neurons. Here black and white in the original images are inverted to facilitate visualization. (C)Quantification of dendritic coverage ([ppk-Gal4] 39.8 \u00b1 2.2%, [UAS-SK RNAi] 56.6 \u00b1 2.0%, [ppk>SK RNAi] 38.4 \u00b1 1.3%, mean\u00a0\u00b1\u00a0s.e.m.; **p<0.01, Student\u2019s t-test with Holm correction). Dendritic coverage of SK knockdown neurons did not increase compared to those of the two controls. These results indicate that the physiological alterations of SK knockdown neurons are not simply due to morphological defects of dendritic arbors, but are a direct consequence of the different composition of K+ channels. Although the dendritic coverage of UAS-SK RNAi was relatively higher than ppk-Gal4 and ppk>SK RNAi, the difference may be explained by the observation that the coverage of other transgenic neurons were different in the absence or presence of ppk-Gal4 drivers ([UAS-Sur RNAi] 51.2 \u00b1 3.4%, [ppk>Sur RNAi] 44.6 \u00b1 1.6%, mean\u00a0\u00b1\u00a0s.e.m.).\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/29754/elife-29754-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A\u2013B) Avoidance behavior of driver control larvae (ppk-Gal4) and the knockdown larvae of three K+ channels (Shal, Irk2, and Task7 RNAi) in response to thermal stimulation (A: 42\u00b0C, B: 44\u00b0C). Percentage of larvae responding within 5 s did not change significantly in the knockdown larvae (Fisher\u2019s exact test). Black bars indicate 95% Clopper-Pearson confidence intervals. We could not investigate the behavior of Sh knockdown larvae because they hardly developed into mature larvae. (C) Representative recordings of spontaneous spikes in knockdown Class IV neurons. (D) Spontaneous spike rate in knockdown neurons. The rates were quantified from the spike trains for 3 s before stimulation ([ppk-Gal4] n\u00a0=\u00a022, [others] see Figure 2\u2014source data 1). The rates increased upon Shal, Irk2 and Task7 knockdowns; however, that of SK knockdown did not change significantly (Wilcoxon rank sum test compared to ppk-Gal4 driver control). Bottom horizontal labels indicate symbols of knocked down genes and upper labels represent channel families: Kv, voltage-gated K+ channel; KCa, Ca2+-activated K+ channel; Kir, Inward rectifier K+ channel; K2P, Two-pore domain K+ channel. *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/29754/elife-29754-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (A) A schematic diagram of the recording system. We activated ChR2-expressing Class IV neurons by blue LED illumination (0.37 mW/mm2) and measured the firing responses by extracellular recording in filet preparations. We also acquired Ca2+ dynamics of jRCaMP-expressing downstream neurons in optimized preparations. (B\u2013F) Responses of Class IV neurons activated with a blue LED for 3 s in a continuous fashion (\u2018continuous illumination\u2019) or in a pulsatile one (\u2018intermittent illumination\u2019). Each cell was stimulated by two illumination patterns temporally separated by a short resting interval of at least 1.5 min. (B)Raster plots of firing. Upper blue lines indicate the time course of LED illumination. (C) Representative traces of spike trains and the time derivative. Blue circles indicate negative peaks of the time derivative below a threshold (blue line, \u221212 Hz/10 ms). Even continuous illumination induced one or two peaks in some trials possible because of endogenous L-type VGCCs, but the number was much less than that upon intermittent illumination. (D\u2013F) Intermittent illumination induced more peak number in Class IV neurons than continuous illumination did (D; Wilcoxon signed-rank sum test); however, the two illumination patterns did not change total spike number (E; Wilcoxon signed-rank sum test) and maximum firing rate (F; Paired-sample t-test). Black short bars indicate median. (G\u2013H) Ca2+ dynamics of jRCaMP-expressing Goro neurons induced by optogenetic activations of Class IV neurons with a blue LED for 20 s (blue shade in G). Each sample was illuminated with a continuous or intermittent pattern. (G) Time courses of Ca2+ levels at soma (mean\u00a0\u00b1\u00a0s.e.m.). The fluorescence rapidly increased within the first 3 s upon both illuminations. (H)Maximum amplitudes of Ca2+ rises were larger upon intermittent activation than a continuous one (Welch\u2019s t-test). Dots and bars are mean\u00a0\u00b1\u00a0s.e.m. *p<0.05, **p<0.01, ***p<0.001.\n\nWe hypothesized that the burst-and-pause firing patterns should be output signals provoking robust heat avoidance behavior. To test this hypothesis, we examined how SK knockdown larvae responded to thermal stimulation, and we found that they displayed significantly faster onsets of responses; moreover, the response rate was increased upon moderate stimulation (44\u00b0C, Figure 3F and G; 42\u00b0C, Figure 3\u2014figure supplement 2E F). These results suggested that the enhanced behavioral responses are induced either by the increment in the US number or by the changes in the other firing properties (pause period and maximum firing rate, etc.). We previously reported that the L-type VGCC knockdown abolished the burst-and-pause firing patterns and provoked a delayed response to thermal stimuli (Terada et al., 2016). Consistent with these findings, we propose that the burst-and-pause firing patterns should be output signals provoking the robust avoidance behavior.\n\nWe also examined heat avoidance behavior of larvae, where one of the other three candidate genes (Shal, Irk2, and Task7) was knocked down; however, the respective knockdown larvae did not show any difference in the response rate of avoidance (Figure 3\u2014figure supplement 4A and B). Interestingly, the frequencies of spontaneous spikes were significantly increased in the three knockdown Class IV neurons but not in SK knockdown ones (Figure 3\u2014figure supplement 4C and D). Notably, a recent study revealed that the activation of Class IV neurons during larval development inhibited the synaptic transmission to second-order neurons via serotonergic feedback signaling and suppressed the avoidance behavior (Kaneko et al., 2017). In addition, the topographic projections of Class IV neurons are partially dependent on the levels of neuronal activity, including spontaneous spikes (Kaneko and Ye, 2015; Yang et al., 2014). Thus, the elevated basal neuronal activity during development might decrease the efficacy of synaptic transmission and/or remodel synaptic connections of the neurons, which would tend to counteract the effect of the increment of firing rate fluctuations on the avoidance behavior of these knockdown animals.\n\nThe downstream circuitry of the Class IV neurons has been identified through functional and anatomical approaches (Chin and Tracey, 2017; Hu et al., 2017; Ohyama et al., 2015; Vogelstein et al., 2014; Yoshino et al., 2017). To explore any differences in the responses of that circuitry when Class IV neurons evoked various firing patterns, we examined the neuronal activity of Goro neurons in response to optogenetic activations of Class IV neurons (Figure 3\u2014figure supplement 5A). We first investigated firing patterns induced by optogenetic activations in Class IV neurons and found that the numbers of burst-and-pause patterns were significantly different between continuous and intermittent illuminations (Figure 3\u2014figure supplement 5B\u2013D; p<0.001, Wilcoxon signed-rank sum test). Importantly, the total spike numbers and maximum firing rates were comparable between the two conditions (Figure 3\u2014figure supplement 5E and F). We then examined whether the activity of the downstream neurons should be differentially induced with the type of optogenetic manipulation. We found that the maximum amplitude of Ca2+ rises in Goro neurons was larger upon activation accompanied with more burst-and-pause firing patterns in Class IV neurons (Figure 3\u2014figure supplement 5G and H; [continuous] Fpeak\u00a0=\u00a011.3 \u00b1 1.8%, [intermittent] Fpeak\u00a0=\u00a019.4 \u00b1 2.2%, mean\u00a0\u00b1\u00a0s.e.m.; p<0.01, Welch\u2019s t-test). The results suggested that firing rate fluctuations were decoded in downstream circuits separately from the firing rate itself. Although the mechanism by which burst-and-pause firing patterns are read out as downstream electrical signals is still unknown, we can address this question by examining the activities of the other neurons in the circuitry.\n\n## Discussion\n\nAlthough the increased number of USs in SK knockdown neurons may initially seem counterintuitive, it can be explained comprehensively by two states of SK channels, at low and high activation levels (Figure 4A): (i) Before USs occur, most SK channels are in the steady state because the Ca2+/calmodulin association is restricted at low [Ca2+]i, and the SK current slightly inhibits the incidence of firings during burst periods. Therefore, SK knockdown attenuates the inhibition of firings, which raises the occurrence rate of USs. (ii) In contrast, after USs occur with dendritic Ca2+ transients, the channels are shifted to the activation state by high [Ca2+]i, and the current greatly promotes after-hyperpolarization, which generates the pause periods. Thus, the knockdown dramatically decreases the pause periods, which shortens the time requiring one burst-and-pause firing pattern. Due to the two impacts on firings, the US number per unit time would be expected to increase upon SK knockdown.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/29754/elife-29754-fig4-v2.jpg)\n\n**Figure 4.:** (A) Two states of SK channels, and the activation level. Here, calmodulin (CaM, ellipses) is illustrated by tethering to the intracellular terminus of the SK channels. Before USs (or without USs), the small SK current inhibits the incidence of firings during burst periods. After USs, the large SK current promotes after-hyperpolarization (AHP), which induces pause periods. See further explanation in Discussion. (B) The regulatory mechanism of burst-and-pause firing patterns by functional coordination between L-type VGCCs and SK channels in Class IV neurons. General rate coding occurs in Class IV neurons at relatively low temperatures; this is mediated by thermoTRPs (TrpA1 and Painless) and many types of voltage-gated ion channels (not illustrated here). At higher temperature, however, L-type VGCCs and SK channels convert the firing from continuous high-frequency patterns into burst-and-pause patterns. This mechanism allows fluctuation coding in sensory neurons.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29754/elife-29754-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Comparison between Class IV neurons and Purkinje cells. These two neuronal types have similar profiles in both morphology and physiology. We suggest that the regulatory mechanism of the former burst-and-pause firing pattern is similar to that of the latter complex spike. The image of a Purkinje cell was modified from Hong and De Schutter (2008). References: [1] Hwang et al. (2007), [2] Tracey et al., 2003, [3] Xiang et al. (2010), [4] Terada et al., 2016, [5] This study, [6] Nguyen-Vu et al. (2013), [7] Porras-Garc\u00eda et al. (2013), [8] Vogel et al. (2007), [9] Davie et al., 2008, [10] Grasselli et al. (2016), [11] Grueber et al. (2002), [12] Raman and Bean (1999), [13] Lev-Ram et al., 1992, and [14] Llin\u00e1s and Sugimori (1980). (B) Sensory transduction model in Class IV neurons. The firing rate increases with stimulus intensity above the threshold of activation in neurons (TH1), but it saturates at much higher intensity. In contrast, the US number increases above the threshold, thereby inducing dendritic Ca2+ transients (TH2). (C) Reading model for burst-and-pause firing patterns in downstream neurons. Our present and previous study (Terada et al., 2016) suggest that the US number should be read out as peaks of firing rate fluctuations downstream of Class IV neurons, and that fluctuation coding occurs in the sensory nervous system. When USs occur, the maximum firing rate also tends to increase, and several time points of the maximum firing rate overlap with US timings (Figure 1\u2014figure supplement 1B, Figure 3\u2014figure supplement 1). These results suggest that the USs could still be read out in accordance with rate coding. However, L-type VGCC knockdown did not change the maximum firing rate (Figure 2\u2014figure supplement 2B) but delayed avoidance behavior (Terada et al., 2016), which demonstrates that the rate coding itself cannot explain our findings, and supports our view that fluctuation coding occurs in Class IV neurons.\n\nWe hypothesize that the burst-and-pause firing patterns in Class IV neurons are regulated by functional coordination between L-type VGCCs and SK channels as follows (Figure 4B): (1) Thermosensitive channels including dTrpA1 and Painless (Luo et al., 2017; Neely et al., 2011; Tracey et al., 2003; Zhong et al., 2012) are activated by high-temperature stimulation and elicit the initial membrane depolarization in the dendritic arbors. (2) Once the membrane potential of soma exceeds a certain threshold by the prolonged stimulation, the neurons evoke action potentials and then increase firing rates with the intensity of stimulation (\u2018rate coding\u2019). (3) When L-type VGCCs in the dendritic arbors are activated by the high-order depolarization, they induce a large Ca2+ influx, which rapidly activates SK channels. (4) The activated SK channels produce a hyperpolarizing current, thereby generating the pause periods (\u2018fluctuation coding\u2019). We also suggest that other K+ channels may slightly contribute to the generation of pauses, because the pause periods were not completely abolished in SK knockdown neurons (Figure 3E, Figure 3\u2014figure supplement 2D). Although the other candidate channels, such as Sh and Shal, are not activated by the [Ca2+]i rise, most of them are voltage-dependent and hence hyperpolarize the membrane potential to some degree after depolarization, regardless of dendritic Ca2+ influx. Because the hyperpolarization suppresses the probability of firing, including US, the knockdown of those channels should lead to the increment of the US number.\n\nIn the mammalian cerebellar cortex, climbing fiber inputs evoke complex spikes of Purkinje cells, which induce a dendritic Ca2+ influx through Ca2+ spikes and subsequent pauses (Davie et al., 2008; Kitamura and H\u00e4usser, 2011; Llin\u00e1s and Sugimori, 1980; Mathews et al., 2012). The pause periods of post-complex spikes are regulated by dendritic Ca2+ spikes, which are dependent on P/Q-type VGCCs (Davie et al., 2008), and are modulated by after-hyperpolarization, which is largely dependent on SK2 channels (Grasselli et al., 2016). Considering these observations, the regulatory mechanism of complex spikes is remarkably similar to that of burst-and-pause firing patterns in Class IV neurons (Figure 4\u2014figure supplement 1A).\n\nIn principle, sensory neurons convert the intensity of stimuli into the magnitude of firing rates (Adrian, 1926). This form of rate coding also occurs in Class IV neurons at relatively low temperatures, and it is mediated by thermosensitive channels and many types of voltage-gated ion channels (Figure 4B, Figure 4\u2014figure supplement 1B and C). At higher temperature, however, L-type VGCCs and SK channels modulate the firing, transitioning from continuous high-frequency patterns into burst-and-pause patterns. Thus, we propose that the firing-rate-fluctuation coding allows sensory neurons to transmit strong stimuli not covered in rate coding, thereby provoking robust avoidance behavior.\n\n## Materials and methods\n\n### Drosophila mutant and transgenic strains\n\nThe transgenic line expressing the FRET-based Ca2+ indicator TN-XXL (Mank et al., 2008) in Class IV neurons was 3\u00d7[ppk-TN-XXL] (attP40) from our previous work (Terada et al., 2016). Mutants of one of the Anoctamin family channels, Subdued, were subdued\u03945265 and Df(3R)Exel6184, from C. Kim. A transgenic line expressing the split Gal4 was R72F11_AD; R52F07_DBD from T. Ohyama. A transgenic line expressing the FRET-based Cl\u2212 indicator SuperClomeleon was UAS-SuperClomeleon (FBst0059847; Haynes et al., 2015) from the Bloomington Stock Center. Transgenic lines expressing channel RNAi were from the Bloomington Stock Center and Vienna Drosophila Resource Center (see also Figure 2\u2014source data 1). Other transgenic lines were pickpocket (ppk)-Gal4 (FBst0032078), 20\u00a0\u00d7\u00a0UAS-GCaMP5G (FBst0042037), UAS-Dcr-2 (FBst0024651), TrpA1-QF (FBst0036348), R69F06-Gal4 (FBst0039497), 10XQUAS-ChR2.T159C-HA (FBst0052259), and 20XUAS-IVS-NES-jRCaMP1b-p10 (FBst0063793), from the Bloomington Stock Center.\n\nExact genotypes of individual animals used in figures are described below:\n\n### Figure 1\n\nppk-Gal4/20\u00a0\u00d7\u00a0UAS-GCaMP5G (attP40)\n\n### Figure 2\n\n(B\u2013C) ppk-Gal4/20\u00a0\u00d7\u00a0UAS SuperClomeleon (attP40)\n\n(D\u2013F) ppk-Gal4, 3\u00d7[ppk-TN-XXL] (attP2), UAS-each channel RNAi (see Figure 2\u2014source data 1)\n\n### Figure 3\n\nw1118; ppk-Gal4/+; 3\u00d7[ppk-TN-XXL] (attP2)/+ (\u2018ppk-Gal4\u2019)\n\nUAS-SK RNAiHMJ21196/+; 3\u00d7[ppk-TN-XXL] (attP2)/+ (\u2018UAS-SK RNAi\u2019)\n\nppk-Gal4/UAS-SK RNAiHMJ21196; 3\u00d7[ppk-TN-XXL] (attP2)/+ (\u2018ppk>SK RNAi\u2019)\n\n### Figure 1\u2014figure supplement 1\n\n(B) ppk-Gal4/20\u00a0\u00d7\u00a0UAS-GCaMP5G (attP40)\n\n### Figure 2\u2014figure supplement 1\n\n(A\u2013F) 3\u00d7[ppk-TN-XXL] (attP40)/+ (\u2018WT\u2019)\n\n3\u00d7[ppk-TN-XXL] (attP40)/+; subdued\u03945265/Df(3R)Exel6184 (\u2018subdued\u2019)\n\n(G\u2013H) ppk-Gal4/20\u00a0\u00d7\u00a0UAS SuperClomeleon (attP40); subdued\u03945265/Df(3R)Exel6184\n\n### Figure 2\u2014figure supplement 2\n\nppk-Gal4, 3\u00d7[ppk-TN-XXL] (attP2), UAS-each channel RNAi (see Figure 2\u2014source data 1)\n\n### Figure 3\u2014figure supplement 2\n\nw1118; ppk-Gal4/+; UAS-Dcr-2/+ (\u2018Control\u2019)\n\nw1118; ppk-Gal4/+; UAS-Dcr-2/UAS-SK RNAiGD12601 (\u2018SK RNAiGD\u2019)\n\nw1118; ppk-Gal4/UAS-SK RNAiKK107699; UAS-Dcr-2/+ (\u2018SK RNAiKK\u2019)\n\n### Figure 3\u2014figure supplement 1\n\n(A) w1118; ppk-Gal4/+; 3\u00d7[ppk-TN-XXL] (attP2)/+ (\u2018ppk-Gal4\u2019)\n\nUAS-SK RNAiHMJ21196/+; 3\u00d7[ppk-TN-XXL] (attP2)/+ (\u2018UAS-SK RNAiHMJ\u2019)\n\nppk-Gal4/UAS-SK RNAiHMJ21196; 3\u00d7[ppk-TN-XXL] (attP2)/+ (\u2018ppk>SK RNAiHMJ\u2019)\n\n(B)w1118; ppk-Gal4/+; UAS-Dcr-2/+ (\u2018Control\u2019)\n\nw1118; ppk-Gal4/+; UAS-Dcr-2/UAS-SK RNAiGD12601 (\u2018ppk>SK RNAiGD\u2019)\n\nw1118; ppk-Gal4/UAS-SK RNAiKK107699; UAS-Dcr-2/+ (\u2018ppk>SK RNAiKK\u2019)\n\n### Figure 3\u2014figure supplement 3\n\nw1118; ppk-Gal4/+; 3\u00d7[ppk-TN-XXL] (attP2)/+ (\u2018ppk-Gal4\u2019)\n\nUAS-SK RNAiHMJ21196/+; 3\u00d7[ppk-TN-XXL] (attP2)/+ (\u2018UAS-SK RNAi\u2019)\n\nppk-Gal4/UAS-SK RNAiHMJ21196; 3\u00d7[ppk-TN-XXL] (attP2)/+ (\u2018ppk>SK RNAi\u2019)\n\n3\u00d7[ppk-TN-XXL] (attP2)/UAS-Sur RNAiGL00506\n\nppk-Gal4/+; 3\u00d7[ppk-TN-XXL] (attP2)/UAS-Sur RNAiGL00506\n\n### Figure 3\u2014figure supplement 4\n\nw1118; ppk-Gal4/+; 3\u00d7[ppk-TN-XXL] (attP2)/+ (\u2018ppk-Gal4\u2019)\n\nppk-Gal4, 3\u00d7[ppk-TN-XXL] (attP2), UAS-each channel RNAi (see Figure 2\u2014source data 1)\n\n### Figure 3\u2014figure supplement 5\n\n(B\u2013F)\n\nTrpA1-QF 10XQUAS-ChR2.T159C-HA/R72F11_AD;\u00a020XUAS-IVS-NES-jRCaMP1b-p10/R52F07_AD\n\n(G\u2013H)\n\nTrpA1-QF 10XQUAS-ChR2.T159C-HA/+;\u00a020XUAS-IVS-NES-jRCaMP1b-p10/R69F06-Gal4\n\n(\u2018Class IV>ChR2, Goro>jRCaMP\u2019)\n\n### Electrophysiology and IR-laser irradiation\n\nPreparation of larvae and extracellular recording were performed as previously described (Terada et al., 2016, Figure 1\u2014figure supplement 1A). The foci of the infrared (IR)-laser irradiation were targeted onto the proximal dendritic arbors, essentially as described in our previous analyses. The time window for the experimental irradiation was 1 s except for data for Figure 2\u2014figure supplement 1C (30 mW IR, 5 s) and Figure 3A (36-mW IR, 5 s), which were quantified during the initial 1 s. Quantification of the maximum firing rate and the peak number of firing rate fluctuations was performed as previously described (Terada et al., 2016) with slight modifications (see Figure 2\u2014figure supplement 2A). For quantification of the pause period, we excluded USs that had occurred around the shutdown of IR-laser irradiation and were not accompanied by additional spikes during the irradiation.\n\n### Ca2+ imaging\n\nWe used a TN-XXL indicator except for Figure 1 because it allowed more robust quantitative analysis in the presence of perturbations along Z-axis motions by larval body wall muscles. Ca2+ imaging of TN-XXL-expressing Class IV neurons was performed as previously described (Terada et al., 2016). \u0394R is the change of fluorescence ratio and \u0394Rpeak is defined as the maximum. Ca2+ imaging of GCaMP5G was performed on filet preparations. GCaMP5G was excited with a 445 nm diode laser (CUBE 445\u201340C, Coherent, Santa Clara, CA). Images were acquired at 128\u00a0\u00d7\u00a0128 pixels with 1\u00a0\u00d7\u00a01 binning, in a 14-bit dynamic range, and with 10 ms exposure time. The fluorescence signal was captured by the imagers with 100 Hz through 578/105 bandpass filters (Semrock, Lake Forest, IL). The fluorescence change was defined as:\n\n$$\n\u0394F/F_{0}=(F_{n}-F_{0})/F_{0}\n$$\n\nwhere Fn is the fluorescence at time point n, and F0 is the average fluorescence before starting IR-laser irradiation (time window 100 ms). Fpeak is defined as the maximum amplitude of \u0394F/F0. The fluorescence itself declined during IR-laser irradiation, so the decay was subtracted for quantification.\n\n### Estimation of the onset timing of Ca2+ transients by curve fitting\n\nEstimation of onset timings of Ca2+ transients was performed as previously described (Grewe et al., 2010; L\u00fctcke et al., 2013) with slight modifications:\n\n$$\nf_{Ca}(t)=A(1\u2212e^{\u2212(t\u2212t_{0})/\\tau_{on}})\u22c5e^{\u2212(t\u2212t_{0})/\\tau_{off}\u00a0},\u00a0for\u00a0t>t_{0}\n$$\n\n\n\n$$\nf_{Ca}t=0,fort\\leqt_{0}\n$$\n\nHere, $t_{0}$ denotes the onset of Ca2+ transients, $\\tau_{on}$ the onset rise time constant, $\\tau_{off}$ the decay time constant, and A an amplitude scale parameter.$\\tau_{on}$ and $\\tau_{off}$ were manually adjusted for precise curve fitting in each trial ($\\tau_{on}$=50\u2013500 ms, $\\tau_{off}$ = 1.5\u201310 s). The value of A is dependent on the maximum of each Ca2+ transient. Before fitting, a baseline offset was subtracted from the trace segment. We used MATLAB scripts provided in L\u00fctcke et al. (2013).\n\n### Cl\u2212 imaging\n\nCl\u2212 imaging of SuperClomeleon-expressing Class IV neurons was performed on whole-mount preparations. The data acquisition system was the same as for Ca2+ imaging of TN-XXL (Terada et al., 2016). The ratio of SuperClomeleon was defined as:\n\n$$\nRatio_{SuperClomeleon}=YFP_{unmasked}-YFP_{masked}/CFP_{unmasked}-CFP_{masked}\n$$\n\nwhere YFPunmasked and CFPunmasked are signals of outlined cellular regions, and YFPmasked and CFPmasked are those of background.\n\n### Thermal behavioral assay\n\nAnimals were raised at 25\u02daC in an incubator with 12 hr light/dark cycles, and humidity was manually controlled (75\u201380%). Wandering third-instar larvae were gently picked up from the vial, washed three times with deionized water, and transferred to a 140\u00a0\u00d7\u00a0100 mm petri dish with fresh 2% agarose. Excessive water was removed from the animals. For acclimation, animals were allowed to rest on the plate for at least 5 min before testing. The response latency was measured as the time interval from the point at which the larva was first contacted by the probe until it initiated the first 360\u02da rotation. The time window was 5 s when we could maintain the contact more precisely than the general time window (10 s). About 20 larvae in the control and experimental groups were tested on the same day, and the assays were repeated for several days.\n\n### Image acquisition and quantification of dendritic morphology\n\nImaging ddaC neurons in whole-mount larvae was done as previously described (Shimono et al., 2014), with slight modifications. Wandering third-instar larvae were gently picked up from the vial, and washed once with 0.7% NaCl and 0.3% Triton X-100, and three times with deionized water. They were mounted in 50% glycerol on slides, between spacers made of vinyl tape. Images of YFP fluorescence in TN-XXL were acquired using a Nikon C1 laser-scanning confocal microscope. Original images of each neuron were composed of maximum intensity projections of confocal micrographs.\n\nDendritic coverage was quantified as previously described (Honjo et al., 2016) with appropriate modifications (Figure 3\u2014figure supplement 3A). Original images were inverted with black and white, and the images were converted through a Laplacian filter to enhance the edge contrast and the VanderBrug operator (Vanderbrug, 1976; VanderBrug, 1977) to enhance the line contrast. The images were binarized to detect the enhanced parts. The images were converted through a maximum filter to interpolate between separated dendrites. Spotted noise was removed by labeling. The images were overlaid with a grid of 34\u00a0\u00d7\u00a034 pixel squares (14\u00a0\u00d7\u00a014 \u00b5m), and squares containing signals were counted to calculate the dendritic coverage score. The preceding quantification steps were automatically processed with a MATLAB script. After that, false-positives and false-negatives were manually corrected on a MATLAB application using a graphical user interface (GUI).\n\n### Optogenetic neural activation\n\nOptogenetic activation of Class IV neurons was performed as previously described (Terada et al., 2016). Larvae expressing the ChR2 variant in Class IV neurons driven by TrpA1-QF (attP40) (Petersen and Stowers, 2011; Yoshino et al., 2017) were grown on fly food containing all trans-retinal (R2500; Sigma-Aldrich) at a final concentration of 0.5 mM. For optogenetic activation, a single long pulse (continuous illumination) or multiple cycles of 100 ms pulses followed by 100 ms pause intervals (intermittent illumination) were applied by using a collimated LED light lamp (M470L3-C1; ThorLabs, Newton, NJ) with an emission peak at around 470 nm (0.37 mW/mm2). Each cell was stimulated by two illumination patterns temporally separated by a pause interval of at least 1.5 min. The first stimulus was a continuous pattern, and the second was an intermittent one in half of the trials; and the sequence of stimulus patterns was reversed in the other half. We did not find any differences of neuronal activities dependent on the order of the two types of illuminations.\n\nCa2+ imaging of jRCaMP-expressing Goro neurons was performed on optimized filet preparations as follows: (i) After basic preparations on a glass slide, anterior thoracic epidermis was cut off. (ii) Epidermis under the larval brain was slit vertically from the anterior side, and the brain was gently pinned on the slide. (iii) The samples were incubated with 7 mM monosodium glutamate (Nacalai, Kyoto, Japan) for 8 min to prevent muscle contractions and eliminate motor feedback to the sensory circuits by saturating glutamate receptors at the neuromuscular junction (Kaneko et al., 2017).\n\nImaging was done as previously described (Arata et al., 2017), with slight modifications. Data were collected on an IX71 microscope (Olympus) equipped with an objective (UPLSAPO60XS NA 1.3, Olympus), Nipkow disk confocal system (CSU10, Yokogawa Electric, Tokyo, Japan), and an EM-CCD camera (iXonEM+ DU-888, Andor Technology, Belfast, UK). jRCaMP was excited with a 561 nm diode laser (Sapphire, Coherent, Santa Clara, CA), and was captured by the imagers at 1.5 s intervals through 610/60 bandpass filters (Chroma Technology, Bellows Falls, VT). The above imaging system was controlled by MetaMorph software (Molecular Devices, Sunnyvale, CA). Each sample was stimulated once either by continuous illumination or by intermittent illumination. Quantification of the fluorescence change was the same as for Ca2+ imaging of GCaMP5G.\n\n### Statistics\n\nData were analyzed and plotted using ImageJ (National Institutes of Health, Bethesda, MD), MATLAB (The MathWorks, Natick, MA), and Microsoft Excel (Microsoft Corporation, Redmond, WA). Details for each figure are shown in source data. To prevent misinterpretation as outliers in some figures (Figure 2E and F; Figure 2\u2014figure supplement 2), p<0.05 and p<0.01 are indicated by double and triple asterisks, respectively.\n\n### Abbreviations\n\n[Ca2+]i, intracellular Ca2+ concentration; [Cl\u2212]i, intracellular Cl\u2212 concentration; GUI, graphical user interface; IR, infrared; ISI, interspike interval; K2P, Two-pore domain K+ channel; KCa, Ca2+-activated K+ channel; Kir, Inward rectifier K+ channel; Kv, voltage-gated K+ channel; NR, no response group; ns, not significant; ppk, pickpocket; SK channel, small conductance Ca2+-activated K+ channel; US, unconventional spike; VGCC, voltage-gated Ca2+ channel.\n",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "661e9a87-de47-4a62-bc59-b502bf769b9c",
+      "submission_id": "4cd5df3f-6ba4-4a44-99e3-1038e4106beb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- K VijayRaghavan, National Centre for Biological Sciences, Tata Institute of Fundamental Research India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.29754.029](https://doi.org/10.7554/eLife.29754.029)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Small conductance Ca2+-activated K+ channels induce the firing pause periods during the activation of Drosophila nociceptive neurons\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by K VijayRaghavan as the Senior Editor and Reviewing Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn a previous study published in eLife, the authors' group reported that \"burst and pause\" activity pattern of Class IV multi-dendritic neurons in Drosophila larvae, accompanying a calcium transient, is induced by heat but not light. The authors also showed that a L-type voltage-gated calcium channel is required for the formation of calcium transients and proper behavioral response to noxious heat (rolling). However, molecular mechanisms that regulate the temporal pattern of the activity were unknown. In this manuscript, Terada et al. substantially extended this previous study by showing that the \"burst and pause\" activity is regulated in part by SK channels. SK channels are known to regulate a complex activity pattern in mammalian Purkinje cells, raising an interesting possibility that similar molecular strategies are utilized to generate fluctuated neural activity across species. I think that the results described in this manuscript represent substantial developments that merit publication as a Research Advance.\n\nEssential revisions:\n\nThere are a few concerns that the authors should address before publication of the article.\n\n1) The authors propose that calcium influx via L-type VGCCs activates the SK channels, which in turn generate the pause. However, the number of pauses is also increased when other potassium channels that are not dependent on calcium, such as Shaker, are knocked-down. How does this observation fit with the authors' model?\n\n2) Based on the observation that the behavioral response to heat stimulation is enhanced in the SK knockdown, the authors propose that the burst-and-pause firing pattern provokes the behavioral response. However, the enhanced behavioral responses could be due to changes in other electrophysiological properties of the cells, unrelated to the burst-and-pause firing pattern. In this regard, the authors may study if the behavioral responses are also enhanced in other gene knockdowns (Sh, Shal, Irk2, and Task7) that show increase in the burst-and-pause firing patterns. If this were the case, it will provide strong evidence that the burst-and-pause firing pattern is responsible for the induction of the rolling behavior.\n\n3) It would strengthen the study if the authors could show that some of the downstream neurons implicated in rolling behavior (e.g. Basin-4) responded differently to noxious heat stimuli when the fluctuation code is altered in SK and VGCC mutants.\n",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "243a30fb-ca5b-4c88-9ea3-8696812f4059",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C1",
+      "claim": "Class IV sensory neurons in Drosophila larvae respond to noxious thermal stimuli and provoke heat avoidance behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila larvae, Class IV sensory neurons respond to noxious thermal stimuli and provoke heat avoidance behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as an established fact about Class IV neurons.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "1e72df0b-31e5-407d-9b87-7ebae4a864e9",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C2",
+      "claim": "Activated Class IV neurons display characteristic fluctuations of firing rates consisting of repetitive high-frequency spike trains and subsequent pause periods.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we showed that the activated neurons displayed characteristic fluctuations of firing rates, which consisted of repetitive high-frequency spike trains and subsequent pause periods, and we proposed that the firing rate fluctuations enhanced the heat avoidance (Terada et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work (Terada et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "dde4bad2-c35d-4432-97c1-94e66bf09d07",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C3",
+      "claim": "Firing rate fluctuations in Class IV neurons enhance heat avoidance behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we showed that the activated neurons displayed characteristic fluctuations of firing rates, which consisted of repetitive high-frequency spike trains and subsequent pause periods, and we proposed that the firing rate fluctuations enhanced the heat avoidance (Terada et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed in previous work cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "42cb4a21-6ce7-4cd3-9efc-8a791a6624ac",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C4",
+      "claim": "The pause periods and the frequency of fluctuations in Class IV neurons are regulated by small conductance Ca2+-activated K+ (SK) channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we further substantiate this idea by showing that the pause periods and the frequency of fluctuations are regulated by small conductance Ca2+-activated K+ (SK) channels, and the SK knockdown larvae display faster heat avoidance than control larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the current study, supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "f23a19ab-8e36-4fae-b7ca-d71da0de8fe3",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C5",
+      "claim": "SK knockdown larvae display faster heat avoidance than control larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we further substantiate this idea by showing that the pause periods and the frequency of fluctuations are regulated by small conductance Ca2+-activated K+ (SK) channels, and the SK knockdown larvae display faster heat avoidance than control larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by behavioral data shown in Figure 3F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "aab14895-7c8e-41e9-8d06-23993d111722",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C6",
+      "claim": "The regulatory mechanism of fluctuations in Class IV neurons resembles that in mammalian Purkinje cells which display complex spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "The regulatory mechanism of the fluctuations in the Class IV neurons resembles that in mammalian Purkinje cells, which display complex spikes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative claim made in the abstract and elaborated in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "d5717392-d834-4014-b210-62c73667c3a0",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C7",
+      "claim": "Fluctuation coding in Class IV neurons is required to convert noxious thermal inputs into effective stereotyped behavior as well as general rate coding.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our results suggest that such fluctuation coding in Class IV neurons is required to convert noxious thermal inputs into effective stereotyped behavior as well as general rate coding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "1731de78-d9ed-45f9-b922-a99946b9aec6",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C8",
+      "claim": "Sensory neurons convert the intensity of stimuli into the magnitude of firing rates upon sensory transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "In principle, sensory neurons convert the intensity of stimuli into the magnitude of firing rates upon sensory transduction (Adrian, 1926).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle of sensory neuroscience supported by a historical citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "0609b247-9383-43bf-8061-feed12c840f6",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C9",
+      "claim": "Mammalian C-fiber nociceptors convert gentle touch stimuli into relatively low firing rates, whereas injurious forces elicit higher rates.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, mammalian C-fiber nociceptors convert gentle touch stimuli into relatively low firing rates, whereas injurious forces elicit higher rates (Delmas et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an example of rate coding in mammalian nociceptors, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "ae8b2156-7d96-412f-8015-8b8635cfe0a2",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C10",
+      "claim": "Firing rates have an intrinsic upper limit because interspike intervals cannot be shorter than refractory periods.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'rate coding' is valuable for sensory transduction, particularly with regard to stimulus intensity; however, the firing rate has an intrinsic upper limit because interspike intervals (ISIs) cannot be shorter than refractory periods, when the membrane is unable to respond to another stimulus (Berry and Meister, 1998; Hodgkin and Huxley, 1952).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental principle of neuronal physiology supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "a14c5fe1-d297-446b-a365-69c1ad8db66f",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C11",
+      "claim": "Firing rates should saturate at high stimulus intensities, at which point sensory inputs are no longer converted properly in an intensity-to-firing rate correspondence.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that firing rates should saturate at high intensities, at which point the sensory inputs are no longer converted properly in an intensity-to-firing rate correspondence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the principle of refractory periods limiting firing rates.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "6576bc5b-3e7c-486d-a6d3-f77957524b62",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C12",
+      "claim": "Some sensory neurons may use coding mechanisms other than rate coding that are employed in the central nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we assume that some sensory neurons may use other coding mechanisms that are employed in the central nervous system (Avissar et al., 2013; Haddad et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on inference and supported by citations to studies of central nervous system coding.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "e866abd7-5454-44d7-88ba-519b9fc450aa",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C13",
+      "claim": "Class IV dendritic arborization neurons are primary nociceptive neurons in Drosophila larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila larvae, Class IV dendritic arborization neurons (Class IV neurons) are primary nociceptive neurons that respond to multiple stimuli, including high temperature, strong mechanical force, and short-wavelength light (Hwang et al., 2007; Tracey et al., 2003; Xiang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an established fact about Class IV neurons supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "e5799e40-8766-48c7-bd65-076038d50cc0",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C14",
+      "claim": "Class IV neurons respond to multiple stimuli including high temperature, strong mechanical force, and short-wavelength light.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila larvae, Class IV dendritic arborization neurons (Class IV neurons) are primary nociceptive neurons that respond to multiple stimuli, including high temperature, strong mechanical force, and short-wavelength light (Hwang et al., 2007; Tracey et al., 2003; Xiang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies characterizing Class IV neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "9c40eff0-8cad-4bd6-a9a8-2333166d3ad4",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C15",
+      "claim": "When Class IV neurons are activated by noxious thermal stimuli, their sensory transduction provokes heat avoidance behavior where larvae rotate around the long body axis in a corkscrew-like manner.",
+      "claim_type": "EXPLICIT",
+      "source": "When the neurons are activated by noxious thermal stimuli, for instance, their sensory transduction provokes heat avoidance behavior where larvae rotate around the long body axis in a corkscrew-like manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the behavioral output of Class IV neuron activation, which is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "e03df64d-f882-4bdc-a347-b0aa4b0ba2d5",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C16",
+      "claim": "A large number of genes responsible for Class IV neuronal activation were identified by evaluating behavioral phenotypes and monitoring Ca2+ dynamics in mutant strains.",
+      "claim_type": "EXPLICIT",
+      "source": "A large number of genes responsible for the neuronal activation were identified by evaluating behavioral phenotypes and monitoring Ca2+ dynamics in mutant strains (Lee et al., 2005; Neely et al., 2011; Tracey et al., 2003; Zhong et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes previous genetic studies on Class IV neurons, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "9be92e9c-0858-4b6d-b18c-4942213deb1b",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C17",
+      "claim": "There have been few studies which have investigated the coding mechanism of nociception in Class IV neurons by recording electrical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "however, there have been few studies which have investigated the coding mechanism of the nociception by recording electrical activity (Terada et al., 2016; Xiang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field supported by limited citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "cc076fbb-548c-4d13-8080-9bd59322af20",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C18",
+      "claim": "Class IV neurons responded to noxious thermal stimuli with evoked characteristic fluctuations of firing rates consisting of repetitive high-frequency spike trains and subsequent quiescent periods.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we built a measurement system using a 1460 nm infrared (IR) laser as a local heating device (Figure 1\u2014figure supplement 1A) and found that Class IV neurons responded to noxious thermal stimuli with evoked characteristic fluctuations of firing rates, which consisted of repetitive high-frequency spike trains and subsequent quiescent periods (Terada et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from previous work by the authors, supported by citation and reference to a figure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "d0ede80c-eac6-4f22-b75a-285eedaf788f",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C19",
+      "claim": "The occurrence of burst-and-pause firing patterns was coordinated with large Ca2+ increments over the entire dendritic arbors.",
+      "claim_type": "EXPLICIT",
+      "source": "The occurrence of such 'burst-and-pause' firing patterns was coordinated with large Ca2+ increments over the entire dendritic arbors (designated as dendritic Ca2+ transients here) and was mediated by L-type voltage-gated Ca2+ channels (VGCCs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from previous work describing the relationship between firing patterns and Ca2+ dynamics.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "73fa69ce-b4c0-4d50-bf07-1bdd83109515",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C20",
+      "claim": "Burst-and-pause firing patterns in Class IV neurons are mediated by L-type voltage-gated Ca2+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The occurrence of such 'burst-and-pause' firing patterns was coordinated with large Ca2+ increments over the entire dendritic arbors (designated as dendritic Ca2+ transients here) and was mediated by L-type voltage-gated Ca2+ channels (VGCCs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic finding from previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "f7cd7c0e-8078-4525-8ebb-9c355f7b3a13",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C21",
+      "claim": "Knocking down L-type VGCCs in Class IV neurons abolished the burst-and-pause firing patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking down L-type VGCCs in neurons abolished the burst-and-pause firing patterns, and the knockdown larvae displayed delayed heat avoidance behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result from previous work showing the necessity of L-type VGCCs.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "ac9f4763-31f7-422c-908a-a25f4a562fe5",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C22",
+      "claim": "L-type VGCC knockdown larvae displayed delayed heat avoidance behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking down L-type VGCCs in neurons abolished the burst-and-pause firing patterns, and the knockdown larvae displayed delayed heat avoidance behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a behavioral phenotype observed in previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "3e61e77e-5c5d-4f50-96db-15788917d5b8",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C23",
+      "claim": "The burst-and-pause firing patterns should be output signals transducing high intensity stimuli and provoking robust avoidance behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we hypothesized that the burst-and-pause firing patterns should be output signals transducing high intensity stimuli and provoking the robust avoidance behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed based on previous findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "9ea522fb-d5db-4906-a10d-ed8a7693d1f7",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C24",
+      "claim": "The regulatory mechanism of burst-and-pause firing patterns remained unclear because L-type VGCCs produce depolarizing currents but not hyperpolarizing ones which should underlie pause periods.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the regulatory mechanism of the firing patterns remained unclear because L-type VGCCs produce depolarizing currents but not hyperpolarizing ones, which should underlie 'pause' periods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in understanding based on the known properties of L-type VGCCs.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "65e48533-b691-4d30-9a67-bd1ce48d523d",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C25",
+      "claim": "All dendritic Ca2+ transients occurred concurrently with unconventional spikes (USs).",
+      "claim_type": "EXPLICIT",
+      "source": "We then found that all the dendritic Ca2+ transients occurred concurrently with USs (Figure 1B,C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the current study supported by data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "ea593ae0-b989-45ce-aabb-4660691a4bf6",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C26",
+      "claim": "When no US occurred or before the first US occurred, Ca2+ transients were never observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when no US occurred or before the first US occurred, Ca2+ transients were never observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the current study establishing the relationship between USs and Ca2+ transients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "432441e2-9635-404e-8856-bf3e54c0eaf2",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C27",
+      "claim": "The onset of Ca2+ transients preceded first-US timings by 50.3 \u00b1 9.2 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "We then found that the onset of Ca2+ transients preceded first-US timings and that the Ca2+ transients with multiple USs were stepwise (Figure 1E and F; \u0394t = \u2212 50.3 \u00b1 9.2 ms, mean \u00b1 s.e.m.).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the current study using curve fitting analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "d7629d27-b462-4afb-8c60-05681ddb7fb5",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C28",
+      "claim": "Ca2+ transients with multiple USs were stepwise.",
+      "claim_type": "EXPLICIT",
+      "source": "We then found that the onset of Ca2+ transients preceded first-US timings and that the Ca2+ transients with multiple USs were stepwise (Figure 1E and F; \u0394t = \u2212 50.3 \u00b1 9.2 ms, mean \u00b1 s.e.m.).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the current study describing the temporal structure of Ca2+ transients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "f8a3e73e-b8e2-458e-be40-e7b1fdbcadff",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C29",
+      "claim": "The peak amplitudes of Ca2+ transients displayed a positive linear correlation with the number of USs.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the peak amplitudes of Ca2+ transients displayed a positive linear correlation with the number of USs (Figure 1G; p=1.0 \u00d7 10\u221211, rho = 0.82, Spearman's rank correlation test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the current study showing a correlation between Ca2+ amplitude and US number.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "4a1aba0d-c76a-435a-96d7-d6a76bc62720",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C30",
+      "claim": "Interspike intervals (ISIs) were shorter before onsets of pauses.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, ISIs were shorter before onsets of pauses (Figure 1H; p<0.05, paired-sample t-test with Bonferroni correction).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the current study about the temporal structure of firing patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "b31254d3-8622-4a55-be76-b86fe51fddde",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C31",
+      "claim": "The Ca2+ influx mediated by L-type VGCCs amplifies membrane depolarization, which narrows down ISIs of bursts and also induces subsequent pauses.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that the Ca2+ influx mediated by L-type VGCCs amplifies membrane depolarization, which narrows down ISIs of bursts and also induces subsequent pauses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed to explain the observed firing patterns.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "af7925bc-258b-41c1-8017-2f0a2f34f023",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C32",
+      "claim": "The FRET ratio of SuperClomeleon increased at both somata and distal dendrites upon IR-laser irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore monitored Cl\u2212 dynamics by a genetically encoded FRET-based Cl\u2212 indicator, SuperClomeleon (Grimley et al., 2013; Figure 2A) and found that the FRET ratio increased at both somata and distal dendrites upon IR-laser irradiation (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from the current study using a Cl\u2212 indicator.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "9da1d15a-c3a4-467f-bbe6-ca2b6f846867",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C33",
+      "claim": "The intracellular Cl\u2212 concentration decreases in Class IV neurons upon stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the FRET ratio of SuperClomeleon rises as the [Cl\u2212]i falls, we expected that the [Cl\u2212]i should decrease upon stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the properties of the SuperClomeleon indicator and the observed FRET ratio changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "fde30288-ffee-48f2-956c-069e05891f0b",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C34",
+      "claim": "Passive Cl\u2212 transport in Class IV neurons is outward and generates depolarizing currents but not hyperpolarizing ones.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the passive Cl\u2212 transport in Class IV neurons is outward and generates depolarizing currents but not hyperpolarizing ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the Cl\u2212 imaging data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "e3910232-f5ef-40a6-ab28-4df0ad470256",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C35",
+      "claim": "Subdued, a Ca2+-activated Cl\u2212 channel, can contribute to membrane excitation in Class IV neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, we investigated the role of one of the Ca2+-activated Cl\u2212 channels, Subdued (Jang et al., 2015), and showed that it can contribute to membrane excitation in the neurons (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the current study about the role of Subdued channels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "69fce993-a1cd-4097-83a2-ba71245f1a90",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C36",
+      "claim": "The number of USs was significantly increased in five different gene knockdown neurons (Sh, Shal, SK, Irk2, and Task7).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the number of USs was significantly increased in five different gene knockdown neurons (Sh, Shal, SK, Irk2, and Task7; Figure 2D and E; p<0.05, Wilcoxon rank sum test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the electrophysiological screen conducted in the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "af390d3f-f360-4c7c-8fd6-f1cd9a750de0",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C37",
+      "claim": "The five K+ channel knockdown neurons (Sh, Shal, SK, Irk2, Task7) exhibited an increased number of peaks in firing rate fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "The five knockdown neurons also exhibited an increased number of 'peaks' (Figure 2\u2014figure supplement 2; p<0.05, Wilcoxon rank sum test), as defined in our previous study (Terada et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the current study using a different metric for firing rate fluctuations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "2d18a448-bde0-44a9-a46e-6770c126f242",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C38",
+      "claim": "The five K+ channel knockdowns (Sh, Shal, SK, Irk2, Task7) did not decrease the amplitudes of dendritic Ca2+ transients.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, although knocking down L-type VGCC abolishes dendritic Ca2+ transients (Terada et al., 2016), the five K+ channel knockdowns did not decrease the amplitudes of the Ca2+ transients (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the current study showing that these K+ channels act downstream of Ca2+ influx.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "5d5fa923-972a-46b7-8053-1fc7e36b0578",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C39",
+      "claim": "SK channels can be activated by dendritic Ca2+ influx and could be one of the major factors underlying hyperpolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, SK encodes a small conductance Ca2+-activated K+ channel, which can be activated by dendritic Ca2+ influx, and therefore could be one of the major factors underlying hyperpolarization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reasoning based on the known properties of SK channels and the experimental results.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "1a901bab-a139-4f77-b841-4d5408e3ddad",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C40",
+      "claim": "SK knockdown increased the firing properties including the US number, peak number and maximum firing rate, even with low laser powers.",
+      "claim_type": "EXPLICIT",
+      "source": "We then found that SK knockdown increased the firing properties, including the US number, peak number and maximum firing rate, even with low laser powers (Figure 3A\u2013D, Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the current study testing SK knockdown at different stimulus intensities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "cb6b7698-a744-40cd-ac20-440ebbf4f093",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C41",
+      "claim": "SK knockdown shortened the pause periods (median: ppk-Gal4 103.9 ms, UAS-SK RNAi 112.9 ms, ppk>SK RNAi 46.75 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the SK knockdown shortened the pause periods (Figure 3E; median of pause period: [ppk-Gal4] 103.9 ms, [UAS-SK RNAi] 112.9 ms, [ppk>SK RNAi] 46.75 ms; p<0.001, Student's t-test with Holm correction)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a key quantitative finding from the current study showing SK's role in pause generation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "5957757e-47a9-4809-9936-d4d17e00dc04",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C42",
+      "claim": "SK-dependent current regulates the pause period in Class IV neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the SK knockdown shortened the pause periods (Figure 3E; median of pause period: [ppk-Gal4] 103.9 ms, [UAS-SK RNAi] 112.9 ms, [ppk>SK RNAi] 46.75 ms; p<0.001, Student's t-test with Holm correction), which suggested that SK-dependent current regulates the pause period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the pause period data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "aff4da03-42e2-48d9-ab99-1986c6d16e4a",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C43",
+      "claim": "SK channels are dramatically activated by the sudden increase in intracellular Ca2+ concentration through L-type VGCCs and generate a transient hyperpolarizing K+ current.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculated that SK channels would be dramatically activated by the sudden increase in [Ca2+]i through L-type VGCCs, and would generate a transient hyperpolarizing K+ current.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic hypothesis proposed to explain the observed effects of SK knockdown.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "d10f597a-c5b6-4144-9973-169f732ed18e",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C44",
+      "claim": "The altered physiological responses in SK knockdown neurons were not due to morphological defects in the dendritic arbors.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantified the dendritic morphology of SK knockdown neurons and concluded that the altered physiological responses were not due to morphological defects in the dendritic arbors (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control experiment ruling out morphological changes as an explanation for the physiological phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "c97ebab0-80fa-4aec-b965-eb946d587cca",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C45",
+      "claim": "SK knockdown larvae displayed significantly faster onsets of responses to thermal stimulation at 44\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, we examined how SK knockdown larvae responded to thermal stimulation, and we found that they displayed significantly faster onsets of responses; moreover, the response rate was increased upon moderate stimulation (44\u00b0C, Figure 3F and G; 42\u00b0C, Figure 3\u2014figure supplement 2E F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a behavioral finding from the current study showing the functional consequence of SK knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "ea714596-9bae-45ad-9bef-d38d4188ada7",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C46",
+      "claim": "The response rate of SK knockdown larvae was increased upon moderate thermal stimulation (44\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, we examined how SK knockdown larvae responded to thermal stimulation, and we found that they displayed significantly faster onsets of responses; moreover, the response rate was increased upon moderate stimulation (44\u00b0C, Figure 3F and G; 42\u00b0C, Figure 3\u2014figure supplement 2E F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a behavioral finding from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "8baab934-27ae-475c-9ed5-55f5bbe4e4a3",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C47",
+      "claim": "The burst-and-pause firing patterns should be output signals provoking robust avoidance behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these findings, we propose that the burst-and-pause firing patterns should be output signals provoking the robust avoidance behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined electrophysiological and behavioral data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "876e6d0c-0f4e-40d0-82f1-ae25d5f443e3",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C48",
+      "claim": "Knockdown larvae of Shal, Irk2, and Task7 did not show any difference in the response rate of heat avoidance behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "We also examined heat avoidance behavior of larvae, where one of the other three candidate genes (Shal, Irk2, and Task7) was knocked down; however, the respective knockdown larvae did not show any difference in the response rate of avoidance (Figure 3\u2014figure supplement 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a negative result from behavioral testing of other K+ channel knockdowns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "ea067d13-18f1-4040-91a9-0100c5fe5416",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C49",
+      "claim": "The frequencies of spontaneous spikes were significantly increased in Shal, Irk2, and Task7 knockdown Class IV neurons but not in SK knockdown ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the frequencies of spontaneous spikes were significantly increased in the three knockdown Class IV neurons but not in SK knockdown ones (Figure 3\u2014figure supplement 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the current study distinguishing SK from other K+ channels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "5b91067a-9bae-476b-bebe-3b30ff2b8a98",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C50",
+      "claim": "Elevated basal neuronal activity during development might decrease the efficacy of synaptic transmission and/or remodel synaptic connections of Class IV neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the elevated basal neuronal activity during development might decrease the efficacy of synaptic transmission and/or remodel synaptic connections of the neurons, which would tend to counteract the effect of the increment of firing rate fluctuations on the avoidance behavior of these knockdown animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed to explain why Shal, Irk2, and Task7 knockdowns don't show behavioral changes despite increased firing fluctuations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "71ddd4e1-2dab-4f8d-8132-fde49081cfe0",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C51",
+      "claim": "The numbers of burst-and-pause patterns were significantly different between continuous and intermittent optogenetic illuminations of Class IV neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We first investigated firing patterns induced by optogenetic activations in Class IV neurons and found that the numbers of burst-and-pause patterns were significantly different between continuous and intermittent illuminations (Figure 3\u2014figure supplement 5B\u2013D; p<0.001, Wilcoxon signed-rank sum test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from optogenetic experiments in the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "482571c2-29ce-443e-87b0-9de0bced71e4",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C52",
+      "claim": "The total spike numbers and maximum firing rates were comparable between continuous and intermittent optogenetic illumination conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the total spike numbers and maximum firing rates were comparable between the two conditions (Figure 3\u2014figure supplement 5E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control finding showing that the two optogenetic conditions differ in fluctuation patterns but not overall firing rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "4a1d50ab-d3dd-4a57-b2ca-d66c7eefdf52",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C53",
+      "claim": "The maximum amplitude of Ca2+ rises in Goro neurons was larger upon activation accompanied with more burst-and-pause firing patterns in Class IV neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the maximum amplitude of Ca2+ rises in Goro neurons was larger upon activation accompanied with more burst-and-pause firing patterns in Class IV neurons (Figure 3\u2014figure supplement 5G and H; [continuous] Fpeak = 11.3 \u00b1 1.8%, [intermittent] Fpeak = 19.4 \u00b1 2.2%, mean \u00b1 s.e.m.; p<0.01, Welch's t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the current study showing that downstream neurons respond differently to different firing patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "8ffdca10-410e-4b18-b5aa-31bcb5d478d5",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C54",
+      "claim": "Firing rate fluctuations are decoded in downstream circuits separately from the firing rate itself.",
+      "claim_type": "EXPLICIT",
+      "source": "The results suggested that firing rate fluctuations were decoded in downstream circuits separately from the firing rate itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the optogenetic and downstream Ca2+ imaging experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "43995e7e-62d4-46dd-9733-b6ad7ae4a028",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C55",
+      "claim": "Before USs occur, most SK channels are in the steady state because Ca2+/calmodulin association is restricted at low intracellular Ca2+ concentration, and the SK current slightly inhibits the incidence of firings during burst periods.",
+      "claim_type": "EXPLICIT",
+      "source": "Before USs occur, most SK channels are in the steady state because the Ca2+/calmodulin association is restricted at low [Ca2+]i, and the SK current slightly inhibits the incidence of firings during burst periods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation proposed in the Discussion to explain the dual role of SK channels.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "e5f4bb7c-39c8-4317-be88-b7f5d734d1d7",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C56",
+      "claim": "After USs occur with dendritic Ca2+ transients, SK channels are shifted to the activation state by high intracellular Ca2+ concentration, and the current greatly promotes after-hyperpolarization which generates the pause periods.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, after USs occur with dendritic Ca2+ transients, the channels are shifted to the activation state by high [Ca2+]i, and the current greatly promotes after-hyperpolarization, which generates the pause periods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation for how SK channels generate pause periods.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "49d11db5-81c7-4b60-ac2a-059ae66edc0f",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C57",
+      "claim": "SK knockdown attenuates the inhibition of firings, which raises the occurrence rate of USs.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, SK knockdown attenuates the inhibition of firings, which raises the occurrence rate of USs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for one effect of SK knockdown based on the proposed mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "5930e9df-9070-462b-9014-8e31699f9c9d",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C58",
+      "claim": "SK knockdown dramatically decreases the pause periods, which shortens the time requiring one burst-and-pause firing pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, after USs occur with dendritic Ca2+ transients, the channels are shifted to the activation state by high [Ca2+]i, and the current greatly promotes after-hyperpolarization, which generates the pause periods. Thus, the knockdown dramatically decreases the pause periods, which shortens the time requiring one burst-and-pause firing pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for another effect of SK knockdown.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "5c8d8f8c-317e-4931-af5e-6fbfa7a773ad",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C59",
+      "claim": "The US number per unit time would be expected to increase upon SK knockdown due to two impacts on firings.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the two impacts on firings, the US number per unit time would be expected to increase upon SK knockdown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the proposed dual mechanism of SK channel action.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "45f9774c-b0dc-4fe6-87d2-7ea946ba81cd",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C61",
+      "claim": "Once the membrane potential of soma exceeds a certain threshold by prolonged stimulation, Class IV neurons evoke action potentials and then increase firing rates with the intensity of stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) Once the membrane potential of soma exceeds a certain threshold by the prolonged stimulation, the neurons evoke action potentials and then increase firing rates with the intensity of stimulation ('rate coding').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the proposed mechanistic model describing rate coding.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "ff2e1a8a-b5d4-46e8-be08-b41492da4b95",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C62",
+      "claim": "When L-type VGCCs in the dendritic arbors are activated by high-order depolarization, they induce a large Ca2+ influx which rapidly activates SK channels.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) When L-type VGCCs in the dendritic arbors are activated by the high-order depolarization, they induce a large Ca2+ influx, which rapidly activates SK channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the proposed mechanistic model linking L-type VGCCs to SK channel activation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "d0d0492b-31e9-429f-9111-f3abca9065ee",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C63",
+      "claim": "Activated SK channels produce a hyperpolarizing current, thereby generating the pause periods.",
+      "claim_type": "EXPLICIT",
+      "source": "(4) The activated SK channels produce a hyperpolarizing current, thereby generating the pause periods ('fluctuation coding').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the key mechanistic conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "84ac2734-d3e2-46aa-aedd-b0c724743701",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C64",
+      "claim": "Other K+ channels may slightly contribute to the generation of pauses because the pause periods were not completely abolished in SK knockdown neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We also suggest that other K+ channels may slightly contribute to the generation of pauses, because the pause periods were not completely abolished in SK knockdown neurons (Figure 3E, Figure 3\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a suggestion based on the incomplete abolition of pauses in SK knockdown.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "fb0ada46-f5d5-4bd5-ba26-862512f8ef20",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C65",
+      "claim": "Most voltage-dependent K+ channels hyperpolarize the membrane potential to some degree after depolarization, regardless of dendritic Ca2+ influx.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the other candidate channels, such as Sh and Shal, are not activated by the [Ca2+]i rise, most of them are voltage-dependent and hence hyperpolarize the membrane potential to some degree after depolarization, regardless of dendritic Ca2+ influx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation based on known properties of voltage-gated K+ channels.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "3e6c21aa-4f04-43bd-80d5-faa1a062d284",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C66",
+      "claim": "The hyperpolarization from voltage-dependent K+ channels suppresses the probability of firing, including US, so knockdown of those channels should lead to the increment of the US number.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the hyperpolarization suppresses the probability of firing, including US, the knockdown of those channels should lead to the increment of the US number.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference explaining why other K+ channel knockdowns increase US number.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "5ae897e0-6cd9-4569-9f65-f4022a40d3dc",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C67",
+      "claim": "In mammalian cerebellar cortex, climbing fiber inputs evoke complex spikes of Purkinje cells which induce a dendritic Ca2+ influx through Ca2+ spikes and subsequent pauses.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mammalian cerebellar cortex, climbing fiber inputs evoke complex spikes of Purkinje cells, which induce a dendritic Ca2+ influx through Ca2+ spikes and subsequent pauses (Davie et al., 2008; Kitamura and H\u00e4usser, 2011; Llin\u00e1s and Sugimori, 1980; Mathews et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of established knowledge about Purkinje cells, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "143fb76b-ba93-43fa-86b9-1f375543359c",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C68",
+      "claim": "The pause periods of post-complex spikes in Purkinje cells are regulated by dendritic Ca2+ spikes which are dependent on P/Q-type VGCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The pause periods of post-complex spikes are regulated by dendritic Ca2+ spikes, which are dependent on P/Q-type VGCCs (Davie et al., 2008), and are modulated by after-hyperpolarization, which is largely dependent on SK2 channels (Grasselli et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Purkinje cell physiology, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "ba4f8533-0f74-4fbb-ae0f-c02da84556be",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C69",
+      "claim": "The pause periods of post-complex spikes in Purkinje cells are modulated by after-hyperpolarization which is largely dependent on SK2 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The pause periods of post-complex spikes are regulated by dendritic Ca2+ spikes, which are dependent on P/Q-type VGCCs (Davie et al., 2008), and are modulated by after-hyperpolarization, which is largely dependent on SK2 channels (Grasselli et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Purkinje cell physiology, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "9d4d737a-ac6e-4f20-ad50-6ea5dd606d01",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C70",
+      "claim": "The regulatory mechanism of complex spikes in Purkinje cells is remarkably similar to that of burst-and-pause firing patterns in Class IV neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering these observations, the regulatory mechanism of complex spikes is remarkably similar to that of burst-and-pause firing patterns in Class IV neurons (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative conclusion drawn in the Discussion.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "eeaa7dba-c3ac-40e9-9541-0e5253ec5d45",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C71",
+      "claim": "Rate coding occurs in Class IV neurons at relatively low temperatures and is mediated by thermosensitive channels and many types of voltage-gated ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "This form of rate coding also occurs in Class IV neurons at relatively low temperatures, and it is mediated by thermosensitive channels and many types of voltage-gated ion channels (Figure 4B, Figure 4\u2014figure supplement 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary statement about rate coding in Class IV neurons.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "03e432e1-e1ec-4ed8-b8cd-d2217f633d60",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C72",
+      "claim": "At higher temperature, L-type VGCCs and SK channels modulate the firing, transitioning from continuous high-frequency patterns into burst-and-pause patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "At higher temperature, however, L-type VGCCs and SK channels modulate the firing, transitioning from continuous high-frequency patterns into burst-and-pause patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "ff3373cf-ea42-4426-9c9a-cd8f5e97ca47",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C73",
+      "claim": "Firing-rate-fluctuation coding allows sensory neurons to transmit strong stimuli not covered in rate coding, thereby provoking robust avoidance behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we propose that the firing-rate-fluctuation coding allows sensory neurons to transmit strong stimuli not covered in rate coding, thereby provoking robust avoidance behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion and proposed model of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "84f7fe9a-06c1-4b7b-9bdf-1f4c2193f00e",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C74",
+      "claim": "Trials without USs did not generate Ca2+ transients (n = 19 cells; \u0394F/F0 = 0.52 \u00b1 0.87%, mean \u00b1 s.e.m. after laser irradiation).",
+      "claim_type": "EXPLICIT",
+      "source": "(B) Trials without USs did not generate Ca2+ transients (n = 19 cells; \u0394F/F0 = 0.52 \u00b1 0.87%, mean \u00b1 s.e.m. after laser irradiation).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from Figure 1B showing the relationship between USs and Ca2+ transients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "c8c529a7-f1cc-4ea7-a706-418d65cd84af",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C75",
+      "claim": "Trials with USs generated Ca2+ transients (n = 25 cells; \u0394F/F0 = 9.33 \u00b1 1.57%, mean \u00b1 s.e.m. after laser irradiation).",
+      "claim_type": "EXPLICIT",
+      "source": "(C) Trials with USs generated Ca2+ transients (n = 25 cells; \u0394F/F0 = 9.33 \u00b1 1.57%, mean \u00b1 s.e.m. after laser irradiation).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from Figure 1C showing Ca2+ transient amplitudes in US trials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "f9136e34-744b-41bd-bede-5847dc20b10a",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C76",
+      "claim": "The first USs occurred at 0.55 \u00b1 0.04 s (mean \u00b1 s.e.m.) after the start of laser irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The first USs occurred at 0.55 \u00b1 0.04 s (mean \u00b1 s.e.m.).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a timing measurement from Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "6e9992a0-9027-467d-a96c-ad1895d2ebef",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C77",
+      "claim": "The maximum firing rates of US trials was larger than that of non-US ones.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum firing rates of US trials (Figure 1C) was larger than that of non-US ones (Figure 1B; mean \u00b1 s.e.m.; ***p<0.001, Student's t-test with Bonferroni correction)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical comparison from Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "cd460667-b31f-4c75-bd5a-6482222f0778",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C78",
+      "claim": "The maximum firing rate did not significantly change among trials with varying numbers of US.",
+      "claim_type": "EXPLICIT",
+      "source": "but it did not significantly change among trials with varying numbers of US.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from Figure 1\u2014figure supplement 1B showing that US number doesn't correlate with maximum firing rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "f6e2395f-6215-4114-95e8-eaad2a9d1a34",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C79",
+      "claim": "Amplitudes of \u0394Rpeak of SuperClomeleon increased with IR-laser power.",
+      "claim_type": "EXPLICIT",
+      "source": "(C) Amplitudes of \u0394Rpeak of SuperClomeleon increased with IR-laser power (mean \u00b1 s.e.m.; ***p<0.001, Student's t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from Figure 2C showing dose-dependent Cl\u2212 changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "54e28103-b539-4143-b858-bae35efe38e4",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C80",
+      "claim": "The US number increased in five different gene knockdown neurons (Sh, Shal, SK, Irk2 and Task7).",
+      "claim_type": "EXPLICIT",
+      "source": "(E) Boxplot of the total US number in screened neurons. The US number increased in five different gene knockdown neurons (Sh, Shal, SK, Irk2 and Task7; Wilcoxon rank sum test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the screening results from Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "47d0b5a2-d4f2-4534-be3f-9d9384270bff",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C81",
+      "claim": "The amplitudes of dendritic Ca2+ transients did not decrease in the five K+ channel knockdowns except for Ca-\u03b11D RNAi neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "(F) Amplitudes of the dendritic Ca2+ transients in screened channels. The amplitudes did not decrease except for Ca-\u03b11D RNAi neurons (mean \u00b1 s.e.m.; Student's t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from Figure 2F showing that K+ channel knockdowns don't affect Ca2+ transients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "7813e447-3fc1-41ec-87fe-b5dd5b355d16",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C82",
+      "claim": "SK knockdown neurons increased the US number, peak number with three different laser powers (36, 40, and 48 mW).",
+      "claim_type": "EXPLICIT",
+      "source": "(B\u2013D) SK knockdown neurons increased the US number, peak number (B and C; boxplots; Wilcoxon rank sum test with Holm correction), and amplitude of the dendritic Ca2+ transients (D; mean \u00b1 s.e.m.; Student's t-test with Holm correction) with three different laser powers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of results from Figure 3B-D showing dose-dependent effects of SK knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "efc3acd2-e446-4461-ad57-88fe9d5d7ddd",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C83",
+      "claim": "SK knockdown neurons increased the amplitude of the dendritic Ca2+ transients with three different laser powers.",
+      "claim_type": "EXPLICIT",
+      "source": "(B\u2013D) SK knockdown neurons increased the US number, peak number (B and C; boxplots; Wilcoxon rank sum test with Holm correction), and amplitude of the dendritic Ca2+ transients (D; mean \u00b1 s.e.m.; Student's t-test with Holm correction) with three different laser powers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from Figure 3D showing that SK knockdown affects Ca2+ transient amplitude.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "06009b39-d20d-48dd-86b1-28f9233154d5",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C84",
+      "claim": "SK knockdown larvae displayed fast onsets of responses upon moderate stimulation at 44\u00b0C (median: ppk-Gal4 3.80 s, UAS-SK RNAi 4.86 s, ppk>SK RNAi 1.80 s).",
+      "claim_type": "EXPLICIT",
+      "source": "(F) The distribution of response latency. SK knockdown larvae displayed fast onsets of responses upon moderate stimulation (44\u00b0C; median: [ppk-Gal4] 3.80 s, [UAS-SK RNAi] 4.86 s, [ppk>SK RNAi] 1.80 s; Wilcoxon rank sum test with Holm correction).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative behavioral result from Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "ac01d79a-9b26-43ca-ad65-ff7ba4cd1f6c",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C85",
+      "claim": "Neither control nor SK knockdown larvae showed avoidance behavior upon lower stimulation (42\u00b0C), whereas most of the larvae displayed it with higher stimulation (46\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "Neither control nor SK knockdown larvae showed avoidance behavior upon lower stimulation (42\u00b0C), whereas most of the larvae displayed it with higher stimulation (46\u00b0C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a behavioral observation from Figure 3F showing temperature-dependent responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "8c017fc1-efc4-47db-a627-75f131fc1d05",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C86",
+      "claim": "The response rate of SK knockdown larvae increased upon moderate stimulation at 44\u00b0C (ppk-Gal4 56.9%, UAS-SK RNAi 50.0%, ppk>SK RNAi 79.2%).",
+      "claim_type": "EXPLICIT",
+      "source": "(G) Percentage of larvae responding within 5 s with 95% Clopper-Pearson confidence intervals. The response rate of SK knockdown larvae increased upon moderate stimulation (44\u00b0C: [ppk-Gal4] 56.9%, [UAS-SK RNAi] 50.0%, [ppk>SK RNAi] 79.2%; Fisher's exact test with Holm correction).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative behavioral result from Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "e9751a7f-67c7-49b7-bd71-9316d5b0315f",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C87",
+      "claim": "Dendritic coverage of SK knockdown neurons did not increase compared to those of the two controls.",
+      "claim_type": "EXPLICIT",
+      "source": "(C)Quantification of dendritic coverage ([ppk-Gal4] 39.8 \u00b1 2.2%, [UAS-SK RNAi] 56.6 \u00b1 2.0%, [ppk>SK RNAi] 38.4 \u00b1 1.3%, mean \u00b1 s.e.m.; **p<0.01, Student's t-test with Holm correction). Dendritic coverage of SK knockdown neurons did not increase compared to those of the two controls.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a morphological analysis from Figure 3\u2014figure supplement 3C ruling out morphological defects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "c4afb230-d24f-4473-8bd0-3215bf4901bf",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C88",
+      "claim": "The physiological alterations of SK knockdown neurons are not simply due to morphological defects of dendritic arbors, but are a direct consequence of the different composition of K+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the physiological alterations of SK knockdown neurons are not simply due to morphological defects of dendritic arbors, but are a direct consequence of the different composition of K+ channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the morphological analysis in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "d79f14c8-a2d7-4555-a91c-710da8a2a0c6",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C89",
+      "claim": "Spontaneous spike rates increased upon Shal, Irk2 and Task7 knockdowns but that of SK knockdown did not change significantly.",
+      "claim_type": "EXPLICIT",
+      "source": "(D) Spontaneous spike rate in knockdown neurons. The rates were quantified from the spike trains for 3 s before stimulation ([ppk-Gal4] n = 22, [others] see Figure 2\u2014source data 1). The rates increased upon Shal, Irk2 and Task7 knockdowns; however, that of SK knockdown did not change significantly (Wilcoxon rank sum test compared to ppk-Gal4 driver control).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from Figure 3\u2014figure supplement 4D distinguishing SK from other K+ channels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "75fc577e-0399-43e1-b712-b39c18bc483b",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C90",
+      "claim": "Intermittent illumination induced more peak number in Class IV neurons than continuous illumination did.",
+      "claim_type": "EXPLICIT",
+      "source": "(D\u2013F) Intermittent illumination induced more peak number in Class IV neurons than continuous illumination did (D; Wilcoxon signed-rank sum test)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from optogenetic experiments in Figure 3\u2014figure supplement 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "74ed8e09-0507-41e1-80dd-6b03f29c3000",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C91",
+      "claim": "The two illumination patterns (continuous and intermittent) did not change total spike number and maximum firing rate in Class IV neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "however, the two illumination patterns did not change total spike number (E; Wilcoxon signed-rank sum test) and maximum firing rate (F; Paired-sample t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control result from Figure 3\u2014figure supplement 5E-F showing that the two conditions are matched for overall activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "9c6a2516-a69d-4ccf-966c-da9fd08074bc",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C92",
+      "claim": "Maximum amplitudes of Ca2+ rises in Goro neurons were larger upon intermittent activation than a continuous one (continuous Fpeak = 11.3 \u00b1 1.8%, intermittent Fpeak = 19.4 \u00b1 2.2%).",
+      "claim_type": "EXPLICIT",
+      "source": "(H)Maximum amplitudes of Ca2+ rises were larger upon intermittent activation than a continuous one (Welch's t-test). Dots and bars are mean \u00b1 s.e.m.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from Figure 3\u2014figure supplement 5H showing differential downstream responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "3e13c66e-4c3d-4b7b-9122-136d99604144",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C93",
+      "claim": "The activation of Class IV neurons during larval development inhibited the synaptic transmission to second-order neurons via serotonergic feedback signaling and suppressed the avoidance behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, a recent study revealed that the activation of Class IV neurons during larval development inhibited the synaptic transmission to second-order neurons via serotonergic feedback signaling and suppressed the avoidance behavior (Kaneko et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from a cited study relevant to interpreting the current results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "4f9b1126-8928-4b0e-b295-a2448a0a1c14",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "claim_id": "C94",
+      "claim": "The topographic projections of Class IV neurons are partially dependent on the levels of neuronal activity, including spontaneous spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the topographic projections of Class IV neurons are partially dependent on the levels of neuronal activity, including spontaneous spikes (Kaneko and Ye, 2015; Yang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from cited studies relevant to interpreting the current results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4870f02a-494a-4d73-841f-cd01867da4a7",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Dendritic Ca2+ transients in Class IV neurons occur concurrently with unconventional spikes (USs), with Ca2+ transient onset preceding the first US by approximately 50 ms. The amplitude of Ca2+ transients correlates positively with US number, and interspike intervals shorten before pause onset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C30 and C74-C78 provide converging evidence from high-temporal-resolution Ca2+ imaging (100 Hz) using GCaMP5G, curve fitting analysis, and statistical tests. The temporal relationship is quantified (\u0394t = \u221250.3 \u00b1 9.2 ms), the correlation is statistically significant (p=1.0 \u00d7 10\u221211, rho = 0.82), and appropriate controls (trials without USs) are included.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "a520e36e-d04c-4be2-8a8a-6f0bc7356323",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Intracellular chloride concentration decreases in Class IV neurons upon thermal stimulation, indicating that passive Cl\u2212 transport is outward and generates depolarizing rather than hyperpolarizing currents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 and C79 are supported by FRET-based Cl\u2212 imaging using SuperClomeleon, showing increased FRET ratio (indicating decreased [Cl\u2212]i) at both soma and dendrites upon IR-laser irradiation in a dose-dependent manner (p<0.001). This rules out Cl\u2212 channels as sources of hyperpolarizing currents underlying pause periods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "7953f486-7105-4286-bbc3-6d9a8bba97c1",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The Ca2+-activated Cl\u2212 channel Subdued can contribute to membrane excitation in Class IV neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C35 is supported by data in Figure 2\u2014figure supplement 1 showing that subdued mutants display delayed heat avoidance behavior and reduced spike numbers at low IR-laser power, consistent with a role in excitation rather than inhibition.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "d0edd796-e345-4776-8dd6-be1520c92834",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "An electrophysiological screen identified five K+ channel genes (Sh, Shal, SK, Irk2, Task7) whose knockdown significantly increased the number of unconventional spikes and peaks in firing rate fluctuations without decreasing dendritic Ca2+ transient amplitudes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 and C80-C81 are supported by systematic RNAi screening with appropriate statistical tests (Wilcoxon rank sum test, p<0.05) and controls. The finding that Ca2+ transient amplitudes are not decreased (except for L-type VGCC knockdown) indicates these K+ channels act downstream of Ca2+ influx.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "173a22bf-49ca-4e71-86ee-b7e1e024e48e",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SK channel knockdown increases firing properties (US number, peak number, maximum firing rate) even at low stimulus intensities and significantly shortens pause periods from ~104 ms to ~47 ms, indicating that SK channels regulate pause duration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 and C82-C83 are supported by dose-response experiments with three different laser powers, appropriate statistical tests (p<0.001, Student's t-test with Holm correction), and quantitative measurements. The effect is robust and consistent across multiple RNAi lines targeting different sequences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "3bb45828-0eeb-49af-93ee-3ec997d78db0",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The altered physiological responses in SK knockdown neurons are not due to morphological defects in dendritic arbors, as dendritic coverage does not increase compared to controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44, C87-C88 are supported by quantitative morphological analysis showing that SK knockdown neurons have dendritic coverage (38.4 \u00b1 1.3%) comparable to the ppk-Gal4 control (39.8 \u00b1 2.2%), ruling out morphological changes as an explanation for the physiological phenotype.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "d179d99a-870b-43c3-b370-51f52379bf8a",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SK knockdown larvae display significantly faster heat avoidance responses (median latency reduced from 3.80 s to 1.80 s) and increased response rates (79.2% vs 56.9%) upon moderate thermal stimulation at 44\u00b0C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 and C84-C86 are supported by behavioral assays with appropriate sample sizes, statistical tests (Wilcoxon rank sum test, Fisher's exact test with Holm correction), and temperature controls showing that the effect is specific to moderate stimulation intensities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "bea7cca6-7ba1-436b-a47e-d6bb6ae02800",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Knockdown of Shal, Irk2, and Task7 did not alter heat avoidance behavior response rates, despite increasing spontaneous spike frequencies, whereas SK knockdown did not significantly change spontaneous spike rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 and C89 are supported by behavioral assays and electrophysiological recordings showing a dissociation between increased spontaneous activity (Shal, Irk2, Task7) and behavioral phenotype, distinguishing SK from other K+ channels. This negative result is important for interpreting the specificity of SK's role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "1cb71dd8-a060-4286-8dc1-cbc190d54aa6",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Elevated basal neuronal activity during development might decrease synaptic transmission efficacy and/or remodel synaptic connections via serotonergic feedback signaling, potentially counteracting the effect of increased firing rate fluctuations on avoidance behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C50, C93-C94 propose a hypothesis to explain why Shal, Irk2, and Task7 knockdowns don't show behavioral changes despite increased firing fluctuations. While the hypothesis is supported by citations to relevant studies (Kaneko et al., 2017; Kaneko and Ye, 2015; Yang et al., 2014), it remains speculative without direct experimental validation in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "d08135f8-2520-4ff9-9b2b-29049f8d6754",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Optogenetic experiments show that intermittent illumination of Class IV neurons induces more burst-and-pause patterns than continuous illumination while maintaining comparable total spike numbers and maximum firing rates, and downstream Goro neurons respond more strongly to intermittent activation (Fpeak 19.4% vs 11.3%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 and C90-C92 are supported by paired optogenetic experiments with appropriate controls showing that firing rate fluctuations are decoded separately from overall firing rate. The downstream Ca2+ imaging provides functional evidence that burst-and-pause patterns have distinct effects on circuit activity (p<0.01, Welch's t-test).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "59b8a8b4-3487-4b05-abf2-73d226d5ec29",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Firing rate fluctuations are decoded in downstream circuits separately from the firing rate itself.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 is a conclusion supported by the optogenetic experiments (C51-C53, C90-C92) showing differential downstream responses to matched firing rates with different fluctuation patterns. This provides strong evidence for fluctuation coding as a distinct mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "8e410ee6-967c-4e99-b72f-172ed5196fd1",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "SK channels have a dual role: at low Ca2+ concentrations they slightly inhibit firing during burst periods, while at high Ca2+ concentrations (after USs with dendritic Ca2+ transients) they promote after-hyperpolarization generating pause periods. SK knockdown therefore increases US occurrence rate and shortens pause periods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 provide a mechanistic explanation for the seemingly counterintuitive increase in US number upon SK knockdown. The model is consistent with known SK channel biophysics (Ca2+/calmodulin activation) and explains both the increased US number and shortened pause periods observed experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "39ebd4b3-499e-418a-8e91-034c9d6a9304",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "When L-type VGCCs in dendritic arbors are activated by high-order depolarization, they induce large Ca2+ influx that rapidly activates SK channels, which produce hyperpolarizing current generating pause periods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 describe the core mechanistic model linking L-type VGCCs to SK channel activation and pause generation. This is supported by the temporal relationship data (C25-C30), the SK knockdown effects on pause periods (C40-C42), and previous work showing L-type VGCC dependence of Ca2+ transients.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "f272c3e4-3ae8-4f8e-854c-7eed74b04031",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Other K+ channels may slightly contribute to pause generation because pause periods were not completely abolished in SK knockdown neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 is a reasonable inference from the observation that SK knockdown shortened but did not eliminate pause periods (median reduced from ~104 ms to ~47 ms). This suggests partial redundancy or contribution from other hyperpolarizing mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "7dab5153-0244-4313-94a8-1782d219e6cf",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The regulatory mechanism of burst-and-pause firing patterns in Class IV neurons is remarkably similar to that of complex spikes in mammalian Purkinje cells, with both involving dendritic Ca2+ influx through VGCCs (L-type vs P/Q-type) and SK channel-dependent after-hyperpolarization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 draw a well-supported comparison between Class IV neurons and Purkinje cells based on established literature (multiple citations) and the current findings. The parallel regulatory mechanisms (VGCC-mediated Ca2+ influx \u2192 SK channel activation \u2192 pause generation) strengthen the biological significance of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "574d50f6-119c-4051-af9f-b35b627f89e4",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "At higher temperatures, L-type VGCCs and SK channels modulate firing to transition from continuous high-frequency patterns to burst-and-pause patterns, allowing sensory neurons to transmit strong stimuli not covered by rate coding and thereby provoking robust avoidance behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 represent the main conclusion of the study, integrating the mechanistic findings (SK channel regulation of pause periods) with the behavioral consequences (faster avoidance in SK knockdown). The model is supported by converging evidence from electrophysiology, Ca2+ imaging, and behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "50261549-a0a6-4333-8f77-df1321046974",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "SK channels regulate pause periods and fluctuation frequency in Class IV neurons, SK knockdown larvae display faster heat avoidance, and fluctuation coding is required to convert noxious thermal inputs into effective stereotyped behavior alongside rate coding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C7, and C47 summarize the main findings of the study. These are well-supported by the combined electrophysiological (C40-C42), behavioral (C45-C46), and optogenetic (C51-C54) evidence demonstrating the functional importance of SK-mediated firing rate fluctuations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "6f47cf1c-6473-4ccd-bb4d-bb975be9f558",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The regulatory mechanism of fluctuations in Class IV neurons resembles that in mammalian Purkinje cells which display complex spikes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C6 is supported by the detailed comparison in the Discussion (C67-C70) and Figure 4\u2014figure supplement 1A, showing parallel mechanisms involving VGCC-mediated Ca2+ influx and SK channel-dependent pause generation in both systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "a5f09700-e362-4ad4-a693-0dfb77ff6028",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The burst-and-pause firing patterns are hypothesized to be output signals transducing high intensity stimuli and provoking robust avoidance behavior, with Ca2+ influx through L-type VGCCs amplifying depolarization and activating SK channels to generate pauses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C31, and C43 represent hypotheses that are substantiated by the experimental findings. The hypothesis that burst-and-pause patterns are functional output signals is supported by the behavioral phenotypes of both L-type VGCC knockdown (delayed avoidance, from previous work) and SK knockdown (faster avoidance, current work).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "4fb0d19a-16e1-46f6-984b-7cfa09f0ac16",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Class IV sensory neurons in Drosophila larvae respond to noxious thermal stimuli with characteristic burst-and-pause firing patterns coordinated with dendritic Ca2+ transients mediated by L-type VGCCs, and these patterns enhance heat avoidance behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C13-C15, C18-C22 summarize established background knowledge from previous work (primarily Terada et al., 2016) that provides the foundation for the current study. These are well-supported by citations and serve as the starting point for investigating the mechanism of pause generation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "f97c096e-ce17-42c9-86c0-fba7bf6b5cc9",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Rate coding has intrinsic limitations due to refractory periods causing firing rate saturation at high stimulus intensities, suggesting that sensory neurons may employ alternative coding mechanisms used in the central nervous system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12 present well-established principles of neuronal physiology (supported by classic citations: Adrian 1926, Hodgkin and Huxley 1952, Berry and Meister 1998) that motivate the investigation of alternative coding mechanisms. This provides important conceptual context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    },
+    {
+      "id": "7853ad76-436c-4217-99b1-d6a7452c8a45",
+      "content_id": "daf126d0-1604-418d-8f13-ec1639226a31",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Voltage-dependent K+ channels hyperpolarize membrane potential after depolarization regardless of Ca2+ influx, and their knockdown increases US number by suppressing the probability of firing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 provide a mechanistic explanation for why knockdown of voltage-gated K+ channels (Sh, Shal) increases US number, based on established channel biophysics. This helps explain the screening results and distinguishes these channels from Ca2+-activated SK channels.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:36:59.225045Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "65e48533-b691-4d30-9a67-bd1ce48d523d",
+      "result_id": "4870f02a-494a-4d73-841f-cd01867da4a7"
+    },
+    {
+      "claim_id": "ea593ae0-b989-45ce-aabb-4660691a4bf6",
+      "result_id": "4870f02a-494a-4d73-841f-cd01867da4a7"
+    },
+    {
+      "claim_id": "432441e2-9635-404e-8856-bf3e54c0eaf2",
+      "result_id": "4870f02a-494a-4d73-841f-cd01867da4a7"
+    },
+    {
+      "claim_id": "d7629d27-b462-4afb-8c60-05681ddb7fb5",
+      "result_id": "4870f02a-494a-4d73-841f-cd01867da4a7"
+    },
+    {
+      "claim_id": "f8a3e73e-b8e2-458e-be40-e7b1fdbcadff",
+      "result_id": "4870f02a-494a-4d73-841f-cd01867da4a7"
+    },
+    {
+      "claim_id": "4a1aba0d-c76a-435a-96d7-d6a76bc62720",
+      "result_id": "4870f02a-494a-4d73-841f-cd01867da4a7"
+    },
+    {
+      "claim_id": "84f7fe9a-06c1-4b7b-9bdf-1f4c2193f00e",
+      "result_id": "4870f02a-494a-4d73-841f-cd01867da4a7"
+    },
+    {
+      "claim_id": "c8c529a7-f1cc-4ea7-a706-418d65cd84af",
+      "result_id": "4870f02a-494a-4d73-841f-cd01867da4a7"
+    },
+    {
+      "claim_id": "f9136e34-744b-41bd-bede-5847dc20b10a",
+      "result_id": "4870f02a-494a-4d73-841f-cd01867da4a7"
+    },
+    {
+      "claim_id": "6e9992a0-9027-467d-a96c-ad1895d2ebef",
+      "result_id": "4870f02a-494a-4d73-841f-cd01867da4a7"
+    },
+    {
+      "claim_id": "cd460667-b31f-4c75-bd5a-6482222f0778",
+      "result_id": "4870f02a-494a-4d73-841f-cd01867da4a7"
+    },
+    {
+      "claim_id": "af7925bc-258b-41c1-8017-2f0a2f34f023",
+      "result_id": "a520e36e-d04c-4be2-8a8a-6f0bc7356323"
+    },
+    {
+      "claim_id": "9da1d15a-c3a4-467f-bbe6-ca2b6f846867",
+      "result_id": "a520e36e-d04c-4be2-8a8a-6f0bc7356323"
+    },
+    {
+      "claim_id": "fde30288-ffee-48f2-956c-069e05891f0b",
+      "result_id": "a520e36e-d04c-4be2-8a8a-6f0bc7356323"
+    },
+    {
+      "claim_id": "f6e2395f-6215-4114-95e8-eaad2a9d1a34",
+      "result_id": "a520e36e-d04c-4be2-8a8a-6f0bc7356323"
+    },
+    {
+      "claim_id": "e3910232-f5ef-40a6-ab28-4df0ad470256",
+      "result_id": "7953f486-7105-4286-bbc3-6d9a8bba97c1"
+    },
+    {
+      "claim_id": "69fce993-a1cd-4097-83a2-ba71245f1a90",
+      "result_id": "d0edd796-e345-4776-8dd6-be1520c92834"
+    },
+    {
+      "claim_id": "af390d3f-f360-4c7c-8fd6-f1cd9a750de0",
+      "result_id": "d0edd796-e345-4776-8dd6-be1520c92834"
+    },
+    {
+      "claim_id": "2d18a448-bde0-44a9-a46e-6770c126f242",
+      "result_id": "d0edd796-e345-4776-8dd6-be1520c92834"
+    },
+    {
+      "claim_id": "54e28103-b539-4143-b858-bae35efe38e4",
+      "result_id": "d0edd796-e345-4776-8dd6-be1520c92834"
+    },
+    {
+      "claim_id": "47d0b5a2-d4f2-4534-be3f-9d9384270bff",
+      "result_id": "d0edd796-e345-4776-8dd6-be1520c92834"
+    },
+    {
+      "claim_id": "1a901bab-a139-4f77-b841-4d5408e3ddad",
+      "result_id": "173a22bf-49ca-4e71-86ee-b7e1e024e48e"
+    },
+    {
+      "claim_id": "cb6b7698-a744-40cd-ac20-440ebbf4f093",
+      "result_id": "173a22bf-49ca-4e71-86ee-b7e1e024e48e"
+    },
+    {
+      "claim_id": "5957757e-47a9-4809-9936-d4d17e00dc04",
+      "result_id": "173a22bf-49ca-4e71-86ee-b7e1e024e48e"
+    },
+    {
+      "claim_id": "7813e447-3fc1-41ec-87fe-b5dd5b355d16",
+      "result_id": "173a22bf-49ca-4e71-86ee-b7e1e024e48e"
+    },
+    {
+      "claim_id": "efc3acd2-e446-4461-ad57-88fe9d5d7ddd",
+      "result_id": "173a22bf-49ca-4e71-86ee-b7e1e024e48e"
+    },
+    {
+      "claim_id": "d10f597a-c5b6-4144-9973-169f732ed18e",
+      "result_id": "3bb45828-0eeb-49af-93ee-3ec997d78db0"
+    },
+    {
+      "claim_id": "e9751a7f-67c7-49b7-bd71-9316d5b0315f",
+      "result_id": "3bb45828-0eeb-49af-93ee-3ec997d78db0"
+    },
+    {
+      "claim_id": "c4afb230-d24f-4473-8bd0-3215bf4901bf",
+      "result_id": "3bb45828-0eeb-49af-93ee-3ec997d78db0"
+    },
+    {
+      "claim_id": "c97ebab0-80fa-4aec-b965-eb946d587cca",
+      "result_id": "d179d99a-870b-43c3-b370-51f52379bf8a"
+    },
+    {
+      "claim_id": "ea714596-9bae-45ad-9bef-d38d4188ada7",
+      "result_id": "d179d99a-870b-43c3-b370-51f52379bf8a"
+    },
+    {
+      "claim_id": "06009b39-d20d-48dd-86b1-28f9233154d5",
+      "result_id": "d179d99a-870b-43c3-b370-51f52379bf8a"
+    },
+    {
+      "claim_id": "ac01d79a-9b26-43ca-ad65-ff7ba4cd1f6c",
+      "result_id": "d179d99a-870b-43c3-b370-51f52379bf8a"
+    },
+    {
+      "claim_id": "8c017fc1-efc4-47db-a627-75f131fc1d05",
+      "result_id": "d179d99a-870b-43c3-b370-51f52379bf8a"
+    },
+    {
+      "claim_id": "876e6d0c-0f4e-40d0-82f1-ae25d5f443e3",
+      "result_id": "bea7cca6-7ba1-436b-a47e-d6bb6ae02800"
+    },
+    {
+      "claim_id": "ea067d13-18f1-4040-91a9-0100c5fe5416",
+      "result_id": "bea7cca6-7ba1-436b-a47e-d6bb6ae02800"
+    },
+    {
+      "claim_id": "d79f14c8-a2d7-4555-a91c-710da8a2a0c6",
+      "result_id": "bea7cca6-7ba1-436b-a47e-d6bb6ae02800"
+    },
+    {
+      "claim_id": "5b91067a-9bae-476b-bebe-3b30ff2b8a98",
+      "result_id": "1cb71dd8-a060-4286-8dc1-cbc190d54aa6"
+    },
+    {
+      "claim_id": "3e13c66e-4c3d-4b7b-9122-136d99604144",
+      "result_id": "1cb71dd8-a060-4286-8dc1-cbc190d54aa6"
+    },
+    {
+      "claim_id": "4f9b1126-8928-4b0e-b295-a2448a0a1c14",
+      "result_id": "1cb71dd8-a060-4286-8dc1-cbc190d54aa6"
+    },
+    {
+      "claim_id": "71ddd4e1-2dab-4f8d-8132-fde49081cfe0",
+      "result_id": "d08135f8-2520-4ff9-9b2b-29049f8d6754"
+    },
+    {
+      "claim_id": "482571c2-29ce-443e-87b0-9de0bced71e4",
+      "result_id": "d08135f8-2520-4ff9-9b2b-29049f8d6754"
+    },
+    {
+      "claim_id": "4a1d50ab-d3dd-4a57-b2ca-d66c7eefdf52",
+      "result_id": "d08135f8-2520-4ff9-9b2b-29049f8d6754"
+    },
+    {
+      "claim_id": "75fc577e-0399-43e1-b712-b39c18bc483b",
+      "result_id": "d08135f8-2520-4ff9-9b2b-29049f8d6754"
+    },
+    {
+      "claim_id": "74ed8e09-0507-41e1-80dd-6b03f29c3000",
+      "result_id": "d08135f8-2520-4ff9-9b2b-29049f8d6754"
+    },
+    {
+      "claim_id": "9c6a2516-a69d-4ccf-966c-da9fd08074bc",
+      "result_id": "d08135f8-2520-4ff9-9b2b-29049f8d6754"
+    },
+    {
+      "claim_id": "8ffdca10-410e-4b18-b5aa-31bcb5d478d5",
+      "result_id": "59b8a8b4-3487-4b05-abf2-73d226d5ec29"
+    },
+    {
+      "claim_id": "43995e7e-62d4-46dd-9733-b6ad7ae4a028",
+      "result_id": "8e410ee6-967c-4e99-b72f-172ed5196fd1"
+    },
+    {
+      "claim_id": "e5f4bb7c-39c8-4317-be88-b7f5d734d1d7",
+      "result_id": "8e410ee6-967c-4e99-b72f-172ed5196fd1"
+    },
+    {
+      "claim_id": "49d11db5-81c7-4b60-ac2a-059ae66edc0f",
+      "result_id": "8e410ee6-967c-4e99-b72f-172ed5196fd1"
+    },
+    {
+      "claim_id": "5930e9df-9070-462b-9014-8e31699f9c9d",
+      "result_id": "8e410ee6-967c-4e99-b72f-172ed5196fd1"
+    },
+    {
+      "claim_id": "5c8d8f8c-317e-4931-af5e-6fbfa7a773ad",
+      "result_id": "8e410ee6-967c-4e99-b72f-172ed5196fd1"
+    },
+    {
+      "claim_id": "ff2e1a8a-b5d4-46e8-be08-b41492da4b95",
+      "result_id": "39ebd4b3-499e-418a-8e91-034c9d6a9304"
+    },
+    {
+      "claim_id": "d0d0492b-31e9-429f-9111-f3abca9065ee",
+      "result_id": "39ebd4b3-499e-418a-8e91-034c9d6a9304"
+    },
+    {
+      "claim_id": "84ac2734-d3e2-46aa-aedd-b0c724743701",
+      "result_id": "f272c3e4-3ae8-4f8e-854c-7eed74b04031"
+    },
+    {
+      "claim_id": "5ae897e0-6cd9-4569-9f65-f4022a40d3dc",
+      "result_id": "7dab5153-0244-4313-94a8-1782d219e6cf"
+    },
+    {
+      "claim_id": "143fb76b-ba93-43fa-86b9-1f375543359c",
+      "result_id": "7dab5153-0244-4313-94a8-1782d219e6cf"
+    },
+    {
+      "claim_id": "ba4f8533-0f74-4fbb-ae0f-c02da84556be",
+      "result_id": "7dab5153-0244-4313-94a8-1782d219e6cf"
+    },
+    {
+      "claim_id": "9d4d737a-ac6e-4f20-ad50-6ea5dd606d01",
+      "result_id": "7dab5153-0244-4313-94a8-1782d219e6cf"
+    },
+    {
+      "claim_id": "03e432e1-e1ec-4ed8-b8cd-d2217f633d60",
+      "result_id": "574d50f6-119c-4051-af9f-b35b627f89e4"
+    },
+    {
+      "claim_id": "ff3373cf-ea42-4426-9c9a-cd8f5e97ca47",
+      "result_id": "574d50f6-119c-4051-af9f-b35b627f89e4"
+    },
+    {
+      "claim_id": "42cb4a21-6ce7-4cd3-9efc-8a791a6624ac",
+      "result_id": "50261549-a0a6-4333-8f77-df1321046974"
+    },
+    {
+      "claim_id": "f23a19ab-8e36-4fae-b7ca-d71da0de8fe3",
+      "result_id": "50261549-a0a6-4333-8f77-df1321046974"
+    },
+    {
+      "claim_id": "d5717392-d834-4014-b210-62c73667c3a0",
+      "result_id": "50261549-a0a6-4333-8f77-df1321046974"
+    },
+    {
+      "claim_id": "8baab934-27ae-475c-9ed5-55f5bbe4e4a3",
+      "result_id": "50261549-a0a6-4333-8f77-df1321046974"
+    },
+    {
+      "claim_id": "aab14895-7c8e-41e9-8d06-23993d111722",
+      "result_id": "6f47cf1c-6473-4ccd-bb4d-bb975be9f558"
+    },
+    {
+      "claim_id": "3e61e77e-5c5d-4f50-96db-15788917d5b8",
+      "result_id": "a5f09700-e362-4ad4-a693-0dfb77ff6028"
+    },
+    {
+      "claim_id": "b31254d3-8622-4a55-be76-b86fe51fddde",
+      "result_id": "a5f09700-e362-4ad4-a693-0dfb77ff6028"
+    },
+    {
+      "claim_id": "aff4da03-42e2-48d9-ab99-1986c6d16e4a",
+      "result_id": "a5f09700-e362-4ad4-a693-0dfb77ff6028"
+    },
+    {
+      "claim_id": "243a30fb-ca5b-4c88-9ea3-8696812f4059",
+      "result_id": "4fb0d19a-16e1-46f6-984b-7cfa09f0ac16"
+    },
+    {
+      "claim_id": "1e72df0b-31e5-407d-9b87-7ebae4a864e9",
+      "result_id": "4fb0d19a-16e1-46f6-984b-7cfa09f0ac16"
+    },
+    {
+      "claim_id": "dde4bad2-c35d-4432-97c1-94e66bf09d07",
+      "result_id": "4fb0d19a-16e1-46f6-984b-7cfa09f0ac16"
+    },
+    {
+      "claim_id": "e866abd7-5454-44d7-88ba-519b9fc450aa",
+      "result_id": "4fb0d19a-16e1-46f6-984b-7cfa09f0ac16"
+    },
+    {
+      "claim_id": "e5799e40-8766-48c7-bd65-076038d50cc0",
+      "result_id": "4fb0d19a-16e1-46f6-984b-7cfa09f0ac16"
+    },
+    {
+      "claim_id": "9c40eff0-8cad-4bd6-a9a8-2333166d3ad4",
+      "result_id": "4fb0d19a-16e1-46f6-984b-7cfa09f0ac16"
+    },
+    {
+      "claim_id": "cc076fbb-548c-4d13-8080-9bd59322af20",
+      "result_id": "4fb0d19a-16e1-46f6-984b-7cfa09f0ac16"
+    },
+    {
+      "claim_id": "d0ede80c-eac6-4f22-b75a-285eedaf788f",
+      "result_id": "4fb0d19a-16e1-46f6-984b-7cfa09f0ac16"
+    },
+    {
+      "claim_id": "73fa69ce-b4c0-4d50-bf07-1bdd83109515",
+      "result_id": "4fb0d19a-16e1-46f6-984b-7cfa09f0ac16"
+    },
+    {
+      "claim_id": "f7cd7c0e-8078-4525-8ebb-9c355f7b3a13",
+      "result_id": "4fb0d19a-16e1-46f6-984b-7cfa09f0ac16"
+    },
+    {
+      "claim_id": "ac9f4763-31f7-422c-908a-a25f4a562fe5",
+      "result_id": "4fb0d19a-16e1-46f6-984b-7cfa09f0ac16"
+    },
+    {
+      "claim_id": "1731de78-d9ed-45f9-b922-a99946b9aec6",
+      "result_id": "f97c096e-ce17-42c9-86c0-fba7bf6b5cc9"
+    },
+    {
+      "claim_id": "0609b247-9383-43bf-8061-feed12c840f6",
+      "result_id": "f97c096e-ce17-42c9-86c0-fba7bf6b5cc9"
+    },
+    {
+      "claim_id": "ae8b2156-7d96-412f-8015-8b8635cfe0a2",
+      "result_id": "f97c096e-ce17-42c9-86c0-fba7bf6b5cc9"
+    },
+    {
+      "claim_id": "a14c5fe1-d297-446b-a365-69c1ad8db66f",
+      "result_id": "f97c096e-ce17-42c9-86c0-fba7bf6b5cc9"
+    },
+    {
+      "claim_id": "6576bc5b-3e7c-486d-a6d3-f77957524b62",
+      "result_id": "f97c096e-ce17-42c9-86c0-fba7bf6b5cc9"
+    },
+    {
+      "claim_id": "fb0ada46-f5d5-4bd5-ba26-862512f8ef20",
+      "result_id": "7853ad76-436c-4217-99b1-d6a7452c8a45"
+    },
+    {
+      "claim_id": "3e6c21aa-4f04-43bd-80d5-faa1a062d284",
+      "result_id": "7853ad76-436c-4217-99b1-d6a7452c8a45"
+    }
+  ],
+  "comparisons": []
+}

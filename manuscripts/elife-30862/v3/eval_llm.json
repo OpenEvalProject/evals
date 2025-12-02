@@ -1,0 +1,226 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "RXRA S427F/Y mutations occur in 5-8% of bladder cancer cases, always substituting with aromatic amino acids. PPARG amplification occurs in 17% of cases with enriched mRNA expression. Together, these alterations may drive 20-25% of bladder cancers through hyperactive PPAR signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 are well-supported by citations to three independent cohort studies (TCGA and others) with specific frequencies and statistical measures. Claim C6 is a reasonable inference based on the combined frequencies (17% + 5-8% \u2248 20-25%), though it assumes non-overlapping populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "RXRA S427F/Y mutations induce PPAR pathway gene expression in bladder cancer cell lines and clinical specimens. RNA-seq shows PPAR signaling as the top enriched pathway, with transcriptome changes correlating strongly with PPARG agonist treatment (Pearson r=0.72, p<10^-34).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 are supported by RNA-seq, RT-qPCR, and statistical correlation analyses with appropriate replication (biological triplicates). Claims C11-C12 are supported by TCGA citations. The correlation analysis provides strong quantitative evidence linking mutation effects to PPAR activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Mutant RXRA hyperactivates approximately 12% of RXRA-bound active enhancers/promoters, with enrichment of the canonical RXR/PPAR DR1 motif. This is confirmed by luciferase reporter assays showing DR1 hyperactivation comparable to pioglitazone treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 are supported by ChIP-seq data with appropriate statistical thresholds (FDR<0.05), HOMER motif analysis, and functional validation via luciferase assays. The integration of genomic and functional data provides strong evidence for mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Both PPARD and PPARG are highly expressed in RXRA-mutant bladder cancers and contribute redundantly to mutant RXRA-mediated transcriptional hyperactivity. Combined knockdown of both receptors is required for maximal inhibition of target gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 are supported by TCGA expression analysis and siRNA knockdown experiments with RT-qPCR validation in two cell lines. The redundancy conclusion is well-supported by the observation that dual knockdown is more effective than single knockdown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "RXRA S427F/Y mutations confer gain-of-function selectively in the context of PPAR expression, not in RXRA homodimer or RARA heterodimer contexts. Expression of either PPARG or PPARD is sufficient to elicit mutant hyperactivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 are supported by luciferase reporter assays in UM-UC-3 cells (low endogenous PPAR) with and without PPAR or RARA co-transfection. The selectivity for PPARs is demonstrated through multiple negative controls (homodimer, RARA) and positive results with both PPARG and PPARD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "RXRA S427F hyperactivity relies on the PPAR AF2 domain independent of PPAR ligand binding. Mutations in the PPARG ligand-binding pocket (Q286P) block agonist response but not mutant RXRA activity, while AF2 mutations (E471A) block both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 are supported by structure-function studies using site-directed mutagenesis and luciferase assays. The dissociation of ligand-binding dependence from AF2 dependence is clearly demonstrated. Crystal structure citations (C23) provide structural context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Molecular dynamics simulations and mutational studies reveal that S427F/Y initiates allosteric PPAR AF2 activation through aromatic interaction with the terminal tyrosine unique to PPARs. Mutation or deletion of this tyrosine eliminates mutant hyperactivity while preserving agonist response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by extensive MD simulations (1 microsecond aggregate) with Markov State Model analysis. Claims C32-C35 provide functional validation through mutagenesis and sequence alignment. The mechanistic model is well-supported by convergent computational and experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "PPAR activation is insufficient to drive growth of wild-type urothelial organoids but becomes proliferative in the context of tumor suppressor loss. Trp53 deletion is sufficient for PPARD agonist-driven growth, enhanced further by combined Trp53/Kdm6a deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are supported by organoid growth assays using multiple independent lines with defined genetic backgrounds. The requirement for tumor suppressor loss is demonstrated through systematic comparison of wild-type, single knockout, and double knockout organoids. Statistical significance is shown for key comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "In Trp53/Kdm6a double knockout organoids, PPARD agonist GW0742 (but not PPARG agonist pioglitazone) induces dose-dependent growth and target gene expression. The ability to induce transcription correlates with proliferative effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by CellTiter-Glo growth assays and RT-qPCR showing dose-dependent responses to GW0742 but not pioglitazone. The correlation between transcriptional and proliferative effects is demonstrated, though the lack of pioglitazone response may reflect lower PPARG expression in mouse organoids.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Mutant RXRA S427F drives sustained growth-factor-independent proliferation of Trp53/Kdm6a knockout organoids. Over six passages, mutant organoids show significantly more doublings per passage than wild-type (p=0.0003).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by short-term CellTiter-Glo assays and long-term passaging experiments with cell counting. The statistical analysis (paired t-test) is appropriate for the repeated measures design. The sustained growth difference over multiple passages strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Mutant RXRA upregulates PPAR target genes (Plin2, Fabp4) in organoids, and this upregulation is blocked by PPARD inverse agonists (ST247, GSK0660) but not by PPARG antagonist (T0070907), confirming PPARD-specific hyperactivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by RT-qPCR with appropriate controls comparing empty vector, wild-type, and mutant RXRA. The receptor-specific pharmacology (PPARD vs PPARG antagonists) provides strong evidence for PPARD as the primary mediator in this organoid system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "PPARD antagonists specifically inhibit mutant RXRA-driven organoid proliferation in a dose-dependent manner. This effect is specific to mutant RXRA context, as antagonists do not inhibit growth of carcinogen-induced tumors (MCB6C) or wild-type RXRA organoids with EGF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by CellTiter-Glo assays across multiple organoid lines and conditions. The specificity is well-demonstrated through negative controls (MCB6C, wild-type with EGF) and receptor-specific pharmacology (PPARD vs PPARG antagonists). Statistical significance is shown for key comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "PPAR signaling plays a role in bladder cancer, supported by PPARG amplification (17% of cases), pioglitazone-associated cancer risk, and expression of both PPARD and PPARG in tumors. PPAR activation drives urothelial growth only with concurrent tumor suppressor loss, unlike classical growth factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by citations to TCGA data (C57), epidemiological studies (C58), expression data (C59), and functional studies (C60, C62). Claim C1 is established knowledge. Claim C61 cites prior mechanistic work. The integration of genomic, epidemiological, and functional data supports the overall conclusion about PPAR's role in bladder cancer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Bladder cancer is the sixth most common US cancer (~17,000 deaths/2017) lacking molecularly targeted therapies. Nuclear receptors are successful oncology targets (ER, AR in breast/prostate cancer). TP53 and KDM6A are frequently mutated in bladder cancer (~50% and ~25%, respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 provide background context supported by appropriate citations to NCI statistics, clinical trials, and established therapeutic successes. Claims C69-C70 are supported by citations to three independent cohort studies. These are well-established facts providing context for the study.",
+    "result_type": "MINOR"
+  }
+]

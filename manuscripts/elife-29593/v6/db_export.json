@@ -1,0 +1,1938 @@
+{
+  "submission": {
+    "id": "15b36832-d145-42ed-a252-9a6ade0b463e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:35:29.711718Z",
+    "updated_at": "2025-12-01T22:35:29.711718Z"
+  },
+  "content": [
+    {
+      "id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "submission_id": "15b36832-d145-42ed-a252-9a6ade0b463e",
+      "content_type": "manuscript",
+      "content_text": "# Natural variation in stochastic photoreceptor specification and color preference in Drosophila\n\n## Authors\n\n- Caitlin Anderson<sup>1</sup> ([ORCID: 0000-0003-2260-6209](https://orcid.org/0000-0003-2260-6209))\n- India Reiss<sup>1</sup>\n- Cyrus Zhou<sup>1</sup>\n- Annie Cho<sup>1</sup>\n- Haziq Siddiqi<sup>1</sup>\n- Benjamin Mormann<sup>2</sup>\n- Cameron M Avelis<sup>3</sup>\n- Peter Deford<sup>1</sup>\n- Alan Bergland<sup>4</sup> ([ORCID: 0000-0001-7145-7575](https://orcid.org/0000-0001-7145-7575))\n- Elijah Roberts<sup>3</sup>\n- James Taylor<sup>1</sup> ([ORCID: 0000-0001-5079-840X](https://orcid.org/0000-0001-5079-840X))\n- Daniel Vasiliauskas<sup>5</sup>\n- Robert J Johnston<sup>1</sup> ([ORCID: 0000-0002-5775-6218](https://orcid.org/0000-0002-5775-6218)) \u2020\n\n### Affiliations\n\n1. Department of Biology Johns Hopkins University Baltimore United States\n2. Center for Developmental Genetics, Department of Biology New York University New York United States\n3. Department of Biophysics Johns Hopkins University Baltimore United States\n4. Department of Biology University of Virginia Charlottesville United States\n5. Paris-Saclay Institute of Neuroscience, Universit\u00e9 Paris Sud, Centre National de la Recherche Scientifque, Universit\u00e9 Paris-Saclay Gif-sur-Yvette France\n\n\u2020 Corresponding author\n\n## Abstract\n\nEach individual perceives the world in a unique way, but little is known about the genetic basis of variation in sensory perception. In the fly eye, the random mosaic of color-detecting R7 photoreceptor subtypes is determined by stochastic on/off expression of the transcription factor Spineless (Ss). In a genome-wide association study, we identified a naturally occurring insertion in a regulatory DNA element in ss that lowers the ratio of SsON to SsOFF cells. This change in photoreceptor fates shifts the innate color preference of flies from green to blue. The genetic variant increases the binding affinity for Klumpfuss (Klu), a zinc finger transcriptional repressor that regulates ss expression. Klu is expressed at intermediate levels to determine the normal ratio of SsON to SsOFF cells. Thus, binding site affinity and transcription factor levels are finely tuned to regulate stochastic expression, setting the ratio of alternative fates and ultimately determining color preference.\n\n## Introduction\n\nOrganisms require a diverse repertoire of sensory receptor neurons to perceive a range of stimuli in their environments. Differentiation of sensory neurons often requires stochastic mechanisms whereby individual neurons randomly choose between different fates. Stochastic fate specification diversifies sensory neuron subtypes in a wide array of species including worms, flies, mice, and humans (Ressler et al., 1993; Roorda and Williams, 1999; Troemel et al., 1999; Hofer et al., 2005; Johnston and Desplan, 2010; Magklara and Lomvardas, 2013; Alqadah et al., 2016; Viets et al., 2016). How naturally occurring changes in the genome affect stochastic mechanisms to alter sensory system development and perception is poorly understood. To address this question, we investigated natural variation in stochastic color photoreceptor specification in the Drosophila retina.\n\nThe fly eye, like the human eye, contains a random mosaic of photoreceptors defined by expression of light-detecting Rhodopsin proteins (Montell et al., 1987; Bell et al., 2007; Johnston and Desplan, 2010; Viets et al., 2016). In flies, the stochastic on/off expression of Spineless (Ss), a PAS-bHLH transcription factor, determines R7 photoreceptor subtypes. Ss expression in a random subset of R7s induces \u2018yellow\u2019 (yR7) fate and expression of Rhodopsin4 (Rh4), whereas the absence of Ss in the complementary subset of R7s allows for \u2018pale\u2019 (pR7) fate and Rhodopsin3 (Rh3) expression (Figure 1A)\u00a0(Wernet et al., 2006; Johnston et al., 2011; Thanawala et al., 2013; Johnston and Desplan, 2014). The on/off state of Ss in a given R7 also indirectly determines the subtype fate of the neighboring R8 photoreceptor. pR7s lacking Ss signal to pR8s to activate expression of blue-detecting Rhodopsin5 (Rh5). yR7s expressing Ss do not send this signal, resulting in expression of green-detecting Rhodopsin6 (Rh6) in yR8s (Figure 1A)\u00a0(Franceschini et al., 1981; Montell et al., 1987; Zuker et al., 1987; Chou et al., 1996; Huber et al., 1997; Chou et al., 1999a; Mikeladze-Dvali et al., 2005; Mazzoni et al., 2008; Vasiliauskas et al., 2009; Jukam and Desplan, 2011; Hsiao et al., 2013; Johnston, 2013; Jukam et al., 2013; Jukam et al., 2016; Yan et al., 2017).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/29593/elife-29593-fig1-v6.jpg)\n\n**Figure 1.:** (A) R7 and R8 subtypes are determined by the on/off expression of Spineless (Ss). (Left) The absence of Ss allows Rh3 expression in pale R7s and Rh5 expression in pale R8s. (Right) Expression of Ss induces Rh4 expression in yellow R7s and Rh6 expression in yellow R8s. The signal by which Spineless mediates Rh5 vs. Rh6 expression in R8s is currently unknown. (B) Schematic of the ss locus. Green dashed rectangle indicates R7/R8 enhancer; red dashed rectangles indicate silencer 1 and silencer 2; blue line indicates Klu binding site; blue arrow indicates ss insertion/sin; gray ovals represent untranslated exons; yellow ovals represent translated exons; black boxes indicate neighboring genes; arrows indicate transcriptional starts. See also Figure 1\u2014figure supplement 1. (C) Image of a whole mount fly retina. (Left) Stochastic distribution of R7s expressing Rh3 (SsOFF) or Rh4 (SsON). Scale bar indicates 100 \u00b5m. (Right) An automated counting system identified and counted Rh3- and Rh4-expressing R7s. (D) Crossing scheme: Wild-derived DGRP flies were crossed with ss deficiency flies, yielding progeny that were hemizygous at the ss locus. Orange lines indicate hypothetical genetic variants; blue line indicates sin in ss. (E) Representative images from progeny in (D) with low (left; DGRP-397) and high (right; DGRP-229) proportions of SsON (Rh4) R7s. Scale bar indicates 20 \u00b5m. (F) SsON proportion varied across DGRP fly lines. sin was enriched in lines with a low proportion of SsON R7s. Each bar represents progeny from a single DGRP line, and bars are arranged in rank order. Light blue bars indicate hemizygous sin. Dark blue bars indicate hemizygous sin or hemizygous no sin (original DGRP line was heterozygous sin/no sin). Gray bars indicate hemizygous no sin. See also Figure 1\u2014source data 1. (G) GWAS identified sin as a genetic variant associated with Ss expression. Manhattan plot of the genetic variant p-values. Genetic variants above the red line (Bonferroni correction) are considered significant. Arrow indicates sin. (H) sin was enriched in lines with a low proportion of SsON R7s. Violin plot of DGRP lines with and without sin. (I\u2013K) Flies with sin displayed a lower proportion of SsON R7s compared to flies without sin. AL indicates African lines; LL indicates laboratory lines; CL indicates lines in which sin was inserted with CRISPR. **** indicates p<0.0001; *** indicates p<0.001. Error bars indicate standard deviation (SD). See also Figure 1\u2014figure supplements 2\u20134.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29593/elife-29593-fig1-figsupp1-v6.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic of the ss locus illustrating DNA elements tested for transcriptional activity. (B, D) The regions neighboring the Klu binding site drive expression in the larval retina. (C) The region encompassing the Klu binding site drives expression in the larval retina.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29593/elife-29593-fig1-figsupp2-v6.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A\u2013E) The ratio of SsON/SsOFF cells was assessed using a Ss antibody in mid-pupal retinas. (A\u2013D) White circles indicate SsON R7s. Gray circles indicate SsOFF R7s. (A) Wild type. (B) sin. (C) Ectopic expression of Klu (eye\u00a0>\u00a0klu). (D) klu null mutant. (E) Quantification of A-D. The proportion of SsON R7s decreased in flies with sin or ectopic expression of Klu and increased in klu null mutants. ** indicates p<0.01; * indicates p<0.05. Error bars indicate standard deviation (SD).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/29593/elife-29593-fig1-figsupp3-v6.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A\u2013F) Allele frequency of sin worldwide. Allele frequency of sin in European samples based on haplotype data (A) and pooled estimates (B). Allele frequency of sin in North American samples based on haplotype data (C) and pooled estimates (D). Allele frequency of sin in Africa using samples that have been filtered for admixture with non-African, cosmopolitan populations (F) and without admixture filtering (E). (G\u2013H) Distribution of normalized FST at sin and comparable indels. (G) FST calculated between continents using average FST between populations within each continent. (H) FST calculated among populations within North America. The red line indicates the value of FST at sin. (I\u2013J) Haplotypic patterns at sin and comparable loci. (I) Extended haplotype homozygosity at haplotypes bearing sin (blue line) versus haplotypes where sin is absent (grey line). (J) Distribution of IHS values surrounding sin and at comparable loci.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/29593/elife-29593-fig1-figsupp4-v6.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A\u2013C) Levels of Ss expression were not significantly different between wild type and klu mutant SsON R7s. A-C are from three representative retinas. ns indicates not significant, p>0.05. Error bars indicate standard deviation (SD). (D\u2013E) Ss levels are not significantly changed in flies with sin, klu null mutants, or flies with increased levels of Klu (eye\u00a0>klu). We previously showed that changes in Ss levels or activity alter the exclusivity or co-expression of Rhodopsin expression (Thanawala et al., 2013). The main region of the retina is a random mosaic of R7s cells with exclusive expression of Rh3 (SsOFF) or Rh4 (SsON). This exclusivity breaks down in the dorsal third region of the retina where some R7s exclusively express Rh3 (SsOFF), but others co-express Rh4 and Rh3 (SsON). This dorsal third region starts approximately four rows above the dorsal/ventral equator of the retina. Increasing levels of Ss generates retinas with exclusive expression of Rh3 or Rh4 throughout the retina. Decreasing levels of Ss leads to an expansion of the dorsal third region of co-expression. Thus, we used the demarcation of the region of co-expression of Rh4 and Rh3 in SsON R7s as a proxy for Ss levels. (D) Representative image of lab stock Rh3 and Rh4 expression indicating position of the equator (solid green line) and dorsal third region (dashed green line). (E) Quantification of the position of the dorsal third in number of rows above the equator. ns indicates not significant, p>0.05. Error bars indicate standard deviation (SD).\n\nThe stochastic decision to express Ss is made cell-autonomously at the level of the ss gene locus via a random repression mechanism. The R7/R8 enhancer induces ss expression in all R7s, whereas two silencer regions (silencer 1 and 2) repress expression in a random subset of R7s (Figure 1B)\u00a0(Johnston and Desplan, 2014).\n\nThough the stochastic expression of Ss is binary (i.e. on or off) in individual R7s, it does not result in a simple 50:50 on/off ratio across the population of R7s in a given retina. In most lab stocks, Ss is on in\u00a0~65% of R7s and off in\u00a0~35% (Figure 1C)\u00a0(Wernet et al., 2006; Johnston and Desplan, 2014). Here, we find that the proportion of SsON to SsOFF R7s varies greatly among fly lines derived from the wild. We performed a genome-wide association study (GWAS) and identified a single base pair insertion that increases the affinity of a DNA binding site for a transcriptional repressor, significantly reducing the SsON/SsOFF ratio. This genetic variant changes the proportion of photoreceptor subtypes and alters the innate color preference of flies.\n\n## Results\n\n### sin decreases the ratio of SsON to SsOFF R7s\n\nTo determine the mechanism controlling the ratio of stochastic on/off Ss expression, we analyzed the variation in 203 naturally-derived lines collected from Raleigh, North Carolina (Drosophila Genetic Reference Panel (DGRP))\u00a0(Mackay et al., 2012). We evaluated Rh4 and Rh3 expression, as they faithfully report Ss expression in R7s (i.e. SsON\u00a0=\u00a0Rh4; SsOFF\u00a0=\u00a0Rh3) (Figure 1A)\u00a0(Thanawala et al., 2013; Johnston and Desplan, 2014). To facilitate scoring, we generated a semi-automated counting system to determine the Rh4:Rh3 ratio for each genotype (Figure 1C).\n\nTo assess the variation in the DGRP lines attributable to the ss locus and limit the phenotypic contribution of recessive variants at other loci, we crossed each DGRP line to a line containing a\u00a0~200 kb deficiency covering the ss locus and analyzed Rh3 and Rh4 expression in the F1 male progeny (Figure 1D). This genetic strategy generated flies hemizygous (i.e. single copy) for the wild-derived ss gene locus, heterozygous wild-derived/lab stock for the second, third, and fourth chromosomes, and hemizygous lab stock for the X chromosome (Figure 1D). While the lab stock expressed Ss (Rh4) in 62% of R7s under these conditions, expression among the DGRP lines varied significantly, ranging from 19% to 83% SsON (Rh4) (Figure 1E\u2013F; Figure 1\u2014source data 1).\n\nTo identify the genetic basis of this variation, we performed a genome-wide association study (GWAS) using the SsON (Rh4) phenotype data and inferred full genome sequences of the progeny of each DGRP line crossed with the ss deficiency line. We performed an association analysis and identified a single base pair insertion within the ss locus (\u2018ss insertion\u2019 or \u2018sin\u2019) that was significant (p<10\u221213) after Bonferroni correction (Figure 1G). sin was enriched in DGRP lines with a low ratio of SsON to SsOFF R7s (Figure 1F and H).\n\nWe next confirmed the regulatory role of sin. Naturally derived lines from Africa that are homozygous for sin displayed a decrease in the proportion of SsON (Rh4) R7s compared to lines from Africa lacking sin (Figure 1I)\u00a0(Lack et al., 2015). We identified sin on a balancer chromosome (TM6B) in a lab stock that similarly displayed a decrease in the proportion of SsON (Rh4) R7s when ss was hemizygous (Figure 1J). To definitively test the role of sin, we used CRISPR to insert sin into a lab stock. Flies hemizygous for CRISPR sin alleles displayed a significant decrease in the proportion of SsON (Rh4) R7s (Figure 1K). Using a Ss antibody, we examined Ss expression directly and found that flies homozygous for CRISPR sin alleles displayed a significant decrease in the proportion of SsON R7s (Figure 1\u2014figure supplement 2A\u2013B and E). Thus, sin causes a decrease in the ratio of SsON to SsOFF R7s.\n\n### sin shifts innate color preference from green to blue\n\nAs sin alters the proportion of color-detecting photoreceptors, we hypothesized that it would also change color detection and preference. When presented with two light stimuli in a T-maze (Tully and Quinn, 1985), flies will phototax toward the light source that they perceive as more intense (Figure 2A)\u00a0(McEwen, 1918; Heisenberg and Wolf, 1984; Choe and Clandinin, 2005). The absorption spectra of Rh3 and Rh4 significantly overlap in the UV range (Feiler et al., 1992), complicating behavioral assessment of color preference caused by differences in R7 photoreceptor ratios. Instead, we focused on the perception of blue light by Rh5 and green light by Rh6 in the R8 photoreceptors, as these Rhodopsins have more distinct absorption spectra (Salcedo et al., 1999). Because R8 fate is coupled to R7 fate (Chou et al., 1996) (Figure 1A), we predicted that flies with sin would have a low ratio of Rh6- to Rh5-expressing R8s and would consequently prefer blue light, while flies without sin would have a higher ratio of Rh6- to Rh5-expressing R8s and would instead prefer green light. Indeed, DGRP lines containing sin preferred blue light, while DGRP lines lacking sin preferred green light (Figure 2A\u2013C; Figure 2\u2014source data 1), showing that sin changes innate color preference in flies. Natural variation in the gene regulatory pathway controlling Rh5 and Rh6 expression downstream of Ss (Mikeladze-Dvali et al., 2005; Jukam and Desplan, 2011; Jukam et al., 2013; Viets et al., 2016) or in the neural circuit downstream of R8 signaling likely caused the green light preference of some lines with sin.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/29593/elife-29593-fig2-v6.jpg)\n\n**Figure 2.:** (A) Schematic of T-maze apparatus. Red dots represent flies. PI\u00a0=\u00a0Preference Index. Positive PI indicates preference for green light; negative PI indicates preference for blue light. NG: number of flies on green side; NB: number of flies on blue side. (B\u2013C) Flies with sin preferred blue light, while flies without sin preferred green light. Color of bar indicates genotype of DGRP line. Light blue bars indicate homozygous sin. Gray bars indicate homozygous no sin. Error bars indicate standard error of the mean (SEM). See also Figure 2\u2014source data 1. (B) PIs for individual DGRP lines with and without sin. (C) Averages of PIs for DGRP lines with (n\u00a0=\u00a023) and without sin (n\u00a0=\u00a031). * indicates p<0.05.\n\n### sin increases the binding affinity for the Klumpfuss transcription factor\n\nsin is a single base pair insertion within a previously uncharacterized non-coding region of the ss locus located\u00a0~7 kb upstream of the transcriptional start (Figure 1B and Figure 3A). To identify trans factors whose binding might be affected by sin, we searched for binding motifs affected by sin in SELEX-seq (Nitta et al., 2015) and bacterial one-hybrid datasets (B1H)\u00a0(Zhu et al., 2011; Enuameh et al., 2013). sin lies in a predicted binding site for the zinc finger transcription factor Klumpfuss (Klu), the fly homolog of Wilms\u2019 Tumor Suppressor Protein 1 (WT1) (Figure 3B, Figure 3\u2014figure supplement 1A)\u00a0(Klein and Campos-Ortega, 1997; Yang et al., 1997). This region is perfectly conserved across 21 Drosophila species covering 50 million years of evolution, consistent with a critical regulatory role (Figure 3C, Figure 3\u2014figure supplement 1B\u2013C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/29593/elife-29593-fig3-v6.jpg)\n\n**Figure 3.:** (A\u2013C) Colored bases indicate the predicted Klu binding site. (A) sin is a single base pair insertion of a C at Chr. 3R: 16,410,775 (release 6). Underline indicates sin. (B) Position weight matrix (PWM) for Klu binding predicted from SELEX-seq. See also Figure 3\u2014figure supplement 1A. (C) The Klu site is perfectly conserved across 21 species of Drosophila covering 50 million years of evolution. Conservation logo of the Klu site and neighboring sequence in the ss locus. Height of bases indicates degree of conservation. See also Figure 3\u2014figure supplement 1B. (D) sin increased Klu binding affinity in vitro. Quantification of the number of reads for the Klu site with and without sin in four cycles of SELEX-seq. * indicates p<0.05; **** indicates p<0.0001. (E) Comparing the number of read-occurrences in the SELEX-seq dataset, sin increases binding of Klu to the endogenous ss site but decreases binding of Klu to the optimal site, suggesting a binding site affinity dependence between bases. Boxes highlight positions 8 and 10 in the 10-mer core sequences. (F) Flies hemizygous for an optimal Klu site displayed a lower proportion of SsON R7s compared to wild type flies. optimal Klu site 1 and optimal Klu site 2 are independent lines derived from CRISPR-mediated mutagenesis. * indicates p<0.05; *** indicates p<0.001. Error bars indicate standard deviation (SD).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29593/elife-29593-fig3-figsupp1-v6.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Consensus Klu binding motifs derived from B1H and SELEX-seq (four cycles) datasets. (B\u2013C) The Klu site is perfectly conserved across 21 species of Drosophila covering 50 million years of evolution. The conservation logo, as in Figure 3C, is included to compare to sequence alignments. Height of bases indicates degree of conservation. Colored bases indicate the Klu site.\n\nTo evaluate the effect of sin on Klu binding, we analyzed available SELEX-seq binding data (Nitta et al., 2015), focusing on the core 10-mer. The number of reads containing the Klu binding site with sin (CGCCCACACC) was significantly higher than without sin (CGCCCACACA) (Figure 3D), and thus, Klu binds the endogenous ss sequence with sin better than without it. Considering the frequency of 10-mers as a measure of site preference, we found that 506 10-mers (0.10%) have frequencies greater than the Klu site without sin, whereas only 366 10-mers (0.07%) have frequencies greater than the Klu site with sin. Together, sin increases the binding affinity of the Klu site in vitro.\n\nWe further analyzed SELEX-seq data to understand the differences between Klu binding affinities for the predicted optimal site and endogenous site in ss. The endogenous 10-mer core sequence in ss (CGCCCACACA) deviates from the optimal site (CGCCCACGCA) at position 8, causing a dramatic reduction in the affinity for the endogenous site (Figure 3E). Interestingly, sin in position 10 significantly decreases binding affinity for the optimal site (compare CGCCCACGCA to CGCCCACGCC), whereas it increases affinity for the endogenous Klu site in ss (compare CGCCCACACA to CGCCCACACC) (Figure 3E). A PWM is a good representation of the sequence preferences of a DNA-binding protein, but it assumes independent contributions of individual bases. In this case, we observe dependence between positions within the motif that the PWM disregards. Our analysis indicates that Klu binding affinity is dependent on the relationship between the bases in position 8 and 10. This dependence reveals that Klu preferentially interacts with the site with sin (C in position 10) over the site without sin (A in position 10) in the endogenous spineless locus (A in position 8), in contrast to the general predictions of the PWM (preferred G in position eight and A in position 10). Dependence between positions suggests that binding of transcription factors like Klu is determined not only by sequence but also by DNA shape, as has been described previously (Abe et al., 2015; Zhou et al., 2015; Chiu et al., 2017). These data suggest that the Klu site in the endogenous locus is a low-affinity site and that sin increases its affinity.\n\nSince sin is predicted to increase the binding affinity for Klu and sin caused a reduction in the on/off ratio of Ss expression, we hypothesized that mutating the Klu site to an optimized high-affinity site would also cause a decrease in the proportion of SsON R7s. We used CRISPR to mutate the endogenous low-affinity Klu site (ACGCCCACACAC) to the predicted optimized high-affinity site (ACGCCCACGCAC) and observed a decrease in the proportion of SsON R7s similar to flies with sin (Figure 3F). The observation that an optimized high-affinity Klu site causes a similar phenotype as sin is consistent with the conclusion that sin increases the binding affinity for Klu.\n\n### Klu lowers the SsON/SsOFF ratio in R7s\n\nKlu/WT1 has been shown to be a transcriptional repressor in other systems (Drummond et al., 1992; McDonald et al., 2003; Kaspar et al., 2008). As sin decreases Ss expression frequency and is predicted to increase Klu binding affinity, we hypothesized that Klu also represses stochastic ss expression in R7s. We found that Klu was expressed in R7s in larval eye imaginal discs in a Gaussian distribution (Figure 4A\u2013B; Figure 4\u2014figure supplement 1)\u00a0(Wildonger et al., 2005). We predicted that increasing Klu levels would cause a decrease in the proportion of SsON R7s, whereas decreasing or completely ablating Klu would cause an increase in the proportion of SsON R7s. Indeed, increasing the levels of Klu in Klu-expressing cells (klu\u00a0>\u00a0klu), all photoreceptors (eye\u00a0>\u00a0klu), or specifically in all R7s (R7\u00a0>\u00a0klu) caused a decrease in the proportion of SsON (Rh4) R7s (Figure 4C\u2013D; Figure 1\u2014figure supplement 2C and E). This decrease in the SsON/SsOFF ratio upon increasing Klu levels mimicked the effect of sin, consistent with sin increasing the binding affinity for the Klu repressor.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/29593/elife-29593-fig4-v6.jpg)\n\n**Figure 4.:** (A) Klu was expressed in the developing larval eye disc. MF indicates morphogenetic furrow. Scale bar indicates 100 \u00b5m. (B) Klu was expressed in all R7s in the developing larval eye disc. Red indicates R7s marked by pm181\u00a0>Gal4, UAS\u00a0>\u00a0mCD8 GFP. Scale bar indicates 10 \u00b5m. See also Figure 4\u2014figure supplement 1. (C\u2013D) Increasing Klu levels decreased the proportion of SsON R7s. Increasing Klu levels in flies with sin caused an additional reduction in the proportion of SsON R7s. In C, representative image of a retina from an eye\u00a0>\u00a0klu fly. R7s express either Rh3 (SsOFF) or Rh4 (SsON). Scale bar indicates 20 \u00b5m. In D, **** indicates p<0.0001. Error bars indicate standard deviation (SD). (E\u2013F) klu loss-of-function mutants displayed increases in the proportion of SsON R7s. In E, representative image of a retina from a klu hypomorph. R7s express either Rh3 (SsOFF) or Rh4 (SsON). Scale bar indicates 20 \u00b5m. In F, **** indicates p<0.0001; *** indicates p<0.001. Error bars indicate standard deviation (SD). (G\u2013H) The proportion of SsON R7s was higher in klu null mutant clones compared to wild type clones in mid-pupal retinas. GFP+\u00a0indicates wild type clone; GFP- indicates klu mutant clone. The dotted line marks the clone boundary. White circles indicate SsON R7s; gray circles indicate SsOFF R7s. In addition to expression in circled R7s, Ss was expressed in bristle cells (unmarked). Scale bar indicates 20 \u00b5m. (I) Quantification of % SsON R7s in klu null mutant and wild type clones. *** indicates p<0.001. Error bars indicate standard deviation (SD). (J) Decreasing klu gene dosage in klu null mutant heterozygotes suppressed the sin phenotype. ** indicates p<0.01. Error bars indicate standard deviation (SD).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29593/elife-29593-fig4-figsupp1-v6.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Quantification of Klu levels in a single retina. (B) Quantification of Klu levels across several retinas (n\u00a0=\u00a05).\n\nConversely, klu loss-of-function mutants displayed increases in the proportion of SsON (Rh4) R7s (Figure 4E\u2013F). We examined Ss expression directly and found that the proportion of SsON R7s increased in klu null mutants (Figure 1\u2014figure supplement 2D\u2013E). Moreover, we found that the proportion of SsON R7s increased in klu mutant clones compared to wild type clones (Figure 4G\u2013I). As the proportion of SsON R7s increases specifically in klu mutant clones and decreases upon ectopic expression of Klu in R7s, we conclude that Klu is endogenously expressed at intermediate levels and acts cell-autonomously to determine Ss expression state.\n\nOur data suggest that the ratio of Ss on/off gene expression is controlled by both the level of Klu protein and the binding affinity of the Klu site. To test this idea, we altered Klu levels in flies with the higher affinity Klu site (i.e. with sin). Because the proportion of SsON R7s is reduced in flies with increased Klu levels (high repressor levels) or in flies with the sin variant (high binding affinity), we predicted a further reduction in flies with both high Klu and sin (high repressor levels, high binding affinity). We generated flies with increased levels of Klu in a sin genetic background and observed a significant additional reduction in the proportion of SsON R7s (Figure 4D).\n\nTo further test the relationship between Klu levels and binding site affinity, we reduced klu gene dosage in flies with sin and found that the sin phenotype was suppressed in klu mutant heterozygotes (Figure 4J). We conclude that sin increases Klu binding affinity and that the binding affinity of the Klu site and levels of Klu protein determine the proportion of SsON R7s.\n\n## Discussion\n\nOur studies of wild-derived flies revealed significant variation in stochastic Ss expression. We identified sin, a single base pair insertion in the\u00a0~60 kb ss locus that dramatically lowers the SsON/SsOFF ratio by increasing the binding affinity for the transcriptional repressor Klu. This decrease in Ss expression frequency changes the proportion of color-detecting photoreceptors and alters innate color preference in flies.\n\nsin appears to be a relatively new mutation in D. melanogaster populations. sin is absent among diverse drosophilid species spanning millions of years of divergence (Figure 3\u2014figure supplement 1B\u2013C) and is segregating at an extremely low frequency among non-admixed African D. melanogaster lineages (Figure 1\u2014figure supplement 3A\u2013F). sin likely rose to intermediate frequencies following D. melanogaster\u2019s colonization of Europe about 10\u201315 thousand years ago (Li and Stephan, 2006). sin continues to segregate at intermediate frequencies amongst North American populations (Figure 1\u2014figure supplement 3A\u2013F), which were established within the last 150 years from mixtures of European and African populations (Bergland et al., 2016). The recent rise in the frequency of sin suggests that it could be the target of natural selection, perhaps via modulation of innate color preference. We tested this model by assessing patterns of allele frequency differentiation among populations sampled worldwide and by examining haplotype homozygosity surrounding sin. We compared these statistics at sin to the distribution of statistics calculated from several thousand randomly selected 1\u20132 bp indel polymorphisms that segregate at\u00a0~25% in the DGRP. Curiously, sin did not deviate from genome-wide patterns (Figure 1\u2014figure supplement 3G\u2013J) suggesting that it might be selectively neutral in contemporary D. melanogaster populations.\n\nIt is interesting that Rhodopsin expression varies so significantly in the wild, given the nearly invariant hexagonal lattice of ommatidia in the fly eye. Rhodopsins are G-protein coupled receptors (GPCRs), a class of proteins identified as a source of natural behavioral variation in worms, mice, and voles (Young et al., 1999; Yalcin et al., 2004; Bendesky et al., 2011). Dramatic differences in Rhodopsin expression patterns across insect species (Hilbrant et al., 2014; Wernet et al., 2015) suggest that variation in the expression of GPCRs, rather than retinal morphology, may allow rapid evolution in response to environmental changes.\n\nsin increases the binding affinity of a conserved Klu site, suggesting that the site is suboptimal or low-affinity for Klu binding. Low-affinity sites ensure the timing and specificity of gene expression (Jiang and Levine, 1993; Gaudet and Mango, 2002; Scardigli et al., 2003; Rowan et al., 2010; Ramos and Barolo, 2013; Crocker et al., 2015; Farley et al., 2015; Crocker et al., 2016). Our studies reveal a critical role for a low-affinity binding site in the regulation of a stochastically expressed gene. The suboptimal Klu site, bound by endogenous levels of Klu, yields the normal 65:35 SsON/SsOFF ratio. Changing the affinity of the site or the level of Klu alters the ratio of SsON/SsOFF cells. We conclude that stochastic on/off gene expression is controlled by threshold levels of trans factors binding to low-affinity sites.\n\nThe level of Klu (analog input) determines the binary on/off ratio of Ss expression (digital output). In contrast, gene regulation is best understood in cases where levels of transcription factors (analog input) regulate the levels of target gene expression (analog output). Interestingly, sin or genetic perturbation of klu affected the frequency of Ss expression (Figures 1F, I\u2013K and 4C\u2013J, Figure 1\u2014figure supplement 2) but not levels (Figure 1\u2014figure supplement 4).\n\nThe on/off nature of Ss expression suggests a cooperative mechanism whereby Klu acts with other factors to regulate ss. Conservation of additional base pairs surrounding the Klu site (Figure 3C) is consistent with cooperative binding of Klu and others factors, possibly through dimerization or multimerization. These additional conserved base pairs could also enable binding of activating transcription factors to sites that overlap with the Klu site. These activating transcription factors may compete with the repressor Klu\u00a0for binding to determine the stochastic on/off expression state of ss.\n\nThe expression state of ss could be determined by the intrinsic variation in Klu levels (Figure 4\u2014figure supplement 1). In this model, if Klu levels exceed a threshold, ss is off, and if Klu levels are below the threshold, ss is on. Alternatively, Klu levels could set the threshold for a different gene regulatory mechanism, such as DNA looping or heterochromatin spreading. The regions encompassing and neighboring the Klu binding site drive gene expression in the eye (Figure 1\u2014figure supplement 1), suggesting that complex interactions between this regulatory DNA element, the R7/R8 enhancer, and the two silencers (Figure 1B) ultimately control the ss on/off decision.\n\nCell fate specification is commonly thought of as a reproducible process whereby cell types uniformly express specific batteries of genes. This reproducibility is often the result of high levels of transcription factors binding to high-affinity sites, far exceeding a regulatory threshold, yielding expression of target genes in all cells of a given type. In contrast, the stochastic on/off expression of Ss requires finely tuned levels of regulators binding to low-affinity sites. We predict that fine tuning of binding site affinities and transcription factor levels will emerge as a common mechanistic feature that determines the ratio of alternative fates in stochastic systems.\n\n## Materials and methods\n\n### Drosophila genotypes and stocks\n\nFlies were raised on standard cornmeal-molasses-agar medium and grown at 25\u00b0C.\n\n<table>\n  <thead>\n    <tr>\n      <th>Short genotype</th>\n      <th>Complete genotype</th>\n      <th>Figures</th>\n      <th>Source</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>lab stock or wild type</td>\n      <td>yw; sp/CyO;+ or\u00a0+\u00a0; +; +</td>\n      <td>1C, 4D, 4F, Figure 1\u2014figure supplements 2A, E and 4D\u2013E</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Low</td>\n      <td>w1118/Y; DGRP-397 / +; DGRP-397/Df(3R)Exel6269</td>\n      <td>1E</td>\n      <td>DGRP (Mackay et al., 2012) (Parks et al., 2004)</td>\n    </tr>\n    <tr>\n      <td>High</td>\n      <td>w1118/Y; DGRP-229 / +; DGRP-229/Df(3R)Exel6269</td>\n      <td>1E</td>\n      <td>DGRP (Mackay et al., 2012)</td>\n    </tr>\n    <tr>\n      <td>Wild-derived lines</td>\n      <td>w1118/Y; DGRP / +; DGRP/Df(3R)Exel6269</td>\n      <td>1F, Figure 1\u2014source data 1</td>\n      <td>DGRP (Mackay et al., 2012)</td>\n    </tr>\n    <tr>\n      <td>African Line No sin (AL-1)</td>\n      <td>KN34; KN34; KN34</td>\n      <td>1I</td>\n      <td>(Lack et al., 2015)</td>\n    </tr>\n    <tr>\n      <td>African Line No sin (AL-2)</td>\n      <td>KR42; KR42; KR42</td>\n      <td>1I</td>\n      <td>(Lack et al., 2015)</td>\n    </tr>\n    <tr>\n      <td>African Line sin (AL-3)</td>\n      <td>KN133N; KN133N; KN133N</td>\n      <td>1I</td>\n      <td>(Lack et al., 2015)</td>\n    </tr>\n    <tr>\n      <td>African Line sin (AL-4)</td>\n      <td>KR7; KR7; KR7</td>\n      <td>1I</td>\n      <td>(Lack et al., 2015)</td>\n    </tr>\n    <tr>\n      <td>Lab Line No sin (LL-1)</td>\n      <td>yw; +; +/Df(3R)Exel6269</td>\n      <td>1J</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Lab Line sin (LL-2) or sin/ss df</td>\n      <td>yw; +; TM6B (with sin)/Df(3R)Exel6269</td>\n      <td>1J, Figure 1\u2014figure supplement 4E</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>CRISPR No sin(CL-1)</td>\n      <td>yw; +; CRISPR negative/Df(3R)Exel6269</td>\n      <td>1K</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>CRISPR sin (CL-2)</td>\n      <td>yw; +; CRISPR positive 1/Df(3R)Exel6269</td>\n      <td>1K</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>CRISPR sin (CL-3)</td>\n      <td>yw; +; CRISPR positive 2/Df(3R)Exel6269</td>\n      <td>1K</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>CRISPR sin (CL-4)</td>\n      <td>yw; +; CRISPR positive 3/Df(3R)Exel6269</td>\n      <td>1K</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Innate color preference</td>\n      <td>DGRP; DGRP; DGRP</td>\n      <td>2, Figure 2\u2014source data 1</td>\n      <td>DGRP (Mackay et al., 2012)</td>\n    </tr>\n    <tr>\n      <td>Wild type (control for optimal Klu site)</td>\n      <td>yw; +; +/Df(3R)Exel6269</td>\n      <td>3E</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>CRISPR Optimal Klu site 1</td>\n      <td>yw; +; CRISPR positive 1/Df(3R)Exel6269</td>\n      <td>3E</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>CRISPR Optimal Klu site 2</td>\n      <td>yw; +; CRISPR positive 2/Df(3R)Exel6269</td>\n      <td>3E</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Klu expression in larval eye imaginal discs</td>\n      <td>yw; pm181\u00a0&gt;\u00a0Gal4, UAS\u00a0&gt;\u00a0mCD8 GFP/CyO; +</td>\n      <td>4A, 4B</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>klu\u00a0&gt;\u00a0klu</td>\n      <td>yw; +; klu &gt; Gal4/UAS &gt; klu</td>\n      <td>4D</td>\n      <td>(Klein and Campos-Ortega, 1997)</td>\n    </tr>\n    <tr>\n      <td>eye\u00a0&gt;\u00a0klu</td>\n      <td>yw; +; lGMR &gt; Gal4/UAS &gt; klu</td>\n      <td>4C, 4D, Figure 1\u2014figure supplement 2C and E, 4E</td>\n      <td>(Wernet et al., 2003)</td>\n    </tr>\n    <tr>\n      <td>R7\u00a0&gt;\u00a0klu</td>\n      <td>yw; panR7\u00a0&gt;\u00a0Gal4 / +; UAS\u00a0&gt;\u00a0klu/+</td>\n      <td>4D</td>\n      <td>(Chou et al., 1999b1999)</td>\n    </tr>\n    <tr>\n      <td>Wild type (control for klu mutants)</td>\n      <td>yw; ey\u00a0&gt;\u00a0Gal4, UAS\u00a0&gt;\u00a0flp/+; GMR\u00a0&gt;\u00a0hid, cL FRT2A/ubi\u00a0&gt; GFP FRT2A</td>\n      <td>4F</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>klu null</td>\n      <td>yw; ey\u00a0&gt;\u00a0Gal4, UAS\u00a0&gt;\u00a0flp/+; GMR\u00a0&gt;\u00a0hid,cL FRT2A/kluRR51 FRT2A</td>\n      <td>4F, Figure 1\u2014figure supplement 2D\u2013E, Figure 1\u2014figure supplement 4E</td>\n      <td>(Klein and Campos-Ortega, 1997; Stowers and Schwarz, 1999)</td>\n    </tr>\n    <tr>\n      <td>klu hypomorph</td>\n      <td>yw; ey\u00a0&gt;\u00a0Gal4, UAS\u00a0&gt;\u00a0flp/+; GMR\u00a0&gt;\u00a0hid, cL FRT2A/kluPBacPBac LL02701FRT2A FRT82b P[Car20y]</td>\n      <td>4E, 4F</td>\n      <td>(Stowers and Schwarz, 1999; Schuldiner et al., 2008)</td>\n    </tr>\n    <tr>\n      <td>klu null mutant clones</td>\n      <td>ey\u00a0&gt;\u00a0flp; +/CyO; kluR51 FRT2A/ubi\u00a0&gt; GFP FRT2A</td>\n      <td>4G-I</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>+/+, sin/sin</td>\n      <td>+; +; sin</td>\n      <td>4J, Figure 1\u2014figure supplement 2B and E</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>klu-/+, sin/sin</td>\n      <td>+; +; kluR51 FRT2A, sin / +, sin</td>\n      <td>4J</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>R7 reporter</td>\n      <td>yw; pm181\u00a0&gt;\u00a0Gal4, UAS\u00a0&gt;\u00a0mCD8 GFP/CyO; +</td>\n      <td>Figure 4\u2014figure supplement 1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>14 F02</td>\n      <td>w1118; P{GMR14F02-GAL4}attP2 / +; UAS\u00a0&gt;\u00a0H2B:YFP / +</td>\n      <td>Figure 1\u2014figure supplement 1A\u2013B</td>\n      <td>(Jenett et al., 2012)</td>\n    </tr>\n    <tr>\n      <td>15 F08</td>\n      <td>w1118; P{GMR15F08-GAL4}attP2 / +; UAS\u00a0&gt;\u00a0H2B:YFP / +</td>\n      <td>Figure 1\u2014figure supplement 1A and C</td>\n      <td>(Jenett et al., 2012)</td>\n    </tr>\n    <tr>\n      <td>15 F02</td>\n      <td>w1118; P{GMR15F02-GAL4}attP2 / +; UAS\u00a0&gt;\u00a0H2B:YFP / +</td>\n      <td>Figure 1\u2014figure supplement 1A and D</td>\n      <td>(Jenett et al., 2012)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Antibodies\n\nAntibodies were used at the following dilutions: mouse anti-Rh3 (1:100) (gift from S. Britt, University of Colorado), rabbit anti-Rh4 (1:100) (gift from C. Zuker, Columbia University), rat anti-Klu (1:200) (gift from C. Desplan, New York University), guinea pig anti-Ss (1:500) (gift from Y.N. Jan, University of California, San Francisco), sheep anti-GFP (1:500) (BioRad, Hercules, CA, USA), rat anti-ELAV (1:50) (DSHB, Iowa City, Iowa, USA), mouse anti-Pros (1:10) (DSHB), and Alexa 488 Phalloidin (1:80) (Invitrogen, Thermo Fisher Scientific, Waltham, MA, USA). All secondary antibodies were Alexa Fluor-conjugated (1:400) and made in donkey (Molecular Probes).\n\n### Antibody staining\n\nAdult, mid-pupal, and larval retinas were dissected as described (Hsiao et al., 2012) and fixed for 15 min with 4% formaldehyde at room temperature. Retinas were rinsed three times in PBS plus 0.3% Triton X-100 (PBX) and washed in PBX for\u00a0>2 hr. Retinas were incubated with primary antibodies diluted in PBX overnight at room temperature and then rinsed three times in PBX and washed in PBX for\u00a0>4 hr. Retinas were incubated with secondary antibodies diluted in PBX overnight at room temperature and then rinsed three times in PBX and washed in PBX for\u00a0>2 hr. Retinas were mounted in SlowFade Gold Antifade Reagent (Invitrogen). Images were acquired using a Zeiss LSM 700 confocal microscope.\n\n### Quantification of expression\n\nFrequency of Rh3 (SsOFF) and Rh4 (SsON) expression in R7s was scored in adults. Six or more retinas were scored for each genotype (N). 100 or more R7s were scored for each retina (n). Frequency was assessed using custom semi-automated software (see below) or manually.\n\nFrequency of Ss expression in R7s was assessed with a Ss antibody in mid-pupal animals. Four or more retinas were scored for each genotype (N). 70 or more R7s were scored for each retina (n). Frequency was assessed manually.\n\nLevels of Ss expression in SsON R7s were assessed with a Ss antibody in mid-pupal animals. Three retinas were scored (N). 40 or more SsON R7s were scored for each retina (n). We used ImageJ software to quantify Ss levels in SsON R7s (Figure 1\u2014figure supplement 4A\u2013C). A circular \u2018\u2018region of interest\u2019\u2019 was manually placed at the center of each SsON R7 (identified by expression of Ss and the R7 marker Prospero) to avoid signal from neighboring photoreceptors. ImageJ software assessed the mean pixel intensity for each region of interest for each SsON R7.\n\nLevels of Klu expression in R7s were assessed with a Klu antibody in third instar larval animals. Five retinas were scored (N). 65 or more R7s were scored for each retina (n). We used ImageJ software to quantify Klu levels in all R7s (Figure 4\u2014figure supplement 1). A circular \u2018\u2018region of interest\u2019\u2019 was manually placed at the center of each R7 (identified by pm181\u00a0>GAL4; UAS\u00a0>\u00a0GFP reporter expression) to avoid signal from neighboring photoreceptors. ImageJ software assessed the mean pixel intensity for each region of interest for each R7.\n\nTo determine the number of rows from the equator to the dorsal third region of the adult retina, we first used phalloidin to stain actin (marking rhabdomeres of ommatidia) to locate the equator of each retina. We then counted the number of rows from the equator to the first R7 cell with co-expression of Rh3 and Rh4.\n\n### Image processing\n\nWe employed a custom algorithm to identify the positions of individual R7 photoreceptors within an image of the fly retina. First, individual fluorescence images from each wavelength channel were denoised using a homomorphic filter (Oppenheim et al., 1968) and Gaussian blur. Next, R7 boundaries were located using the Canny edge detection method (Canny, 1986). Cells were then roughly segmented using the convex hull algorithm (Barber et al., 1996). Active contouring (Chan and Vese, 2001) was used to refine the segments to fit the R7s more closely. Finally, a watershed transform was applied to the image, dividing it into regions that each contain a single R7. Regions were excluded by size or distance from the center to prevent artifacts due to the curvature of the fly retina. For the remaining regions, normalized intensities from the Rh3 and Rh4 channels were compared in order to assign each region a label, indicating that its R7# is stained with Rh3 or Rh4. A MATLAB (The MathWorks, Inc.) script that implements our algorithm is available at https://app.assembla.com/spaces/roberts-lab-public/wiki/Fly_Retina_Analysis.\n\n### Genome-Wide association studies\n\nGenotype data from the DGRP freeze two lifted to the dm6/BDGP6 release of the D. melanogaster genome was obtained from (ftp://ftp.hgsc.bcm.edu/DGRP/). Phenotypes were calculated for the progeny of crosses of DGRP lines and Df(3R)Exel6269 flies. To estimate genotypes of these flies from the DGRP data, we simulated each cross. For each SNP or indel variant in the DGRP genotype data, we assigned a new genotype: (1) homozygous reference remains homozygous reference, (2) homozygous alternate maps to homozygous alternate if in deficiency region, otherwise heterozygous, and (3) all other genotypes mapped to missing or unknown and not included in subsequent analyses. We performed quantitative trait association analysis using plink2 --linear (version 1.90 beta 25 Mar 2016; PMID:25722852). To reduce the impact of population structure, we included the first 20 principal components of the standardized genetic relationship matrix as covariates (calculated using plink2 --pca). To empirically correct p-values for each site, we performed a max(T) permutation test with 10,000 permutations (mperm option to plink2).\n\n### CRISPR-mediated mutagenesis\n\nsin was inserted into a lab stock line using CRISPR (Gratz et al., 2013; Port et al., 2014). Sense and antisense DNA oligos for the forward and reverse strands of the gRNA were designed to generate BbsI restriction site overhangs. The oligos were annealed and cloned into the pCFD3 cloning vector (Addgene, Cambridge, MA). A single stranded DNA homology bridge was generated with 60 bp homologous regions flanking each side of the predicted cleavage site. The gRNA construct (500 ng/ul) and homology bridge oligo (100 ng/ul) were injected into Drosophila embryos (BestGene, Inc.). Single males were crossed with a balancer stock (yw; +; TM2/TM6B), and F1 female progeny were screened for the insertion via PCR and sequencing. Single F1 males whose siblings were sin-positive were crossed to the balancer stock (yw; +; TM2/TM6B) and the F2 progeny were screened for the insertion via PCR and sequencing. sin-negative flies from a single founder were used to establish a stable stock (CL-1) and sin-positive flies from three founders were used to establish independent stable stocks (CL-2, CL-3, CL-4).\n\n<table>\n  <thead>\n    <tr>\n      <th>Oligo name</th>\n      <th>Sequence</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Homologous bridge</td>\n      <td>TCTCTCTCTCTCTCTGTGTGTGTGTCACTCACAAATGACAACGTGGTGTGGGCGTCGAATATATGAGTTACTTCGCACCCAGCCAGCCAAGCCAGAGCAAATTGAGCCAAACCAAAGCAAA</td>\n    </tr>\n    <tr>\n      <td>gRNA F</td>\n      <td>GTCGTGTGTGGGCGTCGAATATAT</td>\n    </tr>\n    <tr>\n      <td>gRNA R</td>\n      <td>AAACATATATTCGACGCCCACACA</td>\n    </tr>\n    <tr>\n      <td>Genotype F</td>\n      <td>GCCACCCTTCGACCATTTTGG</td>\n    </tr>\n    <tr>\n      <td>Genotype R</td>\n      <td>GTCAGCCACTACATGGTTTCG</td>\n    </tr>\n  </tbody>\n</table>\n\nThe Klu optimal site was generated in a lab stock line using CRISPR (Gratz et al., 2013; Port et al., 2014). CRISPR was performed with the same gRNA and genotyping primers as described above, but with a new homologous bridge donor.\n\n<table>\n  <thead>\n    <tr>\n      <th>Oligo name</th>\n      <th>Sequence</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Homologous bridge</td>\n      <td>TCTCTCTCTCTCTCTGTGTGTGTGTCACTCACAAATGACAACGTGCGTGGGCGTCGAATATATGAGTTACTTCGCACCCAGCCAGCCAAGCCAGAGCAAATTGAGCCAAACCAAAGCAAA</td>\n    </tr>\n    <tr>\n      <td>gRNA F</td>\n      <td>GTCGTGTGTGGGCGTCGAATATAT</td>\n    </tr>\n    <tr>\n      <td>gRNA R</td>\n      <td>AAACATATATTCGACGCCCACACA</td>\n    </tr>\n    <tr>\n      <td>Genotype F</td>\n      <td>GCCACCCTTCGACCATTTTGG</td>\n    </tr>\n    <tr>\n      <td>Genotype R</td>\n      <td>GTCAGCCACTACATGGTTTCG</td>\n    </tr>\n  </tbody>\n</table>\n\n### T-maze behavioral assays\n\nAdult flies were raised on standard medium on a 14 hr/10 hr light and dark cycle at 25\u00b0C. The behavioral assay room was illuminated by a 630 nm red LED bulb (superbrightleds.com; PAR30IP-x8-90) whose emitted light lies outside of the sensitivity spectrum for fly photodetection. For each trial, 100 female flies were starved for 8 hr and then inserted into the elevator of the T-maze (Robert Eifert, Bayshore, NY). The elevator was lowered to a junction that, on each side, held an unused plastic tube (Falcon 352017). The T-maze was covered in black chalkboard tape and the plastic tubes were painted black. The T-maze and lights were kept a constant distance apart by a custom 3D-printed holder. A blue LED light (450 nm) and a green LED light (525 nm) on opposite sides were simultaneously turned on. Blue and green LED lights were obtained from superbrightleds.com (E12-B5, E12G5). The blue light was covered with three layers of 3x neutral density (ND) filters, while the green light was covered with one layer. After 20s, the lights were turned off and the tubes were removed and capped. Flies from each tube were counted and the preference index (PI) was calculated using the formula PI = (NG \u2013 Nb) / (NG\u00a0+\u00a0Nb), where NG equals the number of flies in the tube illuminated with green light and Nb equals the number of flies in the tube illuminated with blue light. PI ranged from \u22121 to 1, with negative values indicating a blue preference and positive values indicating a green preference. Five or more trials were conducted for each genotype (N). 100 or more flies were scored for each trial (n).\n\n### Consensus sequence\n\nFor the B1H data sets, WebLogo3 was used to generate position weight matrices (PWMs) (Zhu et al., 2011; Enuameh et al., 2013)(Figure 3\u2014figure supplement 1A). For the SELEX-SEQ data sets, MEME-ChIP version 4.11.2 was used to generate PWMs\u00a0(Machanick and Bailey, 2011; Nitta et al., 2015) (ENA: ERX606541-ERX606544). Motif discovery and enrichment mode was set to normal, and the 1st order model of sequences was used as the background model. Expected motif site distribution was set at zero or one occurrence per sequence. Minimum width of motifs to be found by MEME was set to 12, and the max was set to 20.\n\n### Conservation analysis\n\nThe Klu site and neighboring sequences for 21 Drosophila species were obtained from the UCSC genome browser. TOMTOM version 4.11.2. was used to generate the conservation PWM (Gupta et al., 2007)(Figure 3C, Figure 3\u2014figure supplement 1B).\n\n### SELEX-seq analysis\n\nSELEX-seq datasets from (Nitta et al., 2015) were obtained from ENA (ERX606541-ERX606544). For read-level analysis, we counted the number of reads containing the Klu binding site with sin, without sin, and neither site (there were no reads with both sites). We performed McNemar's test to assess significance. We computed the frequency of each 10-mer within each dataset using Jellyfish version 2.2.6 (Mar\u00e7ais and Kingsford, 2011). Using these counts, we determined the number of 10-mers with frequency greater than that of the Klu binding site with and without sin. Frequencies reported are for the combination of all four SELEX datasets.\n\nJellyfish 2.2.6 was used to canonically count kmers\u00a0of length 10 with an initial hash of size 100M from fasta files generated from the first and fourth rounds of selection. Kmers were reverse complemented as necessary to minimize the hamming distance from the consensus sequence. Reported counts come from the fourth round.\n\n### Population genetic analyses\n\nWe estimated allele frequencies from populations sampled worldwide at sin and at other 1\u20132 bp indel polymorphisms. Allele frequency estimates based on pooled resequencing of populations sampled in North America and Europe were obtained from (Bergland et al., 2014) and (Kapun et al., 2016). Allele frequencies based on haplotypes (Lack et al., 2016) were also obtained from populations sampled in\u00a0North America, the Caribbean, Europe, and Africa.\n\nFor pooled samples, we mapped raw sequence reads to Release 6 of the Drosophila melanogaster genome, removed PCR duplicates, performed indel-realignment using GATK version, and called allele frequencies using VarScan. For haplotype data, we relied on published indel VCF files obtained from the Drosophila Genome Nexus (DGN; http://www.johnpool.net/genomes.html). Regions of admixture in African genomes were identified based on analyses by Lack et al., 2016. DGN data were mapped to Release 5 of the Drosophila genome and we converted those coordinates to Release six using the lift-over file available from the UCSC Genome browser (http://hgdownload.soe.ucsc.edu/goldenPath/dm3/liftOver/dm3ToDm6.over.chain.gz).\n\nWe sought to assess whether the distribution of sin among populations sampled worldwide was significantly different than expected by chance based on other comparable indel polymorphisms. sin was originally identified in the Drosophila Genetic Reference Panel (DGRP), derived from a population in Raleigh, NC, where it segregates at\u00a0~25%. We observed that sin segregates at\u00a0~10\u201325% in other North American and European populations but is rare/absent in ancestral African populations (Figure 1\u2014figure supplement 3A\u2013F). Such changes in allele frequency among continents could indicate the action of positive selection. To test this model, we identified\u00a0~1500 other 1\u20132 bp autosomal indel polymorphisms that segregate at 25 \u00b1 5% in the DGRP (hereafter, \u2018control set\u2019). We estimated FST among continents as well as within North America at sin and our control set. FST values were rank normalized and converted to a Z-score through an inverse normal CDF with mean zero and standard deviation one. sin did not show elevated levels of FST within or between continents relative to the control set, suggesting that sin does not contribute to local adaptation amongst sampled populations (Figure 1\u2014figure supplement 3G\u2013H).\n\nNext, we tested whether haplotype patterns surrounding sin are indicative of a partial selective sweep. We calculated the extended haplotype homozogosity (EHH) score and integrated EHH (iEHH) score for haplotypes with and without sin (derived and ancestral haplotypes, respectively) in the DGRP data where sin was originally identified. EHH scores were also calculated at the control set, as described above. EHH scores were calculated using the R package rehh (Gautier and Vitalis, 2012). The derived sin allele shows an elevated iEHH score compared to the ancestral allele, suggestive of a partial selective sweep (Figure 1\u2014figure supplement 3I\u2013J). To test this model, we calculated the integrated haplotype statistic as,\n\n$$\nIHS=log2(iEHH_{derived}/iEHH_{ancestral})\n$$\n\nfor sin as well as the control set. IHS for sin is not significantly different than expected by chance relative to other comparable indel polymorphisms (Figure 1\u2014figure supplement 3I\u2013J).\n",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "a49ce4a2-0e43-4487-8b77-391ca30ebbf1",
+      "submission_id": "15b36832-d145-42ed-a252-9a6ade0b463e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Simon G Sprecher, University of Fribourg Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.29593.016](https://doi.org/10.7554/eLife.29593.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Natural variation in stochastic photoreceptor specification and color preference in Drosophila\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Simon Sprecher as Guest Reviewing Editor and Patricia Wittkopp as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Stein Aerts (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe study addresses how stochastic gene expression may be modulated by investigating the impact of a naturally occurring variation in the spineless locus. Identification of a single base pair insertion that may change the binding of the transcription factor Klumpfuss. The presence of the sin variance shifts the ratio two ommatida types as well as the behavioural preference between blue and green light. These findings provide insight into how inter-individual differences in nervous system architecture and behaviour may arise.\n\nEssential revisions:\n\nWhile the manuscript was perceived positively there are however a few points that should be addressed. As you will see from the points depicted below a main point from several sides concerns the putative mechanistic link between klu, the sin locus and Ss expression. More direct evidence for the altered expression of Ss by the sin locus or klu binding to variants of the sin locus would help to resolve this criticism.\n\n1) The hypothesis drawn by the authors is that Klu represses Ss expression in R7 cells. It would be helpful to examine expression levels of Ss in R7 cells in Klu mutants and animals with increased Klu.\n\n2) The authors claimed that Klu was expressed in R7 cells of the larval eye disc at 'intermediate levels' and altering Klu levels changed the SsON/SsOFF ratio. Can this intermediate level of Klu be quantified? It appears in Figure 4B that endogenous klu is differentially expressed in R7 cells.\n\n3) The authors used bioinformatics to analyze available SELEX-seq binding data sets from Nitta, et al. 2015 and concluded that sin increased the binding affinity for Klu based on the enrichment of the number of reads obtained with sin. Since this was solely based on in vitro data on a randomized set of DNA with N-terminal thioredoxin-HIS tag fusion proteins, a more thorough characterization is necessary to confirm this claim. Would the same tagged-Klu expressed in vivo rescue SsON/SsOFF photoreceptor ratio in Klu null? The authors should further demonstrate altered DNA binding affinity for Klu using a specific DNA probe with or without sin in EMSA assays.\n\n4) The insertion of a C does not seem to affect the core Klu binding site, but rather a flanking nucleotide, and this binding site is a CA rich stretch where an extra C is added (CGCCCACACA to CGCCCACACCA). The authors argue that this may change the affinity of Klu binding. Given that Klu is expressed in the R7, and that perturbations of Klu phenocopy sin, this is a plausible explanation. Nevertheless, no experimental validation is provided to show that Klu actually binds to this region and that the binding is affected by the insertion. I realise that ChIP-seq is difficult given the limited amount of material. Can another experiment be thought of? If not, can this be argued in the text \u2013 that this evidence is indirect, and no formal proof is provided that Klu binding in vivo is affected by this insertion. The authors provide surrogate evidence that Klu SELEX-seq is biased towards CGCCCACACCA sequences having sin; this is interesting but it is not convincing to me, because the SELEX logo's do not contain this flanking site, rather they suggest Klu binds to CGCCCACGCA. This is quite different from the site with sin (notice the trailing GCA). Given the very high conservation of a 17 bp stretch that contains a match to Klu, an alternative hypothesis is that actually two (or even more) transcription factors may bind to this 17bp stretch, perhaps Klu together with another factor, and that sin affects binding of the other, yet unknown factor, rather than of Klumpfuss. Klu perturbations would still affect Ss expression in that scenario, but not because of differential affinity with the site, but simply because Klu regulates Ss (in other words, Klu perturbations are not performed with a sin comparison, so they merely confirm that Klu regulates Ss). A possible experiment would be to perform the Klu perturbations with and without the sin insertion. Or to clone this region near an enhancer-reporter construct that activates a reporter, for example, in S2 cells (a strong enhancer that is active in S2 cells, many are known). Given the prediction of Klu-mediated repression, it can be investigated whether the reporter can be repressed by the sin-encompassing region, when transfecting with Klu cDNA, and whether this effect is changed between the wild type and the sin containing sequence. in vivo this would obviously be better, but would require more time. I am aware such experiments are challenging, so other experiments can be proposed by the authors, or if they are not possible given the limited time, the lack of formal evidence what this insertion does, and alternative hypotheses, should be discussed thoroughly (perhaps with a figure/cartoon).\n\n5) Given that the Klu binding site is not very informative (lots of C's), how significant is the prediction that this is a Klu binding site? On 100 random genes with similar size as Ss, how many Klu matches are found? Can this be reported? Does the score change when sin is included? That is, does the Klu PWM score increase with sin compared to control/null sites \u2013 likely not because sin is not present in the PWM, correct? Can this be discussed in the paper. This is important because the PWM is a measure for the binding affinity, which is argued to be increased with sin, so the PWM score should change (significantly?).\n\n6) It is written \"As sin increases Klu binding affinity\" \u2013 can this be changed into \"As sin is predicted to increase Klu binding affinity\"?\n\n7) The role of the encompassing genomic region, how it is involved in the regulation of Ss, is not investigated \u2013 is this a new regulatory element of Ss? Are there any Janelia Flylight or VDRC tiles overlapping this region? If not, please discuss this. If there is time to clone this region into an enhancer-reporter and create a transgenic fly, that would be informative. If Flylight/VDRC lines are available, can they be tested with UAS-GFP to investigate whether this region is actually an Ss enhancer.\n",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "858e8cc0-dcf1-4b05-801f-bc9be9ad8b63",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C1",
+      "claim": "The fly eye contains a random mosaic of photoreceptors defined by expression of light-detecting Rhodopsin proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The fly eye, like the human eye, contains a random mosaic of photoreceptors defined by expression of light-detecting Rhodopsin proteins (Montell et al., 1987; Bell et al., 2007; Johnston and Desplan, 2010; Viets et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "c814c4a5-0fbf-4f58-b9e0-89fb3c89ffdd",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C2",
+      "claim": "Stochastic on/off expression of Spineless (Ss) determines R7 photoreceptor subtypes in flies.",
+      "claim_type": "EXPLICIT",
+      "source": "In flies, the stochastic on/off expression of Spineless (Ss), a PAS-bHLH transcription factor, determines R7 photoreceptor subtypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "875eb627-7eb4-4b0c-972e-9674d9a92a6d",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C3",
+      "claim": "Ss expression in R7s induces 'yellow' (yR7) fate and expression of Rhodopsin4 (Rh4).",
+      "claim_type": "EXPLICIT",
+      "source": "Ss expression in a random subset of R7s induces 'yellow' (yR7) fate and expression of Rhodopsin4 (Rh4), whereas the absence of Ss in the complementary subset of R7s allows for 'pale' (pR7) fate and Rhodopsin3 (Rh3) expression (Figure 1A) (Wernet et al., 2006; Johnston et al., 2011; Thanawala et al., 2013; Johnston and Desplan, 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations and Figure 1A showing the relationship between Ss expression and photoreceptor subtypes",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "58236356-e1d6-45c1-8f7c-4ce21ffbfb51",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C4",
+      "claim": "The absence of Ss in R7s allows for 'pale' (pR7) fate and Rhodopsin3 (Rh3) expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Ss expression in a random subset of R7s induces 'yellow' (yR7) fate and expression of Rhodopsin4 (Rh4), whereas the absence of Ss in the complementary subset of R7s allows for 'pale' (pR7) fate and Rhodopsin3 (Rh3) expression (Figure 1A) (Wernet et al., 2006; Johnston et al., 2011; Thanawala et al., 2013; Johnston and Desplan, 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations and Figure 1A",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "badc60ec-eed4-422a-ba22-ed23b97dff27",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C5",
+      "claim": "The on/off state of Ss in R7 indirectly determines the subtype fate of the neighboring R8 photoreceptor.",
+      "claim_type": "EXPLICIT",
+      "source": "The on/off state of Ss in a given R7 also indirectly determines the subtype fate of the neighboring R8 photoreceptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by subsequent explanation and citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "4f678660-071b-46e4-a5b4-5852270f41e2",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C6",
+      "claim": "pR7s lacking Ss signal to pR8s to activate expression of blue-detecting Rhodopsin5 (Rh5).",
+      "claim_type": "EXPLICIT",
+      "source": "pR7s lacking Ss signal to pR8s to activate expression of blue-detecting Rhodopsin5 (Rh5). yR7s expressing Ss do not send this signal, resulting in expression of green-detecting Rhodopsin6 (Rh6) in yR8s (Figure 1A) (Franceschini et al., 1981; Montell et al., 1987; Zuker et al., 1987; Chou et al., 1996; Huber et al., 1997; Chou et al., 1999a; Mikeladze-Dvali et al., 2005; Mazzoni et al., 2008; Vasiliauskas et al., 2009; Jukam and Desplan, 2011; Hsiao et al., 2013; Johnston, 2013; Jukam et al., 2013; Jukam et al., 2016; Yan et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by multiple citations and Figure 1A",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "455ebd62-3713-43cf-8427-1ae8305760e2",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C7",
+      "claim": "yR7s expressing Ss do not send a signal to R8s, resulting in expression of green-detecting Rhodopsin6 (Rh6) in yR8s.",
+      "claim_type": "EXPLICIT",
+      "source": "pR7s lacking Ss signal to pR8s to activate expression of blue-detecting Rhodopsin5 (Rh5). yR7s expressing Ss do not send this signal, resulting in expression of green-detecting Rhodopsin6 (Rh6) in yR8s (Figure 1A) (Franceschini et al., 1981; Montell et al., 1987; Zuker et al., 1987; Chou et al., 1996; Huber et al., 1997; Chou et al., 1999a; Mikeladze-Dvali et al., 2005; Mazzoni et al., 2008; Vasiliauskas et al., 2009; Jukam and Desplan, 2011; Hsiao et al., 2013; Johnston, 2013; Jukam et al., 2013; Jukam et al., 2016; Yan et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by multiple citations and Figure 1A",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "9934111e-f3f1-4c79-96fc-ad2dbbfcf2c7",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C8",
+      "claim": "The stochastic decision to express Ss is made cell-autonomously at the level of the ss gene locus via a random repression mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "The stochastic decision to express Ss is made cell-autonomously at the level of the ss gene locus via a random repression mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "7219b3fa-cb02-4f6e-8307-bc60b153a767",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C9",
+      "claim": "The R7/R8 enhancer induces ss expression in all R7s.",
+      "claim_type": "EXPLICIT",
+      "source": "The R7/R8 enhancer induces ss expression in all R7s, whereas two silencer regions (silencer 1 and 2) repress expression in a random subset of R7s (Figure 1B) (Johnston and Desplan, 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation and Figure 1B showing the ss locus structure",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "29bc89e7-d1f0-4a5d-b580-8803324aa544",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C10",
+      "claim": "Two silencer regions (silencer 1 and 2) repress ss expression in a random subset of R7s.",
+      "claim_type": "EXPLICIT",
+      "source": "The R7/R8 enhancer induces ss expression in all R7s, whereas two silencer regions (silencer 1 and 2) repress expression in a random subset of R7s (Figure 1B) (Johnston and Desplan, 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation and Figure 1B",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "e7539749-31b3-432f-bc95-b2f2c31148a5",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C11",
+      "claim": "In most lab stocks, Ss is on in ~65% of R7s and off in ~35%.",
+      "claim_type": "EXPLICIT",
+      "source": "In most lab stocks, Ss is on in ~65% of R7s and off in ~35% (Figure 1C) (Wernet et al., 2006; Johnston and Desplan, 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations and Figure 1C showing stochastic distribution",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "a95e2288-e211-4170-8749-5419b46c9c9a",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C12",
+      "claim": "The proportion of SsON to SsOFF R7s varies greatly among fly lines derived from the wild.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we find that the proportion of SsON to SsOFF R7s varies greatly among fly lines derived from the wild.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "5e056d0f-1aa8-4738-8c59-2654f4fea1dd",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C13",
+      "claim": "A genome-wide association study identified a single base pair insertion that increases the affinity of a DNA binding site for a transcriptional repressor, significantly reducing the SsON/SsOFF ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed a genome-wide association study (GWAS) and identified a single base pair insertion that increases the affinity of a DNA binding site for a transcriptional repressor, significantly reducing the SsON/SsOFF ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from GWAS and subsequent validation experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "96b9e85c-9904-47ed-9a91-f1c91efb7c41",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C14",
+      "claim": "The genetic variant changes the proportion of photoreceptor subtypes and alters the innate color preference of flies.",
+      "claim_type": "EXPLICIT",
+      "source": "This genetic variant changes the proportion of photoreceptor subtypes and alters the innate color preference of flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral assay data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "34f7e3ec-6398-47a7-b2b0-0977259943ec",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C15",
+      "claim": "Expression of Rh4 and Rh3 faithfully reports Ss expression in R7s (SsON = Rh4; SsOFF = Rh3).",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated Rh4 and Rh3 expression, as they faithfully report Ss expression in R7s (i.e. SsON = Rh4; SsOFF = Rh3) (Figure 1A) (Thanawala et al., 2013; Johnston and Desplan, 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations and Figure 1A",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "1cbbc842-17dc-4d82-9f85-1abe17d6f64a",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C16",
+      "claim": "The lab stock expressed Ss (Rh4) in 62% of R7s under hemizygous conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "While the lab stock expressed Ss (Rh4) in 62% of R7s under these conditions, expression among the DGRP lines varied significantly, ranging from 19% to 83% SsON (Rh4) (Figure 1E\u2013F; Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1E-F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "28027869-bd8f-447f-807e-5fa65f25a1d3",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C17",
+      "claim": "Expression of Ss among DGRP lines varied significantly, ranging from 19% to 83% SsON (Rh4).",
+      "claim_type": "EXPLICIT",
+      "source": "While the lab stock expressed Ss (Rh4) in 62% of R7s under these conditions, expression among the DGRP lines varied significantly, ranging from 19% to 83% SsON (Rh4) (Figure 1E\u2013F; Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1E-F and source data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "2699a212-8d60-4053-a023-8cfede721270",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C18",
+      "claim": "A genome-wide association study identified a single base pair insertion within the ss locus ('ss insertion' or 'sin') that was significant (p<10\u221213) after Bonferroni correction.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed an association analysis and identified a single base pair insertion within the ss locus ('ss insertion' or 'sin') that was significant (p<10\u221213) after Bonferroni correction (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GWAS data shown in Figure 1G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "a980f491-ac3b-4b56-b376-5c8ada1edfd1",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C19",
+      "claim": "sin was enriched in DGRP lines with a low ratio of SsON to SsOFF R7s.",
+      "claim_type": "EXPLICIT",
+      "source": "sin was enriched in DGRP lines with a low ratio of SsON to SsOFF R7s (Figure 1F and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1F and H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "ef79d45e-fa90-495e-a7a1-f350ac5cfddf",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C20",
+      "claim": "Naturally derived lines from Africa that are homozygous for sin displayed a decrease in the proportion of SsON (Rh4) R7s compared to lines from Africa lacking sin.",
+      "claim_type": "EXPLICIT",
+      "source": "Naturally derived lines from Africa that are homozygous for sin displayed a decrease in the proportion of SsON (Rh4) R7s compared to lines from Africa lacking sin (Figure 1I) (Lack et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1I",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "bbf23525-c316-4198-8b93-5d9fd68300de",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C21",
+      "claim": "A lab stock balancer chromosome (TM6B) containing sin displayed a decrease in the proportion of SsON (Rh4) R7s when ss was hemizygous.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified sin on a balancer chromosome (TM6B) in a lab stock that similarly displayed a decrease in the proportion of SsON (Rh4) R7s when ss was hemizygous (Figure 1J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "72e180d6-2593-4a7f-947b-8e78f2e1e582",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C22",
+      "claim": "Flies hemizygous for CRISPR sin alleles displayed a significant decrease in the proportion of SsON (Rh4) R7s.",
+      "claim_type": "EXPLICIT",
+      "source": "To definitively test the role of sin, we used CRISPR to insert sin into a lab stock. Flies hemizygous for CRISPR sin alleles displayed a significant decrease in the proportion of SsON (Rh4) R7s (Figure 1K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from CRISPR-mediated insertion shown in Figure 1K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "b00583f9-76c3-4021-9db8-553cdbf9bb9b",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C23",
+      "claim": "Flies homozygous for CRISPR sin alleles displayed a significant decrease in the proportion of SsON R7s as assessed by Ss antibody staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a Ss antibody, we examined Ss expression directly and found that flies homozygous for CRISPR sin alleles displayed a significant decrease in the proportion of SsON R7s (Figure 1\u2014figure supplement 2A\u2013B and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "be304703-66bf-49d8-96dd-d6d9d1f7f69c",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C24",
+      "claim": "sin causes a decrease in the ratio of SsON to SsOFF R7s.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, sin causes a decrease in the ratio of SsON to SsOFF R7s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple experimental validations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "3737c52e-cc64-4f8b-8195-1f8aa09c3416",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C25",
+      "claim": "The absorption spectra of Rh3 and Rh4 significantly overlap in the UV range.",
+      "claim_type": "EXPLICIT",
+      "source": "The absorption spectra of Rh3 and Rh4 significantly overlap in the UV range (Feiler et al., 1992), complicating behavioral assessment of color preference caused by differences in R7 photoreceptor ratios.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "1fad7120-fd3c-4394-a74f-0c676b4070e5",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C26",
+      "claim": "Rh5 and Rh6 in R8 photoreceptors have more distinct absorption spectra than Rh3 and Rh4.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we focused on the perception of blue light by Rh5 and green light by Rh6 in the R8 photoreceptors, as these Rhodopsins have more distinct absorption spectra (Salcedo et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "88483de7-c426-4505-8411-0b7e15a3dfb8",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C27",
+      "claim": "R8 fate is coupled to R7 fate.",
+      "claim_type": "EXPLICIT",
+      "source": "Because R8 fate is coupled to R7 fate (Chou et al., 1996) (Figure 1A), we predicted that flies with sin would have a low ratio of Rh6- to Rh5-expressing R8s and would consequently prefer blue light, while flies without sin would have a higher ratio of Rh6- to Rh5-expressing R8s and would instead prefer green light.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation and Figure 1A",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "12c5f46e-7367-4088-b1b2-01382b15e8fb",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C28",
+      "claim": "DGRP lines containing sin preferred blue light.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, DGRP lines containing sin preferred blue light, while DGRP lines lacking sin preferred green light (Figure 2A\u2013C; Figure 2\u2014source data 1), showing that sin changes innate color preference in flies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral assay data shown in Figure 2A-C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "d80c6a69-98f3-411f-9d1e-b94e9b834076",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C29",
+      "claim": "DGRP lines lacking sin preferred green light.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, DGRP lines containing sin preferred blue light, while DGRP lines lacking sin preferred green light (Figure 2A\u2013C; Figure 2\u2014source data 1), showing that sin changes innate color preference in flies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral assay data shown in Figure 2A-C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "1023c3a6-a056-4202-a72c-44c7c9791ef5",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C30",
+      "claim": "sin changes innate color preference in flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, DGRP lines containing sin preferred blue light, while DGRP lines lacking sin preferred green light (Figure 2A\u2013C; Figure 2\u2014source data 1), showing that sin changes innate color preference in flies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Conclusion drawn from behavioral assay data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "99696d8d-9e85-454f-8813-a1a7ef2f6aa5",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C31",
+      "claim": "sin is a single base pair insertion within a previously uncharacterized non-coding region of the ss locus located ~7 kb upstream of the transcriptional start.",
+      "claim_type": "EXPLICIT",
+      "source": "sin is a single base pair insertion within a previously uncharacterized non-coding region of the ss locus located ~7 kb upstream of the transcriptional start (Figure 1B and Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genomic location data shown in Figure 1B and Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "3e6def3c-15f2-4ce8-bbc0-e2a91b6c4957",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C32",
+      "claim": "sin lies in a predicted binding site for the zinc finger transcription factor Klumpfuss (Klu), the fly homolog of Wilms' Tumor Suppressor Protein 1 (WT1).",
+      "claim_type": "EXPLICIT",
+      "source": "sin lies in a predicted binding site for the zinc finger transcription factor Klumpfuss (Klu), the fly homolog of Wilms' Tumor Suppressor Protein 1 (WT1) (Figure 3B, Figure 3\u2014figure supplement 1A) (Klein and Campos-Ortega, 1997; Yang et al., 1997).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by motif analysis shown in Figure 3B and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "11a4f555-ba10-411e-8ede-fa6dffaa4638",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C33",
+      "claim": "The Klu binding site region is perfectly conserved across 21 Drosophila species covering 50 million years of evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "This region is perfectly conserved across 21 Drosophila species covering 50 million years of evolution, consistent with a critical regulatory role (Figure 3C, Figure 3\u2014figure supplement 1B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by conservation analysis shown in Figure 3C and Figure 3\u2014figure supplement 1B-C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "bf477c27-5784-4f67-91b5-1feed3b5902c",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C34",
+      "claim": "The number of reads containing the Klu binding site with sin (CGCCCACACC) was significantly higher than without sin (CGCCCACACA) in SELEX-seq data.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of reads containing the Klu binding site with sin (CGCCCACACC) was significantly higher than without sin (CGCCCACACA) (Figure 3D), and thus, Klu binds the endogenous ss sequence with sin better than without it.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SELEX-seq analysis shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "73470b0e-b305-4bc8-99ce-afaf95b7f1b3",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C35",
+      "claim": "Klu binds the endogenous ss sequence with sin better than without it.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of reads containing the Klu binding site with sin (CGCCCACACC) was significantly higher than without sin (CGCCCACACA) (Figure 3D), and thus, Klu binds the endogenous ss sequence with sin better than without it.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Conclusion drawn from SELEX-seq data analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "5d16ec1d-8451-4fb6-9e40-c076788efe01",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C36",
+      "claim": "506 10-mers (0.10%) have frequencies greater than the Klu site without sin in SELEX-seq data.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the frequency of 10-mers as a measure of site preference, we found that 506 10-mers (0.10%) have frequencies greater than the Klu site without sin, whereas only 366 10-mers (0.07%) have frequencies greater than the Klu site with sin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SELEX-seq data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "ddc45fbe-c713-4acd-b35b-278534539be8",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C37",
+      "claim": "Only 366 10-mers (0.07%) have frequencies greater than the Klu site with sin in SELEX-seq data.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the frequency of 10-mers as a measure of site preference, we found that 506 10-mers (0.10%) have frequencies greater than the Klu site without sin, whereas only 366 10-mers (0.07%) have frequencies greater than the Klu site with sin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SELEX-seq data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "2a4fed50-08f2-4579-abaf-ec2f1705e5db",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C38",
+      "claim": "sin increases the binding affinity of the Klu site in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, sin increases the binding affinity of the Klu site in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from SELEX-seq analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "e2f1a067-8641-4523-b119-b398ea12ae25",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C39",
+      "claim": "The endogenous 10-mer core sequence in ss (CGCCCACACA) deviates from the optimal site (CGCCCACGCA) at position 8, causing a dramatic reduction in the affinity for the endogenous site.",
+      "claim_type": "EXPLICIT",
+      "source": "The endogenous 10-mer core sequence in ss (CGCCCACACA) deviates from the optimal site (CGCCCACGCA) at position 8, causing a dramatic reduction in the affinity for the endogenous site (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SELEX-seq analysis shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "ae26d0a3-f7e2-4963-ab99-feb73894ac6f",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C40",
+      "claim": "sin in position 10 significantly decreases binding affinity for the optimal Klu site.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, sin in position 10 significantly decreases binding affinity for the optimal site (compare CGCCCACGCA to CGCCCACGCC), whereas it increases affinity for the endogenous Klu site in ss (compare CGCCCACACA to CGCCCACACC) (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SELEX-seq analysis shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "6fb1dfa1-e4a3-4a6b-88aa-d5b271b6282f",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C41",
+      "claim": "sin increases affinity for the endogenous Klu site in ss.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, sin in position 10 significantly decreases binding affinity for the optimal site (compare CGCCCACGCA to CGCCCACGCC), whereas it increases affinity for the endogenous Klu site in ss (compare CGCCCACACA to CGCCCACACC) (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SELEX-seq analysis shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "631ca028-e558-4889-a92b-4915f85a9d63",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C42",
+      "claim": "Klu binding affinity is dependent on the relationship between the bases in position 8 and 10.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis indicates that Klu binding affinity is dependent on the relationship between the bases in position 8 and 10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from SELEX-seq analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "4c3ee6ef-8682-4641-aa39-fa4ed3355dff",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C43",
+      "claim": "Klu preferentially interacts with the site with sin (C in position 10) over the site without sin (A in position 10) in the endogenous spineless locus (A in position 8).",
+      "claim_type": "EXPLICIT",
+      "source": "This dependence reveals that Klu preferentially interacts with the site with sin (C in position 10) over the site without sin (A in position 10) in the endogenous spineless locus (A in position 8), in contrast to the general predictions of the PWM (preferred G in position eight and A in position 10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from SELEX-seq analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "4529a781-3674-4eb6-a475-df47079c6aa8",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C44",
+      "claim": "The Klu site in the endogenous locus is a low-affinity site.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the Klu site in the endogenous locus is a low-affinity site and that sin increases its affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from SELEX-seq analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "a882771d-e4dd-442d-8ff1-9cad8fbfa675",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C45",
+      "claim": "Flies hemizygous for an optimal Klu site displayed a lower proportion of SsON R7s compared to wild type flies.",
+      "claim_type": "EXPLICIT",
+      "source": "We used CRISPR to mutate the endogenous low-affinity Klu site (ACGCCCACACAC) to the predicted optimized high-affinity site (ACGCCCACGCAC) and observed a decrease in the proportion of SsON R7s similar to flies with sin (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from CRISPR-mediated mutagenesis shown in Figure 3F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "58a73ab1-aba2-4a21-a33c-4b5a4f874bb8",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C46",
+      "claim": "An optimized high-affinity Klu site causes a similar phenotype as sin.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that an optimized high-affinity Klu site causes a similar phenotype as sin is consistent with the conclusion that sin increases the binding affinity for Klu.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from CRISPR mutagenesis experiment",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "7686c7e7-bb71-4991-ab1e-2c35b56eb59c",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C47",
+      "claim": "Klu/WT1 has been shown to be a transcriptional repressor in other systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Klu/WT1 has been shown to be a transcriptional repressor in other systems (Drummond et al., 1992; McDonald et al., 2003; Kaspar et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "1101b533-6211-4a74-8375-bd59286e58f9",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C48",
+      "claim": "Klu was expressed in R7s in larval eye imaginal discs in a Gaussian distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Klu was expressed in R7s in larval eye imaginal discs in a Gaussian distribution (Figure 4A\u2013B; Figure 4\u2014figure supplement 1) (Wildonger et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4A-B and Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "f56b16a2-94b1-4e11-8853-1bcf94c75b17",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C49",
+      "claim": "Increasing the levels of Klu in Klu-expressing cells caused a decrease in the proportion of SsON (Rh4) R7s.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, increasing the levels of Klu in Klu-expressing cells (klu > klu), all photoreceptors (eye > klu), or specifically in all R7s (R7 > klu) caused a decrease in the proportion of SsON (Rh4) R7s (Figure 4C\u2013D; Figure 1\u2014figure supplement 2C and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4C-D and Figure 1\u2014figure supplement 2C and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "11d547e7-a579-4018-a16d-b55e977c8256",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C50",
+      "claim": "Increasing the levels of Klu in all photoreceptors caused a decrease in the proportion of SsON (Rh4) R7s.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, increasing the levels of Klu in Klu-expressing cells (klu > klu), all photoreceptors (eye > klu), or specifically in all R7s (R7 > klu) caused a decrease in the proportion of SsON (Rh4) R7s (Figure 4C\u2013D; Figure 1\u2014figure supplement 2C and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4C-D and Figure 1\u2014figure supplement 2C and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "da4a0851-498f-488e-93bc-975e42e1123c",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C51",
+      "claim": "Increasing the levels of Klu specifically in all R7s caused a decrease in the proportion of SsON (Rh4) R7s.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, increasing the levels of Klu in Klu-expressing cells (klu > klu), all photoreceptors (eye > klu), or specifically in all R7s (R7 > klu) caused a decrease in the proportion of SsON (Rh4) R7s (Figure 4C\u2013D; Figure 1\u2014figure supplement 2C and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4C-D and Figure 1\u2014figure supplement 2C and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "0b87e0fa-8e6f-470b-96e6-c3aa0373a05e",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C52",
+      "claim": "The decrease in the SsON/SsOFF ratio upon increasing Klu levels mimicked the effect of sin.",
+      "claim_type": "EXPLICIT",
+      "source": "This decrease in the SsON/SsOFF ratio upon increasing Klu levels mimicked the effect of sin, consistent with sin increasing the binding affinity for the Klu repressor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from comparison of experimental results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "577be224-5732-46bb-9166-15584b92e054",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C53",
+      "claim": "klu loss-of-function mutants displayed increases in the proportion of SsON (Rh4) R7s.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, klu loss-of-function mutants displayed increases in the proportion of SsON (Rh4) R7s (Figure 4E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4E-F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "0cf190cd-5b7a-4aff-ab85-037903b0ac84",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C54",
+      "claim": "The proportion of SsON R7s increased in klu null mutants as assessed by Ss antibody staining.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined Ss expression directly and found that the proportion of SsON R7s increased in klu null mutants (Figure 1\u2014figure supplement 2D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 2D-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "00ff5bfb-4a7f-459b-8a76-dd7e93a5b693",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C55",
+      "claim": "The proportion of SsON R7s increased in klu mutant clones compared to wild type clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that the proportion of SsON R7s increased in klu mutant clones compared to wild type clones (Figure 4G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4G-I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "aaeab26a-93da-4644-968b-6197789bd5ac",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C56",
+      "claim": "Klu is endogenously expressed at intermediate levels and acts cell-autonomously to determine Ss expression state.",
+      "claim_type": "EXPLICIT",
+      "source": "As the proportion of SsON R7s increases specifically in klu mutant clones and decreases upon ectopic expression of Klu in R7s, we conclude that Klu is endogenously expressed at intermediate levels and acts cell-autonomously to determine Ss expression state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from clone analysis and ectopic expression experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "b353ae5d-a13a-4291-8243-ead8ad144430",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C57",
+      "claim": "The ratio of Ss on/off gene expression is controlled by both the level of Klu protein and the binding affinity of the Klu site.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that the ratio of Ss on/off gene expression is controlled by both the level of Klu protein and the binding affinity of the Klu site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple experimental manipulations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "af63870b-5db2-4c7f-9129-82b624313856",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C58",
+      "claim": "Flies with both increased levels of Klu and sin showed a significant additional reduction in the proportion of SsON R7s.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated flies with increased levels of Klu in a sin genetic background and observed a significant additional reduction in the proportion of SsON R7s (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "d15f6646-f7f4-41dd-a189-99c35591b0d4",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C59",
+      "claim": "The sin phenotype was suppressed in klu mutant heterozygotes.",
+      "claim_type": "EXPLICIT",
+      "source": "To further test the relationship between Klu levels and binding site affinity, we reduced klu gene dosage in flies with sin and found that the sin phenotype was suppressed in klu mutant heterozygotes (Figure 4J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "9e8b0fed-6337-4c91-8a75-0bf57f41ba0e",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C60",
+      "claim": "The binding affinity of the Klu site and levels of Klu protein determine the proportion of SsON R7s.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that sin increases Klu binding affinity and that the binding affinity of the Klu site and levels of Klu protein determine the proportion of SsON R7s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple experimental manipulations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "1a91c65e-320a-453e-86f1-6b3f8039052e",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C61",
+      "claim": "sin is absent among diverse drosophilid species spanning millions of years of divergence.",
+      "claim_type": "EXPLICIT",
+      "source": "sin appears to be a relatively new mutation in D. melanogaster populations. sin is absent among diverse drosophilid species spanning millions of years of divergence (Figure 3\u2014figure supplement 1B\u2013C) and is segregating at an extremely low frequency among non-admixed African D. melanogaster lineages (Figure 1\u2014figure supplement 3A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by conservation analysis shown in Figure 3\u2014figure supplement 1B-C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "0d6a6d20-6044-4c1e-bbe8-0f29eb02a2ee",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C62",
+      "claim": "sin is segregating at an extremely low frequency among non-admixed African D. melanogaster lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "sin appears to be a relatively new mutation in D. melanogaster populations. sin is absent among diverse drosophilid species spanning millions of years of divergence (Figure 3\u2014figure supplement 1B\u2013C) and is segregating at an extremely low frequency among non-admixed African D. melanogaster lineages (Figure 1\u2014figure supplement 3A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by population genetic data shown in Figure 1\u2014figure supplement 3A-F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "82d51202-3365-43cf-9f2c-6583509a34f1",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C63",
+      "claim": "sin likely rose to intermediate frequencies following D. melanogaster's colonization of Europe about 10\u201315 thousand years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "sin likely rose to intermediate frequencies following D. melanogaster's colonization of Europe about 10\u201315 thousand years ago (Li and Stephan, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on population genetic data and citation",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "7f9f4320-ddad-4bd4-a6e0-be88733db21a",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C64",
+      "claim": "sin continues to segregate at intermediate frequencies amongst North American populations.",
+      "claim_type": "EXPLICIT",
+      "source": "sin continues to segregate at intermediate frequencies amongst North American populations (Figure 1\u2014figure supplement 3A\u2013F), which were established within the last 150 years from mixtures of European and African populations (Bergland et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by population genetic data shown in Figure 1\u2014figure supplement 3A-F",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "c9fc3904-2f8d-4a9d-9b41-ccb8d3dd1eb4",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C65",
+      "claim": "North American D. melanogaster populations were established within the last 150 years from mixtures of European and African populations.",
+      "claim_type": "EXPLICIT",
+      "source": "sin continues to segregate at intermediate frequencies amongst North American populations (Figure 1\u2014figure supplement 3A\u2013F), which were established within the last 150 years from mixtures of European and African populations (Bergland et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "ff05d2dc-4bf0-4f9b-9dec-92e5e2fe18f4",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C66",
+      "claim": "sin did not deviate from genome-wide patterns in allele frequency differentiation and haplotype homozygosity analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, sin did not deviate from genome-wide patterns (Figure 1\u2014figure supplement 3G\u2013J) suggesting that it might be selectively neutral in contemporary D. melanogaster populations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by population genetic analyses shown in Figure 1\u2014figure supplement 3G-J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "cf2f0da3-8536-4305-8e87-6d0c3cda090e",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C67",
+      "claim": "sin might be selectively neutral in contemporary D. melanogaster populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, sin did not deviate from genome-wide patterns (Figure 1\u2014figure supplement 3G\u2013J) suggesting that it might be selectively neutral in contemporary D. melanogaster populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on population genetic analyses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "dd53d088-a961-4789-9cbd-c585da026087",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C68",
+      "claim": "Rhodopsins are G-protein coupled receptors (GPCRs).",
+      "claim_type": "EXPLICIT",
+      "source": "Rhodopsins are G-protein coupled receptors (GPCRs), a class of proteins identified as a source of natural behavioral variation in worms, mice, and voles (Young et al., 1999; Yalcin et al., 2004; Bendesky et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established scientific knowledge and citations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "e0bd7f5d-33e7-4c59-9a54-1c2e61cddf06",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C69",
+      "claim": "GPCRs are a class of proteins identified as a source of natural behavioral variation in worms, mice, and voles.",
+      "claim_type": "EXPLICIT",
+      "source": "Rhodopsins are G-protein coupled receptors (GPCRs), a class of proteins identified as a source of natural behavioral variation in worms, mice, and voles (Young et al., 1999; Yalcin et al., 2004; Bendesky et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "c627e428-7c42-415f-a31b-b7f65d9eeebb",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C70",
+      "claim": "Dramatic differences in Rhodopsin expression patterns exist across insect species.",
+      "claim_type": "EXPLICIT",
+      "source": "Dramatic differences in Rhodopsin expression patterns across insect species (Hilbrant et al., 2014; Wernet et al., 2015) suggest that variation in the expression of GPCRs, rather than retinal morphology, may allow rapid evolution in response to environmental changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "a6ae8e72-7144-44f2-abf3-f2cdea3b8c0f",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C71",
+      "claim": "Variation in the expression of GPCRs, rather than retinal morphology, may allow rapid evolution in response to environmental changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Dramatic differences in Rhodopsin expression patterns across insect species (Hilbrant et al., 2014; Wernet et al., 2015) suggest that variation in the expression of GPCRs, rather than retinal morphology, may allow rapid evolution in response to environmental changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on cited research",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "3f660dc0-220d-4b45-8826-f74151b2837d",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C72",
+      "claim": "Low-affinity binding sites ensure the timing and specificity of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Low-affinity sites ensure the timing and specificity of gene expression (Jiang and Levine, 1993; Gaudet and Mango, 2002; Scardigli et al., 2003; Rowan et al., 2010; Ramos and Barolo, 2013; Crocker et al., 2015; Farley et al., 2015; Crocker et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "3e3fe8f0-c365-4208-a9c5-a67ef52dcdb0",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C73",
+      "claim": "The suboptimal Klu site, bound by endogenous levels of Klu, yields the normal 65:35 SsON/SsOFF ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "The suboptimal Klu site, bound by endogenous levels of Klu, yields the normal 65:35 SsON/SsOFF ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "17f1ca93-0804-4408-92a1-71488f1263f9",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C74",
+      "claim": "Changing the affinity of the Klu site or the level of Klu alters the ratio of SsON/SsOFF cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Changing the affinity of the site or the level of Klu alters the ratio of SsON/SsOFF cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental manipulations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "b191f37b-e9a6-428d-8094-d6cbaff55b76",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C75",
+      "claim": "Stochastic on/off gene expression is controlled by threshold levels of trans factors binding to low-affinity sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that stochastic on/off gene expression is controlled by threshold levels of trans factors binding to low-affinity sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "4f2377ff-245b-4399-a4b9-d6beadac64d7",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C76",
+      "claim": "The level of Klu (analog input) determines the binary on/off ratio of Ss expression (digital output).",
+      "claim_type": "EXPLICIT",
+      "source": "The level of Klu (analog input) determines the binary on/off ratio of Ss expression (digital output).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "d562ef63-732f-4976-b0cf-ec7bc9b19f61",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C77",
+      "claim": "sin or genetic perturbation of klu affected the frequency of Ss expression but not levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, sin or genetic perturbation of klu affected the frequency of Ss expression (Figures 1F, I\u2013K and 4C\u2013J, Figure 1\u2014figure supplement 2) but not levels (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in multiple figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "9c00233f-506c-4aaa-bee1-34047a81e44f",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C78",
+      "claim": "Conservation of additional base pairs surrounding the Klu site is consistent with cooperative binding of Klu and other factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Conservation of additional base pairs surrounding the Klu site (Figure 3C) is consistent with cooperative binding of Klu and others factors, possibly through dimerization or multimerization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference based on conservation data shown in Figure 3C",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "13c7d1c4-d8c0-4d93-bd59-e895c057ae83",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C79",
+      "claim": "The regions encompassing and neighboring the Klu binding site drive gene expression in the eye.",
+      "claim_type": "EXPLICIT",
+      "source": "The regions encompassing and neighboring the Klu binding site drive gene expression in the eye (Figure 1\u2014figure supplement 1), suggesting that complex interactions between this regulatory DNA element, the R7/R8 enhancer, and the two silencers (Figure 1B) ultimately control the ss on/off decision.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "159054cd-77ce-4df4-9252-1191f5e2576a",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C80",
+      "claim": "Complex interactions between the regulatory DNA element containing the Klu site, the R7/R8 enhancer, and the two silencers ultimately control the ss on/off decision.",
+      "claim_type": "EXPLICIT",
+      "source": "The regions encompassing and neighboring the Klu binding site drive gene expression in the eye (Figure 1\u2014figure supplement 1), suggesting that complex interactions between this regulatory DNA element, the R7/R8 enhancer, and the two silencers (Figure 1B) ultimately control the ss on/off decision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "60aef991-195e-4910-b58c-f80795516bbb",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C81",
+      "claim": "Fine tuning of binding site affinities and transcription factor levels will emerge as a common mechanistic feature that determines the ratio of alternative fates in stochastic systems.",
+      "claim_type": "EXPLICIT",
+      "source": "We predict that fine tuning of binding site affinities and transcription factor levels will emerge as a common mechanistic feature that determines the ratio of alternative fates in stochastic systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Prediction based on findings from this study",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "604645b2-dd19-4ead-aaeb-09dc5049b3b9",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C82",
+      "claim": "Stochastic fate specification diversifies sensory neuron subtypes in worms, flies, mice, and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Stochastic fate specification diversifies sensory neuron subtypes in a wide array of species including worms, flies, mice, and humans (Ressler et al., 1993; Roorda and Williams, 1999; Troemel et al., 1999; Hofer et al., 2005; Johnston and Desplan, 2010; Magklara and Lomvardas, 2013; Alqadah et al., 2016; Viets et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "55eea71b-a593-4e2d-88ae-0fc9e6bc230d",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C83",
+      "claim": "Levels of Ss expression were not significantly different between wild type and klu mutant SsON R7s.",
+      "claim_type": "EXPLICIT",
+      "source": "Levels of Ss expression were not significantly different between wild type and klu mutant SsON R7s. A-C are from three representative retinas. ns indicates not significant, p>0.05.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 4A-C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "e9ef96f6-aa4a-445e-a962-747c83fb0085",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C84",
+      "claim": "Ss levels are not significantly changed in flies with sin, klu null mutants, or flies with increased levels of Klu.",
+      "claim_type": "EXPLICIT",
+      "source": "Ss levels are not significantly changed in flies with sin, klu null mutants, or flies with increased levels of Klu (eye >klu).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 4D-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "4f5f6b25-bc7c-4bff-adae-343da52325c3",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C85",
+      "claim": "Changes in Ss levels or activity alter the exclusivity or co-expression of Rhodopsin expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that changes in Ss levels or activity alter the exclusivity or co-expression of Rhodopsin expression (Thanawala et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "4640970d-822e-4e2f-8b28-7f621f24c9ca",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C86",
+      "claim": "The main region of the retina is a random mosaic of R7 cells with exclusive expression of Rh3 (SsOFF) or Rh4 (SsON).",
+      "claim_type": "EXPLICIT",
+      "source": "The main region of the retina is a random mosaic of R7s cells with exclusive expression of Rh3 (SsOFF) or Rh4 (SsON).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge from prior research",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "586ff507-cee0-4021-9233-049d9167f33e",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C87",
+      "claim": "Exclusivity of Rh3 and Rh4 expression breaks down in the dorsal third region of the retina where some R7s co-express Rh4 and Rh3.",
+      "claim_type": "EXPLICIT",
+      "source": "This exclusivity breaks down in the dorsal third region of the retina where some R7s exclusively express Rh3 (SsOFF), but others co-express Rh4 and Rh3 (SsON).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge from prior research",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "106c823b-ab5c-45e8-a929-3a8fe91e2e32",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C88",
+      "claim": "The dorsal third region starts approximately four rows above the dorsal/ventral equator of the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "This dorsal third region starts approximately four rows above the dorsal/ventral equator of the retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge from prior research",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "6320020b-64e6-4b3e-97ef-10627534ff3d",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C89",
+      "claim": "Increasing levels of Ss generates retinas with exclusive expression of Rh3 or Rh4 throughout the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing levels of Ss generates retinas with exclusive expression of Rh3 or Rh4 throughout the retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge from prior research",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "06c88cfc-ccea-4d74-81ce-5ce608009792",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C90",
+      "claim": "Decreasing levels of Ss leads to an expansion of the dorsal third region of co-expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Decreasing levels of Ss leads to an expansion of the dorsal third region of co-expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge from prior research",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "5e1714bf-009d-4190-9eb6-bf98085f6395",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C91",
+      "claim": "The position of the dorsal third region was not significantly different between wild type, sin, klu null mutants, and flies with increased Klu levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the position of the dorsal third in number of rows above the equator. ns indicates not significant, p>0.05.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 4E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "5e2a9036-c6ca-4c27-abc1-614fb1f258d0",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C92",
+      "claim": "Natural variation in the gene regulatory pathway controlling Rh5 and Rh6 expression downstream of Ss likely caused the green light preference of some lines with sin.",
+      "claim_type": "EXPLICIT",
+      "source": "Natural variation in the gene regulatory pathway controlling Rh5 and Rh6 expression downstream of Ss (Mikeladze-Dvali et al., 2005; Jukam and Desplan, 2011; Jukam et al., 2013; Viets et al., 2016) or in the neural circuit downstream of R8 signaling likely caused the green light preference of some lines with sin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on behavioral data and citations to prior research",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "282841bc-78fa-4185-9eab-6e933ccfd343",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C93",
+      "claim": "Natural variation in the neural circuit downstream of R8 signaling likely caused the green light preference of some lines with sin.",
+      "claim_type": "EXPLICIT",
+      "source": "Natural variation in the gene regulatory pathway controlling Rh5 and Rh6 expression downstream of Ss (Mikeladze-Dvali et al., 2005; Jukam and Desplan, 2011; Jukam et al., 2013; Viets et al., 2016) or in the neural circuit downstream of R8 signaling likely caused the green light preference of some lines with sin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on behavioral data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "d0b61bf1-fee7-4d58-a551-242c70b235a9",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "claim_id": "C94",
+      "claim": "Binding of transcription factors like Klu is determined not only by sequence but also by DNA shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Dependence between positions suggests that binding of transcription factors like Klu is determined not only by sequence but also by DNA shape, as has been described previously (Abe et al., 2015; Zhou et al., 2015; Chiu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on SELEX-seq analysis and citations to prior research",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "363716d0-4726-4d50-b41c-73ce5dfec21e",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the background knowledge that stochastic on/off expression of Spineless (Ss) determines R7 photoreceptor subtypes in Drosophila, with Ss expression inducing yellow R7 fate (Rh4) and absence inducing pale R7 fate (Rh3). This stochastic decision is made cell-autonomously via a random repression mechanism involving an R7/R8 enhancer and two silencer regions, typically yielding ~65% SsON and ~35% SsOFF R7s in lab stocks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C11, C15, C82) represent well-established prior knowledge supported by multiple citations to previous research. The claims are internally consistent and provide the necessary background for understanding the current study. The use of Rh3/Rh4 expression as faithful reporters of Ss expression (C15) is validated by citations and serves as the methodological foundation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "7e4e8f48-750a-4916-a805-569e0f76732b",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Natural variation in the proportion of SsON to SsOFF R7s exists among wild-derived DGRP lines, ranging from 19% to 83% SsON (Rh4), compared to 62% in the lab stock under hemizygous conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C17, and C16 are supported by experimental data shown in Figure 1E-F and source data. The crossing scheme (Figure 1D) and semi-automated counting system (Figure 1C) provide methodological rigor. The wide range of variation (19-83%) across DGRP lines is clearly documented and forms the basis for the GWAS analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "5988c6d1-8130-4797-9c74-715b475b8e79",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A genome-wide association study identified a single base pair insertion within the ss locus (sin) that was significantly associated (p<10\u207b\u00b9\u00b3 after Bonferroni correction) with reduced SsON/SsOFF ratio, with sin enriched in DGRP lines showing low ratios of SsON to SsOFF R7s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C18, and C19 are supported by GWAS data shown in Figure 1G-H. The statistical significance exceeds the Bonferroni-corrected threshold, and the enrichment pattern is clearly demonstrated. The GWAS methodology is described in detail in the Materials and Methods, including appropriate controls for population structure using principal components.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "2d9c1b78-4a3e-4281-aab8-95b7954432ca",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Multiple independent validations confirm that sin causes a decrease in the ratio of SsON to SsOFF R7s, including naturally derived African lines, lab stock balancer chromosomes, and CRISPR-generated alleles, with effects confirmed using both Rh4 expression and direct Ss antibody staining.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24 are strongly supported by convergent evidence from multiple experimental approaches (Figure 1I-K, Figure 1\u2014figure supplement 2A-B and E). The use of CRISPR to definitively insert sin into a lab stock (C22) provides causal validation. The consistency across different genetic backgrounds and detection methods strengthens the conclusion that sin causes the phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "859801b0-0b50-4ea1-aa5e-816f30905218",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "sin alters innate color preference in flies, with DGRP lines containing sin preferring blue light and lines lacking sin preferring green light, mediated through the coupling of R8 fate to R7 fate and the distinct absorption spectra of Rh5 (blue) and Rh6 (green).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C30 are supported by behavioral assay data (Figure 2A-C, source data). The rationale for focusing on R8 photoreceptors (C25-C26) is well-justified by citations. The coupling of R8 to R7 fate (C27) is established by prior work. The behavioral data show a clear and statistically significant difference in color preference between sin and no-sin lines (C28-C30, p<0.05).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "15c030c7-7e62-43cc-a5fb-e3b42f6c05b0",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "sin is a single base pair insertion located ~7 kb upstream of the ss transcriptional start in a previously uncharacterized non-coding region that lies within a predicted binding site for the transcription factor Klumpfuss (Klu), with this region perfectly conserved across 21 Drosophila species covering 50 million years of evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 are supported by genomic location data (Figure 1B, Figure 3A), motif analysis (Figure 3B, Figure 3\u2014figure supplement 1A), and conservation analysis (Figure 3C, Figure 3\u2014figure supplement 1B-C). The perfect conservation across 21 species strongly suggests functional importance. The identification of the Klu binding site is based on both SELEX-seq and B1H datasets.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "e7106794-8e3a-4947-9ab2-bf679c6d9537",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "sin increases the binding affinity of the Klu site in vitro, as demonstrated by SELEX-seq analysis showing significantly more reads containing the Klu binding site with sin (CGCCCACACC) than without sin (CGCCCACACA), with the site with sin ranking in the top 0.07% of 10-mers by frequency compared to 0.10% for the site without sin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 are supported by SELEX-seq data analysis (Figure 3D). The statistical significance is demonstrated by McNemar's test. The frequency analysis of 10-mers provides quantitative support for increased binding affinity. The methodology for analyzing SELEX-seq data is described in detail in Materials and Methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "1202daf6-8a65-4cbf-8d14-14dfa40bef70",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The endogenous Klu site in ss is a low-affinity site that deviates from the optimal sequence at position 8, and sin increases affinity for this endogenous site while decreasing affinity for the optimal site, revealing position-dependent binding affinity determined by both sequence and DNA shape.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C44 and C94 are supported by detailed SELEX-seq analysis (Figure 3E). The position-dependent effects are clearly demonstrated by comparing specific sequences. The inference about DNA shape (C94) is supported by citations to prior research and is consistent with the observed position dependence. The analysis reveals complexity beyond simple PWM predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "e155d41a-b1b6-4871-b9d9-78b78b9503e1",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CRISPR-mediated mutation of the endogenous low-affinity Klu site to a predicted optimized high-affinity site causes a decrease in the proportion of SsON R7s similar to flies with sin, providing functional validation that sin increases Klu binding affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 are supported by experimental data from CRISPR-mediated mutagenesis (Figure 3F). The observation that an optimized site phenocopies sin provides strong functional validation of the binding affinity model. Two independent CRISPR lines show consistent results, strengthening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "01a87149-82f6-427a-875a-78119770706f",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Klu is expressed in R7s in larval eye imaginal discs in a Gaussian distribution and acts as a repressor, with increased Klu levels (in Klu-expressing cells, all photoreceptors, or specifically in R7s) causing decreased proportion of SsON R7s, mimicking the effect of sin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C52 are supported by expression data (Figure 4A-B, Figure 4\u2014figure supplement 1) and genetic manipulation experiments (Figure 4C-D, Figure 1\u2014figure supplement 2C and E). The repressor function (C47) is supported by citations to prior research in other systems. The consistency of the phenotype across different Gal4 drivers strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "8175276c-6a2e-4a6d-9005-5b771c189623",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Loss of klu function increases the proportion of SsON R7s in both null mutants and hypomorphs, with klu mutant clones showing increased SsON R7s compared to wild type clones, demonstrating that Klu is endogenously expressed at intermediate levels and acts cell-autonomously to determine Ss expression state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 are supported by genetic analysis of klu mutants (Figure 4E-I, Figure 1\u2014figure supplement 2D-E). The clone analysis (C55) provides definitive evidence for cell-autonomous action. The use of both null and hypomorphic alleles strengthens the conclusion. The consistency between Rh4 and Ss antibody staining validates the results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "01586e4e-65be-42a8-bbc2-f954cd421ebd",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The ratio of Ss on/off gene expression is controlled by both the level of Klu protein and the binding affinity of the Klu site, with flies having both increased Klu levels and sin showing additional reduction in SsON R7s, and the sin phenotype being suppressed in klu mutant heterozygotes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C60 are supported by genetic interaction experiments (Figure 4D, 4J). The additive effect of increased Klu and sin (C58) and the suppression of sin by reduced klu dosage (C59) provide strong evidence for the model that both binding site affinity and transcription factor levels determine the outcome. These genetic interactions are consistent with a threshold model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "c0480a97-fcd6-418c-9d5b-d5147723ce69",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "sin is a relatively new mutation in D. melanogaster populations, absent among diverse drosophilid species and segregating at extremely low frequency in non-admixed African lineages, likely rising to intermediate frequencies following European colonization ~10-15 thousand years ago and continuing to segregate at intermediate frequencies in North American populations established within the last 150 years.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 are supported by population genetic data (Figure 3\u2014figure supplement 1B-C, Figure 1\u2014figure supplement 3A-F) and citations to prior research on D. melanogaster population history. The absence in other species and low frequency in Africa, combined with higher frequency in derived populations, is consistent with a recent origin. The inference about timing (C63) is appropriately qualified as 'likely' and supported by citation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "f30b4f52-b3c5-4674-a063-7ff1c1329793",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "sin did not deviate from genome-wide patterns in allele frequency differentiation (FST) and haplotype homozygosity analyses, suggesting it might be selectively neutral in contemporary D. melanogaster populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 are supported by population genetic analyses (Figure 1\u2014figure supplement 3G-J). The comparison to a control set of ~1500 comparable indel polymorphisms provides appropriate context. The conclusion of potential neutrality (C67) is appropriately qualified as 'might be' and 'suggesting', acknowledging uncertainty. The lack of deviation from genome-wide patterns is clearly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "d34657a5-f37f-459e-aba8-4f929d5f42c0",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Rhodopsins are GPCRs, a class of proteins identified as sources of natural behavioral variation in multiple species, and dramatic differences in Rhodopsin expression patterns across insect species suggest that variation in GPCR expression may allow rapid evolution in response to environmental changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 represent established knowledge (C68-C69) and reasonable inference (C70-C71) supported by citations to prior research. The suggestion that GPCR expression variation allows rapid evolution (C71) is appropriately qualified and represents a plausible hypothesis based on the cited evidence of dramatic differences across species.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "6578fbec-4078-4c2a-9415-ea3d6a72e4d6",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Low-affinity binding sites ensure timing and specificity of gene expression, and in this system, the suboptimal Klu site bound by endogenous Klu levels yields the normal 65:35 SsON/SsOFF ratio, with changes in site affinity or Klu levels altering this ratio, demonstrating that stochastic on/off gene expression is controlled by threshold levels of trans factors binding to low-affinity sites, with Klu levels (analog input) determining the binary on/off ratio of Ss expression (digital output).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C76 integrate prior knowledge (C72, supported by citations) with conclusions drawn from the experimental findings. The model that threshold levels of trans factors at low-affinity sites control stochastic expression (C75) is well-supported by the combined evidence of binding affinity effects and Klu level manipulations. The analog-to-digital conversion concept (C76) is a reasonable interpretation of the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "3c555aec-9c00-45f2-961c-9a178c65765d",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "sin and genetic perturbation of klu affected the frequency of Ss expression but not the levels of Ss in SsON cells, and the position of the dorsal third region was not significantly different between genotypes, indicating that the regulatory mechanism affects cell fate choice rather than expression levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77, C83, C84, and C91 are supported by experimental data (Figure 1\u2014figure supplement 4). The distinction between frequency and levels is important for understanding the mechanism. The lack of effect on Ss levels (p>0.05) and dorsal third position (p>0.05) is clearly demonstrated. This supports the model that Klu affects the binary on/off decision rather than expression levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "27fcb3f1-ba02-4be1-bade-a40e4de5115e",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Conservation of additional base pairs surrounding the Klu site is consistent with cooperative binding of Klu and other factors, and the regions encompassing and neighboring the Klu binding site drive gene expression in the eye, suggesting complex interactions between this regulatory element, the R7/R8 enhancer, and the two silencers control the ss on/off decision.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80 are supported by conservation data (Figure 3C) and reporter gene expression data (Figure 1\u2014figure supplement 1). The inference about cooperative binding (C78) and complex interactions (C80) is appropriately qualified as 'consistent with' and 'suggesting', acknowledging that these are plausible hypotheses requiring further validation. The reporter data (C79) provides direct evidence for regulatory activity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "6ef458ab-4327-4d03-b081-1a0f7471185a",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Fine tuning of binding site affinities and transcription factor levels will emerge as a common mechanistic feature determining the ratio of alternative fates in stochastic systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 is a prediction based on the findings of this study. While speculative, it is a reasonable extrapolation from the demonstrated mechanism in the Drosophila photoreceptor system. The prediction is appropriately framed as future expectation ('will emerge') rather than established fact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "b7edb67a-ac1b-4c55-b0c9-bc003ecdbaf6",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Changes in Ss levels or activity alter the exclusivity or co-expression of Rhodopsin expression, with the main retina showing exclusive Rh3 or Rh4 expression but the dorsal third region (starting ~4 rows above the equator) showing co-expression, and increasing Ss levels generates exclusive expression throughout while decreasing Ss expands the co-expression region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C90 represent established knowledge from prior research (C85 cites Thanawala et al., 2013). These claims provide important context for interpreting the Ss level measurements in Figure 1\u2014figure supplement 4. The description of the dorsal third region and effects of Ss level changes is consistent with established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    },
+    {
+      "id": "0624c148-12ae-4966-af45-8c238f50cb11",
+      "content_id": "e43dd450-a8b9-4e8f-a875-652015e489cf",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Natural variation in the gene regulatory pathway controlling Rh5 and Rh6 expression downstream of Ss or in the neural circuit downstream of R8 signaling likely caused the green light preference observed in some DGRP lines with sin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C92-C93 are speculative explanations for the observation that some sin-containing lines showed green light preference despite the expected blue preference. While the hypotheses are plausible and supported by citations to relevant pathways, no direct experimental evidence is provided to test these specific explanations. The claims are appropriately qualified as 'likely' but remain uncertain without further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:35:29.711718Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "858e8cc0-dcf1-4b05-801f-bc9be9ad8b63",
+      "result_id": "363716d0-4726-4d50-b41c-73ce5dfec21e"
+    },
+    {
+      "claim_id": "c814c4a5-0fbf-4f58-b9e0-89fb3c89ffdd",
+      "result_id": "363716d0-4726-4d50-b41c-73ce5dfec21e"
+    },
+    {
+      "claim_id": "875eb627-7eb4-4b0c-972e-9674d9a92a6d",
+      "result_id": "363716d0-4726-4d50-b41c-73ce5dfec21e"
+    },
+    {
+      "claim_id": "58236356-e1d6-45c1-8f7c-4ce21ffbfb51",
+      "result_id": "363716d0-4726-4d50-b41c-73ce5dfec21e"
+    },
+    {
+      "claim_id": "badc60ec-eed4-422a-ba22-ed23b97dff27",
+      "result_id": "363716d0-4726-4d50-b41c-73ce5dfec21e"
+    },
+    {
+      "claim_id": "4f678660-071b-46e4-a5b4-5852270f41e2",
+      "result_id": "363716d0-4726-4d50-b41c-73ce5dfec21e"
+    },
+    {
+      "claim_id": "455ebd62-3713-43cf-8427-1ae8305760e2",
+      "result_id": "363716d0-4726-4d50-b41c-73ce5dfec21e"
+    },
+    {
+      "claim_id": "9934111e-f3f1-4c79-96fc-ad2dbbfcf2c7",
+      "result_id": "363716d0-4726-4d50-b41c-73ce5dfec21e"
+    },
+    {
+      "claim_id": "7219b3fa-cb02-4f6e-8307-bc60b153a767",
+      "result_id": "363716d0-4726-4d50-b41c-73ce5dfec21e"
+    },
+    {
+      "claim_id": "29bc89e7-d1f0-4a5d-b580-8803324aa544",
+      "result_id": "363716d0-4726-4d50-b41c-73ce5dfec21e"
+    },
+    {
+      "claim_id": "e7539749-31b3-432f-bc95-b2f2c31148a5",
+      "result_id": "363716d0-4726-4d50-b41c-73ce5dfec21e"
+    },
+    {
+      "claim_id": "34f7e3ec-6398-47a7-b2b0-0977259943ec",
+      "result_id": "363716d0-4726-4d50-b41c-73ce5dfec21e"
+    },
+    {
+      "claim_id": "604645b2-dd19-4ead-aaeb-09dc5049b3b9",
+      "result_id": "363716d0-4726-4d50-b41c-73ce5dfec21e"
+    },
+    {
+      "claim_id": "a95e2288-e211-4170-8749-5419b46c9c9a",
+      "result_id": "7e4e8f48-750a-4916-a805-569e0f76732b"
+    },
+    {
+      "claim_id": "28027869-bd8f-447f-807e-5fa65f25a1d3",
+      "result_id": "7e4e8f48-750a-4916-a805-569e0f76732b"
+    },
+    {
+      "claim_id": "1cbbc842-17dc-4d82-9f85-1abe17d6f64a",
+      "result_id": "7e4e8f48-750a-4916-a805-569e0f76732b"
+    },
+    {
+      "claim_id": "5e056d0f-1aa8-4738-8c59-2654f4fea1dd",
+      "result_id": "5988c6d1-8130-4797-9c74-715b475b8e79"
+    },
+    {
+      "claim_id": "2699a212-8d60-4053-a023-8cfede721270",
+      "result_id": "5988c6d1-8130-4797-9c74-715b475b8e79"
+    },
+    {
+      "claim_id": "a980f491-ac3b-4b56-b376-5c8ada1edfd1",
+      "result_id": "5988c6d1-8130-4797-9c74-715b475b8e79"
+    },
+    {
+      "claim_id": "ef79d45e-fa90-495e-a7a1-f350ac5cfddf",
+      "result_id": "2d9c1b78-4a3e-4281-aab8-95b7954432ca"
+    },
+    {
+      "claim_id": "bbf23525-c316-4198-8b93-5d9fd68300de",
+      "result_id": "2d9c1b78-4a3e-4281-aab8-95b7954432ca"
+    },
+    {
+      "claim_id": "72e180d6-2593-4a7f-947b-8e78f2e1e582",
+      "result_id": "2d9c1b78-4a3e-4281-aab8-95b7954432ca"
+    },
+    {
+      "claim_id": "b00583f9-76c3-4021-9db8-553cdbf9bb9b",
+      "result_id": "2d9c1b78-4a3e-4281-aab8-95b7954432ca"
+    },
+    {
+      "claim_id": "be304703-66bf-49d8-96dd-d6d9d1f7f69c",
+      "result_id": "2d9c1b78-4a3e-4281-aab8-95b7954432ca"
+    },
+    {
+      "claim_id": "3737c52e-cc64-4f8b-8195-1f8aa09c3416",
+      "result_id": "859801b0-0b50-4ea1-aa5e-816f30905218"
+    },
+    {
+      "claim_id": "1fad7120-fd3c-4394-a74f-0c676b4070e5",
+      "result_id": "859801b0-0b50-4ea1-aa5e-816f30905218"
+    },
+    {
+      "claim_id": "88483de7-c426-4505-8411-0b7e15a3dfb8",
+      "result_id": "859801b0-0b50-4ea1-aa5e-816f30905218"
+    },
+    {
+      "claim_id": "12c5f46e-7367-4088-b1b2-01382b15e8fb",
+      "result_id": "859801b0-0b50-4ea1-aa5e-816f30905218"
+    },
+    {
+      "claim_id": "d80c6a69-98f3-411f-9d1e-b94e9b834076",
+      "result_id": "859801b0-0b50-4ea1-aa5e-816f30905218"
+    },
+    {
+      "claim_id": "1023c3a6-a056-4202-a72c-44c7c9791ef5",
+      "result_id": "859801b0-0b50-4ea1-aa5e-816f30905218"
+    },
+    {
+      "claim_id": "99696d8d-9e85-454f-8813-a1a7ef2f6aa5",
+      "result_id": "15c030c7-7e62-43cc-a5fb-e3b42f6c05b0"
+    },
+    {
+      "claim_id": "3e6def3c-15f2-4ce8-bbc0-e2a91b6c4957",
+      "result_id": "15c030c7-7e62-43cc-a5fb-e3b42f6c05b0"
+    },
+    {
+      "claim_id": "11a4f555-ba10-411e-8ede-fa6dffaa4638",
+      "result_id": "15c030c7-7e62-43cc-a5fb-e3b42f6c05b0"
+    },
+    {
+      "claim_id": "bf477c27-5784-4f67-91b5-1feed3b5902c",
+      "result_id": "e7106794-8e3a-4947-9ab2-bf679c6d9537"
+    },
+    {
+      "claim_id": "73470b0e-b305-4bc8-99ce-afaf95b7f1b3",
+      "result_id": "e7106794-8e3a-4947-9ab2-bf679c6d9537"
+    },
+    {
+      "claim_id": "5d16ec1d-8451-4fb6-9e40-c076788efe01",
+      "result_id": "e7106794-8e3a-4947-9ab2-bf679c6d9537"
+    },
+    {
+      "claim_id": "ddc45fbe-c713-4acd-b35b-278534539be8",
+      "result_id": "e7106794-8e3a-4947-9ab2-bf679c6d9537"
+    },
+    {
+      "claim_id": "2a4fed50-08f2-4579-abaf-ec2f1705e5db",
+      "result_id": "e7106794-8e3a-4947-9ab2-bf679c6d9537"
+    },
+    {
+      "claim_id": "e2f1a067-8641-4523-b119-b398ea12ae25",
+      "result_id": "1202daf6-8a65-4cbf-8d14-14dfa40bef70"
+    },
+    {
+      "claim_id": "ae26d0a3-f7e2-4963-ab99-feb73894ac6f",
+      "result_id": "1202daf6-8a65-4cbf-8d14-14dfa40bef70"
+    },
+    {
+      "claim_id": "6fb1dfa1-e4a3-4a6b-88aa-d5b271b6282f",
+      "result_id": "1202daf6-8a65-4cbf-8d14-14dfa40bef70"
+    },
+    {
+      "claim_id": "631ca028-e558-4889-a92b-4915f85a9d63",
+      "result_id": "1202daf6-8a65-4cbf-8d14-14dfa40bef70"
+    },
+    {
+      "claim_id": "4c3ee6ef-8682-4641-aa39-fa4ed3355dff",
+      "result_id": "1202daf6-8a65-4cbf-8d14-14dfa40bef70"
+    },
+    {
+      "claim_id": "4529a781-3674-4eb6-a475-df47079c6aa8",
+      "result_id": "1202daf6-8a65-4cbf-8d14-14dfa40bef70"
+    },
+    {
+      "claim_id": "d0b61bf1-fee7-4d58-a551-242c70b235a9",
+      "result_id": "1202daf6-8a65-4cbf-8d14-14dfa40bef70"
+    },
+    {
+      "claim_id": "a882771d-e4dd-442d-8ff1-9cad8fbfa675",
+      "result_id": "e155d41a-b1b6-4871-b9d9-78b78b9503e1"
+    },
+    {
+      "claim_id": "58a73ab1-aba2-4a21-a33c-4b5a4f874bb8",
+      "result_id": "e155d41a-b1b6-4871-b9d9-78b78b9503e1"
+    },
+    {
+      "claim_id": "7686c7e7-bb71-4991-ab1e-2c35b56eb59c",
+      "result_id": "01a87149-82f6-427a-875a-78119770706f"
+    },
+    {
+      "claim_id": "1101b533-6211-4a74-8375-bd59286e58f9",
+      "result_id": "01a87149-82f6-427a-875a-78119770706f"
+    },
+    {
+      "claim_id": "f56b16a2-94b1-4e11-8853-1bcf94c75b17",
+      "result_id": "01a87149-82f6-427a-875a-78119770706f"
+    },
+    {
+      "claim_id": "11d547e7-a579-4018-a16d-b55e977c8256",
+      "result_id": "01a87149-82f6-427a-875a-78119770706f"
+    },
+    {
+      "claim_id": "da4a0851-498f-488e-93bc-975e42e1123c",
+      "result_id": "01a87149-82f6-427a-875a-78119770706f"
+    },
+    {
+      "claim_id": "0b87e0fa-8e6f-470b-96e6-c3aa0373a05e",
+      "result_id": "01a87149-82f6-427a-875a-78119770706f"
+    },
+    {
+      "claim_id": "577be224-5732-46bb-9166-15584b92e054",
+      "result_id": "8175276c-6a2e-4a6d-9005-5b771c189623"
+    },
+    {
+      "claim_id": "0cf190cd-5b7a-4aff-ab85-037903b0ac84",
+      "result_id": "8175276c-6a2e-4a6d-9005-5b771c189623"
+    },
+    {
+      "claim_id": "00ff5bfb-4a7f-459b-8a76-dd7e93a5b693",
+      "result_id": "8175276c-6a2e-4a6d-9005-5b771c189623"
+    },
+    {
+      "claim_id": "aaeab26a-93da-4644-968b-6197789bd5ac",
+      "result_id": "8175276c-6a2e-4a6d-9005-5b771c189623"
+    },
+    {
+      "claim_id": "b353ae5d-a13a-4291-8243-ead8ad144430",
+      "result_id": "01586e4e-65be-42a8-bbc2-f954cd421ebd"
+    },
+    {
+      "claim_id": "af63870b-5db2-4c7f-9129-82b624313856",
+      "result_id": "01586e4e-65be-42a8-bbc2-f954cd421ebd"
+    },
+    {
+      "claim_id": "d15f6646-f7f4-41dd-a189-99c35591b0d4",
+      "result_id": "01586e4e-65be-42a8-bbc2-f954cd421ebd"
+    },
+    {
+      "claim_id": "9e8b0fed-6337-4c91-8a75-0bf57f41ba0e",
+      "result_id": "01586e4e-65be-42a8-bbc2-f954cd421ebd"
+    },
+    {
+      "claim_id": "1a91c65e-320a-453e-86f1-6b3f8039052e",
+      "result_id": "c0480a97-fcd6-418c-9d5b-d5147723ce69"
+    },
+    {
+      "claim_id": "0d6a6d20-6044-4c1e-bbe8-0f29eb02a2ee",
+      "result_id": "c0480a97-fcd6-418c-9d5b-d5147723ce69"
+    },
+    {
+      "claim_id": "82d51202-3365-43cf-9f2c-6583509a34f1",
+      "result_id": "c0480a97-fcd6-418c-9d5b-d5147723ce69"
+    },
+    {
+      "claim_id": "7f9f4320-ddad-4bd4-a6e0-be88733db21a",
+      "result_id": "c0480a97-fcd6-418c-9d5b-d5147723ce69"
+    },
+    {
+      "claim_id": "c9fc3904-2f8d-4a9d-9b41-ccb8d3dd1eb4",
+      "result_id": "c0480a97-fcd6-418c-9d5b-d5147723ce69"
+    },
+    {
+      "claim_id": "ff05d2dc-4bf0-4f9b-9dec-92e5e2fe18f4",
+      "result_id": "f30b4f52-b3c5-4674-a063-7ff1c1329793"
+    },
+    {
+      "claim_id": "cf2f0da3-8536-4305-8e87-6d0c3cda090e",
+      "result_id": "f30b4f52-b3c5-4674-a063-7ff1c1329793"
+    },
+    {
+      "claim_id": "dd53d088-a961-4789-9cbd-c585da026087",
+      "result_id": "d34657a5-f37f-459e-aba8-4f929d5f42c0"
+    },
+    {
+      "claim_id": "e0bd7f5d-33e7-4c59-9a54-1c2e61cddf06",
+      "result_id": "d34657a5-f37f-459e-aba8-4f929d5f42c0"
+    },
+    {
+      "claim_id": "c627e428-7c42-415f-a31b-b7f65d9eeebb",
+      "result_id": "d34657a5-f37f-459e-aba8-4f929d5f42c0"
+    },
+    {
+      "claim_id": "a6ae8e72-7144-44f2-abf3-f2cdea3b8c0f",
+      "result_id": "d34657a5-f37f-459e-aba8-4f929d5f42c0"
+    },
+    {
+      "claim_id": "3f660dc0-220d-4b45-8826-f74151b2837d",
+      "result_id": "6578fbec-4078-4c2a-9415-ea3d6a72e4d6"
+    },
+    {
+      "claim_id": "3e3fe8f0-c365-4208-a9c5-a67ef52dcdb0",
+      "result_id": "6578fbec-4078-4c2a-9415-ea3d6a72e4d6"
+    },
+    {
+      "claim_id": "17f1ca93-0804-4408-92a1-71488f1263f9",
+      "result_id": "6578fbec-4078-4c2a-9415-ea3d6a72e4d6"
+    },
+    {
+      "claim_id": "b191f37b-e9a6-428d-8094-d6cbaff55b76",
+      "result_id": "6578fbec-4078-4c2a-9415-ea3d6a72e4d6"
+    },
+    {
+      "claim_id": "4f2377ff-245b-4399-a4b9-d6beadac64d7",
+      "result_id": "6578fbec-4078-4c2a-9415-ea3d6a72e4d6"
+    },
+    {
+      "claim_id": "d562ef63-732f-4976-b0cf-ec7bc9b19f61",
+      "result_id": "3c555aec-9c00-45f2-961c-9a178c65765d"
+    },
+    {
+      "claim_id": "55eea71b-a593-4e2d-88ae-0fc9e6bc230d",
+      "result_id": "3c555aec-9c00-45f2-961c-9a178c65765d"
+    },
+    {
+      "claim_id": "e9ef96f6-aa4a-445e-a962-747c83fb0085",
+      "result_id": "3c555aec-9c00-45f2-961c-9a178c65765d"
+    },
+    {
+      "claim_id": "5e1714bf-009d-4190-9eb6-bf98085f6395",
+      "result_id": "3c555aec-9c00-45f2-961c-9a178c65765d"
+    },
+    {
+      "claim_id": "9c00233f-506c-4aaa-bee1-34047a81e44f",
+      "result_id": "27fcb3f1-ba02-4be1-bade-a40e4de5115e"
+    },
+    {
+      "claim_id": "13c7d1c4-d8c0-4d93-bd59-e895c057ae83",
+      "result_id": "27fcb3f1-ba02-4be1-bade-a40e4de5115e"
+    },
+    {
+      "claim_id": "159054cd-77ce-4df4-9252-1191f5e2576a",
+      "result_id": "27fcb3f1-ba02-4be1-bade-a40e4de5115e"
+    },
+    {
+      "claim_id": "60aef991-195e-4910-b58c-f80795516bbb",
+      "result_id": "6ef458ab-4327-4d03-b081-1a0f7471185a"
+    },
+    {
+      "claim_id": "4f5f6b25-bc7c-4bff-adae-343da52325c3",
+      "result_id": "b7edb67a-ac1b-4c55-b0c9-bc003ecdbaf6"
+    },
+    {
+      "claim_id": "4640970d-822e-4e2f-8b28-7f621f24c9ca",
+      "result_id": "b7edb67a-ac1b-4c55-b0c9-bc003ecdbaf6"
+    },
+    {
+      "claim_id": "586ff507-cee0-4021-9233-049d9167f33e",
+      "result_id": "b7edb67a-ac1b-4c55-b0c9-bc003ecdbaf6"
+    },
+    {
+      "claim_id": "106c823b-ab5c-45e8-a929-3a8fe91e2e32",
+      "result_id": "b7edb67a-ac1b-4c55-b0c9-bc003ecdbaf6"
+    },
+    {
+      "claim_id": "6320020b-64e6-4b3e-97ef-10627534ff3d",
+      "result_id": "b7edb67a-ac1b-4c55-b0c9-bc003ecdbaf6"
+    },
+    {
+      "claim_id": "06c88cfc-ccea-4d74-81ce-5ce608009792",
+      "result_id": "b7edb67a-ac1b-4c55-b0c9-bc003ecdbaf6"
+    },
+    {
+      "claim_id": "5e2a9036-c6ca-4c27-abc1-614fb1f258d0",
+      "result_id": "0624c148-12ae-4966-af45-8c238f50cb11"
+    },
+    {
+      "claim_id": "282841bc-78fa-4185-9eab-6e933ccfd343",
+      "result_id": "0624c148-12ae-4966-af45-8c238f50cb11"
+    }
+  ],
+  "comparisons": []
+}

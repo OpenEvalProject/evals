@@ -1,0 +1,1587 @@
+{
+  "submission": {
+    "id": "001eadc6-a02f-4deb-a1aa-7a5733f35fe8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:44:21.682375Z",
+    "updated_at": "2025-12-01T22:44:21.682375Z"
+  },
+  "content": [
+    {
+      "id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "submission_id": "001eadc6-a02f-4deb-a1aa-7a5733f35fe8",
+      "content_type": "manuscript",
+      "content_text": "# Cell-accurate optical mapping across the entire developing heart\n\n## Authors\n\n- Michael Weber<sup>1</sup> ([ORCID: 0000-0001-8007-9975](https://orcid.org/0000-0001-8007-9975))\n- Nico Scherf<sup>1</sup>\n- Alexander M Meyer<sup>4</sup>\n- Daniela Pan\u00e1kov\u00e1<sup>4</sup> ([ORCID: 0000-0002-8739-6225](https://orcid.org/0000-0002-8739-6225))\n- Peter Kohl<sup>6</sup>\n- Jan Huisken<sup>1</sup> ([ORCID: 0000-0001-7250-3756](https://orcid.org/0000-0001-7250-3756)) \u2020\n\n### Affiliations\n\n1. Max Planck Institute of Molecular Cell Biology and Genetics Dresden Germany\n2. Harvard Medical School Boston United States\n3. Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany\n4. Max-Delbr\u00fcck-Center for Molecular Medicine in the Helmholtz Association Berlin Germany\n5. DZHK (German Centre for Cardiovascular Research) partner site Berlin Germany\n6. Institute for Experimental Cardiovascular Medicine University Heart Centre Freiburg - Bad Krozingen, Faculty of Medicine, Albert-Ludwigs University Freiburg Germany\n7. Morgridge Institute for Research Madison United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nOrganogenesis depends on orchestrated interactions between individual cells and morphogenetically relevant cues at the tissue level. This is true for the heart, whose function critically relies on well-ordered communication between neighboring cells, which is established and fine-tuned during embryonic development. For an integrated understanding of the development of structure and function, we need to move from isolated snap-shot observations of either microscopic or macroscopic parameters to simultaneous and, ideally continuous, cell-to-organ scale imaging. We introduce cell-accurate three-dimensional Ca2+-mapping of all cells in the entire electro-mechanically uncoupled heart during the looping stage of live embryonic zebrafish, using high-speed light sheet microscopy and tailored image processing and analysis. We show how myocardial region-specific heterogeneity in cell function emerges during early development and how structural patterning goes hand-in-hand with functional maturation of the entire heart. Our method opens the way to systematic, scale-bridging, in vivo studies of vertebrate organogenesis by cell-accurate structure-function mapping across entire organs.\n\n## Introduction\n\nOrganogenesis builds on cell\u2013cell interactions that shape tissue properties, and tissue-level cues that control maturation of cell structure and function. During cardiogenesis, region-specific heterogeneity in cellular activity patterns evolves as the heart undergoes large-scale morphological changes: The spontaneously active heart tube develops into the mature heart, in which pacemaker cells near the inflow site initiate the rhythmic excitation that spreads with differential velocities through distinct regions of the myocardium. This controlled cardiac activation gives rise to an orderly sequence of atrial and ventricular calcium release and contraction. An integrated understanding of cardiogenesis at the systems level requires simultaneous cell and organ scale imaging, under physiological conditions in vivo. Here, we present a high-speed light sheet microscopy and data analysis pipeline to measure fluorescent reporters of cardiomyocyte location and activity across the entire electro-mechanically uncoupled heart in living zebrafish embryos during the crucial looping period from 36 to 52 hr post fertilization (hpf). By noninvasively reconstructing the maturation process of the myocardium in its entirety at cellular resolution, our approach offers an integrative perspective on tissue and cell levels simultaneously, which has previously required separate experimental setups and specimens. Our method opens a new way towards systematic assessment of the mutual interrelations between cell- and tissue properties during organogenesis.\n\n## Results\n\nThe zebrafish is an appealing vertebrate model system with a simple, yet functionally conserved heart. Light sheet microscopy has proven to be supremely suited for obtaining in vivo recordings of the intact embryonic zebrafish heart (Chi et al., 2008; Scherz et al., 2008; Arnaout et al., 2007; Trivedi et al., 2015). Whole cardiac cycles have been reconstructed in 4D (3D\u00a0+\u00a0time) using post-acquisition synchronization of high-speed light sheet movies in a z-stack. The resulting effective temporal resolution of about 400 volumes per second (Mickoleit et al., 2014) is unmatched by other in vivo volumetric imaging techniques such as light sheet microscopy with electrically focus-tunable lenses or swept, confocally-aligned planar excitation (Bouchard et al., 2015; Fahrbach et al., 2013; Hou et al., 2014; Liebling et al., 2005). We built a light sheet microscope tailored for high-speed imaging of the heart in the living zebrafish embryo. By fine-tuning the magnification and restricting camera readout to the center area of the chip, we balanced the field of view and the spatial and temporal sampling to record cardiac activation in the entire heart with cellular precision (Materials\u00a0and\u00a0methods).\n\nWe investigated whether post-acquisition synchronization could be extended to visualizing calcium transients in cardiac myocytes across the entire heart of living embryonic zebrafish expressing the fluorescent calcium reporter GCaMP5G under the myl7 promoter (Figure 1a, Figure 1\u2014figure supplement 1). The genetically expressed calcium reporter provides a specific, consistent and non-invasive readout of cardiomyocyte activity in vivo (Figure 1b, Videos 1 and 2). In a side-by-side comparison, the calcium signal had good and stable fluorescent yield at low excitation power, superior to genetically expressed voltage reporters. Importantly, the calcium signal faithfully reports presence and timing of cell activation (Figure 1\u2014figure supplement 2)\u00a0(Kralj et al., 2011). To prevent interference of tissue movement and deformation with observed signals, we decoupled electrical excitation and mechanical contraction by inhibiting the formation of the calcium-sensitive regulatory complex within sarcomeres, using a morpholino against tnnt2a (Materials and methods). By mounting zebrafish embryos in low concentration agarose inside polymer tubes, we could position the embryos for precise optical investigation without anesthesia (Figure 1\u2014figure supplement 1a,b). To attribute calcium dynamics to individual cardiomyocytes, we also recorded a fluorescent nuclear marker (myl7:H2A-mCherry). The high temporal (400 Hz) and spatial sampling (0.5 \u00b5m pixel size) was adequate for computing normalized average calcium transients throughout the cardiac cycle for each cell across the entire heart (Figure 1\u2014figure supplement 3, Video 3, Materials\u00a0and\u00a0methods).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/28307/elife-28307-fig1-v1.jpg)\n\n**Figure 1.:** (a) Transmitted light microscopy image with\u00a0~250 \u00b5m-sized, two-chambered heart (shown as fluorescence image with light sheet illumination path). (b) Genetically encoded fluorescent markers expressed in myocardial cells report calcium transient activity and cell positions. Volumetric movies were reconstructed from multiple high-speed movies, each with a temporal resolution of 2.5 ms and a voxel size of 0.5 \u00b5m in xy and 1 \u00b5m in z. Image data are available at Weber et al. (2017). (c\u2019) Normalized fluorescence plot of every cell\u2019s calcium transient over one cardiac cycle. The network\u2019s activation timing (tact) is visualized in 3D based on the time-point of 10% calcium transient amplitude in every individual cell (right, same color scale). (c\u2019\u2019) Normalized fluorescence plot of all calcium transients, aligned in time based on the timing of deviation from minimal fluorescence intensity (3D network, same color scale). (d) Biological conduction speed, expressed as cells activated per unit of time, is visualized on the 3D network. (e) The basis vectors of the local coordinate system (tangent \u2013 black, normal \u2013 grey, and binormal \u2013 blue) are shown, moving along the centerline. The initial and final orientation of the moving reference frame is shown in a zoomed version at inflow and outflow sites. Outer curvature regions of atrium and ventricle are highlighted in green. (f) The unrolled cylinder results in a representation of 3D network function in a 2D map. Projections show conduction speed across the entire myocardium; iso-velocity lines (\u0394v\u00a0=\u00a050 cells/s) are shown in black. Outer curvature regions in atrium and ventricle are highlighted in green.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28307/elife-28307-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) A zebrafish embryo is mounted in agarose inside a fluorinated ethylene propylene (FEP) tube. (B) Section view of the sample holder with mounted zebrafish embryo placed inside the medium-filled sample chamber. The embryo is placed in the field of view of the detection objective and illuminated with a static light sheet from one of two sides. (C) Top view of the high-speed light sheet microscope for in vivo cardiac imaging. The laser module combines a 488 and a 561 nm laser line and sends the beam into the two illumination arms. Both arms generate identical light sheets from two opposite sides. The motor unit positions the sample holder with the mounted zebrafish embryo at the intersection of illumination and detection path. Fluorescence emission is split and recorded with an sCMOS camera running at up to 400 Hz.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/28307/elife-28307-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Optical section across the atrium of a zebrafish embryo at 52 hpf expressing GCaMP5G and Arch(D95N) in cardiomyocytes. Both channels are recorded simultaneously. Smaller images: raw data recorded at the\u00a0lowest (I) and highest (II) fluorescence signal, as indicated in the intensity plots. Note how intensity plots illustrate the known slight delay between intensity maxima of calcium versus voltage traces, and the overall excellent capture by both reporters of presence and temporal dynamics of cell activation. Larger images: results of image I subtracted from image II, presenting the maximum intensity difference (image brightness adjusted independently for better visibility). Plots show mean raw intensities over time measured along the myocardium visible in the images. (b) Laser powers in the field of view (measured at the back pupil of the illumination objective) used for the experiment presented in (a) and their impact on the heart rate (n\u00a0=\u00a03 zebrafish embryos). Arch(D95N) required 10x more laser power than GCaMP5G, yielded a very low signal with about 20 gray levels dynamic range across one cardiac cycle, and was affected by bleaching. Zebrafish embryos showed increased heart rate when illuminated with the high laser power needed for Arch(D95N) imaging. GCaMP5G showed a dynamic range of about 300 gray levels at an order of magnitude lower laser power, with no signs of visible photobleaching or illumination-induced increase in heart rate.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/28307/elife-28307-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Optical sections across the silenced heart of a 2 days post fertilization (dpf) zebrafish embryo expressing GCaMP5G and H2A-mCherry in cardiomyocytes, recorded at 50 to 3200 Hz (exposure times 20 to 0.3 ms) with a constant pixel size of (0.5 \u00b5m)2. Raw image data of H2A-mCherry are shown to mark cell positions. Red markers indicate location of peak fluorescence intensities across a single cardiac cycle. Gray areas in 800 Hz and 3200 Hz images indicate the proportion of the field of view that could not be recorded, as the number of lines imaged is the speed-limiting factor on the sCMOS camera. Plots show normalized fluorescence intensity over time, measured in a sub region with GCaMP5G signal. Circles show data points from the measurement at 50 Hz as reference. Higher recording speed results in a better representation of the calcium transient until 400\u2013800 Hz, especially during the initial rise in intensity. At an even higher rate of 3200 Hz, noise deteriorates the signal. Peak intensities could be traced with cellular precision at 400 and 800 Hz, before signal noise reduced precision.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/28307/elife-28307-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (a) The centerline is traced in 3D from inflow (blue) to outflow (red), providing the base for a canonical ordering of the cells. Color code indicates position of cell along midline. (b) Populations of cells with different rise times can be distinguished close to the inflow tract, in the atrium and in the ventricle (indicated by different linear fits), with a pronounced discontinuity in the atrio-ventricular canal (AVC). Color code indicates position of cell along midline. (c) Distribution of biological conduction speeds across the heart, from inflow (blue circle) to outflow (red disk), mean and standard deviation. The inset shows the mean conduction speed for three different hearts at 52 hpf.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/28307/elife-28307-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (a) Cell positions are indicated by points at the optically identified location of their nucleus in 3D. Potential neighbors for each cell are identified by taking nearest neighbors with respect to their Euclidean distance in 3D. A sample cell is highlighted in blue and the respective nearest neighbors by large gray dots. (b) The centroids are locally projected into a 2D plane and the Delaunay triangulation (gray and blue lines) is computed to extract the topological connectivity between cells. Edges connecting the reference cell with its neighbors in the 2D projection are highlighted in blue. (c) The connections between the reference cell and its neighbors (blue) are projected back into the original 3D space. Iterating this procedure for all cells yields the final topology (gray edges).\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/28307/elife-28307-fig1-figsupp6-v1.jpg)\n\n**Figure 1\u2014figure supplement 6.:** (a) Biophysical conduction speed, expressed in \u03bcm/ms, is visualized on the 3D network. (b) Visualization of biological conduction speed, expressed as cells activated per unit of time (ms) on the same topology as (a). (c, d) Projection show biophysical (c) and biological (d) conduction speed across the entire myocardium. Same color code as in (a, b). (e, f) Descriptive statistics of conduction speeds in (manually defined) regions corresponding to atrial (blue), AVC (gray), and ventricular part (orange) of myocardium for biophysical (e) and biological (f) conduction speed. (g) Scatterplot showing chamber-specific differences in correlation of biological (x-axis) vs. biophysical (y-axis) conduction speed for atrial (blue), AVC (gray) and ventricular (orange) cells.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/28307/elife-28307-fig1-figsupp7-v1.jpg)\n\n**Figure 1\u2014figure supplement 7.:** (a, b) Pacemaker cells (shown as colored disks), are located in a ring-like region at the atrial inflow region, shown in front (a) and bottom view (b).\n\n![Figure 1\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/28307/elife-28307-fig1-figsupp8-v1.jpg)\n\n**Figure 1\u2014figure supplement 8.:** Maximum intensity projections of point-scanning confocal and two-photon microscopy z-stacks recorded from a transgenic zebrafish embryo expressing myl7:H2A-mCherry and myl7:lck-EGFP in the myocardium. Scale bars: 50 \u00b5m. (a) Positions of myocardial nuclei (myl7:H2A-mCherry) across the heart. (b) Myocardial cell membranes (myl7:lck-EGFP). (c) Color overlay of cell membranes (cyan) and nuclei (red). (c1-3) Detailed view (rotated by \u221215 degrees about x\u2013axis) of the cell morphologies in inflow, inner curvature and outer curvature regions of the atrium, as indicated in panel (c).\n\n![Figure 1\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/28307/elife-28307-fig1-figsupp9-v1.jpg)\n\n**Figure 1\u2014figure supplement 9.:** Global distribution of cellular activation times shown as 2D projections, illustrate planar activation in spite of increasingly complex chamber morphology and heterogeneity in individual cell properties. Isochronal lines shown in black (\u0394t\u00a0=\u00a020 ms).\n\n![Video 1.](https://cdn.elifesciences.org/articles/28307/elife-28307-video1.mp4.jpg)\n\n**Video 1.:** Fluorescence signal recorded at 400 Hz at three different depths (50, 90 and 140 \u03bcm along the optical axis) in the heart of a living Tg(myl7:GCaMP5G) zebrafish at 52 hpf using the described imaging setup.\n\n![Video 2.](https://cdn.elifesciences.org/articles/28307/elife-28307-video2.mp4.jpg)\n\n**Video 2.:** Raw data from Video 1 after completed post-acquisition synchronization.\n\n![Video 3.](https://cdn.elifesciences.org/articles/28307/elife-28307-video3.mp4.jpg)\n\n**Video 3.:** (1)\u00a04D\u00a0reconstruction of calcium activation from the synchronized planar movies recorded in the heart of a living Tg(myl7:GCaMP5G) zebrafish embryo at 52 hpf. The number of slices used in the reconstruction is indicated by n. Raw GCaMP5G signal is shown in orange. Time is indicated in ms. (2)\u00a0Cell detection: The raw fluorescence signal of myl7:H2A-mCherry is overlaid with the centroids of detected nuclei. (3)\u00a0Calcium mapping: The raw myl7:GCaMP5G signal is shown. The dots indicate the extracted cellular positions. (4)\u00a0Cell-specific transients: The normalized GCaMP5G transients are shown for two sample cells (one atrial and one ventricular cell).\n\nTo map cellular activation timings onto a 3D structural representation of the heart, we identified every single cell\u2019s activity (Figure 1c\u2019) and quantified dynamic characteristics of all cardiac myocytes across space and time. The distribution of calcium transient rise times (from 10% to 90% of calcium transient peak amplitude) revealed the emergence of distinct upstroke characteristics in different locations within the 3D network (by 52 hpf). Rise times were shortest for atrial muscle cells, intermediate in the atrio-ventricular canal (AVC), and longest for ventricular cardiomyoctes (Figure 1c\u2019\u2019), in keeping with higher vertebrates where atrial myocyte contraction is faster than that of ventricular cells (Brandenburg et al., 2016).\n\nTo get a more quantitative understanding of the 3D distribution of activity patterns, a canonical description of cell locations was needed. We traced and parameterized the myocardium\u2019s centerline (Figure 1\u2014figure supplement 4a, Materials and methods), along which we assigned a unique position to each cell between inflow and outflow. We identified a positive correlation between rise time and position of cells along the midline, with a clear discontinuity at the AVC (Figure 1\u2014figure supplement 4b), illustrating emergence of chamber-specific patterns of individual cell activation properties across the heart.\n\nNext, we studied the spatial patterns of sequential cell activation, as a read-out for the speed of electrical conduction across the heart. While cardiac activation in the early linear heart tube is slow and near-uniform, the chambered heart shows areas of elevated conduction velocity (Dehaan, 1961; de Jong et al., 1992; Moorman et al., 1998; Chi et al., 2008; Pan\u00e1kov\u00e1 et al., 2010). Common imaging-based methods for determining cell conduction speed tend to deliver only a metric, or \u2018biophysical speed\u2019 of conduction (distance over time). To reflect biological progression of activation between cells (of potentially different or \u2013 in contracting tissue \u2013 dynamically changing size), we assessed local cell topology across the entire heart (Figure 1d, Figure 1\u2014figure supplement 5, Materials and methods) to also calculate the \u2018biological speed\u2019 (number of activated\u00a0cells over time) of conduction (Video 4). Our analysis revealed that biophysical and biological conduction velocities show differences between and within anatomical regions of the heart (Figure 1\u2014figure supplement 6). Either descriptor identifies particularly slow conduction between the most proximal atrial cells and between the cells of the AVC, while faster conduction is seen among working myocardial cells of the atrium and ventricle. In the atrium, there is a bias towards higher biophysical speeds, due to larger cell dimensions (Figure 1d, Figure 1\u2014figure supplement 4c).\n\n![Video 4.](https://cdn.elifesciences.org/articles/28307/elife-28307-video4.mp4.jpg)\n\n**Video 4.:** (1)\u00a0Activation timing: Cell positions are indicated by gray dots. Activated cells are highlighted in yellow. Time is shown in ms. (2)\u00a0Network reconstruction: Estimated local topology is shown as gray edges connecting neighboring cells. (3)\u00a0Activation across network: Activated cells in the network are highlighted in yellow. (4)\u00a0Cell\u2013cell conduction speed: The average conduction speed is shown for each cell after activation of its neighbors in the network. Color code indicates conduction speed (red - high, blue - low).\n\nThe activation sequence in the pacemaker region is of particular importance to heart physiology and function, yet individual cells that give rise to earliest activation were difficult to identify with previous methods (Van Mierop, 1967; Arrenberg et al., 2010; Christoffels et al., 2010; Tessadori et al., 2012). We found that, at 52 hpf, less than 10 cells per heart serve as activation origins. They are located in the sinus venosus at the heart\u2019s inflow side, which is a homologue of the primary cardiac pacemaker region in adult heart (Poon and Brand, 2013). Our data further show that the ring-like arrangement of pacemaker cells (Figure 1\u2014figure supplement 7), together with a preferential orientation of myocardial cells in that region perpendicular to the inflow-outflow direction (Auman et al., 2007) (Figure 1\u2014figure supplement 8), generates the initial planar \u2018ring-like\u2019 activation front that propagates evenly into the atrium.\n\nTo visualize the 3D conduction pattern, the heart can be represented as a curved cylinder with varying diameter and s-shaped deformations in the coronal and in the sagittal plane. We used the position along the midline (\u03c4) and the local Frenet-Serret frame as intrinsic coordinates (\u0278, z) (Figure 1e and Video 5, Materials and methods). Interestingly, by following the orientation of this reference system along the midline, we noticed torsion associated with the cardiac looping, which is most pronounced around the AVC (M\u00e4nner, 2000; Christoffels et al., 2000; Harvey, 2002). Establishing the intrinsic coordinates of the curved cylinder allows straightening and untwisting by implicitly removing the morphological torsion. Neglecting the actual distance to the midline and plotting the position along the midline (\u03c4) against the angle (\u0278), we obtained a 2D projection (Figure 1e,f and Video 5, Materials\u00a0and\u00a0methods), in which the two outer curvature regions of atrium and ventricle are located side-by-side. A clear asymmetry in conduction speeds between cells at the inner and the outer curvatures was apparent in this representation (Figure 1f). Irrespective of these differences, however, the activation wave travelled smoothly in a ring-like fashion along the heart, as indicated by the isochronal lines in the cylindrical projection (Figure 1\u2014figure supplement 9).\n\n![Video 5.](https://cdn.elifesciences.org/articles/28307/elife-28307-video5.mp4.jpg)\n\n**Video 5.:** (1)\u00a0Tracing of midline: The black line traces the center of the myocardium from inflow to outflow. Cellular positions are shown as gray spheres. (2)\u00a0Moving reference frame: The intrinsic reference frame is shown along the extracted midline. The three axes represent the tangent (black), normal (gray), and binormal (blue) vectors. The trace of the binormal vector is shown as blue band behind the moving trihedron. (3)\u00a0Untwisting: The heart is successively untwisted by reducing the torsion of the midline to 0. The gray lines indicate traces of cells during this process. (4)\u00a0Straightening: The heart is straightened by reducing the remaining curvature of the midline to 0. (5)\u00a0Projection to cylinder. Each cell is projected to the same radial distance from the straightened midline resulting in a cylindrical reference system. (6)\u00a0Unrolling: The cylinder is unfolded into the 2D plane, resulting in the 2D plots used in the main text. Color code in the final frame indicates biological conduction speed.\n\nIn order to document how heterogeneity in cardiac function arises during cardiac looping, we extended our 3D optical mapping towards earlier developmental stages. During the crucial period between 36 and 52 hpf, ventricular cell number increased by about 45%, the initial heart tube developed into a two-chambered organ, the midline of the heart became increasingly curved and twisted (Figure 2\u2014figure supplement 1), and the activation frequency increased \u2013 all signs of organ maturation. In spite of a net increase in cell numbers, the time required for activation to propagate from inflow to outflow decreased. A progressive crowding of calcium transient activation dynamics indicated maturation of cells, with two groups differentiating from the early more homogeneous pattern: working cardiomyocytes in atrium and ventricle (Figure 2a\u2013f). At 36 hpf, activation propagated evenly across the myocardium, compatible with peristalsis. Subsequently, calcium dynamics became increasingly structured. By 52 hpf, propagation of activation was fast across atrium and ventricle, while it remained slow in the AVC (Figure 2\u2014figure supplement 2a). With organ maturation during these 16 hr, cells in the ventricular part of the network showed longer calcium transient rise time (Figure 2\u2014figure supplement 2b) but faster inter-cellular spread of activation (Figure 2g\u2013l, Figure 2\u2014figure supplement 2c). Conduction also changed within chambers, such as along the outer curvature in the atrium. Increasing deformation and twisting of the cardiac tissue was associated with changes in cell shape (cf. Figure 2d\u2013f) and in conduction (Figure 2\u2014figure supplement 3).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/28307/elife-28307-fig2-v1.jpg)\n\n**Figure 2.:** (a\u2013c) Normalized calcium transients of all cells are shown at three different time-points: (a) 36, (b) 44, and (c) 52 hpf. The shortening of black arrows indicates the decrease in time between earliest and latest activation of cells along the whole heart. The gradual formation of atrial (1) and ventricular (2) populations with increasingly different calcium transients is highlighted by the dashed lines at 52 hpf. The color of each transient indicates its activation time (all three plots use the same color scale). (d\u2013f) Changes in cardiac and cellular morphology at each developmental time point. Estimated cell shapes are visualized as scaled ellipsoids. The color of each ellipsoid indicates activation time (relative to the first-activated cell); color code as in (a\u2013c). Two main populations of cells corresponding to highlighted clusters in (c) are indicated by numbers. (g\u2013i) 3D pattern of biological conduction speeds across the heart. The formation of outer curvature clusters of cells over time is highlighted by arrows. (j\u2013l) Development of conduction speeds across the myocardium, shown as 2D projections for the three time points. The color code indicates conduction speed. Isovelocity lines are shown in black (\u0394v\u00a0=\u00a050 cells/s). Corresponding outer curve cell populations are highlighted by arrows.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28307/elife-28307-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) One and the same developing heart, imaged at three different time-points (36 (a), 44 (b), and 52 hpf (c), scale bar 50 \u03bcm. The fitted centerline visualizes the re-shaping of the myocardium during the ongoing looping/twisting process in early cardiac development. Local coordinate systems are shown along the midline (tangent \u2013 black, normal \u2013 grey, binormal \u2013 color), the twisting point is highlighted by an arrow. Total and chamber-specific cell numbers are indicated for each stage of development (A - atrial cells, V - ventricular cells).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/28307/elife-28307-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) The distribution of activation times is shown for three time points: 36, 44 and 52 hpf. Dots indicate individual cell activation times. Smooth regression profiles are depicted as solid lines and show faster activation with progressive organogenesis. (b) The distribution of rise times during development. The probability density function of each developmental stage is shown by a smooth kernel density. The ordinate axis shows cell numbers and illustrates progressive emergence of cell sub-populations with different calcium transient properties. (c) The distribution of each cell\u2019s conduction speed along the midline is shown as dots. Solid lines indicate smooth regression profiles for each stage. All hearts were normalized to a standard length, showing how speed of biological conduction in working myocardium rises by comparison with early developmental stages, whereas AVC conduction velocity is unchanged.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/28307/elife-28307-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Cell shapes in the atrium are represented by scaled ellipsoids for the same heart at 36 hpf (a), 44 hpf (b), and 52 hpf (c). Ventricular cells are shown with reduced opacity. (d, e, f) The same cells as in (a, b, c) with additional color code indicating cell size. Smaller cells are shown in blue, larger cells in red, highlighting the increase in cell size, in particular along the larger curvature of the atrium. Changes in cell size shown as 2D projections for 36 (g), 44 (h), and 52 hpf (i). The color code indicates normalized cell size as in (d, e, f). Isosize lines shown in black (\u0394A\u00a0=\u00a00.1).\n\n## Discussion\n\nBy noninvasively reconstructing the maturation process of the myocardium in its entirety at cellular resolution, our approach offers an integrative perspective on tissue and cell levels simultaneously. We show functional maturation in line with structural patterning of the heart muscle during development: starting from similar initial states, functionally distinct characteristics of calcium transients and conduction properties develop with a highly reproducible pattern relative to the cell locations (cf. Figure 1\u2014figure supplement 8). Myocardial cells in the two chambers remodel and specialize into functional tissue of working atrial and ventricular cardiomyocytes, while cells in the pacemaker and AVC regions continue to resemble the earlier phenotype from the tubular stage.\n\nWe demonstrate that myocardial activity can be recorded and analyzed with cellular detail across the entire embryonic heart. Future technological advancements can extend the scope of our approach: First, genetically expressed voltage reporters with improved dynamic range may provide a direct readout of myocardial electrical activity. Second, cameras with higher speed and sensitivity would enhance the recording frequency of rapid volume scanning, needed to explore aberrant myocardial activation during arrhythmias. Third, the integration of an algorithm capable of tracking cells in 3D during cardiac contractions would allow investigations in fully functional hearts. Fourth, the addition of optically gated actuators, such as light-activated ion channels or photo-pharmacological probes, would enable contact-free stimulation to probe the roles of individual cells or groups of cells in pacemaking, conduction, and arrhythmogenesis.\n\nOur work further highlights the value of the zebrafish as a vertebrate model system for in vivo cardiology, especially when combined with high-speed light sheet microscopy and suitable data analysis pipelines. It opens the way to systematic, scale-bridging, in vivo studies of organogenesis by facilitating cell-accurate measurements across entire organs.\n\n## Materials and methods\n\n### Fish husbandry and lines\n\nZebrafish (Danio rerio) were kept at 28.5\u00b0C and handled according to established protocols (Nusslein-Volhard and Dahm, 2002) and in accordance with EU directive 2011/63/EU as well as the German Animal Welfare Act. Transgenic zebrafish lines Tg(myl7:GCaMP5G-Arch(D95N))\u00a0(Hou et al., 2014), Tg(myl7:H2A-mCherry)\u00a0(Schumacher et al., 2013) and Tg(myl7:lck-EGFP)md71 were used. The lck sequence was PCR amplified from pN1-Lck-GCaMP3 (Addgene, #26974) with In-Fusion primers 5\u2019-GCAAAAGATCTGCCACCATGGGCTGTGGCTGC-3\u2019 (forward) and 5\u2019-GCAAAGGGCCCCGAGATCCTTATCGTCATCGT-3\u2019 (reverse) designed with http://bioinfo.clontech.com/infusion/convertPcrPrimersInit.do and cloned into pEGFP-N1 (Clontech, #6085\u20131). PCR product generated from attB-flanked BP primers 5\u2019-GGGGACAAGTTTGTACAAAAAAGCAGGCTGGATGGGCTGTGGCTGCAGCTCAAACC-3\u2019 (forward) and 5\u2019-GGGGACCACTTTGTACAAGAAAGCTGGGTCTTACTTGTACAGCTCGTCCATGCCGAG-3\u2019 (reverse) was BP Clonase II cloned into Gateway pDONR221 (ThermoFisher Scientific, #12536017) to generate the middle entry clone that was further assembled with p5E_myl7, p3E_SV40polyA (Tol2kit #302), and pDEST.Cryst.YFP76 (Mosimann et al., 2015) into Tol2 transgene plasmid using MultiSite Gateway assembly. See supplementary files for detailed digital plasmid maps of these vectors. To generate Tg(myl7:lck-EGFP)md71 Tol2-mediated zebrafish transgenesis was performed by injecting 25 ng/ml transgene plasmid together with 25 ng/ml capped Tol2 transposase mRNA, followed by subsequent screening of positive F0 founders. During the 1 cell stage, embryos were injected with morpholinos against tnnt2a to uncouple electrical and mechanical activity (Sehnert et al., 2002).\n\n### Sample preparation for light sheet microscopy\n\nBefore imaging, fluorescent embryos were selected for absence of cardiac malformations and contractions, using an Olympus stereomicroscope equipped with an LED for transmitted light microscopy and a metal-halide light source and filter sets that match the excitation and emission spectra of GCaMP5G and mCherry for fluorescence excitation. Embryos were mounted in either 0.1 or 1.5% low gelling temperature agarose (Sigma A9414) inside cleaned polymer tubes (FEP tubing, inner/outer diameter 0.8/1.6 mm, BOLA S1815-04).\n\n### Light sheet microscopy\n\nWe built a light sheet microscope for in vivo cardiac imaging in zebrafish embryos, based on a previously published design (Mickoleit et al., 2014). Imaging was performed in live zebrafish embryos between 36 and 52 hr post-fertilization (hpf) at a temperature of 24\u00b0C. Heart rate at this temperature is 2 Hz, about 0.5 Hz lower than at the temperature recommended for breeding of 28.5\u00b0C (Baker et al., 1997; Kopp et al., 2005). Embryos were kept in a custom imaging chamber filled with E3 fish medium and illuminated with a static light sheet generated from Coherent Sapphire LP lasers (488 and 561 nm) using a cylindrical lens and a Zeiss 10x/0.2 air illumination objective. Laser power was kept at or below 2 mW in the field of view (measured at the back aperture of the illumination objective) to exclude thermal effects on heart rate (an increase in heart rate was detected at laser powers of 5 mW and above). Fluorescence was collected and recorded using a Zeiss W Plan-Apochromat 20x/1.0 objective, a Zeiss 0.63x camera adapter, a Hamamatsu W-View image splitter and a Hamamatsu Flash 4.0 v2 sCMOS camera. Embryos were held in place by a Zeiss Lightsheet Z.1 sample holder and oriented using motorized translation and rotation stages (Physik Instrumente GmbH, Karlsruhe, Germany). For imaging of GCaMP5G, a z-stack of movies covering the entire heart was recorded by moving each embryo through the light sheet (488 nm excitation, band-pass 525/50 nm emission filter, 2.5 ms exposure time\u00a0=\u00a0400 Hz, 600 frames\u00a0=\u00a01.5 s/movie, 1 \u00b5m z-steps). To ensure an efficient recording and the best possible synchronization (see below), the embryo was rotated by about 30 degrees, such that both atrium and ventricle were visible in the imaging plane for the majority of the z-stack. For imaging of H2A-mCherry, a matching z-stack was recorded immediately afterwards (561 nm excitation, long-pass 565 nm emission filter, 20 ms exposure time\u00a0=\u00a050 Hz, 1 \u00b5m z-steps). Image acquisition was controlled by a custom program written in LabView (National Instruments). Images were streamed onto a RAID-0 array of four 512 GB solid-state drives.\n\n### Data analysis\n\n#### Synchronization of z-stacks of movies\n\nThe recorded z-stacks of movies were synchronized in time starting at the middle plane and iterating in two independent threads towards first and last plane, respectively. A full cardiac cycle was selected randomly in the middle plane, and Pearson\u2019s correlation coefficients were calculated for every cycle in the adjacent plane. The cycle with the highest correlation was selected as the best fit. As demonstrated before, the presence of both atrial and ventricular myocardium in the majority of planes minimized the risk of false synchronization (Mickoleit et al., 2014).\n\n#### Visualization of synchronized movies\n\nThe synchronized movies were visualized (Video 2) using custom scripts (Scherf, 2017) for Mathematica 11.1 (Wolfram Research Inc., Champaign, Illinois). The raw calcium signal stacks for each time point were normalized and visualized in 3D using direct volume rendering of the resulting intensities. The 3D volume visualizations were then projected to 2D using a standard perspective transform from a defined viewpoint. Animations were created by a smooth interpolation between different viewpoints.\n\n#### Segmentation of cell nuclei\n\nVolumes of cell nuclei were extracted from the H2A channel of the raw image volumes using grayscale blob detection (Lindeberg, 1998). To resolve potential errors in automated processing (false detection, missing cells), cell positions were manually curated using an in-house software\u00a0(Scherf, 2017) facilitating evaluation, addition and deletion of nuclear positions in the 3D data sets. Curated nuclei positions were used for further processing.\n\n#### Signal extraction and processing\n\nFrom the measured nuclear positions, a reference volume was extracted for each cell by computing the Euclidean distance transform and thresholding the distance field around each centroid (nucleus) at a radius of 5 voxels. For each thus identified \u2018cell volume\u2019, a calcium transient was extracted by averaging the signal over all voxel within the reference volume at each time step. The resulting transients were processed using a low pass filter (with a cutoff frequency of 5 Hz) to reduce noise, and finally normalized to the range [0,1].\n\n#### Extraction of midline\n\nThe heart\u2019s midline was manually traced using an in-house software. The user could draw the midline in two different 2D projections (front and top view) by placing discrete points that were connected across the different projections. The final midline was then obtained by a 4th order B-Spline interpolation to facilitate subsequent computation of intrinsic geometric characteristics such as curvature and torsion.\n\n#### Frenet-Serret frame\n\nTo describe each cell\u2019s position within the myocardium, we established a curved cylindrical coordinate system. The position along the midline (\u03c4) was calculated for each cell by finding the closest point on the midline for the respective centroid. The moving coordinate system along the midline was then computed using the Frenet-Serret frame (Kreyszig, 1959), calculating the local tangent ($T\u2192$), normal ($N\u2192$), and binormal ($B\u2192$) vectors:\n\n$$\nT\u2192(t)=\\frac{r\u2192(\\tau)}{|r\u2192(\\tau)|}\n$$\n\n\n\n$$\nN\u2192(t)=\\frac{T'\u2192(\\tau)}{|T\u2192^{'}\\tau|}\n$$\n\n\n\n$$\nB\u2192(t)=T\u2192(\\tau)\\timesN\u2192(\\tau)\n$$\n\nwith $r\u2192(\\tau)\\inR^{3}$ being the actual 3D position vector on the midline parameterized by \u03c4. Then each cell\u2019s position was mapped to this new coordinate system as (\u03c4, \u0278, z), where \u03c4 was the position along the midline (normalized to 0 and 1 after reparameterization), \u0278 the angle with respect to the local binormal vector (in the local N-B plane), and z the radial distance of the centroid from the midline.\n\n#### Cylindrical 2D map projections\n\nTo map cell positions from 3D to 2D, we projected the curved cylindrical coordinates to the first two components $(\\tau,\u0278,z)\u2192(\\tau,\u0278),$discarding the radial distance from the midline. This projection facilitates global visualization of the myocardium, irrespective of its looping stage, in a single flat projection by cutting the cylinder at $\u0278=\\pm\\pi$ and plotting the coordinates in a rectangular coordinate system in the range $\\tau\\in[0,1$] and $\u0278\\in[-\\pi,\\pi$], respectively.\n\n#### Topology reconstruction\n\nThe myocardial topology (local connectivity of cells) was estimated by projecting the 3D centroid positions of each cell and its nearest neighbors locally into the 2D Euclidean plane using Singular Value Decomposition (Bronshtein, 2007) of the 3D centroid positions. In each local 2D projection, the cellular connectivity was estimated by computing the 2D Delaunay triangulation (Delaunay, 1934). The estimated edges $e_{ij}$ between cells and the original 3D centroid positions of each cell $v_{i}$ were used to abstractly represent the myocardium as an undirected graph $G=(V,E)$ where $v_{i}\\inV,e_{ij}\\inE$.\n\n#### Computation of biological conduction speed\n\nAs the spread of activation in cardiac tissue is governed by cell activation and time delay at gap junctions between cells, we used the graph representation to estimate the average local cell-to-cell conduction speed $cs_{i}$in terms of (dimensionless) links traversed per unit of time. Thus, at each cell\u2019s position the (harmonic) mean of the number of traversed edges per time was computed over all paths from the cell to its neighbors:\n\n$cs_{i}=n(\\sumj\\frac{dt(i,j)}{e(i,j)})^{-1}$ for all neighbors j of cell i with dt(i,j) being the temporal difference in activation time and e(i,j) the number of edges between cell i and cell j.\n\n#### Computation of metric conduction speed\n\nFor comparison, the metric conduction speed at each cell\u2019s position, the (harmonic) mean of the distance travelled by the activation per time, were computed over all paths from the cell to its neighbors:\n\n$cs_{i}=n(\\sum_{j}^{}\\frac{dt(i,j)}{d(i,j)})^{-1}$ for all neighbors j of cell i with dt(i,j) being the temporal difference in activation time and d(i,j) the 3D Euclidean distance (along the \u2018surface\u2019 defined by the neighborhood graph) between cell i and cell j.\n\n#### Estimation of cell size and shape\n\nWe further used the graph representation to extract an estimate of a cell\u2019s shape by computing the principal components of the distribution of neighboring nuclei around each cell. Thus, each cell is represented as an ellipsoidal region defined by the eigenvectors $\u03c5_{i}$ and eigenvalues $\\lambda_{i}$ of the local principal value decomposition. Cell shape was then approximated as the fractional anisotropy of each ellipsoidal region:\n\n$\\sqrt{\\frac{3}{2}}\\frac{\\sqrt{(\\lambda_{1}-\\lambda^)^{2}+(\\lambda_{2}-\\lambda^)^{2}+(\\lambda_{3}-\\lambda^)^{2}}}{\\sqrt{\\lambda_{1}^{2}+\\lambda_{2}^{2}+\\lambda_{3}^{2}}}$ , with $\\lambda^$ being the average eigenvalue.\n\nCell size was approximated as the volume $\\frac{4}{3}\\pi\\lambda_{1}\\lambda_{2}\\lambda_{3}$ of each ellipsoid.\n\n#### Pacemaker identification\n\nPacemaker cells were defined as the cells that showed earliest activation (activation time shorter than the 0.05-quantile of overall distribution of activation times) and that conducted slowly (conduction speed slower than the median conduction speed within the cell population). All cells falling within this category were labeled as potential pacemaker cells.\n\n### Sample preparation for confocal and two-photon microscopy\n\nTransgenic zebrafish embryos expressing myl7:H2A-mCherry and myl7:lck-eGFP in the myocardium were screened for absence of cardiac malformations and contractions using an Olympus stereomicroscope at 2 dpf. Selected embryos were mounted in 1.5% low-melting point agarose (Sigma A9414) inside glass capillaries using plungers (Brand 20 \u03bcl Transferpettor caps and piston rod). After a few minutes, mounted embryos were carefully transferred onto a custom 3D-printed sample holder with their heart facing up. Once positioned, they were fixed in place using drops of agarose at both ends of the agarose column. The sample holder was placed in a 52 mm plastic dish and covered with E3 fish medium.\n\n### Confocal and two-photon microscopy\n\nConfocal and two-photon microscopy was performed with an upright Zeiss LSM 780 NLO equipped with a Zeiss W Plan-Apochromat 20x/1.0 objective lens, a Coherent Chameleon multiphoton laser set to 920 nm, a Coherent HeNe 594 nm laser and gallium arsenide phosphide (GaAsP) detectors. The fluorescence reporter myl7:H2A-mCherry was recorded using single-photon excitation at 594 nm, a descanned GaAsP detector and a confocal pinhole set to one airy unit. Two-photon excitation at 920 nm and a non-descanned GaAsP detector were used for the fluorescence reporter myl7:lck-eGFP. The pixel size was 0.148 \u00b5m2 and z-stacks were recorded with a 1 \u00b5m step size. The total acquisition time of one z-stack was about 60 min.\n",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "92591555-a9a3-4ece-ba98-a70381c3ae6b",
+      "submission_id": "001eadc6-a02f-4deb-a1aa-7a5733f35fe8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Deborah Yelon, University of California, San Diego United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.28307.024](https://doi.org/10.7554/eLife.28307.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Cell-accurate optical mapping across the entire developing heart\" for consideration by eLife. Your article has been reviewed by 1 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Didier Stainier as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Hee Cheol Cho (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nUnderstanding the interplay among individual cells during organogenesis can provide fundamental insights into tissue-level morphogenesis during development. The quest for this essential knowledge has been elusive partly due to limitations with imaging instrumentation. In this manuscript, Huisken and colleagues adapt their pioneering technology of high-speed, high-resolution light sheet microscopy to study how conductivity evolves and matures during zebrafish heart development. Specifically, they built a high-speed, dual-color light sheet microscope to image the heart at subcellular resolution, based on a published design called post-acquisition synchronization. They then developed a set of computational tools to analyze calcium activity at cellular resolution. These include a curved cylindrical coordinate system to describe cell position along the midline, a graph-based method to calculate the conduction speed in terms of the number of cells per unit time, and a 2D projection method to display cellular properties across the 3D heart. Finally, they applied these methods to measure the emergence of region-specific activation and conduction between 36 hpf and 44 hpf that accompanies the morphological emergence of three regions of the heart.\n\nThe biological insights revealed are in line with what is known in the developing heart, including the faster Ca2+ rise time in atrial vs. ventricular cardiomyocytes and slower conduction velocities in proximal atrial myocytes and in AVC. These data validate that the temporal and spatial sampling rates were adequate so that the inherent lag between the beginning of biological phenomena and image capture would be irrelevant. Comparison of physical conduction velocity, afforded by this technology, and the routine biological conduction velocity revealed that the larger dimensions of atrial cardiomyocytes gave rise to faster physical conduction velocity. Altogether, this study presented a set of impressively careful technical characterization that will benefit the field. In particular, this manuscript makes a very important contribution by reconstructing the geometry of the heart, and then transforming it to a convenient \"map\" of the cell positions, permitting the neighbor relationships to be more easily seen and analyzed. Moreover, the manuscript is well written with beautiful figures that are well organized, intuitively informative and aesthetically appealing. However, the manuscript has several limitations in its current form (as described below) that should be addressed in a revised version.\n\nEssential revisions:\n\n1) The authors must be clear in their title, Abstract, and elsewhere in the text that these are hearts without excitation-contraction coupling. This is an understandable decision in the experimental design, but this does mean that the normal mechanics of the contractile tissues and the normal forces from the blood flow through the system are absent. It is probably beyond the scope of this paper to perform the study with function intact, but the authors can only argue this if they are clear in the title, Abstract, and text.\n\n2) The authors discuss proudly the performance of the microscope used, and they show lovely data. However, beyond knowing what it is better than, the paper does not really teach the reader what the microscope is. More detail is desirable here.\n\n3) The key steps in re-assembly of the imaging data into the volumetric rendering are underspecified, and more detail is needed.\n\n4) The authors quantify that, strikingly, less than 10 pacemaker cells serve as the origin of electrical activation at 52 hpf. The location of these cells is the sinus venosus at the heart's inflow in a ring-like formation. The authors cite an earlier work which indicate that the myocardial cells in the outer curvature are oriented perpendicular to the inflow-outflow direction. Do the authors suggest that the pacemaker cells exhibit anisotropy at the level of individual cell morphology, linking them in a ring-like manner, and this is paralleled by neighboring atrial myocytes oriented orthogonal to the inflow-outflow line? If so, it may be easier to see this by illustrating the estimated cell shapes of the pacemaker cells as scaled ellipsoids.\n\n5) In terms of the biology presented here, there seem to be some missed opportunities. Could the authors address how the magic transition occurs between 36 hpf and 44 hpf (e.g. gradual and smooth, or sudden appearance with chaotic transition)? Could they address whether heterogeneity exists at the cellular level (aside from the pacemaker) and, if so, whether cellular heterogeneity matters in the transition?\n",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "828cc71b-fa9c-440c-bfc6-373d80d9ee24",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C1",
+      "claim": "The zebrafish is an appealing vertebrate model system with a simple, yet functionally conserved heart.",
+      "claim_type": "EXPLICIT",
+      "source": "The zebrafish is an appealing vertebrate model system with a simple, yet functionally conserved heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about zebrafish as a model organism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "2f4b5643-94b7-4e94-8482-8c00a9b5105a",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C2",
+      "claim": "Light sheet microscopy has proven to be supremely suited for obtaining in vivo recordings of the intact embryonic zebrafish heart.",
+      "claim_type": "EXPLICIT",
+      "source": "Light sheet microscopy has proven to be supremely suited for obtaining in vivo recordings of the intact embryonic zebrafish heart (Chi et al., 2008; Scherz et al., 2008; Arnaout et al., 2007; Trivedi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior work demonstrating this capability.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "7367c7bb-3d3c-4d14-9d54-bf4c0446f878",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C3",
+      "claim": "Whole cardiac cycles have been reconstructed in 4D (3D + time) using post-acquisition synchronization of high-speed light sheet movies in a z-stack.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole cardiac cycles have been reconstructed in 4D (3D + time) using post-acquisition synchronization of high-speed light sheet movies in a z-stack.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological approach that has been previously established.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "12c9fcca-6768-4148-b18d-46b922c74f7f",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C4",
+      "claim": "The effective temporal resolution of post-acquisition synchronized light sheet microscopy is about 400 volumes per second.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting effective temporal resolution of about 400 volumes per second (Mickoleit et al., 2014) is unmatched by other in vivo volumetric imaging techniques such as light sheet microscopy with electrically focus-tunable lenses or swept, confocally-aligned planar excitation (Bouchard et al., 2015; Fahrbach et al., 2013; Hou et al., 2014; Liebling et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mickoleit et al., 2014 and comparison with other cited techniques.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "9a04c20e-161e-4958-adae-561ecda949d9",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C5",
+      "claim": "The temporal resolution of about 400 volumes per second is unmatched by other in vivo volumetric imaging techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting effective temporal resolution of about 400 volumes per second (Mickoleit et al., 2014) is unmatched by other in vivo volumetric imaging techniques such as light sheet microscopy with electrically focus-tunable lenses or swept, confocally-aligned planar excitation (Bouchard et al., 2015; Fahrbach et al., 2013; Hou et al., 2014; Liebling et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparative claim supported by citations to alternative techniques.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "187301d2-78bf-4c6b-bfd7-ee3a70821401",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C6",
+      "claim": "A light sheet microscope was built tailored for high-speed imaging of the heart in the living zebrafish embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "We built a light sheet microscope tailored for high-speed imaging of the heart in the living zebrafish embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental setup performed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "fe0ccbc3-ea18-42e7-b93e-c1c55286c279",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C7",
+      "claim": "The magnification and camera readout were fine-tuned to balance field of view and spatial and temporal sampling to record cardiac activation in the entire heart with cellular precision.",
+      "claim_type": "EXPLICIT",
+      "source": "By fine-tuning the magnification and restricting camera readout to the center area of the chip, we balanced the field of view and the spatial and temporal sampling to record cardiac activation in the entire heart with cellular precision (Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methodological optimization performed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "cb9f0a63-6d6e-448a-b9d7-0977f86e7739",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C8",
+      "claim": "Post-acquisition synchronization can be extended to visualizing calcium transients in cardiac myocytes across the entire heart of living embryonic zebrafish expressing GCaMP5G.",
+      "claim_type": "EXPLICIT",
+      "source": "We investigated whether post-acquisition synchronization could be extended to visualizing calcium transients in cardiac myocytes across the entire heart of living embryonic zebrafish expressing the fluorescent calcium reporter GCaMP5G under the myl7 promoter (Figure 1a, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Research question investigated by the authors with reference to experimental data in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "f37d37ec-4479-4e1a-b9b5-0889807af248",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C9",
+      "claim": "The genetically expressed calcium reporter GCaMP5G provides a specific, consistent and non-invasive readout of cardiomyocyte activity in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The genetically expressed calcium reporter provides a specific, consistent and non-invasive readout of cardiomyocyte activity in vivo (Figure 1b, Videos 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Characterization of the reporter supported by experimental data shown in figures and videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "7e8d4ae0-91df-4d94-b802-f68f061b8e33",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C10",
+      "claim": "The calcium signal from GCaMP5G had good and stable fluorescent yield at low excitation power, superior to genetically expressed voltage reporters.",
+      "claim_type": "EXPLICIT",
+      "source": "In a side-by-side comparison, the calcium signal had good and stable fluorescent yield at low excitation power, superior to genetically expressed voltage reporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparative experimental result from side-by-side comparison performed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "a8295cd2-60b4-440c-ae9b-78ea369e499c",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C11",
+      "claim": "The calcium signal faithfully reports presence and timing of cell activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the calcium signal faithfully reports presence and timing of cell activation (Figure 1\u2014figure supplement 2) (Kralj et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 1\u2014figure supplement 2 and citation to Kralj et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "276446a7-a908-4518-83a2-25a8a89bf387",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C12",
+      "claim": "Electrical excitation and mechanical contraction were decoupled by inhibiting the formation of the calcium-sensitive regulatory complex within sarcomeres using a morpholino against tnnt2a.",
+      "claim_type": "EXPLICIT",
+      "source": "To prevent interference of tissue movement and deformation with observed signals, we decoupled electrical excitation and mechanical contraction by inhibiting the formation of the calcium-sensitive regulatory complex within sarcomeres, using a morpholino against tnnt2a (Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental intervention performed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "26973717-0cf8-4d64-bc4e-184a5850a8c7",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C13",
+      "claim": "Zebrafish embryos were mounted in low concentration agarose inside polymer tubes for precise optical investigation without anesthesia.",
+      "claim_type": "EXPLICIT",
+      "source": "By mounting zebrafish embryos in low concentration agarose inside polymer tubes, we could position the embryos for precise optical investigation without anesthesia (Figure 1\u2014figure supplement 1a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of sample preparation method with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "ee7f5c82-7077-48cf-ac3e-87fc78933416",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C14",
+      "claim": "A fluorescent nuclear marker (myl7:H2A-mCherry) was recorded to attribute calcium dynamics to individual cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "To attribute calcium dynamics to individual cardiomyocytes, we also recorded a fluorescent nuclear marker (myl7:H2A-mCherry).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental approach for cell identification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "4b89617d-7740-4317-a2ca-6e180f4a5668",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C15",
+      "claim": "The high temporal (400 Hz) and spatial sampling (0.5 \u00b5m pixel size) was adequate for computing normalized average calcium transients throughout the cardiac cycle for each cell across the entire heart.",
+      "claim_type": "EXPLICIT",
+      "source": "The high temporal (400 Hz) and spatial sampling (0.5 \u00b5m pixel size) was adequate for computing normalized average calcium transients throughout the cardiac cycle for each cell across the entire heart (Figure 1\u2014figure supplement 3, Video 3, Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Assessment of imaging parameters supported by data shown in figures and videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "dd3a2fa9-43ff-460b-a281-c4a669c9ee43",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C16",
+      "claim": "Rise times were shortest for atrial muscle cells, intermediate in the atrio-ventricular canal (AVC), and longest for ventricular cardiomyoctes by 52 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Rise times were shortest for atrial muscle cells, intermediate in the atrio-ventricular canal (AVC), and longest for ventricular cardiomyoctes (Figure 1c''), in keeping with higher vertebrates where atrial myocyte contraction is faster than that of ventricular cells (Brandenburg et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation supported by data in Figure 1c'' and comparison with cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "b04fd500-6edd-4cf8-9e05-255c356d7497",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C17",
+      "claim": "In higher vertebrates, atrial myocyte contraction is faster than that of ventricular cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Rise times were shortest for atrial muscle cells, intermediate in the atrio-ventricular canal (AVC), and longest for ventricular cardiomyoctes (Figure 1c''), in keeping with higher vertebrates where atrial myocyte contraction is faster than that of ventricular cells (Brandenburg et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established fact from the literature cited.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "3ec25a41-127f-4b23-a1a8-b0f383ed0435",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C18",
+      "claim": "A positive correlation exists between rise time and position of cells along the midline, with a clear discontinuity at the AVC.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a positive correlation between rise time and position of cells along the midline, with a clear discontinuity at the AVC (Figure 1\u2014figure supplement 4b), illustrating emergence of chamber-specific patterns of individual cell activation properties across the heart.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative analysis result supported by data shown in Figure 1\u2014figure supplement 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "872d4368-e733-42ac-86f8-470e8dfc100f",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C19",
+      "claim": "Cardiac activation in the early linear heart tube is slow and near-uniform.",
+      "claim_type": "EXPLICIT",
+      "source": "While cardiac activation in the early linear heart tube is slow and near-uniform, the chambered heart shows areas of elevated conduction velocity (Dehaan, 1961; de Jong et al., 1992; Moorman et al., 1998; Chi et al., 2008; Pan\u00e1kov\u00e1 et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "06c439f7-72de-4b15-83d9-b8e35b0db663",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C20",
+      "claim": "The chambered heart shows areas of elevated conduction velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "While cardiac activation in the early linear heart tube is slow and near-uniform, the chambered heart shows areas of elevated conduction velocity (Dehaan, 1961; de Jong et al., 1992; Moorman et al., 1998; Chi et al., 2008; Pan\u00e1kov\u00e1 et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "9a906d0d-bc2f-4664-acaf-ea12e2abac4a",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C21",
+      "claim": "Biophysical and biological conduction velocities show differences between and within anatomical regions of the heart.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis revealed that biophysical and biological conduction velocities show differences between and within anatomical regions of the heart (Figure 1\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from the authors' analysis supported by data in Figure 1\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "25b55824-a8a2-47a5-8f54-adae8ef3bc05",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C22",
+      "claim": "Particularly slow conduction occurs between the most proximal atrial cells and between the cells of the AVC.",
+      "claim_type": "EXPLICIT",
+      "source": "Either descriptor identifies particularly slow conduction between the most proximal atrial cells and between the cells of the AVC, while faster conduction is seen among working myocardial cells of the atrium and ventricle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from the authors' analysis of conduction patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "3361d981-17b2-4237-9084-2ee607ab5c58",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C23",
+      "claim": "Faster conduction is seen among working myocardial cells of the atrium and ventricle.",
+      "claim_type": "EXPLICIT",
+      "source": "Either descriptor identifies particularly slow conduction between the most proximal atrial cells and between the cells of the AVC, while faster conduction is seen among working myocardial cells of the atrium and ventricle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from the authors' analysis of conduction patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "2156b05e-a79e-4aea-b0ca-a0ded81edb06",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C24",
+      "claim": "In the atrium, there is a bias towards higher biophysical speeds due to larger cell dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the atrium, there is a bias towards higher biophysical speeds, due to larger cell dimensions (Figure 1d, Figure 1\u2014figure supplement 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from data analysis supported by figures showing cell dimensions and conduction speeds.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "7909e860-8f14-44b5-9f23-034528b80e79",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C25",
+      "claim": "At 52 hpf, less than 10 cells per heart serve as activation origins.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, at 52 hpf, less than 10 cells per heart serve as activation origins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative finding from the authors' analysis of pacemaker cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "7c62b176-8b75-42d0-b959-831b96c5edb2",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C26",
+      "claim": "Pacemaker cells are located in the sinus venosus at the heart's inflow side at 52 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "They are located in the sinus venosus at the heart's inflow side, which is a homologue of the primary cardiac pacemaker region in adult heart (Poon and Brand, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Spatial localization finding supported by citation to comparative anatomy.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "0a06cec7-67b0-4d3c-b5bd-b3863ec17182",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C27",
+      "claim": "The sinus venosus is a homologue of the primary cardiac pacemaker region in adult heart.",
+      "claim_type": "EXPLICIT",
+      "source": "They are located in the sinus venosus at the heart's inflow side, which is a homologue of the primary cardiac pacemaker region in adult heart (Poon and Brand, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established anatomical homology supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "a51f173f-9e4b-4a86-8ed5-c9a510c2ecf2",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C28",
+      "claim": "The ring-like arrangement of pacemaker cells, together with a preferential orientation of myocardial cells perpendicular to the inflow-outflow direction, generates the initial planar 'ring-like' activation front that propagates evenly into the atrium.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data further show that the ring-like arrangement of pacemaker cells (Figure 1\u2014figure supplement 7), together with a preferential orientation of myocardial cells in that region perpendicular to the inflow-outflow direction (Auman et al., 2007) (Figure 1\u2014figure supplement 8), generates the initial planar 'ring-like' activation front that propagates evenly into the atrium.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Mechanistic inference from the authors' data combined with cited structural information.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "393c218e-09d4-4973-a8ab-a256e967336a",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C29",
+      "claim": "Myocardial cells in the pacemaker region have a preferential orientation perpendicular to the inflow-outflow direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data further show that the ring-like arrangement of pacemaker cells (Figure 1\u2014figure supplement 7), together with a preferential orientation of myocardial cells in that region perpendicular to the inflow-outflow direction (Auman et al., 2007) (Figure 1\u2014figure supplement 8), generates the initial planar 'ring-like' activation front that propagates evenly into the atrium.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Structural observation supported by citation and figure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "661be18d-d8a7-424a-879b-2f512004aadf",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C30",
+      "claim": "Torsion associated with cardiac looping is most pronounced around the AVC.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, by following the orientation of this reference system along the midline, we noticed torsion associated with the cardiac looping, which is most pronounced around the AVC (M\u00e4nner, 2000; Christoffels et al., 2000; Harvey, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from the authors' geometric analysis supported by citations to prior work on cardiac looping.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "47a6a243-e599-494e-bd61-ce64768d3d80",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C31",
+      "claim": "A clear asymmetry in conduction speeds exists between cells at the inner and the outer curvatures.",
+      "claim_type": "EXPLICIT",
+      "source": "A clear asymmetry in conduction speeds between cells at the inner and the outer curvatures was apparent in this representation (Figure 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from the authors' analysis shown in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "71e61ca9-74bc-4711-8404-a99decbc8690",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C32",
+      "claim": "The activation wave travelled smoothly in a ring-like fashion along the heart, irrespective of differences in conduction speeds.",
+      "claim_type": "EXPLICIT",
+      "source": "Irrespective of these differences, however, the activation wave travelled smoothly in a ring-like fashion along the heart, as indicated by the isochronal lines in the cylindrical projection (Figure 1\u2014figure supplement 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from the authors' analysis supported by data in Figure 1\u2014figure supplement 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "40c22683-e349-455f-ae1a-7ef595791a07",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C33",
+      "claim": "During the period between 36 and 52 hpf, ventricular cell number increased by about 45%.",
+      "claim_type": "EXPLICIT",
+      "source": "During the crucial period between 36 and 52 hpf, ventricular cell number increased by about 45%, the initial heart tube developed into a two-chambered organ, the midline of the heart became increasingly curved and twisted (Figure 2\u2014figure supplement 1), and the activation frequency increased \u2013 all signs of organ maturation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative measurement from the authors' longitudinal study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "209a74fa-41ae-4dd4-8f3d-1a42d030d8bb",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C34",
+      "claim": "The initial heart tube developed into a two-chambered organ between 36 and 52 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "During the crucial period between 36 and 52 hpf, ventricular cell number increased by about 45%, the initial heart tube developed into a two-chambered organ, the midline of the heart became increasingly curved and twisted (Figure 2\u2014figure supplement 1), and the activation frequency increased \u2013 all signs of organ maturation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Morphological observation from the authors' longitudinal study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "206a1309-74d2-4b3b-9626-b51280ce7f6c",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C35",
+      "claim": "The midline of the heart became increasingly curved and twisted between 36 and 52 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "During the crucial period between 36 and 52 hpf, ventricular cell number increased by about 45%, the initial heart tube developed into a two-chambered organ, the midline of the heart became increasingly curved and twisted (Figure 2\u2014figure supplement 1), and the activation frequency increased \u2013 all signs of organ maturation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Geometric observation from the authors' longitudinal study shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "f7bd91aa-7a39-49f4-abf6-e498a19002e8",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C36",
+      "claim": "The activation frequency increased between 36 and 52 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "During the crucial period between 36 and 52 hpf, ventricular cell number increased by about 45%, the initial heart tube developed into a two-chambered organ, the midline of the heart became increasingly curved and twisted (Figure 2\u2014figure supplement 1), and the activation frequency increased \u2013 all signs of organ maturation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Functional measurement from the authors' longitudinal study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "0197a4f9-a06d-4e06-b2ac-035d4c1ef640",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C37",
+      "claim": "Despite a net increase in cell numbers, the time required for activation to propagate from inflow to outflow decreased during development.",
+      "claim_type": "EXPLICIT",
+      "source": "In spite of a net increase in cell numbers, the time required for activation to propagate from inflow to outflow decreased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from the authors' analysis of developmental changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "eb86620d-cbf1-40f2-bdbf-788f7eb576eb",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C38",
+      "claim": "A progressive crowding of calcium transient activation dynamics indicated maturation of cells, with two groups differentiating from the early more homogeneous pattern: working cardiomyocytes in atrium and ventricle.",
+      "claim_type": "EXPLICIT",
+      "source": "A progressive crowding of calcium transient activation dynamics indicated maturation of cells, with two groups differentiating from the early more homogeneous pattern: working cardiomyocytes in atrium and ventricle (Figure 2a\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Interpretation of developmental changes observed in the data shown in Figure 2a\u2013f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "3f0c9dc1-059b-4859-a128-9f23fbd39e33",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C39",
+      "claim": "At 36 hpf, activation propagated evenly across the myocardium, compatible with peristalsis.",
+      "claim_type": "EXPLICIT",
+      "source": "At 36 hpf, activation propagated evenly across the myocardium, compatible with peristalsis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from the authors' analysis at early developmental stage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "5a8f7d98-430a-4ab0-8fdd-a942ee440d93",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C40",
+      "claim": "Calcium dynamics became increasingly structured during development from 36 to 52 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, calcium dynamics became increasingly structured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation of developmental progression from the authors' longitudinal study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "38f9ccd0-c9e1-42f1-be55-49fb1704342a",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C41",
+      "claim": "By 52 hpf, propagation of activation was fast across atrium and ventricle, while it remained slow in the AVC.",
+      "claim_type": "EXPLICIT",
+      "source": "By 52 hpf, propagation of activation was fast across atrium and ventricle, while it remained slow in the AVC (Figure 2\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from the authors' analysis at 52 hpf shown in Figure 2\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "6099a958-acf9-4810-b8e8-24988a1f0282",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C42",
+      "claim": "With organ maturation during 16 hr (36-52 hpf), cells in the ventricular part of the network showed longer calcium transient rise time.",
+      "claim_type": "EXPLICIT",
+      "source": "With organ maturation during these 16 hr, cells in the ventricular part of the network showed longer calcium transient rise time (Figure 2\u2014figure supplement 2b) but faster inter-cellular spread of activation (Figure 2g\u2013l, Figure 2\u2014figure supplement 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from the authors' longitudinal analysis shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "ac9973ee-c5fc-4f60-a2fd-078a10127386",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C43",
+      "claim": "With organ maturation during 16 hr (36-52 hpf), cells in the ventricular part of the network showed faster inter-cellular spread of activation.",
+      "claim_type": "EXPLICIT",
+      "source": "With organ maturation during these 16 hr, cells in the ventricular part of the network showed longer calcium transient rise time (Figure 2\u2014figure supplement 2b) but faster inter-cellular spread of activation (Figure 2g\u2013l, Figure 2\u2014figure supplement 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from the authors' longitudinal analysis shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "93164740-8e1c-4d9b-9fc6-1cbd8dee4afd",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C44",
+      "claim": "Conduction changed within chambers, such as along the outer curvature in the atrium, during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Conduction also changed within chambers, such as along the outer curvature in the atrium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation of regional changes during development from the authors' analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "89746f9e-02d0-43f0-992c-d51572f1e23e",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C45",
+      "claim": "Increasing deformation and twisting of the cardiac tissue was associated with changes in cell shape and in conduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing deformation and twisting of the cardiac tissue was associated with changes in cell shape (cf. Figure 2d\u2013f) and in conduction (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Correlation observed in the authors' data shown in figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "d2d652c6-bc78-4905-8131-2e19cb340769",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C46",
+      "claim": "Myocardial cells in the two chambers remodel and specialize into functional tissue of working atrial and ventricular cardiomyocytes during development.",
+      "claim_type": "EXPLICIT",
+      "source": "We show functional maturation in line with structural patterning of the heart muscle during development: starting from similar initial states, functionally distinct characteristics of calcium transients and conduction properties develop with a highly reproducible pattern relative to the cell locations (cf. Figure 1\u2014figure supplement 8). Myocardial cells in the two chambers remodel and specialize into functional tissue of working atrial and ventricular cardiomyocytes, while cells in the pacemaker and AVC regions continue to resemble the earlier phenotype from the tubular stage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Summary interpretation of developmental observations from the authors' study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "63d13e70-13b0-4a9a-ba19-61050a07b828",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C47",
+      "claim": "Cells in the pacemaker and AVC regions continue to resemble the earlier phenotype from the tubular stage.",
+      "claim_type": "EXPLICIT",
+      "source": "We show functional maturation in line with structural patterning of the heart muscle during development: starting from similar initial states, functionally distinct characteristics of calcium transients and conduction properties develop with a highly reproducible pattern relative to the cell locations (cf. Figure 1\u2014figure supplement 8). Myocardial cells in the two chambers remodel and specialize into functional tissue of working atrial and ventricular cardiomyocytes, while cells in the pacemaker and AVC regions continue to resemble the earlier phenotype from the tubular stage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Summary interpretation of developmental observations from the authors' study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "a09bb39f-3a3b-43fa-acf2-1678b0c3c6bf",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C48",
+      "claim": "Functionally distinct characteristics of calcium transients and conduction properties develop with a highly reproducible pattern relative to the cell locations.",
+      "claim_type": "EXPLICIT",
+      "source": "We show functional maturation in line with structural patterning of the heart muscle during development: starting from similar initial states, functionally distinct characteristics of calcium transients and conduction properties develop with a highly reproducible pattern relative to the cell locations (cf. Figure 1\u2014figure supplement 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Summary of developmental patterns observed in the authors' study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "119ee931-f366-417b-a6ef-b71b3f9835d9",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C49",
+      "claim": "Genetically expressed voltage reporters with improved dynamic range may provide a direct readout of myocardial electrical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "First, genetically expressed voltage reporters with improved dynamic range may provide a direct readout of myocardial electrical activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about future technological advancement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "beb039b8-72ba-4f5a-a67c-25d26b7eda89",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C50",
+      "claim": "Cameras with higher speed and sensitivity would enhance the recording frequency of rapid volume scanning, needed to explore aberrant myocardial activation during arrhythmias.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, cameras with higher speed and sensitivity would enhance the recording frequency of rapid volume scanning, needed to explore aberrant myocardial activation during arrhythmias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about future technological advancement and its applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "df492f0a-9a6f-4c1d-b49f-d24693c62c27",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C51",
+      "claim": "The integration of an algorithm capable of tracking cells in 3D during cardiac contractions would allow investigations in fully functional hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the integration of an algorithm capable of tracking cells in 3D during cardiac contractions would allow investigations in fully functional hearts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about future methodological advancement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "bc6b4efa-bb47-4c78-8698-860831be2ed0",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C52",
+      "claim": "The addition of optically gated actuators would enable contact-free stimulation to probe the roles of individual cells or groups of cells in pacemaking, conduction, and arrhythmogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, the addition of optically gated actuators, such as light-activated ion channels or photo-pharmacological probes, would enable contact-free stimulation to probe the roles of individual cells or groups of cells in pacemaking, conduction, and arrhythmogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about future experimental capabilities.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "f574f2ca-d2a4-46e2-936a-9bb3a6ec300d",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C53",
+      "claim": "The method opens the way to systematic, scale-bridging, in vivo studies of organogenesis by facilitating cell-accurate measurements across entire organs.",
+      "claim_type": "EXPLICIT",
+      "source": "It opens the way to systematic, scale-bridging, in vivo studies of organogenesis by facilitating cell-accurate measurements across entire organs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Claim about the broader impact and potential of the developed method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "03a06035-71b8-4dd0-903f-c7fd49c84216",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C54",
+      "claim": "Zebrafish were kept at 28.5\u00b0C according to established protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish (Danio rerio) were kept at 28.5\u00b0C and handled according to established protocols (Nusslein-Volhard and Dahm, 2002) and in accordance with EU directive 2011/63/EU as well as the German Animal Welfare Act.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of animal husbandry methods with citation to protocols.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "2f316dd3-2e9f-436b-bfa5-e731a4733d94",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C55",
+      "claim": "Imaging was performed in live zebrafish embryos between 36 and 52 hr post-fertilization (hpf) at a temperature of 24\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging was performed in live zebrafish embryos between 36 and 52 hr post-fertilization (hpf) at a temperature of 24\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "ab72d4fc-393a-422f-8558-180c36ea578f",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C56",
+      "claim": "Heart rate at 24\u00b0C is 2 Hz, about 0.5 Hz lower than at the temperature recommended for breeding of 28.5\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Heart rate at this temperature is 2 Hz, about 0.5 Hz lower than at the temperature recommended for breeding of 28.5\u00b0C (Baker et al., 1997; Kopp et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measurement of heart rate at experimental temperature with comparison to literature values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "d096f9d5-2fda-454e-8362-0c1b955cf4cd",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C57",
+      "claim": "Laser power was kept at or below 2 mW in the field of view to exclude thermal effects on heart rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Laser power was kept at or below 2 mW in the field of view (measured at the back aperture of the illumination objective) to exclude thermal effects on heart rate (an increase in heart rate was detected at laser powers of 5 mW and above).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental parameter control based on observed effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "94d49b77-d7b1-4bee-9bb9-04a36c7f4701",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C58",
+      "claim": "An increase in heart rate was detected at laser powers of 5 mW and above.",
+      "claim_type": "EXPLICIT",
+      "source": "Laser power was kept at or below 2 mW in the field of view (measured at the back aperture of the illumination objective) to exclude thermal effects on heart rate (an increase in heart rate was detected at laser powers of 5 mW and above).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation of laser power effects on heart rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "622cf952-cb62-46f6-be31-2b37772eaaaa",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C59",
+      "claim": "The recorded z-stacks of movies were synchronized in time starting at the middle plane and iterating towards first and last plane.",
+      "claim_type": "EXPLICIT",
+      "source": "The recorded z-stacks of movies were synchronized in time starting at the middle plane and iterating in two independent threads towards first and last plane, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data processing method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "a87c0b1a-936b-4e66-81f2-e302d7cfd2bd",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C60",
+      "claim": "Pearson's correlation coefficients were calculated for every cycle in adjacent planes to select the best fit for synchronization.",
+      "claim_type": "EXPLICIT",
+      "source": "A full cardiac cycle was selected randomly in the middle plane, and Pearson's correlation coefficients were calculated for every cycle in the adjacent plane. The cycle with the highest correlation was selected as the best fit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of computational method for synchronization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "333290ee-36c4-4be8-a35f-6e43dd14c750",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C61",
+      "claim": "The presence of both atrial and ventricular myocardium in the majority of planes minimized the risk of false synchronization.",
+      "claim_type": "EXPLICIT",
+      "source": "As demonstrated before, the presence of both atrial and ventricular myocardium in the majority of planes minimized the risk of false synchronization (Mickoleit et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methodological consideration supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "29b77746-3982-4470-85c5-cf9e8489b7b0",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C62",
+      "claim": "Volumes of cell nuclei were extracted from the H2A channel using grayscale blob detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Volumes of cell nuclei were extracted from the H2A channel of the raw image volumes using grayscale blob detection (Lindeberg, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of image analysis method with citation to algorithm.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "288a2c39-c610-491f-91dc-bf86602b7baa",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C63",
+      "claim": "Cell positions were manually curated to resolve potential errors in automated processing.",
+      "claim_type": "EXPLICIT",
+      "source": "To resolve potential errors in automated processing (false detection, missing cells), cell positions were manually curated using an in-house software (Scherf, 2017) facilitating evaluation, addition and deletion of nuclear positions in the 3D data sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of quality control step in data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "77a3721e-95f8-4631-b272-a89b9aacfe5f",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C64",
+      "claim": "The myocardial topology (local connectivity of cells) was estimated by projecting the 3D centroid positions of each cell and its nearest neighbors locally into the 2D Euclidean plane using Singular Value Decomposition.",
+      "claim_type": "EXPLICIT",
+      "source": "The myocardial topology (local connectivity of cells) was estimated by projecting the 3D centroid positions of each cell and its nearest neighbors locally into the 2D Euclidean plane using Singular Value Decomposition (Bronshtein, 2007) of the 3D centroid positions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of computational method with citation to mathematical reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "cfbc8bbb-4e7b-410d-91a5-94751d59042e",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C65",
+      "claim": "In each local 2D projection, the cellular connectivity was estimated by computing the 2D Delaunay triangulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In each local 2D projection, the cellular connectivity was estimated by computing the 2D Delaunay triangulation (Delaunay, 1934).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of computational method with citation to algorithm.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "99ad05ae-0025-43c3-8f36-bc44535ca023",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C66",
+      "claim": "Pacemaker cells were defined as the cells that showed earliest activation and that conducted slowly.",
+      "claim_type": "EXPLICIT",
+      "source": "Pacemaker cells were defined as the cells that showed earliest activation (activation time shorter than the 0.05-quantile of overall distribution of activation times) and that conducted slowly (conduction speed slower than the median conduction speed within the cell population).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of operational definition used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "96f18f46-4b6e-4e53-a247-b6947e55cd05",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C67",
+      "claim": "The approach offers an integrative perspective on tissue and cell levels simultaneously by noninvasively reconstructing the maturation process of the myocardium in its entirety at cellular resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "By noninvasively reconstructing the maturation process of the myocardium in its entirety at cellular resolution, our approach offers an integrative perspective on tissue and cell levels simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary claim about the capabilities of the developed method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "60d33aec-1c32-485d-b906-e0386a6c456a",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C68",
+      "claim": "The method demonstrates that myocardial activity can be recorded and analyzed with cellular detail across the entire embryonic heart.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that myocardial activity can be recorded and analyzed with cellular detail across the entire embryonic heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of the main technical achievement demonstrated in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "a6c843b6-3e03-45b1-a10d-77838990f402",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C69",
+      "claim": "The work highlights the value of the zebrafish as a vertebrate model system for in vivo cardiology, especially when combined with high-speed light sheet microscopy and suitable data analysis pipelines.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work further highlights the value of the zebrafish as a vertebrate model system for in vivo cardiology, especially when combined with high-speed light sheet microscopy and suitable data analysis pipelines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Evaluative claim about the significance of the model system and approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "75a36bf0-4b46-45e0-b65f-b32e17648015",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C70",
+      "claim": "Organogenesis depends on orchestrated interactions between individual cells and morphogenetically relevant cues at the tissue level.",
+      "claim_type": "EXPLICIT",
+      "source": "Organogenesis depends on orchestrated interactions between individual cells and morphogenetically relevant cues at the tissue level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General biological principle stated as background knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "602cd080-0c6f-41ee-8cbc-96ccba9751d9",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C71",
+      "claim": "Heart function critically relies on well-ordered communication between neighboring cells, which is established and fine-tuned during embryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "This is true for the heart, whose function critically relies on well-ordered communication between neighboring cells, which is established and fine-tuned during embryonic development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General biological principle about cardiac development stated as background knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "188447d6-ad20-434c-890a-50676d12e498",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C72",
+      "claim": "For an integrated understanding of the development of structure and function, we need to move from isolated snap-shot observations to simultaneous and continuous cell-to-organ scale imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "For an integrated understanding of the development of structure and function, we need to move from isolated snap-shot observations of either microscopic or macroscopic parameters to simultaneous and, ideally continuous, cell-to-organ scale imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of scientific need motivating the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "a62d5dcc-2899-4544-b4d4-f9a9ee64d25e",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C73",
+      "claim": "The study introduces cell-accurate three-dimensional Ca2+-mapping of all cells in the entire electro-mechanically uncoupled heart during the looping stage of live embryonic zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "We introduce cell-accurate three-dimensional Ca2+-mapping of all cells in the entire electro-mechanically uncoupled heart during the looping stage of live embryonic zebrafish, using high-speed light sheet microscopy and tailored image processing and analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of the main technical contribution of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "2c6f7d9d-6799-4f3a-9893-e608f9d0fdf7",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C74",
+      "claim": "The study shows how myocardial region-specific heterogeneity in cell function emerges during early development.",
+      "claim_type": "EXPLICIT",
+      "source": "We show how myocardial region-specific heterogeneity in cell function emerges during early development and how structural patterning goes hand-in-hand with functional maturation of the entire heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of a main biological finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "9a2f1b7a-bede-4a97-87d1-b65e6e649768",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C75",
+      "claim": "Structural patterning goes hand-in-hand with functional maturation of the entire heart.",
+      "claim_type": "EXPLICIT",
+      "source": "We show how myocardial region-specific heterogeneity in cell function emerges during early development and how structural patterning goes hand-in-hand with functional maturation of the entire heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of a main biological finding showing correlation between structure and function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "beb6807e-1a24-4d9b-803f-67e808828986",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C76",
+      "claim": "During cardiogenesis, region-specific heterogeneity in cellular activity patterns evolves as the heart undergoes large-scale morphological changes.",
+      "claim_type": "EXPLICIT",
+      "source": "During cardiogenesis, region-specific heterogeneity in cellular activity patterns evolves as the heart undergoes large-scale morphological changes: The spontaneously active heart tube develops into the mature heart, in which pacemaker cells near the inflow site initiate the rhythmic excitation that spreads with differential velocities through distinct regions of the myocardium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General description of cardiac development as background knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "779e9e30-e412-4fc3-8a91-ea4020fb0404",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C77",
+      "claim": "The spontaneously active heart tube develops into the mature heart, in which pacemaker cells near the inflow site initiate the rhythmic excitation.",
+      "claim_type": "EXPLICIT",
+      "source": "During cardiogenesis, region-specific heterogeneity in cellular activity patterns evolves as the heart undergoes large-scale morphological changes: The spontaneously active heart tube develops into the mature heart, in which pacemaker cells near the inflow site initiate the rhythmic excitation that spreads with differential velocities through distinct regions of the myocardium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General description of cardiac development as background knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "56fdce4f-fa43-4c38-952c-82ced6d87571",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C78",
+      "claim": "In the mature heart, rhythmic excitation spreads with differential velocities through distinct regions of the myocardium.",
+      "claim_type": "EXPLICIT",
+      "source": "During cardiogenesis, region-specific heterogeneity in cellular activity patterns evolves as the heart undergoes large-scale morphological changes: The spontaneously active heart tube develops into the mature heart, in which pacemaker cells near the inflow site initiate the rhythmic excitation that spreads with differential velocities through distinct regions of the myocardium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General description of cardiac physiology as background knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "475020d6-a14a-4c35-a145-1f5262a2c95c",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C79",
+      "claim": "Controlled cardiac activation gives rise to an orderly sequence of atrial and ventricular calcium release and contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "This controlled cardiac activation gives rise to an orderly sequence of atrial and ventricular calcium release and contraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General description of cardiac physiology as background knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "7a22cc50-86b6-45a4-9dd5-5cc25b43072b",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C80",
+      "claim": "An integrated understanding of cardiogenesis at the systems level requires simultaneous cell and organ scale imaging, under physiological conditions in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "An integrated understanding of cardiogenesis at the systems level requires simultaneous cell and organ scale imaging, under physiological conditions in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of scientific need motivating the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "214aeaa6-5558-484a-9f21-3491b6dc96bb",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C81",
+      "claim": "The study presents a high-speed light sheet microscopy and data analysis pipeline to measure fluorescent reporters of cardiomyocyte location and activity across the entire electro-mechanically uncoupled heart in living zebrafish embryos during the looping period from 36 to 52 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present a high-speed light sheet microscopy and data analysis pipeline to measure fluorescent reporters of cardiomyocyte location and activity across the entire electro-mechanically uncoupled heart in living zebrafish embryos during the crucial looping period from 36 to 52 hr post fertilization (hpf).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of the methodological contribution of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "6557fb0e-4842-44b9-b282-3ce07c9ee5cf",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C82",
+      "claim": "The approach has previously required separate experimental setups and specimens to study tissue and cell levels.",
+      "claim_type": "IMPLICIT",
+      "source": "By noninvasively reconstructing the maturation process of the myocardium in its entirety at cellular resolution, our approach offers an integrative perspective on tissue and cell levels simultaneously, which has previously required separate experimental setups and specimens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about limitations of previous approaches, implied by contrast with the new method.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "6d2a7d65-e701-41f3-8fc2-40ac4be6f5a0",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "claim_id": "C83",
+      "claim": "The method opens a new way towards systematic assessment of the mutual interrelations between cell- and tissue properties during organogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our method opens a new way towards systematic assessment of the mutual interrelations between cell- and tissue properties during organogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Claim about the potential impact and applications of the developed method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "81282f46-7577-4eba-9fe7-cd1eee4a6272",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a high-speed light sheet microscopy system optimized for imaging calcium transients in zebrafish embryonic hearts. GCaMP5G was validated as a superior calcium reporter compared to voltage reporters, providing specific, consistent, and non-invasive readout of cardiomyocyte activity with adequate temporal (400 Hz) and spatial (0.5 \u00b5m) resolution for single-cell analysis across the entire heart.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C15 describe the technical development and validation of the imaging system. The comparison with voltage reporters (C10), validation of calcium signal fidelity (C11), and demonstration of adequate spatiotemporal resolution (C15) are supported by experimental data shown in figures. The electromechanical uncoupling approach (C12) is well-established and appropriately applied.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "73ef1c6f-9ae4-4e8d-884d-4b1e80fe58dd",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "At 52 hpf, calcium transient rise times show chamber-specific patterns: shortest in atrial cells, intermediate in AVC, and longest in ventricular cells. A positive correlation exists between rise time and position along the midline with a discontinuity at the AVC, indicating emergence of functionally distinct cell populations with reproducible spatial patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C18, C38, and C48 describe the spatial heterogeneity in calcium dynamics. The data are supported by quantitative analysis shown in Figure 1c'' and Figure 1\u2014figure supplement 4b. The comparison to higher vertebrates (C17) provides biological context. The reproducibility claim (C48) is supported by the consistency of patterns shown across multiple specimens.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "370d8693-349b-4deb-8648-3acdda1bcac2",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Conduction velocity analysis reveals regional heterogeneity: particularly slow conduction occurs between proximal atrial cells and in the AVC, while faster conduction is observed in working myocardium of atrium and ventricle. In the atrium, biophysical conduction speeds are biased higher due to larger cell dimensions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 describe conduction patterns supported by data in Figure 1d and Figure 1\u2014figure supplement 6. The distinction between biophysical and biological conduction speeds is methodologically sound. The inference about cell size effects (C24) is supported by morphological data, though the causal relationship could be more rigorously tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "a42633ba-8b3c-4da9-93a9-d90fb0c4fcc8",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "At 52 hpf, fewer than 10 pacemaker cells are located in a ring-like arrangement in the sinus venosus at the heart's inflow. This arrangement, combined with perpendicular orientation of myocardial cells, generates a planar ring-like activation front that propagates evenly into the atrium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 and C28-C29 describe pacemaker cell identification and mechanism. The quantification (C25) and localization (C26) are supported by data in Figure 1\u2014figure supplement 7. The mechanistic inference (C28) integrates the authors' data with cited structural information (C29), providing a plausible explanation for the observed activation pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "e6f9c5b7-996c-43c6-bf77-5f38f69acbcb",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Cardiac looping introduces torsion most pronounced around the AVC, creating asymmetry in conduction speeds between inner and outer curvatures. Despite these differences, activation propagates smoothly in a ring-like fashion along the heart.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 describe geometric and functional consequences of cardiac looping. The torsion observation (C30) is supported by the authors' geometric analysis and cited literature. The conduction asymmetry (C31) is shown in Figure 1f, and the smooth propagation pattern (C32) is demonstrated in Figure 1\u2014figure supplement 9.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "24223fad-5d0c-407d-8e77-116514700733",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "During development from 36 to 52 hpf, ventricular cell number increased by ~45%, the heart tube developed into a two-chambered organ with increasing curvature and twist, and activation frequency increased. Despite increased cell numbers, the time for activation to propagate from inflow to outflow decreased.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37 describe developmental changes supported by longitudinal data in Figure 2 and supplements. The quantification of cell number increase (C33) and the paradoxical decrease in propagation time despite cell number increase (C37) are well-documented. These observations provide important context for functional maturation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "a69e73bc-59d5-4429-8264-33611e030587",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Calcium dynamics and conduction patterns become increasingly structured during development. At 36 hpf, activation is uniform (compatible with peristalsis), but by 52 hpf, fast conduction emerges in atrium and ventricle while remaining slow in AVC. Ventricular cells show longer rise times but faster intercellular conduction, and changes correlate with tissue deformation and cell shape changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C45 describe developmental progression of functional properties supported by data in Figure 2 and supplements. The transition from uniform to structured activation (C39-C41) is well-documented. The seemingly paradoxical observation of longer rise times but faster conduction (C42-C43) is interesting and supported by data, though mechanistic explanation is limited. The correlation with morphological changes (C45) is observational.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "bb544f13-0728-42f7-a952-d225a71aa445",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Myocardial cells in atrium and ventricle remodel and specialize into functionally distinct working cardiomyocytes, while pacemaker and AVC cells retain earlier phenotypes. Structural patterning and functional maturation occur in parallel with highly reproducible spatial patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 and C75 synthesize the developmental findings. The differentiation of working myocardium (C46) versus retention of early phenotypes in pacemaker/AVC regions (C47) is supported by the calcium transient and conduction data. The claim of structure-function correlation (C75) is well-supported, though causality is not definitively established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "f0e921ab-4060-4900-905a-f6b1b35aa61f",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The data analysis pipeline includes post-acquisition synchronization using Pearson correlation, automated cell segmentation with manual curation, topology reconstruction using SVD and Delaunay triangulation, and operational definition of pacemaker cells based on early activation and slow conduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C66 describe the computational methods. The synchronization approach (C59-C61) builds on prior work (Mickoleit et al., 2014). Cell segmentation with manual curation (C62-C63) is appropriate for ensuring accuracy. The topology reconstruction method (C64-C65) using established algorithms is sound. The pacemaker definition (C66) is operational and reasonable, though somewhat arbitrary in threshold selection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "564f5779-d5e1-4c59-b95f-2e85ff5d6c25",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The method enables cell-accurate 3D calcium mapping across the entire electromechanically uncoupled zebrafish heart during the looping stage (36-52 hpf), providing an integrative perspective on tissue and cell levels simultaneously and opening new avenues for systematic organogenesis studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69, C73, C81, and C83 summarize the technical achievement and its significance. The demonstration of whole-organ, single-cell resolution imaging (C68, C73) is well-supported by the data. The claim of integrative perspective (C67) is justified by the multi-scale analysis. The broader impact statements (C69, C83) are reasonable projections based on the demonstrated capabilities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "4e606551-b8c3-49aa-9ef8-5807cb037ce9",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Future technological improvements could include voltage reporters with improved dynamic range, faster cameras for arrhythmia studies, 3D cell tracking algorithms for functional hearts, and optically gated actuators for contact-free stimulation experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C49-C52 are speculative statements about future work. While these are reasonable projections based on current limitations, they represent aspirational goals rather than demonstrated results. These claims do not constitute findings from the current study but rather identify directions for future development.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "a120faa3-4f25-45a7-86fb-ca8b4ce53b4c",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Imaging was performed at 24\u00b0C (heart rate ~2 Hz, 0.5 Hz lower than at 28.5\u00b0C) with laser power \u22642 mW to avoid thermal effects on heart rate, which were observed at \u22655 mW.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 describe experimental conditions. The temperature choice (C55-C56) is justified by heart rate measurements compared to literature. The laser power control (C57-C58) is based on empirical observation of thermal effects, demonstrating appropriate experimental optimization. These are well-documented methodological details.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    },
+    {
+      "id": "63d86e18-015a-4f29-892a-363359071f2f",
+      "content_id": "f846d10d-6993-4bf2-9f8e-137fb90a1ead",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Zebrafish is an established model for cardiac studies, and light sheet microscopy with post-acquisition synchronization achieves ~400 volumes/second temporal resolution, unmatched by other in vivo volumetric imaging techniques.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 establish the background and rationale. These are well-supported by multiple citations to prior work. The temporal resolution claim (C4-C5) is attributed to Mickoleit et al., 2014 and compared to alternative techniques with appropriate citations. These provide important context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:44:21.682375Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "187301d2-78bf-4c6b-bfd7-ee3a70821401",
+      "result_id": "81282f46-7577-4eba-9fe7-cd1eee4a6272"
+    },
+    {
+      "claim_id": "fe0ccbc3-ea18-42e7-b93e-c1c55286c279",
+      "result_id": "81282f46-7577-4eba-9fe7-cd1eee4a6272"
+    },
+    {
+      "claim_id": "cb9f0a63-6d6e-448a-b9d7-0977f86e7739",
+      "result_id": "81282f46-7577-4eba-9fe7-cd1eee4a6272"
+    },
+    {
+      "claim_id": "f37d37ec-4479-4e1a-b9b5-0889807af248",
+      "result_id": "81282f46-7577-4eba-9fe7-cd1eee4a6272"
+    },
+    {
+      "claim_id": "7e8d4ae0-91df-4d94-b802-f68f061b8e33",
+      "result_id": "81282f46-7577-4eba-9fe7-cd1eee4a6272"
+    },
+    {
+      "claim_id": "a8295cd2-60b4-440c-ae9b-78ea369e499c",
+      "result_id": "81282f46-7577-4eba-9fe7-cd1eee4a6272"
+    },
+    {
+      "claim_id": "276446a7-a908-4518-83a2-25a8a89bf387",
+      "result_id": "81282f46-7577-4eba-9fe7-cd1eee4a6272"
+    },
+    {
+      "claim_id": "26973717-0cf8-4d64-bc4e-184a5850a8c7",
+      "result_id": "81282f46-7577-4eba-9fe7-cd1eee4a6272"
+    },
+    {
+      "claim_id": "ee7f5c82-7077-48cf-ac3e-87fc78933416",
+      "result_id": "81282f46-7577-4eba-9fe7-cd1eee4a6272"
+    },
+    {
+      "claim_id": "4b89617d-7740-4317-a2ca-6e180f4a5668",
+      "result_id": "81282f46-7577-4eba-9fe7-cd1eee4a6272"
+    },
+    {
+      "claim_id": "dd3a2fa9-43ff-460b-a281-c4a669c9ee43",
+      "result_id": "73ef1c6f-9ae4-4e8d-884d-4b1e80fe58dd"
+    },
+    {
+      "claim_id": "3ec25a41-127f-4b23-a1a8-b0f383ed0435",
+      "result_id": "73ef1c6f-9ae4-4e8d-884d-4b1e80fe58dd"
+    },
+    {
+      "claim_id": "eb86620d-cbf1-40f2-bdbf-788f7eb576eb",
+      "result_id": "73ef1c6f-9ae4-4e8d-884d-4b1e80fe58dd"
+    },
+    {
+      "claim_id": "a09bb39f-3a3b-43fa-acf2-1678b0c3c6bf",
+      "result_id": "73ef1c6f-9ae4-4e8d-884d-4b1e80fe58dd"
+    },
+    {
+      "claim_id": "9a906d0d-bc2f-4664-acaf-ea12e2abac4a",
+      "result_id": "370d8693-349b-4deb-8648-3acdda1bcac2"
+    },
+    {
+      "claim_id": "25b55824-a8a2-47a5-8f54-adae8ef3bc05",
+      "result_id": "370d8693-349b-4deb-8648-3acdda1bcac2"
+    },
+    {
+      "claim_id": "3361d981-17b2-4237-9084-2ee607ab5c58",
+      "result_id": "370d8693-349b-4deb-8648-3acdda1bcac2"
+    },
+    {
+      "claim_id": "2156b05e-a79e-4aea-b0ca-a0ded81edb06",
+      "result_id": "370d8693-349b-4deb-8648-3acdda1bcac2"
+    },
+    {
+      "claim_id": "7909e860-8f14-44b5-9f23-034528b80e79",
+      "result_id": "a42633ba-8b3c-4da9-93a9-d90fb0c4fcc8"
+    },
+    {
+      "claim_id": "7c62b176-8b75-42d0-b959-831b96c5edb2",
+      "result_id": "a42633ba-8b3c-4da9-93a9-d90fb0c4fcc8"
+    },
+    {
+      "claim_id": "a51f173f-9e4b-4a86-8ed5-c9a510c2ecf2",
+      "result_id": "a42633ba-8b3c-4da9-93a9-d90fb0c4fcc8"
+    },
+    {
+      "claim_id": "393c218e-09d4-4973-a8ab-a256e967336a",
+      "result_id": "a42633ba-8b3c-4da9-93a9-d90fb0c4fcc8"
+    },
+    {
+      "claim_id": "661be18d-d8a7-424a-879b-2f512004aadf",
+      "result_id": "e6f9c5b7-996c-43c6-bf77-5f38f69acbcb"
+    },
+    {
+      "claim_id": "47a6a243-e599-494e-bd61-ce64768d3d80",
+      "result_id": "e6f9c5b7-996c-43c6-bf77-5f38f69acbcb"
+    },
+    {
+      "claim_id": "71e61ca9-74bc-4711-8404-a99decbc8690",
+      "result_id": "e6f9c5b7-996c-43c6-bf77-5f38f69acbcb"
+    },
+    {
+      "claim_id": "40c22683-e349-455f-ae1a-7ef595791a07",
+      "result_id": "24223fad-5d0c-407d-8e77-116514700733"
+    },
+    {
+      "claim_id": "209a74fa-41ae-4dd4-8f3d-1a42d030d8bb",
+      "result_id": "24223fad-5d0c-407d-8e77-116514700733"
+    },
+    {
+      "claim_id": "206a1309-74d2-4b3b-9626-b51280ce7f6c",
+      "result_id": "24223fad-5d0c-407d-8e77-116514700733"
+    },
+    {
+      "claim_id": "f7bd91aa-7a39-49f4-abf6-e498a19002e8",
+      "result_id": "24223fad-5d0c-407d-8e77-116514700733"
+    },
+    {
+      "claim_id": "0197a4f9-a06d-4e06-b2ac-035d4c1ef640",
+      "result_id": "24223fad-5d0c-407d-8e77-116514700733"
+    },
+    {
+      "claim_id": "3f0c9dc1-059b-4859-a128-9f23fbd39e33",
+      "result_id": "a69e73bc-59d5-4429-8264-33611e030587"
+    },
+    {
+      "claim_id": "5a8f7d98-430a-4ab0-8fdd-a942ee440d93",
+      "result_id": "a69e73bc-59d5-4429-8264-33611e030587"
+    },
+    {
+      "claim_id": "38f9ccd0-c9e1-42f1-be55-49fb1704342a",
+      "result_id": "a69e73bc-59d5-4429-8264-33611e030587"
+    },
+    {
+      "claim_id": "6099a958-acf9-4810-b8e8-24988a1f0282",
+      "result_id": "a69e73bc-59d5-4429-8264-33611e030587"
+    },
+    {
+      "claim_id": "ac9973ee-c5fc-4f60-a2fd-078a10127386",
+      "result_id": "a69e73bc-59d5-4429-8264-33611e030587"
+    },
+    {
+      "claim_id": "93164740-8e1c-4d9b-9fc6-1cbd8dee4afd",
+      "result_id": "a69e73bc-59d5-4429-8264-33611e030587"
+    },
+    {
+      "claim_id": "89746f9e-02d0-43f0-992c-d51572f1e23e",
+      "result_id": "a69e73bc-59d5-4429-8264-33611e030587"
+    },
+    {
+      "claim_id": "d2d652c6-bc78-4905-8131-2e19cb340769",
+      "result_id": "bb544f13-0728-42f7-a952-d225a71aa445"
+    },
+    {
+      "claim_id": "63d13e70-13b0-4a9a-ba19-61050a07b828",
+      "result_id": "bb544f13-0728-42f7-a952-d225a71aa445"
+    },
+    {
+      "claim_id": "a09bb39f-3a3b-43fa-acf2-1678b0c3c6bf",
+      "result_id": "bb544f13-0728-42f7-a952-d225a71aa445"
+    },
+    {
+      "claim_id": "9a2f1b7a-bede-4a97-87d1-b65e6e649768",
+      "result_id": "bb544f13-0728-42f7-a952-d225a71aa445"
+    },
+    {
+      "claim_id": "622cf952-cb62-46f6-be31-2b37772eaaaa",
+      "result_id": "f0e921ab-4060-4900-905a-f6b1b35aa61f"
+    },
+    {
+      "claim_id": "a87c0b1a-936b-4e66-81f2-e302d7cfd2bd",
+      "result_id": "f0e921ab-4060-4900-905a-f6b1b35aa61f"
+    },
+    {
+      "claim_id": "333290ee-36c4-4be8-a35f-6e43dd14c750",
+      "result_id": "f0e921ab-4060-4900-905a-f6b1b35aa61f"
+    },
+    {
+      "claim_id": "29b77746-3982-4470-85c5-cf9e8489b7b0",
+      "result_id": "f0e921ab-4060-4900-905a-f6b1b35aa61f"
+    },
+    {
+      "claim_id": "288a2c39-c610-491f-91dc-bf86602b7baa",
+      "result_id": "f0e921ab-4060-4900-905a-f6b1b35aa61f"
+    },
+    {
+      "claim_id": "77a3721e-95f8-4631-b272-a89b9aacfe5f",
+      "result_id": "f0e921ab-4060-4900-905a-f6b1b35aa61f"
+    },
+    {
+      "claim_id": "cfbc8bbb-4e7b-410d-91a5-94751d59042e",
+      "result_id": "f0e921ab-4060-4900-905a-f6b1b35aa61f"
+    },
+    {
+      "claim_id": "99ad05ae-0025-43c3-8f36-bc44535ca023",
+      "result_id": "f0e921ab-4060-4900-905a-f6b1b35aa61f"
+    },
+    {
+      "claim_id": "96f18f46-4b6e-4e53-a247-b6947e55cd05",
+      "result_id": "564f5779-d5e1-4c59-b95f-2e85ff5d6c25"
+    },
+    {
+      "claim_id": "60d33aec-1c32-485d-b906-e0386a6c456a",
+      "result_id": "564f5779-d5e1-4c59-b95f-2e85ff5d6c25"
+    },
+    {
+      "claim_id": "a6c843b6-3e03-45b1-a10d-77838990f402",
+      "result_id": "564f5779-d5e1-4c59-b95f-2e85ff5d6c25"
+    },
+    {
+      "claim_id": "a62d5dcc-2899-4544-b4d4-f9a9ee64d25e",
+      "result_id": "564f5779-d5e1-4c59-b95f-2e85ff5d6c25"
+    },
+    {
+      "claim_id": "214aeaa6-5558-484a-9f21-3491b6dc96bb",
+      "result_id": "564f5779-d5e1-4c59-b95f-2e85ff5d6c25"
+    },
+    {
+      "claim_id": "6d2a7d65-e701-41f3-8fc2-40ac4be6f5a0",
+      "result_id": "564f5779-d5e1-4c59-b95f-2e85ff5d6c25"
+    },
+    {
+      "claim_id": "119ee931-f366-417b-a6ef-b71b3f9835d9",
+      "result_id": "4e606551-b8c3-49aa-9ef8-5807cb037ce9"
+    },
+    {
+      "claim_id": "beb039b8-72ba-4f5a-a67c-25d26b7eda89",
+      "result_id": "4e606551-b8c3-49aa-9ef8-5807cb037ce9"
+    },
+    {
+      "claim_id": "df492f0a-9a6f-4c1d-b49f-d24693c62c27",
+      "result_id": "4e606551-b8c3-49aa-9ef8-5807cb037ce9"
+    },
+    {
+      "claim_id": "bc6b4efa-bb47-4c78-8698-860831be2ed0",
+      "result_id": "4e606551-b8c3-49aa-9ef8-5807cb037ce9"
+    },
+    {
+      "claim_id": "03a06035-71b8-4dd0-903f-c7fd49c84216",
+      "result_id": "a120faa3-4f25-45a7-86fb-ca8b4ce53b4c"
+    },
+    {
+      "claim_id": "2f316dd3-2e9f-436b-bfa5-e731a4733d94",
+      "result_id": "a120faa3-4f25-45a7-86fb-ca8b4ce53b4c"
+    },
+    {
+      "claim_id": "ab72d4fc-393a-422f-8558-180c36ea578f",
+      "result_id": "a120faa3-4f25-45a7-86fb-ca8b4ce53b4c"
+    },
+    {
+      "claim_id": "d096f9d5-2fda-454e-8362-0c1b955cf4cd",
+      "result_id": "a120faa3-4f25-45a7-86fb-ca8b4ce53b4c"
+    },
+    {
+      "claim_id": "94d49b77-d7b1-4bee-9bb9-04a36c7f4701",
+      "result_id": "a120faa3-4f25-45a7-86fb-ca8b4ce53b4c"
+    },
+    {
+      "claim_id": "828cc71b-fa9c-440c-bfc6-373d80d9ee24",
+      "result_id": "63d86e18-015a-4f29-892a-363359071f2f"
+    },
+    {
+      "claim_id": "2f4b5643-94b7-4e94-8482-8c00a9b5105a",
+      "result_id": "63d86e18-015a-4f29-892a-363359071f2f"
+    },
+    {
+      "claim_id": "7367c7bb-3d3c-4d14-9d54-bf4c0446f878",
+      "result_id": "63d86e18-015a-4f29-892a-363359071f2f"
+    },
+    {
+      "claim_id": "12c9fcca-6768-4148-b18d-46b922c74f7f",
+      "result_id": "63d86e18-015a-4f29-892a-363359071f2f"
+    },
+    {
+      "claim_id": "9a04c20e-161e-4958-adae-561ecda949d9",
+      "result_id": "63d86e18-015a-4f29-892a-363359071f2f"
+    }
+  ],
+  "comparisons": []
+}

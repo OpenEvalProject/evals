@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The authors implemented a 2D neuronal oscillator model within the Virtual Brain toolbox, constrained by a directed white matter connectome from the CoCoMac database. Simulated neuronal time series were passed through a Balloon-Windkessel model to generate BOLD data, which was then analyzed using graph theoretical methods. Neural gain (\u03c3) and excitability (\u03b3) parameters were systematically manipulated to simulate ascending neuromodulatory effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 describe well-established computational methods with appropriate citations. The model implementation, hemodynamic simulation, and parameter manipulation are standard approaches in computational neuroscience and are adequately described in the Methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Increasing neural gain and excitability produced a complex relationship with network integration. Maximal integration (measured by participation coefficient BA) occurred at high \u03c3 with intermediate \u03b3 values. The network showed significantly increased integration (T798=2.57, p=0.01) and decreased segregation (T798=-17.44, p<0.001) in the highly synchronous state. Between-hemisphere connectivity increased more than within-hemisphere connectivity (T2,848=7.104, p=10^-12).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C53 present the primary findings with statistical support and reference to figures. The complex relationship between parameters and topology is demonstrated through multiple complementary measures (BA, Q, global efficiency). Statistical tests are appropriately reported with test statistics and p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C70",
+      "C78"
+    ],
+    "result": "The simulation revealed a critical bifurcation between two distinct states: high phase synchrony (\u03c1\u22650.5) and low phase synchrony (\u03c1<0.5), with a clear critical boundary. At the regional level, this manifested as a transition from input-driven fluctuations to self-sustained oscillations. At the network level, it appeared as a transition to high-amplitude inter-regional phase synchrony.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43, C70, C78 describe the phase transition with clear quantitative criteria and supporting figures. The identification of critical behavior at both regional and network levels is well-documented. The bifurcation is characterized using the order parameter \u03c1 with an explicit threshold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Near the critical boundary, the system exhibited truncated Pareto (power law) scaling spanning two orders of magnitude. After crossing the boundary, the fluctuation relationship developed a 'knee' above the power-law scaling, consistent with emergence of a characteristic temporal scale in a super-critical system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 describe fluctuation scaling analysis with appropriate citations to support the interpretation. The observation of power-law scaling near criticality and its transition is consistent with critical phenomena theory. Figure 2\u2014figure supplement 2b provides visual evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C71",
+      "C80"
+    ],
+    "result": "Network communicability was maximal at the critical boundaries between synchronous and asynchronous behavior, rather than in the highly integrated state. This suggests the network topology is most effectively balanced between integration and segregation at the transition point, maximizing information processing capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57, C71, C80 present a key finding about communicability peaking at the critical boundary. This is supported by Figure 3 and represents an important distinction from simple integration measures. The interpretation about information processing is reasonable given the cited literature on communicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C81",
+      "C109"
+    ],
+    "result": "Time-resolved topological variability was maximized across the critical boundary as the network switched between disordered and ordered phase synchrony. This peak in variability occurs where local dynamic states show the most variability and where fast stochastic perturbations most influence slow amplitude fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62, C81, C109 describe temporal variability findings supported by Figure 3d-f. The connection between fast neuronal oscillations and slow BOLD fluctuations is mechanistically explained through the model dynamics. The interpretation is consistent with the simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C69",
+      "C72",
+      "C82"
+    ],
+    "result": "Rich club regions (high-degree frontoparietal hubs) demonstrated increased 'realized' mean gain adjacent to the critical boundary compared to low-degree nodes. This effect was particularly evident at intermediate \u03b3 values, suggesting hub regions are differentially impacted by neural gain at the critical boundary and play a crucial role in controlling network-level integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66, C69, C72, C82 present findings about differential effects on hub regions, supported by Figure 4. The concept of 'realized' gain (output relative to unique topology) is clearly defined. The preferential effect on rich club regions is demonstrated and mechanistically interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Similar dissociations were observed when comparing regions with high versus low diversity, with 73% overlap between 'rich' and 'diverse' clubs, confirming the role of frontoparietal regions in controlling network integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 provide complementary analysis using diversity measures. The 73% overlap is a specific quantitative finding. The authors appropriately note this suggests future work to disambiguate degree versus diversity effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C108"
+    ],
+    "result": "Network-level fluctuations between segregation and integration in functional BOLD networks reflect an underlying transition in synchrony of faster neuronal oscillations, providing a link between temporal scales. An integrated network with increased inter-modular amplitude correlation coincides with a peak in ordered phase synchrony between regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75 and C108 present the major conceptual finding linking BOLD amplitude correlations to phase synchrony. This is supported by the simulation results showing correspondence between these measures. The authors appropriately discuss the distinction between phase and amplitude measures (C103-C107).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C73",
+      "C74",
+      "C86",
+      "C87",
+      "C88",
+      "C100"
+    ],
+    "result": "The results support the hypothesis that neural gain modulation has the computational capacity to mediate the balance between integration and segregation in the brain. The findings provide a mechanistic explanation for the inverted-U relationship between noradrenergic activity and cognitive performance, demonstrating how the ascending noradrenergic system can navigate the functional connectome across a topological landscape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6, C73-C74, C86-C88, C100 present the main conclusions. These are well-supported by the simulation results (C35-C53, C56-C66) and appropriately contextualized with prior literature. The mechanistic link between neural gain and network topology is demonstrated through the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The model revealed an inverted-U relationship between excitability and integration related to two separate bifurcations, while neural gain showed a more linear effect at intermediate \u03b3. The results extend the neural gain hypothesis by integrating the ascending arousal system with constraints from multiple order parameters and structural network topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 describe nuanced findings about the differential effects of \u03c3 versus \u03b3. This is supported by Figure 2 and supplementary figures. The extension of the neural gain hypothesis is appropriately framed as integrating multiple factors rather than a simple linear relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The findings are inconsistent with the hypothesis that neural gain mediates increased local clustering. Modularity and clustering coefficient did not increase with neural gain as predicted by Eldar et al. (2013). Instead, functional integration (decreased clustering) is a more effective indicator of neural gain's topological influence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 present a clear contradiction with prior work, supported by Figure 4\u2014figure supplement 2. The authors appropriately note the contextual difference (learning paradigm vs. resting state) that may explain the discrepancy. This is an important negative result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C110"
+    ],
+    "result": "The authors acknowledge that the direct relationship between neural gain manipulation and the ascending noradrenergic system is likely an oversimplification. Other systems (thalamus, fast-spiking interneurons) likely play significant roles. More advanced models with broader non-linear dynamics are needed to test these hypotheses more directly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102, C110 appropriately acknowledge limitations and oversimplifications in the model. These caveats are important for proper interpretation and suggest directions for future work. This demonstrates appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The introduction establishes that cognitive function requires a balance between integration and segregation, mediated by ascending neuromodulatory systems like the locus coeruleus. Prior work has linked network topology to cognitive functions and pupil diameter (an LC proxy), but mechanisms remain unclear. Previous computational models have not directly examined neural gain's influence on functional network topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C26 provide background context supported by extensive citations. These establish the motivation and gap in knowledge that the study addresses. The claims accurately represent prior literature and identify the specific gap (C23, C26) that justifies the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C76",
+      "C77",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Neural gain and excitability alter different aspects of a sigmoidal transfer function modeling the relationship between inputs and firing rates. At low parameter values, regions are insensitive to inputs and driven by noise. As parameters increase, regions become sensitive to incoming activity, leading to non-linear interactions. The model parameters exert complex influences on both oscillator frequencies (BOLD activity) and global synchrony (BOLD correlations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34, C76-C77, C104-C106 explain the model mechanics with appropriate citations (Freeman 1979, Breakspear et al. 2010). The interpretation of how parameters affect dynamics is consistent with the model equations provided in the Methods. This provides necessary mechanistic context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C47",
+      "C54",
+      "C55",
+      "C107"
+    ],
+    "result": "Contemporary theories propose that temporal phase synchrony underlies effective communication between neural regions. Communicability quantifies the number of short paths between network regions, potentially facilitating communication between segregated regions. Phase synchrony theories emphasize precise timing between spiking populations for effective information processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C54-C55, C107 provide theoretical context supported by multiple citations (Fries 2015, Lisman & Jensen 2013, Varela et al. 2001, Estrada & Hatano 2008). These establish the conceptual framework for interpreting the simulation results in terms of neural communication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C84",
+      "C85",
+      "C93",
+      "C98"
+    ],
+    "result": "Prior work by the authors and others has shown that resting state networks fluctuate between integration and segregation, with variability diminishing during tasks and integration correlating with performance. Similar relationships between structural topology and dynamics have been demonstrated by manipulating excitability or intrinsic dynamics. Integrated states underlie cognitive performance, memory retrieval, and conscious awareness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60, C84-C85, C93, C98 cite prior empirical and computational work that supports and contextualizes the current findings. These establish that the model predictions align with known empirical phenomena and prior modeling approaches. The citations are appropriate and accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "The balance between integration and segregation relates to alterations in neural gain within a zone of maximal communicability and temporal variability. The findings highlight constraints on contemporary brain models and provide implications for understanding brain function during tasks or in disease states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 provide appropriate summary conclusions based on the demonstrated results (C56-C62). The broader implications are reasonably stated without overreach. The connection to task performance and disease is appropriately framed as potential implications rather than demonstrated findings.",
+    "result_type": "MAJOR"
+  }
+]

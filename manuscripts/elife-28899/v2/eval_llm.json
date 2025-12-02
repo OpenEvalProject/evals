@@ -1,0 +1,392 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "GLUT1 is the primary glucose transporter expressed in photoreceptors and RPE. Immunoblotting and immunohistochemistry show GLUT1 is expressed in retina and RPE, with GLUT1 immunoreactivity overlapping with rod photoreceptor markers (MT-COX1, rod arrestin, Nrl-GFP) in the photoreceptor inner segment layer. GLUT3 and GLUT4 are not expressed in retina.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 and C52-C59 provide converging evidence from immunoblotting (C6-C8, C52) and immunohistochemistry (C9-C11, C53-C58) that GLUT1 is expressed in photoreceptors and RPE. The localization data using multiple photoreceptor markers and electron microscopy (C53-C56) strengthen the conclusion. The inference that photoreceptors can take up glucose (C59) is reasonable given the GLUT1 distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Dietary glucose enters the retina primarily through photoreceptors. 2-NBDG gavage experiments in mice and zebrafish show strongest fluorescence in the photoreceptor layer, with minimal uptake in M\u00fcller glial cells. In zebrafish, cones become intensely fluorescent 30 minutes after gavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 are supported by in vivo 2-NBDG imaging data in both mice and zebrafish (Figures 2A-D). The quantification (C15) and observation that 2-NBDG does not overlap with MGC markers (C14) strengthen the conclusion. The use of two model organisms with different photoreceptor compositions provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Retina and RPE metabolize glucose differently. Retina shows 8-fold faster lactate production from glucose than RPE, with higher lactate and succinate levels. RPE has higher citrate and \u03b1-ketoglutarate levels and shows more pyruvate carboxylation, while retina shows predominantly pyruvate decarboxylation. Less than 2% of glucose flux goes through the pentose phosphate pathway in both tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 and C60-C65 are supported by GC-MS metabolic flux analysis using [1,2]-13C and U-13C glucose (Figure 3). The isotope labeling patterns provide clear evidence for differential metabolic pathways. The pentose phosphate pathway measurement (C61) is supported by prior work. The interpretation of isotopomer patterns (C62-C65) is based on established metabolic knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C26"
+    ],
+    "result": "Mouse eyecup (containing RPE) shows metabolic characteristics similar to cultured hfRPE cells. The lactate/citrate ratio in mouse retina is ~30 times higher than in mouse eyecup. Retina releases 13C lactate ~20 times faster than either hfRPE or mouse eyecup. 13C lactate metabolism in hfRPE is more similar to mouse eyecup than to retina.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C23, and C26 validate that cultured hfRPE cells are a reasonable model for native RPE by comparing them to mouse eyecup preparations (Figures 4 and 6). The metabolite ratios and lactate release rates provide quantitative support. This addresses a potential concern about using cultured cells as a model system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "RPE cells can use lactate as fuel. In hfRPE cells, 13C from lactate accumulates in citrate at least 20 times faster than 13C from glucose. Substantial m3 malate formation indicates pyruvate carboxylation is a significant metabolic pathway in RPE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 are supported by GC-MS data comparing 13C glucose vs. 13C lactate incorporation into TCA cycle intermediates (Figure 5A). The 20-fold difference in citrate labeling rate is substantial and clearly demonstrates lactate as a preferred fuel. The m3 malate observation (C25) provides additional mechanistic insight into RPE metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Lactate suppresses glycolysis in RPE cells by depleting NAD+. Lactate increases NADH fluorescence in hfRPE cells and causes accumulation of glyceraldehyde-3-phosphate (GAP) while diminishing 13C incorporation from glucose into downstream glycolytic intermediates. Both 10 mM and 20 mM lactate produce similar glycolytic suppression. Lactate and pyruvate suppress 13C lactate accumulation in medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 provide mechanistic evidence for lactate-mediated glycolytic suppression through multiple complementary approaches: NADH fluorescence imaging (C27, Figure 7B), metabolite profiling (C28-C30, Figure 7C), and dose-response testing (C32, Figure 8A-B). The accumulation of GAP upstream of the NAD+-dependent GAPDH reaction (C29) is particularly strong mechanistic evidence. The conclusion (C31) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C73"
+    ],
+    "result": "Lactate enhances glucose transport across RPE monolayers. In transwell experiments, unlabeled lactate added to the apical side substantially increases 13C glucose accumulation on the apical side. The effect is more pronounced at 2 mM than 5 mM glucose, consistent with lactate suppressing glucose consumption by RPE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 and C73 are supported by transwell transport experiments (Figure 9B-C). The dose-dependent effect (C35) and suppression of 13C pyruvate/lactate accumulation (C36) provide additional mechanistic support. This is a key result linking the metabolic observations to a functional consequence for glucose availability to the retina. The experimental design appropriately models the in vivo situation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C74",
+      "C76"
+    ],
+    "result": "The authors propose a metabolic ecosystem model where photoreceptors convert glucose to lactate, which is exported to fuel RPE and M\u00fcller glial cells. Lactate from photoreceptors suppresses glycolysis in RPE, allowing more glucose to reach the retina. This represents the central metabolic role of photoreceptors in retinal energy metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5, C74, and C76 represent the central model of the paper, which is well-supported by the convergence of multiple experimental results: glucose uptake by photoreceptors (C12-C16), lactate production by retina (C18-C23), lactate utilization by RPE (C24-C26), lactate suppression of RPE glycolysis (C27-C33), and enhanced glucose transport in presence of lactate (C34-C36). The model integrates these findings into a coherent framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C75"
+    ],
+    "result": "M\u00fcller glial cells (MGCs) lack key glycolytic enzymes and are fueled by lactate from photoreceptors. MGCs do not express substantial pyruvate kinase or hexokinase, and lactate is the most effective carbon source for glutamine synthesis by MGCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 and C75 are supported by citations to prior work showing enzyme expression patterns and metabolic preferences. While this study does not directly test MGC metabolism, the prior evidence is substantial and the proposal (C75) is consistent with the observation that 2-NBDG does not accumulate in MGCs (C14). This represents integration of prior knowledge with current findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C79",
+      "C80"
+    ],
+    "result": "The metabolic ecosystem model explains prior genetic studies showing that enhancing photoreceptor glycolysis protects photoreceptors while enhancing RPE glycolysis causes photoreceptor degeneration. According to the model, more glycolytic photoreceptors produce more lactate that suppresses RPE glycolysis, while more glycolytic RPE cells consume more glucose, starving photoreceptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 cite prior genetic studies, and C79-C80 provide interpretations based on the current model. The model provides a unifying explanation for seemingly contradictory prior findings. While the interpretations (C79-C80) are inferences rather than direct experimental tests, they are logical predictions from the established metabolic relationships and are consistent with the cited genetic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C86",
+      "C88"
+    ],
+    "result": "The metabolic ecosystem model suggests explanations for retinal diseases. Photoreceptors may starve when RPE mitochondria fail because RPE becomes more glycolytic. Loss of lactate production in rod-deficient retinas may limit glucose availability to cones, explaining cone starvation and 2-NBDG accumulation in RPE when rods degenerate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81, C82, C86, and C88 are speculative explanations for disease mechanisms based on the metabolic ecosystem model. While the logic is sound and consistent with cited observations (C82, C88 cite supporting studies), these are hypotheses that require direct experimental validation. The model provides plausible explanations but does not constitute proof of disease mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Mouse retinas release pyruvate at only 6.7\u00b12.3% and alanine at only 0.4\u00b10.1% of the lactate release rate, supporting the focus on lactate as the primary metabolite exported from retina.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by direct measurements from mouse retinas (n=13). This quantification justifies the study's focus on lactate rather than other potential metabolites and strengthens the argument that lactate is the physiologically relevant metabolite in the retina-RPE ecosystem.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C97",
+      "C98"
+    ],
+    "result": "The hfRPE cell culture model is validated as representative of native RPE. The cultured adult human RPE is not better than hfRPE as a representation of native RPE, and the hfRPE cultures used are of similar age to those in other published studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C97, and C98 address the validity of using cultured hfRPE cells as a model system. C66 and C97 cite prior validation studies, and C98 confirms the culture conditions match established protocols. This is important for interpreting the in vitro results, though the comparison to mouse eyecup (C22, C23, C26) provides additional validation within this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Pyruvate and alanine cause redistributions of glycolytic and mitochondrial intermediates in hfRPE cells. The effects may involve modulation of GAPDH activity and the malate-aspartate shuttle, which is present in RPE based on transporter transcript expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 describe additional metabolic effects beyond lactate (Figure 8C-F). C69 is supported by GC-MS data, while C70-C71 are speculative mechanistic interpretations. C72 provides supporting evidence for the proposed mechanism by confirming transporter expression. These results provide additional context but are secondary to the main lactate findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Lactate does not diminish 13C incorporation from glucose into m2 citrate and m2 isocitrate, possibly reflecting enhanced TCA cycle activity from anaplerotic supplementation of unlabeled TCA cycle intermediates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 describe a specific observation from the lactate suppression experiments (Figure 7C). C67 is a clear observation, while C68 is a speculative interpretation. This result adds nuance to the glycolytic suppression mechanism but is a secondary finding that does not affect the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C17",
+      "C47",
+      "C48"
+    ],
+    "result": "Prior studies established that retinas rely on aerobic glycolysis and that most glucose taken up by retina is converted to lactate. Photoreceptors are the site of aerobic glycolysis in the outer retina.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C47, and C48 summarize established prior knowledge from multiple cited studies dating back to the 1920s. These claims provide important context for the current work but represent prior knowledge rather than new findings. The citations appear appropriate and the claims are consistent with the field's understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The RPE is a polarized monolayer between choroid and retina that functions as a blood-retina barrier, with specific transporters on basolateral and apical surfaces. Glucose from the choroid passes through basolateral transporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 describe established anatomical and physiological knowledge about RPE structure and function. C49 and C51 are general knowledge, while C50 cites a specific reference. These claims provide necessary background but do not represent new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "RPE cells are specialized for reductive carboxylation, a type of energy metabolism that can support redox homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 cites the authors' prior work (Du et al., 2016b). This provides important context for understanding RPE metabolism but represents a prior finding rather than a new result from this study. The citation appears appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Enhanced anabolic metabolism has been proposed as the purpose of aerobic glycolysis in photoreceptors. The authors propose that the laminated eye structure requires photoreceptors to produce lactate to fuel MGCs and suppress RPE glycolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 summarizes prior proposals from cited studies. Claim C78 is the authors' new proposal based on their findings. While C78 is speculative, it is a logical extension of the experimental results and provides a functional explanation for aerobic glycolysis beyond anabolic metabolism. This represents an important conceptual contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C87",
+      "C89"
+    ],
+    "result": "In retinitis pigmentosa, cone degeneration following rod loss may involve both loss of a cone viability factor and metabolic starvation due to reduced lactate production. Retinas without rods make less lactate, and without lactate, RPE cells oxidize more glucose. Alternative glucose supply can rescue cones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C84, C87, and C89 cite prior studies, while C85 is an inference from the current work. The integration of the metabolic ecosystem model with prior observations about cone degeneration provides a plausible additional mechanism. The cited rescue experiment (C89) supports the metabolic starvation hypothesis, though it does not prove the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Other metabolites including glycogen, fatty acids, ketone bodies, glutamine, and proline must contribute to the metabolic ecosystem. RPE can oxidize fatty acids to supply ketone bodies to the retina, and fatty acids may suppress RPE glucose consumption like lactate does.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 cite prior studies showing contributions of other metabolites. C93 is a speculative proposal by analogy to lactate. These claims appropriately acknowledge the complexity of the metabolic ecosystem beyond the glucose-lactate axis studied here. The speculation about fatty acids (C93) is reasonable but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Energy homeostasis in retina and RPE relies on complex metabolic interplay between metabolically distinct cells. Better understanding of this ecosystem could lead to general therapeutic strategies for retinal degenerative diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is a well-supported conclusion from the study's findings and cited prior work. Claim C95 is a speculative statement about potential therapeutic applications. While C95 is reasonable given the findings, it represents a future possibility rather than a demonstrated result. These are appropriate concluding statements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "Glycogen in RPE cells likely functions as a glucose buffer in the glucose transport pathway, based on previous findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C96 is a speculative proposal based on a cited prior study (Senanayake et al., 2006). While plausible, this hypothesis is not tested in the current study and represents a suggestion for future work. The role of glycogen in glucose transport remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "In the mouse eyecup preparation, the RPE layer is more metabolically active than the sclera and is the most accessible layer to added metabolites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is based on established knowledge of tissue metabolism and is a reasonable assumption for interpreting the eyecup experiments. While not directly tested, this is a minor methodological point that does not significantly affect the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Experimental animals (mice and zebrafish) were maintained under specified conditions. C57BL/6J mice do not carry the rd8 mutation. Fish were fasted and dark-adapted before gavage experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 describe experimental methods and animal husbandry conditions. These are straightforward methodological details that are appropriately documented. The note about the rd8 mutation (C101) is important for ensuring the mice have normal retinal structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Mutations in more than 140 genes can cause photoreceptor degeneration in vertebrate retinas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 cites Bramall et al., 2010 and provides important context for the study's motivation. This is established knowledge in the field and the citation appears appropriate. This background information justifies the search for common metabolic mechanisms underlying diverse genetic causes of retinal degeneration.",
+    "result_type": "MINOR"
+  }
+]

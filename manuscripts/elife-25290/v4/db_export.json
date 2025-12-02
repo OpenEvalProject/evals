@@ -1,0 +1,1971 @@
+{
+  "submission": {
+    "id": "3bd2d5d5-3690-4f4b-b16a-df68d398b205",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:35:18.114972Z",
+    "updated_at": "2025-12-01T19:35:18.114972Z"
+  },
+  "content": [
+    {
+      "id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "submission_id": "3bd2d5d5-3690-4f4b-b16a-df68d398b205",
+      "content_type": "manuscript",
+      "content_text": "# Dye-enhanced visualization of rat whiskers for behavioral studies\n\n## Authors\n\n- Jacopo Rigosa<sup>1</sup> ([ORCID: 0000-0003-3184-994X](https://orcid.org/0000-0003-3184-994X)) \u2020\n- Alessandro Lucantonio<sup>1</sup>\n- Giovanni Noselli<sup>1</sup>\n- Arash Fassihi<sup>1</sup> ([ORCID: 0000-0001-7477-7080](https://orcid.org/0000-0001-7477-7080))\n- Erik Zorzin<sup>1</sup> ([ORCID: 0000-0002-4083-7847](https://orcid.org/0000-0002-4083-7847))\n- Fabrizio Manzino<sup>1</sup>\n- Francesca Pulecchi<sup>1</sup>\n- Mathew E Diamond<sup>1</sup> ([ORCID: 0000-0003-2286-4566](https://orcid.org/0000-0003-2286-4566)) \u2020\n\n### Affiliations\n\n1. International School for Advanced Studies Trieste Italy\n\n\u2020 Corresponding author\n\n## Abstract\n\nVisualization and tracking of the facial whiskers is required in an increasing number of rodent studies. Although many approaches have been employed, only high-speed videography has proven adequate for measuring whisker motion and deformation during interaction with an object. However, whisker visualization and tracking is challenging for multiple reasons, primary among them the low contrast of the whisker against its background. Here, we demonstrate a fluorescent dye method suitable for visualization of one or more rat whiskers. The process makes the dyed whisker(s) easily visible against a dark background. The coloring does not influence the behavioral performance of rats trained on a vibrissal vibrotactile discrimination task, nor does it affect the whiskers\u2019 mechanical properties.\n\n## Introduction\n\nMany nocturnal or crepuscular rodents, including rats and mice, have long vibrissae that enable tactile exploration of the nearby environment (Grant et al., 2009; Carvell and Simons, 1990; Gustafson and Felbain-Keramidas, 1977; Vincent, 1912). Rats contact and palpate objects by projecting their facial vibrissae in front of and around the snout, giving rise to neuronal representations of what is being contacted and where it is located (Diamond et al., 2008; Diamond and Arabzadeh, 2013).\n\nA rich variety of whisker follicle mechanoreceptors (Ebara et al., 2002) encode whisker deflections with remarkable sensitivity and temporal resolution (Bale et al., 2015; Whiteley et al., 2015; Ikeda et al., 2014). Signals follow afferent pathways to reach the primary somatosensory, secondary somatosensory and the primary motor cortex (Ahissar et al., 2000; Kleinfeld et al., 2006; Yu et al., 2015). Quantifying the relationship between animal\u2019s sensing of the environment and neuronal firing in these subcortical and cortical stages requires precise monitoring of whisker shape and motion during behavioral tasks.\n\nThe literature puts forward various strategies to estimate whisker movement. The electrical activity of facial muscles provides information about motor output commands, and correlates with whisking activity (Hill et al., 2008), but the technique includes an invasive implant and does not directly specify whisker position and deflection. Another technique is to image a high-contrast particle fixed to the whisker (Harvey et al., 2001; Venkatraman et al., 2009); however, the technique fails to track whisker shape and it likely perturbs whisker dynamics due to the particle mass and air resistance. Whisker position can be estimated by its intersection with a laser sheet (Jadhav et al., 2009), but this necessitates trimming the unwanted whiskers; moreover, whisker shape is lost. High-speed videography holds the greatest potential for noninvasive measurement of whisker movements, deflections, and shape (O\u2019'Connor et al., 2010; Voigts et al., 2008; Ritt et al., 2008; Knutsen et al., 2005; Perkon et al., 2011; Clack et al., 2012). Videography requires heavy computations to distinguish the target whiskers from the background, and sometimes requires trimming, which may limit behavior. Image processing for whisker tracking must be tailored to the specific lighting conditions. Unless the whisker is uniformly illuminated and reflects the light homogeneously (to avoid optical aberration), image quality will be degraded.\n\nA higher degree of luminance contrast could solve many of the technical challenges inherent to videography. Identified single whiskers could be followed across sessions, and whisker-cross imaging issues could be abated. Here, we describe the application of a fluorescent dye to highlight specific sets of whiskers. The advantages of fluorescence include the conversion of each whisker into a homogeneous source of light, as well as the facilitation of multi-whisker tracking by color segmentation. However, the application of a fluorescent dye may affect the mass and the stiffness of the whisker, hence the rat\u2019s tactile perception during a behavioral task. In order to assess fluorescence as a potential tool for whisker visualization, we test performance in a vibrissal vibrotactile discrimination task (Fassihi et al., 2014). After finding performance unhindered, we confirm that the conserved tactile perception after application of the fluorescent dye arises from the fully conserved dynamic response of the whiskers.\n\n## Results and discussion\n\n### Dye-enhanced visualization\n\nWe applied two fluorescent dyes on two whiskers of a rat during brief sedation (green and red dyes - StarGazer). With a macro lens, under white light and with no optical filter, all whiskers were visible (Figure 1A). Despite its high quality, tracking multiple whiskers from this type of image would be challenging. Under blue light, with a long-pass filter (FEL0500 Long-pass filter cut-on wavelength 500 nm - Thorlabs) in front of the lens to remove blue reflections, the whiskers were visible in two colors and with enhanced contrast (Figure 1B). They would be readily separable by masking specific color ranges. Contrast can be further increased by a more red-shifted long-pass filter (red plexiglass, cut-on wavelength 625 nm measured with Implen NanoPhotometer), selecting only one dye (Figure 1C). Video recordings confirm the increased visibility of the dyed whiskers in the mobile rat (Video 1), facilitating tracking (Supplementary file 1 and Video 2). We performed whisker tracking using JFilament (Smith et al., 2010), a plugin of ImageJ (Schneider et al., 2012), a public domain Java-based image processing program. JFilament can segment and track 2D/3D filaments and has been widely used \ufefffor fluorescence microscopy images. It allows tracking of these elements through a sequence of frames and is thus suitable for whisker tracking.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/25290/elife-25290-fig1-v4.jpg)\n\n**Figure 1.:** (A) Vibrissal pad with two whiskers dyed, under white light. (B) Same as (A) but under blue light and long-pass optical filter. (C) Same as (B) but with red plexiglass. (D) Effect of vibrissal pad coloring (pink, olive) and sham treatment (violet, jade) on daily performance of a vibrissal vibration discrimination task. Chance performance would be 50%. (E) Violin plots of difference in performance before and after treatment. The distributions are generated by permuting every data point before with every data point after.\n\n![Video 1.](https://cdn.elifesciences.org/articles/25290/elife-25290-media1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/25290/elife-25290-media2.mp4.jpg)\n\n### Behavioral test\n\nWe examined four rats, well-trained in a whisker-mediated vibrotactile delayed comparison task (Fassihi et al., 2014), for behavioral effects of dye application. Under sedation, two underwent the application of fluorescent dye while two were sham controls (saline applied). To increase the likelihood of detecting any adverse effect of dyeing, the entire vibrissal pad on the side used in the vibrotactile task was colored. The next day the rats were returned to the behavioral apparatus for testing. Figure 1D shows daily performance and reveals that the application of fluorescent dye, like the sham procedure, had no discernible effect on behavior. Figure 1E summarizes the performance, showing no difference between before versus after the dye application.\n\n### Quantification of the frequency dynamic response of the whiskers\n\nThe behavioral tests support the notion that dye application did not affect the dynamic mechanical properties of the whiskers, but an alternative must be entertained: rats might have successfully compensated for altered whisker properties, just as they compensate for interventions as drastic as whisker clipping (Zuo et al., 2011). To exclude this possibility, we explored whiskers by theory \u2013 exploiting Euler-Bernoulli beam theory to perform computations by Finite Element Method (FEM) \u2013 and by experiment \u2013 measuring whisker linear dynamic response.\n\nWe simulated the frequency response function (FRF) H that relates the imposed vertical displacement at the clamped base of a D2 whisker with the output displacement at any location x along its longitudinal axis (Figure 2A, Materials and methods). We also used high-speed videography (Figure 2B) to measure an extracted D2 whisker\u2019s dynamic response to white noise vibration and plotted the magnitude of the FRF (mFRF) | H | along the longitudinal axis of the whisker (Figure 2C). The real and simulated mFRF are similar (Figure 2A vs 2C), confirming previous claims that a real rat whisker behaves as a tapered beam. The mFRF constitutes a fingerprint of a whisker and thus it is a simple measure of the similarity between pairs of whiskers and the similarity of one whisker over time.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/25290/elife-25290-fig2-v4.jpg)\n\n**Figure 2.:** (A) Log mFRF of the whisker approximated as a tapered beam by FEM model. Three arrowheads indicate the first three modal frequencies. (B) Experimental setup. The blue device at the top is the custom-made orientable lamp mounting. Below is the whisker mounted on a custom-made holder attached to the loudspeaker. To the left is a sample of the shaker input signal, which was estimated by tracking the base of the whisker and has been used as input for the computation of the mFRFs (vertical line corresponds to\u00a0\u00b1\u00a01 standard deviation, horizontal line corresponds to 200 ms of signal, which has been also zoomed). To the right, image processing is summarized. The image is depicted from the camera\u2019s point of view, with the angle selected so as to maximize the visible motion-induced displacement. From the thresholded raw image, points belonging to the whisker are identified in the region of interest and used to compute n equidistant samples along the whisker deflection using a B-spline model. (C) Log mFRF observed for the whisker modeled in (A). Three arrowheads indicate the first three modal frequencies, perfectly aligned with those of the simulation.\n\nTo outline the similarity index, mFRFs of whiskers designated W1 and W2 (similar in length, 53 and 56 mm) and W3 (much shorter, 23 mm) are illustrated (Figure 3A,B,C, respectively). The overall similarity between any two whiskers\u2019 dynamic responses is summarized as a scatter plot (Figure 3D), where each point corresponds to the two whiskers\u2019 spectral values for a given [frequency, position] coordinate. In Figure 3D, we compare two matrices (the mFRFs) in order to test their similarity. In particular, we unwrapped these 2D matrices into two 1D vectors (i.e. we vectorized the matrices) and we computed the coefficient of determination R2 of a linear regression between them. These latter values are summarized in Figure 4 for each pair of whiskers.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/25290/elife-25290-fig3-v4.jpg)\n\n**Figure 3.:** (A) Log mFRF of whisker W1. (B) Log mFRF of whisker W2. (C) Log mFRF of whisker W3. (D) Each scatter plot compares a pair of transfer functions, where each dot gives mFRF for a given frequency, position of both whiskers. On left panel W1 versus W2; on right panel W1 versus W3. The dot density has been encoded by coloring them from blue (single dot) to red.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/25290/elife-25290-fig4-v4.jpg)\n\n**Figure 4.:** (A) This and the next four panels depict matrices of similarity between mFRFs in pairwise (row against column) combinations. This first matrix illustrates similarities before dye application. (B) Matrix comparing the dyed and undyed conditions. (C) Matrix comparing whiskers after dye application. (D) Matrix computed for FEM-simulated (Sim) whiskers. (E) Matrix comparing one whisker over time. Time measures begin with \u2018cut\u2019 (immediately after whisker extraction from the snout), \u2018dye\u2019 (immediately after dye application) and \u2018pol\u2019 (immediately after the application and drying of nail polish). (F) In the upper panel, the diagonal values of the matrix shown in (B) are plotted (each whisker against itself, before and after dyeing). The set of values obtained by taking the i-th sub- and super-diagonal values of the matrix shown in (B) are averaged and represented with horizontal lines labeled $\\theta$i. The further from the main diagonal, the smaller is $\\theta$i, indicating that mFRF similarity decreases with increasing disparity in whisker length. The values of the diagonal are always high, highlighting the absence of dye effect on all samples: despite the application of the dye, each whisker is always more similar to itself rather than to other whiskers. On the lower panel, the supra-diagonal values of the comparison matrix shown in (E), which highlights stability up to the application of polish. In particular, by reference to the horizontal lines shown in the upper panel of (F), the change of the whisker caused by polish can be compared to the difference between the two whiskers of length 18 mm and 56 mm.\n\nIf two mFRFs were identical, all points would lie along the unity line and the coefficient of determination of the linear regression (R2) would be 1. For W1 vs W2\u00a0R2\u00a0=\u00a00.91, and for W1 vs W3\u00a0R2\u00a0=\u00a00.43. Thus, as predicted by beam theory, a difference in whisker length corresponds to a difference in dynamic response.\n\n### Dye effects on mechanical properties\n\nConfident that the mFRF constitutes a robust measure of whisker dynamics, we measured a large set of extracted whiskers and quantified the similarity between any two mFRFs by the R2 measure. First, we compared the dynamic responses of all whiskers, undyed, in all pairwise combinations (Figure 4A). The whiskers are labeled and ordered by length. Next, we compared the same set of whiskers, immediately before and after dye application (Figure 4B). Then, we compared the dynamic responses of all dyed whiskers, in all pairwise combinations (Figure 4C). The plots all attest to the stability of mFRFs in spite of dye application.\n\nAs predicted by beam theory, the mFRF is sensitive to geometry (length, cross-section area along the shaft) and to material parameters (Young\u2019s modulus, damping coefficients, mass density). We modeled the set of whiskers and computed the similarity between simulated mFRFs (Figure 4D). The FEM simulations (Materials and methods) uncover the same three groups of elevated mFRF similarity (orange-red blocks near the diagonal, against yellow-green-blue off diagonal) found in empirical data (Figure 4A\u2013C), confirming the validity of the beam model in describing whisker dynamic response.\n\nAs a final test of stability, we examined a single whisker at many time points before and after dyeing (Figure 4E). Finally, to verify the sensitivity of the mFRF method to a manipulation that changes mass and stiffness, we tested the whisker after application of nail polish. The similarity matrix depicts all pairwise mFRF comparisons. Neither the passage of time nor the application of the fluorescent dye had a significant effect on dynamic response (R2\u00a0>\u00a00.8 for all comparisons), whereas polish severely altered the response (R2\u00a0<\u00a00.3).\n\nFigure 4F summarizes the effects of time and dye application. The upper plot gives R2 values of the diagonal of Figure 4B, showing that for the full set of tested whiskers the similarity before/after dye application was\u00a0>0.8. The lower plot gives R2 values of the superdiagonal of Figure 4E, showing that a single whisker maintained a near-constant degree of similarity from the moment of cutting, through the dyed stage, until the application of nail polish.\n\nIn vision and audition, the external stimulus provides an adequate descriptor of the information to be processed by the sensory system. For instance, although the eyes move continuously (Ahissar et al., 2016), it is common to discount this motion and to consider the incoming sensory signal to be the image presented on the screen. The equivalence between external stimulus and input to the sensory processing pathway is sufficient because, to a first approximation, the eye does not change form or function as it absorbs the stimulus. The same simplification does not hold for whisker-mediated touch: the mere definition of the stimulus \u2013 a texture, a shape, a vibration \u2013 provides little information about the signal that actually engages the sensory receptors and enters the nervous system. Instead, there is a stage of pre-processing by the whisker and follicle (Bagdasarian et al., 2013). While the discriminandum itself can be easily quantified, the pre-processing afforded by the whisker can be difficult to measure, especially in freely moving animals.\n\nOver the last 10 years, neuroscientists have begun to focus on sensorimotor processing in behaving rodents (Maravall and Diamond, 2014; Grion et al., 2016; Zuo et al., 2015). A critical step is to visualize the whiskers with clarity. The ideal methodology should be (i) simple and easy to execute, (ii) dependent on materials that are low-cost and readily available, (iii) innocuous for the animal and uninfluential on behavior, (iv) long-lasting, and (v) uninfluential on the dynamic mechanical properties of the whiskers. The method described in the present work satisfies these constraints. Its limitation is the reduced number of vibrissae that can be simultaneously imaged and tracked. To face this challenge, future work could focus on further wavelength separation.\n\n## Materials and methods\n\n### Sedation for the application of the dye\n\nRats that underwent the application of the dye (N\u00a0=\u00a03 two were used in the behavioral study and one used to shoot the Video 2) and sham-control rats (N\u00a0=\u00a02) were sedated for about 2 to 2.5 hr by injection of Domitor (Medetomidine hydrochloride, dose: 0.5 mg/kg, i.p.). With the procedure terminated, an injection of Antisedan (Atipamezole hydrochloride, standard dose 0.2 ml) was used to reverse the sedated state.\n\n### Behavioral test subjects and setup\n\nFour male Wistar rats (Harlan Laboratories) were housed individually or with one cage mate and kept on a 14/10 light/dark cycle and reached a weight of 450\u2013550 g. They were examined weekly by a veterinarian. At the beginning of the experiment, they had already been trained to perform a vibrotactile delayed comparison task (Fassihi et al., 2014): they compared the mean speed of two vibrotactile stimuli by placing their whiskers on a 20 \u00d7 30 mm plate attached to the diaphragm of a shaker motor (type 4808; Bruel and Kjaer). Performance is defined as the percent of trials in which the rat correctly selected the reward side (left or right), a selection determined by the relative mean speeds of two stochastic vibrations. Double-sided adhesive was fixed to the plate to maintain the contact between the touching whiskers and the plate. Each stimulus was built by sampling a normal distribution in position centered at 0 and then applying a Butterworth low-pass filter with 150 Hz cutoff frequency. Protocols conformed to international norms and were approved by the Italian Health Ministry and the Ethics Committee of the International School for Advanced Studies.\n\n### Collection of whisker samples\n\nOne male naive Wistar rat (Harlan Laboratories) was killed by CO2 overdose in order to extract whisker samples from both vibrissal pads. To collect samples, firstly the vibrissal pad was surgically removed and then the skin was precisely cut around the whisker follicle. In this way, each sample included the follicle that mechanically wedges the hair shaft into the skin.\n\n### Application of the fluorescent dye\n\nWe used the \u2018Hair Color Rinse Semi Permanent\u2019 line, in particular \u2018UV Red\u2019 and \u2018UV Green\u2019 in Figure 1A\u2013C. We used \u2018UV Red\u2019 for the measurements of the dynamic responses (Figures 2\u20134). The ingredients, as detailed by the supplier, consist of a common base mixture to which are added specific cosmetic colorants. The common ingredients are: purified water, cetearyl alcohol, distearoylethyl-hydroxyethylmonium, methosulfate, cetearyl alcohol, ceteareth-20, citric acid, and\u00a0methylparaben. The specific cosmetic colorants for \u2018UV Red\u2019 are: CI 42520, Basic Orange 31, Basic Violet 16, Basic Yellow 40, HC Yellow 4, and\u00a0CI 16255. The specific cosmetic colorants for \u2018UV Green\u2019 are: Basic Yellow 40, CI 42090, CI 61570, HC Yellow 4, and\u00a0CI 62045.\n\nSemi-permanent hair rinse is designed to diffuse into and bind to the hair (Robbins, 2012). In order to bleach the whiskers before dye application, we applied a gel of 3% hydrogen peroxide mixed with a booster powder (Robbins, 2012, Table 4-3). The chemical bleaching process would be expected to follow a diffusion law, where the diffusivity for the human hair has been estimated as 1.8 \u00d7 10\u22129 cm2/min (Robbins, 2012, Figure 4-3). Afterwards, we washed the whiskers with distilled water, dried them, and then submerged them for 30 min in the hair color gel (Supplementary file 2).\u00a0The fluorescent dye method is described more in detail at Bio-protocol (Rigosa et al., 2018).\n\n### Quantification of the deposited dye and of the photobleaching\n\nAs an empirical verification, we measured the mass of a set of 34 whiskers (a multiwhisker sample reduces the likelihood of measurement error) by means of a scale (RADWAG AS 220.R2) with an accuracy of 0.1 mg. Prior to processing, the pooled mass was 14.8 mg. No difference in mass was detected after the chemical bleaching, while the coloring produced an increment of 0.1 mg (from 14.8 to 14.9 mg; within the measurement error of the scale), less than 0.7%.\n\nWe measured the photobleaching of the dye for 7\u00a0hr with all seven of the lamp\u2019s LEDs pointing at the whiskers at a distance of about 15 cm. Bleaching was quantified by integrating pixel by pixel the grayscale values of an area containing colored whiskers (foreground) and another empty area of the same dimension (background). We subtracted the background from the foreground, and we normalized to the initial value in order to obtain a percentage decay (Supplementary file 3). We fit the data with an exponential law, the standard decay function for photobleaching. The measured time constant was about 14 hr (about 50,000 s), equivalent to about 25,000 trials of 2 s.\n\n### Computing a mechanical fingerprint of whisker samples\n\nAs the geometry of animal whiskers resembles that of a thin, flexible filament, their dynamic response to mechanical stimuli can be suitably explored by means of beam theory (Birdwell et al., 2007). In particular, one can exploit the mechanical analogy between a whisker and a tapered beam (Quist and Hartmann, 2012; Williams and Kramer, 2010; Hires et al., 2013; Bush et al., 2016). A truncated conical beam model can predict rat whiskers\u2019 natural resonant frequencies (Yan et al., 2013), the so-called normal modes. In this study, the linear beam model of Euler-Bernoulli was employed while accounting for whisker taper. Let $v(x,t)$ denote the beam deflection at position $x$ and time $t$. Then, by assuming a viscous damping model of the Rayleigh type, the balance laws of linear and angular momentum yield\n\n$$\nA(x)(\\frac{\u2202^{2}v(x,t)}{\u2202t^{2}}+\\alpha\\frac{\u2202v(x,t)}{\u2202t})+\\frac{E}{\u03c1}\\frac{\u2202^{2}}{\u2202x^{2}}(J(x)\\frac{\u2202^{2}v(x,t)}{\u2202x^{2}}+\\betaJ(x)\\frac{\u2202^{3}v(x,t)}{\u2202t\u2202x^{2}})=0.\n$$\n\nIn the equation above, $\u03c1$ denotes the mass density, $A$ the cross-section area, $J$ the moment of inertia of the cross-section and $E$ the Young\u2019s modulus, whereas $\\alpha$ and $\\beta$ are the mass- and stiffness-proportional damping coefficients. The governing Equation (1) is complemented by the boundary conditions that correspond to the experimental setting (Figure 2B), namely\n\n$$\nv(0,t)=\\delta(t),\\frac{\u2202v(0,t)}{\u2202x}=0,\\frac{\u2202^{2}v(L,t)}{\u2202x^{2}}=0,\\frac{\u2202^{3}v(L,t)}{\u2202x^{3}}=0\n$$\n\nfor $t\\in[0,\u221e]$, and by the initial conditions\n\n$$\nv(x,0)=0,\\frac{\u2202v(x,0)}{\u2202t}=0\n$$\n\nfor $x\\in[0,L]$. According to the boundary conditions of Equation (2), a beam of length $L$ is clamped at its base and subject to the vertical, time-varying displacement $\\delta(t)$. As for the whisker taper, we assumed the radius $r$ of the circular cross-section to linearly decrease along the whisker shaft, such that\n\n$$\nr(x)=r_{b}\u2212(r_{b}\u2212r_{t})\\frac{x}{L},A(x)=\\pir(x)^{2},J(x)=\\pi\\frac{r(x)^{4}}{4},\n$$\n\nwhere $r_{b}$ and $r_{t}$ denote the base and tip radius, respectively.\n\nFor the computation of the beam FRF, it is now expedient to Laplace-transform the set of Equation 1 and 2. By taking into account the initial conditions (3), the governing Equation (1) simplifies into the following linear ODE in the space variable $x$\n\n$$\nA(x)(s^{2}+s\\alpha)V(x,s)+\\frac{E}{\u03c1}\\frac{\u2202^{2}}{\u2202x^{2}}(J(x)\\frac{\u2202^{2}V(x,s)}{\u2202x^{2}}+s\\betaJ(x)\\frac{\u2202^{2}V(x,s)}{\u2202x^{2}})=0,\n$$\n\nwhereas the boundary conditions of Equation (2) yield\n\n$$\nV(0,s)=\u0394(s),\\frac{\u2202V(0,s)}{\u2202x}=0,\\frac{\u2202^{2}V(L,s)}{\u2202x^{2}}=0,\\frac{\u2202^{3}V(L,s)}{\u2202x^{3}}=0,\n$$\n\nwhere $V(x,s)$ and $\u0394(s)$ denote the Laplace transform of $v(x,t)$ and $\\delta(t)$, respectively. The whisker model of Equation 5 and 6 was implemented in the commercial, finite element software COMSOL Multiphysics (version 5.2a, RRID:SCR_014767). Whiskers were accurately discretized into a finite element mesh comprising 200 elements. Cubic and quadratic shape functions were employed for the approximation of the displacement and rotation field, respectively. Since the numerical analyses were carried out in the frequency domain, the whisker FRF $H$ was readily computed by taking the ratio of $V(x,s)/\u0394(s)$ evaluated at $s=i\\omega$, where $i$ is the imaginary unit and $\\omega$ is the angular frequency. As for the geometric parameters of the biological samples, these were measured with the aid of custom code, which was used to process images from high-speed videos for the whisker length and bright-field micrographs for the base and tip radii. Reference material parameters were taken from the literature (Hartmann et al., 2003) and tuned to fit the experimental results with the numerical computations (Supplementary file 4).\n\nAs becomes evident from the mathematical formulation, the dynamic response of rat whiskers is sensitive to their geometric and constitutive parameters. For example, the log mFRF of a simulated D2 whisker is shown in Figure 2A. This reveals the characteristic peaks at the modal resonant frequencies (the first three modes are highlighted by black arrows). Modal shapes can also be inferred from the figure. Given a whisker geometry, these are distributed along the frequency axis depending upon the material parameters. Thus, a change in the modal frequencies distribution can only be explained by a change in the whisker constitutive parameters. Hence, in this work, we propose the dynamic responses comparison as a meaningful approach to determine whether mechanical changes occurred or not as a consequence of the chemical processes needed to apply the fluorescent dye on the whisker.\n\n### Ex vivo experimental setup and data processing\n\nThe setup (Figure 2B) included a mounting structure, designed to fix the sample without gluing it, a condition which would have affected the measurements. The whole system was installed on a base that was shaken by a loudspeaker (8 Ohm, 30 W - Visaton) controlled by using a custom-made LabVIEW code (National Instruments, RRID:SCR_014325). The set-point of the control input to the loudspeaker was computed to be a white noise sampled at 2 kHz and low-pass filtered with a Gaussian filter at 1 kHz (Figure 2B). The vibrational apparatus was inserted in a wooden stage completely covered with neoprene to avoid light reflections. A custom-made lamp was placed on the ceiling: it had seven bulbs (ILH-OO01-DEBL-SC211-WIR200, Wavelength 455 nm, Flux @700mA 1400 mW, Radiance angle\u00a0\u00b160\u00b0; concentrator lens FA11205_Tina-D-OSL FWHM angle\u00a0\u00b16\u00b0) that could be oriented so that the whisker sample could be homogeneously illuminated. In front of the stage, a high-speed camera (CamRecord 450, Optronis) recorded the sample vibrations at 2000 frames per second. Each frame was analyzed to compute the deflection of each whisker as a function of time (Figure 2B) and consequently estimate the mFRF for each trial of 2.25 s each. The mFRFs were averaged over 10 repetitions of different trials using different white noise signals, because this number of trials was sufficient in order to lower the statistic error of the measurement below the image pixel resolution.\n\nImage processing was performed using a Python (PSF, http://www.python.org) custom code that makes use of the OpenCV library (Bradski, 2008). Firstly, for each frame the part of the image which contained the whisker was identified, then the points belonging to the whisker were revealed by thresholding. Hence, the whisker shape was readily estimated by means of a B-spline modeling of these points. The B-spline returns N equidistant samples along the whisker direction, which model a specific whisker segment at a specific time (Figure 2B). One trial thus provided N time series with a length of 4500 (2.25 s times 2000 frames per second) that portray whisker dynamics as a function of its one-dimensional space. In the linear regime, each segment of the beam is a linear time invariant system (LTI) that has an input defined as the movement of the whisker base (i.e. the segment which is closest to the loudspeaker). Hence, we estimated the mFRF for each whisker\u2019s segment using the Wiener\u2013Khinchin theorem, which states that the autocorrelation function of a wide-sense-stationary random process has a spectral decomposition given by the power spectrum of that process and thus links the cross spectral density functions of the input and the output with the energy transfer function.\n\nTwo mFRFs correlate only if they have the same mode shape in the same modal frequencies. We define the coefficient of determination (R2) of their linear regression as non-negative normalized similarity metric: R2 equal to 1 corresponds to the identical responses while R2 equal to 0 corresponds to completely uncorrelated responses.\n\n### Data and code availability\n\nThe code (Rigosa, 2017) includes (1) the image processing from raw video and (2) the postprocessing of preprocessed data from video. A copy is archived at https://github.com/elifesciences-publications/whisker-dynamic-response.\u00a0Data (Rigosa et al., 2017) includes one raw video to run a demo (~1 GB), the whole preprocessed dataset to reproduce results (~9 GB), a copy of the code for data acquisition and processing.\n",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "2272d54d-bb17-41e6-bcc8-119d29f67cb2",
+      "submission_id": "3bd2d5d5-3690-4f4b-b16a-df68d398b205",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David Kleinfeld, University of California, San Diego , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.25290.014](https://doi.org/10.7554/eLife.25290.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Dye-enhanced visualization of rat whiskers for behavioral studies\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by David Kleinfeld as Reviewing Editor and Andrew King as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Carl CH Petersen (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another. The Reviewing Editor feels that this could be a valuable contribution to the field of vibrissa exploratory behavior as the tracking of vibrissae is essential for a large group of experimentalists and your technique offers an alternative strategy to existing bright-field and dark-field techniques. He has drafted this decision letter to help you prepare a revised submission. Since additional data are required we realize that more time may be needed, and given that this is a methods paper we will reassign this to the Tools and Resources category, as it would be inappropriate to be considered as a research Short Report.\n\nEssential changes:\n\n1) Few details are given about the dye and how it is applied. Exactly what dye was used, as \"Stargazer\" sells multiple green and red colors.\n\n2) You need to demonstrate tracking position and shape of whiskers in the intact animal.\n\n3) Related to point (2), accurate measurements of deflection and bending require video recording at 1 kHz or more. Is there sufficient signal-to-noise for this to occur? How much dye is deposited and what is the weight of the dye required for such a signal-to-noise ratio and how does this compare to the weight of the unpainted vibrissa? What is the intensity of the excitation light?\n\n4) Please comment on the bleaching rate of the dye. Please comment on the ability to re-stain the vibrissae.\n\nReviewer #1:\n\nIn this technical manuscript, the authors devise a new method for whisker visualization and tracking. They use readily available fluorescent dye suitable for visualization of one or more rat whiskers. The process makes the whiskers easily visible against a dark background. The coloring does not influence the behavioral performance of rats trained on a vibrissal vibrotactile discrimination task, nor does it affect the whiskers' mechanical properties. I generally found the manuscript well organized, written in clear language and appropriately discussed in the context of the current literature, all of this making the described findings accessible to a wide readership.\n\nNext to my overall positive impression, the paper has several drawbacks.\n\nThe authors examined four rats, well-trained in a whisker-mediated vibrotactile delayed comparison task (Fassihi 2014), for behavioral effects of dye application. However, this behavioral task does not depend on the mechanical properties of the whiskers, since whisker's movement is induced by mechanical deflection. I suggest taking these data out.\n\nReviewer #2:\n\nRigosa et al. offer a novel method of fluorescently dying rat whiskers in order to solve limitations of traditional high-speed video based on brightfield imaging. Such a method would, as the authors point out, be useful in that it (a) allows individual whiskers to be tracked over time among a field of many unlabeled whiskers, (b) could in principle allow this tracking to occur for multiple whiskers simultaneously with color-based image segmentation, (c) in principle allow higher luminance contrast compared with brightfield imaging. This is therefore a potentially important method. The authors actually do not directly show (a)-(c), but instead focus on testing the potential \"deal-killer\" downsides of the method, namely that it would significantly alter whisker mechanics and disrupt whisker behavior. They do a reasonable job of this testing and find that mechanics and behavior are not noticeably disrupted. There is room for improvement with respect to including information necessary for other labs to evaluate and apply the method. Detailed comments follow.\n\nMore information about the dye and its application is needed:\n\nThe authors list their dyes as simply \"green and red dyes \u2013 Stargazer\", but Stargazer has multiple green and red colors and it's not clear which exactly the authors used. Moreover, I could not find any product information online that would be useful for understanding its uses as a fluorescent marker of whiskers. What are the relevant chemical properties? (If Stargazer stops making these particular colors, or if one wanted to generalize the method, what factors would one use to choose a different dye?)\n\nHow much dye must be applied, for instance per unit of surface area or volume? The authors describe a timed application of 30 min. How much dye is deposited in this time? The authors could perhaps do a calibration based on fluorescence from a known volume of dye, or based on changes in weight. The amount of dye required for good signal-to-noise is important, for example in determining whether the method is likely to be useful for the much smaller whiskers of mice.\n\nHow quickly does the dye bleach? To what degree is fluorescent bleaching a limiting factor in use of the method?\n\nRelated to the efficiency of the fluorescence and how much dye must be applied, one would like to know how intense the illumination must be. Because bright light is a stressor for rodents and the illumination is in visible wavelengths, this is relevant for use in behavioral studies.\n\nIn the Introduction the authors mention a limitation of traditional (brightfield) whisker imaging, which they imply their method will overcome: \"Unless the whisker is uniformly illuminated and reflects the light homogenously\u2026image quality will be degraded.\" Uniform illumination (and detection) is also important with their method, however. This may be evident in their supplemental video: the fluorescence intensity appears to vary a lot from one frame to the next (e.g. frames 61 vs. 62). I would assume this could make comparing whisker shape from frame to frame more difficult. It's not clear that their method offers a way around the stringent illumination requirements of traditional approaches. Please discuss.\n\nIn the Introduction, the authors then state that a \"higher degree of luminance contrast could solve many of the technical challenges inherent to videography.\" However, the authors do not report any quantification of the luminance contrast they achieve. They should probably add this.\n\nIn the Results: \"Video recordings confirm the increased visibility of the dyed whiskers in the mobile rat, facilitating tracking (Supplementary video).\" The authors don't actually demonstrate facilitated tracking. In fact, although they set up the paper in the Introduction as offering a useful alternative to traditional approaches to whisker imaging/tracking, the authors never actually demonstrate its use for tracking position and shape of whiskers on the intact animal. It seems important to show this.\n\nIn Figure 3, it would be helpful to show example maps of the dyed conditions for the same whiskers.\n\nThe assumption of a uniformly tapered conical shape for dyed whiskers should be justified with experimental measurements. In general, the authors should characterize the shape of a whisker before and after dye application. Although not as straightforward, I suggest that one way the authors could add significant value would be to estimate Young's modulus before and after dye application.\n\nThe authors claim their dye labeling method is \"long-lasting\" (subsection \u201cDye effects on mechanical properties\u201d, last paragraph). Figure 4E-F show for cut whiskers the stability of mechanics across months (assuming \"M\" in the x-axis labels indicates months; please include in legend). However, I could not find information showing that the fluorescence is long-lasting. Please clarify.\n\nReviewer #3:\n\nRigosa et al. apply fluorescent dye to rat whiskers to enable high contrast visualisation of whisker motion. This method might be useful for many researchers.\n\nThe authors give very few details about the dye, how it is applied, how it is excited, and how the fluorescence is imaged. For a methods paper, this is rather surprising!\n\nThe authors do not appear to track fluorescent whisker movements in behaving rats. This would be an important proof of concept: to track fluorescent whiskers during task performance at 2 kHz.\n\nI am not convinced that the overall advance is of sufficiently general importance for publication in eLife.\n",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0ba76c24-e7b3-425b-9b65-39be91273582",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C1",
+      "claim": "Visualization and tracking of the facial whiskers is required in an increasing number of rodent studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Visualization and tracking of the facial whiskers is required in an increasing number of rodent studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the field that draws from established scientific practice and trends.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "e0b50ef4-4261-4c3f-8a92-4d7eba26df79",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C2",
+      "claim": "Only high-speed videography has proven adequate for measuring whisker motion and deformation during interaction with an object.",
+      "claim_type": "EXPLICIT",
+      "source": "Although many approaches have been employed, only high-speed videography has proven adequate for measuring whisker motion and deformation during interaction with an object.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by references to the literature and established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "4bb465e2-6030-417e-bd2a-7afe1454965d",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C3",
+      "claim": "Low contrast of the whisker against its background is a primary challenge for whisker visualization and tracking.",
+      "claim_type": "EXPLICIT",
+      "source": "However, whisker visualization and tracking is challenging for multiple reasons, primary among them the low contrast of the whisker against its background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established understanding of technical challenges in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "0d749af3-45d4-43d5-914e-ea487cac7f3c",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C4",
+      "claim": "The fluorescent dye method makes dyed whiskers easily visible against a dark background.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate a fluorescent dye method suitable for visualization of one or more rat whiskers. The process makes the dyed whisker(s) easily visible against a dark background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental demonstration shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "469e7e4e-85dc-4371-b2bc-c3d94d47115c",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C5",
+      "claim": "The coloring does not influence the behavioral performance of rats trained on a vibrissal vibrotactile discrimination task.",
+      "claim_type": "EXPLICIT",
+      "source": "The coloring does not influence the behavioral performance of rats trained on a vibrissal vibrotactile discrimination task, nor does it affect the whiskers' mechanical properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data presented in the behavioral tests.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "ca837a36-3dfa-48db-b20c-2bb9115efd17",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C6",
+      "claim": "The coloring does not affect the whiskers' mechanical properties.",
+      "claim_type": "EXPLICIT",
+      "source": "The coloring does not influence the behavioral performance of rats trained on a vibrissal vibrotactile discrimination task, nor does it affect the whiskers' mechanical properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental measurements of whisker dynamic response.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "86dc9869-10f8-4a37-8648-222a3aed8d13",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C7",
+      "claim": "Many nocturnal or crepuscular rodents, including rats and mice, have long vibrissae that enable tactile exploration of the nearby environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Many nocturnal or crepuscular rodents, including rats and mice, have long vibrissae that enable tactile exploration of the nearby environment (Grant et al., 2009; Carvell and Simons, 1990; Gustafson and Felbain-Keramidas, 1977; Vincent, 1912).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "ffa6ee93-e64e-43fd-a88d-1048089694c7",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C8",
+      "claim": "Rats contact and palpate objects by projecting their facial vibrissae in front of and around the snout, giving rise to neuronal representations of what is being contacted and where it is located.",
+      "claim_type": "EXPLICIT",
+      "source": "Rats contact and palpate objects by projecting their facial vibrissae in front of and around the snout, giving rise to neuronal representations of what is being contacted and where it is located (Diamond et al., 2008; Diamond and Arabzadeh, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "deae844b-a52d-459a-9531-983bf7e331f9",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C9",
+      "claim": "A rich variety of whisker follicle mechanoreceptors encode whisker deflections with remarkable sensitivity and temporal resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "A rich variety of whisker follicle mechanoreceptors (Ebara et al., 2002) encode whisker deflections with remarkable sensitivity and temporal resolution (Bale et al., 2015; Whiteley et al., 2015; Ikeda et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "00cd9131-a6e4-4b04-b7c1-550ec8a1b3ed",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C10",
+      "claim": "Signals from whisker follicle mechanoreceptors follow afferent pathways to reach the primary somatosensory, secondary somatosensory and the primary motor cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Signals follow afferent pathways to reach the primary somatosensory, secondary somatosensory and the primary motor cortex (Ahissar et al., 2000; Kleinfeld et al., 2006; Yu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "3fc25a0f-58bd-4e21-872d-ff4b88a603ab",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C11",
+      "claim": "Quantifying the relationship between animal's sensing of the environment and neuronal firing in subcortical and cortical stages requires precise monitoring of whisker shape and motion during behavioral tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantifying the relationship between animal's sensing of the environment and neuronal firing in these subcortical and cortical stages requires precise monitoring of whisker shape and motion during behavioral tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on logical inference from the need to understand sensorimotor processing.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "98091b9e-8e40-43f4-94d8-219d21879430",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C12",
+      "claim": "The electrical activity of facial muscles provides information about motor output commands and correlates with whisking activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The electrical activity of facial muscles provides information about motor output commands, and correlates with whisking activity (Hill et al., 2008), but the technique includes an invasive implant and does not directly specify whisker position and deflection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "3135e61c-2cbc-4afc-923e-b4f77830bed6",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C13",
+      "claim": "The electrical activity technique for monitoring whisker movement includes an invasive implant and does not directly specify whisker position and deflection.",
+      "claim_type": "EXPLICIT",
+      "source": "The electrical activity of facial muscles provides information about motor output commands, and correlates with whisking activity (Hill et al., 2008), but the technique includes an invasive implant and does not directly specify whisker position and deflection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of the limitations of the technique.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "08cf3990-ac46-4943-88ce-9155929ba917",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C14",
+      "claim": "Imaging a high-contrast particle fixed to the whisker fails to track whisker shape and likely perturbs whisker dynamics due to the particle mass and air resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Another technique is to image a high-contrast particle fixed to the whisker (Harvey et al., 2001; Venkatraman et al., 2009); however, the technique fails to track whisker shape and it likely perturbs whisker dynamics due to the particle mass and air resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citations and logical inference about the physical effects of adding mass.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "086e8697-e180-4dc1-8c77-52e8e19eaced",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C15",
+      "claim": "Whisker position can be estimated by its intersection with a laser sheet, but this necessitates trimming the unwanted whiskers and whisker shape is lost.",
+      "claim_type": "EXPLICIT",
+      "source": "Whisker position can be estimated by its intersection with a laser sheet (Jadhav et al., 2009), but this necessitates trimming the unwanted whiskers; moreover, whisker shape is lost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citation and knowledge of the technique's limitations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "57d069d4-f325-4df0-8cc0-46a239255e1d",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C16",
+      "claim": "High-speed videography holds the greatest potential for noninvasive measurement of whisker movements, deflections, and shape.",
+      "claim_type": "EXPLICIT",
+      "source": "High-speed videography holds the greatest potential for noninvasive measurement of whisker movements, deflections, and shape (O''Connor et al., 2010; Voigts et al., 2008; Ritt et al., 2008; Knutsen et al., 2005; Perkon et al., 2011; Clack et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "d526a285-3a58-4f58-aebe-57ed168563f5",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C17",
+      "claim": "Videography requires heavy computations to distinguish the target whiskers from the background.",
+      "claim_type": "EXPLICIT",
+      "source": "Videography requires heavy computations to distinguish the target whiskers from the background, and sometimes requires trimming, which may limit behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of computational requirements for image processing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "98d9296b-a7b7-407e-ba42-ff2900548791",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C18",
+      "claim": "Image processing for whisker tracking must be tailored to the specific lighting conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Image processing for whisker tracking must be tailored to the specific lighting conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of image processing requirements.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "31382a64-c6c2-43b7-aafe-7eddb15faa2b",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C19",
+      "claim": "Unless the whisker is uniformly illuminated and reflects the light homogeneously, image quality will be degraded.",
+      "claim_type": "EXPLICIT",
+      "source": "Unless the whisker is uniformly illuminated and reflects the light homogeneously (to avoid optical aberration), image quality will be degraded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of optical principles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "6f40e8f9-50a5-40fa-80f9-c053b204e8da",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C20",
+      "claim": "A higher degree of luminance contrast could solve many of the technical challenges inherent to videography.",
+      "claim_type": "EXPLICIT",
+      "source": "A higher degree of luminance contrast could solve many of the technical challenges inherent to videography.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on logical inference from the identified challenges.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "ac95bdd1-fcd1-4d5d-882b-2ac79c63bd0a",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C21",
+      "claim": "With higher contrast, identified single whiskers could be followed across sessions and whisker-cross imaging issues could be abated.",
+      "claim_type": "EXPLICIT",
+      "source": "Identified single whiskers could be followed across sessions, and whisker-cross imaging issues could be abated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on logical inference about the benefits of improved contrast.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "6e2184b7-2eb7-4623-b8d4-26e65a7fd985",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C22",
+      "claim": "The advantages of fluorescence include the conversion of each whisker into a homogeneous source of light and the facilitation of multi-whisker tracking by color segmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantages of fluorescence include the conversion of each whisker into a homogeneous source of light, as well as the facilitation of multi-whisker tracking by color segmentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on logical inference about the properties of fluorescence.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "7d96fc63-9964-4d70-b872-bf48df251471",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C23",
+      "claim": "The application of a fluorescent dye may affect the mass and the stiffness of the whisker, hence the rat's tactile perception during a behavioral task.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the application of a fluorescent dye may affect the mass and the stiffness of the whisker, hence the rat's tactile perception during a behavioral task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on speculation about potential effects that need to be tested.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "d68fa9ae-9693-4323-b3df-1850a65554f9",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C24",
+      "claim": "Two fluorescent dyes (green and red StarGazer dyes) were applied on two whiskers of a rat during brief sedation.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied two fluorescent dyes on two whiskers of a rat during brief sedation (green and red dyes - StarGazer).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "325f811b-e476-4b86-aaa6-5187f8f515ce",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C25",
+      "claim": "Under white light with no optical filter, all whiskers were visible but tracking multiple whiskers from this type of image would be challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "With a macro lens, under white light and with no optical filter, all whiskers were visible (Figure 1A). Despite its high quality, tracking multiple whiskers from this type of image would be challenging.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the image shown in Figure 1A and assessment of tracking difficulty.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "4be0c69d-c2ab-4c7c-8137-526c9cbf73f2",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C26",
+      "claim": "Under blue light with a long-pass filter, the whiskers were visible in two colors and with enhanced contrast.",
+      "claim_type": "EXPLICIT",
+      "source": "Under blue light, with a long-pass filter (FEL0500 Long-pass filter cut-on wavelength 500 nm - Thorlabs) in front of the lens to remove blue reflections, the whiskers were visible in two colors and with enhanced contrast (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the image shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "67fe1f6b-924b-4eec-bde2-264bcddb6c41",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C27",
+      "claim": "Dyed whiskers would be readily separable by masking specific color ranges.",
+      "claim_type": "EXPLICIT",
+      "source": "They would be readily separable by masking specific color ranges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on inference from the observed color separation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "0330e051-6c44-476e-83b5-93bd5478356f",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C28",
+      "claim": "Contrast can be further increased by a more red-shifted long-pass filter, selecting only one dye.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrast can be further increased by a more red-shifted long-pass filter (red plexiglass, cut-on wavelength 625 nm measured with Implen NanoPhotometer), selecting only one dye (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the image shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "396f7ed2-a219-4705-9472-7f88f7014bb3",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C29",
+      "claim": "Video recordings confirm the increased visibility of the dyed whiskers in the mobile rat, facilitating tracking.",
+      "claim_type": "EXPLICIT",
+      "source": "Video recordings confirm the increased visibility of the dyed whiskers in the mobile rat (Video 1), facilitating tracking (Supplementary file 1 and Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by video data shown in Video 1 and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "dcb50ef3-c1ff-400f-975d-ac31b63822e7",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C30",
+      "claim": "Whisker tracking was performed using JFilament, a plugin of ImageJ.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed whisker tracking using JFilament (Smith et al., 2010), a plugin of ImageJ (Schneider et al., 2012), a public domain Java-based image processing program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method used, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "d6d4fe5f-0299-40f0-8427-8584f69bb7e9",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C31",
+      "claim": "JFilament can segment and track 2D/3D filaments and has been widely used for fluorescence microscopy images.",
+      "claim_type": "EXPLICIT",
+      "source": "JFilament can segment and track 2D/3D filaments and has been widely used \ufefffor fluorescence microscopy images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge about the software capabilities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "022c5f62-32d7-402d-9048-b1ca0b3d612c",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C32",
+      "claim": "JFilament allows tracking of filaments through a sequence of frames and is thus suitable for whisker tracking.",
+      "claim_type": "EXPLICIT",
+      "source": "It allows tracking of these elements through a sequence of frames and is thus suitable for whisker tracking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on inference about the applicability of the software.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "8b7a06e6-e424-496f-9560-da07f9fd4a2d",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C33",
+      "claim": "Four rats well-trained in a whisker-mediated vibrotactile delayed comparison task were examined for behavioral effects of dye application.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined four rats, well-trained in a whisker-mediated vibrotactile delayed comparison task (Fassihi et al., 2014), for behavioral effects of dye application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "84c5fb4e-79c1-40e4-8081-d45fcb830df3",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C34",
+      "claim": "Under sedation, two rats underwent the application of fluorescent dye while two were sham controls with saline applied.",
+      "claim_type": "EXPLICIT",
+      "source": "Under sedation, two underwent the application of fluorescent dye while two were sham controls (saline applied).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "f69c0267-0904-449b-af4f-c7962097a17d",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C35",
+      "claim": "The entire vibrissal pad on the side used in the vibrotactile task was colored to increase the likelihood of detecting any adverse effect of dyeing.",
+      "claim_type": "EXPLICIT",
+      "source": "To increase the likelihood of detecting any adverse effect of dyeing, the entire vibrissal pad on the side used in the vibrotactile task was colored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design rationale.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "eedd9217-09ed-44b2-8e40-a4f53619c222",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C36",
+      "claim": "The application of fluorescent dye, like the sham procedure, had no discernible effect on behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1D shows daily performance and reveals that the application of fluorescent dye, like the sham procedure, had no discernible effect on behavior.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the behavioral data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "1c11c0be-fa25-4963-a9bd-fd684692d940",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C37",
+      "claim": "There is no difference in performance between before versus after the dye application.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1E summarizes the performance, showing no difference between before versus after the dye application.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "18d20502-f5d9-418c-8f2e-ce6a1db015ec",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C38",
+      "claim": "The behavioral tests support the notion that dye application did not affect the dynamic mechanical properties of the whiskers.",
+      "claim_type": "EXPLICIT",
+      "source": "The behavioral tests support the notion that dye application did not affect the dynamic mechanical properties of the whiskers, but an alternative must be entertained: rats might have successfully compensated for altered whisker properties, just as they compensate for interventions as drastic as whisker clipping (Zuo et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on inference from behavioral data and citation to prior research on compensation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "8e8f88f2-44de-47f1-b79f-49ad595e0732",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C39",
+      "claim": "Rats might have successfully compensated for altered whisker properties, just as they compensate for interventions as drastic as whisker clipping.",
+      "claim_type": "EXPLICIT",
+      "source": "The behavioral tests support the notion that dye application did not affect the dynamic mechanical properties of the whiskers, but an alternative must be entertained: rats might have successfully compensated for altered whisker properties, just as they compensate for interventions as drastic as whisker clipping (Zuo et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about an alternative explanation, supported by citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "d7ad68ee-0797-4581-92a2-d9b4fe9c381e",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C40",
+      "claim": "Euler-Bernoulli beam theory was exploited to perform computations by Finite Element Method (FEM) to simulate whisker frequency response.",
+      "claim_type": "EXPLICIT",
+      "source": "To exclude this possibility, we explored whiskers by theory \u2013 exploiting Euler-Bernoulli beam theory to perform computations by Finite Element Method (FEM) \u2013 and by experiment \u2013 measuring whisker linear dynamic response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the theoretical method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "41e43430-cbf4-4e8a-8f36-acf8a8d18b45",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C41",
+      "claim": "The frequency response function (FRF) H relates the imposed vertical displacement at the clamped base of a D2 whisker with the output displacement at any location x along its longitudinal axis.",
+      "claim_type": "EXPLICIT",
+      "source": "We simulated the frequency response function (FRF) H that relates the imposed vertical displacement at the clamped base of a D2 whisker with the output displacement at any location x along its longitudinal axis (Figure 2A, Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the simulation performed, shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "59209662-deb9-48c0-b558-27ff3ff1f85e",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C42",
+      "claim": "High-speed videography was used to measure an extracted D2 whisker's dynamic response to white noise vibration.",
+      "claim_type": "EXPLICIT",
+      "source": "We also used high-speed videography (Figure 2B) to measure an extracted D2 whisker's dynamic response to white noise vibration and plotted the magnitude of the FRF (mFRF) | H | along the longitudinal axis of the whisker (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental method used, shown in Figure 2B and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "b719ee1d-9332-4a7b-9b6d-c54eddc5e376",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C43",
+      "claim": "The real and simulated mFRF are similar, confirming previous claims that a real rat whisker behaves as a tapered beam.",
+      "claim_type": "EXPLICIT",
+      "source": "The real and simulated mFRF are similar (Figure 2A vs 2C), confirming previous claims that a real rat whisker behaves as a tapered beam.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of data in Figure 2A and 2C, and references to prior claims.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "76e3b90a-40df-45cd-b53a-c99ebbb366ff",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C44",
+      "claim": "The mFRF constitutes a fingerprint of a whisker and is a simple measure of the similarity between pairs of whiskers and the similarity of one whisker over time.",
+      "claim_type": "EXPLICIT",
+      "source": "The mFRF constitutes a fingerprint of a whisker and thus it is a simple measure of the similarity between pairs of whiskers and the similarity of one whisker over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on inference from the properties of the mFRF.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "711a52de-ca33-4129-9d9f-8bd245ed2975",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C45",
+      "claim": "For whiskers W1 and W2 (similar in length, 53 and 56 mm), the coefficient of determination R2 = 0.91.",
+      "claim_type": "EXPLICIT",
+      "source": "To outline the similarity index, mFRFs of whiskers designated W1 and W2 (similar in length, 53 and 56 mm) and W3 (much shorter, 23 mm) are illustrated (Figure 3A,B,C, respectively). The overall similarity between any two whiskers' dynamic responses is summarized as a scatter plot (Figure 3D), where each point corresponds to the two whiskers' spectral values for a given [frequency, position] coordinate. In Figure 3D, we compare two matrices (the mFRFs) in order to test their similarity. In particular, we unwrapped these 2D matrices into two 1D vectors (i.e. we vectorized the matrices) and we computed the coefficient of determination R2 of a linear regression between them. These latter values are summarized in Figure 4 for each pair of whiskers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "5cd72743-0f62-4f25-a40c-08fef947b8e0",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C46",
+      "claim": "For whiskers W1 and W3 (W1 53 mm, W3 23 mm), the coefficient of determination R2 = 0.43.",
+      "claim_type": "EXPLICIT",
+      "source": "For W1 vs W2 R2 = 0.91, and for W1 vs W3 R2 = 0.43.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "a9462353-c813-41e5-a95e-374c49a6aac5",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C47",
+      "claim": "A difference in whisker length corresponds to a difference in dynamic response.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, as predicted by beam theory, a difference in whisker length corresponds to a difference in dynamic response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on data and theoretical prediction from beam theory.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "5580bfdf-a0d5-4d0c-b14a-c23c3b028935",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C48",
+      "claim": "The mFRF is sensitive to geometry (length, cross-section area along the shaft) and to material parameters (Young's modulus, damping coefficients, mass density).",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by beam theory, the mFRF is sensitive to geometry (length, cross-section area along the shaft) and to material parameters (Young's modulus, damping coefficients, mass density).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on theoretical knowledge from beam theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "2b52432f-edf5-4f84-9823-a9672a330673",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C49",
+      "claim": "FEM simulations uncover the same three groups of elevated mFRF similarity found in empirical data, confirming the validity of the beam model in describing whisker dynamic response.",
+      "claim_type": "EXPLICIT",
+      "source": "The FEM simulations (Materials and methods) uncover the same three groups of elevated mFRF similarity (orange-red blocks near the diagonal, against yellow-green-blue off diagonal) found in empirical data (Figure 4A\u2013C), confirming the validity of the beam model in describing whisker dynamic response.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of simulation and experimental data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "1e161470-7c92-4db4-bf53-49c3bad11ce3",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C50",
+      "claim": "Neither the passage of time nor the application of the fluorescent dye had a significant effect on dynamic response (R2 > 0.8 for all comparisons).",
+      "claim_type": "EXPLICIT",
+      "source": "Neither the passage of time nor the application of the fluorescent dye had a significant effect on dynamic response (R2 > 0.8 for all comparisons), whereas polish severely altered the response (R2 < 0.3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "7f3c7bbf-5f35-4b80-86d4-9b6cca7ff739",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C51",
+      "claim": "Polish severely altered the whisker dynamic response (R2 < 0.3).",
+      "claim_type": "EXPLICIT",
+      "source": "Neither the passage of time nor the application of the fluorescent dye had a significant effect on dynamic response (R2 > 0.8 for all comparisons), whereas polish severely altered the response (R2 < 0.3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "90e4e6ca-0abe-4256-a8dc-23f6511e74a4",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C52",
+      "claim": "For the full set of tested whiskers, the similarity before/after dye application was >0.8.",
+      "claim_type": "EXPLICIT",
+      "source": "The upper plot gives R2 values of the diagonal of Figure 4B, showing that for the full set of tested whiskers the similarity before/after dye application was >0.8.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4F upper panel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "eb888664-859a-4d1d-a50e-cb5dadecbe09",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C53",
+      "claim": "A single whisker maintained a near-constant degree of similarity from the moment of cutting, through the dyed stage, until the application of nail polish.",
+      "claim_type": "EXPLICIT",
+      "source": "The lower plot gives R2 values of the superdiagonal of Figure 4E, showing that a single whisker maintained a near-constant degree of similarity from the moment of cutting, through the dyed stage, until the application of nail polish.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4F lower panel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "8f4f4d0c-44a9-4194-a7b9-563fb6738621",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C54",
+      "claim": "In vision and audition, the external stimulus provides an adequate descriptor of the information to be processed by the sensory system.",
+      "claim_type": "EXPLICIT",
+      "source": "In vision and audition, the external stimulus provides an adequate descriptor of the information to be processed by the sensory system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about sensory processing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "699b5a5b-7466-417d-929b-cc414f336420",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C55",
+      "claim": "It is common to discount eye motion and to consider the incoming sensory signal to be the image presented on the screen.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, although the eyes move continuously (Ahissar et al., 2016), it is common to discount this motion and to consider the incoming sensory signal to be the image presented on the screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of common practice in vision research, with citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "166e7564-d258-49bb-b0a1-ddbb10796097",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C56",
+      "claim": "The equivalence between external stimulus and input to the sensory processing pathway is sufficient for vision because the eye does not change form or function as it absorbs the stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "The equivalence between external stimulus and input to the sensory processing pathway is sufficient because, to a first approximation, the eye does not change form or function as it absorbs the stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge about visual processing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "432914a6-0f20-4279-91b0-c81300098d61",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C57",
+      "claim": "The same simplification does not hold for whisker-mediated touch: the mere definition of the stimulus provides little information about the signal that actually engages the sensory receptors and enters the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "The same simplification does not hold for whisker-mediated touch: the mere definition of the stimulus \u2013 a texture, a shape, a vibration \u2013 provides little information about the signal that actually engages the sensory receptors and enters the nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge about tactile processing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "897d80ec-fe91-4525-8b31-8cd57c4a0b88",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C58",
+      "claim": "There is a stage of pre-processing by the whisker and follicle in whisker-mediated touch.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, there is a stage of pre-processing by the whisker and follicle (Bagdasarian et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "4a1ebdb8-fbee-4d64-ae98-6b962882d98d",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C59",
+      "claim": "The pre-processing afforded by the whisker can be difficult to measure, especially in freely moving animals.",
+      "claim_type": "EXPLICIT",
+      "source": "While the discriminandum itself can be easily quantified, the pre-processing afforded by the whisker can be difficult to measure, especially in freely moving animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of technical challenges.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "df0ec83a-87a6-433c-a373-609e42f5286c",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C60",
+      "claim": "Over the last 10 years, neuroscientists have begun to focus on sensorimotor processing in behaving rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the last 10 years, neuroscientists have begun to focus on sensorimotor processing in behaving rodents (Maravall and Diamond, 2014; Grion et al., 2016; Zuo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "d947eba2-c58e-47c7-b5f5-58046d531e23",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C61",
+      "claim": "A critical step in studying sensorimotor processing in behaving rodents is to visualize the whiskers with clarity.",
+      "claim_type": "EXPLICIT",
+      "source": "A critical step is to visualize the whiskers with clarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on inference about research requirements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "c50aa519-b0d5-42fc-bc7a-454d85ace628",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C62",
+      "claim": "The ideal whisker visualization methodology should be simple and easy to execute, dependent on materials that are low-cost and readily available, innocuous for the animal and uninfluential on behavior, long-lasting, and uninfluential on the dynamic mechanical properties of the whiskers.",
+      "claim_type": "EXPLICIT",
+      "source": "The ideal methodology should be (i) simple and easy to execute, (ii) dependent on materials that are low-cost and readily available, (iii) innocuous for the animal and uninfluential on behavior, (iv) long-lasting, and (v) uninfluential on the dynamic mechanical properties of the whiskers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on logical reasoning about desirable method properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "117db8fd-d8d2-4005-aee8-9a18b348ee69",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C63",
+      "claim": "The fluorescent dye method described in the present work satisfies the constraints of an ideal whisker visualization methodology.",
+      "claim_type": "EXPLICIT",
+      "source": "The method described in the present work satisfies these constraints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "f0eb1c52-354a-4d1e-b4fe-d0c0cf62f5a7",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C64",
+      "claim": "The limitation of the fluorescent dye method is the reduced number of vibrissae that can be simultaneously imaged and tracked.",
+      "claim_type": "EXPLICIT",
+      "source": "Its limitation is the reduced number of vibrissae that can be simultaneously imaged and tracked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on assessment of the method's capabilities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "ceaa190a-1524-4b43-a8c4-f16258f6fbf6",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C65",
+      "claim": "Future work could focus on further wavelength separation to address the limitation of tracking multiple vibrissae.",
+      "claim_type": "EXPLICIT",
+      "source": "To face this challenge, future work could focus on further wavelength separation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "fc93aa1a-2a47-4827-837f-f5ab463f2b82",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C66",
+      "claim": "Rats that underwent dye application and sham-control rats were sedated for about 2 to 2.5 hr by injection of Domitor (Medetomidine hydrochloride, dose: 0.5 mg/kg, i.p.).",
+      "claim_type": "EXPLICIT",
+      "source": "Rats that underwent the application of the dye (N = 3 two were used in the behavioral study and one used to shoot the Video 2) and sham-control rats (N = 2) were sedated for about 2 to 2.5 hr by injection of Domitor (Medetomidine hydrochloride, dose: 0.5 mg/kg, i.p.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "5a6bb096-e464-4586-b0fb-e5229819117f",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C67",
+      "claim": "An injection of Antisedan (Atipamezole hydrochloride, standard dose 0.2 ml) was used to reverse the sedated state after the procedure terminated.",
+      "claim_type": "EXPLICIT",
+      "source": "With the procedure terminated, an injection of Antisedan (Atipamezole hydrochloride, standard dose 0.2 ml) was used to reverse the sedated state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "0baf1d31-7528-455b-9ee9-193b3b6bd43c",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C68",
+      "claim": "Four male Wistar rats from Harlan Laboratories were housed individually or with one cage mate and kept on a 14/10 light/dark cycle and reached a weight of 450\u2013550 g.",
+      "claim_type": "EXPLICIT",
+      "source": "Four male Wistar rats (Harlan Laboratories) were housed individually or with one cage mate and kept on a 14/10 light/dark cycle and reached a weight of 450\u2013550 g.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental subjects and housing conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "cbd84907-1d9d-4307-81e3-9a9271dfc4ac",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C69",
+      "claim": "The rats were examined weekly by a veterinarian.",
+      "claim_type": "EXPLICIT",
+      "source": "They were examined weekly by a veterinarian.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes animal care procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "8c9633ee-c4f4-40f7-974a-22198df94c0b",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C70",
+      "claim": "At the beginning of the experiment, the rats had already been trained to perform a vibrotactile delayed comparison task.",
+      "claim_type": "EXPLICIT",
+      "source": "At the beginning of the experiment, they had already been trained to perform a vibrotactile delayed comparison task (Fassihi et al., 2014): they compared the mean speed of two vibrotactile stimuli by placing their whiskers on a 20 \u00d7 30 mm plate attached to the diaphragm of a shaker motor (type 4808; Bruel and Kjaer).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design and training.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "9f0258e7-f6fd-4d0e-bd8e-407c15838e46",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C71",
+      "claim": "Performance is defined as the percent of trials in which the rat correctly selected the reward side, a selection determined by the relative mean speeds of two stochastic vibrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Performance is defined as the percent of trials in which the rat correctly selected the reward side (left or right), a selection determined by the relative mean speeds of two stochastic vibrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines the performance metric used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "245b5fa1-e6c2-4fbe-82a7-11c1813c6964",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C72",
+      "claim": "Each stimulus was built by sampling a normal distribution in position centered at 0 and then applying a Butterworth low-pass filter with 150 Hz cutoff frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Each stimulus was built by sampling a normal distribution in position centered at 0 and then applying a Butterworth low-pass filter with 150 Hz cutoff frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the stimulus generation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "5d9f8b8d-9e9a-4f44-9a44-61dad8f7486c",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C73",
+      "claim": "Protocols conformed to international norms and were approved by the Italian Health Ministry and the Ethics Committee of the International School for Advanced Studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Protocols conformed to international norms and were approved by the Italian Health Ministry and the Ethics Committee of the International School for Advanced Studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "0a9b079f-14f4-412b-b4de-76c8d1a2e66a",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C74",
+      "claim": "One male naive Wistar rat was killed by CO2 overdose in order to extract whisker samples from both vibrissal pads.",
+      "claim_type": "EXPLICIT",
+      "source": "One male naive Wistar rat (Harlan Laboratories) was killed by CO2 overdose in order to extract whisker samples from both vibrissal pads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the procedure for obtaining whisker samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "85a49f5e-c5cf-4306-bf42-759694db4b5d",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C75",
+      "claim": "To collect samples, the vibrissal pad was surgically removed and then the skin was precisely cut around the whisker follicle so that each sample included the follicle that mechanically wedges the hair shaft into the skin.",
+      "claim_type": "EXPLICIT",
+      "source": "To collect samples, firstly the vibrissal pad was surgically removed and then the skin was precisely cut around the whisker follicle. In this way, each sample included the follicle that mechanically wedges the hair shaft into the skin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample collection procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "55fd0e62-3271-4a69-8b53-6372db94d5b7",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C76",
+      "claim": "The 'Hair Color Rinse Semi Permanent' line, in particular 'UV Red' and 'UV Green', was used for the fluorescent dye.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the 'Hair Color Rinse Semi Permanent' line, in particular 'UV Red' and 'UV Green' in Figure 1A\u2013C. We used 'UV Red' for the measurements of the dynamic responses (Figures 2\u20134).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the materials used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "e759478e-e26a-42d0-b5dc-6e7346bdf538",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C77",
+      "claim": "Semi-permanent hair rinse is designed to diffuse into and bind to the hair.",
+      "claim_type": "EXPLICIT",
+      "source": "Semi-permanent hair rinse is designed to diffuse into and bind to the hair (Robbins, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "7082b8c8-78fc-477f-98ab-47a14df1687f",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C78",
+      "claim": "A gel of 3% hydrogen peroxide mixed with a booster powder was applied to bleach the whiskers before dye application.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to bleach the whiskers before dye application, we applied a gel of 3% hydrogen peroxide mixed with a booster powder (Robbins, 2012, Table 4-3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "98e447f4-1624-49b5-8c93-d2106941531f",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C79",
+      "claim": "The chemical bleaching process would be expected to follow a diffusion law, where the diffusivity for the human hair has been estimated as 1.8 \u00d7 10\u22129 cm2/min.",
+      "claim_type": "EXPLICIT",
+      "source": "The chemical bleaching process would be expected to follow a diffusion law, where the diffusivity for the human hair has been estimated as 1.8 \u00d7 10\u22129 cm2/min (Robbins, 2012, Figure 4-3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citation to prior research on hair chemistry.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "336ecd12-01c8-4fd1-a5f6-5d6d4250719c",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C80",
+      "claim": "After bleaching, whiskers were washed with distilled water, dried, and then submerged for 30 min in the hair color gel.",
+      "claim_type": "EXPLICIT",
+      "source": "Afterwards, we washed the whiskers with distilled water, dried them, and then submerged them for 30 min in the hair color gel (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "6ebaa2a2-a328-48d1-a1cd-5c7100fb7a30",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C81",
+      "claim": "The mass of a set of 34 whiskers was measured by means of a scale with an accuracy of 0.1 mg.",
+      "claim_type": "EXPLICIT",
+      "source": "As an empirical verification, we measured the mass of a set of 34 whiskers (a multiwhisker sample reduces the likelihood of measurement error) by means of a scale (RADWAG AS 220.R2) with an accuracy of 0.1 mg.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the measurement procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "e9c7928f-7c14-48f3-9dfa-3a17f5755525",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C82",
+      "claim": "Prior to processing, the pooled mass of 34 whiskers was 14.8 mg.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to processing, the pooled mass was 14.8 mg.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "fac0d94b-eadd-4d2f-8448-c92048e7c5b7",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C83",
+      "claim": "No difference in mass was detected after the chemical bleaching.",
+      "claim_type": "EXPLICIT",
+      "source": "No difference in mass was detected after the chemical bleaching, while the coloring produced an increment of 0.1 mg (from 14.8 to 14.9 mg; within the measurement error of the scale), less than 0.7%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "6e712f69-a9ff-4526-a0c0-06d0b12201a3",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C84",
+      "claim": "The coloring produced an increment of 0.1 mg (from 14.8 to 14.9 mg; within the measurement error of the scale), less than 0.7%.",
+      "claim_type": "EXPLICIT",
+      "source": "No difference in mass was detected after the chemical bleaching, while the coloring produced an increment of 0.1 mg (from 14.8 to 14.9 mg; within the measurement error of the scale), less than 0.7%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "9fa8a9e6-dde1-46e3-af32-76adaca09642",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C85",
+      "claim": "Photobleaching of the dye was measured for 7 hr with all seven of the lamp's LEDs pointing at the whiskers at a distance of about 15 cm.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the photobleaching of the dye for 7 hr with all seven of the lamp's LEDs pointing at the whiskers at a distance of about 15 cm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "31899df9-dd47-4f4e-8046-e6e85026887d",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C86",
+      "claim": "The measured time constant for photobleaching was about 14 hr (about 50,000 s), equivalent to about 25,000 trials of 2 s.",
+      "claim_type": "EXPLICIT",
+      "source": "We fit the data with an exponential law, the standard decay function for photobleaching. The measured time constant was about 14 hr (about 50,000 s), equivalent to about 25,000 trials of 2 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from photobleaching measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "048b9f55-fa19-40ff-a13d-ff639a137a62",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C87",
+      "claim": "The dynamic response of animal whiskers can be suitably explored by means of beam theory because their geometry resembles that of a thin, flexible filament.",
+      "claim_type": "EXPLICIT",
+      "source": "As the geometry of animal whiskers resembles that of a thin, flexible filament, their dynamic response to mechanical stimuli can be suitably explored by means of beam theory (Birdwell et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citation to prior research and knowledge of beam theory.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "2a943455-c3bc-437e-8755-ac7c06f4a077",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C88",
+      "claim": "One can exploit the mechanical analogy between a whisker and a tapered beam.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, one can exploit the mechanical analogy between a whisker and a tapered beam (Quist and Hartmann, 2012; Williams and Kramer, 2010; Hires et al., 2013; Bush et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "fc39a9c8-0f56-4a39-a44c-0ecc76597373",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C89",
+      "claim": "A truncated conical beam model can predict rat whiskers' natural resonant frequencies (the normal modes).",
+      "claim_type": "EXPLICIT",
+      "source": "A truncated conical beam model can predict rat whiskers' natural resonant frequencies (Yan et al., 2013), the so-called normal modes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "8a75e31c-5b97-4aa2-9116-5b39eab566d6",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C90",
+      "claim": "The whisker model was implemented in the commercial, finite element software COMSOL Multiphysics (version 5.2a).",
+      "claim_type": "EXPLICIT",
+      "source": "The whisker model of Equation 5 and 6 was implemented in the commercial, finite element software COMSOL Multiphysics (version 5.2a, RRID:SCR_014767).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "748d9b80-a3b1-47b6-9f8e-7163915fe646",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C91",
+      "claim": "Whiskers were accurately discretized into a finite element mesh comprising 200 elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Whiskers were accurately discretized into a finite element mesh comprising 200 elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "a3519d8c-404a-4173-be23-3d066d726ca4",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C92",
+      "claim": "Cubic and quadratic shape functions were employed for the approximation of the displacement and rotation field, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Cubic and quadratic shape functions were employed for the approximation of the displacement and rotation field, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "80325585-2145-46ee-98a5-194482b6c54b",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C93",
+      "claim": "Reference material parameters were taken from the literature and tuned to fit the experimental results with the numerical computations.",
+      "claim_type": "EXPLICIT",
+      "source": "Reference material parameters were taken from the literature (Hartmann et al., 2003) and tuned to fit the experimental results with the numerical computations (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling approach, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "703fb10f-fd55-46c3-a6ab-8fb17da912f7",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C94",
+      "claim": "The dynamic response of rat whiskers is sensitive to their geometric and constitutive parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "As becomes evident from the mathematical formulation, the dynamic response of rat whiskers is sensitive to their geometric and constitutive parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on inference from the mathematical model.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "aca00f74-1ef7-4689-a072-0c4b4f2b60a4",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C95",
+      "claim": "A change in the modal frequencies distribution can only be explained by a change in the whisker constitutive parameters, given a whisker geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Given a whisker geometry, these are distributed along the frequency axis depending upon the material parameters. Thus, a change in the modal frequencies distribution can only be explained by a change in the whisker constitutive parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on logical inference from beam theory.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "88301958-b337-4286-96d1-8a5bcf95f475",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C96",
+      "claim": "Dynamic responses comparison is a meaningful approach to determine whether mechanical changes occurred as a consequence of the chemical processes needed to apply the fluorescent dye on the whisker.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, in this work, we propose the dynamic responses comparison as a meaningful approach to determine whether mechanical changes occurred or not as a consequence of the chemical processes needed to apply the fluorescent dye on the whisker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the methodological approach proposed, based on inference.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "1a8d9228-7dbb-432a-8132-f7ab2dfdd449",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C97",
+      "claim": "The setup included a mounting structure designed to fix the sample without gluing it, a condition which would have affected the measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "The setup (Figure 2B) included a mounting structure, designed to fix the sample without gluing it, a condition which would have affected the measurements.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental setup design rationale.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "abbf6db1-4952-48c8-b26b-7a9af422edbf",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C98",
+      "claim": "The whole system was installed on a base that was shaken by a loudspeaker controlled by using a custom-made LabVIEW code.",
+      "claim_type": "EXPLICIT",
+      "source": "The whole system was installed on a base that was shaken by a loudspeaker (8 Ohm, 30 W - Visaton) controlled by using a custom-made LabVIEW code (National Instruments, RRID:SCR_014325).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "5bf13cce-b3ca-460f-ad2a-5585765bda46",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C99",
+      "claim": "The set-point of the control input to the loudspeaker was computed to be a white noise sampled at 2 kHz and low-pass filtered with a Gaussian filter at 1 kHz.",
+      "claim_type": "EXPLICIT",
+      "source": "The set-point of the control input to the loudspeaker was computed to be a white noise sampled at 2 kHz and low-pass filtered with a Gaussian filter at 1 kHz (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the stimulus generation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "b183bb15-3845-4b6e-8017-9cb00e2399a9",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C100",
+      "claim": "A high-speed camera recorded the sample vibrations at 2000 frames per second.",
+      "claim_type": "EXPLICIT",
+      "source": "In front of the stage, a high-speed camera (CamRecord 450, Optronis) recorded the sample vibrations at 2000 frames per second.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data acquisition method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "d05a6a99-7a05-4493-b1b1-3330348d1109",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C101",
+      "claim": "The mFRFs were averaged over 10 repetitions of different trials using different white noise signals because this number of trials was sufficient to lower the statistic error of the measurement below the image pixel resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The mFRFs were averaged over 10 repetitions of different trials using different white noise signals, because this number of trials was sufficient in order to lower the statistic error of the measurement below the image pixel resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis approach and its rationale.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "6b84a5f1-2dd9-4d7a-b974-c0df90efb06c",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C102",
+      "claim": "Image processing was performed using a Python custom code that makes use of the OpenCV library.",
+      "claim_type": "EXPLICIT",
+      "source": "Image processing was performed using a Python (PSF, http://www.python.org) custom code that makes use of the OpenCV library (Bradski, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the image processing method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "183968e1-7b33-469e-845d-d3ab7a274fad",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "claim_id": "C103",
+      "claim": "The coefficient of determination (R2) of the linear regression between two mFRFs is defined as a non-negative normalized similarity metric.",
+      "claim_type": "EXPLICIT",
+      "source": "We define the coefficient of determination (R2) of their linear regression as non-negative normalized similarity metric: R2 equal to 1 corresponds to the identical responses while R2 equal to 0 corresponds to completely uncorrelated responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines the similarity metric used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0b22af7e-5050-4acd-ac74-63c1a24df5e9",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The fluorescent dye method enhances whisker visibility against a dark background. Under blue light with appropriate optical filters, dyed whiskers show enhanced contrast and are readily separable by color, facilitating tracking using standard image processing software (JFilament).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C24-C29 provide converging visual evidence from multiple imaging conditions (white light, blue light with filters) showing enhanced contrast and visibility. Claims C30-C32 demonstrate successful tracking implementation. The visual data in Figures 1A-C and Videos 1-2 directly support these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "05eb6540-a042-46bc-a81e-f87c72b3901e",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Fluorescent dye application does not affect behavioral performance in a vibrissal vibrotactile discrimination task. Four rats (two dyed, two sham controls) showed no discernible change in performance before versus after treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37 describe a controlled behavioral experiment with appropriate controls (sham treatment). Figure 1D-E shows stable performance across sessions and no difference between groups. The experimental design (dyeing entire vibrissal pad to maximize detection of adverse effects) strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "971ec48c-0685-4410-9b18-220d92ca0345",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The magnitude of the frequency response function (mFRF) serves as a mechanical fingerprint for whiskers. Both FEM simulations and experimental measurements confirm that whiskers behave as tapered beams, with mFRF sensitive to geometry and material parameters. The mFRF provides a quantitative similarity metric (R\u00b2) for comparing whisker mechanical properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C49 and C87-C96 establish the theoretical framework (Euler-Bernoulli beam theory) and validate it through comparison of simulated and experimental data (Figure 2A vs 2C). The similarity between FEM and experimental results (Figure 4A-D) confirms the validity of using mFRF as a mechanical fingerprint. The methodology is well-grounded in established beam theory.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "87498488-c109-4909-a989-4f0f4fa813e3",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Fluorescent dye application does not alter whisker mechanical properties. Dynamic response measurements show high similarity (R\u00b2 > 0.8) before and after dye application across all tested whiskers, while nail polish severely altered response (R\u00b2 < 0.3). Mass measurements showed negligible change (<0.7%) after dyeing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 and C82-C84 provide converging evidence from dynamic response measurements (Figure 4B, E, F) and direct mass measurements. The inclusion of nail polish as a positive control (C51) that does alter properties strengthens the conclusion. The R\u00b2 threshold of 0.8 is consistently maintained across all whiskers, and mass change is within measurement error.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "fa16a01a-6b98-4556-83ec-bbb022be8ad3",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The behavioral data support that dye application did not affect whisker mechanical properties, though the authors acknowledge that rats might have compensated for altered properties as they do for whisker clipping.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C38 draws an inference from behavioral data, but C39 correctly identifies an alternative explanation. While the subsequent mechanical measurements (C50-C53) resolve this uncertainty by directly showing no mechanical changes, these claims alone represent an acknowledged limitation of behavioral testing that required additional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "e90efc70-276d-40b5-8ef0-31d5e6527823",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The fluorescent dye method satisfies the criteria for an ideal whisker visualization methodology (simple, low-cost, innocuous, long-lasting, mechanically neutral), but is limited in the number of vibrissae that can be simultaneously tracked.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 synthesize the experimental findings to evaluate the method against stated criteria. The supporting data from behavioral tests (C33-C37), mechanical measurements (C50-C53), and photobleaching studies (C85-C86) validate each criterion. Claim C64 acknowledges a genuine limitation, and C65 appropriately suggests future work rather than claiming the problem is solved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "4170f7ff-8684-42c0-9c0d-dbaba4056606",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The fluorescent dye exhibits photobleaching with a time constant of approximately 14 hours, equivalent to about 25,000 trials of 2 seconds each.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86 describe a controlled photobleaching experiment with continuous illumination. The exponential decay model is appropriate for photobleaching, and the measured time constant provides a practical estimate of dye longevity. However, the manuscript does not provide the actual photobleaching data or fit quality metrics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "65a96af9-0b98-4484-b5a4-130ad2471da7",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The dye application protocol involves bleaching whiskers with 3% hydrogen peroxide, then applying semi-permanent hair dye (StarGazer UV Red/Green) for 30 minutes. Semi-permanent dyes are designed to diffuse into and bind to hair.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C80 describe the methodological protocol with appropriate citations to hair chemistry literature (Robbins, 2012). The protocol is clearly documented and reproducible. The citation to human hair diffusivity (C79) provides theoretical context, though direct validation for rat whiskers is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "4b4ff713-1442-4bd7-8b0d-fb27192c7192",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "High-speed videography is the most adequate method for measuring whisker motion, but faces challenges including low contrast, heavy computational requirements, and sensitivity to lighting conditions. Higher luminance contrast could solve many of these challenges, and fluorescence offers advantages including homogeneous light emission and color-based segmentation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C16-C22 establish the motivation for the study by reviewing existing methods and their limitations. These claims are supported by appropriate citations and represent established knowledge in the field. The logical progression from identifying problems (C3, C17-C19) to proposing solutions (C20-C22) is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "20c7ed63-4391-428d-a3b1-6d5722542c11",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Alternative whisker tracking methods have significant limitations: electrical activity monitoring requires invasive implants and doesn't specify position; particle tracking perturbs dynamics and loses shape information; laser sheet methods require trimming and lose shape information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 review alternative methods with appropriate citations. The limitations are accurately characterized based on the cited literature and physical principles (e.g., added mass affecting dynamics in C14). These claims provide context for why the fluorescent dye method is needed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "b2bce3cc-a68c-4fda-8628-f10e683a0f34",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Whisker-mediated touch in rodents involves complex sensorimotor processing where whiskers and follicles pre-process tactile information before it reaches the nervous system. Unlike vision, the external stimulus does not adequately describe the sensory input, making whisker visualization critical for understanding sensorimotor processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C11 and C54-C61 provide background on whisker sensory biology and the rationale for precise whisker tracking. All claims are supported by appropriate citations to established literature. The comparison to vision (C54-C56) effectively illustrates why whisker tracking is uniquely challenging.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "4840a915-cf2d-4105-81ab-abb0952882b6",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study employed appropriate experimental methods including sedation protocols, behavioral testing apparatus, whisker sample collection, mechanical testing setup with high-speed videography (2000 fps), and image processing using Python/OpenCV. The coefficient of determination (R\u00b2) was used as a similarity metric for comparing mFRFs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C75 and C97-C103 describe methodological details that are clearly documented and reproducible. The methods are appropriate for the research questions. Ethical approval is documented (C73). The R\u00b2 metric (C103) is a standard and appropriate measure for comparing frequency response functions. However, some details lack justification (e.g., why 10 repetitions in C101, though the rationale about pixel resolution is provided).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    },
+    {
+      "id": "ed4dc154-caf1-40b3-a4fd-acdad3179db6",
+      "content_id": "89638fbe-6762-4a2c-98e7-0bf13a1ad123",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The application of fluorescent dye may affect whisker mass and stiffness, potentially altering tactile perception during behavioral tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claim C23 represents a hypothesis that motivated the study but was subsequently refuted by the experimental data (C50-C53, C82-C84). The claim itself is speculative (marked as SPECULATION in evidence_type) and the study's findings demonstrate this concern was unfounded. This claim is important for understanding the study's motivation but does not represent a supported result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:18.114972Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0d749af3-45d4-43d5-914e-ea487cac7f3c",
+      "result_id": "0b22af7e-5050-4acd-ac74-63c1a24df5e9"
+    },
+    {
+      "claim_id": "d68fa9ae-9693-4323-b3df-1850a65554f9",
+      "result_id": "0b22af7e-5050-4acd-ac74-63c1a24df5e9"
+    },
+    {
+      "claim_id": "325f811b-e476-4b86-aaa6-5187f8f515ce",
+      "result_id": "0b22af7e-5050-4acd-ac74-63c1a24df5e9"
+    },
+    {
+      "claim_id": "4be0c69d-c2ab-4c7c-8137-526c9cbf73f2",
+      "result_id": "0b22af7e-5050-4acd-ac74-63c1a24df5e9"
+    },
+    {
+      "claim_id": "67fe1f6b-924b-4eec-bde2-264bcddb6c41",
+      "result_id": "0b22af7e-5050-4acd-ac74-63c1a24df5e9"
+    },
+    {
+      "claim_id": "0330e051-6c44-476e-83b5-93bd5478356f",
+      "result_id": "0b22af7e-5050-4acd-ac74-63c1a24df5e9"
+    },
+    {
+      "claim_id": "396f7ed2-a219-4705-9472-7f88f7014bb3",
+      "result_id": "0b22af7e-5050-4acd-ac74-63c1a24df5e9"
+    },
+    {
+      "claim_id": "dcb50ef3-c1ff-400f-975d-ac31b63822e7",
+      "result_id": "0b22af7e-5050-4acd-ac74-63c1a24df5e9"
+    },
+    {
+      "claim_id": "d6d4fe5f-0299-40f0-8427-8584f69bb7e9",
+      "result_id": "0b22af7e-5050-4acd-ac74-63c1a24df5e9"
+    },
+    {
+      "claim_id": "022c5f62-32d7-402d-9048-b1ca0b3d612c",
+      "result_id": "0b22af7e-5050-4acd-ac74-63c1a24df5e9"
+    },
+    {
+      "claim_id": "8b7a06e6-e424-496f-9560-da07f9fd4a2d",
+      "result_id": "05eb6540-a042-46bc-a81e-f87c72b3901e"
+    },
+    {
+      "claim_id": "84c5fb4e-79c1-40e4-8081-d45fcb830df3",
+      "result_id": "05eb6540-a042-46bc-a81e-f87c72b3901e"
+    },
+    {
+      "claim_id": "f69c0267-0904-449b-af4f-c7962097a17d",
+      "result_id": "05eb6540-a042-46bc-a81e-f87c72b3901e"
+    },
+    {
+      "claim_id": "eedd9217-09ed-44b2-8e40-a4f53619c222",
+      "result_id": "05eb6540-a042-46bc-a81e-f87c72b3901e"
+    },
+    {
+      "claim_id": "1c11c0be-fa25-4963-a9bd-fd684692d940",
+      "result_id": "05eb6540-a042-46bc-a81e-f87c72b3901e"
+    },
+    {
+      "claim_id": "d7ad68ee-0797-4581-92a2-d9b4fe9c381e",
+      "result_id": "971ec48c-0685-4410-9b18-220d92ca0345"
+    },
+    {
+      "claim_id": "41e43430-cbf4-4e8a-8f36-acf8a8d18b45",
+      "result_id": "971ec48c-0685-4410-9b18-220d92ca0345"
+    },
+    {
+      "claim_id": "59209662-deb9-48c0-b558-27ff3ff1f85e",
+      "result_id": "971ec48c-0685-4410-9b18-220d92ca0345"
+    },
+    {
+      "claim_id": "b719ee1d-9332-4a7b-9b6d-c54eddc5e376",
+      "result_id": "971ec48c-0685-4410-9b18-220d92ca0345"
+    },
+    {
+      "claim_id": "76e3b90a-40df-45cd-b53a-c99ebbb366ff",
+      "result_id": "971ec48c-0685-4410-9b18-220d92ca0345"
+    },
+    {
+      "claim_id": "711a52de-ca33-4129-9d9f-8bd245ed2975",
+      "result_id": "971ec48c-0685-4410-9b18-220d92ca0345"
+    },
+    {
+      "claim_id": "5cd72743-0f62-4f25-a40c-08fef947b8e0",
+      "result_id": "971ec48c-0685-4410-9b18-220d92ca0345"
+    },
+    {
+      "claim_id": "a9462353-c813-41e5-a95e-374c49a6aac5",
+      "result_id": "971ec48c-0685-4410-9b18-220d92ca0345"
+    },
+    {
+      "claim_id": "5580bfdf-a0d5-4d0c-b14a-c23c3b028935",
+      "result_id": "971ec48c-0685-4410-9b18-220d92ca0345"
+    },
+    {
+      "claim_id": "2b52432f-edf5-4f84-9823-a9672a330673",
+      "result_id": "971ec48c-0685-4410-9b18-220d92ca0345"
+    },
+    {
+      "claim_id": "048b9f55-fa19-40ff-a13d-ff639a137a62",
+      "result_id": "971ec48c-0685-4410-9b18-220d92ca0345"
+    },
+    {
+      "claim_id": "2a943455-c3bc-437e-8755-ac7c06f4a077",
+      "result_id": "971ec48c-0685-4410-9b18-220d92ca0345"
+    },
+    {
+      "claim_id": "fc39a9c8-0f56-4a39-a44c-0ecc76597373",
+      "result_id": "971ec48c-0685-4410-9b18-220d92ca0345"
+    },
+    {
+      "claim_id": "8a75e31c-5b97-4aa2-9116-5b39eab566d6",
+      "result_id": "971ec48c-0685-4410-9b18-220d92ca0345"
+    },
+    {
+      "claim_id": "748d9b80-a3b1-47b6-9f8e-7163915fe646",
+      "result_id": "971ec48c-0685-4410-9b18-220d92ca0345"
+    },
+    {
+      "claim_id": "a3519d8c-404a-4173-be23-3d066d726ca4",
+      "result_id": "971ec48c-0685-4410-9b18-220d92ca0345"
+    },
+    {
+      "claim_id": "80325585-2145-46ee-98a5-194482b6c54b",
+      "result_id": "971ec48c-0685-4410-9b18-220d92ca0345"
+    },
+    {
+      "claim_id": "703fb10f-fd55-46c3-a6ab-8fb17da912f7",
+      "result_id": "971ec48c-0685-4410-9b18-220d92ca0345"
+    },
+    {
+      "claim_id": "aca00f74-1ef7-4689-a072-0c4b4f2b60a4",
+      "result_id": "971ec48c-0685-4410-9b18-220d92ca0345"
+    },
+    {
+      "claim_id": "88301958-b337-4286-96d1-8a5bcf95f475",
+      "result_id": "971ec48c-0685-4410-9b18-220d92ca0345"
+    },
+    {
+      "claim_id": "1e161470-7c92-4db4-bf53-49c3bad11ce3",
+      "result_id": "87498488-c109-4909-a989-4f0f4fa813e3"
+    },
+    {
+      "claim_id": "7f3c7bbf-5f35-4b80-86d4-9b6cca7ff739",
+      "result_id": "87498488-c109-4909-a989-4f0f4fa813e3"
+    },
+    {
+      "claim_id": "90e4e6ca-0abe-4256-a8dc-23f6511e74a4",
+      "result_id": "87498488-c109-4909-a989-4f0f4fa813e3"
+    },
+    {
+      "claim_id": "eb888664-859a-4d1d-a50e-cb5dadecbe09",
+      "result_id": "87498488-c109-4909-a989-4f0f4fa813e3"
+    },
+    {
+      "claim_id": "e9c7928f-7c14-48f3-9dfa-3a17f5755525",
+      "result_id": "87498488-c109-4909-a989-4f0f4fa813e3"
+    },
+    {
+      "claim_id": "fac0d94b-eadd-4d2f-8448-c92048e7c5b7",
+      "result_id": "87498488-c109-4909-a989-4f0f4fa813e3"
+    },
+    {
+      "claim_id": "6e712f69-a9ff-4526-a0c0-06d0b12201a3",
+      "result_id": "87498488-c109-4909-a989-4f0f4fa813e3"
+    },
+    {
+      "claim_id": "18d20502-f5d9-418c-8f2e-ce6a1db015ec",
+      "result_id": "fa16a01a-6b98-4556-83ec-bbb022be8ad3"
+    },
+    {
+      "claim_id": "8e8f88f2-44de-47f1-b79f-49ad595e0732",
+      "result_id": "fa16a01a-6b98-4556-83ec-bbb022be8ad3"
+    },
+    {
+      "claim_id": "c50aa519-b0d5-42fc-bc7a-454d85ace628",
+      "result_id": "e90efc70-276d-40b5-8ef0-31d5e6527823"
+    },
+    {
+      "claim_id": "117db8fd-d8d2-4005-aee8-9a18b348ee69",
+      "result_id": "e90efc70-276d-40b5-8ef0-31d5e6527823"
+    },
+    {
+      "claim_id": "f0eb1c52-354a-4d1e-b4fe-d0c0cf62f5a7",
+      "result_id": "e90efc70-276d-40b5-8ef0-31d5e6527823"
+    },
+    {
+      "claim_id": "ceaa190a-1524-4b43-a8c4-f16258f6fbf6",
+      "result_id": "e90efc70-276d-40b5-8ef0-31d5e6527823"
+    },
+    {
+      "claim_id": "9fa8a9e6-dde1-46e3-af32-76adaca09642",
+      "result_id": "4170f7ff-8684-42c0-9c0d-dbaba4056606"
+    },
+    {
+      "claim_id": "31899df9-dd47-4f4e-8046-e6e85026887d",
+      "result_id": "4170f7ff-8684-42c0-9c0d-dbaba4056606"
+    },
+    {
+      "claim_id": "55fd0e62-3271-4a69-8b53-6372db94d5b7",
+      "result_id": "65a96af9-0b98-4484-b5a4-130ad2471da7"
+    },
+    {
+      "claim_id": "e759478e-e26a-42d0-b5dc-6e7346bdf538",
+      "result_id": "65a96af9-0b98-4484-b5a4-130ad2471da7"
+    },
+    {
+      "claim_id": "7082b8c8-78fc-477f-98ab-47a14df1687f",
+      "result_id": "65a96af9-0b98-4484-b5a4-130ad2471da7"
+    },
+    {
+      "claim_id": "98e447f4-1624-49b5-8c93-d2106941531f",
+      "result_id": "65a96af9-0b98-4484-b5a4-130ad2471da7"
+    },
+    {
+      "claim_id": "336ecd12-01c8-4fd1-a5f6-5d6d4250719c",
+      "result_id": "65a96af9-0b98-4484-b5a4-130ad2471da7"
+    },
+    {
+      "claim_id": "0ba76c24-e7b3-425b-9b65-39be91273582",
+      "result_id": "4b4ff713-1442-4bd7-8b0d-fb27192c7192"
+    },
+    {
+      "claim_id": "e0b50ef4-4261-4c3f-8a92-4d7eba26df79",
+      "result_id": "4b4ff713-1442-4bd7-8b0d-fb27192c7192"
+    },
+    {
+      "claim_id": "4bb465e2-6030-417e-bd2a-7afe1454965d",
+      "result_id": "4b4ff713-1442-4bd7-8b0d-fb27192c7192"
+    },
+    {
+      "claim_id": "57d069d4-f325-4df0-8cc0-46a239255e1d",
+      "result_id": "4b4ff713-1442-4bd7-8b0d-fb27192c7192"
+    },
+    {
+      "claim_id": "d526a285-3a58-4f58-aebe-57ed168563f5",
+      "result_id": "4b4ff713-1442-4bd7-8b0d-fb27192c7192"
+    },
+    {
+      "claim_id": "98d9296b-a7b7-407e-ba42-ff2900548791",
+      "result_id": "4b4ff713-1442-4bd7-8b0d-fb27192c7192"
+    },
+    {
+      "claim_id": "31382a64-c6c2-43b7-aafe-7eddb15faa2b",
+      "result_id": "4b4ff713-1442-4bd7-8b0d-fb27192c7192"
+    },
+    {
+      "claim_id": "6f40e8f9-50a5-40fa-80f9-c053b204e8da",
+      "result_id": "4b4ff713-1442-4bd7-8b0d-fb27192c7192"
+    },
+    {
+      "claim_id": "ac95bdd1-fcd1-4d5d-882b-2ac79c63bd0a",
+      "result_id": "4b4ff713-1442-4bd7-8b0d-fb27192c7192"
+    },
+    {
+      "claim_id": "6e2184b7-2eb7-4623-b8d4-26e65a7fd985",
+      "result_id": "4b4ff713-1442-4bd7-8b0d-fb27192c7192"
+    },
+    {
+      "claim_id": "98091b9e-8e40-43f4-94d8-219d21879430",
+      "result_id": "20c7ed63-4391-428d-a3b1-6d5722542c11"
+    },
+    {
+      "claim_id": "3135e61c-2cbc-4afc-923e-b4f77830bed6",
+      "result_id": "20c7ed63-4391-428d-a3b1-6d5722542c11"
+    },
+    {
+      "claim_id": "08cf3990-ac46-4943-88ce-9155929ba917",
+      "result_id": "20c7ed63-4391-428d-a3b1-6d5722542c11"
+    },
+    {
+      "claim_id": "086e8697-e180-4dc1-8c77-52e8e19eaced",
+      "result_id": "20c7ed63-4391-428d-a3b1-6d5722542c11"
+    },
+    {
+      "claim_id": "86dc9869-10f8-4a37-8648-222a3aed8d13",
+      "result_id": "b2bce3cc-a68c-4fda-8628-f10e683a0f34"
+    },
+    {
+      "claim_id": "ffa6ee93-e64e-43fd-a88d-1048089694c7",
+      "result_id": "b2bce3cc-a68c-4fda-8628-f10e683a0f34"
+    },
+    {
+      "claim_id": "deae844b-a52d-459a-9531-983bf7e331f9",
+      "result_id": "b2bce3cc-a68c-4fda-8628-f10e683a0f34"
+    },
+    {
+      "claim_id": "00cd9131-a6e4-4b04-b7c1-550ec8a1b3ed",
+      "result_id": "b2bce3cc-a68c-4fda-8628-f10e683a0f34"
+    },
+    {
+      "claim_id": "3fc25a0f-58bd-4e21-872d-ff4b88a603ab",
+      "result_id": "b2bce3cc-a68c-4fda-8628-f10e683a0f34"
+    },
+    {
+      "claim_id": "8f4f4d0c-44a9-4194-a7b9-563fb6738621",
+      "result_id": "b2bce3cc-a68c-4fda-8628-f10e683a0f34"
+    },
+    {
+      "claim_id": "699b5a5b-7466-417d-929b-cc414f336420",
+      "result_id": "b2bce3cc-a68c-4fda-8628-f10e683a0f34"
+    },
+    {
+      "claim_id": "166e7564-d258-49bb-b0a1-ddbb10796097",
+      "result_id": "b2bce3cc-a68c-4fda-8628-f10e683a0f34"
+    },
+    {
+      "claim_id": "432914a6-0f20-4279-91b0-c81300098d61",
+      "result_id": "b2bce3cc-a68c-4fda-8628-f10e683a0f34"
+    },
+    {
+      "claim_id": "897d80ec-fe91-4525-8b31-8cd57c4a0b88",
+      "result_id": "b2bce3cc-a68c-4fda-8628-f10e683a0f34"
+    },
+    {
+      "claim_id": "4a1ebdb8-fbee-4d64-ae98-6b962882d98d",
+      "result_id": "b2bce3cc-a68c-4fda-8628-f10e683a0f34"
+    },
+    {
+      "claim_id": "df0ec83a-87a6-433c-a373-609e42f5286c",
+      "result_id": "b2bce3cc-a68c-4fda-8628-f10e683a0f34"
+    },
+    {
+      "claim_id": "d947eba2-c58e-47c7-b5f5-58046d531e23",
+      "result_id": "b2bce3cc-a68c-4fda-8628-f10e683a0f34"
+    },
+    {
+      "claim_id": "fc93aa1a-2a47-4827-837f-f5ab463f2b82",
+      "result_id": "4840a915-cf2d-4105-81ab-abb0952882b6"
+    },
+    {
+      "claim_id": "5a6bb096-e464-4586-b0fb-e5229819117f",
+      "result_id": "4840a915-cf2d-4105-81ab-abb0952882b6"
+    },
+    {
+      "claim_id": "0baf1d31-7528-455b-9ee9-193b3b6bd43c",
+      "result_id": "4840a915-cf2d-4105-81ab-abb0952882b6"
+    },
+    {
+      "claim_id": "cbd84907-1d9d-4307-81e3-9a9271dfc4ac",
+      "result_id": "4840a915-cf2d-4105-81ab-abb0952882b6"
+    },
+    {
+      "claim_id": "8c9633ee-c4f4-40f7-974a-22198df94c0b",
+      "result_id": "4840a915-cf2d-4105-81ab-abb0952882b6"
+    },
+    {
+      "claim_id": "9f0258e7-f6fd-4d0e-bd8e-407c15838e46",
+      "result_id": "4840a915-cf2d-4105-81ab-abb0952882b6"
+    },
+    {
+      "claim_id": "245b5fa1-e6c2-4fbe-82a7-11c1813c6964",
+      "result_id": "4840a915-cf2d-4105-81ab-abb0952882b6"
+    },
+    {
+      "claim_id": "5d9f8b8d-9e9a-4f44-9a44-61dad8f7486c",
+      "result_id": "4840a915-cf2d-4105-81ab-abb0952882b6"
+    },
+    {
+      "claim_id": "0a9b079f-14f4-412b-b4de-76c8d1a2e66a",
+      "result_id": "4840a915-cf2d-4105-81ab-abb0952882b6"
+    },
+    {
+      "claim_id": "85a49f5e-c5cf-4306-bf42-759694db4b5d",
+      "result_id": "4840a915-cf2d-4105-81ab-abb0952882b6"
+    },
+    {
+      "claim_id": "1a8d9228-7dbb-432a-8132-f7ab2dfdd449",
+      "result_id": "4840a915-cf2d-4105-81ab-abb0952882b6"
+    },
+    {
+      "claim_id": "abbf6db1-4952-48c8-b26b-7a9af422edbf",
+      "result_id": "4840a915-cf2d-4105-81ab-abb0952882b6"
+    },
+    {
+      "claim_id": "5bf13cce-b3ca-460f-ad2a-5585765bda46",
+      "result_id": "4840a915-cf2d-4105-81ab-abb0952882b6"
+    },
+    {
+      "claim_id": "b183bb15-3845-4b6e-8017-9cb00e2399a9",
+      "result_id": "4840a915-cf2d-4105-81ab-abb0952882b6"
+    },
+    {
+      "claim_id": "d05a6a99-7a05-4493-b1b1-3330348d1109",
+      "result_id": "4840a915-cf2d-4105-81ab-abb0952882b6"
+    },
+    {
+      "claim_id": "6b84a5f1-2dd9-4d7a-b974-c0df90efb06c",
+      "result_id": "4840a915-cf2d-4105-81ab-abb0952882b6"
+    },
+    {
+      "claim_id": "183968e1-7b33-469e-845d-d3ab7a274fad",
+      "result_id": "4840a915-cf2d-4105-81ab-abb0952882b6"
+    },
+    {
+      "claim_id": "7d96fc63-9964-4d70-b872-bf48df251471",
+      "result_id": "ed4dc154-caf1-40b3-a4fd-acdad3179db6"
+    }
+  ],
+  "comparisons": []
+}

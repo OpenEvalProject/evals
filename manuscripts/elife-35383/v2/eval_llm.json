@@ -1,0 +1,517 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "cisTEM is a new open-source software package for single-particle cryo-EM that implements a complete processing pipeline with a graphical user interface. The software is optimized for CPU-based processing and can process typical datasets on a high-end workstation in half a day or less, with performance comparable to GPU-accelerated processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 collectively describe the core features and capabilities of cisTEM. The software's existence, features, and performance characteristics are directly demonstrated through the manuscript's detailed descriptions, benchmarking results (Table 1 showing 4.7 hours total processing time), and figures showing the GUI and workflow. The claims are internally consistent and supported by the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "cisTEM's architecture consists of compiled C++ programs controlled by a wxWidgets-based GUI that communicates via TCP/IP sockets. The software incorporates rewritten versions of existing tools (Unblur, Summovie, CTFFIND4, Frealign) and adapted algorithms for particle picking, 2D classification, and ab-initio reconstruction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C21 describe the software architecture and development approach. These are well-supported by the detailed technical descriptions in the manuscript, citations to the original tools that were rewritten (C19, C20), and the stated open-source license (C21). The architecture enables both GUI-based and command-line usage as described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "cisTEM does not support GPU computation. Benchmarking showed that an NVIDIA K40 GPU performs approximately as well as 16 Xeon CPU cores after optimization. The developers chose to focus on CPU optimization due to easier maintenance and broader hardware compatibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 describe the design decision to focus on CPU rather than GPU processing. The benchmarking result (C23) provides quantitative support for the performance comparison. The reasoning for the design choice (C24-C26) is clearly stated, though the trade-offs are acknowledged in later claims (C239-C241).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Movie alignment in cisTEM is based on Unblur and Summovie algorithms, which iteratively align frames and apply exposure filtering. The functionality is combined into a single panel in cisTEM, and both programs were rewritten from Fortran to C++.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 describe the movie alignment functionality. These are well-supported by citations to the original algorithms (C27, C28) and detailed descriptions of the procedures (C29-C32). The integration into cisTEM's GUI (C33) is demonstrated in Figure 1, and the code rewrite (C34) is explicitly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "CTF determination in cisTEM is based on CTFFIND4, with several improvements including a faster 1D CTF search for initial defocus estimation, adjusted spectrum resampling for small pixel sizes, improved masking, and CTF aliasing warnings. Computing CTF from movies produces clearer Thon rings than from images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C47 describe CTF determination functionality and improvements. The base algorithm is properly cited (C35, C28), and the improvements are clearly described with technical details. The advantage of using movies (C37) is supported by Figure 2 showing visibly stronger Thon rings. The optimal frame summation (C38) is supported by citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "cisTEM implements a fast particle picking algorithm using soft-edged disk templates with matched filtering. The algorithm includes variance and mean thresholding to avoid artifacts, runs nearly instantaneously on typical images, and features an interactive 'Auto preview' mode for parameter optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C72 describe the particle picking algorithm and its features. The algorithm is properly attributed (C48) and its advantages are clearly stated (C49-C50). The interactive preview feature (C69-C72) is demonstrated in Figure 3. The performance claims (C68, C72) are specific and the artifact avoidance features (C62-C64) are shown to work in Figure 3. Limitations are acknowledged (C57-C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "While a single disk template might have difficulty with non-uniform particles, in practice elongated particles and particles with size variation were picked adequately with careful parameter optimization. The algorithm supports multiple references and rotation, which may be exposed in future versions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 address a potential limitation and its practical resolution. The concern (C73) is reasonable speculation, but the empirical observation (C74) is supported by Figure 3 showing successful picking. The underlying capability (C75) and future plans (C76) are clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C85",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "cisTEM implements maximum likelihood 2D classification that generates fully CTF-corrected class averages with high-resolution detail. The algorithm uses stepwise resolution increase and random data subsets to reduce overfitting and increase convergence radius.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C89 describe the 2D classification implementation. The algorithm is properly cited (C78) and the technical procedures are clearly described (C87-C89). The strategy to reduce overfitting (C85) is well-reasoned. The quality of results (C79) is demonstrated in the benchmarking workflow.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "cisTEM uses FrealignX, a C++ rewrite of Frealign, for 3D refinement. The new version implements a matched filter objective function that requires noise whitening and signal scaling based on the spectral signal-to-noise ratio (SSNR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C99 describe the FrealignX refinement engine. The relationship to Frealign is properly cited (C91, C94) and the code rewrite is stated (C96). The matched filter approach (C97-C99) is described with appropriate technical detail and citations. The GUI integration (C92-C93) is shown in Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "FrealignX can refine per-particle defocus values, which may be useful for particles \u2265400 kDa. For \u03b2-galactosidase, defocus refinement produced marginal improvement (0.05 \u00c5), but for rotavirus particles it improved resolution from ~3.0 \u00c5 to ~2.8 \u00c5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C109 describe per-particle defocus refinement with specific benchmarking results. The algorithm (C104-C105) is clearly described. The \u03b2-galactosidase results (C106-C107) show minimal improvement, while the rotavirus results (C108-C109) show substantial improvement. These contrasting results appropriately demonstrate when the feature is beneficial.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "FrealignX implements 3D masking to handle structures with disordered regions like detergent micelles. The mask can preserve low-pass filtered density outside the protein region to aid alignment while preventing noise overfitting. For TAP, this approach helped achieve 4 \u00c5 resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C121 describe the 3D masking functionality with a specific application example. The technical implementation (C111-C115) is clearly described. The TAP example (C116-C121) is well-documented in Figure 5 and properly cited. The reasoning for keeping low-resolution micelle signal (C119-C120) while filtering high-resolution noise is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "FrealignX is optimized for multi-core CPU execution using optimized library functions and on-the-fly cropping in real and reciprocal space. Real-space cropping is limited to global searches due to reduced interpolation accuracy, while reciprocal-space cropping is used when resolution limits are specified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C126 describe performance optimization strategies. The approaches are clearly described with appropriate technical detail about when each method is applied (C124-C125). The trade-offs are acknowledged (C124). These optimizations contribute to the overall performance demonstrated in the benchmarking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C137",
+      "C140",
+      "C142",
+      "C145",
+      "C146",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "cisTEM implements ab-initio 3D reconstruction starting from random angular parameters, using iterative refinement with automatic masking, random data subsets, and increasing resolution limits to avoid overfitting. For symmetric particles, symmetry is applied in the final third of iterations after initial refinement without symmetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C154 describe the ab-initio reconstruction procedure. The approach is properly cited (C129) and the underlying principle (C130) is clearly stated. The technical procedures (C132-C154) are described in detail. The results are demonstrated in Figure 7A showing progression from random initialization to a recognizable structure in less than an hour (C252).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C155",
+      "C158"
+    ],
+    "result": "Auto-refinement uses randomly selected data subsets and increasing resolution limits similar to ab-initio reconstruction. For multi-class refinement, resolution limits are set independently per class, but classification resolution is fixed at 8 \u00c5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155 and C158 describe the auto-refinement strategy. The approach is consistent with the ab-initio method and the technical details are clearly stated. The multi-class handling (C158) is a reasonable design choice to balance refinement quality with classification stability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "cisTEM includes map sharpening tools that can apply B-factors and/or whiten the power spectrum. Whitening avoids over-amplification at high resolution compared to exponential B-factor methods. Both methods can be combined and optionally filtered with FSC-based figure-of-merit curves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C168 describe map sharpening functionality. The standard practice (C161) provides context. The whitening approach (C163-C164) is clearly described with its advantage over B-factor methods. The masking step (C165-C166) and combination options (C167-C168) are well-explained with proper citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200"
+    ],
+    "result": "cisTEM's GUI is more than a wrapper, implementing algorithms directly and tracking all results in an SQL database. The design organizes processing into Assets, Actions, and Results panels that guide users through the standard workflow while providing flexibility to optimize parameters and select results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C200 describe the GUI design philosophy and implementation. The distinction from wrapper GUIs (C171-C178) provides important context. The architecture (C179-C185) and organization (C186-C200) are clearly described. The design is demonstrated throughout the figures (1, 3, 4) and enables the integrated workflow that is a key feature of cisTEM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212",
+      "C213"
+    ],
+    "result": "cisTEM uses a custom parallelization scheme with TCP/IP communication and user-defined Run Profiles. Unlike MPI, jobs complete even if fewer processors than requested are available. For merging steps, intermediate reconstructions are written to disk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C201-C213 describe the parallelization approach. The embarrassingly parallel nature of the problem (C202-C203) provides context. The implementation (C204-C207) is clearly described. The advantage over MPI (C209-C211) is well-explained with a concrete example (C210). The limitation (C208) is acknowledged. This design contributes to the flexibility claimed for cisTEM.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C214",
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220",
+      "C221",
+      "C222",
+      "C223",
+      "C224",
+      "C225",
+      "C226",
+      "C227",
+      "C228",
+      "C229",
+      "C230"
+    ],
+    "result": "Benchmarking with the \u03b2-galactosidase dataset (1539 movies, 119,523 particles after 2D classification) on a 44-core workstation took 4.7 hours total, including movie processing (1.1h), particle picking (0.1h), 2D classification (0.8h), ab-initio reconstruction (0.8h), and auto-refinement (1.4h) to 2.2 \u00c5 resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C214-C230 present comprehensive benchmarking results. The dataset is properly described and cited (C214-C215). The processing parameters (C216-C222) are clearly specified. The timing results (C223-C230) are presented in Table 1 and demonstrate the performance claims made in the abstract (C5). The final resolution (2.2 \u00c5) is shown in Figure 7B-C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C251",
+      "C252",
+      "C253",
+      "C254",
+      "C255",
+      "C256",
+      "C257"
+    ],
+    "result": "Figure 7 shows the ab-initio reconstruction progression from random angles to a refined structure in less than an hour, achieving 2.2 \u00c5 resolution with visible sidechain details. FSC curves calculated with tight masking and with generous masking plus solvent correction give similar resolution estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C251-C257 describe Figure 7 results. The ab-initio progression (C251-C252) demonstrates the method works as described. The high-resolution details (C253) validate the quality. The FSC analysis (C254-C257) demonstrates that the solvent correction method (Equation 19) produces results comparable to tight masking, supporting the resolution assessment approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C258",
+      "C259"
+    ],
+    "result": "Figure 6 demonstrates 3D classification of F1FO-ATPase, revealing three different conformational states of the \u03b3 subunit related by 120\u00b0 rotations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C258-C259 describe Figure 6 showing successful 3D classification. The three states are clearly visible in the figure sections, demonstrating that cisTEM's classification functionality can resolve distinct conformational states. This validates the 3D classification implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C260"
+    ],
+    "result": "Figure 2 demonstrates that computing CTF from movies produces significantly stronger Thon rings compared to computing from aligned frame averages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C260 describes Figure 2, which visually demonstrates the advantage of using movies for CTF determination (C37). The difference in Thon ring visibility is clear in the figure, supporting the recommendation to use movies for CTF estimation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C231",
+      "C232",
+      "C233"
+    ],
+    "result": "The complete integrated workflow in cisTEM offers users a uniform experience and smooth transitions between steps. Having all tools developed in-house aids maintenance. The main focus is single-particle cryo-EM and high-resolution 3D reconstruction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C231-C233 summarize the benefits and focus of cisTEM. These are supported by the demonstrated integration throughout the manuscript and the comprehensive benchmarking showing smooth workflow from movies to high-resolution structure. The in-house development (C232) is evidenced by the extensive code rewriting described (C19, C34, C96).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C234"
+    ],
+    "result": "Future releases may include on-the-fly processing, particle-based movie alignment, helical particle support, improved masking tools, better resolution indicators, and detector efficiency determination tools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C234 describes planned future work. While these are reasonable extensions of the current capabilities, they are explicitly speculative ('may include') and cannot be evaluated as supported or unsupported since they represent intentions rather than current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C235",
+      "C236",
+      "C237",
+      "C238"
+    ],
+    "result": "cisTEM's independence from third-party libraries enables distribution of ready-to-run optimized binaries. Using wxWidgets allows compilation for Linux, Windows, and OSX. Binaries are statically linked against MKL for superior performance on Intel CPUs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C235-C238 describe distribution and portability features. The minimal dependencies (C235) are consistent with the stated dependencies (C242-C246). The cross-platform capability (C236) is a documented feature of wxWidgets. The MKL choice (C238) is stated as providing superior performance, consistent with the optimization focus.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C239",
+      "C240",
+      "C241"
+    ],
+    "result": "The lack of GPU support simplifies installation but is a limitation on GPU-optimized workstations, which often have few CPU cores. Users wanting both CPU and GPU software may need to invest in both hardware types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C239-C241 acknowledge trade-offs of the CPU-only design. These are logical consequences of the design choice (C26) and the benchmarking result (C23). The acknowledgment of this limitation is appropriate and honest about the practical implications for users.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C242",
+      "C243",
+      "C244",
+      "C245",
+      "C246",
+      "C247",
+      "C248",
+      "C249",
+      "C250"
+    ],
+    "result": "cisTEM was written in C++ using wxWidgets (GUI), libtiff (image format), SQLite (database), and Intel MKL (FFT/vector operations), with optional FFTW support. Development used Eclipse and GitHub. Image data uses MRC format with import/export compatibility for Frealign and Relion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C242-C250 describe technical implementation details and data formats. These are straightforward factual statements about the software development and are consistent with the described functionality throughout the manuscript. The interoperability (C250) is important for integration with existing workflows.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1558 @@
+{
+  "submission": {
+    "id": "4481996c-4d5b-470c-ae19-ecc3a0fc18e5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:57:30.671062Z",
+    "updated_at": "2025-12-01T20:57:30.671062Z"
+  },
+  "content": [
+    {
+      "id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "submission_id": "4481996c-4d5b-470c-ae19-ecc3a0fc18e5",
+      "content_type": "manuscript",
+      "content_text": "# Epidermal Growth Factor Receptor neddylation is regulated by a desmosomal-COP9 (Constitutive Photomorphogenesis 9) signalosome complex\n\n## Authors\n\n- Nicole Ann Najor<sup>1</sup> ([ORCID: 0000-0002-1510-9979](https://orcid.org/0000-0002-1510-9979))\n- Gillian Nicole Fitz<sup>2</sup> ([ORCID: 0000-0002-5995-6918](https://orcid.org/0000-0002-5995-6918))\n- Jennifer Leigh Koetsier<sup>2</sup>\n- Lisa Marie Godsel<sup>2</sup>\n- Lauren Veronica Albrecht<sup>2</sup>\n- Robert Harmon<sup>2</sup>\n- Kathleen Janee Green<sup>2</sup> ([ORCID: 0000-0001-7332-5867](https://orcid.org/0000-0001-7332-5867)) \u2020\n\n### Affiliations\n\n1. Department of Biology, College of Engineering and Science University of Detroit Mercy Detroit United States\n2. Department of Pathology, Feinberg School of Medicine Northwestern University Chicago United States\n3. Department of Dermatology Chicago, Feinberg School of Medicine Northwestern University Evanston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCell junctions are scaffolds that integrate mechanical and chemical signaling. We previously showed that a desmosomal cadherin promotes keratinocyte differentiation in an adhesion-independent manner by dampening Epidermal Growth Factor Receptor (EGFR) activity. Here we identify a potential mechanism by which desmosomes assist the de-neddylating COP9 signalosome (CSN) in attenuating EGFR through an association between the Cops3 subunit of the CSN and desmosomal components, Desmoglein1 (Dsg1) and Desmoplakin (Dp), to promote epidermal differentiation. Silencing CSN or desmosome components shifts the balance of EGFR modifications from ubiquitination to neddylation, inhibiting EGFR dynamics in response to an acute ligand stimulus. A reciprocal relationship between loss of Dsg1 and neddylated EGFR was observed in a carcinoma model, consistent with a role in sustaining EGFR activity during tumor progression. Identification of this previously unrecognized function of the CSN in regulating EGFR neddylation has broad-reaching implications for understanding how homeostasis is achieved in regenerating epithelia.\n\n## Introduction\n\nTissue morphogenesis and homeostasis are critically dependent on the proper spatial control of receptor tyrosine kinase activity (Casaletto and McClatchey, 2012). This is particularly so in complex regenerating tissues, such as the epidermis. The epidermis is a multi-layered epithelium that continuously renews itself through a highly choreographed program of morphological and biochemical changes, which are necessary to form a barrier against environmental insults and water loss (Koster and Roop, 2007). This process requires proliferating basal cells to stop dividing and undergo a commitment to differentiate as they transit toward the outer surface of the skin. Chemical cues governed by Epidermal Growth Factor Receptor (EGFR) and other signaling receptors must be tightly regulated to maintain a proper balance of proliferation and differentiation and to drive critical steps at each stage of epidermal stratification (Fuchs and Nowak, 2008; Fuchs and Raghavan, 2002; Koster and Roop, 2007; Lopez-Pajares et al., 2013).\n\nWhile the mechanisms that dictate EGFR activity and dynamics during epidermal differentiation are not well understood, properly positioning the receptor in proximity to effector and regulatory machinery is likely to play a role. Candidate cytoarchitectural components that could serve in this manner are cell-cell junctions. In the epidermis, the most prominent of these junctions are desmosomes, which confer mechanical strength to tissues by linking the intermediate filament (IF) cytoskeleton through the IF anchoring protein Desmoplakin (Dp) to sites of desmosomal cadherin-mediated adhesion (Kowalczyk and Green, 2013). The importance of the desmosome-IF complex is underscored by the existence of mutations in genes encoding desmosome components that lead to skin, heart, and hair defects (Lai-Cheong et al., 2007; Petrof et al., 2012). While the desmosome has classically been regarded as an adhesion complex, recent studies have demonstrated that it can act as a signaling scaffold to ensure the spatial and temporal execution of the epidermal differentiation program (Broussard et al., 2015; Harmon and Green, 2013; Schmidt and Koch, 2007; Sumigray and Lechler, 2015).\n\nIn particular, we showed that the desmosomal cadherin, Desmoglein 1 (Dsg1), is not only required for maintaining epidermal tissue integrity in superficial layers, but also promotes keratinocyte differentiation as cells transit out of the basal layer (Getsios et al., 2009). It performs this function at least in part by attenuating the activity of ErB receptors (EGFR and ErbB2) and downstream MAPK signaling (Getsios et al., 2009; Harmon et al., 2013). Dsg1 is optimally positioned to exert this sort of spatial control on the EGFR pathway, as it is first expressed as cells commit to differentiation and becomes progressively concentrated in the superficial epidermal layers. Thus, it is a good candidate to serve as a scaffold for machinery necessary to down-regulate EGFR family activity, which is required for this commitment to differentiation. The unusually long cytoplasmic tail of Dsg1, but not the adhesive ectodomain, was required to suppress EGFR and Extra Cellular Signal-regulated Kinase 1/2 (Erk1/2) signaling, indicating a previously unrecognized function for Dsg1 that transcends its canonical roles in adhesion. However, the molecular machinery that integrates the desmosome-IF scaffold with the biochemical differentiation program is not well-defined.\n\nTo identify mediators of Dsg1 signaling functions we carried out a yeast-two-hybrid (Y2H) screen using the cytoplasmic domain of Dsg1 as bait (Harmon et al., 2013). Among the putative binding partners identified was the third subunit (Cops3) of the eight-subunit complex called the COP9 signalosome (CSN). Discovered in 1994 in Arabidopsis, the Constitutively Photomorphogenic (COP) mutants, cops1-8, exhibit a photomorphogenic phenotype in complete darkness (Chory et al., 1989; Deng et al., 2000; Denti et al., 2006; Mis\u00e9ra et al., 1994; Wei et al., 1994; Wei and Deng, 1996; Wei and Deng, 1999). The CSN functions as a Nedd8 isopeptidase to remove Nedd8 moieties from its substrates, an activity depending on the Cops5 subunit. This hydrolysis has been classically studied in the context of de-neddylation of cullin-RING (Really Interesting New Gene) E3 ligases (Cul1, 2, 3, 4a, 4b, 5, 7) (Cope et al., 2002; Duda et al., 2008; Saha and Deshaies, 2008), which regulate fundamental processes important for development and tissue homeostasis, including cell cycle, signal transduction, transcription and DNA replication (Petroski and Deshaies, 2005). To promote the activity of cullin-RING E3 ligases, the CSN de-neddylates and partners with de-ubiquitinase enzymes to \u2018de-ubiquitinate\u2019 and rescue the cullin from spurious self-ubiquitination that occurs when the Nedd8 modification is present (Hetfeld et al., 2005; Wee et al., 2005; Zhou et al., 2003). These functions create activation cycles allowing cullin-RING E3 ligases to focus their activity on specific substrates. Cells deficient for the CSN are unable to remove Nedd8, and as a consequence cullin-RING E3 ligase subunits are autoubiquitinated resulting in reduced function (Bosu and Kipreos, 2008; Hetfeld et al., 2005; Hotton and Callis, 2008; Schwechheimer et al., 2001; Wee et al., 2005; Wu et al., 2005; Zhou et al., 2003). It has yet to be demonstrated whether the CSN is able to de-neddylate other substrates modified by Nedd8.\n\nIn this report, we show that the Cops3 subunit of the CSN interacts with desmosomal components, Dsg1 and Dp. Loss of Cops3 results in an increase in phosphorylated EGFR (pEGFR), which is associated with compromised keratinocyte differentiation, suggesting that Cops3, and consequently the CSN, inhibits EGFR signaling to promote differentiation. Further, Cops3 deficiency compromises the ability of ectopic Dsg1 to promote expression of keratinocyte differentiation markers, consistent with functional cooperation between desmosomes and the CSN. We go on to show that EGFR is neddylated in human keratinocytes and genetically interfering with desmosomal components or Cops3 results in elevated EGFR receptor neddylation, suggesting that EGFR is a non-cullin substrate for CSN-dependent de-neddylation. Importantly, this increase in neddylation was accompanied by a decrease in ubiquitination and altered EGFR dynamics in response to an acute ligand stimulus. A reciprocal relationship between Dsg1 and neddylated EGFR was observed in a 3D carcinoma model, raising the possibility that loss of desmosomes during cancer progression unscaffolds membrane-associated CSN complexes, resulting in hyper-neddylated EGFR. These data support a model whereby epidermal differentiation is assisted by desmosome-dependent scaffolding of the CSN complex to down-regulate EGFR through removal of Nedd8 modifications.\n\n## Results\n\n### The COP9 signalosome (CSN) interacts with the desmosome\n\nWe recently identified a role for the desmosomal cadherin, Dsg1, in promoting epidermal differentiation through attenuation of EGFR/MAPK signaling (Getsios et al., 2009). This function did not require the Dsg1 adhesive ectodomain, but did require the unique, extended cytoplasmic tail. While a Dsg1 binding partner, Erbin, was shown to interfere with Ras-Raf coupling downstream of EGFR (Harmon et al., 2013), the upstream regulation of EGFR is still poorly understood. A Y2H screen using the Dsg1 tail as bait revealed the CSN subunit, Cops3, as a new Dsg1 binding partner. Cops3 could interact with the constructs comprising the full cytoplasmic tail of Dsg1 or a construct lacking only the membrane proximal intracellular anchor (IA) in yeast (Figure 1a). The interaction with Cops3 was selective, as the fourth subunit of the CSN was unable to interact with the Dsg1 tail in yeast (Figure 1b). To validate the interaction, we tested whether recombinant Dsg1 (GST-Dsg1) can associate with endogenous Cops3 in normal human keratinocyte (NHEK) lysates in vitro. Indeed, purified GST-Dsg1 bound to sepharose beads specifically precipitated endogenous Cops3 from NHEK lysates (Figure 1c).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/22599/elife-22599-fig1-v2.jpg)\n\n**Figure 1.:** (a) Cytotrap yeast two hybrid (Y2H) indicating an interaction between Cops3 and the cytoplasmic tail of Dsg1. Growth at 25\u00b0C is permissive; growth on galactose (Gal) at 37\u00b0C confirms interaction. (b) Cops4 of the CSN does not interact with Dsg1. A known binding partner of Dsg1, Plakoglobin (Pg), was used as a positive control. (c) Purified GST-Dsg1 (includes the entire cytoplasmic domain), was bound to sepharose beads and incubated with normal human keratinocyte (NHEK) lysates. (d) An endogenous Dp immunoprecipitation (IP) was performed in NHEKs after 1 day of differentiation, indicating an interaction with Cops3. (e) A 32 kDa S-tagged C-terminal truncation of Dp (DP-S-tag) associates with Cops3 in squamous cell carcinoma line 9 (SCC9) lysates. (f) Structured Illumination Microscopy (SIM) of Cops3 (red) and Dsg1 or Dp (green) in NHEKs after 2 days of differentiation, shows close proximity between Cops3 and desmosome components at junctions. (g and h) Proximity ligation assay (PLA) in NHEK cultures with siRNA-targeting COPS3, DSG1, DP, or scramble sequence (siCONT) after 1 day of differentiation. Quantification is displayed to the right of the image panels. Cops3/Dsg1= *p<0.001, and Cops3/Dp= *p<0.00005, Student\u2019s t test; mean\u00a0\u00b1SEM. (i) PLA in NHEK cultures after 1 day of differentiation with adherens junction components (Ecadherin, E-cad, Beta catenin, B-cat, Alpha catenin, A-cat) and co-stained with Plakoglobin to mark cell borders. Proximal proteins within 40\u2013100 nm appear as red but have been pseudo-colored yellow in (g) and (h) and have been dilated in (i) for ease of visualization in Fiji. All experiments are representative of 3 or more independent repeats. Scale bars\u00a0=\u00a020 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22599/elife-22599-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Growth at 25\u00b0C is permissive; growth on galactose (Gal) at 37\u00b0C confirms interaction, while lack of growth on glucose (Glu) plates at 37\u00b0C excludes the presence of any false positives (ie. temperature-sensitive revertants).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/22599/elife-22599-fig1-figsupp2-v2.jpg)\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/22599/elife-22599-fig1-figsupp3-v2.jpg)\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/22599/elife-22599-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Antibody pairs are (a) Dsg1/Cops3, Dp/Cops3 and E-cad/B-cat, and Ecad/Cops3. *p<0.000005, Student\u2019s t test; mean\u00a0\u00b1SEM. (b) Antibody pairs are adherens junction components Alpha Catenin (A-cat) and Beta catenin (B-cat). Close association of these adherens junction components are unaffected upon the loss of Cops3. (c) Quantification of PLA analysis to distinguish percent PLA signal at Pg-positive staining borders. Experiment is representative of 3 or more independent repeats.\n\nTo address whether Cops3 engages more broadly with the desmosome, we carried out immunoprecipitations of Dp, an IF-anchoring protein present in all desmosomes. Cops3 was also present in immunoprecipitates of endogenous Dp (Figure 1d). To narrow down the domains in Dp that were necessary for Cops3 interaction we performed a Y2H analysis utilizing Dp truncation constructs. While the N-terminal portion of Dp harboring the amino acid residues 1\u2013584 (DP-NTP) was not sufficient for Dp\u2019s interaction with Cops3 (Figure 1\u2014figure supplement 1), a 32 kDa truncated version of the C-terminal tail of Dp co-precipitated with endogenous Cops3 in the SCC9 cell line, which was used to overcome the limitations of ectopic expression of the Dp S-tag fusion protein (DP-S-tag) in primary cells. This suggested the site of interaction on Dp resides within the C-terminus (Figure 1e). To further examine the relative disposition of Cops3, Dsg1 and Dp we carried out structured illumination microscopy (SIM), which produces two times the resolution of conventional optical microscopes, resulting in the minimal overlap of associated proteins in co-localization. SIM images revealed Cops3 to be distributed throughout the cell, impinging upon Dsg1 or Dp concentrated at cell-cell junctions. Cops3 was also closely associated with cytoplasmic Dsg1 and Dp particles, which could represent vesicles or cytoplasmic precursors, previously described (Godsel et al., 2005) (Figure 1f).\n\nTo further address the interaction between desmosomes and the CSN we took advantage of the proximity ligation assay (PLA), a powerful technique that provides an indication of protein proximity from 40 to 100 nm to examine the spatial relationship of endogenous Dsg1 and Cops3 in cells (Weibrecht et al., 2010). A positive PLA signal was observed for the Dsg1 and Cops3 antibody pair, which was abrogated by treatment with either DSG1 or COPS3 siRNA (Figure 1g and Figure 1\u2014figure supplement 2), consistent with an association between Dsg1 and Cops3 in NHEKs. In addition, PLA analysis revealed a positive signal for Dp and Cops3 in NHEKs treated with high calcium media to induce epidermal differentiation, which was likewise inhibited through knockdown of Dp and Cops3 (Figure 1h and Figure 1\u2014figure supplement 3). To investigate further the possibility that the entire desmosome serves as a docking site for the recruitment of the CSN, we also assessed whether Dp knockdown diminished Cops3\u2019s ability to co-localize with Dsg1 (Figure 1g) and vice versa (Figure 1h). In both cases, PLA signals were significantly reduced, supporting the idea that the integrity of the entire desmosome is required to scaffold the COP9 signalosome.\n\nTo address the specificity of Cops3 interactions with desmosomes we paired the Cops3 antibody with the adherens junction protein E-cadherin (E-cad). As a positive control, E-cad and Beta-catenin (B-cat) were paired as well as Alpha-catenin (A-cat) and B-cat (Figure 1i and Figure 1\u2014figure supplement 4). These experiments clearly show that while Cops3 interacts with desmosomal molecules Dsg1 and Dp, it does not interact with adherens junction components. In addition, we used the cell-cell junction protein Plakoglobin (Pg) as a fluorescence marker for cell-cell junctions to determine the extent to which PLA signals co-localize with cell-cell interfaces. These data show that while not all desmosome-Cops3 interactions are in close proximity to the Pg signal, a large percentage of PLA dots do appear to be localized at cell-cell interfaces (~60% for Dsg1/Cops3;~67% for Dp/Cops3), although to a somewhat lesser extent than the positive control PLA pairings Alpha-Catenin/Beta-Catenin (~82%) and Ecad/Beta-catenin (~88%) (Figure 1i and Figure 1\u2014figure supplement 4c). Cytoplasmic Cops3 interactions with desmosome molecules may occur between non-membrane bound Dp precursors and endocytosed membrane associated Dsg1 vesicles that we have previously identified in these cells, which could account for cytoplasmic PLA signal (Godsel et al., 2005; Harmon et al., 2013; Nekrasova et al., 2011; Patel et al., 2014).\n\n### Dsg1-induced differentiation requires Cops3\n\nWe previously showed that Dsg1 promotes epidermal differentiation and that the adhesive ectodomain is dispensable for this function (Getsios et al., 2009). Towards addressing whether the interaction between Cops3 and the desmosome contribute to this function of the Dsg1 cytoplasmic domain, we silenced COPS3 in NHEKs through electroporation of siRNAs targeted specifically against this CSN subunit. Biochemical analysis revealed a reduction in differentiation related gene products including Dsg1, Desmocollin1 (Dsc1), Keratin1 (K1), and Keratin 10 (K10) (Figure 2a). Similar impairment of these features of the keratinocyte differentiation program were observed using five oligos each with independent targets within the COPS3 sequence (siCOPS3-465, siCOPS3-Dharma3, siCOPS3-IDT pool including 3 oligos), supporting the idea that the observed changes were not due to off target effects (Figure 2\u2014figure supplement 1). To further address whether Cops3 contributes to proper epidermal differentiation and morphogenesis, we generated Cops3 deficient 3D organotypic cultures lifted to an air-medium interface (epidermal raft cultures) and harvested 3 days later (Figure 2b). Biochemical analysis of raft lysates revealed similar differentiation defects when compared with monolayer cultures reflected by a decrease in Dsg1, Dsc1, the suprabasal keratins K1 and K10 and the cell envelope protein Loricrin (Lor) (Figure 2c). Immunofluorescence of siCOPS3 Day 3 rafts also revealed defects in the differentiation marker K10 and Dsg1 (Figure 2d). Interestingly, we noted a decrease in Dsg1 protein expression (Figure 2a and c), which could contribute to the differentiation defect (Getsios et al., 2009). To test whether aberrant differentiation was due to the loss of Dsg1 protein expression, we introduced ectopic Dsg1-FLAG in the background of NHEKs deficient for Cops3. As we previously reported, ectopic Dsg1 promotes expression of differentiation specific markers in control cultures (Getsios et al., 2009). Biochemical analysis of cells retrovirally transduced with a Dsg1-Flag vector revealed that Dsg1-Flag was unable to drive expression of Dsc1, K1, and K10 in Cops3-silenced cultures after inducing differentiation for 2 days to the same extent as control cells (Figure 2e). To directly capture the impact of siCOPS3 on early differentiation in a specific population of cells expressing Dsg1, we scored NHEKs transiently expressing a GFP-tagged version of Dsg1 for an early differentiation marker, K10, in control and COPS3-silenced cultures after 1 day of differentiation. We observed that Dsg1-GFP expressing cells were unable to express K10 upon silencing of COPS3 (Figure 2f and g). Thus, Dsg1 requires Cops3 for efficient Dsg1-stimulated keratinocyte differentiation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/22599/elife-22599-fig2-v2.jpg)\n\n**Figure 2.:** (a) RNAi-mediated silencing of COPS3 in NHEK cultures differentiated for 2 days in 1.2mM Ca++results in a decrease in differentiation markers: Dsg1, Desmocollin1 (Dsc1), Keratin 10 (K10) and Keratin1 (K1). No change in protein expression for Desmoglein2 (Dsg2), Dp, Pg, Beta-catenin (B-cat), Ecadherin (E-cad) was seen between siCONT and siCOPS3 cell lysates. Tubulin was utilized as a loading control. (b) 3D epidermal raft cultures were generated with cells silenced by siRNA-targeting COPS3 or scramble sequence (siCONT) and harvested 3 days after lifting to an air-medium interface. H &\u00a0E staining and biochemical analysis of raft cultures display signs of impaired differentiation. (c) Biochemical analysis of 3D raft lysates corresponds to morphology changes with an observed decrease in Dsg1, Dsc1, K10, K1, and Loricrin (Lor) with no changes in B-cat and E-cad. (d) Immunofluorescence of siCOPS3 raft cultures displays a decrease in Dsg1 and K10 (scale bar\u00a0=\u00a020 \u03bcm). (e) Cells silenced for Cops3 were transduced with GFP or Dsg1-FLAG retrovirus (RV). Ectopic expression of Dsg1 was unable to fully compensate for the differentiation defect found in Cops3 deficient cells, which was analyzed by differentiation markers (Dsc1, K1, K10). Densitometry quantifications of differentiation markers are represented as fold change relative to Gapdh and indicated below the blot. (f) NHEKs transiently transfected with the Dsg1-GFP construct and processed after 1 day of differentiation do not express K10 upon the silencing of COPS3 (scale bar\u00a0=\u00a020 \u03bcm). (g) Quantification of average fluorescence intensity of K10 in Dsg1-GFP expressing cells. *p<0.00005 (Student\u2019s t test); mean\u00a0\u00b1SEM. All experiments are representative of 3 or more independent repeats.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22599/elife-22599-fig2-figsupp1-v2.jpg)\n\n### Inhibition of EGFR signaling restores differentiation in Cops3-deficient keratinocytes\n\nSince the loss of Cops3 interferes with differentiation, we addressed the extent to which EGFR and downstream effectors, Erk and Mek, are affected upon the silencing of COPS3. Increases in pEGFR, phosphorylated Erk (pErk), and phosphorylated Mitogen Activated Protein Kinase (pMek) were observed (Figure 3a). These increases in MAPK signaling corresponded to a decrease in differentiation markers Dsg1, Dsc1, K10 and Lor (Figure 3a right panel and Figure 2a), consistent with our previous demonstration that the canonical Ras-Raf-Erk pathway is functionally linked to Dsg1\u2019s ability to promote differentiation (Getsios et al., 2009; Harmon et al., 2013). An increase in pErk was also observed in 3D organotypic raft cultures treated with siRNA targeting COPS3 (Figure 3b). To test whether inhibition of EGFR is capable of restoring differentiation in Cops3-deficient cultures, we treated NHEK siRNA-targeted COPS3 cells with the specific EGFR inhibitor AG1478. Pharmacological inhibition of EGFR restored Dsg1, Dsc1, and K10 expression without increasing Cops3 protein levels (Figure 3c). These data are consistent with the hypothesis that the CSN, recruited to the desmosome through Cops3, is required to properly modulate EGFR activity.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/22599/elife-22599-fig3-v2.jpg)\n\n**Figure 3.:** (a) RNAi-mediated silencing of COPS3 in NHEKs differentiated for 2 days in 1.2 mM Ca++\u00a0with Human Keratinocyte Growth Factors (HKGF) display a decrease in differentiation markers (right panel) and an increase in phosphorylation of EGFR, along with its downstream effectors (Mek and Erk), indicating an overall increase in MAPK signaling (left panel). For quantification of phosphorylated proteins, each band was normalized to the amount of total protein then compared relative to the control culture (siCONT) and indicated below each western blot. (b) Immunofluorescence of siCOPS3 raft cultures display similar levels of total EGFR and an increase in pErk signal (scale bar\u00a0=\u00a020 \u00b5m). (c) Western blot analysis of NHEKs treated with siRNA targeting scramble (siCONT) and COPS3 (siCOPS3) and incubated with an EGFR specific inhibitor, AG1478, at 2 \u03bcM. EGFR inhibition restored the expression of the differentiation markers, Dsg1, Dsc1, and K10, indicating that Cops3 operates upstream of EGFR signaling in the epidermal differentiation program. Densitometry quantification is represented as fold change relative to Gapdh and indicated below the blot. All experiments are representative of 3 or more independent repeats.\n\n### EGFR neddylation is elevated in desmosome and Cops3 deficient cells\n\nWhile cullins are the best-known substrates for the Nedd8 modification, EGFR neddylation was previously reported to occur in CHO (chinese hamster ovary) cells (Oved et al., 2006). More recently Transforming Growth Factor Beta Receptor Type II (TGF\u03b2RII) was shown to be regulated by neddylation (Zuo et al., 2013), raising the possibility of receptor neddylation as a means of modulating EGFR\u2019s activity. To address whether EGFR neddylation occurs in NHEKs and whether the desmosome-CSN complex regulates EGFR neddylation status, we performed RNAi-mediated silencing of DSG1, DP, and COPS3 in NHEKs differentiated for 1 day and assessed the association of the Nedd8 moiety with EGFR using PLA. A significant increase in PLA positive signals between EGFR and Nedd8 was observed when DP, DSG1 or the CSN component COPS3 was silenced (Figure 4a and Figure 4\u2014figure supplement 1), supporting a model whereby both the desmosome and the CSN are necessary for regulating EGFR de-neddylation. To examine the levels of EGFR neddylation biochemically, we performed EGFR immunoprecipitations in SCC9 cells transiently expressing HA-tagged Nedd8, to facilitate the detection of the modification. In this case, the use of this cell line helped overcome limitations of ectopic expression in primary cells. SCC9 cells are devoid of Dsg1 when grown in a monolayer, however they do express other desmosomal cadherins, including desmoglein 2, and assemble robust desmosomes that include Dp (Chen et al., 2012; Godsel et al., 2005; Nekrasova et al., 2011). Loss of either Dp or Cops3 via RNAi-mediated silencing resulted in elevated EGFR neddylation (Figure 4b). The fact that DP knockdown in desmosome-containing SCC9 cells impacts EGFR neddylation status is consistent with the observation that loss of either Dsg1 or Dp interferes with recruitment of Cops3 to desmosomes in NHEK cells (Figure 1g and h).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/22599/elife-22599-fig4-v2.jpg)\n\n**Figure 4.:** (a) PLA analysis using Nedd8 and EGFR antibodies in NHEKs treated with siRNA targeting DP, DSG1, COPS3 or scramble (siCONT) (scale bar\u00a0=\u00a020 \u00b5m). Quantification of PLA signals displayed to the right of the images. *p<0.05 (Student\u2019s t test); mean\u00a0\u00b1SEM. (b) EGFR immunoprecipitations (IPs) in SCC9 cells harboring the Nedd8-HA construct indicate an increase in EGFR neddylation upon silencing of Cops3 or Dp. Densitometry quantification of 4 independent replicates is shown to the right of the representative blot. *p<0.05 (Student\u2019s t test); mean\u00a0\u00b1SEM. (c) Cells treated with siRNA directed towards COPS3 or DP display a decrease in EGFR ubiquitination. EGFR IPs in SCC9 cells treated with 50 ng/ml EGF for 5\u00a0min\u00a0to induce internalization of the receptor. Densitometry quantification of 4 independent replicates is shown to the right of the representative blot. *p<0.01 (Student\u2019s t test); mean\u00a0\u00b1SEM. (d) PLA analysis using Ubiquitin and EGFR antibodies in NHEKs treated with siRNA targeting DP, DSG1, COPS3 or scramble (siCONT) (scale bar\u00a0=\u00a020 \u00b5m). Quantification of PLA signals displayed to the right of the images. *p<0.05 (Student\u2019s t test); mean\u00a0\u00b1SEM. (e) EGFR immunoprecipitations (IPs) in SCC9 cells indicate EGFR ubiquitination upon silencing of Nedd8 and treated with 50 ng/ml EGF ligand for 5 min. Western blot displayed is a representative blot of 3 independent repeats. All experiments are representative of 3 or more independent repeats.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22599/elife-22599-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Figure 4a and Figure 4c) and in EGFR internalization assay (Figure 5a).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/22599/elife-22599-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a) PLA analysis of NHEKs differentiated after 1 day with siRNA targeting NEDD8 and COPS3. Antibody pairings: AB-12 anti-EGFRMOUSE/Ab81264 anti-Nedd8RABBIT(Top panel) and FK1 anti-UbMOUSE/D38B1 anti-EGFRRABBIT(Bottom panel). Proximal proteins within 40\u2013100 nm are indicated by a yellow dot (signal appears as red and pseudo-colored yellow for ease of visualization in ImageJ) (b) Quantification of PLA signals per cell. *p<0.00005 (Student\u2019s t test); mean\u00a0\u00b1SEM. (c) Western blot analysis indicates knockdown efficiency of siRNAs directed towards Nedd8 and Cops3. Experiment is representative of 3 or more independent repeats. Scale bar\u00a0=\u00a020 \u00b5m.\n\nSince neddylation and ubiquitination occur on lysines, we questioned whether neddylation competes with ubiquitination on EGFR. To assess endogenous ubiquitination of EGFR we treated the cells with EGF (50 ng/ml) for 5 min, then performed EGFR immunoprecipitations in SCC9 cells. Upon loss of Cops3 and Dp we observed reduced ubiquitination of EGFR (Figure 4c). We also found a decrease in a PLA signal between EGFR and Ubiquitin when Dsg1, Cops3, or Dp was silenced (Figure 4d).\n\nA previous report suggested that neddylation of ectopically expressed EGFR in CHO cells is required for subsequent ubiquitination and turnover of the receptor (Oved et al., 2006), whereas our observations are consistent with a reciprocal relationship between neddylation and ubiquitination. In order to directly address whether ubiquitination of endogenous EGFR depends on the Nedd8 modification human epithelial cells, EGFR ubiquitination was assayed in SCC9 cells silenced for NEDD8. Upon immunoprecipitation of EGFR, it was found that EGFR is ubiquitinated in Nedd8 depleted cells, on average about 1.4-fold higher than control RNAi-treated cells (Figure 4e). Additionally, PLA analysis revealed an association between EGFR and Ubiquitin upon the loss of Nedd8 (Figure 4\u2014figure supplement 2). Overall, this suggests that both desmosome and CSN components support the generation and/or maintenance of ubiquitinated EGFR, at the expense of EGFR neddylation.\n\n### The role of desmosomes and the CSN in EGFR dynamics\n\nUbiquitination is important for the internalization and post-internalization sorting of EGFR, where the ubiquitin ligase, Cbl, coordinates the transfer of the Ubiquitin from an E2 enzyme to the receptor\u2019s cytoplasmic domain (Conte and Sigismund, 2016; Joazeiro et al., 1999; Levkowitz et al., 1999; Sorkin and Goh, 2008; Waterman et al., 1999; Yokouchi et al., 1999). When EGFR fails to acquire Ubiquitin, it is recycled back to the membrane (Levkowitz et al., 1998). Further, neddylation has previously been shown to stabilize substrates including other membrane receptors such as TGF\u03b2RII (Zuo et al., 2013). Together with the results described above, this raises the possibility that by scaffolding the CSN near EGFR, desmosomes might promote EGFR turnover by shifting the balance of neddylation and ubiquitination modifications on the receptor. A prediction of this model is that EGFR would fail to re-localize in response to an acute ligand stimulus in the absence of the desmosome-CSN complex. To address this, we performed immunofluorescence on NHEKs treated with 50 ng/ml of EGF ligand for 5\u00a0min\u00a0to induce internalization of EGFR in the absence of Dsg1, Dp, or Cops3. As shown in Figure 5a (and Figure 4\u2014figure supplement 1), EGFR border intensity in cells silenced for COPS3, DSG1, and DP remained elevated compared with control treated cultures after EGFR internalization was induced by treatment with EGF ligand. To more directly determine how neddylation regulates EGFR dynamics, we treated NEDD8 (siNEDD8) or COPS3 (siCOPS3) silenced NHEKs with EGF ligand to induce EGFR internalization and measured EGFR border intensity at 15 min. EGFR intensity was dramatically reduced at cell-cell interfaces in both the siCONT and siNEDD8 cultures, whereas EGFR was stable at borders in siCOPS3 cells (Figure 5b and Figure 4\u2014figure supplement 2). These data are consistent with the idea that the desmosome-CSN complex destabilizes EGFR by de-neddylating the receptor.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/22599/elife-22599-fig5-v2.jpg)\n\n**Figure 5.:** (a) NHEKs were treated in serum free media (1.2 mM Ca++), then treated with EGF (50 ng/ml) at indicated time points to assess the amount of internalized EGFR (scale bars\u00a0=\u00a020 \u03bcm). Quantification of EGFR fluorescence border intensity from 3 independent replicates is displayed to the right of the images. *p<0.01 (Student\u2019s t test); mean\u00a0\u00b1SEM. (b) NHEKs were treated in serum free media (1.2 mM Ca++), then treated with EGF (100 ng/ml) at indicated time points to assess the amount of EGFR remaining at cell borders upon the loss of Cops3 and Nedd8 (scale bars\u00a0=\u00a020 \u03bcm). Quantification of EGFR fluorescence border intensity from 3 independent replicates is displayed below the images. *p<0.05 (Student\u2019s t test); mean\u00a0\u00b1SEM. (c) NHEKs were differentiated in high calcium for 1 day, and then treated with cycloheximide (CHX 0.02 mg/ml) for indicated times. Quantification of total EGFR is from 3 independent replicates and is normalized to GAPDH. *p<0.02 (Student\u2019s t test); mean\u00a0\u00b1SEM. All experiments are representative of 3 or more independent repeats.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22599/elife-22599-fig5-figsupp1-v2.jpg)\n\nTo address the long-term impact of NEDD8 knockdown on EGFR stability we treated NHEKs with cycloheximide (0.02 mg/mL) to inhibit protein translation and assessed EGFR receptor levels over time. Our results indicate that upon the loss of Nedd8, the stability of EGFR significantly decreases over a 24 hr time period (Figure 5c). These data are consistent with the idea that the neddylated state of EGFR promotes its stabilization. Additionally, we investigated the effect of NEDD8 silencing on EGFR signaling. While the simple prediction of our model would be a decrease in EGFR activity, we did not detect reproducible reductions in pEGFR or the activity of downstream effectors at a population level in differentiating cultures. It seems plausible that feedback mechanisms are stimulated by a complete loss of Nedd8 within these heterogeneous differentiating cultures, which could mask changes occurring at a local level (Figure 5\u2014figure supplement 1).\n\n### EGFR neddylation is elevated in squamous cell cancers and its loss accelerates keratinocyte differentiation\n\nTo address whether regulation of EGFR\u2019s neddylation is affected under conditions where EGFR expression and activity is expected to be elevated, we created 3D organotypic raft cultures using SCC9 and 1483 squamous cell cancer lines (Figure 6a and b). In both cases, EGFR was distributed more broadly throughout the culture and extended further into suprabasal layers than in control cultures or human epidermis. Additionally, 1483 and SCC9 3D cultures, when compared to controls, exhibited elevated levels of EGFR and Cops3 (Figure 6a). While we are unable to detect Dsg1 protein levels in monolayer SCC9 cultures, we have found Dsg1 to be expressed in 3D organotypic cultures that have been harvested 10 days after lifting to an air-liquid interface (Figure 6a). However, the level of Dsg1, and to a lesser extent Dp, is reduced in the SCC9 and 1483 cancer 3D rafts when compared to control, primary NHEK 3D rafts (Figure 6a). PLA analysis of organotypic cancer rafts revealed an increase in EGFR-Nedd8, which is consistent with the known elevation of EGFR activity in HNSCC (Figure 6b top and middle panels). Further, we observed a reciprocal staining pattern of EGFR and Dsg1 (Figure 6b bottom panel), consistent with the idea that loss of Dsg1 in progressing tumors is associated with elevated EGFR expression (Wong et al., 2008). While the HNSCC cultures displayed an increase in Cops3 protein expression, this potentially compensatory effect does not suffice to override the desmosome defect in a 3D context. To show that proper CSN functioning is required for EGFR-neddylation maintenance in a 3D model, we carried out PLA analysis of rafts silenced for COPS3 and harvested at Day 3 (Figure 2c), and found that upon the loss of Cops3 there is an increase in Nedd8 associated with EGFR (Figure 6d).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/22599/elife-22599-fig6-v2.jpg)\n\n**Figure 6.:** (a) Biochemical analyses of HNSCC 3D organotypic raft cultures generated using SCC9 and 1483 cell lines displayed a decrease in Dsg1 and Dp, and an increase in EGFR and Cops3. (b) PLA analysis of EGFRRABBIT and Nedd8MOUSE in normal skin, and 3D organotypic raft cultures generated using the NHEKs, SCC9s, and 1483 HNSCC cell lines (scale bar\u00a0=\u00a020 \u00b5m). Top panel displays PLA signal alone with an apparent cell border signal, and middle panel represents the PLA signal with Dapi overlay. Bottom panel displays fluorescent staining of DsgGREEN and EGFRRED in normal skin, and NHEK, SCC9 or HNSCC rafts. (c) Quantification of PLA signals in 3D cancer models. *p<0.05 (Student\u2019s t test); mean\u00a0\u00b1SEM. (d) PLA analysis of 3D organotypic raft cultures generated with NHEKs treated with siRNA scramble sequence (siCONT) or siRNA directed towards Cops3 (siCOPS3), indicating an increase in EGFR-Nedd8 PLA signal (scale bar\u00a0=\u00a020 \u00b5m). Quantification of PLA signals displayed to the right of the images. *p<0.05 (Student\u2019s t test); mean\u00a0\u00b1SEM. All experiments are representative of 3 or more independent replicates.\n\n## Discussion\n\nHere we demonstrate a novel form of EGFR regulation and turn over by a newly described desmosome-CSN cell junctional complex. We propose a model by which the desmosome scaffolds the CSN in proximity to EGFR, to control the balance of neddylation-ubiquitination modifications, thus affecting receptor dynamics. Our data is consistent with a model whereby the CSN de-neddylation function contributes to EGFR turnover to promote differentiation in a regenerating tissue, in this case, the epidermis.\n\nPrevious work has shown that the loss of one CSN component affects the formation and function of the entire CSN (Denti et al., 2006; Wei and Deng, 1999). Thus, silencing of the COPS3 subunit, shown here to interact with the desmosome, is predicted to compromise the entire CSN. Similarly, silencing either DP or DSG1 disrupts the association of Cops3 with the other junction component, consistent with the idea that entire desmosome is involved in scaffolding the CSN. This idea is further supported by a mass spectrometry study that identified multiple desmosomal proteins (Plakophilin2 (Pkp2), Pg, Dsg1, and Dp), and not adherens junction proteins, as putative interactors with the first subunit (Cops1) of the COP9 signalosome (Fang et al., 2012). The fact that desmosomal control over the neddylation-ubiquitination balance occurs in SCC9s and keratinocytes in the absence of Dsg1 supports the idea that desmosomes of varying composition broadly regulate the CSN.\n\nOur data provide further support for a functional role of Nedd8 modifications on less commonly reported non-cullin substrates, in this case EGFR. Further, our findings are consistent with the idea that neddylation of EGFR stabilizes the receptor (Figure 5c) and prevents EGFR from ligand-induced internalization (Figure 5a and b). While one study reported a correlation between EGFR neddylation and degradation in Chinese hamster ovary (CHO) cells, the majority of studies have linked neddylation with an increase in protein stability (e.g. MDM2 (Watson et al., 2010), L11 (Sundqvist et al., 2009), HIF1\u03b1 (Ryu et al., 2011), and T\u03b2RII (Zuo et al., 2013). It is unknown whether specific neddylated residues on EGFR are important for driving EGFR towards certain outcomes or whether the number of Nedd8 modifications on EGFR is important. Poly-Nedd8 chains have been demonstrated, but it is still unclear whether these chains have a function in vivo (Jones et al., 2008; Xirodimas et al., 2008). Nevertheless, our data showing a reciprocal relationship between neddylated and ubiquitinated EGFR suggest that Nedd8 and Ubiquitin compete for lysine residues on EGFR to regulate receptor dynamics. Furthermore, our data demonstrate that EGFR ubiquitination can occur independent of neddylation (Figure 4e and Figure 4\u2014figure supplement 2), suggesting a new level of regulation that could have broad-reaching implications for receptor-mediated signaling in multiple contexts.\n\nWhile we show changes in the neddylation state of EGFR, we have not ruled out the possibility that the desmosome-CSN super complex also regulates other proteins at the membrane, such as better-known substrates for the CSN, the cullin proteins, which could promote local Ubiquitin activity at the membrane. It is possible that a uniquely targeted protein degradation program could work in concert with transcriptional epidermal differentiation programs to remove proteins that inhibit, or are no longer required for, epidermal differentiation. Such a process could contribute to the re-sculpting and polarization of cell membrane proteins known to occur during differentiation (Niessen et al., 2012; Wollner et al., 1992).\n\nIn addition to a role for desmosomal scaffolding of the CSN in regulating normal epidermal differentiation and homeostasis, our data from a 3D organotypic cancer model suggests that EGFR neddylation may contribute to elevated EGFR/MAPK signaling in human diseases including inherited keratodermas (Harmon et al., 2013) and cancers such as head and neck squamous cell carcinoma (HNSCC) (Figure 6a\u2013c). EGFR has been shown to be a strong prognostic indicator in epithelial cancers, and increased expression has been associated with reduced survival rates in 70% of studies (Nicholson et al., 2001). This suggests the possibility that elevation of EGFR in different types of cancer may be partly due to the stabilization of the receptor through increased neddylation. Additionally, Cops3 has been implicated in keratinocyte interleukin signaling (Banda et al., 2005), which is interesting in light of the recent observation that loss of Dsg1 leads to an increase in inflammatory mediators in SAM syndrome, featuring severe dermatitis, multiple allergies, and metabolic wasting (Samuelov et al., 2013). A desmosome-CSN super complex could thus serve as a general mechanism by which desmosomes regulate multiple downstream functions that guide normal skin homeostasis and paracrine signaling pathways in which keratinocytes participate. Further, components of this super complex could provide new targets for treating diseases associated with inappropriate epidermal differentiation, inflammation, and cancer.\n\n## Materials and methods\n\n### Cell culture and drugs\n\nPrimary normal human epidermal keratinocytes (NHEKs) were cultured in M154 media (Invitrogen) adjusted to 0.07 mM calcium (termed as low calcium) and supplemented with human keratinocyte growth supplement (HKGS) and gentamicin/amphotericin B. To induce differentiation, NHEKs were switched to media with 1.2 mM calcium (termed as high calcium). High calcium media did not contain HKGS except where noted in text. Human-derived oral squamous cell carcinoma SCC9 cells (RRID: CVCL_1685) and 1483 (RRID: CVCL_6980) were maintained in DMEM/F-12 medium (Mediatech) supplemented with 10% FBS and 1% penicillin/streptomycin. EGFR inhibitor, AG1478 (Selleck Chemicals) was used at a final concentration of 2 \u03bcM. Cycloheximide (CHX) was used at a final concentration of 0.02 mg/ml.\n\n### Cell authentication\n\nPrimary normal human epidermal keratinocyte isolates (NHEKs) are obtained through the Northwestern University Skin Disease and Research Core, where mycoplasma, HIV-1, hepatitis B and C testing is routinely performed. Primary keratinocyte purity is assessed by immunostaining for epidermal keratinocyte specific markers, such as keratins K1/K10 and K5/K14. Cell lines are routinely confirmed to be mycoplasma negative using the Lonza MycoAlert mycoplasma detection Kit and/or by real-time PCR (IDEXX BioResearch (Columbia, MO). The SCC9 and 1483 lines were analyzed by short tandem repeat (STR) profiling to detect both contamination and misidentification, including intra- and inter-species contamination by IDEXX BioResearch (Columbia, MO). The SCC9 cell line (RRID: CVCL_1685, gift from J. Rheinwald, Harvard Medical School, Boston, MA) scored above 80% indicating the sample is consistent with the cell line of origin. The 1483 cell line (RRID: CVCL_6980, a human HNSCC line derived from the oropharynx obtained from Jennifer Grandis) is not available from ATCC. STR analysis ruled out inter-species contamination. While the line scored less than an 80% match compared with the IDEXX standard for STR analysis, this standard was shown to be contaminated with the\u00a0UM-SCC-1 line (Zhao et al., 2011). Thus, key features of this line critical for the present work were validated independently through analysis of EGFR expression, response to inhibitors, and assessment of HNSCC keratins and junctional proteins, including Dsg1 whose expression is lost in many of the available HNSCC lines (Thomas et al., 2008; Desai BD, Todorovic V, and Green KJ, unpublished).\n\n### Antibodies\n\nThe following primary antibodies were used in this study: Cell Signaling: rabbit anti-HA (RRID:AB_1549585), rabbit anti-EGFR D38B1 (RRID:AB_2246311), rabbit anti-pEGFRY1045 (RRID:AB_331710), anti-pEGFRY1068 (RRID:AB_2096270), anti-pEGFRY1086 (RRID:AB_823485), rabbit anti-pErk42/44 (RRID:AB_2315112), rabbit anti-pMek (RRID:AB_2138017), rabbit anti-Mek (RRID:AB_823567) rabbit anti-ErbB2 (RRID:AB_10692490), rabbit anti-pErbB2 (RRID:AB_490899). Abcam: rabbit anti-Cops3 (RRID:AB_1603748), rabbit anti-Nedd8 (RRID:AB_1267251). Sigma-Aldrich: M2 mouse anti-FLAG (RRID:AB_259529), rabbit anti-FLAG (RRID:AB_439687), rabbit anti-GAPDH (RRID: AB_796208), mouse anti-HA (RRID:AB_262051), C2206 rabbit anti-Beta-catenin (RRID:AB_476831), mouse anti-Nedd8 (RRID:AB_260757). Progen: U100 mouse anti-Dsc1 (Cat#65192), p124 mouse anti-Dsg1(Cat # 651111). Invitrogen: 27B2 mouse anti-Dsg1 (RRID:AB_2533088). NeoMarkers: AB-12 mouse anti-EGFR (Cat # MS-400-P1). GE Healthcare Biosciences: goat anti-GST (RRID:AB_771432). Enzo Life Sciences: rabbit anti-Nedd8 (RRID:AB_2051982). Millipore: FK2 mouse anti-Ub (RRID:AB_612093). Aves Laboratories: 1407 chicken anti-Pg. R&D Systems: goat anti-Dsg1 (RRID:AB_2277393). NW161 and NW6 rabbit anti-desmoplakin (Bornslaeger et al., 1996). Promega: Anti-Erk 1/2 (Cat #V114a). Santa Cruz: mouse anti-Cops3 (RRID:AB_2081616). Gift antibodies: 1G4 mouse anti-Dp (gift from J. Wahl III, University of Nebraska, Omaha, NE, USA), rabbit anti-K1, rabbit anti-K10, rabbit-anti-Lor (gifts from J. Segre National Human Genome Research Institute, Bethesda, Maryland, USA), 1G5 mouse anti-Alpha-catenin (gift from Margaret Wheelock, University of Nebraska, Omaha, NE, USA, in memoriam), HecD-1 mouse anti-Ecad (gift from M. Takeichi and O. Abe, Riken Center for Developmental Biology, Kobe, Japan). Western blot analysis included use of peroxidase-conjugated anti- mouse, -rabbit, and -chicken secondary antibodies purchased from SeraCare Life Sciences, Baltimore, MD (formerly Kirkegaard and Perry Laboratories). AlexaFluor 488/568/647-conjugated goat anti- mouse, -rabbit, and \u2013chicken secondary antibodies (Invitrogen) were used in immunofluorescence studies.\n\n### Generation and delivery of DNA constructs\n\nThe Dsg1 cytyoplasmic tail was cloned into a bait construct (pSos-Dsg1) (constructs provided by Invitrogen). The Dsg1-FLAG and Dsg1-GFP construct was generated as previously described (Getsios et al., 2009; Harmon et al., 2013). The HA-Nedd8 construct was obtained from Addgene (plasmid #18711) and transiently transfected using Lipofectamine 2000 (Invitrogen) 2\u201315 \u03bcg/\u03bcl DNA.\n\n### Retroviral infections\n\nThe phoenix packaging cell line (provided by G. Nolan, Stanford University, Stanford California, USA), maintained in DMEM (Mediatech) supplemented with 10% FBS and 1% penicillin/streptomycin, was transfected with LZRS constructs (0.5\u20132 \u03bcg/ml). The day after transfection, cells were re-seeded into selection media with 1 \u03bcg/ml puromycin. Once cells reached 80% confluency, they were switched to 32\u00b0C for 24 hr to collect viral supernatant. In some cases viral supernatant was used immediately to infect primary keratinocytes, and in other cases viral supernatant was concentrated using Amicon Ultra-15 Centrifugal Filter Units (Millipore). NHEKs were infected with virus and 8 \u03bcg/ml polybrene for 90\u2013180\u00a0min\u00a0at 32\u00b0C, after which cells were washed and returned to growth at 37\u00b0C in fresh media.\n\n### siRNA-mediated knockdown\n\nNHEKs and SCC9s were electroporated with siRNA oligonucleotides at a final concentration of 10 nM via AMAXA nucleoporation (Lonza) using the Ingenio Electroporation Solution (Mirus) or solution V (Lonza) and program X-001. siRNA directed towards DSG1 (5' CCA UUA GAG AGU GGC AAU AGG AUG A), DP (Invitrogen Pool: oligonucleotides: 5\u2019-GAA GAG AGG UGC AGG CGU A, 5\u2019 GAC CGU CAC UGA GCU AGU A, and 5\u2019 AAA CAG AAC GCU CCC GAU A), and COPS3 (Invitrogen Stealth siRNA_siCOPS3-465: 5\u2019 AUC AAU GUU AUG AAG CAU GGC UGG G or Integrated DNA Technologies Pool_IDT Pool: 5\u2019-GGA UAU CUG UAA AGA GAA UGG AGC C, 5\u2019-GGA UGUACA AGA ACA CUC CUU GGG C, 5\u2019-UCC AUC CUG AGC UAA ACA AGA GAA A, and Dharmacon (D-011494\u201303)_siCOPS3 Dharma3: 5\u2019- UCC GAA ACC UGG UGA AUA A), NEDD8 (Dharmacon siGENOME SMARTpool (M-020081\u201301): 5\u2019-GAA AGG AGA UUG AGA UUG A, 5\u2019-AGA UUG AGA UUG ACA UUG A, 5\u2019-CAG ACA AGG UGG AGC GAA U, 5\u2019-GGA GAU UGA GAU UGA CAU U), and scramble/non-targeting siRNA (Dharmacon D-001206-14-20).\n\n### Western blot analysis\n\nFor analysis of protein expression levels, cells were washed in phosphate buffered saline (PBS) and lysed in urea sample buffer (8 M deionized urea, 1% sodium dodecyl sulfate, 10% Glycerol, 60 mM Tris pH 6.8, and 5% \u03b2-mercaptoethanol). After equalizing total protein concentrations, samples were run on 7.5\u201315% SDS-PAGE gels and transferred to polyvinylidene fluoride (PVDF) or nitrocellulose membranes to be probed with primary and secondary antibodies against proteins of interest.\n\n### Immunofluorescence and immunohistochemistry\n\nFor analysis of protein localization in cultured cells, NHEK coverslips were fixed and permeabilized by submerging in anhydrous methanol for 2\u20133\u00a0min\u00a0at \u221220\u00b0C when visualizing Dp. All other antibodies were applied to NHEKs fixed and permeablized in paraformaldehyde followed with a 10\u00a0min\u00a00.2% Triton X100 wash at 4\u00b0C. Cells were incubated in solutions with primary antibodies at 4\u00b0C overnight, and secondary antibodies at 37\u00b0C for 30\u201360 min, with multiple PBS washes after each step. For analysis of protein localization in tissue sections, paraffin sections of organotypic raft cultures were rehydrated and then heated to 95\u00b0C in 0.01 M citrate buffer for antigen retrieval. Sections were incubated in solution with primary antibody at 4\u00b0C overnight and in solution with secondary antibody at 37\u00b0C for 60 min. Coverslips and tissue sections were mounted on polyvinyl alcohol (Sigma-Aldrich).\n\n### Microscope image acquisition\n\nCells and tissues were visualized using a Leica microscope (model DMR, Melville NY) fitted with 40X (PL Fluotar, NA 1.0) and 63X (PL APO, NA 1.32) objectives. Images on the DMR microscope were acquired using an Orca 100 CCD camera (model C4742-95; Hamamatsu, Bridgewater, NJ) and analyzed using ImageJ software (NIH version 2.0.0) or Metamorph. For N-SIM analysis, the samples were illuminated with spatially high-frequency patterned excitation light (100X objective lens, NA 1.49; TiE N-SIM microscope [Nikon] and iXON X3 897 camera [Andor Technology]). Images were reconstructed and analytically processed to reconstruct subresolution structure of the samples using Elements version 4 software (Nikon). For siNEDD8 and siCOPS3 EGFR internalization, the Axioimager and the Apotome2 was used with the 40x objective and a MIP of the Z sections was used.\n\n### Organotypic raft cultures\n\n3D raft cultures were grown following protocols previously described (Simpson et al., 2010). Collagen plugs were formed using rat-tail collagen type I (BD) and seeded with J2 fibroblasts (NIH 3T3). J2 fibroblasts were cultured in DMEM (Mediatech) supplemented with 10% FBS and 1% penicillin/streptomycin (Mediatech). E-media was made as a 3:1 mix of DMEM/F-12 and DMEM media with 5% FBS, 10 \u03bcg/ml gentamicin (Life Technologies), 0.4 \u03bcg/ml hydrocortisone (Sigma), 10 ng/ml cholera toxin (Sigma), and 0.25 \u03bcg/ml amphotericinB (Life Technologies), mixed with a cocktail of 180 \u03bcM adenine (Sigma), 5 \u03bcg/ml human recombinant insulin (Sigma), 5 \u03bcg/ml human apo-transferrin (Sigma), and 5 \u03bcg/ml triiodothyronine (Sigma). After seeding with NHEKs, cancer cell lines (SCC9, 1483), or NHEKs that had been electroporated with control or Cops3 siRNA (Amaxa), rafts were grown in E-media with 5 ng/ml epidermal growth factor (EGF) (EMD Millipore). Two days later, rafts were lifted to an air liquid interface and grown in E-media without EGF to induce epidermal differentiation, and harvested on the indicated number of days.\n\n### Yeast-two-hybrid screening (Y2H)\n\nY2H screening was performed following the CytoTrap vector kit (Stratagene) as described (Harmon et al., 2013). The CytoTrap screen (Stratagene) utilizes the temperature-sensitive cdc25H strain of S. cerevisiae, which is deficient in Ras signaling and unable to grow at 37\u00b0C. While yeast grow at the permissive temperature of 25\u00b0C, only yeast that are co-transformed with a bait (pSos) construct that binds a membrane-associated myristoylated target (pMyr) protein activate Ras signaling to allow for growth at 37\u00b0C. pMyr constructs are expressed under galactose promoters; thus, growth at 37\u00b0C on galactose plates without growth at 37\u00b0C on glucose plates indicates target-bait interaction (growth on glucose plates at 37\u00b0C indicates temperature sensitive revertants). A library of HeLa cell cDNAs expressed in the pMyr vector was co-transformed with pSos-DP-NTP or\u00a0pSos-Dsg1\u00a0into cdc25H yeast. After obtaining putative positives by identifying clones that were capable of growing on galactose plates at 37\u00b0C for interactions with Dsg1, pMyr constructs were purified and individually co-transformed with pSos-Dsg1 to confirm specific interactions. pMyr-Pg was used as a positive binding control for Dsg1, and pMyr and pMyr-SB (Stratagene) were respectively used as negative and positive controls for the screen.\n\n### Glutathione-S-Transferase\n\nDsg1-GST and GST constructs were bacterially expressed by adding isopropyl \u03b2-D-1-thiogalactopyranoside (IPTG) to BL21A1 bacteria (Invitrogen). Bacteria were lysed and proteins were purified using glutathione agarose (GE Healthcare). Beads were then incubated with NHEK cell lysates at 4\u00b0C and washed with buffer (500 mM NaCl, 50 mM Tris pH 7.6, 10 mM MgCl2, 1% Tx-100, 0.1% SDS, 0.5% deoxycholate) and eluted in urea sample buffer or Laemmli buffer with 5% \u03b2-mercaptoethanol.\n\n### Co-immunoprecipitation studies\n\nS-tag immunoprecipitations were performed as previously described (Albrecht et al., 2015). Cells used for co-immunoprecipitation studies were rinsed twice in PBS on ice and lysed in ice-cold 1.0 ml RIPA buffer (500 mM NaCl, 50 mM Tris pH 7.6, 10 mM MgCl2, 1% Tx-100, 0.1% SDS, 0.5% deoxycholate) with complete protease inhibitor cocktail (Roche). Cells were incubated with 0.5\u20131.5 \u03bcg of antibody against the protein of interest overnight at 4\u00b0C. The immunoprecipitate was then conjugated to Protein A/G beads (Santa Cruz sc-2003) and eluted in urea sample buffer or Laemmli/Sample buffer (200 mM Tris pH6.8, 20% glycerol, 4% SDS,\u00a00.3% bromophenol blue) with 5% \u03b2 -mercaptoethanol.\n\n### EGFR immunoprecipitations\n\nSCC9s and NHEKs used in EGFR immunoprecipitations were rinsed twice with PBS on ice and lysed in ice-cold 1.0 mL RIPA buffer (50 mM Tris H-Cl pH 7.5, 150 mM NaCl, 1 mM EDTA, 1% Triton X-100, 1% sodium deoxycholate, 0.1% SDS) with phosphatase inhibitors (1:100 Millipore Phosphatase Inhibitor Cocktail Set II (524625) and 1:50 Millipore Phosphatase Inhibitor Cocktail Set IV (524628)) and Complete EDTA-free protease inhibitor cocktail (Roche 05056489001). Cells were incubated with EGFR antibody (1 \u03bcg/mL) from Cell Signaling (D38B1) for an overnight rotation at 4\u00b0C. 15 \u03bcL of Protein A/G PLUS-agarose beads (Santa Cruz sc-2003) were added the next day for 45\u00a0min\u00a0at 4\u00b0C. Beads were then washed in the RIPA buffer used for lysis, and proteins were eluted off beads using 30 \u03bcl of Laemmli lysis buffer. The entire lysate was loaded onto a SDS-PAGE gel for western blot analysis. To assay whether ubiquitination required neddylation for EGF-bound receptors, we performed EGFR IPs in SCC9s silenced for NEDD8 and serum starved, and treated these cells with EGF ligand (50 ng/mL) for 5 min.\n\n### Proximity ligation assay (PLA)\n\nReagents used to conduct PLA were purchased from DUOLink Biosciences and used as described (Harmon et al., 2013). Cells were rinsed and fixed as described above. After incubation with primary antibody overnight at 4\u00b0C, samples were incubated with PLA secondary antibodies conjugated to DNA oligonucleotides for 60\u00a0min\u00a0at 37\u00b0C. Samples were then subjected to a 30\u00a0min\u00a0incubation at 37\u00b0C for ligation of nucleotides, followed by a 100\u00a0min\u00a0incubation at 37\u00b0C for rolling circle polymerization, resulting in the production of fluorescent dots (shown in yellow or red) if the antigens targeted by secondary antibodies were in close proximity (40\u2013100 nm). ImageJ software or Metamorph was used to quantify the number of PLA and DAPI signals per image field.\n\n### Sample size and statistical analysis\n\nAll experiments were performed independently\u00a0>3 times (i.e. biological replicates performed on different days, not technical replicates performed in parallel at the same time). For each independent/biological replicate, multiple experimental/control arms were processed and analyzed in parallel. Representative experiments are displayed throughout the figures and where indicated in the figure legends, quantification of experiments is reported as mean\u00a0\u00b1standard error mean (SEM). For biochemical analyses, cell lysates were derived from a population of cells grown in 10 cm dishes (approximately 4 million cells) or 3 cm dishes (approximately 1 million cells). For immunofluorescence or PLA analyses, cells were plated onto a coverslip in a 3 cm dish and quantified as follows: PLA particles were counted for 5\u201310 randomly selected fields, each containing 20\u2013100 cells (depending on whether image was obtained using a 40X or 63X objective and/or whether the image was from cultured cells or 3D organotypic rafts). Parallel analyses of protein specific antibodies with IgG (mouse or rabbit) were performed to control for false positives. Fluorescence pixel intensity at randomly selected cell borders was determined by multiplying the mean pixel intensity by the area of the defined border divided by the border length. Background intensity was randomly selected from an area on the image and subtracted from the border intensity. Two group comparisons were performed using two-tailed, two-sample equal variance Student\u2019s t test using Excel (Microsoft, Redmond, WA, USA). p-values<0.05 were considered statistically significant. Densitometric analyses were performed on scanned films of immunoblots with the lightest possible exposure, and numbers derived from the densitometric analyses were displayed below immunoblots as indicated in the figures. All densitometric quantifications were normalized to a protein standard, as indicated in figures. All immunofluorescence and densitometric calculations were performed using FIJI (FIJI Is Just ImageJ) (Schindelin et al., 2012), ImageJ (Schneider et al., 2012) or Metamorph.\n",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "bd81a3fe-b979-4419-9612-5ba6c6daae91",
+      "submission_id": "4481996c-4d5b-470c-ae19-ecc3a0fc18e5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Reinhard F\u00e4ssler, Max Planck Institute of Biochemistry Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.22599.030](https://doi.org/10.7554/eLife.22599.030)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"EGFR neddylation is regulated by a novel desmosomal\u2013COP9 signalosome complex\" for consideration by eLife. Your article has been favorably evaluated by Fiona Watts (Senior editor) and three reviewers, one of whom, Reinhard F\u00e4ssler (Reviewer 1), is a member of our Board of Reviewing Editors. The following individuals involved in review of your submission have agreed to reveal their identity: George Garinis (Reviewer #2); Markus Schober (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nDesmoglein 1 (Dsg1) was shown to inhibit Epidermal growth factor receptor (EGFR) activity resulting in cell cycle exit and epidermal differentiation. How Dsg1 controls EGFR activity is unknown. The authors report now that the desmosomal components Dsg1 and Dp in keratinocytes recruit the COP9 signalosome (CSN) to de\u2013neddylate EGFR resulting in increased ubiquitination and turnover of EGFR, and keratinocyte differentiation. These findings are highly significant and shed new light on the regulation of EGFR during epidermal differentiation. However, a potential conflict with previous reports on the role of EGFR neddylation for ubiquitylation should be resolved and important controls included into a revised manuscript. The essential revisions and the minor issues follow.\n\nEssential revisions:\n\n1) In contrast to the authors' finding that EGFR neddylation allows signaling and EGFR ubiquitylation leads to degradation, the Yarden lab (Oved et al., 2006) reported that EGFR neddylation is required for the subsequent ubiquitylation and degradation of activated (EGF\u2013bound) EGFR. The potential contradiction between the separation versus dependence of these events should be solved.\n\n2) What happens with EGFR stability and signaling when Nedd8 is depleted with specific siRNAs?\n\n3) The siCOPS3 should be rescued with an siRNA resistant COPS3 cDNA.\n\n4) The authors perform several PLA assays to illustrate direct protein interactions in vivo. Unfortunately, PLA assays are prone to give false positive results and the data would be more convincing if another junctions protein that does not physically interact with Dsg1/DP was used as a negative control for the experiment. Along these lines, the signal distribution in the SIM and PLA experiments appear different. It would help if the authors could provide phase contrast or junctions marker staining to better illustrate cell\u2013cell adhesion in the PLA data.\n",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d7e80e40-1fa5-4c02-bc58-5a3108179a58",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C1",
+      "claim": "Cops3 subunit of the CSN interacts with the cytoplasmic tail of Dsg1 in yeast two-hybrid assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Cops3 could interact with the constructs comprising the full cytoplasmic tail of Dsg1 or a construct lacking only the membrane proximal intracellular anchor (IA) in yeast (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through yeast two-hybrid growth assays shown in Figure 1a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "af04c4cc-fc70-44dc-afe5-6db35e6b194d",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C2",
+      "claim": "The interaction between Cops3 and Dsg1 is selective, as Cops4 does not interact with the Dsg1 tail.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction with Cops3 was selective, as the fourth subunit of the CSN was unable to interact with the Dsg1 tail in yeast (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Negative control experiment shown in Figure 1b demonstrating specificity",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "5ba46d80-1248-4f0f-8213-88523087d500",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C3",
+      "claim": "Recombinant GST-Dsg1 binds to endogenous Cops3 from NHEK lysates in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, purified GST-Dsg1 bound to sepharose beads specifically precipitated endogenous Cops3 from NHEK lysates (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "GST pull-down assay data shown in Figure 1c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "f981c2d8-909f-4516-a270-aef46a756f1f",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C4",
+      "claim": "Endogenous Dp interacts with Cops3 in NHEKs after 1 day of differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cops3 was also present in immunoprecipitates of endogenous Dp (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Co-immunoprecipitation data shown in Figure 1d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "cc9aaffd-ab59-4304-8d47-14d3aed6e0be",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C5",
+      "claim": "The C-terminal tail of Dp is sufficient for interaction with Cops3.",
+      "claim_type": "EXPLICIT",
+      "source": "While the N-terminal portion of Dp harboring the amino acid residues 1\u2013584 (DP-NTP) was not sufficient for Dp's interaction with Cops3 (Figure 1\u2014figure supplement 1), a 32 kDa truncated version of the C-terminal tail of Dp co-precipitated with endogenous Cops3 in the SCC9 cell line, which was used to overcome the limitations of ectopic expression of the Dp S-tag fusion protein (DP-S-tag) in primary cells. This suggested the site of interaction on Dp resides within the C-terminus (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Domain mapping experiments using truncation constructs shown in Figure 1e and Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "6dd6bb4e-c93e-4fbb-8519-3d96aa126413",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C6",
+      "claim": "Cops3 is distributed throughout the cell and closely associates with Dsg1 and Dp at cell-cell junctions and cytoplasmic particles.",
+      "claim_type": "EXPLICIT",
+      "source": "SIM images revealed Cops3 to be distributed throughout the cell, impinging upon Dsg1 or Dp concentrated at cell-cell junctions. Cops3 was also closely associated with cytoplasmic Dsg1 and Dp particles, which could represent vesicles or cytoplasmic precursors, previously described (Godsel et al., 2005) (Figure 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Structured illumination microscopy images shown in Figure 1f",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "7482f541-0182-4627-a7b9-62582eb72b76",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C7",
+      "claim": "Dsg1 and Cops3 are in close proximity (40-100 nm) in NHEKs, as demonstrated by proximity ligation assay.",
+      "claim_type": "EXPLICIT",
+      "source": "A positive PLA signal was observed for the Dsg1 and Cops3 antibody pair, which was abrogated by treatment with either DSG1 or COPS3 siRNA (Figure 1g and Figure 1\u2014figure supplement 2), consistent with an association between Dsg1 and Cops3 in NHEKs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Proximity ligation assay data shown in Figure 1g and Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "89ec7f2c-4e78-485e-8c2e-01d954297c27",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C8",
+      "claim": "Dp and Cops3 are in close proximity in NHEKs treated with high calcium media to induce differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, PLA analysis revealed a positive signal for Dp and Cops3 in NHEKs treated with high calcium media to induce epidermal differentiation, which was likewise inhibited through knockdown of Dp and Cops3 (Figure 1h and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Proximity ligation assay data shown in Figure 1h and Figure 1\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "2b2408c1-3ec6-4f51-838a-dbc5632870e4",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C9",
+      "claim": "The integrity of the entire desmosome is required to scaffold the COP9 signalosome.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate further the possibility that the entire desmosome serves as a docking site for the recruitment of the CSN, we also assessed whether Dp knockdown diminished Cops3's ability to co-localize with Dsg1 (Figure 1g) and vice versa (Figure 1h). In both cases, PLA signals were significantly reduced, supporting the idea that the integrity of the entire desmosome is required to scaffold the COP9 signalosome.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "PLA experiments with reciprocal knockdowns shown in Figure 1g and 1h",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "0c53908e-e7d8-4e07-9e6c-4215e89c6131",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C10",
+      "claim": "Cops3 interacts with desmosomal molecules Dsg1 and Dp but not with adherens junction components E-cadherin and Beta-catenin.",
+      "claim_type": "EXPLICIT",
+      "source": "To address the specificity of Cops3 interactions with desmosomes we paired the Cops3 antibody with the adherens junction protein E-cadherin (E-cad). As a positive control, E-cad and Beta-catenin (B-cat) were paired as well as Alpha-catenin (A-cat) and B-cat (Figure 1i and Figure 1\u2014figure supplement 4). These experiments clearly show that while Cops3 interacts with desmosomal molecules Dsg1 and Dp, it does not interact with adherens junction components.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "PLA specificity controls shown in Figure 1i and Figure 1\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "3029cfef-0edc-4265-96ce-025c2554237a",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C11",
+      "claim": "Approximately 60% of Dsg1/Cops3 PLA signals and 67% of Dp/Cops3 PLA signals are localized at cell-cell interfaces marked by Plakoglobin.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that while not all desmosome-Cops3 interactions are in close proximity to the Pg signal, a large percentage of PLA dots do appear to be localized at cell-cell interfaces (~60% for Dsg1/Cops3;~67% for Dp/Cops3), although to a somewhat lesser extent than the positive control PLA pairings Alpha-Catenin/Beta-Catenin (~82%) and Ecad/Beta-catenin (~88%) (Figure 1i and Figure 1\u2014figure supplement 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantification of PLA signal localization shown in Figure 1i and Figure 1\u2014figure supplement 4c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "502db02b-552e-4043-a071-aad67c111b13",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C12",
+      "claim": "Silencing COPS3 in NHEKs results in a reduction in differentiation markers including Dsg1, Dsc1, K1, and K10.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical analysis revealed a reduction in differentiation related gene products including Dsg1, Desmocollin1 (Dsc1), Keratin1 (K1), and Keratin 10 (K10) (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot analysis shown in Figure 2a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "dd9b1cc5-f8de-4020-b159-eb3b298ccaba",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C13",
+      "claim": "Five independent siRNA oligos targeting COPS3 produce similar impairment of keratinocyte differentiation markers, supporting that observed changes are not due to off-target effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar impairment of these features of the keratinocyte differentiation program were observed using five oligos each with independent targets within the COPS3 sequence (siCOPS3-465, siCOPS3-Dharma3, siCOPS3-IDT pool including 3 oligos), supporting the idea that the observed changes were not due to off target effects (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Multiple independent siRNA sequences tested as shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "8855b27d-2a77-4cf9-bba7-8f36ce6e2452",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C14",
+      "claim": "Cops3-deficient 3D organotypic raft cultures show decreased expression of differentiation markers Dsg1, Dsc1, K1, K10, and Loricrin.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical analysis of raft lysates revealed similar differentiation defects when compared with monolayer cultures reflected by a decrease in Dsg1, Dsc1, the suprabasal keratins K1 and K10 and the cell envelope protein Loricrin (Lor) (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot analysis of 3D raft cultures shown in Figure 2c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "68b0d618-9bdb-4e67-adc0-6efd303bba5b",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C15",
+      "claim": "Immunofluorescence of siCOPS3 Day 3 rafts reveals defects in the differentiation markers K10 and Dsg1.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence of siCOPS3 Day 3 rafts also revealed defects in the differentiation marker K10 and Dsg1 (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Immunofluorescence data shown in Figure 2d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "05ec351e-3c25-4548-bf63-3939ece9a95e",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C16",
+      "claim": "Ectopic Dsg1-FLAG is unable to fully drive expression of differentiation markers Dsc1, K1, and K10 in Cops3-silenced cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical analysis of cells retrovirally transduced with a Dsg1-Flag vector revealed that Dsg1-Flag was unable to drive expression of Dsc1, K1, and K10 in Cops3-silenced cultures after inducing differentiation for 2 days to the same extent as control cells (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot analysis of rescue experiment shown in Figure 2e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "337377cd-eb7f-45ce-b8ff-3abdbb4438f0",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C17",
+      "claim": "Dsg1-GFP expressing cells are unable to express K10 upon silencing of COPS3 after 1 day of differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that Dsg1-GFP expressing cells were unable to express K10 upon silencing of COPS3 (Figure 2f and g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Immunofluorescence and quantification shown in Figure 2f and g",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "cf312d4b-0614-4080-8ce8-629abaa620a9",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C18",
+      "claim": "Dsg1 requires Cops3 for efficient Dsg1-stimulated keratinocyte differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Dsg1 requires Cops3 for efficient Dsg1-stimulated keratinocyte differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple experiments showing Dsg1 cannot promote differentiation without Cops3",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "cf81ae1f-de59-4a33-b403-9b790c90fca4",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C19",
+      "claim": "Silencing COPS3 in NHEKs results in increases in pEGFR, pErk, and pMek.",
+      "claim_type": "EXPLICIT",
+      "source": "Increases in pEGFR, phosphorylated Erk (pErk), and phosphorylated Mitogen Activated Protein Kinase (pMek) were observed (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot analysis shown in Figure 3a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "608e024b-6ee9-4712-ae6e-b14d1b3a9f86",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C20",
+      "claim": "An increase in pErk is observed in 3D organotypic raft cultures treated with siRNA targeting COPS3.",
+      "claim_type": "EXPLICIT",
+      "source": "An increase in pErk was also observed in 3D organotypic raft cultures treated with siRNA targeting COPS3 (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Immunofluorescence data shown in Figure 3b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "6a6ed691-ec88-4017-af10-db39c8bb1fb4",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C21",
+      "claim": "Pharmacological inhibition of EGFR with AG1478 restores expression of differentiation markers Dsg1, Dsc1, and K10 in Cops3-deficient cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological inhibition of EGFR restored Dsg1, Dsc1, and K10 expression without increasing Cops3 protein levels (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot analysis of EGFR inhibitor treatment shown in Figure 3c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "0093d6c4-103c-41b3-a247-a397d72e53b8",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C22",
+      "claim": "The CSN, recruited to the desmosome through Cops3, is required to properly modulate EGFR activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with the hypothesis that the CSN, recruited to the desmosome through Cops3, is required to properly modulate EGFR activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from EGFR inhibitor rescue experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "7feb1d4d-6fa8-4e0e-a749-f7f276aafe1e",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C23",
+      "claim": "EGFR neddylation occurs in NHEKs.",
+      "claim_type": "EXPLICIT",
+      "source": "To address whether EGFR neddylation occurs in NHEKs and whether the desmosome-CSN complex regulates EGFR neddylation status, we performed RNAi-mediated silencing of DSG1, DP, and COPS3 in NHEKs differentiated for 1 day and assessed the association of the Nedd8 moiety with EGFR using PLA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "PLA assay detecting EGFR-Nedd8 association in NHEKs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "1e289a86-690f-40ec-a877-94d1fa6ae43e",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C24",
+      "claim": "Silencing DP, DSG1, or COPS3 results in a significant increase in EGFR-Nedd8 PLA signals.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant increase in PLA positive signals between EGFR and Nedd8 was observed when DP, DSG1 or the CSN component COPS3 was silenced (Figure 4a and Figure 4\u2014figure supplement 1), supporting a model whereby both the desmosome and the CSN are necessary for regulating EGFR de-neddylation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "PLA quantification shown in Figure 4a and Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "5888cc23-a80f-4037-b735-72f7d670012e",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C25",
+      "claim": "Loss of Dp or Cops3 via RNAi-mediated silencing results in elevated EGFR neddylation in SCC9 cells expressing HA-tagged Nedd8.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of either Dp or Cops3 via RNAi-mediated silencing resulted in elevated EGFR neddylation (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "EGFR immunoprecipitation data shown in Figure 4b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "d2fbd51c-7606-4c90-aae4-d9314adc47ca",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C26",
+      "claim": "DP knockdown in desmosome-containing SCC9 cells impacts EGFR neddylation status, consistent with the observation that loss of either Dsg1 or Dp interferes with recruitment of Cops3 to desmosomes in NHEK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that DP knockdown in desmosome-containing SCC9 cells impacts EGFR neddylation status is consistent with the observation that loss of either Dsg1 or Dp interferes with recruitment of Cops3 to desmosomes in NHEK cells (Figure 1g and h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Integration of data from Figure 4b with Figure 1g and h",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "c27409c9-0272-47f7-848e-8b8567eb2a8f",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C27",
+      "claim": "Loss of Cops3 and Dp results in reduced ubiquitination of EGFR in SCC9 cells treated with EGF.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon loss of Cops3 and Dp we observed reduced ubiquitination of EGFR (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "EGFR immunoprecipitation data shown in Figure 4c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "e178cc25-0ec4-452f-98a2-f28dd0238f9c",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C28",
+      "claim": "Silencing Dsg1, Cops3, or Dp results in a decrease in EGFR-Ubiquitin PLA signal.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found a decrease in a PLA signal between EGFR and Ubiquitin when Dsg1, Cops3, or Dp was silenced (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "PLA data shown in Figure 4d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "1b31341a-baa6-46c6-880a-19638f4e7fed",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C29",
+      "claim": "EGFR is ubiquitinated in Nedd8 depleted SCC9 cells, on average about 1.4-fold higher than control RNAi-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon immunoprecipitation of EGFR, it was found that EGFR is ubiquitinated in Nedd8 depleted cells, on average about 1.4-fold higher than control RNAi-treated cells (Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "EGFR immunoprecipitation data shown in Figure 4e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "eb440c2b-88f7-4954-8399-85eb58237795",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C30",
+      "claim": "PLA analysis reveals an association between EGFR and Ubiquitin upon the loss of Nedd8.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, PLA analysis revealed an association between EGFR and Ubiquitin upon the loss of Nedd8 (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "PLA data shown in Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "508193f1-8c98-4c9d-8c63-a4f33375106a",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C31",
+      "claim": "Both desmosome and CSN components support the generation and/or maintenance of ubiquitinated EGFR, at the expense of EGFR neddylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this suggests that both desmosome and CSN components support the generation and/or maintenance of ubiquitinated EGFR, at the expense of EGFR neddylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from reciprocal relationship between neddylation and ubiquitination experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "c824c307-c162-4f9f-95c8-830c94001736",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C32",
+      "claim": "EGFR border intensity remains elevated in cells silenced for COPS3, DSG1, and DP after treatment with EGF ligand for 5 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5a (and Figure 4\u2014figure supplement 1), EGFR border intensity in cells silenced for COPS3, DSG1, and DP remained elevated compared with control treated cultures after EGFR internalization was induced by treatment with EGF ligand.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Immunofluorescence quantification shown in Figure 5a and Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "aeddcce3-bf63-41dd-bc30-21c2055ee6cc",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C33",
+      "claim": "EGFR intensity is dramatically reduced at cell-cell interfaces in both siCONT and siNEDD8 cultures at 15 minutes after EGF treatment, whereas EGFR is stable at borders in siCOPS3 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "EGFR intensity was dramatically reduced at cell-cell interfaces in both the siCONT and siNEDD8 cultures, whereas EGFR was stable at borders in siCOPS3 cells (Figure 5b and Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Immunofluorescence quantification shown in Figure 5b and Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "1c29ca23-eda4-4c9d-bb59-557990c44ced",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C34",
+      "claim": "The desmosome-CSN complex destabilizes EGFR by de-neddylating the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with the idea that the desmosome-CSN complex destabilizes EGFR by de-neddylating the receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from EGFR dynamics experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "fbda6284-8ae4-469e-b880-d2b83e39c2ef",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C35",
+      "claim": "Upon the loss of Nedd8, the stability of EGFR significantly decreases over a 24 hr time period in cycloheximide-treated NHEKs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that upon the loss of Nedd8, the stability of EGFR significantly decreases over a 24 hr time period (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Cycloheximide chase experiment shown in Figure 5c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "c783c892-6344-491b-8e9c-0408e1912f5a",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C36",
+      "claim": "The neddylated state of EGFR promotes its stabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with the idea that the neddylated state of EGFR promotes its stabilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from cycloheximide chase experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "b898f61a-a87a-4d96-b0c5-d916a1a95ed7",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C37",
+      "claim": "EGFR is distributed more broadly throughout SCC9 and 1483 3D organotypic raft cultures and extends further into suprabasal layers than in control cultures or human epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, EGFR was distributed more broadly throughout the culture and extended further into suprabasal layers than in control cultures or human epidermis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from immunofluorescence of 3D raft cultures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "8874a096-3b63-4466-9394-f0d30f923a7a",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C38",
+      "claim": "1483 and SCC9 3D cultures exhibit elevated levels of EGFR and Cops3 compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, 1483 and SCC9 3D cultures, when compared to controls, exhibited elevated levels of EGFR and Cops3 (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot analysis shown in Figure 6a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "9ade462b-86c6-4a62-9bab-efb3c61e9560",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C39",
+      "claim": "The level of Dsg1, and to a lesser extent Dp, is reduced in the SCC9 and 1483 cancer 3D rafts when compared to control, primary NHEK 3D rafts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the level of Dsg1, and to a lesser extent Dp, is reduced in the SCC9 and 1483 cancer 3D rafts when compared to control, primary NHEK 3D rafts (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot analysis shown in Figure 6a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "cab97518-6f26-433f-8fd2-04677cf7c323",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C40",
+      "claim": "PLA analysis of organotypic cancer rafts reveals an increase in EGFR-Nedd8 signal.",
+      "claim_type": "EXPLICIT",
+      "source": "PLA analysis of organotypic cancer rafts revealed an increase in EGFR-Nedd8, which is consistent with the known elevation of EGFR activity in HNSCC (Figure 6b top and middle panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "PLA data shown in Figure 6b",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "9f32343b-f86c-4f48-a812-161920e049bf",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C41",
+      "claim": "A reciprocal staining pattern of EGFR and Dsg1 is observed in organotypic cancer rafts.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we observed a reciprocal staining pattern of EGFR and Dsg1 (Figure 6b bottom panel), consistent with the idea that loss of Dsg1 in progressing tumors is associated with elevated EGFR expression (Wong et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Immunofluorescence data shown in Figure 6b and cited literature",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "d9cee7cc-836a-4604-bf7f-fe43bea6c40e",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C42",
+      "claim": "Upon the loss of Cops3 in 3D raft cultures, there is an increase in Nedd8 associated with EGFR.",
+      "claim_type": "EXPLICIT",
+      "source": "To show that proper CSN functioning is required for EGFR-neddylation maintenance in a 3D model, we carried out PLA analysis of rafts silenced for COPS3 and harvested at Day 3 (Figure 2c), and found that upon the loss of Cops3 there is an increase in Nedd8 associated with EGFR (Figure 6d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "PLA data shown in Figure 6d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "15932229-df3a-4f83-a20f-e516790834ef",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C43",
+      "claim": "The desmosome scaffolds the CSN in proximity to EGFR to control the balance of neddylation-ubiquitination modifications, thus affecting receptor dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose a model by which the desmosome scaffolds the CSN in proximity to EGFR, to control the balance of neddylation-ubiquitination modifications, thus affecting receptor dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model proposed based on integration of all experimental findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "eaca8c53-9db7-4f7b-96ea-e2c34e87fdbe",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C44",
+      "claim": "The CSN de-neddylation function contributes to EGFR turnover to promote differentiation in the epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data is consistent with a model whereby the CSN de-neddylation function contributes to EGFR turnover to promote differentiation in a regenerating tissue, in this case, the epidermis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model proposed based on integration of all experimental findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "8f5f0c66-9f23-47b3-b330-71b2b5e27614",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C45",
+      "claim": "Loss of one CSN component affects the formation and function of the entire CSN.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that the loss of one CSN component affects the formation and function of the entire CSN (Denti et al., 2006; Wei and Deng, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "ccd8ca7f-6588-4042-905c-b8b749e03c2c",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C46",
+      "claim": "Silencing of the COPS3 subunit is predicted to compromise the entire CSN.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, silencing of the COPS3 subunit, shown here to interact with the desmosome, is predicted to compromise the entire CSN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on cited literature about CSN function",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "d2503a43-cc0e-43d7-9c10-8f5d69764af5",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C47",
+      "claim": "Silencing either DP or DSG1 disrupts the association of Cops3 with the other junction component.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, silencing either DP or DSG1 disrupts the association of Cops3 with the other junction component, consistent with the idea that entire desmosome is involved in scaffolding the CSN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from PLA experiments with reciprocal knockdowns",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "cfe68556-9f7c-4d3c-876f-971e9b694e9a",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C48",
+      "claim": "A mass spectrometry study identified multiple desmosomal proteins (Plakophilin2, Pg, Dsg1, and Dp), and not adherens junction proteins, as putative interactors with the first subunit (Cops1) of the COP9 signalosome.",
+      "claim_type": "EXPLICIT",
+      "source": "This idea is further supported by a mass spectrometry study that identified multiple desmosomal proteins (Plakophilin2 (Pkp2), Pg, Dsg1, and Dp), and not adherens junction proteins, as putative interactors with the first subunit (Cops1) of the COP9 signalosome (Fang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous mass spectrometry study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "2e0c2f22-eb2c-4406-a0c3-7640824954eb",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C49",
+      "claim": "Desmosomal control over the neddylation-ubiquitination balance occurs in SCC9s and keratinocytes in the absence of Dsg1, supporting the idea that desmosomes of varying composition broadly regulate the CSN.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that desmosomal control over the neddylation-ubiquitination balance occurs in SCC9s and keratinocytes in the absence of Dsg1 supports the idea that desmosomes of varying composition broadly regulate the CSN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experiments in different cell types",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "8fad88d2-c746-4c60-a394-645741700421",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C50",
+      "claim": "The majority of studies have linked neddylation with an increase in protein stability (e.g. MDM2, L11, HIF1\u03b1, and T\u03b2RII).",
+      "claim_type": "EXPLICIT",
+      "source": "While one study reported a correlation between EGFR neddylation and degradation in Chinese hamster ovary (CHO) cells, the majority of studies have linked neddylation with an increase in protein stability (e.g. MDM2 (Watson et al., 2010), L11 (Sundqvist et al., 2009), HIF1\u03b1 (Ryu et al., 2011), and T\u03b2RII (Zuo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from multiple previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "ff145c51-0cf6-43d2-b45e-ae3ec3fb5ed1",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C51",
+      "claim": "Nedd8 and Ubiquitin compete for lysine residues on EGFR to regulate receptor dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, our data showing a reciprocal relationship between neddylated and ubiquitinated EGFR suggest that Nedd8 and Ubiquitin compete for lysine residues on EGFR to regulate receptor dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from reciprocal relationship experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "62f5ffc6-3105-4dce-9c1f-5a1c4e8b3f08",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C52",
+      "claim": "EGFR ubiquitination can occur independent of neddylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our data demonstrate that EGFR ubiquitination can occur independent of neddylation (Figure 4e and Figure 4\u2014figure supplement 2), suggesting a new level of regulation that could have broad-reaching implications for receptor-mediated signaling in multiple contexts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Data from Nedd8 knockdown experiments shown in Figure 4e and Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "90d692ac-cffb-4dd7-b17c-f3ad0ae31033",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C53",
+      "claim": "EGFR has been shown to be a strong prognostic indicator in epithelial cancers, and increased expression has been associated with reduced survival rates in 70% of studies.",
+      "claim_type": "EXPLICIT",
+      "source": "EGFR has been shown to be a strong prognostic indicator in epithelial cancers, and increased expression has been associated with reduced survival rates in 70% of studies (Nicholson et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "bb19c6a9-601f-4a38-9695-093cf5b52431",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C54",
+      "claim": "Elevation of EGFR in different types of cancer may be partly due to the stabilization of the receptor through increased neddylation.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests the possibility that elevation of EGFR in different types of cancer may be partly due to the stabilization of the receptor through increased neddylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on cancer model data and EGFR stability experiments",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "a33dc3ec-ebca-439d-8073-36dbc878d6ef",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C55",
+      "claim": "Cops3 has been implicated in keratinocyte interleukin signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Cops3 has been implicated in keratinocyte interleukin signaling (Banda et al., 2005), which is interesting in light of the recent observation that loss of Dsg1 leads to an increase in inflammatory mediators in SAM syndrome, featuring severe dermatitis, multiple allergies, and metabolic wasting (Samuelov et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "da0f9671-4558-4dc0-b444-42de5e1edad6",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C56",
+      "claim": "Loss of Dsg1 leads to an increase in inflammatory mediators in SAM syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Cops3 has been implicated in keratinocyte interleukin signaling (Banda et al., 2005), which is interesting in light of the recent observation that loss of Dsg1 leads to an increase in inflammatory mediators in SAM syndrome, featuring severe dermatitis, multiple allergies, and metabolic wasting (Samuelov et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "2e9fba25-3762-4e5b-8edd-d04b37e5d161",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C57",
+      "claim": "A desmosome-CSN super complex could serve as a general mechanism by which desmosomes regulate multiple downstream functions that guide normal skin homeostasis and paracrine signaling pathways in which keratinocytes participate.",
+      "claim_type": "EXPLICIT",
+      "source": "A desmosome-CSN super complex could thus serve as a general mechanism by which desmosomes regulate multiple downstream functions that guide normal skin homeostasis and paracrine signaling pathways in which keratinocytes participate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on integration of findings with broader context",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "ae2a8542-5bf9-44c5-9dee-837ec99e1f8f",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C58",
+      "claim": "Components of the desmosome-CSN super complex could provide new targets for treating diseases associated with inappropriate epidermal differentiation, inflammation, and cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, components of this super complex could provide new targets for treating diseases associated with inappropriate epidermal differentiation, inflammation, and cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about therapeutic implications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "9eb5ff4e-e95b-4fd9-be57-5a4d61526a0b",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C59",
+      "claim": "Desmoglein 1 (Dsg1) is not only required for maintaining epidermal tissue integrity in superficial layers, but also promotes keratinocyte differentiation as cells transit out of the basal layer.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we showed that the desmosomal cadherin, Desmoglein 1 (Dsg1), is not only required for maintaining epidermal tissue integrity in superficial layers, but also promotes keratinocyte differentiation as cells transit out of the basal layer (Getsios et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work by the authors",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "4c17fb3c-cea6-45ce-b54c-d6b702520a85",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C60",
+      "claim": "Dsg1 attenuates the activity of ErB receptors (EGFR and ErbB2) and downstream MAPK signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "It performs this function at least in part by attenuating the activity of ErB receptors (EGFR and ErbB2) and downstream MAPK signaling (Getsios et al., 2009; Harmon et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work by the authors",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "ff1d5fcc-c0f0-40f2-b813-e05cadd0506c",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C61",
+      "claim": "The unusually long cytoplasmic tail of Dsg1, but not the adhesive ectodomain, was required to suppress EGFR and Erk1/2 signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The unusually long cytoplasmic tail of Dsg1, but not the adhesive ectodomain, was required to suppress EGFR and Extra Cellular Signal-regulated Kinase 1/2 (Erk1/2) signaling, indicating a previously unrecognized function for Dsg1 that transcends its canonical roles in adhesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work by the authors",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "0ad577d1-9683-4e9a-92ce-e5da75002a84",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C62",
+      "claim": "The CSN functions as a Nedd8 isopeptidase to remove Nedd8 moieties from its substrates, an activity depending on the Cops5 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "The CSN functions as a Nedd8 isopeptidase to remove Nedd8 moieties from its substrates, an activity depending on the Cops5 subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about CSN function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "e5446060-4ce2-442a-b9a9-945d74915fb5",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C63",
+      "claim": "The CSN de-neddylates cullin-RING E3 ligases (Cul1, 2, 3, 4a, 4b, 5, 7).",
+      "claim_type": "EXPLICIT",
+      "source": "This hydrolysis has been classically studied in the context of de-neddylation of cullin-RING (Really Interesting New Gene) E3 ligases (Cul1, 2, 3, 4a, 4b, 5, 7) (Cope et al., 2002; Duda et al., 2008; Saha and Deshaies, 2008), which regulate fundamental processes important for development and tissue homeostasis, including cell cycle, signal transduction, transcription and DNA replication (Petroski and Deshaies, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "844221b9-6859-42b5-b9c3-aa9592079006",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C64",
+      "claim": "The CSN de-neddylates and partners with de-ubiquitinase enzymes to 'de-ubiquitinate' and rescue the cullin from spurious self-ubiquitination that occurs when the Nedd8 modification is present.",
+      "claim_type": "EXPLICIT",
+      "source": "To promote the activity of cullin-RING E3 ligases, the CSN de-neddylates and partners with de-ubiquitinase enzymes to 'de-ubiquitinate' and rescue the cullin from spurious self-ubiquitination that occurs when the Nedd8 modification is present (Hetfeld et al., 2005; Wee et al., 2005; Zhou et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "9856ff8e-47cd-4619-a082-871bb752a3f7",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C65",
+      "claim": "Cells deficient for the CSN are unable to remove Nedd8, and as a consequence cullin-RING E3 ligase subunits are autoubiquitinated resulting in reduced function.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells deficient for the CSN are unable to remove Nedd8, and as a consequence cullin-RING E3 ligase subunits are autoubiquitinated resulting in reduced function (Bosu and Kipreos, 2008; Hetfeld et al., 2005; Hotton and Callis, 2008; Schwechheimer et al., 2001; Wee et al., 2005; Wu et al., 2005; Zhou et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "f92b9dcf-dad4-457c-8f2a-e5a52a155b54",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C66",
+      "claim": "Ubiquitination is important for the internalization and post-internalization sorting of EGFR, where the ubiquitin ligase, Cbl, coordinates the transfer of the Ubiquitin from an E2 enzyme to the receptor's cytoplasmic domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquitination is important for the internalization and post-internalization sorting of EGFR, where the ubiquitin ligase, Cbl, coordinates the transfer of the Ubiquitin from an E2 enzyme to the receptor's cytoplasmic domain (Conte and Sigismund, 2016; Joazeiro et al., 1999; Levkowitz et al., 1999; Sorkin and Goh, 2008; Waterman et al., 1999; Yokouchi et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "ab2ba4fb-9ba6-4cc8-a7a9-a3409d8e7655",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C67",
+      "claim": "When EGFR fails to acquire Ubiquitin, it is recycled back to the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "When EGFR fails to acquire Ubiquitin, it is recycled back to the membrane (Levkowitz et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "3a7d89aa-c211-4f94-b8a3-81e89b85310e",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C68",
+      "claim": "Neddylation has previously been shown to stabilize substrates including other membrane receptors such as TGF\u03b2RII.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, neddylation has previously been shown to stabilize substrates including other membrane receptors such as TGF\u03b2RII (Zuo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "e5215e76-071c-4110-aa52-f96abfe348e3",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C69",
+      "claim": "Desmosomes are the most prominent cell-cell junctions in the epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the epidermis, the most prominent of these junctions are desmosomes, which confer mechanical strength to tissues by linking the intermediate filament (IF) cytoskeleton through the IF anchoring protein Desmoplakin (Dp) to sites of desmosomal cadherin-mediated adhesion (Kowalczyk and Green, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about epidermal structure",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "e7d6edd7-dbed-46ea-94ae-4d859d2297b9",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C70",
+      "claim": "Desmosomes confer mechanical strength to tissues by linking the intermediate filament cytoskeleton through Desmoplakin to sites of desmosomal cadherin-mediated adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "In the epidermis, the most prominent of these junctions are desmosomes, which confer mechanical strength to tissues by linking the intermediate filament (IF) cytoskeleton through the IF anchoring protein Desmoplakin (Dp) to sites of desmosomal cadherin-mediated adhesion (Kowalczyk and Green, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about desmosome function",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "407047f6-8649-4441-9cd6-25e7498600d3",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C71",
+      "claim": "Mutations in genes encoding desmosome components lead to skin, heart, and hair defects.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of the desmosome-IF complex is underscored by the existence of mutations in genes encoding desmosome components that lead to skin, heart, and hair defects (Lai-Cheong et al., 2007; Petrof et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "dbb1e8d9-7f51-41e2-90f0-0a2075e48a4b",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C72",
+      "claim": "The desmosome can act as a signaling scaffold to ensure the spatial and temporal execution of the epidermal differentiation program.",
+      "claim_type": "EXPLICIT",
+      "source": "While the desmosome has classically been regarded as an adhesion complex, recent studies have demonstrated that it can act as a signaling scaffold to ensure the spatial and temporal execution of the epidermal differentiation program (Broussard et al., 2015; Harmon and Green, 2013; Schmidt and Koch, 2007; Sumigray and Lechler, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from recent studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "9f267e3c-4ddc-4a15-b32b-c14702ad97a2",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C73",
+      "claim": "Dsg1 is first expressed as cells commit to differentiation and becomes progressively concentrated in the superficial epidermal layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Dsg1 is optimally positioned to exert this sort of spatial control on the EGFR pathway, as it is first expressed as cells commit to differentiation and becomes progressively concentrated in the superficial epidermal layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about Dsg1 expression pattern",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "fdabd364-0458-4281-af13-15232645853d",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C74",
+      "claim": "A yeast-two-hybrid screen using the cytoplasmic domain of Dsg1 as bait identified Cops3 as a putative binding partner.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify mediators of Dsg1 signaling functions we carried out a yeast-two-hybrid (Y2H) screen using the cytoplasmic domain of Dsg1 as bait (Harmon et al., 2013). Among the putative binding partners identified was the third subunit (Cops3) of the eight-subunit complex called the COP9 signalosome (CSN).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Yeast two-hybrid screen results",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "20efd56f-a985-42f7-9780-b1077f1a6a98",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C75",
+      "claim": "The epidermis is a multi-layered epithelium that continuously renews itself through a highly choreographed program of morphological and biochemical changes.",
+      "claim_type": "EXPLICIT",
+      "source": "The epidermis is a multi-layered epithelium that continuously renews itself through a highly choreographed program of morphological and biochemical changes, which are necessary to form a barrier against environmental insults and water loss (Koster and Roop, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about epidermal biology",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "eebb266d-c643-4763-a17b-140fd22f7f94",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C76",
+      "claim": "Epidermal renewal requires proliferating basal cells to stop dividing and undergo a commitment to differentiate as they transit toward the outer surface of the skin.",
+      "claim_type": "EXPLICIT",
+      "source": "This process requires proliferating basal cells to stop dividing and undergo a commitment to differentiate as they transit toward the outer surface of the skin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about epidermal differentiation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "62b0cb06-7706-4a45-b720-905ac29f2781",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C77",
+      "claim": "Chemical cues governed by EGFR and other signaling receptors must be tightly regulated to maintain a proper balance of proliferation and differentiation in the epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemical cues governed by Epidermal Growth Factor Receptor (EGFR) and other signaling receptors must be tightly regulated to maintain a proper balance of proliferation and differentiation and to drive critical steps at each stage of epidermal stratification (Fuchs and Nowak, 2008; Fuchs and Raghavan, 2002; Koster and Roop, 2007; Lopez-Pajares et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about epidermal homeostasis",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "0009ffd2-4f35-48b5-88fb-4739a92caea3",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "claim_id": "C78",
+      "claim": "Tissue morphogenesis and homeostasis are critically dependent on the proper spatial control of receptor tyrosine kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue morphogenesis and homeostasis are critically dependent on the proper spatial control of receptor tyrosine kinase activity (Casaletto and McClatchey, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "37a19ecb-9e6a-4c13-8125-2315229ab1cd",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The COP9 signalosome subunit Cops3 physically interacts with desmosomal components Dsg1 and Dp. This interaction is specific to desmosomes (not adherens junctions), requires the cytoplasmic tail of Dsg1 and C-terminal domain of Dp, and the integrity of the entire desmosome is necessary to scaffold the CSN complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C11 provide converging evidence from multiple complementary approaches (yeast two-hybrid, GST pull-down, co-immunoprecipitation, structured illumination microscopy, and proximity ligation assay) demonstrating physical interaction between Cops3 and desmosomal proteins. The specificity controls (C2, C10) and reciprocal knockdown experiments (C9) strengthen the conclusion that this is a bona fide desmosome-CSN interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "e0c4c8ae-15f1-4e35-afe3-da7c2324a24a",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Loss of Cops3 impairs keratinocyte differentiation as evidenced by reduced expression of differentiation markers (Dsg1, Dsc1, K1, K10, Loricrin) in both 2D and 3D culture systems. Importantly, ectopic Dsg1 cannot rescue differentiation in Cops3-deficient cells, indicating that Dsg1 requires Cops3 for its pro-differentiation function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C18 demonstrate consistent differentiation defects across multiple experimental systems (monolayer cultures, 3D organotypic rafts) using multiple independent siRNAs (C13), with both biochemical and immunofluorescence readouts. The rescue experiments (C16, C17) provide strong functional evidence that Cops3 is required for Dsg1-mediated differentiation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "8fc2d40e-a03f-4779-b9e3-38f619ba0235",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cops3 deficiency leads to increased EGFR signaling (elevated pEGFR, pErk, pMek), and pharmacological inhibition of EGFR rescues differentiation markers in Cops3-deficient cells, positioning the desmosome-CSN complex upstream of EGFR in regulating keratinocyte differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22 establish a clear epistatic relationship between Cops3 and EGFR signaling. The pharmacological rescue experiment (C21) is particularly strong evidence that EGFR hyperactivation is responsible for the differentiation defects observed upon Cops3 loss, supporting the proposed regulatory hierarchy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "efa14696-47e7-4907-9a49-8dc175b41057",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "EGFR is neddylated in human keratinocytes, and loss of desmosomal components (Dsg1, Dp) or Cops3 results in elevated EGFR neddylation, supporting a model where the desmosome-CSN complex regulates EGFR de-neddylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 provide both PLA-based proximity data (C23, C24) and biochemical evidence (C25) demonstrating EGFR neddylation and its regulation by the desmosome-CSN complex. The consistency between different cell types (NHEKs and SCC9s) and the integration with earlier interaction data (C26) strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "32041014-e5be-4ce9-baf4-853e42aa8467",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Loss of desmosomal components or Cops3 decreases EGFR ubiquitination, while loss of Nedd8 increases EGFR ubiquitination, demonstrating a reciprocal relationship between EGFR neddylation and ubiquitination where desmosome and CSN components promote ubiquitination at the expense of neddylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 establish a reciprocal relationship between neddylation and ubiquitination through complementary loss-of-function experiments. The Nedd8 knockdown experiments (C29, C30) are particularly important as they demonstrate that ubiquitination can occur independently of neddylation, contradicting one prior report and supporting the competition model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "7a100190-9650-48d4-ac4c-cc7e9dd0584f",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The desmosome-CSN complex regulates EGFR dynamics in response to ligand stimulation. Loss of Cops3 or desmosomal components stabilizes EGFR at cell borders following EGF treatment, while loss of Nedd8 promotes EGFR internalization and decreases receptor stability, consistent with neddylation stabilizing EGFR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 provide functional evidence linking neddylation status to EGFR dynamics and stability. The EGF stimulation experiments (C32, C33) and cycloheximide chase experiments (C35) directly test receptor dynamics and stability, supporting the model that neddylation stabilizes EGFR while the desmosome-CSN complex promotes turnover.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "726a9313-0431-4326-91e5-c0477564701c",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In squamous cell carcinoma models (SCC9 and 1483), EGFR is distributed more broadly and exhibits elevated neddylation, while Dsg1 levels are reduced, showing a reciprocal relationship. Loss of Cops3 in 3D raft cultures also increases EGFR neddylation, suggesting that loss of desmosomal regulation may contribute to EGFR elevation in cancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C42 extend the findings to a disease-relevant context. The reciprocal relationship between Dsg1 and EGFR-Nedd8 in cancer models (C40, C41) and the demonstration that Cops3 loss increases EGFR neddylation in 3D cultures (C42) provide translational relevance, though the cancer model data is more correlative than mechanistic.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "26619bb3-fa3e-4c09-a461-4d94e6f4ce07",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose a model where the desmosome scaffolds the CSN in proximity to EGFR to control the balance of neddylation-ubiquitination modifications, thereby regulating receptor dynamics and promoting epidermal differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 represent the integrative model synthesizing all experimental findings. While these are interpretive claims, they are well-supported by the collective evidence from interaction studies, functional assays, post-translational modification analyses, and receptor dynamics experiments presented throughout the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "cad000f3-7401-45d3-a38e-a967d18a71e4",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The entire CSN complex and intact desmosome are required for proper function, as loss of individual components (Cops3, Dsg1, or Dp) disrupts the complex. This is supported by prior literature on CSN interdependence and mass spectrometry data identifying multiple desmosomal proteins as CSN interactors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49 provide context and support for the experimental design choices. The reliance on established CSN biology (C45) is appropriately cited, and the reciprocal knockdown experiments (C47) combined with supporting mass spectrometry data from literature (C48) strengthen the conclusion that the entire desmosome-CSN complex functions as a unit.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "9d18a166-b6a2-4275-ac24-f6f68de7ae25",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The data support a model where Nedd8 and Ubiquitin compete for lysine residues on EGFR, with neddylation generally stabilizing proteins. Importantly, EGFR ubiquitination can occur independent of neddylation, representing a new level of receptor regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 integrate the current findings with existing literature on neddylation. The demonstration that ubiquitination can occur independently of neddylation (C52) is well-supported by the Nedd8 knockdown experiments and represents a novel finding that contradicts one prior report in CHO cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "5999c626-65fd-47f6-8806-5673cb4957e1",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors speculate that EGFR elevation in various cancers may be partly due to receptor stabilization through increased neddylation, given that EGFR is a strong prognostic indicator in epithelial cancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53-C54 are speculative (C54 explicitly noted as speculation). While the cancer model data (C37-C42) provides some support, direct evidence that neddylation-mediated stabilization contributes to EGFR elevation across different cancer types is not provided. This represents a hypothesis for future investigation rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "c1854455-01f3-4625-98fd-a135c11fdfd1",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors speculate that the desmosome-CSN complex may regulate multiple downstream functions beyond EGFR, including inflammatory signaling, and could provide therapeutic targets for diseases involving aberrant differentiation, inflammation, and cancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55-C58 are largely speculative, extending beyond the data presented. While C55-C56 cite relevant literature connecting Cops3 to inflammation and Dsg1 to SAM syndrome, the broader claims about the complex regulating multiple pathways (C57) and therapeutic potential (C58) are not directly tested and represent future directions rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    },
+    {
+      "id": "5ee34cb5-43c3-455a-b4b9-f923837b47e4",
+      "content_id": "c655cf35-be28-43a4-8133-f5541733ba54",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background and context claims establishing prior knowledge about Dsg1 function, CSN biology, EGFR regulation, desmosome structure and function, and epidermal biology that motivate and contextualize the current study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C78 represent established knowledge from prior literature (either from the authors' previous work or the broader field) that provides essential context for the current study. These are appropriately cited and accurately represent the state of knowledge that motivated the current investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:30.671062Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d7e80e40-1fa5-4c02-bc58-5a3108179a58",
+      "result_id": "37a19ecb-9e6a-4c13-8125-2315229ab1cd"
+    },
+    {
+      "claim_id": "af04c4cc-fc70-44dc-afe5-6db35e6b194d",
+      "result_id": "37a19ecb-9e6a-4c13-8125-2315229ab1cd"
+    },
+    {
+      "claim_id": "5ba46d80-1248-4f0f-8213-88523087d500",
+      "result_id": "37a19ecb-9e6a-4c13-8125-2315229ab1cd"
+    },
+    {
+      "claim_id": "f981c2d8-909f-4516-a270-aef46a756f1f",
+      "result_id": "37a19ecb-9e6a-4c13-8125-2315229ab1cd"
+    },
+    {
+      "claim_id": "cc9aaffd-ab59-4304-8d47-14d3aed6e0be",
+      "result_id": "37a19ecb-9e6a-4c13-8125-2315229ab1cd"
+    },
+    {
+      "claim_id": "6dd6bb4e-c93e-4fbb-8519-3d96aa126413",
+      "result_id": "37a19ecb-9e6a-4c13-8125-2315229ab1cd"
+    },
+    {
+      "claim_id": "7482f541-0182-4627-a7b9-62582eb72b76",
+      "result_id": "37a19ecb-9e6a-4c13-8125-2315229ab1cd"
+    },
+    {
+      "claim_id": "89ec7f2c-4e78-485e-8c2e-01d954297c27",
+      "result_id": "37a19ecb-9e6a-4c13-8125-2315229ab1cd"
+    },
+    {
+      "claim_id": "2b2408c1-3ec6-4f51-838a-dbc5632870e4",
+      "result_id": "37a19ecb-9e6a-4c13-8125-2315229ab1cd"
+    },
+    {
+      "claim_id": "0c53908e-e7d8-4e07-9e6c-4215e89c6131",
+      "result_id": "37a19ecb-9e6a-4c13-8125-2315229ab1cd"
+    },
+    {
+      "claim_id": "3029cfef-0edc-4265-96ce-025c2554237a",
+      "result_id": "37a19ecb-9e6a-4c13-8125-2315229ab1cd"
+    },
+    {
+      "claim_id": "502db02b-552e-4043-a071-aad67c111b13",
+      "result_id": "e0c4c8ae-15f1-4e35-afe3-da7c2324a24a"
+    },
+    {
+      "claim_id": "dd9b1cc5-f8de-4020-b159-eb3b298ccaba",
+      "result_id": "e0c4c8ae-15f1-4e35-afe3-da7c2324a24a"
+    },
+    {
+      "claim_id": "8855b27d-2a77-4cf9-bba7-8f36ce6e2452",
+      "result_id": "e0c4c8ae-15f1-4e35-afe3-da7c2324a24a"
+    },
+    {
+      "claim_id": "68b0d618-9bdb-4e67-adc0-6efd303bba5b",
+      "result_id": "e0c4c8ae-15f1-4e35-afe3-da7c2324a24a"
+    },
+    {
+      "claim_id": "05ec351e-3c25-4548-bf63-3939ece9a95e",
+      "result_id": "e0c4c8ae-15f1-4e35-afe3-da7c2324a24a"
+    },
+    {
+      "claim_id": "337377cd-eb7f-45ce-b8ff-3abdbb4438f0",
+      "result_id": "e0c4c8ae-15f1-4e35-afe3-da7c2324a24a"
+    },
+    {
+      "claim_id": "cf312d4b-0614-4080-8ce8-629abaa620a9",
+      "result_id": "e0c4c8ae-15f1-4e35-afe3-da7c2324a24a"
+    },
+    {
+      "claim_id": "cf81ae1f-de59-4a33-b403-9b790c90fca4",
+      "result_id": "8fc2d40e-a03f-4779-b9e3-38f619ba0235"
+    },
+    {
+      "claim_id": "608e024b-6ee9-4712-ae6e-b14d1b3a9f86",
+      "result_id": "8fc2d40e-a03f-4779-b9e3-38f619ba0235"
+    },
+    {
+      "claim_id": "6a6ed691-ec88-4017-af10-db39c8bb1fb4",
+      "result_id": "8fc2d40e-a03f-4779-b9e3-38f619ba0235"
+    },
+    {
+      "claim_id": "0093d6c4-103c-41b3-a247-a397d72e53b8",
+      "result_id": "8fc2d40e-a03f-4779-b9e3-38f619ba0235"
+    },
+    {
+      "claim_id": "7feb1d4d-6fa8-4e0e-a749-f7f276aafe1e",
+      "result_id": "efa14696-47e7-4907-9a49-8dc175b41057"
+    },
+    {
+      "claim_id": "1e289a86-690f-40ec-a877-94d1fa6ae43e",
+      "result_id": "efa14696-47e7-4907-9a49-8dc175b41057"
+    },
+    {
+      "claim_id": "5888cc23-a80f-4037-b735-72f7d670012e",
+      "result_id": "efa14696-47e7-4907-9a49-8dc175b41057"
+    },
+    {
+      "claim_id": "d2fbd51c-7606-4c90-aae4-d9314adc47ca",
+      "result_id": "efa14696-47e7-4907-9a49-8dc175b41057"
+    },
+    {
+      "claim_id": "c27409c9-0272-47f7-848e-8b8567eb2a8f",
+      "result_id": "32041014-e5be-4ce9-baf4-853e42aa8467"
+    },
+    {
+      "claim_id": "e178cc25-0ec4-452f-98a2-f28dd0238f9c",
+      "result_id": "32041014-e5be-4ce9-baf4-853e42aa8467"
+    },
+    {
+      "claim_id": "1b31341a-baa6-46c6-880a-19638f4e7fed",
+      "result_id": "32041014-e5be-4ce9-baf4-853e42aa8467"
+    },
+    {
+      "claim_id": "eb440c2b-88f7-4954-8399-85eb58237795",
+      "result_id": "32041014-e5be-4ce9-baf4-853e42aa8467"
+    },
+    {
+      "claim_id": "508193f1-8c98-4c9d-8c63-a4f33375106a",
+      "result_id": "32041014-e5be-4ce9-baf4-853e42aa8467"
+    },
+    {
+      "claim_id": "c824c307-c162-4f9f-95c8-830c94001736",
+      "result_id": "7a100190-9650-48d4-ac4c-cc7e9dd0584f"
+    },
+    {
+      "claim_id": "aeddcce3-bf63-41dd-bc30-21c2055ee6cc",
+      "result_id": "7a100190-9650-48d4-ac4c-cc7e9dd0584f"
+    },
+    {
+      "claim_id": "1c29ca23-eda4-4c9d-bb59-557990c44ced",
+      "result_id": "7a100190-9650-48d4-ac4c-cc7e9dd0584f"
+    },
+    {
+      "claim_id": "fbda6284-8ae4-469e-b880-d2b83e39c2ef",
+      "result_id": "7a100190-9650-48d4-ac4c-cc7e9dd0584f"
+    },
+    {
+      "claim_id": "c783c892-6344-491b-8e9c-0408e1912f5a",
+      "result_id": "7a100190-9650-48d4-ac4c-cc7e9dd0584f"
+    },
+    {
+      "claim_id": "b898f61a-a87a-4d96-b0c5-d916a1a95ed7",
+      "result_id": "726a9313-0431-4326-91e5-c0477564701c"
+    },
+    {
+      "claim_id": "8874a096-3b63-4466-9394-f0d30f923a7a",
+      "result_id": "726a9313-0431-4326-91e5-c0477564701c"
+    },
+    {
+      "claim_id": "9ade462b-86c6-4a62-9bab-efb3c61e9560",
+      "result_id": "726a9313-0431-4326-91e5-c0477564701c"
+    },
+    {
+      "claim_id": "cab97518-6f26-433f-8fd2-04677cf7c323",
+      "result_id": "726a9313-0431-4326-91e5-c0477564701c"
+    },
+    {
+      "claim_id": "9f32343b-f86c-4f48-a812-161920e049bf",
+      "result_id": "726a9313-0431-4326-91e5-c0477564701c"
+    },
+    {
+      "claim_id": "d9cee7cc-836a-4604-bf7f-fe43bea6c40e",
+      "result_id": "726a9313-0431-4326-91e5-c0477564701c"
+    },
+    {
+      "claim_id": "15932229-df3a-4f83-a20f-e516790834ef",
+      "result_id": "26619bb3-fa3e-4c09-a461-4d94e6f4ce07"
+    },
+    {
+      "claim_id": "eaca8c53-9db7-4f7b-96ea-e2c34e87fdbe",
+      "result_id": "26619bb3-fa3e-4c09-a461-4d94e6f4ce07"
+    },
+    {
+      "claim_id": "8f5f0c66-9f23-47b3-b330-71b2b5e27614",
+      "result_id": "cad000f3-7401-45d3-a38e-a967d18a71e4"
+    },
+    {
+      "claim_id": "ccd8ca7f-6588-4042-905c-b8b749e03c2c",
+      "result_id": "cad000f3-7401-45d3-a38e-a967d18a71e4"
+    },
+    {
+      "claim_id": "d2503a43-cc0e-43d7-9c10-8f5d69764af5",
+      "result_id": "cad000f3-7401-45d3-a38e-a967d18a71e4"
+    },
+    {
+      "claim_id": "cfe68556-9f7c-4d3c-876f-971e9b694e9a",
+      "result_id": "cad000f3-7401-45d3-a38e-a967d18a71e4"
+    },
+    {
+      "claim_id": "2e0c2f22-eb2c-4406-a0c3-7640824954eb",
+      "result_id": "cad000f3-7401-45d3-a38e-a967d18a71e4"
+    },
+    {
+      "claim_id": "8fad88d2-c746-4c60-a394-645741700421",
+      "result_id": "9d18a166-b6a2-4275-ac24-f6f68de7ae25"
+    },
+    {
+      "claim_id": "ff145c51-0cf6-43d2-b45e-ae3ec3fb5ed1",
+      "result_id": "9d18a166-b6a2-4275-ac24-f6f68de7ae25"
+    },
+    {
+      "claim_id": "62f5ffc6-3105-4dce-9c1f-5a1c4e8b3f08",
+      "result_id": "9d18a166-b6a2-4275-ac24-f6f68de7ae25"
+    },
+    {
+      "claim_id": "90d692ac-cffb-4dd7-b17c-f3ad0ae31033",
+      "result_id": "5999c626-65fd-47f6-8806-5673cb4957e1"
+    },
+    {
+      "claim_id": "bb19c6a9-601f-4a38-9695-093cf5b52431",
+      "result_id": "5999c626-65fd-47f6-8806-5673cb4957e1"
+    },
+    {
+      "claim_id": "a33dc3ec-ebca-439d-8073-36dbc878d6ef",
+      "result_id": "c1854455-01f3-4625-98fd-a135c11fdfd1"
+    },
+    {
+      "claim_id": "da0f9671-4558-4dc0-b444-42de5e1edad6",
+      "result_id": "c1854455-01f3-4625-98fd-a135c11fdfd1"
+    },
+    {
+      "claim_id": "2e9fba25-3762-4e5b-8edd-d04b37e5d161",
+      "result_id": "c1854455-01f3-4625-98fd-a135c11fdfd1"
+    },
+    {
+      "claim_id": "ae2a8542-5bf9-44c5-9dee-837ec99e1f8f",
+      "result_id": "c1854455-01f3-4625-98fd-a135c11fdfd1"
+    },
+    {
+      "claim_id": "9eb5ff4e-e95b-4fd9-be57-5a4d61526a0b",
+      "result_id": "5ee34cb5-43c3-455a-b4b9-f923837b47e4"
+    },
+    {
+      "claim_id": "4c17fb3c-cea6-45ce-b54c-d6b702520a85",
+      "result_id": "5ee34cb5-43c3-455a-b4b9-f923837b47e4"
+    },
+    {
+      "claim_id": "ff1d5fcc-c0f0-40f2-b813-e05cadd0506c",
+      "result_id": "5ee34cb5-43c3-455a-b4b9-f923837b47e4"
+    },
+    {
+      "claim_id": "0ad577d1-9683-4e9a-92ce-e5da75002a84",
+      "result_id": "5ee34cb5-43c3-455a-b4b9-f923837b47e4"
+    },
+    {
+      "claim_id": "e5446060-4ce2-442a-b9a9-945d74915fb5",
+      "result_id": "5ee34cb5-43c3-455a-b4b9-f923837b47e4"
+    },
+    {
+      "claim_id": "844221b9-6859-42b5-b9c3-aa9592079006",
+      "result_id": "5ee34cb5-43c3-455a-b4b9-f923837b47e4"
+    },
+    {
+      "claim_id": "9856ff8e-47cd-4619-a082-871bb752a3f7",
+      "result_id": "5ee34cb5-43c3-455a-b4b9-f923837b47e4"
+    },
+    {
+      "claim_id": "f92b9dcf-dad4-457c-8f2a-e5a52a155b54",
+      "result_id": "5ee34cb5-43c3-455a-b4b9-f923837b47e4"
+    },
+    {
+      "claim_id": "ab2ba4fb-9ba6-4cc8-a7a9-a3409d8e7655",
+      "result_id": "5ee34cb5-43c3-455a-b4b9-f923837b47e4"
+    },
+    {
+      "claim_id": "3a7d89aa-c211-4f94-b8a3-81e89b85310e",
+      "result_id": "5ee34cb5-43c3-455a-b4b9-f923837b47e4"
+    },
+    {
+      "claim_id": "e5215e76-071c-4110-aa52-f96abfe348e3",
+      "result_id": "5ee34cb5-43c3-455a-b4b9-f923837b47e4"
+    },
+    {
+      "claim_id": "e7d6edd7-dbed-46ea-94ae-4d859d2297b9",
+      "result_id": "5ee34cb5-43c3-455a-b4b9-f923837b47e4"
+    },
+    {
+      "claim_id": "407047f6-8649-4441-9cd6-25e7498600d3",
+      "result_id": "5ee34cb5-43c3-455a-b4b9-f923837b47e4"
+    },
+    {
+      "claim_id": "dbb1e8d9-7f51-41e2-90f0-0a2075e48a4b",
+      "result_id": "5ee34cb5-43c3-455a-b4b9-f923837b47e4"
+    },
+    {
+      "claim_id": "9f267e3c-4ddc-4a15-b32b-c14702ad97a2",
+      "result_id": "5ee34cb5-43c3-455a-b4b9-f923837b47e4"
+    },
+    {
+      "claim_id": "fdabd364-0458-4281-af13-15232645853d",
+      "result_id": "5ee34cb5-43c3-455a-b4b9-f923837b47e4"
+    },
+    {
+      "claim_id": "20efd56f-a985-42f7-9780-b1077f1a6a98",
+      "result_id": "5ee34cb5-43c3-455a-b4b9-f923837b47e4"
+    },
+    {
+      "claim_id": "eebb266d-c643-4763-a17b-140fd22f7f94",
+      "result_id": "5ee34cb5-43c3-455a-b4b9-f923837b47e4"
+    },
+    {
+      "claim_id": "62b0cb06-7706-4a45-b720-905ac29f2781",
+      "result_id": "5ee34cb5-43c3-455a-b4b9-f923837b47e4"
+    },
+    {
+      "claim_id": "0009ffd2-4f35-48b5-88fb-4739a92caea3",
+      "result_id": "5ee34cb5-43c3-455a-b4b9-f923837b47e4"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1185 @@
+{
+  "submission": {
+    "id": "2a72eed1-0868-4af7-b67e-da4650637cfe",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:18:33.591808Z",
+    "updated_at": "2025-12-01T23:18:33.591808Z"
+  },
+  "content": [
+    {
+      "id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "submission_id": "2a72eed1-0868-4af7-b67e-da4650637cfe",
+      "content_type": "manuscript",
+      "content_text": "# Global morphogenetic flow is accurately predicted by the spatial distribution of myosin motors\n\n## Authors\n\n- Sebastian J Streichan<sup>1</sup> \u2020\n- Matthew F Lefebvre<sup>3</sup>\n- Nicholas Noll<sup>2</sup> ([ORCID: 0000-0003-1698-7500](https://orcid.org/0000-0003-1698-7500))\n- Eric F Wieschaus<sup>3</sup> ([ORCID: 0000-0002-0727-3349](https://orcid.org/0000-0002-0727-3349))\n- Boris I Shraiman<sup>1</sup> ([ORCID: 0000-0003-0886-8990](https://orcid.org/0000-0003-0886-8990)) \u2020\n\n### Affiliations\n\n1. Kavli Institute of Theoretical Physics University of California Santa Barbara United States\n2. Department of Physics University of California Santa Barbara United States\n3. Department of Molecular Biology Princeton University Princeton United States\n4. Howard Hughes Medical Institute Princeton University Princeton United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring embryogenesis tissue layers undergo morphogenetic flow rearranging and folding into specific shapes. While developmental biology has identified key genes and local cellular processes, global coordination of tissue remodeling at the organ scale remains unclear. Here, we combine in toto light-sheet microscopy of the Drosophila embryo with quantitative analysis and physical modeling to relate cellular flow with the patterns of force generation during the gastrulation process. We find that the complex spatio-temporal flow pattern can be predicted from the measured meso-scale myosin density and anisotropy using a simple, effective viscous model of the tissue, achieving close to 90% accuracy with one time dependent and two constant parameters. Our analysis uncovers the importance of a) spatial modulation of myosin distribution on the scale of the embryo and b) the non-locality of its effect due to mechanical interaction of cells, demonstrating the need for the global perspective in the study of morphogenetic flow.\n\n## Introduction\n\nAnimal development is characterized by highly dynamic rearrangements of mechanically coupled cells. Such rearrangements must be tightly coordinated across the embryo to achieve normal morphology and organogenesis. During gastrulation of Drosophila, for example, the embryonic blastoderm \u2013 an epithelial monolayer of about 6000 cells on the surface of the embryo \u2013 undergoes a dramatic deformation that changes tissue topology and gives rise to the three germ layers. These processes involve a coherent flow of cells along the surface of the epithelial monolayer, which in turn drives folding and defines future shape of the embryo. The most prominent aspects of gastrulation are the formation of the ventral furrow which initiates the invagination and internalization of the mesoderm (Martin et al., 2009), and germ-band extension which involves convergent extension of the lateral ectoderm and the flow of the ventral germ-band onto the dorsal side of the embryo (Leptin, 1995). Both of these processes have been extensively studied, leading to the identification of developmental patterning genes specifically required for each process (Irvine and Wieschaus, 1994). Live imaging has also uncovered process-specific cell behaviors such as apical constriction of presumptive mesoderm cells during ventral furrow formation (Martin et al., 2009) and intercalation of neighboring cells in the lateral ectoderm during convergent extension (Zallen and Wieschaus, 2004; Bertet et al., 2004). These behaviors are associated with localized activity of the force generating non-muscle myosin II (Martin et al., 2009; Irvine and Wieschaus, 1994; Zallen and Wieschaus, 2004; Bertet et al., 2004). However,\u00a0despite considerable understanding of the local processes involved in such cellular rearrangements, a coherent picture of global morphogenetic flows has remained elusive (Butler et al., 2009; Lye et al., 2015; Blanchard et al., 2009).\n\nUnderstanding how cell flows are coordinated across different cell populations requires distinguishing the roles of local cell behavior and long-range intercellular interactions. To what extent is the transformation of tissue driven locally by the processes associated with cells at that position? How important is the long-range interaction between different regions? In the context of the fly embryo, VF formation seems well explained locally by the apical area contraction of ventral mesoderm cells (Martin et al., 2009). On the other hand, the non-local interactions between the VF constriction (or posterior midgut invagination [Collinet et al., 2015]) and the convergent extension of lateral ectoderm remain a subject of active study (Collinet et al., 2015; Rauzi et al., 2015; Rickoll and Counce, 1980) which requires quantitative multi-scale analysis.\n\nThere are two complementary approaches towards quantitative analysis of tissue flow. One approach focuses on cell-scale behavior aiming to decompose tissue flow into specific cellular processes such as cell-shape change and intercalation (Etournay et al., 2015; Bosveld et al., 2012) Alternatively one can \u2018zoom out\u2019, taking a continuum mechanics approach that aims to describe tissue flow on the whole organ scale (Landau et al., 2012; Prost et al., 2015; Marchetti et al., 2013). This coarse-grained mesoscopic perspective captures correlations in cell behavior which stem from intercellular interactions and the supra-cellular organization (Martin et al., 2009; Blankenship et al., 2006) of the cytoskeleton in epithelial tissues. In biophysics, the continuum mechanics approach has been developed to understand the behavior of active gels (Prost et al., 2015; Marchetti et al., 2013) during myosin driven viscoelastic flow (Mayer et al., 2010; Behrndt et al., 2012) and has been successfully used to model cortical flows in C. elegans zygotes at the first-cleavage state (Naganathan et al., 2014). Recent theoretical work (Noll et al., 2017) provides a bridge between cell-based and meso-scale continuum descriptions, focusing on the non-trivial consequences of stress-dependent active cytoskeletal processes. Here, we shall use continuum mechanics approach to set up a framework for predicting global tissue flow at the whole organ level.\n\nThe main advantage of the continuum mechanics approach is its ability to capture key aspects of force balance associated with local deformation and flow. It allows to\u00a0describe quantitatively, with only a few parameters, how the effect of local forcing spreads across a tissue. The tendency of cells to stick together and resist deformation results in a non-local relation between the myosin activity that drives the flow and actual flow velocities. The continuum mechanics approach therefore enables one to test different hypotheses helping to identify key contributing processes. For example, the question of local versus non-local response in the continuum mechanics approach translates into specific hypotheses regarded force balance: are the myosin-generated forces balanced locally by traction relative to a substrate or do they propagate within the epithelium layer through cell deformation and viscous coupling? Quantitative analysis can then be used to build, starting from the simplest model, a sequence of approximations that capture biological reality in increasing detail.\n\nWe shall describe below\u00a0a novel image analysis-based approach that will use continuum mechanics to quantitatively relate different observables and will show that myosin distribution and anisotropy on mesoscopic scale is a fully adequate proxy of physical stress, thereby enabling a surprisingly predictive description of global flow. Specifically, we shall show that embryo-scale tissue transformations during Drosophila gastrulation are represented by a temporal sequence of three topologically distinct flow field configurations. Each phase is accompanied by a characteristic spatial distribution of myosin molecular motors both on the basal as well as apical cell surface, which we quantify in terms of a coarse-grained \u2018myosin tensor\u2019 that captures both myosin concentration and anisotropy. To relate the observed global flow fields to myosin apical and basal distributions we assume that tissue flow is driven by stress proportional to the myosin tensor, and is effectively viscous with two parameters: effective shear and bulk viscosities, the latter controlling the compressible component of the flow. With a total of just three global parameters (only one of them time dependent), this simple model achieves remarkable agreement between predicted and measured spatio-temporal pattern of the flow. The analysis uncovers the importance of a) spatial modulation of myosin distribution and b) the long-range spreading of its effect due to mechanical interaction of cells. In particular, we find that transition to the germband extension phase of the flow is associated with the onset of effective areal incompressibility of the epithelium, which makes the relation of the flow and myosin forcing strongly non-local. Our quantitative analysis also reveals a new function for basal myosin in generating a dorsally directed flow and, combined with mutant analysis, points to an unconventional control mechanism of this function through twist -dependent reduction of basal myosin levels on the ventral side. Finally, we shall argue that the ability to quantitatively describe the relation between the flow and its myosin-generated forcing provides a new approach to the study of the processes that control morphogenetic transformations, which can be used to disentangle novel control mechanisms such as mechanical feedback from the effects of gene expression patterning.\n\n## Results\n\nTo enable our study, we generated a pipeline that combines in toto light sheet microscopy (Krzic et al., 2012; Tomer et al., 2012) (Figure 1a), tissue cartography (Heemskerk and Streichan, 2015) (Figure 1b), and segmentation-free anisotropy detection to quantify global tissue flows, and myosin activation patterns (Figure 1\u2014figure supplements 1\u20134). Using optical flow velocimetry applied to cylinder projections of the Surface of Interest (SOI) passing through cells below the apical cell surface (see SI for details Figure 1\u2014figure supplement 5c), we find that tissue remodeling during Drosophila gastrulation is characterized by three simple flow field configurations (Figure 1c\u2013e). The earliest flows start well before the ventral furrow (VF) forms, and are characterized by a dorsal sink and ventral source (Figure 1c). In contrast to the VF, no cells are internalized during this flow, but rather cells reduce cross section on the dorsal side (Figure 1\u2014figure supplement 1c). As the VF forms, source and sink swap sides and a large group of cells internalize on the ventral side, as mesoderm precursors leave the surface of the blastoderm (Figure 1d). During germband extension (GBE), the flow pattern exhibits two saddles arranged on the dorsal and ventral sides as well as four vortices, two in the posterior and two in the anterior end (Figure 1e). Each of the three flow fields is accompanied by a typical spatial myosin configuration. The pre-VF flow associates with basal myosin that exhibits a pronounced Dorso Ventral (DV) asymmetry (Warn et al., 1980; Sokac and Wieschaus, 2008; Polyakov et al., 2014), with high levels of myosin on the dorsal and low levels on the ventral side (Figure 1f), while the apical pool appears uniform across the surface (Figure 1i, Figure 1\u2014figure supplement 5d\u2013g). The basal pool remains asymmetric during VF flow (Figure 1g), but the apical pool now also develops DV asymmetry in reversed orientation (Figure 1j). The asymmetry on the apical surface becomes further pronounced in the GBE-phase (Figure 1h,k, Figure 1\u2014figure supplements 6 and 7).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/27454/elife-27454-fig1-v2.jpg)\n\n**Figure 1.:** (a) Stage 7 embryo labeled with His2Av:mRFP. Anterior is to the left, dorsal up. Time is chosen such that 0 min coincides with the first occurrence of the cephalic furrow (CF). All scale bars indicate 100 \u00b5m. (b) Thin (midplane,Figure 1\u2014figure supplement 1) layer through embryo shown in (a), with prospective head, germband and amnioserosa color-coded. Anterior is to the left, posterior to the right, dorsal is in the center and ventral is on top and bottom. Inset shows zoom into anterior germband region. (c\u2013e) Flow field on 2D projections for representative time points of the pre-Ventral Furrow (pre-VF) phase (c), Ventral Furrow (VF) phase (d), and germband phase (GBE) (e). Cyan arrows indicate tissue flow field. Bold arrows indicate flow field topology: sinks (yellow), sources (white), saddles (red) and vortices (dashed white). Insets show flow field on corresponding 3D surface. (f\u2013h) Normalized myosin distribution on basal cell surface corresponding to times shown in (c\u2013e). Color code from lowest 0 to highest 1. (i\u2013k) As (f\u2013h) except for isotropic pool on apical cell surface.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27454/elife-27454-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) D. melanogaster embryo shape characterized in terms of AP length, DV diameter, and eccentricity. (b) Ensemble quantification for AP length, DV diameter, and eccentricity. Error-bars indicate standard deviation. (c) DV cross section of sqh-GFP labeled embryo showing apical surface in cyan, midplane in yellow and basal surface in magenta. Arrowheads indicate normal evolution is used to relate apical and basal surfaces with the lateral surface. (d,f,h) Myosin signal on apical, basal, and midplane surface respectively as indicated by bold dashed frame. Time is indicated in each dataset with respect to cephalic furrow formation. Small insets refer to zoom on dorsal (indicated by white dashed box), and ventro-lateral region (indicated by solid red box) respectively. (e,g) Myosin signal shown in (d,f) respectively, plotted on actual apical (e) or basal (g) surface, respectively. Shown are a dorsal view on top and lateral view on the bottom. (i) The flow field used for quantitative analysis is evaluated on the midplane surface.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27454/elife-27454-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Time course of Myosin visualized by sgh-GFP on apical surface, as described in Figure 1\u2014figure supplement 1e. Root mean square contrast Crms for across the entire embryo surface is reported for each time point shown. Images have been normalized to range from 0 to 1 as described in the SI. (b) Histogram of average edge intensity. Dashed lines indicate minimum of distribution and 95th percentile determined once per dataset. Data shown are for time point 17 min (b\u2019) As (b), except corrected for minimum and normalized to 95th percentile. (c) Histogram of edge intensities in dorsal and lateral regions, respectively.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/27454/elife-27454-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Root mean square contrast Crms for across the entire embryo surface is reported for each time point shown. Images have been normalized to range from 0 to 1 as described in the SI.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/27454/elife-27454-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (a) apical surface. (b) basal surface. Note that in contrast to Figure 1\u2014figure supplements 1\u20133, the lookup table has been adjusted in each time point separately, to enhance visualization.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/27454/elife-27454-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (a) WT ensemble averaged flow field magnitude, averaged over embryo surface. Standard deviation is across samples. (b) Flow lines obtained by integrating flow field over time, for WT embryos \u22126 before to 3 min past CF formation. For simplicity of visualization and each line gets a random color assigned. (c) Cell area on the dorsal side of the embryo shrinks with time (measured using confocal microscope). $*$ indicates time starts from beginning of the experiment, at a time point during cellularization. (d\u2013f) Time average length of flow lines for WT (d), twist, and (f) bcd nos tsl embryos, at times indicated in (b).\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/27454/elife-27454-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Dashed box indicates region used to evaluate DV asymmetry.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/27454/elife-27454-fig1-figsupp7-v2.jpg)\n\n**Figure 1\u2014figure supplement 7.:** (a) Cell height as a function of embryo diameter increases monotonically until ventral furrow formation starts. (b) DV asymmetry as a function of time, measured using light sheet (black), or confocal with time calibration curve according to cell height (blue). (c) Confocal recording of DV cross-sections of embryos cut along AP axis. Colors indicate localization of myosin and dorsal visualized via antibody staining. Embryos were fixed by heat-methanol fixation (Miller et al., 1989) for staining with mouse anti-Dorsal (1:50, 7A4-S Developmental Studies Hybridoma Bank (DSHB)) and rabbit anti-myosin II (Zipper heavy chain, 1:1000, [Sokac and Wieschaus, 2008]). Secondary antibodies coupled to Alexa Fluor 488 and Alexa Fluor 564 were used at a 1:500 dilution (Invitrogen).\n\nGlobal changes in myosin pools are a hallmark for transitions in flow field configuration (Figure 2a, Figure 1\u2014figure supplements 1, 2, 3 and 4). Myosin is initially enriched in the basal pool, and as sink and source swap position, it begins to accumulate on the apical side. While the basal pool is isotropic (Figure 2\u2014figure supplement 4a), cortical myosin on the apical cell surface is known to polarize during convergent extension (Zallen and Wieschaus, 2004; Bertet et al., 2004). To quantify this effect at the tissue level, we developed an automated segmentation-free anisotropy detection algorithm (Figure 2b, Figure 2\u2014figure supplement 3a,b). Available methods for anisotropy detection mostly operate at the single cell level and construct a nematic tensor by integrating signal intensities along cell outlines (Aigouy et al., 2010). At the organismal scale membrane segmentation is costly, and often fails to define closed outlines of cells using only a polarized membrane marker. We overcome the need for fiduciary markers that increase experimental complexity by shifting the perspective to cell edges and using the Radon transform to implement a robust and rapid segmentation-free algorithm for detecting course-grained anisotropy (Figure 2b) (Radon, 1917). Radon transforms integrate signal along lines of given orientation and normal distance from the origin. In this way, edges are mapped to peaks that reflect the total intensity along the length of an edge (Figure 2b) (see Appendix 1 for detail). Edge orientation and average myosin intensity are described by a 2 \u00d7 2 symmetric matrix (of rank one) defining the local \u2018myosin tensor\u2019 (Figure 2b). By averaging the resulting tensors in a given region, we obtain a quantitative description of local tissue anisotropy and overall levels that reflects the intensity-weighted average of cell edges. The resulting course-grained tensor has a non-zero trace, and thus can be separated into an isotropic and a traceless anisotropic part (Figure 3a, Figure 2\u2014figure supplement 3b), from which we construct a measure for anisotropy (which is low in the basal pool Figure 2\u2014figure supplement 4a). The anisotropic signal in the apical pool starts out low, but increases from about 8 min corresponding to late stage 6 (Figure 2a, Figure 2\u2014figure supplement 4b,c). The anisotropy axis, readily computed by the eigenvectors of the myosin tensor, aligns well with local tangent to pair rule gene expression boundaries (Figure 2a,d, Figure 2\u2014figure supplement 4d). This is the expected result given that anisotropies are thought to be driven by the patterned juxtaposition of pair-rule gene expression (Zallen and Wieschaus, 2004).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/27454/elife-27454-fig2-v2.jpg)\n\n**Figure 2.:** (a) Normalized signal strength of basal, apical, and polarized pools over time in the lateral ectoderm (outlined as dashed box in c). First gray shaded box at t\u00a0<\u00a00 min indicates times before CF formation (pre-CF), second shaded indicates GBE. (b) Automated extraction of polarization based on images, and quantitative summary as nematic tensor. Top left box shows cell outlines in part of a tissue, and a region of interest (ROI), that moves across the tissue. Bottom left box shows zoom on spatial signal in ROI. Colors indicate potentially different intensities of lines labeled i,j,k. Average intensity and length of lines in images are denoted I and L respectively. Radon transforms integrate signal along lines (cyan) of orientation \u03b1 at normal-distance \u03b4 from the origin (purple). Bottom right inset shows sketch of resulting Radon-transformed signal. Note that lines are peaks at angle \u03b1, and distance \u03b4, of height L*I after transformation. Top right inset shows definition of unit vector with orientation of edge i. Definition of local myosin tensor (only computed on apical surface, see Figure 2\u2014figure supplement 4) for edge i is obtained by contracting unit edge vector with itself and weighted by line average intensity. (c) Magnitude of myosin anisotropy on pullback (see SI for definition). Dashed box indicates region of interest used to compute time traces in a. (d) Axis of myosin anisotropy (in cyan) overlayed on embryo labeled with his2Av-RFP in red, and eve-YFP in yellow. For simplicity of comparison, the field is only shown along even skipped stripes. For more detailed analysis see Figure 2\u2014figure supplement 3f.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27454/elife-27454-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Illustration of how to construct a Radon transform for an image with constant background $I=0$, shown in black and foreground $I=1$, shown in white (top), and resulting radon transform (bottom).Colors indicate different lines, and the result in the radon transform is indicated as colored circle.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27454/elife-27454-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Time course of normalized intensity (shifted to zero mean) versus edge orientation. Color codes for time as indicated in the colorer (right).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/27454/elife-27454-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a) Continuous representation of the myosin tensor. Black dot indicates coordinates on mesoscale and green cells represent the tissue. Edge i is highlighted in blue, and distance of edge i to a point x in the lattice is shown as a solid double-arrow. (b) Definition of myosin tensor on the mesoscale. Coordinates are indicated by x, edges detected by the radon transform are indicated by i. Detected edges contribute to a point by the normalized weight w(x,i), which we model as a suitably normalized Gaussian distribution. The resulting myosin tensor decomposes into a trace and a traceless part.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/27454/elife-27454-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (a) Relative myosin anisotropy of basal pool, as computed by the magnitude of the traceless part over the total myosin tensor. (b) Relative myosin anisotropy of apical pool. (c) Time course of relative myosin anisotropy in the apical pool for representative time points. Definition and lookup table is the same as in (a,b). (d) Principal axes of anisotropic myosin tensor on apical surface, for times shown in (c). Major axis is shown in blue, minor in red. Magnitude is proportional to corresponding eigenvalue.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/27454/elife-27454-fig3-v2.jpg)\n\n**Figure 3.:** (a) Proposed mathematical description of the flow parameterizes complex mechanics of cytoskeleton in terms of the shear \u03bd1 and \u03bd2 bulk effective viscosities. The flow is driven by the force proportional to the divergence of the myosin tensor (see SI) on the right-hand-side of Equation 3a. Because effective viscosity tends to suppress velocity differences of neighboring cells, the response to local forcing is felt globally, e.g. effect of a local myosin perturbation results in local as well as non-local changes of the flow field. (b) Fit residual, comparing predicted flow field with measured flow field (see SI Finite Element implementation for a detailed definition of the residual) as a function of time. Both fields are normalized for average magnitude. The average magnitude of predicted velocity field defines one of our fitting parameters. Images of the single embryo are shown in Figure 1\u2014figure supplements 2\u20133 (c\u2013e) Representative time points of morphogenetic flow: pre-CF (c), GBE (d) and VF (e). From top to bottom: spatial distribution of predicted (blue), measured (red) flow field, and residual (blue best agreement, red worst, on a scale from 0 to 1). For the case of VF flow, predictive model is modified to allow for a \u2018cut\u2019 in ventral region (see SI text, and Figure 3\u2014figure supplement 1 for detail).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27454/elife-27454-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Schematic of the finite element model including the \u2018cut\u2019 used to model ventral furrow formation. Shown is a triangulation of the embryo from a ventral perspective, anterior to the left. The \u2018cut\u2019 is realized by removing all edges within the red outlined box and introducing a contractile force(shown in green) normal to the edge as boundary condition.(b) Time dependence of B, representing ratio of viscosities (see Figure 3a for detail). (c) Model summary, with explanation of temporal dependence of model parameters. Ten percent confidence intervals are indicated in brackets.\n\nWe have examined and quantified tissue flow and myosin distribution in multiple (N\u00a0=\u00a022) wild-type embryos and found it highly reproducible (Figure 1\u2014figure supplement 5). For the purpose of quantitative analysis presented below, we shall use the (suitably aligned) \u2018ensemble\u2019-averaged flow and myosin distribution (see SI).\n\nTo relate myosin to stress, we assume signal intensity is proportional to myosin motor concentration and its local activity. The latter \u2013 pulling on cytoskeletal actin filaments \u2013 generates local force dipoles, which can be explicitly described in terms of local stress tensor (see Appendix for details) (Prost et al., 2015; Marchetti et al., 2013). On the coarse grained level, resulting stress would be defined by the activity weighted average over filament orientations and hence proportional to the myosin tensor as we define it. The resulting force per unit area of the epithelial layer is then proportional to the divergence of the myosin tensor (Landau et al., 2012). Note that the isotropic component of the myosin distribution (observed both in the apical and the basal pool) also generates a force that is proportional to the gradient of the measured concentration intensity profile (Figure 1f\u2013k).\n\nTo relate myosin generated stress to morphogenetic flow, we assume that on the mesoscopic scale tissue flow is governed by effective viscoelasticity which arises from the mechanical properties of the underlying cytoskeletal network within the two dimensional epithelial layer of cells. This model assumes that on short time scales tissues respond elastically to mechanical perturbations (Bambardekar et al., 2015), yet on longer time scales elastic stress is relaxed through active rearrangement of the cytoskeleton as cells adapt to the imposed deformation. On the longer time scale tissue dynamics can be described by a two-dimensional effective viscous flow equation with two effective viscosity parameters that (see Appendix 2) are directly related to the two elastic constants: shear modulus (controlling \u2018sliding\u2019 of cells relative to each other) and the planar bulk modulus (controlling areal compression or dilation) (Prost et al., 2015; Marchetti et al., 2013; Martin et al., 1972) (Figure 3a, Figure 3\u2014figure supplement 1b). We note that effective viscosity spreads the impact of local forcing, generating a non-local response so the flow at any given point integrates the influence of forces acting all over the embryo. Inverting the equation using the finite element method, we obtain a quantitative prediction for the flow field generated by measured myosin localization patterns (see SI for details). Our model has only three global parameters: the ratio of effective viscosities, and the conversion factors relating normalized apical and basal myosin intensity to stress (Figure 3\u2014figure supplement 1c). To keep the model as simple as possible, we do not allow spatial dependence of these parameters and keep conversion factors constant, leaving the ratio of viscosities as the only time-dependent global fitting parameter (Figure 3\u2014figure supplement 1b).\n\nEven without spatial modulation of the parameters, the model achieves about 90% accurate description of the flow pattern before and after VF invagination (see Figure 3b). The main discrepancy of model predictions for pre-VF flow (see Figure 3c) is a displacement of sink and source positions along the AP axis by less than 30 \u00b5m. Prediction of GBE flow essentially agrees with measurements across the entire embryo, with the exception of a domain close to the vortices on the posterior end, due to a mismatch of fixed-point location (Figure 3d). Remarkably, our model is even able to correctly predict subtle differences between anterior and posterior fixed points along the DV axis (Figure 3d). Measured flow is first dominated by sources and sinks that disappear later during GBE, suggesting that before and during VF invagination cells are less resistant to surface area compression than during GBE. Indeed, quantitative comparison with an independently measured flow field (Figure 1c\u2013e) shows that the \u03bd20 /\u03bd27 ratio increases dramatically at the start of GBE phase (corresponding to the relative increase of the underlying 2D bulk modulus, see Appendix 2, Figure 3\u2014figure supplement 1b) resulting in effective incompressibility of apical surface of cells. The temporal coincidence between completion of cellularization and increase of the bulk modulus provides an intriguing possible explanation of how the continuous transition in our time dependent variable might be realized. Poor agreement during VF invagination is due to a significant fraction of cells internalizing and thus leaving the surface. To account for this effect, we extend the model to allow a \u2018cut\u2019 in the lattice along ventral midline with an imposed in-plane boundary force (perpendicular to the cut) representing the pulling effect of the VF (see SI for detail, Figure 3\u2014figure supplement 1a). This relatively simple extension allows to recover\u00a0~90% accuracy (Figure 3be), illustrating how regional inhomogeneity associated with particular morphogenetic events could be quantitatively captured by suitable generalizations.\n\nTo evaluate the fit obtained in wild type embryos, we examined flows in mutant embryos in which the distribution of myosin is altered. Analysis based on tissue tectonics (Blanchard et al., 2009) has shown that strain rates in twist (twi) embryos, which lack the VF, exhibit slower kinetics compared to WT (Butler et al., 2009), however, the cause of this remains a subject of debate (Butler et al., 2009; Lye et al., 2015; Collinet et al., 2015). We have quantified the flow field and myosin activity patterns in twi mutants (Figure 4\u2014figure supplement 1), and find that our model is able to accurately predict the flow profiles (Figure 4a). During early flow phases \u2013 corresponding to times of pre-VF flow in WT \u2013 DV asymmetry of the basal myosin pool is strongly reduced in comparison to WT, as is tissue movement towards the dorsal pole (Figure 4b, Figure 1\u2014figure supplement 1, Figure 4\u2014figure supplement 1a,d). Moreover, anisotropy of the apical myosin pool increases at a slower rate as compared to WT. As previously reported for strain rates (Butler et al., 2009), this is most pronounced for the first 20 min (Figure 4c, compare Figure 4 \u2013 fig. supplement\u00a0=\u00a00 with Figure 2\u2014figure supplement 3e,f). In bcd nos tsl (bnt) embryos lacking all AP patterning, the early basal DV asymmetry is similar to WT, with only slightly reduced myosin asymmetries and dorsal movement (Figure 4b, Figure 2\u2014figure supplement 1). At later stages, however, anisotropy of the apical myosin pool remains low and comparable to pre-VF WT levels. This result is expected given the uniform expression of pair-rule genes in a bnt genetic background (Blankenship et al., 2006) (Figure 4c). Consistent with these myosin distributions, we see the early dorsal flow associated with basal myosin asymmetry but a failure to produce the more complex later flow patterns with their characteristic saddles and vortices. On a quantitative level our model\u2019s predictive power for AP patterning deficient bnt mutant embryos is comparable to WT and twi mutants (Figure 4a).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/27454/elife-27454-fig4-v2.jpg)\n\n**Figure 4.:** (a) Fit residual as in Figure 3b, for twi, and bcd nos tsl mutants (7, and 7 embryos in ensemble). WT is shown as reference. (b) Amplitude of basal myosin pool along DV axis for WT and mutants in (a). (c) Polarized apical myosin in mutants shown in (a) as function of time. (d) Theoretical comparison of DV constant basal pool (i.e. no gradient in DV direction) (left column), or DV constant anisotropic apical pool (i.e. no gradient in DV direction) (right column) with predicted flow based on full myosin tensor (compare to Figure 3c,d respectively). Black arrows indicate flow field topology, and red dots the fixed point from prediction based off of full myosin tensor. Model parameters are the same as previously determined for the WT (Figure 3\u2014figure supplement 1).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27454/elife-27454-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a\u2013c). Flow field on 2D projections for representative time points. As in Figure 1c\u2013e Cyan arrows indicate tissue flow field. (d\u2013f) Normalized myosin distribution on basal cell surface corresponding to times shown in (a\u2013b). Color code from lowest 0 to highest 1. (g\u2013i) As (d\u2013f), except for isotropic pool on apical cell surface. (j\u2013l) Time-course of relative myosin anisotropy in the apical pool for representative time points. (m\u2013o). Principal axes of anisotropic myosin tensor on apical surface. Color code and scale are as in Figure 2\u2014figure supplement 3e.\n\n## Discussion\n\nIn summary, we have presented a simple biophysical model of morphogenetic flow that quantitatively describes complex tissue motion in terms of a hydrodynamic equation parameterized by two effective viscosities. The flow is driven by the stress defined by a linear superposition of two myosin tensors describing the apical and basal myosin pools. We propose that the basal myosin pool forms an isotropic and contiguous network (He et al., 2016), contracting in a similar fashion as purified actomyosin gels in vitro (Bendix et al., 2008; Alvarado et al., 2013). Imbalance within this network, caused by the twi dependent depletion of myosin on the ventral side, drives global dorsal-ward flow in the pre-VF phase, which continues to contribute until early GBE (Figure 4d). Interestingly, in\u00a0silico perturbations indicate the local depletion (on the ventral side) has a global effect, most evidently manifested by a \u2018sink\u2019 on the dorsal side, which is lost in a simulation using the same parameters as WT, but no DV modulation of the basal myosin pool (Figure 4d, left panels). The apical pool decomposes into isotropic and anisotropic components. In addition to previously described accumulation of isotropic myosin in ventral regions (Martin et al., 2009), we observe a striking gradient of anisotropic apical myosin along the DV axis, reaching highest levels in lateral ectoderm and lowest levels in amnioserosa tissue at the dorsal pole. Because the force driving the flow arises from the non-uniformity of the stress, this modulation of myosin distribution is critical for the dynamics. While local rate of cell intercalation is often interpreted in terms of local myosin distribution on cellular and sub-cellular scales, our model shows that the local rate of strain is a result of the tissue-wide distribution of forces generated by the spatial non-uniformity of myosin (mathematically described by the divergence of the myosin tensor) (Figure 4d, right panels). The importance of spatial modulation (Figure 4d) suggests a novel role of the dorsal signaling pathway in generation of GBE flow. Surprisingly, in twi mutants both the rate of increase as well as the peak myosin anisotropy are significantly reduced in the first 20 min of GBE flow (Figure 4c, Figure 4\u2014figure supplement 1). The reduced intercalation and strain rates observed in these mutants has been previously reported (Butler et al., 2009), and interpreted in terms of possible generation of AP forces by the internalized VF (absent in twi mutants). Our model accounts for the reduced rate of strain in terms of the changes in spatial distribution and the reduced level of myosin anisotropy. This however brings up the question of how elimination of twi expression in the ventral mesoderm affects myosin anisotropy in the lateral ectoderm. We suggest that this effect may be due to mechanical feedback on myosin recruitment, which relates the later to local rate of strain. Through this \u2018dynamic recruitment\u2019 effect (Noll et al., 2017; Fernandez-Gonzalez et al., 2009), changes in the ventral region that modify global flow patterns can affect myosin distribution and anisotropy in the lateral region. In this way, local modification of the myosin pattern can produce not only a non-local perturbation of the flow, but also a non-local perturbation of myosin distribution. The global nature of the flow is reinforced by the observed transition towards areal incompressibility at the onset of GBE-flow, which together with reduced polarization kinetics and reduced strain rates observed in twi mutants, indicates that non-local consequences of stress generated largely in lateral ectoderm can account for the dorsal movement of the posterior midgut.\n\nTaken together, our observations show that morphogenetic flow is a global response to local forcing which arises from the spatial modulation of myosin density and anisotropy. The latter is derived from the spatial patterns of developmental transcription factors, but we suggest may also involve mechanical feedback affecting recruitment of myosin. Our quantitative approach provides a framework for integrating the effect of local factors in the description of the global flow.\n\n## Materials and methods\n\n### Fly lines used\n\nHis2Av-mCherry (Krzic et al., 2012), bcde1nosbntsl4/TM3, halo twiID96/Cyo (twiID96 is also known as twi [Martin et al., 2009]), sqh-GFP klar (Martin et al., 2009), OregonR. Embryos where dechorionated following standard procedures, and mounted in agarose gels as previously described (Krzic et al., 2012).\n\n### Light sheet microscopy\n\nFluorescence-based live\u00a0imaging was carried out on a MuVI SPIM (Krzic et al., 2012). Briefly, the optics consisted of two detection and illumination arms. Each detection arm forms a water-dipping epifluorescence microscope, consisting of an objective (Apo LWD 25x, NA 1.1, Nikon Instruments Inc.), a filter wheel (HS-1032, Finger Lakes Instrumentation LLC), with emission filters (BLP01-488R-25, BLP02-561R-25, Semrock Inc.), tube lens (200 mm, Nikon Instruments Inc.), and an sCMOS camera (Zyla 4.2, Andor Technology plc.), with an effective pixel size of 0.26 \u00b5m. Each illumination arm consisted of a water-dipping objective (CFI Plan Fluor 10x, NA 0.3), a tube lens (200 mm, both Nikon Instruments Inc.), a scan lens (S4LFT0061/065, Sill optics GmbH and Co. KG), and a galvanometric scanner (6215 hr, Cambridge Technology Inc.), fed by lasers (06-MLD 488 nm, Cobolt AB, and 561LS OBIS 561 nm, Coherent Inc.). Optical sectioning is achieved by translating the sample using a linear piezo stage (P-629.1cd with E-753 controller) sample rotation is performed with a rotational piezo stage (U-628.03 with C-867 controller) and a linear actuator (M-231.17 with C-863 controller, all Physik Instrumente GmbH and Co. KG).\n\n### Experiment control and data fusion\n\nStages and cameras are controlled using Micro Manager (Edelstein et al., 2014), to coordinate time-lapse experiments, running on a Super Micro 7047GR-TF Server, with 12 Core Intel Xeon 2.5 GHz, 64 GB PC3 RAM, and hardware Raid 0 with 7 2.0 TB SATA hard drives. Samples were recorded from two, by 900 rotated views, at a typical optical sectioning of 1 \u00b5m, and temporal resolution of 75 s. As previously described (Krzic et al., 2012), MuVI SPIM optical stability allows a fusion strategy based on a diagnostic specimen. Recorded once per experiment, the diagnostic specimen is used to determine an initial guess for an affine transformation, which we feed into a rigid image registration algorithm (Klein et al., 2010), to fuse individual views, resulting in an isotropic resolution of. 26 \u00b5m in the registered image.\n\n### Surface of Interest extraction\n\nWe used tissue cartography to extract surfaces of interest (SOI) from embryos (Heemskerk and Streichan, 2015). Briefly, we identify the outline of the sample using the Ilastik detector to determine a point cloud for SOI construction. In a fitting step (implemented in the sphere-like fitter), we create a smooth description of the SOI in terms of cylinder coordinates defined by AP axis and azimuth (Heemskerk and Streichan, 2015). Image intensity data are then projected onto a nested group of 5 layers (two normally evolved layers above and below the SOI), each three pixels apart, defining a 3\u20134 \u00b5m thick 'curved image stack'. For analysis the maximum intensity projection of nested layers was used. Although the shape of embryos of the same genotype is highly reproducible, small differences in the underlying point cloud can result in small differences of the SOI passing through the apical cell surface. To simplify comparison between embryos, we create a standard projection on a cylinder grid of fixed size, with the embryo surface oriented such that apical is left, posterior right, dorsal in the center, and ventral on top and bottom (Figure 1). Systematic distortions of measurements due to projecting the curved embryo surface to the plane are corrected using the metric tensor (Heemskerk and Streichan, 2015).\n\nThe apical surface is static, while the dynamic basal cell surface moves with the cellularization front. Projections of the latter could be created by reading signal on a surface obtained by evolving the apical SOI along its normal basal wards. However, small differences in cell height (<10% of a typical cell height, and\u00a0~1% of the embryo diameter), could result in small but systematic bias of the SOI around the cellularization front and impair projection quality. We avoid this problem by determining a new point cloud for each time point, for which we focus the ilastik detector on the interface between basal myosin and yolk. Our model approximates the embryo as a thin shell (see below), and hence as 2D surface. Therefore, we map the dynamic basal cell surface onto the cylinder grid of the static apical SOI.\n\n### Particle image velocimetry\n\nWe measure the flow field using the particle image velocimetry (PIV) method, that identifies local displacements between two time points (Adrian, 2005). Briefly, we implemented the phase correlation method that leverages favorable execution times of fast fourier transforms, to estimate local flow in a region of interest on the projections (Kuglin, 1975). To minimize effect from systematic distortions towards polar regions on cylinder projections, we adjust the size of the ROI according to the local metric strain, which we define as the deflation of the metric from flat space (Heemskerk and Streichan, 2015).\n\n### Reproducibility of the morphogenetic flow\n\nAlthough gastrulation in Drosophila is highly reproducible from embryo to embryo (Irvine and Wieschaus, 1994), in practical terms experiments are subject to a constant time shift, depending on the developmental stage of the sample at the start of imaging. Thus, we developed an automated routine that allowed us to identify a common time frame that the 36 (WT: N\u00a0=\u00a022, twist:7, bcd nos tsl:7) live-imaged embryos are registered to. Specifically, we introduced a constant time shift for a given flow field that minimizes the squared difference with respect to a reference flow field averaged over the embryo surface:\n\n$$\nt_{off,i}min\\int<\\sqrt{(v\u2192_{ref}(t)\u2212v\u2192_{i}(t\u2212t_{off,i}))^{2}}>_{embryo}dt\n$$\n\nwhere $<>_{embryo}$denotes averaging across the embryo, $v\u2192_{ref}$ is an arbitrary chosen reference from the ensemble, and $v\u20d1_{i}$, $t_{off,i}$ denote the i-th flow field and offset time respectively. In this way, we align samples to a chosen reference, in which we use the first occurrence of the cephalic furrow (CF) as a landmark indicating our choice for $t=0$ min. Within a given genotype, we could automatically determine the offset time. However, to align mutants to WT, we first aligned all mutant datasets, and then used landmarks such as the CF (twist), or the VF (bcd nos tsl), to define a common time frame as best as possible.\n\nTime shifted accordingly, we created an ensemble average flow field for each genotype:\n\n$$\n<v\u2192>_{ensemble}:=\\frac{1}{N}\\sumiNv\u2192_{i}(t\u2212t_{off,i})\n$$\n\nThe magnitude of ensemble average is highly reproducible from embryo to embryo (note the small standard deviation Figure 1\u2014figure supplement 5a). Flow trajectories during cellularization point towards the dorsal side (Figure 1\u2014figure supplement 5b), showing persistent movement towards dorsal regions during pre-CF flow. This is accompanied by reduction of apical cell area in these regions (Figure 1\u2014figure supplement 5c), as measured using confocal microscopy. While the length of pre-VF flow lines peaks on the anterior and posterior poles in WT, it is substantially reduced near poles in twist, and only mildly reduced in bcd nos tsl (Figure 1\u2014figure supplement 5d\u2013f). Together with the loss of basal DV asymmetry, this suggests that twist mediated reduction of basal myosin levels on the ventral side is responsible for dorsal-ward flow.\n\n### Myosin quantification\n\n#### Intensity normalization\n\nUsing the imaging and pre-processing procedure as outlined above with samples expressing sqhGFP (Royou et al., 2002), we created projections of the apical and basal cell surfaces, with the goal of establishing a quantitative measurement of global myosin patterns (Figure 1\u2014figure supplements 6 and 7). Ideally, quantification of signal intensities is carried out using identical conditions for each sample in the pool used for statistics, to minimize variability across samples. However, when performing in toto live-imaging, it is difficult to image more than one sample at a time and keep a high recording frequency. To minimize variability in a sequential recording scheme, we keep imaging conditions constant, but there are still possible variabilities in recorded signal intensity for biological but also technical reasons.\n\nTo account for such variability between experiments, we normalize recorded data (Figure 1\u2014figure supplement 6b,b\u2019,c). Signal intensity of all time points in a given experiment are summarized by normalizing the intensity distribution: upper and lower range are determined according to the $ll=0$ and $ul=95$-percentile; normalization is done by subtracting the $ll$ and dividing by $(ul-ll)$, yielding a dimensionless normalized signal distribution (compare Figure 1\u2014figure supplement 6b and b\u2019). This strategy should not only allow for comparison on the same microscope, but also across microscopes, allowing for validation of in toto live-imaging from sequential experiments against fixed batches imaged e.g. on a confocal.\n\n#### Basal myosin pool analysis via light sheet microscopy\n\nHere, we briefly outline the results for the DV asymmetry in the basal myosin pool that we reported in the main text. First, we time align intensity normalized basal projections as described above. Next we convolve each pullback with a Gaussian of width $\\sigma~3$ cell diameters to obtain basal myosin at the mesoscale (see discussion in model section below for definition). The results are then ensemble averaged to obtain ensemble myosin distribution as shown in Figure 1\u2014figure supplement 6. To assess DV asymmetry, we focus on the region outlined by the black/white dashed line, where we first take an average along the AP axis and then compute average signal on dorsal side, and subtract from it the average signal on the ventral side. Repeating the outlined routine for all time points, we obtain the plot show in main text Figure 4b.\n\n#### Basal myosin pool via confocal microscopy\n\nFigure 1\u2014figure supplement 7c shows DV cross sections of fixed embryos stained for rb anti zipper and mouse anti dorsal, cut along the AP axis, and imaged on a confocal microscope. DV orientation of the samples is automatically determined based on the dorsal signal. To estimate the age of fixed embryos in relation to live-imaging data, we constructed a calibration curve for cell apico-basal height shown in Figure 1\u2014figure supplement 7a. Using the known monotonic relation between cell height and age (Merrill et al., 1988), which we find lasts until about $8min$ after CF formation, we obtain estimate for the age of a fixed embryo based on measuring cell height. By segmenting the outline of basal myosin, we can then measure DV asymmetry in the same way as described for live-imaging data above.\n\nA direct comparison between live\u00a0imaging-based DV asymmetry measurement, and based on $N=345$ fixed DV cross sections from confocal shows that after applying normalization routine as described above, we find similar estimates for the DV asymmetry using both light sheet and confocal imaging (see Figure 1\u2014figure supplement 7b). Note that uncertainties in the calibration curve propagate to exact age determination in the embryo, and thus increased fluctuations in DV asymmetry determined using confocal imaging.\n\n#### Finite element implementation\n\nInversion of the continuum equation of state relating the coarse-grained myosin tensor and cellular flow-field was achieved using Finite Element Methods (FEM) in the weak formulation implemented within the FELICITY toolbox for MATLAB (Walker, 2017). Equations were inverted on a static triangular mesh representing the 'canonical' embryo surface produced via a point cloud (described above) subsequently turned into a smooth triangulation using MeshLab (Cignoni, 2008). As such, all objects within the equation of state had to be parameterized within the 3D embedding space of the mesh, which can be done by using the direction relation between projections and SOI (Heemskerk and Streichan, 2015). The only dynamic input to this inversion algorithm is the divergence of the myosin tensor. This was computed by interpolating the gradient of each Cartesian component of the tensor onto triangular faces of our mesh, producing a 3 \u00d7 3 \u00d7 3 object on each face. The partial trace of this object over directions within the tangent plane of the face result in the estimated divergence. This operation was repeated for all myosin pools used. All equations within the FEM software are projected onto the surface of our 3D mesh to manually ensure solutions only exist within the tangent plane.\n\nTo benchmark the quality of our FEM solver, we implemented the equation of motion on a sphere and tested results for known solutions, which confirmed our solver works within the expected numerical accuracy. To test dependence on discretization used, we compared our results using different meshes at varying mesh sizes, and found good agreement with all test cases.\n\nIn order to model internalization of the VF, we introduced the ability to add a 'cut' within the triangular mesh. Contraction of the tissue was modeled by manually introducing local force dipoles on edges within the mesh pointing along the bond. All vertices along the cut were given zero bulk modulus to allow for local tissue compression needed to simulate invagination. The location of the cut was estimated from the PIV flow fields. Specifically the ratio of the divergence of the velocity field to the velocity field's magnitude was used to estimate the spatial extent of the cut over times during ventral furrow formation.\n\nPredictions for the flow field obtained via inversion are subject to an overall scale factor, that can't be determined by the model. To compare ensemble averaged flow field measurement $v\u20d1(t)$ to model predictions $u\u20d1(t)$in a quantitative fashion, we define a global measure for the spatial residual that is insensitive to such a scale factor. With the short hand notation $<u\u2192>:=\\sqrt{<u\u2192(x)^{2}>_{embryo}}$ to define overall magnitude of the field u across the surface of the embryo ($<u\u2192(x)^{2}>_{embryo}$ denotes averaging the space dependent field $u\u20d1(x)^{2}$ across the embryo surface, so is not space dependent.), the residual is defined as\n\n$$\nR=\\frac{(<u\u2192>^{2}v\u2192(x)^{2}+u\u2192(x)^{2}<v\u2192>^{2})\u22122\\sqrt{u\u2192>^{2}<v\u2192>^{2}}v\u2192(x)u\u2192(x)}{2<u\u2192>^{2}<v\u2192>^{2}}\n$$\n\nprovides a spatial discrepancy map, indicating the prediction quality as a function of location on the embryo, that is in-sensitive to noise dominated fluctuations in domains of no flow (i.e. fixed points), as opposed to e.g. inner product.\n",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "33902ec2-fc7e-4ac4-b4fc-40f7cc1b434c",
+      "submission_id": "2a72eed1-0868-4af7-b67e-da4650637cfe",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Frank J\u00fclicher, Max-Planck-Institute for the Physics of Complex Systems Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.27454.023](https://doi.org/10.7554/eLife.27454.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Global morphogenetic flow is accurately predicted by the spatial distribution of myosin motors\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including a member of our Board of Reviewing Editors, and the evaluation has been overseen by the Reviewing Editor and Anna Akhmanova as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors perform a careful and thorough analysis of the collective cell movements during early development of the Drosophila embryo. Using light sheet microscopy and a quantitative image analysis the observed patterns of fluorescence intensity are mapped on a closed two-dimensional surface representing the epithelial surface. In the case of fluorescently labelled myosin, patterns of myosin on the apical and on the basal side of the tissue have been quantified separately on the 2d surface. The work uses an elegant and original approach to quantify anisotropies of apical myosin using a Radon transform. In addition, flow fields are determined using PIV. The authors use the 2d distribution and anisotropies of apical and basal myosin to estimate patterns of active stress in the tissue. Using a continuum theory of an active gel, velocity fields are calculated and compared to the observed cell flow patterns. Strikingly, the authors show that the most important features of the cell flow can be accounted for from the knowledge of myosin distributions. Furthermore, the authors show that altered flow patterns in twi mutants can be explained by changed patterns of myosin distributions under mutant conditions. These are important results that provide a significant advance of the understanding of morphogenetic movements in the early fly embryo. The quantitative methods used are powerful and sophisticated. While this work is interesting and strong, there are several points that need to be addressed in a revision of the manuscript and several points need clarification.\n\nEssential revisions:\n\n1) A major concern as detailed below is that a lot of information is missing in the manuscript.\n\n2) The authors do not show what the actual myosin distribution looks like, and there is little detail in how the 'coarse-grained' or 'smoothened' myosin distributions in Figure 1F-K are obtained. The corresponding supplemental figure did not really help in this regard. If the data has been smoothened to produce these plots, the original data should also be shown. Scale bars should also be added to the figures. What is the 'contrast' in the myosin signals? What is the level of intensity between dorsal and ventral in relation to the average? What are the units in Figure 1F\u2013K, Figure 2C, etc.?\n\n3) The model used to calculate the flow fields is shown in Figure 3A. It is unclear why the isotropic basal and the anisotropic apical signals are used only. The apical myosin also has an isotropic signal. Is this not used and why not? Maybe the notation, which is not fully explained, leads to confusion here. Is the tensor mapical traceless or does it contain an isotropic signal? This should be clarified. Presumably the isotropic and anisotropic contributions of apical myosin are contributing with two different factors. These factors should be defined and their values reported.\n\n4) The quantification of anisotropies of the myosin distribution represents an interesting methodological advance. The presentation of the quantification of this anisotropy on the surface of the embryo is not very clear. Figure 2C and Figure 2D do not provide a full picture of the quantified anisotropy patterns. The authors should show a complete map of myosin anisotropy at different times.\n\n5) Information about the anisotropy of the basal signal evaluated with the same method is missing. Why is the basal myosin anisotropy not contributing to the stress equation? Is it because basal myosin anisotropy is low?\n\n6) In the appendix the anisotropy quantification using a Radon transform is explained. However, I did not see a clear definition of how the Radon transform information is used to determine the myosin tensor mapical in Figure 3A.\n\n7) If m(r) denotes a factor positively correlated to myosin concentration, the sign of the righthand side of Equation 6 may be wrong. With the current sign, a positive accumulation of myosin would drive an outward flow. It is essential that the authors clarify this.\n\n8) In Figure 2D it is not clear what is plotted. The caption states \"Eigenvectors of myosin tensor are plotted in cyan\". It is not clear if the myosin tensor is a field defined on a regular grid, of only selected vectors are shown. Shown are bars that are hardly visible to the bare eye. They do not look like vectors and it is unclear to which points they are attached.\n\n9) The authors should provide more information on the 2D shear and bulk viscosities \u03bd and \u03bd' and they ratio B. If one considers the height of the tissue layer as an explicit variable and treats the tissue as isotropic and incompressible in 3D, divergences in the 2D flow field couple to height changes and the ratio of the 2D bulk to the 2D shear viscosity would be 3 (see e.g. Batchelor, 2000). How does this compare to the values that are fitted here? Can the model be simplified to 2 parameters? Can B be constant in time (I assume not, Figure 1C\u2013E)?\n\n10) Related comment: Please provide the values of the parameters B, \u03b1, \u03b2 in a table/plot in the main text together with confidence bounds. Are \u03b1 and \u03b2 constant in time? The 'true' number of model parameters remains unclear. Is this really just one parameter as stated in the abstract, or is it three as stated in the main text? It remains unclear whether the viscosity ratio B was different for each time point which would correspond to effectively many fit parameters. In the main text it is mentioned that B changes with time however this is unclear and needs to be clarified. The main text refers to Figure 1C\u2013E about this but in the figure there is no information about B.\n\n11) It seems the authors use a single value of B that is space-independent at each time point, but then allow B to instantaneously change everywhere and synchronously in space. The motivation for this remains unclear. How could that be achieved in the embryo?\n\n12) In Figure 1C\u2013E it is not stated in the caption (and not even in the supplement) which fluorescence signal (apical, basal myosin, combined?) is used to calculate the velocity field. This important information that should be found easily.\n\n13) In Figure 3C, it is unclear whether the shown flow profiles are obtained with or without the \"cut\" in mesoderm? We would suggest adding a figure or schematic actually showing what the \"cut in mesoderm\" perturbation is doing.\n\n14) One sentence states that the comparison between theoretical and experimental plots is done using normalised velocity fields rather than real velocity fields (caption of Figure 3B: \"Fit residual, comparing predicted flow field with measured flow field normalized for magnitude\"). The precise way the velocities were normalized remained unclear to the referees. Was the velocity normalized at each position separately or was only the overall magnitude of the velocity field normalized? The former case would be a problem because real velocity fields should be compared including velocity amplitude patters.\n\n15) An important result is that \"the model achieves about 90% accurate description of the flow pattern before and after VF invagination\". It is quite unclear how this percentage of agreement is defined and determined. Also, in the caption of Figure 3 the residual is not defined. The definition of the residual given in the methods remains a bit unclear because the notation is not well explained (which quantities depend on position and which do not, how is <[\u2026]>embryo defined etc.).\n\n16) The flow and myosin profiles in twist embryos are not reported. They should absolutely be shown.\n\n17) It is not clear what information the theoretical analysis of mutants is bringing. Are the parameters used to fit the data the same as in WT?\n\n18) It is misleading to refer to the model used in the calculations as viscoelastic. This is a description in the fluid limit and it should be referred to as such. Viscoelasticity does not enter; the corresponding viscoelastic relaxation time is not a parameter that is considered. Please correct corresponding references in the Abstract and main text, for example the language in the Results section (please add page and maybe line numbers in the revision) is confusing and the statement in the Abstract is misleading (surprisingly simple effective visco-elasticity model -> viscous model). Of course, one can arrive at a fluid-like description by considering the long-time behavior of a viscoelastic material as the authors also show, and it is certainly ok to provide this derivation. But the theory that is used in the end is fluid and not being clear here can put the reader on a wrong track.\n\n19) In Figure 3A a coordinate independent, covariant expression of the dynamic equations is presented. The equations given in the appendix are not covariant but depend on a coordinate system. It is therefore unclear whether the continuum theory applied to the problem is covariant or not. This should be clarified. Furthermore, the finite element method used is also not clear with respect to this point and not sufficiently explained. Do the results depend on the choice of the finite element discretization used or not? If not, has this been checked? If yes, what does this mean? We understand that the authors do not want to go into notational complexities here but the conceptual approach used should be clear.\n",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "259bedef-c878-44d3-a299-6403a9805bb7",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C1",
+      "claim": "During embryogenesis tissue layers undergo morphogenetic flow rearranging and folding into specific shapes.",
+      "claim_type": "EXPLICIT",
+      "source": "During embryogenesis tissue layers undergo morphogenetic flow rearranging and folding into specific shapes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about embryogenesis that draws from established scientific knowledge in developmental biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "12eb0a75-3f1e-4bc5-8bde-f3d4c17686bb",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C2",
+      "claim": "The complex spatio-temporal flow pattern can be predicted from the measured meso-scale myosin density and anisotropy using a simple, effective viscous model of the tissue, achieving close to 90% accuracy with one time dependent and two constant parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the complex spatio-temporal flow pattern can be predicted from the measured meso-scale myosin density and anisotropy using a simple, effective viscous model of the tissue, achieving close to 90% accuracy with one time dependent and two constant parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data and modeling results presented in the manuscript, particularly in Figure 3 showing the fit residuals and predicted vs measured flow fields.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "3a8e6cc7-5162-4238-a328-2a6df365712a",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C3",
+      "claim": "Spatial modulation of myosin distribution on the scale of the embryo is important for morphogenetic flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis uncovers the importance of a) spatial modulation of myosin distribution on the scale of the embryo and b) the non-locality of its effect due to mechanical interaction of cells, demonstrating the need for the global perspective in the study of morphogenetic flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the modeling results and in silico perturbations shown in Figure 4d demonstrating the effects of removing spatial modulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "98cf6866-89a5-458c-8d3b-47da4a5fb691",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C4",
+      "claim": "The non-locality of myosin's effect due to mechanical interaction of cells is important for morphogenetic flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis uncovers the importance of a) spatial modulation of myosin distribution on the scale of the embryo and b) the non-locality of its effect due to mechanical interaction of cells, demonstrating the need for the global perspective in the study of morphogenetic flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the continuum mechanics modeling approach and the demonstration that local myosin perturbations have global effects on flow patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "6ee603da-078b-4048-adc3-b52a55c2beaa",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C5",
+      "claim": "The Drosophila embryonic blastoderm is an epithelial monolayer of about 6000 cells on the surface of the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "During gastrulation of Drosophila, for example, the embryonic blastoderm \u2013 an epithelial monolayer of about 6000 cells on the surface of the embryo \u2013 undergoes a dramatic deformation that changes tissue topology and gives rise to the three germ layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in Drosophila developmental biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "6db73c50-1ee9-4e9b-896c-1227357dbf4e",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C6",
+      "claim": "Ventral furrow formation involves apical constriction of presumptive mesoderm cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Live imaging has also uncovered process-specific cell behaviors such as apical constriction of presumptive mesoderm cells during ventral furrow formation (Martin et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Martin et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "8e56ed66-8539-4299-8a2f-3280c7d972f3",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C7",
+      "claim": "Germ-band extension involves intercalation of neighboring cells in the lateral ectoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Live imaging has also uncovered process-specific cell behaviors such as apical constriction of presumptive mesoderm cells during ventral furrow formation (Martin et al., 2009) and intercalation of neighboring cells in the lateral ectoderm during convergent extension (Zallen and Wieschaus, 2004; Bertet et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work by Zallen and Wieschaus, 2004 and Bertet et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "7cc53631-dbff-4428-90f1-c8d2e06f1107",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C8",
+      "claim": "Cell behaviors during gastrulation are associated with localized activity of the force generating non-muscle myosin II.",
+      "claim_type": "EXPLICIT",
+      "source": "These behaviors are associated with localized activity of the force generating non-muscle myosin II (Martin et al., 2009; Irvine and Wieschaus, 1994; Zallen and Wieschaus, 2004; Bertet et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "fbbde568-88a5-4bc1-98c9-82beb44c5011",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C9",
+      "claim": "Tissue remodeling during Drosophila gastrulation is characterized by three simple flow field configurations.",
+      "claim_type": "EXPLICIT",
+      "source": "Using optical flow velocimetry applied to cylinder projections of the Surface of Interest (SOI) passing through cells below the apical cell surface (see SI for details Figure 1\u2014figure supplement 5c), we find that tissue remodeling during Drosophila gastrulation is characterized by three simple flow field configurations (Figure 1c\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the optical flow velocimetry data shown in Figure 1c-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "07aa3db2-8c60-455a-9b96-c83ba2200f9b",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C10",
+      "claim": "The earliest flows start well before the ventral furrow forms, and are characterized by a dorsal sink and ventral source.",
+      "claim_type": "EXPLICIT",
+      "source": "The earliest flows start well before the ventral furrow (VF) forms, and are characterized by a dorsal sink and ventral source (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the flow field data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "dbb2497e-913b-46d7-8604-bf3d9207f8ed",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C11",
+      "claim": "During pre-VF flow, no cells are internalized, but rather cells reduce cross section on the dorsal side.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the VF, no cells are internalized during this flow, but rather cells reduce cross section on the dorsal side (Figure 1\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 1\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "d81ad2ef-0402-4e09-ad33-6858aadef244",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C12",
+      "claim": "As the VF forms, source and sink swap sides and a large group of cells internalize on the ventral side, as mesoderm precursors leave the surface of the blastoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "As the VF forms, source and sink swap sides and a large group of cells internalize on the ventral side, as mesoderm precursors leave the surface of the blastoderm (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the flow field data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "7ce4e028-bccd-45db-af7e-99dee7cabd9b",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C13",
+      "claim": "During germband extension, the flow pattern exhibits two saddles arranged on the dorsal and ventral sides as well as four vortices, two in the posterior and two in the anterior end.",
+      "claim_type": "EXPLICIT",
+      "source": "During germband extension (GBE), the flow pattern exhibits two saddles arranged on the dorsal and ventral sides as well as four vortices, two in the posterior and two in the anterior end (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the flow field data shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "6011c314-646c-4e9b-840e-135e70b162de",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C14",
+      "claim": "The pre-VF flow associates with basal myosin that exhibits a pronounced Dorso Ventral asymmetry, with high levels of myosin on the dorsal and low levels on the ventral side.",
+      "claim_type": "EXPLICIT",
+      "source": "The pre-VF flow associates with basal myosin that exhibits a pronounced Dorso Ventral (DV) asymmetry (Warn et al., 1980; Sokac and Wieschaus, 2008; Polyakov et al., 2014), with high levels of myosin on the dorsal and low levels on the ventral side (Figure 1f)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the myosin distribution data shown in Figure 1f and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "262cf010-9d9f-4770-8111-df8cb3bdb483",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C15",
+      "claim": "During pre-VF flow, the apical myosin pool appears uniform across the surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The pre-VF flow associates with basal myosin that exhibits a pronounced Dorso Ventral (DV) asymmetry (Warn et al., 1980; Sokac and Wieschaus, 2008; Polyakov et al., 2014), with high levels of myosin on the dorsal and low levels on the ventral side (Figure 1f), while the apical pool appears uniform across the surface (Figure 1i, Figure 1\u2014figure supplement 5d\u2013g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the myosin distribution data shown in Figure 1i and Figure 1\u2014figure supplement 5d\u2013g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "fda53dd5-21d6-4ab4-8be1-bdce8b3e4214",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C16",
+      "claim": "The basal myosin pool remains asymmetric during VF flow.",
+      "claim_type": "EXPLICIT",
+      "source": "The basal pool remains asymmetric during VF flow (Figure 1g)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the myosin distribution data shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "b4600c7a-d566-427e-a201-42e44ca6aae8",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C17",
+      "claim": "During VF flow, the apical myosin pool develops DV asymmetry in reversed orientation compared to the basal pool.",
+      "claim_type": "EXPLICIT",
+      "source": "The basal pool remains asymmetric during VF flow (Figure 1g), but the apical pool now also develops DV asymmetry in reversed orientation (Figure 1j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the myosin distribution data shown in Figure 1j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "64228cc8-5d05-4408-a226-c566327995d6",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C18",
+      "claim": "The asymmetry on the apical surface becomes further pronounced in the GBE-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "The asymmetry on the apical surface becomes further pronounced in the GBE-phase (Figure 1h,k, Figure 1\u2014figure supplements 6 and 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the myosin distribution data shown in Figure 1h,k and Figure 1\u2014figure supplements 6 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "f13ad05e-6e46-4ac9-99c6-e41da014c398",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C19",
+      "claim": "Global changes in myosin pools are a hallmark for transitions in flow field configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "Global changes in myosin pools are a hallmark for transitions in flow field configuration (Figure 2a, Figure 1\u2014figure supplements 1, 2, 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the temporal analysis of myosin pools shown in Figure 2a and related supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "1f52a967-76ec-4a7e-9bd2-afb1adcfa5cc",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C20",
+      "claim": "Myosin is initially enriched in the basal pool, and as sink and source swap position, it begins to accumulate on the apical side.",
+      "claim_type": "EXPLICIT",
+      "source": "Myosin is initially enriched in the basal pool, and as sink and source swap position, it begins to accumulate on the apical side.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the temporal analysis of myosin pools shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "cba67d1c-421c-4efc-82a5-9a3b4bd06c81",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C21",
+      "claim": "Cortical myosin on the apical cell surface polarizes during convergent extension.",
+      "claim_type": "EXPLICIT",
+      "source": "While the basal pool is isotropic (Figure 2\u2014figure supplement 4a), cortical myosin on the apical cell surface is known to polarize during convergent extension (Zallen and Wieschaus, 2004; Bertet et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to prior work and data shown in Figure 2\u2014figure supplement 4a.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "7c9cb9a0-b9d4-4ab9-b667-a785f1933f2b",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C22",
+      "claim": "The anisotropic signal in the apical pool starts out low, but increases from about 8 min corresponding to late stage 6.",
+      "claim_type": "EXPLICIT",
+      "source": "The anisotropic signal in the apical pool starts out low, but increases from about 8 min corresponding to late stage 6 (Figure 2a, Figure 2\u2014figure supplement 4b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the temporal analysis shown in Figure 2a and Figure 2\u2014figure supplement 4b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "1d533d82-2fbf-433f-a93d-27eb9bff915b",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C23",
+      "claim": "The anisotropy axis aligns well with local tangent to pair rule gene expression boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "The anisotropy axis, readily computed by the eigenvectors of the myosin tensor, aligns well with local tangent to pair rule gene expression boundaries (Figure 2a,d, Figure 2\u2014figure supplement 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the comparison of myosin anisotropy axes with pair-rule gene expression patterns shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "8d9deacb-7807-4479-8ab9-74d2b32ecf35",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C24",
+      "claim": "Anisotropies are thought to be driven by the patterned juxtaposition of pair-rule gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the expected result given that anisotropies are thought to be driven by the patterned juxtaposition of pair-rule gene expression (Zallen and Wieschaus, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Zallen and Wieschaus, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "6e50ea56-b681-4576-b2d4-c84f4e48ac67",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C25",
+      "claim": "The model achieves about 90% accurate description of the flow pattern before and after VF invagination.",
+      "claim_type": "EXPLICIT",
+      "source": "Even without spatial modulation of the parameters, the model achieves about 90% accurate description of the flow pattern before and after VF invagination (see Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the fit residual analysis shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "7e3cf2ba-8a2b-4294-a204-32407d047393",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C26",
+      "claim": "The main discrepancy of model predictions for pre-VF flow is a displacement of sink and source positions along the AP axis by less than 30 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "The main discrepancy of model predictions for pre-VF flow (see Figure 3c) is a displacement of sink and source positions along the AP axis by less than 30 \u00b5m.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the comparison of predicted and measured flow fields shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "b3b80f11-16ad-4a65-b6e4-fdd813a28fff",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C27",
+      "claim": "Prediction of GBE flow essentially agrees with measurements across the entire embryo, with the exception of a domain close to the vortices on the posterior end.",
+      "claim_type": "EXPLICIT",
+      "source": "Prediction of GBE flow essentially agrees with measurements across the entire embryo, with the exception of a domain close to the vortices on the posterior end, due to a mismatch of fixed-point location (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the comparison of predicted and measured flow fields shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "1f70df0e-a36c-4a77-9671-19032a6c248e",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C28",
+      "claim": "The model correctly predicts subtle differences between anterior and posterior fixed points along the DV axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, our model is even able to correctly predict subtle differences between anterior and posterior fixed points along the DV axis (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the comparison of predicted and measured flow fields shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "df497b8f-4a79-4944-b813-0147f47f512d",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C29",
+      "claim": "Before and during VF invagination cells are less resistant to surface area compression than during GBE.",
+      "claim_type": "EXPLICIT",
+      "source": "Measured flow is first dominated by sources and sinks that disappear later during GBE, suggesting that before and during VF invagination cells are less resistant to surface area compression than during GBE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the flow field topology and the changes in the ratio of viscosities shown in Figure 3\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "c25f02d9-5123-4ea0-86b7-0941dbf5eb80",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C30",
+      "claim": "The \u03bd2/\u03bd1 ratio increases dramatically at the start of GBE phase, resulting in effective incompressibility of apical surface of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, quantitative comparison with an independently measured flow field (Figure 1c\u2013e) shows that the \u03bd20 /\u03bd27 ratio increases dramatically at the start of GBE phase (corresponding to the relative increase of the underlying 2D bulk modulus, see Appendix 2, Figure 3\u2014figure supplement 1b) resulting in effective incompressibility of apical surface of cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis of the ratio of viscosities shown in Figure 3\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "6c425b70-cede-4401-94bc-dfdce5914607",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C31",
+      "claim": "The temporal coincidence between completion of cellularization and increase of the bulk modulus provides an intriguing possible explanation of how the continuous transition in the time dependent variable might be realized.",
+      "claim_type": "EXPLICIT",
+      "source": "The temporal coincidence between completion of cellularization and increase of the bulk modulus provides an intriguing possible explanation of how the continuous transition in our time dependent variable might be realized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the temporal correlation between cellularization and the change in bulk modulus.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "f60a8263-5fff-4bdc-9e90-896593e8e592",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C32",
+      "claim": "In twist mutants, DV asymmetry of the basal myosin pool is strongly reduced in comparison to WT during early flow phases.",
+      "claim_type": "EXPLICIT",
+      "source": "During early flow phases \u2013 corresponding to times of pre-VF flow in WT \u2013 DV asymmetry of the basal myosin pool is strongly reduced in comparison to WT, as is tissue movement towards the dorsal pole (Figure 4b, Figure 1\u2014figure supplement 1, Figure 4\u2014figure supplement 1a,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the comparison of basal myosin asymmetry in WT and twist mutants shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "f2a0657c-5eaa-4f03-b197-4073c89eb4b5",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C33",
+      "claim": "In twist mutants, tissue movement towards the dorsal pole is reduced compared to WT during early flow phases.",
+      "claim_type": "EXPLICIT",
+      "source": "During early flow phases \u2013 corresponding to times of pre-VF flow in WT \u2013 DV asymmetry of the basal myosin pool is strongly reduced in comparison to WT, as is tissue movement towards the dorsal pole (Figure 4b, Figure 1\u2014figure supplement 1, Figure 4\u2014figure supplement 1a,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the flow field data in twist mutants shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "87edea8f-58a6-41ee-8129-c32d9c883547",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C34",
+      "claim": "In twist mutants, anisotropy of the apical myosin pool increases at a slower rate as compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, anisotropy of the apical myosin pool increases at a slower rate as compared to WT. As previously reported for strain rates (Butler et al., 2009), this is most pronounced for the first 20 min (Figure 4c, compare Figure 4 \u2013 fig. supplement = 0 with Figure 2\u2014figure supplement 3e,f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the comparison of apical myosin anisotropy in WT and twist mutants shown in Figure 4c.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "5e503718-bb08-457e-bcd7-43b8aff99f2c",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C35",
+      "claim": "In bcd nos tsl embryos, the early basal DV asymmetry is similar to WT, with only slightly reduced myosin asymmetries and dorsal movement.",
+      "claim_type": "EXPLICIT",
+      "source": "In bcd nos tsl (bnt) embryos lacking all AP patterning, the early basal DV asymmetry is similar to WT, with only slightly reduced myosin asymmetries and dorsal movement (Figure 4b, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the comparison of basal myosin asymmetry in WT and bnt mutants shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "3e72d306-5e17-40c2-a0be-0550e07bdc12",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C36",
+      "claim": "In bcd nos tsl embryos at later stages, anisotropy of the apical myosin pool remains low and comparable to pre-VF WT levels.",
+      "claim_type": "EXPLICIT",
+      "source": "At later stages, however, anisotropy of the apical myosin pool remains low and comparable to pre-VF WT levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the comparison of apical myosin anisotropy in WT and bnt mutants shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "701258a8-a8d6-44a7-b782-c51561ba74a7",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C37",
+      "claim": "The low apical myosin anisotropy in bcd nos tsl embryos is expected given the uniform expression of pair-rule genes in a bnt genetic background.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is expected given the uniform expression of pair-rule genes in a bnt genetic background (Blankenship et al., 2006) (Figure 4c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Blankenship et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "372a1e86-cb4a-40e2-b759-62a023d9b4db",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C38",
+      "claim": "The basal myosin pool forms an isotropic and contiguous network.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the basal myosin pool forms an isotropic and contiguous network (He et al., 2016), contracting in a similar fashion as purified actomyosin gels in vitro (Bendix et al., 2008; Alvarado et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "a2d58c2c-d331-424f-96ad-8ff2483e4583",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C39",
+      "claim": "Imbalance within the basal myosin network, caused by the twist dependent depletion of myosin on the ventral side, drives global dorsal-ward flow in the pre-VF phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Imbalance within this network, caused by the twi dependent depletion of myosin on the ventral side, drives global dorsal-ward flow in the pre-VF phase, which continues to contribute until early GBE (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the in silico perturbation analysis shown in Figure 4d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "94683b25-f099-42d0-9212-ce6f5cc0eb46",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C40",
+      "claim": "Local depletion of basal myosin on the ventral side has a global effect, most evidently manifested by a 'sink' on the dorsal side.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in silico perturbations indicate the local depletion (on the ventral side) has a global effect, most evidently manifested by a 'sink' on the dorsal side, which is lost in a simulation using the same parameters as WT, but no DV modulation of the basal myosin pool (Figure 4d, left panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the in silico perturbation analysis shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "13ecabde-1465-4e1e-92bf-0f0ec6825943",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C41",
+      "claim": "There is a striking gradient of anisotropic apical myosin along the DV axis, reaching highest levels in lateral ectoderm and lowest levels in amnioserosa tissue at the dorsal pole.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to previously described accumulation of isotropic myosin in ventral regions (Martin et al., 2009), we observe a striking gradient of anisotropic apical myosin along the DV axis, reaching highest levels in lateral ectoderm and lowest levels in amnioserosa tissue at the dorsal pole.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the myosin distribution data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "2d7b23d8-a921-48ea-95f1-4b0a1c371c26",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C42",
+      "claim": "The modulation of myosin distribution is critical for the dynamics because the force driving the flow arises from the non-uniformity of the stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the force driving the flow arises from the non-uniformity of the stress, this modulation of myosin distribution is critical for the dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the continuum mechanics model and the in silico perturbation analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "918404f7-0532-4c09-b4b4-fec34b5ad11a",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C43",
+      "claim": "The local rate of strain is a result of the tissue-wide distribution of forces generated by the spatial non-uniformity of myosin.",
+      "claim_type": "EXPLICIT",
+      "source": "While local rate of cell intercalation is often interpreted in terms of local myosin distribution on cellular and sub-cellular scales, our model shows that the local rate of strain is a result of the tissue-wide distribution of forces generated by the spatial non-uniformity of myosin (mathematically described by the divergence of the myosin tensor) (Figure 4d, right panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the modeling results and in silico perturbations shown in Figure 4d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "7de9cf1f-15bc-4d7d-bce0-95a93837e0a1",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C44",
+      "claim": "The importance of spatial modulation suggests a novel role of the dorsal signaling pathway in generation of GBE flow.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of spatial modulation (Figure 4d) suggests a novel role of the dorsal signaling pathway in generation of GBE flow.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation based on the importance of spatial modulation demonstrated in the modeling.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "7e24c6fd-b8c0-49c0-842a-5f5745239995",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C45",
+      "claim": "In twist mutants, both the rate of increase as well as the peak myosin anisotropy are significantly reduced in the first 20 min of GBE flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, in twi mutants both the rate of increase as well as the peak myosin anisotropy are significantly reduced in the first 20 min of GBE flow (Figure 4c, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the comparison of myosin anisotropy in WT and twist mutants shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "c2df6ae1-21e6-4903-972d-b733059650bb",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C46",
+      "claim": "The reduced intercalation and strain rates observed in twist mutants has been previously reported.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced intercalation and strain rates observed in these mutants has been previously reported (Butler et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Butler et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "24a73d5a-b4cc-46c4-b592-64803de82d37",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C47",
+      "claim": "The model accounts for the reduced rate of strain in twist mutants in terms of the changes in spatial distribution and the reduced level of myosin anisotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model accounts for the reduced rate of strain in terms of the changes in spatial distribution and the reduced level of myosin anisotropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the modeling results in the context of twist mutants.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "6fb656b7-3519-4b88-8d33-3ab509b4ea0f",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C48",
+      "claim": "Elimination of twist expression in the ventral mesoderm may affect myosin anisotropy in the lateral ectoderm through mechanical feedback on myosin recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "This however brings up the question of how elimination of twi expression in the ventral mesoderm affects myosin anisotropy in the lateral ectoderm. We suggest that this effect may be due to mechanical feedback on myosin recruitment, which relates the later to local rate of strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis proposed to explain the non-local effects of twist mutation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "bc0471fd-1b63-4f4d-9bf8-7a5c09a394da",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C49",
+      "claim": "Through 'dynamic recruitment' effect, changes in the ventral region that modify global flow patterns can affect myosin distribution and anisotropy in the lateral region.",
+      "claim_type": "EXPLICIT",
+      "source": "Through this 'dynamic recruitment' effect (Noll et al., 2017; Fernandez-Gonzalez et al., 2009), changes in the ventral region that modify global flow patterns can affect myosin distribution and anisotropy in the lateral region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanism supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "b846bc3f-90ed-46ab-86a9-95c3e698e8a2",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C50",
+      "claim": "Local modification of the myosin pattern can produce not only a non-local perturbation of the flow, but also a non-local perturbation of myosin distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, local modification of the myosin pattern can produce not only a non-local perturbation of the flow, but also a non-local perturbation of myosin distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the proposed mechanical feedback mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "d4a3b335-035c-4537-9fbb-9e58ba56dc3d",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C51",
+      "claim": "The transition towards areal incompressibility at the onset of GBE-flow, together with reduced polarization kinetics and reduced strain rates observed in twist mutants, indicates that non-local consequences of stress generated largely in lateral ectoderm can account for the dorsal movement of the posterior midgut.",
+      "claim_type": "EXPLICIT",
+      "source": "The global nature of the flow is reinforced by the observed transition towards areal incompressibility at the onset of GBE-flow, which together with reduced polarization kinetics and reduced strain rates observed in twi mutants, indicates that non-local consequences of stress generated largely in lateral ectoderm can account for the dorsal movement of the posterior midgut.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation that integrates multiple observations from the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "8c8fcf31-d800-4b75-b6a9-354c19bc9d44",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C52",
+      "claim": "Morphogenetic flow is a global response to local forcing which arises from the spatial modulation of myosin density and anisotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our observations show that morphogenetic flow is a global response to local forcing which arises from the spatial modulation of myosin density and anisotropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the modeling and experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "9902917e-4cd8-4459-821d-ec1fa7019c4a",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C53",
+      "claim": "Myosin anisotropy is derived from the spatial patterns of developmental transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter is derived from the spatial patterns of developmental transcription factors, but we suggest may also involve mechanical feedback affecting recruitment of myosin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about pair-rule gene patterning and a speculative hypothesis about mechanical feedback.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "343f5e06-a755-445f-88e0-c0d9f9a1fac9",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C54",
+      "claim": "Mechanical feedback may affect recruitment of myosin.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter is derived from the spatial patterns of developmental transcription factors, but we suggest may also involve mechanical feedback affecting recruitment of myosin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis proposed in the discussion.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "b9f5ba85-04a5-4c0a-bd9b-5ce5c8fac98b",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "claim_id": "C55",
+      "claim": "The quantitative approach provides a framework for integrating the effect of local factors in the description of the global flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Our quantitative approach provides a framework for integrating the effect of local factors in the description of the global flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the contribution of the work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "bf666577-3590-4655-91c0-b36a7340685f",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Drosophila gastrulation exhibits three distinct flow field configurations: pre-VF flow with dorsal sink and ventral source without cell internalization, VF flow with reversed source/sink and mesoderm internalization, and GBE flow with saddles and vortices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C13 are well-supported by optical flow velocimetry data shown in Figure 1c-e and supplementary figures. The characterization of three topologically distinct flow patterns is clearly demonstrated with appropriate imaging methodology and quantitative flow field analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "387da747-6c75-4b37-a599-7bc86af90f3c",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Myosin distribution exhibits dynamic spatial patterns correlated with flow transitions: basal myosin shows DV asymmetry throughout, while apical myosin transitions from uniform to asymmetric with reversed orientation relative to basal pool.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C20 are supported by comprehensive myosin imaging data (Figure 1f-k, Figure 2a, and multiple supplementary figures). The temporal correlation between myosin pool changes and flow field transitions is well-documented with appropriate normalization and quantification methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "f295fbdf-c047-41fc-87da-de09e9175fce",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Apical myosin polarizes during convergent extension with anisotropy increasing from ~8 min and aligning with pair-rule gene expression boundaries, consistent with known patterning mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 are supported by the novel segmentation-free anisotropy detection method (Figure 2b-d) and validated against known biology from cited prior work. The alignment with pair-rule gene boundaries provides independent validation of the measurement approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "3e77e9f0-b7ca-4652-a507-c32bbb19645c",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A simple viscous continuum model with three global parameters (one time-dependent, two constant) predicts flow patterns with ~90% accuracy, with main discrepancies being minor spatial displacements of flow features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C25-C28 are well-supported by quantitative model-data comparisons in Figure 3. The fit residual analysis and visual comparisons demonstrate good agreement. However, the 90% accuracy metric could benefit from more explicit definition of how this percentage is calculated from the residual measure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "f0e688f4-ed98-4920-86d9-c5035ec10f8c",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The ratio of bulk to shear viscosity increases dramatically at GBE onset, indicating transition to effective incompressibility, temporally coinciding with cellularization completion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 are supported by the viscosity ratio analysis (Figure 3\u2014figure supplement 1b) and flow field topology changes. However, C31 is speculative about the mechanistic link to cellularization, appropriately presented as an 'intriguing possible explanation' rather than demonstrated causation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "42ce47f6-4f80-4f3c-a540-f236381ceeca",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Twist and bcd-nos-tsl mutants show distinct myosin distribution defects: twist mutants have reduced basal DV asymmetry and slower apical anisotropy increase; bnt mutants maintain basal asymmetry but lack apical anisotropy increase, consistent with loss of pair-rule patterning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C37 are supported by comprehensive mutant analysis (Figure 4b-c, Figure 4\u2014figure supplement 1). The observations are consistent with known genetic functions and provide validation of the model's predictive power across different genetic backgrounds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "96c21045-566b-4091-9dca-9706b0cc6405",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Spatial modulation of myosin distribution is critical for morphogenetic flow, with local myosin depletion having global effects through mechanical coupling, demonstrating non-locality of force transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C39-C40, C42-C43 are supported by in silico perturbation analysis (Figure 4d) showing loss of flow features when spatial modulation is removed. The continuum mechanics framework provides theoretical basis for non-local effects, though direct experimental perturbations would strengthen these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "4979e76b-52da-45bb-a0b9-db54c0c87da1",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The basal myosin pool forms an isotropic contractile network, with twist-dependent ventral depletion driving dorsal-ward flow in the pre-VF phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "C38 is a proposed model supported by analogy to in vitro systems (citations provided) but lacks direct structural evidence for network organization in vivo. C39 is better supported by the modeling and mutant analysis, but the mechanistic claim about network 'imbalance' driving flow remains somewhat inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "bfd988cc-be3f-4dbc-afbc-31c2faffebc8",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A DV gradient of anisotropic apical myosin exists, with highest levels in lateral ectoderm, suggesting a novel role for dorsal signaling in GBE flow generation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C41 is supported by myosin distribution data. However, C44's suggestion of a 'novel role' for dorsal signaling is speculative, appropriately qualified as a suggestion rather than demonstrated mechanism. The importance of spatial modulation is established, but the specific involvement of dorsal pathway requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "9160a032-ea41-4ea0-8108-4ab376ca9fda",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Twist mutants show reduced myosin anisotropy rate and peak during early GBE, with the model accounting for reduced strain rates through altered myosin spatial distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 are supported by quantitative comparison with prior work (Butler et al., 2009) and model predictions. The model successfully accounts for the mutant phenotype, though the interpretation relies on the validity of the continuum mechanics framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "1f08440e-b1a6-4254-a8a5-05ad00e2ea8b",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Twist expression in ventral mesoderm may affect lateral ectoderm myosin anisotropy through mechanical feedback on myosin recruitment, enabling non-local perturbations of both flow and myosin distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C48-C50 propose a mechanical feedback mechanism to explain non-autonomous effects of twist mutation. While conceptually plausible and supported by citations to prior work on dynamic recruitment, this remains speculative without direct experimental evidence for the proposed feedback mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "573e7ec2-a705-4aa1-a028-d220ac3cf2be",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The transition to incompressibility and observations in twist mutants indicate that stress from lateral ectoderm accounts for posterior midgut movement, demonstrating morphogenetic flow as a global response to spatially modulated myosin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 integrate multiple observations into a coherent framework. The conclusion is well-supported by the combination of modeling, WT analysis, and mutant phenotypes, though some aspects remain inferential about specific tissue interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "c5a3106f-6076-4df7-b71b-4d0b68d16bb1",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establish the biological context: embryonic tissue flow during gastrulation, Drosophila blastoderm structure, and association of morphogenetic processes with myosin II activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C8 are well-established facts in developmental biology, appropriately cited to prior work. These provide necessary context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    },
+    {
+      "id": "2b66493f-83b0-4897-bdf0-5334397a63e7",
+      "content_id": "1c509803-ed48-43a8-b2c8-5fdbcea5a51f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study proposes that myosin anisotropy derives from transcription factor patterns and potentially mechanical feedback, with the quantitative framework enabling integration of local and global factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "C53 combines established knowledge (transcription factor patterning) with speculation (mechanical feedback). C54 is explicitly speculative. C55 is a valid summary of the methodological contribution, though somewhat general. These represent interpretive framework rather than specific tested hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:33.591808Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fbbde568-88a5-4bc1-98c9-82beb44c5011",
+      "result_id": "bf666577-3590-4655-91c0-b36a7340685f"
+    },
+    {
+      "claim_id": "07aa3db2-8c60-455a-9b96-c83ba2200f9b",
+      "result_id": "bf666577-3590-4655-91c0-b36a7340685f"
+    },
+    {
+      "claim_id": "dbb2497e-913b-46d7-8604-bf3d9207f8ed",
+      "result_id": "bf666577-3590-4655-91c0-b36a7340685f"
+    },
+    {
+      "claim_id": "d81ad2ef-0402-4e09-ad33-6858aadef244",
+      "result_id": "bf666577-3590-4655-91c0-b36a7340685f"
+    },
+    {
+      "claim_id": "7ce4e028-bccd-45db-af7e-99dee7cabd9b",
+      "result_id": "bf666577-3590-4655-91c0-b36a7340685f"
+    },
+    {
+      "claim_id": "6011c314-646c-4e9b-840e-135e70b162de",
+      "result_id": "387da747-6c75-4b37-a599-7bc86af90f3c"
+    },
+    {
+      "claim_id": "262cf010-9d9f-4770-8111-df8cb3bdb483",
+      "result_id": "387da747-6c75-4b37-a599-7bc86af90f3c"
+    },
+    {
+      "claim_id": "fda53dd5-21d6-4ab4-8be1-bdce8b3e4214",
+      "result_id": "387da747-6c75-4b37-a599-7bc86af90f3c"
+    },
+    {
+      "claim_id": "b4600c7a-d566-427e-a201-42e44ca6aae8",
+      "result_id": "387da747-6c75-4b37-a599-7bc86af90f3c"
+    },
+    {
+      "claim_id": "64228cc8-5d05-4408-a226-c566327995d6",
+      "result_id": "387da747-6c75-4b37-a599-7bc86af90f3c"
+    },
+    {
+      "claim_id": "f13ad05e-6e46-4ac9-99c6-e41da014c398",
+      "result_id": "387da747-6c75-4b37-a599-7bc86af90f3c"
+    },
+    {
+      "claim_id": "1f52a967-76ec-4a7e-9bd2-afb1adcfa5cc",
+      "result_id": "387da747-6c75-4b37-a599-7bc86af90f3c"
+    },
+    {
+      "claim_id": "cba67d1c-421c-4efc-82a5-9a3b4bd06c81",
+      "result_id": "f295fbdf-c047-41fc-87da-de09e9175fce"
+    },
+    {
+      "claim_id": "7c9cb9a0-b9d4-4ab9-b667-a785f1933f2b",
+      "result_id": "f295fbdf-c047-41fc-87da-de09e9175fce"
+    },
+    {
+      "claim_id": "1d533d82-2fbf-433f-a93d-27eb9bff915b",
+      "result_id": "f295fbdf-c047-41fc-87da-de09e9175fce"
+    },
+    {
+      "claim_id": "8d9deacb-7807-4479-8ab9-74d2b32ecf35",
+      "result_id": "f295fbdf-c047-41fc-87da-de09e9175fce"
+    },
+    {
+      "claim_id": "12eb0a75-3f1e-4bc5-8bde-f3d4c17686bb",
+      "result_id": "3e77e9f0-b7ca-4652-a507-c32bbb19645c"
+    },
+    {
+      "claim_id": "6e50ea56-b681-4576-b2d4-c84f4e48ac67",
+      "result_id": "3e77e9f0-b7ca-4652-a507-c32bbb19645c"
+    },
+    {
+      "claim_id": "7e3cf2ba-8a2b-4294-a204-32407d047393",
+      "result_id": "3e77e9f0-b7ca-4652-a507-c32bbb19645c"
+    },
+    {
+      "claim_id": "b3b80f11-16ad-4a65-b6e4-fdd813a28fff",
+      "result_id": "3e77e9f0-b7ca-4652-a507-c32bbb19645c"
+    },
+    {
+      "claim_id": "1f70df0e-a36c-4a77-9671-19032a6c248e",
+      "result_id": "3e77e9f0-b7ca-4652-a507-c32bbb19645c"
+    },
+    {
+      "claim_id": "df497b8f-4a79-4944-b813-0147f47f512d",
+      "result_id": "f0e688f4-ed98-4920-86d9-c5035ec10f8c"
+    },
+    {
+      "claim_id": "c25f02d9-5123-4ea0-86b7-0941dbf5eb80",
+      "result_id": "f0e688f4-ed98-4920-86d9-c5035ec10f8c"
+    },
+    {
+      "claim_id": "6c425b70-cede-4401-94bc-dfdce5914607",
+      "result_id": "f0e688f4-ed98-4920-86d9-c5035ec10f8c"
+    },
+    {
+      "claim_id": "f60a8263-5fff-4bdc-9e90-896593e8e592",
+      "result_id": "42ce47f6-4f80-4f3c-a540-f236381ceeca"
+    },
+    {
+      "claim_id": "f2a0657c-5eaa-4f03-b197-4073c89eb4b5",
+      "result_id": "42ce47f6-4f80-4f3c-a540-f236381ceeca"
+    },
+    {
+      "claim_id": "87edea8f-58a6-41ee-8129-c32d9c883547",
+      "result_id": "42ce47f6-4f80-4f3c-a540-f236381ceeca"
+    },
+    {
+      "claim_id": "5e503718-bb08-457e-bcd7-43b8aff99f2c",
+      "result_id": "42ce47f6-4f80-4f3c-a540-f236381ceeca"
+    },
+    {
+      "claim_id": "3e72d306-5e17-40c2-a0be-0550e07bdc12",
+      "result_id": "42ce47f6-4f80-4f3c-a540-f236381ceeca"
+    },
+    {
+      "claim_id": "701258a8-a8d6-44a7-b782-c51561ba74a7",
+      "result_id": "42ce47f6-4f80-4f3c-a540-f236381ceeca"
+    },
+    {
+      "claim_id": "3a8e6cc7-5162-4238-a328-2a6df365712a",
+      "result_id": "96c21045-566b-4091-9dca-9706b0cc6405"
+    },
+    {
+      "claim_id": "98cf6866-89a5-458c-8d3b-47da4a5fb691",
+      "result_id": "96c21045-566b-4091-9dca-9706b0cc6405"
+    },
+    {
+      "claim_id": "a2d58c2c-d331-424f-96ad-8ff2483e4583",
+      "result_id": "96c21045-566b-4091-9dca-9706b0cc6405"
+    },
+    {
+      "claim_id": "94683b25-f099-42d0-9212-ce6f5cc0eb46",
+      "result_id": "96c21045-566b-4091-9dca-9706b0cc6405"
+    },
+    {
+      "claim_id": "2d7b23d8-a921-48ea-95f1-4b0a1c371c26",
+      "result_id": "96c21045-566b-4091-9dca-9706b0cc6405"
+    },
+    {
+      "claim_id": "918404f7-0532-4c09-b4b4-fec34b5ad11a",
+      "result_id": "96c21045-566b-4091-9dca-9706b0cc6405"
+    },
+    {
+      "claim_id": "372a1e86-cb4a-40e2-b759-62a023d9b4db",
+      "result_id": "4979e76b-52da-45bb-a0b9-db54c0c87da1"
+    },
+    {
+      "claim_id": "a2d58c2c-d331-424f-96ad-8ff2483e4583",
+      "result_id": "4979e76b-52da-45bb-a0b9-db54c0c87da1"
+    },
+    {
+      "claim_id": "13ecabde-1465-4e1e-92bf-0f0ec6825943",
+      "result_id": "bfd988cc-be3f-4dbc-afbc-31c2faffebc8"
+    },
+    {
+      "claim_id": "7de9cf1f-15bc-4d7d-bce0-95a93837e0a1",
+      "result_id": "bfd988cc-be3f-4dbc-afbc-31c2faffebc8"
+    },
+    {
+      "claim_id": "7e24c6fd-b8c0-49c0-842a-5f5745239995",
+      "result_id": "9160a032-ea41-4ea0-8108-4ab376ca9fda"
+    },
+    {
+      "claim_id": "c2df6ae1-21e6-4903-972d-b733059650bb",
+      "result_id": "9160a032-ea41-4ea0-8108-4ab376ca9fda"
+    },
+    {
+      "claim_id": "24a73d5a-b4cc-46c4-b592-64803de82d37",
+      "result_id": "9160a032-ea41-4ea0-8108-4ab376ca9fda"
+    },
+    {
+      "claim_id": "6fb656b7-3519-4b88-8d33-3ab509b4ea0f",
+      "result_id": "1f08440e-b1a6-4254-a8a5-05ad00e2ea8b"
+    },
+    {
+      "claim_id": "bc0471fd-1b63-4f4d-9bf8-7a5c09a394da",
+      "result_id": "1f08440e-b1a6-4254-a8a5-05ad00e2ea8b"
+    },
+    {
+      "claim_id": "b846bc3f-90ed-46ab-86a9-95c3e698e8a2",
+      "result_id": "1f08440e-b1a6-4254-a8a5-05ad00e2ea8b"
+    },
+    {
+      "claim_id": "d4a3b335-035c-4537-9fbb-9e58ba56dc3d",
+      "result_id": "573e7ec2-a705-4aa1-a028-d220ac3cf2be"
+    },
+    {
+      "claim_id": "8c8fcf31-d800-4b75-b6a9-354c19bc9d44",
+      "result_id": "573e7ec2-a705-4aa1-a028-d220ac3cf2be"
+    },
+    {
+      "claim_id": "259bedef-c878-44d3-a299-6403a9805bb7",
+      "result_id": "c5a3106f-6076-4df7-b71b-4d0b68d16bb1"
+    },
+    {
+      "claim_id": "6ee603da-078b-4048-adc3-b52a55c2beaa",
+      "result_id": "c5a3106f-6076-4df7-b71b-4d0b68d16bb1"
+    },
+    {
+      "claim_id": "6db73c50-1ee9-4e9b-896c-1227357dbf4e",
+      "result_id": "c5a3106f-6076-4df7-b71b-4d0b68d16bb1"
+    },
+    {
+      "claim_id": "8e56ed66-8539-4299-8a2f-3280c7d972f3",
+      "result_id": "c5a3106f-6076-4df7-b71b-4d0b68d16bb1"
+    },
+    {
+      "claim_id": "7cc53631-dbff-4428-90f1-c8d2e06f1107",
+      "result_id": "c5a3106f-6076-4df7-b71b-4d0b68d16bb1"
+    },
+    {
+      "claim_id": "9902917e-4cd8-4459-821d-ec1fa7019c4a",
+      "result_id": "2b66493f-83b0-4897-bdf0-5334397a63e7"
+    },
+    {
+      "claim_id": "343f5e06-a755-445f-88e0-c0d9f9a1fac9",
+      "result_id": "2b66493f-83b0-4897-bdf0-5334397a63e7"
+    },
+    {
+      "claim_id": "b9f5ba85-04a5-4c0a-bd9b-5ce5c8fac98b",
+      "result_id": "2b66493f-83b0-4897-bdf0-5334397a63e7"
+    }
+  ],
+  "comparisons": []
+}

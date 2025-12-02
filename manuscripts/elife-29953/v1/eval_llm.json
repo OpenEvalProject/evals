@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "CDK phosphorylates RAD9 at Thr292 both in vitro and in vivo. In vitro kinase assays demonstrate that recombinant CDK2-CyclinA2 phosphorylates RAD9 at Thr292, and in vivo experiments show that this phosphorylation is diminished by CDK inhibitor roscovitine but not by CDK1-specific inhibitor RO-3306, suggesting multiple CDKs can phosphorylate this site. The phosphorylation occurs weakly from mid S phase and strongly at G2/M transition, correlating with CDK activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C9 provide converging evidence from multiple experimental approaches. In vitro kinase assays (C6) directly demonstrate CDK2-CyclinA2 phosphorylates Thr292, pharmacological inhibition studies (C7) confirm CDK-dependence in cells, and cell cycle analysis (C9) shows appropriate temporal regulation. The inference that any CDK can phosphorylate Thr292 (C8) is reasonably supported by the differential effects of general versus specific CDK inhibitors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Cells expressing phosphorylation-defective T292A RAD9 mutant exhibit enhanced checkpoint activation and delayed cell cycle progression under replication stress. T292A-expressing cells show delayed mitotic commitment, increased chromatin-bound RAD17 and phosphorylated CHK1, persistent chromatin association of mutant RAD9 under HU treatment, increased S-phase population, and reduced DNA synthesis (60-70% of wild-type) when treated with 0.2 mM hydroxyurea.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 collectively demonstrate that preventing CDK phosphorylation at Thr292 enhances checkpoint signaling. Multiple complementary assays (flow cytometry, chromatin fractionation, EdU incorporation) consistently show increased checkpoint activation and reduced S-phase progression. The phenotypes are specific to the T292A mutation and observed under appropriate stress conditions (HU treatment).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Phosphorylation of RAD9 at Thr292 creates a binding site for PLK1 through its polo-box domain (PBD). Yeast two-hybrid assays show PLK1 PBD specifically binds RAD9 C-terminus in a Thr292-dependent manner. In vitro pull-down experiments demonstrate PLK1 co-precipitates with GST-RAD9 only when CDK2-cyclinA2 is present. Peptide competition assays show pThr292-containing peptides specifically compete for PLK1 binding and activate PLK1 kinase activity. Co-immunoprecipitation experiments confirm PLK1 interaction with wild-type but not T292A RAD9 in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C15-C17, C19-C22 provide robust evidence from multiple orthogonal approaches (yeast two-hybrid, in vitro pull-downs, peptide competition, co-IP) demonstrating that pThr292 creates a PLK1 binding site. The consistency across in vitro and in vivo systems, along with the specificity demonstrated by T292A mutation and peptide competition, strongly supports this phosphorylation-dependent interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C24",
+      "C25",
+      "C28",
+      "C29"
+    ],
+    "result": "PLK1 phosphorylates RAD9 at Thr313 and Ser326 following CDK-dependent priming phosphorylation at Thr292. LC-MS/MS analysis identifies pThr313 and pSer326 in GST-RAD9 incubated with both CDK2-CycA2 and PLK1. These sites match the PLK1 consensus sequence (hydrophobic residues following Thr/Ser). Western blotting with phospho-specific antibodies confirms that both pThr313 and pSer326 signals depend on CDK2-cyclinA2 pretreatment and are greatly reduced when T292A mutant is used as substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C23-C25, C28-C29 provide strong evidence from mass spectrometry and phospho-specific antibodies that PLK1 phosphorylates Thr313 and Ser326. The requirement for CDK priming (C28, C29) and the reduction with T292A substrate establish the hierarchical phosphorylation cascade. The consensus sequence analysis (C24) provides mechanistic support for PLK1 specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C33",
+      "C34"
+    ],
+    "result": "PLK1 mediates phosphorylation of RAD9 Thr313 in cells, as demonstrated by loss of pThr313 signal when kinase-dead PLK1 is expressed with PLK1 inhibitor treatment. The pThr313 signal increases slightly upon UV irradiation and is diminished by BI2536 treatment or T292A mutation, confirming PLK1-dependence and requirement for CDK priming in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C33-C34 demonstrate PLK1-dependent phosphorylation of Thr313 in cells using complementary approaches (kinase-dead mutant, pharmacological inhibition, priming site mutation). The experiments appropriately control for specificity and show the expected dependencies on both PLK1 activity and CDK priming.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C35",
+      "C36"
+    ],
+    "result": "Ser326 can be phosphorylated by kinases other than PLK1. While pSer326 signal is detected when PLK1 is expressed, it decreases only slightly when PLK1 is inhibited, and no decrease is observed in T292A-mutated RAD9. The pSer326 signal increases upon UV irradiation with only slight decrease upon BI2536 treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C35-C36 provide evidence that Ser326 phosphorylation is not exclusively PLK1-dependent. The persistence of pSer326 signal under PLK1 inhibition and in T292A mutant, contrasting with the behavior of pThr313, supports the conclusion that other kinases can phosphorylate this site. This is a reasonable interpretation of the differential responses to PLK1 inhibition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "PLK1-dependent phosphorylation of RAD9 at Thr313 suppresses checkpoint activation by controlling chromatin association of checkpoint proteins. Cells expressing T313A RAD9 show increased accumulation of mutant RAD9, phosphorylated CHK1, TopBP1, and CLASPIN in chromatin fractions upon HU treatment. PLK1 inhibition by BI2536 similarly causes accumulation of endogenous RAD9 and checkpoint mediators on chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C38-C42 demonstrate that PLK1 phosphorylation regulates checkpoint protein chromatin association through chromatin fractionation assays. The consistency between T313A mutant phenotype and PLK1 inhibitor effects, along with the accumulation of multiple checkpoint components (RAD9, CHK1, TopBP1, CLASPIN), provides strong evidence for checkpoint suppression by PLK1-dependent phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "CDK-PLK1-dependent phosphorylations of RAD9 maintain DNA synthesis rates during replication stress. Cells expressing T313A RAD9 show significantly reduced EdU incorporation (similar to T292A) compared to wild-type under HU treatment, while S326A shows no reduction. This phenotype is enhanced by siRNA knockdown of endogenous RAD9, confirmed in telomerase-positive HEK293A cells, and observed with aphidicolin but not MMC treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C43-C47 demonstrate that Thr313 phosphorylation (but not Ser326) is required for maintaining DNA synthesis under replication stress. The EdU incorporation assays are consistent across multiple cell lines and stress conditions. The siRNA enhancement (C45) and confirmation in different cell types (C46) strengthen the conclusion, though the differential effects of different genotoxic agents (C47) suggest some specificity in the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C83",
+      "C84"
+    ],
+    "result": "DNA combing analysis reveals that T313A RAD9-expressing cells have slower replication fork velocity under non-stressed conditions (0.66 vs 0.85 kb/min) with shorter inter-origin distance (107 vs 131 kb), but similar fork velocities under HU stress (both 0.37 kb/min) with slightly longer IOD (69 vs 61 kb, p=0.058). This indicates the slower S-phase progression in T313A cells under stress is not caused by reduced fork velocity, and suggests moderate checkpoint activation even during normal cell cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52, C83-C84 provide DNA fiber/combing data showing differential effects under stressed versus non-stressed conditions. The finding that fork velocities are similar under HU treatment (C51, C83) but different without stress (C48-C49) is internally consistent and supports the interpretation that checkpoint activation affects origin firing rather than fork progression under stress. The marginal significance of IOD difference under HU (p=0.058, C52) is appropriately noted as uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Cells expressing phosphorylation-defective RAD9 mutants (T292A or T313A) exhibit reduced growth and viability under genotoxic stress. These cells show increased co-immunoprecipitation with CLASPIN upon HU treatment, slower growth rates in the presence of HU (in both U2OS and HEK293A cells), and significantly decreased colony-forming efficiency upon exposure to 0.2 mM HU.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 demonstrate functional consequences of preventing CDK-PLK1 phosphorylation using multiple assays (co-IP, growth curves, colony formation). The consistency across different cell lines and assays, along with the increased CLASPIN association suggesting enhanced checkpoint complex formation, supports the conclusion that these phosphorylations are required for cell proliferation under stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "The Thr313 phosphorylation site region is conserved among vertebrate RAD9A proteins but absent in RAD9B paralogues. Sequence alignment shows conservation of the PLK1 phosphorylation sites in RAD9A across vertebrate species, while RAD9B proteins lack these sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 present sequence analysis data showing evolutionary conservation of the PLK1 sites in RAD9A but not RAD9B. This is straightforward comparative sequence analysis that supports the functional importance of these sites in RAD9A and suggests functional divergence between paralogues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C37"
+    ],
+    "result": "The pThr292 signal shows differential regulation under different stress conditions. It increases in BI2536-treated cells, implying CDK-dependent phosphorylation occurs upstream of PLK1-dependent phosphorylation. In synchronized cells, pThr292 is somewhat decreased by HU exposure while total RAD9, pThr313, and pSer326 remain relatively unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C37 describe the behavior of pThr292 under different conditions. The increase with PLK1 inhibition (C32) logically supports the hierarchical model where CDK acts upstream of PLK1. The decrease under HU in synchronized cells (C37) is a descriptive observation that is appropriately qualified as 'somewhat decreased.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors speculate that RAD9's DNA damage sensor function is the target of PLK1 regulation, proposing that PLK1-dependent phosphorylation minimizes RAD9 binding at stalled forks by providing dynamism to the 9-1-1 complex, thereby reducing active checkpoint complexes. They note the PLK1 phosphorylation region is close to the RPA-binding region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C77 are explicitly speculative interpretations of the mechanism. While the speculation is reasonable given the observed increased chromatin association of phosphorylation-defective mutants and the proximity to the RPA-binding region (C77), these are proposed models rather than directly demonstrated mechanisms. The authors appropriately present these as speculations requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "The authors propose that PLK1 may raise the threshold for checkpoint activation during S-phase by suppressing the activation step rather than diminishing activated checkpoint processes. This would represent a novel DNA damage tolerance mechanism to facilitate cell proliferation under stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C86 present speculative mechanistic models to explain the observed phenotypes. While consistent with the data showing enhanced checkpoint activation in phosphorylation-defective mutants, these are interpretive frameworks rather than directly tested hypotheses. The distinction between suppressing activation versus diminishing active checkpoints requires additional experimentation to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors conclude that CDK and PLK1 target RAD9 to minimize checkpoint response and antagonize DNA damage detection, playing a crucial role in promoting cell proliferation under genotoxic stress. This represents a mechanism whereby cells can tolerate genotoxic stress and proceed with proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92, C95-C96 are summary conclusions integrating all the experimental findings. These conclusions are well-supported by the collective evidence showing: (1) CDK phosphorylates Thr292, (2) this creates PLK1 binding site, (3) PLK1 phosphorylates Thr313, (4) these phosphorylations reduce checkpoint activation, (5) loss of phosphorylation increases checkpoint signaling and reduces proliferation under stress. The mechanistic chain is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The manuscript provides extensive background on DNA damage checkpoints, CDK function, PLK1 biology, checkpoint adaptation, and replication control. This includes established knowledge about checkpoint mechanisms, CDK's role in cell cycle control, PLK1's function in checkpoint override and S-phase, PBD substrate recognition, 9-1-1 complex function, and mechanisms of S-phase progression control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C74, C78-C82 represent background knowledge and literature context appropriately cited from established work. These provide the conceptual framework for the study and are supported by appropriate citations to primary literature. This background is necessary for contextualizing the novel findings but does not constitute new results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C93"
+    ],
+    "result": "The discussion contextualizes findings within broader PLK1 biology, noting that PLK1 also promotes DNA replication by phosphorylating Orc2, is involved in chemotherapy resistance, is ectopically expressed in tumors, and employs multiple targets to drive S-phase progression under stress. The authors conclude that a complex balancing mechanism coordinates proliferation and stress response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91, C93 integrate the current findings with existing literature on PLK1 function in cancer and DNA metabolism. These are appropriately cited contextual claims that position the work within the broader field. The synthesis (C89, C93) represents reasonable interpretation connecting the current findings to established PLK1 biology.",
+    "result_type": "MINOR"
+  }
+]

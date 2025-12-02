@@ -1,0 +1,1882 @@
+{
+  "submission": {
+    "id": "e2485603-b356-4c34-8b57-7aa3babdd74d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:40:59.306034Z",
+    "updated_at": "2025-12-01T20:40:59.306034Z"
+  },
+  "content": [
+    {
+      "id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "submission_id": "e2485603-b356-4c34-8b57-7aa3babdd74d",
+      "content_type": "manuscript",
+      "content_text": "# Impairments in laterodorsal tegmentum to VTA projections underlie glucocorticoid-triggered reward deficits\n\n## Authors\n\n- B\u00e1rbara Coimbra<sup>1</sup> ([ORCID: 0000-0003-1737-2268](https://orcid.org/0000-0003-1737-2268))\n- Carina Soares-Cunha<sup>1</sup>\n- S\u00f3nia Borges<sup>1</sup>\n- Nivaldo AP Vasconcelos<sup>1</sup>\n- Nuno Sousa<sup>1</sup> \u2020\n- Ana Jo\u00e3o Rodrigues<sup>1</sup> ([ORCID: 0000-0003-1968-7968](https://orcid.org/0000-0003-1968-7968)) \u2020\n\n### Affiliations\n\n1. Life and Health Sciences Research Institute (ICVS), School of Medicine University of Minho Braga Portugal\n2. ICVS/3B\u2019s\u2013PT Government Associate Laboratory Braga/Guimar\u00e3es Portugal\n\n\u2020 Corresponding author\n\n## Abstract\n\nVentral tegmental area (VTA) activity is critical for reward/reinforcement and is tightly modulated by the laterodorsal tegmentum (LDT). In utero exposure to glucocorticoids (iuGC) triggers prominent motivation deficits but nothing is known about the impact of this exposure in the LDT-VTA circuit. We show that iuGC-rats have long-lasting changes in cholinergic markers in the LDT, together with a decrease in LDT basal neuronal activity. Interestingly, upon LDT stimulation, iuGC animals present a decrease in the magnitude of excitation and an increase in VTA inhibition, as a result of a shift in the type of cells that respond to the stimulus. In agreement with LDT-VTA dysfunction, we show that iuGC animals present motivational deficits that are rescued by selective optogenetic activation of this pathway. Importantly, we also show that LDT-VTA optogenetic stimulation is reinforcing, and that iuGC animals are more susceptible to the reinforcing properties of LDT-VTA stimulation.\n\n## Introduction\n\nThe ventral tegmental area (VTA) is an heterogeneous brain region containing distinctive neuronal populations essential for the expression of motivated behaviors and reinforcement (Berridge and Robinson, 1998; Wise, 2004; Bayer and Glimcher, 2005; Fields et al., 2007; Berridge, 2007; van Zessen et al., 2012). The VTA comprises dopaminergic (~65%), GABAergic (~30%), and glutamatergic neurons (~5%) (Nair-Roberts et al., 2008; Yamaguchi et al., 2011) that receive inputs from diverse brain regions, including the laterodorsal tegmentum (LDT) (Woolf and Butcher, 1986; Cornwall et al., 1990; Oakman et al., 1995; Oakman et al., 1999).\n\nSeveral studies have shown that exposure to unexpected rewards, or cues that predict rewards, can activate VTA dopaminergic neurons culminating in the release of dopamine in the nucleus accumbens (NAc) (Roitman et al., 2004; Stuber et al., 2005; Stuber et al., 2008; Schultz et al., 1997; Bromberg-Martin et al., 2010). Importantly, this activity is tightly modulated by cholinergic projections (Omelchenko and Sesack, 2005; Omelchenko and Sesack, 2006), with an additional contribution of glutamatergic projections, arising from the LDT (Cornwall et al., 1990; Oakman et al., 1999; Lammel et al., 2012). This input is vital for the activity of dopaminergic cells in the VTA, facilitating dopamine-related behaviors involved in reward signaling or encoding reward prediction signals (Lodge and Grace, 2006). In agreement, recent studies have shown that optogenetic stimulation of LDT neurons that project to the VTA enhances conditioned place preference (Lammel et al., 2012) and operant responses in rodents (Steidl and Veverka, 2015).\n\nNotably, different labs have shown that the mesolimbic system is particularly vulnerable to the effects of prenatal stress/high levels of glucocorticoids (GCs) (Matthews, 2000; Boksa and El-Khodor, 2003; McArthur et al., 2005; Le\u00e3o et al., 2007; Rodrigues et al., 2011; Borges et al., 2013a; Soares-Cunha et al., 2014). These changes may increase the risk to develop different neuropsychiatric disorders in adulthood, namely depression, anxiety and addiction (Seckl, 2008; Rodrigues et al., 2012). Surprisingly, very few studies have focused on the impact of stress/GCs in the cholinergic system. This is particularly intriguing because GCs can induce acetylcholine release (Finkelstein et al., 1985; Gilad et al., 1985; Imperato et al., 1989) and bind to GC-responsive elements of cholinergic enzymes, namely choline acetyltransferase (ChAT) and acetylcholine esterase (AChE) to control their expression (Berse and Blusztajn, 1997). In accordance, we have previously shown that prenatal GC exposure induces a long-lasting hyperanxious state associated with an increase in the recruitment of cholinergic cells from the LDT (Borges et al., 2013b), suggesting that GCs are able to program the LDT, which prompted us to evaluate the impact of prenatal GC in the LDT-VTA circuitry and its impact in reward-related behaviors.\n\n## Results\n\n### Sustained cholinergic dysfunction in iuGC animals\n\nPrevious data from our team suggested that LDT cholinergic cells were differentially recruited in response to an adverse stimulus (Borges et al., 2013b) in a model of in utero GC (iuGC) exposure at gestation days 18 and 19 (Blaha and Winn, 1993). Considering this, we first evaluated the impact of GCs on the cholinergic circuitry of iuGC animals. We quantified ChAT+ cells in the LDT of 3, 30 and 90 days old animals (Figure 1a\u2013c) and\u00a0observed an effect of iuGC treatment (Two-way ANOVA; F(1,25) = 19.31, p=0.0002). iuGC animals had a significant increase in the density of the cholinergic population of the LDT at 30 days of age (post-hoc Bonferroni; CTR(30 days) vs. iuGC(30 days): t(25) = 2.616, p=0.0446) that persisted until adulthood (post-hoc Bonferroni; CTR(90 days) vs. iuGC(90 days): t(25) = 3.971, p=0.0016). Other brain regions containing cholinergic neurons such as the nucleus basalis of Meynert or the NAc remained unaltered (Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/25843/elife-25843-fig1-v1.jpg)\n\n**Figure 1.:** (a) Schematic representation of the LDT. (b) Coronal section of the LDT showing ChAT immunohistochemistry. (c) iuGC animals present increased number of ChAT+ cells in the\u00a0LDT at postnatal day 30 and 90. (d) Real-time PCR analysis revealed that ChAT mRNA levels are increased in the LDT of iuGC animals from postnatal day 3. (e) Conversely, AChE mRNA levels are decreased at postnatal day 90 (nCTR\u00a0=\u00a04; niuGC\u00a0=\u00a05). (f) Representative immunoblot of ChAT\u00a0and AChE in the LDT of 3, 30 and 90 days old animals. (g) Protein quantification confirmed the upregulation of ChAT and (h) downregulation of AChE in the LDT from postnatal day 3 until adulthood (nCTR\u00a0=\u00a04; niuGC\u00a0=\u00a05). Data represented as mean\u00a0\u00b1s.e.m. *p<0.05, **p<0.001, ***p<0.0001. Scale bars in b: 100 \u00b5m and inset - 50 \u00b5m. Additional data is depicted in Figure 1\u2014figure supplements 1, 2 and 3.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25843/elife-25843-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Schematic representation of the nucleus basalis of Meynert (n. basalis) and (d) nucleus accumbens (NAc). (b-d; f\u2013h) No changes between groups were observed in the number of ChAT+ cells. Data represented as mean\u00a0\u00b1s.e.m.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/25843/elife-25843-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a\u2013c) Real-time PCR analysis showed no changes in the levels of VAChT in the LDT for all ages. Data represented as mean\u00a0\u00b1s.e.m.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/25843/elife-25843-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Real-time PCR analysis showed no changes in the mRNA levels of (a) EAAC1, (b) GAD1, (c) GAD2 and (d) GR in the LDT for all ages. (e) Representative immunoblot of EAAC1, GAD67/GAD65, GR and loading controls in the LDT of 3, 30 and 90 days old animals. Band quantification of (f) EAAC1, (g) GAD67\u00a0+GAD65, (h) GR in the LDT of 3, 30 and 90 days old animals. (nCTR\u00a0=\u00a04; niuGC\u00a0=\u00a05). Data represented as mean\u00a0\u00b1s.e.m.\n\nWe next evaluated gene and protein expression levels of ChAT and AChE in the LDT (Figure 1d\u2013h). We found a significant effect of iuGC treatment in ChAT (Two-way ANOVA; F(1,24) = 26.27, p<0.0001) and AChE (Two-way ANOVA; F(1,23) = 15.71, p=0.0006) gene expression. ChAT gene expression levels were increased at 3 and 30 days of age in iuGC animals (Figure 1d; post-hoc Bonferroni; CTR(3 days) vs. iuGC(3 days): t(24) = 3.383, p=0.0074; CTR(30 days) vs. iuGC(30 days): t(24) = 3.053, p=0.0164; CTR(90 days) vs. iuGC(90 days): t(24) = 2.494, p=0.059). Decreased AChE levels were found in adult iuGC animals (Figure 1e; post-hoc Bonferroni; CTR(3 days) vs. iuGC(3 days): t(23) = 1.24, p=0.6827; CTR(30 days) vs. iuGC(30 days): t(23) = 2.244, p=0.1043; CTR(90 days) vs. iuGC(90 days): t(23) = 3.298, p=0.0094). We also evaluated the levels of another cholinergic marker, the vesicular acetylcholine transporter (VAChT) and found that mRNA levels were unchanged between groups in the LDT (Figure 1\u2014figure supplement 2).\n\nTwo-way ANOVA showed a significant effect of iuGC treatment in ChAT (F(1,23) = 32.82, p<0.0001) and AChE protein expression (F(1,18) = 425.08, p<0.0001). Western blot analysis confirmed the upregulation of ChAT (Figure 1f\u2013g; post-hoc Bonferroni; CTR(3 days) vs. iuGC(3 days): t(23) = 4.401, p=0.0006; CTR(30 days) vs. iuGC(30 days): t(23) = 2.762, p=0.0333; CTR(90 days) vs. iuGC(90 days): t(23) = 2.712, p=0.0373); and downregulation of AChE in the iuGC group at all ages tested (Figure 1f and h; post-hoc Bonferroni; CTR(3 days) vs. iuGC(3 days): t(18) = 4.73, p=0.0005; CTR(30 days) vs. iuGC(30 days): t(18) = 3.157, p=0.0164; post-hoc Bonferroni CTR(90 days) vs. iuGC(90 days): t(18) = 3.349, p=0.0107).\n\nConsidering the heterogeneous nature of LDT inputs to the VTA, we also assessed the impact of iuGC exposure on glutamatergic and GABAergic markers (Figure 1\u2014figure supplement 3a\u2013c,e\u2013g). Gene and protein expression levels of glutamate transporter EAAC1 and GAD1/67\u00a0+\u00a0GAD2/65 were not significantly affected by iuGC exposure.\n\nWe also decided to evaluate the expression levels of glucocorticoid receptor (GR) since early life adversity has been shown to change GR epigenetic status. We found no differences between groups regarding GR expression (Figure 1\u2014figure supplement 3d,h).\n\n### iuGC treatment impairs the LDT-VTA circuitry\n\nPrevious work from our group showed that iuGC animals presented a VTA-NAc hypodopaminergic state (Le\u00e3o et al., 2007; Borges et al., 2013a; Soares-Cunha et al., 2014). Since the LDT innervates the VTA and can influence NAc dopamine release (Blaha and Winn, 1993; Blaha et al., 1996; Forster and Blaha, 2000; Forster et al., 2002; Miller et al., 2002; Forster and Blaha, 2003), we decided to characterize the LDT-VTA circuit using in vivo single cell electrophysiology in anesthetized animals (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/25843/elife-25843-fig2-v1.jpg)\n\n**Figure 2.:** (a) Schematic representation of the in vivo single-cell electrophysiological recording experiments and electrode placement in the LDT in anesthetized animals. (b) iuGC animals present decreased basal activity of LDT neurons in comparison to CTR (nLDT-CTR\u00a0=\u00a036 cells; nLDT-iuGC\u00a0=\u00a094 cells). (c) Schematic representation of the in vivo single-cell electrophysiological recording experiments in the VTA with electric stimulation performed in the\u00a0LDT; and recording electrode placement. (d) The basal activity of the VTA is similar between groups (nVTA-CTR\u00a0=\u00a040 cells; nVTA-iuGC=32 cells). (e) Electrical stimulation of the LDT (0.5 Hz) induces excitatory and inhibitory responses in VTA neurons. Pie plots represent the percentage of excitatory, inhibitory and no responses of VTA neurons. (e\u2013g) In CTR animals, 50% of neurons present an excitatory response (70% pDAergic, 20% pGABAergic)\u00a0and 30% present an inhibitory response (21% pDAergic, 50% pGABAergic). iuGC group shows a different profile, with 31% of recorded cells presenting an excitatory response (30% pDAergic, 60% pGABAergic) versus 44% with inhibitory response (57% pDAergic, 29% pGABAergic). (f) Representative examples of rat VTA pDAergic and pGABAergic neuronal waveforms. (g) Firing rate and waveform duration were used to classify single units into 3 types of neurons. (h) Percentage of each putative neuronal population presenting excitation, inhibition or with no response to LDT stimulation. There is a shift in the percentage of putative DAergic and GABAergic neurons presenting excitatory and inhibitory responses. Numbers in bars represent number of cells in each category. (i, m) Peristimulus time histograms (PSTHs) show LDT-evoked responses of VTA dopamine neurons; (i) excitation; (m) inhibition. (j) VTA neurons that display an excitatory profile in response to LDT electrical stimulus present increased latency to fire in iuGC animals. (k) The magnitude and (l) duration of response of VTA neurons is reduced in iuGC animals. (n) VTA neurons that display an inhibitory response in response to LDT electrical stimulus do not show differences in the latency to fire in both groups. (o) The magnitude of response of inhibited neurons of the VTA is increased in iuGC animals, with no differences in (p) the duration of inhibition in VTA neurons upon LDT stimulation. pDAergic: putative dopaminergic neurons; pGABAergic: putative GABAergic neurons. Data is represented as mean\u00a0\u00b1s.e.m. *p<0.05, **p<0.001, ***p<0.0001.\n\niuGC treatment significantly decreased the spontaneous activity of LDT neurons (Figure 2a\u2013b; t(128) = 4.674, p<0.0001, total number of cells: CTR\u00a0=\u00a036, iuGC\u00a0=\u00a094; nCTR\u00a0=\u00a08, niuGC\u00a0=\u00a011 animals). No differences were found in the basal activity of VTA (Figure 2c\u2013d; t(70) = 0.0576, p=0.9542, total number of cells: CTR\u00a0=\u00a040, iuGC\u00a0=\u00a032; animals: CTR\u00a0=\u00a08, iuGC\u00a0=\u00a011).\n\nElectrical stimulation at 0.5 Hz of the LDT evoked both excitatory and inhibitory responses in VTA neurons in contrasting percentages (Figure 2e; CTR: 50% excitatory and 30% inhibitory; iuGC: 31% excitatory and 44% inhibitory). We also used defined criteria based on extracellular waveforms and firing rate (Ungless et al., 2004; Ungless and Grace, 2012; Totah et al., 2013) to divide recorded cells into putative DAergic (pDAergic) or GABAergic (pGABAergic) neurons (Figure 2f\u2013h). Cells that did not match these criteria were considered to be \u2018other\u2019 types of neurons.\n\nInterestingly, iuGC animals present a shift in the type of neurons that present excitatory responses, with an increase in pGABAergic neurons and concomitant decrease in pDAergic neurons. Excitatory responses were observed in 70% of pDAergic and 20% of pGABAergic neurons in CTR animals versus 30% of pDAergic and 60% of pGABAergic neurons in iuGC animals.\n\nRegarding inhibition, the iuGC group presented an increase in pDAergic neurons together with a decrease in pGABAergic neurons (Figure 2h). Briefly, inhibitory responses were observed in 21% of pDAergic and 50% of pGABAergic neurons in CTR animals versus 57% of pDAergic and 28% of pGABAergic neurons in iuGC animals.\n\nThe onset of excitation was significantly increased in iuGC group in comparison to control group (Figure 2j; CTR: 0.45\u00a0\u00b1\u00a00.114 ms vs. iuGC: 9.33\u00a0\u00b1\u00a02.49 ms; t(30) = 4.637, p<0.0001). Interestingly, iuGC treatment reduced the magnitude and duration of the excitatory response (Figure 2k\u2013l; magnitude: t(30) = 3.723, p=0.0008; duration: t(30) = 2.196, p=0.0360).\n\nLDT stimulation did not affect the latency of inhibition, although there was a trend for increased latency in iuGC animals (Figure 2n; CTR: 11.58\u00a0\u00b1\u00a03.175 ms vs. iuGC: 18.61\u00a0\u00b1\u00a04.979 ms; t(28) = 1.057, p=0.2997). Also, the duration of response was not affected (Figure 2p; t(28) = 1.510, p=0.1422). However, the response magnitude of inhibitory responses in the VTA evoked by LDT electrical stimulation was significantly higher in iuGC animals (Figure 2o; t(28) = 2.905, p=0.0071).\n\nAltogether, this data demonstrated an imbalance in the excitatory and inhibitory inputs to the VTA when electrically stimulating the LDT.\n\n### Optogenetic activation of LDT terminals in the VTA elicits distinct responses in control and iuGC animals\n\nWe next used a combined viral approach to specifically modulate LDT direct inputs to the VTA and exclude the effects of indirect activation of other regions to where LDT projects to. We decided to activate all types of LDT-VTA inputs (and not only cholinergic) because we observed an effect of iuGC exposure in both excitatory and inhibitory VTA responses elicited by LDT activation.\n\nTo do so, we injected a viral vector containing a WGA\u2013Cre fusion construct (AAV5\u2013EF1a\u2013WGA\u2013Cre\u2013mCherry) in the VTA, and a cre-dependent ChR2 vector in the LDT (AAV5-EF1a-DIO-hChR2-eYFP). The WGA\u2013Cre fusion protein is retrogradely transported (Gradinaru et al., 2010), inducing the expression of cre-dependent ChR2-YFP only in LDT neurons that directly project to the VTA (Figure 3a\u2013c). Four weeks post-injection, we observed YFP staining in axonal terminals of LDT neurons in the VTA (Figure 3b) and in cell bodies in the LDT (Figure 3c).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/25843/elife-25843-fig3-v1.jpg)\n\n**Figure 3.:** (a) Strategy used for optogenetic activation of LDT projecting neurons in the VTA. An AAV5\u2013EF1a\u2013WGA\u2013Cre\u2013mCherry virus construct was injected unilaterally in the VTA, and a cre-dependent ChR2 vector (AAV5-EF1a-DIO-hChR2-eYFP) in the LDT. WGA-Cre will retrogradely migrate and induce the expression of ChR2 in LDT neurons that directly project to the VTA. (b) Representative image of immunofluorescence for GFP showing LDT axon terminals in the VTA and (c) cell bodies in the LDT; scale bar: 200 \u00b5m. (d) Optogenetic stimulation of LDT terminals in the VTA (blue rectangle; 30 pulses of 15 ms at 20 Hz) increases the firing rate of VTA neurons in both groups (nCTR\u00a0=\u00a072 cells; niuGC\u00a0=\u00a082 cells). (e) In CTR, upon LDT terminal stimulation, 48% of recorded VTA cells present an increase in firing rate (of those 69% pDAergic, 17% pGABAergic), 21% decrease activity (0% pDAergic, 87% pGABAergic) and 31% presented no change. In iuGC animals, upon LDT terminal stimulation, 44% of recorded VTA cells present an increase in firing rate (83% pDAergic; 11% GABAergic) 27% decrease activity (55% pGABAergic, 36% DAergic) and 29% presented no change. (f) Firing rate and waveform duration were used to classify single units into 3 types of neurons. (g) Percentage of each putative neuronal population presenting excitation, inhibition or with no response to LDT terminals optogenetic stimulation. Numbers in bars represent number of cells in each category. pDAergic: putative dopaminergic neurons; pGABAergic: putative GABAergic neurons. Data represented as mean\u00a0\u00b1s.e.m. ***p<0.001. Additional data is depicted in Figure 1\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25843/elife-25843-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Latency of neuronal response to LDT-VTA terminals optical stimulation (30 pulses of 15 ms at 20 Hz) from cells depicted in Figure 3. Data represented as mean\u00a0\u00b1s.e.m.\n\nWe performed in vivo single cell electrophysiology in the VTA while stimulating LDT terminals in this region, in order to activate the LDT-VTA circuit specifically. As depicted in Figure 3d, optogenetic stimulation of LDT terminals (30 pulses of 15 ms at 20 Hz) induced an increase in firing rate of VTA neurons (Figure 3d, post-hoc Bonferroni test CTR-ChR2: baseline vs. stimulus - t(118) = 5.883, p<0.0001, stimulus vs. post-stimulus - t(118) = 3.749, p=0.0008; iuGC-ChR2: baseline vs. stimulus - t(118) = 10.99, p<0.0001; stimulus vs. post-stimulus - t(118) = 10.88, p<0.0001), eliciting a response in 69% and 71% of recorded cells of CTR and iuGC animals, respectively (Figure 3e). Optic stimulation did not affect the latency of stimulus response for the groups (Figure 3\u2014figure supplement 1).\n\nIn CTR animals, 49% of cells presented increased firing rate upon stimulation, and of these, 69% were pDAergic, 17% pGABAergic and 14% were categorized as \u2018other\u2019 neuronal subtypes. Moreover, 87% of cells that presented inhibitory responses were pGABAergic neurons (Figure 3f\u2013g). In iuGC animals, 44% of cells presented increased firing rate upon stimulation, and the majority were pDAergic neurons (83%). Surprisingly, and clearly different from CTR animals, 55% of cells that presented inhibitory responses were pDAergic neurons and 36% were considered to be pGABAergic neurons (Figure 3g). Again, and in accordance with the electrical stimulation data, our optogenetic results suggest an imbalance in the excitatory and inhibitory inputs from the LDT to the VTA.\n\n### Activation of LDT terminals in the VTA rescues motivational deficits of iuGC animals\n\nSince the LDT-VTA circuitry has been described to contribute for positive reinforcement (Lammel et al., 2012; Steidl and Veverka, 2015; Lammel et al., 2011), we evaluated the motivational drive by testing willingness to work for food in a progressive ratio (PR) schedule\u00a0of reinforcement. This test measures the breakpoint or maximum effort rats are willing to perform for an outcome, when the demand grows progressively over a session.\n\nTraining was similar between CTR, CTR-YFP, CTR-ChR2 and iuGC-ChR2 groups across days either in the continuous reinforcement (CRF) or fixed ratio (FR) sessions (Figure 4\u2014figure supplement 1a\u2013b). In the test day, iuGC-ChR2 rats presented a significant decrease in breakpoint in comparison to CTR, CTR-YFP and CTR-ChR2 animals (Figure 4a; 48,9% decrease; post-hoc Bonferroni test CTR vs. iuGC-ChR2: t(68) = 2.882, p=0.0317; CTR-YFP vs. iuGC-ChR2: t(68) = 2.78, p=0.0421; CTR-ChR2 vs. iuGC-ChR2: t(68) = 4.141, p=0.0006), with no differences in the number of pellets earned during the test (Figure 4\u2014figure supplement 1c).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/25843/elife-25843-fig4-v1.jpg)\n\n**Figure 4.:** (a) Optogenetic stimulation of LDT terminals in the VTA during cue exposure (30 pulses of 15 ms at 20 Hz) rescues the breakpoint deficits in the PR test of iuGC-ChR2 animals, with no effect in other groups (nCTR\u00a0=\u00a06; nCTR-eYFP\u00a0=\u00a07; nCTR-ChR2\u00a0=\u00a013; niuGC-ChR2\u00a0=\u00a012). (b) Activation of LDT terminals in the VTA in an irrelevant period, such as for example during inter-trial interval (ITI) does not change breakpoint of iuGC-ChR2 animals. (c) Individual performance in the PR test. All iuGC-ChR2 animals increase their breakpoint when stimulation is associated with the cue but not during the ITI. (d) Schematic representation of the CPP protocol. Laser stimulation (30 pulses of 15 ms at 20 Hz, every 60 s) is associated to one chamber. (e) Optogenetic stimulation of LDT terminals in the VTA increases preference for the stimulation-paired box (ON) in iuGC-ChR2 but not in CTR-eYFP nor CTR-ChR2 animals (nCTR\u00a0=\u00a06; nCTR-eYFP\u00a0=\u00a07; nCTR-ChR2\u00a0=\u00a05; niuGC-ChR2\u00a0=\u00a06). (f) Difference score of CPP protocol shown as the difference in time spent in pre- and post-test. iuGC-ChR2 animals present a shift in preference for the ON chamber. (g) Real Time Place Preference (RTPP) protocol: animals were placed in a box with two identical chambers for 15 min and allowed to freely explore. When animals crossed to the ON side, optical stimulation was given until exiting the chamber. Shown are representative tracks from a CTR, CTR-eYFP, CTR-ChR2 and an iuGC-ChR2 animal. (h) CTR-ChR2 and iuGC-ChR2 rats spend a significantly higher percentage of time in the stimulation-associated box (ON side) (nCTR\u00a0=\u00a06; nCTR-eYFP\u00a0=\u00a07; nCTR-ChR2\u00a0=\u00a08; niuGC-ChR2\u00a0=\u00a06). (i) Difference between time spent in the ON versus OFF side. Data represented as mean\u00a0\u00b1s.e.m. *p<0.05, **p<0.001, ***p<0.0001. #: comparison with CTR-eYFP; +: comparison with CTR-ChR2. Additional data is depicted in Figure 4\u2014figure supplements 1\u20133.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25843/elife-25843-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Performance in the (a) Conditioning Reinforcement (CRF) and (b) Fixed Ratio (FR) sessions was similar between groups (nCTR\u00a0=\u00a06; nCTR-eYFP\u00a0=\u00a07; nCTR-ChR2\u00a0=\u00a013; niuGC-ChR2\u00a0=\u00a012). (c) Total number of food pellets earned in the PR session, in which optical stimulation was given during cue exposure and (d) during the ITI. (e) No effects in free feeding behavior \u2013 regular chow or pellets in stimulated animals (nCTR\u00a0=\u00a06; nCTR-eYFP\u00a0=\u00a07; nCTR-ChR2\u00a0=\u00a08; niuGC-ChR2\u00a0=\u00a06). (f) No differences were observed in the locomotor activity of CTR, CTR-eYFP, CTR-ChR2 and iuGC upon stimulation (30 pulses of 15 ms at 20 Hz; given every minute). (g) Total distance travelled revealed no differences between groups (nCTR\u00a0=\u00a06; nCTR-eYFP\u00a0=\u00a07; nCTR-ChR2\u00a0=\u00a08; niuGC-ChR2\u00a0=\u00a06). Data represented as mean\u00a0\u00b1s.e.m.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/25843/elife-25843-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a) To verify the reinforcing properties of LDT-VTA stimulation, we performed a different protocol of optogenetic stimulation of LDT terminals that consists in higher number of pulses - 80 pulses of 15 ms at 20 Hz. (a) This stimulation is able to increase the motivational levels of both CTR-ChR2 and iuGC-ChR2 animals as seen by their increased breakpoint. No effect in CTR and CTR-eYFP groups. (b) Individual performance in the progressive ration task during laser OFF and laser ON sessions (nCTR-=6; nCTR-ChR2\u00a0=\u00a08; niuGC-ChR2\u00a0=\u00a06). (c) Ratio of preference of CTR-ChR2 and iuGC-ChR2 rats increases in the CPP in response to higher number of stimuli (80 pulses of 15 ms at 20 Hz) (nCTR-ChR2-stim=5, nCTR-ChR2-high stim=8). (d) Higher number of stimuli (80 pulses of 15 ms at 20 Hz, every 15 s) induces preference in CTR-ChR2 and iuGC-ChR2 animals, but not in control groups (nCTR\u00a0=\u00a06; nCTR-eYFP\u00a0=\u00a07; nCTR-ChR2\u00a0=\u00a08; niuGC-ChR2\u00a0=\u00a06). Data represented as mean\u00a0\u00b1s.e.m.*p<0.05; **p<0.01; ***p<0.001. #: Comparison with CTR-eYFP.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/25843/elife-25843-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Schematic representation of optic fiber placement in LDT terminals in the VTA of the first (a) and second (b) set of rats that performed behavioral experiments.\n\nWe next assessed if selective optogenetic activation of the LDT-VTA pathway was sufficient to enhance motivation during the PR test session. We decided to stimulate animals during cue exposure period since previous work from our group suggested that iuGC animals presented deficits in the Pavlovian-to-Instrumental Transfer test (PIT) (Soares-Cunha et al., 2014; Soares-Cunha et al., 2016), which measures the ability of a Pavlovian conditioned stimulus that is associated with a reward to invigorate instrumental responding for that (or other) reward (Corbit and Balleine, 2005; Corbit and Janak, 2007; Holmes et al., 2010).\n\nActivation of LDT terminals in the VTA during cue exposure period (30 pulses of 15 ms at 20 Hz; around 15 stimulations per session) reverted the breakpoint of iuGC animals but had no effect in CTR, CTR-eYFP and CTR-ChR2 animals (Figure 4a\u2013c; post-hoc Bonferroni test CTR: t(34) = 0.1836, p>0.9999; CTR-ChR2: t(34) = 1.203, p=0.9498; CTR-eYFP: t(34) = 0.5099, p>0.9999; iuGC-ChR2: t(34) = 5.007, p<0.0001;). No effect was observed in the number of pellets earned (Figure 4\u2014figure supplement 1c). Moreover, no effects in locomotion or free feeding consumption were observed using the same stimulation parameters in either group (Figure 4\u2014figure supplement 1e\u2013f).\n\nImportantly, if the LDT-VTA optogenetic activation occurred during the inter-trial interval (ITI) period of the test session, it did not revert iuGC-ChR2 motivational deficits (Figure 4b\u2013c; post-hoc Bonferroni: t(34) = 0.5138, p>0.9999), suggesting that LDT-VTA activation elicits a positive behavioral response only when it occurs during specific periods of the test.\n\nBecause the results of control animals were surprising in the light of previous evidence showing that LDT-VTA stimulation was reinforcing (Lammel et al., 2012; Xiao et al., 2016), we performed another stimulation protocol in a new set of animals to test this hypothesis (80 pulses of 15 ms at 20 Hz) (Figure 4\u2014figure supplement 2a\u2013b). Importantly, when we increased the number of pulses, we observed an increase in the breakpoint of CTR-ChR2 animals (post-hoc Bonferroni: t(22) = 3.666, p=0.0054) when compared to breakpoint of CTR or CTR-eYFP animals (post-hoc Bonferroni CTR-ChR2 vs. CTR: t(44) = 3.075, p=0.0217; CTR-ChR2 vs. CTR-eYFP: t(44) = 3.194, p=0.0156). Additionally, we observed that this stimulation also increased the breakpoint of iuGC animals (post-hoc Bonferroni: t(22) = 4.641, p=0.0005), with no effect in CTR and CTR-eYFP groups (post-hoc Bonferroni CTR: t(22) = 0.116, p>0.9999; CTR-eYFP: t(22) = 0.4163, p>0.9999).\n\n### Stimulation of LDT-VTA terminals induces place preference\n\nTo get further insight on the role of the LDT-VTA circuit in behavior, we also evaluated the impact of the stimulation of LDT-VTA terminals in the conditioned place preference (CPP) test, which measures the reinforcing capacities of a particular stimulus (Figure 4d). LDT-VTA stimulation (30 pulses of 15 ms at 20 Hz every 60 s) elicited conditioning in iuGC group, given by increased preference for the stimulus-associated chamber, ON side, (Figure 4e\u2013f; post-hoc Bonferroni: t(20) = 5.892, p<0.0001), whereas it did not shift preference in CTR and CTR-eYFP animals.\n\nHowever, if we increase the number of stimulus (80 pulses of 15 ms every 15 s), we were able to induce conditioning in CTR-ChR2 animals (Figure 4\u2014figure supplement 2c; t(8) = 4.737, p=0.0015). Additionally, we observe the same effect in the iuGC-ChR2 group (Figure 4\u2014figure supplement 2d; post-hoc Bonferroni CTR-ChR2: t(23) = 3.576, p=0.0064; iuGC-ChR2: t(23) = 2.761, p=0.044). No effect was found in CTR and CTR-eYFP animals, as expected (post-hoc Bonferroni CTR: t(23) = 0.04378, p>0.9999; CTR-eYFP: t(23) = 0.1521, p>0.9999).\n\nIn order to further explore the reinforcing feature of LDT-VTA stimulation, we performed the real-time place preference test (RTPP; Figure 4g), where one chamber is paired with optical stimulation and the other is not. Every time the animal was in the designated stimulation box (ON side), it received optical stimulation (15 ms pulses at 20 Hz) that only ended when the animal crossed to the no-stimulation box (OFF side). This test is different from a classic CPP since the animal is able to choose the chamber throughout the test.\n\nWe observed that stimulation of LDT terminals in the VTA was sufficient to elicit preference for the stimulation-paired chamber in both CTR-ChR2 and iuGC-ChR2 groups (Figure 4h; post-hoc Bonferroni CTR-ChR2: t(23) = 8.212, p<0.0001; iuGC-ChR2 t(23) = 8.748, p<0.0001) with no effect on control groups (CTR and CTR-eYFP) (post-hoc Bonferroni CTR: t(23) = 0.1981, p>0.9999; CTR-eYFP: t(23) = 1.784, p>0.9999). Both CTR-ChR2 and iuGC-ChR2 groups spent significantly more time in the ON side as assessed by the difference of total time spent in each chamber (Figure 4i; post-hoc Bonferroni CTR-ChR2 vs. CTR: t(23) = 5.451, p=0.0001; CTR-ChR2 vs. CTR-eYFP: t(23) = 4.562, p=0.0008; iuGC-ChR2 vs. CTR: t(23) = 5.387, p<0.0001; iuGC-ChR2 vs. CTR-eYFP: t(23) = 4.543, p=0.0009).\n\n## Discussion\n\nHere we show that prenatal exposure to GCs alters the number of ChAT+ cells and induces long-lasting expression changes on cholinergic markers (ChAT and AChE) in the LDT, but had no effect on glutamatergic or GABAergic markers. These findings are particularly interesting because both ChAT and AChE contain a glucocorticoid response element (GRE) in their gene loci, pinpointing a direct transcriptional regulation by GCs (Finkelstein et al., 1985; Gilad et al., 1985; Imperato et al., 1989; Berse and Blusztajn, 1997; Battaglia and Ogliari, 2005), although this remains to be confirmed. In fact, it has been shown that stress changes cholinergic enzymes expression (Finkelstein et al., 1985; Kaufer et al., 1998), either by inducing an alternative splicing of AChE gene (Nijholt et al., 2004), or by modulating the epigenetic status of its promoter regions (Sailaja et al., 2012). These cholinergic changes observed in iuGC group are more likely to derive from a new equilibrium set in utero by GC exposure rather than by changes in the hypothalamic\u2013pituitary\u2013adrenal\u00a0(HPA) axis, since in adulthood iuGC animals present normal basal levels of corticosterone (Blaha and Winn, 1993).\n\nImportantly, this GC programming effect in gene expression has been previously demonstrated for other circuits. For example, GC-exposed animals displayed differential methylation status of dopamine receptor D2 promoter region, accompanied by long-lasting gene/protein expression changes in the NAc (Rodrigues et al., 2012). These results show that a brief exposure to GC during critical developmental periods may induce persistent effects in specific genes, which may contribute for the increased vulnerability for emotional disorders observed in early life stress models (Borges et al., 2013a; Borges et al., 2013b; Piazza and Le Moal, 1996; Murgatroyd et al., 2009).\n\nWe also found that the LDT presents decreased basal neuronal activity, and that LDT electrical stimulation produces a differential response in the VTA of iuGC animals. Indeed, iuGC group presented a decrease in the magnitude and duration of excitatory responses in the VTA, and inversely, the inhibitory response was increased, suggesting that the function of the LDT-VTA pathway was compromised. To our knowledge, this is the first report showing electrophysiological differences in the LDT-VTA circuitry induced by GCs. The latency of excitatory responses in the VTA upon LDT electrical (or optogenetic) stimulation in control animals was remarkably low, but we were unable to find any electrophysiological studies to compare to.\n\nImportantly, the latency of VTA excitatory responses to LDT electrical stimulation was substantially increased in iuGC animals. A combination of pre- and post-synaptic iuGC-induced changes may contribute for this phenomenon, however, because this delay is not observed upon optical excitation of LDT-VTA terminals, it pinpoints to changes in axonal conductivity. Additional studies are now needed in order to understand how GC induces these long-lasting electrophysiological changes.\n\nThe VTA contains around 65% of DAergic neurons and 35% of non-DAergic neurons (Nair-Roberts et al., 2008), being the latter mainly GABAergic, though subpopulations of glutamatergic neurons as well as dopamine/glutamate co-releasing neurons have been identified (Yamaguchi et al., 2011; Hnasko et al., 2012). Considering this, we sub-divided the VTA recorded cells into putative DAergic and GABAergic neurons based on their waveform pattern (Ungless et al., 2004; Ungless and Grace, 2012; Totah et al., 2013), yet, it is important to refer that there is still some controversy regarding this categorization (Margolis et al., 2006). Importantly, Omelchenko and colleagues suggested that the LDT mediates a divergent excitation/inhibition influence on mesoaccumbens neurons that is likely to excite DAergic cells and inhibit GABA neurons of this region (Omelchenko and Sesack, 2005; Omelchenko and Sesack, 2006); which is in accordance with our data in control animals.\n\nThe LDT provides the tonic input necessary for maintaining burst firing of DAergic neurons (Lodge and Grace, 2006) and dopamine release to the NAc (Blaha et al., 1996; Forster and Blaha, 2000), contributing to reward behaviors (Lammel et al., 2012; Steidl and Veverka, 2015; Xiao et al., 2016). In fact, phasic activation of VTA DAergic neurons can induce behavioral conditioning (Tsai et al., 2009) and facilitate positive reinforcement (Adamantidis et al., 2011; Witten et al., 2011). Conversely, VTA GABAergic neurons provide local inhibition of DAergic neurons (but also long-range inhibition of projection regions, including the NAc), and their activation disrupts reward consummatory behavior (van Zessen et al., 2012). Surprisingly, in iuGC animals we observe a shift in the LDT-VTA evoked responses: an increase of inhibition of DAergic neurons and simultaneous decrease of inhibition of GABAergic neurons. This suggests that VTA DAergic neurons are less active, which is in accordance with the observed decreased basal levels of dopamine in the NAc of iuGC animals (Le\u00e3o et al., 2007; Rodrigues et al., 2012).\n\nConfirming the functional relevance of the abovementioned electrophysiological data, we have previously shown that iuGC animals exhibited impaired cue-driven motivational drive (Soares-Cunha et al., 2014; Soares-Cunha et al., 2016). In line with this, we found that iuGC animals presented significant motivational deficits in the PR test. Remarkably, brief optogenetic activation of LDT-VTA terminals during cue exposure was sufficient to rescue the motivation of iuGC animals, with no major impact on control animals, proving that iuGC exposure induces changes in this circuit that are translated into motivational deficits. However, when LDT-VTA stimulation was done during the time-out period of the test, it did not induce any behavioral effect, reinforcing the importance of specific time windows for the stimulation. To our knowledge, this is the first report showing a role of the LDT-VTA circuit in the control of cue-induced motivation. It is important to refer that we decided to use a strategy that activates all LDT inputs because although the majority of its neurons are cholinergic, there are also glutamatergic and GABAergic neurons in the LDT (Xiao et al., 2016; Wang and Morales, 2009), and each provide parallel sources of input to the VTA. Certainly, additional studies are needed to dissect and evaluate the contribution of each LDT neuronal population for this type of behaviors.\n\nTo further understand the role of LDT-VTA in reward behaviors, we tested the animals in two different conditioning paradigms, the non-contingent CPP and the contingent RTPP. Activation of LDT-VTA specific projections shifts animal\u2019s preference for the stimulus-associated chamber in both tests. However, iuGC animals seem more susceptible to these reinforcing effects because a lower stimulation protocol (30 pulses of 15 ms at 20 Hz) was able to shift iuGC group preference but had no effect in control animals. Importantly, this vulnerability to rewarding/reinforcing stimulus is in accordance with previous data from our team showing that iuGC animals presented increased morphine-associated CPP in comparison to controls (Rodrigues et al., 2012). It is thus tempting to speculate that the increased vulnerability of iuGC animals to the effects of LDT-VTA stimulation is due to an imbalance in the excitation-inhibition responses in the VTA triggered by LDT inputs.\n\nIn summary, iuGC exposure leads to long-lasting molecular and physiological alterations in the LDT-VTA circuit in parallel with prominent motivational deficits, which were rescued by optogenetic activation of the LDT-VTA terminals. Moreover, we showed that activation of LDT-VTA inputs is reinforcing and that iuGC animals appear to be more vulnerable to the reinforcing properties of this stimulus. Further studies are now needed to identify how GCs lead to functional changes in vulnerable regions such as the LDT and how this translates into altered behavior.\n\n## Materials and methods\n\n### Animals and treatments\n\nPregnant Wistar rats were individually housed under standard laboratory conditions (light/dark cycle of 12/12 hr; 22\u00b0C); food and water ad libitum. Subcutaneous injections of a synthetic GC, dexamethasone (DEX, Sigma, Germany) at 1 mg kg\u22121 (iuGC animals) or vehicle (sesame oil, Sigma, Germany; CTR- control animals) were administered on gestation days 18 and 19 (details of the model can be found in Le\u00e3o et al., 2007; Borges et al., 2013a; Soares-Cunha et al., 2014; Rodrigues et al., 2012; Borges et al., 2013b; Blaha and Winn, 1993). This model, named iuGC (from in utero exposure to GCs) partially mimics the clinical administration of GCs on women in risk of preterm labour (~8% of pregnancies) to promote fetal lung maturation or to manage congenital adrenal hyperplasia during pregnancy. On postnatal day 21, progeny was weaned according to prenatal treatment and gender. Male offspring derived from at least 4 different litters were used.\n\nAll manipulations were conducted in strict accordance with European Regulations (European Union Directive 2010/63/EU). Animal facilities and the people directly involved in animal experiments were certified by the Portuguese regulatory entity \u2013 DGAV. All the experiments were approved by the Ethics Committee of the University of Minho (SECVS protocol #107/2015). The experiments were also authorized by the national competent entity DGAV (#19074).\n\n### Macrodissection and molecular analysis\n\nRats were anaesthetized with sodium pentobarbitone (Eutasil, Sanofi, CEVA, Alg\u00e9s, Portugal), decapitated, and heads were immediately snap-frozen in liquid nitrogen. Brain areas of interest were rapidly dissected on ice under a magnifier following specific anatomical landmarks (Paxinos and Watson, 2007).\n\nFor real-time PCR analysis, total RNA was isolated from samples using Trizol (Invitrogen, Carlsbad, CA, USA) and treated using DNase (Fermentas, Burlington, Canada) according to the manufacturer\u2019s instructions. cDNA was synthetized using the iSCRIPT kit (Biorad, Hercules, CA, USA). PCR was performed using EVAGreen SMX (Biorad, Hercules, CA, USA) and the Biorad q-PCR CFX96 apparatus (Biorad, Hercules, CA, USA). Hprt was used as housekeeping gene. Relative quantification was used to determine fold changes (control vs. iuGC), using the \u0394\u0394CT method.\n\nPrimer sequences used for transgene expression quantification were:\n\nChAT: Forward, 5\u2019-TCATTAATTTCCGCCGTCTC-3\u2019, Reverse, 5\u2019-CCGGTTGGTGGAGTCTTTTA-3\u2019; AChE: Forward, 5\u2019-CCAGAGACAGAGGACATTCTGA-3\u2019, Reverse, 5\u2019-GCGTTCCTGCTTGCTATAGTG-3\u2019; VAChT: Forward, 5\u2019-AGTGCCTACTTGGCCAACAC-3\u2019, Reverse, 5\u2019-GTCGTAGCTCATGCGATCAA-3\u2019; EAAC1; Forward, 5\u2019-CATCCCTCATCCCACATCCG-3\u2019, Reverse, 5\u2019-CTACCACGATGCCCAGTACC-3\u2019; GAD1/Gad67: Forward, 5\u2019- GCTCCCTGTGGCTGAATCG-3\u2019, Reverse, 5\u2019- GTCCTTTGCAAGAAACCACAG-3\u2019; GAD2/Gad65: Forward, 5\u2019-CTGGCTTTTGGTCCTTCGGA-3\u2019, Reverse, 5\u2019-AGCAGAGCGCATAGCTTGTT-3\u2019; GR: Forward, 5\u2019- AGGCCGGTCAGTGTTTTCT-3\u2019, Reverse, 5\u2019-CAATCGTTTCTTCCAGCACA-3\u2019.\n\nFor western blotting analysis, samples were prepared as previously described (Rodrigues et al., 2012). 30 \u03bcg of the protein was run in SDS-polyacrylamide gel and then transferred to nitrocellulose membranes. Membranes were incubated with one of the primary antibodies: goat anti-choline acetyltransferase (ChAT, 1:500, Millipore, MA, USA), goat anti-acetylcholine esterase (AChE, 1:500, Abcam, Cambridge, UK), mouse anti-glutamate transporter, excitatory amino-acid transporter, EAAC1 (EAAC1, 1:200, Millipore, MA, USA), rabbit anti-glutamic acid decarboxylase (GAD) 65 + GAD 67 (GAD65/67, 1:10000, Abcam, Cambridge, UK), rabbit anti-glucocorticoid receptor (GR, 1:500, Santa Cruz, CA, USA) and mouse anti-GAPDH (1:200, Iowa, USA) or mouse anti-beta actin (1:2500, Abcam, Cambridge, UK) were used as loading controls for ChAT or AChE, and EAAC1, GAD65/67 or GR, respectively. The secondary antibodies were incubated at a 1:10000 (anti-mouse), 1:5000 (anti-rabbit) and 1:7500 (anti-goat) dilution (Santa Cruz Biotechnologies, Santa Cruz, CA, USA). Membranes were stripped for 15 min at room temperature in stripping buffer (Restore PLUS Western Blot Stripping Buffer, Thermo Scentific, IL, USA) and re-blocked and re-incubated. Detection was performed using ECL kit (Biorad, Hercules, CA, USA) and bands were quantified using ImageJ (http://rsbweb.nih.gov/ij/).\n\n### Immunohistochemistry (IHC)\n\nAnimals were anaesthetized with sodium pentobarbitone (Eutasil, Lisbon, Portugal) and transcardially perfused with saline followed by 4% paraformaldehyde. Brains were removed and sectioned coronally at a thickness of 50 \u03bcm, on a vibrating microtome (VT1000S, Leica, Germany).\n\nFree-floating sections were pre-treated with 3% H2O2 in PBS for 30 min. After blocking using 2.5% fetal bovine serum (FBS) in PBS-Triton 0.3% for 2 hr at room temperature, sections were incubated overnight at 4\u00b0C with primary antibody anti-ChAT (1:1000; Millipore, MA, USA). Afterwards, sections were washed and incubated with the secondary polyclonal swine anti-goat biotinylated\u00a0antibody (1:200, DAKO, Denmark) for 1 hr, and processed with an avidin-biotin complex solution (ABC-Elite Vectastain reagent; Vector Lab., USA) and detected with 0.5 mg ml\u22121 3,3\u00b4-diaminobenzidine (Sigma, Germany) including 12.5 \u00b5l of 30% H2O2 as a substrate in Tris-HCL solution. Sections were washed and mounted on glass slides, air-dried, counterstained with Hematoxilin and coverslipped with Entellan (Merck, NJ, USA). Cell density estimation was obtained by normalizing ChAT+\u00a0cells in the corresponding area, determined using an Olympus BX51 optical microscope and the StereoInvestigator software (Microbrightfield). For each animal, 5 slices containing the LDT were used - coordinates according to Paxinos and Watson (Blaha and Winn, 1993). The distance of the LDT region analyzed from bregma ranged from: \u22128.16 mm to \u22129.48 mm.\n\n### In vivo electrophysiology recordings and stimulation\n\nAnimals were anesthetized and submitted to a stereotaxic surgery for the placement of the stimulating and recording electrodes, following anatomical coordinates (Paxinos and Watson, 2007). Surgeries were performed under sodium pentobarbitone anaesthesia (induction: 60 mg kg\u22121; maintenance: 15\u201320 mg kg\u22121, intraperitoneal, Eutasil, Sanofi, CEVA, Alg\u00e9s, Portugal); body temperature was maintained at approximately 37\u00b0C with a homoeothermic heat pad system (DC temperature controller, FHC, ME, USA). Anaesthesia level was assessed by observation of pupil size, general muscle tone and by assessing withdrawal responses to noxious pinching.\n\nStimulating and recording electrodes were placed in the following coordinates: LDT: \u22128.5 from bregma, 0.8 lateral from midline, \u22125.5 to \u22127.9 ventral to brain surface; VTA: \u22125.4 from bregma, 0.6 lateral from midline, \u22127.5 to \u22128.2 ventral to brain surface. A reference electrode was fixed in the skull, in contact with the dura.\n\nExtracellular neural activity from the LDT and the VTA was recorded using a recording electrode (3\u20137 M\u03a9 at 1 kHz). Recordings were amplified and filtered by the Neurolog amplifier (NL900D, Digitimer Ltd, UK) (low-pass filter at 500 Hz and high-pass filter at 5 kHz). Bi-polar concentric electrode (0.05\u20130.1 M\u03a9, Science Products) was inserted in the LDT region. Spontaneous activity of single neurons was recorded to establish baseline for at least 100 s. The stimulation was administered using a square pulse stimulator and a stimulus isolator (DS3, Digitimer, UK). The stimulation consisted of 100 pulses of 0.5 Hz with 0.5 ms duration with intensity from 0.2 to 1 mA. Spikes of a single neuron were discriminated, and data sampling was performed using a CED micro 1401 interface and SPIKE 2 software (Cambridge Electronic Design, Cambridge, UK). Single pulses were delivered to the specific brain region every 2 s. At least 100 trials were administered per cell.\n\nFor data analysis, peristimulus time histograms (PSTHs; 5 ms bin width) of neuronal activity were generated during electrical stimulation of the LDT, for each neuron recorded in the VTA. PSTHs were analysed to determine excitatory and inhibitory epochs. Briefly, the mean and standard deviation (SD) of counts per bin were determined for a baseline period, definite as the 500 ms epoch previous stimulation. The onset of excitation was defined as the first of five bins whose mean value exceeded mean baseline activity by 2 SD, and response offset was determined as the time at which activity had returned to be consistently within 2 SD of baseline. Response magnitudes for excitation were calculated with the following equation: (counts in excitatory epoch) - (mean counts per baseline bin 3 number of bins in excitatory epoch). The onset of inhibition was defined as the first of 5 bins whose mean value were below 30% of the baseline activity and the response offset when the activity of the neurons was consistently above 30% of the baseline activity. The total duration of the inhibition was determined for each neuron. We classified single units in the VTA into three separated groups of putative neurons: putative dopamine (DA), putative GABA, and \u2018other\u2019 neurons. This classification was based on firing rate and waveform duration (calculated from average spike waveform) (Ungless et al., 2004; Ungless and Grace, 2012; Totah et al., 2013). Cells presenting a firing rate\u00a0<10.0 Hz and a duration of\u00a0>1.5 ms were considered putative DAergic (pDAergic) neurons. If the firing rate was\u00a0>10.0 Hz and waveform duration\u00a0<1.5 ms, cells were assigned to putative GABAergic (pGABAergic) neuron group. Other single units were assigned to the \u2018other\u2019 neuron group. This group likely contains units from both DA and GABA groups.\n\nRegarding the experiments with optical stimulation, a recording electrode coupled with a fiber optic patch cable (Thorlabs) was placed in the VTA or LDT. The DPSS 473 nm laser system (CNI), controlled by a stimulator (Master-8, AMPI), was used for intracranial light delivery and fiber optic output was pre-calibrated to 10\u201315 mW. Spontaneous activity was recorded for 60 s to establish baseline activity. Optical stimulation consisted of 30 pulses of 15 ms at 20 Hz and 80 pulses of 15 ms at 20 Hz. Firing rate was calculated for the baseline, stimulation period and post stimulation period (60 s after the end of stimulation). Neurons showing a firing rate increase or decrease by more than 20% from the mean frequency of the baseline period were considered as responsive, as previously reported by Benazzouz and colleagues (Benazzouz et al., 2000).\n\nAt the end of each electrophysiological experiment, all brains were collected and processed to identify recording region.\n\n### Optogenetics constructs\n\nAAV5\u2013EF1a\u2013WGA\u2013Cre\u2013mCherry, AAV5\u2013EF1a\u2013DIO\u2013hChR2\u2013YFP and AAV5\u2013EF1a\u2013DIO\u2013YFP were obtained directly from the Gene Therapy Center Vector Core (UNC) center (vectors kindly provided by Karl Deisseroth, Stanford University). AAV5 vector titers were 2.1\u20136.6 \u00d7 1012 virus molecules\u00a0ml-1.\n\n### Surgery and cannula implantation\n\nRats designated for behavioral experiments were anesthetized with 75 mg kg\u22121 ketamine (Imalgene, Merial) plus 0.5 mg kg\u22121 medetomidine (Dorbene, Cymedica). One \u03bcl of AAV5\u2013EF1a\u2013WGA\u2013Cre\u2013mCherry was unilaterally injected into the VTA (coordinates from bregma, according to Paxinos and Watson: \u22125.4 mm anteroposterior, +0.6 mm mediolateral, and \u22127.8 mm dorsoventral) and 1 \u03bcl of AAV5\u2013EF1a\u2013DIO\u2013hChR2\u2013YFP was injected in the LDT (coordinates from bregma: \u22128.5 mm anteroposterior, +0.9 mm mediolateral, and \u22126.5 mm dorsoventral) in both CTR and iuGC groups (CTR-ChR2 and iuGC-ChR2). We had two additional groups: a control group (CTR) that was injected only with 1 \u03bcl AAV5\u2013EF1a\u2013DIO\u2013hChR2\u2013YFP in the LDT; and CTR-YFP animals which were injected with 1 \u03bcl AAV5\u2013EF1a\u2013WGA\u2013Cre\u2013mCherry in the VTA and 1 \u03bcl AAV5\u2013EF1a\u2013DIO\u2013YFP in the LDT. Rats were then implanted with an optic fiber (200 \u03bcm core fiber optic; Thorlabs, NJ, USA) with 2.5 mm stainless steel ferrule (Thorlabs, NJ, USA) using the injection coordinates for the VTA (with the exception of dorsoventral: \u22127.7 mm) that were secured to the skull using 2.4 mm screws (Bilaney, Germany) and dental cement (C and B kit, Sun Medical). Rats were removed from the stereotaxic frame and sutured. Anaesthesia was reverted by administration of atipamezole (1 mg/kg). After surgery animals were given anti-inflammatory (Carprofeno, 5 mg/kg) for one day, analgesic (butorphanol, 5 mg/kg) for 3 days, and were let to fully recover before initiation of behavior. Optic fiber placement was confirmed for all animals after behavioral experiments (Figure 4\u2014figure supplement 3). Animals that were assigned for electrophysiological experiments were not implanted with an optic fiber.\n\n### Behavior\n\n#### Progressive ratio schedule of reinforcement\n\nRats were placed and maintained on food restriction (\u22487 g/day of standard lab chow) to maintain 90% free-feeding weight. Behavioral sessions were performed in operant chambers (Med Associates, IL, USA) containing a central magazine that provided access to 45 mg food pellets (Bio-Serve), two retractable levers located on each side of the magazine with cue lights above them. A 2.8W, 100mA house light positioned at the top-centre of the wall opposite to the magazine provided illumination. A computer equipped with Med-PC software (Med Associates, IL, USA) controlled the equipment and recorded the data.\n\nThe behavioral protocol was previously described (Soares-Cunha et al., 2016; Wanat et al., 2013). Animals were first trained on continuous reinforcement (CRF) schedule: a single lever press yields one pellet. Side of the active lever was alternated between sessions. Rats were then trained in a fixed ratio (FR) schedule comprising 50 trials with both levers presented, but the active lever signalled by the illumination of the above cue light. When achieving the correct number of lever presses, a pellet was delivered, levers retracted and the cue light turned off for a 20 s inter-trial interval (ITI). Following up, rats were trained using an FR4 reinforcement schedule for 4 days and a FR8 for one day, for both levers. Rats were then exposed to the following schedule: day 1 \u2013 FR4 (left lever); day 2- PR (left lever); day 3- FR4 (left lever); day 4 \u2013 FR4 (right lever); day 5 \u2013 PR (right lever). Food rewards were earned on an FR4 reinforcement schedule during FR sessions. PR sessions were similar to FR4 sessions except the operant requirement on each trial (T) was the integer (rounded down) of 1.4(T\u20131) lever presses, starting at 1 lever press. PR sessions ended after 15 min without completion of the response requirement in a trial.\n\nBefore the PR session began, rats were connected to an opaque optical fiber in the VTA through previously implanted fiber optic cannula. The optical fiber was connected to a 473 nm DPSS laser (CNI Laser), controlled using a pulse generator (Master-8; AMPI). At the beginning of each trial of the PR session \u2013 when the cue light was turned on \u2013 animals received an optical stimulation, which consisted in 30 pulses of 15 ms at 20 Hz (473 nm; 10 mW of light at the tip of the optic fiber). In a second set of animals, the number of pulses was increased to 80 pulses of 15 ms at 20 Hz during each cue exposure. CTR, CTR-YFP, CTR-ChR2 and iuGC-ChR2 received this optical stimulation.\n\n### Conditioned place preference \u2013 CPP\n\nThe CPP protocol was adapted from a previously published report (Lammel et al., 2012; Ungless and Grace, 2012). Briefly, on day 1, individual rats were placed in the centre chamber and allowed to freely explore the entire apparatus for 15 min (pre-test). On day 2, rats were confined to one of the side chambers for 30 min and paired with optical stimulation, ON side; in the second session, rats were confined to the other side chamber for 30 min with no stimulation, OFF side. Conditioning sessions were counterbalanced. On day 3 rats were allowed to freely explore the entire apparatus for 15 min (post-test). Optical stimulation consisted of 30 pulses of 15 ms at 20 Hz, every 60 s. In a second set of animals optical stimulation was increased to 80 pulses of 15 ms at 20 Hz, every 15 s.\n\n### Real-time place preference \u2013 RTPP\n\nRTPP test was performed in a custom-made black plastic arena (60 \u00d7 60\u00a0\u00d7\u00a040 cm) comprised by two indistinguishable chambers, for 15 min. One chamber was paired with light stimulation of 15 ms pulses at 20 Hz during the entire period that the animal stayed in the stimulus-paired side. The choice of paired chamber was counterbalanced across rats. Animals were placed in the no-stimulation chamber at the start of the session and light stimulation started at every entry into the paired chamber. Animal activity was recorded using a video camera and time spent in each chamber was manually assessed. Results are presented as total time spent in each chamber.\n\n### Immunofluorescence (IF)\n\nAnimals were anaesthetized with sodium pentobarbitone (Eutasil, Lisbon, Portugal) and transcardially perfused with 0.9%\u00a0saline followed by 4% paraformaldehyde. Brains were removed and sectioned coronally at a thickness of 50 \u03bcm, on a vibrating microtome (VT1000S, Leica, Germany). Sections were incubated overnight, with the primary antibody goat anti-GFP (1:500, Abcam, Cambridge, UK), followed by secondary fluorescent antibody (1:1000, Invitrogen, MA, USA). All sections were stained with 4\u2019,6-diamidino-2-phenylindole (DAPI; 1 mg ml-1) and mounted using mounting media (Permafluor, Invitrogen, MA, USA).\n\n### Statistical analysis\n\nStatistical analysis was performed in GraphPad Prism 5.0 (GraphPad Software, Inc., La Jolla, CA, USA) and SPSS Statistics v19.0 (IBM corp., USA). Parametric tests were used whenever Shapiro-Wilk normality test SW\u00a0>0.05. Two-way analysis of variance (ANOVA) was used when appropriate. Bonferroni\u2019s post hoc multiple comparison tests were used for group differences determination. Statistical analysis between two groups was made using Student\u2019s t-test. Results are presented as mean\u00a0\u00b1SEM. Statistical significance was accepted for p<0.05.\n",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "39191ae0-25ce-486c-933a-148b86b98ba4",
+      "submission_id": "e2485603-b356-4c34-8b57-7aa3babdd74d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Rui M Costa, Columbia University in the City of New York United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.25843.013](https://doi.org/10.7554/eLife.25843.013)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Impairments in laterodorsal tegmentum to VTA projections underlie glucocorticoid-triggered reward deficits\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Eric Dumont (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. The reviewers find the work interesting and relevant but raise a few important points that should be addressed. Attached are the point-by-point comments of the reviewers, but below are the more relevant issues to be addressed.\n\n\u2013 In the optical stimulation experiments, there should be controls for Cre expression and viral expression. The use of a Cre dependent virus expressing GFP would be advisable.\n\n\u2013 The article would benefit from a more detailed description and a more specific use of statistics. For example, a two-way ANOVA with age and glucocorticoid treatment as factors, followed by post-hoc tests seem more appropriate than individual t-test or Mann-Whitney tests for every age. Also, the rationale for the use or not of specific statistical tests, multiple comparison corrections, etc. should be provided.\n\n\u2013 Are there differences in GR expression levels in the LDT or corticosterone levels in these animals at different developmental stages that accompany the observed effects on the expression of cholinergic enzymes? Is the observed effect the result of a new equilibrium set after the in-utero treatment, or is it perpetuated through differences in GR expression or corticosterone levels?\n\n\u2013 The authors should specify how the loading controls were done for the Westerns in Figure 1, or provide appropriate loading controls.\n\n\u2013 The authors should provide more details about the physiology with representative examples, showing recording and stimulation sites, and a few more suggested analyses.\n\nIn general, more details are needed in the Materials and methods, such as the volume of injected virus, representative example of microinjections the rationale for using a 20% cut-off for excitation or inhibition should be provided, etc.\n\nReviewer #1:\n\nThis study investigates the role of prenatal glucocorticoids (GCs) on the LDT-VTA circuitry and its impact on reward-related behavior. In their study, the authors use a rat model of in utero GC (iuGC) exposure at gestation days 18 and 19, which shows long-lasting changes in the cholinergic system (i.e., increased number of ChAT+ cell density and altered transcript and protein levels of the markers ChAT and AChE) in the LDT. Notably, the study stems from previous findings from the same group published in 2013 (Borges et al., 2013) where, similarly, they reported differences in ChAT+ cell density in LDT induced by the same glucocorticoid treatment. Here, AChE expression analysis was added, as well as analyses performed at different time points and expression at the mRNA and protein levels. The characterization of the LDT-VTA circuit with in vivo electrophysiology revealed a decreased basal neuronal activity of the LDT, but not VTA, in iuGC animals. LDT stimulation showed a decreased magnitude of excitation and an increase in VTA inhibition, likely resulting from a shift of the cell-types that respond to the stimulus. Accompanying these described LDT-VTA dysfunctions, the authors demonstrate that iuGC rats exhibit motivational deficits in the willingness to work for food, which were rescued by optogenetic activation of the LDT-VTA pathway. Furthermore, iuGC animals are more susceptible to the reinforcing properties of LDT-VTA stimulation (rats exposed to glucocorticoids in utero were more sensitive to optogenetic stimulation of LDT-VTA projections to develop conditioned place preference). The authors conclude that iuGC exposure affects the LDT-VTA circuit and results in motivational deficits.\n\nThe work is interesting and the findings relevant. Nevertheless, there are issues and concerns that require clarification:\n\n1) It is not clear why the work does not follow up on the identified changes on ChAT and AChE directly, as no specific manipulation assessed the role of cholinergic projections from the LDT to the VTA.\n\n2) As raised by the authors themselves, they have carried out their rescue experiments by activating all LDT inputs and not distinguishing between cholinergic, glutamatergic and GABAergic neurons in the LDT. The authors mention in the introduction that there are contributions of glutamatergic projections from the LDT to the VTA; it would make sense to study glutamatergic markers as well to assess whether the effect of prenatal glucocorticoid exposure is specific to the cholinergic input from LDT to VTA or not and bridge the different parts of the work.\n\n3) A two-way ANOVA with age and glucocorticoid treatment as factors, followed by post-hoc tests seem more appropriate than individual t-test or Mann-Whitney tests for every age.\n\n4) Key questions not answered by the study: Are there differences in GR expression levels in the LDT or corticosterone levels in these animals at different developmental stages that accompany the observed effects on the expression of cholinergic enzymes? Is the observed effect the result of a new equilibrium set after the in utero treatment, or is it perpetuated through differences in GR expression or corticosterone levels?\n\n5) In the optical stimulation experiments, control rats were treated only with an AAV-EF1a-DIO-hChR2-YFP virus. How did the authors check for proper viral injection? In addition, there seems to be no control for any effects Cre expression alone might have. The best control would be treatment with the same Cre-expressing virus in the VTA expressing only GFP in the LDT.\n\n6) In Figure 1, a representative immunoblot of ChAT and AChE in the LDT is represented followed by quantification of the bands. Why only one GAPDH loading control? Did the authors run an immunoblot for both proteins and then strip their membrane, which would explain one GAPDH control, or did they use two independent membranes for ChAT and AChE? In the latter case, they should please provide also a GAPDH loading control for their second membrane, which they used for the quantification plot in Figure 1F. Please provide this information in material and methods.\n\n7) The article would benefit by providing (molecular) background regarding the rationale to analyze cholinergic markers in iuGC animals.\n\n8) The article would benefit from a more detailed description about the statistical tests used for the experiments. Specifically, did they use multiple correction for Figure 1, C, D and F? And for Figure 2F? The authors report the p-values in an exemplary manner as APA-Style. Could the authors please also provide these data for Figure 3C? In subsection \u201ciuGC treatment impairs the LDT-VTA circuitry\u201d: Please check whether the p-value of 0.008 for the magnitude is correct. It seems improbable given that t(30) = 3.723.\n\nReviewer #2:\n\nThis manuscript by Coimbra and colleagues follows up on several papers by the same group pointing out the effects of iuGC exposure, this time describing motivational deficits in adult rats with the LDT->VTA interaction involved in such deficits. They presented evidence about an increased number of Chat neurons (and an increase in Chat RNA or protein levels) in the LDT from adult rats. They performed recordings in the LDT and VTA to measure the basal level of activity, electrically stimulated in the LDT to record its effect in the VTA, optogenetic stimulated the LDT->VTA terminals in the VTA evaluating the excitation/inhibition responses of VTA. And also show evidence of an altered response in the break point task in the iuGC model, which was reverted by LDT stimulation. Importantly, this last experiment showed temporal specificity of the stimulation.\n\nBased on the evaluation of the evidence presented, this reviewer considers that this manuscript is suitable for publication attending the following points.\n\nFigure 2 and 3\n\nSpecify what were the animals doing when the baseline described was acquired.\n\nPresent a distribution of the waveform duration vs. the firing rate.\n\nDiscuss the mechanisms behind the difference in latencies when comparing the LDT-VTA responses in the control vs. the iuGC groups.\n\nAbout the statement citing Figure 2: Altogether, these data demonstrated an imbalance in the excitatory and inhibitory inputs from the LDT. I suggest: Altogether, these data demonstrated an imbalance in the excitatory and inhibitory inputs to the VTA when electrically stimulating in the LDT.\n\nWhy did the optogenetic stimulation was not performed in the LDT?\n\nPlease show images of the LDT cells expressing ChR2.\n\nWhy, if Figure 3E shows overall more decreased responses, is this not reflected in Figure 3D? May it be by a different probability to record from pDA or pGABAergic units in each group?\n\nFigure 4.\n\nWhen presenting that activation of LDT terminals in the VTA during cue exposure period normalized the breakpoint of iuGC animals but had no effect in CTR animals, I suggest to place it next to the other protocol (both in text and figures). In this sense, it is clearer to the reader that LDT(ChR2)->VTA stimulation revert the effect on the break point rather than normalizing it.\n\nFigure 4\u2014figure supplement 1.\n\nFor the analysis of locomotion in the LDT->VTA please plot the distance aligned to each time of the stimulation: that may reveal a different conclusion (see DOI: 10.1371/journal.pone.0033612).\n\nReviewer #3 (General assessment and major comments (Required)):\n\nThis is an exceptional study combining several state-of-the-art neurobiology approaches and providing a convincing demonstration of the effect of pre-natal stress-like conditions in the neural circuits of motivation. The manuscript is very-well presented, the data are clear, and most controls (positive and negative) have been provided. This was clearly a well-designed series of experiments which ended-up with extremely convincing conclusions. All claims made by the authors was well-supported by the presented data.\n\nOverall, I have no concerns with this study and i believe that it should be published as is.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Impairments in laterodorsal tegmentum to VTA projections underlie glucocorticoid-triggered reward deficits\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Eric Dumont (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. Although the reviewers feel that the manuscript has been improved, they think some points need additional clarification before the study can be acceptable for publication.\n\nReviewer #2:\n\nBased on the evidence presented this reviewer considers that this manuscript is suitable for publication only suggesting further attention to the following points:\n\nOriginal point: Present a distribution of the waveform duration vs. the firing rate.\n\nResponse from the authors: In accordance with the reviewer's suggestion, we have now included additional graphs in Figures 2 and 3 presenting the waveform duration vs. the firing rate of recorded cells.\n\nOriginal point: Discuss the mechanisms behind the difference in latencies when comparing the LDT-VTA responses in the control vs. the iuGC groups.\n\nResponse from the authors: Thank you for raising this point [\u2026] Does the reviewer have any idea/suggestion?\n\nFurther request to address this point: Previously when requesting to discuss the mechanisms behind the difference in latencies when comparing the LDT-VTA responses in the control versus the iuGC groups I was looking for an explanation based on mechanism as now is provided (perhaps also discussing axonal conductivity, note that when stimulating the LDT axons in the VTA no changes in latency are observed; Figure 3\u2014figure supplement 1), but also a discussion with the pre-existing measurements of this latency (if there is any by other groups), since a 1ms latency seems to fast, calling attention as if the stimulating electrode may not have been positioned exactly in the LDT.\n\nOriginal point: Why, if Figure 3E shows overall more decreased responses, is this not reflected in Figure 3D? May it be by a different probability to record from pDA or pGABAergic units in each group?\n\nResponse from the authors: We agree with the reviewer. In fact, the probability of recording pDAergic and pGABAergic units is different in the VTA region. We have a higher recruitment of pDAergic cells upon optical stimulation, which is in accordance with anatomical studies showing the preferential inputs of the LDT to mesoaccumbal DAergic cells in the VTA (Omelchenko and Sesack, 2005).\n\nOriginal point: Figure 4. When presenting that activation of LDT terminals in the VTA during cue exposure period normalized the breakpoint of iuGC animals but had no effect in CTR animals, I suggest to place it next to the other protocol (both in text and figures). In this sense, it is clearer to the reader that LDT(ChR2)->VTA stimulation revert the effect on the break point rather than normalizing it.\n\nResponse from the authors: We are not certain that we understood this comment. Figure 4\u2014figure supplement 1. We have made some changes in the behavioral graphs of the manuscript, please check.\n\nFurther request to address this point: The point was that the optogenetic stimulation of the LDT terminals is not specific to normalize the breakpoint of iuGC animals, since activating this terminal using a stronger protocol also increase the break point in either control or iuGC animals.\n\nOriginal point: For the analysis of locomotion in the LDT->VTA please plot the distance aligned to each time of the stimulation, that may reveal a different conclusion (see DOI: 10.1371/journal.pone.0033612).\n\nResponse from the authors: We analyzed the paper mentioned, but we did not fully understand what the reviewer asks for. We have now included an additional graph with total distance travelled. Please check if this is what you asked for.\n\nFurther request to address this point: When stating: Moreover, no effects in locomotion [\u2026] were observed using the same stimulation parameters in either group (Figure 4\u2014figure supplement 1E-F). This conclusion arises from the analysis performed (one point measured every tens of milliseconds) however an immediate effect on locomotion cannot be discharged (in the range of milliseconds). I previously pointed to the DOI: 10.1371/journal.pone.0033612 because it was one of the few papers at that time recognizing that there are motor modulations when manipulating VTA Dopaminergic cells activity. Please perform a smaller bin analysis of the data evaluating the manipulations on locomotion.\n\nReviewer #3:\n\nThis revised version of the manuscript has been substantially improved and addressed several if not all of my concerns. The manuscript now includes important missing control data (e.g. CRE and viral expression). When appropriate the authors substantiated their rationale and claims.\n",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9e29eb19-48a6-4b52-8006-e3373ae073d0",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C1",
+      "claim": "Ventral tegmental area (VTA) activity is critical for reward/reinforcement.",
+      "claim_type": "EXPLICIT",
+      "source": "Ventral tegmental area (VTA) activity is critical for reward/reinforcement and is tightly modulated by the laterodorsal tegmentum (LDT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established fact about VTA function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "9dd1d3da-98ec-4707-875a-33158b7a4f95",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C2",
+      "claim": "VTA activity is tightly modulated by the laterodorsal tegmentum (LDT).",
+      "claim_type": "EXPLICIT",
+      "source": "Ventral tegmental area (VTA) activity is critical for reward/reinforcement and is tightly modulated by the laterodorsal tegmentum (LDT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established fact.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "4f63f3ef-4fda-47e4-bcba-e65d7cc78e14",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C3",
+      "claim": "In utero exposure to glucocorticoids (iuGC) triggers prominent motivation deficits.",
+      "claim_type": "EXPLICIT",
+      "source": "In utero exposure to glucocorticoids (iuGC) triggers prominent motivation deficits but nothing is known about the impact of this exposure in the LDT-VTA circuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known finding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "2081f394-736e-4dcb-ad7e-50cd01a1cbbc",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C4",
+      "claim": "iuGC-rats have long-lasting changes in cholinergic markers in the LDT.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that iuGC-rats have long-lasting changes in cholinergic markers in the LDT, together with a decrease in LDT basal neuronal activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "d05eb003-7d07-42d8-9b20-d462dfe751b8",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C5",
+      "claim": "iuGC-rats have a decrease in LDT basal neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that iuGC-rats have long-lasting changes in cholinergic markers in the LDT, together with a decrease in LDT basal neuronal activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by electrophysiology data in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "5c65d4cc-834a-4ab2-80ff-65460ebaf7ef",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C6",
+      "claim": "Upon LDT stimulation, iuGC animals present a decrease in the magnitude of excitation in the VTA.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, upon LDT stimulation, iuGC animals present a decrease in the magnitude of excitation and an increase in VTA inhibition, as a result of a shift in the type of cells that respond to the stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by electrophysiology data in Figure 2k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "09b02deb-2e90-4a9f-be30-1d72d438df21",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C7",
+      "claim": "Upon LDT stimulation, iuGC animals present an increase in VTA inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, upon LDT stimulation, iuGC animals present a decrease in the magnitude of excitation and an increase in VTA inhibition, as a result of a shift in the type of cells that respond to the stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by electrophysiology data in Figure 2o.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "95f6c565-03ff-4760-84f3-85d25a0d3e00",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C8",
+      "claim": "The changes in VTA responses to LDT stimulation in iuGC animals result from a shift in the type of cells that respond to the stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, upon LDT stimulation, iuGC animals present a decrease in the magnitude of excitation and an increase in VTA inhibition, as a result of a shift in the type of cells that respond to the stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data in Figure 2h showing different proportions of putative dopaminergic and GABAergic neurons responding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "24674f4d-3b0f-42a9-8e06-a234e0fa3622",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C9",
+      "claim": "iuGC animals present motivational deficits that are rescued by selective optogenetic activation of the LDT-VTA pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with LDT-VTA dysfunction, we show that iuGC animals present motivational deficits that are rescued by selective optogenetic activation of this pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by behavioral data in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "cb4c69fe-5e1e-4c11-9f0a-0f2424c9470a",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C10",
+      "claim": "LDT-VTA optogenetic stimulation is reinforcing.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we also show that LDT-VTA optogenetic stimulation is reinforcing, and that iuGC animals are more susceptible to the reinforcing properties of LDT-VTA stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by CPP and RTPP data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "e1e85b45-391b-4000-9f1b-41a04392f949",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C11",
+      "claim": "iuGC animals are more susceptible to the reinforcing properties of LDT-VTA stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we also show that LDT-VTA optogenetic stimulation is reinforcing, and that iuGC animals are more susceptible to the reinforcing properties of LDT-VTA stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by CPP data in Figure 4e-f showing that lower stimulation induces preference in iuGC but not control animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "c17b7a91-fe22-4953-9f40-5861395e0086",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C12",
+      "claim": "The VTA comprises dopaminergic (~65%), GABAergic (~30%), and glutamatergic neurons (~5%).",
+      "claim_type": "EXPLICIT",
+      "source": "The VTA comprises dopaminergic (~65%), GABAergic (~30%), and glutamatergic neurons (~5%) (Nair-Roberts et al., 2008; Yamaguchi et al., 2011) that receive inputs from diverse brain regions, including the laterodorsal tegmentum (LDT) (Woolf and Butcher, 1986; Cornwall et al., 1990; Oakman et al., 1995; Oakman et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "3fdebafa-1b5d-453a-a0f5-a273ec2dee1f",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C13",
+      "claim": "The VTA receives inputs from diverse brain regions, including the laterodorsal tegmentum (LDT).",
+      "claim_type": "EXPLICIT",
+      "source": "The VTA comprises dopaminergic (~65%), GABAergic (~30%), and glutamatergic neurons (~5%) (Nair-Roberts et al., 2008; Yamaguchi et al., 2011) that receive inputs from diverse brain regions, including the laterodorsal tegmentum (LDT) (Woolf and Butcher, 1986; Cornwall et al., 1990; Oakman et al., 1995; Oakman et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "a6b6bf7e-384e-4989-8e38-a792d50fc14c",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C14",
+      "claim": "Exposure to unexpected rewards can activate VTA dopaminergic neurons culminating in the release of dopamine in the nucleus accumbens (NAc).",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have shown that exposure to unexpected rewards, or cues that predict rewards, can activate VTA dopaminergic neurons culminating in the release of dopamine in the nucleus accumbens (NAc) (Roitman et al., 2004; Stuber et al., 2005; Stuber et al., 2008; Schultz et al., 1997; Bromberg-Martin et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "1c8eecff-f432-464a-8a16-c06093139c14",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C15",
+      "claim": "Cues that predict rewards can activate VTA dopaminergic neurons culminating in the release of dopamine in the nucleus accumbens (NAc).",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have shown that exposure to unexpected rewards, or cues that predict rewards, can activate VTA dopaminergic neurons culminating in the release of dopamine in the nucleus accumbens (NAc) (Roitman et al., 2004; Stuber et al., 2005; Stuber et al., 2008; Schultz et al., 1997; Bromberg-Martin et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "72efd231-6841-4e8c-b867-d28365329ce1",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C16",
+      "claim": "VTA dopaminergic neuron activity is tightly modulated by cholinergic projections.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this activity is tightly modulated by cholinergic projections (Omelchenko and Sesack, 2005; Omelchenko and Sesack, 2006), with an additional contribution of glutamatergic projections, arising from the LDT (Cornwall et al., 1990; Oakman et al., 1999; Lammel et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "8570c496-cb9c-4fb9-8e52-2290b905239b",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C17",
+      "claim": "Glutamatergic projections from the LDT contribute to VTA dopaminergic neuron activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this activity is tightly modulated by cholinergic projections (Omelchenko and Sesack, 2005; Omelchenko and Sesack, 2006), with an additional contribution of glutamatergic projections, arising from the LDT (Cornwall et al., 1990; Oakman et al., 1999; Lammel et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "f279fb75-e6e3-4e98-90a1-73dd24b3b3c6",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C18",
+      "claim": "LDT input is vital for the activity of dopaminergic cells in the VTA.",
+      "claim_type": "EXPLICIT",
+      "source": "This input is vital for the activity of dopaminergic cells in the VTA, facilitating dopamine-related behaviors involved in reward signaling or encoding reward prediction signals (Lodge and Grace, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "bccc5ff9-19ba-4336-b629-cc0ef87c7849",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C19",
+      "claim": "Optogenetic stimulation of LDT neurons that project to the VTA enhances conditioned place preference.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, recent studies have shown that optogenetic stimulation of LDT neurons that project to the VTA enhances conditioned place preference (Lammel et al., 2012) and operant responses in rodents (Steidl and Veverka, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "3e4aada5-dbac-49ad-8d78-cb934b2027ac",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C20",
+      "claim": "Optogenetic stimulation of LDT neurons that project to the VTA enhances operant responses in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, recent studies have shown that optogenetic stimulation of LDT neurons that project to the VTA enhances conditioned place preference (Lammel et al., 2012) and operant responses in rodents (Steidl and Veverka, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "6129bdb2-3686-4c45-8738-a2bc0f9fad84",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C21",
+      "claim": "The mesolimbic system is particularly vulnerable to the effects of prenatal stress/high levels of glucocorticoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, different labs have shown that the mesolimbic system is particularly vulnerable to the effects of prenatal stress/high levels of glucocorticoids (GCs) (Matthews, 2000; Boksa and El-Khodor, 2003; McArthur et al., 2005; Le\u00e3o et al., 2007; Rodrigues et al., 2011; Borges et al., 2013a; Soares-Cunha et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "aa38c2ae-2260-454e-b74d-48df3752b326",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C22",
+      "claim": "Prenatal stress/high levels of glucocorticoids may increase the risk to develop neuropsychiatric disorders in adulthood, namely depression, anxiety and addiction.",
+      "claim_type": "EXPLICIT",
+      "source": "These changes may increase the risk to develop different neuropsychiatric disorders in adulthood, namely depression, anxiety and addiction (Seckl, 2008; Rodrigues et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "0831a86e-9f2c-494d-888c-51d4a0f5316d",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C23",
+      "claim": "GCs can induce acetylcholine release.",
+      "claim_type": "EXPLICIT",
+      "source": "This is particularly intriguing because GCs can induce acetylcholine release (Finkelstein et al., 1985; Gilad et al., 1985; Imperato et al., 1989) and bind to GC-responsive elements of cholinergic enzymes, namely choline acetyltransferase (ChAT) and acetylcholine esterase (AChE) to control their expression (Berse and Blusztajn, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "dfec10e6-abff-4933-aac2-ef5888069f57",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C24",
+      "claim": "GCs bind to GC-responsive elements of choline acetyltransferase (ChAT) to control its expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This is particularly intriguing because GCs can induce acetylcholine release (Finkelstein et al., 1985; Gilad et al., 1985; Imperato et al., 1989) and bind to GC-responsive elements of cholinergic enzymes, namely choline acetyltransferase (ChAT) and acetylcholine esterase (AChE) to control their expression (Berse and Blusztajn, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "3507d2a6-be02-499d-a2fd-13cc8b1d9aa1",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C25",
+      "claim": "GCs bind to GC-responsive elements of acetylcholine esterase (AChE) to control its expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This is particularly intriguing because GCs can induce acetylcholine release (Finkelstein et al., 1985; Gilad et al., 1985; Imperato et al., 1989) and bind to GC-responsive elements of cholinergic enzymes, namely choline acetyltransferase (ChAT) and acetylcholine esterase (AChE) to control their expression (Berse and Blusztajn, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "1598ad01-4355-4f45-b7c8-152533ff5e6f",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C26",
+      "claim": "Stress changes cholinergic enzymes expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, it has been shown that stress changes cholinergic enzymes expression (Finkelstein et al., 1985; Kaufer et al., 1998), either by inducing an alternative splicing of AChE gene (Nijholt et al., 2004), or by modulating the epigenetic status of its promoter regions (Sailaja et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "888cf1ab-6a76-49e7-b31c-a1009a933aab",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C27",
+      "claim": "Prenatal GC exposure induces a long-lasting hyperanxious state associated with an increase in the recruitment of cholinergic cells from the LDT.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance, we have previously shown that prenatal GC exposure induces a long-lasting hyperanxious state associated with an increase in the recruitment of cholinergic cells from the LDT (Borges et al., 2013b), suggesting that GCs are able to program the LDT, which prompted us to evaluate the impact of prenatal GC in the LDT-VTA circuitry and its impact in reward-related behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "5f1607e0-d4bb-4b8d-b3aa-740800b36861",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C28",
+      "claim": "iuGC animals had a significant increase in the density of the cholinergic population of the LDT at 30 days of age.",
+      "claim_type": "EXPLICIT",
+      "source": "iuGC animals had a significant increase in the density of the cholinergic population of the LDT at 30 days of age (post-hoc Bonferroni; CTR(30 days) vs. iuGC(30 days): t(25) = 2.616, p=0.0446) that persisted until adulthood (post-hoc Bonferroni; CTR(90 days) vs. iuGC(90 days): t(25) = 3.971, p=0.0016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with statistical analysis and shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "aec54e73-8f1d-4aa4-b802-2191eb927535",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C29",
+      "claim": "The increase in the density of the cholinergic population of the LDT in iuGC animals persisted until adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "iuGC animals had a significant increase in the density of the cholinergic population of the LDT at 30 days of age (post-hoc Bonferroni; CTR(30 days) vs. iuGC(30 days): t(25) = 2.616, p=0.0446) that persisted until adulthood (post-hoc Bonferroni; CTR(90 days) vs. iuGC(90 days): t(25) = 3.971, p=0.0016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with statistical analysis and shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "6b244676-d0a1-45b2-8767-c1c88df5e5d1",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C30",
+      "claim": "Other brain regions containing cholinergic neurons such as the nucleus basalis of Meynert or the NAc remained unaltered in iuGC animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Other brain regions containing cholinergic neurons such as the nucleus basalis of Meynert or the NAc remained unaltered (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "9dcd0279-3668-4136-b474-0625aea93c5e",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C31",
+      "claim": "ChAT gene expression levels were increased at 3 and 30 days of age in iuGC animals.",
+      "claim_type": "EXPLICIT",
+      "source": "ChAT gene expression levels were increased at 3 and 30 days of age in iuGC animals (Figure 1d; post-hoc Bonferroni; CTR(3 days) vs. iuGC(3 days): t(24) = 3.383, p=0.0074; CTR(30 days) vs. iuGC(30 days): t(24) = 3.053, p=0.0164; CTR(90 days) vs. iuGC(90 days): t(24) = 2.494, p=0.059).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with statistical analysis and shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "4f589fe9-b2f3-4354-ae04-63703f81d1f5",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C32",
+      "claim": "Decreased AChE gene expression levels were found in adult iuGC animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Decreased AChE levels were found in adult iuGC animals (Figure 1e; post-hoc Bonferroni; CTR(3 days) vs. iuGC(3 days): t(23) = 1.24, p=0.6827; CTR(30 days) vs. iuGC(30 days): t(23) = 2.244, p=0.1043; CTR(90 days) vs. iuGC(90 days): t(23) = 3.298, p=0.0094).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with statistical analysis and shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "778df6c3-ae5a-4127-8546-afbf4997d5eb",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C33",
+      "claim": "VAChT mRNA levels were unchanged between groups in the LDT.",
+      "claim_type": "EXPLICIT",
+      "source": "We also evaluated the levels of another cholinergic marker, the vesicular acetylcholine transporter (VAChT) and found that mRNA levels were unchanged between groups in the LDT (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "39ea79fb-5c0e-4293-8b3c-45a706da6ec0",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C34",
+      "claim": "Western blot analysis confirmed the upregulation of ChAT in the iuGC group at all ages tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis confirmed the upregulation of ChAT (Figure 1f\u2013g; post-hoc Bonferroni; CTR(3 days) vs. iuGC(3 days): t(23) = 4.401, p=0.0006; CTR(30 days) vs. iuGC(30 days): t(23) = 2.762, p=0.0333; CTR(90 days) vs. iuGC(90 days): t(23) = 2.712, p=0.0373); and downregulation of AChE in the iuGC group at all ages tested (Figure 1f and h; post-hoc Bonferroni; CTR(3 days) vs. iuGC(3 days): t(18) = 4.73, p=0.0005; CTR(30 days) vs. iuGC(30 days): t(18) = 3.157, p=0.0164; post-hoc Bonferroni CTR(90 days) vs. iuGC(90 days): t(18) = 3.349, p=0.0107).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with statistical analysis and shown in Figure 1f-g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "1be83606-3ed5-408a-99aa-8f646b73520a",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C35",
+      "claim": "Western blot analysis confirmed the downregulation of AChE in the iuGC group at all ages tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis confirmed the upregulation of ChAT (Figure 1f\u2013g; post-hoc Bonferroni; CTR(3 days) vs. iuGC(3 days): t(23) = 4.401, p=0.0006; CTR(30 days) vs. iuGC(30 days): t(23) = 2.762, p=0.0333; CTR(90 days) vs. iuGC(90 days): t(23) = 2.712, p=0.0373); and downregulation of AChE in the iuGC group at all ages tested (Figure 1f and h; post-hoc Bonferroni; CTR(3 days) vs. iuGC(3 days): t(18) = 4.73, p=0.0005; CTR(30 days) vs. iuGC(30 days): t(18) = 3.157, p=0.0164; post-hoc Bonferroni CTR(90 days) vs. iuGC(90 days): t(18) = 3.349, p=0.0107).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with statistical analysis and shown in Figure 1f,h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "486385eb-6ca3-4419-8da5-b961b95e80b4",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C36",
+      "claim": "Gene and protein expression levels of glutamate transporter EAAC1 were not significantly affected by iuGC exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene and protein expression levels of glutamate transporter EAAC1 and GAD1/67 + GAD2/65 were not significantly affected by iuGC exposure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "8b825d2f-24e2-476a-bcce-7befa80d3f7e",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C37",
+      "claim": "Gene and protein expression levels of GAD1/67 + GAD2/65 were not significantly affected by iuGC exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene and protein expression levels of glutamate transporter EAAC1 and GAD1/67 + GAD2/65 were not significantly affected by iuGC exposure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "71a52cd6-1a62-4596-9989-02ee5676a138",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C38",
+      "claim": "No differences were found between groups regarding GR expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no differences between groups regarding GR expression (Figure 1\u2014figure supplement 3d,h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1\u2014figure supplement 3d,h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "31db1c8e-fa46-4957-9bed-5eadb05ab200",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C39",
+      "claim": "iuGC animals presented a VTA-NAc hypodopaminergic state.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work from our group showed that iuGC animals presented a VTA-NAc hypodopaminergic state (Le\u00e3o et al., 2007; Borges et al., 2013a; Soares-Cunha et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with supporting citations from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "b2d15650-0a75-4e82-a4e5-58fb855341be",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C40",
+      "claim": "The LDT innervates the VTA and can influence NAc dopamine release.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the LDT innervates the VTA and can influence NAc dopamine release (Blaha and Winn, 1993; Blaha et al., 1996; Forster and Blaha, 2000; Forster et al., 2002; Miller et al., 2002; Forster and Blaha, 2003), we decided to characterize the LDT-VTA circuit using in vivo single cell electrophysiology in anesthetized animals (Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "e7b458ff-d054-4c0e-abe6-1e3333794340",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C41",
+      "claim": "iuGC treatment significantly decreased the spontaneous activity of LDT neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "iuGC treatment significantly decreased the spontaneous activity of LDT neurons (Figure 2a\u2013b; t(128) = 4.674, p<0.0001, total number of cells: CTR = 36, iuGC = 94; nCTR = 8, niuGC = 11 animals).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with statistical analysis and shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "37f04444-d07b-4fef-85ce-5cd3416b3917",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C42",
+      "claim": "No differences were found in the basal activity of VTA between control and iuGC animals.",
+      "claim_type": "EXPLICIT",
+      "source": "No differences were found in the basal activity of VTA (Figure 2c\u2013d; t(70) = 0.0576, p=0.9542, total number of cells: CTR = 40, iuGC = 32; animals: CTR = 8, iuGC = 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with statistical analysis and shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "ed7f24b3-6e92-41b3-aa78-313b7f5be87e",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C43",
+      "claim": "Electrical stimulation at 0.5 Hz of the LDT evoked both excitatory and inhibitory responses in VTA neurons in contrasting percentages between control and iuGC animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrical stimulation at 0.5 Hz of the LDT evoked both excitatory and inhibitory responses in VTA neurons in contrasting percentages (Figure 2e; CTR: 50% excitatory and 30% inhibitory; iuGC: 31% excitatory and 44% inhibitory).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "27e9ef05-2d99-4b65-8f95-9fbf40d0c0cc",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C44",
+      "claim": "iuGC animals present a shift in the type of neurons that present excitatory responses, with an increase in pGABAergic neurons and concomitant decrease in pDAergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, iuGC animals present a shift in the type of neurons that present excitatory responses, with an increase in pGABAergic neurons and concomitant decrease in pDAergic neurons. Excitatory responses were observed in 70% of pDAergic and 20% of pGABAergic neurons in CTR animals versus 30% of pDAergic and 60% of pGABAergic neurons in iuGC animals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "8a147f99-a02a-4325-b56d-c7b4e9670f3f",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C45",
+      "claim": "The iuGC group presented an increase in pDAergic neurons showing inhibitory responses together with a decrease in pGABAergic neurons showing inhibitory responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding inhibition, the iuGC group presented an increase in pDAergic neurons together with a decrease in pGABAergic neurons (Figure 2h). Briefly, inhibitory responses were observed in 21% of pDAergic and 50% of pGABAergic neurons in CTR animals versus 57% of pDAergic and 28% of pGABAergic neurons in iuGC animals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "416b9751-3d9d-4785-9ae2-db91b5fe21ca",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C46",
+      "claim": "The onset of excitation in VTA neurons upon LDT electrical stimulation was significantly increased in iuGC group in comparison to control group.",
+      "claim_type": "EXPLICIT",
+      "source": "The onset of excitation was significantly increased in iuGC group in comparison to control group (Figure 2j; CTR: 0.45 \u00b1 0.114 ms vs. iuGC: 9.33 \u00b1 2.49 ms; t(30) = 4.637, p<0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with statistical analysis and shown in Figure 2j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "232e4a82-d53e-4785-acea-06c1a0300ad5",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C47",
+      "claim": "iuGC treatment reduced the magnitude of the excitatory response in VTA neurons upon LDT electrical stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, iuGC treatment reduced the magnitude and duration of the excitatory response (Figure 2k\u2013l; magnitude: t(30) = 3.723, p=0.0008; duration: t(30) = 2.196, p=0.0360).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with statistical analysis and shown in Figure 2k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "7bda81bd-8e84-4496-80aa-09221b94998d",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C48",
+      "claim": "iuGC treatment reduced the duration of the excitatory response in VTA neurons upon LDT electrical stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, iuGC treatment reduced the magnitude and duration of the excitatory response (Figure 2k\u2013l; magnitude: t(30) = 3.723, p=0.0008; duration: t(30) = 2.196, p=0.0360).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with statistical analysis and shown in Figure 2l.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "79c2b549-9d52-4bbc-9fe9-20c4ee9ece7f",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C49",
+      "claim": "The response magnitude of inhibitory responses in the VTA evoked by LDT electrical stimulation was significantly higher in iuGC animals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the response magnitude of inhibitory responses in the VTA evoked by LDT electrical stimulation was significantly higher in iuGC animals (Figure 2o; t(28) = 2.905, p=0.0071).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with statistical analysis and shown in Figure 2o.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "4e13ae5f-0751-43c3-b2e4-7115ae3cbaf6",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C50",
+      "claim": "The WGA\u2013Cre fusion protein is retrogradely transported.",
+      "claim_type": "EXPLICIT",
+      "source": "The WGA\u2013Cre fusion protein is retrogradely transported (Gradinaru et al., 2010), inducing the expression of cre-dependent ChR2-YFP only in LDT neurons that directly project to the VTA (Figure 3a\u2013c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "e8a6dae1-ffb3-4c89-a72a-6844ad909cc0",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C51",
+      "claim": "Optogenetic stimulation of LDT terminals in the VTA (30 pulses of 15 ms at 20 Hz) increases the firing rate of VTA neurons in both control and iuGC groups.",
+      "claim_type": "EXPLICIT",
+      "source": "As depicted in Figure 3d, optogenetic stimulation of LDT terminals (30 pulses of 15 ms at 20 Hz) induced an increase in firing rate of VTA neurons (Figure 3d, post-hoc Bonferroni test CTR-ChR2: baseline vs. stimulus - t(118) = 5.883, p<0.0001, stimulus vs. post-stimulus - t(118) = 3.749, p=0.0008; iuGC-ChR2: baseline vs. stimulus - t(118) = 10.99, p<0.0001; stimulus vs. post-stimulus - t(118) = 10.88, p<0.0001), eliciting a response in 69% and 71% of recorded cells of CTR and iuGC animals, respectively (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with statistical analysis and shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "caa66499-16df-4d4d-9589-423be98556c9",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C52",
+      "claim": "In CTR animals, 49% of VTA cells presented increased firing rate upon LDT terminal stimulation, and of these, 69% were pDAergic, 17% pGABAergic and 14% were categorized as 'other' neuronal subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "In CTR animals, 49% of cells presented increased firing rate upon stimulation, and of these, 69% were pDAergic, 17% pGABAergic and 14% were categorized as 'other' neuronal subtypes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "fc97736c-a25a-49f5-8bda-3ba7d1eada07",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C53",
+      "claim": "In CTR animals, 87% of VTA cells that presented inhibitory responses to LDT terminal stimulation were pGABAergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, 87% of cells that presented inhibitory responses were pGABAergic neurons (Figure 3f\u2013g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "66207741-79c3-47e4-b612-85a4b083879f",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C54",
+      "claim": "In iuGC animals, 44% of VTA cells presented increased firing rate upon LDT terminal stimulation, and the majority were pDAergic neurons (83%).",
+      "claim_type": "EXPLICIT",
+      "source": "In iuGC animals, 44% of cells presented increased firing rate upon stimulation, and the majority were pDAergic neurons (83%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "2e3efeff-914e-4cda-ae23-c7c402e78d38",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C55",
+      "claim": "In iuGC animals, 55% of VTA cells that presented inhibitory responses to LDT terminal stimulation were pDAergic neurons and 36% were considered to be pGABAergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, and clearly different from CTR animals, 55% of cells that presented inhibitory responses were pDAergic neurons and 36% were considered to be pGABAergic neurons (Figure 3g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "c673c97b-e1c4-428d-b64b-3588b86679f9",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C56",
+      "claim": "iuGC-ChR2 rats presented a significant decrease in breakpoint in comparison to CTR, CTR-YFP and CTR-ChR2 animals in the progressive ratio test.",
+      "claim_type": "EXPLICIT",
+      "source": "In the test day, iuGC-ChR2 rats presented a significant decrease in breakpoint in comparison to CTR, CTR-YFP and CTR-ChR2 animals (Figure 4a; 48,9% decrease; post-hoc Bonferroni test CTR vs. iuGC-ChR2: t(68) = 2.882, p=0.0317; CTR-YFP vs. iuGC-ChR2: t(68) = 2.78, p=0.0421; CTR-ChR2 vs. iuGC-ChR2: t(68) = 4.141, p=0.0006), with no differences in the number of pellets earned during the test (Figure 4\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with statistical analysis and shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "1a6a5f4f-e2d6-4187-a5b5-73fa3ae57c9d",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C57",
+      "claim": "Activation of LDT terminals in the VTA during cue exposure period reverted the breakpoint of iuGC animals but had no effect in CTR, CTR-eYFP and CTR-ChR2 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of LDT terminals in the VTA during cue exposure period (30 pulses of 15 ms at 20 Hz; around 15 stimulations per session) reverted the breakpoint of iuGC animals but had no effect in CTR, CTR-eYFP and CTR-ChR2 animals (Figure 4a\u2013c; post-hoc Bonferroni test CTR: t(34) = 0.1836, p>0.9999; CTR-ChR2: t(34) = 1.203, p=0.9498; CTR-eYFP: t(34) = 0.5099, p>0.9999; iuGC-ChR2: t(34) = 5.007, p<0.0001;).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with statistical analysis and shown in Figure 4a-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "fe525ba2-1121-46ff-96ac-b3098c8e59d1",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C58",
+      "claim": "If the LDT-VTA optogenetic activation occurred during the inter-trial interval (ITI) period of the test session, it did not revert iuGC-ChR2 motivational deficits.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, if the LDT-VTA optogenetic activation occurred during the inter-trial interval (ITI) period of the test session, it did not revert iuGC-ChR2 motivational deficits (Figure 4b\u2013c; post-hoc Bonferroni: t(34) = 0.5138, p>0.9999), suggesting that LDT-VTA activation elicits a positive behavioral response only when it occurs during specific periods of the test.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with statistical analysis and shown in Figure 4b-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "540b737b-c163-4bdc-b932-7c372e340052",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C59",
+      "claim": "When the number of pulses was increased to 80 pulses of 15 ms at 20 Hz, an increase in the breakpoint of CTR-ChR2 animals was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, when we increased the number of pulses, we observed an increase in the breakpoint of CTR-ChR2 animals (post-hoc Bonferroni: t(22) = 3.666, p=0.0054) when compared to breakpoint of CTR or CTR-eYFP animals (post-hoc Bonferroni CTR-ChR2 vs. CTR: t(44) = 3.075, p=0.0217; CTR-ChR2 vs. CTR-eYFP: t(44) = 3.194, p=0.0156).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with statistical analysis and shown in Figure 4\u2014figure supplement 2a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "d936e7ff-4583-4e8d-a143-5d0907b664f0",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C60",
+      "claim": "LDT-VTA stimulation (30 pulses of 15 ms at 20 Hz every 60 s) elicited conditioning in iuGC group, given by increased preference for the stimulus-associated chamber.",
+      "claim_type": "EXPLICIT",
+      "source": "LDT-VTA stimulation (30 pulses of 15 ms at 20 Hz every 60 s) elicited conditioning in iuGC group, given by increased preference for the stimulus-associated chamber, ON side, (Figure 4e\u2013f; post-hoc Bonferroni: t(20) = 5.892, p<0.0001), whereas it did not shift preference in CTR and CTR-eYFP animals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with statistical analysis and shown in Figure 4e-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "578b87db-52e8-4095-82f3-e73905cb27a7",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C61",
+      "claim": "If the number of stimulus is increased (80 pulses of 15 ms every 15 s), conditioning can be induced in CTR-ChR2 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if we increase the number of stimulus (80 pulses of 15 ms every 15 s), we were able to induce conditioning in CTR-ChR2 animals (Figure 4\u2014figure supplement 2c; t(8) = 4.737, p=0.0015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with statistical analysis and shown in Figure 4\u2014figure supplement 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "4b8886e7-295a-42e4-84a9-9ec19ae2023c",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C62",
+      "claim": "Stimulation of LDT terminals in the VTA was sufficient to elicit preference for the stimulation-paired chamber in both CTR-ChR2 and iuGC-ChR2 groups in the real-time place preference test.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that stimulation of LDT terminals in the VTA was sufficient to elicit preference for the stimulation-paired chamber in both CTR-ChR2 and iuGC-ChR2 groups (Figure 4h; post-hoc Bonferroni CTR-ChR2: t(23) = 8.212, p<0.0001; iuGC-ChR2 t(23) = 8.748, p<0.0001) with no effect on control groups (CTR and CTR-eYFP) (post-hoc Bonferroni CTR: t(23) = 0.1981, p>0.9999; CTR-eYFP: t(23) = 1.784, p>0.9999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with statistical analysis and shown in Figure 4h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "deaf943f-b8ea-4eea-95cc-6fe04ac94b7d",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C63",
+      "claim": "Prenatal exposure to GCs alters the number of ChAT+ cells in the LDT.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that prenatal exposure to GCs alters the number of ChAT+ cells and induces long-lasting expression changes on cholinergic markers (ChAT and AChE) in the LDT, but had no effect on glutamatergic or GABAergic markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "13fb08f2-a9fd-4ed2-8532-67935108cf35",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C64",
+      "claim": "Prenatal exposure to GCs induces long-lasting expression changes on cholinergic markers (ChAT and AChE) in the LDT.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that prenatal exposure to GCs alters the number of ChAT+ cells and induces long-lasting expression changes on cholinergic markers (ChAT and AChE) in the LDT, but had no effect on glutamatergic or GABAergic markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "120e519c-e713-4a63-a6a8-b4551d056f97",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C65",
+      "claim": "Prenatal exposure to GCs had no effect on glutamatergic or GABAergic markers in the LDT.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that prenatal exposure to GCs alters the number of ChAT+ cells and induces long-lasting expression changes on cholinergic markers (ChAT and AChE) in the LDT, but had no effect on glutamatergic or GABAergic markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "ed3ffe59-52d7-4473-8ec7-22f29a8ac9bc",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C66",
+      "claim": "Both ChAT and AChE contain a glucocorticoid response element (GRE) in their gene loci.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are particularly interesting because both ChAT and AChE contain a glucocorticoid response element (GRE) in their gene loci, pinpointing a direct transcriptional regulation by GCs (Finkelstein et al., 1985; Gilad et al., 1985; Imperato et al., 1989; Berse and Blusztajn, 1997; Battaglia and Ogliari, 2005), although this remains to be confirmed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "090ccfa4-9497-4e92-ba90-aa90625d82b5",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C67",
+      "claim": "In adulthood iuGC animals present normal basal levels of corticosterone.",
+      "claim_type": "EXPLICIT",
+      "source": "These cholinergic changes observed in iuGC group are more likely to derive from a new equilibrium set in utero by GC exposure rather than by changes in the hypothalamic\u2013pituitary\u2013adrenal (HPA) axis, since in adulthood iuGC animals present normal basal levels of corticosterone (Blaha and Winn, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "9fd0173d-cd1e-438f-b716-1738c6083dd0",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C68",
+      "claim": "GC-exposed animals displayed differential methylation status of dopamine receptor D2 promoter region, accompanied by long-lasting gene/protein expression changes in the NAc.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, GC-exposed animals displayed differential methylation status of dopamine receptor D2 promoter region, accompanied by long-lasting gene/protein expression changes in the NAc (Rodrigues et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "ac85b13f-df3b-4b7e-9ab8-e153b52273d8",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C69",
+      "claim": "The LDT presents decreased basal neuronal activity in iuGC animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the LDT presents decreased basal neuronal activity, and that LDT electrical stimulation produces a differential response in the VTA of iuGC animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "ba219faf-60da-484e-9ec9-88d60b2594fb",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C70",
+      "claim": "LDT electrical stimulation produces a differential response in the VTA of iuGC animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the LDT presents decreased basal neuronal activity, and that LDT electrical stimulation produces a differential response in the VTA of iuGC animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "8bfb7c14-4653-41d8-8e16-decc52ac6e56",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C71",
+      "claim": "iuGC group presented a decrease in the magnitude and duration of excitatory responses in the VTA upon LDT stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, iuGC group presented a decrease in the magnitude and duration of excitatory responses in the VTA, and inversely, the inhibitory response was increased, suggesting that the function of the LDT-VTA pathway was compromised.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "ea62c44f-1bea-4eb3-8fa7-b7b09d30e7fc",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C72",
+      "claim": "The inhibitory response in the VTA upon LDT stimulation was increased in iuGC animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, iuGC group presented a decrease in the magnitude and duration of excitatory responses in the VTA, and inversely, the inhibitory response was increased, suggesting that the function of the LDT-VTA pathway was compromised.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "0b061fe1-99d1-40b1-80d8-a0e5044a7fea",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C73",
+      "claim": "The latency of VTA excitatory responses to LDT electrical stimulation was substantially increased in iuGC animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the latency of VTA excitatory responses to LDT electrical stimulation was substantially increased in iuGC animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "ec40d44c-fb16-433f-bb19-f853b47c8ef7",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C74",
+      "claim": "The delay in latency of VTA excitatory responses is not observed upon optical excitation of LDT-VTA terminals, pinpointing to changes in axonal conductivity.",
+      "claim_type": "EXPLICIT",
+      "source": "A combination of pre- and post-synaptic iuGC-induced changes may contribute for this phenomenon, however, because this delay is not observed upon optical excitation of LDT-VTA terminals, it pinpoints to changes in axonal conductivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an inference from the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "305412de-e049-4259-8a09-881cc12412b6",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C75",
+      "claim": "The LDT mediates a divergent excitation/inhibition influence on mesoaccumbens neurons that is likely to excite DAergic cells and inhibit GABA neurons of this region.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, Omelchenko and colleagues suggested that the LDT mediates a divergent excitation/inhibition influence on mesoaccumbens neurons that is likely to excite DAergic cells and inhibit GABA neurons of this region (Omelchenko and Sesack, 2005; Omelchenko and Sesack, 2006); which is in accordance with our data in control animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "09838fed-b017-4497-b86a-db1d65c36c9c",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C76",
+      "claim": "The LDT provides the tonic input necessary for maintaining burst firing of DAergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The LDT provides the tonic input necessary for maintaining burst firing of DAergic neurons (Lodge and Grace, 2006) and dopamine release to the NAc (Blaha et al., 1996; Forster and Blaha, 2000), contributing to reward behaviors (Lammel et al., 2012; Steidl and Veverka, 2015; Xiao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "7f753eec-9bdf-44a4-a1d8-556c947eb101",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C77",
+      "claim": "Phasic activation of VTA DAergic neurons can induce behavioral conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, phasic activation of VTA DAergic neurons can induce behavioral conditioning (Tsai et al., 2009) and facilitate positive reinforcement (Adamantidis et al., 2011; Witten et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "b0fb04fe-2346-48cd-8f80-aad8d0455e70",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C78",
+      "claim": "VTA GABAergic neurons provide local inhibition of DAergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, VTA GABAergic neurons provide local inhibition of DAergic neurons (but also long-range inhibition of projection regions, including the NAc), and their activation disrupts reward consummatory behavior (van Zessen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "1d334080-aa5f-479b-be4c-572c6d1630c4",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C79",
+      "claim": "Activation of VTA GABAergic neurons disrupts reward consummatory behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, VTA GABAergic neurons provide local inhibition of DAergic neurons (but also long-range inhibition of projection regions, including the NAc), and their activation disrupts reward consummatory behavior (van Zessen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "cbfd4b12-c1fe-456e-b9c0-09f13a265605",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C80",
+      "claim": "In iuGC animals there is a shift in the LDT-VTA evoked responses: an increase of inhibition of DAergic neurons and simultaneous decrease of inhibition of GABAergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, in iuGC animals we observe a shift in the LDT-VTA evoked responses: an increase of inhibition of DAergic neurons and simultaneous decrease of inhibition of GABAergic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "87131297-083b-41d4-9ccf-59766f21db19",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C81",
+      "claim": "The shift in LDT-VTA evoked responses suggests that VTA DAergic neurons are less active in iuGC animals.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that VTA DAergic neurons are less active, which is in accordance with the observed decreased basal levels of dopamine in the NAc of iuGC animals (Le\u00e3o et al., 2007; Rodrigues et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an inference from the data with supporting citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "0181fefa-3d44-4ae5-b74c-c2a701b674b9",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C82",
+      "claim": "iuGC animals exhibited impaired cue-driven motivational drive.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming the functional relevance of the abovementioned electrophysiological data, we have previously shown that iuGC animals exhibited impaired cue-driven motivational drive (Soares-Cunha et al., 2014; Soares-Cunha et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with supporting citations from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "c4aec268-86e6-40c5-b069-38fffd3c042c",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C83",
+      "claim": "Brief optogenetic activation of LDT-VTA terminals during cue exposure was sufficient to rescue the motivation of iuGC animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, brief optogenetic activation of LDT-VTA terminals during cue exposure was sufficient to rescue the motivation of iuGC animals, with no major impact on control animals, proving that iuGC exposure induces changes in this circuit that are translated into motivational deficits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "e8483730-95c0-48d1-a6d0-c70eb9b6ade6",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C84",
+      "claim": "When LDT-VTA stimulation was done during the time-out period of the test, it did not induce any behavioral effect.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when LDT-VTA stimulation was done during the time-out period of the test, it did not induce any behavioral effect, reinforcing the importance of specific time windows for the stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "48eeff59-7eff-470e-b563-6a837bc367f2",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C85",
+      "claim": "Activation of LDT-VTA specific projections shifts animal's preference for the stimulus-associated chamber in both CPP and RTPP tests.",
+      "claim_type": "EXPLICIT",
+      "source": "To further understand the role of LDT-VTA in reward behaviors, we tested the animals in two different conditioning paradigms, the non-contingent CPP and the contingent RTPP. Activation of LDT-VTA specific projections shifts animal's preference for the stimulus-associated chamber in both tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "cf5abf40-a15c-461b-8a37-eba1e5bf12a9",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C86",
+      "claim": "iuGC animals seem more susceptible to the reinforcing effects of LDT-VTA stimulation because a lower stimulation protocol was able to shift iuGC group preference but had no effect in control animals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, iuGC animals seem more susceptible to these reinforcing effects because a lower stimulation protocol (30 pulses of 15 ms at 20 Hz) was able to shift iuGC group preference but had no effect in control animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "e6e37778-b00e-4698-a9f4-db7ec5149ca9",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C87",
+      "claim": "iuGC animals presented increased morphine-associated CPP in comparison to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this vulnerability to rewarding/reinforcing stimulus is in accordance with previous data from our team showing that iuGC animals presented increased morphine-associated CPP in comparison to controls (Rodrigues et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "8efb1ef5-1c28-44c4-a359-5b10b5246b29",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C88",
+      "claim": "The increased vulnerability of iuGC animals to the effects of LDT-VTA stimulation is due to an imbalance in the excitation-inhibition responses in the VTA triggered by LDT inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thus tempting to speculate that the increased vulnerability of iuGC animals to the effects of LDT-VTA stimulation is due to an imbalance in the excitation-inhibition responses in the VTA triggered by LDT inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "073b46c9-0892-4600-8db1-60931b4deb77",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C89",
+      "claim": "iuGC exposure leads to long-lasting molecular and physiological alterations in the LDT-VTA circuit in parallel with prominent motivational deficits.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, iuGC exposure leads to long-lasting molecular and physiological alterations in the LDT-VTA circuit in parallel with prominent motivational deficits, which were rescued by optogenetic activation of the LDT-VTA terminals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "57413185-cfc5-4b31-93b5-3e76e1bf9b8d",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C90",
+      "claim": "Motivational deficits in iuGC animals were rescued by optogenetic activation of the LDT-VTA terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, iuGC exposure leads to long-lasting molecular and physiological alterations in the LDT-VTA circuit in parallel with prominent motivational deficits, which were rescued by optogenetic activation of the LDT-VTA terminals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "05b5c0d7-25e5-46fb-8bcc-ac13d67b4fd2",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C91",
+      "claim": "Activation of LDT-VTA inputs is reinforcing.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we showed that activation of LDT-VTA inputs is reinforcing and that iuGC animals appear to be more vulnerable to the reinforcing properties of this stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "fea95388-5c5b-4fca-9a62-3dd016b8df71",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C92",
+      "claim": "iuGC animals appear to be more vulnerable to the reinforcing properties of LDT-VTA stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we showed that activation of LDT-VTA inputs is reinforcing and that iuGC animals appear to be more vulnerable to the reinforcing properties of this stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "a6c25a49-58e9-4d64-91fc-bff8f44e8336",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C93",
+      "claim": "Pregnant Wistar rats received subcutaneous injections of dexamethasone at 1 mg kg\u22121 on gestation days 18 and 19 to create the iuGC model.",
+      "claim_type": "EXPLICIT",
+      "source": "Subcutaneous injections of a synthetic GC, dexamethasone (DEX, Sigma, Germany) at 1 mg kg\u22121 (iuGC animals) or vehicle (sesame oil, Sigma, Germany; CTR- control animals) were administered on gestation days 18 and 19 (details of the model can be found in Le\u00e3o et al., 2007; Borges et al., 2013a; Soares-Cunha et al., 2014; Rodrigues et al., 2012; Borges et al., 2013b; Blaha and Winn, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section describing the animal model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "39fb68c7-800e-4791-a3b7-88905eb3412c",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "claim_id": "C94",
+      "claim": "The iuGC model partially mimics the clinical administration of GCs on women in risk of preterm labour to promote fetal lung maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "This model, named iuGC (from in utero exposure to GCs) partially mimics the clinical administration of GCs on women in risk of preterm labour (~8% of pregnancies) to promote fetal lung maturation or to manage congenital adrenal hyperplasia during pregnancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section describing the animal model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "57e70eb5-daeb-4596-a7df-1dddf859d56d",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "In utero glucocorticoid (iuGC) exposure causes long-lasting increases in cholinergic markers in the LDT. Specifically, iuGC animals show increased density of ChAT+ cells and elevated ChAT gene and protein expression from postnatal day 3 through adulthood (90 days), along with decreased AChE expression in adults. These changes are specific to the LDT, as other cholinergic brain regions remain unaltered.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C35 provide converging evidence from immunohistochemistry, qPCR, and Western blot across multiple developmental timepoints (3, 30, and 90 days). Statistical analyses with appropriate post-hoc tests support the findings. The regional specificity (C30) and negative control for VAChT (C33) strengthen the conclusion. The data consistently demonstrate selective, persistent cholinergic alterations in the LDT.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "126eaabe-9c78-4eac-b1c6-4691a38b765b",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In utero glucocorticoid exposure does not affect glutamatergic (EAAC1), GABAergic (GAD1/67, GAD2/65), or glucocorticoid receptor (GR) markers in the LDT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 demonstrate specificity of the iuGC effect to cholinergic markers. Both gene and protein expression data for glutamatergic and GABAergic markers show no significant differences, as does GR expression. These negative results are important controls that strengthen the specificity of the cholinergic findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "e6867496-26ca-4962-b8ef-008d8955bcae",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "iuGC treatment decreases spontaneous neuronal activity in the LDT but does not affect basal VTA activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 are supported by in vivo electrophysiology data with appropriate statistical tests and adequate sample sizes (CTR=36 cells/8 animals, iuGC=94 cells/11 animals for LDT; CTR=40 cells/8 animals, iuGC=32 cells/11 animals for VTA). The finding that basal VTA activity is unchanged despite LDT hypoactivity is important for understanding circuit-level effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "9870f936-40db-4691-a466-f5ccd71bf032",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Electrical stimulation of the LDT produces altered VTA responses in iuGC animals, characterized by a shift in cell-type specific responses. In iuGC animals, there is decreased excitation of putative dopaminergic (pDAergic) neurons and increased excitation of putative GABAergic (pGABAergic) neurons, along with increased inhibition of pDAergic neurons. Additionally, excitatory responses show increased latency and decreased magnitude and duration, while inhibitory responses show increased magnitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C49 provide comprehensive electrophysiological characterization with statistical support. The cell-type classification based on waveform and firing rate (referenced in C44-C45) follows established methods, though the authors acknowledge some controversy. The convergent findings of altered response proportions, latencies, magnitudes, and durations provide strong evidence for LDT-VTA circuit dysfunction in iuGC animals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "d5d5b0f9-38ac-4097-abad-882ea6750be6",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Optogenetic stimulation of LDT terminals in the VTA increases VTA neuronal firing in both control and iuGC animals, but the cell-type distribution of responses differs between groups. In control animals, excitatory responses are predominantly in pDAergic neurons (69%) and inhibitory responses in pGABAergic neurons (87%). In iuGC animals, excitatory responses remain predominantly pDAergic (83%), but inhibitory responses shift to predominantly pDAergic neurons (55%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 use pathway-specific optogenetic stimulation to confirm and extend the electrical stimulation findings. The retrograde WGA-Cre approach ensures specificity for LDT\u2192VTA projections. The finding that optogenetic stimulation does not show the increased latency observed with electrical stimulation (C46) supports the interpretation of axonal conductivity changes. Statistical analyses are appropriate and sample sizes adequate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "2c3289be-9a6b-4b11-b564-c3467a459f45",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "iuGC animals show motivational deficits in a progressive ratio task (decreased breakpoint), which are rescued by optogenetic activation of LDT-VTA terminals during cue exposure but not during inter-trial intervals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 demonstrate functional behavioral consequences of the circuit alterations. The specificity of the rescue effect to cue exposure periods (C57 vs C58) is particularly compelling and suggests a role for LDT-VTA in cue-driven motivation. Statistical analyses are appropriate with multiple control groups. The temporal specificity of the optogenetic rescue strengthens the causal interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "474f3665-d8b1-43b3-be82-eb0f6f4f12dc",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Higher intensity optogenetic stimulation (80 pulses vs 30 pulses) of LDT-VTA terminals increases breakpoint in control animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 addresses an apparent discrepancy with prior literature showing LDT-VTA stimulation is reinforcing. The dose-response relationship demonstrates that control animals require higher stimulation intensity to show motivational enhancement, consistent with the hypothesis that iuGC animals have altered circuit sensitivity. Statistical support is adequate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "138de940-1378-4dfc-8da7-c7247cb016f5",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "LDT-VTA optogenetic stimulation induces conditioned place preference (CPP) in iuGC animals at lower stimulation intensities (30 pulses) than required for control animals (80 pulses).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 demonstrate that iuGC animals are more susceptible to the reinforcing properties of LDT-VTA stimulation. The dose-response relationship parallels the progressive ratio findings and supports increased circuit sensitivity in iuGC animals. Statistical analyses are appropriate with adequate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "810d6d76-7958-4b30-a8fb-257b573d7dee",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In a real-time place preference (RTPP) test, optogenetic stimulation of LDT terminals in the VTA elicits preference for the stimulation-paired chamber in both control and iuGC animals expressing ChR2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 demonstrates the reinforcing properties of LDT-VTA stimulation in a contingent paradigm. Unlike CPP, both groups show preference at the same stimulation parameters, suggesting the contingent nature of RTPP may be more sensitive. Statistical analyses are robust with appropriate controls (CTR and CTR-eYFP showing no preference).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "e73cfb9a-96e2-40e2-ac78-263610aea83d",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prenatal glucocorticoid exposure selectively alters cholinergic markers (ChAT and AChE) in the LDT without affecting glutamatergic or GABAergic markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 summarize the molecular findings from the discussion. These are well-supported by the data claims C28-C37. The specificity to cholinergic markers is an important conclusion that suggests selective vulnerability or regulation of cholinergic systems by glucocorticoids.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "f379b334-0530-46ec-ad63-4bae65c619b0",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "iuGC animals show decreased basal LDT neuronal activity and altered VTA responses to LDT stimulation, including decreased magnitude and duration of excitation, increased inhibition, and substantially increased latency of excitatory responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C73 summarize the electrophysiological findings from the discussion. These are well-supported by data claims C41-C49. The convergent evidence from multiple response parameters (latency, magnitude, duration, cell-type distribution) provides strong support for LDT-VTA circuit dysfunction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "7e0c0e39-44fc-4199-9ca5-ecb7970d642b",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The increased latency of VTA excitatory responses to LDT electrical stimulation is not observed with optogenetic stimulation of LDT-VTA terminals, suggesting changes in axonal conductivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 provides a mechanistic interpretation of the latency difference between electrical and optogenetic stimulation. This inference is logical and supported by the data, though the authors appropriately note that pre- and post-synaptic changes may also contribute. The interpretation is reasonable but would benefit from additional experiments to definitively establish axonal conductivity changes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "2a232929-f41c-4341-9191-32b1cce38bcc",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "In iuGC animals, there is a shift in LDT-VTA evoked responses with increased inhibition of dopaminergic neurons and decreased inhibition of GABAergic neurons, suggesting reduced VTA dopaminergic neuron activity consistent with previously observed decreased NAc dopamine levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C81 integrate the current electrophysiological findings with prior work on dopamine levels. The inference that altered LDT-VTA responses lead to reduced dopaminergic activity is logical and supported by convergent evidence, though it remains somewhat indirect. The consistency with prior findings (C39) strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "1a6dff0f-f010-4a04-9da4-f36a23ed3fe3",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Brief optogenetic activation of LDT-VTA terminals during cue exposure rescues motivational deficits in iuGC animals with minimal impact on controls, and stimulation during time-out periods has no behavioral effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 summarize the key behavioral rescue findings. The temporal specificity (cue exposure vs. time-out) is particularly important for establishing the functional role of LDT-VTA in cue-driven motivation. The data are well-supported by claims C57-C58.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "abb31315-4b61-4358-9543-99b9a69a20d2",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Optogenetic activation of LDT-VTA projections induces place preference in both CPP and RTPP tests, with iuGC animals showing increased susceptibility (responding to lower stimulation intensities than controls).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86 summarize the reinforcement findings across two behavioral paradigms. The convergent evidence from CPP and RTPP, along with the dose-response relationship, strongly supports increased vulnerability of iuGC animals to LDT-VTA stimulation. This is well-supported by data claims C60-C62.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "af97fa3d-dc98-4439-bb65-cbd3457295d0",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "iuGC exposure leads to long-lasting molecular and physiological alterations in the LDT-VTA circuit with associated motivational deficits that can be rescued by optogenetic activation. LDT-VTA activation is reinforcing, and iuGC animals show increased vulnerability to these reinforcing properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C92 provide an integrated summary of the major findings. These conclusions are well-supported by the convergent evidence from molecular (C28-C35), electrophysiological (C41-C55), and behavioral (C56-C62) experiments. The causal link between circuit alterations and behavior is strengthened by the optogenetic rescue experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "7a564b5e-e06e-4728-b92a-b2a78390ca53",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The increased vulnerability of iuGC animals to LDT-VTA stimulation is hypothesized to result from an imbalance in excitation-inhibition responses in the VTA triggered by LDT inputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C88 is explicitly presented as speculation in the discussion. While the hypothesis is reasonable and consistent with the electrophysiological findings (C43-C49), it remains mechanistically unproven. The authors appropriately frame this as speculation, and additional experiments would be needed to definitively establish this mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background knowledge and prior work establish that: (1) VTA activity is critical for reward and is modulated by LDT; (2) the mesolimbic system is vulnerable to prenatal glucocorticoids; (3) glucocorticoids can regulate cholinergic enzyme expression; (4) the iuGC model mimics clinical glucocorticoid administration; and (5) previous work showed iuGC animals have VTA-NAc hypodopaminergic state and motivational deficits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C3, C12-C27, C39-C40, C50, C66-C68, C75-C79, C82, C87, C94) provide essential background and context from prior literature. They are appropriately cited and establish the rationale for the current study. The prior findings from the authors' group (C27, C39, C82, C87) provide important context for interpreting the current results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    },
+    {
+      "id": "9cbf69ee-9516-4233-ab77-c4851d9bacd0",
+      "content_id": "e2344bc7-8e6d-4018-885b-670f9e2e78f3",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The iuGC animal model involves subcutaneous injection of dexamethasone (1 mg/kg) on gestational days 18 and 19.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C93 describes the experimental model used throughout the study. The methods are clearly described and appropriately referenced to prior work establishing this model. This is essential methodological information.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:40:59.306034Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5f1607e0-d4bb-4b8d-b3aa-740800b36861",
+      "result_id": "57e70eb5-daeb-4596-a7df-1dddf859d56d"
+    },
+    {
+      "claim_id": "aec54e73-8f1d-4aa4-b802-2191eb927535",
+      "result_id": "57e70eb5-daeb-4596-a7df-1dddf859d56d"
+    },
+    {
+      "claim_id": "6b244676-d0a1-45b2-8767-c1c88df5e5d1",
+      "result_id": "57e70eb5-daeb-4596-a7df-1dddf859d56d"
+    },
+    {
+      "claim_id": "9dcd0279-3668-4136-b474-0625aea93c5e",
+      "result_id": "57e70eb5-daeb-4596-a7df-1dddf859d56d"
+    },
+    {
+      "claim_id": "4f589fe9-b2f3-4354-ae04-63703f81d1f5",
+      "result_id": "57e70eb5-daeb-4596-a7df-1dddf859d56d"
+    },
+    {
+      "claim_id": "778df6c3-ae5a-4127-8546-afbf4997d5eb",
+      "result_id": "57e70eb5-daeb-4596-a7df-1dddf859d56d"
+    },
+    {
+      "claim_id": "39ea79fb-5c0e-4293-8b3c-45a706da6ec0",
+      "result_id": "57e70eb5-daeb-4596-a7df-1dddf859d56d"
+    },
+    {
+      "claim_id": "1be83606-3ed5-408a-99aa-8f646b73520a",
+      "result_id": "57e70eb5-daeb-4596-a7df-1dddf859d56d"
+    },
+    {
+      "claim_id": "486385eb-6ca3-4419-8da5-b961b95e80b4",
+      "result_id": "126eaabe-9c78-4eac-b1c6-4691a38b765b"
+    },
+    {
+      "claim_id": "8b825d2f-24e2-476a-bcce-7befa80d3f7e",
+      "result_id": "126eaabe-9c78-4eac-b1c6-4691a38b765b"
+    },
+    {
+      "claim_id": "71a52cd6-1a62-4596-9989-02ee5676a138",
+      "result_id": "126eaabe-9c78-4eac-b1c6-4691a38b765b"
+    },
+    {
+      "claim_id": "e7b458ff-d054-4c0e-abe6-1e3333794340",
+      "result_id": "e6867496-26ca-4962-b8ef-008d8955bcae"
+    },
+    {
+      "claim_id": "37f04444-d07b-4fef-85ce-5cd3416b3917",
+      "result_id": "e6867496-26ca-4962-b8ef-008d8955bcae"
+    },
+    {
+      "claim_id": "ed7f24b3-6e92-41b3-aa78-313b7f5be87e",
+      "result_id": "9870f936-40db-4691-a466-f5ccd71bf032"
+    },
+    {
+      "claim_id": "27e9ef05-2d99-4b65-8f95-9fbf40d0c0cc",
+      "result_id": "9870f936-40db-4691-a466-f5ccd71bf032"
+    },
+    {
+      "claim_id": "8a147f99-a02a-4325-b56d-c7b4e9670f3f",
+      "result_id": "9870f936-40db-4691-a466-f5ccd71bf032"
+    },
+    {
+      "claim_id": "416b9751-3d9d-4785-9ae2-db91b5fe21ca",
+      "result_id": "9870f936-40db-4691-a466-f5ccd71bf032"
+    },
+    {
+      "claim_id": "232e4a82-d53e-4785-acea-06c1a0300ad5",
+      "result_id": "9870f936-40db-4691-a466-f5ccd71bf032"
+    },
+    {
+      "claim_id": "7bda81bd-8e84-4496-80aa-09221b94998d",
+      "result_id": "9870f936-40db-4691-a466-f5ccd71bf032"
+    },
+    {
+      "claim_id": "79c2b549-9d52-4bbc-9fe9-20c4ee9ece7f",
+      "result_id": "9870f936-40db-4691-a466-f5ccd71bf032"
+    },
+    {
+      "claim_id": "e8a6dae1-ffb3-4c89-a72a-6844ad909cc0",
+      "result_id": "d5d5b0f9-38ac-4097-abad-882ea6750be6"
+    },
+    {
+      "claim_id": "caa66499-16df-4d4d-9589-423be98556c9",
+      "result_id": "d5d5b0f9-38ac-4097-abad-882ea6750be6"
+    },
+    {
+      "claim_id": "fc97736c-a25a-49f5-8bda-3ba7d1eada07",
+      "result_id": "d5d5b0f9-38ac-4097-abad-882ea6750be6"
+    },
+    {
+      "claim_id": "66207741-79c3-47e4-b612-85a4b083879f",
+      "result_id": "d5d5b0f9-38ac-4097-abad-882ea6750be6"
+    },
+    {
+      "claim_id": "2e3efeff-914e-4cda-ae23-c7c402e78d38",
+      "result_id": "d5d5b0f9-38ac-4097-abad-882ea6750be6"
+    },
+    {
+      "claim_id": "c673c97b-e1c4-428d-b64b-3588b86679f9",
+      "result_id": "2c3289be-9a6b-4b11-b564-c3467a459f45"
+    },
+    {
+      "claim_id": "1a6a5f4f-e2d6-4187-a5b5-73fa3ae57c9d",
+      "result_id": "2c3289be-9a6b-4b11-b564-c3467a459f45"
+    },
+    {
+      "claim_id": "fe525ba2-1121-46ff-96ac-b3098c8e59d1",
+      "result_id": "2c3289be-9a6b-4b11-b564-c3467a459f45"
+    },
+    {
+      "claim_id": "540b737b-c163-4bdc-b932-7c372e340052",
+      "result_id": "474f3665-d8b1-43b3-be82-eb0f6f4f12dc"
+    },
+    {
+      "claim_id": "d936e7ff-4583-4e8d-a143-5d0907b664f0",
+      "result_id": "138de940-1378-4dfc-8da7-c7247cb016f5"
+    },
+    {
+      "claim_id": "578b87db-52e8-4095-82f3-e73905cb27a7",
+      "result_id": "138de940-1378-4dfc-8da7-c7247cb016f5"
+    },
+    {
+      "claim_id": "4b8886e7-295a-42e4-84a9-9ec19ae2023c",
+      "result_id": "810d6d76-7958-4b30-a8fb-257b573d7dee"
+    },
+    {
+      "claim_id": "deaf943f-b8ea-4eea-95cc-6fe04ac94b7d",
+      "result_id": "e73cfb9a-96e2-40e2-ac78-263610aea83d"
+    },
+    {
+      "claim_id": "13fb08f2-a9fd-4ed2-8532-67935108cf35",
+      "result_id": "e73cfb9a-96e2-40e2-ac78-263610aea83d"
+    },
+    {
+      "claim_id": "120e519c-e713-4a63-a6a8-b4551d056f97",
+      "result_id": "e73cfb9a-96e2-40e2-ac78-263610aea83d"
+    },
+    {
+      "claim_id": "ac85b13f-df3b-4b7e-9ab8-e153b52273d8",
+      "result_id": "f379b334-0530-46ec-ad63-4bae65c619b0"
+    },
+    {
+      "claim_id": "ba219faf-60da-484e-9ec9-88d60b2594fb",
+      "result_id": "f379b334-0530-46ec-ad63-4bae65c619b0"
+    },
+    {
+      "claim_id": "8bfb7c14-4653-41d8-8e16-decc52ac6e56",
+      "result_id": "f379b334-0530-46ec-ad63-4bae65c619b0"
+    },
+    {
+      "claim_id": "ea62c44f-1bea-4eb3-8fa7-b7b09d30e7fc",
+      "result_id": "f379b334-0530-46ec-ad63-4bae65c619b0"
+    },
+    {
+      "claim_id": "0b061fe1-99d1-40b1-80d8-a0e5044a7fea",
+      "result_id": "f379b334-0530-46ec-ad63-4bae65c619b0"
+    },
+    {
+      "claim_id": "ec40d44c-fb16-433f-bb19-f853b47c8ef7",
+      "result_id": "7e0c0e39-44fc-4199-9ca5-ecb7970d642b"
+    },
+    {
+      "claim_id": "cbfd4b12-c1fe-456e-b9c0-09f13a265605",
+      "result_id": "2a232929-f41c-4341-9191-32b1cce38bcc"
+    },
+    {
+      "claim_id": "87131297-083b-41d4-9ccf-59766f21db19",
+      "result_id": "2a232929-f41c-4341-9191-32b1cce38bcc"
+    },
+    {
+      "claim_id": "c4aec268-86e6-40c5-b069-38fffd3c042c",
+      "result_id": "1a6dff0f-f010-4a04-9da4-f36a23ed3fe3"
+    },
+    {
+      "claim_id": "e8483730-95c0-48d1-a6d0-c70eb9b6ade6",
+      "result_id": "1a6dff0f-f010-4a04-9da4-f36a23ed3fe3"
+    },
+    {
+      "claim_id": "48eeff59-7eff-470e-b563-6a837bc367f2",
+      "result_id": "abb31315-4b61-4358-9543-99b9a69a20d2"
+    },
+    {
+      "claim_id": "cf5abf40-a15c-461b-8a37-eba1e5bf12a9",
+      "result_id": "abb31315-4b61-4358-9543-99b9a69a20d2"
+    },
+    {
+      "claim_id": "073b46c9-0892-4600-8db1-60931b4deb77",
+      "result_id": "af97fa3d-dc98-4439-bb65-cbd3457295d0"
+    },
+    {
+      "claim_id": "57413185-cfc5-4b31-93b5-3e76e1bf9b8d",
+      "result_id": "af97fa3d-dc98-4439-bb65-cbd3457295d0"
+    },
+    {
+      "claim_id": "05b5c0d7-25e5-46fb-8bcc-ac13d67b4fd2",
+      "result_id": "af97fa3d-dc98-4439-bb65-cbd3457295d0"
+    },
+    {
+      "claim_id": "fea95388-5c5b-4fca-9a62-3dd016b8df71",
+      "result_id": "af97fa3d-dc98-4439-bb65-cbd3457295d0"
+    },
+    {
+      "claim_id": "8efb1ef5-1c28-44c4-a359-5b10b5246b29",
+      "result_id": "7a564b5e-e06e-4728-b92a-b2a78390ca53"
+    },
+    {
+      "claim_id": "9e29eb19-48a6-4b52-8006-e3373ae073d0",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "9dd1d3da-98ec-4707-875a-33158b7a4f95",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "4f63f3ef-4fda-47e4-bcba-e65d7cc78e14",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "c17b7a91-fe22-4953-9f40-5861395e0086",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "3fdebafa-1b5d-453a-a0f5-a273ec2dee1f",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "a6b6bf7e-384e-4989-8e38-a792d50fc14c",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "1c8eecff-f432-464a-8a16-c06093139c14",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "72efd231-6841-4e8c-b867-d28365329ce1",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "8570c496-cb9c-4fb9-8e52-2290b905239b",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "f279fb75-e6e3-4e98-90a1-73dd24b3b3c6",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "bccc5ff9-19ba-4336-b629-cc0ef87c7849",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "3e4aada5-dbac-49ad-8d78-cb934b2027ac",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "6129bdb2-3686-4c45-8738-a2bc0f9fad84",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "aa38c2ae-2260-454e-b74d-48df3752b326",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "0831a86e-9f2c-494d-888c-51d4a0f5316d",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "dfec10e6-abff-4933-aac2-ef5888069f57",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "3507d2a6-be02-499d-a2fd-13cc8b1d9aa1",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "1598ad01-4355-4f45-b7c8-152533ff5e6f",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "888cf1ab-6a76-49e7-b31c-a1009a933aab",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "31db1c8e-fa46-4957-9bed-5eadb05ab200",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "b2d15650-0a75-4e82-a4e5-58fb855341be",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "4e13ae5f-0751-43c3-b2e4-7115ae3cbaf6",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "ed3ffe59-52d7-4473-8ec7-22f29a8ac9bc",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "090ccfa4-9497-4e92-ba90-aa90625d82b5",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "9fd0173d-cd1e-438f-b716-1738c6083dd0",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "305412de-e049-4259-8a09-881cc12412b6",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "09838fed-b017-4497-b86a-db1d65c36c9c",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "7f753eec-9bdf-44a4-a1d8-556c947eb101",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "b0fb04fe-2346-48cd-8f80-aad8d0455e70",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "1d334080-aa5f-479b-be4c-572c6d1630c4",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "0181fefa-3d44-4ae5-b74c-c2a701b674b9",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "e6e37778-b00e-4698-a9f4-db7ec5149ca9",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "39fb68c7-800e-4791-a3b7-88905eb3412c",
+      "result_id": "b17b2085-a5e8-4f9e-8efb-ae9cdac3ac81"
+    },
+    {
+      "claim_id": "a6c25a49-58e9-4d64-91fc-bff8f44e8336",
+      "result_id": "9cbf69ee-9516-4233-ab77-c4851d9bacd0"
+    }
+  ],
+  "comparisons": []
+}

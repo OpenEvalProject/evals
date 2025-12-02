@@ -1,0 +1,2419 @@
+{
+  "submission": {
+    "id": "75db4169-9431-4540-877b-7e43544505ca",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:29:09.012474Z",
+    "updated_at": "2025-12-02T00:29:09.012474Z"
+  },
+  "content": [
+    {
+      "id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "submission_id": "75db4169-9431-4540-877b-7e43544505ca",
+      "content_type": "manuscript",
+      "content_text": "# A SLC4 family bicarbonate transporter is critical for intracellular pH regulation and biomineralization in sea urchin embryos\n\n## Authors\n\n- Marian Y Hu<sup>1</sup> ([ORCID: 0000-0002-8914-139X](https://orcid.org/0000-0002-8914-139X)) \u2020\n- Jia-Jiun Yan<sup>1</sup>\n- Inga Petersen<sup>1</sup>\n- Nina Himmerkus<sup>1</sup>\n- Markus Bleich<sup>1</sup>\n- Meike Stumpp<sup>3</sup>\n\n### Affiliations\n\n1. Institute of Physiology Christian-Albrechts University of Kiel Kiel Germany\n2. Institute of Cellular and Organismic Biology Taipei Taiwan\n3. Comparative Immunobiology, Institute of Zoology Christian-Albrechts University of Kiel Kiel Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nEfficient pH regulation is a fundamental requisite of all calcifying systems in animals and plants but with the underlying pH regulatory mechanisms remaining largely unknown. Using the sea urchin larva, this work identified the SLC4 HCO3- transporter family member SpSlc4a10 to be critically involved in the formation of an elaborate calcitic endoskeleton. SpSlc4a10 is specifically expressed by calcifying primary mesenchyme cells with peak expression during de novo formation of the skeleton. Knock-down of SpSlc4a10 led to pH regulatory defects accompanied by decreased calcification rates and skeleton deformations. Reductions in seawater pH, resembling ocean acidification scenarios, led to an increase in SpSlc4a10 expression suggesting a compensatory mechanism in place to maintain calcification rates. We propose a first pH regulatory and HCO3- concentrating mechanism that is fundamentally linked to the biological precipitation of CaCO3. This knowledge will help understanding biomineralization strategies in animals and their interaction with a changing environment.\n\n## Introduction\n\nSea urchin larvae with their elaborate calcareous endoskeleton have been studied by embryologists for over a century to promote our understanding of calcification in biological systems (Boveri, 1901; Decker and Lennarz, 1988; Wilt, 2002). Similar to mammalian osteoblasts that arise from mesenchymal stem cells (MSC), the sea urchin larval skeleton is also produced by a specific cell line \u2013 the primary mesenchyme cells (PMCs) (Wilt, 2002). During the blastula stage, PMCs ingress into the blastocoel and migrate in a stereotypical pattern, forming a posterior ring around the blastopore (Ettensohn, 1990; Gustafson and Kinnander, 1956). Amorphous calcium carbonate (ACC) is precipitated within intracellular vesicles that exocytose their content into the lumen of a syncytial cable formed by the PMCs. This process involves at least 40 distinct skeletal matrix proteins supporting the formation of the mature calcite spicules within this extracellular space (Beniash et al., 1997; Benson et al., 1986). Some of these matrix proteins are also present in intracellular compartments where they may play a role in the stabilization of ACC (Urry et al., 2000; Wilt, 2002). Furthermore, recent findings suggest that Ca2+ also enters calcification vesicles by endocytosis of seawater into a vesicular network within the PMCs (Vidavsky et al., 2016).\n\nDuring de novo formation of the larval skeleton in the mid-gastrula stage, calcium uptake increases ten-fold, compared to the blastula stage. 70% of this calcium is incorporated into the newly formed spicules (Nakano et al., 1963), while the remaining 30% reflects the uptake of calcium into cell organelles, including mitochondria and the smooth endoplasmatic reticulum (Decker et al., 1987). Besides the availability of Ca2+, dissolved inorganic carbon (DIC, i.e. CO2, HCO3- and CO32-) is required at equimolar levels for the precipitation of CaCO3. Radioisotopic measurements demonstrate that up to 63% of carbon for spicule formation derives from respiratory CO2,\u00a0while the remaining DIC that is incorporated into the spicules derives from seawater (Sikes et al., 1981). Based on the assumption that HCO3- rather than CO2 or CO32- supplies the remaining 37% of DIC for calcification, 1.6 protons are generated per molecule CO32- precipitated. An even stronger local acidification at the site of ACC formation can be expected considering CO2 as the major source of DIC. Based on these calculations, it has been suggested that PMCs are capable of efficiently handling this proton load using pH regulatory mechanisms (Sikes et al., 1981). However, such potential acid-base regulatory mechanisms in PMCs remain poorly understood despite their importance in the formation of the larval skeleton.\n\nA previous study demonstrated that pHi regulation of PMCs is dependent on external Na+ as well as HCO3- to compensate for an intracellular acidosis indicating Na+-dependent HCO3- buffering mechanisms (Stumpp et al., 2012). The importance of HCO3- transport in the calcifying PMCs is underlined by the observation that DIDS (4,4\u00b4-diisothiocyano-2,2\u00b4\u00b4-disulfonic acid stilbene), an inhibitor for most SLC4 family transporters (Romero et al., 2004) inhibits uptake and deposition of 45Ca into spicules (Yasumasu et al., 1985). Accordingly, it has been concluded that these compounds block the supply of HCO3- for ACC formation rather than the ability of PMC cells to form their syncytium as shown for other blockers (Basse et al., 2015; Mitsunaga et al., 1986). Furthermore, H+-export pathways involving Na+/H+ exchange were suggested to remove protons from the cytosol of PMCs although amiloride, an inhibitor for Na+-dependent H+ exchange had no effect on spicule formation and pHi regulation of PMCs (Mitsunaga et al., 1987; Stumpp et al., 2012). Here, we hypothesize that HCO3- transport pathways, via a so far unidentified HCO3- transport mechanism affect the calcification process in different ways: (i) HCO3- transport supplies the cell with substrate for the precipitation of CaCO3 and (ii) the regulation of intracellular HCO3- homeostasis is critical to buffer excess protons generated by the intravesicular precipitation of CaCO3.\n\nApart from an endogenous generation of protons through biomineralization, pH regulatory mechanisms of sea urchin larvae have received considerable attention in the context of CO2 driven sea water acidification (Byrne et al., 2013; Stumpp et al., 2012). The sea urchin larva has been extensively studied with respect to their potential for physiological acclimation and evolutionary adaptation to predicted near-future ocean acidification. These studies suggested that energy allocations and ion regulatory efforts are key processes that determine the resilience to reductions in seawater pH (Pan et al., 2015; Pespeni et al., 2013; Stumpp et al., 2012). These studies also indicated that despite moderate impacts at the organismal level, the compensatory reactions at the cellular level are substantial. Thus, a better mechanistic understanding for cellular processes affected by changes in seawater pH is essential to explain energy allocations in the sea urchin larva exposed to experimental ocean acidification.\n\nFour Slc4 transporters were identified in the genome of the purple sea urchin, Strongylocentrotus purpuratus (Tu et al., 2012). To date, little is known regarding the function and tissue-specific localization of Slc4 transporters in the sea urchin larva. During the period of early skeleton formation in the sea urchin embryo (30\u201348 hr post fertilization), highest transcript abundance was detected for the SpSlc4a10 gene compared to all other Slc4 transporters (Tu et al., 2014). This gene shares highest sequence identity with the mammalian Slc4a10 (NBCn2) gene that encodes an electroneutral sodium-dependnet Cl-/HCO3- exchanger with Cl- self-exchange activity (Parker et al., 2008). This prompted us to hypothesize that SpSlc4a10 may be critically involved in HCO3- transport during formation of the larval skeleton. Here, we test the role of SpSlc4a10 in the maintenance of intracellular pH homeostasis and as a DIC concentration mechanism in the calcifying PMCs of the sea urchin embryo. Since pHi regulation is intrinsically linked to precipitation of ACC, these mechanisms will fill an important knowledge gap regarding the fundamental principles of biomineralization in the sea urchin larva.\n\n## Results\n\n### Expression pattern of the sea urchin SpSlc4a10 bicarbonate transporter\n\nThe SpSlc4a10 has widespread expression in blastula embryos at 1\u00a0day post-fertilization (dpf), including the PMCs surrounding the blastopore (Figure 1A). In the late gastrula (prism stage, 2 dpf), SpSlc4a10 is highly expressed in the PMCs during the formation of the syncycial cables. Besides a strong staining within the main cell bodies, SpSlc4a10 is also expressed in the syncycial cables and filopodia of PMCs (Figure 1\u2014figure supplement 1). In the pluteus larva (3 dpf) expression of SpSlc4a10 was exclusively detected in PMCs located at the tips of the primary and secondary rods. Negative control using sense probes validate the specificity of the staining (Figure 1A lower panel). Among the four SLC4 transporters identified in the sea urchin genome (SpSlc4a3, SpSlc4a2, SpSlc4a11 and SpSlc4a10) the PMC specific SpSlc4a10 clusters within the clade of the Slc4a7-10, electroneutral Na+-coupled HCO3- transporters found in vertebrates (Figure 1\u2014figure supplement 2). The amino acid sequence of the sea urchin SpSlc4a10 shares 44% similarity to the mammalian Slc4a10 (NBCn2) orthologue (Figure 1\u2014figure supplement 3). During the first 5 days of development, SpSlc4a10 expression peaks at 2 dpf, accompanied by the onset of larval Ca2+ accumulation (Figure 1C). After this, expression levels decrease, while high Ca2+ uptake rates are maintained up to 5 dpf.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/36600/elife-36600-fig1-v2.jpg)\n\n**Figure 1.:** (A) Localization of SpSlc4a10 expression in the sea urchin larva along the larval development until 3 days post fertilization (dpf). Expression was detected in primary mesenchyme cells (PMCs) of the late blastula stage forming a ring around the blastopore. In the early pluteus larva SpSlc4a10 expression is exclusively found in PMCs located at ends of the spicules. (B) SpSlc4a10 expression levels and total calcium content along the early development of sea urchin larvae raised under control conditions. Bars represent mean\u00a0\u00b1\u00a0SD; n\u00a0=\u00a03. dpf: days post fertilization; LV, lateral view; VV, vegetal view; OV, oral view.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36600/elife-36600-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Whole-mount in situ hybridization using the SpSlc4a10 antisense probe demonstrated high expression levels of this gene in the cell bodies of PMCs and staining is also found in the syncytial cables. (B) High-magnification image of four PMCs and the filopodia of the PMC syncytium that are positively stained.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36600/elife-36600-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Phylogenetic analysis performed on deduced amino acid sequences of the four S. purpuratus SLC4 family transporters and those from vertebrates and other marine invertebrates (see Supplementary file 1-Table S1 for sequence information).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/36600/elife-36600-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Alignment of deduced amino acid sequences demonstrates 44% identity between the human Slc4a10 and the sea urchin SpSlc4a10.\n\n### Phenotype of the SpSlc4a10 morphant\n\nLight microscopic analyses using polarized light (birefringence) demonstrated a disturbed formation of the larval skeleton in morphants compared to KCl injected control larvae (Figure 2A) or scramble MO control larvae (150 \u00b5M, Figure 2\u2014figure supplement 1). The length of the primary rod is decreased in a dose-dependent manner with increasing SpSlc4a10 morpholino (MO) concentrations (Figure 2B), while the tri-partite digestive tract develops normally. This reduction in primary rod length is accompanied by a decreased total Ca2+ content in SpSlc4a10 morphants (Figure 2B, inset). Besides the predominant expression of SpSlc4a10 in PMCs, a Na+/K+-ATPase (SpAtp1a3) and a Na+/H+-exchanger (SpSlc9a2) isoform that are mainly expressed in stomach epithelial cells are also expressed in PMCs of late gastrula and pluteus larvae (Figure 2C). A four-fold up-regulation of SpSlc4a10 expression levels in the morphants compared to control larvae at 3dpf demonstrates the specificity of the morpholino applied. In addition, SpSlc9a2 was significanly downregulated in the morphants (Figure 2D). No differences were detected for the Na+/K+-ATPase coding gene SpAtp1a3 between control larvae and the SpSlc4a10 morphants (Figure 2D). In situ hybridization using the SpSlc4a10 anti-sense probe demonstrates an irregular pattern of SpSlc4a10 positive PMCs in the morphants compared to control larvae (Figure 2E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/36600/elife-36600-fig2-v2.jpg)\n\n**Figure 2.:** (A) Light microscopic analyses with polarized light (birefringence) were used to detect deformations of the larval skeleton in SpSlc4a10 morphants (4 dpf). The tri-partite digestive tract is normally developed in the SpSlc4a10 morphants (st, stomach). (B) Length of the primary rod and total calcium content (inset) were used as indicators for reductions in calcification in 4 dpf morphants. Grey dots indicate individual measurements from experimental replicates (n\u00a0=\u00a04) (C) Expression of SpAtp1a3 (Na+/K+-Atpase; NKA) and SpSlc9a2 (Na+/H+-exchanger; NHE) in PMCs and stomach epithelial cells. (D) mRNA levels of SpSlc4a10, SpAtp1a3 and SpSlc9a2\u00a0in control and SpSlc4a10-MO injected larvae. (E) Ring formation (2 dpf) of the SpSlc4a10 expressing PMCs is disrupted in SpSLC4a10 morphants (LV, lateral view; VV, vegetal view). Bars represent mean\u00a0\u00b1\u00a0SD; n\u00a0=\u00a03\u20134 (*p<0.05; **p<0.01).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36600/elife-36600-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The primary rod length was used as an indicator for skeletal deformations. Fertilized eggs were injected with 0.5 M KCL, the vehicle of the MOs used in the present work. The concentration of the scramble morpholino was adjusted to 150 \u00b5M which corresponds to the concentration of SpSlc4a10 MO used for all experiments.\n\n### Immunohistology and westernblot analyses\n\nImmunohistological analyses using a costom made antibody designed against the sea urchin SpSlc4a10 protein demonstrate strong immunoreactivity with primary mesenchyme cells and their syncytial cables (Figure 3A). High-magnification confocal microscopy indicates a localiazation of the protein in the plasma membrane as well as subcellular structures within the cytosol (Figure 3B). Negative controls by blocking the primary antibody with the immunizing peptide demonstrated no unspecific binding of the secondary antibody (Figure 3C). Westernblot analyses demonstrated positive immunoreactivity of our SpSlc4a10 antibody with a 135 KDa protein which is in the predicted size range of this protein (1183 amino acids; \u2248130 KDa). Western-blot analyses demonstrate decreased SpSlc4a10 protein levels in MO-injected larvae when compared to control animals validating the knock-down by our SpSlc4a10 morpholino.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/36600/elife-36600-fig3-v2.jpg)\n\n**Figure 3.:** (A) Immunohistological analyses using a custom made antibody designed against the sea urchin SpSlc4a10 protein demonstrating high concentrations of this protein in PMCs of late gastrula larvae (2 dpf). (B) High-magnification confocal microscopy showing the sub-callular localization of the SpSlc4a10 protein. (C) Negative controls were performed by blocking the primary antibody with the immunizing peptide (PMCs indicated by arrowheads) (D) Westernblot analysis demonstrated specific immunoreactivity of the SpSlc4a10 antibody with a 135 KDa protein that disappeared in the peptide compensation assay. (E) Validation of the SpSlc4a10 knock-down by quantification of protein levels using western-blot analyses. Bars represent mean\u00a0\u00b1SD; n\u00a0=\u00a03 (**p<0.01).\n\n### Effect of CO2-driven seawater acidification on Ca2+ accumulation and SpSlc4a10 expression\n\nUnder control conditions (pH 8.1), sea urchin embryos increase total Ca2+ content at high rates of 1.75 nmol larva\u22121 day\u22121 during the formation of the larval skeleton (2\u20134 dpf) (Figure 4A). CO2-induced reductions in seawater pH by 0.4 and 0.6 pH units resulted in a reduction in developmental rates (Figure 4\u2014figure supplement 1) associated with a reduction in Ca2+ accumulation (Figure 4A). Normalization of larval Ca2+ content to bodylength (correction for developmental delay [Stumpp et al., 2011]) demonstrated no effect on the ability to accumulate Ca2+ under acidified conditions (Figure 4B). Maintained calcification of larvae under acidified conditions is accompanied by an increased expression of SpSlc4a10 at the onset of skeleton formation at 2 dpf (Figure 4C). This up-regulation of SpSlc4a10 at the onset of skeleton formation is still evident when expression levels were normalized for body length correcting for the developmental delay (Figure 4D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/36600/elife-36600-fig4-v2.jpg)\n\n**Figure 4.:** (A) Total Ca2+ content of larvae raised under three different pH conditions. (B) Larval Ca2+ content plotted as a function of body length to normalize for the developmental delay caused by acidified conditions (for morphometric analyses see Supplemental information Figure 4\u2014figure supplement 1). (C) SpSlc4a10 mRNA levels normalized to the housekeeping gene SpZ12 during development under different pH conditions. (D) Expression pattterns for SpSlc4a10 along the early development plotted as a function of body length. Different letters denote significant differences between treatments. Bars represent mean\u00a0\u00b1\u00a0SD; n\u00a0=\u00a03.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36600/elife-36600-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Larval densities were constant at 140 to 160 larvae per ml over the experimental duration of 5 days. No effects on the larval densities were observed between the three pH treatments. Larval growth expressed as body length (BL) followed a logarithmic curve along the period of 5 days. Regression analyses demonstrated significant differences in BL between the three pH treatments. Values are presented as mean\u00a0\u00b1\u00a0SD.\n\n### Intracellular pH regulation of PMCs\n\nIntracellular pH (pHi) regulatory abilities of PMCs were assessed by real-time ratiometric fluometry using the pH-sensitive dye BCECF-AM (Figure 5A). Exposure of PMCs from control animals to seawater containing 20 mM NH4Cl evoked an intracellular alkalosis by increasing pHi from 6.8 to 7.6. A slight compensation of the ammonia (NH3/NH4+) induced alkalosis was observed during a period of 10 min. Removal of ammonia resulted in an intracellular acidosis (pHi\u00a0=\u00a06.1) that was efficiently compensated within 5\u00a0min (Figure 5A,B). SpSlc4a10 morphants had a significantly decreased pHi (6.66\u00a0\u00b1\u00a00.17) compared to control larvae (6.87\u00a0\u00b1\u00a00.13) (Figure 5B; Supplementary file 1-Table S2), and a significantly reduced ability to recover from the ammonia-induced acidosis during washout of NH3/NH4+. While control PMCs recover at a rate of 0.14\u00a0\u00b1\u00a00.05 pH units min\u22121 that of the morphants was sigificantly decreased to 0.05\u00a0\u00b1\u00a00.02 pH units min\u22121 (Figure 5B,C). Ratios were translated into pH values using the nigericin calibration method in combination with the depolarization of the membrane potential by high (150 mM) external [K+] (Figure 5D). Pharmacological experiments demonstrated that the recovery rate from an intracellular acidosis is sensitive to the anion exchange inhibitor 4,4'-Diisothiocyano-2,2'-stilbenedisulfonic acid (DIDS) in a dose-dependent manner (Figure 5E). Despite full inhibition of the DIDS-sensitive component of pHi regulation, PMCs remained capable of partly restoring pHi at lower rates in a similar fashion to that seen in the SpSlc4a10 morphants (Figure 5B,F).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/36600/elife-36600-fig5-v2.jpg)\n\n**Figure 5.:** (A) Ratiometric fluorimetry in primary mesencyme cells (PMCs) using the pH sensitive dye BCECF-AM. False colour images superimposed on transmission images at time points 1, 2, 3, 4 as indicated in (B). (B) Summarized data from the control period (control (1)), after addition and removal of NH3/NH4+ (alkalosis (2) and acidification (3); ammonium pulse), and during pHi recovery (4). (C) The recovery rate of the SpSlc4a10 morphants was significantly reduced (see Supplementary file 1-table S2 for summary of prameters measured). (D) Calibration curve of BCECF-AM in PMCs obtained at different pH levels in the presence of the ionophore nigericin and 150 mM K+ allowing the translation of ratios to pH values. (E) Acid\u2013base regulatory abilities of PMCs in the presence of 500 \u00b5M DIDS or only the vehicle (DMSO) as control. (F) The recovery rate from an intracellular acidosis is inhibited by DIDS in a dose-dependent manner with an IC50 value of 120 \u00b5M. Bars represent mean\u00a0\u00b1SD; *p<0.05 (n\u00a0=\u00a04\u20135 larvae with 3\u20135 cells measured per larvae).\n\n### Calcein pulse-chase experiments\n\nWe tested for Ca2+ incorporation abilities in SpSlc4a10 morphants (Figure 6A,B) and in larvae treated with the anion exchange inhibitor DIDS (Figure 6C,D) in comparison to control larvae. Late gastrula stage larvae were incubated in calcein for 3 hr and fluorescence intensities monitored using confocal microscopy. In addition to skeletal deformations, calcein incorporation was decreased in the SpSlc4a10 morphants at the three different locations including posterior rod: PR (\u221243%), junction: JC (\u221231%) and anterior rod: AR (\u221235%). In the presence of 10 \u00b5M and 100 \u00b5M DIDS, fluorescence intensities in the three spicule sections, were also significantly decreased. Average values of different spicule sections (inset Figure 6B) demonstrated 40% and 50% reductions in spicule fluorescence intensity in the presence of 10 \u00b5M and 100 \u00b5M DIDS, respectively.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/36600/elife-36600-fig6-v2.jpg)\n\n**Figure 6.:** (A) Larvae of the late gastrula stage (2 dpf) were incubated in 160 \u00b5M calcein for 3 hr and confocal microscopy was used to determine fluorescence intensities in the spicules at different locations (posterior rod: PR, junction: JC, anterior rod: AR) after the calcein pulse. (B) Flourescence intensities are decreased in the morphants in all three locations. (C) Calcein incorporation in the presence of 10 \u00b5M DIDS or only the vehicle (DMSO) as control. (D) Fluorescence intensities, reflecting the amount of Ca2+ precipitated into spicules during the calcein pulse, decreased in DIDS-treated larvae in a dose-dependent manner (inset: intensities for entire larval skeleton). Values are presented as mean\u00a0\u00b1\u00a0SD; n\u00a0=\u00a04 (with 2\u20133 larvae per replicate experiment: 9\u201311 individuals). Different letters denote significant diffrences between treatments. Same symbols used in Figure 5D indicate groups that were compared by one-way ANOVA. *p<0.05; **p<0.01.\n\n## Discussion\n\nThis study identified a SLC4-type bicarbonate transporter specifically expressed by primary mesenchyme cells (PMCs) of the sea urchin larva and demonstrated its role in the formation of the larval skeleton. In mammals, the SLC4 familiy can be categorized into three major clades of HCO3- and/or CO32- transporters including Na+-driven Cl-/HCO3- exchangers, electrogenic Na+ coupled HCO3- transporters and electroneutral Na+ coupled HCO3- transporters (Romero et al., 2013; Romero et al., 2004). Our phylogenetic analysis based on deduced amino acid sequences suggest that SpSlc4a10 has highest identity with the mammalian clade of electroneutral Na+ coupled HCO3-transporters, including Na+/HCO3- cotransporters (NBCn) and Na+-driven Cl-/HCO3- exchangers (NCBE) that were demonstrated to control pHi in neurons (Wang et al., 2000) and enable the transcellular passage of HCO3- across epithelial cells of the pancreatic duct and the renal proximal tubule (Guo et al., 2017; Ko et al., 2002). The human NBCn2 encoded by Slc4a10 has absolute requirements for Na+ and HCO3- and appears to be a Na+-dependent Cl-/HCO3- exchanger that is blocked in the presence of 200 \u00b5M DIDS (Parker et al., 2008). Earlier studies demonstrated that pHi regulation in PMCs is also highly Na+ and HCO3--dependent thereby supporting the involvement of an Na+-dependent HCO3- transport mechanism in the regulation of PMC pHi (Stumpp et al., 2012). Together with findings of the present work demonstrating that pHi regulation in PMCs is DIDS sensitive (IC50\u00a0=\u00a0120 \u00b5M) and that knock-down of SpSlc4a10 reduces the ability to compensate an intracellular acidosis, there is strong evidence that SpSlc4a10 plays a central role in controlling pHi of PMCs.\n\nACC is precipitated in intracellular vesicles which are subsequently exocytosed into the luminal space of the syncycial cable to form and maintain the larval skeleton (Vidavsky et al., 2014). Accordingly, protons generated during the formation of ACC must be removed from the vesicles into the cytosol to avoid an increasing intravesicular acidification leading to inhibition of CaCO3 precipitation. This uptake of protons into the cytosol may cause disturbances in pHi homeostasis if not actively compensated by buffering and secretion of protons. Here, the PMCs of the sea urchin larva share many common features with mammalian osteoblasts where precipitation of the calcium phosphate mineral, hydroxyapatite, is initiated in vesicles (Boonrungsiman et al., 2012). These vesicles are exocytosed from osteoblasts to deliver mineral to the protein matrix of the bone (Anderson, 2003). During mineral precipitation large amounts of acid are produced that need to be removed in order to maintain the slightly alkaline conditions at the site of bone formation (Brandao-Burch et al., 2005; Liu et al., 2011). Thus, osteoblasts also possess a high pHi regulatory capacity during biomineralization that is achieved by a basolateral Na+/H+ exchanger 1 (NHE1) and NHE6 as well as HCO3-/Cl- exchange mechanisms by the anion exchanger 2 (AE2) (Liu et al., 2011; Mobasheri et al., 1998). The present work demonstrates that similar to mammalian osteoblasts, PMCs of the sea urchin larva also possess pHi regulatory mechanisms to promote biomineralization. Highest expression of the PMC-specific bicarbonate transporter SpSlc4a10 is accompanied by the onset of skeleton formation in the sea urchin embryo and expression levels decrease in later stages that have lower calcification rates. The progressive down regulation of SpSlc4a10 is accompanied by a migration of SpSlc4a10 expressing cells toward the tips of the spicules during further development.\n\nImmunocytochemical analyses using a custom made antibody designed against the sea urchin SpSlc4a10 demonstrated high concentrations of this protein in PMCs. This suggests substantial HCO3- transport capacities by PMCs that may be associated with pHi regulation and accumulation of HCO3- to promote precipitation of CaCO3. Besides a localization of SpSlc4a10 in the plasma membrane, large intracellular compartments demonstrated positive immunoreactivity as well. In mammalian skeletal tissues AE2 has been associated with the Golgi apparatus, where it is hypothesized to control pH within the Golgi complex (Bronckers et al., 2009; Holappa et al., 2001). By controlling pH inside the Golgi, AE2 is believed to mediate posttranslational modification of matrix proteins, their packaging, transfer to the outer plasma membrane and exocytosis (Bronckers et al., 2009; Jansen et al., 2009). A lack of this protein in skeletogenic cells is often associated with osteoporosis-like skeletal defects (Jansen et al., 2009). Accordingly, future studies will address the function of the SpSlc4a10 transporter in subcellular compartments and organelles of PMCs.\n\nThe disturbance of skeletogenesis in the SpSlc4a10 morphants may be due to multiple factors, including (i) disturbance of PMC migration (ii) reductions in HCO3- supply (iii) decreased control of pHi. The phenotype of the SpSlc4a10 morphants was characterized by decreased calcification abilities and abnormally formed spicules, lacking or having irregular branchings from the primary rods. Localization of SpSlc4a10 positive PMCs in control and morphants indicated an abnormal migration of PMCs. Disturbance of migratory patterns and syncytium formation has been documented in several earlier studies using pharmacological approaches. For example loop diuretics, blocking the Na+/K+/2Cl- cotransporter (NKCC) inhibited the fusion and formation of cytoplasmic cords (Basse et al., 2015). Also the H+/K+-ATPase (HKA) inhibitor SCH28080 decreased calcification through impaired PMC fusion. However, while inhibition of HKA decreased pHi of PMCs, no changes in the migratory pattern were observed (Schatzberg et al., 2015). In the present study, the disruption of cell migration in the SpSlc4a10 morphants may be explained by changes in pHi gradients that can be critical for cell polarization (Martin et al., 2011). It has been demonstrated that inhibition of NHE1, an important regulator of pHi, caused pHi gradients to flatten or disappear. These gradients serve as an axis of movement in migrating cells and so their absence would likely affect migration (Martin et al., 2011). This hypothesis would be underlined by the down regulation of the Na+/H+-exchanger (SpSlc9a2) in the SpSlc4a10 morphants. Although these are likely explanations for the observed migratory defects, intracellular pH disturbances were demonstrated to be associated with a wide range of cellular dysfunctions (e.g. Kurkdjian and Guern, 1989; Madshus, 1988; Roos and Boron, 1981) that may also systemically disturb PMC migration.\n\nThe present work provides further evidence for the requirement of bicarbonate transport pathways to regulate pHi that are likely the primary cause for reduced and abnormal skeleton formation (Figure 7). We propose that reductions in calcification observed for the SpSlc4a10 morphants resulted from the decreased pHi regulatory ability of PMCs. The uncompensated proton load generated by the formation of ACC leads to an intracellular acidosis impairing futher precipitation of CaCO3. Furthermore, since 40% of the dissolved inorganic carbon (DIC) that is incorporated into spicules derives from the seawater (Sikes et al., 1981), it can be suggested that SpSlc4a10 may be also involved in a HCO3- concentrating mechanism to promote intracellular calcification. Corroborating ealier studies that demonstrated reductions in Ca45 uptake into spicules in the presence of the anion exchange inhibitor, DIDS (Yasumasu et al., 1985), the present work could show reduced incorporation of calcein in larvae treated with this compound. These reductions in calcification rates are accompanied by decreased pHi regulatory abilities under DIDS treatment. However, DIDS is a broad-band inhibitor for most SLC4 transporters, and has been demonstrated to potentially also inhibit the gastric-type H+/K+-ATPase in mammals (Sugita et al., 1999). Accordingly, it remains unresolved whether decreased pHi regulatory abilities under DIDS treatment can be attributed to an inhibition of HCO3- or H+ transport. Nonethless, the knock-down of the HCO3- transporter SpSlc4a10 caused similar reductions in pHi regulatory capacities and calcein incorporation into spicules providing strong evidence for SpSlc4a10 to be a key player controlling intracellular ACC formation in the sea urchin larva.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/36600/elife-36600-fig7-v2.jpg)\n\n**Figure 7.:** PMCs form a syncytium within the extraxellular matrix (ECM) that has a pH the same as sea water (SW) in which the larva develops. Amorphous calcium carbonate (ACC) is precipitated in intracellular vesicles and exocytosed to the growing calcite spicule. Dissolved inorganic carbon (DIC) is provided through endogenous (i.e. respiratory CO2) as well as exogenous (from the sea water) sources. SpSlc4a10 (NBC) is proposed to mediate the import of bicarbonate from the seawater and to buffer protons generated during the precipitation of CaCO3. Protons are exported from the vesicles through so far unknown pathways. Protons accumulating in the cytoplasm are potentially exported by the Na+/H+-exchanger (NHE) SpSlc9a2. Both secondary active transporters, NBC and NHE are driven by the Na+/K+-ATPase (NKA; SpAtp1a3) that is highly expressed by PMCs. In addition to its localization in the plasma membrane, NBC is associated with intracellular compartments including vesicles (1), vesicular networks (2) and vesicles fusing with the plasma membrane (3). n; nucleus.\n\nCO2-perturbation experiments relevant for near-future ocean acidification scenarios demonstrated that sea urchin larvae are capable of maintaining calcification rates despite reductions in seawater pH. Reductions in seawater pH were demonstrated to negatively impact calcification in many marine organisms due to a reduced availability of calcification substrates (e.g. HCO3- and CO32-) accompanied by enhanced dissolution of CaCO3 (Kroeker et al., 2013). To maintain calcification rates under acidified conditions PMCs must allocate energy to increase HCO3- / CO32- transport to the site of calcification and to export protons against steeper H+ gradients (Stumpp et al., 2012). While the concept of energy allocation toward compensatory processes (i.e. pH regulation) is widely accepted, the identification of key acid-base transporters remains largely unknown. This work has identified SpSlc4a10 as\u00a0a key candidate gene that is critical for calcification under acidified conditions in the sea urchin larva.\n\n### Conclusion\n\nHere, we show that bicarbonate transport by a Slc4 family transporter is required for pHi regulation in sea urchin PMCs critical for the normal development of the larval skeleton. Interestingly, besides their importance in bone formation of mammals and vertebrates, the occurrence of specific bicarbonate transporters has been suggested to be a key step for the evolution of biomineralization in basal metazoans (Zoccola et al., 2015). A putative electroneutral Na+-independent Cl-/HCO3- cotransporter SLC4\u03b3 has been exclusively associated with calcifying tissues of scleratinian corals that is lacking in other non-calcifying cnidarians. Based on the findings of the present work, future studies will use the sea urchin larva as a model to identify other PMC-specific acid-base transporters (e.g. Na+/H+-exchangers) that may be critically involved in the calcification process. Here, special attention will also be dedicated to the ability of PMCs to re-absorb the larval skeleton close to metamorphosis, which is also likely associated with pH modulations in the PMC syncycium. Since pH regulation is ultimately linked to the biological precipitation of CaCO3, the present work provides a first step toward characterizing ion-regulatory mechanisms in PMCs critical for biomineralization the sea urchin embryo. This knowledge can then serve as a basis to identify conserved mechanisms of biomineralization in marine species and their potential for physiological buffering in times of rapid environmental change.\n\n## Materials and methods\n\n### Larval cultures and CO2 perturbation experiments\n\nAdult purple sea urchins (Stongylocentrotus purpuratus) were collected from the California coast (Kerckhoff marine Laboratory, California Institute of Technology), transferred to the Helmholtz Centre for Ocean Research Kiel (GEOMAR), and maintained in a re-cirulating natural seawater system at 11\u00b0C. Animals were fed with Laminaria sp. Spawning of males and females was induced by shaking and larval cultures were maintained as previously described (Stumpp et al., 2013; Stumpp et al., 2015). From 3 days post fertilization (dpf) larvae were fed daily with Rhodomonas spp. at a concentration of 10,000 cells mL\u22121.\n\npH perturbation experiments were performed as previously described (Stumpp et al., 2012). Briefly, larval cultures with three replicates per pH treatment were continuously aerated with CO2-enriched air providing constant pCO2 levels of 400 \u00b5atm (pH 8.1), 1250 \u00b5atm (pH 7.7) and 4000 \u00b5atm (pH 7.5). Seawater physicochemical parameters including salinity, pH and temperature were monitored on a daily basis and samples for the determination of total dissolved inorganic carbon (CT) were collected at two time points. The seawater carbonate system was calculated from pHNBS and CT using CO2sys as previously described (Stumpp et al., 2013) (see Supplementary file 1-Table S3). Larval densities were determined and paraformaldehyde (4% in filtere seawater) fixed samples were collected every day to monitor mortality and morphometry of larvae along the experimental period of 5 days.\n\n### Phylogenetic analysis and molecular cloning\n\nThe amino acid sequences for phylogenetic analyses were collected from the Ensembl (www.ensembl.org) and EchinoBase (www.echinobase.org) databases. Collected sequences were submitted to the online tool MAFFT (www.ebi.ac.uk/Tools/msa/mafft/) for alignment and phylogenetic analysis. The results of the phylogenetic analysis were plotted using the phylogenetic tree generation tool provided on the iTOL website (itol.embl.de). For molecular cloning, the transcript sequences of sea urchin SpSlc4a10, SpSlc9a2 and SpATP1a3 were PCR amplified using primers provided in Supplementary file 1-Table S4. The amplicon sequence was then cloned into pGEM-Teasy (Promega) cloning vector and used to synthesize the RNA probes for in situ hybridization.\n\n### Morpholino injection\n\nMicro injections were performed according to the protocol provided in Warner and McClay, 2014. The gene-specific morpholino-substituted antisense oligonucleotides (MO) 5`-GTTCAAGTTGTTTCTCAGTTCTCGT-3\u00b4 complementary to the start codon region of the sea urchin Slc4a10 gene as well as the srambled morpholino were obtained from Gene Tools (Oregon). The MO was dissolved in 0.5 M KCl solution and was injected into the fertilized egg (one-cell stage) using a microinjection system (Picospritzer III, Parker) mounted on an inverse microscope (Zeiss ObserverD1) equipped with a cooling stage.\n\n### RT-qPCR and whole mount in situ hybridization\n\nRNA from control and MO injected larvae was isolated by using the Direct-zol RNA MicroPrep kit (Zymo Research). RNA samples were reverse transcribed by Super Scipt IV cDNA synthesis kit (Invitrogen, Waltham, USA) for quantitative PCR (qPCR). Expression levels of the target genes were measured by qPCR using the 7500 Fast Real-Time PCR system (Applied Biosystems) and normalized to the housekeeping gene SpZ12. qPCR primers used in this study are listed in Supplementary file 1-Table S5. Whole mount in situ hybridization was performed as previously described (Stumpp et al., 2015).\n\n### Immunofluorescence (IF) staining and westernblot (WB) analysis using a custom made antibody designed against the sea urchin SpSlc4a10 protein\n\nIF and WB analysis was performed as previously described (Stumpp et al., 2013; Stumpp et al., 2015). Briefly, for IF larvae ware fixed in 4% paraformaldehyde dissolved in filtered seawater for 15 min and postfixed in ice-cold methanol for 1 hr. The polyclonal primary antibody was generated against a synthetic peptide corresponding to an internal region (LTRHRHHKQKKKKEPENKAYNKGRRKS) of the sea urchin SpSlc4a10 protein. The affinity chromatography purified antibody was diluted 1:250 and samples were incubated over night at 4\u00b0C. After washing, samples were incubated in the secondary antibody for 1 hr, and pictures were taken on a confocal microscope (Axiovert 200M, Zeiss, Germany).\n\nFor WB, 250 larvae were collected, weighted and extracted by gentle pipetting in 1:10 wt/vol of L\u00e4mmli loading buffer. Proteins were fractionated by SDS PAGE on 6.5% polyacrylamide gels, and transferred to nitrocellulose membranes (Bio-Rad), using a tank blotting system (Bio-Rad). Blots were preincubated for 1 hr at room temperature in TBS-Tween buffer containing 5% (wt/vol) bovine serum albumin. Blots were incubated at 4\u00b0C overnight in a 1:7500 dilution of the primary antibody (see previous section). After washing with TBS-T, the blots were incubated for 1 hr with horseradish peroxidase-conjugated goat anti-rabbit IgG antibody (Santa Cruz Biotechnology, Santa Cruz, CA) diluted 1:14,000 in TBS-T. Protein signals were visualized with the ECL Western Blotting Detection Reagents (GE Healthcare, Munich, Germany) and photographed with a Gel Doc 2000 system equipped with a CCD camera (BioRad). For the peptide compensation assays used in whole mount IF and WB analysis, the primary antibody was pre-absorbed with the immunization peptide at a concentration of 0.1 mg/ml for 12 hr at 4\u00b0C.\n\nIntracellular pH (pHi) measurements and ammonia pulse technique pHi determinations and ammonia pulse experiments were conducted as previously described (Stumpp et al., 2012). Control and morphant larvae were measured in an alternate mode and from each larva 4\u20135 cells were simultanously recorded and treated as one replicate (n\u00a0=\u00a01). Nigericin in combination with high external [K+] (150 mM) was used to calibrate pHi with our detected emission ratio of BCECF in living PMCs as previously described (Stumpp et al., 2012). For the ammonia pulse experiments, all larvae were exposed to filtered sea water (NSW) followed by the 20 mM NH3/NH4+ prepulse (NSW\u00a0+20 mM NH4Cl). Acidosis was induced by washout using NSW or by using NSW containing different concentrations of 4,4\u00b4-Diisothiocyanatostilbene-2,2\u00b4-disulfonic acid disodium salt (DIDS) or 0.1% DMSO as vehicle control, respectively.\n\n### Calcium content determination\n\nTo investigate the calcium content of larvae subjected to different pH levels, 50 ml of water from the larval cultures with known larval density was collected and larvae were concentrated by centrifugation. For the determination of Ca2+ content in control and SpSlc4a10 morphants 250 larvae were picked using a pipette and centrifuged to remove the sea water. Larvae were quickly washed three times in distilled water and the supernatant was removed after the last centrifugation. Samples were dried for 24 hr at 37\u00b0C. The samples were dissolved in 10 M HCl for 15 min and samples were analyzed using a flame photometer (EFOX 5053, Eppendorf). Calcium concentrations were normalized per larva and expressed as nmol larva\u22121.\n\n### Calcein pulse-chase experiments\n\nLate gastrula stage larvae (2dpf) were used for calcein labeling experiments. Control and MO injected larvae were bathed in filtered seawater (NSW) containing 160 \u00b5M calcein (Sigma) for 3 hr. For inhibitor experiments, larvae were additionally exposed to different DIDS concentrations (0, 10 and 100 \u00b5M) in the calcein solution. Vehicle controls contained 0.1% of DMSO. After 3 hr of incubation, larvae were washed four times by centrifugation and replacement of the calcein containing NSW by fresh NSW with the respective DIDS or DMSO concentration. Larvae were further incubated for 4 hr to remove calcein caught in the extracellular matrix of the larvae. Life larvae were mounted to microscope slides using synthetic cotton filaments (30\u201350 \u00b5m diameter) as spacers and covered with a coverslip. 5 Z-stacks images with a section thickness of 10 \u00b5m were aquired for every larva using a confocal microscope (Zeiss LSM 510) and fluorescence intensities were determined using the associated Zeiss imaging software (ZEN).\n\n### Statistical analyses\n\nData were tested for normality and homogeneity and significance levels were analyzed using paired t-tests. For the analyses of gene expression in CO2-treated larvae as well as comparisons of calcein fluorescence intensities in morphants and DIDS-treated larvae one-way ANOVA followed by Holm-Sidak post-hoc test was used. Regression analyses were performed on log transformed data using linear models. ANCOVA followed by the Holm-Sidak method was performed to test for sigificant diffrences in Ca2+ content under different CO2 treatments. Statistical analyses were conducted using Sigma Stat 13 (Systat Software).\n",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "871a8c44-329f-4b78-bbf4-806bd7ff99a2",
+      "submission_id": "75db4169-9431-4540-877b-7e43544505ca",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Paul G Falkowski, Rutgers University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.36600.018](https://doi.org/10.7554/eLife.36600.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"A SLC4 family bicarbonate transporter regulates intracellular pH critical for biomineralization in the sea urchin embryo\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Martin Tresguerres (Reviewer #1).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife. However, should the authors address the concerns raised by the reviewers with respect to experimental controls and specificity, we would entertain a revised paper in the future. This would take the form of a new submission, linked to the previous one within the system and would be assessed by the same experts.\n\nReviewer #1:\n\nThis study attempted to characterize the involvement of the bicarbonate transporter SpSlc4a10 in sea urchin larvae calcification. The hypothesis was that SpSlc4a10 is preferentially expressed in primary mesenchyme cells (PMCs), which are responsible for calcification, where it alkalanizes intracellular pH (pHi) to promote calcification. The study also addressed the potential involvement of SpSlc4a10 under ocean acidification (OA)- like conditions.\n\nThe topic is important and timely because information about molecular and cellular calcification mechanisms in marine organisms is scarce, and because this is essential for understanding and predicting potential effects of OA. The choice of experimental organism is excellent because sea urchins have very well characterized developmental biology and genome, and genetic manipulations are possible.\n\nUnfortunately, this study has one major flaw in that the specificity and efficacy of SpSlc4a10 morpholino knockdown was not validated.\n\nFigure 2D shows a 4-fold upregulation of SpSlc4a10 mRNA, however this is not a reliable validation. In addition, those larvae had significant NHE downregulation (which would also explain the results). It is likely that mRNA levels for other ion transporting proteins that were not examined were also up or downregulated. This makes it impossible to attribute the effects to SpSlc4a10.\n\nMorpholinos should be validated in some of the following ways:\n\nThe gold standard would be to determine protein abundance using validated antibodies; SpSlc4a10 protein level should be reduced. Antibodies against SpSlc4a10 would have the additional advantage of determining subcellular localization -i.e. basolateral or apical membrane, or intracellular calcifying vesicles.\n\nIf making antibodies is not possible, a second morpholino against another region of the SpSlc4a10 gene should be used.\n\nAlternatively, CRISPR-Cas9 or siRNA could be used.\n\nIn any case, control \"scrambled morpholino\" should be used and those larvae must be used for at least some of the key experiments. Unfortunately, skeleton defects is a very common phenotype seen in stressed sea urchin larvae, so determining a specific effect on calcification requires very carefully controlled experiments.\n\nAnother issue is the use of DIDS. While it is true this drug inhibits bicarbonate transporters, it is very broad so it will inhibit all bicarbonate transporters (not just SpSlc4a10). Furthermore and even more worrying is that DIDS has multiple and significant off-target effects, which explains why cutting-edge biomedical research has stopped using DIDS at least a decade ago. For example, DIDS inhibits the H+/K+-ATPase at concentrations as low as 1\u03bcM (Sugita, et al. 1999).\n\nOne way to circumvent this problem would be to assess the effect of DIDS on cells from sea urchin larvae morphants (which should not be sensitive to DIDS).\n\nMoreover, the effects of DMSO (the vehicle for DIDS) on pHi should be determined.\n\nUnless these issues are resolved, I will not provide further feedback about the experiments or conclusions. I repeat this is a very interesting and important topic, and that the choice of experimental organism is excellent. However, the issues listed above must be addressed.\n\nReviewer #2:\n\nThis manuscript suggests that a member of the SLC4 HCO3 transporter family, SpSlc4a10, has an important role in pH regulatory and HCO3 concentrating mechanism is sea urchin.\n\nThis is a very interesting and important information relating to the biomineralization mechanism in animals. This is a very elegant and well design experiment, the authors studied each relevant aspect that HCO3 transporter can affect.\n\nReviewer #3:\n\nThis manuscript addressed the role of bicarbonate transport in developing sea urchins, in particular on biomineralization. The manuscript is well written and easy to follow. The manuscript supports a key role of the bicarbonate transporter slc4a10 in pH regulation and biomineralization processes in developing sea urchin. The only real problem with the manuscript is a logical gap as to why the research has chosen to focus on slc4a10 as opposed to any other bicarbonate transporter of sea urchins? The data do support a central, but not unique, role of slc4a10 in the processes mentioned above.\n\n1) Fig, 1B is too small to be of value. It should be greatly increased in size and included as a figure supplement.\n\n2) Figure 1C needs an X-axis label (presumably time).\n\n3) Subsection \u201cExpression pattern of the sea urchin SpSlc4a10 bicarbonate transporter\u201d, first sentence. The term \"ubiquitous\" may be too strong. Perhaps \"widespread\" would be better supported by the data.\n\n4) The manuscript does not provide sufficient text rationalizing the focus on slc4a10, to the exclusion of other bicarbonate transporters in sea urchin. Please explain why the analysis was confined to this transporter.\n\n5) Figure 2 legend and elsewhere: Ideally legends should explain the experiment, but not interpret the results. The phrase \"demonstrate developmental defects in the formation of the larval skeleton in the pluteus larva (4 dpf)\" clearly belongs in the Results section, not legend. Same issue arises in panel D and E legend. Please revise this and other legends accordingly.\n\n6) The established convention in the SLC4 field is that NBC refers to \"sodium bicarbonate co-transporter\". Family member SLC4A10 is an electroneutral transporter called NBCn2, as the second recognized electroneutral sodium bicarbonate cotransporter. If the sea urchin gene product studied here is orthologous to mammalian SLC4A10, it may very well share the same transport function. If so, that function is electroneutral sodium dependent Cl-/HCO3- exchange. This point should form part of the introduction. Moreover, in the manuscript where the term \"NBC\" is used to described slc4a10, NBCn2 might be preferable.\n\nThe manuscript needs to provide the evidence in the form of amino acid sequence alignments or literature citations that identifies the gene under investigation as orthologous to SLC4A10.\n\n7) The third paragraph of the Discussion would be enhanced by citing literature discussing the myriad effects of pH on cellular function. So powerful is the effect of pH that it is difficult to assess the mechanism by which it acts.\n",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9c377179-702f-4728-a180-7619acdbabd9",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C1",
+      "claim": "SpSlc4a10 is a SLC4 family bicarbonate transporter specifically expressed by calcifying primary mesenchyme cells in sea urchin embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the sea urchin larva, this work identified the SLC4 HCO3- transporter family member SpSlc4a10 to be critically involved in the formation of an elaborate calcitic endoskeleton. SpSlc4a10 is specifically expressed by calcifying primary mesenchyme cells with peak expression during de novo formation of the skeleton.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the identification and specific expression pattern of SpSlc4a10 in PMCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "0210aa34-ed4e-4988-a1e1-8c0a05317c07",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C2",
+      "claim": "SpSlc4a10 expression peaks during de novo formation of the skeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "SpSlc4a10 is specifically expressed by calcifying primary mesenchyme cells with peak expression during de novo formation of the skeleton.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states peak expression timing, supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "4246443a-7a95-4ae7-aa22-3611fb164448",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C3",
+      "claim": "Knock-down of SpSlc4a10 leads to pH regulatory defects in primary mesenchyme cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Knock-down of SpSlc4a10 led to pH regulatory defects accompanied by decreased calcification rates and skeleton deformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the outcome of morpholino knock-down experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "ea0894c6-32c6-466c-80d2-655b5bf1e880",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C4",
+      "claim": "Knock-down of SpSlc4a10 leads to decreased calcification rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Knock-down of SpSlc4a10 led to pH regulatory defects accompanied by decreased calcification rates and skeleton deformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states decreased calcification as a result of SpSlc4a10 knock-down.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "ab83ade7-31fb-40fd-a04a-fb0e7387ea7d",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C5",
+      "claim": "Knock-down of SpSlc4a10 leads to skeleton deformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Knock-down of SpSlc4a10 led to pH regulatory defects accompanied by decreased calcification rates and skeleton deformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states skeleton deformations as a result of SpSlc4a10 knock-down.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "99582752-66cd-43f2-9e6e-7a6102ca9f64",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C6",
+      "claim": "Reductions in seawater pH resembling ocean acidification scenarios lead to an increase in SpSlc4a10 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Reductions in seawater pH, resembling ocean acidification scenarios, led to an increase in SpSlc4a10 expression suggesting a compensatory mechanism in place to maintain calcification rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the upregulation of SpSlc4a10 under acidified conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "3214182f-a897-4631-bdba-777de4d42719",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C7",
+      "claim": "The increase in SpSlc4a10 expression under acidified conditions represents a compensatory mechanism to maintain calcification rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Reductions in seawater pH, resembling ocean acidification scenarios, led to an increase in SpSlc4a10 expression suggesting a compensatory mechanism in place to maintain calcification rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly suggests this as a compensatory mechanism based on the observed upregulation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "51504e9c-bd4b-4d50-b39e-e1c237305157",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C8",
+      "claim": "Sea urchin larvae have been studied by embryologists for over a century to understand calcification in biological systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Sea urchin larvae with their elaborate calcareous endoskeleton have been studied by embryologists for over a century to promote our understanding of calcification in biological systems (Boveri, 1901; Decker and Lennarz, 1988; Wilt, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites historical studies dating back to 1901.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "50ff850e-9b79-436f-9631-ca19b8b8a4f2",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C9",
+      "claim": "The sea urchin larval skeleton is produced by primary mesenchyme cells (PMCs).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to mammalian osteoblasts that arise from mesenchymal stem cells (MSC), the sea urchin larval skeleton is also produced by a specific cell line \u2013 the primary mesenchyme cells (PMCs) (Wilt, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this with citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "5124e249-0570-4f90-af6d-777b21dd117c",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C10",
+      "claim": "During the blastula stage, PMCs ingress into the blastocoel and migrate in a stereotypical pattern, forming a posterior ring around the blastopore.",
+      "claim_type": "EXPLICIT",
+      "source": "During the blastula stage, PMCs ingress into the blastocoel and migrate in a stereotypical pattern, forming a posterior ring around the blastopore (Ettensohn, 1990; Gustafson and Kinnander, 1956).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly describes PMC migration with citations to supporting literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "97361843-77ec-4e24-906b-6abd9678a9f6",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C11",
+      "claim": "Amorphous calcium carbonate (ACC) is precipitated within intracellular vesicles in PMCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Amorphous calcium carbonate (ACC) is precipitated within intracellular vesicles that exocytose their content into the lumen of a syncytial cable formed by the PMCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states the location of ACC precipitation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "201e5650-d970-4498-9f33-ba6c456b2bcc",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C12",
+      "claim": "ACC-containing vesicles exocytose their content into the lumen of a syncytial cable formed by PMCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Amorphous calcium carbonate (ACC) is precipitated within intracellular vesicles that exocytose their content into the lumen of a syncytial cable formed by the PMCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly describes the exocytosis process.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "98fff1cf-eceb-4193-b76d-ed85ba3b2241",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C13",
+      "claim": "At least 40 distinct skeletal matrix proteins support the formation of mature calcite spicules.",
+      "claim_type": "EXPLICIT",
+      "source": "This process involves at least 40 distinct skeletal matrix proteins supporting the formation of the mature calcite spicules within this extracellular space (Beniash et al., 1997; Benson et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states the number of matrix proteins with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "673252dc-7882-43df-b534-69c8d678eb16",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C14",
+      "claim": "Some skeletal matrix proteins are present in intracellular compartments where they may play a role in the stabilization of ACC.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of these matrix proteins are also present in intracellular compartments where they may play a role in the stabilization of ACC (Urry et al., 2000; Wilt, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this with citations, though the role is speculative.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "95c00b21-4bb6-4499-a138-04f525c07cdc",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C15",
+      "claim": "Ca2+ enters calcification vesicles by endocytosis of seawater into a vesicular network within PMCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, recent findings suggest that Ca2+ also enters calcification vesicles by endocytosis of seawater into a vesicular network within the PMCs (Vidavsky et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites recent findings suggesting this mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "ea41a0f2-95c2-40df-bd89-d5cce0ff43b8",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C16",
+      "claim": "During de novo formation of the larval skeleton in the mid-gastrula stage, calcium uptake increases ten-fold compared to the blastula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "During de novo formation of the larval skeleton in the mid-gastrula stage, calcium uptake increases ten-fold, compared to the blastula stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this quantitative increase with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "7c398828-12a0-4fcd-9a18-98ad72248cef",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C17",
+      "claim": "70% of calcium taken up during skeleton formation is incorporated into newly formed spicules.",
+      "claim_type": "EXPLICIT",
+      "source": "70% of this calcium is incorporated into the newly formed spicules (Nakano et al., 1963), while the remaining 30% reflects the uptake of calcium into cell organelles, including mitochondria and the smooth endoplasmatic reticulum (Decker et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this percentage with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "61d891b7-c3a4-4c9e-82f8-068b8d7027a7",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C18",
+      "claim": "30% of calcium taken up during skeleton formation is taken up into cell organelles, including mitochondria and the smooth endoplasmic reticulum.",
+      "claim_type": "EXPLICIT",
+      "source": "70% of this calcium is incorporated into the newly formed spicules (Nakano et al., 1963), while the remaining 30% reflects the uptake of calcium into cell organelles, including mitochondria and the smooth endoplasmatic reticulum (Decker et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this percentage and organelle distribution with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "5d53e03c-2e80-4768-a2d8-8dc33a248edf",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C19",
+      "claim": "Up to 63% of carbon for spicule formation derives from respiratory CO2.",
+      "claim_type": "EXPLICIT",
+      "source": "Radioisotopic measurements demonstrate that up to 63% of carbon for spicule formation derives from respiratory CO2, while the remaining DIC that is incorporated into the spicules derives from seawater (Sikes et al., 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this percentage with citation to radioisotopic measurements.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "3a70d7fe-119d-43d9-9ee2-a9a6462328c1",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C20",
+      "claim": "The remaining DIC (approximately 37%) that is incorporated into spicules derives from seawater.",
+      "claim_type": "EXPLICIT",
+      "source": "Radioisotopic measurements demonstrate that up to 63% of carbon for spicule formation derives from respiratory CO2, while the remaining DIC that is incorporated into the spicules derives from seawater (Sikes et al., 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states the seawater source for remaining DIC with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "6890c1c6-8871-4553-956a-270c5c41da35",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C21",
+      "claim": "1.6 protons are generated per molecule CO32- precipitated, assuming HCO3- supplies the remaining 37% of DIC for calcification.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the assumption that HCO3- rather than CO2 or CO32- supplies the remaining 37% of DIC for calcification, 1.6 protons are generated per molecule CO32- precipitated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this calculation based on a stated assumption.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "3162dcad-18e8-4dd9-bdde-49d5c91334d7",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C22",
+      "claim": "An even stronger local acidification at the site of ACC formation can be expected if CO2 is the major source of DIC.",
+      "claim_type": "EXPLICIT",
+      "source": "An even stronger local acidification at the site of ACC formation can be expected considering CO2 as the major source of DIC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this expectation based on theoretical considerations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "b846bc11-2d63-486b-b58c-f53725319edb",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C23",
+      "claim": "PMCs are capable of efficiently handling proton load using pH regulatory mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these calculations, it has been suggested that PMCs are capable of efficiently handling this proton load using pH regulatory mechanisms (Sikes et al., 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a suggestion from previous literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "e5138149-68d1-4dcf-8c46-3c78d63aff5f",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C24",
+      "claim": "pHi regulation of PMCs is dependent on external Na+ and HCO3- to compensate for intracellular acidosis.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study demonstrated that pHi regulation of PMCs is dependent on external Na+ as well as HCO3- to compensate for an intracellular acidosis indicating Na+-dependent HCO3- buffering mechanisms (Stumpp et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a previous study demonstrating this dependency.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "7056934a-c098-4494-b58d-01bdcdc67f44",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C25",
+      "claim": "DIDS inhibits uptake and deposition of 45Ca into spicules.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of HCO3- transport in the calcifying PMCs is underlined by the observation that DIDS (4,4\u00b4-diisothiocyano-2,2\u00b4\u00b4-disulfonic acid stilbene), an inhibitor for most SLC4 family transporters (Romero et al., 2004) inhibits uptake and deposition of 45Ca into spicules (Yasumasu et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a study showing DIDS inhibition of calcium uptake.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "0fc48a3f-a58f-4ec8-a4f0-b45a153f0af1",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C26",
+      "claim": "DIDS is an inhibitor for most SLC4 family transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of HCO3- transport in the calcifying PMCs is underlined by the observation that DIDS (4,4\u00b4-diisothiocyano-2,2\u00b4\u00b4-disulfonic acid stilbene), an inhibitor for most SLC4 family transporters (Romero et al., 2004) inhibits uptake and deposition of 45Ca into spicules (Yasumasu et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states DIDS function with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "38b50a3e-f568-453a-9d8e-0a5f0f300aae",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C27",
+      "claim": "DIDS blocks the supply of HCO3- for ACC formation rather than the ability of PMC cells to form their syncytium.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, it has been concluded that these compounds block the supply of HCO3- for ACC formation rather than the ability of PMC cells to form their syncytium as shown for other blockers (Basse et al., 2015; Mitsunaga et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites conclusions from previous studies about DIDS mechanism.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "92343483-e837-401c-adee-05896eb45b85",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C28",
+      "claim": "Amiloride, an inhibitor for Na+-dependent H+ exchange, had no effect on spicule formation and pHi regulation of PMCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, H+-export pathways involving Na+/H+ exchange were suggested to remove protons from the cytosol of PMCs although amiloride, an inhibitor for Na+-dependent H+ exchange had no effect on spicule formation and pHi regulation of PMCs (Mitsunaga et al., 1987; Stumpp et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites studies showing lack of amiloride effect.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "4ec04e29-9278-4acf-81b4-9b5b77dc8cf1",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C29",
+      "claim": "HCO3- transport supplies the cell with substrate for the precipitation of CaCO3.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we hypothesize that HCO3- transport pathways, via a so far unidentified HCO3- transport mechanism affect the calcification process in different ways: (i) HCO3- transport supplies the cell with substrate for the precipitation of CaCO3 and (ii) the regulation of intracellular HCO3- homeostasis is critical to buffer excess protons generated by the intravesicular precipitation of CaCO3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this as part of the hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "b58d8582-0c95-4310-b5e9-d9c16854af04",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C30",
+      "claim": "The regulation of intracellular HCO3- homeostasis is critical to buffer excess protons generated by the intravesicular precipitation of CaCO3.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we hypothesize that HCO3- transport pathways, via a so far unidentified HCO3- transport mechanism affect the calcification process in different ways: (i) HCO3- transport supplies the cell with substrate for the precipitation of CaCO3 and (ii) the regulation of intracellular HCO3- homeostasis is critical to buffer excess protons generated by the intravesicular precipitation of CaCO3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this as part of the hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "0507731d-49ed-43d3-9ce1-a9203a345944",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C31",
+      "claim": "Four Slc4 transporters were identified in the genome of the purple sea urchin, Strongylocentrotus purpuratus.",
+      "claim_type": "EXPLICIT",
+      "source": "Four Slc4 transporters were identified in the genome of the purple sea urchin, Strongylocentrotus purpuratus (Tu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a study identifying four Slc4 transporters.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "ecf03a13-8c35-4f2c-a7a1-7cb198183239",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C32",
+      "claim": "During the period of early skeleton formation (30\u201348 hr post fertilization), highest transcript abundance was detected for the SpSlc4a10 gene compared to all other Slc4 transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "During the period of early skeleton formation in the sea urchin embryo (30\u201348 hr post fertilization), highest transcript abundance was detected for the SpSlc4a10 gene compared to all other Slc4 transporters (Tu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a study showing highest SpSlc4a10 transcript abundance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "306a3fa2-61e4-44b6-b760-19ea7295750a",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C33",
+      "claim": "SpSlc4a10 shares highest sequence identity with the mammalian Slc4a10 (NBCn2) gene.",
+      "claim_type": "EXPLICIT",
+      "source": "This gene shares highest sequence identity with the mammalian Slc4a10 (NBCn2) gene that encodes an electroneutral sodium-dependnet Cl-/HCO3- exchanger with Cl- self-exchange activity (Parker et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states the sequence identity relationship with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "72670b52-317b-4869-be60-f527e627358c",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C34",
+      "claim": "The mammalian Slc4a10 (NBCn2) encodes an electroneutral sodium-dependent Cl-/HCO3- exchanger with Cl- self-exchange activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This gene shares highest sequence identity with the mammalian Slc4a10 (NBCn2) gene that encodes an electroneutral sodium-dependnet Cl-/HCO3- exchanger with Cl- self-exchange activity (Parker et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites the functional characterization of mammalian Slc4a10.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "8462ec13-d7b1-4f74-9682-049f25c6ee11",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C35",
+      "claim": "SpSlc4a10 has widespread expression in blastula embryos at 1 day post-fertilization (dpf), including the PMCs surrounding the blastopore.",
+      "claim_type": "EXPLICIT",
+      "source": "The SpSlc4a10 has widespread expression in blastula embryos at 1 day post-fertilization (dpf), including the PMCs surrounding the blastopore (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly describes expression pattern shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "a6292746-50f8-42e1-81e9-96e7a87f7277",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C36",
+      "claim": "In the late gastrula (prism stage, 2 dpf), SpSlc4a10 is highly expressed in the PMCs during the formation of the syncytial cables.",
+      "claim_type": "EXPLICIT",
+      "source": "In the late gastrula (prism stage, 2 dpf), SpSlc4a10 is highly expressed in the PMCs during the formation of the syncycial cables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly describes expression at this developmental stage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "bdaf9c52-471c-45fe-9af3-d2b252e13421",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C37",
+      "claim": "SpSlc4a10 is expressed in the syncytial cables and filopodia of PMCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides a strong staining within the main cell bodies, SpSlc4a10 is also expressed in the syncycial cables and filopodia of PMCs (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly describes subcellular localization with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "97314a91-3f1d-4d43-92e5-d7fd1740963c",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C38",
+      "claim": "In the pluteus larva (3 dpf), expression of SpSlc4a10 was exclusively detected in PMCs located at the tips of the primary and secondary rods.",
+      "claim_type": "EXPLICIT",
+      "source": "In the pluteus larva (3 dpf) expression of SpSlc4a10 was exclusively detected in PMCs located at the tips of the primary and secondary rods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly describes the restricted expression pattern at 3 dpf.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "8901eabc-0fca-44ea-9038-18e968dba10a",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C39",
+      "claim": "The PMC specific SpSlc4a10 clusters within the clade of the Slc4a7-10, electroneutral Na+-coupled HCO3- transporters found in vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the four SLC4 transporters identified in the sea urchin genome (SpSlc4a3, SpSlc4a2, SpSlc4a11 and SpSlc4a10) the PMC specific SpSlc4a10 clusters within the clade of the Slc4a7-10, electroneutral Na+-coupled HCO3- transporters found in vertebrates (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly describes phylogenetic clustering with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "dbcc7e43-8980-4b5e-b58f-4625066520e7",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C40",
+      "claim": "The amino acid sequence of the sea urchin SpSlc4a10 shares 44% similarity to the mammalian Slc4a10 (NBCn2) orthologue.",
+      "claim_type": "EXPLICIT",
+      "source": "The amino acid sequence of the sea urchin SpSlc4a10 shares 44% similarity to the mammalian Slc4a10 (NBCn2) orthologue (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states the sequence similarity percentage with reference to alignment figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "7edf09e7-d45f-4cb6-9348-1423f5852cda",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C41",
+      "claim": "During the first 5 days of development, SpSlc4a10 expression peaks at 2 dpf, accompanied by the onset of larval Ca2+ accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "During the first 5 days of development, SpSlc4a10 expression peaks at 2 dpf, accompanied by the onset of larval Ca2+ accumulation (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly describes the temporal correlation between expression and calcium accumulation with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "9b2f18e6-d1e1-4f6d-a824-2bd5be65c111",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C42",
+      "claim": "After 2 dpf, SpSlc4a10 expression levels decrease, while high Ca2+ uptake rates are maintained up to 5 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "After this, expression levels decrease, while high Ca2+ uptake rates are maintained up to 5 dpf.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly describes the temporal pattern of expression and calcium uptake.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "bd970b3b-4cf5-4144-8d7e-2586942f7751",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C43",
+      "claim": "Light microscopic analyses using polarized light demonstrated a disturbed formation of the larval skeleton in SpSlc4a10 morphants compared to KCl injected control larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Light microscopic analyses using polarized light (birefringence) demonstrated a disturbed formation of the larval skeleton in morphants compared to KCl injected control larvae (Figure 2A) or scramble MO control larvae (150 \u00b5M, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly describes the morphant phenotype with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "d0235934-ab50-431e-8e3f-46fd8b3b687e",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C44",
+      "claim": "The length of the primary rod is decreased in a dose-dependent manner with increasing SpSlc4a10 morpholino (MO) concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "The length of the primary rod is decreased in a dose-dependent manner with increasing SpSlc4a10 morpholino (MO) concentrations (Figure 2B), while the tri-partite digestive tract develops normally.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly describes the dose-dependent effect with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "5b83f5df-1426-4d8f-b8ed-05456666a2df",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C45",
+      "claim": "The tri-partite digestive tract develops normally in SpSlc4a10 morphants.",
+      "claim_type": "EXPLICIT",
+      "source": "The length of the primary rod is decreased in a dose-dependent manner with increasing SpSlc4a10 morpholino (MO) concentrations (Figure 2B), while the tri-partite digestive tract develops normally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states normal digestive tract development.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "3cca0129-5841-461c-a24e-bc4f1986c158",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C46",
+      "claim": "The reduction in primary rod length in SpSlc4a10 morphants is accompanied by a decreased total Ca2+ content.",
+      "claim_type": "EXPLICIT",
+      "source": "This reduction in primary rod length is accompanied by a decreased total Ca2+ content in SpSlc4a10 morphants (Figure 2B, inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly describes the correlation between rod length and calcium content with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "f891273e-b48c-4672-a9fb-2be42fa11450",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C47",
+      "claim": "A Na+/K+-ATPase (SpAtp1a3) isoform is mainly expressed in stomach epithelial cells and also expressed in PMCs of late gastrula and pluteus larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the predominant expression of SpSlc4a10 in PMCs, a Na+/K+-ATPase (SpAtp1a3) and a Na+/H+-exchanger (SpSlc9a2) isoform that are mainly expressed in stomach epithelial cells are also expressed in PMCs of late gastrula and pluteus larvae (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly describes the expression pattern with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "047964d1-fcd7-4bd8-a609-dd8fc304c635",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C48",
+      "claim": "A Na+/H+-exchanger (SpSlc9a2) isoform is mainly expressed in stomach epithelial cells and also expressed in PMCs of late gastrula and pluteus larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the predominant expression of SpSlc4a10 in PMCs, a Na+/K+-ATPase (SpAtp1a3) and a Na+/H+-exchanger (SpSlc9a2) isoform that are mainly expressed in stomach epithelial cells are also expressed in PMCs of late gastrula and pluteus larvae (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly describes the expression pattern with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "f9501e66-46ba-459e-8519-4965cd0d5e7b",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C49",
+      "claim": "A four-fold up-regulation of SpSlc4a10 expression levels in the morphants compared to control larvae at 3dpf demonstrates the specificity of the morpholino applied.",
+      "claim_type": "EXPLICIT",
+      "source": "A four-fold up-regulation of SpSlc4a10 expression levels in the morphants compared to control larvae at 3dpf demonstrates the specificity of the morpholino applied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states the upregulation as evidence of morpholino specificity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "71fbcc60-2140-467c-a83c-aac3c999727b",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C50",
+      "claim": "SpSlc9a2 was significantly downregulated in the SpSlc4a10 morphants.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, SpSlc9a2 was significanly downregulated in the morphants (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states the downregulation with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "f2ddc49f-9b04-4e5c-96ec-cc53d2dce12d",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C51",
+      "claim": "No differences were detected for the Na+/K+-ATPase coding gene SpAtp1a3 between control larvae and the SpSlc4a10 morphants.",
+      "claim_type": "EXPLICIT",
+      "source": "No differences were detected for the Na+/K+-ATPase coding gene SpAtp1a3 between control larvae and the SpSlc4a10 morphants (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states no difference with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "20ff939d-17c7-4808-80a9-ed53b86119ae",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C52",
+      "claim": "In situ hybridization demonstrates an irregular pattern of SpSlc4a10 positive PMCs in the morphants compared to control larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "In situ hybridization using the SpSlc4a10 anti-sense probe demonstrates an irregular pattern of SpSlc4a10 positive PMCs in the morphants compared to control larvae (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly describes the irregular pattern with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "b5eccc6b-91b3-474b-b035-69d45f84240d",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C54",
+      "claim": "High-magnification confocal microscopy indicates a localization of the SpSlc4a10 protein in the plasma membrane as well as subcellular structures within the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "High-magnification confocal microscopy indicates a localiazation of the protein in the plasma membrane as well as subcellular structures within the cytosol (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly describes protein localization with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "d09c9771-e936-44ec-a30d-f0bf0c272c20",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C55",
+      "claim": "Western-blot analyses demonstrated positive immunoreactivity of the SpSlc4a10 antibody with a 135 KDa protein which is in the predicted size range of this protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Westernblot analyses demonstrated positive immunoreactivity of our SpSlc4a10 antibody with a 135 KDa protein which is in the predicted size range of this protein (1183 amino acids; \u2248130 KDa).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly describes western blot results and predicted size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "6e179e57-b090-4beb-a0a3-65fc1dc358dd",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C56",
+      "claim": "Western-blot analyses demonstrate decreased SpSlc4a10 protein levels in MO-injected larvae when compared to control animals validating the knock-down by the SpSlc4a10 morpholino.",
+      "claim_type": "EXPLICIT",
+      "source": "Western-blot analyses demonstrate decreased SpSlc4a10 protein levels in MO-injected larvae when compared to control animals validating the knock-down by our SpSlc4a10 morpholino.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states the validation of knock-down by western blot.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "17e71556-b9c6-4946-bace-ce8d117662b5",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C57",
+      "claim": "Under control conditions (pH 8.1), sea urchin embryos increase total Ca2+ content at high rates of 1.75 nmol larva\u22121 day\u22121 during the formation of the larval skeleton (2\u20134 dpf).",
+      "claim_type": "EXPLICIT",
+      "source": "Under control conditions (pH 8.1), sea urchin embryos increase total Ca2+ content at high rates of 1.75 nmol larva\u22121 day\u22121 during the formation of the larval skeleton (2\u20134 dpf) (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states the calcium accumulation rate with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "04e15b3d-1012-405c-8816-0924cedf788f",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C58",
+      "claim": "CO2-induced reductions in seawater pH by 0.4 and 0.6 pH units resulted in a reduction in developmental rates.",
+      "claim_type": "EXPLICIT",
+      "source": "CO2-induced reductions in seawater pH by 0.4 and 0.6 pH units resulted in a reduction in developmental rates (Figure 4\u2014figure supplement 1) associated with a reduction in Ca2+ accumulation (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly describes the effect of pH reduction on development with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "f9562fb5-12d2-44ea-a1f6-a3e6f54c6991",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C59",
+      "claim": "CO2-induced reductions in seawater pH by 0.4 and 0.6 pH units resulted in a reduction in Ca2+ accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "CO2-induced reductions in seawater pH by 0.4 and 0.6 pH units resulted in a reduction in developmental rates (Figure 4\u2014figure supplement 1) associated with a reduction in Ca2+ accumulation (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly describes the effect of pH reduction on calcium accumulation with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "662cc39e-a91d-432a-b824-aefee1153700",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C60",
+      "claim": "Normalization of larval Ca2+ content to body length demonstrated no effect on the ability to accumulate Ca2+ under acidified conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Normalization of larval Ca2+ content to bodylength (correction for developmental delay [Stumpp et al., 2011]) demonstrated no effect on the ability to accumulate Ca2+ under acidified conditions (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states the result of normalization with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "99bb4899-a02f-4661-a891-ca949146b08f",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C61",
+      "claim": "Maintained calcification of larvae under acidified conditions is accompanied by an increased expression of SpSlc4a10 at the onset of skeleton formation at 2 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Maintained calcification of larvae under acidified conditions is accompanied by an increased expression of SpSlc4a10 at the onset of skeleton formation at 2 dpf (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly describes the correlation between maintained calcification and increased expression with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "acff1926-fa34-4627-80ce-5c9ce41bfb9d",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C62",
+      "claim": "The up-regulation of SpSlc4a10 at the onset of skeleton formation is still evident when expression levels were normalized for body length correcting for the developmental delay.",
+      "claim_type": "EXPLICIT",
+      "source": "This up-regulation of SpSlc4a10 at the onset of skeleton formation is still evident when expression levels were normalized for body length correcting for the developmental delay (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states the persistence of upregulation after normalization with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "fe3939d4-1130-4620-b6f7-af28e7b67ab9",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C63",
+      "claim": "Exposure of PMCs from control animals to seawater containing 20 mM NH4Cl evoked an intracellular alkalosis by increasing pHi from 6.8 to 7.6.",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure of PMCs from control animals to seawater containing 20 mM NH4Cl evoked an intracellular alkalosis by increasing pHi from 6.8 to 7.6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly describes the pH change in response to ammonia.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "e9dc3cd2-f290-4380-8692-d83eeceb77a5",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C64",
+      "claim": "A slight compensation of the ammonia (NH3/NH4+) induced alkalosis was observed during a period of 10 min.",
+      "claim_type": "EXPLICIT",
+      "source": "A slight compensation of the ammonia (NH3/NH4+) induced alkalosis was observed during a period of 10 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly describes the compensation during ammonia exposure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "f9a5039f-1be1-4e36-984d-d2da7f78d617",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C65",
+      "claim": "Removal of ammonia resulted in an intracellular acidosis (pHi = 6.1) that was efficiently compensated within 5 min in control PMCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Removal of ammonia resulted in an intracellular acidosis (pHi = 6.1) that was efficiently compensated within 5 min (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly describes the acidosis and recovery with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "cff3770d-eb81-42a1-8424-9df38778d09a",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C66",
+      "claim": "SpSlc4a10 morphants had a significantly decreased pHi (6.66 \u00b1 0.17) compared to control larvae (6.87 \u00b1 0.13).",
+      "claim_type": "EXPLICIT",
+      "source": "SpSlc4a10 morphants had a significantly decreased pHi (6.66 \u00b1 0.17) compared to control larvae (6.87 \u00b1 0.13) (Figure 5B; Supplementary file 1-Table S2), and a significantly reduced ability to recover from the ammonia-induced acidosis during washout of NH3/NH4+.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states the pHi values with statistical comparison and reference to figure and table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "48531490-8883-4a09-a497-88939642b16d",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C67",
+      "claim": "SpSlc4a10 morphants have a significantly reduced ability to recover from the ammonia-induced acidosis during washout of NH3/NH4+.",
+      "claim_type": "EXPLICIT",
+      "source": "SpSlc4a10 morphants had a significantly decreased pHi (6.66 \u00b1 0.17) compared to control larvae (6.87 \u00b1 0.13) (Figure 5B; Supplementary file 1-Table S2), and a significantly reduced ability to recover from the ammonia-induced acidosis during washout of NH3/NH4+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states the reduced recovery ability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "e1e32163-b117-49fe-8e8a-34a1df44e209",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C68",
+      "claim": "Control PMCs recover from ammonia-induced acidosis at a rate of 0.14 \u00b1 0.05 pH units min\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "While control PMCs recover at a rate of 0.14 \u00b1 0.05 pH units min\u22121 that of the morphants was sigificantly decreased to 0.05 \u00b1 0.02 pH units min\u22121 (Figure 5B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states the recovery rate with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "eedad4c3-cd79-43cb-ae40-ff8b9d65dd3c",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C69",
+      "claim": "SpSlc4a10 morphant PMCs recover from ammonia-induced acidosis at a rate of 0.05 \u00b1 0.02 pH units min\u22121, which is significantly decreased compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "While control PMCs recover at a rate of 0.14 \u00b1 0.05 pH units min\u22121 that of the morphants was sigificantly decreased to 0.05 \u00b1 0.02 pH units min\u22121 (Figure 5B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states the recovery rate with statistical comparison and reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "959aa452-f526-432e-a87b-9ab47b9d91ca",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C70",
+      "claim": "The recovery rate from an intracellular acidosis is sensitive to the anion exchange inhibitor DIDS in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological experiments demonstrated that the recovery rate from an intracellular acidosis is sensitive to the anion exchange inhibitor 4,4'-Diisothiocyano-2,2'-stilbenedisulfonic acid (DIDS) in a dose-dependent manner (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly describes the dose-dependent DIDS effect with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "4488dc8c-3f46-4513-a8c2-518cfbc4a93f",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C71",
+      "claim": "Despite full inhibition of the DIDS-sensitive component of pHi regulation, PMCs remained capable of partly restoring pHi at lower rates in a similar fashion to that seen in the SpSlc4a10 morphants.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite full inhibition of the DIDS-sensitive component of pHi regulation, PMCs remained capable of partly restoring pHi at lower rates in a similar fashion to that seen in the SpSlc4a10 morphants (Figure 5B,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly describes the partial recovery under DIDS with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "fac702ac-b443-4ca4-ac32-6ca19b076656",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C72",
+      "claim": "Late gastrula stage larvae were incubated in calcein for 3 hr and fluorescence intensities monitored using confocal microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Late gastrula stage larvae were incubated in calcein for 3 hr and fluorescence intensities monitored using confocal microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "4e9a97c6-bd73-4a4d-84fb-254cd598eca2",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C73",
+      "claim": "In SpSlc4a10 morphants, calcein incorporation was decreased at the posterior rod (\u221243%), junction (\u221231%) and anterior rod (\u221235%).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to skeletal deformations, calcein incorporation was decreased in the SpSlc4a10 morphants at the three different locations including posterior rod: PR (\u221243%), junction: JC (\u221231%) and anterior rod: AR (\u221235%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states the percentage decreases at different locations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "5eff53f4-e444-4c67-8152-645fa6f15e94",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C74",
+      "claim": "In the presence of 10 \u00b5M and 100 \u00b5M DIDS, fluorescence intensities in the three spicule sections were significantly decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of 10 \u00b5M and 100 \u00b5M DIDS, fluorescence intensities in the three spicule sections, were also significantly decreased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states the decrease under DIDS treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "5c82bb1e-0ed8-4180-b90b-5e93feb72820",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C75",
+      "claim": "Average values of different spicule sections demonstrated 40% and 50% reductions in spicule fluorescence intensity in the presence of 10 \u00b5M and 100 \u00b5M DIDS, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Average values of different spicule sections (inset Figure 6B) demonstrated 40% and 50% reductions in spicule fluorescence intensity in the presence of 10 \u00b5M and 100 \u00b5M DIDS, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states the percentage reductions with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "3cbc799c-9a3e-49c3-8499-5f4c9064c67e",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C76",
+      "claim": "SpSlc4a10 has highest identity with the mammalian clade of electroneutral Na+ coupled HCO3-transporters, including Na+/HCO3- cotransporters (NBCn) and Na+-driven Cl-/HCO3- exchangers (NCBE).",
+      "claim_type": "EXPLICIT",
+      "source": "Our phylogenetic analysis based on deduced amino acid sequences suggest that SpSlc4a10 has highest identity with the mammalian clade of electroneutral Na+ coupled HCO3-transporters, including Na+/HCO3- cotransporters (NBCn) and Na+-driven Cl-/HCO3- exchangers (NCBE) that were demonstrated to control pHi in neurons (Wang et al., 2000) and enable the transcellular passage of HCO3- across epithelial cells of the pancreatic duct and the renal proximal tubule (Guo et al., 2017; Ko et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly states the phylogenetic relationship with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "87d79ff2-4bdc-48b4-90cc-bb642e5eeb5a",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C77",
+      "claim": "Electroneutral Na+ coupled HCO3-transporters control pHi in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our phylogenetic analysis based on deduced amino acid sequences suggest that SpSlc4a10 has highest identity with the mammalian clade of electroneutral Na+ coupled HCO3-transporters, including Na+/HCO3- cotransporters (NBCn) and Na+-driven Cl-/HCO3- exchangers (NCBE) that were demonstrated to control pHi in neurons (Wang et al., 2000) and enable the transcellular passage of HCO3- across epithelial cells of the pancreatic duct and the renal proximal tubule (Guo et al., 2017; Ko et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites studies demonstrating this function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "583756b1-f1f5-4628-a3fd-ce475ad3a513",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C78",
+      "claim": "Electroneutral Na+ coupled HCO3-transporters enable the transcellular passage of HCO3- across epithelial cells of the pancreatic duct and the renal proximal tubule.",
+      "claim_type": "EXPLICIT",
+      "source": "Our phylogenetic analysis based on deduced amino acid sequences suggest that SpSlc4a10 has highest identity with the mammalian clade of electroneutral Na+ coupled HCO3-transporters, including Na+/HCO3- cotransporters (NBCn) and Na+-driven Cl-/HCO3- exchangers (NCBE) that were demonstrated to control pHi in neurons (Wang et al., 2000) and enable the transcellular passage of HCO3- across epithelial cells of the pancreatic duct and the renal proximal tubule (Guo et al., 2017; Ko et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites studies demonstrating this function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "e430a281-24ae-4828-b17b-5ac320c99b83",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C79",
+      "claim": "The human NBCn2 encoded by Slc4a10 has absolute requirements for Na+ and HCO3-.",
+      "claim_type": "EXPLICIT",
+      "source": "The human NBCn2 encoded by Slc4a10 has absolute requirements for Na+ and HCO3- and appears to be a Na+-dependent Cl-/HCO3- exchanger that is blocked in the presence of 200 \u00b5M DIDS (Parker et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites a study characterizing human NBCn2.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "a1625159-dd11-4cae-b3d0-1849ae29a33d",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C80",
+      "claim": "The human NBCn2 encoded by Slc4a10 appears to be a Na+-dependent Cl-/HCO3- exchanger that is blocked in the presence of 200 \u00b5M DIDS.",
+      "claim_type": "EXPLICIT",
+      "source": "The human NBCn2 encoded by Slc4a10 has absolute requirements for Na+ and HCO3- and appears to be a Na+-dependent Cl-/HCO3- exchanger that is blocked in the presence of 200 \u00b5M DIDS (Parker et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites a study characterizing human NBCn2 function and inhibition.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "261a7271-a087-495b-8676-b328d22113b4",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C81",
+      "claim": "Earlier studies demonstrated that pHi regulation in PMCs is highly Na+ and HCO3--dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier studies demonstrated that pHi regulation in PMCs is also highly Na+ and HCO3--dependent thereby supporting the involvement of an Na+-dependent HCO3- transport mechanism in the regulation of PMC pHi (Stumpp et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites a previous study demonstrating ion dependencies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "c5c07d5a-3a9c-40ef-a011-8d59f03c32b4",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C82",
+      "claim": "pHi regulation in PMCs is DIDS sensitive with an IC50 of 120 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with findings of the present work demonstrating that pHi regulation in PMCs is DIDS sensitive (IC50 = 120 \u00b5M) and that knock-down of SpSlc4a10 reduces the ability to compensate an intracellular acidosis, there is strong evidence that SpSlc4a10 plays a central role in controlling pHi of PMCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly states the IC50 value from the present study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "59b0484e-7492-480b-8cd0-9ee28c596bfa",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C83",
+      "claim": "There is strong evidence that SpSlc4a10 plays a central role in controlling pHi of PMCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with findings of the present work demonstrating that pHi regulation in PMCs is DIDS sensitive (IC50 = 120 \u00b5M) and that knock-down of SpSlc4a10 reduces the ability to compensate an intracellular acidosis, there is strong evidence that SpSlc4a10 plays a central role in controlling pHi of PMCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly states this conclusion based on multiple lines of evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "15251eff-e7fa-4d20-9a14-bfebfc56d334",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C84",
+      "claim": "ACC is precipitated in intracellular vesicles which are subsequently exocytosed into the luminal space of the syncytial cable to form and maintain the larval skeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "ACC is precipitated in intracellular vesicles which are subsequently exocytosed into the luminal space of the syncycial cable to form and maintain the larval skeleton (Vidavsky et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites a study describing the ACC precipitation and exocytosis process.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "1534c97c-2086-4ffd-9b67-01356fcf6075",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C85",
+      "claim": "Protons generated during the formation of ACC must be removed from the vesicles into the cytosol to avoid an increasing intravesicular acidification leading to inhibition of CaCO3 precipitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, protons generated during the formation of ACC must be removed from the vesicles into the cytosol to avoid an increasing intravesicular acidification leading to inhibition of CaCO3 precipitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly states this requirement based on chemical principles.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "5bea32d8-27b0-44d4-8eab-81e31cd13e94",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C86",
+      "claim": "The uptake of protons into the cytosol may cause disturbances in pHi homeostasis if not actively compensated by buffering and secretion of protons.",
+      "claim_type": "EXPLICIT",
+      "source": "This uptake of protons into the cytosol may cause disturbances in pHi homeostasis if not actively compensated by buffering and secretion of protons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly states this potential consequence.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "e1fd2250-872a-455e-9ba3-41f38a1650bb",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C87",
+      "claim": "PMCs of the sea urchin larva share many common features with mammalian osteoblasts where precipitation of the calcium phosphate mineral, hydroxyapatite, is initiated in vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the PMCs of the sea urchin larva share many common features with mammalian osteoblasts where precipitation of the calcium phosphate mineral, hydroxyapatite, is initiated in vesicles (Boonrungsiman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly draws this comparison with citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "08e26e48-5326-49ba-8a57-d6af4cc13e8e",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C88",
+      "claim": "Vesicles containing hydroxyapatite are exocytosed from osteoblasts to deliver mineral to the protein matrix of the bone.",
+      "claim_type": "EXPLICIT",
+      "source": "These vesicles are exocytosed from osteoblasts to deliver mineral to the protein matrix of the bone (Anderson, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites a study describing osteoblast exocytosis.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "5dec0a03-eeb3-4f22-ac4e-23d611755e75",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C89",
+      "claim": "During mineral precipitation in osteoblasts, large amounts of acid are produced that need to be removed in order to maintain the slightly alkaline conditions at the site of bone formation.",
+      "claim_type": "EXPLICIT",
+      "source": "During mineral precipitation large amounts of acid are produced that need to be removed in order to maintain the slightly alkaline conditions at the site of bone formation (Brandao-Burch et al., 2005; Liu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites studies describing acid production during bone formation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "f02823d7-daec-4dec-8af6-835053945ff8",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C90",
+      "claim": "Osteoblasts possess a high pHi regulatory capacity during biomineralization that is achieved by a basolateral Na+/H+ exchanger 1 (NHE1) and NHE6 as well as HCO3-/Cl- exchange mechanisms by the anion exchanger 2 (AE2).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, osteoblasts also possess a high pHi regulatory capacity during biomineralization that is achieved by a basolateral Na+/H+ exchanger 1 (NHE1) and NHE6 as well as HCO3-/Cl- exchange mechanisms by the anion exchanger 2 (AE2) (Liu et al., 2011; Mobasheri et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites studies identifying pH regulatory mechanisms in osteoblasts.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "e34bc9a3-7274-4f69-996f-e6ecefa8c1f2",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C91",
+      "claim": "Similar to mammalian osteoblasts, PMCs of the sea urchin larva also possess pHi regulatory mechanisms to promote biomineralization.",
+      "claim_type": "EXPLICIT",
+      "source": "The present work demonstrates that similar to mammalian osteoblasts, PMCs of the sea urchin larva also possess pHi regulatory mechanisms to promote biomineralization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly draws this parallel based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "23f5794b-e5e0-4353-8562-b65ee7d1418f",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C92",
+      "claim": "The progressive down regulation of SpSlc4a10 is accompanied by a migration of SpSlc4a10 expressing cells toward the tips of the spicules during further development.",
+      "claim_type": "EXPLICIT",
+      "source": "The progressive down regulation of SpSlc4a10 is accompanied by a migration of SpSlc4a10 expressing cells toward the tips of the spicules during further development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly describes this temporal and spatial pattern.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "564300b1-af19-450d-9518-d6bd37497049",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C93",
+      "claim": "Immunocytochemical analyses suggest substantial HCO3- transport capacities by PMCs that may be associated with pHi regulation and accumulation of HCO3- to promote precipitation of CaCO3.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests substantial HCO3- transport capacities by PMCs that may be associated with pHi regulation and accumulation of HCO3- to promote precipitation of CaCO3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly suggests this interpretation based on immunocytochemistry results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "2f003dc2-17ce-45a8-a8c1-daec55bfdd85",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C94",
+      "claim": "In mammalian skeletal tissues AE2 has been associated with the Golgi apparatus, where it is hypothesized to control pH within the Golgi complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian skeletal tissues AE2 has been associated with the Golgi apparatus, where it is hypothesized to control pH within the Golgi complex (Bronckers et al., 2009; Holappa et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites studies describing AE2 localization and function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "714ae504-57c7-4261-b885-db8eb67fa19a",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C95",
+      "claim": "By controlling pH inside the Golgi, AE2 is believed to mediate posttranslational modification of matrix proteins, their packaging, transfer to the outer plasma membrane and exocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "By controlling pH inside the Golgi, AE2 is believed to mediate posttranslational modification of matrix proteins, their packaging, transfer to the outer plasma membrane and exocytosis (Bronckers et al., 2009; Jansen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites studies describing AE2 function in protein processing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "368717fa-b0a8-48a2-9830-dc4363c0a7f3",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C96",
+      "claim": "A lack of AE2 protein in skeletogenic cells is often associated with osteoporosis-like skeletal defects.",
+      "claim_type": "EXPLICIT",
+      "source": "A lack of this protein in skeletogenic cells is often associated with osteoporosis-like skeletal defects (Jansen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites a study linking AE2 deficiency to skeletal defects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "4046eae4-44ff-4449-99e3-a666b992b7d7",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C97",
+      "claim": "The disturbance of skeletogenesis in the SpSlc4a10 morphants may be due to disturbance of PMC migration, reductions in HCO3- supply, or decreased control of pHi.",
+      "claim_type": "EXPLICIT",
+      "source": "The disturbance of skeletogenesis in the SpSlc4a10 morphants may be due to multiple factors, including (i) disturbance of PMC migration (ii) reductions in HCO3- supply (iii) decreased control of pHi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly lists these potential mechanisms.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "170c4852-c625-4243-9b03-77961b3ac20e",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C98",
+      "claim": "Loop diuretics, blocking the Na+/K+/2Cl- cotransporter (NKCC), inhibited the fusion and formation of cytoplasmic cords in PMCs.",
+      "claim_type": "EXPLICIT",
+      "source": "For example loop diuretics, blocking the Na+/K+/2Cl- cotransporter (NKCC) inhibited the fusion and formation of cytoplasmic cords (Basse et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites a study showing NKCC inhibitor effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "209eb13b-e694-46f5-8f57-0ab209f1a7ab",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C99",
+      "claim": "The H+/K+-ATPase (HKA) inhibitor SCH28080 decreased calcification through impaired PMC fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Also the H+/K+-ATPase (HKA) inhibitor SCH28080 decreased calcification through impaired PMC fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites a study showing HKA inhibitor effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "8fe877a6-cf3a-488a-b4c6-8c4375d0d8af",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C100",
+      "claim": "While inhibition of HKA decreased pHi of PMCs, no changes in the migratory pattern were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while inhibition of HKA decreased pHi of PMCs, no changes in the migratory pattern were observed (Schatzberg et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites a study showing differential effects of HKA inhibition.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "9491f5b3-6db2-41e7-b0a2-552a20b307c6",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C101",
+      "claim": "The disruption of cell migration in the SpSlc4a10 morphants may be explained by changes in pHi gradients that can be critical for cell polarization.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, the disruption of cell migration in the SpSlc4a10 morphants may be explained by changes in pHi gradients that can be critical for cell polarization (Martin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly proposes this mechanism with citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "c535c683-23e2-4357-9cea-d3736b376358",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C102",
+      "claim": "Inhibition of NHE1 caused pHi gradients to flatten or disappear, and these gradients serve as an axis of movement in migrating cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been demonstrated that inhibition of NHE1, an important regulator of pHi, caused pHi gradients to flatten or disappear. These gradients serve as an axis of movement in migrating cells and so their absence would likely affect migration (Martin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites a study demonstrating the role of pH gradients in cell migration.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "b26faf61-6f9a-46ca-a1a5-510de46b59c1",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C103",
+      "claim": "The down regulation of the Na+/H+-exchanger (SpSlc9a2) in the SpSlc4a10 morphants would support the hypothesis that pHi gradient disruption affects migration.",
+      "claim_type": "IMPLICIT",
+      "source": "This hypothesis would be underlined by the down regulation of the Na+/H+-exchanger (SpSlc9a2) in the SpSlc4a10 morphants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly states this supporting evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "e5675372-5f0d-4fd3-8585-285980a0ffe1",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C104",
+      "claim": "Intracellular pH disturbances are associated with a wide range of cellular dysfunctions that may systemically disturb PMC migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these are likely explanations for the observed migratory defects, intracellular pH disturbances were demonstrated to be associated with a wide range of cellular dysfunctions (e.g. Kurkdjian and Guern, 1989; Madshus, 1988; Roos and Boron, 1981) that may also systemically disturb PMC migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites studies demonstrating broad effects of pH disturbances.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "c9e8ae54-bb2a-4c9d-9c72-9af9cf67383e",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C105",
+      "claim": "Reductions in calcification observed for the SpSlc4a10 morphants resulted from the decreased pHi regulatory ability of PMCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that reductions in calcification observed for the SpSlc4a10 morphants resulted from the decreased pHi regulatory ability of PMCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly proposes this mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "c76b07a0-793c-402f-8912-03990f9a4585",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C106",
+      "claim": "The uncompensated proton load generated by the formation of ACC leads to an intracellular acidosis impairing further precipitation of CaCO3.",
+      "claim_type": "EXPLICIT",
+      "source": "The uncompensated proton load generated by the formation of ACC leads to an intracellular acidosis impairing futher precipitation of CaCO3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly proposes this mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "4ed821d6-ffde-4ffb-8862-9980feec9c7b",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C107",
+      "claim": "Since 40% of the dissolved inorganic carbon (DIC) that is incorporated into spicules derives from the seawater, SpSlc4a10 may be involved in a HCO3- concentrating mechanism to promote intracellular calcification.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, since 40% of the dissolved inorganic carbon (DIC) that is incorporated into spicules derives from the seawater (Sikes et al., 1981), it can be suggested that SpSlc4a10 may be also involved in a HCO3- concentrating mechanism to promote intracellular calcification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly suggests this role with citation to supporting data.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "e006bc7d-07e9-4d9a-b687-6befdb520b8e",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C108",
+      "claim": "DIDS is a broad-band inhibitor for most SLC4 transporters and has been demonstrated to potentially also inhibit the gastric-type H+/K+-ATPase in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, DIDS is a broad-band inhibitor for most SLC4 transporters, and has been demonstrated to potentially also inhibit the gastric-type H+/K+-ATPase in mammals (Sugita et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites a study showing additional DIDS targets.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "e20c01b4-312d-409e-aa9b-6277280d50c6",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C109",
+      "claim": "It remains unresolved whether decreased pHi regulatory abilities under DIDS treatment can be attributed to an inhibition of HCO3- or H+ transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, it remains unresolved whether decreased pHi regulatory abilities under DIDS treatment can be attributed to an inhibition of HCO3- or H+ transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly acknowledges this limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "42405938-8623-4a51-be9e-7bfb7dd1c991",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C110",
+      "claim": "The knock-down of the HCO3- transporter SpSlc4a10 caused similar reductions in pHi regulatory capacities and calcein incorporation into spicules providing strong evidence for SpSlc4a10 to be a key player controlling intracellular ACC formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonethless, the knock-down of the HCO3- transporter SpSlc4a10 caused similar reductions in pHi regulatory capacities and calcein incorporation into spicules providing strong evidence for SpSlc4a10 to be a key player controlling intracellular ACC formation in the sea urchin larva.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly states this conclusion based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "a8fe252a-6240-4d49-a909-6a4c98e3dd40",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C111",
+      "claim": "Sea urchin larvae are capable of maintaining calcification rates despite reductions in seawater pH.",
+      "claim_type": "EXPLICIT",
+      "source": "CO2-perturbation experiments relevant for near-future ocean acidification scenarios demonstrated that sea urchin larvae are capable of maintaining calcification rates despite reductions in seawater pH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly states this finding from CO2 perturbation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "d540681b-5219-4da9-bebf-c3fb86ba998d",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C112",
+      "claim": "Reductions in seawater pH negatively impact calcification in many marine organisms due to a reduced availability of calcification substrates (e.g. HCO3- and CO32-) accompanied by enhanced dissolution of CaCO3.",
+      "claim_type": "EXPLICIT",
+      "source": "Reductions in seawater pH were demonstrated to negatively impact calcification in many marine organisms due to a reduced availability of calcification substrates (e.g. HCO3- and CO32-) accompanied by enhanced dissolution of CaCO3 (Kroeker et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites a study describing general ocean acidification effects.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "e192ffa5-9c6c-48f1-9513-1c927a1e487b",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C113",
+      "claim": "To maintain calcification rates under acidified conditions PMCs must allocate energy to increase HCO3- / CO32- transport to the site of calcification and to export protons against steeper H+ gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "To maintain calcification rates under acidified conditions PMCs must allocate energy to increase HCO3- / CO32- transport to the site of calcification and to export protons against steeper H+ gradients (Stumpp et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion cites a study describing energy allocation requirements.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "60b4a3d0-0350-4f2a-962f-82ffe5dd2d3c",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C114",
+      "claim": "SpSlc4a10 is a key candidate gene that is critical for calcification under acidified conditions in the sea urchin larva.",
+      "claim_type": "EXPLICIT",
+      "source": "This work has identified SpSlc4a10 as a key candidate gene that is critical for calcification under acidified conditions in the sea urchin larva.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explicitly states this conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "e28cb1a8-3c1c-4df9-943d-c9d5db0f3110",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C115",
+      "claim": "Bicarbonate transport by a Slc4 family transporter is required for pHi regulation in sea urchin PMCs critical for the normal development of the larval skeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that bicarbonate transport by a Slc4 family transporter is required for pHi regulation in sea urchin PMCs critical for the normal development of the larval skeleton.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion explicitly summarizes the main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "09abbeb5-ed91-46a1-a5fb-814432b30742",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C116",
+      "claim": "The occurrence of specific bicarbonate transporters has been suggested to be a key step for the evolution of biomineralization in basal metazoans.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, besides their importance in bone formation of mammals and vertebrates, the occurrence of specific bicarbonate transporters has been suggested to be a key step for the evolution of biomineralization in basal metazoans (Zoccola et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion cites a study suggesting evolutionary importance of bicarbonate transporters.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "029ed05d-c1fb-4e40-ace2-99ffc0b50bb5",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C117",
+      "claim": "A putative electroneutral Na+-independent Cl-/HCO3- cotransporter SLC4\u03b3 has been exclusively associated with calcifying tissues of scleratinian corals that is lacking in other non-calcifying cnidarians.",
+      "claim_type": "EXPLICIT",
+      "source": "A putative electroneutral Na+-independent Cl-/HCO3- cotransporter SLC4\u03b3 has been exclusively associated with calcifying tissues of scleratinian corals that is lacking in other non-calcifying cnidarians.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion explicitly describes this coral-specific transporter.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "4e08f1d2-fd63-4d82-81c3-1349bbf91680",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C118",
+      "claim": "pH regulation is ultimately linked to the biological precipitation of CaCO3.",
+      "claim_type": "EXPLICIT",
+      "source": "Since pH regulation is ultimately linked to the biological precipitation of CaCO3, the present work provides a first step toward characterizing ion-regulatory mechanisms in PMCs critical for biomineralization the sea urchin embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion explicitly states this fundamental link.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "4dc1e36f-e7ac-4352-94a2-8403e56a4654",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C119",
+      "claim": "Adult purple sea urchins (Strongylocentrotus purpuratus) were collected from the California coast.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult purple sea urchins (Stongylocentrotus purpuratus) were collected from the California coast (Kerckhoff marine Laboratory, California Institute of Technology), transferred to the Helmholtz Centre for Ocean Research Kiel (GEOMAR), and maintained in a re-cirulating natural seawater system at 11\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly describes the source of animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "9049c534-f884-4f21-8c4d-d4d200f1baad",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "claim_id": "C120",
+      "claim": "From 3 days post fertilization (dpf) larvae were fed daily with Rhodomonas spp. at a concentration of 10,000 cells mL\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "From 3 days post fertilization (dpf) larvae were fed daily with Rhodomonas spp. at a concentration of 10,000 cells mL\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly describes the feeding protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d4bb41a7-abc1-4e34-9fc7-e35bde038a20",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SpSlc4a10 is specifically expressed in primary mesenchyme cells (PMCs) with peak expression at 2 days post-fertilization (dpf) during de novo skeleton formation, followed by progressive downregulation and migration of expressing cells toward spicule tips.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C35-C38, C41-C42, and C92 collectively demonstrate the spatiotemporal expression pattern of SpSlc4a10 through in situ hybridization (Figure 1A) and qPCR data (Figure 1C), showing PMC-specific expression peaking at 2 dpf during skeleton formation. The data are internally consistent and supported by multiple complementary techniques.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "603d6848-4dba-406d-a7f2-c4c4f781019c",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SpSlc4a10 is phylogenetically related to mammalian electroneutral Na+-coupled HCO3- transporters (Slc4a7-10 clade), sharing 44% amino acid sequence similarity with mammalian Slc4a10 (NBCn2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39, C40, C76, C33, and C34 are supported by phylogenetic analysis (Figure 1\u2014figure supplement 2) and sequence alignment (Figure 1\u2014figure supplement 3). The 44% sequence similarity and phylogenetic clustering provide clear evidence for the evolutionary relationship, though functional conservation requires experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "66d88754-8418-409a-badc-d3970e0834f9",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Morpholino-mediated knockdown of SpSlc4a10 causes dose-dependent skeletal deformations with decreased primary rod length and reduced total calcium content, while digestive tract development remains normal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 and C52 are well-supported by morphological analyses using polarized light microscopy (Figure 2A-B) and calcium measurements, demonstrating specific effects on skeleton formation. The dose-dependent response (C44) and normal digestive tract development (C45) strengthen the specificity of the phenotype. Scramble morpholino controls validate specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "e2814f08-f477-4e6f-9bf0-10b60fec5c0c",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SpSlc4a10 morphants show compensatory four-fold upregulation of SpSlc4a10 expression and significant downregulation of SpSlc9a2 (Na+/H+ exchanger), while SpAtp1a3 (Na+/K+-ATPase) expression remains unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C49 interprets four-fold upregulation as evidence of morpholino specificity, but this interpretation is problematic. Typically, morpholinos block translation, not transcription, so increased mRNA could indicate compensatory transcriptional response or off-target effects rather than specificity. The downregulation of SpSlc9a2 (C50) may be a secondary effect. Additional validation experiments (e.g., rescue experiments) would strengthen these conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "5a7d3184-e9b2-467b-8a49-8e69906b9dd7",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SpSlc4a10 protein localizes to both plasma membrane and intracellular compartments in PMCs, with western blot analysis confirming a 135 kDa protein and successful morpholino-mediated knockdown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 are supported by immunofluorescence (Figure 3A-B) and western blot analyses (Figure 3D-E). The observed molecular weight (135 kDa) matches the predicted size (~130 kDa), and decreased protein levels in morphants validate the knockdown. Peptide competition controls (Figure 3C) confirm antibody specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "dab721d1-306a-44bb-b429-b2ec4d464f5e",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Sea urchin larvae maintain calcification rates under ocean acidification conditions (pH 7.7 and 7.5) when normalized for developmental delay, accompanied by increased SpSlc4a10 expression at 2 dpf.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C62 and C111 are supported by calcium accumulation measurements (Figure 4A-B) and qPCR data (Figure 4C-D). The normalization for body length (C60) is critical for interpreting maintained calcification capacity despite developmental delay. The correlation between maintained calcification and increased SpSlc4a10 expression (C61-C62) supports a compensatory mechanism, though causality is not definitively established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "3a038562-a21c-42ed-bd47-462181b419a0",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Ocean acidification-induced reductions in seawater pH lead to increased SpSlc4a10 expression, representing a compensatory mechanism to maintain calcification rates, identifying SpSlc4a10 as a key candidate gene for calcification under acidified conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, and C114 are supported by the correlation between pH reduction and SpSlc4a10 upregulation (Figure 4C-D) combined with maintained calcification rates (Figure 4B). However, the compensatory mechanism interpretation (C7) is inferential rather than directly demonstrated. Causality would require additional experiments showing that preventing SpSlc4a10 upregulation abolishes the compensatory response.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "7b089afe-4bdd-43c4-a6da-aadf7a92d138",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "SpSlc4a10 morphants exhibit significantly decreased baseline pHi (6.66 vs 6.87) and impaired recovery from ammonia-induced acidosis (recovery rate 0.05 vs 0.14 pH units/min) compared to controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C69 are well-supported by ratiometric fluorimetry using BCECF-AM (Figure 5A-C). The ammonia pulse-chase technique is well-established for assessing pHi regulatory capacity. Statistical significance is reported (Supplementary file 1-Table S2), and the nigericin calibration method validates pH measurements. The data clearly demonstrate impaired pHi regulation in morphants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "f39baca3-5890-4c9f-9283-789ab450f058",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "pHi recovery from intracellular acidosis is sensitive to DIDS in a dose-dependent manner with IC50 of 120 \u00b5M, though PMCs retain partial recovery capacity even with full DIDS inhibition, similar to SpSlc4a10 morphants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70, C71, and C82 are supported by pharmacological experiments (Figure 5E-F). The dose-response curve and IC50 determination are appropriate. The observation that DIDS-treated cells and morphants show similar residual recovery (C71) suggests additional DIDS-insensitive pH regulatory mechanisms exist, which is appropriately acknowledged in the discussion (C109).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "8f83fb93-8f84-48b0-8353-8a4d5b7b6512",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Calcein incorporation into spicules is decreased by 31-43% in SpSlc4a10 morphants and by 40-50% in DIDS-treated larvae (10-100 \u00b5M), indicating reduced calcification rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75 are supported by calcein pulse-chase experiments with confocal microscopy (Figure 6). The method directly measures calcium incorporation into growing spicules. The similarity between morphant and DIDS effects supports SpSlc4a10 as a DIDS-sensitive transporter. However, DIDS is a broad-spectrum inhibitor (C108), which is appropriately acknowledged as a limitation (C109).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "a9d1a164-bbec-4322-966c-84fdde97fc81",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "SpSlc4a10 knockdown leads to pH regulatory defects, decreased calcification rates, and skeleton deformations, with strong evidence that SpSlc4a10 plays a central role in controlling pHi of PMCs and intracellular ACC formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C83, C105-C106, and C110 integrate multiple lines of evidence: morphological defects (Figure 2), reduced calcium content (Figure 2B), impaired pHi regulation (Figure 5), and decreased calcein incorporation (Figure 6). The convergence of morpholino knockdown, pharmacological inhibition, and functional assays provides strong support for SpSlc4a10's central role in biomineralization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "6923af17-17ca-4671-bc5e-82052780c957",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "HCO3- transport via SpSlc4a10 serves dual functions: (i) supplying substrate for CaCO3 precipitation and (ii) buffering excess protons generated during intravesicular CaCO3 precipitation, with potential involvement in a HCO3- concentrating mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C29, C30, and C107 represent the study's mechanistic hypothesis but are largely speculative. While the data support SpSlc4a10's role in pHi regulation and calcification, direct evidence for HCO3- transport activity, substrate supply function, or a concentrating mechanism is lacking. The hypothesis is reasonable based on mammalian orthologs (C34, C79-C80) and the observation that ~40% of DIC derives from seawater (C20), but requires functional characterization of SpSlc4a10 transport properties.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "199ef00d-325e-48d8-bc00-d853c361e9d3",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Skeletal disturbances in SpSlc4a10 morphants may result from disrupted PMC migration due to altered pHi gradients, supported by downregulation of Na+/H+-exchanger SpSlc9a2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C97, C101, and C103 propose mechanisms for the morphant phenotype but are largely speculative. While irregular PMC patterns are observed (C52), direct evidence for disrupted pHi gradients or their role in migration is not provided. The downregulation of SpSlc9a2 (C50, C103) is correlative. The hypothesis is plausible based on cited literature (C102), but requires direct measurement of pHi gradients and migration assays.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "2782afad-7abd-47d7-9c95-49f19360391d",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "PMCs of sea urchin larvae share common features with mammalian osteoblasts in vesicular mineral precipitation and possess similar pHi regulatory mechanisms to promote biomineralization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C91 draw parallels between sea urchin PMCs and mammalian osteoblasts based on cited literature (C87-C90) and the current study's findings (C91). The comparison is well-supported: both systems use vesicular precipitation, face similar proton load challenges, and employ HCO3-/Cl- exchange mechanisms. This comparative framework strengthens the biological significance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "62cebf75-b095-4c3d-99c7-5996a48f4c3e",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Bicarbonate transport by SpSlc4a10 is required for pHi regulation in PMCs, which is fundamentally linked to biological CaCO3 precipitation and critical for normal larval skeleton development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C115 and C118 represent the study's main conclusions, integrating evidence from expression patterns, knockdown phenotypes, pHi measurements, and calcification assays. The link between pHi regulation and CaCO3 precipitation is well-established biochemically (C21-C22, C85-C86), and the study provides strong evidence for SpSlc4a10's role in this process.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "ace03a3a-d6f5-4f72-9ed4-dc7818b7edbf",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background on sea urchin biomineralization: PMCs produce the larval skeleton through intracellular ACC precipitation in vesicles, with calcium uptake increasing ten-fold during skeleton formation, and DIC derived from both respiratory CO2 (63%) and seawater (37%), generating protons that require pH regulatory mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C28 provide essential background from cited literature establishing the biomineralization context. These are well-established facts from prior studies (Boveri 1901, Nakano et al. 1963, Sikes et al. 1981, Stumpp et al. 2012, etc.) that frame the current investigation. The citations are appropriate and the background accurately represents prior knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "f94d4530-c7ef-4e2b-a04f-2ec447663be7",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Four Slc4 transporters exist in the sea urchin genome, with SpSlc4a10 showing highest transcript abundance during early skeleton formation (30-48 hpf) compared to other Slc4 family members.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31 and C32 cite prior genomic and transcriptomic studies (Tu et al. 2012, 2014) that identified and characterized sea urchin Slc4 transporters. These provide the rationale for focusing on SpSlc4a10 in the current study. The citations are appropriate and accurately represent prior findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "e874ca0c-71a1-44c9-9f22-56c49cc0a71d",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Na+/K+-ATPase (SpAtp1a3) and Na+/H+-exchanger (SpSlc9a2) are expressed in both stomach epithelial cells and PMCs of late gastrula and pluteus larvae.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47 and C48 are supported by in situ hybridization data (Figure 2C) showing expression of these ion transporters in PMCs. This establishes the presence of additional pH regulatory machinery in PMCs beyond SpSlc4a10, which is important for understanding the complete pH regulatory network.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "cd080426-6d5e-4777-925a-99c8f1c212fe",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Mammalian electroneutral Na+-coupled HCO3- transporters control pHi in neurons and enable transcellular HCO3- passage in epithelial cells, with human NBCn2 (Slc4a10) functioning as a Na+-dependent Cl-/HCO3- exchanger blocked by 200 \u00b5M DIDS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C81 accurately cite prior literature on mammalian Slc4 transporters (Wang et al. 2000, Parker et al. 2008, Guo et al. 2017, Ko et al. 2002, Stumpp et al. 2012). This background on mammalian orthologs provides functional context for interpreting SpSlc4a10's likely transport mechanism, though direct functional characterization of SpSlc4a10 is not provided in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "bdd1c908-1888-402b-a885-8de80c57b5dc",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "ACC precipitation in intracellular vesicles requires proton removal to avoid acidification-induced inhibition of CaCO3 precipitation, with potential roles for HCO3- transporters in both pHi regulation and organellar pH control, analogous to AE2 function in mammalian Golgi.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C86 and C93-C96 integrate current findings with cited literature on vesicular biomineralization and organellar pH regulation. The biochemical necessity of proton removal (C85) is well-established. The comparison to mammalian AE2 in Golgi (C94-C96) provides a plausible framework for interpreting SpSlc4a10's intracellular localization (C54), though direct evidence for organellar function is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "98a981a6-febc-45c3-b4c1-bdcf3e3884c9",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Prior studies show that ion transporter inhibitors (NKCC blockers, HKA inhibitors, NHE1 inhibitors) affect PMC fusion, migration, and pHi, with pHi gradients serving as axes of movement in migrating cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C100, C102, and C104 accurately cite prior studies (Basse et al. 2015, Schatzberg et al. 2015, Martin et al. 2011, Kurkdjian and Guern 1989, Madshus 1988, Roos and Boron 1981) establishing the importance of ion regulation for PMC function and cell migration. This literature provides context for interpreting the morphant phenotype, though the specific mechanisms in SpSlc4a10 morphants remain to be directly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "c01a9c6e-0013-4996-9e56-55890168c452",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "DIDS is a broad-band inhibitor affecting most SLC4 transporters and potentially H+/K+-ATPase, leaving unresolved whether decreased pHi regulatory abilities under DIDS treatment result from HCO3- or H+ transport inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108 and C109 appropriately acknowledge limitations of pharmacological approaches. The citation of DIDS's additional targets (Sugita et al. 1999) and the explicit statement of uncertainty (C109) demonstrate appropriate scientific caution. This limitation is addressed by the complementary morpholino approach (C110).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "a2a2f85f-bf0d-4617-8b71-33157f1c4919",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Ocean acidification reduces calcification substrate availability and enhances CaCO3 dissolution in marine organisms, requiring energy allocation to increase HCO3-/CO32- transport and proton export against steeper gradients to maintain calcification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112 and C113 accurately cite established ocean acidification literature (Kroeker et al. 2013, Stumpp et al. 2012) providing the environmental context for the study. The energetic framework for understanding compensatory responses is well-established and appropriately applied to interpret the SpSlc4a10 upregulation under acidified conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "5a4d716c-9326-4645-a542-75b62b0e7689",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Specific bicarbonate transporters are suggested as key evolutionary innovations for biomineralization in basal metazoans, with coral-specific SLC4\u03b3 exclusively associated with calcifying tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C116 and C117 cite comparative studies (Zoccola et al. 2015) on bicarbonate transporter evolution in calcifying organisms. This evolutionary perspective strengthens the significance of identifying SpSlc4a10's role in sea urchin biomineralization and suggests conserved mechanisms across calcifying taxa.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    },
+    {
+      "id": "aa61c28b-95fb-4d08-b931-cbc69752320d",
+      "content_id": "11508c34-b767-42cd-8c1f-3e11a9ef36db",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Adult purple sea urchins (Strongylocentrotus purpuratus) were collected from California coast and larvae were fed Rhodomonas spp. from 3 dpf at 10,000 cells/mL.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C119 and C120 describe standard methods for sea urchin culture that are appropriate and well-established. These methodological details are necessary for reproducibility and are adequately described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:09.012474Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9c377179-702f-4728-a180-7619acdbabd9",
+      "result_id": "d4bb41a7-abc1-4e34-9fc7-e35bde038a20"
+    },
+    {
+      "claim_id": "0210aa34-ed4e-4988-a1e1-8c0a05317c07",
+      "result_id": "d4bb41a7-abc1-4e34-9fc7-e35bde038a20"
+    },
+    {
+      "claim_id": "8462ec13-d7b1-4f74-9682-049f25c6ee11",
+      "result_id": "d4bb41a7-abc1-4e34-9fc7-e35bde038a20"
+    },
+    {
+      "claim_id": "a6292746-50f8-42e1-81e9-96e7a87f7277",
+      "result_id": "d4bb41a7-abc1-4e34-9fc7-e35bde038a20"
+    },
+    {
+      "claim_id": "bdaf9c52-471c-45fe-9af3-d2b252e13421",
+      "result_id": "d4bb41a7-abc1-4e34-9fc7-e35bde038a20"
+    },
+    {
+      "claim_id": "97314a91-3f1d-4d43-92e5-d7fd1740963c",
+      "result_id": "d4bb41a7-abc1-4e34-9fc7-e35bde038a20"
+    },
+    {
+      "claim_id": "7edf09e7-d45f-4cb6-9348-1423f5852cda",
+      "result_id": "d4bb41a7-abc1-4e34-9fc7-e35bde038a20"
+    },
+    {
+      "claim_id": "9b2f18e6-d1e1-4f6d-a824-2bd5be65c111",
+      "result_id": "d4bb41a7-abc1-4e34-9fc7-e35bde038a20"
+    },
+    {
+      "claim_id": "23f5794b-e5e0-4353-8562-b65ee7d1418f",
+      "result_id": "d4bb41a7-abc1-4e34-9fc7-e35bde038a20"
+    },
+    {
+      "claim_id": "8901eabc-0fca-44ea-9038-18e968dba10a",
+      "result_id": "603d6848-4dba-406d-a7f2-c4c4f781019c"
+    },
+    {
+      "claim_id": "dbcc7e43-8980-4b5e-b58f-4625066520e7",
+      "result_id": "603d6848-4dba-406d-a7f2-c4c4f781019c"
+    },
+    {
+      "claim_id": "3cbc799c-9a3e-49c3-8499-5f4c9064c67e",
+      "result_id": "603d6848-4dba-406d-a7f2-c4c4f781019c"
+    },
+    {
+      "claim_id": "306a3fa2-61e4-44b6-b760-19ea7295750a",
+      "result_id": "603d6848-4dba-406d-a7f2-c4c4f781019c"
+    },
+    {
+      "claim_id": "72670b52-317b-4869-be60-f527e627358c",
+      "result_id": "603d6848-4dba-406d-a7f2-c4c4f781019c"
+    },
+    {
+      "claim_id": "bd970b3b-4cf5-4144-8d7e-2586942f7751",
+      "result_id": "66d88754-8418-409a-badc-d3970e0834f9"
+    },
+    {
+      "claim_id": "d0235934-ab50-431e-8e3f-46fd8b3b687e",
+      "result_id": "66d88754-8418-409a-badc-d3970e0834f9"
+    },
+    {
+      "claim_id": "5b83f5df-1426-4d8f-b8ed-05456666a2df",
+      "result_id": "66d88754-8418-409a-badc-d3970e0834f9"
+    },
+    {
+      "claim_id": "3cca0129-5841-461c-a24e-bc4f1986c158",
+      "result_id": "66d88754-8418-409a-badc-d3970e0834f9"
+    },
+    {
+      "claim_id": "20ff939d-17c7-4808-80a9-ed53b86119ae",
+      "result_id": "66d88754-8418-409a-badc-d3970e0834f9"
+    },
+    {
+      "claim_id": "f9501e66-46ba-459e-8519-4965cd0d5e7b",
+      "result_id": "e2814f08-f477-4e6f-9bf0-10b60fec5c0c"
+    },
+    {
+      "claim_id": "71fbcc60-2140-467c-a83c-aac3c999727b",
+      "result_id": "e2814f08-f477-4e6f-9bf0-10b60fec5c0c"
+    },
+    {
+      "claim_id": "f2ddc49f-9b04-4e5c-96ec-cc53d2dce12d",
+      "result_id": "e2814f08-f477-4e6f-9bf0-10b60fec5c0c"
+    },
+    {
+      "claim_id": "b5eccc6b-91b3-474b-b035-69d45f84240d",
+      "result_id": "5a7d3184-e9b2-467b-8a49-8e69906b9dd7"
+    },
+    {
+      "claim_id": "d09c9771-e936-44ec-a30d-f0bf0c272c20",
+      "result_id": "5a7d3184-e9b2-467b-8a49-8e69906b9dd7"
+    },
+    {
+      "claim_id": "6e179e57-b090-4beb-a0a3-65fc1dc358dd",
+      "result_id": "5a7d3184-e9b2-467b-8a49-8e69906b9dd7"
+    },
+    {
+      "claim_id": "17e71556-b9c6-4946-bace-ce8d117662b5",
+      "result_id": "dab721d1-306a-44bb-b429-b2ec4d464f5e"
+    },
+    {
+      "claim_id": "04e15b3d-1012-405c-8816-0924cedf788f",
+      "result_id": "dab721d1-306a-44bb-b429-b2ec4d464f5e"
+    },
+    {
+      "claim_id": "f9562fb5-12d2-44ea-a1f6-a3e6f54c6991",
+      "result_id": "dab721d1-306a-44bb-b429-b2ec4d464f5e"
+    },
+    {
+      "claim_id": "662cc39e-a91d-432a-b824-aefee1153700",
+      "result_id": "dab721d1-306a-44bb-b429-b2ec4d464f5e"
+    },
+    {
+      "claim_id": "99bb4899-a02f-4661-a891-ca949146b08f",
+      "result_id": "dab721d1-306a-44bb-b429-b2ec4d464f5e"
+    },
+    {
+      "claim_id": "acff1926-fa34-4627-80ce-5c9ce41bfb9d",
+      "result_id": "dab721d1-306a-44bb-b429-b2ec4d464f5e"
+    },
+    {
+      "claim_id": "a8fe252a-6240-4d49-a909-6a4c98e3dd40",
+      "result_id": "dab721d1-306a-44bb-b429-b2ec4d464f5e"
+    },
+    {
+      "claim_id": "99582752-66cd-43f2-9e6e-7a6102ca9f64",
+      "result_id": "3a038562-a21c-42ed-bd47-462181b419a0"
+    },
+    {
+      "claim_id": "3214182f-a897-4631-bdba-777de4d42719",
+      "result_id": "3a038562-a21c-42ed-bd47-462181b419a0"
+    },
+    {
+      "claim_id": "60b4a3d0-0350-4f2a-962f-82ffe5dd2d3c",
+      "result_id": "3a038562-a21c-42ed-bd47-462181b419a0"
+    },
+    {
+      "claim_id": "fe3939d4-1130-4620-b6f7-af28e7b67ab9",
+      "result_id": "7b089afe-4bdd-43c4-a6da-aadf7a92d138"
+    },
+    {
+      "claim_id": "e9dc3cd2-f290-4380-8692-d83eeceb77a5",
+      "result_id": "7b089afe-4bdd-43c4-a6da-aadf7a92d138"
+    },
+    {
+      "claim_id": "f9a5039f-1be1-4e36-984d-d2da7f78d617",
+      "result_id": "7b089afe-4bdd-43c4-a6da-aadf7a92d138"
+    },
+    {
+      "claim_id": "cff3770d-eb81-42a1-8424-9df38778d09a",
+      "result_id": "7b089afe-4bdd-43c4-a6da-aadf7a92d138"
+    },
+    {
+      "claim_id": "48531490-8883-4a09-a497-88939642b16d",
+      "result_id": "7b089afe-4bdd-43c4-a6da-aadf7a92d138"
+    },
+    {
+      "claim_id": "e1e32163-b117-49fe-8e8a-34a1df44e209",
+      "result_id": "7b089afe-4bdd-43c4-a6da-aadf7a92d138"
+    },
+    {
+      "claim_id": "eedad4c3-cd79-43cb-ae40-ff8b9d65dd3c",
+      "result_id": "7b089afe-4bdd-43c4-a6da-aadf7a92d138"
+    },
+    {
+      "claim_id": "959aa452-f526-432e-a87b-9ab47b9d91ca",
+      "result_id": "f39baca3-5890-4c9f-9283-789ab450f058"
+    },
+    {
+      "claim_id": "4488dc8c-3f46-4513-a8c2-518cfbc4a93f",
+      "result_id": "f39baca3-5890-4c9f-9283-789ab450f058"
+    },
+    {
+      "claim_id": "c5c07d5a-3a9c-40ef-a011-8d59f03c32b4",
+      "result_id": "f39baca3-5890-4c9f-9283-789ab450f058"
+    },
+    {
+      "claim_id": "4e9a97c6-bd73-4a4d-84fb-254cd598eca2",
+      "result_id": "8f83fb93-8f84-48b0-8353-8a4d5b7b6512"
+    },
+    {
+      "claim_id": "5eff53f4-e444-4c67-8152-645fa6f15e94",
+      "result_id": "8f83fb93-8f84-48b0-8353-8a4d5b7b6512"
+    },
+    {
+      "claim_id": "5c82bb1e-0ed8-4180-b90b-5e93feb72820",
+      "result_id": "8f83fb93-8f84-48b0-8353-8a4d5b7b6512"
+    },
+    {
+      "claim_id": "4246443a-7a95-4ae7-aa22-3611fb164448",
+      "result_id": "a9d1a164-bbec-4322-966c-84fdde97fc81"
+    },
+    {
+      "claim_id": "ea0894c6-32c6-466c-80d2-655b5bf1e880",
+      "result_id": "a9d1a164-bbec-4322-966c-84fdde97fc81"
+    },
+    {
+      "claim_id": "ab83ade7-31fb-40fd-a04a-fb0e7387ea7d",
+      "result_id": "a9d1a164-bbec-4322-966c-84fdde97fc81"
+    },
+    {
+      "claim_id": "59b0484e-7492-480b-8cd0-9ee28c596bfa",
+      "result_id": "a9d1a164-bbec-4322-966c-84fdde97fc81"
+    },
+    {
+      "claim_id": "c9e8ae54-bb2a-4c9d-9c72-9af9cf67383e",
+      "result_id": "a9d1a164-bbec-4322-966c-84fdde97fc81"
+    },
+    {
+      "claim_id": "c76b07a0-793c-402f-8912-03990f9a4585",
+      "result_id": "a9d1a164-bbec-4322-966c-84fdde97fc81"
+    },
+    {
+      "claim_id": "42405938-8623-4a51-be9e-7bfb7dd1c991",
+      "result_id": "a9d1a164-bbec-4322-966c-84fdde97fc81"
+    },
+    {
+      "claim_id": "4ec04e29-9278-4acf-81b4-9b5b77dc8cf1",
+      "result_id": "6923af17-17ca-4671-bc5e-82052780c957"
+    },
+    {
+      "claim_id": "b58d8582-0c95-4310-b5e9-d9c16854af04",
+      "result_id": "6923af17-17ca-4671-bc5e-82052780c957"
+    },
+    {
+      "claim_id": "4ed821d6-ffde-4ffb-8862-9980feec9c7b",
+      "result_id": "6923af17-17ca-4671-bc5e-82052780c957"
+    },
+    {
+      "claim_id": "4046eae4-44ff-4449-99e3-a666b992b7d7",
+      "result_id": "199ef00d-325e-48d8-bc00-d853c361e9d3"
+    },
+    {
+      "claim_id": "9491f5b3-6db2-41e7-b0a2-552a20b307c6",
+      "result_id": "199ef00d-325e-48d8-bc00-d853c361e9d3"
+    },
+    {
+      "claim_id": "b26faf61-6f9a-46ca-a1a5-510de46b59c1",
+      "result_id": "199ef00d-325e-48d8-bc00-d853c361e9d3"
+    },
+    {
+      "claim_id": "e1fd2250-872a-455e-9ba3-41f38a1650bb",
+      "result_id": "2782afad-7abd-47d7-9c95-49f19360391d"
+    },
+    {
+      "claim_id": "08e26e48-5326-49ba-8a57-d6af4cc13e8e",
+      "result_id": "2782afad-7abd-47d7-9c95-49f19360391d"
+    },
+    {
+      "claim_id": "5dec0a03-eeb3-4f22-ac4e-23d611755e75",
+      "result_id": "2782afad-7abd-47d7-9c95-49f19360391d"
+    },
+    {
+      "claim_id": "f02823d7-daec-4dec-8af6-835053945ff8",
+      "result_id": "2782afad-7abd-47d7-9c95-49f19360391d"
+    },
+    {
+      "claim_id": "e34bc9a3-7274-4f69-996f-e6ecefa8c1f2",
+      "result_id": "2782afad-7abd-47d7-9c95-49f19360391d"
+    },
+    {
+      "claim_id": "e28cb1a8-3c1c-4df9-943d-c9d5db0f3110",
+      "result_id": "62cebf75-b095-4c3d-99c7-5996a48f4c3e"
+    },
+    {
+      "claim_id": "4e08f1d2-fd63-4d82-81c3-1349bbf91680",
+      "result_id": "62cebf75-b095-4c3d-99c7-5996a48f4c3e"
+    },
+    {
+      "claim_id": "51504e9c-bd4b-4d50-b39e-e1c237305157",
+      "result_id": "ace03a3a-d6f5-4f72-9ed4-dc7818b7edbf"
+    },
+    {
+      "claim_id": "50ff850e-9b79-436f-9631-ca19b8b8a4f2",
+      "result_id": "ace03a3a-d6f5-4f72-9ed4-dc7818b7edbf"
+    },
+    {
+      "claim_id": "5124e249-0570-4f90-af6d-777b21dd117c",
+      "result_id": "ace03a3a-d6f5-4f72-9ed4-dc7818b7edbf"
+    },
+    {
+      "claim_id": "97361843-77ec-4e24-906b-6abd9678a9f6",
+      "result_id": "ace03a3a-d6f5-4f72-9ed4-dc7818b7edbf"
+    },
+    {
+      "claim_id": "201e5650-d970-4498-9f33-ba6c456b2bcc",
+      "result_id": "ace03a3a-d6f5-4f72-9ed4-dc7818b7edbf"
+    },
+    {
+      "claim_id": "98fff1cf-eceb-4193-b76d-ed85ba3b2241",
+      "result_id": "ace03a3a-d6f5-4f72-9ed4-dc7818b7edbf"
+    },
+    {
+      "claim_id": "673252dc-7882-43df-b534-69c8d678eb16",
+      "result_id": "ace03a3a-d6f5-4f72-9ed4-dc7818b7edbf"
+    },
+    {
+      "claim_id": "95c00b21-4bb6-4499-a138-04f525c07cdc",
+      "result_id": "ace03a3a-d6f5-4f72-9ed4-dc7818b7edbf"
+    },
+    {
+      "claim_id": "ea41a0f2-95c2-40df-bd89-d5cce0ff43b8",
+      "result_id": "ace03a3a-d6f5-4f72-9ed4-dc7818b7edbf"
+    },
+    {
+      "claim_id": "7c398828-12a0-4fcd-9a18-98ad72248cef",
+      "result_id": "ace03a3a-d6f5-4f72-9ed4-dc7818b7edbf"
+    },
+    {
+      "claim_id": "61d891b7-c3a4-4c9e-82f8-068b8d7027a7",
+      "result_id": "ace03a3a-d6f5-4f72-9ed4-dc7818b7edbf"
+    },
+    {
+      "claim_id": "5d53e03c-2e80-4768-a2d8-8dc33a248edf",
+      "result_id": "ace03a3a-d6f5-4f72-9ed4-dc7818b7edbf"
+    },
+    {
+      "claim_id": "3a70d7fe-119d-43d9-9ee2-a9a6462328c1",
+      "result_id": "ace03a3a-d6f5-4f72-9ed4-dc7818b7edbf"
+    },
+    {
+      "claim_id": "6890c1c6-8871-4553-956a-270c5c41da35",
+      "result_id": "ace03a3a-d6f5-4f72-9ed4-dc7818b7edbf"
+    },
+    {
+      "claim_id": "3162dcad-18e8-4dd9-bdde-49d5c91334d7",
+      "result_id": "ace03a3a-d6f5-4f72-9ed4-dc7818b7edbf"
+    },
+    {
+      "claim_id": "b846bc11-2d63-486b-b58c-f53725319edb",
+      "result_id": "ace03a3a-d6f5-4f72-9ed4-dc7818b7edbf"
+    },
+    {
+      "claim_id": "e5138149-68d1-4dcf-8c46-3c78d63aff5f",
+      "result_id": "ace03a3a-d6f5-4f72-9ed4-dc7818b7edbf"
+    },
+    {
+      "claim_id": "7056934a-c098-4494-b58d-01bdcdc67f44",
+      "result_id": "ace03a3a-d6f5-4f72-9ed4-dc7818b7edbf"
+    },
+    {
+      "claim_id": "0fc48a3f-a58f-4ec8-a4f0-b45a153f0af1",
+      "result_id": "ace03a3a-d6f5-4f72-9ed4-dc7818b7edbf"
+    },
+    {
+      "claim_id": "38b50a3e-f568-453a-9d8e-0a5f0f300aae",
+      "result_id": "ace03a3a-d6f5-4f72-9ed4-dc7818b7edbf"
+    },
+    {
+      "claim_id": "92343483-e837-401c-adee-05896eb45b85",
+      "result_id": "ace03a3a-d6f5-4f72-9ed4-dc7818b7edbf"
+    },
+    {
+      "claim_id": "0507731d-49ed-43d3-9ce1-a9203a345944",
+      "result_id": "f94d4530-c7ef-4e2b-a04f-2ec447663be7"
+    },
+    {
+      "claim_id": "ecf03a13-8c35-4f2c-a7a1-7cb198183239",
+      "result_id": "f94d4530-c7ef-4e2b-a04f-2ec447663be7"
+    },
+    {
+      "claim_id": "f891273e-b48c-4672-a9fb-2be42fa11450",
+      "result_id": "e874ca0c-71a1-44c9-9f22-56c49cc0a71d"
+    },
+    {
+      "claim_id": "047964d1-fcd7-4bd8-a609-dd8fc304c635",
+      "result_id": "e874ca0c-71a1-44c9-9f22-56c49cc0a71d"
+    },
+    {
+      "claim_id": "87d79ff2-4bdc-48b4-90cc-bb642e5eeb5a",
+      "result_id": "cd080426-6d5e-4777-925a-99c8f1c212fe"
+    },
+    {
+      "claim_id": "583756b1-f1f5-4628-a3fd-ce475ad3a513",
+      "result_id": "cd080426-6d5e-4777-925a-99c8f1c212fe"
+    },
+    {
+      "claim_id": "e430a281-24ae-4828-b17b-5ac320c99b83",
+      "result_id": "cd080426-6d5e-4777-925a-99c8f1c212fe"
+    },
+    {
+      "claim_id": "a1625159-dd11-4cae-b3d0-1849ae29a33d",
+      "result_id": "cd080426-6d5e-4777-925a-99c8f1c212fe"
+    },
+    {
+      "claim_id": "261a7271-a087-495b-8676-b328d22113b4",
+      "result_id": "cd080426-6d5e-4777-925a-99c8f1c212fe"
+    },
+    {
+      "claim_id": "15251eff-e7fa-4d20-9a14-bfebfc56d334",
+      "result_id": "bdd1c908-1888-402b-a885-8de80c57b5dc"
+    },
+    {
+      "claim_id": "1534c97c-2086-4ffd-9b67-01356fcf6075",
+      "result_id": "bdd1c908-1888-402b-a885-8de80c57b5dc"
+    },
+    {
+      "claim_id": "5bea32d8-27b0-44d4-8eab-81e31cd13e94",
+      "result_id": "bdd1c908-1888-402b-a885-8de80c57b5dc"
+    },
+    {
+      "claim_id": "564300b1-af19-450d-9518-d6bd37497049",
+      "result_id": "bdd1c908-1888-402b-a885-8de80c57b5dc"
+    },
+    {
+      "claim_id": "2f003dc2-17ce-45a8-a8c1-daec55bfdd85",
+      "result_id": "bdd1c908-1888-402b-a885-8de80c57b5dc"
+    },
+    {
+      "claim_id": "714ae504-57c7-4261-b885-db8eb67fa19a",
+      "result_id": "bdd1c908-1888-402b-a885-8de80c57b5dc"
+    },
+    {
+      "claim_id": "368717fa-b0a8-48a2-9830-dc4363c0a7f3",
+      "result_id": "bdd1c908-1888-402b-a885-8de80c57b5dc"
+    },
+    {
+      "claim_id": "170c4852-c625-4243-9b03-77961b3ac20e",
+      "result_id": "98a981a6-febc-45c3-b4c1-bdcf3e3884c9"
+    },
+    {
+      "claim_id": "209eb13b-e694-46f5-8f57-0ab209f1a7ab",
+      "result_id": "98a981a6-febc-45c3-b4c1-bdcf3e3884c9"
+    },
+    {
+      "claim_id": "8fe877a6-cf3a-488a-b4c6-8c4375d0d8af",
+      "result_id": "98a981a6-febc-45c3-b4c1-bdcf3e3884c9"
+    },
+    {
+      "claim_id": "c535c683-23e2-4357-9cea-d3736b376358",
+      "result_id": "98a981a6-febc-45c3-b4c1-bdcf3e3884c9"
+    },
+    {
+      "claim_id": "e5675372-5f0d-4fd3-8585-285980a0ffe1",
+      "result_id": "98a981a6-febc-45c3-b4c1-bdcf3e3884c9"
+    },
+    {
+      "claim_id": "e006bc7d-07e9-4d9a-b687-6befdb520b8e",
+      "result_id": "c01a9c6e-0013-4996-9e56-55890168c452"
+    },
+    {
+      "claim_id": "e20c01b4-312d-409e-aa9b-6277280d50c6",
+      "result_id": "c01a9c6e-0013-4996-9e56-55890168c452"
+    },
+    {
+      "claim_id": "d540681b-5219-4da9-bebf-c3fb86ba998d",
+      "result_id": "a2a2f85f-bf0d-4617-8b71-33157f1c4919"
+    },
+    {
+      "claim_id": "e192ffa5-9c6c-48f1-9513-1c927a1e487b",
+      "result_id": "a2a2f85f-bf0d-4617-8b71-33157f1c4919"
+    },
+    {
+      "claim_id": "09abbeb5-ed91-46a1-a5fb-814432b30742",
+      "result_id": "5a4d716c-9326-4645-a542-75b62b0e7689"
+    },
+    {
+      "claim_id": "029ed05d-c1fb-4e40-ace2-99ffc0b50bb5",
+      "result_id": "5a4d716c-9326-4645-a542-75b62b0e7689"
+    },
+    {
+      "claim_id": "4dc1e36f-e7ac-4352-94a2-8403e56a4654",
+      "result_id": "aa61c28b-95fb-4d08-b931-cbc69752320d"
+    },
+    {
+      "claim_id": "9049c534-f884-4f21-8c4d-d4d200f1baad",
+      "result_id": "aa61c28b-95fb-4d08-b931-cbc69752320d"
+    }
+  ],
+  "comparisons": []
+}

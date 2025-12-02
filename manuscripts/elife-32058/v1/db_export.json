@@ -1,0 +1,2009 @@
+{
+  "submission": {
+    "id": "906f4f3c-49a5-49b6-b797-7f089ebd2d2c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:44:22.443889Z",
+    "updated_at": "2025-12-01T23:44:22.443889Z"
+  },
+  "content": [
+    {
+      "id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "submission_id": "906f4f3c-49a5-49b6-b797-7f089ebd2d2c",
+      "content_type": "manuscript",
+      "content_text": "# Closed-loop neuromodulation restores network connectivity and motor control after spinal cord injury\n\n## Authors\n\n- Patrick D Ganzer<sup>1</sup> ([ORCID: 0000-0003-4260-1624](https://orcid.org/0000-0003-4260-1624)) \u2020\n- Michael J Darrow<sup>1</sup>\n- Eric C Meyers<sup>1</sup>\n- Bleyda R Solorzano<sup>2</sup>\n- Andrea D Ruiz<sup>2</sup>\n- Nicole M Robertson<sup>2</sup>\n- Katherine S Adcock<sup>3</sup>\n- Justin T James<sup>2</sup>\n- Han S Jeong<sup>2</sup>\n- April M Becker<sup>4</sup> ([ORCID: 0000-0003-2706-1711](https://orcid.org/0000-0003-2706-1711))\n- Mark P Goldberg<sup>4</sup>\n- David T Pruitt<sup>1</sup> ([ORCID: 0000-0001-8356-0887](https://orcid.org/0000-0001-8356-0887))\n- Seth A Hays<sup>1</sup> ([ORCID: 0000-0003-4225-241X](https://orcid.org/0000-0003-4225-241X))\n- Michael P Kilgard<sup>1</sup>\n- Robert L Rennaker<sup>1</sup> ([ORCID: 0000-0003-1260-1973](https://orcid.org/0000-0003-1260-1973)) \u2020\n\n### Affiliations\n\n1. Erik Jonsson School of Engineering and Computer Science The University of Texas at Dallas Richardson United States\n2. Texas Biomedical Device Center Richardson United States\n3. School of Behavioral Brain Sciences The University of Texas at Dallas Richardson United States\n4. Department of Neurology and Neurotherapeutics University of Texas Southwestern Medical Center Dallas United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nRecovery from serious neurological injury requires substantial rewiring of neural circuits. Precisely-timed electrical stimulation could be used to restore corrective feedback mechanisms and promote adaptive plasticity after neurological insult, such as spinal cord injury (SCI) or stroke. This study provides the first evidence that closed-loop vagus nerve stimulation (CLV) based on the synaptic eligibility trace leads to dramatic recovery from the most common forms of SCI. The addition of CLV to rehabilitation promoted substantially more recovery of forelimb function compared to rehabilitation alone following chronic unilateral or bilateral cervical SCI in a rat model. Triggering stimulation on the most successful movements is critical to maximize recovery. CLV enhances recovery by strengthening synaptic connectivity from remaining motor networks to the grasping muscles in the forelimb. The benefits of CLV persist long after the end of stimulation because connectivity in critical neural circuits has been restored.\n\n## Introduction\n\nRecovery from serious neurological injury requires substantial rewiring of neural circuits. Many methods have been developed to enhance synaptic plasticity in hopes of enhancing recovery. Unfortunately, these methods have largely failed in the clinic likely due to the challenge of precisely targeting specific synapses and absence of testing in clinically-relevant models (Gladstone et al., 2006; Levy et al., 2016). Real-time control of neural activity provides a new avenue to promote synaptic plasticity in specific networks and restore function after injury (Engineer et al., 2011; Nishimura et al., 2013; McPherson et al., 2015; Guggenmos et al., 2013).\n\nHuman and animal studies demonstrate that precisely timed vagus nerve stimulation (VNS) can improve recovery of sensory and motor function. VNS engages neuromodulatory networks and triggers release of pro-plasticity factors including norepinephrine, acetylcholine, serotonin, brain-derived neurotrophic factor, and fibroblast growth factor (Hays, 2016; Hulsey et al., 2017; Hulsey et al., 2016). This in turn influences expression and phosphorylation of proteins associated with structural and synaptic plasticity, including Arc, CaMKII, TrkB, and glutamate receptors (Alvarez-Dieppa et al., 2016; Furmaga et al., 2012). Engagement of neuromodulatory networks activates a transient synaptic eligibility trace to support spike-timing-dependent plasticity (STDP) (He et al., 2015), thus raising the prospect that closed-loop neuromodulatory strategies may provide a means to direct specific, long-lasting plasticity to enhance recovery after neurological injury. Indeed, in the absence of neurological damage, repeatedly pairing sensory or motor events with brief bursts of VNS yields robust plasticity in sensory or motor cortex that is specific to the paired experience (Engineer et al., 2011; Hulsey et al., 2016). Moreover, the addition of VNS to rehabilitative training improves recovery in rodent models of unilateral brain injury and in chronic stroke patients, highlighting the clinical potential of closed-loop neuromodulatory strategies (Hays, 2016; Khodaparast et al., 2016; Pruitt et al., 2016; Hays et al., 2014a; Dawson et al., 2016).\n\nWe tested the hypothesis that closed-loop VNS (CLV) could be harnessed to enhance recovery after spinal cord injury (SCI). To do so, we developed a real-time closed-loop neuromodulation paradigm based on the synaptic eligibility trace to deliver VNS immediately after the most successful forelimb movements during motor rehabilitation. The strategy uses a control algorithm that adaptively scales stimulation threshold to trigger a brief 0.5 s train of VNS on trials in which pull forces fall within the top quintile of previous trials (Top 20% CLV; Figure 1a,b, and Figure 1\u2014figure supplement 1a). To test the hypothesis that temporal precision is required for VNS-dependent effects, we employed a similar algorithm in which stimulation was delivered on the weakest quintile of trials (Bottom 20% CLV; Figure 1b and Figure 1\u2014figure supplement 1g). Both algorithms deliver the same amount of VNS during rehabilitative training, but Bottom 20% CLV results in a significant delay between VNS and the most successful trials.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/32058/elife-32058-fig1-v1.jpg)\n\n**Figure 1.:** (a) Closed-loop neuromodulation to deliver vagus nerve stimulation to reinforce the most successful trials during rehabilitative training after SCI. (b) Top 20% CLV received a 0.5 s train of VNS on trials in which pull force falls within the highest quintile of previous pull forces. The Bottom 20% CLV group received VNS on trials in which pull force falls within the lowest quintile. Rehab alone performed equivalent rehabilitative training without VNS. Each circle represents peak pull force on an individual trial. Inset shows an animal performing the isometric pull task. See Figure 1\u2014figure supplement 1 for more detail. (c) Top 20% CLV significantly improves forelimb function after SCI compared to Bottom 20% CLV and Rehab alone, indicating that precisely-timed VNS enhances recovery. (d,e) Differences in the intensity of rehabilitative training or the amount of stimulations cannot account for improved recovery. A significant increase in recovery is observed with Top 20% CLV after correcting for number of trials and number of stimulations (ANCOVA, effect of group; number of trials: F[1,1]=11.89, p=0.0031; number of stimulations: F[1,1]=9.57, p=0.0066). Gray circles denote individual subjects. (f) CLV delivered within 2 s of successful trials increases recovery, whereas CLV separated 25 s from successful trials fails to yield substantial benefits. This time window is consistent with the synaptic eligibility trace hypothesis. Horizontal error bars for Top 20% CLV and Delayed Top 20% CLV are not visible because of their small size. In panel c, **p<0.01, *p<0.05 for t-tests across groups at each time point. The color of the asterisk denotes the group compared to Top 20% CLV. Error bars indicate S.E.M.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32058/elife-32058-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** During all rehabilitative training sessions throughout the study, an adaptive reward threshold was used to scale the difficulty of the task. Reward threshold was based on the median of the ten antecedent trials and capped at 120 g, thus rats received a food reward on a given trial if their pull force exceeded the best 50% of 10 most recent trials or 120 g (Ganzer et al., 2016a), (Meyers et al., 2017). This adaptive reward threshold was for all subjects at all times throughout the study. The reward threshold is shown as a green line in all panels and in Videos 1\u20135. An independent adaptive stimulation threshold specific to each CLV group was used to determine stimulation delivery during rehabilitative training (described in detail below). Adaptive stimulation thresholds are shown as a red line in the panels below. (A) In the Top 20% CLV group, the stimulation threshold was scaled such that VNS was delivered on trials in which pull force exceeded the top quintile of the peak pull force from the previous 10 trials. Circles represents the peak force of each individual trial during a rehabilitative training session. Green filled circles indicate the successful trials in which pull force exceeded the reward threshold. Green circles with a red border indicate trials on which VNS was delivered (the top 20% of trials). White circles indicate trials in which peak force did not exceed the reward threshold. A one minute representative segment of trials (marked with a dashed box) is shown in panel B. (B) The green vertical line represents the time in which the reward threshold is crossed. The dashed red vertical line indicates the timing of VNS delivery. Stimulation began after pull force crossed the stimulation threshold, resulting in a short difference between the closest successful trial and VNS (\u0394t) of 0.2 s. (C) This panel depicts pull force and VNS timing on an example stimulated trial (denoted with a black box in panel B). Note that the train of VNS (horizontal red lines) occurs coincident with crossing the red stimulation threshold and shortly after pull force exceeds the green success threshold. (D) A subset of rats received Delayed Top 20% CLV. In this configuration, VNS was still delivered on trials in which pull force exceeded the top 20% of the previous ten trials, but stimulation was delayed until the end of the 2 s trial window as shown in E and F. (E,F) This delay resulted in an average \u0394t of 1.4 s between the most successful trials and VNS. (G) In the Bottom 20% CLV group, the stimulation threshold was set such that VNS was delivered at the end of the trial window if pull force did not exceed the lowest quintile of the peak force of the 10 previous trials. White circles with a red border indicate trials on which VNS was delivered (the bottom 20% of trials). (H,I) Stimulation was delivered at the end of the 2 s trial window if the stimulation threshold was not exceeded, resulting in an average \u0394t of 25 s between the most successful trials and VNS. (J) For rats in the Top 50% CLV groups, the stimulation threshold was set such that VNS was delivered on trials in which pull force exceeded the median peak force of the previous ten trials or exceeded 120 g. (K,L) Stimulation began immediately (~50 ms) after pull force crossed the stimulation threshold.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32058/elife-32058-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The distribution of pull forces after SCI on Wk 6 was similar in the Top 20% CLV and Bottom 20% CLV groups. This indicates that these groups had similar forelimb impairments prior to beginning CLV therapy. Data represent mean\u00a0\u00b1\u00a0SEM.\n\n## Results\n\nTo test whether CLV could improve recovery of motor function after SCI, rats were trained to perform an automated reach-and-grasp task measuring volitional forelimb strength (Figure 1b, Video 1) (Hays et al., 2013). Once proficient, rats received a right unilateral impact at spinal level C6 to impair function of the trained forelimb and underwent implantation of a bipolar cuff electrode on the left cervical vagus nerve (Ganzer et al., 2016a). SCI resulted in a 77% reduction in volitional forelimb strength, consistent with paresis observed in many cervical SCI patients (Figure 1c, PRE v. Wk 8, Paired t-test, t(29) = 37.34, p=4.4\u00d710\u221226, Video 2). Top 20% CLV substantially boosted recovery of volitional forelimb strength compared to equivalent rehabilitative training without CLV (Rehab alone), demonstrating that CLV enhances recovery of motor function after SCI (Figure 1c; Two-way repeated measures ANOVA, Interaction; F[6,120]=3.88, p=1.43\u00d710\u22123; Videos 3\u20134). CLV resulted in lasting recovery after the cessation of stimulation after week 11, consistent with the notion that CLV restores function in critical motor networks (Top 20% CLV; Wk 11 v. Wk 12; Paired t-test, t(12) = \u22120.89, p=0.38). Despite equivalent rehabilitation and a comparable number of stimulations delivered during task performance (Figure 1d,e), Bottom 20% CLV resulted in substantially diminished recovery compared to Top 20% CLV (Figure 1c, Two-way repeated measures ANOVA, Interaction; F[6,114]=2.40, p=0.03, Video 5) and failed to improve forelimb strength compared to Rehab alone. Together, these findings demonstrate that closed-loop neuromodulation paired with the most successful movements during rehabilitation improves recovery of motor function after cervical SCI.\n\n![Video 1.](https://cdn.elifesciences.org/articles/32058/elife-32058-video1.mp4.jpg)\n\n**Video 1.:** Representative example of a rat performing the isometric pull task prior to lesion. Note that the rat is highly proficient and displays clear forelimb motor control. (A) The plot on the bottom left displays pull force applied to the handle on an individual trial. The green line indicates force threshold to trigger delivery of a reward pellet. Note that the threshold adaptively scales based on the median peak force of the ten antecedent trials. The triangle indicates peak pull force on a trial. (B) The plot on the bottom right shows performance over the course of the session. Each circle indicates peak force from an individual trial. Green circles indicate trials in which pull force exceeded the reward threshold. White circles indicate trials in which peak force did not exceed the reward threshold.\n\n![Video 2.](https://cdn.elifesciences.org/articles/32058/elife-32058-video2.mp4.jpg)\n\n**Video 2.:** Representative example of a rat performing the isometric pull task four weeks after unilateral SCI. The rat displays a notable reduction in peak pull force, consistent with forelimb paresis, and clear deficits in motor control. (A) The plot on the bottom left displays pull force applied to the handle on an individual trial. The green line indicates the adaptive-scaled force threshold to trigger delivery of a reward pellet. Note that the threshold adaptively scales based on the median peak force of the ten antecedent trials. The triangle indicates peak pull force on a trial. (B) The plot on the bottom right shows performance over the course of the session. Each circle indicates peak force from an individual trial. Green circles indicate trials in which pull force exceeded the reward threshold. White circles indicate trials in which peak force did not exceed the reward threshold.\n\n![Video 3.](https://cdn.elifesciences.org/articles/32058/elife-32058-video3.mp4.jpg)\n\n**Video 3.:** Representative example of a unilateral SCI rat performing the isometric pull task at the conclusion of six weeks of rehabilitative training alone. Note the sustained impairments in forelimb pull force generation and motor control despite intensive rehabilitative training. (A) The plot on the bottom left displays pull force applied to the handle on an individual trial. The green line indicates the adaptive-scaled force threshold to trigger delivery of a reward pellet. Note that the threshold adaptively scales based on the median peak force of the ten antecedent trials. The triangle indicates peak pull force on a trial. (B) The plot on the bottom right shows performance over the course of the session. Each circle indicates peak force from an individual trial. Green circles indicate trials in which pull force exceeded the reward threshold. White circles indicate trials in which peak force did not exceed the reward threshold.\n\n![Video 4.](https://cdn.elifesciences.org/articles/32058/elife-32058-video4.mp4.jpg)\n\n**Video 4.:** Representative example of a unilateral SCI rat performing the isometric pull task at the conclusion of six weeks of Top 20% CLV therapy. Note the improvements in motor control and increase in forelimb pull force compared to after SCI. (A) The plot on the bottom left displays pull force applied to the handle on an individual trial. The green line indicates the adaptive-scaled force threshold to trigger delivery of a reward pellet. Note that the threshold adaptively scales based on the median peak force of the ten antecedent trials. The red line denotes the stimulation threshold based on the top 20% of peak pull force from the preceding 10 trials. Vertical red lines indicate VNS delivery when pull force exceeds the stimulation threshold. The triangle indicates peak pull force on a trial. (B) The plot on the bottom right shows performance over the course of the session. Each circle indicates peak force from an individual trial. Green circles indicate trials in which pull force exceeded the reward threshold. Green circles with a red border indicate trials on which VNS was delivered (the top 20% of trials). White circles indicate trials in which peak force did not exceed the reward threshold.\n\n![Video 5.](https://cdn.elifesciences.org/articles/32058/elife-32058-video5.mp4.jpg)\n\n**Video 5.:** Representative example of a unilateral SCI rat performing the isometric pull task at the conclusion of six weeks of Bottom 20% CLV therapy. Note the remaining deficits in forelimb weakness and reduced motor control compared to Top 20% CLV. (A) The plot on the bottom left displays pull force applied to the handle on an individual trial. The dashed line indicates the adaptive-scaled force threshold to trigger delivery of a reward pellet. Note that the threshold adaptively scales based on the median peak force of the ten antecedent trials. The red line denotes the stimulation threshold based on the bottom 20% of peak pull force from the preceding 10 trials. Vertical red lines indicate VNS delivery when pull force fails to exceed the stimulation threshold. The triangle indicates peak pull force on a trial. (B) The plot on the bottom right shows performance over the course of the session. Each circle indicates peak force from an individual trial. Green circles indicate trials in which pull force exceeded the reward threshold. White circles indicate trials in which peak force did not exceed the reward threshold. White circles with a red border indicate trials on which VNS was delivered (the bottom 20% of trials).\n\nThe synaptic eligibility trace theory posits that neuromodulatory reinforcement must occur within seconds after neural activity to drive plasticity (He et al., 2015). To clarify how temporally precise CLV must be, a subset of rats received VNS delayed approximately 1.5 s after the top 50% most successful trials (Delayed Top 20% CLV, Figure 1\u2014figure supplement 1d). This short delay resulted in comparable recovery to stimulation delivered immediately after a successful trial in the Top 20% CLV group (Figure 1f). Stimulation in the Bottom 20% CLV group was separated by 25\u00a0\u00b1\u00a05 s from the most successful trials and failed to drive substantial benefits (Figure 1f, Figure 1\u2014figure supplement 1g). This absence of enhanced recovery despite delivery of CLV may be attributed to either the long delay or greater variance in the timing between stimulation and the most successful trials. These findings support a temporal precision limit for CLV near 10 s, consistent with the synaptic eligibility trace hypothesis (He et al., 2015).\n\nTo determine whether more pairings of VNS with successful trials would improve recovery, we utilized an adaptive algorithm in which VNS was delivered on at least the top 50% most successful trials, resulting in 2.5 times more stimulation pairings (Top 50% CLV, Figure 1\u2014figure supplement 1j). Top 50% CLV substantially improved recovery of forelimb function compared to Rehab alone, which provides an independent confirmation that CLV enhances recovery after SCI (Figure 2a, Two-way repeated measures ANOVA, Interaction; F[6,174]=3.56, p=2.38\u00d710\u22123). The rate and degree of recovery were comparable in the Top 50% CLV and the Top 20% CLV groups (Figure 2\u2014figure supplement 1), suggesting that timing is more important than quantity of stimulation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/32058/elife-32058-fig2-v1.jpg)\n\n**Figure 2.:** (a) Top 50% CLV significantly improved recovery of forelimb function compared to Rehab alone. Sustained recovery was observed on week 12 after the cessation of stimulation, indicating lasting benefits. (b) Unilateral SCI caused substantial damage to gray matter, rubrospinal, and propriospinal tracts in the right hemicord, while largely sparing the right corticospinal tract and the entirety of the left hemicord. (c) ICMS reveals that Top 50% CLV significantly increases the area of the forelimb motor cortex evoking rehabilitated grasping movements compared to Rehab alone (N\u00a0=\u00a06,6). (d) Retrograde transneuronal tracing with PRV-152 was performed to evaluated anatomical connectivity from the left motor cortex neurons, left red nucleus neurons, and right C3/4 propriospinal neurons to grasping muscles in the trained (right) forelimb. Top 50% CLV restores connectivity and results in a significant increase in labeled neurons in the motor cortex compared to Rehab alone (N\u00a0=\u00a05,6). No changes were observed in red nucleus or C3/4 propriospinal neurons. Black boxes indicate ROIs; gray dot indicates lesion epicenter; inset shows injected muscles. (e) CLV does not affect lesion size. In all panels, gray circles denote individual subjects. In all panels, ***p<0.001, **p<0.01, *p<0.05 for t-tests across groups. Error bars indicate S.E.M.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32058/elife-32058-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** We tested the hypothesis that more pairings of VNS would increase recovery after unilateral SCI. To do so, we compared recovery of forelimb function at in rats that received either Top 20% CLV or Top 50% CLV, resulting in approximately 2.5 fold more stimulation pairings. (A) As expected (Hays et al., 2014b), Top 20% CLV and Top 50% CLV displayed a comparable degree of recovery (Top 20% CLV v. Top 50% CLV, Unpaired t-test, p=0.99). (B) Similarly, more stimulations did not accelerate the rate of recovery, as assessed by the number of weeks of CLV required to reach 50% recovery (Top 20% CLV v. Top 50% CLV, Unpaired t-test, p=0.92). Together, these findings suggest that timing stimulation with the successful trials is more important that the total amount of stimulation pairings. Data represent mean\u00a0\u00b1\u00a0SEM.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32058/elife-32058-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Consistent with previous studies in models of ischemic stroke, intracerebral hemorrhage, or traumatic brain injury, CLV does not affect lesion size or extent (Khodaparast et al., 2016; Pruitt et al., 2016; Hays et al., 2014a; Hays et al., 2016; Khodaparast et al., 2013; Khodaparast et al., 2014). After right unilateral SCI, no differences were observed in the extent of white matter damage (A) or gray matter damage (B) between the Top 50% CLV group and the Rehab alone group. The absence of differences in lesion size with CLV confirm that neuroprotective effects cannot account for the differences in recovery. Data represent mean\u00a0\u00b1\u00a0SEM.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/32058/elife-32058-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Greater intensities of task-oriented rehabilitative training are associated with better outcomes after neurological injury (Kwakkel et al., 1999). Thus, it was possible that CLV could improve recovery by increasing motivation and subsequently leading to more intensive rehabilitative training. We tested whether CLV increased the number of trials performed during rehabilitative training. After unilateral SCI, no differences in the total number of trials performed was observed between the Top 50% CLV group and Rehab alone group (Unpaired t-test, p=0.07). Contrary to the notion that CLV may increase training intensity, rats receiving Top 50% CLV displayed a trend towards a reduced total number of trials performed. Together, these findings confirming that CLV-dependent increases in motivation or task-focused repetition cannot explain improved recovery. Data represent mean\u00a0\u00b1\u00a0SEM.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/32058/elife-32058-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) CLV-dependent changes in motor cortex movement representations as assessed with ICMS were observed after unilateral SCI, consistent with a sparing of the CST. CLV significantly increased the representation of grasp movements compared to Rehab alone (Unpaired t-test, Top 50% CLV v. Rehab alone, p<0.01). The representation of proximal elbow and shoulder movements was decreased in the Top 50% CLV group, likely to accommodate the expansion of grasp movement without changing the total area of forelimb representation. No differences were observed in non-forelimb movement representations. (B) After unilateral SCI, no differences in total forelimb representational area were observed (F[2,18]=1.05, p=0.37). (C) Stimulation thresholds to evoke movement were comparable across groups. Example ICMS movement representation maps from subjects with unilateral SCI at the conclusion of therapy after (D) Rehab alone and (E) Top 50% CLV. Note the expansion in the area of motor cortex generating grasp movements after Top 50% CLV. Each square represents a 0.25 mm2 (0.5 \u00d7 0.5 mm) area. Electrode penetrations occurred in the middle of each square. Data represent mean\u00a0\u00b1\u00a0SEM. *p<0.05; **p<0.01.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/32058/elife-32058-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** We performed retrograde transneuronal tracing using PRV-152 to identify networks of neurons that were synaptically connected to forelimb grasping muscles in rats that received either Rehab alone or Top 50% CLV after unilateral SCI. The boxes in the center schematic show the areas throughout the neuraxis where eGFP+\u00a0labeled neurons were quantified. Boxes along each side of the schematic show the anterior-posterior distribution of eGFP+\u00a0neurons in each area in each hemisphere. Y axis denote distance from bregma in mm. X values represent the average number of eGFP+\u00a0neurons for each group using a moving average across ten histological sections. Values in the top corner of each box indicate the total number of labeled neurons in each region for each group. After unilateral SCI, CLV increases labeled neurons in the motor cortex compared to Rehab alone. Solid lines indicate mean and shaded area denotes SEM. The black circle indicates the location of the impactor tip during SCI.\n\nPlasticity in remaining networks could be harnessed to support recovery after SCI (Fink and Cafferty, 2016; Manohar et al., 2017). Unilateral SCI resulted in extensive damage to gray matter, rubrospinal pathways, and propriospinal pathways in the right hemicord while largely sparing the right dorsal corticospinal tract (CST) (Figure 2b and Figure 2\u2014figure supplement 2). Thus, we used intracortical microstimulation to test the hypothesis that CLV enhances output from the corticospinal circuits to the impaired forelimb. CLV resulted in eight times more motor cortex sites that generated grasp movements in the impaired forelimb compared to Rehab alone (Figure 2c and Figure 2\u2014figure supplement 4, Unpaired t-test, t(10) = 2.28, p=0.04), providing the first evidence that CLV induces large-scale plasticity in corticospinal networks after neurological injury.\n\nWe next tested the hypothesis that CLV improves recovery by increasing synaptic connections within the motor network controlling grasping muscles of the forelimb. We injected the retrograde transsynaptic tracer pseudorabies virus (PRV-152) into flexor digitorum profundus and palmaris longus and counted labeled neurons six days later. CLV resulted in a five-fold increase in labeled neurons in motor cortex compared to Rehab alone (Figure 2d and Figure 2\u2014figure supplement 5, Unpaired t-test, t(9) = 7.63, p=3.2\u00d710\u22125). The magnitude of this increase in synaptic connectivity is comparable to the seven-fold increase in the number of motor cortex sites that produce grasp. CLV failed to increase neuronal labeling of spinal motor neurons, red nucleus neurons or propriospinal neurons (Figure 2d). Additionally, CLV did not influence lesion extent (Figure 2e, Figure 2\u2014figure supplement 2). Together, these results are consistent with anatomical plasticity in the spared corticospinal network contributing to enhanced recovery when CLV is added to rehabilitative training after SCI (Figure 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/32058/elife-32058-fig3-v1.jpg)\n\n**Figure 3.:** (a) After unilateral SCI, loss of motor out from rubrospinal and propriospinal networks results in forelimb paresis and impairments in motor control. (b) The addition of CLV provides temporally-precise feedback on the most successful trials to facilitate training-dependent plasticity in remaining motor networks. (c) The benefits of CLV persist after the cessation of closed-loop stimulation because connectivity in critical neural circuits has been restored.\n\nThe observation that CLV improves recovery and enhances functional and anatomical plasticity in corticospinal networks suggests that CLV may prove ineffective if the CST is destroyed. Given the severity and anatomical heterogeneity of damage observed in SCI patients (Sekhon and Fehlings, 2001), such a finding would limit the clinical utility of CLV. We therefore evaluated motor recovery in a bilateral injury model that virtually eliminates the CST on both sides of the cord (Figure 4b). Despite profound damage, CLV more than doubled the degree of forelimb motor recovery compared to Rehab alone (Figure 4a, Two-way repeated measures ANOVA, Interaction; F[6,144]=5.29, p=7.62\u00d710\u22125). The observation that CLV can improve recovery following bilateral SCI suggests CLV could be clinically useful. We hypothesized that CLV enhances recovery by promoting plasticity in the rubrospinal and propriospinal pathways, which were damaged, but not eliminated, by this injury (Figure 4b and Figure 4\u2014figure supplement 1). Indeed, CLV doubled the number of labeled red nucleus neurons and C3/4 propriospinal neurons compared to Rehab alone (Figure 3d and Figure 4\u2014figure supplement 3, Unpaired t-test, Red Nucleus: t(4) = 3.89, p=0.018; Propriospinal: t(4) = 2.77, p=0.05). Consistent with the extensive damage to the corticospinal pathway, CLV had no effect on reorganization of motor cortex (Figure 4c and Figure 4\u2014figure supplement 4, Unpaired t-test, t(12) = \u22120.13, p=0.90) and failed to increase the number of labeled neurons in the motor cortex (Figure 3d, Unpaired t-test, t(4) = 0.83, p=0.45). These results suggest that CLV is capable of supporting recovery following SCI by strengthening anatomical connectivity within remaining pathways (Figure 4\u2014figure supplement 5).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/32058/elife-32058-fig4-v1.jpg)\n\n**Figure 4.:** (a) After bilateral SCI, Top 50% CLV substantially enhanced recovery of volitional forelimb strength compared to Rehab alone. Improved function was maintained on week 14 after the cessation of CLV, indicative of lasting recovery. (b) Bilateral SCI resulted in virtually complete bilateral ablation of the corticospinal tract and substantial damage to gray matter. The rubrospinal and propriospinal tracts were lesioned, but partially remaining. (c) Unlike after unilateral SCI, Top 50% CLV failed to increase the area of the motor cortex evoking rehabilitated grasping movements compared to Rehab alone (N\u00a0=\u00a07,7). (d) CLV significantly increased synaptic connectivity from the left red nucleus neurons and right C3/4 propriospinal neurons to grasping muscles compared to Rehab alone (N\u00a0=\u00a03,3). Black boxes indicate ROIs; gray dot indicates lesion epicenter; inset shows injected muscles. In all panels, gray circles denote individual subjects. In all panels, **p<0.01, *p<0.05,+P\u00a0=\u00a00.05 for t-tests across groups. Error bars indicate S.E.M.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32058/elife-32058-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** After bilateral SCI, both white matter (C) and gray matter (D) are damaged to a similar extent on both sides of the spinal cord in the Top 50% CLV group and the Rehab alone group. The absence of differences in lesion size with CLV confirm that neuroprotective effects cannot account for the differences in recovery. Data represent mean\u00a0\u00b1\u00a0SEM.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32058/elife-32058-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** After bilateral SCI, no differences in the total number of trials performed was observed between the Top 50% CLV group and Rehab alone group (Unpaired t-test, p=0.051). Similar to unilateral SCI, a trend toward a reduced number of trials was observed in the Top 50% CLV group compared to Rehab alone. Together, these findings confirming that CLV-dependent increases in motivation or task-focused repetition cannot explain improved recovery. Data represent mean\u00a0\u00b1\u00a0SEM.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/32058/elife-32058-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** We performed retrograde transneuronal tracing using PRV-152 to identify networks of neurons that were synaptically connected to forelimb grasping muscles in rats that received either Rehab alone or Top 50% CLV after bilateral SCI. The boxes in the center schematic show the areas throughout the neuraxis where eGFP+\u00a0labeled neurons were quantified. Boxes along each side of the schematic show the anterior-posterior distribution of eGFP+\u00a0neurons in each area in each hemisphere. Y values denote distance from bregma in mm. X values represent the average number of eGFP+\u00a0neurons for each group using a moving average across ten histological sections. Values in the top corner of each box indicate the total number of labeled neurons in each region for each group. After bilateral SCI, CLV increases labeled neurons in the red nucleus and C3/4 propriospinal neurons compared to Rehab alone. Solid lines indicate mean and shaded area denotes SEM. The black circle indicates the location of the impactor tip during SCI.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/32058/elife-32058-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A) After bilateral SCI, no differences in any movement representations were observed with Top 50% CLV compared to Rehab alone. (B) No differences in total forelimb representational area were observed (F[2,20]=2.97, p=0.08). (C) Stimulation thresholds to evoke movement were comparable across groups. Example ICMS maps from subjects with bilateral SCI after (D) Rehab alone and (E) Top 50% CLV. Note the similar area of motor cortex generating grasp movements between groups. In all panels, each square represents a 0.25 mm2 (0.5 \u00d7 0.5 mm) area. Electrode penetrations occurred in the middle of each square. Data represent mean\u00a0\u00b1\u00a0SEM.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/32058/elife-32058-fig4-figsupp5-v1.jpg)\n\n**Figure 4\u2014figure supplement 5.:** (A) Bilateral SCI causes virtually complete elimination of the corticospinal tract and moderate damage to the propriospinal and rubrospinal tracts, resulting in deficits in forelimb strength. (B) CLV delivered on the most successful trials during rehabilitation provides temporally-precise neuromodulatory feedback to support plasticity in remaining propriospinal and rubrospinal networks. (C) After the conclusion of CLV, synaptic connectivity in propriospinal and rubrospinal motor networks is restored, resulting in an improvement in forelimb strength that lasts after the cessation of stimulation.\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/32058/elife-32058-fig4-figsupp6-v1.jpg)\n\n**Figure 4\u2014figure supplement 6.:** The number of days until recumbency (A) and right forepaw plantar placement (B) was approximately one week longer after bilateral SCI compared to unilateral SCI (Recumbency: Unpaired t-test, p<0.001; Right Forepaw Plantar Placement: Unpaired t-test, p<0.001). As a result of the longer delay, experiments were designed such that rats that received bilateral SCI returned to rehabilitative training later (Week 8) than animals that received unilateral SCI (Week 6). Data represent mean\u00a0\u00b1\u00a0SEM. ***p<0.001.\n\n## Discussion\n\nIn this study, we developed a novel closed-loop neuromodulation strategy to make use of the high temporal precision of the synaptic eligibility trace. We demonstrate that activation of the vagus nerve improves recovery when reliably delivered within seconds of a successful movement, and we provide the first evidence that CLV enhances reorganization of synaptic connectivity in remaining networks in two non-overlapping models of SCI. The flexibility to promote reorganization in a range of pathways is a critical benefit of CLV, given the great heterogeneity in the etiology, location, and extent of damage present in SCI patients.\n\nClassical studies by Skinner demonstrate that adaptive reinforcement of successive approximations, or shaping, drives behavior toward a desired response (Skinner, 1953). This principle has been adopted for use in rehabilitation, with the intention to reinforce successively better movements (Wood, 1990). We made use of this concept by applying an adaptively-scaled stimulation threshold to deliver CLV with the most successful forelimb movements during rehabilitation. Enhanced recovery was observed only when CLV was paired with trials that approximated the desired outcome, highlight the importance of timing for closed-loop stimulation to shape behavioral outcomes and maximize recovery.\n\nThe magnitude of neuromodulatory activation elicited by an event is directly proportional to the surprise, or unpredictability, of the event (Hangya et al., 2015; Hollerman and Schultz, 1998; Sara and Segal, 1991). This phenomenon is ascribed to reward prediction error (Schultz, 2002). Unsurprising events fail to activate neuromodulatory systems, and even rewarding events fail to trigger neuromodulator release if they are expected. We posit the predictability and accompanying tedium of long, frustrating rehabilitation and the minimal reinforcement of practicing a previously simple motor task blunts plasticity and limits recovery after SCI. The closed-loop neuromodulation strategy developed here circumvents this by artificially engaging neuromodulatory networks and providing a repeated, non-adapting reinforcing signal typically associated with surprising consequences (Hays, 2016; Hulsey et al., 2017; Hulsey et al., 2016). CLV drives temporally-precise neuromodulatory release to convert the synaptic eligibility trace in neuronal networks that generate optimal motor control to long-lasting plasticity (He et al., 2015).\n\nCLV is a minimally-invasive, safe strategy to provide precisely-timed engagement of multiple neuromodulatory networks to boost plasticity during rehabilitation (Hays, 2016). Preliminary results in chronic stroke and tinnitus patients highlight the clinical potential of CLV, while delivering less than 1% of the total FDA-approved amount of stimulation (Dawson et al., 2016; De Ridder et al., 2014; Ben-Menachem, 2001). Moreover, the flexibility to deliver stimulation with a variety of rehabilitative exercises raises the possibility to design CLV-based to target motor dysfunction of the lower limbs, somatosensory loss, and bowel and bladder issues, all of which are prevalent in SCI patients. Delineation of the timing requirements and documentation of neuronal changes driven by CLV in this study provide a framework for development of this strategy for a range of neurological conditions, including stroke, peripheral nerve injury, and post-traumatic stress disorder (Hays, 2016; Lozano, 2011).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Pseudorabies Virus Bartha Strain containing the CMV-EGFP reporter cassette</td>\n      <td>PRV-152</td>\n      <td>NIH Center for Neuroanatomy with Neurotropic Viruses (CNNT)</td>\n      <td>PRV-152</td>\n    </tr>\n  </tbody>\n</table>\n\n### Experimental Design\n\nAll procedures performed in the study were approved by the University of Texas at Dallas Institutional Animal Care and Use Committee (Protocols: 14\u201310 and 99\u201306). Adult female Sprague Dawley rats (N\u00a0=\u00a0181) used in this study were housed one per cage (12 hr light/dark cycle). Twelve experimentally na\u00efve rats were used for control experiments. One hundred and sixty-nine rats were trained to proficiency on the isometric pull task as in our previous studies (Khodaparast et al., 2016; Pruitt et al., 2016; Hays et al., 2013; Sloan et al., 2015; Hays et al., 2014b; Hays et al., 2016; Khodaparast et al., 2013; Pruitt et al., 2014; Meyers et al., 2017). Sample sizes were based estimated effect size determined in our initial pilot studies and are consistent with comparable previous studies. Trained rats were food restricted Monday-Friday to provide task motivation (ad libitum access to water). Because of the cage geometry, only the right forelimb can be used to reach the pull handle to trigger a food reward. After reaching task proficiency (85% success rate on ten consecutive sessions), rats received a unilateral contusive injury (N\u00a0=\u00a0128) or bilateral contusive injury (N\u00a0=\u00a041) of the cervical spinal cord. After recovery, rats received a vagus nerve cuff electrode and resumed training on the isometric pull task. In addition to the food reward, rats were dynamically allocated to balanced groups to receive a brief burst of vagus nerve stimulation (VNS) on appropriate trials. Rehabilitative training, consisting of freely performing the task, continued for six weeks. No VNS was delivered in any group on the final week of rehabilitative training, to allow assessment of lasting effects of stimulation. Terminal motor cortex mapping or transsynaptic tracing experiments occurred the week following the end of therapy in a subset of unilateral (N\u00a0=\u00a023) and bilateral SCI rats (N\u00a0=\u00a020). Eighty-seven rats were excluded from the study due to mortality (N\u00a0=\u00a020), inability to perform the task after injury (N\u00a0=\u00a025), or VNS device failure (N\u00a0=\u00a042). Device failure included mechanical failure of the headmount or loss of stimulation efficacy, determined by a cuff impedance\u00a0>25 k\u03a9 or by the absence of a reduction in blood oxygenation in response to a train of VNS while under anesthesia (described below). This is a standard method to evaluate VNS efficacy (Loerwald et al., 2017; Borland et al., 2018). Animals that failed to demonstrate a reliable drop in oxygen saturation at the end of therapy were excluded. Bilateral SCI rats were given two additional weeks of recovery time due to their larger spinal lesion and slower return to recumbency (Figure 4\u2014figure supplement 6). Other than therapy start time (6 vs. 8 weeks post-SCI), all training and assessment was identical for unilateral and bilateral SCI rats. All source data indexed across animals can be found in Supplementary file 1\u20134.\n\n### Volitional forelimb Force Generation Assessment\n\nThe isometric pull task is a fully automated and quantitative assay to measure multiple parameters of forelimb force generation and was performed similar to previous descriptions (Khodaparast et al., 2016; Pruitt et al., 2016; Hays et al., 2013; Sloan et al., 2015; Hays et al., 2014b, 2016; Khodaparast et al., 2013; Pruitt et al., 2014; Meyers et al., 2017). Isometric pull training sessions consisted of two 30 min sessions (separated by at least 2 hr) five days per week. Experimenters were blind to treatment group at all times throughout behavioral testing. Early in training, rats were encouraged to interact with the pull handle by dispensing pellets (45 mg chocolate-flavored pellets, Bio-Serv; Flemington, NJ) when they approached or touched the lever. The pull handle was initially located inside the test chamber and then slowly retracted outside of the behavioral chamber to encourage reaching with the right paw. A trial was initiated when the rats exerted at least 10 g of force on the pull handle. A trial window of 2 s started after trial initiation where the animal could receive a reward by pulling with a force exceeding a reward threshold. The reward threshold was scaled adaptively based on the median peak force of the 10 preceding trials, with a fixed bounded minimum of 10 grams and maximum of 120 g based on previous studies (Figure 1\u2014figure supplement 1) (Ganzer et al., 2016a; Meyers et al., 2017). Thus, rats received rewards on trials that exceeded either the median peak force from the previous 10 trials or 120 g. The reward threshold was set to 10 g for the first 10 trials of a training session and adaptive scaled for the remaining trials (Figure 1\u2014figure supplement 1). This reward threshold paradigm was used for all groups at all timepoints during the study.\n\nRats were trained until they reached proficiency, defined as a 10 consecutive sessions in which greater than 85% of trials exceeded 120 g. After reaching isometric pull task proficiency, rats were given a cervical unilateral or bilateral SCI at spinal level C6. Post-injury baseline force generation assessment occurred on week six for unilateral SCI and week eight for bilateral contusion SCI and consisted of 2 \u00d7 30 min sessions per day across two consecutive days (POST; Figures 1C and 2A,\u00a0and\u00a03A). Random group assignment was used to determine which rats received VNS for the first 75% of group assignment decisions. To ensure well-balanced treatment groups, the final 25% of rats were assigned to groups based on their post-injury performance. Rehabilitative training continued for 6 weeks with VNS delivered when appropriate. MotoTrak Software (Vulintus, Inc.) was used to record and display experimental data during the performance of the isometric pull task similar to previous studies (Hays et al., 2013; Ganzer et al., 2016a; Sloan et al., 2015; Pruitt et al., 2014; Meyers et al., 2016). A microcontroller board (Vulintus, Inc.; Dallas Texas USA) sampled the force transducer every 10 ms and relayed information to the MotoTrak software for offline analysis. For rats receiving VNS, stimulation was triggered by the behavioral software on appropriate trails during rehabilitative training. Peak pull force (maximum force generated in a trial, g) was calculated for every rat for every week of behavior. A Two-way repeated measures ANOVA was used to compared peak pull forces in each treatment condition across time, followed by post hoc Bonferroni-corrected unpaired t-tests where appropriate (Figures 1C, 2A and 4A). Percent benefit over Rehab alone was calculated as the recovery of peak pull force after therapy normalized to the average recovery observed in the Rehab alone group (Figure 1J). The distribution of pull forces after injury is shown in Figure 1\u2014figure supplement 2. Behavioral data for each week for all individual subjects is available in Supplementary file 1.\n\n### Cervical Spinal Cord Injury (SCI) Surgery\n\nExperimenters were blind to the group of the rat during surgery. All surgeries were performed using aseptic technique under general anesthesia. Rats were anesthetized with ketamine (50 mg/kg), xylazine (20 mg/kg), and acepromazine (5 mg/kg) for all procedures (i.p.). Heart rate and blood oxygenation was monitored during surgery. After achieving isometric pull task proficiency, rats received either a right side (unilateral) or midline (bilateral) C6 spinal cord contusive impact using surgical technique from previous studies (Ganzer et al., 2016a). A right side or bilateral dorsal C5 laminectomy was performed for rats receiving a unilateral or bilateral SCI, respectively. The vertebral column was stabilized using spinal microforceps. For unilateral SCI, the right spinal hemicord was contused using the Infinite Horizon Impact Device with a force of 200 kilodynes and zero dwell time as previously reported (Precision Systems and Instrumentation, Lexington, KY; impactor tip diameter\u00a0=\u00a01.25 mm) (Ganzer et al., 2016a). For bilateral SCI rats, the midline of the spinal cord was contused with a force of 225 kilodynes and zero dwell time (impactor tip diameter\u00a0=\u00a02.5 mm). The skin overlying the exposed vertebrae was then closed in layers and the incised skin closed using surgical staples. All rats received buprenorphine (s.c., 0.03 mg/kg, 1 day post-op), enrofloxacin (s.c., 10 mg/kg, 3 days post-op) and Ringer\u2019s solution (s.c., 10 mL, 3 days post-op) immediately after surgery and continuing post-operatively. All rats were monitored daily for at least 1 week post-injury. We documented time to return to recumbency, defined as the return of the righting reflex and ability to self-feed, and plantar placement following SCI. After bilateral SCI, rats took significantly longer to return to recumbency and forepaw plantar placement compared to unilateral SCI rats (Figure 4\u2014figure supplement 6). Therefore, bilateral SCI rats started therapy 2 weeks later. After injury, rats were hand fed twice daily and given Ringer\u2019s solution (s.c., 10 mL) for up to 1 week post-injury to maintain a healthy diet.\n\n### Vagus nerve stimulation cuff implantation surgery\n\nA two-channel connector headmount and vagus nerve stimulating cuff were implanted on post-injury week six for unilateral and week eight for bilateral SCI rats similar to previous studies (Engineer et al., 2011; Khodaparast et al., 2016; Pruitt et al., 2016; Hays et al., 2014a; Hays et al., 2014b; Hays et al., 2016; Khodaparast et al., 2013; Khodaparast et al., 2014; Borland et al., 2016). Regardless of group assignment, all rats underwent implantation of the headmount and cuff. Stimulation of the left cervical branch of the vagus nerve was performed using low current levels to avoid cardiac effects (Engineer et al., 2011). Incised skin was closed using suture. All rats received enrofloxacin (s.c., 10 mg/kg) following surgery and as needed at the sign of infection. To confirm cuff functionality and proper placement, heart rate, respiration, and blood oxygenation saturation during VNS (0.8 mA, 30 Hz, 100 \u00b5s pulse width, 1\u20135 s train duration) were monitored under anesthesia via pulse oximetry after cuff implant and at the end of therapy. Animals that failed to demonstrate a reliable drop in oxygen saturation at the end of therapy were excluded. Stimulation under anesthesia briefly suppressed cardiopulmonary function and was not more severe or lower threshold in SCI rats compared to intact rats.\n\n### Vagus nerve stimulation parameters\n\nVNS was triggered by the behavioral software during rehabilitative training based on the stimulation threshold for each group, similar to previous studies (Khodaparast et al., 2016; Pruitt et al., 2016; Hays et al., 2014b, 2016; Khodaparast et al., 2013). Each stimulation train consisted of 16 \u00d7 100 \u00b5sec 0.8 mA biphasic pulses delivered at 30 Hz. An adaptive stimulation threshold specific to each CLV group was used to determine stimulation delivery during rehabilitative training (Figure 1\u2014figure supplement 1). The stimulation threshold was adaptively scaled based on the 10 antecedent trials, with each group receiving VNS triggered on trials which fall into the appropriate range. Rats in the Top 20% CLV group (N\u00a0=\u00a013) received VNS on trials in which pull force exceeded the top quintile of the previous ten trials, with no minimum or maximum. In the majority of these subjects (N\u00a0=\u00a09), VNS was delivered immediately (~50 msec) after pull force exceeded the stimulation threshold (Figure 1\u2014figure supplement 1A). No stimulation was delivered on the first 10 trials during a training session. In a different subset of subjects (Delayed Top 20% CLV, N\u00a0=\u00a04), VNS was delivered at the end of the 2 s trial window on trials in which exceeded the stimulation threshold, independent of the when the threshold was crossed (Figure 1\u2014figure supplement 1D). These groups displayed comparable performance (Top 20% CLV v. Top 20% CLV Delay, Week 12, Unpaired t-test, p=0.78) and were thus combined for analysis in Figure 1C\u2013E. Rats in the Bottom 20% CLV group (N\u00a0=\u00a08) received VNS on trials in which pull force failed to exceed the bottom quintile of the previous ten trials, with no minimum or maximum. VNS was delivered at the end of the 2 s trial window if pull force was below the threshold (Figure 1\u2014figure supplement 1G). Rats in the Top 50% CLV group received VNS on trials that exceeded the median pull force of the previous 10 trials or exceeded 120 g. VNS was delivered immediately (~50 msec) after pull force exceeded the stimulation threshold Figure 1\u2014figure supplement 1J). No groups received VNS on the final week of rehabilitative training (Week 12 for unilateral and Week 14 for bilateral SCI) to assess effects lasting after the cessation of stimulation. These parameters do not cause discomfort and do not alter reaching behavior (Hulsey et al., 2016; Porter et al., 2012).\n\n### Intracortical Microstimulation Mapping\n\nTerminal intracortical microstimulation mapping (ICMS) of motor cortex was performed in a subset of unilateral SCI (Rehab alone, N\u00a0=\u00a06; Top 50% CLV, N\u00a0=\u00a06) and bilateral SCI (Rehab alone, N\u00a0=\u00a07; Top 50% CLV, N\u00a0=\u00a07) rats at the end of therapy. A group of uninjured rats were used for control (Na\u00efve, N\u00a0=\u00a07). Rats were anesthetized with and injection (i.p.) of ketamine (50 mg/kg), xylazine (20 mg/kg), and acepromazine (5 mg/kg). A cisternal drain was performed to reduce ventricular pressure and cortical edema during mapping (Hulsey et al., 2016; Porter et al., 2012). A craniotomy was then performed to expose left motor cortex. Intracortical microstimulation (ICMS) was delivered in motor cortex at a depth of 1.75 mm using a low impedance tungsten microelectrode with an interpenetration resolution of 500 \u00b5m (100 k\u03a9 \u2013 1 M\u03a9 electrode impedance; FHC Inc., Bowdin, MD; biphasic ICMS at 333 Hz, 50 ms train duration, 200 \u00b5sec pulse width, 0\u2013200 \u00b5A current). Mapping experiments were performed blinded with two experimenters similar to previous studies (Hulsey et al., 2016; Porter et al., 2012). The first experimenter positioned the electrode for ICMS and recorded movement data. The second experimenter, blind to the experimental group of the animal and electrode position, delivered ICMS and classified movements. Movement threshold was first defined. ICMS current was then increased by no more than 50% to facilitate movement classification using visual inspection. Movements were classified into the following categories similar to previous studies: vibrissae, neck, jaw, digit, wrist, elbow, shoulder, hindlimb and trunk (Brown and Teskey, 2014; Ganzer et al., 2016b). The cortical area (mm [Levy et al., 2016]) and movement threshold (\u00b5A) for each movement category was calculated for each group (Figure 2\u2014figure supplement 4 and Figure 4\u2014figure supplement 4). Based on the 500 \u00b5m inter-electrode spacing, each stimulation site eliciting a movement was counted as 0.25 mm2. Movement area and threshold was assessed using One-way ANOVA and unpaired t-tests. Data for all movement classifications for each subject is available in Supplementary file 2.\n\n### Pseudorabies virus retrograde transneuronal tracing\n\nTranssynaptic tracer injections using pseudorabies virus 152 (PRV-152) were performed in a subset of unilateral SCI (Rehab, n\u00a0=\u00a06; VNS\u00a0+\u00a0Rehab, n\u00a0=\u00a05) and bilateral SCI (Rehab, n\u00a0=\u00a03; VNS\u00a0+\u00a0Rehab, n\u00a0=\u00a03) rats following the respective end of therapy. A group of uninjured rats were used for control (Na\u00efve, n\u00a0=\u00a05). PRV-152 was a generous gift from the lab of Dr. Lynn Enquist and colleagues at Princeton University and was grown using standard procedures (Card and Enquist, 2014). An incision was made over the medial face of the radius and ulna of the trained limb to expose the forelimb grasping muscles flexor digitorum profundus and palmaris longus. 15 \u00b5L of PRV-152 (~8.06\u00a0\u00b1\u00a00.49 x 108 plaque-forming units) was injected into the belly of each muscle across three separate sites. The incision was then closed with non-absorbable suture. We conducted detailed pilot studies to determine the optimal time of viral infection to allow for layer five cortical labeling. At 5\u20135.5 days post-infection we observed little to no cortical labeling for injured or uninjured animals. At 6\u20136.5 days post-infection we observed consistent layer five cortical labeling across injured or uninjured animals. Therefore, 6\u20136.5 days was used as our PRV-152 infection duration for our transsynaptic tracing studies. Rats were anesthetized with sodium pentobarbital (50 mg/kg, i.p.) and transcardially perfused with 4% paraformaldehyde in 0.1 M PBS (pH 7.5) at 6\u20136.5 days after injection. The brain and spinal cord were removed. Spinal roots were kept for anatomical reference. Tissue was then post-fixed overnight and cryoprotected in 30% sucrose.\n\nQuantification was limited to the spinal motor neurons, C3/4 cervical propriospinal neurons, red nucleus neurons, and cortical layer five neurons because these regions exhibited consistent labeling and were specifically related to our hypotheses. The whole neuraxis from the rostral tip of the forebrain to spinal level T3 was blocked and frozen at \u221280 C in Shandon M1 embedding matrix (Thermo Fisher Scientific; Waltham, MA). Coronal forebrain and midbrain sections were sliced and slide-mounted at 35 \u00b5m using a cryostat (from the rostral tip of forebrain to 13 mm caudal). Coronal spinal cord sections were sliced and slide mounted at 50 \u00b5m (from C4 \u2013 T3). After coverslipping, slides were scanned and digitized using the NanoZoomer 2.0-HT Whole Slide Scanner (Hamamatsu Photonics; Japan). Tissue images were exported to a custom software program for cell counting (https://github.com/davepruitt/PRV-Cell-Counting; copy archived at https://github.com/elifesciences-publications/PRV-Cell-Counting). PRV-152 infected neurons expressed enhanced green fluorescent protein. PRV-152 neuron counts were made on every other forebrain and midbrain section (35 \u00b5m inter-slice interval) and every third spinal cord section (100 \u00b5m inter-slice interval). Experimenters performing analysis were blind to the group of each rat. Cortical neuron counts were restricted to layer 5 of sensorimotor cortex (Bareyre et al., 2004). We defined motor cortex using standard anatomical reference (Paxinos and Watson, 2007). Our ICMS mapping studies confirm that these regions contain the cortical forelimb sensorimotor circuitry. Red nucleus neuron counts were made using standard anatomical reference (Paxinos and Watson, 2007). Propriospinal neuron counts were made from spinal level C3 \u2013 C4 in Rexed lamina VI, VII, VIII and IX using standard anatomical reference similar to previous studies (Watson et al., 2009; Gonzalez-Rothi et al., 2015). Back-labeled putative spinal motor neurons were located in Rexed lamina IX and counted identical to previous studies (Watson et al., 2009; Gonzalez-Rothi et al., 2015). Sensorimotor cortex, red nucleus and cervical propriospinal neuron counts were normalized within rats to the number of putative spinal motor neurons in the lower cervical and upper thoracic spinal cord to control for any differences in injection efficacy. No differences in spinal neuron labeling were observed between CLV and Rehab alone (Figures 2E and 4E). Sensorimotor cortex, red nucleus and putative spinal motor neuron counts were analyzed separately using unpaired t-tests. Data representing raw neuron counts in each ROI is available in Figure 2\u2014figure supplement 5, Figure 4\u2014figure supplement 3, and Supplementary file 3.\n\n### Lesion Histology and Analysis\n\nAt the completion of experimental testing, rats were anesthetized with sodium pentobarbital (50 mg/kg, i.p.) and transcardially perfused with 4% paraformaldehyde in 0.1 M PBS (pH 7.5). The spinal cord was removed and spinal roots were kept for anatomical reference. Spinal tissue was then post-fixed overnight, cryoprotected in 30% sucrose for 48 hr, blocked and frozen at \u221280 C in Shandon M1 embedding matrix (Thermo Fisher Scientific; Waltham, MA). Spinal tissue was sliced at 50 \u00b5m using a cryostat, slide mounted and stained for Nissl (gray matter) and myelin (white matter) substance similar to previous studies (Ganzer et al., 2016a; Ganzer et al., 2016b). Photomicrographs were taken at 600 \u00b5m intervals to quantify gray and white matter lesion metrics using Image J. For unilateral SCI, the rostral and caudal extent of spinal gray and white matter damage was expressed as the percentage of spared gray and white matter of the right hemicord with respect to the left hemicord (Figure 2\u2014figure supplement 2 and Figure 4\u2014figure supplement 1). For bilateral SCI rats, the rostral and caudal extent of spinal damage was expressed as the percentage of spared gray and white matter for each hemicord with respect to an unlesioned rostral and caudal tissue reference within animals (Anderson et al., 2009). Smallest and largest lesion areas were fitted to a schematic of spinal level C6 (Figures 2E and 3E). To calculate damage to fiber tracts, two experimenters blind to group assignment evaluated the percentage of lesioned tissue to the dorsal corticospinal tract, dorsolateral corticospinal tract, ventral corticospinal tract, rubrospinal tract, propriospinal tract, and gray matter at the lesion epicenter. The dorsal, dorsolateral, and ventral corticospinal tracts were combined to calculate total CST damage based on the proportion of fibers in each tract (Bareyre et al., 2005). Data representing the damage estimates is available in Supplementary file 4.\n\n### Data Availability\n\nAll source data supporting the findings of this study are available in the online version of the paper.\n",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "0e5f70f8-8327-49aa-8d9d-e78b834389a6",
+      "submission_id": "906f4f3c-49a5-49b6-b797-7f089ebd2d2c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Heidi Johansen-Berg, University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.32058.031](https://doi.org/10.7554/eLife.32058.031)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Closed-loop Neuroprosthesis Restores Network Connectivity and Motor Control after Spinal Cord Injury\" for consideration by eLife. Your article has been favorably evaluated by Richard Ivry (Senior Editor) and three reviewers, one of whom, Heidi Johansen-Berg (Reviewer #1), is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Reggie Edgerton (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript reports the use of closed-loop vagus nerve stimulation to improve motor recovery after spinal cord injury. Overall, the results are potentially very interesting and impactful. However, the reviewers are concerned that the data are over interpreted in places and some key methodological details are lacking.\n\nEssential revisions:\n\n1) There were queries/concerns over the deliveries of reward. Some of the concerns may be cleared up as aspects of the methods are clarified. Specifically:\n\na) Trial structure is very confusing. Looking at Figure 1\u2014figure supplement 1, it is not clear that reward was always given 50% of the time. For example, in G, reward appears to be given more frequently that 50%? Moving Figure 1\u2014figure supplement 1 to Figure 1 with clear delineation of the trial structure, reward, etc. will help.\n\nb) One reviewer commented that it appears that rats received an adaptive reward schedule, such that forces above a threshold resulted in a food reward. Therefore \u2013 top 20% pulls would be rewarded while bottom 20% pulls would not be rewarded. To what extent might this difference in reward contribute to results? The current interpretation is that the improved recovery for the top 20% group is due to selective stimulation of 'good' rather than 'bad' movements. However, it seems that the quality (force) of the movement is confounded by the reward. Perhaps if the bottom 20% movements had also been rewarded then equivalent recovery would have been seen in that group. Please clarify or else discuss this confound.\n\nc) Another reviewer commented that it did not seem that the 120g criteria was used during rehab (i.e. as opposed to healthy training). It appears that during rehab the animals got a reward even if they remained at low levels of force. Is that correct? What was the distribution of forces that typically made the top/bottom 20% during rehab? Did they attempt a less adaptive approach that required higher force levels?\n\n2) What period during rehab does Figure 1\u2014figure supplement 1 represent? It is interesting that animals seem to start at low values and then rapidly 'ramp up' only with stimulation. In other words, example G appears to show an animal that does not ramp up rapidly without stimulation. Is there always an acute effect of VNS on the ability to ramp up to higher forces? Does the ability to generate higher forces during training explain the final sustained benefits?\n\n3) The results reported in Figure 1F are used to support the notion that timing is critical. This is because the 0 and 2s delays are clearly better than the 25 second delay. However, in addition to the 25s condition having a longer mean delay \u2013 it is a much more variable delay (relative to the top 20% movements) as stimulation in this condition is not tied to the top 20% movement (but instead to the bottom 20% movements). Therefore there is confound between mean delay and variability of temporal coupling between movement and stimulation. I therefore suggest that interpretation of this result should be cautious. For example, the statement in the Discussion that 'We confirmed that activation of the vagus nerve must occur within seconds of a successful movement' is not adequately supported by the data. The data show that precisely timed stimulation within 2 seconds is effective, and that imprecisely timed stimulation at >20 seconds is not. That doesn't rule out the possibility that precisely timed stimulation at say 5 seconds may be effective.\n\n4) Figure 1D, E are shown to illustrate similar number of trials and stimulated trials in the two stimulation groups. Although I can see that these distributions are overlapping I would not describe them as 'matched'. Trials and stimulations are reduced (albeit (presumably) not significantly so) in the bottom 20% group compared to the top 20% group. Demonstrating that these distributions don't' significantly differ from each other does not rule out the possibility that differences in trial numbers may have contributed to between group effects. To take into account differences in trial numbers would require, for example, including trial number as a confound in an ANCOVA.\n\n5) It is great that the authors list the number of animals that were excluded (n=87); 87 is a rather large number. Please list more specifically why. How was device failure assessed?\n",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a35a3dec-e050-4d17-90d4-5982c6167c9f",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C1",
+      "claim": "Recovery from serious neurological injury requires substantial rewiring of neural circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Recovery from serious neurological injury requires substantial rewiring of neural circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that reflects established scientific understanding about neurological recovery.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "8789d425-1937-4ec8-a709-a836289b9a33",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C2",
+      "claim": "Precisely-timed electrical stimulation could be used to restore corrective feedback mechanisms and promote adaptive plasticity after neurological insult, such as spinal cord injury (SCI) or stroke.",
+      "claim_type": "EXPLICIT",
+      "source": "Precisely-timed electrical stimulation could be used to restore corrective feedback mechanisms and promote adaptive plasticity after neurological insult, such as spinal cord injury (SCI) or stroke.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis statement in the abstract that is supported by the experimental results presented in the manuscript.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "5ab4c161-4120-40b6-8d14-10aae2677129",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C3",
+      "claim": "This study provides the first evidence that closed-loop vagus nerve stimulation (CLV) based on the synaptic eligibility trace leads to dramatic recovery from the most common forms of SCI.",
+      "claim_type": "EXPLICIT",
+      "source": "This study provides the first evidence that closed-loop vagus nerve stimulation (CLV) based on the synaptic eligibility trace leads to dramatic recovery from the most common forms of SCI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented throughout the manuscript showing improved recovery with CLV in both unilateral and bilateral SCI models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "6fa28997-34dc-4b73-97d4-ed0b2e302388",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C4",
+      "claim": "The addition of CLV to rehabilitation promoted substantially more recovery of forelimb function compared to rehabilitation alone following chronic unilateral or bilateral cervical SCI in a rat model.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of CLV to rehabilitation promoted substantially more recovery of forelimb function compared to rehabilitation alone following chronic unilateral or bilateral cervical SCI in a rat model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by the behavioral data shown in Figures 1c, 2a, and 4a comparing CLV groups to rehabilitation alone.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "5772f29a-bc9e-4979-a64a-1eeb53ca6eed",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C5",
+      "claim": "Triggering stimulation on the most successful movements is critical to maximize recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Triggering stimulation on the most successful movements is critical to maximize recovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the comparison between Top 20% CLV and Bottom 20% CLV groups shown in Figure 1c, where timing of stimulation with successful movements was critical.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "6260d84f-3e75-4c0b-994d-942c96283704",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C6",
+      "claim": "CLV enhances recovery by strengthening synaptic connectivity from remaining motor networks to the grasping muscles in the forelimb.",
+      "claim_type": "EXPLICIT",
+      "source": "CLV enhances recovery by strengthening synaptic connectivity from remaining motor networks to the grasping muscles in the forelimb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the retrograde transneuronal tracing data shown in Figures 2d and 4d demonstrating increased labeled neurons in motor networks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "d6810007-a002-4b4a-968a-d390d677c7c2",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C7",
+      "claim": "The benefits of CLV persist long after the end of stimulation because connectivity in critical neural circuits has been restored.",
+      "claim_type": "EXPLICIT",
+      "source": "The benefits of CLV persist long after the end of stimulation because connectivity in critical neural circuits has been restored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data showing maintained recovery after cessation of stimulation (Figures 1c, 2a, 4a) and anatomical data showing increased synaptic connectivity (Figures 2d, 4d).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "fa508542-2f6b-4640-9f91-8f98b727cbfb",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C8",
+      "claim": "Many methods have been developed to enhance synaptic plasticity in hopes of enhancing recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Many methods have been developed to enhance synaptic plasticity in hopes of enhancing recovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the field that reflects established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "270ccbd1-81a9-4d8a-8e14-86435073b933",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C9",
+      "claim": "These methods have largely failed in the clinic likely due to the challenge of precisely targeting specific synapses and absence of testing in clinically-relevant models (Gladstone et al., 2006; Levy et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, these methods have largely failed in the clinic likely due to the challenge of precisely targeting specific synapses and absence of testing in clinically-relevant models (Gladstone et al., 2006; Levy et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "ca736c37-543a-494b-99b8-9bfbea0678a6",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C10",
+      "claim": "Real-time control of neural activity provides a new avenue to promote synaptic plasticity in specific networks and restore function after injury (Engineer et al., 2011; Nishimura et al., 2013; McPherson et al., 2015; Guggenmos et al., 2013).",
+      "claim_type": "EXPLICIT",
+      "source": "Real-time control of neural activity provides a new avenue to promote synaptic plasticity in specific networks and restore function after injury (Engineer et al., 2011; Nishimura et al., 2013; McPherson et al., 2015; Guggenmos et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "5def8a1e-f8cf-4c33-9ed0-a31795f98fb5",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C11",
+      "claim": "Human and animal studies demonstrate that precisely timed vagus nerve stimulation (VNS) can improve recovery of sensory and motor function.",
+      "claim_type": "EXPLICIT",
+      "source": "Human and animal studies demonstrate that precisely timed vagus nerve stimulation (VNS) can improve recovery of sensory and motor function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by the literature citations that follow in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "1da8bc41-8945-435b-adac-415d59a83395",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C12",
+      "claim": "VNS engages neuromodulatory networks and triggers release of pro-plasticity factors including norepinephrine, acetylcholine, serotonin, brain-derived neurotrophic factor, and fibroblast growth factor (Hays, 2016; Hulsey et al., 2017; Hulsey et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "VNS engages neuromodulatory networks and triggers release of pro-plasticity factors including norepinephrine, acetylcholine, serotonin, brain-derived neurotrophic factor, and fibroblast growth factor (Hays, 2016; Hulsey et al., 2017; Hulsey et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "6a448664-d7ea-4733-8b71-5be20afc79e4",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C13",
+      "claim": "VNS influences expression and phosphorylation of proteins associated with structural and synaptic plasticity, including Arc, CaMKII, TrkB, and glutamate receptors (Alvarez-Dieppa et al., 2016; Furmaga et al., 2012).",
+      "claim_type": "EXPLICIT",
+      "source": "This in turn influences expression and phosphorylation of proteins associated with structural and synaptic plasticity, including Arc, CaMKII, TrkB, and glutamate receptors (Alvarez-Dieppa et al., 2016; Furmaga et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "b57fbc5c-9ec8-4b30-bab2-da76aefde644",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C14",
+      "claim": "Engagement of neuromodulatory networks activates a transient synaptic eligibility trace to support spike-timing-dependent plasticity (STDP) (He et al., 2015).",
+      "claim_type": "EXPLICIT",
+      "source": "Engagement of neuromodulatory networks activates a transient synaptic eligibility trace to support spike-timing-dependent plasticity (STDP) (He et al., 2015), thus raising the prospect that closed-loop neuromodulatory strategies may provide a means to direct specific, long-lasting plasticity to enhance recovery after neurological injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "807bfc58-c492-479d-93ba-1b02b89eb7bc",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C15",
+      "claim": "Repeatedly pairing sensory or motor events with brief bursts of VNS yields robust plasticity in sensory or motor cortex that is specific to the paired experience (Engineer et al., 2011; Hulsey et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in the absence of neurological damage, repeatedly pairing sensory or motor events with brief bursts of VNS yields robust plasticity in sensory or motor cortex that is specific to the paired experience (Engineer et al., 2011; Hulsey et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "3754ee76-0471-45a2-9d06-9c277aba243d",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C16",
+      "claim": "The addition of VNS to rehabilitative training improves recovery in rodent models of unilateral brain injury and in chronic stroke patients (Hays, 2016; Khodaparast et al., 2016; Pruitt et al., 2016; Hays et al., 2014a; Dawson et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the addition of VNS to rehabilitative training improves recovery in rodent models of unilateral brain injury and in chronic stroke patients, highlighting the clinical potential of closed-loop neuromodulatory strategies (Hays, 2016; Khodaparast et al., 2016; Pruitt et al., 2016; Hays et al., 2014a; Dawson et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "7b56df3f-0718-4827-b6eb-125329f0ecf7",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C17",
+      "claim": "SCI resulted in a 77% reduction in volitional forelimb strength, consistent with paresis observed in many cervical SCI patients.",
+      "claim_type": "EXPLICIT",
+      "source": "SCI resulted in a 77% reduction in volitional forelimb strength, consistent with paresis observed in many cervical SCI patients (Figure 1c, PRE v. Wk 8, Paired t-test, t(29) = 37.34, p=4.4\u00d710\u221226, Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of behavioral data comparing pre-injury to post-injury performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "a3c26ca5-7338-43b0-94f9-91c82ba3598b",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C18",
+      "claim": "Top 20% CLV substantially boosted recovery of volitional forelimb strength compared to equivalent rehabilitative training without CLV (Rehab alone).",
+      "claim_type": "EXPLICIT",
+      "source": "Top 20% CLV substantially boosted recovery of volitional forelimb strength compared to equivalent rehabilitative training without CLV (Rehab alone), demonstrating that CLV enhances recovery of motor function after SCI (Figure 1c; Two-way repeated measures ANOVA, Interaction; F[6,120]=3.88, p=1.43\u00d710\u22123; Videos 3\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of behavioral data comparing Top 20% CLV to Rehab alone.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "265ff86b-82e8-4091-a67a-3595685ce162",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C19",
+      "claim": "CLV resulted in lasting recovery after the cessation of stimulation after week 11.",
+      "claim_type": "EXPLICIT",
+      "source": "CLV resulted in lasting recovery after the cessation of stimulation after week 11, consistent with the notion that CLV restores function in critical motor networks (Top 20% CLV; Wk 11 v. Wk 12; Paired t-test, t(12) = \u22120.89, p=0.38).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis showing no significant difference in performance between week 11 (with stimulation) and week 12 (without stimulation).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "39f437b7-f8e5-4be3-ba50-163f694e4a0a",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C21",
+      "claim": "Bottom 20% CLV failed to improve forelimb strength compared to Rehab alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite equivalent rehabilitation and a comparable number of stimulations delivered during task performance (Figure 1d,e), Bottom 20% CLV resulted in substantially diminished recovery compared to Top 20% CLV (Figure 1c, Two-way repeated measures ANOVA, Interaction; F[6,114]=2.40, p=0.03, Video 5) and failed to improve forelimb strength compared to Rehab alone.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the behavioral data shown in Figure 1c comparing Bottom 20% CLV to Rehab alone.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "2219cb2d-5b49-454a-9551-ce584448de48",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C22",
+      "claim": "Closed-loop neuromodulation paired with the most successful movements during rehabilitation improves recovery of motor function after cervical SCI.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings demonstrate that closed-loop neuromodulation paired with the most successful movements during rehabilitation improves recovery of motor function after cervical SCI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim supported by the behavioral data comparing different CLV timing paradigms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "f2fae423-2e56-49a1-962e-2baaa6ca524c",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C23",
+      "claim": "CLV delivered within 2 s of successful trials increases recovery, whereas CLV separated 25 s from successful trials fails to yield substantial benefits.",
+      "claim_type": "EXPLICIT",
+      "source": "CLV delivered within 2 s of successful trials increases recovery, whereas CLV separated 25 s from successful trials fails to yield substantial benefits.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 1f comparing Delayed Top 20% CLV to Bottom 20% CLV.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "d6c4eb1d-4c22-4ca3-8ad7-03bae5f00686",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C24",
+      "claim": "The temporal precision limit for CLV is near 10 s, consistent with the synaptic eligibility trace hypothesis (He et al., 2015).",
+      "claim_type": "EXPLICIT",
+      "source": "These findings support a temporal precision limit for CLV near 10 s, consistent with the synaptic eligibility trace hypothesis (He et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the timing data and supported by citation to the synaptic eligibility trace theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "1c74a73a-b60b-41ba-bc58-888f317da7e5",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C25",
+      "claim": "Top 50% CLV substantially improved recovery of forelimb function compared to Rehab alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Top 50% CLV substantially improved recovery of forelimb function compared to Rehab alone, which provides an independent confirmation that CLV enhances recovery after SCI (Figure 2a, Two-way repeated measures ANOVA, Interaction; F[6,174]=3.56, p=2.38\u00d710\u22123).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of behavioral data comparing Top 50% CLV to Rehab alone.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "f619900f-e4c5-4b0a-94af-9ab74a05961a",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C26",
+      "claim": "The rate and degree of recovery were comparable in the Top 50% CLV and the Top 20% CLV groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate and degree of recovery were comparable in the Top 50% CLV and the Top 20% CLV groups (Figure 2\u2014figure supplement 1), suggesting that timing is more important than quantity of stimulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "1cd4156f-846b-43ba-9e02-0ec3dff774d7",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C27",
+      "claim": "Timing is more important than quantity of stimulation for CLV-mediated recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate and degree of recovery were comparable in the Top 50% CLV and the Top 20% CLV groups (Figure 2\u2014figure supplement 1), suggesting that timing is more important than quantity of stimulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the comparison between Top 20% and Top 50% CLV groups showing similar outcomes despite different amounts of stimulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "7a82bfa0-8c2d-4e4c-a206-d23b2021fcb5",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C28",
+      "claim": "Unilateral SCI caused substantial damage to gray matter, rubrospinal, and propriospinal tracts in the right hemicord, while largely sparing the right corticospinal tract and the entirety of the left hemicord.",
+      "claim_type": "EXPLICIT",
+      "source": "Unilateral SCI caused substantial damage to gray matter, rubrospinal, and propriospinal tracts in the right hemicord, while largely sparing the right corticospinal tract and the entirety of the left hemicord.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by histological analysis shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "e2634095-9079-4d40-b4f0-009b6edb6690",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C29",
+      "claim": "CLV resulted in eight times more motor cortex sites that generated grasp movements in the impaired forelimb compared to Rehab alone.",
+      "claim_type": "EXPLICIT",
+      "source": "CLV resulted in eight times more motor cortex sites that generated grasp movements in the impaired forelimb compared to Rehab alone (Figure 2c and Figure 2\u2014figure supplement 4, Unpaired t-test, t(10) = 2.28, p=0.04), providing the first evidence that CLV induces large-scale plasticity in corticospinal networks after neurological injury.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ICMS mapping data comparing Top 50% CLV to Rehab alone.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "b7d549dc-dacd-4fac-9d4f-3a426ce91ddb",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C30",
+      "claim": "CLV induces large-scale plasticity in corticospinal networks after neurological injury.",
+      "claim_type": "EXPLICIT",
+      "source": "CLV resulted in eight times more motor cortex sites that generated grasp movements in the impaired forelimb compared to Rehab alone (Figure 2c and Figure 2\u2014figure supplement 4, Unpaired t-test, t(10) = 2.28, p=0.04), providing the first evidence that CLV induces large-scale plasticity in corticospinal networks after neurological injury.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary claim based on the ICMS mapping data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "01c4ce4a-e69a-49c4-a59e-e155af1e5c8c",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C31",
+      "claim": "CLV resulted in a five-fold increase in labeled neurons in motor cortex compared to Rehab alone.",
+      "claim_type": "EXPLICIT",
+      "source": "CLV resulted in a five-fold increase in labeled neurons in motor cortex compared to Rehab alone (Figure 2d and Figure 2\u2014figure supplement 5, Unpaired t-test, t(9) = 7.63, p=3.2\u00d710\u22125).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by retrograde transneuronal tracing data using PRV-152.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "c6e79b9f-354c-4a3e-9e6a-d2dcb2be2de3",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C32",
+      "claim": "The magnitude of the increase in synaptic connectivity is comparable to the seven-fold increase in the number of motor cortex sites that produce grasp.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of this increase in synaptic connectivity is comparable to the seven-fold increase in the number of motor cortex sites that produce grasp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between the anatomical tracing data and the ICMS mapping data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "3e997134-d223-496a-8945-53c58aac2639",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C33",
+      "claim": "CLV failed to increase neuronal labeling of spinal motor neurons, red nucleus neurons or propriospinal neurons after unilateral SCI.",
+      "claim_type": "EXPLICIT",
+      "source": "CLV failed to increase neuronal labeling of spinal motor neurons, red nucleus neurons or propriospinal neurons (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the retrograde transneuronal tracing data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "9ffc8999-425a-4c98-b6d3-1176dd0495f8",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C34",
+      "claim": "CLV did not influence lesion extent after unilateral SCI.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, CLV did not influence lesion extent (Figure 2e, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by histological analysis of lesion size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "6f2e9a06-bbec-4d65-af0e-15ad360392bc",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C35",
+      "claim": "Anatomical plasticity in the spared corticospinal network contributes to enhanced recovery when CLV is added to rehabilitative training after unilateral SCI.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results are consistent with anatomical plasticity in the spared corticospinal network contributing to enhanced recovery when CLV is added to rehabilitative training after SCI (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the combined ICMS, tracing, and behavioral data after unilateral SCI.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "0fe5905a-8cfc-403c-b029-e4491b0133e6",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C36",
+      "claim": "CLV may prove ineffective if the CST is destroyed.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that CLV improves recovery and enhances functional and anatomical plasticity in corticospinal networks suggests that CLV may prove ineffective if the CST is destroyed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the observation that CLV enhanced corticospinal plasticity after unilateral SCI.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "44a76a65-b98c-4735-858e-94d6fe959687",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C37",
+      "claim": "Bilateral injury virtually eliminates the CST on both sides of the cord.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore evaluated motor recovery in a bilateral injury model that virtually eliminates the CST on both sides of the cord (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by histological analysis shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "41afad5e-4299-460e-96e2-14a00a96c71f",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C38",
+      "claim": "Despite profound damage from bilateral SCI, CLV more than doubled the degree of forelimb motor recovery compared to Rehab alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite profound damage, CLV more than doubled the degree of forelimb motor recovery compared to Rehab alone (Figure 4a, Two-way repeated measures ANOVA, Interaction; F[6,144]=5.29, p=7.62\u00d710\u22125).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of behavioral data after bilateral SCI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "31bb00f2-3e84-4f16-b6af-3ac4fbe7e5a2",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C39",
+      "claim": "CLV could be clinically useful after bilateral SCI.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that CLV can improve recovery following bilateral SCI suggests CLV could be clinically useful.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the effectiveness of CLV in the bilateral SCI model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "dae7ec6f-66d9-4238-90b9-83e90bb3346f",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C40",
+      "claim": "CLV enhances recovery after bilateral SCI by promoting plasticity in the rubrospinal and propriospinal pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that CLV enhances recovery by promoting plasticity in the rubrospinal and propriospinal pathways, which were damaged, but not eliminated, by this injury (Figure 4b and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This hypothesis is supported by the anatomical tracing data showing increased labeling in these pathways.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "725eb149-8a15-4058-8d2f-bfba864ea468",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C41",
+      "claim": "CLV doubled the number of labeled red nucleus neurons and C3/4 propriospinal neurons compared to Rehab alone after bilateral SCI.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, CLV doubled the number of labeled red nucleus neurons and C3/4 propriospinal neurons compared to Rehab alone (Figure 3d and Figure 4\u2014figure supplement 3, Unpaired t-test, Red Nucleus: t(4) = 3.89, p=0.018; Propriospinal: t(4) = 2.77, p=0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by retrograde transneuronal tracing data after bilateral SCI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "0720e72b-3c11-4faf-b1d1-3a8385d3b228",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C42",
+      "claim": "CLV had no effect on reorganization of motor cortex after bilateral SCI.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the extensive damage to the corticospinal pathway, CLV had no effect on reorganization of motor cortex (Figure 4c and Figure 4\u2014figure supplement 4, Unpaired t-test, t(12) = \u22120.13, p=0.90)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ICMS mapping data after bilateral SCI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "f7c05df7-20a4-4f26-9568-183ae39d2c38",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C43",
+      "claim": "CLV failed to increase the number of labeled neurons in the motor cortex after bilateral SCI.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the extensive damage to the corticospinal pathway, CLV had no effect on reorganization of motor cortex (Figure 4c and Figure 4\u2014figure supplement 4, Unpaired t-test, t(12) = \u22120.13, p=0.90) and failed to increase the number of labeled neurons in the motor cortex (Figure 3d, Unpaired t-test, t(4) = 0.83, p=0.45).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by retrograde transneuronal tracing data after bilateral SCI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "0bc78433-4d43-4520-b5d7-312d2248892a",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C44",
+      "claim": "CLV is capable of supporting recovery following SCI by strengthening anatomical connectivity within remaining pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that CLV is capable of supporting recovery following SCI by strengthening anatomical connectivity within remaining pathways (Figure 4\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary claim based on the combined data from both unilateral and bilateral SCI models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "14af7a08-fe25-4291-985f-0d27471775fd",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C45",
+      "claim": "A novel closed-loop neuromodulation strategy was developed to make use of the high temporal precision of the synaptic eligibility trace.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we developed a novel closed-loop neuromodulation strategy to make use of the high temporal precision of the synaptic eligibility trace.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodological approach developed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "87253c11-6fb2-46b0-b25b-8ce917a8f9a2",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C46",
+      "claim": "Activation of the vagus nerve improves recovery when reliably delivered within seconds of a successful movement.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that activation of the vagus nerve improves recovery when reliably delivered within seconds of a successful movement",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the timing experiments shown in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "1ce3560b-529d-41e9-aa2e-54fba8fc4c46",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C47",
+      "claim": "This study provides the first evidence that CLV enhances reorganization of synaptic connectivity in remaining networks in two non-overlapping models of SCI.",
+      "claim_type": "EXPLICIT",
+      "source": "we provide the first evidence that CLV enhances reorganization of synaptic connectivity in remaining networks in two non-overlapping models of SCI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the anatomical tracing data from both unilateral and bilateral SCI models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "bd39924f-9948-4e6f-9e73-a8ac74b69066",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C48",
+      "claim": "The flexibility to promote reorganization in a range of pathways is a critical benefit of CLV, given the great heterogeneity in the etiology, location, and extent of damage present in SCI patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The flexibility to promote reorganization in a range of pathways is a critical benefit of CLV, given the great heterogeneity in the etiology, location, and extent of damage present in SCI patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that CLV enhanced different pathways depending on which were spared.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "9e1e47e5-25a2-4e2d-86c3-67653fe6a8ed",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C49",
+      "claim": "Classical studies by Skinner demonstrate that adaptive reinforcement of successive approximations, or shaping, drives behavior toward a desired response (Skinner, 1953).",
+      "claim_type": "EXPLICIT",
+      "source": "Classical studies by Skinner demonstrate that adaptive reinforcement of successive approximations, or shaping, drives behavior toward a desired response (Skinner, 1953).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to classical behavioral psychology literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "3f3fca74-04d1-4d92-905a-c79e9eccd0ab",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C50",
+      "claim": "The principle of shaping has been adopted for use in rehabilitation, with the intention to reinforce successively better movements (Wood, 1990).",
+      "claim_type": "EXPLICIT",
+      "source": "This principle has been adopted for use in rehabilitation, with the intention to reinforce successively better movements (Wood, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to rehabilitation literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "52d932a6-e42b-4378-b73a-95e001b591ac",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C51",
+      "claim": "Enhanced recovery was observed only when CLV was paired with trials that approximated the desired outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhanced recovery was observed only when CLV was paired with trials that approximated the desired outcome, highlight the importance of timing for closed-loop stimulation to shape behavioral outcomes and maximize recovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the comparison between Top 20% CLV and Bottom 20% CLV groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "ba71de84-dd56-495b-be4e-b73f705b9ad7",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C52",
+      "claim": "The magnitude of neuromodulatory activation elicited by an event is directly proportional to the surprise, or unpredictability, of the event (Hangya et al., 2015; Hollerman and Schultz, 1998; Sara and Segal, 1991).",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of neuromodulatory activation elicited by an event is directly proportional to the surprise, or unpredictability, of the event (Hangya et al., 2015; Hollerman and Schultz, 1998; Sara and Segal, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to neuroscience literature on reward prediction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "1546362a-ec19-41cd-b450-084f6608128c",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C53",
+      "claim": "This phenomenon is ascribed to reward prediction error (Schultz, 2002).",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon is ascribed to reward prediction error (Schultz, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to reward prediction error literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "20b4d804-c790-43c2-ae2e-bed3d5aca27c",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C54",
+      "claim": "Unsurprising events fail to activate neuromodulatory systems, and even rewarding events fail to trigger neuromodulator release if they are expected.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsurprising events fail to activate neuromodulatory systems, and even rewarding events fail to trigger neuromodulator release if they are expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about reward prediction error.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "a4eaa1c6-7740-486b-9168-58d49266ac84",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C55",
+      "claim": "The predictability and accompanying tedium of long, frustrating rehabilitation and the minimal reinforcement of practicing a previously simple motor task blunts plasticity and limits recovery after SCI.",
+      "claim_type": "EXPLICIT",
+      "source": "We posit the predictability and accompanying tedium of long, frustrating rehabilitation and the minimal reinforcement of practicing a previously simple motor task blunts plasticity and limits recovery after SCI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on reward prediction error theory applied to rehabilitation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "c776c851-2eef-4ed8-906f-4b90a81c7033",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C56",
+      "claim": "The closed-loop neuromodulation strategy circumvents the limitations of rehabilitation by artificially engaging neuromodulatory networks and providing a repeated, non-adapting reinforcing signal typically associated with surprising consequences (Hays, 2016; Hulsey et al., 2017; Hulsey et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "The closed-loop neuromodulation strategy developed here circumvents this by artificially engaging neuromodulatory networks and providing a repeated, non-adapting reinforcing signal typically associated with surprising consequences (Hays, 2016; Hulsey et al., 2017; Hulsey et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the mechanism supported by citations and the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "9fd7490e-abf8-4c46-a7ad-045facbc910b",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C57",
+      "claim": "CLV drives temporally-precise neuromodulatory release to convert the synaptic eligibility trace in neuronal networks that generate optimal motor control to long-lasting plasticity (He et al., 2015).",
+      "claim_type": "EXPLICIT",
+      "source": "CLV drives temporally-precise neuromodulatory release to convert the synaptic eligibility trace in neuronal networks that generate optimal motor control to long-lasting plasticity (He et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation supported by citation and the experimental results showing lasting plasticity.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "520f542c-59f5-4a5e-9556-36eff3503ecf",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C58",
+      "claim": "CLV is a minimally-invasive, safe strategy to provide precisely-timed engagement of multiple neuromodulatory networks to boost plasticity during rehabilitation (Hays, 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "CLV is a minimally-invasive, safe strategy to provide precisely-timed engagement of multiple neuromodulatory networks to boost plasticity during rehabilitation (Hays, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation and the safety profile observed in the study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "b0be6061-9343-4c2c-bdb9-64a5e6050f56",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C59",
+      "claim": "Preliminary results in chronic stroke and tinnitus patients highlight the clinical potential of CLV, while delivering less than 1% of the total FDA-approved amount of stimulation (Dawson et al., 2016; De Ridder et al., 2014; Ben-Menachem, 2001).",
+      "claim_type": "EXPLICIT",
+      "source": "Preliminary results in chronic stroke and tinnitus patients highlight the clinical potential of CLV, while delivering less than 1% of the total FDA-approved amount of stimulation (Dawson et al., 2016; De Ridder et al., 2014; Ben-Menachem, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "7925ab16-c278-4a37-a5d3-8b6dcde7f062",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C60",
+      "claim": "The flexibility to deliver stimulation with a variety of rehabilitative exercises raises the possibility to design CLV-based therapies to target motor dysfunction of the lower limbs, somatosensory loss, and bowel and bladder issues, all of which are prevalent in SCI patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the flexibility to deliver stimulation with a variety of rehabilitative exercises raises the possibility to design CLV-based to target motor dysfunction of the lower limbs, somatosensory loss, and bowel and bladder issues, all of which are prevalent in SCI patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future applications based on the current results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "58e616fe-c157-4622-9658-5fbfc942bbed",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C61",
+      "claim": "Delineation of the timing requirements and documentation of neuronal changes driven by CLV in this study provide a framework for development of this strategy for a range of neurological conditions, including stroke, peripheral nerve injury, and post-traumatic stress disorder (Hays, 2016; Lozano, 2011).",
+      "claim_type": "EXPLICIT",
+      "source": "Delineation of the timing requirements and documentation of neuronal changes driven by CLV in this study provide a framework for development of this strategy for a range of neurological conditions, including stroke, peripheral nerve injury, and post-traumatic stress disorder (Hays, 2016; Lozano, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim about the broader implications of the study, supported by the data and citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "2c6caa1d-aded-41f6-b52b-253d9dc53583",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C62",
+      "claim": "Adult female Sprague Dawley rats (N = 181) were used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult female Sprague Dawley rats (N = 181) used in this study were housed one per cage (12 hr light/dark cycle).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "7b9e7936-6bd7-4c55-a89f-67fdb68f6594",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C63",
+      "claim": "Rats were trained to proficiency on the isometric pull task.",
+      "claim_type": "EXPLICIT",
+      "source": "One hundred and sixty-nine rats were trained to proficiency on the isometric pull task as in our previous studies (Khodaparast et al., 2016; Pruitt et al., 2016; Hays et al., 2013; Sloan et al., 2015; Hays et al., 2014b; Hays et al., 2016; Khodaparast et al., 2013; Pruitt et al., 2014; Meyers et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail supported by citations to previous studies using the same methods.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "a609e172-a666-44ab-a638-f4cb1cab169f",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C64",
+      "claim": "After reaching task proficiency, rats received a unilateral contusive injury (N = 128) or bilateral contusive injury (N = 41) of the cervical spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "After reaching task proficiency (85% success rate on ten consecutive sessions), rats received a unilateral contusive injury (N = 128) or bilateral contusive injury (N = 41) of the cervical spinal cord.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the experimental procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "8488cedf-752f-4744-b70b-b460d6dd4285",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C65",
+      "claim": "Eighty-seven rats were excluded from the study due to mortality (N = 20), inability to perform the task after injury (N = 25), or VNS device failure (N = 42).",
+      "claim_type": "EXPLICIT",
+      "source": "Eighty-seven rats were excluded from the study due to mortality (N = 20), inability to perform the task after injury (N = 25), or VNS device failure (N = 42).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about subject exclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "119f1f65-15e1-491a-b049-9d7eced888a1",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C66",
+      "claim": "Bilateral SCI rats were given two additional weeks of recovery time due to their larger spinal lesion and slower return to recumbency.",
+      "claim_type": "EXPLICIT",
+      "source": "Bilateral SCI rats were given two additional weeks of recovery time due to their larger spinal lesion and slower return to recumbency (Figure 4\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological detail supported by data shown in Figure 4\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "e0639808-916a-41ed-84ef-3181d68af401",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C67",
+      "claim": "The isometric pull task is a fully automated and quantitative assay to measure multiple parameters of forelimb force generation.",
+      "claim_type": "EXPLICIT",
+      "source": "The isometric pull task is a fully automated and quantitative assay to measure multiple parameters of forelimb force generation and was performed similar to previous descriptions (Khodaparast et al., 2016; Pruitt et al., 2016; Hays et al., 2013; Sloan et al., 2015; Hays et al., 2014b, 2016; Khodaparast et al., 2013; Pruitt et al., 2014; Meyers et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "d280d57f-716c-4a16-bf2b-a7a8a840f020",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C68",
+      "claim": "Experimenters were blind to treatment group at all times throughout behavioral testing.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimenters were blind to treatment group at all times throughout behavioral testing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about experimental blinding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "6efe7aec-de93-4311-938f-e6b2922bd1f3",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C69",
+      "claim": "The reward threshold was scaled adaptively based on the median peak force of the 10 preceding trials, with a fixed bounded minimum of 10 grams and maximum of 120 g.",
+      "claim_type": "EXPLICIT",
+      "source": "The reward threshold was scaled adaptively based on the median peak force of the 10 preceding trials, with a fixed bounded minimum of 10 grams and maximum of 120 g based on previous studies (Figure 1\u2014figure supplement 1) (Ganzer et al., 2016a; Meyers et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological detail about the behavioral task supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "5403d6ec-b468-4dfe-8775-4553a0918f23",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C70",
+      "claim": "Rats were trained until they reached proficiency, defined as 10 consecutive sessions in which greater than 85% of trials exceeded 120 g.",
+      "claim_type": "EXPLICIT",
+      "source": "Rats were trained until they reached proficiency, defined as a 10 consecutive sessions in which greater than 85% of trials exceeded 120 g.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the training criterion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "684ff97f-d20f-432c-9ae4-87d8dcbf950d",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C71",
+      "claim": "For unilateral SCI, the right spinal hemicord was contused using the Infinite Horizon Impact Device with a force of 200 kilodynes and zero dwell time.",
+      "claim_type": "EXPLICIT",
+      "source": "For unilateral SCI, the right spinal hemicord was contused using the Infinite Horizon Impact Device with a force of 200 kilodynes and zero dwell time as previously reported (Precision Systems and Instrumentation, Lexington, KY; impactor tip diameter = 1.25 mm) (Ganzer et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the injury procedure supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "56b2eb4f-b73e-445b-9307-aafb0ee60d23",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C72",
+      "claim": "For bilateral SCI rats, the midline of the spinal cord was contused with a force of 225 kilodynes and zero dwell time (impactor tip diameter = 2.5 mm).",
+      "claim_type": "EXPLICIT",
+      "source": "For bilateral SCI rats, the midline of the spinal cord was contused with a force of 225 kilodynes and zero dwell time (impactor tip diameter = 2.5 mm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the bilateral injury procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "3d4373e5-6cef-49a4-8828-595489889616",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C73",
+      "claim": "After bilateral SCI, rats took significantly longer to return to recumbency and forepaw plantar placement compared to unilateral SCI rats.",
+      "claim_type": "EXPLICIT",
+      "source": "After bilateral SCI, rats took significantly longer to return to recumbency and forepaw plantar placement compared to unilateral SCI rats (Figure 4\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "ff4eba44-e2bb-49ca-80b8-2b329d12e010",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C74",
+      "claim": "Stimulation of the left cervical branch of the vagus nerve was performed using low current levels to avoid cardiac effects (Engineer et al., 2011).",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation of the left cervical branch of the vagus nerve was performed using low current levels to avoid cardiac effects (Engineer et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "4b21a6e8-05b6-4b14-a15b-9d764e8b7c5d",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C75",
+      "claim": "Animals that failed to demonstrate a reliable drop in oxygen saturation at the end of therapy were excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "Animals that failed to demonstrate a reliable drop in oxygen saturation at the end of therapy were excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about exclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "340fbeab-47b6-4336-976d-f5abee22310a",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C76",
+      "claim": "Each stimulation train consisted of 16 \u00d7 100 \u00b5sec 0.8 mA biphasic pulses delivered at 30 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Each stimulation train consisted of 16 \u00d7 100 \u00b5sec 0.8 mA biphasic pulses delivered at 30 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the stimulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "63a3863e-89ea-4b32-a77e-3057c200c19e",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C77",
+      "claim": "No groups received VNS on the final week of rehabilitative training to assess effects lasting after the cessation of stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "No groups received VNS on the final week of rehabilitative training (Week 12 for unilateral and Week 14 for bilateral SCI) to assess effects lasting after the cessation of stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "5abd02a6-72b5-40ad-854f-b520e0c6d29f",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C78",
+      "claim": "These VNS parameters do not cause discomfort and do not alter reaching behavior (Hulsey et al., 2016; Porter et al., 2012).",
+      "claim_type": "EXPLICIT",
+      "source": "These parameters do not cause discomfort and do not alter reaching behavior (Hulsey et al., 2016; Porter et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "0e23b0d0-35ad-4533-ba28-09fb553827b5",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C79",
+      "claim": "Terminal intracortical microstimulation mapping (ICMS) of motor cortex was performed in a subset of unilateral SCI (Rehab alone, N = 6; Top 50% CLV, N = 6) and bilateral SCI (Rehab alone, N = 7; Top 50% CLV, N = 7) rats at the end of therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Terminal intracortical microstimulation mapping (ICMS) of motor cortex was performed in a subset of unilateral SCI (Rehab alone, N = 6; Top 50% CLV, N = 6) and bilateral SCI (Rehab alone, N = 7; Top 50% CLV, N = 7) rats at the end of therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the ICMS experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "9aa90661-11cc-477b-94c3-a1d3b5a98e55",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C80",
+      "claim": "Mapping experiments were performed blinded with two experimenters.",
+      "claim_type": "EXPLICIT",
+      "source": "Mapping experiments were performed blinded with two experimenters similar to previous studies (Hulsey et al., 2016; Porter et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about experimental blinding supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "d2be91b4-e9b4-4d7b-832d-1f1e82bd15e6",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C81",
+      "claim": "Transsynaptic tracer injections using pseudorabies virus 152 (PRV-152) were performed in a subset of unilateral SCI (Rehab, n = 6; VNS + Rehab, n = 5) and bilateral SCI (Rehab, n = 3; VNS + Rehab, n = 3) rats following the respective end of therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Transsynaptic tracer injections using pseudorabies virus 152 (PRV-152) were performed in a subset of unilateral SCI (Rehab, n = 6; VNS + Rehab, n = 5) and bilateral SCI (Rehab, n = 3; VNS + Rehab, n = 3) rats following the respective end of therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the tracing experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "4c8c43d0-63a8-4911-86ba-1d660331e09e",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C82",
+      "claim": "15 \u00b5L of PRV-152 (~8.06 \u00b1 0.49 x 10^8 plaque-forming units) was injected into the belly of each muscle across three separate sites.",
+      "claim_type": "EXPLICIT",
+      "source": "15 \u00b5L of PRV-152 (~8.06 \u00b1 0.49 x 108 plaque-forming units) was injected into the belly of each muscle across three separate sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the viral injection procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "53c4e38d-bf60-4aa1-951a-41597ea527c1",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C83",
+      "claim": "At 6\u20136.5 days post-infection, consistent layer five cortical labeling was observed across injured or uninjured animals.",
+      "claim_type": "EXPLICIT",
+      "source": "At 6\u20136.5 days post-infection we observed consistent layer five cortical labeling across injured or uninjured animals. Therefore, 6\u20136.5 days was used as our PRV-152 infection duration for our transsynaptic tracing studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail based on pilot studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "a5f825f3-b420-4f94-80fc-6ad2081724e3",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C84",
+      "claim": "Quantification was limited to the spinal motor neurons, C3/4 cervical propriospinal neurons, red nucleus neurons, and cortical layer five neurons because these regions exhibited consistent labeling and were specifically related to the hypotheses.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification was limited to the spinal motor neurons, C3/4 cervical propriospinal neurons, red nucleus neurons, and cortical layer five neurons because these regions exhibited consistent labeling and were specifically related to our hypotheses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the analysis approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "e161b9ab-c268-4e98-99bc-26506379cc7d",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C85",
+      "claim": "Experimenters performing analysis were blind to the group of each rat.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimenters performing analysis were blind to the group of each rat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about experimental blinding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "26a26da9-d490-47f7-8b1e-33d2f7262686",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C86",
+      "claim": "Sensorimotor cortex, red nucleus and cervical propriospinal neuron counts were normalized within rats to the number of putative spinal motor neurons in the lower cervical and upper thoracic spinal cord to control for any differences in injection efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensorimotor cortex, red nucleus and cervical propriospinal neuron counts were normalized within rats to the number of putative spinal motor neurons in the lower cervical and upper thoracic spinal cord to control for any differences in injection efficacy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about data normalization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "0928a0ee-813f-40bf-9227-33091a06b82c",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C87",
+      "claim": "No differences in spinal neuron labeling were observed between CLV and Rehab alone.",
+      "claim_type": "EXPLICIT",
+      "source": "No differences in spinal neuron labeling were observed between CLV and Rehab alone (Figures 2E and 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the tracing data shown in Figures 2E and 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "0269cf80-22e5-40aa-993e-ed2781c6664f",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C88",
+      "claim": "CLV does not affect lesion size after unilateral SCI.",
+      "claim_type": "IMPLICIT",
+      "source": "Additionally, CLV did not influence lesion extent (Figure 2e, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by histological analysis showing no difference in lesion size between groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "923030a3-99b2-44eb-8e38-538f8746475e",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C89",
+      "claim": "Neuroprotective effects cannot account for the differences in recovery with CLV.",
+      "claim_type": "IMPLICIT",
+      "source": "The absence of differences in lesion size with CLV confirm that neuroprotective effects cannot account for the differences in recovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of difference in lesion size between groups.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "9ccfb68a-22b9-4940-b664-756e2c32def3",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C90",
+      "claim": "CLV-dependent increases in motivation or task-focused repetition cannot explain improved recovery after unilateral SCI.",
+      "claim_type": "IMPLICIT",
+      "source": "Together, these findings confirming that CLV-dependent increases in motivation or task-focused repetition cannot explain improved recovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of difference in total number of trials performed between groups (Figure 2\u2014figure supplement 3).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "3c9bac43-be2e-4b7a-8163-c5a206c50643",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C91",
+      "claim": "CLV significantly increased the representation of grasp movements compared to Rehab alone after unilateral SCI.",
+      "claim_type": "EXPLICIT",
+      "source": "CLV significantly increased the representation of grasp movements compared to Rehab alone (Unpaired t-test, Top 50% CLV v. Rehab alone, p<0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ICMS mapping data shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "d29f5d81-4440-4135-abf8-fe1c73d62b00",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C92",
+      "claim": "The representation of proximal elbow and shoulder movements was decreased in the Top 50% CLV group after unilateral SCI, likely to accommodate the expansion of grasp movement without changing the total area of forelimb representation.",
+      "claim_type": "EXPLICIT",
+      "source": "The representation of proximal elbow and shoulder movements was decreased in the Top 50% CLV group, likely to accommodate the expansion of grasp movement without changing the total area of forelimb representation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the ICMS mapping data showing redistribution of movement representations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "5a51d3bf-cb8e-4849-9463-353a5f3ee76a",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C93",
+      "claim": "After unilateral SCI, no differences in total forelimb representational area were observed between groups.",
+      "claim_type": "EXPLICIT",
+      "source": "After unilateral SCI, no differences in total forelimb representational area were observed (F[2,18]=1.05, p=0.37).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ICMS mapping data shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "91c30d70-4d26-4f9c-8c21-fd9acdd029ff",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C94",
+      "claim": "Stimulation thresholds to evoke movement were comparable across groups after unilateral SCI.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation thresholds to evoke movement were comparable across groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ICMS mapping data shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "fd4e98fe-51fe-4b19-a408-5916adc63378",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C95",
+      "claim": "After unilateral SCI, CLV increases labeled neurons in the motor cortex compared to Rehab alone.",
+      "claim_type": "EXPLICIT",
+      "source": "After unilateral SCI, CLV increases labeled neurons in the motor cortex compared to Rehab alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by retrograde transneuronal tracing data shown in Figure 2\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "1fe59f65-a889-4a62-9204-e6f5b168aa00",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C96",
+      "claim": "After bilateral SCI, no differences in white matter damage were observed between the Top 50% CLV group and the Rehab alone group.",
+      "claim_type": "EXPLICIT",
+      "source": "After bilateral SCI, both white matter (C) and gray matter (D) are damaged to a similar extent on both sides of the spinal cord in the Top 50% CLV group and the Rehab alone group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by histological analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "9976c99d-1fcf-4576-bef0-ed837232d189",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C97",
+      "claim": "After bilateral SCI, no differences in gray matter damage were observed between the Top 50% CLV group and the Rehab alone group.",
+      "claim_type": "EXPLICIT",
+      "source": "After bilateral SCI, both white matter (C) and gray matter (D) are damaged to a similar extent on both sides of the spinal cord in the Top 50% CLV group and the Rehab alone group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by histological analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "c969acbf-b2bf-483d-bc78-aca7e04f43a7",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C98",
+      "claim": "After bilateral SCI, no differences in the total number of trials performed was observed between the Top 50% CLV group and Rehab alone group.",
+      "claim_type": "EXPLICIT",
+      "source": "After bilateral SCI, no differences in the total number of trials performed was observed between the Top 50% CLV group and Rehab alone group (Unpaired t-test, p=0.051).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "2f785578-9d52-4669-aa84-4524bff6ae4f",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C99",
+      "claim": "A trend toward a reduced number of trials was observed in the Top 50% CLV group compared to Rehab alone after bilateral SCI.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to unilateral SCI, a trend toward a reduced number of trials was observed in the Top 50% CLV group compared to Rehab alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "c58c0074-c235-4c47-910d-0385e429628e",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C100",
+      "claim": "After bilateral SCI, CLV increases labeled neurons in the red nucleus and C3/4 propriospinal neurons compared to Rehab alone.",
+      "claim_type": "EXPLICIT",
+      "source": "After bilateral SCI, CLV increases labeled neurons in the red nucleus and C3/4 propriospinal neurons compared to Rehab alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by retrograde transneuronal tracing data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "aa40c18e-4644-4a51-a1ff-cef5efd55274",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C101",
+      "claim": "After bilateral SCI, no differences in any movement representations were observed with Top 50% CLV compared to Rehab alone.",
+      "claim_type": "EXPLICIT",
+      "source": "After bilateral SCI, no differences in any movement representations were observed with Top 50% CLV compared to Rehab alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ICMS mapping data shown in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "9f698a2f-20ad-4db7-a8dc-777716e8ee60",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C102",
+      "claim": "After bilateral SCI, no differences in total forelimb representational area were observed between groups.",
+      "claim_type": "EXPLICIT",
+      "source": "No differences in total forelimb representational area were observed (F[2,20]=2.97, p=0.08).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ICMS mapping data shown in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "a27585c4-3605-478e-af3a-e407adf8db31",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C103",
+      "claim": "Stimulation thresholds to evoke movement were comparable across groups after bilateral SCI.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation thresholds to evoke movement were comparable across groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ICMS mapping data shown in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "9a4c7aed-0efc-40f0-b348-95f06f2e913d",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C104",
+      "claim": "The number of days until recumbency was approximately one week longer after bilateral SCI compared to unilateral SCI.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of days until recumbency (A) and right forepaw plantar placement (B) was approximately one week longer after bilateral SCI compared to unilateral SCI (Recumbency: Unpaired t-test, p<0.001; Right Forepaw Plantar Placement: Unpaired t-test, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "1cc81a95-5274-4228-b215-d99ee6be2889",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C105",
+      "claim": "The number of days until right forepaw plantar placement was approximately one week longer after bilateral SCI compared to unilateral SCI.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of days until recumbency (A) and right forepaw plantar placement (B) was approximately one week longer after bilateral SCI compared to unilateral SCI (Recumbency: Unpaired t-test, p<0.001; Right Forepaw Plantar Placement: Unpaired t-test, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "bdd21dc5-fe70-4699-b4d0-08ed5188b18b",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "claim_id": "C106",
+      "claim": "Rats that received bilateral SCI returned to rehabilitative training later (Week 8) than animals that received unilateral SCI (Week 6).",
+      "claim_type": "EXPLICIT",
+      "source": "As a result of the longer delay, experiments were designed such that rats that received bilateral SCI returned to rehabilitative training later (Week 8) than animals that received unilateral SCI (Week 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the experimental design based on the recovery time differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "018e23d4-36bd-4d63-94fc-711822b35bd7",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Closed-loop vagus nerve stimulation (CLV) paired with successful movements during rehabilitation substantially enhances recovery of forelimb function after both unilateral and bilateral cervical SCI compared to rehabilitation alone, with benefits persisting after cessation of stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C17-C19, C22, C25, C38, and C45-C47 collectively demonstrate that CLV significantly improves motor recovery in both unilateral and bilateral SCI models. The behavioral data (Figures 1c, 2a, 4a) show statistically significant improvements with appropriate controls, sample sizes, and statistical tests. The persistence of benefits after stimulation cessation (C19) supports lasting functional restoration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "5b193643-4f96-4172-a124-7ae2cd8260bd",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The timing of CLV delivery is critical for maximizing recovery: stimulation must be paired with the most successful movements within approximately 2-10 seconds, as stimulation paired with poor movements or delayed by 25 seconds fails to enhance recovery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C21, C23-C24, C26-C27, and C51 are supported by direct experimental comparisons between Top 20% CLV, Bottom 20% CLV, and Delayed Top 20% CLV groups (Figure 1c, 1f). The data demonstrate that timing is more important than quantity of stimulation, consistent with the synaptic eligibility trace hypothesis. Statistical analyses appropriately support these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "d011ce82-08ba-41f5-8dee-0bd843217afc",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "After unilateral SCI, CLV enhances recovery by strengthening synaptic connectivity in the spared corticospinal network, resulting in an eight-fold increase in motor cortex sites generating grasp movements and a five-fold increase in labeled motor cortex neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C29-C32, C35, C91, and C95 are supported by converging evidence from ICMS mapping (Figure 2c) and retrograde transneuronal tracing (Figure 2d). The anatomical and functional plasticity measures show consistent increases in corticospinal connectivity. Sample sizes are adequate (N=5-6 per group) and statistical tests are appropriate (unpaired t-tests with significant p-values).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "5dbfa216-3b13-43e2-b466-cea6323575fc",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "After bilateral SCI with near-complete CST elimination, CLV enhances recovery by promoting plasticity in rubrospinal and propriospinal pathways, doubling the number of labeled neurons in these networks compared to rehabilitation alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41, C44, and C100 are supported by retrograde transneuronal tracing data (Figure 4d) showing significant increases in red nucleus and propriospinal neurons after bilateral SCI. The behavioral recovery (C38) despite CST damage provides functional validation. Statistical tests show significant differences (p=0.018 for red nucleus, p=0.05 for propriospinal), though the propriospinal result is borderline and sample sizes are small (N=3 per group).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "f039fcf5-5a5c-42e7-8124-0ccaf1bb52e1",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CLV selectively enhances plasticity in spared pathways: after unilateral SCI, CLV increases corticospinal but not rubrospinal/propriospinal connectivity; after bilateral SCI, CLV increases rubrospinal/propriospinal but not corticospinal connectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33, C42-C43 demonstrate pathway-specific plasticity consistent with which networks were spared by each injury type. The anatomical tracing data (Figures 2d, 4d) and ICMS mapping (Figures 2c, 4c) show differential effects based on injury location. This specificity strengthens the mechanistic interpretation that CLV enhances remaining functional pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "b7534d77-1755-446e-b4a8-44d41f62a19b",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CLV provides lasting benefits by restoring connectivity in critical neural circuits through temporally-precise neuromodulatory release that converts the synaptic eligibility trace to long-lasting plasticity in networks generating optimal motor control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C48, C56-C57 are supported by the persistence of behavioral improvements after stimulation cessation (Figures 1c, 2a, 4a) and the anatomical evidence of increased synaptic connectivity (Figures 2d, 4d). The mechanistic explanation invoking the synaptic eligibility trace is consistent with cited literature (He et al., 2015) and the timing requirements demonstrated experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "cac29b25-6fef-4d8c-a999-d9df2b3974a1",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CLV does not affect lesion size after either unilateral or bilateral SCI, indicating that neuroprotective effects cannot account for the observed functional improvements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34, C88-C89, C96-C97 are supported by histological analyses (Figure 2e, Figure 2\u2014figure supplement 2, Figure 4\u2014figure supplement 1) showing no differences in white or gray matter damage between CLV and control groups. This control is critical for establishing that recovery is due to plasticity rather than reduced injury severity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "e7bf19b8-ca5b-4f4d-9ece-967404373d08",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "CLV does not increase the total number of trials performed during rehabilitation, ruling out increased motivation or task-focused repetition as explanations for improved recovery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90, C98-C99 are supported by behavioral data (Figure 2\u2014figure supplement 3, Figure 4\u2014figure supplement 2) showing no increase (and even a trend toward decrease) in trial numbers with CLV. This control addresses a potential confound and strengthens the conclusion that CLV effects are due to neuromodulation rather than increased training intensity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "c3614c1f-5c01-480a-a493-69c61c10e728",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Unilateral SCI damages gray matter, rubrospinal, and propriospinal tracts while sparing the corticospinal tract; bilateral SCI virtually eliminates the CST bilaterally and causes more severe functional impairment with longer recovery times.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28, C37, C73, C104-C106 are supported by histological analyses (Figures 2b, 4b) and behavioral assessments (Figure 4\u2014figure supplement 6). The characterization of injury extent and differences between models is well-documented with appropriate anatomical and functional measures. Statistical comparisons show significant differences in recovery times (p<0.001).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "4e88cf79-ada8-4bf6-bc06-38262ae5b2ca",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CLV reorganizes motor cortex representations after unilateral SCI by expanding grasp representation while decreasing proximal limb representations, without changing total forelimb area or stimulation thresholds; no cortical reorganization occurs after bilateral SCI.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C94, C101-C103 are supported by detailed ICMS mapping data (Figure 2\u2014figure supplement 4, Figure 4\u2014figure supplement 4). The redistribution of movement representations after unilateral but not bilateral SCI is consistent with the differential sparing of corticospinal pathways. Statistical analyses appropriately support the conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "e5453d22-6845-4196-9be4-01ca848b8952",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study employed rigorous methodology including blinded experimenters, appropriate sample sizes (N=181 total, with 87 excluded for defined reasons), validated behavioral assays, standardized injury procedures, and controlled stimulation parameters with verification of VNS efficacy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C87 describe methodological details that are clearly documented and follow established protocols from previous studies. The use of blinding (C68, C80, C85), exclusion criteria (C65, C75), and standardized procedures enhances experimental rigor. The high exclusion rate (48%) is transparently reported with clear reasons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "4c411683-d820-4862-89d5-7ffd6cfea0cb",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study builds on established knowledge that previous plasticity-enhancing methods have failed clinically, VNS engages neuromodulatory networks and triggers pro-plasticity factors, and neuromodulation activates synaptic eligibility traces consistent with reward prediction error theory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C16, C49-C50, C52-C54 accurately represent prior work through appropriate citations. These background claims establish the scientific context and theoretical framework (synaptic eligibility trace, reward prediction error) that motivates and supports the experimental approach. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    },
+    {
+      "id": "d520523a-ff1a-4349-a139-2ae0e4702727",
+      "content_id": "85d29e02-9ea0-4fc7-b926-b3b42bc44a7b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "CLV is a minimally-invasive, safe strategy with clinical potential demonstrated in preliminary stroke and tinnitus studies, and could be extended to target multiple SCI-related dysfunctions and other neurological conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C36, C39, C55, C58-C61 make speculative statements about clinical applications and future directions. While C58-C59 cite preliminary clinical data, the broader claims about clinical utility (C39, C60-C61) and mechanisms (C55) are inferences that require validation in clinical populations. The safety profile is supported by the current study and citations, but clinical efficacy remains to be demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:44:22.443889Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5ab4c161-4120-40b6-8d14-10aae2677129",
+      "result_id": "018e23d4-36bd-4d63-94fc-711822b35bd7"
+    },
+    {
+      "claim_id": "6fa28997-34dc-4b73-97d4-ed0b2e302388",
+      "result_id": "018e23d4-36bd-4d63-94fc-711822b35bd7"
+    },
+    {
+      "claim_id": "7b56df3f-0718-4827-b6eb-125329f0ecf7",
+      "result_id": "018e23d4-36bd-4d63-94fc-711822b35bd7"
+    },
+    {
+      "claim_id": "a3c26ca5-7338-43b0-94f9-91c82ba3598b",
+      "result_id": "018e23d4-36bd-4d63-94fc-711822b35bd7"
+    },
+    {
+      "claim_id": "265ff86b-82e8-4091-a67a-3595685ce162",
+      "result_id": "018e23d4-36bd-4d63-94fc-711822b35bd7"
+    },
+    {
+      "claim_id": "2219cb2d-5b49-454a-9551-ce584448de48",
+      "result_id": "018e23d4-36bd-4d63-94fc-711822b35bd7"
+    },
+    {
+      "claim_id": "1c74a73a-b60b-41ba-bc58-888f317da7e5",
+      "result_id": "018e23d4-36bd-4d63-94fc-711822b35bd7"
+    },
+    {
+      "claim_id": "41afad5e-4299-460e-96e2-14a00a96c71f",
+      "result_id": "018e23d4-36bd-4d63-94fc-711822b35bd7"
+    },
+    {
+      "claim_id": "14af7a08-fe25-4291-985f-0d27471775fd",
+      "result_id": "018e23d4-36bd-4d63-94fc-711822b35bd7"
+    },
+    {
+      "claim_id": "87253c11-6fb2-46b0-b25b-8ce917a8f9a2",
+      "result_id": "018e23d4-36bd-4d63-94fc-711822b35bd7"
+    },
+    {
+      "claim_id": "1ce3560b-529d-41e9-aa2e-54fba8fc4c46",
+      "result_id": "018e23d4-36bd-4d63-94fc-711822b35bd7"
+    },
+    {
+      "claim_id": "5772f29a-bc9e-4979-a64a-1eeb53ca6eed",
+      "result_id": "5b193643-4f96-4172-a124-7ae2cd8260bd"
+    },
+    {
+      "claim_id": "39f437b7-f8e5-4be3-ba50-163f694e4a0a",
+      "result_id": "5b193643-4f96-4172-a124-7ae2cd8260bd"
+    },
+    {
+      "claim_id": "f2fae423-2e56-49a1-962e-2baaa6ca524c",
+      "result_id": "5b193643-4f96-4172-a124-7ae2cd8260bd"
+    },
+    {
+      "claim_id": "d6c4eb1d-4c22-4ca3-8ad7-03bae5f00686",
+      "result_id": "5b193643-4f96-4172-a124-7ae2cd8260bd"
+    },
+    {
+      "claim_id": "f619900f-e4c5-4b0a-94af-9ab74a05961a",
+      "result_id": "5b193643-4f96-4172-a124-7ae2cd8260bd"
+    },
+    {
+      "claim_id": "1cd4156f-846b-43ba-9e02-0ec3dff774d7",
+      "result_id": "5b193643-4f96-4172-a124-7ae2cd8260bd"
+    },
+    {
+      "claim_id": "52d932a6-e42b-4378-b73a-95e001b591ac",
+      "result_id": "5b193643-4f96-4172-a124-7ae2cd8260bd"
+    },
+    {
+      "claim_id": "6260d84f-3e75-4c0b-994d-942c96283704",
+      "result_id": "d011ce82-08ba-41f5-8dee-0bd843217afc"
+    },
+    {
+      "claim_id": "e2634095-9079-4d40-b4f0-009b6edb6690",
+      "result_id": "d011ce82-08ba-41f5-8dee-0bd843217afc"
+    },
+    {
+      "claim_id": "b7d549dc-dacd-4fac-9d4f-3a426ce91ddb",
+      "result_id": "d011ce82-08ba-41f5-8dee-0bd843217afc"
+    },
+    {
+      "claim_id": "01c4ce4a-e69a-49c4-a59e-e155af1e5c8c",
+      "result_id": "d011ce82-08ba-41f5-8dee-0bd843217afc"
+    },
+    {
+      "claim_id": "c6e79b9f-354c-4a3e-9e6a-d2dcb2be2de3",
+      "result_id": "d011ce82-08ba-41f5-8dee-0bd843217afc"
+    },
+    {
+      "claim_id": "6f2e9a06-bbec-4d65-af0e-15ad360392bc",
+      "result_id": "d011ce82-08ba-41f5-8dee-0bd843217afc"
+    },
+    {
+      "claim_id": "3c9bac43-be2e-4b7a-8163-c5a206c50643",
+      "result_id": "d011ce82-08ba-41f5-8dee-0bd843217afc"
+    },
+    {
+      "claim_id": "fd4e98fe-51fe-4b19-a408-5916adc63378",
+      "result_id": "d011ce82-08ba-41f5-8dee-0bd843217afc"
+    },
+    {
+      "claim_id": "dae7ec6f-66d9-4238-90b9-83e90bb3346f",
+      "result_id": "5dbfa216-3b13-43e2-b466-cea6323575fc"
+    },
+    {
+      "claim_id": "725eb149-8a15-4058-8d2f-bfba864ea468",
+      "result_id": "5dbfa216-3b13-43e2-b466-cea6323575fc"
+    },
+    {
+      "claim_id": "0bc78433-4d43-4520-b5d7-312d2248892a",
+      "result_id": "5dbfa216-3b13-43e2-b466-cea6323575fc"
+    },
+    {
+      "claim_id": "c58c0074-c235-4c47-910d-0385e429628e",
+      "result_id": "5dbfa216-3b13-43e2-b466-cea6323575fc"
+    },
+    {
+      "claim_id": "3e997134-d223-496a-8945-53c58aac2639",
+      "result_id": "f039fcf5-5a5c-42e7-8124-0ccaf1bb52e1"
+    },
+    {
+      "claim_id": "0720e72b-3c11-4faf-b1d1-3a8385d3b228",
+      "result_id": "f039fcf5-5a5c-42e7-8124-0ccaf1bb52e1"
+    },
+    {
+      "claim_id": "f7c05df7-20a4-4f26-9568-183ae39d2c38",
+      "result_id": "f039fcf5-5a5c-42e7-8124-0ccaf1bb52e1"
+    },
+    {
+      "claim_id": "d6810007-a002-4b4a-968a-d390d677c7c2",
+      "result_id": "b7534d77-1755-446e-b4a8-44d41f62a19b"
+    },
+    {
+      "claim_id": "bd39924f-9948-4e6f-9e73-a8ac74b69066",
+      "result_id": "b7534d77-1755-446e-b4a8-44d41f62a19b"
+    },
+    {
+      "claim_id": "c776c851-2eef-4ed8-906f-4b90a81c7033",
+      "result_id": "b7534d77-1755-446e-b4a8-44d41f62a19b"
+    },
+    {
+      "claim_id": "9fd7490e-abf8-4c46-a7ad-045facbc910b",
+      "result_id": "b7534d77-1755-446e-b4a8-44d41f62a19b"
+    },
+    {
+      "claim_id": "9ffc8999-425a-4c98-b6d3-1176dd0495f8",
+      "result_id": "cac29b25-6fef-4d8c-a999-d9df2b3974a1"
+    },
+    {
+      "claim_id": "0269cf80-22e5-40aa-993e-ed2781c6664f",
+      "result_id": "cac29b25-6fef-4d8c-a999-d9df2b3974a1"
+    },
+    {
+      "claim_id": "923030a3-99b2-44eb-8e38-538f8746475e",
+      "result_id": "cac29b25-6fef-4d8c-a999-d9df2b3974a1"
+    },
+    {
+      "claim_id": "1fe59f65-a889-4a62-9204-e6f5b168aa00",
+      "result_id": "cac29b25-6fef-4d8c-a999-d9df2b3974a1"
+    },
+    {
+      "claim_id": "9976c99d-1fcf-4576-bef0-ed837232d189",
+      "result_id": "cac29b25-6fef-4d8c-a999-d9df2b3974a1"
+    },
+    {
+      "claim_id": "9ccfb68a-22b9-4940-b664-756e2c32def3",
+      "result_id": "e7bf19b8-ca5b-4f4d-9ece-967404373d08"
+    },
+    {
+      "claim_id": "c969acbf-b2bf-483d-bc78-aca7e04f43a7",
+      "result_id": "e7bf19b8-ca5b-4f4d-9ece-967404373d08"
+    },
+    {
+      "claim_id": "2f785578-9d52-4669-aa84-4524bff6ae4f",
+      "result_id": "e7bf19b8-ca5b-4f4d-9ece-967404373d08"
+    },
+    {
+      "claim_id": "7a82bfa0-8c2d-4e4c-a206-d23b2021fcb5",
+      "result_id": "c3614c1f-5c01-480a-a493-69c61c10e728"
+    },
+    {
+      "claim_id": "44a76a65-b98c-4735-858e-94d6fe959687",
+      "result_id": "c3614c1f-5c01-480a-a493-69c61c10e728"
+    },
+    {
+      "claim_id": "3d4373e5-6cef-49a4-8828-595489889616",
+      "result_id": "c3614c1f-5c01-480a-a493-69c61c10e728"
+    },
+    {
+      "claim_id": "9a4c7aed-0efc-40f0-b348-95f06f2e913d",
+      "result_id": "c3614c1f-5c01-480a-a493-69c61c10e728"
+    },
+    {
+      "claim_id": "1cc81a95-5274-4228-b215-d99ee6be2889",
+      "result_id": "c3614c1f-5c01-480a-a493-69c61c10e728"
+    },
+    {
+      "claim_id": "bdd21dc5-fe70-4699-b4d0-08ed5188b18b",
+      "result_id": "c3614c1f-5c01-480a-a493-69c61c10e728"
+    },
+    {
+      "claim_id": "d29f5d81-4440-4135-abf8-fe1c73d62b00",
+      "result_id": "4e88cf79-ada8-4bf6-bc06-38262ae5b2ca"
+    },
+    {
+      "claim_id": "5a51d3bf-cb8e-4849-9463-353a5f3ee76a",
+      "result_id": "4e88cf79-ada8-4bf6-bc06-38262ae5b2ca"
+    },
+    {
+      "claim_id": "91c30d70-4d26-4f9c-8c21-fd9acdd029ff",
+      "result_id": "4e88cf79-ada8-4bf6-bc06-38262ae5b2ca"
+    },
+    {
+      "claim_id": "aa40c18e-4644-4a51-a1ff-cef5efd55274",
+      "result_id": "4e88cf79-ada8-4bf6-bc06-38262ae5b2ca"
+    },
+    {
+      "claim_id": "9f698a2f-20ad-4db7-a8dc-777716e8ee60",
+      "result_id": "4e88cf79-ada8-4bf6-bc06-38262ae5b2ca"
+    },
+    {
+      "claim_id": "a27585c4-3605-478e-af3a-e407adf8db31",
+      "result_id": "4e88cf79-ada8-4bf6-bc06-38262ae5b2ca"
+    },
+    {
+      "claim_id": "2c6caa1d-aded-41f6-b52b-253d9dc53583",
+      "result_id": "e5453d22-6845-4196-9be4-01ca848b8952"
+    },
+    {
+      "claim_id": "7b9e7936-6bd7-4c55-a89f-67fdb68f6594",
+      "result_id": "e5453d22-6845-4196-9be4-01ca848b8952"
+    },
+    {
+      "claim_id": "a609e172-a666-44ab-a638-f4cb1cab169f",
+      "result_id": "e5453d22-6845-4196-9be4-01ca848b8952"
+    },
+    {
+      "claim_id": "8488cedf-752f-4744-b70b-b460d6dd4285",
+      "result_id": "e5453d22-6845-4196-9be4-01ca848b8952"
+    },
+    {
+      "claim_id": "119f1f65-15e1-491a-b049-9d7eced888a1",
+      "result_id": "e5453d22-6845-4196-9be4-01ca848b8952"
+    },
+    {
+      "claim_id": "e0639808-916a-41ed-84ef-3181d68af401",
+      "result_id": "e5453d22-6845-4196-9be4-01ca848b8952"
+    },
+    {
+      "claim_id": "d280d57f-716c-4a16-bf2b-a7a8a840f020",
+      "result_id": "e5453d22-6845-4196-9be4-01ca848b8952"
+    },
+    {
+      "claim_id": "6efe7aec-de93-4311-938f-e6b2922bd1f3",
+      "result_id": "e5453d22-6845-4196-9be4-01ca848b8952"
+    },
+    {
+      "claim_id": "5403d6ec-b468-4dfe-8775-4553a0918f23",
+      "result_id": "e5453d22-6845-4196-9be4-01ca848b8952"
+    },
+    {
+      "claim_id": "684ff97f-d20f-432c-9ae4-87d8dcbf950d",
+      "result_id": "e5453d22-6845-4196-9be4-01ca848b8952"
+    },
+    {
+      "claim_id": "56b2eb4f-b73e-445b-9307-aafb0ee60d23",
+      "result_id": "e5453d22-6845-4196-9be4-01ca848b8952"
+    },
+    {
+      "claim_id": "ff4eba44-e2bb-49ca-80b8-2b329d12e010",
+      "result_id": "e5453d22-6845-4196-9be4-01ca848b8952"
+    },
+    {
+      "claim_id": "4b21a6e8-05b6-4b14-a15b-9d764e8b7c5d",
+      "result_id": "e5453d22-6845-4196-9be4-01ca848b8952"
+    },
+    {
+      "claim_id": "340fbeab-47b6-4336-976d-f5abee22310a",
+      "result_id": "e5453d22-6845-4196-9be4-01ca848b8952"
+    },
+    {
+      "claim_id": "63a3863e-89ea-4b32-a77e-3057c200c19e",
+      "result_id": "e5453d22-6845-4196-9be4-01ca848b8952"
+    },
+    {
+      "claim_id": "5abd02a6-72b5-40ad-854f-b520e0c6d29f",
+      "result_id": "e5453d22-6845-4196-9be4-01ca848b8952"
+    },
+    {
+      "claim_id": "0e23b0d0-35ad-4533-ba28-09fb553827b5",
+      "result_id": "e5453d22-6845-4196-9be4-01ca848b8952"
+    },
+    {
+      "claim_id": "9aa90661-11cc-477b-94c3-a1d3b5a98e55",
+      "result_id": "e5453d22-6845-4196-9be4-01ca848b8952"
+    },
+    {
+      "claim_id": "d2be91b4-e9b4-4d7b-832d-1f1e82bd15e6",
+      "result_id": "e5453d22-6845-4196-9be4-01ca848b8952"
+    },
+    {
+      "claim_id": "4c8c43d0-63a8-4911-86ba-1d660331e09e",
+      "result_id": "e5453d22-6845-4196-9be4-01ca848b8952"
+    },
+    {
+      "claim_id": "53c4e38d-bf60-4aa1-951a-41597ea527c1",
+      "result_id": "e5453d22-6845-4196-9be4-01ca848b8952"
+    },
+    {
+      "claim_id": "a5f825f3-b420-4f94-80fc-6ad2081724e3",
+      "result_id": "e5453d22-6845-4196-9be4-01ca848b8952"
+    },
+    {
+      "claim_id": "e161b9ab-c268-4e98-99bc-26506379cc7d",
+      "result_id": "e5453d22-6845-4196-9be4-01ca848b8952"
+    },
+    {
+      "claim_id": "26a26da9-d490-47f7-8b1e-33d2f7262686",
+      "result_id": "e5453d22-6845-4196-9be4-01ca848b8952"
+    },
+    {
+      "claim_id": "0928a0ee-813f-40bf-9227-33091a06b82c",
+      "result_id": "e5453d22-6845-4196-9be4-01ca848b8952"
+    },
+    {
+      "claim_id": "fa508542-2f6b-4640-9f91-8f98b727cbfb",
+      "result_id": "4c411683-d820-4862-89d5-7ffd6cfea0cb"
+    },
+    {
+      "claim_id": "270ccbd1-81a9-4d8a-8e14-86435073b933",
+      "result_id": "4c411683-d820-4862-89d5-7ffd6cfea0cb"
+    },
+    {
+      "claim_id": "ca736c37-543a-494b-99b8-9bfbea0678a6",
+      "result_id": "4c411683-d820-4862-89d5-7ffd6cfea0cb"
+    },
+    {
+      "claim_id": "5def8a1e-f8cf-4c33-9ed0-a31795f98fb5",
+      "result_id": "4c411683-d820-4862-89d5-7ffd6cfea0cb"
+    },
+    {
+      "claim_id": "1da8bc41-8945-435b-adac-415d59a83395",
+      "result_id": "4c411683-d820-4862-89d5-7ffd6cfea0cb"
+    },
+    {
+      "claim_id": "6a448664-d7ea-4733-8b71-5be20afc79e4",
+      "result_id": "4c411683-d820-4862-89d5-7ffd6cfea0cb"
+    },
+    {
+      "claim_id": "b57fbc5c-9ec8-4b30-bab2-da76aefde644",
+      "result_id": "4c411683-d820-4862-89d5-7ffd6cfea0cb"
+    },
+    {
+      "claim_id": "807bfc58-c492-479d-93ba-1b02b89eb7bc",
+      "result_id": "4c411683-d820-4862-89d5-7ffd6cfea0cb"
+    },
+    {
+      "claim_id": "3754ee76-0471-45a2-9d06-9c277aba243d",
+      "result_id": "4c411683-d820-4862-89d5-7ffd6cfea0cb"
+    },
+    {
+      "claim_id": "9e1e47e5-25a2-4e2d-86c3-67653fe6a8ed",
+      "result_id": "4c411683-d820-4862-89d5-7ffd6cfea0cb"
+    },
+    {
+      "claim_id": "3f3fca74-04d1-4d92-905a-c79e9eccd0ab",
+      "result_id": "4c411683-d820-4862-89d5-7ffd6cfea0cb"
+    },
+    {
+      "claim_id": "ba71de84-dd56-495b-be4e-b73f705b9ad7",
+      "result_id": "4c411683-d820-4862-89d5-7ffd6cfea0cb"
+    },
+    {
+      "claim_id": "1546362a-ec19-41cd-b450-084f6608128c",
+      "result_id": "4c411683-d820-4862-89d5-7ffd6cfea0cb"
+    },
+    {
+      "claim_id": "20b4d804-c790-43c2-ae2e-bed3d5aca27c",
+      "result_id": "4c411683-d820-4862-89d5-7ffd6cfea0cb"
+    },
+    {
+      "claim_id": "0fe5905a-8cfc-403c-b029-e4491b0133e6",
+      "result_id": "d520523a-ff1a-4349-a139-2ae0e4702727"
+    },
+    {
+      "claim_id": "31bb00f2-3e84-4f16-b6af-3ac4fbe7e5a2",
+      "result_id": "d520523a-ff1a-4349-a139-2ae0e4702727"
+    },
+    {
+      "claim_id": "a4eaa1c6-7740-486b-9168-58d49266ac84",
+      "result_id": "d520523a-ff1a-4349-a139-2ae0e4702727"
+    },
+    {
+      "claim_id": "520f542c-59f5-4a5e-9556-36eff3503ecf",
+      "result_id": "d520523a-ff1a-4349-a139-2ae0e4702727"
+    },
+    {
+      "claim_id": "b0be6061-9343-4c2c-bdb9-64a5e6050f56",
+      "result_id": "d520523a-ff1a-4349-a139-2ae0e4702727"
+    },
+    {
+      "claim_id": "7925ab16-c278-4a37-a5d3-8b6dcde7f062",
+      "result_id": "d520523a-ff1a-4349-a139-2ae0e4702727"
+    },
+    {
+      "claim_id": "58e616fe-c157-4622-9658-5fbfc942bbed",
+      "result_id": "d520523a-ff1a-4349-a139-2ae0e4702727"
+    }
+  ],
+  "comparisons": []
+}

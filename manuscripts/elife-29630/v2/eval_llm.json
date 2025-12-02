@@ -1,0 +1,572 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C119",
+      "C120"
+    ],
+    "result": "IRAK2 is an atypical kinase with amino acid substitutions in key catalytic residues (Asp->Asn333; Asp->His351), yet recombinant wild-type IRAK2 demonstrates kinase activity by autophosphorylating and phosphorylating MBP, while kinase-inactive mutants (KK235AA, H351A) show minimal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are directly supported by structural modeling (Figure 1A) and in vitro kinase assays (Figure 1B). The comparison to other atypical kinases (C119) provides appropriate context. The data clearly demonstrate that despite atypical residues, IRAK2 possesses measurable kinase activity that is abolished by mutations in the ATP-binding site and catalytic residues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C121"
+    ],
+    "result": "IRAK2 kinase activity is necessary for LPS-induced inflammatory cytokine and chemokine production, as demonstrated by rescue experiments in IRAK2-deficient macrophages and reduced cytokine production in IRAK2 kinase-inactive knockin mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 are well-supported by complementary approaches: reconstitution experiments in IRAK2-deficient cells (Figure 1C, E) and analysis of kinase-inactive knockin mice (Figure 1D, F). Both ELISA and Western blot data converge on the conclusion that kinase activity is essential for IRAK2 function in inflammatory responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C12",
+      "C13"
+    ],
+    "result": "IRAK2 undergoes ligand-dependent modification and nuclear translocation in response to LPS and other TLR ligands (ox-LDL, R848, CpGB), with only wild-type but not kinase-inactive IRAK2 showing this modification and nuclear localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C12-C13 are supported by Western blot analysis showing modified IRAK2 bands (Figure 1E, F) and nuclear fractionation demonstrating nuclear translocation (Figure 1F). The observation extends to multiple TLR ligands (Figure 1\u2014figure supplement 4). The requirement for kinase activity is demonstrated in both mutant reconstitution and knockin mice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "IRAK2 kinase activity is important for nuclear translocation, as kinase-inactive mutants (KK235AA, H351A, N333A) fail to translocate to the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 are supported by confocal imaging (Figure 1G) showing cytoplasmic retention of kinase-inactive mutants. This is consistent with the nuclear fractionation data from kinase-inactive knockin mice (Figure 1F). The inference that kinase activity is important for nuclear translocation is reasonable given the consistent phenotype across multiple mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "IRAK2 contains a putative NLS (Aa 357-366: HPDNKKTKYT) that is required for nuclear translocation and IRAK2-mediated inflammatory gene expression, with the NLS mutant failing to translocate, restore cytokine production, or undergo modification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 are supported by confocal imaging showing cytoplasmic retention of NLS mutant (Figure 1G), failure to restore cytokine production (Figure 1C), and lack of modification (Figure 1E). The identification of the NLS is based on sequence analysis, and the functional importance is demonstrated through mutagenesis. The link between nuclear translocation and modification (C19) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "IRAK2 interacts with importin-\u03b2 and RanBP2, with kinase-inactive mutants retaining importin-\u03b2 binding but losing RanBP2 interaction, while the NLS mutant fails to bind importin-\u03b2, indicating that kinase activity is not required for NLS-importin engagement but is required for RanBP2 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 are supported by mass spectrometry identification (Figure 2A, Figure 2\u2014figure supplement 1) and co-immunoprecipitation experiments (Figure 2A). The differential binding patterns of various mutants provide clear evidence for the distinct requirements for importin-\u03b2 versus RanBP2 interaction. The conclusion about kinase activity requirements (C24) is well-supported by the mutant analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "LPS-induced phosphorylation of IRAK2 at S136 and T140 is required for RanBP2 interaction and nuclear localization, with the S136A/T140A double mutant abolishing both while retaining importin-\u03b2 binding, suggesting IRAK2 auto-phosphorylation at these sites mediates RanBP2 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 are supported by prior literature (C26, cited from Weintz et al., 2010) and experimental data showing loss of RanBP2 binding and nuclear localization in the S136A/T140A mutant (Figure 2\u2014figure supplement 2) while importin-\u03b2 binding is retained. The inference about auto-phosphorylation (C30) is reasonable given the kinase activity of IRAK2 and the requirement for these sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "The modified, phosphorylated form of IRAK2 preferentially binds to RanBP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by co-immunoprecipitation showing preferential binding of modified IRAK2 to RanBP2 (Figure 2\u2014figure supplement 3) and phos-tag gel analysis confirming phosphorylated IRAK2 binds RanBP2 (Figure 2\u2014figure supplement 3). These complementary approaches provide strong evidence for the preferential interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "RanBP2 carries an active SUMO E3 ligase domain and IRAK2 has been characterized as a sumoylated protein in proteomics studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by citations to prior literature (Pichler et al., 2002 for C33; Lamoliatte et al., 2014 for C34). These establish the relevant background knowledge for the subsequent experiments on IRAK2 sumoylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "LPS stimulation induces IRAK2-RanBP2 interaction and IRAK2 sumoylation by SUMO1, both of which are abolished in IRAK2 kinase-inactive knockin mice, confirming that IRAK2 kinase activity is required for RanBP2 interaction and sumoylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are supported by co-immunoprecipitation experiments showing LPS-induced IRAK2-RanBP2 interaction (Figure 2B) and SUMO1 conjugation under denaturing conditions (Figure 2C), both abolished in kinase-inactive knockin mice. The use of denaturing conditions for sumoylation detection is appropriate to distinguish direct conjugation from complex formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "IRAK2 K123/182/592R triple mutant loses sumoylation and fails to translocate to the nucleus, indicating that IRAK2 sumoylation plays an essential role in nuclear translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by co-immunoprecipitation showing loss of sumoylation (Figure 2D) and confocal imaging showing cytoplasmic retention (Figure 2E, Figure 2\u2014figure supplement 4) of the K123/182/592R mutant. The inference that sumoylation is essential for nuclear translocation (C42) is well-supported by the consistent phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Wild-type IRAK2 is sumoylated in vitro by RanBP2 while the K123/182/592R mutant is not, and the modified form of IRAK2 is sensitive to SUMO-specific isopeptidase Ulp1, confirming the modification is sumoylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by in vitro sumoylation assays (Figure 2F, Figure 2\u2014figure supplement 5) and Ulp1 treatment experiments (Figure 2G). The use of purified recombinant proteins and SUMO-specific protease provides strong biochemical evidence that the modification is indeed sumoylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "RanBP2 is the E3 ligase for IRAK2 sumoylation, as demonstrated by loss of LPS-induced IRAK2 sumoylation and nuclear translocation in RanBP2 knockdown cells, with sumoylated IRAK2 preferentially binding RanBP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 are supported by RanBP2 knockdown experiments showing loss of IRAK2 sumoylation (Figure 2H) and nuclear translocation (Figure 2I, Figure 2\u2014figure supplement 3), along with co-immunoprecipitation showing preferential binding of sumoylated IRAK2 to RanBP2 (Figure 2\u2014figure supplement 3). The conclusion that RanBP2 is the E3 ligase (C48) is well-supported by the knockdown data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "A group of mRNAs (Cxcl1, Tnf, Cxcl2) accumulate in the nucleus in the absence of IRAK2 or in IRAK2 kinase-inactive macrophages, indicating that IRAK2 kinase activity is required for exportation of these mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by microarray analysis (Figure 3A, Figure 3\u2014figure supplement 2) and RT-PCR (Figure 3B) showing nuclear accumulation of specific mRNAs in IRAK2 KO and kinase-inactive cells. The inference that IRAK2 is required for export (C54, C56) is reasonable given the nuclear accumulation phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "SRSF1 binding sites are significantly enriched in the 3'UTRs of LPS-induced mRNAs that accumulate in the nucleus of IRAK2-deficient macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is supported by RNA-READ motif scanner analysis (Figure 3C) showing significant enrichment (p<0.0004) of SRSF1 binding motifs in the positive set versus negative set. The statistical analysis appears appropriate for identifying enriched motifs, though the manuscript could benefit from more details on the background model and multiple testing correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "SRSF1 interacts with IRAK2 in the nucleus (abolished in kinase-inactive and sumoylation mutants), IRAK2 phosphorylates SRSF1 in vitro, and LPS induces SRSF1 phosphorylation that is diminished in IRAK2 kinase-inactive cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are supported by proximity ligation assay (Figure 3D, Figure 3\u2014figure supplement 3), in vitro kinase assay (Figure 3E), and co-immunoprecipitation showing SRSF1 phosphorylation (Figure 3F). The convergence of multiple approaches provides strong evidence for IRAK2-SRSF1 interaction and IRAK2-mediated SRSF1 phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "SRSF1 binds RNA in its hypo-phosphorylated form, suggesting IRAK2-mediated SRSF1 phosphorylation drives dissociation from mRNA targets and promotes nuclear export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is supported by prior literature (Sanford et al., 2005; Xiao and Manley, 1997). Claim C64 is a reasonable mechanistic inference based on established SRSF1 biology and the observed IRAK2-mediated phosphorylation, though direct evidence for dissociation would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "SRSF1-bound Cxcl1 and Tnf transcripts are increased in IRAK2-deficient and kinase-inactive macrophages, suggesting IRAK2 directly phosphorylates SRSF1 in the nucleus to facilitate dissociation from LPS-induced transcripts and their nuclear export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by RNA immunoprecipitation (Figure 3G, Figure 3\u2014figure supplement 4). Claim C66 is a reasonable synthesis of multiple observations (IRAK2-SRSF1 interaction, phosphorylation, increased SRSF1 binding in IRAK2-deficient cells, and nuclear accumulation of mRNAs), though the mechanism remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "SRSF1-bound Ctnnb1 transcript is not affected by LPS stimulation or IRAK2 deficiency, indicating IRAK2 may only regulate a specific subset of SRSF1-targeted mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by RNA immunoprecipitation showing no change in SRSF1 binding to Ctnnb1 (Figure 3G). This negative control is important for demonstrating specificity of the IRAK2-SRSF1 pathway and strengthens the overall conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "ALYREF was identified as an IRAK2-interacting protein, with LPS inducing nuclear IRAK2-ALYREF interaction that requires IRAK2 kinase activity and sumoylation (likely due to nuclear translocation requirements).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are supported by mass spectrometry identification (Figure 2\u2014figure supplement 1), co-immunoprecipitation (Figure 4A), and proximity ligation assay (Figure 4B, Figure 4\u2014figure supplement 1). The inference that kinase activity and sumoylation requirements reflect nuclear translocation requirements (C72) is reasonable given prior data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "ALYREF and SRSF1 do not co-immunoprecipitate with each other, but both interact with IRAK2 in response to LPS, suggesting LPS-induced IRAK2 interactions with SRSF1 and ALYREF are mutually exclusive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by co-immunoprecipitation experiments (Figure 4A) showing absence of ALYREF in SRSF1 IPs and vice versa, while IRAK2 is present in both. The inference of mutual exclusivity (C76) is reasonable given the data, though temporal dynamics or sequential binding cannot be ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "LPS stimulation induces binding of IRAK2 and ALYREF to Cxcl1, Cxcl2, and Tnf mRNAs, with ALYREF binding substantially reduced in IRAK2-deficient and kinase-inactive macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are supported by RNA immunoprecipitation experiments (Figure 4C-D) showing LPS-induced binding and IRAK2-dependence. The data clearly demonstrate that ALYREF recruitment to target mRNAs requires IRAK2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C82"
+    ],
+    "result": "ALYREF-bound Cxcl1 and Tnf transcripts are increased in SRSF1 knockdown cells even in IRAK2 KO macrophages, indicating ALYREF binding is no longer IRAK2-dependent without SRSF1, suggesting IRAK2's role is to remove SRSF1 from target mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80, C82 are supported by RNA immunoprecipitation in SRSF1 knockdown cells (Figure 4E, G, Figure 4\u2014figure supplement 2). This is a key experiment demonstrating that SRSF1 removal is the critical IRAK2-dependent step for ALYREF binding. The inference about IRAK2's role (C82) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "ALYREF-bound Ctnnb1 mRNA is not affected by LPS stimulation, IRAK2 deficiency, or SRSF1 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is supported by RNA immunoprecipitation (Figure 4E) showing no change in ALYREF binding to Ctnnb1 under various conditions. This negative control demonstrates specificity of the IRAK2-SRSF1-ALYREF pathway for specific mRNA targets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "Cxcl1 and Tnf mRNAs are efficiently exported to the cytosol in SRSF1 knockdown cells even in the absence of IRAK2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is supported by RT-PCR analysis of nuclear and cytoplasmic fractions (Figure 4F-G) showing cytosolic localization of target mRNAs in SRSF1 knockdown cells without IRAK2. This provides functional evidence that SRSF1 removal is sufficient for export, consistent with the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "LPS induces IRAK2-Nxf1 interaction that requires ALYREF, suggesting IRAK2-ALYREF interaction is required for assembly of nuclear export complex including Nxf1 recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by co-immunoprecipitation showing LPS-induced IRAK2-Nxf1 interaction that is lost in ALYREF knockdown cells (Figure 5A). The inference about ALYREF's role in export complex assembly (C86) is reasonable given the known function of ALYREF as a bridge to Nxf1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "LPS stimulation induces Nxf1 binding to Cxcl1 and Tnf mRNAs in an ALYREF- and IRAK2-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is supported by RNA immunoprecipitation experiments (Figure 5B-D) showing LPS-induced Nxf1 binding that is reduced in ALYREF knockdown and IRAK2 KO cells. This demonstrates the functional consequence of IRAK2-ALYREF interaction for export receptor recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "LPS-induced Cxcl1, Cxcl2, and Tnf mRNAs accumulate in the nucleus in ALYREF knockdown cells, with dramatically reduced cytokine secretion, indicating ALYREF is important for IRAK2-mediated nuclear export of inflammatory mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are supported by RT-PCR showing nuclear accumulation (Figure 5E) and ELISA showing reduced cytokine secretion (Figure 5F) in ALYREF knockdown cells. These data provide strong functional evidence for ALYREF's essential role in the export pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "SRSF1 binds to Cxcl1 3'UTR (nt 781-901), with nucleotides 800-855 being important for SRSF1 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 are supported by REMSA experiments (Figure 6A) showing SRSF1 binding to Cxcl1 3'UTR and deletion analysis identifying the critical region. This provides direct biochemical evidence for SRSF1-mRNA interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "SRSF1 binds to luciferase reporter mRNA containing Cxcl1 3'UTR (nt 721-940), IRAK2 expression reduces this binding, and SRSF1 fails to bind mutated constructs lacking the SRSF1-binding region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 are supported by RNA immunoprecipitation experiments (Figure 6B) showing SRSF1 binding to wild-type but not mutant constructs, and reduced binding with IRAK2 expression. This provides functional validation of the SRSF1-binding site and IRAK2's effect on SRSF1-mRNA interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "IRAK2 strongly promotes luciferase activity and cytosolic localization of reporter mRNAs with wild-type Cxcl1 3'UTR but has reduced ability with mutant constructs lacking SRSF1-binding sites, which are trapped in the nucleus, indicating SRSF1-binding sequence is required for IRAK2-promoted nuclear export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 are supported by luciferase assays (Figure 6C) and RT-PCR of nuclear/cytoplasmic fractions (Figure 6D) showing IRAK2-dependent effects on wild-type but not mutant constructs. This is a critical experiment demonstrating that SRSF1-binding sites are necessary for IRAK2-mediated export, supporting the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "LPS stimulation induces luciferase activity from constructs with wild-type Cxcl1 3'UTR (abolished in IRAK2-deficient cells), but activity is substantially reduced with mutant constructs in all cell types, confirming IRAK2-mediated nuclear export depends on SRSF1-binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 are supported by luciferase assays in macrophages (Figure 6E) showing LPS-induced, IRAK2-dependent activity with wild-type but not mutant constructs. This validates the findings in a more physiological context and confirms the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "IRAK2 promotes ALYREF binding to wild-type luciferase reporter mRNAs containing Cxcl1 3'UTR, but ALYREF shows reduced binding to mutant constructs even with IRAK2, suggesting SRSF1-binding site is required for ALYREF binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 are supported by RNA immunoprecipitation (Figure 6F) showing IRAK2-dependent ALYREF binding to wild-type but reduced binding to mutant constructs. The inference that SRSF1-binding sites are required for ALYREF binding (C108) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "ALYREF can directly bind to the probe containing the SRSF1-binding site (Cxcl1 nt 800-855) in vitro, indicating the SRSF1-binding site renders LPS-IRAK2 sensitivity for nuclear export via IRAK2-mediated SRSF1 removal and ALYREF recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 is supported by REMSA (Figure 6G, Figure 6\u2014figure supplement 1) showing direct ALYREF binding to the SRSF1-binding site. Claim C110 is a reasonable synthesis of all the luciferase and binding data, though the mechanism remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "IRAK2 kinase-inactive knockin mice show substantially increased survival after LPS-induced septic shock and much reduced serum CXCL1 and TNF levels compared to wild-type mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 are supported by survival curves (Figure 7A) and ELISA of serum cytokines (Figure 7B). These in vivo data provide important validation that the IRAK2 kinase activity requirement observed in vitro has physiological relevance for inflammatory responses and disease outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "LPS/TLR4 engagement activates a nuclear function of IRAK2 where kinase activity enables RanBP2-mediated sumoylation and nuclear translocation, nuclear IRAK2 phosphorylates SRSF1 to reduce its binding to target mRNAs, LPS induces IRAK2-ALYREF interaction to replace SRSF1, and recruited ALYREF bridges mRNA-Nxf1 interaction for export, providing a critical checkpoint for inflammatory cytokine production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 represent the main conclusions synthesizing all experimental findings. These are well-supported by the convergence of multiple lines of evidence including biochemical interactions, functional assays, mutant analysis, and in vivo validation. The proposed mechanism is internally consistent and supported by the data, though some steps remain somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "RanBP2 is a major nucleoporin with phenylalanine-glycine repeats that bind importin beta family receptors, and phosphorylation of IRAK2 at S136/T140 affects its interaction with RanBP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C122 is supported by prior literature (Wu et al., 1995; Yokoyama et al., 1995). Claim C123 is supported by co-immunoprecipitation experiments with phosphorylation site mutants. These provide important mechanistic details about the IRAK2-RanBP2 interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "ALYREF and SRSF1 belong to the same family of shuttling SR proteins sharing similar RNA-binding domains, both can bind the same SRSF1-binding motif, and SRSF1 removal allows ALYREF binding, suggesting SRSF1-mediated nuclear sequestration is achieved by blocking ALYREF binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 is established knowledge. Claims C125-C127 are supported by REMSA showing both proteins bind the same motif and RNA immunoprecipitation in SRSF1 knockdown cells. The inference about the mechanism of SRSF1-mediated sequestration (C127) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "ALYREF (TREX complex subunit) makes contact with nuclear export receptor Nxf1 serving as a bridge between mRNA and Nxf1, and nuclear IRAK2 mediates SRSF1 removal and facilitates assembly of nuclear export machinery for inflammatory mRNA export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C128 is supported by prior literature on ALYREF function. Claim C129 is a summary conclusion well-supported by the experimental data. These provide important context and synthesis of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C130",
+      "C131"
+    ],
+    "result": "About 10-30% of LPS-induced inflammatory transcripts are exported in the absence of IRAK2, suggesting there might be another mechanism besides IRAK2 that allows ALYREF binding to target mRNAs for nuclear export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C130 is supported by RT-PCR data (Figure 3B) showing partial export without IRAK2. Claim C131 is speculative, acknowledging incomplete understanding of the export mechanisms. While the observation is valid, the alternative mechanism is not characterized, making this an area for future investigation rather than a supported conclusion.",
+    "result_type": "MINOR"
+  }
+]

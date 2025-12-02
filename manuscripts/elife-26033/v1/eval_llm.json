@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Genetic mapping identified a ~30 kb region on chromosome 3 containing Sk wtf4 as a meiotic drive locus. Deletion of Sk wtf4 significantly reduced spore death (from 81% to 96% PI-excluding spores) and reduced transmission bias (from 87% to 66%), implicating Sk wtf4 in gamete-killing meiotic drive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 establish the genetic mapping to a ~30 kb region containing wtf4, while C15-C18 provide experimental validation through deletion analysis showing both reduced spore death and reduced transmission bias. The convergence of mapping and functional data strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Sk wtf4 acts as a poison-antidote system rather than targeting a specific Sp sequence. Sk wtf4\u0394/Sk wtf4+ heterozygotes in pure Sk background show strong drive (93% transmission), while Sk wtf4\u0394 homozygotes are healthy with normal fertility, ruling out an essential meiotic function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 demonstrate drive occurs in pure Sk background without Sp target sequences, and C21-C22 show wtf4\u0394 homozygotes are viable, ruling out essential function. C23 appropriately compares to known Spok systems. The logic is sound and data support the poison-antidote model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Sk wtf4 acts as an autonomous one-gene poison-antidote drive system when introduced into naive Sp genome. Hemizygous Sp diploids show reduced viability (54% vs 96% PI-excluding spores) and strong transmission bias (96%), while homozygotes show normal viability and unbiased transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 provide clear experimental evidence from heterologous expression in Sp showing both reduced viability and transmission bias in hemizygotes but normal phenotypes in homozygotes. C27 appropriately synthesizes these findings into the poison-antidote model. The data strongly support autonomous drive function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Sk wtf4 generates two overlapping transcripts from alternative start sites, with Wtf4-GFP showing diffuse cytoplasmic localization (putative poison) and enrichment in only two of four mature spores (putative antidote). The surviving PI-negative spores (95% inherit wtf4) are those with strong Wtf4-GFP signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 establish the transcript structure from RNA-seq data, while C30-C32 provide microscopy evidence for differential protein localization. The correlation between GFP enrichment and spore survival (C32, 95%) strongly supports the model. The convergence of molecular and cytological data is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The long wtf4 transcript encodes the antidote function. The wtf4antidote allele (mutated short transcript start codon) does not cause drive or spore death in hemizygotes but protects against wild-type wtf4 in heterozygotes, showing unbiased transmission and normal viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 provide clear separation-of-function data showing the long transcript retains protective function but loses killing ability. C35 appropriately assigns antidote function. The experimental design is sound and results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The short wtf4 transcript encodes a trans-acting poison. The wtf4poison allele (mutated long transcript start codons) causes massive spore death (14% PI-excluding) in hemizygotes, with the poison allele itself underrepresented (38% transmission). In wtf4poison/wtf4+ heterozygotes, spores inheriting wtf4+ are protected while those inheriting wtf4poison die.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 provide clear separation-of-function data showing the short transcript causes toxicity. The self-toxicity (C37) and rescue by wild-type (C38) are consistent with a poison function. C39 appropriately assigns poison function to the short transcript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "Reconstitution of separated poison and antidote alleles on opposite haplotypes recapitulates drive. In wtf4antidote/wtf4poison heterozygotes, only 45% of spores exclude PI and 88% of survivors inherit the antidote allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 provides the critical reconstitution experiment showing that separated functions can be brought back together to recreate drive. The reduced viability and strong transmission bias are consistent with the poison-antidote model. This is a key validation experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Separately tagged poison and antidote proteins show distinct localization patterns. The mCherryantidote-Wtf4 acts like wild-type and is enriched in only two of four mature spores, while Wtf4poison-GFP is expressed before meiotic divisions and fills mature asci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 provide direct visualization of the poison and antidote proteins showing the expected differential localization. The functional validation (C41) confirms tags don't disrupt function. The microscopy data directly support the poison-antidote localization model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Among six tested Sk wtf genes, only wtf28 shows drive (90% transmission, 57% PI-excluding spores) similar to wtf4. Other tested genes (wtf2, wtf5, wtf6, wtf21+wtf26) show approximately Mendelian transmission (44-51%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 provide systematic testing of multiple wtf genes with clear quantitative data. Sample sizes are adequate (n=111-471). The identification of wtf28 as a second driver while others show Mendelian inheritance supports the specificity of the drive mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "wtf loci show much greater sequence divergence than the 99.5% genome-wide average between Sp and Sk, with individual loci showing 74-99% identity. This rapid evolution is consistent with involvement in genetic conflicts such as meiotic drive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 provide detailed sequence comparisons showing elevated divergence at wtf loci. C56 appropriately contextualizes this with citations to established principles of genetic conflict. The comparative genomic data support rapid evolution, though the causal link to drive is correlative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The presence of an alternate start codon in exon 2 correlates with drive function. Sk wtf28 and drivers identified by Hu et al. (2017) have this feature, while non-driving genes lack it. Four Sp wtf genes (wtf4, wtf13, wtf19, wtf23) are predicted to be active drivers based on this structural feature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 establish a structural correlation between alternate start codons and drive function across multiple genes. C58 provides independent validation from another study. C61 synthesizes these findings into an evolutionary hypothesis. The correlation is strong, though the predictions (C59) remain untested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Sk wtf4 is a novel gamete-killing meiotic drive locus that uses a previously undescribed mechanism: encoding both poison and antidote from alternative transcriptional start sites. The poison is trans-acting and destroys all gametes, while the antidote remains in gametes inheriting wtf4 and rescues them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 synthesize the major findings into a coherent mechanistic model. The novelty claim (C64) is supported by the unique dual-transcript mechanism. All experimental data from previous results converge to support this summary. This is the central conclusion of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The poison-antidote mechanism of Sk wtf4 is comparable to bacterial toxin-antitoxin (TA) systems found in most prokaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 draw an appropriate analogy to well-established bacterial systems. While the comparison is conceptual rather than mechanistic, it provides useful context. The analogy is reasonable given the poison-antidote architecture, though the molecular mechanisms may differ.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "wtf4 has no apparent role in fertility outside of drive and causes infertility to promote its own fitness, creating genetic conflict. The wtf4 locus shows >20-fold higher divergence than the genome-wide average, consistent with an evolutionary arms race.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 appropriately characterize wtf4 as a selfish genetic element based on experimental data. C71 provides sequence divergence data supporting arms race dynamics. The evolutionary interpretation is well-supported by both functional and comparative data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The coding sequence overlap between poison and antidote could promote specificity between components, potentially allowing the poison to diverge without losing self-protection. This may be a recurring theme among gamete-killers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C73 are explicitly speculative proposals about mechanism and evolutionary patterns. While the hypothesis is reasonable and supported by the structural data, no direct experimental evidence is provided for the specificity mechanism or its generality. These are testable hypotheses for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The wtf gene family (25 loci in Sp) represents distinct evolutionary stages: ancestral drivers (wtf4, wtf28) encoding both poison and antidote, domesticated genes retaining only antidote function, and pseudogenes. Meiotic drive has played a significant role in fission yeast evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 provide genomic context and C75-C76 propose an evolutionary model supported by functional and sequence data. C78 appropriately synthesizes the broader evolutionary significance. The model is well-supported by the data, though some aspects (evolutionary stages) are inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C79",
+      "C80",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Sp and Sk are 99.5% identical but nearly sterile in hybrids due to chromosomal rearrangements and multiple meiotic drivers. The wtf4 locus shows 89% DNA identity (82% amino acid identity), much higher divergence than genome average. This reproductive barrier arose very recently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C79-C80 establish the genomic context with appropriate citations. C85-C87 characterize the hybrid sterility and its causes. The data are well-supported by prior work and provide essential context for the study. The inference of recent divergence (C87) is reasonable given the high genome-wide identity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "Genes on each of the three Sk chromosomes can enact gamete-killing meiotic drive against Sp homologs, with >80% of viable gametes from Sk/Sp hybrids inheriting Sk chromosome 3 markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 cite prior work (Zanders et al., 2014) establishing the multi-chromosome drive landscape. These provide essential background for focusing on chromosome 3. The claims are well-supported by the cited work and establish the rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C12",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Sk wtf4 is a 1427 bp gene with six exons encoding a protein with six predicted transmembrane domains. It is a member of the wtf gene family (25 members in Sp) that are rapidly evolving and transcribed during meiosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 provide structural characterization from sequence analysis. C12 establishes gene family context. C83-C84 cite prior work on expression and evolution. These descriptive claims are well-supported and provide important molecular context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Gamete-killing meiotic drive is widespread across eukaryotes and can increase transmission to 100% of progeny, but only a handful of genes have been identified. Human infertility affects >1 in 7 couples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide background context with appropriate citations. These establish the broader significance of meiotic drive and the gap in knowledge that motivates the study. The claims are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,166 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C26",
+      "C27",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors demonstrate through stochastic modeling that CRISPR-based gene drives are highly invasive in wild populations despite resistance. Even drives with low homing efficiency (P=0.15-0.9) can irreversibly alter a majority of the population following small releases, with peak drive distributions showing bimodal behavior indicating either rapid extinction or substantial invasion. This invasiveness is robust across various parameter regimes and mitigating factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C26, C27, C39, C40, C41, and C42 are well-supported by extensive stochastic simulations across multiple parameter regimes (Figures 1D-F, 7, 8). The bimodal peak drive distributions (C27) and robustness to mitigating factors (C39) are demonstrated through systematic parameter exploration. The modeling approach appropriately uses empirical homing efficiency data (C17) and conservative assumptions (C25), providing strong evidence for high invasiveness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C47",
+      "C50",
+      "C58"
+    ],
+    "result": "The structured population model demonstrates that gene drives can escape from isolated subpopulations and invade connected populations even with very low migration rates. The primary determinant of spread between populations is the average number of migrants per generation, with migration rates on the order of 10^-3 (one migrant every 2 generations) virtually guaranteeing escape for moderate drive efficiencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C30, C47, C50, and C58 are supported by structured population simulations (Figure 2) and analytical formulas. The escape probability analysis across migration rates (Figure 2D-E) provides quantitative evidence. The analytical relationship between migration rate and invasion probability (C58) is mathematically derived. However, the model assumes simplified population structure (5 equally connected subpopulations), which may not capture real-world complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C48",
+      "C49"
+    ],
+    "result": "The authors conclude that contained field trials could result in unintended spread and recommend that self-propagating gene drives are best suited for applications intended to affect entire species. They suggest laboratories use molecular confinement mechanisms to prevent accidental invasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C48, and C49 are logical inferences from the modeling results showing high invasiveness (C1, C40). The recommendations are appropriately cautious given the demonstrated difficulty of containment. However, C4 and C50 involve speculation about field trial outcomes that extend beyond what the models directly demonstrate, as real field conditions may differ from model assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "Empirical homing efficiencies from reported drive systems range from 0.37 to 0.99, and current drive systems can invade in deterministic models based on the criterion f(1+P)>1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 is supported by empirical data compiled in Appendix 1\u2014table 1, and C18 follows logically from applying the deterministic invasion criterion to these empirical values. The range of efficiencies is well-documented from published experimental studies. Figure 1B illustrates this relationship clearly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Stochastic models are necessary to predict drive invasion probability for small releases because finite populations experience both selection and stochastic fluctuations. Previous stochastic modeling found homing-based drives were among the most likely to invade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20 and C21 are well-established population genetics principles supported by classic citations (Wright, Fisher, Haldane). C22 appropriately cites previous work (Marshall, 2009). This provides the theoretical justification for the stochastic modeling approach used in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Peak drive can be substantially increased by associating fitness costs with resistance, while high selfing probabilities are required to reduce peak drive for moderate drive costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by simulations in Figure 8 showing increased peak drive with costly resistance, consistent with cited deterministic results. C38 is demonstrated in Figure 9 showing that selfing rates >0.6-0.75 are needed for meaningful containment. Both results are from systematic parameter exploration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C59",
+      "C61"
+    ],
+    "result": "The model structure assumes three allelic classes (wild-type, drive, resistant), neutral resistance, and dominant drive fitness costs, representing a conservative worst-case scenario for drive spread. The structured model uses 5 equally connected subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C59, and C61 accurately describe the model structure and assumptions. The choice of neutral resistance (C25) is appropriately conservative for assessing invasiveness. The model structure is clearly described in Materials and Methods and illustrated in Figures 1C and 2A.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The manuscript describes the established mechanism of CRISPR gene drives: cutting wild-type alleles, repair via homology-directed repair or NHEJ/MMEJ, with the latter producing resistant alleles. Resistance is predicted to prevent fixation but alleles can spread to significant frequency without fixing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C15 describe well-established CRISPR gene drive mechanisms supported by appropriate citations to foundational work (Esvelt et al., Jinek et al., Mali et al., Cong et al.). C10 is a key insight distinguishing spread from fixation. These claims provide necessary background and are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors assess that most laboratory gene drive systems are unlikely to cause ecological changes but that unauthorized spread could trigger substantial social backlash and reduce public support for disease interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C43 is a reasonable assessment based on the transient nature of laboratory drives, but lacks empirical support. C44 is supported by citations to public perception studies. C45 is speculative (marked as SPECULATION in evidence_type) about potential social consequences. These claims involve social and political predictions beyond the scope of the mathematical modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "The findings are specific to population alteration drives and cannot be directly generalized to suppression drives, which may self-extinguish before invading other populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 appropriately identifies a limitation of the study. The distinction between alteration and suppression drives is important, as suppression drives have fundamentally different dynamics. This is a valid caveat that prevents overgeneralization of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "Female Anopheles gambiae mosquitoes can lay hundreds of eggs per lifetime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is directly cited from an experimental study (Hammond et al., 2016) and is used to contextualize the offspring number distribution analysis. This is a straightforward empirical fact appropriately cited.",
+    "result_type": "MINOR"
+  }
+]

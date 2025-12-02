@@ -1,0 +1,1807 @@
+{
+  "submission": {
+    "id": "8672693b-311b-41f6-b9fc-30f62926b213",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:43:32.000751Z",
+    "updated_at": "2025-12-01T19:43:32.000751Z"
+  },
+  "content": [
+    {
+      "id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "submission_id": "8672693b-311b-41f6-b9fc-30f62926b213",
+      "content_type": "manuscript",
+      "content_text": "# Serine ADP-ribosylation reversal by the hydrolase ARH3\n\n## Authors\n\n- Pietro Fontana<sup>1</sup>\n- Juan Jos\u00e9 Bonfiglio<sup>2</sup> ([ORCID: 0000-0001-7767-0799](https://orcid.org/0000-0001-7767-0799))\n- Luca Palazzo<sup>1</sup> ([ORCID: 0000-0002-5556-5549](https://orcid.org/0000-0002-5556-5549))\n- Edward Bartlett<sup>1</sup>\n- Ivan Matic<sup>2</sup> ([ORCID: 0000-0003-0170-7991](https://orcid.org/0000-0003-0170-7991)) \u2020\n- Ivan Ahel<sup>1</sup> ([ORCID: 0000-0002-9446-3756](https://orcid.org/0000-0002-9446-3756)) \u2020\n\n### Affiliations\n\n1. Sir William Dunn School of Pathology University of Oxford Oxford United Kingdom\n2. Max Planck Institute for Biology of Ageing Cologne Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nADP-ribosylation (ADPr) is a posttranslational modification (PTM) of proteins that controls many cellular processes, including DNA repair, transcription, chromatin regulation and mitosis. A number of proteins catalyse the transfer and hydrolysis of ADPr, and also specify how and when the modification is conjugated to the targets. We recently discovered a new form of ADPr that is attached to serine residues in target proteins (Ser-ADPr) and showed that this PTM is specifically made by PARP1/HPF1 and PARP2/HPF1 complexes. In this work, we found by quantitative proteomics that histone Ser-ADPr is reversible in cells during response to DNA damage. By screening for the hydrolase that is responsible for the reversal of Ser-ADPr, we identified ARH3/ADPRHL2 as capable of efficiently and specifically removing Ser-ADPr of histones and other proteins. We further showed that Ser-ADPr is a major PTM in cells after DNA damage and that this signalling is dependent on ARH3.\n\n## Introduction\n\nADP-ribosylation (ADPr) is a chemical modification of macromolecules that regulates a wide variety of cellular processes, such as DNA damage repair, transcription, translation, aging, stress responses, microbial pathogenicity and many others (Gupte et al., 2017; Hottiger, 2015; Jankevicius et al., 2016; Palazzo et al., 2017). The modification reaction involves the transfer of the ADP-ribose moiety from NAD+ onto the target molecule and the release of nicotinamide (Gupte et al., 2017; Langelier et al., 2012; Schreiber et al., 2006). There are several ADP-ribosyl transferase (ART) enzyme families that can specifically modify proteins (B\u00fctepage et al., 2015; Hassa et al., 2006; Rack et al., 2015). The most thoroughly characterised class of ARTs is the poly(ADP-ribose) polymerase (PARP) family. PARPs are widespread throughout Eukarya and are also found sporadically in bacteria (Perina et al., 2014). The human genome encodes 17 members of the PARP family, which are grouped into five distinct classes according to protein domain architecture and involvement in different cellular processes (Perina et al., 2014). The majority of these PARPs can catalyse the addition of only one unit of ADP-ribose (mono-ADPr; MAR; MARylation) onto target proteins (B\u00fctepage et al., 2015; Kleine et al., 2008; Vyas et al., 2014). However, several PARP family members such as PARP1, PARP2, and Tankyrases can generate long chains of the repeating ADP-ribose units on their protein targets (poly-ADPr; PAR; PARylation) (D'Amours et al., 1999; Gibson and Kraus, 2012). Furthermore, PARP family members have displayed differential activities with respect to the preferred amino acid for ADP-ribose attachment. Several amino acids have been reported as acceptors of PARP-mediated modification; most commonly glutamate, but also aspartate, lysine, arginine and cysteine (Daniels et al., 2015; Gagn\u00e9 et al., 2015; Martello et al., 2016; Vyas et al., 2014). Most recently, we identified serine as an acceptor of ADPr modification by PARP1 and PARP2 (Bonfiglio et al., 2017a; Leidecker et al., 2016). We also discovered that the PARP1/2 interacting protein HPF1 (Histone PARylation Factor 1) is responsible for introducing this shift in amino acid specificity (Bonfiglio et al., 2017a; Gibbs-Seymour et al., 2016). Further analyses, by utilising mass spectrometry of human cells treated with DNA damaging agents, revealed large numbers of serine ADP-ribosylation (Ser-ADPr) modifications across a variety of human proteins involved in regulation of genome stability, including histones and PARP1 itself (Bonfiglio et al., 2017a; Bilan et al., 2017).\n\nProtein ADP-ribosylation can affect structure, function and stability of target proteins, and hence, requires strict control. One mode of regulation is the degradation and/or removal of the ADPr signal by specific enzymes (Feijs et al., 2013; Palazzo et al., 2016, 2015; Rack et al., 2016). PAR glycohydrolase (PARG) is the most well characterized enzyme in humans for PAR hydrolysis, which utilises a macrodomain fold to bind ADPr and specifically cleaves the ribose\u2013ribose bonds between the subunits of the PAR chains (Lin et al., 1997; Slade et al., 2011). ADP-ribosylhydrolase 3 (ARH3, also called ADPRHL2) is also able to degrade PAR chains on proteins, but features a different structural composition to PARG, and hydrolyses PAR less efficiently (Hatakeyama et al., 1986; Mueller-Dieckmann et al., 2006; Oka et al., 2006). However, neither PARG nor ARH3 were previously shown to be able to process a single unit of ADPr (mono-ADPr) attached to a protein (Oka et al., 2006; Slade et al., 2011). This MARylation is instead regulated by a different suite of proteins that do not degrade PAR chains, but rather specifically cleave amino acid-linked ADPr moieties; terminal ADPr protein glycohydrolase (TARG1), MACROD1, MACROD2 and ARH1 (Barkauskaite et al., 2015; Feijs et al., 2013; Jankevicius et al., 2013; Mashimo et al., 2014; Rosenthal et al., 2013; Sharifi et al., 2013). TARG1, MACROD1 and MACROD2 have been shown to hydrolyse acidic residue (Asp/Glu) linked mono-ADPr, whilst ARH1 is capable of removing ADPr from arginine (Glowacki et al., 2002; Jankevicius et al., 2013; Rosenthal et al., 2013; Sharifi et al., 2013).\n\nOur recent discoveries that HPF1 enables PARP1-mediated Ser-ADPr suggest a new mechanism of ADPr signalling that would potentially require precise regulation. Additionally, understanding the regulation of Ser-ADPr of histones could provide significant insights to the already complex tapestry of histone modification. Here we endeavoured to determine if Ser-ADPr is a reversible modification and if so, which hydrolase is responsible for the release of this form of ADPr. Our investigations show that DNA damage induced Ser-ADPr modification of histones is reversible in human cells, and that ARH3 is a hydrolase capable of efficiently removing Ser-ADPr from proteins. Here we also establish ARH3 as a much-needed experimental tool to expand the investigations of Ser-ADPr dynamics as our understanding of this recently unveiled form of ADPr (Leidecker et al., 2016) is still in its infancy.\n\n## Results\n\n### Histone serine ADP-ribose modification is reversible\n\nPARP-dependent ADP-ribosylation signalling is a rapid and dynamic process in human cells. Within minutes of incurring DNA damage, the peak PARylation signal is observed, before it quickly diminishes (Figure 1A) (Hakm\u00e9 et al., 2008; Mortusewicz et al., 2007; Tallis et al., 2014). Our recent studies have shown that Ser-ADPr is catalysed by PARP1 and PARP2 in a HPF1-dependent manner (Bonfiglio et al., 2017a; Gibbs-Seymour et al., 2016), and we identified a large number of Ser-ADPr target proteins involved in response to DNA damage. This raised the question of whether Ser-ADPr was a reversible modification as seen for other forms of ADPr and for virtually all the PTMs playing a role in cell signalling. To investigate this, we carried out quantitative proteomics experiments using stable isotope labeling by amino acids in cell culture (SILAC) (Ong et al., 2002) in combination with our recently developed mass spectrometric approach (Bonfiglio et al., 2017a; Leidecker et al., 2016). U2OS heavy labeled (Lys8) cells were treated with H2O2 at different time points (0 min, 10 min and 120 min) and then combined with light labelled H2O2-tretead cells (Lys0) that were used as a spike-in SILAC standard (Figure 1B) (Geiger et al., 2011). As expected, all the detected Ser-ADPr marks increased in cells exposed to oxidative DNA damage for 10 min (Figure 1C\u2013D and Figure 1\u2014figure supplement 1, Figure 1\u2014source data 1) (Leidecker et al., 2016). However, after 120 min of H2O2 treatment, Ser-ADPr returned to levels similar to the untreated cells (Figure 1C\u2013D and Figure 1\u2014figure supplement 1, Figure 1\u2014source data 1), demonstrating that Ser-ADPr is also a reversible modification.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/28533/elife-28533-fig1-v3.jpg)\n\n**Figure 1.:** U2OS cells were treated with H2O2 and analysed at indicated time-points. (A) The samples were lysed and the proteins were separated by SDS-PAGE, analysed by western blot and probed for PAR (left) or pan-ADPr (middle). Ponceau-S staining was used as loading control (right). (B) Schematic representation of the SILAC-based strategy to quantify core histone Ser-ADPr marks after different time points of 2 mM H2O2\u2013induced DNA damage. Light labeled (Lys0) cells treated for 10 min with 2 mM H2O2 were used as SILAC Standard. (C) The relative abundance of Ser-ADPr modification on histone proteins H2B (Ser6) and H3 (Ser10, Ser28) was calculated and plotted as a function against time of H2O2 treatment. (D) MS1s of a Ser-ADPr H2B peptide (H2B Ser6-ADPr) at different time points of 2 mM H2O2 treatment. The heavy peptide was derived from cells treated with H2O2 for the indicated time point, and the light peptide was derived from the SILAC Standard (10 min H2O2-treated cells). Each inset (right) shows a \u223c1:1 ratio (heavy/light) of a non-ADP-ribosylated peptide from the same experiment.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28533/elife-28533-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic representation of the SILAC-based strategy to quantify core histone Ser-ADPr marks after different time points of 2 mM H2O2\u2013induced DNA damage. Light labeled (Lys0) cells treated for 10 min with H2O2 were used as SILAC Standard (top panels). MS1s of a Ser-ADPr H3 peptide (H3-Ser10-ADPr) at different time points of 2 mM H2O2 treatment (bottom panels). The heavy peptide was derived from cells treated with H2O2 for the indicated time point, and the light peptide was derived from the SILAC Standard (10 min H2O2-treated cells). Each inset (right) shows a \u223c1:1 ratio (heavy/light) of a non-ADP-ribosylated peptide from the same experiment. (B) Log2 of summed ADPr peptide intensities were plotted against log2 of ADPr Heavy/Light SILAC ratios for each time point. ADPr peptides detected after 0 min of 2 mM H2O2 are colored in black. ADPr peptides detected after 10 min 2 mM H2O2 are colored in red. ADPr peptides detected after 120 min 2 mM H2O2 are colored in blue.\n\n### ARH3 hydrolyses Ser-ADPr\n\nAs shown above, histone Ser-ADPr marks are reversed at a late time point after DNA damage, roughly mirroring the global PARylation and total ADPr profiles (Figure 1). This raised the question of how ADPr attached to serine residues is removed from its protein targets. We reasoned that a known hydrolase or its homologue could be responsible for the removal of Ser-ADPr. Previous research has found protein ADP-ribosyl hydrolase activity in proteins bearing one of two evolutionari\ufeffly unrelated domains: a ADP-ribosylglycohydrolase (DraG-like) fold (pfam PF03747) and a macrodomain (pfam PF01661) (Glowacki et al., 2002; Oka et al., 2006; Rack et al., 2016). Therefore, we screened all known human ADP-ribosylhydrolases, belonging to either the macrodomain family (PARG, TARG1, MACROD1, and MACROD2) or to DraG family (ARH1, ARH2 and ARH3) for their ability to cleave Ser-ADPr. We also tested human macrodomains (such as ALC1 and MACROH2A) that are thought to be devoid of catalytic activity (Ahel et al., 2009; Timinszky et al., 2009). We used a well-defined histone H3 peptide fragment (aa 1-21) as a known substrate for serine mono-ADP-ribosylation (Bonfiglio et al., 2017a) which we then incubated with each of the previously mentioned proteins (Figure 2A). Strikingly, only ARH3 was able to catalyse removal of ADPr from the histone peptide, implicating a serine ADP-ribosylhydrolase activity. Preceding studies with ARH3 found poly(ADP-ribosyl) hydrolase activity, but inability to remove terminal arginine, or other amino acid, ADP-ribose linkages that were known prior to discovery of Ser-ADPr (Oka et al., 2006). As expected, we also observed that both PARG and ARH3 were able to degrade the PAR chains on automodified PARP1 (Figure 2A, lanes 2 and 8), albeit ARH3 was less efficient in removing the chains (Figure 2B, Figure 2\u2014figure supplement 1A) (Mueller-Dieckmann et al., 2006). We then performed a similar experiment using full length recombinant histone H1, which can be ADP-ribosylated by PARP1 on serine residues in the presence of HPF1 (Bonfiglio et al., 2017a). Whilst ARH3 was able to remove both the PARylation and mono(ADP-ribosyl)ation of H1, PARG was only able to degrade the PAR chains on histone H1 and PARP1, leaving a mono(ADP-ribosyl)ation signal that was visible as two distinct bands at the sizes of H1 and PARP1 (Figure 2B). This may be expected given the inability of PARG to process mono(ADP-ribosyl)ation (Slade et al., 2011). The other glycohydrolases had no discernible effect on the modification of either PARP1 or histone H1. A double digestion with PARG/ARH3 confirmed that most of the ADP-ribosylated chains had been attached to serine residues (Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/28533/elife-28533-fig2-v3.jpg)\n\n**Figure 2.:** (A) Glycohydrolysis of mono-ADP-ribosylated H3 histone peptide (aa 1-21). ADP-ribosylated H3 peptide was obtained by incubation with PARP1 and HPF1 using radioactively labelled NAD+ as an ADPr donor. After stopping the modification reaction with PARP inhibitor, the indicated glycohydrolases and related proteins were added to the substrate as shown on the figure. Lower panel \u2013 Coomassie stained gel of the proteins used in the reaction that also serves as a loading control. (B) Removal of poly-ADP-ribosylation from the recombinant histone H1 substrate by various glycohydrolases. Reaction performed as described in A. (C) Comparison of the hydrolase reactions on the poly- and mono-ADP-ribosylated histone H1 substrates. Lower panel \u2013 Coomassie stained gel of the proteins used in the reaction that also serves as a loading control. (D) Schematic representation of the SILAC-based strategy to quantify ADPr removal upon in vitro incubation of purified Ser-ADPr histones with or without recombinant ARH3 (top panels). Log2 of summed peptide intensities were plotted against log2 Heavy/Light SILAC ratios for each condition (bottom panels). ADPr peptides are colored in red. (E) Autoradiogram analysis of Ser mono-ADPr hydrolysis with a non-histone protein substrate. The ADP-ribosylated automodification domain of PARP1 (aa 374-525) was used in this assay and the reactions were supplemented with the indicated hydrolases. In panel panels A, B, C and E, the reaction products were separated by SDS-PAGE and analysed by autoradiography. The signals relating to the specific ADP-ribosylated protein are indicated in each panel.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28533/elife-28533-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Removal of poly-ADP-ribosylation from the recombinant histone H1 substrate by the glycohydrolases PARG, ARH3, PARG and ARH3 together, and TARG1 as indicated. ADP-ribosylated histone H1 was obtained by incubation with PARP1 and HPF1 using radioactively labelled NAD+ as an ADPr donor. After stopping the modification reaction with PARP inhibitor, the indicated glycohydrolases were added to the substrate as shown on the figure. (B) High-resolution ETD fragmentation spectrum of a PARP1 E988Q peptide modified by ADP-ribose on Ser499. (C) High-resolution ETD fragmentation spectrum of a H1.0 peptide modified by ADP-ribose on Ser103.\n\nNext, we contrasted the poly- and mono-ADP-ribosylation of PARP1 and histone H1. We prepared these substrates by incubating H1 and HPF1 together with either wild type, or E988Q mutant PARP1 for a modification reaction. The E988Q mutation alters the activity of PARP1 to that of mono-ADP-ribosylation, so in this way we were able to generate Ser mono-ADPr modifications on a protein target that is otherwise PARylated under wild type conditions (Figure 2\u2014figure supplement 1B\u2013C). The activities of the hydrolases tested against PARylation products yielded the same result as before in Figure 2A \u2013 both PARG and ARH3 degraded the PAR (Figure 2C, lanes 2 and 4 - upper panel); and collapsed the protein signal for PARP1 and H1 proteins as seen by Coomassie stain (Figure 2C, compare lane 1 with lanes 2 and 4; - lower panel). However, the serine mono-ADP-ribosylated histone H1 samples were only hydrolysed by ARH3 (Figure 2C, lane 9), with no notable reduction in mono-ADP-ribose band intensity by the other hydrolases, including PARG. Although it cannot be resolved well in these gels, we consistently observed a small but notable shift in the stained protein signal after the reaction with ARH3, suggesting the reversal of serine mono(ADP-ribosyl)ated H1 into its unmodified form (Figure 2C compare lane 9 to lanes 6, 7, 8, and 10).\n\nTo investigate whether ARH3 is also capable of removing ADPr from histones purified from cells that had been modified on serine upon DNA damage (Bonfiglio et al., 2017a; Leidecker et al., 2016), we carried out quantitative proteomics experiments using a SILAC approach. Core histones purified from heavy labeled H2O2-treated cells (Lys8) were incubated in the presence or absence of ARH3 for 30 min. To quantitatively evaluate the removal of Ser-ADPr by ARH3, core histones purified from light labelled H2O2-treated cells (Lys0) were added as a spike-in SILAC standard. All the identified histone ADPr peptides were significantly decreased in samples treated with recombinant ARH3 (Figure 2D, Figure 2\u2014source data 1), demonstrating that this hydrolase is also able to remove Ser-ADPr from endogenous histones.\n\nWe have recently characterised the Ser-ADPr sites on the isolated automodifcation domain of PARP1 (aa 374-525) when incubated in the presence of full length PARP1 and HPF1 (Bonfiglio et al., 2017a). During this reaction, the isolated domain is modified on 3 serine residues and thus we were able to use it as a well-defined model to analyse removal of the Ser-ADPr from an ADP-ribosylated non-histone protein. We used purified PARP1 automodification domain with HPF1 and either wild type PARP1 or PARP1 E988Q mutant, to produce PARylated and MARylated substrates (respectively) for the hydrolase reactions and then tested them with ARH3, MACROD2, TARG1 or ARH1 (Figure 2E). ARH3 was efficient at removing Ser-ADPr modifications from both the mono- and poly-ADP-ribosylated automodification domain, confirming the capability to hydrolyse serine linked ADP-ribose from protein targets besides histones.\n\n### Characterisation of the serine ADP-ribosylhydrolase activities of ARH3\n\nTo precisely characterise the activity of ARH3 on Ser-ADPr and to exclude the effect of PARP1 and HPF1 that were present in the previous hydrolase reactions, we modified the H3 histone peptide (aa 1-21) with PARP1 and HPF1 as described above, and then purified the peptide fragment away from proteins for incubation with the same suite of hydrolases as before (Figure 3A). The autoradiogram demonstrated that ARH3 alone was sufficient for the complete removal of Ser-ADPr from H3 histone peptide in the absence of PARP1 and HPF1.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/28533/elife-28533-fig3-v3.jpg)\n\n**Figure 3.:** Glycohydrolase assay using the purified serine ADP-ribosylated histone peptides as substrates. Reactions were performed and analysed as described in Figure 2A. (A) Activity of different hydrolases against ADP-ribosylated H3 peptide (aa 1-21). (B) The same as in (A) except purified histone H2B peptide was used. (C) ARH3 structure (PDB ID: 2FOZ) showing the amino acid residues in the catalytic site coordinating Mg ions (green). The putative ADPr binding site is highlighted in red. (D) Mutating ARH3 catalytic residues or addition of EDTA to the reaction abolishes ARH3 activity. (E) Reaction performed as (D) except histone H2B peptide was used. (F) ARH3 activity is enzyme concentration dependent. ARH3 enzyme concentrations were in the range from 3 \u03bcM to 5 nM. (G) ARH3 activity is time dependent. 0.2 \u00b5M ARH3 was used in this assay.\n\nOur previous study established that Ser6 of H2B is ADP-ribosylated by PARP1 in the presence of HPF1 (Bonfiglio et al., 2017a), and similarly as for H3, we could show that the purified ADP-ribosylated H2B peptide is efficiently and specifically de-ADP-ribosylated by ARH3 (Figure 3B).\n\nEarlier research on ARH3 identified the critical acidic amino acids Asp77 and Asp78 that are required for coordination of a magnesium ion and poly(ADP-ribose) hydrolysis (Oka et al., 2006) (Figure 3C), so we generated single site (D77N and D78N) as well as double site (D77N D78N) ARH3 mutants to confirm whether the same residues were necessary for Ser-ADPr hydrolysis (Figure 3D and E). Only wild type ARH3 was able to remove the Ser-ADPr modification from the histone H3 and H2B peptides. These results show that Asp77 and Asp78 are necessary for both PAR and serine-ADPr hydrolysis. Further, in the presence of the metal chelating agent EDTA, ARH3 was unable to hydrolyse the substrate, confirming that the activity is Mg2+ dependent (Figure 3D and E). Furthermore, we showed that ARH3 enzymatic activity is concentration and time dependent (Figure 3F and G). Notably, ARH3 was highly efficient against Ser-ADPr and quantitatively hydrolysed the substrate at nanomolar enzyme concentrations.\n\n### Specificity of ARH3 activity\n\nTo assess the amino acid\u00a0specificity of ARH3, we asked whether ARH3 presents activity on ADP-ribosylations linked to other amino acids in addition to O-linked Ser-ADPr. To explore this hypothesis we performed a PARP1 automodifcation assay with PARP1 E988Q in the absence of HPF1, a reaction that we have previously shown to produce glutamate linked mono-ADPr (Sharifi et al., 2013). The mono-ADP-ribosylated PARP1 E988Q protein was then used as a substrate and incubated with ARH3, along with two characterised glutamate mono-ADP-ribose hydrolases; MACROD2 and TARG1, and ARH1 which has been shown to possess arginine mono-ADP-ribose hydrolysis activity (Jankevicius et al., 2013; Oka et al., 2006; Sharifi et al., 2013). The autoradiogram shows that both MACROD2 and TARG1, but not ARH1, nor ARH3, were able to catalyse the efficient removal of glutamate mono-ADP-ribose from the PARP1 protein (Figure 4A). We also tested ARH3 against arginine-linked ADPr. We prepared the substrates for this reaction by treating K562 human myelogenous leukemia cell extract with recombinant ARTC2.2 protein, an arginine ADP-ribosyltransferase (Adriouch et al., 2008) in the presence of [32P]NAD. Figure 4B shows that only ARH1 (that was used as a positive control), but not ARH2, ARH3 or TARG1, efficiently cleaved the arginine ADP-ribosylated proteins in the cell extracts.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/28533/elife-28533-fig4-v3.jpg)\n\n**Figure 4.:** Reactions were analysed as in Figure 2A. (A) Analysis of ARH3 activity on a glutamate-ADP-ribosylated protein. The mono-ADP-ribosylated recombinant PARP1 E988Q protein was treated with the indicated glycohydrolases. (B) Analysis of ARH3 activity on arginine-ADP-ribosylated proteins. Cellular extracts from K562 cells were ADP-ribosylated by recombinant ARTC2.2 protein. The reactions were then supplemented with the indicated glycohydrolases. (C) Analysis of ARH3 activity on a lysine-ADP-ribosylated peptide. A chemically modified histone H3 peptide with mono-ADPr on lysine residues was incubated with the indicated glycohydrolases or 0.5 M KOH for 30 min.\n\nWe also tested the ARH3 and TARG1 against H3 peptide with chemically generated lysine-linked ADPr (Jankevicius et al., 2013) (Figure 4C). We observed no activity of ARH3, nor TARG1 against this substrate. All together, these findings confirm that ARH3 is unable to catalyse the efficient removal of glutamate, arginine or lysine linked ADP-ribose moieties, and is specific for Ser-ADPr hydrolysis.\n\n### ARH3 is responsible for removal of serine ADPr in cells\n\nTo confirm the relevance and the enzymatic activity of ARH3 in cells, we generated ARH3 knock-out (KO) U2OS cells lines using CRISPR-Cas9 genome editing technology. Control and ARH3 KO cells were treated with 2 mM H2O2 and harvested at 0, 10 min and 120 min post DNA damage. In order to detect the effects of ARH3 KO on ADPr levels we used two different antibodies; the widely used anti-PAR antibody which recognises only long PAR chains, and a macrodomain recombinant fusion protein that binds all forms of ADPr including mono and short oligo-ADPr (described here as a pan-ADPr antibody) which has been recently developed (Gibson et al., 2016) (Figure 5A). When compared to control cells, ARH3 KO cells showed higher levels of ADP-ribosylated proteins under unstimulated conditions. As shown in Figure 5A, ADP-ribosylation is dramatically induced in both wt and ARH3 KO cells following DNA damage (see 10 min samples), particularly on PARP1 and Histone proteins. However, the difference between wt and ARH3 KO cells became dramatic at 2 hr post DNA damage, in the ARH3 KO cells the ADPr signal persisted whilst in the wild type cells the ADPr signal was greatly reduced. This observation was most clear with the short oligo- and mono-ADPr as detected by pan-ADPr antibody, while turnover of long chains (see the signal at PARP1 detected by PAR antibody) was much less affected (Figure 5A). This may suggest that PARG is required in an early phase of DNA-damage response, shortening long chains of Ser-ADPr substrates, producing mono (and likely very short chains) which subsequently are substrates of ARH3 enzymatic activity.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/28533/elife-28533-fig5-v3.jpg)\n\n**Figure 5.:** (A) Control and ARH3 KO U2OS (ARH3-/-) cells were treated with 2 mM H2O2 for the indicated time points. After treatment, cells were lysed and proteins were separated by SDS-PAGE, analysed by western blot and probed for PAR, pan-ADPr, ARH3, H3, and GAPDH antibodies. Additionally, Ponceau-S staining was used as loading control (B) Cell extracts obtained from ARH3 KO cells treated with 2 mM H2O2 for 10 and 120 min were incubated with buffer or ADP-ribosylhydrolases ARH3, MACROD2 and PARG. Samples were separated by SDS-PAGE, analysed by Western blot and probed for pan-ADPr, H3, GAPDH, and Ponceau-S staining were used as loading control. (C) Schematic representation of the SILAC-based strategy to quantify core histone Ser-ADPr marks from Control U2OS cells (top panel) or ARH3 KO U2OS cells (bottom panel) after H2O2 treatment for 120 min. Heavy labeled (Lys8) Control U2OS cells treated for 10 min with H2O2 were used as SILAC Standard. (D) MS1s of a Ser-ADPr H2B peptide (H2B Ser6-ADPr) from Control U2OS cells (top panel) or ARH3 KO U2OS cells (bottom panel) after H2O2-treatment for 120 min. The light peptide was derived from Control (top panel) or ARH3 KO (bottom panel) cells treated with 2 mM H2O2 for 120 min, and the heavy peptide was derived from the SILAC Standard (10 min H2O2 treated cells). Each inset shows a \u223c1:1 ratio (heavy/light) of a non-ADP-ribosylated peptide from the same experiment. In the ARH3 KO U2OS cells, the chosen H2B mark (H2B S6-ADPr) resulted\u00a0~40 times more abundant than in the Control U2OS cells.\n\nTo further confirm that deficiency of ARH3 is directly responsible for the persistence of the ADPr signal, we supplemented the ARH3 KO extracts (collected post DNA damage) with addition of purified recombinant ARH3. As seen in Figure 5B, ARH3 erases the persisting ADPr signal (at 120 min post DNA damage), confirming that ARH3 is both necessary and sufficient for removal of these modifications. MACROD2 and PARG were not capable of hydrolysing the same substrates, when added to the extracts and probed with pan-ADPr, suggesting that accumulation of monoADPr was on serine residues (Figure 5B).\n\nTo directly confirm that Ser-ADPr was indeed accumulated in these conditions, we analysed by mass spectrometry the isolated histones from these cell extracts. Histones purified from U2OS heavy labelled H2O2-treated cells (Lys8) were used as a spike-in SILAC standard (Figure 5C). As expected, after 120 min of DNA damage, the levels of histone Ser-ADPr were dramatically increased in ARH3 KO cells compared the wild type cells. (Figure 5D, Figure 5\u2014source data 1).\n\n### ARH3 as a tool for recognizing histone serine ADPr\n\nMass spectrometry is currently the only available technique for the detection of Ser-ADPr. Given that we have determined that ARH3 is specific for Ser-ADPr and that this hydrolase does not remove ADPr from several other known target amino acids, we set to employ ARH3 for the establishment of a simple alternative approach for monitoring the modification of known Ser-ADPr target proteins. We reasoned that the new pan-ADPr reagent (Gibson et al., 2016), which by itself does not distinguish between different amino acid specificities, in combination with ARH3 could discern the presence of histone Ser-ADPr by immunoblotting. Identically to what we observed for in vitro Ser-ADPr on peptides and proteins, ARH3 completely removes ADPr from core histones derived from DNA damage treated cells (Figure 6A). This confirms our previous mass spectrometric analyses that conclusively identified histone ADPr on serine, but not other residues (Leidecker et al., 2016), thus providing further indication of serines as the exclusive modification sites on core histones under these experimental conditions. Next, we implemented this newly established approach to confirm the reversibility of histone Ser-ADPr in DNA repair indicated by our SILAC spike-in experiment (Figure 1C,D and Figure 1\u2014figure supplement 1). As expected, following a strong induction of histone Ser-ADPr after 10 min of treatment with peroxide, the modification is completely reversed after 120 min (Figure 6B). This strategy based on ARH3 is set to enhance and significantly facilitate any further investigation of Ser-ADPr on established substrates.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/28533/elife-28533-fig6-v3.jpg)\n\n**Figure 6.:** (A) Core histones were purified from U2OS cells treated with H2O2 for the indicated time points. Recombinant ARH3 or MACROD1 or reaction buffer was added to histones purified from 10 min H2O2-treated cells. After treatment, proteins were separated by SDS-PAGE, analysed by western blot and probed for pan-ADPr. Ponceau-S staining was used as loading control. (B) Purified core histones from U2OS cells treated with H2O2 for the indicated time points were separated by SDS-PAGE, analysed by Western blot and probed for pan-ADPr. Ponceau-S staining was used as loading control. (C and D) A schematic representation of the specificity of the ADP-ribosylhydrolases PARG, ARH3, TARG1, MACROD1, MACROD2 and ARH1 for PARylated (C) and MARylated (D) proteins.\n\n## Discussion\n\nPTMs modulate virtually all cellular processes by acting as molecular switches that modify properties of target proteins including function, interactions and stability. As with all homeostatic and stress control systems, this level of regulation relies on reversibility to maintain balance, in this case the fine-tuning of the attachment and removal of PTMs. In fact, disruption of the enzymes responsible for deconjugational (and conjugational) dynamics of PTMs often leads to disease states. This also applies to ADP-ribosylation, as disregulation of mono- or poly-ADPr processes can result in neurodegenerative disorders and cancer (B\u00fctepage et al., 2015; Hanai et al., 2004; Rouleau et al., 2010; Sharifi et al., 2013).\n\nWe recently discovered serine ADP-ribosylation (Ser-ADPr) as a novel modification of proteins involved in genome stability (Bonfiglio et al., 2017a; Leidecker et al., 2016). Our data identified nearly 300 hundred Ser-ADPr modification sites in proteins extracted from living cells, suggesting that this PTM is widespread across a breadth of pathways including; DNA repair, chromatin organisation, mitotic nuclear division, DNA recombination, transcriptional regulation and mRNA splicing amongst others (Bonfiglio et al., 2017a). We further showed that at least a fraction of these Ser-ADPr targets are modified by the HPF1/PARP1/2 complex, including histones, PARP1 itself and High Mobility Group (HMG) proteins, as we were able to reconstitute the sites in vitro using recombinant proteins (Bonfiglio et al., 2017a; Gibbs-Seymour et al., 2016). These findings raised an obvious question of whether Ser-ADPr modification is reversible and which enzyme is responsible for said activity. ARH3 has previously been demonstrated to cleave PAR chains, although less rapidly than PARG, but also to hydrolyse O-acetyl-ADP-ribose by-products generated by Sir2 deacetylases (Mashimo et al., 2013; Oka et al., 2006; Ono et al., 2006). Here, we established that ARH3 is also capable of efficiently removing Ser-ADPr in a magnesium-dependent manner, and that mutation of key aspartate residues (which are also critical for PAR cleavage) ablates this activity. Given our previous discoveries that Ser-ADPr is a widespread modification in the human proteome following DNA damage, the identification of ARH3 as the first enzyme that is able to hydrolyse Ser-ADPr may prove a critical advance in understanding control of NAD signalling and ADP-ribosylation in regulation of genome stability (Bonfiglio et al., 2017a; Leidecker et al., 2016) (Figure 6C and D).\n\nPrior observations suggest a wide distribution of ARH3 throughout the cell; cytosol, nucleus and mitochondria\u2014an interesting array of localisations given that the ARH3 protein possesses a mitochondrial targeting peptide at the N-terminus (both in Human and Murine proteins) (Mashimo et al., 2013; Niere et al., 2012). Despite the wide cellular distribution, all described ARH3 functions so far seem to converge on safeguarding genome stability. Previous studies suggested that ARH3 functioned in the degradation of PAR chains that had been released by both nuclear and cytosolic PARG following the oxidative stress exposure. As a result of this cooperation, ARH3 buffers the Parthanatos response (a Caspase-independent cell death induced by the transport and binding of PAR to mitochondrial protein AIF) (Mashimo et al., 2013). Furthermore, ARH3 KO MEFs were found to be sensitive to hydrogen peroxide compared to wild type cells, and in the absence of ARH3 protein PAR was observed to accumulate in the nucleus (Mashimo et al., 2013). Additionally, the sensitivity of the ARH3 KO MEFs to hydrogen peroxide was rescued by treatment with a PARP1 inhibitor, linking the function of ARH3 to the PARP1 controlled DNA damage response (Mashimo et al., 2013). Here, we have described ARH3\u2019s Ser-ADP-ribosylhydrolase activity which offers a more parsimonious explanation of the susceptibility of ARH3 KO cells to DNA damage. We have previously observed DNA damage induced Ser-ADP-ribosylation of histones and other proteins (Bonfiglio et al., 2017a), and now we report that ARH3 is necessary for the reversal of these modifications. We also detected persistence of ADPr on numerous proteins in human ARH3 KO cells and found that ARH3 is a major hydrolyse that demodifies these proteins post DNA damage. These data suggest a conserved role for ARH3 in the response to DNA damage and the regulation of ADPr signalling.\n\nThe ADP-ribose linked to serine via an O-glycosidic bond is chemically similar to the ribose-ribose bond within the ADP-ribose polymer (Bonfiglio et al., 2017b; Leidecker et al., 2016). Consequently, it may be unsurprising that ARH3 can both degrade PAR chains and remove MARylation from serine residues. This observation raises a discrepancy between PARG and ARH3; both are able to hydrolyse PAR, neither are able to cleave ester bonds between the proximal ADPr unit and protein (Barkauskaite et al., 2013; Oka et al., 2006), yet ARH3 can cleave Ser-ADPr glycosidic bonds and completely remove the ADPr chains attached to serine residues in proteins. Architecturally, both enzymes are clearly distinct from each other, with PARG adopting a macrodomain fold with a unique catalytic loop allowing for hydrolysis of ADPr, whilst ARH3 has an eponymous ARH fold featuring a binucleate Mg2+ catalytic site (Barkauskaite et al., 2013; Mueller-Dieckmann et al., 2006; Slade et al., 2011). Both enzymes perform acid-base catalysis in PAR hydrolysis, but PARG has a preference for binding to the long PAR chains and is inefficient in hydrolysing short oligo-ADPr fragments and incapable or removing mono-ADPr (Barkauskaite et al., 2013; Hatakeyama et al., 1986; Mueller-Dieckmann et al., 2006). Altogether, these observations suggest functional differences between PARG and ARH3, but also potential redundancies. More elaborate future structural and functional studies will be needed to resolve these questions as well as the Ser-ADPr specificity of ARH3.\n\nAdvanced mass spectrometry has played an indispensable role in the discovery of Ser-ADPr as a widespread signal in DNA repair and in the identification of the enzymes and cofactors responsible for its attachment (Bonfiglio et al., 2017a; Leidecker et al., 2016). However, these findings have opened up many questions that currently cannot be addressed efficiently as only a limited number of researchers have both expertise and access to advanced instrumentation needed for unbiased and unambiguous mass spectrometric analysis of ADPr (Bonfiglio et al., 2017b). Thus to broaden the study of the amino acid specificities of ADPr we employed the strikingly specific activity of ARH3 as a practical analytical tool to discern the presence of Ser-ADPr without the need for mass spectrometry (Figure 6C and D). In combination with available biological techniques and tools, such as the anti-pan ADPr binding reagent (Gibson et al., 2016), we showed that ARH3 allows a simple exploration of histone Ser-ADPr dynamics during DNA damage response.\n\nIn summary, here we present ARH3 as a serine ADP-ribosylhydrolase that functions to reverse the PARP1/HPF1 mediated modification of histones and other proteins modified on serine residues. This thread of investigation has delineated a novel aspect of cellular ADP-ribosylation, an intricate level of control of ADPr signal transduction that requires specific protein tools. Understanding the activities, tendencies and regulation of these proteins may provide key insights into diseases and disorders that either rely on common ADP-ribosylation pathways, or suffer from the lack of a key protein that breaks the carefully balanced ADPr homeostasis.\n\n## Material and methods\n\n### Antibodies\n\nAnti-PAR Polyclonal Antibody (rabbit) was purchased from Trevigen\u00a0\ufeff(Gaithersburg, MD\ufeff,\u00a0\ufeffU\ufeffS\ufeff). Pan-ADPr antibody (a macrodomain recombinant fusion protein that binds all forms of ADPr) was purchased from Millipore\u00a0\ufeff(Billerica, MA, US\ufeff). Rabbit anti-ARH3/ADPRHL2 (HPA027104; RRID:AB_10601330) was purchased from Atlas Antibodies. Mouse anti-GAPDH (RRID:AB_2107445) and rabbit anti-H3 (RRID:AB_417398) were purchased from Millipore.\n\n### Plasmid construction\n\nThe relevant genes were cloned from their corresponding cDNAs and cloned into pET28 vectors unless stated otherwise. The expression construct for ARH3 was a gift from Prof Paul Hergenrother (University of Illinois). ARH1 and ARH2 were cloned into pDEST17 vector. pASK60\u2010OmpA\u2010mARTC2.2 6xHis\u2010Flag tag was a gift from Prof Friedrich Koch\u2010Nolte (Universit\u00e4tsklinikum Hamburg\u2010Eppendorf). ARH3 catalytic mutants D77N, D78N, D77N D78N were made using the QuikChange Lightning Site-Directed Mutagenesis Kit p\ufeffu\ufeffr\ufeffc\ufeffh\ufeffa\ufeffs\ufeffe\ufeffd\u00a0f\ufeffr\ufeffo\ufeffmAgilent Technologies \ufeff(\ufeffS\ufeffa\ufeffn\ufefft\ufeffa \ufeffC\ufeffl\ufeffa\ufeff\ufeffr\ufeffa\ufeff, \ufeffC\ufeffa\ufeff, \ufeffU\ufeffS) as per the manufacturer\u2019s recommendations.\n\n### Protein expression and purification and peptides\n\nMost of the proteins were expressed and purified essentially as described (Dunstan et al., 2012), but with addition of a size-exclusion chromatography purification using HiLoad 16/60 Superdex 75 column. In the case of ALC1 and histone MACROH2A proteins only the macrodomains were purified rather than full length proteins. Mouse ARTC2.2 protein was purified as previously described (Mueller-Dieckmann et al., 2002). PARP1 wild type and the E988Q mutant were expressed and purified as previously reported (Langelier et al., 2011). PARG was purified as described (Lambrecht et al., 2015). HPF1 was expressed and purified as reported (Gibbs-Seymour et al., 2016). ARH1, ARH2, ARH3 proteins were all expressed and purified using the method described (Kernstock et al., 2006). Histone H1 (full length) was purchased from NEB \ufeff(\ufeffI\ufeffp\ufeffs\ufeffw\ufeffi\ufeffc\ufeffh\ufeff, \ufeffM\ufeffA\ufeff, \ufeffU\ufeffS\ufeff), Histone H3 peptide (aa 1-21) from Sigma \ufeff(\ufeffS\ufeffa\ufeffi\ufeffn\ufefft \ufeffL\ufeffo\ufeffu\ufeffi\ufeffs\ufeff, \ufeffM\ufeffO\ufeff, \ufeffU\ufeffS\ufeff) \ufeff and Histone H2B peptide (aa 1-21) from Millipore.\n\n### In vitro glycohydrolase assays\n\nRecombinant proteins or peptides were ADP-ribosylated by PARP1 in the presence or absence of HPF1 to produce substrates for the hydrolase reaction. The PARP reaction buffer contained 50 mM Tris-HCl pH 8.0, 100 mM NaCl, 2 mM MgCl2, activated DNA and 50 \u00b5M NAD+ spiked with 32P-NAD+. The modification reaction proceeded at room temperature for 20 min before addition of the PARP inhibitor Olaparib at 1 \u00b5M. This modification reaction was used as a substrate and incubated with various glycohydrolases for 30 min at room temperature. Reactions were then analysed by SDS-PAGE and autoradiography. PARP1 concentration in the assays was 1 \u00b5M unless stated otherwise, HPF1 was always equimolar to PARP1, histone H1 was used at the final concentration of 2 \u00b5M, histone peptides were used at 0.5 \u00b5g per reaction, ARH3 and other glycohydrolase and macrodomain containing proteins were used at 3 \u00b5M unless stated otherwise.\n\n### Ser-ADPr histone peptide purification\n\nH3 and H2B Histone peptides were modified by PARP1 and HPF1 as described above. Subsequently, PARP1 and HPF1 were removed from the samples by filtering the reaction with a 10 kDa cut-off concentration column (Millipore). Excess of NAD+ was removed using a G25 spin column (GE HealthCare,\u00a0\ufeffU\ufeffK).\n\n### Removal of arginine ADP-ribosylation from proteins in K652 cell extracts\n\nIn vitro modification of proteins from K562 cell extracts by ARTC2.2 recombinant protein was performed as described (Palazzo et al., 2016). Briefly, 8\u00a0\u00d7\u00a0106 cells were washed twice in PBS and lysed in 50 mM Tris-HCl pH 7.5, 150 mM NaCl, 0.5% Triton X\u2010100, 0.2 mM DTT, 1 \u03bcM Olaparib, 4 mM Pefabloc SC PLUS (Sigma\u2010Aldrich) at 4\u00b0C. The cell extract was clarified by centrifugation and diluted five times in no-Triton X\u2010100 buffer and supplemented with 15 mM MgCl2 and 1 \u03bcCi (37 kBq) of 32P-NAD+. 67 \u03bcL extract aliquots were then incubated with or without 1 \u03bcM recombinant mARTC2.2 protein for 15 min at 30\u00b0C. After 15 min incubation, lysates were further incubated in presence of hydrolases for 45 min at 30\u00b0C. Samples were then analysed by SDS-PAGE and autoradiography.\n\n### Lysine ADP-ribosylation of H3 histone peptide\n\nLysine ADP-ribosylation of Histone H3 peptide was performed as described (Jankevicius et al., 2013). Briefly, 2 \u00b5g of H3 peptide was incubated with ADP-ribose in 25 mM Tris-HCl pH 8.3 at 37\u00b0C for 3 days. Excess nucleotides were removed by purification of the peptide using ZipTip Pipette Tips (Millipore). Filter tips were pre-washed with 100% acetonitrile (ACN), and subsequently equilibrated 4 times with 0.1% trifluoroacetic acid (TFA). TFA was then added to Lys-ADP-ribosylated histone H3 to a final concentration of 0.1% and applied to the filter. The filter was then washed twice with 0.1% TFA before the histone H3 peptide was eluted with 50% ACN and 0.1% TFA. The eluate was desiccated and then resuspended in 25 mM Tris-HCl pH 8.0, 150 mM NaCl, 1 mM DTT and 2 mM MgCl2. The ADP-ribosylated peptide was then analysed by the glyocohydrolase assay described above. Incubation with 0.5 M KOH at 37\u00b0C for 15 min was used as a positive control for the reaction.\n\n### Analysis of the Ser-ADPr hydrolysis time course\n\nSer-ADP-ribosylated histone H3 peptide was incubated with 200 nM ARH3. At the indicated time points, samples were taken, containing 0.5 \u00b5g H3 Histone peptide, and the reactions were stopped with 1 mM ADPr and LDS sample buffer (Life Technologi\ufeffe\ufeffs\ufeff, Carlsbad, CA, U\ufeffS) and incubated for 2 min at 90\u00b0C. The samples were analysed by SDS-PAGE and subsequent autoradiography using phosphor screen and read out with Bio-Rad Molecular Imager PharosFX Systems (Bio-Rad,\u00a0Hercules,\u00a0\ufeffC\ufeffA\ufeff,\u00a0\ufeffU\ufeffS). Band intensities were quantified with the Image Lab software (Bio-Rad, version 5.0).\n\n### Cell culture and SILAC labeling\n\nHuman U2OS osteosarcoma cells were acquired from ATCC (ATCC HTB-96; RRID:CVCL_0042), identity was confirmed by STR profiling, and absence of mycoplasma contamination confirmed by MycoAlert Mycoplasma Detection Kit. Cells were cultured in DMEM supplemented with 10% FBS and penicillin\u2013streptomycin (100 U/ml) at 37\u00b0C, 5% CO2. U2OS were regularly tested for mycoplasma by PCR-based detection analysis and discarded if positive.\n\nFor SILAC labeling (Ong et al., 2002), U2OS cells were grown in medium containing unlabeled L-lysine (L8662, Sigma-Aldrich) for the light condition or isotopically labeled L-lysine (13C6,15N2, 608041, Sigma-Aldrich) for the heavy condition. Both light and heavy DMEM were supplemented with 10% dialyzed FBS (Thermo Scientific). Cells were cultured for more than seven generations to achieve complete labeling. Incorporation efficiency (>99%) was determined by MS.\n\nFor the generation of ARH3 KO cell lines, a pair of sgRNA were designed to generate deletion into the ARH3 gene. More specifically, sgRNA 210 (GCGCTGCTCGGGGACTGCGT) and sgRNA 212 (GGGCGAGACGTCTATAAGGC), were used to remove part of ARH3 exon 1 and part of the downstream intron, including the splice donor site. sgRNAs were cloned into epX459(1.1), which Dr Joey Riepsaame, (GEO facility, Sir William Dunn of Pathology, Oxford) generated by subcloning enhanced Cas9 (eSpCas9) v1.1 into plasmid pX459.\n\nU2OS cells were transfected with control sgRNA or co-transfected with sgRNAs 210 and 212 (1:1 ratio) using TransIT-LT1 Transfection Reagent (Mirus), following the manufacturer\u2019s instructions. After 24 hr, transfected cells were treated with 1 \u03bcg/mL Puromycin (InvivoGen) for 36 hr. After selection, control and ARH3 KO cells were diluted to 0.4 cells/100 \u03bcl and seeded on 96-well plates. Single colonies were amplified and screened by western blot using anti-ARH3 antibody (HPA027104 Atlas Antibodies). Colonies containing Flag-tagged Cas9 were discarded.\n\n### Preparation of cell extracts\n\nU2OS cells were stimulated with 2 mM H2O2 for the indicated time points and lysed in the following buffer: 50 mM Tris-HCl pH 8.0, 100 mM NaCl, 1% Triton X-100. Immediately before lysing the cells, the lysis buffer was supplemented with 5 mM MgCl2, 1 mM DTT, proteases and phosphatases inhibitors (Roche), 1 \u03bcM ADP-HPD, and 1 \u03bcM Olaparib. After the cell pellet was re-suspended in the supplemented lysis buffer, Benzonase (Sigma) was added.\n\n### In vitro complementation of ARH3-KO cell extracts\n\nARH3 KO cells from 10 and 120 min post H2O2 time points were lysed as previously described and diluted 1:5 in PARP reaction buffer supplemented with 1 \u03bcM Olaparib. Aliquots of diluted extract were incubated for 1 hr at room temperature with buffer or 0.5 \u03bcM ARH3, MACROD2 and PARG. Reactions were stopped with loading buffer and subjected to a standard SDS-PAGE method.\n\n### Histone purification\n\nSILAC-labeled U2OS cells were stimulated with 2 mM H2O2 for the indicated time points and core histones were purified as previously described (Leidecker et al., 2016). Briefly, cells were washed twice with ice-cold PBS and lysed by rotation in 0.1 M H2SO4 at 4\u00b0C for 2 hr. The lysate was centrifuged at 2200 g at 4\u00b0C for 20 min. The pellet with non-soluble proteins and cell debris was discarded. Sulfuric acid-soluble proteins were neutralized with 1 M Tris-HCl pH 8.0. NaCl, EDTA and DTT were added to a final concentration of 0.5 M, 2 mM, 1 mM, respectively. For ion exchange chromatography, sulfopropyl (SP)-Sepharose resin was packed into a column and pre-equilibrated with 10 volumes of binding buffer (50 mM Tris-HCl pH 8.0, 0.5 M NaCl, 2 mM EDTA, 1 mM DTT). The neutralized supernatant containing H2SO4-soluble proteins was passed through the column. The resin was washed with 10 volumes of binding buffer and 30 volumes of Washing Buffer (50 mM Tris-HCl pH 8.0, 0.6 M NaCl, 2 mM EDTA, 1 mM DTT). Proteins were eluted with elution buffer (50 mM Tris-HCl pH 8.0, 2 M NaCl, 2 mM EDTA, 1 mM DTT) in 10 fractions. Eluted proteins (mainly core histones) were precipitated overnight in 4% (v/v) PCA at 4\u00b0C. The fractions were then centrifuged at 21,000 g at 4\u00b0C for 45 min and the resulting pellets were washed with 4% PCA (2\u00a0\u00d7\u00a01 ml), 0.2% HCl in acetone (2\u00a0\u00d7\u00a01 ml), acetone (2\u00a0\u00d7\u00a01 ml).\n\n### Western blot analysis\n\nFor Western blot analysis, samples were subjected to a standard SDS-PAGE method. Proteins were transferred to PVDF membranes (Merck Millipore). Membranes were then blocked with TBS-T buffer (25 mM Tris-HCl pH 7.5, 150 mM NaCl, 0.05% Tween 20% and 5% non-fat dried milk) and incubated overnight with primary antibodies at 4\u00b0C, followed by a one hour incubation with peroxidase-conjugated secondary antibodies at room temperature. Blots were developed using ECL Select and signals were captured using a ChemiDoc MP System (Bio-Rad). Dilutions used for the primary antibodies were: Anti-poly-ADP-ribose: diluted at 1:2000, Anti-pan-ADP-ribose binding reagent: diluted 1:1000.\n\n### Mass spectrometric analysis\n\nProteins were digested using partial FASP as previously described (Leidecker et al., 2016). After digestion, peptides were desalted on either C18 cartridges (3M Empore) or using in-house manufactured StageTips (Rappsilber et al., 2003), depending on the peptide amounts. Eluted peptides were dried down in\u00a0\ufeffa\u00a0Speedvac concentrator and resuspended in 0.1% FA prior to LC-MS/MS analysis. Liquid chromatography and MS for all LC-MS/MS runs were performed as previously described (Bonfiglio et al., 2017a). For unambiguous identification of ADPr sites on PARP1 E988Q and H1 from in vitro reactions (Figure 2\u2014figure supplement 1), ETD fragmentation was used, with the same parameters as previously described (Bonfiglio et al., 2017a). For histone Ser-ADPr quantification (Figure 1D and E, and Figure 1\u2014figure supplement 1) HCD fragmentation was used, using the same conditions as previously described (Bonfiglio et al., 2017a). Raw files were analyzed with MaxQuant proteomics suite of algorithms (version 1.5.3.17) (Cox and Mann, 2008), using the same parameters as previously described (Bonfiglio et al., 2017a).\n\nFor Figure 1C, normalized SILAC ratios from ADPr(S) sites table were extracted from MaxQuant, log2 converted and relativized to the non-treated condition to create the scatterplots comparing the relative abundance versus the time of 2 mM H2O2. For Figures 1D and 5D and Figure 1\u2014figure supplement 1A representative MS spectra were manually selected and annotated. For Figure 2D and Figure 1\u2014figure supplement 1B evidence tables from MaxQuant were analyzed using Perseus software (http://www.perseus-framework.org) together with an in-house script (Source code 1.) to create the scatterplots comparing SILAC ratios versus peptide intensities (Bonfiglio et al., 2017a).\n",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "21485663-40db-43c6-9f0b-e8470d936373",
+      "submission_id": "8672693b-311b-41f6-b9fc-30f62926b213",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ivan Dikic, Goethe University Frankfurt , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.28533.015](https://doi.org/10.7554/eLife.28533.015)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Serine ADP-ribosylation removal by the hydrolase ARH3\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Ivan Dikic as Reviewing Editor and Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors present a thorough analysis of the reversal of the posttranslational modification of serines with ADP-ribose. They report the identification of ARH3 as the ADP-ribosylhydrolase working on Ser-ADP-ribosylation. The study used mass spectrometry to clearly demonstrate that the serine modification is reversible. Using a panel of purified proteins that were considered likely candidates to process serine-ADP-ribose, the study identified ARH3 as an enzyme capable of reversing this modification. The panel of enzymes make a nice tool set for the identification of potential modification types in other proteins. The identification of serine modification is an exciting development in the PARP field, and the current study addresses a key question that many groups are certainly working toward.\n\nWith the identification of ARH3 as the serine-ADP-ribosylhydrolase, serine ADP-ribosylation is now also an enzymatically fully reversible post-translational modification. This is a very important finding and warrants high visibility that would be achieved by publishing in eLife.\n\nEssential revisions:\n\n1) The relevance of ARH3 in reversing Ser-ADPrylation in vivo. Authors identify ARH3 as an enzyme that efficiently reverses serine ADPrylation in vitro. The presented experiments do not exclude the possibility that other yet unknown enzymes might also reverse serine ADPrylation and that ARH3 is important for the reversal in a cellular context. The authors should test whether ARH3 is required for removal of SerADPr in vivo, for instance by knocking down ARH3 and then monitoring the amount of Serine-ADPr by mass spectrometry and WB.\n\n2) Specificity: The biochemical assays showed virtually complete reversal of histone peptide serine-ADP-ribose in the presence of ARH3, yet the signal for modified PARP1 protein was reduced to a similar level by PARG and ARH3. Why is ARH3 not efficient in completely removing ADPr from PARP1 whereas it does so on histones (Figure 1B, C and D). These reactions were done with HPF so the ADPr on PARP1 should be on serine. Could the authors provide some information about the activity of PARG and ARH3 in removing poly SerADPr? Is one enzyme more active than another in assays that are done by authors? What is to be expected in vivo?\n\n3) The manuscript could be improved by giving a better description of what we already know about ARH3 in terms of cellular localization, expression level, etc., The discussion about the possible importance of ARH3 in DNA damage response in light of previous studies on ARH3 and findings presented in this manuscript should be extended.\n",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9dcf6acf-86cc-40e4-b4b4-456db678d22b",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C1",
+      "claim": "ADP-ribosylation (ADPr) is a posttranslational modification (PTM) of proteins that controls many cellular processes, including DNA repair, transcription, chromatin regulation and mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "ADP-ribosylation (ADPr) is a posttranslational modification (PTM) of proteins that controls many cellular processes, including DNA repair, transcription, chromatin regulation and mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about ADP-ribosylation's role in cellular processes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "afe0ee5d-362e-4356-9ae0-bc8707bd3faa",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C2",
+      "claim": "Serine ADP-ribosylation (Ser-ADPr) is a new form of ADPr that is attached to serine residues in target proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently discovered a new form of ADPr that is attached to serine residues in target proteins (Ser-ADPr)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discovery reported by the authors in their recent work, supported by citation to their previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "7c0c2978-8d60-4a79-a54e-07b2dd6396b0",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C3",
+      "claim": "Ser-ADPr is specifically made by PARP1/HPF1 and PARP2/HPF1 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "showed that this PTM is specifically made by PARP1/HPF1 and PARP2/HPF1 complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the authors' previous research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "afd34975-2d84-4b00-9300-37e9b4a6e3cf",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C4",
+      "claim": "Histone Ser-ADPr is reversible in cells during response to DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we found by quantitative proteomics that histone Ser-ADPr is reversible in cells during response to DNA damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative proteomics data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "99084ff2-f43d-445d-a94a-52e15eb422b5",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C5",
+      "claim": "ARH3/ADPRHL2 is capable of efficiently and specifically removing Ser-ADPr of histones and other proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "By screening for the hydrolase that is responsible for the reversal of Ser-ADPr, we identified ARH3/ADPRHL2 as capable of efficiently and specifically removing Ser-ADPr of histones and other proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental screening data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "d137d9b3-4dff-4553-9add-aa9887995f6c",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C6",
+      "claim": "Ser-ADPr is a major PTM in cells after DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "We further showed that Ser-ADPr is a major PTM in cells after DNA damage and that this signalling is dependent on ARH3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "0cc747d3-3bd2-4764-9d46-c5c137274824",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C7",
+      "claim": "Ser-ADPr signalling is dependent on ARH3.",
+      "claim_type": "EXPLICIT",
+      "source": "We further showed that Ser-ADPr is a major PTM in cells after DNA damage and that this signalling is dependent on ARH3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from ARH3 knockout cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "bb298391-4487-4d80-831d-36db1dd4ac87",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C8",
+      "claim": "ADP-ribosylation regulates DNA damage repair, transcription, translation, aging, stress responses, and microbial pathogenicity.",
+      "claim_type": "EXPLICIT",
+      "source": "ADP-ribosylation (ADPr) is a chemical modification of macromolecules that regulates a wide variety of cellular processes, such as DNA damage repair, transcription, translation, aging, stress responses, microbial pathogenicity and many others (Gupte et al., 2017; Hottiger, 2015; Jankevicius et al., 2016; Palazzo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "3586a2e9-a534-4b6b-af2b-247994304e14",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C9",
+      "claim": "The ADP-ribosylation modification reaction involves the transfer of the ADP-ribose moiety from NAD+ onto the target molecule and the release of nicotinamide.",
+      "claim_type": "EXPLICIT",
+      "source": "The modification reaction involves the transfer of the ADP-ribose moiety from NAD+ onto the target molecule and the release of nicotinamide (Gupte et al., 2017; Langelier et al., 2012; Schreiber et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the ADP-ribosylation mechanism, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "95ff9cd4-0367-4250-8305-8bd17c5226f1",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C10",
+      "claim": "The human genome encodes 17 members of the PARP family.",
+      "claim_type": "EXPLICIT",
+      "source": "The human genome encodes 17 members of the PARP family, which are grouped into five distinct classes according to protein domain architecture and involvement in different cellular processes (Perina et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "b90c5947-11bd-4c65-91b4-6a6acb7d185e",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C11",
+      "claim": "The majority of PARPs can catalyse the addition of only one unit of ADP-ribose (mono-ADPr) onto target proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of these PARPs can catalyse the addition of only one unit of ADP-ribose (mono-ADPr; MAR; MARylation) onto target proteins (B\u00fctepage et al., 2015; Kleine et al., 2008; Vyas et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "4369bb70-3726-4125-a8c7-9214892cedee",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C12",
+      "claim": "PARP1, PARP2, and Tankyrases can generate long chains of repeating ADP-ribose units on their protein targets (poly-ADPr).",
+      "claim_type": "EXPLICIT",
+      "source": "However, several PARP family members such as PARP1, PARP2, and Tankyrases can generate long chains of the repeating ADP-ribose units on their protein targets (poly-ADPr; PAR; PARylation) (D'Amours et al., 1999; Gibson and Kraus, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "80b693d9-94a3-447f-81e3-9e4d16a2927c",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C13",
+      "claim": "Several amino acids have been reported as acceptors of PARP-mediated modification, most commonly glutamate, but also aspartate, lysine, arginine and cysteine.",
+      "claim_type": "EXPLICIT",
+      "source": "Several amino acids have been reported as acceptors of PARP-mediated modification; most commonly glutamate, but also aspartate, lysine, arginine and cysteine (Daniels et al., 2015; Gagn\u00e9 et al., 2015; Martello et al., 2016; Vyas et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "c47f94dd-22a5-4cb4-ab39-68e5430f67ab",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C14",
+      "claim": "Serine was identified as an acceptor of ADPr modification by PARP1 and PARP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Most recently, we identified serine as an acceptor of ADPr modification by PARP1 and PARP2 (Bonfiglio et al., 2017a; Leidecker et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "1a2fc7a1-f548-4a3d-a25e-746144d1deef",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C15",
+      "claim": "HPF1 (Histone PARylation Factor 1) is responsible for introducing the shift in amino acid specificity to serine in PARP1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "We also discovered that the PARP1/2 interacting protein HPF1 (Histone PARylation Factor 1) is responsible for introducing this shift in amino acid specificity (Bonfiglio et al., 2017a; Gibbs-Seymour et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "73a4a884-d780-4c15-b6a9-2083ecac1e64",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C16",
+      "claim": "Mass spectrometry of human cells treated with DNA damaging agents revealed large numbers of serine ADP-ribosylation modifications across a variety of human proteins involved in regulation of genome stability, including histones and PARP1 itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analyses, by utilising mass spectrometry of human cells treated with DNA damaging agents, revealed large numbers of serine ADP-ribosylation (Ser-ADPr) modifications across a variety of human proteins involved in regulation of genome stability, including histones and PARP1 itself (Bonfiglio et al., 2017a; Bilan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous mass spectrometry studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "6fc1f1a9-2318-4984-90ec-b921041148e1",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C17",
+      "claim": "PARG is the most well characterized enzyme in humans for PAR hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "PAR glycohydrolase (PARG) is the most well characterized enzyme in humans for PAR hydrolysis, which utilises a macrodomain fold to bind ADPr and specifically cleaves the ribose\u2013ribose bonds between the subunits of the PAR chains (Lin et al., 1997; Slade et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "cecd3061-7f80-4f01-b836-2edbc1fde9ad",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C18",
+      "claim": "PARG utilises a macrodomain fold to bind ADPr and specifically cleaves the ribose\u2013ribose bonds between the subunits of the PAR chains.",
+      "claim_type": "EXPLICIT",
+      "source": "PAR glycohydrolase (PARG) is the most well characterized enzyme in humans for PAR hydrolysis, which utilises a macrodomain fold to bind ADPr and specifically cleaves the ribose\u2013ribose bonds between the subunits of the PAR chains (Lin et al., 1997; Slade et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural and functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "b21e775f-91d2-43e9-bd90-b99408460b08",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C19",
+      "claim": "ARH3 is able to degrade PAR chains on proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "ADP-ribosylhydrolase 3 (ARH3, also called ADPRHL2) is also able to degrade PAR chains on proteins, but features a different structural composition to PARG, and hydrolyses PAR less efficiently (Hatakeyama et al., 1986; Mueller-Dieckmann et al., 2006; Oka et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "6e9a5941-7e96-46f7-bd03-015ced33aa6b",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C20",
+      "claim": "ARH3 features a different structural composition to PARG and hydrolyses PAR less efficiently than PARG.",
+      "claim_type": "EXPLICIT",
+      "source": "ADP-ribosylhydrolase 3 (ARH3, also called ADPRHL2) is also able to degrade PAR chains on proteins, but features a different structural composition to PARG, and hydrolyses PAR less efficiently (Hatakeyama et al., 1986; Mueller-Dieckmann et al., 2006; Oka et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "3d095e8b-f548-4251-b884-11363e8bce1c",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C21",
+      "claim": "Neither PARG nor ARH3 were previously shown to be able to process a single unit of ADPr (mono-ADPr) attached to a protein.",
+      "claim_type": "EXPLICIT",
+      "source": "However, neither PARG nor ARH3 were previously shown to be able to process a single unit of ADPr (mono-ADPr) attached to a protein (Oka et al., 2006; Slade et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "b40ef567-a957-4320-bcac-379194a299f2",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C22",
+      "claim": "TARG1, MACROD1, MACROD2 and ARH1 specifically cleave amino acid-linked ADPr moieties and do not degrade PAR chains.",
+      "claim_type": "EXPLICIT",
+      "source": "This MARylation is instead regulated by a different suite of proteins that do not degrade PAR chains, but rather specifically cleave amino acid-linked ADPr moieties; terminal ADPr protein glycohydrolase (TARG1), MACROD1, MACROD2 and ARH1 (Barkauskaite et al., 2015; Feijs et al., 2013; Jankevicius et al., 2013; Mashimo et al., 2014; Rosenthal et al., 2013; Sharifi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "5643c983-da88-434e-85fa-3071d84f21a5",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C23",
+      "claim": "TARG1, MACROD1 and MACROD2 hydrolyse acidic residue (Asp/Glu) linked mono-ADPr.",
+      "claim_type": "EXPLICIT",
+      "source": "TARG1, MACROD1 and MACROD2 have been shown to hydrolyse acidic residue (Asp/Glu) linked mono-ADPr, whilst ARH1 is capable of removing ADPr from arginine (Glowacki et al., 2002; Jankevicius et al., 2013; Rosenthal et al., 2013; Sharifi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "45316e69-fd60-4713-8422-7ba7578cd9d4",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C24",
+      "claim": "ARH1 is capable of removing ADPr from arginine.",
+      "claim_type": "EXPLICIT",
+      "source": "TARG1, MACROD1 and MACROD2 have been shown to hydrolyse acidic residue (Asp/Glu) linked mono-ADPr, whilst ARH1 is capable of removing ADPr from arginine (Glowacki et al., 2002; Jankevicius et al., 2013; Rosenthal et al., 2013; Sharifi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "618865f7-910c-4e19-8682-5d89b9142f52",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C25",
+      "claim": "PARP-dependent ADP-ribosylation signalling is a rapid and dynamic process in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "PARP-dependent ADP-ribosylation signalling is a rapid and dynamic process in human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PARP signaling dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "6025f967-8cf0-4505-897e-ba90d1d1230e",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C26",
+      "claim": "Within minutes of incurring DNA damage, the peak PARylation signal is observed, before it quickly diminishes.",
+      "claim_type": "EXPLICIT",
+      "source": "Within minutes of incurring DNA damage, the peak PARylation signal is observed, before it quickly diminishes (Figure 1A) (Hakm\u00e9 et al., 2008; Mortusewicz et al., 2007; Tallis et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous research and data shown in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "54360326-7b07-4581-897b-3da4f27ca01a",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C27",
+      "claim": "All detected Ser-ADPr marks increased in cells exposed to oxidative DNA damage for 10 min.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, all the detected Ser-ADPr marks increased in cells exposed to oxidative DNA damage for 10 min (Figure 1C\u2013D and Figure 1\u2014figure supplement 1, Figure 1\u2014source data 1) (Leidecker et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1C-D and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "ac10efa6-903a-4581-a58e-6ee6b76db174",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C28",
+      "claim": "After 120 min of H2O2 treatment, Ser-ADPr returned to levels similar to the untreated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after 120 min of H2O2 treatment, Ser-ADPr returned to levels similar to the untreated cells (Figure 1C\u2013D and Figure 1\u2014figure supplement 1, Figure 1\u2014source data 1), demonstrating that Ser-ADPr is also a reversible modification.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1C-D and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "2bdc7e21-3cd3-4641-80ae-3fe132e555f7",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C29",
+      "claim": "Only ARH3 was able to catalyse removal of ADPr from the histone peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, only ARH3 was able to catalyse removal of ADPr from the histone peptide, implicating a serine ADP-ribosylhydrolase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the hydrolase screening assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "9b1ba595-1acf-4fc1-b2b7-1db4e592af54",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C30",
+      "claim": "Both PARG and ARH3 were able to degrade the PAR chains on automodified PARP1.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we also observed that both PARG and ARH3 were able to degrade the PAR chains on automodified PARP1 (Figure 2A, lanes 2 and 8), albeit ARH3 was less efficient in removing the chains (Figure 2B, Figure 2\u2014figure supplement 1A) (Mueller-Dieckmann et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "5a0730c5-ea9e-478b-a85e-0b21283cecc3",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C31",
+      "claim": "ARH3 was less efficient than PARG in removing PAR chains.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we also observed that both PARG and ARH3 were able to degrade the PAR chains on automodified PARP1 (Figure 2A, lanes 2 and 8), albeit ARH3 was less efficient in removing the chains (Figure 2B, Figure 2\u2014figure supplement 1A) (Mueller-Dieckmann et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2B and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "182c38d4-ab48-4306-acf0-37be46c90905",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C32",
+      "claim": "ARH3 was able to remove both the PARylation and mono(ADP-ribosyl)ation of H1.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst ARH3 was able to remove both the PARylation and mono(ADP-ribosyl)ation of H1, PARG was only able to degrade the PAR chains on histone H1 and PARP1, leaving a mono(ADP-ribosyl)ation signal that was visible as two distinct bands at the sizes of H1 and PARP1 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "958fb42d-8116-46aa-ad35-79d110834d7a",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C33",
+      "claim": "PARG was only able to degrade the PAR chains on histone H1 and PARP1, leaving a mono(ADP-ribosyl)ation signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst ARH3 was able to remove both the PARylation and mono(ADP-ribosyl)ation of H1, PARG was only able to degrade the PAR chains on histone H1 and PARP1, leaving a mono(ADP-ribosyl)ation signal that was visible as two distinct bands at the sizes of H1 and PARP1 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "dec9e98a-10ad-413c-b052-8d62e5ba4d0d",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C34",
+      "claim": "Most of the ADP-ribosylated chains had been attached to serine residues.",
+      "claim_type": "EXPLICIT",
+      "source": "A double digestion with PARG/ARH3 confirmed that most of the ADP-ribosylated chains had been attached to serine residues (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data from double digestion experiments shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "f24dc399-3097-4b13-a8eb-9c793dcd9e46",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C35",
+      "claim": "The E988Q mutation alters the activity of PARP1 to that of mono-ADP-ribosylation.",
+      "claim_type": "EXPLICIT",
+      "source": "The E988Q mutation alters the activity of PARP1 to that of mono-ADP-ribosylation, so in this way we were able to generate Ser mono-ADPr modifications on a protein target that is otherwise PARylated under wild type conditions (Figure 2\u2014figure supplement 1B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "b8b0d05d-de90-4efa-8a90-8b5d41f01d9c",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C36",
+      "claim": "The serine mono-ADP-ribosylated histone H1 samples were only hydrolysed by ARH3.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the serine mono-ADP-ribosylated histone H1 samples were only hydrolysed by ARH3 (Figure 2C, lane 9), with no notable reduction in mono-ADP-ribose band intensity by the other hydrolases, including PARG.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "f22fcaeb-197c-4e31-b084-473d4aa7cecf",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C37",
+      "claim": "All identified histone ADPr peptides were significantly decreased in samples treated with recombinant ARH3.",
+      "claim_type": "EXPLICIT",
+      "source": "All the identified histone ADPr peptides were significantly decreased in samples treated with recombinant ARH3 (Figure 2D, Figure 2\u2014source data 1), demonstrating that this hydrolase is also able to remove Ser-ADPr from endogenous histones.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative proteomics data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "7b4b4e94-ddcc-4d4b-80bd-763cd739abf4",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C38",
+      "claim": "ARH3 is able to remove Ser-ADPr from endogenous histones.",
+      "claim_type": "EXPLICIT",
+      "source": "All the identified histone ADPr peptides were significantly decreased in samples treated with recombinant ARH3 (Figure 2D, Figure 2\u2014source data 1), demonstrating that this hydrolase is also able to remove Ser-ADPr from endogenous histones.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative proteomics data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "3a908abf-7c13-4da7-b0d2-1418bb140fab",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C39",
+      "claim": "The isolated PARP1 automodification domain (aa 374-525) is modified on 3 serine residues when incubated in the presence of full length PARP1 and HPF1.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently characterised the Ser-ADPr sites on the isolated automodifcation domain of PARP1 (aa 374-525) when incubated in the presence of full length PARP1 and HPF1 (Bonfiglio et al., 2017a). During this reaction, the isolated domain is modified on 3 serine residues",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "ff2609b9-27e8-4ddb-be0e-671aa76d1c32",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C40",
+      "claim": "ARH3 was efficient at removing Ser-ADPr modifications from both the mono- and poly-ADP-ribosylated automodification domain.",
+      "claim_type": "EXPLICIT",
+      "source": "ARH3 was efficient at removing Ser-ADPr modifications from both the mono- and poly-ADP-ribosylated automodification domain, confirming the capability to hydrolyse serine linked ADP-ribose from protein targets besides histones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the hydrolase assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "ccbfb805-946e-46e5-862d-6c8df182e45f",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C41",
+      "claim": "ARH3 alone was sufficient for the complete removal of Ser-ADPr from H3 histone peptide in the absence of PARP1 and HPF1.",
+      "claim_type": "EXPLICIT",
+      "source": "The autoradiogram demonstrated that ARH3 alone was sufficient for the complete removal of Ser-ADPr from H3 histone peptide in the absence of PARP1 and HPF1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by autoradiogram data from the purified peptide assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "426e0b80-73aa-4138-b5b5-1bb7d0d9b03a",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C42",
+      "claim": "The purified ADP-ribosylated H2B peptide is efficiently and specifically de-ADP-ribosylated by ARH3.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous study established that Ser6 of H2B is ADP-ribosylated by PARP1 in the presence of HPF1 (Bonfiglio et al., 2017a), and similarly as for H3, we could show that the purified ADP-ribosylated H2B peptide is efficiently and specifically de-ADP-ribosylated by ARH3 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "94ba7e65-59e9-4e92-a72a-ddab82cc15e9",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C43",
+      "claim": "Asp77 and Asp78 are critical acidic amino acids required for coordination of a magnesium ion and poly(ADP-ribose) hydrolysis in ARH3.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier research on ARH3 identified the critical acidic amino acids Asp77 and Asp78 that are required for coordination of a magnesium ion and poly(ADP-ribose) hydrolysis (Oka et al., 2006) (Figure 3C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to previous research and structural data shown in Figure 3C.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "98c1ec0c-6b69-48e6-9e94-efcf3d2a1b34",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C44",
+      "claim": "Only wild type ARH3 was able to remove the Ser-ADPr modification from the histone H3 and H2B peptides, while D77N, D78N, and D77N D78N mutants could not.",
+      "claim_type": "EXPLICIT",
+      "source": "Only wild type ARH3 was able to remove the Ser-ADPr modification from the histone H3 and H2B peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data from mutant ARH3 experiments shown in Figure 3D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "02feb1c9-cb02-4205-b97c-738051d48a56",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C45",
+      "claim": "Asp77 and Asp78 are necessary for both PAR and serine-ADPr hydrolysis by ARH3.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that Asp77 and Asp78 are necessary for both PAR and serine-ADPr hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutant experiments showing loss of activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "0bd4a715-27b9-4f87-b79d-2b2b55c7dbfe",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C46",
+      "claim": "In the presence of the metal chelating agent EDTA, ARH3 was unable to hydrolyse the substrate, confirming that the activity is Mg2+ dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, in the presence of the metal chelating agent EDTA, ARH3 was unable to hydrolyse the substrate, confirming that the activity is Mg2+ dependent (Figure 3D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "6f5ceab2-66de-4b91-8dac-128a5001190a",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C47",
+      "claim": "ARH3 enzymatic activity is concentration and time dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we showed that ARH3 enzymatic activity is concentration and time dependent (Figure 3F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "d3f2b991-2314-49e3-8c61-102841a56c08",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C48",
+      "claim": "ARH3 was highly efficient against Ser-ADPr and quantitatively hydrolysed the substrate at nanomolar enzyme concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, ARH3 was highly efficient against Ser-ADPr and quantitatively hydrolysed the substrate at nanomolar enzyme concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by concentration-dependent activity data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "6558968c-e1d7-4790-9fc1-d8beb8809043",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C49",
+      "claim": "Both MACROD2 and TARG1, but not ARH1, nor ARH3, were able to catalyse the efficient removal of glutamate mono-ADP-ribose from the PARP1 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The autoradiogram shows that both MACROD2 and TARG1, but not ARH1, nor ARH3, were able to catalyse the efficient removal of glutamate mono-ADP-ribose from the PARP1 protein (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "52b21caf-0645-4a43-96c9-85318627fd9d",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C50",
+      "claim": "Only ARH1, but not ARH2, ARH3 or TARG1, efficiently cleaved the arginine ADP-ribosylated proteins in the cell extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4B shows that only ARH1 (that was used as a positive control), but not ARH2, ARH3 or TARG1, efficiently cleaved the arginine ADP-ribosylated proteins in the cell extracts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "b99b1c17-50b5-4983-987c-cf6cc3557a96",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C51",
+      "claim": "ARH3 and TARG1 showed no activity against lysine-linked ADPr on H3 peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no activity of ARH3, nor TARG1 against this substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data from the lysine-ADPr assay shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "1936a501-5a15-468e-b9d4-9fe53e1771a0",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C52",
+      "claim": "ARH3 is unable to catalyse the efficient removal of glutamate, arginine or lysine linked ADP-ribose moieties, and is specific for Ser-ADPr hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "All together, these findings confirm that ARH3 is unable to catalyse the efficient removal of glutamate, arginine or lysine linked ADP-ribose moieties, and is specific for Ser-ADPr hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined results of specificity assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "dc68bc6b-794f-4346-be19-92c079b86ee5",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C53",
+      "claim": "ARH3 KO cells showed higher levels of ADP-ribosylated proteins under unstimulated conditions compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "When compared to control cells, ARH3 KO cells showed higher levels of ADP-ribosylated proteins under unstimulated conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "05cba8a6-ae6d-450d-9b9d-036ebd9f905e",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C54",
+      "claim": "ADP-ribosylation is dramatically induced in both wt and ARH3 KO cells following DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5A, ADP-ribosylation is dramatically induced in both wt and ARH3 KO cells following DNA damage (see 10 min samples), particularly on PARP1 and Histone proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "d3b93470-5a7f-41f0-b8ce-16e002bbdd70",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C55",
+      "claim": "At 2 hr post DNA damage, in the ARH3 KO cells the ADPr signal persisted whilst in the wild type cells the ADPr signal was greatly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the difference between wt and ARH3 KO cells became dramatic at 2 hr post DNA damage, in the ARH3 KO cells the ADPr signal persisted whilst in the wild type cells the ADPr signal was greatly reduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "2b7b33de-17da-461e-94e1-26b51ca95656",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C56",
+      "claim": "The persistence of ADPr signal at 2 hr post DNA damage was most clear with the short oligo- and mono-ADPr as detected by pan-ADPr antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation was most clear with the short oligo- and mono-ADPr as detected by pan-ADPr antibody, while turnover of long chains (see the signal at PARP1 detected by PAR antibody) was much less affected (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "d2af5760-930d-4e4c-a9a4-7e31d7428459",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C57",
+      "claim": "PARG is required in an early phase of DNA-damage response, shortening long chains of Ser-ADPr substrates, producing mono (and likely very short chains) which subsequently are substrates of ARH3 enzymatic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This may suggest that PARG is required in an early phase of DNA-damage response, shortening long chains of Ser-ADPr substrates, producing mono (and likely very short chains) which subsequently are substrates of ARH3 enzymatic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the differential effects on long vs short chains.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "e9a71192-b79b-43a5-820d-e90b0ca1229d",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C58",
+      "claim": "ARH3 erases the persisting ADPr signal at 120 min post DNA damage when added to ARH3 KO extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen in Figure 5B, ARH3 erases the persisting ADPr signal (at 120 min post DNA damage), confirming that ARH3 is both necessary and sufficient for removal of these modifications.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "b77c0ea1-c3b2-447c-a482-965cbdf95e7c",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C59",
+      "claim": "ARH3 is both necessary and sufficient for removal of ADPr modifications persisting at 120 min post DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen in Figure 5B, ARH3 erases the persisting ADPr signal (at 120 min post DNA damage), confirming that ARH3 is both necessary and sufficient for removal of these modifications.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by complementation experiments shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "a4f73262-609d-4f8b-97e7-5945e1f5fc89",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C60",
+      "claim": "MACROD2 and PARG were not capable of hydrolysing the persisting ADPr substrates at 120 min post DNA damage when added to the extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "MACROD2 and PARG were not capable of hydrolysing the same substrates, when added to the extracts and probed with pan-ADPr, suggesting that accumulation of monoADPr was on serine residues (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "62d3299b-f47b-4a4e-a04b-aaaeb4da823f",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C61",
+      "claim": "The accumulation of monoADPr in ARH3 KO cells at 120 min post DNA damage was on serine residues.",
+      "claim_type": "EXPLICIT",
+      "source": "MACROD2 and PARG were not capable of hydrolysing the same substrates, when added to the extracts and probed with pan-ADPr, suggesting that accumulation of monoADPr was on serine residues (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the specificity of the hydrolases tested.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "299e220f-f464-494f-884c-0613334ccc37",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C62",
+      "claim": "After 120 min of DNA damage, the levels of histone Ser-ADPr were dramatically increased in ARH3 KO cells compared the wild type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, after 120 min of DNA damage, the levels of histone Ser-ADPr were dramatically increased in ARH3 KO cells compared the wild type cells. (Figure 5D, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "0fdc4391-8fd6-4ec8-8fa3-661d213fd2d8",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C63",
+      "claim": "ARH3 completely removes ADPr from core histones derived from DNA damage treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Identically to what we observed for in vitro Ser-ADPr on peptides and proteins, ARH3 completely removes ADPr from core histones derived from DNA damage treated cells (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "9b57f470-3653-44ac-8e88-478d713532e4",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C64",
+      "claim": "Histone ADPr is exclusively on serine residues under DNA damage experimental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirms our previous mass spectrometric analyses that conclusively identified histone ADPr on serine, but not other residues (Leidecker et al., 2016), thus providing further indication of serines as the exclusive modification sites on core histones under these experimental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous mass spectrometry work and the ARH3 specificity data.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "6e8e575e-e35e-473b-9521-b538b1f4f94e",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C65",
+      "claim": "Following a strong induction of histone Ser-ADPr after 10 min of treatment with peroxide, the modification is completely reversed after 120 min.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, following a strong induction of histone Ser-ADPr after 10 min of treatment with peroxide, the modification is completely reversed after 120 min (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "9ca92c5c-28ef-43bf-bca3-a9314500fd50",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C66",
+      "claim": "Disruption of the enzymes responsible for deconjugational (and conjugational) dynamics of PTMs often leads to disease states.",
+      "claim_type": "EXPLICIT",
+      "source": "As with all homeostatic and stress control systems, this level of regulation relies on reversibility to maintain balance, in this case the fine-tuning of the attachment and removal of PTMs. In fact, disruption of the enzymes responsible for deconjugational (and conjugational) dynamics of PTMs often leads to disease states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general knowledge about PTM regulation and disease.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "490bf615-3ddb-4a8d-a9c9-c7911c3ece26",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C67",
+      "claim": "Disregulation of mono- or poly-ADPr processes can result in neurodegenerative disorders and cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "This also applies to ADP-ribosylation, as disregulation of mono- or poly-ADPr processes can result in neurodegenerative disorders and cancer (B\u00fctepage et al., 2015; Hanai et al., 2004; Rouleau et al., 2010; Sharifi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "e9d80294-84b0-4aa4-b220-23d82778e6b1",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C68",
+      "claim": "Nearly 300 hundred Ser-ADPr modification sites were identified in proteins extracted from living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data identified nearly 300 hundred Ser-ADPr modification sites in proteins extracted from living cells, suggesting that this PTM is widespread across a breadth of pathways including; DNA repair, chromatin organisation, mitotic nuclear division, DNA recombination, transcriptional regulation and mRNA splicing amongst others (Bonfiglio et al., 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "8ceb8127-657e-4a80-898c-4aa3ece94867",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C69",
+      "claim": "Ser-ADPr is widespread across pathways including DNA repair, chromatin organisation, mitotic nuclear division, DNA recombination, transcriptional regulation and mRNA splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data identified nearly 300 hundred Ser-ADPr modification sites in proteins extracted from living cells, suggesting that this PTM is widespread across a breadth of pathways including; DNA repair, chromatin organisation, mitotic nuclear division, DNA recombination, transcriptional regulation and mRNA splicing amongst others (Bonfiglio et al., 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the identification of modification sites in proteins involved in these pathways.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "80349af2-e0eb-4dab-bba7-ef1940656b37",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C70",
+      "claim": "At least a fraction of Ser-ADPr targets are modified by the HPF1/PARP1/2 complex, including histones, PARP1 itself and High Mobility Group (HMG) proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We further showed that at least a fraction of these Ser-ADPr targets are modified by the HPF1/PARP1/2 complex, including histones, PARP1 itself and High Mobility Group (HMG) proteins, as we were able to reconstitute the sites in vitro using recombinant proteins (Bonfiglio et al., 2017a; Gibbs-Seymour et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the authors' previous work showing in vitro reconstitution.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "c81b8cea-959a-43e2-abe7-646fe24f2a70",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C71",
+      "claim": "ARH3 has previously been demonstrated to cleave PAR chains, although less rapidly than PARG.",
+      "claim_type": "EXPLICIT",
+      "source": "ARH3 has previously been demonstrated to cleave PAR chains, although less rapidly than PARG, but also to hydrolyse O-acetyl-ADP-ribose by-products generated by Sir2 deacetylases (Mashimo et al., 2013; Oka et al., 2006; Ono et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "dc1ac1b0-8a58-4159-8f74-57e1b3f0077e",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C72",
+      "claim": "ARH3 hydrolyses O-acetyl-ADP-ribose by-products generated by Sir2 deacetylases.",
+      "claim_type": "EXPLICIT",
+      "source": "ARH3 has previously been demonstrated to cleave PAR chains, although less rapidly than PARG, but also to hydrolyse O-acetyl-ADP-ribose by-products generated by Sir2 deacetylases (Mashimo et al., 2013; Oka et al., 2006; Ono et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "a2c40acf-cbcd-4d3c-beb3-45b31404521e",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C73",
+      "claim": "ARH3 is capable of efficiently removing Ser-ADPr in a magnesium-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we established that ARH3 is also capable of efficiently removing Ser-ADPr in a magnesium-dependent manner, and that mutation of key aspartate residues (which are also critical for PAR cleavage) ablates this activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "68ec16c5-8078-4be5-b540-ceb2b605389a",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C74",
+      "claim": "Mutation of key aspartate residues (which are also critical for PAR cleavage) ablates ARH3's Ser-ADPr hydrolysis activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we established that ARH3 is also capable of efficiently removing Ser-ADPr in a magnesium-dependent manner, and that mutation of key aspartate residues (which are also critical for PAR cleavage) ablates this activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from mutant ARH3 experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "9a2b6b9c-b3b7-4964-bea0-5b2408173c6c",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C75",
+      "claim": "ARH3 protein possesses a mitochondrial targeting peptide at the N-terminus (both in Human and Murine proteins).",
+      "claim_type": "EXPLICIT",
+      "source": "Prior observations suggest a wide distribution of ARH3 throughout the cell; cytosol, nucleus and mitochondria\u2014an interesting array of localisations given that the ARH3 protein possesses a mitochondrial targeting peptide at the N-terminus (both in Human and Murine proteins) (Mashimo et al., 2013; Niere et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "2de340bb-e708-4bdc-a602-3a515918dec2",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C76",
+      "claim": "ARH3 has a wide distribution throughout the cell including cytosol, nucleus and mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior observations suggest a wide distribution of ARH3 throughout the cell; cytosol, nucleus and mitochondria\u2014an interesting array of localisations given that the ARH3 protein possesses a mitochondrial targeting peptide at the N-terminus (both in Human and Murine proteins) (Mashimo et al., 2013; Niere et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "d5d193fc-01a1-43f9-8aeb-8c69ddd467fe",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C77",
+      "claim": "ARH3 functioned in the degradation of PAR chains that had been released by both nuclear and cytosolic PARG following the oxidative stress exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies suggested that ARH3 functioned in the degradation of PAR chains that had been released by both nuclear and cytosolic PARG following the oxidative stress exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous studies about ARH3 function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "89341bb0-2f7f-4b39-a118-a59ee93aea75",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C78",
+      "claim": "ARH3 buffers the Parthanatos response (a Caspase-independent cell death induced by the transport and binding of PAR to mitochondrial protein AIF).",
+      "claim_type": "EXPLICIT",
+      "source": "As a result of this cooperation, ARH3 buffers the Parthanatos response (a Caspase-independent cell death induced by the transport and binding of PAR to mitochondrial protein AIF) (Mashimo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "1ce0a6a4-f818-4db8-bcba-c60346661372",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C79",
+      "claim": "ARH3 KO MEFs were found to be sensitive to hydrogen peroxide compared to wild type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, ARH3 KO MEFs were found to be sensitive to hydrogen peroxide compared to wild type cells, and in the absence of ARH3 protein PAR was observed to accumulate in the nucleus (Mashimo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "ff179c34-bc95-4f6a-839d-d7046c065021",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C80",
+      "claim": "In the absence of ARH3 protein PAR was observed to accumulate in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, ARH3 KO MEFs were found to be sensitive to hydrogen peroxide compared to wild type cells, and in the absence of ARH3 protein PAR was observed to accumulate in the nucleus (Mashimo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "39403dc7-d8a9-4c2c-ac87-13a89c8b0a56",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C81",
+      "claim": "The sensitivity of the ARH3 KO MEFs to hydrogen peroxide was rescued by treatment with a PARP1 inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the sensitivity of the ARH3 KO MEFs to hydrogen peroxide was rescued by treatment with a PARP1 inhibitor, linking the function of ARH3 to the PARP1 controlled DNA damage response (Mashimo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "fad62f93-6b43-40a1-a31e-141c95142def",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C82",
+      "claim": "The ADP-ribose linked to serine via an O-glycosidic bond is chemically similar to the ribose-ribose bond within the ADP-ribose polymer.",
+      "claim_type": "EXPLICIT",
+      "source": "The ADP-ribose linked to serine via an O-glycosidic bond is chemically similar to the ribose-ribose bond within the ADP-ribose polymer (Bonfiglio et al., 2017b; Leidecker et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work describing the chemical structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "5f6f68a2-db35-465b-8e2a-1b05d9616af3",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C83",
+      "claim": "PARG has a preference for binding to the long PAR chains and is inefficient in hydrolysing short oligo-ADPr fragments and incapable or removing mono-ADPr.",
+      "claim_type": "EXPLICIT",
+      "source": "Both enzymes perform acid-base catalysis in PAR hydrolysis, but PARG has a preference for binding to the long PAR chains and is inefficient in hydrolysing short oligo-ADPr fragments and incapable or removing mono-ADPr (Barkauskaite et al., 2013; Hatakeyama et al., 1986; Mueller-Dieckmann et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "7cbc7926-5d13-48bf-a41e-89af81fd28c0",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C84",
+      "claim": "Both PARG and ARH3 perform acid-base catalysis in PAR hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Both enzymes perform acid-base catalysis in PAR hydrolysis, but PARG has a preference for binding to the long PAR chains and is inefficient in hydrolysing short oligo-ADPr fragments and incapable or removing mono-ADPr (Barkauskaite et al., 2013; Hatakeyama et al., 1986; Mueller-Dieckmann et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "0e0d0cc1-da2a-447b-8bb5-41a292b5870e",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C85",
+      "claim": "PARG adopts a macrodomain fold with a unique catalytic loop allowing for hydrolysis of ADPr.",
+      "claim_type": "EXPLICIT",
+      "source": "Architecturally, both enzymes are clearly distinct from each other, with PARG adopting a macrodomain fold with a unique catalytic loop allowing for hydrolysis of ADPr, whilst ARH3 has an eponymous ARH fold featuring a binucleate Mg2+ catalytic site (Barkauskaite et al., 2013; Mueller-Dieckmann et al., 2006; Slade et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "62c37177-ab34-45a2-b61f-11ac3d9fb3ee",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C86",
+      "claim": "ARH3 has an eponymous ARH fold featuring a binucleate Mg2+ catalytic site.",
+      "claim_type": "EXPLICIT",
+      "source": "Architecturally, both enzymes are clearly distinct from each other, with PARG adopting a macrodomain fold with a unique catalytic loop allowing for hydrolysis of ADPr, whilst ARH3 has an eponymous ARH fold featuring a binucleate Mg2+ catalytic site (Barkauskaite et al., 2013; Mueller-Dieckmann et al., 2006; Slade et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "95e1d8ba-d601-4d51-bd32-b932af645129",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C87",
+      "claim": "Mass spectrometry has played an indispensable role in the discovery of Ser-ADPr as a widespread signal in DNA repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Advanced mass spectrometry has played an indispensable role in the discovery of Ser-ADPr as a widespread signal in DNA repair and in the identification of the enzymes and cofactors responsible for its attachment (Bonfiglio et al., 2017a; Leidecker et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the authors' previous mass spectrometry work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "0eb4c365-d505-46bb-8632-8bc8e66e2164",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C88",
+      "claim": "ARH3 allows a simple exploration of histone Ser-ADPr dynamics during DNA damage response when used in combination with the anti-pan ADPr binding reagent.",
+      "claim_type": "EXPLICIT",
+      "source": "In combination with available biological techniques and tools, such as the anti-pan ADPr binding reagent (Gibson et al., 2016), we showed that ARH3 allows a simple exploration of histone Ser-ADPr dynamics during DNA damage response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data demonstrating the use of ARH3 as a tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "a7adaf75-93dd-4aa6-b850-6be22925836f",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C89",
+      "claim": "U2OS cells were treated with H2O2 and analysed at indicated time-points.",
+      "claim_type": "EXPLICIT",
+      "source": "U2OS cells were treated with H2O2 and analysed at indicated time-points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "08bc04b4-89b2-4e86-adf8-d250778c8a70",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C90",
+      "claim": "Light labeled (Lys0) cells treated for 10 min with 2 mM H2O2 were used as SILAC Standard.",
+      "claim_type": "EXPLICIT",
+      "source": "Light labeled (Lys0) cells treated for 10 min with 2 mM H2O2 were used as SILAC Standard.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design for the SILAC experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "2e56e78c-4c6a-4a72-a2e9-c645d39b7bca",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "claim_id": "C91",
+      "claim": "Ser6 of H2B is ADP-ribosylated by PARP1 in the presence of HPF1.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous study established that Ser6 of H2B is ADP-ribosylated by PARP1 in the presence of HPF1 (Bonfiglio et al., 2017a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "55e047e0-6197-4018-b15c-a91580cce847",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Histone Ser-ADPr is reversible in cells during DNA damage response. Using SILAC-based quantitative proteomics, the authors show that Ser-ADPr marks on histones increase at 10 min post-H2O2 treatment and return to baseline levels by 120 min.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C27, C28 are directly supported by quantitative proteomics data shown in Figures 1C-D and supplementary figures. The SILAC experimental design (C89, C90) is appropriate for quantifying dynamic changes in PTMs. The time-course data clearly demonstrate reversibility of the modification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "3e4635c7-74fa-43ca-aeab-20426c81a155",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ARH3 is identified as the hydrolase capable of efficiently and specifically removing Ser-ADPr from histones and other proteins. Through screening of known hydrolases, only ARH3 removed ADPr from Ser-modified histone peptides and proteins, including H3, H2B, H1, and the PARP1 automodification domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C29, C36-C38, C40-C42 are well-supported by multiple complementary experimental approaches including in vitro hydrolase assays with peptides and proteins (Figures 2A-E, 3A-B), and quantitative proteomics (Figure 2D). The screening was comprehensive, testing multiple known hydrolases with different amino acid specificities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "8e4582b9-b14b-412e-8a8a-2e379a925b62",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ARH3's Ser-ADPr hydrolase activity requires critical catalytic residues Asp77 and Asp78 and is Mg2+-dependent. Mutation of these residues or addition of EDTA abolishes activity against Ser-ADPr substrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46, C73-C74 are supported by mutational analysis (Figure 3D-E) showing loss of activity in D77N, D78N, and double mutants, and by EDTA chelation experiments. These results are consistent with prior structural knowledge (C43) and establish the mechanistic basis for ARH3's activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "581b635c-f9f9-44c1-bfe2-21278d80552b",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ARH3 enzymatic activity is concentration- and time-dependent, with high efficiency at nanomolar concentrations. The enzyme quantitatively hydrolyzes Ser-ADPr substrates at nanomolar concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 are supported by concentration-response and time-course data (Figure 3F-G). The demonstration of activity at nanomolar concentrations indicates high catalytic efficiency, though formal kinetic parameters (Km, kcat) are not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "70ffc959-4a7c-44b1-b493-6370cc5840bb",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ARH3 is specific for Ser-ADPr and does not efficiently hydrolyze glutamate-, arginine-, or lysine-linked ADPr. Other hydrolases (MACROD2, TARG1, ARH1) show complementary specificities for these alternative linkages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 are supported by specificity assays using substrates with different amino acid linkages (Figure 4A-C). The negative results with Glu-, Arg-, and Lys-ADPr, combined with positive controls showing other hydrolases can process these substrates, establish ARH3's specificity for Ser-ADPr.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "5ae2f807-00ad-42d6-a832-dabd77bbd0cb",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Ser-ADPr is a major PTM in cells after DNA damage and its removal is dependent on ARH3. ARH3 KO cells show persistent ADPr signal at 2 hr post-DNA damage, particularly for mono- and short oligo-ADPr, which can be rescued by addition of recombinant ARH3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C53-C56, C58-C62 are supported by comprehensive analysis of ARH3 KO cells using Western blotting (Figure 5A-B) and mass spectrometry (Figure 5D). The complementation experiment (C58-C59) and specificity controls with MACROD2 and PARG (C60) strengthen the conclusion that ARH3 is necessary and sufficient for Ser-ADPr removal in cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "090465d1-57d6-4f36-ba74-60a50d43f203",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "PARG may function in an early phase of DNA damage response by shortening long Ser-ADPr chains, producing mono-ADPr substrates for subsequent ARH3 activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C57 is explicitly stated as speculation ('may suggest') based on differential effects on long vs. short chains observed in Figure 5A. While the observation that long PAR chains are less affected in ARH3 KO cells is valid, the proposed sequential model of PARG-then-ARH3 action lacks direct experimental support and represents a hypothesis for future testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "bfba1ed8-b429-4e77-b7cd-9cd6484f4453",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ARH3 removes both poly-ADPr and mono-ADPr from proteins, while PARG only degrades PAR chains, leaving mono-ADPr. Double digestion experiments confirm most ADP-ribosylated chains are attached to serine residues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 are supported by comparative hydrolase assays (Figure 2A-B and supplementary figures). The differential activities of PARG and ARH3 are clearly demonstrated, with PARG leaving mono-ADPr bands that ARH3 can remove. The double digestion experiment (C34) provides additional evidence for serine linkage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "a93f1002-8d44-42b8-96a7-d2ee71f733e8",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The PARP1 E988Q mutation converts the enzyme to a mono-ADP-ribosyltransferase, enabling generation of Ser mono-ADPr modifications on substrates that are otherwise poly-ADP-ribosylated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C35 is supported by data in Figure 2\u2014figure supplement 1B-C showing ETD-MS/MS identification of Ser-ADPr on substrates modified by PARP1 E988Q. This mutant is a well-established tool in the field for generating mono-ADPr substrates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "d324f72f-404d-4762-8e42-1965bbedbbf7",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ARH3 can be used as a tool to detect and study histone Ser-ADPr dynamics. ARH3 completely removes ADPr from core histones derived from DNA damage-treated cells, confirming serine as the exclusive modification site under these conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65, C88 are supported by Western blot analysis using pan-ADPr antibody combined with ARH3 treatment (Figure 6A-B). The complete removal of histone ADPr signal by ARH3, combined with its established specificity for Ser-ADPr, provides strong evidence for serine as the exclusive site. This establishes ARH3 as a useful experimental tool.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "1c2e44b1-65b5-478c-a6d6-b0b60161d6cb",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background information on ADP-ribosylation, PARP family members, known amino acid acceptors, and characterized hydrolases including PARG, ARH3, TARG1, MACROD1/2, and ARH1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C13, C17-C25, C66-C67, C82-C86 represent established knowledge from the field, supported by appropriate citations to prior literature. These provide necessary context for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "c4df0ffe-a1ed-4d20-bfd7-f6d1162b2bda",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work by the authors established Ser-ADPr as a modification catalyzed by PARP1/2 in complex with HPF1, with ~300 modification sites identified across proteins involved in DNA repair and related pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3, C14-C16, C39, C68-C70, C91 summarize the authors' previous discoveries, appropriately cited to their prior publications (Bonfiglio et al., 2017a; Leidecker et al., 2016; Gibbs-Seymour et al., 2016). These establish the foundation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "32a0cd55-b073-4837-adbe-728de754c277",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Peak PARylation signal is observed within minutes of DNA damage before quickly diminishing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 is supported by data in Figure 1A and citations to previous research. This establishes the dynamic nature of ADP-ribosylation signaling that motivates investigation of Ser-ADPr reversibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "5450198f-a295-44b4-9abf-e2d1d64adcf2",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior characterization of ARH3 showed it can cleave PAR chains (less efficiently than PARG), hydrolyze O-acetyl-ADP-ribose, has wide cellular distribution, and functions in DNA damage response and Parthanatos buffering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72, C75-C81 summarize prior knowledge about ARH3 from cited literature. These provide important context for the novel finding that ARH3 also hydrolyzes Ser-ADPr, and help explain the ARH3 KO phenotypes observed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    },
+    {
+      "id": "d56f86d5-9d58-423f-ac6c-e3f8cdcec8ce",
+      "content_id": "ac0ed914-5e84-4e4e-b6ca-33d6dc03c55f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Mass spectrometry has been indispensable for discovering Ser-ADPr as a widespread signal in DNA repair.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C87 is supported by citations to the authors' previous mass spectrometry work that identified Ser-ADPr. This contextualizes the development of ARH3 as an alternative tool for studying this modification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:43:32.000751Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "afd34975-2d84-4b00-9300-37e9b4a6e3cf",
+      "result_id": "55e047e0-6197-4018-b15c-a91580cce847"
+    },
+    {
+      "claim_id": "54360326-7b07-4581-897b-3da4f27ca01a",
+      "result_id": "55e047e0-6197-4018-b15c-a91580cce847"
+    },
+    {
+      "claim_id": "ac10efa6-903a-4581-a58e-6ee6b76db174",
+      "result_id": "55e047e0-6197-4018-b15c-a91580cce847"
+    },
+    {
+      "claim_id": "a7adaf75-93dd-4aa6-b850-6be22925836f",
+      "result_id": "55e047e0-6197-4018-b15c-a91580cce847"
+    },
+    {
+      "claim_id": "08bc04b4-89b2-4e86-adf8-d250778c8a70",
+      "result_id": "55e047e0-6197-4018-b15c-a91580cce847"
+    },
+    {
+      "claim_id": "99084ff2-f43d-445d-a94a-52e15eb422b5",
+      "result_id": "3e4635c7-74fa-43ca-aeab-20426c81a155"
+    },
+    {
+      "claim_id": "2bdc7e21-3cd3-4641-80ae-3fe132e555f7",
+      "result_id": "3e4635c7-74fa-43ca-aeab-20426c81a155"
+    },
+    {
+      "claim_id": "b8b0d05d-de90-4efa-8a90-8b5d41f01d9c",
+      "result_id": "3e4635c7-74fa-43ca-aeab-20426c81a155"
+    },
+    {
+      "claim_id": "f22fcaeb-197c-4e31-b084-473d4aa7cecf",
+      "result_id": "3e4635c7-74fa-43ca-aeab-20426c81a155"
+    },
+    {
+      "claim_id": "7b4b4e94-ddcc-4d4b-80bd-763cd739abf4",
+      "result_id": "3e4635c7-74fa-43ca-aeab-20426c81a155"
+    },
+    {
+      "claim_id": "ff2609b9-27e8-4ddb-be0e-671aa76d1c32",
+      "result_id": "3e4635c7-74fa-43ca-aeab-20426c81a155"
+    },
+    {
+      "claim_id": "ccbfb805-946e-46e5-862d-6c8df182e45f",
+      "result_id": "3e4635c7-74fa-43ca-aeab-20426c81a155"
+    },
+    {
+      "claim_id": "426e0b80-73aa-4138-b5b5-1bb7d0d9b03a",
+      "result_id": "3e4635c7-74fa-43ca-aeab-20426c81a155"
+    },
+    {
+      "claim_id": "94ba7e65-59e9-4e92-a72a-ddab82cc15e9",
+      "result_id": "8e4582b9-b14b-412e-8a8a-2e379a925b62"
+    },
+    {
+      "claim_id": "98c1ec0c-6b69-48e6-9e94-efcf3d2a1b34",
+      "result_id": "8e4582b9-b14b-412e-8a8a-2e379a925b62"
+    },
+    {
+      "claim_id": "02feb1c9-cb02-4205-b97c-738051d48a56",
+      "result_id": "8e4582b9-b14b-412e-8a8a-2e379a925b62"
+    },
+    {
+      "claim_id": "0bd4a715-27b9-4f87-b79d-2b2b55c7dbfe",
+      "result_id": "8e4582b9-b14b-412e-8a8a-2e379a925b62"
+    },
+    {
+      "claim_id": "a2c40acf-cbcd-4d3c-beb3-45b31404521e",
+      "result_id": "8e4582b9-b14b-412e-8a8a-2e379a925b62"
+    },
+    {
+      "claim_id": "68ec16c5-8078-4be5-b540-ceb2b605389a",
+      "result_id": "8e4582b9-b14b-412e-8a8a-2e379a925b62"
+    },
+    {
+      "claim_id": "6f5ceab2-66de-4b91-8dac-128a5001190a",
+      "result_id": "581b635c-f9f9-44c1-bfe2-21278d80552b"
+    },
+    {
+      "claim_id": "d3f2b991-2314-49e3-8c61-102841a56c08",
+      "result_id": "581b635c-f9f9-44c1-bfe2-21278d80552b"
+    },
+    {
+      "claim_id": "6558968c-e1d7-4790-9fc1-d8beb8809043",
+      "result_id": "70ffc959-4a7c-44b1-b493-6370cc5840bb"
+    },
+    {
+      "claim_id": "52b21caf-0645-4a43-96c9-85318627fd9d",
+      "result_id": "70ffc959-4a7c-44b1-b493-6370cc5840bb"
+    },
+    {
+      "claim_id": "b99b1c17-50b5-4983-987c-cf6cc3557a96",
+      "result_id": "70ffc959-4a7c-44b1-b493-6370cc5840bb"
+    },
+    {
+      "claim_id": "1936a501-5a15-468e-b9d4-9fe53e1771a0",
+      "result_id": "70ffc959-4a7c-44b1-b493-6370cc5840bb"
+    },
+    {
+      "claim_id": "d137d9b3-4dff-4553-9add-aa9887995f6c",
+      "result_id": "5ae2f807-00ad-42d6-a832-dabd77bbd0cb"
+    },
+    {
+      "claim_id": "0cc747d3-3bd2-4764-9d46-c5c137274824",
+      "result_id": "5ae2f807-00ad-42d6-a832-dabd77bbd0cb"
+    },
+    {
+      "claim_id": "dc68bc6b-794f-4346-be19-92c079b86ee5",
+      "result_id": "5ae2f807-00ad-42d6-a832-dabd77bbd0cb"
+    },
+    {
+      "claim_id": "05cba8a6-ae6d-450d-9b9d-036ebd9f905e",
+      "result_id": "5ae2f807-00ad-42d6-a832-dabd77bbd0cb"
+    },
+    {
+      "claim_id": "d3b93470-5a7f-41f0-b8ce-16e002bbdd70",
+      "result_id": "5ae2f807-00ad-42d6-a832-dabd77bbd0cb"
+    },
+    {
+      "claim_id": "2b7b33de-17da-461e-94e1-26b51ca95656",
+      "result_id": "5ae2f807-00ad-42d6-a832-dabd77bbd0cb"
+    },
+    {
+      "claim_id": "e9a71192-b79b-43a5-820d-e90b0ca1229d",
+      "result_id": "5ae2f807-00ad-42d6-a832-dabd77bbd0cb"
+    },
+    {
+      "claim_id": "b77c0ea1-c3b2-447c-a482-965cbdf95e7c",
+      "result_id": "5ae2f807-00ad-42d6-a832-dabd77bbd0cb"
+    },
+    {
+      "claim_id": "a4f73262-609d-4f8b-97e7-5945e1f5fc89",
+      "result_id": "5ae2f807-00ad-42d6-a832-dabd77bbd0cb"
+    },
+    {
+      "claim_id": "62d3299b-f47b-4a4e-a04b-aaaeb4da823f",
+      "result_id": "5ae2f807-00ad-42d6-a832-dabd77bbd0cb"
+    },
+    {
+      "claim_id": "299e220f-f464-494f-884c-0613334ccc37",
+      "result_id": "5ae2f807-00ad-42d6-a832-dabd77bbd0cb"
+    },
+    {
+      "claim_id": "d2af5760-930d-4e4c-a9a4-7e31d7428459",
+      "result_id": "090465d1-57d6-4f36-ba74-60a50d43f203"
+    },
+    {
+      "claim_id": "9b1ba595-1acf-4fc1-b2b7-1db4e592af54",
+      "result_id": "bfba1ed8-b429-4e77-b7cd-9cd6484f4453"
+    },
+    {
+      "claim_id": "5a0730c5-ea9e-478b-a85e-0b21283cecc3",
+      "result_id": "bfba1ed8-b429-4e77-b7cd-9cd6484f4453"
+    },
+    {
+      "claim_id": "182c38d4-ab48-4306-acf0-37be46c90905",
+      "result_id": "bfba1ed8-b429-4e77-b7cd-9cd6484f4453"
+    },
+    {
+      "claim_id": "958fb42d-8116-46aa-ad35-79d110834d7a",
+      "result_id": "bfba1ed8-b429-4e77-b7cd-9cd6484f4453"
+    },
+    {
+      "claim_id": "dec9e98a-10ad-413c-b052-8d62e5ba4d0d",
+      "result_id": "bfba1ed8-b429-4e77-b7cd-9cd6484f4453"
+    },
+    {
+      "claim_id": "f24dc399-3097-4b13-a8eb-9c793dcd9e46",
+      "result_id": "a93f1002-8d44-42b8-96a7-d2ee71f733e8"
+    },
+    {
+      "claim_id": "0fdc4391-8fd6-4ec8-8fa3-661d213fd2d8",
+      "result_id": "d324f72f-404d-4762-8e42-1965bbedbbf7"
+    },
+    {
+      "claim_id": "9b57f470-3653-44ac-8e88-478d713532e4",
+      "result_id": "d324f72f-404d-4762-8e42-1965bbedbbf7"
+    },
+    {
+      "claim_id": "6e8e575e-e35e-473b-9521-b538b1f4f94e",
+      "result_id": "d324f72f-404d-4762-8e42-1965bbedbbf7"
+    },
+    {
+      "claim_id": "0eb4c365-d505-46bb-8632-8bc8e66e2164",
+      "result_id": "d324f72f-404d-4762-8e42-1965bbedbbf7"
+    },
+    {
+      "claim_id": "9dcf6acf-86cc-40e4-b4b4-456db678d22b",
+      "result_id": "1c2e44b1-65b5-478c-a6d6-b0b60161d6cb"
+    },
+    {
+      "claim_id": "bb298391-4487-4d80-831d-36db1dd4ac87",
+      "result_id": "1c2e44b1-65b5-478c-a6d6-b0b60161d6cb"
+    },
+    {
+      "claim_id": "3586a2e9-a534-4b6b-af2b-247994304e14",
+      "result_id": "1c2e44b1-65b5-478c-a6d6-b0b60161d6cb"
+    },
+    {
+      "claim_id": "95ff9cd4-0367-4250-8305-8bd17c5226f1",
+      "result_id": "1c2e44b1-65b5-478c-a6d6-b0b60161d6cb"
+    },
+    {
+      "claim_id": "b90c5947-11bd-4c65-91b4-6a6acb7d185e",
+      "result_id": "1c2e44b1-65b5-478c-a6d6-b0b60161d6cb"
+    },
+    {
+      "claim_id": "4369bb70-3726-4125-a8c7-9214892cedee",
+      "result_id": "1c2e44b1-65b5-478c-a6d6-b0b60161d6cb"
+    },
+    {
+      "claim_id": "80b693d9-94a3-447f-81e3-9e4d16a2927c",
+      "result_id": "1c2e44b1-65b5-478c-a6d6-b0b60161d6cb"
+    },
+    {
+      "claim_id": "6fc1f1a9-2318-4984-90ec-b921041148e1",
+      "result_id": "1c2e44b1-65b5-478c-a6d6-b0b60161d6cb"
+    },
+    {
+      "claim_id": "cecd3061-7f80-4f01-b836-2edbc1fde9ad",
+      "result_id": "1c2e44b1-65b5-478c-a6d6-b0b60161d6cb"
+    },
+    {
+      "claim_id": "b21e775f-91d2-43e9-bd90-b99408460b08",
+      "result_id": "1c2e44b1-65b5-478c-a6d6-b0b60161d6cb"
+    },
+    {
+      "claim_id": "6e9a5941-7e96-46f7-bd03-015ced33aa6b",
+      "result_id": "1c2e44b1-65b5-478c-a6d6-b0b60161d6cb"
+    },
+    {
+      "claim_id": "3d095e8b-f548-4251-b884-11363e8bce1c",
+      "result_id": "1c2e44b1-65b5-478c-a6d6-b0b60161d6cb"
+    },
+    {
+      "claim_id": "b40ef567-a957-4320-bcac-379194a299f2",
+      "result_id": "1c2e44b1-65b5-478c-a6d6-b0b60161d6cb"
+    },
+    {
+      "claim_id": "5643c983-da88-434e-85fa-3071d84f21a5",
+      "result_id": "1c2e44b1-65b5-478c-a6d6-b0b60161d6cb"
+    },
+    {
+      "claim_id": "45316e69-fd60-4713-8422-7ba7578cd9d4",
+      "result_id": "1c2e44b1-65b5-478c-a6d6-b0b60161d6cb"
+    },
+    {
+      "claim_id": "618865f7-910c-4e19-8682-5d89b9142f52",
+      "result_id": "1c2e44b1-65b5-478c-a6d6-b0b60161d6cb"
+    },
+    {
+      "claim_id": "9ca92c5c-28ef-43bf-bca3-a9314500fd50",
+      "result_id": "1c2e44b1-65b5-478c-a6d6-b0b60161d6cb"
+    },
+    {
+      "claim_id": "490bf615-3ddb-4a8d-a9c9-c7911c3ece26",
+      "result_id": "1c2e44b1-65b5-478c-a6d6-b0b60161d6cb"
+    },
+    {
+      "claim_id": "fad62f93-6b43-40a1-a31e-141c95142def",
+      "result_id": "1c2e44b1-65b5-478c-a6d6-b0b60161d6cb"
+    },
+    {
+      "claim_id": "5f6f68a2-db35-465b-8e2a-1b05d9616af3",
+      "result_id": "1c2e44b1-65b5-478c-a6d6-b0b60161d6cb"
+    },
+    {
+      "claim_id": "7cbc7926-5d13-48bf-a41e-89af81fd28c0",
+      "result_id": "1c2e44b1-65b5-478c-a6d6-b0b60161d6cb"
+    },
+    {
+      "claim_id": "0e0d0cc1-da2a-447b-8bb5-41a292b5870e",
+      "result_id": "1c2e44b1-65b5-478c-a6d6-b0b60161d6cb"
+    },
+    {
+      "claim_id": "62c37177-ab34-45a2-b61f-11ac3d9fb3ee",
+      "result_id": "1c2e44b1-65b5-478c-a6d6-b0b60161d6cb"
+    },
+    {
+      "claim_id": "afe0ee5d-362e-4356-9ae0-bc8707bd3faa",
+      "result_id": "c4df0ffe-a1ed-4d20-bfd7-f6d1162b2bda"
+    },
+    {
+      "claim_id": "7c0c2978-8d60-4a79-a54e-07b2dd6396b0",
+      "result_id": "c4df0ffe-a1ed-4d20-bfd7-f6d1162b2bda"
+    },
+    {
+      "claim_id": "c47f94dd-22a5-4cb4-ab39-68e5430f67ab",
+      "result_id": "c4df0ffe-a1ed-4d20-bfd7-f6d1162b2bda"
+    },
+    {
+      "claim_id": "1a2fc7a1-f548-4a3d-a25e-746144d1deef",
+      "result_id": "c4df0ffe-a1ed-4d20-bfd7-f6d1162b2bda"
+    },
+    {
+      "claim_id": "73a4a884-d780-4c15-b6a9-2083ecac1e64",
+      "result_id": "c4df0ffe-a1ed-4d20-bfd7-f6d1162b2bda"
+    },
+    {
+      "claim_id": "3a908abf-7c13-4da7-b0d2-1418bb140fab",
+      "result_id": "c4df0ffe-a1ed-4d20-bfd7-f6d1162b2bda"
+    },
+    {
+      "claim_id": "e9d80294-84b0-4aa4-b220-23d82778e6b1",
+      "result_id": "c4df0ffe-a1ed-4d20-bfd7-f6d1162b2bda"
+    },
+    {
+      "claim_id": "8ceb8127-657e-4a80-898c-4aa3ece94867",
+      "result_id": "c4df0ffe-a1ed-4d20-bfd7-f6d1162b2bda"
+    },
+    {
+      "claim_id": "80349af2-e0eb-4dab-bba7-ef1940656b37",
+      "result_id": "c4df0ffe-a1ed-4d20-bfd7-f6d1162b2bda"
+    },
+    {
+      "claim_id": "2e56e78c-4c6a-4a72-a2e9-c645d39b7bca",
+      "result_id": "c4df0ffe-a1ed-4d20-bfd7-f6d1162b2bda"
+    },
+    {
+      "claim_id": "6025f967-8cf0-4505-897e-ba90d1d1230e",
+      "result_id": "32a0cd55-b073-4837-adbe-728de754c277"
+    },
+    {
+      "claim_id": "c81b8cea-959a-43e2-abe7-646fe24f2a70",
+      "result_id": "5450198f-a295-44b4-9abf-e2d1d64adcf2"
+    },
+    {
+      "claim_id": "dc1ac1b0-8a58-4159-8f74-57e1b3f0077e",
+      "result_id": "5450198f-a295-44b4-9abf-e2d1d64adcf2"
+    },
+    {
+      "claim_id": "9a2b6b9c-b3b7-4964-bea0-5b2408173c6c",
+      "result_id": "5450198f-a295-44b4-9abf-e2d1d64adcf2"
+    },
+    {
+      "claim_id": "2de340bb-e708-4bdc-a602-3a515918dec2",
+      "result_id": "5450198f-a295-44b4-9abf-e2d1d64adcf2"
+    },
+    {
+      "claim_id": "d5d193fc-01a1-43f9-8aeb-8c69ddd467fe",
+      "result_id": "5450198f-a295-44b4-9abf-e2d1d64adcf2"
+    },
+    {
+      "claim_id": "89341bb0-2f7f-4b39-a118-a59ee93aea75",
+      "result_id": "5450198f-a295-44b4-9abf-e2d1d64adcf2"
+    },
+    {
+      "claim_id": "1ce0a6a4-f818-4db8-bcba-c60346661372",
+      "result_id": "5450198f-a295-44b4-9abf-e2d1d64adcf2"
+    },
+    {
+      "claim_id": "ff179c34-bc95-4f6a-839d-d7046c065021",
+      "result_id": "5450198f-a295-44b4-9abf-e2d1d64adcf2"
+    },
+    {
+      "claim_id": "39403dc7-d8a9-4c2c-ac87-13a89c8b0a56",
+      "result_id": "5450198f-a295-44b4-9abf-e2d1d64adcf2"
+    },
+    {
+      "claim_id": "95e1d8ba-d601-4d51-bd32-b932af645129",
+      "result_id": "d56f86d5-9d58-423f-ac6c-e3f8cdcec8ce"
+    }
+  ],
+  "comparisons": []
+}

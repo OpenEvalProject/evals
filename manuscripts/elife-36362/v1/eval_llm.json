@@ -1,0 +1,360 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C35",
+      "C36"
+    ],
+    "result": "The authors identified 35 G2-tract putative quadruplex structures (PQS's) in the 5'- and 3'UTRs of polyamine biosynthesis pathway genes, with no G3-tract PQS's found. Specifically, 20 G2-PQS's were found across eleven 5'UTRs and 15 G2-PQS's in ten 3'UTRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C35, and C36 are directly supported by bioinformatics analysis using QGRS Mapper algorithm (Figure 1c). The search criteria and results are clearly documented, providing a comprehensive catalog of G2-motifs in polyamine pathway genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C50",
+      "C53",
+      "C54",
+      "C56",
+      "C58"
+    ],
+    "result": "Twelve G2-PQS's covering eight polyamine synthesis proteins altered reporter activity compared to mutants in cellular assays. Specific mutations increased Renilla activity by 28-75% for several 5'UTR PQS's (ARG25Q1, AZIN15Q1, SMS5Q1, ODC15Q2, ODC15Q3) and 31-52% for 3'UTR PQS's, while SAT15Q1 mutation reduced activity >30-fold and OAZ2 PQS's showed bidirectional effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24 and C39-C43, C50, C53-C54, C56, C58 are well-supported by dual luciferase reporter assays (Figure 2a) with appropriate statistical testing (n=3-7, p\u22640.05). The use of matched wild-type and mutant controls for each PQS provides strong evidence for functional effects, though the magnitude of effects varies considerably across different PQS's.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C44",
+      "C57",
+      "C59"
+    ],
+    "result": "Most functional PQS's would reduce polyamine levels in their native UTR contexts. Nine of twelve functional PQS's would suppress polyamine synthesis when acting through their respective genes (ARG2, AZIN1, SMS, ODC1 in 5'UTRs; ARG2, SMS in 3'UTRs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C44, C57, C59 represent logical inferences from the reporter data (C24, C39-C43, C56) combined with established knowledge of polyamine pathway regulation. The interpretation that increased reporter activity upon PQS mutation indicates the wild-type PQS suppresses expression is sound, and the pathway-level analysis correctly accounts for whether genes promote or inhibit polyamine synthesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C69",
+      "C70"
+    ],
+    "result": "Eight G2-PQS's show evolutionary conservation between mouse and human or primate and human, including three long-looped structures (AZIN15Q1, SAT15Q1, SMS5Q1), with SMS5Q1 conserved across mouse, human, and zebrafish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C69, C70 are supported by conservation analysis using H-QGRS mapper under stringent conditions (Figure 1, Figure 2\u2014source data 1). Conservation across species provides additional evidence for functional importance, though the stringency criteria and alignment methods could be better documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Seven PQS's (AZIN15Q1, OAZ25Q2, ODC15Q3, SAT15Q1, SMS5Q1, SMS3Q1, ARG23Q1) showed no significant mRNA level changes between reporter and controls, suggesting regulation at the protein level. Four PQS's (ARG25Q1, ODC15Q2, OAZ13Q1, OAZ33Q1) suppressed both reporter activity and mRNA levels (12-43%), indicating regulation at the mRNA level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 are supported by qRT-PCR data (Figure 2b, n=3-4, p\u22640.05). The distinction between protein-level and mRNA-level regulation is appropriately inferred from the presence or absence of mRNA changes. However, the mechanisms underlying protein-level regulation remain uncharacterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Sequence analysis revealed that seven functional PQS's likely form quadruplexes with short loops (G-scores: 16-21, typical for G2-quadruplexes), while five have one unusually long loop (8-16 nt) with correspondingly low G-scores (5-13).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by computational analysis using QGRS Mapper/QPARS (Figure 2c). The G-score predictions provide useful structural hypotheses, though these are computational predictions requiring experimental validation. The distinction between short-looped and long-looped structures is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "In vitro translation assays showed that SMS5Q1 and SMS3Q1 transcripts produced 28-61% less Renilla activity than controls, while SAT15Q1 produced 14-fold more activity. AZIN15Q1 did not affect translation in this context, and ARG23Q1 produced a short transcript suggesting premature termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are supported by in vitro translation data in HeLa lysates (Figure 2d, n=3, p\u22640.05). The results for SMS and SAT1 are consistent with cellular reporter assays, strengthening the conclusion that these PQS's regulate translation. The AZIN15Q1 result suggests context-dependent regulation, and the ARG23Q1 transcription termination observation is supported by gel analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The NRAS G-quadruplex reference and four canonical G2-PQS's (ARG25Q1, OAZ25Q1, OAZ25Q2, ODC15Q2) showed characteristic quadruplex properties in multiple biophysical assays: differential PAGE migration, Thioflavin T fluorescence, reversible UV melting transitions (TM ~295 nm), and CD spectra consistent with quadruplex or stem structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 are well-supported by comprehensive biophysical characterization (Figure 3, Figure 3\u2014figure supplement 1) including PAGE, Thioflavin T staining, UV melting, and CD spectroscopy. The use of NRAS as a positive control and matched mutants for each PQS provides strong evidence. Multiple independent techniques converge on quadruplex formation for these short-looped structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Long-looped SMS5Q1 showed strong evidence for quadruplex formation in vitro: differential PAGE migration, enhanced Thioflavin T fluorescence, reversible K+-dependent UV melting transition (\u0394Abs ~0.2), and distinct CD spectrum (peak 278 nm vs 273 nm for mutant). This provides the first strong evidence that natural long-looped G2-quadruplexes can form in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 are strongly supported by multiple biophysical techniques (Figure 3, Figure 3\u2014figure supplement 1). The convergence of PAGE, Thioflavin T, UV melting with K+ dependence, and CD spectroscopy provides compelling evidence for SMS5Q1 quadruplex formation despite the long loop. This represents a significant finding extending the known repertoire of functional quadruplex structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "SMS3Q1 showed distinct properties from its mutant in CD spectra, gel migration, and Thioflavin T staining, but no UV melting transition was observed. ARG23Q1 produced multiple bands on PAGE consistent with multimeric structures, showed higher Thioflavin T fluorescence, and displayed a UV melting transition with hysteresis typical of G-quadruplexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C91 present mixed evidence. For SMS3Q1 (C87-C88), the absence of UV melting transition weakens the quadruplex conclusion, though the authors appropriately note this may reflect technical limitations. For ARG23Q1 (C89-C91), the multiple bands suggest intermolecular structures rather than the intramolecular quadruplexes proposed for other PQS's, complicating interpretation of physiological relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C103"
+    ],
+    "result": "SAT15Q1 and ARG23Q1 showed some quadruplex-like properties (slower PAGE migration, Thioflavin T fluorescence, distinct CD spectra) but lacked clear UV melting transitions. The data suggest these sequences with two loops and GGGG tracts may form intermolecular quadruplex structures in the short oligoribonucleotides tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C96, C103 present inconclusive evidence for intramolecular quadruplex formation. The absence of UV melting transitions and the unusual structural features (two loops, GGGG tracts) suggest alternative structures. The inference of intermolecular quadruplexes is reasonable but speculative, and the physiological relevance of such structures is unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C104",
+      "C105"
+    ],
+    "result": "AZIN15Q1 showed evidence of base pairing (CD spectrum peak 268 nm, trough 233 nm; UV melting TM 49\u00b0C at 260 nm) but no quadruplex characteristics (no Thioflavin T fluorescence, no UV melting at 295 nm). The data suggest competing hairpin structures dominate in vitro, possibly due to absence of cellular factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101, C104-C105 are supported by biophysical data (Figure 3, Figure 3\u2014figure supplement 2) showing Watson-Crick base pairing rather than quadruplex formation in vitro. The interpretation that cellular factors may be required for quadruplex formation is reasonable speculation supported by subsequent NMR studies (C140-C141) showing salt-dependent equilibria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "Multiple biophysical measurements provided strong supporting evidence that short-looped G2-PQS's and at least one long-looped G2-PQS (SMS5Q1) form quadruplexes in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 accurately summarizes the biophysical characterization results. The evidence is strongest for short-looped canonical structures and SMS5Q1, with varying degrees of support for other long-looped structures. The comprehensive approach using multiple independent techniques strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The quadruplex-stabilizing ligand PDS (non-toxic up to 128 \u03bcM) reduced cellular spermidine and spermine levels by 70-80% at low micromolar concentrations, decreased endogenous SMS protein by 50%, and dose-dependently reduced SMS5Q1 and SMS3Q1 reporter activity by 20-30%, consistent with these G2-motifs contributing to polyamine regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 are supported by cell viability assays (Figure 4\u2014figure supplement 1), HPLC polyamine quantification (Figure 4a, n=3, p\u22640.05), Western blots (Figure 4b, n=3, p\u22640.05), and reporter assays (Figure 4b, n=3-5, p\u22640.01). The convergence of effects on polyamine levels, SMS protein, and SMS reporters provides strong evidence for PQS involvement in polyamine regulation, though PDS may have additional targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "PDS treatment (64 \u03bcM) increased both endogenous AZIN1 protein and AZIN15Q1 reporter activity by 100-150%, opposite to the effect of mutating AZIN15Q1 under normal conditions. This suggests a feedback response to global polyamine suppression rather than direct quadruplex stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 are supported by Western blot and reporter data (Figure 4c, n=3-6, p\u22640.05). The opposite direction of PDS effect compared to mutation is clearly documented. The interpretation as feedback response (C113) is reasonable given the known polyamine feedback mechanisms, though the exact mechanism remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Polyamine supplementation produced small but statistically significant decreases in AZIN15Q1, SMS5Q1, and SMS3Q1 reporter activity, while SAT15Q1 and OAZ25Q1 showed increased activity. These responses suggest the motifs participate in feedback loops to maintain polyamine homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 are supported by reporter assays with polyamine addition (Figure 4d, Figure 4\u2014figure supplements 5-6, n=3, p\u22640.05). The small magnitude of effects and the difficulty of polyamine uptake under physiological conditions (C115) are appropriately acknowledged. The feedback interpretation is consistent with pathway logic, though the molecular mechanisms remain undefined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Combined DFMO and APCHA treatment reduced spermine and spermidine to 32% and 24% of control levels. This increased AZIN15Q1 and SMS3Q1 reporter activity (114% and 16%) and decreased OAZ25Q1 activity (81%). Polyamine rescue reversed these effects, confirming that polyamines self-regulate through these G2-PQS's.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 are supported by HPLC polyamine quantification (Figure 4e, n=2) and reporter assays with rescue experiments (Figure 4f, n=3-5, p\u22640.05). The rescue experiment (C121) is critical for establishing specificity and strongly supports the conclusion that these PQS's respond to polyamine levels. The convergence of evidence from multiple polyamine manipulation approaches strengthens the feedback regulation model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "High-resolution NMR spectroscopy of AZIN1wt revealed coexistence of stem structures and G-quadruplex in 100 mM KCl, with imino signals at 10.5-13.5 ppm indicating both Watson-Crick and Hoogsteen base pairing. Increasing KCl (100 to 200 mM) shifted equilibrium toward quadruplex, while Na+ or Mg2+ favored stem structures. This represents the first report of a mammalian sequence equilibrating between stem and non-canonical G2-quadruplex with an exceptionally long loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C142 are strongly supported by comprehensive NMR analysis (Figure 5, Figure 5\u2014figure supplements 1-2) including 1D 1H, 1H-15N HSQC, and 2D NOESY spectra with multiple controls (AZIN1neg, AZIN1pos) and different salt conditions. The 15N-labeling experiments (C137) and NOE patterns (C139) provide definitive evidence for G-quadruplex formation. The demonstration of salt-dependent equilibria is rigorous and represents a significant structural finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Spermine titration of AZIN1wt (1:2 ratio) significantly decreased imino signals of G-U wobble pairs and G2-quadruplex (10.5-11.2 ppm) with less effect on Watson-Crick signals (12-13.4 ppm). Independent assays showed spermine induced a new UV melting transition at 295 nm (Tm ~38\u00b0C), decreased stem Tm from 49\u00b0C to 28\u00b0C, and increased Thioflavin T fluorescence by 52%, suggesting spermine alters equilibrium dynamics to favor G2-quadruplex formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C150 are supported by NMR titration (Figure 5d), UV melting (Figure 5\u2014figure supplement 3), and Thioflavin T assays. The convergence of multiple techniques showing spermine promotes quadruplex formation is compelling. However, the NMR data also show decreased quadruplex signals (C143), creating some tension with the interpretation. The overall conclusion that spermine alters structural equilibria is well-supported, though the exact mechanism requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C26",
+      "C31",
+      "C32"
+    ],
+    "result": "The findings reveal a previously unrecognized mechanism of polyamine self-regulation involving G2-quadruplexes throughout the entire pathway, with PQS's potentially acting in unison as regulatory elements. Such mechanisms may be common in other metabolic pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C31, C32 represent the major conclusions of the study. C26 and C31 are well-supported by the collective evidence from reporter assays (C24), polyamine manipulation experiments (C116-C122), and structural studies (C140-C150). The proposal that PQS's act in unison is reasonable given that nine of twelve functional PQS's would suppress polyamine levels (C59). C32 is appropriate speculation for future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Comprehensive biophysical methods generated strong supporting data for seven quadruplexes, including a long-looped conserved quadruplex in AZIN1 mRNA that coexists in salt-dependent equilibrium with hairpin structures as demonstrated by NMR spectroscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 accurately summarize the biophysical and structural findings. The evidence for seven quadruplexes (four short-looped canonical structures, SMS5Q1, and possibly ARG23Q1/SAT15Q1) is strong, and the AZIN1 structural characterization by NMR is rigorous and represents a major contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "The activities of four PQS's from OAZ2, AZIN1, and SMS correlated with polyamine levels in cells, suggesting these G2-PQS's respond to polyamine levels by undetermined mechanisms in feedback loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by the polyamine manipulation experiments (C116-C122). The correlation between PQS activity and polyamine levels is clearly demonstrated, though the molecular mechanisms remain undefined. The feedback loop interpretation is well-supported by the rescue experiments and pathway logic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "The conserved G2-PQS AZIN15Q1 may play a prominent role in polyamine level regulation based on its robust responses to mutation, polyamine level changes, and PDS treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C123 is well-supported by the collective data showing AZIN15Q1 responds to multiple perturbations (mutation: C40; polyamine addition: C116; PDS: C111; DFMO/APCHA: C120) and its evolutionary conservation (C69). The structural characterization by NMR (C140-C150) further supports its functional importance.",
+    "result_type": "MAJOR"
+  }
+]

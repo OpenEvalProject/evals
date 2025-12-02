@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C26",
+      "C54"
+    ],
+    "result": "The study analyzed over 1000 tomograms from over 50 different cryoEM grid/sample preparations and found that approximately 90% of particles are adsorbed to air-water interfaces, with most particles within 5-10 nm of an interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C26, and C54 collectively establish the main finding through systematic analysis of a large dataset. The sample size (>1000 tomograms, >50 preparations) is substantial, and the measurements are documented in Tables 1 and 2 with appropriate error estimates. The finding is consistently supported across diverse samples and preparation methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Ice thickness measurements show systematic differences between grid types and locations: gold nanowire grids prepared with Spotiton have thinner ice (30\u00b113 nm center, 61\u00b111 nm edge) compared to carbon nanowire grids (47\u00b140 nm center, 107\u00b154 nm edge) and conventional carbon holey grids (56\u00b135 nm center, 99\u00b124 nm edge).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 present direct measurements from tomography data with appropriate sample sizes (N=4-17) and error estimates. The measurements are presented in Figure 3 and Table 1. However, the large standard deviations (especially for carbon nanowire grids: \u00b140 nm and \u00b154 nm) indicate substantial variability that may limit the practical significance of these differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Air-water interfaces are tilted 0-16\u00b0 relative to the electron beam at nominal zero tilt, with average tilts of 4.8\u00b0\u00b13.1\u00b0 at hole centers and 6.9\u00b0\u00b13.5\u00b0 at hole edges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 and C46-C48 present consistent measurements of particle layer tilts from tomography data with adequate sample sizes (N=89 for centers, N=61 for edges). The measurements are documented in Table 2 and Figure 3. The finding has important implications for CTF correction and data collection strategies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Particle layer distribution varies by location: 83% of samples have single particle layers at hole centers while 22% have double layers; near hole edges, only 7% have single layers while 75% have double layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are calculated from data in Tables 1 and 2 with clear sample sizes. The percentages add up to more than 100% because some samples have different configurations in different holes, which is explicitly noted. This finding is important for understanding optimal collection strategies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Multiple samples show evidence of protein fragments and partial particles at air-water interfaces, including neural receptors showing 13 kDa Ig-like domains, apoferritin showing apparent fragments, hemagglutinin showing exclusive fragments in thin ice regions, and GDH showing sequestered fragments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39-C44 describe visual observations from tomography data shown in Figure 6 and videos. While the observations are documented, the authors acknowledge uncertainty about whether these fragments result from unclean preparation, protein degradation in solution, or air-water interface denaturation. Without controls or additional characterization, the mechanism remains speculative despite clear visual evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Only 2 of 46 samples (4%) exhibited ideal conditions (thin ice, no overlapping particles, no preferred orientation, no air-water interface interaction), while 21 samples (46%) showed near-ideal conditions, and over half showed non-ideal conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C55-C57 are directly calculated from the comprehensive data in Tables 1 and 2. The categorization criteria are clearly defined, and the low percentage of ideal samples (4%) is a significant finding that challenges common assumptions in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C25",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Fiducial-less cryo-electron tomography can routinely characterize single particle grids in 30-45 minutes to determine ice thickness, optimal collection areas, particle heterogeneity, and generate de novo models, potentially increasing microscope efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 and C25 describe demonstrated capabilities supported by examples throughout the Results section. Claims C67-C69 provide practical workflow information. The methodology is validated across >50 samples with nearly all tilt-series being alignable (C66), demonstrating robustness. The recommendation for routine use (C69) is justified by the demonstrated benefits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Fiducial-less single particle tomography on DnaB helicase-helicase loader grids generated de novo initial models revealing asymmetric structure, contradicting C6-symmetric 2D classification results, and enabling template picking and alignment that yielded a 4.1 \u00c5 structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 describe a specific successful application documented in Figure 9. The workflow from tomography through sub-tomogram alignment to final structure is clearly demonstrated. This exemplifies the practical utility of the method for resolving ambiguous cases in single particle analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "CryoET was used to understand HIV-1 trimer-receptor stoichiometry and to reveal that glycoprotein-lipid particles dissociate when ice becomes ~15 nm thin at ~300 nm from hole edges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 describe specific applications where tomography provided critical insights not readily obtainable from 2D micrographs. The observations are documented in the corresponding videos and figures. These examples demonstrate the practical value of the technique for understanding sample behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Overlapping particles in the beam direction must be discarded during processing to avoid anomalous refinement results, and defocus estimation errors from particle layers at different heights limit resolution (e.g., 10 nm deviation yields ~2.5 \u00c5 limit, 50 nm yields ~6 \u00c5 limit at 1-2 \u03bcm defocus).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 describe standard processing practices inferred from understanding of single particle methods. Claims C78-C80 present calculations based on CTF theory that are mathematically sound. The resolution limits are calculated using established principles, though the specific examples are hypothetical. These are important practical implications of the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Lack of apparent preferred orientation in single particle micrographs does not imply particles are not adsorbed to air-water interfaces; most particles without apparent preferred orientation are still adsorbed, and non-zero grid tilts can mask preferred orientations depending on particle symmetry and orientation distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C82 are directly supported by observations in Tables 1 and 2. Claims C83-C84 present geometric inferences about how tilted collection affects observed orientations. This is an important clarification that challenges common interpretations in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Several samples show asymmetric particle saturation between top and bottom air-water interfaces, with some samples having particles on only one interface, suggesting particles stick to the first available interface or first-formed protein network film.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 describe observations documented in Tables 1-2 and Figure 6. Claim C88 presents a reasonable inference about the mechanism based on understanding of grid preparation processes. However, without knowing sample application directionality for most samples, the mechanistic interpretation remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C74"
+    ],
+    "result": "Prior literature from food science and surface physics demonstrates that proteins denature at air-water interfaces forming viscoelastic network films <10 nm thick, with adsorption beginning in 0.1-1 ms (bulk diffusion) and surface diffusion occurring over tens of milliseconds, with behavior dependent on protein concentration, structure, and stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C24 and C74 cite extensive prior literature from multiple fields. The citations appear appropriate and the synthesis provides important context for interpreting the current findings. However, this represents assessment of prior work rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C75"
+    ],
+    "result": "Particle adsorption to air-water interfaces has potential implications for protein denaturation, conformational change, and preferred orientation, with speculation that anomalous structures from conformational changes might be indistinguishable from nominal structures after classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C5 states potential implications while C75 is explicitly speculative. While the concerns are reasonable given the main findings and cited literature, the study does not provide direct evidence that conformational changes occur or that they affect final structures. This represents important speculation requiring future validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The finding that most particles are adsorbed to air-water interfaces warrants research into avoidance methods including surfactants, affinity grids, carbon encapsulation, scaffolds, and faster plunging, which may be critical for fragile proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 present recommendations and speculation based on the main findings. The suggestions are reasonable given the results and cited literature. However, these represent proposed future directions rather than tested solutions, and the speculation about fragile proteins (C73) lacks direct supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C70"
+    ],
+    "result": "The study employed standardized data collection (Leginon/SerialEM, -45\u00b0 to 45\u00b0 tilt range, 3\u00b0 increments, 4-6 \u03bcm defocus, 50-150 e-/\u00c5\u00b2 total dose, 1-2.2 \u00c5 pixel size, ~15 min per tilt-series) and processing (Appion-Protomo alignment in 20-60 min with nearly all tilt-series alignable), with software made available via Docker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C66 and C70 describe methodological details that are clearly documented and appropriate for the study. The high success rate of fiducial-less alignment (C66) and reasonable processing times validate the practical utility of the approach. Software availability (C70) supports reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Ideal single particle cryoEM grids would have particles \u226510 nm from air-water interfaces, randomly oriented, in ice thin enough for particles plus ~20 nm space, without overlaps in beam direction, and with beam normal to areas of interest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 define ideal conditions based on established knowledge in the field. These criteria are reasonable and serve as the standard against which the actual observations are compared. This represents field knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C85"
+    ],
+    "result": "There is no apparent correlation between microscope and tilt direction/magnitude, and for a hypothetical 10\u00b0 tilted particle layer at 1-2 \u03bcm defocus with whole-image CTF correction, worst-corrected particles would have ~4 \u00c5 resolution limit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is an observation from Table 2 data. Claim C85 presents a hypothetical calculation based on CTF theory that is mathematically sound. These provide practical context for understanding the implications of tilted particle layers.",
+    "result_type": "MINOR"
+  }
+]

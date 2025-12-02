@@ -1,0 +1,1699 @@
+{
+  "submission": {
+    "id": "fe44f089-9772-4751-a5ac-d90bf238284c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:35:14.917527Z",
+    "updated_at": "2025-12-02T00:35:14.917527Z"
+  },
+  "content": [
+    {
+      "id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "submission_id": "fe44f089-9772-4751-a5ac-d90bf238284c",
+      "content_type": "manuscript",
+      "content_text": "# The transcriptomic and epigenetic map of vascular quiescence in the continuous lung endothelium\n\n## Authors\n\n- Katharina Schlereth<sup>1</sup> \u2020\n- Dieter Weichenhan<sup>3</sup>\n- Tobias Bauer<sup>4</sup> ([ORCID: 0000-0002-4961-3639](https://orcid.org/0000-0002-4961-3639))\n- Tina Heumann<sup>1</sup>\n- Evangelia Giannakouri<sup>1</sup>\n- Daniel Lipka<sup>3</sup> ([ORCID: 0000-0001-5081-7869](https://orcid.org/0000-0001-5081-7869))\n- Samira Jaeger<sup>5</sup>\n- Matthias Schlesner<sup>4</sup> ([ORCID: 0000-0002-5896-4086](https://orcid.org/0000-0002-5896-4086))\n- Patrick Aloy<sup>5</sup>\n- Roland Eils<sup>4</sup>\n- Christoph Plass<sup>3</sup> \u2020\n- Hellmut G Augustin<sup>1</sup> ([ORCID: 0000-0002-7173-4242](https://orcid.org/0000-0002-7173-4242)) \u2020\n\n### Affiliations\n\n1. European Center for Angioscience (ECAS), Medical Faculty Mannheim Heidelberg University Heidelberg Germany\n2. Division of Vascular Oncology and Metastasis German Cancer Research Center (DKFZ-ZMBH Alliance) Heidelberg Germany\n3. Division of Epigenomics and Cancer Risk Factors German Cancer Research Center Heidelberg Germany\n4. Division of Theoretical Bioinformatics German Cancer Research Center Heidelberg Germany\n5. Joint IRB-BSC-CRG Program in Computational Biology Institute for Research in Biomedicine (IRB Barcelona), The Barcelona Institute for Science and Technology Barcelona Spain\n6. Bioinformatics and Omics Data Analytics German Cancer Research Center Heidelberg Germany\n7. Instituci\u00f3 Catalana de Recerca i Estudis Avan\u00e7ats Barcelona Spain\n8. Institute of Pharmacy and Molecular Biotechnology Heidelberg University Heidelberg Germany\n9. Bioquant Center Heidelberg University Heidelberg Germany\n10. German Cancer Consortium Heidelberg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nMaintenance of a quiescent and organotypically-differentiated layer of blood vessel-lining endothelial cells (EC) is vital for human health. Yet, the molecular mechanisms of vascular quiescence remain largely elusive. Here we identify the genome-wide transcriptomic program controlling the acquisition of quiescence by comparing lung EC of infant and adult mice, revealing a prominent regulation of TGF\u00df family members. These transcriptomic changes are distinctly accompanied by epigenetic modifications, measured at single CpG resolution. Gain of DNA methylation affects developmental pathways, including NOTCH signaling. Conversely, loss of DNA methylation preferentially occurs in intragenic clusters affecting intronic enhancer regions of genes involved in TGF\u03b2 family signaling. Functional experiments prototypically validated the strongly epigenetically regulated inhibitors of TGF\u03b2 family signaling SMAD6 and SMAD7 as regulators of EC quiescence. These data establish the transcriptional and epigenetic landscape of vascular quiescence that will serve as a foundation for further mechanistic studies of vascular homeostasis and disease-associated activation.\n\n## Introduction\n\nEndothelial cells (EC) are long-lived cells of the mesodermal lineage that line the inside of all blood vessels forming a single layer of organotypically-differentiated cells (Augustin and Koh, 2017; Deanfield et al., 2007; Rafii et al., 2016; Regan and Aird, 2012). Unlike unidirectional differentiation programs of short-lived epithelial cells, EC acquire a quiescent state during the transition to adulthood from which they can switch back to the activated phenotype resulting in disease-associated angiogenesis (Hobson and Denekamp, 1984; Marcelo et al., 2013). In fact, the maintenance of the quiescent vascular phenotype is of pivotal importance for human health. Loss of this EC phenotype is a hallmark of vascular dysfunction and a commonality of diverse life-threatening diseases ranging from sepsis, atherosclerosis to cancer (Carmeliet and Jain, 2011; Gimbrone and Garc\u00eda-Carde\u00f1a, 2016). Likewise, major and socioeconomically important chronic diseases are characterized by a loss of the quiescent EC phenotype, like age-dependent macular degeneration and diabetic retinopathy. Vascular targeted therapies for such conditions are mostly aimed at interfering with EC activation programs (Krzystolik et al., 2002; Tanabe et al., 2017). Therefore, it is crucial to get a better understanding of the pathways involved in acquisition of vascular quiescence to improve vessel targeted therapies.\n\nWhile the mechanisms of sprouting angiogenesis, network formation and remodeling have been molecularly unraveled in increasing detail, the molecular mechanisms of acquisition of EC quiescence are still poorly understood (Adams and Alitalo, 2007; Herbert and Stainier, 2011; Jain, 2003; Korn and Augustin, 2015). EC quiescence is an active process, as it not only involves the absence of activators but also microenvironmental factors as well as cell intrinsic mechanisms. Matricellular factors, contact with pericytes and hemodynamic forces act as microenvironmental determinants of vascular maturation (Armulik et al., 2011; Baeyens et al., 2016; Davis et al., 2015; Stratman et al., 2017; Yousif et al., 2013). To switch from an activated to a resting phenotype, numerous signaling pathways in EC including VEGF, NOTCH, FGF, TGF\u03b2, angiopoietin and semaphorin signaling need to be properly regulated (Marcelo et al., 2013; Patel-Hett and D'Amore, 2011). To add another layer of complexity, there is an intricate crosstalk between these pathways and their integration is not completely understood (Ehling et al., 2013; Holderfield and Hughes, 2008; Kim et al., 2011). Furthermore, while some pathways are described to have clear pro- or anti-angiogenic effects, the impact of other signaling pathways is rather contextual or even still controversially discussed. For instance, TGF\u00df family signaling has been described to exert both, pro-and anti-angiogenic functions and to contextually cooperate with NOTCH signaling in the regulation of angiogenesis (Cai et al., 2012; Dyer et al., 2014; Goumans et al., 2003; Goumans et al., 2002; Larriv\u00e9e et al., 2012; Mallet et al., 2006; Mouillesseaux et al., 2016; Suzuki et al., 2008). Thus, better molecular understanding of the way crucial EC-associated signaling pathways are regulated during the post-angiogenic acquisition of vessel quiescence will yield better mechanistic insights into vascular function during health and disease.\n\nThe mechanisms of EC activation during health and disease have been studied in substantial detail on the expression level of individual genes or pathways as well as genome-wide, for\u00a0example genome-wide screens of regulators of angiogenesis or inflammation (Cannon et al., 2013; del Toro et al., 2010; Massaro et al., 2015; Zhang et al., 2012). Yet, no unbiased genome-wide systems biological effort from in vivo isolated EC has been made so far to identify the transcriptomic signatures associated with the acquisition and maintenance of EC quiescence. DNA methylation acts in concert with other epigenetic marks in defining chromatin states which create gene active and silenced compartments in the genome (Jones, 2012; Soshnev et al., 2016). Moreover, considering the increasingly recognized important roles of epigenetic alterations in the control of cellular differentiation processes (Boland et al., 2014; Cabezas-Wallscheid et al., 2014; Lipka et al., 2014), crucial molecular mediators of vessel maturation and EC quiescence may also be regulated by epigenetic mechanisms, which in EC have similarly not been studied in an unbiased genome-wide approach. The present study consequently aimed at obtaining and comparing transcriptomic and epigenomic signatures of EC from infant and young adult mice in order to identify most prominently regulated signaling pathways of vascular quiescence.\n\n## Results\n\n### Endothelial transcriptomic changes during acquisition of vascular quiescence\n\nTo identify factors and pathways regulated during acquisition of endothelial cell (EC) quiescence in an unbiased genome-wide manner, RNA-seq from freshly FACS-sorted lung EC isolated from infant (p8-p10) and adult mice (8\u201312 weeks) was performed (Figure 1A and Figure 1\u2014figure supplement 1A). The purity of cell sorting was controlled by the validation of marker gene expression (Figure 1\u2014figure supplement 1B). The phenotypic shift in marker expression (CD31/PECAM1 and CD34) between infant and young adult EC reflected the size of the corresponding EC (Figure 1\u2014figure supplement 1C). EdU incorporation assays verified the almost complete arrest of cell proliferation in adult EC (Figure 1B and Figure 1\u2014figure supplement 1D). Comparative transcriptome analysis identified 2,216 differentially expressed genes with pronounced regulation of genes mediating the induction of immune mechanisms, metabolism and phagosome pathways as well as the repression of genes controlling cell cycle, developmental angiogenesis, extracellular matrix interactions and cell contraction (Reactome-based analysis) (Figure 1C). To gain further insight into the mechanisms of EC quiescence, the protein interaction network (interactome) of the differentially regulated genes was generated (Figure 1\u2014figure supplement 2A). The analysis of this interactome led to the identification of several pathways presumably relevant during the acquisition of EC quiescence (Figure 1\u2014source data 1). Importantly, it resulted in further specification of immune system regulation, as JAK-STAT signaling was most significantly enriched (p=5.7\u00d710-11) in an EC quiescence network with most factors being induced, putatively mediating the repression of the pro-angiogenic growth factors Fgf7 and Fgf10 (Figure 1\u2014figure supplement 2B and Figure 1\u2014source data 1). Further network clustering identified densely connected protein communities within the interactome (Figure 1\u2014figure supplement 2C). Functional annotation of the genes within each cluster revealed\u00a0unique (SEMA, TGFB and ERBB signaling) enriched biological functions compared to Reactome-based analysis. Altogether, interactome analysis confirmed and extended the functional annotation of the genes differentially regulated during acquisition of EC quiescence.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34423/elife-34423-fig1-v1.jpg)\n\n**Figure 1.:** (A) Scheme depicting the workflow of lung EC isolation by FACS from infant (inf) and young adult (yAdu) mice followed by transcriptome profiling by RNA-sequencing and DNA methylome analysis by tagmentation-based WGBS (T-WGBS). Shown are representative FACS profiles for the two different endothelial cell populations. (B) Analysis of lung EC proliferation in vivo by EdU assay. EdU was injected i.p. and lung EC were analyzed by FACS 17 hr later. n\u00a0=\u00a03; mean\u00a0\u00b1\u00a0SD. (C) Hierarchical clustering of differentially expressed genes and functional annotation by Reactome overlap analysis of the 722 induced and 1,494 repressed genes regulated during the acquisition of EC quiescence. (D) Validation of the differential expression of cell cycle genes in infant and young adult lung EC using qPCR. n\u00a0\u2265\u00a03; mean\u00a0\u00b1\u00a0SD; *p<0.05; Mann-Whitney Test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34423/elife-34423-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Sorting strategy for lung EC isolation. PTPRC\u2010LYVE1\u2010LY76\u2010PDPN\u2010PI\u2010CD31+CD34+ cells were used for transcriptome and methylome analysis. Propidium iodide (PI) was used to discriminate between live (PI\u2010) and dead (PI+) cells. (B) Validation of the sorted EC populations by marker gene expression analysis using qPCR. n\u00a0=\u00a03; mean\u00a0\u00b1\u00a0SD. (C) Size analysis of EC populations (CD31+CD34+) isolated from infant and young adult mice. (D) Analysis of EC proliferation from brain, kidney, liver and heart by Ki67 and Cd31 co-staining. n\u00a0\u2265\u00a05; mean\u00a0\u00b1\u00a0SD. (E) Validation of the differential expression of cell cycle genes in infant and young adult brain and heart EC using qPCR. n\u00a0\u2265\u00a03; mean\u00a0\u00b1\u00a0SD; *p<0.05; Mann-Whitney Test.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34423/elife-34423-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) The EC quiescence interactome. EC quiescence-specific network generated from differentially regulated \u2018seed\u2019 genes (p<0.05). By means of the DIAMOnD algorithm (Ghiassian et al., 2015), a network was created starting from this set of proteins by integrating related proteins based on their topological relevance. The final network contained 745 proteins and 1661 interactions, including 484 seed gene products (57.3%). Seeds are shown as big circles (red and blue indicating up and down regulation, respectively), while candidate maturation-related proteins are shown as small green circles. (B) Functional enrichment analysis of the EC quiescence interactome led to the identification of JAK-STAT signaling being highly enriched (p=5.7\u00d710-11). Shown by color-code is the quiescence-dependent gene regulation of individual JAK-STAT pathway members (red, upregulated; blue, downregulated). (C) Clustering of the quiescence-dependent interactome identified densely connected gene communities (left). Functional enrichment analysis associated the clusters with biological meaning (right). Color-code as in (A). Dots in table indicate significant overrepresentation of up- (red) or down- (blue) regulated seed proteins.\n\nIn line with the EdU assays, prominent regulators of cell cycle arrest were validated to be down-regulated during acquisition of EC quiescence in lung EC (Figure 1D and Figure 1\u2014source data 2) as well as in brain and heart EC (Figure 1\u2014figure supplement 1E). Altogether, these data suggest that the comparison of the transcriptomic profile of infant and adult EC displayed valid quiescence-dependent changes.\n\n### TGF\u00df family signaling is inhibited in quiescent EC\n\nCorresponding to the arrest of EC proliferation, the transcriptomic screen identified distinct changes of angiogenic molecule expression. Sixteen pro-angiogenic molecules were down-regulated and eight anti-angiogenic molecules were up-regulated during acquisition of vascular quiescence (Figure 2A). This involved the downregulation of angiogenic signal transducing cell surface receptors (Tgfbr2, Bmpr1, Notch3 and Fgfr1) as well as the upregulation of quiescence signal transducing receptors, most notably Cd36 and the angiopoietin receptor Tek (encoding for Tie2 protein), probably the functionally best characterized maturation receptor of EC (Augustin et al., 2009). Several autocrine and paracrine acting secreted angiogenic molecules were identified as differentially expressed: up-regulation of the semaphorins Sema3C and Sema3G as well as thrombomodulin (Thbd) and downregulation of Fgf7, Fgf10, placental growth factor (Pgf) and Wnt5a. Comparative quantitative PCR (qPCR) of selected candidate molecules validated gene expression changes identified by RNA-seq confirming the high robustness of the sequencing data (Figure 2B and Figure 2\u2014figure supplement 1A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34423/elife-34423-fig2-v1.jpg)\n\n**Figure 2.:** (A) Heatmap depicting the expression of anti- and pro-angiogenic molecules during the acquisition of vascular quiescence. Depicted are significantly regulated genes (p<0.05) that are differentially expressed by at least 1.75 fold. (B) Validation of the expression pattern of anti- and pro-angiogenic molecules in lung EC by qPCR in independent biological samples. n\u00a0\u2265\u00a03; mean\u00a0\u00b1SD; *p<0.05; Mann-Whitney Test. (C) Schematic representation of the regulation of TGF\u03b2 family signaling molecules during acquisition of vascular quiescence emphasizing the overall inhibition of this pathway. Shown by color-code is the gene regulation of individual TGF\u03b2 family pathway members (red, upregulated; blue, downregulated; log2FC: log2 fold change). Ltbp: latent TGF-beta binding protein; Bmpr1a: Bone Morphogenetic Protein Receptor Type 1A/Alk3; Bmpr2: Bone Morphogenetic Protein Receptor Type 2; Tgfbr2: Transforming Growth Factor Beta Receptor 2; Tgfbr1: Transforming Growth Factor Beta Receptor 1/Alk5; Smad6 and Smad7: inhibitory SMADs; Smad1/5/8 and Smad2/3: receptor-regulated SMADs; Smad4: Co-SMAD; Col1a: TGF\u00df target gene Collagen type I alpha. (D) Upstream growth factor analysis with activation state prediction of all differentially expressed genes during transition to EC quiescence. Depicted are the transformed (-log10) p-value and the predicted activation state (z-score) of the upstream growth factor according to Ingenuity Pathway Analysis. See methods section for further details. The following figure supplements are available for Figure 2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34423/elife-34423-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Validation of the expression pattern of anti- and pro-angiogenic molecules in lung EC by qPCR in independent biological samples. n\u00a0\u2265\u00a03; mean\u00a0\u00b1SD; *p<0.05; Mann-Whitney Test. (B) Quiescence-dependent expression analysis of chromatin modifying enzymes. (C) Differentially expressed chromatin modifiers as identified by RNA-seq analysis. (D) Quiescence-dependent expression analysis of chromatin modifying enzymes with focus on DNA methylation modifiers.\n\nAmong these angiogenesis-regulating molecules, the TGF\u03b2 pathway was identified as the most concordantly downregulated signaling pathway with repression of matrix-associated latent TGF\u03b2-binding proteins (Ltbp2, Ltbp3, Ltbp4) and receptors (Tgfbr2, Bmpr1) as well as upregulation of the inhibitory Smads, Smad6 and Smad7 (Figure 2C). Correspondingly, upstream analysis of the complete set of differentially expressed genes including activation state prediction of the corresponding upstream regulator revealed TGF\u00df1 as the most significantly inhibited growth factor (Figure 2D). Collectively, the data uncovered complex transcriptional changes of angiogenic molecules governing EC quiescence. They highlight a series of pathways that have all been associated with EC activation, most notably the TGF\u03b2 pathway.\n\n### Vascular quiescence is accompanied by a prominent loss of DNA methylation at intronic enhancer regions\n\nTo assess the impact of epigenetic remodeling in the vascular system during acquisition of vascular quiescence, we analyzed the expression of chromatin modifying enzymes (CME) (Plass et al., 2013). About 10% of CMEs were differentially expressed with the majority being repressed in adult EC (Figure 2\u2014figure supplement 1B and C), including the de novo DNA methyltransferase Dnmt3a and four additional DNA methylation modifiers (Gadd45a, Tet1, Fos, Uhrf1) (Figure 2\u2014figure supplement 1D). This suggested that the patterns of DNA methylation were more dynamic in infant compared to adult EC. It is now accepted that the DNA methylome gives a precise picture of the epigenetic state, defining active and inactive regions within genomes (Cabezas-Wallscheid et al., 2014; Jones, 2012; Lipka et al., 2014; Soshnev et al., 2016). Consequently, tagmentation-based whole genome bisulfite sequencing (T-WGBS) of biological triplicates of infant and young adult EC samples enabled the identification of quiescence-dependent DNA methylation changes at single CpG nucleotide resolution (Figure 1A and Figure 3\u2014figure supplement 1A). T-WGBS data were highly reproducible in MassARRAY using independent biological replicates (Figure 3\u2014figure supplement 1B and C). Bioinformatic analysis revealed a significant increase of CpGs with\u00a0>80% methylation level in adult EC compared to infant EC (p=6.87\u00d710\u22126) demonstrating a global increase in CpG methylation during the transition to vascular quiescence (Figure 3A). In total, DNA methylation changes resulted in more than 1.4M differentially methylated CpGs (DMCs). Retaining only the consecutive DMCs (68,184) with a 10% methylation difference showed a significant intragenic enrichment (Figure 3\u2014figure supplement 1D). These DMCs gave rise to 18,333 differentially methylated regions (DMRs) (Figure 3B). The distribution of methylation differences among the DMRs demonstrated a more prominent loss (20\u201360% methylation difference between infants and young adult) than gain of methylation (10\u201340% methylation difference) (Figure 3C). Applying a threshold of 10% methylation difference, young adults acquired a gain of methylation in 54% of DMRs and a loss of methylation in 46% of DMRs during acquisition of quiescence (20% gain and 80% loss, respectively, when applying 30% as threshold) (Figure 3B). Both, loss and gain of methylation DMRs were depleted on transcription start sites (TSS), but enriched up- and downstream (10\u2013100 kb distant) from the TSS (Figure 3D). There was an overall significant enrichment of DMRs in introns (OR 2.65, p<0.0001), most prominent in intron 1\u20133 of a given gene (Figure 3E and Figure 3\u2014figure supplement 1E). Notably, hypomethylated DMRs were overrepresented in introns and underrepresented in intergenic regions (Figure 3\u2014figure supplement 1F). Overlap of the DMRs with lung-identified genomic regulatory features (Shen et al., 2012; Yue et al., 2014) further specified the DMRs to coincide with putative enhancer regions (H3K4me1 positive regions, enhancer-promoter units [EPU], DNase hypersensitive regions) but not with transcription start sites (CpG islands, TSS defined by FANTOM consortium, H3K4me3 positive regions) (Figure 3F). This could be visualized in an exemplary way in genome browser views depicting CpG islands and putative enhancer regions together with the identified DMRs (Figure 3G and Figure 4E). Essentially, DNA methylation profiling suggested a prominent loss of methylation at intronic enhancers during acquisition of quiescence in lung EC.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34423/elife-34423-fig3-v1.jpg)\n\n**Figure 3.:** (A, B) Data of tagmentation-based WGBS of infant and young adult lung EC were analyzed on the level of single CpGs (A) and differentially methylated regions (DMRs) (B). (C) Distribution of the methylation difference (in %) of DMRs during the acquisition of EC quiescence. Depicted are all changes\u00a0\u2265\u00a010% between young adult and infant EC. (D) Localization of hypo- (left) and hyper- (right) methylated DMRs relative to the transcription start site (TSS) in kb. (E) Genomic location of the hypo- (top) and hyper- (bottom) methylated DMRs. TTS\u00a0=\u00a0transcription termination site. (F) Overlap analysis of DMRs with known regulatory DNA elements of the lung. wLung\u00a0=\u00a0whole lung tissue, EPU\u00a0=\u00a0enhancer promoter units, HS\u00a0=\u00a0hypersensitivity. (G) Top: Genome browser view of the Smad6 gene locus. Green bars represent the DMRs showing significant loss of methylation during the acquisition of vascular quiescence. Arrowhead represents the transcription start site. Grey bars represent putative enhancer regions previously defined. Bottom: Detailed view of one representative DMR (transparent red) showing the raw (dots) and the smoothed (lines) methylation data of EC from three infant (green) and three young adult (red) mice. CpGs are represented by vertical lines. The following figure supplements are available for Figure 3.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34423/elife-34423-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Tagmentation-based WGBS data QC. (B) Validation of 22 DMRs identified by T-WGBS by MassARRAY. The difference in methylation is highlighted in green (loss of methylation during vessel maturation) or orange (gain of methylation during vessel maturation). (C) Correlation of mean methylation per region of T-WGBS and MassARRAY data. (D) Genomic distribution of differentially methylated CpGs external (\u2019non-DMR\u2019 CpGs) and within (\u2018DMR\u2019 CpGs) DMRs. OR\u00a0=\u00a0odds ratio, Fisher's Exact Test. (E) Detailed analysis of intragenic DMRs concerning exon/intron location. (F) Distribution of the loss (green) and gain (yellow) of methylation DMRs compared to the genomic distribution.\n\n### Clustered intragenic loss of methylation regulates TGF\u03b2 family and semaphorin signaling in quiescent endothelial cells\n\nMethylome analysis identified strong DNA demethylation of putative intronic enhancer regions suggesting that DMRs may have regulatory potential on gene expression. As enhancer regions could influence the expression of distant genes, up to three nearby genes were assigned to the quiescence-dependent DMRs by applying the GREAT tool to identify genes likely affected by differential methylation (McLean et al., 2010). The same tool was also used to identify significantly enriched biological functions among the genes next to quiescence-dependent regulated DMRs. The functional annotation of genes next to hypomethylated DMRs revealed signaling pathways controlling vascular patterning (semaphorin interactions) and development/homeostasis (TGF\u03b2 family signaling) (Figure 4A). Notably, 94% of the hypomethylated DMRs affecting genes of these pathways were located in intragenic regions with eight DMRs per gene on average (Figure 4\u2014figure supplement 1A ,\u00a0left) resulting in DMR clustering (more than five DMRs per gene locus) in more than 36% of the affected genes (Figure 4B). Contrary, 56% of the hypermethylated DMRs were located in intragenic regions with on average two DMRs per gene (only 5.3% of genes harbored five or more hypermethylated DMRs). Furthermore, genes in the vicinity of gain of methylation DMRs were annotated as endothelial fate control genes (NOTCH signaling) (Figure 4A and B, Figure 4\u2014figure supplement 1A right). In summary, in line with transcriptome analysis, genes of TGF\u00df family and semaphorin signaling were similarly affected by differential DNA methylation. Apart from the functional annotation of genes located in the vicinity of DMRs, these analyses revealed an overrepresentation of DMRs within certain gene loci. Notably, this clustering of DMRs was mostly restricted to loss of methylation DMRs. Correspondingly, DMR clustering was most obvious in induced angiogenic molecules (Figure 4C).\n\nThe ranking of all genes according to the number of intragenic DMRs further demonstrated that (i) 10% (446) of the affected genes contained more than five intragenic DMRs corresponding to 44% (5,180) of all intragenic DMRs and (ii) 68% of the clustered DMRs showed loss of methylation (Figure 4D, bottom). This analysis highlighted the existence of large intragenic DMR clusters that undergo concerted differential DNA methylation in about 450 genes during transition to endothelial cell quiescence. Furthermore, enrichment analysis among this ranked list of genes confirmed that DMR clusters were overrepresented in genes of TGF\u03b2 and semaphorin signaling, particularly in Smad6, Smad7 and Sema6a with up to 61 DMRs in one gene (Figures 3G 4D, top, and 4E).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34423/elife-34423-fig4-v1.jpg)\n\n**Figure 4.:** (A) Functional annotation of genes next to loss of methylation DMRs by the GREAT tool. Listed are the top Reactome gene sets according to the FDR value (sorted in ascending order). (B) Distribution of DMR number/gene (with percentage of genes containing DMR clusters). (C) Characteristics of differentially expressed angiogenic molecules during vascular quiescence that were also differentially methylated (see Figure 2A). (D) Ranking of genes according to the number of intragenic DMRs. The subset of genes containing\u00a0>5 DMRs (=DMR cluster) is highlighted in grey. Top: Enrichment analysis of the ranked list of genes demonstrated an overrepresentation of semaphorin and TGF\u03b2 signaling genes among the genes containing DMR cluster. Red genes: expression significantly induced\u00a0>1.75 fold, p<0.05. ES\u00a0=\u00a0enrichment score. Bottom: Methylation direction and DMR distribution among genes with\u00a0>5 or\u22645 DMRs/gene, respectively. (E) Genome browser views of gene loci with large DMR clusters (Smad7, Sema6a). Putative enhancer regions are shown as grey bars (EPU\u00a0=\u00a0enhancer promoter units; wLung\u00a0=\u00a0whole lung tissue). (F) Direct correlation of significantly differentially expressed (red and blue circles) and methylated (green and orange circles) genes applying different thresholds to the number of DMRs per gene: no limitations, only genes with intragenic DMRs and only genes with DMR cluster. Numbers in circles represent the overlap without thresholding the number of DMRs. Percentages refer to the fraction of differentially methylated genes that overlap with differentially expressed genes. The following figure supplements are available for Figure 4.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34423/elife-34423-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Characterization of DMRs next to genes involved in semaphorin, TGF\u00df family, NOTCH and developmental signaling: Heatmap of gene expression data and the genomic location of DMRs. (B) Gene set enrichment analysis (GSEA) with gene sets defined by DMR location and methylation direction. ES\u00a0=\u00a0enrichment score, NES\u00a0=\u00a0normalized enrichment score, FDR\u00a0=\u00a0false discovery rate.\n\nThe correlation of quiescence-related expression and methylation profiles by gene set enrichment analysis (GSEA) revealed an enrichment of genes with hypomethylated DMRs (young adult vs. infant EC) among the genes induced in adult EC independent of the genomic loci of one or several DMRs. Conversely, genes with hypermethylated DMRs were overrepresented among the genes upregulated in infant EC (Figure 4\u2014figure supplement 1C). In line with this, there was an unexpected high overlap of differentially expressed genes and genes affected by DNA methylation changes. Notably, we identified an increasing overlap of transcriptome and epigenome, when scoring genes on the basis of intragenic DMRs and even more so when scoring based on clustered DMRs (Figure 4F). This correlation implies that genes with intragenic clusters of loss of methylation DMRs are more likely to be induced during acquisition of vascular quiescence than repressed, while those genes with clustered gain of methylation DMRs are more likely to be repressed.\n\nTogether, these data suggest that vascular quiescence is accompanied by a prominent loss of methylation in intragenic DMR clusters preferentially affecting and regulating the expression of genes involved in the regulation of TGF\u03b2 family, semaphorin and NOTCH signaling in this process.\n\n### Epigenetically-regulated SMAD6 and SMAD7 control vascular quiescence\n\nBoth, the transcriptome and the methylome analysis had highlighted TGF\u03b2 family members as relevant molecules during vascular quiescence. Among these, Smad6 and Smad7 contained the largest intragenic cluster of hypomethylated DMRs and showed significant induction during transition to quiescence in lung EC (Figure 2B, Figure 2\u2014figure supplement 1A and Figure 4B). We therefore focused further functional experiments prototypically on these molecules. SMAD6 and SMAD7 inhibit TGF\u03b2 family signaling by different mechanisms (ten Dijke and Arthur, 2007). Corresponding to the observed lung endothelial upregulation of Smad6 and Smad7 during acquisition of quiescence, we detected a strong decrease in R-SMAD (receptor-regulated SMADs, SMAD2/3 and SMAD1/5/8) phosphorylation in adult lung tissue confirming an inhibition of TGF\u03b2 family signaling in adult mice (Figure 5A). The upregulation of Smad6 and Smad7 during acquisition of vascular quiescence was not restricted to the lung, but also detected in EC isolated from adult mouse brain and heart (Figure 5B and Figure 5\u2014figure supplement 1A). Correspondingly, R-SMAD phosphorylation was decreased in these organs suggesting that TGF\u03b2 signaling may vessel bed independently act as global regulator of vascular quiescence (Figure 5\u2014figure supplement 1B and C). As reduced signaling could also be mediated by decreased ligand levels, BMPs and TGFB1 were determined in different organs (Figure 5\u2014figure supplement 1D). TGF\u03b2 family ligands were consistently higher in adult organs indicating that regulation of vascular quiescence is achieved through cell intrinsic blocking of the downstream signaling machinery, that\u00a0is by downregulation of receptors and upregulation of inhibitory SMADs.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/34423/elife-34423-fig5-v1.jpg)\n\n**Figure 5.:** (A) Immunoblot showing the analysis of TGF\u03b2 family signaling in whole lung lysates of infant (n\u00a0=\u00a05) and young adult (n\u00a0=\u00a05) mice. (B) Validation of Smad6 induction during maturation in the brain and the heart by qPCR. n\u00a0=\u00a04; mean\u00a0\u00b1SD; *p<0.05; Mann-Whitney Test. (C,D) Immunoblots showing the analysis of TGF\u03b2 family signaling in HUVEC stably expressing (C) or with silenced (D) SMAD6 or SMAD7. UT\u00a0=\u00a0untreated, nsh\u00a0=\u00a0non silencing shRNA. (E) Analysis of cell viability by MTT assay. ns\u00a0=\u00a0non significant; **p<0.01; unpaired t-test. (F) Analysis of HUVEC proliferation by EdU incorporation assay (4 hr) followed by FACS analysis. n\u00a0\u2265\u00a03; ns\u00a0=\u00a0non significant; **p<0.01; unpaired t-test. (G) Analysis of HUVEC migration by lateral scratch wound assay. The gap was measured every hour. EV\u00a0=\u00a0empty vector, N/p=neomycin/puromycin resistance. ns\u00a0=\u00a0non significant; **p<0.01; ***p<0.001; Linear Regression Analysis. The following figure supplements are available for Figure 5.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34423/elife-34423-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Validation of Smad7 induction during vessel maturation in brain and heart by qPCR. n\u00a0=\u00a04; mean\u00a0\u00b1SD; *p<0.05; Mann-Whitney Test. (B) Immunoblot showing the analysis of TGF\u03b2 family signaling in whole brain, heart, kidney and liver lysates of infant (n\u00a0=\u00a05) and young adult (n\u00a0=\u00a05) mice. (C) Quantification of immunoblots showing pSMAD2/3 and pSMAD1/5/8 level in different tissues. n\u00a0=\u00a05; mean\u00a0\u00b1SD; *p<0.05; Mann-Whitney Test. (D) BMP6, BMP9 and TGFB1 level measured by ELISA in lung, brain and heart. n\u00a0=\u00a04; mean\u00a0\u00b1SD; *p<0.05; Mann-Whitney Test.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34423/elife-34423-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Representative qPCR confirming the enforced expression (left) or silencing (right) of SMAD6 and/or SMAD7 in HUVEC. Mean\u00a0\u00b1SD. (B) Phenotype of HUVEC overexpressing SMAD6 and/or SMAD7. Scale bar\u00a0=\u00a050 \u00b5m. (C) Analysis of EC proliferation by EdU incorporation assay (4 hr) followed by FACS analysis, n\u00a0=\u00a05. (D) Analysis of HUVEC migration by lateral scratch assay. The gap was measured once per hour. Mean\u00a0\u00b1SD; ns\u00a0=\u00a0non significant; Linear regression analysis.\n\nTo further examine if the expression of SMAD6 and/or SMAD7 meditates resistance of EC towards ligand-dependent receptor activation, HUVEC were lentivirally transduced and analyzed in vitro. Forced expression of SMAD6 or SMAD7 in cultured EC, but not gene silencing, led to the reduction of SMAD2/3 and SMAD1/5/8 phosphorylation upon ligand stimulation (Figure 5C and D and Figure 5\u2014figure supplement 2A). Cells overexpressing both, SMAD6 and SMAD7 showed reduced viability upon prolonged cell culture, which was confirmed by MTT assay (Figure 5E and Figure 5\u2014figure supplement 2B). Proliferation and migration of EC overexpressing SMAD6 and SMAD7 was reduced confirming the limited angiogenic potential of SMAD6 and SMAD7 expressing cells (Figure 5F and G and Figure 5\u2014figure supplement 2C and D). Together, these data validate based on expression in vivo and functional experiments in vitro the negative regulation of the TGF\u03b2 family signaling as critical for the acquisition of endothelial quiescence during development.\n\n## Discussion\n\nLoss of the quiescent EC phenotype is at the heart of vascular dysfunction that is associated with some of the most common and most devastating diseases in humans. Vascular quiescence and the switch from quiescent to activated EC therefore need to be tightly regulated. How the resting phenotype is achieved on the genome-wide epigenetic and transcriptomic level has not been studied so far. This study presents the first unbiased systems biology based profiling of primary EC isolated from infant and adult mice, revealing surprising transcriptomic and epigenetic signatures. It thereby establishes a roadmap for further molecular dissection of mechanisms of vascular quiescence. Specifically, extensive bioinformatic data analysis and functional validation demonstrated that the acquisition of EC quiescence (i) is associated with distinct transcriptomic changes affecting pro- and anti-angiogenic molecules with prominent down-regulation of TGF\u00df family signaling molecules and (ii) is accompanied by gain of DNA methylation and more prominent loss of DNA methylation at intragenic enhancer regions preferentially affecting genes of TGF\u00df family and semaphorin signaling. In general, the identified gene expression changes (iii) correlate with changes in DNA methylation in corresponding loci. Notably, (iv) most hypomethylated DMRs were concentrated in large intragenic clusters, with the gene loci of the inhibitory SMADs (Smad6 and Smad7) among the genes containing the largest clusters. Cellular experiments (v) confirmed SMAD6 and SMAD7 as regulators of endothelial quiescence. Together, this study highlights the central role of suppression of TGF\u03b2 family signaling during acquisition of vascular quiescence and establishes a database enabling the datamining of transcriptomic and epigenetic changes associated with the acquisition of the quiescent EC phenotype.\n\nAlthough the importance of epigenetic mechanisms regulating vascular function has long been recognized (Dunn et al., 2015; Matouk and Marsden, 2008; Yan and Marsden, 2015), studies of DNA methylation in EC are still in their infancy. Only few genome wide systems biology studies have been performed to dissect epigenetic changes in the vasculature and even less studies have systematically correlated epigenetic changes to transcriptomic signatures. It has been described that proximal promoter DNA methylation regulates EC gene expression and thereby controls EC fate (Shirodkar et al., 2013). Similarly, flow-dependent DNA methylation changes in vessel wall cells have been shown to be enriched in GC-rich, 5\u2019 untranslated, and exonic regions (Davies et al., 2014; Jiang et al., 2015a; Jiang et al., 2015b). These previous studies in EC have determined an enrichment of promoter-associated changes in DNA methylation that coincide with gene regulation. Here, we generated genome-wide high resolution DNA methylation data of primary infant and young adult EC which enabled the identification of an unusual abundance of intragenic (mainly intronic) demethylation events with numerous genes harboring large intronic DMR clusters. Although little is known about the impact of intragenic DNA methylation changes on gene expression, some studies suggest a role in alternative promoter usage or splicing (Kulis et al., 2013; Maunakea et al., 2013; Maunakea et al., 2010; Shukla et al., 2011). Conversely, the quiescent-dependent DMRs identified in the present study overlapped with putative intragenic enhancer features. Moreover, the genome-wide association with gene expression data revealed a good correlation of intragenic hypomethylation and gene induction or hypermethylation and gene repression, respectively. The presence of clustered DMRs was even more likely associated with differential expression changes of the affected gene, suggesting that we have identified intronic regions with high regulatory potential during the acquisition of vascular quiescence. Notably, while we identified a more prominent loss than gain of methylation during acquisition of quiescence, atherosclerosis progression in human appears to be associated with a distinct gain of methylation signature (Zaina et al., 2014). Altogether, these data highlight the important role of epigenetic modifications in the regulation of EC functions and have led to the identification of distinct genomic regions with crucial regulatory potential that will serve as a foundation for further functional studies.\n\nAmong the transcriptomically and epigenetically regulated genes were molecules of pathways with well-established EC-regulatory function including NOTCH, semaphorin, FGF, WNT and TIE signaling (Marcelo et al., 2013; Patel-Hett and DAmoreD'Amore, 2011). Yet, both unbiased genome-wide approaches of this study, RNA-seq and T-WGBS, converged on a crucial role of TGF\u00df family signaling in the regulation of vascular quiescence. This finding is not novel per se, but TGF\u00df family signaling has been described to result in both, pro- and anti-angiogenic functions in a very context dependent manner (Cai et al., 2012; Dyer et al., 2014; Goumans et al., 2003; Goumans et al., 2002; Larriv\u00e9e et al., 2012; Mallet et al., 2006; Suzuki et al., 2008). Here, we show in the physiologically most relevant vascular quiescence process (i.e. the comparison of infant and young adult EC) that many important signaling molecules of the TGF\u00df family pathway are differentially regulated leading to reduced signal transduction via R-SMAD phosphorylation in adult tissue despite high ligand levels. As a decisive point, the inhibitory SMADs, Smad6 and Smad7, were epigenetically inhibited by large intronic clusters of methylated DNA during early development and induced in adult EC. Cell culture based analysis confirmed that the expression of SMAD6 and/or SMAD7 in EC mediates resistance to ligand treatment thereby blocking TGF\u00df family signaling. Interestingly, SMAD6 and SMAD7 have originally been identified as vascular SMADs (Topper et al., 1997). Their induction upon laminar shear stress highlights the importance of blood flow in maintaining the quiescent vascular phenotype. Although ubiquitously expressed, they exert particularly prominent vascular function. Smad6 has recently been described to act anti-angiogenic in sprouting assays (Mouillesseaux et al., 2016) and Smad7 has been shown to inhibit peritoneal angiogenesis (Peng et al., 2013). Correspondingly, genetic deletion of Smad6 or Smad7 leads to major cardiovascular defects with partial prenatal mortality (Smad6) (Galvin et al., 2000) or to massive growth retardation with reduced viability (Smad7) (Tojo et al., 2012). In conclusion, the present study underlines the central role of TGF\u00df family pathways during acquisition of the resting EC phenotype including prominent regulation of inhibitory SMADs on the epigenetic level.\n\nRemarkably, molecules of the VEGF pathway, the master regulator of angiogenesis induction, were both, transcriptionally and epigenetically not identified as being significantly differentially regulated during the transition to EC quiescence. Surprisingly, the ligand Vegfa was significantly higher expressed in adult EC compared to infant EC. High expression of VEGFA has also been described in the adult brain (Licht and Keshet, 2013). Autocrine VEGF has been proposed to be essential for EC survival thereby fulfilling homeostatic functions. It appears to serve as a rheostat of paracrine acting VEGF to possible even exert negative regulatory functions. In fact, analyses of genetically engineered mice specifically lacking EC-produced VEGF indicate that paracrine VEGF does not compensate for autocrine VEGF (Lee et al., 2007). Conversely, expression of the VEGF decoy receptor Flt1/Vegfr1 (Boucher et al., 2017; Fong et al., 1995; Kappas et al., 2008; Kearney et al., 2002) was in the present study significantly increased (but below threshold of 1.75x) during acquisition of quiescence. Since the expression of the primary VEGF signal transducing receptor Kdr/Vegfr2 was neither in RNA-seq nor in qPCR validation data significantly changed, this results in an increased VEGFR1/VEGFR2 ratio in adults. Altogether, these data imply that VEGF signaling is not dominantly regulated during the transition to vascular quiescence but instead undergoes specific and situation-specific dynamic regulation.\n\nIn conclusion, the present study has for the first time established the transcriptomic and epigenetic landscape of vascular quiescence in primary lung EC that might also apply to EC of other tissues. These findings reveal that vascular quiescence is comprehensively regulated on both transcriptional and DNA methylation level converging on the prominent inhibition of TGF\u00df family signaling in adult EC. Moreover, the acquisition of the resting EC phenotype is accompanied by a dynamic balance of activating and inhibiting pathways. These findings might in the future potentially pave the ways towards fundamentally novel strategies to therapeutically interfere with unwanted EC activation during disease. The study thereby lays a foundation for mechanistic and functional studies of individual genes and complex gene signatures involved in the transition from the activated to the quiescent phenotype and vice versa.\n\n## Materials and methods\n\n### Mice\n\nC57BL/6N female mice were obtained from Taconic (Taconic Biosciences, Europe). After arrival, mice were kept in \u2018Individually Ventilated Cages\u2019 (IVC) to maintain the health status as declared by Taconic as \u2018Murine Pathogen Free'. Lungs were processed for EC isolation 1\u20133 days after arrival. Animals had free access to food and water and were kept in a 12 hr light-dark cycle. All mice were handled according to the guidance of the Institute and as approved by the German Cancer research center (No. DKFZ305). No statistical methods were used to predetermine sample size. The experiments were not randomized and the investigators were not blinded to allocation during experiments and outcome assessment.\n\n### Mouse endothelial cell isolation by FACS\n\nEndothelial cell (EC) isolation was performed as described previously (Korn et al., 2014). In brief, mice were sacrificed and lung, heart and brain of infant or young adult mice were surgically removed and cut into small pieces. Tissue pieces were digested in Dulbecco\u00b4s Modified Eagle\u00b4s medium (DMEM, ThermoFisher Scientific, Germany) containing 1.25 mM CaCl2, 200 U/ml Collagenase I (Sigma, Munich, Germany) and 10 \u00b5g/ml DNaseI (Roche, Germany) at 37\u00b0C for 45 min. Single-cell suspensions were prepared by passing the digestion mix through 18G and 19G cannula syringes and filtering through a 100 \u00b5m cell strainer. To remove the myelin from the brain cell suspension 22% BSA was added (1:1 v/v), and after centrifugation the upper myelin layer was discarded. Cells were stained for the negative markers PDPN, LYVE1, PTPRC and LY76 for 30 min at 4\u00b0C in PBS/5% fetal calf serum (FCS). Cells stained with negative markers were depleted by incubation with Dynabeads (ThermoFisher Scientific, Germany) for 30 min at 4\u00b0C on the rotator followed by magnetic removal. The remaining cells were positively stained with antibodies against CD31 and CD34 in PBS/5% FCS for 30 min at 4\u00b0C. Dead cells were excluded by phosphatidylinositol (PI) staining (1:2000). PTPRC\u2010LYVE1\u2010LY76\u2010PDPN\u2010PI\u2010CD31+CD34+ cells were sorted with a BD FACSAria ll (BD Biosciences, Heidelberg, Germany)\n\nThe following primary antibodies were used: rat anti-CD31 (551262, BD Biosciences, diluted 1:100), rat anti-CD34 (48\u20130341, eBioscience, diluted 1:50), rat anti-LY76 (561032, BD Biosciences, diluted 1:200), rat anti-LYVE1 (53\u20130443, eBioscience, diluted 1:250), hamster anti-PDPN (53\u20135381, eBioscience, 1:100), rat anti-PTPRC (553080, BD Biosciences, 1:400).\n\n### EdU labeling in vivo\n\nMice were injected s.c. with EdU (50 \u03bcg/g mouse) 17 hr prior to sacrificing the animals. Lungs were removed and cells were isolated and surface-stained as described in the corresponding section. For additional EdU-labeling cells were fixed, permeabilized and stained using the Click-iT Plus Alexa Fluor 555 Picolyl Azide Toolkit (ThermoFisher Scientific, Germany) according to the manufacturer\u2019s instructions.\n\n### Immunofluorescence staining\n\nOrgan cryosections were fixed in ice-cold methanol for 10 min at \u221220\u00b0C. Blocking was performed with 10% goat serum (ThermoFisher Scientific, Germany) for 1 hr at RT. The vasculature was stained for CD31 and proliferating cells for KI67 overnight at 4\u00b0C. The sections were subsequently incubated with the appropriate secondary antibody for 1 hr at RT. Pictures were taken using the Zeiss Cell Observer and image analysis was accomplished with Fiji.\n\nThe following primary antibodies were used: rat anti-CD31 (553370, BD Biosciences, 1:50), rabbit anti-KI67 (GTX 16667, Gene Tex, 1:100), goat IgG (A11006, ThermoFisher Scientific, 1:500), goat IgG (A11071, ThermoFisher Scientific, 1:500).\n\n### Cell culture\n\nHUVECs were purchased from PromoCell (Heidelberg, Germany) and cultured in Endopan 3 with 3% FCS and supplements (PAN Biotech, Aidenbach, Germany) at 37\u00b0C, 5% CO2 and high humidity. Passages\u00a0<\u00a0P6 were used for all experiments and cells were tested negative for mycoplasma contamination. For Lentiviral transduction (pLenti-based overexpression or pGIPZ-based silencing of certain molecules), 1\u00a0\u00d7\u00a0105 cells were seeded and 24 hr later lentivirus was added for 16 hr. Media was changed to Endopan with supplements for 24 hr before starting the selection with puromycin (P; 0.4 \u00b5g/ml) or neomycin (N; 200 \u00b5g/ml) or both (P 0.3 \u00b5g/ml and N 150 \u00b5g/ml) for 3\u20134 days.\n\nThe following lentiviral vectors were used: pLenti-CMV-EV-puromycinRes (control), pLenti-CMV-EV-neomycinRes (control), pLenti-CMV-SMAD6-puromycinRes (overexpression), pLenti-CMV-SMAD7-neomycinRes (overexpression), pGIPZ-ns-shRNA (control), pGIPZ-shSMAD6-118 (depletion), pGIPZ-shSMAD7-115 (depletion).\n\nCells were starved in Endopan without supplements for 2\u20134 hr before treating with 5 ng/ml BMP9 (R and D Systems, Minneapolis, Minnesota, US) or 10 ng/ml TGFB (R and D Systems, Minneapolis, Minnesota, US) for 30 min. For EdU incorporation analysis EdU was directly added to the subconfluent cells at a final concentration of 10 \u00b5M for 4 hr. Harvesting, fixation, permeabilization and staining were performed using the Click-iT EdU Flow Cytometry Assay Kit Alexa Fluor 647 (ThermoFisher Scientific, Germany) according to the manufacturer\u2019s protocol. Cells were analyzed on a BD FACSCanto II (BD Bioscience, Heidelberg, Germany). MTT assay was performed in 96well plates according to manufacturer\u2019s instructions (Roche, Germany). Migration analysis was performed by scratch assay in 24well plates. To prevent cell proliferation during migration analysis cells were treated with 10 \u00b5g/ml mitomycin C (Sigma, Munich, Germany) for 1.5 hr prior to scratching the monolayer. Pictures were taken either manually at certain time points (as indicated in the figures) at an Olympus IX71 Microscope (10x) or automatically every hour at an Olympus Cell^R Microscope with cell incubation chamber (10x). Image analysis was accomplished with Fiji.\n\n### Elisa\n\nLigand level in tissue lysates were determined by ELISA according to the manufacture\u2019s protocols. BMP6 was measured by the ELISA Kit for Bone Morphogenetic Protein 6 (BMP6) (SEA646Mu, Cloud Clone, Katy, Texas, US), BMP9 was measured by the Mouse BMP9 ELISA Kit (ELM-BMP9, RayBiotech Norcross, Georgia, US) and TGFB1 was measured by the TGF-\u03b21 Quantikine ELISA Kit (MB100B, R and D systems, Minneapolis, Minnesota, US). For BMP6 and BMP9 determination in lung and brain 100 ng/\u00b5l total protein concentration, for BMP6 and BMP9 measurement in heart 10 ng/\u00b5l total protein concentration and for TGFB1 detection in lung and heart 500 ng/\u00b5l total protein concentration was utilized.\n\n### Immunoblot\n\nCells (whole tissue fragments or HUVEC) were lysed in RIPA buffer (1% NP-40, 0.1% Sodium dodecyl sulphate, 0.5% Sodium deoxycholate, 10% glycerol, 5 mM EDTA) supplemented with proteinase inhibitor mix (Serva Electrophoresis, Heidelberg, Germany) and sodium orthovanadate (Sigma, Munich, Germany). Protein lysates were separated on 10% polyacrylamide-SDS gels and blotted on nitrocellulose membranes. Membranes were blocked with 3% BSA and incubated with the indicated primary antibodies at 4\u00b0C over night. Horseradish peroxidase-conjugated secondary antibodies were used for chemiluminescence detection. For detection, either an AGFA classic EOS developer (AGFA, Mortsel, Belgium) or an Amersham Imager 600 (GE healthcare, Little Chalfont, UK) was used.\n\nThe following primary antibodies were used: rabbit anti-pSMAD1/5/8 (D6656/Vli31, Maine Medical Center, 1:2000), rabbit anti-SMAD1 (9743S, Cell Signaling, 1:1000), rabbit anti-pSMAD2/3 (D6658, Maine Medical Center, 1:2000), rabbit anti-SMAD2/3 (5678, Cell Signaling, 1:1000), rabbit anti-ACTB (sc-1616, Santa Cruz Biotechnology, 1:5000), goat IgG (P0448, Dako, 1:5000).\n\n### RNA isolation and quantitative PCR (qPCR) analysis\n\nTotal RNA of FACS-sorted mouse ECs was isolated with Arcturus PicoPure RNA Isolation Kit (ThermoFisher Scientific, Germany) and RNA of HUVECs was isolated with RNeasy Mini Kit (Qiagen, Hilden, Germany) according to the manufacturer\u2019s protocols. cDNA was synthesized with QuantiTect Reverse Transcription Kit (Qiagen, Hilden, Germany) according to the manufacturer\u2019s instructions. Subsequent qPCR was performed with TaqMan gene expression assay (ThermoFisher Scientific, Germany), TaqMan Fast Advanced Mastermix (ThermoFisher Scientific, Germany) and the StepOnePlus Real-Time PCR System (ThermoFisher Scientific, Germany). Actb (mouse EC) or HPRT (HUVEC) was used for data normalization.\n\nThe following TaqMan gene expression assays (ThermoFisher Scientific, Germany) were used: Acta2 (Mm00725412_s1), Actb (Mm00607939_s1), Bmpr2 (Mm00432134_m1), Ccnb1 (Mm03053893_gH), Ccnb2 (Mm01171453_m1), Cdk1 (Mm00772472_m1), Cyr61 (Mm00487501_g1), Fgfr1 (Mm00438930_m1), HPRT (Hs02800695_m1), Icam1 (Mm00516023_m1), Kdr (Mm01222421_m1), Notch3 (Mm01345646_m1), Nr2f2 (Mm00772789_m1), Ptprc (Mm01293577_m1), Sema3c (Mm00443121_m1), Smad6 (Mm01171378_m1), SMAD6 (Hs00178579_m1), Smad7 (Mm00484742_m1), SMAD7 (Hs00998193_m1), Stat1 (Mm00439531_m1), Tgfbr2 (Mm00436977_m1).\n\n### RNA-sequencing (RNA-seq)\n\nTotal RNA from mouse lung EC was isolated using Arcturus PicoPure RNA Isolation Kit (ThermoFisher Scientific, Germany) according to the manufacturer\u2019s instructions. DNA was removed by treating with RNase-free DNase Set (Qiagen, Hilden, Germany). Quality control was performed by Qubit (ThermoFisher Scientific, Germany) and Bioanalyzer (Agilent, Waldbronn, Germany) measurements. Sequencing library was generated with 10 ng of total RNA using the SMARTer Ultra Low RNA Kit for Illumina Sequencing (Clontech, Mountain View, California, US) according to manufacturer\u2019s protocol. Sequencing reads (100 bp Paired-End) were generated on the HiSeq2000 platform (Illumina, San Diego, California, US) with four samples per lane.\n\n### RNA-seq data processing and analysis\n\nThe sequenced reads were aligned to the mouse reference genome mm10 using STAR (Dobin et al., 2013) allowing up to 10 mismatches. The average transcriptome coverage was 37.8\u00a0\u00b1\u00a04. DEseq2 was used to test for differential gene expression (mm10, RefSeq gene annotation) (Love et al., 2014). RNA-seq data are available at the NCBI Gene Expression Omnibus (GEO) under accession number GSE86600. Only transcripts with an RPKM\u00a0\u22651 in at least one sample were considered for further analysis. Significantly differentially expressed genes were defined as more than 1.75-fold regulated (p<0.05). Hierarchical clustering was performed using GenePattern Software (Reich et al., 2006). For functional annotation with Reactome gene sets, the Molecular Signature Database (MSigDB) (Subramanian et al., 2005) was used. Upstream analysis with activation state prediction was generated by using QIAGEN\u2019s Ingenuity Pathway Analysis (IPA, QIAGEN Redwood City). According to the manual, \u201cthe upstream regulator analysis is based on prior knowledge of expected effects between transcriptional regulators and their target genes stored in the Ingenuity Knowledge Base. The analysis examines how many known targets of each transcription regulator are present in the user\u2019s dataset, and also compares their direction of change (i.e. expression in the experimental sample(s) relative to control) to what is expected from the literature in order to predict likely relevant transcriptional regulators. If the observed direction of change is mostly consistent with a particular activation state of the transcriptional regulator (\u2018activated\u2019 or \u2018inhibited\u2019), then a prediction is made about that activation state.\u2019 The list of chromatin modifying enzymes has been described previously (Plass et al., 2013).\n\n### Tagmentation-based whole genome bisulfite sequencing (T-WGBS) and validation by quantitative mass spectrometry (MassARRAY)\n\nGenomic DNA from sorted EC was isolated using the QIAamp DNA Micro Kit (Qiagen, Hilden, Germany) according to the manufacturer\u2019s instructions. T-WGBS was essentially performed as described previously (Wang et al., 2013) using 30 ng genomic mouse DNA as input. Three sequencing libraries were generated per sample and each was sequenced 100 bp, paired-end on one lane of a HiSeq2000 (Illumina, San Diego, California, US) machine.\n\nValidation of selected T-WGBS data was performed by MassARRAY (Agena Bioscience, Hamburg, Germany) as described previously (Sonnet et al., 2014) using primers listed in the Supplementary file 1. Forward primers for MassARRAY were 5' tagged with AGGAAGAGAG, reverse primers with CAGTAATACGACTCACTATAGGGAGAAGGCT.\n\n### T-WGBS: Sequence alignment and cytosine methylation estimation\n\nWe used a mapping method as described earlier (Johnson et al., 2012) modified for reads from tagmentation-based whole-genome bisulfite sequencing. Briefly, the mm10 reference genome was transformed in silico for both the top strand (C to T) and bottom strand (G to A). Before alignment, adaptor sequences were trimmed using SeqPrep (St John, 2016; https://github.com/jstjohn/SeqPrep). Then the first read in each read pair was C-to-T converted and the 2nd read in the pair was G-to-A converted. The converted reads were aligned to a combined reference of the transformed top (C to T) and bottom (G to A) strands using BWA (bwa-0.6.1-tpx) (Li and Durbin, 2009) with default parameters except the quality threshold for read trimming (-q) of 20 and the Smith-Waterman for the unmapped mate disabled (-s). After alignment, reads were converted back to the original states and reads mapped to the antisense strand of the respective reference were removed. Duplicate reads were removed using Picard MarkDuplicates (http://picard.sourceforge.net/). Reads with alignment scores less than one were filtered before subsequent analysis. Total genome coverage was calculated using the total number of bases aligned from uniquely mapped reads over the total number of mappable bases in the genome.\n\nAt each cytosine position, reads that maintain the cytosine status were considered methylated, and the reads that have cytosine converted to thymine were considered unmethylated. Only bases with Phred-scaled quality score of\u00a0\u226520 were considered. For libraries prepared with the tagmentation protocol, first 9 bp of the second read and last 9 bp before the adapter in the first read were excluded from methylation calling. Bisulfite conversion rates were estimated using the methylation level at CH sites.\n\n### T-WGBS: DMR calling and annotation\n\nDMR calling was performed as described previously (Bauer et al., 2016) with minor modifications. In brief, DMR calling was conducted on methylation data without smoothing (due to sufficiently high coverage) with the bsseq v1.60 package (Hansen et al., 2012) for R statistical software v3.2.2. We applied a coverage filter that required a minimum coverage of 8x per CpG in at least two of the three samples per group. The DMR model comprised at least three consecutive significant CpGs (each p<0.05, t-test) and a minimum difference of 10% in mean methylation between groups.\n\nIntersection with known regulatory genomic features was performed with Galaxy (Afgan et al., 2016) using published datasets (H3K4me3 ChIPseq: ENCSR000CAR; H3K4me1 ChIPseq: ENCSR000CAQ; DNase Hypersensitivity: ENCSR000CNM) and enhancer-promoter units (EPU) defined in mouse lung tissue (Shen et al., 2012; Yue et al., 2014). For data visualization tracks were loaded into the IGV browser (Robinson et al., 2011). Motif searches for known transcription factor binding sites (TFBS) in DMRs and TFBS enrichment over background were analyzed with the \u2018findMotifsGenome.pl\u2019 script of the HOMER tools software package (Heinz et al., 2010).\n\nGenomic annotation of DMRs to the nearest TSS was obtained with the \u2018annotatePeaks.pl\u2019-script of the HOMER tools software package (Heinz et al., 2010) to genome version mm10. Functional annotation of up to three nearby genes of DMRs was accomplished using the GREAT tool (McLean et al., 2010). For enrichment analysis among a ranked list of genes (sorted according to the number of DMRs or rel. gene regulation) the Gene Set Enrichment Analysis (GSEA) Software was applied (Subramanian et al., 2005). Tagmentation-based WGBS data are available at the NCBI Gene Expression Omnibus (GEO) under accession number GSE87374.\n\n### Interactome analysis\n\nTo gain further functional insights into the mechanisms of EC quiescence, we generated a network from genes that were significantly differentially regulated (p<0.05). For generating such a network, we used the DIAMOnD algorithm (Ghiassian et al., 2015), which creates a network starting from a set of proteins (so-called seed set) by integrating related proteins into the network based on their topological relevance to the initial seed set. DIAMOnD first ranks all proteins in the interactome according their connectivity significance with respect to the seed set. Next, the protein with the highest rank, that is, lowest p-value, is added to the initial network. The procedure is repeated with the extended seed set, until the incorporation of seed proteins saturates.\n\nGenes with a FC above 1.75 or below \u22121.75, were mapped to their corresponding gene products and selected as seeds for generating the network, with a total of 972 genes being up and 2,251 genes being down regulated (a total of 3,223 regulated genes). The mouse interactome comprised 7,267 proteins and 18,382 protein interactions, obtained by merging publicly available data from the major public protein-interaction databases. In the end, 227 (23.4%) upregulated and 618 (27.5%) downregulated proteins were covered in the assembled mouse interactome and used as seed proteins to generate the EC specific interaction network.\n\nGiven the incompleteness of the mouse interactome, a large number of DIAMOnD iterations were necessary to connect all seed proteins through interactions, that is, 5,943 iterations were needed to link 99.3% of the proteins. In consequence, the resulting network was very large, covering about 93% of the mouse interactome. Since we were primarily interested in proteins functionally related to EC quiescence, we applied a strict threshold, terminating the network generation after the first steep increase in the proportion of incorporated seeds started to flatten (iteration: 265). The EC quiescence specific network with 745 proteins and 1,661 interactions is shown in the Figure 1\u2014figure supplement 2. A total of 484 seed proteins (57.3%) were connected in the network through 261 linker proteins, which were of high functional interest with respect to EC quiescence.\n\nNext, we assessed whether proteins forming the EC quiescence network were functionally coherent with respect to the initial seed set. To this end, we performed a functional enrichment with g:Profiler (Reimand et al., 2016) of two protein sets, namely (i) proteins of the seed set covered by the interactome, and (ii) proteins of the network, and compared the respective outcomes focusing on KEGG pathways. As background set, we used the 7,267 proteins comprising the mouse interactome. As the reduced seed set might yield a distinct enrichment, we performed in addition a functional enrichment for proteins of the complete initial seed set. The complete list of enriched pathways for each protein is shown in Figure 1\u2014source data 1. In general, we observed a large overlap of enriched pathways between the seeds and the EC quiescence network. These findings emphasized that proteins captured in the network were of functional relevance with respect to proteins regulated in EC quiescence.\n\nTo obtain more insights from the generated network, we performed network clustering identifying densely connected subgraphes, so called communities. The 23 detected cluster were ranging in size from two to 165 proteins. For each of the cluster, we performed functional enrichment analysis using g:Profiler (Reimand et al., 2016).\n",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "36b5d33b-58df-467f-895e-ae98b8e90958",
+      "submission_id": "fe44f089-9772-4751-a5ac-d90bf238284c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Didier YR Stainier, Max Planck Institute for Heart and Lung Research Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34423.030](https://doi.org/10.7554/eLife.34423.030)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Transcriptional and epigenetic programming during the transition from developmental angiogenesis to vascular quiescence\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors and the evaluation has been overseen by a Senior Editor. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nWhilst the reviewers found your work of interest they felt it lacked sufficient experimental validation of several claims. The identification of genetic and epigenetic regulation mechanisms in vessel maturation and quiescence is indeed seen as a timely and important question, and the reviewers see that your data has the potential to become an important catalogue for future studies. However, in the absence of strong validation of function, in particular in vivo and given that it remains very unclear what aspect of the regulation truly relates to quiescence rather than organ specific vessel adaptations, it was felt there will need to be a substantial amount of extra work to clarify the true value of the data. The importance of Tgfb in vessel maturation per se is not deemed novel, and it is felt your work adds little new insight to advance the understanding of how this pathway achieves maturation. The epigenetic regulation, the methylome analysis and the identification of hot spots of DMRs in is seen as a potential strength, but also lacks functional validation. As ELife does not encourage asking for extensive revisions that will likely take a lot of time. we decided it will be most appropriate to return the manuscript to you. If, however you feel you can address the full critique below and can identify a set of key experiments that will validate the claims within a short time, you may of course appeal our decision.\n\nReviewer #1:\n\nThe manuscript by Schlereth and colleagues addresses the important question of how endothelial cell maturation and quiescence is regulated through genetic and epigenetic mechanisms. The authors take an unbiased whole genome approach using RNA seq to study gene expression, combined with analysis of gain and loss of methylation to assess epigenetic regulation. The authors use mouse lung as model selecting postnatal day 8 as adolescent stage, and 8-12 weeks as adult stage.\n\nFACS sorted cells are processed for analysis. Comprehensive bioinformatic analysis identified regulated gene networks associated with quiescence and qPCR of a few genes confirms the RNA seq data. Probably the most interest new data relate to the identification of prominent differential methylation of intragenic clusters in ECs during methylation, with intronic enhancers prominently featuring as differentially methylated regions. Key regulated pathways include JAK-STAT and TGFb signaling, in the case of the latter, strong upregulation of the inhibitory smads 6 and 7. These are also targets of epigenetic regulation and could be confirmed in isolated cells from brain and heart.\n\nOverall, the authors conclude that the identified regulatory mechanisms drive endothelial quiescence and maturation.\n\nWhilst the comprehensive approach is interesting and contains valuable information, there are aspects that reduce enthusiasm as the conclusions appear somewhat overstated or unclear. Given that the study is essentially based on sorted cells from one organ, it is unclear whether the gene networks identified truly signify general mechanisms of quiescence or rather relate to maturation of the lung vasculature in particular. For example, it seems possible that the lung vasculature is particular active in immune-related signaling given the strong exposure to pathogens. It is noteworthy that the authors do not state what the pathogen status of the animals is. They were purchase from Taconic, but no other information is provided. The regulation of angiotensin is also interesting as the lung vasculature runs under different pressure regimes compared to the rest of the body. Again, is this lung specific? Some genes that are found would further suggest that not all sequences come from endothelial cells. For example, Notch3 is normally not expressed by EC to my knowledge. The Results sections does not contain information how the authors controlled for purity. The Materials and methods section however show that the isolation is not only done by FACS but preceded by dynabead magnetic sorting. Given that the lung tissue develops substantially between the selected stages, it would be important to understand whether the two stages had similar levels of non-EC contamination. The isolation and digestion procedures are bound to be affected differently. This needs to be explained.\n\nAs the most strongly regulated pathway, the authors identify Tgfb, in particular smad6 and smad7. To my understanding, these are activated differentially downstream of BMP and Tgfb signaling. Although they act as repressors, their engagement in a feedback loop would normally imply that Tgfb signaling may be activated in maturation. There is little detailed analysis of this question. A general inhibition of either Tgfb or BMP would be expected to drive endothelial activation, not necessarily quiescence. A detailed analysis of the phosphorylation status of R-smads in vivo would seem important to understand this.\n\nOverexpression of just the inhibitory smads may not at all reproduce the situation the authors find in vivo.\n\nIn conclusion, the present work provides an interesting starting point, with data that may become valuable for the field with time, once further functional validation has been done. It would be unreasonable to ask for full validation of the extensive regulatory networks. But it may be possible for the authors to further validate the role of Tgfb pathway, in particular to dissect whether the assumed quiescence regulation is indeed only achieved through epigenetic regulation of the inhibitory smads, or not (ligand levels etc.). If so, it would be critical to investigate whether such a mechanism provides endothelial cells with a state of resistance to ligand induced activation? Can the authors modify the methylation experimentally?\n\nIf no further validation/clarification can be provided, the present work will be a catalogue plus some conceptual advance that however remains to be tested.\n\nI am unsure whether the authors will be able to provide sufficient confirmation with a limited revision for eLife.\n\nReviewer #2:\n\nThis study provides a description of the transcriptomic and epigenetic landscape of endothelial cell maturation by performing analyses on ECs isolated from day 8 and young adult mice (8-10 weeks old). Numerous changes are cataloged. Robust changes are seen in Smad6 and Smad7 and their roles as anti-angiogenic, anti-proliferative signaling molecules is validated by in vitro studies.\n\nA detailed analysis of Smad6 and 7 on control of EC responses to BMP and lateral branching was published last year by Bautch's group. It is not cited here.\n\nIn the Discussion section it is stated that \"SMAD6 and SMAD7 have originally been identified as vascular SMADs and are, in fact, expressed almost exclusively in EC (Topper et a., 1997)\" citing a 20 year old paper. I doubt that this is true. A PubMed search suggests that they are ubiquitously expressed.\n\nReviewer #3:\n\nThe manuscript seeks to investigate the transcriptional and epigenetic mechanisms that control endothelial quiescence. This is still a fairly unexplored area of vascular biology; thus, the study is timely and welcome. To achieve their aim, the Authors use FACS sorted lung EC from newborn mice (P 8) and young adult mice (8-12 weeks) for RNA Seq and methylation analysis.\n\nThe study takes a novel approach to the question of quiescence. Transcription profiling identifies over 2000 genes differentially expressed in newborn vs young adult; GO analysis identifies genes involved in multiple families including cell cycle, and proliferation analysis of EC from various organs using EdU and Ki567 profiling shows decreased EC proliferation in the adult. Figure Figure 1 shows two of the pathways that may be involved in this phenotypic switch, namely the JAK-STAT pathway and the TGFb pathway. Given that the focus of the study is on quiescence, it would be important to provide the list of genes involved in cell cycle regulation. The network analysis in Figure 1\u2014figure supplement 2 is not very helpful; it could be removed and replaced by small selected networks with each gene labelled.\n\nOf the partial list of genes involved in angiogenesis shown in Figure 2, the very noticeable absents are members of the VEGF/VEGFR families. The Authors acknowledge this, but do not discuss the possible reasons. This should be addressed in the Discussion section. Also, this somewhat weakens the argument made throughout the paper that angiogenic pathways are regulated during the progression to adulthood. A key player in this process appears to be TGFb, which becomes the focus of the second half of the manuscript. Therefore, I would recommend altering the sections of the paper where they claim that angiogenic pathways are crucially regulated. The title also should be modified, since it creates an expectation of a major focus on angiogenesis pathways, when in fact most of the validated analysis is on TGFb pathways.\n\nHaving profiled the transcriptome, the Authors proceed to profile the methylome. This is an interesting and novel experiment, and the result of potential value; other studies on EC methylation have been carried out but not on this model of young vs adult mouse EC. Data description and representation should provide more detail in the text and not only in the figure legends and Materials and methods section. Figure 3A shows a difference on CpG methylation and DMRs between newborn and young adult EC: is the difference statistically significant? Analysis of the location of DMRs identifies regions distal from the TSS as enriched in DMRs; the figure also shows EPU: enhancer promoterUnits, (defined in the figure legend not in the text): how are these identified?\n\nAnalysis of TF motifs within DMRs identifies FOX and ETS as the most represented and conclude that FOX motifs are demethylated in adult whilst ETS motifs acquire methylation in adult EC, suggesting that ETS pathways, active in newborn mice, are switched off in the adult, and the opposite for FOX. Based on these findings, the Authors conclude that there is a switch between FOX and ETS pathways which controls the progression to adult quiescent EC. This is an interesting hypothesis, but it is not demonstrated and therefore the conclusions are too speculative. Firstly, the ERG (ETS) binding site is significant in both gain and loss regions \u2013 this is not mentioned in the text. Also, levels of TF from these families do not support the \"switch\" model, since they find no difference in the FOX group, an increase in 3/5 IRF TF and a mix of up-regulation, down-regulation or no effect in the 5 ETS factors investigated. Thus, motif analysis is not consistent with TF expression; that may not necessarily be a conflict, since there are more factors in each family, and their expression levels may not be the key determinant of function. However, lack of correlation between TF expression and TF motif methylation somewhat weakens the theory of a \"switch\" and suggests more of a modulation. There is also an issue with methylation status, which on a gene to gene basis does not consistently predict induction or repression of the gene (Figure 5D and Figure 6D). Also, are any FOXO or ETS target genes differentially regulated between infant and young adult mice (c.f. Figure 2A)? this is not mentioned, and it seems an odd omission to the study. Crucially, validation of the role of this FOX \u2013 ETS switch needs to be carried out experimentally, by testing whether the changes in DMRs at these motifs are transcriptionally meaningful and result in differential gene expression of the TF targets, as well as differences in EC proliferation.\n\nThe study then moves on to the TGF\u03b2 pathway and SMADs signalling, with some straightforward in vitro validation of selected targets. Surprisingly, the TF motif analysis there is no sign of SMAD motifs. This is not discussed \u2013 it would be interesting to know the Authors view on this. Involvement of TGFb in maturation/differentiation is not a particularly novel finding, but it is still novel in this model and with this approach.\n\nThere are two separate stories in this paper, which at present do not sit comfortably together: a more preliminary one, to do with the FOX/ETS switch and the other one, more mature, on the TGFb pathway. In summary, this is a very interesting study with novel data of potential interest to the vascular biology community. However, some of the conclusions are not supported by the data and require more validation.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for submitting your article \"Genome-wide profiling of endothelial cells identifies TGF\u00df family signaling as key regulator of vascular quiescence\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Didier Stainier as the Reviewing and Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Gou Young Koh (Reviewer #1); Rosemary Akhurst (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and I have drafted this decision to help you prepare a revised submission.\n\nNone of the reviewers' queries involve additional experiments, except possibly one concerning Smad6 and 7 (see below). Also, in order for you to see the full extent of the reviews, I have kept them separate. Hopefully, you will find them helpful as you revise the manuscript.\n\nSummary:\n\nThe aim of this revised manuscript from Schlereth et al., manuscript is to discover which molecules drive endothelial cell (EC) quiescence. To achieve this, they compare EC gene expression changes that occur as new born mice progress to adulthood and establish and maintain a quiescent adult endothelium. The group undertake an \"-omics\" comparison of FACS sorted (CD34+CD31+) lung ECs harvested from suckling mice (8-10dpp) versus those harvested from adult mice (6-8 weeks dpp) mice, including transcriptomic profiling and DNA methylomics.\n\nOne question that came up in the discussion was in regard to the lack of Smad6 and 7 Western blots (or in situ or immunostaining in vivo) to look at the level of expression of these genes/proteins. Was it attempted and not successful? Two reviewers thought that it would be a very nice addition to the paper.\n\nReviewer #1:\n\nThe manuscript by Schlereth et al., tackle the important yet unanswered question in the field of vascular biology, the acquisition of quiescence in endothelial cells (ECs). The authors compared freshly isolated ECs from infant and young adult mouse lungs to gain insight about the dominant regulators that generate stable vasculature in healthy, normal mice. By incorporating unbiased whole genome approach with transcriptome and methylome analysis, and also by analyzing ECs from multiple organs, this study provides valuable insights and information which has broad applicability for future studies in the field. The convergence of evidence from transcriptome analysis and methylome analysis all pointing toward TGF\u03b2 signaling and in vitro validation of the role played by Smad6 and Smad7 on EC quiescence make a strong case for TGF\u03b2 being a key regulator of EC quiescence. Few minor adjustments would help improve this manuscript before publication.\n\n1) Subsection \u201cTGFs family signaling is inhibited in quiescent EC\u201d: \"Surprisingly, members of the VEGF/VEGFR pathway were not identified as being transcriptionally regulated.\" This sentence is rather confusing, given that in Figure 2A, heatmap showed upregulation of Vegfa in EC of young adult, and also in Figure 1\u2014figure supplement 1B, EC of young adult seems to have higher expression of Kdr (Vegfr2) compared to EC of infant. Does it mean that heatmap and RT-PCR results are not statistically significant? Or does it mean that IPA analysis of upstream regulators did not reveal VEGF/VEGFR pathway as one of significantly altered signaling pathways? Also, in the Discussion section, the authors wrote \"Since the expression of the primary VEGF signal transducing receptor Kdr/Vegfr2 was not changed,\u2026\". Is the expression level of Kdr not changed in RNA-seq or RT-PCR data, or both? More detailed explanation is required to avoid confusion.\n\n2) Subsection \u201cClustered intragenic loss of methylation regulates TGF\u03b2 family and semaphorin signaling in quiescent endothelial cells\u201d: \"The correlation of quiescence-related expression and methylation profiles revealed an upregulated expression of genes with hypomethylated DMRs in adult EC independent of the genomic loci of one or several DMRs.\" This is clearly not the case for Sema6a as shown in Figure 4 and Figure 4\u2014figure supplement 1A. Intragenic regions of Sema6a showed multiple DMRs, but its expression level is downregulated in young adult ECs. Smad7, on the other hand, showed multiple DMRs in intragenic regions and showed significant upregulation in expression level in young adult ECs, agreeing with the authors' claim. This discrepancy clearly suggests that hypomethylation does not guarantee upregulation of expression level of the affected genes. The authors should at least discuss this matter in more detail and avoid writing generalized statements concerning hypomethylation and the direction of gene expression changes, which seem oversimplified in the current version of the manuscript.\n\n3) Does the number of DMRs in a given gene have a direct correlation with the extent of expression change of that gene? In the Discussion section, the authors wrote \"The presence of clustered DMRs was even more likely associated with differential expression changes of the affected gene, suggesting that we have identified intronic regions with high regulatory potential during the acquisition of vascular quiescence.\" However, heatmap in Figure 4\u2014figure supplement 1B showed strong expression changes of Tek, which has only one DMR. Several other genes also showed significant expression changes while having a small number of DMRs (Ltbp3, Nid1, Tgfbr2, etc.). If there is no direct correlation, what is the meaning of Smad6 and Smad7 containing the largest cluster of DMRs? Are those just a lucky coincidence or are there more profound biological meaning to it? More detailed explanation would definitely help readers to understand this manuscript better.\n\nReviewer #2:\n\nThe manuscript has significantly improved in terms of focus and clarity. There are a few aspects which in my view could be improved.\n\n1) Several pathways are mentioned, and some are validated in the course of the study. It is not always clear how these were prioritised. Early on, they state that \"Functional enrichment analysis of the EC quiescence interactome led to the identification of JAK\u2010STAT signaling being highly enriched\". Figure 1\u2014source data 1 lists several other pathways, as expected. The text (subsection \u201cEndothelial transcriptomic changes during acquisition of vascular quiescence\u201d) should be reworded to make it clearer that several pathways were identified (some of which somewhat surprising to this reviewer), and that the JAK-STAT was the most significant. Strangely, this pathway is not mentioned again and is not validated. Is there a reason for this?\n\n2) Figure 1\u2014figure supplement 2 is not particularly useful, given that no nodes have been assigned labels (given the size of the network, that would be impossible). It is not easy to find a reader-friendly way to present this kind of analysis. It might be more helpful to select a few networks, including the Jak-Stat, Notch and TGF b pathways, and show network analysis related to these in detail, with names and direction of change in infant vs adult EC.\n\n3) The Authors move on to a selection of angiogenic molecules (Figure 2). How were these genes selected? Was the list manually curated or did they use DAVID or another GO software to select angiogenic regulators?\n\n4) They eventually focus on TGFb. In subsection \u201cTGFs family signaling is inhibited in quiescent EC\u201d they state: \"upstream analysis of the complete set of differentially expressed genes including activation state prediction revealed TGF\u00df1 as the most significantly inhibited growth factor\". How does this relate to the pathways shown in Figure 1\u2014source data 1? the process which led them to focus on this pathway, in the context of other pathways identified here, should be more clearly explained\n\n5) How were DMR assigned to genes? Subsection \u201cClustered intragenic loss of methylation regulates TGF\u03b2 family and semaphorin signaling in quiescent endothelial cells\u201d: \"As enhancer regions could influence the expression of distant genes, up to three nearby genes were assigned to the dependent DMRs to identify genes likely affected by differential methylation\". Please provide reference related to assignation method.\n\n6) The correlation of quiescence-related expression and methylation profiles is an important aspect of this study, since it confirms the hypothesis that the cells' phenotype, and thence the infant to adult transition, is controlled by DNA methylation. Therefore, some of the data in Figure 4\u2014figure supplement 1 should be in the main paper and should be described in more detail. There is a lot of information in this figure, which should be presented and not just briefly described in the Figure legend. Also, Subsection \u201cClustered intragenic loss of methylation regulates TGF\u03b2 family and semaphorin signaling in quiescent endothelial cells\u201d: \"these data suggest that vascular quiescence is accompanied by a prominent loss of methylation in intragenic DMR clusters preferentially affecting and regulating the expression of genes involved in the regulation of TGF\u03b2 family, semaphorin and NOTCH signaling in this process\". Is there a GO analysis showing how these pathways rank compared to others? It is interesting to focus on these pathways, but it should be clear whether these are the top pathways or whether they have been selected because of their functional relevance.\n\n7) EC differentiation and maturation, the acquisition of quiescence and their angiogenic potential are all aspects of overlapping processes; The Authors repeatedly use \"angiogenesis\" as the opposite of quiescence. The opposite of quiescence is proliferation, and indeed in the early part of the study the Authors measure the proliferation rate of the cells under investigation. But I don't think that it is correct to equate \"proliferative\" with \"angiogenic\", given that several stages of angiogenesis do not require proliferation.\n\n8) The data on SMAD 6&7 overexpression (Figure 5, Figure 5\u2014figure supplement 1 and Figure 5\u2014figure supplement 2) is interpreted as confirming a key role for these two in the acquisition of endothelial quiescence. However, over-expression of SMAD6 alone does not affect proliferation, and the combined over-expression results in decreased cell viability. The interpretation of these results should be more cautious.\n\n9) The conclusions are that the TGFb family is critical for the process. But what happened to the STAT pathway which was highlighted in Figure 1? This should be mentioned in the Discussion section.\n\nReviewer #3:\n\nThe aim of this revised manuscript from Schlereth et al. manuscript is to discover which molecules drive endothelial cell (EC) quiescence. To achieve this, they compare EC gene expression changes that occur as new born mice progress to adulthood and establish and maintain a quiescent adult endothelium. The group undertake an \"-omics\" comparison of FACS sorted (CD34+CD31+) lung ECs harvested from suckling mice (8-10dpp) versus those harvested from adult mice (6-8 weeks dpp) mice, including transcriptomic profiling and DNA methylomics. The authors should be congratulated on bioinformatics analysis and interpretation of a large body of genome wide expression data that is certainly correct and gives insights into the adult quiescent endothelial cell state. However, since e Life tends to be read by biologists, the text could be expanded slightly to make it easier for biologists with fewer quantitative skills to assess and follow.\n\nThe extensive genome-wide unbiased data reveals that components of active canonical TGF \u03b2 and BMP signaling are down regulated in the adult quiescent state, exemplified by low levels of expression of receptors for TGF \u03b2 and BMP and low levels of phosphorylated pSmad2/3 and pSmad1/5/8. This is interesting, and consistent with the widely accepted view of TGF \u03b2 signaling serving in homeostatic regulation of epithelial and endothelial growth. The prediction would be that this signaling pathway would be upregulated when homeostasis is perturbed (e.g. by wounding, damage to endothelium, inflammation) in order to restore quiescence, a phenomenon that has been described extensively in epithelia and to a lesser extent for endothelia, but not addressed in the current study.\n\nThe major novel finding of the current study is that genes encoding the inhibitory SMADs, Smad6 and SMAD7, are released from the epigenetic suppression that exists in lung ECs of young mice, such that in the adult these genes show extensive DNA hypomethylation at intronic CpG clusters indicative of higher gene expression, and consistent with the observation of higher Smad6/7 transcript levels by RNAseq and TAQMan. Thus, a major difference between lung EC from suckling versus adult mice is that in the former Smad6/7 genes are epigenetically repressed, whereas in the adult excessive Smad6/7 expression suppresses active TGF \u03b2/BMP signaling. The authors also show that in brain and heart EC, there too is epigenetic suppression of Smad6/7 in suckling mouse lung EC and release from such suppression in adult lung EC, suggesting that this is a universal rather than tissue specific effect. The manuscript (a) provides a useful resource for individuals interested in analysis of EC gene expression, (b) helps to place into context earlier findings of contextual actions of TGF \u03b2 on EC, and (c) forms the foundation for further mechanistic studies.\n\nThe previous reviewers asked for more in vivo validation of data. Although the authors go some way to provide this in Figure 5, the data in this figure is from total tissue lysate not from ECs, and would be include immune cells, epithelial cells and fibroblasts. It would be important to demonstrate that the high Smad6 and Smad7 transcript levels in adult versus young lung ECs are translated in to differential protein levels, either by Western and/or IHC.\n\nIf not already assessed in the literature or by the authors, future studies should address whether Smad6/7 protein is diminished in EC during pathological angiogenesis? NB Smad6 has at least as high expression in smooth muscle cells and pericytes, so it would be important to differentiate these two populations from EC.\n",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c4798e6c-cfec-4f29-83ec-636d50376831",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C1",
+      "claim": "Maintenance of a quiescent and organotypically-differentiated layer of blood vessel-lining endothelial cells (EC) is vital for human health.",
+      "claim_type": "EXPLICIT",
+      "source": "Maintenance of a quiescent and organotypically-differentiated layer of blood vessel-lining endothelial cells (EC) is vital for human health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement drawing from established scientific understanding about endothelial cell function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "4fdd9f79-9f49-47d2-9d19-2a0638f69b24",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C2",
+      "claim": "The molecular mechanisms of vascular quiescence remain largely elusive.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, the molecular mechanisms of vascular quiescence remain largely elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the current state of knowledge in the field as understood by the authors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "7add318e-d3b7-4fc4-af47-5b3c9da2009d",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C3",
+      "claim": "Comparative transcriptome analysis identified 2,216 differentially expressed genes during the acquisition of vascular quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparative transcriptome analysis identified 2,216 differentially expressed genes with pronounced regulation of genes mediating the induction of immune mechanisms, metabolism and phagosome pathways as well as the repression of genes controlling cell cycle, developmental angiogenesis, extracellular matrix interactions and cell contraction (Reactome-based analysis) (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data analysis presented in the manuscript and visualized in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "c93b0bed-0165-4113-885f-fa0575a6fbe2",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C4",
+      "claim": "722 genes were induced during acquisition of EC quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Hierarchical clustering of differentially expressed genes and functional annotation by Reactome overlap analysis of the 722 induced and 1,494 repressed genes regulated during the acquisition of EC quiescence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated in the figure legend for Figure 1C and supported by RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "e5b75502-0272-4a24-b0be-38b65ed66cb5",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C5",
+      "claim": "1,494 genes were repressed during acquisition of EC quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Hierarchical clustering of differentially expressed genes and functional annotation by Reactome overlap analysis of the 722 induced and 1,494 repressed genes regulated during the acquisition of EC quiescence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated in the figure legend for Figure 1C and supported by RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "240c0c40-8063-4f3c-a060-ca3a4ff8e841",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C6",
+      "claim": "JAK-STAT signaling was most significantly enriched (p=5.7\u00d710-11) in an EC quiescence network.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, it resulted in further specification of immune system regulation, as JAK-STAT signaling was most significantly enriched (p=5.7\u00d710-11) in an EC quiescence network with most factors being induced, putatively mediating the repression of the pro-angiogenic growth factors Fgf7 and Fgf10 (Figure 1\u2014figure supplement 2B and Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by interactome analysis and statistical enrichment testing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "61f10a96-801b-4e3f-9f60-02ef0b27a894",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C7",
+      "claim": "EdU incorporation assays verified the almost complete arrest of cell proliferation in adult EC.",
+      "claim_type": "EXPLICIT",
+      "source": "EdU incorporation assays verified the almost complete arrest of cell proliferation in adult EC (Figure 1B and Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental EdU incorporation data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "72d1aa4d-ffa8-4ae6-867e-66eb0316aea8",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C8",
+      "claim": "Sixteen pro-angiogenic molecules were down-regulated during acquisition of vascular quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Sixteen pro-angiogenic molecules were down-regulated and eight anti-angiogenic molecules were up-regulated during acquisition of vascular quiescence (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data analysis and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "c53bd101-cff2-4c79-8779-b16ecc57886e",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C9",
+      "claim": "Eight anti-angiogenic molecules were up-regulated during acquisition of vascular quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Sixteen pro-angiogenic molecules were down-regulated and eight anti-angiogenic molecules were up-regulated during acquisition of vascular quiescence (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data analysis and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "d823976e-4aa4-4f8f-be3b-e2bd65af3ca1",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C10",
+      "claim": "The TGF\u03b2 pathway was identified as the most concordantly downregulated signaling pathway during acquisition of vascular quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these angiogenesis-regulating molecules, the TGF\u03b2 pathway was identified as the most concordantly downregulated signaling pathway with repression of matrix-associated latent TGF\u03b2-binding proteins (Ltbp2, Ltbp3, Ltbp4) and receptors (Tgfbr2, Bmpr1) as well as upregulation of the inhibitory Smads, Smad6 and Smad7 (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data and pathway analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "f8c21690-4931-4786-994d-06aa9f389a88",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C11",
+      "claim": "Upstream analysis revealed TGF\u00df1 as the most significantly inhibited growth factor during acquisition of vascular quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, upstream analysis of the complete set of differentially expressed genes including activation state prediction of the corresponding upstream regulator revealed TGF\u00df1 as the most significantly inhibited growth factor (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on Ingenuity Pathway Analysis of RNA-seq data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "ae730719-6784-46ee-b487-4b512780b0e5",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C12",
+      "claim": "About 10% of chromatin modifying enzymes were differentially expressed with the majority being repressed in adult EC.",
+      "claim_type": "EXPLICIT",
+      "source": "About 10% of CMEs were differentially expressed with the majority being repressed in adult EC (Figure 2\u2014figure supplement 1B and C), including the de novo DNA methyltransferase Dnmt3a and four additional DNA methylation modifiers (Gadd45a, Tet1, Fos, Uhrf1) (Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data analysis of chromatin modifying enzymes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "de901a1e-b478-4e27-b4f9-31be9b5e50e4",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C13",
+      "claim": "There was a significant increase of CpGs with >80% methylation level in adult EC compared to infant EC (p=6.87\u00d710\u22126).",
+      "claim_type": "EXPLICIT",
+      "source": "Bioinformatic analysis revealed a significant increase of CpGs with >80% methylation level in adult EC compared to infant EC (p=6.87\u00d710\u22126) demonstrating a global increase in CpG methylation during the transition to vascular quiescence (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on T-WGBS data analysis with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "28d2b9a4-89a3-40dc-91f2-20c7d306c3ae",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C14",
+      "claim": "DNA methylation changes resulted in more than 1.4M differentially methylated CpGs (DMCs).",
+      "claim_type": "EXPLICIT",
+      "source": "In total, DNA methylation changes resulted in more than 1.4M differentially methylated CpGs (DMCs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on T-WGBS data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "f6a3929f-974b-4bb0-a434-6c276d4e4dcc",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C15",
+      "claim": "68,184 consecutive DMCs with a 10% methylation difference were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Retaining only the consecutive DMCs (68,184) with a 10% methylation difference showed a significant intragenic enrichment (Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on filtering and analysis of T-WGBS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "7888db63-c58c-4a43-9e0a-00fe18f3ead2",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C16",
+      "claim": "68,184 consecutive DMCs gave rise to 18,333 differentially methylated regions (DMRs).",
+      "claim_type": "EXPLICIT",
+      "source": "These DMCs gave rise to 18,333 differentially methylated regions (DMRs) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on DMR calling from T-WGBS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "0056c95a-8e97-49bb-a61e-2b4702be1806",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C17",
+      "claim": "Young adults acquired a gain of methylation in 54% of DMRs and a loss of methylation in 46% of DMRs during acquisition of quiescence (applying 10% threshold).",
+      "claim_type": "EXPLICIT",
+      "source": "Applying a threshold of 10% methylation difference, young adults acquired a gain of methylation in 54% of DMRs and a loss of methylation in 46% of DMRs during acquisition of quiescence (20% gain and 80% loss, respectively, when applying 30% as threshold) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of DMR data from T-WGBS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "5a1f5cc9-7b9f-410f-9ba2-3cc1fa15ee8d",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C18",
+      "claim": "Both loss and gain of methylation DMRs were depleted on transcription start sites (TSS), but enriched up- and downstream (10\u2013100 kb distant) from the TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "Both, loss and gain of methylation DMRs were depleted on transcription start sites (TSS), but enriched up- and downstream (10\u2013100 kb distant) from the TSS (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genomic location analysis of DMRs shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "18380561-f737-4881-bea3-5e7ba520f4c6",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C19",
+      "claim": "There was an overall significant enrichment of DMRs in introns (OR 2.65, p<0.0001), most prominent in intron 1\u20133 of a given gene.",
+      "claim_type": "EXPLICIT",
+      "source": "There was an overall significant enrichment of DMRs in introns (OR 2.65, p<0.0001), most prominent in intron 1\u20133 of a given gene (Figure 3E and Figure 3\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical enrichment analysis of DMR genomic locations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "5acf274b-3a34-4e57-aad5-0ae905b8b2e3",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C20",
+      "claim": "Hypomethylated DMRs were overrepresented in introns and underrepresented in intergenic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, hypomethylated DMRs were overrepresented in introns and underrepresented in intergenic regions (Figure 3\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis of DMR distribution shown in Figure 3\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "5aaf26dd-ef0c-4dc3-bed1-3ee7a7d3f281",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C21",
+      "claim": "DMRs coincide with putative enhancer regions (H3K4me1 positive regions, enhancer-promoter units [EPU], DNase hypersensitive regions) but not with transcription start sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Overlap of the DMRs with lung-identified genomic regulatory features (Shen et al., 2012; Yue et al., 2014) further specified the DMRs to coincide with putative enhancer regions (H3K4me1 positive regions, enhancer-promoter units [EPU], DNase hypersensitive regions) but not with transcription start sites (CpG islands, TSS defined by FANTOM consortium, H3K4me3 positive regions) (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on overlap analysis with published genomic regulatory features and shown in Figure 3F.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "e00d4a1b-37c6-4a14-924f-c6c0671d05cf",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C22",
+      "claim": "Functional annotation of genes next to hypomethylated DMRs revealed signaling pathways controlling vascular patterning (semaphorin interactions) and development/homeostasis (TGF\u03b2 family signaling).",
+      "claim_type": "EXPLICIT",
+      "source": "The functional annotation of genes next to hypomethylated DMRs revealed signaling pathways controlling vascular patterning (semaphorin interactions) and development/homeostasis (TGF\u03b2 family signaling) (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on functional enrichment analysis using the GREAT tool on DMR data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "e929a925-612c-46ab-a75e-ee3fe53597ef",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C23",
+      "claim": "94% of the hypomethylated DMRs affecting genes of semaphorin and TGF\u03b2 family signaling pathways were located in intragenic regions with eight DMRs per gene on average.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, 94% of the hypomethylated DMRs affecting genes of these pathways were located in intragenic regions with eight DMRs per gene on average (Figure 4\u2014figure supplement 1A , left) resulting in DMR clustering (more than five DMRs per gene locus) in more than 36% of the affected genes (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of DMR distribution within genes of specific pathways.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "f446e8a4-77fd-4473-9ac4-25ff18c84da6",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C24",
+      "claim": "More than 36% of genes affected by hypomethylated DMRs in semaphorin and TGF\u03b2 family signaling pathways showed DMR clustering (more than five DMRs per gene locus).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, 94% of the hypomethylated DMRs affecting genes of these pathways were located in intragenic regions with eight DMRs per gene on average (Figure 4\u2014figure supplement 1A , left) resulting in DMR clustering (more than five DMRs per gene locus) in more than 36% of the affected genes (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of DMR distribution within genes shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "c5f6f7cb-2e91-4e6a-909a-516896a2cc35",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C25",
+      "claim": "56% of the hypermethylated DMRs were located in intragenic regions with on average two DMRs per gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary, 56% of the hypermethylated DMRs were located in intragenic regions with on average two DMRs per gene (only 5.3% of genes harbored five or more hypermethylated DMRs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of hypermethylated DMR distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "550c0203-260d-46a3-8e35-47e701ccc899",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C26",
+      "claim": "Only 5.3% of genes harbored five or more hypermethylated DMRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary, 56% of the hypermethylated DMRs were located in intragenic regions with on average two DMRs per gene (only 5.3% of genes harbored five or more hypermethylated DMRs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of hypermethylated DMR clustering.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "3ce7b2d0-b82a-44b1-80d4-8265e66e23f4",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C27",
+      "claim": "Genes in the vicinity of gain of methylation DMRs were annotated as endothelial fate control genes (NOTCH signaling).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, genes in the vicinity of gain of methylation DMRs were annotated as endothelial fate control genes (NOTCH signaling) (Figure 4A and B, Figure 4\u2014figure supplement 1A right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on functional annotation analysis of genes near hypermethylated DMRs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "7a2fbe1e-7865-468c-8f5f-3462d79cb5ca",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C28",
+      "claim": "10% (446) of the affected genes contained more than five intragenic DMRs corresponding to 44% (5,180) of all intragenic DMRs.",
+      "claim_type": "EXPLICIT",
+      "source": "The ranking of all genes according to the number of intragenic DMRs further demonstrated that (i) 10% (446) of the affected genes contained more than five intragenic DMRs corresponding to 44% (5,180) of all intragenic DMRs and (ii) 68% of the clustered DMRs showed loss of methylation (Figure 4D, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantitative analysis of DMR distribution across genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "e701f740-1fee-4878-adec-f0324b18abae",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C29",
+      "claim": "68% of the clustered DMRs showed loss of methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "The ranking of all genes according to the number of intragenic DMRs further demonstrated that (i) 10% (446) of the affected genes contained more than five intragenic DMRs corresponding to 44% (5,180) of all intragenic DMRs and (ii) 68% of the clustered DMRs showed loss of methylation (Figure 4D, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of methylation direction in clustered DMRs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "38490b6e-b351-4d21-bd7a-06310fbd9a1f",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C30",
+      "claim": "Enrichment analysis confirmed that DMR clusters were overrepresented in genes of TGF\u03b2 and semaphorin signaling, particularly in Smad6, Smad7 and Sema6a with up to 61 DMRs in one gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, enrichment analysis among this ranked list of genes confirmed that DMR clusters were overrepresented in genes of TGF\u03b2 and semaphorin signaling, particularly in Smad6, Smad7 and Sema6a with up to 61 DMRs in one gene (Figures 3G 4D, top, and 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on enrichment analysis and visualization of DMR clusters in specific genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "390b7b33-a4c0-44be-92f3-fda062ff3161",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C31",
+      "claim": "Gene set enrichment analysis (GSEA) revealed an enrichment of genes with hypomethylated DMRs among the genes induced in adult EC independent of the genomic loci of one or several DMRs.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation of quiescence-related expression and methylation profiles by gene set enrichment analysis (GSEA) revealed an enrichment of genes with hypomethylated DMRs (young adult vs. infant EC) among the genes induced in adult EC independent of the genomic loci of one or several DMRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on GSEA analysis correlating methylation and expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "4232460a-94c8-42a2-b002-fac004da25bf",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C32",
+      "claim": "Genes with hypermethylated DMRs were overrepresented among the genes upregulated in infant EC.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, genes with hypermethylated DMRs were overrepresented among the genes upregulated in infant EC (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on GSEA analysis shown in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "c31daf5c-a934-485e-b2b8-f888f92a3ecb",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C33",
+      "claim": "There was an increasing overlap of transcriptome and epigenome when scoring genes on the basis of intragenic DMRs and even more so when scoring based on clustered DMRs.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, there was an unexpected high overlap of differentially expressed genes and genes affected by DNA methylation changes. Notably, we identified an increasing overlap of transcriptome and epigenome, when scoring genes on the basis of intragenic DMRs and even more so when scoring based on clustered DMRs (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on correlation analysis between RNA-seq and T-WGBS data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "905776b2-940e-4e68-96d2-f67b97d8d264",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C34",
+      "claim": "Smad6 and Smad7 contained the largest intragenic cluster of hypomethylated DMRs and showed significant induction during transition to quiescence in lung EC.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, Smad6 and Smad7 contained the largest intragenic cluster of hypomethylated DMRs and showed significant induction during transition to quiescence in lung EC (Figure 2B, Figure 2\u2014figure supplement 1A and Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on combined analysis of DMR data and RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "138db5de-172f-4d8c-be19-dc5f4c1b2b81",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C35",
+      "claim": "A strong decrease in R-SMAD (receptor-regulated SMADs, SMAD2/3 and SMAD1/5/8) phosphorylation was detected in adult lung tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Corresponding to the observed lung endothelial upregulation of Smad6 and Smad7 during acquisition of quiescence, we detected a strong decrease in R-SMAD (receptor-regulated SMADs, SMAD2/3 and SMAD1/5/8) phosphorylation in adult lung tissue confirming an inhibition of TGF\u03b2 family signaling in adult mice (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunoblot analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "c2e8ed7b-86f4-466a-b5e3-c879cec5d632",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C36",
+      "claim": "The upregulation of Smad6 and Smad7 during acquisition of vascular quiescence was not restricted to the lung, but also detected in EC isolated from adult mouse brain and heart.",
+      "claim_type": "EXPLICIT",
+      "source": "The upregulation of Smad6 and Smad7 during acquisition of vascular quiescence was not restricted to the lung, but also detected in EC isolated from adult mouse brain and heart (Figure 5B and Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on qPCR validation in multiple tissues shown in Figure 5B and Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "ffa6da65-9fe2-4fa7-9a83-37eb68e27408",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C37",
+      "claim": "R-SMAD phosphorylation was decreased in brain and heart suggesting that TGF\u03b2 signaling may vessel bed independently act as global regulator of vascular quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, R-SMAD phosphorylation was decreased in these organs suggesting that TGF\u03b2 signaling may vessel bed independently act as global regulator of vascular quiescence (Figure 5\u2014figure supplement 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunoblot analysis in multiple tissues and represents an inference about the global role of TGF\u03b2 signaling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "23878279-9c90-4fe4-96cc-f2f42f831afb",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C38",
+      "claim": "TGF\u03b2 family ligands were consistently higher in adult organs.",
+      "claim_type": "EXPLICIT",
+      "source": "TGF\u03b2 family ligands were consistently higher in adult organs indicating that regulation of vascular quiescence is achieved through cell intrinsic blocking of the downstream signaling machinery, that is by downregulation of receptors and upregulation of inhibitory SMADs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on ELISA measurements of ligand levels in different tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "269716d0-0aa0-4ba0-b5bd-3b246965bcf0",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C39",
+      "claim": "Regulation of vascular quiescence is achieved through cell intrinsic blocking of the downstream signaling machinery, that is by downregulation of receptors and upregulation of inhibitory SMADs.",
+      "claim_type": "EXPLICIT",
+      "source": "TGF\u03b2 family ligands were consistently higher in adult organs indicating that regulation of vascular quiescence is achieved through cell intrinsic blocking of the downstream signaling machinery, that is by downregulation of receptors and upregulation of inhibitory SMADs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that ligands are higher in adults while signaling is reduced.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "4f270146-d3b3-45a9-9ac2-38d2559010ed",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C40",
+      "claim": "Forced expression of SMAD6 or SMAD7 in cultured EC led to the reduction of SMAD2/3 and SMAD1/5/8 phosphorylation upon ligand stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Forced expression of SMAD6 or SMAD7 in cultured EC, but not gene silencing, led to the reduction of SMAD2/3 and SMAD1/5/8 phosphorylation upon ligand stimulation (Figure 5C and D and Figure 5\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunoblot analysis of HUVEC with forced expression of SMAD6/7 shown in Figure 5C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "15095bbc-b99f-4cba-98af-d17699ab5b51",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C41",
+      "claim": "Cells overexpressing both SMAD6 and SMAD7 showed reduced viability upon prolonged cell culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells overexpressing both, SMAD6 and SMAD7 showed reduced viability upon prolonged cell culture, which was confirmed by MTT assay (Figure 5E and Figure 5\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on MTT assay data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "45a167b8-7eb1-4012-b472-b24bb6263e4e",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C42",
+      "claim": "Proliferation and migration of EC overexpressing SMAD6 and SMAD7 was reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Proliferation and migration of EC overexpressing SMAD6 and SMAD7 was reduced confirming the limited angiogenic potential of SMAD6 and SMAD7 expressing cells (Figure 5F and G and Figure 5\u2014figure supplement 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on EdU incorporation assays and scratch wound assays shown in Figure 5F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "4a735090-f7db-4053-b4dd-5f7d36b91130",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C43",
+      "claim": "Endothelial cells are long-lived cells of the mesodermal lineage that line the inside of all blood vessels forming a single layer of organotypically-differentiated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Endothelial cells (EC) are long-lived cells of the mesodermal lineage that line the inside of all blood vessels forming a single layer of organotypically-differentiated cells (Augustin and Koh, 2017; Deanfield et al., 2007; Rafii et al., 2016; Regan and Aird, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "e77ce582-e2fb-4193-ae76-bc96bb1b0f28",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C44",
+      "claim": "EC acquire a quiescent state during the transition to adulthood from which they can switch back to the activated phenotype resulting in disease-associated angiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike unidirectional differentiation programs of short-lived epithelial cells, EC acquire a quiescent state during the transition to adulthood from which they can switch back to the activated phenotype resulting in disease-associated angiogenesis (Hobson and Denekamp, 1984; Marcelo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "e7be55b8-fcad-4b91-be7b-e2d3982b09d6",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C45",
+      "claim": "Loss of the quiescent EC phenotype is a hallmark of vascular dysfunction and a commonality of diverse life-threatening diseases ranging from sepsis, atherosclerosis to cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of this EC phenotype is a hallmark of vascular dysfunction and a commonality of diverse life-threatening diseases ranging from sepsis, atherosclerosis to cancer (Carmeliet and Jain, 2011; Gimbrone and Garc\u00eda-Carde\u00f1a, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "6d5bdeae-85da-4a72-950b-e26b32f7f6ea",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C46",
+      "claim": "Major and socioeconomically important chronic diseases are characterized by a loss of the quiescent EC phenotype, like age-dependent macular degeneration and diabetic retinopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, major and socioeconomically important chronic diseases are characterized by a loss of the quiescent EC phenotype, like age-dependent macular degeneration and diabetic retinopathy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established medical knowledge about these diseases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "03dff9f5-af37-4488-b2fc-4a8a1fbdcec8",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C47",
+      "claim": "Vascular targeted therapies for such conditions are mostly aimed at interfering with EC activation programs.",
+      "claim_type": "EXPLICIT",
+      "source": "Vascular targeted therapies for such conditions are mostly aimed at interfering with EC activation programs (Krzystolik et al., 2002; Tanabe et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research on therapeutic approaches.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "e4fc021b-7b41-4d74-95a5-4753e391bf76",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C48",
+      "claim": "EC quiescence is an active process, as it not only involves the absence of activators but also microenvironmental factors as well as cell intrinsic mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "EC quiescence is an active process, as it not only involves the absence of activators but also microenvironmental factors as well as cell intrinsic mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual statement based on current understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "dd0e7309-c6b0-4982-907f-fa337dcf9ae5",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C49",
+      "claim": "Matricellular factors, contact with pericytes and hemodynamic forces act as microenvironmental determinants of vascular maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Matricellular factors, contact with pericytes and hemodynamic forces act as microenvironmental determinants of vascular maturation (Armulik et al., 2011; Baeyens et al., 2016; Davis et al., 2015; Stratman et al., 2017; Yousif et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "43cd7e40-f41b-4a62-b760-d1994351915d",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C50",
+      "claim": "TGF\u00df family signaling has been described to exert both pro- and anti-angiogenic functions and to contextually cooperate with NOTCH signaling in the regulation of angiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, TGF\u00df family signaling has been described to exert both, pro-and anti-angiogenic functions and to contextually cooperate with NOTCH signaling in the regulation of angiogenesis (Cai et al., 2012; Dyer et al., 2014; Goumans et al., 2003; Goumans et al., 2002; Larriv\u00e9e et al., 2012; Mallet et al., 2006; Mouillesseaux et al., 2016; Suzuki et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research showing context-dependent effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "cc92b72d-3e95-4377-a99c-7ae678934494",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C51",
+      "claim": "No unbiased genome-wide systems biological effort from in vivo isolated EC has been made so far to identify the transcriptomic signatures associated with the acquisition and maintenance of EC quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, no unbiased genome-wide systems biological effort from in vivo isolated EC has been made so far to identify the transcriptomic signatures associated with the acquisition and maintenance of EC quiescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "a1c3bb4d-160c-452b-b0af-242c728108d0",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C52",
+      "claim": "DNA methylation acts in concert with other epigenetic marks in defining chromatin states which create gene active and silenced compartments in the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA methylation acts in concert with other epigenetic marks in defining chromatin states which create gene active and silenced compartments in the genome (Jones, 2012; Soshnev et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "105f0d10-5164-484c-bda9-bb4915b430e5",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C53",
+      "claim": "Epigenetic alterations play increasingly recognized important roles in the control of cellular differentiation processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, considering the increasingly recognized important roles of epigenetic alterations in the control of cellular differentiation processes (Boland et al., 2014; Cabezas-Wallscheid et al., 2014; Lipka et al., 2014), crucial molecular mediators of vessel maturation and EC quiescence may also be regulated by epigenetic mechanisms, which in EC have similarly not been studied in an unbiased genome-wide approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research on epigenetics in differentiation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "cf05910c-33b9-451a-8625-ce4659f3fd55",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C54",
+      "claim": "The purity of cell sorting was controlled by the validation of marker gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The purity of cell sorting was controlled by the validation of marker gene expression (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological validation shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "0c25ef69-0a93-4391-8bfe-486b7da42863",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C55",
+      "claim": "The phenotypic shift in marker expression (CD31/PECAM1 and CD34) between infant and young adult EC reflected the size of the corresponding EC.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenotypic shift in marker expression (CD31/PECAM1 and CD34) between infant and young adult EC reflected the size of the corresponding EC (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on FACS analysis data shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "7911a678-1bc2-4c1b-a8ff-2e8ff1453538",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C56",
+      "claim": "The average transcriptome coverage was 37.8 \u00b1 4.",
+      "claim_type": "EXPLICIT",
+      "source": "The average transcriptome coverage was 37.8 \u00b1 4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical quality metric from the RNA-seq experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "a95d502d-14c4-4c13-960b-e47042f7bdc8",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C57",
+      "claim": "T-WGBS data were highly reproducible in MassARRAY using independent biological replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "T-WGBS data were highly reproducible in MassARRAY using independent biological replicates (Figure 3\u2014figure supplement 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on validation experiments shown in Figure 3\u2014figure supplement 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "573a8df4-543e-4041-a1f7-22d6e9e6369a",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C58",
+      "claim": "SMAD6 and SMAD7 have originally been identified as vascular SMADs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, SMAD6 and SMAD7 have originally been identified as vascular SMADs (Topper et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "560872a6-66c5-45f9-891b-ea7164d7b5bd",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C59",
+      "claim": "SMAD6 and SMAD7 induction upon laminar shear stress highlights the importance of blood flow in maintaining the quiescent vascular phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Their induction upon laminar shear stress highlights the importance of blood flow in maintaining the quiescent vascular phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known response of SMAD6/7 to shear stress.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "25b60a89-4e8f-4fe8-b55c-edc69621f9a5",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C60",
+      "claim": "Smad6 has recently been described to act anti-angiogenic in sprouting assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Smad6 has recently been described to act anti-angiogenic in sprouting assays (Mouillesseaux et al., 2016) and Smad7 has been shown to inhibit peritoneal angiogenesis (Peng et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "f2e366fa-a2f8-4031-98ba-71025e886909",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C61",
+      "claim": "Smad7 has been shown to inhibit peritoneal angiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Smad6 has recently been described to act anti-angiogenic in sprouting assays (Mouillesseaux et al., 2016) and Smad7 has been shown to inhibit peritoneal angiogenesis (Peng et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "98b4563f-b318-451c-a780-5d2033172d88",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C62",
+      "claim": "Genetic deletion of Smad6 leads to major cardiovascular defects with partial prenatal mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, genetic deletion of Smad6 or Smad7 leads to major cardiovascular defects with partial prenatal mortality (Smad6) (Galvin et al., 2000) or to massive growth retardation with reduced viability (Smad7) (Tojo et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous genetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "a58373ce-dd9c-4c5c-9a90-c30bb299c2ef",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C63",
+      "claim": "Genetic deletion of Smad7 leads to massive growth retardation with reduced viability.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, genetic deletion of Smad6 or Smad7 leads to major cardiovascular defects with partial prenatal mortality (Smad6) (Galvin et al., 2000) or to massive growth retardation with reduced viability (Smad7) (Tojo et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous genetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "9e8167d1-9a06-4046-a9cf-047e11d55962",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C64",
+      "claim": "Vegfa was significantly higher expressed in adult EC compared to infant EC.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the ligand Vegfa was significantly higher expressed in adult EC compared to infant EC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "67e755f4-328b-445f-8d40-a8b08d0fed03",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C65",
+      "claim": "High expression of VEGFA has also been described in the adult brain.",
+      "claim_type": "EXPLICIT",
+      "source": "High expression of VEGFA has also been described in the adult brain (Licht and Keshet, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "4c9ac336-5d59-4a62-b4dd-952fe5042ebb",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C66",
+      "claim": "Autocrine VEGF has been proposed to be essential for EC survival thereby fulfilling homeostatic functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Autocrine VEGF has been proposed to be essential for EC survival thereby fulfilling homeostatic functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "ee2ea6fa-a21f-4506-8109-16cdf2fa2f8d",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C67",
+      "claim": "Analyses of genetically engineered mice specifically lacking EC-produced VEGF indicate that paracrine VEGF does not compensate for autocrine VEGF.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, analyses of genetically engineered mice specifically lacking EC-produced VEGF indicate that paracrine VEGF does not compensate for autocrine VEGF (Lee et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous genetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "057db085-9e71-434d-bf54-479966361213",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C68",
+      "claim": "Expression of the VEGF decoy receptor Flt1/Vegfr1 was significantly increased (but below threshold of 1.75x) during acquisition of quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, expression of the VEGF decoy receptor Flt1/Vegfr1 (Boucher et al., 2017; Fong et al., 1995; Kappas et al., 2008; Kearney et al., 2002) was in the present study significantly increased (but below threshold of 1.75x) during acquisition of quiescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA-seq data analysis with citations supporting the role of Flt1 as a decoy receptor.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "f8f60244-3958-4243-93e3-18d5d3755313",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C69",
+      "claim": "The expression of the primary VEGF signal transducing receptor Kdr/Vegfr2 was not significantly changed during acquisition of quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the expression of the primary VEGF signal transducing receptor Kdr/Vegfr2 was neither in RNA-seq nor in qPCR validation data significantly changed, this results in an increased VEGFR1/VEGFR2 ratio in adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA-seq and qPCR data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "a432470d-ad1d-4eac-b692-7d3deb01855e",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C70",
+      "claim": "The increased Flt1 expression and unchanged Kdr expression results in an increased VEGFR1/VEGFR2 ratio in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the expression of the primary VEGF signal transducing receptor Kdr/Vegfr2 was neither in RNA-seq nor in qPCR validation data significantly changed, this results in an increased VEGFR1/VEGFR2 ratio in adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the relative expression levels of the two receptors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "96d62d9a-e521-426a-9ed2-369b284c0a46",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C71",
+      "claim": "VEGF signaling is not dominantly regulated during the transition to vascular quiescence but instead undergoes specific and situation-specific dynamic regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these data imply that VEGF signaling is not dominantly regulated during the transition to vascular quiescence but instead undergoes specific and situation-specific dynamic regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the complex pattern of VEGF pathway component expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "d258fd8c-6e1d-4238-ab7a-4bf74216f953",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C72",
+      "claim": "This study has for the first time established the transcriptomic and epigenetic landscape of vascular quiescence in primary lung EC.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, the present study has for the first time established the transcriptomic and epigenetic landscape of vascular quiescence in primary lung EC that might also apply to EC of other tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim about the novelty and scope of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "6b653fa2-e9e9-42af-8a1d-ddaa109e915b",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C73",
+      "claim": "Vascular quiescence is comprehensively regulated on both transcriptional and DNA methylation level converging on the prominent inhibition of TGF\u00df family signaling in adult EC.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings reveal that vascular quiescence is comprehensively regulated on both transcriptional and DNA methylation level converging on the prominent inhibition of TGF\u00df family signaling in adult EC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the combined transcriptomic and epigenomic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "41014381-b150-4a4d-93f9-f33fbf396742",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C74",
+      "claim": "The acquisition of the resting EC phenotype is accompanied by a dynamic balance of activating and inhibiting pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the acquisition of the resting EC phenotype is accompanied by a dynamic balance of activating and inhibiting pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the overall pattern of pathway regulation observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "c67694d3-0c9c-4f49-821d-3f7d11eea76b",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C75",
+      "claim": "The study lays a foundation for mechanistic and functional studies of individual genes and complex gene signatures involved in the transition from the activated to the quiescent phenotype and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "The study thereby lays a foundation for mechanistic and functional studies of individual genes and complex gene signatures involved in the transition from the activated to the quiescent phenotype and vice versa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential impact and utility of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "e31a2b23-8d04-4049-bd8a-276f3a1be2e9",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C76",
+      "claim": "Proximal promoter DNA methylation regulates EC gene expression and thereby controls EC fate.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been described that proximal promoter DNA methylation regulates EC gene expression and thereby controls EC fate (Shirodkar et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "d4352756-5ee6-4a07-9b59-267603f57c8d",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C77",
+      "claim": "Flow-dependent DNA methylation changes in vessel wall cells have been shown to be enriched in GC-rich, 5' untranslated, and exonic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, flow-dependent DNA methylation changes in vessel wall cells have been shown to be enriched in GC-rich, 5' untranslated, and exonic regions (Davies et al., 2014; Jiang et al., 2015a; Jiang et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "f6ca3705-5f50-452b-87f8-3c917dbbb874",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C78",
+      "claim": "Previous studies in EC have determined an enrichment of promoter-associated changes in DNA methylation that coincide with gene regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These previous studies in EC have determined an enrichment of promoter-associated changes in DNA methylation that coincide with gene regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of previous research findings.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "f57410ee-aeb9-47c3-b13a-1573b3b97159",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C79",
+      "claim": "Some studies suggest intragenic DNA methylation changes play a role in alternative promoter usage or splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Although little is known about the impact of intragenic DNA methylation changes on gene expression, some studies suggest a role in alternative promoter usage or splicing (Kulis et al., 2013; Maunakea et al., 2013; Maunakea et al., 2010; Shukla et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "442a078e-85cb-45ba-9f96-85b56a8ddb52",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C80",
+      "claim": "Atherosclerosis progression in human appears to be associated with a distinct gain of methylation signature.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, while we identified a more prominent loss than gain of methylation during acquisition of quiescence, atherosclerosis progression in human appears to be associated with a distinct gain of methylation signature (Zaina et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research on atherosclerosis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "ca506dcd-6f2c-40b2-93a5-6bd6a2dc4026",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C81",
+      "claim": "Epigenetic modifications play an important role in the regulation of EC functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these data highlight the important role of epigenetic modifications in the regulation of EC functions and have led to the identification of distinct genomic regions with crucial regulatory potential that will serve as a foundation for further functional studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "88a17f96-b213-4bc2-a7e1-ce1c5a0cc983",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C82",
+      "claim": "The study identified distinct genomic regions with crucial regulatory potential that will serve as a foundation for further functional studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these data highlight the important role of epigenetic modifications in the regulation of EC functions and have led to the identification of distinct genomic regions with crucial regulatory potential that will serve as a foundation for further functional studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential impact of the findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "51822b51-e4b7-4ed3-940e-9133e897678f",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "claim_id": "C83",
+      "claim": "Molecules of the VEGF pathway were both transcriptionally and epigenetically not identified as being significantly differentially regulated during the transition to EC quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, molecules of the VEGF pathway, the master regulator of angiogenesis induction, were both, transcriptionally and epigenetically not identified as being significantly differentially regulated during the transition to EC quiescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of both RNA-seq and T-WGBS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "51e4dfb2-c61c-4ad2-910d-14e76daa677a",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Comparative transcriptome analysis of infant and adult lung endothelial cells identified 2,216 differentially expressed genes (722 induced, 1,494 repressed) with enrichment of immune regulation, metabolism, and cell cycle pathways. EdU incorporation assays confirmed near-complete arrest of proliferation in adult EC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C7 provide converging evidence from RNA-seq data, functional annotation, and proliferation assays. The technical quality metrics (C54-C56) support data reliability. The findings are internally consistent and appropriately validated by qPCR.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "97cb1f60-0fef-467a-9522-e7c39b9b78e3",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TGF\u03b2 family signaling was identified as the most concordantly downregulated pathway during acquisition of vascular quiescence, with upstream analysis revealing TGF\u03b21 as the most significantly inhibited growth factor. Smad6 and Smad7 showed the largest intragenic clusters of hypomethylated DMRs and significant induction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11 and C34 converge on TGF\u03b2 pathway inhibition through multiple independent analyses (differential expression, pathway analysis, upstream regulator prediction, and epigenetic profiling). The consistency across analytical approaches strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "78ccb1f4-0e35-4179-8e80-bf0edba01960",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "DNA methylation analysis revealed a global increase in CpG methylation in adult EC, with 1.4M differentially methylated CpGs giving rise to 18,333 DMRs. At 10% threshold, 54% of DMRs showed gain and 46% showed loss of methylation, with validation by MassARRAY confirming high reproducibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 present comprehensive methylation profiling with appropriate statistical testing and independent validation (C57). The technical quality and reproducibility are well-documented, supporting the quantitative findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "81725449-d6c5-4a64-afb4-c13b734a4203",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "DMRs were depleted at transcription start sites but enriched 10-100 kb distant from TSS, with significant enrichment in introns (OR 2.65, p<0.0001). Hypomethylated DMRs overlapped with putative enhancer regions (H3K4me1, EPU, DNase hypersensitive sites) but not with TSS markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 describe the genomic distribution of DMRs with statistical support and overlap analysis with published regulatory features. The findings are internally consistent and appropriately reference external datasets for validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "f67fc3d0-718d-4008-a8b5-5f1529908d07",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Functional annotation of genes near hypomethylated DMRs revealed enrichment for semaphorin and TGF\u03b2 family signaling pathways. 94% of hypomethylated DMRs affecting these pathways were intragenic with 8 DMRs/gene average, and >36% showed DMR clustering (>5 DMRs/gene), particularly in Smad6, Smad7, and Sema6a.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 and C30 demonstrate pathway-specific enrichment of clustered DMRs using the GREAT tool and enrichment analysis. The quantitative characterization of DMR distribution is well-supported by the data presented in figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "e1ff63f9-f34a-49c0-8598-132cd8ba7b73",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In contrast to hypomethylated DMRs, hypermethylated DMRs showed different distribution patterns: 56% were intragenic with only 2 DMRs/gene average, only 5.3% of genes harbored \u22655 hypermethylated DMRs, and genes near gain-of-methylation DMRs were annotated as NOTCH signaling genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 provide quantitative contrast to the hypomethylated DMR patterns, demonstrating distinct regulatory mechanisms for gain versus loss of methylation. The functional annotation to NOTCH signaling is appropriately supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "0fc5c3f6-fdf1-4c46-a097-f02bf0bbb886",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Analysis of DMR clustering revealed that 10% of affected genes contained >5 intragenic DMRs (corresponding to 44% of all intragenic DMRs), with 68% showing loss of methylation. An increasing overlap between transcriptome and epigenome was observed when scoring genes based on intragenic DMRs and especially clustered DMRs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 and C33 quantify the relationship between DMR clustering and gene expression changes. The correlation analysis (C33) provides important functional validation of the epigenetic changes, though the mechanistic link requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "77e12c7f-da56-4072-9ee8-ab02a493a40c",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Gene set enrichment analysis revealed that genes with hypomethylated DMRs were enriched among genes induced in adult EC, while genes with hypermethylated DMRs were overrepresented among genes upregulated in infant EC, independent of DMR genomic location.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 demonstrate correlation between methylation direction and expression changes using GSEA. This provides important validation of the functional relevance of the methylation changes, though causality is not established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "8361233a-b570-438d-8dfc-c08b4298627f",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "R-SMAD phosphorylation was strongly decreased in adult lung, brain, and heart tissues, while TGF\u03b2 family ligands were consistently higher in adult organs. This indicates that vascular quiescence regulation is achieved through cell-intrinsic blocking of downstream signaling machinery via receptor downregulation and inhibitory SMAD upregulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 provide multi-tissue validation of TGF\u03b2 pathway inhibition through immunoblot and ELISA. The inference about cell-intrinsic regulation (C39) is well-supported by the paradoxical increase in ligands despite decreased signaling, though alternative explanations are not fully excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "6c597b66-1240-4824-a182-92d80776f984",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Forced expression of SMAD6 or SMAD7 in cultured EC reduced SMAD2/3 and SMAD1/5/8 phosphorylation upon ligand stimulation. Cells overexpressing both SMAD6 and SMAD7 showed reduced viability, proliferation, and migration, confirming their anti-angiogenic function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 provide functional validation through gain-of-function experiments in HUVEC. The results are consistent across multiple assays (immunoblot, MTT, EdU incorporation, scratch assay), though loss-of-function experiments showed no effect, limiting mechanistic interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "b047cca1-8677-4303-983f-fe96e03d25af",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "About 10% of chromatin modifying enzymes were differentially expressed with the majority being repressed in adult EC, including the de novo DNA methyltransferase Dnmt3a and four additional DNA methylation modifiers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C12 is supported by RNA-seq analysis of chromatin modifying enzymes. The finding provides context for the observed methylation changes, though the functional significance of individual enzyme changes is not experimentally validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "1ebbc468-109b-4d3b-8f4a-2f440c73fc72",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "VEGF pathway molecules were not significantly differentially regulated transcriptionally or epigenetically during EC quiescence. Vegfa was higher in adult EC, Flt1/Vegfr1 was increased (below 1.75x threshold), Kdr/Vegfr2 was unchanged, resulting in increased VEGFR1/VEGFR2 ratio. This suggests VEGF signaling undergoes specific, situation-dependent dynamic regulation rather than dominant regulation during quiescence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C71 and C83 describe complex VEGF pathway regulation with support from RNA-seq data and literature citations. The interpretation (C71) is reasonable given the data, though the functional significance of the VEGFR1/VEGFR2 ratio change is not experimentally validated in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "00a6b1a3-9575-4661-a004-bb8847d7bef9",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "This study established for the first time the transcriptomic and epigenetic landscape of vascular quiescence in primary lung EC, revealing comprehensive regulation at both transcriptional and DNA methylation levels converging on TGF\u03b2 family signaling inhibition. The acquisition of quiescence is accompanied by a dynamic balance of activating and inhibiting pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 are summary conclusions well-supported by the comprehensive data presented. Claim C75 is speculative about future utility but reasonable given the scope of the dataset. The novelty claim (C72) appears justified based on the literature review presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "9a052934-8dc3-4a70-9baf-81d1dc106d36",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims establishing the importance of endothelial quiescence for health, the reversibility of EC quiescence, its role in disease, and the current state of knowledge regarding molecular mechanisms and epigenetic regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C43-C53 are background statements supported by appropriate citations to established literature. These provide context and justification for the study but do not represent novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "aa3ce703-f9ef-4abb-b852-8e6702ad144a",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "SMAD6 and SMAD7 were originally identified as vascular SMADs induced by laminar shear stress. Previous studies showed Smad6 acts anti-angiogenic in sprouting assays and Smad7 inhibits peritoneal angiogenesis. Genetic deletion of either gene leads to cardiovascular defects and reduced viability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C63 summarize prior literature on SMAD6/7 with appropriate citations. These provide important context for interpreting the current findings but represent prior work rather than novel results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "13b0d1f4-4be3-4468-8576-b9f59e269111",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Previous studies in EC showed that proximal promoter DNA methylation regulates gene expression, flow-dependent methylation changes are enriched in GC-rich and exonic regions, and atherosclerosis progression is associated with gain of methylation. The role of intragenic methylation in alternative promoter usage or splicing has been suggested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C80 summarize prior literature on DNA methylation in EC with appropriate citations. These provide important context for the novelty of the current findings regarding intragenic DMR clusters.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    },
+    {
+      "id": "bd84143e-45e3-40ea-9497-29f339512a12",
+      "content_id": "923d0497-086f-47cc-9ef0-305dbe811622",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The study highlights the important role of epigenetic modifications in EC function regulation and identified distinct genomic regions with crucial regulatory potential that will serve as a foundation for further functional studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82 are concluding statements about the significance and future utility of the findings. C81 is well-supported by the data, while C82 is somewhat speculative but reasonable given the comprehensive dataset generated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:14.917527Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7add318e-d3b7-4fc4-af47-5b3c9da2009d",
+      "result_id": "51e4dfb2-c61c-4ad2-910d-14e76daa677a"
+    },
+    {
+      "claim_id": "c93b0bed-0165-4113-885f-fa0575a6fbe2",
+      "result_id": "51e4dfb2-c61c-4ad2-910d-14e76daa677a"
+    },
+    {
+      "claim_id": "e5b75502-0272-4a24-b0be-38b65ed66cb5",
+      "result_id": "51e4dfb2-c61c-4ad2-910d-14e76daa677a"
+    },
+    {
+      "claim_id": "240c0c40-8063-4f3c-a060-ca3a4ff8e841",
+      "result_id": "51e4dfb2-c61c-4ad2-910d-14e76daa677a"
+    },
+    {
+      "claim_id": "61f10a96-801b-4e3f-9f60-02ef0b27a894",
+      "result_id": "51e4dfb2-c61c-4ad2-910d-14e76daa677a"
+    },
+    {
+      "claim_id": "cf05910c-33b9-451a-8625-ce4659f3fd55",
+      "result_id": "51e4dfb2-c61c-4ad2-910d-14e76daa677a"
+    },
+    {
+      "claim_id": "0c25ef69-0a93-4391-8bfe-486b7da42863",
+      "result_id": "51e4dfb2-c61c-4ad2-910d-14e76daa677a"
+    },
+    {
+      "claim_id": "7911a678-1bc2-4c1b-a8ff-2e8ff1453538",
+      "result_id": "51e4dfb2-c61c-4ad2-910d-14e76daa677a"
+    },
+    {
+      "claim_id": "72d1aa4d-ffa8-4ae6-867e-66eb0316aea8",
+      "result_id": "97cb1f60-0fef-467a-9522-e7c39b9b78e3"
+    },
+    {
+      "claim_id": "c53bd101-cff2-4c79-8779-b16ecc57886e",
+      "result_id": "97cb1f60-0fef-467a-9522-e7c39b9b78e3"
+    },
+    {
+      "claim_id": "d823976e-4aa4-4f8f-be3b-e2bd65af3ca1",
+      "result_id": "97cb1f60-0fef-467a-9522-e7c39b9b78e3"
+    },
+    {
+      "claim_id": "f8c21690-4931-4786-994d-06aa9f389a88",
+      "result_id": "97cb1f60-0fef-467a-9522-e7c39b9b78e3"
+    },
+    {
+      "claim_id": "905776b2-940e-4e68-96d2-f67b97d8d264",
+      "result_id": "97cb1f60-0fef-467a-9522-e7c39b9b78e3"
+    },
+    {
+      "claim_id": "de901a1e-b478-4e27-b4f9-31be9b5e50e4",
+      "result_id": "78ccb1f4-0e35-4179-8e80-bf0edba01960"
+    },
+    {
+      "claim_id": "28d2b9a4-89a3-40dc-91f2-20c7d306c3ae",
+      "result_id": "78ccb1f4-0e35-4179-8e80-bf0edba01960"
+    },
+    {
+      "claim_id": "f6a3929f-974b-4bb0-a434-6c276d4e4dcc",
+      "result_id": "78ccb1f4-0e35-4179-8e80-bf0edba01960"
+    },
+    {
+      "claim_id": "7888db63-c58c-4a43-9e0a-00fe18f3ead2",
+      "result_id": "78ccb1f4-0e35-4179-8e80-bf0edba01960"
+    },
+    {
+      "claim_id": "0056c95a-8e97-49bb-a61e-2b4702be1806",
+      "result_id": "78ccb1f4-0e35-4179-8e80-bf0edba01960"
+    },
+    {
+      "claim_id": "a95d502d-14c4-4c13-960b-e47042f7bdc8",
+      "result_id": "78ccb1f4-0e35-4179-8e80-bf0edba01960"
+    },
+    {
+      "claim_id": "5a1f5cc9-7b9f-410f-9ba2-3cc1fa15ee8d",
+      "result_id": "81725449-d6c5-4a64-afb4-c13b734a4203"
+    },
+    {
+      "claim_id": "18380561-f737-4881-bea3-5e7ba520f4c6",
+      "result_id": "81725449-d6c5-4a64-afb4-c13b734a4203"
+    },
+    {
+      "claim_id": "5acf274b-3a34-4e57-aad5-0ae905b8b2e3",
+      "result_id": "81725449-d6c5-4a64-afb4-c13b734a4203"
+    },
+    {
+      "claim_id": "5aaf26dd-ef0c-4dc3-bed1-3ee7a7d3f281",
+      "result_id": "81725449-d6c5-4a64-afb4-c13b734a4203"
+    },
+    {
+      "claim_id": "e00d4a1b-37c6-4a14-924f-c6c0671d05cf",
+      "result_id": "f67fc3d0-718d-4008-a8b5-5f1529908d07"
+    },
+    {
+      "claim_id": "e929a925-612c-46ab-a75e-ee3fe53597ef",
+      "result_id": "f67fc3d0-718d-4008-a8b5-5f1529908d07"
+    },
+    {
+      "claim_id": "f446e8a4-77fd-4473-9ac4-25ff18c84da6",
+      "result_id": "f67fc3d0-718d-4008-a8b5-5f1529908d07"
+    },
+    {
+      "claim_id": "38490b6e-b351-4d21-bd7a-06310fbd9a1f",
+      "result_id": "f67fc3d0-718d-4008-a8b5-5f1529908d07"
+    },
+    {
+      "claim_id": "c5f6f7cb-2e91-4e6a-909a-516896a2cc35",
+      "result_id": "e1ff63f9-f34a-49c0-8598-132cd8ba7b73"
+    },
+    {
+      "claim_id": "550c0203-260d-46a3-8e35-47e701ccc899",
+      "result_id": "e1ff63f9-f34a-49c0-8598-132cd8ba7b73"
+    },
+    {
+      "claim_id": "3ce7b2d0-b82a-44b1-80d4-8265e66e23f4",
+      "result_id": "e1ff63f9-f34a-49c0-8598-132cd8ba7b73"
+    },
+    {
+      "claim_id": "7a2fbe1e-7865-468c-8f5f-3462d79cb5ca",
+      "result_id": "0fc5c3f6-fdf1-4c46-a097-f02bf0bbb886"
+    },
+    {
+      "claim_id": "e701f740-1fee-4878-adec-f0324b18abae",
+      "result_id": "0fc5c3f6-fdf1-4c46-a097-f02bf0bbb886"
+    },
+    {
+      "claim_id": "c31daf5c-a934-485e-b2b8-f888f92a3ecb",
+      "result_id": "0fc5c3f6-fdf1-4c46-a097-f02bf0bbb886"
+    },
+    {
+      "claim_id": "390b7b33-a4c0-44be-92f3-fda062ff3161",
+      "result_id": "77e12c7f-da56-4072-9ee8-ab02a493a40c"
+    },
+    {
+      "claim_id": "4232460a-94c8-42a2-b002-fac004da25bf",
+      "result_id": "77e12c7f-da56-4072-9ee8-ab02a493a40c"
+    },
+    {
+      "claim_id": "138db5de-172f-4d8c-be19-dc5f4c1b2b81",
+      "result_id": "8361233a-b570-438d-8dfc-c08b4298627f"
+    },
+    {
+      "claim_id": "c2e8ed7b-86f4-466a-b5e3-c879cec5d632",
+      "result_id": "8361233a-b570-438d-8dfc-c08b4298627f"
+    },
+    {
+      "claim_id": "ffa6da65-9fe2-4fa7-9a83-37eb68e27408",
+      "result_id": "8361233a-b570-438d-8dfc-c08b4298627f"
+    },
+    {
+      "claim_id": "23878279-9c90-4fe4-96cc-f2f42f831afb",
+      "result_id": "8361233a-b570-438d-8dfc-c08b4298627f"
+    },
+    {
+      "claim_id": "269716d0-0aa0-4ba0-b5bd-3b246965bcf0",
+      "result_id": "8361233a-b570-438d-8dfc-c08b4298627f"
+    },
+    {
+      "claim_id": "4f270146-d3b3-45a9-9ac2-38d2559010ed",
+      "result_id": "6c597b66-1240-4824-a182-92d80776f984"
+    },
+    {
+      "claim_id": "15095bbc-b99f-4cba-98af-d17699ab5b51",
+      "result_id": "6c597b66-1240-4824-a182-92d80776f984"
+    },
+    {
+      "claim_id": "45a167b8-7eb1-4012-b472-b24bb6263e4e",
+      "result_id": "6c597b66-1240-4824-a182-92d80776f984"
+    },
+    {
+      "claim_id": "ae730719-6784-46ee-b487-4b512780b0e5",
+      "result_id": "b047cca1-8677-4303-983f-fe96e03d25af"
+    },
+    {
+      "claim_id": "9e8167d1-9a06-4046-a9cf-047e11d55962",
+      "result_id": "1ebbc468-109b-4d3b-8f4a-2f440c73fc72"
+    },
+    {
+      "claim_id": "67e755f4-328b-445f-8d40-a8b08d0fed03",
+      "result_id": "1ebbc468-109b-4d3b-8f4a-2f440c73fc72"
+    },
+    {
+      "claim_id": "4c9ac336-5d59-4a62-b4dd-952fe5042ebb",
+      "result_id": "1ebbc468-109b-4d3b-8f4a-2f440c73fc72"
+    },
+    {
+      "claim_id": "ee2ea6fa-a21f-4506-8109-16cdf2fa2f8d",
+      "result_id": "1ebbc468-109b-4d3b-8f4a-2f440c73fc72"
+    },
+    {
+      "claim_id": "057db085-9e71-434d-bf54-479966361213",
+      "result_id": "1ebbc468-109b-4d3b-8f4a-2f440c73fc72"
+    },
+    {
+      "claim_id": "f8f60244-3958-4243-93e3-18d5d3755313",
+      "result_id": "1ebbc468-109b-4d3b-8f4a-2f440c73fc72"
+    },
+    {
+      "claim_id": "a432470d-ad1d-4eac-b692-7d3deb01855e",
+      "result_id": "1ebbc468-109b-4d3b-8f4a-2f440c73fc72"
+    },
+    {
+      "claim_id": "96d62d9a-e521-426a-9ed2-369b284c0a46",
+      "result_id": "1ebbc468-109b-4d3b-8f4a-2f440c73fc72"
+    },
+    {
+      "claim_id": "51822b51-e4b7-4ed3-940e-9133e897678f",
+      "result_id": "1ebbc468-109b-4d3b-8f4a-2f440c73fc72"
+    },
+    {
+      "claim_id": "d258fd8c-6e1d-4238-ab7a-4bf74216f953",
+      "result_id": "00a6b1a3-9575-4661-a004-bb8847d7bef9"
+    },
+    {
+      "claim_id": "6b653fa2-e9e9-42af-8a1d-ddaa109e915b",
+      "result_id": "00a6b1a3-9575-4661-a004-bb8847d7bef9"
+    },
+    {
+      "claim_id": "41014381-b150-4a4d-93f9-f33fbf396742",
+      "result_id": "00a6b1a3-9575-4661-a004-bb8847d7bef9"
+    },
+    {
+      "claim_id": "c67694d3-0c9c-4f49-821d-3f7d11eea76b",
+      "result_id": "00a6b1a3-9575-4661-a004-bb8847d7bef9"
+    },
+    {
+      "claim_id": "c4798e6c-cfec-4f29-83ec-636d50376831",
+      "result_id": "9a052934-8dc3-4a70-9baf-81d1dc106d36"
+    },
+    {
+      "claim_id": "4fdd9f79-9f49-47d2-9d19-2a0638f69b24",
+      "result_id": "9a052934-8dc3-4a70-9baf-81d1dc106d36"
+    },
+    {
+      "claim_id": "4a735090-f7db-4053-b4dd-5f7d36b91130",
+      "result_id": "9a052934-8dc3-4a70-9baf-81d1dc106d36"
+    },
+    {
+      "claim_id": "e77ce582-e2fb-4193-ae76-bc96bb1b0f28",
+      "result_id": "9a052934-8dc3-4a70-9baf-81d1dc106d36"
+    },
+    {
+      "claim_id": "e7be55b8-fcad-4b91-be7b-e2d3982b09d6",
+      "result_id": "9a052934-8dc3-4a70-9baf-81d1dc106d36"
+    },
+    {
+      "claim_id": "6d5bdeae-85da-4a72-950b-e26b32f7f6ea",
+      "result_id": "9a052934-8dc3-4a70-9baf-81d1dc106d36"
+    },
+    {
+      "claim_id": "03dff9f5-af37-4488-b2fc-4a8a1fbdcec8",
+      "result_id": "9a052934-8dc3-4a70-9baf-81d1dc106d36"
+    },
+    {
+      "claim_id": "e4fc021b-7b41-4d74-95a5-4753e391bf76",
+      "result_id": "9a052934-8dc3-4a70-9baf-81d1dc106d36"
+    },
+    {
+      "claim_id": "dd0e7309-c6b0-4982-907f-fa337dcf9ae5",
+      "result_id": "9a052934-8dc3-4a70-9baf-81d1dc106d36"
+    },
+    {
+      "claim_id": "43cd7e40-f41b-4a62-b760-d1994351915d",
+      "result_id": "9a052934-8dc3-4a70-9baf-81d1dc106d36"
+    },
+    {
+      "claim_id": "cc92b72d-3e95-4377-a99c-7ae678934494",
+      "result_id": "9a052934-8dc3-4a70-9baf-81d1dc106d36"
+    },
+    {
+      "claim_id": "a1c3bb4d-160c-452b-b0af-242c728108d0",
+      "result_id": "9a052934-8dc3-4a70-9baf-81d1dc106d36"
+    },
+    {
+      "claim_id": "105f0d10-5164-484c-bda9-bb4915b430e5",
+      "result_id": "9a052934-8dc3-4a70-9baf-81d1dc106d36"
+    },
+    {
+      "claim_id": "573a8df4-543e-4041-a1f7-22d6e9e6369a",
+      "result_id": "aa3ce703-f9ef-4abb-b852-8e6702ad144a"
+    },
+    {
+      "claim_id": "560872a6-66c5-45f9-891b-ea7164d7b5bd",
+      "result_id": "aa3ce703-f9ef-4abb-b852-8e6702ad144a"
+    },
+    {
+      "claim_id": "25b60a89-4e8f-4fe8-b55c-edc69621f9a5",
+      "result_id": "aa3ce703-f9ef-4abb-b852-8e6702ad144a"
+    },
+    {
+      "claim_id": "f2e366fa-a2f8-4031-98ba-71025e886909",
+      "result_id": "aa3ce703-f9ef-4abb-b852-8e6702ad144a"
+    },
+    {
+      "claim_id": "98b4563f-b318-451c-a780-5d2033172d88",
+      "result_id": "aa3ce703-f9ef-4abb-b852-8e6702ad144a"
+    },
+    {
+      "claim_id": "a58373ce-dd9c-4c5c-9a90-c30bb299c2ef",
+      "result_id": "aa3ce703-f9ef-4abb-b852-8e6702ad144a"
+    },
+    {
+      "claim_id": "e31a2b23-8d04-4049-bd8a-276f3a1be2e9",
+      "result_id": "13b0d1f4-4be3-4468-8576-b9f59e269111"
+    },
+    {
+      "claim_id": "d4352756-5ee6-4a07-9b59-267603f57c8d",
+      "result_id": "13b0d1f4-4be3-4468-8576-b9f59e269111"
+    },
+    {
+      "claim_id": "f6ca3705-5f50-452b-87f8-3c917dbbb874",
+      "result_id": "13b0d1f4-4be3-4468-8576-b9f59e269111"
+    },
+    {
+      "claim_id": "f57410ee-aeb9-47c3-b13a-1573b3b97159",
+      "result_id": "13b0d1f4-4be3-4468-8576-b9f59e269111"
+    },
+    {
+      "claim_id": "442a078e-85cb-45ba-9f96-85b56a8ddb52",
+      "result_id": "13b0d1f4-4be3-4468-8576-b9f59e269111"
+    },
+    {
+      "claim_id": "ca506dcd-6f2c-40b2-93a5-6bd6a2dc4026",
+      "result_id": "bd84143e-45e3-40ea-9497-29f339512a12"
+    },
+    {
+      "claim_id": "88a17f96-b213-4bc2-a7e1-ce1c5a0cc983",
+      "result_id": "bd84143e-45e3-40ea-9497-29f339512a12"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,233 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The manuscript establishes the background on cortical interneuron populations, stating that PV, SST, and VIP interneurons constitute >80% of GABAergic cells in mouse cortex and form a canonical microcircuit with cell-type-specific connectivity patterns originally proposed by Wang et al., 2004.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are all supported by appropriate citations to prior work (Rudy et al., 2011; Pfeffer et al., 2013; Jiang et al., 2015; Wang et al., 2004). These are well-established facts in the field and serve as the foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Prior experimental work has shown that pyramidal and VIP neurons increase activity during locomotion (even without visual input), that optogenetic manipulation of VIP neurons mimics or eliminates locomotion effects, and that SST responses to VIP activation differ between darkness (decrease) and visual stimulation (increase), challenging simple disinhibition models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C11 accurately summarize prior experimental findings with appropriate citations (Niell and Stryker, 2010; Keller et al., 2012; Fu et al., 2014; Pakan et al., 2016; Dipoppa et al., 2017). These claims establish the paradoxical phenomena that the current modeling work aims to explain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C66",
+      "C97",
+      "C99"
+    ],
+    "result": "The authors conclude that counterintuitive cortical circuit behaviors rely on two key features: (i) multiple interneuron populations and (ii) nonlinear f-I curves, with multiple interneuron types having a stronger impact than single inhibitory populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C66, C97, and C99 represent the central theoretical conclusion of the manuscript. The modeling work, mathematical analysis (response matrix), and simulations consistently demonstrate that these two features are necessary and sufficient to explain response reversal phenomena. The comparison with E-I networks (C96-C97) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The authors developed a four-population firing rate model with nonlinear f-I curves where populations are connected according to experimentally-derived microcircuit connectivity, with the nonlinearity being a key feature enabling response reversal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C19 describe the model structure and are well-supported. The f-I curve formulation is cited (Abbott and Chance, 2005; Miller and Troyer, 2002), the nonlinearity has experimental/theoretical support (Murphy and Miller, 2003; Phillips and Hasenstaub, 2016), and connectivity is based on experimental data (Jiang et al., 2015; Pfeffer et al., 2013). The model is clearly described in Materials and methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Model simulations show that population responses to top-down modulation depend on baseline activity: low baseline results in SST decrease and other populations increase, while high baseline results in all populations increasing, with the SST response reversal explained by threshold effects and recurrent excitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 are supported by simulation results shown in Figures 1c and 1d. The mechanistic explanation based on f-I curve threshold effects and recurrent excitation is logically consistent with the model structure. The transient dynamics calculations (Materials and methods) provide additional analytical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C35",
+      "C36",
+      "C37",
+      "C39"
+    ],
+    "result": "The response matrix analysis reveals that due to f-I curve nonlinearities, responses depend on baseline rates and can reverse sign, with the state of one population (E) affecting interactions between other populations (VIP-SST), leading to response reversal at high baseline activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C35-C37, and C39 are supported by the mathematical analysis of the response matrix (Equation 1 and Table 3) and Figure 2. The explicit formula for M_SV shows how recurrent excitation and threshold effects combine to produce response reversal. The mechanistic explanations are consistent with the model dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "A random network model with connectivity probabilities from experimental data shows that random connectivity alone can explain diversity in neural responses within cell types, with individual neurons showing variable responses while population averages match the mean-field model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 are supported by the random network simulations (Figure 3) and connectivity probabilities from experimental data (Table 4). The observation that identical units show response variability due to connectivity heterogeneity is logically sound. Citations to experimental observations of within-type diversity (Reimer et al., 2014; Pakan et al., 2016; Kuchibhotla et al., 2017) support C50. However, C45 is somewhat overstated\u2014the model shows random connectivity is sufficient but doesn't rule out other sources of diversity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The V1 model with visual input to E and SST cells reproduces experimental observations: all populations including SST increase during locomotion with visual stimulation, while in darkness SST decreases and other populations increase, demonstrating response reversal dependent on visual input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C62 are supported by model simulations (Figures 4b-d and supplements) that qualitatively match experimental data from Pakan et al., 2016; Fu et al., 2014; and Dipoppa et al., 2017. The model structure (visual input to E and SST, surround suppression) is appropriately designed and cited (Ozeki et al., 2009; Adesnik et al., 2012). The authors appropriately note quantitative differences and statistical significance issues (C62).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The model results are robust to variations in connectivity parameters and circuit structure, with different connectivity matrices and \u00b110% perturbations producing consistent qualitative behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by simulations with multiple connectivity matrices and perturbations (Figure 4\u2014figure supplements 2-3). The citation to Marder et al., 2015 appropriately contextualizes parameter degeneracy. This robustness analysis strengthens confidence that the results are not due to fine-tuning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C69",
+      "C73"
+    ],
+    "result": "The model makes testable predictions: (1) SST response should initially decrease then increase in response reversal regime, (2) suppressing E population should prevent response reversal, and (3) positive M_SV correlates with negative M_SS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C69, and C73 are logical predictions from the model and mathematical analysis. C67 is supported by Figure 1d and transient dynamics calculations. C69 follows from the role of recurrent excitation in the response matrix formula. C73 is a mathematical consequence of the response matrix structure (Table 3). These are valid, testable predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C77",
+      "C79"
+    ],
+    "result": "The response matrix analysis shows that all matrix entries can be positive or negative in multi-interneuron networks (unlike E-I networks), making them more versatile, and that the relationship between response reversal and ISN is not bidirectional in multi-interneuron networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75, C77, and C79 are supported by the mathematical analysis comparing multi-interneuron networks to E-I networks (Table 3 and Materials and methods). The explicit formulas show that all response matrix entries can change sign, unlike E-I networks where some entries have fixed signs. The ISN analysis is mathematically sound. C74 is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The modeling framework provides a parsimonious explanation for V1 observations without requiring top-down inputs to SST/PV, can be applied to other cortical areas and species (cat V1, mouse A1, somatosensory cortex), with differences across areas potentially explained by quantitative circuit architecture differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C92 are appropriately supported. C83 is a valid conclusion from the modeling work. C84-C86 are reasonable claims about generalizability, appropriately cited (Tsodyks et al., 1997; Ozeki et al., 2009; Seybold et al., 2015; Kuchibhotla et al., 2017). C87, C90, and C92 accurately cite experimental findings. C91 is appropriately framed as speculation ('may be explained') and supported by Kim et al., 2017.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors acknowledge limitations: the work focused on steady-state responses while neural responses are often transient and subject to short-term plasticity, suggesting transient dynamics in multi-interneuron circuits as important future work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 appropriately acknowledge limitations of the current work with proper citations (Wehr and Zador, 2003; Reyes et al., 1998). This is a fair assessment of the scope and limitations of the steady-state analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C98",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors conclude that computational models and mathematical analysis are critical for understanding multi-interneuron circuits, as intuition alone can be misleading, with the most interesting behavior occurring near threshold where small rate changes have large effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96, C98, C100-C101 represent valid conclusions from the work. The counterintuitive phenomena demonstrated throughout the manuscript support the claim that intuition is insufficient. C98 is a reasonable inference from the f-I curve analysis. C100 is appropriately cited (Gjorgjieva et al., 2016).",
+    "result_type": "MINOR"
+  }
+]

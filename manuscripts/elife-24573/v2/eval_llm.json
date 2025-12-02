@@ -1,0 +1,408 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The manuscript reviews prior literature on beta oscillations, noting their definition (13-30 Hz), emergence during specific motor actions, and various hypothesized functional roles including sensorimotor integration, coordination, idling, motor preparation, and attention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 are all citation-based summaries of prior work and are appropriately attributed to published studies. These claims establish the background context for the study and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Prior attempts to manipulate oscillations through electrical stimulation have shown limited success: slow cortical stimulation entrains activity in anesthetized but not awake rodents, tACS/rTMS do not reliably produce frequency-specific oscillations, and beta-frequency stimulation produces inconsistent behavioral effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 summarize prior work on stimulation approaches and are supported by appropriate citations. These claims establish the rationale for using neurofeedback rather than stimulation approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Three macaque monkeys with chronic electrode arrays were trained on a sequential neurofeedback-reaching task. Beta band limits were set at 25-40 Hz based on movement-related desynchronization observed in the center-out task. All subjects performed the neurofeedback epoch above chance (60% success rate, ~4 trials/min), with errors primarily from hand movement outside the center target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C28 describe the experimental setup and basic task performance. The beta band selection (C23-C24) is justified by spectral analysis (Figure 1d), and above-chance performance (C25) is demonstrated with appropriate statistical controls. Sample sizes and performance metrics are clearly reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The neurofeedback manipulation successfully produced different levels of beta power across the four target conditions. At the go cue, all three monkeys showed significant group differences in normalized beta power (Kruskal-Wallis test, all p<2.8e-10). High and low targets were achieved by increasing and decreasing beta power, with some subjects co-modulating 1-10 Hz frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 demonstrate successful neurofeedback control with appropriate statistical tests and multiple complementary measures (normalized power, non-normalized PSDs, on-beta time points). The results are consistent across three subjects and supported by Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "In all three animals, trials with high beta power targets had significantly slower movement onset times (MOT) than low beta targets (Cuzick's test, all p<5e-9). However, unlike some prior studies, the current study did not find consistent correlations between beta power and movement onset speed, peak speed, or movement onset acceleration across subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is the primary behavioral finding and is well-supported by statistical tests across all three subjects (Figure 3). Claims C36-C37 appropriately contextualize this finding relative to prior work and acknowledge inconsistencies with Table 2 data. The statistical approach (Cuzick's test for ordered trends) is appropriate for the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Time to acquire beta target (a proxy for task difficulty) did not significantly predict MOT in Monkeys S and G, but did for Monkey C. However, even after accounting for this effect through linear regression, the relationship between beta target and MOT remained significant, indicating that cognitive effort does not explain the MOT increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 address an important control analysis. The statistical approach (linear regression followed by residual analysis) is appropriate. The finding that the beta-MOT relationship persists after controlling for time-to-target strengthens the main conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Control experiments demonstrate that the beta-MOT relationship is not due to screen position or reach target location. Changing the reach target location (Monkey S) or reversing the beta target-screen mapping (Monkey C) both preserved the relationship between increased beta power and increased MOT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 describe critical control experiments that rule out alternative explanations. Both manipulations are well-designed and the results (Figure 4d-e) clearly support the interpretation that beta power, not spatial factors, drives the MOT effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "The beta-MOT relationship is robust to different methods of quantifying beta power. Using non-normalized beta power or percentage of on-beta time points (time-domain method) both showed significantly increasing MOT with increasing beta power across all three monkeys (Cuzick's test, all p<3e-7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 demonstrate that the main finding is not an artifact of the normalization procedure used for neurofeedback. Multiple independent quantification methods converge on the same result, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Analysis of non-beta frequency bands revealed that 10-25 Hz and 65-100 Hz (gamma) bands were co-modulated with beta power. However, model comparison analysis showed that beta power explains more MOT variance than gamma power, and adding beta power to a gamma-only model significantly improves prediction. Gamma power constitutes <3% of the broadband estimate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 address whether co-modulated frequency bands could explain the MOT effect. The model comparison approach (Table 3) is appropriate and shows that beta power has unique explanatory value beyond gamma. The finding that gamma is a small fraction of broadband power (C48) supports the interpretation that subjects were not manipulating gamma to control the cursor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The 1-10 Hz band showed a consistent decrease in MOT with increased power across monkeys. A task variant where Monkey G controlled both beta (Y-axis) and 1-10 Hz (X-axis) power demonstrated that MOT followed beta power ordering, not 1-10 Hz ordering. Model comparison confirmed beta power explains more MOT variance than 1-10 Hz power. Within 1-10 Hz, delta and theta (but not alpha) bands correlated with MOT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 address the confound of 1-10 Hz co-modulation through both experimental manipulation (task variant, Figure 5g-j) and statistical modeling (Table 3). The experimental design elegantly decouples beta and low-frequency power, and the results clearly demonstrate that beta power drives the MOT effect. The sub-band analysis (C57) provides additional specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Individual unit analysis revealed that 40-60% of units in Monkey G (15-20% in Monkey C) showed significantly different firing rates during slow, on-beta periods between NR and CO tasks. Beta amplitude-to-spike rate mappings were stable within tasks (r>0.8) but less correlated across tasks, indicating that many units exhibit different activity patterns during neurofeedback-induced versus naturally occurring beta oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 describe single-unit analyses comparing beta-related activity across tasks. The methods (beta amplitude-to-spike rate mapping adapted from Canolty et al. 2012) are appropriate, and the within-task stability analysis (Figure 6f-g) validates the approach. The finding that individual units behave differently across tasks is surprising but well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Despite individual unit differences across tasks, a logistic regression classifier trained on CO task data to discriminate pre- and post-movement onset successfully generalized to the NR task, with significantly different distances to MO threshold for PreMO and PostMO chunks in both tasks (paired t-test, p<0.006 for both monkeys combined).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 demonstrate that population-level movement-related patterns are preserved across tasks despite individual unit variability. The classifier approach is well-designed, and the successful generalization (Figure 7a) is a key finding that reconciles the single-unit and population-level results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In both CO and NR tasks, off-beta slow chunks exhibited significantly closer distances to MO threshold than on-beta slow chunks (paired t-test, p<0.05 in all but one case). This demonstrates that beta oscillations in both tasks reflect common population-level activity changes encoding a shift further from the movement onset threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 represent the central mechanistic finding linking beta oscillations to population neural state. The analysis is well-controlled (comparing on-beta vs off-beta within slow, pre-movement periods) and the results are consistent across both tasks and both monkeys (Figure 7d-e). This finding provides a neural population basis for the behavioral MOT effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Units that contributed most to PreMO/PostMO classification ('chosen' units) had significantly higher and more positive classifier weights, higher firing rates, and lower beta amplitude-to-spike rate slopes than unchosen units. Chosen and unchosen units showed no difference in task modulation or beta rhythmicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 characterize the properties of units most informative for movement onset classification. The analysis appropriately identifies units that both discriminate PreMO/PostMO and show consistent on-beta/off-beta differences. The findings (Figure 7\u2014figure supplement 1, Supplementary file 1) provide insight into which neural populations drive the classifier performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C126",
+      "C127"
+    ],
+    "result": "The study demonstrates that volitionally increasing and decreasing beta power with neurofeedback achieves neural states that precede slower and faster movement onset times, respectively. Beta oscillations reflect neural patterns that are far from a movement onset neural state, with population activity exhibiting greater distances from the MO threshold during beta oscillations and shorter distances without oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79, C126-C127 summarize the main findings of the study. These conclusions are well-supported by the behavioral data (C35, Figure 3), control experiments (C41-C42, Figure 4), robustness analyses (C43-C57, Figure 5), and population neural analyses (C65-C69, Figure 7). The integration of behavioral and neural population findings provides strong support for the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The authors propose that beta oscillations may be generated through striatal mechanisms involving increased MSN excitation (particularly D2 MSNs in the indirect pathway), potentially driven by acetylcholine or thalamic input related to attention. This mechanism could explain how beta oscillations emerge during attention shifts and pause motor programs in response to salient stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C90 are largely speculative interpretations based on cited modeling and in vitro work. While the proposed mechanisms are plausible and well-cited, they are not directly tested in this study. The connection between the authors' findings and these mechanisms remains hypothetical. The claims appropriately use conditional language ('could', 'may', 'potentially') but the mechanistic basis for the observed effects is not established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors propose an alternative mechanism for beta oscillations during isometric contraction tasks, suggesting they may arise from cortical excitatory drive rather than striatal mechanisms. In vitro work shows beta oscillations emerge in deep cortical layers with sufficient excitatory drive, and pyramidal tract neuron firing at beta frequencies increases motoneuron recruitment and force production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C93 propose a distinct mechanism for beta oscillations in isometric contraction contexts based on cited in vitro and modeling work. While the cited evidence is appropriate, this mechanism is not tested in the current study and remains speculative. The proposal helps reconcile different behavioral contexts for beta oscillations but lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors propose that neural populations must stop generating beta oscillations before initiating movement-related patterns, and that beta oscillations favor a 'low-risk' state that prevents accidental movements but compromises readiness for upcoming movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 represent the authors' interpretation of their findings. C94 is directly supported by the population analysis (C67-C69). C95-C97 are reasonable inferences from the data, though they involve some speculation about functional purpose. The interpretation is consistent with the finding that beta oscillations shift population activity away from movement onset threshold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors cite supporting evidence that beta oscillations are associated with compromised movement encoding: uncertain cues correlate with higher beta power, beta periods correspond to inferior neural decoding and slower cursor movements in BMI tasks, and beta oscillations occur in transient bursts with not all cells participating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 appropriately cite prior work that supports the authors' interpretation. These citation-based claims provide context for the current findings and are accurately attributed to the cited studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Evidence from Parkinson's disease supports the link between excessive beta oscillations and motor impairment: MPTP-treated primates show increased motor cortical correlation and reduced movement specificity, and PD patients show elevated beta-gamma coupling that improves with treatment. This suggests synchronization of spiking to beta frequencies may relate to akinesia symptoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 cite relevant PD literature that supports the functional interpretation of beta oscillations. The citations are appropriate and accurately represented. C109 involves some speculation ('may be related') but is reasonable given the cited evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The neurofeedback approach has several advantages: subjects choose their own strategies for modulating beta power, the consistent effect across subjects despite different strategies increases confidence in beta as a reliable marker, and the approach avoids stimulation artifacts that would compromise neural recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 discuss methodological advantages of the neurofeedback approach. These are reasonable interpretations supported by the data (different co-modulation strategies across subjects, Figure 2d-f) and logical arguments about avoiding stimulation artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "A prior study (McFarland et al. 2015) using non-invasive beta neurofeedback found that 3/8 subjects showed reduced MOT following beta reduction, consistent with the current findings. That study also found group-level improvements in movement accuracy, which was not observed in the current study, possibly due to overtraining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 appropriately cite and compare results to a related prior study. The comparison is fair and the explanation for the difference in accuracy findings (overtraining) is plausible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "The authors propose that neurofeedback training to reduce beta oscillations could potentially improve bradykinesia symptoms in PD patients, noting that PD patients already show stronger movement-related beta reduction than controls, suggesting some patients may naturally use this strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C116 propose a translational application. While C116 appropriately cites evidence that PD patients show enhanced beta reduction, C115 is speculative about therapeutic potential. The proposal is reasonable but would require clinical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Multiple lines of evidence argue against overt movement during neurofeedback: prior NHP neurofeedback studies found no overt movement, video recordings in the current study showed no movement, and human psychophysics studies indicate contralateral limb movements would lengthen (not shorten) reaction times, while isometric contraction of the reaching hand does not affect MOT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 address the important alternative explanation that subjects used movement to control the cursor. The evidence is appropriately cited and the logic is sound. Video evidence (C118) directly addresses the concern, and the cited psychophysics work (C119-C120) shows that even if movement occurred, it would not explain the observed pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The authors acknowledge limitations in testing unprepared reaches: unprepared reaches have longer MOTs and the beta state does not persist long after neurofeedback, and salient cues evoke beta oscillations which would equalize beta states. However, prior evidence suggests beta oscillations may reflect neural states during cue processing and movement preparation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125 appropriately acknowledge limitations and provide context from prior work. The reasoning for why unprepared reaches were not tested is sound, and the cited evidence (C124-C125) provides relevant context for interpreting beta oscillations more broadly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C128"
+    ],
+    "result": "The authors propose that beta oscillation-induced shifts in motor cortical activity reduce the probability of accidental movement in exchange for compromised encoding of specific movement plans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C128 is the authors' final interpretive summary. This interpretation is well-supported by the population neural data showing beta oscillations shift activity away from movement onset threshold (C67-C69) and the behavioral finding of slower MOT with increased beta (C35). The trade-off framework is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  }
+]

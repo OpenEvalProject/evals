@@ -1,0 +1,197 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C30",
+      "C31",
+      "C32",
+      "C52",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C84",
+      "C85"
+    ],
+    "result": "MAPLE is a modular, automated robotic platform designed for large-scale organism handling and phenotyping experiments. The system costs approximately $3,500, features a 100\u00d728.2\u00d77.5 cm workspace with three independent end-effectors (object manipulator, camera, organism manipulator), operates at speeds ~80% of human experimentalists, includes safety features like limit switches and collision detection, and has been made open-source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C85 collectively provide comprehensive technical specifications, design features, and performance characteristics of MAPLE. The physical dimensions, cost, speed, safety features, and modular design are explicitly stated with specific measurements and values. The open-source availability is documented with references to supplementary materials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C24",
+      "C25",
+      "C53",
+      "C54",
+      "C55",
+      "C78"
+    ],
+    "result": "MAPLE successfully conducted automated experiments across five different species: yeast colony transfer and streaking (S. cerevisiae), worm behavior recording (C. elegans), plasmodium movement tracking (P. polycephalum), fly handling (D. melanogaster), and bumblebee colony monitoring via the BEECH variant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C23-C25, C53-C55, and C78 describe specific experimental procedures performed with MAPLE across multiple species, with references to figures and videos as evidence. Each experiment demonstrates a distinct capability (colony manipulation, behavioral recording, time-lapse imaging, individual tracking), supporting the platform's versatility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C56"
+    ],
+    "result": "MAPLE-handled flies exhibit behavioral characteristics statistically indistinguishable from manually handled or unhandled control flies. Specifically, MAPLE handling did not significantly affect the fraction of active flies (p=0.92), mean walking speed (p=0.73), speed distribution in Y-mazes (p=0.61), or turning bias (p=0.74).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 and C56 present statistical comparisons with appropriate tests (logistic regression, ANOVA, KS-tests) and non-significant p-values, demonstrating that MAPLE handling does not introduce behavioral artifacts. The experimental design included proper controls (unhandled flies, manual handling) and multiple behavioral metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C34",
+      "C35",
+      "C57",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "MAPLE enables automated virgin female fly collection at 4.9 virgins/min compared to 1.5/min for manual collection (~3\u00d7 improvement), using the Fly Dispenser to isolate newly eclosed flies into FlyPlates. The process has error rates of ~3% empty wells and ~8% double-loaded wells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C33-C35, C57, and C79-C83 describe the virgin collection procedure and provide quantitative performance data. The ~3\u00d7 efficiency improvement is explicitly stated with measured rates. Error rates are documented, and the biological basis (6-hour post-eclosion mating window) is established. However, the procedure still requires manual sexing, limiting full automation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C41",
+      "C48",
+      "C61",
+      "C67"
+    ],
+    "result": "Pairs of Drosophila flies exhibit persistent, dyad-specific idiosyncrasies in social behavior that remain stable over days. The observed distribution of interactivity indices differs significantly from shuffled controls (p<0.0001), and interactivity indices show significant day-to-day correlations (0.31<r<0.38, p<0.04) for the first 3-4 days of experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C40-C41, C48, C61, and C67 present evidence for persistent dyad-specific social behavior using appropriate statistical tests (KS-test, correlation analysis). The shuffled control validates that interactions are dyad-specific rather than random. The temporal limitation (stability only in first days) is acknowledged. This represents a novel finding in fly social behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C58"
+    ],
+    "result": "Dyadic fly social behavior requires both olfactory and visual cues. Barriers limiting sensory cues significantly reduced interactivity indices. Anosmic Orco mutants showed 65% reduced interactivity (p=0.00048), while blind NorpA mutants showed no significant difference (p=0.26). Flies with reduced visual acuity (w1118) showed 50% increased interactivity (p=0.013).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C46 and C58 present genetic and barrier experiments examining sensory requirements. The Orco result supports olfactory involvement, but the NorpA result (no effect) contradicts the claim that vision is required. The w1118 result is paradoxical\u2014flies with reduced visual acuity show increased social interaction, which is inconsistent with vision being required. The barrier experiments show effects but don't definitively separate visual from olfactory contributions. The interpretation that both modalities are required is not fully supported by the mutant data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Social interaction network (SIN) structure in Drosophila is stable over days, representing a novel finding. Canton-S flies with open-clear barriers showed significant correlations in interactivity indices between successive days (days 1-4), while control conditions (solid-black barriers, NorpA and Orco mutants) showed no significant correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C47, C49-C51, C62-C64 demonstrate SIN stability through longitudinal measurements with appropriate controls. The correlation analysis shows temporal stability for wild-type flies with full sensory access, while controls lacking sensory cues or sensory function show no stability. The novelty claim (C64) is explicitly stated and contrasted with prior short-term stability findings (C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript establishes the scientific context and motivation for MAPLE: model organisms are valuable for biological research, but manual animal handling remains a bottleneck despite advances in machine vision. Existing automation (liquid-handling robots, fly-flipping robots) is either unsuitable for organisms >1mm or prohibitively expensive and inaccessible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 establish background knowledge and identify the gap MAPLE addresses. These claims are supported by appropriate citations and accurately represent the state of the field. The characterization of existing limitations (C12-C13) provides clear motivation for developing MAPLE.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C59",
+      "C60",
+      "C65",
+      "C66",
+      "C71",
+      "C72"
+    ],
+    "result": "The manuscript contextualizes the social behavior findings within prior literature on fly social interactions, individual behavioral variation, and the benefits of avoiding anesthesia in behavioral experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39, C59-C60, C65-C66, and C71-C72 accurately cite and represent prior work on social interactions, individual variation, and handling effects. These claims establish the knowledge gap (C39) that motivated the longitudinal social network experiments and provide context for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "MAPLE has performance limitations: effectors move slightly slower than trained experimentalists, fly removal from arenas succeeds ~90% of the time, but the system can operate autonomously for extended periods (e.g., 12 hours) due to redundancies and fail-safes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 honestly report system limitations and capabilities. The ~90% success rate (C69) is explicitly stated, and the 12-hour autonomous operation (C70) is demonstrated with the Physarum experiment. These limitations are acknowledged in the Discussion section, providing a balanced assessment of MAPLE's performance.",
+    "result_type": "MINOR"
+  }
+]

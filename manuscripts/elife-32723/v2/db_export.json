@@ -1,0 +1,1492 @@
+{
+  "submission": {
+    "id": "a9e0bffe-e82d-478a-a255-905b82ae5714",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:37:31.530631Z",
+    "updated_at": "2025-12-01T23:37:31.530631Z"
+  },
+  "content": [
+    {
+      "id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "submission_id": "a9e0bffe-e82d-478a-a255-905b82ae5714",
+      "content_type": "manuscript",
+      "content_text": "# TANGO1 builds a machine for collagen export by recruiting and spatially organizing COPII, tethers and membranes\n\n## Authors\n\n- Ishier Raote<sup>1</sup> ([ORCID: 0000-0002-5898-4896](https://orcid.org/0000-0002-5898-4896))\n- Maria Ortega-Bellido<sup>1</sup>\n- Ant\u00f3nio JM Santos<sup>1</sup>\n- Ombretta Foresti<sup>1</sup> ([ORCID: 0000-0002-6878-0395](https://orcid.org/0000-0002-6878-0395))\n- Chong Zhang<sup>3</sup>\n- Maria F Garcia-Parajo<sup>4</sup>\n- Felix Campelo<sup>4</sup> ([ORCID: 0000-0002-0786-9548](https://orcid.org/0000-0002-0786-9548))\n- Vivek Malhotra<sup>1</sup> ([ORCID: 0000-0001-6198-7943](https://orcid.org/0000-0001-6198-7943)) \u2020\n\n### Affiliations\n\n1. Centre for Genomic Regulation The Barcelona Institute of Science and Technology Barcelona Spain\n2. Universitat Pompeu Fabra Barcelona Spain\n3. SIMBIOsys Group, Department of Information and Communication Technologies Universitat Pompeu Fabra Barcelona Spain\n4. ICFO-Institut de Ciencies Fotoniques The Barcelona Institute of Science and Technology Castelldefels Spain\n5. Institucio\u0301 Catalana de Recerca i Estudis Avan\u00e7ats Barcelona Spain\n\n\u2020 Corresponding author\n\n## Abstract\n\nCollagen export from the endoplasmic reticulum (ER) requires TANGO1, COPII coats, and retrograde fusion of ERGIC membranes. How do these components come together to produce a transport carrier commensurate with the bulky cargo collagen? TANGO1 is known to form a ring that corrals COPII coats, and we show here how this ring or fence is assembled. Our data reveal that a TANGO1 ring is organized by its radial interaction with COPII, and lateral interactions with cTAGE5, TANGO1-short or itself. Of particular interest is the finding that TANGO1 recruits ERGIC membranes for collagen export via the NRZ (NBAS/RINT1/ZW10) tether complex. Therefore, TANGO1 couples retrograde membrane flow to anterograde cargo transport. Without the NRZ complex, the TANGO1 ring does not assemble, suggesting its role in nucleating or stabilising this process. Thus, coordinated capture of COPII coats, cTAGE5, TANGO1-short, and tethers by TANGO1 assembles a collagen export machine at the ER.\n\n## Introduction\n\nAs secretory cargoes increase in size and complexity through evolution, mechanisms for their export from the endoplasmic reticulum (ER) must adapt concomitantly. Collagens, the most abundant secretory cargo in mammals - representing nearly 25% of the dry weight of the mammalian body, are some of the most challenging of all secretory cargoes (Kadler et al., 2007). Several requirements make collagen secretion a challenging task. First, in a complex multi-step process, collagens in the ER fold and trimerise into rigid, rod-like elements (Ishikawa et al., 2015; Kadler, 2017) of up to 400 nm in length (Burgeson et al., 1985). The folding/assembly of collagen must be coupled to its export, to retain unassembled collagen in the ER, whilst ensuring that all rod-like fully assembled collagen is rapidly exported. Second, assembled collagens are too large to fit into generic COPII-coated vesicles that are usually less than 90 nm in diameter (Malhotra and Erlmann, 2015; Miller and Schekman, 2013). Third, the rapidity with which this cargo exits the ER and passes through the secretory pathway, requires efficient transfer between compartments.\n\nOur identification (Bard et al., 2006; Saito et al., 2009) and the subsequent characterisation of TANGO1 (8\u201311) has revealed a single protein, conserved through most metazoans, that stands at the crossroads of all these processes, modulating them to bring about bulky cargo export from the ER. TANGO1 is an ER exit site (ERES)-localized, transmembrane protein required for export of collagen and other bulky protein components of the extracellular matrix such as Dumpy (Saito et al., 2009; R\u00edos-Barrera et al., 2017; Maiers et al., 2017; Tomoishi et al., 2017). Figure 1 is a schematic of three TANGO1 family proteins: TANGO1, TANGO1-short and cTAGE5. A brief description of these proteins follows.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/32723/elife-32723-fig1-v2.jpg)\n\n**Figure 1.:** (A) A schematic depiction of full length TANGO1, showing the extent of each domain in amino acids. (B) Three TANGO1-family proteins (TANGO1, TANGO1-short and cTAGE5) that form a stable complex at the ERES (Maeda et al., 2016). TANGO1 is a type one single-pass transmembrane protein of 1907 amino acids, localised to ER exit sites. TANGO1 has an N-terminal lumenal SH3-like domain that interacts with collagen (Saito et al., 2009) via the chaperone, HSP47 (Ishikawa et al., 2016). There is a transmembrane helix and, in close proximity, a membrane insertion helix. On the cytoplasmic side of the ER membrane, TANGO1 has two coiled-coil (CC) domains (CC1 and CC2). CC1 is used by TANGO1 to recruit ERGIC membranes for producing a collagen carrier (Santos et al., 2015). CC2 binds to a similar coiled-coil domain in cTAGE5 (18). The proline-rich domain (PRD) binds ER exit site machinery Sec23 (Saito et al., 2009; Ma and Goldberg, 2016) and Sec16 (Maeda et al., 2017). Alternative splicing of TANGO1 results in a short isoform, TANGO1-short (Wilson et al., 2011), lacking the lumenal domain. The closely related protein cTAGE5 has a similar cytoplasmic domain organisation with two coiled-coil domains (CC1 and CC2) and a proline-rich domain (PRD). Via its CC1 it recruits Sec12 (Saito et al., 2014). cTAGE5 and TANGO1/TANGO1-short interact through their respective CC2 domains. In addition, the cTAGE5 CC2 also interacts with the retrograde v-SNARE Sec22 (Fan et al., 2017). Like the TANGO1/TANGO1-short PRDs, the cTAGE5 PRD also interacts with Sec23 (Ma and Goldberg, 2016; Saito et al., 2011; Wang et al., 2016).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32723/elife-32723-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) A schematic representation of all the HA-epitope tagged constructs used in this study with different domains deleted from full length TANGO1. (B) Each construct was expressed in 2H5 cells. Cells were fixed, permeabilised and co-stained for HA, Sec31A and calreticulin or (C) HA, collagen VII and calreticulin. (D) A bar graph showing Manders\u2019 overlap coefficients of HA to Sec31A (green) or HA to collagen (blue).\n\nTANGO1 is a protein of 1907 amino acids (Figure 1A) of which 709 face the cytoplasm. TANGO1 contains a full transmembrane domain and a second membrane-inserted loop, which partially inserts into the inner leaflet of the ER membrane. The lumenal part contains a coiled-coil domain and, at the N terminus, an SH3-like domain. The SH3-like domain binds collagens via HSP47 (Saito et al., 2009; Ma and Goldberg, 2016; Maeda et al., 2017; Wilson et al., 2011). The cytoplasmic part of TANGO1 is composed of two coiled-coil domains (CC1 and CC2) followed by a C-terminal proline-rich domain (PRD). CC1 contains a domain called TEER (Tether for ERGIC at the ER) that recruits ERGIC-53-containing membranes (Santos et al., 2015); CC2 binds cTAGE5 (18), and PRD binds Sec23 and Sec16 (Saito et al., 2009; Ma and Goldberg, 2016).\n\nTANGO1-short is a spliced isoform of TANGO1. It is composed of 785 amino acids that arise from the same exons that encode the cytoplasmic domains of TANGO1. The sequence of TANGO1-short differs in the membrane-inserted helix, and it contains only 15 amino acids at the N terminus, within the ER lumen. It therefore lacks any capacity to interact directly with cargoes. We expect that TANGO1-short binds the same cytoplasmic proteins as TANGO1, but this has not been directly tested.\n\nEvolutionarily, TANGO1 appears to have been duplicated early in metazoans, yielding a TANGO1-like protein (TALI) (Bosserhoff et al., 2003). Like TANGO1, TALI is expressed as two isoforms. The long isoform is expressed in select tissues while the short isoform (cTAGE5) has a ubiquitous expression (Santos et al., 2016; Bosserhoff et al., 2003; Pitman et al., 2011; Pfeffer, 2016). cTAGE5 is composed of 804 amino acids, with a short lumenal stretch of 38 amino acids, followed by a single transmembrane domain. The organisation of cytoplasmic domains is the same as TANGO1, with two coiled-coil domains and a PRD. The first (CC1) of cTAGE5 interacts with Sec12; CC2 interacts with TANGO1 and Sec22, and the PRD, like TANGO1, interacts with Sec23 (Wilson et al., 2011; Saito et al., 2011; Saito et al., 2014; Raote et al., 2017).\n\nFrom the published data on these proteins, we can conclude that all three family members bind each other and Sec23. cTAGE5 binds Sec12 and Sec22. TANGO1 (and therefore TANGO1-short) does not bind Sec12. Of these proteins, only TANGO1 can bind cargo in the lumen. How different binding partners could affect the overall function of these proteins in ERES assembly and cargo export, remains untested.\n\nA newly discovered feature of TANGO1 is its lateral organisation into rings of up to 300 nm diameter, which corral COPII coats at the ERES (Raote et al., 2017). The organisation of cTAGE5 and TANGO1-short in TANGO1 rings is not known.\n\nExploiting the modular composition of TANGO1, we have generated forms of TANGO1 (Figure 1\u2014figure supplement 1A), each missing one specific domain and hence with one specific set of functions/interactions abrogated. With this set of reagents, we now address how TANGO1 assembles into a functional ring or a fence. We show that this fence of TANGO1 family proteins surrounds COPII, and through specific tethers, physically links the ER and ERGIC for collagen export.\n\n## Results\n\n### Binding of TANGO1 to COPII controls TANGO1 ring formation\n\nThe role of COPII in TANGO1 ring assembly could be addressed by using a mutant form of TANGO1 that lacks the PRD (TANGO1\u0394PRD), which therefore cannot interact with Sec23 (Saito et al., 2009) (schematic of TANGO1, Figure 1A). 2H5 cells (HeLa cells with TANGO1 deleted using the CRISPR/Cas9 system [Santos et al., 2015]) were co-transfected with collagen VII and either TANGO1 or TANGO1\u0394PRD and imaged using STED microscopy. Full length TANGO1 formed distinct rings of somewhat uniform shape and size (Figure 2A). Surprisingly, TANGO1\u0394PRD also assembled into rings, but with two clear differences. First, rings were smaller (Figure 2B, Figure 2\u2014figure supplement 1A); and second, some rings appeared fused with each other to form either a planar tessellation (Figure 2C, Figure 2\u2014figure supplement 1G) or long linear assemblies (Figure 2D, Figure 2\u2014figure supplement 1B\u2013F). Quantitative morphological descriptors of the size and shape of structures formed by TANGO1 constructs, were extracted using semi-automated image analysis (Figure 2\u2014figure supplement 2, Table 1) and are described in detail in the Materials\u00a0and\u00a0methods section and the figure legend. Specifically, we fitted rings to an elliptical shape and measured the diameters of the ring in terms of major and minor axes of its fitted ellipse. This works well for regular-shaped ellipses, however for structures and shapes that deviate from an elliptical shape, a rectangular bounding shape is a more useful approximation. Therefore, maximum and minimum diameters (Feret\u2019s maximum or minimum) were also extracted and all these values are plotted in Figure 2E. From this quantification, we confirmed that rings formed by TANGO1\u0394PRD, are significantly smaller than rings formed by TANGO1 (Figure 2E, Table 1). We used the aspect ratio (the ratio of the major to minor axes of the fitted ellipses) as a descriptor of the shape of rings. By this measure, rings formed by TANGO1 and TANGO1\u0394PRD had a similar shape (Figure 2F).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/32723/elife-32723-fig2-v2.jpg)\n\n**Figure 2.:** In TANGO1 knockout cells, various constructs of TANGO1 were expressed and visualized by STED microscopy. (A) Full-length TANGO1 forms rings. (B) TANGO1\u0394PRD forms small distinct rings, (C) rings fused into a planar tessellation or (D) rings fused in long linear rows. (E) Quantification of size, shown as a scatter plot and box plot of measured morphological descriptors: major axis and minor axis, diameter of a fitted ellipse, maximum and minimum Feret\u2019s diameters. Quantification of shape, shown as a scatter and box plot (F) of the aspect ratio between the major and minor axes. 131 and 236 rings respectively were analysed for the two constructs. STED images of TANGO1 in siCTRL (G) or siSEC23A (H) treated RDEB/FB/C7. (I) Rings (solid bar) or clusters (checkered bar) in 22 siCTRL cells and 14 siSEC23A cells were manually counted and plotted, normalised to the area of collagen accumulations. (E) ***p<0.006; ns not significant. (I) **p<0.01, *p<0.05 (Student\u2019s t test). Scale bars (A\u2013D, G, H) 2 \u03bcm, insets 200 nm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32723/elife-32723-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Various structures observed on visualisation of TANGO1\u0394PRD by STED microscopy. Scale bars 200 nm.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32723/elife-32723-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Illustration of image analysis pipeline. The original STED stack is first deconvolved using Huygens deconvolution software, followed by a Z-projection of subsets of stack slices. Compared to the whole-stack Z-projection, those generated from subsets could differentiate easier objects at different Z-depths. With a few manually placed strokes of pixel labels, the pixel classification workflow in ilastik was able to segment objects from background. Each object is further classified into one of the three classes: ring aggregates, rings, or dots (incomplete rings). This was achieved by the object classification workflow in ilastik, using a set of morphology features.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/32723/elife-32723-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) The percentage of siCTRL or siSec23A-treated RDEB/FB/C7 with intracellular accumulations of collagen. Densitometric analysis of a blot of Sec23 to quantify the efficiency of knockdown (B, C), # non-specific band. siCTRL or siSEC23A-treated RDEB/FB/C7 lysates and medium were probed for collagen and \u00df-tubulin as a loading control (D), densitometric analysis (E) of the bands of collagen. (A) ***p<0.001 (Student\u2019s t test); (E) *p<0.05 (Mann Whitney test).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/32723/elife-32723-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Further images of the various structures observed on visualisation of TANGO1 by STED microscopy in RDBE/FB/C7 cells with Sec23A depleted. Scale bars 500 nm.\n\n**Table 1.**\n Quantification of the size and shape of rings formed by TANGO1 and its mutant forms.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Major axis (nm)</th>\n      <th>Minor axis (nm)</th>\n      <th>Feret\u2019s major axis (nm)</th>\n      <th>Feret\u2019s minor axis (nm)</th>\n      <th>Objects counted</th>\n      <th>Cells imaged</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>TANGO1</td>\n      <td>293\u00a0\u00b1\u00a047</td>\n      <td>191\u00a0\u00b1\u00a043</td>\n      <td>330\u00a0\u00b1\u00a053</td>\n      <td>221\u00a0\u00b1\u00a046</td>\n      <td>131</td>\n      <td>44</td>\n    </tr>\n    <tr>\n      <td>TANGO1\u0394PRD</td>\n      <td>192\u00a0\u00b1\u00a055</td>\n      <td>115\u00a0\u00b1\u00a019</td>\n      <td>210\u00a0\u00b1\u00a059</td>\n      <td>130\u00a0\u00b1\u00a029</td>\n      <td>236</td>\n      <td>40</td>\n    </tr>\n    <tr>\n      <td>TANGO1\u0394CC2</td>\n      <td>313\u00a0\u00b1\u00a077</td>\n      <td>164\u00a0\u00b1\u00a050</td>\n      <td>358\u00a0\u00b1\u00a090</td>\n      <td>203\u00a0\u00b1\u00a056</td>\n      <td>228</td>\n      <td>51</td>\n    </tr>\n  </tbody>\n</table>\n\nIt is important to note that these cells still contain TANGO1-short and cTAGE5 (Figure 1), both of which will recruit TANGO1\u0394PRD to ERES. These data suggest that the cytoplasmic domains of the TANGO1-family of proteins act as a single unit and any one can assemble into a ring, however TANGO1 brings cargo to the exit site. This suggests that overexpressing cytoplasmic isoforms (either TANGO1-short or cTAGE5) would increase the capacity of an ERES to export cargo, however TANGO1 is the only protein with the capacity to bring cargo to ERES. Collagen secreted in the absence of TANGO1 might thus be in an unfolded or unassembled form.\n\nIn a complementary experiment, we studied the effect of Sec23A depletion on TANGO1 ring formation in RDEB/FB/C7 fibroblasts. Depleting cells of all Sec23 could create cellular stress and affect endomembrane regulation, so we attempted to minimise such a potential stress by using siRNA that targeted exclusively Sec23A, and not Sec23B. As expected, collagen export from the ER was reduced in Sec23A-depleted cells (Figure 2\u2014figure supplement 3).\n\nWhile TANGO1 in control cells was often visualised in rings (Figure 2G), depletion of Sec23A appeared to phenocopy our results with TANGO1\u0394PRD, showing multiple seemingly fused rings of TANGO1 assembled in planar arrays (Figure 2H, Figure 2\u2014figure supplement 4), quantified in Figure 2I. These structures/abnormal rings were almost never observed in cells expressing full length TANGO1, or cells that are not depleted of Sec23A.\n\nBased on our super-resolution microscopy images, we hypothesise that TANGO1 rings could be represented as a multimeric assembly of units of TANGO1 family proteins (TANGO1, TANGO1-short and cTAGE5) that assemble into a fence.\n\n### Lateral interactions along the circumference of a TANGO1 ring\n\nA key feature that could provide strength to a fence of TANGO1 would be lateral interactions between components in the fence. For example, the TANGO1-interacting protein cTAGE5 (Figure 3A) should be a component of the ring and could contribute to lateral interactions in the ring. We visualised TANGO1 and cTAGE5 in RDEB/FB/C7 cells by STED microscopy. Due to the low quality of commercially available anti-cTAGE5 antibodies for immunofluorescence, we were unable to visualise the localisation of cTAGE5 as clearly as TANGO1, nonetheless cTAGE5 clearly localised along the rings delineated by TANGO1 (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/32723/elife-32723-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic of the interaction of TANGO1 and cTAGE5. (B) STED images of TANGO1 and cTAGE5 in RDEB/FB/C7. 70 rings were manually counted from 12 cells and scored for cTAGE5 signal localisation within the ring. 21 rings showed peripherally located cTAGE5 while 49 had cTAGE5 within the ring formed by TANGO1. Rings of TANGO1 (C) and TANGO1\u0394CC2 (D) in 2H5 cells. (E) scatter and box plots of measured morphological size descriptors: major and minor axes diameters of fitted ellipse (MaxA, MinA), and Feret\u2019s diameter (MaxF, MinF). (F) Binning rings of TANGO1 (blue bars) and TANGO1\u0394CC2 (yellow bars) by aspect ratio (major to minor axes of the fitted ellipse). Inset, quantification of shape, shown as scatter-plot and box plot of the aspect ratio. The number of rings analysed for the independent experiments are 131 and 228, respectively. (G) STED image of TANGO1 in si-cTAGE5 in RDEB/FB/C7. (H) Quantification of number of rings observed in control cells (22 cells) or si-cTAGE5 cells (13 cells) normalised to the area of collagen accumulations. Scale bars (B) 200 nm; (C, D) 2 \u03bcm, insets 200 nm (G) 1 \u03bcm; insets 200 nm, *p<0.05; **p<0.01; ***p<0.001, ns not significant.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32723/elife-32723-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** STED images of structures formed by TANGO1\u0394CC2. Scale bars 200 nm.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32723/elife-32723-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Densitometric analysis of bands of cTAGE5 normalised to control. (B) Collagen VII from lysates or media of siRNA (si-CTRL or si-cTAGE5) treated RDEB/FB/C7 fibroblasts. \u03b2-tubulin is a loading and lysis control. MW \u2013 Molecular weight marker. (C) Densitometric analysis of collagen VII normalised to control and plotted as a bar graph. In blue, percentage of cells with intracellular accumulations of collagen VII after siRNA treatment. ***p<0.001, **p<0.01 (Student\u2019s t test).\n\nTo test the involvement of cTAGE5 in TANGO1 ring formation, we generated a construct of TANGO1 lacking the second cytoplasmic coiled-coil (TANGO1\u0394CC2) domain (Figure 1\u2014figure supplement 1 for a schematic) and hence, unable to interact with cTAGE5 (Figure 3A). STED microscopy revealed that, in contrast to full length TANGO1 (Figure 3C), TANGO1\u0394CC2 assembled into misshapen structures (Figure 3D and Figure 3\u2014figure supplement 1). Ring size and shape were quantified as in the previous section. Rings formed by TANGO1\u0394CC2 were more variable in size (Figure 3E, Table 1) and shape (Figure 3F) than those formed by full length TANGO1.\n\nAs a complementary approach, we characterised the effect of depleting cTAGE5, on ring formation in cells with endogenous TANGO1. As expected, in RDEB/FB/C7 fibroblasts depleted of cTAGE5 (Figure 3\u2014figure supplement 2A), collagen secretion was blocked (Figure 3\u2014figure supplement 2B,C). TANGO1 structures phenocopied TANGO1\u0394CC2 structures in 2H5 cells: rings of TANGO1 were misassembled (Figure 3G) and formed unusual shapes, without considerably altering the number of rings observed (Figure 3H).\n\nAnother lateral interaction that might maintain fence integrity could be an intrinsic ability of TANGO1 to self-associate. A test of this proposition would be to identify a domain in TANGO1 that mediates self-association and show that it has a role in ring formation. To identify such a domain, we tested the ability of TANGO1-FLAG to co-immunoprecipitate with TANGO1\u0394PRD, TANGO1\u0394CC2 or TANGO1\u0394CC1 (Figure 1\u2014figure supplement 1). We observed (Figure 4A) that TANGO1-FLAG was immunoprecipitated by TANGO1 and TANGO1\u0394PRD, but not by TANGO1\u0394CC2 (Figure 4A) or TANGO1\u0394CC1 (Figure 4B). Reasoning that the effect of the CC2 was likely indirect, as TANGO1\u0394CC2 is unable to interact with cTAGE5 (Figure 4A) (Saito et al., 2011; Saito et al., 2014), we focused on the first coiled-coil domain (CC1) to identify a minimal region required for self-association. We generated two TANGO1 constructs with smaller deletions from the CC1, each of which had a deletion in a portion of the coiled-coil (TANGO1\u03941255\u20131295 and TANGO1\u03941296\u20131336). As a control, we confirmed these constructs still interacted with cTAGE5 (Figure 4B). Only TANGO1\u03941255\u20131295 did not immunoprecipitate TANGO1-FLAG (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/32723/elife-32723-fig4-v2.jpg)\n\n**Figure 4.:** (A, B) Co-immunoprecipitation of TANGO1-FLAG with the indicated constructs in HEK293T cells. Lysates and immunoprecipitated samples were probed for HA, FLAG and cTAGE5. 2H5 cells co-transfected with collagen VII and (C) TANGO1\u0394CC1 (16 cells imaged), (D) TANGO1\u03941255\u20131295 (15 cells imaged) or (E) TANGO1\u03941296\u20131336 (16 cells imaged), were imaged by STED microscopy. (F) Schematic of interactions between TANGO1, TANGO1-short and cTAGE5. Scale bars (C\u2013E) 2 \u03bcm; insets 200 nm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32723/elife-32723-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Quantification of size of TANGO1 and TANGO1\u03941296\u20131336, shown as a scatter plot and box plot of measured morphological descriptors: major axis and minor axis of a fitted ellipse, maximum and minimum Feret\u2019s diameters. (B) Quantification of shape, shown as a scatter and box plot of the aspect ratio between the major and minor axes. 131 and 143 rings respectively were analysed for the two constructs. ns not significant.\n\nWith a minimal self-association domain (a.a. 1255\u20131295) identified, we looked for its role in TANGO1 ring formation. 2H5 cells were co-transfected with collagen VII and either TANGO1\u0394CC1, TANGO1\u03941255\u20131295 or TANGO1\u03941296\u20131336 and then imaged by STED microscopy. In line with our predictions, TANGO1\u0394CC1 or TANGO1\u03941255\u20131295 could not form rings; of the 16 and 15 cells examined respectively, there were few discernible polymeric assemblies of TANGO1 (Figure 4C,D), while TANGO1\u03941296\u20131336 behaved as full length TANGO1, forming distinct, readily detectable, independent rings (Figure 4E) of similar size (Figure 4\u2014figure supplement 1A) and shape (Figure 4\u2014figure supplement 1B) as TANGO1. These data indicate that TANGO1-TANGO1 interactions (Figure 4F), mediated by amino acids 1255\u20131295, are required to maintain ring integrity.\n\nIn our coarse-grained view of this fence of TANGO1 and TANGO1 family of proteins (cTAGE5 and TANGO1-short), we would describe our data thus far in terms of two general sets of interactions. First, lateral interactions mediated by TANGO1 self-association and its interaction with cTAGE5 and TANGO1-short, and second, inward attractions of TANGO1/cTAGE5/TANGO1-short to COPII, thus affecting the ring size and its placement with respect to COPII budding machinery.\n\n### Compartment tethering in a TANGO1 ring assembly pathway\n\nWe have shown recently that TANGO1, via its CC1, recruits ERGIC membranes that fuse at the ERES (Santos et al., 2015). Could TANGO1 rings concentrate membrane recruitment for mega-carrier biogenesis? What role does the TEER domain play in ring assembly? To address these questions, we first identified a minimal TEER domain within the CC1, using our previously developed approach (Santos et al., 2015).\n\nFollowing our previous methodology (Santos et al., 2015), we generated two myc-tagged, mitochondrially-targeted TEER (mit-TEER truncates) constructs of 82 and 81 amino acids, respectively. Our original construct (Santos et al., 2015) had TANGO1 amino acids 1188 to 1396. From this, we generated two smaller constructs. In one, we deleted amino acids 1255\u20131295 (mit-\u03941255\u20131295); while in the other we deleted amino acids 1296\u20131336 (mit-\u03941296\u20131336) (Figure 5A). These corresponded exactly to the deletions in the CC1 described in the previous section.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/32723/elife-32723-fig5-v2.jpg)\n\n**Figure 5.:** (A) A schematic depiction of myc-epitope tagged mitochondrially-targeted (mit-TEER) truncates. (B) mit-TEER truncates were expressed in 2H5 cells, fixed and stained with anti-myc-antibody and visualised with confocal microscopy. (C) mit-TEER truncates were expressed in 2H5 cells, which were fixed and stained using anti-myc antibody (green) and, as a mitochondrial marker, anti-HSP60 antibody (red). (D) Overlap of the signal from myc and HSP60 was quantified and plotted as the Manders\u2019 overlap coefficient for the two constructs (mit-\u03941255\u20131295 and mit-\u03941296\u20131336 respectively). (E) 2H5 cells were transfected with mit-\u03941255\u20131295 or mit-\u03941296\u20131336, fixed, and stained with anti-myc, anti-HSP60 and anti-ERGIC-53 antibodies. Arrows indicate myc staining with or without colocalised ERGIC-53 staining. (F) The extent of overlap of ERGIC-53 and myc was quantified and plotted as the Manders\u2019 overlap coefficient for mit-\u03941255\u20131295 and mit-\u03941296\u20131336, respectively. Scale bars: (B, C, E and F) 20 \u03bcm; inset 2 \u03bcm.\n\nWe expressed the constructs in HeLa cells, fixed and then stained them using an anti-myc antibody and visualised these samples using confocal microscopy (Figure 5B). We confirmed the two constructs co-localised with the mitochondrial marker HSP60 (Figure 5C). The extent of overlap of myc-epitope and HSP60 was quantified and is plotted as the Manders\u2019 overlap coefficient (Figure 5D).\n\nAs before (Santos et al., 2015), we co-stained transfected cells with anti-ERGIC-53 and anti-myc antibodies. To our surprise, mitochondria expressing mit-\u03941255\u20131295 showed no recruitment of ERGIC-53-containing membranes (Figure 5E). In contrast, mit-\u03941296\u20131336 still functioned as the TEER domain and recruited ERGIC membranes. The extent of colocalisation of ERGIC-53 and myc for the two constructs was quantified and is plotted as Manders\u2019 overlap coefficient (Figure 5F). This tells us that the minimal TEER is exactly the same forty amino acids we identified in the previous section, as those required for the self-association of TANGO1. This implies that either a TANGO1 dimer can recruit a tether or the tether links two TANGO1 monomers. This hypothesis is tested and presented in Figure 7.\n\nBut how does this minimal TEER domain recruit ERGIC membranes? A prime candidate for this tethering activity is the evolutionarily conserved NRZ (NBAS, RINT1, ZW10) protein tether. NRZ tether is a multi-subunit tether complex (MTC) that assembles at the surface of the ER (Ren et al., 2009), is required for retrograde capture of membranes (Aoki et al., 2009; Arasaki et al., 2006; Hirose et al., 2004), partially localises to ER exit sites (Schr\u00f6ter et al., 2016) and interacts with SNAREs that we have shown previously are required for collagen export from the ER (Nogueira et al., 2014; Santos et al., 2015). One component of the MTC (RINT1) was also identified in our screen for genes required for protein secretion (Bard et al., 2006). Mutations in another component NBAS, are linked to dysregulated collagen secretion in atypical osteogenesis imperfecta (DDD Study et al., 2017).\n\nAs in previous sections, we imaged TANGO1 in RDEB/FB/C7 cells, with Sec31 and RINT1 by confocal microscopy (Figure 6\u2014figure supplement 1) and, by STED microscopy observed the tether protein RINT1 localised to one or two puncta at rings of TANGO1, occasionally adjacent to ERGIC-53-containing membranes (Figure 6A and Figure 6\u2014figure supplement 2).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/32723/elife-32723-fig6-v2.jpg)\n\n**Figure 6.:** (A) Rings of TANGO1 (green) in RDEB/FB/C7 cells with RINT1 (red) and ERGIC-53 (blue). Deconvolved z-stacks of ten cells were used to quantify the location of the tether protein RINT1 relative to a ring of TANGO1. 90 rings of TANGO1 were manually scored, three adjacent slices in the image stack were used to identify signal from RINT1 in the vicinity of the ring of TANGO1. 23 rings showed RINT1 within the ring, 19 rings showed RINT1 on the circumference (at the edge) of the ring, 39 had RINT1 outside the ring, nine rings showed no detectable RINT1. (B) TANGO1, TANGO1\u03941255\u20131295, TANGO1\u03941296\u20131336 and TANGO1-Lum were expressed in HEK293T cells and immunoprecipitated. Samples were probed for NBAS, RINT1, cTAGE5 and ZW10. TANGO1 and TANGO1\u03941296\u20131336 immunoprecipitated all four proteins, but TANGO1\u03941255\u20131295 did not immunoprecipitate tether proteins. TANGO1-Lum did not pull down any of the four proteins. (C) RDEB/FB/C7 were transfected with siRNA (siCTRL, siNBAS, siRINT1 and siTANGO1) and immunostained for intracellular collagen VII (red) and calreticulin (green). (D) Quantification of fluorescence associated with intracellular collagen VII in (C). (E) Collagen VII secreted by RDEB/FB/C7 was looked at as the ratio of collagen in the medium to the lysate, quantified, and plotted as the average of values from at least three independent experiments. \u03b2-actin is a loading control. (F) siRINT1-, siNBAS- and siTANGO1-treated RDEB/FB/C7 were stained for collagen VII and ERGIC-53. (G) A plot of Manders\u2019 overlap coefficient for ERGIC-53 and collagen VII from (F) used to quantify ERGIC-53 localisation to collagen accumulations. (H) Representative blots showing the efficiency of knockdown of NBAS, RINT1 and ZW10, quantified and plotted as the average\u00a0\u00b1s.d. from at least three independent experiments. ***p<0.001; **p<0.01. Scale bars (A) 200 nm, (C, F) 10 \u03bcm, (C) inset) 5 \u03bcm.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32723/elife-32723-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Collagen accumulations in RDEB/FB/C7 cells were visualised for Sec31 (red), TANGO1 (green) and RINT1 (blue). Colocalisation at these patches was measured by the Manders\u2019 overlap coefficient of 0.691\u00a0\u00b1\u00a00.124 (s.d.) of RINT1 with TANGO1. Scale bars 5 \u03bcm.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32723/elife-32723-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** RDEB/FB/C7 cells were visualised for TANGO1 (green) and RINT1 (red) Fourteen examples are shown here. Scale bar 200 nm.\n\nWe transfected full-length TANGO1, TANGO1\u03941255\u20131295, TANGO1\u03941296\u20131336 or TANGO1-Lum (lumenal) in HEK293T cells and attempted to co-immunoprecipitate tether proteins. We saw that full length TANGO1 and TANGO1\u03941296\u20131336 immunoprecipitated all three of the proteins that form the tether (NBAS, RINT1, ZW10) (Figure 6B). This interaction was completely abrogated when we used TANGO1\u03941255\u20131295 (lacking the minimal TEER domain). As controls, we confirmed all constructs still interacted with cTAGE5 and TANGO1-Lum did not immunoprecipitate either tether proteins or cTAGE5 (Figure 6B).\n\nDepleting TANGO1, NBAS or RINT1 from RDEB/FB/C7 fibroblasts inhibited collagen VII secretion (Figure 6C\u2013E) and arrested collagen in the ER (Figure 6C). Does TANGO1 recruit ERGIC to intracellular collagen accumulations (Santos et al., 2015) via the NRZ tether? In cells depleted of RINT1, NBAS or TANGO1 (Figure 6F,H), we quantified ERGIC recruitment to accumulations of collagen in the ER. In all cases, ERGIC membrane recruitment was significantly reduced (Figure 6G).\n\nThese data showed a novel function of TANGO1, to recruit ERGIC membranes via the retrograde NRZ MTC to the ERES for collagen export. But is this function built into ring assembly?\n\nIn RDEB/FB/C7 depleted of RINT1, TANGO1 rings were completely disrupted (siCTRL vs. siRINT1 Figure 7A vs. B). We individually depleted each of the other two proteins in the MTC (NBAS or ZW10) and checked for the ability of TANGO1 to assemble into rings in RDEB/FB/C7 fibroblasts. As seen after depleting cells of RINT1, rings were observed far less frequently (quantified in Figure 7C). In all cases, ERES, as marked by TANGO1 and SEC31 are still formed (Figure 7\u2014figure supplement 1).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/32723/elife-32723-fig7-v2.jpg)\n\n**Figure 7.:** TANGO1 rings in control cells (A). Representative image of a cell treated with siRINT1, showing almost no detectable assemblies of TANGO1 (B). The number of rings in each condition were manually counted and plotted (C) normalised to the area of collagen accumulations. The number of cells used in the quantification for each condition is indicated. (D) Schematic of experiment. Cells transfected with siRNA control, RINT1 or ZW10, lysed and subjected to sequential immunoprecipitations, (E). Eluates were probed for TANGO1-HA, cTAGE5, TANGO1-short. Cells with only TANGO1-HA (no cTAGE5-FLAG) were used as a negative control. Knockdown of RINT1 and ZW10 were confirmed by western blotting. (F) Schematic of a complex of TANGO1, TANGO1-short and cTAGE5 indicating positions of antibody epitopes used in the co-immunoprecipitations. Scale bars, (A, B) 1 \u03bcm, inset 400 nm. (C) ***p<0.001 (Student\u2019s t test).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32723/elife-32723-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** After depleting cells of NBAS, RINT1 or ZW10, cells are visualised by confocal microscopy for Sec31 (red), TANGO1 (green) and TGN46 (blue). Under these experimental conditions, exit sites still form and show a clear association between Sec31 and TANGO1. Scale bars 20 \u03bcm, insets 5 \u03bcm.\n\nThere are at least two mechanistic possibilities that could link tether binding, the TANGO1 self-association domain, and ring formation. Either (a) the tether is required to hold together TANGO1 and TANGO1-short in the fence; or (b) complexes form with TANGO1/TANGO1 short and this dimer then recruits the tether, which stitches together a higher order structure, forming a fence.\n\nWe tested these hypotheses by performing sequential co-immunoprecipitations to look for TANGO1, TANGO1-short and cTAGE5 in a stable complex. Using lentiviral infections, we generated HEK293T cells stably expressing cTAGE5-FLAG and TANGO1-HA. We depleted these cells of individual NRZ tether proteins and then performed sequential immunoprecipitation, pulling first on cTAGE5-FLAG and then TANGO1-HA and finally probed for TANGO1-short (Figure 7D,F for schematic). We observed that the NRZ tether had no effect on the association of TANGO1 and TANGO1-short in a stable complex (Figure 7E).\n\nThese data showed that the NRZ tether is required for TANGO1 to assemble into a ring and indicated that stable complexes of TANGO1, cTAGE5 and TANGO1-short, recruit the tether.\n\n## Discussion\n\nOur new data describe a mechanism whereby the very processes by which TANGO1 recruits ERES machinery and cargo, also bring about its own assembly into a fence of defined size. This in turn remodels the ERES, and in the lumen, via Hsp47, binds and potentially segregates assembled bulky cargoes (Figure 8A). Such a concerted mechanism circumvents a causality dilemma (the chicken-or-the-egg problem) in this process \u2013 neither ring nor function precedes the other; they assemble together, requiring each other to do so.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/32723/elife-32723-fig8-v2.jpg)\n\n**Figure 8.:** (A) TANGO1-family proteins (cyan) assembly into a ring at an ERES is mediated by interactions 1. with COPII (orange) 2. with triple helical collagen (purple), 3. amongst the TANGO1 family proteins 4. with the NRZ tether (dark blue) which links TANGO1 to ERGIC membranes. TANGO1 delays the binding of the outer COPII coat to allow a mega carrier to form. (B) The cytoplasmic bud grows to a size that encapsulates collagen trimers. In this form, we suggest that the neck of this tubule is covered in the inner COPII coat bound to TANGO1, which prevents premature recruitment of outer COPII coat, thereby controlling the timing of membrane fission.\n\nThere are several broad implications of our data, addressing fundamental aspects of early secretory pathway organisation and cargo export.\n\n### Tethering compartments\n\nTethers play a central role in membrane targeting and organelle biogenesis (Cheung and Pfeffer, 2016; Gillingham and Munro, 2016; Munro, 2011; Pfeffer, 1999; Waters and Pfeffer, 1999; Wong and Munro, 2014). Improved structural understanding has revealed fascinating models for the mechanisms of membrane recruitment by tethers (Ren et al., 2009; Murray et al., 2016). Our discovery of membrane recruitment by TANGO1 and its use of the NRZ tethering complex (Figures 6 and 7) has far reaching implications. A critical aspect of TANGO1 biology is that it functionally and physically couples anterograde to retrograde traffic at an ERES, coupling two successive compartments in the secretory pathway, allowing for more rapid and efficient cargo transport between the compartments (Nogueira et al., 2014; Santos et al., 2015; Liu et al., 2017). The NRZ tether would bind to, and recruit, any COPI-coated ERGIC-53-containing membranes in the vicinity of the ERES \u2013 but what of ERES closely apposed to the cis-Golgi, and what of organisms such as D. melanogaster, which have no discernible ERGIC compartment? Under such circumstances, the \u2018carrier\u2019 for collagen formed by the retrograde recruitment of COPI-coated membranes could just be the first Golgi cisterna. In other words, we could envisage a direct continuity or \u2018tunnel\u2019 between the ER and the Golgi (Malhotra and Erlmann, 2015), with a ring of TANGO1 and its associated exit site machinery holding together the two compartments, but also functionally delimiting them.\n\nWe have not observed a complete ring of tethers with TANGO1. The tethers instead appear as one or two puncta at the ring circumference. One can envisage that an initiation point of the TANGO1 ring recruits tethers and TANGO1 continues to assemble into a ring whereas the tethers remain at the nucleation site. This would explain the images presented (Figure 6A and Figure 6\u2014figure supplement 2). Without the tethers, the reaction is stalled and TANGO1 fails to assemble further into a ring, providing an explanation for the requirement of tethers in TANGO1 ring assembly. An alternative is that the tethers are not recruited at the site of ring nucleation but present throughout, and we are unable to capture this final assembled state.\n\n### TANGO1 as filament around COPII coat\n\nWe had proposed that TANGO1 functioned by binding to and stabilising the inner COPII coat to delay the recruitment of the outer coat and the subsequent fission of a newly forming carrier, for as long as is required to assemble and pack the bulky cargo collagen (Saito et al., 2009). We would like to suggest a possible physical mechanism of how TANGO1 rings are assembled and maintained by means of protein-protein interactions and eventually regulate the formation of a collagen-containing megacarrier. First, based on our observations of TANGO1 rings by STED microscopy (Raote et al., 2017), (Figure 2), and our data indicating the different protein\u2013protein interactions between the members of the TANGO1 family, we propose that a fence of TANGO1 can be described as a filament, held together by these lateral protein\u2013protein interactions, which normally surrounds COPII patches at the ERES (Maeda et al., 2017; Saito et al., 2011). Importantly, this description of the ring as a filament will remain an approximation until the molecular composition and structural alignment of individual components is known. Such a filament would be subjected to elastic strains and stresses and would hence resist bending. Second, COPII subunits polymerise into structures of growing size. COPII subunits at the periphery of a polymerising domain have free binding sites and hence higher chemical energy than fully polymerised subunits at the centre of the domain, which, in physical terms, translates into the existence of an effective line-energy of the ERES. As proteins of the TANGO1 family physically interact with Sec23 (Saito et al., 2009; Ma and Goldberg, 2016; Maeda et al., 2017), Sec16 (Maeda et al., 2017), and Sec12 (Saito et al., 2014), we propose that upon adsorption to the ERES by binding peripheral COPII subunits, TANGO1 would effectively reduce the ERES line energy. A tug-of-war between the filament bending and the effect on COPII stabilisation created by the adsorption of TANGO1 filaments around ERES would then dictate whether and how TANGO1 rings are formed. Interestingly, it has been shown that the line tension of the polymerising protein coat can play a key role in controlling the timing and size of clathrin-coated vesicles (Saleem et al., 2015). We thus propose that the stabilising effect of TANGO1 while adsorbing around ERES would serve as a physical mechanism to delay and enlarge the COPII vesicle, commensurate with cargo size. Furthermore, TANGO1 rings could serve as a mould to impose a cylindrical curvature at the base of a growing carrier by coupling to the first layer of the COPII coat (Figure 8A,B), as proposed by Ma and Goldberg (Ma and Goldberg, 2016).\n\nWe expect that the diameter of a TANGO1 ring and associated components, will be maximal, proximal to the plane of the membrane. The more distal parts of the proteins for example the PRD (of TANGO1, cTAGE5 and TANGO1-short) will have two extreme positions:1, lying pointing radially inward like spokes of a wheel and 2, pushed aside to the ring periphery by the growing carrier. It is therefore difficult to make definitive statements about relative locations - based on antibodies that bind to distal parts of the molecule - within the ring. We have also not tested whether cTAGE5, or for that matter TANGO1 short, can assemble into a ring in cells lacking TANGO1. We have not been able to create a form of cTAGE5 and TANGO1-short with a label or an antibody to visualise the domains proximal to the membranes, which makes it difficult to discern their location precisely, even in the presence of endogenous TANGO1. However, within these limitations, based on the involvement of various parts of TANGO1 and its interactors into discrete rings for collagen export, we could now begin to address the placement of various proteins such as TFG, KLHL12 or sedlin (Johnson et al., 2015; McCaughey et al., 2016; Jin et al., 2012; Gorur et al., 2017; Venditti et al., 2012) in collagen export from the ER.\n\nUnder these conditions, there is the possibility that a mega carrier, of the form recently reported by Schekman and colleagues (Gorur et al., 2017), is produced. Regardless of the final form adopted by the cells to transfer collagen from the lumen of the ER to the Golgi, with the data presented herein, we have taken the first steps toward arriving at a quantitative understanding of this hypothesis. We envision that a full description and analysis of such a quantitative physical model of TANGO1 ring assembly and megacarrier formation will help us better understand this fundamental process.\n\n### TANGO1 links cargo folding to export\n\nLittle is understood about how client folding in the ER is coupled to export, how misfolded proteins and ER residents are excluded from an ERES, and what role the client plays in the biogenesis of its own carrier. TANGO1 recruits collagen via HSP47 \u2013 a chaperone that selectively recognises triple helical (export-competent) collagen (Koide et al., 2000; Tasab et al., 2000). Can this interaction of triple helical collagen and TANGO1 help effect ring assembly? Does a ring of TANGO1 (and therefore a carrier) form in response to selection of folded collagen, excluding misfolded collagen? Does folded cargo define the site and size of a transport carrier?\n\nIn toto, our data indicate that TANGO1, by assembling into a ring at ERES generates a semi-stable sub-domain across multiple compartments. The processes that allow this assembly also co-ordinately select, partition, and organise export machinery, and membrane for a cargo-export tubule/carrier, thus defining the minimal machinery for collagen export.\n\n## Materials\u00a0and\u00a0methods\n\n### Cell culture and transfection\n\nRDEB/FB/C7, HEK293T and HeLa cells were grown at 37\u00b0C with 5% CO2 in complete DMEM with 10% FBS unless otherwise stated. Plasmids were transfected in HeLa cells with TransIT-HeLa MONSTER (Mirus Bio LLC) or Lipofectamine 3000 Transfection Reagent (Thermo Fisher Scientific) according to the manufacturer\u2019s protocols. All cells in culture were tested every month to confirm they were clear of contamination by mycoplasma.\n\nC-terminally HA-tagged full-length TANGO1 was cloned into the polylinker of pHRSIN transfer plasmid using BamHI/SalI restriction enzymes. Lentiviral particles were produced by co-transfecting pHRSIN-TANGO1-HA and a packaging vector pool (pCMV 8.91 and pMDG) into HEK293T cells using TransIT-293 (Mirus Bio LLC). 48 hr post transfection, the viral supernatant was harvested, filtered, and directly added to HEK293T cells. Stably expressing HEK293T cells were selected using 500 \u00b5g/ml hygromycin.\n\nC-terminally FLAG-tagged full-length cTAGE5 was cloned into pJLM1 transfer plasmid using NheI/EcoRI restriction enzymes. Lentiviral particles were produced by co-transfecting pJLM1-cTAGE5-FLAG and a packaging vector pool (pPAX2 and pMD2.G) into HEK293T cells with using TransIT-293 (Mirus Bio LLC). 48 hr post transfection the viral supernatant was harvested, filtered, and directly added to TANGO1-HA expressing HEK293T cells. Cells stabling expressing Tango1-HA and cTAGE5-FLAG were selected using 500 \u00b5g/ml Hygromycin and Puromycin 4 \u00b5g/ml.\n\n### Molecular biology\n\nAll molecular cloning was carried out using MAX Efficiency Stbl2 Competent Cells \u2013 (Thermo Fisher Scientific) following manufacturer\u2019s instructions.\n\n### siRNAoligos\n\nsiRNA oligos were purchased from Eurofins Genomics (Ebersberg, Germany). The oligo sequences used were RINT1 5\u2019-GGUUAUAACUGACAGGUAU-3\u2019, NBAS 5\u2019-CUGCUUCAGUAUGGAUUAA ZW10 5\u2019-UGGACGAUGAAGAGAAUUA-3\u2019, TANGO1 5\u2019-GAUAAGGUCUUCCGUGCUU-3\u2019, cTAGE5 5\u2019-UUGAAGACUCCAAAGUACA-3\u2019, SAR1A 5\u2019-GAACAGAUGCAAUCAGUGATT-3\u2019, SAR1B 5\u2019-GCAUAACUUGAAUUCAAUATT-3\u2019. SEC23A siRNA (Cat # L-009582\u201301) was purchased from GE Dharmacon (Colorado, USA).\n\n### Antibodies\n\nThe following antibodies were used collagen VII (rabbit anti\u2013human [Abcam]; mouse anti\u2013human [Sigma-Aldrich]), ERGIC-53 (mouse anti\u2013human; Santa Cruz Biotechnology, Inc., and Enzo Life Sciences), Sec31A (mouse anti\u2013human; BD), TANGO1 (rabbit anti\u2013human; Sigma-Aldrich; rabbit anti-human in-house), HSP47 and calreticulin (goat anti\u2013human; Enzo Life Sciences), HA (mouse; BioLegend), SAR1 (mouse anti\u2013human; Abcam), \u03b2-tubulin (mouse anti-human; SIGMA-Aldrich), \u03b2-actin (mouse anti-human; SIGMA-Aldrich), NBAS (rabbit anti-human SIGMA-Aldrich), RINT1 (rabbit anti-human; SIGMA-Aldrich and goat anti-human (Santa Cruz Biotechnology), ZW10 (rabbit anti-human; Abcam), Sec23 (rabbit anti-human/mouse/rat; Abcam), cTAGE5 (rabbit anti-human Atlas antibodies, mouse anti-human Santa Cruz Biotechnology), TGN46 (sheep polyclonal, Bio-Rad), HA (mouse monoclonal, BioLegend; rat monoclonal BioLegend), FLAG (mouse monoclonal, rabbit, SIGMA-Aldrich; goat, Novus) HSP60 (mouse anti-human SIGMA-Aldrich), c-myc (mouse monoclonal, rabbit, SIGMA-Aldrich). Mounting media used in confocal and STED microscopy were either Vectashield (Vector Laboratories) or ProLong (Thermo Fisher Scientific,\u00a0Waltham,\u00a0Massachusetts).\n\n### Immunoprecipitation and western blotting\n\nCells extracted with lysis buffer consisting of 50 mM Tris-HCl (pH 7.4), 150 mM NaCl, 1 mM EDTA, 2% CHAPS, and protease inhibitors were centrifuged at 20,000\u00a0\u00d7\u00a0g for 30 min at 4\u00b0C. Cell lysates were immunoprecipitated with FLAG M2 (SIGMA-Aldrich) or HA (Thermo Scientific) antibodies. Beads were washed three times with Tris-buffered saline (TBS)/0.5% CHAPS and processed for sample preparation.\n\nFor sequential immunoprecipitations, a first immunoprecipitation with FLAG would bring all proteins that interact with cTAGE5; a subsequent immunoprecipitation with HA would only yield proteins that were bound to both cTAGE5 and TANGO1-HA.\n\n### Immunofluorescence microscopy\n\nCells grown on coverslips were fixed with cold methanol for 8 min at \u221220\u00b0C or 4% formaldehyde (Ted Pella, Inc.) for 15 min at room temperature. Cells fixed with formaldehyde were permeabilised with 0.1% Triton in PBS and then incubated with blocking reagent (Roche) or 0.1% horse serum for 30 min at room temperature. Primary antibodies were diluted in blocking reagent or 0.1% horse serum and incubated overnight at 4\u00b0C or at 37\u00b0C for 1 hr. Secondary antibodies conjugated with Alexa Fluor 594, 488, or 647 were diluted in blocking reagent and incubated for 1 hr at room temperature.\n\nConfocal images were taken with a TCS SP5 (63\u00d7, 1.4\u20130.6 NA, oil, HCX PL APO), TCS SP8 (63\u00d7, 1.4 NA, oil, HC PL APO CS2), all from Leica Microsystems, using Leica acquisition software. Lasers and spectral detection bands were chosen for the optimal imaging of Alexa Fluor 488, 594, and 647 signals. Two-channel colocalisation analysis was performed using ImageJ (National Institutes of Health), and the Manders\u2019 correlation coefficient was calculated using the plugins JaCop or Coloc 2.\n\n### STED microscopy\n\nSTED images were taken on a TCS SP8 STED 3\u00a0\u00d7\u00a0microscope (Leica Microsystems) on a DMI8 stand using a 100\u00a0\u00d7\u00a01.4 NA oil HCS2 PL APO objective and a pulsed supercontinuum light source (white light laser). Images were acquired and deconvolved exactly as described before (Raote et al., 2017).\n\nThree-colour STED: Due to incompatible species specificities of primary antibodies available (for RINT1, TANGO1 and ERGIC-53), we were forced to use sub-optimal secondary antibodies. We used Alexa 488, Alexa 594 and Alexa 647. This required that we set the depletion laser (775 nm) at only 3\u20138% intensity for the Alexa 647 channel to prevent rapid bleaching.\n\n### Morphology quantification of TANGO1 rings\n\nMultichannel 3D stacks were acquired with a z-step size of 100 nm and subsequently deconvolved using Huygens deconvolution software (Scientific Volume Imaging) for STED modes using shift correction to account for drift during stack acquisition. Sum-Intensity Projections were then generated from a subset of the deconvolved stack slices where the rings were present. Projected images showed a large fraction of the GFP signal as random dots or big aggregates in which no particular structural organisation could be distinguished. Also, a significant amount of well-defined non-random structures, i.e. both full and incomplete (arc-shaped or dotted) rings, as well as chain-like assemblies of rings.\n\nTo ensure a systematic and unbiased analysis, these structures are first segmented via a trainable pixel level classifier, and subsequently labelled either as rings, incomplete rings or dots, or ring aggregates, on object level. Both pixel and object classification used a machine learning based open-source software, ilastik (Sommer et al., 2011). Afterwards, we calculated different parameters for each object to compare them quantitatively in shape and size. Specifically, we measured the diameters of the ring in terms of major and minor axes of its fitted ellipse and the maximum and minimum Feret\u2019s diameter. Statistical testing was performed using Student\u2019s t test (continuous data, two groups). One asterisk indicates Student\u2019s t test value p<0.06; three asterisks p<0.006; ns indicates not significant.\n\nTo quantify the frequency of rings after depletion of specific gene products, deconvolved STED images of each condition were manually scored for rings/clusters of TANGO1. A ring is defined as an independent structure with an internal hole. A cluster however, is at least four such conjoint rings. Statistical testing was performed using Student\u2019s t test (continuous data, two groups). One asterisk indicates Student\u2019s t test value p<0.02; three asterisks p<0.002; ns indicates not significant.\n\n### Collagen secretion assay in RDEB/FB/C7 fibroblasts\n\nThe secretion assay was carried out exactly as described earlier (Nogueira et al., 2014; Santos et al., 2015). Briefly, RDEB/FB/C7 fibroblasts were transfected in suspension on two consecutive days with siRNA (either a pool of control, non-targeting RNA or RNA targeting a specific gene). 48 hr later, cells were washed thoroughly and incubated for 20 hr in OptiMEM supplemented with 1 mM ascorbate. Cell lysates and media were harvested and processed for Western blotting of collagen VII and tubulin/actin as loading/lysis controls.\n",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "c0dae29e-6d08-47f0-8b24-a1d2b28a7064",
+      "submission_id": "a9e0bffe-e82d-478a-a255-905b82ae5714",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Suzanne R Pfeffer, Stanford University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.32723.024](https://doi.org/10.7554/eLife.32723.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Building a machine for collagen export from the endoplasmic reticulum\" for consideration by eLife. Your article has been favorably evaluated by Ivan Dikic (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nOverall, the reviewers agree that the manuscript will require a careful and thorough revision that omits the model unless it can be tested experimentally. In addition, they all felt that each of the phenotypes would benefit from much better documentation, clarification and quantitation. Although we normally delete the individual reviews, we include them here to guide your revision efforts. We hope you will find these comments constructive in preparing a revised manuscript.\n\nReviewer #1:\n\nTANGO1 interacts with CTAGE5 and COPII components Sec23/Sec24 and recruits ERGIC-53 containing membranes to generate a mega-transport carrier for export of collagens from the ER. Malhotra and colleagues recently showed show TANGO1 assembles into a ring that encircles COPII components. They have shown that growth of transport carriers for bulky cargoes requires addition of membranes; TANGO1 remains at the neck of the newly forming transport carrier, which grows in size by addition of ERGIC-53-containing membranes to generate a transport intermediate for collagen export.\n\nIn this paper, the authors explore the domain requirements for RING formation and explore a computational model for how these structures grow and form. First they find that removal of TANGO1's proline rich region (PRD) changes the structures formed in cells to smaller rings (is it clear they are not small patches?) or interesting long linear assemblies (Figure 2N not K). This suggests that interaction with Sec23 redirects a self-assembly process into a productive carrier formation event. This leads the authors to propose a model whereby free ends have more \"energy\" than occupied subunits, creating \"line energy\"; they propose that TANGO1 proteins act as lineactants upon binding Sec23 (they showed that Sec23 availability alters the polymerization of TANGO proteins.) In compelling STED images, they add new data showing a role for the NRZ tether in collagen secretion, linked to TANGO.\n\nOverall, there is important and interesting data here but the story is not told in an adequately documented and coherent manner. This reviewer feels that the roles of domains should be better documented for each of the constructs (more images, better quantitation) and the theoretical lineactant model presented elsewhere as it does not add to the present story and should be based on actual data for filament stiffness etc. Better statistics are needed to discern the probability of colocalization of the tether with ERGIC and TANGO1 (and to substantiate all the structural forms). Also, care should be taken in analyzing Sec23 knockdowns as cells (and ER) will not be normal. Finally, the paper would be greatly enhanced by EM analysis of purified protein constructs but this is likely not yet possible.\n\nThe authors propose a model whereby \"filament resistance to bending leads to ERES wetting or dewetting by TANGO1 filaments.\" This is one of many possibilities. Models are valuable when they can be tested directly, and the model seems far ahead of the available data presented. At this point, it does not add to the story, and should be presented with testable predictions to support it. Thus, this reviewer feels strongly that the model should be presented elsewhere until tests can be included. Also, the authors propose a model for ring fusion with no data that they actually fuse.\n\nMany references to figure legends are not correct and legends should be made clearer; please include page numbers.\n\nFigure 8 should include what happens after long collagen exceeds length of TANGO.\n\nNumber of cells counted; number of particles scored are both missing throughout.\n\nReviewer #2:\n\nThis paper continues the investigation by the Malhotra lab into the ER export of bulky cargoes such as collagen, and the role of TANGO1 in this process. The goal is to understand how TANGO1 forms a ring of a specific size around COPII at ER exit sites (ERES). A new role for the NRZ (NBAS/RINT1/ZW10) tether in generating TANGO1 rings and linking TANGO1 to ERGIC membranes is described. These data are integrated into a model for the \"collagen export machine\" at the ER.\n\nThe domain structure of TANGO1, and the functions of the individual domains, are now fairly well understood. This information is exploited here by deleting individual domains to test how TANGO1 assembles into rings. Deletion of the COPII-binding proline-rich domain generates fused or linear assemblies of rings. This observation is interpreted in terms of a rather elaborate theoretical model, which assumes that TANGO1 and its partners can form linear filaments that normally interact with COPII. The conclusion is that TANGO1 acts as a \"lineactant\" at ERES. I was unfamiliar with this term, but it implies that TANGO1 acts to reduce line tension at the edges of ERES.\n\nThis analysis is intriguing and may well have validity, but it would benefit from direct evidence that TANGO1 and its partners have the intrinsic ability to form filaments. While the experiments described here are useful for elucidating the roles of TANGO1 domains and partner proteins in ring formation, they do not directly show that filaments are present. It would also be nice if the model made a testable and nontrivial prediction of a phenomenon that had not already been observed. Despite these reservations, the modeling seems to have been useful for guiding the structure-function analysis.\n\nOther points from the experimental data:\n\n1) I'm not clear on the significance of Figure 3, which shows that deleting the luminal SH3 domain disrupts TANGO1 rings. Was that result expected? If so, why? The explanation in the text about elastic properties of the TANGO1 filament lacks a clear justification.\n\n2) In Figure 4A, cTAGE5 associates with TANGO1 rings, but the two signals do not overlap. If these proteins co-polymerize in a filament, shouldn't they have very similar distributions?\n\n3) Figure 5 is confusing. I can't see any difference between TRUNC1 and TRUNC2 in Figure 5E. In Figure 5F, aren't TRUNC1 and TRUNC2 reversed? The text says that TRUNC2 showed no recruitment, but it gives the higher Manders' coefficient. Also, the text seems to have errors in referring to Figure 5F and a nonexistent Figure 5G.\n\n4) For Figure 7, are ERES still present when the NRZ tether is depleted? In other words, is the effect on TANGO1 rings direct or indirect? The interactions described here between TANGO1 and the NRZ tether seem to be real, but the mechanistic interpretation remains to be clarified.\n\nMy overall impression is that this manuscript is ambitious and interesting. It provides a substantial amount of new data about TANGO1 domain functions and protein-protein interactions at ERES. The ideas are stimulating, but they go further beyond the data than may be prudent.\n\nReviewer #3:\n\nThe authors continue their quest to understand how large cargoes are accommodated in COPII vesicles. In a recent JCB paper, they reported that TANGO1, known to be important for collagen export from the ER, assembles into rings around COPII coats at ER exit sites. Here they use high-resolution imaging and deletion mutagenesis to further characterize lateral interactions that stabilize the rings, including a potential role for the not-too-well-characterized NRZ tethering complex. They also use modeling to generate a theoretical phase diagram for ring formation and fusion (my first encounter with the word \"lineactant\", which according to a bit of Googling is rather obscure). I'm on the fence about whether this work represents a sufficient advance for eLife.\n\nI think the most novel, and potentially most interesting, finding is that the NRZ tether complex is directly involved in TANGO ring formation. Knocking down RINT-1, however, strikes me as a blunt instrument for testing this hypothesis \u2013 how can we know that the effect on ring formation (which in any case is not quantified) is direct, given the central role of this complex in trafficking within the early secretory pathway? I wonder if the authors also have their doubts, since a direct role for the NRZ complex in ring formation is not depicted in Figure 8.\n\nI'm not, unfortunately, qualified to critique the modeling component of this manuscript. Nonetheless, I am not convinced of the wisdom of combining in vivo experiments like the ones presented here \u2013 rather drastic manipulations in a complex milieu \u2013 with abstract mathematical modeling, absent some intermediate in vitro measurements on model membranes using defined protein components. The authors tout the success of the model in predicting that reducing the interaction energy between TANGO1 filaments and COPII subunits enhances ring fusion. Yet it seems to me that there is a 50:50 chance that any such prediction would prove correct by random chance \u2013 after all, ring fusion is bound to be either more efficient or less efficient. Quantitative agreement over a range of experimental conditions would support the modeling work much more compellingly. Without it, I wonder if the modeling belongs.\n\nNone of the explanations offered for the smaller rings observed in vivo for TANGO1deltaPRD strike me as likely. For example, why (if the domains are independent, which is the rationale behind the whole approach) would deleting PRD affect the bending rigidity or preferred curvature of the filament?\n\nMaybe I missed it, but I didn't understand what the authors take to be the mechanistic implications of the finding that \"the minimal TEER is exactly the same forty amino acids we identified in the previous section, as those required for the self-association of TANGO1. This had clear implications for the coupling of the tethering function of TANGO1 with its structure, homo-oligomerisation and thereafter, assembly into rings.\" What are the implications?\n\nI had a lot of trouble with the figures, ranging from figures that weren't there (Figure 3\u2014figure supplement 2) to figures that were bizarrely laid out (Figure 2 is really quite extraordinary, with font sizes that must differ by an order of magnitude and panel labels in every imaginable place) to Figure 4\u2014figure supplement 2 which, in my view, represents modeling malpractice.\n\nFinally, what could be the purpose of including line numbers while omitting page numbers?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Building a machine for collagen export from the endoplasmic reticulum\" for consideration by eLife. Your article has been favorably evaluated by Ivan Dikic (Senior Editor) and three reviewers, one of whom, Suzanne Pfeffer, is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nOne of the reviewers wrote, \"The mechanistic picture still seems to be clearer to the authors than to me as a reader, but this work is a significant step in the right direction.\" Given this concern, the following edits are offered to improve the story so it will be best appreciated by eLife readers.\n\nTANGO1 interacts with CTAGE5 and COPII components and recruits ERGIC-53 membranes to generate a mega-transport carrier for export of collagens from the ER. Malhotra recently showed in JCB that TANGO1 assembles into a ring at the ER that encircles COPII components. Here they go on to show that ring formation requires Sec23, self-interaction and interaction with cTAGE5, and the presence of the RINT tethering complex.\n\nIn general the work will be of broad interest. However, the manuscript could benefit from careful rewriting in a few places, as the reviewers had a difficult time parsing all the abbreviations, mutations, and relationship to multiple isoforms of TANGO proteins. The following presentation improvements will enhance the ability of a reader to understand the story.\n\n1) Perhaps the most important new and unexpected finding shown here is the recruitment of the RINT complex to the TANGO rings. The RINT forms a clear focus of staining on one side of the ring, yet seems essential for RING assembly. What fraction of TANGO rings showed RINT association? How many were counted? The authors should also present categorizations of where the RINT labeled the rings \u2013 (inside? at edge? outside?) The authors include hand-waving explanations for why a full RINT ring may not have been seen but should really think about how a focus of RINT could nevertheless stabilize a RING structure and discuss this thoughtfully.\n\n2) Figure 1. It would help the reader to indicate that the cytoplasmically oriented PRD is at the C-terminus here (indicate -COOH and include parenthesis PRD). So many words detract from the clarity. Could the authors use arrows from interacting proteins to the indicated domains? If function is unknown, it is not necessary to state this in the diagram. References can go in the legend. Entire figure could be 1/4 the size. The linear version at the bottom should be removed; Figure 2A should be shown at the top of Figure 1 as TEER domain is not mentioned in diagram.\n\n3) It was very hard for this reader to be able to compare wild type and mutant form rings because they are all shown at slightly different magnifications. Figure 2B-E, H and I, should be presented at the same mag. Same for Figure 3C, D and G; Figure 4C-E; In any frame in which the mag bar is 20\u00b5m, please outline the cell. In Figure 2, what is the difference between C, D and E? In general, if the figure is very crowded, please consider multiple figures to make the beautiful images be best appreciated by eLife readers.\n\n4) Does cTAGE5 make rings in cells lacking TANGO1? Please summarize what the data reveal about roles of TANGO versus TANGO short (please define!) versus cTAGE5.\n\n5) Linear filaments in a planar membrane could generate rings, but association of the rings with one another must require multivalent interactions that go beyond head-to-tail filament formation. This point should be mentioned.\n\n6) The authors propose that \"TANGO1/cTAGE5 interactions with COPII [\u2026] act as an inward attractant, holding the filament in a ring-like configuration.\" But then why would the \u03b4-PRD mutant still form rings? Perhaps they mean to state that the COPII interaction constrains the size and placement of the rings.\n\n7) The minimal TEER is the same 40 amino acids that are required for TANGO1 self-association. What does this mean? A crucial point that should be addressed is whether these two interactions are mutually exclusive.\n\n8) Subsection \u201cCompartment tethering in a TANGO1 ring assembly pathway\u201d, tenth paragraph: the text refers to quantitation in Figure 6E, but should it be Figure 7C?\n\n9) \"In all cases, exit sites (as marked by TANGO1 and SEC31) are still recruited to intracellular collagen accumulations (Figure 7\u2014figure supplement 1).\" I don't see that result in Figure 7\u2014figure supplement 1, and actually, I'm not sure what that supplemental figure is intended to show.\n\n10) Abstract: \"for\"? its self-association?\n\nSubsection \u201cBinding of TANGO1 to COPII controls TANGO1 ring formation\u201d, second paragraph: TANGO1-short is not defined anywhere.\n\n\"CTAGE is on the periphery of rings.\" How many rings were counted to give confidence to this conclusion? How was this quantified?\n\n\"linear attraction along the length of the filament\". By filament do they mean along the length of TANGO1? The authors should add a sentence stating that the interactions are consistent with. They have not defined the actual structural relationships here.\n\n\"has the potential to segregate cargo\". This has not yet been shown.\n",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d4c555d0-584f-4234-a2ae-bdaac75c3c7e",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C1",
+      "claim": "Collagen export from the endoplasmic reticulum (ER) requires TANGO1, COPII coats, and retrograde fusion of ERGIC membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Collagen export from the endoplasmic reticulum (ER) requires TANGO1, COPII coats, and retrograde fusion of ERGIC membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known requirement for collagen export, supported by prior research.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "681eb150-9746-4d50-8cea-327c87004fca",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C2",
+      "claim": "TANGO1 forms a ring that corrals COPII coats.",
+      "claim_type": "EXPLICIT",
+      "source": "TANGO1 is known to form a ring that corrals COPII coats",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information in the abstract, referencing prior work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "68835f23-f514-4f66-acc1-c53c77f5aa77",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C3",
+      "claim": "A TANGO1 ring is organized by its radial interaction with COPII, and lateral interactions with cTAGE5, TANGO1-short or itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data reveal that a TANGO1 ring is organized by its radial interaction with COPII, and lateral interactions with cTAGE5, TANGO1-short or itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract, supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "a6b45a81-47b6-4756-a64d-d001d5934501",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C4",
+      "claim": "TANGO1 recruits ERGIC membranes for collagen export via the NRZ (NBAS/RINT1/ZW10) tether complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Of particular interest is the finding that TANGO1 recruits ERGIC membranes for collagen export via the NRZ (NBAS/RINT1/ZW10) tether complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract, supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "30a914eb-b65d-43ff-adc0-193da6fbcdcd",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C5",
+      "claim": "TANGO1 couples retrograde membrane flow to anterograde cargo transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, TANGO1 couples retrograde membrane flow to anterograde cargo transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the finding about NRZ complex recruitment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "78edca65-09cf-4a6d-923e-757033ea80e3",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C6",
+      "claim": "Without the NRZ complex, the TANGO1 ring does not assemble.",
+      "claim_type": "EXPLICIT",
+      "source": "Without the NRZ complex, the TANGO1 ring does not assemble, suggesting its role in nucleating or stabilising this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data showing disrupted ring formation upon NRZ depletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "444f5ae0-e37c-4418-9127-6db9f79ba9f3",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C7",
+      "claim": "The NRZ complex plays a role in nucleating or stabilising TANGO1 ring assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Without the NRZ complex, the TANGO1 ring does not assemble, suggesting its role in nucleating or stabilising this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental observation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "60dd292a-0487-4f48-929b-b06daa4546a2",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C8",
+      "claim": "Coordinated capture of COPII coats, cTAGE5, TANGO1-short, and tethers by TANGO1 assembles a collagen export machine at the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, coordinated capture of COPII coats, cTAGE5, TANGO1-short, and tethers by TANGO1 assembles a collagen export machine at the ER.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "88bf6d59-3a41-4c81-9357-97228143f81a",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C9",
+      "claim": "Collagens represent nearly 25% of the dry weight of the mammalian body.",
+      "claim_type": "EXPLICIT",
+      "source": "Collagens, the most abundant secretory cargo in mammals - representing nearly 25% of the dry weight of the mammalian body, are some of the most challenging of all secretory cargoes (Kadler et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation to Kadler et al., 2007.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "3371f528-e924-4c89-9c2b-b96d5e29b319",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C10",
+      "claim": "Collagens in the ER fold and trimerise into rigid, rod-like elements of up to 400 nm in length.",
+      "claim_type": "EXPLICIT",
+      "source": "First, in a complex multi-step process, collagens in the ER fold and trimerise into rigid, rod-like elements (Ishikawa et al., 2015; Kadler, 2017) of up to 400 nm in length (Burgeson et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to multiple sources.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "2f1c2902-a17a-4e8c-9920-2697fe0b3272",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C11",
+      "claim": "Assembled collagens are too large to fit into generic COPII-coated vesicles that are usually less than 90 nm in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, assembled collagens are too large to fit into generic COPII-coated vesicles that are usually less than 90 nm in diameter (Malhotra and Erlmann, 2015; Miller and Schekman, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "8acfdc31-5326-4f73-9422-1b3ecd567544",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C12",
+      "claim": "TANGO1 is an ER exit site (ERES)-localized, transmembrane protein required for export of collagen.",
+      "claim_type": "EXPLICIT",
+      "source": "TANGO1 is an ER exit site (ERES)-localized, transmembrane protein required for export of collagen and other bulky protein components of the extracellular matrix such as Dumpy (Saito et al., 2009; R\u00edos-Barrera et al., 2017; Maiers et al., 2017; Tomoishi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "099ae588-23b8-4c75-8975-ecb593ca140e",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C13",
+      "claim": "TANGO1 is required for export of bulky protein components of the extracellular matrix such as Dumpy.",
+      "claim_type": "EXPLICIT",
+      "source": "TANGO1 is an ER exit site (ERES)-localized, transmembrane protein required for export of collagen and other bulky protein components of the extracellular matrix such as Dumpy (Saito et al., 2009; R\u00edos-Barrera et al., 2017; Maiers et al., 2017; Tomoishi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "34007678-56c5-49c1-b587-562ac7f2798d",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C14",
+      "claim": "TANGO1 is a type one single-pass transmembrane protein of 1907 amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "TANGO1 is a type one single-pass transmembrane protein of 1907 amino acids, localised to ER exit sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of TANGO1 structure stated in the figure legend.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "92fd962f-4ae0-4f6d-be6a-daac4c9f42a2",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C15",
+      "claim": "TANGO1 has an N-terminal lumenal SH3-like domain that interacts with collagen via the chaperone, HSP47.",
+      "claim_type": "EXPLICIT",
+      "source": "TANGO1 has an N-terminal lumenal SH3-like domain that interacts with collagen (Saito et al., 2009) via the chaperone, HSP47 (Ishikawa et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "5e2cbfef-b55a-4e99-b80d-b42eee2f420a",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C16",
+      "claim": "TANGO1 CC1 is used by TANGO1 to recruit ERGIC membranes for producing a collagen carrier.",
+      "claim_type": "EXPLICIT",
+      "source": "CC1 is used by TANGO1 to recruit ERGIC membranes for producing a collagen carrier (Santos et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "6f9c8011-bcd7-40eb-9b6d-1becb791ffc8",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C17",
+      "claim": "TANGO1 CC2 binds to a similar coiled-coil domain in cTAGE5.",
+      "claim_type": "EXPLICIT",
+      "source": "CC2 binds to a similar coiled-coil domain in cTAGE5 (18).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "91634d1a-18f9-4ddb-aa77-303076f96b6b",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C18",
+      "claim": "The TANGO1 proline-rich domain (PRD) binds ER exit site machinery Sec23 and Sec16.",
+      "claim_type": "EXPLICIT",
+      "source": "The proline-rich domain (PRD) binds ER exit site machinery Sec23 (Saito et al., 2009; Ma and Goldberg, 2016) and Sec16 (Maeda et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "93ca1b09-79dd-42e2-bcb8-1deaf1f206a7",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C19",
+      "claim": "Alternative splicing of TANGO1 results in a short isoform, TANGO1-short, lacking the lumenal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternative splicing of TANGO1 results in a short isoform, TANGO1-short (Wilson et al., 2011), lacking the lumenal domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "1ea69bd0-9e1f-4c18-846e-7d37b1812c8a",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C20",
+      "claim": "cTAGE5 CC1 recruits Sec12.",
+      "claim_type": "EXPLICIT",
+      "source": "Via its CC1 it recruits Sec12 (Saito et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "c9104a6e-0eab-461b-b9eb-b0ca7e8a2b0a",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C21",
+      "claim": "cTAGE5 and TANGO1/TANGO1-short interact through their respective CC2 domains.",
+      "claim_type": "EXPLICIT",
+      "source": "cTAGE5 and TANGO1/TANGO1-short interact through their respective CC2 domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the figure legend.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "32fa0ebf-5f45-4820-868f-6b567acdc03f",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C22",
+      "claim": "The cTAGE5 CC2 interacts with the retrograde v-SNARE Sec22.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the cTAGE5 CC2 also interacts with the retrograde v-SNARE Sec22 (Fan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "f516136b-292d-4bf3-823e-022794f65403",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C23",
+      "claim": "The cTAGE5 PRD interacts with Sec23.",
+      "claim_type": "EXPLICIT",
+      "source": "Like the TANGO1/TANGO1-short PRDs, the cTAGE5 PRD also interacts with Sec23 (Ma and Goldberg, 2016; Saito et al., 2011; Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "aaf18dfe-47af-4feb-bcc9-8b054e2fb49d",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C24",
+      "claim": "Full length TANGO1 forms distinct rings of somewhat uniform shape and size.",
+      "claim_type": "EXPLICIT",
+      "source": "Full length TANGO1 formed distinct rings of somewhat uniform shape and size (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from STED microscopy data presented in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "44d9b520-eef2-43f3-aa39-98a2b5619d67",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C25",
+      "claim": "TANGO1\u0394PRD assembles into rings that are smaller than full-length TANGO1 rings.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, TANGO1\u0394PRD also assembled into rings, but with two clear differences. First, rings were smaller (Figure 2B, Figure 2\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from STED microscopy data and quantification presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "e4104041-ddbd-4352-b187-e6f6214b020d",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C26",
+      "claim": "TANGO1\u0394PRD rings appear fused with each other to form either a planar tessellation or long linear assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "and second, some rings appeared fused with each other to form either a planar tessellation (Figure 2C, Figure 2\u2014figure supplement 1G) or long linear assemblies (Figure 2D, Figure 2\u2014figure supplement 1B\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from STED microscopy data presented in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "1741c945-16a6-4867-a0a4-fbf984114b54",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C27",
+      "claim": "Rings formed by TANGO1 and TANGO1\u0394PRD have a similar shape as measured by aspect ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "By this measure, rings formed by TANGO1 and TANGO1\u0394PRD had a similar shape (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative analysis of microscopy data presented in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "9638ea93-0794-4b72-89a6-0e0802e93034",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C28",
+      "claim": "Depletion of Sec23A reduces collagen export from the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, collagen export from the ER was reduced in Sec23A-depleted cells (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "e43d1684-9ea6-4650-9611-13989c9409c2",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C29",
+      "claim": "Depletion of Sec23A causes TANGO1 to form multiple seemingly fused rings assembled in planar arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "While TANGO1 in control cells was often visualised in rings (Figure 2G), depletion of Sec23A appeared to phenocopy our results with TANGO1\u0394PRD, showing multiple seemingly fused rings of TANGO1 assembled in planar arrays (Figure 2H, Figure 2\u2014figure supplement 4), quantified in Figure 2I.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from STED microscopy comparing control and Sec23A-depleted cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "a6426d4a-5eaf-4429-8947-e47d71093b29",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C30",
+      "claim": "cTAGE5 localises along the rings delineated by TANGO1.",
+      "claim_type": "EXPLICIT",
+      "source": "We visualised TANGO1 and cTAGE5 in RDEB/FB/C7 cells by STED microscopy. Due to the low quality of commercially available anti-cTAGE5 antibodies for immunofluorescence, we were unable to visualise the localisation of cTAGE5 as clearly as TANGO1, nonetheless cTAGE5 clearly localised along the rings delineated by TANGO1 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from STED microscopy data presented in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "81cb498b-12cf-40ab-8cf4-20acfa188f74",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C31",
+      "claim": "TANGO1\u0394CC2 assembles into misshapen structures.",
+      "claim_type": "EXPLICIT",
+      "source": "STED microscopy revealed that, in contrast to full length TANGO1 (Figure 3C), TANGO1\u0394CC2 assembled into misshapen structures (Figure 3D and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from STED microscopy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "3a72bbf0-d87d-4554-b994-74699d5e08e0",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C32",
+      "claim": "Rings formed by TANGO1\u0394CC2 are more variable in size than those formed by full length TANGO1.",
+      "claim_type": "EXPLICIT",
+      "source": "Rings formed by TANGO1\u0394CC2 were more variable in size (Figure 3E, Table 1) and shape (Figure 3F) than those formed by full length TANGO1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative analysis of microscopy data presented in the figure and table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "b14874a2-6c03-4be9-8fa6-1c3c54dfadae",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C33",
+      "claim": "Depletion of cTAGE5 blocks collagen secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, in RDEB/FB/C7 fibroblasts depleted of cTAGE5 (Figure 3\u2014figure supplement 2A), collagen secretion was blocked (Figure 3\u2014figure supplement 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from collagen secretion assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "de6584e2-463e-4c26-88b9-29b5db7544bf",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C34",
+      "claim": "In cells depleted of cTAGE5, TANGO1 rings are misassembled and form unusual shapes.",
+      "claim_type": "EXPLICIT",
+      "source": "TANGO1 structures phenocopied TANGO1\u0394CC2 structures in 2H5 cells: rings of TANGO1 were misassembled (Figure 3G) and formed unusual shapes, without considerably altering the number of rings observed (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from STED microscopy of cTAGE5-depleted cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "76bb6026-549c-48b7-be15-56b029139b88",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C35",
+      "claim": "TANGO1-FLAG co-immunoprecipitates with TANGO1 and TANGO1\u0394PRD, but not with TANGO1\u0394CC2 or TANGO1\u0394CC1.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed (Figure 4A) that TANGO1-FLAG was immunoprecipitated by TANGO1 and TANGO1\u0394PRD, but not by TANGO1\u0394CC2 (Figure 4A) or TANGO1\u0394CC1 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from co-immunoprecipitation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "a196a090-b08e-41dd-af4b-247cf02ff715",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C36",
+      "claim": "TANGO1\u03941255\u20131295 does not immunoprecipitate TANGO1-FLAG.",
+      "claim_type": "EXPLICIT",
+      "source": "Only TANGO1\u03941255\u20131295 did not immunoprecipitate TANGO1-FLAG (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from co-immunoprecipitation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "cc4056bc-e9de-491c-a96a-964fd8a6ca17",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C37",
+      "claim": "TANGO1\u0394CC1 and TANGO1\u03941255\u20131295 cannot form rings.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our predictions, TANGO1\u0394CC1 or TANGO1\u03941255\u20131295 could not form rings; of the 16 and 15 cells examined respectively, there were few discernible polymeric assemblies of TANGO1 (Figure 4C,D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from STED microscopy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "23d82740-daae-47aa-8ae0-626a6d1829b0",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C38",
+      "claim": "TANGO1\u03941296\u20131336 forms distinct, readily detectable, independent rings similar to full length TANGO1.",
+      "claim_type": "EXPLICIT",
+      "source": "while TANGO1\u03941296\u20131336 behaved as full length TANGO1, forming distinct, readily detectable, independent rings (Figure 4E) of similar size (Figure 4\u2014figure supplement 1A) and shape (Figure 4\u2014figure supplement 1B) as TANGO1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from STED microscopy and quantitative analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "0dcff4c4-a99f-43e5-8111-493a86745839",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C39",
+      "claim": "TANGO1-TANGO1 interactions mediated by amino acids 1255\u20131295 are required to maintain ring integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that TANGO1-TANGO1 interactions (Figure 4F), mediated by amino acids 1255\u20131295, are required to maintain ring integrity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on TANGO1 self-association and ring formation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "b4794232-d22a-41b7-b4f6-e29612a5bda4",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C40",
+      "claim": "Mitochondria expressing mit-\u03941255\u20131295 show no recruitment of ERGIC-53-containing membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, mitochondria expressing mit-\u03941255\u20131295 showed no recruitment of ERGIC-53-containing membranes (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from the mitochondrial targeting assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "561ad8de-4123-4175-877f-5fb4f714cc0c",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C41",
+      "claim": "mit-\u03941296\u20131336 functions as the TEER domain and recruits ERGIC membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, mit-\u03941296\u20131336 still functioned as the TEER domain and recruited ERGIC membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from the mitochondrial targeting assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "2d62fb6a-9207-4495-b59f-a86fef3cf90e",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C42",
+      "claim": "The minimal TEER is the same forty amino acids required for the self-association of TANGO1.",
+      "claim_type": "EXPLICIT",
+      "source": "This tells us that the minimal TEER is exactly the same forty amino acids we identified in the previous section, as those required for the self-association of TANGO1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing the TEER domain mapping with the self-association domain mapping.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "3bdad0ed-3267-4a83-9daf-f420e89750be",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C43",
+      "claim": "The tether protein RINT1 localises to one or two puncta at rings of TANGO1, occasionally adjacent to ERGIC-53-containing membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "As in previous sections, we imaged TANGO1 in RDEB/FB/C7 cells, with Sec31 and RINT1 by confocal microscopy (Figure 6\u2014figure supplement 1) and, by STED microscopy observed the tether protein RINT1 localised to one or two puncta at rings of TANGO1, occasionally adjacent to ERGIC-53-containing membranes (Figure 6A and Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from STED microscopy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "c4d2249f-161b-40f4-ade9-b40e446c2bb7",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C44",
+      "claim": "Full length TANGO1 and TANGO1\u03941296\u20131336 immunoprecipitate all three proteins that form the NRZ tether (NBAS, RINT1, ZW10).",
+      "claim_type": "EXPLICIT",
+      "source": "We saw that full length TANGO1 and TANGO1\u03941296\u20131336 immunoprecipitated all three of the proteins that form the tether (NBAS, RINT1, ZW10) (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from co-immunoprecipitation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "1040017f-170d-4b09-8c6e-7162ed78083d",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C45",
+      "claim": "The interaction between TANGO1 and NRZ tether proteins is completely abrogated when using TANGO1\u03941255\u20131295.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction was completely abrogated when we used TANGO1\u03941255\u20131295 (lacking the minimal TEER domain).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result from co-immunoprecipitation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "abf77192-7083-4c6b-8041-f949f35e5bae",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C46",
+      "claim": "Depleting TANGO1, NBAS or RINT1 from RDEB/FB/C7 fibroblasts inhibits collagen VII secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Depleting TANGO1, NBAS or RINT1 from RDEB/FB/C7 fibroblasts inhibited collagen VII secretion (Figure 6C\u2013E) and arrested collagen in the ER (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from collagen secretion assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "48d3b461-ebea-4a9b-b729-39ffb22888f3",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C47",
+      "claim": "In cells depleted of RINT1, NBAS or TANGO1, ERGIC membrane recruitment to collagen accumulations is significantly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells depleted of RINT1, NBAS or TANGO1 (Figure 6F,H), we quantified ERGIC recruitment to accumulations of collagen in the ER. In all cases, ERGIC membrane recruitment was significantly reduced (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from quantitative microscopy analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "eedeccf2-e590-44d3-8bce-7b82b1c57768",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C48",
+      "claim": "TANGO1 recruits ERGIC membranes via the retrograde NRZ MTC to the ERES for collagen export.",
+      "claim_type": "EXPLICIT",
+      "source": "These data showed a novel function of TANGO1, to recruit ERGIC membranes via the retrograde NRZ MTC to the ERES for collagen export.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on NRZ tether interaction and ERGIC recruitment.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "05f0ed0e-8dee-4c40-ab70-17bcb62cbcb5",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C49",
+      "claim": "In RDEB/FB/C7 depleted of RINT1, TANGO1 rings are completely disrupted.",
+      "claim_type": "EXPLICIT",
+      "source": "In RDEB/FB/C7 depleted of RINT1, TANGO1 rings were completely disrupted (siCTRL vs. siRINT1 Figure 7A vs. B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from STED microscopy of RINT1-depleted cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "29e123aa-ecea-4f0c-878a-4e12d1e67686",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C50",
+      "claim": "Depletion of NBAS or ZW10 results in TANGO1 rings being observed far less frequently.",
+      "claim_type": "EXPLICIT",
+      "source": "We individually depleted each of the other two proteins in the MTC (NBAS or ZW10) and checked for the ability of TANGO1 to assemble into rings in RDEB/FB/C7 fibroblasts. As seen after depleting cells of RINT1, rings were observed far less frequently (quantified in Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from STED microscopy and quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "f199abad-fb88-4887-ac81-0284b0fe9e3f",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C51",
+      "claim": "The NRZ tether has no effect on the association of TANGO1 and TANGO1-short in a stable complex.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the NRZ tether had no effect on the association of TANGO1 and TANGO1-short in a stable complex (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from sequential co-immunoprecipitation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "c338d7de-cceb-414a-b28e-5c4660a72c39",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C52",
+      "claim": "The NRZ tether is required for TANGO1 to assemble into a ring.",
+      "claim_type": "EXPLICIT",
+      "source": "These data showed that the NRZ tether is required for TANGO1 to assemble into a ring",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing disrupted ring formation upon NRZ depletion.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "ed5e78cd-7df4-44de-9e32-56d894e84088",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C53",
+      "claim": "Stable complexes of TANGO1, cTAGE5 and TANGO1-short recruit the NRZ tether.",
+      "claim_type": "EXPLICIT",
+      "source": "and indicated that stable complexes of TANGO1, cTAGE5 and TANGO1-short, recruit the tether.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the sequential co-immunoprecipitation experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "2c89c6cc-7b7f-4ac9-bf0d-a6b37314123e",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C54",
+      "claim": "TANGO1 functionally and physically couples anterograde to retrograde traffic at an ERES.",
+      "claim_type": "EXPLICIT",
+      "source": "A critical aspect of TANGO1 biology is that it functionally and physically couples anterograde to retrograde traffic at an ERES, coupling two successive compartments in the secretory pathway, allowing for more rapid and efficient cargo transport between the compartments (Nogueira et al., 2014; Santos et al., 2015; Liu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established aspect of TANGO1 biology with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "55baa7c9-a5e2-4caa-8249-a38c21c21461",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C55",
+      "claim": "HSP47 selectively recognises triple helical (export-competent) collagen.",
+      "claim_type": "EXPLICIT",
+      "source": "TANGO1 recruits collagen via HSP47 \u2013 a chaperone that selectively recognises triple helical (export-competent) collagen (Koide et al., 2000; Tasab et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "6c59130d-5897-4cd9-bc8a-05e1bbe7ad80",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C56",
+      "claim": "TANGO1 contains a full transmembrane domain and a second membrane-inserted loop.",
+      "claim_type": "EXPLICIT",
+      "source": "TANGO1 contains a full transmembrane domain and a second membrane-inserted loop, which partially inserts into the inner leaflet of the ER membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural description of TANGO1 stated in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "82721e5f-e5a8-4ae5-8197-40e82b2cf89d",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C57",
+      "claim": "The lumenal part of TANGO1 contains a coiled-coil domain and an SH3-like domain at the N terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "The lumenal part contains a coiled-coil domain and, at the N terminus, an SH3-like domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural description of TANGO1 stated in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "f8174c5b-6610-41af-bbdb-b44b78fa0d7f",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C58",
+      "claim": "The cytoplasmic part of TANGO1 is composed of two coiled-coil domains (CC1 and CC2) followed by a C-terminal proline-rich domain (PRD).",
+      "claim_type": "EXPLICIT",
+      "source": "The cytoplasmic part of TANGO1 is composed of two coiled-coil domains (CC1 and CC2) followed by a C-terminal proline-rich domain (PRD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural description of TANGO1 stated in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "3634ae12-5b62-47a8-a82b-89794d5c4f4c",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C59",
+      "claim": "TANGO1-short is composed of 785 amino acids that arise from the same exons that encode the cytoplasmic domains of TANGO1.",
+      "claim_type": "EXPLICIT",
+      "source": "TANGO1-short is a spliced isoform of TANGO1. It is composed of 785 amino acids that arise from the same exons that encode the cytoplasmic domains of TANGO1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of TANGO1-short structure stated in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "9a730289-9788-48c6-8289-6698f567ba9f",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C60",
+      "claim": "TANGO1-short contains only 15 amino acids at the N terminus, within the ER lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequence of TANGO1-short differs in the membrane-inserted helix, and it contains only 15 amino acids at the N terminus, within the ER lumen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural description of TANGO1-short stated in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "6f88e564-9ea1-498d-855a-1ea56572647b",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C61",
+      "claim": "TANGO1-short lacks any capacity to interact directly with cargoes.",
+      "claim_type": "EXPLICIT",
+      "source": "It therefore lacks any capacity to interact directly with cargoes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural description of TANGO1-short lacking the lumenal domain.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "75a8bd90-fd94-44fc-b875-1999dee5f560",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C62",
+      "claim": "cTAGE5 is composed of 804 amino acids, with a short lumenal stretch of 38 amino acids, followed by a single transmembrane domain.",
+      "claim_type": "EXPLICIT",
+      "source": "cTAGE5 is composed of 804 amino acids, with a short lumenal stretch of 38 amino acids, followed by a single transmembrane domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural description of cTAGE5 stated in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "e881eafd-0930-42e5-bca9-d336d45d5f69",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C63",
+      "claim": "The organisation of cytoplasmic domains in cTAGE5 is the same as TANGO1, with two coiled-coil domains and a PRD.",
+      "claim_type": "EXPLICIT",
+      "source": "The organisation of cytoplasmic domains is the same as TANGO1, with two coiled-coil domains and a PRD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural description of cTAGE5 stated in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "ab414594-b8a4-4b09-b34f-8e86d363ed5e",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C64",
+      "claim": "All three TANGO1 family members bind each other and Sec23.",
+      "claim_type": "EXPLICIT",
+      "source": "From the published data on these proteins, we can conclude that all three family members bind each other and Sec23.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of established knowledge from published data.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "24d32380-0ae7-4895-9c18-391a25d64670",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C65",
+      "claim": "cTAGE5 binds Sec12 and Sec22.",
+      "claim_type": "EXPLICIT",
+      "source": "cTAGE5 binds Sec12 and Sec22.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from published data.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "71c6f29e-8f5e-46cb-80b6-ab181ca72ee4",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C66",
+      "claim": "TANGO1 does not bind Sec12.",
+      "claim_type": "EXPLICIT",
+      "source": "TANGO1 (and therefore TANGO1-short) does not bind Sec12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from published data.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "56e691a7-027a-4414-b32d-a7ff53072e7b",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C67",
+      "claim": "Only TANGO1 can bind cargo in the lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these proteins, only TANGO1 can bind cargo in the lumen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on the structural features of the TANGO1 family proteins.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "6c81891a-6306-41a6-846a-3aa5f221ec67",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C68",
+      "claim": "TANGO1 organises into rings of up to 300 nm diameter, which corral COPII coats at the ERES.",
+      "claim_type": "EXPLICIT",
+      "source": "A newly discovered feature of TANGO1 is its lateral organisation into rings of up to 300 nm diameter, which corral COPII coats at the ERES (Raote et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recently discovered feature with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "fdf2ca12-fadc-4777-99d0-d4f386226c62",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C69",
+      "claim": "The cytoplasmic domains of the TANGO1-family of proteins act as a single unit and any one can assemble into a ring.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the cytoplasmic domains of the TANGO1-family of proteins act as a single unit and any one can assemble into a ring, however TANGO1 brings cargo to the exit site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on TANGO1\u0394PRD ring formation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "3e70956a-db63-4e02-ae82-511928927167",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C70",
+      "claim": "Overexpressing cytoplasmic isoforms (either TANGO1-short or cTAGE5) would increase the capacity of an ERES to export cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that overexpressing cytoplasmic isoforms (either TANGO1-short or cTAGE5) would increase the capacity of an ERES to export cargo, however TANGO1 is the only protein with the capacity to bring cargo to ERES.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "3d38774a-5193-40fa-ad78-e80c21024c19",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C71",
+      "claim": "Collagen secreted in the absence of TANGO1 might be in an unfolded or unassembled form.",
+      "claim_type": "EXPLICIT",
+      "source": "Collagen secreted in the absence of TANGO1 might thus be in an unfolded or unassembled form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on TANGO1's role in cargo selection.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "7a6a378c-367c-4e54-8ebb-b7d033bdec2a",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C72",
+      "claim": "TANGO1 rings could be represented as a multimeric assembly of units of TANGO1 family proteins that assemble into a fence.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our super-resolution microscopy images, we hypothesise that TANGO1 rings could be represented as a multimeric assembly of units of TANGO1 family proteins (TANGO1, TANGO1-short and cTAGE5) that assemble into a fence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the super-resolution microscopy observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "2f27661e-c0c6-4e5d-89ef-3596c15ac3e3",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C73",
+      "claim": "The NRZ tether is a multi-subunit tether complex (MTC) that assembles at the surface of the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "NRZ tether is a multi-subunit tether complex (MTC) that assembles at the surface of the ER (Ren et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "5d4e5b89-272c-42e0-b902-daf05443f64e",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C74",
+      "claim": "The NRZ tether is required for retrograde capture of membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "is required for retrograde capture of membranes (Aoki et al., 2009; Arasaki et al., 2006; Hirose et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "4935d6bf-b294-40d9-82e1-6bde80b1380e",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C75",
+      "claim": "The NRZ tether partially localises to ER exit sites.",
+      "claim_type": "EXPLICIT",
+      "source": "partially localises to ER exit sites (Schr\u00f6ter et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "aaedb5fe-5478-4346-a9f2-c0fefe68ffb3",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C76",
+      "claim": "Mutations in NBAS are linked to dysregulated collagen secretion in atypical osteogenesis imperfecta.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in another component NBAS, are linked to dysregulated collagen secretion in atypical osteogenesis imperfecta (DDD Study et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "ea5db6be-edd6-43d0-8d11-9a5a05130f14",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C77",
+      "claim": "A fence of TANGO1 can be described as a filament held together by lateral protein\u2013protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "First, based on our observations of TANGO1 rings by STED microscopy (Raote et al., 2017), (Figure 2), and our data indicating the different protein\u2013protein interactions between the members of the TANGO1 family, we propose that a fence of TANGO1 can be described as a filament, held together by these lateral protein\u2013protein interactions, which normally surrounds COPII patches at the ERES (Maeda et al., 2017; Saito et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the experimental observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "2994738b-7903-4557-9fe3-b8eea71026b1",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "claim_id": "C78",
+      "claim": "TANGO1 rings could serve as a mould to impose a cylindrical curvature at the base of a growing carrier by coupling to the first layer of the COPII coat.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, TANGO1 rings could serve as a mould to impose a cylindrical curvature at the base of a growing carrier by coupling to the first layer of the COPII coat (Figure 8A,B), as proposed by Ma and Goldberg (Ma and Goldberg, 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed mechanism based on the experimental findings and prior work.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b17644dc-0709-4335-9287-23e017e30096",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TANGO1 rings are organized by radial interactions with COPII coats. Full-length TANGO1 forms uniform rings, while TANGO1\u0394PRD (lacking the PRD domain that binds Sec23) forms smaller rings that can fuse into planar tessellations or linear assemblies. Depletion of Sec23A phenocopies the TANGO1\u0394PRD phenotype, producing fused ring clusters. This demonstrates that COPII binding via the PRD controls ring size and prevents aberrant ring fusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C29 provide converging experimental evidence from STED microscopy, quantitative morphological analysis, and genetic depletion experiments. The TANGO1\u0394PRD mutant and Sec23A depletion produce consistent phenotypes (smaller, fused rings), strongly supporting the conclusion that COPII interaction regulates ring organization. The quantification in Table 1 and Figure 2E-F provides rigorous statistical support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "d87a7464-01cb-4cac-9c4e-92a4920f0919",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TANGO1 rings are organized by lateral interactions with cTAGE5 and TANGO1 self-association. cTAGE5 localizes along TANGO1 rings, and deletion of the CC2 domain (TANGO1\u0394CC2, which cannot bind cTAGE5) or depletion of cTAGE5 produces misshapen, variable rings. TANGO1 self-associates via amino acids 1255-1295 in CC1, and deletion of this region (TANGO1\u03941255-1295) abolishes ring formation, while deletion of adjacent residues (TANGO1\u03941296-1336) preserves normal rings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C39 provide comprehensive evidence from STED microscopy, co-immunoprecipitation, and domain mapping experiments. The convergence of loss-of-function approaches (deletion mutants and siRNA depletion) producing consistent phenotypes strongly supports the model. The precise mapping of the self-association domain (C35-C39) is particularly rigorous, with appropriate positive and negative controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "e4bc8285-953d-4ef4-b42d-1891bb94a626",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "TANGO1 recruits ERGIC membranes via the NRZ tether complex (NBAS/RINT1/ZW10). The minimal TEER domain (amino acids 1255-1295) is both necessary and sufficient for ERGIC recruitment and corresponds to the TANGO1 self-association domain. Full-length TANGO1 co-immunoprecipitates with all three NRZ components, but TANGO1\u03941255-1295 does not. Depletion of TANGO1, NBAS, or RINT1 blocks collagen secretion and reduces ERGIC recruitment to collagen accumulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C48 provide strong converging evidence from mitochondrial targeting assays, co-immunoprecipitation, STED microscopy localization, and functional collagen secretion assays. The identification that the TEER domain and self-association domain are identical (C42) is a key mechanistic insight supported by parallel domain mapping experiments. The functional validation through collagen secretion assays strengthens the biological relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "d7b73daa-40ea-4968-9bb4-9ddab9ca29bb",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The NRZ tether complex is required for TANGO1 ring assembly. Depletion of RINT1, NBAS, or ZW10 disrupts TANGO1 ring formation, with rings observed far less frequently. However, NRZ depletion does not affect the stable association of TANGO1, cTAGE5, and TANGO1-short in complexes, indicating that stable TANGO1 family protein complexes recruit the NRZ tether, which then enables ring assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 provide clear experimental evidence from STED microscopy quantification and sequential co-immunoprecipitation experiments. The key mechanistic distinction\u2014that NRZ is required for ring assembly but not for TANGO1 complex formation\u2014is well-supported by the sequential IP data (C51). This establishes a clear temporal/mechanistic order of events.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "d610b003-25b1-4a9c-a78c-21a3697153e8",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TANGO1 couples retrograde membrane flow to anterograde cargo transport by coordinating COPII coats, cTAGE5, TANGO1-short, and NRZ tethers to assemble a collagen export machine at the ER.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This integrative conclusion (C5, C8, C54) is well-supported by the collective experimental findings demonstrating TANGO1's multiple interactions and their functional consequences. The model synthesizes the radial COPII interactions, lateral protein-protein interactions, and tether recruitment into a coherent mechanism for collagen export.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "3c254e91-a200-4081-95e7-b720c28e6766",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The NRZ complex plays a role in nucleating or stabilizing TANGO1 ring assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C7 is explicitly speculative (\"suggesting its role\") and represents an interpretation of the observation that NRZ depletion prevents ring assembly (C6). While the data show NRZ is required for ring assembly, distinguishing between nucleation versus stabilization roles would require additional kinetic or structural experiments not presented in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "d94f21fd-7638-43e2-bff8-dd5d87f8245b",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose mechanistic models for TANGO1 ring function, including that overexpressing TANGO1-short or cTAGE5 would increase ERES export capacity, that TANGO1 rings form a filamentous fence held by lateral interactions, and that rings could impose cylindrical curvature on growing carriers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70-C72, C77-C78 are explicitly speculative hypotheses and proposed models based on the experimental observations. While these models are reasonable interpretations of the data, they lack direct experimental validation. C70 is untested speculation, C71 is conditional speculation, and C72, C77, C78 are proposed structural/mechanical models requiring future validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    },
+    {
+      "id": "c2ddc444-9ec9-4378-850b-075fece9ae84",
+      "content_id": "f1aca2f2-90d4-48b2-bd7c-9a672a89d8c3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological context and prior knowledge about collagen structure, TANGO1 family proteins (TANGO1, TANGO1-short, cTAGE5), their domain organization, known interactions, and the NRZ tether complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C2, C9-C23, C55-C68, C73-C76) represent established knowledge from prior literature, appropriately cited throughout. They provide essential background context for interpreting the new experimental findings. The structural descriptions and known interactions are well-documented in the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:31.530631Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "68835f23-f514-4f66-acc1-c53c77f5aa77",
+      "result_id": "b17644dc-0709-4335-9287-23e017e30096"
+    },
+    {
+      "claim_id": "aaf18dfe-47af-4feb-bcc9-8b054e2fb49d",
+      "result_id": "b17644dc-0709-4335-9287-23e017e30096"
+    },
+    {
+      "claim_id": "44d9b520-eef2-43f3-aa39-98a2b5619d67",
+      "result_id": "b17644dc-0709-4335-9287-23e017e30096"
+    },
+    {
+      "claim_id": "e4104041-ddbd-4352-b187-e6f6214b020d",
+      "result_id": "b17644dc-0709-4335-9287-23e017e30096"
+    },
+    {
+      "claim_id": "1741c945-16a6-4867-a0a4-fbf984114b54",
+      "result_id": "b17644dc-0709-4335-9287-23e017e30096"
+    },
+    {
+      "claim_id": "9638ea93-0794-4b72-89a6-0e0802e93034",
+      "result_id": "b17644dc-0709-4335-9287-23e017e30096"
+    },
+    {
+      "claim_id": "e43d1684-9ea6-4650-9611-13989c9409c2",
+      "result_id": "b17644dc-0709-4335-9287-23e017e30096"
+    },
+    {
+      "claim_id": "fdf2ca12-fadc-4777-99d0-d4f386226c62",
+      "result_id": "b17644dc-0709-4335-9287-23e017e30096"
+    },
+    {
+      "claim_id": "68835f23-f514-4f66-acc1-c53c77f5aa77",
+      "result_id": "d87a7464-01cb-4cac-9c4e-92a4920f0919"
+    },
+    {
+      "claim_id": "a6426d4a-5eaf-4429-8947-e47d71093b29",
+      "result_id": "d87a7464-01cb-4cac-9c4e-92a4920f0919"
+    },
+    {
+      "claim_id": "81cb498b-12cf-40ab-8cf4-20acfa188f74",
+      "result_id": "d87a7464-01cb-4cac-9c4e-92a4920f0919"
+    },
+    {
+      "claim_id": "3a72bbf0-d87d-4554-b994-74699d5e08e0",
+      "result_id": "d87a7464-01cb-4cac-9c4e-92a4920f0919"
+    },
+    {
+      "claim_id": "b14874a2-6c03-4be9-8fa6-1c3c54dfadae",
+      "result_id": "d87a7464-01cb-4cac-9c4e-92a4920f0919"
+    },
+    {
+      "claim_id": "de6584e2-463e-4c26-88b9-29b5db7544bf",
+      "result_id": "d87a7464-01cb-4cac-9c4e-92a4920f0919"
+    },
+    {
+      "claim_id": "76bb6026-549c-48b7-be15-56b029139b88",
+      "result_id": "d87a7464-01cb-4cac-9c4e-92a4920f0919"
+    },
+    {
+      "claim_id": "a196a090-b08e-41dd-af4b-247cf02ff715",
+      "result_id": "d87a7464-01cb-4cac-9c4e-92a4920f0919"
+    },
+    {
+      "claim_id": "cc4056bc-e9de-491c-a96a-964fd8a6ca17",
+      "result_id": "d87a7464-01cb-4cac-9c4e-92a4920f0919"
+    },
+    {
+      "claim_id": "23d82740-daae-47aa-8ae0-626a6d1829b0",
+      "result_id": "d87a7464-01cb-4cac-9c4e-92a4920f0919"
+    },
+    {
+      "claim_id": "0dcff4c4-a99f-43e5-8111-493a86745839",
+      "result_id": "d87a7464-01cb-4cac-9c4e-92a4920f0919"
+    },
+    {
+      "claim_id": "a6b45a81-47b6-4756-a64d-d001d5934501",
+      "result_id": "e4bc8285-953d-4ef4-b42d-1891bb94a626"
+    },
+    {
+      "claim_id": "b4794232-d22a-41b7-b4f6-e29612a5bda4",
+      "result_id": "e4bc8285-953d-4ef4-b42d-1891bb94a626"
+    },
+    {
+      "claim_id": "561ad8de-4123-4175-877f-5fb4f714cc0c",
+      "result_id": "e4bc8285-953d-4ef4-b42d-1891bb94a626"
+    },
+    {
+      "claim_id": "2d62fb6a-9207-4495-b59f-a86fef3cf90e",
+      "result_id": "e4bc8285-953d-4ef4-b42d-1891bb94a626"
+    },
+    {
+      "claim_id": "3bdad0ed-3267-4a83-9daf-f420e89750be",
+      "result_id": "e4bc8285-953d-4ef4-b42d-1891bb94a626"
+    },
+    {
+      "claim_id": "c4d2249f-161b-40f4-ade9-b40e446c2bb7",
+      "result_id": "e4bc8285-953d-4ef4-b42d-1891bb94a626"
+    },
+    {
+      "claim_id": "1040017f-170d-4b09-8c6e-7162ed78083d",
+      "result_id": "e4bc8285-953d-4ef4-b42d-1891bb94a626"
+    },
+    {
+      "claim_id": "abf77192-7083-4c6b-8041-f949f35e5bae",
+      "result_id": "e4bc8285-953d-4ef4-b42d-1891bb94a626"
+    },
+    {
+      "claim_id": "48d3b461-ebea-4a9b-b729-39ffb22888f3",
+      "result_id": "e4bc8285-953d-4ef4-b42d-1891bb94a626"
+    },
+    {
+      "claim_id": "eedeccf2-e590-44d3-8bce-7b82b1c57768",
+      "result_id": "e4bc8285-953d-4ef4-b42d-1891bb94a626"
+    },
+    {
+      "claim_id": "78edca65-09cf-4a6d-923e-757033ea80e3",
+      "result_id": "d7b73daa-40ea-4968-9bb4-9ddab9ca29bb"
+    },
+    {
+      "claim_id": "05f0ed0e-8dee-4c40-ab70-17bcb62cbcb5",
+      "result_id": "d7b73daa-40ea-4968-9bb4-9ddab9ca29bb"
+    },
+    {
+      "claim_id": "29e123aa-ecea-4f0c-878a-4e12d1e67686",
+      "result_id": "d7b73daa-40ea-4968-9bb4-9ddab9ca29bb"
+    },
+    {
+      "claim_id": "f199abad-fb88-4887-ac81-0284b0fe9e3f",
+      "result_id": "d7b73daa-40ea-4968-9bb4-9ddab9ca29bb"
+    },
+    {
+      "claim_id": "c338d7de-cceb-414a-b28e-5c4660a72c39",
+      "result_id": "d7b73daa-40ea-4968-9bb4-9ddab9ca29bb"
+    },
+    {
+      "claim_id": "ed5e78cd-7df4-44de-9e32-56d894e84088",
+      "result_id": "d7b73daa-40ea-4968-9bb4-9ddab9ca29bb"
+    },
+    {
+      "claim_id": "30a914eb-b65d-43ff-adc0-193da6fbcdcd",
+      "result_id": "d610b003-25b1-4a9c-a78c-21a3697153e8"
+    },
+    {
+      "claim_id": "60dd292a-0487-4f48-929b-b06daa4546a2",
+      "result_id": "d610b003-25b1-4a9c-a78c-21a3697153e8"
+    },
+    {
+      "claim_id": "2c89c6cc-7b7f-4ac9-bf0d-a6b37314123e",
+      "result_id": "d610b003-25b1-4a9c-a78c-21a3697153e8"
+    },
+    {
+      "claim_id": "444f5ae0-e37c-4418-9127-6db9f79ba9f3",
+      "result_id": "3c254e91-a200-4081-95e7-b720c28e6766"
+    },
+    {
+      "claim_id": "3e70956a-db63-4e02-ae82-511928927167",
+      "result_id": "d94f21fd-7638-43e2-bff8-dd5d87f8245b"
+    },
+    {
+      "claim_id": "3d38774a-5193-40fa-ad78-e80c21024c19",
+      "result_id": "d94f21fd-7638-43e2-bff8-dd5d87f8245b"
+    },
+    {
+      "claim_id": "7a6a378c-367c-4e54-8ebb-b7d033bdec2a",
+      "result_id": "d94f21fd-7638-43e2-bff8-dd5d87f8245b"
+    },
+    {
+      "claim_id": "ea5db6be-edd6-43d0-8d11-9a5a05130f14",
+      "result_id": "d94f21fd-7638-43e2-bff8-dd5d87f8245b"
+    },
+    {
+      "claim_id": "2994738b-7903-4557-9fe3-b8eea71026b1",
+      "result_id": "d94f21fd-7638-43e2-bff8-dd5d87f8245b"
+    },
+    {
+      "claim_id": "d4c555d0-584f-4234-a2ae-bdaac75c3c7e",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "681eb150-9746-4d50-8cea-327c87004fca",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "88bf6d59-3a41-4c81-9357-97228143f81a",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "3371f528-e924-4c89-9c2b-b96d5e29b319",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "2f1c2902-a17a-4e8c-9920-2697fe0b3272",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "8acfdc31-5326-4f73-9422-1b3ecd567544",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "099ae588-23b8-4c75-8975-ecb593ca140e",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "34007678-56c5-49c1-b587-562ac7f2798d",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "92fd962f-4ae0-4f6d-be6a-daac4c9f42a2",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "5e2cbfef-b55a-4e99-b80d-b42eee2f420a",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "6f9c8011-bcd7-40eb-9b6d-1becb791ffc8",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "91634d1a-18f9-4ddb-aa77-303076f96b6b",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "93ca1b09-79dd-42e2-bcb8-1deaf1f206a7",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "1ea69bd0-9e1f-4c18-846e-7d37b1812c8a",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "c9104a6e-0eab-461b-b9eb-b0ca7e8a2b0a",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "32fa0ebf-5f45-4820-868f-6b567acdc03f",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "f516136b-292d-4bf3-823e-022794f65403",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "55baa7c9-a5e2-4caa-8249-a38c21c21461",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "6c59130d-5897-4cd9-bc8a-05e1bbe7ad80",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "82721e5f-e5a8-4ae5-8197-40e82b2cf89d",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "f8174c5b-6610-41af-bbdb-b44b78fa0d7f",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "3634ae12-5b62-47a8-a82b-89794d5c4f4c",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "9a730289-9788-48c6-8289-6698f567ba9f",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "6f88e564-9ea1-498d-855a-1ea56572647b",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "75a8bd90-fd94-44fc-b875-1999dee5f560",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "e881eafd-0930-42e5-bca9-d336d45d5f69",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "ab414594-b8a4-4b09-b34f-8e86d363ed5e",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "24d32380-0ae7-4895-9c18-391a25d64670",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "71c6f29e-8f5e-46cb-80b6-ab181ca72ee4",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "56e691a7-027a-4414-b32d-a7ff53072e7b",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "6c81891a-6306-41a6-846a-3aa5f221ec67",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "2f27661e-c0c6-4e5d-89ef-3596c15ac3e3",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "5d4e5b89-272c-42e0-b902-daf05443f64e",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "4935d6bf-b294-40d9-82e1-6bde80b1380e",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    },
+    {
+      "claim_id": "aaedb5fe-5478-4346-a9f2-c0fefe68ffb3",
+      "result_id": "c2ddc444-9ec9-4378-850b-075fece9ae84"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,385 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C15",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C122",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The authors developed a flow cytometry-based methodology using the Grx1-roGFP2 redox sensor to measure and sort yeast cells based on their redox status at single-cell resolution in the cytosol, mitochondria, and peroxisomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C15, C24-C28 establish the methodology development and validation. The alternating fluorescence peaks at 405/488 nm (C25, C26) with distinct linear fits (R\u00b2=0.99 and 0.97) provide strong quantitative evidence. The method's applicability to organelle-specific sensors (C28) and ability to create gates for sorting (C27) demonstrate technical robustness. The methodology is well-characterized with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C33",
+      "C34",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Chronologically aging yeast cells exhibit a bi-modal distribution of redox status, with cells transitioning from reduced to oxidized states over time, while mitochondrial oxidation shows greater robustness than cytosolic oxidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C32-C34 demonstrate the bi-modal distribution with clear temporal dynamics. The largest shift occurs at 48 hr (C34), supported by Figure 2C. The comparison between cytosolic and mitochondrial oxidation (C29-C31) provides compartment-specific insights. However, the interpretation of 'robustness' (C31) is somewhat speculative and would benefit from mechanistic investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Reduced and oxidized yeast subpopulations display distinct growth characteristics, with reduced cells showing faster doubling times, fewer bud scars, and higher budding rates compared to oxidized cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 provide converging evidence from multiple phenotypic assays. The quantitative differences in minimal doubling time (C36), bud scars (3-4.5\u00d7 more in oxidized, C39), and budding rates (~30% in reduced vs. lower in oxidized, C40) are well-documented. The interpretation that oxidized cells have impaired division rather than inability to enter log phase (C37) is supported by similar lag phases. Statistical significance is mentioned but p-values are not always provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Oxidized cells exhibit a metabolic shift from oxidative phosphorylation to glycolysis, with 1.8-2 fold lower oxygen consumption rate and 2-2.8 fold higher extracellular acidification rate compared to reduced cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 provide quantitative Seahorse assay data with clear fold-changes. The interpretation as a Warburg-like effect (C44) is reasonable given the OCR/ECAR patterns, though the comparison to cancer metabolism could be more cautiously stated. Three biological replicates were analyzed (mentioned in text), providing adequate statistical power. The correlation with growth (C45) is logical but remains correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Using the Mother Enrichment Program, the authors demonstrate that cellular oxidation correlates strongly but not absolutely with replicative aging (bud scar count), and that chronological aging also contributes to oxidation independent of division events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C54 use the Mother Enrichment Program to separate replicative from chronological aging effects. The quantitative data (87.8% oxidized in high bud scar at 24h, C47; 36.4% vs 6.5% oxidized in low bud scar at late vs early growth, C50) support the dual contribution model. The observation of 'eternally reduced' highly divided cells (C48, C52) is important but represents a small minority. The interpretation distinguishes correlation from causation appropriately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Proteomic analysis identified 3389 proteins, with 1019 consistently detected across subpopulations. Protein expression profiles cluster by redox status rather than age, with reduced cells enriched for energy production and mitochondrial proteins, while oxidized cells show enrichment for protein folding and redox homeostasis proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C64 describe comprehensive proteomic analysis with appropriate bioinformatics. The clustering by redox status rather than age (C58-C59) is a key finding supported by Figure 6A. Functional enrichment analysis (C60, C62) is appropriate, though the statistical thresholds (FDR=0.05, fold change >2) are reasonable. The interpretation connecting proteome to phenotype (C61) is logical. Three biological replicates provide adequate statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C17",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Comparative proteomic analysis identified differentially expressed proteins between reduced and oxidized populations, including stress response proteins (Hsp30, Dhh1) upregulated in reduced cells and stress-induced proteins (Gre1, Sro9, Hsp150, Tsa2) upregulated in oxidized cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C65-C71 identify specific differentially expressed proteins with statistical support (199 proteins at 48h, 149 at 72h, C63-C64). The observation of ribosomal protein upregulation in oxidized cells (C66) is interesting, though the interpretation of 'non-functional' ribosomes (C67) is speculative. The 'first line of defense' hypothesis (C71) for stress granule proteins is reasonable but requires functional validation beyond correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Deletion analysis of candidate proteins revealed that \u0394dhh1 and \u0394hsp30 show significantly increased oxidation compared to wild-type, while \u0394pnc1 shows decreased oxidation. These deletions also affect cellular morphology and growth, with \u0394dhh1 showing severe phenotypes including enlarged vacuoles and growth arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C83 provide genetic validation of proteomic findings. The oxidation phenotypes are quantified (C72, C75) with statistical testing mentioned. The severe \u0394dhh1 phenotype (C77-C79) complicates interpretation of its redox role (C144), as oxidation may be secondary to growth defects. The morphological observations (C79, C81-C82) are descriptive but lack quantification. The conclusion that these proteins affect redox homeostasis (C73, C76) is supported but mechanistic details are lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Analysis of redox distribution in deletion strains reveals distinct patterns: \u0394tsa2 resembles wild-type, \u0394dhh1 shows early oxidation and collapse, \u0394pnc1 remains reduced, and \u0394hsp30 displays a unique stable bimodal distribution. Organelle-specific analysis shows Hsp30 affects mitochondrial but not peroxisomal redox distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C92 characterize redox distributions in deletion strains. The bimodal distribution in \u0394hsp30 (C87, C139) is a striking phenotype supported by Figure 7F. The organelle-specific effects (C88, C90-C91) provide spatial resolution, though the speculation about redox synchronization (C89) requires further investigation. The interpretation of distinct modes of redox regulation (C92) is reasonable but remains largely descriptive without mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Transcriptomic analysis identified ~5000 genes in each subpopulation, with global changes clustering by redox status rather than age. Reduced cells show upregulation of carbon metabolism, TCA cycle, and lipid biosynthesis genes. While global correlation exists between transcriptome and proteome, specific examples of uncoupling were observed, notably for Hsp30 and Yro2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C101 describe transcriptomic analysis with appropriate statistical thresholds (FDR<0.05, fold change \u22652). The clustering by redox status (C94) parallels proteomic findings. The observation of mRNA-protein uncoupling (C98, C100) is important, particularly for Hsp30 where mRNA is high in oxidized but protein is high in reduced cells. The speculation about differential turnover (C101) is reasonable but requires validation. The discrepancy between proteome and transcriptome for peroxisomal proteins (C96-C97) is well-explained by abundance limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Hsp30 shows antagonistic regulation at mRNA and protein levels, with high mRNA in oxidized cells but high protein in reduced cells. Deletion of Hsp30 increases cellular oxidation and creates a unique bimodal redox distribution, suggesting Hsp30 enhances redox heterogeneity and may serve as a 'redox keeper'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C140 focus on Hsp30 as a key regulator. The mRNA-protein discordance (C133, C136) is well-documented. The deletion phenotype (C134, C139) provides functional evidence. The speculation about impaired protein turnover (C136-C138) is reasonable but lacks direct measurement of protein stability or translation rates. The 'redox keeper' concept is supported by the deletion phenotype but the mechanism remains unclear. The bimodal distribution in \u0394hsp30 (C139-C140) is intriguing but interpretation requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Dhh1, a stress granule-associated RNA helicase, is upregulated in reduced cells and its deletion leads to elevated oxidation, growth arrest, and cellular collapse. Other stress granule-associated proteins show similar upregulation in reduced cells, with protein but not transcript changes suggesting post-transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C141-C147 identify Dhh1 as important for redox homeostasis, but the severe pleiotropic phenotype of \u0394dhh1 (C143, C77-C79) makes it difficult to determine if oxidation is a primary or secondary effect (C144). The observation that other stress granule proteins are upregulated in reduced cells (C145) without transcript changes (C147) is interesting, but the speculation about p-body migration (C146) lacks direct evidence. The role of Dhh1 in redox regulation requires more targeted experiments to separate direct from indirect effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Pnc1, a nicotinamidase upregulated in oxidized cells, shows opposite effects when deleted: \u0394pnc1 cells are more reduced than wild-type. The authors propose Pnc1 links reduced stress, nicotinamide accumulation, and decreased cell viability through Sir2 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C149 show Pnc1 upregulation in oxidized cells and a more reduced phenotype upon deletion, which is paradoxical but well-documented. The connection to Sir2 and lifespan (C150) is supported by prior literature. The proposed model (C151) linking Pnc1 to redox stress and viability is speculative but builds on established knowledge. However, the mechanism by which Pnc1 deletion leads to reducing stress requires further investigation, and the model remains largely correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Time-lapse imaging reveals that cells can self-correct their oxidation status through fluctuations, but only below a threshold of approximately OxD* 0.7 (70% of maximal oxidation). Once cells cross this threshold, they cannot recover and maintain high oxidation until death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109, C152-C154 describe single-cell dynamics over 12 hours. The identification of an oxidation threshold at ~0.7 OxD* (C106, C154) is a key finding supported by Figure 9. The observation that cells can fluctuate below but not above this threshold (C105, C107-C108) suggests a bistable system. However, the sample size (>30 cells) is relatively small for establishing a precise threshold value. The mechanism underlying this threshold behavior is not explored and represents an important area for future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C155",
+      "C156"
+    ],
+    "result": "Mother and daughter cells have identical oxidation levels during and immediately after budding, regardless of the mother's initial oxidation state. Some daughter cells can self-correct their inherited oxidation within an hour after separation, suggesting the oxidized state inheritance is a regulated mechanism rather than simple diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114, C155-C156 demonstrate mother-daughter oxidation inheritance using time-lapse imaging (Figure 10). The observation of identical OxD* values during budding (C111) is clear. The ability of some daughters to self-correct (C113) is important but the frequency and determinants of this correction are not quantified. The interpretation that inheritance is regulated rather than diffusive (C156) is reasonable given the time scale (several hours) exceeds duplication time, but direct evidence for a regulatory mechanism is lacking. The sample size for budding events is not specified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C2",
+      "C16",
+      "C18",
+      "C19",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The study identifies a new type of glutathione-dependent heterogeneity in genetically identical yeast cells, where redox status contributes to cellular growth and division properties. The transition from reduced to oxidized status appears to be a threshold-based phenomenon leading to distinct subpopulations with different growth potential and biochemical profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C16, C18-C19, C119-C121 synthesize the major findings. The identification of redox-dependent heterogeneity (C2, C119) is well-supported by the bi-modal distributions, differential growth, and distinct molecular profiles. The claim that redox status 'contributes to' rather than 'determines' cellular properties (C120) is appropriately cautious. The threshold-based model (C121) is supported by the imaging data but is presented as speculation. The study successfully demonstrates correlation between redox status and multiple cellular phenotypes, though causality is not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C17",
+      "C71",
+      "C73",
+      "C76",
+      "C92"
+    ],
+    "result": "Three proteins\u2014Hsp30, Dhh1, and Pnc1\u2014are proposed as 'first line of defense' proteins in redox homeostasis based on their differential expression and effects on basal oxidation levels when deleted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C17, C71, C73, C76, C92 propose these three proteins as key redox regulators. While the proteomic data (differential expression) and genetic data (deletion phenotypes) are solid, the 'first line of defense' designation (C6, C71) is speculative. For Dhh1, the severe pleiotropic effects make it difficult to assess its direct role in redox regulation. For Hsp30, the mechanism is unclear despite the clear phenotype. For Pnc1, the paradoxical effect (upregulated in oxidized, but deletion causes reduction) requires mechanistic explanation. The claim would be strengthened by rescue experiments, direct measurement of antioxidant activity, or demonstration that these proteins respond to oxidative stress before other markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C22",
+      "C23",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Background and context: Cellular redox status affects diverse functions, existing methods for measuring redox status have limitations, and cell-to-cell heterogeneity in genetically identical populations is well-established, but redox heterogeneity within synchronized cells had not been explored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C14, C22-C23, C115-C118 provide literature context. These are appropriately cited general knowledge claims that establish the rationale for the study. The identification of a gap in knowledge (C14) regarding redox heterogeneity in synchronized cells is accurate and motivates the work. The limitations of existing methods (C10-C11) justify the methodological development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C123",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C142",
+      "C150"
+    ],
+    "result": "Background on specific proteins and methods: roGFP probes are established tools, Hsp30 is a stress-induced membrane protein, Dhh1 is a stress granule helicase, and Pnc1 affects Sir2 activity and lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123, C128-C132, C142, C150 provide background on tools and proteins studied. These are well-cited claims from prior literature that provide context for interpreting the current results. The speculation about future applications (C128-C129) is reasonable but represents potential rather than demonstrated utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C110",
+      "C114"
+    ],
+    "result": "Summary claims about thresholds and inheritance: There is a threshold above which cells cannot maintain redox homeostasis, and mother cells pass oxidized states to daughters, with maternal influence playing a central role in daughter cell oxidative stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21, C110, C114 summarize key findings about thresholds and inheritance. These are supported by the imaging data (Figures 9-10) and integrate well with the other results. The citation to prior work on maternal age effects (C110) provides appropriate context.",
+    "result_type": "MINOR"
+  }
+]

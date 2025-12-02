@@ -1,0 +1,248 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C44",
+      "C45",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C68",
+      "C70",
+      "C72"
+    ],
+    "result": "The authors identify a class of proboscis gustatory receptor neurons (GRNs) expressing Ir76b and Ir25a that are required for yeast feeding. Acute thermogenetic silencing of neurons labeled by 1261-GAL4, Ir76b-GAL4, or Ir25a-GAL4 drastically reduces yeast feeding without affecting sucrose feeding. These lines label overlapping populations of GRNs in the proboscis, and the phenotype is due to loss of gustatory rather than olfactory input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C44-C45, C56-C62, C68, C70, C72 collectively demonstrate that specific proboscis GRNs are necessary for yeast feeding. The use of multiple GAL4 lines with overlapping expression patterns, rescue experiments with Poxn-GAL80 and Ir76b-GAL80, and controls ruling out olfactory involvement provide strong converging evidence. The specificity for yeast over sucrose feeding further supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C49",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Taste peg GRNs are specifically required to sustain yeast feeding bursts after initiation. Silencing taste peg GRNs using 67E03- or 57F03-GAL4 reduces the number of sips per yeast feeding burst without affecting total yeast intake or sucrose feeding bursts. Closed-loop optogenetic silencing after burst initiation confirms this role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C49, C80-C85 provide strong evidence through multiple complementary approaches. The thermogenetic silencing experiments (C80-C82) show reduced burst length, and the closed-loop optogenetic experiments (C83-C85) provide temporally precise confirmation that taste peg GRN activity is required during, not just before, feeding bursts. The specificity to yeast (C82) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Sensillar GRNs mediate feeding initiation through proboscis extension in response to yeast taste. Poxn mutants lacking taste sensilla show near-complete loss of proboscis extension response (PER) to yeast, and silencing Poxn-GAL4 neurons drastically reduces PER probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C48, C86-C88 demonstrate the role of sensillar GRNs in feeding initiation using both genetic ablation (Poxn mutants) and acute silencing approaches. The PER assay provides a clear behavioral readout for feeding initiation. However, the interpretation relies on the assumption that PER directly reflects feeding initiation in the natural context, which is reasonable but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C89"
+    ],
+    "result": "Distinct subsets of yeast GRNs (sensillar, taste peg, and pharyngeal) control distinct aspects of yeast feeding behavior but are ultimately redundant for total yeast feeding. Silencing individual subsets does not reduce total yeast intake, and flies compensate by altering feeding patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47, C74-C79, C89 demonstrate functional redundancy through systematic silencing of different GRN subsets. The calcium imaging data (C46) shows physiological responses in multiple regions, while behavioral data (C74-C78) shows no effect on total feeding when individual subsets are silenced. The compensatory increase in burst number when taste peg GRNs are silenced (C89) provides direct evidence for behavioral plasticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C50",
+      "C51",
+      "C99",
+      "C100",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The response of yeast-sensing GRNs is enhanced by amino acid (AA) deprivation. Calcium imaging shows that deprivation from dietary AAs or yeast increases the gain of both taste peg and sensillar GRN responses to yeast, with significant enhancement after 10 days of deprivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C50-C51, C99-C100, C107-C109 demonstrate state-dependent modulation of sensory responses using calcium imaging. The use of both yeast deprivation and specific AA deprivation (using holidic diet) strengthens the conclusion that AA state, rather than other factors, drives the modulation. The dose-response relationship (3 vs 10 days) adds credibility, though the 3-day effect is described as non-significant (C99).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C52",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The enhancement of GRN responses by AA deprivation is specific to yeast-sensing neurons. Sweet-sensing GRNs (Gr5a-GAL4) are not sensitized by yeast deprivation; instead, their response to low sucrose decreases, and sucrose feeding decreases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C52, C102-C105 demonstrate specificity of the AA state effect through comparison with sugar-sensing neurons. The calcium imaging data showing no enhancement (C102) and even decreased responses to low sucrose (C103) provide strong evidence for nutrient-specific modulation. The distinction from starvation effects (C104) is important for interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C53",
+      "C54",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C115"
+    ],
+    "result": "Nutritional and reproductive states synergistically increase yeast appetite but act at different levels of the circuit. While AA deprivation modulates GRN responses, mating state has no effect on sensory responses despite increasing yeast feeding behavior, suggesting it acts downstream of GRNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C53-C54, C110-C113, C115 demonstrate multi-level state integration through combined behavioral and imaging experiments. The dissociation between behavioral effects of mating (C110) and lack of GRN modulation (C111) provides strong evidence for downstream action. The SPR knockdown experiment (C113) further supports this interpretation. The two-way ANOVA approach is appropriate for testing independent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Ir76b-expressing GRNs in both taste peg (AMS1) and sensillar (PMS4) regions show strong calcium responses to yeast that are significantly greater than responses to water or sucrose. Different yeast metabolites (carbonation, glycerol, putrescine, amino acids) activate distinct subsets of these neurons, but none fully accounts for the yeast response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C96 characterize the physiological responses of identified GRNs using calcium imaging. The comparison to water and sucrose (C91) establishes specificity, and testing individual yeast metabolites (C92-C95) shows that the yeast response is complex and not explained by single compounds. The temporal precision of responses (mentioned in text) adds confidence. However, the claim that responses are 'sharply aligned' to stimulus onset/offset could benefit from quantitative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Amino acids alone do not account for yeast feeding behavior. While silencing identified GRN lines abolishes preference for AA-rich food, flies show much lower feeding on AAs compared to yeast, and Ir76b or Ir25a mutations have no effect on yeast feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C63-C66 demonstrate that AAs are not the primary stimulus for yeast feeding through multiple lines of evidence: low feeding on AAs alone (C64), lack of effect of receptor mutations (C65), and the inference that other stimuli must be involved (C66). This is important for ruling out a simple explanation and supports the complexity of yeast detection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The yeast feeding phenotype is due to silencing of gustatory receptor neurons rather than olfactory receptor neurons. Using Poxn-GAL80 to selectively rescue GRN expression rescues yeast preference, while multiple manipulations of ORNs have no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 establish that the phenotype is gustatory through complementary approaches: rescue with Poxn-GAL80 (C68) and lack of effect of ORN manipulations including atonal mutants (C69). The use of Ir25a-GAL4, which labels only peripheral neurons, provides additional support (C62). This is critical for establishing the sensory modality involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The GRNs required for yeast feeding reside in the proboscis rather than the legs. Using tshirt-GAL80 to remove tarsal GRNs does not suppress the yeast feeding phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 localize the critical GRNs to the proboscis using a genetic approach to remove leg expression. This is a straightforward result supported by the rescue experiment. However, it would be strengthened by showing that the GAL80 effectively removes leg expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Mated females show a homeostatic increase in yeast feeding when deprived of dietary yeast, and this appetite is yeast-specific as sucrose feeding is not increased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 establish the behavioral phenomenon being studied. The data are supported by both current experiments and prior work (citation to Ribeiro and Dickson, 2010). The specificity for yeast (C98) is important for establishing nutrient-specific appetite.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "The response of yeast-sensing GRNs is significantly increased following just 3 days of protein deprivation when virgin and mated female data are pooled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 reports a statistical finding from pooled data analysis. The p-values are provided (p=0.004 for AMS1, p=0.005 for PMS4), supporting the claim. However, this appears to contradict C99 which states the 3-day effect was 'non-significant' when analyzed separately. The pooling may increase power but could also obscure differences between virgin and mated flies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Flies compensate for reduced yeast feeding burst length by increasing the total number of feeding bursts when taste peg GRNs are silenced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 demonstrates behavioral compensation using flyPAD data. This is an important observation showing plasticity in feeding behavior, though the mechanism of compensation is not explored. The result helps explain why total yeast intake is maintained despite reduced burst length.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "Overall, deprivation from amino acids specifically increases the gain of gustatory neurons detecting yeast, the ethological food substrate that provides this nutrient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 is a summary statement of the main findings. It is well-supported by the combined evidence from behavioral experiments, calcium imaging, and specificity controls presented throughout the manuscript. This represents the key conceptual advance of the work.",
+    "result_type": "MAJOR"
+  }
+]

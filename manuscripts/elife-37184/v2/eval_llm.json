@@ -1,0 +1,326 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "A genome-scale ORF screen identified RNA-binding proteins as enriched regulators of EMT. The screen identified 68 ORFs meeting a 3 SD cutoff, including known EMT regulators (SNAI1, BCL6, JMJD6, FOS) and a striking enrichment of RNA splicing factors. Gene ontology analysis showed 'regulation of mRNA metabolic process' and 'regulation of mRNA splicing, via spliceosome' as top terms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The screen design is appropriate with validated positive controls (C34, C35). The statistical cutoff (3 SD) is reasonable, and the enrichment of RNA-binding proteins is supported by multiple independent analyses including gene ontology (C39) and GSEA (C40). The reproducibility between replicates appears adequate based on Figure 1\u2014figure supplement 2A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C49"
+    ],
+    "result": "QKI and RBFOX1 overexpression is sufficient to induce an intermediate mesenchymal cell state. Both proteins strongly induced mesenchymal markers, increased CD44-high populations, promoted mammosphere formation, and enhanced tumor formation in vivo. The induced state showed upregulation of mesenchymal markers with retention of epithelial markers, consistent with an intermediate EMT state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent assays (marker expression, CD44 status, mammosphere formation, tumor formation) consistently demonstrate sufficiency (C41, C3, C4). The characterization of an intermediate state (C49) is supported by marker expression data showing both mesenchymal and epithelial features. The in vivo tumor data (C4) provides functional validation. Sample sizes appear adequate (n=3-9 across experiments).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C59"
+    ],
+    "result": "QKI and RBFOX1 are partially required for SNAI1-induced EMT. Both shRNA-mediated knockdown and CRISPR/Cas9-mediated knockout of QKI and RBFOX1 significantly reduced CD44-high cell populations, mesenchymal marker expression, and mammosphere formation induced by SNAI1 overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The necessity is demonstrated through two independent genetic approaches (shRNA and CRISPR/Cas9), which strengthens the conclusion and addresses potential off-target effects (C52-C54). The partial requirement (C55, C59) is appropriately stated given that suppression reduces but does not eliminate the phenotype. Statistical significance is reported for key measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C88"
+    ],
+    "result": "QKI and RBFOX1 expression correlates with mesenchymal features in patient samples. QKI expression was highly upregulated in mesenchymal breast tumor samples from TCGA and in recurrent mesenchymal murine mammary tumors. Elevated QKI expression was observed in basal-like breast cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation is demonstrated in multiple independent datasets (TCGA human samples C56, C88; murine model C57). The analysis methods are appropriate for the data types. However, correlation does not establish causation, and the clinical relevance would benefit from survival or outcome data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "EMT transcription factors induce QKI and RBFOX1 expression, and conversely, QKI/RBFOX1 induce EMT-TF expression, establishing a regulatory feedback loop. SNAI1 and ZEB1 overexpression induced endogenous QKI and RBFOX1, while QKI/RBFOX1 overexpression elevated SNAI1 and ZEB1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bidirectional regulation is demonstrated experimentally (C60, C139, C140). This establishes a regulatory circuit between transcriptional and post-transcriptional control of EMT (C141). The inference of mutual regulation is well-supported by the data, though the molecular mechanisms of this feedback remain to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "QKI and RBFOX1 regulate alternative splicing of genes involved in EMT. Overexpression of QKI or RBFOX1 caused >5-fold increase in alternative splicing events, predominantly skipped exons. Downstream targets were enriched in genes involved in cell motility/cytoskeleton organization, stem cell fate determination, and oncogenic signaling. Validated targets include FLNB, SLK, NUMB, CA12, ESYT2, and ATP5C1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-seq analysis with appropriate statistical methods (rMATS) identifies splicing changes (C61, C62). GSEA analysis supports pathway enrichment (C63). RT-PCR validation of individual targets (C64) confirms RNA-seq findings. The observation that SNAI1-expressing cells show similar splicing patterns (C65, C66) provides additional support for the biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "QKI and RBFOX1 physically interact and coordinately regulate alternative splicing. eCLIP-seq revealed substantial overlap in binding sites (p<0.001), with QKI sites enriched for RBFOX motifs. Both proteins bind to 36 of 183 shared skipped exon targets. QKI and RBFOX1 interact in an RNA-independent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support coordinate regulation: overlapping binding sites by eCLIP (C73, C74), motif enrichment (C72), and physical interaction by co-IP (C76, C77). The RNA-independence of the interaction (C77) is well-controlled with RNase treatment. The eCLIP methodology is appropriate with proper controls and replicates. Statistical significance is reported for overlap (p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "FLNB exon 30 splicing strongly associates with EMT signatures in breast cancer. A bimodal distribution of FLNB exon 30 splicing was observed in breast cancer cell lines, with the shorter isoform (exon 30 skipped) predominant in basal B lines and the longer isoform in luminal/basal A lines. FLNB exon 30 PSI correlated significantly with EMT signatures, ZEB1 targets, and stem cell signatures across cancer cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bimodal distribution is clearly demonstrated (C80-C82). Multiple independent correlation analyses using different EMT signatures support the association (C83, C84). The use of information coefficient and permutation testing provides appropriate statistical rigor. RT-PCR validation in selected cell lines confirms the RNA-seq data. The suggestion of FLNB splicing as a biomarker (C85) is appropriately stated as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "FLNB isoform expression patterns in TCGA breast cancer samples correlate with tumor subtype. Lower expression of the longer FLNB isoform (exon 30 included) and higher expression of the shorter isoform were observed in basal subtype samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis of TCGA data is appropriate and consistent with the cell line findings. However, the sample classification method and statistical testing details could be more explicit. The result supports the clinical relevance of the findings but would benefit from additional validation in independent cohorts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "FLNB exon 30 skipping switches FLNB function from suppressing to promoting EMT. Exon 30 skipping occurred exclusively in CD44-high mesenchymal cells. Suppression of the long isoform (FLNB-L) upregulated mesenchymal markers, while FLNB-L overexpression reduced mesenchymal markers. The short isoform (FLNB-\u0394H1) did not suppress mesenchymal markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional switch is demonstrated through multiple complementary approaches: correlation with cell state (C92), loss-of-function (C93), and gain-of-function experiments (C95, C96, C97). The differential effects of the two isoforms are clearly shown. The inference that exon 30 skipping switches function (C103) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "FLNB-\u0394H1 acts as a dominant-negative by dimerizing with endogenous FLNB-L. In the presence of endogenous FLNB-L, ectopic FLNB-\u0394H1 elevated mesenchymal markers while FLNB-L did not, likely through heterodimerization that blocks FLNB-L suppressive effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the differential effects of the two isoforms in the presence of endogenous FLNB-L are demonstrated (C99, C100), the dominant-negative mechanism through dimerization (C102) is speculative. The dimerization of filamins is established (C101), but direct evidence that FLNB-\u0394H1 forms heterodimers with FLNB-L and blocks its function is not provided. Co-IP experiments or other direct tests of heterodimerization would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "CRISPR/Cas9-mediated disruption of the FLNB exon 30 splice junction induces exon skipping and promotes mesenchymal phenotypes. Targeting the intron 29-exon 30 junction effectively induced exon 30 skipping, increased mesenchymal marker expression, and modestly but significantly increased CD44-high cells and mammosphere formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CRISPR/Cas9 approach provides a clean genetic test of exon 30 function by manipulating endogenous splicing (C104). Multiple phenotypic readouts consistently show pro-mesenchymal effects (C105-C107). The modest effect size (C106, C107) is appropriately noted and may reflect partial penetrance or the contribution of other factors. The siRNA experiments (C108, C109) provide orthogonal validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Alternative splicing of FLNB exon 30 regulates subcellular localization. FLNB-L localized to both cytoplasm and nucleus, while FLNB-\u0394H1 showed preferential cytoplasmic localization with 50% reduction in nuclear localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential localization is demonstrated by both fractionation (C111, C112) and immunofluorescence (Figure 7\u2014figure supplement 1A). The quantification of nuclear/cytoplasmic ratios provides statistical support. The inference that exon 30 splicing changes localization (C113) is well-supported. This provides a mechanistic link to the functional differences between isoforms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "FLNB exon 30 skipping reduces FLNB interaction with FOXC1 and PBX1 through nuclear exclusion. FLNB interacts with FOXC1 in HMLE cells, and this interaction is reduced when exon 30 skipping is induced, largely due to decreased nuclear FLNB levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interaction between FLNB and FOXC1 is demonstrated by co-IP (C115). The reduction in interaction upon exon 30 skipping is shown (C116), and the mechanism through nuclear exclusion is well-supported by the localization data (C111-C113). The prior literature on FLNA-FOXC1 interaction (C114) provides context. The inference that nuclear exclusion regulates FOXC1 interaction (C117) is logical and supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "FLNB exon 30 skipping promotes EMT by releasing FOXC1 transcription factor. FOXC1 is an EMT-inducing transcription factor inhibited by nuclear filamins. FOXC1 depletion significantly dampened mesenchymal marker upregulation and mammosphere formation mediated by FLNB exon 30 skipping or QKI/RBFOX1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanism is well-supported by multiple lines of evidence: FOXC1's role in EMT (C118), nuclear filamin inhibition of FOXC1 (C119), and functional requirement for FOXC1 in FLNB-mediated EMT (C120-C123). The siRNA depletion experiments are appropriately controlled. The partial requirement for FOXC1 (C122, C123) suggests additional mechanisms may contribute. The overall model (C124) integrates the findings coherently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C127",
+      "C143",
+      "C144"
+    ],
+    "result": "QKI and RBFOX1 regulate EMT in breast cancer through coordinated regulation of FLNB exon 30 splicing. The skipping of FLNB exon 30 serves as both a marker and functional driver of EMT by releasing FOXC1 from an inhibitory complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion is well-supported by the cumulative evidence from the study. The pathway from QKI/RBFOX1 to FLNB splicing to FOXC1 release to EMT is demonstrated through multiple experimental approaches. Each step is validated independently, and the overall model is coherent. This represents the main finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C128",
+      "C85"
+    ],
+    "result": "FLNB exon 30 splicing may serve as a biomarker for EMT in solid tumors. The strong association between FLNB splicing and EMT features suggests potential utility as a quantifiable molecular biomarker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the association between FLNB exon 30 splicing and EMT is well-established in the study (C8, C83, C84), the utility as a clinical biomarker (C128, C85) is speculative. Validation in independent patient cohorts, assessment of prognostic value, and comparison to existing biomarkers would be needed. The claims are appropriately stated as speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C49"
+    ],
+    "result": "QKI and RBFOX1 induce an intermediate EMT state with high stem cell features. The induced state shows upregulation of mesenchymal markers with retention of epithelial markers, displays high mammosphere formation, and fosters tumor formation in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization of an intermediate state is supported by marker expression data (C130) and functional assays (C131). The retention of epithelial markers while gaining mesenchymal features is consistent with recent models of EMT as a spectrum (C129). The stem cell features are demonstrated by mammosphere and tumor formation assays. This finding aligns with current understanding of EMT biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C135",
+      "C133",
+      "C134",
+      "C136"
+    ],
+    "result": "QKI promotes tumor formation in human mammary epithelial cells, contrasting with its tumor suppressor role in other cancers. This context-dependent function may reflect differences in initial cell states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The tumor-promoting role of QKI in this system is demonstrated (C135, C4). The context-dependent nature is supported by literature showing both tumor suppressor (C133) and oncogenic (C134) roles in different cancers. The speculation about cell state dependence (C136) is reasonable but not directly tested. This highlights the complexity of RBP function in cancer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C138",
+      "C137"
+    ],
+    "result": "The RBFOX1 isoform used in the study (NM_145893.2) shows partial nuclear localization (38%) in breast cells, enabling regulation of pre-mRNA splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The nuclear localization is quantified by immunofluorescence (C138). This addresses a potential concern about the cytoplasmic localization reported in neurons (C137) and validates that this isoform can function in splicing regulation. The quantification is appropriate and provides important validation of the experimental system.",
+    "result_type": "MINOR"
+  }
+]

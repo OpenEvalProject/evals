@@ -1,0 +1,245 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The fluorescent dye method enhances whisker visibility against a dark background. Under blue light with appropriate optical filters, dyed whiskers show enhanced contrast and are readily separable by color, facilitating tracking using standard image processing software (JFilament).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C24-C29 provide converging visual evidence from multiple imaging conditions (white light, blue light with filters) showing enhanced contrast and visibility. Claims C30-C32 demonstrate successful tracking implementation. The visual data in Figures 1A-C and Videos 1-2 directly support these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Fluorescent dye application does not affect behavioral performance in a vibrissal vibrotactile discrimination task. Four rats (two dyed, two sham controls) showed no discernible change in performance before versus after treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 describe a controlled behavioral experiment with appropriate controls (sham treatment). Figure 1D-E shows stable performance across sessions and no difference between groups. The experimental design (dyeing entire vibrissal pad to maximize detection of adverse effects) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The magnitude of the frequency response function (mFRF) serves as a mechanical fingerprint for whiskers. Both FEM simulations and experimental measurements confirm that whiskers behave as tapered beams, with mFRF sensitive to geometry and material parameters. The mFRF provides a quantitative similarity metric (R\u00b2) for comparing whisker mechanical properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C49 and C87-C96 establish the theoretical framework (Euler-Bernoulli beam theory) and validate it through comparison of simulated and experimental data (Figure 2A vs 2C). The similarity between FEM and experimental results (Figure 4A-D) confirms the validity of using mFRF as a mechanical fingerprint. The methodology is well-grounded in established beam theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Fluorescent dye application does not alter whisker mechanical properties. Dynamic response measurements show high similarity (R\u00b2 > 0.8) before and after dye application across all tested whiskers, while nail polish severely altered response (R\u00b2 < 0.3). Mass measurements showed negligible change (<0.7%) after dyeing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 and C82-C84 provide converging evidence from dynamic response measurements (Figure 4B, E, F) and direct mass measurements. The inclusion of nail polish as a positive control (C51) that does alter properties strengthens the conclusion. The R\u00b2 threshold of 0.8 is consistently maintained across all whiskers, and mass change is within measurement error.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The behavioral data support that dye application did not affect whisker mechanical properties, though the authors acknowledge that rats might have compensated for altered properties as they do for whisker clipping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C38 draws an inference from behavioral data, but C39 correctly identifies an alternative explanation. While the subsequent mechanical measurements (C50-C53) resolve this uncertainty by directly showing no mechanical changes, these claims alone represent an acknowledged limitation of behavioral testing that required additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The fluorescent dye method satisfies the criteria for an ideal whisker visualization methodology (simple, low-cost, innocuous, long-lasting, mechanically neutral), but is limited in the number of vibrissae that can be simultaneously tracked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 synthesize the experimental findings to evaluate the method against stated criteria. The supporting data from behavioral tests (C33-C37), mechanical measurements (C50-C53), and photobleaching studies (C85-C86) validate each criterion. Claim C64 acknowledges a genuine limitation, and C65 appropriately suggests future work rather than claiming the problem is solved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "The fluorescent dye exhibits photobleaching with a time constant of approximately 14 hours, equivalent to about 25,000 trials of 2 seconds each.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 describe a controlled photobleaching experiment with continuous illumination. The exponential decay model is appropriate for photobleaching, and the measured time constant provides a practical estimate of dye longevity. However, the manuscript does not provide the actual photobleaching data or fit quality metrics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The dye application protocol involves bleaching whiskers with 3% hydrogen peroxide, then applying semi-permanent hair dye (StarGazer UV Red/Green) for 30 minutes. Semi-permanent dyes are designed to diffuse into and bind to hair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 describe the methodological protocol with appropriate citations to hair chemistry literature (Robbins, 2012). The protocol is clearly documented and reproducible. The citation to human hair diffusivity (C79) provides theoretical context, though direct validation for rat whiskers is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "High-speed videography is the most adequate method for measuring whisker motion, but faces challenges including low contrast, heavy computational requirements, and sensitivity to lighting conditions. Higher luminance contrast could solve many of these challenges, and fluorescence offers advantages including homogeneous light emission and color-based segmentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C16-C22 establish the motivation for the study by reviewing existing methods and their limitations. These claims are supported by appropriate citations and represent established knowledge in the field. The logical progression from identifying problems (C3, C17-C19) to proposing solutions (C20-C22) is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Alternative whisker tracking methods have significant limitations: electrical activity monitoring requires invasive implants and doesn't specify position; particle tracking perturbs dynamics and loses shape information; laser sheet methods require trimming and lose shape information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 review alternative methods with appropriate citations. The limitations are accurately characterized based on the cited literature and physical principles (e.g., added mass affecting dynamics in C14). These claims provide context for why the fluorescent dye method is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Whisker-mediated touch in rodents involves complex sensorimotor processing where whiskers and follicles pre-process tactile information before it reaches the nervous system. Unlike vision, the external stimulus does not adequately describe the sensory input, making whisker visualization critical for understanding sensorimotor processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 and C54-C61 provide background on whisker sensory biology and the rationale for precise whisker tracking. All claims are supported by appropriate citations to established literature. The comparison to vision (C54-C56) effectively illustrates why whisker tracking is uniquely challenging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The study employed appropriate experimental methods including sedation protocols, behavioral testing apparatus, whisker sample collection, mechanical testing setup with high-speed videography (2000 fps), and image processing using Python/OpenCV. The coefficient of determination (R\u00b2) was used as a similarity metric for comparing mFRFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C75 and C97-C103 describe methodological details that are clearly documented and reproducible. The methods are appropriate for the research questions. Ethical approval is documented (C73). The R\u00b2 metric (C103) is a standard and appropriate measure for comparing frequency response functions. However, some details lack justification (e.g., why 10 repetitions in C101, though the rationale about pixel resolution is provided).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "The application of fluorescent dye may affect whisker mass and stiffness, potentially altering tactile perception during behavioral tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claim C23 represents a hypothesis that motivated the study but was subsequently refuted by the experimental data (C50-C53, C82-C84). The claim itself is speculative (marked as SPECULATION in evidence_type) and the study's findings demonstrate this concern was unfounded. This claim is important for understanding the study's motivation but does not represent a supported result.",
+    "result_type": "MINOR"
+  }
+]

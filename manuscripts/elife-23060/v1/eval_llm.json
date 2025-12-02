@@ -1,0 +1,243 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "DT40-WT B cells can discriminate between stiff and soft substrates during B cell activation, showing significantly higher BCR accumulation (MFI ratio >1.5) on stiff versus soft substrates on both PDMS and PA substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 provide converging evidence from multiple substrate types (PDMS and PA) showing consistent stiffness discrimination by DT40-WT B cells. The quantitative BCR MFI ratio metric and visual data in Figures 2A-D support this conclusion. The experimental controls for antigen density and accessibility (Figure 1) strengthen the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Early BCR signaling molecules Lyn, Syk, and PLC\u03b32 are required for B cell discrimination of substrate stiffness. Knockout or pharmacological inhibition of these molecules eliminates stiffness discrimination capability, which can be rescued by exogenous expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C38 demonstrate consistent loss of stiffness discrimination across genetic knockouts (DT40 cells), rescue experiments, and pharmacological inhibition (primary B cells and CH27 cells). The convergence of genetic and pharmacological approaches across multiple cell types provides strong support. Figure 3 and supplements show that inhibition specifically blocks BCR accumulation on stiff substrates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Downstream BCR signaling molecules Btk, BLNK, and PKC\u03b2 are required for B cell discrimination of substrate stiffness. Knockout cells lose discrimination capability, which is rescued by exogenous expression of the respective proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 show consistent loss and rescue of stiffness discrimination for three downstream signaling molecules using DT40 knockout and rescue cell lines. Figure 4 provides quantitative data on both PDMS and PA substrates. The rescue experiments confirm specificity of the phenotype to the knocked-out molecules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C2",
+      "C80"
+    ],
+    "result": "PMA-induced activation of PKC\u03b2 can bypass the requirement for Btk, BLNK, and PLC\u03b32 in substrate stiffness discrimination, but not PKC\u03b2 itself, demonstrating that PKC\u03b2 functions downstream of these molecules in the mechanosensing pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50, C2, and C80 provide dose-dependent rescue data showing PMA restores stiffness discrimination in PLC\u03b32-KO, Btk-KO, and BLNK-KO cells but not PKC\u03b2-KO cells (Figure 5). This epistasis analysis clearly positions PKC\u03b2 downstream of the other molecules. The failure of high-dose PMA (100 ng/ml) to rescue PKC\u03b2-KO cells and the effect of PKC\u03b2 inhibitor on WT cells strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Carma1-KO B cells maintain substrate stiffness discrimination capability, indicating that PKC\u03b2-mediated NF-\u03baB activation is not required for mechanosensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by data in Figure 6A showing Carma1-KO cells retain discrimination capability. This result logically excludes the canonical PKC\u03b2\u2192Carma1\u2192NF-\u03baB pathway from mechanosensing, which is consistent with the rapid timescale of the discrimination response (minutes vs hours for transcriptional changes).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C4",
+      "C3"
+    ],
+    "result": "FAK activation is required for B cell discrimination of substrate stiffness. Pharmacological inhibition or genetic knockout of FAK eliminates discrimination capability. Rescue with FAK-WT but not the Y926F mutant restores discrimination, demonstrating the importance of FAK phosphorylation at this site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57, C4, and C3 provide converging evidence from pharmacological inhibition (multiple cell types), CRISPR/Cas9 knockout, and structure-function analysis with the Y926F mutant. Figure 6B-F shows consistent loss of discrimination across approaches. The mutant rescue experiment (C57) specifically implicates Tyr-926 phosphorylation in the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C81"
+    ],
+    "result": "FAK activation is triggered by BCR engagement in a PKC\u03b2-dependent manner and is preferentially enhanced on stiff substrates. pFAK localizes to the peripheral region of the B cell immunological synapse, while BCRs accumulate centrally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 and C81 demonstrate spatial organization of pFAK (peripheral) vs BCR (central) in the immunological synapse, antigen-dependent FAK activation, preferential activation on stiff substrates (ratio 2.5), and PKC\u03b2-dependence. Figure 6G-K provides imaging and quantitative data. The requirement for antigen (C59) and the PKC\u03b2-dependence (C62-C64) establish the signaling pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C82"
+    ],
+    "result": "pFAK MFI correlates strongly with B cell spreading area, adhesion strength, and BCR accumulation, indicating that PKC\u03b2-dependent FAK activation potentiates B cell spreading and adhesion responses to enable substrate stiffness discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 and C82 show strong correlations (R>0.75) between pFAK levels and three functional parameters (spreading, adhesion, BCR accumulation) in Figure 7. These correlation analyses provide mechanistic insight linking FAK activation to the cellular responses that enable stiffness discrimination. The use of IRM to quantify adhesion strength is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C5"
+    ],
+    "result": "Integrin signaling contributes to substrate stiffness discrimination. EDTA treatment or LFA-1 knockout reduces discrimination capability, while addition of adhesion molecules ICAM-1 or VCAM-1 significantly enhances discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 and C5 demonstrate the role of integrin signaling through loss-of-function (EDTA, LFA-1 KO) and gain-of-function (ICAM-1/VCAM-1 addition) approaches in Figure 8. However, EDTA is a non-specific calcium chelator that could affect BCR signaling broadly, making C68 less definitive than C69. The enhancement by adhesion molecules (C70-C71) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C6"
+    ],
+    "result": "Human primary B cells from both healthy controls and RA patients can discriminate substrate stiffness, but RA patient B cells show altered discrimination with weaker efficiency and preferential BCR accumulation on soft rather than stiff substrates in 6 of 9 paired samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C78 and C6 show that while all samples retain some discrimination capability (ratio >1), RA patients exhibit altered patterns. However, the heterogeneity in the results (6/9 show the expected pattern, 2/9 comparable, 1/9 opposite) and small sample size (n=9 pairs) limit confidence. The lack of clinical correlation data (disease activity, treatment status) and mechanistic validation weakens the interpretation. Statistical analysis of paired samples would strengthen conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Only BCR signaling-dependent, not signaling-independent, accumulation of BCRs is regulated by substrate stiffness during B cell activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by the observation that signaling-deficient cells (various KOs) show similar BCR accumulation on soft substrates as WT cells, but lose preferential accumulation on stiff substrates. This distinguishes passive trapping (signaling-independent) from active recruitment (signaling-dependent) mechanisms. The conclusion is logical given the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The authors propose that B cells evolved high-efficiency substrate stiffness discrimination to distinguish stiff viral capsid antigens from softer self-antigens, potentially explaining why VLP vaccines are more immunogenic than soluble antigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C84 are speculative proposals linking the mechanosensing findings to evolutionary biology and vaccine efficacy. While the hypothesis is plausible and supported by cited literature on antigen stiffness ranges and VLP vaccine efficacy, no direct experimental evidence is provided to test this specific evolutionary or vaccine-related claim. This remains an interesting but unvalidated hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The authors speculate that altered ECM stiffness in RA may drive aberrant activation of auto-reactive B cells through altered mechanosensing, potentially representing a danger signal detection mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C87 are speculative proposals attempting to explain the RA patient data in a pathophysiological context. While the speculation is reasonable given the altered discrimination patterns observed and cited literature on RA B cell hyperactivity, no mechanistic validation or clinical correlation is provided. The proposals remain hypotheses requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C1"
+    ],
+    "result": "Background claims establishing that B cell activation is sensitive to multiple antigen properties, that antigens are presented on substrates with varying stiffness in vivo, and that lymphocyte mechanosensing regulates activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C21 are background knowledge claims supported by appropriate citations to published literature. These establish the context and rationale for the study. The citations appear appropriate and the claims are consistent with established immunology knowledge.",
+    "result_type": "MINOR"
+  }
+]

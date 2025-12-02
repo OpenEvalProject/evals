@@ -1,0 +1,404 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C32"
+    ],
+    "result": "CHO centrioles are on average 440 nm long and taper along their length from a wider proximal end (~235 nm diameter) to a narrower distal end (~220 nm diameter), accounting for the observed tapering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are directly supported by cryoET measurements and visual observations in Figure 1a. Claim C32 provides a mechanistic explanation for the tapering based on diameter measurements from proximal and distal domains, linking the structural observation to quantitative data. The claims are internally consistent and well-supported by imaging data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The CHO centriole TMT structure was determined at ~3.5 nm global resolution (with local resolution 2.4-2.8 nm) and consists of a 13-protofilament A-tubule and 10-protofilament B- and C-tubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural composition (C3) is supported by sub-volume averaging and is consistent with prior work on basal bodies. Resolution claims (C4, C5) are supported by gold standard FSC plots and ResMap calculations shown in supplementary figures. The methodology appears sound with ~2100 subvolumes contributing to the average.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C10",
+      "C42"
+    ],
+    "result": "A prominent microtubule-internal protein (MIP) straddles the gap between A09 and A10 protofilaments at the microtubule seam, and this MIP is conserved between CHO and Drosophila centrioles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The presence and location of the A09/A10 MIP is directly observed in sub-volume averages (C7, C8) at ~3.5 nm resolution. The assignment to the seam (C10) is supported by recent cryoEM work (C9). Conservation across species (C42) strengthens the functional significance. The structural data and cross-species comparison provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "All CHO centrioles in the dataset were significantly flattened in the ice sheet, with some resembling two parallel arrays of triplets rather than 9-fold symmetric structures, though the A-tubule showed only ~10% ellipticity distortion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The flattening is documented through refitting analysis (Figure 1\u2014figure supplement 4) showing the average back into raw data. The ~10% A-tubule distortion (C13) is consistent with published values for basal bodies and axonemes. The authors appropriately acknowledge this artifact and its implications for their analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "At high contour threshold, only the A- and B-tubules and their MIPs represent the core structure of the TMT, while the A-C linker and pinhead are absent, consistent with the pinhead not persisting along the entire centriole length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The high-threshold analysis (Figure 1c) directly demonstrates differential occupancy of structural elements. The absence of pinhead at high contour (C15) is consistent with prior work (C16, Paintrand et al., 1992) showing pinhead does not persist along the entire length. This analysis appropriately distinguishes core from variable structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "CHO centrioles consist of two approximately equally-sized domains: a proximal domain (~200 nm) with complete TMTs, pinhead, and A-C linker, and a distal domain (~200 nm) lacking these structures but containing a novel L-shaped density from the inner A-tubule.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The domain organization is supported by systematic proximal-distal axis averaging (Figure 2) showing clear structural differences. The presence of pinhead and A-C linker in proximal (C18) and their absence in distal (C19) domains is directly visualized. The novel L-shaped density (C20) in the distal domain is a new structural feature clearly shown in the averages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The proximal and distal CHO centriole averages maintained ~3.5 nm resolution despite containing only half the subvolumes, revealing that the A09/A10 MIP is present in both domains while the A11 MIP is absent distally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The resolution maintenance (C21) with half the data demonstrates robust averaging. The differential presence of MIPs (C22, C23) between domains is directly observed in Figure 3 comparisons. This provides important insights into domain-specific protein composition and is well-supported by the imaging data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The distal CHO centriole contains a novel L-shaped density extending from an elaborate inner AB-junction that is structurally distinct from but spatially overlapping with the proximal pinhead, indicating mutual exclusivity of these structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The L-shaped density (C24) is clearly visible in Figure 3b. The structural and positional relationship to the pinhead (C25) is well-reasoned from the overlapping spatial occupancy. The differences in AB-junction complexity between proximal (C26) and distal (C27, C28) domains are directly visualized in Figure 3d-e. The mutual exclusivity inference is logical and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Using published geometry from human lymphoblast centrioles to correct for flattening, the proximal CHO centriole has a diameter of ~235 nm with 9-fold symmetry, while the distal centriole diameter decreases to ~220 nm through ~15\u00b0 inward rotation of triplets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the approach of using published geometry (C29) is reasonable given the flattening artifact, applying geometry from a different species and preparation method introduces uncertainty. The diameter measurements (C30, C31) depend on this correction. The authors acknowledge they cannot directly determine CHO centriole geometry, making these measurements indirect. Additional validation would strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "In the distal CHO centriole, two novel linkages connect adjacent triplets: an L-shaped density zigzagging between inner AB-junctions and a non-canonical A-C linker from A09 to C07/C08, replacing the canonical A-C linker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The novel linkages (C33, C34) are clearly visualized in Figure 4d after applying symmetry. The structural description is detailed and specific. The inference that these structures replace the canonical A-C linker (C35) is logical given the absence of the canonical linker and the need to maintain centriole integrity. The geometry-corrected reconstructions provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Drosophila S2 centrioles are ~175 nm long, composed predominantly of doublet microtubules (with some singlets) symmetrically arranged around a central hub, with brush-like PCM structures extending between DMTs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The length measurement (C36) and structural composition (C37, C38) are directly observed in cryoET data. The end-on views (Figure 5a) clearly show the DMT/SMT composition and symmetrical arrangement. The brush-like PCM structures (C39) are visible in the tomograms. These observations provide a clear structural characterization of fly centrioles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The fly DMT structure was determined at ~3.5 nm resolution, showing a 13-protofilament A-tubule and 10-protofilament B-tubule with a conserved A09/A10 MIP but lacking the mammalian B01/B02 MIP, yet maintaining B-tubule curvature and A11-B01 connection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The resolution (C40) and composition (C41) are supported by ~3000 subvolumes and FSC analysis. The conservation of A09/A10 MIP (C42) and absence of B01/B02 MIP (C43) are directly observed through comparison with CHO data. The inference that B-tubule curvature is maintained without the MIP (C44, C45) is well-supported and suggests the MIP is not essential for B-tubule structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The fly DMT has a more elaborate pinhead than CHO making additional contacts with A02 and the inner AB-junction, plus two novel densities (hinge-like from A05/A06 and wishbone-shaped near A08) not observed in CHO TMTs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The elaborated pinhead (C46) and novel densities (C47, C48) are clearly visible in Figure 5b. The high-threshold analysis (C49) confirms the pinhead is a core structure in fly centrioles. These structural differences between fly and mammalian centrioles are well-documented and represent genuine species-specific variations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The fly centriole lacks the distal domain identified in CHO centrioles, as evidenced by pinhead presence and absence of L-shaped density, with B-tubule heterogeneity showing weakest density for B03-B06 protofilaments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inference about lacking a distal domain (C50) is well-reasoned from the presence of pinhead and absence of L-shaped density throughout the fly centriole. The B-tubule heterogeneity pattern (C51) is distinct from CHO C-tubule heterogeneity and is directly observed in Figure 5c. This supports the conclusion that fly centrioles have a different organization than mammalian centrioles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "End-on fly centrioles showed no flattening and their geometry closely matched the flattening-corrected proximal CHO centriole, with a smaller diameter (~210 nm vs. ~235 nm) attributable to the absence of C-tubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation of unflattened end-on centrioles (C52) provides important validation of the geometry correction approach. The geometric similarity to CHO proximal centrioles (C53) supports conservation of core architecture. The diameter difference (C54) and its attribution to C-tubule absence (C55) is logical and well-supported by the structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Fly DMTs are connected through a novel A-A linker consisting of a hinge-like density from A05/A06 connecting to the elaborated pinhead of the adjacent DMT, with a hollow cone structure likely representing PCM attachment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The A-A linker structure (C56, C57) is clearly visualized in the reconstructed centriole (Figure 6). The detailed structural description is specific and well-supported. The reinterpretation of the wishbone structure as a hollow cone (C58, C59) in context is reasonable. The inference about PCM attachment (C60) is supported by consistency with brush-like structures in raw data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Partial B-tubules in fly centrioles with flanking segments B01-B02 and B07-B10 but lacking B03-B06 represent kinetic intermediates, suggesting bidirectional B-tubule construction from both junctions, with entire rods being either complete or partial DMTs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The structural observation of partial B-tubules (C62, C63) is supported by 3D classification and averaging (N=226). However, the interpretation as kinetic intermediates (C64, C65) versus damaged structures is uncertain. The authors acknowledge (C107) they cannot exclude the possibility of damage during preparation. The distribution pattern (C66) supports the intermediate interpretation, but alternative explanations are not fully ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C70"
+    ],
+    "result": "Mammalian and fly centrioles share a broadly similar quasi-9-fold symmetrical cylindrical architecture, but achieve this through completely different microtubule linkages, with the mammalian proximal domain sharing geometry with the fly centriole.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a well-supported summary conclusion integrating multiple structural observations. The architectural similarity (C67) is evident from the reconstructions. The linkage differences (C68) - A-C linker in mammals vs. A-A linker in flies - are clearly demonstrated. The geometric similarity between mammalian proximal and fly centrioles (C70) is supported by direct comparison (Figure 6\u2014figure supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C69",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The mammalian centriole has two distinct domains, with the distal domain generating axoneme-like geometry and potentially providing a transitional region for templating both motile and sensory axonemes, a capability absent in somatic fly centrioles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The two-domain organization (C69) is well-established by the structural data. The axoneme-like geometry of the distal domain (C71, C88) is supported by diameter measurements and structural comparisons. The model about templating capability (C72) is speculative but reasonable given the structural data and known functional differences. The absence in fly centrioles (C73) is supported by the lack of a distal domain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "All centrioles share a common core ~200 nm in length, but mammalian centrioles are distally extended beyond this core.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion (C83, C84) is well-supported by the comparative structural analysis showing fly centrioles (~175 nm) correspond to the proximal domain of mammalian centrioles (~200 nm proximal + ~200 nm distal). The conservation of the proximal/core domain across species and the mammalian-specific distal extension is clearly demonstrated by the structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C6",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The cartwheel is absent from mature CHO centrioles, and the pinhead terminates abruptly at ~200 nm, suggesting precise length determination possibly through active cartwheel length control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The absence of cartwheel (C6) is supported by cryoET data and consistent with prior work on cartwheel removal during cell cycle progression. The abrupt pinhead termination (C89, C90) is observed in the proximal-distal averaging. The speculation about cartwheel-based length control (C91) is reasonable and supported by recent work (C92, Aydogan et al., 2018) showing active cartwheel length regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The A09-A10 seam region with its MIP and larger spacing may provide extra stability and create unique binding sites, with B01 binding laterally to A10 and both canonical and non-canonical A-C linkers binding to A09, making this a functional hotspot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The structural observations (C94, C95, C97) are well-supported by the high-resolution maps. However, the functional interpretations (C93, C96, C98) are speculative. While the proposals are reasonable and consistent with the structural data, they lack direct functional validation. The authors appropriately present these as hypotheses, but experimental evidence would be needed to confirm the proposed roles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The B01/B02 and C01/C02 MIPs may enhance B- and C-tubule construction kinetics and likely share molecular components, possibly corresponding to the TED complex (delta/epsilon tubulins), which is absent in Drosophila along with these MIPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The functional speculation about construction kinetics (C99, C100) is reasonable given the partial B-tubules in S2 cells, but lacks direct evidence. The inference about shared components (C101) is logical from structural similarity. The TED complex hypothesis (C102) is intriguing and consistent with the data, supported by prior work (C103) and the correlation between TED absence and MIP absence (C104, C105). However, definitive molecular identification requires additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The 9-fold symmetry of cilia is universally conserved, with ancestral triplet microtubule architecture maintained across evolution, and previous studies established A-C linker connections in basal bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C74-C78) represent established knowledge from prior work and are appropriately cited. They provide important context for interpreting the current findings. The citations to Carvalho-Santos et al., 2011 and others support these background claims. This contextual information is accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The A-A linker connection strategy may be employed in other organisms without TMTs like C. elegans, serves as the primary PCM anchor point in flies, and evolution prioritizes maintaining centriole geometry which is instructive for cilium geometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The speculation about C. elegans (C79) is reasonable but unproven. The PCM anchor inference (C80) is supported by structural location and prior work on PCM proteins, though direct evidence is limited. The evolutionary interpretation (C81, C82) about geometry conservation is well-reasoned from the data showing diverse linkages but conserved geometry, but represents interpretation rather than direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Fly DMT centrioles form only sensory cilia while mammalian TMT centrioles form both motile and sensory cilia, potentially due to the distal extension in mammalian centrioles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The functional capabilities (C85, C86) are established knowledge about these systems. However, the causal link to the distal extension (C87) is speculative. While the correlation is intriguing and the hypothesis is reasonable, the authors appropriately present this as speculation ('tempting to speculate'). Direct functional evidence linking the distal domain to motile cilium formation would be needed to support this claim definitively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Microtubule stubs similar to those in S2 centrioles have been observed in thermally fractionated sea urchin DMTs, though the possibility that S2 stubs represent damaged B-tubules cannot be excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge both the similarity to prior observations (C106, Linck et al., 2014) and the alternative interpretation (C107) that the structures might represent damage. This balanced presentation of uncertainty is scientifically appropriate. The acknowledgment of limitations strengthens rather than weakens the overall work.",
+    "result_type": "MINOR"
+  }
+]

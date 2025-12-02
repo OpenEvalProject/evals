@@ -1,0 +1,833 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Many studies in the biomedical research literature report analyses that fail to recognise important data dependencies from multilevel or complex experimental designs.",
+    "claim_type": "EXPLICIT",
+    "source": "Many studies in the biomedical research literature report analyses that fail to recognise important data dependencies from multilevel or complex experimental designs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about the state of the literature, supported by the context of the manuscript and citations provided elsewhere in the document.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Statistical inferences resulting from analyses that fail to recognize data dependencies are unlikely to be valid and are often potentially highly misleading.",
+    "claim_type": "EXPLICIT",
+    "source": "Statistical inferences resulting from such analyses are unlikely to be valid and are often potentially highly misleading.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the simulation study and examples presented in the manuscript.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Failure to recognise data dependencies as a problem is often referred to in the statistical literature as a unit of analysis (UoA) issue.",
+    "claim_type": "EXPLICIT",
+    "source": "Failure to recognise this as a problem is often referred to in the statistical literature as a unit of analysis (UoA) issue.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established terminology in the statistical literature.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The experimental unit is the smallest object or material that can be randomly and independently assigned to a particular treatment or intervention in an experiment.",
+    "claim_type": "EXPLICIT",
+    "source": "The experimental unit is the smallest object or material that can be randomly and independently assigned to a particular treatment or intervention in an experiment (Mead et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This definition is supported by a citation to Mead et al., 2012.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "In the simplest possible experimental setting where each experimental unit provides a single outcome or observation, the experimental unit is the same as both the unit of observation and the unit of analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "In the simplest possible experimental setting where each experimental unit provides a single outcome or observation, and only in this setting, the experimental unit is the same as both the unit of observation (i.e the unit described by the observed outcomes) and the unit of analysis (UoA) (i.e. that which is analysed).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical statement about experimental design principles.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "In laboratory based research in the biomedical sciences it is almost always the case that multiple observations or measurements are made for each experimental unit.",
+    "claim_type": "EXPLICIT",
+    "source": "In laboratory based research in the biomedical sciences it is almost always the case that multiple observations or measurements are made for each experimental unit.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general observation about common practice in biomedical laboratory research.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Multiple observations from a single sample allow the variability of the measure and the stability of the experimental setting to be assessed.",
+    "claim_type": "EXPLICIT",
+    "source": "These multiple observations, which could be simple replicate measurements from a single sample or observations from multiple sub-samples taken from a single sample, allow the variability of the measure and the stability of the experimental setting to be assessed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the purpose and benefit of multiple observations.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Multiple observations improve the overall statistical power of a research study.",
+    "claim_type": "EXPLICIT",
+    "source": "They improve the overall statistical power of a research study.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a well-established principle in statistical design.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Multiple or repeat observations taken from the same experimental unit tend to be more similar than observations taken from different experimental units, irrespective of the treatments applied or when no treatments are applied.",
+    "claim_type": "EXPLICIT",
+    "source": "However, multiple or repeat observations taken from the same experimental unit tend to be more similar than observations taken from different experimental units, irrespective of the treatments applied or when no treatments are applied.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a fundamental principle about data correlation within experimental units.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Data within experimental units are likely to be dependent (correlated), whereas data from different experimental units are generally assumed to be independent.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore data within experimental units are likely to be dependent (correlated), whereas data from different experimental units are generally assumed to be independent, all other things being equal (i.e after removing the direct and indirect effects of the experimental interventions and setting).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This follows logically from the previous claim about similarity of observations.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "The majority of widely reported statistical methods (e.g. t-tests, analyses of variance, generalized linear models, chi-squared tests) assume independence between all observations in an analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "The majority of widely reported statistical methods (e.g. t-tests, analyses of variance, generalized linear models, chi-squared tests) assume independence between all observations in an analysis, possibly after conditioning on other observed data variables.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a well-established fact about standard statistical methods.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Many studies reported in the biomedical research literature using multilevel design fail to recognise that independence assumptions are unlikely to be valid.",
+    "claim_type": "EXPLICIT",
+    "source": "However, many studies reported in the biomedical research literature using multilevel design, often also referred to as mixed-effects, nested or hierarchical designs (Gelman and Hill, 2007), or more complex structured designs, fail to recognise the fact that independence assumptions are unlikely to be valid, and thus the reported analyses are also unlikely to be valid.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a critical observation about common errors in the literature, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Statistical inferences made from analyses that ignore invalid independence assumptions are often highly misleading.",
+    "claim_type": "EXPLICIT",
+    "source": "Statistical inferences made from such analyses are often highly misleading.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This follows from the violation of statistical assumptions.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "UoA issues are recognised as a major cause of concern for reported analyses in bioscience and medicine.",
+    "claim_type": "EXPLICIT",
+    "source": "UoA issues, as they are termed in the statistical literature (Altman and Bland, 1997), are not limited to biomedical laboratory studies, and are recognised as a major cause of concern more generally for reported analyses in bioscience and medicine (Aarts et al., 2014; Altman and Bland, 1997; Bunce et al., 2014; Fleming et al., 2013; Lazic, 2010; Calhoun et al., 2008; Divine et al., 1992)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations to the literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "UoA issues feed into widely acknowledged issues around the lack of reproducibility and repeatability of much biomedical research.",
+    "claim_type": "EXPLICIT",
+    "source": "and also feed into widely acknowledged issues around the lack of reproducibility and repeatability of much biomedical research (Academy of Medical Sciences, 2017; Bustin and Nolan, 2016; Ioannidis et al., 2014; McNutt, 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations linking UoA issues to reproducibility problems.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "The RIPOSTE framework was established to support the dialogue between scientists and statisticians in order to improve the design, conduct and analysis of laboratory studies in biomedical sciences in order to reduce irreproducibility.",
+    "claim_type": "EXPLICIT",
+    "source": "The RIPOSTE (Reducing IrreProducibility in labOratory STudiEs) framework was established to support the dialogue between scientists and statisticians in order to improve the design, conduct and analysis of laboratory studies in biomedical sciences in order to reduce irreproducibility (Masca et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the purpose of the RIPOSTE framework, supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "If all observations are treated equally in an analysis, ignoring the dependency in the data that arises from multiple observations from each sample, this leads to inflation of the false positive (type I error) rate.",
+    "claim_type": "EXPLICIT",
+    "source": "If all observations are treated equally in an analysis, ignoring the dependency in the data that arises from multiple observations from each sample, this leads to inflation of the false positive (type I error) rate and incorrect (often highly inflated) estimates of statistical power, resulting in invalid statistical inference (see Appendix 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the simulation study in Appendix 1.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Ignoring data dependency leads to incorrect (often highly inflated) estimates of statistical power.",
+    "claim_type": "EXPLICIT",
+    "source": "If all observations are treated equally in an analysis, ignoring the dependency in the data that arises from multiple observations from each sample, this leads to inflation of the false positive (type I error) rate and incorrect (often highly inflated) estimates of statistical power, resulting in invalid statistical inference (see Appendix 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the simulation study in Appendix 1.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Errors due to incorrect identification of the experimental unit were identified as an issue of concern in clinical medicine more than 20 years ago.",
+    "claim_type": "EXPLICIT",
+    "source": "Errors due to incorrect identification of the experimental unit were identified as an issue of concern in clinical medicine more than 20 years ago, and continue to be so (Altman and Bland, 1997).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a historical statement supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "The majority of UoA issues involve multiple counting of measurements from individual subjects (experimental units).",
+    "claim_type": "EXPLICIT",
+    "source": "The majority of such UoA issues involve multiple counting of measurements from individual subjects (experimental units); these issues have particular traction in for instance orthopaedics, ophthalmics and dentistry, where they typically result from measurements on right and left hips, knees or eyes of a study participant or a series of measurements on many teeth from the same person.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation about common types of UoA errors with specific examples.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Poor standards of reporting of experiments using animals were highlighted by Kilkenny et al., 2009, with specific mention of the poor reporting of the number of experimental units.",
+    "claim_type": "EXPLICIT",
+    "source": "For instance, work by (Kilkenny et al., 2009) highlighted poor standards of reporting of experiments using animals, and made specific mention of the poor reporting of the number of experimental units",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about findings from a cited study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The ARRIVE guidelines explicitly require authors to report the study experimental unit when describing the design.",
+    "claim_type": "EXPLICIT",
+    "source": "this work led directly to the ARRIVE guidelines (Animal Research: Reporting of In Vivo Experiments; Kilkenny et al., 2010) that explicitly require authors to report the study experimental unit when describing the design.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the requirements of the ARRIVE guidelines, supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "The recent Academy of Medical Sciences symposium on the reproducibility and reliability of biomedical research specifically highlighted poor experimental design and inappropriate analysis as key problem areas.",
+    "claim_type": "EXPLICIT",
+    "source": "The recent Academy of Medical Sciences symposium on the reproducibility and reliability of biomedical research (Academy of Medical Sciences, 2017) specifically highlighted poor experimental design and inappropriate analysis as key problem areas",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about findings from a cited symposium.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Where there are clusters of subjects, the correlation between observations within clusters will have an impact on the sample size.",
+    "claim_type": "EXPLICIT",
+    "source": "Where there are clusters of subjects (e.g. as in Design case (ii)), then the correlation between observations within clusters will have an impact on the sample size (Hemming et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to Hemming et al., 2011.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Incorrect analysis of data that have known or expected dependencies leads to inflation of the false positive rate (type I error rate) and invalid estimates of statistical power.",
+    "claim_type": "EXPLICIT",
+    "source": "Incorrect analysis of data that have known or expected dependencies leads to inflation of the false positive rate (type I error rate) and invalid estimates of statistical power, leading to incorrect statistical inference; a simulation study (Appendix 1) shows how various design characteristics can affect the properties of a hypothetical study.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the simulation study in Appendix 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "In Example 1, six subjects diagnosed with colorectal cancer underwent neoadjuvant therapy comprising of a short course of radiotherapy (RT) over one week prior to resection surgery.",
+    "claim_type": "EXPLICIT",
+    "source": "Six subjects diagnosed with colorectal cancer, after confirmatory magnetic resonance imaging, underwent neoadjuvant therapy comprising of a short course of radiotherapy (RT) over one week prior to resection surgery.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design of Example 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "In Example 1, these subjects were compared with six additional cancer subjects, of similar age and disease severity, who did not receive the adjuvant therapy.",
+    "claim_type": "EXPLICIT",
+    "source": "These subjects were compared with six additional cancer subjects, of similar age and disease severity, who did not receive the adjuvant therapy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the control group in Example 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The aim of the Example 1 study was to assess whether the therapy reduced lymph node size in the resection specimen.",
+    "claim_type": "EXPLICIT",
+    "source": "The aim of the study was to assess whether the therapy reduced lymph node size in the resection specimen (i.e. the sample removed during surgery).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This states the research objective of Example 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "In Example 1, the resection specimen for each subject was divided into two sub-samples after collection, and each was fixed in formalin for 48-72 hr.",
+    "claim_type": "EXPLICIT",
+    "source": "The resection specimen for each subject was divided into two sub-samples after collection, and each was fixed in formalin for 48-72 hr.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the sample processing in Example 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "In Example 1, three slices per sub-sample were collected for each subject.",
+    "claim_type": "EXPLICIT",
+    "source": "Three slices per sub-sample were collected for each subject.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the sampling design in Example 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "In the naive analysis of Example 1, there is reasonable evidence to support a statistically significant difference in mean lymph node size between those subjects who received RT (Short RT) and those who did not (None); mean in group None = 2.403 mm and in group RT Short = 2.120 mm, difference in means = 0.283 mm (95% CI; 0.057 to 0.508), with a t-statistic = 2.501 on 70 degrees of freedom, and a p-value = 0.015.",
+    "claim_type": "EXPLICIT",
+    "source": "This shows that there is reasonable evidence to support a statistically significant difference in mean lymph node size between those subjects who received RT (Short RT) and those who did not (None); mean in group None = 2.403 mm and in group RT Short = 2.120 mm, difference in means = 0.283 mm (95% CI; 0.057 to 0.508), with a t-statistic = 2.501 on 70 degrees of freedom, and a p-value = 0.015.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This presents the results of the naive statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "It is highly likely that the lymph node sizes for repeat slices for any particular sample for a subject are more similar than size measurements from other subjects.",
+    "claim_type": "EXPLICIT",
+    "source": "It seems highly likely that the lymph node sizes for repeat slices for any particular sample for a subject are more similar than size measurements from other subjects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about data structure based on the experimental design.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "It might be expected that lymph node sizes for the two samples for each subject are more similar than lymph nodes size measurements from other subjects.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, it might be expected that lymph node sizes for the two samples for each subject are more similar than lymph nodes size measurements from other subjects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about data structure based on the experimental design.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Visual inspection of Figure 1 shows that data from repeat slices within samples are more similar (clustered together) than data from the repeat samples within each subject.",
+    "claim_type": "EXPLICIT",
+    "source": "It is clear, from a visual inspection alone of Figure 1, that data from repeat slices within samples are more similar (clustered together) than data from the repeat samples within each subject.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by visual inspection of Figure 1.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Visual inspection of Figure 1 shows that data from the multiple samples and slices for each subject are generally clustered together.",
+    "claim_type": "EXPLICIT",
+    "source": "And also that data from the multiple samples and slices for each subject are generally clustered together; data from a single subject are usually very different from other subjects, irrespective of the RT grouping.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by visual inspection of Figure 1.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "In the subject-based analysis of Example 1, there is no evidence to support a statistically significant difference in mean lymph node size between those subjects who received RT (Short RT) and those who did not (None); mean in group None = 2.403 mm and in group RT Short = 2.120 mm, difference in means = 0.283 mm (95% CI; -0.321 to 0.886), with a t-statistic = 1.043 on 10 degrees of freedom, and a p-value = 0.322.",
+    "claim_type": "EXPLICIT",
+    "source": "Using the mean lymph node size for each subject as the summary measure (subjects 1 to 12; 1.85, 2.78, 1.79, 2.24, 3.15, 2.60, 2.42, 1.57, 1.82, 2.26, 2.02, and 2.62 mm), a t-test shows that there is no evidence to support a statistically significant difference in mean lymph node size between those subjects who received RT (Short RT) and those who did not (None); mean in group None = 2.403 mm and in group RT Short = 2.120 mm, difference in means = 0.283 mm (95% CI; -0.321 to 0.886), with a t-statistic = 1.043 on 10 degrees of freedom, and a p-value = 0.322.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This presents the results of the subject-based statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "In the linear mixed-effects analysis of Example 1, the difference in means = 0.283 mm (95% CI; -0.321 to 0.886), with a p-value = 0.322 (t-statistic = 1.043 on 10 degrees of freedom).",
+    "claim_type": "EXPLICIT",
+    "source": "Fitting such a mixed-effects model gives the following estimate for the intervention effect (RT treatment groups); difference in means = 0.283 mm (95% CI; -0.321 to 0.886), with a p-value = 0.322 (t-statistic = 1.043 on 10 degrees of freedom).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This presents the results of the mixed-effects statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "For a balanced design, intervention effect estimates for the mixed-effects model are equivalent to those from the subject-based analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "For a balanced design, intervention effect estimates for the mixed-effects model are equivalent to those from the subject-based analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a property of balanced designs in mixed-effects models.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "In Example 1, the variability in lymph node size between subjects was three and half times more than the variability between samples.",
+    "claim_type": "EXPLICIT",
+    "source": "Squaring to get variances, indicates that the variability, in lymph node size, between subjects was three and half times more than the variability between samples, and nearly thirteen times as much as the variability between repeat slices within samples.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is calculated from the variance component estimates.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "In Example 1, the variability in lymph node size between subjects was nearly thirteen times as much as the variability between repeat slices within samples.",
+    "claim_type": "EXPLICIT",
+    "source": "Squaring to get variances, indicates that the variability, in lymph node size, between subjects was three and half times more than the variability between samples, and nearly thirteen times as much as the variability between repeat slices within samples.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is calculated from the variance component estimates.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "The large value of ICC_P (0.733) demonstrates why the independence assumption required for the naive analysis is wrong.",
+    "claim_type": "EXPLICIT",
+    "source": "This large value, which represents the correlation between two randomly selected observations on the same subject, shows why the independence assumption required for the naive analysis is wrong (i.e. independence implies that ICC = 0).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the calculated ICC value.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "In Example 1, comparing the full multilevel model to a model with subject effect only gives a LRT = 39.92 and p-value < 0.001, providing strong support in favour of the full multilevel model.",
+    "claim_type": "EXPLICIT",
+    "source": "Constructing such a model and comparing to the more complex model gives a LRT = 39.92 and p-value < 0.001, providing strong support in favour of the full multilevel model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This presents the results of a likelihood ratio test comparing models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Inspection of the residual plots for the lymph node size data show that assumptions of approximate Normality are reasonable.",
+    "claim_type": "EXPLICIT",
+    "source": "Inspection of the residual plots for the lymph node size data, show that assumptions of approximate Normality are reasonable; e.g. the quantile-quantile plot of the residuals from the model fit fall (approximately) along a straight line when plotted against theoretical residuals from a Normal distribution.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on visual inspection of Figure 2.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "In the unbalanced data analysis of Example 1 (after randomly removing 50% of the data), the estimated difference in lymph node size between groups = 0.263 mm (95% CI; -0.397 to 0.922), with a p-value = 0.391.",
+    "claim_type": "EXPLICIT",
+    "source": "Repeating the above mixed-effects analysis after randomly removing 50% of the data (see Table 2), gives an estimated difference in lymph node size between groups = 0.263 mm (95% CI; -0.397 to 0.922), with a p-value = 0.391",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This presents the results of the mixed-effects analysis on unbalanced data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The estimates from the unbalanced data analysis are very similar to estimates from the complete data, despite using only half the data.",
+    "claim_type": "EXPLICIT",
+    "source": "These are, perhaps surprisingly given that only half the data from the previous analysis are being used, very similar to estimates from the complete data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison of results from balanced and unbalanced analyses.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "In the unbalanced setting, the subject-based analysis is no longer valid, as it ignores the variation in sample sizes between subjects.",
+    "claim_type": "EXPLICIT",
+    "source": "However, in the unbalanced setting the subject-based analysis is no longer valid, as it ignores the variation in sample sizes between subjects",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the limitations of subject-based analysis in unbalanced designs.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "In Example 2, five samples were processed for each of twelve subjects.",
+    "claim_type": "EXPLICIT",
+    "source": "Five samples were processed for each of twelve subjects, in an equivalent design to the lymph node size study",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the sampling design in Example 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "In the naive logistic regression analysis of Example 2, the odds-ratio is 0.31 (95% CI; 0.18 to 0.51; p-value < 0.001) providing very strong evidence that lymph node diameters were lower in the RT Short group.",
+    "claim_type": "EXPLICIT",
+    "source": "This is the result one would obtain by conventional logistic regression analysis; odds-ratio 0.31 (95% CI; 0.18 to 0.51; p-value < 0.001) providing very strong evidence that lymph node diameters were lower in the RT Short group.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This presents the results of the naive logistic regression analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "In Example 2, variation within subjects is much less than between subjects.",
+    "claim_type": "EXPLICIT",
+    "source": "However, one should be instinctively cautious about this result, as it is clear from Table 3 that variation within subjects is much less than between subjects; i.e. some subjects have low counts across all samples and others have high counts across all samples.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is observed from the data in Table 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "In the GLME analysis of Example 2, the estimated odds-ratio for the Short RT group is 0.26 (95% CI; 0.09 to 0.78; p-value = 0.016).",
+    "claim_type": "EXPLICIT",
+    "source": "Fitting a GLME model with a subject random effect, gives an estimated odds-ratio for the Short RT group of 0.26 (95% CI; 0.09 to 0.78; p-value = 0.016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This presents the results of the GLME analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "In Example 2, the level of significance associated with the result is massively overstated in the simple logistic regression, due to the much smaller estimate of the standard error of the log odds-ratio (0.264 for logistic regression versus 0.564 for the mixed-effects logistic regression).",
+    "claim_type": "EXPLICIT",
+    "source": "The overall conclusions of the study have not changed, however the level of significance associated with the result is massively overstated in the simple logistic regression, due to the much smaller estimate of the standard error of the log odds-ratio (0.264 for logistic regression versus 0.564 for the mixed-effects logistic regression).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This compares the standard errors from the two analysis approaches.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Failing to properly account for the difference in variability between measurements made on the same subject relative to the variability in measurements between subjects results in overoptimistic conclusions.",
+    "claim_type": "EXPLICIT",
+    "source": "By failing to properly account for the difference in variability between measurements made on the same subject relative to the variability in measurements between subjects results in overoptimistic conclusions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general conclusion drawn from the Example 2 analysis.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "The simulation study shows that the false positive rate can be extremely high if analyses are undertaken that do not respect well known statistical principles.",
+    "claim_type": "EXPLICIT",
+    "source": "The simulation study (Appendix 1) shows that the false positive rate can be extremely high and efficiency very low if analyses are undertaken that do not respect well known statistical principles.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This refers to findings from the simulation study in Appendix 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "The simulation study shows that efficiency can be very low if analyses are undertaken that do not respect well known statistical principles.",
+    "claim_type": "EXPLICIT",
+    "source": "The simulation study (Appendix 1) shows that the false positive rate can be extremely high and efficiency very low if analyses are undertaken that do not respect well known statistical principles.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This refers to findings from the simulation study in Appendix 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "The RIPOSTE framework called for the prospective registration and publication of study protocols for laboratory studies.",
+    "claim_type": "EXPLICIT",
+    "source": "The RIPOSTE framework (Masca et al., 2015) called for the prospective registration (Altman, 2014) and publication of study protocols for laboratory studies",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about recommendations from the RIPOSTE framework, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "Prospective registration and publication of study protocols would go a long way towards addressing UoA issues by causing increased scrutiny at all stages of an experimental study.",
+    "claim_type": "EXPLICIT",
+    "source": "which we believe if implemented would go a long way towards addressing many of the issues discussed here by causing increased scrutiny at all stages of an experimental study.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative claim about the potential benefits of protocol registration.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "The lack of appreciation of the importance of UoA issues in laboratory science may be due to the misconception that the within subject associations observed for human subjects arise mainly from the subjective nature of the measures used in clinical trials on human subjects.",
+    "claim_type": "EXPLICIT",
+    "source": "The lack of appreciation of the importance of UoA issues in laboratory science may be due to the misconception that the within subject associations observed for human subjects arise mainly from the subjective nature of the measures used in clinical trials on human subjects; e.g. patient-reported outcomes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative explanation for why UoA issues are underappreciated in laboratory science.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "Mixed-effects models are now routinely used in the medical and social sciences to allow for clustering in patient data from a recruiting centre in a clinical trial, or to model the association in outcomes within schools and classrooms from students.",
+    "claim_type": "EXPLICIT",
+    "source": "Mixed-effects models are now routinely used in the medical and social sciences (where they are often known as multilevel models), to for instance allow for the clustering in patient data from a recruiting centre in a clinical trial, or to model the association in outcomes within schools and classrooms from students (Brown and Prescott, 2015; Snijders and Bosker, 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the use of mixed-effects models in other fields, supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "Mixed-effects models originated from the work of pioneering statistician/geneticist R. A. Fisher.",
+    "claim_type": "EXPLICIT",
+    "source": "Mixed-effects models originated from the work of pioneering statistician/geneticist R. A. Fisher (Fisher, 1919)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a historical statement supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "Mixed-effects models have led to extensive and very early use in agricultural field experimentation.",
+    "claim_type": "EXPLICIT",
+    "source": "whose classic texts on experimental design have led to their extensive and very early use in agricultural field experimentation (Mead et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a historical statement about the application of mixed-effects models, supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "Mixed-effects models are not used as widely in biomedical laboratory studies as in many other scientific disciplines.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the use of mixed-effects models in the biological sciences has not spread from the field to the laboratory.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation about the relative use of mixed-effects models across disciplines.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "The lack of widespread use of mixed-effects models in biomedical laboratory studies is most likely simply a matter of lack of knowledge and convention.",
+    "claim_type": "EXPLICIT",
+    "source": "This is most likley simply a matter of lack of knowledge and convention; if colleagues or peers do not routinely use these methods then why should I?",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative explanation for the lack of adoption of mixed-effects models.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  }
+]

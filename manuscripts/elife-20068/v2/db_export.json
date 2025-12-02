@@ -1,0 +1,2222 @@
+{
+  "submission": {
+    "id": "09d4cb74-fe74-4d27-b048-93641a7cc2ea",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:22:32.137218Z",
+    "updated_at": "2025-12-01T19:22:32.137218Z"
+  },
+  "content": [
+    {
+      "id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "submission_id": "09d4cb74-fe74-4d27-b048-93641a7cc2ea",
+      "content_type": "manuscript",
+      "content_text": "# Methylated cis-regulatory elements mediate KLF4-dependent gene transactivation and cell migration\n\n## Authors\n\n- Jun Wan<sup>1</sup>\n- Yijing Su<sup>2</sup>\n- Qifeng Song<sup>4</sup>\n- Brian Tung<sup>2</sup>\n- Olutobi Oyinlade<sup>4</sup> ([ORCID: 0000-0002-8932-2764](https://orcid.org/0000-0002-8932-2764))\n- Sheng Liu<sup>1</sup>\n- Mingyao Ying<sup>2</sup>\n- Guo-li Ming<sup>2</sup>\n- Hongjun Song<sup>2</sup>\n- Jiang Qian<sup>1</sup> \u2020\n- Heng Zhu<sup>2</sup> \u2020\n- Shuli Xia<sup>2</sup> ([ORCID: 0000-0001-5849-6967](https://orcid.org/0000-0001-5849-6967)) \u2020\n\n### Affiliations\n\n1. The Wilmer Eye Institute Johns Hopkins University School of Medicine Baltimore United States\n2. Department of Neurology Johns Hopkins University School of Medicine Baltimore United States\n3. Institute for Cell Engineering Johns Hopkins University School of Medicine Baltimore United States\n4. Department of Pharmacology and Molecular Sciences Johns Hopkins University School of Medicine Baltimore United States\n5. Center for High-Throughput Biology Johns Hopkins University School of Medicine Baltimore United States\n6. Hugo W Moser Research Institute at Kennedy Krieger Baltimore United States\n7. The Solomon Snyder Department of Neuroscience Johns Hopkins University School of Medicine Baltimore United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAltered DNA methylation status is associated with human diseases and cancer; however, the underlying molecular mechanisms remain elusive. We previously identified many human transcription factors, including Kr\u00fcppel-like factor 4 (KLF4), as sequence-specific DNA methylation readers that preferentially recognize methylated CpG (mCpG), here we report the biological function of mCpG-dependent gene regulation by KLF4 in glioblastoma cells. We show that KLF4 promotes cell adhesion, migration, and morphological changes, all of which are abolished by R458A mutation. Surprisingly, 116 genes are directly activated via mCpG-dependent KLF4 binding activity. In-depth mechanistic studies reveal that recruitment of KLF4 to the methylated cis-regulatory elements of these genes result in chromatin remodeling and transcription activation. Our study demonstrates a new paradigm of DNA methylation-mediated gene activation and chromatin remodeling, and provides a general framework to dissect the biological functions of DNA methylation readers and effectors.\n\n## Introduction\n\nDNA methylation at the five position of the cytosine base (5mC) is the primary epigenetic modification on the mammalian genomic DNA (Jaenisch and Bird, 2003), and dysregulation of DNA methylation is a hallmark of various diseases and cancer (Sharma et al., 2010). CpG methylation in cis-regulatory elements is generally believed to repress gene expression by disrupting transcription factor (TF)-DNA interactions directly or indirectly via the recruitment of proteins containing methyl-CpG-binding domain (MBD), which are largely sequence independent (Boyes and Bird, 1991). This dogma has been challenged by several recent studies in which many TFs were identified as a new class of sequence-specific methylated DNA readers (Filion et al., 2006; Mann et al., 2013; Rishi et al., 2010; Sasai et al., 2010; Serra et al., 2014; Spruijt et al., 2013; Zhu et al., 2016). For example, a large-scale survey against the human TF repertoire revealed that 47 TFs and co-factors, including the Kr\u00fcppel-like factor 4 (KLF4), recognize mCpG-containing DNA motifs in a sequence-specific manner (Hu et al., 2013). In addition to its canonical DNA motif, KLF4 also recognizes a different motif that requires CpG methylation (i.e., 5\u2019-CmCGC). Further mutagenesis studies demonstrated that Arg458-to-Alanine (R458A) mutation in KLF4 abolished its interaction with the methylated DNA motif, but showed no detectable impact on binding to its canonical, unmethylated motifs (Hu et al., 2013). Intriguingly, cell-based luciferase assays showed that KLF4 wild type (WT) could recognize methylated promoter and activate downstream transcription; while R458A mutant could not (Hu et al., 2013). The crystal structure of KLF4 binding to mCpGs was published by an independent study (Liu et al., 2014). However, the physiological function of the mCpG-dependent KLF4 binding activity in mammalian cells remains unknown.\n\nKLF4 plays multiple roles in normal physiology and disease. It is one of the Yamanaka factors that induce pluripotency in somatic cells (Nandan and Yang, 2009). KLF4 also functions as a cancer driver gene (Vogelstein et al., 2013), and is involved in cancer stem cell maintenance (Leng et al., 2013; Yu et al., 2011; Zhu et al., 2014). For example, Our previous studies indicate that treatment of cancer cells with hepatocyte growth factor induced cancer stem cell phenotypes by increasing the expression of reprograming factors including KLF4 (Li et al., 2011). KLF4 has also been shown to be upregulated in high-grade brain tumors (Elsir et al., 2014; Holmberg et al., 2011), such as glioblastoma (GBM), the most aggressive and lethal adult brain tumor (Carlsson et al., 2014; Quick et al., 2010). In addition to driving tumor malignancy, KLF4 can act as a tumor suppressor in distinct cellular contexts (Evans and Liu, 2008; Rowland et al., 2005; Tetreault et al., 2013).\n\nIn this study, we dissected the biological function of KLF4 binding to methylated DNA in malignant brain tumor cells by taking advantage of the R458A mutant lacking the ability to bind to methylated DNA. Our study showed that KLF4-mCpG interaction promotes brain tumor cell migration via the transactivation of genes involved in cell motility pathways, including the small GTPase RHOC. We further demonstrate that recruitment of KLF4 to methylated cis-regulatory elements results in chromatin remodeling and activation of gene transcription in a genome-wide scale.\n\n## Results\n\n### KLF4-mCpG interaction promotes GBM cell adhesion and migration\n\nWe chose two human GBM cell lines, namely U87 and U373, with physiologically relevant genetic backgrounds to dissect the function of mCpG-dependent KLF4 binding activity, and because these two cell lines have low endogenous KLF4 expression. To facilitate in vivo studies of mCpG-dependent binding activity of KLF4, we engineered two stable cell lines that, upon doxycycline (Dox) treatment, each expressed KLF4 WT or KLF4 R458A. Cells without doxycycline treatment served as a negative control. Western blot analysis and immunocytochemistry staining confirmed that the endogenous KLF4 level in non-transfected U87 cells was barely detectable; after 48 hr Dox induction, both KLF4 WT and R458A proteins showed a dose-dependent increase without an impact on cell proliferation (Figure 1A, Figure 1\u2014figure supplement 1A,B). For the rest of the study, we chose the Dox dose 1 \u00b5g/ml, which induced KLF4 expression to a level (~20\u201327 fold) similar to that during cancer cell reprogramming when challenged by growth factors (Li et al., 2011).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/20068/elife-20068-fig1-v2.jpg)\n\n**Figure 1.:** (A) Induced expression of KLF4 WT and R458A in human U87 GBM cells upon doxycycline (Dox) treatment. Cells were transfected with lentivirus harboring tet-on KLF4 WT or R458A constructs and selected with antibiotics. Stable cell lines were treated with Dox for 48 hr before immunoblotting. Immunoblotting showing induced expression of KLF4 WT and R458A in human U87 GBM cells upon doxycycline (Dox) treatment. (B and C) KLF4 WT but not R458A promoted GBM cell adhesion. Cells were pre-treated with Dox for 48 hr and plated for 2 hr before washing. (D and E) KLF4 WT promoted GBM cell migration in broyden chamber transwells. Cells were pretreated with Dox for 48 hr, plated on transwells containing 0.1% FCS and migrating towards 10% FCS. After 3 hr, migrating cells were stained with DAPI and five field / transwell were counted. (F) KLF4 WT but not R458A promoted GBM cell migration in wound healing assays. Cells were treated with Dox for 5 days till confluence. A scratch was made and cells were maintained in 0.1% FCS medium overnight, cell proliferation was inhibited by mitomycin C. Microphotographs were taken 0 hr and 24 hr after scratching. Bar\u00a0=\u00a025 \u00b5m. ***p<0.001.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20068/elife-20068-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Immunocytochemistry staining of KLF4 cellular location. Human U87 GBM cells express low level of endogenous KLF4 protein, which was evenly spread in cytoplasma and nucleus. Dox induction of KLF4 WT and R458A expression resulted in strong KLF4 staining in the nucleus. Bar\u00a0=\u00a010 \u00b5m. (B) KLF4 WT and R458A had no effect on cell growth 5 days post Dox (1 \u00b5g/ml) treatment as determined by trypan blue staining. (C) Scratch assays for 48 hr in KLF4 WT expressing cells (+Dox) in comparison with non-transfected U87 parent cells and KLF4 R458A expressing cells. Bar\u00a0=\u00a025 \u00b5m.\n\nWe observed that induction of KLF4 WT significantly increased cell adhesion (Figure 1B,C) and promoted migration in both transwell assays and wound healing assays (Figure 1D\u2013F). Similar results were obtained at 24- and 48 hr post induction (Figure 1\u2014figure supplement 1C). In contrast, induction of R458A had no detectable impact on either cell adhesion or migration (Figure 1B\u2013F). Consistent with the observed phenotypes, KLF4 WT-expressing cells showed elongated, spindle-like morphology (arrows, Figure 2A), whereas control and R458A-expressing cells remained round and small (arrowheads, Figure 2A). Quantitative analysis further confirmed this observation (Figure 2B). Immunofluorescence staining for F-actin and vinculin further confirmed the formation of stress actin fibers and focal adhesion, respectively, in KLF4 WT-expressing GBM cells (arrowheads), but not in R458A-expressing cells (Figure 2C). Similar results were observed in other GBM cell lines, such as U373 GBM cells (Figure 2\u2014figure supplement 1A\u2013D). Since R458A loses binding activity to mCpG-containing motifs but retains binding to unmethylated canonical motifs (Hu et al., 2013), these phenotypic differences can be attributed to the mCpG-dependent KLF4 activity.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/20068/elife-20068-fig2-v2.jpg)\n\n**Figure 2.:** (A) Expression of KLF4 WT but not R458A induced cell morphology changes in U87 cells (+Dox, 48 hr). The control and R458A expressing cells showed round and short cell body (arrowheads), whereas KLF4 WT induced elongated, spindle-like cell shape (arrows). Bar\u00a0=\u00a025 \u00b5m. (B) Quantification of cell morphology changes after Dox treatment for 48 hr. More than 80% of the KLF4 WT expressing cells showed elongated, spindle-like cell morphology, whereas most KLF4 R458A expressing cells remained as round and short cells. (C) F-actin and vinculin staining in control, KLF4 WT and R458A-expressing cells. KLF4 WT induced actin stress fiber formation and focal adhesion formation (arrowheads). Bar\u00a0=\u00a010 \u00b5m. (D) Pre-treatment of the cells with DNA methyltransferase inhibitor 5-Aza (1\u00b5mol/L, 10 days) blocked KLF4 WT-induced cell migration in transwell assays. (E) Scratch assays indicating that 5-Aza blocked wound healing induced by KLF4 WT. Bar\u00a0=\u00a025 \u00b5m. ***p<0.001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20068/elife-20068-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A and B) mCpG-dependent KLF4 binding promoted U373 cell migration in wound healing assays. Cell migration distance was plotted in (B). Bar\u00a0=\u00a025 \u00b5m. (C) KLF4 WT but not R458A promoted U373 GBM cell migration in transwell assays. (D) KLF4-WT but not R458A promoted adhesion of U373 GBM cells, as measured by MTT assays (***p<0.001).\n\nTo confirm that the observed phenotypes were DNA methylation dependent, we pre-treated the cells with a DNA methytransferase inhibitor, 5-aza-2\u2032-deoxycytidine (5-Aza, 1\u00b5mol/L), which eliminates DNA methylation on a genome-wide scale (Chen et al., 1998). As illustrated in Figures 2D,E, 5-Aza treatment partially suppressed the enhanced cell migration and wound healing phenotypes driven by KLF4 WT, suggesting that the increased cell migration was indeed mediated via a DNA methylation-dependent mechanism.\n\n### Identification of transcriptional network regulated by KLF4-mCpG interactions\n\nThe distinct phenotypes induced specifically by KLF4 WT suggested that mCpG-dependent KLF4 binding events regulate the expression of genes involved in these biological processes. To elucidate the molecular mechanisms by which KLF4 regulates gene transcription via its mCpG-dependent activity, we carried out a series of genome-wide analyses to identify the direct gene targets that are regulated by KLF4 WT but not R458A.\n\nFirst, we performed RNA-seq analysis before (0 hr) and after (48 hr) induction of KLF4 WT and R458A, respectively. Approximately 86% of the sequencing reads were uniquely mapped to the human genome (Figure 3\u2014source data 1); comparison of the expression profiles between the replicates showed high reproducibility (Figure 3\u2014figure supplement 1A). Differentially expressed genes (DEGs) after KLF4 induction were identified by comparing gene expression at 48 hr versus 0 hr of KLF4 expression. We observed that a total of 613 genes were significantly up- or down-regulated post KLF4 WT induction (p<0.001), indicating that KLF4 globally affected gene transcription (Figure 3A). Among them, a large fraction (500/613\u00a0=\u00a082%) was only affected by KLF4 WT but not R458A, suggesting that these expression changes were regulated, directly or indirectly, via mCpG-dependent KLF4 binding activity (Figure 3B). Surprisingly, 308 of the 500 genes showed significantly elevated expression after KLF4 WT induction (Figure 3B). For example, the expression of RHOC, RAC1, LMO7, and MIDN was up-regulated by induction of KLF4 WT but not R458A (Figure 3C). This result suggested that mCpG-dependent KLF4-binding could activate cellular gene transcription and therefore, we decided to focus on these activated genes in the rest of our study.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/20068/elife-20068-fig3-v2.jpg)\n\n**Figure 3.:** (A) RNA-seq data before (0 hr) and after (48 hr) KLF4 WT induction. The pink dots were determined as differential expressed genes (DEGs) (p<0.001). (B) Overlap between DEGs in KLF4 WT and R458A cells, showing that a total of 613 genes were significantly regulated by KLF4 WT, 115 of which were also significantly regulated by KLF4 R458A. Among the rest 500 genes significantly regulated by KLF4 WT but not R458A (WT only DEGs), 308 of them were up-regulated by KLF4 WT only. (C) Four examples of KLF4 WT only DEGs. (D) Overlap between KLF4 WT and R458A KLF4 ChIP-seq peaks (48 hr +Dox), indicating that\u00a0~2733 peaks can be only bound by KLF4 WT;\u00a0~1157 peaks bound by both KLF4 WT and R458A, whereas R458A alone only bound a few new sites. (E) ChIP-Seq for KLF4 WT and R458A on and surrounding RHOC promoter as an example. RNA-seq at the same region was also shown, pre and post KLF4 WT and R458A induction, respectively. (F) Percentage of ChIP-seq peaks with mCpGs evaluated by whole genome bisulfite sequencing analysis. A significant enrichment was observed for methylated CpG in KLF4 WT-specific peaks (Blue bar) as compared to KLF4 R458A shared peaks (orange bar). (G) Motifs identified for KLF4-mCpG binding in KLF4 WT-specific peaks (Left) and for KLF4 R458A shared peaks (Right), respectively.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20068/elife-20068-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) High reproducibility of RNA-seq replicate. (B, C) Screenshots of RHOC and LMO7 ChIP-seq together with input line.\n\nTo determine which genes were directly activated by mCpG-dependent KLF4 binding events, we next performed genome-wide chromatin immunoprecipitation-sequencing (ChIP-seq) in KLF4 WT and R458A-expressing cells (i.e., 48 hr post induction). At least 70% of the ChIP-seq reads were mapped to the human genome (Figure 3\u2014source data 2). A total of 3890 and 1222 significant ChIP-seq peaks were identified in KLF4 WT and R458A expressing cells, respectively (Figure 3D). A comparison between the KLF4 WT and R458A ChIP-seq peaks identified that 2733 (70%) were specific to KLF4 WT, indicating that these peaks were recognized via mCpG-dependent KLF4 binding activity (referred as WT-specific peaks) (Figure 3D). In contrast,\u00a0~95% of the KLF4 R458A ChIP-seq peaks were also recognized by KLF4 WT (referred as shared peaks), indicating that a single R458A mutation abolished\u00a0>2/3 of the KLF4 WT binding loci in the chromatins (Figure 3\u2014source data 3). Sequence reads distribution of KLF4 WT and R458A ChIP-seq peaks at the promoter region of RHOC, as well as mapped RHOC RNA-seq, are shown in Figure 3E as an example. More examples can be found in Figure 3\u2014figure supplement 1B,C.\n\nTo fully examine the DNA methylation status of the WT and R458A ChIP-seq peaks, we performed whole genome bisulfite sequencing to decode the methylome of U87 cells and combined the DNA methylome data separately with the KLF4 WT and R458A ChIP-seq datasets. We found that 66% of the KLF4 WT-specific ChIP-seq peaks showed a high methylation level (e.g., \u03b2\u00a0>60%) at CpG sites, while only 36% of the ChIP-seq peaks shared by KLF4 WT and R458A reached a similar CpG methylation level (p=3.7e-223). Different cutoffs for defining high methylation levels did not alter this observation (Figure 3F). Therefore, the KLF4 WT-specific ChIP peaks are enriched for highly methylated CpGs.\n\nNext, we carried out motif analysis to identify enriched and highly methylated 6-mer DNA motifs in WT-specific ChIP-seq peaks, as well as in shared ChIP-seq peaks. At a cutoff of \u03b2\u00a0>60% CpG methylation we found 10 methylated 6-mer motifs (Figure 3\u2014source data 4) that were significantly over-represented in the WT-specific peaks (p=6.6e-37). Many of them share sequence similarity to the motif 5\u2019-CCCGCC (Figure 3G; left panel), of which the methylated form was reported to be recognized by KLF4 in our previous study (Hu et al., 2013). In contrast, the peaks shared by WT and R458A were found enriched for different motifs (e.g., 5\u2019-AAAAGGAA and 5\u2019- GAGTTGAA) (Figure 3G; right panel). Taken together, these results confirmed that the KLF4 WT-specific ChIP-seq peaks were enriched for highly methylated KLF4 binding motifs.\n\n### Identification of direct targets of mCpG-dependent KLF4 interactions in GBM cells\n\nTo identify genes that were directly activated via mCpG-mediated KLF4 binding activity, we first searched the 2,733 KLF4 WT-specific ChIP-seq peaks against the genomic locations on those proximal regulatory regions, which were classified into three categories: upstream (~10 kb upstream to transcription start sites), 5\u2019-UTRs, and exons. The proximal regulatory regions of 65 KLF4 WT up-regulated genes were found to be occupied by KLF4 WT-specific ChIP-seq peaks, indicating that they were direct targets of KLF4-mCpG interactions (Supplementary file 1).\n\nWe also noticed that most of the 2733 KLF4 WT-specific ChIP-seq peaks were located outside the proximal regulatory regions, suggesting that KLF4 might also activate gene expression via binding to distal enhancers. Therefore, we performed anti-H3K27ac ChIP-seq analysis and combined the obtained H3K27ac peaks with KLF4 WT-specific binding sites to identify the potential enhancer regions bound by KLF4 WT. 1773 out of 2733 KLF4 WT-specific ChIP-seq peaks overlapped with the 27,997 H3K27ac ChIP-seq peaks (64.5%) (Figure 4A). Using an enhancer target prediction algorithm that connects enhancers to specific genes (enhanceratlas.org) (Gao et al., 2016; He et al., 2014), we identified 51 additional genes that were up-regulated via mCpG-dependent KLF4 binding events (Supplementary file 1). Therefore, the up-regulation of 116 genes was found directly associated with mCpG-dependent KLF4 binding to their cis-regulatory elements in the proximal regulatory regions (56%) and distal enhancers (44%) (Figure 4B and Supplementary file 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/20068/elife-20068-fig4-v2.jpg)\n\n**Figure 4.:** (A) Overlap between KLF4 WT-specific ChIP peaks (2733) and the enhancer mark H3K27ac ChIP-seq peaks. A total of 1733 loci were identified. (B) A total of 116 KLF4-mCpG direct targets were identified in a serial of genome-wide studies. The overlap between WT-specific binding peaks (2733) and the 308 WT-only upregulated genes indicated that 20%, 24% and 12% of these genes were activated by KLF4 binding to mCpGs in gene upstream, 5\u2019UTR and exon region, respectively. The overlap between enhancer regions in KLF4 WT-binding sites further identified 44% genes were activated by KLF4 binding to mCpGs in the enhancer regions. (C) Methylation level distribution of cis-elements in KLF4 binding peaks associated with 116 target genes. (D) Bisulfite sequencing confirmed DNA methylation in some of the KLF4 WT-specific binding peaks. (E) Gene ontology analysis of direct targets of KLF4-mCpG indicated that these targets have been implicated in cell adhesion, migration, cytoskeleton arrangement and cell binding activities. (F) Boxplot of gene expression for WT, WT+Dox, WT\u00a0+\u00a05 Aza, and WT\u00a0+\u00a05-Aza+Dox (G) Histogram of FC (after and before Dox) difference with and without 5-Aza for 116 target genes and all expressed genes, respectively.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20068/elife-20068-fig4-figsupp1-v2.jpg)\n\nWe next examined whether this association was statistically significant. We first focused on 12,824 genes that were expressed (FPKM\u00a0>0.5) in U87 cells, among which 308 (2.4%) genes were found up-regulated only in KLF4 WT-induced cells. Meanwhile, we observed that KLF4 mCpG-dependent binding peaks were associated with 2518 expressed genes, of which 116 (4.6%) were up-regulated genes that is significantly higher than the ratio of expressed genes not associated with KLF4 WT binding sites (fold enrichment\u00a0=\u00a01.9; p=5.0e-13).\n\nTo directly assess the methylation status in the cis-regulatory elements of the 116 direct target genes, we integrated the methylome dataset and found that the majority (72%) of the 116 genes were indeed associated with highly methylated (\u03b2\u00a0>\u00a00.6) cis-regulatory elements (Figure 4C). To confirm this observation, we randomly selected 15 loci and performed methylation analysis by Sanger sequencing. Ten of them were confirmed to contain highly (75\u2013100%) methylated CpG sites in the associated cis-regulatory elements. A few examples are shown in Figure 4D and Figure 4\u2014figure supplement 1.\n\nGene Ontology analysis showed that these 116 direct targets of KLF4 WT were significantly enriched in biological processes relevant to the observed phenotypes, such as cell communication, regulation or establishment of localization, cell adhesion or morphogenesis, positive regulation of MAP kinase activity, cell-cell junction, and cytoskeleton organization (Figure 4E). These results suggest that KLF4 could bind to methylated cis-regulatory elements to up-regulate crucial genes involved in tumor cell migration.\n\nTo examine the impact of global DNA demethylation on the expression level of KLF4-mCpG direct target genes, we performed whole genome RNA-seq in the presence of 5-Aza treatment. We observed that in the presence of 5-Aza, KLF4 WT induction did not activate 116 target genes significantly as that in the absence of 5-Aza (Figure 4F). Actually, the expression level of 101 of the 116 genes was reduced in 5-Aza treated cells as compared with untreated cells (Figure 4G), while about half (53%) of all expressed genes were down-regulated after 5-Aza treatment (p=1.2e-14), suggesting that DNA methylation is responsible for the transcription activation of these 101 genes targeted by KLF4-mCpG binding. These results further supported the conclusion that DNA methylation is directly involved in KLF4 binding and gene activation.\n\n### KLF4-mCpG interactions activate RHOC via chromatin remodeling\n\nTo firmly establish the causality between mCpG-dependent KLF4 binding to cis-regulatory elements and transcription activation, we decided to focus on two important genes, namely RHOC and RAC1, for in-depth characterization. They encode two small GPTases that are known to play critical roles in cell migration and adhesion, and were found multiple times in the enriched GO terms as described above (Karlsson et al., 2009). For example, RHOC activation leads to F-actin stress fiber formation and the assembly of focal adhesion complexes. Studies reveal that there are no known RHOC pathogenic mutations found in cancers, however, biologically relevant aberrant levels of RHOC expression are common, and there is a strong association between RHOC expression levels and poor prognosis (Karlsson et al., 2009; Narumiya et al., 2009). An examination of the ChIP-seq datasets at the promoter regions of RHOC and RAC1 indicated differential binding by KLF4 WT and R458A. Moreover, genome-wide bisulfite sequencing confirmed that these peaks contained highly methylated CpGs and these peaks were in close proximity to the coding regions of RHOC (\u2212507 bp to TSS) and RAC1 (\u2212922 bp to TSS).\n\nIn the case of RHOC, we first showed that induction of KLF4 WT, but not the R458A mutant, could induce RHOC at both mRNA and protein levels using RT-PCR and immunoblot analysis, respectively (Figure 5A,B). Using a primer pair flanking this ChIP-seq peak, we confirmed that this fragment could be ChIP-ed substantially better with the KLF4 WT than the R458A mutant (Figure 5C). To further establish causality of DNA methylation-dependent binding of KLF4 on induction of its target genes, we performed bisulfite sequencing against this cis-regulatory element with and without the 5-Aza treatment. We observed that four of the five CpG in this region were 100% methylated; however, after the 5-Aza treatment the methylation levels of the four CpGs was reduced to various levels, ranging from 13\u201380% (Figure 5D). Most importantly, reduction of methylation almost completely abolished KLF4 WT binding to this cis-regulatory element (Figure 5E), and RHOC protein level was also significantly repressed (Figure 5F). The same set of assays was also carried out to analyze the cis-regulatory elements of RAC1 and the same results were obtained (Figure 5\u2014figure supplement 1). Therefore, high methylation levels in RHOC and RAC1 promoters were essential for KLF4 WT to activate their gene transcription.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/20068/elife-20068-fig5-v2.jpg)\n\n**Figure 5.:** (A) Real-time PCR indicated that RHOC RNA was significantly upregulated by KLF4 WT but not R458A (+Dox, 48 hr, ***p<0.001). (B) RHOC protein expression was upregulated by KLF4 WT only; fold changes were listed under the blots. (C) A KLF4 antibody was used to precipitate crosslinked genomic DNA from cells expressing KLF4 WT and R458A. Rabbit IgG was used to control for non-specific binding. De-crosslinked DNA samples were served as the input for PCR. The RHOC promoter was only enriched in the ChIP\u2019ed samples from KLF4 WT expressing cells. In contrast, a known KLF4 binding site on B2R promoter was used as a positive control, and detected in the ChIP\u2019ed samples from both KLF4 WT and R458A expressing cells. A non-promoter sequence was selected as a negative control (Neg) and no band was detected. (D) Bisulfite sequencing of RHOC promoter region: each row represents one sequenced clone; each column represents one CpG site; filled circles stand for methylation. All 7 clones showed 100% methylation at four CpG sites in the RHOC promoter (~507 bp upstream from TSS). The DNMT inhibitor 5-Aza pretreatment partially reversed DNA methylation in the RHOC promoter region. (E) ChIP-PCR indicated that 5-Aza greatly abolished KLF4 WT binding to RHOC promoter region when hypomethylated. (F) Immunobloting analysis showed that KLF4 WT-induced RHOC up-regulation was blocked by pretreatment with 5-Aza. (G) KLF4-mCpG interactions in RHOC promoter region triggered histone mark changes. Tet-on KLF4 WT cells were treated with Dox for 48 hr, and genomic DNA from cells before and after Dox treatment were ChIP\u2019ed with antibodies recognizing different histone marks and amplified for the RHOC promoter region. KLF4-mCpG interactions were associated with an increase in the active mark H3K27ac and a decreased in the repressive marks H3K27me3 and H3K9me3. Disrupted KLF4-mCpG interactions in KLF4 R458A expressing cells did not show changes in these histone marks in the RHOC promoter region.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20068/elife-20068-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A, B) RT-PCR and Western blot showed RAC1 was significantly up-regulated by KLF4 WT at both the mRNA and protein level. (C) ChIP-PCR showing KLF4 and RAC1 promoter binding. Compared to KLF4 R458A cells, there is an enrichment of KLF4-RAC1 promoter binding in KLF4 WT expressing cells. (D) Bisulfite sequencing of the RAC1-KLF4 binding site before and after 5-Aza treatment. RAC1 promoter was heavily methylated, whereas 5-Aza abolished methylation on these sites. (E) ChIP-PCR of KLF4-RAC1 promoter interactions in the presence of 5-Aza in KLF4 WT cells. 5-Aza treatment prevented KLF4 binding to the RAC1 promoter region when demethylated. (F) RT-PCR showing 5-Aza reversed KLF4 WT-mediated RAC1 up-regulation.\n\nBecause DNA methylation is usually considered to be associated with repressive histone marks to maintain downstream gene silencing, our observation suggested that the recruitment of KLF4 WT to the methylated RHOC promoter altered chromatin status in order to activate RHOC transcription. Based on KLF4\u2019s interaction with histone modifying enzymes, we examined the status of an active (H3K27ac) and two repressive (H3K27me3 and H3K9me3) histone marks at the RHOC promoter regions. We also monitored histone mark changes before (0 hr) and after (48 hr) KLF4 induction. We observed that upon KLF4 binding to DNA (48 hr post Dox), the active mark H3K27ac was significantly increased by\u00a0~2.5 fold. On the other hand, both repressive marks, H3K9me3 and H3K27me3, were decreased by\u00a0~3.5 and~6 fold, respectively (Figure 5G). As a comparison, KLF4 R458A induction failed to trigger any detectable changes in H3K27ac, H3K9me3, or H3K27me3 marks in the RHOC promoter region (Figure 5G). Thus, the recruitment of KLF4 WT to the methylated RHOC promoter initiated conversion from repressive to active chromatins, as a prerequisite for activation of RHOC transcription.\n\n### KLF4-mCpG interactions globally affect chromatin status\n\nTo determine whether KLF4 WT activated its other direct targets via chromatin remodeling as described above, we performed ChIP-seq analysis against one active (H3K27ac) and two repressive (H3K9me3 and H3K27me3) histone marks before (0 hr) and after (48 hr) KLF4 WT induction. For all of the three marks, we observed remarkable dynamic changes, centered around the 162 KLF4 WT ChIP-seq peaks associated with the 116 direct targets of KLF4-mCpG (Figure 6A). Specifically, H3K27ac level increased in 83.3% of the 162 peaks at 48 hr (Figure 6B, p=7.2E-19). In contrast, H3K27me3 and H3K9me3 levels decreased in 54.3% (p=3.4E-2) and 63.6% (p=1.5E-4) of the 162 peaks at 48 hr, respectively (Figure 6B). As a negative control, we examined the H3K27ac dynamic changes in the up-regulated genes shared by KLF4 WT and R458A. Only 36% of the shared KLF4 peaks (22/60) had stronger H3K27ac signal after 48 hr of Dox treatment (Figure 6\u2014figure supplement 1A\u2013C), suggesting that KLF4-mCpG binding enhances H3K27ac.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/20068/elife-20068-fig6-v2.jpg)\n\n**Figure 6.:** (A) Heatmaps of histone mark signals, H3K27ac, H3K27me3, and H3K9me3, before and after KLF4-mCpG interactions (0 vs. 48 hr), respectively,\u00a0\u00b13 kb surrounding 162 KLF4 ChIP peaks, which were associated with the 116 KLF4-mCpG direct targets. The peaks were sorted by their average signals at 48 hr for each histone mark. (B) The signal difference of histone marks between 48 hr and 0 hr, sorted from minimum to maximum. Over 83% of the 162 peaks had increased H3K27ac signals (p=7.2E-19), whereas 54.3% (p=3.4E-2) and 63.6% (p=1.5E-4) of the peaks had decrease in H3K27me3 and H3K9me3 signals, respectively. (C) Stronger H3K27ac signals were accumulated surrounding the KLF4 WT ChIP-seq peak on gene LMO7, at 48 hr after KLF4 WT induction; whereas no significant change in H3K27ac signals was observed in R458A expressing cells, as the R458A mutation abolished KLF4-mCpG binding ability. (D) Genome-wide analysis of dynamic changes of H3K27ac peaks before and after KLF4 WT or R458A induction, respectively. A total of 3593 new H3K27ac peaks appeared after KLF4 WT induction (upper panel), whereas only 131 new peaks were generated in KLF4 R458A expressing cells (lower panel), indicating that mCpG-dependent KLF4 binding activity caused chromatin remodeling to activate gene expression.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20068/elife-20068-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Heatmaps of H3K27ac signals around 60 shared peaks, corresponding to up-regulated genes by KLF4 WT and R458A. (B and C) Only 36% (22/60) of the shared peaks was associated with an increase in H3K27ac, whereas there were more than 83% (135/162) of the WT-specific peaks associated with increased H3K27ac.\n\nTo further confirm that mCpG-mediated KLF4 binding caused chromatin remodeling on a genome-wide scale, we compared the H3K27ac ChIP-seq data obtained before (0 hr) and after (48 hr) KLF4 WT and R458A induction. An example was shown in Figure 6C. After KLF4 WT was recruited to intron region of LMO7, which is known to play a role in cell migration and adhesion (Hu et al., 2011), the H3K27ac level was significantly increased around the KLF4 ChIP-seq peak. In contrast, R458A mutation abolished the KLF4 binding at the same locus. As a result, the H3K27ac level remained low after R458A induction.\n\nOverall, in KLF4 WT-induced cells, 3593 novel H3K27ac peaks were generated, while only a negligible number of H3K27ac peaks (41) disappeared at 48 hr of KLF4 WT induction (Figure 6D). Among the 3593 novel H3K27ac peaks, 274 were found in the flanking regions of KLF4 ChIP-seq peaks (p=3.5E-5). In contrast, induction of R458A did not yield noticeable changes in H3K27ac peak numbers. Taken together, these results suggest that mCpG-mediated KLF4 binding events induced the changes of histone modification and gene activation.\n\n## Discussion\n\nAbnormal DNA methylation has been found in many cancer types including glioblastoma. Contrary to traditional view of DNA methylation in gene silencing, recent survey of methylome and gene expression profiling demonstrated that the promoters of as many as 20% highly expressed genes in tumors are methylated at CpG sites, suggesting that at least in some cases, DNA methylation positively correlates with gene expression (Feinberg, 2014, 2007). Although previous studies suggested that many TFs could interact with methylated DNA in vitro, it remains elusive whether such mCpG-dependent binding activity plays any significant physiological role in cells. To address this question, we took advantage of the R458A mutation that abolished KLF4\u2019s mCpG-dependent binding activity to dissect the functional impact of TF-mCpG interactions. We demonstrated that several strong phenotypes, ranging from cell morphology to cell adhesion and migration, were dependent on this newly discovered activity of KLF4. Using a series of in vivo assays coupled with bioinformatics analyses, we further showed that KLF4 could gain access to the inactive chromatin regions via binding to methylated DNA motifs and consequently, led to conversion from repressive to active histone marks and much enhanced transcription of the direct gene targets of KLF4 (Figure 7). Thus, we are the first to provide genome-wide evidence that recruitment of KLF4 to methylated cis-regulatory elements resulted in a global chromatin remodeling (i.e., from repressive to active states), which contradicts the classic view that CpG methylation is a result of chromatin remodeling (i.e., from active to repressive states).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/20068/elife-20068-fig7-v2.jpg)\n\nWhereas many proteins have been found to recognize methylated DNA, the causality between DNA methylation and TF binding is not always straightforward. It has been reported that TF binding could change methylation status of cis-regulatory elements (Feldmann et al., 2013), which suggests that KLF4-mCpG binding could be the secondary effect of gene transactivation. To rule out the possibility that KLF4 binding results in methylation of its targeted genes, we performed bisulfite sequencing in tet-on KLF4 WT cells before and after KLF4 induction (0 hr and + Dox 48 hr). Unchanged methylation level in KLF4 binding site (e.g. RHOC promoter region) indicated that methylation is not a consequence of KLF4 binding (data not shown). Other forms of cytosine modification, including 5-hydroxymethyl-cytosine (5-hmC), 5-formylcytosine, and/or 5-carboxylcytosine also exist in cells (Tan and Shi, 2012). This will not affect our conclusion appreciably since KLF4 does not bind to 5-hmC (Spruijt et al., 2013).\n\nWe are fully aware that 5-Aza is only a sub-optimal approach to examine the effect of specific methylation sites, because it induces global demethylation and may have some non-specific effects (Christman, 2002). However, we have multiple lines of evidences showing that the observed phenotypes are due to specific interactions between KLF4 and methylated sites. (1) In our control experiments when KLF4 R458A cells were treated with 5-Aza, we did not see changes in gene expression and cell migration. (2) In the focused studies of RHOC and RAC1, we showed that DNA methylation is responsible for KLF4 binding and gene activation. RHOC and RAC1 are major GTPase involved in cell migration and motility. (3) Comparison of ChIP-seq between KLF4 WT and R458A showed that WT-specific binding sites are enriched for highly methylated sites. Given the phenotypic differences between KLF4 WT and R458A, the result suggested that the observed phenotypes in WT are likely due to specific interactions between KLF4 and DNA methylation sites. (4) Our new RNA-seq data in the presence of 5-Aza also indicated that 5-Aza globally reversed the up-regulation of many KLF4-mCpG targets.\n\nIn our study, we placed a higher priority on KLF4-mCpG-mediated gene transactivating effect, as this will be most paradigm-shifting based on current understandings that CpG methylation results in gene silencing. Here we found that KLF4 recognizes mCpG at proximal and enhancer regions to activate gene expression. Many questions remain regarding how DNA methylation, a repressive epigenetic mark, activates gene expression. In cells, opening the chromatin structure is often the first step for gene transcription (Cirillo et al., 2002; Lupien et al., 2008). KLF4 is one of the pioneer TFs in somatic reprogramming that interact with condensed chromatin and recruit histone-modifying enzymes to enable gene expression (Buganim et al., 2013; Iwafuchi-Doi and Zaret, 2014). Yet, exactly how these pioneer TFs gain access to condensed, highly methylated DNA is still unknown (Drouin, 2014). Although recent studies showed that pioneer transcription factors, including KLF4, are capable of recognizing partial motifs located in the heterochromatins, our study, for the first time, demonstrated that the pioneer transcription factor KLF4 could actually bind to methylated motifs located in repressive chromatins, providing an alternative mechanism for pioneer factors interacting with repressive chromatin. Our data support a new model in which TF-mCpG binding communicates with histone modifications to initiate gene transcription. The cross-talk between DNA methylation and histone modifications in gene regulation will open up a new avenue for determining how epigenetic mechanisms drive physiology and pathophysiology including tumor malignancy.\n\nIn summary, TF binding to methylated regions of the genome to activate gene transcription is a new paradigm supported by several studies (Filion et al., 2006; Mann et al., 2013; Rishi et al., 2010; Sasai et al., 2010; Serra et al., 2014; Spruijt et al., 2013). Our work is the first to demonstrate such gene activation mechanism can mediate physiological functions in biologically relevant systems (Zhu et al., 2016). We further demonstrated that mCpG dictates TF binding, histone modifications and gene activation in a sequence-specific manner, thereby influencing cancer cell phenotypes. Our study reveals that mCpG-dependent binding activity of KLF4 serves as a link between methylated CpG and changes in chromatin status (Charlet et al., 2016), two most important epigenetic mechanisms in gene regulation. In all, our study provides a new paradigm in which TFs can act as a new class of DNA methylation readers/effectors that drive gene transactivation and diverse biological processes.\n\n## Materials and methods\n\n### Cell culture and reagents\n\nAll reagents were purchased from Sigma Chemical Co. (St. Louis, MO) unless otherwise stated. The human glioblastoma (GBM) cell lines U87 (CLS Cat# 300367/p658_U-87_MG, RRID:CVCL_0022) and U373 (ATCC Cat# HTB-17, RRID:CVCL_2219) were originally purchased from ATCC (Manassas, VA) and cultured in our laboratory. Both cell lines are free from mycoplasma and authenticated with short tandem repeat (STR) profiling by Johns Hopkins Genetic Resources Core facility using Promega GenePrint 10 system (Madison, WI). U87 cells were cultured in Minimum Essential Media (MEM, Thermo Fisher Scientific, Grand Island, NY) supplemented with sodium pyruvate (1%), sodium bicarbonate (2%), non-essential amino acid (1%) and 10% fetal calf serum (FCS, Gemini Bio-products, West Sacramento, CA). U373 cells were cultured in Dulbecco\u2019s Modified eagle medium (DMEM, Thermo Fisher Scientific) supplemented with 2% (4-(2-hydroxyethyl)\u22121-piperazineethanesulfonic acid (HEPES) and 10% FCS. Cells were incubated in a humidified incubator containing 5% CO2/95% air at 37\u00b0C, and passaged every 4\u20135 days.\n\n### Engineering tet-on GBM cells expressing KLF4 WT and KLF4 R458A\n\nKLF4 WT and R458A constructs were inserted into a doxycycline-inducible TripZ lentiviral vector (Thermo Fisher Scientific) (Ying et al., 2011a). Virus was packaged using the Viral Power Packaging system (Thermo Fisher Scientific) according to the manufacturer\u2019s forward transfection instructions. Virus were collected by centrifuging at 3000 rpm for 15 min. GBM stable cell lines were established by transfecting the cells with lentivirus harboring tet-on KLF4 WT or KLF4 R458A constructs and selected with puromycin (1 \u00b5g/ml). The introduction of doxycycline (Dox) to the system initiates the transcription of the genetic product. Cells without doxycycline treatment serve as controls for KLF4 function.\n\n### Immunoblot and immunocytochemistry\n\nImmunoblot analysis was used to examine KLF4 protein expression. To collect whole cell protein, cells were lysed with RIPA buffer (50 mM Tris-HCl, pH 7.4, 150 mM NaCl, 1% NP-40, 0.25% Na-deoxycholate) containing protease and phosphatase inhibitors (EMD Millipore, Billerica, MA) and sonicated for 15 s; the suspensions were centrifuged at 3000 g for 10 min. Thirty micrograms of protein were separated using 4\u201320% SDS-PAGE gels (Lonza, Williamsport, PA) and blotted onto nitrocellulose membranes (Reznik et al., 2008). Membranes were incubated in Odyssey Licor blocking buffer (LI-COR Biosciences, Lincoln, NE) for 1 hr at room temperature and then overnight with primary antibodies at 4\u00b0C in Odyssey blocking buffer. After rinsing, membranes were incubated with IRDye secondary antibodies (1:15000-1:20,000, LI-COR Biosciences) and protein expression changes were quantified by dual wavelength immunofluorescence imaging (Odyssey Infrared Imaging System, LI-COR Biosciences) as previously described (Ying et al., 2011b). Antibodies were purchased from: anti-KLF4 (Santa-Cruz, Dallas, Texas); anti-RHOC (Cell signaling, Danvers, MA); and anti-RAC1 (Cell signaling).\n\nFor staining, GBM cells grown on glass slides were fixed with 4% paraformaldehyde for 30 min at 4\u00b0C and permeabilized with PBS containing 0.1% Triton X-100 for 10 min. The cells were then incubated with primary antibodies at 4\u00b0C overnight and then incubated with appropriate corresponding secondary antibodies conjugated with Alex Flourescent 488 or cy3 for 30 min at room temperature. For double staining with F-actin, Alex Flourecent 647-conjugated phalloindin (1 unit, Thermo Fisher Scientific) was used to incubate with the cells. Slides were mounted with Vectashield Antifade solution containing DAPI (Vector Laboratories, Burlingame, CA) and observed under fluorescent microscopy. Immunofluorescent images were taken and analyzed using Axiovision software (Zeiss, Germany).\n\n### Cell adhesion and migration assay\n\nFor adhesion assay, twenty-four well plates were blocked with Dulbecco's Modified Eagle Medium (DMEM) containing 0.5% bovine serum albumin (BSA) for 1 hr at 37\u00b0C followed by plating GBM cells at a density of 4 \u00d7 105 cells/well. After 1 hr incubation at 37\u00b0C, plates were shaken at 2000 rpm for 15 s, washed twice with pre-warmed DMEM medium containing 0.1% BSA, and the number of remaining adherent cells were measured with MTT assays (Xia et al., 2005).\n\nFor migration assays in transwells (Corning, Lowell, MA), GBM cells were suspended at 1 \u00d7 106 cells/ml; 100 microliters of the cell suspension were added to the upper chamber of the transwells in serum-free medium (Wang et al., 2012). Six hundred microliters of medium containing 10% FCS was added to the lower chamber. After 3 hr incubation at 37\u00b0C, cells were fixed with Diff-Quick kit (Thermo Fisher Scientific). Cells on the upper side of the transwells were gently wiped off with Q-tips. Cells migrating through the filter were stained with 4'\u22126-Diamidino-2-phenylindole (DAPI). Migration was quantified by counting cells on five selected fields of view per transwell in at least three independent experiments (Wang et al., 2012).\n\nFor wound healing assays, GBM cells were grown under 10% FCS medium in 35 mm dishes until confluent. Cell proliferation was inhibited by mitomycin C (1 \u00b5g/ml) for half hour. Several scratches were created using a 10 \u03bcl pipette tip through the confluent cells. Dishes were washed with PBS for three times and cells were grown in 0.1% FCS medium for 24\u201348 hr. Phase contrast pictures were taken at different time points. The width of the scratch was measured and quantified as previously described (Goodwin et al., 2010).\n\n### Reverse-transcriptase PCR and quantitative real-time PCR\n\nTotal RNA (1 \u00b5g) was reverse-transcribed using the oligo (dT)12\u201318 primer and Superscript II (Thermo Fisher Scientific) according to the manufacturer's instructions. The thermal cycling conditions were as follows: 95\u00b0C, 5 min, followed by 30 cycles of 95\u00b0C for 10 s, 55\u00b0C for 10 s, and ended with 72\u00b0C for 30 s.\n\nData were analyzed using parametric statistics with one-way ANOVA. Post-hoc tests included the Students T-Test and the Tukey multiple comparison tests as appropriate using Prism (GraphPad, San Diego, CA). All experiments reported here represent at least three independent replications. All data are represented as mean value \u00b1 standard error of mean (S.E.) significance was set at p<0.05.\n\n### Genome-wide profiling of gene expression and KLF4 binding in GBM cells\n\n#### RNA-seq\n\nRNAs from KLF4 WT and R458A-expressing cells (0 hr and 48 hr +Dox) was subjected to Illumina HiSeq next generation sequencing following the standard amplification and library construction protocol provided by the Johns Hopkins Deep Sequencing and Microarray Core Facility. Sequencing was performed using 76-base single-end reads, with 23- to 33 million reads generated from each sample. We first used Tophat2 to map all reads to human genome (hg19) then employed Cufflink to summarize the gene/transcript expression based on mapped reads. An R package, DEGseq, was taken to identify DEGs for p<0.001 between 0 hr and 48 hr in KLF4 WT and R458A cells, respectively.\n\n### Whole genome bisulfite sequencing (WGBS) analysis\n\nWe employed the software package bismark (Krueger and Andrews, 2011) to perform WGBS analysis. First we built bismark reference human genome, then mapped sequence reads onto these specific references. Two files were generated afterwards. The text file includes the summary about total reads, mapping efficiency, total methylated C\u2019s in CpG/CHG/CHH context. The other file in the same format was used for next step to extract methylation. Finally, we used bismark2bedGraph followed by coverage2cytosine to achieve the methylated and unmethylated reads of all CpG sites. The \u03b2 value was calculated for each CpG site as the ratio of number of methylated reads to sum over methylated and unmethylated.\n\n#### Motifs analysis\n\nTo identify methylated motifs enriched in KLF4 WT-specific peaks, we first used WGBS information to selected all 6-mers including mCpG (\u03b2\u00a0>0.6), then enumerated these 6-mers to compare their occurrence in 2733 KLF4 WT-specific peaks and all KLF4 binding peaks. The p-values were calculated based on hypergeometric model to represent the significance of methylated 6-mers\u2019 frequencies in KLF4 WT-specific peaks compared to all, followed by multiple-test Bonferroni correction. The 6-mers with p<0.01 were selected to construct the motif logo. The package, MEME (Multiple EM for Motif Elicitation) (Bailey and Elkan, 1994), was used to evaluate motifs significantly over-represented in KLF4 shared peaks, compared to all KLF4 binding peaks.\n\n#### Gene ontology analysis\n\nGene Ontology analysis (Ashburner et al., 2000) was performed for the 116 differential expressed genes (DEGs) up-regulated by WT only, compared to that for total 12,824 genome-wide expressed genes (FPKM\u00a0>0.5). The statistical significance of the enrichment was evaluated by p-value based on hypergeometric distribution model. The p-values were then adjusted by multiple-test correction via false discovery rate (FDR). A cutoff of FDR\u00a0<\u00a00.05 was used to identify significantly enriched GO terms.\n\n#### Chromatin immunoprecipitation (ChIP)-seq\n\nA commercial ChIP-grade anti-KLF4 antibody (H180; Santa Cruz) recognizing the N-terminal region of KLF4 (DNA-binding domains of KLF4 are located to the very C-terminus) was used for ChIP. Tet-on KLF4 WT and R458A cells were treated with Dox for 48 hr followed by ChIP using the anti-KLF4 antibody and Dynabeads Protein A/G (Thermo Fisher Scientific) according to a protocol described previously (Hu et al., 2013). DNA library construction and sequencing was performed at Johns Hopkins Deep Sequencing and Microarray Core Facility. The antibodies used for ChIP experiments were as follows: anti-KLF4 (Santa Cruz, H-180, sc-20691); anti-H3K27ac (Abcam, ab4279) (Hawkins et al., 2010); anti-H3K27me3 (Millipore, 07\u2013449) (Hawkins et al., 2010) and anti-H3K9me3 (Abcam, ab8898) (Hawkins et al., 2010).\n\nKLF4 ChIP-Seq data were mapped by Bowtie2, followed by MACS 1.4 being used to call peaks with cutoff of p<1E-5. We first obtained binding peaks for KLF4 WT and R458A, respectively. The peaks identified for both KLF4 WT and R458A at the same locus were referred as shared KLF4 binding peaks. Then we used KLF4 WT as foreground and R458A as background control to call peaks again. The new peaks were marked as KLF4 WT-specific ChIP peaks, only if they were not overlapped with shared ones which had been already identified. Same approach was used to obtain R458A specific binding peaks for which the foreground was KLF4 R458A ChIP-Seq data compared to the background of KLF4 WT ChIP-seq data.\n\nWe utilized MACS2 to recognize broad peaks of H3K27ac based on their ChIP-Seq data mapped by Bowtie2. The cutoff of broad peak call was q\u00a0<\u00a00.1. The same procedure as that for KLF4 ChIP-Seq was taken to distinguish H3K27ac peaks at 0 hr only, at 48 hr only, or shared at both 0 hr and 48 hr, for KLF4 WT and R458A, respectively.\n\n#### Quantitative study of histone modification\n\nWe chose two sets of genomic regions to quantitatively study dynamic changes of histone modification between 48 hr and 0 hr. The first group is regions within\u00a0\u00b11 kb from the middle points of KLF4 binding peaks. As negative control, we selected other 7780 regions, which locate 4 kb to 6 kb away from the boundaries of 3890 KLF4 binding peaks, then removed 558 out of 7780 regions in the negative control group which overlap with at least one of KLF4 binding peaks. The signal of the histone modification within the region was represented by RPM (Reads per Million) in logarithmic scale base 2. The difference of signals between 48 hr and 0 hr was further normalized so that the difference for 7222 random regions was 50% up and 50% down.\n\nAll the raw data for our large-scale studies have been deposited in GEO (GSE97632).\n\n### Assessment of CpG methylation status by bisulfite sequencing\n\nSanger bisulfite sequencing was performed as previously described (Hu et al., 2013). Purified genomic DNA from GBM cells were treated by EZ DNA Methylation-Direct Kit (Zymo Research, Irvine, CA). After bisulfite conversion, regions of interest were PCR-amplified using Taq polemerase. The primers used for bisulfite sequencing were listed in Supplementary file 2. PCR products were gel-purified and cloned into a TA vector (Thermo Fisher Scientific). Individual clones were sequenced (Genewiz, Cambridge, MA) and aligned with the reference sequence.\n",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "45ad6267-5ec9-4380-bfe1-c8e79a3dd071",
+      "submission_id": "09d4cb74-fe74-4d27-b048-93641a7cc2ea",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bing Ren, University of California, San Diego School of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.20068.023](https://doi.org/10.7554/eLife.20068.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Methylated cis-regulatory elements mediate KLF4-dependent gene transactivation and cell migration\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Bing Ren (Reviewer #1), is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Kevin Struhl as the Senior Editor.\n\nYour work has been considered by the editors and three reviewers. The comments from the reviewers are attached. The reviewers recognize the potential significance of your finding of the function of DNA methylation-dependent binding of Klf4 in cell adhesion and migration, but raised considerable concerns regarding experimental evidence and the conclusions. In light of these concerns we cannot recommend publication of this manuscript. However, if you are able to address fully the main concerns as listed below then we would be happy to consider a much-revised version of the manuscript.\n\nEssential revisions:\n\n1) New experimental evidence is required to fully establish the DNA methylation dependent binding of wild type and the mutant form. Control experiments with Klf4 mutant lacking DNA binding potential altogether needs to be conducted; DNA methylation and motif analysis of the cell systems need to be performed.\n\n2) Causality of DNA methylation dependent binding of Klf4 on the genome and induction of some target genes needs to be more fully established. As pointed by reviewer #3, the presence of the binding within 10kb of the promoter does not prove direct targeting relationship. New experimental data should be provided to support the notion that a target gene is directly regulated by Klf4's binding to the methylated DNA near the gene. This could be CRISPR/cas9 mediated genome editing or other means.\n\n3) The treatment of cells by 5-Aza is inducing global DNA demethylation, and the observed phenotypes in the cell system can be attributed to non-specific effects. The authors need to discuss this aspect of the experiments to avoid drawing un-substantiated conclusions.\n\n4) Statistical methods need to be better described and experimental data need to be more rigorously interpreted. Please check their comments carefully and make sure to remove or modify the particular statements in the revised manuscript.\n\nReviewer #1\n\nIn this manuscript Wan et al. reported the finding that Klf4 can indeed bind methylated DNA to activate transcription of genes in mammalian cells. Work in the laboratory of one of the co-authors (Dr. Zhu) previously showed that Klf4 could recognize DNA motifs with methylated CpG, and a point mutation R458A disrupts its methyl-DNA binding but not affect the binding to unmethylated sequences. In the current work, the authors tried to demonstrate function of the methyl-CG binding of Klf4. They chose two gliobastoma multiforme (GBM) cell lines U87 and U373 expressing either an inducible Wild Type Klf4 or one with R458A mutation. They found that upon induction of WT Klf4, but not MT form, the GBM cells acquire cell adhesion and migratory properties. They further investigated the binding sites of the two forms of proteins, and identified a substantial number of binding sites for the WT form but not the methyl-binding defective mutant. The also carried out RNA-seq analyses to identify genes regulated differentially by the WT versus Mutant form, and linked some of them to the differential binding of the Klf4 proteins. They claimed to identify 116 genes activated by mCpG-dependent KLF4 binding activity. In order to link the differential binding to DNA methylation at DNA, the group picked 15 regions and performed bisulfite sequencing. They showed that 10 of them contain DNA methylation. The authors conclude that Klf4's methyl-CG binding activity is critical for its role in mediating cell adhesion and migration in the GBM cells, and its binding to the methylated sites results in chromatin remodeling and transcription activation.\n\nThe work represents an in-depth follow up study of a phenomenon that some transcription factors binds to methylated DNA. The authors provided multiple lines of evidence supporting the functional role of methyl-CpG binding of Klf4. However, they also made some over-statement, and some conclusions are not sufficiently established with existing evidence. Additional experiments and analyses are needed to strengthen these conclusions.\n\nMajor problems:\n\n1) Differential binding of WT and R458A Klf4 in GBM cells: Is this due to failure of the mutant protein to bind methylated DNA? Unfortunately, the evidence presented is weak: the authors performed Bisulfite Sequencing on 15 sites and found that 10 of them contain methylated CpG. Are these DNA sequences recognized by WT Klf4 but not mutant klf4? EMSA should be performed to establish this point. Further, 15 is too small a number to generalize to the rest of the differential binding sites. It is important to carry out base-resolution analysis of DNA methylation in these cells and determined if differential DNA binding by WT and R458A Klf4 in the GBM cells is indeed correlated with presence of DNA methylation at the Klf4 binding motifs in these regions.\n\n2) The authors claimed that 116 genes are activated by mCpG-dependent KLF4 binding activity. Again, the evidence to support this claim is weak. Besides the reasons outlined in #1, there is also a need to establish the causality of KLF4 binding to methylated DNA in the cells and activation of these genes. Since the authors observed partial loss of cell adhesion and migration after 5-AZA treatment, it is important to show that the induction of these 116 genes is affected by 5-AZA in the direction that is consistent with their being targeted by Klf4.\n\n3) The 5-AZA treatment leads to partial loss of migration of cells expressing WT Klf4. Is this due to DNA methylation dependent binding of Klf4? It is necessary to demonstrate loss of DNA methylation and loss of Klf4 binding at some sites after treatment.\n\nReviewer #2:\n\nBinding of transcription factors to methylated regions of the genome to activate gene transcription is a new paradigm, and several studies have provided convincing evidence supporting this hypothesis. The manuscript by Wan et al., 'Methylated cis-regulatory elements mediate KLF4-dependent gene transactivation and cell migration' supports this hypothesis. In this study Wan et al. provides the best evidence of transcription factors binding to methylated DNA motifs and mediating gene activation. The experiments support their hypothesis convincingly and the manuscript describes it well. However, there are certain aspects that need to be addressed before it can be accepted.\n\nPreviously, the authors discovered that KLF4 can bind to methylated motifs and that a mutation in KLF4, (R458A) inhibited binding to methylated motifs but not unmethylated motifs (Hu et al., eLife 2013). They used this mutation as a negative control in the examination of KLF4 binding to methylated DNA sequences. However, in the present manuscript, they do not show that KLF4 R458A is able to activate unmethylated motifs in their genomic assays as they showed previously in transfection experiments. They need a negative control with no KLF4 function.\n\nThe authors make stable cell lines in human glioblastoma U87cells. They make doxycycline inducible cells and do cellular and genomic experiments to probe the function of KLF4 binding to methylated DNA. As already stated, they need a third cell with no KLF4 function, it can be the parental cells.\n\nMajor points:\n\n1) The authors observe KLF4 ChIP-seq in WT and R458A transfected cells. There are some key aspects that need to be included. How many / percentage of canonical and methylated sites are specific or shared between WT and R458A cells. A representation of the motifs needs to be addressed. Figure 3E, the authors need to provide the input track to the screenshot; it seems to be the background is high. Some other similar screenshots of genes as supplementary figures will be useful. MACS 1.4 has been used to call peaks for KLF4 while again MACS2 has been used to call peaks while comparing with the acetyl mark. It would be better if the authors use the same pipeline to call peaks, as they are different. Why do the authors need to call a broad peak in this case?\n\n2) The R458A mutant binds to ~1200 regions, the authors need to provide details regarding these regions.\n\n3) The methods do not indicate whether biological replicates were performed for the sequencing based assays, in that case reproducibility is questionable. The authors can also provide a supplementary summary table for the mapped reads for all the sequencing experiments.\n\n4) Figure 1A: KLF4 expressed at a much higher level in the mutant version and can be observed consistently across the doses, still the authors find loss of physiological functions and KLF4 binding peaks needs explanation. The authors need to include a negative control or some KLF4 silencing assay to show WT KLF4 is directly correlated to the observed physiological changes such as cellular migration / wound healing / adhesion.\n\n5) Figure 2B: Comparatively lesser focal location of F-actin and Vaculin can also be noted in R458A cells it will be helpful to if the authors show fields with similar number of cells as that of the WT cells.\n\n6) Figure 5F subsection \u201cKLF4-mCpG interactions activate RHOC via chromatin remodelling\u201d It is evident treatment of WT cells with 5-aza and doxycycline induces expression of RHOC, so it is apparent expression of RHOC is not absolutely methylation / KLF4 dependent. The authors should explain this in their text. Authors should have R458A version of the figure.\n\n7) What is the methylation status of the WT specific KLF4 chip peaks sharing acetylation mark.\n\nReviewer #3:\n\nThe paper has a single major finding which is that the KLF4 R458 mutation, which presumably affects nothing other than binding to methylated DNA, is severely compromised in its ability to induce both cellular phenotypes and gene expression changes in GBM cell lines. Moreover, these changes induced by WT KLF4 are largely abrogated by removal of DNA methylation. If one assumes that R458 has no other role, and that methylation has no indirect impact on the effects of KLF4 binding, then the core findings do seem to be supported by several lines of evidence.\n\nThat said, the paper makes a series of claims that are not supported by the data, and contains interpretations that I believe are erroneous. It also seems to contain some redundancy. It strikes me that the paper would be stronger if most of the material presented was removed and only the essence was retained. I have grouped my major concerns into four points, some of which are applicable to multiple sections of the paper.\n\nMajor points:\n\n1) The statistical analyses are incompletely described, interpreted incorrectly, confuse correlation with causality, and contain biases.\n\nThe RNA-seq, ChIP-seq, and bisulfite sections need to state which overlaps are significant, and what is the predictive power, otherwise there is a strong potential that the manuscript is mainly describing phenomena with little or no significant relationship, and/or is confusing weak correlations or random overlaps with causality, due to unwarranted conditioning on unproven expectation. This is relevant to several sections, starting with this one:\n\nSubsection \"Identify direct targets of mCpG-dependent KLF4 interactions in GBM cells\" is flawed. 613 genes are identified as responsive to KLF4 overexpression (induced more than 2-fold). Then, \"To determine which genes were directly activated by mCpG-dependent KLF4 binding events, ChIP-seq identifies 3,890 peaks. 65 of these bind within 10kb of the promoter, or within the UTRs or exons of the induced genes, \"indicating that most likely they were direct targets of KLF4-mCpG interactions\" (this is the key point, so I quote from the text). I disagree that this shows that they are direct targets \u2013 the null hypothesis should be that there is no relationship, and in fact if there is any overlap it seems to be low. It is entirely possible that there is a random association between the ChIP data and the RNA-seq data, and even if it is nonrandom, the fold enrichment over random should be given.\n\nInstead, this section concludes \"Taken together, a total of 116 genes were directly [my emphasis] up-regulated via mCpG-dependent KLF4 binding to the cis-regulatory elements in the proximal regulatory regions (56%) and distal enhancers (44%)\". There is simply not the evidence in this paper to make that conclusion.\n\nSince we don't have the right numbers in the current paper I will explain why the reasoning is flawed using typical numbers seen in other studies (which seem to be similar here). Let's say that there are 10,000 active genes, peaks are found in 900, 600 are up-regulated, and 60 overlap. So, peaks are found in 9% of all promoters, but 10% of up-regulated promoters. 6% of genes are up-regulated, and 7% of genes with a peak are up-regulated. Certainly there is something statistically significant happening, but the relationship between binding sites and expression responses is weak, so even when we see it, we cannot infer causality. We know that many binding sites do nothing (at least 93%), and that many genes are induced with no binding at all (at least 90%). So, it is certainly possible that there could be genes that have a binding site that does nothing and are induced indirectly.\n\nBy analogy, if the same numbers were used for a high-cholesterol diet and heart attacks, we would be wrong to assume that all 60 people with heart attacks and a high cholesterol diet were caused by the diet, since certainly the diet is not deterministic, and there are multiple causes of heart attacks. Instead, we can conclude that seven of the heart attacks can be attributed to the diet, but we can't tell which seven they were.\n\nIn addition, two technical modifications of these analyses are needed to further avoid bias. First, the comparisons among binding sites, induced genes, marks etc need to be restricted to genes that are expressed at all in these cells \u2013 it is possible to get high overlaps among unrelated regulators only because everything tends to pile up on open chromatin and active promoters. Similarly, the GO analyses later in the paper should be done taking the induced genes as a background. KLF4 overexpression induces migration and morphological changes, which could explain why genes related to this process are expressed. It is possible that KLF4 only directly induces a small number of genes, and the rest of what we are seeing is a secondary effect.\n\neLife asked me to write a short review, but the same issues pervade subsequent analyses of overlaps with histone ChIP data and methylation. It is abundantly clear from ENCODE that there are lots of pervasive marks of all kinds in all cell types, many of which concentrate in active regions. Not every overlap is functionally significant, however, and in fact it is likely that most of them are doing nothing at any given time.\n\n2) It seems possible that global DNA demethylation could attenuate the ability of cells to do many things, and thus the results shown in Figure 2C and D could be nonspecific. Are there other perturbations that can trigger the same responses that are being assayed, and are these responses intact in aza-treated cells? If not, then the effects cannot really be attributed to a specific effect of KLF4 binding.\n\n3) I do not see that Figure 5 adds anything to the paper. It is simply a reiteration of assays already used earlier on a global scale, but using PCR assays. The same issues I describe above in major points 1 and 2 also apply to these results \u2013 I believe that the final statement \"Therefore, high methylation level in RHOC promoter is essential for KLF4 WT to activate RHOC transcription\" is rather an overstatement. The first sentence is better supported: \"Several lines of evidence supported that DNA methylation mediated RHOC activation by KLF4 WT\". On the whole, however, this is the same argument that has already been made in genome-wide analyses, with no new evidence. I would suggest that this section is dispensible, since it only confirms what would be expected from the rest of the manuscript.\n\n4) The association of active marks with induced promoters and with many of the Klf4 sites is unsurprising \u2013 this would be seen even if the induction of the supposed \"target genes\" was indirect, and the KLF4 binding was coincidental. Indeed, the fact that there are 3,593 novel H3K27ac peaks, but only 274 overlap KLF4, shows that the two are largely dissociated. Thus, the statement in the Discussion that \"Our study reveals that mCpG-dependent binding activity of KLF4 serves as the link between methylated CpG and changes in chromatin status\" is not supported by the data shown. It is \"a\" link, but not \"the\" link.\n",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3484763e-63d1-4319-a5c0-9927989ca48d",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C1",
+      "claim": "DNA methylation at the five position of the cytosine base (5mC) is the primary epigenetic modification on the mammalian genomic DNA",
+      "claim_type": "EXPLICIT",
+      "source": "DNA methylation at the five position of the cytosine base (5mC) is the primary epigenetic modification on the mammalian genomic DNA (Jaenisch and Bird, 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jaenisch and Bird, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "42d53a83-9369-4b68-bd89-f71adbc67fe5",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C2",
+      "claim": "Dysregulation of DNA methylation is a hallmark of various diseases and cancer",
+      "claim_type": "EXPLICIT",
+      "source": "dysregulation of DNA methylation is a hallmark of various diseases and cancer (Sharma et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sharma et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "8891753b-b37c-4976-81e8-684cbada1437",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C3",
+      "claim": "CpG methylation in cis-regulatory elements is generally believed to repress gene expression by disrupting transcription factor (TF)-DNA interactions directly or indirectly via the recruitment of proteins containing methyl-CpG-binding domain (MBD)",
+      "claim_type": "EXPLICIT",
+      "source": "CpG methylation in cis-regulatory elements is generally believed to repress gene expression by disrupting transcription factor (TF)-DNA interactions directly or indirectly via the recruitment of proteins containing methyl-CpG-binding domain (MBD), which are largely sequence independent (Boyes and Bird, 1991)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Boyes and Bird, 1991",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "f7d3a8b1-324f-445d-aca4-c8ec1905de39",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C4",
+      "claim": "Many TFs were identified as a new class of sequence-specific methylated DNA readers",
+      "claim_type": "EXPLICIT",
+      "source": "This dogma has been challenged by several recent studies in which many TFs were identified as a new class of sequence-specific methylated DNA readers (Filion et al., 2006; Mann et al., 2013; Rishi et al., 2010; Sasai et al., 2010; Serra et al., 2014; Spruijt et al., 2013; Zhu et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to recent studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "e9ef0882-70e0-4f53-90d1-04c1483effa8",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C5",
+      "claim": "47 TFs and co-factors, including KLF4, recognize mCpG-containing DNA motifs in a sequence-specific manner",
+      "claim_type": "EXPLICIT",
+      "source": "a large-scale survey against the human TF repertoire revealed that 47 TFs and co-factors, including the Kr\u00fcppel-like factor 4 (KLF4), recognize mCpG-containing DNA motifs in a sequence-specific manner (Hu et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hu et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "078db688-f66f-49ac-96d6-24d3953259ee",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C6",
+      "claim": "KLF4 recognizes a different motif that requires CpG methylation (i.e., 5'-CmCGC) in addition to its canonical DNA motif",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to its canonical DNA motif, KLF4 also recognizes a different motif that requires CpG methylation (i.e., 5'-CmCGC)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "634dc8e2-3f0d-4922-b251-ddcdba7e5874",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C7",
+      "claim": "Arg458-to-Alanine (R458A) mutation in KLF4 abolished its interaction with the methylated DNA motif",
+      "claim_type": "EXPLICIT",
+      "source": "Further mutagenesis studies demonstrated that Arg458-to-Alanine (R458A) mutation in KLF4 abolished its interaction with the methylated DNA motif, but showed no detectable impact on binding to its canonical, unmethylated motifs (Hu et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hu et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "1ff31aee-eee7-4ba0-ba76-794af2aec528",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C8",
+      "claim": "R458A mutation showed no detectable impact on KLF4 binding to its canonical, unmethylated motifs",
+      "claim_type": "EXPLICIT",
+      "source": "Further mutagenesis studies demonstrated that Arg458-to-Alanine (R458A) mutation in KLF4 abolished its interaction with the methylated DNA motif, but showed no detectable impact on binding to its canonical, unmethylated motifs (Hu et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hu et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "95ac603c-61f0-4310-87fe-3568cc5594fb",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C9",
+      "claim": "KLF4 wild type could recognize methylated promoter and activate downstream transcription in cell-based luciferase assays",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, cell-based luciferase assays showed that KLF4 wild type (WT) could recognize methylated promoter and activate downstream transcription; while R458A mutant could not (Hu et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hu et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "dd6ca197-2f6c-45f4-9c00-e96697bffbd4",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C10",
+      "claim": "R458A mutant could not recognize methylated promoter and activate downstream transcription in cell-based luciferase assays",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, cell-based luciferase assays showed that KLF4 wild type (WT) could recognize methylated promoter and activate downstream transcription; while R458A mutant could not (Hu et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hu et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "cc3d28d2-ca38-4479-a867-6cfa0f6f324a",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C11",
+      "claim": "The crystal structure of KLF4 binding to mCpGs was published",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of KLF4 binding to mCpGs was published by an independent study (Liu et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "9a4090cb-29ae-450f-a39f-40e8751bbb54",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C12",
+      "claim": "KLF4 is one of the Yamanaka factors that induce pluripotency in somatic cells",
+      "claim_type": "EXPLICIT",
+      "source": "It is one of the Yamanaka factors that induce pluripotency in somatic cells (Nandan and Yang, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nandan and Yang, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "c7b03585-6a26-4df8-9fec-d0cc59f41a5d",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C13",
+      "claim": "KLF4 functions as a cancer driver gene",
+      "claim_type": "EXPLICIT",
+      "source": "KLF4 also functions as a cancer driver gene (Vogelstein et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Vogelstein et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "4b8151aa-28ab-473c-81e1-2541dd9496a7",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C14",
+      "claim": "KLF4 is involved in cancer stem cell maintenance",
+      "claim_type": "EXPLICIT",
+      "source": "and is involved in cancer stem cell maintenance (Leng et al., 2013; Yu et al., 2011; Zhu et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "aa8f2158-f9ef-4f6b-bb62-8873073f56d4",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C15",
+      "claim": "Treatment of cancer cells with hepatocyte growth factor induced cancer stem cell phenotypes by increasing the expression of reprograming factors including KLF4",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous studies indicate that treatment of cancer cells with hepatocyte growth factor induced cancer stem cell phenotypes by increasing the expression of reprograming factors including KLF4 (Li et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Li et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "b989abb5-4ae6-48a6-b77d-bb570a1850fd",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C16",
+      "claim": "KLF4 has been shown to be upregulated in high-grade brain tumors",
+      "claim_type": "EXPLICIT",
+      "source": "KLF4 has also been shown to be upregulated in high-grade brain tumors (Elsir et al., 2014; Holmberg et al., 2011), such as glioblastoma (GBM), the most aggressive and lethal adult brain tumor (Carlsson et al., 2014; Quick et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "b077fcbf-570d-4528-b4eb-6206cf004f72",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C17",
+      "claim": "Glioblastoma (GBM) is the most aggressive and lethal adult brain tumor",
+      "claim_type": "EXPLICIT",
+      "source": "such as glioblastoma (GBM), the most aggressive and lethal adult brain tumor (Carlsson et al., 2014; Quick et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Carlsson et al., 2014 and Quick et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "b5d62103-aefc-484b-94f1-08826c179294",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C18",
+      "claim": "KLF4 can act as a tumor suppressor in distinct cellular contexts",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to driving tumor malignancy, KLF4 can act as a tumor suppressor in distinct cellular contexts (Evans and Liu, 2008; Rowland et al., 2005; Tetreault et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "acde0662-cb7d-4f98-9f2b-1bd0f3dfb923",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C19",
+      "claim": "U87 and U373 human GBM cell lines have low endogenous KLF4 expression",
+      "claim_type": "EXPLICIT",
+      "source": "We chose two human GBM cell lines, namely U87 and U373, with physiologically relevant genetic backgrounds to dissect the function of mCpG-dependent KLF4 binding activity, and because these two cell lines have low endogenous KLF4 expression",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as rationale for cell line selection",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "bc45ac42-bd66-4d5c-8c26-6653e3952b44",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C20",
+      "claim": "The endogenous KLF4 level in non-transfected U87 cells was barely detectable",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis and immunocytochemistry staining confirmed that the endogenous KLF4 level in non-transfected U87 cells was barely detectable",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Confirmed by Western blot and immunocytochemistry data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "54b43779-211d-4060-8c88-7504822bd00f",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C21",
+      "claim": "After 48 hr Dox induction, both KLF4 WT and R458A proteins showed a dose-dependent increase without an impact on cell proliferation",
+      "claim_type": "EXPLICIT",
+      "source": "after 48 hr Dox induction, both KLF4 WT and R458A proteins showed a dose-dependent increase without an impact on cell proliferation (Figure 1A, Figure 1\u2014figure supplement 1A,B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1A and Figure 1\u2014figure supplement 1A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "28f3ebc9-9617-491d-a75a-890a82cef829",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C22",
+      "claim": "Dox dose 1 \u00b5g/ml induced KLF4 expression to a level (~20\u201327 fold) similar to that during cancer cell reprogramming when challenged by growth factors",
+      "claim_type": "EXPLICIT",
+      "source": "For the rest of the study, we chose the Dox dose 1 \u00b5g/ml, which induced KLF4 expression to a level (~20\u201327 fold) similar to that during cancer cell reprogramming when challenged by growth factors (Li et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to previous study cited as Li et al., 2011",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "546fcf5d-34cd-45af-8e9c-c53bbf4e33d4",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C23",
+      "claim": "Induction of KLF4 WT significantly increased cell adhesion",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that induction of KLF4 WT significantly increased cell adhesion (Figure 1B,C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "9396d729-499f-4037-9c97-a273a42dcaf2",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C24",
+      "claim": "KLF4 WT promoted migration in both transwell assays and wound healing assays",
+      "claim_type": "EXPLICIT",
+      "source": "and promoted migration in both transwell assays and wound healing assays (Figure 1D\u2013F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1D\u2013F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "5dbd5c71-f6f9-4657-accf-ca174c558d9c",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C25",
+      "claim": "Induction of R458A had no detectable impact on either cell adhesion or migration",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, induction of R458A had no detectable impact on either cell adhesion or migration (Figure 1B\u2013F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1B\u2013F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "cfe0c23b-b58c-47c5-9df0-deabf8cad750",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C26",
+      "claim": "KLF4 WT-expressing cells showed elongated, spindle-like morphology",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the observed phenotypes, KLF4 WT-expressing cells showed elongated, spindle-like morphology (arrows, Figure 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "b035b04a-deae-4628-997d-62db125c0344",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C27",
+      "claim": "Control and R458A-expressing cells remained round and small",
+      "claim_type": "EXPLICIT",
+      "source": "whereas control and R458A-expressing cells remained round and small (arrowheads, Figure 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "e7c75ac6-c0b1-46c1-974f-d41087e999c3",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C28",
+      "claim": "KLF4 WT induced the formation of stress actin fibers and focal adhesion in GBM cells",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence staining for F-actin and vinculin further confirmed the formation of stress actin fibers and focal adhesion, respectively, in KLF4 WT-expressing GBM cells (arrowheads), but not in R458A-expressing cells (Figure 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "b615df50-f2db-42b1-91e7-83b0740f4666",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C29",
+      "claim": "R458A did not induce the formation of stress actin fibers and focal adhesion in GBM cells",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence staining for F-actin and vinculin further confirmed the formation of stress actin fibers and focal adhesion, respectively, in KLF4 WT-expressing GBM cells (arrowheads), but not in R458A-expressing cells (Figure 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "1d5acfaf-63c2-4f00-9d65-b7b083862115",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C30",
+      "claim": "Similar results were observed in U373 GBM cells",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were observed in other GBM cell lines, such as U373 GBM cells (Figure 2\u2014figure supplement 1A\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2\u2014figure supplement 1A\u2013D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "e83e9a1c-4d36-4b52-8080-d468129278fa",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C31",
+      "claim": "R458A loses binding activity to mCpG-containing motifs but retains binding to unmethylated canonical motifs",
+      "claim_type": "EXPLICIT",
+      "source": "Since R458A loses binding activity to mCpG-containing motifs but retains binding to unmethylated canonical motifs (Hu et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hu et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "cb7c133c-b07e-427c-9fc6-0a4d3a4df85b",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C32",
+      "claim": "The phenotypic differences between KLF4 WT and R458A can be attributed to the mCpG-dependent KLF4 activity",
+      "claim_type": "EXPLICIT",
+      "source": "these phenotypic differences can be attributed to the mCpG-dependent KLF4 activity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the differential effects of WT and R458A mutant",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "8699efe1-ee9e-4e0e-bf3e-8654dbe5b159",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C33",
+      "claim": "5-Aza treatment partially suppressed the enhanced cell migration and wound healing phenotypes driven by KLF4 WT",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated in Figures 2D,E, 5-Aza treatment partially suppressed the enhanced cell migration and wound healing phenotypes driven by KLF4 WT",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figures 2D,E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "e3cfeec2-6635-444e-94d5-56bf5b78a935",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C34",
+      "claim": "The increased cell migration was mediated via a DNA methylation-dependent mechanism",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that the increased cell migration was indeed mediated via a DNA methylation-dependent mechanism",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from 5-Aza treatment effects",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "42c6abcd-6e92-44af-a5b9-c451db89e29b",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C35",
+      "claim": "A total of 613 genes were significantly up- or down-regulated post KLF4 WT induction (p<0.001)",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that a total of 613 genes were significantly up- or down-regulated post KLF4 WT induction (p<0.001), indicating that KLF4 globally affected gene transcription (Figure 3A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "68b0a8a4-2425-4a4c-8f65-10bd4331f002",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C36",
+      "claim": "500 out of 613 genes (82%) were only affected by KLF4 WT but not R458A",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, a large fraction (500/613 = 82%) was only affected by KLF4 WT but not R458A, suggesting that these expression changes were regulated, directly or indirectly, via mCpG-dependent KLF4 binding activity (Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "abdb7710-28ae-4510-a3c6-099799f018a6",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C37",
+      "claim": "308 of the 500 genes showed significantly elevated expression after KLF4 WT induction",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, 308 of the 500 genes showed significantly elevated expression after KLF4 WT induction (Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "353e5b22-4539-4bee-bc31-3685861d7055",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C38",
+      "claim": "The expression of RHOC, RAC1, LMO7, and MIDN was up-regulated by induction of KLF4 WT but not R458A",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the expression of RHOC, RAC1, LMO7, and MIDN was up-regulated by induction of KLF4 WT but not R458A (Figure 3C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "2f253333-0834-4920-9195-1be497370f80",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C39",
+      "claim": "A total of 3890 and 1222 significant ChIP-seq peaks were identified in KLF4 WT and R458A expressing cells, respectively",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 3890 and 1222 significant ChIP-seq peaks were identified in KLF4 WT and R458A expressing cells, respectively (Figure 3D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "dc89b983-ee15-4c14-b037-2a6e03f4da63",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C40",
+      "claim": "2733 (70%) ChIP-seq peaks were specific to KLF4 WT",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison between the KLF4 WT and R458A ChIP-seq peaks identified that 2733 (70%) were specific to KLF4 WT, indicating that these peaks were recognized via mCpG-dependent KLF4 binding activity (referred as WT-specific peaks) (Figure 3D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "651e0a67-88cb-40f0-aefd-6666b74cc987",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C41",
+      "claim": "~95% of the KLF4 R458A ChIP-seq peaks were also recognized by KLF4 WT",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, ~95% of the KLF4 R458A ChIP-seq peaks were also recognized by KLF4 WT (referred as shared peaks)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-seq data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "990b8db4-05e2-47aa-90d4-0314ef928f3a",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C42",
+      "claim": "A single R458A mutation abolished >2/3 of the KLF4 WT binding loci in the chromatins",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that a single R458A mutation abolished >2/3 of the KLF4 WT binding loci in the chromatins (Figure 3\u2014source data 3)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from ChIP-seq data comparison",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "94204100-860a-4eac-b2c5-60a4d7a321ba",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C43",
+      "claim": "66% of the KLF4 WT-specific ChIP-seq peaks showed a high methylation level (\u03b2 >60%) at CpG sites",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 66% of the KLF4 WT-specific ChIP-seq peaks showed a high methylation level (e.g., \u03b2 >60%) at CpG sites",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by whole genome bisulfite sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "39b100b0-541f-4ff7-b552-572b02f3ef8f",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C44",
+      "claim": "Only 36% of the ChIP-seq peaks shared by KLF4 WT and R458A reached a similar CpG methylation level (\u03b2 >60%)",
+      "claim_type": "EXPLICIT",
+      "source": "while only 36% of the ChIP-seq peaks shared by KLF4 WT and R458A reached a similar CpG methylation level (p=3.7e-223)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by whole genome bisulfite sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "71898d2e-1471-4681-8bdf-91f0b45d17dd",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C45",
+      "claim": "The KLF4 WT-specific ChIP peaks are enriched for highly methylated CpGs",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the KLF4 WT-specific ChIP peaks are enriched for highly methylated CpGs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from methylation level comparison",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "462a985d-ce0a-4b3b-98dc-5466b3054083",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C46",
+      "claim": "10 methylated 6-mer motifs were significantly over-represented in the WT-specific peaks (p=6.6e-37)",
+      "claim_type": "EXPLICIT",
+      "source": "At a cutoff of \u03b2 >60% CpG methylation we found 10 methylated 6-mer motifs (Figure 3\u2014source data 4) that were significantly over-represented in the WT-specific peaks (p=6.6e-37)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by motif analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "d328cfce-b184-4ccd-af4b-fd53bc8bc732",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C47",
+      "claim": "Many of the methylated 6-mer motifs share sequence similarity to the motif 5'-CCCGCC",
+      "claim_type": "EXPLICIT",
+      "source": "Many of them share sequence similarity to the motif 5'-CCCGCC (Figure 3G; left panel), of which the methylated form was reported to be recognized by KLF4 in our previous study (Hu et al., 2013)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by motif analysis shown in Figure 3G and citation to Hu et al., 2013",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "8f5d19b6-9315-432b-8d62-7cc62414ae3c",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C48",
+      "claim": "The peaks shared by WT and R458A were found enriched for different motifs (e.g., 5'-AAAAGGAA and 5'- GAGTTGAA)",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the peaks shared by WT and R458A were found enriched for different motifs (e.g., 5'-AAAAGGAA and 5'- GAGTTGAA) (Figure 3G; right panel)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by motif analysis shown in Figure 3G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "65a4f157-a2ec-4410-a52d-e863c8604f6d",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C49",
+      "claim": "The KLF4 WT-specific ChIP-seq peaks were enriched for highly methylated KLF4 binding motifs",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results confirmed that the KLF4 WT-specific ChIP-seq peaks were enriched for highly methylated KLF4 binding motifs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from motif and methylation analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "8e4da293-1864-4bcd-bcc1-9ad08421af81",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C50",
+      "claim": "The proximal regulatory regions of 65 KLF4 WT up-regulated genes were found to be occupied by KLF4 WT-specific ChIP-seq peaks",
+      "claim_type": "EXPLICIT",
+      "source": "The proximal regulatory regions of 65 KLF4 WT up-regulated genes were found to be occupied by KLF4 WT-specific ChIP-seq peaks, indicating that they were direct targets of KLF4-mCpG interactions (Supplementary file 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-seq and RNA-seq data integration",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "f4168b33-6146-4723-befe-22ab3c78ac9b",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C51",
+      "claim": "1773 out of 2733 KLF4 WT-specific ChIP-seq peaks overlapped with the 27,997 H3K27ac ChIP-seq peaks (64.5%)",
+      "claim_type": "EXPLICIT",
+      "source": "1773 out of 2733 KLF4 WT-specific ChIP-seq peaks overlapped with the 27,997 H3K27ac ChIP-seq peaks (64.5%) (Figure 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "e4244e38-5a53-46c2-996b-fb0aee4b2836",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C52",
+      "claim": "51 additional genes were up-regulated via mCpG-dependent KLF4 binding events at distal enhancers",
+      "claim_type": "EXPLICIT",
+      "source": "Using an enhancer target prediction algorithm that connects enhancers to specific genes (enhanceratlas.org) (Gao et al., 2016; He et al., 2014), we identified 51 additional genes that were up-regulated via mCpG-dependent KLF4 binding events (Supplementary file 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by enhancer prediction algorithm and data integration",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "c24b64a7-9f78-433a-9717-25c8646e4cc7",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C53",
+      "claim": "The up-regulation of 116 genes was found directly associated with mCpG-dependent KLF4 binding to their cis-regulatory elements",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the up-regulation of 116 genes was found directly associated with mCpG-dependent KLF4 binding to their cis-regulatory elements in the proximal regulatory regions (56%) and distal enhancers (44%) (Figure 4B and Supplementary file 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by integrated analysis shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "f640378d-8fbd-4be8-9478-22bbfc5f733a",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C54",
+      "claim": "KLF4 mCpG-dependent binding peaks were associated with 2518 expressed genes, of which 116 (4.6%) were up-regulated genes",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, we observed that KLF4 mCpG-dependent binding peaks were associated with 2518 expressed genes, of which 116 (4.6%) were up-regulated genes that is significantly higher than the ratio of expressed genes not associated with KLF4 WT binding sites (fold enrichment = 1.9; p=5.0e-13)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of ChIP-seq and RNA-seq data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "762e58c8-081f-4ae0-bd9c-17331900bcad",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C55",
+      "claim": "The majority (72%) of the 116 genes were associated with highly methylated (\u03b2 > 0.6) cis-regulatory elements",
+      "claim_type": "EXPLICIT",
+      "source": "To directly assess the methylation status in the cis-regulatory elements of the 116 direct target genes, we integrated the methylome dataset and found that the majority (72%) of the 116 genes were indeed associated with highly methylated (\u03b2 > 0.6) cis-regulatory elements (Figure 4C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by methylome data shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "83b31f94-1aff-4133-b1e4-2f01602534b7",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C56",
+      "claim": "Ten out of 15 randomly selected loci were confirmed to contain highly (75\u2013100%) methylated CpG sites in the associated cis-regulatory elements",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm this observation, we randomly selected 15 loci and performed methylation analysis by Sanger sequencing. Ten of them were confirmed to contain highly (75\u2013100%) methylated CpG sites in the associated cis-regulatory elements",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Sanger sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "6b9808bc-9d39-46f0-a820-0393d38fdc5a",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C57",
+      "claim": "The 116 direct targets of KLF4 WT were significantly enriched in biological processes relevant to cell communication, regulation or establishment of localization, cell adhesion or morphogenesis, positive regulation of MAP kinase activity, cell-cell junction, and cytoskeleton organization",
+      "claim_type": "EXPLICIT",
+      "source": "Gene Ontology analysis showed that these 116 direct targets of KLF4 WT were significantly enriched in biological processes relevant to the observed phenotypes, such as cell communication, regulation or establishment of localization, cell adhesion or morphogenesis, positive regulation of MAP kinase activity, cell-cell junction, and cytoskeleton organization (Figure 4E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Gene Ontology analysis shown in Figure 4E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "9c5ae9d2-48ab-4a2d-b018-79d9da78ad47",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C58",
+      "claim": "In the presence of 5-Aza, KLF4 WT induction did not activate 116 target genes significantly as that in the absence of 5-Aza",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that in the presence of 5-Aza, KLF4 WT induction did not activate 116 target genes significantly as that in the absence of 5-Aza (Figure 4F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 4F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "2cf201c4-4f8a-46f5-a4dc-d27963d7fe65",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C59",
+      "claim": "The expression level of 101 of the 116 genes was reduced in 5-Aza treated cells as compared with untreated cells",
+      "claim_type": "EXPLICIT",
+      "source": "Actually, the expression level of 101 of the 116 genes was reduced in 5-Aza treated cells as compared with untreated cells (Figure 4G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 4G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "dc94c6ea-b569-49ba-a65f-af8bdb62dbff",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C60",
+      "claim": "About half (53%) of all expressed genes were down-regulated after 5-Aza treatment (p=1.2e-14)",
+      "claim_type": "EXPLICIT",
+      "source": "while about half (53%) of all expressed genes were down-regulated after 5-Aza treatment (p=1.2e-14)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "267d555a-1ca2-4b84-b322-5e05afe1e01b",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C61",
+      "claim": "DNA methylation is responsible for the transcription activation of 101 genes targeted by KLF4-mCpG binding",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that DNA methylation is responsible for the transcription activation of these 101 genes targeted by KLF4-mCpG binding",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from 5-Aza treatment effects on gene expression",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "84954769-cdb2-407d-9a47-7310a4910e45",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C62",
+      "claim": "RHOC and RAC1 encode two small GPTases that play critical roles in cell migration and adhesion",
+      "claim_type": "EXPLICIT",
+      "source": "They encode two small GPTases that are known to play critical roles in cell migration and adhesion, and were found multiple times in the enriched GO terms as described above (Karlsson et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Karlsson et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "b5c0a112-3bbd-4dba-b0f8-2f8284d910af",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C63",
+      "claim": "RHOC activation leads to F-actin stress fiber formation and the assembly of focal adhesion complexes",
+      "claim_type": "EXPLICIT",
+      "source": "For example, RHOC activation leads to F-actin stress fiber formation and the assembly of focal adhesion complexes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "a10d1774-cbfa-4ef2-9d64-4c47d4227d4e",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C64",
+      "claim": "There are no known RHOC pathogenic mutations found in cancers",
+      "claim_type": "EXPLICIT",
+      "source": "Studies reveal that there are no known RHOC pathogenic mutations found in cancers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge from studies",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "31afbb86-be80-4cfd-a3d1-91f18ed657a5",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C65",
+      "claim": "Biologically relevant aberrant levels of RHOC expression are common in cancers",
+      "claim_type": "EXPLICIT",
+      "source": "however, biologically relevant aberrant levels of RHOC expression are common",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "83ebba40-3364-48f6-96de-23e4ae71a016",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C66",
+      "claim": "There is a strong association between RHOC expression levels and poor prognosis",
+      "claim_type": "EXPLICIT",
+      "source": "and there is a strong association between RHOC expression levels and poor prognosis (Karlsson et al., 2009; Narumiya et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Karlsson et al., 2009 and Narumiya et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "51522e82-b2c3-4b7c-8b1e-9e4903f88ae0",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C67",
+      "claim": "The RHOC promoter region contains highly methylated CpGs at \u2212507 bp to TSS",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, genome-wide bisulfite sequencing confirmed that these peaks contained highly methylated CpGs and these peaks were in close proximity to the coding regions of RHOC (\u2212507 bp to TSS)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genome-wide bisulfite sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "137675b1-ae85-4feb-9669-2ee3cb648f23",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C68",
+      "claim": "The RAC1 promoter region contains highly methylated CpGs at \u2212922 bp to TSS",
+      "claim_type": "EXPLICIT",
+      "source": "and RAC1 (\u2212922 bp to TSS)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genome-wide bisulfite sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "78b54a5c-dca0-4b7a-8861-3b4ffebd93d6",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C69",
+      "claim": "Induction of KLF4 WT, but not the R458A mutant, could induce RHOC at both mRNA and protein levels",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of RHOC, we first showed that induction of KLF4 WT, but not the R458A mutant, could induce RHOC at both mRNA and protein levels using RT-PCR and immunoblot analysis, respectively (Figure 5A,B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-PCR and immunoblot data shown in Figure 5A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "16230965-a1bc-49ac-a885-c63a2ec7a4d4",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C70",
+      "claim": "The RHOC promoter fragment could be ChIP-ed substantially better with the KLF4 WT than the R458A mutant",
+      "claim_type": "EXPLICIT",
+      "source": "Using a primer pair flanking this ChIP-seq peak, we confirmed that this fragment could be ChIP-ed substantially better with the KLF4 WT than the R458A mutant (Figure 5C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-PCR data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "a177109b-ebee-4661-8bf2-da4e70d68cef",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C71",
+      "claim": "Four of the five CpG in the RHOC promoter region were 100% methylated",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that four of the five CpG in this region were 100% methylated",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by bisulfite sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "a303cc4e-37fd-4853-bed1-edc14d20e392",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C72",
+      "claim": "After 5-Aza treatment the methylation levels of the four CpGs in the RHOC promoter was reduced to various levels, ranging from 13\u201380%",
+      "claim_type": "EXPLICIT",
+      "source": "however, after the 5-Aza treatment the methylation levels of the four CpGs was reduced to various levels, ranging from 13\u201380% (Figure 5D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by bisulfite sequencing data shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "4da22180-f711-462b-ba15-88ea96242552",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C73",
+      "claim": "Reduction of methylation almost completely abolished KLF4 WT binding to the RHOC cis-regulatory element",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, reduction of methylation almost completely abolished KLF4 WT binding to this cis-regulatory element (Figure 5E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-PCR data shown in Figure 5E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "04e655a6-6016-4643-9cee-3884c0a322f9",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C74",
+      "claim": "RHOC protein level was significantly repressed after 5-Aza treatment",
+      "claim_type": "EXPLICIT",
+      "source": "and RHOC protein level was also significantly repressed (Figure 5F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunoblot data shown in Figure 5F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "32ae9a2d-0046-4647-a498-198f3dd148fb",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C75",
+      "claim": "High methylation levels in RHOC and RAC1 promoters were essential for KLF4 WT to activate their gene transcription",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, high methylation levels in RHOC and RAC1 promoters were essential for KLF4 WT to activate their gene transcription",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from 5-Aza treatment effects on KLF4 binding and gene expression",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "b05546af-fe52-4458-bf95-9b02285c5b6a",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C76",
+      "claim": "Upon KLF4 binding to DNA (48 hr post Dox), the active mark H3K27ac was significantly increased by ~2.5 fold at the RHOC promoter",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that upon KLF4 binding to DNA (48 hr post Dox), the active mark H3K27ac was significantly increased by ~2.5 fold",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-PCR data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "1293139b-240e-44e5-9919-1a33bb1b56bd",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C77",
+      "claim": "Both repressive marks, H3K9me3 and H3K27me3, were decreased by ~3.5 and~6 fold, respectively, at the RHOC promoter upon KLF4 binding",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, both repressive marks, H3K9me3 and H3K27me3, were decreased by ~3.5 and~6 fold, respectively (Figure 5G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-PCR data shown in Figure 5G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "298b7f40-577b-46cb-843e-eaabfa2bfb34",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C78",
+      "claim": "KLF4 R458A induction failed to trigger any detectable changes in H3K27ac, H3K9me3, or H3K27me3 marks in the RHOC promoter region",
+      "claim_type": "EXPLICIT",
+      "source": "As a comparison, KLF4 R458A induction failed to trigger any detectable changes in H3K27ac, H3K9me3, or H3K27me3 marks in the RHOC promoter region (Figure 5G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-PCR data shown in Figure 5G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "72b681f7-6ac0-45f4-a340-72fc92678827",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C79",
+      "claim": "The recruitment of KLF4 WT to the methylated RHOC promoter initiated conversion from repressive to active chromatins",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the recruitment of KLF4 WT to the methylated RHOC promoter initiated conversion from repressive to active chromatins, as a prerequisite for activation of RHOC transcription",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from histone mark changes upon KLF4 binding",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "f6518f78-46bb-4fc7-94f0-1019b3ebf96a",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C80",
+      "claim": "H3K27ac level increased in 83.3% of the 162 peaks at 48 hr (p=7.2E-19)",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, H3K27ac level increased in 83.3% of the 162 peaks at 48 hr (Figure 6B, p=7.2E-19)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "61a871ef-8e9c-4977-8890-d00b9b112b68",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C81",
+      "claim": "H3K27me3 levels decreased in 54.3% (p=3.4E-2) of the 162 peaks at 48 hr",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, H3K27me3 and H3K9me3 levels decreased in 54.3% (p=3.4E-2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-seq data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "9c4445dc-fd46-4fde-94b5-b4228d46f83f",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C82",
+      "claim": "H3K9me3 levels decreased in 63.6% (p=1.5E-4) of the 162 peaks at 48 hr",
+      "claim_type": "EXPLICIT",
+      "source": "and 63.6% (p=1.5E-4) of the 162 peaks at 48 hr, respectively (Figure 6B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "642c2f41-a267-4015-b46f-2a4aead0b45b",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C83",
+      "claim": "Only 36% of the shared KLF4 peaks (22/60) had stronger H3K27ac signal after 48 hr of Dox treatment",
+      "claim_type": "EXPLICIT",
+      "source": "As a negative control, we examined the H3K27ac dynamic changes in the up-regulated genes shared by KLF4 WT and R458A. Only 36% of the shared KLF4 peaks (22/60) had stronger H3K27ac signal after 48 hr of Dox treatment (Figure 6\u2014figure supplement 1A\u2013C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figure 6\u2014figure supplement 1A\u2013C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "ea97e08c-6856-49d7-b377-c650a4731de1",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C84",
+      "claim": "KLF4-mCpG binding enhances H3K27ac",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that KLF4-mCpG binding enhances H3K27ac",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of H3K27ac changes in WT-specific vs shared peaks",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "ef664f9c-c367-47a7-934e-32ccbecf4a24",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C85",
+      "claim": "After KLF4 WT was recruited to intron region of LMO7, the H3K27ac level was significantly increased around the KLF4 ChIP-seq peak",
+      "claim_type": "EXPLICIT",
+      "source": "After KLF4 WT was recruited to intron region of LMO7, which is known to play a role in cell migration and adhesion (Hu et al., 2011), the H3K27ac level was significantly increased around the KLF4 ChIP-seq peak",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-seq data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "1cd00b69-7206-450d-9a6a-b33601d9a914",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C86",
+      "claim": "R458A mutation abolished the KLF4 binding at the LMO7 locus",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, R458A mutation abolished the KLF4 binding at the same locus",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-seq data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "6a7f09a6-16c0-4bb8-9318-68c60cc732df",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C87",
+      "claim": "The H3K27ac level remained low after R458A induction at the LMO7 locus",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the H3K27ac level remained low after R458A induction",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-seq data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "e23552d3-fd6e-424f-bb4b-0bcbfd741346",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C88",
+      "claim": "In KLF4 WT-induced cells, 3593 novel H3K27ac peaks were generated",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, in KLF4 WT-induced cells, 3593 novel H3K27ac peaks were generated",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-seq data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "66b2249f-b796-4f19-9b90-81a7bf03f591",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C89",
+      "claim": "Only a negligible number of H3K27ac peaks (41) disappeared at 48 hr of KLF4 WT induction",
+      "claim_type": "EXPLICIT",
+      "source": "while only a negligible number of H3K27ac peaks (41) disappeared at 48 hr of KLF4 WT induction (Figure 6D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figure 6D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "ee98b18c-8ea2-4680-a251-fb8dde0d8efc",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C90",
+      "claim": "Among the 3593 novel H3K27ac peaks, 274 were found in the flanking regions of KLF4 ChIP-seq peaks (p=3.5E-5)",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 3593 novel H3K27ac peaks, 274 were found in the flanking regions of KLF4 ChIP-seq peaks (p=3.5E-5)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-seq data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "4c5dec49-bcb3-498c-a8a1-641346c7a549",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C91",
+      "claim": "Induction of R458A did not yield noticeable changes in H3K27ac peak numbers",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, induction of R458A did not yield noticeable changes in H3K27ac peak numbers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-seq data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "97dab93c-e78c-4664-b97a-77467baf1e15",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C92",
+      "claim": "mCpG-mediated KLF4 binding events induced the changes of histone modification and gene activation",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that mCpG-mediated KLF4 binding events induced the changes of histone modification and gene activation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from genome-wide histone modification and gene expression changes",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "9cfde9d5-7227-4024-970b-73a3f991bae8",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C93",
+      "claim": "The promoters of as many as 20% highly expressed genes in tumors are methylated at CpG sites",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to traditional view of DNA methylation in gene silencing, recent survey of methylome and gene expression profiling demonstrated that the promoters of as many as 20% highly expressed genes in tumors are methylated at CpG sites",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge from recent surveys",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "4197a878-260c-41df-a5b5-462765149ab9",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C94",
+      "claim": "In some cases, DNA methylation positively correlates with gene expression",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that at least in some cases, DNA methylation positively correlates with gene expression (Feinberg, 2014, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Feinberg, 2014, 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "ff3efb70-3813-48e7-bcd5-6456b1c8ac13",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C95",
+      "claim": "KLF4 could gain access to the inactive chromatin regions via binding to methylated DNA motifs",
+      "claim_type": "EXPLICIT",
+      "source": "Using a series of in vivo assays coupled with bioinformatics analyses, we further showed that KLF4 could gain access to the inactive chromatin regions via binding to methylated DNA motifs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in vivo assays and bioinformatics analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "7ecb0b34-2354-45e2-949d-5f6f6f30f05d",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C96",
+      "claim": "KLF4 binding to methylated DNA motifs led to conversion from repressive to active histone marks and much enhanced transcription of the direct gene targets of KLF4",
+      "claim_type": "EXPLICIT",
+      "source": "and consequently, led to conversion from repressive to active histone marks and much enhanced transcription of the direct gene targets of KLF4 (Figure 7)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by histone modification and gene expression data shown in Figure 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "7d5c3291-a60b-40ba-8348-eefc495272b0",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C97",
+      "claim": "Recruitment of KLF4 to methylated cis-regulatory elements resulted in a global chromatin remodeling from repressive to active states",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we are the first to provide genome-wide evidence that recruitment of KLF4 to methylated cis-regulatory elements resulted in a global chromatin remodeling (i.e., from repressive to active states)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from genome-wide histone modification data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "c19d77e1-4118-400e-8e45-c6d74bfa45ce",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C98",
+      "claim": "TF binding could change methylation status of cis-regulatory elements",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that TF binding could change methylation status of cis-regulatory elements (Feldmann et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Feldmann et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "0fdff926-b123-4195-9a7f-edd8efaede39",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C99",
+      "claim": "Unchanged methylation level in KLF4 binding site (e.g. RHOC promoter region) indicated that methylation is not a consequence of KLF4 binding",
+      "claim_type": "EXPLICIT",
+      "source": "Unchanged methylation level in KLF4 binding site (e.g. RHOC promoter region) indicated that methylation is not a consequence of KLF4 binding (data not shown)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by bisulfite sequencing data before and after KLF4 induction",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "4af9f75c-e8d8-4677-bfeb-a96023068f4d",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C100",
+      "claim": "KLF4 does not bind to 5-hmC",
+      "claim_type": "EXPLICIT",
+      "source": "This will not affect our conclusion appreciably since KLF4 does not bind to 5-hmC (Spruijt et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Spruijt et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "cd518d17-17b9-4af1-b949-0d32f8865b83",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C101",
+      "claim": "RHOC and RAC1 are major GTPase involved in cell migration and motility",
+      "claim_type": "EXPLICIT",
+      "source": "RHOC and RAC1 are major GTPase involved in cell migration and motility",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "8e34645d-0146-448e-8f1a-7abfd51736ea",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C102",
+      "claim": "WT-specific binding sites are enriched for highly methylated sites",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of ChIP-seq between KLF4 WT and R458A showed that WT-specific binding sites are enriched for highly methylated sites",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-seq and methylome data comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "1a568253-ef4d-42af-8c17-bc9ce6e628ee",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C103",
+      "claim": "5-Aza globally reversed the up-regulation of many KLF4-mCpG targets",
+      "claim_type": "EXPLICIT",
+      "source": "Our new RNA-seq data in the presence of 5-Aza also indicated that 5-Aza globally reversed the up-regulation of many KLF4-mCpG targets",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq data with 5-Aza treatment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "5be92f24-5c1f-464c-8fa4-6310db20279b",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C104",
+      "claim": "KLF4 is one of the pioneer TFs in somatic reprogramming that interact with condensed chromatin and recruit histone-modifying enzymes to enable gene expression",
+      "claim_type": "EXPLICIT",
+      "source": "KLF4 is one of the pioneer TFs in somatic reprogramming that interact with condensed chromatin and recruit histone-modifying enzymes to enable gene expression (Buganim et al., 2013; Iwafuchi-Doi and Zaret, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Buganim et al., 2013 and Iwafuchi-Doi and Zaret, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "b4acd024-be71-4a14-b298-e1f1d3ca3353",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C105",
+      "claim": "Pioneer transcription factors, including KLF4, are capable of recognizing partial motifs located in the heterochromatins",
+      "claim_type": "EXPLICIT",
+      "source": "Although recent studies showed that pioneer transcription factors, including KLF4, are capable of recognizing partial motifs located in the heterochromatins",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge from recent studies",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "fdb793de-93bc-44ee-a507-e6fdf39712ab",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C106",
+      "claim": "The pioneer transcription factor KLF4 could bind to methylated motifs located in repressive chromatins",
+      "claim_type": "EXPLICIT",
+      "source": "our study, for the first time, demonstrated that the pioneer transcription factor KLF4 could actually bind to methylated motifs located in repressive chromatins, providing an alternative mechanism for pioneer factors interacting with repressive chromatin",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by the current study's data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "fdf53ebb-030c-43ff-8469-0719bd21c1d1",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C107",
+      "claim": "TF binding to methylated regions of the genome to activate gene transcription is a new paradigm supported by several studies",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, TF binding to methylated regions of the genome to activate gene transcription is a new paradigm supported by several studies (Filion et al., 2006; Mann et al., 2013; Rishi et al., 2010; Sasai et al., 2010; Serra et al., 2014; Spruijt et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "953f625b-3aa6-4104-8632-ca10e65c7f17",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C108",
+      "claim": "mCpG dictates TF binding, histone modifications and gene activation in a sequence-specific manner",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrated that mCpG dictates TF binding, histone modifications and gene activation in a sequence-specific manner, thereby influencing cancer cell phenotypes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by the current study's data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "99a96e66-eba1-4a98-b0ee-a96f473f44cd",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C109",
+      "claim": "mCpG-dependent binding activity of KLF4 serves as a link between methylated CpG and changes in chromatin status",
+      "claim_type": "EXPLICIT",
+      "source": "Our study reveals that mCpG-dependent binding activity of KLF4 serves as a link between methylated CpG and changes in chromatin status (Charlet et al., 2016), two most important epigenetic mechanisms in gene regulation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by the current study's data and supported by citation to Charlet et al., 2016",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "d9e7e38c-0e93-437b-a5eb-bbba78cce257",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C110",
+      "claim": "TFs can act as a new class of DNA methylation readers/effectors that drive gene transactivation and diverse biological processes",
+      "claim_type": "EXPLICIT",
+      "source": "In all, our study provides a new paradigm in which TFs can act as a new class of DNA methylation readers/effectors that drive gene transactivation and diverse biological processes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by the current study's data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "8f5bd288-0ee3-4e83-97be-ccd52b9b1a39",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C111",
+      "claim": "116 genes are directly activated via mCpG-dependent KLF4 binding activity",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, 116 genes are directly activated via mCpG-dependent KLF4 binding activity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by integrated ChIP-seq and RNA-seq data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "39634186-df56-4702-b32e-caa16aa473da",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C112",
+      "claim": "Recruitment of KLF4 to the methylated cis-regulatory elements of these genes result in chromatin remodeling and transcription activation",
+      "claim_type": "EXPLICIT",
+      "source": "In-depth mechanistic studies reveal that recruitment of KLF4 to the methylated cis-regulatory elements of these genes result in chromatin remodeling and transcription activation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by histone modification ChIP-seq and gene expression data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "e0d807b3-b87c-45b0-8ae9-a5e14e39428c",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C113",
+      "claim": "KLF4 promotes cell adhesion, migration, and morphological changes, all of which are abolished by R458A mutation",
+      "claim_type": "EXPLICIT",
+      "source": "We show that KLF4 promotes cell adhesion, migration, and morphological changes, all of which are abolished by R458A mutation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cell adhesion, migration, and morphology assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "9409a34c-ac62-471c-8297-8e1d7cc93f59",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "claim_id": "C114",
+      "claim": "KLF4-mCpG interaction promotes brain tumor cell migration via the transactivation of genes involved in cell motility pathways, including the small GTPase RHOC",
+      "claim_type": "EXPLICIT",
+      "source": "Our study showed that KLF4-mCpG interaction promotes brain tumor cell migration via the transactivation of genes involved in cell motility pathways, including the small GTPase RHOC",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by migration assays and gene expression data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b6221328-3e24-4885-9011-c0bbe3c344ef",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "U87 and U373 GBM cell lines were selected for their low endogenous KLF4 expression, and stable tet-on inducible cell lines were generated expressing KLF4 WT or R458A. Doxycycline induction at 1 \u00b5g/ml for 48 hr resulted in dose-dependent KLF4 expression (~20-27 fold) without affecting cell proliferation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22 establish the experimental system. Western blot, immunocytochemistry (Figure 1A, Figure 1\u2014figure supplement 1A,B), and comparison to prior work (C22) provide converging evidence for the inducible expression system without proliferation effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "5768d874-05da-4533-8cc8-f901e820c531",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "KLF4 WT, but not R458A mutant, promotes GBM cell adhesion, migration, and morphological changes including elongated spindle-like morphology, stress actin fiber formation, and focal adhesion assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C30 and C113 are supported by multiple complementary assays: adhesion assays (Figure 1B,C), transwell migration (Figure 1D,E), wound healing (Figure 1F), morphology analysis (Figure 2A,B), and immunofluorescence for F-actin and vinculin (Figure 2C). Results were replicated in U373 cells (C30). The consistent lack of effect with R458A across all assays strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "c2d9a0ee-435a-448e-b3c5-e6652af1c9fe",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The phenotypic differences between KLF4 WT and R458A are attributed to mCpG-dependent KLF4 activity, as 5-Aza treatment partially suppressed KLF4 WT-driven cell migration and wound healing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 link the observed phenotypes to DNA methylation. C31 cites prior work establishing R458A's selective loss of mCpG binding. C33 shows 5-Aza partially reverses migration phenotypes (Figure 2D,E), supporting the methylation-dependence inference in C32 and C34. However, 5-Aza has global effects and is not site-specific, which the authors acknowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "78f05b5e-b387-436b-916c-324f3c5f288b",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "RNA-seq analysis revealed that 613 genes were significantly differentially expressed after KLF4 WT induction (p<0.001), with 500 genes (82%) affected only by KLF4 WT but not R458A. Surprisingly, 308 of these 500 genes showed elevated expression, including RHOC, RAC1, LMO7, and MIDN.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 are supported by RNA-seq data (Figure 3A-C) with appropriate statistical thresholds (p<0.001). High reproducibility between replicates is shown (Figure 3\u2014figure supplement 1A). The finding that mCpG-dependent binding activates rather than represses genes is indeed surprising and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "d7241490-dc6d-4eb9-bd1c-b3254d97ff27",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ChIP-seq analysis identified 3890 and 1222 significant peaks in KLF4 WT and R458A expressing cells, respectively. 2733 peaks (70%) were specific to KLF4 WT, while ~95% of R458A peaks were also recognized by WT, indicating that R458A mutation abolished >2/3 of KLF4 WT binding loci.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 are supported by ChIP-seq data (Figure 3D, Figure 3\u2014source data 2-3) with >70% mapping efficiency. The asymmetric overlap pattern (most R458A peaks shared with WT, but many WT peaks not shared with R458A) is clearly demonstrated and logically interpreted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "ab2d40e1-1c12-4760-997a-24923de1d0b5",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "KLF4 WT-specific ChIP-seq peaks are enriched for highly methylated CpGs (66% with \u03b2>60%) compared to shared peaks (36% with \u03b2>60%, p=3.7e-223). Motif analysis identified 10 methylated 6-mer motifs significantly over-represented in WT-specific peaks (p=6.6e-37), many sharing similarity to 5'-CCCGCC, while shared peaks were enriched for different motifs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C49 integrate whole genome bisulfite sequencing with ChIP-seq data. The statistical significance is strong (p=3.7e-223 for methylation enrichment, p=6.6e-37 for motif enrichment). Motif analysis (Figure 3G) shows distinct patterns for WT-specific vs shared peaks. The consistency with prior work (C47, Hu et al., 2013) strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "4b0ec842-d0a6-4ef8-b384-8151c817adf8",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Integration of ChIP-seq and RNA-seq data identified 116 genes directly activated via mCpG-dependent KLF4 binding: 65 genes with KLF4 WT-specific peaks in proximal regulatory regions and 51 genes with peaks at distal enhancers (identified by H3K27ac overlap and enhancer prediction). This association is statistically significant (fold enrichment=1.9, p=5.0e-13).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 integrate multiple datasets (ChIP-seq, RNA-seq, H3K27ac ChIP-seq) with computational prediction (enhancer atlas). The statistical enrichment analysis (C54) demonstrates that the association between KLF4 binding and gene activation is significant. The use of H3K27ac to identify active enhancers (C51, Figure 4A) is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "dff050cf-7490-4758-91a1-079a10af3b47",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The majority (72%) of the 116 direct target genes were associated with highly methylated (\u03b2>0.6) cis-regulatory elements, confirmed by Sanger bisulfite sequencing of 15 randomly selected loci (10/15 confirmed with 75-100% methylation). Gene Ontology analysis showed significant enrichment for biological processes relevant to the observed phenotypes including cell adhesion, migration, and cytoskeleton organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 are supported by methylome integration (Figure 4C), validation by Sanger sequencing (Figure 4D, Figure 4\u2014figure supplement 1), and GO analysis (Figure 4E). The 10/15 validation rate (67%) is reasonably consistent with the 72% from genome-wide analysis. The GO enrichment directly connects molecular findings to cellular phenotypes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "9c02057d-87e6-4932-a7d9-48a42803c324",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "5-Aza treatment prevented KLF4 WT from significantly activating the 116 target genes, with 101/116 genes showing reduced expression in 5-Aza treated cells (compared to 53% of all expressed genes, p=1.2e-14), indicating that DNA methylation is responsible for transcription activation of these genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 are supported by RNA-seq with 5-Aza treatment (Figure 4F,G). The statistical significance (p=1.2e-14) and the specific enrichment of downregulation in the 116 target genes (87%) vs all genes (53%) support the methylation-dependence conclusion. However, 5-Aza has global effects, which limits mechanistic specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "a27f2065-0d53-430c-bada-48c5b8536135",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "RHOC and RAC1, encoding small GTPases critical for cell migration and adhesion, were selected for detailed mechanistic studies. KLF4 WT, but not R458A, induced RHOC and RAC1 at mRNA and protein levels. The promoter regions contain highly methylated CpGs (RHOC: -507 bp, RAC1: -922 bp from TSS), and 5-Aza treatment reduced methylation, abolished KLF4 WT binding, and repressed RHOC/RAC1 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C75 and C114 provide comprehensive mechanistic validation for RHOC and RAC1. Multiple orthogonal approaches support the conclusions: RT-PCR and Western blot (Figure 5A,B, Figure 5\u2014figure supplement 1A,B), ChIP-PCR (Figure 5C, Figure 5\u2014figure supplement 1C), bisulfite sequencing (Figure 5D, Figure 5\u2014figure supplement 1D), and 5-Aza treatment effects (Figure 5E,F, Figure 5\u2014figure supplement 1E,F). The data consistently show methylation-dependent KLF4 binding and gene activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "f9c67b8f-f635-404e-bed6-04ad0523e2e3",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Upon KLF4 WT binding to the methylated RHOC promoter (48 hr post Dox), the active histone mark H3K27ac increased ~2.5 fold while repressive marks H3K9me3 and H3K27me3 decreased ~3.5 and ~6 fold, respectively. R458A induction failed to trigger these changes, indicating that KLF4 WT recruitment initiates conversion from repressive to active chromatin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C79 are supported by ChIP-PCR data (Figure 5G) showing coordinated changes in histone marks specifically with KLF4 WT but not R458A. The temporal relationship (48 hr post induction) and the opposing changes in active vs repressive marks support the chromatin remodeling conclusion. Similar results were obtained for RAC1 (Figure 5\u2014figure supplement 1).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "dba15d82-aa73-4c84-baf9-137af36a9876",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Genome-wide analysis of histone modifications at 162 KLF4 WT ChIP-seq peaks associated with the 116 direct targets showed that H3K27ac increased in 83.3% of peaks (p=7.2E-19), while H3K27me3 and H3K9me3 decreased in 54.3% (p=3.4E-2) and 63.6% (p=1.5E-4) of peaks, respectively. In contrast, only 36% of shared KLF4 peaks showed increased H3K27ac, suggesting KLF4-mCpG binding specifically enhances H3K27ac.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C84 are supported by genome-wide ChIP-seq analysis (Figure 6A,B, Figure 6\u2014figure supplement 1A-C) with strong statistical significance. The comparison to shared peaks as a negative control (C83) strengthens the conclusion that mCpG-dependent binding specifically drives chromatin remodeling. The coordinated changes in multiple histone marks support a comprehensive chromatin remodeling mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "d9d976a2-095c-4651-9c90-784741d161ef",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Genome-wide analysis revealed that KLF4 WT induction generated 3593 novel H3K27ac peaks with only 41 peaks disappearing, and 274 of the novel peaks were in flanking regions of KLF4 ChIP-seq peaks (p=3.5E-5). R458A induction did not yield noticeable changes in H3K27ac peak numbers. These results indicate that mCpG-mediated KLF4 binding events globally induce histone modification changes and gene activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C92 are supported by genome-wide H3K27ac ChIP-seq analysis (Figure 6C,D). The LMO7 example (C85-C87) provides specific illustration. The large number of novel H3K27ac peaks (3593) with KLF4 WT vs negligible changes with R458A (C91) demonstrates genome-wide chromatin remodeling. The statistical enrichment near KLF4 binding sites (C90, p=3.5E-5) supports direct causality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "5e5fa5c8-f924-47d6-915f-b194593ac2cd",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "This study demonstrates that KLF4 gains access to inactive chromatin regions via binding to methylated DNA motifs, leading to conversion from repressive to active histone marks and enhanced transcription of direct gene targets. This represents the first genome-wide evidence that recruitment of a pioneer transcription factor to methylated cis-regulatory elements results in global chromatin remodeling from repressive to active states, establishing a new paradigm where TFs act as DNA methylation readers/effectors that drive gene transactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C97, C106, C108-C110, and C112 synthesize the major findings. The conclusions are supported by the comprehensive integration of multiple genome-wide datasets (RNA-seq, ChIP-seq for KLF4 and histone marks, bisulfite sequencing) and mechanistic validation studies. The novelty claim (C97, C106) is justified by the genome-wide scale and the demonstration of chromatin remodeling. However, the paradigm-shifting nature should be tempered by the fact that similar mechanisms have been proposed in prior studies (C4, C107).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "0e7bf76b-2765-48e2-9ec7-74a574978f17",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background on DNA methylation and KLF4: DNA methylation (5mC) is the primary epigenetic modification in mammalian genomes, and its dysregulation is associated with disease. While traditionally viewed as repressive, recent studies identified TFs including KLF4 as sequence-specific methylated DNA readers. KLF4 recognizes a methylated motif (5'-CmCGC) in addition to its canonical motif, and the R458A mutation specifically abolishes methylated DNA binding without affecting unmethylated motif binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C11 provide background context supported by appropriate citations to prior literature. The characterization of R458A as specifically disrupting mCpG binding (C7-C10) is critical for interpreting the current study and is supported by prior work (Hu et al., 2013) including crystal structure (C11, Liu et al., 2014).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "40ea6bde-86ef-4052-872c-0ea73f3eeda9",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background on KLF4 in cancer: KLF4 is a Yamanaka factor for pluripotency induction, functions as a cancer driver gene, is involved in cancer stem cell maintenance, and is upregulated in high-grade brain tumors including glioblastoma. KLF4 can also act as a tumor suppressor in distinct cellular contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C18 provide relevant background on KLF4's diverse roles, supported by appropriate citations. This context justifies the choice of GBM cells for the study and the biological relevance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    },
+    {
+      "id": "ccad3229-336f-4601-820e-9e106b096f14",
+      "content_id": "3c091f41-c586-4d6f-8158-118fddb9a53f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Discussion of prior work and alternative mechanisms: Recent surveys show that promoters of ~20% of highly expressed genes in tumors are methylated, suggesting DNA methylation can positively correlate with gene expression. The authors address potential confounders including whether KLF4 binding causes methylation (ruled out by unchanged methylation after KLF4 induction), 5-hmC binding (KLF4 does not bind 5-hmC), and the role of KLF4 as a pioneer factor capable of accessing condensed chromatin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C105 and C107 provide important context and address alternative explanations. The discussion of 5-Aza limitations and the demonstration that methylation precedes KLF4 binding (C99) strengthen the causal interpretation. The connection to pioneer factor biology (C104-C105) provides mechanistic context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:32.137218Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "acde0662-cb7d-4f98-9f2b-1bd0f3dfb923",
+      "result_id": "b6221328-3e24-4885-9011-c0bbe3c344ef"
+    },
+    {
+      "claim_id": "bc45ac42-bd66-4d5c-8c26-6653e3952b44",
+      "result_id": "b6221328-3e24-4885-9011-c0bbe3c344ef"
+    },
+    {
+      "claim_id": "54b43779-211d-4060-8c88-7504822bd00f",
+      "result_id": "b6221328-3e24-4885-9011-c0bbe3c344ef"
+    },
+    {
+      "claim_id": "28f3ebc9-9617-491d-a75a-890a82cef829",
+      "result_id": "b6221328-3e24-4885-9011-c0bbe3c344ef"
+    },
+    {
+      "claim_id": "546fcf5d-34cd-45af-8e9c-c53bbf4e33d4",
+      "result_id": "5768d874-05da-4533-8cc8-f901e820c531"
+    },
+    {
+      "claim_id": "9396d729-499f-4037-9c97-a273a42dcaf2",
+      "result_id": "5768d874-05da-4533-8cc8-f901e820c531"
+    },
+    {
+      "claim_id": "5dbd5c71-f6f9-4657-accf-ca174c558d9c",
+      "result_id": "5768d874-05da-4533-8cc8-f901e820c531"
+    },
+    {
+      "claim_id": "cfe0c23b-b58c-47c5-9df0-deabf8cad750",
+      "result_id": "5768d874-05da-4533-8cc8-f901e820c531"
+    },
+    {
+      "claim_id": "b035b04a-deae-4628-997d-62db125c0344",
+      "result_id": "5768d874-05da-4533-8cc8-f901e820c531"
+    },
+    {
+      "claim_id": "e7c75ac6-c0b1-46c1-974f-d41087e999c3",
+      "result_id": "5768d874-05da-4533-8cc8-f901e820c531"
+    },
+    {
+      "claim_id": "b615df50-f2db-42b1-91e7-83b0740f4666",
+      "result_id": "5768d874-05da-4533-8cc8-f901e820c531"
+    },
+    {
+      "claim_id": "1d5acfaf-63c2-4f00-9d65-b7b083862115",
+      "result_id": "5768d874-05da-4533-8cc8-f901e820c531"
+    },
+    {
+      "claim_id": "e0d807b3-b87c-45b0-8ae9-a5e14e39428c",
+      "result_id": "5768d874-05da-4533-8cc8-f901e820c531"
+    },
+    {
+      "claim_id": "e83e9a1c-4d36-4b52-8080-d468129278fa",
+      "result_id": "c2d9a0ee-435a-448e-b3c5-e6652af1c9fe"
+    },
+    {
+      "claim_id": "cb7c133c-b07e-427c-9fc6-0a4d3a4df85b",
+      "result_id": "c2d9a0ee-435a-448e-b3c5-e6652af1c9fe"
+    },
+    {
+      "claim_id": "8699efe1-ee9e-4e0e-bf3e-8654dbe5b159",
+      "result_id": "c2d9a0ee-435a-448e-b3c5-e6652af1c9fe"
+    },
+    {
+      "claim_id": "e3cfeec2-6635-444e-94d5-56bf5b78a935",
+      "result_id": "c2d9a0ee-435a-448e-b3c5-e6652af1c9fe"
+    },
+    {
+      "claim_id": "42c6abcd-6e92-44af-a5b9-c451db89e29b",
+      "result_id": "78f05b5e-b387-436b-916c-324f3c5f288b"
+    },
+    {
+      "claim_id": "68b0a8a4-2425-4a4c-8f65-10bd4331f002",
+      "result_id": "78f05b5e-b387-436b-916c-324f3c5f288b"
+    },
+    {
+      "claim_id": "abdb7710-28ae-4510-a3c6-099799f018a6",
+      "result_id": "78f05b5e-b387-436b-916c-324f3c5f288b"
+    },
+    {
+      "claim_id": "353e5b22-4539-4bee-bc31-3685861d7055",
+      "result_id": "78f05b5e-b387-436b-916c-324f3c5f288b"
+    },
+    {
+      "claim_id": "2f253333-0834-4920-9195-1be497370f80",
+      "result_id": "d7241490-dc6d-4eb9-bd1c-b3254d97ff27"
+    },
+    {
+      "claim_id": "dc89b983-ee15-4c14-b037-2a6e03f4da63",
+      "result_id": "d7241490-dc6d-4eb9-bd1c-b3254d97ff27"
+    },
+    {
+      "claim_id": "651e0a67-88cb-40f0-aefd-6666b74cc987",
+      "result_id": "d7241490-dc6d-4eb9-bd1c-b3254d97ff27"
+    },
+    {
+      "claim_id": "990b8db4-05e2-47aa-90d4-0314ef928f3a",
+      "result_id": "d7241490-dc6d-4eb9-bd1c-b3254d97ff27"
+    },
+    {
+      "claim_id": "94204100-860a-4eac-b2c5-60a4d7a321ba",
+      "result_id": "ab2d40e1-1c12-4760-997a-24923de1d0b5"
+    },
+    {
+      "claim_id": "39b100b0-541f-4ff7-b552-572b02f3ef8f",
+      "result_id": "ab2d40e1-1c12-4760-997a-24923de1d0b5"
+    },
+    {
+      "claim_id": "71898d2e-1471-4681-8bdf-91f0b45d17dd",
+      "result_id": "ab2d40e1-1c12-4760-997a-24923de1d0b5"
+    },
+    {
+      "claim_id": "462a985d-ce0a-4b3b-98dc-5466b3054083",
+      "result_id": "ab2d40e1-1c12-4760-997a-24923de1d0b5"
+    },
+    {
+      "claim_id": "d328cfce-b184-4ccd-af4b-fd53bc8bc732",
+      "result_id": "ab2d40e1-1c12-4760-997a-24923de1d0b5"
+    },
+    {
+      "claim_id": "8f5d19b6-9315-432b-8d62-7cc62414ae3c",
+      "result_id": "ab2d40e1-1c12-4760-997a-24923de1d0b5"
+    },
+    {
+      "claim_id": "65a4f157-a2ec-4410-a52d-e863c8604f6d",
+      "result_id": "ab2d40e1-1c12-4760-997a-24923de1d0b5"
+    },
+    {
+      "claim_id": "8e4da293-1864-4bcd-bcc1-9ad08421af81",
+      "result_id": "4b0ec842-d0a6-4ef8-b384-8151c817adf8"
+    },
+    {
+      "claim_id": "f4168b33-6146-4723-befe-22ab3c78ac9b",
+      "result_id": "4b0ec842-d0a6-4ef8-b384-8151c817adf8"
+    },
+    {
+      "claim_id": "e4244e38-5a53-46c2-996b-fb0aee4b2836",
+      "result_id": "4b0ec842-d0a6-4ef8-b384-8151c817adf8"
+    },
+    {
+      "claim_id": "c24b64a7-9f78-433a-9717-25c8646e4cc7",
+      "result_id": "4b0ec842-d0a6-4ef8-b384-8151c817adf8"
+    },
+    {
+      "claim_id": "f640378d-8fbd-4be8-9478-22bbfc5f733a",
+      "result_id": "4b0ec842-d0a6-4ef8-b384-8151c817adf8"
+    },
+    {
+      "claim_id": "762e58c8-081f-4ae0-bd9c-17331900bcad",
+      "result_id": "dff050cf-7490-4758-91a1-079a10af3b47"
+    },
+    {
+      "claim_id": "83b31f94-1aff-4133-b1e4-2f01602534b7",
+      "result_id": "dff050cf-7490-4758-91a1-079a10af3b47"
+    },
+    {
+      "claim_id": "6b9808bc-9d39-46f0-a820-0393d38fdc5a",
+      "result_id": "dff050cf-7490-4758-91a1-079a10af3b47"
+    },
+    {
+      "claim_id": "9c5ae9d2-48ab-4a2d-b018-79d9da78ad47",
+      "result_id": "9c02057d-87e6-4932-a7d9-48a42803c324"
+    },
+    {
+      "claim_id": "2cf201c4-4f8a-46f5-a4dc-d27963d7fe65",
+      "result_id": "9c02057d-87e6-4932-a7d9-48a42803c324"
+    },
+    {
+      "claim_id": "dc94c6ea-b569-49ba-a65f-af8bdb62dbff",
+      "result_id": "9c02057d-87e6-4932-a7d9-48a42803c324"
+    },
+    {
+      "claim_id": "267d555a-1ca2-4b84-b322-5e05afe1e01b",
+      "result_id": "9c02057d-87e6-4932-a7d9-48a42803c324"
+    },
+    {
+      "claim_id": "84954769-cdb2-407d-9a47-7310a4910e45",
+      "result_id": "a27f2065-0d53-430c-bada-48c5b8536135"
+    },
+    {
+      "claim_id": "b5c0a112-3bbd-4dba-b0f8-2f8284d910af",
+      "result_id": "a27f2065-0d53-430c-bada-48c5b8536135"
+    },
+    {
+      "claim_id": "a10d1774-cbfa-4ef2-9d64-4c47d4227d4e",
+      "result_id": "a27f2065-0d53-430c-bada-48c5b8536135"
+    },
+    {
+      "claim_id": "31afbb86-be80-4cfd-a3d1-91f18ed657a5",
+      "result_id": "a27f2065-0d53-430c-bada-48c5b8536135"
+    },
+    {
+      "claim_id": "83ebba40-3364-48f6-96de-23e4ae71a016",
+      "result_id": "a27f2065-0d53-430c-bada-48c5b8536135"
+    },
+    {
+      "claim_id": "51522e82-b2c3-4b7c-8b1e-9e4903f88ae0",
+      "result_id": "a27f2065-0d53-430c-bada-48c5b8536135"
+    },
+    {
+      "claim_id": "137675b1-ae85-4feb-9669-2ee3cb648f23",
+      "result_id": "a27f2065-0d53-430c-bada-48c5b8536135"
+    },
+    {
+      "claim_id": "78b54a5c-dca0-4b7a-8861-3b4ffebd93d6",
+      "result_id": "a27f2065-0d53-430c-bada-48c5b8536135"
+    },
+    {
+      "claim_id": "16230965-a1bc-49ac-a885-c63a2ec7a4d4",
+      "result_id": "a27f2065-0d53-430c-bada-48c5b8536135"
+    },
+    {
+      "claim_id": "a177109b-ebee-4661-8bf2-da4e70d68cef",
+      "result_id": "a27f2065-0d53-430c-bada-48c5b8536135"
+    },
+    {
+      "claim_id": "a303cc4e-37fd-4853-bed1-edc14d20e392",
+      "result_id": "a27f2065-0d53-430c-bada-48c5b8536135"
+    },
+    {
+      "claim_id": "4da22180-f711-462b-ba15-88ea96242552",
+      "result_id": "a27f2065-0d53-430c-bada-48c5b8536135"
+    },
+    {
+      "claim_id": "04e655a6-6016-4643-9cee-3884c0a322f9",
+      "result_id": "a27f2065-0d53-430c-bada-48c5b8536135"
+    },
+    {
+      "claim_id": "32ae9a2d-0046-4647-a498-198f3dd148fb",
+      "result_id": "a27f2065-0d53-430c-bada-48c5b8536135"
+    },
+    {
+      "claim_id": "9409a34c-ac62-471c-8297-8e1d7cc93f59",
+      "result_id": "a27f2065-0d53-430c-bada-48c5b8536135"
+    },
+    {
+      "claim_id": "b05546af-fe52-4458-bf95-9b02285c5b6a",
+      "result_id": "f9c67b8f-f635-404e-bed6-04ad0523e2e3"
+    },
+    {
+      "claim_id": "1293139b-240e-44e5-9919-1a33bb1b56bd",
+      "result_id": "f9c67b8f-f635-404e-bed6-04ad0523e2e3"
+    },
+    {
+      "claim_id": "298b7f40-577b-46cb-843e-eaabfa2bfb34",
+      "result_id": "f9c67b8f-f635-404e-bed6-04ad0523e2e3"
+    },
+    {
+      "claim_id": "72b681f7-6ac0-45f4-a340-72fc92678827",
+      "result_id": "f9c67b8f-f635-404e-bed6-04ad0523e2e3"
+    },
+    {
+      "claim_id": "f6518f78-46bb-4fc7-94f0-1019b3ebf96a",
+      "result_id": "dba15d82-aa73-4c84-baf9-137af36a9876"
+    },
+    {
+      "claim_id": "61a871ef-8e9c-4977-8890-d00b9b112b68",
+      "result_id": "dba15d82-aa73-4c84-baf9-137af36a9876"
+    },
+    {
+      "claim_id": "9c4445dc-fd46-4fde-94b5-b4228d46f83f",
+      "result_id": "dba15d82-aa73-4c84-baf9-137af36a9876"
+    },
+    {
+      "claim_id": "642c2f41-a267-4015-b46f-2a4aead0b45b",
+      "result_id": "dba15d82-aa73-4c84-baf9-137af36a9876"
+    },
+    {
+      "claim_id": "ea97e08c-6856-49d7-b377-c650a4731de1",
+      "result_id": "dba15d82-aa73-4c84-baf9-137af36a9876"
+    },
+    {
+      "claim_id": "ef664f9c-c367-47a7-934e-32ccbecf4a24",
+      "result_id": "d9d976a2-095c-4651-9c90-784741d161ef"
+    },
+    {
+      "claim_id": "1cd00b69-7206-450d-9a6a-b33601d9a914",
+      "result_id": "d9d976a2-095c-4651-9c90-784741d161ef"
+    },
+    {
+      "claim_id": "6a7f09a6-16c0-4bb8-9318-68c60cc732df",
+      "result_id": "d9d976a2-095c-4651-9c90-784741d161ef"
+    },
+    {
+      "claim_id": "e23552d3-fd6e-424f-bb4b-0bcbfd741346",
+      "result_id": "d9d976a2-095c-4651-9c90-784741d161ef"
+    },
+    {
+      "claim_id": "66b2249f-b796-4f19-9b90-81a7bf03f591",
+      "result_id": "d9d976a2-095c-4651-9c90-784741d161ef"
+    },
+    {
+      "claim_id": "ee98b18c-8ea2-4680-a251-fb8dde0d8efc",
+      "result_id": "d9d976a2-095c-4651-9c90-784741d161ef"
+    },
+    {
+      "claim_id": "4c5dec49-bcb3-498c-a8a1-641346c7a549",
+      "result_id": "d9d976a2-095c-4651-9c90-784741d161ef"
+    },
+    {
+      "claim_id": "97dab93c-e78c-4664-b97a-77467baf1e15",
+      "result_id": "d9d976a2-095c-4651-9c90-784741d161ef"
+    },
+    {
+      "claim_id": "ff3efb70-3813-48e7-bcd5-6456b1c8ac13",
+      "result_id": "5e5fa5c8-f924-47d6-915f-b194593ac2cd"
+    },
+    {
+      "claim_id": "7ecb0b34-2354-45e2-949d-5f6f6f30f05d",
+      "result_id": "5e5fa5c8-f924-47d6-915f-b194593ac2cd"
+    },
+    {
+      "claim_id": "7d5c3291-a60b-40ba-8348-eefc495272b0",
+      "result_id": "5e5fa5c8-f924-47d6-915f-b194593ac2cd"
+    },
+    {
+      "claim_id": "fdb793de-93bc-44ee-a507-e6fdf39712ab",
+      "result_id": "5e5fa5c8-f924-47d6-915f-b194593ac2cd"
+    },
+    {
+      "claim_id": "953f625b-3aa6-4104-8632-ca10e65c7f17",
+      "result_id": "5e5fa5c8-f924-47d6-915f-b194593ac2cd"
+    },
+    {
+      "claim_id": "99a96e66-eba1-4a98-b0ee-a96f473f44cd",
+      "result_id": "5e5fa5c8-f924-47d6-915f-b194593ac2cd"
+    },
+    {
+      "claim_id": "d9e7e38c-0e93-437b-a5eb-bbba78cce257",
+      "result_id": "5e5fa5c8-f924-47d6-915f-b194593ac2cd"
+    },
+    {
+      "claim_id": "39634186-df56-4702-b32e-caa16aa473da",
+      "result_id": "5e5fa5c8-f924-47d6-915f-b194593ac2cd"
+    },
+    {
+      "claim_id": "3484763e-63d1-4319-a5c0-9927989ca48d",
+      "result_id": "0e7bf76b-2765-48e2-9ec7-74a574978f17"
+    },
+    {
+      "claim_id": "42d53a83-9369-4b68-bd89-f71adbc67fe5",
+      "result_id": "0e7bf76b-2765-48e2-9ec7-74a574978f17"
+    },
+    {
+      "claim_id": "8891753b-b37c-4976-81e8-684cbada1437",
+      "result_id": "0e7bf76b-2765-48e2-9ec7-74a574978f17"
+    },
+    {
+      "claim_id": "f7d3a8b1-324f-445d-aca4-c8ec1905de39",
+      "result_id": "0e7bf76b-2765-48e2-9ec7-74a574978f17"
+    },
+    {
+      "claim_id": "e9ef0882-70e0-4f53-90d1-04c1483effa8",
+      "result_id": "0e7bf76b-2765-48e2-9ec7-74a574978f17"
+    },
+    {
+      "claim_id": "078db688-f66f-49ac-96d6-24d3953259ee",
+      "result_id": "0e7bf76b-2765-48e2-9ec7-74a574978f17"
+    },
+    {
+      "claim_id": "634dc8e2-3f0d-4922-b251-ddcdba7e5874",
+      "result_id": "0e7bf76b-2765-48e2-9ec7-74a574978f17"
+    },
+    {
+      "claim_id": "1ff31aee-eee7-4ba0-ba76-794af2aec528",
+      "result_id": "0e7bf76b-2765-48e2-9ec7-74a574978f17"
+    },
+    {
+      "claim_id": "95ac603c-61f0-4310-87fe-3568cc5594fb",
+      "result_id": "0e7bf76b-2765-48e2-9ec7-74a574978f17"
+    },
+    {
+      "claim_id": "dd6ca197-2f6c-45f4-9c00-e96697bffbd4",
+      "result_id": "0e7bf76b-2765-48e2-9ec7-74a574978f17"
+    },
+    {
+      "claim_id": "cc3d28d2-ca38-4479-a867-6cfa0f6f324a",
+      "result_id": "0e7bf76b-2765-48e2-9ec7-74a574978f17"
+    },
+    {
+      "claim_id": "9a4090cb-29ae-450f-a39f-40e8751bbb54",
+      "result_id": "40ea6bde-86ef-4052-872c-0ea73f3eeda9"
+    },
+    {
+      "claim_id": "c7b03585-6a26-4df8-9fec-d0cc59f41a5d",
+      "result_id": "40ea6bde-86ef-4052-872c-0ea73f3eeda9"
+    },
+    {
+      "claim_id": "4b8151aa-28ab-473c-81e1-2541dd9496a7",
+      "result_id": "40ea6bde-86ef-4052-872c-0ea73f3eeda9"
+    },
+    {
+      "claim_id": "aa8f2158-f9ef-4f6b-bb62-8873073f56d4",
+      "result_id": "40ea6bde-86ef-4052-872c-0ea73f3eeda9"
+    },
+    {
+      "claim_id": "b989abb5-4ae6-48a6-b77d-bb570a1850fd",
+      "result_id": "40ea6bde-86ef-4052-872c-0ea73f3eeda9"
+    },
+    {
+      "claim_id": "b077fcbf-570d-4528-b4eb-6206cf004f72",
+      "result_id": "40ea6bde-86ef-4052-872c-0ea73f3eeda9"
+    },
+    {
+      "claim_id": "b5d62103-aefc-484b-94f1-08826c179294",
+      "result_id": "40ea6bde-86ef-4052-872c-0ea73f3eeda9"
+    },
+    {
+      "claim_id": "9cfde9d5-7227-4024-970b-73a3f991bae8",
+      "result_id": "ccad3229-336f-4601-820e-9e106b096f14"
+    },
+    {
+      "claim_id": "4197a878-260c-41df-a5b5-462765149ab9",
+      "result_id": "ccad3229-336f-4601-820e-9e106b096f14"
+    },
+    {
+      "claim_id": "c19d77e1-4118-400e-8e45-c6d74bfa45ce",
+      "result_id": "ccad3229-336f-4601-820e-9e106b096f14"
+    },
+    {
+      "claim_id": "0fdff926-b123-4195-9a7f-edd8efaede39",
+      "result_id": "ccad3229-336f-4601-820e-9e106b096f14"
+    },
+    {
+      "claim_id": "4af9f75c-e8d8-4677-bfeb-a96023068f4d",
+      "result_id": "ccad3229-336f-4601-820e-9e106b096f14"
+    },
+    {
+      "claim_id": "cd518d17-17b9-4af1-b949-0d32f8865b83",
+      "result_id": "ccad3229-336f-4601-820e-9e106b096f14"
+    },
+    {
+      "claim_id": "8e34645d-0146-448e-8f1a-7abfd51736ea",
+      "result_id": "ccad3229-336f-4601-820e-9e106b096f14"
+    },
+    {
+      "claim_id": "1a568253-ef4d-42af-8c17-bc9ce6e628ee",
+      "result_id": "ccad3229-336f-4601-820e-9e106b096f14"
+    },
+    {
+      "claim_id": "5be92f24-5c1f-464c-8fa4-6310db20279b",
+      "result_id": "ccad3229-336f-4601-820e-9e106b096f14"
+    },
+    {
+      "claim_id": "b4acd024-be71-4a14-b298-e1f1d3ca3353",
+      "result_id": "ccad3229-336f-4601-820e-9e106b096f14"
+    },
+    {
+      "claim_id": "fdf53ebb-030c-43ff-8469-0719bd21c1d1",
+      "result_id": "ccad3229-336f-4601-820e-9e106b096f14"
+    }
+  ],
+  "comparisons": []
+}

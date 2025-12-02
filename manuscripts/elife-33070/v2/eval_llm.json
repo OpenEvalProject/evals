@@ -1,0 +1,358 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C74",
+      "C75"
+    ],
+    "result": "GF mice show significantly decreased social interaction with a conspecific compared to controls and colonized animals, with high inter-individual variability. Post-weaning colonization (exGF) rescues this behavioral deficit. Interaction with non-social objects was similar across groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 and C74-C75 are supported by behavioral data in Figure 1B-C showing reduced social interaction in GF mice that is rescued in exGF mice. The statistical analysis (C23) confirms normality of the distribution despite high variability (C22). The lack of preference deficit for social vs. non-social stimuli (C75) is also supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Social interaction induces distinct transcriptional responses across colonization groups. The highest number of DEGs in na\u00efve animals was found in CON-GF comparison, but upon social stimulation, GF animals showed the strongest response. DEG numbers comparing SI groups were 4-9 times higher than na\u00efve comparisons, indicating transcriptional divergence driven by neuronal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are well-supported by RNA-seq data shown in Figure 2A. The differential gene expression analysis demonstrates clear differences in transcriptional responses between groups, with appropriate statistical thresholds (padj <0.1) applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "A cluster of genes differentially regulated in na\u00efve GF animals overlaps significantly with genes induced by social interaction in conventional animals, suggesting baseline amygdalar hyperactivity in GF mice. This cluster was not differentially regulated in GF animals upon social stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 are supported by Venn diagram analysis in Figure 2C-D showing significant overlap (38% and 26% of up/downregulated genes). The interpretation of baseline hyperactivity (C33) is reasonable given the data pattern, though it remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Functional enrichment analysis revealed that all three groups showed enrichment for protein modification/folding and gene expression regulation. However, intracellular signaling processes (protein phosphorylation/dephosphorylation) were enriched only in CON-SI, while RNA splicing processes were dramatically enriched in GF-SI and exGF-SI groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by GO term enrichment analysis shown in Figure 2E. The differential enrichment patterns between groups are clearly demonstrated with appropriate statistical significance thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "KEGG pathway analysis showed MAPK signaling pathway was dominantly enriched in CON-SI but to a much lesser degree in GF-SI and exGF-SI. Conversely, spliceosome pathway was highly significantly enriched in GF-SI, less so in exGF-SI, and almost absent from CON-SI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 are well-supported by KEGG pathway enrichment data in Figure 3A. The contrasting enrichment patterns between MAPK and spliceosome pathways across groups are clearly demonstrated with statistical significance values provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "DEGs exclusively upregulated in CON-SI were enriched for MAPK pathway genes, while those in GF-SI were enriched for RNA processing/splicing genes. RNA processing genes comprised 4.4% of all DEGs in GF-SI (15% of all mouse genes in this category) and showed highly distinctive expression patterns in GF-SI animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 are supported by functional enrichment analysis in Figure 3B and quantitative data in Figure 3D. The specific percentages (C45) and distinctive expression patterns (C46) are clearly demonstrated in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Immediate early genes were upregulated in the amygdala of conventional animals after social interaction. Several of these genes (Egr3, Fos, Ier5) were not upregulated in GF-SI mice, possibly due to elevated baseline expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by data in Figure 2\u2014figure supplement 1C and Supplementary file 1. The observation about lack of upregulation in GF mice is data-driven, though the mechanistic explanation (elevated baseline) is inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "GF animals show a unique transcriptional response to social interaction characterized by upregulation of RNA processing/splicing machinery and arrested upregulation of MAPK signaling genes. This may be due to baseline upregulation of these genes in na\u00efve GF animals. ExGF animals show intermediate features of both CON and GF groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 represent well-supported summary statements integrating multiple lines of evidence from the RNA-seq analysis. The characterization of the unique GF response and intermediate exGF phenotype is consistently demonstrated across multiple analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Under na\u00efve conditions, alternative splicing was highest when comparing CON and GF animals. These differentially spliced genes were highly enriched for neuronal functions (long-term potentiation, synaptic transmission). High congruence in alternative splicing between CON and exGF mice was evident from overlapping DSGs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by differential splicing analysis in Figure 4A-B with appropriate statistical significance values (padj = 2.3e-6 for LTP, padj = 1.2e-10 for synaptic transmission). The overlap analysis clearly demonstrates congruence between CON and exGF.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Upon social interaction, CON mice showed little alternative exon usage, while GF-SI showed dramatically increased DSGs, and exGF-SI showed even higher numbers of DSGs. This was surprising given that enrichment of splicing-associated genes among DEGs was highest in GF-SI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by differential splicing data in Figure 4A. The observation about the unexpected relationship (C58) between gene expression enrichment and actual splicing events is a valid data-driven observation, though the mechanistic basis remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A core set of DSGs was shared across colonization statuses in response to social interaction, enriched for neuronal functions. GF-SI and exGF-SI groups showed supplementary cellular responses, with exGF-SI showing the most pronounced response characterized by DSGs enriched in splicing/RNA processing, protein turnover, neuronal functions, and signaling pathways. A self-regulating mechanism is suggested by enrichment of splicing machinery genes among the alternatively spliced genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are supported by Venn diagram analysis (Figure 4C) and functional enrichment (Figure 4D). The interpretation of supplementary responses (C61) and self-regulation (C63) are reasonable inferences from the data, though mechanistic validation would strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "In GF-SI mice, genes whose expression positively correlated with social interaction time were significantly associated with splicing and protein turnover pathways. Three specific genes (DnaJb6, Cribp, D030028A08Rik) were significantly higher in high-performing GF-SI animals and showed significant correlation with behavioral performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by GSEA analysis (Figure 5B-D) and correlation analysis (Figure 5E). The correlation approach is appropriate for linking gene expression to behavioral variability. However, the causal interpretation (C66) remains inferential without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C17",
+      "C18"
+    ],
+    "result": "In GF mice, the dynamic response seen in controls was attenuated and replaced by marked upregulation of splicing factors and alternative exon usage upon stimulation, which was even more pronounced in exGF mice. This upregulation may partially compensate for impairments in neuronal plasticity signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C17-C18 are well-supported by the comprehensive RNA-seq and differential splicing analyses presented throughout the manuscript. The compensatory mechanism interpretation (C18) is reasonable given the correlation with behavioral performance, though it remains somewhat speculative without direct functional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C91"
+    ],
+    "result": "Social behavior is correlated with gene-expression response in the amygdala, established during neurodevelopment as a result of host-microbe interactions. The positive correlation between splicing-associated gene expression and behavioral performance suggests upregulation of splicing machinery supports adequate amygdalar response to social stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4 and C91 make strong causal and developmental claims based primarily on correlational data. While the correlation between gene expression and behavior is demonstrated (Figure 5), establishing that this is 'established during neurodevelopment' and represents a causal mechanism requires additional developmental time-course studies and functional validation that are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C95",
+      "C96"
+    ],
+    "result": "Absence of the microbiome results in dysregulation of unique transcriptional-response pathways in the amygdala. The microbiota is necessary for regulation of core biological processes at the molecular and cellular level in the brain, making a strong case for causal involvement in sociability behavior impairments and neurodevelopmental disease etiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72, C95, and C96 make strong causal claims about microbiota necessity and involvement in disease etiology. While the transcriptional dysregulation is well-demonstrated (C72 is SUPPORTED), the broader causal claims (C95-C96) extend beyond what the correlational and observational data can definitively establish. Mechanistic validation and rescue experiments would be needed to fully support these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C89"
+    ],
+    "result": "The underlying networks controlling sociability behavior are subject to dynamic regulation, possibly associated with differences in signaling pathways due to subtle developmental differences. This development is highly susceptible to microbiota influence. The exaggerated splicing regulation in GF mice possibly reflects a compensatory mechanism for elevated baseline activity-induced signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76, C77, and C89 are speculative interpretations of the observed data. While the behavioral variability and transcriptional patterns are well-documented, the mechanistic explanations offered are not directly tested. These represent reasonable hypotheses but lack experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "61% of comparisons showed matching results between RNA-seq and qRT-PCR validation methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claim C110 reports only 61% concordance between RNA-seq and qRT-PCR, which is concerning for validation. While some discordance is expected between methods, 39% non-concordance raises questions about the reliability of the RNA-seq results. The manuscript does not adequately address this limitation or explain the discordance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "For na\u00efve groups, RNA from two animals was pooled to yield four samples per group, meaning each RNA-seq sample represents the average of two biological replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C105-C106 describe a problematic experimental design where biological replicates were pooled before sequencing. This approach reduces statistical power, prevents assessment of biological variability, and conflates technical and biological replication. The manuscript incorrectly refers to pooled samples as 'technical replicates' when they actually represent averaged biological replicates, which is a significant methodological limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C19",
+      "C69",
+      "C70",
+      "C71",
+      "C87",
+      "C88"
+    ],
+    "result": "Background claims about microbiota-brain-behavior relationships, amygdala function, GF mouse models, and neuronal activity-induced splicing based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C15, C19, C69-C71, C87-C88 represent background knowledge supported by appropriate citations to prior literature. These establish the scientific context for the study and are generally well-supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C25",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Comparisons to prior work showing similarities between amygdala and hippocampal responses, complement gene regulation, and connections to previous findings on social cognition and amygdala function in GF mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C81-C86, C92-C94 appropriately contextualize the current findings within prior work by the authors and others. The comparisons are reasonable and supported by citations, though some interpretive connections (C93, C94) extend slightly beyond the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C107",
+      "C108",
+      "C109",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Methodological details including animal housing, behavioral testing, RNA extraction, sequencing, and statistical analysis parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C104, C107-C109, C111-C114 provide methodological details that are clearly stated and appropriate for the study design. Sample sizes were determined by power analysis (C113), appropriate statistical tests were used, and data were deposited in public repositories (C112).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C16",
+      "C73",
+      "C74",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Primary conclusions about microbiota as critical regulator of social interaction-induced gene expression, necessity for sociability behavior development, and methodological advantages of ribodepleted RNA-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C73-C74, C78-C80 represent well-supported primary findings. The microbiota's role as a critical regulator (C16) is demonstrated by the comprehensive transcriptional analysis. The necessity for sociability behavior (C73-C74) is supported by behavioral data. The methodological choice (C79-C80) is justified and enables detection of non-polyadenylated transcripts.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,405 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Removal of ubiquitin from Snc1 by fusion of a catalytically active deubiquitinase (DUB) disrupts Snc1 recycling, causing accumulation in Tlg1-marked internal compartments. This effect requires deubiquitinase activity and occurs after endocytosis but before arrival at the TGN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C40-C44 are well-supported by microscopy data in Figure 1A-D showing DUB-GFP-Snc1 accumulates in Tlg1-positive punctae to the same extent as GFP-Snc1 in rcy1\u0394 cells, while DUB*-GFP-Snc1 localizes normally. The epistasis experiment with endocytosis-defective Snc1 (C43-C44) provides strong evidence for the trafficking step affected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Fusion of DUB to Drs2, a component of the Snc1 recycling machinery, does not affect Snc1 recycling, demonstrating specificity of the DUB effect when fused to Snc1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by microscopy data in Figure 1E-F showing that Drs2-DUB and Drs2-DUB* both restore GFP-Snc1 recycling in drs2\u0394 cells. This control experiment strengthens the conclusion that DUB specifically acts on Snc1 rather than neighboring proteins in the pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Snc1 is extensively modified with K63-linked polyubiquitin chains, as evidenced by immunoblot analysis and reduced ubiquitination in K63R ubiquitin mutant strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by immunoblot data in Figure 2A-B showing polyubiquitinated Snc1 forms, and by citation to Silva et al., 2015 showing reduced Snc1 ubiquitination in K63R ubiquitin strains. The data clearly demonstrate polyubiquitination beyond the previously reported monoubiquitination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "DUB fusion to Rcy1 causes a partial Snc1 recycling defect independent of deubiquitinase activity, as both DUB-Rcy1 and DUB*-Rcy1 show the same phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by microscopy data in Figure 2C-D showing equivalent partial defects for both DUB-Rcy1 and DUB*-Rcy1. This control demonstrates that the effect is due to disruption of Rcy1 function rather than deubiquitinase activity, further supporting the specificity of DUB effects when fused to Snc1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The E3 ubiquitin ligases Pib1 and Tul1 are primarily responsible for Snc1 ubiquitination. DUB fusions to Pib1 and Tul1 disrupt Snc1 recycling and reduce Snc1 ubiquitination, and the pib1\u0394 tul1\u0394 double mutant displays a Snc1 recycling defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 are well-supported by multiple lines of evidence: microscopy data in Figure 2E showing DUB-Pib1 and DUB-Tul1 disrupt recycling, immunoblot data in Figure 2F showing reduced Snc1 ubiquitination with Pib1-DUB, and microscopy data in Figure 2G-H showing the pib1\u0394 tul1\u0394 double mutant phenotype. The genetic redundancy (single mutants have no phenotype) is consistent with the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "COPI inactivation blocks Snc1 recycling, while clathrin adaptor and retromer mutants have no effect, suggesting COPI mediates Snc1 recycling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by microscopy data in Figure 2\u2014figure supplement 1 and citations to Lewis et al., 2000 and Robinson et al., 2006. However, the authors appropriately note that COPI inactivation disrupts Golgi function, which could indirectly affect Snc1 recycling. This caveat is addressed by subsequent separation-of-function experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "COPI WD40 propeller domains directly and specifically bind K63-linked polyubiquitin with a preference for chains of 5 or more ubiquitins. The \u03b2'-COP N-terminal propeller (1-304) and both propellers (1-604) bind K63-linked Ub4, but not K48-linked chains or mono-ubiquitin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C68 are strongly supported by in vitro binding assays in Figure 3B-C showing dose-dependent and chain-length-specific binding of K63-linked polyUb to GST-\u03b2'COP and GST-\u03b1COP propeller domains. NMR data in Figure 3\u2014figure supplement 1 confirms lack of binding to mono-ubiquitin. The specificity for K63 linkage and chain length \u22655 is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The full COPI complex isolated from yeast binds K63-linked polyubiquitin with the same chain length specificity as individual propeller domains, but not K48-linked polyubiquitin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by in vitro binding assays in Figure 3D-E showing COPI immunoprecipitated from yeast lysates binds K63-linked polyUb (chains \u22655) but not K48-linked polyUb. This demonstrates that the Ub-binding activity is not an artifact of recombinant protein fragments and is retained in the assembled COPI complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Deletion of the \u03b2'-COP N-terminal propeller (\u03942-304) disrupts Snc1 recycling, but mutation of the di-lysine binding site (RKR mutant) does not, demonstrating separation of function between ubiquitin-dependent Snc1 recycling and di-lysine cargo recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 are strongly supported by microscopy data in Figure 4A-C showing \u03b2'-COP (\u03942-304) causes Snc1 mislocalization while the RKR mutant does not. This is a critical separation-of-function result demonstrating that the Snc1 recycling defect is not due to loss of di-lysine binding or general COPI dysfunction at the Golgi.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Replacement of the \u03b2'-COP N-terminal propeller with ubiquitin-binding domains from Doa1 (UBDDoa1) or Tab2 (NZFTab2) fully restores Snc1 recycling, but the K48-specific UBAMud1 domain does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are strongly supported by microscopy data in Figure 4A-C showing \u03b2'-COP UBDDoa1 and \u03b2'-COP NZFTab2 restore GFP-Snc1 plasma membrane localization, while \u03b2'-COP UBAMud1 does not. This domain-swap experiment provides compelling evidence that ubiquitin binding, specifically K63-linked Ub, is the critical function of the \u03b2'-COP propeller in Snc1 recycling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "COPI ubiquitin binding is conserved in humans, as human \u03b2'-COP (1-303) binds K63-linked polyUb and functionally replaces the yeast N-terminal propeller in supporting Snc1 trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by in vitro binding data in Figure 4\u2014figure supplement 1 and microscopy data in Figure 4A-D showing the human-yeast chimera supports Snc1 recycling. This demonstrates evolutionary conservation of the COPI-ubiquitin interaction and strengthens the biological significance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "All \u03b2'-COP variants support yeast viability. Deletion of the N-terminal propeller causes slow growth that is rescued by UBDDoa1 or human propeller replacement, but not by the RKR mutation, suggesting the growth defect is due to loss of ubiquitin binding rather than di-lysine binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 are supported by growth assay data in Figure 4E. The differential rescue of the growth phenotype by different Ub-binding domains provides additional evidence for the importance of COPI-Ub interactions beyond Snc1 recycling, though the interpretation requires some inference from the pattern of rescue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "\u03b2'-COP NZFTab2 restores Snc1 recycling but not growth, while UBAMud1 restores neither, demonstrating that growth and Snc1 trafficking defects can be uncoupled and suggesting some COPI cargos may use polyUb linkages other than K63 or K48.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 are supported by data in Figure 4A-E. The uncoupling of Snc1 trafficking and growth phenotypes is clearly demonstrated. However, C86 (speculation about other Ub linkages) is reasonable inference but not directly tested. The overall conclusion about separable functions is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "\u03b2'-COP ubiquitin-binding mutants (\u03942-304, RKR, UBDDoa1) do not affect COPI-dependent trafficking of Rer1 or Emp47 at the Golgi, demonstrating that ubiquitin binding is specifically required for Snc1 recycling but not for canonical COPI functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 are supported by microscopy data in Figure 5A-B showing normal Rer1 localization and immunoblot data in Figure 5C showing Emp47 degradation patterns. This is another critical separation-of-function result demonstrating that the Snc1 recycling defect is not due to general COPI dysfunction at the Golgi.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "COPI localizes to Tlg1-marked compartments (18.4% colocalization) in addition to early Golgi (61.3%), with minimal overlap between Tlg1 and Rer1 (2.4%), suggesting COPI is recruited to recycling pathway compartments where it could directly traffic ubiquitinated Snc1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 are supported by colocalization microscopy data in Figure 6A-B. The quantification shows significant COPI localization to Tlg1-marked compartments that are distinct from early Golgi (Rer1-marked). This provides important spatial evidence for a direct role of COPI in the Snc1 recycling pathway, though the inference of direct trafficking (C97) requires integration with other results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C100"
+    ],
+    "result": "COPI binds K63-linked polyubiquitin and this interaction is crucial for trafficking of ubiquitinated Snc1. Ubiquitination functions as a recycling signal to sort Snc1 into COPI vesicles in a non-degradative pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8, and C100 represent the main conclusions of the paper and are supported by the collective evidence from in vitro binding assays (Figure 3), genetic experiments with \u03b2'-COP mutants and domain swaps (Figure 4), separation-of-function experiments (Figures 4-5), and colocalization data (Figure 6). The integration of biochemical, genetic, and cell biological evidence provides strong support for this novel mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background on vesicular transport, COPI function, and v-SNARE recycling establishes the context and motivation for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C18 represent established knowledge in the field, supported by appropriate citations. These provide necessary background but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Background on the yeast endocytic pathway, Tlg1-marked compartments, and factors required for Snc1 recycling establishes prior knowledge about the system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C34 represent established knowledge about the yeast endocytic system and Snc1 recycling, supported by appropriate citations. These provide necessary context but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Historical context: COPI was observed at early endosomes in mammalian cells decades ago but no clearly defined role in endosomal trafficking has been established.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 accurately represent the historical context and knowledge gap that motivates this study, supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "In wild-type cells, GFP-Snc1 localizes approximately half to the plasma membrane and half to cytoplasmic punctae. Deletion of RCY1 causes Snc1 accumulation in punctae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by microscopy data in Figure 1A-B. These establish the baseline phenotypes used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Snc1 is ubiquitinated on lysines within the SNARE motif, which likely inactivates Snc1 and prevents t-SNARE re-association. The polyUb chains form a transient sorting signal for COPI-mediated departure from Tlg1 compartments, and ubiquitin is likely removed by an endogenous DUB to allow fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C105 mix established knowledge (C101 from Swaney et al., 2013) with reasonable speculation (C102, C103, C105) based on the study's findings. While the model is plausible and consistent with the data, the specific mechanisms of Snc1 inactivation by ubiquitination and deubiquitination for fusion are not directly tested. C104 is supported by the observation of low steady-state ubiquitination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Mutants that perturb Snc1 recycling do not affect secretion kinetics of other proteins, and epistasis analysis indicates the recycling defect occurs after endocytosis but before arrival at the Golgi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 are supported by established knowledge (C106-C107 with citations) and epistasis data in Figure 1A-B (C108-C109 with citations to Chen et al., 2011 and Mioka et al., 2014). This helps define the trafficking step affected and argues against indirect effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Gcs1 is recruited to Tlg1 compartments by sensing membrane properties created by Drs2, binds directly to Snc1 and COPI, and likely stabilizes COPI-Ub interactions. The COPI-Ub-Snc1 interaction is primarily responsible for sorting, with other Drs2 effectors also contributing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C115 integrate prior work (C110-C111 with citations) with reasonable inferences (C112, C114, C115) based on the current findings and modest effect of GCS1 deletion (C113). The model is plausible but some aspects (C112, C114) involve speculation about mechanisms not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Rcy1 binds to Drs2's regulatory domain, and ArfGEF binding to this domain stimulates flippase activity, suggesting Rcy1's function may be Drs2 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 are established knowledge supported by citations. C118 is reasonable speculation based on the known interactions, but the specific function of Rcy1 in activating Drs2 is not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "The Snx4/41/42 complex may represent a distinct pathway for Snc1 retrieval at a different endosome population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C119 is speculation based on recent studies (citations to Hettema et al., 2003 and Ma et al., 2017) but is not directly addressed in this manuscript. The relationship of this complex to the COPI-mediated pathway remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Background on ubiquitin's role in targeting proteins for degradation via clathrin adaptors and ESCRTs in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 represent established knowledge supported by citation to Stringer and Piper, 2011. This provides context for the novel finding that ubiquitin can also function as a recycling signal.",
+    "result_type": "MINOR"
+  }
+]

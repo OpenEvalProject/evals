@@ -1,0 +1,241 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "KtrAB from Vibrio alginolyticus binds ADP and ATP with low micromolar affinities (Kd of 3 \u03bcM for ADP and 2 \u03bcM for ATP), as determined by isothermal titration calorimetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are directly supported by ITC measurements shown in Figure 2. The experimental design is appropriate for measuring binding affinities, and the reported Kd values are consistent with the data presented. The similar affinities for ADP and ATP are noteworthy for the proposed regulatory mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The cryo-EM structure of ADP-bound KtrAB was determined at 6.6 \u00c5 resolution, revealing a KtrB2A8B2 composition with an oval-shaped KtrA ring and a novel elongated density protruding from each KtrB monomer into the KtrA ring, while D1M2b and tip helix densities are absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8 describe the overall cryo-EM structure and are well-supported by the data in Figures 3 and 4. The resolution of 6.6 \u00c5 is modest but sufficient for identifying major structural features. The KtrB2A8B2 composition is confirmed by multiple orthogonal techniques (negative stain EM, native mass spectrometry). The observation of the elongated density and absence of D1M2b/tip helix densities represents a key novel finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C69"
+    ],
+    "result": "In the ADP-bound conformation, helix D1M2 forms a continuous 58 \u00c5 elongated \u03b1-helix spanning the membrane and protruding into the KtrA ring, representing a ~30 \u00c5 extension compared to the ATP-bound state. Helix D4M2b is also extended by 18 \u00c5, and these conformational changes narrow the pores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 and C69 describe the major structural differences between ADP- and ATP-bound states. These are supported by the cryo-EM density map and MDFF modeling (density cross-correlation improved from 0.70 to 0.89). However, at 6.6 \u00c5 resolution, some details of helix continuity and exact measurements should be interpreted with caution. The steric hindrance argument (C14) is reasonable but model-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "ATP interacts with two different KtrA subunits via its \u03b3-phosphate group, whereas ADP interacts within one subunit. These disparate nucleotide interactions allow the diamond-shaped RCK domain conformation in the ADP-bound state with elongated D1M2 helix, while the square-shaped ATP-bound state excludes helix straightening by steric hindrance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 are based on comparison with previously published ATP-bound structures and the current ADP-bound structure. The structural logic connecting nucleotide binding mode to RCK domain shape and helix conformation is sound and supported by the structural data, though the mechanistic interpretation involves some inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C70"
+    ],
+    "result": "Pulsed EPR measurements on spin-labeled KtrAB A122CR1 show nucleotide-dependent conformational changes in the D1M2 region: broad distance distributions centered around 3.0 nm with ADP versus 5.3 nm with ATP, reflecting the transition between elongated helix and helix hairpin conformations. In the absence of nucleotides, an intermediate distribution is observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 and C70 are supported by pulsed EPR data in Figure 5E and supplements. The functional validation of the A122C mutant (C70) is important for interpreting the EPR data. The experimentally determined distances are somewhat shorter than model predictions for ATP, which the authors acknowledge may be due to limited dipolar evolution time or slight conformational differences. The nucleotide-dependent shift in distances clearly supports the proposed conformational change.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The molecular gate in KtrB is formed by the intramembrane loop and conserved arginine R427 in D4M2. The kinks in \u03b1-helices D1M2 and D4M2 introduced by the ADP-to-ATP conformational change are located in the gating region, and the kink in D4M2 may directly reorient R427. The gating region is marked by a glycine-rich ring similar to glycine hinges in other K+ channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 integrate structural observations with previous functional studies. C22 is well-supported by prior work and the current structure. C23 is a direct structural observation. C24 is speculative but reasonable given the structural proximity. C25 makes an interesting comparison to other K+ channels. Overall, these claims are well-supported, though C24 contains speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "MD simulations demonstrate that in the ADP-bound conformation, \u03b1-helices D1M2 and D4M2 interact with gating motifs and hinder water accessibility, while in the ATP-bound state, water accessibility increases due to the discontinuous helix structure. The water accessibility is mainly dependent on D1M2 and D4M2 conformations, with minimal effect from the intramembrane loop conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are supported by MD simulation data shown in Figure 6C and supplements. The simulations were performed with two different software packages (NAMD and GROMACS) showing consistent results, which strengthens confidence. The blind loop modeling experiments (C28) provide important validation that the main effect is from the helices rather than the loop. The hydration differences are clear and mechanistically relevant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C71"
+    ],
+    "result": "Pulsed EPR measurements on spin-labeled KtrAB T318CR1 in liposomes show that in the presence of KtrA and ADP, the intramembrane loop is immobilized (narrow distance distribution at 3.3 nm), while with ATP and external K+, the loop shows increased flexibility (broader, longer distance distribution). This demonstrates that ADP stabilizes the gate in a closed conformation while ATP unlocks it for stochastic movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 and C71 are supported by pulsed EPR data in Figure 6D and supplements. The functional validation of T318C (C71) is important. The contrast between KtrB alone (flexible loop regardless of K+) and KtrAB complex (nucleotide-dependent loop behavior) is striking and mechanistically informative. The interpretation that ATP 'unlocks' rather than directly opens the gate is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "MD simulations on the ATP-bound KtrB structure confirm intramembrane loop flexibility in this conformation. Additional factors beyond ATP binding (K+ gradient, membrane environment, and/or other unidentified factors) are needed to stabilize the active, open conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by MD simulations (Figure 6\u2014figure supplement 4) and comparison of EPR data in different conditions (detergent vs. liposomes). C36 appropriately acknowledges that the full activation mechanism is not yet understood and requires additional factors. This is consistent with the EPR data showing that ATP alone in detergent produces a flexible but not necessarily fully open gate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The authors propose an activation mechanism: Under non-activating conditions, ADP-bound KtrA adopts a conformation with extended D1M2 helices that lock the gate closed through interactions with R427 and/or the intramembrane loop. Upon hyperosmotic shock, increased ATP replaces ADP, inducing KtrA ring conformational changes that result in D1M2 helix hairpin formation and D4M2 partial unfolding, unlocking the gate to allow K+ translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 present the proposed mechanism integrating all the structural and functional data. The mechanism is well-supported by the combination of cryo-EM, EPR, and MD simulation data presented in the study. C39 is supported by cited literature. The proposed mechanism is logical and consistent with the data, though some details (specific interactions in C38) remain speculative and require high-resolution structures for confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Previous studies suggest prolonged opening in the presence of ATP, indicating additional factors (possibly lipids, Na+ ions, protons, or cyclic nucleotides) are required to stabilize the fully open state. The lipid composition is adjusted upon hyperosmotic shock and can activate compatible solute transporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 and C72-C74 cite previous literature to contextualize the current findings and identify gaps in understanding. These claims accurately represent prior work and appropriately identify areas requiring further investigation. C43 is speculative but reasonable given the evidence from related systems (C73-C74).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The data reveal a novel regulatory mechanism for the Ktr/Trk family that differs from the three-stage mechanism in single-pore RCK channels. Instead of flexible linkers and helical bundles, the Ktr/Trk family uses elongated helices (D1M2 and D4M2) that directly interact with gating regions to regulate two parallel pores controlled by one octameric RCK ring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 present the main conceptual advance of the paper. C46-C47 accurately describe the previously known mechanism in other RCK channels. C48-C50 articulate how the Ktr/Trk mechanism differs, which is well-supported by the structural and functional data presented. This represents a significant conceptual contribution to understanding ion channel regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Ktr/Trk systems are essential for bacterial physiology (osmotic resistance, host infection fitness, antimicrobial resistance) but absent in mammalian cells, making the newly discovered inactive conformation a potential target for antibiotic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by cited literature and established knowledge about the distribution and importance of these systems. C53 is speculative regarding drug development potential but is a reasonable suggestion given the biological importance and species distribution of these systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Background information on K+ homeostasis, RCK channel regulation, and the structural features of Ktr/Trk systems establishes the context for the study. Previous X-ray structures showed nucleotide-dependent RCK conformational changes but nearly identical pore conformations, leaving the link between RCK changes and pore permeability unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C67 provide essential background and context from established knowledge and previous literature. These claims accurately represent prior work and clearly identify the knowledge gap (C67) that the current study addresses. This contextual information is well-supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "The KtrB2A8B2 assembly observed in the structure is probably formed during protein purification due to the symmetry of the octameric KtrA ring, which has identical binding sites for KtrB dimers on both sides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 provides a reasonable explanation for the observed stoichiometry based on structural symmetry and comparison with previous crystal structures. While this is an inference about the assembly process, it is well-reasoned and consistent with the structural data.",
+    "result_type": "MINOR"
+  }
+]

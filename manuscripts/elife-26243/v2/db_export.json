@@ -1,0 +1,2290 @@
+{
+  "submission": {
+    "id": "d1d87e62-f892-4930-8aea-38234a9ac87b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:25:39.989460Z",
+    "updated_at": "2025-12-01T19:25:39.989460Z"
+  },
+  "content": [
+    {
+      "id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "submission_id": "d1d87e62-f892-4930-8aea-38234a9ac87b",
+      "content_type": "manuscript",
+      "content_text": "# A vitamin-B2-sensing mechanism that regulates gut protease activity to impact animal\u2019s food behavior and growth\n\n## Authors\n\n- Bin Qi<sup>1</sup> ([ORCID: 0000-0003-1507-8882](https://orcid.org/0000-0003-1507-8882))\n- Marina Kniazeva<sup>1</sup>\n- Min Han<sup>1</sup> ([ORCID: 0000-0001-6845-2570](https://orcid.org/0000-0001-6845-2570)) \u2020\n\n### Affiliations\n\n1. Department of Molecular, Cellular and Developmental Biology Howard Hughes Medical Institute, University of Colorado Boulder Boulder United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTo survive challenging environments, animals acquired the ability to evaluate food quality in the intestine and respond to nutrient deficiencies with changes in food-response behavior, metabolism and development. However, the regulatory mechanisms underlying intestinal sensing of specific nutrients, especially micronutrients such as vitamins, and the connections to downstream physiological responses in animals remain underexplored. We have established a system to analyze the intestinal response to vitamin B2 (VB2) deficiency in Caenorhabditis elegans, and demonstrated that VB2 level critically impacts food uptake and foraging behavior by regulating specific protease gene expression and intestinal protease activity. We show that this impact is mediated by TORC1 signaling through reading the FAD-dependent ATP level. Thus, our study in live animals uncovers a VB2-sensing/response pathway that regulates food-uptake, a mechanism by which a common signaling pathway translates a specific nutrient signal into physiological activities, and the importance of gut microbiota in supplying micronutrients to animals.\n\n## Introduction\n\nTo survive challenging environments with fluctuating nutrient resources, animals have acquired the ability to evaluate food quality, which may lead to avoidance of food lacking certain essential nutrients or containing toxic molecules, and to alterations in developmental and metabolic programs (Bargmann, 2006; Bjordal et al., 2014; Chi et al., 2016; Chng et al., 2014; Ha et al., 2010; Iwatsuki and Torii, 2012; Kniazeva et al., 2015; Melo and Ruvkun, 2012; Tang and Han, 2017; Watson et al., 2014). Besides neuronal sensory systems that permit rapid feeding decision, food quality is also evaluated by the intestine-initiated systems that may be more sensitive in detecting the deficiency of certain types of nutrients including micronutrients and are capable of dictating changes in cellular/developmental programs as well as food uptake and seeking behaviors. However, the metabolic and signaling events in the intestine that are involved in evaluating the availability of specific nutrients, and the mechanisms underlying the connection of these signaling activities to food uptake/foraging behaviors, as well as developmental programs, remain largely unexplored. More specifically, although the functions of TOR complexes in responding to cellular nutrient changes (e.g. amino acids and ATP) have been extensively studied (Chin et al., 2014; Dennis et al., 2001; Efeyan et al., 2015; Zhu et al., 2013), the functions of these sensing activities in whole animals under true physiological conditions, including responses to nutrient variations in food, remain to be investigated.\n\nVitamin B2 (VB2) is the precursor and component of flavin mononucleotide (FMN) and flavin adenine dinucleotide (FAD) that are the redox cofactors of a large number of flavoproteins involved in various metabolic pathways (Joosten and van Berkel, 2007; Lienhart et al., 2013; Powers, 2003). Animals obtain VB2 from diet and likely also from gut microbes, although the VB2 contribution from gut microbes has not been well documented. VB2 deficiency has been associated with various human diseases and health problems (Powers, 2003). It would thus be reasonable to speculate that a food-quality monitoring system in animals can sense VB2 in food and then regulate food response behaviors, and such a monitoring system may function in the intestine. Such a potential VB2-sensing mechanism is explored in this study.\n\n## Results\n\n### Heat-killed bacteria are low-quality food that C. elegans cannot use\n\nWhen fed live E. coli strain OP50, a standard laboratory food for C. elegans, all hatched larvae develop to adults within 3 days at 20\u00b0C. However, when worms were fed OP50 that was killed by heat treatment (75\u00b0C for 90 min; HK-OP50 hereafter), they arrested development at early larval stages (L1-L2) and failed to consume the bacterial lawn (Figure 1A), suggesting that the heat-killed bacteria lacked certain nutrients or molecules required for larval growth, which is consistent with published observation suggesting that E. coli contains heat-labile nutrients required for C.elegans normal growth and longevity (Lenaerts et al., 2008). We performed two behavior assays to assess food dwelling and food choice (Brandt and Ringstad, 2015; Fujiwara et al., 2002; Kniazeva et al., 2015; Melo and Ruvkun, 2012; Shtonda and Avery, 2006). The results demonstrated a strong discrimination against HK-OP50 by wild-type worms (Figure 1B and C). Interestingly, in the food choice assay, the live OP50 lawn was favored until it was consumed at day 4, when most worms then moved to the HK-OP50 and consumed that lawn (Figure 1C), suggesting that worms eat heat-killed bacteria if they have first obtained some benefit from live bacteria. Moreover, when live-OP50 was added to worms grown on HK-OP50 plate for 30 days, they recovered to adults with viable progeny (Figure 1\u2014figure supplement 1A), suggesting nutrient deficiency in HK-OP50 induced a protective response from the worms similar to starvation response.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/26243/elife-26243-fig1-v2.jpg)\n\n**Figure 1.:** (A) Microscope images and bar graph showing that worms fed heat-killed OP50 (HK-OP50 or HK) arrested at L1-L2 stage three days after hatching. (B) Schematic drawing and quantitative data of the food dwelling assay. Circles indicate the food spot for live (green) and HK-OP50 (red) bacteria, respectively. The animals were scored 24 hr after L1 worms were placed on the food spot. Data are represented as mean \u00b1SD. (C) Schematic drawing, microscopic images and quantitative data of the food choice assay. Eggs were place in the center spot (origin). Live (green) and heat-killed (red) bacteria were placed on opposite sides of the plate. The percentage of worms on each spot was calculated at the indicated time. Worms moved to heat-killed bacteria and consumed it after 4 days when live food was totally consumed. Data are represented as mean \u00b1SEM. (D) An assay for the effect of a small amount of live, non-edible bacteria on the growth of animals fed heat-killed bacteria. The colored diagrams show the feeding conditions. Percentage of animals that grew to L3-adult stages is indicated below each diagram. The combination of HK-OP50 and small amount live SS, neither of which alone can support growth, could support food uptake and growth. The control (4th column) suggests that only live SS can promote worms to consume HK-OP50. For bar graphs, number of worms scored is indicated in each bar. All data are representative of at least three independent experiments.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26243/elife-26243-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Worms on heat-killed OP50 (growth for 30 days) can be recovered once they eat live OP50. Once live-OP50 (yellow arrow and dotted line) was added to worms (red arrow) grown on HK-OP50 plate for 30 days, they recovered to adults with viable progeny. This result suggests that nutrient deficiency in HK-OP50 induced a protective response from the worms similar to starvation response. (B) Representative images of animals in the assay described in Figure 1D. Only under the HK-OP50+ live SS condition, worms were able to consume all heat-killed bacteria and grow. (C) Cartoon illustrations, microscopic images and quantitative data showing that live bacteria do not influence the usability of heat-killed bacteria through odorants. In the middle cartoon, two petri dishes are stacked with top (opening) facing each other so that the worms/food on the agar pads are exposed to common air space,\u00a0>100 worms were scored for each testing condition. S.S.= Staphylococcus saprophyticus..\n\nTo further investigate the impact of this interaction with live bacteria, we employed Staphylococcus saprophyticus (SS), a bacterium species that is inedible for C. elegans (Figure 1D). When eggs were placed on HK-OP50 lawn containing a tiny amount of live SS, the hatched worms were able to consume HK-OP50 and grow, suggesting that the live bacteria provided micronutrients that rendered the heat-killed bacteria edible (Figure 1D and Figure 1\u2014figure supplement 1B). Additional tests indicated that such potential components did not reach the worms through odorants and suggested that worms likely obtain the benefit from the small amount live bacteria through ingestion (Figure 1\u2014figure supplement 1C; Figure 1C). These data led to a speculative model that the trace amount of live bacteria, ingested by the worms, stayed in the intestine and continuously secreted micronutrients into the gut tract, which is similar to microbes in mammalian gut.\n\n### Vitamin B2 supplementation promotes the usage of heat-killed bacteria as food\n\nDeficiency of certain nutrients in HK-OP50 may be detected by a potential food quality evaluation mechanism leading to changes in food uptake and foraging behavior. Among micronutrients tested, we found that vitamin B2 (VB2) supplementation partially but significantly recovered larval growth as indicated by increased gonad length at day 7, which indicated the increased usage of the food (Figure 2A and Figure 2\u2014figure supplement 1A). These animals fed VB2 supplemented food still grew very slowly, reaching mid to late larval stages based on gonad length and vulval development compared to that of well-fed worms, but never reach adulthood by day 7 (Figure 2\u2014figure supplement 1B,C). This slow growth indicated that VB2 supplementation does not completely compensate for the undefined deficiencies of heat-killed bacteria, which suggested that multiple essential nutrients are lacking in heat-killed bacteria. However, the prominent increase in growth suggested that VB2 may play a critical role in a food-quality evaluation pathway. Our behavior assays showed that VB2 supplementation increased the preference for heat-killed bacteria (Figure 2B and Figure 2\u2014figure supplement 2A). Using HPLC-UV (Howe et al., 2015), we found the VB2 level was drastically reduced in worms fed HK-OP50, compared to worms fed live OP50, and the level was mostly recovered by VB2 supplementation (Figure 2C), suggesting VB2 was very low in heat-killed bacteria. To confirm this, we measured the VB2 level in bacteria and found that VB2 level is low in heat-killed OP50 (Figure 2\u2014figure supplement 2C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/26243/elife-26243-fig2-v2.jpg)\n\n**Figure 2.:** (A) Scatter plot of gonad length of worms fed heat-killed OP50 supplemented with indicated vitamins scored at Day 7.\u00a0>\u00a028 worms were scored for each sample. Representative images are shown in Figure 2\u2014figure supplement 1A. Data are represented as mean \u00b1SD. (B) Food-choice assay to test the effect of VB2 supplementation on animal dwelling behavior. The worms were scored for the ratio between the two locations at 3 day. Data are represented as mean \u00b1SD. (C) HPLC-UV analysis of VB2 extracted from worms fed live, HK-OP50 and HK-OP50+VB2 supplementation. The bar graph represents the area counts of VB2 UV absorption peaks (identified by Analyst software), the mean \u00b1SEM of three independent experiments. A graph for VB2 standard from HPLC-UV analysis is shown in Figure 2\u2014figure supplement 2B. (D) Scatter plot showing the effect of treating HK-OP50 with indicated enzymes, on larval growth (by measuring gonad length). Only protease treatment significantly promoted growth. The number of worms scored was 52, 37, 52 and 52, respectively. Data are represented as mean \u00b1SD. (E) Scatter plot showing the effect of a protease inhibitor cocktail (PIC) on the growth of larvae fed HK-OP50 supplemented with VB2. The number of worms scored was 32, 44 and 18, respectively. Data are represented as mean \u00b1SD. (F) Fluorescence images and bar graph showing the impact of heat-killed bacteria and VB2 supplementation on in vivo protease activity in the intestinal tract by the EnzChek protease assay (Hama et al., 2009). L2 stage worms were incubated with quenched BODIPY TR-X casein for 3 hr before imaging. Data are represented as mean \u00b1SEM. p-Values were calculated by T-test and p<0.05 was considered a significant difference. For bar graphs, number of worms scored is indicated in each bar. All data are representative of at least three independent experiments.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26243/elife-26243-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Under heat-killed bacteria feeding conditions, animals were very unhealthy so that stage progression may not correlate with growth well. Larval growth in this paper as indicated by increase in gonad length. (A) Microscopic images of larvae fed HK-OP50 with various vitamin supplements. Gonad length of each worm was measured using ImageJ at Day 7, to evaluate progression of larval growth, which reflects the consumption of the food. The statistical data are shown in the scatter plot in Figure 2A. (B) Gonad length (dotted line) of wild-type worms fed live OP50 in different developmental stages, and the vulval morphology (green arrow) of L4 worms. (C) Gonad length of wild-type worms fed HK-OP50 or HK+VB2 food. If purely based on gonad length (dotted line), worms fed HK food would be at about late L1 to early L2, worms fed HK+VB2 food would be at about late L2 to late L3 stages, comparing to well-fed worms in (B). However, the vulval morphology (yellow arrow) of some worms fed HK+VB2 food appeared to reach L4 stage.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26243/elife-26243-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Cartoon drawing and quantitative data of the food dwelling assay showing the impact of VB2 supplementation on this behavior. Yellow and red filled circles in the cartoon indicate the spots of HK-OP50 (HK) +/\u2212 VB2 supplement, respectively. L1 worms were placed on the food spot and scored for the percent that stayed within the spot after 24 hr. n=number of worms scored. Data are represented as mean \u00b1SD. (B) Chromatograph from HPLC-UV analysis of the VB2 standard for the analysis shown in Figure 2C. (C) HPLC-UV analysis of VB2 extracted from live and heat-killed OP50. Arrow and dotted line indicate the peak of VB2. (D) BODIPY-labeled protease activity in the intestinal tract of worms fed live OP50 at four different larval stages. Fluorescence intensity was measured by ImageJ software. Data are represented as mean \u00b1SEM. (E) Effects of VB2 supplementation and treatment of protease inhibitor on in vivo protease activity in worms fed HK-OP50. Data are represented as mean \u00b1SEM. p Values were calculated by T-test. and p<0.05 was considered a significant difference.\n\n### Vitamin B2 promotes intestinal protease activity\n\nTo understand how VB2 affects food uptake in worms, we tested the role of the digestive system by feeding worms with HK-OP50 culture pre-treated with exogenous digestive enzymes. We found that larval growth was enhanced only by protease-treated HK-OP50 (Figure 2D), indicating that exogenous protein digestion improved usability of the heat-killed bacteria. We then observed that HK-OP50 supplemented with a protease inhibitor cocktail (PIC) eliminated the beneficial effect of VB2 supplementation (Figure 2E). These results suggest that worms fed HK-OP50 have reduced protease activity, and that the benefit of VB2 supplementation is dependent on endogenous proteases.\n\nWe then used a protease detection assay (Hama et al., 2009; Semova et al., 2012) to directly examine the in vivo protease activity in the intestinal tract (Figure 2\u2014figure supplement 2D and E). We found that the protease activity was drastically reduced in worms fed HK-OP50, compared to worms fed live OP50, and VB2 supplementation partially recovered the protease activity (Figure 2F). Taken together, these data support that worms down-regulate digestive enzymes in response to VB2 deficiency.\n\n### Proteases ASP-13 and ASP-14 and GATA factor ELT-2 play critical roles in VB2-promoted protease activity and food usability\n\nTo identify the proteases regulated by VB2, we examined the mRNA levels of 27 intestine-enriched, protease genes (McGhee et al., 2007). qRT-PCR analysis showed that the mRNA levels of four genes, asp-13, asp-14, cpr-1 and cpr-4, were dramatically increased in worms fed HK-OP50+VB2 compared to that in worms fed HK-OP50 (Figure 3A). Among these four genes, asp-13 and asp-14 were also highly expressed in worms fed on live bacteria (Figure 3A). We then found that knocking down both asp-13 and asp-14 resulted in a strong suppression of the effect of VB2 supplementation (Figure 3B), suggesting that these enzymes are essential for the VB2 effect. Over-expression of both asp-13 and asp-14 behind a ubiquitously expressed rpl-28 promoter (termed asp-13/14 OE) (Zhang et al., 2009) significantly improved the food uptake and dwelling behavior of worms fed HK-OP50, as determined by the gonad length, food choice and seeking assays (Figure 3C\u2013E). Moreover, intestinal-specific RNAi of asp-13/14 prevents the rescue effect of VB2 supplementation on worms fed HK-food (Figure 3\u2014figure supplement 1A and B), suggesting that intestinal function of ASP-13 and ASP14 are essential for the VB2 effect. This is consistent with the previous finding that asp-13/14 is highly expressed in the intestine (McGhee et al., 2007) and the results from our in vitro protease/protease inhibitor assay (Figure 2D). These data strongly support a critical role of ASP-13 and ASP-14 in the VB2-induced increase in protease activity and uptake of heat-killed bacteria.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/26243/elife-26243-fig3-v2.jpg)\n\n**Figure 3.:** (A) Results of qRT-PCR analysis showing the expression of indicated protease genes in wild-type worms fed indicated food. Data are represented as mean \u00b1SEM. (B) Impact of RNAi of indicated genes on larval growth when fed HK-OP50+VB2 supplementation. Worms with both asp-13 and asp-14 knocked down displayed strongest effect. Data are represented as mean \u00b1SEM. (C) Scatter plot showing the impact of over-expression of the two protease genes behind the rpl-28 promoter, measured by gonad length of larvae fed HK-OP50 at Day 7. n\u00a0=\u00a041, 39 and 52, respectively. Data are represented as mean \u00b1SD. (D and E) Cartoon diagram and data from food choice (D) and food seeking (E) assays showing that overexpression of asp-13 and asp-14 (asp-13/14 OE) eliminated the discrimination against HK-OP50 over HK-OP50+VB2 (D) and improved affinity of worms towards HK-OP50 (E). Data from two different overexpression lines are shown. Data are represented as mean \u00b1SEM. (F) Fluorescence images and bar graph showing protease activity in the intestinal tract is dramatically decreased in worms treated with elt-2(RNAi). Data are represented as mean \u00b1SEM. (G) Fluorescence images (integrated translational ELT-2::GFP reporter strain) and Western blot (wild-type strain) showing that the ELT-2 expression is prominently decreased in worms fed HK-OP50 compared to that in worms fed live OP50, and the expression is largely recovered by VB2 supplementation. Data are represented as mean \u00b1SEM. (H) Scatter plot showing larval growth measured by gonad length of worms fed heat-killed OP50 is increased by an elt-2 over-expression transgene (OE) at Day 7. n\u00a0=\u00a052 for each condition. Data are represented as mean \u00b1SD. (I) Fluorescence images and bar graph showing that the protease activity is increased in elt-2 overexpression (elt-2 OE) worms fed HK-OP50. p-Values were calculated by T-test. For bar graphs, number of worms scored is indicated in each bar. Data are represented as mean \u00b1SEM. p-Values were calculated by T-test and p<0.05 was considered a significant difference. For bar graphs, number of worms scored is indicated in each bar. All data are representative of at least three independent experiments.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26243/elife-26243-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Intestine-specific RNAi of asp-13 and asp-14 blocked the increases in protease activity (A) and gonad length (B) caused by VB2 supplementation on worms fed HK. Data are represented as mean \u00b1SEM.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26243/elife-26243-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Representative images and quantitative data from the protease assay on worms treated with RNAi of indicated genes in a screen for transcription factors required for intestinal protease activity. Synchronized L1s were transferred onto plates seeded with individual RNAi bacterial clones. The protease activity in the intestinal tract of L1-L2 worms of the next generation was measured. elt-2(RNAi) displayed the most dramatic decrease (also see Figure 2D). Fluorescence intensity was measured by ImageJ software. Data are represented as mean \u00b1SEM. (B) qRT-PCR data showing that mRNA of asp-13 and asp-14 are increased in elt-2 overexpression (elt-2 OE) worms fed HK-OP50. Data are represented as mean \u00b1SD. (C) Results of a food choice assay showing that over expression of elt-2 (elt-2 OE) eliminated the discrimination of worms against HK-OP50 over HK-OP50+VB2. Data are represented as mean \u00b1SEM. (D) ChIP-qPCR data showing enrichment of ELT-2 binding to asp-13 and asp-14 promoters. Samples from a strain expressing an ELT-2::GFP fusion transgene were subject to immunoprecipitation using either control IgG or anti-GFP antibody. Data are represented as mean \u00b1SD.\u00a0This result is consistent with the data from a recent ChIP-seq analysis suggested that asp-13 and asp-14 are likely direct targets of ELT-2 (Mann et al., 2016). (E) Microscopic images and bar graph showing that overexpression of asp-13 and asp-14 significantly suppressed the larval arrest phenotype of elt-2(RNAi). Arrowheads point to two representative animals to indicate the size difference under the two conditions. Data are represented as mean \u00b1SD. Since over-expressing asp-13 and asp-14 behind the rpl-28 promoter is expected to elude regulation by ELT-2, this result supports that down-regulating asp-13 and asp-14 by a low ELT-2 level critically contributes to the poor food usage in worms fed HK-OP50. All data are representative of at least three independent experiments.\n\nTo identify transcription factors that regulate the expression of intestinal protease genes in response to VB2 supplementation, we combined RNAi with the protease assay to screen 18 transcription factors previously shown to be enriched in the intestine (McGhee et al., 2007) (Figure 3\u2014figure supplement 2A). The protease activity was most dramatically decreased in worms treated with elt-2(RNAi) (Figure 3F and Figure 3\u2014figure supplement 2A), which is consistent with the recent report that elt-2(RNAi) decreases the expression of\u00a0~50% of known protease genes, including asp-13 and asp-14 (Mann et al., 2016). Using an integrated, translational ELT-2::GFP reporter strain which is in a glo-4 mutant background to reduce auto fluorescence (Mann et al., 2016), we found that the ELT-2::GFP signal was decreased in worms fed HK-OP50 and the reduction was mostly recovered by VB2 supplementation (Figure 3G). We also found that decreased ELT-2 on heat-killed food was recovered by VB2 supplementation in wild-type worm (Figure 3G, Western blot), supporting that ELT-2 expression responds to changes in nutrient status. Using an established ELT-2 over-expression [elt-2 (OE)] strain (Mann et al., 2016), we found that over-expression of ELT-2 significantly increased both larval growth measured by gonad length and protease activity in worms fed HK-OP50, eliminated the preference for HK-OP50+VB2 over HK-OP50 in the food choice assay, and increased the expression of asp-13 and asp-14 (Figure 3H and I; Figure 3\u2014figure supplement 2B and C). Therefore, increased expression of elt-2 is both necessary and sufficient for the impact of VB2 on protease expression and food usability. Additional tests supported the hypothesis that down-regulating asp-13 and asp-14 by a low ELT-2 level critically contributes to the poor food usage in worms fed HK-OP50 (Figure 3\u2014figure supplement 2D and E).\n\n### TORC1 mediates VB2-dependent regulation of protease activities and worm growth\n\nDespite extensive studies on nutrient sensing by TORC1(Efeyan et al., 2015), its role in food quality evaluation processes, which include not only the detection of deficiency of a specific nutrient, but also specific downstream physiological responses in live animals, remain to be explored, particularly for micronutrients such as VB2. We first tested if TORC1 is required for VB2-induced activation of digestive enzymes in worms fed heat-killed bacteria. We found that pretreatment with RNAi targeting either daf-15/raptor or ragc-1, encoding two key TORC1 components (Jia et al., 2004; Long et al., 2002; Robida-Stubbs et al., 2012), essentially eliminated the effect of VB2 supplementation on protease activity (Figure 4A), indicating that VB2 induction of protease activity is TORC1 dependent. To address that lower TORC1 activity on protease activity derive does not simply from slowing or arresting development, we tested the protease activity of several arrested larvae (RNAi treatment). Figure 4\u2014figure supplement 1 shows that protease activity is not all reduced in arrested larvae, which indicate that lower TORC1 activity on protease activity (Figure 4A) is unlikely to be from generally slowing or arresting development.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/26243/elife-26243-fig4-v2.jpg)\n\n**Figure 4.:** (A) Fluorescence images and bar graph showing that VB2-induced increase in protease activity in the digestive tract depends on TORC1 function. Data are represented as mean \u00b1SEM. (B) Fluorescence images and bar graph showing that autophagy activity (measured by the intensity of LGG-1::GFP puncta in seam cells) increases in worms fed HK-OP50, compared to worms fed live OP50, and the increase is eliminated by VB2 supplementation. The inset image in each panel shows magnified area indicated by the white bar. Figure 4\u2014figure supplement 2A and B show data supporting that LGG-1 puncta is repressed by TORC1 activity, consistent with known negative regulation of autophagy by TORC1 (Robida-Stubbs et al., 2012). Data are represented as mean \u00b1SEM. (C) Fluorescence images and bar graph showing that protease activity is increased in an nprl-3(lf) mutant fed HK-OP50. nprl-3 negatively regulates TORC1 (Zhu et al., 2013). Data are represented as mean \u00b1SEM. (D) qRT-PCR analysis showing that mRNA of asp-13 and asp-14 were increased in nprl-3(lf) mutant fed HK-OP50. Data are represented as mean \u00b1SEM. (E) Scatter plot showing that larval growth is increased in the nprl-3(lf) mutant worms fed HK-OP50 at Day 7. n\u00a0=\u00a052 for each condition. Data are represented as mean \u00b1SD. (F and G) Result from food choice (F) and food-seeking (G) assays showing that nprl-3(lf), which hyperactivates TORC1, eliminated the discrimination against HK-OP50 over HK-OP50+VB2 (F) and improved affinity of worms toward HK-OP50 (G). The wild-type data are the same as that in Figure 3D and E, as the data for both pairs of figures were generated from the same set of experiments. Data are represented as mean \u00b1SEM. p-Values were calculated by T-test and p<0.05 was considered a significant difference. For bar graphs, number of worms scored is indicated in each bar. All data are representative of at least three independent experiments.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26243/elife-26243-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Protease activity is not all reduced in arrested larvae, which indicate that lower TORC1 activity on protease activity (Figure 4A) is unlikely to be from generally slowing or arresting development.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26243/elife-26243-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Bar graph showing that the high level of autophagy activity (measured by the number of LGG-1::GFP puncta in seam cells) in worms fed HK-OP50 (see Figure 4B) is suppressed by an nprl-3(lf) mutation that hyperactivates TORC1 (Zhu et al., 2013). Data are represented as mean \u00b1SEM. (B) RNAi knockdown of daf-15, which reduces TORC1 activity, caused a drastic increase in autophagy activity in young wild type larvae. Data are represented as mean \u00b1SEM. (C) Fluorescence images showing that apical localization of ERM-1::GFP, a marker for the integrity of apical membrane polarity (Zhang et al., 2011; Zhu et al., 2015), in the intestine is not altered in worms fed heat-killed bacteria. The results suggest that the apical membrane polarity of the intestine is not defective under the poor feeding condition. (D) Fluorescence images and quantitative data showing that localization of a VHA-6::mCherry fusion protein is disorganized at the apical membrane of the intestine of worms fed heat-killed bacteria (HK). The defect is significantly suppressed by VB2 supplementation. VHA-6 is a subunit of the vacuolar type H+-ATPase (V-ATPase) that has been indicated to function in TORC1 activation in mammalian cell culture studies (Zoncu et al., 2011). VHA-6 and its localization at the apical membrane have been linked to TORC1 activity in response to defects in a lipid biosynthesis pathway in C. elegans (Zhu et al., 2015). These data are consistent with the proposed reduction of TORC1 activity in worms fed heat-killed bacteria and recovery of TORC1 activity by VB2 supplementation. (E) HPLC-UV analysis of VB2 extracted from wild-type worm fed live OP50, or wild-type, nprl-3(lf) and asp-13/14 OE worms fed HK-OP50. Arrow indicates the peak of VB2. (F) Reducing TORC1 activity (daf-15 RNAi) led to defects in food choice. Data are represented as mean \u00b1SEM. (G) Fluorescence images (integrated translational ELT-2::GFP reporter strain) and Western blot (wild-type) showing that daf-15(RNAi) caused a decrease in ELT-2 expression in worms fed live OP50. Data are represented as mean \u00b1SEM.\u00a0p-Values were calculated by T-test. For bar graphs, the number of worms scored is indicated within each bar.\n\nWe then measured TORC1 activity by utilizing an established autophagy marker (LGG-1::GFP puncta) known to be repressed by TORC1 (Robida-Stubbs et al., 2012). We found that worms fed HK-OP50 displayed a high level of LGG-1::GFP puncta in seam cells compared to that in worms fed live OP50, and this increase was suppressed by VB2 supplementation (Figure 4B). To support that the observed change in the LGG-1::GFP puncta level under our testing conditions reflects a specific change in TORC1 activity, we showed that the elevated LGG-1::GFP puncta level in worms fed HK-OP50 was suppressed by hyperactivation of TORC1 in a nprl-3 loss-of-function (lf) mutant (Figure 4\u2014figure supplement 2A). NPRL-3 is a negative regulator of TORC1 in both worms and mammalian cells (Bar-Peled et al., 2013; Zhu et al., 2013). Conversely, inhibition of TORC1 activity by daf-15(RNAi) elevated the LGG-1::GFP puncta level in well-fed, young larvae (Figure 4\u2014figure supplement 2B). In addition, apical localization of VHA-6, which we previously showed contributes to intestinal TORC1 activation by a lipid biosynthesis pathway (Zhu et al., 2015), was altered in worms fed HK-OP50 and this defect was suppressed by VB2 supplementation (Figure 4\u2014figure supplement 2C and D). These data indicate that TORC1 activity is decreased in worms fed heat-killed bacteria and that VB2 supplementation significantly recovers the activity.\n\nWe obtained further evidence that TORC1 acts downstream of VB2 by showing that TORC1 activation is sufficient to mimic the effect of VB2 in boosting intestinal protease activity and food usage. Specifically, we found that the nprl-3(lf) mutation significantly improved intestinal protease activity, the expression of asp-13 and asp-14, larval growth measured by gonad length and dwelling behavior of worms fed HK-OP50 (Figure 4C\u2013G); however, this rescue was not because VB2 level was recovered as VB2 level in nprl-3 (lf) mutants fed heat-killed food did not increase (Figure 4\u2014figure supplement 2E). In contrast, reducing TORC1 activity (daf-15 RNAi) led to defects in food choice (Figure 4\u2014figure supplement 2F). Moreover, daf-15(RNAi) treatment decreased the expression of the translational ELT-2::GFP reporter in the reporter strain and the endogenous ELT-2 protein in the wild-type (Figure 4\u2014figure supplement 2G), which is consistent with the observation in a previous report (Schieber and Chandel, 2014). Therefore, our data strongly support that TORC1 mediates the effect of VB2 on the expression of proteases and the usage of heat-killed bacteria.\n\n### VB2 promotes TORC1 and protease activities through FAD and ATP production\n\nVitamin B2, also known as riboflavin, is the precursor of flavin mononucleotide (FMN) and flavin adenine dinucleotide (FAD) (Joosten and van Berkel, 2007; Lienhart et al., 2013; Powers, 2003) (Figure 5A). Using HPLC-UV analysis, we found that both FMN and FAD levels were decreased in worms fed HK-OP50 compared to worms fed live OP50, and their levels were partially restored by VB2 supplementation (Figure 5B). Therefore, lack of sufficient FAD and FMN likely contributes to the low quality of heat-killed bacteria as a food source.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/26243/elife-26243-fig5-v2.jpg)\n\n**Figure 5.:** (A) Cartoon diagram to illustrate known functional relationship between VB2 (riboflavin), flavin mononucleotide (FMN) and flavin adenine dinucleotide (FAD), as well as a proposed VB2 sensing pathway in the intestine, based on this study. RFT-2, expressed in the intestine in C. elegans, is a homolog of the riboflavin transporter three that is required for VB2 uptake (Biswas et al., 2013; Gandhimathi et al., 2015). FLAD-1 is a FAD synthase that catalyzes the last step of FAD biosynthesis (Liuzzi et al., 2012). NPRL-3 represses TORC1 activity (Zhu et al., 2013). (B) HPLC-UV detection peak of FAD and FMN from worms fed under indicated conditions. Figure 5\u2014figure supplement 1A shows the graph of FAD and FMN standards. (C) Scatter plot showing that supplementation of FMN or FAD significantly recovered the of wild-type larvae fed HK-OP50. The number of worms scored was 28, 29, 35 and 31, respectively. Data are represented as mean \u00b1SD. (D) Fluorescence images and bar graph showing that FAD supplementation elevated the in vivo protease activity in worms fed HK-OP50 and the increase is eliminated by RNAi knockdown of daf-15/raptor. Data are represented as mean \u00b1SEM. (E and F) Fluorescence images and bar graph showing that RNAi knock down of flad-1/FAD synthetase sharply reduced the in vivo protease activity in wild type (E). The reduction was suppressed by a nprl-3(lf) mutation (F) that hyperactivates TORC1. Data are represented as mean \u00b1SEM. (G) RNAi knockdown of flad-1 elevated autophagy activity (LGG-1::GFP puncta) that is known to be repressed by TORC1. Data are represented as mean \u00b1SEM. (H and I) Fluorescence images and bar graph showing that RNAi knock down of rft-2, encoding a riboflavin transporter (see A), sharply reduced the in vivo protease activity in wild type. The sharp reduction was suppressed by a nprl-3(lf) mutation that hyperactivates TORC1. Data are represented as mean \u00b1SEM. (J) RNAi reduction of rft-2 elevated the number of LGG-1::GFP puncta that marks the level of autophagy. The increase in autophagy is consistent with a reduction in TORC1 activity. Data are represented as mean \u00b1SEM. (K) Measurement of ATP levels in worms. (top) ATP level is reduced in worms fed HK-OP50 and the reduction is partially suppressed by VB2 or FAD supplementation. (bottom) flad-1(RNAi) or apt-2(RNAi) caused reduction in ATP level in wild type, and the decrease by flad-1(RNAi), but not by atp-2(RNAi), was overcome by FAD supplement. Data are represented as mean \u00b1SD. (L and M) Fluorescence images and bar graph showing that RNAi knock down of atp-2/ATP synthetase, significantly reduced the intestinal protease activity in wild type (L). The reduction seen was suppressed by an nprl-3(lf) mutation (M). Data are represented as mean \u00b1SEM. (N) RNAi knock down of atp-2 elevated the autophagy activity (LGG-1::GFP puncta). Data are represented as mean \u00b1SEM. p-Values were calculated by T-test and p<0.05 was considered a significant difference. For bar graphs, the number of worms scored is indicated within each bar. All data are representative of at least three independent experiments.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26243/elife-26243-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) HPLC-UV detection peak of FAD and FMN standards, controls for Figure 5B. (B) Fluorescence images and bar graph showing that FAD supplementation increases the expression of an ELT-2::GFP reporter in worms fed HK-OP50. Data are represented as mean \u00b1SD.\n\nTo test if FAD also mediates the VB2 impact on TORC1 and protease production, we showed that FAD supplementation improved food uptake, intestinal protease activity and ELT-2 expression, as VB2 does (Figure 5C and D; Figure 5\u2014figure supplement 1B). Furthermore, the FAD benefit is also TORC1 dependent, as pretreatment with RNAi targeting daf-15/raptor essentially eliminated the effect of FAD supplementation on protease activity (Figure 5D).\n\nWe then further analyzed the functional relationship between FAD and TORC1 by decreasing FAD production through RNAi of a FAD synthetase gene (flad-1) and a riboflavin transporter gene (rft-2) (Biswas et al., 2013; Gandhimathi et al., 2015; Liuzzi et al., 2012) (Figure 5A). Protease activity was dramatically reduced in both RNAi-treated strains and the activity was recovered in nprl-3(lf) mutants (Figure 5E,F,H and I). Furthermore, both flad-1(RNAi) and rft-2(RNAi) significantly increased autophagy (Figure 5G and J). These data support that TORC1 acts downstream of FAD to promote protease activity. The similarity of the data between flad-1 and rft-2 further supports that FAD plays the key role in mediating VB2 effect on intestinal protease activity.\n\nFAD-associated proteins are involved in many metabolic events including fatty acid metabolism, the TCA cycle and electron transport chain (Lienhart et al., 2013). Since many of these events are related to energy production, and TORC1 is known to be an ATP sensor in mammals and C. elegans (Chin et al., 2014; Dennis et al., 2001; Hay and Sonenberg, 2004), we tested if the ATP level serves as a signal to relay the impact of VB2/FAD on TORC1 and downstream protease activity. We found that the ATP level was indeed dramatically reduced in worms fed HK-OP50 compared to that in worms fed live OP50, whereas VB2/FAD supplementation partially recovered the level (Figure 5K). Consistently, reducing FAD production by flad-1(RNAi) in the first generation of wild-type worms also reduced ATP and the reduction was eliminated by FAD supplementation (Figure 5K). Therefore, the decreased ATP level is a major cellular consequence of VB2 deficiency. To provide further evidence that ATP reduction is causal to the reduction in TORC1 and protease activity, we used RNAi to partially inactivate atp-2/ATP5B that encodes an ATP synthetase known to affect ATP production in worms (Chin et al., 2014). We also observed a modest reduction of ATP level in the first generation of atp-2(RNAi)-treated animals and the reduction was not overcome by FAD supplementation (Figure 5K), consistent with atp-2 acting downstream of FAD regarding ATP production. Importantly, intestinal protease activity was prominently decreased in the second generation of atp-2(RNAi)-treated animals and the reduction was partially suppressed by nprl-3(lf) (Figure 5L and M). Furthermore, LGG-1::GFP puncta were increased in atp-2(RNAi) worms fed live OP50 (Figure 5N), which is consistent with a previous observation in C. elegans (Chin et al., 2014). Together, these data support the hypothesis that the ATP level change mediates the impact of VB2 on TORC1 and intestinal protease activity. Our data do not exclude potential impacts of other metabolic products from FAD-associated enzymes in the process.\n\n## Discussion\n\nWe identified an intestinal food-quality evaluation mechanism by which animals detect vitamin B2 deficiency by the FAD-ATP-TORC1-ELT-2 pathway that dictates food uptake and foraging behaviors (Figure 5A). Such a mechanism with conserved functions enhances survival in wild environments by discriminating against low-quality food. Unlike rapid neuronal food responses that facilitate quick food consumption decisions, the intestinal system described here requires a rather slow, multi-step process after the ingestion of food. It should be noted that our findings do not exclude the involvement of sensory neurons in the food evaluation systems described in this study. The intestinal process may be evolved specifically to detect the deficiency of specific nutrients such as vitamins that elude the neuronal sensory system that may be honed to detect the presence of major nutrients and toxins (Bargmann, 1997; Chandrashekar et al., 2006; Watson et al., 2015). In addition to VB2, we have recently shown that intestinal deficiencies in certain fatty acids and pyrimidine are also sensed by signaling systems in C. elegans to alter reproductive/developmental programs (Chi et al., 2016; Kniazeva et al., 2015). These examples also suggest that the protective response to nutrient deficiency by the intestine-initiated mechanism commonly includes regulation of developmental/reproductive programs, in addition to food behaviors. VB2 deficiency likely affects the functions of a large number of flavoproteins involved in many essential cellular functions; the responses by TORC1, including protease regulation and developmental arrest, may be considered the last and emergent protective actions by the animal.\n\nTORC1 is well known for its role in sensing multiple biomolecules including amino acids, lipids and ATP (Chin et al., 2014; Dennis et al., 2001; Efeyan et al., 2015; Zhu et al., 2013). However, what this ATP-TORC1-sensing activity might do in a whole organism under physiological conditions including response to environmental challenges is a fascinating and largely unexplored question. This study provides a perfect example to address this question as we present evidence for that ATP serves as an intermediate nutrient to mediate the sensing of VB2/FAD by TORC1. Moreover, our study may be the first to connect TORC1 sensing to a specific micronutrient in a model organism. The versatility of TORC1 in responding to the deficiency of multiple nutritional/metabolic inputs suggests that the TORC1-protease pathway may be used to evaluate the levels of multiple essential nutrients in food sources, albeit that the evaluation process for other nutrients in the intestine remain to be demonstrated in vivo.\n\nThis study may also indicate the importance of live bacteria in providing micronutrients, such as VB2, to animals and may thus be highly related to human health, as we obtain vitamins from gut microbes in addition to food sources (Albert et al., 1980; LeBlanc et al., 2013). Since VB2 is known to be light sensitive and heat labile in aqueous solution (Sheraz et al., 2014), the contribution of VB2 from gut microbes could be significantly undervalued. The system used in this study for analyzing VB2 may potentially be effective to investigate the roles and sensing mechanisms for other micronutrients provided by microbes.\n\n## Materials and methods\n\n### C. elegans strains and maintenance\n\nNematode stocks were maintained on nematode growth medium (NGM) plates seeded with bacteria (E. coli OP50) at 20\u00b0C (http://www.wormbook.org/). The following strains/alleles were obtained from the Caenorhabditis Genetics Center (CGC) or as indicated: N2 Bristol (termed wild type), KWN117{pha-1(e2123) III; him-5(e1490) V; rnyEx60 [pELA2 (vha-6p:::vha-6::mCherry) + myo-3p::GFP + pCL1 (pha-1+)]}(RRID:WB-STRAIN:KWN117), DA2123{adIs2122 [lgg-1p::GFP::lgg-1 + rol-6(su1006)]}(RRID:WB-STRAIN:DA2123), MH4672[nprl-3(ku540)] (Zhu et al., 2013), SD1949{glo-4(ok623);gaIs290 [elt-2::TY1::EGFP::3xFLAG(92C12) + unc-119(+)]} (RRID:WB-STRAIN:SD1949), SD1965{rde-1(ne300); unc-119(ed3); Ex[unc-119(+)]}(RRID:WB-STRAIN:SD1965), SD1963{unc-119(ed3) III; rde-1(ne300) V;gaEx234[elt-2p::elt-2::GFP + unc-119(+)]}(RRID:WB-STRAIN:SD1963); VJ402 (erm-1p-erm-1::GFP) (RRID:WB-STRAIN:VJ402) (G\u00f6bel et al., 2004);VP303 {rde-1(ne219) V; [nhx-2p::rde-1 + rol-6(su1006)]} (RRID:WB-STRAIN:VP303).\n\nEx [rpl-28p::asp-13+rpl-28p::asp-14]; this strain was constructed for this study by standard cloning and microinjection techniques.\n\n### Preparation and feeding of worm food with various treatments\n\nPreparation of HK-OP50: standard overnight culture of E. coli OP50 grown in LB broth was concentrated to 1/10 vol and was then heat-killed in a 75\u00b0C water bath for 90 min. About 150 \u00b5l of the HK-OP50 was spread onto each NGM plate.\n\nFor vitamin supplementation, each vitamin was dissolved in H2O to generate a stock. The stock solution was spread onto NGM plates seeded with HK-OP50. The vendor, stock concentrations and volumes used for each vitamin are listed as follows: Thiamine hydrochloride VB1 (Sigma T4625, 10 mg/ml, 30 \u00b5l), (\u2212)-Riboflavin/VB2 (Sigma R9504 0.3 mg/ml, 50 \u00b5l), Nicotinamide/VB3 (Sigma, N3376, 30 mg/ml, 30 \u00b5l), D-Pantothenic acid hemicalcium salt/VB5 (Sigma 21210\u20135 G-F, 30 mg/ml, 30 \u00b5l), Pyridoxine hydrochloride/VB6 (Sigma P9755, 4 mg/ml, 30 \u00b5l), Folic acid/VB9 (Sigma F-8259, 2 mg/ml, 30 \u00b5l), VB12 (Sigma V2876, 30 ug/ml, 50 \u00b5l) and L-Ascobric acid/VC (Sigma A0278, 110 mg/ml, 30 \u00b5l).\n\nFor HK-OP50 plates with a small amount of live bacteria, liquid cultures of bacteria were grown overnight at 37\u00b0C in LB broth. E. coli OP50 and S. saprophyticus (ATCC 15305) were diluted to the same OD600 and 0.1 \u00b5l of the live bacteria was added onto the center of a lawn of HK-OP50 on NGM plates.\n\nFor treatment of HK-OP50 culture with enzymes, a standard overnight culture of HK-OP50 was pelleted and then re-suspended to the initial volume with S-medium. Enzymes were prepared as stock solutions in H2O and then added to the HK-OP50 in S-medium. After incubation at 37\u00b0C (210 rpm) for 90 min, about 150 \u00b5l of this enzyme-treated HK-OP50 was added to wells of a 96-well plate, where synchronized L1 larvae were seeded into each well. The source of the enzyme, stock concentration and the volume added to 1 ml of HK-OP50/S-medium are: amylase (Sigma A3403-500KU, 10\u201350 mg/ml, 80 \u00b5l), lipase (Sigma L1754-5G, 26 mg/ml, 80 \u00b5l) and protease (Sigma P6911-100MG, 8.2 mg/m, 80 \u00b5l).\n\nFor treatment of heat-killed OP50 with protease inhibitor, a protease inhibitor cocktail (PIC, Roche-4693124001-Complete, Mini Protease Inhibitor Cocktail Tablets) was prepared as a stock (1 tablet/ml) in H2O. 200 \u00b5l of the PIC stock solution was spread onto the top of the HK-OP50 lawn on NGM plates.\n\nIn typical experiments, eggs were added to plates immediately after the bacterial food was placed on the plate. To assay for larval growth, gonad length was measured at day 7. Three to ten replicates for each condition were performed for each experiment, and the experiments were duplicated on different days.\n\n### Behavioral assay\n\nFor the food dwelling assay (Kniazeva et al., 2015), 20 \u00b5l of bacteria were spotted onto the center of 6 cm NGM plates. Synchronized L1s were seeded on the center of the lawn. After one day, animals were scored as either off the lawn or on the lawn (including those on the border). In the experiments using VB2 supplementation, 15 \u00b5l of VB2 stock solution was added on the top of HK-OP50 spot.\n\nFor the food choice assay (Kniazeva et al., 2015), 20 \u00b5l of bacteria were spotted onto two opposite spots on 6 cm NGM plates. The eggs were seeded on the center of plate. The number of animals at each location was scored after the time indicated in the figures. This value was divided by the total number of worms on both locations to determine the percentage in each location. In the experiments using VB2 supplementation, 20 \u00b5l of VB2 stock solution was added on the top of HK-OP50 spot.\n\nThe food-seeking assay (Figures 3E and 4G) followed the protocol described in Kniazeva et al. (2015). Worms were counted 3 days after placing the eggs on the origin.\n\nThree to ten replicates for each condition were performed for each assay, and the experiments were duplicated on different days.\n\n### Analysis of larval growth\n\nAnimals were grown on live OP50, and eggs were collected by bleaching and then washing in M9 buffer. Synchronized L1 larvae were obtained by allowing the eggs to hatch in M9 buffer for 18 hr. Eggs or synchronized L1s were seeded to plates prepared for specific assay and incubated at 20\u00b0C for 7 days. Animals were washed off the plates, mounted on agarose pads, and examined under Nomarski optics. Gonad length was measured by the ImageJ software. In some cases, larval stage was determined based on the size of the worms.\n\n### Assay of in vivo protease activity in the worm intestinal tract\n\nIn vivo imaging of worm intestinal protease activity was performed following a published protocol (Hama et al., 2009) with minor modifications. Briefly, quenched BODIPY TR-X casein (EnzChek Protease Assay Kit, Invitrogen) was dissolved in 0.1 M sodium bicarbonate (pH 8.3) at a concentration of 1 mg/ml and stored at \u221220\u00b0C. Aliquots of EnzChek were diluted to 400 \u03bcg/ml in dH2O.\n\nReconstituted EnzChek was added into the tube with animals at a final concentration of 20 \u03bcg/ml and incubated for 3 hr at room temperature with shaking. Animals were then washed three times with M9, mounted on agarose pads, and examined under a Nomarski optics. The \ufb02uorescent intensity of whole individual larvae was calculated by the Image-J software.\n\n### qRT-PCR\n\nFor RNA isolation, C. elegans at the same stage (L1-L2) grown on indicated food plates were quickly collected from NGM plates and washed three times with M9 buffer, followed by the addition of 250 ul TRIzol (Invitrogen). Lysates were preserved at 80\u00b0C until RNA isolation. RNA was isolated with two chloroform extractions (50 \u03bcl each), followed by isopropanol precipitation (125 \u03bcL) of the aqueous phase, and a single wash of the resulting pellet with 70% ethanol (250 \u03bcL). RNA pellets were dried in a tissue culture hood and re-suspended in RNase-free water, and then puri\ufb01ed of contaminating DNA by DNaseI treatment (TURBO DNA-free Kit, Invitrogen) followed by cleanup using QIAGEN RNeasy columns.\n\ncDNA for RT-PCR experiments was synthesized using 300 ng of total RNA template, SuperScript III, and oligo(dT)12\u201318 primer, according to the manufacturer\u2019s protocol (Life Technologies). qRT-PCR reactions were performed in triplicate using the Applied Biosystems StepOnePlus Real-Time PCR system and Rotor-Gene SYBR Green PCR Kit (QIAGEN) and fold-change calculations were performed manually. A Student\u2019s t test was used to evaluate statistical signi\ufb01cance. Primers can be found in Supplementary file 1.\n\n### Chromatin immunoprecipitation (ChIP)\n\nSD1963{unc-119(ed3) III; rde-1(ne300) V;gaEx234[elt-2p::elt-2::GFP + unc-119(+)]} worms were grown on heat-killed OP50/NGM plates and harvested. The ChIP was carried out as described in (Mukhopadhyay et al., 2008).\n\nPrimers can be found in Supplementary file 1.\n\n### Apical protein localization in the intestine\n\nThe ERM-1::GFP (G\u00f6bel et al., 2004) or VHA-6::mCherry transgenic adults were bleached and eggs were collected and seeded onto indicated plates (HK-OP50, HK-OP50+VB2 or live OP50) and grown for 3 days. The apical protein localization (ERM-1::GFP or VHA-6::mCherry) was carried out according to the published method (Zhu et al., 2015).\n\n### Autophagy assay\n\nDA2123 animals carrying an integrated GFP::LGG-1 translational fusion gene (Kang et al., 2007), were used to quantify levels of autophagy. The DA2123 adults animals were bleached and the resulting eggs were placed on the indicated food condition (HK-OP50, HK-OP50+VB2 or live OP50). After 3 days, the animals at the equivalent stage were mounted on a 2% agar pad with a drop of M9 (plus 25 nM NaN3). Fluorescence images were captured by Nomarski microscopy. GFP-positive puncta were counted in 2\u201310 seam cells from approximately 50 animals in three independent experiments.\n\n### ATP measurement\n\nATP level from worms was carried out as described (Sagi and Kim, 2012). In brief, worms grown on HK-OP50 or HK-OP50+VB2 for 3 days were collected, washed four times with M9, suspended in lysis buffer (10 mM Tris-HCl ph8.0, 25 mM NaCl, 1 mM EDTA, 1 X protease inhibitor), boiled for 20 min and quickly frozen in \u221280\u00b0C. All samples were processed on the same day. A Luminescent ATP Detection Assay Kit (Abcam) was used to measure ATP concentrations according to the manufacturer\u2019s instructions. ATP concentrations were normalized to absolute protein concentrations. Each assay was repeated in triplicate, and the average ATP concentration and SD were calculated.\n\n### RNAi treatments\n\nTo analyze the effect of RNAi on growth and protease activity of worms fed HK-OP50, eggs from worms grown on OP50 were collected by bleaching, washed three times in M9 buffer, and then allowed to hatch in M9 buffer for 18 hr. The synchronized L1 worms were then transferred onto plates seeded with bacteria expressing double-stranded RNA of individual genes. After the worms grew to adults on the RNAi plate, eggs were collected again by bleaching, washed three times in M9 buffer, then seeded onto assay plates with the food to be tested. To measure larval growth, worms grew for 7days before scoring. For the in vivo protease activity assay, worms grew for 3 days before scoring.\n\nTo screen for transcription factors that are involved in regulating protease activity in response to changes in feeding conditions by RNAi, synchronized L1 worms were transferred onto plates seeded with bacteria expressing double-stranded RNA of individual genes. The protease activity in the intestinal tract of L1-L2 worms of the next generation was measured as described above.\n\nTo assay the effect of over-expressing asp-13 and asp-14 in worms treated with elt-2(RNAi), L4 stage wild type and asp-13/asp-14 O/E worms were transferred onto plates seeded with elt-2(RNAi). Phenotypes were scored for the next generation.\n\nFor intestine-specific RNAi of asp-13 and asp-14, the strain VP303 {rde-1(ne219) V; [nhx-2p::rde-1 + rol-6(su1006)]} (Espelt et al., 2005) was used.\n\nTo assay the ATP level, synchronized L1 worms were transferred onto plates seeded with bacteria expressing double-stranded RNA of individual genes. The ATP level in L4 worms was measured as described above.\n\n### HPLC-based analysis of flavins\n\nAnalysis of flavins from worms was carried out as described (Liuzzi et al., 2012). In brief, worms were harvested, washed in M9 buffer, suspended in lysis buffer (10 mM Tris-HCl PH8.0, 25 mM NaCl, 1 mM EDTA, 1 X protease inhibitor) and lysed by sonication. The lysate was centrifuged at 13 000 g for 1 min. Vitamin B2, FMN, and FAD content of the supernatant were analyzed by a Shimadzu Prominence modular HPLC system using a Supelcosil LC-18-THPLC column (25 cm\u00a0\u00d74.6 mm, 5 \u00b5m particle size) (Sigma-Aldrich) following the manufacturer\u2019s instructions and detected by an inline UV/Vis detector (SPD-10A, Shimadzu). The identity of each flavin peak was determined by a retention time comparison with the relative flavin standards (Sigma-Aldrich).\n\n### Western blot\n\nTo measure ELT-2 protein level, second generation of daf-15 RNAi-treated worms (L3 larvae arrested) or worms fed different food were analyzed by standard Western blot methods, and probed with anti-ELT-2 monoclonal antibody 455-2A4 (Wiesenfahrt et al., 2016) (Developmental Studies Hybridoma Bank, University of Iowa) and anti-Actin (Sigma-A2066) as a loading control.\n\n### Microscopy\n\nAnalysis of fluorescent reporter expression and gonad phenotypes were performed under Nomarski optics on a Zeiss Axioplan2 microscope with a Zeiss AxioCam MRm CCD camera. Plate phenotypes were observed using a Leica MZ16F dissecting microscope with a Hamamatsu C4742-95 CCD camera.\n\n### Statistical analysis\n\nAll statistical analyses (except quantification of the VHA-6::mCherry fluorescent signal) were performed using Student\u2019s t-test and p<0.05 was considered a significant difference. Statistical analyses of the VHA-6:mCherry fluorescent signal was performed using the \u03c7 two test.\n",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "b67de138-8fcc-4e0e-9158-a2f0722e514e",
+      "submission_id": "d1d87e62-f892-4930-8aea-38234a9ac87b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Oliver Hobert, Howard Hughes Medical Institute, Columbia University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.26243.023](https://doi.org/10.7554/eLife.26243.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A vitamin B2 sensing mechanism that regulates gut protease activity to impact animal's food behavior and growth\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Sean Morrison as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThis is a very interesting paper that describes responses to deficiency in a critical micronutrient (Vitamin B2) in C. elegans. The authors show that the failure of C. elegans to develop on heat-killed food derives in large part from VB2 deficiency, which impairs activity of critical metabolic pathways, leading to decreased ATP production, reduced TORC1 activity, reduced expression of key intestinal digestive proteases, and increased foraging. The findings are quite novel, and will be of wide interest in the nutrition, metabolism, and TOR fields. The data are of high quality and the conclusions seem to be generally solid, but some additional points need to be addressed:\n\n1) It is difficult to understand how worms could grow in the absence of vitamin B2, even if the asp13/14 proteases were activated by downstream intervention. Isn't VB2 required for essential biochemical reactions? Are the worms able to liberate sequestered VB2 via protease activity, or to activate a cryptic VB2 biosynthetic pathway? This seems like an issue that should be addressed (see comments 5 and 6, below). Alternatively, it's possible that the \"rescued\" worms only grow a little bit, but we can't tell because we are never told the size of the gonad in an adult. More on this below (specific comments #4, 5, 7).\n\n2) How do the authors know that sensory neurons are not involved? There is precedent for sensory neuron activity affecting intestinal biology.\n\n3) The authors say: \"Further tests suggested that direct interaction with the live bacteria may be necessary for the worms to receive the benefit (Figure 1\u2014figure supplement 1B).\" They show that the rescuing substance (VB2) is not volatile, but they don't show that direct contact with live bacteria is required. Conversely, it's not clear to me why, in the same section, they say that the micronutrients were provided \"likely through secretion\". In fact, the two sentences seem to contradict one another.\n\n4) The authors say, in the first paragraph of the subsection \u201cProteases ASP-13 and ASP-14 and GATA factor ELT-2 play critical roles in VB2-promoted protease activity and food usability\u201d, that asp-13/14 OE improved larval growth, but in Figure 3C they show only gonad length. How large is the adult gonad? How far in development do the experimental animals progress? This is a very important issue that needs to be addressed. Some clear analyses of rescue/larval staging should be performed.\n\n5) In the last paragraph of the subsection \u201cProteases ASP-13 and ASP-14 and GATA factor ELT-2 play critical roles in VB2-promoted protease activity and food usability\u201d, the effect of elt-2 OE: Again, how large is the adult gonad? How far in development do the \"rescued\" worms progress?\n\n6) Is the rescue by V2B and FAD/FMN more effective than rescue by the protease and elt-2 OE (perhaps because the vitamin cofactor is provided)? Figure 5C.\n\n7) Does increasing TORC1 activity restore VB2, FAD and/or FMN levels in HK-OP50? I suspect not, but this seems like an important experiment, since growth is improved. (How can growth be improved without Vitamin B2? Same question.)\n\n8) The results are described in terms of a pathway, but in essence the authors show that the catastrophic nutritional results of VB2 deficiency result in ATP deficiency that impairs TORC1 function and downstream events. The only compensatory feedback mechanism (which would be expected of a \"sensing pathway\") described is the foraging behavior. Is reduction in TORC1 activity or protease expression sufficient to lead to food-seeking behavior? The \"pathway\" terminology is technically correct but the simpler idea of an effect/response resulting from catastrophic nutritional failure may be more accurate.\n\n9) Why was the ubiquitously-expressed rpl-28 promoter used for protease expression, when conclusions are made about the intestine? Is intestinal expression sufficient?\n",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f8f8b99a-cf65-40a6-8605-1a5977a117d3",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C1",
+      "claim": "When fed live E. coli strain OP50, all hatched C. elegans larvae develop to adults within 3 days at 20\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "When fed live E. coli strain OP50, a standard laboratory food for C. elegans, all hatched larvae develop to adults within 3 days at 20\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental results described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "a67ab0c3-d362-4051-a10a-2268a16375ce",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C2",
+      "claim": "Worms fed heat-killed OP50 (HK-OP50) arrested development at early larval stages (L1-L2) and failed to consume the bacterial lawn.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when worms were fed OP50 that was killed by heat treatment (75\u00b0C for 90 min; HK-OP50 hereafter), they arrested development at early larval stages (L1-L2) and failed to consume the bacterial lawn (Figure 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1A, including microscope images and bar graphs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "ea86b0d2-c54e-43b3-b6fa-1f7d87e348c1",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C3",
+      "claim": "Heat-killed bacteria lack certain nutrients or molecules required for C. elegans larval growth.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when worms were fed OP50 that was killed by heat treatment (75\u00b0C for 90 min; HK-OP50 hereafter), they arrested development at early larval stages (L1-L2) and failed to consume the bacterial lawn (Figure 1A), suggesting that the heat-killed bacteria lacked certain nutrients or molecules required for larval growth",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed developmental arrest and lack of food consumption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "85c82c76-ca61-4a0a-8079-ba833d2c0e45",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C4",
+      "claim": "E. coli contains heat-labile nutrients required for C. elegans normal growth and longevity.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that the heat-killed bacteria lacked certain nutrients or molecules required for larval growth, which is consistent with published observation suggesting that E. coli contains heat-labile nutrients required for C.elegans normal growth and longevity (Lenaerts et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "9ab362f4-3e68-4fd1-b84f-fe57d83de0ae",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C5",
+      "claim": "Wild-type worms demonstrated a strong discrimination against HK-OP50 in food dwelling and food choice assays.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed two behavior assays to assess food dwelling and food choice (Brandt and Ringstad, 2015; Fujiwara et al., 2002; Kniazeva et al., 2015; Melo and Ruvkun, 2012; Shtonda and Avery, 2006). The results demonstrated a strong discrimination against HK-OP50 by wild-type worms (Figure 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from behavioral assays shown in Figures 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "93b12578-ccf3-40d9-81c6-7f86e630d987",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C6",
+      "claim": "In the food choice assay, live OP50 lawn was favored until it was consumed at day 4, when most worms then moved to the HK-OP50 and consumed that lawn.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in the food choice assay, the live OP50 lawn was favored until it was consumed at day 4, when most worms then moved to the HK-OP50 and consumed that lawn (Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the food choice assay data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "d697e6c4-13af-4723-8070-0319e8e0b7a4",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C7",
+      "claim": "Worms eat heat-killed bacteria if they have first obtained some benefit from live bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in the food choice assay, the live OP50 lawn was favored until it was consumed at day 4, when most worms then moved to the HK-OP50 and consumed that lawn (Figure 1C), suggesting that worms eat heat-killed bacteria if they have first obtained some benefit from live bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed behavior in the food choice assay.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "fd45cb0e-f7ef-420b-b6f6-eddbe01968ae",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C8",
+      "claim": "When live-OP50 was added to worms grown on HK-OP50 plate for 30 days, they recovered to adults with viable progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, when live-OP50 was added to worms grown on HK-OP50 plate for 30 days, they recovered to adults with viable progeny (Figure 1\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental results shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "f51ce3c0-6009-446e-907e-c29bcbf68300",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C9",
+      "claim": "Nutrient deficiency in HK-OP50 induced a protective response from the worms similar to starvation response.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, when live-OP50 was added to worms grown on HK-OP50 plate for 30 days, they recovered to adults with viable progeny (Figure 1\u2014figure supplement 1A), suggesting nutrient deficiency in HK-OP50 induced a protective response from the worms similar to starvation response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that worms can recover after prolonged exposure to HK-OP50.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "4fd2f9ee-ea46-4605-a60a-4fe335ff28ec",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C10",
+      "claim": "When eggs were placed on HK-OP50 lawn containing a tiny amount of live Staphylococcus saprophyticus (SS), the hatched worms were able to consume HK-OP50 and grow.",
+      "claim_type": "EXPLICIT",
+      "source": "When eggs were placed on HK-OP50 lawn containing a tiny amount of live SS, the hatched worms were able to consume HK-OP50 and grow, suggesting that the live bacteria provided micronutrients that rendered the heat-killed bacteria edible (Figure 1D and Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental results shown in Figure 1D and Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "5ae42d5d-eb23-46d7-b4e0-74b9ce5aa4ce",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C11",
+      "claim": "Live bacteria provided micronutrients that rendered the heat-killed bacteria edible.",
+      "claim_type": "EXPLICIT",
+      "source": "When eggs were placed on HK-OP50 lawn containing a tiny amount of live SS, the hatched worms were able to consume HK-OP50 and grow, suggesting that the live bacteria provided micronutrients that rendered the heat-killed bacteria edible (Figure 1D and Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that a small amount of live bacteria enables worms to consume HK-OP50.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "91b3045d-cf2b-4c76-84f0-1c8827d55d6e",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C12",
+      "claim": "The potential components from live bacteria did not reach the worms through odorants.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional tests indicated that such potential components did not reach the worms through odorants and suggested that worms likely obtain the benefit from the small amount live bacteria through ingestion (Figure 1\u2014figure supplement 1C; Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "d5b1215c-cb24-4070-9f3c-a66324269788",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C13",
+      "claim": "Worms likely obtain the benefit from the small amount of live bacteria through ingestion.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional tests indicated that such potential components did not reach the worms through odorants and suggested that worms likely obtain the benefit from the small amount live bacteria through ingestion (Figure 1\u2014figure supplement 1C; Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "72ecfcd6-ffc8-451d-822b-310804912aa7",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C14",
+      "claim": "The trace amount of live bacteria, ingested by the worms, stayed in the intestine and continuously secreted micronutrients into the gut tract, similar to microbes in mammalian gut.",
+      "claim_type": "EXPLICIT",
+      "source": "These data led to a speculative model that the trace amount of live bacteria, ingested by the worms, stayed in the intestine and continuously secreted micronutrients into the gut tract, which is similar to microbes in mammalian gut.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a speculative model based on the experimental observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "0dc275cd-1b83-4153-afcc-08aaccec7a97",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C15",
+      "claim": "Vitamin B2 (VB2) supplementation partially but significantly recovered larval growth as indicated by increased gonad length at day 7.",
+      "claim_type": "EXPLICIT",
+      "source": "Among micronutrients tested, we found that vitamin B2 (VB2) supplementation partially but significantly recovered larval growth as indicated by increased gonad length at day 7, which indicated the increased usage of the food (Figure 2A and Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "d480c53c-ff8c-47d9-901a-587d6aa5944e",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C16",
+      "claim": "VB2 supplementation does not completely compensate for the undefined deficiencies of heat-killed bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "These animals fed VB2 supplemented food still grew very slowly, reaching mid to late larval stages based on gonad length and vulval development compared to that of well-fed worms, but never reach adulthood by day 7 (Figure 2\u2014figure supplement 1B,C). This slow growth indicated that VB2 supplementation does not completely compensate for the undefined deficiencies of heat-killed bacteria",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that worms fed VB2-supplemented HK-OP50 still grow slowly.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "84a85b14-5e83-46d1-b145-aae927f00765",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C17",
+      "claim": "Multiple essential nutrients are lacking in heat-killed bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "This slow growth indicated that VB2 supplementation does not completely compensate for the undefined deficiencies of heat-killed bacteria, which suggested that multiple essential nutrients are lacking in heat-killed bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the incomplete recovery of growth with VB2 supplementation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "3fcb7016-1f9a-4f72-992a-854ed662075f",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C18",
+      "claim": "VB2 may play a critical role in a food-quality evaluation pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the prominent increase in growth suggested that VB2 may play a critical role in a food-quality evaluation pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the significant effect of VB2 supplementation on growth.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "801c897c-c75b-40f7-a18c-773a66377364",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C19",
+      "claim": "VB2 supplementation increased the preference for heat-killed bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Our behavior assays showed that VB2 supplementation increased the preference for heat-killed bacteria (Figure 2B and Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from behavior assays shown in Figure 2B and Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "08e24bd6-944d-4f4f-819c-8d6b3c6d61ec",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C20",
+      "claim": "The VB2 level was drastically reduced in worms fed HK-OP50, compared to worms fed live OP50.",
+      "claim_type": "EXPLICIT",
+      "source": "Using HPLC-UV (Howe et al., 2015), we found the VB2 level was drastically reduced in worms fed HK-OP50, compared to worms fed live OP50, and the level was mostly recovered by VB2 supplementation (Figure 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HPLC-UV analysis data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "844fbab6-613f-42ab-b8eb-f0b94e762bf3",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C21",
+      "claim": "VB2 level in worms fed HK-OP50 was mostly recovered by VB2 supplementation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using HPLC-UV (Howe et al., 2015), we found the VB2 level was drastically reduced in worms fed HK-OP50, compared to worms fed live OP50, and the level was mostly recovered by VB2 supplementation (Figure 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HPLC-UV analysis data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "ef46cec4-3eaf-4348-a07d-141f865a6708",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C22",
+      "claim": "VB2 was very low in heat-killed bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Using HPLC-UV (Howe et al., 2015), we found the VB2 level was drastically reduced in worms fed HK-OP50, compared to worms fed live OP50, and the level was mostly recovered by VB2 supplementation (Figure 2C), suggesting VB2 was very low in heat-killed bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the reduced VB2 levels in worms fed HK-OP50.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "25bb48d6-ed9a-456c-880e-31a284f30c32",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C23",
+      "claim": "VB2 level is low in heat-killed OP50.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm this, we measured the VB2 level in bacteria and found that VB2 level is low in heat-killed OP50 (Figure 2\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by direct measurement of VB2 in bacteria shown in Figure 2\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "215cf182-e736-4275-a059-bcfb87f2ef3d",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C24",
+      "claim": "Larval growth was enhanced only by protease-treated HK-OP50.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand how VB2 affects food uptake in worms, we tested the role of the digestive system by feeding worms with HK-OP50 culture pre-treated with exogenous digestive enzymes. We found that larval growth was enhanced only by protease-treated HK-OP50 (Figure 2D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "43f4d70d-bbef-451d-a6fd-d627f1279ee3",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C25",
+      "claim": "Exogenous protein digestion improved usability of the heat-killed bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that larval growth was enhanced only by protease-treated HK-OP50 (Figure 2D), indicating that exogenous protein digestion improved usability of the heat-killed bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that protease treatment enhances growth.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "0c17ce8b-aa4e-440e-938c-c4a58fc0720b",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C26",
+      "claim": "HK-OP50 supplemented with a protease inhibitor cocktail (PIC) eliminated the beneficial effect of VB2 supplementation.",
+      "claim_type": "EXPLICIT",
+      "source": "We then observed that HK-OP50 supplemented with a protease inhibitor cocktail (PIC) eliminated the beneficial effect of VB2 supplementation (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "37e81365-41f0-4e60-bdf1-d440b0873f8f",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C27",
+      "claim": "Worms fed HK-OP50 have reduced protease activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that worms fed HK-OP50 have reduced protease activity, and that the benefit of VB2 supplementation is dependent on endogenous proteases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the enzyme treatment and protease inhibitor experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "8d2cf841-1992-448f-89c1-955a95a067a3",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C28",
+      "claim": "The benefit of VB2 supplementation is dependent on endogenous proteases.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that worms fed HK-OP50 have reduced protease activity, and that the benefit of VB2 supplementation is dependent on endogenous proteases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the protease inhibitor experiment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "89c551e9-3d0f-47be-8900-3d0e15073218",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C29",
+      "claim": "The protease activity was drastically reduced in worms fed HK-OP50, compared to worms fed live OP50.",
+      "claim_type": "EXPLICIT",
+      "source": "We then used a protease detection assay (Hama et al., 2009; Semova et al., 2012) to directly examine the in vivo protease activity in the intestinal tract (Figure 2\u2014figure supplement 2D and E). We found that the protease activity was drastically reduced in worms fed HK-OP50, compared to worms fed live OP50, and VB2 supplementation partially recovered the protease activity (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vivo protease activity assay data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "c2973ad4-6de6-4ae1-856d-9edcfc94faa4",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C30",
+      "claim": "VB2 supplementation partially recovered the protease activity in worms fed HK-OP50.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the protease activity was drastically reduced in worms fed HK-OP50, compared to worms fed live OP50, and VB2 supplementation partially recovered the protease activity (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vivo protease activity assay data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "dc01681a-5f6d-44ca-926e-a9819b829fb6",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C31",
+      "claim": "Worms down-regulate digestive enzymes in response to VB2 deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data support that worms down-regulate digestive enzymes in response to VB2 deficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined experimental results on protease activity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "acec16b2-82b6-49bb-9a59-bb655d4f9e9f",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C32",
+      "claim": "The mRNA levels of asp-13, asp-14, cpr-1 and cpr-4 were dramatically increased in worms fed HK-OP50+VB2 compared to that in worms fed HK-OP50.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify the proteases regulated by VB2, we examined the mRNA levels of 27 intestine-enriched, protease genes (McGhee et al., 2007). qRT-PCR analysis showed that the mRNA levels of four genes, asp-13, asp-14, cpr-1 and cpr-4, were dramatically increased in worms fed HK-OP50+VB2 compared to that in worms fed HK-OP50 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR analysis data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "b52e32a0-e5d4-403f-bb3c-eca47f4e3b27",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C33",
+      "claim": "Among asp-13, asp-14, cpr-1 and cpr-4, asp-13 and asp-14 were also highly expressed in worms fed on live bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these four genes, asp-13 and asp-14 were also highly expressed in worms fed on live bacteria (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR analysis data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "55199361-6230-43a3-ac39-d312b1e6f5d4",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C34",
+      "claim": "Knocking down both asp-13 and asp-14 resulted in a strong suppression of the effect of VB2 supplementation.",
+      "claim_type": "EXPLICIT",
+      "source": "We then found that knocking down both asp-13 and asp-14 resulted in a strong suppression of the effect of VB2 supplementation (Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNAi experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "71779f07-30ac-46ee-8e61-063b92998262",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C35",
+      "claim": "ASP-13 and ASP-14 are essential for the VB2 effect.",
+      "claim_type": "EXPLICIT",
+      "source": "We then found that knocking down both asp-13 and asp-14 resulted in a strong suppression of the effect of VB2 supplementation (Figure 3B), suggesting that these enzymes are essential for the VB2 effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the RNAi knockdown experiment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "d9e3e42e-4921-4bc9-a0d6-2e132410d162",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C36",
+      "claim": "Over-expression of both asp-13 and asp-14 behind a ubiquitously expressed rpl-28 promoter significantly improved the food uptake and dwelling behavior of worms fed HK-OP50.",
+      "claim_type": "EXPLICIT",
+      "source": "Over-expression of both asp-13 and asp-14 behind a ubiquitously expressed rpl-28 promoter (termed asp-13/14 OE) (Zhang et al., 2009) significantly improved the food uptake and dwelling behavior of worms fed HK-OP50, as determined by the gonad length, food choice and seeking assays (Figure 3C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 3C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "11707d7e-a928-4a4d-af89-d7586b15e300",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C37",
+      "claim": "Intestinal-specific RNAi of asp-13/14 prevents the rescue effect of VB2 supplementation on worms fed HK-food.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, intestinal-specific RNAi of asp-13/14 prevents the rescue effect of VB2 supplementation on worms fed HK-food (Figure 3\u2014figure supplement 1A and B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by intestinal-specific RNAi experimental data shown in Figure 3\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "1af6c6db-d278-47c9-8920-66b8554f1bca",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C38",
+      "claim": "Intestinal function of ASP-13 and ASP14 are essential for the VB2 effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, intestinal-specific RNAi of asp-13/14 prevents the rescue effect of VB2 supplementation on worms fed HK-food (Figure 3\u2014figure supplement 1A and B), suggesting that intestinal function of ASP-13 and ASP14 are essential for the VB2 effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the intestinal-specific RNAi experiment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "eaf24e8c-2741-4fa6-ae1f-7c095a5a0a11",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C39",
+      "claim": "asp-13/14 is highly expressed in the intestine.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the previous finding that asp-13/14 is highly expressed in the intestine (McGhee et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "ff2a1ccc-b657-4677-a0d9-876c7138632b",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C40",
+      "claim": "ASP-13 and ASP-14 play a critical role in the VB2-induced increase in protease activity and uptake of heat-killed bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "These data strongly support a critical role of ASP-13 and ASP-14 in the VB2-induced increase in protease activity and uptake of heat-killed bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined experimental results on asp-13 and asp-14.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "87254f47-ffbe-415b-923b-b003da4b9cad",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C41",
+      "claim": "The protease activity was most dramatically decreased in worms treated with elt-2(RNAi).",
+      "claim_type": "EXPLICIT",
+      "source": "To identify transcription factors that regulate the expression of intestinal protease genes in response to VB2 supplementation, we combined RNAi with the protease assay to screen 18 transcription factors previously shown to be enriched in the intestine (McGhee et al., 2007) (Figure 3\u2014figure supplement 2A). The protease activity was most dramatically decreased in worms treated with elt-2(RNAi) (Figure 3F and Figure 3\u2014figure supplement 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNAi screen data shown in Figure 3F and Figure 3\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "7b2bd5c6-1b2b-4aec-998d-25d6071cb4b8",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C42",
+      "claim": "elt-2(RNAi) decreases the expression of ~50% of known protease genes, including asp-13 and asp-14.",
+      "claim_type": "EXPLICIT",
+      "source": "The protease activity was most dramatically decreased in worms treated with elt-2(RNAi) (Figure 3F and Figure 3\u2014figure supplement 2A), which is consistent with the recent report that elt-2(RNAi) decreases the expression of ~50% of known protease genes, including asp-13 and asp-14 (Mann et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a recent published report.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "8fc3e058-bb92-49ad-a0ac-7ca6b2eaef3a",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C43",
+      "claim": "The ELT-2::GFP signal was decreased in worms fed HK-OP50 and the reduction was mostly recovered by VB2 supplementation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an integrated, translational ELT-2::GFP reporter strain which is in a glo-4 mutant background to reduce auto fluorescence (Mann et al., 2016), we found that the ELT-2::GFP signal was decreased in worms fed HK-OP50 and the reduction was mostly recovered by VB2 supplementation (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence imaging data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "e5cd5159-2608-416c-87e7-f9600b1fa9ce",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C44",
+      "claim": "Decreased ELT-2 on heat-killed food was recovered by VB2 supplementation in wild-type worm.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that decreased ELT-2 on heat-killed food was recovered by VB2 supplementation in wild-type worm (Figure 3G, Western blot)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "14a3b00e-c390-4564-9583-1e37ae2b2d2a",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C45",
+      "claim": "ELT-2 expression responds to changes in nutrient status.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that decreased ELT-2 on heat-killed food was recovered by VB2 supplementation in wild-type worm (Figure 3G, Western blot), supporting that ELT-2 expression responds to changes in nutrient status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed changes in ELT-2 expression under different feeding conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "1948a4b0-f24f-430f-b591-ad46beaaabab",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C46",
+      "claim": "Over-expression of ELT-2 significantly increased both larval growth measured by gonad length and protease activity in worms fed HK-OP50.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an established ELT-2 over-expression [elt-2 (OE)] strain (Mann et al., 2016), we found that over-expression of ELT-2 significantly increased both larval growth measured by gonad length and protease activity in worms fed HK-OP50, eliminated the preference for HK-OP50+VB2 over HK-OP50 in the food choice assay, and increased the expression of asp-13 and asp-14 (Figure 3H and I; Figure 3\u2014figure supplement 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 3H, 3I, and Figure 3\u2014figure supplement 2B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "f437970e-c0a2-4d9f-bc93-db1a4f24ace4",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C47",
+      "claim": "Over-expression of ELT-2 eliminated the preference for HK-OP50+VB2 over HK-OP50 in the food choice assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an established ELT-2 over-expression [elt-2 (OE)] strain (Mann et al., 2016), we found that over-expression of ELT-2 significantly increased both larval growth measured by gonad length and protease activity in worms fed HK-OP50, eliminated the preference for HK-OP50+VB2 over HK-OP50 in the food choice assay, and increased the expression of asp-13 and asp-14 (Figure 3H and I; Figure 3\u2014figure supplement 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by food choice assay data shown in Figure 3\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "3cc3b626-7f70-49f8-a4ee-3d2eb9ce0566",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C48",
+      "claim": "Over-expression of ELT-2 increased the expression of asp-13 and asp-14.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an established ELT-2 over-expression [elt-2 (OE)] strain (Mann et al., 2016), we found that over-expression of ELT-2 significantly increased both larval growth measured by gonad length and protease activity in worms fed HK-OP50, eliminated the preference for HK-OP50+VB2 over HK-OP50 in the food choice assay, and increased the expression of asp-13 and asp-14 (Figure 3H and I; Figure 3\u2014figure supplement 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 3\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "1c319cca-53b3-4716-a052-22d26cc8ca52",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C49",
+      "claim": "Increased expression of elt-2 is both necessary and sufficient for the impact of VB2 on protease expression and food usability.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, increased expression of elt-2 is both necessary and sufficient for the impact of VB2 on protease expression and food usability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined experimental results on ELT-2.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "e4368f6b-d0c4-4b47-a88f-da4cc935b801",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C50",
+      "claim": "Down-regulating asp-13 and asp-14 by a low ELT-2 level critically contributes to the poor food usage in worms fed HK-OP50.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional tests supported the hypothesis that down-regulating asp-13 and asp-14 by a low ELT-2 level critically contributes to the poor food usage in worms fed HK-OP50 (Figure 3\u2014figure supplement 2D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 2D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "00e6cebd-cd43-4bd1-b659-87ac594b7027",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C51",
+      "claim": "Pretreatment with RNAi targeting either daf-15/raptor or ragc-1 essentially eliminated the effect of VB2 supplementation on protease activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We first tested if TORC1 is required for VB2-induced activation of digestive enzymes in worms fed heat-killed bacteria. We found that pretreatment with RNAi targeting either daf-15/raptor or ragc-1, encoding two key TORC1 components (Jia et al., 2004; Long et al., 2002; Robida-Stubbs et al., 2012), essentially eliminated the effect of VB2 supplementation on protease activity (Figure 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNAi experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "04e7ec75-82f2-4703-aca8-9c97ec80ff3c",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C52",
+      "claim": "VB2 induction of protease activity is TORC1 dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that pretreatment with RNAi targeting either daf-15/raptor or ragc-1, encoding two key TORC1 components (Jia et al., 2004; Long et al., 2002; Robida-Stubbs et al., 2012), essentially eliminated the effect of VB2 supplementation on protease activity (Figure 4A), indicating that VB2 induction of protease activity is TORC1 dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the RNAi experiment targeting TORC1 components.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "aeca9fd9-0ea4-41b8-96ea-1b480e0a09fa",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C53",
+      "claim": "Protease activity is not all reduced in arrested larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "To address that lower TORC1 activity on protease activity derive does not simply from slowing or arresting development, we tested the protease activity of several arrested larvae (RNAi treatment). Figure 4\u2014figure supplement 1 shows that protease activity is not all reduced in arrested larvae",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "bfa6b8fa-7d51-4160-95c2-89d056c8b4a0",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C54",
+      "claim": "Lower TORC1 activity on protease activity is unlikely to be from generally slowing or arresting development.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4\u2014figure supplement 1 shows that protease activity is not all reduced in arrested larvae, which indicate that lower TORC1 activity on protease activity (Figure 4A) is unlikely to be from generally slowing or arresting development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that protease activity is not uniformly reduced in arrested larvae.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "d399372c-742a-4e05-a8e1-2704e568a8cd",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C55",
+      "claim": "Worms fed HK-OP50 displayed a high level of LGG-1::GFP puncta in seam cells compared to that in worms fed live OP50.",
+      "claim_type": "EXPLICIT",
+      "source": "We then measured TORC1 activity by utilizing an established autophagy marker (LGG-1::GFP puncta) known to be repressed by TORC1 (Robida-Stubbs et al., 2012). We found that worms fed HK-OP50 displayed a high level of LGG-1::GFP puncta in seam cells compared to that in worms fed live OP50, and this increase was suppressed by VB2 supplementation (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by autophagy marker data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "1da5f0af-ff68-4d38-a268-5adaa1444007",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C56",
+      "claim": "The increase in LGG-1::GFP puncta in worms fed HK-OP50 was suppressed by VB2 supplementation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that worms fed HK-OP50 displayed a high level of LGG-1::GFP puncta in seam cells compared to that in worms fed live OP50, and this increase was suppressed by VB2 supplementation (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by autophagy marker data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "5f8a7edc-2f03-4ab0-8219-6c08a9c5dfba",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C57",
+      "claim": "The elevated LGG-1::GFP puncta level in worms fed HK-OP50 was suppressed by hyperactivation of TORC1 in a nprl-3 loss-of-function (lf) mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "To support that the observed change in the LGG-1::GFP puncta level under our testing conditions reflects a specific change in TORC1 activity, we showed that the elevated LGG-1::GFP puncta level in worms fed HK-OP50 was suppressed by hyperactivation of TORC1 in a nprl-3 loss-of-function (lf) mutant (Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "fc6e4428-9667-4938-9034-b1e0505e2243",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C58",
+      "claim": "NPRL-3 is a negative regulator of TORC1 in both worms and mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "NPRL-3 is a negative regulator of TORC1 in both worms and mammalian cells (Bar-Peled et al., 2013; Zhu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "064d4c87-a2d0-42da-ba83-e5132c4af03a",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C59",
+      "claim": "Inhibition of TORC1 activity by daf-15(RNAi) elevated the LGG-1::GFP puncta level in well-fed, young larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, inhibition of TORC1 activity by daf-15(RNAi) elevated the LGG-1::GFP puncta level in well-fed, young larvae (Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "0f785b6b-d267-4567-bddb-8b46a1eb7efb",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C60",
+      "claim": "Apical localization of VHA-6 was altered in worms fed HK-OP50 and this defect was suppressed by VB2 supplementation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, apical localization of VHA-6, which we previously showed contributes to intestinal TORC1 activation by a lipid biosynthesis pathway (Zhu et al., 2015), was altered in worms fed HK-OP50 and this defect was suppressed by VB2 supplementation (Figure 4\u2014figure supplement 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "9ffb712f-75ff-49d5-9b33-7973c0ce9d2a",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C61",
+      "claim": "TORC1 activity is decreased in worms fed heat-killed bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that TORC1 activity is decreased in worms fed heat-killed bacteria and that VB2 supplementation significantly recovers the activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined experimental results on TORC1 activity markers.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "93ca96dc-7f01-47ec-a134-594f124b115d",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C62",
+      "claim": "VB2 supplementation significantly recovers TORC1 activity in worms fed heat-killed bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that TORC1 activity is decreased in worms fed heat-killed bacteria and that VB2 supplementation significantly recovers the activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined experimental results on TORC1 activity markers.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "58f9cca8-ce92-413a-88cb-9a72b2058cff",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C63",
+      "claim": "TORC1 acts downstream of VB2.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained further evidence that TORC1 acts downstream of VB2 by showing that TORC1 activation is sufficient to mimic the effect of VB2 in boosting intestinal protease activity and food usage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results showing that TORC1 activation mimics VB2 effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "e12179d0-0d18-452c-8c67-03e5f1817e63",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C64",
+      "claim": "The nprl-3(lf) mutation significantly improved intestinal protease activity, the expression of asp-13 and asp-14, larval growth measured by gonad length and dwelling behavior of worms fed HK-OP50.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we found that the nprl-3(lf) mutation significantly improved intestinal protease activity, the expression of asp-13 and asp-14, larval growth measured by gonad length and dwelling behavior of worms fed HK-OP50 (Figure 4C\u2013G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 4C-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "c82a833d-d9b3-48d9-8274-acd19d6652e3",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C65",
+      "claim": "The rescue by nprl-3(lf) was not because VB2 level was recovered as VB2 level in nprl-3 (lf) mutants fed heat-killed food did not increase.",
+      "claim_type": "EXPLICIT",
+      "source": "however, this rescue was not because VB2 level was recovered as VB2 level in nprl-3 (lf) mutants fed heat-killed food did not increase (Figure 4\u2014figure supplement 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HPLC-UV analysis data shown in Figure 4\u2014figure supplement 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "c5c798cd-00ba-4820-947b-2c593b9106b7",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C66",
+      "claim": "Reducing TORC1 activity (daf-15 RNAi) led to defects in food choice.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, reducing TORC1 activity (daf-15 RNAi) led to defects in food choice (Figure 4\u2014figure supplement 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by food choice assay data shown in Figure 4\u2014figure supplement 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "79a30076-a868-466e-8a01-b2a010ba629e",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C67",
+      "claim": "daf-15(RNAi) treatment decreased the expression of the translational ELT-2::GFP reporter in the reporter strain and the endogenous ELT-2 protein in the wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, daf-15(RNAi) treatment decreased the expression of the translational ELT-2::GFP reporter in the reporter strain and the endogenous ELT-2 protein in the wild-type (Figure 4\u2014figure supplement 2G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence imaging and Western blot data shown in Figure 4\u2014figure supplement 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "25ffb296-d99b-4da9-b557-a45fcd6291b1",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C68",
+      "claim": "TORC1 mediates the effect of VB2 on the expression of proteases and the usage of heat-killed bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our data strongly support that TORC1 mediates the effect of VB2 on the expression of proteases and the usage of heat-killed bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined experimental results on TORC1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "d3ba0c69-522d-43fb-b1d0-015d1b5f596d",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C69",
+      "claim": "Vitamin B2, also known as riboflavin, is the precursor of flavin mononucleotide (FMN) and flavin adenine dinucleotide (FAD).",
+      "claim_type": "EXPLICIT",
+      "source": "Vitamin B2, also known as riboflavin, is the precursor of flavin mononucleotide (FMN) and flavin adenine dinucleotide (FAD) (Joosten and van Berkel, 2007; Lienhart et al., 2013; Powers, 2003) (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established scientific knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "7f0ae3c9-1757-4698-a2a0-3397112dbd53",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C70",
+      "claim": "Both FMN and FAD levels were decreased in worms fed HK-OP50 compared to worms fed live OP50.",
+      "claim_type": "EXPLICIT",
+      "source": "Using HPLC-UV analysis, we found that both FMN and FAD levels were decreased in worms fed HK-OP50 compared to worms fed live OP50, and their levels were partially restored by VB2 supplementation (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HPLC-UV analysis data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "be526cec-ba4c-4167-ab47-7b9c8b5d37d1",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C71",
+      "claim": "FMN and FAD levels were partially restored by VB2 supplementation in worms fed HK-OP50.",
+      "claim_type": "EXPLICIT",
+      "source": "Using HPLC-UV analysis, we found that both FMN and FAD levels were decreased in worms fed HK-OP50 compared to worms fed live OP50, and their levels were partially restored by VB2 supplementation (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HPLC-UV analysis data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "58e14598-ea75-422e-a760-cfdf3149028c",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C72",
+      "claim": "Lack of sufficient FAD and FMN likely contributes to the low quality of heat-killed bacteria as a food source.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, lack of sufficient FAD and FMN likely contributes to the low quality of heat-killed bacteria as a food source.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed decreases in FMN and FAD levels.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "02c5b014-85e7-4d6a-96d5-606d6881848c",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C73",
+      "claim": "FAD supplementation improved food uptake, intestinal protease activity and ELT-2 expression, as VB2 does.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if FAD also mediates the VB2 impact on TORC1 and protease production, we showed that FAD supplementation improved food uptake, intestinal protease activity and ELT-2 expression, as VB2 does (Figure 5C and D; Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 5C, 5D, and Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "4aac894c-af29-4272-b779-f40b5b62c744",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C74",
+      "claim": "The FAD benefit is TORC1 dependent, as pretreatment with RNAi targeting daf-15/raptor essentially eliminated the effect of FAD supplementation on protease activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the FAD benefit is also TORC1 dependent, as pretreatment with RNAi targeting daf-15/raptor essentially eliminated the effect of FAD supplementation on protease activity (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNAi experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "9a4c9487-0cf2-4f8b-9fd6-77316437dd5c",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C75",
+      "claim": "Protease activity was dramatically reduced in both flad-1(RNAi) and rft-2(RNAi) treated strains.",
+      "claim_type": "EXPLICIT",
+      "source": "We then further analyzed the functional relationship between FAD and TORC1 by decreasing FAD production through RNAi of a FAD synthetase gene (flad-1) and a riboflavin transporter gene (rft-2) (Biswas et al., 2013; Gandhimathi et al., 2015; Liuzzi et al., 2012) (Figure 5A). Protease activity was dramatically reduced in both RNAi-treated strains and the activity was recovered in nprl-3(lf) mutants (Figure 5E,F,H and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNAi experimental data shown in Figures 5E, 5F, 5H, and 5I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "66c35408-0481-472b-9686-142484fd1b93",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C76",
+      "claim": "Protease activity in flad-1(RNAi) and rft-2(RNAi) treated strains was recovered in nprl-3(lf) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Protease activity was dramatically reduced in both RNAi-treated strains and the activity was recovered in nprl-3(lf) mutants (Figure 5E,F,H and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 5E, 5F, 5H, and 5I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "bc54ab0f-6576-4735-a401-aa88a86abc2e",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C77",
+      "claim": "Both flad-1(RNAi) and rft-2(RNAi) significantly increased autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, both flad-1(RNAi) and rft-2(RNAi) significantly increased autophagy (Figure 5G and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by autophagy marker data shown in Figures 5G and 5J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "83aba6ac-cf2e-45f9-9a89-28ff129b0f2b",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C78",
+      "claim": "TORC1 acts downstream of FAD to promote protease activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These data support that TORC1 acts downstream of FAD to promote protease activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined experimental results on FAD and TORC1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "3b1707b7-cd7d-4115-a269-bbc26b1aef9c",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C79",
+      "claim": "FAD plays the key role in mediating VB2 effect on intestinal protease activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity of the data between flad-1 and rft-2 further supports that FAD plays the key role in mediating VB2 effect on intestinal protease activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the similarity of results between flad-1 and rft-2 RNAi.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "d45a5ae7-8357-4a3d-969c-e5174c26b9e0",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C80",
+      "claim": "FAD-associated proteins are involved in many metabolic events including fatty acid metabolism, the TCA cycle and electron transport chain.",
+      "claim_type": "EXPLICIT",
+      "source": "FAD-associated proteins are involved in many metabolic events including fatty acid metabolism, the TCA cycle and electron transport chain (Lienhart et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "d27d718b-01d9-490f-9531-c675ebebfda5",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C81",
+      "claim": "TORC1 is known to be an ATP sensor in mammals and C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Since many of these events are related to energy production, and TORC1 is known to be an ATP sensor in mammals and C. elegans (Chin et al., 2014; Dennis et al., 2001; Hay and Sonenberg, 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "98030191-4a51-450c-a247-cc84201c06fe",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C82",
+      "claim": "The ATP level was dramatically reduced in worms fed HK-OP50 compared to that in worms fed live OP50.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the ATP level was indeed dramatically reduced in worms fed HK-OP50 compared to that in worms fed live OP50, whereas VB2/FAD supplementation partially recovered the level (Figure 5K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ATP measurement data shown in Figure 5K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "c51f4843-61ab-46da-818e-80fd599b642a",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C83",
+      "claim": "VB2/FAD supplementation partially recovered the ATP level in worms fed HK-OP50.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the ATP level was indeed dramatically reduced in worms fed HK-OP50 compared to that in worms fed live OP50, whereas VB2/FAD supplementation partially recovered the level (Figure 5K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ATP measurement data shown in Figure 5K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "306f864e-537c-4e7d-8639-3644917f5d72",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C84",
+      "claim": "Reducing FAD production by flad-1(RNAi) in the first generation of wild-type worms reduced ATP and the reduction was eliminated by FAD supplementation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, reducing FAD production by flad-1(RNAi) in the first generation of wild-type worms also reduced ATP and the reduction was eliminated by FAD supplementation (Figure 5K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ATP measurement data shown in Figure 5K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "861ac25c-cb04-4c3e-97b6-41771e174f9b",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C85",
+      "claim": "The decreased ATP level is a major cellular consequence of VB2 deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the decreased ATP level is a major cellular consequence of VB2 deficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observed ATP level changes under VB2 deficiency.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "df4f13ee-e124-40ca-8c07-3acc9ea416bc",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C86",
+      "claim": "A modest reduction of ATP level was observed in the first generation of atp-2(RNAi)-treated animals.",
+      "claim_type": "EXPLICIT",
+      "source": "To provide further evidence that ATP reduction is causal to the reduction in TORC1 and protease activity, we used RNAi to partially inactivate atp-2/ATP5B that encodes an ATP synthetase known to affect ATP production in worms (Chin et al., 2014). We also observed a modest reduction of ATP level in the first generation of atp-2(RNAi)-treated animals and the reduction was not overcome by FAD supplementation (Figure 5K)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ATP measurement data shown in Figure 5K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "374df8ff-9d88-4856-b1a3-4e7a089b3a03",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C87",
+      "claim": "The ATP reduction in atp-2(RNAi)-treated animals was not overcome by FAD supplementation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a modest reduction of ATP level in the first generation of atp-2(RNAi)-treated animals and the reduction was not overcome by FAD supplementation (Figure 5K), consistent with atp-2 acting downstream of FAD regarding ATP production.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ATP measurement data shown in Figure 5K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "482a3ead-d9e7-4b50-b235-85622f992d72",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C88",
+      "claim": "atp-2 acts downstream of FAD regarding ATP production.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a modest reduction of ATP level in the first generation of atp-2(RNAi)-treated animals and the reduction was not overcome by FAD supplementation (Figure 5K), consistent with atp-2 acting downstream of FAD regarding ATP production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that FAD supplementation does not overcome ATP reduction in atp-2(RNAi) animals.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "74497d15-6678-492b-8726-14f051d6af3b",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C89",
+      "claim": "Intestinal protease activity was prominently decreased in the second generation of atp-2(RNAi)-treated animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, intestinal protease activity was prominently decreased in the second generation of atp-2(RNAi)-treated animals and the reduction was partially suppressed by nprl-3(lf) (Figure 5L and M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by protease activity assay data shown in Figures 5L and 5M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "914b04a1-6a3b-4324-a680-66c41af0db32",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C90",
+      "claim": "The reduction in protease activity in atp-2(RNAi)-treated animals was partially suppressed by nprl-3(lf).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, intestinal protease activity was prominently decreased in the second generation of atp-2(RNAi)-treated animals and the reduction was partially suppressed by nprl-3(lf) (Figure 5L and M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by protease activity assay data shown in Figures 5L and 5M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "752e2102-dcc4-4d8e-8572-988b8c857ed9",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C91",
+      "claim": "LGG-1::GFP puncta were increased in atp-2(RNAi) worms fed live OP50.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, LGG-1::GFP puncta were increased in atp-2(RNAi) worms fed live OP50 (Figure 5N), which is consistent with a previous observation in C. elegans (Chin et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by autophagy marker data shown in Figure 5N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "92a4275b-0fa0-48f2-abae-b7eaba8fd4bb",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C92",
+      "claim": "The ATP level change mediates the impact of VB2 on TORC1 and intestinal protease activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data support the hypothesis that the ATP level change mediates the impact of VB2 on TORC1 and intestinal protease activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined experimental results on ATP, TORC1, and protease activity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "45608849-5a32-49ec-a7ab-ce68047683e0",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C93",
+      "claim": "The study does not exclude potential impacts of other metabolic products from FAD-associated enzymes in the process.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data do not exclude potential impacts of other metabolic products from FAD-associated enzymes in the process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit acknowledgment of the limitations of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "ca3c12a0-db6b-49b5-9f98-64a24a3cf0e4",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C94",
+      "claim": "The study identified an intestinal food-quality evaluation mechanism by which animals detect vitamin B2 deficiency by the FAD-ATP-TORC1-ELT-2 pathway that dictates food uptake and foraging behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified an intestinal food-quality evaluation mechanism by which animals detect vitamin B2 deficiency by the FAD-ATP-TORC1-ELT-2 pathway that dictates food uptake and foraging behaviors (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main conclusion of the study, summarizing the identified pathway.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "5102c688-19fc-416e-af46-21dcd72fddf6",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C95",
+      "claim": "Such a mechanism with conserved functions enhances survival in wild environments by discriminating against low-quality food.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a mechanism with conserved functions enhances survival in wild environments by discriminating against low-quality food.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the evolutionary significance of the identified mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "e8b4cc16-88d1-47ec-a45f-7daef41dbe27",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C96",
+      "claim": "The intestinal process may be evolved specifically to detect the deficiency of specific nutrients such as vitamins that elude the neuronal sensory system.",
+      "claim_type": "EXPLICIT",
+      "source": "The intestinal process may be evolved specifically to detect the deficiency of specific nutrients such as vitamins that elude the neuronal sensory system that may be honed to detect the presence of major nutrients and toxins (Bargmann, 1997; Chandrashekar et al., 2006; Watson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the evolutionary role of the intestinal sensing mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "9591032f-0926-482b-ab7d-99ff4cd25953",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C97",
+      "claim": "Intestinal deficiencies in certain fatty acids and pyrimidine are also sensed by signaling systems in C. elegans to alter reproductive/developmental programs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to VB2, we have recently shown that intestinal deficiencies in certain fatty acids and pyrimidine are also sensed by signaling systems in C. elegans to alter reproductive/developmental programs (Chi et al., 2016; Kniazeva et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent published work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "0c35a833-ca10-4b6d-80b3-2c03896500ad",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C98",
+      "claim": "The protective response to nutrient deficiency by the intestine-initiated mechanism commonly includes regulation of developmental/reproductive programs, in addition to food behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "These examples also suggest that the protective response to nutrient deficiency by the intestine-initiated mechanism commonly includes regulation of developmental/reproductive programs, in addition to food behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the current study and previous work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "0b83b266-ca37-4b81-aaed-d8dc7300106c",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C99",
+      "claim": "VB2 deficiency likely affects the functions of a large number of flavoproteins involved in many essential cellular functions.",
+      "claim_type": "EXPLICIT",
+      "source": "VB2 deficiency likely affects the functions of a large number of flavoproteins involved in many essential cellular functions; the responses by TORC1, including protease regulation and developmental arrest, may be considered the last and emergent protective actions by the animal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the known role of VB2 in flavoprotein function.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "9aae05c1-a0bf-494e-995d-164c7125a0ca",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C100",
+      "claim": "The responses by TORC1, including protease regulation and developmental arrest, may be considered the last and emergent protective actions by the animal.",
+      "claim_type": "EXPLICIT",
+      "source": "VB2 deficiency likely affects the functions of a large number of flavoproteins involved in many essential cellular functions; the responses by TORC1, including protease regulation and developmental arrest, may be considered the last and emergent protective actions by the animal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the biological significance of the TORC1 response.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "f632a82f-d4a7-4cbe-baa5-309a31de064c",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C101",
+      "claim": "This study may be the first to connect TORC1 sensing to a specific micronutrient in a model organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our study may be the first to connect TORC1 sensing to a specific micronutrient in a model organism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "a3cb0787-22d1-475a-8862-88df6d1cb5d0",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C102",
+      "claim": "The versatility of TORC1 in responding to the deficiency of multiple nutritional/metabolic inputs suggests that the TORC1-protease pathway may be used to evaluate the levels of multiple essential nutrients in food sources.",
+      "claim_type": "EXPLICIT",
+      "source": "The versatility of TORC1 in responding to the deficiency of multiple nutritional/metabolic inputs suggests that the TORC1-protease pathway may be used to evaluate the levels of multiple essential nutrients in food sources, albeit that the evaluation process for other nutrients in the intestine remain to be demonstrated in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the broader implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "679c238d-17e7-4bbf-afc2-4e5856f653b9",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C103",
+      "claim": "This study may indicate the importance of live bacteria in providing micronutrients, such as VB2, to animals.",
+      "claim_type": "EXPLICIT",
+      "source": "This study may also indicate the importance of live bacteria in providing micronutrients, such as VB2, to animals and may thus be highly related to human health, as we obtain vitamins from gut microbes in addition to food sources (Albert et al., 1980; LeBlanc et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the broader implications of the findings for human health.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "1a4a05e1-9968-4db5-a395-12d6d9fff5a9",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C104",
+      "claim": "Humans obtain vitamins from gut microbes in addition to food sources.",
+      "claim_type": "EXPLICIT",
+      "source": "This study may also indicate the importance of live bacteria in providing micronutrients, such as VB2, to animals and may thus be highly related to human health, as we obtain vitamins from gut microbes in addition to food sources (Albert et al., 1980; LeBlanc et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "19cf0bdf-2c61-4da9-8103-dca8f73f648b",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C105",
+      "claim": "VB2 is known to be light sensitive and heat labile in aqueous solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Since VB2 is known to be light sensitive and heat labile in aqueous solution (Sheraz et al., 2014), the contribution of VB2 from gut microbes could be significantly undervalued.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "797d7392-14fc-4450-a95b-8e0688a80516",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C106",
+      "claim": "The contribution of VB2 from gut microbes could be significantly undervalued.",
+      "claim_type": "EXPLICIT",
+      "source": "Since VB2 is known to be light sensitive and heat labile in aqueous solution (Sheraz et al., 2014), the contribution of VB2 from gut microbes could be significantly undervalued.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the properties of VB2.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "6f5189e4-9ddd-4ead-83d2-d238fc5a02a5",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C107",
+      "claim": "The system used in this study for analyzing VB2 may potentially be effective to investigate the roles and sensing mechanisms for other micronutrients provided by microbes.",
+      "claim_type": "EXPLICIT",
+      "source": "The system used in this study for analyzing VB2 may potentially be effective to investigate the roles and sensing mechanisms for other micronutrients provided by microbes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential applications of the study system.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "79fb3acc-d093-4df8-87cb-d145d8045f20",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C108",
+      "claim": "VB2 level critically impacts food uptake and foraging behavior by regulating specific protease gene expression and intestinal protease activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We have established a system to analyze the intestinal response to vitamin B2 (VB2) deficiency in Caenorhabditis elegans, and demonstrated that VB2 level critically impacts food uptake and foraging behavior by regulating specific protease gene expression and intestinal protease activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings from the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "22f5c5df-789c-4bb0-bce8-26bde65032ae",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C109",
+      "claim": "This impact is mediated by TORC1 signaling through reading the FAD-dependent ATP level.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that this impact is mediated by TORC1 signaling through reading the FAD-dependent ATP level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the mechanistic findings from the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "2f2a4f38-8be6-4671-9374-21bf042bd140",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C110",
+      "claim": "The study uncovers a VB2-sensing/response pathway that regulates food-uptake in live animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our study in live animals uncovers a VB2-sensing/response pathway that regulates food-uptake, a mechanism by which a common signaling pathway translates a specific nutrient signal into physiological activities, and the importance of gut microbiota in supplying micronutrients to animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main conclusions from the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "7eedbacf-9c96-45a4-8860-c7c3b8415c16",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C111",
+      "claim": "The study demonstrates a mechanism by which a common signaling pathway translates a specific nutrient signal into physiological activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our study in live animals uncovers a VB2-sensing/response pathway that regulates food-uptake, a mechanism by which a common signaling pathway translates a specific nutrient signal into physiological activities, and the importance of gut microbiota in supplying micronutrients to animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main conclusions from the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "1d45a8f0-d1c3-4911-952e-5bf13553c81f",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "claim_id": "C112",
+      "claim": "The study demonstrates the importance of gut microbiota in supplying micronutrients to animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our study in live animals uncovers a VB2-sensing/response pathway that regulates food-uptake, a mechanism by which a common signaling pathway translates a specific nutrient signal into physiological activities, and the importance of gut microbiota in supplying micronutrients to animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main conclusions from the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3a8ba1db-45f6-4402-b9aa-bc5a04e56c25",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Heat-killed E. coli OP50 (HK-OP50) lacks heat-labile nutrients required for C. elegans larval development, causing developmental arrest at L1-L2 stages and failure to consume the bacterial lawn.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 establish the baseline observation that live bacteria support normal development (C1), while heat-killed bacteria cause developmental arrest (C2). The inference that heat-killed bacteria lack essential nutrients (C3) is supported by experimental data and consistent with prior literature (C4). The experimental design is appropriate with clear controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "dab68dc1-628f-4b63-8d62-29968dd41ad0",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "C. elegans demonstrate strong behavioral discrimination against HK-OP50 in food dwelling and choice assays, but will consume heat-killed bacteria after first obtaining benefits from live bacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 describe behavioral assays showing discrimination against HK-OP50 (C5), with the interesting observation that worms switch to consuming HK-OP50 after live food is depleted (C6). The inference (C7) is reasonable given the sequential consumption pattern, though alternative explanations (e.g., starvation-driven consumption) are not fully excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "1c21f321-9ba7-4e47-be3a-135d44a685be",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Worms grown on HK-OP50 for 30 days can recover to fertile adults when live bacteria are added, suggesting a protective starvation-like response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9 demonstrate reversibility of the arrested state (C8) and interpret this as a protective response (C9). The experimental observation is clear, though the inference about the mechanism (starvation-like response) is speculative and would benefit from molecular markers of starvation pathways.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "79b8170f-cddd-45a6-9af3-d6d19f73266a",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A small amount of live bacteria (Staphylococcus saprophyticus) enables worms to consume and grow on HK-OP50, likely through ingestion rather than odorants, suggesting live bacteria provide essential micronutrients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C14 present a clever experimental design using inedible live bacteria (C10) to demonstrate that live bacteria provide something essential (C11). The odorant control (C12) strengthens the conclusion that ingestion is required (C13). However, the speculative model about intestinal colonization (C14) lacks direct evidence and is appropriately labeled as speculation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "cf41ac2b-83d0-436b-96cc-5138c9af4822",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Vitamin B2 (VB2) supplementation partially but significantly recovers larval growth on HK-OP50, suggesting VB2 plays a critical role in food-quality evaluation, though multiple nutrients remain deficient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 establish VB2 as a key micronutrient (C15) while acknowledging incomplete rescue (C16-C17). The data support partial recovery, and the inference about VB2's role in food quality evaluation (C18) is reasonable. The acknowledgment of multiple deficiencies strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "fdf634e2-2e56-44f8-b2b6-8863456e34d3",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "VB2 supplementation increases preference for heat-killed bacteria in behavioral assays, and VB2 levels are drastically reduced in both HK-OP50 and worms fed HK-OP50, which is recovered by supplementation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 provide converging evidence from behavioral assays (C19) and HPLC-UV analysis (C20-C21, C23) that VB2 is deficient in heat-killed bacteria. The measurements appear technically sound with appropriate controls and standards shown in supplementary figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "c269a31b-2930-4c30-9e63-5cc73402a84d",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Protease treatment of HK-OP50 enhances larval growth, while protease inhibitors eliminate VB2's beneficial effects, indicating that VB2 acts through endogenous protease activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28 use enzyme treatments (C24-C25) and inhibitors (C26) to establish a mechanistic link between VB2 and protease activity. The experimental logic is sound: exogenous proteases help (C24), protease inhibitors block VB2 effects (C26), supporting the conclusion that endogenous proteases are required (C27-C28).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "02094b9b-71ad-45d5-8fae-8bd23387ca4c",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In vivo protease activity in the intestinal tract is drastically reduced in worms fed HK-OP50 and partially recovered by VB2 supplementation, indicating worms down-regulate digestive enzymes in response to VB2 deficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 use a direct in vivo protease assay to measure intestinal protease activity. The data (C29-C30) support the conclusion (C31) that worms regulate protease expression in response to VB2. The assay methodology is cited and appears appropriate, though technical details about quantification could be clearer.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "833ad02f-c786-4cf3-ba1a-9de93bd57fc2",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "VB2 supplementation dramatically increases mRNA levels of proteases asp-13, asp-14, cpr-1, and cpr-4, with asp-13 and asp-14 being essential for VB2's effects as shown by RNAi knockdown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 identify specific proteases regulated by VB2 through qRT-PCR (C32-C33) and validate their importance through RNAi (C34-C35). The experimental approach is systematic, screening 27 genes and validating hits functionally. The data support the conclusion that asp-13/14 are essential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "c756a8b8-0dc8-4ce8-a77e-3a38b8b4a2ad",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Over-expression of asp-13 and asp-14 significantly improves food uptake and behavior on HK-OP50, and intestinal-specific RNAi confirms their intestinal function is essential for VB2 effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 provide gain-of-function (C36) and tissue-specific loss-of-function (C37-C38) evidence for asp-13/14's role. The use of intestinal-specific RNAi (C37) is particularly strong, addressing tissue specificity. The consistency with prior expression data (C39) strengthens the conclusion (C40).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "ddd7f730-621f-4e18-a369-53e4f7fb218f",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The transcription factor ELT-2 regulates protease expression in response to VB2, with ELT-2 levels decreasing on HK-OP50 and recovering with VB2 supplementation; ELT-2 over-expression is both necessary and sufficient for VB2's effects on protease expression and food usability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C50 establish ELT-2 as a key transcriptional regulator through multiple approaches: RNAi screen (C41-C42), reporter analysis (C43-C45), and over-expression (C46-C48). The necessity and sufficiency experiments (C49) are well-designed. The ChIP data in supplementary figures support direct regulation of asp-13/14 by ELT-2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "b0cdcaf3-9848-4105-8533-da2a5d8e4393",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "TORC1 is required for VB2-induced protease activity, as RNAi of TORC1 components (daf-15/raptor, ragc-1) eliminates VB2's effects, and this is not simply due to developmental arrest.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 establish TORC1 dependence through RNAi of key components (C51-C52) and address the important control that the effect is not simply due to developmental arrest (C53-C54). The control experiment strengthens the conclusion that TORC1 specifically regulates protease activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "8168b6cc-dbed-4700-9310-d0efeb29319b",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "TORC1 activity is decreased in worms fed HK-OP50 and recovered by VB2 supplementation, as measured by autophagy markers (LGG-1::GFP puncta) and VHA-6 localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C62 use multiple readouts of TORC1 activity: autophagy markers (C55-C59) and VHA-6 localization (C60). The use of genetic controls (nprl-3 mutant, daf-15 RNAi) to validate that the markers reflect TORC1 activity (C57, C59) is rigorous. The convergent evidence strongly supports the conclusion (C61-C62).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "efa3010b-da44-42d9-9488-302d9825b699",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "TORC1 acts downstream of VB2, as hyperactivation of TORC1 (nprl-3 loss-of-function) mimics VB2 supplementation effects on protease activity, growth, and behavior without increasing VB2 levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C68 establish epistasis through genetic analysis. The nprl-3(lf) mutation phenocopies VB2 supplementation (C64) without increasing VB2 levels (C65), placing TORC1 downstream. The effects of reducing TORC1 (C66-C67) provide additional support. The logic is sound and the conclusion (C68) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "ccf31ef1-31f5-4ee0-b053-73d31b8a5c16",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "FMN and FAD levels are decreased in worms fed HK-OP50 and partially restored by VB2 supplementation, suggesting that lack of these cofactors contributes to the low quality of heat-killed bacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C72 establish the biochemical basis for VB2 deficiency. C69 states established knowledge about VB2 metabolism. The HPLC-UV measurements (C70-C71) are technically appropriate with standards shown. The inference (C72) is reasonable given FAD/FMN's known roles in metabolism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "9d8acf3e-c77c-406e-b221-a5c7f9565cce",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "FAD supplementation improves food uptake, protease activity, and ELT-2 expression similar to VB2, and this effect is TORC1-dependent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 demonstrate that FAD can substitute for VB2 (C73) and that FAD's effects require TORC1 (C74). This supports the model that VB2 acts through FAD. The experimental design parallels the VB2 experiments, providing consistent evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "01df150d-949e-452c-afeb-adbc082f4e36",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "RNAi of FAD synthetase (flad-1) or riboflavin transporter (rft-2) dramatically reduces protease activity and increases autophagy, effects that are suppressed by TORC1 hyperactivation, supporting that TORC1 acts downstream of FAD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C79 use genetic manipulation of FAD biosynthesis/transport to establish the pathway. The similarity between flad-1 and rft-2 phenotypes (C75, C77) and their suppression by nprl-3(lf) (C76) provide strong epistatic evidence. The conclusion that FAD mediates VB2 effects (C78-C79) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "5c40dc9a-579d-4a22-8cda-482a63d46229",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "ATP levels are dramatically reduced in worms fed HK-OP50 and partially recovered by VB2/FAD supplementation, with FAD biosynthesis (flad-1) affecting ATP levels, establishing decreased ATP as a major consequence of VB2 deficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C85 establish ATP as the link between FAD and TORC1. The ATP measurements (C82-C84) are consistent across different manipulations. The logic connecting FAD-dependent metabolism (C80) to TORC1's known ATP-sensing function (C81) is sound. The conclusion (C85) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "854af3a4-7e2d-42b8-9aea-27b72d0994ac",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Partial inactivation of ATP synthase (atp-2 RNAi) reduces ATP levels and protease activity, with effects partially suppressed by TORC1 hyperactivation, supporting that ATP level changes mediate VB2's impact on TORC1 and protease activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C92 provide causal evidence that ATP reduction affects TORC1 and protease activity. The epistasis experiment (C89-C90) places TORC1 downstream of ATP. The observation that FAD supplementation doesn't rescue atp-2(RNAi) (C87-C88) supports the pathway order. The conclusion (C92) is well-supported, though the modest ATP reduction (C86) suggests other factors may contribute.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "f6202f6b-3065-4696-bef7-fe1fe742d03d",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The study acknowledges that other metabolic products from FAD-associated enzymes may contribute to the observed effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C93 is an appropriate acknowledgment of study limitations. This transparent statement about alternative mechanisms strengthens rather than weakens the overall conclusions by showing scientific rigor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "22a8d9c2-af7b-4edc-926c-67ff86c57350",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The study identifies a complete VB2-sensing pathway (VB2\u2192FAD\u2192ATP\u2192TORC1\u2192ELT-2\u2192proteases) that regulates food uptake and foraging behavior, demonstrating how a nutrient signal is translated into physiological responses and highlighting the importance of gut microbiota in supplying micronutrients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94, C108-C112 summarize the main findings. The pathway is supported by extensive genetic, biochemical, and behavioral data presented in the manuscript. Each step has been validated through multiple approaches (supplementation, RNAi, over-expression, epistasis). The conclusions about mechanism (C111) and microbiota importance (C112) are well-supported by the cumulative evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "d644eb68-8be7-46cd-8dad-e14084ad8a97",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The authors speculate about the evolutionary significance of intestinal nutrient sensing, the novelty of connecting TORC1 to a specific micronutrient, broader implications for evaluating multiple nutrients, and the importance of gut microbes in providing vitamins to animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C95-C96, C99-C103, C105-C107 are explicitly speculative statements about broader implications and evolutionary significance. While these speculations are reasonable given the data, they extend beyond what is directly demonstrated. The authors appropriately frame these as speculative (using 'may be,' 'likely,' 'could be'), which is scientifically appropriate for discussion sections.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "e7e1fd44-ed75-4d51-9ee0-5ce69845569f",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Previous work by the authors showed that intestinal deficiencies in fatty acids and pyrimidine are sensed to alter developmental programs, suggesting a common pattern of intestinal nutrient sensing affecting both behavior and development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C98 reference prior published work by the authors and draw reasonable inferences about common mechanisms. The citations support C97, and the inference about common patterns (C98) is reasonable given the current and prior work, though it remains somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    },
+    {
+      "id": "693ef15d-155c-4f6c-978e-61a62e6b7e0f",
+      "content_id": "e303f24e-cbd7-4c81-bc47-8d05b6ae648d",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Humans obtain vitamins from gut microbes in addition to food sources.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C104 states established knowledge about human vitamin acquisition from gut microbiota, supported by appropriate citations. This is well-established in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:39.989460Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f8f8b99a-cf65-40a6-8605-1a5977a117d3",
+      "result_id": "3a8ba1db-45f6-4402-b9aa-bc5a04e56c25"
+    },
+    {
+      "claim_id": "a67ab0c3-d362-4051-a10a-2268a16375ce",
+      "result_id": "3a8ba1db-45f6-4402-b9aa-bc5a04e56c25"
+    },
+    {
+      "claim_id": "ea86b0d2-c54e-43b3-b6fa-1f7d87e348c1",
+      "result_id": "3a8ba1db-45f6-4402-b9aa-bc5a04e56c25"
+    },
+    {
+      "claim_id": "85c82c76-ca61-4a0a-8079-ba833d2c0e45",
+      "result_id": "3a8ba1db-45f6-4402-b9aa-bc5a04e56c25"
+    },
+    {
+      "claim_id": "9ab362f4-3e68-4fd1-b84f-fe57d83de0ae",
+      "result_id": "dab68dc1-628f-4b63-8d62-29968dd41ad0"
+    },
+    {
+      "claim_id": "93b12578-ccf3-40d9-81c6-7f86e630d987",
+      "result_id": "dab68dc1-628f-4b63-8d62-29968dd41ad0"
+    },
+    {
+      "claim_id": "d697e6c4-13af-4723-8070-0319e8e0b7a4",
+      "result_id": "dab68dc1-628f-4b63-8d62-29968dd41ad0"
+    },
+    {
+      "claim_id": "fd45cb0e-f7ef-420b-b6f6-eddbe01968ae",
+      "result_id": "1c21f321-9ba7-4e47-be3a-135d44a685be"
+    },
+    {
+      "claim_id": "f51ce3c0-6009-446e-907e-c29bcbf68300",
+      "result_id": "1c21f321-9ba7-4e47-be3a-135d44a685be"
+    },
+    {
+      "claim_id": "4fd2f9ee-ea46-4605-a60a-4fe335ff28ec",
+      "result_id": "79b8170f-cddd-45a6-9af3-d6d19f73266a"
+    },
+    {
+      "claim_id": "5ae42d5d-eb23-46d7-b4e0-74b9ce5aa4ce",
+      "result_id": "79b8170f-cddd-45a6-9af3-d6d19f73266a"
+    },
+    {
+      "claim_id": "91b3045d-cf2b-4c76-84f0-1c8827d55d6e",
+      "result_id": "79b8170f-cddd-45a6-9af3-d6d19f73266a"
+    },
+    {
+      "claim_id": "d5b1215c-cb24-4070-9f3c-a66324269788",
+      "result_id": "79b8170f-cddd-45a6-9af3-d6d19f73266a"
+    },
+    {
+      "claim_id": "72ecfcd6-ffc8-451d-822b-310804912aa7",
+      "result_id": "79b8170f-cddd-45a6-9af3-d6d19f73266a"
+    },
+    {
+      "claim_id": "0dc275cd-1b83-4153-afcc-08aaccec7a97",
+      "result_id": "cf41ac2b-83d0-436b-96cc-5138c9af4822"
+    },
+    {
+      "claim_id": "d480c53c-ff8c-47d9-901a-587d6aa5944e",
+      "result_id": "cf41ac2b-83d0-436b-96cc-5138c9af4822"
+    },
+    {
+      "claim_id": "84a85b14-5e83-46d1-b145-aae927f00765",
+      "result_id": "cf41ac2b-83d0-436b-96cc-5138c9af4822"
+    },
+    {
+      "claim_id": "3fcb7016-1f9a-4f72-992a-854ed662075f",
+      "result_id": "cf41ac2b-83d0-436b-96cc-5138c9af4822"
+    },
+    {
+      "claim_id": "801c897c-c75b-40f7-a18c-773a66377364",
+      "result_id": "fdf634e2-2e56-44f8-b2b6-8863456e34d3"
+    },
+    {
+      "claim_id": "08e24bd6-944d-4f4f-819c-8d6b3c6d61ec",
+      "result_id": "fdf634e2-2e56-44f8-b2b6-8863456e34d3"
+    },
+    {
+      "claim_id": "844fbab6-613f-42ab-b8eb-f0b94e762bf3",
+      "result_id": "fdf634e2-2e56-44f8-b2b6-8863456e34d3"
+    },
+    {
+      "claim_id": "ef46cec4-3eaf-4348-a07d-141f865a6708",
+      "result_id": "fdf634e2-2e56-44f8-b2b6-8863456e34d3"
+    },
+    {
+      "claim_id": "25bb48d6-ed9a-456c-880e-31a284f30c32",
+      "result_id": "fdf634e2-2e56-44f8-b2b6-8863456e34d3"
+    },
+    {
+      "claim_id": "215cf182-e736-4275-a059-bcfb87f2ef3d",
+      "result_id": "c269a31b-2930-4c30-9e63-5cc73402a84d"
+    },
+    {
+      "claim_id": "43f4d70d-bbef-451d-a6fd-d627f1279ee3",
+      "result_id": "c269a31b-2930-4c30-9e63-5cc73402a84d"
+    },
+    {
+      "claim_id": "0c17ce8b-aa4e-440e-938c-c4a58fc0720b",
+      "result_id": "c269a31b-2930-4c30-9e63-5cc73402a84d"
+    },
+    {
+      "claim_id": "37e81365-41f0-4e60-bdf1-d440b0873f8f",
+      "result_id": "c269a31b-2930-4c30-9e63-5cc73402a84d"
+    },
+    {
+      "claim_id": "8d2cf841-1992-448f-89c1-955a95a067a3",
+      "result_id": "c269a31b-2930-4c30-9e63-5cc73402a84d"
+    },
+    {
+      "claim_id": "89c551e9-3d0f-47be-8900-3d0e15073218",
+      "result_id": "02094b9b-71ad-45d5-8fae-8bd23387ca4c"
+    },
+    {
+      "claim_id": "c2973ad4-6de6-4ae1-856d-9edcfc94faa4",
+      "result_id": "02094b9b-71ad-45d5-8fae-8bd23387ca4c"
+    },
+    {
+      "claim_id": "dc01681a-5f6d-44ca-926e-a9819b829fb6",
+      "result_id": "02094b9b-71ad-45d5-8fae-8bd23387ca4c"
+    },
+    {
+      "claim_id": "acec16b2-82b6-49bb-9a59-bb655d4f9e9f",
+      "result_id": "833ad02f-c786-4cf3-ba1a-9de93bd57fc2"
+    },
+    {
+      "claim_id": "b52e32a0-e5d4-403f-bb3c-eca47f4e3b27",
+      "result_id": "833ad02f-c786-4cf3-ba1a-9de93bd57fc2"
+    },
+    {
+      "claim_id": "55199361-6230-43a3-ac39-d312b1e6f5d4",
+      "result_id": "833ad02f-c786-4cf3-ba1a-9de93bd57fc2"
+    },
+    {
+      "claim_id": "71779f07-30ac-46ee-8e61-063b92998262",
+      "result_id": "833ad02f-c786-4cf3-ba1a-9de93bd57fc2"
+    },
+    {
+      "claim_id": "d9e3e42e-4921-4bc9-a0d6-2e132410d162",
+      "result_id": "c756a8b8-0dc8-4ce8-a77e-3a38b8b4a2ad"
+    },
+    {
+      "claim_id": "11707d7e-a928-4a4d-af89-d7586b15e300",
+      "result_id": "c756a8b8-0dc8-4ce8-a77e-3a38b8b4a2ad"
+    },
+    {
+      "claim_id": "1af6c6db-d278-47c9-8920-66b8554f1bca",
+      "result_id": "c756a8b8-0dc8-4ce8-a77e-3a38b8b4a2ad"
+    },
+    {
+      "claim_id": "eaf24e8c-2741-4fa6-ae1f-7c095a5a0a11",
+      "result_id": "c756a8b8-0dc8-4ce8-a77e-3a38b8b4a2ad"
+    },
+    {
+      "claim_id": "ff2a1ccc-b657-4677-a0d9-876c7138632b",
+      "result_id": "c756a8b8-0dc8-4ce8-a77e-3a38b8b4a2ad"
+    },
+    {
+      "claim_id": "87254f47-ffbe-415b-923b-b003da4b9cad",
+      "result_id": "ddd7f730-621f-4e18-a369-53e4f7fb218f"
+    },
+    {
+      "claim_id": "7b2bd5c6-1b2b-4aec-998d-25d6071cb4b8",
+      "result_id": "ddd7f730-621f-4e18-a369-53e4f7fb218f"
+    },
+    {
+      "claim_id": "8fc3e058-bb92-49ad-a0ac-7ca6b2eaef3a",
+      "result_id": "ddd7f730-621f-4e18-a369-53e4f7fb218f"
+    },
+    {
+      "claim_id": "e5cd5159-2608-416c-87e7-f9600b1fa9ce",
+      "result_id": "ddd7f730-621f-4e18-a369-53e4f7fb218f"
+    },
+    {
+      "claim_id": "14a3b00e-c390-4564-9583-1e37ae2b2d2a",
+      "result_id": "ddd7f730-621f-4e18-a369-53e4f7fb218f"
+    },
+    {
+      "claim_id": "1948a4b0-f24f-430f-b591-ad46beaaabab",
+      "result_id": "ddd7f730-621f-4e18-a369-53e4f7fb218f"
+    },
+    {
+      "claim_id": "f437970e-c0a2-4d9f-bc93-db1a4f24ace4",
+      "result_id": "ddd7f730-621f-4e18-a369-53e4f7fb218f"
+    },
+    {
+      "claim_id": "3cc3b626-7f70-49f8-a4ee-3d2eb9ce0566",
+      "result_id": "ddd7f730-621f-4e18-a369-53e4f7fb218f"
+    },
+    {
+      "claim_id": "1c319cca-53b3-4716-a052-22d26cc8ca52",
+      "result_id": "ddd7f730-621f-4e18-a369-53e4f7fb218f"
+    },
+    {
+      "claim_id": "e4368f6b-d0c4-4b47-a88f-da4cc935b801",
+      "result_id": "ddd7f730-621f-4e18-a369-53e4f7fb218f"
+    },
+    {
+      "claim_id": "00e6cebd-cd43-4bd1-b659-87ac594b7027",
+      "result_id": "b0cdcaf3-9848-4105-8533-da2a5d8e4393"
+    },
+    {
+      "claim_id": "04e7ec75-82f2-4703-aca8-9c97ec80ff3c",
+      "result_id": "b0cdcaf3-9848-4105-8533-da2a5d8e4393"
+    },
+    {
+      "claim_id": "aeca9fd9-0ea4-41b8-96ea-1b480e0a09fa",
+      "result_id": "b0cdcaf3-9848-4105-8533-da2a5d8e4393"
+    },
+    {
+      "claim_id": "bfa6b8fa-7d51-4160-95c2-89d056c8b4a0",
+      "result_id": "b0cdcaf3-9848-4105-8533-da2a5d8e4393"
+    },
+    {
+      "claim_id": "d399372c-742a-4e05-a8e1-2704e568a8cd",
+      "result_id": "8168b6cc-dbed-4700-9310-d0efeb29319b"
+    },
+    {
+      "claim_id": "1da5f0af-ff68-4d38-a268-5adaa1444007",
+      "result_id": "8168b6cc-dbed-4700-9310-d0efeb29319b"
+    },
+    {
+      "claim_id": "5f8a7edc-2f03-4ab0-8219-6c08a9c5dfba",
+      "result_id": "8168b6cc-dbed-4700-9310-d0efeb29319b"
+    },
+    {
+      "claim_id": "fc6e4428-9667-4938-9034-b1e0505e2243",
+      "result_id": "8168b6cc-dbed-4700-9310-d0efeb29319b"
+    },
+    {
+      "claim_id": "064d4c87-a2d0-42da-ba83-e5132c4af03a",
+      "result_id": "8168b6cc-dbed-4700-9310-d0efeb29319b"
+    },
+    {
+      "claim_id": "0f785b6b-d267-4567-bddb-8b46a1eb7efb",
+      "result_id": "8168b6cc-dbed-4700-9310-d0efeb29319b"
+    },
+    {
+      "claim_id": "9ffb712f-75ff-49d5-9b33-7973c0ce9d2a",
+      "result_id": "8168b6cc-dbed-4700-9310-d0efeb29319b"
+    },
+    {
+      "claim_id": "93ca96dc-7f01-47ec-a134-594f124b115d",
+      "result_id": "8168b6cc-dbed-4700-9310-d0efeb29319b"
+    },
+    {
+      "claim_id": "58f9cca8-ce92-413a-88cb-9a72b2058cff",
+      "result_id": "efa3010b-da44-42d9-9488-302d9825b699"
+    },
+    {
+      "claim_id": "e12179d0-0d18-452c-8c67-03e5f1817e63",
+      "result_id": "efa3010b-da44-42d9-9488-302d9825b699"
+    },
+    {
+      "claim_id": "c82a833d-d9b3-48d9-8274-acd19d6652e3",
+      "result_id": "efa3010b-da44-42d9-9488-302d9825b699"
+    },
+    {
+      "claim_id": "c5c798cd-00ba-4820-947b-2c593b9106b7",
+      "result_id": "efa3010b-da44-42d9-9488-302d9825b699"
+    },
+    {
+      "claim_id": "79a30076-a868-466e-8a01-b2a010ba629e",
+      "result_id": "efa3010b-da44-42d9-9488-302d9825b699"
+    },
+    {
+      "claim_id": "25ffb296-d99b-4da9-b557-a45fcd6291b1",
+      "result_id": "efa3010b-da44-42d9-9488-302d9825b699"
+    },
+    {
+      "claim_id": "d3ba0c69-522d-43fb-b1d0-015d1b5f596d",
+      "result_id": "ccf31ef1-31f5-4ee0-b053-73d31b8a5c16"
+    },
+    {
+      "claim_id": "7f0ae3c9-1757-4698-a2a0-3397112dbd53",
+      "result_id": "ccf31ef1-31f5-4ee0-b053-73d31b8a5c16"
+    },
+    {
+      "claim_id": "be526cec-ba4c-4167-ab47-7b9c8b5d37d1",
+      "result_id": "ccf31ef1-31f5-4ee0-b053-73d31b8a5c16"
+    },
+    {
+      "claim_id": "58e14598-ea75-422e-a760-cfdf3149028c",
+      "result_id": "ccf31ef1-31f5-4ee0-b053-73d31b8a5c16"
+    },
+    {
+      "claim_id": "02c5b014-85e7-4d6a-96d5-606d6881848c",
+      "result_id": "9d8acf3e-c77c-406e-b221-a5c7f9565cce"
+    },
+    {
+      "claim_id": "4aac894c-af29-4272-b779-f40b5b62c744",
+      "result_id": "9d8acf3e-c77c-406e-b221-a5c7f9565cce"
+    },
+    {
+      "claim_id": "9a4c9487-0cf2-4f8b-9fd6-77316437dd5c",
+      "result_id": "01df150d-949e-452c-afeb-adbc082f4e36"
+    },
+    {
+      "claim_id": "66c35408-0481-472b-9686-142484fd1b93",
+      "result_id": "01df150d-949e-452c-afeb-adbc082f4e36"
+    },
+    {
+      "claim_id": "bc54ab0f-6576-4735-a401-aa88a86abc2e",
+      "result_id": "01df150d-949e-452c-afeb-adbc082f4e36"
+    },
+    {
+      "claim_id": "83aba6ac-cf2e-45f9-9a89-28ff129b0f2b",
+      "result_id": "01df150d-949e-452c-afeb-adbc082f4e36"
+    },
+    {
+      "claim_id": "3b1707b7-cd7d-4115-a269-bbc26b1aef9c",
+      "result_id": "01df150d-949e-452c-afeb-adbc082f4e36"
+    },
+    {
+      "claim_id": "d45a5ae7-8357-4a3d-969c-e5174c26b9e0",
+      "result_id": "5c40dc9a-579d-4a22-8cda-482a63d46229"
+    },
+    {
+      "claim_id": "d27d718b-01d9-490f-9531-c675ebebfda5",
+      "result_id": "5c40dc9a-579d-4a22-8cda-482a63d46229"
+    },
+    {
+      "claim_id": "98030191-4a51-450c-a247-cc84201c06fe",
+      "result_id": "5c40dc9a-579d-4a22-8cda-482a63d46229"
+    },
+    {
+      "claim_id": "c51f4843-61ab-46da-818e-80fd599b642a",
+      "result_id": "5c40dc9a-579d-4a22-8cda-482a63d46229"
+    },
+    {
+      "claim_id": "306f864e-537c-4e7d-8639-3644917f5d72",
+      "result_id": "5c40dc9a-579d-4a22-8cda-482a63d46229"
+    },
+    {
+      "claim_id": "861ac25c-cb04-4c3e-97b6-41771e174f9b",
+      "result_id": "5c40dc9a-579d-4a22-8cda-482a63d46229"
+    },
+    {
+      "claim_id": "df4f13ee-e124-40ca-8c07-3acc9ea416bc",
+      "result_id": "854af3a4-7e2d-42b8-9aea-27b72d0994ac"
+    },
+    {
+      "claim_id": "374df8ff-9d88-4856-b1a3-4e7a089b3a03",
+      "result_id": "854af3a4-7e2d-42b8-9aea-27b72d0994ac"
+    },
+    {
+      "claim_id": "482a3ead-d9e7-4b50-b235-85622f992d72",
+      "result_id": "854af3a4-7e2d-42b8-9aea-27b72d0994ac"
+    },
+    {
+      "claim_id": "74497d15-6678-492b-8726-14f051d6af3b",
+      "result_id": "854af3a4-7e2d-42b8-9aea-27b72d0994ac"
+    },
+    {
+      "claim_id": "914b04a1-6a3b-4324-a680-66c41af0db32",
+      "result_id": "854af3a4-7e2d-42b8-9aea-27b72d0994ac"
+    },
+    {
+      "claim_id": "752e2102-dcc4-4d8e-8572-988b8c857ed9",
+      "result_id": "854af3a4-7e2d-42b8-9aea-27b72d0994ac"
+    },
+    {
+      "claim_id": "92a4275b-0fa0-48f2-abae-b7eaba8fd4bb",
+      "result_id": "854af3a4-7e2d-42b8-9aea-27b72d0994ac"
+    },
+    {
+      "claim_id": "45608849-5a32-49ec-a7ab-ce68047683e0",
+      "result_id": "f6202f6b-3065-4696-bef7-fe1fe742d03d"
+    },
+    {
+      "claim_id": "ca3c12a0-db6b-49b5-9f98-64a24a3cf0e4",
+      "result_id": "22a8d9c2-af7b-4edc-926c-67ff86c57350"
+    },
+    {
+      "claim_id": "79fb3acc-d093-4df8-87cb-d145d8045f20",
+      "result_id": "22a8d9c2-af7b-4edc-926c-67ff86c57350"
+    },
+    {
+      "claim_id": "22f5c5df-789c-4bb0-bce8-26bde65032ae",
+      "result_id": "22a8d9c2-af7b-4edc-926c-67ff86c57350"
+    },
+    {
+      "claim_id": "2f2a4f38-8be6-4671-9374-21bf042bd140",
+      "result_id": "22a8d9c2-af7b-4edc-926c-67ff86c57350"
+    },
+    {
+      "claim_id": "7eedbacf-9c96-45a4-8860-c7c3b8415c16",
+      "result_id": "22a8d9c2-af7b-4edc-926c-67ff86c57350"
+    },
+    {
+      "claim_id": "1d45a8f0-d1c3-4911-952e-5bf13553c81f",
+      "result_id": "22a8d9c2-af7b-4edc-926c-67ff86c57350"
+    },
+    {
+      "claim_id": "5102c688-19fc-416e-af46-21dcd72fddf6",
+      "result_id": "d644eb68-8be7-46cd-8dad-e14084ad8a97"
+    },
+    {
+      "claim_id": "e8b4cc16-88d1-47ec-a45f-7daef41dbe27",
+      "result_id": "d644eb68-8be7-46cd-8dad-e14084ad8a97"
+    },
+    {
+      "claim_id": "0b83b266-ca37-4b81-aaed-d8dc7300106c",
+      "result_id": "d644eb68-8be7-46cd-8dad-e14084ad8a97"
+    },
+    {
+      "claim_id": "9aae05c1-a0bf-494e-995d-164c7125a0ca",
+      "result_id": "d644eb68-8be7-46cd-8dad-e14084ad8a97"
+    },
+    {
+      "claim_id": "f632a82f-d4a7-4cbe-baa5-309a31de064c",
+      "result_id": "d644eb68-8be7-46cd-8dad-e14084ad8a97"
+    },
+    {
+      "claim_id": "a3cb0787-22d1-475a-8862-88df6d1cb5d0",
+      "result_id": "d644eb68-8be7-46cd-8dad-e14084ad8a97"
+    },
+    {
+      "claim_id": "679c238d-17e7-4bbf-afc2-4e5856f653b9",
+      "result_id": "d644eb68-8be7-46cd-8dad-e14084ad8a97"
+    },
+    {
+      "claim_id": "19cf0bdf-2c61-4da9-8103-dca8f73f648b",
+      "result_id": "d644eb68-8be7-46cd-8dad-e14084ad8a97"
+    },
+    {
+      "claim_id": "797d7392-14fc-4450-a95b-8e0688a80516",
+      "result_id": "d644eb68-8be7-46cd-8dad-e14084ad8a97"
+    },
+    {
+      "claim_id": "6f5189e4-9ddd-4ead-83d2-d238fc5a02a5",
+      "result_id": "d644eb68-8be7-46cd-8dad-e14084ad8a97"
+    },
+    {
+      "claim_id": "9591032f-0926-482b-ab7d-99ff4cd25953",
+      "result_id": "e7e1fd44-ed75-4d51-9ee0-5ce69845569f"
+    },
+    {
+      "claim_id": "0c35a833-ca10-4b6d-80b3-2c03896500ad",
+      "result_id": "e7e1fd44-ed75-4d51-9ee0-5ce69845569f"
+    },
+    {
+      "claim_id": "1a4a05e1-9968-4db5-a395-12d6d9fff5a9",
+      "result_id": "693ef15d-155c-4f6c-978e-61a62e6b7e0f"
+    }
+  ],
+  "comparisons": []
+}

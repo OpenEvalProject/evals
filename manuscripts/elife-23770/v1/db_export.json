@@ -1,0 +1,1665 @@
+{
+  "submission": {
+    "id": "ade40241-818d-44bb-bb23-7f6ca3c12a7d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:48:52.418653Z",
+    "updated_at": "2025-12-01T20:48:52.418653Z"
+  },
+  "content": [
+    {
+      "id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "submission_id": "ade40241-818d-44bb-bb23-7f6ca3c12a7d",
+      "content_type": "manuscript",
+      "content_text": "# C. elegans avoids toxin-producing Streptomyces using a seven transmembrane domain chemosensory receptor\n\n## Authors\n\n- Alan Tran<sup>1</sup>\n- Angelina Tang<sup>1</sup>\n- Colleen T O'Loughlin<sup>2</sup>\n- Anthony Balistreri<sup>3</sup>\n- Eric Chang<sup>1</sup>\n- Doris Coto Villa<sup>1</sup>\n- Joy Li<sup>1</sup>\n- Aruna Varshney<sup>1</sup>\n- Vanessa Jimenez<sup>1</sup>\n- Jacqueline Pyle<sup>1</sup>\n- Bryan Tsujimoto<sup>1</sup>\n- Christopher Wellbrook<sup>1</sup>\n- Christopher Vargas<sup>1</sup>\n- Alex Duong<sup>1</sup>\n- Nebat Ali<sup>1</sup>\n- Sarah Y Matthews<sup>3</sup>\n- Samantha Levinson<sup>3</sup>\n- Sarah Woldemariam<sup>4</sup>\n- Sami Khuri<sup>5</sup>\n- Martina Bremer<sup>6</sup>\n- Daryl K Eggers<sup>3</sup>\n- Noelle L'Etoile<sup>4</sup>\n- Laura C Miller Conrad<sup>3</sup> \u2020\n- Miri K VanHoven<sup>1</sup> ([ORCID: 0000-0001-7714-1555](https://orcid.org/0000-0001-7714-1555)) \u2020\n\n### Affiliations\n\n1. Department of Biological Sciences San Jose State University California United States\n2. Department of Bioengineering and Therapeutic Sciences University of California San Francisco San Francisco United States\n3. Department of Chemistry San Jose State University California United States\n4. Department of Cell & Tissue Biology University of California San Francisco San Francisco United States\n5. Department of Computer Science San Jose State University California United States\n6. Department of Mathematics and Statistics San Jose State University California United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPredators and prey co-evolve, each maximizing their own fitness, but the effects of predator\u2013prey interactions on cellular and molecular machinery are poorly understood. Here, we study this process using the predator Caenorhabditis elegans and the bacterial prey Streptomyces, which have evolved a powerful defense: the production of nematicides. We demonstrate that upon exposure to Streptomyces at their head or tail, nematodes display an escape response that is mediated by bacterially produced cues. Avoidance requires a predicted G-protein-coupled receptor, SRB-6, which is expressed in five types of amphid and phasmid chemosensory neurons. We establish that species of Streptomyces secrete dodecanoic acid, which is sensed by SRB-6. This behavioral adaptation represents an important strategy for the nematode, which utilizes specialized sensory organs and a chemoreceptor that is tuned to recognize the bacteria. These findings provide a window into the molecules and organs used in the coevolutionary arms race between predator and potential prey.\n\n## Introduction\n\nThe evolutionary interactions of predators with their prey have profoundly influenced the history of life on earth (Lotka, 1920). To better understand these interactions and their influences at the molecular and cellular levels, we studied the bacteriovore Caenorhabditis elegans and several species of the Gram-positive bacterium Streptomyces that have evolved strong defenses to avoid predation by nematodes. Streptomyces\u00a0avermitilis, S. milbemycinicus, and S. costaricanus all produce potent nematicides or antinematodal compounds (Miller et al., 1979; Burg et al., 1979; Egerton et al., 1979; Takiguchi et al., 1980; Dicklow et al., 1993; Esnard et al., 1995) (Figure 1A). Interestingly, these bacteria have been used to produce drugs against nematode infections, such as avermectin and milbemycin, which paralyze nematodes by irreversibly opening invertebrate glutamate-gated chloride channels (Cully et al., 1994; Holden-Dye and Walker, 2014). Despite this usage, little is known about whether or how C. elegans recognizes and responds to Streptomyces in the environment.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/23770/elife-23770-fig1-v1.jpg)\n\n**Figure 1.:** (A) Phylogenetic tree including strains of Streptomyces bacteria and Bacillus subtilis. (B) Schematic diagram of a dry-drop behavioral assay that selectively tests the response of the PHA and PHB phasmid neurons. Animals are placed on a dry plate and induced to move backward with a hair pick. A drop of bacterial extract or control buffer is placed behind the animal and quickly dries, preventing wicking along the animal. As the animal moves into the drop, the time before the animal halts movement is measured. Response times are normalized to a positive control, the average response to sodium dodecyl\u00a0sulfate\u00a0(SDS), assayed on the same day. A shorter response time indicates a more rapid avoidance response. (C) Quantification of the rapid avoidance response of C. elegans phasmid neurons to Streptomyces, but not to\u00a0Escherichia coli or B. subtilis. One-way ANOVA and Tukey\u2019s post-hoc tests were performed to determine significance. (D) Schematic diagram of a dry-drop behavioral assay that selectively tests the response of amphid neurons in the head. Animals are placed on a dry plate and allowed to move forward. A drop of bacterial extract or control buffer is placed in front of the animals and quickly dries. The proportion of the time that animals halt movement into the dry drop is recorded. (E) Quantification of the rapid avoidance response of C. elegans amphid neurons to species of Streptomyces, but not E. coli or B. subtilis. Two independent sample z-tests and the Hochberg multiple comparison adjustment procedure were performed. (C and E) For each experimental sample, n\u00a0\u2265\u00a040 for the experimental\u00a0group, n\u00a0\u2265\u00a040 for the\u00a00.6% SDS positive control, and n\u00a0\u2265\u00a040 for\u00a0the\u00a0saline buffer negative control. ***B, p<0.001; *B, p<0.05; ns B, not significant compared with a control buffer; ***S, p<0.001; NS S, not significant compared with SDS positive control. Exact values and additional pairwise comparisons are included in Figure 1\u2014source data 1 and Figure 1\u2014source data 2.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23770/elife-23770-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Chemotaxis assays are designed to test olfactory cues (Bargmann et al., 1993). Chemotaxis plates included an origin, where the\u00a0nematodes are placed, and control and experimental sections. Both the control and experimental sections contain sodium azide to immobilize animals that reach the control or experimental liquid. (B) Animals chemotax to the olfactory cue diacetyl, but exhibit no response to S. avermitilis, E. coli, or B. subtilis. For each treatment, 50\u2013300 worms were tested on each of at least six plates on at least two different days. Horizontal lines indicate medians. Exact values are included in Figure 1\u2014source data 1.\n\n## Results\n\nTo determine whether C. elegans responds to Streptomyces, we used dry-drop avoidance assays that test the response of either the phasmid sensory neurons in the tail or the amphid sensory neurons in the head (Park et al., 2011; Hilliard et al., 2002) to Streptomyces (Figure 1B,D). First, we tested the response to exposure at the tail. Interestingly, animals rapidly halted backwards movement when exposed to Streptomyces strains but not Escherichia coli, a Gram-negative species used to feed worms in the laboratory, or Bacillus subtilis, a Gram-positive species found in soil and vegetation (WilpatWipat and Harwood, 1999) (Figure 1C). These data indicate that C. elegans have the ability to recognize and specifically avoid Streptomyces. Few compounds have been fully characterized with respect to these neurons, but dilute concentrations of sodium dodecyl sulfate (SDS) have been shown to elicit a rapid and robust avoidance response in C.\u00a0elegans\u00a0hermaphrodites (Hilliard et al., 2002), the primary sex found in nature (Brenner, 1974). The avoidance response to Streptomyces is comparable to the response to SDS (Figure 1C). We hypothesize that the tail-mediated response to Streptomyces is due to a secretion product, as animals responded similarly to cell-free supernatants (Figure 1C).\n\nWe wondered whether C. elegans would demonstrate a similar avoidance response upon encountering Streptomyces at their head. Thus, we tested the response to exposure at the head. Animals exposed to a control buffer, E. coli or B. subtilis at the head usually continued moving forward, but animals exposed to S. avermitilis, S. milbemycinicus or S. costaricanus usually halted movement, avoiding Streptomyces (Figure 1D,E). These data indicate that C. elegans also recognize Streptomyces at the head. C elegans did not demonstrate avoidance in chemotaxis assays designed to test responses to volatile odorants, suggesting that direct contact is required (Figure 1\u2014figure supplement 1).\n\nSDS is a laboratory detergent, but the very similar responses of C. elegans to Streptomyces and SDS led us to hypothesize that Streptomyces might secrete a small molecule similar to SDS in activity or structure. The avoidance could be due to a non-specific interaction that\u00a0is\u00a0based on the compound\u2019s surfactant properties, or it could be due to specific binding and recognition of SDS. We found that the surfactant activity of SDS was not required for the avoidance response, as concentrations ten-fold below the critical micelle concentration (Rahman and Brown, 1983) were still avoided (Figure 2A, Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2). Similarly, a surfactant (Triton X-100)\u00a0at its critical micelle concentration (Tiller et al., 1984) did not elicit a strong avoidance response (Figure 2A). These findings indicate that SDS is unlikely to elicit a response through a non-specific detergent effect. Therefore, we looked to define the structural elements of SDS that are responsible for the avoidance response.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/23770/elife-23770-fig2-v1.jpg)\n\n**Figure 2.:** (A) Quantification of the similar phasmid responses to 3.4 mM and 0.6 mM SDS, which is ten-fold below the critical micelle concentration of SDS. All other assays in this study were performed with 0.6 mM SDS to preclude the possibility of surfactant activity. The surfactant Triton X-100 at its critical micelle concentration is not strongly sensed by the phasmid neurons. (B) Quantification of the reduced responses to molecules with shorter tail length or a less polar head group than SDS. SDS and sodium hexyl sulfate were tested at 0.6 mM and 1-dodecanol was tested at 1 mM. (C) Quantification of the similar phasmid responses to SDS, dodecanoate, decanoate and nonanoate. All compounds except SDS were tested at 1 mM. Note that compounds are represented as the predominant form in a pH 7 solution, the carboxylates. (D) Quantification of the similar amphid responses to SDS, dodecanoate, decanoate and undecanoate, and slower responses to nonanoate and 1-decanol. All compounds except SDS were tested at 1 mM. Note that carboxylate forms are again represented. (A\u2013C) For phasmid assays, one-way ANOVA and Tukey\u2019s post-hoc test were performed. (D) For amphid assays, two-sample z-tests and the Hochberg multiple comparison adjustment procedure were performed. (A\u2013D) For all experimental samples, n\u00a0\u2265\u00a040 for the experimental\u00a0group, n\u00a0\u2265\u00a040 for the\u00a00.6% SDS positive control, and n\u00a0\u2265\u00a040 for\u00a0the\u00a0saline buffer negative control. ***B, p<0.001; *B, p<0.05; ns B, not significant compared with a control buffer; ***S, p<0.001; ns S, not significant compared with SDS positive control. Exact values and additional pairwise comparisons are included in Figure 2\u2014source data 1 and Figure 2\u2014source data 2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23770/elife-23770-fig2-figsupp1-v1.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23770/elife-23770-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The response to SDS, dodecanoate and decanoate at the tail is shown. Note that compounds are represented as the predominant form in a pH 7 solution, the carboxylates. One-way ANOVA and Tukey\u2019s post-hoc test were performed. For all experimental samples, n\u00a0\u2265\u00a040 for the experimental\u00a0group, n\u00a0\u2265\u00a040 for the\u00a00.6% SDS positive control, and n\u00a0\u2265\u00a040 for\u00a0the\u00a0saline buffer negative control. ***B, p<0.001; ns B,not significant compared with a control buffer; ***S, p<0.001; ns S, not significant compared with SDS positive control. Exact values and additional pairwise comparisons are included in Figure 2\u2014source data 1 and Figure 2\u2014source data 2.\n\nTo determine which structural elements of SDS are required for avoidance, we tested whether the hydrocarbon chain or the polar head group in SDS was required to induce avoidance. Sodium hexyl sulfate, which has a carbon chain half the length of SDS, elicited reduced chemosensation (Figure 2B). 1-Dodecanol, which has a smaller, less polar head group but the same carbon chain length, was not sensed by the phasmid neurons (Figure 2B). These findings indicate that both the tail length and the nature of the polar head group are important for the response.\n\nAlthough SDS does not occur in nature, carboxylic acids with similar amphipathic structures do. Both SDS and these carboxylic acids have long hydrophobic alkyl tails and negatively charged head groups at pH 7. Interestingly, the NP10 strain of Streptomyces (Figure 1A) secretes carboxylic acids that\u00a0have these characteristics (Ilic-Tomic et al., 2015). We therefore used the tail drop assay to test a series of carboxylic acids of\u00a0varying chain lengths, with and without cis double-bonds (Figure 2C and Figure 2\u2014figure supplement 1), to determine which, if any, C. elegans avoid. Dodecanoic acid and decanoic acid induced a robust avoidance response in the tail (Figure 2C, Figure 2\u2014figure supplement 2). Additionally, these two compounds induce a robust avoidance response in the head (Figure 2D). Thus, sensation of these molecules in particular could contribute to\u00a0the recognition and avoidance of Streptomyces bacteria by C. elegans.\n\nTo determine whether strains of Streptomyces that secrete toxins also secrete dodecanoic acid or decanoic acid, we extracted and labeled the fatty acids secreted from Streptomyces strains and B. subtilis. We used high-resolution mass spectrometry to determine relative production levels in cell-free supernatants (Figure 3, Figure 3\u2014figure supplement 1). We\u00a0found\u00a0that\u00a0S. avermitilis, S. costaricanus and S. milbemycinicus did\u00a0indeed\u00a0secrete dodecanoic acid, whereas dodecanoic acid secretion from B. subtilis was not detected above background. A lower signal for decanoic acid was also detected. Although additional cues from Streptomyces probably contribute to the C. elegans response, our observation of dodecanoic acid supports the hypothesis that\u00a0this\u00a0molecule is a cue that\u00a0is\u00a0produced by Streptomyces.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/23770/elife-23770-fig3-v1.jpg)\n\n**Figure 3.:** Carboxylates were extracted from species of Streptomyces and labeled with a pyridinium moiety for easier detection by mass spectrometry. For example, to detect dodecanoate after Streptomyces cell-free supernatants were extracted and concentrated, dodecanoate and the other carboxylates in the extract were converted to pyridinium esters by treatment with carbonyldiimidazole (CDI) in acetonitrile (ACN).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23770/elife-23770-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Modified decanoic (C10) and dodecanoic (C12) acids were detected by LC-MS by searching for molecular weights of 278 and 306 g/mol, respectively. Modified decanoic (C10) and dodecanoic (C12) acid standards, decanoic acid in YEME control, B. subtilis control, S. avermitilis, S. milbemycinicus, and S. costaricanus\u00a0are\u00a0shown. Arrows point to decanoic and dodecanoic acid retention\u00a0times.\n\nGiven that the cue from Streptomyces is secreted, we hypothesized that a chemosensory receptor might mediate the avoidance response. There are two pairs of chemosensory neurons in the C. elegans tail that\u00a0have\u00a0exposed dendrites: the PHA and PHB chemosensory neurons (White et al., 1986; Hedgecock et al., 1985). These neurons mediate the rapid avoidance of SDS and other chemicals (Hilliard et al., 2002). In the head, additional neurons play roles in chemical avoidance, including the polymodal nociceptor ASH (Bargmann, 2006). Therefore, to identify the cognate receptor for dodecanoic acid, we performed an expression screen using existing data that\u00a0are\u00a0available on Wormbase.org (WormBase web site, 2017) for chemoreceptor\u00a0genes that are expressed in the PHA and PHB neurons and in\u00a0at least one set of head or amphid neurons. We performed RNA interference (RNAi) (Fraser et al., 2000; Kamath and Ahringer, 2003) to knock down the\u00a0function of these genes and screened for defects in the phasmid response to dodecanoic acid. We ranked the\u00a0chemoreceptor\u00a0genes by the magnitude of the defect, and focused our work on the gene whose knock-down resulted in the most severe phenotype, that\u00a0encoding\u00a0the SRB-6\u00a0G protein-coupled receptor (GPCR) (Figure 4\u2014figure supplement 1). srb-6 knock-down also resulted in the most severe defect among\u00a0knockdowns\u00a0of\u00a0srb family members (Figure 4\u2014figure supplement 1). In addition to srb-6\u2019s expression in PHA and PHB neurons in the tail, this\u00a0gene is expressed in only three sets of sensory neurons in the head; srb-6 is highly expressed in the ASH and ADL neurons, and weakly expressed in the ADF neurons (Troemel et al., 1995).\n\nTo further test the role of srb-6 in mediating the rapid avoidance response, we performed behavioral assays with srb-6 presumptive null mutants (Thompson et al., 2013). srb-6 mutants were defective in the tail (Figure 4A) and head (Figure 4B) avoidance response to species of Streptomyces and to\u00a0dodecanoic acid. These data are consistent with the requirement of this GPCR in the\u00a0avoidance of both Streptomyces and the fatty acid secreted by these bacteria. In the tail, the limited expression of the srb-6 GPCR to PHA and PHB neurons indicates that srb-6 might function in these neurons. To test this, we cloned the srb-6 cDNA and expressed it under the direction of the ocr-2 promoter. Within the tail region, this promoter selectively drives expression in the PHA and PHB neurons (Tobin et al., 2002). Expression of srb-6 in PHA and PHB significantly restored the srb-6 mutants\u2019 ability to sense both S. avermitilis and dodecanoic acid at the tail (Figure 4C). Taken together, the endogenous expression of srb-6 in PHA and PHB neurons, the ability of srb-6 expression in PHA and PHB to rescue srb-6 behavioral defects, and the role of PHA and PHB as the sole chemosensory neurons in the tail, indicate that the srb-6 GPCR probably functions in one or both of these cells.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/23770/elife-23770-fig4-v1.jpg)\n\n**Figure 4.:** (A) Quantification of the defect in the phasmid response to SDS, Streptomyces, dodecanoate and decanoate in srb-6 null mutants. (B) Quantification of the defect in the amphid response to Streptomyces, dodecanoate and decanoate in srb-6 mutants. (A\u2013D) For each Streptomyces species in each panel, cell-free supernatants were used for wild-type and srb-6 mutants. (A\u2013B) Decanoate and dodecanoate were tested at 1 mM. Note that carboxylate forms are represented. For experimental samples, n\u00a0\u2265\u00a040 for the experimental\u00a0group, n\u00a0\u2265\u00a040 for the\u00a00.6% SDS positive control, and n\u00a0\u2265\u00a040 for\u00a0the\u00a0saline buffer negative control. ***,\u00a0p<0.001; NS, not significant. (C) Quantification of the significantly rescued response of srb-6 mutant animals expressing the srb-6 cDNA under the direction of the ocr-2 promoter (pocr-2::srb-6) to S. avermitilis and dodecanoate compared with the\u00a0response\u00a0of\u00a0srb-6 mutant animals without the transgene. In the tail, the ocr-2 promoter drives\u00a0srb-6\u00a0cDNA\u00a0expression in PHA and PHB neurons. (D) Quantification of the significantly rescued response of srb-6 mutant animals carrying the pocr-2::srb-6 transgene to S. avermitilis and dodecanoate compared with that\u00a0of\u00a0srb-6 mutant animals without the transgene. In the head, the ocr-2 promoter drives expression in ASH, ADL, ADF and one other type of amphid neuron (AWA). (C\u2013D) Decanoate and dodecanoate were tested at 1 mM. Note that carboxylate forms are represented. Two similar transgenic lines were examined. For experimental samples, n\u00a0\u2265\u00a020 for the experimental\u00a0group, n\u00a0\u2265\u00a020 for the\u00a00.6% SDS positive control, and n\u00a0\u2265\u00a020 for\u00a0the\u00a0saline buffer negative control. ***,\u00a0p<0.001; **,\u00a0p<0.01; *,\u00a0p<0.05; ns, not significant. (A, C) For phasmid assays, one-factor ANOVA analysis was performed followed by two-sample t-tests and the Hochberg procedure for multiple comparisons. (B, D) For amphid assays, two-sample z-tests and the Hochberg multiple comparison adjustment procedure were performed. Exact values are included in Figure 4\u2014source data 1. (E) Calcium imaging of ASH sensory neurons in living wild-type and srb-6 mutant animals expressing GCaMP6 (Chen et al., 2013) under the direction of the srb-6 promoter upon exposure to a cell-free supernatant of S. avermitilis. The\u00a0bar graph shows\u00a0the average areas under the curve (AUC) for the period of S. avermitilis stimulation and error bars are standard error of the mean (SEM). (F) Calcium imaging of ASH neurons in living wild-type and srb-6 mutant animals expressing GCaMP6 under the direction of the srb-6 promoter upon exposure to 1 mm dodecanoate. The\u00a0bar graph represents the\u00a0average AUC for the period of dodecanoate stimulation, and error bars are SEM. (E\u2013F) Experimental animals were exposed to a control buffer for the first 15 s, then to\u00a0stimulus for 60 s, followed by control buffer. Traces show the average percent change in GCaMP6 fluorescence (\u0394F/F0) and shading indicates SEM. For experimental samples, n\u00a0\u2265\u00a015 for each genotype and stimulus. *,\u00a0p<0.05\u00a0in\u00a0a t-test. See Statistical Analysis in the Materials and methods section for additional details.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23770/elife-23770-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** RNAi was used to knock down the\u00a0expression of chemoreceptor genes (A)\u00a0expressed in PHA, PHB, and a subset of neurons in the head\u00a0and\u00a0(B)\u00a0srb\u00a0family\u00a0members.\u00a0(A-B) RNAi was performed in an eri-1(mg366) RNAi-sensitive background. Animals were assayed for their ability to respond to 1 mM dodecanoic acid exposure at the tail. Each RNAi back-up time measurement was normalized to the eri-1 value. Repeated measurements on the same RNAi strains were averaged across at least two days. One-way ANOVA and Tukey\u2019s post-hoc test were performed. ***E, p<0.001; **E, p<0.01; *E, p<0.05; NS, not significant compared with an eri-1 buffer. Exact values and additional pairwise comparisons are included in Figure 4\u2014source data 1 and Figure 4\u2014source data 2.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23770/elife-23770-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** srb-6 is highlighted in red.\u00a0Note that srb-6\u2019s closest homologs (highlighted in dark\u00a0green) are within the Caenhorabditis genus, and a larger monophyletic group contains nematode species outside the Caenhorabditis genus (highlighted in light\u00a0green). The dataset includes 100 protein sequences retrieved by BLAST with E-value\u00a0<0.0001.\n\nIn the head, the ocr-2 promoter drives expression in ASH, ADL and ADF gustatory neurons in addition to AWA olfactory neurons (Tobin et al., 2002). Using this promoter, we found that expression in this subset of neurons significantly rescued the ability of srb-6 mutants to respond to S. avermitilis and dodecanoic acid exposure at the head (Figure 4D). Although we cannot rule out a function in AWA, the endogenous expression of srb-6 in ASH, ADL and ADF (and not AWA) suggests a role in one or more of these cells.\n\nTo further test whether srb-6 could act as a receptor for both dodecanoic acid and cell-free supernatants from S. avermitilis, we visualized calcium changes in ASH neurons in wild-type and srb-6 mutant animals (Figure 4E,F). We found that calcium influx in response to both dodecanoic acid and S. avermitilis was severely reduced in srb-6 mutants, consistent with this GPCR having the ability to detect these stimuli.\n\nThe GPCR required for this avoidance response provides C. elegans with the ability to avoid potentially deadly prey. In order to understand the broader evolutionary context for this gene, we performed phylogenetic analysis of the srb-6 receptor. The srb family of chemoreceptors is nematode-specific (Troemel et al., 1995; Chen et al., 2005), consistent with a role for srb-6 in mediating nematode avoidance of Streptomyces. Phylogenetic analysis of the srb-6 receptor indicates that its closest homologs are within the Caenhorabditis genus. Although the sequences for most nematodes are not complete, the next monophyletic group contains several other species of nematodes with life cycles that include free-living soil-dwelling stages (Figure 4\u2014figure supplement 2), suggesting possible conservation of this mechanism.\n\n## Discussion\n\nOur results demonstrate that the bacteriovore C. elegans detects and escapes from Streptomyces species that secrete powerful toxins. C. elegans rapidly avoids Streptomyces\u00a0secretions, which include dodecanoic acid. Interestingly, dodecanoic acid itself has been shown to have nematicidal activity (Tarjan and Cheo, 1956; Abdel-Rahman et al., 2008; Gu et al., 2005; Dong et al., 2014; Zhang et al., 2012). The SRB-6 GPCR is essential for the rapid avoidance of Streptomyces and dodecanoic acid. SRB-6 is expressed in the only\u00a0two phasmid chemosensory neurons, PHA and PHB, as well as in\u00a0a subset of chemosensory neurons in the amphids ASH, ADL and ADF (Troemel et al., 1995). Rescue of gene expression in these cells and in\u00a0one additional amphid olfactory neuron largely restores the response of srb-6 mutants to Streptomyces and dodecanoic acid exposure at the tail or head, consistent with a\u00a0role\u00a0for\u00a0srb-6 in those, or a subset of those, cells. PHA and PHB are the only two chemosensory neurons in the hermaphrodite tail, and they\u00a0mediate a similar response to dilute SDS. ASH and ADL also mediate similar chemical avoidance responses, and ADF has been shown to play a role in salt chemotaxis (Hilliard et al., 2002; Bargmann, 2006; Jang et al., 2012). Our calcium-imaging experiments directly support a role for ASH in the SRB-6-mediated avoidance response.\n\nThe detection and escape from Streptomyces bacteria\u00a0and their secretion,\u00a0dodecanoic acid, described here\u00a0are the first environmentally relevant chemosensory functions\u00a0identified for the hermaphrodite phasmid circuit that inform our understanding of interactions with bacteria. Interestingly, a critical function of PHB phasmid sensory neurons in males has recently been discovered: sensing hermaphrodite-derived mating cues (Oren-Suissa et al., 2016). Synapses between PHBs and their normal partners in hermaphrodites are eliminated early in development, and PHBs form male-specific circuits that regulates this distinct function (Oren-Suissa et al., 2016). The hermaphrodite phasmid circuit regulates all chemosensation in the tail, suggesting that these sensilla may have evolved to allow the nematodes to avoid Streptomyces and other environmental threats. Interestingly, dodecanoic acid is secreted by crown daisy plants (Chrysanthemum coronarium L.), which are intercropped with tomatoes (Solanum lycopersicum) to prevent parasitism by root-knot nematodes (Meloidogyne incognita), and root-knot nematodes are repelled by 4 mM dodecanoic acid (but not by lower concentrations) (Dong et al., 2014). This, in addition to our phylogenetic analyses, suggests conservation among nematodes of this mechanism of escaping toxin-producing organisms that would otherwise be a good food source.\n\nIn addition to the detection of dodecanoic acid, we also discovered that decanoic acid elicits a strong escape response in C. elegans that is also mediated by the SRB-6 GPCR. However, high levels of decanoic acid are not secreted by Streptomyces. Decanoic acid has also been shown to have nematicidal properties (Tarjan and Cheo, 1956; Abdel-Rahman et al., 2008; Zhang et al., 2012), and decanoic acid, dodecanoic acid, and fatty acids of similar lengths are present in many plant seeds (Zhang et al., 2012), indicating that avoiding decanoic acid in the environment may also be important to nematodes, outside the context of bacterial avoidance.\n\nThe more well-studied interaction between C. elegans and bacterial species is the host\u2013pathogen interaction, in which bacteria infect C. elegans. Caenorhabditis elegans is frequently attracted to pathogens\u00a0initially, facilitating colonization of the host (Schulenburg et al., 2007; Meisel and Kim, 2014). In the predator\u2013prey interaction disclosed in the present work, however,\u00a0we demonstrate that C. elegans has evolved a mechanism to recognize and escape from the powerful defenses presented by Streptomyces. This avoidance mechanism probably\u00a0arose through selection pressure on GPCRs, and by\u00a0employment of reflex-like neural circuits in the head and tail sensory organs, a mechanism that may be common to other predator\u2013prey interactions. Thus, this study deepens our understanding of the molecules, neural circuitry, and behavior used in the arms race between predators and their prey.\n\n## Materials and methods\n\n### Caenorhabditis elegans strains\n\nWild-type C. elegans strains were the Bristol strain N2 or wyIs157 IV ox9 (10). Strains were maintained using standard methods (Brenner, 1974). Worms were grown at 20\u00b0C and on NGM plates seeded with OP50 E. coli (RRID:WB-STRAIN:OP50). Mutations used in this study include eri-1(mg366) (Kennedy et al., 2004), and srb-6(gk925263) II (24), which was outcrossed four times by pushing out the linked marker unc-4(e120) II; wyIs157 IV ox4(10). srb-6(gk925263) II is likely to be null, as it has an early stop codon in srb-6: Y186Amber. The outcrossed srb-6(gk925263) II; wyIs157 IV ox4 strain was sequenced to verify the substitution mutation. Transgenes used for rescue of srb-6 and maintained as extrachromosomal arrays are iyEx348 and iyEx350 (30\u201350 ng/ul pocr-2::srb-6, 40 ng/ul podr-1::GFP [L'Etoile and Bargmann, 2000]), and \u2018no transgene\u2019 srb-6 animals were odr-1::GFP negative animals from iyEx348; srb-6 and iyEx350; srb-6. ocr-2 is expressed in PHA and PHB neurons in the tail, and in ASH, ADL, ADF and AWA neurons in the head (Tobin et al., 2002). The transgene used for calcium imaging is iyEx358 (30 ng/ul psrb-6::GCaMP6 and 20 ng/ul punc-22::DsRed).\n\n### Bacterial strains and media\n\nFor solid cultures, Streptomyces was grown on mannitol-soy agar at 28\u00b0C. Bacillus subtilis was grown on mannitol-soy agar or trypticase soy agar (TSA) at 37\u00b0C. Escherichia coli for drop tests was grown on TSA at 22\u00b0C. For liquid cultures, B. subtilis was grown at 37\u00b0C in yeast extract-malt extract\u00a0(YEME) medium overnight. Streptomyces strains were grown at 28\u00b0C in YEME medium for three days. Aliquots of the bacterial culture were pelleted, and the resulting supernatants were filtered through a 0.22 \u00b5m filter. Higher-density inocula required dilution. For example, after a 3 day incubation of S. avermitilis, the resulting cell-free supernatant was diluted 1:1000 with an initial inoculum of 13,000 spores/mL, whereas an inoculum of 650 spores/mL needed no dilution in the behavior assays. Activity in the cell-free supernatant degrades over time.\n\n### Extraction and modification of fatty acids\n\nA 20 mL aliquot of bacterial culture was pelleted, and the resulting supernatant was filtered through a 0.22 \u00b5m filter. The cell-free supernatant was extracted sequentially with a 1:5 mix of methanol/methyl tert-butyl ether using a 40 mL then an\u00a080 mL portion of the organic solvents. The combined organic layers were concentrated under reduced pressure. Fatty acid derivatization was performed according to Narayana (Narayana et al., 2015). Briefly, the extraction concentrate was dissolved in 100 \u00b5L acetonitrile (ACN). A 50 \u00b5L portion of a 1 mg/mL solution of carbonyldiimidazole in ACN was added, and the tube was inverted for\u00a0mixing for 2 min. Next, 50 \u00b5L of a 50 mg/mL solution of 3-hydroxymethyl-1-methylpyridinium in 95:5 ACN/Et3N was added to the reaction tube and inverted for\u00a0mixing for an additional 2 min. The tube was heated at 40\u00b0C for 20 min. to complete the derivatization. A control of YEME medium spiked with decanoic acid was also extracted, derivatized and analyzed.\n\n### UPLC/Electrospray Ionization-MS analysis\n\nThe LC-MS analysis was performed on an Agilent 6530 Accurate Mass QToF LC/MS with a dual electrospray ionization source (Agilent) connected to a Agilent 1290 Infinity II UPLC front end equipped with an SB C18 column (1.8 um, 3.0 \u00d7 100 mm, 828975\u2013302 [Agilent]). The gas temperature was 350\u00b0C. The VCap was set to 4000V. The instrument was operated in positive ion mode under MS conditions. Absorbance threshold was set at 5000 and the relative threshold was set at 1%. Data were collected and stored in centroid form. The mobile phase system was made up of Solvent A (95:5 water:ACN\u00a0+\u00a00.1% formic acid) and Solvent B (95:5 ACN:water\u00a0+0.1% formic acid), and a flow rate of 0.2 mL/min. The column was equilibrated for 10 min at 40% B before samples were run. The method and gradient used to elute the derivatized fatty acids were: 0\u2019 to 2\u2019 40% B to 62%\u00a0B, 2\u2019 to 3\u2019 held at 62% B, 3\u2019 to 5\u2019 62%\u00a0B to 100% B, 5\u2019 to 7\u2019 held at 100%\u00a0B, 7\u2019 to 8\u2019 100% B to 40%\u00a0B, 8\u2019 to 13\u2019 40% B. All gradients were linear. The first 1.2 min of the run were sent to waste to remove underivatized tags. MS data werecollected from 1.2 min until the end of the run. Analysis was performed using Agilent MassHunter Qualitative Analysis Software. Exact masses were calculated using ChemDraw and analyzing standards. Total ionization curves (TICs) were extracted using these exact masses\u00a0\u00b1\u00a0100 ppm, the preset default by MassHunter to generate electrospray ionization\u00a0curves\u00a0(EICs). EICs were manually integrated and the area under the peak was calculated by MassHunter.\n\n### Phasmid (tail) avoidance assay\n\nTo examine the response of the phasmid neurons to repellents, tail dry-drop tests were performed as previously described (Park et al., 2011). Assays were\u00a0performed on pre-dried plates (incubated overnight at 30\u00b0C), so that the\u00a0drops quickly dry into the media, allowing sensation while eliminating wicking along the body of animals that might stimulate the head neurons. Briefly, a nose touch is administered to a day one gravid adult hermaphrodite to induce backward movement, then a capillary is used to administer a drop of either a control M13 buffer or an experimental sample behind the worm. The time that the animal backs into the drop before stopping is recorded. For Figures 1\u20132, we tested the response of at least 40 adults in M13 buffer and at least 40 adults to 0.6 mM SDS (diluted in M13) on the same day. The relative response index was calculated by dividing the average backing time into the experimental treatment by the average backing time into 0.6 mM SDS,\u00a0so\u00a0as to normalize the SDS response index to 100%. For Figure 4A and C, the relative response index was calculated as previously described (Park et al., 2011). Briefly, for the mutant animals, we divide the average backing time into the experimental treatment by the average backing time into buffer,\u00a0and normalized this ratio with the ratio of the average response time of wild-type animals to SDS and to buffer on the same day.\n\n$$\nwildtype:\\frac{\\frac{Experimentaltreatmentwildtype}{Bufferwildtype}}{\\frac{SDSwildtype}{Bufferwildtype}}=\\frac{Experimentaltreatmentwildtype}{SDSwildtype}Mutant:\\frac{\\frac{Experimentaltreatmentmutant}{Buffermutant}}{\\frac{SDSwildtype}{Bufferwildtype}}\n$$\n\nFor buffer bars in Figure 4, the experimental treatment was buffer.\n\nMost of\u00a0the\u00a0replication in our studies, including the\u00a0phasmid avoidance assays described in this section and the amphid avoidance assays and chemotaxis assays described below, was biological. Different worms are used for every measurement in a sample group, as animals might otherwise adapt to treatments or nose touches. While there may also be sources of technical variation, such as slight imprecision in time measurements, we observed little variation in backup time for individual worms moving\u00a0into saline buffer, indicating that the amount of technical variation is lprobably very low.\n\n### Amphid (head) avoidance assay\n\nTo examine the response of the amphid neurons to nonvolatile repellent, we adapted a behavioral assay developed by Hilliard and colleagues (Hilliard et al., 2002). As with the phasmid avoidance assay, tests were performed on pre-dried plates. A capillary was used to place a dry drop of either a control buffer or an experimental sample in front of a forward-moving worm. If a worm terminated forward movement and initiated backward movement after the head had contacted the dry drop area, we considered it a response. If the worm continued to move forward through the dry drop after the head region had moved into the area of the drop, then we considered that a failure to respond. Wild-type animals responded to the previously known repellent SDS the majority of the time. In the negative control buffer M13, the wild-type animals responded\u00a0only approximately 20% of the time.\n\n### Chemotaxis assay\n\nTo examine the response of nematodes to volatile cues, chemotaxis assays were conducted as previously described (Bargmann et al., 1993). Diacetyl was diluted in ethanol at 1:1000. For bacterial cultures, 1 \u00b5l of cultured bacteria was used as the experimental\u00a0stimulant, whereas the medium in which the bacteria were grown was used as a control. Chemotaxis indexes were then calculated using the equation: $chemotaxisindex=\\frac{#experimental\u2212#control}{#total}.$\n\n### Calcium imaging\n\nCalcium-imaging experiments were conducted as previously described (Krzyzanowski et al., 2013). Briefly, microfluidic devices graciously provided by H. Gemrich and S. Kato at the University of California San Francisco were used to trap and immobilize the worms, exposing their nose to a stream of the control buffer (M13) or stimulant diluted in buffer (M13). Experimental animals were exposed first to buffer, then switched to stimulant after 15 s, then switched back to buffer after 60 s of exposure. Buffer control animals were instead exposed to buffer from the second channel (see Statistical Analysis). Fluorescent images were taken at 400X magnification every half second. ImageJ64 (Abramoff et al., 2004; Rasband, 2009) and the StackReg plugin were used to measure fluorescence intensity and to\u00a0subtract background. The percent change in fluorescence intensity based on the intensity at the 15 s timepoint was calculated. High-inoculum S. avermitilis extract (13,000 spores/mL) diluted 1:50 in M13 buffer and 1 mM dodecanoic acid in M13 were used.\n\n### Statistical analysis\n\nTo calculate an appropriate sample size, we drew on our previous work using phasmid assays (Park et al., 2011), which showed that most effect sizes for mean back-up time comparisons are large. Using Cohen\u2019s d\u00a0=\u00a00.8 (which corresponds to a large effect), we calculated sample sizes of approximately 26 animals per group (for significance level alpha\u00a0=\u00a00.05, and power\u00a0=\u00a00.8). There was no reason to restrict the sample sizes for most genotypes, therefore we used samples sizes of at least 40 for most genotypes. From a pilot study using amphid assays, a representative effect size corresponded to sample proportions of approximately 0.3 and 0.8, leading to a sample size estimate of 14 animals per group (for significance level alpha\u00a0=\u00a00.05 and power\u00a0=\u00a00.8). Sample size estimates were obtained using the pwr package in R. There was no reason to restrict the sample sizes to 14 for most genotypes, therefore we used samples sizes of at least 40 for most genotypes.\n\nResults are reported in the form of P-values in the\u00a0figures (*,\u00a0p<0.05; **,\u00a0p<0.01; ***,\u00a0p<0.001;\u00a0NS, p>0.05), and exact P-values are reported in the\u00a0source data files for the\u00a0figures. P-values provide precise information about whether two populations differ significantly in either means or proportions.\n\nFor the amphid (head) avoidance assay, statistical significance was determined by two-independent-sample z-tests, followed by the Hochberg procedure. Independent sample z-tests can be used to compare two population proportions if the sample sizes are sufficiently large. The Hochberg procedure is a standard procedure applied to adjust for the tendency to reject a null hypothesis incorrectly\u00a0when multiple comparison are made, and can only conservatively increase P-values. A multiple comparison procedure is required whenever several conclusions are drawn from the same group of data in order to assure that the overall error rate for a type I error is still bound by the chosen significance level (here 0.05, 0.01, 0.001). For phasmid (tail) response assays in Figures 1 and 2, a one-way ANOVA model\u00a0to compare the means of three or more populations was fitted in R. Tukey\u2019s post-hoc test was performed in R to compare the means of the individual treatments while simultaneously adjusting for multiple comparisons. For the\u00a0phasmid (tail) response assays reported\u00a0in Figure 4, data representing mean length or means of percentages were analyzed with two-sample t-tests followed by the Hochberg procedure for multiple comparisons. For the pair-wise comparison of population means in the chemotaxis assays, Tukey\u2019s post-hoc test was used to adjust for multiple comparisons.\n\nEffect sizes (Cohen\u2019s d) for major results include the following: wild-type phasmid response to S. avermitilis cell-free supernatant compared with buffer\u00a0\u2013 2.8; wild-type amphid response to S. avermitilis compared with buffer\u00a0\u2013 1.4; wild-type phasmid response to dodecanoic acid compared with buffer\u00a0\u2013 2.1; wild-type amphid response to dodecanoic acid compared with buffer\u00a0\u20131.4; srb-6 phasmid response to dodecanoic acid compared to wild-type phasmid response to dodecanoic acid\u00a0\u2013 1.8; srb-6 amphid response to dodecanoic acid compared to wild-type amphid response to dodecanoic acid\u00a0\u2013 0.54.\n\nFor calcium-imaging experiments, we normalized the two different compound treatments to animals exposed to buffer in the first channel, then buffer in the second channel, then buffer in the first channel again (buffer control) by subtracting the averaged time series in the buffer control worms from each individual treatment time series. Then we computed the area under the curve during exposure to stimulus (15\u201375 s) for each individual normalized worm, and compared wild-type to srb-6 using a two-sample t-test. We did this separately for the two different treatments.\n\n### RNAi feeding experiments\n\nThe RNAi feeding screen was performed using the Ahringer library (Fraser et al., 2000) according to the Source BioScience protocol using the RNAi-sensitive strain eri-1(mg366) (Kennedy et al., 2004). L4s were picked onto plates seeded with each RNAi strain, and their adult progeny were tested for defects in responding to dodecanoic acid exposure at the tail. Assays were performed on at least two days for each RNAi clone.\n\n### Cloning and transgenics\n\nTo generate the pocr-2::srb-6 construct, the srb-6 cDNA was amplified from an N2 cDNA library, adding 5' NcoI and 3' SacI sites, subcloned into the NcoI-SacI fragment of pSMdelta (a generous gift from S. McCarroll, Harvard University, Cambridge, MA), and sequenced to generate pSMdelta::srb-6. The srb-6 sequence was identical to that predicted on Wormbase.org (WormBase web site, 2017). The ocr-2 promoter was amplified from N2 genomic DNA, adding 5' SphI and 3' SmaI sites, and subcloned into the SphI-SmaI fragment of pSMdelta::srb-6 to generate pocr-2::srb-6. To generate transgenic strains, pocr-2::srb-6 and the podr-1::GFP (37) coinjection marker were injected into srb-6(gk925263) ox6 unc-4(e120) trans-heterozygotes, non-Unc GFP-positive F1 hermaphrodites were singled out, F2 plates with no Unc F2 progeny were selected, and their progeny assayed for their response to S. avermitilis and dodecanoic acid and then\u00a0sequenced. Defects in sensing S. avermitilis and dodecanoic acid were functionally assessed in non-array-carrying animals. To generate the calcium marker, the srb-6 promoter (Troemel et al., 1995) was amplified from genomic DNA, adding 5\u2019 AfeI and 3\u2019 XmaI sites, and inserted into the AfeI-XmaI fragment of flp-6::GCaMP6 to generate psrb-6::GCaMP6. To generate transgenic strains, psrb-6::GCaMP6 and the punc-122::DsRed coinjection marker were injected into unc-4(e120) heterozygotes. Wild-type and unc-4 mutants were isolated, srb-6(gk925263) ox6 was crossed into unc-4 mutants, srb-6 was homozygosed by pushing out the linked unc-4 gene, and the resulting lines were sequenced.\n\n### Phylogenetic analysis\n\nThe phylogenetic tree in Figure 1A was constructed using the Maximum Likelihood method based on the Hasegawa-Kishino-Yano model (Hasegawa et al., 1985). The tree with the highest log likelihood is shown. The percentage of trees in which the associated taxa clustered together is shown next to the branches. Initial tree(s) for the heuristic search were obtained automatically by applying Neighbor-Join and BioNJ algorithms to a matrix of pairwise distances estimated using the Maximum Composite Likelihood (MCL) approach, and then selecting the topology with superior log likelihood value. The analysis involved five nucleotide sequences. There were a total of 1753 positions in the final dataset. Evolutionary analyses were conducted in MEGA7 (Kumar et al., 2016).\n\nThe C. elegans SRB-6 protein sequence record P54141.1 (aka NP_496199.1) was retrieved from NCBI. A pre-computed BLAST (RRID:SCR_004870) search was retrieved (https://www.ncbi.nlm.nih.gov/sutils/blink.cgi?pid=1711518). A BLAST search conducted against non-redundant database (nr) was re-run using the same settings. A dataset containing exactly 100 protein sequences was retrieved by BLAST with E-value\u00a0<0.0001. A phylogenetic tree was built using the\u00a0online web-server http://www.phylogeny.fr/\n",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "bd0f815a-ca62-4b78-a0cc-a40e7759d3da",
+      "submission_id": "ade40241-818d-44bb-bb23-7f6ca3c12a7d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Oliver Hobert, Howard Hughes Medical Institute, Columbia University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.23770.019](https://doi.org/10.7554/eLife.23770.019)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"C. elegans avoids toxin-producing Streptomyces using a seven transmembrane domain chemosensory receptor\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Oliver Hobert as Reviewing Editor and a Senior Editor. The following individual involved in review of your submission has agreed to reveal her identity: Leslie B Vosshall (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe reviewers appreciate the description of a potential mechanism by which C. elegans nematodes detect and avoid toxic bacteria. The paper catalogues the species of bacteria that induce avoidance responses, use analytical chemistry to identify the bioactive repellents, and discover the sensory neurons and receptors responsible. The work is an engaging read on many levels: behavioral neuroscience, chemical ecology, and chemoreceptor biology.\n\nThe main experimental issue that needs to be addressed is based on the fact that the srb-6 phenotype is based on a single allele and no rescue data is provided. Since the focus of srb-6 action is also not explored, the reviewers suggest addressing both issues simultaneously by rescuing the srb-6 phenotype with available neuron-type specific promoters. This would confirm that srb-6 is indeed responsible for the phenotype and assess where the gene acts.\n\nOther points that need to be fixed, but may not require further experimentation:\n\n1) Statistical analysis throughout seems flawed. Rather than comparing everything to the saline buffer control and reporting significance relative to this, can the authors do ANOVA analysis and show us which of the data points differ from each other? Conventional presentation is to label plots that differ at some significance level with different letters.\n\n2) It's not clear from the experiments what the actual link is between Streptomyces avoidance and dodecanoate (dodecanoic acid? see comment below) avoidance. First, most compounds that were tested elicited an avoidance response in this assay, and presumably many other bacterial metabolites that were not tested would also elicit a similar response. Second, what concentrations of metabolites were tested? This information does not appear to be provided. Was dose-response analysis performed?\n\n3) There is confusion about the actual compounds that were tested. The authors refer to \"dodecanoate\" and \"decanoate\" as the tested compounds. But this isn't actually a compound. Does this mean sodium dodecanoate and sodium decanoate, or dodecanoic acid and decanoic acid? Based on the chemical structures in Figure 2, I'm guessing it was the acids that were tested. But then in the Discussion, \"dodecanoate\" is mentioned in the same paragraph as \"dodecanoic acid\" as if these are two different compounds. The authors need to specify exactly which chemicals they are testing and refer to them consistently throughout the paper. A table with CAS numbers would be helpful. Also, these compounds are referred to as \"water-soluble cues\" when I don't think they are very water-soluble.\n\n4) Results paragraph three: This paragraph is confusing. Is there a reason to think that PHA and PHB only sense SDS and similar compounds? Also, how does the conclusion that Streptomyces is unlikely to act by physically disrupting the nematode follow from the fact that the surfactant activity of SDS is not required for avoidance? If PHA and PHB express multiple chemoreceptors, presumably they can sense a number of unrelated compounds.\n\n5) Figure 2:\n\na) It would help to show molecular structures for C and E in addition to D.\n\nb) It would be helpful to show statistics relative to the SDS positive control in addition to the buffer negative control. Based only on comparisons to the buffer control, it's hard to tell which compounds are as effective as SDS in eliciting an avoidance response.\n\nc) In E, why are only a subset of the tested compounds listed in the legend? Also, why was a two-sample z-test used? I thought a z-test was for cases where you know there are two different populations embedded within the larger population (e.g. males vs. females).\n\n6) Figure 3: The legend needs to be more detailed to be comprehensible to a non-chemist.\n\n7) Figure 4: The authors mention that they did an expression screen, but no details are provided. Was this by transcriptional profiling? Using existing data available on WormBase? Were other receptors found that were also expressed in the PHA and PHB neurons in addition to a subset of amphid neurons? Since there is no information about the expression screen, it's not clear how unique srb-6 really is. A rationale should be provided for why srb-6 was picked for analysis.\n\n8) Along the same lines as previous point: Have other GRCR mutants with similar expression pattern been tested for Streptomyces avoidance; if so, this data could be provided as control? Similarly, have other srb genes been tested? It would also be nice to see data for a screen of other srb mutants to see if the defect seen with srb-6 is really specific to srb-6.\n\n9) The authors show that srb-6 mutants are defective in their response to S. avermitilis. Have Streptomyces species been tested? If srb-6 is the primary receptor gene required for avoidance of Streptomyces, you'd expect srb-6 mutants to be defective in their avoidance of all three species.\n\n10) Figure 4\u2014figure supplement 1: It would help to highlight srb-6 so it is easier to find it in the phylogenetic tree. Also, aren't all of the srb genes nematode-specific?\n\n11) Were the behavioral experiments performed across multiple days to control for day-to-day variation in behavior?\n\n12) It would improve presentation clarity if the authors de-cluttered their plots by eliminated extraneous vertical lines to mark off the axis units\n\n13) Figure 1\u2014figure supplement 2 contains bar plots, which should be converted to box plots or dot plots so that readers can see something closer to the raw data\n\n14) Figure 2A and 3A: hard to see the black text on top of the cyan semi-circle. Maybe play with color to enhance clarity\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting your revised article \"C. elegans avoids toxin-producing Streptomyces using a seven transmembrane domain chemosensory receptor\" for consideration by eLife. Your article has been reviewed by two peer reviewers and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nIt was generally agreed upon that the revisions did not properly address the concerns raised in the original review. The specific problems are as follows:\n\n1) Figures 4 D and E need to be modified to include data from the mutant. Mutant rescue cannot be interpreted without side-by-side data from the mutant vs. wild type vs. mutant rescue. From the graph, it looks like the authors did not test wt, srb-6, and ocr-2::srb-6 in parallel. However, in the methods section, the authors say that they injected the rescue construct into srb-6 mutants, and in the behavioral assays they tested \"non-array carrying animals (data not shown)\". Based on this statement, it's possible that the authors did test wt, srb-6 (non-array carrying animals), and ocr-2::srb-6 in parallel, but for some reason didn't show this. If this really is what they did, they should show the data and do the appropriate statistics to show that srb-6 mutants are different from wt and the rescue line when tested in parallel. If this is not what they did, the authors need to repeat the experiment and test the three genotypes in parallel.\n\n2) Figure 4 D: where is the missing \"wild type buffer\" control?\n\n3) Since the authors have not individually rescued srb-6 function in each of the 5 neurons in which it is expressed, they should soften language and interpretations about circuitry accordingly.\n\n4) The authors' description of the rescue is ambiguous. In the main text, they say that they used a promoter that \"drives expression selectively in PHA and PHB.\" However, they chose a promoter that is expressed in PHA, PHB, ASH, ADL, ADF, and AWA. The language implies to me that srb-6 is only expressed in the phasmid neurons, but this is not the case. In the Materials and methods, they also talk about \"cell-specific rescue,\" which again is ambiguous.\n",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c974d718-3322-42bb-a188-0baecbf54b21",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C1",
+      "claim": "Streptomyces avermitilis, S. milbemycinicus, and S. costaricanus all produce potent nematicides or antinematodal compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Streptomyces avermitilis, S. milbemycinicus, and S. costaricanus all produce potent nematicides or antinematodal compounds (Miller et al., 1979; Burg et al., 1979; Egerton et al., 1979; Takiguchi et al., 1980; Dicklow et al., 1993; Esnard et al., 1995) (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research and reference to Figure 1A showing phylogenetic relationships.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "65c943db-be5a-4f1d-b549-6ac1c267de6f",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C2",
+      "claim": "Avermectin and milbemycin paralyze nematodes by irreversibly opening invertebrate glutamate-gated chloride channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these bacteria have been used to produce drugs against nematode infections, such as avermectin and milbemycin, which paralyze nematodes by irreversibly opening invertebrate glutamate-gated chloride channels (Cully et al., 1994; Holden-Dye and Walker, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research on the mechanism of action of these compounds.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "9bc5b750-d548-4c05-898d-f2411b37e421",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C3",
+      "claim": "Little is known about whether or how C. elegans recognizes and responds to Streptomyces in the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this usage, little is known about whether or how C. elegans recognizes and responds to Streptomyces in the environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "6882321f-12cf-40b5-9d9d-e385d197550a",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C4",
+      "claim": "C. elegans rapidly halts backwards movement when exposed to Streptomyces strains at the tail.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, animals rapidly halted backwards movement when exposed to Streptomyces strains but not Escherichia coli, a Gram-negative species used to feed worms in the laboratory, or Bacillus subtilis, a Gram-positive species found in soil and vegetation (WilpatWipat and Harwood, 1999) (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C from phasmid behavioral assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "83b98a82-c7ec-40dd-a768-dd912a12aafa",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C5",
+      "claim": "C. elegans does not rapidly halt backwards movement when exposed to E. coli or B. subtilis at the tail.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, animals rapidly halted backwards movement when exposed to Streptomyces strains but not Escherichia coli, a Gram-negative species used to feed worms in the laboratory, or Bacillus subtilis, a Gram-positive species found in soil and vegetation (WilpatWipat and Harwood, 1999) (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C from phasmid behavioral assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "18bac0ee-052e-4f37-9151-f48fb052e37f",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C6",
+      "claim": "C. elegans have the ability to recognize and specifically avoid Streptomyces.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that C. elegans have the ability to recognize and specifically avoid Streptomyces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the behavioral data showing selective avoidance of Streptomyces but not other bacteria.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "c70d1877-8c25-43a3-8bc3-b0d11ea5b83c",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C7",
+      "claim": "The avoidance response to Streptomyces is comparable to the response to SDS.",
+      "claim_type": "EXPLICIT",
+      "source": "The avoidance response to Streptomyces is comparable to the response to SDS (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C comparing response magnitudes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "bf3ce866-335d-429d-94c4-5edd4f61d21e",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C8",
+      "claim": "The tail-mediated response to Streptomyces is due to a secretion product.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that the tail-mediated response to Streptomyces is due to a secretion product, as animals responded similarly to cell-free supernatants (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis supported by experimental data showing similar responses to cell-free supernatants.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "87832fb1-e5b7-4577-9ef2-e69db5bf331b",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C9",
+      "claim": "C. elegans exposed to S. avermitilis, S. milbemycinicus or S. costaricanus at the head usually halt movement, avoiding Streptomyces.",
+      "claim_type": "EXPLICIT",
+      "source": "Animals exposed to a control buffer, E. coli or B. subtilis at the head usually continued moving forward, but animals exposed to S. avermitilis, S. milbemycinicus or S. costaricanus usually halted movement, avoiding Streptomyces (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1E from amphid behavioral assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "a256bd11-bd91-40fc-9c0b-7a3f6d1a50da",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C10",
+      "claim": "C. elegans exposed to control buffer, E. coli or B. subtilis at the head usually continue moving forward.",
+      "claim_type": "EXPLICIT",
+      "source": "Animals exposed to a control buffer, E. coli or B. subtilis at the head usually continued moving forward, but animals exposed to S. avermitilis, S. milbemycinicus or S. costaricanus usually halted movement, avoiding Streptomyces (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1E from amphid behavioral assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "4c72d384-a59c-4138-a70c-5b1d34c6fccc",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C11",
+      "claim": "C. elegans recognize Streptomyces at the head.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that C. elegans also recognize Streptomyces at the head.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the behavioral data showing avoidance at the head.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "6982481a-658a-4249-a494-273807aa9a7b",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C12",
+      "claim": "C. elegans did not demonstrate avoidance in chemotaxis assays designed to test responses to volatile odorants.",
+      "claim_type": "EXPLICIT",
+      "source": "C elegans did not demonstrate avoidance in chemotaxis assays designed to test responses to volatile odorants, suggesting that direct contact is required (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "874d53cf-20b6-429b-b201-b64c51250e67",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C13",
+      "claim": "Direct contact is required for C. elegans avoidance of Streptomyces.",
+      "claim_type": "EXPLICIT",
+      "source": "C elegans did not demonstrate avoidance in chemotaxis assays designed to test responses to volatile odorants, suggesting that direct contact is required (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the lack of response in volatile odorant assays.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "4656bd68-116a-4b14-95b5-b3bd75f51bf6",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C14",
+      "claim": "The surfactant activity of SDS is not required for the avoidance response.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the surfactant activity of SDS was not required for the avoidance response, as concentrations ten-fold below the critical micelle concentration (Rahman and Brown, 1983) were still avoided (Figure 2A, Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data showing avoidance at concentrations below the critical micelle concentration.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "efde72de-c5e0-43f9-b2d8-e983d956c497",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C15",
+      "claim": "Triton X-100 at its critical micelle concentration does not elicit a strong avoidance response.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, a surfactant (Triton X-100) at its critical micelle concentration (Tiller et al., 1984) did not elicit a strong avoidance response (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A and citation to the critical micelle concentration.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "d3133b29-aeae-4b48-87fd-cb79d43308b8",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C16",
+      "claim": "SDS is unlikely to elicit a response through a non-specific detergent effect.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that SDS is unlikely to elicit a response through a non-specific detergent effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data showing that surfactant activity is not required.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "600ad2e3-ccf3-427d-832a-bda8807ea7d1",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C17",
+      "claim": "Sodium hexyl sulfate, which has a carbon chain half the length of SDS, elicits reduced chemosensation.",
+      "claim_type": "EXPLICIT",
+      "source": "Sodium hexyl sulfate, which has a carbon chain half the length of SDS, elicited reduced chemosensation (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "1d213c87-1327-40ad-bed7-af6b196705db",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C18",
+      "claim": "1-Dodecanol was not sensed by the phasmid neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "1-Dodecanol, which has a smaller, less polar head group but the same carbon chain length, was not sensed by the phasmid neurons (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "dc4d2580-8802-4d99-811f-ee0bc0ad8156",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C19",
+      "claim": "Both the tail length and the nature of the polar head group are important for the avoidance response.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that both the tail length and the nature of the polar head group are important for the response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the structure-activity relationship data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "6ecebad0-1a26-49e8-85c7-1c0eda658c9a",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C20",
+      "claim": "The NP10 strain of Streptomyces secretes carboxylic acids.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the NP10 strain of Streptomyces (Figure 1A) secretes carboxylic acids that have these characteristics (Ilic-Tomic et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to prior research and reference to Figure 1A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "dea9401c-2cb2-45e8-b23b-60fb8f126265",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C21",
+      "claim": "Dodecanoic acid induces a robust avoidance response in the tail.",
+      "claim_type": "EXPLICIT",
+      "source": "Dodecanoic acid and decanoic acid induced a robust avoidance response in the tail (Figure 2C, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2C and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "7f68cd77-0f1f-42a1-8040-99969f168c47",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C22",
+      "claim": "Decanoic acid induces a robust avoidance response in the tail.",
+      "claim_type": "EXPLICIT",
+      "source": "Dodecanoic acid and decanoic acid induced a robust avoidance response in the tail (Figure 2C, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2C and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "2e1ba9ce-4126-4737-9ed2-afd834beeecc",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C23",
+      "claim": "Dodecanoic acid induces a robust avoidance response in the head.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, these two compounds induce a robust avoidance response in the head (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "c7143ab0-d291-403a-80aa-2f8713756c8a",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C24",
+      "claim": "Decanoic acid induces a robust avoidance response in the head.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, these two compounds induce a robust avoidance response in the head (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "409fce73-4ab9-4514-91a0-a613a138f342",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C25",
+      "claim": "Sensation of dodecanoic acid and decanoic acid could contribute to the recognition and avoidance of Streptomyces bacteria by C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, sensation of these molecules in particular could contribute to the recognition and avoidance of Streptomyces bacteria by C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the behavioral data showing avoidance of these compounds.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "07ba44df-aae4-46b6-8e40-f7f6bdd0eedd",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C26",
+      "claim": "S. avermitilis, S. costaricanus and S. milbemycinicus secrete dodecanoic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that S. avermitilis, S. costaricanus and S. milbemycinicus did indeed secrete dodecanoic acid, whereas dodecanoic acid secretion from B. subtilis was not detected above background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mass spectrometry data described in the text and shown in Figure 3 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "7539dca8-be21-4be8-afa6-209310fafa19",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C27",
+      "claim": "Dodecanoic acid secretion from B. subtilis was not detected above background.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that S. avermitilis, S. costaricanus and S. milbemycinicus did indeed secrete dodecanoic acid, whereas dodecanoic acid secretion from B. subtilis was not detected above background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mass spectrometry data described in the text and shown in Figure 3 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "70f7a46d-d5e5-410c-b2ce-3d5d7e6ff198",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C28",
+      "claim": "A lower signal for decanoic acid was detected in Streptomyces secretions.",
+      "claim_type": "EXPLICIT",
+      "source": "A lower signal for decanoic acid was also detected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mass spectrometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "2d214ffd-7577-465e-a7c3-b82a72eedad4",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C29",
+      "claim": "Additional cues from Streptomyces probably contribute to the C. elegans response.",
+      "claim_type": "EXPLICIT",
+      "source": "Although additional cues from Streptomyces probably contribute to the C. elegans response, our observation of dodecanoic acid supports the hypothesis that this molecule is a cue that is produced by Streptomyces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the complexity of bacterial secretions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "40dd6db0-cbd9-42f4-b038-5fc74625f5b6",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C30",
+      "claim": "Dodecanoic acid is a cue that is produced by Streptomyces.",
+      "claim_type": "EXPLICIT",
+      "source": "Although additional cues from Streptomyces probably contribute to the C. elegans response, our observation of dodecanoic acid supports the hypothesis that this molecule is a cue that is produced by Streptomyces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mass spectrometry data showing dodecanoic acid in Streptomyces secretions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "a3443a50-4ad7-4510-b0b7-a6f4e7579041",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C31",
+      "claim": "There are two pairs of chemosensory neurons in the C. elegans tail that have exposed dendrites: the PHA and PHB chemosensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "There are two pairs of chemosensory neurons in the C. elegans tail that have exposed dendrites: the PHA and PHB chemosensory neurons (White et al., 1986; Hedgecock et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior anatomical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "110c5361-4d98-46c8-9458-8465b140aec6",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C32",
+      "claim": "PHA and PHB neurons mediate the rapid avoidance of SDS and other chemicals.",
+      "claim_type": "EXPLICIT",
+      "source": "These neurons mediate the rapid avoidance of SDS and other chemicals (Hilliard et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "fef364b2-cccf-4a44-81f7-b198a50c1302",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C33",
+      "claim": "The polymodal nociceptor ASH plays a role in chemical avoidance in the head.",
+      "claim_type": "EXPLICIT",
+      "source": "In the head, additional neurons play roles in chemical avoidance, including the polymodal nociceptor ASH (Bargmann, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "7d3663d0-1341-4858-bc67-03c6a0a4b894",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C34",
+      "claim": "srb-6 is expressed in the PHA and PHB neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed RNA interference (RNAi) (Fraser et al., 2000; Kamath and Ahringer, 2003) to knock down the function of these genes and screened for defects in the phasmid response to dodecanoic acid. We ranked the chemoreceptor genes by the magnitude of the defect, and focused our work on the gene whose knock-down resulted in the most severe phenotype, that encoding the SRB-6 G protein-coupled receptor (GPCR) (Figure 4\u2014figure supplement 1). srb-6 knock-down also resulted in the most severe defect among knockdowns of srb family members (Figure 4\u2014figure supplement 1). In addition to srb-6's expression in PHA and PHB neurons in the tail, this gene is expressed in only three sets of sensory neurons in the head; srb-6 is highly expressed in the ASH and ADL neurons, and weakly expressed in the ADF neurons (Troemel et al., 1995).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to prior expression data and RNAi screening results.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "1cb5a281-9783-41df-9b97-7f080903c00a",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C35",
+      "claim": "srb-6 is highly expressed in the ASH and ADL neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to srb-6's expression in PHA and PHB neurons in the tail, this gene is expressed in only three sets of sensory neurons in the head; srb-6 is highly expressed in the ASH and ADL neurons, and weakly expressed in the ADF neurons (Troemel et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior expression data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "da9bb1b9-4922-4f6d-8584-31b53fce4f18",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C36",
+      "claim": "srb-6 is weakly expressed in the ADF neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to srb-6's expression in PHA and PHB neurons in the tail, this gene is expressed in only three sets of sensory neurons in the head; srb-6 is highly expressed in the ASH and ADL neurons, and weakly expressed in the ADF neurons (Troemel et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior expression data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "da54bafa-5c1a-4848-9189-0a9918a891c8",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C37",
+      "claim": "srb-6 mutants are defective in the tail avoidance response to species of Streptomyces.",
+      "claim_type": "EXPLICIT",
+      "source": "srb-6 mutants were defective in the tail (Figure 4A) and head (Figure 4B) avoidance response to species of Streptomyces and to dodecanoic acid.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "dbad7ef9-93cc-4155-8045-d4302391e938",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C38",
+      "claim": "srb-6 mutants are defective in the tail avoidance response to dodecanoic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "srb-6 mutants were defective in the tail (Figure 4A) and head (Figure 4B) avoidance response to species of Streptomyces and to dodecanoic acid.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "efbda5f7-b867-47ae-9647-8003b05c8fe5",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C39",
+      "claim": "srb-6 mutants are defective in the head avoidance response to species of Streptomyces.",
+      "claim_type": "EXPLICIT",
+      "source": "srb-6 mutants were defective in the tail (Figure 4A) and head (Figure 4B) avoidance response to species of Streptomyces and to dodecanoic acid.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "ae2f92c7-83d3-4279-bfb6-938f3d670884",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C40",
+      "claim": "srb-6 mutants are defective in the head avoidance response to dodecanoic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "srb-6 mutants were defective in the tail (Figure 4A) and head (Figure 4B) avoidance response to species of Streptomyces and to dodecanoic acid.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "e9e5ccd4-0c02-457a-aa67-5830ef93ee65",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C41",
+      "claim": "The srb-6 GPCR is required for the avoidance of both Streptomyces and the fatty acid secreted by these bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with the requirement of this GPCR in the avoidance of both Streptomyces and the fatty acid secreted by these bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the mutant phenotype data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "bc6b663d-86ad-4a53-8b32-04e4b21dfb6b",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C42",
+      "claim": "Expression of srb-6 in PHA and PHB significantly restores the srb-6 mutants' ability to sense both S. avermitilis and dodecanoic acid at the tail.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of srb-6 in PHA and PHB significantly restored the srb-6 mutants' ability to sense both S. avermitilis and dodecanoic acid at the tail (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental rescue data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "6bd1c219-2e36-4130-a5bd-65017c1c9256",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C43",
+      "claim": "The srb-6 GPCR probably functions in one or both of the PHA and PHB cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the endogenous expression of srb-6 in PHA and PHB neurons, the ability of srb-6 expression in PHA and PHB to rescue srb-6 behavioral defects, and the role of PHA and PHB as the sole chemosensory neurons in the tail, indicate that the srb-6 GPCR probably functions in one or both of these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from expression, rescue, and anatomical data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "4de15edb-a742-4940-8c70-58f057da3ea8",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C44",
+      "claim": "Expression of srb-6 in ASH, ADL, ADF and AWA neurons significantly rescues the ability of srb-6 mutants to respond to S. avermitilis and dodecanoic acid exposure at the head.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this promoter, we found that expression in this subset of neurons significantly rescued the ability of srb-6 mutants to respond to S. avermitilis and dodecanoic acid exposure at the head (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental rescue data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "caf8cedd-bb1b-4ca3-a3b6-ea040dbfa9dd",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C45",
+      "claim": "The endogenous expression of srb-6 in ASH, ADL and ADF (and not AWA) suggests a role in one or more of these cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we cannot rule out a function in AWA, the endogenous expression of srb-6 in ASH, ADL and ADF (and not AWA) suggests a role in one or more of these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from expression data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "8afa0121-ab4e-41c2-a703-329eb07d0055",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C46",
+      "claim": "Calcium influx in ASH neurons in response to dodecanoic acid is severely reduced in srb-6 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that calcium influx in response to both dodecanoic acid and S. avermitilis was severely reduced in srb-6 mutants, consistent with this GPCR having the ability to detect these stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by calcium imaging data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "7d377c04-1e98-48b1-92f8-cba80b343be5",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C47",
+      "claim": "Calcium influx in ASH neurons in response to S. avermitilis is severely reduced in srb-6 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that calcium influx in response to both dodecanoic acid and S. avermitilis was severely reduced in srb-6 mutants, consistent with this GPCR having the ability to detect these stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by calcium imaging data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "fb127931-2d5e-4074-80b6-6845460ef3c0",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C48",
+      "claim": "The srb-6 GPCR has the ability to detect dodecanoic acid and S. avermitilis.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that calcium influx in response to both dodecanoic acid and S. avermitilis was severely reduced in srb-6 mutants, consistent with this GPCR having the ability to detect these stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the calcium imaging data in mutants.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "f0b577e6-dda5-4435-9931-97dad9b4c7b5",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C49",
+      "claim": "The GPCR required for this avoidance response provides C. elegans with the ability to avoid potentially deadly prey.",
+      "claim_type": "EXPLICIT",
+      "source": "The GPCR required for this avoidance response provides C. elegans with the ability to avoid potentially deadly prey.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the functional data showing the role of srb-6 in avoidance.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "be66b904-1174-45bd-91ea-39b5f7e3ce98",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C50",
+      "claim": "The srb family of chemoreceptors is nematode-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "The srb family of chemoreceptors is nematode-specific (Troemel et al., 1995; Chen et al., 2005), consistent with a role for srb-6 in mediating nematode avoidance of Streptomyces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research on the srb family.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "29a4cd84-2468-4a1a-9eb9-a48348625aad",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C51",
+      "claim": "The closest homologs of srb-6 are within the Caenhorabditis genus.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic analysis of the srb-6 receptor indicates that its closest homologs are within the Caenhorabditis genus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by phylogenetic analysis shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "10651460-635f-46ff-ad7a-2fd4061515f3",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C52",
+      "claim": "The next monophyletic group of srb-6 homologs contains several other species of nematodes with life cycles that include free-living soil-dwelling stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the sequences for most nematodes are not complete, the next monophyletic group contains several other species of nematodes with life cycles that include free-living soil-dwelling stages (Figure 4\u2014figure supplement 2), suggesting possible conservation of this mechanism.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phylogenetic analysis shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "3a8dc2e9-13e9-4b9f-861b-c9173e59f94c",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C53",
+      "claim": "There is possible conservation of the srb-6-mediated avoidance mechanism among nematodes with free-living soil-dwelling stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the sequences for most nematodes are not complete, the next monophyletic group contains several other species of nematodes with life cycles that include free-living soil-dwelling stages (Figure 4\u2014figure supplement 2), suggesting possible conservation of this mechanism.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculation based on phylogenetic analysis.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "a4813afa-0f2d-48c0-a3c4-ea73b6d2a9a5",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C54",
+      "claim": "The bacteriovore C. elegans detects and escapes from Streptomyces species that secrete powerful toxins.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that the bacteriovore C. elegans detects and escapes from Streptomyces species that secrete powerful toxins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings supported by the behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "4a9f6c9c-e58f-4eea-8c3c-27cc9531a4dc",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C55",
+      "claim": "C. elegans rapidly avoids Streptomyces secretions, which include dodecanoic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans rapidly avoids Streptomyces secretions, which include dodecanoic acid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the behavioral and chemical findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "7882881a-4aac-4e54-b699-1de96863232d",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C56",
+      "claim": "Dodecanoic acid has nematicidal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, dodecanoic acid itself has been shown to have nematicidal activity (Tarjan and Cheo, 1956; Abdel-Rahman et al., 2008; Gu et al., 2005; Dong et al., 2014; Zhang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "621aa6a2-8b0d-4a33-928b-3528a7357977",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C57",
+      "claim": "The SRB-6 GPCR is essential for the rapid avoidance of Streptomyces and dodecanoic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "The SRB-6 GPCR is essential for the rapid avoidance of Streptomyces and dodecanoic acid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the genetic findings showing defects in srb-6 mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "60a542d5-2964-487f-915d-5751c18990c8",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C58",
+      "claim": "PHA and PHB are the only two chemosensory neurons in the hermaphrodite tail.",
+      "claim_type": "EXPLICIT",
+      "source": "PHA and PHB are the only two chemosensory neurons in the hermaphrodite tail, and they mediate a similar response to dilute SDS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "cb570333-2be0-4009-8b2f-c18ad01faac5",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C59",
+      "claim": "ASH and ADL mediate similar chemical avoidance responses.",
+      "claim_type": "EXPLICIT",
+      "source": "ASH and ADL also mediate similar chemical avoidance responses, and ADF has been shown to play a role in salt chemotaxis (Hilliard et al., 2002; Bargmann, 2006; Jang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "f289b1c1-9b10-48c7-a99c-b326fbdfd147",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C60",
+      "claim": "ADF has been shown to play a role in salt chemotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "ASH and ADL also mediate similar chemical avoidance responses, and ADF has been shown to play a role in salt chemotaxis (Hilliard et al., 2002; Bargmann, 2006; Jang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "b4d12c18-3814-4311-9eba-e1f65b1eca89",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C61",
+      "claim": "Calcium-imaging experiments directly support a role for ASH in the SRB-6-mediated avoidance response.",
+      "claim_type": "EXPLICIT",
+      "source": "Our calcium-imaging experiments directly support a role for ASH in the SRB-6-mediated avoidance response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by calcium imaging data shown in Figure 4E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "c26007ce-72bc-49f9-982f-92da32c5c578",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C62",
+      "claim": "The detection and escape from Streptomyces bacteria and their secretion, dodecanoic acid, are the first environmentally relevant chemosensory functions identified for the hermaphrodite phasmid circuit that inform our understanding of interactions with bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "The detection and escape from Streptomyces bacteria and their secretion, dodecanoic acid, described here are the first environmentally relevant chemosensory functions identified for the hermaphrodite phasmid circuit that inform our understanding of interactions with bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the novelty of the findings in the context of prior knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "d09e15c0-c003-4187-ac34-0140d92fd4b5",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C63",
+      "claim": "A critical function of PHB phasmid sensory neurons in males is sensing hermaphrodite-derived mating cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a critical function of PHB phasmid sensory neurons in males has recently been discovered: sensing hermaphrodite-derived mating cues (Oren-Suissa et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "65aba58c-7649-4fe5-9ffd-bea8366102bb",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C64",
+      "claim": "Synapses between PHBs and their normal partners in hermaphrodites are eliminated early in development in males.",
+      "claim_type": "EXPLICIT",
+      "source": "Synapses between PHBs and their normal partners in hermaphrodites are eliminated early in development, and PHBs form male-specific circuits that regulates this distinct function (Oren-Suissa et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "f0dc93a9-7319-4a96-8429-0522f0c890be",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C65",
+      "claim": "PHBs form male-specific circuits that regulate sensing of hermaphrodite-derived mating cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Synapses between PHBs and their normal partners in hermaphrodites are eliminated early in development, and PHBs form male-specific circuits that regulates this distinct function (Oren-Suissa et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "2938272a-846f-4466-9ee4-974ccd5aa56c",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C66",
+      "claim": "The hermaphrodite phasmid circuit regulates all chemosensation in the tail.",
+      "claim_type": "EXPLICIT",
+      "source": "The hermaphrodite phasmid circuit regulates all chemosensation in the tail, suggesting that these sensilla may have evolved to allow the nematodes to avoid Streptomyces and other environmental threats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "41e7aab9-837b-45a8-9c20-3922923bb2ab",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C67",
+      "claim": "The phasmid sensilla may have evolved to allow the nematodes to avoid Streptomyces and other environmental threats.",
+      "claim_type": "EXPLICIT",
+      "source": "The hermaphrodite phasmid circuit regulates all chemosensation in the tail, suggesting that these sensilla may have evolved to allow the nematodes to avoid Streptomyces and other environmental threats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about evolutionary function based on the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "620a0a92-bfc0-427a-b509-9377b5e88d5b",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C68",
+      "claim": "Dodecanoic acid is secreted by crown daisy plants (Chrysanthemum coronarium L.).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, dodecanoic acid is secreted by crown daisy plants (Chrysanthemum coronarium L.), which are intercropped with tomatoes (Solanum lycopersicum) to prevent parasitism by root-knot nematodes (Meloidogyne incognita), and root-knot nematodes are repelled by 4 mM dodecanoic acid (but not by lower concentrations) (Dong et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "561ca37d-52bc-4aa2-af58-337e322acbb8",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C69",
+      "claim": "Crown daisy plants are intercropped with tomatoes to prevent parasitism by root-knot nematodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, dodecanoic acid is secreted by crown daisy plants (Chrysanthemum coronarium L.), which are intercropped with tomatoes (Solanum lycopersicum) to prevent parasitism by root-knot nematodes (Meloidogyne incognita), and root-knot nematodes are repelled by 4 mM dodecanoic acid (but not by lower concentrations) (Dong et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "c6645b56-bb3e-4379-ab8a-25bb98b79b7d",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C70",
+      "claim": "Root-knot nematodes are repelled by 4 mM dodecanoic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, dodecanoic acid is secreted by crown daisy plants (Chrysanthemum coronarium L.), which are intercropped with tomatoes (Solanum lycopersicum) to prevent parasitism by root-knot nematodes (Meloidogyne incognita), and root-knot nematodes are repelled by 4 mM dodecanoic acid (but not by lower concentrations) (Dong et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "8a348cb3-a918-4340-ac18-14d221bad447",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C71",
+      "claim": "Root-knot nematodes are not repelled by lower concentrations of dodecanoic acid than 4 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, dodecanoic acid is secreted by crown daisy plants (Chrysanthemum coronarium L.), which are intercropped with tomatoes (Solanum lycopersicum) to prevent parasitism by root-knot nematodes (Meloidogyne incognita), and root-knot nematodes are repelled by 4 mM dodecanoic acid (but not by lower concentrations) (Dong et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "760c0664-8c65-415c-b747-91e5b595ebfb",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C72",
+      "claim": "There is conservation among nematodes of the mechanism of escaping toxin-producing organisms that would otherwise be a good food source.",
+      "claim_type": "EXPLICIT",
+      "source": "This, in addition to our phylogenetic analyses, suggests conservation among nematodes of this mechanism of escaping toxin-producing organisms that would otherwise be a good food source.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on phylogenetic analysis and comparative data from other nematodes.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "ddabcd4d-f75b-487b-aadf-672ee666c97c",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C73",
+      "claim": "Decanoic acid elicits a strong escape response in C. elegans that is mediated by the SRB-6 GPCR.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the detection of dodecanoic acid, we also discovered that decanoic acid elicits a strong escape response in C. elegans that is also mediated by the SRB-6 GPCR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral and genetic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "901800af-3de6-403a-acd0-3524a582a2d5",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C74",
+      "claim": "High levels of decanoic acid are not secreted by Streptomyces.",
+      "claim_type": "EXPLICIT",
+      "source": "However, high levels of decanoic acid are not secreted by Streptomyces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mass spectrometry data showing lower signals for decanoic acid.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "71780f52-a27b-45ec-8a0e-1bbd0bc3c5f6",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C75",
+      "claim": "Decanoic acid has nematicidal properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Decanoic acid has also been shown to have nematicidal properties (Tarjan and Cheo, 1956; Abdel-Rahman et al., 2008; Zhang et al., 2012), and decanoic acid, dodecanoic acid, and fatty acids of similar lengths are present in many plant seeds (Zhang et al., 2012), indicating that avoiding decanoic acid in the environment may also be important to nematodes, outside the context of bacterial avoidance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "f3ce1186-b44d-4425-bd80-58c64845986f",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C76",
+      "claim": "Decanoic acid, dodecanoic acid, and fatty acids of similar lengths are present in many plant seeds.",
+      "claim_type": "EXPLICIT",
+      "source": "Decanoic acid has also been shown to have nematicidal properties (Tarjan and Cheo, 1956; Abdel-Rahman et al., 2008; Zhang et al., 2012), and decanoic acid, dodecanoic acid, and fatty acids of similar lengths are present in many plant seeds (Zhang et al., 2012), indicating that avoiding decanoic acid in the environment may also be important to nematodes, outside the context of bacterial avoidance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "8c192d48-157e-4427-aaf7-d6ad3439b2c9",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C77",
+      "claim": "Avoiding decanoic acid in the environment may be important to nematodes, outside the context of bacterial avoidance.",
+      "claim_type": "EXPLICIT",
+      "source": "Decanoic acid has also been shown to have nematicidal properties (Tarjan and Cheo, 1956; Abdel-Rahman et al., 2008; Zhang et al., 2012), and decanoic acid, dodecanoic acid, and fatty acids of similar lengths are present in many plant seeds (Zhang et al., 2012), indicating that avoiding decanoic acid in the environment may also be important to nematodes, outside the context of bacterial avoidance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the presence of decanoic acid in plant seeds and its nematicidal properties.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "b85926bf-a133-4508-ba90-b10d793d26a9",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C78",
+      "claim": "In the host\u2013pathogen interaction, C. elegans is frequently attracted to pathogens initially, facilitating colonization of the host.",
+      "claim_type": "EXPLICIT",
+      "source": "Caenorhabditis elegans is frequently attracted to pathogens initially, facilitating colonization of the host (Schulenburg et al., 2007; Meisel and Kim, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "7c99168f-b113-4d49-8952-98a382b407ef",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C79",
+      "claim": "C. elegans has evolved a mechanism to recognize and escape from the powerful defenses presented by Streptomyces.",
+      "claim_type": "EXPLICIT",
+      "source": "In the predator\u2013prey interaction disclosed in the present work, however, we demonstrate that C. elegans has evolved a mechanism to recognize and escape from the powerful defenses presented by Streptomyces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "196f26dc-1bc6-4cbb-8922-60af7e8e83ab",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C80",
+      "claim": "The avoidance mechanism probably arose through selection pressure on GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "This avoidance mechanism probably arose through selection pressure on GPCRs, and by employment of reflex-like neural circuits in the head and tail sensory organs, a mechanism that may be common to other predator\u2013prey interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about evolutionary mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "4fee1b11-cb9e-470e-8c10-555bf1758373",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C81",
+      "claim": "The avoidance mechanism employs reflex-like neural circuits in the head and tail sensory organs.",
+      "claim_type": "EXPLICIT",
+      "source": "This avoidance mechanism probably arose through selection pressure on GPCRs, and by employment of reflex-like neural circuits in the head and tail sensory organs, a mechanism that may be common to other predator\u2013prey interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the behavioral and neural circuit data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "e0b393d0-026e-4690-bec8-fe3b6365ebdf",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C82",
+      "claim": "The avoidance mechanism may be common to other predator\u2013prey interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "This avoidance mechanism probably arose through selection pressure on GPCRs, and by employment of reflex-like neural circuits in the head and tail sensory organs, a mechanism that may be common to other predator\u2013prey interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the generality of the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "9405bfc7-5fae-4778-baaf-56b99c92435b",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C83",
+      "claim": "This study deepens our understanding of the molecules, neural circuitry, and behavior used in the arms race between predators and their prey.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this study deepens our understanding of the molecules, neural circuitry, and behavior used in the arms race between predators and their prey.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the significance of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "3ee7eba0-c091-412e-b47a-bbb26d8d25c9",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C84",
+      "claim": "Upon exposure to Streptomyces at their head or tail, nematodes display an escape response that is mediated by bacterially produced cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we study this process using the predator Caenorhabditis elegans and the bacterial prey Streptomyces, which have evolved a powerful defense: the production of nematicides. We demonstrate that upon exposure to Streptomyces at their head or tail, nematodes display an escape response that is mediated by bacterially produced cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings from the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "978c5006-e34a-4df0-8faa-688593acfc4c",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C85",
+      "claim": "Avoidance of Streptomyces requires a predicted G-protein-coupled receptor, SRB-6.",
+      "claim_type": "EXPLICIT",
+      "source": "Avoidance requires a predicted G-protein-coupled receptor, SRB-6, which is expressed in five types of amphid and phasmid chemosensory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the genetic findings from the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "f187b0c5-7771-442e-8091-c5c717e315de",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C86",
+      "claim": "SRB-6 is expressed in five types of amphid and phasmid chemosensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Avoidance requires a predicted G-protein-coupled receptor, SRB-6, which is expressed in five types of amphid and phasmid chemosensory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of expression data from the abstract.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "3339873d-5f48-4dca-a750-1e1c97ebc992",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C87",
+      "claim": "Species of Streptomyces secrete dodecanoic acid, which is sensed by SRB-6.",
+      "claim_type": "EXPLICIT",
+      "source": "We establish that species of Streptomyces secrete dodecanoic acid, which is sensed by SRB-6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the chemical and genetic findings from the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "c76b54d1-5822-48cb-9f6e-831ad1aae1eb",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C88",
+      "claim": "This behavioral adaptation represents an important strategy for the nematode, which utilizes specialized sensory organs and a chemoreceptor that is tuned to recognize the bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "This behavioral adaptation represents an important strategy for the nematode, which utilizes specialized sensory organs and a chemoreceptor that is tuned to recognize the bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the significance of the findings from the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "93c486d2-ecd8-4c64-8f45-b9a455269d2b",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "claim_id": "C89",
+      "claim": "These findings provide a window into the molecules and organs used in the coevolutionary arms race between predator and potential prey.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings provide a window into the molecules and organs used in the coevolutionary arms race between predator and potential prey.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the broader significance of the findings from the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6eb4023b-8f0b-49d3-86db-9663caeeca1f",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "C. elegans specifically recognizes and avoids Streptomyces at the tail through phasmid neurons. Animals rapidly halt backwards movement when exposed to Streptomyces strains but not to E. coli or B. subtilis, with a response comparable to SDS. This response is mediated by a secreted product, as cell-free supernatants elicit similar avoidance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C8 are well-supported by behavioral data from phasmid assays (Figure 1C) showing specific avoidance of Streptomyces but not control bacteria. The response to cell-free supernatants (C8) provides evidence for a secreted cue. Statistical analyses with appropriate controls and sample sizes (n\u226540) support the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "52e7e808-3ef7-478b-92c3-943269b3e0b2",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "C. elegans recognizes and avoids Streptomyces at the head through amphid neurons. Animals exposed to Streptomyces species at the head halt forward movement, while animals exposed to control bacteria or buffer continue moving forward.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11 are supported by amphid behavioral assay data (Figure 1D,E) showing specific avoidance responses to Streptomyces at the head. The experimental design includes appropriate controls (E. coli, B. subtilis, buffer) and adequate sample sizes (n\u226540), with statistical significance demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "fff6c6d3-2204-452e-aa57-125ae3249ca1",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Direct contact is required for C. elegans avoidance of Streptomyces, as animals do not demonstrate avoidance in chemotaxis assays designed to test responses to volatile odorants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13 are supported by negative chemotaxis assay results (Figure 1\u2014figure supplement 1) showing no response to volatile cues from Streptomyces. This appropriately distinguishes contact-mediated from volatile-mediated chemosensation, though the inference in C13 could be strengthened with additional controls.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "4924f9e5-a4d5-494e-8d0c-dca52e9b72bb",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The avoidance response to SDS is not mediated by its surfactant activity. Concentrations of SDS ten-fold below the critical micelle concentration still elicit avoidance, while Triton X-100 at its critical micelle concentration does not elicit a strong response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16 are well-supported by dose-response data (Figure 2A) showing avoidance at sub-micellar SDS concentrations and lack of response to Triton X-100. This structure-activity relationship analysis appropriately rules out non-specific detergent effects and is supported by appropriate citations for critical micelle concentrations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "06844d7f-d587-4df6-b3c3-aa45acdd6e06",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Both the hydrocarbon chain length and the polar head group are important for the avoidance response. Sodium hexyl sulfate (shorter chain) elicits reduced chemosensation, while 1-dodecanol (less polar head group) is not sensed by phasmid neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 are supported by structure-activity relationship data (Figure 2B) comparing compounds with varying chain lengths and head groups. The experimental design appropriately tests individual structural features, though testing additional intermediate structures would strengthen the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "fabccdcb-36cd-4687-9711-63bf1336cc4a",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Dodecanoic acid and decanoic acid induce robust avoidance responses in both tail and head assays. These carboxylic acids, which share structural features with SDS (long hydrophobic tails and negatively charged head groups), could contribute to recognition and avoidance of Streptomyces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25 are well-supported by behavioral data from both phasmid (Figure 2C, Figure 2\u2014figure supplement 2) and amphid (Figure 2D) assays showing robust avoidance of these fatty acids. The inference in C25 is reasonable given the structural similarity to SDS and the behavioral responses, though direct evidence linking these compounds to Streptomyces avoidance requires the mass spectrometry data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "c9cb7b40-0e10-4aeb-a57f-aa6a306b0681",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Streptomyces species (S. avermitilis, S. costaricanus, S. milbemycinicus) secrete dodecanoic acid, while B. subtilis does not secrete detectable levels. Lower levels of decanoic acid were also detected in Streptomyces secretions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28, C30 are supported by mass spectrometry data (Figure 3, Figure 3\u2014figure supplement 1) showing dodecanoic acid in Streptomyces but not B. subtilis secretions. The methodology includes appropriate derivatization and LC-MS analysis. However, quantification details and statistical analysis of detection limits would strengthen the claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "f43afaff-857f-4847-ac00-1d6394e0fed8",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The srb-6 GPCR is required for avoidance of Streptomyces and dodecanoic acid at both tail and head. srb-6 is expressed in PHA and PHB neurons in the tail, and in ASH, ADL, and ADF neurons in the head. srb-6 mutants show defective avoidance responses to both Streptomyces species and dodecanoic acid.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C41 are well-supported by RNAi screening (Figure 4\u2014figure supplement 1), expression data from prior literature (C34-C36), and behavioral assays with srb-6 mutants (Figure 4A,B). The mutant phenotypes show clear defects in both tail and head avoidance responses with appropriate statistical analyses and controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "b65b2870-0a0c-48de-89ee-9ea318cec5a5",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Expression of srb-6 in PHA and PHB neurons significantly rescues the avoidance defects of srb-6 mutants at the tail, indicating that srb-6 functions in one or both of these cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are supported by cell-specific rescue experiments (Figure 4C) using the ocr-2 promoter to drive expression in PHA and PHB. The rescue is statistically significant and combined with expression data and anatomical knowledge provides strong evidence for function in these neurons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "53e41998-810e-40b8-8763-63f63dee37c0",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Expression of srb-6 in ASH, ADL, ADF, and AWA neurons significantly rescues the head avoidance defects of srb-6 mutants. The endogenous expression pattern suggests function in ASH, ADL, and/or ADF rather than AWA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 are supported by rescue experiments (Figure 4D) showing significant restoration of head avoidance. However, the rescue uses a promoter driving expression in four neuron types, making it impossible to definitively assign function to specific neurons. The inference in C45 is reasonable but not conclusive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "8af9ff26-bb1f-4380-869c-7f2e96bf3b4c",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Calcium influx in ASH neurons in response to both dodecanoic acid and S. avermitilis is severely reduced in srb-6 mutants, consistent with SRB-6 having the ability to detect these stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 are supported by calcium imaging data (Figure 4E,F) showing reduced responses in srb-6 mutants compared to wild-type. The experiments use appropriate methodology (GCaMP6) and statistical analysis (t-tests, n\u226515). This provides direct evidence for srb-6 function in ASH neurons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "1bbac80a-952d-4377-9f63-08814dc5b60a",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Phylogenetic analysis shows that the closest homologs of srb-6 are within the Caenorhabditis genus, with the next monophyletic group containing nematode species with free-living soil-dwelling stages, suggesting possible conservation of this avoidance mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 are supported by phylogenetic analysis (Figure 4\u2014figure supplement 2) using appropriate methods (BLAST, phylogenetic tree construction). However, C53 is speculative as it infers functional conservation from sequence similarity without experimental validation in other species. The phylogenetic data support sequence conservation but not necessarily functional conservation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "dfb7bd30-b427-4974-9ab2-5b5cf09166d0",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Decanoic acid elicits a strong SRB-6-mediated escape response in C. elegans, but high levels are not secreted by Streptomyces. Given that decanoic acid has nematicidal properties and is present in plant seeds, avoiding decanoic acid may be important outside the context of bacterial avoidance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 are supported by behavioral/genetic data and mass spectrometry showing lower decanoic acid signals. Claim C77 is a reasonable inference based on prior literature about decanoic acid in plant seeds and its nematicidal properties, though direct experimental evidence for this broader ecological role is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "be387fa8-780f-44ab-a08b-69de04f74fea",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Streptomyces species produce potent nematicides including avermectin and milbemycin, which paralyze nematodes by irreversibly opening glutamate-gated chloride channels. Despite this, little was known about whether C. elegans recognizes and responds to Streptomyces prior to this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 accurately represent prior knowledge supported by appropriate citations. These claims establish the biological context and knowledge gap that motivates the current study. The citations are to established literature on Streptomyces nematicides and their mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "f1df4280-f4bd-4aa7-97e7-bbc83017a4cc",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Additional cues from Streptomyces probably contribute to the C. elegans response beyond dodecanoic acid.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C29 is explicitly speculative and acknowledges that bacterial secretions are complex. While reasonable given the complexity of bacterial metabolomes, no experimental evidence is provided to identify or test other potential cues. This represents an appropriate caveat rather than a tested hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "f8c80119-1c01-420f-8d5f-fc259d945341",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The detection and escape from Streptomyces bacteria and dodecanoic acid represent the first environmentally relevant chemosensory functions identified for the hermaphrodite phasmid circuit that inform understanding of bacterial interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 is supported by the novelty of identifying a natural function for phasmid neurons in bacterial avoidance. Prior work had identified responses to artificial stimuli (SDS) but not ecologically relevant bacterial cues. This claim appropriately contextualizes the significance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    },
+    {
+      "id": "ce35e2ee-d166-4b87-a81a-ba23079a0889",
+      "content_id": "a173e553-c54c-46a2-86c2-ab222183b20e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The phasmid sensilla may have evolved to allow nematodes to avoid Streptomyces and other threats. This avoidance mechanism may be conserved among nematodes and arose through selection pressure on GPCRs, potentially representing a common mechanism in predator-prey interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67, C72, C80, C82 are explicitly speculative about evolutionary origins and generality of the mechanism. While the phylogenetic data (C52) and comparative literature (C68-C71) provide some support, direct experimental evidence for evolutionary origins or conservation across predator-prey systems is not provided. These represent reasonable hypotheses for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:52.418653Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6882321f-12cf-40b5-9d9d-e385d197550a",
+      "result_id": "6eb4023b-8f0b-49d3-86db-9663caeeca1f"
+    },
+    {
+      "claim_id": "83b98a82-c7ec-40dd-a768-dd912a12aafa",
+      "result_id": "6eb4023b-8f0b-49d3-86db-9663caeeca1f"
+    },
+    {
+      "claim_id": "18bac0ee-052e-4f37-9151-f48fb052e37f",
+      "result_id": "6eb4023b-8f0b-49d3-86db-9663caeeca1f"
+    },
+    {
+      "claim_id": "c70d1877-8c25-43a3-8bc3-b0d11ea5b83c",
+      "result_id": "6eb4023b-8f0b-49d3-86db-9663caeeca1f"
+    },
+    {
+      "claim_id": "bf3ce866-335d-429d-94c4-5edd4f61d21e",
+      "result_id": "6eb4023b-8f0b-49d3-86db-9663caeeca1f"
+    },
+    {
+      "claim_id": "87832fb1-e5b7-4577-9ef2-e69db5bf331b",
+      "result_id": "52e7e808-3ef7-478b-92c3-943269b3e0b2"
+    },
+    {
+      "claim_id": "a256bd11-bd91-40fc-9c0b-7a3f6d1a50da",
+      "result_id": "52e7e808-3ef7-478b-92c3-943269b3e0b2"
+    },
+    {
+      "claim_id": "4c72d384-a59c-4138-a70c-5b1d34c6fccc",
+      "result_id": "52e7e808-3ef7-478b-92c3-943269b3e0b2"
+    },
+    {
+      "claim_id": "6982481a-658a-4249-a494-273807aa9a7b",
+      "result_id": "fff6c6d3-2204-452e-aa57-125ae3249ca1"
+    },
+    {
+      "claim_id": "874d53cf-20b6-429b-b201-b64c51250e67",
+      "result_id": "fff6c6d3-2204-452e-aa57-125ae3249ca1"
+    },
+    {
+      "claim_id": "4656bd68-116a-4b14-95b5-b3bd75f51bf6",
+      "result_id": "4924f9e5-a4d5-494e-8d0c-dca52e9b72bb"
+    },
+    {
+      "claim_id": "efde72de-c5e0-43f9-b2d8-e983d956c497",
+      "result_id": "4924f9e5-a4d5-494e-8d0c-dca52e9b72bb"
+    },
+    {
+      "claim_id": "d3133b29-aeae-4b48-87fd-cb79d43308b8",
+      "result_id": "4924f9e5-a4d5-494e-8d0c-dca52e9b72bb"
+    },
+    {
+      "claim_id": "600ad2e3-ccf3-427d-832a-bda8807ea7d1",
+      "result_id": "06844d7f-d587-4df6-b3c3-aa45acdd6e06"
+    },
+    {
+      "claim_id": "1d213c87-1327-40ad-bed7-af6b196705db",
+      "result_id": "06844d7f-d587-4df6-b3c3-aa45acdd6e06"
+    },
+    {
+      "claim_id": "dc4d2580-8802-4d99-811f-ee0bc0ad8156",
+      "result_id": "06844d7f-d587-4df6-b3c3-aa45acdd6e06"
+    },
+    {
+      "claim_id": "dea9401c-2cb2-45e8-b23b-60fb8f126265",
+      "result_id": "fabccdcb-36cd-4687-9711-63bf1336cc4a"
+    },
+    {
+      "claim_id": "7f68cd77-0f1f-42a1-8040-99969f168c47",
+      "result_id": "fabccdcb-36cd-4687-9711-63bf1336cc4a"
+    },
+    {
+      "claim_id": "2e1ba9ce-4126-4737-9ed2-afd834beeecc",
+      "result_id": "fabccdcb-36cd-4687-9711-63bf1336cc4a"
+    },
+    {
+      "claim_id": "c7143ab0-d291-403a-80aa-2f8713756c8a",
+      "result_id": "fabccdcb-36cd-4687-9711-63bf1336cc4a"
+    },
+    {
+      "claim_id": "409fce73-4ab9-4514-91a0-a613a138f342",
+      "result_id": "fabccdcb-36cd-4687-9711-63bf1336cc4a"
+    },
+    {
+      "claim_id": "07ba44df-aae4-46b6-8e40-f7f6bdd0eedd",
+      "result_id": "c9cb7b40-0e10-4aeb-a57f-aa6a306b0681"
+    },
+    {
+      "claim_id": "7539dca8-be21-4be8-afa6-209310fafa19",
+      "result_id": "c9cb7b40-0e10-4aeb-a57f-aa6a306b0681"
+    },
+    {
+      "claim_id": "70f7a46d-d5e5-410c-b2ce-3d5d7e6ff198",
+      "result_id": "c9cb7b40-0e10-4aeb-a57f-aa6a306b0681"
+    },
+    {
+      "claim_id": "40dd6db0-cbd9-42f4-b038-5fc74625f5b6",
+      "result_id": "c9cb7b40-0e10-4aeb-a57f-aa6a306b0681"
+    },
+    {
+      "claim_id": "7d3663d0-1341-4858-bc67-03c6a0a4b894",
+      "result_id": "f43afaff-857f-4847-ac00-1d6394e0fed8"
+    },
+    {
+      "claim_id": "1cb5a281-9783-41df-9b97-7f080903c00a",
+      "result_id": "f43afaff-857f-4847-ac00-1d6394e0fed8"
+    },
+    {
+      "claim_id": "da9bb1b9-4922-4f6d-8584-31b53fce4f18",
+      "result_id": "f43afaff-857f-4847-ac00-1d6394e0fed8"
+    },
+    {
+      "claim_id": "da54bafa-5c1a-4848-9189-0a9918a891c8",
+      "result_id": "f43afaff-857f-4847-ac00-1d6394e0fed8"
+    },
+    {
+      "claim_id": "dbad7ef9-93cc-4155-8045-d4302391e938",
+      "result_id": "f43afaff-857f-4847-ac00-1d6394e0fed8"
+    },
+    {
+      "claim_id": "efbda5f7-b867-47ae-9647-8003b05c8fe5",
+      "result_id": "f43afaff-857f-4847-ac00-1d6394e0fed8"
+    },
+    {
+      "claim_id": "ae2f92c7-83d3-4279-bfb6-938f3d670884",
+      "result_id": "f43afaff-857f-4847-ac00-1d6394e0fed8"
+    },
+    {
+      "claim_id": "e9e5ccd4-0c02-457a-aa67-5830ef93ee65",
+      "result_id": "f43afaff-857f-4847-ac00-1d6394e0fed8"
+    },
+    {
+      "claim_id": "bc6b663d-86ad-4a53-8b32-04e4b21dfb6b",
+      "result_id": "b65b2870-0a0c-48de-89ee-9ea318cec5a5"
+    },
+    {
+      "claim_id": "6bd1c219-2e36-4130-a5bd-65017c1c9256",
+      "result_id": "b65b2870-0a0c-48de-89ee-9ea318cec5a5"
+    },
+    {
+      "claim_id": "4de15edb-a742-4940-8c70-58f057da3ea8",
+      "result_id": "53e41998-810e-40b8-8763-63f63dee37c0"
+    },
+    {
+      "claim_id": "caf8cedd-bb1b-4ca3-a3b6-ea040dbfa9dd",
+      "result_id": "53e41998-810e-40b8-8763-63f63dee37c0"
+    },
+    {
+      "claim_id": "8afa0121-ab4e-41c2-a703-329eb07d0055",
+      "result_id": "8af9ff26-bb1f-4380-869c-7f2e96bf3b4c"
+    },
+    {
+      "claim_id": "7d377c04-1e98-48b1-92f8-cba80b343be5",
+      "result_id": "8af9ff26-bb1f-4380-869c-7f2e96bf3b4c"
+    },
+    {
+      "claim_id": "fb127931-2d5e-4074-80b6-6845460ef3c0",
+      "result_id": "8af9ff26-bb1f-4380-869c-7f2e96bf3b4c"
+    },
+    {
+      "claim_id": "29a4cd84-2468-4a1a-9eb9-a48348625aad",
+      "result_id": "1bbac80a-952d-4377-9f63-08814dc5b60a"
+    },
+    {
+      "claim_id": "10651460-635f-46ff-ad7a-2fd4061515f3",
+      "result_id": "1bbac80a-952d-4377-9f63-08814dc5b60a"
+    },
+    {
+      "claim_id": "3a8dc2e9-13e9-4b9f-861b-c9173e59f94c",
+      "result_id": "1bbac80a-952d-4377-9f63-08814dc5b60a"
+    },
+    {
+      "claim_id": "ddabcd4d-f75b-487b-aadf-672ee666c97c",
+      "result_id": "dfb7bd30-b427-4974-9ab2-5b5cf09166d0"
+    },
+    {
+      "claim_id": "901800af-3de6-403a-acd0-3524a582a2d5",
+      "result_id": "dfb7bd30-b427-4974-9ab2-5b5cf09166d0"
+    },
+    {
+      "claim_id": "8c192d48-157e-4427-aaf7-d6ad3439b2c9",
+      "result_id": "dfb7bd30-b427-4974-9ab2-5b5cf09166d0"
+    },
+    {
+      "claim_id": "c974d718-3322-42bb-a188-0baecbf54b21",
+      "result_id": "be387fa8-780f-44ab-a08b-69de04f74fea"
+    },
+    {
+      "claim_id": "65c943db-be5a-4f1d-b549-6ac1c267de6f",
+      "result_id": "be387fa8-780f-44ab-a08b-69de04f74fea"
+    },
+    {
+      "claim_id": "9bc5b750-d548-4c05-898d-f2411b37e421",
+      "result_id": "be387fa8-780f-44ab-a08b-69de04f74fea"
+    },
+    {
+      "claim_id": "2d214ffd-7577-465e-a7c3-b82a72eedad4",
+      "result_id": "f1df4280-f4bd-4aa7-97e7-bbc83017a4cc"
+    },
+    {
+      "claim_id": "c26007ce-72bc-49f9-982f-92da32c5c578",
+      "result_id": "f8c80119-1c01-420f-8d5f-fc259d945341"
+    },
+    {
+      "claim_id": "41e7aab9-837b-45a8-9c20-3922923bb2ab",
+      "result_id": "ce35e2ee-d166-4b87-a81a-ba23079a0889"
+    },
+    {
+      "claim_id": "760c0664-8c65-415c-b747-91e5b595ebfb",
+      "result_id": "ce35e2ee-d166-4b87-a81a-ba23079a0889"
+    },
+    {
+      "claim_id": "196f26dc-1bc6-4cbb-8922-60af7e8e83ab",
+      "result_id": "ce35e2ee-d166-4b87-a81a-ba23079a0889"
+    },
+    {
+      "claim_id": "e0b393d0-026e-4690-bec8-fe3b6365ebdf",
+      "result_id": "ce35e2ee-d166-4b87-a81a-ba23079a0889"
+    }
+  ],
+  "comparisons": []
+}

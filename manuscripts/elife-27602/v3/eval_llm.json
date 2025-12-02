@@ -1,0 +1,252 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C19",
+      "C33",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C98"
+    ],
+    "result": "Optic fiber-based calcium recordings successfully detect slow wave activity in isoflurane-anesthetized rats with characteristic temporal dynamics. Calcium waves were reliably recorded in 8 of 10 experiments, occurring at 9-15 events/min. Both OGB-1 and GCaMP6f indicators revealed similar slow wave events with high correlation, and calcium transients correlated with electrically recorded slow oscillations in local field potentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C36-C41 provide converging experimental evidence from multiple calcium indicators (OGB-1 and GCaMP6f) and validation methods (dual-fiber recordings, LFP correlation). The quantitative characterization (C37-C39) and high success rate (C36) demonstrate robust methodology. The correlation with LFP recordings (C41) provides independent validation of the calcium signal's neurophysiological basis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C42",
+      "C43",
+      "C101"
+    ],
+    "result": "A detection algorithm based on exponential moving average filters successfully identified slow wave events (mean 298\u00b120 events per 30 min), which were used for event-related fMRI analysis. Hemodynamic responses exhibited characteristic temporal dynamics with sharp rise (0.7\u00b10.4 s), peak at 6.5\u00b10.4 s, and half-maximum duration of 6.8\u00b10.5 s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 provide quantitative validation of the detection algorithm and characterization of hemodynamic responses. The threshold selection (C101) is justified by data-driven analysis showing an inflection point. However, the threshold determination method could benefit from additional validation across animals to ensure generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C72"
+    ],
+    "result": "Event-related fMRI analysis revealed cortex-wide BOLD activation during slow wave activity. Nearly the entire cortex showed BOLD activation in 6 of 8 experiments, with each cortical area showing at least partial activation in every experiment. No significant differences were found between somatosensory and visual cortex in F-values or hemodynamic response shapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 provide strong evidence for cortex-wide activation through quantitative comparisons across cortical regions. The finding is replicated across multiple animals (6 of 8 experiments) and validated by statistical comparisons (C46-C47). Control experiments (C48-C49) demonstrate specificity by showing no activation with swapped or temporally reversed regressors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C55"
+    ],
+    "result": "Control analyses demonstrated the specificity of BOLD activation to slow wave events. Swapping regressors between animals, temporally reverting event arrays, and cross-correlating with mirrored slow wave vectors all resulted in no BOLD activation or absence of correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49, C55 provide multiple independent control analyses that rule out spurious correlations due to event timing or analysis artifacts. These negative controls are essential for establishing the specificity of the relationship between calcium waves and BOLD activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C53",
+      "C54",
+      "C56",
+      "C58",
+      "C59",
+      "C85",
+      "C86",
+      "C88"
+    ],
+    "result": "Independent component analysis confirmed event-related findings during ongoing slow wave activity. The pan-cortical ICA component was highly correlated with the GLM regressor from slow wave onsets (R=0.4\u00b10.05), exhibited higher power in the <0.1 Hz range, and was absent when the slow wave timecourse was regressed out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59, C85-C86, C88 provide convergent evidence from model-free ICA analysis that confirms the GLM-based results. The high correlation between ICA and GLM timecourses (C54), specific frequency characteristics (C58, C86), and disappearance upon regression (C59, C88) demonstrate that the pan-cortical component is specifically related to slow waves.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Seed-based analysis during slow wave activity revealed cortex-wide BOLD activation correlating with somatosensory and hippocampal seed regions. The somatosensory seed signal strongly correlated with the pan-cortical ICA component. Correlation analysis showed highest r-values across the entire cortex with nearly synchronous time-to-peak values, independent of seed location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 provide additional validation through seed-based analysis, a complementary approach to GLM and ICA. The consistency across different seed locations (C70) and correlation with ICA results (C67) strengthen the conclusion of cortex-wide recruitment. The hippocampal findings (C69) extend the results beyond cortex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Thalamic calcium recordings showed slow wave events with similar characteristics to cortical recordings. Using thalamic calcium waves as events revealed BOLD activation in cortex only, with no detectable thalamic BOLD signal, likely due to lower detection sensitivity of the MR surface coil in subcortical regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C51 demonstrate that thalamic slow waves produce cortical BOLD activation, but the absence of thalamic BOLD signal (C52) is attributed to technical limitations rather than biological absence. The interpretation in C52 is reasonable but speculative. Additional experiments with volume coils or other methods would be needed to definitively determine whether thalamic BOLD responses occur.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C84"
+    ],
+    "result": "Sensory stimulation reliably evoked slow waves during slow wave activity (latency 143\u00b17 ms, 72\u00b18% probability) that were indistinguishable from spontaneous waves. During persistent activity induced by medetomidine, responses had significantly shorter latencies (20\u00b14 ms) and durations (55\u00b13 ms). ICA during persistent activity revealed typical resting state networks but no pan-cortical synchronous activation component.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65, C84 provide strong evidence for state-dependent differences in neural responses and network organization. The quantitative comparisons between slow wave and persistent activity states (C63-C64) are statistically significant. The absence of pan-cortical activation during persistent activity (C65) serves as an important control demonstrating specificity of this pattern to slow wave states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C73",
+      "C83",
+      "C93",
+      "C94"
+    ],
+    "result": "The study demonstrates that local population activity changes can indicate global network states reflected in whole-brain BOLD patterns. The novelty lies in establishing a direct relation between neurophysiologically defined slow wave events and macroscopic fMRI signals by detecting precise timepoints of individual slow waves. Results from event-related, ICA, and seed-based analyses converge on similar cortex-wide network activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C73, C83, C93-C94 articulate the main conceptual contribution and are supported by the convergence of multiple analytical approaches (GLM, ICA, seed-based) all revealing cortex-wide activation. The study successfully bridges scales from local calcium recordings to whole-brain hemodynamics, as stated in C83.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "OGB-1 stains both neurons and astrocytes, but population-based calcium recordings are dominated by neuronal action potential-related calcium influx. Calcium transients result from synchronous spiking of at least 30 cells and represent integrated signals from neurons and surrounding neuropil.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 are supported by multiple citations to prior work characterizing the cellular basis of optic fiber calcium recordings. These claims establish the neuronal basis of the calcium signals used in the study, which is important for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior literature establishes that slow oscillation-associated slow wave activity arises from deeper cortical layers, influences neuronal excitability throughout the brain, represents a 'default mode' of cortical activity, is highly similar across cortical regions and species, propagates as traveling waves likely mediated by recurrent excitatory activity, and engages subcortical regions including thalamus and hippocampus probably via long-range excitatory connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C18 summarize established knowledge from prior literature, supported by extensive citations. These claims provide important context for the current study but do not represent new findings. The use of qualifiers like 'likely' and 'probably' (C16, C18) appropriately indicates mechanistic hypotheses from prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Prior fMRI studies have identified neuronal correlates of spontaneous BOLD fluctuations by correlating fMRI with LFP recordings or wide-field calcium imaging, but did not detect fMRI responses directly related to individual slow wave events. Lower-frequency hemodynamic fluctuations were not well-predicted by calcium signals, and the cortical network activity underlying the active phase of slow wave rhythm had not been investigated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 accurately characterize prior work and identify the gap addressed by the current study. The citations support the characterization of previous approaches and their limitations. Claim C32 correctly identifies the novel contribution of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Under anesthesia, slow waves appear more rhythmic and synchronous than in natural sleep, though they may recruit the same structures. Slow waves are cortically generated but engage thalamus and hippocampus, potentially playing a synchronizing role in functional coupling. Intracortically, slow waves propagate as traveling waves likely by relays of local cell populations, while subcortical recruitment may involve long-range excitatory projections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82 are supported by citations and appropriately use qualifiers ('may', 'likely', 'suggesting') to indicate hypotheses and interpretations from prior work. These claims provide important context for interpreting the current findings in relation to natural sleep and anesthesia.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The study has translational implications for monitoring network states during fMRI, potentially explaining variance in neuronal responses and providing a framework for analyzing slow wave activity in disease models. Spatio-temporal dynamics of slow waves are highly preserved across species, and calcium measures provide advantages over electrical recordings for MRI compatibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C92, C95-C97 discuss potential applications and benefits but are largely speculative (using qualifiers like 'may', 'could'). While C95-C96 are supported by citations regarding cross-species conservation and disease relevance, the practical benefits described in C91-C92 remain to be demonstrated. These represent reasonable future directions rather than established results.",
+    "result_type": "MINOR"
+  }
+]

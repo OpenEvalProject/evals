@@ -1,0 +1,1962 @@
+{
+  "submission": {
+    "id": "5ea771a4-bc70-42b2-b5f4-3986246364e0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:22:50.664153Z",
+    "updated_at": "2025-12-01T19:22:50.664153Z"
+  },
+  "content": [
+    {
+      "id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "submission_id": "5ea771a4-bc70-42b2-b5f4-3986246364e0",
+      "content_type": "manuscript",
+      "content_text": "# The force-sensing peptide VemP employs extreme compaction and secondary structure formation to induce ribosomal stalling\n\n## Authors\n\n- Ting Su<sup>1</sup> ([ORCID: 0000-0002-3185-8144](https://orcid.org/0000-0002-3185-8144))\n- Jingdong Cheng<sup>1</sup> ([ORCID: 0000-0003-4442-377X](https://orcid.org/0000-0003-4442-377X))\n- Daniel Sohmen<sup>1</sup>\n- Rickard Hedman<sup>2</sup>\n- Otto Berninghausen<sup>1</sup>\n- Gunnar von Heijne<sup>2</sup> ([ORCID: 0000-0002-4490-8569](https://orcid.org/0000-0002-4490-8569))\n- Daniel N Wilson<sup>1</sup> ([ORCID: 0000-0003-3816-3828](https://orcid.org/0000-0003-3816-3828)) \u2020\n- Roland Beckmann<sup>1</sup> ([ORCID: 0000-0003-4291-3898](https://orcid.org/0000-0003-4291-3898)) \u2020\n\n### Affiliations\n\n1. Gene Center, Department of Biochemistry and Center for integrated Protein Science Munich Ludwig Maximilian University of Munich Munich Germany\n2. Department of Biochemistry and Biophysics Stockholm University Stockholm Sweden\n3. Science for Life Laboratory Stockholm University Solna Sweden\n4. Institute for Biochemistry and Molecular Biology University of Hamburg Hamburg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nInteraction between the nascent polypeptide chain and the ribosomal exit tunnel can modulate the rate of translation and induce translational arrest to regulate expression of downstream genes. The ribosomal tunnel also provides a protected environment for initial protein folding events. Here, we present a 2.9 \u00c5 cryo-electron microscopy structure of a ribosome stalled during translation of the extremely compacted VemP nascent chain. The nascent chain forms two \u03b1-helices connected by an \u03b1-turn and a loop, enabling a total of 37 amino acids to be observed within the first 50\u201355 \u00c5 of the exit tunnel. The structure reveals how \u03b1-helix formation directly within the peptidyltransferase center of the ribosome interferes with aminoacyl-tRNA accommodation, suggesting that during canonical translation, a major role of the exit tunnel is to prevent excessive secondary structure formation that can interfere with the peptidyltransferase activity of the ribosome.\n\n## Introduction\n\nMany diverse nascent chain sequences have been identified that act as cis-regulatory polypeptides to promote ribosome stalling and thereby regulate gene expression. One of the most recently discovered examples is the Vibrio export monitoring polypeptide (VemP) that allows Vibrio alginolyticus to adapt to changes in salinity by modulating expression of components of the protein targeting machinery (Ishii et al., 2015). V. alginolyticus is a Gram-negative marine-estuarine bacterium that, unlike most bacteria, has two paralogs of SecDF (SecDF1 and SecDF2) to enhance protein export in cooperation with the SecYEG translocon. In Na+-rich environments, V. alginolyticus utilizes the Na+-dependent SecDF1; however, in Na+-limiting environments V. alginolyticus switches to the Na+-independent (presumably H+-dependent) SecDF2 (Ishii et al., 2015). The switch between SecDF1 and SecDF2 is facilitated by the stalling activity of VemP. In Na+-rich environments, VemP is targeted by its signal sequence (SS) to the SecDF1-SecYEG translocon (Ishii et al., 2015). The force applied to VemP during protein translocation prevents VemP-dependent ribosome stalling, thereby enabling the complete VemP to be translated and released from the ribosome. Under such conditions, SecDF2 expression is repressed due to sequestration of the ribosome-binding site (RBS) of secDF2 within a stem-loop structure in the mRNA (Figure 1a). In Na+-limiting environments, however, VemP is not translocated due to the inactivity of SecDF1, and the resulting lack of force on the VemP nascent chain leads to ribosomal stalling (Figure 1a). Ribosome stalling dissolves the stem-loop structure within the mRNA, exposes the RBS and thereby induces expression of Na+-independent SecDF2 (Figure 1a). In brief, the mechanisms by which VemP switches protein synthesis between the SecDF1 and SecDF2 paralogs is dependent on the application of a force to the signal sequence containing VemP nascent chain. This force serves as a direct indicator of the SecDF-SecYEG protein translocation activity, which in turn is dependent on the environmental conditions.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/25642/elife-25642-fig1-v1.jpg)\n\n**Figure 1.:** (a) Schematic representation of the VemP-SecDF2 mRNA encoding VemP leader peptide with N-terminal signal sequence (SS) and C-terminal stalling region (green), followed by a stem-loop structure that sequesters the ribosome-binding site (RBS) of the SecDF2 gene (left). The translation arrest of VemP maintains the unfolded conformation of the mRNA allowing ribosome binding and induction of SecDF2 expression. The VemP stalling window H138\u2013Q156 (boxed) is shown with critical (green bold) and important (green) residues highlighted (Ishii et al., 2015), and an asterisk indicating the stop codon (right). (b\u2013c) In vivo pulse-chase analysis with different VemP constructs; VemP \u2018short\u2019 (H138\u2013Q156, orange), VemP \u2018long\u2019 (F131\u2013Q156, pink), VemP \u2018GS\u2019 (purple) and VemP mutants L153A and Q156*. (d) Schematic of the VemP-SRC used for cryo-EM. (e\u2013f) Western blot against the N-terminal HA-tag of in vitro translated \u2206SS-VemP detecting stalled\u00a0peptidyl-tRNA (I), stalled\u00a0free peptide (II) or full-length\u00a0free peptide (III), (e) in the absence and presence of RNase A treatment, or (f) as a function of time (25, 40, 55, 70, 85, 100 min). (g) Transverse section of cryo-EM structure of the VemP-SRC showing the peptidyl-tRNA (green), with small and large subunits coloured in yellow and blue, respectively.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25642/elife-25642-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** In vivo pulse-chase analysis with different VemP constructs; VemP \u2018short\u2019 (H138\u2013Q156), VemP \u2018long\u2019 (F131\u2013Q156), VemP \u2018GS\u2019 and VemP mutants L153A and Q156*. The triplicate data are from different colonies, preparations of medium and gels.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/25642/elife-25642-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** A total of 850,433 extracted particles were subjected to 2D classification with 8 x binned images, 200 initial classes and 100 rounds in order to filter away non-particle contaminants. A subset of 789,006 particles was then aligned to a low-resolution (60 \u00c5) E. coli 70S ribosome reference followed by refinement with non-binned images. Subsequently, focused sorting was performed with five classes and 64 rounds using a spherical mask covering the A- and P-tRNAs. The focused sorting resulted in one major class with a highly resolved P-tRNA. This subset with 644,577 particles was further sorted using a ribosomal mask for 58 rounds with four output classes, yielding two classes having improved occupancy of the P-tRNA. The class with higher resolution and quantity in particles (400,024, 62%) was then subjected to the final refinement and reconstruction.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/25642/elife-25642-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) Transverse section of the VemP-SRC showing local resolution of the VemP nascent chain within the ribosomal tunnel. (b) Zoomed-in view of the extracted VemP nascent chain coloured according to local resolution. (c) Fourier-shell correlation (FSC) curve of the refined final map of the VemP-SRC, indicating the average resolution is 2.9 \u00c5 (at 0.143). (d) Fit of models to maps. FSC curves calculated between the refined model and the final map (blue), with the self- and cross-validated correlations in green and yellow, respectively.\n\nBiochemical studies have demonstrated that VemP-dependent stalling occurs when Q156 is in the P-site of the ribosome and that distinct amino acid residues within a 19aa window (138\u2013156) of VemP are critical for efficient ribosome stalling (Figure 1a) (Ishii et al., 2015). Although VemP-mediated regulation of SecDF2 expression is reminiscent of other peptide-stalling regulatory systems (Ito and Chiba, 2013; Wilson et al., 2016), such as SecM (Nakatogawa and Ito, 2001) and MifM (Chiba et al., 2009), the VemP stalling sequence and force-sensing mechanism appears to be completely distinct (Ishii et al., 2015; Ito and Chiba, 2013).\n\n## Results\n\n### Analysis of VemP sequence on efficiency of stalling\n\nTo ensure the stalling efficiency of the VemP constructs before initiating the structural analysis, we engineered three LepB-based constructs carrying C-terminal VemP residues, termed VemP \u2018short\u2019, \u2018long\u2019 and \u2018GS\u2019, respectively (Figure 1b,c). VemP \u2018short\u2019 carries the 19 amino acid segment that Ishii et al had chosen as the target for alanine scanning mutagenesis from VemP (138\u2013156) (Ishii et al., 2015). VemP \u2018long\u2019 carries a 26 amino acid long segment including seven additional N-terminal residues of VemP (131\u2013156), whereas VemP \u2018GS\u2019 is similar to the former two, except that residues 131\u2013138 were substituted with a glycine-serine (GS) linker (Figure 1b,c). VemP \u2018short\u2019, \u2018long\u2019 and \u2018GS\u2019 were expressed in pulse-chase experiments in E. coli without any N-terminal signal sequence (see Material and methods). Using this assay, the major product observed to accumulate for VemP \u2018short\u2019 was full-length LepB-VemP fusion protein, whereas relatively little (10%) stalled peptide was detected (Figure 1b,c and Figure 1\u2014figure supplement 1). In contrast, VemP \u2018long\u2019 containing the extended stalling window dramatically increased the stalling efficiency (Figure 1b,c). As expected, mutations previously reported to abrogate ribosome stalling (Ishii et al., 2015), L153A and Q156stop, led to a reduction in stalling efficiency for the VemP \u2018short\u2019 and particularly for the VemP \u2018long\u2019 constructs. VemP \u2018GS\u2019 also had a reduced stalling efficiency (Figure 1b,c). Taken together, these fusion proteins proved to be ineffective at inducing elongation arrest to the full extent in vivo. The influence of residues 131\u2013138 on ribosome stalling and SecDF2 induction was not so extensively characterized in the previous study, where only mutation of residues 132 and 136\u2013138 to alanine were reported to have little or no effect (Ishii et al., 2015). Thus, our results suggest that residues beyond the previously characterized 19-aa stalling window of VemP contribute to the efficiency of VemP-mediated translation arrest.\n\n### Cryo-EM structure of the VemP-SRC\n\nIn order to investigate which residues of VemP are involved in establishing interactions with the exit tunnel during ribosome stalling, and in particular to decipher the molecular mechanism of force-sensitive ribosome stalling by VemP, we used cryo-EM to determine the structure of a VemP-stalled ribosome-nascent chain complex (VemP-SRC). Since we observed a contribution of the amino acids in VemP beyond the initially identified stalling window and to ensure the maximum ribosome stalling efficiency, the wildtype VemP sequence lacking only the signal sequence (residues 26\u2013159, \u0394SS-VemP), rather than a shorter stalling window, was used (Figure 1d). Translation of the \u0394SS-VemP construct in an E. coli lysate-based translation system led to the accumulation of VemP-peptidyl-tRNA (about\u00a040 kDa), of which the size was reduced to the\u00a0expected\u00a0free peptide (18 kDa) upon RNase treatment (Figure 1e). The robustness of stalling of the wildtype \u0394SS-VemP was evident from the persistence of the VemP-peptidyl-tRNA, even with incubation times of up to 100 min where only minor fractions of full-length VemP were produced (Figure 1f). The VemP-SRC was purified using sucrose density gradient centrifugation and N-terminal affinity tags and subjected to cryo-EM analysis (see Materials and methods). In silico sorting of the VemP-SRC dataset yielded a major subpopulation of ribosomal particles that contained stoichiometric occupancy of the P-tRNA (Figure 1\u2014figure supplement 2). Subsequent refinement resulted in a final reconstruction of the VemP-SRC (Figure 1g) with an average resolution of 2.9 \u00c5 and a local resolution of 2.5 \u00c5 within the core of the ribosome (Figure 1\u2014figure supplement 3 and Table 1). The electron density for the majority of the VemP nascent chain was well resolved within the exit tunnel, with local resolution ranging between 3.0 and\u00a03.5 \u00c5 (Figure 1\u2014figure supplement 3), thus enabling a molecular model for residues 120\u2013156 of VemP to be built de novo (Figure 2 and Videos 1 and 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/25642/elife-25642-fig2-v1.jpg)\n\n**Figure 2.:** (a\u2013b) Isolated electron density and molecular model for the VemP nascent chain connected to the P-tRNA (green) in the ribosomal tunnel (grey) with ribosomal proteins uL4 (cyan) and uL22 (orange) highlighted. (b) is the same as (a) but rotated by 180\u00b0. (c) Model of the VemP nascent chain in the ribosomal tunnel highlighting ribosomal components that interact with VemP, namely, nucleotides of the 23S rRNA (blue) and ribosomal proteins uL4 (cyan) and uL22 (orange). (d) Rainbow representation of the VemP nascent chain with sequence coloured accordingly. The upper and lower \u03b1-helices of VemP are boxed and the \u03b1-turn in the linking loop region is bracketed. Secondary structure predictions for VemP are indicated with H (helix) and E (loop region).\n\n**Table 1.**\n Refinement and Model Statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Data collection</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Particles</td>\n      <td>400,024</td>\n    </tr>\n    <tr>\n      <td>Pixel size (\u00c5)</td>\n      <td>1.084</td>\n    </tr>\n    <tr>\n      <td>Defocus range (\u00b5m)</td>\n      <td>1\u20132.5</td>\n    </tr>\n    <tr>\n      <td>Voltage (kV)</td>\n      <td>300</td>\n    </tr>\n    <tr>\n      <td>Electron dose (e-/\u00c5-2)</td>\n      <td>25</td>\n    </tr>\n    <tr>\n      <td>Model Composition</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein residues</td>\n      <td>5615</td>\n    </tr>\n    <tr>\n      <td>RNA bases</td>\n      <td>4641</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5, 0.143 FSC)</td>\n      <td>2.93</td>\n    </tr>\n    <tr>\n      <td>Map sharpening B factor (\u00c52)</td>\n      <td>-162.55</td>\n    </tr>\n    <tr>\n      <td>FSCAverage</td>\n      <td>0.90</td>\n    </tr>\n    <tr>\n      <td>Validation</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>rmsd, bonds</td>\n      <td>0.016</td>\n    </tr>\n    <tr>\n      <td>rmsd, angles</td>\n      <td>1.66</td>\n    </tr>\n    <tr>\n      <td>Rotamers outliers (%)</td>\n      <td>1.45</td>\n    </tr>\n    <tr>\n      <td>Ramachandran outliers (%)</td>\n      <td>1.00</td>\n    </tr>\n    <tr>\n      <td>Ramachandran favoured (%)</td>\n      <td>90.29</td>\n    </tr>\n    <tr>\n      <td>Correct sugar puckers (%)</td>\n      <td>98.77</td>\n    </tr>\n    <tr>\n      <td>Good backbone conformations (%)</td>\n      <td>81.74</td>\n    </tr>\n    <tr>\n      <td>Scores</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MolProbity</td>\n      <td>1.96</td>\n    </tr>\n    <tr>\n      <td>Clash score, all atoms</td>\n      <td>5.45</td>\n    </tr>\n  </tbody>\n</table>\n\n![Video 1.](https://cdn.elifesciences.org/articles/25642/elife-25642-media1.mp4.jpg)\n\n**Video 1.:** Video showing the quality of the cryo-EM density (green mesh) and fit of the molecular model (green ribbon) of the VemP nascent chain and CCA-end of the P-tRNA.\n\n![Video 2.](https://cdn.elifesciences.org/articles/25642/elife-25642-media2.mp4.jpg)\n\n**Video 2.:** Video showing a zoom of the cryo-EM density (green mesh) and fit of the molecular model (stick representation) of the \u03b1-turn and loop of the VemP nascent chain.\n\n### Extreme compaction of the VemP nascent chain in the ribosomal tunnel\n\nThe VemP nascent chain adopts an extremely compacted conformation within the exit tunnel comprising two \u03b1-helices, located in the upper and lower regions of the tunnel, connected by an \u03b1-turn and loop (Figure 2a\u2013d and Video 1). The \u03b1-helix located in the upper region of the tunnel is comprised of the C-terminal 10 residues (N147\u2013Q156) of VemP and is directly linked to the P-tRNA and thereby located directly in the peptidyltransferase center (PTC) of the ribosome (Figure 2a,b). The \u03b1-helix located in the lower region of the tunnel is comprised of the N-terminal 10 residues (M120\u2013S129) of VemP for which density is clearly visualized. We note that the N-terminal stretch of the VemP nascent chain from the lower \u03b1-helix to tunnel exit is less well resolved (Figure 1\u2014figure supplement 3). The formation of \u03b1-helical secondary structure within the upper and lower regions of the exit tunnel is generally consistent with previous biochemical and structural studies (Bhushan et al., 2010a; Kosolapov and Deutsch, 2009; Lu and Deutsch, 2005; Matheisl et al., 2015; Woolhead et al., 2004). The linker between the two \u03b1-helices is located within the constriction of the exit tunnel, adjacent to ribosomal proteins uL4 and uL22 (Figure 2a\u2013d). The linker is composed of 17 residues (130\u2013146) that form two consecutive turns: one connecting the C-terminal \u03b1-helix which is a canonical \u03b1-turn (I140\u2013K144), followed by a less well-ordered turn without hydrogen bonding (Figure 2a\u2013d and Video 2). Protein folding events have been demonstrated to occur within the ribosomal exit tunnel (Holtkamp et al., 2015; Lin et al., 2012; Marino et al., 2016; Nilsson et al., 2015; Tu et al., 2014); (Bhushan et al., 2010b; Matheisl et al., 2015); Of those so far characterized, folding was shown to occur within the lower region of the tunnel, e.g. ADR1 (Nilsson et al., 2015) and within the vestibule at the periphery where the exit tunnel widens (Cabrita et al., 2016; Nilsson et al., 2017; Trovato and O'Brien, 2016; Tu et al., 2014). Additionally, in the hCMV stalling peptide a C-terminal \u03b1-helix was also observed in the upper region of the tunnel in a similar yet slightly shifted position compared to the C-terminal helix of VemP (Figure 3) (Bhushan et al., 2010b; Matheisl et al., 2015). Structurally, the extensive compaction and secondary structure formation of VemP results in an unprecedented total of 37 residues being housed within the upper two thirds (approximately 50\u201355 \u00c5) of the ribosomal exit tunnel, which contrasts with the 21\u201333 aa that were visualized within the exit tunnel for other stalling peptides, such as SecM (Bhushan et al., 2011; Zhang et al., 2015), MifM (Sohmen et al., 2015), TnaC (Bischoff et al., 2014; Seidelt et al., 2009) and CMV (Bhushan et al., 2010b; Matheisl et al., 2015) (Figure 3). When calculating the theoretical minimal number of residues for the VemP peptide chain to stretch all the way from the PTC to the tunnel exit, it would require at least 51 aa, which is in stark contrast to only 31 aa for MifM and 34 for SecM due to lack of compaction.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/25642/elife-25642-fig3-v1.jpg)\n\n**Figure 3.:** (a) Overall superposition of VemP (model in green, surface in light green) with MifM (red, PDB ID 3J9W) (Sohmen et al., 2015), SecM (orange, PDB ID 3JBU) (Zhang et al., 2015), hCMV (yellow, PDB ID 5A8L) (Matheisl et al., 2015), TnaC (cyan, PDB ID 4UY8) (Bischoff et al., 2014) and ErmBL (blue, PDB ID 5JU8)(Arenz et al., 2016) in the ribosomal tunnel (light grey). The CCA-end of the P-tRNA is shown for reference. The ribosomal tunnel is shown schematically in grey. (b\u2013f) Superposition of VemP (green) with each arrest peptide described above. For (d) TnaC and (e) ErmBL, the two tryptophans (cyan) and the one erythromycin (blue) molecule are shown, respectively. (g) A zoomed-in view of (f) showing the superposition of VemP (green) and hCMV (yellow) in the C-terminal helical part including the side chains. The last residue, Q156 in case of VemP and P22 in case of hCMV, connecting to the CCA end of tRNA is labelled.\n\n### Interaction of VemP within the ribosomal exit tunnel\n\nAlanine scanning mutagenesis of VemP identified 10 residues that are critical for ribosome stalling, as well as an additional seven residues that significantly reduced stalling when mutated (Ishii et al., 2015). These residues encompass 17 of the 19-aa stalling window of VemP \u2018Short\u2019, with only the mutations of either S141A and S155A having no influence on ribosome stalling. Many of these residues establish specific interactions with components of the ribosomal exit tunnel, which is likely to explain their importance for ribosomal stalling (Figure 4a\u2013f). For example, the sidechains of N154 and Y150, which are located in the upper C-terminal \u03b1-helix of VemP, can stack on the nucleobases of U2506 (Figure 4a) and C2610 (Figure 4c), respectively, of the 23S rRNA. Additionally, N154 comes within hydrogen bonding distance of U2584 (Figure 4b). Within the \u03b1-turn of VemP, K144 can hydrogen bond with the non-bridging phosphate-oxygen of U747 (Figure 4d), whereas W143 can stack upon the R92 sidechain located the tip of the \u03b2-hairpin of uL22 (Figure 4e). Consistently, alterations in uL22 have been shown to reduce the efficiency of VemP-mediated ribosome stalling (Ishii et al., 2015). The \u03b1-turn of VemP is additionally stabilized by stacking interactions between R139 of VemP and A752 of the 23S rRNA (Figure 4f). The seven residues (131\u2013137) within the loop linking the \u03b1-turn of VemP to the lower N-terminal \u03b1-helix map within the VemP \u2018Long\u2019 region. As mentioned, alanine mutagenesis (Y132A, S136\u2013H138A) suggested that the identity of some of these residues is not important for ribosome stalling, with the exception of the H138A mutation that had a modest effect on arrest efficiency (Ishii et al., 2015). Consistently, in the VemP-SRC structure, residues 135\u2013138 of loop are less well-resolved and no sidechain interactions with the exit tunnel are observed. By contrast, the remaining loop residues (130\u2013134) are better resolved. The sidechain of H133 comes within hydrogen bonding distance of the backbone of K58 of uL4 (Figure 4g), which may contribute to the improved stalling efficiency of the VemP \u2018Long\u2019 over the VemP \u2018Short\u2019 observed in Figure 1b. Additionally, the sidechain of W124, which is located in the lower N-terminal \u03b1-helix of VemP, stacks on the R95 sidechain of uL22 (Figure 4h). Collectively, the interactions observed in the VemP-SRC structure are consistent with previous biochemical and mutational analysis indicating that the majority of critical residues and interactions are located in the upper region of the tunnel, but that the additional residues within the lower region of the tunnel can also contribute to the efficiency of stalling.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/25642/elife-25642-fig4-v1.jpg)\n\n**Figure 4.:** (a) N154 of VemP (green) stacks upon U2506(b) of the 23S rRNA (blue). (b) N154 of VemP is within hydrogen bond distance of nucleotide U2584. (c) Y150 of VemP stacks upon C2610. (d) K144 of VemP forms a salt bridge with U747. (e) W143 of VemP stacks with R92 of uL22 (orange). (f) R139 of VemP stacks upon A752. (g) W124 of VemP stacks upon R95 of uL22. (h) H133 of VemP interacts with K58 of uL4 (cyan). The middle panel maps the approximate locations of the interactions and includes the sequence of VemP with critical (bold) and important (boxed green) residues highlighted (Ishii et al., 2015). In panels (a\u2013h) the electron density for the VemP-SRC map (mesh) is coloured according to either VemP (green), 23S rRNA (blue), uL4 (cyan) or uL22 (orange).\n\n### Silencing of the PTC by the C-terminal \u03b1-helix of VemP\n\nBiochemical analysis indicates that VemP-stalled ribosomes arrest translation because peptide bond formation cannot occur between Gln156 of the VemP-peptidyl-tRNA in the P-site and Phe157 of the incoming aminoacyl-tRNA of the A-site (Ishii et al., 2015). Comparison of the conformation of nucleotides at the PTC of the VemP-stalled ribosomes revealed two nucleotides of the 23S rRNA, U2585 and U2506, which adopt conformations incompatible with peptide bond formation (Figure 5a). Accommodation of an aminoacyl-tRNA at the A-site of the PTC requires a transition of the PTC from an uninduced to an induced state, which involves a shift in the position of U2585 (Figure 5b) (Schmeing et al., 2005; Youngman et al., 2004). In the VemP-SRC, U2585 adopts a unique conformation, distinct from both the uninduced and induced U2585 conformations (Figure 5b). Moreover, the upper \u03b1-helix of VemP extends into the PTC and thereby directly prevents the transition of U2585 from the uninduced to the induced state, due to steric clashes with Asn154 of VemP (Figure 5c). In contrast to VemP, the hCMV helix does not directly prevent the analogous human nucleotide U4493 (E. coli U2585) from adopting the induced state. It is rather hCMV\u2019s penultimate Pro21, which is not part of the helix, that prevents this transition (Figure 5d). Additionally, U2506 is observed to adopt two distinct conformations, U2506(a) and U2506(b) in the VemP-SRC (Figure 5a). The U2506(a) conformation would sterically clash with the aminoacyl moiety of A-tRNA (Figure 5e) and is likely to contribute to prevent aminoacyl-tRNA accommodation at the A-site of the PTC. The induced state of the PTC also involves a shift in the position of U2506 (Schmeing et al., 2005; Youngman et al., 2004) (Figure 5f), which cannot occur in the VemP-SRC because the upper \u03b1-helix of VemP blocks the induced conformation of U2506 (Figure 5g), analogously to that observed for U2585 (Figure 5c). Unlike VemP, hCMV does not retain an uninduced conformation of human U4414 (E. coli U2506) but allows the induced conformation of U4414 since it is sterically less constrained by the more distant hCMV helix (Figure 5h) (Matheisl et al., 2015). Taken together, although \u03b1-helix formation has also been observed in the upper tunnel of an hCMV-stalled ribosome (Matheisl et al., 2015), the CMV \u03b1-helix did not directly extend into the PTC as seen here for VemP (Figure 3f\u2013g and Figure 5d,h). Indeed, the two C-terminal proline residues of the CMV stalling peptide appeared to be more important for inactivating the PTC and inducing translation arrest (Matheisl et al., 2015). Notably, translation arrest via stabilization of the uninduced state has also been observed for other force-sensing stalling peptides on the ribosome, such as SecM (Zhang et al., 2015) and MifM (Sohmen et al., 2015). However, the mechanism is different since both, SecM and MifM, adopt entirely extended conformations within the tunnel, unlike VemP (Figure 3).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/25642/elife-25642-fig5-v1.jpg)\n\n**Figure 5.:** (a) Conformation of U2585 and U2506 relative to VemP (green) at the PTC of the VemP-SRC. (b) Conformation of U2585 (blue) in the VemP-SRC compared with the uninduced (pink, PDB ID 1VQ6) and induced (tan, PDB ID 1VQN) states (Schmeing et al., 2005). (c) N154 of the upper \u03b1-helix of VemP clashes (indicated by spheres) with the induced conformation of U2585 (Schmeing et al., 2005). (d) Conformation of human U4493 (orange, numbering according to PDB ID 5A8L and 5AJ0, being equivalent to U4531 in PDB ID 4UG0 and 4V6X) in the hCMV-SRC compared with E. coli U2585 (blue) in the VemP-SRC. (e) The U2506(a) conformation overlaps the binding position of an accommodated Phe-tRNA (purple) at the A-site of the PTC (Schmeing et al., 2005). (f) Conformation of U2506 in the VemP-SRC (blue) compared with the uninduced (pink) and induced (tan) states (Schmeing et al., 2005). (g) N154 of the upper \u03b1-helix of VemP clashes (indicated by spheres) with the induced conformation of U2506 (Schmeing et al., 2005). (h) Conformation of human U4414 (orange, numbering according to PDB ID 5A8L and 5AJ0, being equivalent to U4452 in PDB ID 4UG0 and 4V6X) in the hCMV-SRC compared with U2506 (blue) in the VemP-SRC. hCMV stalling peptide is shown in yellow in (d) and (h).\n\n## Discussion\n\nCollectively, the VemP-SRC structure reveals that VemP adopts an extremely compacted conformation within the ribosomal exit tunnel, comprising an upper and a lower \u03b1-helix connected by an \u03b1-turn and a loop. On the stalled ribosome, the upper \u03b1-helix of VemP encroaches directly upon the PTC and stabilizes an uninduced state of the PTC that prevents accommodation of the incoming A-tRNA and thereby promotes translation arrest (Figure 6a). These findings suggest that formation of secondary structure, such as an \u03b1-helix, directly at the PTC is likely to be detrimental for peptide bond formation and, therefore, for translation efficiency. Thus, the PTC of the ribosome and its immediate tunnel context must have evolved to generally disfavour excessive secondary structure formation. However, it also raises the question as to whether secondary structure formation at the PTC is used by the ribosome for specific nascent proteins to modulate the rate of translation, which could have important downstream consequences for co-translational protein folding and targeting events.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/25642/elife-25642-fig6-v1.jpg)\n\n**Figure 6.:** (a\u2013b) Schematic summarizing the molecular basis for (a) VemP-dependent translation arrest and (b) relief of arrest via the pulling-force (indicated by arrow) on VemP protein translocation.\n\nRelief of VemP-mediated ribosome stalling is proposed to result from the force exerted on the nascent chain during membrane insertion of the N-terminal signal sequence (Ishii et al., 2015). It is easy to imagine how, in the case of VemP, force application would inevitably prevent the formation of extensive secondary structure formation during translation, or at least lead to an unraveling of any secondary structure that does form within the tunnel, and thereby eventually allowing sterically the transition into the induced conformation of the PTC. As a result, peptide bond formation would be promoted again and translation elongation continued (Figure 6b). Interestingly, all three molecularly characterized force-sensing stallers employ the mechanism of preventing the adoption of the catalytically required induced state of the PTC by steric hindrance. This may be the favoured mechanism because the conformational trajectory from the uninduced to the induced state coincides with the direction of force applied to the nascent peptide (Figure 6b). Yet, it is surprising that the stalling peptides use completely different modes by which they interact with the ribosomal tunnel in a force-sensitive manner to achieve this goal.\n\n## Materials and methods\n\n### DNA manipulations\n\nTo test the effect of adding the extra C-terminal VemP sequence to the identified 19aa stalling window (Ishii et al., 2015), the VemP \u2018short\u2019 plasmid was constructed from a previously designed pING1 plasmid carrying a lepB-based construct harboring a SecM arrest peptide (Ismail et al., 2012). In order to produce a soluble, non-membrane targeted variant, transmembrane helix 1 and 2 of Lep were deleted using PCR. To replace the SecM arrest peptide with the VemP arrest sequence, the plasmid was amplified using a primer pair producing a linear plasmid lacking the SecM arrest peptide. Gibson assembly (Gibson et al., 2009) was then used to ligate synthesized oligonucleotides corresponding to the VemP arrest peptide (in bold) and its following three residues, HRISGWKETNAMYVALNSQFSA, into the plasmid. Overlap PCR (Liu and Naismith, 2008) was used to replace the seven Lep residues just upstream of the VemP \u2018short\u2019 arrest peptide with the corresponding seven residues from the native VemP and by GSGSGSG to generate VemP \u2018long\u2019, FYHFTSDHRISGWKETNAMYVALNSQFSA, and VemP \u2018GS\u2019, GSGSGSGHRISGWKETNAMYVALNSQFSA, respectively. Overlap PCR was also used to generate other variants of VemP used in pulse-labelling analysis.\n\nFor in vitro translation and cryo-grid sample preparation, the full VemP gene without the signal sequence (\u2206SS-VemP, A26-A159) was cloned from synthesized V. alginolyticus genome by KOD XtremeTM Hot-Start DNA Polymerase (Novagen,\u00a0MA,\u00a0USA), and subsequently inserted to modified plasmid p7XNH3 by FX cloning method (Geertsma, 2014). The complete construct contains an N-terminal His-tag for purification, a FLAG-tag for detection and a TEV-protease cleavage site as a linker sequence. The C-terminus following the \u2206SS-VemP comprises a spacer containing a 3C-protease cleavage site and an HA-tag.\n\nMPWIYLRKLILLLFAMVLLPVHVSAAQIDHKAHVPHFSKLQPFVAVSVSPNSSVDFSEASEESSQSPVSEGHASLDSVALFNSQRWTSYLREGLDDEHVDFVGDLTTPFYADAGYAYSLMDINWRHNQSTFYHFTSDHRISGWKETNAMYVALNSQFSA(TAA-Stop x2) is the total amino acid sequence of the construct.\n\n### In vivo pulse-labelling\n\nE. coli MC1061 carrying plasmids with the different lepB-based constructs described in the paper were cultured overnight at 37\u00b0C in M9 minimal medium supplemented with 19 natural amino acids (1 \u03bcg/ml; no methionine, 100 \u03bcg/ml thiamine, 0.1 mM CaCl2, 2 mM MgSO4, 0.4% (w/v) fructose, and 100 \u03bcg/ml ampicillin). Overnight cultures were back-diluted to OD600\u00a0~0.05\u20130.1 and grown 2.5 to 3.5 hr to an OD600 of 0.2\u20130.35. Protein expression was induced with 0.2% (w/v) arabinose for 5 min, whereafter expressed proteins were radiolabelled with [35S]methionine for 2 min at 37\u00b0C. Ice-cold trichloroacetic acid (TCA) was added to a final concentration of 10% and the samples were incubated on ice for 30 min. The samples were centrifuged for 5 min at 20,800 x g at 4\u00b0C and the precipitates were washed with cold acetone, and spun again for 5 min at 20,800 x g at 4\u00b0C. The precipitates were resolubilized in Tris-SDS solution (10 mM Tris-HCl, pH 7.5, and 2% SDS) at 95\u00b0C for 10 min and spun for 5 min at room temperature. The protein of interest was then immunoprecipitated using anti-LepB antibody and the resulting samples were prepared for SDS-PAGE analysis with Laemmli sample buffer supplemented with 400 \u03bcg/ml RNase A. Gels were analyzed with a Fuji FLA-3000 phosphorimager and ImageGauge V4.23 software. Quantification of protein bands was performed using EasyQuant (in-house developed software). The fraction of full-length values (fFL) was\u00a0calculated using the formula fFL = IFL / (IFL+IA), where IFL is the quantified intensity of the full-length protein band and IA is the quantified intensity of the arrested protein band. Experiments were repeated in triplicate and standard errors of the mean were calculated.\n\n### In vitro transcription and translation\n\nFor the RNase treatment assay and the final large scale purification for cryo-grid, RTS 100 E.coli HY Kit (5 PRIME) was used (transcription and translation coupled). 500 \u03bcL reaction was incubated at 30\u00b0C for 35 min with 12.6 pmol PCR-product template generated upon the \u2206SS-VemP construct. RNase was added to the reaction where indicated, and incubated at 30\u00b0C for an additional 10 min. For the time course, the same amount of PCR-product template was used with the PURExpress In Vitro Protein Synthesis Kit (New\u00a0England\u00a0Biolabs #E6800S, transcription and translation coupled). Reactions were incubated at 37\u00b0C for various times (25/40/55/70/85/100 min). For western blotting, reaction products were separated by either home-made or commercial NuPAGE 12% Bis-Tris gels (Invitrogen, CA, USA) with 1x MOPS buffer. Proteins were blotted to nitrocellulose membrane (Carl Roth,\u00a0Germany), incubated with mouse anti FLAG M2 HRP (Sigma,\u00a0Germany) and visualized by ChemiDoc MP System (Bio-Rad).\n\n### Purification of the VemP-SRC\n\n500 \u03bcL in vitro translation reaction was loaded onto 10\u201350% sucrose gradient prepared with Buffer C (25 mM pH 7.2 HEPES-KOH, 100 mM KOAc, 10 mM Mg(OAc)2, 0.01% DDM, 1/1,000 complete protease inhibitor (Roche,\u00a0Germany), 0.2 U/mL RNase, 2 mM 2-mercaptoethanol) and centrifuged for 3 hr in a Beckman coulter SW40 Ti swinging bucket rotor with 35,000 r.p.m. at 4\u00b0C. Gradients were separated on a Biocomp Gradient Station and fractions containing 70S ribosomal particles were collected and loaded onto a Talon metal affinity chromatography column (1.5 ml resin) pre-equilibrated in 10 mL buffer C containing 10 \u03bcg/mL bulk tRNA. The column was washed with 25 ml buffer C until no significant absorption (OD260) could be detected in the wash fractions. The VemP-SRC, bound to the Talon matrix by the VemP N-terminal His-tag, was eluted in 750 \u03bcL buffer C containing 150 mM imidazole. The elution was pelleted for 4 hr 20 min in a Beckman Coulter TLA 120.2 fixed-angle rotor with 51,000 r.p.m. at 4\u00b0C. 15.6 pmol VemP-SRC pellet was resuspended in ice-cold buffer C without DDM, aliquoted and snap-frozen.\n\n### Cryo-electron microscopy and single particle reconstruction\n\nE. coli VemP-SRC (6 OD260/mL) was applied to 2 nm pre-coated Quantifoil R3/3 holey carbon supported grids and vitrified using Vitrobot Mark IV (FEI). Data collection was performed using EM-TOOLS (TVIPS GmbH) on a Titan Krios transmission electron microscope equipped with a Falcon II direct electron detector (FEI) at 300kV at a pixel size of 1.084 \u00c5 and a defocus range of 1\u20132.5 \u03bcm. 10 frames (dose per frame of 2.5 e-/\u00c52) were aligned using MotionCor2 (Li et al., 2013). Power-spectra, defocus values and astigmatism were determined with CTFFIND4 software (Rohou and Grigorieff, 2015). 5735 micrographs were manually inspected in real space and in the meantime filtered by threshold of resolution at 4.5 \u00c5 and astigmatism at 5% resulting in 4849 micrographs. 850,433 particles were automatically picked by Gautomatch (http://www.mrc-lmb.cam.ac.uk/kzhang/) and single particles were processed using RELION 1.4 (Scheres, 2012). After 2D classification, 789,006 particles were subjected to 3D refinement using E. coli 70S ribosome as reference structure, followed by several further rounds of 3D classifications, including tRNA-focused sorting (64 rounds) and sorting (58 rounds) with a ribosome mask (Figure 1\u2014figure supplement 2). One major class containing 400,024 particles (62%) was further refined, resulting in a final reconstruction with an average resolution of 2.9 \u00c5 (0.143 FSC) (Figure 1\u2014figure supplement 3). The map was subsequently B-factored by EMBfactor (Fern\u00e1ndez et al., 2008) with the FSC. Finally, the local resolution was calculated using ResMap (Kucukelbir et al., 2014).\n\n### Molecular modeling and refinement of the VemP-SRC\n\nThe molecular model for the ribosomal proteins and rRNA of the 70S ribosome of the VemP-SRC was based on the molecular model from cryo-EM reconstruction of the E. coli 70S ribosome (PDB ID 5JU8) (Arenz et al., 2016), except that the bL31 was based on the (PDB ID 5LZD) (Fischer et al., 2016). The molecular model for Gln-tRNA was based on a crystal structure (PDB ID 1GSG) (Rould et al., 1989). The molecular models were initially fitted as a rigid body into the cryo-EM density map of the corresponding stalled complex using UCSF Chimera (Pettersen et al., 2004). The complete atomic model of the VemP-SRC was manually adjusted using Coot (Emsley and Cowtan, 2004) and refined using phenix.real_space_refine with restraints obtained by phenix.secondary_structure_restraints (Adams et al., 2010). The Phenix refined model was further refined using REFMAC (Vagin et al., 2004) to validate the overfitting as previously described (Brown et al., 2015) (Figure 1\u2014figure supplement 3). The statistics of the refined model were calculated using Molprobity (Chen et al., 2010) are presented in Table 1.\n\n### Figure preparation\n\nThe protein secondary structure prediction of the native VemP sequence was performed using the MPI bioinformatics Toolkit (Alva et al., 2016) with the prediction method written by B. Rost (Rost, 2001). Figures showing electron densities and atomic models were generated using either UCSF Chimera (Pettersen et al., 2004) or PyMol Molecular Graphics Systems (Version 1.8 Schr\u00f6dinger, LLC,).\n\n### Accession codes\n\nThe cryo-electron microscopy map for the VemP-SRC has been deposited in the EMDataBank with the accession code EMD-3713. The respective coordinates for electron-microscopy-based model of the VemP-SRC are deposited in the ProteinDataBank (5NWY).\n",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "58a5c7db-7b9c-4e29-b508-a40c516550f9",
+      "submission_id": "5ea771a4-bc70-42b2-b5f4-3986246364e0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Rachel Green, Johns Hopkins School of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.25642.016](https://doi.org/10.7554/eLife.25642.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The force-sensing peptide VemP employs extreme compaction and secondary structure formation to induce ribosomal stalling\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Rachel Green (Reviewer #1) is a member of our board of Reviewing Editors and the evaluation has been overseen John Kuriyan as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Koreaki Ito (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe have received comments from three expert reviewers all of whom find the structure of the VemP-dependent stalling peptide complexed with the ribosome to be of high quality and broad general interest. The reviewers raise several issues, a few minor computational questions, and some concerns with the biochemical experiments presented in Figure 1B (and whether they should be included in the body of the manuscript given their limited utility), and a request for a clearer comparison with CMV-stalling peptide, and the possible inclusion of an additional citation. The authors should address the specific issues raised by the reviewers. Otherwise, once these minor issues are addressed, the manuscript should be acceptable for publication at eLife.\n\nReviewer #1:\n\nThis manuscript by Su et al. described a cryoEM structure of E. coli ribosomes stalled on an mRNA encoding the VemP peptide and characterized in some molecular detail. Here, the authors redefine the critical features of the peptide sequence needed for efficient stalling (extending the amino acid window by 7 aa to 26 in total) and then isolate from in vitro translation reactions the stalled ribosome complex. Elimination of the signal sequence from the peptide is critical in vivo for allowing stalling to occur but is apparently not necessary in the PURE system that is being utilized in vitro. The authors then present a well-resolved structure of the ribosome, with high resolution for the ribosome as a whole (2.9 \u00c5), and with only slightly reduced resolution in the exit tunnel (3-3.5 \u00c5). With this resolution, the authors are able to identify the overall highly compacted structure of the nascent peptide (which is quite distinct from that observed for other force-regulated stalling sequences like MifM and SecM), the details of interactions of the peptide with the tunnel that specify the stall, and an \"uninduced\" PTC that explains why catalysis does not proceed (A site tRNA is sterically hindered from binding).\n\nOverall, the data are clean and convincing, and the structure provides insight into a different way in which a nascent peptide in the ribosome exit tunnel can regulate protein synthesis. This report will be of interest to readers of eLife and I recommend publication.\n\nPoints:\n\n1) The term \"translocation\" used in the manuscript refers to protein translocation, yet to someone in the translation (not secretion) field, this refers to the reaction catalyzed by EFG. This could be clarified throughout the manuscript.\n\n2) Discussion of Na+ regulation was a bit hard to integrate into the results of the manuscript. It might be worth clarifying that the results presented do not shed light on this particular subject but that this was how the motif was originally identified/studied.\n\n3) More detailed comparison of the CMV stalling peptide and VemP could be made. While Figure 3 clearly shows that there is considerably more compaction in VemP peptide than in MifM or SecM, the distinction relative to the CMV peptide is less obvious. This should also be addressed in the text.\n\n4) The induced fit of the ribosome PTC was documented structurally by Schmeing et al., 2005 and the results here nicely agree. However, earlier biochemical work (Youngman et al., 2004) detailed an induced fit mechanism based on differences in reactivity of intact tRNAs and minimal A site substrates (like puromycin). It might be worth considering whether this study should also be cited.\n\nReviewer #2:\n\nSu et al., present an interesting structural analysis of the regulation of SecDF2 translation mediated by VemP-dependent stalling of the 70S ribosome. They obtained a cryo-EM reconstruction of the stalled and affinity-purified 70S complex. They reached the very high resolution of 2.9 \u00c5 and the high quality of the map facilitated de-novo modelling of the nascent VemP peptide located in the ribosomal exit tunnel. The structural analysis reveals an unprecedented, highly compacted state of the nascent peptide with two \u03b1-helices formed. Importantly, specific interactions of the VemP peptide with ribosomal residues of the tunnel and a remodeling of critical bases of the ribosomal peptidyl-transferase center explains the molecular mechanism of VemP-dependent stalling of translation. Overall, the data are of very high quality and the paper is very well written.\n\nReviewer #3:\n\nHere is another contribution from the Beckmann-Wilson groups reporting the structures of ribosome-nascent polypeptide complexes, which have stalled after translating special amino acid sequences called arrest sequences. This time, the authors chose VemP, a regulatory nascent polypeptide from Vibrio alginolyticus, which was reported recently to play a central role in the adaptation of this marine bacterium to environments of low sodium concentrations. VemP is expressed from the upstream open reading frame in front of secDF2, encoding a proton-utilizing export enhancer, and undergoes translational elongation arrest, which enables the expression of secDF2 by disrupting the secondary structure of mRNA and exposing the ribosome-binding sequence of secDF2. VemP is a \"Sec-monitoring substrate,\" and its elongation arrest is cancelled in a manner coupled with its translocation across the membrane. When this species of bacteria are living in seawater, they express only SecDF1, which can only use a gradient of Na+. Accordingly, the cellular Sec activity declines when they encounter a low salinity environment. The Sec dysfunction acts to prolong the stalling of the VemP-translating ribosome, which in turn enhances translation of SecDF2 by the ribosomal pool in the cell. VemP is the third member of the force-sensitive class of regulatory arrest peptides, following SecM and MifM in the order of discovery.\n\nThe study has been conducted with a high standard of design and skills, and the results provide additional insights into an emerging concept in molecular biology: nascent chain handling of the translating ribosome. Taken together with the results of similar analyses carried out to date, the present study reveals the high degree of diversity, with which different nascent polypeptides interact with the ribosomal components. Notably, the nascent chain of VemP establishes extensive contacts with the ribosome and undergoes an unprecedented extent of secondary structure formation in the ribosomal interior. I recommend publication of this work as it presents a clear case of nascent chain-instructed ribosomal dysfunction and force-dependent translation recovery.\n\nSpecific comments.\n\n1. Initially, I did not understand exactly what were the VemP constructs that the authors referred to \"short\" and \"long\". Inspection of Materials and Methods then made me realize that they were not really VemP constructs; rather, the authors inserted segments of VemP comprising the 19 and the 26 amino acids into the LepB sequence. The authors must have expected that these amino acid sequences would fully halt translational elongation when transplanted into a sequence context of an unrelated protein, LepB in this case. However, Ishii et al. only determined the C-terminal end of the VemP arrest sequence, leaving the N-terminal boundary obscure. Moreover, it is known that the arrest proficiency can be affected by the nature of the N-terminally adjacent sequences, although the LepB sequence may be expected to be inert in this respect. The results in Figure 1B show that neither the short nor the long construct exhibited full elongation arrest in vivo; less than 10% and ~50% efficiency, respectively, for \"short\" and \"long\". By contrast, the full-length delta-signal VemP gives nearly 100% arrest in vivo as shown by Ishii et al and in vitro as shown in Figure 1F. In my opinion, the information content of Figure 1B is quite limited. Most importantly, the authors anyway used the full-length delta-signal VemP to prepare the samples of ribosome-nascent chain complexes for cryo-EM analysis. These considerations lead me to suggest that the clarity of the paper will be improved if the authors remove Figure 1B as well as the schemes of the short, the long and the GS constructs, from the main body of the manuscript. A simple description something like the following might be sufficient and appropriate: \"We constructed LepB variants containing the 19 amino acid segment that Ishii et al chose as the target of alanine scanning mutagenesis or the 26 amino acids segment having 9 additional N-terminally neighboring residues, but these fusion proteins proved to be incapable of inducing elongation arrest to the full extent in vivo. Therefore, we used the full-length mature sequence of VemP (delta-signal VemP) for EM analysis\".\n\n2. What does ST stand for in Figure 1B? If it means stalled fragment, it does not apply to the Q156Stop constructs, which produce prematurely terminated, but not stalled, products. Incidentally, the letters indicating the constructs are too small to read.\n\n3. The stalling efficiency is very low in the Figure 1E experiment, whereas it is almost 100% in the Figure 1F experiment. Why? Does hydrolysis of peptidyl-tRNA linkage take place under the conditions of the Figure 1E experiment? From the description in Material and Method, it seems that the authors used the former conditions for preparation of the cryo-EM samples. If so, the experimental system was accompanied by incomplete stalling or hydrolytic removal of the tRNA. Please clarify these issues.\n",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3346ab94-a942-49c8-af8a-31c016f355ed",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C1",
+      "claim": "VemP allows Vibrio alginolyticus to adapt to changes in salinity by modulating expression of components of the protein targeting machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most recently discovered examples is the Vibrio export monitoring polypeptide (VemP) that allows Vibrio alginolyticus to adapt to changes in salinity by modulating expression of components of the protein targeting machinery (Ishii et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ishii et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "3bb080f4-86a0-4d87-b9ac-b05173d3d0b1",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C2",
+      "claim": "V. alginolyticus is a Gram-negative marine-estuarine bacterium.",
+      "claim_type": "EXPLICIT",
+      "source": "V. alginolyticus is a Gram-negative marine-estuarine bacterium that, unlike most bacteria, has two paralogs of SecDF (SecDF1 and SecDF2) to enhance protein export in cooperation with the SecYEG translocon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established fact about the organism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "cdd5dd47-759a-49d9-9fde-192060cab84e",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C3",
+      "claim": "V. alginolyticus has two paralogs of SecDF (SecDF1 and SecDF2) to enhance protein export in cooperation with the SecYEG translocon.",
+      "claim_type": "EXPLICIT",
+      "source": "V. alginolyticus is a Gram-negative marine-estuarine bacterium that, unlike most bacteria, has two paralogs of SecDF (SecDF1 and SecDF2) to enhance protein export in cooperation with the SecYEG translocon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established fact about the organism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "c76ddaa0-0527-4321-9054-88eb9dd46cb7",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C4",
+      "claim": "In Na+-rich environments, V. alginolyticus utilizes the Na+-dependent SecDF1.",
+      "claim_type": "EXPLICIT",
+      "source": "In Na+-rich environments, V. alginolyticus utilizes the Na+-dependent SecDF1; however, in Na+-limiting environments V. alginolyticus switches to the Na+-independent (presumably H+-dependent) SecDF2 (Ishii et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ishii et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "da502898-73fd-4698-9cdf-1bfed9277560",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C5",
+      "claim": "In Na+-limiting environments V. alginolyticus switches to the Na+-independent (presumably H+-dependent) SecDF2.",
+      "claim_type": "EXPLICIT",
+      "source": "In Na+-rich environments, V. alginolyticus utilizes the Na+-dependent SecDF1; however, in Na+-limiting environments V. alginolyticus switches to the Na+-independent (presumably H+-dependent) SecDF2 (Ishii et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ishii et al., 2015, with speculation about H+-dependence",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "0f68edc8-376d-4374-a88d-998b08f580c0",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C6",
+      "claim": "The switch between SecDF1 and SecDF2 is facilitated by the stalling activity of VemP.",
+      "claim_type": "EXPLICIT",
+      "source": "The switch between SecDF1 and SecDF2 is facilitated by the stalling activity of VemP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established mechanism based on prior work",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "936c1c7f-0675-449d-adc3-468a5491d8f1",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C7",
+      "claim": "In Na+-rich environments, VemP is targeted by its signal sequence (SS) to the SecDF1-SecYEG translocon.",
+      "claim_type": "EXPLICIT",
+      "source": "In Na+-rich environments, VemP is targeted by its signal sequence (SS) to the SecDF1-SecYEG translocon (Ishii et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ishii et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "f8486ef4-0d1e-41b8-9487-5ededfb06b02",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C8",
+      "claim": "The force applied to VemP during protein translocation prevents VemP-dependent ribosome stalling.",
+      "claim_type": "EXPLICIT",
+      "source": "The force applied to VemP during protein translocation prevents VemP-dependent ribosome stalling, thereby enabling the complete VemP to be translated and released from the ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established mechanism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "31e01003-47c2-43a8-8949-d6b06e2ae4bf",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C9",
+      "claim": "Under Na+-rich conditions, SecDF2 expression is repressed due to sequestration of the ribosome-binding site (RBS) of secDF2 within a stem-loop structure in the mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Under such conditions, SecDF2 expression is repressed due to sequestration of the ribosome-binding site (RBS) of secDF2 within a stem-loop structure in the mRNA (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by reference to Figure 1a showing the mechanism",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "8960974d-73cb-4cfb-889d-121515f0d1e0",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C10",
+      "claim": "In Na+-limiting environments, VemP is not translocated due to the inactivity of SecDF1.",
+      "claim_type": "EXPLICIT",
+      "source": "In Na+-limiting environments, however, VemP is not translocated due to the inactivity of SecDF1, and the resulting lack of force on the VemP nascent chain leads to ribosomal stalling (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by reference to Figure 1a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "bea7835b-f0e6-436b-b8d6-98ae9da9575d",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C11",
+      "claim": "The lack of force on the VemP nascent chain in Na+-limiting environments leads to ribosomal stalling.",
+      "claim_type": "EXPLICIT",
+      "source": "In Na+-limiting environments, however, VemP is not translocated due to the inactivity of SecDF1, and the resulting lack of force on the VemP nascent chain leads to ribosomal stalling (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by reference to Figure 1a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "89d9bc5a-7e86-480f-9dc0-bcc7f877f61d",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C12",
+      "claim": "Ribosome stalling dissolves the stem-loop structure within the mRNA and exposes the RBS, thereby inducing expression of Na+-independent SecDF2.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribosome stalling dissolves the stem-loop structure within the mRNA, exposes the RBS and thereby induces expression of Na+-independent SecDF2 (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by reference to Figure 1a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "843617cf-9ce1-4ba1-8d8a-d10758f67d2d",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C13",
+      "claim": "VemP-dependent stalling occurs when Q156 is in the P-site of the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical studies have demonstrated that VemP-dependent stalling occurs when Q156 is in the P-site of the ribosome and that distinct amino acid residues within a 19aa window (138\u2013156) of VemP are critical for efficient ribosome stalling (Figure 1a) (Ishii et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Ishii et al., 2015 and reference to Figure 1a",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "b53a082c-a8d2-4be8-afa6-4999eb614b18",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C14",
+      "claim": "Distinct amino acid residues within a 19aa window (138\u2013156) of VemP are critical for efficient ribosome stalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical studies have demonstrated that VemP-dependent stalling occurs when Q156 is in the P-site of the ribosome and that distinct amino acid residues within a 19aa window (138\u2013156) of VemP are critical for efficient ribosome stalling (Figure 1a) (Ishii et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Ishii et al., 2015 and reference to Figure 1a",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "d9d8b5d5-94ae-44fb-afd8-793173e60bf1",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C15",
+      "claim": "The VemP stalling sequence and force-sensing mechanism appears to be completely distinct from SecM and MifM.",
+      "claim_type": "EXPLICIT",
+      "source": "Although VemP-mediated regulation of SecDF2 expression is reminiscent of other peptide-stalling regulatory systems (Ito and Chiba, 2013; Wilson et al., 2016), such as SecM (Nakatogawa and Ito, 2001) and MifM (Chiba et al., 2009), the VemP stalling sequence and force-sensing mechanism appears to be completely distinct (Ishii et al., 2015; Ito and Chiba, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "dedd2489-3a87-49e4-b903-23be878b2519",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C16",
+      "claim": "VemP 'short' carrying the 19 amino acid segment (138\u2013156) produces mainly full-length LepB-VemP fusion protein with relatively little (10%) stalled peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this assay, the major product observed to accumulate for VemP 'short' was full-length LepB-VemP fusion protein, whereas relatively little (10%) stalled peptide was detected (Figure 1b,c and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1b,c and Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "d3cbcfaa-da36-4361-9bc0-02cf2e71050e",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C17",
+      "claim": "VemP 'long' containing the extended stalling window dramatically increased the stalling efficiency compared to VemP 'short'.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, VemP 'long' containing the extended stalling window dramatically increased the stalling efficiency (Figure 1b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1b,c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "d50cbfca-efff-422a-b4f2-f51d8e3ecda0",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C18",
+      "claim": "Mutations L153A and Q156stop led to a reduction in stalling efficiency for the VemP 'short' and particularly for the VemP 'long' constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, mutations previously reported to abrogate ribosome stalling (Ishii et al., 2015), L153A and Q156stop, led to a reduction in stalling efficiency for the VemP 'short' and particularly for the VemP 'long' constructs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ishii et al., 2015 and experimental observation",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "93a7b9da-2ac2-46c5-8154-bcd75d8b75f2",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C19",
+      "claim": "VemP 'GS' had a reduced stalling efficiency compared to VemP 'long'.",
+      "claim_type": "EXPLICIT",
+      "source": "VemP 'GS' also had a reduced stalling efficiency (Figure 1b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1b,c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "55cb130f-055d-4b44-b5f8-c65ac1e2d12a",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C20",
+      "claim": "Residues beyond the previously characterized 19-aa stalling window of VemP contribute to the efficiency of VemP-mediated translation arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results suggest that residues beyond the previously characterized 19-aa stalling window of VemP contribute to the efficiency of VemP-mediated translation arrest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental results with VemP 'long' vs 'short'",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "fcc04898-f2c9-4e1e-a997-378136473a67",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C21",
+      "claim": "Translation of the \u0394SS-VemP construct in an E. coli lysate-based translation system led to the accumulation of VemP-peptidyl-tRNA (about 40 kDa).",
+      "claim_type": "EXPLICIT",
+      "source": "Translation of the \u0394SS-VemP construct in an E. coli lysate-based translation system led to the accumulation of VemP-peptidyl-tRNA (about 40 kDa), of which the size was reduced to the expected free peptide (18 kDa) upon RNase treatment (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "67d88442-f4f8-4525-ae33-742dbe85d8be",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C22",
+      "claim": "The size of VemP-peptidyl-tRNA was reduced to the expected free peptide (18 kDa) upon RNase treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Translation of the \u0394SS-VemP construct in an E. coli lysate-based translation system led to the accumulation of VemP-peptidyl-tRNA (about 40 kDa), of which the size was reduced to the expected free peptide (18 kDa) upon RNase treatment (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "b48d1fd8-3602-4578-afe7-43e7dcd95536",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C23",
+      "claim": "The VemP-peptidyl-tRNA persists even with incubation times of up to 100 min with only minor fractions of full-length VemP produced.",
+      "claim_type": "EXPLICIT",
+      "source": "The robustness of stalling of the wildtype \u0394SS-VemP was evident from the persistence of the VemP-peptidyl-tRNA, even with incubation times of up to 100 min where only minor fractions of full-length VemP were produced (Figure 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "d9021ff4-3097-42a6-8947-454a885faf8e",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C24",
+      "claim": "The cryo-EM structure of the VemP-SRC has an average resolution of 2.9 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent refinement resulted in a final reconstruction of the VemP-SRC (Figure 1g) with an average resolution of 2.9 \u00c5 and a local resolution of 2.5 \u00c5 within the core of the ribosome (Figure 1\u2014figure supplement 3 and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 1g, Figure 1\u2014figure supplement 3 and Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "59d3235e-5d3f-496b-b1e3-bba643281687",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C25",
+      "claim": "The cryo-EM structure of the VemP-SRC has a local resolution of 2.5 \u00c5 within the core of the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent refinement resulted in a final reconstruction of the VemP-SRC (Figure 1g) with an average resolution of 2.9 \u00c5 and a local resolution of 2.5 \u00c5 within the core of the ribosome (Figure 1\u2014figure supplement 3 and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 1g, Figure 1\u2014figure supplement 3 and Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "2ce1fd39-7553-47a8-b12a-4c5c8cd0bc25",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C26",
+      "claim": "The electron density for the majority of the VemP nascent chain was well resolved within the exit tunnel, with local resolution ranging between 3.0 and 3.5 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The electron density for the majority of the VemP nascent chain was well resolved within the exit tunnel, with local resolution ranging between 3.0 and 3.5 \u00c5 (Figure 1\u2014figure supplement 3), thus enabling a molecular model for residues 120\u2013156 of VemP to be built de novo (Figure 2 and Videos 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 1\u2014figure supplement 3, Figure 2, and Videos 1 and 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "1fc18ede-d279-466f-9036-17601094ea6b",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C27",
+      "claim": "A molecular model for residues 120\u2013156 of VemP was built de novo.",
+      "claim_type": "EXPLICIT",
+      "source": "The electron density for the majority of the VemP nascent chain was well resolved within the exit tunnel, with local resolution ranging between 3.0 and 3.5 \u00c5 (Figure 1\u2014figure supplement 3), thus enabling a molecular model for residues 120\u2013156 of VemP to be built de novo (Figure 2 and Videos 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 1\u2014figure supplement 3, Figure 2, and Videos 1 and 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "7df053d6-abaf-4f6b-917f-be0d9dc947a4",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C28",
+      "claim": "The VemP nascent chain adopts an extremely compacted conformation within the exit tunnel comprising two \u03b1-helices, located in the upper and lower regions of the tunnel, connected by an \u03b1-turn and loop.",
+      "claim_type": "EXPLICIT",
+      "source": "The VemP nascent chain adopts an extremely compacted conformation within the exit tunnel comprising two \u03b1-helices, located in the upper and lower regions of the tunnel, connected by an \u03b1-turn and loop (Figure 2a\u2013d and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 2a\u2013d and Video 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "ba7442a2-6651-4b51-8b61-33a21db3c0a8",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C29",
+      "claim": "The \u03b1-helix located in the upper region of the tunnel is comprised of the C-terminal 10 residues (N147\u2013Q156) of VemP.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b1-helix located in the upper region of the tunnel is comprised of the C-terminal 10 residues (N147\u2013Q156) of VemP and is directly linked to the P-tRNA and thereby located directly in the peptidyltransferase center (PTC) of the ribosome (Figure 2a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 2a,b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "aa4a0eb6-8125-477e-b90d-ca34edf46462",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C30",
+      "claim": "The upper \u03b1-helix of VemP is directly linked to the P-tRNA and thereby located directly in the peptidyltransferase center (PTC) of the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b1-helix located in the upper region of the tunnel is comprised of the C-terminal 10 residues (N147\u2013Q156) of VemP and is directly linked to the P-tRNA and thereby located directly in the peptidyltransferase center (PTC) of the ribosome (Figure 2a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 2a,b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "34db3eb9-1a4f-4a5c-8093-b807dbee69dd",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C31",
+      "claim": "The \u03b1-helix located in the lower region of the tunnel is comprised of the N-terminal 10 residues (M120\u2013S129) of VemP.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b1-helix located in the lower region of the tunnel is comprised of the N-terminal 10 residues (M120\u2013S129) of VemP for which density is clearly visualized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "d51640d2-e3ce-4562-83d6-396c3cdd03c4",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C32",
+      "claim": "The N-terminal stretch of the VemP nascent chain from the lower \u03b1-helix to tunnel exit is less well resolved.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the N-terminal stretch of the VemP nascent chain from the lower \u03b1-helix to tunnel exit is less well resolved (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 1\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "521692bc-9898-4a6e-90dc-928a5784f5db",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C33",
+      "claim": "The linker between the two \u03b1-helices is located within the constriction of the exit tunnel, adjacent to ribosomal proteins uL4 and uL22.",
+      "claim_type": "EXPLICIT",
+      "source": "The linker between the two \u03b1-helices is located within the constriction of the exit tunnel, adjacent to ribosomal proteins uL4 and uL22 (Figure 2a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 2a\u2013d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "b66a079e-a23e-4e19-bd82-6bc4f954e3c3",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C34",
+      "claim": "The linker is composed of 17 residues (130\u2013146) that form two consecutive turns: one connecting the C-terminal \u03b1-helix which is a canonical \u03b1-turn (I140\u2013K144), followed by a less well-ordered turn without hydrogen bonding.",
+      "claim_type": "EXPLICIT",
+      "source": "The linker is composed of 17 residues (130\u2013146) that form two consecutive turns: one connecting the C-terminal \u03b1-helix which is a canonical \u03b1-turn (I140\u2013K144), followed by a less well-ordered turn without hydrogen bonding (Figure 2a\u2013d and Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 2a\u2013d and Video 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "b57f1b83-92e1-4ed9-ad7f-1158591d5103",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C35",
+      "claim": "The extensive compaction and secondary structure formation of VemP results in an unprecedented total of 37 residues being housed within the upper two thirds (approximately 50\u201355 \u00c5) of the ribosomal exit tunnel.",
+      "claim_type": "EXPLICIT",
+      "source": "Structurally, the extensive compaction and secondary structure formation of VemP results in an unprecedented total of 37 residues being housed within the upper two thirds (approximately 50\u201355 \u00c5) of the ribosomal exit tunnel, which contrasts with the 21\u201333 aa that were visualized within the exit tunnel for other stalling peptides, such as SecM (Bhushan et al., 2011; Zhang et al., 2015), MifM (Sohmen et al., 2015), TnaC (Bischoff et al., 2014; Seidelt et al., 2009) and CMV (Bhushan et al., 2010b; Matheisl et al., 2015) (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 3 and comparison with cited structures",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "2eb10d27-3ea6-4f12-9c13-bb0837af6a3b",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C36",
+      "claim": "21\u201333 aa were visualized within the exit tunnel for other stalling peptides, such as SecM, MifM, TnaC and CMV.",
+      "claim_type": "EXPLICIT",
+      "source": "Structurally, the extensive compaction and secondary structure formation of VemP results in an unprecedented total of 37 residues being housed within the upper two thirds (approximately 50\u201355 \u00c5) of the ribosomal exit tunnel, which contrasts with the 21\u201333 aa that were visualized within the exit tunnel for other stalling peptides, such as SecM (Bhushan et al., 2011; Zhang et al., 2015), MifM (Sohmen et al., 2015), TnaC (Bischoff et al., 2014; Seidelt et al., 2009) and CMV (Bhushan et al., 2010b; Matheisl et al., 2015) (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to multiple structural studies and Figure 3",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "0cc693f7-1d62-44c7-a7c2-ccb29c903f15",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C37",
+      "claim": "The theoretical minimal number of residues for the VemP peptide chain to stretch all the way from the PTC to the tunnel exit would require at least 51 aa.",
+      "claim_type": "EXPLICIT",
+      "source": "When calculating the theoretical minimal number of residues for the VemP peptide chain to stretch all the way from the PTC to the tunnel exit, it would require at least 51 aa, which is in stark contrast to only 31 aa for MifM and 34 for SecM due to lack of compaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on calculation from structural data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "8c735d5c-1dc5-4a79-80ea-e191afc59ece",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C38",
+      "claim": "The theoretical minimal number of residues for MifM to stretch from the PTC to the tunnel exit is 31 aa.",
+      "claim_type": "EXPLICIT",
+      "source": "When calculating the theoretical minimal number of residues for the VemP peptide chain to stretch all the way from the PTC to the tunnel exit, it would require at least 51 aa, which is in stark contrast to only 31 aa for MifM and 34 for SecM due to lack of compaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on calculation from structural data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "77ec67a7-7925-4208-a20e-c2d161f3ee59",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C39",
+      "claim": "The theoretical minimal number of residues for SecM to stretch from the PTC to the tunnel exit is 34 aa.",
+      "claim_type": "EXPLICIT",
+      "source": "When calculating the theoretical minimal number of residues for the VemP peptide chain to stretch all the way from the PTC to the tunnel exit, it would require at least 51 aa, which is in stark contrast to only 31 aa for MifM and 34 for SecM due to lack of compaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on calculation from structural data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "2071435b-8094-4b90-a8f4-cba75e316d60",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C40",
+      "claim": "Alanine scanning mutagenesis of VemP identified 10 residues that are critical for ribosome stalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Alanine scanning mutagenesis of VemP identified 10 residues that are critical for ribosome stalling, as well as an additional seven residues that significantly reduced stalling when mutated (Ishii et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ishii et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "c0cad598-7c38-4617-85e0-cb2214a5fd3d",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C41",
+      "claim": "Alanine scanning mutagenesis of VemP identified an additional seven residues that significantly reduced stalling when mutated.",
+      "claim_type": "EXPLICIT",
+      "source": "Alanine scanning mutagenesis of VemP identified 10 residues that are critical for ribosome stalling, as well as an additional seven residues that significantly reduced stalling when mutated (Ishii et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ishii et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "cdcc7783-2dce-4861-bf66-41d34b70c952",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C42",
+      "claim": "Only the mutations of either S141A and S155A had no influence on ribosome stalling.",
+      "claim_type": "EXPLICIT",
+      "source": "These residues encompass 17 of the 19-aa stalling window of VemP 'Short', with only the mutations of either S141A and S155A having no influence on ribosome stalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on mutagenesis data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "7dc482b4-75cb-41d8-8dc3-bcc5d51b0c62",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C43",
+      "claim": "The sidechain of N154 of VemP can stack on the nucleobase of U2506 of the 23S rRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the sidechains of N154 and Y150, which are located in the upper C-terminal \u03b1-helix of VemP, can stack on the nucleobases of U2506 (Figure 4a) and C2610 (Figure 4c), respectively, of the 23S rRNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 4a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "039bf4eb-7ec8-478d-bbd3-ced4023cfae7",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C44",
+      "claim": "The sidechain of Y150 of VemP can stack on the nucleobase of C2610 of the 23S rRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the sidechains of N154 and Y150, which are located in the upper C-terminal \u03b1-helix of VemP, can stack on the nucleobases of U2506 (Figure 4a) and C2610 (Figure 4c), respectively, of the 23S rRNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 4c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "3adf729c-9b45-4efb-a6b9-97e7c85f739e",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C45",
+      "claim": "N154 of VemP comes within hydrogen bonding distance of U2584 of the 23S rRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, N154 comes within hydrogen bonding distance of U2584 (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 4b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "a2cfa337-0d42-4898-a44e-bd3f2fc188be",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C46",
+      "claim": "K144 of VemP can hydrogen bond with the non-bridging phosphate-oxygen of U747 of the 23S rRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the \u03b1-turn of VemP, K144 can hydrogen bond with the non-bridging phosphate-oxygen of U747 (Figure 4d), whereas W143 can stack upon the R92 sidechain located the tip of the \u03b2-hairpin of uL22 (Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 4d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "ba6b4c02-c3e3-404b-b64d-fdbe2fd116e3",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C47",
+      "claim": "W143 of VemP can stack upon the R92 sidechain located the tip of the \u03b2-hairpin of uL22.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the \u03b1-turn of VemP, K144 can hydrogen bond with the non-bridging phosphate-oxygen of U747 (Figure 4d), whereas W143 can stack upon the R92 sidechain located the tip of the \u03b2-hairpin of uL22 (Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 4e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "a44c31da-3430-4584-8ea8-5e5a8050446e",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C48",
+      "claim": "Alterations in uL22 have been shown to reduce the efficiency of VemP-mediated ribosome stalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, alterations in uL22 have been shown to reduce the efficiency of VemP-mediated ribosome stalling (Ishii et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ishii et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "acffd931-42a4-40b6-9551-a00f7c620c13",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C49",
+      "claim": "The \u03b1-turn of VemP is additionally stabilized by stacking interactions between R139 of VemP and A752 of the 23S rRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b1-turn of VemP is additionally stabilized by stacking interactions between R139 of VemP and A752 of the 23S rRNA (Figure 4f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 4f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "31145081-4966-4e7e-94dd-7fd6fa602ff9",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C50",
+      "claim": "Alanine mutagenesis (Y132A, S136\u2013H138A) suggested that the identity of some residues in the loop (131-137) is not important for ribosome stalling, with the exception of the H138A mutation that had a modest effect on arrest efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned, alanine mutagenesis (Y132A, S136\u2013H138A) suggested that the identity of some of these residues is not important for ribosome stalling, with the exception of the H138A mutation that had a modest effect on arrest efficiency (Ishii et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ishii et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "9e61ec65-50cf-49ec-a6e8-37aa04e26fa3",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C51",
+      "claim": "Residues 135\u2013138 of the VemP loop are less well-resolved and no sidechain interactions with the exit tunnel are observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, in the VemP-SRC structure, residues 135\u2013138 of loop are less well-resolved and no sidechain interactions with the exit tunnel are observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "745a5fca-ac23-4b57-8fa6-b786574bbfb6",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C52",
+      "claim": "The remaining loop residues (130\u2013134) are better resolved than residues 135-138.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the remaining loop residues (130\u2013134) are better resolved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "bf45e313-526b-4a0d-bb8f-0adfe84179bb",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C53",
+      "claim": "The sidechain of H133 of VemP comes within hydrogen bonding distance of the backbone of K58 of uL4.",
+      "claim_type": "EXPLICIT",
+      "source": "The sidechain of H133 comes within hydrogen bonding distance of the backbone of K58 of uL4 (Figure 4g), which may contribute to the improved stalling efficiency of the VemP 'Long' over the VemP 'Short' observed in Figure 1b.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 4g",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "9f3e3fdb-3d39-4a99-9e30-b0ffd8340f56",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C54",
+      "claim": "The H133-K58 interaction may contribute to the improved stalling efficiency of the VemP 'Long' over the VemP 'Short'.",
+      "claim_type": "EXPLICIT",
+      "source": "The sidechain of H133 comes within hydrogen bonding distance of the backbone of K58 of uL4 (Figure 4g), which may contribute to the improved stalling efficiency of the VemP 'Long' over the VemP 'Short' observed in Figure 1b.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from structural observation and experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "24c0982f-e0c9-443d-a155-f2878ce29892",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C55",
+      "claim": "The sidechain of W124 of VemP stacks on the R95 sidechain of uL22.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the sidechain of W124, which is located in the lower N-terminal \u03b1-helix of VemP, stacks on the R95 sidechain of uL22 (Figure 4h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 4h",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "b5380cca-73b9-47ee-867f-5eab61f2874b",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C56",
+      "claim": "The interactions observed in the VemP-SRC structure are consistent with previous biochemical and mutational analysis indicating that the majority of critical residues and interactions are located in the upper region of the tunnel.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, the interactions observed in the VemP-SRC structure are consistent with previous biochemical and mutational analysis indicating that the majority of critical residues and interactions are located in the upper region of the tunnel, but that the additional residues within the lower region of the tunnel can also contribute to the efficiency of stalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of structural data with prior biochemical studies",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "499f9ebb-7a5f-4458-a339-30baab03266a",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C57",
+      "claim": "Additional residues within the lower region of the tunnel can also contribute to the efficiency of stalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, the interactions observed in the VemP-SRC structure are consistent with previous biochemical and mutational analysis indicating that the majority of critical residues and interactions are located in the upper region of the tunnel, but that the additional residues within the lower region of the tunnel can also contribute to the efficiency of stalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural observations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "d42d8fc5-e5b6-487c-b2cf-2effac0719bd",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C58",
+      "claim": "VemP-stalled ribosomes arrest translation because peptide bond formation cannot occur between Gln156 of the VemP-peptidyl-tRNA in the P-site and Phe157 of the incoming aminoacyl-tRNA of the A-site.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical analysis indicates that VemP-stalled ribosomes arrest translation because peptide bond formation cannot occur between Gln156 of the VemP-peptidyl-tRNA in the P-site and Phe157 of the incoming aminoacyl-tRNA of the A-site (Ishii et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ishii et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "fcca9084-1b60-43df-a6d8-367653ffc799",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C59",
+      "claim": "Two nucleotides of the 23S rRNA, U2585 and U2506, adopt conformations incompatible with peptide bond formation in VemP-stalled ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the conformation of nucleotides at the PTC of the VemP-stalled ribosomes revealed two nucleotides of the 23S rRNA, U2585 and U2506, which adopt conformations incompatible with peptide bond formation (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 5a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "916dafb6-e8d3-471a-a4c1-575454d3bcdf",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C60",
+      "claim": "Accommodation of an aminoacyl-tRNA at the A-site of the PTC requires a transition of the PTC from an uninduced to an induced state, which involves a shift in the position of U2585.",
+      "claim_type": "EXPLICIT",
+      "source": "Accommodation of an aminoacyl-tRNA at the A-site of the PTC requires a transition of the PTC from an uninduced to an induced state, which involves a shift in the position of U2585 (Figure 5b) (Schmeing et al., 2005; Youngman et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Schmeing et al., 2005 and Youngman et al., 2004, and Figure 5b",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "45b84033-f07f-4464-aed0-eae8a27a6c4d",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C61",
+      "claim": "In the VemP-SRC, U2585 adopts a unique conformation, distinct from both the uninduced and induced U2585 conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the VemP-SRC, U2585 adopts a unique conformation, distinct from both the uninduced and induced U2585 conformations (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 5b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "809a8790-b503-4812-9903-002f2717ba13",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C62",
+      "claim": "The upper \u03b1-helix of VemP extends into the PTC and thereby directly prevents the transition of U2585 from the uninduced to the induced state, due to steric clashes with Asn154 of VemP.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the upper \u03b1-helix of VemP extends into the PTC and thereby directly prevents the transition of U2585 from the uninduced to the induced state, due to steric clashes with Asn154 of VemP (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 5c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "4343405f-61f3-46b7-96e8-2b5a1a5c0039",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C63",
+      "claim": "The hCMV helix does not directly prevent the analogous human nucleotide U4493 from adopting the induced state.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to VemP, the hCMV helix does not directly prevent the analogous human nucleotide U4493 (E. coli U2585) from adopting the induced state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison with hCMV structure",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "88de3a32-74ad-4910-b839-f0a449267ba4",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C64",
+      "claim": "hCMV's penultimate Pro21, which is not part of the helix, prevents the transition of U4493 to the induced state.",
+      "claim_type": "EXPLICIT",
+      "source": "It is rather hCMV's penultimate Pro21, which is not part of the helix, that prevents this transition (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural comparison shown in Figure 5d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "18cf50f1-9f9d-409a-802b-f6d2fc831b8f",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C65",
+      "claim": "U2506 is observed to adopt two distinct conformations, U2506(a) and U2506(b) in the VemP-SRC.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, U2506 is observed to adopt two distinct conformations, U2506(a) and U2506(b) in the VemP-SRC (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 5a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "8f28e946-728e-4fe6-bef8-8e5cbb860102",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C66",
+      "claim": "The U2506(a) conformation would sterically clash with the aminoacyl moiety of A-tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The U2506(a) conformation would sterically clash with the aminoacyl moiety of A-tRNA (Figure 5e) and is likely to contribute to prevent aminoacyl-tRNA accommodation at the A-site of the PTC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 5e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "e6f6e74c-9c91-4497-9359-d056f17358e0",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C67",
+      "claim": "The U2506(a) conformation is likely to contribute to prevent aminoacyl-tRNA accommodation at the A-site of the PTC.",
+      "claim_type": "EXPLICIT",
+      "source": "The U2506(a) conformation would sterically clash with the aminoacyl moiety of A-tRNA (Figure 5e) and is likely to contribute to prevent aminoacyl-tRNA accommodation at the A-site of the PTC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from structural observation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "5a69d46a-73ea-49f1-8da5-6e73b84bf4a2",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C68",
+      "claim": "The induced state of the PTC involves a shift in the position of U2506.",
+      "claim_type": "EXPLICIT",
+      "source": "The induced state of the PTC also involves a shift in the position of U2506 (Schmeing et al., 2005; Youngman et al., 2004) (Figure 5f), which cannot occur in the VemP-SRC because the upper \u03b1-helix of VemP blocks the induced conformation of U2506 (Figure 5g), analogously to that observed for U2585 (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Schmeing et al., 2005 and Youngman et al., 2004, and Figure 5f",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "10d7bb89-9fd1-4e82-a90d-23b71c96e0a7",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C69",
+      "claim": "The upper \u03b1-helix of VemP blocks the induced conformation of U2506.",
+      "claim_type": "EXPLICIT",
+      "source": "The induced state of the PTC also involves a shift in the position of U2506 (Schmeing et al., 2005; Youngman et al., 2004) (Figure 5f), which cannot occur in the VemP-SRC because the upper \u03b1-helix of VemP blocks the induced conformation of U2506 (Figure 5g), analogously to that observed for U2585 (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 5g",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "31f1d278-d84a-4364-8861-26cd4285df75",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C70",
+      "claim": "hCMV does not retain an uninduced conformation of human U4414 (E. coli U2506) but allows the induced conformation of U4414 since it is sterically less constrained by the more distant hCMV helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike VemP, hCMV does not retain an uninduced conformation of human U4414 (E. coli U2506) but allows the induced conformation of U4414 since it is sterically less constrained by the more distant hCMV helix (Figure 5h) (Matheisl et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Matheisl et al., 2015 and structural comparison shown in Figure 5h",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "34ee7aa6-0329-41ef-92ef-9ea0ad664c8a",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C71",
+      "claim": "\u03b1-helix formation has been observed in the upper tunnel of an hCMV-stalled ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, although \u03b1-helix formation has also been observed in the upper tunnel of an hCMV-stalled ribosome (Matheisl et al., 2015), the CMV \u03b1-helix did not directly extend into the PTC as seen here for VemP (Figure 3f\u2013g and Figure 5d,h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Matheisl et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "34ae4efb-cedd-4916-bdde-44154a4a0414",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C72",
+      "claim": "The CMV \u03b1-helix did not directly extend into the PTC as seen for VemP.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, although \u03b1-helix formation has also been observed in the upper tunnel of an hCMV-stalled ribosome (Matheisl et al., 2015), the CMV \u03b1-helix did not directly extend into the PTC as seen here for VemP (Figure 3f\u2013g and Figure 5d,h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural comparison shown in Figure 3f\u2013g and Figure 5d,h",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "75d95c6e-b045-4eda-b473-77db6504310d",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C73",
+      "claim": "The two C-terminal proline residues of the CMV stalling peptide appeared to be more important for inactivating the PTC and inducing translation arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the two C-terminal proline residues of the CMV stalling peptide appeared to be more important for inactivating the PTC and inducing translation arrest (Matheisl et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Matheisl et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "d81670e7-1ae7-42f1-946e-e0ebbcafe5b7",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C74",
+      "claim": "Translation arrest via stabilization of the uninduced state has been observed for other force-sensing stalling peptides on the ribosome, such as SecM and MifM.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, translation arrest via stabilization of the uninduced state has also been observed for other force-sensing stalling peptides on the ribosome, such as SecM (Zhang et al., 2015) and MifM (Sohmen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Zhang et al., 2015 and Sohmen et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "22d17a39-0f26-49a2-822b-bf6306f6e205",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C75",
+      "claim": "The mechanism of translation arrest for SecM and MifM is different from VemP since both SecM and MifM adopt entirely extended conformations within the tunnel, unlike VemP.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the mechanism is different since both, SecM and MifM, adopt entirely extended conformations within the tunnel, unlike VemP (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural comparison shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "6efcea32-814d-4eb6-9892-a5ba4f91b734",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C76",
+      "claim": "The upper \u03b1-helix of VemP encroaches directly upon the PTC and stabilizes an uninduced state of the PTC that prevents accommodation of the incoming A-tRNA and thereby promotes translation arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, the VemP-SRC structure reveals that VemP adopts an extremely compacted conformation within the ribosomal exit tunnel, comprising an upper and a lower \u03b1-helix connected by an \u03b1-turn and a loop. On the stalled ribosome, the upper \u03b1-helix of VemP encroaches directly upon the PTC and stabilizes an uninduced state of the PTC that prevents accommodation of the incoming A-tRNA and thereby promotes translation arrest (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 6a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "b5b89893-5394-46dc-90d8-766d504146f6",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C77",
+      "claim": "Formation of secondary structure, such as an \u03b1-helix, directly at the PTC is likely to be detrimental for peptide bond formation and translation efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that formation of secondary structure, such as an \u03b1-helix, directly at the PTC is likely to be detrimental for peptide bond formation and, therefore, for translation efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the VemP structural findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "404443c9-cd01-4b41-a7bb-ab062153ccad",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C78",
+      "claim": "The PTC of the ribosome and its immediate tunnel context must have evolved to generally disfavour excessive secondary structure formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the PTC of the ribosome and its immediate tunnel context must have evolved to generally disfavour excessive secondary structure formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that secondary structure at the PTC is detrimental",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "fbb5e248-34f8-450f-aaf2-c7505163a23c",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C79",
+      "claim": "Secondary structure formation at the PTC may be used by the ribosome for specific nascent proteins to modulate the rate of translation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it also raises the question as to whether secondary structure formation at the PTC is used by the ribosome for specific nascent proteins to modulate the rate of translation, which could have important downstream consequences for co-translational protein folding and targeting events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative question raised based on the findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "867c2de9-351d-4a3a-b3bf-2cbc16d09d5e",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C80",
+      "claim": "Relief of VemP-mediated ribosome stalling is proposed to result from the force exerted on the nascent chain during membrane insertion of the N-terminal signal sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Relief of VemP-mediated ribosome stalling is proposed to result from the force exerted on the nascent chain during membrane insertion of the N-terminal signal sequence (Ishii et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ishii et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "117a516b-795d-4e14-8e4a-221b514d4712",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C81",
+      "claim": "Force application would prevent the formation of extensive secondary structure formation during translation, or lead to an unraveling of any secondary structure that does form within the tunnel.",
+      "claim_type": "EXPLICIT",
+      "source": "It is easy to imagine how, in the case of VemP, force application would inevitably prevent the formation of extensive secondary structure formation during translation, or at least lead to an unraveling of any secondary structure that does form within the tunnel, and thereby eventually allowing sterically the transition into the induced conformation of the PTC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred mechanism based on structural findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "a3fcb302-12ad-43b3-a30b-e544cbf71dd3",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C82",
+      "claim": "Force application would allow sterically the transition into the induced conformation of the PTC, promoting peptide bond formation and continued translation elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is easy to imagine how, in the case of VemP, force application would inevitably prevent the formation of extensive secondary structure formation during translation, or at least lead to an unraveling of any secondary structure that does form within the tunnel, and thereby eventually allowing sterically the transition into the induced conformation of the PTC. As a result, peptide bond formation would be promoted again and translation elongation continued (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred mechanism shown in Figure 6b",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "e3cd9bc6-b56d-426a-9314-060f963ce250",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C83",
+      "claim": "All three molecularly characterized force-sensing stallers employ the mechanism of preventing the adoption of the catalytically required induced state of the PTC by steric hindrance.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, all three molecularly characterized force-sensing stallers employ the mechanism of preventing the adoption of the catalytically required induced state of the PTC by steric hindrance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of structural data from multiple stalling peptides",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "e3c66f8d-d7eb-461f-a5f1-b03e9580315e",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C84",
+      "claim": "The mechanism of preventing the induced state may be favored because the conformational trajectory from the uninduced to the induced state coincides with the direction of force applied to the nascent peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be the favoured mechanism because the conformational trajectory from the uninduced to the induced state coincides with the direction of force applied to the nascent peptide (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Speculative explanation based on structural observations shown in Figure 6b",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "8edf1153-210a-45cf-bb58-9cf46e461e9e",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C85",
+      "claim": "The stalling peptides use completely different modes by which they interact with the ribosomal tunnel in a force-sensitive manner to achieve the goal of preventing the induced state.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, it is surprising that the stalling peptides use completely different modes by which they interact with the ribosomal tunnel in a force-sensitive manner to achieve this goal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of structural data from multiple stalling peptides",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "73c8f521-6b21-4f96-b494-1dbd241ef246",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C86",
+      "claim": "The cryo-EM structure of the VemP-SRC was determined at 2.9 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present a 2.9 \u00c5 cryo-electron microscopy structure of a ribosome stalled during translation of the extremely compacted VemP nascent chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract as a primary finding",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "660819f9-4777-4f26-91a3-1dd48427e5e0",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C87",
+      "claim": "The nascent chain forms two \u03b1-helices connected by an \u03b1-turn and a loop.",
+      "claim_type": "EXPLICIT",
+      "source": "The nascent chain forms two \u03b1-helices connected by an \u03b1-turn and a loop, enabling a total of 37 amino acids to be observed within the first 50\u201355 \u00c5 of the exit tunnel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract as a primary finding",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "5bb32191-2499-4bb3-9cd5-70a06791d312",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C88",
+      "claim": "A total of 37 amino acids are observed within the first 50\u201355 \u00c5 of the exit tunnel.",
+      "claim_type": "EXPLICIT",
+      "source": "The nascent chain forms two \u03b1-helices connected by an \u03b1-turn and a loop, enabling a total of 37 amino acids to be observed within the first 50\u201355 \u00c5 of the exit tunnel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract as a primary finding",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "85614a81-be54-4d7d-9133-eea2a0327544",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C89",
+      "claim": "\u03b1-helix formation directly within the peptidyltransferase center of the ribosome interferes with aminoacyl-tRNA accommodation.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure reveals how \u03b1-helix formation directly within the peptidyltransferase center of the ribosome interferes with aminoacyl-tRNA accommodation, suggesting that during canonical translation, a major role of the exit tunnel is to prevent excessive secondary structure formation that can interfere with the peptidyltransferase activity of the ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract as a primary finding",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "babf9245-ba84-4938-92b7-ee79405af1a6",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C90",
+      "claim": "During canonical translation, a major role of the exit tunnel is to prevent excessive secondary structure formation that can interfere with the peptidyltransferase activity of the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure reveals how \u03b1-helix formation directly within the peptidyltransferase center of the ribosome interferes with aminoacyl-tRNA accommodation, suggesting that during canonical translation, a major role of the exit tunnel is to prevent excessive secondary structure formation that can interfere with the peptidyltransferase activity of the ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the structural findings",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "567455b0-b24e-44f9-9da3-0b01ebbda184",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C91",
+      "claim": "Interaction between the nascent polypeptide chain and the ribosomal exit tunnel can modulate the rate of translation and induce translational arrest to regulate expression of downstream genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interaction between the nascent polypeptide chain and the ribosomal exit tunnel can modulate the rate of translation and induce translational arrest to regulate expression of downstream genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "a53f26d6-c75b-4d20-a003-974a3b05fc56",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C92",
+      "claim": "The ribosomal tunnel provides a protected environment for initial protein folding events.",
+      "claim_type": "EXPLICIT",
+      "source": "The ribosomal tunnel also provides a protected environment for initial protein folding events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "209106af-aefd-47bd-8302-b72eb59c943d",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C93",
+      "claim": "Protein folding events have been demonstrated to occur within the ribosomal exit tunnel.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein folding events have been demonstrated to occur within the ribosomal exit tunnel (Holtkamp et al., 2015; Lin et al., 2012; Marino et al., 2016; Nilsson et al., 2015; Tu et al., 2014); (Bhushan et al., 2010b; Matheisl et al., 2015);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "e405e1f6-0afd-45e1-9684-80fba750b988",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C94",
+      "claim": "Folding within the ribosomal exit tunnel was shown to occur within the lower region of the tunnel, e.g. ADR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Of those so far characterized, folding was shown to occur within the lower region of the tunnel, e.g. ADR1 (Nilsson et al., 2015) and within the vestibule at the periphery where the exit tunnel widens (Cabrita et al., 2016; Nilsson et al., 2017; Trovato and O'Brien, 2016; Tu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "727a99fd-89f9-4f7f-8999-eb73afdfea42",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C95",
+      "claim": "Folding within the ribosomal exit tunnel was shown to occur within the vestibule at the periphery where the exit tunnel widens.",
+      "claim_type": "EXPLICIT",
+      "source": "Of those so far characterized, folding was shown to occur within the lower region of the tunnel, e.g. ADR1 (Nilsson et al., 2015) and within the vestibule at the periphery where the exit tunnel widens (Cabrita et al., 2016; Nilsson et al., 2017; Trovato and O'Brien, 2016; Tu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "5140025f-9803-4c8a-ad1e-1a17749e1bde",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "claim_id": "C96",
+      "claim": "In the hCMV stalling peptide a C-terminal \u03b1-helix was observed in the upper region of the tunnel in a similar yet slightly shifted position compared to the C-terminal helix of VemP.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, in the hCMV stalling peptide a C-terminal \u03b1-helix was also observed in the upper region of the tunnel in a similar yet slightly shifted position compared to the C-terminal helix of VemP (Figure 3) (Bhushan et al., 2010b; Matheisl et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations and structural comparison shown in Figure 3",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6d567dab-2888-4302-9924-f3038a6c27ac",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "VemP mediates a force-sensing mechanism in V. alginolyticus that regulates the switch between Na+-dependent SecDF1 and Na+-independent SecDF2 based on environmental salinity. In Na+-rich conditions, VemP translocation prevents stalling and SecDF2 expression is repressed; in Na+-limiting conditions, lack of translocation leads to VemP stalling, which induces SecDF2 expression by exposing its ribosome-binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C12 describe an established regulatory mechanism from prior work (Ishii et al., 2015) that provides essential biological context for the current structural study. These claims are consistently supported by citations and serve as background knowledge rather than novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "438f649d-44bd-498b-9e19-b3f44670c8da",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "VemP-dependent stalling occurs when Q156 is in the P-site, with distinct amino acids within a 19-aa window (138-156) being critical for stalling. The VemP stalling sequence and force-sensing mechanism is completely distinct from other stalling peptides like SecM and MifM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 summarize prior biochemical characterization (Ishii et al., 2015) establishing the basic parameters of VemP stalling. These are well-supported by citations and provide necessary context for interpreting the structural data presented in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "5a8b64ff-375f-4ed0-9e72-d698f000302f",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "VemP 'long' (residues 131-156) exhibits dramatically increased stalling efficiency compared to VemP 'short' (residues 138-156), suggesting that residues beyond the previously characterized 19-aa stalling window contribute to VemP-mediated translation arrest efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 present new experimental data (Figure 1b,c) demonstrating that the extended VemP sequence enhances stalling efficiency. The pulse-chase experiments with multiple constructs and mutants provide clear evidence, though quantification shows VemP 'short' has only ~10% stalling while VemP 'long' reaches ~50%, indicating room for further optimization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "85c71bd6-3a06-4780-88d1-777f480dfcea",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In vitro translation of \u0394SS-VemP produces robust accumulation of VemP-peptidyl-tRNA (~40 kDa) that persists for up to 100 minutes with minimal full-length product, demonstrating the stability of the stalled complex. RNase treatment reduces the size to the expected free peptide (18 kDa), confirming the tRNA attachment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 present biochemical validation experiments (Figure 1e,f) demonstrating successful production of stalled VemP-ribosome complexes for structural studies. The RNase sensitivity and time-course data provide strong evidence for the robustness of the stalling, which is essential for cryo-EM sample preparation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "d0a5cc4d-5c6d-4688-a51f-36e2d85823e8",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The cryo-EM structure of the VemP-stalled ribosome complex (VemP-SRC) was determined at 2.9 \u00c5 average resolution with 2.5 \u00c5 local resolution in the ribosome core. The electron density for the VemP nascent chain within the exit tunnel was well-resolved (3.0-3.5 \u00c5 local resolution), enabling de novo model building of residues 120-156.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 and C86 describe the technical quality of the cryo-EM structure with appropriate resolution metrics and validation (Table 1, Figure 1\u2014figure supplement 3). The resolution is sufficient for confident model building of the nascent chain, as evidenced by the clear density shown in Videos 1 and 2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "b6905dec-d913-42f1-8683-7744d92546b8",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The VemP nascent chain adopts an extremely compacted conformation comprising two \u03b1-helices (upper C-terminal helix: N147-Q156; lower N-terminal helix: M120-S129) connected by a 17-residue linker containing an \u03b1-turn (I140-K144) and a less-ordered loop. The upper helix is directly linked to P-tRNA and positioned at the peptidyltransferase center.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C34 and C87 describe the overall architecture of VemP within the ribosomal tunnel, supported by high-quality structural data (Figure 2, Videos 1-2). The secondary structure elements are clearly resolved in the density, though the N-terminal region beyond the lower helix is less well-defined (C32), which is appropriately noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "739fb200-1738-4365-841b-e5f4ed6ee18e",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "VemP exhibits unprecedented compaction with 37 residues housed within the upper two-thirds (~50-55 \u00c5) of the exit tunnel, contrasting with 21-33 residues visualized for other stalling peptides (SecM, MifM, TnaC, CMV). Theoretical calculations indicate VemP would require at least 51 residues to span from PTC to tunnel exit in an extended conformation, compared to 31 for MifM and 34 for SecM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 and C88 quantitatively compare VemP's compaction to other stalling peptides using both direct structural observations and theoretical calculations. The comparisons are well-supported by structural superpositions (Figure 3) and citations to prior structures, establishing VemP's unique degree of compaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "d7a782c5-edc7-44d3-be58-a9e23f5286bc",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Critical VemP residues identified by prior mutagenesis establish specific interactions with the ribosomal exit tunnel: N154 and Y150 stack on rRNA nucleotides U2506 and C2610; N154 hydrogen bonds with U2584; K144 hydrogen bonds with U747; W143 stacks on uL22 R92; and R139 stacks on A752. These interactions explain the importance of these residues for stalling efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C49 integrate prior mutagenesis data (Ishii et al., 2015) with the current structure to explain molecular interactions. The structural data (Figure 4a-f) clearly shows these specific contacts at appropriate distances for the proposed interactions, providing a molecular basis for the functional importance of these residues.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "2df3e48e-20cf-412a-b134-66c3569a0258",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Loop residues 135-138 show poor density and lack tunnel interactions, consistent with mutagenesis showing these are not critical for stalling. However, residues 130-134 are better resolved, with H133 forming a hydrogen bond with uL4 K58, potentially explaining the improved stalling efficiency of VemP 'long' over VemP 'short'. W124 in the lower helix stacks on uL22 R95.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C55 correlate structural resolution with functional importance, showing good agreement between density quality and mutagenesis data. The proposed H133-K58 interaction (C53-C54) provides a plausible structural explanation for the enhanced stalling of VemP 'long', though this remains somewhat speculative as indicated by 'may contribute'.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "a27340aa-bb4c-4dfc-a968-267a94c683f7",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The VemP-SRC structure is consistent with previous biochemical and mutational analyses, confirming that the majority of critical residues and interactions are in the upper tunnel region, while additional residues in the lower region can contribute to stalling efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 synthesize the structural observations with prior functional data, showing good overall agreement. The structure validates and extends the biochemical findings by providing molecular details of the interactions, though the contribution of lower region residues remains somewhat less well-defined.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "b5b897a4-aee4-4f75-8c2d-e491ae62fa34",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "VemP arrests translation by preventing peptide bond formation between Q156 and the incoming Phe157. The structure reveals that U2585 adopts a unique conformation distinct from both uninduced and induced states, and the upper \u03b1-helix of VemP directly prevents U2585 transition to the induced state through steric clashes with N154.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 explain the molecular mechanism of translation arrest, integrating prior biochemical data (C58, Ishii et al., 2015) with structural observations (C59-C62, Figure 5a-c). The structural data clearly shows the altered U2585 conformation and steric clashes that would prevent the required conformational change for peptide bond formation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "bb9e572b-c800-4c50-a89f-72b108cabf49",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "U2506 adopts two distinct conformations in the VemP-SRC, with U2506(a) positioned to sterically clash with incoming aminoacyl-tRNA, likely preventing A-site accommodation. The upper \u03b1-helix of VemP also blocks the induced conformation of U2506, analogous to its effect on U2585.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C69 describe a second mechanism by which VemP inactivates the PTC, supported by structural data (Figure 5a,e-g). The dual conformations of U2506 and the steric blocking by VemP's helix provide complementary mechanisms for preventing tRNA accommodation, though the relative contributions of each mechanism are not quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "03295e7b-9a43-4459-b28d-5af0d3a8f9cc",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Unlike VemP, the hCMV stalling peptide uses a different mechanism: its \u03b1-helix does not directly extend into the PTC, and it is the penultimate Pro21 (not part of the helix) that prevents U4493 transition. hCMV allows the induced conformation of U4414 (E. coli U2506) due to less steric constraint from the more distant helix. The C-terminal proline residues of CMV are more important for PTC inactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 and C70-C73 compare VemP and hCMV mechanisms using structural superpositions (Figure 3f-g, Figure 5d,h) and prior work (Matheisl et al., 2015). The comparisons clearly demonstrate mechanistic differences, though both involve \u03b1-helix formation in the upper tunnel, establishing that different stalling peptides use distinct strategies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "fb421719-c1b4-4b65-8c63-403dacdba7a8",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Translation arrest via stabilization of the uninduced PTC state is a common mechanism among force-sensing stalling peptides (SecM, MifM, VemP), but the molecular details differ: SecM and MifM adopt entirely extended conformations within the tunnel, unlike the highly compacted VemP structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 identify a unifying principle (uninduced state stabilization) while highlighting mechanistic diversity among stalling peptides. The comparison is well-supported by structural data (Figure 3) and citations to SecM and MifM structures, demonstrating convergent functional outcomes through divergent structural mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "630fd207-1ae5-4b76-97e0-9509c35d3259",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The upper \u03b1-helix of VemP encroaches directly upon the PTC and stabilizes an uninduced state that prevents accommodation of incoming A-tRNA, thereby promoting translation arrest. This \u03b1-helix formation directly within the PTC interferes with aminoacyl-tRNA accommodation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76 and C89 summarize the central mechanistic finding of the paper, integrating the structural observations into a coherent model (Figure 6a). The conclusion is well-supported by the detailed structural analysis of PTC nucleotide conformations and steric clashes described in earlier claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "7da02376-d3d6-4eb7-b39a-067abecf96d5",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Formation of secondary structure (\u03b1-helix) directly at the PTC is likely detrimental for peptide bond formation and translation efficiency. This suggests the PTC and its immediate tunnel context evolved to generally disfavor excessive secondary structure formation, and that a major role of the exit tunnel during canonical translation is to prevent such structure formation that could interfere with peptidyltransferase activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 and C90 present broader evolutionary and functional implications inferred from the VemP structure. While these are reasonable inferences from the structural data showing how \u03b1-helix formation disrupts PTC function, they remain somewhat speculative regarding the evolutionary pressures and general principles of tunnel function. The logic is sound but would benefit from additional experimental support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "d0b23424-6e68-45a3-94e5-a56a80efeff3",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Secondary structure formation at the PTC may be used by the ribosome for specific nascent proteins to modulate translation rate, with potential consequences for co-translational protein folding and targeting events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C79 raises a speculative question about whether PTC secondary structure formation could be a general regulatory mechanism. While this is an interesting hypothesis motivated by the VemP findings, it is explicitly presented as a question and lacks experimental evidence. This represents a direction for future investigation rather than a supported conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "63803ba2-c201-4232-ac20-0642080d9303",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Relief of VemP-mediated stalling results from force exerted during membrane insertion of the signal sequence. Force application would prevent or unravel secondary structure formation within the tunnel, allowing steric transition to the induced PTC conformation and promoting continued translation elongation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C82 propose a mechanism for stalling relief based on prior work (C80, Ishii et al., 2015) and logical inference from the structure (C81-C82). While the force-sensing mechanism is not directly demonstrated in this study, the structural data showing extensive secondary structure provides a plausible basis for how mechanical force could disrupt stalling. The mechanism is reasonable but remains somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "8de08701-733f-4057-8a14-3929b99e9163",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "All three molecularly characterized force-sensing stallers (VemP, SecM, MifM) prevent the catalytically required induced state of the PTC by steric hindrance. This may be favored because the conformational trajectory from uninduced to induced state coincides with the direction of applied force. However, the stalling peptides use completely different modes of tunnel interaction to achieve this goal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C85 synthesize insights across multiple stalling peptide structures to identify common principles and mechanistic diversity. C83 and C85 are well-supported by structural comparisons, while C84 presents a speculative but reasonable explanation for why this particular mechanism is favored. The analysis provides valuable comparative insights into force-sensing mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    },
+    {
+      "id": "63b9b06d-fef6-4ff5-b511-c534aae41919",
+      "content_id": "c8b55c2e-f826-484a-bcb6-51b32fddda0e",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Background context: Nascent chain-tunnel interactions can modulate translation rate and induce arrest for gene regulation. The tunnel provides a protected environment for initial protein folding, which has been demonstrated to occur in the lower tunnel region and vestibule. The hCMV stalling peptide also forms a C-terminal \u03b1-helix in the upper tunnel, though in a slightly shifted position compared to VemP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C96 provide established background knowledge from prior literature, appropriately cited. These claims set the context for the current work but do not represent novel findings of this manuscript. They are well-supported by the cited references.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:22:50.664153Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3346ab94-a942-49c8-af8a-31c016f355ed",
+      "result_id": "6d567dab-2888-4302-9924-f3038a6c27ac"
+    },
+    {
+      "claim_id": "3bb080f4-86a0-4d87-b9ac-b05173d3d0b1",
+      "result_id": "6d567dab-2888-4302-9924-f3038a6c27ac"
+    },
+    {
+      "claim_id": "cdd5dd47-759a-49d9-9fde-192060cab84e",
+      "result_id": "6d567dab-2888-4302-9924-f3038a6c27ac"
+    },
+    {
+      "claim_id": "c76ddaa0-0527-4321-9054-88eb9dd46cb7",
+      "result_id": "6d567dab-2888-4302-9924-f3038a6c27ac"
+    },
+    {
+      "claim_id": "da502898-73fd-4698-9cdf-1bfed9277560",
+      "result_id": "6d567dab-2888-4302-9924-f3038a6c27ac"
+    },
+    {
+      "claim_id": "0f68edc8-376d-4374-a88d-998b08f580c0",
+      "result_id": "6d567dab-2888-4302-9924-f3038a6c27ac"
+    },
+    {
+      "claim_id": "936c1c7f-0675-449d-adc3-468a5491d8f1",
+      "result_id": "6d567dab-2888-4302-9924-f3038a6c27ac"
+    },
+    {
+      "claim_id": "f8486ef4-0d1e-41b8-9487-5ededfb06b02",
+      "result_id": "6d567dab-2888-4302-9924-f3038a6c27ac"
+    },
+    {
+      "claim_id": "31e01003-47c2-43a8-8949-d6b06e2ae4bf",
+      "result_id": "6d567dab-2888-4302-9924-f3038a6c27ac"
+    },
+    {
+      "claim_id": "8960974d-73cb-4cfb-889d-121515f0d1e0",
+      "result_id": "6d567dab-2888-4302-9924-f3038a6c27ac"
+    },
+    {
+      "claim_id": "bea7835b-f0e6-436b-b8d6-98ae9da9575d",
+      "result_id": "6d567dab-2888-4302-9924-f3038a6c27ac"
+    },
+    {
+      "claim_id": "89d9bc5a-7e86-480f-9dc0-bcc7f877f61d",
+      "result_id": "6d567dab-2888-4302-9924-f3038a6c27ac"
+    },
+    {
+      "claim_id": "843617cf-9ce1-4ba1-8d8a-d10758f67d2d",
+      "result_id": "438f649d-44bd-498b-9e19-b3f44670c8da"
+    },
+    {
+      "claim_id": "b53a082c-a8d2-4be8-afa6-4999eb614b18",
+      "result_id": "438f649d-44bd-498b-9e19-b3f44670c8da"
+    },
+    {
+      "claim_id": "d9d8b5d5-94ae-44fb-afd8-793173e60bf1",
+      "result_id": "438f649d-44bd-498b-9e19-b3f44670c8da"
+    },
+    {
+      "claim_id": "dedd2489-3a87-49e4-b903-23be878b2519",
+      "result_id": "5a8b64ff-375f-4ed0-9e72-d698f000302f"
+    },
+    {
+      "claim_id": "d3cbcfaa-da36-4361-9bc0-02cf2e71050e",
+      "result_id": "5a8b64ff-375f-4ed0-9e72-d698f000302f"
+    },
+    {
+      "claim_id": "d50cbfca-efff-422a-b4f2-f51d8e3ecda0",
+      "result_id": "5a8b64ff-375f-4ed0-9e72-d698f000302f"
+    },
+    {
+      "claim_id": "93a7b9da-2ac2-46c5-8154-bcd75d8b75f2",
+      "result_id": "5a8b64ff-375f-4ed0-9e72-d698f000302f"
+    },
+    {
+      "claim_id": "55cb130f-055d-4b44-b5f8-c65ac1e2d12a",
+      "result_id": "5a8b64ff-375f-4ed0-9e72-d698f000302f"
+    },
+    {
+      "claim_id": "fcc04898-f2c9-4e1e-a997-378136473a67",
+      "result_id": "85c71bd6-3a06-4780-88d1-777f480dfcea"
+    },
+    {
+      "claim_id": "67d88442-f4f8-4525-ae33-742dbe85d8be",
+      "result_id": "85c71bd6-3a06-4780-88d1-777f480dfcea"
+    },
+    {
+      "claim_id": "b48d1fd8-3602-4578-afe7-43e7dcd95536",
+      "result_id": "85c71bd6-3a06-4780-88d1-777f480dfcea"
+    },
+    {
+      "claim_id": "d9021ff4-3097-42a6-8947-454a885faf8e",
+      "result_id": "d0a5cc4d-5c6d-4688-a51f-36e2d85823e8"
+    },
+    {
+      "claim_id": "59d3235e-5d3f-496b-b1e3-bba643281687",
+      "result_id": "d0a5cc4d-5c6d-4688-a51f-36e2d85823e8"
+    },
+    {
+      "claim_id": "2ce1fd39-7553-47a8-b12a-4c5c8cd0bc25",
+      "result_id": "d0a5cc4d-5c6d-4688-a51f-36e2d85823e8"
+    },
+    {
+      "claim_id": "1fc18ede-d279-466f-9036-17601094ea6b",
+      "result_id": "d0a5cc4d-5c6d-4688-a51f-36e2d85823e8"
+    },
+    {
+      "claim_id": "73c8f521-6b21-4f96-b494-1dbd241ef246",
+      "result_id": "d0a5cc4d-5c6d-4688-a51f-36e2d85823e8"
+    },
+    {
+      "claim_id": "7df053d6-abaf-4f6b-917f-be0d9dc947a4",
+      "result_id": "b6905dec-d913-42f1-8683-7744d92546b8"
+    },
+    {
+      "claim_id": "ba7442a2-6651-4b51-8b61-33a21db3c0a8",
+      "result_id": "b6905dec-d913-42f1-8683-7744d92546b8"
+    },
+    {
+      "claim_id": "aa4a0eb6-8125-477e-b90d-ca34edf46462",
+      "result_id": "b6905dec-d913-42f1-8683-7744d92546b8"
+    },
+    {
+      "claim_id": "34db3eb9-1a4f-4a5c-8093-b807dbee69dd",
+      "result_id": "b6905dec-d913-42f1-8683-7744d92546b8"
+    },
+    {
+      "claim_id": "d51640d2-e3ce-4562-83d6-396c3cdd03c4",
+      "result_id": "b6905dec-d913-42f1-8683-7744d92546b8"
+    },
+    {
+      "claim_id": "521692bc-9898-4a6e-90dc-928a5784f5db",
+      "result_id": "b6905dec-d913-42f1-8683-7744d92546b8"
+    },
+    {
+      "claim_id": "b66a079e-a23e-4e19-bd82-6bc4f954e3c3",
+      "result_id": "b6905dec-d913-42f1-8683-7744d92546b8"
+    },
+    {
+      "claim_id": "660819f9-4777-4f26-91a3-1dd48427e5e0",
+      "result_id": "b6905dec-d913-42f1-8683-7744d92546b8"
+    },
+    {
+      "claim_id": "b57f1b83-92e1-4ed9-ad7f-1158591d5103",
+      "result_id": "739fb200-1738-4365-841b-e5f4ed6ee18e"
+    },
+    {
+      "claim_id": "2eb10d27-3ea6-4f12-9c13-bb0837af6a3b",
+      "result_id": "739fb200-1738-4365-841b-e5f4ed6ee18e"
+    },
+    {
+      "claim_id": "0cc693f7-1d62-44c7-a7c2-ccb29c903f15",
+      "result_id": "739fb200-1738-4365-841b-e5f4ed6ee18e"
+    },
+    {
+      "claim_id": "8c735d5c-1dc5-4a79-80ea-e191afc59ece",
+      "result_id": "739fb200-1738-4365-841b-e5f4ed6ee18e"
+    },
+    {
+      "claim_id": "77ec67a7-7925-4208-a20e-c2d161f3ee59",
+      "result_id": "739fb200-1738-4365-841b-e5f4ed6ee18e"
+    },
+    {
+      "claim_id": "5bb32191-2499-4bb3-9cd5-70a06791d312",
+      "result_id": "739fb200-1738-4365-841b-e5f4ed6ee18e"
+    },
+    {
+      "claim_id": "2071435b-8094-4b90-a8f4-cba75e316d60",
+      "result_id": "d7a782c5-edc7-44d3-be58-a9e23f5286bc"
+    },
+    {
+      "claim_id": "c0cad598-7c38-4617-85e0-cb2214a5fd3d",
+      "result_id": "d7a782c5-edc7-44d3-be58-a9e23f5286bc"
+    },
+    {
+      "claim_id": "cdcc7783-2dce-4861-bf66-41d34b70c952",
+      "result_id": "d7a782c5-edc7-44d3-be58-a9e23f5286bc"
+    },
+    {
+      "claim_id": "7dc482b4-75cb-41d8-8dc3-bcc5d51b0c62",
+      "result_id": "d7a782c5-edc7-44d3-be58-a9e23f5286bc"
+    },
+    {
+      "claim_id": "039bf4eb-7ec8-478d-bbd3-ced4023cfae7",
+      "result_id": "d7a782c5-edc7-44d3-be58-a9e23f5286bc"
+    },
+    {
+      "claim_id": "3adf729c-9b45-4efb-a6b9-97e7c85f739e",
+      "result_id": "d7a782c5-edc7-44d3-be58-a9e23f5286bc"
+    },
+    {
+      "claim_id": "a2cfa337-0d42-4898-a44e-bd3f2fc188be",
+      "result_id": "d7a782c5-edc7-44d3-be58-a9e23f5286bc"
+    },
+    {
+      "claim_id": "ba6b4c02-c3e3-404b-b64d-fdbe2fd116e3",
+      "result_id": "d7a782c5-edc7-44d3-be58-a9e23f5286bc"
+    },
+    {
+      "claim_id": "a44c31da-3430-4584-8ea8-5e5a8050446e",
+      "result_id": "d7a782c5-edc7-44d3-be58-a9e23f5286bc"
+    },
+    {
+      "claim_id": "acffd931-42a4-40b6-9551-a00f7c620c13",
+      "result_id": "d7a782c5-edc7-44d3-be58-a9e23f5286bc"
+    },
+    {
+      "claim_id": "31145081-4966-4e7e-94dd-7fd6fa602ff9",
+      "result_id": "2df3e48e-20cf-412a-b134-66c3569a0258"
+    },
+    {
+      "claim_id": "9e61ec65-50cf-49ec-a6e8-37aa04e26fa3",
+      "result_id": "2df3e48e-20cf-412a-b134-66c3569a0258"
+    },
+    {
+      "claim_id": "745a5fca-ac23-4b57-8fa6-b786574bbfb6",
+      "result_id": "2df3e48e-20cf-412a-b134-66c3569a0258"
+    },
+    {
+      "claim_id": "bf45e313-526b-4a0d-bb8f-0adfe84179bb",
+      "result_id": "2df3e48e-20cf-412a-b134-66c3569a0258"
+    },
+    {
+      "claim_id": "9f3e3fdb-3d39-4a99-9e30-b0ffd8340f56",
+      "result_id": "2df3e48e-20cf-412a-b134-66c3569a0258"
+    },
+    {
+      "claim_id": "24c0982f-e0c9-443d-a155-f2878ce29892",
+      "result_id": "2df3e48e-20cf-412a-b134-66c3569a0258"
+    },
+    {
+      "claim_id": "b5380cca-73b9-47ee-867f-5eab61f2874b",
+      "result_id": "a27340aa-bb4c-4dfc-a968-267a94c683f7"
+    },
+    {
+      "claim_id": "499f9ebb-7a5f-4458-a339-30baab03266a",
+      "result_id": "a27340aa-bb4c-4dfc-a968-267a94c683f7"
+    },
+    {
+      "claim_id": "d42d8fc5-e5b6-487c-b2cf-2effac0719bd",
+      "result_id": "b5b897a4-aee4-4f75-8c2d-e491ae62fa34"
+    },
+    {
+      "claim_id": "fcca9084-1b60-43df-a6d8-367653ffc799",
+      "result_id": "b5b897a4-aee4-4f75-8c2d-e491ae62fa34"
+    },
+    {
+      "claim_id": "916dafb6-e8d3-471a-a4c1-575454d3bcdf",
+      "result_id": "b5b897a4-aee4-4f75-8c2d-e491ae62fa34"
+    },
+    {
+      "claim_id": "45b84033-f07f-4464-aed0-eae8a27a6c4d",
+      "result_id": "b5b897a4-aee4-4f75-8c2d-e491ae62fa34"
+    },
+    {
+      "claim_id": "809a8790-b503-4812-9903-002f2717ba13",
+      "result_id": "b5b897a4-aee4-4f75-8c2d-e491ae62fa34"
+    },
+    {
+      "claim_id": "18cf50f1-9f9d-409a-802b-f6d2fc831b8f",
+      "result_id": "bb9e572b-c800-4c50-a89f-72b108cabf49"
+    },
+    {
+      "claim_id": "8f28e946-728e-4fe6-bef8-8e5cbb860102",
+      "result_id": "bb9e572b-c800-4c50-a89f-72b108cabf49"
+    },
+    {
+      "claim_id": "e6f6e74c-9c91-4497-9359-d056f17358e0",
+      "result_id": "bb9e572b-c800-4c50-a89f-72b108cabf49"
+    },
+    {
+      "claim_id": "5a69d46a-73ea-49f1-8da5-6e73b84bf4a2",
+      "result_id": "bb9e572b-c800-4c50-a89f-72b108cabf49"
+    },
+    {
+      "claim_id": "10d7bb89-9fd1-4e82-a90d-23b71c96e0a7",
+      "result_id": "bb9e572b-c800-4c50-a89f-72b108cabf49"
+    },
+    {
+      "claim_id": "4343405f-61f3-46b7-96e8-2b5a1a5c0039",
+      "result_id": "03295e7b-9a43-4459-b28d-5af0d3a8f9cc"
+    },
+    {
+      "claim_id": "88de3a32-74ad-4910-b839-f0a449267ba4",
+      "result_id": "03295e7b-9a43-4459-b28d-5af0d3a8f9cc"
+    },
+    {
+      "claim_id": "31f1d278-d84a-4364-8861-26cd4285df75",
+      "result_id": "03295e7b-9a43-4459-b28d-5af0d3a8f9cc"
+    },
+    {
+      "claim_id": "34ee7aa6-0329-41ef-92ef-9ea0ad664c8a",
+      "result_id": "03295e7b-9a43-4459-b28d-5af0d3a8f9cc"
+    },
+    {
+      "claim_id": "34ae4efb-cedd-4916-bdde-44154a4a0414",
+      "result_id": "03295e7b-9a43-4459-b28d-5af0d3a8f9cc"
+    },
+    {
+      "claim_id": "75d95c6e-b045-4eda-b473-77db6504310d",
+      "result_id": "03295e7b-9a43-4459-b28d-5af0d3a8f9cc"
+    },
+    {
+      "claim_id": "d81670e7-1ae7-42f1-946e-e0ebbcafe5b7",
+      "result_id": "fb421719-c1b4-4b65-8c63-403dacdba7a8"
+    },
+    {
+      "claim_id": "22d17a39-0f26-49a2-822b-bf6306f6e205",
+      "result_id": "fb421719-c1b4-4b65-8c63-403dacdba7a8"
+    },
+    {
+      "claim_id": "6efcea32-814d-4eb6-9892-a5ba4f91b734",
+      "result_id": "630fd207-1ae5-4b76-97e0-9509c35d3259"
+    },
+    {
+      "claim_id": "85614a81-be54-4d7d-9133-eea2a0327544",
+      "result_id": "630fd207-1ae5-4b76-97e0-9509c35d3259"
+    },
+    {
+      "claim_id": "b5b89893-5394-46dc-90d8-766d504146f6",
+      "result_id": "7da02376-d3d6-4eb7-b39a-067abecf96d5"
+    },
+    {
+      "claim_id": "404443c9-cd01-4b41-a7bb-ab062153ccad",
+      "result_id": "7da02376-d3d6-4eb7-b39a-067abecf96d5"
+    },
+    {
+      "claim_id": "babf9245-ba84-4938-92b7-ee79405af1a6",
+      "result_id": "7da02376-d3d6-4eb7-b39a-067abecf96d5"
+    },
+    {
+      "claim_id": "fbb5e248-34f8-450f-aaf2-c7505163a23c",
+      "result_id": "d0b23424-6e68-45a3-94e5-a56a80efeff3"
+    },
+    {
+      "claim_id": "867c2de9-351d-4a3a-b3bf-2cbc16d09d5e",
+      "result_id": "63803ba2-c201-4232-ac20-0642080d9303"
+    },
+    {
+      "claim_id": "117a516b-795d-4e14-8e4a-221b514d4712",
+      "result_id": "63803ba2-c201-4232-ac20-0642080d9303"
+    },
+    {
+      "claim_id": "a3fcb302-12ad-43b3-a30b-e544cbf71dd3",
+      "result_id": "63803ba2-c201-4232-ac20-0642080d9303"
+    },
+    {
+      "claim_id": "e3cd9bc6-b56d-426a-9314-060f963ce250",
+      "result_id": "8de08701-733f-4057-8a14-3929b99e9163"
+    },
+    {
+      "claim_id": "e3c66f8d-d7eb-461f-a5f1-b03e9580315e",
+      "result_id": "8de08701-733f-4057-8a14-3929b99e9163"
+    },
+    {
+      "claim_id": "8edf1153-210a-45cf-bb58-9cf46e461e9e",
+      "result_id": "8de08701-733f-4057-8a14-3929b99e9163"
+    },
+    {
+      "claim_id": "567455b0-b24e-44f9-9da3-0b01ebbda184",
+      "result_id": "63b9b06d-fef6-4ff5-b511-c534aae41919"
+    },
+    {
+      "claim_id": "a53f26d6-c75b-4d20-a003-974a3b05fc56",
+      "result_id": "63b9b06d-fef6-4ff5-b511-c534aae41919"
+    },
+    {
+      "claim_id": "209106af-aefd-47bd-8302-b72eb59c943d",
+      "result_id": "63b9b06d-fef6-4ff5-b511-c534aae41919"
+    },
+    {
+      "claim_id": "e405e1f6-0afd-45e1-9684-80fba750b988",
+      "result_id": "63b9b06d-fef6-4ff5-b511-c534aae41919"
+    },
+    {
+      "claim_id": "727a99fd-89f9-4f7f-8999-eb73afdfea42",
+      "result_id": "63b9b06d-fef6-4ff5-b511-c534aae41919"
+    },
+    {
+      "claim_id": "5140025f-9803-4c8a-ad1e-1a17749e1bde",
+      "result_id": "63b9b06d-fef6-4ff5-b511-c534aae41919"
+    }
+  ],
+  "comparisons": []
+}

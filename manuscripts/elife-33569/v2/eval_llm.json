@@ -1,0 +1,499 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Codon deoptimization of the amino-terminal region of the frq gene in Neurospora crassa abolishes full-length mRNA and protein expression. Two constructs (frq-deopt1 with 59 non-optimal codons and frq-deopt2 with 98 least-preferred codons) were created. Strains expressing these constructs lost circadian conidiation rhythms, showed no FRQ protein by western blot, and produced no full-length frq mRNA by northern blot and RT-qPCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C51-C58 provide converging experimental evidence from multiple techniques (western blot, northern blot, RT-qPCR, and phenotypic assays) demonstrating that codon deoptimization abolishes full-length mRNA and protein expression. The data are internally consistent and the experimental design appropriately controls for the genetic background (frq knockout strain with targeted integration).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The loss of full-length frq mRNA in codon-deoptimized strains is not due to transcriptional silencing via H3K9me3 or reduced transcription factor binding. ChIP assays showed comparable H3K9me3 levels between wild-type and frq-deopt2 strains, elevated WC-2 binding at the frq promoter in frq-deopt2, and increased pre-mRNA levels in frq-deopt2, indicating that transcription initiation is actually increased rather than decreased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C68 use ChIP and RT-qPCR data to systematically rule out transcriptional silencing mechanisms. The elevated WC-2 binding and increased pre-mRNA levels provide positive evidence that transcription is enhanced, not suppressed, making the loss of full-length mRNA particularly striking and pointing toward a post-initiation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Codon deoptimization of frq causes premature transcription termination (PTT) within the open reading frame. Northern blots detected truncated polyadenylated frq mRNAs in deoptimized strains. 3' RACE mapped poly(A) sites to the deoptimized region (112-141 nt downstream of start codon), with PAS variants (AUAAAU in frq-deopt1, AUAAAA in frq-deopt2) created by the codon changes. ChIP showed dramatically decreased RNA polymerase II levels in the middle and 3' end of the frq ORF in frq-deopt2 compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C76 provide multiple lines of evidence (northern blot, 3' RACE, ChIP) that converge on PTT as the mechanism. The 3' RACE data precisely map the termination sites, the presence of PAS motifs provides a mechanistic explanation, and the pol II ChIP data directly demonstrate transcriptional termination. The evidence is internally consistent and technically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Codon deoptimization of frq also causes premature transcription termination of the antisense transcript qrf. Northern blots showed loss of full-length qrf and appearance of truncated qrf mRNA. 3' RACE mapped the truncated qrf 3' ends to the deoptimized region with a PAS motif (AUAAAA) 21 nt upstream. Notably, wild-type frq also contains this PAS motif, suggesting that additional sequence context beyond the PAS motif is required for transcription termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 extend the PTT findings to the antisense transcript, strengthening the conclusion that codon changes affect transcription termination. The observation that wild-type frq contains the same PAS motif but does not undergo PTT (C79-C80) is a critical control that demonstrates the importance of surrounding sequence context, though this raises questions about what additional elements are required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Systematic deletion analysis of the deoptimized region in frq identifies critical codons and cis-elements for PTT. The frq-deopt3 construct (containing the minimal deoptimized region) completely abolished full-length mRNA and protein. The frq-deopt4 and frq-deopt5 constructs showed partial restoration of full-length mRNA and reduced PTT products despite containing the same PAS motif, indicating that cis-elements surrounding the PAS motif are important for PTT efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C92 use a systematic deletion approach to map the minimal region sufficient for PTT and demonstrate that the PAS motif alone is insufficient. The graded effects across constructs (complete loss in deopt3, partial restoration in deopt4/5) provide strong evidence for the importance of surrounding elements. ChIP controls (C85-C86) appropriately rule out transcriptional silencing as an alternative explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Single synonymous codon mutations can create functional PAS motifs and cause PTT. A GAC to GAU mutation created a PAS motif in both frq-deopt1 and frq-deopt2. Single-codon mutants (frq-deopt6 with GAC\u2192GAU creating AUAAAA, and frq-deopt7 with UCC\u2192AGU) showed significant reductions in frq mRNA and protein levels and loss of circadian rhythms. Reverting the PAS motif in frq-deopt4* increased frq RNA and FRQ protein levels and reduced PTT products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C100 demonstrate that even single synonymous codon changes can have dramatic effects on gene expression through PTT. The single-codon experiments (C95-C96) are particularly compelling, and the rescue experiment (C97-C98) provides strong evidence for the causal role of the PAS motif. However, the effects are not as dramatic as with multiple codon changes, consistent with the importance of surrounding context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "Codon usage plays an important role in suppressing premature transcription termination by affecting the formation of potential PAS and other cis-elements, thereby allowing production of full-length mRNAs in Neurospora.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 is a synthesis conclusion supported by the collective evidence from the frq experiments (C3-C100). The systematic experimental approach, including codon deoptimization, deletion analysis, single-codon mutations, and rescue experiments, provides strong converging evidence for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Genome-wide 2P-seq analysis identifies widespread premature transcription termination in Neurospora ORFs. From 9,795 annotated genes, 7,755 have 3' UTR-PAS signals and 4,557 genes have at least one ORF-pA signal. Northern blot validation of two genes (NCU09435 and NCU00931) confirmed the presence of both full-length and prematurely terminated mRNA species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 establish that PTT in ORFs is a genome-wide phenomenon using a novel 2P-seq method. The high number of genes with 3' UTR-PAS signals (C102) validates the sensitivity of the method, and the northern blot validation (C104) confirms that the 2P-seq signals correspond to actual mRNA species. The scale of the phenomenon (4,557 genes with ORF-pA) is substantial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Characterization of poly(A) signals in Neurospora reveals differences between 3' UTR and ORF termination sites. 3' UTR-pA sites have an upstream A-rich region (\u221230 to \u221210 nt) and two U-rich regions (\u221210 to 0 and 0 to +10 nt), with poly(A) sites typically between C and A nucleotides. PAS motifs in Neurospora are more degenerate than in mammals, with AAUGAA being most abundant. ORF-pA sites have similar upstream features but lack the downstream U-rich region and show more degenerate hexamer motifs with lower PAS scores than 3' UTR-pA sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C116 provide a comprehensive characterization of poly(A) signals in Neurospora using the 2P-seq data. The comparison between 3' UTR and ORF sites is systematic and reveals important differences (absence of downstream U-rich region in ORFs, more degenerate motifs, lower PAS scores). These observations are consistent with the use of non-canonical poly(A) signals for PTT in ORFs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Genome-wide analysis reveals a strong negative correlation between codon usage bias and premature transcription termination events in Neurospora. The normalized ratio of ORF to 3' UTR termination events shows strong negative correlations with both CBI (r = \u22120.64) and CAI (r = \u22120.56). This is consistent with the hypothesis that genes with more rare codons (higher AU content) have a higher chance of forming poly(A) signals and triggering premature termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 provide genome-wide statistical support for the relationship between codon usage and PTT. The strong negative correlations (r = \u22120.64 and \u22120.56) with large sample sizes (n = 2,957) are highly significant. The mechanistic explanation (C119-C120) linking rare codons to AU-rich sequences and poly(A) signal formation is logical and consistent with the C/G bias of Neurospora.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Experimental validation confirms that codon optimization abolishes PTT and codon deoptimization creates PTT in endogenous genes. Codon optimization of NCU09435 (19 non-optimal codons replaced with optimal codons) completely abolished the premature termination product. Conversely, codon deoptimization of NCU02034 (16 optimal codons replaced with rare codons) abolished full-length transcript expression and caused premature termination around the deoptimized region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C124 provide bidirectional experimental validation of the codon usage-PTT relationship in genes other than frq. The optimization experiment (C121-C122) and deoptimization experiment (C123-C124) are complementary and strengthen the causal inference. These experiments demonstrate that the phenomenon is not specific to frq.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Rare codons and rare codon pairs are preferentially enriched in regions upstream of ORF poly(A) sites. There is a strong negative correlation (r = \u22120.55) between normalized codon usage frequency (NCUF) and relative synonymous codon adaptiveness (RSCA). Amino acids encoded by A/T-rich codons (isoleucine, lysine, asparagine, tyrosine) are over-represented upstream of poly(A) sites. The five most enriched codon pairs are all composed of least-preferred codons, with AAUAGA being 25-fold enriched and serving as a common PAS motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C131 provide detailed codon-level analysis supporting the mechanism by which rare codons promote PTT. The negative correlation between NCUF and RSCA (C125), the enrichment of A/T-rich amino acids (C126), and the dramatic enrichment of rare codon pairs (C128-C129) all converge on the conclusion that rare codons create PAS motifs. The 25-fold enrichment of AAUAGA is particularly striking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Comparison of true and false PAS motifs reveals the importance of surrounding sequence context. AU content surrounding true PAS motifs is higher than around false PAS motifs in both 3' UTR and ORF. The ratio of true to false PAS in ORF (0.086) is much lower than in 3' UTR (1.03), indicating that a single PAS motif is insufficient to trigger PTT in ORFs. Experimental validation showed that a false PAS in NCU02034 can be converted to a true PAS by deoptimizing surrounding codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C136 provide important insights into the sequence requirements for functional PAS motifs. The comparison of true vs. false PAS (C132-C133) and the low ratio in ORFs (C133-C134) demonstrate that context matters. The experimental validation (C136) directly confirms this conclusion. This analysis strengthens the mechanistic understanding of how codon usage affects PTT.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Analysis of relative codon usage frequency (RCUF) around true vs. false PAS motifs confirms that rare codons are critical for promoting PTT. There is a strong negative correlation (r = \u22120.66) between RCUF and RSCA, and this negative correlation is found within most synonymous codon groups. Rare codons are preferentially used in regions surrounding true PAS motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C139 provide an alternative analysis (RCUF) that complements the NCUF analysis and reaches the same conclusion. The stronger correlation (r = \u22120.66 vs. \u22120.55) and the consistency across codon groups strengthen the evidence. This analysis directly compares true and false PAS contexts, providing more specific evidence for the role of rare codons in promoting PTT.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Analysis of S. pombe, an A/U-biased organism, reveals different mechanisms for preventing PTT compared to Neurospora. S. pombe has 7,429 ORF-pA sites in 2,894 genes. Both 3' UTR and ORF poly(A) sites in S. pombe have a prominent downstream U-rich region, which is absent in Neurospora ORF-pA sites. ORF-pA sites have lower PAS scores than 3' UTR sites. Importantly, there is little or no correlation between ORF/3' UTR termination events and CBI (r = 0.07) or CAI (r = \u22120.06) in S. pombe, suggesting that codon usage does not significantly contribute to PTT in A/U-biased organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C154 provide a critical comparative analysis that strengthens the main conclusions by showing that the codon usage-PTT relationship is specific to C/G-biased organisms. The presence of the downstream U-rich region in S. pombe ORF-pA sites (C144) and the lack of correlation with codon usage (C152) support the conclusion that A/U-biased organisms use more stringent sequence requirements rather than codon bias to prevent PTT. This comparative approach is scientifically rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Analysis of mouse C2C12 cells reveals that codon usage also affects PTT in mammals. 2,564 poly(A) sites within ORFs of 1,429 genes were identified. ORF-PAS in mouse show reduced upstream U-rich and downstream GU-rich regions compared to 3' UTR-PAS, with decreased AU content, suggesting use of non-canonical poly(A) signals. ORF-PAS have significantly lower PAS scores than 3' UTR-PAS. In contrast, intronic PAS have nucleotide profiles almost identical to 3' UTR-PAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C167 extend the findings to mammals, demonstrating conservation of the codon usage-PTT relationship in C/G-biased organisms. The characterization of mouse ORF-PAS (C160-C164) shows similar features to Neurospora (use of non-canonical signals, lower PAS scores). The comparison with intronic PAS (C165-C166) provides an important control showing that the differences are specific to ORFs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "Genome-wide analysis in mouse shows negative correlations between PTT and codon usage bias, though weaker than in Neurospora. There are negative correlations between normalized ORF/3' UTR termination and CBI (r = \u22120.21) or CAI (r = \u22120.27). The weaker correlations compared to Neurospora may be explained by the less strong codon usage bias in mouse and the different gene structure (small exons separated by large introns).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C173 demonstrate that the codon usage-PTT relationship exists in mouse but is weaker than in Neurospora. The correlations are statistically significant (n = 1,153) but weaker (r = \u22120.21 and \u22120.27 vs. \u22120.64 and \u22120.56 in Neurospora). The explanations for the weaker correlation (C171-C173) are reasonable, though somewhat speculative. The finding of any correlation in mouse strengthens the conclusion of conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Detailed codon usage analysis in mouse confirms that rare codons are enriched around ORF-PAS. There is a negative correlation between NCUF and RSCA, found within most synonymous codon groups except histidine. PAS motifs (AAUAAA and AUUAAA) are among the top three most enriched codon pairs, over 16-fold enriched in ORF-PAS regions. Nucleotide U content surrounding true PAS motifs is higher than around false PAS motifs in both 3' UTR and ORF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C179 provide codon-level analysis in mouse that parallels the Neurospora analysis and reaches similar conclusions. The enrichment of PAS motifs as codon pairs (C176) and the higher U content around true PAS (C178) are consistent with the Neurospora findings. This parallel analysis strengthens the conclusion that codon usage biases co-evolved with transcription termination machinery in C/G-biased organisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C10",
+      "C49",
+      "C179",
+      "C198",
+      "C213",
+      "C214",
+      "C215"
+    ],
+    "result": "The main conclusion of the study is that codon usage biases co-evolve with transcription termination machinery to suppress premature transcription termination. In C/G-biased organisms (Neurospora and mouse), optimal codons prevent the formation of poly(A) signals, thus suppressing PTT. In A/U-biased organisms (S. pombe), more stringent sequence requirements for poly(A) signals (including downstream U-rich elements) prevent PTT. This represents a conserved but mechanistically distinct adaptation in organisms with different codon usage biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C49, C179, C198, C213-C215 represent the overarching conclusions of the study. These are well-supported by the extensive experimental data in Neurospora (frq experiments, genome-wide 2P-seq, codon usage analysis), the comparative analysis in S. pombe (showing lack of codon usage effect), and the extension to mouse (showing conservation in C/G-biased organisms). The mechanistic model is logical and consistent with all the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background claims about codon usage bias and its effects on gene expression. These include established knowledge about the genetic code, codon usage bias, correlations with protein expression, and previous understanding that codon usage affects translation, co-translational folding, RNA stability, and transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C24 are background knowledge claims supported by citations to previous literature. These are appropriately cited and provide context for the study. They are not novel findings of this study but establish the scientific foundation and motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Background claims about transcription termination and premature cleavage and polyadenylation (PCPA). These include established knowledge about mRNA maturation, poly(A) signals in different organisms, and previous observations of PCPA in various contexts (introns, coding regions, heterologous genes). The gap in knowledge is that the effect of codon usage on PTT of endogenous genes was not clear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C42 provide background on transcription termination and PCPA, appropriately cited from previous literature. These establish the context for the study and identify the knowledge gap (C42) that the study addresses. They are not novel findings but necessary background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C50"
+    ],
+    "result": "Background and motivation specific to Neurospora crassa as a model organism. Neurospora exhibits strong C/G codon usage bias, has been used to study codon usage, and codon usage correlates with gene expression levels. Previous work by the authors showed that codon usage affects chromatin structure and transcription, and that codon optimization of frq affects FRQ expression and structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48, C50 provide specific background on Neurospora and previous work by the authors. These are appropriately cited and establish why Neurospora is a good model organism for this study. They provide context for the experimental design but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193"
+    ],
+    "result": "Summary of the main findings in the Discussion section. These restate the key results: codon usage was thought to mainly affect translation, but this study shows it affects PCPA; rare codons create PAS motifs and cause PTT; genome-wide analysis found 12,106 PTT sites in 4,557 genes; strong negative correlation between codon usage and PTT; rare codons and codon pairs enriched around PTT sites; rare codons create both PAS motifs and surrounding cis-elements; differential effects of synonymous codons contribute to gene expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C180-C193 are summary statements in the Discussion that restate the main findings. They are supported by the data presented in the Results section. These are appropriate summary claims but do not represent new results beyond what was already presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C199"
+    ],
+    "result": "Discussion claims relating findings to previous literature. A previous yeast study showed codon usage affects antisense transcript stability via Nrd1/Nab3 binding sites. Transcription termination relies on A/U-rich cis-elements. Rare codons in Neurospora form A/U-rich poly(A) signals. Codon optimization is required for heterologous gene expression in Aspergillus oryzae, probably by preventing PTT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C194-C199 connect the findings to previous literature and provide mechanistic interpretation. These are appropriately cited and provide context for the findings. The mechanistic interpretation (C196) is a reasonable inference from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208"
+    ],
+    "result": "Discussion of the characteristics and implications of non-canonical poly(A) signals in ORFs. Non-canonical signals are used for PCPA in coding regions, with different nucleotide profiles than 3' UTR-PAS. These signals are less efficient, resulting in low ratios of ORF to 3' UTR termination. Prematurely terminated transcripts are rapidly degraded. The ratio of true to false PAS is much lower in ORFs than 3' UTR, suggesting PCPA is mostly suppressed by optimal codons. Even though non-canonical signals are less efficient, multiple sites in a gene with poor codon usage can have major impacts on mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C200-C208 discuss the characteristics and implications of non-canonical poly(A) signals. These are supported by the data presented in the Results section and provide important interpretation. The discussion of transcript degradation (C205) is supported by citations. The inference about cumulative effects (C208) is reasonable but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C209",
+      "C210",
+      "C211",
+      "C212"
+    ],
+    "result": "Discussion of S. pombe findings emphasizing the presence of the downstream U-rich element. Many PTT events were identified in S. pombe ORFs. The nucleotide composition around termination sites in 3' UTRs and ORFs share a U-rich motif downstream of cleavage sites, which has been shown to be important for transcription termination. This element is largely missing in Neurospora.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C209-C212 discuss the S. pombe findings with emphasis on the downstream U-rich element. These are supported by the data and appropriately cite previous work showing the importance of this element. The comparison to Neurospora (C212) is supported by the data.",
+    "result_type": "MINOR"
+  }
+]

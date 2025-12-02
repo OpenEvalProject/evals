@@ -1,0 +1,1705 @@
+{
+  "submission": {
+    "id": "225722d6-8617-49d5-a143-c664d82df6d4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:22:57.175353Z",
+    "updated_at": "2025-12-01T22:22:57.175353Z"
+  },
+  "content": [
+    {
+      "id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "submission_id": "225722d6-8617-49d5-a143-c664d82df6d4",
+      "content_type": "manuscript",
+      "content_text": "# Epigenetic profiling of growth plate chondrocytes sheds insight into regulatory genetic variation influencing height\n\n## Authors\n\n- Michael Guo<sup>1</sup> ([ORCID: 0000-0002-1357-6389](https://orcid.org/0000-0002-1357-6389))\n- Zun Liu<sup>4</sup>\n- Jessie Willen<sup>4</sup>\n- Cameron P Shaw<sup>4</sup>\n- Daniel Richard<sup>4</sup>\n- Evelyn Jagoda<sup>4</sup>\n- Andrew C Doxey<sup>5</sup>\n- Joel Hirschhorn<sup>1</sup>\n- Terence D Capellini<sup>1</sup> ([ORCID: 0000-0003-3842-8478](https://orcid.org/0000-0003-3842-8478)) \u2020\n\n### Affiliations\n\n1. Broad Institute of MIT and Harvard Cambridge United States\n2. Division of Endocrinology, Boston Children\u2019s Hospital Harvard Medical School Boston United States\n3. Department of Genetics Harvard Medical School Boston United States\n4. Department of Human Evolutionary Biology Harvard University Cambridge United States\n5. Department of Biology University of Waterloo Waterloo Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nGWAS have identified hundreds of height-associated loci. However, determining causal mechanisms is challenging, especially since height-relevant tissues (e.g. growth plates) are difficult to study. To uncover mechanisms by which height GWAS variants function, we performed epigenetic profiling of murine femoral growth plates. The profiled open chromatin regions recapitulate known chondrocyte and skeletal biology, are enriched at height GWAS loci, particularly near differentially expressed growth plate genes, and enriched for binding motifs of transcription factors with roles in chondrocyte biology. At specific loci, our analyses identified compelling mechanisms for GWAS variants. For example, at CHSY1, we identified a candidate causal variant (rs9920291) overlapping an open chromatin region. Reporter assays demonstrated that rs9920291 shows allelic regulatory activity, and CRISPR/Cas9 targeting of human chondrocytes demonstrates that the region regulates CHSY1 expression. Thus, integrating biologically relevant epigenetic information (here, from growth plates) with genetic association results can identify biological mechanisms important for human growth.\n\n## Introduction\n\nHuman height, a main outcome of skeletal growth, is the product of many biological and environmental interactions spanning numerous cell and tissue types acting during pre- and post-natal development. The growth plate, located at the distal ends of long bones such as the femur, is among the most important tissues influencing height. In the growth plate, condensations of mesenchymal cells differentiate into chondrocytes in the process of endochondral ossification. Chondrocytes in the growth plate reside in longitudinally oriented columns divided in zones (resting, proliferative, pre-hypertrophic, and hypertrophic) each with important functions in allowing the bone to elongate and mature (see Liu et al., 2017 and Samsa et al., 2017 for reviews) (Liu et al., 2017; Samsa et al., 2017). This process of growth plate chondrocyte differentiation and maturation promotes elongation of long bones, which ultimately determines much of human height (Baron et al., 2015). These processes are under the influence of many extrinsic and intrinsic signals (Samsa et al., 2017; Lui et al., 2012; Kronenberg, 2003).\n\nHeight has been studied for centuries as a model genetic trait, as it is easily measured and highly heritable (typically, 70\u201390% of variation in height within a population is attributable to genetic variation) (Silventoinen et al., 2003; Perola et al., 2007; Visscher et al., 2006; Visscher et al., 2007; Galton, 1886). Height and body proportions are likely selected and thus are interesting from an evolutionary standpoint (Turchin et al., 2012). Studies of the genetics of height can shed insight into the mechanisms of childhood growth and into developmental biology of the skeleton (Baron et al., 2015; Dauber et al., 2014). Additionally, abnormalities of growth\u2014short stature or overgrowth\u2014are among the most common childhood disorders and their pathophysiology is poorly understood. Thus, genetic studies of height could further our understanding of the genetic basis of skeletal disease, evolution, biology, and normal human growth and development.\n\nRecently, genome-wide association studies (GWAS) have been used to study the genetics of height, as well as many other traits and disorders (Wood et al., 2014). This approach systematically tests each common variant in the genome for association with a phenotype of interest, such as adult height, with the goal of identifying relevant biology, either from the identities of the genes near the associated variants, or by deducing mechanism from the associated variants themselves. GWAS for height are among the largest conducted thus far (sample sizes\u00a0>\u00a0250,000) and have identified more associations than any other phenotype, with nearly 700 regions of the genome (or loci) robustly associated with height (Wood et al., 2014). The finding of so many loci influencing height, with the number expected to increase with larger sample sizes, supports the assertion that height is highly polygenic. Although each of the variants at these loci have only a small effect on height (typically much less than 0.5 cm per allele) (Wood et al., 2014), the genes within the associated loci as a group highlight important mechanisms influencing growth. For example, height variants are enriched for genes implicated in numerous biological processes relevant to growth, including embryonic stem cell function, long bone development, and spine length, among a number of other processes (Wood et al., 2014). Height variants are also preferentially located near genes that are differentially expressed in the growth plate (Lui et al., 2012).\n\nHowever, as with all GWAS, moving from genetic associations to biological mechanisms at any individual locus can be challenging. There are two primary reasons for this difficulty. First, there is extensive linkage disequilibrium (LD) in the human genome, meaning that the genotypes at nearby genetic variants are often tightly correlated (Gabriel et al., 2002). The consequence of LD is that at any particular locus, there will be many variants that have indistinguishable associations, and determining which variant(s) are in fact causal (rather than associated due to LD with a causal variant) remains difficult. Second, most GWAS variants (>80%) reside in non-coding regions (Gusev et al., 2014), with no nearby coding variants that can account for the associations. Non-coding variants are challenging to interpret because there is no universal regulatory code to infer function/mechanism, and these variants can act to influence gene expression at long distances and in highly tissue-specific manners (Bernstein and ENCODE Project Consortium, 2012). Various approaches have been pursued for identifying the causal variants and/or mechanisms, including overlapping associated variants with epigenetic datasets in appropriate tissues/cell-types, statistical genetic methods leveraging subtle variations in LD patterns (called \u2018fine mapping\u2019), and in vitro and in vivo functional assays (Tak and Farnham, 2015). It is also becoming increasingly clear that GWAS variants tend to fall in regions that have particular epigenetically\u00a0defined states (such as enhancers or repressors) (Finucane et al., 2015; Farh et al., 2015). Thus, the overlap between GWAS and the appropriate epigenetic annotations can help refine the identities of causal variants, helping to decipher mechanism. However, epigenetic data may not exist for the biologically relevant cell type, and there is no universally successful approach to translating non-coding associations from GWAS into biological mechanisms.\n\nAlthough the large number of associated variants offers advantages in making biological inferences for the set of associated variants as a whole (Lango Allen et al., 2010), defining functional mechanisms of individual height GWAS variants faces specific challenges. Height variants likely act in many tissues and stages of development, including not only the growth plate but also embryonic cells, endocrine tissues such as the pituitary, and bone, among others (Wood et al., 2014). Human growth is also a whole-organism phenotype and is less amenable to study in cell-intrinsic models, making functional approaches particularly challenging. Finally, skeletal tissues can be highly heterogeneous and challenging to isolate because in their mature form they are surrounded by a hard extracellular matrix and strongly\u00a0adhering soft tissues such as tendons, ligaments, and muscles. These factors make it difficult to isolate the large numbers of biologically relevant cells that are needed for functional experiments or for traditional epigenomic assays such as ChIP-seq (Furey, 2012).\n\nIn this study, we profile the epigenetic landscape of mouse growth plate chondrocytes using a new approach called ATAC-seq (Buenrostro et al., 2015, 2013), which allows for accurate profiling of open chromatin regions using relatively few cells (~50,000). We then use the epigenetic landscape in growth plate chondrocytes to gain new insights into the mechanisms of non-coding elements in the genome influencing expression of growth plate genes. Finally, we use these epigenetic marks, in the context of statistical fine-mapping results and gene expression profiles, to better understand height GWAS variants and the mechanisms by which they may function to influence height in humans. These studies illustrate a path that can help decipher mechanism from GWAS, even when the relevant cell type is relatively inaccessible in humans.\n\n## Results\n\n### Generation of mouse femoral growth plate epigenetic profiles\n\nIn order to identify open chromatin regions involved in long bone development, we performed ATAC-seq (Buenrostro et al., 2015, 2013) on E15.5 (Theiler Stage 23) mouse proximal and distal femoral growth zones, regions comprised predominately of the growth plate proper, the overlying perichondrium, and the cartilaginous super-structures that dictate adult bony morphology (Materials\u00a0and\u00a0methods). This stage of mouse embryogenesis corresponds to approximately E48-51 (Carnegie Stage 19) of human development and reflects a developmental window when the growth plate proper possesses all chondrocyte zones (resting, proliferative, pre-hypertrophic, hypertrophic zone) and is undergoing rapid cell proliferation and differentiation during endochondral ossification. Given that it remains unclear which sub-region(s) (i.e. chondrocyte zones) of the growth plate are under genetic influence to drive height variation, we performed our experiments on tissues that include all chondrocyte zones (including perichondrium) and cartilaginous tissues, excluding regions indicative of the osteogenic invasion in the developing bone collar (Figure 1a). We used ATAC-seq to isolate open chromatin regions from the DNA, which were subsequently subjected to next-generation sequencing (Materials and methods; Supplementary file 1). This approach\u00a0yielded 28,257 proximal femur peaks and 27,958 distal femur peaks, with 23,764 shared peaks, 4493 peaks specific to the proximal femur, and 4194 specific to the distal femur (Figure 1b). The proximal and distal peaks span approximately 0.79% and 0.76% of the genome, respectively. We also assessed the genomic distribution of proximal and distal femur ATAC-seq peaks and found a characteristic enrichment near gene transcriptional start sites and more distal intronic and intergenic non-coding sequences (Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/29329/elife-29329-fig1-v2.jpg)\n\n**Figure 1.:** (A) Pipeline of ATAC-seq on the embryonic mouse femur. Proximal (red) and distal (blue) samples were extracted from E15.5 femoral growth plates, as labeled by Col2a1 expression (insets). Tissues were harvested just proximal (red dotted lines in inset) or distal (blue dotted lines in inset) to the forming bone collar (outlined by dashed black lines). Cells were then treated to generate a single-cell suspension. Approximately 50,000 cells per sample were utilized for subsequent ATAC-seq. Open chromatin regions were then identified from the ATAC-seq data. ATAC-seq protocol adapted from Buenrostro et al. (2013). (B) Venn diagram shows the number of ATAC-seq peaks in the proximal and distal samples. (C) ATAC-seq peaks (after subtracting peaks shared in brain ATAC-seq) were analyzed for enrichment in gene sets using GREAT. Horizontal bars show enrichment p\u00a0values (shown as \u2013log10(p\u00a0value)) for Human Phenotypes. The union of proximal and distal femur peaks was used.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29329/elife-29329-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) ATAC-seq read distribution relative to transcriptional start sites (TSS) across the mouse genome. (B) Distribution of annotations for ATAC-seq open chromatin regions in the mouse genome. (C) Venn diagram showing the number of ATAC-seq peaks in the proximal and distal samples following liftover to the human hg19 reference genome.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29329/elife-29329-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Proximal ATAC-seq peaks are shown in red and distal ATAC-seq peaks are shown in blue. Coordinates are based on the mouse mm10 genome build.\n\nSince a main goal was to understand the gene regulatory functions of variants influencing human height, we next mapped the locations of each mouse femur open chromatin region to the human genome (Materials and methods). Our liftover resulted in 24,805 proximal femur peaks and 24,788 distal femur peaks, representing approximately 87.7% and 88.6% of sites identified in mouse, respectively. These sites that were capable of liftover to human likely reflect relatively conserved genes involved in vertebrate musculoskeletal development (Shubin et al., 1997; Petit et al., 2017). The union of the two sets contained 25,829 peaks (Figure 1\u2014figure supplement 1).\n\nTo determine whether ATAC-seq peaks are enriched near gene sets/pathways with specific functions, we performed an enrichment analysis using Genomic Regions Enrichment of Annotations Tool (GREAT) (McLean et al., 2010), which identifies curated gene sets enriched near epigenetic peaks. Analyses of each proximal, distal, and union femur datasets yielded general GO Biological Process and GO Molecular Processes terms related to basic cell biological processes, as well as phenotypes related to a number of biological tissues including skeletal tissues (Supplementary file 2\u20134). They also yielded phenotype terms related to general skeletal development, chondrogenesis, and long bone skeletal phenotypes, such as \u2018Metaphyseal widening\u2019, \u2018Abnormality of the femoral epiphyses\u2019, and \u2018Abnormality of the femoral head\u2019 (Figure 1c). Thus, ATAC-seq datasets generated on each specific femoral growth plate in mice reflect in part highly relevant anatomy, as well as general aspects of skeletal development in humans (see Discussion).\n\nThe ATAC-seq peaks we identified also highlight biological processes that are important in the growth plate. For example, GREAT analyses uncovered enrichment for several relevant GO Biological Processes such as \u2018Cartilage condensation\u2019, \u2018Positive regulation of chondrocyte differentiation\u2019, and \u2018Chondrocyte proliferation\u2019 (Supplementary file 2\u20134). Additionally, we illustrate ATAC-seq peaks at several well-known growth plate genes including Col2a1, Fgfr1, and Pth1r (Figure 1\u2014figure supplement 2) (Long and Ornitz, 2013).\n\n### ATAC-seq peaks overlap other skeletal and chondrocyte epigenetic data sets\n\nWe next wanted to validate that our ATAC-seq datasets reflect open chromatin regions important to mouse chondrocyte biology. To do so, we analyzed a previous dataset that used ChIP-seq to profile Sox9 binding in mouse rib chondrocytes (Ohba et al., 2015). We found extensive overlap between Sox9-occupied sites and our open chromatin ATAC-seq peaks. For example, 86.4% of Class I Sox9 elements (i.e. elements clustering near transcriptional start sites of highly expressed non-chondrocyte-specific genes), 44.6% of Class II Sox9 elements (i.e. elements directing chondrocyte-related gene activity through direct Sox9 dimer binding), and 93.8% of Sox9 super-enhancer regions (i.e. enhancer complexes involved in chondrocyte cell identity) overlap with our femur ATAC-seq peaks (p<0.001 for all three sets, Materials and methods, Figure 2a).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/29329/elife-29329-fig2-v2.jpg)\n\n**Figure 2.:** (A) Proportion of mouse Sox9 Class I, Class II, and super enhancer sites (Ohba et al., 2015) overlapping with ATAC-seq peaks. (B) Proportion of mouse rib chondrocyte H3K27ac, H3K36me3, H3K4me2, H3K4me3, p300, and RNA Pol II sites overlapping with ATAC-seq peaks. (C) Proportion of human embryonic limb E47 H3K27ac (Cotney et al., 2013) and human BMDC H3K27ac sites (Kundaje et al., 2015) overlapping with ATAC-seq peaks. (D) ATAC-seq peaks at the Matn3 locus. Published rib chondrocyte peaks for H3K4me2, H3K4me3, and Sox9 are shown in shades of orange. Proximal ATAC-seq peaks are shown in red, with called peaks shown as bars below. Distal ATAC-seq peaks are shown in blue, with called peaks shown as bars below.\u00a0The locations of previously published chondrocyte enhancers are shown as black bars.\n\nWe also examined overlap between our dataset and various histone modifications in the mouse rib chondrocytes (Materials\u00a0and\u00a0methods) (Figure 2b) (Ohba et al., 2015). We found that 85.1% of RNA Pol II transcriptionally active promoters, 56.9% of H3K4me2 active promoter sites, 86.7% of H3K4me3 active promoter sites, 87.4% of H3K27ac active enhancer sites, and 59.4% of p300 histone acetyltransferase active enhancer sites overlapped with femur ATAC-seq peaks. Conversely, our ATAC-seq datasets displayed relatively lower overlap with markers of gene repression; that\u00a0is, only 33.7% of H3K27me3-repressed enhancer sites overlap with femur ATAC-seq signals (Figure 2b). Based on permutation analyses, the enrichments of all these histone modification sets were significant at p<0.001. Thus, we found that femoral ATAC-seq peaks show marked evidence of active chromatin state and/or gene transcription.\n\nWe also wanted to determine if our ATAC-seq peaks reflect regulatory elements involved in human limb development and chondrocyte biology. First, we used a ChIP-seq dataset comprised of H3K27ac peaks found in E47 human limb buds (equivalent to E13.5 mouse limb buds) that are shared with mouse limb buds (Cotney et al., 2013). We found that 45.2% of these E47 human limb bud H3K27ac peaks overlapped with ATAC-seq peaks, indicating that many of our mouse femur ATAC-seq peaks reflect active human limb enhancers involved in chondrogenesis (p<0.001, Figure 2c). Second, we used an H3K27ac ChIP-seq dataset generated on human adult cultured bone marrow mesenchymal stem-cell-derived chondrocytes (BMDCs) (Herlofsen et al., 2013; Kundaje et al., 2015) and found that 13.3% of human adult BMDC H3K27ac peaks overlapped our mouse distal femur dataset (p<0.001) (Figure 2c), which indicates that our femur ATAC-seq dataset also captures cell-intrinsic properties of chondrogenesis. However, the greater overlap seen in the limb bud dataset as compared to the BMDCs suggests that our dataset may be capturing epigenetic properties present in developing in vivo tissues that are poorly modeled by cell culture systems.\n\nOur ATAC-seq data were also able to identify 14 of 26 previously-discovered active regulatory elements residing near key cartilage genes detected at different time-points and using different assays (e.g. see Figure 2d,\u00a0Supplementary file 5). This suggests that mouse femoral ATAC-seq regions have in vivo enhancer activity as determined in independent assays. Overall, these data indicate that ATAC-seq datasets generated on the mouse femoral growth plates match previously expected patterns of regulatory usage important to chondrocyte biology.\n\n### Human height variants are enriched in femoral open chromatin regions\n\nWe next sought to use our ATAC-seq dataset to gain insight into height-associated variants identified by GWAS. To do so, we intersected our orthologous human ATAC-seq peaks with 688 height GWAS loci from Wood et al. (2014) (nine loci were excluded; see Materials and methods) (Wood et al., 2014). Since we do not know which variants are causal and which are associated with height due to LD, for each locus, we identified potentially causal \u2018proxy\u2019 SNPs: those with a correlation of r2\u00a0>0.5 to the lead SNP based on the European subset of 1000 Genomes Phase 3 (Auton et al., 2015). The number of proxy SNPs ranged from 1 to 3548 for each of these 688 loci (Figure 3\u2014figure supplement 1).\n\nAcross the 688 height loci, we found that 317 loci (or\u00a0~46%) contained at least one variant that overlapped with an ATAC-seq peak. To test the significance of the observed overlap, we applied GoShifter (see Materials and methods), which performs a shuffling-based approach to evaluate the overlap between an epigenetic data set and GWAS data. We found strong enrichments for the ATAC-seq peak set and height GWAS data (p=0.0059) (Figure 3\u2014figure supplement 1a). We repeated this analysis using the Sox9 binding and histone modifications in mouse rib chondrocytes, human BMDCs, and mouse embryonic limb datasets from above, as well as DNaseI hypersensitivity sites from mouse brain, liver, and lung (Bernstein and ENCODE Project Consortium, 2012; Ohba et al., 2015; Cotney et al., 2013; Yue et al., 2014). Only the mouse rib chondrocyte H3K4me2 peaks reached statistical significance (p=0.0237), and was far less significant than our ATAC-seq data. This suggests that our ATAC-seq data captures functional genetic variation influencing height that is not captured by the other datasets. Also, as no enrichment was observed for other mouse tissues from ENCODE, this suggests that the observed enrichment is unlikely due to artifacts stemming from our use of mouse tissues (e.g. from conserved regions being lifted over).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/29329/elife-29329-fig3-v2.jpg)\n\n**Figure 3.:** (A) Enrichment of height GWAS loci in ATAC-seq peaks using GoShifter. Histogram (light blue bars) shows the number of overlaps observed in the 100,000 GoShifter permutations. Dotted line shows the number of overlaps observed in the ATAC-seq data. (B) GoShifter analysis p\u00a0values for the ATAC-seq data, mouse rib chondrocyte Sox9 binding and histone modifications, human embryonic limb E47 H3K27ac, H3K27Ac of BMDCs, and brain, liver, and lung DNaseI hypersensitivity site samples from mouse ENCODE (C) Enrichment of height GWAS loci in ATAC-seq peaks using random matched GWAS loci. Histogram (light blue bars) shows the number of overlaps observed in 1000 matched random loci. Dotted line shows the number of overlaps observed in the ATAC-seq data.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29329/elife-29329-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Histogram of number of proxy SNPs (r2\u00a0>0.5 using 1000 Genomes Phase EUR data) across 688 height GWAS loci. (B) Results of GoShifter analysis of height GWAS variants on ATAC-seq peaks at different LD thresholds ranging from r2\u00a0=\u00a00.2 to 0.8 (based on 1000 Genomes Phase EUR data). Heights of the bars represent the \u2013log10(p\u00a0value). Results for r2\u00a0=\u00a00.5 are the same as shown in Figure 3A\u2013B. (C) GoShifter analysis for GWAS results for several additional complex traits/diseases on ATAC-seq peaks. Heights of the bars represent the \u2013log10(p\u00a0value). Analyses performed using r2\u00a0>\u00a00.5 based on 1000 Genomes Phase EUR data. Results for height are the same as shown in Figure 3A\u2013B. (D) Histogram of number of proxy SNPs (r2\u00a0>\u00a00.5 using 1000 Genomes Phase EUR data) overlapping an ATAC-seq peak across each of 688 GWAS loci.\n\nTo further demonstrate the specificity of our ATAC-seq peaks for capturing height GWAS signals, we repeated the GoShifter analysis by examining the enrichment of GWAS results for other complex traits/diseases at our ATAC-seq peaks. These other traits/diseases were chosen as they have no obvious connection to height and included age of menarche (Day et al., 2017), body mass index (Locke et al., 2015), coronary artery disease risk (Schunkert et al., 2011), LDL cholesterol (Teslovich et al., 2010), mean corpuscular volume (van der Harst et al., 2012), schizophrenia risk (Ripke and Schizophrenia Working Group of the Psychiatric Genomics Consortium, 2014), and type 2 diabetes risk (Morris et al., 2012). These additional traits/diseases all demonstrated little to no enrichment at ATAC-seq peaks (Figure 3\u2014figure supplement 1), suggesting that the growth plate ATAC-seq peaks are specifically capturing height/growth biology.\n\nAs a second approach to evaluate overlap between our ATAC-seq peak set and height GWAS data, we generated 1000 sets of random loci which were matched to the actual height GWAS loci based on factors including SNP density, minor allele frequency, number of proxy SNPs in the locus, and gene density (Materials and methods) (Pers et al., 2015). For each of the 1000 matched sets of random loci, we repeated the overlap with the ATAC-seq peaks. As none of the matched sets had as much overlap as our height GWAS loci, the enrichment we observed for the height GWAS data is highly significant (p<0.001; z-score: 11.88) (Figure 3c).\n\nNotably, we observed that the actual number of SNPs that overlap an ATAC-seq peak for each set was higher than the number of represented loci. In total, there were 928 variants that overlapped with an ATAC-seq peak; these 928 variants were distributed across 317 loci (Supplementary file 6; Figure 3\u2014figure supplement 1). This finding of more than one overlapping variant per locus may indicate multiple causal variants at each locus, as has been shown for other traits (Roman et al., 2015).\n\n### Fine-mapped height variants overlap with femoral growth plate open chromatin regions\n\nAn alternative method to narrow down potentially causal signals within GWAS loci is to use statistical fine-mapping, which leverages the association statistics and patterns of LD at each locus to identify which variants at a given locus are most likely to be causal. We applied PICS (Farh et al., 2015) to perform statistical fine-mapping of the (Wood et al., 2014) height GWAS results (Materials and methods). For each of 688 height-associated loci, we calculated credible set probabilities for all SNPs with an r2\u00a0>0.5 to the lead variant based on the European subset of 1000 Genomes Phase 3 (Auton et al., 2015). For each locus, we then determined the 95% credible set, which represents the minimum set of SNPs at that locus such that the truly causal SNP has at least a 95% probability of being in the set. Across 688 loci, this yielded a 95% credible set of 32,846 SNPs, which represents approximately a 48.2% reduction from the total number of variants in the GWAS loci. Intersecting these credible set SNPs with femur open chromatin regions revealed 468 overlapping variants spanning 192 of the 688 loci (Figure 4a).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/29329/elife-29329-fig4-v2.jpg)\n\n**Figure 4.:** (left): Larger light green circle represents all height GWAS SNPs and their proxies (r2\u00a0>0.5). Smaller green circle represents the proportion of these SNPs in the PICS 95% credible set. (right) Larger light blue circle represents the 688 height GWAS loci. Medium blue circle represents 317 height GWAS loci overlapping an ATAC-seq peak. Smaller dark blue circle represents 192 loci where a PICS 95% credible set variant overlaps an ATAC-seq peak.\n\n### A subset of human height variants in femoral open chromatin regions reside near genes differentially expressed in the growth plate\n\nA previous study profiled expression of mouse growth plate genes and identified a set of 427 genes that were differentially expressed in the growth plate (Lui et al., 2012). That study also revealed that height GWAS loci (using a previous smaller height GWAS) are enriched near differentially expressed growth plate genes (Lui et al., 2012; Lango Allen et al., 2010). We expanded on those results using the most recent height GWAS from Wood et al. (2014) and indeed found that height GWAS loci are enriched near 427 differentially expressed growth plate genes (within 100 kb) when compared to the 1000 matched random GWAS loci (p<0.001, z-score: 8.54, Figure 5a).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/29329/elife-29329-fig5-v2.jpg)\n\n**Figure 5.:** (A) Enrichment of height GWAS loci in differentially\u00a0expressed growth plate genes. Dotted line shows number of GWAS loci with a nearby differentially\u00a0expressed growth plate gene (\u00b1100 kb). Histogram (light blue bars) shows the number of overlaps observed in 1000 matched random loci. (B) Enrichment of height GWAS loci in differentially\u00a0expressed growth plate genes and ATAC-seq peaks. Same as (A), except showing overlap for GWAS loci overlapping differentially\u00a0expressed growth plate gene (\u00b1100 kb) and ATAC-seq peak.\n\nSince we detected enrichment of height GWAS variants near femoral open chromatin regions (see Figure 3) and reasoned that many of the variants likely function by influencing expression of growth plate genes, we next identified the number of GWAS variants that fit the criteria of residing in an open chromatin region near a differentially expressed gene (within 100 kb). We again used the 688 GWAS loci from Wood et al. (2014) and their proxy SNPs (r2\u00a0>0.5) and found that 46/688 loci (or\u00a0~6.7%) contained at least one GWAS variant that overlapped with an ATAC-seq peak and resided near a differentially expressed gene (Supplementary file 6). Using the same 1000 sets of matched random loci as described above, we found that these overlaps were highly significant (p<0.001, z-score: 6.36, Figure 5b). These loci likely represent combinations of functional variants that overlap an epigenomic element in growth plates that then modulates expression of nearby genes influencing height.\n\nWood et al., had previously observed that height GWAS SNPs that represent cis eQTLs in whole blood are enriched for expression in cartilage (Wood et al., 2014). Here, we sought to evaluate whether differentially expressed growth plate genes that are also eQTLs genes in whole blood are enriched at ATAC-seq peaks. Among the 427 differentially expressed growth plate genes, 157 had previously been identified as eQTL genes in whole blood (Westra et al., 2013). Using the GoShifter permutation analysis as described above, we demonstrated that the corresponding eQTL variants for these 157 genes are significantly enriched at ATAC-seq peaks (p=0.0004)\n\nOf the 46 loci in the ATAC-seq femur comparison that fall near genes differentially expressed in growth plates, 44 different genes have been identified as possibly being modulated by these putative regulatory variants (note, some genomic loci have multiple genes and/or GWAS loci) (Supplementary file 6). These genes represent major signaling molecules (e.g. IHH, HHIP), transcription factors (e.g. RUNX2), extracellular matrix factors (e.g. CHSY1, EXTL1), among other factors involved in the growth plate in both humans and mice.\n\n### Known and novel targets of human height variants in putative chondrocyte regulatory regions\n\nWe next examined some of the most compelling loci from a genetic and mechanistic perspective. We filtered for loci where a height GWAS variant in the PICS 95% credible set overlapped an ATAC-seq peak, and was near a differentially expressed growth plate gene (\u00b1100 kb). In total, 59 variants distributed across 26 loci met these criteria. These 59 variants thus have strong evidence for being potentially causal variants and might be prioritized for downstream study (Supplementary file 6).\n\nFor example, at the CHSY1 locus, four variants (rs8042551, rs11639408, rs9920291, and rs3911964) met these criteria. Disruption of Chsy1 in mice and humans leads to severe skeletal phenotypes including long bone length reductions (Wilson et al., 2012; Temtamy et al., 1998; Tian et al., 2010; Li et al., 2010). Of the four variants, rs9920291 is predicted to alter HOXD13 binding, as suggested by data generated using universal protein binding microarray technology that demonstrates that the eight base-pair sequence matching the immediate rs9920291 locus disrupts in vitro binding by HOXD13 (Figure 6a, Supplementary file 7), a homeodomain transcription factor that is expressed in the growth plate (Kuss et al., 2014; Reno et al., 2016) and has known activating and repressive roles in skeletal development (Johnson and Tabin, 1997). We performed a series of functional assays to test the effects of allelic variation at rs9920921. First, using a luciferase reporter assay in T/C-28a2 human chondrocytes, we found that the open chromatin region surrounding rs9920291 acts as a repressor of expression (p=7.83\u00d710\u22126 and 3.6 \u00d7 10\u22124 for variants carrying the reference and alternate alleles respectively) (Figure 6b). In addition,\u00a0the alternate T allele,\u00a0(i.e.\u00a0the height-increasing allele of rs9920291) makes the regulatory element act as a weaker repressor (p=0.0014). This is consistent with data from GTEx (Lonsdale J, GTEx Consortium, 2013), where rs9920291 acts as an eQTL\u00a0for CHSY1 in transformed fibroblasts (p=1.0\u00d710-7; Figure 6\u2014figure supplement 1), with the T allele correlating with increased CHSY1 expression levels. Additionally, we leveraged the fact that in HEK-293FT cells, rs9920291 is heterozygous, along with several additional SNPs in the coding region of CHSY1. Assaying a heterozygous exonic coding SNP (rs28364839) and a 3\u2019UTR SNP (rs11433), we demonstrate that rs9920291 displays allelic skew in expression (p<0.001 for both assayed variants; Figure 6d).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/29329/elife-29329-fig6-v2.jpg)\n\n**Figure 6.:** (A) ATAC-seq height GWAS variant intersections at the CHSY1 locus refine height GWAS loci to fewer putatively causal variants. Height GWAS SNPs (r2\u00a0>0.5 to lead SNP) are shown as black bars, and SNPs in the PICS 95% credible set are shown as red bars. Published H3K27ac ChIP-seq in E47 human limb buds and BMDCs are shown in orange and purple respectively. ATAC-seq peaks lifted over to human are shown for proximal femur (red) and distal femur (blue). Published Sox9 class II sites from mouse rib chondrocytes lifted over to human are shown in light blue. Four height SNPs overlap an ATAC-seq peaks, representing putatively causal variants. Of these four variants, rs9920291, a C to T substitution, significantly alters the predicted binding of HOXD13 (UniProbe: HOXD13 C allele z-score\u00a0=\u00a00.7825; HOXD13 T allele z-score\u00a0=\u00a05.1269 (also Supplementary file 7) (B) Results of a luciferase reporter assay. A 341 bp region surrounding rs9920291 and containing either the reference or alternate allele at rs9920291 was cloned into a luciferase reporter vector and transfected into the human chondrocyte cell line T/C-28a2. Expression was normalized (to 1.0) by luciferase activity of the empty vector luciferase construct. (C) Allelic skew of two CHSY1 genic variants (rs28364839 which is exonic and rs11433 which is in the 3\u2019UTR) in HEK-293FT cells. Notably, HEK-293FT is heterozygous for rs9920291, along with both assayed variants. (D) Expression of CHSY1 following CRISPR-Cas9-mediated deletion of regions surrounding rs9920291 (see Figure 6\u2014figure supplement 1) in T/C-28a2 chondrocyte cell lines (N\u00a0=\u00a03 biological replicates). CHSY1 expression following deletion of an approximate 135 bp region using guides 1 and 4 is shown in purple and expression following deletion of an approximate 17 bp region using guides 6 and 8 is shown in orange. Expression values are normalized to a control CRISPR-Cas9 vector\u00a0(green). (E) CHSY1 expression following HOXD13 overexpression in T/C-28a2 cells (N\u00a0=\u00a03 biological replicates) (see also Figure 6\u2014figure supplement 1). Expression is normalized by an empty overexpression vector. ***p<0.001 by unpaired t-test.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29329/elife-29329-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Normalized expression of CHSY1 in human transformed fibroblasts from the GTEx project\u00a0(Lonsdale and GTEx Consortium, 2013). Expression is segregated by the genotype of rs992091. Each individual circle represents a single individual. (B) Schematic of CRISPR-Cas9 deletion experiment. The green box represents the approximately 341 bp open chromatin region identified by ATAC-seq. The blue line represents the location of rs9920291. Locations of guide RNAs (sg1, 4, 6, and 8) are shown by circles. The approximate size of the deletions generated by sg1 and 4 (purple, 135 bp), and sg6 and 8 (orange, 17 bp) are shown. (C) Gel electrophoresis of PCR of the target locus following CRISPR-Cas9 deletion in T/C-28a2 cells. Lane 1 represents the PCR product following cutting with sg1 and 4; lane 2 represents product following cutting with sg6 and 8; lane 3 represents product following cutting with control CRISPR. The uncut PCR product should be 341 bp. The expected band size following cutting with sg1\u00a0and\u00a04 is 207 bp and the expected size following cutting with sg6\u00a0and\u00a08 is 324 bp. (D) Confirmation of HOXD13 expression following transfection of HOXD13 overexpression vector in T/C-28a2 human chondrocyte cell lines (N\u00a0=\u00a03 biological replicates). Expression values are normalized (to 0) to an empty vector control.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29329/elife-29329-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** One height-associate SNP (rs4911178) overlaps a previously characterized GDF5 growth plate enhancer (Capellini et al., 2017). Features in the figure are the same as in Figure 6A.\n\nTo further demonstrate that the region surrounding rs9920291 displays regulatory activity for CHSY1, we performed CRISPR-Cas9 targeting of a 135 bp sequence spanning a conserved portion of the regulatory element containing rs9920291 (guides sg1 and sg4), or an 17 bp sequence immediately surrounding rs9920291 (guides sg6 and sg8). Either deletion led to a significant upregulation of CHSY1 expression in vitro in T/C-28a2 cells (p=7.83\u00d710\u22126 for the 135 bp deletion and p=3.64\u00d710\u22124 for the 17 bp deletion; Figure 6d), confirming the regulatory element\u2019s repressor activity. Consistent with our computational predictions that rs9920291 perturbs HOXD13 binding, we found that overexpression of HOXD13 in T/C-28a2 cells significantly upregulated CHSY1 expression (p=1.63\u00d710\u22125; Figure 6e,Figure 6\u2014figure supplement 1).\n\nWe also highlight a previously identified height-associated variant (rs4911178) at the GDF5 locus, which resides in an ATAC-seq peak active in femoral growth plates (Figure 6\u2014figure supplement 2). We have shown in separate work that the underlying enhancer drives GDF5 expression in growth plates and that rs4911178 has allele-specific activity(Capellini et al., 2017). Thus, our approach of integrating genetic and growth plate epigenetic data has the ability to identify previously discovered cis-regulatory targets that mediate human height variation.\n\n### Motif analysis of height variants that reside within distal femur ATAC-seq peaks\n\nTo expand upon our understanding of transcription factor binding at ATAC-seq open chromatin regions, we performed a series of motif enrichment analyses using HOMER (see Materials and methods). First, we performed a de novo motif analysis on the union of distal and proximal femoral ATAC-seq peaks in mouse to identify enriched transcription-factor-binding motifs. We identified a number of highly enriched motifs relevant to chondrogenesis and other skeletal developmental processes, including Atf3 (James et al., 2006), Msx2 (Amano et al., 2008), Pbx1 (Selleri et al., 2001), and Ctcf (Jerkovi\u0107 et al., 2017) (Figure 7a, Supplementary file 8, sheet 1). We performed a similar analysis on the liftover human ATAC-seq regions and found enrichments for a similar set of motifs (Figure 7a, Supplementary file 8, sheet 2).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/29329/elife-29329-fig7-v2.jpg)\n\n**Figure 7.:** (A) Selected enriched motifs within mouse femoral ATAC-seq open chromatin regions. These motifs were also found following liftover of the peaks to the human genome (see Supplementary file 8, sheets 1 and 2). (B) Histogram showing distribution of log-odds motif scores of CTCF-disruption for height GWAS variants within ATAC-seq regions. Negative values indicate a disruptive effect of the variant while positive values indicate a 'conservation' of the motif hit by the variant. (C) Histogram of number of variants predicted to disrupt CTCF motifs within random subsamples of variants. Dotted line indicates number of CTCF-disrupting variants observed in the height GWAS variants overlapping ATAC-seq regions (n\u00a0=\u00a078, p<0.01). (D) An example of a variant (rs12529733) that overlaps ATAC-seq peaks and is predicted to alter CTCF binding. Features in the figure are the same as described in Figure 6A.\n\nWe next characterized the effect of height GWAS variants that intersect with these motifs within ATAC-seq peaks. Further characterization of the GWAS variants within CTCF motifs indicated a tendency toward disruptive effects (Figure 7b). Comparing the height GWAS variants intersecting ATAC-seq peaks to 500 sets of random GWAS variants revealed an enrichment for variants that are predicted to impact CTCF-binding (p<0.01, z-score: 6.01, Figure 7c) (see Materials and methods). An example of a variant within a CTCF motif is shown in Figure 7d. Additionally, we detected a strong enrichment of height GWAS variants overlapping predicted PBX1 motifs within ATAC-seq regions, when compared to height GWAS variants across the genome (adjusted p\u00a0value=1.91\u00d710\u2212108, Supplementary file 9; see Materials and methods).\n\n## Discussion\n\nLike many anthropometric traits, height is highly heritable and influenced by a large number of distinct genetic inputs that influence the development and/or growth of a number of tissues (Visscher et al., 2010). Of these tissues, the growth plate plays a key role in determining overall height. Despite decades of research on chondrocyte growth plate biology, we have been limited in our understanding of how height GWAS variants\u2014most of which are non-coding\u2014act in the growth plate to influence height. This is due in part to the paucity of epigenetic data related to the regulatory landscape of the growth plate, as these datasets have been technically challenging to generate. Here, we leveraged a new method (ATAC-seq) (Buenrostro et al., 2015, 2013) to overcome previous technical challenges and reveal the open chromatin regulatory landscape of growth plate chondrocytes. We then analyzed height GWAS data in the context of the femur growth plate epigenetic landscape to gain insight into how height GWAS variants act at the growth plate.\n\nOur analyses revealed that ATAC-seq datasets generated from mouse growth plate chondrocytes overlap previously identified signals of chondrocyte biology in the mouse, as well as in humans. The ATAC-seq peaks reside near genes enriched for human phenotypes related to skeletal biology, such as \u2018metaphyseal widening.\u2019 These peaks also reside near genes with known roles in chondrocyte biology and include biological processes such as \u2018cartilage condensation\u2019 and \u2018chondrocyte proliferation.\u2019 We also show that our open chromatin profiles overlap quite faithfully with locations of active regulatory enhancers and Sox9-binding sites as assessed using ChIP-seq on mouse rib chondrocytes (Ohba et al., 2015). Additionally, our datasets overlap with evidence of regulatory control during chondrogenesis and human limb embryogenesis (Cotney et al., 2013; Herlofsen et al., 2013; Kundaje et al., 2015). These findings indicate that general aspects of chondrocyte regulation, in part shared between humans and mice, are captured by our ATAC-seq growth plate datasets. While we note that appropriate human datasets generated from growth plate chondrocytes are still unavailable and that there is evidence of substantial functional divergence in the genic and non-coding usage in cell types between species (Bernstein and ENCODE Project Consortium, 2012), the strong overlap between our mouse ATAC-seq data and human embryonic limb and human BMDCs suggests considerable conservation in the regulatory profiles at the growth plate.\n\nWhile our datasets capture aspects of general chondrocyte biology, we also found that ATAC-seq peaks acquired on femoral tissues show enrichment in human phenotypes related to the anatomy of femur. This finding points to a fine-grained, modularized control of skeletal element-specific biology. This is also supported by our independent identification of a number of previously published long bone growth plate chondrocyte enhancers in mice and humans, as well as the growing evidence that a number of important skeletal development genes, such as Bmp5 (Guenther et al., 2015), Gdf6 (Mortlock et al., 2003; Indjeian et al., 2016), and Gdf5 (Capellini et al., 2017; Chen et al., 2016) have conserved modularized cis-regulatory architectures. As height is encoded by a number of genetic inputs, undoubtedly variants that influence general, as well as element-specific regulatory enhancers (e.g. tibia versus femur), will be important factors shaping height variation in humans.\n\nGiven that over 80% of GWAS height loci are non-coding, our study demonstrates that height GWAS variants are significantly enriched in growth plate chondrocyte regulatory regions and that the majority reside in intergenic portions of the genome. Importantly, this enrichment of height GWAS loci was not observed nearly as strongly in other chondrocyte or limb bud tissues, which suggests that our dataset is capturing functional genetic variation influencing height that is not captured by other existing datasets. No enrichment was observed for DNaseI hypersensitivity sites from mouse brain, liver, or lung, which suggests that our enrichment with height GWAS variants is tissue-specific and also not due to an artifact from the liftover process from mouse to human. These ATAC-seq peaks overlapping height GWAS variants are enriched for nearby differentially expressed growth plate genes. GWAS results for other traits/diseases that are not clearly related to growth/height did not show enrichment at the ATAC-seq peaks, demonstrating that the ATAC-seq peaks are specifically capturing growth/height biology. Finally, our motif analysis additionally revealed that a number of these human height variants may alter the binding of transcription factors with important roles in chondrogenesis and gene regulatory processes.\n\nCombining our statistical fine-mapping and functional fine-mapping has allowed us to narrow down to a much smaller subset of putatively causal variants for downstream functional testing. As an example, one putatively causal variant (rs9920291) resides in the Chondroitin Sulfate Synthase 1 (CHSY1) locus. Human mutations in CHSY1 result in Temtamy preaxial brachydactyly syndrome, characterized by short stature, preaxial brachydactyly, and hyperphalangism of digits 1\u20133 (45, 46), as well as a number of additional soft and hard tissue disorders. rs9920291 is in the fine-mapped credible set, resides in regulatory elements active in human adult chondrocytes and embryonic limb tissues, and displays evidence of binding by Sox9 in mouse chondrocytes. rs9920291 additionally modifies a critical nucleotide (C to T) and disrupts the experimentally\u00a0determined in vitro binding motif of HOXD13, a homeodomain transcription factor that is expressed in chondrocytes (Kuss et al., 2014; Reno et al., 2016) and has known roles in skeletal development (Johnson and Tabin, 1997). We performed extensive experimental characterization of rs9920291 at the CHSY1 locus. We demonstrated that rs9920291 displays allelic regulatory activity in human chondrocyte cell lines. We also deleted the regulatory region surrounding rs9920291 using CRISPR-Cas9 and demonstrated that these deletions alter CHSY1 expression. Thus, our results elucidate how common regulatory variation at this locus influences height by modulating CHSY1 expression. Height, given that it is generally not a cell-intrinsic phenotype, has traditionally not been conducive to functional experimentation. Our results highlight how we can pinpoint likely causal variants and mechanisms to make experimentation more tractable for a challenging phenotype such as height. To our knowledge, along with GDF5, this is the only other height GWAS locus with functional validation (Capellini et al., 2017).\n\nA number of other variants, listed in the browsable Supplementary file 6, are available for functional testing. When more extensive height GWAS data (ideally imputed to a dense reference panel) are generated and more sophisticated fine-mapping methods are developed, additional evidence of enrichment for fine-mapped variants may be revealed using our approach. When these experiments are combined with high-throughput functional assays to test variant functionality, a more refined picture of height biology will emerge.\n\n## Materials and methods\n\n### ATAC-seq methods\n\nAll experiments were performed following protocols approved by the Harvard University IACUC committee. Timed matings were established between FVB mice, and pregnant females were euthanized at E15.5 in order to acquire embryonic long bone growth plates. Embryos were dissected in PBS1X on ice under a dissection scope and the proximal and distal growth zones of the right and left femur were stripped clear of soft tissues. Each proximal or distal cartilaginous end was then micro-dissected from the bony diaphysis (Figure 1) and separately pooled from a single litter, consisting on average of eight animals. Two biological replicates were collected in line with previous ATAC-seq studies (Gehrke et al., 2015). The samples were collected in micro-centrifuge tubes containing 200 ul 5% FBS/DMEM. To generate a single-cell chondrocyte suspension, each pooled sample was then subjected to 1% Collagenase II (VWR 80056\u2013222,\u00a0Radnor,\u00a0Pennsylavania) digestion for 2 hr at 37\u00b0C rocking, mixing every 30 min. After placing on ice, samples were filtered using a micro-centrifuge filter set-up by gently mashing the residual tissues through the filter followed by rinsing with 5% FBS/DMEM. Samples were then spun down at 500 g at 4\u00b0C for 5 min. We next performed cell counting methods using trypan blue and a hemocytometer and performed subsequent ATAC-seq steps on those samples that had cell death rates well below 25%. On average we acquired 500,000\u20131,000,000 living cells per harvest. Next, cells were re-suspended in concentrations of 50,000 cells in 1x PBS. Cell samples then subjected to the ATAC-seq protocol as described in Buenrostro et al., 2015Buenrostro et al., 2015, modifying the protocol by using 2 \u00b5l of transposase per reaction. The transposase reaction product was then purified using the Omega MicroElute DNA Clean Up Kit following manufacturers protocols, eluted in 10 \u00b5l of warmed ddH20, and stored at \u221220\u00b0C.\n\nNext, samples were subjected to PCR amplification and barcoding following Buenrostro et al., 2015Buenrostro et al., 2015. All primers used in this step are listed in Supplementary file 1. Ten microliters of transposed DNA were then placed in a reaction containing NEBNext High-Fidelity PCR Master Mix, ddH20, and primers. After amplification, samples were transferred to micro-centrifuge tubes and subjected to the OMEGA Bead Purification Protocol following manufacturers protocol. The samples were eluted in 30 \u00b5l of TE, run on a nanodrop, diluted to 5 ng/\u00b5l and run on a bioanalyzer. Prior to sequencing sample concentrations were determined using the KAPA Library Quantification Complete Kit (KK4824). Samples were then sent out to the Harvard University Bauer Core Facility for sequencing on one lane of the Illumina NextSeq 500 (see Supplementary file 1).\n\nSequencing yielded approximately 400 million reads per lane and an average of 100 million per sample. Quality control statistics are presented in Supplementary file 1. Sequenced reads were next aligned to the mouse reference mm10 genome assembly using Bowtie2 (Langmead and Salzberg, 2012). Duplicated reads were removed and significant peaks determined by using MACS2 software (version 2.1.0) (Johnson and Tabin, 1997). Peaks were assessed for reproducibility between biological replicates using the IDR statistical test (Li et al., 2011) at various statistical cut-offs, with an IDR threshold of\u00a0<0.05 selected to define reproducible peaks for all subsequent analyses. Datasets for other IDR score thresholds are available upon request and when used in all analyses show similar statistical enrichments. Intersections between proximal and distal femur peaks were done with IDR-filtered narrow peak files, with the proximal/distal-common set generated by merging overlapping peaks. Annotations of the narrow peak files generated on all datasets were made using HOMER annotatePeaks.pl (http://homer.salk.edu/homer/motif/).\n\nRaw sequencing fastq files and processed peak bed files have been deposited on NCBI GEO (GSE100585).\n\n### GREAT analyses\n\nGREAT (Genomic Regions Enrichment of Annotations Tool) (McLean et al., 2010) identifies curated gene sets that display enrichment near regulatory elements. The software first identifies likely target genes of each regulatory element based on distance. GREAT then tests the enrichment of these genes localized near regulatory elements in curated gene sets that reflect pathways and molecular processes. To increase the specificity of our results, we removed peaks that were also seen in ATAC-seq from the mouse brain. ATAC-seq results were then lifted over to hg19 for analysis. We used the \u2018Significant By Region-based Binomial view\u2019; otherwise, all default input parameters and output display settings available at the GREAT website (http://great.stanford.edu/) were used. GREAT v3.0.0 was used.\n\n### Additional epigenetic datasets\n\nMouse chondrocyte data: ChIP-seq profiles Sox9 binding in mouse rib chondrocytes was obtained from Ohba et al. (2015). We also obtained ChIP-seq of RNA Pol II, H3K4me2, H3K4me3, H3K27ac, p300 and H3K27me3 in mouse chondrocytes from Ohba et al. (2015).\n\nHuman data: H3K27ac ChIP-seq of E47 human limb buds that are shared with mouse was obtained from Cotney et al., 2013 (Cotney et al., 2013). H3K27ac ChIP-seq of human adult cultured BMDCs was obtained from http://egg2.wustl.edu/roadmap/web_portal/processed_data.html (Herlofsen et al., 2013; Kundaje et al., 2015). The consolidated epigenome BroadPeak file was used.\n\nMouse ENCODE data: DNA-seq data were downloaded from the mouse ENCODE project (Yue et al., 2014). All samples were from Mus musculus C57BL/6 and included brain male embryo (14.5 days) (ENCSR000COE), liver male adult (8 weeks) (ENCSR000CNI), and lung male adult (8 weeks) (ENCSR000CNM). Processed NarrowPeak bed files were downloaded for each tissue and then lifted over to hg19 as described above.\n\n### Epigenetic intersection analyses\n\nAll intersection analyses of ATAC-seq peaks with GWAS loci, genes, or ChIP-seq peaks were performed using BEDTools v2.18 (Quinlan and Hall, 2010) and custom R scripts (R version 3.1.1)\u00a0(see Source code 1). For overlaps of genes with GWAS loci, an overlap was called for a given height GWAS locus if the gene\u2019s transcriptional boundaries were within 100 kb of any SNP in the locus (defined as r2\u00a0>0.5 to lead SNP).\n\nFor overlap of ChIP-seq datasets, any overlap (>=1 bp) was considered to represent the same feature. To evaluate the significance of overlap, a permutation-based procedure was implemented in the R package regioneR (Gel et al., 2016). We used the \u2018circularRandomizeRegions\u2019 function to generate random permutations. In this function, each chromosome is \u2018circularized\u2019, and the peaks bed file is shifted at random along the circularized chromosome and evaluated for overlap. We used 1000 permutations to calculate the empiric p\u00a0value.\n\n### GoShifter analysis\n\nGoShifter v0.2 was used to evaluate the statistical enrichment of the overlap between height GWAS loci and ATAC-seq peaks (or other epigenetic peaks) (Trynka et al., 2015). The European (EUR) subset of 1000 Genomes Phase 3 (Auton et al., 2015) was used to identify proxy SNPs and calculate LD. An LD cutoff of r2\u00a0>0.5 to the index SNP was used. A window size of 100 kb was used to find LD SNPs (\u2018window\u2019 option). All other parameters were set to the software default. 100,000 permutations were run. GoShifter analyses for additional traits/diseases were performed in the same fashion.\n\n### Generation of matched GWAS loci\n\nSNPSNAP (Pers et al., 2015) was used to generate matched loci for the height GWAS loci. The European (EUR) subset of 1000 Genomes Phase 3 (Auton et al., 2015) was used to identify proxy SNPs and calculate LD. Loci were defined as variants with r2\u00a0>\u00a00.5 to the index SNP. Loci were matched using default criteria: MAF\u00a0\u00b1\u00a05%, gene density\u00a0\u00b1\u00a050%, distance to nearest gene\u00a0\u00b150% and LD buddies\u00a0\u00b1\u00a050%. SNPSNAP was able to generate matched gene sets for 676 out of the 697 loci from Wood et al. (2014). 1000 matched sets of random GWAS loci were generated.\n\n### Differentially expressed growth plate genes\n\nA list of 427 differentially expressed mouse genes was downloaded from Lui et al. (2012). These 427 differentially expressed genes were determined in the Lui et al. (2012) paper based on meeting two of three criteria: (1) spatial regulation in the growth plate, (2) temporal regulation during growth plate formation, and/or (3) specific expression in the growth plate (as compared to other tissues such as the lung, kidney, heart). Orthologous human genes and their respective positions were identified using Ensembl Biomart (Kinsella et al., 2011). The \u2018Ensembl Genes 86\u2019 database was used.\n\n### eQTL overlap analysis\n\nUsing the set of 427 differentially expressed growth plate genes (see above), we identified 157 genes that were also genes for cis-eQTLs in whole blood (FDR\u00a0<\u00a00.05) as identified by Westra et al. (2013). For each of these 157 eQTL genes, the corresponding eQTL variant with the strongest p\u00a0value was used. Using this set of eQTL variants, GoShifter was run as described above to test for enrichment at ATAC-seq peaks.\n\n### GTEx data\n\nThe Genotype-Tissue Expression (GTEx) Project (Lonsdale J, GTEx Consortium, 2013) was supported by the Common Fund of the Office of the Director of the National Institutes of Health, and by NCI, NHGRI, NHLBI, NIDA, NIMH, and NINDS. The data used for the analyses described in this manuscript were obtained from the GTEx Portal on 10/27/2017.\n\n### Motif analysis\n\nATAC-seq peak centers from proximal/distal tissues were aggregated and padded outwards to a fixed length of 200 bp (based on the distribution of ATAC-seq peak sizes). HOMER (Jerkovi\u0107 et al., 2017) de novo motif analysis was performed for the sequence set utilizing a 10x random shuffling as a background set. De novo motifs were compared to a vertebrate motif library provided by HOMER, which includes the JASPAR database (Visscher et al., 2010), with matches scored using Pearson\u2019s correlation coefficient of vectorized motif matrices, with neutral frequencies (0.25) substituted for non-overlapping positions.\n\nLifted over human ATAC-seq peaks were then intersected with height GWAS variants from Wood et al. (2014). Variants were characterized for selected motifs which appeared in both the mm10 and hg19 de\u00a0novo motifs using motifbreakR (Coetzee et al., 2015). Motif matches were scored using log-odds scoring (with 0.25 A/C/G/T background frequencies) for both reference and mutated sequences. Effects on position-weighted matrix (PWM) scoring were calculated as differences between the log-odds score of reference and mutant motif hits, with negative differences representing a disrupted motif. To assess enrichment for CTCF-disrupting variants in the ATAC-intersected variant set, 500 randomly\u00a0sampled subsets (n\u00a0=\u00a0928) of the height GWAS variants (excluding those intersecting ATAC-seq peaks) were generated and counted for CTCF-disrupting variants. Counts were standardized and statistical significance was assessed using a continuous distribution function of the standard normal distribution.\n\nTo assess enrichment of predicted transcription factor binding near variants intersecting ATAC-seq peaks, a set of hg19 DNA sequences was first constructed using 30 bp windows centered on each variant, generating an ATAC-intersected subset and whole GWAS superset. A utility from HOMER (findmotifs.pl) was then used to scan this sequence set using its provided vertebrate motif library to search for motif hits. Motifs from JASPAR 2016 were filtered (386 motifs) and counted within each of the two sets. Hypergeometric tests were performed for all motifs using Benjamini-Hochberg FDR correction (Benjamini and Hochberg, 1995).\n\n### Expression plasmids\n\nCRISPR-Cas9 PX458 vector was obtained from Addgene\u00a0(Cambridge,\u00a0Massachusetts). pGL4.23 luciferase and pGL4.74 renilla vectors were acquired from Promega\u00a0(Madison,\u00a0Wisconsin). Plasmids encoding HOXD13-FLAG and HOXD13-HA were generously gifted from Dr. Vincenzo Zappavigna (University of Modena and Reggio Emilia) (Caronia et al., 2003).\n\n### Cell lines and culture conditions\n\nHuman embryonic kidney (HEK-293FT) cells were acquired from Dr. Pardis Sabeti (Harvard University and Broad Institute). T/C-28a2 human chondrocyte cells were acquired from Dr. Li Zeng (Tufts University) courtesy of Dr. Mary Goldring (The Hospital for Special Surgery). Both cell lines were cultured at 5% CO2 at 37\u00b0C in Dulbecco's Modified Eagle's Medium (DMEM), 10% fetal bovine serum (FBS), and 1% penicillin-streptomycin (P/S). Media was replaced every 2\u20133 days and the cells were sub-cultured every 5 days.\n\n### CRISPR-Cas9 targeting at the CHSY1 regulatory element\n\nAll guide RNAs surrounding the human CHSY1 regulatory element or rs9920291 were designed using MIT CRISPR Tools (http://crispr.mit.edu), synthesized by Integrated DNA Technologies, Inc (Coralville, Iowa), and cloned into the PX458 vector following published protocols (Ran et al., 2013). The sequence of all sgRNAs are listed in Supplementary file 10 and their locations with respect to the targeted CHSY1 regulatory element and rs9920291 are found in Figure 6\u2014figure supplement 1. Guide RNAs were initially tested for ability to induce efficient deletions of the human element in cultured HEK-293FT cells. After two days of culture at 37\u00b0C, transfected HEK-293FT cells were examined under a GFP-microscope to verify successful transfection and GFP expression. DNA was then extracted using E.Z.N.A Tissue DNA Kit, and the CHSY1 regulatory element region was amplified using PCR and primers surrounding the guide RNA design sites (Primers: \u2018rs9920291 Forward\u2019 and \u2018rs9920291 Reverse\u2019, Supplementary file 10). Amplification products were isolated from 1% agarose gels (E.Z.N.A Gel Extraction Kit) and Sanger sequenced to verify deletions of various sizes (see below).\n\nAfter confirmation that sgRNAs worked in HEK-293FT cells, we performed in vitro deletion in the T/C-28a2 chondrocyte cell line (Kokenyesi et al., 2000; Finger et al., 2003). The same sgRNAs were used as above. T/C-28a2 cells were maintained in DMEM (Gibco,\u00a0Gaithersburg,\u00a0Maryland) supplied with 10% FBS (Gibco) and 1% Pen/Strep (0.025%), and seeded in a six-well plate 1 day prior to transfection. After culturing at 37\u00b0C, we scanned cells under a GFP-microscope to verify successful transfection efficiency (i.e.,>70% of cells) and GFP expression (N\u00a0=\u00a03). DNA was then extracted using E.Z.N.A Tissue DNA Kit, and the CHSY1 regulatory element region was amplified using PCR primers surrounding the guide RNA design sites (MiSeq Primers Forward and MiSeq Primers Reverse, Supplementary file 10). Amplification products were isolated from 1% agarose gels (E.Z.N.A Gel Extraction Kit). Mi-Seq sequencing at the MGH CCIB DNA Core was used to verify successful targeting of the larger CHSY1 regulatory region (hg19: chr15:101,749,730-101,749,865) with a modification efficiency of approximately 10% and smaller CHSY1 regulatory region around rs9920291 (hg19: chr15:101,749,797\u2013101,749,813) with a modification efficiency of approximately 8.5%. RNA was also extracted from control and CRISPR-Cas9 targeted T/C-28a2 cells. RNA was DNase-treated and converted to cDNA for qPCR (see below).\n\n### cDNA synthesis and qRT-PCR analysis\n\nTotal RNA was extracted from HEK-293FT and T/C-28a2 cells and prepared using the Trizol Reagent (Thermo Fisher Scientific, Springfield Township, New Jersey) and Direct-zolTM RNA Miniprep kit (ZYMO). Three micrograms of total RNA were used to synthesize first-strand cDNA using SuperScript III First-Strand Synthesis System (Thermo Fisher Scientific). qRT-PCR analysis was then performed with specific primers and Applied Biosystems Power SYBR master mix (Thermo Fisher Scientific) with GAPDH as a reference gene. Primers used for qRT-PCR are listed in Supplementary file 10.\n\n### Cloning, construct preparation, in vitro luciferase reporter and overexpression assays\n\nPrior to in vitro transfection of CHSY1 regulatory sequences into HEK-293FT and T/C-28a2 cells (see below), primers containing KpnI/HindIII linker sequences were used to amplify the putative regulatory element surrounding rs9920291. (see above and Supplementary file 10). The PCR protocol was initiated at 98\u00b0C for 30 s, followed by 34 cycles at 98\u00b0C for 20 s, 60\u00b0C for 20 s, and 72\u00b0C for 30 s, and then followed by a 72\u00b0C for 5 min final extension. Coriell (Camden, New Jersey) sample NA12286 was used to amplify the region containing the reference allele of rs9920291 and NA19119 was used to amplify the region containing the variant allele of rs9920291. Each amplicon was then ligated into a KpnI/HindIII containing pGL4.23 firefly luciferase vector using NEBuffer 2.1 (NEB B7202S) for digestion and T4 DNA Ligase (NEB M0202S) for ligation according to manufacturer's protocols (New England Biolabs, Beverly, Massachusetts). Ligates for constructs containing inserted or non-inserted (\u2018empty\u2019) sequence were next transformed into DH10B cells, and streaked on ampicillin plates. Single colonies were then picked, PCR screened, sequenced, and purified using E.Z.N.A. Endo-Free Plasmid DNA Maxi Kits (Omega D6926-03). The PCR protocol used for screening is listed above. Sanger sequencing was used to confirm the orientation as well as sequence identity of each insert as well as the entire pGL4.23 firefly vector. pGL4.74 renilla vector was similarly transformed, amplified, purified and sequence verified. Prior to HOXD13 over-expression experiments, HOXD13 constructs were transformed into DH10B cells, streaked on ampicillin plates, individual colonies were grown and purified via Endo-Free Plasmid DNA Maxi Kits (Omega D6926-03). Purified plasmids underwent diagnostic digest and sequence verification.\n\nHEK-293FT cells and T/C-28a2 chondrocytes were passaged using standard conditions (see above) prior to reporter gene transfection and HOXD13 over-expression experiments. Prior to transfection, cells were first cultured in DMEM with 10% FBS for 24 hr in 96-well dishes at a seeding density of 3 \u00d7 104 cells/well. The volume of media per well was then brought to 100 \u00b5l. For luciferase reporter experiments, cells were then transiently transfected with 100 ng firefly luciferase reporter vector or empty pGL4.23 luciferase vector, along with 5ng pGL4.74 renilla vector. Transfections were performed using Lipofectamine 2000 (Invitrogen 11668\u2013019) at a Lipofectamine:DNA ratio of 4:1 according to manufacturer instructions. Luciferase activity was measured 48 hr after transfection using the 96-welll Dual-Glo Luciferase Assay System (Promega E2940) following manufacturer protocols on a SpectraMax L Microplate Reader (Molecular Devices; Cat# SpectraMax L Config) with a 1 min dark adapt, 5 s integration, and max range settings. For cell culture experiments, to compare expression between the reference and alternate allele CHSY1 constructs (Figure 6b), we performed at least four independent transfection experiments at each concentration containing eight technical replicates (i.e. individual wells of a 96-well plate) per construct. We first normalized each firefly luciferase value per well by its corresponding renilla luciferase value per well, and then compared the mean expression of the reference allele construct (normalized by empty vector) to that of the mean expression of the alternate allele construct (normalized by empty vector) using a two-sample directional Student's t-test. For HOXD13 overexpression experiments, HEK-293FT and T/C-28a2 cells were transfected as above but with 0, 2 and 4 \u00b5g of HOXD13 expression or control constructs (N\u00a0=\u00a03 biological replicates per condition), and after 24, 48, and 72 hr RNA was collected for qRT-PCR experiments (see above).\n\n### CHSY1 allelic skew analyses\n\nBoth HEK-293FT cells and T/C-28a2 chondrocytes were screened using Sanger sequencing to identify genotype rs9920291. Sanger sequencing results confirmed preliminary findings using the HEK-293 browser (http://hek293genome.org/v2/) that HEK-293FT cells were heterozygous at rs9920291, unlike T/C-28a2 cells which were homozygous for the reference C allele. Thus, only HEK-293FT cells could be used for allele-specific expression. Next, using the HEK-293 browser with follow-up verification using Sanger sequencing, we identified two heterozygous transcript variants (exon 3 coding variant [rs28364839] and 3\u2019UTR variant [rs11433]).\n\nFor allelic skew analyses on untreated HEK-293FT samples, five independent biological replicates were grown and harvested. RNA was isolated separately from each sample using the Trizol Reagent (15596\u2013026, Ambion by Life Technologies,\u00a0Norwalk,\u00a0Connecticut) and the RNA Clean and ConcentratorTM-5 Kit (supplied with DNase I, Zymo). Samples were then run on a bioanalyzer to achieve RNA Integrity Numbers greater than 8. These RNA samples were then reverse transcribed using a SuperScript IV First Strand cDNA Synthesis Reaction kit (18090010, Life Technologies) following manufacturer\u2019s recommendations.\n\ncDNA samples were then sent to EpigenDx for allelic skew analysis assay design and execution. SNPs in the coding regions of CHSY1 (rs11433 and rs28364839), were validated by EpigenDx\u00a0(Hopkinton,\u00a0Massachusetts). Pyrosequencing for SNP genotyping (PSQ H96A, Qiagen Pyrosequencing) is a real-time sequencing-based DNA analysis that quantitatively determines the genotypes of single or multiple mutations in a single reaction. Briefly, 1 ng of sample cDNA was used for PCR amplification. PCR was performed using 10X PCR buffer (Qiagen Inc.,\u00a0Maryland) at 3.0 mM MgCl2, 200M of each dNTP, 0.2 \u00b5M each of the forward and reverse primers (available through EpigenDx), and 0.75 U of HotStar DNA polymerase (Qiagen Inc.), per 30 \u00b5l reaction. PCR cycling conditions were: 94\u00b0C 15 min; 45 cycles of 94\u00b0C 30 s; 60\u00b0C 30 s; 72\u00b0C 30 s; 72\u00b0C 5 min. One of the PCR primer pairs was biotinylated to convert the PCR product to single-stranded DNA sequencing templates using streptavidin beads and the PyroMark Q96 Vacuum Workstation. Ten microliters of the PCR products were bound to streptavidin beads and the single strand containing the biotinylated primer was isolated and combined with a specific sequencing primer (available through EpigenDx). The primed single stranded DNA was sequenced using the Pyrosequencing PSQ96 HS System (Qiagen Pyrosequencing) following the manufacturer\u2019s instructions (Qiagen Pyrosequencing). The genotypes of each sample were analyzed using Q96 software AQ module (Qiagen Pyrosequencing). Pyrosequencing results for each CHSY1 exonic or 3\u2019UTR SNP were used to calculate the allelic ratios in the heterozygous state.\n\n### Statistical analysis\n\nFor regulatory element transfection experiments, CRISPR-Cas9 deletion experiments, and HOXD13 over-expression experiments, the means\u00a0\u00b1\u00a0SEM of multiple independent measurements were calculated. The unpaired two-tailed Student\u2019s t test was used to determine the significance of differences between means. P\u00a0values smaller than 0.05 (*p<0.05, **p<0.01, ***p<0.001) were considered to be statistical significant.\n\n### UniProbe analysis\n\nTo find upstream transcription factors (TF) predicted to bind at rs9920291 near CHYS1 we used UniProbe (Hume et al., 2015). UniProbe (http://the_brain.bwh.harvard.edu/uniprobe/about.php) is built on experimental measurements of binding affinities between large numbers of expressed TFs and all possible 8-mer target oligonucleotides (Hume et al., 2015). For two 15 base-pair sequences, each centered at rs9920291 but different only at the C/T variant (Reference [REF] TGCTAAACAAAAATA and Alternate [ALT] TGCTAAATAAAAATA), we imported each sequence separately into the \u2018Search for TF Binding Sites\u2019 window on the UniProbe browser (http://the_brain.bwh.harvard.edu/uniprobe/) with the following conditions: Score Threshold: 0.4; Species: Homo sapiens. We acquired 18 TF predictions for REF and 61 TF predictions for ALT. We next imported the results into Supplementary file 7 (sheet 1: REF TGCTAAACAAAAATA and sheet 2: ALT TGCTAAATAAAAATA) and performed an intersection (sheet 3: REF (red) vs. ALT (blue)) to identify those TF-binding preferences that were reduced/gained between the two sequences. For a TF-binding site to be considered reduced or gained, the site must exhibit an enrichment score change of greater than at least 0.10, which corresponded to significant changes in z-score (e.g., Figure 6a). To identify the change in HOXD13 binding affinity, we re-ran UniProbe on the REF sequence but at a lower enrichment score of E\u00a0>=\u00a00.2. This yielded 341 TF predictions (sheet 4), which were then compared to the 61 TF predictions generated at E\u00a0>=\u00a00.4 (sheet 5). Finally, to generate the z-score, we downloaded HOXD13 experiment information from UniProbe (http://the_brain.bwh.harvard.edu/uniprobe/browse.php) and identified the corresponding z-score for each 8-mer.\n\nLists of potential upstream regulators exhibiting marked reduction/gain in binding affinity were then screened using expression and phenotypic data to identify those TFs also expressed or functionally required in growth plates. To carry out this analysis, we used data in VisiGene (http://genome.ucsc.edu/cgi-bin/hgVisigene), Eurexpress (http://www.eurexpress.org/ee/), Genepaint (http://www.genepaint.org/Frameset.html), and the Mouse Genome Informatics expression and phenotypic databases (http://www.informatics.jax.org). HOXD13 met the above criteria. HOXD13 had enrichment scores below the recommended UniProbe threshold of 0.4 for the REF sequence but much higher (above 0.4) for the ALT sequence, and this corresponded to a significant change in z-score (Figure 6a).\n",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "bb031013-2970-4bf3-876b-22ac054dcf4d",
+      "submission_id": "225722d6-8617-49d5-a143-c664d82df6d4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Clifford J Rosen, Maine Medical Center Research Institute United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.29329.036](https://doi.org/10.7554/eLife.29329.036)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Epigenetic profiling of growth plate chondrocytes sheds insight into regulatory genetic variation influencing height\" for consideration by eLife. Your article has been favorably evaluated by Mark McCarthy (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nAll the reviewers were enthusiastic about your comprehensive generation of epigenetic data for the growth plate and the potential utilization for future studies on genetic regulatory regions. The ATAC-seq approach and the overlay of GWAS data will provide significant insights into murine and possibly human growth determinants.\n\nThere were three major concerns that need to be addressed before a final decision can be made.\n\nFirst delineation of sex from the E15.5 murine chondrocytes and justification for the E15.5 time point are essential for understanding the framework for growth variants and for future studies by other investigators.\n\nSecond, the manuscript still lacks a strong connection to chondrocyte biology as none of the links established by the data directly address (or explain) chondrocyte proliferation or hypertrophy and genes well known to regulate them positively or negatively (PTHrp, Indian hedgehog, FGFs, IGFs, etc.).\n\nThird, although different genes have been identified as possibly being putative regulatory variants there are no experimental or computational evidence implicating the ATAC-seq peaks in regulating the nearby growth plate genes, nor altering transcriptional regulatory activity.\n\nThese issues underlie a perception that, independent of your Nature Genetics paper, there is a lack in this manuscript of mechanistic evidence that the epigenomic profiles can be linked to functional correlates. For example, there is a suggestion that rs9920291 disrupted HOXD13 binding, but there is no evidence that HOXD13 actually binds this site at the endogenous locus. As computationally predicted TF motifs are prevalent in the genome, it is hard to assess whether this SNP/motif overlap is biologically meaningful. This requirement for a mechanistic/functional connection may require additional work.\n\nThese major points will need to be addressed in the revision along with several other points imbedded in the three reviewers\u2019 comments that have been included below in the comments, and should be considered carefully.\n\nReviewer #1:\n\nIn this paper, Capellini and colleagues utilize a novel method (ATAC-seq) to read the open chromatin regulatory landscape of growth plate chondrocytes in neonatal mice. They were then able to analyze height GWAS data in the context of femur growth to gain new insights into how height GWAS variants act at the growth plate. Briefly they showed that ATAC-seq datasets generated from mouse growth plate chondrocytes overlap with previously identified signals of chondrocyte biology in the mouse, as well as in humans. They identified locations of active regulatory enhancers and Sox9 binding sites as assessed using ChIP seq on mouse rib chondrocytes and provided datasets that overlap with evidence of regulatory control during chondrogenesis and human limb embryogenesis. Their work is a nice supplement to their Nature Genetics paper identifying an ancestral regulatory variant in 'Grow'1 enhancer in mouse limbs that also affects human chondrocyte biology. Finally, the authors detected a variant in the chondroitin sulfate synthase 1 gene which might influence binding of HOXD13, a trans acting regulator of chondrocyte growth.\n\nStrengths: There are several strengths to this paper: First the authors were able to provide very comprehensive data sets on the epigenetic landscape of mouse, and human chondrocytes, an important breakthrough in an otherwise very difficult organ to characterize. Second, they have provided evidence that these regions are critically important for growth of the chondrocyte and thus provide support from previous studies of candidate genes in chondrogenesis such as GDF5, 6, Bmp5 etc. that others have defined. Third they have been able to overlay height GWAS variants that are also significantly enriched in growth plate chondrocyte regulatory regions, particularly for those that are intergenic. Finally, this is state of the art technology in epigenetics; i.e. the use of ATAC methodology, importantly it requires fewer chondrocytes to peruse the chromatin landscape thus breaking new ground.\n\nLimitations: \u2013 there are some concerns that need to be fully addressed:\n\n1) The authors used E15.5 embryos from FVB mice to study the epigenetic regions for growth plate regulation. But inbred strains often exhibit numerous nucleotide variants; since C57BL6J mice are the most frequently utilized strain for in vitro and in vivo chondrocyte (and osteoblast) studies, have the authors determined whether the specific nucleotide sequence in the CHYS1 variant, rs9920291, is also present in B6 mouse chondrocytes?\n\n2) Sex is a major determinant of height particularly early in life and during puberty. The early influences of sex steroids likely begins during late embryonic development; i.e. after E11.5 when SRY is expressed in the males, but not females. It would be important to fully understand the epigenetic landscape in respect to sex differences in vivo. Hence, the embryos should have been typed for sex, and both male and female embryos should be examined to more fully understand the transcriptional regulation of chondrocyte differentiation.\n\n3) Can the authors justify why they did not follow up with functional studies on the CHYS1 variant rs9920291 which they identified as being a cis acting site for HOXD13.\n\n4) Figure 6B of the E15.5 embryo showing the lacZ reporter from the ancestral GROW1 enhancer appears nearly identical to their Nature Genetics paper Figure 4B; Can the authors defend its use in this manuscript? Otherwise it should be deleted.\n\nReviewer #2:\n\nIn this study, the authors have performed epigenetic profiling of active chromatin regions in E15.5 mouse embryo femurs to establish possible links with GWAS variants associated with human height previously described by other groups. The regions were found to positively associate with known genes regulating chondrocyte and skeletal biology, particularly those encoding growth plate transcription factors. These and other data lead the authors to conclude that integration of epigenetic information with genetic association data can identify mechanisms important for human height.\n\nThe study comes from a research group with recognized expertise in genetics and genomics and for important contributions to the field. It also addresses human height that can be severely affected by congenital conditions, thus introducing an element of translational medicine relevance to the work. The extensive data combining epigenetic profiling using ATAT-seq with several bioinformatics and analytical tools provide a wealth of possible links with specific genes and transcriptome data sets from previous studies. Despite these positive assets, the study raises several concerns.\n\nWhile the study is technically strong, it is deficient in skeletal cell and developmental biology, raising questions about the major conclusions reached and specific relevance to human height.\n\nThe growth plate is certainly the key structure determining long bone and vertebral elongation and thus, body height. It is clearly established that the rates of skeletal growth are determined by chondrocyte proliferation (minor contribution) and chondrocyte hypertrophy (major contribution) in the growth plate. It is also well established that different growth plates within the same organism at any given time \"grow\" at very different rates, such as proximal and distal growth plates in radius and ulna. None of the links established by the data presented here directly address (or explain) chondrocyte proliferation or hypertrophy and genes known to regulate them positively or negatively (PTHrp, Indian hedgehog, FGFs, IGFs, etc.). The only links established are to general aspects of chondrocyte and skeletal biology, thus making it very difficult to understand how the links have anything to do with \"height\". The behavior of the growth plate is controlled by intrinsic mechanisms (see above) as well as systemic factors such as growth hormone. Again, none of the links related to this or other systemic cues.\n\nThe authors made use of the proximal and distal portions of E15.5 mouse embryo femur and associated perichondrium as starting material for the epigenetic analysis. The tissues were digested into single cell suspension enzymatically before processing for ATAT-seq. There is no explanation of why this developmental stage was chosen and why both ends of the femur were considered. Also, the lengthy enzymatic digestion could have altered gene expression and chromatin configuration.\n\nTo establish stronger links, the authors considered the most compelling GWAS variants overlapping ATAT-seq peaks, finding 59 variants distributed over 26 loci. The two examples mentioned are CHSY1 and HOXD13 neither of which has established roles in growth plate function. Indeed, most evidence indicates that HOXD13 regulates autopod skeletal patterning and morphogenesis, but not rates of growth.\n\nThe authors make a strong case that the data can provide insights into the meaning and functional relevance of GWAS correlations, but I do not see how they provide any direct insights into what regulates human height. It may be worth considering an overall change in rationale for the study.\n\nReviewer #3:\n\nThe article by Guo et al. describes the epigenetic profiling of mouse growth plate chondrocytes to elucidate potential molecular mechanisms through which genetic variants contribute to human height. The authors perform ATAC-seq profiling to identify open chromatin regions from murine femoral growth plates and demonstrate that femur open chromatin are (i) enriched nearby skeletal development genes, and (ii) enriched for human height GWAS loci, above other epigenomic datasets available from mouse and human. While it has previously been shown that height GWAS loci are enriched nearby musculoskeletal genes (e.g. Figure 3A of Wood et. al 2014), the identification of musculoskeletal regulatory elements possibly affected by height loci is valuable for future studies. The authors proceed to identify height GWAS loci and specific SNPs that overlap femur open chromatin peaks, and provide potential hypotheses for how select SNPs (e.g. rs9920291) may act to influence human height. Unfortunately, despite claiming the identification of \"compelling mechanisms for GWAS variants\" (Abstract), the authors do not provide sufficient experimental or computational evidence in support, except for rs4911178 that references data in Capellini et al. 2017 (PMID 28671685). In summary, the authors present an important epigenomic dataset that can act as a first step for future study of height GWAS SNPs, but do not provide \"strong evidence\" (subsection \u201cKnown and novel targets of human height variants in putative chondrocyte regulatory regions\u201d, first paragraph) for compelling mechanisms at any height GWAS loci beyond referencing their previously published paper.\n\n1) Substantially fewer GWAS loci overlap ATAC-seq peaks when using the fine-mapped 95% credible variants, instead of all SNPs with r2>0.5 (e.g. 192 loci vs. 317 loci, subsection \u201cFine-mapped height variants overlap with femoral growth plate open chromatin regions\u201d and subsection \u201cHuman height variants are enriched in femoral open chromatin regions\u201d, last paragraph; also 26 loci vs. 46 loci, subsection \u201cKnown and novel targets of human height variants in putative chondrocyte regulatory regions\u201d, first paragraph and subsection \u201cA subset of human height variants in femoral open chromatin regions reside near genes differentially expressed in the growth plate\u201d, second paragraph). Given that r2>0.5 is not a strict LD threshold (e.g. Wood et al. 2014 uses r2>0.8 for strict LD), is it still meaningful to report overlap statistics using the r2>0.5 set when the PICS 95% credible set is available?\n\n2) The authors state \"44 different genes have been identified as possibly being modulated by these putative regulatory variants\". However, in the present manuscript the authors do not provide experimental or computational evidence implicating the ATAC-seq peaks in regulating the nearby growth plate genes, and provide limited evidence that any of these overlapping variants can alter transcriptional regulatory activity.\n\n3) Following point #2, and to support the authors' claim of identifying \"prime targets for functional testing\", it would be helpful to know how many GWAS SNP overlaps with femur open chromatin regions the authors believe to be biologically meaningful versus coincidence.\n\n4) Similar to point #2, it is premature to state \"59 variants thus have strong evidence for being potentially causal variants\". For the authors' example of the CHSY1 locus, while there are 4 SNPs in the PICS 95% set that overlap an ATAC-seq peak nearby CHSY1, Supplementary file 6 reveals there are 87 SNPs in the 95% credible set at the CHSY1 locus. Without more evidence, it is difficult to agree with the potential causal variant conclusion.\n\n5) Subsection \u201cKnown and novel targets of human height variants in putative chondrocyte regulatory regions\u201d, first paragraph: The authors suggest rs9920291 disrupts HOXD13 binding, but do not provide evidence that HOXD13 actually binds this site at the endogenous locus. As computationally predicted TF motifs are prevalent in the genome, it is hard to assess whether this SNP/motif overlap is biologically meaningful.\n\n6) Wood et al. (2014) found that height GWAS loci were more likely to be eQTLs (in blood) for genes expressed in cartilage. Did the authors examine whether the 468 credible SNPs overlapping femur open chromatin peaks are enriched for eQTL signals? This analysis may strengthen the authors' mechanistic claims.\n",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d687e1fc-13ab-46d4-b73a-89dd5c297eb0",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C1",
+      "claim": "ATAC-seq was performed on E15.5 mouse proximal and distal femoral growth zones.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to identify open chromatin regions involved in long bone development, we performed ATAC-seq (Buenrostro et al., 2015, 2013) on E15.5 (Theiler Stage 23) mouse proximal and distal femoral growth zones, regions comprised predominately of the growth plate proper, the overlying perichondrium, and the cartilaginous super-structures that dictate adult bony morphology (Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the experimental procedure performed on specific mouse tissues at a defined developmental stage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "a2ad9f80-051f-44e7-a632-06de0b82220b",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C2",
+      "claim": "E15.5 of mouse embryogenesis corresponds to approximately E48-51 (Carnegie Stage 19) of human development.",
+      "claim_type": "EXPLICIT",
+      "source": "This stage of mouse embryogenesis corresponds to approximately E48-51 (Carnegie Stage 19) of human development and reflects a developmental window when the growth plate proper possesses all chondrocyte zones (resting, proliferative, pre-hypertrophic, hypertrophic zone) and is undergoing rapid cell proliferation and differentiation during endochondral ossification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a direct comparison between mouse and human developmental stages based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "40772fba-8def-4fef-bc20-2ac07765e47b",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C3",
+      "claim": "The growth plate at E15.5 possesses all chondrocyte zones (resting, proliferative, pre-hypertrophic, hypertrophic zone).",
+      "claim_type": "EXPLICIT",
+      "source": "This stage of mouse embryogenesis corresponds to approximately E48-51 (Carnegie Stage 19) of human development and reflects a developmental window when the growth plate proper possesses all chondrocyte zones (resting, proliferative, pre-hypertrophic, hypertrophic zone) and is undergoing rapid cell proliferation and differentiation during endochondral ossification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the composition of the growth plate at the studied developmental stage.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "7312f9ac-d428-4313-a2b0-d8bb00e9a0bb",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C4",
+      "claim": "ATAC-seq yielded 28,257 proximal femur peaks and 27,958 distal femur peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach yielded 28,257 proximal femur peaks and 27,958 distal femur peaks, with 23,764 shared peaks, 4493 peaks specific to the proximal femur, and 4194 specific to the distal femur (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific quantitative results from the ATAC-seq experiment, also shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "0614a31c-1b49-4343-be05-7928449f673e",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C5",
+      "claim": "23,764 ATAC-seq peaks are shared between proximal and distal femur samples.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach yielded 28,257 proximal femur peaks and 27,958 distal femur peaks, with 23,764 shared peaks, 4493 peaks specific to the proximal femur, and 4194 specific to the distal femur (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides quantitative overlap data between the two sample types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "9e17120b-8fdd-446a-a841-82c8608b7de9",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C6",
+      "claim": "Proximal femur ATAC-seq peaks span approximately 0.79% of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The proximal and distal peaks span approximately 0.79% and 0.76% of the genome, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the genomic coverage of the identified peaks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "668405a7-8105-4a40-82f8-8862648a948d",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C7",
+      "claim": "Distal femur ATAC-seq peaks span approximately 0.76% of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The proximal and distal peaks span approximately 0.79% and 0.76% of the genome, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the genomic coverage of the identified peaks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "203ba8ba-8be9-4a60-a912-d4efa3e07ceb",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C8",
+      "claim": "ATAC-seq peaks show characteristic enrichment near gene transcriptional start sites and distal intronic and intergenic non-coding sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "We also assessed the genomic distribution of proximal and distal femur ATAC-seq peaks and found a characteristic enrichment near gene transcriptional start sites and more distal intronic and intergenic non-coding sequences (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the genomic distribution pattern of the peaks, supported by Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "ab9f7e1d-0433-41ae-9fe1-b53ac23fa49d",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C9",
+      "claim": "Liftover of mouse femur open chromatin regions to the human genome resulted in 24,805 proximal femur peaks and 24,788 distal femur peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Our liftover resulted in 24,805 proximal femur peaks and 24,788 distal femur peaks, representing approximately 87.7% and 88.6% of sites identified in mouse, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the results of the liftover procedure from mouse to human genome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "903d67b8-c46d-4084-b158-4eebc0911a87",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C10",
+      "claim": "87.7% of proximal femur peaks and 88.6% of distal femur peaks were successfully lifted over to the human genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Our liftover resulted in 24,805 proximal femur peaks and 24,788 distal femur peaks, representing approximately 87.7% and 88.6% of sites identified in mouse, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the percentage of peaks that could be mapped to the human genome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "346c8701-e244-45da-842b-904e370bb533",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C11",
+      "claim": "Sites capable of liftover to human likely reflect relatively conserved genes involved in vertebrate musculoskeletal development.",
+      "claim_type": "EXPLICIT",
+      "source": "These sites that were capable of liftover to human likely reflect relatively conserved genes involved in vertebrate musculoskeletal development (Shubin et al., 1997; Petit et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the liftover results in the context of evolutionary conservation, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "76c3d0da-f130-429c-818c-ce33cf591bcf",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C12",
+      "claim": "The union of proximal and distal lifted-over peaks contained 25,829 peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "The union of the two sets contained 25,829 peaks (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the total number of unique peaks after combining proximal and distal datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "bc7581e5-f1a6-4bf9-88bc-274ca1c704f3",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C13",
+      "claim": "ATAC-seq peaks are enriched near genes with phenotype terms related to skeletal development, chondrogenesis, and long bone skeletal phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "They also yielded phenotype terms related to general skeletal development, chondrogenesis, and long bone skeletal phenotypes, such as 'Metaphyseal widening', 'Abnormality of the femoral epiphyses', and 'Abnormality of the femoral head' (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports GREAT analysis results showing enrichment for skeletal-related phenotypes, shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "0d1170f8-bc58-4a2c-b9d4-98ec8ee19be7",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C14",
+      "claim": "ATAC-seq peaks are enriched for GO Biological Processes such as 'Cartilage condensation', 'Positive regulation of chondrocyte differentiation', and 'Chondrocyte proliferation'.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, GREAT analyses uncovered enrichment for several relevant GO Biological Processes such as 'Cartilage condensation', 'Positive regulation of chondrocyte differentiation', and 'Chondrocyte proliferation' (Supplementary file 2\u20134).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific GO terms enriched near ATAC-seq peaks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "39a31637-cf2b-41d0-ac0d-0b799b4ddab3",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C15",
+      "claim": "86.4% of Class I Sox9 elements overlap with femur ATAC-seq peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, 86.4% of Class I Sox9 elements (i.e. elements clustering near transcriptional start sites of highly expressed non-chondrocyte-specific genes), 44.6% of Class II Sox9 elements (i.e. elements directing chondrocyte-related gene activity through direct Sox9 dimer binding), and 93.8% of Sox9 super-enhancer regions (i.e. enhancer complexes involved in chondrocyte cell identity) overlap with our femur ATAC-seq peaks (p<0.001 for all three sets, Materials and methods, Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports quantitative overlap between Sox9 ChIP-seq data and ATAC-seq peaks with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "20be20dc-aaab-4931-804b-ab57815df6d0",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C16",
+      "claim": "44.6% of Class II Sox9 elements overlap with femur ATAC-seq peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, 86.4% of Class I Sox9 elements (i.e. elements clustering near transcriptional start sites of highly expressed non-chondrocyte-specific genes), 44.6% of Class II Sox9 elements (i.e. elements directing chondrocyte-related gene activity through direct Sox9 dimer binding), and 93.8% of Sox9 super-enhancer regions (i.e. enhancer complexes involved in chondrocyte cell identity) overlap with our femur ATAC-seq peaks (p<0.001 for all three sets, Materials and methods, Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports quantitative overlap between Sox9 ChIP-seq data and ATAC-seq peaks with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "35d2d4d4-223f-4d84-b2e7-ae9c13921dc2",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C17",
+      "claim": "93.8% of Sox9 super-enhancer regions overlap with femur ATAC-seq peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, 86.4% of Class I Sox9 elements (i.e. elements clustering near transcriptional start sites of highly expressed non-chondrocyte-specific genes), 44.6% of Class II Sox9 elements (i.e. elements directing chondrocyte-related gene activity through direct Sox9 dimer binding), and 93.8% of Sox9 super-enhancer regions (i.e. enhancer complexes involved in chondrocyte cell identity) overlap with our femur ATAC-seq peaks (p<0.001 for all three sets, Materials and methods, Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports quantitative overlap between Sox9 ChIP-seq data and ATAC-seq peaks with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "5046db50-1b17-4a9e-abdd-b9783313ff31",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C18",
+      "claim": "85.1% of RNA Pol II transcriptionally active promoters overlap with femur ATAC-seq peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 85.1% of RNA Pol II transcriptionally active promoters, 56.9% of H3K4me2 active promoter sites, 86.7% of H3K4me3 active promoter sites, 87.4% of H3K27ac active enhancer sites, and 59.4% of p300 histone acetyltransferase active enhancer sites overlapped with femur ATAC-seq peaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports quantitative overlap between various histone modifications and ATAC-seq peaks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "88833f28-3926-48bc-a60d-ea1b7cc45ca8",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C19",
+      "claim": "56.9% of H3K4me2 active promoter sites overlap with femur ATAC-seq peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 85.1% of RNA Pol II transcriptionally active promoters, 56.9% of H3K4me2 active promoter sites, 86.7% of H3K4me3 active promoter sites, 87.4% of H3K27ac active enhancer sites, and 59.4% of p300 histone acetyltransferase active enhancer sites overlapped with femur ATAC-seq peaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports quantitative overlap between various histone modifications and ATAC-seq peaks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "a37a3d7f-6bdc-4194-902b-cc25afa613a3",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C20",
+      "claim": "86.7% of H3K4me3 active promoter sites overlap with femur ATAC-seq peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 85.1% of RNA Pol II transcriptionally active promoters, 56.9% of H3K4me2 active promoter sites, 86.7% of H3K4me3 active promoter sites, 87.4% of H3K27ac active enhancer sites, and 59.4% of p300 histone acetyltransferase active enhancer sites overlapped with femur ATAC-seq peaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports quantitative overlap between various histone modifications and ATAC-seq peaks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "49e96c39-bcd1-4198-949b-f90773f523b4",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C21",
+      "claim": "87.4% of H3K27ac active enhancer sites overlap with femur ATAC-seq peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 85.1% of RNA Pol II transcriptionally active promoters, 56.9% of H3K4me2 active promoter sites, 86.7% of H3K4me3 active promoter sites, 87.4% of H3K27ac active enhancer sites, and 59.4% of p300 histone acetyltransferase active enhancer sites overlapped with femur ATAC-seq peaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports quantitative overlap between various histone modifications and ATAC-seq peaks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "c52aac29-660c-48a5-8825-169e31fabd3f",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C22",
+      "claim": "59.4% of p300 histone acetyltransferase active enhancer sites overlap with femur ATAC-seq peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 85.1% of RNA Pol II transcriptionally active promoters, 56.9% of H3K4me2 active promoter sites, 86.7% of H3K4me3 active promoter sites, 87.4% of H3K27ac active enhancer sites, and 59.4% of p300 histone acetyltransferase active enhancer sites overlapped with femur ATAC-seq peaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports quantitative overlap between various histone modifications and ATAC-seq peaks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "9681cfce-220f-401c-9b3c-6e44eb9c8ef8",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C23",
+      "claim": "Only 33.7% of H3K27me3-repressed enhancer sites overlap with femur ATAC-seq signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, our ATAC-seq datasets displayed relatively lower overlap with markers of gene repression; that is, only 33.7% of H3K27me3-repressed enhancer sites overlap with femur ATAC-seq signals (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports lower overlap with repressive histone marks compared to active marks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "590d2f99-f025-49e2-a0b4-ea79267fa0b9",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C24",
+      "claim": "The enrichments of all histone modification sets with ATAC-seq peaks were significant at p<0.001.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on permutation analyses, the enrichments of all these histone modification sets were significant at p<0.001.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports statistical significance of the overlap analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "8e18e4a5-2b98-42ff-84ea-f8eb67cb70a8",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C25",
+      "claim": "45.2% of E47 human limb bud H3K27ac peaks overlap with ATAC-seq peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 45.2% of these E47 human limb bud H3K27ac peaks overlapped with ATAC-seq peaks, indicating that many of our mouse femur ATAC-seq peaks reflect active human limb enhancers involved in chondrogenesis (p<0.001, Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports quantitative overlap with human limb bud data with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "b2625f52-873d-4feb-9b25-9d781c419e85",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C26",
+      "claim": "13.3% of human adult BMDC H3K27ac peaks overlap with mouse distal femur ATAC-seq dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we used an H3K27ac ChIP-seq dataset generated on human adult cultured bone marrow mesenchymal stem-cell-derived chondrocytes (BMDCs) (Herlofsen et al., 2013; Kundaje et al., 2015) and found that 13.3% of human adult BMDC H3K27ac peaks overlapped our mouse distal femur dataset (p<0.001) (Figure 2c), which indicates that our femur ATAC-seq dataset also captures cell-intrinsic properties of chondrogenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports quantitative overlap with human BMDC data with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "069542d6-b143-45b1-acc4-3e0af8977521",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C27",
+      "claim": "ATAC-seq data identified 14 of 26 previously-discovered active regulatory elements near key cartilage genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our ATAC-seq data were also able to identify 14 of 26 previously-discovered active regulatory elements residing near key cartilage genes detected at different time-points and using different assays (e.g. see Figure 2d, Supplementary file 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the ability to recapitulate previously known regulatory elements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "b81ec421-171e-4602-9235-6d84d956fa5e",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C28",
+      "claim": "317 height GWAS loci (approximately 46%) contain at least one variant that overlaps with an ATAC-seq peak.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the 688 height loci, we found that 317 loci (or ~46%) contained at least one variant that overlapped with an ATAC-seq peak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the number and percentage of height GWAS loci overlapping ATAC-seq peaks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "85893e5b-a2f3-48b1-9ab9-f9093d88028b",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C29",
+      "claim": "Height GWAS variants show strong enrichment at ATAC-seq peaks (p=0.0059) using GoShifter analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We found strong enrichments for the ATAC-seq peak set and height GWAS data (p=0.0059) (Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistical enrichment using GoShifter permutation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "a631d66e-ffac-4424-8dd8-ef142f27eca5",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C30",
+      "claim": "Only mouse rib chondrocyte H3K4me2 peaks reached statistical significance (p=0.0237) in GoShifter analysis with height GWAS data.",
+      "claim_type": "EXPLICIT",
+      "source": "Only the mouse rib chondrocyte H3K4me2 peaks reached statistical significance (p=0.0237), and was far less significant than our ATAC-seq data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports comparative GoShifter results for different epigenetic datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "9d2d0569-2f35-489a-9fe9-fa7ab775325a",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C31",
+      "claim": "No enrichment was observed for height GWAS variants at DNaseI hypersensitivity sites from mouse brain, liver, and lung.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, as no enrichment was observed for other mouse tissues from ENCODE, this suggests that the observed enrichment is unlikely due to artifacts stemming from our use of mouse tissues (e.g. from conserved regions being lifted over).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports lack of enrichment in non-skeletal tissues as a control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "173fb62a-9e2c-441b-a938-29e81d805186",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C32",
+      "claim": "Height GWAS loci are enriched near 427 differentially expressed growth plate genes when compared to matched random GWAS loci (p<0.001, z-score: 8.54).",
+      "claim_type": "EXPLICIT",
+      "source": "We expanded on those results using the most recent height GWAS from Wood et al. (2014) and indeed found that height GWAS loci are enriched near 427 differentially expressed growth plate genes (within 100 kb) when compared to the 1000 matched random GWAS loci (p<0.001, z-score: 8.54, Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistical enrichment of height GWAS loci near differentially expressed growth plate genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "4476f375-a74f-41b5-a2f0-ab6b8f610114",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C33",
+      "claim": "46 of 688 height GWAS loci (approximately 6.7%) contain at least one GWAS variant that overlaps with an ATAC-seq peak and resides near a differentially expressed gene.",
+      "claim_type": "EXPLICIT",
+      "source": "We again used the 688 GWAS loci from Wood et al. (2014) and their proxy SNPs (r2 >0.5) and found that 46/688 loci (or ~6.7%) contained at least one GWAS variant that overlapped with an ATAC-seq peak and resided near a differentially expressed gene (Supplementary file 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the number and percentage of loci meeting multiple criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "1e22717a-00ad-4e00-b6d1-8cd214e51d91",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C34",
+      "claim": "The overlap of height GWAS variants with ATAC-seq peaks near differentially expressed genes is highly significant (p<0.001, z-score: 6.36).",
+      "claim_type": "EXPLICIT",
+      "source": "Using the same 1000 sets of matched random loci as described above, we found that these overlaps were highly significant (p<0.001, z-score: 6.36, Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistical significance of the combined enrichment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "612004bb-4436-476f-b065-67c2f8ebfba0",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C35",
+      "claim": "eQTL variants for 157 differentially expressed growth plate genes are significantly enriched at ATAC-seq peaks (p=0.0004).",
+      "claim_type": "EXPLICIT",
+      "source": "Using the GoShifter permutation analysis as described above, we demonstrated that the corresponding eQTL variants for these 157 genes are significantly enriched at ATAC-seq peaks (p=0.0004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports statistical enrichment of eQTL variants at ATAC-seq peaks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "fdbddc01-a12e-4a02-af24-4b774707c41b",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C36",
+      "claim": "59 variants distributed across 26 loci are in the PICS 95% credible set, overlap an ATAC-seq peak, and are near a differentially expressed growth plate gene.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 59 variants distributed across 26 loci met these criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the number of variants meeting stringent filtering criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "37f102a5-81a8-4355-a23d-f1b51d0ffa8c",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C37",
+      "claim": "rs9920291 is predicted to alter HOXD13 binding based on universal protein binding microarray technology.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the four variants, rs9920291 is predicted to alter HOXD13 binding, as suggested by data generated using universal protein binding microarray technology that demonstrates that the eight base-pair sequence matching the immediate rs9920291 locus disrupts in vitro binding by HOXD13 (Figure 6a, Supplementary file 7), a homeodomain transcription factor that is expressed in the growth plate (Kuss et al., 2014; Reno et al., 2016) and has known activating and repressive roles in skeletal development (Johnson and Tabin, 1997).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports computational prediction of transcription factor binding disruption supported by experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "290ee83d-df65-42d8-8ed7-d6a4747c00be",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C38",
+      "claim": "The open chromatin region surrounding rs9920291 acts as a repressor of expression in T/C-28a2 human chondrocytes (p=7.83\u00d710\u22126 for reference allele and p=3.6\u00d710\u22124 for alternate allele).",
+      "claim_type": "EXPLICIT",
+      "source": "First, using a luciferase reporter assay in T/C-28a2 human chondrocytes, we found that the open chromatin region surrounding rs9920291 acts as a repressor of expression (p=7.83\u00d710\u22126 and 3.6 \u00d7 10\u22124 for variants carrying the reference and alternate alleles respectively) (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports experimental results from luciferase assays with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "82b9e875-9b5b-4766-a905-a5eb613637f0",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C39",
+      "claim": "The alternate T allele of rs9920291 makes the regulatory element act as a weaker repressor (p=0.0014).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the alternate T allele, (i.e. the height-increasing allele of rs9920291) makes the regulatory element act as a weaker repressor (p=0.0014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports differential regulatory activity between alleles with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "44695c74-ede7-407e-aea7-2d2ecaa80d50",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C40",
+      "claim": "rs9920291 acts as an eQTL for CHSY1 in transformed fibroblasts (p=1.0\u00d710-7) with the T allele correlating with increased CHSY1 expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with data from GTEx (Lonsdale J, GTEx Consortium, 2013), where rs9920291 acts as an eQTL for CHSY1 in transformed fibroblasts (p=1.0\u00d710-7; Figure 6\u2014figure supplement 1), with the T allele correlating with increased CHSY1 expression levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports eQTL data from GTEx with statistical significance.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "87906286-fa07-4c10-b687-832aab717614",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C41",
+      "claim": "rs9920291 displays allelic skew in expression in HEK-293FT cells (p<0.001 for both assayed variants).",
+      "claim_type": "EXPLICIT",
+      "source": "Assaying a heterozygous exonic coding SNP (rs28364839) and a 3'UTR SNP (rs11433), we demonstrate that rs9920291 displays allelic skew in expression (p<0.001 for both assayed variants; Figure 6d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports allelic expression imbalance with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "ada433fc-a933-4c79-8ec7-fe2e681a9f89",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C42",
+      "claim": "CRISPR-Cas9-mediated deletion of a 135 bp region surrounding rs9920291 leads to significant upregulation of CHSY1 expression (p=7.83\u00d710\u22126).",
+      "claim_type": "EXPLICIT",
+      "source": "Either deletion led to a significant upregulation of CHSY1 expression in vitro in T/C-28a2 cells (p=7.83\u00d710\u22126 for the 135 bp deletion and p=3.64\u00d710\u22124 for the 17 bp deletion; Figure 6d), confirming the regulatory element's repressor activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports experimental results from CRISPR deletion with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "763ec585-5ebc-4f1c-9f83-571f0f054432",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C43",
+      "claim": "CRISPR-Cas9-mediated deletion of a 17 bp region immediately surrounding rs9920291 leads to significant upregulation of CHSY1 expression (p=3.64\u00d710\u22124).",
+      "claim_type": "EXPLICIT",
+      "source": "Either deletion led to a significant upregulation of CHSY1 expression in vitro in T/C-28a2 cells (p=7.83\u00d710\u22126 for the 135 bp deletion and p=3.64\u00d710\u22124 for the 17 bp deletion; Figure 6d), confirming the regulatory element's repressor activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports experimental results from CRISPR deletion with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "19173fe5-dcf7-443d-b405-e6f483b5096f",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C44",
+      "claim": "Overexpression of HOXD13 in T/C-28a2 cells significantly upregulates CHSY1 expression (p=1.63\u00d710\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our computational predictions that rs9920291 perturbs HOXD13 binding, we found that overexpression of HOXD13 in T/C-28a2 cells significantly upregulated CHSY1 expression (p=1.63\u00d710\u22125; Figure 6e,Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports experimental results from overexpression experiments with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "a4a7a69d-60d5-4233-8153-250ff47b0d00",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C45",
+      "claim": "De novo motif analysis identified enriched transcription-factor-binding motifs including Atf3, Msx2, Pbx1, and Ctcf in ATAC-seq peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a number of highly enriched motifs relevant to chondrogenesis and other skeletal developmental processes, including Atf3 (James et al., 2006), Msx2 (Amano et al., 2008), Pbx1 (Selleri et al., 2001), and Ctcf (Jerkovi\u0107 et al., 2017) (Figure 7a, Supplementary file 8, sheet 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports motif enrichment results with citations supporting their relevance.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "7071d402-3a3c-4f78-8286-5eb8c180b966",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C46",
+      "claim": "Height GWAS variants within ATAC-seq peaks show enrichment for variants predicted to impact CTCF-binding (p<0.01, z-score: 6.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the height GWAS variants intersecting ATAC-seq peaks to 500 sets of random GWAS variants revealed an enrichment for variants that are predicted to impact CTCF-binding (p<0.01, z-score: 6.01, Figure 7c) (see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistical enrichment of CTCF-disrupting variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "01dcaba9-c575-4ec6-a619-d4b4830587a8",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C47",
+      "claim": "Height GWAS variants overlapping ATAC-seq peaks show strong enrichment for predicted PBX1 motifs (adjusted p value=1.91\u00d710\u2212108).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we detected a strong enrichment of height GWAS variants overlapping predicted PBX1 motifs within ATAC-seq regions, when compared to height GWAS variants across the genome (adjusted p value=1.91\u00d710\u2212108, Supplementary file 9; see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports statistical enrichment of PBX1 motifs at height GWAS variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "ca30878b-4f38-47ff-bcf7-bde4e2056450",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C48",
+      "claim": "Height is highly heritable with typically 70-90% of variation in height within a population attributable to genetic variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Height has been studied for centuries as a model genetic trait, as it is easily measured and highly heritable (typically, 70\u201390% of variation in height within a population is attributable to genetic variation) (Silventoinen et al., 2003; Perola et al., 2007; Visscher et al., 2006; Visscher et al., 2007; Galton, 1886).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites established literature on the heritability of height.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "4065a6b3-5753-42cf-b565-eb8a5d0da364",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C49",
+      "claim": "GWAS for height have identified nearly 700 regions of the genome robustly associated with height.",
+      "claim_type": "EXPLICIT",
+      "source": "GWAS for height are among the largest conducted thus far (sample sizes > 250,000) and have identified more associations than any other phenotype, with nearly 700 regions of the genome (or loci) robustly associated with height (Wood et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a specific GWAS study reporting the number of associated loci.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "5eed14ff-ebf6-4f79-9cfd-0228e825a81f",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C50",
+      "claim": "Each height-associated variant has only a small effect on height (typically much less than 0.5 cm per allele).",
+      "claim_type": "EXPLICIT",
+      "source": "Although each of the variants at these loci have only a small effect on height (typically much less than 0.5 cm per allele) (Wood et al., 2014), the genes within the associated loci as a group highlight important mechanisms influencing growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites the effect size of height variants from a GWAS study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "434d9551-4d0b-4d79-ac16-06360e86496d",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C51",
+      "claim": "Height variants are preferentially located near genes that are differentially expressed in the growth plate.",
+      "claim_type": "EXPLICIT",
+      "source": "Height variants are also preferentially located near genes that are differentially expressed in the growth plate (Lui et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study showing enrichment of height variants near growth plate genes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "e88a2421-becd-4446-a752-87cb27d557a9",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C52",
+      "claim": "Most GWAS variants (>80%) reside in non-coding regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, most GWAS variants (>80%) reside in non-coding regions (Gusev et al., 2014), with no nearby coding variants that can account for the associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature on the genomic distribution of GWAS variants.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "87ab9254-5504-4194-b696-6ca3c030013e",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C53",
+      "claim": "GWAS variants tend to fall in regions that have particular epigenetically defined states such as enhancers or repressors.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also becoming increasingly clear that GWAS variants tend to fall in regions that have particular epigenetically defined states (such as enhancers or repressors) (Finucane et al., 2015; Farh et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites studies showing enrichment of GWAS variants in specific epigenetic states.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "a8aa485b-4bba-4a19-be41-e53376431fc4",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C54",
+      "claim": "The growth plate is located at the distal ends of long bones such as the femur.",
+      "claim_type": "EXPLICIT",
+      "source": "The growth plate, located at the distal ends of long bones such as the femur, is among the most important tissues influencing height.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the anatomical location of the growth plate.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "9c8a6352-996d-4bda-97ee-4f4cd67fb9bc",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C55",
+      "claim": "Chondrocytes in the growth plate reside in longitudinally oriented columns divided in zones (resting, proliferative, pre-hypertrophic, and hypertrophic).",
+      "claim_type": "EXPLICIT",
+      "source": "Chondrocytes in the growth plate reside in longitudinally oriented columns divided in zones (resting, proliferative, pre-hypertrophic, and hypertrophic) each with important functions in allowing the bone to elongate and mature (see Liu et al., 2017 and Samsa et al., 2017 for reviews) (Liu et al., 2017; Samsa et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the organization of the growth plate with citations to review articles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "980b4cad-b976-4f25-bcf4-8ebcf46d1783",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C56",
+      "claim": "Growth plate chondrocyte differentiation and maturation promotes elongation of long bones, which ultimately determines much of human height.",
+      "claim_type": "EXPLICIT",
+      "source": "This process of growth plate chondrocyte differentiation and maturation promotes elongation of long bones, which ultimately determines much of human height (Baron et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the role of the growth plate in determining height with a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "266a1fa1-a065-43a9-a0c1-fbb559f16809",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C57",
+      "claim": "Disruption of Chsy1 in mice and humans leads to severe skeletal phenotypes including long bone length reductions.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of Chsy1 in mice and humans leads to severe skeletal phenotypes including long bone length reductions (Wilson et al., 2012; Temtamy et al., 1998; Tian et al., 2010; Li et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites studies showing the phenotypic effects of CHSY1 disruption.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "b1a86c4f-e617-4679-8c9b-4df61235aed3",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C58",
+      "claim": "Human mutations in CHSY1 result in Temtamy preaxial brachydactyly syndrome, characterized by short stature, preaxial brachydactyly, and hyperphalangism of digits 1\u20133.",
+      "claim_type": "EXPLICIT",
+      "source": "Human mutations in CHSY1 result in Temtamy preaxial brachydactyly syndrome, characterized by short stature, preaxial brachydactyly, and hyperphalangism of digits 1\u20133 (45, 46), as well as a number of additional soft and hard tissue disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the clinical phenotype associated with CHSY1 mutations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "e8c53dfc-9e9e-43a3-902d-a3e0e273dfd9",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C59",
+      "claim": "HOXD13 is expressed in the growth plate.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the four variants, rs9920291 is predicted to alter HOXD13 binding, as suggested by data generated using universal protein binding microarray technology that demonstrates that the eight base-pair sequence matching the immediate rs9920291 locus disrupts in vitro binding by HOXD13 (Figure 6a, Supplementary file 7), a homeodomain transcription factor that is expressed in the growth plate (Kuss et al., 2014; Reno et al., 2016) and has known activating and repressive roles in skeletal development (Johnson and Tabin, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites studies showing HOXD13 expression in the growth plate.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "fa7ce2dd-a33f-4aa8-8b5e-91d2efbf4931",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C60",
+      "claim": "HOXD13 has known activating and repressive roles in skeletal development.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the four variants, rs9920291 is predicted to alter HOXD13 binding, as suggested by data generated using universal protein binding microarray technology that demonstrates that the eight base-pair sequence matching the immediate rs9920291 locus disrupts in vitro binding by HOXD13 (Figure 6a, Supplementary file 7), a homeodomain transcription factor that is expressed in the growth plate (Kuss et al., 2014; Reno et al., 2016) and has known activating and repressive roles in skeletal development (Johnson and Tabin, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study showing HOXD13's role in skeletal development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "5bd3b8b5-037c-429d-a371-18312fb9a217",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C61",
+      "claim": "rs4911178 at the GDF5 locus resides in an ATAC-seq peak active in femoral growth plates.",
+      "claim_type": "EXPLICIT",
+      "source": "We also highlight a previously identified height-associated variant (rs4911178) at the GDF5 locus, which resides in an ATAC-seq peak active in femoral growth plates (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript identifies a specific variant overlapping an ATAC-seq peak.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "5d1b5fdb-3478-4c45-8dd5-dd7f8f0be91f",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C62",
+      "claim": "The enhancer underlying rs4911178 drives GDF5 expression in growth plates and rs4911178 has allele-specific activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown in separate work that the underlying enhancer drives GDF5 expression in growth plates and that rs4911178 has allele-specific activity(Capellini et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites their own separate work demonstrating functional validation of this variant.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "4506c08e-0027-4b3c-99a3-7a4b4ed19381",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C63",
+      "claim": "ATAC-seq requires approximately 50,000 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To uncover mechanisms by which height GWAS variants function, we performed epigenetic profiling of murine femoral growth plates. The profiled open chromatin regions recapitulate known chondrocyte and skeletal biology, are enriched at height GWAS loci, particularly near differentially expressed growth plate genes, and enriched for binding motifs of transcription factors with roles in chondrocyte biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract mentions that ATAC-seq allows profiling using relatively few cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "4ec39c80-9bec-49e8-b2f6-37c73c8cfb3a",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C64",
+      "claim": "Integrating biologically relevant epigenetic information from growth plates with genetic association results can identify biological mechanisms important for human growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, integrating biologically relevant epigenetic information (here, from growth plates) with genetic association results can identify biological mechanisms important for human growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract concludes with this general statement about the approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "09289575-c7aa-40f5-9404-22a2bca7b691",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C65",
+      "claim": "ATAC-seq datasets generated from mouse growth plate chondrocytes overlap previously identified signals of chondrocyte biology in the mouse and in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses revealed that ATAC-seq datasets generated from mouse growth plate chondrocytes overlap previously identified signals of chondrocyte biology in the mouse, as well as in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion summarizes the validation of ATAC-seq data against known chondrocyte biology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "91f3f766-4f38-4046-b33e-d7c9b8f0dc2e",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C66",
+      "claim": "ATAC-seq peaks acquired on femoral tissues show enrichment in human phenotypes related to the anatomy of femur.",
+      "claim_type": "EXPLICIT",
+      "source": "While our datasets capture aspects of general chondrocyte biology, we also found that ATAC-seq peaks acquired on femoral tissues show enrichment in human phenotypes related to the anatomy of femur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion notes anatomical specificity of the enrichments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "4bfe0eb5-7d06-4457-92c5-3fccabf706e0",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C67",
+      "claim": "This finding points to a fine-grained, modularized control of skeletal element-specific biology.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding points to a fine-grained, modularized control of skeletal element-specific biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion interprets the anatomical specificity as evidence for modular regulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "c02ddfb7-7373-46f8-a341-2a49b3cdeb8d",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C68",
+      "claim": "Over 80% of GWAS height loci are non-coding.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that over 80% of GWAS height loci are non-coding, our study demonstrates that height GWAS variants are significantly enriched in growth plate chondrocyte regulatory regions and that the majority reside in intergenic portions of the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion reiterates the non-coding nature of most height GWAS loci.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "8c9f310b-3204-4e7a-90df-c98c009dd965",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C69",
+      "claim": "Height GWAS variants are significantly enriched in growth plate chondrocyte regulatory regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that over 80% of GWAS height loci are non-coding, our study demonstrates that height GWAS variants are significantly enriched in growth plate chondrocyte regulatory regions and that the majority reside in intergenic portions of the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion summarizes the main finding of enrichment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "37f7e5ab-8242-4814-9d55-e9afe5f672ba",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C70",
+      "claim": "The enrichment of height GWAS loci was not observed nearly as strongly in other chondrocyte or limb bud tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this enrichment of height GWAS loci was not observed nearly as strongly in other chondrocyte or limb bud tissues, which suggests that our dataset is capturing functional genetic variation influencing height that is not captured by other existing datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion emphasizes the specificity of the enrichment to their dataset.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "cba34979-e3ae-45d5-ab55-73c8d7bcaa43",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C71",
+      "claim": "GWAS results for other traits/diseases that are not clearly related to growth/height did not show enrichment at the ATAC-seq peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "GWAS results for other traits/diseases that are not clearly related to growth/height did not show enrichment at the ATAC-seq peaks, demonstrating that the ATAC-seq peaks are specifically capturing growth/height biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion notes the specificity of enrichment to height-related traits.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "d43906f1-5384-4e7f-a2bf-55681b45921e",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C72",
+      "claim": "Combining statistical fine-mapping and functional fine-mapping has allowed narrowing down to a much smaller subset of putatively causal variants for downstream functional testing.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining our statistical fine-mapping and functional fine-mapping has allowed us to narrow down to a much smaller subset of putatively causal variants for downstream functional testing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion describes the benefit of the integrated approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "f7791068-9869-4932-a684-bc46a777cfb5",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C73",
+      "claim": "Along with GDF5, CHSY1 is the only other height GWAS locus with functional validation.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, along with GDF5, this is the only other height GWAS locus with functional validation (Capellini et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion claims novelty of the functional validation at CHSY1.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "16a773b6-412a-4d4c-8669-bb1f7f76d9a2",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C74",
+      "claim": "ATAC-seq protocol was adapted from Buenrostro et al. (2013).",
+      "claim_type": "EXPLICIT",
+      "source": "ATAC-seq protocol adapted from Buenrostro et al. (2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1 caption cites the source of the ATAC-seq protocol.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "8776aa56-3e81-4564-a168-4f945906d414",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C75",
+      "claim": "Approximately 50,000 cells per sample were utilized for ATAC-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 50,000 cells per sample were utilized for subsequent ATAC-seq.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1 caption specifies the number of cells used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "dc0e1098-29e3-4da7-bb72-690d26c3f866",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C76",
+      "claim": "Tissues were harvested just proximal or distal to the forming bone collar.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissues were harvested just proximal (red dotted lines in inset) or distal (blue dotted lines in inset) to the forming bone collar (outlined by dashed black lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1 caption describes the tissue dissection procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "84318b01-04c6-49a3-a8bf-c6a6f65f8ff8",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C77",
+      "claim": "PICS was applied to perform statistical fine-mapping of the Wood et al. (2014) height GWAS results.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied PICS (Farh et al., 2015) to perform statistical fine-mapping of the (Wood et al., 2014) height GWAS results (Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the statistical fine-mapping method used.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "450c5c6f-3ef1-4eed-b362-9ccc5d7aa8fc",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C78",
+      "claim": "The 95% credible set represents the minimum set of SNPs at a locus such that the truly causal SNP has at least a 95% probability of being in the set.",
+      "claim_type": "EXPLICIT",
+      "source": "For each locus, we then determined the 95% credible set, which represents the minimum set of SNPs at that locus such that the truly causal SNP has at least a 95% probability of being in the set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript defines the 95% credible set.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "8a1d8080-b5dc-44d1-9966-120c8259ed55",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C79",
+      "claim": "The 95% credible set yielded 32,846 SNPs across 688 loci, representing approximately a 48.2% reduction from the total number of variants in the GWAS loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Across 688 loci, this yielded a 95% credible set of 32,846 SNPs, which represents approximately a 48.2% reduction from the total number of variants in the GWAS loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the results of the fine-mapping procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "536f249f-ff74-4be3-9bb5-54ec1cf44126",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C80",
+      "claim": "468 variants spanning 192 of the 688 loci are in the credible set and overlap femur open chromatin regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Intersecting these credible set SNPs with femur open chromatin regions revealed 468 overlapping variants spanning 192 of the 688 loci (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the intersection of fine-mapped variants with ATAC-seq peaks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "35586af3-df30-4f7e-8a33-dcba9fa50d12",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C81",
+      "claim": "A previous study identified 427 genes that were differentially expressed in the growth plate.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study profiled expression of mouse growth plate genes and identified a set of 427 genes that were differentially expressed in the growth plate (Lui et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study that identified differentially expressed growth plate genes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "ad219727-d6a0-41e7-8676-9bb4e0e09e51",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C82",
+      "claim": "44 different genes have been identified as possibly being modulated by putative regulatory variants at the 46 loci that fall near genes differentially expressed in growth plates.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 46 loci in the ATAC-seq femur comparison that fall near genes differentially expressed in growth plates, 44 different genes have been identified as possibly being modulated by these putative regulatory variants (note, some genomic loci have multiple genes and/or GWAS loci) (Supplementary file 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the number of candidate target genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "49bb3874-3440-418c-a1e7-739bb764407e",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C83",
+      "claim": "These 44 genes represent major signaling molecules (e.g. IHH, HHIP), transcription factors (e.g. RUNX2), and extracellular matrix factors (e.g. CHSY1, EXTL1).",
+      "claim_type": "EXPLICIT",
+      "source": "These genes represent major signaling molecules (e.g. IHH, HHIP), transcription factors (e.g. RUNX2), extracellular matrix factors (e.g. CHSY1, EXTL1), among other factors involved in the growth plate in both humans and mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript categorizes the candidate target genes by function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "c3854173-908a-4f20-ad87-b087d32f30db",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C84",
+      "claim": "Four variants (rs8042551, rs11639408, rs9920291, and rs3911964) at the CHSY1 locus met the criteria of being in the PICS 95% credible set, overlapping an ATAC-seq peak, and being near a differentially expressed growth plate gene.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, at the CHSY1 locus, four variants (rs8042551, rs11639408, rs9920291, and rs3911964) met these criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies specific variants at the CHSY1 locus meeting stringent criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "4f712719-f5e0-4786-baf9-1ed452cdc387",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "claim_id": "C85",
+      "claim": "Raw sequencing fastq files and processed peak bed files have been deposited on NCBI GEO (GSE100585).",
+      "claim_type": "EXPLICIT",
+      "source": "Raw sequencing fastq files and processed peak bed files have been deposited on NCBI GEO (GSE100585).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides data availability information.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d867d065-7b13-48a9-9518-1a6d035ee62e",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ATAC-seq was performed on E15.5 mouse proximal and distal femoral growth zones, yielding 28,257 proximal and 27,958 distal peaks with 23,764 shared peaks. The growth plate at this stage possesses all chondrocyte zones and corresponds to approximately E48-51 of human development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8, C74-C76 provide comprehensive methodological details and quantitative results from the ATAC-seq experiment. The experimental design is clearly described with appropriate developmental staging (C1-C3), specific tissue dissection procedures (C76), cell numbers used (C75), and reproducible quantitative outcomes (C4-C7). The genomic distribution patterns (C8) are consistent with expected open chromatin profiles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "1c2f503c-a074-4110-afc5-683202280de0",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Liftover of mouse ATAC-seq peaks to the human genome was successful for 87.7% of proximal and 88.6% of distal peaks, yielding 25,829 total unique peaks. These conserved sites likely reflect genes involved in vertebrate musculoskeletal development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12 report the liftover procedure with clear quantitative results and appropriate interpretation. The high success rate (>87%) supports cross-species conservation, and the interpretation (C11) is appropriately cautious and supported by citations. The union calculation (C12) is mathematically consistent with the individual datasets.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "77f7a374-c0ed-4c58-8a9f-cc187c7fcba2",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ATAC-seq peaks are enriched near genes associated with skeletal development phenotypes and GO Biological Processes relevant to chondrogenesis, including 'Cartilage condensation', 'Positive regulation of chondrocyte differentiation', and 'Chondrocyte proliferation'.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14 report GREAT analysis results showing biologically relevant enrichments. The phenotype terms (C13) and GO terms (C14) are appropriate for growth plate tissue and provide validation that the ATAC-seq peaks capture relevant biology. Figure 1c supports these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "35143365-d10d-4cb5-941b-bd1c0e696a51",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ATAC-seq peaks show significant overlap with Sox9 binding sites (86.4% Class I, 44.6% Class II, 93.8% super-enhancers) and active chromatin marks (85.1% RNA Pol II, 86.7% H3K4me3, 87.4% H3K27ac) but lower overlap with repressive marks (33.7% H3K27me3), all significant at p<0.001.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C24 provide extensive validation against published ChIP-seq datasets with appropriate statistical testing (permutation analyses, p<0.001). The high overlap with active marks and lower overlap with repressive marks (C23) is biologically consistent and validates the ATAC-seq approach. The differential overlap patterns support the specificity of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "1666582f-e633-4d59-bc3a-ebed8ef70e53",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mouse femur ATAC-seq peaks overlap with human limb development and chondrocyte datasets: 45.2% of E47 human limb bud H3K27ac peaks and 13.3% of human adult BMDC H3K27ac peaks. The ATAC-seq data identified 14 of 26 previously-discovered regulatory elements near cartilage genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 demonstrate cross-species and cross-developmental stage validation with appropriate statistical significance (p<0.001). The ability to recapture known regulatory elements (C27) provides independent validation. The lower overlap with cultured BMDCs (C26) compared to embryonic limb (C25) is appropriately interpreted as reflecting in vivo developmental properties.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "05073a40-7689-4cd5-8c7a-e9396a8c8440",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Height GWAS variants show significant enrichment at ATAC-seq peaks (317 loci or ~46% overlap, p=0.0059 by GoShifter), with greater enrichment than other chondrocyte datasets and no enrichment in non-skeletal tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 demonstrate statistically significant enrichment using appropriate permutation-based methods (GoShifter). The comparative analysis showing stronger enrichment than other datasets (C30) and lack of enrichment in control tissues (C31) supports specificity. The p-value of 0.0059 is appropriately conservative for this type of analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "749256ff-4b61-45f6-905f-8cad28cb881f",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Height GWAS loci are significantly enriched near differentially expressed growth plate genes (p<0.001, z-score: 8.54), with 46 loci (~6.7%) containing variants that overlap ATAC-seq peaks and reside near differentially expressed genes (p<0.001, z-score: 6.36). eQTL variants for 157 growth plate genes are enriched at ATAC-seq peaks (p=0.0004).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 demonstrate multiple layers of enrichment with appropriate statistical testing using matched random loci. The combined enrichment (C34) is more stringent than individual criteria and remains highly significant. The eQTL enrichment (C35) provides independent functional validation. Z-scores are substantial (>6) indicating robust effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "3dc3e196-556e-4d0b-8780-17a384875e7d",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Statistical fine-mapping using PICS identified a 95% credible set of 32,846 SNPs (48.2% reduction), with 468 variants spanning 192 loci overlapping ATAC-seq peaks. Applying stringent criteria (credible set + ATAC-seq + differentially expressed gene) identified 59 variants across 26 loci.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C80, C36 describe appropriate statistical fine-mapping methodology with clear quantitative results. The 48.2% reduction (C79) demonstrates effective prioritization. The progressive filtering to 59 variants (C36) represents a substantial and useful reduction for functional follow-up. The PICS method is well-established and appropriately applied.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "ca7decd4-0838-448f-b697-47c30b54c1ce",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "At the CHSY1 locus, rs9920291 is predicted to alter HOXD13 binding and shows allelic regulatory activity. The region acts as a repressor (p=7.83\u00d710\u207b\u2076), with the height-increasing T allele showing weaker repression (p=0.0014). CRISPR deletion upregulates CHSY1 expression (p=7.83\u00d710\u207b\u2076 for 135bp, p=3.64\u00d710\u207b\u2074 for 17bp), and HOXD13 overexpression increases CHSY1 expression (p=1.63\u00d710\u207b\u2075).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C44, C57-C60, C84 provide comprehensive functional validation with multiple converging lines of evidence: computational prediction (C37), luciferase assays (C38-C39), eQTL data (C40), allelic expression (C41), CRISPR deletion (C42-C43), and overexpression (C44). All experiments show appropriate statistical significance (p<0.001) and biological consistency. The mechanistic model linking HOXD13, rs9920291, and CHSY1 is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "988bff03-21c9-466e-bc77-3b52166be2fb",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The height-associated variant rs4911178 at the GDF5 locus resides in an ATAC-seq peak active in femoral growth plates, and separate work has shown the underlying enhancer drives GDF5 expression with allele-specific activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 identify a previously validated locus, demonstrating that the ATAC-seq approach can recapitulate known functional variants. The citation to separate work (C62) provides independent validation. This serves as a positive control for the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "04bf1849-50f2-4a12-a2a0-ee2b2b7d3e4d",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "De novo motif analysis identified enriched transcription factor binding motifs including Atf3, Msx2, Pbx1, and Ctcf. Height GWAS variants within ATAC-seq peaks show enrichment for predicted CTCF-disrupting variants (p<0.01, z-score: 6.01) and PBX1 motifs (adjusted p=1.91\u00d710\u207b\u00b9\u2070\u2078).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 report motif enrichment with appropriate statistical testing and biological relevance supported by citations. The enrichment of height variants at these motifs (C46-C47) provides mechanistic insight. The extremely low p-value for PBX1 (C47) suggests strong enrichment, though such extreme values should be interpreted cautiously.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "6ad653b5-23af-4277-8009-e8e5a0ccb7c6",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Height is highly heritable (70-90% genetic), with GWAS identifying ~700 loci, each with small effects (<0.5 cm/allele). Most variants (>80%) are non-coding and tend to fall in epigenetically defined regulatory regions. The growth plate, containing multiple chondrocyte zones, is critical for determining height through endochondral ossification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C56 provide appropriate background context with citations to established literature. These are well-accepted facts in the field and provide necessary context for interpreting the study's findings. The heritability estimates (C48), GWAS results (C49-C50), and biological knowledge (C54-C56) are accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "6852f410-cd08-4f34-abd1-8120443f1a9d",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study demonstrates that integrating growth plate epigenetic data with GWAS results can identify biological mechanisms for height variation. The ATAC-seq peaks show tissue-specific enrichment for height variants not observed in other datasets, and combining statistical and functional fine-mapping enables prioritization of causal variants for functional testing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C73 represent interpretive conclusions and discussion points that are well-supported by the data presented. The tissue specificity (C66-C67, C70), lack of enrichment for unrelated traits (C71), and utility of the integrated approach (C72) are all supported by the results. The claim of novelty (C73) regarding CHSY1 functional validation is appropriately qualified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "2b5b8978-bdc6-42b5-bf18-f40da2afc2c3",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Among 46 loci meeting stringent criteria (ATAC-seq peak + differentially expressed gene), 44 candidate genes were identified, including major signaling molecules (IHH, HHIP), transcription factors (RUNX2), and extracellular matrix factors (CHSY1, EXTL1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C83 appropriately cite prior work identifying differentially expressed genes (C81) and report the number of candidate genes identified (C82). The functional categorization (C83) is appropriate and provides biological context. The slight discrepancy between 46 loci and 44 genes is explained by some loci having multiple genes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    },
+    {
+      "id": "c6380951-659b-440c-badf-2b6e8f2d3d16",
+      "content_id": "69748449-4386-4f5e-b40d-5ce16ffde28f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Raw sequencing data and processed peak files have been deposited in NCBI GEO (GSE100585).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 provides appropriate data availability information with a specific accession number, enabling reproducibility and data sharing as required by scientific standards.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:22:57.175353Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d687e1fc-13ab-46d4-b73a-89dd5c297eb0",
+      "result_id": "d867d065-7b13-48a9-9518-1a6d035ee62e"
+    },
+    {
+      "claim_id": "a2ad9f80-051f-44e7-a632-06de0b82220b",
+      "result_id": "d867d065-7b13-48a9-9518-1a6d035ee62e"
+    },
+    {
+      "claim_id": "40772fba-8def-4fef-bc20-2ac07765e47b",
+      "result_id": "d867d065-7b13-48a9-9518-1a6d035ee62e"
+    },
+    {
+      "claim_id": "7312f9ac-d428-4313-a2b0-d8bb00e9a0bb",
+      "result_id": "d867d065-7b13-48a9-9518-1a6d035ee62e"
+    },
+    {
+      "claim_id": "0614a31c-1b49-4343-be05-7928449f673e",
+      "result_id": "d867d065-7b13-48a9-9518-1a6d035ee62e"
+    },
+    {
+      "claim_id": "9e17120b-8fdd-446a-a841-82c8608b7de9",
+      "result_id": "d867d065-7b13-48a9-9518-1a6d035ee62e"
+    },
+    {
+      "claim_id": "668405a7-8105-4a40-82f8-8862648a948d",
+      "result_id": "d867d065-7b13-48a9-9518-1a6d035ee62e"
+    },
+    {
+      "claim_id": "203ba8ba-8be9-4a60-a912-d4efa3e07ceb",
+      "result_id": "d867d065-7b13-48a9-9518-1a6d035ee62e"
+    },
+    {
+      "claim_id": "16a773b6-412a-4d4c-8669-bb1f7f76d9a2",
+      "result_id": "d867d065-7b13-48a9-9518-1a6d035ee62e"
+    },
+    {
+      "claim_id": "8776aa56-3e81-4564-a168-4f945906d414",
+      "result_id": "d867d065-7b13-48a9-9518-1a6d035ee62e"
+    },
+    {
+      "claim_id": "dc0e1098-29e3-4da7-bb72-690d26c3f866",
+      "result_id": "d867d065-7b13-48a9-9518-1a6d035ee62e"
+    },
+    {
+      "claim_id": "ab9f7e1d-0433-41ae-9fe1-b53ac23fa49d",
+      "result_id": "1c2f503c-a074-4110-afc5-683202280de0"
+    },
+    {
+      "claim_id": "903d67b8-c46d-4084-b158-4eebc0911a87",
+      "result_id": "1c2f503c-a074-4110-afc5-683202280de0"
+    },
+    {
+      "claim_id": "346c8701-e244-45da-842b-904e370bb533",
+      "result_id": "1c2f503c-a074-4110-afc5-683202280de0"
+    },
+    {
+      "claim_id": "76c3d0da-f130-429c-818c-ce33cf591bcf",
+      "result_id": "1c2f503c-a074-4110-afc5-683202280de0"
+    },
+    {
+      "claim_id": "bc7581e5-f1a6-4bf9-88bc-274ca1c704f3",
+      "result_id": "77f7a374-c0ed-4c58-8a9f-cc187c7fcba2"
+    },
+    {
+      "claim_id": "0d1170f8-bc58-4a2c-b9d4-98ec8ee19be7",
+      "result_id": "77f7a374-c0ed-4c58-8a9f-cc187c7fcba2"
+    },
+    {
+      "claim_id": "39a31637-cf2b-41d0-ac0d-0b799b4ddab3",
+      "result_id": "35143365-d10d-4cb5-941b-bd1c0e696a51"
+    },
+    {
+      "claim_id": "20be20dc-aaab-4931-804b-ab57815df6d0",
+      "result_id": "35143365-d10d-4cb5-941b-bd1c0e696a51"
+    },
+    {
+      "claim_id": "35d2d4d4-223f-4d84-b2e7-ae9c13921dc2",
+      "result_id": "35143365-d10d-4cb5-941b-bd1c0e696a51"
+    },
+    {
+      "claim_id": "5046db50-1b17-4a9e-abdd-b9783313ff31",
+      "result_id": "35143365-d10d-4cb5-941b-bd1c0e696a51"
+    },
+    {
+      "claim_id": "88833f28-3926-48bc-a60d-ea1b7cc45ca8",
+      "result_id": "35143365-d10d-4cb5-941b-bd1c0e696a51"
+    },
+    {
+      "claim_id": "a37a3d7f-6bdc-4194-902b-cc25afa613a3",
+      "result_id": "35143365-d10d-4cb5-941b-bd1c0e696a51"
+    },
+    {
+      "claim_id": "49e96c39-bcd1-4198-949b-f90773f523b4",
+      "result_id": "35143365-d10d-4cb5-941b-bd1c0e696a51"
+    },
+    {
+      "claim_id": "c52aac29-660c-48a5-8825-169e31fabd3f",
+      "result_id": "35143365-d10d-4cb5-941b-bd1c0e696a51"
+    },
+    {
+      "claim_id": "9681cfce-220f-401c-9b3c-6e44eb9c8ef8",
+      "result_id": "35143365-d10d-4cb5-941b-bd1c0e696a51"
+    },
+    {
+      "claim_id": "590d2f99-f025-49e2-a0b4-ea79267fa0b9",
+      "result_id": "35143365-d10d-4cb5-941b-bd1c0e696a51"
+    },
+    {
+      "claim_id": "8e18e4a5-2b98-42ff-84ea-f8eb67cb70a8",
+      "result_id": "1666582f-e633-4d59-bc3a-ebed8ef70e53"
+    },
+    {
+      "claim_id": "b2625f52-873d-4feb-9b25-9d781c419e85",
+      "result_id": "1666582f-e633-4d59-bc3a-ebed8ef70e53"
+    },
+    {
+      "claim_id": "069542d6-b143-45b1-acc4-3e0af8977521",
+      "result_id": "1666582f-e633-4d59-bc3a-ebed8ef70e53"
+    },
+    {
+      "claim_id": "b81ec421-171e-4602-9235-6d84d956fa5e",
+      "result_id": "05073a40-7689-4cd5-8c7a-e9396a8c8440"
+    },
+    {
+      "claim_id": "85893e5b-a2f3-48b1-9ab9-f9093d88028b",
+      "result_id": "05073a40-7689-4cd5-8c7a-e9396a8c8440"
+    },
+    {
+      "claim_id": "a631d66e-ffac-4424-8dd8-ef142f27eca5",
+      "result_id": "05073a40-7689-4cd5-8c7a-e9396a8c8440"
+    },
+    {
+      "claim_id": "9d2d0569-2f35-489a-9fe9-fa7ab775325a",
+      "result_id": "05073a40-7689-4cd5-8c7a-e9396a8c8440"
+    },
+    {
+      "claim_id": "173fb62a-9e2c-441b-a938-29e81d805186",
+      "result_id": "749256ff-4b61-45f6-905f-8cad28cb881f"
+    },
+    {
+      "claim_id": "4476f375-a74f-41b5-a2f0-ab6b8f610114",
+      "result_id": "749256ff-4b61-45f6-905f-8cad28cb881f"
+    },
+    {
+      "claim_id": "1e22717a-00ad-4e00-b6d1-8cd214e51d91",
+      "result_id": "749256ff-4b61-45f6-905f-8cad28cb881f"
+    },
+    {
+      "claim_id": "612004bb-4436-476f-b065-67c2f8ebfba0",
+      "result_id": "749256ff-4b61-45f6-905f-8cad28cb881f"
+    },
+    {
+      "claim_id": "84318b01-04c6-49a3-a8bf-c6a6f65f8ff8",
+      "result_id": "3dc3e196-556e-4d0b-8780-17a384875e7d"
+    },
+    {
+      "claim_id": "450c5c6f-3ef1-4eed-b362-9ccc5d7aa8fc",
+      "result_id": "3dc3e196-556e-4d0b-8780-17a384875e7d"
+    },
+    {
+      "claim_id": "8a1d8080-b5dc-44d1-9966-120c8259ed55",
+      "result_id": "3dc3e196-556e-4d0b-8780-17a384875e7d"
+    },
+    {
+      "claim_id": "536f249f-ff74-4be3-9bb5-54ec1cf44126",
+      "result_id": "3dc3e196-556e-4d0b-8780-17a384875e7d"
+    },
+    {
+      "claim_id": "fdbddc01-a12e-4a02-af24-4b774707c41b",
+      "result_id": "3dc3e196-556e-4d0b-8780-17a384875e7d"
+    },
+    {
+      "claim_id": "37f102a5-81a8-4355-a23d-f1b51d0ffa8c",
+      "result_id": "ca7decd4-0838-448f-b697-47c30b54c1ce"
+    },
+    {
+      "claim_id": "290ee83d-df65-42d8-8ed7-d6a4747c00be",
+      "result_id": "ca7decd4-0838-448f-b697-47c30b54c1ce"
+    },
+    {
+      "claim_id": "82b9e875-9b5b-4766-a905-a5eb613637f0",
+      "result_id": "ca7decd4-0838-448f-b697-47c30b54c1ce"
+    },
+    {
+      "claim_id": "44695c74-ede7-407e-aea7-2d2ecaa80d50",
+      "result_id": "ca7decd4-0838-448f-b697-47c30b54c1ce"
+    },
+    {
+      "claim_id": "87906286-fa07-4c10-b687-832aab717614",
+      "result_id": "ca7decd4-0838-448f-b697-47c30b54c1ce"
+    },
+    {
+      "claim_id": "ada433fc-a933-4c79-8ec7-fe2e681a9f89",
+      "result_id": "ca7decd4-0838-448f-b697-47c30b54c1ce"
+    },
+    {
+      "claim_id": "763ec585-5ebc-4f1c-9f83-571f0f054432",
+      "result_id": "ca7decd4-0838-448f-b697-47c30b54c1ce"
+    },
+    {
+      "claim_id": "19173fe5-dcf7-443d-b405-e6f483b5096f",
+      "result_id": "ca7decd4-0838-448f-b697-47c30b54c1ce"
+    },
+    {
+      "claim_id": "266a1fa1-a065-43a9-a0c1-fbb559f16809",
+      "result_id": "ca7decd4-0838-448f-b697-47c30b54c1ce"
+    },
+    {
+      "claim_id": "b1a86c4f-e617-4679-8c9b-4df61235aed3",
+      "result_id": "ca7decd4-0838-448f-b697-47c30b54c1ce"
+    },
+    {
+      "claim_id": "e8c53dfc-9e9e-43a3-902d-a3e0e273dfd9",
+      "result_id": "ca7decd4-0838-448f-b697-47c30b54c1ce"
+    },
+    {
+      "claim_id": "fa7ce2dd-a33f-4aa8-8b5e-91d2efbf4931",
+      "result_id": "ca7decd4-0838-448f-b697-47c30b54c1ce"
+    },
+    {
+      "claim_id": "c3854173-908a-4f20-ad87-b087d32f30db",
+      "result_id": "ca7decd4-0838-448f-b697-47c30b54c1ce"
+    },
+    {
+      "claim_id": "5bd3b8b5-037c-429d-a371-18312fb9a217",
+      "result_id": "988bff03-21c9-466e-bc77-3b52166be2fb"
+    },
+    {
+      "claim_id": "5d1b5fdb-3478-4c45-8dd5-dd7f8f0be91f",
+      "result_id": "988bff03-21c9-466e-bc77-3b52166be2fb"
+    },
+    {
+      "claim_id": "a4a7a69d-60d5-4233-8153-250ff47b0d00",
+      "result_id": "04bf1849-50f2-4a12-a2a0-ee2b2b7d3e4d"
+    },
+    {
+      "claim_id": "7071d402-3a3c-4f78-8286-5eb8c180b966",
+      "result_id": "04bf1849-50f2-4a12-a2a0-ee2b2b7d3e4d"
+    },
+    {
+      "claim_id": "01dcaba9-c575-4ec6-a619-d4b4830587a8",
+      "result_id": "04bf1849-50f2-4a12-a2a0-ee2b2b7d3e4d"
+    },
+    {
+      "claim_id": "ca30878b-4f38-47ff-bcf7-bde4e2056450",
+      "result_id": "6ad653b5-23af-4277-8009-e8e5a0ccb7c6"
+    },
+    {
+      "claim_id": "4065a6b3-5753-42cf-b565-eb8a5d0da364",
+      "result_id": "6ad653b5-23af-4277-8009-e8e5a0ccb7c6"
+    },
+    {
+      "claim_id": "5eed14ff-ebf6-4f79-9cfd-0228e825a81f",
+      "result_id": "6ad653b5-23af-4277-8009-e8e5a0ccb7c6"
+    },
+    {
+      "claim_id": "434d9551-4d0b-4d79-ac16-06360e86496d",
+      "result_id": "6ad653b5-23af-4277-8009-e8e5a0ccb7c6"
+    },
+    {
+      "claim_id": "e88a2421-becd-4446-a752-87cb27d557a9",
+      "result_id": "6ad653b5-23af-4277-8009-e8e5a0ccb7c6"
+    },
+    {
+      "claim_id": "87ab9254-5504-4194-b696-6ca3c030013e",
+      "result_id": "6ad653b5-23af-4277-8009-e8e5a0ccb7c6"
+    },
+    {
+      "claim_id": "a8aa485b-4bba-4a19-be41-e53376431fc4",
+      "result_id": "6ad653b5-23af-4277-8009-e8e5a0ccb7c6"
+    },
+    {
+      "claim_id": "9c8a6352-996d-4bda-97ee-4f4cd67fb9bc",
+      "result_id": "6ad653b5-23af-4277-8009-e8e5a0ccb7c6"
+    },
+    {
+      "claim_id": "980b4cad-b976-4f25-bcf4-8ebcf46d1783",
+      "result_id": "6ad653b5-23af-4277-8009-e8e5a0ccb7c6"
+    },
+    {
+      "claim_id": "4506c08e-0027-4b3c-99a3-7a4b4ed19381",
+      "result_id": "6852f410-cd08-4f34-abd1-8120443f1a9d"
+    },
+    {
+      "claim_id": "4ec39c80-9bec-49e8-b2f6-37c73c8cfb3a",
+      "result_id": "6852f410-cd08-4f34-abd1-8120443f1a9d"
+    },
+    {
+      "claim_id": "09289575-c7aa-40f5-9404-22a2bca7b691",
+      "result_id": "6852f410-cd08-4f34-abd1-8120443f1a9d"
+    },
+    {
+      "claim_id": "91f3f766-4f38-4046-b33e-d7c9b8f0dc2e",
+      "result_id": "6852f410-cd08-4f34-abd1-8120443f1a9d"
+    },
+    {
+      "claim_id": "4bfe0eb5-7d06-4457-92c5-3fccabf706e0",
+      "result_id": "6852f410-cd08-4f34-abd1-8120443f1a9d"
+    },
+    {
+      "claim_id": "c02ddfb7-7373-46f8-a341-2a49b3cdeb8d",
+      "result_id": "6852f410-cd08-4f34-abd1-8120443f1a9d"
+    },
+    {
+      "claim_id": "8c9f310b-3204-4e7a-90df-c98c009dd965",
+      "result_id": "6852f410-cd08-4f34-abd1-8120443f1a9d"
+    },
+    {
+      "claim_id": "37f7e5ab-8242-4814-9d55-e9afe5f672ba",
+      "result_id": "6852f410-cd08-4f34-abd1-8120443f1a9d"
+    },
+    {
+      "claim_id": "cba34979-e3ae-45d5-ab55-73c8d7bcaa43",
+      "result_id": "6852f410-cd08-4f34-abd1-8120443f1a9d"
+    },
+    {
+      "claim_id": "d43906f1-5384-4e7f-a2bf-55681b45921e",
+      "result_id": "6852f410-cd08-4f34-abd1-8120443f1a9d"
+    },
+    {
+      "claim_id": "f7791068-9869-4932-a684-bc46a777cfb5",
+      "result_id": "6852f410-cd08-4f34-abd1-8120443f1a9d"
+    },
+    {
+      "claim_id": "35586af3-df30-4f7e-8a33-dcba9fa50d12",
+      "result_id": "2b5b8978-bdc6-42b5-bf18-f40da2afc2c3"
+    },
+    {
+      "claim_id": "ad219727-d6a0-41e7-8676-9bb4e0e09e51",
+      "result_id": "2b5b8978-bdc6-42b5-bf18-f40da2afc2c3"
+    },
+    {
+      "claim_id": "49bb3874-3440-418c-a1e7-739bb764407e",
+      "result_id": "2b5b8978-bdc6-42b5-bf18-f40da2afc2c3"
+    },
+    {
+      "claim_id": "4f712719-f5e0-4786-baf9-1ed452cdc387",
+      "result_id": "c6380951-659b-440c-badf-2b6e8f2d3d16"
+    }
+  ],
+  "comparisons": []
+}

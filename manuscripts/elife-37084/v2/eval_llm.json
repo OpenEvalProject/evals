@@ -1,0 +1,226 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "FBXL19 is a nuclear protein that binds to CpG islands throughout the genome in a ZF-CxxC domain-dependent manner, with binding patterns highly similar to KDM2A and KDM2B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C11 collectively demonstrate that FBXL19 localizes to the nucleus (C6, C7), binds CpG islands genome-wide (C1, C8-C10), and requires its ZF-CxxC domain for this binding (C11). The evidence includes immunofluorescence, subcellular fractionation, ChIP-seq data, and mutational analysis, providing strong converging support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "FBXL19 associates with the CDK-Mediator complex through its F-box domain in a sub-stoichiometric manner, preferentially interacting with CDK-Mediator rather than MED26-Mediator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C12-C19 are supported by AP-MS data (C14, C15), co-immunoprecipitation experiments (C2), and domain deletion studies (C19). The sub-stoichiometric nature (C14, C18) and preferential CDK-Mediator interaction (C15, C16) are well-documented, though the authors acknowledge the interaction may be weak (C18).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "FBXL19 does not interact with RNF20/40 E3 ubiquitin ligase, does not affect H2BK120ub1 levels, and does not function as a SCF substrate selector for CDK-Mediator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are supported by negative results from AP-MS, Western blot analysis, and the absence of SCF complex components in FBXL19 purifications. These findings contradict a previous report and clarify FBXL19's mechanism of action, though they are based on absence of evidence rather than positive demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "FBXL19 is sufficient to recruit CDK-Mediator to chromatin, an activity unique to FBXL19 among KDM2 family members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by TetO array recruitment experiments showing enrichment of CDK8, MED12, and MED4 at the array in TetR-FBXL19 cells (C23, C24), while TetR-KDM2A and TetR-KDM2B do not recruit CDK8 (C25). This synthetic system provides direct evidence for FBXL19's recruitment activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "FBXL19 is required for appropriate CDK8 occupancy at a specific subset of broad CpG island-associated gene promoters, but not for CDK8 binding genome-wide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C38 are supported by CDK8 ChIP-seq in wild-type and FBXL19\u0394CXXC cells. The data show that while CDK8 binds broadly (C26, C27), FBXL19 is specifically required at a subset of sites (C31-C33) characterized by broad CpG islands (C34, C36), promoter localization (C37), and high FBXL19 levels (C38). The differential binding analysis is statistically robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "FBXL19 targets CDK8 to promoters of silent, bivalent developmental genes in ES cells that become activated during differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C49 are supported by gene ontology analysis (C39), expression profiling (C41, C45), and chromatin state analysis (C42-C44). The data demonstrate that FBXL19-dependent CDK8 sites are enriched at lowly expressed developmental genes with bivalent chromatin marks that can be activated during differentiation. The correlation between CDK8 binding and gene expression at FBXL19-bound sites (C47, C48) is particularly compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "FBXL19 is required for appropriate activation of developmental genes during ES cell differentiation, with genes failing to induce properly in FBXL19\u0394CXXC cells following RA treatment or embryoid body differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53, C56-C59 are supported by RT-qPCR and 4sU RNA-seq data showing no expression differences in ES cells (C50) but significant impairment in gene activation during differentiation (C51, C52). The differentially expressed genes are enriched for developmental processes (C56), lowly expressed in ES cells (C57), and show reduced CDK8 binding (C59), linking FBXL19's recruitment function to gene activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "CDK-Mediator is required for activation of FBXL19 target genes during differentiation, as demonstrated by conditional deletion of MED13/13L.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 are supported by Western blot analysis showing loss of MED13/13L and reduced CDK-kinase module subunits (C60, C61), loss of CDK8 chromatin binding (C62), and RT-qPCR showing impaired gene activation during differentiation (C64) without effects in ES cells (C63). This provides functional validation that CDK-Mediator mediates FBXL19's priming activity (C65).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Removal of the ZF-CxxC domain of FBXL19 leads to embryonic lethality with developmental defects appearing around 10.5 dpc, demonstrating that FBXL19's CpG island recognition is essential for mouse development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C73 are supported by genetic crosses showing absence of viable homozygous offspring (C66), normal Mendelian ratios until 10.5 dpc (C67), and morphological analysis revealing growth retardation and developmental defects at 10.5 dpc (C68-C72). The in vivo phenotype validates the functional importance of FBXL19's CpG island binding activity observed in cell culture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Background on CpG islands, DNA methylation, ZF-CxxC domains, and the KDM2 protein family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C85 provide established background knowledge supported by appropriate citations to the literature. These claims contextualize the study but do not represent novel findings from the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Background on Mediator complex function, CDK-Mediator, developmental gene regulation, and related F-box proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C98 provide established background knowledge supported by appropriate citations. These claims contextualize the findings regarding FBXL19's interaction with CDK-Mediator and its role in developmental gene regulation but do not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Removal of the ZF-CxxC domain leads to reduced FBXL19 protein levels but does not affect CDK8 protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by Western blot analysis. This is an important control showing that the observed effects on CDK8 binding are not due to changes in CDK8 protein abundance, though the reduction in FBXL19 protein could potentially complicate interpretation of the binding studies.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,444 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The leech heartbeat system is a bilaterally symmetric, feedforward motor control system consisting of a CPG that orchestrates two distinct coordinations (peristaltic and synchronous) in bilateral hearts with periodic side-to-side switches. The system operates without phasic sensory feedback and has been previously demonstrated to be highly variable in output across individuals at each level (CPG, motor neurons, hearts).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C21-C46 collectively describe the leech heartbeat system's anatomy, connectivity, and functional organization. These claims are well-supported by citations to prior work (C21-C25, C29-C33, C38-C45), data presented in Figures 1-2 (C24, C27, C38, C42-C46), and established knowledge of the system (C23-C25, C28-C30). The description is internally consistent and provides the foundational context for the variability studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C61",
+      "C62"
+    ],
+    "result": "Cycle-to-cycle variability in intersegmental phase differences (\u0394\u03d5) is low at all levels (CPG, motor neurons, hearts), in both coordination states, and on both sides, indicating that activity within an individual is precise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C54, C61, C62 are directly supported by data shown in Figure 3 and Figure 3\u2014source data 1. The cycle-to-cycle variabilities were only slightly higher than those of the strongly interconnected HN(4) timing network interneurons, providing an internal benchmark. The coefficient of variation for period was <5% (Figure 3B), further supporting precision within individuals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C55",
+      "C78",
+      "C154",
+      "C155"
+    ],
+    "result": "Population variability in intersegmental phase differences is large at all levels (CPG, motor neurons, hearts), being approximately 2-3 times higher than cycle-to-cycle variability within individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C55, C78, C154, C155 are supported by data shown in Figures 4 and 5, comparing multiple datasets (Bilateral Recordings, Project Database, Simultaneous Recordings). The population variances were substantial and confidence intervals from different datasets overlap extensively (C155), validating the findings across independent samples. Statistical comparisons confirm the magnitude of population variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C56",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C158",
+      "C159"
+    ],
+    "result": "In peristaltic coordination, the high phase variance in the CPG pattern does not translate into equally high variance in the motor pattern. The intersegmental phase difference in the motor pattern (HE(8) to HE(12)) is significantly smaller than in the CPG pattern (HN(4) to HN(7)), with non-overlapping 95% confidence intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48, C56, C149-C153, C158-C159 are consistently supported across three independent datasets (Bilateral Recordings, Project Database, Simultaneous Recordings) shown in Figures 4 and 5. Statistical tests (unpaired and paired t-tests, all p<0.001) and bootstrapped confidence intervals confirm that motor pattern variance is significantly lower than CPG pattern variance in peristaltic coordination. This is a robust finding replicated across multiple experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C114"
+    ],
+    "result": "Variability of intersegmental phase differences is coordination-specific: similar at all levels in synchronous coordination but significantly lower for the motor pattern than the CPG pattern in peristaltic coordination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, C114 are supported by data in Figures 4 and 5 showing that in synchronous coordination, variances are similar across levels, while in peristaltic coordination, motor pattern variance is significantly reduced compared to CPG variance. This coordination-specific difference is consistently observed across datasets and represents a key finding about differential variability propagation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C160",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "The transformation from CPG to motor pattern involves segment-specific synaptic strength patterns, intrinsic properties, and coupling that determine the realized phase between motor neurons. This smoothing and attenuation mechanism may limit variance in the motor pattern, especially for nearby segments, with variance increasing as more segments intervene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52, C160, C162-C166 are supported by citations to prior work (C49, C50, C160, C162, C163) and new data in Figure 4\u2014figure supplement 1 (C52, C166). The hypothesis that smoothing limits variance (C51, C165) is speculative but supported by the observation that variance increases with intersegmental distance (C166), providing mechanistic insight into how motor pattern variability is reduced from CPG variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C57",
+      "C83",
+      "C110",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "Repetition variability (differences between consecutive switch cycles of the same coordination) is low at all levels and significantly lower than population variance, contributing little to population output variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C57, C83, C110, C167-C172 are supported by data in Figure 6 and Figure 6\u2014source data 1. Statistical analysis using scrambled populations shows that repetition variances are significantly lower than expected from population variance (p<0.005 for all levels, C169). The \u0394\u0394\u03d5 between repetitions is an order of magnitude smaller than average \u0394\u03d5 (C168), and this finding is consistent across all levels, coordinations, and sides (C170-C171).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C58",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C111",
+      "C112",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "Bilateral variability (differences between homologous elements on the two sides) differs by level and coordination. In peristaltic coordination, bilateral variance in the CPG and beat patterns is comparable to population variance, suggesting that differences between homologous elements may contribute significantly to population variability. In synchronous coordination and in the peristaltic motor pattern, bilateral variance is significantly lower than population variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C58, C96-C99, C111-C112, C173-C183 are supported by data in Figure 7 and Figure 7\u2014source data 1. Statistical analysis using scrambled populations shows coordination- and level-specific patterns: CPG and beat patterns in peristaltic coordination have bilateral variances not different from population (p=0.18 and p=0.15, C179), while motor pattern bilateral variance is significantly lower (p<0.001, C180). Bilateral variances are 3-4 fold higher than repetition variances (C176), supporting their potential contribution to population variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C101",
+      "C113"
+    ],
+    "result": "Much output variability is likely associated with genetic and life history differences among individuals in the population, particularly for cases where repetition and bilateral variability do not fully account for population variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C101, C113 are logical inferences based on the systematic exclusion of other sources of variability (repetition, bilateral) shown in Figures 6-7. Since repetition variance is low everywhere (C5, C57, C83) and bilateral variance only contributes in specific cases (C98-C99, C183), the remaining population variance must arise from other sources. Genetic and life history differences are reasonable explanations, though this remains an inference rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C51"
+    ],
+    "result": "Mechanisms that transform CPG output to motor neurons may limit output variability in the motor pattern through smoothing and segment-to-segment attenuation of CPG phase differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10 and C51 are speculative conclusions (evidence_type: SPECULATION, INFERENCE) based on the observation that motor pattern variability is lower than CPG variability in peristaltic coordination. While the observation is well-supported (C47-C48, C56), the proposed mechanism is hypothetical. Supporting evidence from Figure 4\u2014figure supplement 1 (C52, C166) shows variance increases with intersegmental distance, consistent with the hypothesis, but the specific mechanisms remain unidentified and require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193"
+    ],
+    "result": "Synaptic strengths from premotor HN interneurons to motor neurons have distinct average segmental profiles that vary across animals, but bilateral homologs do not differ in proportional synaptic strength, indicating that bilateral variability does not contribute to population variability in synaptic strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C185-C193 are supported by data in Figure 8 and citations to prior work (C185-C189). Bilateral recordings of synaptic strengths (N=16 animals, C130, C142) show no significant differences between sides in proportional strength (paired t-tests: p=0.23, 0.91, 0.99 for HE(8), HE(10), HE(12), C191). Scrambling analysis confirms this result (C192). This finding contrasts with the bilateral variability observed in phase relationships (C96-C99), suggesting different sources of variability for synaptic versus temporal properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C73"
+    ],
+    "result": "Intersegmental phase differences do not correlate with cycle period at any network level, consistent with 'phase constancy' observed in other rhythmic motor systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156, C157, C73 are supported by prior work (C156) and corroborated with the Project Database showing no correlation over cycle periods of 4-13 s for CPG and 5-11 s for motor neurons (C157). This finding is consistent with observations in other systems (C73, supported by multiple citations). The lack of correlation between phase and period is an important characteristic of the system that validates the use of phase as an independent metric of variability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The leech heartbeat has a period of 4.5-11 s (translating to several thousand beats per day) with periodic alternation between coordinations every 70-350 s, creating episodes spanning 15-60 beat cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by measurements from the data (C34, C36) and calculation (C35). These basic physiological parameters are consistent with prior work and provide context for understanding the temporal structure of the system. The measurements are straightforward and well within the capabilities of the experimental methods described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The study used adult leeches (Hirudo sp.) from commercial suppliers, maintained under standardized conditions, with recordings from multiple datasets including bilateral recordings of HN interneurons (N=26), HE motor neurons (N=33), synaptic measurements (N=16), and video imaging of intact animals (N=12).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C148 describe the materials, methods, and datasets used in the study. These are straightforward methodological descriptions supported by the experimental procedures and dataset compositions shown in Figure 2\u2014figure supplement 1. The methods are adequately described with appropriate references to prior work for detailed protocols (C121, C134, C142, C144). Sample sizes are clearly stated and appropriate for the analyses performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Comparisons to other motor systems show that cycle-to-cycle variability in the leech heartbeat is lower than in episodic systems (crab gastric pattern, zebrafish swimming), and that variability patterns differ across systems depending on factors such as modulatory input and network architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64, C79-C82 are based on comparisons to published literature (all evidence_type: CITATION or CITATION+INFERENCE). While these comparisons provide useful context, they rely on the accuracy of the cited work and the authors' interpretations. The comparisons are reasonable but limited by differences in experimental conditions, analysis methods, and the episodic vs. continuous nature of different motor patterns across species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Variability in neuronal network properties is now recognized as a hallmark even in networks producing stereotyped output, but network output across individuals is itself variable. Understanding this variability requires considering target limits for regulation, sources of variability, and how variability at one level influences another.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C20 provide the conceptual framework and motivation for the study, supported by extensive citations to the literature (C11-C14, C17-C18) and the authors' prior work (C16-C18). These claims establish the scientific context and justify the research questions. The framework is well-grounded in current understanding of motor systems and variability, though it represents a synthesis of prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "Cycle-to-cycle variability arises from stochastic biochemical processes, and many motor programs are shaped by sensory feedback. In the leech heartbeat system, recordings are made in the absence of feedback, and the premotor interneurons dictate common timing to all ipsilateral motor neurons. 'Phase constancy' (lack of correlation between phase and period) should not be construed as absence of phase variation within individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60, C65-C72, C74 provide important context about sources of variability and experimental conditions. These are supported by citations to the literature (C60, C65-C67, C71-C72) and knowledge of the system (C68-C70). The clarification about phase constancy (C74) is an important interpretive point that prevents misunderstanding of the results. These claims establish the experimental and conceptual framework for interpreting the variability measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "In much of the literature on motor systems, episodes within an animal and across animals are convolved, making it difficult to determine whether repetition variability contributes to population variability. Examples include studies on mice, fly larvae, and zebrafish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 are critical observations about methodological limitations in the literature, supported by citations to specific studies (C85-C87) and personal communication (C86). These claims justify the authors' approach of separately analyzing repetition and population variability. The critique is valid and highlights an important contribution of the current study: the systematic decomposition of variability sources that are often confounded in other work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C100",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Variability between homologous cells within an individual can contribute to population variability. In the leech, bilateral homologs arise from symmetric developmental origins, but stochastic events during development may lead to differences. The sources of bilateral variability likely differ between the CPG (synaptic strengths, intrinsic conductances) and hearts (synaptic strength, intrinsic conductances, load differences).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C94, C100, C102-C105 provide developmental and mechanistic context for bilateral variability. These are supported by citations to the literature (C89, C91, C93-C94, C100, C103, C105) and knowledge of the system (C91-C92, C95). Some claims are speculative (C100, C103-C104) but are reasonable hypotheses based on known properties of the system. The distinction between sources of bilateral variability at different levels (C102) is a logical inference supported by the different natures of the CPG and motor plant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C106",
+      "C115"
+    ],
+    "result": "In segmentally distributed motor patterns, it is important to define or compare different sets of segments over which variability is assessed. Existing datasets on locomotor and other motor patterns can be analyzed to determine sources of output variability using the approach demonstrated here.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106 and C115 are recommendations based on the authors' findings, supported by citations to the literature on various segmented motor systems (C106). The suggestion that existing datasets can be reanalyzed (C115) is a reasonable inference based on the successful application of the approach in this study. These claims represent important methodological contributions that could guide future work in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The study interrogated a feedforward motor control system to determine output variability of phase at each level (CPG, motor neurons, muscles), finding that variability exists at each level but does not obscure recognition of distinct coordinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C107-C109 summarize the overall approach and high-level findings of the study. These are supported by the data presented throughout (C108 supported by Figures 4-5, C109 by observation of distinct coordination patterns in all figures). These claims provide an accurate summary of the work, though they are general statements that encompass the more specific findings detailed in other result groups.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "In crabs, gastric phase relations are significantly correlated with frequency across episodes. In larval zebrafish, swimming occurs in episodes with declining cycle period, making it an ideal preparation to determine whether intersegmental phase delay scales with cycle period within an episode.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are based on citations to specific studies (C75-C76) and a suggestion for future work (C77). The suggestion that zebrafish would be ideal for testing period-phase relationships (C77) is a reasonable inference based on the episodic nature with declining period (C76). These claims provide comparative context and suggest directions for future research, though they do not represent findings from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C194"
+    ],
+    "result": "In Drosophila larvae, motor neurons of the same cell type contacting a common interneuron can have different numbers of synapses, but whether synapse number correlates with synaptic strength is unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C194 is supported by citation to a specific study and provides comparative context for the synaptic strength findings. This is a straightforward citation of prior work that highlights an open question in another system, relevant to the interpretation of the leech synaptic strength data (C185-C193).",
+    "result_type": "MINOR"
+  }
+]

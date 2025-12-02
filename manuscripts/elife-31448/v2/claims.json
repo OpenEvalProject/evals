@@ -1,0 +1,1943 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Estimating local surface orientation (slant and tilt) is fundamental to recovering the three-dimensional structure of the environment.",
+    "claim_type": "EXPLICIT",
+    "source": "Estimating local surface orientation (slant and tilt) is fundamental to recovering the three-dimensional structure of the environment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of established scientific understanding about the importance of surface orientation estimation in 3D vision.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "It is unknown how well humans perform tilt estimation in natural scenes.",
+    "claim_type": "EXPLICIT",
+    "source": "It is unknown how well humans perform this task in natural scenes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement identifies a gap in existing knowledge about human performance in natural scenes.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Human tilt estimates are precise and unbiased with artificial stimuli.",
+    "claim_type": "EXPLICIT",
+    "source": "Estimates are precise and unbiased with artificial stimuli and imprecise and strongly biased with natural stimuli.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by experimental data presented in the manuscript showing performance differences between stimulus types.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Human tilt estimates are imprecise and strongly biased with natural stimuli.",
+    "claim_type": "EXPLICIT",
+    "source": "Estimates are precise and unbiased with artificial stimuli and imprecise and strongly biased with natural stimuli.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by experimental data presented in the manuscript showing performance differences between stimulus types.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "An image-computable Bayes optimal model grounded in natural scene statistics predicts human bias, precision, and trial-by-trial errors without fitting parameters to the human data.",
+    "claim_type": "EXPLICIT",
+    "source": "An image-computable Bayes optimal model grounded in natural scene statistics predicts human bias, precision, and trial-by-trial errors without fitting parameters to the human data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the modeling results and comparisons with human data presented throughout the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "The similarities between human and model performance suggest that the complex human performance patterns with natural stimuli are lawful.",
+    "claim_type": "EXPLICIT",
+    "source": "The similarities between human and model performance suggest that the complex human performance patterns with natural stimuli are lawful, and that human visual systems have internalized local image and scene statistics to optimally infer the three-dimensional structure of the environment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference drawn from the observed similarities between human and model performance.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Human visual systems have internalized local image and scene statistics to optimally infer the three-dimensional structure of the environment.",
+    "claim_type": "EXPLICIT",
+    "source": "The similarities between human and model performance suggest that the complex human performance patterns with natural stimuli are lawful, and that human visual systems have internalized local image and scene statistics to optimally infer the three-dimensional structure of the environment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the match between human performance and the Bayes optimal model.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Slant is the amount by which a surface is rotated away from an observer.",
+    "claim_type": "EXPLICIT",
+    "source": "Slant is the amount by which a surface is rotated away from an observer; tilt is the direction in which the surface is rotated (Figure 1A).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a definition based on established knowledge in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Tilt is the direction in which the surface is rotated.",
+    "claim_type": "EXPLICIT",
+    "source": "Slant is the amount by which a surface is rotated away from an observer; tilt is the direction in which the surface is rotated (Figure 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a definition based on established knowledge in the field, with visual illustration in Figure 1A.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Tilt has received little attention compared to slant.",
+    "claim_type": "EXPLICIT",
+    "source": "Compared to slant, tilt has received little attention, even though both are critically important for successful interaction with the 3D environment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the state of the literature, which can be inferred from the lack of citations on tilt compared to slant.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Both slant and tilt are critically important for successful interaction with the 3D environment.",
+    "claim_type": "EXPLICIT",
+    "source": "Compared to slant, tilt has received little attention, even though both are critically important for successful interaction with the 3D environment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement based on general understanding of 3D vision and interaction.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Humans must estimate tilt to determine where they can walk, even if slant has been accurately estimated.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, even if slant has been accurately estimated, humans must estimate tilt to determine where they can walk.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the functional importance of tilt estimation for navigation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Surfaces with tilts of 90\u00b0, like the ground plane, can sometimes be walked on.",
+    "claim_type": "EXPLICIT",
+    "source": "Surface with tilts of 90\u00b0, like the ground plane, can sometimes be walked on.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on common knowledge about the physical properties of surfaces and human locomotion.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Surfaces with tilts of 0\u00b0 or 180\u00b0, like the sides of tree trunks, can never be walked on.",
+    "claim_type": "EXPLICIT",
+    "source": "Surfaces with tilts of 0\u00b0 or 180\u00b0, like the sides of tree trunks, can never be walked on.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on common knowledge about the physical properties of surfaces and human locomotion.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Cardinal surface tilts associated with the ground plane (90\u00b0) and tree trunks (0\u00b0 and 180\u00b0) occur far more frequently than oblique tilts in natural scenes.",
+    "claim_type": "EXPLICIT",
+    "source": "Cardinal surface tilts associated with the ground plane (90\u00b0) and tree trunks (0\u00b0 and 180\u00b0) occur far more frequently than oblique tilts in natural scenes.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by the prior distribution computed from 600 million groundtruth tilt samples shown in Figure 1C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "The prior distribution of unsigned tilt in natural scenes was computed from 600 million groundtruth tilt samples in the natural scene database.",
+    "claim_type": "EXPLICIT",
+    "source": "Prior distribution of unsigned tilt in natural scenes, computed from 600 million groundtruth tilt samples in the natural scene database (see Materials and methods).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the data source and computation method for the prior distribution shown in Figure 1C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Most previous studies of surface orientation perception have used stimuli having planar or smoothly curved surface shapes.",
+    "claim_type": "EXPLICIT",
+    "source": "Most previous studies have used stimuli having planar (Stevens, 1983;Knill, 1998a, 1998b; Hillis et al., 2004; Burge et al., 2010a; Rosenholtz and Malik, 1997; Rosenberg et al., 2013; Murphy et al., 2013; Velisavljevi\u0107 and Elder, 2006; Saunders and Knill, 2001; Welchman et al., 2005; Sanada et al., 2012; Tsutsui et al., 2001) or smoothly curved (Todd et al., 1996; Fleming et al., 2011; Todd, 2004;Marlow et al., 2015; Li and Zaidi, 2000, 2004; Norman et al., 2006) surface shapes and regular (Knill, 1998a, 1998b; Hillis et al., 2004; Watt et al., 2005; Rosenholtz and Malik, 1997; Rosenberg et al., 2013; Murphy et al., 2013; Velisavljevi\u0107 and Elder, 2006; Li and Zaidi, 2000, 2004; Welchman et al., 2005) or random-patterned (Burge et al., 2010a; Fleming et al., 2011) surface markings.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the literature supported by multiple citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Stimuli used in previous studies are not representative of the variety of surface shapes and markings encountered in natural viewing.",
+    "claim_type": "EXPLICIT",
+    "source": "These stimuli are not representative of the variety of surface shapes and markings encountered in natural viewing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the comparison between artificial stimuli used in previous studies and natural scenes.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Surfaces in natural scenes often have complex surface geometries and are marked by complicated surface textures.",
+    "claim_type": "EXPLICIT",
+    "source": "Surfaces in natural scenes often have complex surface geometries and are marked by complicated surface textures.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on general knowledge about the properties of natural scenes.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Performance with simple artificial scenes may not be representative of performance in natural scenes.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, performance with simple artificial scenes may not be representative of performance in natural scenes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the differences between artificial and natural stimuli.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Models developed with artificial scenes often generalize poorly to natural scenes.",
+    "claim_type": "EXPLICIT",
+    "source": "Also, models developed with artificial scenes often generalize poorly (or cannot even be applied) to natural scenes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the limitations of existing models, based on general knowledge in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "Few studies have examined the human ability to estimate 3D surface orientation using natural photographic images.",
+    "claim_type": "EXPLICIT",
+    "source": "Few studies have examined the human ability to estimate 3D surface orientation using natural photographic images, the stimuli that our visual systems evolved to process.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the state of the literature.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "No studies have examined human 3D surface orientation estimation with high-resolution groundtruth surface orientation information.",
+    "claim_type": "EXPLICIT",
+    "source": "None, to our knowledge, have done so with high-resolution groundtruth surface orientation information.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the state of the literature based on the authors' knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Natural images are complex and difficult to characterize mathematically.",
+    "claim_type": "EXPLICIT",
+    "source": "Natural images are complex and difficult to characterize mathematically, and groundtruth data about natural scenes are notoriously difficult to collect.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on general knowledge about the challenges of working with natural images.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "Groundtruth data about natural scenes are notoriously difficult to collect.",
+    "claim_type": "EXPLICIT",
+    "source": "Natural images are complex and difficult to characterize mathematically, and groundtruth data about natural scenes are notoriously difficult to collect.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on general knowledge about the challenges of collecting groundtruth data for natural scenes.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "Research with natural stimuli has often been criticized on the grounds that natural stimuli are too complicated or too poorly controlled to allow strong conclusions to be drawn.",
+    "claim_type": "EXPLICIT",
+    "source": "Research with natural stimuli has often been criticized (justifiably) on the grounds that natural stimuli are too complicated or too poorly controlled to allow strong conclusions to be drawn from the results.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about criticisms in the field, based on general knowledge of the literature.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "Human observers binocularly viewed thousands of randomly sampled patches of natural scenes with an equal number of stimuli at each of 24 tilt bins between 0\u00b0 and 360\u00b0.",
+    "claim_type": "EXPLICIT",
+    "source": "Human observers binocularly viewed thousands of randomly sampled patches of natural scenes; they viewed an equal number of stimuli at each of 24 tilt bins between 0\u00b0 and 360\u00b0.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design and procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "The stimuli were presented on a large (2.0 \u00d7 1.2 m) stereo front-projection system positioned 3 m from the observer.",
+    "claim_type": "EXPLICIT",
+    "source": "The stimuli were presented on a large (2.0 \u00d7 1.2 m) stereo front-projection system positioned 3 m from the observer.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental apparatus.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "The relatively long viewing distance minimizes focus cues to flatness.",
+    "claim_type": "EXPLICIT",
+    "source": "This relatively long viewing distance minimizes focus cues to flatness.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the effect of viewing distance on depth cues.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Except for focus cues, the display system recreates the retinal images that would have been formed by the original scene.",
+    "claim_type": "EXPLICIT",
+    "source": "Except for focus cues, the display system recreates the retinal images that would have been formed by the original scene.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a property of the experimental apparatus.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "Each scene was viewed binocularly through a small virtual aperture (1\u00b0 or 3\u00b0 of visual angle) positioned 5 arcmin of disparity in front of the sampled point in the scene.",
+    "claim_type": "EXPLICIT",
+    "source": "Each scene was viewed binocularly through a small virtual aperture (1\u00b0 or 3\u00b0 of visual angle) positioned 5 arcmin of disparity in front of the sampled point in the scene (Figure 2A); the viewing situation is akin to looking at the world through a straw (McDermott, 2004).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the experimental viewing conditions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "The viewing situation is akin to looking at the world through a straw.",
+    "claim_type": "EXPLICIT",
+    "source": "Each scene was viewed binocularly through a small virtual aperture (1\u00b0 or 3\u00b0 of visual angle) positioned 5 arcmin of disparity in front of the sampled point in the scene (Figure 2A); the viewing situation is akin to looking at the world through a straw (McDermott, 2004).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an analogy supported by a citation to describe the viewing condition.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The same observers also estimated surface tilt with an extensive set of artificial planar stimuli that were matched to the tilts, slants, distances, and luminance contrasts of the natural stimuli.",
+    "claim_type": "EXPLICIT",
+    "source": "The same observers also estimated surface tilt with an extensive set of artificial planar stimuli that were matched to the tilts, slants, distances, and luminance contrasts of the natural stimuli presented in the experiment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design for the control condition.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "Performance differences between natural and artificial stimuli cannot be attributed to differences in tilt, slant, distance, or luminance contrast.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, any observed performance differences between natural and artificial stimuli cannot be attributed to these dimensions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the experimental design that matched these dimensions.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "Human responses to artificial stimuli were unbiased.",
+    "claim_type": "EXPLICIT",
+    "source": "With artificial stimuli, human estimates are unbiased and estimate variance is low.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the data shown in Figure 2E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "Estimate variance is low with artificial stimuli.",
+    "claim_type": "EXPLICIT",
+    "source": "With artificial stimuli, human estimates are unbiased and estimate variance is low.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the data shown in Figure 2F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Model observer predictions (MMSE estimates) parallel human performance with natural stimuli.",
+    "claim_type": "EXPLICIT",
+    "source": "Model observer predictions (minimum mean squared error [MMSE] estimates; black curves) parallel human performance with natural stimuli.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the comparison of model predictions and human data shown in Figure 2E and 2F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Standard Bayesian estimation theory predicts that the prior will influence estimates more when measurements are unreliable and will influence estimates less when measurements are reliable.",
+    "claim_type": "EXPLICIT",
+    "source": "Standard Bayesian estimation theory predicts that the prior will influence estimates more when measurements are unreliable and will influence estimates less when measurements are reliable (Knill and Richards, 1996).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of established theory supported by a citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "With natural stimuli, estimates are maximally biased at oblique tilts and unbiased at cardinal tilts.",
+    "claim_type": "EXPLICIT",
+    "source": "With natural stimuli, estimates are maximally biased at oblique tilts and unbiased at cardinal tilts; estimate variance is highest at oblique tilts (~60\u00b0 and ~120\u00b0) and lowest at cardinal tilts.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the data shown in Figure 2E and 2F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Estimate variance is highest at oblique tilts (~60\u00b0 and ~120\u00b0) and lowest at cardinal tilts with natural stimuli.",
+    "claim_type": "EXPLICIT",
+    "source": "With natural stimuli, estimates are maximally biased at oblique tilts and unbiased at cardinal tilts; estimate variance is highest at oblique tilts (~60\u00b0 and ~120\u00b0) and lowest at cardinal tilts.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the data shown in Figure 2F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "With artificial stimuli, estimates are essentially unbiased and are less variable across tilt.",
+    "claim_type": "EXPLICIT",
+    "source": "With artificial stimuli, estimates are essentially unbiased and are less variable across tilt.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the data shown in Figure 2E and 2F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "The unbiased responses to artificial stimuli imply that the biased responses to natural stimuli accurately reflect biased perceptual estimates.",
+    "claim_type": "EXPLICIT",
+    "source": "The unbiased responses to artificial stimuli imply that the biased responses to natural stimuli accurately reflect biased perceptual estimates, under the assumption that the function that maps perceptual estimates to probe responses is stable across stimulus types (see Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the assumption of stable output mapping across stimulus types.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "With natural stimuli, estimation errors are more irregularly distributed, and the peak locations change systematically with groundtruth tilt.",
+    "claim_type": "EXPLICIT",
+    "source": "With natural stimuli, estimation errors are more irregularly distributed, and the peak locations change systematically with groundtruth tilt (white points).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the data shown in Figure 3A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "At groundtruth tilt of 60\u00b0, human observers frequently estimated cardinal tilts (0\u00b0 or 90\u00b0) instead of the correct oblique tilt.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, at this groundtruth tilt, the human observers frequently (and incorrectly) estimated cardinal tilts instead of the correct oblique tilt.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the error distribution data shown in Figure 3A.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "The most probable groundtruth tilt, conditional on the estimate, peaks at the estimated tilt for both natural and artificial stimulus types.",
+    "claim_type": "EXPLICIT",
+    "source": "The most probable groundtruth tilt, conditional on the estimate, peaks at the estimated tilt for both stimulus types.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the data shown in Figure 4A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Any given estimate is a good indicator of the groundtruth tilt despite the overall poorer performance with natural stimuli.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, any given estimate is a good indicator of the groundtruth tilt despite the overall poorer performance with natural stimuli.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the conditional probability distributions shown in Figure 4A.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The MMSE model accounts for the conditional distributions of groundtruth tilt given estimates.",
+    "claim_type": "EXPLICIT",
+    "source": "Also, these conditional distributions are well accounted for by the MMSE estimates; shaded regions show 95% confidence intervals on the MMSE estimates from 1000 Monte Carlo simulations of the experiment (see Materials and methods).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the model predictions shown in Figure 4A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The MMSE model had zero free parameters to fit to human performance.",
+    "claim_type": "EXPLICIT",
+    "source": "The MMSE model had zero free parameters to fit to human performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a key property of the model used in the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Tilt estimates from natural stimuli are less accurate at oblique than at cardinal groundtruth tilts.",
+    "claim_type": "EXPLICIT",
+    "source": "Tilt estimates from natural stimuli are less accurate at oblique than at cardinal groundtruth tilts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the bias and variance data shown in Figure 2E and 2F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "The variance of the distribution of groundtruth tilts conditional on estimates is approximately constant, regardless of whether the estimated tilt is cardinal or oblique.",
+    "claim_type": "EXPLICIT",
+    "source": "The most probable groundtruth tilt equals the estimated tilt, and the variance of each distribution is approximately constant, regardless of whether the estimated tilt is cardinal or oblique.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the data shown in Figure 4A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Estimates from natural and artificial stimuli provide nearly equivalent information about groundtruth.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, the estimates from natural and artificial stimuli provide nearly equivalent information about groundtruth (see also Figure 4\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the comparison of conditional distributions shown in Figure 4A and Figure 4\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "All tilt estimates regardless of the value are similarly good predictors of groundtruth tilt.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, even though tilt estimation performance is far poorer at oblique than at cardinal tilts and is far poorer with natural than with artificial stimuli, all tilt estimates regardless of the value are similarly good predictors of groundtruth tilt.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the conditional probability distributions shown in Figure 4A.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Some regions of natural scenes yield high-reliability measurements that make tilt estimation easy; other regions yield low-reliability measurements that make tilt estimation hard.",
+    "claim_type": "EXPLICIT",
+    "source": "Some regions of natural scenes yield high-reliability measurements that make tilt estimation easy; other regions of natural scenes yield low-reliability measurements that make tilt estimation hard.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the variability in measurement reliability across natural scenes.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "When measurements are reliable, the prior influences estimates less; when measurements are unreliable, the prior influences estimates more.",
+    "claim_type": "EXPLICIT",
+    "source": "When measurements are reliable, the prior influences estimates less; when measurements are unreliable, the prior influences estimates more.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of Bayesian estimation theory.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Cardinal tilt estimates can result either from reliable measurements of cardinal tilts or from unreliable measurements of oblique tilts.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, cardinal tilt estimates can result either from reliable measurements of cardinal tilts or from unreliable measurements of oblique tilts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on Bayesian estimation principles.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Oblique tilt estimates can only result from reliable measurements of oblique tilts.",
+    "claim_type": "EXPLICIT",
+    "source": "On the other hand, oblique tilt estimates can only result from reliable measurements of oblique tilts, because the measurements must be reliable enough to overcome the influence of the prior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on Bayesian estimation principles.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "The uniformly reliable information provided by the estimates about groundtruth may simplify the computational processes that optimally pool local estimates into global estimates.",
+    "claim_type": "EXPLICIT",
+    "source": "The uniformly reliable information provided by the estimates about groundtruth (see Figure 4A) may simplify the computational processes that optimally pool local estimates into global estimates (see Discussion).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is speculation about the implications of the findings for subsequent processing.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "The normative model is a Bayes optimal observer that optimizes 3D tilt estimation in natural scenes given a squared error cost function.",
+    "claim_type": "EXPLICIT",
+    "source": "To answer this question, we compared human performance to the performance of a normative model, a Bayes optimal observer that optimizes 3D tilt estimation in natural scenes given a squared error cost function (Burge et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the model used in the study, supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "At each pixel in the database, the image cues are computed directly from the photographic images within a local area, and the groundtruth tilt is computed directly from the distance data.",
+    "claim_type": "EXPLICIT",
+    "source": "At each pixel in the database, the image cues are computed directly from the photographic images within a local area, and the groundtruth tilt is computed directly from the distance data (see Materials and methods; [Burge et al., 2016]).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data processing methods, supported by a citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "The model is 'image-computable': the model computes the image cues from image pixels and produces tilt estimates as outputs.",
+    "claim_type": "EXPLICIT",
+    "source": "In other words, the model is 'image-computable': the model computes the image cues from image pixels and produces tilt estimates as outputs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a key property of the model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "In the cue-combination literature, cues are commonly assumed to be statistically independent.",
+    "claim_type": "EXPLICIT",
+    "source": "In the cue-combination literature, cues are commonly assumed to be statistically independent (Ernst and Banks, 2002).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about common assumptions in the literature, supported by a citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "In natural scenes, it is not clear whether the assumption of cue independence holds.",
+    "claim_type": "EXPLICIT",
+    "source": "In natural scenes, it is not clear whether this assumption holds.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about uncertainty regarding the validity of the independence assumption in natural scenes.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "The normative model used here is free of assumptions about statistical independence and the form of the joint probability distribution.",
+    "claim_type": "EXPLICIT",
+    "source": "Fortunately, the normative model used here is free of assumptions about statistical independence and the form of the joint probability distribution (see Discussion).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a key advantage of the modeling approach used in the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "The normative model provides a principled benchmark, grounded in natural scene statistics, against which to compare human performance.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, our normative model provides a principled benchmark, grounded in natural scene statistics, against which to compare human performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the role and value of the normative model.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "The model observer predicts the overall pattern of raw human responses.",
+    "claim_type": "EXPLICIT",
+    "source": "The model observer predicts the overall pattern of raw human responses (see also Figure 5\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the comparison shown in Figure 5C and Figure 5\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "The model observer predicts the counts, means, and variances of the human tilt estimates.",
+    "claim_type": "EXPLICIT",
+    "source": "More impressively, the model observer predicts the counts, means, and variances of the human tilt estimates (Figure 2D\u2013F), the conditional error distributions (Figure 3), and the conditional groundtruth tilt distributions (Figure 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the comparisons shown in Figures 2D-F, 3, and 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "The model explains a large proportion of the variance for all performance measures.",
+    "claim_type": "EXPLICIT",
+    "source": "The model explains a large proportion of the variance for all of these performance measures (Figure 5D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the R\u00b2 values shown in Figure 5D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "The human visual system estimates tilt in accordance with optimal processes that minimize error in natural scenes.",
+    "claim_type": "EXPLICIT",
+    "source": "These results indicate that human visual system estimates tilt in accordance with optimal processes that minimize error in natural scenes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the close match between human and model performance.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "The biased and imprecise human tilt estimates with natural stimuli are nevertheless lawful.",
+    "claim_type": "EXPLICIT",
+    "source": "We conclude that the biased and imprecise human tilt estimates with natural stimuli are nevertheless lawful.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion based on the model's ability to predict human performance.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The model observer had no free parameters that were fit to the human data.",
+    "claim_type": "EXPLICIT",
+    "source": "First, this model observer had no free parameters that were fit to the human data (Burge et al., 2016); instead, the model observer was designed to perform the task optimally given the three image cues.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a key property of the model, supported by a citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "The close agreement between human and model performance suggests that humans use the same cues (or cues that strongly correlate with those) used by the normative model.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, the close agreement between human and model performance suggests that humans use the same cues (or cues that strongly correlate with those) used by the normative model (see Discussion).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the similarity between human and model performance.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "Natural stimuli elicit similar trial-by-trial errors from human and model observers.",
+    "claim_type": "EXPLICIT",
+    "source": "Natural stimuli do elicit similar trial-by-trial errors from human and model observers (Figure 6A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the trial-by-trial error correlations shown in Figure 6A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "The model predicts trial-by-trial human errors far better than chance.",
+    "claim_type": "EXPLICIT",
+    "source": "The model predicts trial-by-trial human errors far better than chance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the significant correlation coefficients shown in Figure 6B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "The correlation coefficients for trial-by-trial model and human estimates are significant.",
+    "claim_type": "EXPLICIT",
+    "source": "We quantify the model-human similarity with the circular correlation coefficients of the trial-by-trial model and human estimates (Figure 6B). The correlation coefficients are significant.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the correlation coefficients and confidence intervals shown in Figure 6B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "The errors are systematically and reliably dependent on the properties of natural stimuli and these properties affect human and model observers similarly.",
+    "claim_type": "EXPLICIT",
+    "source": "This result implies that the errors are systematically and reliably dependent on the properties of natural stimuli and that these properties affect human and model observers similarly.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the significant trial-by-trial error correlations.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "Human and model bias-corrected errors are significantly correlated.",
+    "claim_type": "EXPLICIT",
+    "source": "Human and model bias-corrected errors are also significantly correlated (Figure 6C,D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the correlation coefficients shown in Figure 6D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "The human-human correlation sets an upper bound for the model-human correlation.",
+    "claim_type": "EXPLICIT",
+    "source": "The human-human correlation (dashed line in Figure 6B,D; see Figure 6\u2014figure supplement 1) sets an upper bound for the model-human correlation.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an inference based on the comparison of human-human and model-human correlations.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "The model-human correlation approaches the human-human correlation bound in some cases.",
+    "claim_type": "EXPLICIT",
+    "source": "The model-human correlation approaches this bound in some cases.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the comparison of correlation coefficients shown in Figure 6B and 6D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "Natural stimulus variation at a given groundtruth tilt causes similar response variation in human observers and the model observer.",
+    "claim_type": "EXPLICIT",
+    "source": "These results show that natural stimulus variation at a given groundtruth tilt causes similar response variation in human observers and the model observer.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the trial-by-trial error correlations.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "All other alternative models predict human performance more poorly than the normative model.",
+    "claim_type": "EXPLICIT",
+    "source": "To ensure that the predictive power of the model observer is not trivial, we developed multiple alternative models. All other models predict human performance more poorly (Figure 6\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the comparison of different models shown in Figure 6\u2014figure supplement 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "The normative model accounts for human tilt estimates at the level of the summary statistics, the conditional distributions, and the trial-by-trial errors.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, the normative model, without fitting to the human data, accounts for human tilt estimates at the level of the summary statistics (Figure 2D\u2013F), the conditional distributions (Figure 3 and Figure 4), and the trial-by-trial errors (Figure 6).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the model's predictive performance across multiple levels of analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "The human visual system's perceptual processes and the normative model's computations are making similar use of similar information.",
+    "claim_type": "EXPLICIT",
+    "source": "Together, this evidence suggests that the human visual system's perceptual processes and the normative model's computations are making similar use of similar information.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the close match between human and model performance.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "The human visual system makes near-optimal use of the available information in natural stimuli for estimating 3D surface tilt.",
+    "claim_type": "EXPLICIT",
+    "source": "We conclude that the human visual system makes near-optimal use of the available information in natural stimuli for estimating 3D surface tilt.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion based on the close match between human and optimal model performance.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "Slant and distance had a substantial impact on estimation error with both natural and artificial stimuli.",
+    "claim_type": "EXPLICIT",
+    "source": "Consistent with previous reports, slant and distance had a substantial impact on estimation error (Watt et al., 2005) with both natural and artificial stimuli (Figure 7).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the data shown in Figure 7 and is consistent with previous literature.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Absolute error decreases linearly with slant.",
+    "claim_type": "EXPLICIT",
+    "source": "Absolute error decreases linearly with slant.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the data shown in Figure 7A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "Estimation error decreases approximately 20\u00b0 as slant changes from 30\u00b0 to 60\u00b0.",
+    "claim_type": "EXPLICIT",
+    "source": "Estimation error decreases approximately 20\u00b0 as slant changes from 30\u00b0 to 60\u00b0.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the data shown in Figure 7A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "Absolute error increases linearly with distance.",
+    "claim_type": "EXPLICIT",
+    "source": "Absolute error increases linearly with distance.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the data shown in Figure 7B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "Estimation error increases approximately 15\u00b0 as distance increases from 3 m to 30 m.",
+    "claim_type": "EXPLICIT",
+    "source": "Estimation error increases approximately 15\u00b0 as distance increases from 3 m to 30 m.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the data shown in Figure 7B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "After controlling for slant, distance, and luminance contrast, tilt estimation with natural stimuli is considerably poorer than tilt estimation with artificial stimuli.",
+    "claim_type": "EXPLICIT",
+    "source": "Even after controlling for these stimulus dimensions, tilt estimation with natural stimuli is considerably poorer than tilt estimation with artificial stimuli.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the comparison of performance with matched stimuli.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "Other factors beyond slant, distance, and luminance contrast must account for the differences in performance between natural and artificial stimuli.",
+    "claim_type": "EXPLICIT",
+    "source": "Other factors must therefore account for the differences.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the observation that matching these factors does not eliminate performance differences.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "Local tilt variance is defined as the circular variance of the groundtruth tilt values in the central 1\u00b0 area of each stimulus.",
+    "claim_type": "EXPLICIT",
+    "source": "To quantify the departure of surface structure from planarity, we defined local tilt variance as the circular variance of the groundtruth tilt values in the central 1\u00b0 area of each stimulus.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the definition of a key variable used in the analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "Estimation error increases linearly with tilt variance for both human and model observers.",
+    "claim_type": "EXPLICIT",
+    "source": "First, we found that estimation error increases linearly with tilt variance for both human and model observers (Figure 8A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the data shown in Figure 8A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "Tilt variance co-varies with groundtruth tilt \u2014 cardinal tilts tend to have lower tilt variance than oblique tilts.",
+    "claim_type": "EXPLICIT",
+    "source": "Unfortunately, tilt variance co-varies with groundtruth tilt \u2014 cardinal tilts tend to have lower tilt variance than oblique tilts, presumably because of the ground plane (Figure 8B)\u2014 which means that the effect of groundtruth tilt could be misattributed to tilt variance.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the data shown in Figure 8B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "The effect of tilt variance is independent of groundtruth tilt.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that the effect of tilt variance is independent of groundtruth tilt (Figure 8C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the analysis shown in Figure 8C that separates cardinal and oblique tilts.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "Tilt variance (i.e., departure from surface planarity) is one of several key stimulus factors that impacts tilt estimation performance.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, like slant and distance, tilt variance (i.e., departure from surface planarity) is one of several key stimulus factors that impacts tilt estimation performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion based on the analysis of tilt variance effects.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "Human performance with full-field viewing is essentially the same as with small patches.",
+    "claim_type": "EXPLICIT",
+    "source": "We re-ran the experiment with full-field viewing (36\u00b0 x 21\u00b0; see Figure 1B for an example full-field scene). We found that human performance is essentially the same (Figure 2\u2014figure supplement 5).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the data shown in Figure 2\u2014figure supplement 5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "Scene structure is correlated only over a local area.",
+    "claim_type": "EXPLICIT",
+    "source": "Although it may seem surprising that full-field viewing does not substantially improve performance, it makes sense. Scene structure is correlated only over a local area.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement based on knowledge about the spatial statistics of natural scenes.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "Except for the ground plane, it is unusual for surfaces to have constant orientation over large visual angles.",
+    "claim_type": "EXPLICIT",
+    "source": "Except for the ground plane, it is unusual for surfaces to have constant orientation over large visual angles.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge about the structure of natural scenes.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "Scene locations far from the target add little information about local tilt.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, scene locations far from the target add little information about local tilt.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the spatial correlation structure of natural scenes.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "All eight combinations of scales for computing groundtruth tilt and image cue values yield the same qualitative pattern of results.",
+    "claim_type": "EXPLICIT",
+    "source": "We recomputed groundtruth tilt for two scales and recomputed image cue values for four scales (see Materials and methods). All eight combinations of scales yield the same qualitative pattern of results.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a robustness check on the results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "The statistics of local surface orientation change with elevation in natural scenes.",
+    "claim_type": "EXPLICIT",
+    "source": "The statistics of local surface orientation change with elevation in natural scenes (Adams et al., 2016; Yang and Purves, 2003b).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about natural scene statistics supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "Scene statistics were computed from range scans and stereo-images captured from human eye height with earth parallel gaze.",
+    "claim_type": "EXPLICIT",
+    "source": "In our study, scene statistics were computed from range scans and stereo-images (36\u00b0 x 21\u00b0 field-of-view) that were captured from human eye height with earth parallel gaze (Burge et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data collection conditions, supported by a citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "The vast majority of eye movements in natural scenes are smaller than 10\u00b0.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the vast majority of eye movements in natural scenes are smaller than 10\u00b0 (Land and Hayhoe, 2001; Pelz and Rothkopf, 2007; Dorr et al., 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about eye movement statistics supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "The results presented are likely to be representative of an important subset of conditions that occur in natural viewing.",
+    "claim_type": "EXPLICIT",
+    "source": "Hence, the results presented here are likely to be representative of an important subset of conditions that occur in natural viewing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the eye movement statistics.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "The normative model nicely predicts the unbiased pattern of human estimate means with artificial stimuli.",
+    "claim_type": "EXPLICIT",
+    "source": "The model nicely predicts the unbiased pattern of human estimate means.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about model performance with artificial stimuli.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "The model predicts estimate variances that are lower than the human estimate variances observed with artificial stimuli.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the model predicts estimate variances that are lower than the human estimate variances that we observed (although the predicted and observed patterns are consistent).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a discrepancy between model predictions and human data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "The normative model used here does not explicitly model how internal noise affects human performance.",
+    "claim_type": "EXPLICIT",
+    "source": "One possibility is that the normative model used here does not explicitly model how internal noise affects human performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is speculation about a potential limitation of the model.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "In natural scenes, natural stimulus variability may swamp internal noise and be the controlling source of uncertainty.",
+    "claim_type": "EXPLICIT",
+    "source": "In natural scenes, natural stimulus variability may swamp internal noise and be the controlling source of uncertainty.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is speculation about the relative importance of different sources of uncertainty.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "With artificial stimuli, an explicit model of internal noise may be required to account quantitatively for the variance of human performance.",
+    "claim_type": "EXPLICIT",
+    "source": "But with artificial stimuli, an explicit model of internal noise may be required to account quantitatively for the variance of human performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is speculation about what might be needed to improve model predictions.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "The natural stimuli presented in the experiment were chosen via constrained random sampling.",
+    "claim_type": "EXPLICIT",
+    "source": "The natural stimuli presented in the experiment were chosen via constrained random sampling (see Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the stimulus sampling method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "Random stimulus sampling increases the likelihood that the reported performance levels are representative of generic natural scenes.",
+    "claim_type": "EXPLICIT",
+    "source": "Random stimulus sampling increases the likelihood that the reported performance levels are representative of generic natural scenes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the benefits of random sampling.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "The tilt estimates from the normative model change smoothly with image cue values.",
+    "claim_type": "EXPLICIT",
+    "source": "Fortunately, the tilt estimates from the normative model change smoothly with image cue values.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a property of the model's estimate function.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "Systematic sparse sampling should be sufficient to explore the space of optimal estimates.",
+    "claim_type": "EXPLICIT",
+    "source": "Systematic sparse sampling should thus be sufficient to explore the space.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the smoothness of the estimate function.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "The three local image cues used by the normative model are widely studied and commonly manipulated.",
+    "claim_type": "EXPLICIT",
+    "source": "Although the three local image cues used by the normative model are widely studied and commonly manipulated, there is no guarantee that they are the most informative cues in natural scenes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the status of these cues in the literature.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "There is no guarantee that the three local image cues used by the normative model are the most informative cues in natural scenes.",
+    "claim_type": "EXPLICIT",
+    "source": "Although the three local image cues used by the normative model are widely studied and commonly manipulated, there is no guarantee that they are the most informative cues in natural scenes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This acknowledges a limitation of the current approach.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "Different local cues are unlikely to yield substantially better performance than the three cues used in the current model.",
+    "claim_type": "EXPLICIT",
+    "source": "However, in the current task, we speculate that different local cues are unlikely to yield substantially better performance (Burge et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is speculation supported by a citation.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "The estimation of the 3D structure of the environment is aided by the joint estimation of tilt and slant.",
+    "claim_type": "EXPLICIT",
+    "source": "The estimation of the 3D structure of the environment is aided by the joint estimation of tilt and slant (Marr's '2.5D sketch') (Marr, 1982).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about 3D vision supported by a citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "The current work only addresses the human ability to estimate unsigned tilt.",
+    "claim_type": "EXPLICIT",
+    "source": "Although we have shown that human and model tilt estimation performance are systematically affected by surface slant (Figure 7A), the current work only addresses the human ability to estimate unsigned tilt.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of the current study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "The standard approach to modeling cue-combination includes assumptions of squared error cost function, cue independence, unbiased Gaussian-distributed single cue estimates, and a flat or uninformative prior.",
+    "claim_type": "EXPLICIT",
+    "source": "The standard approach to modeling cue-combination, sometimes known as maximum likelihood estimation, includes a number of assumptions: a squared error cost function, cue independence, unbiased Gaussian-distributed single cue estimates, and a flat or uninformative prior (Ernst and Banks, 2002) (but see [Oru\u00e7 et al., 2003]).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about standard approaches in the literature, supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C130",
+    "claim": "The approach used here assumes only a squared error cost function.",
+    "claim_type": "EXPLICIT",
+    "source": "The approach used here (normative model; see Figure 5) assumes only a squared error cost function, and is guaranteed to produce the Bayes optimal estimate given the image cues, regardless of the common assumptions .",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a key advantage of the modeling approach.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C131",
+    "claim": "Methods with relatively few assumptions can be powerful tools for establishing principled predictions when it is unclear whether common assumptions hold.",
+    "claim_type": "EXPLICIT",
+    "source": "In natural scenes, it is often unclear whether the common assumptions hold. Methods with relatively few assumptions can therefore be powerful tools for establishing principled predictions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the value of the modeling approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C132",
+    "claim": "A simple average of the single-cue estimates underperforms the three-cue normative model.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, a simple average of the single-cue estimates (each based on luminance, texture, or disparity alone) underperforms the three-cue normative model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by preliminary analyses mentioned in the text.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C133",
+    "claim": "The individual cues are not independent, the single cue estimates do not follow Gaussian distribution, and the tilt prior is not flat.",
+    "claim_type": "EXPLICIT",
+    "source": "This result is not surprising given that the individual cues are not independent, that the single cue estimates do not follow Gaussian distribution, and that the tilt prior is not flat.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about why simple averaging underperforms.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C134",
+    "claim": "Local tilt estimates are unbiased predictors of groundtruth tilt and have nearly equal reliability.",
+    "claim_type": "EXPLICIT",
+    "source": "We showed that local tilt estimates are unbiased predictors of groundtruth tilt and have nearly equal reliability (Figure 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the data shown in Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C135",
+    "claim": "Optimal spatial pooling of local estimates may be relatively simple given that local tilt estimates are unbiased predictors with nearly equal reliability.",
+    "claim_type": "EXPLICIT",
+    "source": "This result implies that optimal spatial pooling of the local estimates may be relatively simple.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the properties of local estimates.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C137",
+    "claim": "Local groundtruth tilts and estimates are spatially correlated, so the independence assumption will not be strictly correct.",
+    "claim_type": "EXPLICIT",
+    "source": "Of course, local groundtruth tilts and estimates are spatially correlated, so the independence assumption will not be strictly correct.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This acknowledges a limitation of the independence assumption.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C138",
+    "claim": "The spatial correlations could be estimated from the database and incorporated into the computations.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the spatial correlations could be estimated from the database and incorporated into the computations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a suggestion for future work.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C139",
+    "claim": "If stimuli are artificial, groundtruth surface orientation is known but lighting conditions and textures are artificial.",
+    "claim_type": "EXPLICIT",
+    "source": "If the stimuli are artificial (e.g., computer-graphics generated), groundtruth surface orientation is known but lighting conditions and textures are artificial, and it is uncertain whether results obtained with artificial stimuli will generalize to natural stimuli.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about limitations of artificial stimuli based on general knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C140",
+    "claim": "If stimuli are natural photographs, groundtruth surface orientation is typically unknown.",
+    "claim_type": "EXPLICIT",
+    "source": "If the stimuli are natural (e.g., photographs of real scenes), groundtruth surface orientation is typically unknown which complicates the evaluation of the results.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about limitations of natural stimuli based on general knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C141",
+    "claim": "Tilt variance is a pervasive performance-altering feature of natural scenes that is not explicitly considered in most investigations.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, we found that tilt variance is a pervasive performance-altering feature of natural scenes that is not explicitly considered in most investigations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion based on the analysis of tilt variance effects.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C142",
+    "claim": "Characterizing the impact of tilt variance is likely to be fundamental for understanding 3D surface orientation estimation in the real-world.",
+    "claim_type": "EXPLICIT",
+    "source": "We speculate that characterizing its impact is likely to be fundamental for understanding 3D surface orientation estimation in the real-world, just as characterizing the impact of local luminance contrast has been important for understanding how humans detect spatial patterns in noise (Burgess et al., 1981).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is speculation about the importance of tilt variance, supported by an analogy to luminance contrast.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C143",
+    "claim": "Previous work demonstrated similarity between human and model performance only at the level of summary statistics.",
+    "claim_type": "EXPLICIT",
+    "source": "First, previous work demonstrated similarity between human and model performance only at the level of summary statistics (Girshick et al., 2011; Burge et al., 2010b; Weiss et al., 2002; Stocker and Simoncelli, 2006).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the state of the literature supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C144",
+    "claim": "The current study demonstrates that a principled model predicts the summary statistics, the distribution of estimates, and the trial-by-trial errors.",
+    "claim_type": "EXPLICIT",
+    "source": "We demonstrate that a principled model, operating directly on image data, predicts the summary statistics, the distribution of estimates, and the trial-by-trial errors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the contributions of the current study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C145",
+    "claim": "Previous work showed that human observers behave as if their visual systems have encoded the task-relevant statistics of 2D natural images.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, previous work showed that human observers behave as if their visual systems have encoded the task-relevant statistics of 2D natural images (Girshick et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about previous work supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C146",
+    "claim": "The current study shows that human observers behave as if they have properly encoded the task-relevant joint statistics of 2D natural images and the 3D properties of natural scenes.",
+    "claim_type": "EXPLICIT",
+    "source": "We show that human observers behave as if they have properly encoded the task-relevant joint statistics of 2D natural images and the 3D properties of natural scenes (also see (Burge et al., 2010b)).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the contributions of the current study, with a supporting citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C147",
+    "claim": "Previous work tested and modeled human performance with artificial stimuli only.",
+    "claim_type": "EXPLICIT",
+    "source": "Third, previous work tested and modeled human performance with artificial stimuli only (Girshick et al., 2011; Burge et al., 2010b; Weiss et al., 2002; Stocker and Simoncelli, 2006).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the limitations of previous work supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C148",
+    "claim": "The current study tests human performance with both natural and artificial stimuli.",
+    "claim_type": "EXPLICIT",
+    "source": "We test human performance with both natural and artificial stimuli.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a key feature of the experimental design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C149",
+    "claim": "The dramatic, but lawful, changes in performance with natural stimuli highlight the importance of studies with the stimuli that visual systems evolved to process.",
+    "claim_type": "EXPLICIT",
+    "source": "The dramatic, but lawful, changes in performance with natural stimuli highlight the importance of studies with the stimuli that visual systems evolved to process.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion about the importance of using natural stimuli.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C150",
+    "claim": "Three human observers participated in the experiment; two were authors, and one was na\u00efve about the purpose of the experiment.",
+    "claim_type": "EXPLICIT",
+    "source": "Three human observers participated in the experiment; two were authors, and one was na\u00efve about the purpose of the experiment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the participants in the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C151",
+    "claim": "Informed consent was obtained from participants before the experiment.",
+    "claim_type": "EXPLICIT",
+    "source": "Informed consent was obtained from participants before the experiment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an ethical procedure followed in the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C152",
+    "claim": "The research protocol was approved by the Institutional Review Board of the University of Pennsylvania and is in accordance with the Declaration of Helsinki.",
+    "claim_type": "EXPLICIT",
+    "source": "The research protocol was approved by the Institutional Review Board of the University of Pennsylvania and is in accordance with the Declaration of Helsinki.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the ethical approval for the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C155",
+    "claim": "The texture cue to tilt is defined as the orientation of the major axis of the local amplitude spectrum of the luminance image.",
+    "claim_type": "EXPLICIT",
+    "source": "The texture cue to tilt is defined as the orientation of the major axis of the local amplitude spectrum of the luminance image.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the definition of the texture cue.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C156",
+    "claim": "This texture cue is more accurate in natural scenes than traditional texture cues.",
+    "claim_type": "EXPLICIT",
+    "source": "However, this texture cue is more accurate in natural scenes than traditional texture cues (Burge et al., 2016; Clerc and Mallat, 2002; Galasso and Lasenby, 2007; Malik and Rosenholtz, 1997; Massot and H\u00e9rault, 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the properties of the texture cue supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C157",
+    "claim": "When responses are unbiased, a stronger case can be made that the human responses equal the perceptual estimates.",
+    "claim_type": "EXPLICIT",
+    "source": "When responses are unbiased, a stronger case can be made that the human responses equal the perceptual estimates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the interpretation of unbiased responses.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C160",
+    "claim": "Assuming that the output-mapping function is stable across stimulus types, the biased responses to natural stimuli accurately reflect biased perceptual estimates.",
+    "claim_type": "EXPLICIT",
+    "source": "Assuming that the output-mapping function is stable across stimulus types, we conclude that the biased responses to natural stimuli accurately reflect biased perceptual estimates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion based on the assumption of stable output mapping.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  }
+]

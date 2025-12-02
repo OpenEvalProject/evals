@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C93"
+    ],
+    "result": "MELK is a serine/threonine kinase in the AMPK-related family that is overexpressed in various cancers and associated with aggressive cancer phenotypes. MELK is best characterized as a mitotic kinase with cell cycle-dependent regulation, and has been proposed as a therapeutic target in basal-like/triple-negative breast cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C27 and C93 are all supported by citations to prior literature and represent established background knowledge about MELK. These claims provide context for the study but do not represent new findings from the current work. The citations appear appropriate and the claims are consistent with the scientific literature on MELK.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Several MELK inhibitors have been developed with varying potency and selectivity profiles. OTSSP167 is the most potent but promiscuous inhibitor that entered clinical trials, while MELK-T1, NVS-MELK8a, and MRT199665 represent more selective alternatives with nanomolar potency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C38 are supported by citations to prior literature describing previously published MELK inhibitors. These claims establish the landscape of existing MELK inhibitors and their properties, providing context for the development of HTH-01-091. The characterization of OTSSP167 as promiscuous (C31-C32) is supported by data in the current manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "HTH-01-091 is a potent and selective MELK inhibitor developed through medicinal chemistry optimization of the lead compound JW-7-25-1. HTH-01-091 inhibits MELK with IC50 of 10.5 nM and exhibits greatly improved selectivity compared to JW-7-25-1 and OTSSP167, with only 4% of kinases inhibited >90% at 1 \u03bcM compared to 67% for OTSSP167.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C45-C51, C99-C101 are well-supported by biochemical assay data (Tables 1-2) and kinase profiling data (Figure 1B, Figure 1\u2014figure supplement 1). The medicinal chemistry optimization is documented with IC50 values and selectivity scores (S(35) score improved from 0.54 to 0.16). The comparison to OTSSP167 demonstrates substantial improvement in selectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Crystal structures of MELK in complex with HTH-01-091 and MRT199665 reveal type I binding modes with specific molecular interactions. HTH-01-091 forms a single hinge interaction through its quinoline nitrogen with Cys89.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by crystal structure data (Figure 1C-D, PDB codes 5TWL and 5TX3) with detailed structural analysis described in the text. The structures provide molecular-level understanding of inhibitor binding and are appropriately characterized. Resolution (2.5 \u00c5) and refinement statistics are provided in supplementary materials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C102",
+      "C103"
+    ],
+    "result": "HTH-01-091 is cell permeable and binds to MELK in cells in an ATP-competitive fashion, as demonstrated by dose-dependent reduction of MELK pull-down in KiNativ assays without affecting ERK1/2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C102-C103 are supported by KiNativ assay data (Figure 2A) showing dose-dependent reduction of MELK pull-down with HTH-01-091 treatment while ERK1/2 remains unaffected. This demonstrates both cell permeability and ATP-competitive binding. The control with ERK1/2 is appropriate and strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C104",
+      "C105",
+      "C119",
+      "C120"
+    ],
+    "result": "All tested MELK inhibitors induce proteasome-dependent degradation of MELK protein in cells, with degradation rate generally correlating with biochemical potency. MRT199665 induces the most rapid degradation despite lower biochemical potency. The degradation requires the ubiquitin-proteasome system but not the cullin-RING E3 ligase family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61, C88-C92, C104-C105, C119-C120 are supported by immunoblot data (Figure 2B, Figure 2\u2014figure supplement 1) showing time-dependent MELK degradation with multiple inhibitors. The proteasome dependence is demonstrated by carfilzomib rescue, while MLN4924 had no effect, ruling out cullin-RING E3 ligases. The observation about MRT199665 (C59, C91) is interesting but the mechanistic explanation (C119) is speculative. Claim C92 about cell-cycle independence is based on unpublished cyclin B1 data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "In proliferation assays, OTSSP167 demonstrated potent antiproliferative effects (IC50 <100 nM) across breast cancer cell lines, while selective MELK inhibitors (HTH-01-091, NVS-MELK8a, MELK-T1) were at least 300-fold less potent. MRT199665 showed intermediate activity. No clear difference was observed between basal-like and luminal breast cancer subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 are supported by proliferation assay data in multiple cell lines at 3-day and 7-day timepoints (Figure 2C, Tables 3-4). The large difference in potency between OTSSP167 and selective inhibitors is striking and well-documented. The lack of subtype specificity contradicts prior reports. Cell line authentication by STR profiling (C106) strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C106",
+      "C107"
+    ],
+    "result": "CRISPR/Cas9-mediated genetic deletion of MELK in MDA-MB-468 cells does not affect growth rate or cell cycle distribution. MELK-/- cells show similar sensitivity to MELK inhibitors as wild-type cells, indicating that the antiproliferative activity of these inhibitors is driven by off-target effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C67-C71, C106-C107 are supported by multiple lines of evidence: successful generation of MELK-/- clones (Figure 3\u2014figure supplement 1, Figure 3\u2014source data 1), normal growth and cell cycle profiles (Figure 3B-C), and equivalent inhibitor sensitivity in WT vs MELK-/- cells (Figure 3D). The sgRNA specificity was validated by ZiFit Targeter analysis. This is a critical finding that challenges the MELK dependency hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Acute degradation of MELK using the dTAG system does not impair growth of MDA-MB-468 cells. Four dTAG molecules efficiently depleted FKBP12F36V-MELK(sg3R) within 4 hours with sustained degradation up to 72 hours. The FKBP12F36V-MELK fusion protein behaves similarly to endogenous MELK in terms of mitotic regulation and inhibitor-induced degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C72-C76, C108-C110 are supported by immunoblot data (Figure 4B-C), mass spectrometry proteomics (Figure 4D), and proliferation assays (Figure 4E). The dTAG system provides an orthogonal approach to CRISPR knockout, addressing concerns about compensatory mechanisms. The validation that FKBP12F36V-MELK behaves like endogenous MELK (Figure 4\u2014figure supplement 2) is important for interpretation. The mass spectrometry data confirming selective degradation strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "MELK-targeting shRNAs (shMELK-1, -2, -5) efficiently knockdown MELK and impair growth of MDA-MB-468 cells. However, these shRNAs cause almost identical growth defects in MELK-/- cells, indicating that off-target effects contribute to the observed phenotypes. Different shRNAs targeting MELK show discrepant phenotypic outcomes despite similar knockdown efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C77-C80, C111-C118 are supported by RT-qPCR, immunoblot, and proliferation data (Figure 5A-D, Figure 5\u2014figure supplement 1). The key finding is that shRNAs impair growth equally in WT and MELK-/- backgrounds, demonstrating off-target effects. The observation that different shRNAs with similar knockdown efficiency have different phenotypes (C114-C115) further supports off-target effects. Claim C117 about synthetic lethality is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "CRISPRi-mediated transcriptional repression of MELK using doxycycline-inducible sgRNAs efficiently suppresses MELK expression but does not impair growth of MDA-MB-468 cells in 9-day proliferation assays, confirming that MELK expression is not required for cell fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are supported by RT-qPCR data (Figure 5\u2014figure supplement 2A-C), immunoblot data (Figure 5G), and proliferation assays (Figure 5H-I). CRISPRi provides an orthogonal genetic approach to CRISPR knockout and shRNA, strengthening the conclusion that MELK is not required for MDA-MB-468 cell growth. The use of multiple independent sgRNAs (5 tested) reduces concerns about off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Neither chemical inhibition nor genetic manipulation of MELK inhibits breast cancer cell growth in vitro. OTSSP167 has selectivity issues and its anticancer effects are driven by off-target mechanisms. MELK-targeting shRNAs have off-target effects. MELK inhibition or depletion alone is not sufficient to impede growth of basal-like breast cancer cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44, C85-C87 represent the main conclusions of the study, supported by convergent evidence from multiple orthogonal approaches: selective inhibitors (C39-C66), CRISPR knockout (C67-C71), dTAG degradation (C72-C76), shRNA (C77-C80), and CRISPRi (C81-C84). The conclusion is strengthened by the use of multiple cell lines and authentication. This directly contradicts prior literature claiming MELK dependency in BBC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Any potential dependence on MELK in cancer is not easily modeled using common cell culture conditions. Combined use of genetic, pharmacological, and chemical genetic perturbations is required to reach conclusions regarding target dependence. The study cannot rule out that MELK may play a role in vivo in more context-dependent assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 represent important methodological conclusions supported by the study design and findings. Claim C96 about the G20V mutation in MDA-MB-468 is supported by citation to Forbes et al., 2017, though its functional significance is unclear. Claim C97 appropriately acknowledges limitations\u2014the study only tested in vitro conditions. Claim C98 about clonogenic assays is supported by citation to a submitted manuscript, which is less reliable than published work.",
+    "result_type": "MAJOR"
+  }
+]

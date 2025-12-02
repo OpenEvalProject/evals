@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "A genome-scale shRNA screen in PIK3CA-mutant MDA-MB-453 breast cancer cells identified five genes (PIM2, ZAK, TACC1, ZFR, ZNF565) whose suppression converts PI3K inhibitor-induced growth arrest into apoptotic cell death. The screen used 98k shRNAs, FACS-based sorting of apoptotic cells, and two computational algorithms (STARS and RIGER) to identify 57 candidate genes, of which five were validated using multiple shRNAs with different seed sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The screen design is well-described (C3, C18-C21, C84-C85) with appropriate controls including multiple shRNAs per gene to rule out off-target effects (C90-C91). The five genes were validated by multiple independent shRNAs showing PARP cleavage (C88), sub-G1 DNA content (C89), and specificity for PI3K inhibition context (C86-C87). The methodology is rigorous with biological replicates and computational validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The five identified genes reduce proliferation 2-4 fold when suppressed alone but do not induce apoptosis in the absence of PI3K inhibition, demonstrating specificity for the combination context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are supported by PARP cleavage data (Figure 1D) showing no apoptosis with gene suppression alone. This specificity is critical for establishing that these genes specifically modify PI3K inhibitor response rather than being generally pro-survival. The data clearly distinguish between proliferation effects and apoptotic effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C92"
+    ],
+    "result": "Rescue experiments using ORF overexpression with synonymous mutations confirmed on-target effects for PIM2, ZNF565, and TACC1. For PIM2, a kinase-dead mutant (K61A) failed to rescue, demonstrating that PIM2 kinase activity is essential for preventing cell death upon PI3K inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rescue approach is methodologically sound (C92, C25) with appropriate controls. The kinase-dead mutant experiment (C26-C27) provides strong evidence for mechanism. However, ZFR could not be validated by this approach (C93), which is appropriately acknowledged. Three of five genes were successfully validated by rescue, strengthening confidence in on-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "ZAK overexpression reduced cell viability in a kinase-dependent manner, independent of shRNA suppression or PI3K inhibition, suggesting context-dependent effects of ZAK on cell fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are supported by data in Figure 2\u2014figure supplement 1B. This finding explains why ZAK could not be validated by rescue assay and is consistent with literature showing ZAK has context-dependent pro- and anti-proliferative roles (C81). The observation is clearly documented and appropriately interpreted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "PIM2 and TACC1 overexpression partially rescued the effects of suppressing other candidate genes when combined with PI3K inhibition, suggesting these genes have general pro-survival functions in the context of PI3K pathway inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cross-rescue experiments (C30, Figure 2\u2014figure supplement 1D) provide evidence for functional relationships between candidates. The interpretation (C31) is reasonable but somewhat speculative. The partial rescue suggests overlapping but not identical mechanisms, which is biologically plausible given the known functions of these genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Small molecule inhibitors of ZAK (HYJ-2-129-6, HYJ-2-34-2, TL-01-124) and PIM2 (HTH-01-091, HTH-02-096) synergize with PI3K inhibition to induce cell death. A structurally similar ZAK inhibitor analog (TL-02-082) that does not bind ZAK showed no synergy, confirming on-target effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The small molecule validation (C32-C34, C94-C96) is rigorous with multiple compounds per target, biochemical potency data, and appropriate negative control (C33). Synergy was assessed using the Bliss independence model with clear criteria. This orthogonal validation approach strengthens confidence that the shRNA effects are on-target and therapeutically relevant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C97"
+    ],
+    "result": "The synergistic interaction between suppression of the five genes and PI3K inhibition was confirmed in multiple breast cancer cell lines with oncogenic PI3K pathway activation (HCC1954, T47D, HCC1937, SKBR3) and one ovarian cancer line (EFO-21), but not in cell lines with wild-type PI3K pathway (CAL-120, MDA-MB-231, MCF10A) or GBM cell lines with PTEN loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell line panel (C35-C40, C97) provides strong evidence for context-specificity. Testing across multiple genetic contexts (PIK3CA mutation, amplification, ERBB2 amplification, PTEN loss) and negative controls (wild-type PI3K) is rigorous. The failure in GBM lines (C39) despite PTEN loss suggests tissue-specific or additional genetic context requirements, appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "Small molecule inhibitors of ZAK and PIM2 synergize with PI3K inhibition in multiple breast cancer cell lines (T47D, HCC1954, HCC1937, SKBR3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 extends the small molecule validation to additional cell lines, confirming the generalizability of the pharmacological synergy. This is supported by Figure 3B data and strengthens the therapeutic potential of these combinations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Suppression of the five genes modifies the response to multiple PI3K pathway inhibitors including HER2 inhibitors (BIBW2992), AKT inhibitors (MK2206), PDK1 inhibitors (GSK2334470), and mTOR inhibitors (Sirolimus), demonstrating that the synergy is not specific to the GDC0941 PI3K inhibitor used in the screen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Testing multiple pathway inhibitors (C42-C44) is rigorous and demonstrates pathway-level rather than compound-specific effects. The data (Figure 4A, Figure 4\u2014figure supplement 1A-B) support broad applicability within the PI3K pathway, which is important for therapeutic development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Isoform-specific PI3K inhibitor experiments showed that the PI3K alpha isoform (PIK3CA) is the major mediator of the observed interactions, as the beta isoform inhibitor (GSK2636771) failed to interact with suppression of the five genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The isoform-specificity experiment (C45-C46, Figure 4B) is well-designed and provides mechanistic insight. The conclusion that PIK3CA is the major isoform is supported by the differential effects of alpha-selective (BYL-719) versus beta-selective (GSK2636771) inhibitors. This is consistent with the PIK3CA mutations in the cell lines tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Suppression of the five genes did not convert the cytostatic effects of CDK4/6 inhibitor (Palbociclib) or ER antagonist (Fulvestrant) into cytotoxicity, demonstrating that these genes specifically modify PI3K pathway inhibition rather than non-specifically affecting growth-arrested cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The specificity controls (C47-C48, Figure 4C) are critical for ruling out non-specific effects on growth-arrested cells. This experiment strengthens the conclusion that the identified genes are specific modifiers of PI3K pathway inhibition. The experimental design is appropriate and the interpretation is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "PIM2 suppression reduces BAD phosphorylation and increases mitochondrial priming, leading to caspase-9 cleavage when combined with PI3K inhibition. This mechanism is unique to PIM2 among the five identified genes, as suppression of the other four genes did not increase mitochondrial priming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic studies (C49-C55) provide strong evidence for PIM2's mechanism through BAD phosphorylation and mitochondrial priming (Figure 5A-D). The BH3 profiling data (C51) and caspase-9 cleavage (C54-C55) support mitochondrial apoptosis pathway involvement. The specificity to PIM2 (C52-C53) is well-documented. This represents a complete mechanistic characterization for one of the five genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "In vivo validation using a microscale implantable device showed that siRNA-mediated suppression of the five genes or small molecule ZAK inhibitors synergize with systemic PI3K inhibition to induce tumor cell death in MDA-MB-453 xenografts, as measured by reduced intact nuclei density and increased cleaved-CASP3 staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vivo validation (C56-C58, Figure 6) using the microscale device is innovative and provides strong evidence for therapeutic relevance. The Bliss independence analysis (C57) demonstrates synergy, and the cleaved-CASP3 data (C58) confirms apoptosis induction. The doxorubicin control shows specificity. This is rigorous in vivo validation of the in vitro findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "Analysis of TCGA breast cancer data revealed that the five genes are amplified or overexpressed in 37% of breast cancer patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C83 reports TCGA analysis results, the manuscript provides limited methodological detail about how this analysis was performed, what thresholds were used for calling amplification/overexpression, and whether this frequency differs from background. The clinical relevance is unclear without information about correlation with PI3K pathway status or treatment response. This is descriptive rather than mechanistically informative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background claims establish that PI3K pathway activation is frequent in breast cancer through multiple mechanisms, that PI3K inhibitors induce growth arrest rather than cell death, and that clinical responses to PI3K pathway inhibitors have been limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C1-C17) are well-supported by appropriate citations and represent established knowledge in the field. They provide important context for the study's rationale. The clinical data (C15-C17) on limited efficacy of PI3K inhibitors justifies the need for combination approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Discussion claims synthesize prior literature on PIM2, TACC1, and ZAK functions, placing the current findings in context of known biology. PIM2 and AKT share substrates including BAD; TACC1 functions in spindle assembly and has been linked to PTEN loss; ZAK has context-dependent pro- and anti-proliferative roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discussion claims (C59-C82) appropriately cite prior literature and integrate it with current findings. The mechanistic speculation about TACC1 (C71) is clearly identified as such. The synthesis of ZAK's contradictory roles (C81) explains the rescue experiment results. These claims provide valuable context but are primarily interpretive rather than presenting new data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "ZFR overexpression failed to rescue ZFR suppression in the rescue assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is clearly documented (Figure 2\u2014figure supplement 1C) and appropriately acknowledged as a limitation. The authors include ZFR in subsequent experiments despite this validation failure, which is transparent but raises questions about ZFR's validity as a target. This negative result is important for complete reporting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "In MCF10A cells with wild-type PI3K pathway activated by growth factors, PI3K inhibition suppresses proliferation but suppression of the five genes does not modify this response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 (Figure 3A) provide an important control showing that growth factor-driven PI3K signaling (non-oncogenic) does not show the same synthetic lethality. This distinguishes oncogene addiction from normal pathway function and has important implications for therapeutic window.",
+    "result_type": "MINOR"
+  }
+]

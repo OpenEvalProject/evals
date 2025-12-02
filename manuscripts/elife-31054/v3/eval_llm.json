@@ -1,0 +1,459 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C27",
+      "C28",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors determined a cryo-EM structure of the hamster SUR1/rat Kir6.2 KATP channel bound to glibenclamide and ATP at 3.63 \u00c5 resolution, representing a significant improvement over their previous 5.7 \u00c5 structure. The improved resolution allowed for detailed visualization of the ATP and GBC binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C27, C28, C32-C35 collectively describe the structure determination workflow and resulting resolution. The data processing pipeline (Relion followed by Frealign refinement) is clearly documented with appropriate validation metrics (FSC curves, local resolution estimates). The resolution improvement from previous work is substantial and well-supported by the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The KATP channel construct used comprises rat Kir6.2 (96% identity to human) and hamster SUR1 (95% identity to human), expressed in rat insulinoma INS-1 832/13 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 describe the experimental system. The sequence identities to human orthologs are explicitly stated and the expression system is well-established. This is standard methodology for structural studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Atomic models were built for Kir6.2 (minus disordered termini) and TMD0 of SUR1 with full side-chain detail. The ABC core inner helices were well-resolved (3.5-4 \u00c5), while exposed helices and NBDs showed flexibility and were modeled as polyalanine or rigid bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 describe the model building strategy, which appropriately accounts for variable local resolution. The approach of building detailed models only where density supports it, and using polyalanine or rigid body refinement for poorly resolved regions, is scientifically sound and standard practice in cryo-EM.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The KATP channel structure reveals a tetrameric Kir6.2 core with typical Kir architecture in a closed state, complexed with SUR1 containing TMD0, an ABC core, and NBDs. SUR1 adopts an inward-facing conformation with separated NBDs and asymmetry between the two TMD-NBD halves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C49 describe the overall architecture observed in the structure. The closed state is supported by clear constrictions at multiple gates (C43). The SUR1 architecture and inward-facing conformation are well-documented with appropriate comparisons to related ABC transporters (CFTR, MRP1). The structural observations are consistent with the density and prior knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The asymmetry between SUR1's two TMD-NBD halves (~15\u00b0 rotation, ~10 \u00c5 translation) is similar to that observed in other ABC transporters with asymmetric NBDs (CFTR, MRP1), suggesting this may be a common structural feature of this transporter class.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 make structural comparisons to related proteins. The comparison to MRP1 and CFTR is appropriate and well-supported by citations. The inference (C54) that this asymmetry may be characteristic of ABC transporters with asymmetric NBDs is reasonable given the structural evidence, though it remains a hypothesis requiring further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The structure reveals unique molecular interactions between SUR1 and Kir6.2 mediated exclusively by TMD0 and L0 of SUR1. Key interactions include contacts between the SUR1 N-terminus and Kir6.2 pore loop, hydrophobic interactions between TM1 and M1, and specific residue pairs including H70-W51 and Q57-F132.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 describe the SUR1-Kir6.2 interface with specific molecular details. The structural observations are supported by the density and are consistent with prior functional data (C64 regarding F132 mutation). The interface explains the unique co-dependence of these proteins for expression and function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The ATP binding site is located at the interface between N- and C-terminal domains of adjacent Kir6.2 subunits, with four equivalent sites per tetramer. ATP adopts a folded conformation with specific coordination of phosphates by K185, R50, and G334, and the adenine ring interacting with R50, Y330, N48, I182, and F333.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C77 provide detailed description of the ATP binding site with strong cryo-EM density support (C67). The specific residue interactions are well-documented and consistent with extensive prior mutagenesis data (C77). The structural model explains ATP specificity and provides atomic-level detail of ligand recognition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The unique presence of G334 in Kir6.2 (versus larger residues in other Kir channels) may explain why Kir6.2 is uniquely sensitive to ATP regulation, as larger residues would create steric hindrance preventing ATP binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 present a structural explanation for Kir6.2's unique ATP sensitivity based on sequence comparison and structural analysis. The inference is logical and well-supported by the structure, though direct experimental validation (e.g., introducing larger residues at position 334) would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Residues E179, R201, and R301, previously proposed to directly bind ATP, instead play indirect structural roles. E179 interacts with R54 to stabilize R50-ATP interaction; R201 forms cation-\u03c0 interactions with F333 and F315 to stabilize the binding site; R301 maintains CTD structural integrity important for PIP2 and ATP interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C92 correct previous models by showing these residues have indirect rather than direct roles in ATP binding. The structural observations (C82, C83, C84, C90, C91) are clear from the density. The functional interpretations (C87, C92) are reasonable inferences supported by prior mutagenesis data (C85, C86, C88). This represents an important refinement of the ATP binding mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The structure reveals a network of interactions involving Q52, R50, R54, and SUR1-L0 residues (E203, K205) near the ATP binding site. This network connects ATP binding to PIP2 regulation and explains disease mutations, supporting a model where ATP inhibition involves stabilizing Kir6.2 N-terminus-SUR1 L0 interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C102 integrate structural observations with extensive prior functional data from the authors' lab and others. The structural basis for the Q52R neonatal diabetes mutation (C93-C94) is clearly explained. The connection to PIP2 regulation (C95-C97) is supported by comparison to Kir2.2 structure. The proposed mechanism (C102) is a reasonable hypothesis based on crosslinking and mutagenesis data (C99-C101), though it remains to be fully validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The structure identifies the GBC binding site within the SUR1 transmembrane bundle, with the drug precisely accommodated by a pocket formed by residues from TMD1 (TM6, 7, 8) and TMD2 (TM16, 17). Key interactions include R1246 and R1300 coordinating the sulfonyl group, T1242 and N1245 coordinating the urea moiety, and specific interactions with the chloromethoxybenzene group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C121 describe the GBC binding site in detail. The density for GBC is well-defined (C109) and the binding pocket is precisely characterized. The location near S1238 (C120) is consistent with prior mutagenesis data. The structural model provides the first definitive identification of the GBC binding site, resolving longstanding uncertainty in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Mutagenesis of six predicted GBC-binding residues (R306A, Y377A, N437A, T1242A, R1246A, R1300A) to alanine resulted in significantly reduced GBC sensitivity at 100 nM and 1 \u03bcM, with more reversible inhibition kinetics, providing strong functional validation of the structural model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C128 present functional validation of the GBC binding site using both Rb+ efflux and patch-clamp experiments. All six mutants showed reduced GBC sensitivity while maintaining normal trafficking and metabolic inhibition responses (C122), indicating specific effects on GBC binding. The increased reversibility (C126-C127) is consistent with reduced affinity. This provides strong experimental support for the structural model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Y230 and W232 in SUR1-L0, previously proposed to directly bind GBC, instead play indirect structural roles by stabilizing residues that directly interact with GBC (Y230 stacks with R1246; W232 interacts with M233 which contacts the TM16 helix containing GBC-binding residues).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C132 clarify the role of Y230 and W232, which were implicated by photolabeling studies but whose precise function was unclear. The structure shows they are too distant for direct GBC contact (C129) but stabilize the binding pocket through specific interactions (C130-C131). This resolves the apparent contradiction between photolabeling data and the structural location of GBC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Comparison with the Li et al. structure (without ATP) shows very similar overall conformations, suggesting either that ATP does not induce major conformational changes or that GBC stabilizes an ATP-bound-like conformation, potentially explaining GBC's inhibitory mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C133-C135 compare structures with and without ATP. While the structural similarity is documented (C134), the interpretation (C135-C136) remains speculative. The hypothesis that GBC stabilizes an ATP-bound conformation is intriguing but requires additional structures (e.g., GBC-free, ATP-free) and functional studies to validate. The comparison is limited by the modest resolution of both structures and potential differences in sample preparation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Re-analysis of the Li et al. structure reveals that density they attributed to GBC near Y230/W232 actually corresponds to unmodeled SUR1-L0 residues (R216-F221), while unassigned density near the true GBC binding site (identified in the current study) is present in both previous lower-resolution maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 provide critical re-interpretation of prior structural work. The authors' analysis showing that the Li et al. 'GBC density' matches protein residues (C138-C139) is convincing and highlights the importance of complete model building. The observation that GBC density was present but unassigned in both previous maps (C140) validates the current higher-resolution identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The authors propose that ATP inhibits channel activity by binding to a pocket formed by Kir6.2 N-terminus, CTD, and SUR1-L0, thereby stabilizing interactions that prevent channel opening. This is consistent with prior data showing ATP-PIP2 antagonism and ATP binding to both open and closed states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C144 present a mechanistic model for ATP inhibition. The model is well-supported by the structure, prior crosslinking data (referenced in C99-C100), and established functional properties (C143-C144). However, this remains a hypothesis that would benefit from additional structural states (open, PIP2-bound) and molecular dynamics simulations to fully validate the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The authors propose that GBC inhibits channels through two mechanisms: (1) stabilizing the SUR1-ABC core in an inward-facing conformation to prevent MgATP/ADP-mediated channel opening, and (2) stabilizing interactions between the flexible Kir6.2 N-terminus and SUR1-L0 to prevent movements required for channel opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C155 present a dual mechanism for GBC inhibition. The first mechanism (C145-C146) is supported by prior functional data. The second mechanism (C147-C155) is a hypothesis based on the GBC binding location, the flexibility of the Kir6.2 N-terminus (C153), prior crosslinking data (C154), and established functional importance of this region (C151-C152). While the model is reasonable and consistent with available data, it requires validation through additional structural and functional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C156"
+    ],
+    "result": "GBC does not completely eliminate channel activity, and channels exposed to saturating GBC can be further inhibited by ATP, indicating independent or partially overlapping mechanisms of inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C156 is supported by functional data presented in the figures. This observation is important for understanding the relationship between ATP and GBC inhibition mechanisms and suggests they are not completely redundant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C157",
+      "C158"
+    ],
+    "result": "The authors predict that residues coordinating the sulfonylurea moiety (R1246, R1300, T1242, N1245) will be critical for binding other sulfonylureas such as tolbutamide, though this was not experimentally tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C157-C158 present a reasonable prediction based on the structural model, but this remains untested. The prediction is logical given that all sulfonylureas share the sulfonylurea moiety, but experimental validation with other drugs would be needed to support this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Sequence alignment of 15 SUR1 orthologs shows high conservation (75-95% identity to human), with exceptional conservation of the 12 GBC-binding residues (100% conserved across all 15 sequences), suggesting functional importance of this interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C163 present sequence conservation analysis. The data support the functional importance of the GBC binding site. The inference (C163) that conservation indicates functional importance is reasonable, though the interface may have roles beyond GBC binding (e.g., in ABC transporter conformational changes).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "SUR2 (67% identical to SUR1) differs at two key GBC-binding positions (S1238\u2192Y, T1242\u2192S), likely explaining why SUR2-containing channels have lower GBC sensitivity than SUR1-containing channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C168 provide a structural explanation for pharmacological differences between SUR1 and SUR2 channels. The sequence differences at key binding residues (C165) provide a plausible explanation for differential drug sensitivity (C167-C168), supported by prior functional data. This represents an important structure-function insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "Among ABCC family members, only R1246 and R1300 are highly conserved. Structural comparison with MRP1 and CFTR shows conservation of the R1246/Y230 interaction motif, suggesting this may be functionally important for ABCC protein structure/function and explaining GBC sensitivity in other ABCC transporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C176 extend the analysis to the broader ABCC family. The sequence conservation analysis (C170-C172) and structural comparisons (C173-C174) are well-documented. The inferences about functional importance (C175-C176) are reasonable but would benefit from experimental validation. The connection to GBC sensitivity in other ABCC proteins is plausible but remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background claims establishing the physiological role of KATP channels in insulin secretion, their regulation by ATP and ADP, disease associations with channel mutations, and the therapeutic use of sulfonylureas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C20 provide established background knowledge, all supported by appropriate citations to the literature. These are well-accepted facts in the field and provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Prior structural work by the authors and Li et al. at ~5.6-5.7 \u00c5 resolution revealed overall architecture but could not definitively identify the GBC binding site or atomic details of ATP binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 accurately describe prior work and its limitations, providing justification for the current higher-resolution study. The characterization of previous structures is fair and well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Prior functional and biochemical studies implicated TMs 14-16 (particularly S1238) and L0 residues (Y230, W232) in GBC binding, leading to a bipartite binding pocket model, though the precise binding site remained uncertain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108 accurately summarize prior functional work that guided the structural interpretation. The characterization of previous models and their limitations is fair and provides important context for the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C141",
+      "C177"
+    ],
+    "result": "The structure provides novel mechanistic insights into ATP and GBC inhibition of KATP channels and offers a starting point for structure-guided drug development targeting KATP channel subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141 and C177 are summary statements about the significance of the work. The structure does provide unprecedented atomic detail of ligand binding sites and mechanistic insights. The potential for drug development (C177) is reasonable given the detailed structural information, though actual drug development would require substantial additional work.",
+    "result_type": "MAJOR"
+  }
+]

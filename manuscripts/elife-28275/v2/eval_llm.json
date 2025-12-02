@@ -1,0 +1,553 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "ChIP-seq identified 1027 robust Bcd binding regions in NC14 embryos, successfully capturing 63 of 66 previously characterized Bcd target enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C13 are well-supported by the ChIP-seq experimental data presented in Table 1 and Supplementary file 1, with validation against previously characterized enhancers from Chen et al., 2012. The methodology is clearly described and the overlap with known targets provides strong validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Bcd target genes exhibit distinct expression patterns in different genetic backgrounds: btd and kni anterior domains require Bcd, while kni posterior domain is expressed in bcd mutants but depends on Bcd for proper positioning. Both kni enhancers are bound by Bcd in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 are supported by immunostaining data in Figure 1A and Figure 1\u2014figure supplement 1A, combined with ChIP-seq data showing Bcd binding to both kni enhancers. The genetic analysis across multiple mutant backgrounds (bcd, nos hb tsl triple, and bcd nos hb tsl quadruple mutants) provides strong evidence for the distinct regulatory requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "Bcd binding to DNA targets occurs independently of other maternal AP patterning systems (nanos and torso-like), as loss of these systems does not alter the Bcd ChIP-seq profile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20 and C21 are supported by ChIP-seq data analyzed with EdgeR showing no significant changes in Bcd binding across 1027 regions in nos tsl mutants (Figure 1\u2014figure supplement 1B). This demonstrates that while other patterning systems influence target gene expression, they do not affect Bcd-DNA binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Uniform Bcd transgenes driven by different promoters produce distinct concentration levels that specify cell fates reflecting their expression levels, as demonstrated by concentration-dependent changes in btd and kni expression patterns and larval body plan structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C31 are well-supported by live imaging data (Figure 1B), immunostaining (Figure 1C), and cuticle preparations (Figure 1D). The three promoters (bcd, mtrm, \u03b1Tub67C) drive expression at levels corresponding to ~65%, ~45%, and ~25% egg length respectively, with corresponding concentration-dependent effects on target gene expression and developmental outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Bcd binding peaks are classified into four concentration-sensitivity classes based on differential binding at uniform Bcd concentrations: Concentration-Insensitive (n=143), Concentration-Sensitive III (n=593), II (n=138), and I (n=152), indicating that Bcd binds differentially to targets at specific concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 are supported by ChIP-seq data analyzed with EdgeR (FDR \u2264 0.05) across three uniform Bcd concentrations, shown in Figure 2A. The statistical classification is rigorous and the four classes show distinct patterns of concentration-dependent binding, providing strong evidence for differential Bcd-target interactions along the AP axis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Bcd sensitivity classes correlate with enhancer expression patterns, and Bcd binding peaks are significantly enriched for enhancer activity as demonstrated by overlap with Vienna Tile reporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by overlap analysis between ChIP-seq peaks and Vienna Tile enhancers (Tables 2-3, Figure 2B). The enrichment of active enhancers in Bcd peaks (55.6% vs. 8.5% genome-wide) is statistically significant and validates the functional relevance of the identified binding sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The Concentration-Sensitive III class shows distinct properties: lowest representation in Fly Enhancer collection (18%), lower fraction of active enhancers (52% vs. 73-77% for other classes), and higher proximity to transcription start sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by overlap analysis (Table 3) and TSS proximity analysis (Table 4). However, the authors acknowledge this class may contain opportunistic binding sites that don't necessarily result in active gene expression, suggesting some caution in interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Bcd sensitivity classes predict enhancer expression domains: Concentration-Sensitive I and II drive anterior expression, while Concentration-Sensitive III and Concentration-Insensitive classes drive broad and posterior expression, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by Vienna Tile expression data shown in Figure 2B. The correlation between ChIP-seq sensitivity classification and spatial expression patterns provides strong validation of the functional significance of the concentration-dependent binding classes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "De novo motif discovery reveals that Concentration-Sensitive I and II classes are enriched for both strong and weak Bcd binding sites, while the Concentration-Insensitive class shows highest enrichment for Zelda (Zld) binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by RSAT motif discovery (Figure 2C) and enrichment analysis (Figure 2D). The differential enrichment of Bcd vs. Zld motifs across sensitivity classes is statistically validated by permutation tests (n=10,000), providing strong evidence for distinct sequence composition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "There is a correlation between Bcd binding site number and position of gene expression, but concentration-sensitive and -insensitive targets are not distinguished by strong versus weak Bcd binding site representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54 and C55 are supported by motif enrichment data (Figure 2D) combined with expression pattern data (Figure 2B). This finding partially confirms Ochoa-Espinosa et al., 2005, but with a larger sample size. The result challenges simple binding site affinity models for Bcd function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "In vitro binding affinity measured by EMSA shows little correlation with in vivo binding properties observed by ChIP-seq for a selected subset of peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by EMSA data shown in Figure 2\u2014figure supplement 2. However, the analysis is limited to a small subset of peaks (9 probes), which limits the generalizability of this finding. Additional experiments with more targets would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C59"
+    ],
+    "result": "Bcd ChIP peaks differ in their balance of Bcd and Zld binding sites rather than binding site affinity, suggesting that chromatin context plays a greater role than binding site sequences in determining in vivo affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C59 are supported by motif enrichment analysis showing differential balance of Bcd vs. Zld sites across sensitivity classes. This inference is reasonable given the combined motif and EMSA data, though direct chromatin accessibility measurements (presented later) provide stronger support for the chromatin context hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "ATAC-seq identified 13,266 peaks of chromatin accessibility at NC14, with 855 (83.3%) of Bcd-bound regions overlapping with accessible chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60 and C61 are supported by ATAC-seq data with clear methodology described in Materials and methods. The high overlap between Bcd ChIP peaks and ATAC peaks (83.3%) validates both datasets and suggests most Bcd binding occurs in accessible chromatin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Zld influences chromatin accessibility at Bcd targets: 20.2% of accessible regions genome-wide and 39.1% of Bcd-bound peaks show reduced accessibility in zld mutants, indicating Bcd-bound regions are more dependent on Zld than the genome as a whole.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by ATAC-seq data in zld mutants analyzed with EdgeR (Table 5). The statistical comparison demonstrates significant enrichment of Zld-dependent accessibility at Bcd targets, though the authors note this dependency is distributed across all sensitivity classes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Zld-dependent peaks are distributed across all Bcd sensitivity classes without significant enrichment in any particular class, though Concentration-Insensitive peaks are enriched in Zld-dependent, Zld-bound peaks, suggesting Zld contributes to accessibility but is not the sole determinant of concentration sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by enrichment analysis (Figure 3B, Figure 3\u2014figure supplement 1). The lack of class-specific enrichment for Zld dependence, despite motif enrichment in Concentration-Insensitive peaks, suggests a complex relationship between Zld binding, accessibility, and concentration sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Bcd influences chromatin accessibility: 326 (2.4%) of genome-wide accessible regions and 132 (12.9%) of Bcd ChIP peaks show reduced accessibility in bcd mutants, with the latter likely representing direct Bcd effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68 and C69 are supported by ATAC-seq data in bcd mutants (Figure 3A-B). The higher fraction of Bcd-dependent accessibility at Bcd ChIP peaks (12.9%) compared to genome-wide (2.4%) provides strong evidence for direct Bcd effects on chromatin structure at its binding sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Bcd-dependent accessible regions are significantly enriched for Concentration-Sensitive I and II peaks (32.9% and 31.9%) and depleted for Concentration-Sensitive III and Insensitive peaks (6.07% and 0.7%), suggesting Bcd influences chromatin accessibility preferentially at highly concentration-sensitive targets in anterior regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are strongly supported by enrichment analysis using Fisher's exact test with highly significant p-values (Figure 3B). This is a key finding linking concentration-dependent binding to chromatin remodeling activity, though the inference about anterior-specific effects requires the additional assumption that Concentration-Sensitive I/II peaks are primarily bound anteriorly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Chromatin accessibility at Bcd-dependent, concentration-sensitive targets is responsive to Bcd concentration, with accessibility correlating positively with uniform Bcd expression levels, supporting a model where Bcd influences chromatin state primarily at high concentrations in anterior regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 are supported by ATAC-seq data in uniform Bcd embryos (Figure 3B). The concentration-dependent accessibility changes provide strong evidence for Bcd's role in chromatin remodeling, though the model inference about anterior-specific effects depends on the assumption that high Bcd concentrations occur only anteriorly in wild-type embryos.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Bcd-bound regions are generally depleted of nucleosomes in wild-type embryos, but predicted nucleosome occupancy suggests Concentration-Sensitive I and II peaks have higher nucleosome preference, indicating these regions are actively restructured for transcription factor binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by observed nucleosome occupancy (Figure 4A) and NuPoP predictions (Figure 4B). The contrast between predicted high occupancy and observed depletion provides strong evidence for active chromatin remodeling, though the inference of 'active restructuring' is reasonable but not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Bcd, either directly or through cofactors, directs chromatin remodeling events at concentration-sensitive targets, with Bcd-bound regions dependent on Bcd or Zld for accessibility showing higher nucleosome preference, suggesting Bcd can overcome high nucleosome barriers similar to Zld.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by nucleosome preference analysis (Figure 4C) and comparison with Zld function (Sun et al., 2015). The model of Bcd-directed chromatin remodeling is well-supported by the data, though the mechanism (direct vs. cofactor-mediated) remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Motif accessibility analysis reveals gradual increase in average accessibility from high to low sensitivity in wild-type, becoming more pronounced in bcd mutants, with 55\u00b12% of Bcd motifs in nucleosome-free tracts in wild-type but graded accessibility (41-53%) in bcd mutants, indicating complex interactions between Bcd, DNA, and chromatin structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 are supported by motif accessibility analysis (Figure 4D) and nucleosome-motif overlap calculations. The quantitative analysis of motif accessibility provides strong evidence for Bcd's role in maintaining open chromatin at its binding sites, with the graded pattern in mutants revealing the underlying chromatin preferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "A truncated Bcd protein (GFP-Bcd085) lacking C-terminal domains forms a gradient at similar levels to full-length Bcd but shows significantly reduced binding to Concentration-Sensitive I and II peaks while maintaining binding to Concentration-Sensitive III and Insensitive peaks, demonstrating that Bcd's C-terminus is required for accessing concentration-sensitive targets and that DNA binding activity alone is insufficient for chromatin accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 are supported by live imaging (Figure 5B) and ChIP-seq data (Figure 5C) with permutation test statistics (p<0.0001). This is a critical experiment demonstrating that Bcd's chromatin remodeling activity requires domains beyond the DNA-binding homeodomain, strongly supporting a cofactor recruitment model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The caudal enhancer is a Concentration-Insensitive Bcd target driving posterior expression that depends on Zld for accessibility. Mutating Zld sites to Bcd sites shifts expression anteriorly in a Bcd-dependent manner and restores function in zld mutants, demonstrating that replacing Zld with Bcd motifs converts a concentration-insensitive to concentration-sensitive enhancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C100 are supported by reporter expression data (Figure 6, Figure 6\u2014figure supplement 1A) and ATAC-seq data (Supplementary file 1). This elegant experiment directly demonstrates the functional consequences of motif composition on concentration sensitivity and provides strong support for the chromatin accessibility model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "Adding Bcd sites instead of Zld sites to the HC_45 reporter activates anterior expression, demonstrating that Bcd can functionally replace Zld at high concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 is supported by reporter expression data (Figure 6\u2014figure supplement 1B). This result complements the caudal enhancer experiments and supports the model that Bcd and Zld have similar chromatin-opening activities, with Bcd activity being concentration-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Bcd delineates distinct gene expression and chromatin states at specific positions along its concentration gradient through differential binding to cis-regulatory regions, with differences in binding affinities not explained entirely by binding site sequences but rather by chromatin accessibility requirements at concentration-sensitive enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 are supported by the combined ChIP-seq, ATAC-seq, motif analysis, and EMSA data presented throughout the manuscript. This represents the central conclusion of the paper, integrating multiple lines of evidence into a coherent model of concentration-dependent Bcd function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors propose a model where Bcd establishes concentration thresholds by driving open chromatin states at high concentrations to access sensitive target enhancers, while being unable to access these enhancers at lower posterior concentrations, thereby restricting expression to anterior regions. This model suggests concentration thresholds are read out at the chromatin accessibility level rather than through binding site strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 represent the authors' mechanistic model, which is well-supported by the combined experimental evidence (ChIP-seq, ATAC-seq, uniform Bcd experiments, truncation analysis, and reporter assays). While some aspects remain speculative (e.g., the exact mechanism of chromatin remodeling), the model is consistent with all presented data and provides a coherent framework for understanding morphogen function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The model proposes that Bcd establishes initial patterns by interacting with default nucleosome positions rather than competing with target genes, with this initial chromatin interaction being essential for establishing positionally-defined expression patterns that are subsequently refined by additional patterning factors including Bcd targets and repressor gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C114 represent speculative extensions of the model that go beyond the direct experimental evidence. While consistent with the data and supported by citation to Chen et al., 2012, these claims about the temporal sequence of events and the relative importance of chromatin vs. transcriptional regulation require additional time-resolved experiments to fully validate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Zld contributes to accessibility of Bcd targets throughout the genome, particularly at targets not dependent on Bcd for accessibility, and is likely one component influencing the apparent in vivo affinity of concentration-insensitive Bcd-bound peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115 and C116 are supported by ATAC-seq data in zld mutants showing 61/1,027 peaks dependent on both Bcd and Zld (Table 5), combined with motif enrichment data. The inference about Zld's role in concentration-insensitive binding is reasonable given the enrichment of Zld motifs in this class.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Previous studies demonstrate that Zld extends the effective range of the Dorsal morphogen and aids in establishing concentration thresholds at low concentrations, contributes to activation of Bcd target genes at low Bcd concentrations, and that Bcd occupancy in posterior embryos is reduced in zld mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 are supported by citations to Nien et al., 2011, Xu et al., 2014, and Mir et al., 2017. These are accurate representations of prior work that provide important context for interpreting the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors predict that transforming a concentration-sensitive enhancer into a Zld-dependent enhancer would increase accessibility and sensitivity, supported by previous work showing that adding Zld sites to inactive Bcd-bound enhancers drives increasingly posterior expression, which the authors posit results from increased enhancer accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C122 combine a prediction based on the authors' model with citation to Xu et al., 2014. While the prediction is reasonable given the model, the interpretation of Xu et al.'s results as being due to increased accessibility is speculative and not directly tested. The HC_45 reporter experiments provide some support but don't definitively prove the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "At high concentrations, Bcd's activity is similar to Zld, as demonstrated by adding Bcd sites to the HC_45 reporter activating anterior expression. The caudal enhancer experiments show that without Zld, activation becomes entirely Bcd-dependent, effectively converting a concentration-insensitive to concentration-sensitive enhancer. This supports a model where Zld contributes to accessibility throughout the embryo while high Bcd levels can drive accessibility independently in anterior regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C125 are supported by reporter expression data (Figure 6, Figure 6\u2014figure supplement 1B) and represent a synthesis of the experimental results. The inference that Bcd and Zld have similar activities at high concentrations is well-supported by the functional complementation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Previous work shows Bcd's N-terminus interacts with Sin3A/HDAC repressor complex and multiple domains including C-terminus interact with CBP (histone acetyltransferase). The authors speculate that the truncated Bcd may have disrupted CBP interaction, and since CBP increases chromatin accessibility, this could explain reduced binding to sensitive targets in truncated Bcd embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C130 combine established prior work (supported by citations to Zhao et al., 2003; Zhu et al., 2001; Fu and Ma, 2005; Fu et al., 2004; Chan and La Thangue, 2001) with speculation about the mechanism underlying the truncated Bcd phenotype. While the speculation is reasonable, it remains untested and alternative explanations (e.g., disruption of other C-terminal interactions) are possible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C131",
+      "C132"
+    ],
+    "result": "Concentration-insensitive targets do not depend on Bcd for open chromatin state, suggesting they are opened by other chromatin remodeling factors or are inherently more likely to be nucleosome-free based on underlying sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131 and C132 are supported by ATAC-seq data showing these targets maintain accessibility in bcd mutants. The speculation about alternative mechanisms (other factors or sequence-based) is reasonable given the data, though the specific mechanisms remain to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "Previous work suggests transcription factors can compete with nucleosomes for DNA binding sites. The authors speculate this could occur through cooperative Bcd binding to nucleosome-associated enhancers, which would require high Bcd concentrations, consistent with observations that Bcd influences accessibility more strongly at high concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C133 and C134 combine citation to prior work (Mirny, 2010; Wang et al., 2011) with speculation about a possible mechanism. While the speculation is consistent with the data, the authors' own truncation experiments argue against this simple competition model, as discussed in C135-C137.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Truncated Bcd cannot bind to its most sensitive targets without C-terminal domains, and since cooperative binding residues reside in the homeodomain (which is intact in the truncation), this supports a model where Bcd actively remodels chromatin through C-terminal interactions with chromatin remodeling factors rather than simply competing with nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 are supported by ChIP-seq data with truncated Bcd (Figure 5C) and citation to Burz and Hanes, 2001. This is a key line of reasoning that distinguishes between passive competition and active remodeling models, with the data strongly favoring the active remodeling model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C138",
+      "C139"
+    ],
+    "result": "As a maternal factor, Bcd provides one of the first cues to break embryonic body plan symmetry, and the authors' results suggest this symmetry breaking occurs first at the chromatin accessibility level as Bcd drives opening of concentration-sensitive target enhancers in anterior nuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138 and C139 combine established knowledge about Bcd's role with inference from the ATAC-seq and ChIP-seq data. The inference that chromatin accessibility changes precede transcriptional changes is reasonable given the data, though direct temporal measurements would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Zld is proposed to act as a pioneer factor at enhancers with high nucleosome barriers. The authors demonstrate Bcd influences accessibility primarily of concentration-sensitive targets with high predicted nucleosome barriers, raising the possibility that Bcd exhibits pioneer-like activity at high concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C142 combine citation to Sun et al., 2015 with the authors' ATAC-seq and nucleosome prediction data (Figure 4B). The comparison to Zld's pioneer activity is well-supported by the parallel observations, though the speculation about Bcd as a pioneer factor requires additional experiments (e.g., binding to nucleosomal templates in vitro) for definitive proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The authors speculate that Bcd is unlikely to be unique in influencing chromatin accessibility, citing recent work showing Cdx2 influences chromatin accessibility during mouse axial elongation, and suggest it will be of interest to assess whether other developmental transcription factors can drive accessibility during early development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C145 represent speculation about broader implications supported by citation to Amin et al., 2016. This is appropriate discussion of future research directions and places the current work in a broader developmental context.",
+    "result_type": "MINOR"
+  }
+]

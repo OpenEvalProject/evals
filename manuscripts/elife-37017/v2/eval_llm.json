@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The central complex is a highly conserved insect brain region with stereotyped anatomy, implicated in diverse behaviors. Prior studies have relied on light microscopy-based connectivity assumptions. The Drosophila central complex contains a few thousand neurons with detailed anatomical descriptions and genetic tools available for cell-type-specific targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C14-C16, and C19-C23 provide well-established background knowledge about the central complex structure, function, and available research tools. These claims are supported by multiple citations to prior work and represent consensus knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C29",
+      "C30",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The authors tested functional connectivity between 70 presynaptic-to-postsynaptic cell-type pairs using simultaneous optogenetic stimulation (CsChrimson), calcium imaging (GCaMP6m), and pharmacology in ex vivo preparations. The study covered 37 driver lines representing 24 cell types, including 8 of 11 main columnar neuron types, with at least 6 flies tested per pair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C28-C30, and C74-C83 describe the experimental approach, scope, and methods in detail. The methodology is clearly documented with specific parameters (wavelengths, pulse durations, sample sizes), and the coverage of cell types is explicitly stated with acknowledged limitations (e.g., FB interneurons not included).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C53",
+      "C54"
+    ],
+    "result": "Optogenetic stimulation produced a range of responses from large reliable transients to undetectable changes. Inhibitory responses were detectable as dips in fluorescence when neurons were in an excited state. Non-overlapping control pairs showed minimal responses, while same-cell-type controls always showed responses. Strong responses saturated at the stimulation levels used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 and C53-C54 describe the range and characteristics of observed responses with supporting data in Figures 3 and 4. The detection of inhibitory responses despite calcium imaging limitations is explained mechanistically (C33), and appropriate controls validate the approach (C34-C35).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C39",
+      "C40"
+    ],
+    "result": "Multiple inhibitory and excitatory input pathways to the central complex were identified: ring neurons (GB-Eo, L-Ei) provide inhibitory input to E-PG neurons; GL-N1 neurons inhibit P-EN neurons; AMPG-E neurons provide excitatory input to E-PG neurons; and IS-P neurons provide distributed excitatory input to multiple columnar neurons in the PB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C39-C40 describe specific input connections supported by functional connectivity data shown in Figures 5A and pharmacology experiments. C36 is additionally supported by prior anatomical work. These findings are based on direct experimental evidence from the optogenetic-calcium imaging approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C27",
+      "C42",
+      "C71",
+      "C72"
+    ],
+    "result": "The study identified numerous inputs to the central complex but only a small number of output channels. The sole identified output pathway connects PF-LCre columnar neurons to LAL interneurons through a cholinergic excitatory connection. The LAL serves as both the primary output structure and an input region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C27, C42, C71-C72 describe a key finding about the input-output architecture. The scarcity of outputs is supported by the systematic screen (C42 shows the only identified output), though the authors acknowledge potential limitations in cell-type selection (C73). The dual role of LAL is supported by connectivity data and prior citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C25",
+      "C43",
+      "C44",
+      "C67"
+    ],
+    "result": "Functional connectivity in the central complex, particularly in the protocerebral bridge, is sparser than predicted by light microscopy anatomy. E-PG neurons are the only columnar type presynaptic in the PB, but their activation did not trigger significant responses in five other tested columnar neuron types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C25, C43-C44, C67 describe a major finding about sparse connectivity. This is supported by direct experimental evidence showing lack of E-PG responses to other columnar neurons despite anatomical overlap. The authors appropriately note this may reflect detection limits of their technique (C52, C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C43",
+      "C44"
+    ],
+    "result": "\u03947 interneurons constitute a critical bottleneck in the protocerebral bridge, serving as the primary postsynaptic target of E-PG neurons and relaying information to other columnar neurons. E-PG activation strongly activates \u03947 neurons, which in turn produce responses in multiple columnar types (E-PG, P-EN1, P-EN2, P-F1N3, P-F3N2v).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C43-C44 identify \u03947 as a bottleneck based on functional connectivity data showing it is the only strong postsynaptic target of E-PGs in the PB and connects to multiple downstream targets. This interpretation is supported by Figure 5B and Figure 5\u2014figure supplement 1, though the complex response profiles suggest additional mechanistic investigation is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C50"
+    ],
+    "result": "Recurrent connectivity exists within the central complex circuit. The GB-Eo ring neuron participates in a feedback loop, receiving excitatory input from P-EG neurons while providing inhibitory input to E-PG neurons. The AMPG-E neuron provides localized excitatory feedback to E-PG neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41 and C50 describe recurrent connections supported by functional connectivity data in Figure 5D. These findings reveal circuit motifs important for understanding how the heading representation system operates, though the full functional implications require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C18",
+      "C84",
+      "C85"
+    ],
+    "result": "Pharmacological experiments using mecamylamine (50 \u03bcM) and picrotoxin (10 \u03bcM) determined whether connections were excitatory or inhibitory, revealing that columnar neurons and IS-P neurons are likely cholinergic, while ring neurons and \u03947 neurons use GABA or glutamate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C84-C85 describe the pharmacological approach and findings shown in Figure 4\u2014figure supplements 2-3. The drug concentrations and application protocols are clearly specified, and the results provide functional information about neurotransmitter identity that complements the connectivity data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C24",
+      "C26",
+      "C73"
+    ],
+    "result": "The overall hypothesized information flow through the central complex based on anatomy is generally supported functionally, with important differences: accessory structures primarily serve as inputs rather than outputs, and the central complex functions as a densely recurrent sensorimotor hub with low-dimensional output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C26, C73 synthesize the connectivity findings into a revised model of central complex organization. This interpretation is supported by the systematic connectivity screen showing multiple inputs but few outputs, though the authors acknowledge potential biases in cell-type selection and technical limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C55"
+    ],
+    "result": "The functional connectivity technique has inherent limitations: connections cannot be guaranteed to be direct and monosynaptic, absence of response cannot confirm absence of connection, and EM reconstructions will likely reveal weak synaptic connections missed by this approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52, C55 explicitly acknowledge methodological limitations. These are reasonable assessments based on the resolution and sensitivity of optogenetic-calcium imaging approaches. The authors appropriately caution against over-interpreting negative results and recognize the complementary value of EM data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "All experiments were performed in ex vivo preparations where responses invaded entire neurons rather than showing compartment-specific activity. Baseline fluorescence fluctuated spontaneously in most cell types, and functional connectivity is likely modulated by brain state given the variety of neuromodulators in the central complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 describe experimental observations and their implications. The lack of compartment-specific responses (C59) may reflect the artificial stimulation protocol. Baseline fluctuations (C62) are documented in Figure 3\u2014figure supplement 3A. The speculation about state-dependence (C61) is appropriately hedged and supported by citations about neuromodulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C38",
+      "C57",
+      "C58",
+      "C65"
+    ],
+    "result": "Prior work in various insect species has characterized central complex function using intracellular recordings, extracellular recordings, calcium imaging, and neurogenetic manipulations. Previous studies have identified roles in navigation, motor coordination, memory, and heading representation. Specific neurotransmitter and receptor expression patterns have been documented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13, C38, C57-C58, C65 summarize prior literature with appropriate citations. These provide context for the current study and are accurately represented based on the cited sources. The claims appropriately distinguish established findings from hypotheses (e.g., C13 uses \"likely\").",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "Many modeling studies of the central complex make connectivity assumptions based on light microscopy overlap between bouton-like and spine-like processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 accurately characterizes the state of the modeling field and provides motivation for the functional connectivity approach. This is a reasonable assessment supported by the authors' knowledge of the literature.",
+    "result_type": "MINOR"
+  }
+]

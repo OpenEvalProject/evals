@@ -1,0 +1,390 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Phylogenetic and sequence analysis of Hfq CTDs reveals conserved structural features: a strongly conserved proline at position 64 marks the start of the CTD, a conserved arginine at position 66 packs against the hexamer edge, the middle linker lacks conserved motifs, and the C-terminus is enriched in acidic residues (DSEETE in E. coli). Most Hfq clusters with a basic rim patch also contain acidic CTD termini.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 are directly supported by sequence logo analysis shown in Figure 1A and phylogenetic data in Figure 1\u2014figure supplement 1. The observations are consistent with established structural knowledge and provide a foundation for the hypothesis that the acidic CTD tip interacts with the basic rim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "De novo Rosetta modeling predicts that the acidic CTD tip (D97, E99, E100, E102) of E. coli Hfq transiently binds basic residues on the rim (R16, R17, R19, K47) and NTD (K3), but not the distal face residue K31. The CTD adopts multiple conformations binding various combinations of basic patch residues. Mutations of acidic CTD residues to polar/basic residues drastically reduce predicted interactions with the basic core.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C56-C62 are supported by computational modeling data shown in Figure 1B-C. The modeling approach is validated by experimental data (C78-C80), and the bias against K31 contact is consistent with prior experimental observations (C58). The ensemble of conformations (C59-C60) is appropriate for a disordered domain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Competitive binding experiments demonstrate that the acidic CTD tip specifically binds the Hfq65 core with Kd = 2.9 \u00b5M (low salt) or 22 \u00b5M (high salt). Binding is weakened by mutations in basic rim residues (R16A, R19D, K47A), slightly enhanced by Q35A mutation, and abolished when acidic CTD residues are mutated to basic/polar residues (RSNKTN mutant). The interaction is physiologically relevant given the ~350 \u00b5M effective local concentration of the CTD tip.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C63-C70 are supported by fluorescence anisotropy data in Figure 2B. The systematic mutagenesis of both core and CTD residues provides strong evidence for specific electrostatic interactions. The calculation of effective local concentration (C65) is reasonable and supports the physiological relevance of the measured affinities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "RNA annealing assays with Hfq65 variants show that basic rim residues important for CTD binding (especially R16) are also critical for RNA annealing activity. The relative annealing rates of Hfq65 variants correlate with the importance of each residue for CTD binding, suggesting that the CTD peptide and RNA interact with the same residues on the Hfq rim.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 are supported by stopped-flow fluorescence data in Figure 2D and Figure 2\u2014figure supplement 3. The correlation between CTD binding and RNA annealing (Figure 2E) provides strong evidence that the CTD and RNA compete for the same binding sites on the Hfq rim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Validation of the computational modeling approach: the experimentally measured contribution (\u0394\u0394G\u00b0) of each core residue to CTD binding correlates with the predicted Expected Energetic Contribution (EEC) from computational models (p=0.078). Residues with larger impacts on CTD binding also have stronger effects on Hfq65 RNA annealing activity (p=0.020).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are supported by the correlation analysis in Figure 2E. While the p-value for the computational correlation (0.078) is marginally above the conventional 0.05 threshold, the correlation with RNA annealing activity (p=0.020) is statistically significant. The overall agreement between computational predictions and experimental measurements validates the modeling approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Competition experiments show that nucleic acids displace CTD-FITC from Hfq65 with IC50 values generally correlating with nucleic acid length, suggesting low sequence specificity. Natural sRNAs are strong competitors (~10 nM affinity). Deviations from the length-correlation include minRCRB and DNA1 (stronger than expected, both contain rim-binding motifs) and dsDNA2 (weaker than expected, consistent with CTD-mediated dsRNA displacement).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C88 are supported by competition data in Figure 3B-C. The correlation with length and the specific deviations are well-explained by structural features of the nucleic acids and prior knowledge of their binding modes. The results support the nucleic acid mimic model for CTD function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Testing the nucleic acid mimic model with Hfq-sCTD (shortened linker): Truncation of the non-conserved linker region increases the predicted local concentration of the acidic tip ~3-fold. Hfq-sCTD shows decreased RNA annealing rates compared to Hfq102 for all targets, suggesting increased autoinhibition due to higher effective CTD concentration. This supports the nucleic acid mimic model over the polymer brush model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C96 are supported by annealing data in Figure 4A and Figure 4\u2014figure supplement 1. The prediction that shortening the CTD would increase autoinhibition (C89) is confirmed experimentally (C95-C96), providing strong support for the nucleic acid mimic model. The calculation of local concentration (C91) is based on reasonable assumptions about the worm-like chain model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "dsRNA release assays using fluorescence anisotropy show that Hfq-sCTD releases more dsRNA product than Hfq102, while Hfq65 releases the least. The relative affinity for dsRNA vs ssRNA (Krel) follows the order: Hfq-sCTD (14.0) > Hfq102 (7.5) > Hfq65 (2.3). This demonstrates that the linker length controls the stringency of CTD autoinhibition and efficiency of dsRNA displacement by modulating the effective concentration of the acidic tip.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 are supported by anisotropy data in Figure 4B-C and binding constants in Table 1. The systematic variation in dsRNA release efficiency with CTD length provides strong mechanistic support for the nucleic acid mimic model. The quantitative analysis (C99) is consistent with the qualitative observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Natural sRNA-mRNA annealing experiments with ChiX and chiP show that all Hfq variants (Hfq102, Hfq65, Hfq-sCTD) form ternary complexes within 20 seconds, demonstrating that the CTD is not required for annealing longer natural RNAs. However, Hfq65 forms the most stable ternary complex, with less formed by Hfq102 and least by Hfq-sCTD, consistent with the CTD limiting mRNA access to the rim.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C107 are supported by EMSA data in Figure 4D-E and Figure 4\u2014figure supplement 2. The results demonstrate that while the CTD is not essential for annealing natural RNAs (C104), it does modulate the stability of ternary complexes (C105-C107), consistent with the proposed mechanism of CTD autoinhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "DNA binding assays reveal that Hfq102 binds plasmid DNA with uniform mobility at each concentration, consistent with non-cooperative binding. The CTD limits DNA binding, maintaining soluble complexes. In contrast, Hfq65 (lacking CTD) binds DNA at low concentrations but forms insoluble aggregates at higher concentrations. The R16A mutation rescues aggregation, confirming that dsDNA interacts with the basic rim. Hfq65 and Hfq65-R16A bind DNA at higher densities than Hfq102.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C121 are supported by gel shift assays in Figure 5A-D and supplementary data in Figure 5\u2014figure supplement 1. The differential behavior of Hfq102 vs Hfq65 provides strong evidence that the CTD prevents indiscriminate DNA aggregation. The rescue by R16A mutation (C118) confirms the interaction site and supports the nucleic acid mimic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "RNA competition experiments with Hfq102-DNA complexes show that RNAs binding the distal face (A18) do not compete for DNA binding, while RNAs with rim-binding elements (Target-A18, Target-U6) strongly compete. Natural sRNAs (ChiX, RyhB) are the strongest competitors, saturating at 1:1 sRNA:Hfq hexamer ratio. This demonstrates that the CTD modulates (rather than directly mediates) DNA binding by the Hfq core, limiting binding extent and maintaining complex solubility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C129 are supported by competition data in Figure 5E-F. The face-specific competition pattern (C122-C123) confirms that DNA binds the rim, and the strong competition from sRNAs (C127) supports the conclusion that the CTD modulates rather than directly binds DNA (C128-C129). This refines prior models of Hfq-DNA interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C168"
+    ],
+    "result": "Comparative modeling of Hfq from five bacterial species shows that the strength and frequency of CTD-core interactions depend on the number of basic core residues, acidic CTD residues, and linker length. Hfqs that do not anneal RNA in vitro (B. subtilis, S. aureus) possess shorter, less acidic CTDs forming weaker interactions (\u0394EEC near zero). Hfqs active in RNA annealing (E. coli, L. monocytogenes, P. aeruginosa) show stronger CTD-rim interactions (\u0394EEC < -0.3). \u0394EEC correlates with the importance of Hfq for sRNA regulation in each bacterium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C136, C168 are supported by comparative modeling data in Figure 6A-D. The modeling successfully predicts functional differences across species, with \u0394EEC values correlating with both in vitro annealing activity and in vivo regulatory importance. This validates the modeling approach and demonstrates the predictive power of the CTD autoinhibition mechanism across bacterial genera.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Chimera experiments with E. coli core and B. subtilis CTD show altered interaction patterns: the B. subtilis CTD contacts K3 and R17 more frequently but R16 and R19 (functionally critical residues) less frequently than the E. coli CTD. E. coli Hfq65 binds BsCTD-FITC ~3-fold more weakly than its own CTD (8.7 \u00b5M vs 2.9 \u00b5M). This suggests that while a foreign CTD can bind the E. coli core, the specificity of the interaction is reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 are supported by modeling data in Figure 6\u2014figure supplement 1A and binding data in Figure 6\u2014figure supplement 1B. The chimera experiments provide evidence for CTD-core co-evolution and specificity. However, the interpretation of 'lost specificity' (C140) is somewhat speculative, as the 3-fold difference in affinity may still be functionally relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Integration of computational and experimental results establishes the mechanism of CTD autoinhibition: the acidic CTD tip directly displaces RNA from basic rim patches through electrostatic interactions that mimic nucleic acid binding. This is supported by direct competition between nucleic acids and CTD, stronger autoinhibition with shortened linker, salt-dependent binding, and correlation between modeled CTD-core contacts and experimental binding energies. This mechanism improves chaperone efficiency while increasing substrate selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C148 represent the integrated conclusions from multiple experimental approaches. The nucleic acid mimic model is strongly supported by: (1) competition experiments (C143), (2) Hfq-sCTD results (C144), (3) validation of computational predictions (C145-C146), (4) salt dependence (C147), and (5) functional consequences (C148). The convergence of multiple lines of evidence provides robust support for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The CTD tip competes against non-specific RNA binding, facilitates dsRNA release, and prevents indiscriminate DNA aggregation, suggesting that the acidic peptide mimics nucleic acid to auto-regulate RNA binding to the Sm ring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 summarize key functional consequences supported by multiple experiments: competition assays (C9), anisotropy assays (C10), DNA aggregation assays (C11). The nucleic acid mimic interpretation (C12) is well-supported by the totality of the data, though it represents an inference rather than direct observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C46",
+      "C47"
+    ],
+    "result": "The mechanism of CTD auto-inhibition predicts the chaperone function of Hfq in bacterial genera and illuminates how Sm proteins may evolve new functions. Stable CTD-rim interactions correlate with the importance of Hfq for sRNA regulation across bacterial species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14, C46-C47 represent the broader implications of the study. The predictive power is demonstrated by the correlation between \u0394EEC and functional importance across species (C46). The evolutionary implications (C14) are reasonable inferences from the observed sequence diversity and functional conservation, though they remain somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Proposed model for Hfq chaperone function: sRNA/mRNA substrates are recruited through specific interactions with the proximal/distal faces. Complementary RNA segments engage basic rim patches, favoring helix nucleation and zippering. Transient CTD-rim interactions displace the dsRNA product, recycling Hfq. The CTD increases selectivity by inhibiting rim access; short RNAs binding only the rim are poor substrates, while RNAs with face-specific binding strongly compete with the CTD and access the rim.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C156 present an integrated mechanistic model supported by: differential binding of dsRNA vs ssRNA (C152, Table 1), competition experiments (C154-C156), and annealing assays. The model is consistent with all experimental observations and provides a coherent framework for understanding Hfq function. However, some aspects (e.g., C149-C151) incorporate prior knowledge and represent inferences from the data rather than direct observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C169"
+    ],
+    "result": "Methodological contributions: Computational modeling provided atomic-scale insight into disordered CTD conformations. The experimentally validated EEC metric defines residue-residue interactions more accurately than distance cutoffs. The FloppyTail algorithm successfully predicted CTD-rim interactions in functionally active Hfqs but not inactive ones, suggesting general utility for predicting disordered domain interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C167, C169 describe methodological advances. The EEC metric is validated by experimental data (Figure 2E), and the modeling approach successfully distinguishes functional from non-functional Hfqs across species (Figure 6D). The suggestion of general utility (C169) is reasonable but remains somewhat speculative without application to other protein systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C132"
+    ],
+    "result": "The potent competition from sRNAs, which are more numerous than Hfq in the cell, calls into question the hypothesis that E. coli Hfq regulates cellular processes via DNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C132 is a reasonable inference from the competition data (Figure 5F) combined with cellular abundance information. However, this conclusion is somewhat speculative as it depends on assumptions about in vivo conditions and does not rule out DNA binding under specific cellular contexts or stress conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background on Hfq structure and function: Hfq is an Sm protein RNA chaperone found in most bacterial genomes that facilitates sRNA-mRNA base pairing in stress response and pathogenesis. E. coli Hfq contains an Sm domain forming a hexameric ring with proximal (U-rich binding) and distal (AAN repeat binding) faces, plus arginine-rich rim patches that interact with sRNA and facilitate mRNA annealing. The Sm domain is flanked by disordered NTD and CTD regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C15-C28 provide established background information supported by multiple citations to prior literature. These claims accurately represent the current understanding of Hfq structure and function and provide necessary context for the study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Prior work and knowledge gaps: Previous NMR studies suggested CTD-rim contacts but with uncertain specificity. The functional importance of the CTD for sRNA regulation was unclear due to conflicting studies. Recent work by the authors showed that the CTD displaces RNA from the rim and proximal face, accelerating dsRNA release and increasing sRNA competition, creating a regulatory hierarchy. However, the mechanism of CTD-mediated RNA displacement was unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 accurately describe prior work and identify the knowledge gap addressed by the current study. The citations to previous studies (including the authors' own work) are appropriate, and the statement of the unknown mechanism (C36) clearly motivates the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Two competing models for CTD function: The 'polymer brush' model suggests CTDs passively obstruct RNA binding sites, depending only on length and flexibility. The 'nucleic acid mimic' model suggests CTDs specifically bind basic core residues and actively compete with nucleic acids. Given CTD sequence divergence, the nucleic acid mimic model predicts CTD auto-regulation in some Hfq clades but not others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 present two alternative hypotheses that frame the study's investigation. The models are clearly articulated and make testable predictions. The study's experimental design effectively distinguishes between these models, with results supporting the nucleic acid mimic model over the polymer brush model.",
+    "result_type": "MINOR"
+  }
+]

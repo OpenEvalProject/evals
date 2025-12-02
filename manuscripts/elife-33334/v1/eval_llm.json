@@ -1,0 +1,380 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C16",
+      "C17",
+      "C102"
+    ],
+    "result": "Categorical judgments systematically bias subsequent perceptual estimates, and this bias is well explained by a self-consistent Bayesian observer model where the estimation process is causally conditioned on the preceding categorical decision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C16, C17, and C102 collectively establish the main finding. The systematic biases are demonstrated across three experiments (C19-C109), and the self-consistent Bayesian model accurately predicts both psychometric functions and estimation distributions (C40, C103). The model formulation (C17, C104) and its validation through quantitative fits (C39, C40, C110) provide strong converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C69",
+      "C70",
+      "C73",
+      "C74",
+      "C75",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Subjects exhibited high consistency (96% consistent trials) between categorical judgments and estimates, which is explained by lapses and motor noise rather than violations of self-consistent inference, and cannot be achieved without conditioning on the categorical judgment when memory noise is present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C69-C75, and C81-C83 demonstrate that the 4% inconsistent trials are well predicted by lapses and motor noise (C70, C73, C74), not by failures of self-consistency. The consistency analysis (Figure 9, C81-C83) shows that without self-consistent conditioning, predicted inconsistency would be much higher and correlated with memory noise (C82), which is not observed in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Experiment 1 replicated and extended previous findings, showing repulsive biases away from the discrimination boundary that increase with stimulus noise and proximity to the boundary, with characteristic bimodal estimation distributions, generalizing across stimulus types (orientation vs. motion).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C26 describe Experiment 1 results that are directly supported by data in Figures 1c and 1d. The replication of previous findings (C21) and generalization across stimulus types (C25) are supported by comparison with cited work (Jazayeri and Movshon, 2007). The bimodal distributions (C24) and repulsive biases (C23) are clearly shown in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C108"
+    ],
+    "result": "Experiment 2 validated that bias patterns depend on subjects' knowledge of the stimulus prior: explicitly reminding subjects of the stimulus range shifted bias curves toward the discrimination boundary as predicted by the self-consistent Bayesian model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C50-C54, and C108 describe a targeted test of the Bayesian model's prediction. The experimental manipulation (C50) was designed to narrow subjects' prior representation (C51), and the predicted shift (C52) was observed in the data (C53) and accurately modeled (C54). This provides strong evidence for the Bayesian interpretation of the biases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C109",
+      "C124"
+    ],
+    "result": "Experiment 3 demonstrated that subjects treat their own categorical judgments as if they were correct: biases were nearly identical whether the category was self-generated (Experiment 2) or externally provided (Experiment 3), with only 4% inconsistent trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C55-C60, C109, and C124 describe Experiment 3, which tests a key assumption of the self-consistent model (C30). The similarity of biases between Experiments 2 and 3 (C58, C61, C62) and the low inconsistency rate (C60) support the interpretation that subjects condition their estimates on categorical information regardless of its source, treating it as correct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C33",
+      "C37",
+      "C38",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The model was extended to incorporate memory noise, accounting for working memory degradation over the 2-3 second delay between stimulus presentation and estimation task, which is critical for explaining the data and has important implications for the behavioral benefits of self-consistency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C33, C37, C38, C77-C79 describe the extension of the model to include memory noise. This extension is justified by established findings about working memory degradation (C77) and the experimental timing (C78). The model fits revealed non-zero memory noise levels (C79), and the basic model without memory noise did not capture all details (C33). Motor noise was independently measured (C38).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C110",
+      "C111"
+    ],
+    "result": "The self-consistent observer model accurately accounts for both combined and individual subject data from Experiment 1, capturing substantial inter-subject variability in bias patterns through differences in prior width and noise levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47, C110, and C111 demonstrate the model's quantitative accuracy. The model fits both psychometric functions and estimation distributions (C40), accounts for individual differences (C41-C43), and provides meaningful parameter interpretations (C44-C47, C111). The overestimation of prior width (C44) is explained by lack of explicit information (C45), with the experienced subject showing more accurate priors (C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Joint model fits to Experiments 2 and 3 captured both inter-subject and within-subject variability, with bias patterns consistent across experiments for each subject, and prior widths substantially smaller and closer to the true distribution than in Experiment 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C68 describe the joint analysis of Experiments 2 and 3. The consistency of bias patterns across experiments for each subject (C61) confirms the model's ability to generalize (C63). The smaller prior widths (C66) validate the effectiveness of the experimental manipulation. The model captures slight differences between experiments (C64) due to the difference in how categorical information was provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Analysis of data from Zamboni et al. (2016) validated the self-consistent model across different experimental manipulations, showing that self-consistent inference occurs at the time of estimation, can operate on memorized boundary information, and does not require explicit discrimination judgments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C101 describe the analysis of existing data. The model fits data from multiple experimental conditions (C88, C91, C98), including when the boundary was removed (C89-C93) or shifted (C95-C98). The self-consistent model consistently outperforms the independent model (C91), and the results support three key conclusions about the nature of self-consistent inference (C99-C101).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C106",
+      "C122"
+    ],
+    "result": "An independent Bayesian observer model that treats discrimination and estimation as separate tasks does not predict the observed biases and fails to account for the high level of consistency in the data, especially when working memory is degrading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C28, C106, and C122 establish that alternative models without self-consistency fail to explain the data. The independent model predicts unimodal distributions (C28) rather than the observed bimodal patterns, and cannot achieve the observed consistency when memory noise is present (C106, C122). This is demonstrated through model comparisons and the consistency analysis in Figure 9.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C104",
+      "C105",
+      "C116",
+      "C126"
+    ],
+    "result": "The self-consistent observer model imposes a causal dependency where the categorical judgment conditions the estimation process through a choice-dependent prior, treating the subjective judgment as an objective fact, which guarantees consistency throughout the task sequence despite appearing irrational.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32, C104-C105, C116, and C126 describe the key theoretical feature of the model. The causal conditioning (C29, C116) is formalized through Bayesian inference (C104) and guarantees consistency (C32, C105, C126). While this appears irrational (C31), it provides computational benefits in the presence of memory noise, as demonstrated in the consistency analysis (Figure 9).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The observed bias patterns resemble cognitive dissonance and other well-known bias phenomena in cognition and economics, suggesting that self-consistent inference may represent a general principle governing sequential decision-making across domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C144-C146 draw parallels to cognitive phenomena, but these are largely speculative connections (C4 is labeled as speculation). While the parallels are interesting and well-cited (C144, C145), no direct empirical tests of these connections are provided. The suggestion that the model might generalize to cognitive phenomena (C146) remains a hypothesis for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The alternative 'read-out' model proposed by Jazayeri and Movshon (2007) differs fundamentally from the self-consistent model in proposing feed-forward rather than feedback processing, and may not be compatible with the current data without relaxing key assumptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C121 discuss an alternative interpretation, but the evaluation is incomplete. While the authors note fundamental differences (C115) and potential incompatibilities (C117), they acknowledge that relaxing assumptions might allow the read-out model to explain the data (C117, C118). The authors call for future work (C118) and propose methodological standards for model comparison (C119, C120), but do not provide a definitive test.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C125",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Self-consistent inference, while appearing to violate optimal behavior, may be rational by maintaining consistency in the face of memory noise, reducing computational costs in complex hierarchical tasks, and representing a general strategy for cost-accuracy trade-offs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C131 present theoretical arguments about the rationality and computational benefits of self-consistent inference. While the consistency benefit is demonstrated (Figure 9, C126), the computational cost arguments (C129) and broader implications (C130, C131) are largely speculative. The connection to prior work on discarding evidence (C127) provides some support, but the broader claims require additional investigation (C128).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Several open questions remain about the nature and generality of self-consistent inference, including whether it requires explicit categorical commitments, whether it occurs implicitly in all perception, and how it relates to decision confidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C132-C143 identify important open questions and speculative hypotheses. While some observations are supported by the data (e.g., C133 on independence from difficulty), many claims are explicitly speculative (C135, C138, C139, C142, C143). The strong hypothesis that all Bayesian perception studies might be reinterpreted through self-consistent inference (C141, C142) is acknowledged as requiring further evaluation (C143).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The self-consistent model provides a novel computational interpretation of physiological findings showing decision-related feedback signals to early sensory areas, suggesting these signals ensure consistency across cortical levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C147-C153 connect the model to neural findings, but this connection is largely speculative. While the physiological observations are well-established (C147, C148), the proposed interpretation (C149) is theoretical and not directly tested. The authors acknowledge that future work is needed to explore neural implementations (C151) and integration with existing frameworks (C153).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior work established perception as Bayesian inference and documented sequential dependencies in decision-making, but lacked a clear quantitative model connecting categorical decisions to subsequent perceptual judgments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C15 provide a literature review establishing the context and gap addressed by the current work. These claims are well-supported by citations to established work (C5-C10, C12) and accurately identify limitations of prior studies (C8, C11, C13-C15). The assessment of the literature gap (C15) motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C107"
+    ],
+    "result": "The self-consistent Bayesian observer model provides an accurate and complete description of perceptual behavior in sequential decision-making, with bias patterns generalizing across different low-level visual stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103 and C107 summarize the main modeling achievement. The model's accuracy is demonstrated through fits to multiple experiments (C40, C54, C88) and its ability to predict both discrimination and estimation behavior (C39, C103). Generalization across stimulus types (C107) is supported by comparison with motion stimuli from prior work (C25).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "While various sequential dependencies in perceptual choice have been reported, the impact of choices on immediate subsequent perceptual judgments has not been considered as a cause for these dependencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112 and C113 identify a gap in the literature on sequential dependencies. The review of prior work (C112) is well-cited, and the identification of the gap (C113) is a reasonable inference from the literature. This provides context for the novelty of the current work's focus on post-decision biases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "Future research is necessary to validate the levels of working memory noise determined with the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C123 appropriately identifies a limitation and need for future work. While the model fits provide estimates of memory noise (C79), independent validation of these estimates would strengthen the conclusions. This is a reasonable acknowledgment of the model's assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Ten subjects participated in the experiments, with one excluded for failing to execute the estimation task correctly, and all procedures were approved by the IRB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C157 describe basic methodological details about participants and ethical approval. These are straightforward factual statements about the study design and are adequately documented.",
+    "result_type": "MINOR"
+  }
+]

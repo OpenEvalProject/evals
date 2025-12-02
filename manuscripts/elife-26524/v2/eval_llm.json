@@ -1,0 +1,433 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "The CDPK4S147M mutation confers ~50-fold resistance to compound 1294, and 1 \u00b5M 1294 specifically targets CDPK4 to block exflagellation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C45 establish the specificity of compound 1294 for CDPK4 through chemical genetic validation. The resistant mutant demonstrates that 1294 acts on-target, providing a critical tool for temporal dissection of CDPK4 function. The data in Figure 1A directly support both claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "CDPK4 activity is required between 10-20 seconds post-activation to initiate the first round of DNA replication, but is not required for DNA replication per se.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 collectively demonstrate through time-course inhibitor addition experiments that CDPK4 acts during a narrow temporal window to trigger S-phase entry. The observation that 25% of cells reach 2N when inhibitor is added early (C49) but 0% progress further, combined with normal replication when inhibitor is added at 20s (C50), strongly supports a role in initiation rather than replication itself. Figure 1B provides clear experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "CDPK4 activity is required for mitotic spindle formation, with inhibition reducing spindle-positive cells from 64% to 7%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 establish a second role for CDPK4 in mitotic spindle assembly. The dramatic reduction in spindle formation upon CDPK4 inhibition (C54-C55) and the observation that diploid parasites fail to progress to tetraploid (C52) suggest CDPK4 is required between successive rounds of replication. Immunofluorescence data in Figure 1C-D provide direct visual and quantitative evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "CDPK4 activity is required at a late stage (immediately before exflagellation at ~9 min) to initiate axoneme motility, DNA condensation, and cytokinesis, but is dispensable between 30s and 9 min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 define a third temporal window of CDPK4 requirement. When 1294 is added at 30s or 9 min, parasites complete DNA replication and axoneme assembly but fail to exflagellate (C57-C59), while addition at 15 min has no effect (C60-C61). This demonstrates CDPK4 acts to trigger motility rather than being required for axoneme structure. The phenotypic data in Figure 1C, E-G are compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "CDPK4 is part of the MCM2-7/Cdt1 complex in non-activated gametocytes, with MCM and ORC proteins being the most enriched components in CDPK4 immunoprecipitates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 establish through co-immunoprecipitation and mass spectrometry that CDPK4 physically associates with the pre-replicative complex. The reciprocal immunoprecipitation with MCM5-3xHA (C68-C69) and GO term enrichment (C65) provide strong evidence. However, C70 is an inference rather than direct demonstration that CDPK4 is a stable complex member versus a transient interactor. The mass spec data in Figure 2A-B and Supplementary file 1 support these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Upon activation, six proteins including ORC1, ORC2, ORC5, and putative homologues of Cdc6, ORC4, and ORC3 show increased association with CDPK4, and MCM5-3xHA chromatin enrichment doubles at 15s in a CDPK4-dependent manner, suggesting CDPK4 facilitates loading of the MCM2-7/Cdt1 complex onto the ORC1-5/Cdc6 complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C84 provide mechanistic insight into how CDPK4 regulates S-phase entry. The dynamic changes in protein interactions (C76-C77) and chromatin fractionation (C81-C83) occurring at 15s post-activation align with the temporal requirement established earlier. The identification of ORC homologues (C78-C80) through sequence analysis is reasonable though not experimentally validated. Figure 2C-D provide key supporting data, though the fractionation experiment (C81-C83) would benefit from additional replicates given the quantitative nature of the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The CDPK4G2A mutation, which prevents myristoylation, blocks exflagellation and DNA replication (>85% remain haploid) but does not prevent mitotic spindle formation (65% show spindles), indicating myristoylation is required for initiating DNA replication but not for spindle assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 demonstrate through genetic analysis that myristoylation differentially regulates CDPK4 functions. The G2A mutant phenocopies CDPK4-KO for DNA replication but retains spindle assembly capability, providing clear functional separation. Figure 3A provides quantitative support for all claims. The inference in C89 is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "CDPK4 exists as two isoforms (63 kDa and 55 kDa), with the large isoform being myristoylated as evidenced by altered migration of the G2A mutant, while the small isoform is not myristoylated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 identify two CDPK4 isoforms through Western blot analysis. The differential migration of the large isoform in the G2A mutant (C91) provides evidence for myristoylation (C92), though this inference relies on literature precedent rather than direct myristoylation detection. The unchanged migration of the 55 kDa band (C93) supports it being non-myristoylated. Figure 3B provides clear supporting data, though direct myristoylation detection would strengthen C92.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Myristoylation does not significantly affect CDPK4 cellular localization or protein-protein interactions under the tested conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 test potential mechanisms by which myristoylation regulates CDPK4. The negative results (no palmitoylation detected, no localization changes, no interaction changes) are important for ruling out these mechanisms. However, the immunofluorescence resolution may be insufficient to detect subtle localization differences (C95-C96), and the interaction studies (C97) may miss transient or weak interactions. Figure 3\u2014figure supplement 1 parts 3-5 support these claims, though the negative results should be interpreted cautiously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The majority of CDPK4 is soluble, while a minor population of the large myristoylated isoform associates with membranes and possibly chromatin, as shown by differential fractionation behavior between wild-type and G2A mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 use biochemical fractionation to probe myristoylation function. The differential solubility of the large isoform between wild-type and G2A mutant (C99-C100) and detection in NaCl fractions (C101) suggest membrane and/or chromatin association. However, the chromatin association is tentative (\"possibly\" in C102), and the functional significance of this minor population is unclear. Figure 3C provides supporting data, though the interpretation regarding chromatin requires additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The short 55 kDa CDPK4 isoform originates from translation initiation at methionine +57 and is essential for late gametogenesis (exflagellation), while the large myristoylated isoform is mainly required for initiating DNA replication; either isoform can support mitotic spindle assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 elegantly dissect isoform-specific functions through the M57A mutant. The elimination of the short isoform by M57A mutation (C103) and the resulting phenotype (C104) demonstrate that the short isoform is specifically required for late events. The complementary phenotypes of G2A (blocks early) and M57A (blocks late) mutants strongly support the functional division (C105-C106). The observation that either isoform supports spindle assembly (C107) is well-supported. Figure 3D-F provide compelling evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Nineteen peptides are thiophosphorylated by AS-CDPK4S147G, and 70 phosphopeptides on 61 proteins show CDPK4-dependent phosphorylation at 18s post-activation; SOC1, SOC2, and SOC4 are identified as potential early effectors, while GAP40 and SOC3 are potential late effectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 combine analog-sensitive kinase and phosphoproteomics approaches to identify CDPK4 substrates. The convergence of two independent methods (AS-kinase and KO phosphoproteomics) strengthens substrate identification. The temporal classification into early (C110) and late (C111) effectors is logical based on the phosphorylation timing data. Figure 4A-B and Supplementary files 2-3 provide comprehensive supporting data. The use of \"could represent\" in C110-C111 appropriately indicates these are candidate effectors requiring validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Genetic knockout analysis reveals that SOC1, SOC2, and SOC3 are important for exflagellation, with SOC1 and SOC2 affecting DNA replication and SOC3 specifically blocking exflagellation without affecting DNA replication or axoneme assembly; SOC4, SOC5, and SOC6 knockouts show no defects, and GAP40 cannot be deleted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 validate candidate substrates through reverse genetics. The differential phenotypes of SOC1-3 knockouts versus SOC4-6 controls provide strong evidence for functional relevance. The inability to delete GAP40 (C112) suggests essentiality in asexual stages but limits analysis of its role in gametogenesis. Figure 4C and Figure 4\u2014figure supplement 1 provide supporting data. The phenotypic characterization could be more quantitative for some measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "SOC1 is a CDPK4 effector required for the 1N/2N transition, interacts with MCM proteins and CDPK4, contains SAPS domains conserved in eukaryotes involved in G1/S transitions, and is expressed in asexual stages where its deletion causes fitness costs, suggesting conserved function across life cycle stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C126 characterize SOC1 function and conservation. The phenotype (50% remain haploid, C117) is less severe than CDPK4 inhibition, consistent with additional substrates cooperating (addressed later). The interaction with MCM proteins (C119) and SAPS domain homology (C123) provide mechanistic context. The expression and fitness cost in asexual stages (C124-C125) support broader importance. However, the diffuse cytoplasmic localization (C120) is puzzling for a protein proposed to regulate nuclear DNA replication. Figure 5A-B and Figure 5\u2014figure supplement 1 support these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "SOC2 is a Plasmodium-specific 623 kDa protein with transmembrane and sialidase domains that is processed into multiple isoforms, localizes to mitotic spindles, and is required for completing mitosis to enable subsequent DNA replication rounds; it is also expressed in asexual stages where deletion causes strong fitness costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C144 extensively characterize SOC2. The phenotype (blocks 2N\u21924N transition, C130) and spindle localization defects (C132) support a role in mitosis. The protein processing (C139-C140) and spindle colocalization (C141) are interesting but the functional significance is unclear. The large size (C134) and domain predictions (C135) are based on sequence analysis. The detection of only a 140 kDa fragment (C136) versus predicted 623 kDa raises questions about protein stability or processing. Figure 5C-D and Figure 5\u2014figure supplement 1 provide supporting data, though the biochemical characterization is incomplete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "SOC3 is a Plasmodium-specific protein essential for exflagellation but not for DNA replication or axoneme assembly, localizes to axonemes, is specifically expressed in male gametocytes, and represents a crucial effector for completing cytokinesis by activating axoneme motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C152 characterize SOC3 as a late-stage effector. The complete block of exflagellation without affecting earlier processes (C145-C146) and axonemal localization (C148) strongly support a role in motility activation. The Plasmodium-specific phylogenetic distribution (C151) and male gametocyte-specific expression (C149) are consistent with a specialized function. The inference that SOC3 is \"crucial\" (C147) and controls \"activation of axoneme motility\" (C152) is well-supported by the phenotype. Figure 5E-F and Figure 5\u2014figure supplement 1 provide strong supporting evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C153",
+      "C154"
+    ],
+    "result": "Deletion of SOC1 and SOC2 does not block cell cycle transitions as completely as CDPK4 inhibition, suggesting additional CDPK4 substrates cooperate with SOC1 and SOC2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C154 acknowledge the incomplete phenotypes of individual substrate knockouts compared to kinase inhibition. This is an important observation suggesting functional redundancy or additional substrates. The inference in C154 is logical and appropriately cautious. This result contextualizes the substrate identification as incomplete rather than comprehensive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Multiple kinases and phosphatases control male gametogenesis, and phosphoproteomics reveals a broad phosphorylation-dependent response between 0-18s, suggesting a complex regulatory network underlies DNA replication initiation and mitotic spindle assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 place CDPK4 in broader context. The citations to other kinases/phosphatases (C155) and the phosphoproteomics data (C156) support complexity. However, C157 is largely speculation (\"likely\") about network properties that are not directly tested. The claim is reasonable but represents interpretation rather than demonstrated result. The phosphoproteomics data in Supplementary file 3 support C156.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C158",
+      "C159"
+    ],
+    "result": "Complete deletion of SOC3 blocks exflagellation entirely, suggesting it may be a focal component for axoneme motility activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C159 highlight the non-redundant nature of SOC3 function. The complete block (C158) contrasts with partial phenotypes of SOC1/SOC2 knockouts, supporting the inference that SOC3 is \"focal\" (C159). However, \"focal\" is somewhat vague\u2014it could mean non-redundant, rate-limiting, or structurally central. The data support non-redundancy but don't distinguish between these possibilities. Figure 5E provides supporting data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "CDPK4 activity is essential during two short temporal windows (10-30s and immediately before exflagellation), is activated by PKG-dependent Ca2+ mobilization, and requires myristoylation for early but not late functions, suggesting CDPK4 integrates multiple regulatory signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C165 synthesize the temporal and regulatory findings. The two activity windows (C160) are well-established by the inhibitor studies. The Ca2+ activation (C162) is from prior work. The myristoylation requirement for early functions (C163) is demonstrated by the G2A mutant. The observation that both isoforms support spindle assembly (C164) and that myristoylation is dispensable in the M57A context (C165) are well-supported. The inference about signal integration (C161) is reasonable. This result effectively summarizes key regulatory features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Full-length non-myristoylated CDPK4 is active in vitro, and the N-terminal 56 amino acids may represent a regulatory domain controlling nuclear functions, based on the observation that many myristoylated proteins localize to the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C166-C169 speculate about the function of the N-terminal extension. The in vitro activity of non-myristoylated CDPK4 (C166) is from prior work and supports C167. However, C168 cites human data about myristoylated proteins, and C169 extrapolates this to CDPK4 without direct evidence. The speculation is reasonable but unsupported by data in this study. The fractionation data (C101-C102) provide weak support for nuclear association, but this is a minor population and not definitively chromatin-associated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "CDPK4 is a promising transmission-blocking drug target, with bumped kinase inhibitors like 1294 blocking transmission in vivo and showing broad-spectrum anti-protozoal activity; CDPK4's multiple essential functions likely explain its strict essentiality for transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C173 discuss translational implications. The drug target potential (C170) and in vivo efficacy (C171) are from prior work. The inference that multiple functions explain essentiality (C172) is logical and supported by this study's findings. The broad-spectrum activity (C173) is from other work. These claims appropriately contextualize the findings but don't represent new results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "CDPK4 has been reported to be important for sporozoite motility and oocyst formation in Plasmodium, and its functional orthologue TgCDPK1 is essential for egress and invasion in Toxoplasma gondii, suggesting CDPK4 is a pleiotropic regulator across multiple life cycle stages and biological processes in Apicomplexa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C177 place CDPK4 in broader biological context through literature. The prior reports (C174-C176) are appropriately cited. The speculation about pleiotropic regulation (C177) is reasonable given the multiple roles identified here and in other systems, though \"broad spectrum regulator\" is somewhat vague. These claims provide useful context but represent synthesis of literature rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "DNA replication kinetics during male gametogenesis show that ~85% of gametocytes are haploid at 0 min, diploid parasites peak at 30s-1 min, tetraploid at 2-5 min, and 75% reach octoploid by 6 min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C181 establish the baseline kinetics of DNA replication that provide context for interpreting CDPK4 inhibition experiments. The FACS data in Figure 1\u2014figure supplement 1 part 8 directly support these claims. This is important methodological groundwork but represents characterization rather than a major finding about CDPK4 function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "At 10 min post-activation, cytoskeletal proteins are the most abundant components in CDPK4 immunoprecipitates, though most are also present in non-activated gametocytes; nuclear replication proteins are much less abundant than at earlier timepoints, and traces of CDPK4 are incorporated into exflagellated gametes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 describe the late-stage CDPK4 interactome. The enrichment of cytoskeletal proteins (C72) is statistically significant but the authors appropriately note these are abundant proteins also present at earlier stages (C73), raising questions about specificity. The decreased nuclear protein abundance (C74) is consistent with CDPK4's changing roles over time. The detection in gametes (C75) supports a late function. However, the functional significance of cytoskeletal protein interactions remains unclear. Supplementary file 1 and Figure 2\u2014figure supplement 1 provide supporting data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C37",
+      "C38"
+    ],
+    "result": "CDPK4 controls three essential processes during male gametogenesis: (1) a myristoylated isoform initiates genome replication within 20 seconds via a SAPS-domain protein (SOC1), (2) CDPK4 is required for mitotic spindle assembly via phosphorylation of a microtubule-associated protein (SOC2), and (3) a non-myristoylated isoform activates flagellar motility to complete cytokinesis via an uncharacterized flagellar protein (SOC3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C8 and C37-C38 represent the core findings synthesized in the abstract and introduction. All three roles are well-supported by the temporal inhibitor studies, genetic analysis of isoforms, substrate identification, and knockout phenotypes described in the grouped results above. The identification of three effectors (SOC1-3) mediating these roles is a major achievement. The integration of chemical genetics, proteomics, and reverse genetics provides strong multi-faceted support. This represents the primary contribution of the manuscript.",
+    "result_type": "MAJOR"
+  }
+]

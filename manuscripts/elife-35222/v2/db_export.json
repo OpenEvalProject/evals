@@ -1,0 +1,1334 @@
+{
+  "submission": {
+    "id": "8480aa45-0678-476a-9be6-8cd4e06cf75d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T02:19:22.623813Z",
+    "updated_at": "2025-12-02T02:19:22.623813Z"
+  },
+  "content": [
+    {
+      "id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "submission_id": "8480aa45-0678-476a-9be6-8cd4e06cf75d",
+      "content_type": "manuscript",
+      "content_text": "# Allosteric regulators selectively prevent Ca2+-feedback of CaV and NaV channels\n\n## Authors\n\n- Jacqueline Niu<sup>1</sup>\n- Ivy E Dick<sup>2</sup>\n- Wanjun Yang<sup>3</sup>\n- Moradeke A Bamgboye<sup>2</sup>\n- David T Yue<sup>1</sup>\n- Gordon Tomaselli<sup>3</sup>\n- Takanari Inoue<sup>4</sup> \u2020\n- Manu Ben-Johny<sup>6</sup> ([ORCID: 0000-0002-5645-0815](https://orcid.org/0000-0002-5645-0815)) \u2020\n\n### Affiliations\n\n1. Department of Biomedical Engineering Johns Hopkins University Baltimore United States\n2. Department of Physiology University of Maryland Baltimore United States\n3. Department of Cardiology Johns Hopkins University Baltimore United States\n4. Department of Cell Biology Johns Hopkins University Baltimore United States\n5. Center for Cell Dynamics, Institute for Basic Biomedical Sciences Johns Hopkins University Baltimore United States\n6. Department of Physiology and Cellular Biophysics, College of Physicians and Surgeons Columbia University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCalmodulin (CaM) serves as a pervasive regulatory subunit of CaV1, CaV2, and NaV1 channels, exploiting a functionally conserved carboxy-tail element to afford dynamic Ca2+-feedback of cellular excitability in neurons and cardiomyocytes. Yet this modularity counters functional adaptability, as global changes in ambient CaM indiscriminately alter its targets. Here, we demonstrate that two structurally unrelated proteins, SH3 and cysteine-rich domain (stac) and fibroblast growth factor homologous factors (fhf) selectively diminish Ca2+/CaM-regulation of CaV1 and NaV1 families, respectively. The two proteins operate on allosteric sites within upstream portions of respective channel carboxy-tails, distinct from the CaM-binding interface. Generalizing this mechanism, insertion of a short RxxK binding motif into CaV1.3 carboxy-tail confers synthetic switching of CaM regulation by Mona SH3 domain. Overall, our findings identify a general class of auxiliary proteins that modify Ca2+/CaM signaling to individual targets allowing spatial and temporal orchestration of feedback, and outline strategies for engineering Ca2+/CaM signaling to individual targets.\n\n## Introduction\n\nSupporting vital biological functions, voltage-gated calcium (CaV1 and CaV2) and sodium (NaV1) channels are tuned by the Ca2+-binding protein, calmodulin (CaM) (Ben-Johny et al., 2015; Catterall et al., 2017; Saimi and Kung, 2002). NaV1 supports action potential initiation and propagation (Hille, 2001), while CaV1/2 initiate muscle contraction, neurotransmission, and gene transcription (Berridge et al., 2000; Clapham, 2007; Maier and Bers, 2002). Despite divergent functions, these channel families share a conserved carboxy-tail element, termed Ca2+-inactivating (CI) module, that harbors CaM. Functionally, the CI module confers dynamic Ca2+-dependent regulation to CaV1, CaV2, and NaV1 that manifests as either inactivation (CDI) or facilitation (CDF), negative and positive feedback, respectively (Ben-Johny et al., 2015; Minor and Findeisen, 2010). Yet, this modularity poses a challenge \u2013 mechanisms that tune Ca2+/CaM-feedback must distinguish between structurally\u00a0similar targets. Global inhibition of CaM indiscriminately alters many processes (Persechini and Stemmer, 2002). Given the abundance of CaM-regulated proteins, mechanisms that adjust CaM signaling to individual targets are crucial (Marshall et al., 2015; Saimi and Kung, 2002). Physiologically, Ca2+-regulation of CaV1 is critical for cardiac electrical stability (Limpitikul et al., 2014; Mahajan et al., 2008), rhythmicity of oscillatory neurons (Chan et al., 2007; Huang et al., 2012), and vesicle release at ribbon synapses (Joiner and Lee, 2015). CaV2 modulation contributes to short-term synaptic plasticity and spatial learning (Adams et al., 2010; Jackman and Regehr, 2017; Nanou et al., 2016), while NaV1 modulation tunes excitability of skeletal and cardiac muscle (Pitt and Lee, 2016; Van Petegem et al., 2012). Consequently, aberrant channel regulation underlies numerous maladies including cardiac arrhythmias (Venetucci et al., 2012; Zimmer and Surber, 2008), neurological and neuropsychiatric disorders (Adams and Snutch, 2007; Striessnig et al., 2010; Zamponi, 2016), and skeletal myotonia (Cannon, 2015).\n\nSrc homology 3 (SH3) and cysteine-rich domain (C1) proteins (stac) have emerged as attractive candidates that modulate CaV gating and trafficking (Polster et al., 2015; Suzuki et al., 1996). Initially identified in association with congenital skeletal myopathies as a structural protein that abets CaV1.1 plasmalemmal trafficking (Horstick et al., 2013; Linsley et al., 2017c; Polster et al., 2015), stac also suppresses CaV1.2 CDI (Campiglio et al., 2018; Wong King Yuen et al., 2017). Even so, the specificity of stac in tuning Ca2+-regulation of the broader CaV/NaV family, the\u00a0underlying elementary mechanisms, and molecular determinants remain to be fully elucidated (Wong King Yuen et al., 2017). Stac\u00a0isoforms (stac1-3) share a common architecture containing a C1 and two SH3 domains fused via a linker, and exhibit tissue-specific expression (Suzuki et al., 1996). Stac1/2 are expressed throughout the brain (Nelson et al., 2013; Suzuki et al., 1996), the peripheral nervous system (Legha et al., 2010), the retina (Wilhelm et al., 2014), and the inner ear (Cai et al., 2015), while stac3 is limited to the skeletal muscle (Nelson et al., 2013). Resolving mechanisms by which stac modulates CaV may furnish long-sought physiological insights (Suzuki et al., 1996).\n\nEvolutionarily distinct from stac, fibroblast growth factor (fgf) homologous factors (fhf1-4, fgf11-14) are unconventional fgf that lack a\u00a0secretory signal and serve as intracellular regulators of NaV gating and trafficking (Goldfarb, 2005; Pablo and Pitt, 2016). Curiously, fhf interacts with the NaV CI module in close proximity to the CaM binding interface, suggesting interplay between these modulators (Wang et al., 2012; Wang et al., 2011b). Yet, functionally, fhf is thought to modulate only voltage-dependent fast inactivation (Goldfarb et al., 2007; Lou et al., 2005; Wang et al., 2011a), with changes in Ca2+-regulation unknown. Fhf isoforms are differentially expressed in the brain (Smallwood et al., 1996; Yan et al., 2014), peripheral nervous system (Ornitz and Itoh, 2001), and cardiac (Wei et al., 2011) and skeletal muscle (Kraner et al., 2012). Genetic variation in fhf4 is linked to spinocerebellar ataxia 27 (Coebergh et al., 2014) and fhf1 to cardiac arrhythmias (Wei et al., 2011), hinting at their relevance for regulating neuronal and cardiac excitability.\n\nBy leveraging synergistic insights from CaV and NaV channels, we demonstrate that stac selectively diminishes Ca2+-regulation of CaV1. In-depth analysis shows that stac binds to a distinct channel interface from CaM and uses an allosteric mechanism to lock CaV1 into a high open probability (PO) gating mode. We further localize a minimal motif that recapitulates stac modulation of CaV1 gating. Paralleling stac-effect on CaV1, fhf reduces CDI of NaV1 with no effect on CaV1. In all, our findings point to a general class of auxiliary proteins that intercept CaM signaling to individual targets, allowing spatial and temporal orchestration of Ca2+-feedback.\n\n## Results\n\n### Stac selectively suppresses Ca2+-feedback of CaV1 channels\n\nWe sought to determine stac effect on CaV1, CaV2, and NaV1 channels in heterologous systems. Figure 1A shows baseline effects of stac on CaV1.2 (Campiglio et al., 2018; Polster et al., 2015; Wong King Yuen et al., 2017). Devoid of stac, CaV1.2 exhibits CaM-mediated CDI manifesting as enhanced decay of Ca2+ (red) versus Ba2+ current (black) when elicited using a step depolarization (Figure 1A, middle subpanel). As Ba2+ binds CaM poorly (Linse and Fors\u00e9n, 1995), Ba2+-currents furnish a baseline measure of voltage-dependent inactivation (VDI) without CDI. Upon stac2 co-expression, CDI is diminished (Figure 1A, right subpanel). To quantify steady-state extent of inactivation, we measured the fraction of peak Ca2+ and Ba2+ current remaining after 300 ms depolarization, rCa and rBa (Figure 1\u2014figure supplement 1A). The strength of CDI is quantified as CDI300\u00a0=\u00a01 \u2013 rCa/rBa, the fractional Ca2+-dependent component of inactivation. Thus quantified, the population data confirm a reduction in CDI of CaV1.2 with stac2 (p=3.6\u00a0\u00d7\u00a010\u22125; Figure 1B). Further analysis shows that both stac1 and stac3 isoforms also diminish CDI (p=2.0\u00a0\u00d7\u00a010\u22125 and 7.1\u00a0\u00d7\u00a010\u22125, respectively, Figure 1B and Figure 1\u2014figure supplement 1A). Similarly, CaV1.3 short variant (CaV1.3S), a close homolog of CaV1.2, exhibits strong baseline CDI that is reduced on co-expression of stac1, stac2, and stac3 (p<1\u00a0\u00d7\u00a010\u22125; Figure 1C\u2013D and Figure 1\u2014figure supplement 1B). Generalizing this phenomenon, stac2 also reduces CDI of CaV1.443* (p=3.2\u00a0\u00d7\u00a010\u22125; Figure 1E\u2013F; Figure 1\u2014figure supplement 1C) (Tan et al., 2012).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/35222/elife-35222-fig1-v2.jpg)\n\n**Figure 1.:** (A) Stac2 diminishes CDI of CaV1.2. Left, cartoon schematic shows CaV1.2. Middle, exemplar current traces evoked in response to\u00a0+10 mV voltage-step shows robust CDI (rose shaded area) evident as enhanced current decay with Ca2+ (red) versus Ba2+ (black) as the charge carrier. Right, stac2 abolishes CDI. Steady-state levels of inactivation are\u00a0assessed as the fraction of peak current remaining following 300 ms depolarization (rCa and rBa) and CDI\u00a0=\u00a01 \u2013 rCa/rBa. (B) Bar graph displays population data of CDI300 for CaV1.2 in the absence and in the presence of stac1, stac2, or stac3. Dashed line shows baseline CDI in the absence of stac for comparison. Each bar, mean\u00a0\u00b1S.E.M. obtained from specified number of cells\u00a0(n). (C\u2013D) Stac isoforms suppress CDI of CaV1.3S, the canonical short variant, as confirmed by both exemplar traces (C) and population data (D). Format as in (A) and (B). (E\u2013F) Stac2 abolishes CDI of CaV1.443* assessed in response to\u00a0+20 mV test pulse. Format as in (A) and (B). (G\u2013H) Stac2 spares CDF of CaV2.1, as evaluated using a prepulse protocol. An isolated test pulse to 0 mV elicits Ca2+ currents with biphasic activation (gray, G). With a\u00a0+\u00a020 mV prepulse, channels are partially facilitated and the slow component of activation is reduced (red, G). The area between the two current traces (\u0394Q), divided by \u03c4slow, yields facilitation (g). Bar graph plots, CDF\u00a0=\u00a0gCa \u2013 gBaH). Each bar, mean\u00a0\u00b1S.E.M from specified number of cells (n). (I\u2013J) Stac2 spares CDI of CaV2.2 assessed in response to\u00a0+30 mV test pulse. Here, CDI is evaluated following 800 ms of depolarization to accommodate slow inactivation kinetics, yielding CDI800. Format as in (A) and (B). (K\u2013L) Stac2 spares CDI of CaV2.3. Format as in (A) and (B). (M\u2013N) Stac2 spares CDI of NaV1.4. Both in the absence and presence of stac, NaV1.4 peak currents decline following a Ca2+ step (rose fit) (M). Gray dots, peak currents before uncaging. CDI\u00a0=\u00a01 \u2013 average peak INa of last three to four responses after Ca2+ uncaging / peak INa before uncaging. Bar graph plots maximal CDI observed with Ca2+ steps > 5 \u03bcM (N). Each bar, mean\u00a0\u00b1S.E.M.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35222/elife-35222-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Stac1-3 isoforms strongly diminish CDI of CaV1.2 (schematized in the far left subpanel). In the absence of stac, CaV1.2 exhibits robust CDI (red shaded area, middle left subpanel). Co-expression of stac2 (middle), stac1 (middle right), and stac3 (far right), all suppress CDI. The steady-state extent of inactivation in Ca2+ (red) and Ba2+ (black), here, is estimated by the metric r300, the ratio of current remaining at 300 ms to peak current during a depolarizing pulse, plotted as a function of voltage. Each symbol, mean\u00a0\u00b1S.E.M. from specified number of cells (n). (B) Stac1-3 isoforms suppress CDI of CaV1.3. Format as in (A). (C) Stac2 co-expression abolishes CDI of CaV1.443* alternatively\u00a0spliced variant. Format as in (A). (D) Stac2 does not alter CDF of CaV2.1. A prepulse protocol is used to estimate CDF. A step depolarization to 0 mV evokes an inward current containing rapid and slow components caused\u00a0by a superposition of voltage activation and CDF. With a preceding voltage step to 20 mV, sufficient Ca2+ enters to partially facilitate the channels, such that the subsequent step to 0 mV has a markedly blunted slow component (Figure 1G). The area between the two current traces (\u0394Q), divided by \u03c4slow, yields the parameter g, an estimate of facilitation triggered by the prepulse. Here, g plotted as a function of prepulse potentials reveals a U-shaped dependence of Ca2+-dependent facilitation. Facilitation is similar in the absence (middle subpanel) and presence of stac2 (right subpanel). (E) Stac2 does not suppress CDI of CaV2.2. The steady-state extent of inactivation in Ca2+ (red) and Ba2+ (black), here, is estimated by the metric r800, the ratio of current remaining at 800 ms to peak current during a depolarizing pulse, plotted as a function of voltage. Robust CDI is detected under both control conditions (middle subpanel) and stac2 co-expression (right subpanel). (F) Similarly, CDI of CaV2.3 is not greatly affected. Format as in (A). (G) Stac2 spares CDI of NaV1.4. Mean data for CDI are\u00a0plotted versus Ca2+-step amplitude. CDI\u00a0=\u00a01 \u2212 average peak INa of last three to four responses after Ca2+uncaging/peak INa before uncaging. Symbols, mean\u00a0\u00b1S.E.M. of \u223cfour uncaging events compiled from denoted number of cells (n).\n\nEncouraged by its pervasiveness, we considered whether stac alters Ca2+-dependent modulation of CaV2 isoforms that are abundant in the central nervous system. For CaV2.1, CaM elaborates both CDF and CDI (DeMaria et al., 2001; Lee et al., 2000). However, the Ca2+-sensitivity of CDI process is over 50-fold weaker than that of CDF, casting this negative feedback beyond physiological bounds (Lee et al., 2015). As such, we probed whether stac tunes CDF of CaV2.1 using a well-established prepulse protocol (DeMaria et al., 2001; Thomas and Lee, 2016). Figure 1G displays wildtype CaV2.1 currents in the absence of stac2. On presentation of an isolated test pulse to 0 mV, the activation of Ca2+ current follows a biphasic response (gray trace). Following a brief voltage prepulse, however, the ensuing test pulse yields enhanced Ca2+-currents with monophasic activation reflecting CDF (red trace). Further quantification revealed no change in CDF of CaV2.1 following the addition of stac2 in both exemplar current recordings (Figure 1G) and population data (Figure 1H; Figure 1\u2014figure supplement 1D). For CaV2.2, CaM-regulation manifests as a kinetically slow CDI (Figure 1I) (Liang et al., 2003), that persists despite stac co-expression (Figure 1I\u2013J; Figure 1\u2014figure supplement 1E). Here CDI is quantified by metric CDI800\u00a0=\u00a01 \u2013 rCa/rBa, measured following 800 ms of depolarization. Likewise, neuronal CaV2.3 also possesses robust CDI, which is spared with stac2 co-expression (Figure 1Figure 1K\u2013L; Figure 1\u2014figure supplement 1F).\n\nLastly, we tested whether stac suppresses Ca2+-regulation of NaV1, related to CaV1. Although all NaV1 possess a CI module homologous to both CaV1 and CaV2 (Babitch, 1990), CDI that bears mechanistic similarity to CaV has been identified only in NaV1.4 (Ben-Johny et al., 2014). Unlike CaV, NaV channels do not convey Ca2+ influx that triggers Ca2+-feedback. We used rapid photo-uncaging of Ca2+ to produce\u00a0a step-like increase in intracellular [Ca2+]i, whose magnitude is simultaneously monitored via fluorescent indicators. Figure 1M displays baseline Ca2+-regulation of NaV1.4. As CDI is kinetically slow in comparison to fast inactivation, we applied a train of step\u00a0depolarizations evoked at 10 Hz to probe Ca2+-dependent effects (Ben-Johny et al., 2014). Without Ca2+-uncaging, peak NaV1.4 currents remained steady (gray dots). In response to an\u00a0~10 \u03bcM Ca2+ step, the peak Na current declined rapidly revealing CDI (red envelope). Stac overexpression, however, does not disrupt NaV1.4 CDI (Figure 1M\u2013N; Figure 1\u2014figure supplement 1G). Overall, these results show the specificity of stac in tuning Ca2+-regulation of CaV1 channels.\n\n### Stac interacts with CaV1 CI module to elicit CDI suppression\n\nWe sought to identify molecular mechanisms that underlie selective CaV1 modulation by stac. As the stac effect here is inferred based on overexpression analysis, we determined relative concentration requirements for stac binding to CaV1 holo-channel complexes within the milieu of living cells. We used live cell FRET 2-hybrid assay (Erickson et al., 2001) to probe the interaction of CFP-tagged stac3 with YFP-linked CaV1.3S. As all three stac variants suppress the CDI of all CaV1 isoforms, we chose CaV1.3 as YFP-tethered channels and a repertoire of YFP-tagged intracellular loop peptides are readily available for in-depth binding analysis (Yang et al., 2014). Stac3 was selected for its high potency in suppressing CaV1.3 CDI (Figure 1D). Accordingly, we quantified FRET efficiency (ED) between FRET pairs co-expressed in individual cells. By leveraging stochastic expression of the FRET pairs in cells, we obtained a saturating Langmuir relationship between ED and the free acceptor concentration (Afree) permitting estimation of relative binding affinities (Kd,EFF). Thus probed, we obtained a CaV1.3 holo-channel affinity for stac3 of Kd,EFF = 1458 \u00b1 251 Dfree units proportional to\u00a0~47 nM (Figure 2A). By comparison, similar analysis of CaM binding to CaV1.3 showed Kd,EFF = 700 Dfreeunits\u00a0~\u00a022 nM (Yang et al., 2014). Consequently, stac\u2019s relatively high binding-affinity for CaV1.3 suggests that it may be a potent modulator even at low concentrations.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/35222/elife-35222-fig2-v2.jpg)\n\n**Figure 2.:** (A) Live-cell FRET 2-hybrid assay shows high-affinity interaction between CFP-tagged stac3 with YFP-tethered holo-CaV1.3 channels in the presence of auxiliary \u03b22A and \u03b12\u03b4 subunits. (B) Cartoon shows FRET pairs, CFP-stac3 with YFP-CI, YFP-PCI, and YFP-IQ of CaV1.3. (C) FRET-binding curves show robust binding of stac3 to both the CI and PCI segment while binding to IQ is weaker. (D) Bar graph summarizes the relative association constant, Ka,EFF, of stac2 binding to major channel intracellular domains. (E\u2013F) Transferring CaV1.3S CI to CaV2.3 (CaV2.3/1.3 CI) unveils latent stac2-mediated suppression of CDI. Format as in Figure 1A \u2013 B.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35222/elife-35222-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Schematic depicts design of YFP-tagged CaV1.3 intracellular loop constructs (NT, I-II loop, II-III loop, III-IV loop, CI region, PCI region, IQ domain). The exact sequence of the N- and C-termini of each peptide as well as locations on the CaV1.3 \u03b1 subunit are denoted. (B\u2013E) FRET 2-hybrid binding curves for stac3 interaction with various channel intracellular loops (black symbol and fit). Each symbol denotes FRET measurements from a single cell. Stac3 binds very weakly to the amino terminal (NT) peptide (B) that includes the CaM-binding segment, NSCaTE. Both the I-II (C) and the II-III loop peptides (D) also showed little or no FRET binding. By contrast, the III-IV loop peptide bound appreciably to stac3 (E). (F) Transfer of CI module of CaV1.3 onto CaV2.3 confers stac modulation. Format as in Figure 1\u2014figure supplement 1A. In the absence of stac2, CaV2.3/1.3 CI exhibits robust CDI triggered by local Ca2+ isolated using 10 mM BAPTA (middle subpanel). Stac2 abolishes CDI of CaV2.3/1.3 CI (right subpanel).\n\nWith holo-channel binding assured, we systematically scanned YFP-tagged CaV1.3 intracellular domains (Yang et al., 2014) for stac binding sites (Figure 2B; Figure 2\u2014figure supplement 1A). We found that stac3 binds well to the CI region (Kd,EFF = 20697 \u00b1 3023 Dfree~0.67\u00a0\u00b1\u00a00.1 \u03bcM, Figure 2C). By contrast, analysis of the amino-terminus, intracellular loops between domains I and II (I-II loop), domains II and III (II-III loop), and domains III and IV (III-IV loop) revealed far weaker binding (Figure 2D; Figure 2\u2014figure supplement 1B\u2013E). To further localize the putative binding loci, we subdivided the CI module into two: (1) a proximal CI segment (PCI) composed of dual vestigial EF hand and preIQ segments and (2) the IQ domain (IQ). The YFP-tagged PCI segment bound stac3 with approximately\u00a0tenfold higher affinity (Kd,EFF = 17725 \u00b1 3990 Dfree~0.58\u00a0\u00b1\u00a00.1 \u03bcM) than the downstream IQ domain (Kd,EFF = 204739 \u00b1 25465 Dfree~6.67\u00a0\u00b1\u00a00.8 \u03bcM) (Figure 2C\u2013D). In all, systematic FRET analysis reveals that stac binds to CaV1 CI relying on upstream elements including the dual vestigial EF hand and preIQ domains, an interface distinct from that for CaM (Bazzazi et al., 2013; Minor and Findeisen, 2010).\n\nTo test for functional relevance of stac binding to the CaV1 CI module, we sought to confer stac-sensitivity to a stac-insensitive channel via a chimeric approach. We turned to CaV2.3 that lacks strong stac-mediated CDI suppression, yet forms functional chimeras with CaV1 (Mori et al., 2008; Yang et al., 2014). We replaced the CI region of CaV2.3 with the corresponding segment from CaV1.3 (CaV2.3/1.3 CI). Devoid of stac, CaV2.3\u20131.3 CI channels exhibit CDI isolated by high intracellular buffering (Figure 2E\u2013F; Figure 2\u2014figure supplement 1F). In contrast to wildtype CaV2.3, stac2 co-expression attenuated CDI (p=4.7\u00a0\u00d7\u00a010\u22124, Figure 2E\u2013F; Figure 2\u2014figure supplement 1F), suggesting that CaV1 CI module is necessary for stac-mediated CDI suppression.\n\n### Stac uses an allosteric mechanism to suppresses CaM signaling\n\nGiven that both CaM and stac share the CI module as an effector site, two disparate mechanistic possibilities may allow suppression of Ca2+-regulation. First, stac may competitively displace Ca2+-free CaM (apoCaM) from its preassociation site. Second, stac may supersede CaM signaling to the channel pore via an allosteric mechanism. Systematic FRET analysis suggests that stac preferentially binds upstream CI elements (Figure 2D) while high-affinity CaM preassociation is supported via the IQ domain (Bazzazi et al., 2013; Minor and Findeisen, 2010), hinting that the two modulatory proteins may bind concurrently. To rule out competitive displacement of CaM preassociation, we covalently tethered CaM onto the CaV1.3 carboxy-tail using a poly-glycine linker (CaV1.3S-CaM) (Mori et al., 2004; Yang et al., 2014). This maneuver preserves CDI (Figure 3A left) and ensures a high local CaM concentration near CaV1 extending into the millimolar range, sufficient to protect the channel from a competitive inhibitor (Mori et al., 2004). Dominant-negative CaM1234 with its Ca2+-binding sites disabled, typically displaces intact apoCaM from the CI module thereby resulting in a loss of CDI for wildtype channels (Figure 3\u2014figure supplement 1A\u2013B) (Yang et al., 2014). CDI of CaV1.3S-CaM persists despite CaM1234 co-expression (gray bar, Figure 3B; Figure 3\u2014figure supplement 1C\u2013D). By contrast, CDI of CaV1.3S-CaM is diminished by co-expression of stac2 (p=3.8\u00a0\u00d7\u00a010\u22126, Figure 3A\u2013B; Figure 3\u2014figure supplement 1E) and stac3 (p=4.5\u00a0\u00d7\u00a010\u22124, Figure 3\u2014figure supplement 1F). As a further test, co-expression of untethered CaV1.3S with both CaM and stac2 also showed low CDI (Figure 3\u2014figure supplement 1G). We observed a similar fate for CaV1.2-CaM with stac2 (p=1.5\u00a0\u00d7\u00a010\u22125, Figure 3C\u2013D; Figure 3\u2014figure supplement 1H). These findings suggest that stac does not need to dislodge CaM from its CaV1.3 carboxy-tail binding interface to exert functional modulation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/35222/elife-35222-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013B) Stac2 suppresses CDI of CaV1.3S tethered to CaM. In contrast, fusion of CaM protects CaV1.3S from competitive inhibitors such as CaM1234. Format as in Figure 1A\u2013B. (C\u2013D) Stac2 suppresses CDI of CaV1.2 tethered to CaM. Format as in Figure 1A\u2013B. (E) FRET 2-hybrid assay shows the high-affinity interaction of YFP-tagged CaV1.3 CI to CFP-tagged CaM with relative dissociation constant Kd,EFF\u00a0~4000\u00a0\u00b1\u00a0291 Dfree units. (F) Co-expression of untagged CaM1234 with FRET pairs YFP-tagged CaV1.3 CI and CFP-tagged CaM results in a marked reduction in FRET efficiency. (G) Co-expression of untagged stac3 spares the binding of YFP-tagged CaV1.3 CI with CFP-tagged CaM, yielding an identical EA-Dfree relationship to\u00a0that in the absence of stac3 (E).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35222/elife-35222-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Dominant-negative CaM1234 lacking Ca2+-binding to all four EF hands abolishes strong CDI of CaV1.3S. Left, cartoon schematizes CaV1.3S variant. Right, CDI of CaV1.3S is absent in the presence of CaM1234. Here, CaM1234 competitively replaces prebound wildtype CaM to suppress CDI. (B) Population data of r300 confirm the abolition of CDI for CaV1.3S upon co-expression of CaM1234. Format as in Figure 1\u2014figure supplement 1A. (C) Fusion of CaMWT protects CaV1.3S from CaM1234, a competitive inhibitor of CDI. Exemplar currents show robust CDI of CaV1.3S-CaM under both control conditions and in the presence of CaM1234. Control data here reproduced from main text Figure 3A for symmetry. (D) Population data of r300 confirm the presence of CDI for CaV1.3S-CaM despite overexpression of CaM1234. Format as in Figure 1\u2014figure supplement 1A. These results demonstrate that CaM-fusion can protect CaV1.3 from competitive inhibition of CDI. (E\u2013F) Co-expression of stac2 (E) and stac3 (F) abolishes CDI of CaV1.3S-CaM. (G) Stac2 diminishes CDI of CaV1.3 despite CaM overexpression. (H) Population data of r300 demonstrate that stac2 abolishes CDI of CaV1.2 with CaM tethered to the carboxy-terminus (CaV1.2-CaM).\n\nTo test this possibility, we undertook FRET 2-hybrid assay comparing binding of CFP-tagged CaM to YFP-tagged CaV1.3 CI in the presence and absence of unlabeled stac3. If stac3 were to competitively dislodge CaM, then this binding is predicted to be weakened. At baseline, CaM binds to CaV1.3 CI with a relative dissociation constant, Kd,EFF\u00a0~4000\u00a0\u00b1\u00a0291 Dfree units (Figure 3E) (Ben Johny et al., 2013). Upon co-expression of CaM1234, this baseline binding is weakened\u00a0~11 fold, yielding a relative affinity of 47153\u00a0\u00b1\u00a04815 Dfree units (Figure 3F). By contrast, co-expression of stac3 did not appreciably perturb CaM binding to the CI module with Kd,EFF = 4182 \u00b1 330 Dfree units (Figure 3G). These results suggest that both stac and CaM act concurrently via distinct sites on the channel carboxy-tail, in contradiction with a competitive mechanism.\n\n### Elementary mechanisms underlying stac-regulation of CaV1\n\nBeyond Ca2+-dependent regulation, apoCaM binding tunes the baseline activity of CaV channels (Adams et al., 2014). Absent stac, CaV1 lacking prebound CaM adopts a low PO configuration (empty configuration, PO/E) while apoCaM binding switches channels into a high PO mode (CaM-bound configuration, PO/A) (Adams et al., 2014). Ca2+/CaM divests this initial enhancement in PO and returns channels into a low PO gating mode (PO/E) manifesting as CDI. The addition of stac as a regulatory agent enriches this modulatory scheme (Figure 4A). Three distinct scenarios may underlie suppression of Ca2+-regulation by stac (Figure 4B): (1) stac binding may pre-inhibit channels into the low PO configuration (PO/E) akin to Ca2+-inactivated channels and prevent further Ca2+-modulation, (2) stac may obstruct Ca2+/CaM regulation while allowing apoCaM to change baseline PO, (3) stac\u00a0binding may allosterically lock channels into a high PO mode irrespective of CaM-binding status. For Scenario 3, it is possible that the baseline PO of CaV1.3 with stac may be distinct from that observed with CaM-overexpression. These three scenarios may be distinguished at the single-molecule level by assessing CaV1 PO under various CaM-bound conditions using low-noise electrophysiology. We focused on CaV1.3 given the rich assortment of post-transcriptionally modified variants with distinct CaM binding affinities (Bazzazi et al., 2013; Liu et al., 2010; Singh et al., 2008). We focused on three variants, CaV1.3S with high apoCaM affinity, and CaV1.3MQDY and CaV1.3L with low affinities. These variants possess distinct baseline PO and CDI and constitute a convenient platform to identify stac-dependent effects (Adams et al., 2014; Tan et al., 2011).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/35222/elife-35222-fig4-v2.jpg)\n\n**Figure 4.:** (A) A general four-state scheme for stac and CaM modulation. (1) CaV1.3S devoid of CaM and stac possess a low baseline PO (PO/E). (2) Without stac, apoCaM binding to CaV1.3S upregulates baseline PO (PO/A). Baseline PO of CaV1.3S bound to stac in the absence (configuration 3, PO/E*) and the presence of apoCaM (configuration 4, PO/A*) are unknown. (B) Schematic outlines three mechanistic possibilities for stac binding to CaV1 and their functional outcomes. Scenario 1, stac uniformly suppresses PO of CaV1 (PO/E) and abolishes CDI. Scenario 2, apoCaM tunes baseline PO of CaV1 despite concurrent stac binding. Stac, nonetheless, abrogates CDI. Scenario 3, stac uniformly upregulates the baseline PO of CaV1 and abolishes CDI (PO/A). (C) Top, cartoon shows the canonical CaV1.3S variant with a high apoCaM binding affinity. Single-channel analysis of recombinant CaV1.3S in the absence (middle) and presence of stac (bottom). In both panels, the unitary Ba2+ currents during voltage-ramp are shown between \u221250 mV and\u00a0+40 mV (slanted gray lines, GHK fit). Robust CaV1.3 openings are detected in the absence and presence of stac. (D) Average single-channel PO-voltage relationship for CaV1.3S obtained from multiple patches in the absence (gray) and presence of stac2 (blue). Error bars indicate\u00a0\u00b1S.E.M. for specified number of patches and 80\u2013150 stochastic records per patch. (E) Histogram shows distribution of single-trial average PO ($P-$O) for the voltage\u00a0range -30 mV \u2264 V \u2264 +25 mV under control (top), stac-bound (middle), and CaM-bound (bottom) conditions. $P-$O-distribution is bimodal in the absence of stac corresponding to high PO (gray) and low PO (rose) gating modes. With stac, $P-$O-distribution is largely restricted to the high PO mode. (F\u2013H) Single-channel analysis of a\u00a0recombinant CaV1.3RNA-edited variant reveals a marked upregulation in the baseline PO in the presence of stac compared with\u00a0control conditions in\u00a0which\u00a0apoCaM preassociation is weak. Absent stac or CaM, single-trial $P-$O-distribution is restricted to the low PO limits, With either stac or CaM, the high PO gating mode re-emerges. Format as in (C\u2013E). (I\u2013K) Stac also upregulates the baseline PO of CaV1.3L, an alternatively\u00a0spliced variant, by stabilizing the high PO gating configuration. Format as in\u00a0(C\u2013E).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35222/elife-35222-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Cartoon schematizes CaV1.3S. (B) Left, 10\u00a0sequential single-channel trials of CaV1.3S under endogenous levels of CaM illustrate high PO gating mode with rare sojourns into a low PO gating mode. Here, traces show Ba2+ currents elicited every 12 s in response to a voltage ramp shown between -40 mV and +40 mV. Right, diary plot displays single trial average PO computed for the voltage-range -30 mV \u2264 V \u2264 +25 mV ($P-_{O}$ (-30 \u2264 V \u2264 25)). Dashed line discriminates traces to low PO (red shaded area) or high PO (gray shaded area) categories as previously established. (C) Average PO at each voltage calculated for all traces within the high PO range (gray region in (B)) and the low PO range (red shaded region in (B)). These relationships estimate the PO-V relationship for high PO and low PO gating modes. (D\u2013E) In the presence of stac2, CaV1.3S preferentially adopts the high PO gating configuration. Format as in (B\u2013C).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35222/elife-35222-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Cartoon schematizes CaV1.3RNA-edited. RNA-editing results in a methionine substitution of the central isoleuicine residue, resulting in sharply diminished CaM binding. Functionally, CaM binding enhances the PO of CaV1.3RNA-edited. (B\u2013C) Under endogenous levels of CaM, CaV1.3RNA-edited exhibits a uniformly low PO as evident from individual trials. The average PO \u2013 V relation is consistent with that for the low PO gating mode. Format as in Figure 4\u2014figure supplement 1B\u2013C. (D\u2013E) CaM overexpression enhances the PO of CaV1.3RNA-edited variant. Exemplar traces depict channels switching between discrete high and low PO gating modes. A\u00a0PO-V relationship for high PO and low PO gating modes is\u00a0evident. Format as in Figure 4\u2014figure supplement 1B\u2013C. (F\u2013G) Similar to CaM, stac2 overexpression also enhances the PO of CaV1.3RNA-edited variant by stabilizing the high PO gating mode. Exemplar traces depict channels largely adopting the high gating mode. Format as in Figure 4\u2014figure supplement 1B\u2013C.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35222/elife-35222-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Cartoon schematizes CaV1.3L. The long-splice variant includes a distal carboxy-tail (DCT) that interacts with the IQ domain and competitively displaces CaM. (B\u2013C) Under endogenous levels of CaM, CaV1.3L exhibits a uniformly low PO as evident from individual trials. The average PO \u2013 V relation is consistent with that for the low PO gating mode. Format as in Figure 4\u2014figure supplement 1B\u2013C. (D\u2013E) CaM overexpression enhances the PO of CaV1.3L variant. Exemplar traces depict channels switching between discrete high and low PO gating modes. Format as in Figure 4\u2014figure supplement 1B\u2013C. (F\u2013G) Similar to CaM, stac2 overexpression also enhances the PO of CaV1.3L variant by stabilizing the high PO gating mode. Exemplar traces depict channels largely adopting the high gating mode. Format as in Figure 4\u2014figure supplement 1B\u2013C.\n\nFirst, we analyzed CaV1.3S in the presence and absence of stac (Figure 4C\u2013E) to determine whether stac may promote channel entry into a low PO gating configuration. CaV1.3S is typically prebound to CaM at endogenous CaM concentrations given its high affinity (Adams et al., 2014). Ba2+ is used as a charge carrier to estimate baseline behavior of channels without confounding effects of CDI. A slow voltage-ramp (shown between \u221250 and\u00a0+40 mV) evokes stochastic channel openings that approximate near steady-state PO at each voltage. Stochastic records displayed in Figure 4C show channel openings as downward deflections to the open level (gray curves) and closures correspond to the zero-current portions of the trace. Robust openings are detected both in the presence and absence of stac (Figure 4C). To estimate the\u00a0steady-state PO \u2013 voltage relationship, we averaged many stochastic records to obtain a mean current that is divided into the open level and averaged over multiple patches. CaV1.3S variant exhibits high PO in the absence of stac (Figure 4D) (Adams et al., 2014). Upon stac2 co-expression, the open probability remains high with\u00a0~10 mV hyperpolarizing shift in the voltage-dependence of activation (Figure 4D). We scrutinized single-channel trials to assess changes in gating modes. Figure 4\u2014figure supplement 1 displays 10\u00a0sequential trials of CaV1.3 single-channel activity evoked by voltage-ramps introduced at 12 s intervals both in the presence and absence of stac. In the absence of stac, CaV1.3S activity switches between epochs of high and low activity, as evident from\u00a0the diary plot of average PO within individual trials ($P\u00af_{o}$) (Figure 4\u2014figure supplement 1B). Analysis of single-trial $P\u00af_{o}$ distribution reveals a bimodal distribution denoting discrete high and low PO gating modes (Figure 4E). Upon stac overexpression, channel activity is high as evident from $P\u00af_{o}$-diary plots (Figure 4\u2014figure supplement 1D) and single-trial $P\u00af_{o}$ distribution (Figure 4E). In contradiction with Scenario 1, stac-bound channels are not pre-inhibited; rather, channels preferentially adopt a high PO mode.\n\nTo distinguish between the second and third mechanistic possibilities, we considered CaV1.3 variants with weakened apoCaM binding affinity that largely reside in the low PO configuration (Adams et al., 2014). Accordingly, we tested the baseline PO of CaV1.3MQDY, an RNA-edited variant whose central isoleucine within the IQ domain is substituted to a methionine, (Bazzazi et al., 2013; Huang et al., 2012) and an alternative splice variant CaV1.3L containing an autoinhibitory domain that competitively displaces CaM (Liu et al., 2010; Singh et al., 2008). In the absence of stac and under endogenous CaM levels, both CaV1.3MQDY (Figure 4F\u2013G) and CaV1.3L (Figure 4I\u2013J) open sparsely, exhibiting a diminished maximal PO consistent with channels lacking CaM (Adams et al., 2014; Bock et al., 2011). Indeed, single-channel trials of CaV1.3MQDY (Figure 4\u2014figure supplement 2A\u2013C) and CaV1.3L (Figure 4\u2014figure supplement 3A\u2013C) under endogenous levels of CaM reveal uniformly low activity, with single-trial P\u0304O distribution restricted to low limits (Figure 4H for CaV1.3MQDY; Figure 4K for CaV1.3L). CaM overexpression with both channel variants reveals the resurgence of epochs of high activity (Figure 4\u2014figure supplement 2D\u2013E; Figure 4\u2014figure supplement 3D\u2013E) and a bimodal P\u0304O distribution with a substantial fraction of trials corresponding to a high PO configuration (Figure 4H and K for CaV1.3MQDY and CaV1.3L respectively). Upon stac co-expression, robust channel openings re-emerge for both CaV1.3MQDY (Figure 4F\u2013G) and CaV1.3L (Figure 4I\u2013J) yielding an enhanced baseline PO akin to CaV1.3S variant (Adams et al., 2014). Scrutiny of single-channel trials for both channel variants reveal uniformly high channel activity (Figure 4\u2014figure supplement 2F\u2013G for CaV1.3MQDY; Figure 4\u2014figure supplement 3F\u2013G for CaV1.3L) and single-trial P\u0304O distributions are now within the high activity limits (Figure 4H and K) reminiscent of the CaM overexpression. The steady-state PO-V relations for CaV1.3S, CaV1.3MQDY, and CaV1.3L in the presence of stac closely approximate each other (Figures 4D, G and J). These findings demonstrate that consistent with Scenario 3, stac-binding locks CaV1.3 channels in the high PO configuration and effectively decouples the channel pore from CaM-dependent conformational changes. Moreover, these results highlight the dominance of stac over CaM in CaV1 modulation.\n\n### U-domain constitutes a minimal motif for CaV1 CDI suppression\n\nWith elementary mechanisms discerned, we turned to identify stac motifs functionally\u00a0critical for allosteric suppression of CaM-regulation. Structurally, stac isoforms share a modular architecture composed of a C1 domain linked to two SH3 domains via a largely unstructured linker segment (U-linker region) (Suzuki et al., 1996). As these modular subcomponents typically recognize distinct ligands, we reasoned that their molecular functions may be separable (Cohen et al., 1995; Colon-Gonzalez and Kazanietz, 2006). We trisected stac2 to assess whether individual subcomponents can recapitulate functional regulation. We focused initially on C1 and tandem SH3 domains as these segments were recently shown to be critical for CaV1.1 binding and triadic localization in skeletal muscle (Campiglio and Flucher, 2017; Wong King Yuen et al., 2017). Co-expression of either segment, however, only minimally perturbed CDI of CaV1.2-CaM (Figures 5A, C and D; Figure 5\u2014figure supplement 1A\u20131C). By contrast, the linker region by itself fully abolished CDI of these channels (p=8.9\u00a0\u00d7\u00a010\u22126, Figure 5B and D; Figure 5\u2014figure supplement 1D), recapitulating the effect of stac2 on CaV1.2.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/35222/elife-35222-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013C) To localize an effector motif for stac2, CDI of CaV1.2-CaM was quantified in the presence of three stac subdomains: (1) C1, (2) linker region, and (3) SH3-SH3. Exemplar traces in response to a\u00a0+10 mV voltage-step depolarization show robust CDI of CaV1.2-CaM in the presence of C1 (A), and SH3-SH3 (C) domains. Co-expression of the linker-region is sufficient to suppress CDI of CaV1.2-CaM (B). Format as in Figure 1A. (D) Bar graph summarizes population data for CaV1.2-CaM CDI in the presence of the three stac subdomains. Each bar, mean\u00a0\u00b1S.E.M of CDI300 at\u00a0+10 mV from specified number of cells. CDI levels in the presence (solid blue line) and absence (dashed gray line) of full-length stac2 is reproduced for comparison. (E) Bar graph shows degree of conservation for the linker region across 770 orthologs of stac2. A well conserved subsegment termed U-domain is shaded blue. (F\u2013G) Co-expression of U-domain is sufficient to abolish CDI of CaV1.2-CaM (F) and CaV1.3-CaM (G). Format as in Figure 1A. (H) Bar graph displays population data for CDI of CaV1.2-CaM and CaV1.3-CaM in the presence of U-domain. Each bar, mean\u00a0\u00b1S.E.M of CDI300 at\u00a0+10 mV from specified number of cells. Dashed line, baseline CDI for both channels in the absence of stac2. Blue line, CDI of both channels in the presence of full-length stac2. (I) Systematic alanine scanning mutagenesis of the U-domain reveals critical determinants for stac-mediated suppression of CaV1.2 CDI. For comparison, CaV1.2 CDI in the presence (blue line) and absence (black dashed line) of stac2 are shown. Stac2 mutants 200KVD/AAA, 203PVY/AAA, 206ETL/AAA fully abolish stac2-mediated CDI suppression. (J) Exemplar currents show that stac2 mutant 206ETL/AAA eliminates stac\u2019s ability to suppress CaV1.2 CDI. Format as in Figure 1A. (K) Stac2 206ETL/AAA also fails to inhibit CDI of CaV1.3S. Format as in Figure 1A.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35222/elife-35222-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013C) Population data confirm that co-expression of either the cysteine-rich domain (C1;\u00a0B) or dual SH3 domains (SH3-SH3; C) of stac2 in isolation spares CDI of CaV1.2-CaM (cartoon in A). Format as in Figure 1\u2014figure supplement 1A. Each symbol, mean\u00a0\u00b1S.E.M. of r300 values obtained from the specified number of cells (n). Here, tethered CaM was used to protect from potential competitive displacement of CaM by stac2 subdomains. (D\u2013E) Population data confirm that the U-linker that connects the C1 and dual SH3 domains is sufficient to suppress CDI of CaV1.2-CaM, fully recapitulating the effect of stac on CaV1 channels (D). The well-conserved minimal U-motif from stac2 is also sufficient to fully suppress CDI of CaV1.2-CaM (E). Format as in Figure 1\u2014figure supplement 1A. Each symbol, mean\u00a0\u00b1S.E.M. of r300 values. (F) Cartoon shows CaV1.3S-CaM. (G) Stac2 U-domain also diminished CDI of CaV1.3S-CaM as evident from population data of r300 values. Residual CDI here (red shaded area) is reminiscent of that observed with full-length stac2 and CaV1.3S-CaM (Figure 3\u2014figure supplement 1E).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35222/elife-35222-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Triple alanine substitution of residues 200KVD202 abolishes stac modulation of CaV1.2. In comparison to stac2 that fully suppresses CDI of CaV1.2, co-expression of stac2 200KVD/AAA spares strong CDI of CaV1.2 suggesting that residues 200KVD202are\u00a0critical for stac modulation. Left, cartoon schematizes the location of 200KVD/AAA mutation on full-length stac2. Middle, exemplar current traces show robust CDI of CaV1.2 in the presence of stac2 200KVD/AAA. Right, population data showing r300 values as a function of voltage for Ca2+ (red) and Ba2+ currents (black). Each symbol, mean\u00a0\u00b1S.E.M. from five\u00a0cells. (B\u2013C) Triple alanine substitution of stac2 residues 203PVY205 and 206ETL208 abolishes stac modulation of CaV1.2 as evident from strong CDI present despite overexpression of mutant stac. Format as in (A). (D\u2013G) CaV1.2 CDI is suppressed by stac2 despite alanine substitution of residues, 209RYG211D), 212TSL214 (E), 218NRS220(F), and 221S (G), suggesting that these residues are not necessary for stac modulation of CaV1 channels. Format as in (A).\n\nTo localize functional segments within the U-linker, we undertook bioinformatic analysis to identify highly conserved regions. We performed multiple sequence alignment of complete sequences of 770 stac orthologs using the MUSCLE algorithm (Edgar, 2004) and subsequently computed an empirical measure for the degree of protein sequence conservation at each position. The degree of conservation is defined as the likelihood of observing the consensus residue at each sequence position divided by the number of distinct residues observed at this position. By this algorithm, perfectly conserved residues will yield a unitary value, whereas poorly conserved residues will\u00a0have a lower score. We identified a 22-amino acid stretch, termed the U-domain (\u2018unknown\u2019 domain), exhibiting high conservation (Figure 5E, blue shaded region). Co-expression of U-domain diminishes CDI of both CaV1.2-CaM and CaV1.3-CaM (Figure 5F\u2013H, Figure 5\u2014figure supplement 1E\u2013G). Thus informed, we undertook systematic alanine scanning mutagenesis of the\u00a0stac2 U-domain to identify key residues (Figure 5I; Figure 5\u2014figure supplement 2). Co-expression of mutant stac2 with triple alanine substitution of residues ETL[206-208] resulted in minimal disruption of CaV1.2 and CaV1.3 CDI (Figure 5J\u2013K), suggesting that these residues are necessary. Further analysis revealed residues PVY[203-205] and KVD[200-202] to be critical for stac function (Figure 5I; Figure 5\u2014figure supplement 2A\u20132C). Residues outside these loci minimally affected stac modulation of CaV1 (Figure 5I; Figure 5\u2014figure supplement 2D\u2013G). These findings confirm the necessity and sufficiency of U-domain as a minimal motif for preventing CaM-regulation of CaV1.\n\n### U-domain modulates native CaV1 and reshapes cardiac action potentials\n\nHaving identified a minimal U-domain for CDI suppression, we sought to assess potential physiological consequences of stac regulation in cardiac myocytes. As stac expression is yet to be identified in myocytes, we first probed its presence using immunohistochemistry with stac1- and stac2-specific antibodies. To ensure that the two antibodies reliably probe the two isoforms, we first evaluated the ability to detect stac isoforms exogenously expressed in HEK293 cells (Figure 6\u2014figure supplement 1). Untransfected cells show minimal stac1 and stac2 immunostaining (Figure 6\u2014figure supplement 1A\u2013B), as confirmed by confocal imaging and population data. By contrast, immunostaining with stac1 antibody shows labeling with cells expressing stac1 but not stac2 or stac3. Similarly, labeling with stac2 antibody reveals substantial fluorescence (F\u00a0>\u00a0300) in cells transfected with stac2 but not stac1 or stac3. Thus informed, we assessed expression and localization of stac isoforms in cardiac myocytes (Figure 6\u2014figure supplement 1C\u2013F). Analysis of acutely dissociated adult guinea pig ventricular myocytes (aGPVMs) showed stac2 labeling but not stac1 (Figure 6\u2014figure supplement 1C). Consistent with these findings, immunoblotting with stac2 antibody showed\u00a0~50 kDa signal in stac2-transfected HEK293 cells but absent from untransfected cells, confirming the ability of the antibody to detect stac2 (Figure 6\u2014figure supplement 1G). Analysis of aGPVM lysate revealed likely endogenous stac2 with a similar molecular weight to\u00a0that\u00a0of recombinant stac2 in HEK293 cells (Figure 6\u2014figure supplement 1G).\n\nGiven this baseline expression, we next considered potential effects of fluctuations in ambient stac levels. We synthesized the U-domain of stac2 as a peptide and delivered it via pipette dialysis to acutely elevate the myocyte\u2019s cytosolic concentration. We validated the synthesized peptide by testing its effect on recombinant CaV1.2 expressed in HEK293 cells (Figure 6A). Following pipette dialysis of the U-peptide, CDI of CaV1.2 was reduced as evident from exemplar currents and population data (Figure 6B\u2013C; Figure 6\u2014figure supplement 2A\u2013B). Thus affirmed, we isolated ventricular myocytes from adult guinea pigs (aGPVMs) to probe changes in CDI of native CaV channels and action potential duration in response to changes in stac levels (Figure 6D). Devoid of U-domain peptide, endogenous Ca2+ currents in ventricular myocytes displayed CDI, establishing baseline levels of CaM-regulation (Figure 6E, Figure 6\u2014figure supplement 2D). Pipette dialysis of U-peptide reduced CDI in myocytes (Figure 6E\u2013F, Figure 6\u2014figure supplement 2E). The reduction in overall inactivation of Ca2+ currents suggest that fluctuations in stac levels may markedly alter action potential waveforms. To test this possibility, we obtained current-clamp recordings of aGPVMs and compared action potential waveforms in the presence and absence of U-peptide. Figure 6G shows typical voltage profiles of action potentials in aGPVMs paced at 0.5 Hz. Waveforms are stable between traces and the mean action potential duration (APD80), the duration of time when the action potential is at least 80% of its peak voltage, is 277.9\u00a0\u00b1\u00a031.37 ms (mean\u00a0\u00b1S.E.M., n\u00a0=\u00a06). Figure 6H displays the complement of the cumulative distribution of APD80. When the peptide is added to the internal solution, APD80 is enhanced to 740.1\u00a0\u00b1\u00a0105.49 ms (n\u00a0=\u00a06) (Figure 6G\u2013H). Thus, the U-peptide both alters the CDI of endogenous cardiac CaV1, prolongs APD, and may ultimately destabilize rhythmicity of the heart.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/35222/elife-35222-fig6-v2.jpg)\n\n**Figure 6.:** (A) Schematic illustrates pipette dialysis of custom synthesized U-domain peptide in CaV1.2 heterologously expressed in HEK293 cells, a strategy that emulates acute elevation of cytosolic stac2 levels. (B\u2013C) Exemplar traces and population data confirm that pipette dialysis of U-domain suppresses CDI of recombinant CaV1.2 in HEK293 cells. Format as in Figure 1A\u2013B. Control relation in (C) is duplicated from Figure 1B. (D\u2013F) Pipette dialysis of U-domain abolishes CDI of endogenous L-type current in freshly dissociated ventricular myocytes from adult guinea pigs as evident from exemplar traces and bar graph summary of population data. To eliminate T-type current, the cells were depolarized to \u221240 mV for a period of 100 ms. Format as in (A-\u2013C). (G) Exemplar action potential traces of aGPVMs paced at 0.5 Hz with (blue) and without (black) 0.5 \u03bcM U-domain in the internal solution. In the presence of U-domain, the action potentials are markedly prolonged (blue shaded area) consistent with a loss of CDI of native L-type current. (H) Complement of cumulative distribution (P(APD80\u00a0>t) of action potential durations (APD80) obtained in the presence (blue) and absence (black) of U-domain in the internal solution.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35222/elife-35222-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) HEK293 transfected with stac1-3 (top) and immunostained with DAPI (cyan) and stac1 (red, top) or stac2 (red, bottom) antibodies confirm selectivity of stac antibodies. (B) Population analysis shows the complement of the cumulative distribution of fluorescence intensities ($P(F>F^)$) from 80 to 100 individual HEK293 cells stained with either stac1 (top) or stac2 (bottom) antibodies. Black line, untransfected cells. Data from cells transfected with recombinant stac1, stac2, or stac3 are shown in green, red, and blue, respectively. When probed with stac1 antibody, only cells transfected with exogenous stac1 show appreciable fluorescence above background. Similarly, when probed with stac2 antibody, only cells transfected with exogenous stac2 show fluorescence intensities above background level. (C) Acutely dissociated aGPVM immunostained with \u03b1-actinin (green) and stac1 (red, left) and stac2 (red, right). Images representative of three fields of views for stac1 and seven fields of view for stac2. (D) Stac2 immunostaining reveals weak t-tubular localization in aGPVM. Image reproduced from panel C. Yellow line, line-scan used in (E). (E) Fluorescence intensity of stac2 (red, top) and \u03b1-actinin (green, bottom) across the line-scan shown in (D) from left to right. Vertical lines correspond to location of the peak fluorescence intensity for \u03b1-actinin. (F) Spatial Fourier transform of line scans subpanel shows prominent spatial frequency of 0.52 \u00b5m\u22121 with both \u03b1-actinin (green) and stac2 (red). (G) Immunoblotting with stac2 antibody shows stac2 expression,~50 kDa band, in HEK293 cells transfected with recombinant stac2, but not in untransfected HEK293 cells. Analysis of freshly dissociated aGPVM confirms basal stac2 expression. Image representative of five independent biological replicates.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35222/elife-35222-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Cartoon schematic shows pipette dialysis of U-motif into HEK293 cells expressing recombinant CaV1.2. (B) Pipette dialysis of minimal effector stac2 U-motif suppresses Ca2+/CaM regulation. Format as in Figure 1\u2014figure supplement 1A. (C) Cartoon schematic shows pipette dialysis of U-motif into freshly dissociated adult guinea pig ventricular myocytes that feature endogenous L-type currents. (D) Population data show that\u00a0endogenous L-type Ca2+-current in ventricular myocytes elicits strong CDI. Format as in Figure 1\u2014figure supplement 1A. Each symbol, mean\u00a0\u00b1S.E.M. from six cells. (E) In comparison to control conditions, pipette dialysis of minimal effector stac2 U-motif strongly diminishes Ca2+/CaM regulation of endogenous Ca2+ current in ventricular myocytes. Format as in Figure 1\u2014figure supplement 1A.\n\n### Fhf selectively abrogate CaM signaling to NaV1\n\nEncouraged by the selectivity of stac for CaV1, we sought to identify other regulatory proteins that may tune CaM-signaling to related channel families. However, recognizing such modulators amidst ion channel signalosomes is challenging. Given that stac interacts with CaV1 CI module via the PCI element, we reasoned that other CaV and NaV interacting proteins that engage a similar interface may suppress CaM-feedback. Intriguingly, recent atomic structures show that fhf interacts with NaV1 CI module via the PCI interface (Figure 7A) (Wang et al., 2012). Yet, functionally, fhf isoforms are thought to modulate only voltage-dependent gating properties, with effects on Ca2+/CaM-regulation unknown (Goldfarb et al., 2007; Lou et al., 2005; Wang et al., 2012). To test whether fhf alters NaV CDI, we undertook quantitative Ca2+ photo-uncaging of the skeletal muscle NaV1.4 isoform. We focused here on fhf1b given its modest baseline expression in skeletal muscle and pathological enrichment in critical illness myopathies (Kraner et al., 2012). Figure 7B reproduces baseline levels of CDI for NaV1.4 under control conditions. Co-expression of fhf1b abolished CDI (Figure 7B\u2013C; Figure 7\u2014figure supplement 1A), unveiling a novel role of fhf in tuning Ca2+-feedback of NaV channels. To assess selectivity, we probed whether fhf alters CDI of CaV1.3. In comparison to control conditions, fhf co-expression spared CaV1.3 CDI (Figure 7D\u2013E; Figure 7\u2014figure supplement 1B) suggesting that fhf may be a selective modulator of NaV1.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/35222/elife-35222-fig7-v2.jpg)\n\n**Figure 7.:** (A) Structural comparison of NaV1.5 CI (green) in the presence of CaM alone (cyan, left) or both CaM (cyan) and fhf1b (purple). Fhf binding changes baseline conformation of CaM on NaV1 CI. (B\u2013C) Co-expression of fhf1b abolishes CDI in NaV1.4 evoked via Ca2+ photo-uncaging. Format as in Figure 1M\u2013N. Control data are\u00a0reproduced from Figure 1M\u2013N for comparison. (D\u2013E) In sharp contrast, strong overexpression of fhf1b does not alter CDI of CaV1.3S. Format as in Figure 1A\u2013B. Control data reproduced from Figure 1D for comparison. (F\u2013G) Fhf1 suppresses CDI of NaV1.4 tethered to CaM. Fusion of CaM protects NaV1.4 from competitive inhibitors such as CaM1234 (G). Format as in Figure 1M\u2013N. (H) Structure of CaV1.1 upstream CI elements (blue) composed of dual vestigial EF hands and preIQ segments isolated from cryo-EM structure of CaV1.1 (PDBID, 5GJV). This domain is the primary interface for stac interaction in the CaV1 CI. (I) Structural overlay of upstream CI elements of CaV1.1 (PDBID, 5GJV) and NaV1.5 (PDBID, 4DCK) shows highly conserved dual vestigial EF hand segments while the fhf binding site is structurally divergent. (J) The divergence in the fhf binding interface in CaV1.1 in comparison to NaV1.5 would introduce a steric clash that prohibits fhf binding to CaV channels.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35222/elife-35222-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Population data show that Fhf1 abolishes CDI of NaV1.4 channels. Mean data for CDI are\u00a0plotted versus Ca2+-step amplitude. Symbols, mean\u00a0\u00b1S.E.M. of around\u00a0four uncaging events compiled from denoted number of cells. (B) Fhf does not alter CDI of CaV1.3S demonstrating selectivity of fhf1 in modulating NaV channels. Strong CDI of CaV1.3S persists in the presence of fhf as confirmed by population data of r300 values. (C) NaV1.4 fused to CaM (NaV1.4-CaM) exhibits strong CDI identical to untethered channels as illustrated by identical fit reproduced from (A). (D) Fusion of CaMWT protects NaV1.4 from CaM1234, a competitive inhibitor of CDI. Exemplar currents shows robust CDI of NaV1.4-CaM in the presence of CaM1234. Format as in Figure 1M and (A). (E) Fhf1b suppresses CDI of NaV1.4-CaM confirming the dominance of fhf over CaM in modulation of NaV1.4. Format as in (A).\n\nMechanistically, functional results along with atomic structures of NaV1 CI bound to CaM and fhf yield insights on mechanisms for CDI suppression (Gabelli et al., 2014; Wang et al., 2012; Wang et al., 2014). Both fhf and CaM bind concurrently to NaV1 CI (Wang et al., 2012; Wang et al., 2014), with fhf binding triggering a conformational rearrangement of CaM (Figure 7A) (Gabelli et al., 2014; Wang et al., 2012). To experimentally validate allostery, we followed our strategy with CaV1.3 and tethered CaM to NaV1.4 carboxy-tail. Reassuringly NaV1.4-CaM exhibits robust baseline CDI (Figure 7F; Figure 7\u2014figure supplement 1C). Whereas dominant negative CaM1234 typically abolishes CDI of NaV1.4 (Ben-Johny et al., 2014), NaV1.4-CaM exhibits robust CDI despite CaM1234, confirming the protective nature of tethered CaM against competitive inhibitors (Figure 7G; Figure 7\u2014figure supplement 1D). Co-expression of fhf1b, however, reduces CDI of NaV1.4-CaM (Figure 7F\u2013G; Figure 7\u2014figure supplement 1E). Thus, like stac modulation of CaV1, fhf overrides CaM signaling to NaV1.4 despite a tethered CaM, suggesting that fhf acts in allostery.\n\nTo garner a structural perspective, we turn to NaV1.5 CI/fhf complex (Figure 7A) as the atomistic basis of the\u00a0stac/CaV1 CI interaction is unknown (Wang et al., 2012; Wang et al., 2014; Wong King Yuen et al., 2017). Whereas the dual-vestigial EF hand segments of NaV1.5 and CaV1.1 are similar (Figure 7H\u2013I), the fhf binding interface of NaV1.5, including the preIQ loop diverges from corresponding segments of CaV1.1 and introduces a steric clash (Figure 7I\u2013J) (Wang et al., 2012; Wu et al., 2016). Thus, by leveraging structurally distinct loci on the CI module, fhf selectively diminish CaM signaling to NaV channels. These findings point to a class of auxiliary proteins that selectively adjust Ca2+-dependent feedback to individual ion channel targets.\n\n### Engineering synthetic modulation of CaV channels\n\nAs both stac and fhf tune Ca2+-feedback to individual CaV and NaV targets by interacting with respective PCI segments, this mechanism furnishes a strategy to engineer synthetic channel modulators. We reasoned that introducing a short interaction motif into the PCI locus may permit inhibition of CaV1 Ca2+-feedback by a novel protein. We chose the well-characterized RxxK motif from SLP-76 for its small size and high-affinity interaction with SH3 domain of Mona (Harkiolaki et al., 2003) (Figure 8A). Co-expression of Mona SH3 with wildtype CaV1.3S demonstrated the persistence of CDI, confirming the suitability of these channels as a \u2018blank slate\u2019 to confer synthetic modulation (Figure 8B\u2013C; Figure 8\u2014figure supplement 1A). We replaced a 12-residue segment in the preIQ domain with the RxxK motif, as highlighted in Figure 8A, yielding CaV1.3RxxK engineered channels. As this locus is situated upstream of the IQ domain, this maneuver spares apoCaM prebinding. Under endogenous levels of CaM, CaV1.3RxxK exhibit robust baseline CDI (Figure 8D\u2013E; Figure 8\u2014figure supplement 1B). Co-expression of Mona SH3 with CaV1.3RxxK markedly diminished CDI (Figure 8D\u2013E; Figure 8\u2014figure supplement 1B) ,\u00a0thus revealing engineered CDI suppression. These findings illustrate the versatility of the CI module as a regulatory hub and highlight the feasibility of developing synthetic modulators to tune Ca2+-feedback of ion channels.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/35222/elife-35222-fig8-v2.jpg)\n\n**Figure 8.:** (A) Left, schematic shows the atomic structure of Mona SH3 domain in complex with RxxK motif. Right, sequence alignment outlines strategy for insertion of RxxK motif into CaV1.3, yielding CaV1.3RxxK to confer synthetic suppression of CaV1.3 CDI by Mona SH3. (B\u2013C) CaV1.3S expressed with and without Mona SH3 shows full CDI, confirming that wildtype CaV1.3 CDI is insensitive to Mona SH3. Format as in Figure 1A\u2013B. Control data are\u00a0reproduced from Figure 1D for comparison. (D\u2013E) Mona SH3 strongly diminishes CDI of CaV1.3RxxK. Format as in Figure 1A\u2013B. (F) Cartoon summarizes selective modulation of Ca2+/CaM signaling to CaV1, and NaV1 channels with CaM, stac, and fhf.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35222/elife-35222-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) CaV1.3S is insensitive to the SH3 domain of Mona/gads protein. Population data of inactivation r300 values show strong CDI of CaV1.3S in the presence of Mona SH3. Format as in Figure 1\u2014figure supplement 1A. (B) In sharp contrast, the introduction of RxxK motif to CaV1.3 upstream CI elements (left subpanel) confers synthetic modulation of CaM signaling by Mona SH3. Middle, population r300 values show CDI of CaV1.3RxxK under endogenous levels of CaM. Right, co-expression of Mona SH3 abolishes CDI of CaV1.3RxxK, illustrating the\u00a0feasibility of engineering synthetic regulatory proteins that abolish Ca2+/CaM signaling to selected targets. Format as in Figure 1\u2014figure supplement 1A.\n\n## Discussion\n\nCaM is a dynamic regulator of CaV1, CaV2, and NaV1, affording millisecond-precision Ca2+-feedback of channel activity. Our findings suggest that distinct auxiliary regulatory proteins tune CaM signaling to individual targets selectively. Stac prevents CaM signaling to CaV1, while fhf reduces signaling to NaV1 (Figure 8F). Parallel analysis of the two proteins delineates mechanisms and sets the stage for in-depth physiological analysis.\n\n### Relationship to prior studies of stac-CaV modulation\n\nStac regulation of CaV1 modifies multiple aspects of CaV1 function. For CaV1.1, stac3 enhances plasmalemmal trafficking (Linsley et al., 2017b; Niu et al., 2018; Polster et al., 2015; Wong King Yuen et al., 2017; Wu et al., 2018), and promotes conformational coupling to RyR (Linsley et al., 2017a; Polster et al., 2016). For CaV1.2, however, stac1-3 isoforms slow inactivation (Campiglio et al., 2018; Polster et al., 2015; Wong King Yuen et al., 2017). Our work generalizes the latter effect to the CaV1 family and further identifies a change in baseline channel openings (PO).\n\nA few mechanistic nuances merit attention. First, stac binds to multiple CaV1 segments including (1) the II-III linker (Polster et al., 2018; Wong King Yuen et al., 2017), (2) the III-IV linker (Figure 2D), and (3) the carboxy-tail (Figure 2D) (Campiglio et al., 2018; Niu et al., 2018). Previous studies have shown that stac interaction with the II-III linker is important for CaV1 trafficking in skeletal muscle (Polster et al., 2018; Wong King Yuen et al., 2017). Chimeric analysis here suggests that stac interaction with the carboxy-tail is critical for tuning CDI. Prior analysis of CaV1.2 triadic localization in myotubes suggested that the channel IQ domain may be important for stac binding (Campiglio et al., 2018). However, FRET 2-hybrid assay indicates that stac interaction with the IQ is\u00a0around\u00a0tenfold weaker than with the PCI segment. Second, prior work also suggested that stac-mediated reduction in CDI results from competitive displacement of CaM by stac (Campiglio et al., 2018). Functional experiments using CaV1 tethered to CaM, however, suggest that stac does not compete with CaM. Consistent with this scheme, FRET 2-hybrid analysis shows that CaM binding with the CI module is intact even in the presence of stac. Third, key domains within stac relevant for CaV modulation remain controversial. Previous studies have identified the dual SH3 and C1 domains to be critical for stac effect on trafficking and coupling to RyR (Campiglio and Flucher, 2017; Linsley et al., 2017a; Linsley et al., 2017b; Polster et al., 2016), while the C1 has been proposed to be critical for modifying CaV1 CDI (Campiglio et al., 2018; Wong King Yuen et al., 2017). Our findings instead suggest that\u00a0the U-domain in the stac2 linker region\u00a0is sufficient to fully recapitulate reduction in CaV1 CDI. Notably, prior analysis of the C1 domain also included this linker (Wong King Yuen et al., 2017). Given these experimental findings, a simple possibility is that distinct subdomains within stac interact with disparate channel segments to support multifunctionality of stac. While the U-domain modifies channel inactivation, other subdomains may support plasmalemmal trafficking and conformational coupling.\n\n### Defining a general class of auxiliary modulators of CaM signaling\n\nAlthough functionally divergent, CaV1, CaV2, and NaV1 feature a modular CI element with a common CaM interaction fingerprint and subsequently, shared mechanistic basis for Ca2+-regulation. For all three families, apoCaM prebinds the CI module while Ca2+/CaM interaction switches channels between discrete high and low PO gating modes (Ben-Johny et al., 2015). How do allosteric regulators override CaM-signaling? First, stac and fhf use unique interfaces on the channel CI to selectively tune Ca2+-feedback. Second, stac locks CaV1 into a high PO gating mode irrespective of whether apoCaM or Ca2+/CaM is bound, effectively disengaging the pore from CaM-conformational changes. For NaV1, despite fhf binding, CaM undergoes a profound Ca2+-dependent rearrangement (Wang et al., 2012; Wang et al., 2014) suggesting that fhf does not prevent Ca2+ binding to CaM or Ca2+/CaM interaction with effector interfaces. Instead, like stac and CaV1, fhf may override CaM-dependent changes to NaV, akin to a clutch disengaging power transmission in mechanical systems. As fhf elicits a change in apoCaM conformation (Figure 7A) (Gabelli et al., 2014; Wang et al., 2012), baseline gating of NaV may also be altered (Goldfarb et al., 2007; Lou et al., 2005). This parallelism between stac and fhf hints at a shared mechanism.\n\nCa2+-binding proteins (CaBPs) (Haeseleer et al., 2000) also suppress CaM signaling to CaV1 (Lee et al., 2002; Yang et al., 2006). Mechanistically, CaBPs exploit a mixed allosteric scheme \u2013 at low concentrations, they engage distinct interfaces from CaM but at higher concentrations displace CaM (Findeisen and Minor, 2010; Oz et al., 2013; Yang et al., 2014). The existence of other regulatory proteins that curtail Ca2+-feedback points to a general class of auxiliary regulators of CaM-signaling to targets beyond NaV1 and CaV1. Identifying such molecular players is critical to understand how CaM signaling is orchestrated.\n\n### Biological implications of stac modulation of CaV1\n\nStac1/2 isoforms are widely expressed in multiple brain regions, including both the hippocampus and the midbrain (Nelson et al., 2013; Suzuki et al., 1996). Our experiments hint at low basal stac2 expression in guinea pig ventricular cardiac myocytes, although previous studies have failed to detect stac2 in murine heart (Nelson et al., 2013). Further quantitative analysis will help establish ambient stac levels including species-specific differences and potential modulatory effects on cardiac function. Interestingly, endogenous CaV1 in both hippocampal and midbrain neurons (Bazzazi et al., 2013; Oliveria et al., 2012) as well as ventricular cardiac myocytes exhibit CDI. As all stac variants shunted CDI of CaV1 in HEK293, it is possible that stac function may be tightly regulated in native settings. One possibility is that stac abundance may be tuned developmentally (Suzuki et al., 1996), pathologically, or via interacting proteins (Satoh et al., 2006). For instance, the transcription factor, NFAT binds to an upstream promoter region of stac2 gene to upregulate stac2 expression in osteoclasts as well as during hypoxic conditions in neural stem cells (Jeong et al., 2018; Moreno et al., 2015). Physiologically, as CaV1 CDI is a potent homeostatic mechanism that prevents pathological Ca2+-overload (Dunlap, 2007), a low concentration regime of stac may be advantageous. By modulating a subpopulation of CaV1, stac may circumvent homeostatic requirements to amplify local Ca2+-signals via sustained Ca2+ influx. The C1 and SH3 domains may serve as scaffolds to localize stac to specific signaling complexes (Campiglio and Flucher, 2017; Cohen et al., 1995; Colon-Gonzalez and Kazanietz, 2006). It is also possible that phosphorylation of stac may dynamically tune its function (Huttlin et al., 2010). Resolving these complexities may unveil mechanisms that tune CaV function spatially and temporally.\n\nIn cardiac myocytes, CDI of CaV1 is a key factor for action potential duration (Limpitikul et al., 2014; Mahajan et al., 2008). Experimentally, this importance is inferred from prolongation of action potentials upon expression of mutant CaM1234 (Alseikhan et al., 2002). Yet, constitutive CaM expression may yield nonspecific effects (Hall et al., 2013; Wang et al., 2007) that obscure the net contribution of CaV1 CDI (Zhang et al., 2015). Acute elevation of the U-domain bypasses these ambiguities and confirms a key role for CaV1 CDI for cardiac action potentials. Pathophysiologically, differential expression of stac2 has been reported in right ventricular heart failure, hinting at a potential role in calcium remodeling during heart failure (di Salvo et al., 2015).\n\nPost-transcriptional modification of CaV1.3 generates an assortment of variants with modified carboxy-termini (Bock et al., 2011; Huang et al., 2012). The apoCaM affinities of these variants are such that CaM fluctuations may redistribute channels between populations lacking or endowed with apoCaM (Bazzazi et al., 2013), evoking concomitant changes in maximal PO and CDI of CaV1.3 (Adams et al., 2014). Stac uniformly locks these variants into a high PO configuration incapable of CDI, thereby supporting reliable and persistent Ca2+-influx in spite of CaM. Notably, functional effects of CaV1.3 alternative splicing have been shown to be cell-type specific suggesting that auxiliary regulators may tune channel properties (Scharinger et al., 2015). Fitting with these regulatory possibilities, disruption of stac modulation of CaV1.3 in Drosophila alters circadian rhythm (Hsu et al., 2018).\n\n### Biological implications of fhf modulation of NaV1\n\nUnlike canonical fibroblast growth factors, fhf lack a secretory signal sequence (Smallwood et al., 1996) and serve as intracellular proteins (Schoorlemmer and Goldfarb, 2001). Four distinct fhf isoforms have been identified with tissue-specific expression in neurons, cardiomyocytes, and skeletal muscle (Goldfarb, 2005; Kraner et al., 2012; Smallwood et al., 1996). Functionally, fhf isoforms promote NaV1 trafficking and fast inactivation (Pablo and Pitt, 2016). More specifically, fhf adjust steady-state voltage-dependence of inactivation (Lou et al., 2005), elicit a kinetically distinct long-term inactivation (Dover et al., 2010), and modify resurgent current (Yan et al., 2014). Our present findings suggest that fhf1 also tunes CDI of NaV1. Physiologically, NaV CDI may be prominent during repetitive activity, as excess Ca2+ accumulation may inhibit Na currents. Thus, suppression of NaV1 CDI by fhf may enhance repetitive firing. Interestingly, loss of fhf1 and/or fhf4 result in diminished firing properties of cerebellar Purkinje neurons (Bosch et al., 2015; Goldfarb et al., 2007), while loss of fhf2 reduces cardiac conduction (Park et al., 2016; Wang et al., 2011a). It is possible that loss of fhf may enhance net CDI thus contributing to diminished excitability in these cells. As mutations in fhf1 are associated with epileptic encephalopathy (For CENetDDD Study group\u2021* et al., 2016) and cardiac conduction disorders (Hennessey et al., 2013) while mutations in fhf4 are linked to spinocerebellar ataxia (Brusse et al., 2006), resolving the dynamic interplay between CaM and fhf in tuning NaV1 may be critical for understanding pathogenic mechanisms.\n\n### New strategy for synthetic ion channel modulation\n\nFinally, our results highlight the possibility of engineering synthetic regulation to tune CaM signaling. While CaV1.3 is insensitive to Mona SH3, insertion of an RxxK motif (Harkiolaki et al., 2003) into the carboxy-tail preIQ segment allows latent modulation by Mona SH3. Given the structural similarity of the CI modules of CaV1, CaV2, and NaV1, and sequence variability within the preIQ domain, emerging protein engineering methods may be used to screen for synthetic modulators of related ion channel families. As the ligand specificity of SH3 domains can be custom-engineered (Nguyen et al., 2000) and subcellular localization tuned via targeting motifs (Komatsu et al., 2010), a custom library of synthetic regulators may be developed to combinatorially modify kinetic properties of CaV1, CaV2, or NaV1 channels with spatiotemporal specificity. Generalizing this approach may lead to the development of new tools to manipulate Ca2+ signaling.\n\nIn all, our findings unravel the elegant interplay between a novel class of allosteric regulators and CaM in orchestrating the activity of CaV and NaV channels.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (rat)</td>\n      <td>\u03b22A</td>\n      <td>PMID: 1370480</td>\n      <td>GenBank: M80545</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (rat)</td>\n      <td>\u03b12\u03b4</td>\n      <td>PMID: 8107966</td>\n      <td>NCBI: NM_012919</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Oryctolagus cuniculus)</td>\n      <td>CaV1.2</td>\n      <td>PMID: 1718988</td>\n      <td>NCBI: NM_001136522</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (rat)</td>\n      <td>CaV1.3S</td>\n      <td>PMID: 20139964</td>\n      <td>GenBank: AF370009.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (rat)</td>\n      <td>CaV1.3MQDY</td>\n      <td>PMID: 24120865, 22284185</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>CaV1.443*</td>\n      <td>PMID: 22069316</td>\n      <td></td>\n      <td>Laboratory of Dr. Soong Tuck Wah (National University of Singapore)</td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>CaV2.1 splice variant 37a(EFa) with 43+/44-/47-</td>\n      <td>PMID: 12451115</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>CaV2.2</td>\n      <td>PMID: 1321501, 10233069</td>\n      <td>GenBank: M94172.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (rat)</td>\n      <td>CaV2.3</td>\n      <td>PMID: 8388125, 18400181</td>\n      <td>NCBI: NM_019294.2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (rat)</td>\n      <td>NaV1.4</td>\n      <td>PMID: 2175278</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>stac1</td>\n      <td>Origene</td>\n      <td>NCBI: NP_003140.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (mouse)</td>\n      <td>stac2</td>\n      <td>Origene</td>\n      <td>NCBI: NP_666140.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>stac3</td>\n      <td>Origene</td>\n      <td>NCBI: NP_659501.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>fhf</td>\n      <td>PMID: 8790420</td>\n      <td></td>\n      <td>Laboratory of Dr. Jeremy Nathans (Johns Hopkins University).</td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>Mona SH3</td>\n      <td>PMID: 12773374</td>\n      <td></td>\n      <td>Synthesized by Genscript based on sequence in publication</td>\n    </tr>\n    <tr>\n      <td>Peptide (mouse)</td>\n      <td>U-peptide</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Peptide sequence KVDPVYETLRYGTSLALM NRSS synthesized by Genscript</td>\n    </tr>\n    <tr>\n      <td>Competent cells (E. coli)</td>\n      <td>DH5\u03b1</td>\n      <td>Invitrogen: 18265017</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HEK293</td>\n      <td>other</td>\n      <td>RRID: CVCL_0045</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Biological sample (guinea pig)</td>\n      <td>aGPVM</td>\n      <td>PMID: 24076394</td>\n      <td></td>\n      <td>Generated from Hartley strain guinea pigs</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-stac1</td>\n      <td>Abcam: ab181157</td>\n      <td></td>\n      <td>1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-stac2</td>\n      <td>Abcam: ab156080</td>\n      <td></td>\n      <td>IHC \u2013 1:100 WB \u2013 1:250</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-\u03b1-actinin</td>\n      <td>Sigma Aldrich: A7811</td>\n      <td>RRID: AB_476766</td>\n      <td>1:300</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>goat anti- rabbit IgG Alexa Fluor 594</td>\n      <td>Abcam: ab150080</td>\n      <td>RRID: AB_2650602</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>goat anti-mouse IgG1 Alexa Fluor 488</td>\n      <td>Thermo Fischer: A21121</td>\n      <td>RRID: AB_2535764</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat Anti-Rabbit IgG (H\u00a0+\u00a0L)</td>\n      <td>Jackson ImmunoResearch: 111-035-144</td>\n      <td>RRID: AB_2307391</td>\n      <td>1:10,000</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CaV1.3L</td>\n      <td>PMID: 20139964</td>\n      <td></td>\n      <td>Engineered from CaV1.3S and human long distal carboxyl tail (NCBI: NM_000718)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CaV2.3/1.3 CI</td>\n      <td>PMID: 24441587</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CaV1.3- CaMWT</td>\n      <td>PMID: 24441587</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CaV1.2- CaMWT</td>\n      <td>PMID: 15087548</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>NaV1.4-CaM</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Engineered by fusing CaMWT carboxy-tail of NaV1.4</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CaV1.3RxxK</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Engineered from CaV1.3S</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CFP-stac3</td>\n      <td>this paper</td>\n      <td></td>\n      <td>stac3 was cloned into CFP vector with NotI and XbaI</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>YFP-CaV1.3 CI</td>\n      <td>PMID: 23591884</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>YFP-CaV1.3 PCI</td>\n      <td>PMID: 23591884</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>YFP-CaV1.3 IQ</td>\n      <td>PMID: 23591884</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Ven-C1</td>\n      <td>this paper</td>\n      <td></td>\n      <td>stac2 C1 was cloned into Venus vector (PMID: 26997269) with NotI and XbaI</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Ven-linker region</td>\n      <td>this paper</td>\n      <td></td>\n      <td>stac2 linker region was cloned into Venus vector (PMID: 26997269) with NotI and XbaI</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Ven-SH3-SH3</td>\n      <td>this paper</td>\n      <td></td>\n      <td>stac2 SH3-SH3 was cloned into Venus vector (PMID: 26997269) with NotI and XbaI</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Ven-U-motif</td>\n      <td>this paper</td>\n      <td></td>\n      <td>stac2 U-motif was cloned into Venus vector (PMID: 26997269) with NotI and XbaI</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>stac2 (KVD/AAA)</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Quickchange PCR with stac2</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>stac2 (PVY/AAA)</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Quickchange PCR with stac2</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>stac2 (ETL/AAA)</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Quickchange PCR with stac2</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>stac2 (RYG/AAA)</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Quickchange PCR with stac2</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>stac2 (TSL/AAA)</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Quickchange PCR with stac2</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>stac2 (NRS/AAA)</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Quickchange PCR with stac2</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>stac2 (S/A)</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Quickchange PCR with stac2</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Ven-C1 forward primer</td>\n      <td>this paper</td>\n      <td></td>\n      <td>cttctcgcggccgc tatgaccgaa atga gcgagaa</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Ven-C1 reverse primer</td>\n      <td>this paper</td>\n      <td></td>\n      <td>tcagaattctagattat tgctggt gggagatctc</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Ven-linker region forward primer</td>\n      <td>this paper</td>\n      <td></td>\n      <td>cttctcgcggccgcta catctttt cgacgcaact</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Ven-linker region reverse primer</td>\n      <td>this paper</td>\n      <td></td>\n      <td>tcagaattctagatta gtacatg ggccccacg</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Ven-SH3-SH3 forward primer</td>\n      <td>this paper</td>\n      <td></td>\n      <td>cttctcgcggccgc ttcctacgt cgccctct</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Ven-SH3-SH3 reverse primer</td>\n      <td>this paper</td>\n      <td></td>\n      <td>tcagaattctagattat cagatctct gccaaggag</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Ven-U-motif forward primer</td>\n      <td>this paper</td>\n      <td></td>\n      <td>cttctcgcggccgctaagg tggac ccagtttatga</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Ven-U-motif reverse primer</td>\n      <td>this paper</td>\n      <td></td>\n      <td>tcagaattctagattag ctggaa cggttcatcag</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>stac2 (KVD/AAA) sense</td>\n      <td>this paper</td>\n      <td></td>\n      <td>ctactgggaccagcgg ggcggcgg ccccagt ttatgagacgc</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>stac2 (KVD/AAA) antisense</td>\n      <td>this paper</td>\n      <td></td>\n      <td>gcgtctcataaactggg gccgccgc cccgctgg tcccagtag</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>stac2 (PVY/AAA) sense</td>\n      <td>this paper</td>\n      <td></td>\n      <td>ccagcgggaaggtggac gcagc tgctgagacgct gcgctatg</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>stac2 (PVY/AAA) antisense</td>\n      <td>this paper</td>\n      <td></td>\n      <td>catagcgcagcgtctc agcagct gcgtccacc ttcccgctgg</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>stac2 (ETL/AAA) sense</td>\n      <td>this paper</td>\n      <td></td>\n      <td>ggtggacccagttt atgcggcgg cgcgct atggcacctcc</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>stac2 (ETL/AAA) antisense</td>\n      <td>this paper</td>\n      <td></td>\n      <td>ggaggtgccatagcgc gccgcc gcataaact gggtccacc</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>stac2 (RYG/AAA) sense</td>\n      <td>this paper</td>\n      <td></td>\n      <td>cccagtttatgagacgc tggccgc tgccacctcc ctggcactgatg</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>stac2 (RYG/AAA) antisense</td>\n      <td>this paper</td>\n      <td></td>\n      <td>catcagtgccaggg aggtggca gcggccagc gtctcataaactggg</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>stac2 (TSL/AAA) sense</td>\n      <td>this paper</td>\n      <td></td>\n      <td>acgctgcgctatgg cgccgccgc ggcactga tgaaccg</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>stac2 (TSL/AAA) antisense</td>\n      <td>this paper</td>\n      <td></td>\n      <td>cggttcatcagtgc cgcggcggc gccatag cgcagcgt</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>stac2 (NRS/AAA) sense</td>\n      <td>this paper</td>\n      <td></td>\n      <td>gatgtgctgctga agctggcagcg gccatc agtgccagggaggtg</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>stac2 (NRS/AAA) antisense</td>\n      <td>this paper</td>\n      <td></td>\n      <td>cacctccctggc actgatggccgc tgcc agcttcagcagcacatc</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>stac2 (S/A) sense</td>\n      <td>this paper</td>\n      <td></td>\n      <td>cactgatgaacc gttccgccttc agcag cacatctg</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>stac2 (S/A) antisense</td>\n      <td>this paper</td>\n      <td></td>\n      <td>cagatgtgctgctga aggcgg aacggttca tcagtg</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PyMOL</td>\n      <td>http://www.pymol.org/</td>\n      <td>RRID: SCR_000305</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Molecular biology and peptide synthesis\n\nCaV1.2, CaV1.3, CaV1.443*, CaV2.1, CaV2.2, CaV2.3, and NaV1.4 variants were unmodified from previously published constructs: CaV1.2 (NM001136522) (Wei et al., 1991), CaV1.2-CaMWT (Mori et al., 2004), CaV1.3S (AF370009.1), CaV1.3L engineered from CaV1.3S and human long distal carboxyl tail (NM000718) (Liu et al., 2010), RNA-edited variant CaV1.3MQDY (Bazzazi et al., 2013; Huang et al., 2012), CaV1.443* was gifted from Dr. Soong Tuck Wah (National University of Singapore), CaV2.1 splice variant 37a(EFa) with 43+/44-/47\u2212 (Soong et al., 2002) was gifted from Dr. Terry Snutch (University of British Columbia), CaV2.2 (Jones et al., 1999), CaV2.3 (Mori et al., 2008), NaV1.4 (Trimmer et al., 1990). Stac variants were purchased from Origene: human stac1 mRNA transcript 1 (NP003140.1), mouse stac2 (NP666140.1), and human stac3 isoform 2 (NP659501.1). U-peptide was synthesized by Genscript (KVDPVYETLRYGTSLALMNRSS). Fhf variants were gifted from Dr. Gordon Tomaselli and Dr. Jeremy Nathans (Johns Hopkins University).\n\n### Cell culture and transfection of HEK293 cells\n\nFor whole-cell electrophysiology, single-channel electrophysiology, and immunohistochemistry, HEK293 cells (ATCC; mycoplasma tested negative) were cultured on glass coverslips in 10 cm dishes and transfected by a\u00a0calcium phosphate method (Peterson et al., 1999) with the following amounts of DNA: 3 \u00b5g of SV40 T antigen to enhance expression, 2\u20138 \u00b5g of \u03b11-subunit of Ca2+ or Na+ channel depending on expression, 8 \u00b5g from rat \u03b22A (Perez-Reyes et al., 1992) (M80545), 8 \u00b5g from rat \u03b12\u03b4 (Tomlinson et al., 1993) (NM012919.2), and 8 \u00b5g of the stac1, stac2, or stac3 variants indicated.\n\nFor FRET two-hybrid experiments, cells were cultured on glass-bottom dishes and transfected with a standard polyethylenimine protocol (Lambert et al., 1996). Epifluorescence measurements were recorded 1\u20132 days after transfection.\n\n### Adult guinea pig ventricular myocyte isolation\n\nAdult guinea pig ventricular myocytes (aGPVMs) were isolated from whole hearts of Hartley strain guinea pigs 3\u20134 weeks old (250\u2013350 g). Guinea pigs were anesthetized via intraperitoneal injection with pentobarbital (35 mg/kg). Hearts were then excised, and single ventricular myocytes were isolated following a previously published protocol (Joshi-Mukherjee et al., 2013). Cells were plated on glass coverslips that were laminin (20 \u00b5g/mL) coated overnight at 4\u00b0C.\n\nImmunohistochemistry aGPVMs plated on glass coverslips were first washed three\u00a0times with cold PBS and then fixed in 3.7% paraformaldehyde (15710, Electron Microscopy Sciences) in PBS for 15 min. After washing three\u00a0times with PBS, cells were permeabilized in cold 0.5% Triton X-100 in tris buffered saline (TBS) for 20 min and then blocked with 10% goat serum in PBS for 1 hr at room temperature. Cells were incubated overnight at 4\u00b0C in primary antibodies diluted in antibody diluent solution (IW-1000, IHC World): monoclonal anti-\u03b1-actinin (sarcomeric) antibody produced in mouse (1:300, A7811), anti-STAC (stac1) antibody [EPR12805]-N-terminal (1:100, ab181157) or anti-STAC2 (stac2) antibody-N-terminal (1:100, ab156080) produced in rabbit. Next day, cells were rinsed three\u00a0times with 0.05% TWEEN20 (Sigma P9416) in TBS (TBS-T) for 5 min each. In the dark, cells were incubated with secondary antibodies (1:1000): goat anti-mouse IgG1 Alexa Fluor 488 (1:1000, A21121), goat anti-rabbit IgG Alexa Fluor 594 (1:1000), and DAPI (1:10000) diluted in antibody solution for 45 min at room temperature and then washed three\u00a0times with TBS-T for 5 min each. Stained cells were mounted with prolong gold mounting media (Invitrogen) on a microscope slide (Fischer Scientific).\n\nTransfected HEK293 were immunostained following a similar protocol to\u00a0that\u00a0of aGPVM, but were not labelled with sarcomeric primary antibody and its respective secondary antibody.\n\nWestern blot aGPVMs and HEK293 cells were washed twice with PBS buffer. Cells were harvested with 1 mL 1x RIPA buffer (20\u2013188, Sigma Aldrich) containing half a tablet of complete mini-EDTA-free protease inhibitor (11836170001, Sigma Aldrich) and incubated at 4\u00b0C for 30 min. Samples were centrifuged at 15,000 RPM for 15 min, and the pellet was discarded. Then,\u00a02\u20135 \u00b5g of proteins in the supernatant were heated at 37\u00b0C for 30 min with 2x Laemmli sample buffer (S3401, Sigma Aldrich). Samples were loaded into 4\u201312% gradient gel (NP0335BOX, Invitrogen) with PageRuler plus prestained protein ladder (26619, Invitrogen) and run at 100 V for 2 hr at room temperature in running buffer: 1x NuPAGE MOPS SDS running buffer: 50 mM MOPS, 50 mM Tris base, 0.1% SDS, 1 mM EDTA, pH to 7.7. Proteins were transferred on ice from the gel to nitrocellulose membrane (10600003, GE Healthcare Life science) for 75 min at 10\u00a0V in transfer buffer: 24 mM Tris base, 192 mM glycine, 20% v/v methanol. Membrane was blocked with 5% (w/v) Blotting-Grade-Blocker (1706404, Bio-Rad) in 1x TRIS-buffered saline for 1 hr at 4\u00b0C. Primary antibody for stac2 (1:250) was added to the blocking buffer with 0.1% (v/v) Tween 20 (1706404, Bio-Rad) and incubated overnight at 4\u00b0C. Next day, the\u00a0membrane was washed three\u00a0times for 5 min each with TBS with 0.1% (v/v) Tween 20 (TBS-T). The secondary antibody (111-035-144, Jackson ImmunoResearch; 1:10,000) was added to the blocking buffer with 0.1% (v/v) Tween 20 and incubated for 1 hr. The\u00a0membrane was washed again three\u00a0times for 5 min each with TBS-T. Finally, western blots were developed with SuperSignal West Pico Chemiluminescent Substrate (34580, ThermoFischer) and images were collected on an Alpha InnoTech FluorChem HD2 imaging system.\n\n### Confocal optical imaging\n\nImages of immunostained tissue slices and cells were captured with either an Olympus Fluorview FV300 confocal laser scanning microscope or an LSM780 (Carl Zeiss, Oberkochen, Germany) confocal microscope. For the FV300, we used Fluoview software (Olympus) with a PlanApo 403 or 603 oil objective (NA 1.40, PLAPO60XO3; Olympus). Argon laser (488 nm) was used to excite Alexa Fluor 488 (green), and Helium Neon (HeNe) Green Laser was used to excite Alexa Fluor 594 (red). Olympus optical filters used were 442/515 nm excitation splitter (FV-FCV), 570 nm emission splitter (FV-570CH), BA510 IF and BA530RIF for green emission channel, and 605 BP \ufb01lter for red channel. Images were processed in ImageJ. Similar settings were used for the LSM780 setup.\n\n### Whole-cell electrophysiology\n\nWhole-cell voltage-clamp recordings for HEK293 were collected at room temperature 1\u20132 days after transfection with Axopatch 200A (Axon Instruments). Glass pipettes (BF150-86-10, Sutter Instruments) were pulled with a horizontal puller (P-97; Sutter Instruments Company) and fire polished (Microforge, Narishige, Tokyo, Japan) to have 1\u20133 M\u03a9 resistance. Recordings were low-pass filtered at 2 kHz and sampled at 10 kHz with P/8 leak subtraction and 70% series resistance and capacitance compensation. For recordings of CaV1.2 (Figure 1A\u2013B, Figure 5I\u2013K, Figure 6B), CaV1.3S (Figure 1C\u2013D, Figure 3\u2014figure supplement 1A\u2013B and and G, Figure 7D\u2013E, and Figure 8B\u2013C), CaV1.443* (Figure 1E\u2013F), CaV2.2 (Figure 1I\u2013J), CaV2.3/1.3 CI chimera (Figure 2E\u2013F), CaV1.3-CaM (Figure 3A\u2013B, Figure 3\u2014figure supplement 1C\u2013F, and Figure 5G\u2013H), CaV1.2-CaM (Figure 2C\u2013D, Figure 5A\u2013F) and CaV1.3RxxK (Figure 8D\u2013E) exogenously expressed in HEK293 cells, the internal solution contained (in mM): CsMeSO3, 114; CsCl2, 5; MgCl2, 1; MgATP, 4; HEPES, 10; BAPTA, 10; adjusted to 295 mOsm with CsMeSO3 and pH 7.4 with CsOH. The external solution contained (in mM): TEA-MeSO3, 140; HEPES, 10; CaCl2, or BaCl2 40; adjusted to 300 mOsm with TEA-MeSO3 and pH 7.4 with TEA-OH. For recordings of CaV2.1 (Figure 1G\u2013H) and CaV2.3 (Figure 1K\u2013L), the internal solution contained (in mM): CsMeSO3, 135; CsCl2, 5; MgCl2, 1; MgATP, 4; HEPES, 10; EGTA, 1; adjusted to 295 mOsm with CsMeSO3 and pH 7.4 with CsOH. The external solution contained (in mM): TEA-MeSO3, 140; HEPES, 10; CaCl2, or BaCl2 5; adjusted to 300 mOsm with TEA-MeSO3 and pH 7.4 with TEA-OH. At a holding potential of \u221280 mV, we used a family of test pulses from \u221230 mV to\u00a0+50 mV with repetition intervals of 20 s. Custom MATLAB (Mathworks) software (https://github.com/manubenjohny/WCDTY; copy archived at https://github.com/elifesciences-publications/WCDTY) was used to determine peak current and fraction of peak current remaining after either 300 ms (r300) or 800 ms (r800) of depolarization.\n\nWe incubated aGPVMs\u00a0for 20\u201348 hr after isolation in 5 \u00b5M ryanodine for 5\u201310 min before we collected whole-cell recordings. The\u00a0internal recording solution contained (in mM) CsMeSO3, 114; CsCl2, 5; MgCl2, 1; MgATP, 4; HEPES, 10; BAPTA, 10; ryanodine, 0.005 adjusted to 295 mOsm with CsMeSO3 and pH 7.4 with CsOH. Cells were sealed in Tyrodes solution, which contained (in mM): NaCl, 135; KCl, 5.4; CaCl2, 1.8; MgCl2, 0.33; NaH2PO4, 0.33; HEPES, 5; glucose, 5 (pH 7.4). For CDI measurements, external solutions containing (in mM): TEA-MeSO3, 140; HEPES, 10; CaCl2, or BaCl2 40; adjusted to 300 mOsm with TEA-MeSO3 and pH 7.4 with TEA-OH were perfused. Welch\u2019s T-test was used to verify statistical significance among\u00a0the population data.\n\nFor CDI recordings, we determined required sample size based on power analysis. Based on historical estimates of normal variation in CDI/CDF measurements, we computed the sample size required such that type I and type II errors are 5% to be 3.5. Thus, we obtained at least four independent measurements for all electrophysiological experiments.\n\nCurrent-clamp recordings of aGPVMs were performed on the same setup and were filtered at 5 kHz and sampled at 25 kHz. The\u00a0internal solution contained (in mM): K glutamate, 130; KCl, 9; NaCl, 10; MgCl2, 0.5; EGTA, 0.5, MgATP, 4; HEPES, 10; adjusted to pH 7.3 with KOH. The\u00a0external solution contained (in mM): NaCl, 135; KCl, 5.4; CaCl2, 1.8; MgCl2, 0.33; NaH2PO4, 0.33; HEPES, 5; glucose, 5 (pH 7.4). The time from upstroke to 80% repolarization (APD80) was measured with MATLAB (Mathworks) and used as a metric for comparing physiological output between peptide treated and untreated. For experiments with U-peptide, peptide was dissolved in ddH2O to 2 mg/mL and then diluted to 500 \u03bcM in the appropriate internal solution.\n\n### Single-channel electrophysiology\n\nSingle-channel recordings were performed at room temperature using an on-cell configuration previously established in the laboratory (Tay et al., 2012) with the\u00a0same setup as\u00a0used\u00a0for whole-cell electrophysiology. Glass pipettes were pulled and polished from ultra-thick-walled borosilicate glass (BF200-116-10, Sutter Instruments) and coated with sylgard to have 5\u201310 M\u03a9 resistance. Recordings were filtered at 2\u20135 kHz. The\u00a0pipette solution contained (in mM): TEA-MeSO3, 140; HEPES, 10; BaCl2 40; adjusted to 300 mOsm with TEA-MeSO3 and pH 7.4 with TEA-OH. The\u00a0external solution contained (in mM): K glutamate, 132; KCl, 5; NaCl, 5; MgCl2, 3; EGTA, 2; HEPES, 10; adjusted to 300 mOsm with glucose and pH 7.4 with KOH. Cell-attached single-channel currents were measured during 200 ms voltage ramps between \u221280 and\u00a0+70 mV (portions between \u221250 and 40 mV displayed and analyzed) as previously described. For each patch, we recorded 80\u2013150 sweeps with a repetition interval of 12 s. Patches were analyzed as follows: (1) The leak for each sweep was fit and subtracted from each trace. (2) The unitary current relation, i(V), was fit to the open-channel current level using the following equation:\n\n$i(V)=\u2212g\u22c5(V\u2212V_{S})\u22c5exp(\u2212(V\u2212V_{S})\u22c5z\u22c5F/(R\u22c5T)) / (1\u2212exp(\u2212(V\u2212V_{S})\u22c5z\u22c5F/(R\u22c5T)))$ where g is the single-channel conductance (~0.2 pA/mV), z is the apparent valence of permeation (~2.1), F is Faraday\u2019s constant, R is the gas constant, and T is the temperature in degrees Kelvin (assumed room temperature). These parameters were held constant for all patches, except for slight variations in the voltage-shift parameter Vs\u00a0~\u00a035 mV, as detailed below. (3) All leak-subtracted traces for each patch were averaged (and divided by the number of channels in the patch) to yield an I\u2013V relation for that patch. As\u00a0slight variability in VS was observed among patches, we calculated an average VS for each construct, VS,AVE. The data from each patch were then shifted slightly in voltage by an amount \u0394V = VS,AVE \u2013 VS, with \u0394V typically about\u00a0\u00b15 mV. This maneuver allowed all patches for a given construct to share a common open-channel GHK relation. Thus shifted, the I\u2013V relations obtained from different patches for each condition/construct were then averaged together. (4) PO at each voltage was determined by dividing the average I (determined in step three above) into the open-channel GHK relation. Channel number was determined by the maximal number of overlapping opening events upon application of the channel agonist Bay K8644 (5 \u03bcM) at the end of each recording. For modal analysis, a dashed line discriminator was chosen to be the\u00a0average single-trial PO\u00a0=\u00a00.075 such that traces with average single-trial PO\u00a0>0.075 were categorized as high PO while the remaining traces\u00a0were considered\u00a0to\u00a0be low PO.\n\n### Quantitative calcium photo-uncaging\n\nAll Ca2+-uncaging experiments were conducted on a Nikon TE2000 inverted microscope with a Plan Fluor Apo 40\u00a0\u00d7\u00a0oil objective as previously described (Ben-Johny et al., 2014). Briefly, a classic Cairn UV flash photolysis system was used for Ca2+-uncaging with brief UV pulses of\u00a0~1.5 ms in duration powered by a capacitor bank of up to 4000 \u03bcF charged to 200\u2013290V. For concurrent Ca2+ imaging, Fluo4FF and Alexa568 dyes were dialyzed via patch pipette and imaged using Argon laser excitation (514 nm). Background fluorescence for each cell was measured prior to pipette dialysis of dyes and subtracted subsequently. A field-stop aperture was used to isolate fluorescence from individual cells. Dual-color fluorescence emission was attained using a 545DCLP dichroic mirror, paired with a 545/40 BP filter for detecting Fluo4FF, and a 580LP filter for detecting Alexa568. Typically, uncaging experiments were conducted after\u00a0~2 min of dialysis of internal solution. Welch\u2019s T-test was used to verify statistical significance between the population data.\n\nFor all Ca2+-uncaging experiments, the\u00a0internal solution contained (in mM): CsMeSO3, 120; CsCl, 5; HEPES (pH 7.4 with CsOH), 10; Fluo-4FF pentapotassium salt (Invitrogen), 0.01; Alexa 568 succinimidyl ester (Invitrogen), 0.0025; Citrate, 1; DM-Nitrophen EDTA (DMN) and CaCl2 were adjusted to obtain the\u00a0desired Ca2+ flash. Typically, for flashes in the\u00a0range 0.5\u20132 \u03bcM, DMN, 1 mM; and CaCl2, 0.7 mM. For the 2\u20138 \u03bcM range, DMN, 2 mM; and CaCl2, 1.4 mM. For larger Ca2+ steps, DMN, 4 mM; and CaCl2, 3.2 mM. As\u00a0DMN can bind Mg2+, all experiments were conducted with 0 mM Mg2+ internally. For all Na channel experiments, the bath solution contained (in mM): TEA-MeSO3, 45; HEPES (pH 7.4), 10; NaCl, 100; at 300 mOsm, adjusted with TEA-MeSO3.\n\n### FRET-two-hybrid assay\n\nTo collect a range of donor molecule (Dfree) concentrations, HEK293 cells were transfected with combinations of DNA ratios. Cells were immersed in 2 mM Ca2+ Tyrodes solution, which contained (in mM): NaCl, 138; KCl, 4; CaCl2, 2; MgCl2, 1; HEPES, 10; glucose, 10. Three-cube FRET fluorescence measurements were performed under resting Ca2+ concentrations on an inverted fluorescence microscope. FRET efficiency (EA and ED) was calculated for each cell (Erickson et al., 2001) and a binding curve, either EA = [Dfree]/(Kd,EFF + [Dfree]) \u00b7 EA,max or ED = [Afree]/(Kd,EFF + [Afree]), was fit to compute the effective dissociation constant (Kd,EFF).\n",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "4247c2c9-8a84-446f-99f8-1c3337135d57",
+      "submission_id": "8480aa45-0678-476a-9be6-8cd4e06cf75d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Indira M Raman, Northwestern University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.35222.024](https://doi.org/10.7554/eLife.35222.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Allosteric regulators selectively shunt Ca2+-feedback of CaV and NaV channels\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Richard Aldrich as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Bruce P Bean (Reviewer #2); Dejian Ren (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis study describes two classes of proteins, stac and fhf, interfere with CaM binding to voltage-dependent Ca and Na channels, both of which have a CaM binding domain that stacs and fhfs can also bind, thereby reducing Ca-dependent inactivation. The data offer a potential explanation for why CaM can have targeted effects, and reveal interactions among channel modulators that have posed long-standing puzzles, e.g. why CaM sometimes has effects on channels with CaM binding domains but sometimes not.\n\nEssential revisions:\n\n1) The primary results on how stac modulates Ca channels are all with overexpression. Consequently, it is unclear to what extent normal expression levels participate in regulation of currents and what the nature of the competition (or not) with CaM is. Additional approaches to clarify these points are suggested by the reviewers.\n\n2) The immunostaining in Figure 1 of stac expression in cardiac neurons is not convincing. The reviewers suggest either removal of these data or a more extensive validation of the antibodies and/or other means of verifying the signal.\n\n3) A number of discrepancies with the published literature were noted. These should be acknowledged and discussed, and where possible, resolutions proposed.\n\n4) The caliber of the data is high but the highly dramatic, hyperbolic language detracts from the overall quality of the manuscript. While some stylistic freedom is appropriate, it must not interfere with accuracy and readability. A few specific sentences are noted in the reviews, but the full manuscript should be revised substantially with this idea in mind.\n\nThe basis for these comments, in the reviewers' words, is included below, under \"Major Comments\" to facilitate the revision.\n\nTitle: It is not clear that the prevention of CaM modulation of channels by stac is meaningfully described by the word \"shunt.\" Possibly a more straightforward work like \"prevent\" or \"interferes with\" would be more appropriate.\n\nMajor comments (in the reviewers' words; explaining basis for the essential revisions requested):\n\n1) Interpretations from overexpression. A general issue concerning the significance is that the key results in how stac proteins modify behavior of calcium channels are all with overexpression of stac, and there is no evidence that there is any \"tuning\" from this mechanism physiologically (in stark contrast to previous data with stac3 in skeletal muscle, where the physiological relevance is quite clear). Previous studies in both heart and neurons show prominent calcium-dependent inactivation, giving little reason to think that stac inhibition of this effect is important. The author's experiments here disrupting the interaction also suggest little or no physiological significance in cardiac muscle. An RNAi or knock-out approach would be better suited for testing physiological relevance for native Cav1.2 or Cav1.3 channels.\n\nAlso, the authors conclude that STAC doesn't compete with CaM to suppress CDI, a mechanism apparently contrast to the \"competition-based\" mechanism implicated by Campiglio et al., 2018. While the multiple experiments in this manuscript do suggest that the authors' model is more convincing, a major evidence the authors used to \"explicitly rule out\" that a displacement of CaM binding by STAC is necessary for CDI suppression is by fusing CaM to CaV's C-terminus to increase local CaM concentration (Figure 3F-I). However, such a fusion still can't rule out that overexpressing STAC (as done in the paper) displaces CaM's binding to the site. One way to solve this problem is perhaps by directly monitor CaM binding with and without STAC. An easier, though less direct, experiment is perhaps to overexpress CaM (as done in the single channel recordings in Figure 4) and to test whether STAC still eliminates CDI when CaM binding is presumably saturated.\n\n2) Immunostaining. A potentially novel result is the immuno evidence for stac2 in cardiac muscle. Previous work concluded stac3 is expressed in skeletal muscle and stac1 and stac2 in neurons, with no clear expression of any in cardiac muscle. But here the staining for stac2 is weak and there is no validation of the antibody, so this is very weak evidence -especially since the disruption experiment suggests no basal modulation that might suggest endogenous stac expression. Everyone who has worked with antibodies knows how easy it is to get weak off-target staining. The title of Figure 1 \"Stac2 is differentially expressed in cardiac myocytes and neurons\" is also somewhat misleading, as the experiments don't examine stac2's expression in neurons and the immunostaining data is not quantitative.\n\n3) Relation to other work. The authors report several interesting findings in this paper. First, they found that all the STACs (STAC1-3) can abolish/reduce the calmodulin (CaM)-mediated CDI of L-type (CaV1 sub-family) CaVs (a finding also recently reported by other groups, e.g. Polster et al., 2015, Campiglio et al., 2018). Second, the authors used the FRET protein-interaction assay and found that STAC3 interacts with the proximal Ca2+-inactivating (PCI) segment of the Ca2+-inactivating (CI) module in the C-terminus of CaV1.3, but not with the other segments, including the IQ motif immediately C-terminal to the PCI and the II/III loop previously found by others to interact with STACs in the CaV1.1 (Yuen et al., 2017, Polster et al., 2018) or CaV1.2 (Campiglio et al., 2018). Intriguingly, the authors found that a short \"linker\" between the C1 and the SH3 regions on STAC is required for STAC's suppression of CDI, and infusion of a U-motif peptide derived from this linker region is sufficient to remove CDI. This finding again is apparently contrast with a previous conclusion by others that the C1 domain is the major CDI-slowing determinant.\n\nMechanistically, the authors conclude that STACs allosterically control CDI and \"lock\" the channel into a high opening probability state, a mechanism contrast to a previously proposed one by which STAC competes with CaM. Interestingly, the authors also discovered that the regulation of NaV's CDI by FGF has a structural requirement analogous to that of the regulation of CaVs by STACs. Perhaps the most remarkable finding in the paper is that the authors were able to introduce an artificial Mona SH3-binding sequence in the PCI region to confer complete CDI inhibition by Mona SH3, a protein that doesn't affect the wild-type CaV. Overall, there are many apparent \"discrepancies\" between the current paper and the two PNAS papers (Yuen et al., 2017, Campiglio et al., 2018), ranging from the STAC binding sites on CaVs (PCI in this paper vs. the IQ motif and II/III loop in the others), and the important segment on STAC (linker vs. C1) to the mechanism (allosteric vs. competitive). The authors might want to elaborate the differences and provide potential explanations.\n\n4) Writing. A comment on style: The authors use a prose style with so many dramatic statements and intensifying adjectives that it will likely irritate and even alienate some readers. In my opinion, a more sober presentation in a standard style that lets the results speak for themselves is more effective. Insisting on telling the reader how important the results are (like repeatedly using \"Remarkably\" for results that seem very straightforward, like seeing similar effects on Cav1.4 as for Cav1.1, Cav1.2, and Cav1.3) can make the reader think that he or she is receiving a sales pitch rather than being told results. There are too many examples of over-dramatic language to list but one was the statement that stac and fhf exert \"orthogonal\" control because one interacts with calcium channels and one with sodium channels. Calmodulin interacts with dozens if not hundreds of proteins, and of course there are ways that the interactions are regulated differently \u2013 is each one of these an orthogonal dimension? I had a similar reaction to sentences like \"Synergistic analysis of the two proteins delineate mechanisms that confer personalized modulation and inform upon physiological consequences\" and \"Repurposing this modulatory principle furnishes a general strategy for engineering synthetic modulators that patently switch CaV and NaV channel feedback.\" (These sentences lie between a lack of clear meaning and inaccuracy.)\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Allosteric regulators selectively prevent Ca2+-feedback of CaV and NaV channels\" for further consideration at eLife. Your revised article has been favorably evaluated by Richard Aldrich (Senior Editor), a Reviewing Editor, and two reviewers.\n\nThe manuscript has been improved but there are some important issues that need to be addressed, as outlined below:\n\nOne reviewer (whose comments are included verbatim below) identified some inconsistencies in the match between figure panels cited in the text and in the figures, and also noted that the control plots in the last two supplementary figures (Figure 7\u2014figure supplement 1 and Figure 8\u2014figure supplement 1) appear to be identical, but the duplication (if these are indeed duplicates) is neither justified nor indicated in the legends. The same panel appears to be duplicated in Figure 1\u2014figure supplement 1 and Figure 3\u2014figure supplement 1, although in the latter it is labeled as N=6 instead of N=9 as in the other three panels. These issues raise concern about the care with which the manuscript was assembled and presented.\n\nBefore a final decision is rendered, please ensure (1) that the correct data and figure panels are present throughout the manuscript, (2) that they are called correctly, (3) that any duplication of panels to facilitate comparison is clearly indicated as such (with appropriate justification for a common control group), and (4) that there are no other related errors. In your revision, please clearly indicate the corrections that have been made.\n\nReviewer comments:\n\nThe revision generally addresses the main issues raised on the original version. The data are extensive and comprise a very comprehensive picture of the molecular interactions with the multiple STAC proteins with multiple calcium channels. It is still unproven that the STAC interaction functions physiologically to \"tune\" Ca-dependent channel inactivation, but the authors make a good point that testing this via RNAi would be technically challenging given current experimental systems and making knock-out mice would be a major project. The fact that STAC proteins are heavily expressed in the brain gives some credence to the idea that they could be functionally important in neurons, or knock-outs.\n\nThe authors need to proof-read the manuscript more carefully. The reviewer copy was hard to read, as it consisted of a pdf incorporating cross-outs and additions, which made spotting errors difficult. However, it is obvious that not all changes in re-numbering figure references were done correctly (e.g. in the first paragraph of the subsection \u201cStac selectively suppresses Ca2+-feedback of CaV1 channels\u201d, Figure 2A should now be 1A, and in the second paragraph of the subsection \u201cStac interacts with CaV1 CI module to elicit CDI suppression\u201d, Figure 3B should be 2B).\n\nAlso the fact that the figures were not numbered made the reviewing process more difficult than was necessary. Also, at the end of the manuscript there are supplementary figures that are exact duplicates.\n",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e31e324d-0115-4a37-8d2a-465eaa5489f2",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C1",
+      "claim": "Calmodulin (CaM) serves as a pervasive regulatory subunit of CaV1, CaV2, and NaV1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Calmodulin (CaM) serves as a pervasive regulatory subunit of CaV1, CaV2, and NaV1 channels, exploiting a functionally conserved carboxy-tail element to afford dynamic Ca2+-feedback of cellular excitability in neurons and cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and supported by citations to prior work (Ben-Johny et al., 2015; Catterall et al., 2017; Saimi and Kung, 2002).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "ede5d5e2-4daa-4774-88e0-b014d46eaf8b",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C2",
+      "claim": "CaM exploits a functionally conserved carboxy-tail element to afford dynamic Ca2+-feedback of cellular excitability in neurons and cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Calmodulin (CaM) serves as a pervasive regulatory subunit of CaV1, CaV2, and NaV1 channels, exploiting a functionally conserved carboxy-tail element to afford dynamic Ca2+-feedback of cellular excitability in neurons and cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "56347c95-59f1-46bb-be07-ef23e963b685",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C3",
+      "claim": "Stac selectively diminishes Ca2+-regulation of CaV1 family channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that two structurally unrelated proteins, SH3 and cysteine-rich domain (stac) and fibroblast growth factor homologous factors (fhf) selectively diminish Ca2+/CaM-regulation of CaV1 and NaV1 families, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "9495c368-e6bd-420a-8367-a5093b42d40d",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C4",
+      "claim": "Fhf selectively diminishes Ca2+-regulation of NaV1 family channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that two structurally unrelated proteins, SH3 and cysteine-rich domain (stac) and fibroblast growth factor homologous factors (fhf) selectively diminish Ca2+/CaM-regulation of CaV1 and NaV1 families, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "29bd460e-b54c-41b3-a5b6-38a0adccac8f",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C5",
+      "claim": "Stac and fhf operate on allosteric sites within upstream portions of respective channel carboxy-tails, distinct from the CaM-binding interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The two proteins operate on allosteric sites within upstream portions of respective channel carboxy-tails, distinct from the CaM-binding interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanistic finding is stated in the abstract and supported by FRET binding data and functional experiments with CaM-tethered channels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "e732071a-109e-4a43-b13c-f2c3481c85cc",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C6",
+      "claim": "Insertion of a short RxxK binding motif into CaV1.3 carboxy-tail confers synthetic switching of CaM regulation by Mona SH3 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Generalizing this mechanism, insertion of a short RxxK binding motif into CaV1.3 carboxy-tail confers synthetic switching of CaM regulation by Mona SH3 domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated experimentally in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "090f5d13-535e-406c-bb68-2770c10f7756",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C7",
+      "claim": "Stac2 co-expression reduces CDI of CaV1.2 (p=3.6 \u00d7 10\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus quantified, the population data confirm a reduction in CDI of CaV1.2 with stac2 (p=3.6 \u00d7 10\u22125; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A-B with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "1fed584e-7938-4c0b-8622-b3289f9fb3e7",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C8",
+      "claim": "Stac1 and stac3 isoforms diminish CDI of CaV1.2 (p=2.0 \u00d7 10\u22125 and 7.1 \u00d7 10\u22125, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis shows that both stac1 and stac3 isoforms also diminish CDI (p=2.0 \u00d7 10\u22125 and 7.1 \u00d7 10\u22125, respectively, Figure 1B and Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B and Figure 1\u2014figure supplement 1A with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "2eeb9c49-7031-4fc5-bbe9-ac41e3e8276f",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C9",
+      "claim": "Stac1, stac2, and stac3 reduce CDI of CaV1.3S (p<1 \u00d7 10\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, CaV1.3 short variant (CaV1.3S), a close homolog of CaV1.2, exhibits strong baseline CDI that is reduced on co-expression of stac1, stac2, and stac3 (p<1 \u00d7 10\u22125; Figure 1C\u2013D and Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C-D and Figure 1\u2014figure supplement 1B with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "431b4630-4b7f-49a5-980f-b3a47dca2913",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C10",
+      "claim": "Stac2 reduces CDI of CaV1.443* (p=3.2 \u00d7 10\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "Generalizing this phenomenon, stac2 also reduces CDI of CaV1.443* (p=3.2 \u00d7 10\u22125; Figure 1E\u2013F; Figure 1\u2014figure supplement 1C) (Tan et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E-F and Figure 1\u2014figure supplement 1C with statistical analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "d24d9df0-fc21-404a-9943-7cbc351fb770",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C11",
+      "claim": "Stac2 does not alter CDF of CaV2.1.",
+      "claim_type": "EXPLICIT",
+      "source": "Further quantification revealed no change in CDF of CaV2.1 following the addition of stac2 in both exemplar current recordings (Figure 1G) and population data (Figure 1H; Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1G-H and Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "b1ae4792-9439-4bd4-a413-72ee2577bacb",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C12",
+      "claim": "Stac2 co-expression does not disrupt CDI of CaV2.2.",
+      "claim_type": "EXPLICIT",
+      "source": "For CaV2.2, CaM-regulation manifests as a kinetically slow CDI (Figure 1I) (Liang et al., 2003), that persists despite stac co-expression (Figure 1I\u2013J; Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1I-J and Figure 1\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "4f4ebb57-b2fa-40c4-a760-1ad4c3af4d9a",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C13",
+      "claim": "Stac2 co-expression spares CDI of CaV2.3.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, neuronal CaV2.3 also possesses robust CDI, which is spared with stac2 co-expression (Figure 1Figure 1K\u2013L; Figure 1\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1K-L and Figure 1\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "21964ef1-07fc-4d18-95ac-7f91c93b1201",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C14",
+      "claim": "Stac overexpression does not disrupt NaV1.4 CDI.",
+      "claim_type": "EXPLICIT",
+      "source": "Stac overexpression, however, does not disrupt NaV1.4 CDI (Figure 1M\u2013N; Figure 1\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1M-N and Figure 1\u2014figure supplement 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "d55e0eb4-2c43-4565-88ef-82a65b81756e",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C15",
+      "claim": "Stac3 binds to CaV1.3 holo-channel with Kd,EFF = 1458 \u00b1 251 Dfree units proportional to ~47 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus probed, we obtained a CaV1.3 holo-channel affinity for stac3 of Kd,EFF = 1458 \u00b1 251 Dfree units proportional to ~47 nM (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FRET 2-hybrid binding data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "26e610ff-ddf6-4a6c-b883-bceaf8df52cf",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C17",
+      "claim": "Stac3 binds to the CI region of CaV1.3 with Kd,EFF = 20697 \u00b1 3023 Dfree~0.67 \u00b1 0.1 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that stac3 binds well to the CI region (Kd,EFF = 20697 \u00b1 3023 Dfree~0.67 \u00b1 0.1 \u03bcM, Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FRET 2-hybrid binding data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "6e6827ca-8786-46c1-810f-7aedd6a62254",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C18",
+      "claim": "Stac3 binds to the PCI segment with approximately tenfold higher affinity (Kd,EFF = 17725 \u00b1 3990 Dfree~0.58 \u00b1 0.1 \u03bcM) than the downstream IQ domain (Kd,EFF = 204739 \u00b1 25465 Dfree~6.67 \u00b1 0.8 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "The YFP-tagged PCI segment bound stac3 with approximately tenfold higher affinity (Kd,EFF = 17725 \u00b1 3990 Dfree~0.58 \u00b1 0.1 \u03bcM) than the downstream IQ domain (Kd,EFF = 204739 \u00b1 25465 Dfree~6.67 \u00b1 0.8 \u03bcM) (Figure 2C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FRET 2-hybrid binding data shown in Figure 2C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "ec5b8646-f2eb-4c52-9727-0d1ea84c88b8",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C19",
+      "claim": "Stac2 co-expression attenuates CDI of CaV2.3/1.3 CI chimera (p=4.7 \u00d7 10\u22124).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to wildtype CaV2.3, stac2 co-expression attenuated CDI (p=4.7 \u00d7 10\u22124, Figure 2E\u2013F; Figure 2\u2014figure supplement 1F), suggesting that CaV1 CI module is necessary for stac-mediated CDI suppression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2E-F and Figure 2\u2014figure supplement 1F with statistical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "0c4a498d-630c-49b8-a547-528ec94e93a5",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C20",
+      "claim": "Stac2 suppresses CDI of CaV1.3S-CaM (p=3.8 \u00d7 10\u22126).",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, CDI of CaV1.3S-CaM is diminished by co-expression of stac2 (p=3.8 \u00d7 10\u22126, Figure 3A\u2013B; Figure 3\u2014figure supplement 1E) and stac3 (p=4.5 \u00d7 10\u22124, Figure 3\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A-B and Figure 3\u2014figure supplement 1E with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "70e9897d-a5b7-4a49-b92a-c6d69c3069c6",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C21",
+      "claim": "Stac3 suppresses CDI of CaV1.3S-CaM (p=4.5 \u00d7 10\u22124).",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, CDI of CaV1.3S-CaM is diminished by co-expression of stac2 (p=3.8 \u00d7 10\u22126, Figure 3A\u2013B; Figure 3\u2014figure supplement 1E) and stac3 (p=4.5 \u00d7 10\u22124, Figure 3\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1F with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "685a8be8-41c8-4b1e-b2bd-c328b334a068",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C22",
+      "claim": "Stac2 suppresses CDI of CaV1.2-CaM (p=1.5 \u00d7 10\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a similar fate for CaV1.2-CaM with stac2 (p=1.5 \u00d7 10\u22125, Figure 3C\u2013D; Figure 3\u2014figure supplement 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C-D and Figure 3\u2014figure supplement 1H with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "7117e25d-384f-4093-8744-139d7883a096",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C23",
+      "claim": "Co-expression of stac3 does not appreciably perturb CaM binding to the CI module with Kd,EFF = 4182 \u00b1 330 Dfree units.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, co-expression of stac3 did not appreciably perturb CaM binding to the CI module with Kd,EFF = 4182 \u00b1 330 Dfree units (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FRET 2-hybrid binding data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "840b9774-3ced-46d7-ac30-9282aa879713",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C24",
+      "claim": "Stac-binding locks CaV1.3 channels in the high PO configuration and effectively decouples the channel pore from CaM-dependent conformational changes.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings demonstrate that consistent with Scenario 3, stac-binding locks CaV1.3 channels in the high PO configuration and effectively decouples the channel pore from CaM-dependent conformational changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by single-channel electrophysiology data shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "77a615bb-ec85-4802-9f6c-11ba1a87aa86",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C25",
+      "claim": "The linker region of stac2 is sufficient to suppress CDI of CaV1.2-CaM (p=8.9 \u00d7 10\u22126).",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the linker region by itself fully abolished CDI of these channels (p=8.9 \u00d7 10\u22126, Figure 5B and D; Figure 5\u2014figure supplement 1D), recapitulating the effect of stac2 on CaV1.2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B, D and Figure 5\u2014figure supplement 1D with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "724c9769-1fc1-43c8-9399-6676a6631603",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C26",
+      "claim": "Co-expression of U-domain diminishes CDI of both CaV1.2-CaM and CaV1.3-CaM.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-expression of U-domain diminishes CDI of both CaV1.2-CaM and CaV1.3-CaM (Figure 5F\u2013H, Figure 5\u2014figure supplement 1E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5F-H and Figure 5\u2014figure supplement 1E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "ad470f18-6a11-4cd7-a2f7-c9694c708cf7",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C27",
+      "claim": "Stac2 mutant with triple alanine substitution of residues ETL[206-208] results in minimal disruption of CaV1.2 and CaV1.3 CDI.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-expression of mutant stac2 with triple alanine substitution of residues ETL[206-208] resulted in minimal disruption of CaV1.2 and CaV1.3 CDI (Figure 5J\u2013K), suggesting that these residues are necessary.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5J-K.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "7c5f271a-1c1c-4c4b-b837-c80e7fb16ec2",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C28",
+      "claim": "Residues PVY[203-205] and KVD[200-202] are critical for stac function.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis revealed residues PVY[203-205] and KVD[200-202] to be critical for stac function (Figure 5I; Figure 5\u2014figure supplement 2A\u20132C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5I and Figure 5\u2014figure supplement 2A-2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "638dbf76-8b43-4cfb-a260-c00ca7811c45",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C29",
+      "claim": "Pipette dialysis of U-peptide reduces CDI in ventricular myocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Pipette dialysis of U-peptide reduced CDI in myocytes (Figure 6E\u2013F, Figure 6\u2014figure supplement 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6E-F and Figure 6\u2014figure supplement 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "48e91bd3-5d91-4f11-b09f-85d4308ceaa7",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C30",
+      "claim": "U-peptide enhances action potential duration (APD80) from 277.9 \u00b1 31.37 ms to 740.1 \u00b1 105.49 ms in aGPVMs.",
+      "claim_type": "EXPLICIT",
+      "source": "When the peptide is added to the internal solution, APD80 is enhanced to 740.1 \u00b1 105.49 ms (n = 6) (Figure 6G\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6G-H with baseline APD80 of 277.9 \u00b1 31.37 ms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "df9ee2fe-e59f-4f1b-bebc-2e739913deb5",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C31",
+      "claim": "Fhf1b co-expression abolishes CDI of NaV1.4.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-expression of fhf1b abolished CDI (Figure 7B\u2013C; Figure 7\u2014figure supplement 1A), unveiling a novel role of fhf in tuning Ca2+-feedback of NaV channels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7B-C and Figure 7\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "681d8a2a-24e6-4c00-b88c-84eefeb7dbd0",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C32",
+      "claim": "Fhf co-expression spares CaV1.3 CDI.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison to control conditions, fhf co-expression spared CaV1.3 CDI (Figure 7D\u2013E; Figure 7\u2014figure supplement 1B) suggesting that fhf may be a selective modulator of NaV1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7D-E and Figure 7\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "9cf056f8-bbdf-4bb8-b6d0-8a5e6da6fc01",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C33",
+      "claim": "Fhf1b reduces CDI of NaV1.4-CaM.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-expression of fhf1b, however, reduces CDI of NaV1.4-CaM (Figure 7F\u2013G; Figure 7\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7F-G and Figure 7\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "6bc296ac-1dc0-426a-8e85-6c8f0b192247",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C34",
+      "claim": "Mona SH3 co-expression markedly diminishes CDI of CaV1.3RxxK.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-expression of Mona SH3 with CaV1.3RxxK markedly diminished CDI (Figure 8D\u2013E; Figure 8\u2014figure supplement 1B) , thus revealing engineered CDI suppression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8D-E and Figure 8\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "db927c89-2926-4d47-a5d4-b59b4e19f25e",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C35",
+      "claim": "NaV1 supports action potential initiation and propagation.",
+      "claim_type": "EXPLICIT",
+      "source": "NaV1 supports action potential initiation and propagation (Hille, 2001), while CaV1/2 initiate muscle contraction, neurotransmission, and gene transcription (Berridge et al., 2000; Clapham, 2007; Maier and Bers, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on established knowledge and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "e0d66c58-9f45-4818-87dc-2d22534bc2da",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C36",
+      "claim": "CaV1/2 initiate muscle contraction, neurotransmission, and gene transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "NaV1 supports action potential initiation and propagation (Hille, 2001), while CaV1/2 initiate muscle contraction, neurotransmission, and gene transcription (Berridge et al., 2000; Clapham, 2007; Maier and Bers, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on established knowledge and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "42bdc9f8-bba7-4754-8d47-a4823323d571",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C37",
+      "claim": "CaV1, CaV2, and NaV1 channel families share a conserved carboxy-tail element, termed Ca2+-inactivating (CI) module, that harbors CaM.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite divergent functions, these channel families share a conserved carboxy-tail element, termed Ca2+-inactivating (CI) module, that harbors CaM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on established knowledge and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "6223acb8-23c0-4c94-90fa-c1a83ae36a48",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C38",
+      "claim": "The CI module confers dynamic Ca2+-dependent regulation to CaV1, CaV2, and NaV1 that manifests as either inactivation (CDI) or facilitation (CDF).",
+      "claim_type": "EXPLICIT",
+      "source": "Functionally, the CI module confers dynamic Ca2+-dependent regulation to CaV1, CaV2, and NaV1 that manifests as either inactivation (CDI) or facilitation (CDF), negative and positive feedback, respectively (Ben-Johny et al., 2015; Minor and Findeisen, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on established knowledge and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "65037681-314c-49a0-8776-0f17f9ccb968",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C39",
+      "claim": "Ca2+-regulation of CaV1 is critical for cardiac electrical stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Physiologically, Ca2+-regulation of CaV1 is critical for cardiac electrical stability (Limpitikul et al., 2014; Mahajan et al., 2008), rhythmicity of oscillatory neurons (Chan et al., 2007; Huang et al., 2012), and vesicle release at ribbon synapses (Joiner and Lee, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "11d954a9-9afa-4abb-ac62-d24f798fc425",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C40",
+      "claim": "Ca2+-regulation of CaV1 is critical for rhythmicity of oscillatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Physiologically, Ca2+-regulation of CaV1 is critical for cardiac electrical stability (Limpitikul et al., 2014; Mahajan et al., 2008), rhythmicity of oscillatory neurons (Chan et al., 2007; Huang et al., 2012), and vesicle release at ribbon synapses (Joiner and Lee, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "2929da40-99c4-4108-9fe4-f97e69924128",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C41",
+      "claim": "Ca2+-regulation of CaV1 is critical for vesicle release at ribbon synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Physiologically, Ca2+-regulation of CaV1 is critical for cardiac electrical stability (Limpitikul et al., 2014; Mahajan et al., 2008), rhythmicity of oscillatory neurons (Chan et al., 2007; Huang et al., 2012), and vesicle release at ribbon synapses (Joiner and Lee, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "731348e6-33b4-467c-859d-7bbae4fbb875",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C42",
+      "claim": "CaV2 modulation contributes to short-term synaptic plasticity and spatial learning.",
+      "claim_type": "EXPLICIT",
+      "source": "CaV2 modulation contributes to short-term synaptic plasticity and spatial learning (Adams et al., 2010; Jackman and Regehr, 2017; Nanou et al., 2016), while NaV1 modulation tunes excitability of skeletal and cardiac muscle (Pitt and Lee, 2016; Van Petegem et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "25745280-486a-4206-b6ff-49730c4f1bf0",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C43",
+      "claim": "NaV1 modulation tunes excitability of skeletal and cardiac muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "CaV2 modulation contributes to short-term synaptic plasticity and spatial learning (Adams et al., 2010; Jackman and Regehr, 2017; Nanou et al., 2016), while NaV1 modulation tunes excitability of skeletal and cardiac muscle (Pitt and Lee, 2016; Van Petegem et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "f34845a2-a1c3-4d9a-9b31-cc0868565515",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C44",
+      "claim": "Aberrant channel regulation underlies numerous maladies including cardiac arrhythmias.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, aberrant channel regulation underlies numerous maladies including cardiac arrhythmias (Venetucci et al., 2012; Zimmer and Surber, 2008), neurological and neuropsychiatric disorders (Adams and Snutch, 2007; Striessnig et al., 2010; Zamponi, 2016), and skeletal myotonia (Cannon, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "9b60eec1-814d-4f9b-96f6-109a700488c6",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C45",
+      "claim": "Aberrant channel regulation underlies neurological and neuropsychiatric disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, aberrant channel regulation underlies numerous maladies including cardiac arrhythmias (Venetucci et al., 2012; Zimmer and Surber, 2008), neurological and neuropsychiatric disorders (Adams and Snutch, 2007; Striessnig et al., 2010; Zamponi, 2016), and skeletal myotonia (Cannon, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "b84d41c9-185e-4427-ba0c-9c5bc25c0bac",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C46",
+      "claim": "Aberrant channel regulation underlies skeletal myotonia.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, aberrant channel regulation underlies numerous maladies including cardiac arrhythmias (Venetucci et al., 2012; Zimmer and Surber, 2008), neurological and neuropsychiatric disorders (Adams and Snutch, 2007; Striessnig et al., 2010; Zamponi, 2016), and skeletal myotonia (Cannon, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "2e845d4e-5f6a-49a1-ad8e-28bedd4465bf",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C47",
+      "claim": "Stac was initially identified in association with congenital skeletal myopathies as a structural protein that abets CaV1.1 plasmalemmal trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially identified in association with congenital skeletal myopathies as a structural protein that abets CaV1.1 plasmalemmal trafficking (Horstick et al., 2013; Linsley et al., 2017c; Polster et al., 2015), stac also suppresses CaV1.2 CDI (Campiglio et al., 2018; Wong King Yuen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "1e2c4d18-21d4-4298-a103-2fa8cb4b5f19",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C48",
+      "claim": "Stac also suppresses CaV1.2 CDI.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially identified in association with congenital skeletal myopathies as a structural protein that abets CaV1.1 plasmalemmal trafficking (Horstick et al., 2013; Linsley et al., 2017c; Polster et al., 2015), stac also suppresses CaV1.2 CDI (Campiglio et al., 2018; Wong King Yuen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "460ce8d5-1436-4e2f-983b-cf14bb487f93",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C49",
+      "claim": "Stac isoforms (stac1-3) share a common architecture containing a C1 and two SH3 domains fused via a linker.",
+      "claim_type": "EXPLICIT",
+      "source": "Stac isoforms (stac1-3) share a common architecture containing a C1 and two SH3 domains fused via a linker, and exhibit tissue-specific expression (Suzuki et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "47bd2eb2-9a6a-4af0-923c-6ff6154374ff",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C50",
+      "claim": "Stac1/2 are expressed throughout the brain, the peripheral nervous system, the retina, and the inner ear.",
+      "claim_type": "EXPLICIT",
+      "source": "Stac1/2 are expressed throughout the brain (Nelson et al., 2013; Suzuki et al., 1996), the peripheral nervous system (Legha et al., 2010), the retina (Wilhelm et al., 2014), and the inner ear (Cai et al., 2015), while stac3 is limited to the skeletal muscle (Nelson et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "95bda14a-e3bb-47dd-a87f-bb72222eb5f2",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C51",
+      "claim": "Stac3 is limited to the skeletal muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Stac1/2 are expressed throughout the brain (Nelson et al., 2013; Suzuki et al., 1996), the peripheral nervous system (Legha et al., 2010), the retina (Wilhelm et al., 2014), and the inner ear (Cai et al., 2015), while stac3 is limited to the skeletal muscle (Nelson et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "810e1288-2508-4428-b8b5-b20a2f992303",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C52",
+      "claim": "Fhf lack a secretory signal and serve as intracellular regulators of NaV gating and trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolutionarily distinct from stac, fibroblast growth factor (fgf) homologous factors (fhf1-4, fgf11-14) are unconventional fgf that lack a secretory signal and serve as intracellular regulators of NaV gating and trafficking (Goldfarb, 2005; Pablo and Pitt, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "ec5c7494-972a-4a95-b4bf-c1c55036f583",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C53",
+      "claim": "Fhf interacts with the NaV CI module in close proximity to the CaM binding interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, fhf interacts with the NaV CI module in close proximity to the CaM binding interface, suggesting interplay between these modulators (Wang et al., 2012; Wang et al., 2011b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "190b30b1-b7d6-46d8-8ccc-ad04d49135e1",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C54",
+      "claim": "Fhf is thought to modulate only voltage-dependent fast inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, functionally, fhf is thought to modulate only voltage-dependent fast inactivation (Goldfarb et al., 2007; Lou et al., 2005; Wang et al., 2011a), with changes in Ca2+-regulation unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "f564fbb4-904d-41fd-af2c-a15e52c6de70",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C55",
+      "claim": "Fhf isoforms are differentially expressed in the brain, peripheral nervous system, and cardiac and skeletal muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Fhf isoforms are differentially expressed in the brain (Smallwood et al., 1996; Yan et al., 2014), peripheral nervous system (Ornitz and Itoh, 2001), and cardiac (Wei et al., 2011) and skeletal muscle (Kraner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "3d11e71b-fb41-4373-b677-67e5efafc294",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C56",
+      "claim": "Genetic variation in fhf4 is linked to spinocerebellar ataxia 27.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic variation in fhf4 is linked to spinocerebellar ataxia 27 (Coebergh et al., 2014) and fhf1 to cardiac arrhythmias (Wei et al., 2011), hinting at their relevance for regulating neuronal and cardiac excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "3e2a7ce0-4e5e-4253-9f01-d93dcf35ca47",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C57",
+      "claim": "Genetic variation in fhf1 is linked to cardiac arrhythmias.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic variation in fhf4 is linked to spinocerebellar ataxia 27 (Coebergh et al., 2014) and fhf1 to cardiac arrhythmias (Wei et al., 2011), hinting at their relevance for regulating neuronal and cardiac excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "2dac253a-6e41-4b20-af3f-bd648198d4c0",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C58",
+      "claim": "Stac uses an allosteric mechanism to lock CaV1 into a high open probability (PO) gating mode.",
+      "claim_type": "EXPLICIT",
+      "source": "In-depth analysis shows that stac binds to a distinct channel interface from CaM and uses an allosteric mechanism to lock CaV1 into a high open probability (PO) gating mode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "575bce97-ac81-4529-998f-64567b32ad26",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C59",
+      "claim": "Fhf reduces CDI of NaV1 with no effect on CaV1.",
+      "claim_type": "EXPLICIT",
+      "source": "Paralleling stac-effect on CaV1, fhf reduces CDI of NaV1 with no effect on CaV1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "2a8e0c57-be14-4978-a3c3-d5b6a1dfe7ec",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C60",
+      "claim": "Stac2 immunostaining reveals weak t-tubular localization in aGPVM.",
+      "claim_type": "EXPLICIT",
+      "source": "Stac2 immunostaining reveals weak t-tubular localization in aGPVM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry data shown in Figure 6\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "855e7b7f-4e64-40a6-a571-6e7b3b72f2a6",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C61",
+      "claim": "Immunoblotting with stac2 antibody shows ~50 kDa signal in stac2-transfected HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoblotting with stac2 antibody showed ~50 kDa signal in stac2-transfected HEK293 cells but absent from untransfected cells, confirming the ability of the antibody to detect stac2 (Figure 6\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 6\u2014figure supplement 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "66d489fb-b36b-4298-99df-4f64d596ac1f",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C62",
+      "claim": "Analysis of aGPVM lysate revealed likely endogenous stac2 with a similar molecular weight to that of recombinant stac2 in HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of aGPVM lysate revealed likely endogenous stac2 with a similar molecular weight to that of recombinant stac2 in HEK293 cells (Figure 6\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 6\u2014figure supplement 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "7df35ba6-5368-4c6e-a2fe-e01900c115fa",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C63",
+      "claim": "Fhf binding triggers a conformational rearrangement of CaM on NaV1 CI.",
+      "claim_type": "EXPLICIT",
+      "source": "Both fhf and CaM bind concurrently to NaV1 CI (Wang et al., 2012; Wang et al., 2014), with fhf binding triggering a conformational rearrangement of CaM (Figure 7A) (Gabelli et al., 2014; Wang et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on prior published work and illustrated in Figure 7A.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "f594ada0-6a79-4b68-aae3-c66e3ffee356",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C64",
+      "claim": "The dual-vestigial EF hand segments of NaV1.5 and CaV1.1 are similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the dual-vestigial EF hand segments of NaV1.5 and CaV1.1 are similar (Figure 7H\u2013I), the fhf binding interface of NaV1.5, including the preIQ loop diverges from corresponding segments of CaV1.1 and introduces a steric clash (Figure 7I\u2013J) (Wang et al., 2012; Wu et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural analysis shown in Figure 7H-I.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "c70e5e9d-e9fb-42cd-a44a-5d4e70f129f7",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "claim_id": "C65",
+      "claim": "The fhf binding interface of NaV1.5 diverges from corresponding segments of CaV1.1 and introduces a steric clash.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the dual-vestigial EF hand segments of NaV1.5 and CaV1.1 are similar (Figure 7H\u2013I), the fhf binding interface of NaV1.5, including the preIQ loop diverges from corresponding segments of CaV1.1 and introduces a steric clash (Figure 7I\u2013J) (Wang et al., 2012; Wu et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural analysis shown in Figure 7I-J.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7fa010cb-83f1-4f8f-8d67-fd5f5e795a1b",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes that CaM serves as a regulatory subunit of CaV1, CaV2, and NaV1 channels through a conserved carboxy-tail CI module, providing dynamic Ca2+-feedback that manifests as CDI or CDF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C35-C38 are well-established background knowledge supported by multiple citations to prior work. These claims provide the foundational context for the study and are appropriately referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "1301a3a6-dc7e-4205-a0f0-58181bae8c93",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Stac proteins (stac1, stac2, stac3) selectively suppress CDI of CaV1 family channels (CaV1.2, CaV1.3S, CaV1.443*) with high statistical significance (p<10^-4).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C10 provide robust experimental evidence with appropriate statistical tests and significant p-values. The data in Figure 1 and supplements demonstrate consistent CDI suppression across multiple CaV1 isoforms and stac variants, supporting the selectivity claim C3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "44f8461b-fdc0-49a6-a3eb-3a1781f55601",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Stac2 does not alter Ca2+-dependent regulation of CaV2 family channels (CaV2.1, CaV2.2, CaV2.3), demonstrating selectivity for CaV1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13 are supported by experimental data showing preservation of CDF in CaV2.1 and CDI in CaV2.2 and CaV2.3 despite stac2 co-expression. This negative control data strengthens the selectivity argument for CaV1 modulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "37415f6a-ec3d-4ad3-8972-4a549170cef5",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Stac overexpression does not disrupt CDI of NaV1.4 channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C14 is supported by Ca2+ uncaging experiments showing preserved NaV1.4 CDI with stac overexpression. This further demonstrates the selectivity of stac for CaV1 over NaV1 channels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "0b989525-6ff5-4eb3-975c-e2f94823c8a3",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Stac3 binds to CaV1.3 holo-channels and CI module with high affinity, preferentially interacting with the PCI segment (Kd~0.58 \u03bcM) over the IQ domain (Kd~6.67 \u03bcM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C17, C18 are supported by FRET 2-hybrid binding data showing quantitative affinity measurements. The ~10-fold difference in binding affinity between PCI and IQ domains is clearly demonstrated, identifying the PCI segment as the primary stac binding site.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "1f416eda-75d8-4f7d-b124-1a709e0cd1d0",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Transfer of CaV1.3 CI module to CaV2.3 confers stac-mediated CDI suppression, demonstrating the CI module is necessary for stac function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C19 is supported by chimeric channel experiments showing that CaV2.3/1.3 CI exhibits stac-sensitive CDI suppression (p=4.7\u00d710^-4), while wildtype CaV2.3 does not. This gain-of-function experiment provides strong evidence for the necessity of the CI module.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "0ddd77bb-a3f0-4b5f-be47-9f5fdd888c31",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Stac suppresses CDI of CaM-tethered CaV1 channels through an allosteric mechanism that locks channels in a high PO configuration without displacing CaM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24 and C58 are supported by experiments with CaM-tethered channels showing CDI suppression despite millimolar local CaM concentrations, FRET data showing preserved CaM binding with stac3 co-expression, and single-channel recordings demonstrating stabilization of high PO gating mode. This comprehensive evidence strongly supports an allosteric mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "646f6f75-4343-4ee9-abca-15d237eeed17",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A minimal U-domain within the stac2 linker region (residues 200-208, particularly KVD, PVY, and ETL) is necessary and sufficient for CDI suppression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 are supported by domain deletion experiments showing the linker region is sufficient (C25, C26) and alanine scanning mutagenesis identifying critical residues (C27, C28). The bioinformatic conservation analysis and functional validation provide strong evidence for the U-domain as the minimal effector motif.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "35d7a01a-7996-48b6-8c2a-595231044986",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "U-peptide reduces CDI in native cardiac ventricular myocytes and prolongs action potential duration from 277.9\u00b131.37 ms to 740.1\u00b1105.49 ms, with evidence of endogenous stac2 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 are supported by experiments showing U-peptide effects on native L-type currents and action potentials in guinea pig ventricular myocytes. Claims C60-C62 provide immunohistochemistry and western blot evidence for endogenous stac2 expression. However, the physiological relevance is somewhat uncertain given the weak t-tubular localization and the use of peptide overexpression rather than manipulation of endogenous stac levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "34e2fbc0-40bc-42c2-8d86-c2a5d57744db",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Fhf1b selectively abolishes CDI of NaV1.4 channels but spares CaV1.3 CDI, demonstrating selectivity for NaV1 family.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 are supported by Ca2+ uncaging experiments showing fhf1b abolishes NaV1.4 CDI while preserving CaV1.3 CDI. This demonstrates the selectivity of fhf for NaV1 channels, paralleling the selectivity of stac for CaV1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "dfefae9f-1f6a-412f-b961-5af5c2c57c2b",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Fhf reduces CDI of CaM-tethered NaV1.4 through an allosteric mechanism, with structural divergence in the fhf binding interface explaining selectivity for NaV1 over CaV1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C33 is supported by experiments with NaV1.4-CaM showing fhf1b reduces CDI despite tethered CaM. Claims C63-C65 provide structural context from prior work and structural analysis showing conserved EF hand segments but divergent fhf binding interfaces that would create steric clashes with CaV1.1, explaining selectivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "af8d9ccc-0353-4d29-ba0c-9388e083940e",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Insertion of an RxxK motif into CaV1.3 preIQ domain confers synthetic switching of CaM regulation by Mona SH3 domain, demonstrating the feasibility of engineering synthetic modulators.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, and C34 are supported by experiments showing that wildtype CaV1.3 is insensitive to Mona SH3, but CaV1.3RxxK exhibits marked CDI suppression with Mona SH3 co-expression. This proof-of-concept demonstrates the modularity of the CI regulatory mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "6f1419bf-dd10-421e-b9a5-c36c130855dc",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Ca2+-regulation of CaV and NaV channels is critical for cardiac electrical stability, neuronal rhythmicity, synaptic plasticity, and muscle excitability, with aberrant regulation underlying various pathologies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C46 are well-established physiological and pathophysiological context supported by appropriate citations to prior work. These claims provide important motivation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    },
+    {
+      "id": "7d442a40-83a1-4c83-88bb-38eb6e600747",
+      "content_id": "c1a4b098-9166-472f-95db-1b5f752ae396",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior work has established that stac proteins are structural modulators of CaV1 with tissue-specific expression, and fhf proteins are intracellular regulators of NaV channels with links to neurological and cardiac diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C57 provide comprehensive background on stac and fhf proteins from prior literature, appropriately cited. These claims establish the known functions and expression patterns that motivated the current investigation of Ca2+-regulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:19:22.623813Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e31e324d-0115-4a37-8d2a-465eaa5489f2",
+      "result_id": "7fa010cb-83f1-4f8f-8d67-fd5f5e795a1b"
+    },
+    {
+      "claim_id": "ede5d5e2-4daa-4774-88e0-b014d46eaf8b",
+      "result_id": "7fa010cb-83f1-4f8f-8d67-fd5f5e795a1b"
+    },
+    {
+      "claim_id": "db927c89-2926-4d47-a5d4-b59b4e19f25e",
+      "result_id": "7fa010cb-83f1-4f8f-8d67-fd5f5e795a1b"
+    },
+    {
+      "claim_id": "e0d66c58-9f45-4818-87dc-2d22534bc2da",
+      "result_id": "7fa010cb-83f1-4f8f-8d67-fd5f5e795a1b"
+    },
+    {
+      "claim_id": "42bdc9f8-bba7-4754-8d47-a4823323d571",
+      "result_id": "7fa010cb-83f1-4f8f-8d67-fd5f5e795a1b"
+    },
+    {
+      "claim_id": "6223acb8-23c0-4c94-90fa-c1a83ae36a48",
+      "result_id": "7fa010cb-83f1-4f8f-8d67-fd5f5e795a1b"
+    },
+    {
+      "claim_id": "56347c95-59f1-46bb-be07-ef23e963b685",
+      "result_id": "1301a3a6-dc7e-4205-a0f0-58181bae8c93"
+    },
+    {
+      "claim_id": "090f5d13-535e-406c-bb68-2770c10f7756",
+      "result_id": "1301a3a6-dc7e-4205-a0f0-58181bae8c93"
+    },
+    {
+      "claim_id": "1fed584e-7938-4c0b-8622-b3289f9fb3e7",
+      "result_id": "1301a3a6-dc7e-4205-a0f0-58181bae8c93"
+    },
+    {
+      "claim_id": "2eeb9c49-7031-4fc5-bbe9-ac41e3e8276f",
+      "result_id": "1301a3a6-dc7e-4205-a0f0-58181bae8c93"
+    },
+    {
+      "claim_id": "431b4630-4b7f-49a5-980f-b3a47dca2913",
+      "result_id": "1301a3a6-dc7e-4205-a0f0-58181bae8c93"
+    },
+    {
+      "claim_id": "d24d9df0-fc21-404a-9943-7cbc351fb770",
+      "result_id": "44f8461b-fdc0-49a6-a3eb-3a1781f55601"
+    },
+    {
+      "claim_id": "b1ae4792-9439-4bd4-a413-72ee2577bacb",
+      "result_id": "44f8461b-fdc0-49a6-a3eb-3a1781f55601"
+    },
+    {
+      "claim_id": "4f4ebb57-b2fa-40c4-a760-1ad4c3af4d9a",
+      "result_id": "44f8461b-fdc0-49a6-a3eb-3a1781f55601"
+    },
+    {
+      "claim_id": "21964ef1-07fc-4d18-95ac-7f91c93b1201",
+      "result_id": "37415f6a-ec3d-4ad3-8972-4a549170cef5"
+    },
+    {
+      "claim_id": "d55e0eb4-2c43-4565-88ef-82a65b81756e",
+      "result_id": "0b989525-6ff5-4eb3-975c-e2f94823c8a3"
+    },
+    {
+      "claim_id": "26e610ff-ddf6-4a6c-b883-bceaf8df52cf",
+      "result_id": "0b989525-6ff5-4eb3-975c-e2f94823c8a3"
+    },
+    {
+      "claim_id": "6e6827ca-8786-46c1-810f-7aedd6a62254",
+      "result_id": "0b989525-6ff5-4eb3-975c-e2f94823c8a3"
+    },
+    {
+      "claim_id": "ec5b8646-f2eb-4c52-9727-0d1ea84c88b8",
+      "result_id": "1f416eda-75d8-4f7d-b124-1a709e0cd1d0"
+    },
+    {
+      "claim_id": "0c4a498d-630c-49b8-a547-528ec94e93a5",
+      "result_id": "0ddd77bb-a3f0-4b5f-be47-9f5fdd888c31"
+    },
+    {
+      "claim_id": "70e9897d-a5b7-4a49-b92a-c6d69c3069c6",
+      "result_id": "0ddd77bb-a3f0-4b5f-be47-9f5fdd888c31"
+    },
+    {
+      "claim_id": "685a8be8-41c8-4b1e-b2bd-c328b334a068",
+      "result_id": "0ddd77bb-a3f0-4b5f-be47-9f5fdd888c31"
+    },
+    {
+      "claim_id": "7117e25d-384f-4093-8744-139d7883a096",
+      "result_id": "0ddd77bb-a3f0-4b5f-be47-9f5fdd888c31"
+    },
+    {
+      "claim_id": "840b9774-3ced-46d7-ac30-9282aa879713",
+      "result_id": "0ddd77bb-a3f0-4b5f-be47-9f5fdd888c31"
+    },
+    {
+      "claim_id": "2dac253a-6e41-4b20-af3f-bd648198d4c0",
+      "result_id": "0ddd77bb-a3f0-4b5f-be47-9f5fdd888c31"
+    },
+    {
+      "claim_id": "77a615bb-ec85-4802-9f6c-11ba1a87aa86",
+      "result_id": "646f6f75-4343-4ee9-abca-15d237eeed17"
+    },
+    {
+      "claim_id": "724c9769-1fc1-43c8-9399-6676a6631603",
+      "result_id": "646f6f75-4343-4ee9-abca-15d237eeed17"
+    },
+    {
+      "claim_id": "ad470f18-6a11-4cd7-a2f7-c9694c708cf7",
+      "result_id": "646f6f75-4343-4ee9-abca-15d237eeed17"
+    },
+    {
+      "claim_id": "7c5f271a-1c1c-4c4b-b837-c80e7fb16ec2",
+      "result_id": "646f6f75-4343-4ee9-abca-15d237eeed17"
+    },
+    {
+      "claim_id": "638dbf76-8b43-4cfb-a260-c00ca7811c45",
+      "result_id": "35d7a01a-7996-48b6-8c2a-595231044986"
+    },
+    {
+      "claim_id": "48e91bd3-5d91-4f11-b09f-85d4308ceaa7",
+      "result_id": "35d7a01a-7996-48b6-8c2a-595231044986"
+    },
+    {
+      "claim_id": "2a8e0c57-be14-4978-a3c3-d5b6a1dfe7ec",
+      "result_id": "35d7a01a-7996-48b6-8c2a-595231044986"
+    },
+    {
+      "claim_id": "855e7b7f-4e64-40a6-a571-6e7b3b72f2a6",
+      "result_id": "35d7a01a-7996-48b6-8c2a-595231044986"
+    },
+    {
+      "claim_id": "66d489fb-b36b-4298-99df-4f64d596ac1f",
+      "result_id": "35d7a01a-7996-48b6-8c2a-595231044986"
+    },
+    {
+      "claim_id": "9495c368-e6bd-420a-8367-a5093b42d40d",
+      "result_id": "34e2fbc0-40bc-42c2-8d86-c2a5d57744db"
+    },
+    {
+      "claim_id": "df9ee2fe-e59f-4f1b-bebc-2e739913deb5",
+      "result_id": "34e2fbc0-40bc-42c2-8d86-c2a5d57744db"
+    },
+    {
+      "claim_id": "681d8a2a-24e6-4c00-b88c-84eefeb7dbd0",
+      "result_id": "34e2fbc0-40bc-42c2-8d86-c2a5d57744db"
+    },
+    {
+      "claim_id": "575bce97-ac81-4529-998f-64567b32ad26",
+      "result_id": "34e2fbc0-40bc-42c2-8d86-c2a5d57744db"
+    },
+    {
+      "claim_id": "9cf056f8-bbdf-4bb8-b6d0-8a5e6da6fc01",
+      "result_id": "dfefae9f-1f6a-412f-b961-5af5c2c57c2b"
+    },
+    {
+      "claim_id": "7df35ba6-5368-4c6e-a2fe-e01900c115fa",
+      "result_id": "dfefae9f-1f6a-412f-b961-5af5c2c57c2b"
+    },
+    {
+      "claim_id": "f594ada0-6a79-4b68-aae3-c66e3ffee356",
+      "result_id": "dfefae9f-1f6a-412f-b961-5af5c2c57c2b"
+    },
+    {
+      "claim_id": "c70e5e9d-e9fb-42cd-a44a-5d4e70f129f7",
+      "result_id": "dfefae9f-1f6a-412f-b961-5af5c2c57c2b"
+    },
+    {
+      "claim_id": "29bd460e-b54c-41b3-a5b6-38a0adccac8f",
+      "result_id": "af8d9ccc-0353-4d29-ba0c-9388e083940e"
+    },
+    {
+      "claim_id": "e732071a-109e-4a43-b13c-f2c3481c85cc",
+      "result_id": "af8d9ccc-0353-4d29-ba0c-9388e083940e"
+    },
+    {
+      "claim_id": "6bc296ac-1dc0-426a-8e85-6c8f0b192247",
+      "result_id": "af8d9ccc-0353-4d29-ba0c-9388e083940e"
+    },
+    {
+      "claim_id": "65037681-314c-49a0-8776-0f17f9ccb968",
+      "result_id": "6f1419bf-dd10-421e-b9a5-c36c130855dc"
+    },
+    {
+      "claim_id": "11d954a9-9afa-4abb-ac62-d24f798fc425",
+      "result_id": "6f1419bf-dd10-421e-b9a5-c36c130855dc"
+    },
+    {
+      "claim_id": "2929da40-99c4-4108-9fe4-f97e69924128",
+      "result_id": "6f1419bf-dd10-421e-b9a5-c36c130855dc"
+    },
+    {
+      "claim_id": "731348e6-33b4-467c-859d-7bbae4fbb875",
+      "result_id": "6f1419bf-dd10-421e-b9a5-c36c130855dc"
+    },
+    {
+      "claim_id": "25745280-486a-4206-b6ff-49730c4f1bf0",
+      "result_id": "6f1419bf-dd10-421e-b9a5-c36c130855dc"
+    },
+    {
+      "claim_id": "f34845a2-a1c3-4d9a-9b31-cc0868565515",
+      "result_id": "6f1419bf-dd10-421e-b9a5-c36c130855dc"
+    },
+    {
+      "claim_id": "9b60eec1-814d-4f9b-96f6-109a700488c6",
+      "result_id": "6f1419bf-dd10-421e-b9a5-c36c130855dc"
+    },
+    {
+      "claim_id": "b84d41c9-185e-4427-ba0c-9c5bc25c0bac",
+      "result_id": "6f1419bf-dd10-421e-b9a5-c36c130855dc"
+    },
+    {
+      "claim_id": "2e845d4e-5f6a-49a1-ad8e-28bedd4465bf",
+      "result_id": "7d442a40-83a1-4c83-88bb-38eb6e600747"
+    },
+    {
+      "claim_id": "1e2c4d18-21d4-4298-a103-2fa8cb4b5f19",
+      "result_id": "7d442a40-83a1-4c83-88bb-38eb6e600747"
+    },
+    {
+      "claim_id": "460ce8d5-1436-4e2f-983b-cf14bb487f93",
+      "result_id": "7d442a40-83a1-4c83-88bb-38eb6e600747"
+    },
+    {
+      "claim_id": "47bd2eb2-9a6a-4af0-923c-6ff6154374ff",
+      "result_id": "7d442a40-83a1-4c83-88bb-38eb6e600747"
+    },
+    {
+      "claim_id": "95bda14a-e3bb-47dd-a87f-bb72222eb5f2",
+      "result_id": "7d442a40-83a1-4c83-88bb-38eb6e600747"
+    },
+    {
+      "claim_id": "810e1288-2508-4428-b8b5-b20a2f992303",
+      "result_id": "7d442a40-83a1-4c83-88bb-38eb6e600747"
+    },
+    {
+      "claim_id": "ec5c7494-972a-4a95-b4bf-c1c55036f583",
+      "result_id": "7d442a40-83a1-4c83-88bb-38eb6e600747"
+    },
+    {
+      "claim_id": "190b30b1-b7d6-46d8-8ccc-ad04d49135e1",
+      "result_id": "7d442a40-83a1-4c83-88bb-38eb6e600747"
+    },
+    {
+      "claim_id": "f564fbb4-904d-41fd-af2c-a15e52c6de70",
+      "result_id": "7d442a40-83a1-4c83-88bb-38eb6e600747"
+    },
+    {
+      "claim_id": "3d11e71b-fb41-4373-b677-67e5efafc294",
+      "result_id": "7d442a40-83a1-4c83-88bb-38eb6e600747"
+    },
+    {
+      "claim_id": "3e2a7ce0-4e5e-4253-9f01-d93dcf35ca47",
+      "result_id": "7d442a40-83a1-4c83-88bb-38eb6e600747"
+    }
+  ],
+  "comparisons": []
+}

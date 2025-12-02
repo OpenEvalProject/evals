@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C95"
+    ],
+    "result": "The optimized 3D fluorescence co-localization method achieves ~10 nm accuracy for mean separations larger than 18 nm. Accuracy depends critically on achieving small standard deviations in fluorescence centroid determination (CDsd ~4-8 nm), chromatic aberration (CAsd ~7-18 nm), and using correct coverslip thickness (#1.5, 0.17 mm). Computer simulations demonstrate that large SDs in these parameters significantly increase 3D measurements from their true values as a power function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6, C62-C67, C72-C75, and C95 collectively establish the method's accuracy through experimental validation (C28-C32, C36), computer simulations (C62-C67, C75), and comparison with known structures (C35-C41, C97). The method successfully reproduces published values (C28-C32 match prior studies) and predicts the Ndc80 complex length (~54 nm) matching in vitro measurements (55-60 nm, C35-C36). Simulations quantify error contributions and validate the correction approach (C63, C66-C67). The ~10 nm accuracy claim is well-supported by convergent evidence from multiple experimental systems and computational validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C47",
+      "C8",
+      "C9",
+      "C37",
+      "C96",
+      "C97"
+    ],
+    "result": "At metaphase, the protein linkage between CENP-A (inner kinetochore) and the Ndc80 complex microtubule-binding domain (outer kinetochore) is ~90 nm. The Ndc80 complex appears fully extended and exhibits the same subunit structure in vivo as found in vitro by crystallography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C47 report the ~90 nm CENP-A to Hec1-9G3 separation, supported by experimental data in Figure 5 and Figure 5\u2014source data 1. Claims C8-C9, C37 regarding Ndc80 extension are supported by measurements showing Delta and ML3D values are nearly identical (C36-C37), indicating alignment along the kinetochore-microtubule axis. The in vivo structure matches in vitro crystallography data (C35, C38-C41), validated by measurements of individual subunit separations in Figure 4. These findings represent the primary biological conclusions of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C74",
+      "C105"
+    ],
+    "result": "Coverslip thickness deviating from 0.17 mm produces z-axis chromatic aberration (Z-offset) independent of focal depth. #1.5 coverslips (mean 0.17 mm) show Z-offset ~\u00b110 nm, while #1 coverslips (0.15 mm) show -19 to -29 nm and #2 coverslips (0.22 mm) show +29 to +46 nm. Only Z-offset >30 nm significantly affects 3D measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 are supported by experimental measurements in Table 3B and Figure 6, showing systematic relationship between coverslip thickness and Z-offset. The measurements are consistent with optical theory (Gibson and Lanni, 1992 analysis mentioned). Claim C105 is validated by computer simulations in Figure 9C. The linear relationship between coverslip thickness and Z-offset (Figure 6\u2014figure supplement 1, R\u00b2=0.897) provides strong quantitative support. This represents a critical methodological finding for achieving accurate measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C45",
+      "C46",
+      "C18"
+    ],
+    "result": "The method yields mean separations for CENP-T(M) to Hec1-9G3 of Delta=60\u00b17.5 nm, S(2D)=63\u00b111.2 nm, ML2D=62\u00b111.3 nm, S(3D)=69\u00b112.3 nm, and ML3D=66\u00b112.5 nm, nearly identical to previous studies using Delta and CICADA methods. All 2D and Delta values are nearly identical (usually <3 nm difference), and 3D measurements are only ~5 nm larger.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 report specific measurements shown in Figure 3A-B and supported by citations to Fuller and Straight 2012, Suzuki et al. 2014, and Wan et al. 2009. Claims C45-C46 summarize the consistency across methods. The close agreement between methods (C18) and with published values validates the approach. The angular measurements (C33-C34) show mean values near zero with SDs of ~20-23\u00b0, consistent with measurement along the K-K axis. This validation against known standards is essential for establishing method credibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C19",
+      "C20"
+    ],
+    "result": "Smith et al. 2016 reported 3D separations ~42 nm larger than the current study. Computer simulations using estimated CDsd (~5\u00d7 larger: 22,22,44 nm vs 4,4,8 nm) and reported CAsd (~2-3\u00d7 larger: 26,23,43 nm vs 9,7.5,18 nm) from Smith et al. reproduce their larger measurements, explaining the discrepancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 are supported by comparative analysis in Table 7 and simulations in Figure 9D-E. The CDsd estimation from Smith et al.'s Delta SD (C78) is methodologically sound. Simulations using these larger SDs reproduce Smith et al.'s measurements (C80, Figure 9D), providing a mechanistic explanation for the discrepancy. The analysis of angular SDs (C81, Figure 9E) provides additional supporting evidence. This represents important critical evaluation of conflicting prior work (C19-C20) and validates the current method's superiority.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "PFA fixation without detergent (Method 1) produces no shrinkage and yields identical mean separations to GA fixation, but GA fixation reduces antibody signal by 35-60% compared to PFA. Pre-extraction with Triton X-100 or PFA with Triton X-100 causes significant shrinkage (Methods 3, 8, 9), while GA with Triton X-100 does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61, C91-C94 are supported by systematic comparison of nine fixation methods in Figure 7 and Table 5. The signal reduction with GA (C56-C57, Figure 7B) is quantified and statistically significant. The lack of shrinkage with standard PFA (C61, C91) and shrinkage with detergent methods (C59-C60) are demonstrated in Table 5. The findings contradict Magidson et al. 2016's conclusion about PFA shrinkage, but the authors show that study used PFA+Triton (Method 9), which does cause shrinkage. This resolves an important methodological controversy and provides practical guidance (C93-C94).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Measurements of EGFP-tagged Ndc80 complex subunits show: Spc25-EGFP to Hec1-9G3 = 49-53 nm (Delta to ML3D); Spc24 C-terminus is located a few nm inside Spc25 C-terminus; Nuf2 CH-domain is a few nm inside Ndc80 N-terminal CH domain; Ndc80 C-terminus locates unexpectedly close to Spc24/Spc25 globular domains in vivo, possibly due to EGFP tag positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 are supported by experimental data in Figure 4 and Figure 4\u2014source data 1, with measurements from stable HeLa cell lines expressing EGFP-tagged proteins. The subunit relationships (C38-C41) match in vitro structural data (Valverde et al. 2016, Ciferri et al. 2008). The unexpected Ndc80 C-terminus position (C42) is clearly documented. However, claim C43 is speculative about the cause. The measurements successfully use the Ndc80 complex as a 'molecular ruler' to validate the method, though the C-terminus anomaly suggests a limitation of EGFP tagging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Computer simulations show that CDsd and CAsd cause about half to two-thirds of the measured SD in cells for 60-90 nm separations. The SDs in angles \u03b1 and \u03b2 are largest for small separations and inhibit maximum likelihood fit below S=~18 nm. Kinetochore-to-kinetochore variability (Ksd) is estimated at \u22645 nm, indicating the vast majority of kinetochores at metaphase have similar protein architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71, C88-C90 are supported by simulations in Table 6B and Figure 9\u2014source data 2. The comparison between simulated and experimental angular SDs (C69) provides quantitative validation. The Ksd estimation (C89) is based on simulations showing that Ksd\u22645 nm plus measurement errors yields the experimental SD of 12.5 nm. The conclusion about uniform kinetochore architecture (C90) is a reasonable inference from the low Ksd, though it represents an interpretation rather than direct measurement. The 18 nm lower limit (C70) is an important practical constraint on the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C26",
+      "C27",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Mean chromatic aberration values (CAx, CAy, CAz) are consistent between preparations. PBS embedding produces much larger CAz SD (48 nm) compared to ProLong Gold (~18 nm) due to spherical aberration from refractive index mismatch. Small gradients in CAx and CAy across the measurement field have no more effect than randomly distributed CA values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C26-C27 are supported by data in Table 1 and Figure 2\u2014figure supplement 1. The PBS vs ProLong Gold comparison (C26-C27) demonstrates the importance of refractive index matching. Claims C99-C102 are supported by Figure 2\u2014figure supplement 3 and simulation results. The finding that gradients don't affect accuracy more than random CA (C102) is important for validating the mean CA correction approach. These represent important methodological optimizations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C86",
+      "C87",
+      "C106"
+    ],
+    "result": "Selection of sister kinetochore pairs versus random individual kinetochores does not influence measurements. Mean measurements from 120 random kinetochores in a single cell are nearly identical to means from sister pairs across six cells. Only 10-15 kinetochores are needed to achieve the mean and SD typical of >150 kinetochores. The method produces nearly identical results from multiple samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C86 are supported by data in Table 2 showing identical values between selection methods. Claim C87 is supported by Figure 9\u2014figure supplement 1 demonstrating convergence with small sample sizes. Claim C106 is supported by consistency across multiple preparations (Figure 5\u2014source data 1). These findings validate the sampling strategy and demonstrate reproducibility, though they represent methodological validation rather than primary biological findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The method uses specific sample preparation (HeLa cells on #1.5 coverslips, PFA fixation without detergent, >100,000 photon counts per kinetochore, ProLong Gold mounting), imaging (confocal microscopy, 100\u00d7/1.4 NA objective, 64 nm pixels, 200 nm z-steps), and analysis procedures (3D Gaussian fitting, mean CA correction using Hec1-9G3-GR, maximum likelihood fitting for ML2D and ML3D).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23, C107-C117 describe the complete methodological protocol, supported by detailed Methods section and Figure 1. The photon count requirement (C23) is justified by citation to Thompson et al. 2002 for achieving CDsd ~5 nm. The use of Hec1-9G3-GR for CA correction (C111-C112) is well-documented. The maximum likelihood correction (C116-C117) is supported by citations to Churchman et al. 2005, 2006. These represent essential methodological details for reproducibility but are procedural rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C25",
+      "C35",
+      "C82",
+      "C83"
+    ],
+    "result": "Background knowledge claims about microscopy resolution limits, kinetochore biology, prior measurement methods (Delta, CICADA), and the Ndc80 complex structure from in vitro studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C20, C25, C35, C82-C83 represent established knowledge supported by appropriate citations. These provide necessary context but are not novel findings of this study. The citations appear accurate and appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "All kinetochores labeled by specific antibodies or EGFP exhibited Gaussian distributions with single peaks, indicating centroid measurements correspond to mean positions of fluorescently labeled protein epitopes within human kinetochores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 are supported by the observation of single-peaked Gaussian distributions in the data and citation to Joglekar et al. 2009 regarding stagger sensitivity. This validates that the measurements represent mean positions rather than being confounded by spatial staggering of multiple protein copies. However, this is a validation of assumptions rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Z-offset is a major source of error only if not produced by the specimen. It is not recommended to subtract Z-offset from Sz data since there could be a specimen contribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 represent methodological recommendations based on the analysis of Z-offset sources. The recommendation is conservative and appropriate given the difficulty in distinguishing specimen-derived from optical Z-offset. This is practical guidance rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C76",
+      "C98"
+    ],
+    "result": "General statements about the method's potential, utility, and the role of maximum likelihood correction in improving accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C76, C98 are general statements about the method's capabilities and utility. C76 regarding maximum likelihood correction is supported by citation to Churchman et al. 2005 and demonstrated in the results. These represent framing and concluding statements rather than specific findings.",
+    "result_type": "MINOR"
+  }
+]

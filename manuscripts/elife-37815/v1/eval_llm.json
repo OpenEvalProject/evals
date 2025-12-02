@@ -1,0 +1,394 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C33",
+      "C43"
+    ],
+    "result": "The study addresses a knowledge gap in understanding the algorithms underlying odor attraction in walking Drosophila melanogaster. While odor attraction is commonly used to relate neural function to behavior, the precise algorithms by which walking flies locate an odor source and how diverse motor programs work together remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C13, C33, and C43 consistently establish the motivation for the study by identifying a clear knowledge gap in the field. These claims are well-supported by the introduction and are consistent with the cited literature, providing appropriate context for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C50",
+      "C53",
+      "C54",
+      "C55",
+      "C73",
+      "C74"
+    ],
+    "result": "Walking Drosophila exhibit two distinct behavioral responses to apple cider vinegar: an ON response consisting of upwind orientation with faster and straighter trajectories during odor, and an OFF response consisting of slower, more curved trajectories (local search) after odor offset that persists for tens of seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C50, C53, C54, C55, C73, and C74 describe the primary behavioral findings supported by extensive data in Figure 1. The characterization of ON and OFF responses is well-documented with quantitative measurements of multiple motor parameters (upwind velocity, ground speed, angular velocity, curvature, turn probability) and appropriate statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "During odor presentation, flies significantly increase upwind velocity and ground speed while decreasing angular velocity and curvature after an initial peak corresponding to upwind orientation turns. Following odor offset, angular velocity increases while ground speed decreases, resulting in increased curvature and turn probability characteristic of local search.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C65 provide detailed quantitative characterization of motor parameters during ON and OFF responses. These claims are well-supported by data in Figure 1F-G with appropriate statistical tests (Wilcoxon signed rank paired test with Bonferroni correction). The interpretation of the initial peak as upwind orientation turns (C59) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Wind orientation requires antennal mechanoreceptors, while search behavior is driven solely by odor. Wind-blind flies (with stabilized antennae) show severely impaired directional responses but still modulate ground speed and curvature in response to odor, demonstrating that olfactory navigation depends on both multimodal processing (odor-gated upwind orientation) and direct transformation of odor signals into locomotor changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, and C77-C89 describe a well-designed manipulation experiment shown in Figure 2. The antenna stabilization approach is appropriately validated by citations (C77, C78), and the results clearly demonstrate the dissociation between wind-dependent directional responses and odor-dependent gait modulation. Statistical tests support the conclusions, though the sample size for wind-blind flies (n=13) is relatively small.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Both upwind velocity during odor and turn probability after offset increase with odor concentration between 0.01% and 1% but saturate or decrease at 10%. The responses are well-fit by a Hill function with Hill coefficient near 1 (1.03 for ON, 1.06 for OFF), consistent with odor transduction kinetics observed in olfactory receptor neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90, C91, C93, and C94 describe concentration-response relationships supported by data in Figure 3A-B. The Hill function fitting is appropriate and the Hill coefficients are precisely reported. Claim C95 about inhibitory glomeruli is speculative but appropriately qualified. The comparison to ORN transduction kinetics (C94) is well-supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "During gradual odor decreases (off-ramps), turn probability begins to increase as odor concentration decreases but peaks near baseline, suggesting sensitivity adaptation. Upwind velocity remains positive during off-ramps, indicating that ON and OFF responses can be driven at least partially at the same time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 describe responses to off-ramp stimuli shown in Figure 3C-D. The observation of gradual turn probability increase (C96, C97) is clearly visible in the data. The inference of sensitivity adaptation (C98) is reasonable given the data, though the mechanism is not directly tested. The observation of simultaneous ON and OFF responses (C99, C100) is supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Upwind velocity tracks odor fluctuations at low frequencies but becomes attenuated at higher frequencies (above ~1 Hz), suggesting low-pass filtering with a time constant slower than peripheral ORN encoding. Turn probability shows even stronger low-pass filtering. ON and OFF responses depend on odor history in different ways, with rapid fluctuations leading to elevated ON responses and suppressed OFF responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C113 describe temporal filtering properties demonstrated in Figure 3E-J. The frequency-dependent attenuation is clearly shown in the data. Controls ruling out artifacts (C107, C108, C109) strengthen the conclusions. The limitation to 1 Hz (C103) is appropriately acknowledged. The inference of different temporal dependencies for ON and OFF (C113) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Behavioral responses saturate above 1% ACV but are modulated by decreases from 10%, suggesting adaptation. A phenomenological model with adaptive compression followed by filtering (ACF model) outperforms other models and correctly predicts saturation, adaptation at high concentrations, and frequency-dependent attenuation. The ON model has a filtering time constant of 0.72 s and adaptation time constant of 9.8 s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C123 describe the ON model development and fitting shown in Figure 4. The model comparison is systematic and the ACF model clearly outperforms alternatives (C117). The model predictions match key features of the data (C118-C120). The time constants are precisely reported (C121, C122). The comparison to ORN encoding (C121) is appropriate. However, some timing discrepancies are acknowledged but not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "An OFF model with adaptive compression followed by differential filtering (ACF) outperforms alternatives and reproduces responses to odor ramps and frequency sweeps. The model has a slow filtering time constant of 4.84 s (accounting for selectivity to low frequencies) and adaptation time constant of 10.62 s. Models with adaptive compression followed by linear filtering provide good fits to behavioral dynamics over a wide range of stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C132 describe the OFF model development shown in Figure 4. The model comparison is systematic (C124) and the ACF model performs well (C125-C130). The time constants are precisely reported (C126, C127). The test on plume walk data (C128-C131) provides validation beyond the fitting data. The overall conclusion (C132) is well-supported, though some timing discrepancies remain unexplained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C133",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "A navigation model in which odor dynamics directly influence ground speed and turn probability through ON and OFF functions, combined with wind-direction-based turning, successfully reproduces fly behavior in miniature wind tunnels. The model captures responses of intact and wind-blind flies and can account for individual variability through scaling of ON and OFF functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C142 describe the navigation model shown in Figure 5. The model structure is clearly defined (C133) and supported by behavioral data (C136, C137). The model successfully reproduces key features of real fly behavior (C138-C140) and accounts for individual variability (C141). The validation across different conditions (intact, wind-blind, individual flies) strengthens the conclusions (C142).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "In a turbulent wind tunnel with a real odor plume, 56% of flies (37/66) successfully located the odor source, while 18% searched without finding the source and 15% moved downwind. Flies showed a downwind preference with wind only, which was reduced in the absence of wind.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C149 describe behavioral experiments in a turbulent plume shown in Figure 6. The construction of equivalent wind tunnels (C143) and validation of plume similarity (C144) are appropriate. The behavioral results (C145-C149) are clearly reported with specific percentages and sample sizes. The downwind preference observations (C145, C146) provide important controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Model flies produced trajectories similar to real flies in the turbulent plume, with 66% successfully finding the source using mean parameters (vs. 56% for real flies). Introducing variability in ON and OFF scaling decreased success to 45%, slightly worse than real flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C155 describe model performance in the turbulent plume shown in Figure 6. The model produces realistic trajectories (C150) with comparable success rates (C151, C154). The effect of introducing variability (C155) is interesting but results in worse performance than real flies, suggesting the model may not fully capture all aspects of fly behavior or that the variability implementation needs refinement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "In the turbulent plume, the ON function dominates within the odorized region while OFF responses occur at plume edges and near the source. Adaptive compression helps flies respond over greater distances. ON is more critical for success in the plume, while in a windless Gaussian gradient, ON and OFF contributions are more similar. ON and OFF responses have different impacts on success depending on environmental features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C166 describe spatial analysis of ON/OFF functions and their contributions to navigation shown in Figure 6J-M. The spatial distributions (C156-C158, C161, C162) are clearly shown in the data. The inference about adaptive compression (C159, C160) is reasonable. The systematic variation of ON and OFF strengths (C164, C165) provides insight into their relative contributions. The conclusion about environment-dependent contributions (C166) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Bilateral spatial comparisons across antennae can contribute to navigation if the gain is high enough (300 deg/s improves success from 67% to 76%), but with estimated physiological gain (40 deg/s) the contribution is minimal. Spatial information is insufficient without wind. Three forms of sensing\u2014flow (wind), temporal (OFF), and spatial (bilateral)\u2014can all contribute to finding an odor source, but their relative contributions depend on the environment and the animal's sensitivity to each measurement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C179 describe bilateral sensing simulations in Figure 7. The gain-dependent effects (C169, C170) are clearly demonstrated. The swapped antenna control (C171) and wind-blind simulation (C172) provide important tests. The conclusion about multiple forms of sensing (C178, C179) is well-supported. However, the large discrepancy between estimated physiological gain and the gain needed for significant effects (C169 vs C170) raises questions about the biological relevance of bilateral sensing in this context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "There is considerable variability between individual flies in ON and OFF responses. Motor parameters from the same individual across trials are correlated, while parameters from different individuals are not. Responses are slightly weaker during the first few trials but then remain stable across the experimental session.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 describe individual variability shown in Figure 1\u2014figure supplement 2. The correlation analysis (C67, C68) appropriately demonstrates individual consistency. The temporal stability analysis (C69, C70) is important for validating the experimental approach. These observations are well-supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Sighted flies (w1118) show ON and OFF responses similar to blind flies (norpA36), but the increase in angular velocity after odor offset appears weaker on average in sighted flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71 and C72 describe control experiments with sighted flies shown in Figure 1\u2014figure supplement 3. The observation of ON and OFF responses in sighted flies (C71) is well-supported. The weaker angular velocity increase (C72) is noted but not statistically tested in detail. This suggests vision may modulate search behavior, though the norpA36 allele itself could contribute to differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The miniature wind-tunnel paradigm allows precise control of wind (11.9 cm/s) and odor stimuli with rapid onset/offset kinetics delivered to freely walking blind flies (norpA36 mutants). Flies were starved 5 hr prior to experiments and tested for approximately 2 hr (ZT 2-4) in 70-second trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 describe the experimental apparatus and protocol shown in Figure 1 and Materials and methods. The apparatus design is well-described and validated with PID and anemometer measurements (C45, C46). The use of blind flies (C47) is appropriate for isolating olfactory responses. The experimental protocol (C48, C49) is clearly specified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C75",
+      "C76"
+    ],
+    "result": "The introduction establishes context by reviewing prior work on olfactory navigation across organisms, distinguishing between laminar and turbulent navigation strategies, and noting that walking flies encounter boundary layer plumes with different characteristics than airborne plumes. Previous studies have shown various odor-evoked behaviors in walking flies, but how these work together in complex environments remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C42 and C75-C76 provide background context supported by appropriate citations. The distinction between laminar and turbulent navigation (C14-C28) is well-established in the literature. The characterization of boundary layer plumes (C34-C37) is supported by citations. Previous findings on fly behavior (C39-C42, C75, C76) are appropriately cited. This background effectively motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "On trials without odor, flies tended to aggregate at the downwind end of the arena.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 describes a control observation shown in Figure 1D. This downwind preference in the absence of odor is clearly demonstrated and provides important context for interpreting odor-evoked behaviors. The observation is replicated in the turbulent wind tunnel (C145).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C180"
+    ],
+    "result": "Olfactory navigation in complex environments can be decomposed into several largely independent sensori-motor transformations, providing a foundation for investigating the neural basis of these components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C180 represents the overarching conclusion of the study. This is well-supported by the demonstration of distinct ON and OFF responses (Figures 1-3), their independence from wind sensing (Figure 2), successful phenomenological modeling (Figures 4-5), and performance in complex environments (Figures 6-7). The decomposition into independent components is validated by the model's ability to reproduce behavior.",
+    "result_type": "MAJOR"
+  }
+]

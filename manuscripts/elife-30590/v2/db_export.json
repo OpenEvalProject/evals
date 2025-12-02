@@ -1,0 +1,2058 @@
+{
+  "submission": {
+    "id": "989d1971-2729-4736-894d-61c46bd2ea54",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:27:08.902083Z",
+    "updated_at": "2025-12-01T22:27:08.902083Z"
+  },
+  "content": [
+    {
+      "id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "submission_id": "989d1971-2729-4736-894d-61c46bd2ea54",
+      "content_type": "manuscript",
+      "content_text": "# A picorna-like virus suppresses the N-end rule pathway to inhibit apoptosis\n\n## Authors\n\n- Zhaowei Wang<sup>1</sup>\n- Xiaoling Xia<sup>1</sup>\n- Xueli Yang<sup>1</sup>\n- Xueyi Zhang<sup>1</sup>\n- Yongxiang Liu<sup>1</sup>\n- Di Wu<sup>1</sup>\n- Yuan Fang<sup>1</sup>\n- Yujie Liu<sup>1</sup>\n- Jiuyue Xu<sup>2</sup>\n- Yang Qiu<sup>2</sup>\n- Xi Zhou<sup>1</sup> ([ORCID: 0000-0002-3846-5079](https://orcid.org/0000-0002-3846-5079)) \u2020\n\n### Affiliations\n\n1. State Key Laboratory of Virology, College of Life Sciences Wuhan University Wuhan China\n2. State Key Laboratory of Virology Wuhan Institute of Virology, Chinese Academy of Sciences Wuhan China\n3. Guangzhou Key Laboratory of Insect Development Regulation and Application Research Institute of Insect Science and Technology & School of Life Sciences, South China Normal University Guangzhou China\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe N-end rule pathway is an evolutionarily conserved proteolytic system that degrades proteins containing N-terminal degradation signals called N-degrons, and has emerged as a key regulator of various processes. Viruses manipulate diverse host pathways to facilitate viral replication and evade antiviral defenses. However, it remains unclear if viral infection has any impact on the N-end rule pathway. Here, using a picorna-like virus as a model, we found that viral infection promoted the accumulation of caspase-cleaved Drosophila inhibitor of apoptosis 1 (DIAP1) by inducing the degradation of N-terminal amidohydrolase 1 (NTAN1), a key N-end rule component that identifies N-degron to initiate the process. The virus-induced NTAN1 degradation is independent of polyubiquitylation but dependent on proteasome. Furthermore, the virus-induced N-end rule pathway suppression inhibits apoptosis and benefits viral replication. Thus, our findings demonstrate that a virus can suppress the N-end rule pathway, and uncover a new mechanism for virus to evade apoptosis.\n\n## Introduction\n\nApoptosis is a highly conserved biological process throughout evolution and is important for normal tissue development and removal of obsolete, abnormal or potentially harmful cells. The apoptotic pathway shows sensitivity to various stimuli and can lead to cysteinyl aspartate protease (caspase) dependent proteolytic digestion and further cell death (Benedict et al., 2002; Kumar, 2007). Various viruses, including vertebrate and invertebrate viruses, can induce apoptosis in infected cells or organisms (Everett and McFadden, 1999; Lamiable et al., 2016; Lannan et al., 2007; Liu et al., 2013; Nainu et al., 2015; Settles and Friesen, 2008). Apoptosis is generally considered as an efficient antiviral defense mechanism by clearing virus-infected cells, while many viruses employ different strategies to evade apoptosis at various levels (Benedict et al., 2002; Everett and McFadden, 1999; Kim et al., 2014a, 2013).\n\nThe fruit fly Drosophila melanogaster has made a great contribution to study the regulation of apoptosis. Similar to other organisms, the caspase proteases are the central executioners of apoptosis in Drosophila. The fly caspase-9 homolog Dronc is the only known initiator caspase that is activated following a variety of apoptotic stimuli and can be activated by auto-cleavage (Muro et al., 2004). Activated Dronc can further cleave and activate various effector caspases such as DrICE and DCP-1, leading to apoptotic induction. The initiator caspase Dronc and the effector caspases DrICE and DCP-1 are negatively regulated by DIAP1 (Hawkins et al., 1999, 2000; Li et al., 2011; Meier et al., 2000; Wilson et al., 2002).\n\nDIAP1 shares several properties in structure and function with mammalian X-linked inhibitor of apoptosis (XIAP) and can block cell death in response to multiple stimuli (Hay et al., 1995). As a central cell death regulator, DIAP1 is regulated by several distinct ways. For instance, Drosophila Reaper, Hid and Grim (also referred to RHG proteins) can inhibit the apoptosis suppression activity of DIAP1 or induce the degradation of DIAP1 (Huh et al., 2007; Wang et al., 1999; Yoo et al., 2002). Besides, DIAP1 can be auto-ubiquitylated via its C-terminal RING ubiquitin ligase domain (Wilson et al., 2002) or be ubiquitylated by other E3 ubiquitin ligases such as DIAP2 (Herman-Bachinsky et al., 2007), followed by proteasome-dependent degradation. It has also been reported that DIAP1 can be degraded by the N-end rule pathway. In this process, DIAP1 is cleaved at Asp20 by caspase to expose an N-terminal Asn residue. The exposed N-terminal Asn can be recognized and converted into Asp by NTAN1, and further catalyzed by Arginine-tRNA-protein transferase (ATE1) (Ditzel et al., 2003). Such Arg-conjugated proteins can be recognized and ubiquitylated by the N-end rule specific E3 ubiquitin ligase, UBR1, and then subject to fast degradation (Ditzel et al., 2003).\n\nThe N-end rule pathway is a proteasome dependent proteolytic system that recognizes and degrades proteins containing N-degrons (Gibbs et al., 2014a; Tasaki et al., 2012; Varshavsky, 2011; Tasaki and Kwon, 2007). This pathway has been found to be evolutionarily conserved from prokaryotic to eukaryotic organisms, including bacteria (Tobias et al., 1991), yeast (Bachmair et al., 1986), plant (Graciet et al., 2009; Yoshida et al., 2002), invertebrate (Ditzel et al., 2003), and vertebrate (Davydov and Varshavsky, 2000; Lee et al., 2005; Park et al., 2015). The N-end rule pathway relates the half-lives of proteins with the nature of their N-termini (Gibbs et al., 2014a; Tasaki et al., 2012; Varshavsky, 2011; Tasaki and Kwon, 2007). A functional N-degron can either be an unmodified destabilizing N-terminal residue or an N-terminally modified (deamidated, oxidized, and/or arginylated) pre-N-degron (Varshavsky, 2011; Tasaki and Kwon, 2007). In the case of DIAP1, caspase cleaves DIAP1 to expose an N-terminal Asn residue (Ditzel et al., 2003). This Asn residue is a classical pre-N-degron for N-terminal deamidation by NTAN1, followed by arginylation by ATE1. It has been reported that the N-end rule pathway participates in a large number of important cellular processes, such as G protein signaling (Davydov and Varshavsky, 2000; Lee et al., 2005; Park et al., 2015), chromosome stability (Rao et al., 2001), apoptosis (Ditzel et al., 2003), oxygen and nitric oxide sensing (Gibbs et al., 2014b), degradation of neurodegeneration-associated protein fragments (Brower et al., 2013) and etc. Moreover, the N-end rule pathway has been reported to interact with some viral proteins. For instance, Sindbis virus nsP4 and HIV-1 integrase are N-end rule substrates (de Groot et al., 1991; Mulder and Muesing, 2000), and human papillomavirus E7 binds to UBR4, the E3 ligase in the N-end rule pathway (White et al., 2012). However, it remains unclear if viral infection has any impact on this pathway.\n\nHere, we report that the infection by a picorna-like virus can induce apoptosis in infected Drosophila cells, and the apoptotic pathway plays an antiviral role in Drosophila. Intriguingly, we found that the viral infection promoted the accumulation of caspase-cleaved, smaller form of DIAP1, which is potent for apoptosis inhibition, by inhibiting the N-terminal Asn deamidation of the cleaved DIAP1. Moreover, we uncovered that the viral infection could induce the degradation of NTAN1, which catalyzes the N-terminal Asn deamidation of the cleaved, smaller DIAP1. And the virus-induced NTAN1 degradation is independent of polyubiquitylation but dependent on proteasome. Furthermore, our study revealed that the virus-induced N-end rule pathway suppression could efficiently block apoptosis and facilitates viral replication. In summary, our findings demonstrate for the first time that a virus can suppress the N-end rule pathway, and uncover a new mechanism for virus to evade apoptosis.\n\n## Results\n\n### Viral infection induces apoptosis in Drosophila\n\nPrevious studies showed that various viruses, including Autographa californica nucleopolyhedrovirus (AcMNPV), Flock House Virus (FHV), and Drosophila C virus (DCV), can induce apoptosis in Drosophila cells or adult flies (Lamiable et al., 2016; Lannan et al., 2007; Liu et al., 2013; Nainu et al., 2015; Settles and Friesen, 2008). Among these viruses, DCV, which is a picorna-like virus assigned to the family Dicistroviridae of the order Picornavirales, is a natural pathogen of Drosophila and a classic model virus (Johnson and Christian, 1998). To confirm whether DCV infection can also induce apoptosis in our system, we performed a flow cytometry assay using Annexin V-allophycocyanin (APC)/propidium iodide (PI) double staining in cultured Drosophila S2 cells. Annexin V staining can detect the surface exposure of phosphatidylserine, a hallmark of apoptosis, while PI staining can identify dead cells. Consistent with previous study (Lamiable et al., 2016), DCV-infected cells showed increased Annexin V and PI staining as infection progressed when comparing with mock infected cells (Figure 1A and B). Moreover, we used terminal deoxynucleotide transferase-mediated dUTP nick-end labeling (TUNEL) staining to detect apoptotic cells. In this assay, DCV-infected cells also showed an increase in apoptotic cell death comparing with mock infected cells (Figure 1C). In addition, previous study has reported that the transcriptions of RHG genes were up-regulated by the AcMNPV or FHV infection in adult flies (Liu et al., 2013). Our data showed that DCV infection induced RHG gene transcription in Drosophila S2 cells (Figure 1D). The level of reaper mRNA was significantly induced at 6 hr post infection (h.p.i) of DCV, while a significant induction of hid or grim mRNA can be detected at 12 h.p.i (Figure 1D). Altogether, DCV infection is able to induce the transcription of RHG genes and apoptosis in cultured Drosophila cells.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/30590/elife-30590-fig1-v2.jpg)\n\n**Figure 1.:** (A) Cultured S2 cells were mock infected for 24 hr or infected with DCV (MOI\u00a0=\u00a05) for indicated time. Annexin-V-APC/PI double staining and flow cytometry assay was performed to quantify viable (Annexin-V-APC-/PI-), early apoptotic (Annexin-V-APC+/PI-) and late apoptotic cells (Annexin-V-APC+/PI+). (B) The percentage of early apoptotic cells and late apoptotic cells after mock infected for 24 hr or infected with DCV (MOI\u00a0=\u00a05) for indicated time (n\u00a0=\u00a03; error bars, s.d.). (C) S2 cells were mock infected or infected with DCV (MOI\u00a0=\u00a05) for 18 hr and analyzed by a TUNEL assay. Detection of DNA using DAPI staining was performed in the same experiment. TUNEL+\u00a0signals are green and DAPI+\u00a0signals are blue. (D) Cultured S2 cells were mock infected for 24 hr or infected with DCV (MOI\u00a0=\u00a05) for indicated time. After that, total RNA extracts were prepared for qRT-PCR assay of hid, reaper or grim mRNA (normalized to Rp49; n\u00a0=\u00a03; error bars, s.d.). mi, mock infection.\n\n### Inhibition of apoptosis enhances viral replication in cells and adult flies\n\nAfter determining that DCV infection induces apoptosis, we further examined whether apoptosis has any antiviral role. To this end, we ectopically expressed DIAP1 in cultured S2 cells to inhibit apoptosis. Our results showed that the ectopic expression of DIAP1 effectively inhibited apoptosis (Figure 2A) and caused about two-fold increase of DCV genomic RNA (Figure 2B). Moreover, when we knocked down both of the effector caspases DrICE and DCP1, the virus-induced apoptosis was also dramatically inhibited (Figure 2D), resulting in a significant increase of DCV genomic RNA in infected cells (Figure 2E). In addition, the inhibition of apoptosis by either DIAP1 overexpression or effector caspases knockdown similarly increased DCV genomic RNA levels in cultured fluids (Figure 2C and F), excluding the possibility that the increase of DCV genomic RNA levels in cells is caused by promoting virus entry or inhibiting virus release.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/30590/elife-30590-fig2-v2.jpg)\n\n**Figure 2.:** (A) Cultured S2 cells were transfected with empty vector or the plasmid expressing DIAP1 as indicated, and then infected with DCV (MOI\u00a0=\u00a05) for 24 hr. The percentages of early apoptotic and late apoptotic cells were measured by Annexin-V-APC/PI double staining and flow cytometry assay (n\u00a0=\u00a03; error bars, s.d.). (B\u2013C) Cultured S2 cells were transfected and infected as described in (A). After that, total RNAs in cells (B) and in 5% of cultured fluids (C) were extracted, followed by qRT-PCR assay of viral genomic RNA (n\u00a0=\u00a03; *, p<0.05 by two-tailed Student's t test; error bars, s.d.). For (B), viral genomic RNAs were normalized to Rp49. (D) Cultured S2 cells were transfected with dsRNAs against indicated genes and then infected with DCV (MOI\u00a0=\u00a05) for 24 hr. The percentages of early apoptotic and late apoptotic cells were measured by Annexin-V-APC/PI double staining and flow cytometry assay (n\u00a0=\u00a03; error bars, s.d.). (E\u2013F) Cultured S2 cells were transfected and infected as described in (D). After that, total RNAs in cells (E) and in 5% of cultured fluids (F) were extracted, followed by qRT-PCR assay of viral genomic RNA (n\u00a0=\u00a03; *p<0.05 by two-tailed Student's t test; error bars, s.d.). For (E), viral genomic RNAs were normalized to Rp49. (G) Survival of adult flies with indicated genotypes after DCV (1011.5 TCID50/ml) oral infection or mock infection (n\u00a0=\u00a03; each group contains 15 female flies and 15 male flies; error bars, s.d.). (H) Total RNA extracts from adult flies with indicated genotypes after DCV (1011.5 TCID50/ml) oral infection for 3 days were prepared for qRT-PCR assay of viral genomic RNA (normalized to Rp49, n\u00a0=\u00a03; *p<0.05 by two-tailed Student's t test; error bars, s.d.).\n\nTo assess whether apoptosis contributes to inhibit viral replication in adult flies, we performed a DCV oral infection assay using p53 loss-of-function fly allele 5A-1\u20134 (p53\u2212/\u2212). This fly allele has a reduced level of stress-induced apoptosis, but is otherwise viable and has no obvious phenotype (Liu et al., 2013; Rong et al., 2002). 7 days after the DCV oral infection, almost all p53\u2212/\u2212 flies were dead, while about 40% control flies survived in the viral challenge (Figure 2G). These data indicate that the loss of p53 function made adult flies more susceptible to viral infection. We further tested the DCV genomic RNA level at 3 days post DCV oral infection, and observed approximately 5-fold increase of DCV genomic RNA in p53\u2212/\u2212 flies, when comparing with control flies (Figure 2H). Taken together, our data show that apoptosis plays an antiviral role in cultured Drosophila S2 cells and adult flies.\n\n### Viral infection promotes the accumulation of cleaved DIAP1 in cells\n\nAs one of the most important cell death regulators, DIAP1 has been reported to be depleted during the course of FHV infection (Settles and Friesen, 2008). To study whether DCV infection has any effect on DIAP1, we determined the levels of endogenous DIAP1 using western blot in DCV-infected Drosophila S2 cells. DIAP1 has been gradually depleted during the course of DCV infection (Figure 3A). To examine whether DCV infection promotes DIAP1 degradation, cycloheximide (CHX) degradation assays have been conducted. Because CHX treatment can efficiently block viral protein synthesis and viral replication, we infected cells using DCV immediately after or 8 hr before adding CHX. Although viral infection immediately after CHX addition did not accelerate DIAP1 depletion (Figure 3\u2014figure supplement 1A, lanes 1 and 2 vs. 3 and 4), viral infection before CHX addition did promote DIAP1 degradation (Figure 3\u2014figure supplement 1A, lanes 5 and 6, 1B, 1C, and 1D). These results show that DCV infection promotes the degradation of DIAP1, and this process relies on viral protein synthesis and/or viral replication, but not the input viral components, as blocking viral protein synthesis eliminated this effect.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/30590/elife-30590-fig3-v2.jpg)\n\n**Figure 3.:** (A) Cultured S2 cells were mock infected for 36 hr or infected with DCV (MOI\u00a0=\u00a05) for indicated time. Cell lysates were subjected to SDS-PAGE, followed by western blots using the indicated antibodies or Coomassie Blue staining. (B) Schematic diagram of two distinct mechanisms to produce a smaller form of DIAP1. (C) Cultured S2 cells were treated with DMSO or z-VAD-FMK as indicated, and then mock infected for 24 hr or infected with DCV (MOI\u00a0=\u00a05) for indicated time. (D) Cultured S2 cells were transfected with dsRNAs against the indicated genes, and then mock infected for 6 hr or infected with DCV (MOI\u00a0=\u00a05) for indicated time. (E) Cultured S2 cells were transfected with plasmid expressing myc-DIAP1-HA, and then mock infected for 36 hr or infected with DCV (MOI\u00a0=\u00a05) for indicated time. (F) Cultured S2 cells were transfected with plasmid expressing myc-DIAP1-HA, and then treated with DMSO or z-VAD-FMK as indicated. After that cells were mock infected for 24 hr or infected with DCV (MOI\u00a0=\u00a05) for indicated time. (G\u2013H) Cultured S2 cells were transfected with plasmid expressing myc-DIAP1-HA, myc-DIAP1D20A-HA (G) or myc-DIAP1M38A-HA (H) as indicated, and then mock infected for 24 hr or infected with DCV (MOI\u00a0=\u00a05) for indicated time. (C\u2013H) Cell lysates were subjected to western blots using the indicated antibodies. (I) Cultured S2 cells were transfected with empty vector or plasmid expressing myc-DIAP1-HA or myc-DIAP1\u0394N20-HA as indicated, and then mock infected or infected with DCV (MOI\u00a0=\u00a05) for indicated time. The relative caspase activity was measured, and normalized to cell viability (n\u00a0=\u00a03; *p<0.05 by two-tailed Student's t test; error bars, s.d.).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30590/elife-30590-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Cultured S2 cells were treated with 50 \u03bcg/ml CHX for 0 (lanes 1, 3, and 5) or 50 min (lanes 2, 4, and 6). Cells were infected with DCV immediately after CHX addition (lanes 3 and 4) or 8 hr before CHX addition (lanes 5 and 6). Cell lysates were then prepared and subjected to western blots using the indicated antibodies. (B\u2013C) Cultured S2 cells were mock infected (B) or infected with DCV (MOI\u00a0=\u00a05) for 8 hr (C) and then treated with 50 \u03bcg/ml CHX for the indicated periods. Cell lysates were prepared and subjected to western blots using the indicated antibodies. For (A\u2013C), the values listed below the blots indicate the relative total DIAP1 protein levels following \u0251-tubulin normalization using Quantity One software. The DIAP1 level at 0 min CHX treatment (lanes 1) was defined as 100% (or 1). (D) The relative levels of total DIAP1 protein shown in (B) and (C) were plotted. All data represent means and SD of three independent experiments.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30590/elife-30590-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Cultured S2 cells were cultured in a 100 mm plate and were firstly transfected with plasmid expressing myc-DIAP1-HA. After 24 hr, the transfected cells were divided into a six-well plate, and cultured for six more hrs to reach 80% confluence (about 3\u00a0\u00d7\u00a0106 cells per well). After that, total RNAs in cells were extracted, followed by qRT-PCR assay of DIAP1 mRNA (n\u00a0=\u00a03; *p<0.05 by two-tailed Student's t test; error bars, s.d.). Of note, endogenous DIAP1 mRNA was ignored here.\n\nIntriguingly, a slightly smaller, faster-migrating form of endogenous DIAP1 can be detected (Figure 3A), leading us to ask how this smaller form of DIAP1 was generated. As illustrated in Figure 3B, a smaller form of DIAP1 can be either produced by caspase cleavage at Asp20 or by internal initiation at an in-frame second ATG (Ditzel et al., 2003; Vandergaast et al., 2015; Vandergaast et al., 2011). To distinguish between these two mechanisms, we first used the pancaspase inhibitor z-VAD-FMK to block the caspase activity. Our result showed that the presence of z-VAD-FMK could effectively block the production of the smaller DIAP1 (Figure 3C). Additionally, we also knocked down DrICE or DCP-1 by RNA interference (RNAi). Consistent with the results in Figure 3C, the knockdown of either effector caspase DrICE or DCP-1 mostly blocked the appearance of the smaller DIAP1 (Figure 3D).\n\nNext, we ectopically expressed DIAP1 with N-terminal myc tag and C-terminal HA tag (myc-DIAP1-HA) in cultured S2 cells. As expected, a smaller form of exogenously expressed DIAP1 was readily detected using anti-HA but not anti-myc antibody (Figure 3E), showing that this smaller form of DIAP1 lost its N-terminal. This smaller form of exogenously expressed DIAP1 accumulated during the course of viral infection, but was almost completely degraded at 24 h.p.i. (Figure 3E). Of note, qRT-PCR assays have been used to confirm that the samples had the same levels of transfection (Figure 3\u2014figure supplement 2). We further used z-VAD-FMK to block the caspase activity, and then detected the exogenously expressed DIAP1 using anti-HA antibody. Consistent with our previous data in Figure 3C, z-VAD-FMK blocked the generation of the smaller form of exogenously expressed DIAP1 (Figure 3F). These data indicate that the production of the smaller form of DIAP1 was mediated by caspase cleavage.\n\nWe then exogenously expressed the D20A mutant of DIAP1 (DIAP1D20A), which cannot be cleaved by caspase (Ditzel et al., 2003). Our data showed that the D20A mutation eliminated the appearance of the smaller form of DIAP1 (Figure 3G). On the other hand, the other mutation, M38A, which blocks the internal initiation at the in-frame second ATG, failed to prevent the production of the smaller form of DIAP1, similarly with wild-type (WT) DIAP1 (Figure 3H).\n\nIt would be interesting to ask whether the cleaved, smaller form of DIAP1 is active in blocking apoptosis. To this end, we ectopically expressed a DIAP1 mutant DIAP1\u0394N20, which loses its N-terminal 20 amino acid and mimics the cleaved form of DIAP1, in cells in the presence or absence of viral infection. Our data showed that the smaller form of DIAP1, DIAP1\u0394N20, was also able to inhibit virus-induced caspase activity as effective as DIAP1WT (Figure 3I), indicating that this cleaved form of DIAP1 is still active.\n\nIn conclusion, our data show that viral infection caused the accumulation of a caspase-cleaved, smaller form of DIAP1, which is potent in apoptosis blockage, in cultured Drosophila cells.\n\n### Virus-induced accumulation of cleaved DIAP1 is mediated by the N-end rule pathway\n\nThe accumulation of the caspase-cleaved, smaller form of DIAP1 during viral infection could be due to the enhancement in either caspase-mediated cleavage or protein stability. To distinguish between these two possibilities, we first determined the caspase activities during the course of viral infection. Interestingly, we observed that the caspase activity was enhanced after 12 h.p.i. (Figure 4A), while the apparent accumulation of the smaller DIAP1 was readily detectable at 6 h.p.i. (Figure 3A). Of note, the experiments in Figures 3A and 4A were conducted using the same set of samples, excluding the possible variations of different samples. Thus, at least at early stage of viral infection, the accumulation of smaller DIAP1 is not due to enhanced caspase activity.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/30590/elife-30590-fig4-v2.jpg)\n\n**Figure 4.:** (A) Cultured S2 cells were infected as described in Figure 3A. The relative caspase activity was measured, and normalized to cell viability (n\u00a0=\u00a03; *p<0.05 by two-tailed Student's t test; error bars, s.d.). (B) Schematic diagram of the mechanisms of DIAP1 degradation. (C) Cultured S2 cells were transfected with the plasmid expressing myc-DIAP1-HA, and the dsRNAs against the indicated genes. (D\u2013F) Cultured S2 cells were transfected with plasmid expressing myc-DIAP1-HA (D) or its mutants (E and F) as indicated, and then mock infected for 18 hr or infected with DCV (MOI\u00a0=\u00a05) for indicated time. (C\u2013F) Cell lysates were subjected to western blots using the indicated antibodies.\n\nNext, we ought to examine whether the smaller DIAP1 accumulation is due to enhanced protein stability. As illustrated in Figure 4B, the caspase-cleaved, smaller form of DIAP1 can be degraded by different strategies as reviewed by Tasaki et al. (Tasaki et al., 2012), of which the N-end rule pathway is the only one specifically degrade the smaller DIAP1. Consistent with pervious study (Ditzel et al., 2003), knockdown of N-end rule pathway key component NTAN1 or ATE1 by RNAi resulted in the accumulation of caspase-cleaved, smaller DIAP1 (Figure 4C), confirming that the N-end rule pathway participates in the degradation of the caspase-cleaved DIAP1.\n\nMoreover, we ectopically expressed either WT or N21A mutant DIAP1 in cells, as the N21A mutation makes the cleaved, smaller DIAP1 protein to lose its N-end Asn and become resistant to the N-end rule pathway. Our data show that although viral infection could induce the accumulation of smaller DIAP1 in cells expressing DIAP1WT from 0 (mock) to 15 h.p.i. (Figure 4D), the cleaved, smaller form of DIAP1 became resistant to degradation and insensitive to viral infection in DIAP1N21A-expressing cells (Figure 4E), showing that the effect of viral infection on the smaller DIAP1 accumulation is dependent on the N-end rule pathway.\n\nBecause the N-end rule pathway involves multiple steps, including deamidation by NTAN1, arginylation by ATE1, and proteolysis. We aim to investigate which step is affected by viral infection. To this end, we made the N21D mutation of DIAP1, which skips the N-terminal Asn deamidation step. Interestingly, viral infection did not increase the accumulation of the cleaved, smaller form of DIAP1N21D (Figure 4F), indicating that the inhibition of the deamidation step of the N-end rule pathway is required for the virus-induced accumulation of cleaved DIAP1.\n\n### Viral infection promotes the depletion of NTAN1 in the early stage of infection\n\nIn the N-end rule pathway, the N-terminal Asn deamidation is catalyzed by NTAN1, while the arginylation of the deamidated protein is mediated by ATE1 (Ditzel et al., 2003). Consistent with our previous observation that the cleaved DIAP1 accumulation is dependent on the inhibition of NTAN1-mediated deamidation step (Figure 4F), our data show that viral infection induced the gradual decrease of the protein level of NTAN1 but not ATE1 (Figure 5A). Interestingly, the mRNA levels of NTAN1 and ATE1 are both up-regulated during the same time course of viral infection (Figure 5B). In addition, we examined the effect of viral infection to exogenously expressed NTAN1 in cultured cells, and found that the exogenously expressed NTAN1 was also down-regulated during the course of viral infection (Figure 5C). On the other hand, the level of exogenously expressed EGFP was not affected by viral infection (Figure 5D), confirming that the protein expression using the same expression vector was not affected by viral infection. Together, these data indicate that viral infection induced the decrease of NTAN1 protein level in a post-transcriptional manner.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/30590/elife-30590-fig5-v2.jpg)\n\n**Figure 5.:** (A) Cultured S2 cells were mock infected for 8 hr or infected with DCV (MOI\u00a0=\u00a05) for indicated time. Cell lysates were subjected to western blots using the indicated antibodies. (B) Cultured S2 cells were infected as described in (A). Total RNA extracts were prepared for qRT-PCR assay of indicated mRNA (normalized to Rp49; n\u00a0=\u00a03; error bars, s.d.). (C\u2013D) Cultured S2 cells were transfected with plasmid expressing HA-NTAN1 (C) or EGFP (D) as indicated, and then mock infected for 12 hr or infected with DCV (MOI\u00a0=\u00a05) for indicated time. Cell lysates were subjected to Western blots using the indicated antibodies. (E) Cultured S2 cells were treated with 50 \u03bcg/ml CHX for 0 (lanes 1, 3 and 5) or 150 min (lanes 2, 4 and 6). Cells were infected with DCV immediately after CHX addition (lanes 3 and 4) or 6 hr before CHX addition (lanes 5 and 6). Cell lysates were then prepared and subjected to western blots using the indicated antibodies. (F\u2013G) Cultured S2 cells were mock infected (F) or infected with DCV (MOI\u00a0=\u00a05) (G) for 6 hr and then treated with 50 \u03bcg/ml CHX for the indicated periods. Cell lysates were prepared and subjected to western blots using the indicated antibodies. For (A, C\u2013G), the values listed below the blots indicate the relative NTAN1 or EGFP protein levels following \u0251-Tubulin normalization using Quantity One software. The protein level shown in lanes 1 was defined as 100% (or 1). (H) The relative levels of NTAN1 protein shown in (F) and (G) were plotted. All data represent means and SD of three independent experiments.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30590/elife-30590-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Cultured S2 cells were mock infected for 18 hr or infected with DCV (MOI\u00a0=\u00a05) for indicated time. Cell lysates were examined by western blots using the indicated antibodies.\n\nTo further assess whether the decrease of NTAN1 protein level during the course of viral infection is due to protein degradation, CHX degradation assays have been conducted. Similar with that of DIAP1, while viral infection immediately after CHX addition did not accelerate NTAN1 depletion (Figure 5E, lanes 1\u20132 vs. 3\u20134), viral infection before CHX addition significantly promoted NTAN1 degradation rate when compared with that in non-infected cells (Figure 5E, lanes 1\u20132 vs. 5\u20136, Figure 5F,G and H).\n\nInterestingly, viral infection promoted the accumulation of NTAN1 after 12 h.p.i. (Figure 5\u2014figure supplement 1), which might be a combined effect of both the degradation of NTAN1 protein and up-regulation of NTAN1 mRNA in the later stage of viral infection.\n\nIn conclusion, our data showed that virus induced the degradation of NTAN1 protein in the early stage of infection, which could lead to the accumulation of caspase cleaved, smaller form of DIAP1.\n\n### Viral infection promotes the degradation of NTAN1 via the proteasome pathway\n\nAs we have found that viral infection promoted the degradation of NTAN1, we ought to investigate which protein degradation pathway(s) are involved in this process. Because the proteasome pathway is one of the major protein degradation pathways, we treated Drosophila S2 cells with proteasome inhibitor MG-132 or lactacystin. The results show that, during viral infection, the NTAN1 protein levels could be restored by either MG-132 or lactacystin treatment (Figure 6A and B), suggesting that the proteasome pathway is involved in virus-induced degradation of NTAN1.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/30590/elife-30590-fig6-v2.jpg)\n\n**Figure 6.:** (A\u2013B) Cultured S2 cells were transfected with plasmid expressing HA-NTAN1, and then treated with DMSO, MG132 (A) or lactacystin (B) as indicated. After that, cells were mock infected for 12 hr or infected with DCV (MOI\u00a0=\u00a05) for indicated time. (C) Cultured S2 cells were transfected with plasmid expressing HA-NTAN14KA, and then treated with DMSO or MG132 as indicated. After that, cells were mock infected for 12 hr or infected with DCV (MOI\u00a0=\u00a05) for indicated time. (D\u2013G) Cultured S2 cells were transfected with plasmid expressing HA-NTAN1 (D and E) or HA-NTAN14KA (F and G) and then mock infected (D and F) or infected with DCV (MOI\u00a0=\u00a05) (E and G) for 6 hr. After that, cells were treated with 50 \u03bcg/ml CHX for the indicated periods. (A\u2013G) Cell lysates were subjected to western blots using the indicated antibodies. The values listed below the blots indicate the relative NTAN1 protein levels compared to lane 1 following \u0251-tubulin normalization using Quantity One software. (H) The relative levels of NTAN1 protein shown in (D), (E), (F) and (G) were plotted. All data represent means and SD of three independent experiments. (I) Proposed model of NTAN1 degradation strategies.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30590/elife-30590-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The amino acid sequence of Drosophila melanogaster NTAN1 is compared with those of indicated NTAN1s. Lysine residues are marked with asterisk.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30590/elife-30590-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Cultured S2 cells were transfected with empty vector or plasmid expressing HA-NTAN1 or NTAN14KA as indicated, and treated with MG-132. After that, cells were mock infected (lanes 1, 2 and 4) or infected with DCV (MOI\u00a0=\u00a05) (lane 3) for 12 hr. The cells were lysed and subjected to immunoprecipitation using an anti-HA antibody. Cell lysates and immunoprecipitates were subjected to western blots using the indicated antibodies. (B\u2013E) Cultured S2 cells were transfected with plasmid expressing HA-NTAN1K40A (B), HA-NTAN1K63A (C), HA-NTAN1K134A (D) or HA-NTAN1K186A (E). After that, cells were treated with DMSO or MG132 as indicated, and then mock infected for 12 hr or infected with DCV (MOI\u00a0=\u00a05) for indicated time. Cell lysates were examined by western blots using the indicated antibodies.\n\nBecause the proteasome degradation pathway is usually dependent on polyubiquitylation, we next asked whether viral infection induces the polyubiquitylation of NTAN1. NTAN1 contains four lysine residues (i.e. K40, K63, K134 and K186). Among them, K186 is conserved in Diptera and vertebrate, K40 and K63 are conserved in Diptera but not vertebrate, while K134 is not conserved in Diptera (Figure 6\u2014figure supplement 1). To investigate whether these residues are involved in the virus-induced NTAN1 degradation, we replaced all of the four lysine residues with alanine (NTAN14KA). However, when NTAN14KA was exogenously expressed in Drosophila S2 cells, viral infection was still able to induce the decrease of NTAN14KA protein level (Figure 6C). Furthermore, we conducted CHX degradation assay, and observed that in the absence of viral infection, NTAN14KA is significantly more stable than NTAN1WT, while viral infection similarly promoted the degradation of both NTAN14KA and NTAN1WT (Figure 6D\u2013H). These results show that the virus-induced NTAN1 degradation is independent of ubiquitylation.\n\nInterestingly, NTAN14KA is significantly more stable than NTAN1WT (Figures 6D, F and H); additionally, unlike NTAN1WT (Figure 6A, lanes 1 vs. 5), blocking the proteasome by MG-132 treatment did not show any effect on the protein level of NTAN14KA in the absence of viral infection (Figure 6C, lanes 1 vs. 4), suggesting that one or all of these lysine residues and/or polyubiquitylation have some contribution to the protein stability of NTAN1. Moreover, our results showed that NTAN1WT but not NTAN14KA can be polyubiquitylated, while the polyubiquitylation of NTAN1 was not affected by viral infection (Figure 6\u2014figure supplement 2A).\n\nNext, we constructed four mutants of NTAN1, that\u00a0is K40A, K63A, K134A and K186A, to determine which lysine residue(s) are most responsible for the polyubiquitylation-dependent degradation of NTAN1. Our data showed that, similarly with NTAN1WT, the MG-132 treatment dramatically enhanced the protein level of exogenously expressed NTAN1K40A, NTAN1K63A or NTAN1K134A in the absence of viral infection (Figure 6\u2014figure supplement 2B,C and D, lanes 1 vs. 4). On the other hand, like NTAN14KA, NTAN1K186A is resistant to degradation in the absence of viral infection (Figure 6C and Figure 6\u2014figure supplement 2E, lanes 1 vs. 4), indicating that K186 is most responsible for the ubiquitylation-dependent degradation of NTAN1 in the absence of viral infection.\n\nAltogether, our data showed that NTAN1 can be polyubiquitylated, and degraded by both ubiquitylation-dependent and -independent degradation pathways. While both NTAN1 degradation pathways are dependent on proteasome, the virus-induced NTAN1 degradation is independent of ubiquitylation (as illustrated in Figure 6I).\n\n### Virus-induced NTAN1 degradation inhibits apoptosis and benefits viral replication\n\nWe ought to investigate the role of virus-induced NTAN1 degradation on apoptosis and viral replication. Our previous data have shown that the loss of NTAN1 can prevent the degradation of cleaved DIAP1 (Figure 4C). Here, we ectopically expressed HA-tagged NTAN1 in virally infected cells. Our results showed that the ectopic expression of HA-NTAN1 partially restored the expression of NTAN1, resulting in the almost elimination of both full-length and caspase-cleaved forms of DIAP1 at 15 and 18 h.p.i. (Figure 7A). Consequently, in the context of viral infection, the partial restoration of NTAN1 expression significantly promoted apoptosis (Figure 7B) and the relative caspase activity in cells (Figure 7C). Furthermore, the partial restoration of NTAN1 expression also significantly restricted viral RNA replication at 18 h.p.i. (Figure 7D). Moreover, the knockdown of NTAN1 inhibited virus-induced apoptosis and enhanced DCV replication (Figure 7\u2014figure supplement 1A and B). Altogether, these data indicate that virus-induced NTAN1 degradation can inhibit apoptosis and benefit viral replication.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/30590/elife-30590-fig7-v2.jpg)\n\n**Figure 7.:** (A\u2013D) Cultured S2 cells were transfected with empty vector or plasmid expressing HA-NTAN1 as indicated, and then mock infected for 18 hr or infected with DCV (MOI\u00a0=\u00a05) for indicated time. (A) Cell lysates were prepared and subjected to western blots using the indicated antibodies. (B) The percentages of early apoptotic and late apoptotic cells were measured by Annexin-V-APC/PI double staining and flow cytometry assay (n\u00a0=\u00a06; *p<0.05 by two-tailed Student's t test; error bars, s.d.). (C) The relative caspase activity was measured, and normalized to cell viability (n\u00a0=\u00a03; *p<0.05 by two-tailed Student's t test; error bars, s.d.). (D) Total RNAs were extracted and then subjected to qRT-PCR assay of viral genomic RNA (n\u00a0=\u00a03; *p<0.05 by two-tailed Student's t test; error bars, s.d.).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30590/elife-30590-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A\u2013B) Cultured S2 cells were transfected with dsRNAs against indicated genes, and then infected with DCV (MOI\u00a0=\u00a05) for 15 hr. (A) The percentages of early apoptotic and late apoptotic cells were measured by Annexin-V-APC/PI double staining and flow cytometry assay (n\u00a0=\u00a03; *p<0.05 by two-tailed Student's t test; error bars, s.d.). (B) Total RNAs were extracted and then subjected to qRT-PCR assay of viral genomic RNA (n\u00a0=\u00a03; *p<0.05 by two-tailed Student's t test; error bars, s.d.). Viral genomic RNAs were normalized to Rp49.\n\n## Discussion\n\nIn this study, we demonstrate that a picorna-like virus can induce apoptosis, and the virus-induced apoptosis plays an antiviral role in Drosophila. Strikingly, we uncovered that viral infection is able to induce the degradation of NTAN1, a key component of the N-end rule degradation pathway, via an ubiquitylation-independent proteasome pathway in cells. The virus-induced degradation of NTAN1 caused the accumulation of caspase-cleaved, shorter form of DIAP1 by inhibiting its N-terminal Asn deamidation, resulting in the suppression of apoptosis and the enhancement of viral replication (as illustrated in Figure 8).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/30590/elife-30590-fig8-v2.jpg)\n\n**Figure 8.:** DCV infection induces RHG genes transcription and further induces apoptosis in Drosophila. On the other hand, DCV infection causes the degradation of NTAN1. This process suppresses the degradation of caspase-cleaved DIAP1 by inhibiting the N-end rule pathway, resulting in the suppression of apoptosis.\n\nThe apoptotic pathway is recognized as an antiviral defense mechanism (Everett and McFadden, 1999), while various viruses employ their own ways to evade apoptosis. For example, SV40 large T antigen can bind to and inactivate p53, the internal sensor of the apoptotic pathway (Lane and Crawford, 1979; Linzer and Levine, 1979); adenovirus E1B-19K simulates the anti-apoptotic regulator Bcl-2 (Chiou et al., 1994) and regulates the activity of p53 (Lomonosova et al., 2005); baculovirus P35 and P49 can block the activity of caspase (Lannan et al., 2007; Zoog et al., 2002), and P35 can also bind to and stabilize a cellular IAP (Byers et al., 20162015). Our current study uncovered that the infection by a picorna-like virus can suppress the N-end rule pathway by inducing the degradation of its key component NTAN1. This process causes the accumulation of caspase-cleaved DIAP1, which results in apoptosis inhibition and represents a novel mechanism of viral evasion of apoptosis.\n\nIt is interesting that the virus-induced degradation of NTAN1 is dependent of proteasome but independent of ubiquitylation (Figure 6). Protein degradation via the ubiquitin proteasome system has been extensively studied. In contrast, the mechanism of the ubiquitin-independent proteolytic activity of proteasomes is poorly understood. It has been reported that the ubiquitin-independent proteolytic activity of proteasomes is involved in the degradation of oxidized proteins, chemically unfolded proteins, and specific natively disordered proteins (Baugh et al., 2009; Grune et al., 2003; Hoyt and Coffino, 2004). It is worth to mention that several important regulatory proteins can be degraded by this mechanism (Hoyt and Coffino, 2004), including p21/Cip1 (Sheaff et al., 2000), I\u03baB\u03b1 (Krappmann et al., 1996), c-Jun (Jariel-Encontre et al., 1995) and p53 (Tsvetkov et al., 2009; Tsvetkov et al., 2010). The N-end rule pathway is normally recognized as an ubiquitin proteasome proteolytic system and employs specific E3 ubiquitin ligases. As a key component of the N-end rule pathway, NTAN1 can be degraded in an ubiquitin-independent manner suggests a connection between these distinct proteasome proteolytic mechanisms, which extends the knowledge about ubiquitin-independent proteolytic activity of proteasome. The future study by us or others should uncover how viral infection induces the ubiquitin-independent NTAN1 degradation.\n\nThe N-end rule pathway plays an important role in various biological processes. According to the different substrates, the N-end rule pathway can be grouped into three types, the Arg/N-end rule pathway targets proteins with N-terminal Arg residue, the Ac/N-end rule pathway targets proteins with N-terminal acetylated residues and the Pro/N-end rule pathway targets proteins with N-terminal Pro residue or a Pro at position 2 (Varshavsky, 2011; Park et al., 2015; Kim et al., 2014b; Chen et al., 2017). Previous studies have shown the involvement of N-end rule pathway in a large number of important cellular processes. Besides its function in regulating DIAP1 in Drosophila, the Arg/N-end rule pathway can also regulate the C-terminal fragments of the Scc1 cohesin subunit that are produced by separase and thus regulates chromosome stability (Rao et al., 2001). Moreover, the N-end rule pathway regulates the mammalian G protein signaling through degrading RGS (regulator of G protein signaling) proteins (Davydov and Varshavsky, 2000; Lee et al., 2005; Park et al., 2015). In the N-end rule pathway, NTAN1 is the key component that regulates the half-life of a protein by identifying its N-terminal residue and initiating the process. It has been reported that NTAN1-deficient mice have neurological defects such as impairment of spontaneous activity and spatial memory (Balogh et al., 2000, 2001). Our current study found that viral infection can induce NTAN1 degradation, resulting in the suppression of the N-end rule pathway and subsequent evasion of apoptosis.\n\nIt would be intriguing to find out how viral infection induces the degradation of NTAN1. Interestingly, we found that blocking protein synthesis by CHX before viral infection abolished the effect of DCV to induce NTAN1 degradation, indicating that viral protein synthesis and/or viral replication within infected cells, but not the input viral components, are responsible for this process. Viruses in the order Picornavirales encode a 3C or 3C-like (3 CL) protease that cleaves viral polyproteins. It has been reported that 3C proteases from multiple mammalian picornaviruses, such as foot-and-mouth disease virus (FMDV), Hepatitis A Virus, enterovirus 68, and enterovirus 71, are able to cleave and degrade host proteins to manipulate immune responses (Wang et al., 2012; Yang et al., 2007; Xiang et al., 2014; Lei et al., 2013), leading us to speculate whether DCV 3 CL protease could mediate NTAN1 degradation. However, we failed to observe any effect of exogenously expressed DCV 3 CL on the stability of NTAN1 (data not shown). It is also possible that other DCV proteins are responsible for the virus-induced NTAN1 degradation. Based on the sequence analyses, we have predicted the sequences and boundaries of DCV proteins. Unfortunately, the extreme difficulty to exogenously express other DCV proteins in Drosophila S2 cells prevented us from further examining these possibilities. In addition, viral infection can induce multiple intracellular signaling pathways, which may induce NTAN1 degradation.\n\nIn summary, our findings demonstrate for the first time that a virus can suppress the N-end rule pathway, and uncover a new mechanism for virus to evade apoptosis. Given the high conservation of the N-end rule pathway from prokaryotes to eukaryotes, it opens up the possibilities that this mechanism can also\u00a0be employed by other viruses, particularly picornaviruses, to evade apoptosis and/or modulate other cellular processes, which are the targets of N-end rule pathway, in mammals or other organisms.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>cell line (Drosophila melanogaster)</td>\n      <td>S2</td>\n      <td>ATCC</td>\n      <td>ATCC, Cat# CRL-1963; RRID: CVCL_Z232</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>anti-Flag M2 (mouse monoclonal)</td>\n      <td>Sigma</td>\n      <td>Sigma,Cat# F1804; RRID: AB_262044</td>\n      <td>1:2000</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>anti-myc (mouse monoclonal)</td>\n      <td>MBL</td>\n      <td>MBL, Cat# M192-3; RRID: AB_11160947</td>\n      <td>1:2000</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>anti-HA (mouse monoclonal)</td>\n      <td>ProteinTech</td>\n      <td>ProteinTech, Cat# 66006\u20131-Ig</td>\n      <td>1:5000</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>anti-\u03b1-Tubulin (mouse monoclonal)</td>\n      <td>ProteinTech</td>\n      <td>ProteinTech, Cat# 66031\u20131-Ig; RRID: AB_11042766</td>\n      <td>1:3000</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>anti-DIAP1 (goat polyclonal)</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>Santa Cruz Biotechnology, Cat# sc-32414; RRID: AB_639332</td>\n      <td>1:200</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>HRP-conjugated anti-GFP</td>\n      <td>ProteinTech</td>\n      <td>ProteinTech, Cat# HRP-66002</td>\n      <td>1:5000</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>anti-ubiquitin (mouse monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cell Signaling Technology, Cat# 3936; RRID:AB_331292</td>\n      <td>1:2000</td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>Annexin-V-APC/PI double staining kit</td>\n      <td>BioLegend</td>\n      <td>BioLegend, Cat# 640932</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>TUNEL staining kit</td>\n      <td>Roche</td>\n      <td>Roche, Cat# 11684817910</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>CellTiter-Blue Cell Viability kit</td>\n      <td>Promega</td>\n      <td>Promega, Cat# G8080</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>Caspase-Glo 3/7 kit</td>\n      <td>Promega</td>\n      <td>Promega, Cat# G8090</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>z-VAD-FMK</td>\n      <td>MedChem Express</td>\n      <td>MedChem Express, Cat# HY-16658</td>\n      <td>20 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>CHX</td>\n      <td>Sigma</td>\n      <td>Sigma, Cat# C7698</td>\n      <td>50 \u03bcg/ml</td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>MG-132</td>\n      <td>Sigma</td>\n      <td>Sigma, Cat# C2211</td>\n      <td>50 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>lactacystin</td>\n      <td>Merck</td>\n      <td>Merck, Cat# 426100</td>\n      <td>10 \u03bcM</td>\n    </tr>\n  </tbody>\n</table>\n\n### Fly stocks and DCV oral infection\n\nAll flies used were 3- to 5-day-old adults reared at 25\u00b0C on a standard cornmeal/yeast diet. For each group, adult flies were randomly allocated and the sample size was chosen according to previous study (Wang et al., 2015). The p53 loss-of-function allele 5A-1\u20134 was obtained from the Bloomington stock center. The w1118 fly line used for control was obtained from Institute of Genetics and Developmental Biology, Chinese Academy of Sciences (Beijing, China).\n\nDCV oral infections were performed on 3\u20136 days-old flies. Flies were randomly allocated into mock infection and DCV infection groups. For DCV oral infection, 2 ml of a mix of 25% virus extract (1011.5 TCID50/ml), 25% of yeast and 50% of standard cornmeal/yeast diet were loaded on a 1\u00a0\u00d7\u00a05 cm filter paper. Each treated filter paper was placed in the bottom of an empty plastic vial. For the first 3 days, 30 flies per vial were placed and fed for 24 hr at 25\u00b0C, and then moved to a new vial containing filter paper treated as above. After that, we transferred the flies to new vials containing standard cornmeal/yeast diet. For mock oral infections flies, we used PBS instead of DCV extract to load the filter paper.\n\n### Plasmid and in vitro transcription of RNA or dsRNA\n\nThe Drosophila inducible expression system vector, pAc5.1/V5-His B (Invitrogen, Carlsbad, CA), was used to construct plasmid that express protein in Drosophila S2 cells. The diap1 or ntan1 ORF was amplified from fly cDNAs, kindly provided by Dr. Jianquan Ni (Tsinghua University, Beijing, China), by polymerase chain reaction (PCR). The diap1 ORF or its mutant carrying a myc tag at its 5\u2019-end and a HA tag at its 3\u2019-end was cloned into the EcoR \u0406-Xho \u0406 site of the pAc5.1/V5-His B vector downstream of the Drosophila actin 5C promoter. The ntan1 ORF or its mutant carrying a HA tag at its 5\u2019-end was cloned into the EcoR \u0406-Xho \u0406 site of the pAc5.1/V5-His B vector downstream of the Drosophila actin 5C promoter.\n\nThe dsRNAs used for RNAi were transcribed in vitro from the PCR products using T7 RNA polymerase (Promega) for 4 hr. The complete ORF of drice and dronc, nucleotides 1\u2013400 of egfp ORF, nucleotides 1\u2013422 of ntan1 ORF and nucleotides 1\u2013415 of ate1 ORF were designed for generation of dsRNAs.\n\n### Cell line\n\nS2-ATCC cells (RRID: CVCL_Z232) was obtained from American Type Culture Collection (ATCC). Its identity was confirmed by visual inspection of the cell morphology and its growth kinetics in Schneider's insect medium (Sigma)/10% fetal bovine serum (FBS). A mycoplasma test is usually not done for S2 cells (Berndt et al., 2017).\n\nThe cell numbers were counted by using Luna automated cell counter (Logos Biosystems, Anyang-si, South Korea), according to the manufacturer\u2019s instruction.\n\n### Transfection\n\nThe DNA or dsRNA transfection was performed as previously described (Qiu et al., 2011). In brief, Drosophila S2 cells were plated in six-well plates and grown overnight to reach 80% confluence (about 3\u00a0\u00d7\u00a0106 cells per well). After that, DNA plasmid or dsRNA was transfected into the cells using FuGene HD transfection reagent (Roche), according to the manufacturer\u2019s protocol. In addition, for transfecting same plasmid in multiple wells, to ensure the equal transfection, cells cultured in a 100 mm plate were firstly transfected. After 24\u201336 hr, the transfected cells were randomly divided into six or eight wells of six-well plate, and cultured for\u00a0~6 more hrs to reach 80% confluence (about 3\u00a0\u00d7\u00a0106 cells per well). The cells were then subjected to viral infection or other treatments according to experimental requirements.\n\n### Inhibitors\n\nThe pancaspase inhibitor z-VAD-FMK (MedChemExpress, NJ, USA) was supplemented at 20 \u03bcM. The protein synthesis inhibitor CHX (Sigma) was supplemented at 50 \u03bcg/ml. The proteasome inhibitor MG-132 (Sigma) was used at 50 \u03bcM. The proteasome inhibitor lactacystin (Merck) was supplemented at 10 \u03bcM.\n\n### Western blots, immunoprecipitation (IP) and antibodies\n\nCultured S2 cells were harvested, and then lysed in radio-immunoprecipitation assay (RIPA) buffer. The cell lysates were then subjected to 10% SDS-PAGE, followed by western blots according to our standard procedures (Wang et al., 2013). All western blots experiments have been independently repeated at least three times. The quantification of western blots was done via densitometry by using Bio-Rad Quantity One software. Total protein loads were determined by using Coomassie Brilliant Blue R250 staining (Thermo Fisher).\n\nThe anti-Flag M2 mouse monoclonal antibody (Sigma, F1804) and anti-myc mouse monoclonal antibody (MBL, M192-3) were used at a dilution of 1:2000. The anti-HA mouse monoclonal antibody (ProteinTech, 66006\u20131-Ig) was used at a dilution of 1:5000. The anti-\u03b1-tubulin mouse monoclonal antibody (ProteinTech, 66031\u20131-Ig) was used at a dilution of 1:3000. The anti-DIAP1 goat polyclonal antibody (Santa Cruz Biotechnology, sc-32414) was used at a dilution of 1:200. The HRP-conjugated anti-GFP antibody (ProteinTech, HRP-66002) was used at a dilution of 1:5000. The anti-ubiquitin mouse monoclonal antibody (Cell Signaling Technology, #3936) was used at a dilution of 1:2000. The anti-NTAN1 polyclonal antibody was raised in rabbits against peptide GGYRDAKGYGEDVF (GenScript antibody service, Nanjing, China) and used at a dilution of 1:2500. The anti-ATE1 polyclonal antibody was raised in rabbits against peptide LGDSASYSTKSLTQ (GenScript antibody service) and used at a dilution of 1:2500.\n\nIP assays were conducted according to our standard protocol (Qi et al., 2011). Proteins were extracted from the precipitates and then subjected to 10% SDS-PAGE and western blots.\n\n### Quantitative reverse transcription-PCR (qRT-PCR)\n\nTotal RNA was extracted from 3\u00a0\u00d7\u00a0106 cells by using TRIzol reagent (TaKaRa Bio) and treated by RQ1 RNase-free DNase I (Promega) to remove DNAs as previously described (Wang et al., 2013). qRT-PCR were performed using SuperReal PreMix Plus kit (TIANGEN), according to the manufacturer\u2019s protocol. Gene-specific primers used for PCR amplification or qRT-PCR were listed below.\n\nHid For CTAAAACGCTTGGCGAACTT; Hid Rev CCCAAAAATCGCATTGATCT; Reaper For ACGGGGAAAACCAATAGTCC; Reaper Rev TGGCTCTGTGTCCTTGACTG; Grim For CAATATTTCCGTGCCGCTGG; Grim Rev CGTAGCAGAAGATCTGGGCC; DIAP1 For CCCCAGTATCCCGAATACGC; DIAP1 Rev TCTGTTTCAGGTTCCTCGGC; ATE1 For GCATACTTCGCCGCATAAATCG; ATE1 Rev CTATGGCGTAATCGGCATCGG; NTAN1 For GTGCTCGTGCTGAATGGTG; NTAN1 Rev CGTAGTCTCTGTAGACGGGATG; DCV For TCATCGGTATGCACATTGCT; DCV Rev CGCATAACCATGCTCTTCTG; Rp49 For AAGAAGCGCACCAAGCACTTCATC; Rp49 Rev TCTGTTGTCGATACCCTTGGGCTT.\n\n### Flow cytometry\n\nCell death was assessed by Annexin-V-APC/PI double staining (BioLegend) following manufacturer\u2019s instructions. After acquisition by flow cytometry (Beckman Coulter), data were analyzed and imaged with FCS Express 5 Plus (De Novo Software) with adapted settings.\n\n### TUNEL assay\n\nDetection of apoptotic cells using TUNEL staining (Roche) was performed following manufacturer\u2019s instructions. In the same experiment, detection of DNA using DAPI staining (Sigma) was performed following manufacturer\u2019s instructions.\n\n### Caspase activity assay\n\nCaspase activity was measured using Caspase-Glo 3/7 kit (Promega) following manufacturer\u2019s instructions. In the same experiment, cell viability was measured using CellTiter-Blue Cell Viability kit (Promega) following manufacturer\u2019s instructions.\n",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "bb0b6f3e-b9d7-44d7-ae50-86f89d4dfe38",
+      "submission_id": "989d1971-2729-4736-894d-61c46bd2ea54",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yong Tae Kwon, Seoul National University Republic of (South) Korea\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.30590.024](https://doi.org/10.7554/eLife.30590.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A Picorna-like Virus Suppresses the N-end Rule Pathway to Inhibit Apoptosis\" for consideration by eLife. Your article has been favorably evaluated by Wenhui Li (Senior Editor) and three reviewers, one of whom, Yong Tae Kwon (Reviewer #1), is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe N-end rule pathway has not been implicated in viral replication in a major way. A previous study by Ditzel et al. (03' NCB) showed that DIAP1, a Drosophila inhibitor of apoptosis, is cleaved by caspase, exposing N-terminal Asn21 which is subsequently deamidated by NTAN1 and arginylated by ATE1 of the N-end rule pathway, leading to ubiquitination by UBR box N-recognins and proteasomal degradation. In this study, the authors show that viral infection induces the degradation of NTAN1 leading to the metabolic stabilization of Asn21-DIAP1 (a short form) and, thus, inhibiting apoptosis of host cells. Moreover, the authors suggest that virus-induced degradation of NTAN1 is mediated by the proteasome in a manner independent from ubiquitination. The topics are of significant importance and novelty in the field of proteolysis and viral infection. Unfortunately, this study suffers from several major issues as summarized below. Overall, this manuscript needs major revision with several additional experiments.\n\nMajor Comments:\n\n1) To determine the metabolic stabilities of DIAP1 and NTAN1 proteins, the authors measured their steady state levels using only immunoblotting analysis. The results from immunoblotting analysis are not sufficient to draw conclusions on protein degradation and should be validated using in vivo degradation assays such as pulse chase analysis. If pulse chase assay is technically impossible, an alternative is cycloheximide degradation assays.\n\n2) The authors claim that virus induced degradation of NTAN1 is mediated by the proteasome without ubiquitination. In general, such negative conclusion with ubiquitination requires more rigorous validation. For example, in the second paragraph of the subsection \u201cViral infection promotes the degradation of NTAN1 via the proteasome pathway\u201d (Figure 6C), the authors claim that the mutation of all four lysine residues does not inhibit the degradation of NTAN and suggested that the virus-induced NTAN1 degradation is independent of ubiquitination. This immunoblotting analysis is of poor quality. The decay of NTAN1-4KA should be compared with wild-type NTAN1. In addition, the results should be validated using pulse chase analysis or at least cycloheximide degradation assay. To this reviewer, NTAN1-4KA seems to be significantly stabilized at 9 h.p.i. when compared with all four single lysine mutants (Figure 6\u2014figure supplement 2).\n\n3) The authors claim that viral infection induces the degradation of NTAN1 but did not examine the decay rate of endogenous NTAN1 in normally growing cells. It is necessary to compare the degradation rates of NTAN1 under two conditions with or without viral infection using in vivo degradation assays.\n\n4) One of the major weaknesses of this study is the lack of any mechanistic insight into which viral components are involved in targeting NTAN1. It seems to be reasonably straightforward to consider the effects of the proteins introduced by the virus and perform at least basic tests to see how they could potentially affect NTAN1 stability. The authors offer no insights into this, not even a discussion of the possibilities. While I understand that detailed experiments into this direction may be difficult, I believe the paper would be considerably strengthened by at least a discussion or a model.\n\n5) Western blots in all panels should be quantified, with sufficient number of repeats. For many panels, only one repeat is shown, making it unclear even how many experiments were done. It is essential to quantify data in triplicates, given the variability of the method itself.\n\n6) In many panels, a consistent decrease of tubulin level with time post infection is seen. It appears that the virus has an effect on microtubules, which is probably not surprising but this raises the issues of loading controls. A potential loading control could be total protein load, which could also be illustrated by Coomassie Blue staining. There are also other commonly used loading controls like GAPDH or actin \u2013 which are, of course, also subject to change per virus infection. This should be addressed.\n\n7) Along the same lines, quantification of the levels of transfected protein should be accompanied by qPCR data showing the transfection levels, since these can considerably affect the result between cultures. A \"quick and dirty\" way around it is to split the culture equally after transfection into the wells/dishes used for the collection of the time points. I did not find any experimental details about this in the manuscript.\n\n8) In Figure 7, additional NTAN1 enhances virus-induced apoptosis and reduced viral replication in cell. How about in NTAN1 knockdown cells? In Figure 4C, ATE1 and NTAN1 knockdown cells by dsRNA shows accumulation of cleaved form of DAIP1. It is important to examine the caspase level or apoptotic state and DCV gRNA in NTAN1 knockdown cells upon DCV infection.\n\n9) Mechanism of antiviral function by apoptosis is not clear. Increased level of DCV gRNA in cells could be interpreted by many reasons. The viral RNA replication was enhanced in cells by anti-apoptotic DIAPI, viral budding pathway was blocked so that viral RNA was accumulated in the cells, or viral entry was more efficient than other groups, etc. Replicated RNA genome is packaged and newly packaged viral particles should be budded out into culture fluids. One feasible experiment is to analyze viral particles in cultured fluids by either RT-qPCR or any available methods in order to address the increased level of DCV gRNA means more infectious viable DCV.\n",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "85c68401-5fa4-4910-bfb3-1e20c3537260",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C1",
+      "claim": "DCV is a picorna-like virus assigned to the family Dicistroviridae of the order Picornavirales",
+      "claim_type": "EXPLICIT",
+      "source": "Among these viruses, DCV, which is a picorna-like virus assigned to the family Dicistroviridae of the order Picornavirales, is a natural pathogen of Drosophila and a classic model virus (Johnson and Christian, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Johnson and Christian, 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "161b0885-c486-4eaa-922a-25c41332cc44",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C2",
+      "claim": "DCV is a natural pathogen of Drosophila",
+      "claim_type": "EXPLICIT",
+      "source": "Among these viruses, DCV, which is a picorna-like virus assigned to the family Dicistroviridae of the order Picornavirales, is a natural pathogen of Drosophila and a classic model virus (Johnson and Christian, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Johnson and Christian, 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "172201f1-3f68-4516-95ad-a3fa9e3a4710",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C3",
+      "claim": "DCV-infected cells showed increased Annexin V and PI staining as infection progressed",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous study (Lamiable et al., 2016), DCV-infected cells showed increased Annexin V and PI staining as infection progressed when comparing with mock infected cells (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1A and B, and is consistent with a previous study cited (Lamiable et al., 2016)",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "247605e9-14dc-46d0-8384-fecab8f6f392",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C4",
+      "claim": "DCV-infected cells showed an increase in apoptotic cell death by TUNEL staining",
+      "claim_type": "EXPLICIT",
+      "source": "In this assay, DCV-infected cells also showed an increase in apoptotic cell death comparing with mock infected cells (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1C using TUNEL staining",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "63db21c2-033b-451b-a96e-3c87358d834a",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C5",
+      "claim": "DCV infection induced RHG gene transcription in Drosophila S2 cells",
+      "claim_type": "EXPLICIT",
+      "source": "Our data showed that DCV infection induced RHG gene transcription in Drosophila S2 cells (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "e5413e37-2691-400a-9464-cb18718e5d7e",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C6",
+      "claim": "The level of reaper mRNA was significantly induced at 6 hr post infection of DCV",
+      "claim_type": "EXPLICIT",
+      "source": "The level of reaper mRNA was significantly induced at 6 hr post infection (h.p.i) of DCV, while a significant induction of hid or grim mRNA can be detected at 12 h.p.i (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "719d77c0-abcf-4ea6-9c16-0623f0613a83",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C7",
+      "claim": "A significant induction of hid or grim mRNA can be detected at 12 h.p.i of DCV",
+      "claim_type": "EXPLICIT",
+      "source": "The level of reaper mRNA was significantly induced at 6 hr post infection (h.p.i) of DCV, while a significant induction of hid or grim mRNA can be detected at 12 h.p.i (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "b1aa35a0-12a1-4959-a10b-7c3ef324d929",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C8",
+      "claim": "DCV infection is able to induce the transcription of RHG genes and apoptosis in cultured Drosophila cells",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, DCV infection is able to induce the transcription of RHG genes and apoptosis in cultured Drosophila cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "4d12b9a0-625f-4843-b0ef-2767b4085119",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C9",
+      "claim": "Ectopic expression of DIAP1 effectively inhibited apoptosis",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that the ectopic expression of DIAP1 effectively inhibited apoptosis (Figure 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "dc237522-1d58-4e58-9295-80c294291473",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C10",
+      "claim": "Ectopic expression of DIAP1 caused about two-fold increase of DCV genomic RNA",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that the ectopic expression of DIAP1 effectively inhibited apoptosis (Figure 2A) and caused about two-fold increase of DCV genomic RNA (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "025283ce-de37-45c4-aaa3-984e5289ddcf",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C11",
+      "claim": "Knockdown of both effector caspases DrICE and DCP1 dramatically inhibited virus-induced apoptosis",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, when we knocked down both of the effector caspases DrICE and DCP1, the virus-induced apoptosis was also dramatically inhibited (Figure 2D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "9d725c99-314d-4eea-bdc7-d48425a45598",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C12",
+      "claim": "Knockdown of both effector caspases DrICE and DCP1 resulted in a significant increase of DCV genomic RNA in infected cells",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, when we knocked down both of the effector caspases DrICE and DCP1, the virus-induced apoptosis was also dramatically inhibited (Figure 2D), resulting in a significant increase of DCV genomic RNA in infected cells (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "594a735c-d443-4364-a91a-7434e7278e2e",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C13",
+      "claim": "The inhibition of apoptosis by either DIAP1 overexpression or effector caspases knockdown similarly increased DCV genomic RNA levels in cultured fluids",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the inhibition of apoptosis by either DIAP1 overexpression or effector caspases knockdown similarly increased DCV genomic RNA levels in cultured fluids (Figure 2C and F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2C and F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "6078ead5-e967-4a10-8c63-09d45314909f",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C14",
+      "claim": "The loss of p53 function made adult flies more susceptible to viral infection",
+      "claim_type": "EXPLICIT",
+      "source": "7 days after the DCV oral infection, almost all p53\u2212/\u2212 flies were dead, while about 40% control flies survived in the viral challenge (Figure 2G). These data indicate that the loss of p53 function made adult flies more susceptible to viral infection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "dc88e6b8-a177-4b94-8758-c03ce6776ef1",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C15",
+      "claim": "p53\u2212/\u2212 flies showed approximately 5-fold increase of DCV genomic RNA at 3 days post DCV oral infection compared with control flies",
+      "claim_type": "EXPLICIT",
+      "source": "We further tested the DCV genomic RNA level at 3 days post DCV oral infection, and observed approximately 5-fold increase of DCV genomic RNA in p53\u2212/\u2212 flies, when comparing with control flies (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "183b7979-b5b8-4488-ba74-c532c6ebe6ac",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C16",
+      "claim": "Apoptosis plays an antiviral role in cultured Drosophila S2 cells and adult flies",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data show that apoptosis plays an antiviral role in cultured Drosophila S2 cells and adult flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "7fbc1448-39fd-4a08-89b4-6daab23f7312",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C17",
+      "claim": "DIAP1 has been gradually depleted during the course of DCV infection",
+      "claim_type": "EXPLICIT",
+      "source": "DIAP1 has been gradually depleted during the course of DCV infection (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "047c4534-da2b-409d-b3ce-36552d9311e5",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C18",
+      "claim": "Viral infection before CHX addition promoted DIAP1 degradation",
+      "claim_type": "EXPLICIT",
+      "source": "Although viral infection immediately after CHX addition did not accelerate DIAP1 depletion (Figure 3\u2014figure supplement 1A, lanes 1 and 2 vs. 3 and 4), viral infection before CHX addition did promote DIAP1 degradation (Figure 3\u2014figure supplement 1A, lanes 5 and 6, 1B, 1C, and 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3\u2014figure supplement 1A, 1B, 1C, and 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "6bc3b484-c92b-4266-adbd-de2321ba684e",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C19",
+      "claim": "DCV infection promotes the degradation of DIAP1, and this process relies on viral protein synthesis and/or viral replication",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that DCV infection promotes the degradation of DIAP1, and this process relies on viral protein synthesis and/or viral replication, but not the input viral components, as blocking viral protein synthesis eliminated this effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data from CHX degradation assays shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "ae72b26c-d004-4fea-a573-50a9486d99b9",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C20",
+      "claim": "A slightly smaller, faster-migrating form of endogenous DIAP1 can be detected during DCV infection",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, a slightly smaller, faster-migrating form of endogenous DIAP1 can be detected (Figure 3A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "4c0e3991-39ed-4fd7-b8ed-648b2a34838a",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C21",
+      "claim": "The presence of z-VAD-FMK could effectively block the production of the smaller DIAP1",
+      "claim_type": "EXPLICIT",
+      "source": "Our result showed that the presence of z-VAD-FMK could effectively block the production of the smaller DIAP1 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "636755a1-1afa-4b7c-877e-6691a63abda5",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C22",
+      "claim": "The knockdown of either effector caspase DrICE or DCP-1 mostly blocked the appearance of the smaller DIAP1",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the results in Figure 3C, the knockdown of either effector caspase DrICE or DCP-1 mostly blocked the appearance of the smaller DIAP1 (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "297c8472-74c0-44b4-8c82-5c0b081e7dc3",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C23",
+      "claim": "A smaller form of exogenously expressed DIAP1 was readily detected using anti-HA but not anti-myc antibody",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, a smaller form of exogenously expressed DIAP1 was readily detected using anti-HA but not anti-myc antibody (Figure 3E), showing that this smaller form of DIAP1 lost its N-terminal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "4503b007-e6e9-41c8-b37f-de8d1044822e",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C24",
+      "claim": "The smaller form of exogenously expressed DIAP1 lost its N-terminal",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, a smaller form of exogenously expressed DIAP1 was readily detected using anti-HA but not anti-myc antibody (Figure 3E), showing that this smaller form of DIAP1 lost its N-terminal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the fact that the smaller form is detected by anti-HA (C-terminal tag) but not anti-myc (N-terminal tag)",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "76e64dc3-f3bc-405f-806b-b9aeb2bdd92f",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C25",
+      "claim": "The smaller form of exogenously expressed DIAP1 accumulated during the course of viral infection, but was almost completely degraded at 24 h.p.i.",
+      "claim_type": "EXPLICIT",
+      "source": "This smaller form of exogenously expressed DIAP1 accumulated during the course of viral infection, but was almost completely degraded at 24 h.p.i. (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "df1be2d6-26fe-4648-bbff-dc4cbdc85850",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C26",
+      "claim": "z-VAD-FMK blocked the generation of the smaller form of exogenously expressed DIAP1",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our previous data in Figure 3C, z-VAD-FMK blocked the generation of the smaller form of exogenously expressed DIAP1 (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "4c1020e5-b885-4015-bfe4-3e88502217de",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C27",
+      "claim": "The production of the smaller form of DIAP1 was mediated by caspase cleavage",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that the production of the smaller form of DIAP1 was mediated by caspase cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data showing that caspase inhibition blocks the production of the smaller DIAP1 form",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "a1b6da58-1658-4bf5-bf2c-699c9b885954",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C28",
+      "claim": "The D20A mutation eliminated the appearance of the smaller form of DIAP1",
+      "claim_type": "EXPLICIT",
+      "source": "Our data showed that the D20A mutation eliminated the appearance of the smaller form of DIAP1 (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "18d1bb94-4814-46bd-b5d8-8a5bfbe4f47e",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C29",
+      "claim": "The M38A mutation failed to prevent the production of the smaller form of DIAP1",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the other mutation, M38A, which blocks the internal initiation at the in-frame second ATG, failed to prevent the production of the smaller form of DIAP1, similarly with wild-type (WT) DIAP1 (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "3ae2003d-cb23-4b62-999b-aa81d4fa0d63",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C30",
+      "claim": "The smaller form of DIAP1, DIAP1\u0394N20, was able to inhibit virus-induced caspase activity as effective as DIAP1WT",
+      "claim_type": "EXPLICIT",
+      "source": "Our data showed that the smaller form of DIAP1, DIAP1\u0394N20, was also able to inhibit virus-induced caspase activity as effective as DIAP1WT (Figure 3I), indicating that this cleaved form of DIAP1 is still active.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "b7e73d84-24f9-4371-a219-a8fd330eaa03",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C31",
+      "claim": "The cleaved form of DIAP1 is still active in blocking apoptosis",
+      "claim_type": "EXPLICIT",
+      "source": "Our data showed that the smaller form of DIAP1, DIAP1\u0394N20, was also able to inhibit virus-induced caspase activity as effective as DIAP1WT (Figure 3I), indicating that this cleaved form of DIAP1 is still active.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing that DIAP1\u0394N20 inhibits caspase activity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "1809668b-6ccd-44d1-9acc-dede9da0ba4f",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C32",
+      "claim": "Viral infection caused the accumulation of a caspase-cleaved, smaller form of DIAP1 in cultured Drosophila cells",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our data show that viral infection caused the accumulation of a caspase-cleaved, smaller form of DIAP1, which is potent in apoptosis blockage, in cultured Drosophila cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "1cd816b2-76a4-47ad-b929-ebf2faac00a8",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C33",
+      "claim": "The caspase activity was enhanced after 12 h.p.i. of DCV",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that the caspase activity was enhanced after 12 h.p.i. (Figure 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "b0adb0c5-e8cf-4e7e-b46a-6687c3d36fad",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C34",
+      "claim": "The apparent accumulation of the smaller DIAP1 was readily detectable at 6 h.p.i.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that the caspase activity was enhanced after 12 h.p.i. (Figure 4A), while the apparent accumulation of the smaller DIAP1 was readily detectable at 6 h.p.i. (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "9405b86f-918d-418f-bfd1-960fa10ef7ae",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C35",
+      "claim": "At early stage of viral infection, the accumulation of smaller DIAP1 is not due to enhanced caspase activity",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, at least at early stage of viral infection, the accumulation of smaller DIAP1 is not due to enhanced caspase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that smaller DIAP1 accumulates at 6 h.p.i. while caspase activity is enhanced only after 12 h.p.i.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "f264aa89-8fbb-4ce3-b478-0fd4000dc6cd",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C36",
+      "claim": "Knockdown of N-end rule pathway key component NTAN1 or ATE1 by RNAi resulted in the accumulation of caspase-cleaved, smaller DIAP1",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with pervious study (Ditzel et al., 2003), knockdown of N-end rule pathway key component NTAN1 or ATE1 by RNAi resulted in the accumulation of caspase-cleaved, smaller DIAP1 (Figure 4C), confirming that the N-end rule pathway participates in the degradation of the caspase-cleaved DIAP1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4C and is consistent with a previous study cited (Ditzel et al., 2003)",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "4ecedbea-353a-45c7-ac5b-85e298854c9c",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C37",
+      "claim": "The N-end rule pathway participates in the degradation of the caspase-cleaved DIAP1",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with pervious study (Ditzel et al., 2003), knockdown of N-end rule pathway key component NTAN1 or ATE1 by RNAi resulted in the accumulation of caspase-cleaved, smaller DIAP1 (Figure 4C), confirming that the N-end rule pathway participates in the degradation of the caspase-cleaved DIAP1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4C and is consistent with a previous study cited (Ditzel et al., 2003)",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "f3506def-2a85-419f-8e5f-58860c35acfd",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C38",
+      "claim": "Viral infection could induce the accumulation of smaller DIAP1 in cells expressing DIAP1WT from 0 (mock) to 15 h.p.i.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that although viral infection could induce the accumulation of smaller DIAP1 in cells expressing DIAP1WT from 0 (mock) to 15 h.p.i. (Figure 4D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "3c1b0aaf-e2a3-4017-a0a6-9e2885babc5d",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C39",
+      "claim": "The cleaved, smaller form of DIAP1 became resistant to degradation and insensitive to viral infection in DIAP1N21A-expressing cells",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that although viral infection could induce the accumulation of smaller DIAP1 in cells expressing DIAP1WT from 0 (mock) to 15 h.p.i. (Figure 4D), the cleaved, smaller form of DIAP1 became resistant to degradation and insensitive to viral infection in DIAP1N21A-expressing cells (Figure 4E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "a3c3225f-70d6-4add-8e09-a9df9cf1b6e9",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C40",
+      "claim": "The effect of viral infection on the smaller DIAP1 accumulation is dependent on the N-end rule pathway",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that although viral infection could induce the accumulation of smaller DIAP1 in cells expressing DIAP1WT from 0 (mock) to 15 h.p.i. (Figure 4D), the cleaved, smaller form of DIAP1 became resistant to degradation and insensitive to viral infection in DIAP1N21A-expressing cells (Figure 4E), showing that the effect of viral infection on the smaller DIAP1 accumulation is dependent on the N-end rule pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing that the N21A mutation makes DIAP1 insensitive to viral infection",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "1456ee11-4d64-487f-8933-52193b4cf2ee",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C41",
+      "claim": "Viral infection did not increase the accumulation of the cleaved, smaller form of DIAP1N21D",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, viral infection did not increase the accumulation of the cleaved, smaller form of DIAP1N21D (Figure 4F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "dd9a5ab7-8690-472b-8a8f-26769f0f549f",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C42",
+      "claim": "The inhibition of the deamidation step of the N-end rule pathway is required for the virus-induced accumulation of cleaved DIAP1",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, viral infection did not increase the accumulation of the cleaved, smaller form of DIAP1N21D (Figure 4F), indicating that the inhibition of the deamidation step of the N-end rule pathway is required for the virus-induced accumulation of cleaved DIAP1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing that the N21D mutation, which skips the deamidation step, prevents virus-induced accumulation of cleaved DIAP1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "bc0c121e-6044-4348-80f9-c1139618aac8",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C43",
+      "claim": "Viral infection induced the gradual decrease of the protein level of NTAN1 but not ATE1",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our previous observation that the cleaved DIAP1 accumulation is dependent on the inhibition of NTAN1-mediated deamidation step (Figure 4F), our data show that viral infection induced the gradual decrease of the protein level of NTAN1 but not ATE1 (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "6aa86b78-a1f6-421e-ad4a-6e035d151c4e",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C44",
+      "claim": "The mRNA levels of NTAN1 and ATE1 are both up-regulated during the same time course of viral infection",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the mRNA levels of NTAN1 and ATE1 are both up-regulated during the same time course of viral infection (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "448e6aaa-e946-4f38-afa3-fc492d326a3a",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C45",
+      "claim": "The exogenously expressed NTAN1 was down-regulated during the course of viral infection",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we examined the effect of viral infection to exogenously expressed NTAN1 in cultured cells, and found that the exogenously expressed NTAN1 was also down-regulated during the course of viral infection (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "3b5d5bd2-e46f-4931-9e7f-4102dee11688",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C46",
+      "claim": "The level of exogenously expressed EGFP was not affected by viral infection",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the level of exogenously expressed EGFP was not affected by viral infection (Figure 5D), confirming that the protein expression using the same expression vector was not affected by viral infection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "831debba-d3ee-4cb0-bc9b-6d103f53f88e",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C47",
+      "claim": "Viral infection induced the decrease of NTAN1 protein level in a post-transcriptional manner",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that viral infection induced the decrease of NTAN1 protein level in a post-transcriptional manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that NTAN1 protein decreases while NTAN1 mRNA increases during viral infection",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "ea496180-6b21-4ef7-a028-486d12cf9a96",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C48",
+      "claim": "Viral infection immediately after CHX addition did not accelerate NTAN1 depletion",
+      "claim_type": "EXPLICIT",
+      "source": "Similar with that of DIAP1, while viral infection immediately after CHX addition did not accelerate NTAN1 depletion (Figure 5E, lanes 1\u20132 vs. 3\u20134)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "a785ef84-ae96-421b-aa64-f7ff0c1730b0",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C49",
+      "claim": "Viral infection before CHX addition significantly promoted NTAN1 degradation rate when compared with that in non-infected cells",
+      "claim_type": "EXPLICIT",
+      "source": "Similar with that of DIAP1, while viral infection immediately after CHX addition did not accelerate NTAN1 depletion (Figure 5E, lanes 1\u20132 vs. 3\u20134), viral infection before CHX addition significantly promoted NTAN1 degradation rate when compared with that in non-infected cells (Figure 5E, lanes 1\u20132 vs. 5\u20136, Figure 5F,G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5E, F, G and H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "c1c4b4cf-e9b9-4c62-8358-b154ad26442e",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C50",
+      "claim": "Viral infection promoted the accumulation of NTAN1 after 12 h.p.i.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, viral infection promoted the accumulation of NTAN1 after 12 h.p.i. (Figure 5\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "aa029c79-2fba-47f7-ac39-44dd92dc361f",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C51",
+      "claim": "Virus induced the degradation of NTAN1 protein in the early stage of infection",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our data showed that virus induced the degradation of NTAN1 protein in the early stage of infection, which could lead to the accumulation of caspase cleaved, smaller form of DIAP1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "94586d4c-3a84-4951-983a-8e3e40ea05d4",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C52",
+      "claim": "During viral infection, the NTAN1 protein levels could be restored by either MG-132 or lactacystin treatment",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that, during viral infection, the NTAN1 protein levels could be restored by either MG-132 or lactacystin treatment (Figure 6A and B), suggesting that the proteasome pathway is involved in virus-induced degradation of NTAN1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "9b1ae8c1-6333-4c8c-8455-9a1f7b388904",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C53",
+      "claim": "The proteasome pathway is involved in virus-induced degradation of NTAN1",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that, during viral infection, the NTAN1 protein levels could be restored by either MG-132 or lactacystin treatment (Figure 6A and B), suggesting that the proteasome pathway is involved in virus-induced degradation of NTAN1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing that proteasome inhibitors restore NTAN1 protein levels during viral infection",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "e49a5bdd-7e17-4162-aeb2-40c09919c7d8",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C54",
+      "claim": "Viral infection was able to induce the decrease of NTAN14KA protein level",
+      "claim_type": "EXPLICIT",
+      "source": "However, when NTAN14KA was exogenously expressed in Drosophila S2 cells, viral infection was still able to induce the decrease of NTAN14KA protein level (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "cb56142b-c546-40e2-ada8-b06f3eefd05e",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C55",
+      "claim": "In the absence of viral infection, NTAN14KA is significantly more stable than NTAN1WT",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we conducted CHX degradation assay, and observed that in the absence of viral infection, NTAN14KA is significantly more stable than NTAN1WT, while viral infection similarly promoted the degradation of both NTAN14KA and NTAN1WT (Figure 6D\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6D\u2013H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "da795d7d-fd42-4f30-8d3a-7d3da24a9de6",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C56",
+      "claim": "Viral infection similarly promoted the degradation of both NTAN14KA and NTAN1WT",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we conducted CHX degradation assay, and observed that in the absence of viral infection, NTAN14KA is significantly more stable than NTAN1WT, while viral infection similarly promoted the degradation of both NTAN14KA and NTAN1WT (Figure 6D\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6D\u2013H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "fe059a3d-1ee3-4d49-b759-0a82613ec630",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C57",
+      "claim": "The virus-induced NTAN1 degradation is independent of ubiquitylation",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that the virus-induced NTAN1 degradation is independent of ubiquitylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing that NTAN14KA, which cannot be ubiquitylated on lysine residues, is still degraded by viral infection",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "a96ff1d3-cfcf-41c0-a6d5-3ce1c37aae44",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C58",
+      "claim": "Blocking the proteasome by MG-132 treatment did not show any effect on the protein level of NTAN14KA in the absence of viral infection",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, NTAN14KA is significantly more stable than NTAN1WT (Figures 6D, F and H); additionally, unlike NTAN1WT (Figure 6A, lanes 1 vs. 5), blocking the proteasome by MG-132 treatment did not show any effect on the protein level of NTAN14KA in the absence of viral infection (Figure 6C, lanes 1 vs. 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "2e61ba82-fa88-4a19-bb3b-15e8602d4fbb",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C59",
+      "claim": "NTAN1WT but not NTAN14KA can be polyubiquitylated",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our results showed that NTAN1WT but not NTAN14KA can be polyubiquitylated, while the polyubiquitylation of NTAN1 was not affected by viral infection (Figure 6\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6\u2014figure supplement 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "5fb4f03a-c2ea-4da4-9147-4c0a4c6231d9",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C60",
+      "claim": "The polyubiquitylation of NTAN1 was not affected by viral infection",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our results showed that NTAN1WT but not NTAN14KA can be polyubiquitylated, while the polyubiquitylation of NTAN1 was not affected by viral infection (Figure 6\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6\u2014figure supplement 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "7a1fccf7-6851-4c91-a10d-367d9943224e",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C61",
+      "claim": "K186 is most responsible for the ubiquitylation-dependent degradation of NTAN1 in the absence of viral infection",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, like NTAN14KA, NTAN1K186A is resistant to degradation in the absence of viral infection (Figure 6C and Figure 6\u2014figure supplement 2E, lanes 1 vs. 4), indicating that K186 is most responsible for the ubiquitylation-dependent degradation of NTAN1 in the absence of viral infection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the experimental data showing that NTAN1K186A is resistant to degradation in the absence of viral infection",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "140675ce-0e4c-4dcd-aed6-5cda6578ea0f",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C62",
+      "claim": "NTAN1 can be polyubiquitylated, and degraded by both ubiquitylation-dependent and -independent degradation pathways",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our data showed that NTAN1 can be polyubiquitylated, and degraded by both ubiquitylation-dependent and -independent degradation pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "52b5cec2-9cc3-476f-8e6e-44e562af6896",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C63",
+      "claim": "Both NTAN1 degradation pathways are dependent on proteasome",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our data showed that NTAN1 can be polyubiquitylated, and degraded by both ubiquitylation-dependent and -independent degradation pathways. While both NTAN1 degradation pathways are dependent on proteasome, the virus-induced NTAN1 degradation is independent of ubiquitylation (as illustrated in Figure 6I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the experimental data presented in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "0d4df3f6-d0f7-4fa2-8e7a-3886e9bd3c37",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C64",
+      "claim": "The virus-induced NTAN1 degradation is independent of ubiquitylation",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our data showed that NTAN1 can be polyubiquitylated, and degraded by both ubiquitylation-dependent and -independent degradation pathways. While both NTAN1 degradation pathways are dependent on proteasome, the virus-induced NTAN1 degradation is independent of ubiquitylation (as illustrated in Figure 6I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the experimental data presented in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "5212ea2a-da19-410a-8218-1a837793f1a3",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C65",
+      "claim": "The ectopic expression of HA-NTAN1 partially restored the expression of NTAN1, resulting in the almost elimination of both full-length and caspase-cleaved forms of DIAP1 at 15 and 18 h.p.i.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that the ectopic expression of HA-NTAN1 partially restored the expression of NTAN1, resulting in the almost elimination of both full-length and caspase-cleaved forms of DIAP1 at 15 and 18 h.p.i. (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 7A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "696b950c-0b27-48e6-a3e5-05378be9cd9d",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C66",
+      "claim": "In the context of viral infection, the partial restoration of NTAN1 expression significantly promoted apoptosis",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, in the context of viral infection, the partial restoration of NTAN1 expression significantly promoted apoptosis (Figure 7B) and the relative caspase activity in cells (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "b49038ad-b6d2-46eb-b2d6-cc1c6de2bb79",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C67",
+      "claim": "In the context of viral infection, the partial restoration of NTAN1 expression significantly promoted the relative caspase activity in cells",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, in the context of viral infection, the partial restoration of NTAN1 expression significantly promoted apoptosis (Figure 7B) and the relative caspase activity in cells (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 7C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "e1957bf6-fa1d-4504-b9d9-56c799f86aa7",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C68",
+      "claim": "The partial restoration of NTAN1 expression significantly restricted viral RNA replication at 18 h.p.i.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the partial restoration of NTAN1 expression also significantly restricted viral RNA replication at 18 h.p.i. (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 7D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "4ceb926d-1d85-47c7-b8a8-682bf6192f02",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C69",
+      "claim": "The knockdown of NTAN1 inhibited virus-induced apoptosis and enhanced DCV replication",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the knockdown of NTAN1 inhibited virus-induced apoptosis and enhanced DCV replication (Figure 7\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 7\u2014figure supplement 1A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "7453bfe9-71c5-45e3-84eb-6b7d75dc3963",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C70",
+      "claim": "Virus-induced NTAN1 degradation can inhibit apoptosis and benefit viral replication",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these data indicate that virus-induced NTAN1 degradation can inhibit apoptosis and benefit viral replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in Figure 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "801624c4-14a0-4c3d-b4b4-b2cd6cf2f6dc",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C71",
+      "claim": "A picorna-like virus can induce apoptosis",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we demonstrate that a picorna-like virus can induce apoptosis, and the virus-induced apoptosis plays an antiviral role in Drosophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the Results section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "f14ca811-7380-462d-bc82-bb0e69f4593c",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C72",
+      "claim": "The virus-induced apoptosis plays an antiviral role in Drosophila",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we demonstrate that a picorna-like virus can induce apoptosis, and the virus-induced apoptosis plays an antiviral role in Drosophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the Results section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "0456f1c3-4fce-4ad3-aaad-b478510462fb",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C73",
+      "claim": "Viral infection is able to induce the degradation of NTAN1 via an ubiquitylation-independent proteasome pathway in cells",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we uncovered that viral infection is able to induce the degradation of NTAN1, a key component of the N-end rule degradation pathway, via an ubiquitylation-independent proteasome pathway in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the Results section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "ffc7e2fe-f93c-4d1d-b112-038a4ad76c2e",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C74",
+      "claim": "The virus-induced degradation of NTAN1 caused the accumulation of caspase-cleaved, shorter form of DIAP1 by inhibiting its N-terminal Asn deamidation",
+      "claim_type": "EXPLICIT",
+      "source": "The virus-induced degradation of NTAN1 caused the accumulation of caspase-cleaved, shorter form of DIAP1 by inhibiting its N-terminal Asn deamidation, resulting in the suppression of apoptosis and the enhancement of viral replication (as illustrated in Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the experimental data presented in the Results section and illustrated in Figure 8",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "a8bce3b1-1bb9-40bc-aaf3-8147f7c65b9a",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C75",
+      "claim": "The virus-induced N-end rule pathway suppression results in the suppression of apoptosis and the enhancement of viral replication",
+      "claim_type": "EXPLICIT",
+      "source": "The virus-induced degradation of NTAN1 caused the accumulation of caspase-cleaved, shorter form of DIAP1 by inhibiting its N-terminal Asn deamidation, resulting in the suppression of apoptosis and the enhancement of viral replication (as illustrated in Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the experimental data presented in the Results section and illustrated in Figure 8",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "5b2e9d53-4a41-4b64-aa43-e089c9da14ed",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C76",
+      "claim": "The apoptotic pathway is recognized as an antiviral defense mechanism",
+      "claim_type": "EXPLICIT",
+      "source": "The apoptotic pathway is recognized as an antiviral defense mechanism (Everett and McFadden, 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Everett and McFadden, 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "8e5a3788-99b1-40d6-a1dd-cb9664c52121",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C77",
+      "claim": "The infection by a picorna-like virus can suppress the N-end rule pathway by inducing the degradation of its key component NTAN1",
+      "claim_type": "EXPLICIT",
+      "source": "Our current study uncovered that the infection by a picorna-like virus can suppress the N-end rule pathway by inducing the degradation of its key component NTAN1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the Results section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "06fa6fe7-9f3f-40f4-8e7c-7d654c8632c3",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C78",
+      "claim": "The virus-induced suppression of the N-end rule pathway causes the accumulation of caspase-cleaved DIAP1, which results in apoptosis inhibition",
+      "claim_type": "EXPLICIT",
+      "source": "This process causes the accumulation of caspase-cleaved DIAP1, which results in apoptosis inhibition and represents a novel mechanism of viral evasion of apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the Results section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "8f6f332c-d8cd-43ac-baa3-9f2ca5f82916",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C79",
+      "claim": "The virus-induced degradation of NTAN1 is dependent of proteasome but independent of ubiquitylation",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting that the virus-induced degradation of NTAN1 is dependent of proteasome but independent of ubiquitylation (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "6d56ec11-c7f5-455b-9929-49784384d70d",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C80",
+      "claim": "The ubiquitin-independent proteolytic activity of proteasomes is involved in the degradation of oxidized proteins, chemically unfolded proteins, and specific natively disordered proteins",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that the ubiquitin-independent proteolytic activity of proteasomes is involved in the degradation of oxidized proteins, chemically unfolded proteins, and specific natively disordered proteins (Baugh et al., 2009; Grune et al., 2003; Hoyt and Coffino, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Baugh et al., 2009; Grune et al., 2003; Hoyt and Coffino, 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "87020ea9-2fa1-463f-b261-259d87d9cbc3",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C81",
+      "claim": "Several important regulatory proteins can be degraded by ubiquitin-independent proteasome mechanism",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth to mention that several important regulatory proteins can be degraded by this mechanism (Hoyt and Coffino, 2004), including p21/Cip1 (Sheaff et al., 2000), I\u03baB\u03b1 (Krappmann et al., 1996), c-Jun (Jariel-Encontre et al., 1995) and p53 (Tsvetkov et al., 2009; Tsvetkov et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "f01847d4-9d28-46dc-af21-f6c4cbce01e2",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C82",
+      "claim": "The N-end rule pathway is normally recognized as an ubiquitin proteasome proteolytic system and employs specific E3 ubiquitin ligases",
+      "claim_type": "EXPLICIT",
+      "source": "The N-end rule pathway is normally recognized as an ubiquitin proteasome proteolytic system and employs specific E3 ubiquitin ligases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about the N-end rule pathway",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "9b1b506f-e741-4a6a-bf1b-e89214f021fe",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C83",
+      "claim": "NTAN1 can be degraded in an ubiquitin-independent manner",
+      "claim_type": "EXPLICIT",
+      "source": "As a key component of the N-end rule pathway, NTAN1 can be degraded in an ubiquitin-independent manner suggests a connection between these distinct proteasome proteolytic mechanisms",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "dbbece4c-7044-450e-a3c7-816fabc2db9d",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C84",
+      "claim": "The N-end rule pathway plays an important role in various biological processes",
+      "claim_type": "EXPLICIT",
+      "source": "The N-end rule pathway plays an important role in various biological processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about the N-end rule pathway",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "92479dcf-dfd9-4215-b6b3-11ef181ec753",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C85",
+      "claim": "NTAN1 is the key component that regulates the half-life of a protein by identifying its N-terminal residue and initiating the process",
+      "claim_type": "EXPLICIT",
+      "source": "In the N-end rule pathway, NTAN1 is the key component that regulates the half-life of a protein by identifying its N-terminal residue and initiating the process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about NTAN1's role in the N-end rule pathway",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "0ad482a0-f256-42c6-a0df-1e5c733ef7c3",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C86",
+      "claim": "NTAN1-deficient mice have neurological defects such as impairment of spontaneous activity and spatial memory",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that NTAN1-deficient mice have neurological defects such as impairment of spontaneous activity and spatial memory (Balogh et al., 2000, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Balogh et al., 2000, 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "9daf122a-1798-46bb-b3d4-9d5d60f8dd72",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C87",
+      "claim": "Viral infection can induce NTAN1 degradation, resulting in the suppression of the N-end rule pathway and subsequent evasion of apoptosis",
+      "claim_type": "EXPLICIT",
+      "source": "Our current study found that viral infection can induce NTAN1 degradation, resulting in the suppression of the N-end rule pathway and subsequent evasion of apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the Results section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "7da6f4ca-9ea1-4761-8303-74b30f9e85d3",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C88",
+      "claim": "Blocking protein synthesis by CHX before viral infection abolished the effect of DCV to induce NTAN1 degradation",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that blocking protein synthesis by CHX before viral infection abolished the effect of DCV to induce NTAN1 degradation, indicating that viral protein synthesis and/or viral replication within infected cells, but not the input viral components, are responsible for this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data from CHX degradation assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "4f9e286f-5ff5-441f-9a31-8b2ffb11da10",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C89",
+      "claim": "Viral protein synthesis and/or viral replication within infected cells, but not the input viral components, are responsible for NTAN1 degradation",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that blocking protein synthesis by CHX before viral infection abolished the effect of DCV to induce NTAN1 degradation, indicating that viral protein synthesis and/or viral replication within infected cells, but not the input viral components, are responsible for this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing that blocking protein synthesis abolishes NTAN1 degradation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "187d8622-c4e3-46d6-a7a0-84f70a822fee",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C90",
+      "claim": "Viruses in the order Picornavirales encode a 3C or 3C-like (3CL) protease that cleaves viral polyproteins",
+      "claim_type": "EXPLICIT",
+      "source": "Viruses in the order Picornavirales encode a 3C or 3C-like (3 CL) protease that cleaves viral polyproteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about picornaviruses",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "b7e06e70-9f87-488e-8855-05d583ee8adb",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C91",
+      "claim": "3C proteases from multiple mammalian picornaviruses are able to cleave and degrade host proteins to manipulate immune responses",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that 3C proteases from multiple mammalian picornaviruses, such as foot-and-mouth disease virus (FMDV), Hepatitis A Virus, enterovirus 68, and enterovirus 71, are able to cleave and degrade host proteins to manipulate immune responses (Wang et al., 2012; Yang et al., 2007; Xiang et al., 2014; Lei et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "9bab59ab-9534-4ed7-b252-d8d5f4317a42",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C92",
+      "claim": "A virus can suppress the N-end rule pathway",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our findings demonstrate for the first time that a virus can suppress the N-end rule pathway, and uncover a new mechanism for virus to evade apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the Results section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "fbc26926-5de2-42f8-97f7-e786babc7a38",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C93",
+      "claim": "The N-end rule pathway is highly conserved from prokaryotes to eukaryotes",
+      "claim_type": "EXPLICIT",
+      "source": "Given the high conservation of the N-end rule pathway from prokaryotes to eukaryotes, it opens up the possibilities that this mechanism can also be employed by other viruses, particularly picornaviruses, to evade apoptosis and/or modulate other cellular processes, which are the targets of N-end rule pathway, in mammals or other organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about the N-end rule pathway",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "5651b3ff-e6e4-4502-bdeb-f89860683ae0",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C94",
+      "claim": "This mechanism can also be employed by other viruses, particularly picornaviruses, to evade apoptosis and/or modulate other cellular processes in mammals or other organisms",
+      "claim_type": "IMPLICIT",
+      "source": "Given the high conservation of the N-end rule pathway from prokaryotes to eukaryotes, it opens up the possibilities that this mechanism can also be employed by other viruses, particularly picornaviruses, to evade apoptosis and/or modulate other cellular processes, which are the targets of N-end rule pathway, in mammals or other organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on the conservation of the N-end rule pathway and the findings in this study",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "4719ec29-a6b6-48df-bc09-cbc7075527e3",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C95",
+      "claim": "Various viruses, including Autographa californica nucleopolyhedrovirus (AcMNPV), Flock House Virus (FHV), and Drosophila C virus (DCV), can induce apoptosis in Drosophila cells or adult flies",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies showed that various viruses, including Autographa californica nucleopolyhedrovirus (AcMNPV), Flock House Virus (FHV), and Drosophila C virus (DCV), can induce apoptosis in Drosophila cells or adult flies (Lamiable et al., 2016; Lannan et al., 2007; Liu et al., 2013; Nainu et al., 2015; Settles and Friesen, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "460198f4-8b0d-4cf9-ad4c-eac7acbbb6f6",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C96",
+      "claim": "The transcriptions of RHG genes were up-regulated by the AcMNPV or FHV infection in adult flies",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, previous study has reported that the transcriptions of RHG genes were up-regulated by the AcMNPV or FHV infection in adult flies (Liu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Liu et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "9ff18438-7ef2-4f63-badf-8d5729154cfa",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C97",
+      "claim": "DIAP1 has been reported to be depleted during the course of FHV infection",
+      "claim_type": "EXPLICIT",
+      "source": "As one of the most important cell death regulators, DIAP1 has been reported to be depleted during the course of FHV infection (Settles and Friesen, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Settles and Friesen, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "6029be8b-8542-4910-9681-6bb9b8b3308c",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C98",
+      "claim": "DIAP1 can be cleaved at Asp20 by caspase to expose an N-terminal Asn residue",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been reported that DIAP1 can be degraded by the N-end rule pathway. In this process, DIAP1 is cleaved at Asp20 by caspase to expose an N-terminal Asn residue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about DIAP1 degradation",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "ee2cc73d-be8f-4bdf-aa32-7231a1b621d7",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C99",
+      "claim": "The exposed N-terminal Asn can be recognized and converted into Asp by NTAN1, and further catalyzed by Arginine-tRNA-protein transferase (ATE1)",
+      "claim_type": "EXPLICIT",
+      "source": "The exposed N-terminal Asn can be recognized and converted into Asp by NTAN1, and further catalyzed by Arginine-tRNA-protein transferase (ATE1) (Ditzel et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Ditzel et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "6d379f2b-02c8-4044-9a17-2aa673f4b5c1",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C100",
+      "claim": "Arg-conjugated proteins can be recognized and ubiquitylated by the N-end rule specific E3 ubiquitin ligase, UBR1, and then subject to fast degradation",
+      "claim_type": "EXPLICIT",
+      "source": "Such Arg-conjugated proteins can be recognized and ubiquitylated by the N-end rule specific E3 ubiquitin ligase, UBR1, and then subject to fast degradation (Ditzel et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Ditzel et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "8a6377ed-75da-49f2-af86-732c34df2e76",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C101",
+      "claim": "The N-end rule pathway is a proteasome dependent proteolytic system that recognizes and degrades proteins containing N-degrons",
+      "claim_type": "EXPLICIT",
+      "source": "The N-end rule pathway is a proteasome dependent proteolytic system that recognizes and degrades proteins containing N-degrons (Gibbs et al., 2014a; Tasaki et al., 2012; Varshavsky, 2011; Tasaki and Kwon, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "0a5f26ee-8c45-4cd5-ab37-84c2a69d9b54",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C102",
+      "claim": "The N-end rule pathway has been found to be evolutionarily conserved from prokaryotic to eukaryotic organisms",
+      "claim_type": "EXPLICIT",
+      "source": "This pathway has been found to be evolutionarily conserved from prokaryotic to eukaryotic organisms, including bacteria (Tobias et al., 1991), yeast (Bachmair et al., 1986), plant (Graciet et al., 2009; Yoshida et al., 2002), invertebrate (Ditzel et al., 2003), and vertebrate (Davydov and Varshavsky, 2000; Lee et al., 2005; Park et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "3747c6e4-6e03-4d2c-9792-9565b64884a3",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C103",
+      "claim": "The N-end rule pathway relates the half-lives of proteins with the nature of their N-termini",
+      "claim_type": "EXPLICIT",
+      "source": "The N-end rule pathway relates the half-lives of proteins with the nature of their N-termini (Gibbs et al., 2014a; Tasaki et al., 2012; Varshavsky, 2011; Tasaki and Kwon, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "ca265346-5120-4525-a6fa-cd02406893d9",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C104",
+      "claim": "The N-end rule pathway participates in a large number of important cellular processes",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that the N-end rule pathway participates in a large number of important cellular processes, such as G protein signaling (Davydov and Varshavsky, 2000; Lee et al., 2005; Park et al., 2015), chromosome stability (Rao et al., 2001), apoptosis (Ditzel et al., 2003), oxygen and nitric oxide sensing (Gibbs et al., 2014b), degradation of neurodegeneration-associated protein fragments (Brower et al., 2013) and etc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "9fb0f72c-64e2-4959-b8ad-dd003bb76ba2",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C105",
+      "claim": "Sindbis virus nsP4 and HIV-1 integrase are N-end rule substrates",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Sindbis virus nsP4 and HIV-1 integrase are N-end rule substrates (de Groot et al., 1991; Mulder and Muesing, 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to de Groot et al., 1991; Mulder and Muesing, 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "e7e5d695-a55c-4d6e-879a-d9afcbb7cafa",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C106",
+      "claim": "Human papillomavirus E7 binds to UBR4, the E3 ligase in the N-end rule pathway",
+      "claim_type": "EXPLICIT",
+      "source": "and human papillomavirus E7 binds to UBR4, the E3 ligase in the N-end rule pathway (White et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to White et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "83609fcf-4085-4226-878c-1f8e9c569815",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C107",
+      "claim": "It remains unclear if viral infection has any impact on the N-end rule pathway",
+      "claim_type": "EXPLICIT",
+      "source": "However, it remains unclear if viral infection has any impact on this pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the lack of previous studies on this topic",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "34f92e2f-1781-40f0-8cb8-1a98a4591788",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C108",
+      "claim": "Apoptosis is a highly conserved biological process throughout evolution",
+      "claim_type": "EXPLICIT",
+      "source": "Apoptosis is a highly conserved biological process throughout evolution and is important for normal tissue development and removal of obsolete, abnormal or potentially harmful cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about apoptosis",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "0ca94495-3579-4bf2-9d1a-24c31c0eb33f",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C109",
+      "claim": "The apoptotic pathway shows sensitivity to various stimuli and can lead to cysteinyl aspartate protease (caspase) dependent proteolytic digestion and further cell death",
+      "claim_type": "EXPLICIT",
+      "source": "The apoptotic pathway shows sensitivity to various stimuli and can lead to cysteinyl aspartate protease (caspase) dependent proteolytic digestion and further cell death (Benedict et al., 2002; Kumar, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Benedict et al., 2002; Kumar, 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "892f09dd-10df-4b07-8123-557d62cf9ea1",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C110",
+      "claim": "Apoptosis is generally considered as an efficient antiviral defense mechanism by clearing virus-infected cells",
+      "claim_type": "EXPLICIT",
+      "source": "Apoptosis is generally considered as an efficient antiviral defense mechanism by clearing virus-infected cells, while many viruses employ different strategies to evade apoptosis at various levels (Benedict et al., 2002; Everett and McFadden, 1999; Kim et al., 2014a, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "75feb803-b84b-416e-9671-0fd45871612b",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C111",
+      "claim": "Many viruses employ different strategies to evade apoptosis at various levels",
+      "claim_type": "EXPLICIT",
+      "source": "Apoptosis is generally considered as an efficient antiviral defense mechanism by clearing virus-infected cells, while many viruses employ different strategies to evade apoptosis at various levels (Benedict et al., 2002; Everett and McFadden, 1999; Kim et al., 2014a, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "d0725cf6-2c67-4b9b-9b02-351eea61269e",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C112",
+      "claim": "The caspase proteases are the central executioners of apoptosis in Drosophila",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to other organisms, the caspase proteases are the central executioners of apoptosis in Drosophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about apoptosis in Drosophila",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "a00560a5-9f45-4cec-805b-ee19f464ce29",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C113",
+      "claim": "The fly caspase-9 homolog Dronc is the only known initiator caspase that is activated following a variety of apoptotic stimuli and can be activated by auto-cleavage",
+      "claim_type": "EXPLICIT",
+      "source": "The fly caspase-9 homolog Dronc is the only known initiator caspase that is activated following a variety of apoptotic stimuli and can be activated by auto-cleavage (Muro et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Muro et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "020c841e-a942-41e1-b324-92a0b12987b6",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C114",
+      "claim": "Activated Dronc can further cleave and activate various effector caspases such as DrICE and DCP-1, leading to apoptotic induction",
+      "claim_type": "EXPLICIT",
+      "source": "Activated Dronc can further cleave and activate various effector caspases such as DrICE and DCP-1, leading to apoptotic induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about the caspase cascade in Drosophila",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "76b3d744-71d8-4b14-b237-16bdd5aeedb3",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C115",
+      "claim": "The initiator caspase Dronc and the effector caspases DrICE and DCP-1 are negatively regulated by DIAP1",
+      "claim_type": "EXPLICIT",
+      "source": "The initiator caspase Dronc and the effector caspases DrICE and DCP-1 are negatively regulated by DIAP1 (Hawkins et al., 1999, 2000; Li et al., 2011; Meier et al., 2000; Wilson et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "fe7e7573-42e1-4601-9a6d-36100679c7ef",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C116",
+      "claim": "DIAP1 shares several properties in structure and function with mammalian X-linked inhibitor of apoptosis (XIAP)",
+      "claim_type": "EXPLICIT",
+      "source": "DIAP1 shares several properties in structure and function with mammalian X-linked inhibitor of apoptosis (XIAP) and can block cell death in response to multiple stimuli (Hay et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hay et al., 1995",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "fc16a8e3-9299-4de9-ae82-403402c0fbc0",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C117",
+      "claim": "DIAP1 can block cell death in response to multiple stimuli",
+      "claim_type": "EXPLICIT",
+      "source": "DIAP1 shares several properties in structure and function with mammalian X-linked inhibitor of apoptosis (XIAP) and can block cell death in response to multiple stimuli (Hay et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hay et al., 1995",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "69aadc47-8f70-4f2e-b10c-2c1b91cee204",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C118",
+      "claim": "Drosophila Reaper, Hid and Grim (RHG proteins) can inhibit the apoptosis suppression activity of DIAP1 or induce the degradation of DIAP1",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Drosophila Reaper, Hid and Grim (also referred to RHG proteins) can inhibit the apoptosis suppression activity of DIAP1 or induce the degradation of DIAP1 (Huh et al., 2007; Wang et al., 1999; Yoo et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "a7acbec9-4af2-4103-9801-bfd0223c3f6f",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C119",
+      "claim": "DIAP1 can be auto-ubiquitylated via its C-terminal RING ubiquitin ligase domain",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, DIAP1 can be auto-ubiquitylated via its C-terminal RING ubiquitin ligase domain (Wilson et al., 2002) or be ubiquitylated by other E3 ubiquitin ligases such as DIAP2 (Herman-Bachinsky et al., 2007), followed by proteasome-dependent degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Wilson et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "1536a07a-a7f3-4182-9bd3-3ce680a79fc2",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "claim_id": "C120",
+      "claim": "DIAP1 can be ubiquitylated by other E3 ubiquitin ligases such as DIAP2",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, DIAP1 can be auto-ubiquitylated via its C-terminal RING ubiquitin ligase domain (Wilson et al., 2002) or be ubiquitylated by other E3 ubiquitin ligases such as DIAP2 (Herman-Bachinsky et al., 2007), followed by proteasome-dependent degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Herman-Bachinsky et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "836a674b-9e0b-41b8-b43a-cc034e09b84a",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "DCV infection induces apoptosis in cultured Drosophila S2 cells, as demonstrated by increased Annexin V/PI staining, TUNEL-positive cells, and upregulation of RHG genes (reaper at 6 h.p.i., hid and grim at 12 h.p.i.).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple independent assays (flow cytometry with Annexin V/PI, TUNEL staining, and qRT-PCR for RHG genes) consistently demonstrate apoptosis induction by DCV. The temporal progression and use of complementary methods provide strong convergent evidence. The results are consistent with prior work (C95-C96).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "9afa371f-c9d1-4f51-bec3-b4a39382f44c",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Inhibition of apoptosis through DIAP1 overexpression or effector caspase knockdown increases DCV genomic RNA levels in cells and culture fluids. Loss of p53 function in adult flies increases susceptibility to DCV infection and viral RNA levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The antiviral role of apoptosis is demonstrated through multiple complementary approaches: genetic manipulation in cells (DIAP1 overexpression, caspase knockdown) and in vivo experiments (p53 mutant flies). The consistency across different experimental systems and the control for virus entry/release (C13) strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "b4f41d79-03f2-4092-bc00-81d881ad9191",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "DCV infection promotes accumulation of a caspase-cleaved, N-terminally truncated form of DIAP1 that retains anti-apoptotic activity. The cleavage occurs at Asp20, is mediated by effector caspases DrICE/DCP-1, and requires viral protein synthesis/replication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The characterization of cleaved DIAP1 is thorough, using multiple approaches: caspase inhibitors (z-VAD-FMK), RNAi knockdown, epitope-tagged constructs, site-directed mutagenesis (D20A, M38A), and CHX degradation assays. The functional activity of cleaved DIAP1 is demonstrated (C30-C31). The convergence of evidence from different experimental strategies strongly supports the claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "b9658857-438b-4be6-92d0-090808598469",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Virus-induced accumulation of cleaved DIAP1 is mediated by inhibition of the N-end rule pathway, specifically the NTAN1-mediated deamidation step. Cleaved DIAP1 accumulates at 6 h.p.i. before caspase activity increases at 12 h.p.i., and the N21A mutation makes DIAP1 resistant to virus-induced accumulation while N21D mutation prevents it.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The temporal dissociation between cleaved DIAP1 accumulation (6 h.p.i.) and caspase activity enhancement (12 h.p.i.) is well-documented (C33-C35). RNAi experiments (C36-C37) and site-directed mutagenesis (C38-C42) provide mechanistic insight. The N21D mutation experiment specifically implicates the deamidation step. The logic is sound and the experimental design is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "93f96011-5281-4761-9c72-4fd9adab7a4e",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "DCV infection induces post-transcriptional degradation of NTAN1 protein in the early stage of infection (before 12 h.p.i.), while NTAN1 mRNA levels increase. The degradation requires viral protein synthesis/replication, as demonstrated by CHX degradation assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The post-transcriptional nature of NTAN1 degradation is convincingly demonstrated by showing decreased protein levels (C43, C45) despite increased mRNA levels (C44). The specificity is confirmed by EGFP control (C46). CHX degradation assays (C48-C49) establish the requirement for viral protein synthesis. The temporal characterization (C50) adds important context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "233ca51e-1566-46f2-87c8-127ca62ccc62",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Virus-induced NTAN1 degradation is proteasome-dependent but ubiquitin-independent. NTAN1 can be degraded by both ubiquitin-dependent (involving K186) and ubiquitin-independent pathways, but viral infection specifically induces the ubiquitin-independent pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The use of proteasome inhibitors (MG-132, lactacystin) demonstrates proteasome dependence (C52-C53). The NTAN14KA mutant experiments (C54-C58) elegantly show that virus-induced degradation occurs even when all lysines are mutated, establishing ubiquitin-independence. Individual lysine mutants (C61) identify K186 as responsible for basal ubiquitin-dependent degradation. The experimental logic is rigorous and the conclusions are well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "21949eda-3e78-4dc1-995e-cac9ffad6876",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Restoration of NTAN1 expression during viral infection promotes apoptosis, increases caspase activity, and restricts viral replication. Conversely, NTAN1 knockdown inhibits apoptosis and enhances viral replication, demonstrating that virus-induced NTAN1 degradation is a pro-viral mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The functional consequences are demonstrated through both gain-of-function (NTAN1 overexpression, C65-C68) and loss-of-function (NTAN1 knockdown, C69) approaches. The consistency between these complementary experiments and the measurement of multiple readouts (apoptosis, caspase activity, viral RNA) provide strong support for the pro-viral role of NTAN1 degradation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "eaadfeed-9944-4ce1-9fa2-c229bedfbd1e",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "DCV infection suppresses the N-end rule pathway by inducing ubiquitin-independent proteasomal degradation of NTAN1, leading to accumulation of caspase-cleaved DIAP1, inhibition of apoptosis, and enhanced viral replication. This represents a novel mechanism of viral evasion of apoptosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This integrative result synthesizes the major findings of the manuscript. The mechanistic chain is well-established through the individual results: viral infection \u2192 NTAN1 degradation \u2192 inhibition of N-end rule pathway \u2192 cleaved DIAP1 accumulation \u2192 apoptosis suppression \u2192 enhanced viral replication. Each link in this chain is experimentally supported by the preceding results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "bc98164d-e045-456a-ac31-4afadc279b5a",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Viral protein synthesis and/or viral replication, but not input viral components, are responsible for NTAN1 degradation, as blocking protein synthesis with CHX before viral infection abolishes NTAN1 degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The CHX degradation assays clearly distinguish between effects of input virus versus newly synthesized viral components. The experimental design appropriately controls for timing of CHX addition relative to infection. However, the mechanism remains unresolved (whether specific viral proteins or replication intermediates are responsible).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    },
+    {
+      "id": "96d2658e-b4bb-4d59-ab9e-93ead781ebdb",
+      "content_id": "40424fe9-5c56-454c-87ef-9366650a62f3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors speculate that this mechanism may be employed by other viruses, particularly picornaviruses, to evade apoptosis in mammals or other organisms, based on the conservation of the N-end rule pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This is explicitly speculative (C94 is marked as IMPLICIT with SPECULATION evidence type). While the conservation of the N-end rule pathway (C93, C102) provides a reasonable basis for this hypothesis, no experimental evidence is provided to support this extrapolation. This represents a testable hypothesis for future work rather than a supported conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:27:08.902083Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "172201f1-3f68-4516-95ad-a3fa9e3a4710",
+      "result_id": "836a674b-9e0b-41b8-b43a-cc034e09b84a"
+    },
+    {
+      "claim_id": "247605e9-14dc-46d0-8384-fecab8f6f392",
+      "result_id": "836a674b-9e0b-41b8-b43a-cc034e09b84a"
+    },
+    {
+      "claim_id": "63db21c2-033b-451b-a96e-3c87358d834a",
+      "result_id": "836a674b-9e0b-41b8-b43a-cc034e09b84a"
+    },
+    {
+      "claim_id": "e5413e37-2691-400a-9464-cb18718e5d7e",
+      "result_id": "836a674b-9e0b-41b8-b43a-cc034e09b84a"
+    },
+    {
+      "claim_id": "719d77c0-abcf-4ea6-9c16-0623f0613a83",
+      "result_id": "836a674b-9e0b-41b8-b43a-cc034e09b84a"
+    },
+    {
+      "claim_id": "b1aa35a0-12a1-4959-a10b-7c3ef324d929",
+      "result_id": "836a674b-9e0b-41b8-b43a-cc034e09b84a"
+    },
+    {
+      "claim_id": "4d12b9a0-625f-4843-b0ef-2767b4085119",
+      "result_id": "9afa371f-c9d1-4f51-bec3-b4a39382f44c"
+    },
+    {
+      "claim_id": "dc237522-1d58-4e58-9295-80c294291473",
+      "result_id": "9afa371f-c9d1-4f51-bec3-b4a39382f44c"
+    },
+    {
+      "claim_id": "025283ce-de37-45c4-aaa3-984e5289ddcf",
+      "result_id": "9afa371f-c9d1-4f51-bec3-b4a39382f44c"
+    },
+    {
+      "claim_id": "9d725c99-314d-4eea-bdc7-d48425a45598",
+      "result_id": "9afa371f-c9d1-4f51-bec3-b4a39382f44c"
+    },
+    {
+      "claim_id": "594a735c-d443-4364-a91a-7434e7278e2e",
+      "result_id": "9afa371f-c9d1-4f51-bec3-b4a39382f44c"
+    },
+    {
+      "claim_id": "6078ead5-e967-4a10-8c63-09d45314909f",
+      "result_id": "9afa371f-c9d1-4f51-bec3-b4a39382f44c"
+    },
+    {
+      "claim_id": "dc88e6b8-a177-4b94-8758-c03ce6776ef1",
+      "result_id": "9afa371f-c9d1-4f51-bec3-b4a39382f44c"
+    },
+    {
+      "claim_id": "183b7979-b5b8-4488-ba74-c532c6ebe6ac",
+      "result_id": "9afa371f-c9d1-4f51-bec3-b4a39382f44c"
+    },
+    {
+      "claim_id": "7fbc1448-39fd-4a08-89b4-6daab23f7312",
+      "result_id": "b4f41d79-03f2-4092-bc00-81d881ad9191"
+    },
+    {
+      "claim_id": "047c4534-da2b-409d-b3ce-36552d9311e5",
+      "result_id": "b4f41d79-03f2-4092-bc00-81d881ad9191"
+    },
+    {
+      "claim_id": "6bc3b484-c92b-4266-adbd-de2321ba684e",
+      "result_id": "b4f41d79-03f2-4092-bc00-81d881ad9191"
+    },
+    {
+      "claim_id": "ae72b26c-d004-4fea-a573-50a9486d99b9",
+      "result_id": "b4f41d79-03f2-4092-bc00-81d881ad9191"
+    },
+    {
+      "claim_id": "4c0e3991-39ed-4fd7-b8ed-648b2a34838a",
+      "result_id": "b4f41d79-03f2-4092-bc00-81d881ad9191"
+    },
+    {
+      "claim_id": "636755a1-1afa-4b7c-877e-6691a63abda5",
+      "result_id": "b4f41d79-03f2-4092-bc00-81d881ad9191"
+    },
+    {
+      "claim_id": "297c8472-74c0-44b4-8c82-5c0b081e7dc3",
+      "result_id": "b4f41d79-03f2-4092-bc00-81d881ad9191"
+    },
+    {
+      "claim_id": "4503b007-e6e9-41c8-b37f-de8d1044822e",
+      "result_id": "b4f41d79-03f2-4092-bc00-81d881ad9191"
+    },
+    {
+      "claim_id": "76e64dc3-f3bc-405f-806b-b9aeb2bdd92f",
+      "result_id": "b4f41d79-03f2-4092-bc00-81d881ad9191"
+    },
+    {
+      "claim_id": "df1be2d6-26fe-4648-bbff-dc4cbdc85850",
+      "result_id": "b4f41d79-03f2-4092-bc00-81d881ad9191"
+    },
+    {
+      "claim_id": "4c1020e5-b885-4015-bfe4-3e88502217de",
+      "result_id": "b4f41d79-03f2-4092-bc00-81d881ad9191"
+    },
+    {
+      "claim_id": "a1b6da58-1658-4bf5-bf2c-699c9b885954",
+      "result_id": "b4f41d79-03f2-4092-bc00-81d881ad9191"
+    },
+    {
+      "claim_id": "18d1bb94-4814-46bd-b5d8-8a5bfbe4f47e",
+      "result_id": "b4f41d79-03f2-4092-bc00-81d881ad9191"
+    },
+    {
+      "claim_id": "3ae2003d-cb23-4b62-999b-aa81d4fa0d63",
+      "result_id": "b4f41d79-03f2-4092-bc00-81d881ad9191"
+    },
+    {
+      "claim_id": "b7e73d84-24f9-4371-a219-a8fd330eaa03",
+      "result_id": "b4f41d79-03f2-4092-bc00-81d881ad9191"
+    },
+    {
+      "claim_id": "1809668b-6ccd-44d1-9acc-dede9da0ba4f",
+      "result_id": "b4f41d79-03f2-4092-bc00-81d881ad9191"
+    },
+    {
+      "claim_id": "1cd816b2-76a4-47ad-b929-ebf2faac00a8",
+      "result_id": "b9658857-438b-4be6-92d0-090808598469"
+    },
+    {
+      "claim_id": "b0adb0c5-e8cf-4e7e-b46a-6687c3d36fad",
+      "result_id": "b9658857-438b-4be6-92d0-090808598469"
+    },
+    {
+      "claim_id": "9405b86f-918d-418f-bfd1-960fa10ef7ae",
+      "result_id": "b9658857-438b-4be6-92d0-090808598469"
+    },
+    {
+      "claim_id": "f264aa89-8fbb-4ce3-b478-0fd4000dc6cd",
+      "result_id": "b9658857-438b-4be6-92d0-090808598469"
+    },
+    {
+      "claim_id": "4ecedbea-353a-45c7-ac5b-85e298854c9c",
+      "result_id": "b9658857-438b-4be6-92d0-090808598469"
+    },
+    {
+      "claim_id": "f3506def-2a85-419f-8e5f-58860c35acfd",
+      "result_id": "b9658857-438b-4be6-92d0-090808598469"
+    },
+    {
+      "claim_id": "3c1b0aaf-e2a3-4017-a0a6-9e2885babc5d",
+      "result_id": "b9658857-438b-4be6-92d0-090808598469"
+    },
+    {
+      "claim_id": "a3c3225f-70d6-4add-8e09-a9df9cf1b6e9",
+      "result_id": "b9658857-438b-4be6-92d0-090808598469"
+    },
+    {
+      "claim_id": "1456ee11-4d64-487f-8933-52193b4cf2ee",
+      "result_id": "b9658857-438b-4be6-92d0-090808598469"
+    },
+    {
+      "claim_id": "dd9a5ab7-8690-472b-8a8f-26769f0f549f",
+      "result_id": "b9658857-438b-4be6-92d0-090808598469"
+    },
+    {
+      "claim_id": "bc0c121e-6044-4348-80f9-c1139618aac8",
+      "result_id": "93f96011-5281-4761-9c72-4fd9adab7a4e"
+    },
+    {
+      "claim_id": "6aa86b78-a1f6-421e-ad4a-6e035d151c4e",
+      "result_id": "93f96011-5281-4761-9c72-4fd9adab7a4e"
+    },
+    {
+      "claim_id": "448e6aaa-e946-4f38-afa3-fc492d326a3a",
+      "result_id": "93f96011-5281-4761-9c72-4fd9adab7a4e"
+    },
+    {
+      "claim_id": "3b5d5bd2-e46f-4931-9e7f-4102dee11688",
+      "result_id": "93f96011-5281-4761-9c72-4fd9adab7a4e"
+    },
+    {
+      "claim_id": "831debba-d3ee-4cb0-bc9b-6d103f53f88e",
+      "result_id": "93f96011-5281-4761-9c72-4fd9adab7a4e"
+    },
+    {
+      "claim_id": "ea496180-6b21-4ef7-a028-486d12cf9a96",
+      "result_id": "93f96011-5281-4761-9c72-4fd9adab7a4e"
+    },
+    {
+      "claim_id": "a785ef84-ae96-421b-aa64-f7ff0c1730b0",
+      "result_id": "93f96011-5281-4761-9c72-4fd9adab7a4e"
+    },
+    {
+      "claim_id": "c1c4b4cf-e9b9-4c62-8358-b154ad26442e",
+      "result_id": "93f96011-5281-4761-9c72-4fd9adab7a4e"
+    },
+    {
+      "claim_id": "aa029c79-2fba-47f7-ac39-44dd92dc361f",
+      "result_id": "93f96011-5281-4761-9c72-4fd9adab7a4e"
+    },
+    {
+      "claim_id": "94586d4c-3a84-4951-983a-8e3e40ea05d4",
+      "result_id": "233ca51e-1566-46f2-87c8-127ca62ccc62"
+    },
+    {
+      "claim_id": "9b1ae8c1-6333-4c8c-8455-9a1f7b388904",
+      "result_id": "233ca51e-1566-46f2-87c8-127ca62ccc62"
+    },
+    {
+      "claim_id": "e49a5bdd-7e17-4162-aeb2-40c09919c7d8",
+      "result_id": "233ca51e-1566-46f2-87c8-127ca62ccc62"
+    },
+    {
+      "claim_id": "cb56142b-c546-40e2-ada8-b06f3eefd05e",
+      "result_id": "233ca51e-1566-46f2-87c8-127ca62ccc62"
+    },
+    {
+      "claim_id": "da795d7d-fd42-4f30-8d3a-7d3da24a9de6",
+      "result_id": "233ca51e-1566-46f2-87c8-127ca62ccc62"
+    },
+    {
+      "claim_id": "fe059a3d-1ee3-4d49-b759-0a82613ec630",
+      "result_id": "233ca51e-1566-46f2-87c8-127ca62ccc62"
+    },
+    {
+      "claim_id": "a96ff1d3-cfcf-41c0-a6d5-3ce1c37aae44",
+      "result_id": "233ca51e-1566-46f2-87c8-127ca62ccc62"
+    },
+    {
+      "claim_id": "2e61ba82-fa88-4a19-bb3b-15e8602d4fbb",
+      "result_id": "233ca51e-1566-46f2-87c8-127ca62ccc62"
+    },
+    {
+      "claim_id": "5fb4f03a-c2ea-4da4-9147-4c0a4c6231d9",
+      "result_id": "233ca51e-1566-46f2-87c8-127ca62ccc62"
+    },
+    {
+      "claim_id": "7a1fccf7-6851-4c91-a10d-367d9943224e",
+      "result_id": "233ca51e-1566-46f2-87c8-127ca62ccc62"
+    },
+    {
+      "claim_id": "140675ce-0e4c-4dcd-aed6-5cda6578ea0f",
+      "result_id": "233ca51e-1566-46f2-87c8-127ca62ccc62"
+    },
+    {
+      "claim_id": "52b5cec2-9cc3-476f-8e6e-44e562af6896",
+      "result_id": "233ca51e-1566-46f2-87c8-127ca62ccc62"
+    },
+    {
+      "claim_id": "0d4df3f6-d0f7-4fa2-8e7a-3886e9bd3c37",
+      "result_id": "233ca51e-1566-46f2-87c8-127ca62ccc62"
+    },
+    {
+      "claim_id": "5212ea2a-da19-410a-8218-1a837793f1a3",
+      "result_id": "21949eda-3e78-4dc1-995e-cac9ffad6876"
+    },
+    {
+      "claim_id": "696b950c-0b27-48e6-a3e5-05378be9cd9d",
+      "result_id": "21949eda-3e78-4dc1-995e-cac9ffad6876"
+    },
+    {
+      "claim_id": "b49038ad-b6d2-46eb-b2d6-cc1c6de2bb79",
+      "result_id": "21949eda-3e78-4dc1-995e-cac9ffad6876"
+    },
+    {
+      "claim_id": "e1957bf6-fa1d-4504-b9d9-56c799f86aa7",
+      "result_id": "21949eda-3e78-4dc1-995e-cac9ffad6876"
+    },
+    {
+      "claim_id": "4ceb926d-1d85-47c7-b8a8-682bf6192f02",
+      "result_id": "21949eda-3e78-4dc1-995e-cac9ffad6876"
+    },
+    {
+      "claim_id": "7453bfe9-71c5-45e3-84eb-6b7d75dc3963",
+      "result_id": "21949eda-3e78-4dc1-995e-cac9ffad6876"
+    },
+    {
+      "claim_id": "0456f1c3-4fce-4ad3-aaad-b478510462fb",
+      "result_id": "eaadfeed-9944-4ce1-9fa2-c229bedfbd1e"
+    },
+    {
+      "claim_id": "ffc7e2fe-f93c-4d1d-b112-038a4ad76c2e",
+      "result_id": "eaadfeed-9944-4ce1-9fa2-c229bedfbd1e"
+    },
+    {
+      "claim_id": "a8bce3b1-1bb9-40bc-aaf3-8147f7c65b9a",
+      "result_id": "eaadfeed-9944-4ce1-9fa2-c229bedfbd1e"
+    },
+    {
+      "claim_id": "8e5a3788-99b1-40d6-a1dd-cb9664c52121",
+      "result_id": "eaadfeed-9944-4ce1-9fa2-c229bedfbd1e"
+    },
+    {
+      "claim_id": "06fa6fe7-9f3f-40f4-8e7c-7d654c8632c3",
+      "result_id": "eaadfeed-9944-4ce1-9fa2-c229bedfbd1e"
+    },
+    {
+      "claim_id": "9bab59ab-9534-4ed7-b252-d8d5f4317a42",
+      "result_id": "eaadfeed-9944-4ce1-9fa2-c229bedfbd1e"
+    },
+    {
+      "claim_id": "7da6f4ca-9ea1-4761-8303-74b30f9e85d3",
+      "result_id": "bc98164d-e045-456a-ac31-4afadc279b5a"
+    },
+    {
+      "claim_id": "4f9e286f-5ff5-441f-9a31-8b2ffb11da10",
+      "result_id": "bc98164d-e045-456a-ac31-4afadc279b5a"
+    },
+    {
+      "claim_id": "5651b3ff-e6e4-4502-bdeb-f89860683ae0",
+      "result_id": "96d2658e-b4bb-4d59-ab9e-93ead781ebdb"
+    }
+  ],
+  "comparisons": []
+}

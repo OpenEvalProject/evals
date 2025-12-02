@@ -1,0 +1,668 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C175",
+      "C177",
+      "C183",
+      "C184",
+      "C186"
+    ],
+    "result": "Condensin plays no direct role in maintaining the transcriptome during interphase or mitosis in fission and budding yeasts. This conclusion is based on experiments showing that condensin inactivation during S phase, G2 phase, or metaphase does not alter RNA levels, and that condensin cleavage in budding yeast during G1 or M phase results in minimal transcriptional changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C175, C177, C183, C184, and C186 are strongly supported by multiple synchronization experiments in both yeast species (C107-C115, C120-C122) showing no RNA changes when cells are arrested at specific cell cycle phases. The consistency across two evolutionarily distant organisms strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C137",
+      "C176",
+      "C190"
+    ],
+    "result": "Changes in gene expression in condensin mutants result from chromosome missegregation during anaphase rather than direct transcriptional effects. Preventing cytokinesis with cdc15-140 restores normal transcriptome despite condensin inactivation, and mutations in separase, APC/C, or kinetochore that cause chromosome missegregation produce similar transcriptional changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7, C137, C176, and C190 are well-supported by the key genetic experiment showing ~98% restoration of normal transcriptome in cdc15-140 cut14-208 double mutants (C132), and by reciprocal experiments showing that non-condensin mutations causing chromosome missegregation produce similar RNA accumulation (C125-C127, C145, C151). The correlation between chromosome cutting frequency and RNA level changes (C126-C127) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C63",
+      "C71",
+      "C178"
+    ],
+    "result": "Condensin mutant cut14-208 cells accumulate 306 differentially expressed transcripts, 98.5% of which are increased, with significant enrichment for non-coding RNAs. These include tRNAs, mRNAs, ncRNAs, and 3'-extended read-through transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58, C63, C71, and C178 are supported by RNA-seq data (Figure 1A-C) with appropriate statistical thresholds (FDR \u2264 0.05, log2 fold change > 0.5) and validation by RT-qPCR (C60, Figure 1B). The enrichment of ncRNAs is statistically significant (p<0.001, Chi-square test, C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C102"
+    ],
+    "result": "Approximately 43% of RNAs that accumulate in cut14-208 condensin mutant also accumulate in rrp6\u0394 cells, indicating that a large fraction of transcripts affected by condensin inactivation are normally targeted by the RNA-exosome ribonuclease Rrp6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 and C102 are supported by comparative RNA-seq analysis showing statistically significant overlap (p=4.6e-55, hypergeometric test, C76) between the two mutant transcriptomes. The overlap is visualized in Figures 1G-H and quantified appropriately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C99",
+      "C101",
+      "C105"
+    ],
+    "result": "489 transcripts in cut14-208 cells and 622 transcripts in rrp6\u0394 cells exhibit 3'-extended read-through RNAs, with 50% overlap between the two mutants. These read-through RNAs are polyadenylated and accumulate without increased RNA Pol II occupancy downstream of transcription termination sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85, C99, C101, and C105 are supported by systematic RNA-seq analysis (Figure 2C, E, F), oligo(dT)-primed RT-PCR showing polyadenylation (C85, Figure 2D), and ChIP data showing no increased Pol II occupancy (C89, C100). The 50% overlap between mutants (C101) supports the mechanistic connection to Rrp6 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C161",
+      "C169",
+      "C191"
+    ],
+    "result": "Sister rDNA copies fail to separate during anaphase in cut14-208 condensin mutant cells, frequently resulting in anucleolate daughter cells. This rDNA non-disjunction also occurs in ptr4-1 and mis6-302 mutants and is suppressed by cdc15-140.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C159, C161, C169, and C191 are supported by microscopy analysis using Gar2-GFP as an rDNA marker (Figure 7A) showing high rates of anucleolate cell formation in multiple mutants. The suppression by cdc15-140 (C160, Figure 7\u2014figure supplement 1C) demonstrates the connection to cytokinesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C192",
+      "C193"
+    ],
+    "result": "Rrp6 and Dis3, which are enriched in the nucleolus, become markedly depleted from anucleolate cut14-208 daughter cells. The median Rrp6 signal ratio in anucleolate vs nucleolate cells is ~0.25, and this depletion coincides with increased steady-state levels of RNA-exosome-sensitive transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C163, C192-C193 are supported by quantitative immunofluorescence analysis (Figure 7B, Figure 7\u2014figure supplement 1D) showing statistically significant asymmetric distribution of both Rrp6 and Dis3 in post-mitotic cells. The correlation with RNA accumulation provides mechanistic support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C174",
+      "C194"
+    ],
+    "result": "The ncRNA mug93as accumulates principally in anucleolate cut14-208 cells, with highest signals in anucleolate cells with low chromatin content, as demonstrated by single molecule RNA-FISH. In contrast, control mRNA cct2 is evenly distributed between daughter cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C172, C174, and C194 are supported by single molecule RNA-FISH data (Figure 7D-E) showing specific accumulation of the RNA-exosome-sensitive transcript mug93as in anucleolate cells, while control mRNA shows even distribution. This provides direct cellular-level evidence for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C155"
+    ],
+    "result": "tRNA levels increase in condensin mutants (cut3-m26, cut14-90, cut14-208) in correlation with chromosome missegregation frequency. Preventing aneuploidy with cdc15-140 restores normal tRNA levels, and non-condensin mutations causing chromosome missegregation (ptr4-1, cut9-665, mis6-302) produce similar tRNA increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C151 and C155 are supported by RT-qPCR data (Figure 6A-D) showing correlation between tRNA accumulation and chromosome missegregation frequency across multiple mutants. The restoration of normal tRNA levels by cdc15-140 (C150) and similar effects in non-condensin mutants (C151) support the indirect mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C168",
+      "C221"
+    ],
+    "result": "In budding yeast, segregation of Dis3-mNeonGreen into daughter cells is severely impaired during the first cell division after condensin inactivation by Brn1 cleavage, consistent with rDNA non-disjunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168 and C221 are supported by live cell imaging data (Figure 7C, Figure 7\u2014figure supplement 2) showing statistically significant asymmetric partitioning of Dis3 (p<0.0001, unpaired t-test with Welch's correction). This extends the findings from fission yeast to budding yeast.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "In synchronized fission yeast cells, condensin is dispensable for gene regulation during S and G2 phases. Reporter RNAs do not accumulate during G2 phase but begin accumulating at t=90 min (late mitosis/early G1), coinciding with aneuploid post-mitotic cells. No RNA upregulation occurs when cells are arrested at G2/M transition or metaphase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C115 are supported by multiple synchronization experiments with RT-qPCR measurements (Figures 3C, F, I) showing no RNA changes during interphase or metaphase arrest, but accumulation after mitotic exit. The timing correlation with aneuploidy (C111) strengthens the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C184"
+    ],
+    "result": "In budding yeast, condensin inactivation by Brn1 cleavage has minimal effects on gene expression when cells are prevented from undergoing division. Only 26 transcripts were differentially expressed by at least two-fold in G1-arrested cells, and only 6 genes in cells arrested in M phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122 and C184 are supported by tiling array data (Figure 4A-D) from two independent experimental conditions (G1 arrest and M phase arrest). The minimal transcriptional changes in both conditions support the conclusion that condensin is dispensable for maintaining gene expression programs when division is prevented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C153"
+    ],
+    "result": "DNA damage induced by Camptothecin or Zeocin does not increase ncRNA or mRNA levels, indicating that DNA damage is not the main driver for gene deregulation in cut14-208 mutant cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C141 and C153 are supported by experiments showing that while DNA damage is confirmed by Rad22-GFP foci (Figure 7\u2014figure supplement 1B), RT-qPCR reveals no increase in RNA levels. This control experiment effectively rules out DNA damage as the primary mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The mis6-302 kinetochore mutant produces genomically unbalanced cells and exhibits similar increases in reporter RNA levels as cut14-208 mutant cells, demonstrating that chromosome missegregation during mitosis can lead to gene deregulation independent of condensin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C146 are supported by FACScan analysis confirming genomic imbalance (Figure 5F) and RT-qPCR showing similar RNA increases as cut14-208 (Figure 5G). This reciprocal experiment strengthens the conclusion that chromosome missegregation, rather than condensin per se, drives gene deregulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Mutations in separase (ptr4-1) or APC/C (cut9-665) result in chromosome missegregation and severing, as well as increased RNA levels similar to cut14-208. The amplitude of RNA increase correlates with the frequency of chromosome cutting across different mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 are supported by cytological analysis and RT-qPCR data (Figure 5A, Figure 5\u2014figure supplement 1D-E) showing correlation between chromosome cutting frequency and RNA accumulation across multiple mutants. This correlation provides strong support for the causal relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The cdc15-140 mutation prevents cytokinesis and suppresses chromosome severing in cut14-208 cells. While chromatin bridges still form during anaphase, they are not severed upon mitotic exit, preventing karyotype abnormalities. This suppresses ~98% of RNA upregulation and read-through transcript production in cut14-208 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C133 are supported by comprehensive analysis including cytology (Figure 5B), FACScan (C131), and RNA-seq (C132, Figures 5C-D). The near-complete suppression of transcriptional changes (~98%) while chromosome segregation defects persist is the key evidence that gene deregulation is indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "cut14-208 mutant cells accumulate 3'-extended hsp9 RNA of the same length as cells depleted of Dis3 or Rrp6. Other condensin mutants (cut3-477, cut14-180) also accumulate read-through hsp9 RNA, demonstrating this is a general feature of condensin inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by northern blot analysis (Figure 2B, Figure 2\u2014figure supplement 1A) showing accumulation of 3'-extended hsp9 RNA in multiple condensin mutants. The similar length to Dis3/Rrp6 mutants supports the mechanistic connection to RNA-exosome function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The antisense ncRNA mug93as accumulates in cells lacking Rrp6 or defective for Dis3, and also accumulates in cut14-208 mutant cells to levels reminiscent of the rrp6\u0394 control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by northern blot analysis (Figure 1D) showing mug93as accumulation in RNA-exosome mutants and cut14-208 cells. This provides an example of the general pattern observed in the RNA-seq data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "ChIP against RNA Pol II revealed no change in occupancy at ncRNA genes (mug93as, ncRNA.489, ncRNA.540) in cut14-208 cells, despite 5- to 30-fold increases in ncRNA levels, suggesting accumulation due to impaired degradation rather than increased transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by ChIP-qPCR data (Figure 1\u2014figure supplement 1B) showing unchanged Pol II occupancy despite increased RNA levels. This mechanistic insight supports the conclusion that RNA accumulation is post-transcriptional.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C91"
+    ],
+    "result": "Only 111 of 489 read-through transcripts were also up-regulated, and ChIP showed no increased RNA Pol II occupancy downstream of canonical transcription termination sites in cut14-208 cells, suggesting 3'-extended RNAs do not result from increased transcription beyond the TTS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 and C91 are supported by RNA-seq overlap analysis (Figure 2\u2014figure supplement 1C) and ChIP data (Figure 2\u2014figure supplement 1D). The lack of correlation between read-through and upregulation, plus unchanged Pol II occupancy, supports the post-transcriptional mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "The steady-state level of Rrp6 protein and mRNA levels of RNA-exosome and TRAMP components remain unchanged in cut14-208 mutant cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 are supported by western blot (Figure 2G) and RNA-seq data (Supplementary file 1). This rules out changes in RNA-exosome component expression as the mechanism and supports the localization-based mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Cohesin localization remains unchanged at genes with read-through transcripts or up-regulated genes in cut14-208 cells. No read-through RNAs were observed at genes (nmt2, tea3, mei4, pdt1) that show read-through in cohesin mutants, suggesting cohesin binding and function remain unaffected by condensin impairment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are supported by ChIP data (Figure 2\u2014figure supplement 2A) and RNA-seq profiles (Figure 2\u2014figure supplement 2B). This effectively rules out cohesin dysfunction as a mechanism for read-through RNA accumulation in condensin mutants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "In budding yeast, condensin localizes to chromosomes during G1 phase and its levels increase as cells pass through S and G2 phases, as shown by chromosome spreading and ChIP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 are supported by chromosome spreading and ChIP experiments (Figure 4\u2014figure supplement 1A-C). This establishes that condensin is present on chromosomes during interphase in budding yeast, making the lack of transcriptional effects more significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "TEV cleavage of the Brn1 subunit efficiently releases condensin from chromosomes in budding yeast, even during G1 phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C119 is supported by ChIP data (Figure 4\u2014figure supplement 1D) showing efficient release of condensin after TEV cleavage. This validates the experimental approach used for condensin inactivation in budding yeast.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "RNA levels remain increased in cdc15-140 rrp6\u0394 double mutant, ruling out compensatory effects. The cdc12-112 cytokinesis mutant also restores normal gene expression in cut14-208 background, confirming cytokinesis as a driving force for gene deregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136 are supported by RT-qPCR data (Figure 5\u2014figure supplement 2C-D). These control experiments strengthen the conclusion that cytokinesis-dependent chromosome severing, not other effects of cdc15-140, is responsible for gene deregulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C164",
+      "C165"
+    ],
+    "result": "Residual levels of Rrp6 and Dis3 proteins remain detectable in anucleolate cells, suggesting a small fraction of these molecules is transmitted to daughter cells independently of the rDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C165 are supported by immunofluorescence data (Figure 7B, Figure 7\u2014figure supplement 1D) showing reduced but not absent signal in anucleolate cells. This observation is important for understanding the incomplete penetrance of the phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "Histone mRNAs were found amongst upregulated transcripts in cut14-208, confirming previous observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is supported by RNA-seq data and cites prior research (Kim et al., 2016). This validates the RNA-seq approach by confirming a previously reported finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Analysis of all increased mRNAs revealed no enrichment for a specific gene ontology term, suggesting condensin inactivation does not affect expression of a particular family of protein-coding genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by GO term analysis of RNA-seq data. The lack of functional enrichment suggests the effects are not targeting specific biological pathways but rather reflect a general consequence of chromosome missegregation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "GO term analysis revealed no specific feature defining the population of read-through transcripts in cut14-208 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 is supported by GO term analysis of RNA-seq data. Similar to C61-C62, this lack of functional enrichment suggests the read-through phenomenon is not targeting specific gene classes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "There is enrichment for genes in convergent orientation throughout the fission yeast genome (~62%). In contrast, read-through transcripts in cut14-208 emanate mostly from genes in tandem (53%) and slightly less from convergent genes (47%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are supported by genome annotation analysis and RNA-seq data. This finding is important for distinguishing the mechanism from cohesin-dependent transcription termination, which specifically affects convergent genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "In synchronized cells, cdc10-129 single and cdc10-129 cut14-208 double mutants complete S phase and progress through G2 and mitosis with similar kinetics. Chromosome segregation is impaired in cut14-208 background, producing chromatin bridges and aberrant karyotypes in post-mitotic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 are supported by FACScan and cytological analysis (Figure 3B). This establishes that the cut14-208 mutation does not grossly affect cell cycle progression but specifically impairs chromosome segregation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C138",
+      "C139"
+    ],
+    "result": "Chromosome severing by the cytokinetic ring leads to DNA damage (sustained Rad22-GFP foci) and genomically unbalanced daughter cells. Both phenotypes coincide with increased RNA levels and are suppressed by cdc15-140.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C139 are supported by microscopy and FACScan data (Figure 7\u2014figure supplement 1A, Figure 3B, Figure 5B). This establishes that both DNA damage and genomic imbalance occur but, based on C140-C141, only genomic imbalance drives gene deregulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C152"
+    ],
+    "result": "The effects of ptr4-1 and cut9-665 on tRNA levels were more comparable to cut14-208 than to mis6-302, which did not upregulate tRNAs SER+MET and THR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C152 is supported by RT-qPCR data (Figure 6D). This observation suggests different types of chromosome missegregation may have varying impacts on the transcriptome, though the mechanism remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C173"
+    ],
+    "result": "A control mRNA (cct2) was evenly distributed between daughter cells in the cut14-208 mutant, in contrast to the ncRNA mug93as.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C173 is supported by single molecule RNA-FISH data (Figure 7E). This control demonstrates the specificity of the accumulation pattern for RNA-exosome-sensitive transcripts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "663 RNAs were differentially expressed in rrp6\u0394 mutant, with 78% increased and 22% decreased. The population of Rrp6-sensitive RNAs was considerably enriched in ncRNAs (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by RNA-seq data (Figure 1E-F) with appropriate statistical analysis. This characterizes the rrp6\u0394 transcriptome for comparison with cut14-208.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Of 306 misregulated transcripts in cut14-208, 57% were mRNAs and 43% were non-coding RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by RNA-seq data analysis (Figure 1C). This quantifies the composition of misregulated transcripts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C167",
+      "C218"
+    ],
+    "result": "The bulk of Rrp6 and Dis3 might co-segregate with the nucleolus in fission yeast, while a fraction is transmitted to daughter cells in association with chromatin or nucleoplasm. Read-through RNAs are naturally produced at both tandem and convergent genes but are rapidly degraded by Rrp6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C167 and C218 are speculative proposals based on the data and prior research in Drosophila (C166, C195). While consistent with the observations, these mechanisms are not directly tested and represent interpretations rather than demonstrated facts. The proposals are reasonable but require further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C106",
+      "C112",
+      "C123"
+    ],
+    "result": "The accumulation of read-through transcripts might stem from defects in their processing by Rrp6. Condensin is possibly required for proper gene expression during late mitosis or early G1 phase. Defects in chromosome segregation caused by condensin inactivation might be causally responsible for gene deregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106, C112, and C123 are speculative inferences from the data. While the overall conclusion that chromosome missegregation causes gene deregulation is well-supported, these specific mechanistic and temporal claims are tentative and marked as speculation in the evidence. They represent reasonable hypotheses but are not definitively established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C154",
+      "C205",
+      "C206"
+    ],
+    "result": "The difference in tRNA upregulation between mutants might reflect phenotypic variability associated with aneuploidy. Condensin deficiency causes mostly severing of chromosome arms, leading to partial- or micro-aneuploidy that might not elicit a robust aneuploidy stress response. Different types of aneuploidy might have varying impacts on the transcriptome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C154, C205, and C206 are speculative explanations for observed differences between mutants. While the observations are supported (C152, C204), the mechanistic explanations are not directly tested. These represent reasonable hypotheses to explain the data but require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background knowledge about SMC complexes, condensins, and their established roles in chromosome organization and segregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C8-C27 represent established knowledge about SMC complexes and condensins, supported by citations to prior literature. These provide necessary context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Prior research findings on condensin's role in gene expression across various organisms, including yeasts, C. elegans, Drosophila, mice, and human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C47 summarize prior research findings from the literature, all supported by appropriate citations. These establish the context and prior state of knowledge that the current study challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R42",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C65"
+    ],
+    "result": "Background knowledge about mechanisms of gene expression control and the RNA-exosome complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 and C65 represent established knowledge about gene expression control mechanisms and RNA-exosome function, supported by citations. These provide necessary background for understanding the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R43",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C116",
+      "C142",
+      "C156",
+      "C157",
+      "C166",
+      "C185",
+      "C201",
+      "C202",
+      "C203",
+      "C208",
+      "C209",
+      "C210",
+      "C217",
+      "C227",
+      "C228",
+      "C231",
+      "C232",
+      "C233",
+      "C234"
+    ],
+    "result": "Additional background knowledge and prior research findings relevant to the study's context and interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93, C116, C142, C156-C157, C166, C185, C201-C203, C208-C210, C217, C227-C228, and C231-C234 represent established knowledge and prior research findings that provide context for the current study. All are appropriately supported by citations.",
+    "result_type": "MINOR"
+  }
+]

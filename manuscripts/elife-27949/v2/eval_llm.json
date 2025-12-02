@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The authors developed an optimized S. cerevisiae in vitro translation (ScIVT) system that recapitulates key RQC activities including Ltn1p-dependent ubiquitination and Rqc2p-mediated CAT tail elongation. Critical methodological improvements include cryogenic cell lysis with a freezer mill, minimizing lysis cycles, dialysis for small molecule removal, and using small protein reporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C23-C26 describe the development and optimization of the ScIVT system. The experimental data in Figures 1, 3, and 4 demonstrate successful recapitulation of both RQC activities. The methodological details are clearly described and represent empirical findings from protocol optimization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C47"
+    ],
+    "result": "ScIVT reactions with truncated mRNA generate mass-shifted products consistent with CAT-tailed species. The ~43 kDa intermediate is peptidyl-tRNA (sensitive to both RNase and TEV protease), while the heterogeneous ~25-45 kDa products contain untemplated C-terminal extensions (sensitive only to TEV protease).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C37 and C47 describe the characterization of translation products from ScIVT reactions. Figure 1A and 1B provide clear experimental evidence for the mass-shifted products and their differential sensitivity to enzymatic treatments. The inference that these represent peptidyl-tRNA and CAT-tailed species is well-supported by molecular weight calculations and enzymatic susceptibility patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "CAT tail synthesis is strictly dependent on Rqc2p. Reactions with rqc2\u0394 extracts fail to produce CAT-tailed products and accumulate stable peptidyl-tRNA, suggesting Rqc2p is also involved in peptidyl-tRNA hydrolysis. Addition of purified wild-type Rqc2p rescues both activities, while the D98A mutant does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 and C48-C50 describe the Rqc2p-dependence of CAT tailing. Figures 1C-F provide strong genetic and biochemical evidence through knockout experiments and rescue with purified protein. The observation of stable peptidyl-tRNA in rqc2\u0394 extracts (C41) and the differential rescue by wild-type vs. D98A mutant Rqc2p (C48-C49) provide compelling support for Rqc2p's direct biochemical role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "CAT tailing requires prior ribosome splitting by Hbs1p and Dom34p. ScIVT reactions with hbs1\u0394 or dom34\u0394 extracts generate only stable peptidyl-tRNA, presumably protected within intact 80S ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 describe the requirement for ribosome splitting. Figure 1E shows that hbs1\u0394 and dom34\u0394 extracts produce only peptidyl-tRNA without CAT-tailed products. This is consistent with prior structural studies (C43, supported by citations) and the known role of these factors in ribosome splitting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C93",
+      "C96",
+      "C97"
+    ],
+    "result": "CAT tailing is mechanistically distinct from canonical translation. It requires the peptidyl-transferase center of the 60S subunit but is independent of the 40S subunit, eEF1a, eEF2, and GTP hydrolysis. Unexpectedly, CAT tailing is insensitive to cycloheximide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C51-C62 describe the inhibitor studies characterizing CAT tailing mechanism. Figure 2 provides comprehensive experimental evidence showing differential sensitivity to various inhibitors. The temporal separation of translation and CAT tailing phases (using rqc2\u0394 extracts with delayed Rqc2p addition) is a clever experimental design that allows specific testing of CAT tailing requirements. The conclusions are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The ScIVT system recapitulates Ltn1p-dependent ubiquitination. High-molecular-weight products are lysine-dependent, enhanced by exogenous ubiquitin, contain Myc-tagged ubiquitin, and are absent in ltn1\u0394 extracts. Addition of purified wild-type Ltn1p rescues ubiquitination, while the W1542E RING mutant does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C72 describe the characterization of Ltn1p-dependent ubiquitination. Figures 3A-C and 4A provide multiple lines of evidence: lysine-dependence, ubiquitin supplementation effects, direct detection of ubiquitin in HMW products, genetic dependence on Ltn1p, and rescue with purified protein. The use of the catalytically inactive W1542E mutant as a negative control strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C80",
+      "C94",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Ltn1p-mediated ubiquitination requires Rqc1p. Ubiquitination is absent in rqc1\u0394 extracts and is fully rescued by addition of purified Rqc1p. Increasing Ltn1p concentration does not bypass the Rqc1p requirement, indicating Rqc1p directly promotes nascent-chain ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C73-C76, C80, C94, C113-C115 describe Rqc1p's role in ubiquitination. Figures 3C and 4B provide clear evidence through knockout and rescue experiments. The observation that increasing Ltn1p concentration cannot bypass the Rqc1p requirement (C75, Figure 4\u2014figure supplement 2) is particularly important for establishing a direct rather than indirect role. This finding contrasts with some previous studies (C78), but the authors provide a reasonable explanation (C79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C95",
+      "C117",
+      "C125"
+    ],
+    "result": "CAT tailing enhances Ltn1p-dependent ubiquitination. Disruption of RQC2 abrogates ubiquitination, which is rescued by wild-type Rqc2p but only partially by the CAT-tailing-deficient D98A mutant. Inhibiting CAT tailing with anisomycin also substantially reduces ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C86-C92, C95, C117, C125 describe the coupling between CAT tailing and ubiquitination. Figures 3C, 4C, and 4D provide strong evidence through multiple experimental approaches: genetic disruption, rescue with wild-type vs. mutant Rqc2p, and pharmacological inhibition of CAT tailing. The partial rescue by D98A Rqc2p (C88) is particularly informative, distinguishing between Rqc2p's scaffolding function and its CAT-tailing activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C102",
+      "C103",
+      "C105"
+    ],
+    "result": "The authors propose a model for CAT tailing mechanism based on structural analysis and inhibitor studies. Rqc2p likely directly recruits charged tRNAs without eEF1a involvement, and tRNAs may spontaneously translocate on the 60S subunit without eEF2 or GTP hydrolysis. A minimal set of factors (60S:peptidyl-tRNA, charged Ala/Thr tRNAs, and Rqc2p) may be sufficient for CAT-tail synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C100, C102-C103, C105 present mechanistic models and speculations. While the inhibitor data (Figure 2) support the independence from eEF1a, eEF2, and GTP hydrolysis, the proposed mechanisms for tRNA recruitment and translocation are speculative inferences. The comparison to Monro's minimal system (C104-C105) is interesting but remains hypothetical. These models require direct biochemical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors propose that CAT tailing provides a mechanism for termination in the absence of a stop codon. The variable CAT tail lengths suggest stochastic termination. Rqc2p may recruit a termination factor (possibly uncharged tRNA or eRF1) to promote peptidyl-tRNA hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C112 present models for CAT tailing termination. The observation that peptidyl-tRNA is stable in the absence of Rqc2p (C109, supported by multiple figures) provides some support for Rqc2p's role in termination. However, the specific mechanisms proposed (C110-C112) are speculative and lack direct experimental evidence. The stochastic nature of termination (C108) is inferred from CAT tail length variability but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "The authors speculate that Rqc1p may facilitate ubiquitination by positioning the nascent chain near the Ltn1p RING domain, promoting E2 binding, or activating Ltn1p's E3 ligase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C116 presents speculative hypotheses about Rqc1p's mechanism of action. While the requirement for Rqc1p in ubiquitination is well-established by the experimental data, the specific molecular mechanisms proposed are not tested and remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The authors propose a model where CAT tailing facilitates ubiquitination by positioning lysine residues near the Ltn1p RING domain, which is spatially restricted near the ribosomal exit tunnel. CAT tailing and ubiquitination must be coordinated, with aggregation serving as a backup pathway when ubiquitination is inefficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C123 and C126-C128 present a spatial model for how CAT tailing enhances ubiquitination. The model is based on structural information (C118, supported by citations), the experimental finding that CAT tailing enhances ubiquitination (Figures 3C, 4C-D), and logical inferences about spatial constraints. The model provides a coherent explanation for the coupling between CAT tailing and ubiquitination and is consistent with recent in vivo demonstrations (C122, supported by citations).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "The aggregation-promoting function of CAT tails depends on their alanine/threonine composition, while the ubiquitination-promoting function depends on the process of CAT tailing itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 distinguish between two functions of CAT tails. C129 is supported by a citation to previous work. C130 is supported by the current experimental data showing that inhibiting CAT tailing reduces ubiquitination (Figures 4C-D). This distinction is important for understanding CAT tail function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The authors propose that both RQC activities (ubiquitination and CAT tailing) are likely conserved in metazoans based on protein conservation, even though CAT tailing has not yet been reported in metazoans. A CAT-tailing-dependent mechanism to facilitate ubiquitination likely operates in metazoans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C135 make predictions about RQC conservation in metazoans. While protein conservation (C132) and detection of Ltn1p-dependent ubiquitination in mammalian systems (C134) provide some support, the absence of reported CAT tailing in metazoans (C131) and the speculative nature of the prediction (C135) make this conclusion uncertain. Direct experimental evidence in metazoan systems is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "Mutations in mammalian homologs of HBS1 and LTN1 cause neurodegeneration in mice, underscoring the importance of the RQC in maintaining proteostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C137 cite previous studies demonstrating the physiological importance of RQC components. These are well-supported by the cited references and provide important context for the significance of the RQC pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The authors draw parallels between the bacterial tmRNA system and the eukaryotic RQC, noting functional similarities despite lack of shared factors. Both involve ribosome-catalyzed addition of untemplated C-terminal extensions that facilitate termination and mark proteins for degradation, representing convergent evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C146 present a comparative analysis of the tmRNA and RQC systems. The comparison is well-supported by established knowledge about tmRNA (C139, supported by citation) and the experimental findings about RQC function from the current study (C141-C142). The conclusion about convergent evolution (C145-C146) is a reasonable inference based on the functional similarities and lack of shared components.",
+    "result_type": "MINOR"
+  }
+]

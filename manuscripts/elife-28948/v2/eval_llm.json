@@ -1,0 +1,359 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C220"
+    ],
+    "result": "The authors performed 38.5 microseconds of all-atom molecular dynamics simulations of kinesin-MT complexes in different nucleotide states using the Anton supercomputer. The extension to multiple microseconds was essential for obtaining converged results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C220 establish the computational methodology. The simulation time scale (38.5 \u03bcs total) is explicitly stated and the importance of this extended time scale for convergence is emphasized. The use of Anton supercomputer is documented in the methods section, providing technical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Local subdomain dynamics, particularly of switch-I (sw-I), are essential for nucleotide processing. Sw-I is highly flexible and its hairpin structure unfolds in all post-stroke simulations at 0.98-1.83 \u03bcs, with unfolding being a gradual process rather than an isolated event.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34, C100-C104 collectively demonstrate sw-I flexibility and its functional importance. The unfolding is observed consistently across multiple simulations (ATP, Kin-only, ADP+Pi, and Eg5), with specific timing measurements provided. The gradual nature of unfolding is supported by contact occupancy analysis showing progressive breaking of contacts before full unfolding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Catalytic water molecules are dynamically organized by the switch domains of the nucleotide binding pocket. In MT-bound kinesin (ATP state), contacts between sw-I and sw-II create a narrow channel that facilitates formation of a two-water bridge between P\u03b3 and E236, explaining the higher ATP hydrolysis rate compared to isolated kinesin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C127-C134 provide converging evidence for dynamic water coordination. Water density maps show high-density blobs for catalytic waters in ATP but broadened density in Kin-only. Two-water bridge formation frequency is higher in ATP than Kin-only. The structural mechanism (L11 and R203-E236 positioning) is demonstrated and agrees with experimental observations of 10-fold higher hydrolysis rate when MT-bound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "ATP is torsionally strained when bound to kinesin, with the dihedral angle \u03c6\u03b3 increasing by 21-29\u00b0 compared to free ATP, placing P\u03b3 oxygen atoms in an 'eclipsed' (cis) position. This changes Mg\u00b2\u207a coordination from tridentate to bidentate, potentially facilitating hydrolysis by increasing electron withdrawal from one O\u03b3 atom.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C135-C146 document torsional changes in ATP structure with specific measurements. However, C139 explicitly acknowledges that without ab initio calculations, the energetic impact on hydrolysis is difficult to assess. While C136 cites that 0.01 \u00c5 bond length changes affect GTP catalysis in Ras, C137 notes that similar bond elongation in myosin shows no significant ATP destabilization. The dihedral energy change is modest (1.2 kcal/mol, C144), and the mechanistic interpretation (C145-C146) remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C161"
+    ],
+    "result": "Hydrolysis products (Pi) are 'pulled' by switch-I as it moves away from the P-loop. In the ADP+Pi simulation, Pi was released at 739.92 ns through a gap created between sw-I and ADP, though multiple release paths may exist due to sw-I mobility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C151-C154, C161 demonstrate Pi release mediated by sw-I movement. The mechanism is observed in the ADP+Pi simulation with specific timing (739.92 ns). Supporting evidence comes from an Eg5 simulation showing rearward Pi release at 701 ns. The mobile nature of sw-I and its firm contacts with Pi support its role in driving release, though the authors acknowledge multiple possible pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "A new ATP is 'captured' by a concerted motion of the \u03b10/L5/switch-I trio. During ATP binding simulation, ATP formed transient contacts with these domains, with nonpolar contacts dominant and the adenosine ring pointing toward kinesin. The trio acts like an antenna to capture ATP and deliver it to the P-loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C118-C126 describe ATP binding dynamics from a 2.04 \u03bcs simulation. While transient contacts with the \u03b10/L5/sw-I trio are observed (C118-C119), a complete binding event was not captured. The proposed mechanism (C122-C125) is largely inferential. C126 argues the mechanism should hold based on physical chemistry principles and structural arrangement, but the lack of a complete binding event limits direct validation. The orientation of ATP (phosphate pointing away) and the proposed multi-step process are reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Switch-I facilitates ADP release through its mobility. In the ADPpre simulation, sw-I in an \u03b1-helical conformation contacted ADP via N198 and gradually pulled it out over multiple attempts. After release, sw-I lost its \u03b1-helical conformation, though whether this conformation is required for release remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C165 document ADP release in the ADPpre simulation with specific structural details and timing. The observation of sw-I spontaneously forming an \u03b1-helical turn in the ATP binding simulation (C168) supports its conformational flexibility (C169). However, C166 acknowledges uncertainty about whether the \u03b1-helical state is required for release, and C167 is speculative about the mechanical advantage. The core observation of sw-I-mediated ADP release is well-supported by simulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C69",
+      "C70",
+      "C71",
+      "C75",
+      "C84",
+      "C85",
+      "C86",
+      "C93",
+      "C94",
+      "C95",
+      "C99"
+    ],
+    "result": "The kinesin-MT interface is dynamic, wet, and tuned for rapid interactions while maintaining specificity. High-density water blobs are present throughout the interface, buried area fluctuates with 80-720 ns correlation times, and the interface is maintained by an ensemble of low-occupancy contacts (170-240 H-bonds, 250-390 nonpolar contacts, with only 4-10 and 5-16 having >80% occupancy, respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C69-C71, C75, C84-C86, C93-C95, C99 provide comprehensive characterization of the interface. Water density maps (C69), buried area fluctuations (C71), and detailed contact analysis (C84-C86) demonstrate the dynamic and hydrated nature. The low occupancy of most contacts (C77, C84) supports the ensemble model (C93). Specificity is maintained through selective recognition of \u03b2-tubulin (C96-C98), with H12 of \u03b2-tubulin having non-homologous contact residues compared to \u03b1-tubulin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C61",
+      "C62"
+    ],
+    "result": "Conformational changes in simulations saturate after 1-3 \u03bcs, with Kin-only showing the greatest displacement and MT-bound structures showing 2.5-3 \u00c5 average displacements. The central \u03b2-sheet shifts leftward in the post-stroke state and fluctuates more in the transverse direction, indicating anisotropic compliance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32, C61-C62 describe convergence and conformational behavior from displacement analysis. The saturation of displacements (C30) indicates simulation convergence. Quantitative measurements are provided for different systems (C31-C32). The directional preferences (C61-C62) are supported by translational displacement analysis shown in Figure 3A and Figure 3\u2014figure supplement 1B.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C58",
+      "C60",
+      "C208",
+      "C209",
+      "C210",
+      "C211"
+    ],
+    "result": "Curvature changes in kinesin's central \u03b2-sheet are not substantial enough to drive ATP hydrolysis or transitions between pre- and post-stroke states. Pre-stroke states have higher curvature, but ATP and ADP+Pi have very similar curvature, and the curvature energy differences (~1-2 kBT) are much smaller than the ~10 kBT free energy from ATP hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55, C58, C60, C208-C211 provide curvature analysis with quantitative energy estimates. The similarity between ATP and ADP+Pi curvatures (C53) argues against curvature driving hydrolysis or Pi release. The PMF analysis shows energy differences of ~0.84-1.7 kBT between states, well below the 10 kBT available from ATP hydrolysis. Comparisons to myosin V (C210) and structural arguments about aspect ratio (C209) support the conclusion. The hydrated, dynamic interface (C211) further argues against substantial strain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C197",
+      "C198",
+      "C199",
+      "C201",
+      "C203"
+    ],
+    "result": "ATP and APO states have the strongest calculated binding energy with the MT, consistent with experimental high MT affinity. However, ADP+Pi did not show motor head unbinding after Pi release despite expectations, having more high-occupancy contacts than other states. The authors propose that \u03b14 unfolding is required for unbinding, which occurred transiently in ADP+Pi and extensively in Kin-only.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73, C197-C199, C201, C203 address a discrepancy between simulation and expected behavior. While C73 shows agreement with experimental MT affinity trends, C74 acknowledges that calculated binding energies lack water-mediated interactions and entropic contributions. The failure to observe unbinding in ADP+Pi (C196-C197) is significant, and C198 acknowledges that extending simulation time is unlikely to lead to detachment. The proposed \u03b14 unfolding mechanism (C199, C201) is speculative and not directly validated. Agreement with experimental findings that Pi release is required for unbinding (C203) provides partial support, but the mechanism remains incompletely demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The sw-I hairpin unfolding observed in simulations is only partial, with the C-terminal side maintaining contact with ATP while the N-terminal side separates. This partial unfolding is consistent with crystal structures where sw-I hairpins are stabilized by crystal contacts and with cryo-EM data where the N-terminal side shows greater deviation from maps than the C-terminal side.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113, C115-C117 reconcile simulation observations with structural data. Crystal contact analysis (C109) explains why hairpins appear stable in crystals. Comparison to myosin (C110) shows that kinesin lacks stabilizing contacts for the hairpin. The partial nature of unfolding (C111) is supported by crystal structures where the C-terminal side is visible (C112). Alignment to cryo-EM maps (C113, C115) shows the N-terminal side deviates more, consistent with its mobility. The interpretation that at cryogenic temperatures the N-terminal side settles to a hairpin-like state (C116) is reasonable speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C174",
+      "C175"
+    ],
+    "result": "The authors propose a detailed model of kinesin dimer motility where ATP hydrolysis in the rear head (involving sw-I-II connection, dynamic water coordination, and torsional strain) allows the front head to release ADP and fully bind to the MT. ATP binding to the front head is gated until the rear head releases Pi and detaches. CNB formation generates the power stroke, and the MT E-hook helps capture the new front head.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C170-C172, C174-C175 present an integrated model of dimer motility. While individual components are supported by simulation data (ATP hydrolysis mechanism C170, CNB formation C174), the model integrates these with cited experimental findings (C171-C172, C175). However, the simulations only examined single motor heads, not dimers. The coordination between heads, gating mechanism, and role of the E-hook are inferred from single-head simulations combined with literature rather than directly demonstrated. This is acknowledged as the model describes \"how it may be achieved\" rather than direct observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "The inherent mobility of sw-I is consistent with FRET and EPR experiments showing sw-I stays in an 'open' state >50% of the time even in the ATP state. In the ATP state, sw-I mobility is limited such that its C-terminal side maintains contacts with ATP and sw-II necessary for hydrolysis. The hairpin conformation may promote but is not required for hydrolysis, as the R190A/D231A mutant retains 22% catalytic activity. Variations in sw-I sequence may provide an allosteric mechanism to fine-tune catalytic rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C176-C188 integrate simulation findings with experimental validation. FRET (C176-C177) and EPR (C178) experiments support sw-I mobility. The selective stability of the C-terminal side (C179) is demonstrated in simulations. The mechanism for lower hydrolysis rate in isolated kinesin (C180) is supported by water density analysis. The R190A/D231A mutant data (C186-C188) provides strong experimental support that the hairpin promotes but is not required for hydrolysis. The proposed allosteric mechanism (C185) is speculative but reasonable given the observed flexibility and mutant data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C205",
+      "C206",
+      "C207",
+      "C221",
+      "C222"
+    ],
+    "result": "The proposed dynamic mechanism provides flexibility necessary for walking in the crowded cellular environment and allows fine-tuning of time scales and affinities. The variation in structural rigidity, hydration, and protein-protein interactions provides a dynamic description significantly different from conclusions based on static structures. This dynamic mechanism may be general across translocating motor proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C205-C207, C221-C222 present broader implications of the findings. The dynamic nature of the mechanism (C205) is well-supported by the extensive simulation data. The advantage for cellular function (C10) is a reasonable inference from the observed flexibility and low-specificity contacts. The contrast with static structure interpretations (C221) is justified by the observed dynamics. The generalization to other motor proteins (C222) is speculative but reasonable given evolutionary relationships. The proposed mechanism for tuning catalytic rates (C207) is speculative but consistent with observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Intra-kinesin contacts show a U-shaped occupancy distribution with most contacts having <20% occupancy. Post-stroke states had more contacts break than form, mainly within the first 3 \u03bcs, clustered around the nucleotide pocket. With a bound nucleotide, sw-I hairpin contacts break, but contacts between sw-I with ATP and sw-II necessary for hydrolysis remain intact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83 provide detailed contact analysis. Quantitative data on contact numbers and occupancy distributions (C76-C78) are provided. The temporal pattern of contact changes (C79) and their spatial localization (C80) are documented. The selective breaking of sw-I hairpin contacts while maintaining catalytically important contacts (C81-C83) is demonstrated through occupancy trajectory analysis and is consistent with the partial unfolding mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Kinesin-MT contacts can be grouped into rear (L11/\u03b14), middle (L12/\u03b15), and front (L8/\u03b25) regions. The rear and middle contacts are present in all nucleotide states, while front contacts are less robust in pre-stroke states. The contact analysis agrees with alanine-scanning experiments. Kinesin binds selectively to \u03b2-tubulin, with H12 of \u03b2-tubulin having several non-homologous contact residues compared to \u03b1-tubulin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90, C96-C98 characterize the spatial organization and specificity of kinesin-MT contacts. The three-region organization (C88-C89) is documented in contact analysis. Agreement with mutagenesis experiments (C90) provides experimental validation. The molecular basis for \u03b2-tubulin selectivity (C96-C98) is demonstrated through sequence comparison showing non-homologous residues in H12 of \u03b2-tubulin that contact kinesin.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The duration of the ADP+Pi state affects kinesin dimer processivity. In simulations with divalent phosphate (P\u00b2\u207b\u1d62), it formed extensive contacts with Mg-ADP and sw-I and did not release over 3.7-3.8 \u03bcs. The conversion time from divalent to monovalent phosphate may depend on proton transfer time scale and conformational fluctuations. Phosphate release time also depends on phosphate orientation in the nucleotide pocket.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C160 address factors affecting Pi release timing. Experimental evidence for the importance of ADP+Pi state duration (C155) is cited. The simulation observations with divalent phosphate (C156) provide mechanistic insight into why this state persists. The chemical explanation for the difference between divalent and monovalent phosphate (C157) is cited from computational studies. The proposed factors affecting conversion time (C158-C159) are reasonable inferences. The observation with differently oriented monovalent Pi (C160) supports the orientation-dependence claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C213",
+      "C214",
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219"
+    ],
+    "result": "The free energy change upon neck linker docking without load (0.7-2.9 kcal/mol) is much smaller than the maximum work done near stall force (5.8-8.1 kcal/mol). Additional energy likely originates from CNB formation and front head binding to the MT. While ATP hydrolysis energy thermalizes rapidly, the differential binding energy of ATP and its products likely triggers large transitions. Kinesin's mobile subdomains are 'free energy transducers.'",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C213-C219 address energetics of kinesin motility. The energy values (C213-C214) are cited from experiments and calculations. The energy gap and proposed sources (C215) are reasonable given the measurements. The rapid thermalization argument (C216) is based on established time scales. The role of differential binding energy (C217) is a reasonable inference from the nucleotide-dependent conformational changes observed. The thermodynamic principle (C218) and conceptual framework (C219) are well-founded interpretations of the dynamic mechanism.",
+    "result_type": "MINOR"
+  }
+]

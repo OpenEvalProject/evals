@@ -1,0 +1,196 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C55",
+      "C56",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C83",
+      "C84"
+    ],
+    "result": "The authors developed a novel in vitro FRET-based UPR induction assay using CFP-tagged IRE1 LD and YFP-tagged BiP to quantitatively measure their association and dissociation upon addition of misfolded proteins. This assay reconstitutes the key mechanistic step of misfolded protein detection in UPR signaling and represents a three-component interacting system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C16 and C55-C56 describe the development and validation of the FRET assay with appropriate methodological details (C73-C79, C83-C84). The construct design is rational based on prior work (C8-C9), and the assay successfully measures both association and dissociation events. The technical approach is well-documented and represents a significant methodological advance over qualitative pull-down assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C85",
+      "C86"
+    ],
+    "result": "The FRET assay demonstrates a direct interaction between IRE1 LD and BiP ATPase domain, with the FRET ratio for CFP-IRE1 LD with YFP-BiP (~0.62) being approximately double that of non-binding controls (~0.34), representing a significant and reproducible FRET signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 present quantitative FRET measurements with appropriate controls shown in Figure 1C. The ~2-fold increase in FRET ratio is consistent with established FRET methodology (C20, C84). The background signal from CFP leakage (C85-C86) is acknowledged and properly controlled, strengthening the interpretation of the positive signal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Addition of misfolded protein CH1 causes dose-dependent dissociation of the IRE1-BiP complex, reducing the FRET signal to ~4% with 10-fold molar excess, with an IC50 of 12.3 \u00b1 1.3 \u03bcM and inhibition constant Ki = 0.51 \u00b1 0.01 \u03bcM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 present quantitative dose-response data shown in Figures 1D and 2. The dose-dependent reduction in FRET signal with well-defined kinetic parameters (IC50, Ki) provides strong quantitative evidence for misfolded protein-induced dissociation. The curve fitting (r\u00b2 = 0.98) indicates good data quality, and the 10-fold excess achieving near-complete inhibition is consistent with the measured affinity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C70",
+      "C71"
+    ],
+    "result": "The interaction between IRE1 LD and BiP occurs specifically via the BiP ATPase domain and not the substrate-binding domain (SBD), as demonstrated by domain mapping experiments showing 100% FRET signal with the ATPase domain and no signal with the SBD alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 present clear domain mapping data shown in Figure 3B-C. The complete FRET signal with ATPase domain and absence of signal with SBD provides strong evidence for domain specificity. This is consistent with prior MST and pull-down data (C70) and independent observations (C71), strengthening confidence in this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C63",
+      "C68"
+    ],
+    "result": "The IRE1-BiP interaction and its dissociation upon misfolded protein binding are independent of nucleotides (ATP, ADP, AMP-PNP), as demonstrated by FRET measurements showing no significant effect of nucleotide addition and by experiments with ATPase-deficient BiP mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 and C44-C48 present consistent evidence from multiple experimental approaches (Figure 3D, Figure 5\u2014supplement 1). The lack of nucleotide dependence is demonstrated both with wild-type BiP and with the T229A ATPase-deficient mutant. The double mutant BiPV461F,T229A behaving identically to BiPV461F alone (C47) provides strong genetic evidence for nucleotide independence, supporting the conclusion that this is a signaling interaction rather than a chaperone-substrate interaction (C63-C64).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C57"
+    ],
+    "result": "Multiple ER misfolded proteins (antitrypsin, RNase A, apolipoprotein, TTRD18G) cause dissociation of the IRE1-BiP complex (reducing FRET signal to ~2-6%), while the same proteins in their native folded state have no effect, demonstrating that misfolded protein recognition by BiP SBD is the key determinant for dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 present systematic comparisons of folded vs. misfolded proteins shown in Figure 4A-C and supplement. The consistent pattern across multiple protein substrates\u2014folded proteins maintaining 100% FRET signal while misfolded versions reduce it to ~2-6%\u2014provides strong evidence for specificity. This demonstrates generalizability beyond CH1 (C38) and is consistent with BiP's known function as an Hsp70 chaperone (C39). The interpretation that misfolded proteins are sensed by BiP SBD (C57) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C46",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The BiP V461F mutant, which blocks substrate access to the SBD active site, maintains interaction with IRE1 LD but fails to dissociate upon misfolded protein addition both in vitro (no FRET signal loss) and in cells (maintained co-immunoprecipitation under ER stress), confirming that misfolded protein binding to BiP SBD is required for dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 and C49-C51 present convergent evidence from in vitro FRET (Figure 5B-C) and cellular co-IP experiments (Figure 5D). The V461F mutant shows the predicted behavior: maintaining interaction with IRE1 (C49) but failing to dissociate upon stress (C43, C51), while wild-type BiP shows stress-induced dissociation (C42, C50). The mechanistic explanation based on steric hindrance (C40-C41) is well-established in the literature. The double mutant data (C46) further supports that SBD function, not ATPase activity, is the critical determinant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C72"
+    ],
+    "result": "The data support an allosteric model for UPR induction where misfolded protein binding to BiP SBD causes conformational changes that dissociate the BiP ATPase domain from IRE1, and argue against the competitive BiP titration model where IRE1 binds BiP via the SBD in an ATP-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54 and C63-C64 present the allosteric model interpretation, which is well-supported by the collective data: (1) interaction via ATPase domain not SBD (C29-C31), (2) nucleotide independence (C32-C33, C44-C48), (3) requirement for misfolded protein binding to SBD (C37, C42-C43, C52-C53). The evidence against the competition model (C58-C62) is strong because the data show IRE1 binds the ATPase domain (not SBD as the competition model requires) and dissociation is ATP-independent (contrary to the competition model). The logical argument that two-domain involvement eliminates competitive requirements (C66-C67) is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C8",
+      "C9"
+    ],
+    "result": "The study builds on prior work establishing the UPR system and an allosteric model based on qualitative pull-down assays showing IRE1 LD-BiP ATPase domain interaction (Kd = 1.33 \u03bcM) that dissociates upon CH1 misfolded protein binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 accurately describe established knowledge about UPR (C1-C2) and appropriately cite prior work by the authors (C3-C5). Claims C8-C9 reference specific prior measurements that inform the current experimental design. These background claims are properly supported by citations and provide appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Nucleotides impact BiP conformation, with ADP-bound and ATP-bound BiP adopting substantially different conformations, though the current study shows this does not affect IRE1 binding/release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 states established knowledge about BiP conformational states. While the authors acknowledge this known property, their data (C32-C33, C44-C48, C68) demonstrate that despite these conformational changes, nucleotides do not affect the specific IRE1-BiP interaction studied here. This represents appropriate acknowledgment of complexity while maintaining the validity of their nucleotide-independence conclusion.",
+    "result_type": "MINOR"
+  }
+]

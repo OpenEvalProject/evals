@@ -1,0 +1,1681 @@
+{
+  "submission": {
+    "id": "723b5cc8-c418-4e40-a35f-f5c851954d32",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:06:17.731323Z",
+    "updated_at": "2025-12-02T01:06:17.731323Z"
+  },
+  "content": [
+    {
+      "id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "submission_id": "723b5cc8-c418-4e40-a35f-f5c851954d32",
+      "content_type": "manuscript",
+      "content_text": "# Antibiotic-induced changes in the microbiota disrupt redox dynamics in the gut\n\n## Authors\n\n- Aspen T Reese<sup>1</sup> ([ORCID: 0000-0001-9004-9470](https://orcid.org/0000-0001-9004-9470))\n- Eugenia H Cho<sup>3</sup>\n- Bruce Klitzman<sup>4</sup>\n- Scott P Nichols<sup>5</sup>\n- Natalie A Wisniewski<sup>5</sup>\n- Max M Villa<sup>2</sup>\n- Heather K Durand<sup>2</sup> ([ORCID: 0000-0003-4059-8484](https://orcid.org/0000-0003-4059-8484))\n- Sharon Jiang<sup>2</sup>\n- Firas S Midani<sup>6</sup> ([ORCID: 0000-0002-2473-7758](https://orcid.org/0000-0002-2473-7758))\n- Sai N Nimmagadda<sup>7</sup> ([ORCID: 0000-0003-1837-4054](https://orcid.org/0000-0003-1837-4054))\n- Thomas M O'Connell<sup>8</sup>\n- Justin P Wright<sup>1</sup>\n- Marc A Deshusses<sup>9</sup>\n- Lawrence A David<sup>2</sup> ([ORCID: 0000-0002-3570-4767](https://orcid.org/0000-0002-3570-4767)) \u2020\n\n### Affiliations\n\n1. Department of Biology Duke University Durham United States\n2. Department of Molecular Genetics and Microbiology Duke University Durham United States\n3. Department of Bioengineering University of Pennsylvania Philadelphia United States\n4. Department of Surgery Duke University Medical Center Durham United States\n5. Profusa, Inc. South San Francisco United States\n6. Program in Computational Biology and Bioinformatics Duke University Durham United States\n7. Department of Biomedical Engineering Duke University Durham United States\n8. Department of Otolaryngology-Head and Neck Surgery Indiana University School of Medicine Indianapolis United States\n9. Department of Civil and Environmental Engineering Duke University Durham United States\n10. Center for Genomic and Computational Biology Duke University Durham United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHow host and microbial factors combine to structure gut microbial communities remains incompletely understood. Redox potential is an important environmental feature affected by both host and microbial actions. We assessed how antibiotics, which can impact host and microbial function, change redox state and how this contributes to post-antibiotic succession. We showed gut redox potential increased within hours of an antibiotic dose in mice. Host and microbial functioning changed under treatment, but shifts in redox potentials could be attributed specifically to bacterial suppression in a host-free ex vivo human gut microbiota model. Redox dynamics were linked to blooms of the bacterial family Enterobacteriaceae. Ecological succession to pre-treatment composition was associated with recovery of gut redox, but also required dispersal from unaffected gut communities. As bacterial competition for electron acceptors can be a key ecological factor structuring gut communities, these results support the potential for manipulating gut microbiota through managing bacterial respiration.\n\n## Introduction\n\nMammalian gut microbial communities are likely to be structured by both host- and microbial-associated factors. Extensive research to date has focused on how host factors like diet (David et al., 2014; Claesson et al., 2012), genetics (Goodrich et al., 2014), geography (De Filippo et al., 2010; Yatsunenko et al., 2012; Arumugam et al., 2011), and immune state (Hooper et al., 2012) shape the gut microbiota. Yet, work in free-living microbial systems reveals that bacteria typically play active roles in shaping their own environment (Shi and Norton, 2000; Gobbetti, 1998; Goddard, 2008; Osono, 2005; Rui et al., 2009; Gerbersdorf et al., 2009). Identifying how these drivers interact is necessary both for a more complete understanding of the gut microbiota and for developing rational interventions. If ecological forces prove important, then compositional changes will likely be the result of feedbacks between the microbes and their environment.\n\nRedox potential, a metric of the environmental capacity for reducing chemical reactions (i.e., those involving the gain of electrons) to occur, is a composite measurement of various factors that influence gut microbiota structure (Cowley et al., 2015; Friedman et al., 2017; Dhall et al., 2014). Much of our knowledge for how gut redox potentials are determined involves host-associated pathways (Spees et al., 2013; Rivera-Ch\u00e1vez et al., 2016). Passive diffusion of oxygen from the epithelium increases redox potential and stimulates growth of aerobic microbes (Espey, 2013; Albenberg et al., 2014). Secretion of redox-active immune molecules such as reactive oxygen species or nitrate is known to be a feature of inflammation that imposes oxidative stress on commensal microbes and can be exploited by select pathogens to colonize the intestine (Winter et al., 2010; 2013; Faber et al., 2016; Spees et al., 2013; Rivera-Ch\u00e1vez et al., 2016; Kelly et al., 2015; David et al., 2015). Maintenance of redox homeostasis in host tissue can also have spillover effects on luminal redox state (Circu and Aw, 2011).\n\nYet, redox potential is likely to also be shaped by microbial metabolism. In free-living microbial communities, variation in available electron acceptors dictates where microbes that employ respiration can thrive; the differential microbial metabolism that follows can produce further changes in electron acceptor availability (Morris and Schmidt, 2013; Chen et al., 2017; Noll et al., 2005; Orcutt et al., 2011). Moreover, microbial metabolism has been proposed as a mechanism for low redox potential states in the lung of cystic fibrosis patients (Cowley et al., 2015).\n\nHere, we investigated the nature of redox potential dynamics under antibiotic treatment to assess the importance of host and microbial processes in structuring gut bacterial communities. Antibiotics directly disturb the microbiota but are also expected to alter host biology related to redox potential. Specifically, antibiotics have been found to increase gut epithelium oxygenation as a result of altered microbial composition and metabolic signaling to the host (Kelly et al., 2015; Rivera-Ch\u00e1vez et al., 2016). Increases in luminal oxygen due to diffusion from the microvasculature supplying the epithelium would lead to a higher redox potential under antibiotic treatment. In addition, host inflammation responses to antibiotic treatment and antibiotic-associated pathogen colonization have been shown to produce electron acceptors and other redox active molecules that cause oxidative stress (Faber et al., 2016; Winter et al., 2010; 2013; Spees et al., 2013). While these pathways have been demonstrated previously, their overall impact on redox potential has not been measured. Furthermore, the contribution of microbial metabolism to gut redox potential has not been tested, although it is known that a wide range of resident gut bacteria can respire aerobically and anaerobically (Ravcheev and Thiele, 2014). Antibiotic-driven bacterial inhibition could increase the availability of electron acceptors and thus serve as another mechanism for antibiotic induced changes in gut redox potential. On the other hand, antibiotic inhibition could limit bacterial production of oxidizing agents thereby resulting in an overall decrease in redox potential under antibiotics.\n\nChanges in redox potential under antibiotics would in turn be expected to yield insight into the forces structuring the composition and function of the microbiota. Elevated redox potential due to a host immune response could restrict the microbiota beyond direct antibiotic mortality as inflammation would introduce additional oxidative stress into microbial ecosystems. By contrast, elevated redox potential due to the accumulation of oxygen or anaerobic electron acceptors would foster the growth of respiring bacteria. Antibiotic disturbance produces reproducible community succession in the gut following treatment\u2014most notably, a transient bloom in Enterobacteriaceae (Antonopoulos et al., 2009; David et al., 2015; Young and Schmidt, 2004; Theriot et al., 2014; Peterfreund et al., 2012; Dethlefsen et al., 2008; Jakobsson et al., 2010; Looft and Allen, 2012), which has been ascribed to an increase in oxygen availability (David et al., 2015). But, the role of redox potential during this successional process has not previously been studied. If redox potential changes due to antibiotic treatment, we would predict that redox state recovery would be necessary for community resilience, that\u00a0is for compositional recovery to a pre-disturbance state to occur (Shade et al., 2012). Furthermore, we expect that feedback between the community (i.e. the biotic component of the system) and their environment (i.e., the abiotic component) would drive further redox potential changes during the successional period. Such a pattern would highlight the potential of manipulating redox potential to alter community dynamics after disturbance.\n\nHere, we combined in vivo and ex vivo antibiotic studies to isolate the effects of host and microbial pathways on redox state in the mammalian gut. We confirmed that redox potential increased during antibiotic treatment in association with some changes in host immune state. However, multiple lines of evidence in both mice and an artificial human gut model suggested that antibiotic-induced changes in microbial metabolism were sufficient to cause an increase in redox potential. After antibiotic treatments ended, we observed redox recovery within a week. A successional return to conventional community composition only occurred, though, when mice were co-housed and shared gut microbiota, indicating that microbial dispersal is necessary above and beyond environmental recovery for the return of normal microbiota community structure.\n\n## Results\n\n### Antibiotics caused a significant increase in mouse fecal redox potential within a day of treatment\n\nFor five days, we orally gavaged a cohort of conventional mice with a cocktail of antibiotics (ampicillin, vancomycin, metronidazole, and neomycin [Reikvam et al., 2011]) to broadly inhibit gut bacteria. We measured redox potential in freshly voided feces with a microelectrode paired with a reference electrode daily. Within sixteen hours after the first dose of antibiotics, redox potential significantly increased from 37\u00a0\u00b1\u00a0164 mV at baseline to 227\u00a0\u00b1\u00a045 mV (p=0.04 Bonferroni-corrected Mann-Whitney U test; Figure 1A). Throughout treatment, redox potential differed overall between treated and control mice (p=0.005 linear mixed effects model likelihood tests).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/35987/elife-35987-fig1-v1.jpg)\n\n**Figure 1.:** (A) Redox state measured in freshly voided feces of treated (red) and control (black) mice (n\u00a0=\u00a09\u201310 per treatment) differed (p=0.005, linear mixed effects model likelihood tests). Replicate data is presented in Figure 1\u2014figure supplement 2. (B) Gene expression for four inflammation associated genes measured with RT-qPCR of RNA isolated from feces on the final day of antibiotic treatment (n\u00a0=\u00a06\u20137) differed from control levels (p<0.05, Bonferroni-corrected one-sample t-tests). (C) Intestinal inflammation measured as fecal concentration of the biomarker lipocalin-2 (n\u00a0=\u00a09\u201310 per treatment) differed between treated and control mice (p<0.001 linear mixed effects model likelihood tests). Data are shown as means\u00a0\u00b1\u00a0SD. Post-hoc test results for individual time points (* indicates p<0.05 Bonferroni-corrected Mann-Whitney U test) are included for visualization purposes. Antibiotic treatment began after Day 0 measurement; red bars indicate treatment duration.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35987/elife-35987-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Intestinal inflammation measured as fecal concentration of the biomarker lipocalin-2 (n\u00a0=\u00a09\u201310 per treatment). Data are shown as means\u00a0\u00b1\u00a0SD. Antibiotic treatment began after Day 0 measurement; red bars indicate treatment duration.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35987/elife-35987-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Redox state measured in freshly voided feces of treated (red) and control (black) mice (n\u00a0=\u00a09\u201310 per treatment) differed (p=0.005 linear mixed effects model likelihood tests). Data are shown as means\u00a0\u00b1\u00a0SD. Antibiotic treatment began after Day 0 measurement; red bars indicate treatment duration.\n\n### Evidence antibiotics alter host biology to increase redox potential\n\nWe examined first whether antibiotics affected redox potential through direct host effects mediated by an immune response. Expression of three host genes in fecal samples were consistent with the hypothesis that redox shifts were associated with immune activation. We measured increases relative to controls in Nos2, which is linked to reactive nitrogen species levels (Dedon and Tannenbaum, 2004; Winterbourn, 2008); increases relative to controls in Rela, which has been found to contribute to IBD type inflammation in mice via a proinflammatory cytokine response (Waddell et al., 2013); and, decreases relative to controls in Apoa4, which has known anti-inflammatory function (Broedl et al., 2007) (p<0.05, Bonferroni-corrected one-sample t-tests; Figure 1B). Yet, other biomarkers did not associate antibiotic treatment with an immune response. Nfkb1 expression, which is associated with inflammation suppression (Cartwright et al., 2016), increased after antibiotic treatment. Antibiotic treatment was also followed by a small, but significant, decrease in lipocalin-2 levels, which is a protein biomarker of inflammation (Chassaing et al., 2012) (p<0.001, linear mixed effects model likelihood tests; Figure 1C). Taken together, our biomarker assays provided equivocal evidence for intestinal inflammation in antibiotic-treated mice.\n\n### Bacterial responses to antibiotics associated with redox potential shift\n\nTo test if inhibition of bacterial populations by antibiotics could directly contribute to redox potential dynamics, we used an ex vivo human gut system based on a continuous-flow bioreactor (McDonald et al., 2013), which allowed the propagation of a stable microbial community representative of the human gut microbiota with all major phyla represented (Figure 2\u2014figure supplement 1). Treating this system with the same antibiotic cocktail as used in the mouse study led to an increase in redox potential relative to an untreated control (p=0.005, linear mixed effects model likelihood tests; Figure 2A). Redox potential increased by 59\u00a0\u00b1\u00a047 mV within fifteen hours of the first antibiotic dose, mirroring the rapidity with which redox shifts occurred in vivo (Figure 1A). Redox potential in our ex vivo model increased again by another 141\u00a0\u00b1\u00a037 mV after a second antibiotic dose (Figure 2\u2014figure supplement 1). Thus, in the absence of direct interactions between antibiotics and a host, antibiotic treatment produced shifts in environmental redox potential experienced by a gut microbial community.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/35987/elife-35987-fig2-v1.jpg)\n\n**Figure 2.:** (A) Redox potential from control (black) and antibiotic treated (red) bioreactor vessels culturing human gut microbial communities (n = 3 per treatment) differed (p=0.005, linear mixed effects model likelihood tests). (B) Microbial load, measured as 16S rRNA gene copy number in antibiotic-treated and control mice decreased during the first 24 hr of treatment for antibiotic treated mice (n = 9\u201310 per treatment; p<0.001, Bonferroni-corrected Mann-Whitney U tests). (C) Metabolites measured with NMR spectrometry of feces (n = 9\u201310 per treatment; see Figure 2\u2014figure supplement 3 and Supplementary file 1) decreased in antibiotic treated mice during the first 24 hr (p<0.001, Bonferroni-corrected Mann-Whitney U tests). Data are shown as means \u00b1 SD. Post-hoc test results for individual time points (* indicates p<0.05 Bonferroni-corrected Mann-Whitney U test) are included for visualization purposes. Antibiotic treatment began after Day 0 measurement; red bars indicate treatment duration.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35987/elife-35987-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) The experimental setup entailed the vessels acclimating for 2 days (the first day without new media feeding in) before experiencing two antibiotic doses of a cocktail including ampicillin, vancomycin, metronidazole, and neomycin (see Materials\u00a0and\u00a0methods). (B) Community composition of control vessels for each replicate run during the experimental timeframe. (C) Redox potential measured continuously with electrodes for two days with antibiotic doses (where relevant) at 0 and 24 (N\u00a0=\u00a03 per treatment). Red arrows indicate antibiotic dose.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35987/elife-35987-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Copies 16S rRNA gene as quantified by qPCR over time (n\u00a0=\u00a09\u201310 per treatment). Data are shown as means\u00a0\u00b1\u00a0SD. Antibiotic treatment began after Day 0 measurement; red bars indicate treatment duration.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35987/elife-35987-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Classes of metabolites measured with NMR spectrometry of feces (n\u00a0=\u00a09\u201310 per treatment) included short chain fatty acids (A), amino acids (B), branch chain amino acids (C), and a subclass of bile acids (D). See Supplementary file 1 for individual metabolite results with statistical analyses. Data are shown as means\u00a0\u00b1\u00a0SD. Antibiotic treatment began after Day 0 measurement; red bars indicate treatment duration.\n\n### Fecal redox potential under antibiotics is associated with bacterial metabolism and respiration\n\nTo understand how antibiotic effects on bacterial populations could lead to shifts in gut redox potential, we investigated the dynamics and metabolism of microbiota across treatment in mice. We observed depressed levels of bacterial load and metabolic activity that occurred within hours of initial redox potential shifts. Fecal bacterial concentrations decreased significantly within twelve hours of antibiotic treatment (p=0.01, Bonferroni-corrected Mann-Whitney U test; Figure 2B), and remained significantly below controls throughout the five days of treatment (p<0.001, Bonferroni-corrected Mann-Whitney U tests; Figure 2\u2014figure supplement 2). Using NMR-based metabolomics, we found that the short-chain fatty acids propionate and acetate, end products of key microbial metabolic pathways, decreased eight hours after antibiotic treatment (p<0.05, Bonferroni-corrected Mann-Whitney U tests; Figure 2\u2014figure supplement 3, Supplementary file 1). Twenty-one of twenty-eight metabolites measured, including other short-chain fatty acids, amino acids, branched-chain amino acids, and a group of bile acids, later decreased significantly under antibiotic treatment (p<0.05, Bonferroni-corrected Mann-Whitney U tests; Figure 2C, Figure 2\u2014figure supplement 3, Supplementary file 1). The dynamics of twelve of those metabolites was significantly associated with treatment overall (p<0.05, linear mixed effects model likelihood tests; Supplementary file 1). Thus, the timing and persistence of decreased gut load and microbial activity coincided with increases in fecal redox potential.\n\nNext, we measured the concentration of three major electron acceptors used during microbial respiration to assess whether changes in these pathways contributed to the redox potential increase. First, measuring luminal oxygen with a novel in vivo sensor system\u2014a hydrogel sensor with covalently attached oxygen sensitive Pd-porphyrin derivative was inserted rectally then read optically through the skin\u2014we observed a significant increase in luminal oxygen levels the day after antibiotic treatment (3.7\u00a0\u00b1\u00a03.6 Torr at baseline to 26.5\u00a0\u00b1\u00a026.1 Torr; p=0.02, Bonferroni-corrected Mann-Whitney U test; Figure 3A). Previous work (Kelly et al., 2015; Rivera-Ch\u00e1vez et al., 2016) has shown elevated tissue oxygenation under antibiotics, which could result in higher diffusion and therefore higher luminal oxygen. In addition, reduced aerobic respiration due to antibiotic mortality or stress could also increase gut oxygen levels. However, gut oxygen levels in antibiotic-treated mice returned to control levels by forty-eight hours after the first dose (p>0.05, Bonferroni-corrected Mann-Whitney U test), and antibiotics were not associated with an overall effect on gut oxygen levels (p>0.05 linear mixed effects model likelihood tests). Moreover, among treated mice, gut oxygen levels were not correlated with redox potential (p>0.05, repeated measures correlation; Figure 3\u2014figure supplement 1). These data together suggest that increased luminal oxygenation during antibiotic treatment may contribute to early shifts in redox potential, but were not responsible for persistent redox shifts.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/35987/elife-35987-fig3-v1.jpg)\n\n**Figure 3.:** (A) Large intestine luminal oxygen concentration measured in vivo for treated (red) and control (black) mice (n\u00a0=\u00a09\u201310 per treatment) did not differ overall during treatment (p>0.05, linear mixed effects model likelihood tests). Replicate data are presented in Figure 3\u2014figure supplement 2. (B) Fecal nitrate concentration (n\u00a0=\u00a02\u20139 per group per time point) did differ between treated and control mice during treatment (p=0.02, linear mixed effects model likelihood tests). (C) Fecal fumarate concentration (n\u00a0=\u00a02\u20139 per group per time point) also differed (p<0.001, linear mixed effects model likelihood tests). Electron acceptor levels below the detection level are not plotted here. For fumarate measurements where all treated animals were below the detection limit, values were set to 200 nmol for statistical tests. Data are shown as means\u00a0\u00b1\u00a0SD. Post-hoc test results for individual time points (* indicates p<0.05 Bonferroni-corrected Mann-Whitney U test) are included for visualization purposes. Antibiotic treatment began after Day 0 measurement; red bars indicate treatment duration.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35987/elife-35987-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Repeated measures correlation between luminal oxygen concentration and gut redox potential of treated (red) and control (black) mice (n\u00a0=\u00a072).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35987/elife-35987-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Luminal oxygen was measured in vivo during and following antibiotic treatment for all treated (red) and control (black) mice (n\u00a0=\u00a09\u201310 per treatment). Data are shown as means\u00a0\u00b1\u00a0SD. Antibiotic treatment began after Day 0 measurement; red bars indicate treatment duration.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35987/elife-35987-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Oxygen measured in vivo of treated (red) and control (black) mice (n\u00a0=\u00a09\u201310 per treatment) did not differ (p>0.05 linear mixed effects model likelihood tests). Data are shown as means\u00a0\u00b1\u00a0SD. Antibiotic treatment began after Day 0 measurement; red bars indicate treatment duration.\n\nBy contrast, we observed sustained and significant increases in nitrate levels during antibiotic treatment. Nitrate is one of the most widely used electron acceptors in the gut (Ravcheev and Thiele, 2014; Fischer and Lindenmayer, 2007) and its reduction to nitrogen gas (at pH 7) has a potential of\u00a0+0.75 V making it one of the most potent electron acceptors after oxygen. The increase in Nos2 expression (Figure 1B) led us to hypothesize that nitrate would increase as it is a gene which encodes inducible nitric oxide synthase and whose expression has been found to confer a growth advantage to nitrate respiration competent E. coli strain (Winter et al., 2013). Lower levels of microbial respiration could also lead to an accumulation in nitrate separate from changes in host expression. We measured fecal nitrate levels with the chromotropic acid method (West and Ramachandran, 1966) for a subset of time points when redox varied, and found a significant increase in nitrate (p=0.03, Mann-Whitney U test; Figure 3B) beginning less than 24 hr after the first dose of antibiotics. This increase persisted throughout treatment, and overall antibiotic treatment produced a significant increase in nitrate (p=0.02, linear mixed effects model likelihood tests).\n\nFinally, we used a colorimetric enzyme assay to measure fecal fumarate levels for a subset of time points during antibiotic treatment. Fumarate reductases have been found in over one third of gut microbe genomes, and fumarate is the most common terminal electron acceptor for bacterial anaerobic respiration (Kr\u00f6ger et al., 1992). Unlike nitrate and oxygen, though, much of the fumarate in the gut is likely produced by the microbiota itself (Fischbach and Sonnenburg, 2011; El Aidy et al., 2013). Overall, there was a significant effect of treatment on fumarate levels (p<0.001, linear mixed effects model likelihood tests; Figure 3C). We observed a spike in fumarate levels 4 hr after the first antibiotics dose (p=0.004, Bonferroni-corrected Mann-Whitney U test); however, this increase had dissipated by 8 hr after the first dose and later during treatment, we observed a significant decrease (to below the detection limit) in fumarate levels. Thus, not all electron acceptors increased in abundance during antibiotic treatment.\n\n### Community composition and gut environment recover following antibiotic treatment\n\nEcological succession, the \u2018somewhat orderly and predictable\u2019 (Fierer et al., 2010) dynamics of a community after a perturbation, is known to follow antibiotic treatment (Antonopoulos et al., 2009; David et al., 2015). What is less well-known is how abiotic conditions change during post-antibiotic succession and, by extension, how biotic and abiotic dynamics interface during that period. Having shown that both the community and gut environment are not resistant to antibiotic disturbance, we next sought to determine how resilient they were, i.e. how quickly they recovered (Shade et al., 2012; Allison and Martiny, 2008). In this study, we indeed observed consistent biotic changes over time in mice that received antibiotics (Figure 4\u2014figure supplement 1). Gut bacterial load recovered rapidly after treatment across all treated mice, exhibiting no difference relative to control mice by two days (p>0.05, Bonferroni-corrected Mann-Whitney U tests; Figure 2\u2014figure supplement 2). A reproducible recovery of beta-diversity was observed after one week (p>0.05, Bonferroni-corrected Mann-Whitney U test; Figure 4\u2014figure supplement 2).\n\nTo characterize the recovery of specific microbial taxa, we clustered fecal bacterial genera into groups according to their dynamical patterns across antibiotic treatment (Figure 4A,B). We focused on the five clusters with an average abundance of at least 1% across our dataset (Supplementary file 2). Amongst these five groups, three differed significantly during treatment (p<0.05, linear mixed effects model likelihood tests; Figure 4A,B). Notably, the two clusters elevated during treatment included many facultative anaerobic taxa (Supplementary file 2). One of these, the cluster primarily composed of members of the Enterobacteriacaeae, remained elevated into the beginning of the recovery period as well (p<0.05, Bonferroni-corrected Mann-Whitney U tests). This enrichment is in line with previous findings that Enterobacteriaceae often bloom following antibiotic treatment (Antonopoulos et al., 2009; David et al., 2015; Young and Schmidt, 2004; Theriot et al., 2014; Peterfreund et al., 2012; Dethlefsen et al., 2008; Jakobsson et al., 2010; Looft and Allen, 2012). That cluster, as well as one composed primarily of Akkermansia and one of a consortium of typical commensal taxa, exhibited significant residual effects of treatment during the recovery period (p<0.05, linear mixed effects model likelihood tests; Figure 4A,B). However, by the end of the one week recovery period, the abundance of all clusters was indistinguishable between treated and control animals (p>0.05, Bonferroni-corrected Mann-Whitney U tests).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/35987/elife-35987-fig4-v1.jpg)\n\n**Figure 4.:** (A\u2013B) Compositional dynamics of most abundant clusters during and after treatment for control (A) and treated (B) mice (n\u00a0=\u00a09\u201310 per treatment). Three groups (Typical, Staph/Strep, Enterobacteriaceae) differed significantly between groups (p<0.05, linear mixed effects model likelihood tests) during treatment and two (Enterobacteriaceae, Akkermansia) during recovery. (C) Redox potential measured in freshly voided feces of singly housed mice during the recovery period (n\u00a0=\u00a05 per treatment) was lower than treated mice initially (p<0.05, Bonferroni-corrected Mann-Whitney U tests). (D) Repeated measures correlation was significant (p=0.02) between change in Enterobacteriaceae abundance and change in redox potential during the first three days of post-antibiotic recovery (n\u00a0=\u00a064). (E) Days until there is no significant difference (p>0.05 Bonferroni-corrected Mann Whitney U test) between groups of control and treated animals for redox and Enterobacteriaceae abundance, under either singly- housed or co-housed settings. Red bars indicate treatment duration (A\u2013B). Red arrows indicate the last antibiotic dose; day six measurements are more than 24 hr after the last dose (C). Data are shown as means\u00a0\u00b1\u00a0SD. Post-hoc test results for individual time points (* indicates p<0.05 Bonferroni-corrected Mann-Whitney U test) are included for visualization purposes.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35987/elife-35987-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** NMDS of community dynamics during and after antibiotic treatment (filled red circles are treated mice during treatment; empty red circles are treated mice during recovery; black circles are controls). Treatment had a significant effect on composition (p<0.05, PERMANOVA).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35987/elife-35987-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Bray-curtis dissimilarity to baseline composition of bacterial community over time (n\u00a0=\u00a09\u201310 per treatment). Data are shown as means\u00a0\u00b1\u00a0SD. Antibiotic treatment began after Day 0 measurement; red bars indicate treatment duration.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35987/elife-35987-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Repeated measures correlation between Enterobacteriaceae relative abundance in feces and redox potential of treated (red) and control (black) mice (n\u00a0=\u00a085). (B) Repeated measures correlation between Enterobacteriaceae relative abundance in feces and oxygen concentration (n\u00a0=\u00a0116).\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/35987/elife-35987-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Community changes measured as Bray-Curtis dissimilarity relative to day 0 composition for singly- versus co-cohoused treated (red) and control (black) mice (n\u00a0=\u00a09\u201310 per treatment). Co-housed mice treated with antibiotics were indistinguishable from control mice at the end of the recovery period (p>0.05, Bonferroni-corrected Mann-Whitney U test), but singly housed treated mice were not. Data are shown as means\u00a0\u00b1\u00a0SD. Red bars indicate the duration of antibiotic treatment.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/35987/elife-35987-fig4-figsupp5-v1.jpg)\n\n**Figure 4\u2014figure supplement 5.:** NMDS of community dynamics for the two cohorts of Charles River C57BL/6 mice purchased at different times (filled circles and empty circles are separate cohorts). Black symbols are control animals and red symbols are antibiotic-treated animals. Cohort had a significant effect on composition (p<0.05, R2\u00a0=\u00a00.17 PERMANOVA) as did treatment (p<0.05, R2\u00a0=\u00a00.07), but there was no significant interaction (p=0.3).\n\nAbiotic conditions in the mouse gut were also resilient and recovery was predictable. Redox potential returned to control levels within a week after treatment ended (p>0.05, Bonferroni-corrected Mann-Whitney U tests; Figure 4C). Notably, though, we observed the day after antibiotic therapy ceased, fecal redox potentials in treated mice were significantly decreased relative to control mice (-138.3\u00a0\u00b1\u00a0149.8 mV vs 54.6\u00a0\u00b1\u00a0211 mV; p=0.006, Bonferroni-corrected Mann-Whitney U test), and it was not until later in recovery that redox potential returned to control levels across most mice. Oxygen and inflammation biomarker levels remained low throughout the recovery period (p>0.05, Bonferroni-corrected Mann-Whitney U tests; Figure 3\u2014figure supplement 2, Figure 1\u2014figure supplement 1, respectively) consistent with their minimal changes during treatment. Furthermore, many microbial metabolic products measured by NMR had recovered two days after the last doses, and all had recovered by the end of the recovery week (Figure 2\u2014figure supplement 3; Supplementary file 1). In concert, a largely reproducible biotic and abiotic recovery took place across antibiotic treated mice in the days following antibiotic treatment indicating the overall resilience of this ecosystem to antibiotic disturbance.\n\n### Post-antibiotic succession resulted from interplay of biotic and abiotic recovery\n\nIn investigating potential interactions between abiotic and biotic processes in antibiotic recovery, we hypothesized that the Enterobacteriaceae could thrive under high redox potential conditions and directly impact gut redox state. Members of this bacterial family were enriched at the end of treatment in our clustering analysis (Figure 4B). Enterobacteriaceae can also employ many terminal electron acceptors to perform aerobic and anaerobic respiration (Ravcheev and Thiele, 2014) and thus could likely thrive under high redox potential conditions and directly impact gut redox state. We found that the relative abundance of the Enterobacteriaceae was marginally correlated with redox potential (p=0.1, r=,0.18, repeated measures correlation; Figure 4\u2014figure supplement 3) throughout treatment and recovery. Moreover, the change in redox potential during the earlier recovery period was negatively correlated with changes in Enterobacteriaceae absolute abundance (calculated as total 16S rRNA gene copy number multiplied by relative abundance) for both treated animals (p=0.03, r\u00a0=\u00a0\u22120.42, repeated measures correlation) and for all animals (p=0.02, r\u00a0=\u00a0\u22120.34, repeated measures correlation; Figure 4D). Together, these observations suggest that increased respiration by the Enterobacteriaceae after antibiotic treatment may lead redox potentials to decrease below conventional levels. More broadly, our observations support the hypothesis that Enterobacteriaceae dynamics contribute to natural redox potential variation in the gut.\n\nWe next investigated if abiotic recovery led to compositional recovery or if dispersal (i.e., migration of microbes) from unimpacted microbial populations was necessary for microbiota to exhibit resilience and return to a pre-treatment state. Previous research has shown that singly housed mice treated with antibiotics will exhibit altered community composition for weeks after treatment (Antonopoulos et al., 2009). We therefore co-housed half of the treated mice with control animals during the recovery period and kept half in single housing. Because mice practice coprophagy (i.e., ingestion of feces), we would expect that co-housing would re-introduce normal commensal microbes to compete with the Enterobacteriaceae and other early successional species thereby reducing their abundance. At the end of the one-week treatment period, we indeed observed differential success in community recovery between the housing groups. Co-housed mice communities had returned to control composition while singly housed mice had not. For co-housed mice, by the end of the recovery period, the gut microbiota of treated animals was equally dissimilar from baseline as it was for control mice indicating that the community had recovered (p>0.05, Bonferroni-corrected Mann-Whitney U test; Figure 4\u2014figure supplement 4). Both fecal redox potential and Enterobacteriaceae levels also returned to conventional levels more quickly in co-housed mice than singly housed mice (Figure 4E). By contrast, singly-housed treated mice continued to be more dissimilar at the end of recovery than singly-housed control mice (p<0.001, Bonferroni-corrected Mann-Whitney U test; Figure 4\u2014figure supplement 4). Such drift is qualitatively consistent with arguments that stochastic variation can influence how communities respond to perturbation, as seen in soil microbial communities (Zhang et al., 2016). More broadly, the differences between singly- and co-housed mice here highlight that environmental recovery is not sufficient to produce biotic recovery\u2014dispersal is also necessary for a resilient community.\n\n## Discussion\n\nHere, we found that a key feature of the microbial environment, redox potential, can be rapidly and dramatically altered in the gut under antibiotic treatment. This shift was accompanied by changes in electron acceptor availability. The direction and timing of the redox potential shift was associated with microbial dynamics and could be reproduced with an ex vivo model of the human gut absent host effects. Moreover, we found evidence that redox potential kinetics were driven by shifts in microbial load and metabolism, specifically among facultative anaerobes from the family Enterobacteriaceae. Although there was evidence of increases in certain host pathways of electron acceptor production, we did not find persistent and significant changes in host inflammation. Therefore, we propose microbial respiration of host sourced electron acceptors acts as a major determinant of redox potential in the gut, in addition to the host production itself. Redox potential consequently shaped successional dynamics following the cessation of treatment, but return to control redox conditions was insufficient to produce community recovery. Dispersal was required for community structure to exhibit full resilience to antibiotic disturbance.\n\nOur findings imply that electron acceptors are a critical resource normally competed over by the resident bacteria and, as such, are key factors structuring gut microbial ecology. The ability to respire a broad range of electron acceptors is already known to be crucial for pathogens to colonize the intestine (Winter et al., 2010; 2013; Faber et al., 2016). Yet, ecological research to date on commensal microbiota has primarily focused on substrate availability (Donaldson et al., 2016 and references therein, Pereira and Berry, 2017) or, to a lesser extent, oxygen (Espey, 2013). Our results here support the hypothesis that the availability of other electron acceptors is an important ecological factor driving the structure of resident bacterial populations as well (Jones et al., 2007; 2011). If true, this hypothesis would imply that pathogen colonization resistance by commensal microbes could be mediated by bacterial competition involving respiratory pathways.\n\nFuture work will be needed to comprehensively chart the dynamics and chemical landscape across which bacteria in the gut compete for electron acceptors. While any redox active molecule could contribute to redox potential changes (hence testing all possible chemical drivers of redox is infeasible), we focused here on three relevant electron acceptor species (oxygen, nitrate, and fumarate) that derive from independent pathways and may be representative of overall dynamics. Our data lead us to conjecture that oxygen availability transiently increased due to the decreased respiration capacity of an antibiotic-constrained bacterial community. But, as oxygen grew increasingly available, the remaining facultative anaerobes switched to aerobic respiration leaving other host-sourced electron acceptors, such as nitrate, to accumulate. Accrued electron acceptors, especially nitrate, may also have been contributed by changes in host physiology as evidenced by an upregulation of the Nos2 gene, which is linked to reactive nitrogen species levels (Dedon and Tannenbaum, 2004; Winterbourn, 2008). Still, not all electron acceptors accumulated during antibiotic treatment. Notably, our data suggest that ones produced by the microbiota rather than the host, like fumarate, were less available under antibiotic pressure.\n\nOur data also support a model where consumption by specific bacterial taxa shape redox homeostasis in the gut. We observe that facultative anaerobes like the Enterobacteriaceae behave as pioneer taxa whose dynamics inversely track redox dynamics after antibiotic treatment, providing new understanding of the deterministic mechanism driving the consistent bloom of these bacteria following antibiotic treatment (Antonopoulos et al., 2009; David et al., 2015; Young and Schmidt, 2004; Theriot et al., 2014; Peterfreund et al., 2012; Dethlefsen et al., 2008; Jakobsson et al., 2010; Looft and Allen, 2012). Enterobacteriaceae are especially suited to exploiting electron acceptor availability because their diverse repertoire of respiration pathways (Ravcheev and Thiele, 2014; Jones et al., 2007; 2011) allow for fast growth rates under a high redox regime. Enterobacteriaceae and respiration pathway genes more generally are also more prevalent in inflamed mouse guts (Hughes et al., 2017), another environment where heightened redox potential is expected. Under experimental inflammation, though, Enterobacteriaceae expansion can be prevented by treatment with tungstate, a respiration inhibitor (Zhu et al., 2018). This result corroborates our model that members of the Enterobacteriaceae use respiration to bloom under disturbed conditions, and it highlights the potential for manipulating electron acceptor availability or usability to engineer the microbiota.\n\nAn increase in resource availability is common following ecological disturbance and can promote the growth of pioneer taxa, which are best suited to quickly respond to a resource spike but which draw down the resource thereby bringing about their own displacement (Connell and Slatyer, 1977; Peet and Christensen, 1980; Tilman, 1985). Here, as in many cases of ecological succession, the Enterobacteriaceae were eventually replaced by more conventional community members that typically grow better under more limiting conditions; in fact, the relationship between change in Enterobacteriaceae abundance and change in redox state is consistent with these taxa facilitating the success of secondary colonizers. However, why redox recovery was ultimately hysteretic (i.e., the gut temporarily became a reducing environment following the end of treatment) remains unclear. It has previously been shown that members of the Enterobacteriaceae will produce reducing agents, such as H2S, in response to antibiotic treatment (Shatalin et al., 2011), but this theory requires further investigation in a community and host-associated context.\n\nBeyond identifying a role for microbiota in shaping gut redox potentials, our results more broadly illustrate how microbial factors can be important in addition to host factors for determining abiotic conditions in the gut through the balancing of production and consumption of resources. While the host is ultimately the source of all substrates in the gut, microbial action determines the realized environment which shapes community composition and function. Such microbial ecosystem engineering (Jones et al., 1994; Wright and Jones, 2006) is consistent with our understanding of how microbes can shape their environments in free-living systems (Gerbersdorf et al., 2009; Goddard, 2008). The altered resource availabilities that result from microbial action then contribute to structuring the microbial community itself. Such feedbacks may contribute to a number of phenomena in host-associated systems. Common constituents of the gut (i.e., the phyla Firmicutes and Bacteroidetes) could perpetuate similar hospitable environments for themselves regardless of host biology leading to the broad, phylum-level consistency of composition seen between humans regardless of diet, geography, or genetics (David et al., 2014; Claesson et al., 2012; Goodrich et al., 2014; De Filippo et al., 2010; Yatsunenko et al., 2012; Arumugam et al., 2011). Variations in how the gut environment is dictated by microbes may also help explain inter-individual differences in response to interventions in the absence of consistent host effects (e.g., Venkataraman et al., 2016). Microbial metabolic signaling additionally can alter host production of substrates including redox active molecules. Most notably reduced butyrate levels, a change observed here, have been demonstrated to increase gut nitrate levels (Byndloss et al., 2017) and host epithelial oxygenation (Rivera-Ch\u00e1vez et al., 2016).\n\n### Conclusion\n\nTogether, our findings suggest new ecological models for how antibiotics reshape the gut microbiota and for how redox shifts could be associated with enteric disease. Antibiotics are triumphs of modern medicine that have dramatically reduced infectious disease mortality (Armstrong et al., 1999). But, we are increasingly learning that antibiotics also meaningfully reshape the resident gut microbiota, leaving an imprint that can last for months to years after treatment (Dethlefsen and Relman, 2011; Jakobsson et al., 2010) and predisposing hosts to obesity (Cho et al., 2012), food allergy (Stefka et al., 2014), auto-immune disease (Russell et al., 2012), and increased infection risk (Stecher et al., 2007; Buffie et al., 2012; Wistr\u00f6m et al., 2001). While these drugs reduce levels of susceptible organisms (Keeney et al., 2014), an additional ecological mechanism of action is decreasing microbial competition and allowing primary metabolites (e.g., primary bile acids, sugars) (Ng et al., 2013; Theriot et al., 2014), as well as host-sourced electron acceptors like oxygen and nitrate to accumulate. This concept complements recent discoveries that electron acceptors facilitate antibiotic-associated enteric pathogen colonization (Rivera-Ch\u00e1vez et al., 2016; Winter et al., 2013; 2010). Such increases in electron acceptor availability likely are not unique to antibiotic treatment and could generalize to various enteric disturbances. Indeed, germ-free animals (Phillips et al., 1958; Celesk et al., 1976) and humans suffering from inflammatory diseases (Circu and Aw, 2011) and malnutrition (Million et al., 2016) exhibit increased gut redox potential. Thus, novel treatments for microbial disorders or preventing antibiotic-associated infections may include chemical alterations of redox potential or introduction of competitors for excess electron acceptors. More broadly, we propose adding redox potential to the list of abiotic conditions frequently assayed and manipulated to improve host well-being.\n\n## Materials and methods\n\n### Animal experiments\n\n#### Mice\n\nAll animal experiments were conducted in accordance with National Institute of Health Guide for the Care and Use of Laboratory Animals using protocols approved by the Duke University Institutional Animal Care and Use Committee. Male C57BL/6 mice (Charles River Laboratories, Wilmington MA) 8\u201310 weeks of age with a native microbiota were used for all experiments. Mice were kept in a conventional laboratory animal facility at Duke University. Baseline measurements and fecal samples were collected at least twenty-four hours before the first dose and then mice were placed in individual housing with supplementary enrichment.\n\n#### Antibiotic treatment\n\nMice were orally gavaged with either 0.25 ml autoclaved deionized water (control, N\u00a0=\u00a010) or 0.25 ml of an antibiotic cocktail (treated, N\u00a0=\u00a010) daily for five days (Figure 5A). The mice were randomly assigned a group and researchers collecting data were blinded to the groupings until after the final dose was administered. The sample size was chosen following a power analysis to allow for \u03b2 less than 0.1. The antibiotic cocktail consisted of ampicillin (Gold Biotechnology, St. Louis MO) 1 mg/ml, vancomycin (Alfa Aesar, Ward Hill MA) 5 mg/ml, neomycin (EMD Millipore, Burlington MA) 10 mg/ml, and metronidazole (Alfa Aesar) 10 mg/ml (after Reikvam et al., 2011). Fresh antibiotic cocktails were prepared every day. Throughout the experiment freshly voided fecal samples were collected and stored at \u221280\u00b0C for subsequent analysis.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/35987/elife-35987-fig5-v1.jpg)\n\n**Figure 5.:** (A) Experimental sampling regime. (B) Cohousing treatment setup.\n\n#### Recovery cohousing\n\nOne day after the final gavage, mice were randomly assigned to cohousing groups (Figure 5B). Cohousing control cages (N\u00a0=\u00a08, four each from treated and control) contained single mice that were kept in individual housing throughout the recovery period. Cohousing treatment cages (N\u00a0=\u00a05) contained a control and an antibiotic-treated mouse from the same litter that were placed together in the control mouse cage and kept together throughout the recovery period. The sample size was determined by the number of mice available at the end of the treatment period. Antibiotic-treated mice in cohoused cages were marked by partial shaving to allow for continued sampling. Throughout recovery, freshly voided fecal samples were collected and stored at \u221280\u00b0C for subsequent analysis. While the antibiotic treatment experiment was performed multiple times, the cohousing during recovery experiment was only performed with a single replicate cohort.\n\n#### Redox potential measurements\n\nWe measured redox potential in fresh fecal pellets using a redox electrode with a tip diameter of 500 \u00b5m in tandem with an Ag/AgCl reference electrode (Unisense, Aarhus Denmark). The values are given relative to the standard hydrogen electrode (SHE) and were determined by measuring the offset of the reference electrode in saturated quinhydrone buffer solutions (pH 4 and pH 7) with known redox potentials. Daily calibrations were done at room temperature; however, because of potential unmeasured variation in calibration procedures (e.g., fluctuation in ambient temperature), we focused our analyses on differences between control and treated animals at any given time point. The electrode has a detection limit of 0.10 mV (Pang and Zhang, 1998).\n\nFecal pellets were placed on an agar plate, resting against the reference electrode. The electrode was inserted into the pellet using a micromanipulator and data were collected continuously for three minutes. The data presented are the average across three minutes. Redox data was collected on two cohorts of mice with comparable results. Replicate data is shown in Figure 1\u2014figure supplement 2.\n\n#### Oxygen measurements\n\nWe measured oxygen concentration in vivo using a hydrogel oxygen microsensor coupled with an optical reader. The microsensors are composed of a biocompatible hydrogel, poly (2-hydroxyethyl methacrylate) (pHEMA) and a near infrared (NIR) oxygen-sensitive palladium-benzoporphyrin molecule (Pd-MABP) (Montero-Baker et al., 2015;\u00a0Wisniewski et al., 2017;\u00a0Chien et al., 2017). The microsensor measures oxygen based on the principle of phosphorescence quenching of metalloporphyrins, a well-established technique with excellent sensitivity and specificity to physiologic oxygen (Wilson et al., 2006; Rumsey et al., 1988; Lo et al., 1996; Vinogradov et al., 2003). The pHEMA hydrogel is biocompatible, has good oxygen permeability, excellent mechanical properties, and a long history of use in medical devices (Montheard et al., 1992). The Pd-MABP molecules are covalently attached to the pHEMA hydrogel, ensuring that the sensing chemistry is retained in the hydrogel structure. The miniature sensors (0.75 x 0.75 x 2.5 mm) are soft and tissue-like to minimize stress at the material-tissue interface.\n\nThe non-invasive optical reader was manually positioned over the sensor and a LED pulsed illumination light into the skin above the sensor. A photodetector collected emission light emanating from the sensor. The phosphorescent lifetime, a property of the oxygen sensitive dye, was measured, thereby providing a signal unaffected by optical path permutations such as sensor depth, blood flow fluctuations, oxy/deoxyhemoglobin ratio, melanin content and hydration (Montheard et al., 1992). The current oxygen sensing system measures lifetime to within 2 \u00b5s or better, which equates to\u00a0~1 \u00b5M O2\u00a0at physiological oxygen conditions. The temperature was assumed to be at 37\u00b0C to convert the lifetime measurement to oxygen concentration.\n\nThe oxygen sensor was placed via rectal insertion in the distal large intestine (~1 cm from anus) of mice under isofluorane anesthesia. The phosphorescent signal was collected for two minutes using the optical reader and all values were averaged before conversion to oxygen concentration. Upon reawakening from anesthesia, the sensor was passed naturally from the mouse via peristalsis. Oxygen data were collected on two cohorts of mice with comparable results. Replicate data is shown in Figure 3\u2014figure supplement 3.\n\n#### Nitrate measurements\n\nWe measured nitrate in frozen mouse fecal samples using the NitraVer X Nitrogen-Nitrate Reaction Set (Hach Company, Loveland CO) following the manufacturer\u2019s instructions. Data below the lower detection limit of 0.00036 mg were not included in plots or statistical tests. These measurements were collected for only a single cohort of mice due to availability of samples.\n\n#### Fumarate measurements\n\nWe measured fumarate in frozen mouse fecal samples using the Fumarate Colorimetric Assay Kit (Biovision, Milpitas CA) following the manufacturer\u2019s instructions. Data points below the lower detection limit of 200 nmol were not shown on plots, but were included in post-hoc statistical analyses as a pseudo-count of 200 nmol when all measures for a treatment group were below the detection limit. These measurements were collected for only a single cohort of mice due to availability of samples.\n\n#### DNA isolation from mouse fecal samples\n\nMetagenomic DNA was isolated from frozen fecal samples using the MoBio (now Qiagen, Hilden Germany) PowerSoil DNA extraction kit following the manufacturer\u2019s instructions (David et al., 2014; 2015).\n\n#### 16S rRNA gene sequencing and processing\n\nWe performed 16S rRNA gene amplicon sequencing using custom barcoded primers targeting the V4 region of the gene (Caporaso et al., 2011) and published protocols (Caporaso et al., 2011; 2012; Maurice et al., 2013). Sequencing was conducted on an Illumina (San Diego, CA) MiSeq with paired end 250 bp reads using the V3 kit. All samples with fewer than 5000 reads were discarded. Sequencing data were processed using QIIME (version 1.8)\u00a0(Caporaso et al., 2010) to produce an OTU table with 97% cluster similarity. Sequencing was performed on samples from two cohorts of mice with comparable results, but all results presented here are from a single cohort matching the abiotic data presented.\n\nBecause baseline microbiome is expected to differ between mouse litters over time as well as between vendor (Rosshart et al., 2017; Rausch et al., 2016; Ivanov et al., 2009; Campbell et al., 2012), we examined whether the effects observed were reproducible between the two cohorts sequenced. An overall analysis of beta-diversity showed that there were significant differences between cohorts in their microbiome at the OTU level throughout the experiment (p<0.01, R2\u00a0=\u00a00.17, PERMANOVA; Figure 4\u2014figure supplement 5). This cohort effect did not significantly interact with the treatment effect, however (p=0.3). Because the Enterobacteriaceae bloom response to antibiotics has been found to be consistent between humans and mice, as well as between mouse vendors (Antonopoulos et al., 2009; David et al., 2015; Young and Schmidt, 2004; Theriot et al., 2014; Peterfreund et al., 2012; Dethlefsen et al., 2008; Jakobsson et al., 2010; Looft and Allen, 2012), we believe that the overall trends observed here are indicative of what may be occurring in other conventional gut microbiota contexts.\n\n#### Clustering\n\nBacterial genera were clustered using a previously described bioinformatics pipeline for identifying taxa with similar dynamics (David et al., 2014; 2015). Rare genera (defined as those observed in five or fewer samples) were also excluded from clustering. Rare genera comprised 194 of 306 total observed genera, but accounted for only 0.019% of reads. All remaining genera (n\u00a0=\u00a0112) were ultimately assigned to a cluster. A clustering threshold of 0.9 was manually chosen to balance model simplicity (i.e., building clusters with an interpretable number of genera) and fidelity (i.e., capturing the unique dynamics of distinct genera). Only clusters with an average abundance of\u00a0>1% (five clusters altogether) were included in statistical analyses.\n\n#### qPCR: Primers and conditions\n\nTo estimate total bacterial abundance, PCR was performed on DNA extracted from feces using the following primers: forward, 5\u2019-ACTCCTACGGGAGGCAGCAGT-3\u2019, reverse, 5\u2019-GTATTACCGCGGCTGCTGGCAC-3\u2019 (Bergstr\u00f6m et al., 2012). qPCR assays were run using SYBR FAST qPCR Master Mix (KAPA, Wilmington MA) on a 7900HT Fast Real-Time PCR System (Applied Biosystems, Foster City CA). Ct values were standardized against a dilution curve of known concentration and then adjusted for the weight of fecal matter extracted. Load measurements were performed on samples from two cohorts of mice with comparable results, but all data included here is from a single cohort.\n\n#### Inflammation assays\n\nFecal lipocalin 2 (Lcn-2) was used as a noninvasive biomarker for host intestinal inflammation. Lcn-2 was quantified by ELISA following Chassaing et al. (Chassaing et al., 2012). Assays were conducted with mouse lipocalin-2/ngal duo set ELISA kit from R and D Systems (Minneapolis, MN) using a BioTek ELx405rs plate washer and a BioTek Synergy HT plate reader (Bio-Rad, Hercules CA) at the UNC Center for Gastrointestinal Biology and Disease Advanced Analytics Core. These measurements were collected for only a single cohort of mice due to availability of samples.\n\n#### RNA isolation and RT-PCR\n\nTotal RNA was isolated from fecal pellets stored in RNALater (Thermo Fisher, Waltham, MA) using the MoBio PowerMicrobiome RNA Isolation kit with an added phenol chloroform extraction step.\u00a0\u226415 ng RNA was reverse transcribed using cDNA Prep Reverse Transcription Master Mix (Fluidigm, South San Francisco, CA) following manufacturer\u2019s instructions. Target transcripts were preamplified for 18 cycles and then diluted 10x. RT-PCR was performed using a BioMark (Fluidigm) on a 48 \u00d7 48 chip with Taqman Fast Advanced Master Mix (Thermo Fisher). Three ERCC RNA Spike-in Mix (Thermo Fisher) positive controls and a nontarget negative control of nuclease-free water were also run on the chip. Expression levels were quantified for thirty genes (Supplementary file 3). Of these, six genes could be quantified for at least 20 time points, and so only these genes were included in statistical analyses. Expression levels were normalized to mouse Actb (\u0394Ct) expression for each time point for each mouse and then compared to the average of control mice for that time point (\u0394\u0394Ct). Fold change (2^\u0394\u0394Ct) is represented. These measurements were collected for only a single cohort of mice due to availability of samples.\n\n#### NMR metabolomics\n\nSamples were prepared by mixing fecal pellets with 200 \u03bcl phosphate buffered saline (PBS) prepared in\u00a095%\u00a0D2O, pH 7.5 and homogenizing for 5 min at 30 Hz. Cell debris was removed by centrifuging the samples for 10 min at 14K x g at 4\u00b0C. The supernatant was filtered through a 0.22 \u03bcm centrifugal filter. To maximize the metabolite extraction, each pellet from the first centrifugation was mixed with 200 \u03bcl PBS in 95% D2O, pH 7.5 and homogenized for 5 min at 30 Hz. The solutions were filtered through a 0.22 \u03bcm centrifugal filter as before. The supernatants were combined and 300 \u03bcl was taken and mixed with 300 \u03bcl of 99.9% D2O containing 500 \u03bcM 3-(trimethylsilyl)\u22121-propanesulfonic acid-d6, sodium salt (DSS-d6).\n\nNMR spectra were collected on an Avance III 700MHz NMR spectrometer (Bruker Biospin, Billerica, MA, USA) with a TXI triple resonance probe operating at 25C. A 1D NOESY pulse sequence was used with a spectral width of 12 ppm. Each spectrum was digitized with 32768 points over a 3.9 s total acquisition time. The sequence used a 100 ms mixing time and an inter scan relaxation delay of 2.0 s. These measurements were collected for only a single cohort of mice due to availability of samples.\n\nThe spectra were processed using Advanced Chemistry Development Spectrus Processor (version 2016.1, Toronto, ON, Canada). Processing parameters included zero filling to 65526 points, 0.3 Hz decaying exponential multiplication. Phase correction was applied using the automated algorithms in the ACD software and a third order polynomial baseline correction was applied to all samples. Quantitative profiling of the metabolites was carried out with the Chenomx NMR Suite (version 8.2, Edmonton, AL, Canada). The chemical shifts and concentrations were referenced using DSS-d6 added to each sample at a concentration of 250 \u03bcM and set to a chemical shift of 0.00 ppm. The Chenomx 700MHz library included acetate, acetoacetate, acetoin, alanine, asparagine, aspartate, B-hydroxybutyrate, butyrate, DSS-d6, ethanol, formate, glucose, glutamine, glutamate, glycine, isoleucine, isopropanol, lactate, leucine, lysine, methionine, propionate, sarcosine, threonine, and valine. Signals in the bile acid regions of the spectrum, from approximately 0.6 to 0.9 ppm, were fit as synthetic Lorentizan functions and each signal given a generic assignment as a bile acid methyl group. Concentration for bile acids are presented as arbitrary concentration units and relative comparisons should be made. The fitting of each spectrum was carried out in batch mode. Manual adjustment of the fitting was carried out in some samples to correct for errors arising from spectral overlap.\n\n### Ex vivo experiments\n\n#### Culture conditions and treatment\n\nGut microbiota were cultured from human stool in a flow-through bioreactor system (Infors, Bottmingen Switzerland) following previous work (McDonald et al., 2013). Healthy human subjects (n\u00a0=\u00a03) that self-reported no use of antibiotics within a month of enrollment provided a single donation of stool. The sample size was calculated using a power analysis to allow for \u03b2 less than 0.1. This experiment was only performed with a single cohort of donors. Informed consent was obtained from all subjects and the protocol was approved by the Duke Health Institutional Review Board. Subjects collected samples by placing disposable commode specimen containers (Fisher Scientific, Hampton NH) under their toilet seats before bowel movements. Intact stool samples were moved within roughly 15 min into anaerobic conditions after collection. All bioreactor vessels had a total vessel volume of 400 ml and a continuous turnover of 400 ml per day for the media to emulate the 24 hr average passage time of the human gut. The bioreactors communities were subject to a two-day adjustment period before treatment began (Figure 2\u2014figure supplement 1). Vessels were then randomly assigned a treatment condition. Antibiotic treated cultures were subjected to daily single doses of 3.896 ml antibiotic treatments on two consecutive days. Antibiotics were prepared as above for mice. Control and antibiotic vessels had 1 L per minute N2 gas bubbled in. Redox was measured continuously with Hamilton (Reno NV) EasyFerm Plus ORP K8 225 probes, which has a measuring range of\u00a0\u00b12000 mV. Redox probes were calibrated in Hamilton ORP buffer before autoclaving the bioreactor setup at the beginning of each replicate run. Because of differences in the construction and calibration between the in vivo and ex vivo redox probes, direct comparisons between the in vivo and ex vivo redox values should not be performed. Samples were collected daily and frozen immediately at \u221280\u00b0C for subsequent analysis of microbial community composition. Abiotic data were averaged for five minute increments for analysis.\n\n### Statistical analysis\n\nWe performed linear mixed effects model analysis to determine the effects of antibiotics on redox potential, oxygen concentration, fecal lipocalin-2 concentration, and Bray-Curtis dissimilarity. As fixed effects, we entered antibiotic treatment and time with an interaction term into the model. We included mouse identity as a random effect. P values were obtained by likelihood ratio tests comparing the full model against a model including only time and mouse identity and were performed with the \u2018anova\u2019 function in the \u2018lme4\u2019 package. Repeated measures correlations were used to assess correlations where multiple time points from the same mouse were included in the statistical analysis. Repeated measures correlations were calculated with the \u2018rmcorr\u2019 function in the \u2018rmcorr\u2019 package. These and all other statistical analyses were carried out in R (R core team, version 3.3). All statistical tests performed were non-parametric except where a Shapiro-Wilks test indicated that data were normally distributed, in which case parametric tests were used. All data points were included in analyses and outliers were not treated in any manner.\n",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "6d1b66f1-d300-4c7b-a39d-23a21bdabdab",
+      "submission_id": "723b5cc8-c418-4e40-a35f-f5c851954d32",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lora V Hooper, University of Texas Southwestern Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.35987.028](https://doi.org/10.7554/eLife.35987.028)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Antibiotic induced changes in the microbiota disrupt redox dynamics in the gut\" for consideration by eLife. Your article has been favorably evaluated by Wendy Garrett (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal his identity: Jon Clardy (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe reviewers agreed that this paper represents a very interesting study of how intestinal bacteria shape the chemical environment of the intestine. The authors address this question by characterizing changes in redox state during antibiotic treatment, finding that intestinal redox potential increases following antibiotic treatment. A major claim is that bacterial metabolic activity is the primary determinant of redox potential, and that host metabolic activity plays a lesser role. The authors also find that the antibiotic-induced changes in redox state coincide with a characteristic bloom of Enterobacteriaceae, which accords with numerous prior published studies showing that electron receptors, such as nitrate, support Enterobacteriaceae expansion.\n\nOverall, the study represents a novel exploration of how a major perturbation to the gut microbiome, antibiotic addition, affects a key environmental factor, redox potential. The study is logical, well conducted and controlled with a straightforward experimental approach, and an impressive amount of data is included. Although some of the conclusions were unsurprising, the reviewers felt that overall, the work provides valuable insight to the gut microbiome field.\n\nEssential revisions:\n\n1) A major claim of this study is that the increase in redox potential after antibiotic treatment is due to bacterial metabolic activity and not because of host processes. However, the authors also show that the major electron acceptor that increases after antibiotic treatment is nitrate, which is necessarily derived from the host, and they further show that this correlates with an increase in NOS expression in the intestine. Indeed, it is not surprising that host-derived electron acceptors would increase in abundance when bacterial density is reduced, as there are fewer bacteria present to consume them. Overall, the logic underpinning their conclusion that the altered redox state in vivo is strictly due to bacterial activity needs to be clarified.\n\n2) A question was raised about the reproducibility of the work. In the Materials and methods, it is stated that C57BL/6 mice male mice were purchased from Charles River. However, it is unclear whether the mouse work was repeated with groups of mice ordered at different times. The microbiota can differ even in mice from the same vendor, especially if mice are housed in different rooms/facilities. Thus, the authors should clarify whether the mouse microbiota was similar in mice ordered at different times.\n\n3) Some of the statistical analyses looked marginal, which probably reflects the difficulty of making measurements on complex samples (e.g., Figure 1C). A brief explanation of what was done to the data in the text of the figure legend would help.\n\n4) Most, if not all, the results are not surprising, and this should be made clearer. In the Abstract the last sentence is \"Together, our results argue that bacterial competition for electron acceptors is a key ecological factor structuring gut microbial communities.\" This is known in many contexts and should be rephrased to something about a generalized function of antibiotics or implications for understanding and controlling the human microbiota and disease.\n\n5) It would be appropriate for this manuscript to cite the 2018 Nature paper \"Precision editing of the gut microbiota ameliorates colitis\" by Sebastian Winter and co-workers. The Winter paper describes how inhibiting a bacterial redox process in vivo (Mo-dependent reduction) can be used to reshape the community in cases where terminal electron acceptors are determinants of community composition. It provides a nice contrast in approaches: in this manuscript a general conclusion, in the other a specific approach.\n",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e38805b6-5e7a-4e61-ab4a-9d9b64170c11",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C1",
+      "claim": "Gut redox potential increased within hours of an antibiotic dose in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed gut redox potential increased within hours of an antibiotic dose in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental measurements of redox potential in mouse feces during antibiotic treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "83b56077-8a9f-464e-b786-609e722ea99d",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C2",
+      "claim": "Within sixteen hours after the first dose of antibiotics, redox potential significantly increased from 37 \u00b1 164 mV at baseline to 227 \u00b1 45 mV (p=0.04 Bonferroni-corrected Mann-Whitney U test).",
+      "claim_type": "EXPLICIT",
+      "source": "Within sixteen hours after the first dose of antibiotics, redox potential significantly increased from 37 \u00b1 164 mV at baseline to 227 \u00b1 45 mV (p=0.04 Bonferroni-corrected Mann-Whitney U test; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by direct measurements and statistical analysis of redox potential changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "610782bc-4701-4dbd-97ed-c957ca9c17e4",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C3",
+      "claim": "Throughout treatment, redox potential differed overall between treated and control mice (p=0.005 linear mixed effects model likelihood tests).",
+      "claim_type": "EXPLICIT",
+      "source": "Throughout treatment, redox potential differed overall between treated and control mice (p=0.005 linear mixed effects model likelihood tests).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of redox measurements across treatment period.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "f3e7f6ab-66c0-4739-b472-b9f08d12df35",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C4",
+      "claim": "Expression of Nos2 increased relative to controls after antibiotic treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured increases relative to controls in Nos2, which is linked to reactive nitrogen species levels (Dedon and Tannenbaum, 2004; Winterbourn, 2008); increases relative to controls in Rela, which has been found to contribute to IBD type inflammation in mice via a proinflammatory cytokine response (Waddell et al., 2013); and, decreases relative to controls in Apoa4, which has known anti-inflammatory function (Broedl et al., 2007) (p<0.05, Bonferroni-corrected one-sample t-tests; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR measurements of gene expression and cited literature on gene function.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "e2bd1deb-315b-476a-9f0f-e59e30ad9d6c",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C5",
+      "claim": "Nos2 is linked to reactive nitrogen species levels.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured increases relative to controls in Nos2, which is linked to reactive nitrogen species levels (Dedon and Tannenbaum, 2004; Winterbourn, 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "3eb042a8-f013-41d6-8cfa-823d084cd6e2",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C6",
+      "claim": "Rela has been found to contribute to IBD type inflammation in mice via a proinflammatory cytokine response.",
+      "claim_type": "EXPLICIT",
+      "source": "increases relative to controls in Rela, which has been found to contribute to IBD type inflammation in mice via a proinflammatory cytokine response (Waddell et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "f89fa80b-5a54-42d1-bc6b-99f3c5a685bc",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C7",
+      "claim": "Apoa4 has known anti-inflammatory function.",
+      "claim_type": "EXPLICIT",
+      "source": "decreases relative to controls in Apoa4, which has known anti-inflammatory function (Broedl et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "03193b71-0f66-4f41-8870-cd0365116e8e",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C8",
+      "claim": "Antibiotic treatment was followed by a small, but significant, decrease in lipocalin-2 levels (p<0.001, linear mixed effects model likelihood tests).",
+      "claim_type": "EXPLICIT",
+      "source": "Antibiotic treatment was also followed by a small, but significant, decrease in lipocalin-2 levels, which is a protein biomarker of inflammation (Chassaing et al., 2012) (p<0.001, linear mixed effects model likelihood tests; Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ELISA measurements and statistical analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "dba3a646-90fa-4fbd-81f3-dacc01bdfb43",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C9",
+      "claim": "Lipocalin-2 is a protein biomarker of inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "lipocalin-2 levels, which is a protein biomarker of inflammation (Chassaing et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "ede68828-972b-4fe7-a06d-89cbe83b0c48",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C10",
+      "claim": "Treating an ex vivo human gut system with antibiotics led to an increase in redox potential relative to an untreated control (p=0.005, linear mixed effects model likelihood tests).",
+      "claim_type": "EXPLICIT",
+      "source": "Treating this system with the same antibiotic cocktail as used in the mouse study led to an increase in redox potential relative to an untreated control (p=0.005, linear mixed effects model likelihood tests; Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by continuous redox measurements in bioreactor system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "b462d65d-985a-4c5b-b714-ed4cc53db9b8",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C11",
+      "claim": "Redox potential increased by 59 \u00b1 47 mV within fifteen hours of the first antibiotic dose in the ex vivo system.",
+      "claim_type": "EXPLICIT",
+      "source": "Redox potential increased by 59 \u00b1 47 mV within fifteen hours of the first antibiotic dose, mirroring the rapidity with which redox shifts occurred in vivo (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by continuous redox measurements in bioreactor.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "a3b3f475-a954-4b2c-9f3c-fb34ffc42e35",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C12",
+      "claim": "In the absence of direct interactions between antibiotics and a host, antibiotic treatment produced shifts in environmental redox potential experienced by a gut microbial community.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in the absence of direct interactions between antibiotics and a host, antibiotic treatment produced shifts in environmental redox potential experienced by a gut microbial community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from ex vivo bioreactor experiments that lack host tissue.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "7c3f61e0-d160-4740-9c33-cb7736caf6c2",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C13",
+      "claim": "Fecal bacterial concentrations decreased significantly within twelve hours of antibiotic treatment (p=0.01, Bonferroni-corrected Mann-Whitney U test).",
+      "claim_type": "EXPLICIT",
+      "source": "Fecal bacterial concentrations decreased significantly within twelve hours of antibiotic treatment (p=0.01, Bonferroni-corrected Mann-Whitney U test; Figure 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR measurements of 16S rRNA gene copy number.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "45abf680-6cd4-4066-8999-ecada0914196",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C14",
+      "claim": "Fecal bacterial concentrations remained significantly below controls throughout the five days of treatment (p<0.001, Bonferroni-corrected Mann-Whitney U tests).",
+      "claim_type": "EXPLICIT",
+      "source": "and remained significantly below controls throughout the five days of treatment (p<0.001, Bonferroni-corrected Mann-Whitney U tests; Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR measurements over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "b8d4ade3-068f-4ef3-8725-92a81a33c968",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C15",
+      "claim": "The short-chain fatty acids propionate and acetate decreased eight hours after antibiotic treatment (p<0.05, Bonferroni-corrected Mann-Whitney U tests).",
+      "claim_type": "EXPLICIT",
+      "source": "Using NMR-based metabolomics, we found that the short-chain fatty acids propionate and acetate, end products of key microbial metabolic pathways, decreased eight hours after antibiotic treatment (p<0.05, Bonferroni-corrected Mann-Whitney U tests; Figure 2\u2014figure supplement 3, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NMR metabolomics measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "4a4cd5da-28cd-4ebd-80ec-815c2e8f3a4e",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C16",
+      "claim": "Twenty-one of twenty-eight metabolites measured decreased significantly under antibiotic treatment (p<0.05, Bonferroni-corrected Mann-Whitney U tests).",
+      "claim_type": "EXPLICIT",
+      "source": "Twenty-one of twenty-eight metabolites measured, including other short-chain fatty acids, amino acids, branched-chain amino acids, and a group of bile acids, later decreased significantly under antibiotic treatment (p<0.05, Bonferroni-corrected Mann-Whitney U tests; Figure 2C, Figure 2\u2014figure supplement 3, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NMR metabolomics measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "59091cf5-e97c-4bb0-9ee0-ea482f0a62b8",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C17",
+      "claim": "The dynamics of twelve metabolites was significantly associated with treatment overall (p<0.05, linear mixed effects model likelihood tests).",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamics of twelve of those metabolites was significantly associated with treatment overall (p<0.05, linear mixed effects model likelihood tests; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of metabolomics data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "02c7536a-b4ea-4e1e-a5af-bcee61438a5c",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C18",
+      "claim": "Luminal oxygen levels significantly increased the day after antibiotic treatment (3.7 \u00b1 3.6 Torr at baseline to 26.5 \u00b1 26.1 Torr; p=0.02, Bonferroni-corrected Mann-Whitney U test).",
+      "claim_type": "EXPLICIT",
+      "source": "we observed a significant increase in luminal oxygen levels the day after antibiotic treatment (3.7 \u00b1 3.6 Torr at baseline to 26.5 \u00b1 26.1 Torr; p=0.02, Bonferroni-corrected Mann-Whitney U test; Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vivo oxygen sensor measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "96336112-f0cd-4ae8-9de5-9b26956f1b2b",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C19",
+      "claim": "Gut oxygen levels in antibiotic-treated mice returned to control levels by forty-eight hours after the first dose (p>0.05, Bonferroni-corrected Mann-Whitney U test).",
+      "claim_type": "EXPLICIT",
+      "source": "However, gut oxygen levels in antibiotic-treated mice returned to control levels by forty-eight hours after the first dose (p>0.05, Bonferroni-corrected Mann-Whitney U test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in vivo oxygen measurements over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "546448fe-ea2d-49db-b0cc-090a6cc1a1a4",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C20",
+      "claim": "Antibiotics were not associated with an overall effect on gut oxygen levels (p>0.05 linear mixed effects model likelihood tests).",
+      "claim_type": "EXPLICIT",
+      "source": "and antibiotics were not associated with an overall effect on gut oxygen levels (p>0.05 linear mixed effects model likelihood tests).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of oxygen measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "62a163b9-1efd-499c-9934-169d1cd5a6f7",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C21",
+      "claim": "Among treated mice, gut oxygen levels were not correlated with redox potential (p>0.05, repeated measures correlation).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, among treated mice, gut oxygen levels were not correlated with redox potential (p>0.05, repeated measures correlation; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "bffa19af-091d-4c6f-8c03-bdf9267f1192",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C22",
+      "claim": "There was a significant increase in nitrate beginning less than 24 hr after the first dose of antibiotics (p=0.03, Mann-Whitney U test).",
+      "claim_type": "EXPLICIT",
+      "source": "We measured fecal nitrate levels with the chromotropic acid method (West and Ramachandran, 1966) for a subset of time points when redox varied, and found a significant increase in nitrate (p=0.03, Mann-Whitney U test; Figure 3B) beginning less than 24 hr after the first dose of antibiotics.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by colorimetric measurements of nitrate.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "5dda9de0-24fa-4e83-ab68-0d2d014708e4",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C23",
+      "claim": "The increase in nitrate persisted throughout treatment, and overall antibiotic treatment produced a significant increase in nitrate (p=0.02, linear mixed effects model likelihood tests).",
+      "claim_type": "EXPLICIT",
+      "source": "This increase persisted throughout treatment, and overall antibiotic treatment produced a significant increase in nitrate (p=0.02, linear mixed effects model likelihood tests).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of nitrate measurements over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "e200554d-63a2-44bc-b7ce-54a3a2d1cc60",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C24",
+      "claim": "There was a significant effect of treatment on fumarate levels (p<0.001, linear mixed effects model likelihood tests).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, there was a significant effect of treatment on fumarate levels (p<0.001, linear mixed effects model likelihood tests; Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of fumarate measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "1c164a5b-534d-484f-ada7-0e8c904e1131",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C25",
+      "claim": "A spike in fumarate levels occurred 4 hr after the first antibiotics dose (p=0.004, Bonferroni-corrected Mann-Whitney U test).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a spike in fumarate levels 4 hr after the first antibiotics dose (p=0.004, Bonferroni-corrected Mann-Whitney U test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by colorimetric enzyme assay measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "0e1735e9-5cc9-41ba-b45b-52cc347aaf7d",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C26",
+      "claim": "Later during treatment, a significant decrease (to below the detection limit) in fumarate levels was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "however, this increase had dissipated by 8 hr after the first dose and later during treatment, we observed a significant decrease (to below the detection limit) in fumarate levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by fumarate measurements over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "b6ddcfd1-3eb1-49e1-bb1b-39c8826ffcee",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C27",
+      "claim": "Gut bacterial load recovered rapidly after treatment across all treated mice, exhibiting no difference relative to control mice by two days (p>0.05, Bonferroni-corrected Mann-Whitney U tests).",
+      "claim_type": "EXPLICIT",
+      "source": "Gut bacterial load recovered rapidly after treatment across all treated mice, exhibiting no difference relative to control mice by two days (p>0.05, Bonferroni-corrected Mann-Whitney U tests; Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR measurements during recovery period.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "1a7ad87b-34a7-4558-a3b8-6fdc9be8008c",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C28",
+      "claim": "A reproducible recovery of beta-diversity was observed after one week (p>0.05, Bonferroni-corrected Mann-Whitney U test).",
+      "claim_type": "EXPLICIT",
+      "source": "A reproducible recovery of beta-diversity was observed after one week (p>0.05, Bonferroni-corrected Mann-Whitney U test; Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by 16S rRNA gene sequencing and beta-diversity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "7628d648-48d9-4c9b-9b19-fec3f4183285",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C29",
+      "claim": "Three clusters of bacterial genera differed significantly during treatment (p<0.05, linear mixed effects model likelihood tests).",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst these five groups, three differed significantly during treatment (p<0.05, linear mixed effects model likelihood tests; Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by clustering analysis of 16S rRNA gene sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "c6f2fc0c-84ee-4794-ae65-4442cb4dc3d2",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C30",
+      "claim": "The cluster primarily composed of members of the Enterobacteriaceae remained elevated into the beginning of the recovery period (p<0.05, Bonferroni-corrected Mann-Whitney U tests).",
+      "claim_type": "EXPLICIT",
+      "source": "One of these, the cluster primarily composed of members of the Enterobacteriacaeae, remained elevated into the beginning of the recovery period as well (p<0.05, Bonferroni-corrected Mann-Whitney U tests).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by clustering analysis of sequencing data during recovery.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "4f31a40d-dffb-41e9-a027-87e3d63fd057",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C31",
+      "claim": "Enterobacteriaceae often bloom following antibiotic treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "This enrichment is in line with previous findings that Enterobacteriaceae often bloom following antibiotic treatment (Antonopoulos et al., 2009; David et al., 2015; Young and Schmidt, 2004; Theriot et al., 2014; Peterfreund et al., 2012; Dethlefsen et al., 2008; Jakobsson et al., 2010; Looft and Allen, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "47508238-940a-4e3c-b8f6-c6e766fbaf9b",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C32",
+      "claim": "By the end of the one week recovery period, the abundance of all clusters was indistinguishable between treated and control animals (p>0.05, Bonferroni-corrected Mann-Whitney U tests).",
+      "claim_type": "EXPLICIT",
+      "source": "However, by the end of the one week recovery period, the abundance of all clusters was indistinguishable between treated and control animals (p>0.05, Bonferroni-corrected Mann-Whitney U tests).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of cluster abundances.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "31a8c5cf-6d81-4e35-8861-ada315249ef2",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C33",
+      "claim": "Redox potential returned to control levels within a week after treatment ended (p>0.05, Bonferroni-corrected Mann-Whitney U tests).",
+      "claim_type": "EXPLICIT",
+      "source": "Redox potential returned to control levels within a week after treatment ended (p>0.05, Bonferroni-corrected Mann-Whitney U tests; Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by redox measurements during recovery period.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "9af886f5-d0de-4ad9-bbd0-adfebb2fa627",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C34",
+      "claim": "The day after antibiotic therapy ceased, fecal redox potentials in treated mice were significantly decreased relative to control mice (-138.3 \u00b1 149.8 mV vs 54.6 \u00b1 211 mV; p=0.006, Bonferroni-corrected Mann-Whitney U test).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, though, we observed the day after antibiotic therapy ceased, fecal redox potentials in treated mice were significantly decreased relative to control mice (-138.3 \u00b1 149.8 mV vs 54.6 \u00b1 211 mV; p=0.006, Bonferroni-corrected Mann-Whitney U test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by redox measurements at specific time point.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "d152639c-1487-4a4a-9f5d-7ea23e6e40ac",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C35",
+      "claim": "Oxygen and inflammation biomarker levels remained low throughout the recovery period (p>0.05, Bonferroni-corrected Mann-Whitney U tests).",
+      "claim_type": "EXPLICIT",
+      "source": "Oxygen and inflammation biomarker levels remained low throughout the recovery period (p>0.05, Bonferroni-corrected Mann-Whitney U tests; Figure 3\u2014figure supplement 2, Figure 1\u2014figure supplement 1, respectively)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by oxygen and lipocalin-2 measurements during recovery.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "5593e842-b56b-4a91-8d15-e42e8d0c66a8",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C36",
+      "claim": "Many microbial metabolic products measured by NMR had recovered two days after the last doses, and all had recovered by the end of the recovery week.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, many microbial metabolic products measured by NMR had recovered two days after the last doses, and all had recovered by the end of the recovery week (Figure 2\u2014figure supplement 3; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NMR metabolomics measurements during recovery.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "7e345381-3ddf-4e2d-925a-0dc1b198f970",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C37",
+      "claim": "The relative abundance of the Enterobacteriaceae was marginally correlated with redox potential (p=0.1, r=0.18, repeated measures correlation) throughout treatment and recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the relative abundance of the Enterobacteriaceae was marginally correlated with redox potential (p=0.1, r=,0.18, repeated measures correlation; Figure 4\u2014figure supplement 3) throughout treatment and recovery.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical correlation analysis of sequencing and redox data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "8d4cb816-5799-4796-97b3-a839ad9b546d",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C38",
+      "claim": "The change in redox potential during the earlier recovery period was negatively correlated with changes in Enterobacteriaceae absolute abundance for both treated animals (p=0.03, r = \u22120.42, repeated measures correlation) and for all animals (p=0.02, r = \u22120.34, repeated measures correlation).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the change in redox potential during the earlier recovery period was negatively correlated with changes in Enterobacteriaceae absolute abundance (calculated as total 16S rRNA gene copy number multiplied by relative abundance) for both treated animals (p=0.03, r = \u22120.42, repeated measures correlation) and for all animals (p=0.02, r = \u22120.34, repeated measures correlation; Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical correlation analysis during recovery period.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "8209f2a5-1d26-4791-ae24-13ae4a62694a",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C39",
+      "claim": "Co-housed mice communities had returned to control composition by the end of the recovery period, with the gut microbiota of treated animals equally dissimilar from baseline as it was for control mice (p>0.05, Bonferroni-corrected Mann-Whitney U test).",
+      "claim_type": "EXPLICIT",
+      "source": "For co-housed mice, by the end of the recovery period, the gut microbiota of treated animals was equally dissimilar from baseline as it was for control mice indicating that the community had recovered (p>0.05, Bonferroni-corrected Mann-Whitney U test; Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by beta-diversity analysis of sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "8030603b-ec29-4f60-a689-7eb3403b4f2d",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C40",
+      "claim": "Both fecal redox potential and Enterobacteriaceae levels returned to conventional levels more quickly in co-housed mice than singly housed mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Both fecal redox potential and Enterobacteriaceae levels also returned to conventional levels more quickly in co-housed mice than singly housed mice (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of redox and sequencing data between housing conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "22be9ad5-a8f8-4d33-940b-fbccfd883aa3",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C41",
+      "claim": "Singly-housed treated mice continued to be more dissimilar at the end of recovery than singly-housed control mice (p<0.001, Bonferroni-corrected Mann-Whitney U test).",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, singly-housed treated mice continued to be more dissimilar at the end of recovery than singly-housed control mice (p<0.001, Bonferroni-corrected Mann-Whitney U test; Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by beta-diversity analysis of sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "da228c0d-5d70-4cd1-967e-cd7de2c4baef",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C42",
+      "claim": "Redox potential is an important environmental feature affected by both host and microbial actions.",
+      "claim_type": "EXPLICIT",
+      "source": "Redox potential is an important environmental feature affected by both host and microbial actions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a premise based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "3776201a-c7eb-4a8c-918a-dff65ae1ce67",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C43",
+      "claim": "Shifts in redox potentials could be attributed specifically to bacterial suppression in a host-free ex vivo human gut microbiota model.",
+      "claim_type": "EXPLICIT",
+      "source": "Host and microbial functioning changed under treatment, but shifts in redox potentials could be attributed specifically to bacterial suppression in a host-free ex vivo human gut microbiota model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ex vivo bioreactor experiments showing redox changes without host.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "61d177c2-687f-42a1-a8de-79deb5ee431d",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C44",
+      "claim": "Redox dynamics were linked to blooms of the bacterial family Enterobacteriaceae.",
+      "claim_type": "EXPLICIT",
+      "source": "Redox dynamics were linked to blooms of the bacterial family Enterobacteriaceae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis between redox and Enterobacteriaceae abundance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "94109981-9f08-48b4-86d2-fcbbb0bda881",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C45",
+      "claim": "Ecological succession to pre-treatment composition was associated with recovery of gut redox.",
+      "claim_type": "EXPLICIT",
+      "source": "Ecological succession to pre-treatment composition was associated with recovery of gut redox, but also required dispersal from unaffected gut communities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by observations of redox and compositional recovery in co-housed mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "0706cf4c-2bb2-45ae-9b03-8c36230be99c",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C46",
+      "claim": "Dispersal from unaffected gut communities was required for ecological succession to pre-treatment composition.",
+      "claim_type": "EXPLICIT",
+      "source": "Ecological succession to pre-treatment composition was associated with recovery of gut redox, but also required dispersal from unaffected gut communities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by differential recovery between co-housed and singly-housed mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "68da65b2-9210-4055-be4c-a48a291e7e41",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C47",
+      "claim": "Bacterial competition for electron acceptors can be a key ecological factor structuring gut communities.",
+      "claim_type": "EXPLICIT",
+      "source": "As bacterial competition for electron acceptors can be a key ecological factor structuring gut communities, these results support the potential for manipulating gut microbiota through managing bacterial respiration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the study's findings on redox dynamics and bacterial succession.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "ea5eb80a-581d-4929-b8ce-892a87786b84",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C48",
+      "claim": "Antibiotics have been found to increase gut epithelium oxygenation as a result of altered microbial composition and metabolic signaling to the host.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, antibiotics have been found to increase gut epithelium oxygenation as a result of altered microbial composition and metabolic signaling to the host (Kelly et al., 2015; Rivera-Ch\u00e1vez et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "7d802045-3137-47cb-b3c9-aa52d251ca36",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C49",
+      "claim": "Host inflammation responses to antibiotic treatment and antibiotic-associated pathogen colonization have been shown to produce electron acceptors and other redox active molecules that cause oxidative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, host inflammation responses to antibiotic treatment and antibiotic-associated pathogen colonization have been shown to produce electron acceptors and other redox active molecules that cause oxidative stress (Faber et al., 2016; Winter et al., 2010; 2013; Spees et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "ed4cec2d-a280-4e50-bfc8-2fca679b9132",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C50",
+      "claim": "A wide range of resident gut bacteria can respire aerobically and anaerobically.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the contribution of microbial metabolism to gut redox potential has not been tested, although it is known that a wide range of resident gut bacteria can respire aerobically and anaerobically (Ravcheev and Thiele, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "bf6ceb2a-bf2f-49cc-a633-f11f4278d816",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C51",
+      "claim": "Antibiotic disturbance produces reproducible community succession in the gut following treatment\u2014most notably, a transient bloom in Enterobacteriaceae.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibiotic disturbance produces reproducible community succession in the gut following treatment\u2014most notably, a transient bloom in Enterobacteriaceae (Antonopoulos et al., 2009; David et al., 2015; Young and Schmidt, 2004; Theriot et al., 2014; Peterfreund et al., 2012; Dethlefsen et al., 2008; Jakobsson et al., 2010; Looft and Allen, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "6b7f7215-2688-408b-bcfa-6b6fba5a4728",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C52",
+      "claim": "The Enterobacteriaceae bloom has been ascribed to an increase in oxygen availability.",
+      "claim_type": "EXPLICIT",
+      "source": "which has been ascribed to an increase in oxygen availability (David et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "f1ee2934-be36-4156-b906-c8b7dc76e08c",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C53",
+      "claim": "Passive diffusion of oxygen from the epithelium increases redox potential and stimulates growth of aerobic microbes.",
+      "claim_type": "EXPLICIT",
+      "source": "Passive diffusion of oxygen from the epithelium increases redox potential and stimulates growth of aerobic microbes (Espey, 2013; Albenberg et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "3a051acb-b536-4d67-89c8-6939235d49cb",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C54",
+      "claim": "Secretion of redox-active immune molecules such as reactive oxygen species or nitrate is known to be a feature of inflammation that imposes oxidative stress on commensal microbes and can be exploited by select pathogens to colonize the intestine.",
+      "claim_type": "EXPLICIT",
+      "source": "Secretion of redox-active immune molecules such as reactive oxygen species or nitrate is known to be a feature of inflammation that imposes oxidative stress on commensal microbes and can be exploited by select pathogens to colonize the intestine (Winter et al., 2010; 2013; Faber et al., 2016; Spees et al., 2013; Rivera-Ch\u00e1vez et al., 2016; Kelly et al., 2015; David et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "339063f6-e451-4428-8b2f-0aa974179c78",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C55",
+      "claim": "In free-living microbial communities, variation in available electron acceptors dictates where microbes that employ respiration can thrive.",
+      "claim_type": "EXPLICIT",
+      "source": "In free-living microbial communities, variation in available electron acceptors dictates where microbes that employ respiration can thrive; the differential microbial metabolism that follows can produce further changes in electron acceptor availability (Morris and Schmidt, 2013; Chen et al., 2017; Noll et al., 2005; Orcutt et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "3e0fc3a9-4e13-4066-8dc2-ae5e3b13df39",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C56",
+      "claim": "Microbial metabolism has been proposed as a mechanism for low redox potential states in the lung of cystic fibrosis patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, microbial metabolism has been proposed as a mechanism for low redox potential states in the lung of cystic fibrosis patients (Cowley et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "7765e41f-a6ae-496d-96d9-55773a399365",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C57",
+      "claim": "Singly housed mice treated with antibiotics will exhibit altered community composition for weeks after treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research has shown that singly housed mice treated with antibiotics will exhibit altered community composition for weeks after treatment (Antonopoulos et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "86ceb4ce-dad6-48c7-a20e-afd8844b84c3",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C58",
+      "claim": "Mice practice coprophagy (i.e., ingestion of feces).",
+      "claim_type": "EXPLICIT",
+      "source": "Because mice practice coprophagy (i.e., ingestion of feces), we would expect that co-housing would re-introduce normal commensal microbes to compete with the Enterobacteriaceae and other early successional species thereby reducing their abundance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of mouse behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "9fc35637-9488-494c-8382-2c1dcf6f8bef",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C59",
+      "claim": "Microbial respiration of host sourced electron acceptors acts as a major determinant of redox potential in the gut, in addition to the host production itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we propose microbial respiration of host sourced electron acceptors acts as a major determinant of redox potential in the gut, in addition to the host production itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed based on the study's findings from in vivo and ex vivo experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "67ffa6f5-3724-40d3-9962-920904642131",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C60",
+      "claim": "Electron acceptors are a critical resource normally competed over by the resident bacteria and, as such, are key factors structuring gut microbial ecology.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings imply that electron acceptors are a critical resource normally competed over by the resident bacteria and, as such, are key factors structuring gut microbial ecology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the study's findings on redox dynamics and bacterial succession.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "a61f94d5-c8fc-4554-850d-01cd686b4593",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C61",
+      "claim": "The ability to respire a broad range of electron acceptors is already known to be crucial for pathogens to colonize the intestine.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to respire a broad range of electron acceptors is already known to be crucial for pathogens to colonize the intestine (Winter et al., 2010; 2013; Faber et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "c3134265-81ba-4915-9d71-e101d17e4ce0",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C62",
+      "claim": "Pathogen colonization resistance by commensal microbes could be mediated by bacterial competition involving respiratory pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "If true, this hypothesis would imply that pathogen colonization resistance by commensal microbes could be mediated by bacterial competition involving respiratory pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference based on the study's findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "a478afe6-507d-4d9f-a837-55563e8ff4a4",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C63",
+      "claim": "Enterobacteriaceae are especially suited to exploiting electron acceptor availability because their diverse repertoire of respiration pathways allow for fast growth rates under a high redox regime.",
+      "claim_type": "EXPLICIT",
+      "source": "Enterobacteriaceae are especially suited to exploiting electron acceptor availability because their diverse repertoire of respiration pathways (Ravcheev and Thiele, 2014; Jones et al., 2007; 2011) allow for fast growth rates under a high redox regime.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from cited literature on Enterobacteriaceae respiration capabilities.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "b1b1420b-7420-49b1-a2f3-03f37cc64a78",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C64",
+      "claim": "Enterobacteriaceae and respiration pathway genes more generally are more prevalent in inflamed mouse guts.",
+      "claim_type": "EXPLICIT",
+      "source": "Enterobacteriaceae and respiration pathway genes more generally are also more prevalent in inflamed mouse guts (Hughes et al., 2017), another environment where heightened redox potential is expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "1c1ad2f5-a5fc-4772-a825-b605f33ab542",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C65",
+      "claim": "Under experimental inflammation, Enterobacteriaceae expansion can be prevented by treatment with tungstate, a respiration inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "Under experimental inflammation, though, Enterobacteriaceae expansion can be prevented by treatment with tungstate, a respiration inhibitor (Zhu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "672c0915-2091-4ad6-915d-89a0ae3dc229",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C66",
+      "claim": "Members of the Enterobacteriaceae will produce reducing agents, such as H2S, in response to antibiotic treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "It has previously been shown that members of the Enterobacteriaceae will produce reducing agents, such as H2S, in response to antibiotic treatment (Shatalin et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "7275a27e-d3af-4392-bef4-9ed0ec361d9c",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C67",
+      "claim": "Antibiotics are triumphs of modern medicine that have dramatically reduced infectious disease mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibiotics are triumphs of modern medicine that have dramatically reduced infectious disease mortality (Armstrong et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "45757a74-4e3a-4fef-a754-e0d513d3c2c1",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C68",
+      "claim": "Antibiotics meaningfully reshape the resident gut microbiota, leaving an imprint that can last for months to years after treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "But, we are increasingly learning that antibiotics also meaningfully reshape the resident gut microbiota, leaving an imprint that can last for months to years after treatment (Dethlefsen and Relman, 2011; Jakobsson et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "43186ebd-320b-479e-9234-0afc29630ac2",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C69",
+      "claim": "Antibiotic treatment predisposes hosts to obesity, food allergy, auto-immune disease, and increased infection risk.",
+      "claim_type": "EXPLICIT",
+      "source": "and predisposing hosts to obesity (Cho et al., 2012), food allergy (Stefka et al., 2014), auto-immune disease (Russell et al., 2012), and increased infection risk (Stecher et al., 2007; Buffie et al., 2012; Wistr\u00f6m et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "1d087eed-6e3e-4987-948f-5a50e902b48e",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C70",
+      "claim": "Germ-free animals exhibit increased gut redox potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, germ-free animals (Phillips et al., 1958; Celesk et al., 1976) and humans suffering from inflammatory diseases (Circu and Aw, 2011) and malnutrition (Million et al., 2016) exhibit increased gut redox potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "4e72ccd7-877f-4948-b3f5-afb31799e2cf",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C71",
+      "claim": "Humans suffering from inflammatory diseases exhibit increased gut redox potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, germ-free animals (Phillips et al., 1958; Celesk et al., 1976) and humans suffering from inflammatory diseases (Circu and Aw, 2011) and malnutrition (Million et al., 2016) exhibit increased gut redox potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "c5e9728b-1285-4f79-a3c9-29f285febc00",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C72",
+      "claim": "Humans suffering from malnutrition exhibit increased gut redox potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, germ-free animals (Phillips et al., 1958; Celesk et al., 1976) and humans suffering from inflammatory diseases (Circu and Aw, 2011) and malnutrition (Million et al., 2016) exhibit increased gut redox potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "5851eb9e-9f09-448d-8515-54298252d2fb",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C73",
+      "claim": "The redox electrode has a detection limit of 0.10 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "The electrode has a detection limit of 0.10 mV (Pang and Zhang, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature on electrode specifications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "34af2472-1aba-44d0-ac5c-235bef450bf2",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C74",
+      "claim": "The current oxygen sensing system measures lifetime to within 2 \u00b5s or better, which equates to ~1 \u00b5M O2 at physiological oxygen conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The current oxygen sensing system measures lifetime to within 2 \u00b5s or better, which equates to ~1 \u00b5M O2 at physiological oxygen conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Technical specification of the oxygen sensor system used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "aa21363b-77ec-4fdc-8996-48b6fa4436aa",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C75",
+      "claim": "Baseline microbiome is expected to differ between mouse litters over time as well as between vendor.",
+      "claim_type": "EXPLICIT",
+      "source": "Because baseline microbiome is expected to differ between mouse litters over time as well as between vendor (Rosshart et al., 2017; Rausch et al., 2016; Ivanov et al., 2009; Campbell et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "83519224-80c4-4fac-adef-2310a142347a",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C76",
+      "claim": "There were significant differences between cohorts in their microbiome at the OTU level throughout the experiment (p<0.01, R2 = 0.17, PERMANOVA).",
+      "claim_type": "EXPLICIT",
+      "source": "An overall analysis of beta-diversity showed that there were significant differences between cohorts in their microbiome at the OTU level throughout the experiment (p<0.01, R2 = 0.17, PERMANOVA; Figure 4\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of 16S rRNA gene sequencing data from two cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "465f39ae-95dd-40a3-bc92-81eba98a046b",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C77",
+      "claim": "The cohort effect did not significantly interact with the treatment effect (p=0.3).",
+      "claim_type": "EXPLICIT",
+      "source": "This cohort effect did not significantly interact with the treatment effect, however (p=0.3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of cohort and treatment effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "93634423-a47f-410e-960f-ee020e972c43",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C78",
+      "claim": "The Enterobacteriaceae bloom response to antibiotics has been found to be consistent between humans and mice, as well as between mouse vendors.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the Enterobacteriaceae bloom response to antibiotics has been found to be consistent between humans and mice, as well as between mouse vendors (Antonopoulos et al., 2009; David et al., 2015; Young and Schmidt, 2004; Theriot et al., 2014; Peterfreund et al., 2012; Dethlefsen et al., 2008; Jakobsson et al., 2010; Looft and Allen, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "c23367fb-ae1f-453d-a794-27b4d8fcdb45",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C79",
+      "claim": "Male C57BL/6 mice 8\u201310 weeks of age with a native microbiota were used for all experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Male C57BL/6 mice (Charles River Laboratories, Wilmington MA) 8\u201310 weeks of age with a native microbiota were used for all experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "bbe9b1c3-f989-4343-9de3-d0fa6a8b323f",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C80",
+      "claim": "The antibiotic cocktail consisted of ampicillin 1 mg/ml, vancomycin 5 mg/ml, neomycin 10 mg/ml, and metronidazole 10 mg/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "The antibiotic cocktail consisted of ampicillin (Gold Biotechnology, St. Louis MO) 1 mg/ml, vancomycin (Alfa Aesar, Ward Hill MA) 5 mg/ml, neomycin (EMD Millipore, Burlington MA) 10 mg/ml, and metronidazole (Alfa Aesar) 10 mg/ml (after Reikvam et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental treatment with citation to source protocol.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "9587d5a4-1154-4026-877f-d2da7ca9685a",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C81",
+      "claim": "Gut microbiota were cultured from human stool in a flow-through bioreactor system following previous work.",
+      "claim_type": "EXPLICIT",
+      "source": "Gut microbiota were cultured from human stool in a flow-through bioreactor system (Infors, Bottmingen Switzerland) following previous work (McDonald et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of ex vivo experimental method with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "f6f4292d-7041-47e4-8e0a-0387f2811d4a",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C82",
+      "claim": "Healthy human subjects (n = 3) that self-reported no use of antibiotics within a month of enrollment provided a single donation of stool.",
+      "claim_type": "EXPLICIT",
+      "source": "Healthy human subjects (n = 3) that self-reported no use of antibiotics within a month of enrollment provided a single donation of stool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of human subjects for ex vivo experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "15a0dd72-0b12-4d9d-9a26-5692298f8c91",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "claim_id": "C83",
+      "claim": "All bioreactor vessels had a total vessel volume of 400 ml and a continuous turnover of 400 ml per day for the media to emulate the 24 hr average passage time of the human gut.",
+      "claim_type": "EXPLICIT",
+      "source": "All bioreactor vessels had a total vessel volume of 400 ml and a continuous turnover of 400 ml per day for the media to emulate the 24 hr average passage time of the human gut.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of bioreactor experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "30e24e89-8553-4451-92d2-d41f71839d42",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Antibiotic treatment rapidly and significantly increased gut redox potential in mice. Within 16 hours of the first antibiotic dose, redox potential increased from 37 \u00b1 164 mV to 227 \u00b1 45 mV (p=0.04), and remained significantly elevated throughout the 5-day treatment period (p=0.005).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 provide consistent evidence from direct redox measurements with appropriate statistical testing. The rapid increase within 16 hours and sustained elevation throughout treatment are well-documented with significant p-values from both post-hoc tests and linear mixed effects models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "b8a5d255-4aed-4ce6-89bd-f09707eead67",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Antibiotic treatment produced mixed evidence for host inflammation. Gene expression showed increases in Nos2 and Rela (pro-inflammatory markers) and decreases in Apoa4 (anti-inflammatory), but lipocalin-2 protein levels significantly decreased rather than increased (p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C4-C9 present contradictory inflammation biomarkers. While some gene expression changes suggest inflammation (C4-C7), the decrease in lipocalin-2 (C8), a validated inflammation biomarker, contradicts this interpretation. The authors themselves note this provides 'equivocal evidence' for inflammation, making the overall inflammatory state uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "0c9cf6a1-2634-42d0-bdbf-255bddbf366c",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Antibiotic treatment increased redox potential in a host-free ex vivo human gut microbiota model. Redox increased by 59 \u00b1 47 mV within 15 hours (p=0.005), demonstrating that bacterial suppression alone, without host involvement, is sufficient to shift redox potential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12 and C43 provide strong evidence that microbial effects alone can drive redox changes. The ex vivo bioreactor system explicitly lacks host tissue, yet reproduces the rapid redox increase seen in vivo. This is a critical control experiment that isolates microbial from host contributions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "96ae7453-3654-4eff-9217-f948139caed4",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Antibiotic treatment rapidly suppressed bacterial load and metabolic activity. Bacterial concentrations decreased within 12 hours (p=0.01) and remained suppressed throughout treatment. Microbial metabolites including short-chain fatty acids decreased within 8 hours, with 21 of 28 metabolites significantly reduced.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 provide comprehensive evidence of microbial suppression using multiple complementary methods (qPCR for load, NMR for metabolites). The timing of these changes (within 8-12 hours) coincides with redox shifts, supporting a mechanistic link. Statistical support is robust with appropriate corrections.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "70649491-0b99-4765-92d3-3463df8164e8",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Luminal oxygen transiently increased one day after antibiotic treatment (3.7 to 26.5 Torr, p=0.02) but returned to control levels by 48 hours. Overall, antibiotics had no significant effect on oxygen levels (p>0.05), and oxygen was not correlated with redox potential among treated mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 demonstrate that while oxygen showed a transient spike, it does not explain persistent redox changes. The lack of overall effect and lack of correlation with redox (C21) are important negative results that help rule out oxygen as the primary driver of sustained redox elevation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "ab3aa0f4-7ea5-4ea3-9981-6d1271ebb3a8",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Fecal nitrate levels significantly increased within 24 hours of antibiotic treatment (p=0.03) and remained elevated throughout the 5-day treatment period (p=0.02).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 provide clear evidence of sustained nitrate accumulation during antibiotic treatment. The timing and persistence align with redox potential changes, supporting nitrate as a potential contributor to elevated redox. Statistical support is appropriate with both post-hoc and overall tests.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "b62d3916-c185-421d-b252-4be5c2154b41",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Fumarate levels showed a transient spike 4 hours after the first antibiotic dose (p=0.004) but then decreased to below detection limits later in treatment. Overall, treatment had a significant effect on fumarate (p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 document complex fumarate dynamics with an early spike followed by depletion. This pattern differs from nitrate and suggests fumarate (a microbially-produced electron acceptor) behaves differently from host-sourced acceptors. The measurements and statistics are appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "4afe8321-0a5c-47d5-9a4d-ba40175fd1db",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Gut microbiota showed resilience after antibiotic treatment. Bacterial load recovered within 2 days (p>0.05 vs controls), beta-diversity recovered after 1 week, and specific bacterial clusters including Enterobacteriaceae showed predictable dynamics. By the end of recovery, all cluster abundances were indistinguishable from controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C32 document comprehensive recovery dynamics using multiple metrics (load, diversity, specific taxa). The Enterobacteriaceae bloom (C30-C31) is consistent with prior literature. Statistical support is robust throughout. This demonstrates ecosystem resilience following perturbation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "6cb8f631-5aa5-4383-8f36-8110c0d2a7d5",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Redox potential and other abiotic conditions recovered after antibiotic treatment. Redox returned to control levels within one week (p>0.05), though it transiently decreased below control levels immediately after treatment ended (-138.3 vs 54.6 mV, p=0.006). Oxygen, inflammation markers, and metabolites also recovered.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 demonstrate abiotic resilience paralleling biotic recovery. The transient hysteresis (redox dropping below baseline, C34) is an interesting observation suggesting overshoot dynamics. The comprehensive recovery of multiple parameters strengthens the conclusion of ecosystem resilience.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "ea3acffc-0e23-41f9-aa4b-bd8931773b4b",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Enterobacteriaceae dynamics were linked to redox potential changes. Relative abundance showed marginal correlation with redox throughout treatment and recovery (p=0.1, r=0.18). During early recovery, changes in Enterobacteriaceae absolute abundance were negatively correlated with redox changes (p=0.03, r=-0.42 for treated; p=0.02, r=-0.34 for all animals).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 and C44 provide statistical evidence linking Enterobacteriaceae to redox dynamics. While the overall correlation is marginal (C37), the significant negative correlation during recovery (C38) suggests these bacteria actively consume electron acceptors and reduce redox potential. The use of repeated measures correlation is appropriate for longitudinal data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "61d6b578-c1a6-43b4-9d58-7fa92012ce70",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Dispersal from unaffected communities was required for full microbiota recovery. Co-housed mice (with access to control mice via coprophagy) recovered to control composition by one week (p>0.05), while singly-housed mice remained significantly different (p<0.001). Both redox and Enterobacteriaceae recovered faster in co-housed mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 and C46 demonstrate that environmental recovery alone is insufficient for compositional recovery\u2014dispersal is necessary. This is a well-designed experiment that separates environmental from dispersal effects. The differential recovery between housing conditions provides strong evidence for the importance of microbial immigration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "0c2517db-ce9f-43cd-9fd7-d1e34383921b",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study proposes that microbial respiration of host-sourced electron acceptors is a major determinant of gut redox potential, and that electron acceptor competition is a key ecological factor structuring gut communities. This represents a feedback between microbial metabolism and environmental conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C45, C47, C59-C60 represent the main conceptual conclusions synthesized from the experimental results. The ex vivo experiments (C43), electron acceptor measurements (C22-C26), and Enterobacteriaceae dynamics (C37-C38) collectively support this model. The inference is logical and well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "ef4b7b10-fc53-49bc-ad10-48849a21bb18",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors hypothesize that pathogen colonization resistance by commensal microbes could be mediated by bacterial competition for electron acceptors, and that Enterobacteriaceae are especially suited to exploit electron acceptor availability due to their diverse respiration pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C63 are speculative hypotheses extending beyond the data. While C63 is supported by citations about Enterobacteriaceae respiratory capabilities, C62 explicitly states 'If true, this hypothesis would imply...' indicating speculation. These are reasonable inferences but require additional experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "dddb179d-0799-435c-a5da-2543930432a4",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Two cohorts of mice showed significant baseline microbiome differences at the OTU level (p<0.01, R\u00b2=0.17), but cohort did not significantly interact with treatment effect (p=0.3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 address an important potential confound. While baseline differences exist between cohorts, the lack of interaction with treatment suggests the antibiotic effects are reproducible across cohorts. This strengthens confidence in the generalizability of findings despite batch effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "2017d003-9768-46bc-91c8-4e4c55bc8e05",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The manuscript cites extensive prior literature establishing that: antibiotics affect host oxygenation and inflammation; gut bacteria can respire aerobically and anaerobically; Enterobacteriaceae bloom after antibiotics; redox-active molecules are features of inflammation; and antibiotic treatment has long-term health consequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C72, C75, and C78 represent background knowledge from cited literature. These are appropriately used to contextualize the current work. The citations appear relevant and properly attributed. These claims establish the scientific foundation for the study's hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    },
+    {
+      "id": "270c7770-f6ca-4f53-b578-319ac714c033",
+      "content_id": "db9bd752-016e-4db8-9f34-ff44d5c2e787",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study used appropriate methods including: redox electrodes with 0.10 mV detection limit; oxygen sensors with ~1 \u00b5M O2 resolution; male C57BL/6 mice 8-10 weeks old; a four-antibiotic cocktail; and ex vivo bioreactors with 400 ml volume and 24-hour turnover matching human gut transit time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C83 describe methodological details. The specifications are clearly stated and appropriate for the measurements. The ex vivo system design (C81-C83) appropriately mimics human gut conditions. These technical details support the validity of the experimental approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:06:17.731323Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e38805b6-5e7a-4e61-ab4a-9d9b64170c11",
+      "result_id": "30e24e89-8553-4451-92d2-d41f71839d42"
+    },
+    {
+      "claim_id": "83b56077-8a9f-464e-b786-609e722ea99d",
+      "result_id": "30e24e89-8553-4451-92d2-d41f71839d42"
+    },
+    {
+      "claim_id": "610782bc-4701-4dbd-97ed-c957ca9c17e4",
+      "result_id": "30e24e89-8553-4451-92d2-d41f71839d42"
+    },
+    {
+      "claim_id": "f3e7f6ab-66c0-4739-b472-b9f08d12df35",
+      "result_id": "b8a5d255-4aed-4ce6-89bd-f09707eead67"
+    },
+    {
+      "claim_id": "e2bd1deb-315b-476a-9f0f-e59e30ad9d6c",
+      "result_id": "b8a5d255-4aed-4ce6-89bd-f09707eead67"
+    },
+    {
+      "claim_id": "3eb042a8-f013-41d6-8cfa-823d084cd6e2",
+      "result_id": "b8a5d255-4aed-4ce6-89bd-f09707eead67"
+    },
+    {
+      "claim_id": "f89fa80b-5a54-42d1-bc6b-99f3c5a685bc",
+      "result_id": "b8a5d255-4aed-4ce6-89bd-f09707eead67"
+    },
+    {
+      "claim_id": "03193b71-0f66-4f41-8870-cd0365116e8e",
+      "result_id": "b8a5d255-4aed-4ce6-89bd-f09707eead67"
+    },
+    {
+      "claim_id": "dba3a646-90fa-4fbd-81f3-dacc01bdfb43",
+      "result_id": "b8a5d255-4aed-4ce6-89bd-f09707eead67"
+    },
+    {
+      "claim_id": "ede68828-972b-4fe7-a06d-89cbe83b0c48",
+      "result_id": "0c9cf6a1-2634-42d0-bdbf-255bddbf366c"
+    },
+    {
+      "claim_id": "b462d65d-985a-4c5b-b714-ed4cc53db9b8",
+      "result_id": "0c9cf6a1-2634-42d0-bdbf-255bddbf366c"
+    },
+    {
+      "claim_id": "a3b3f475-a954-4b2c-9f3c-fb34ffc42e35",
+      "result_id": "0c9cf6a1-2634-42d0-bdbf-255bddbf366c"
+    },
+    {
+      "claim_id": "3776201a-c7eb-4a8c-918a-dff65ae1ce67",
+      "result_id": "0c9cf6a1-2634-42d0-bdbf-255bddbf366c"
+    },
+    {
+      "claim_id": "7c3f61e0-d160-4740-9c33-cb7736caf6c2",
+      "result_id": "96ae7453-3654-4eff-9217-f948139caed4"
+    },
+    {
+      "claim_id": "45abf680-6cd4-4066-8999-ecada0914196",
+      "result_id": "96ae7453-3654-4eff-9217-f948139caed4"
+    },
+    {
+      "claim_id": "b8d4ade3-068f-4ef3-8725-92a81a33c968",
+      "result_id": "96ae7453-3654-4eff-9217-f948139caed4"
+    },
+    {
+      "claim_id": "4a4cd5da-28cd-4ebd-80ec-815c2e8f3a4e",
+      "result_id": "96ae7453-3654-4eff-9217-f948139caed4"
+    },
+    {
+      "claim_id": "59091cf5-e97c-4bb0-9ee0-ea482f0a62b8",
+      "result_id": "96ae7453-3654-4eff-9217-f948139caed4"
+    },
+    {
+      "claim_id": "02c7536a-b4ea-4e1e-a5af-bcee61438a5c",
+      "result_id": "70649491-0b99-4765-92d3-3463df8164e8"
+    },
+    {
+      "claim_id": "96336112-f0cd-4ae8-9de5-9b26956f1b2b",
+      "result_id": "70649491-0b99-4765-92d3-3463df8164e8"
+    },
+    {
+      "claim_id": "546448fe-ea2d-49db-b0cc-090a6cc1a1a4",
+      "result_id": "70649491-0b99-4765-92d3-3463df8164e8"
+    },
+    {
+      "claim_id": "62a163b9-1efd-499c-9934-169d1cd5a6f7",
+      "result_id": "70649491-0b99-4765-92d3-3463df8164e8"
+    },
+    {
+      "claim_id": "bffa19af-091d-4c6f-8c03-bdf9267f1192",
+      "result_id": "ab3aa0f4-7ea5-4ea3-9981-6d1271ebb3a8"
+    },
+    {
+      "claim_id": "5dda9de0-24fa-4e83-ab68-0d2d014708e4",
+      "result_id": "ab3aa0f4-7ea5-4ea3-9981-6d1271ebb3a8"
+    },
+    {
+      "claim_id": "e200554d-63a2-44bc-b7ce-54a3a2d1cc60",
+      "result_id": "b62d3916-c185-421d-b252-4be5c2154b41"
+    },
+    {
+      "claim_id": "1c164a5b-534d-484f-ada7-0e8c904e1131",
+      "result_id": "b62d3916-c185-421d-b252-4be5c2154b41"
+    },
+    {
+      "claim_id": "0e1735e9-5cc9-41ba-b45b-52cc347aaf7d",
+      "result_id": "b62d3916-c185-421d-b252-4be5c2154b41"
+    },
+    {
+      "claim_id": "b6ddcfd1-3eb1-49e1-bb1b-39c8826ffcee",
+      "result_id": "4afe8321-0a5c-47d5-9a4d-ba40175fd1db"
+    },
+    {
+      "claim_id": "1a7ad87b-34a7-4558-a3b8-6fdc9be8008c",
+      "result_id": "4afe8321-0a5c-47d5-9a4d-ba40175fd1db"
+    },
+    {
+      "claim_id": "7628d648-48d9-4c9b-9b19-fec3f4183285",
+      "result_id": "4afe8321-0a5c-47d5-9a4d-ba40175fd1db"
+    },
+    {
+      "claim_id": "c6f2fc0c-84ee-4794-ae65-4442cb4dc3d2",
+      "result_id": "4afe8321-0a5c-47d5-9a4d-ba40175fd1db"
+    },
+    {
+      "claim_id": "4f31a40d-dffb-41e9-a027-87e3d63fd057",
+      "result_id": "4afe8321-0a5c-47d5-9a4d-ba40175fd1db"
+    },
+    {
+      "claim_id": "47508238-940a-4e3c-b8f6-c6e766fbaf9b",
+      "result_id": "4afe8321-0a5c-47d5-9a4d-ba40175fd1db"
+    },
+    {
+      "claim_id": "31a8c5cf-6d81-4e35-8861-ada315249ef2",
+      "result_id": "6cb8f631-5aa5-4383-8f36-8110c0d2a7d5"
+    },
+    {
+      "claim_id": "9af886f5-d0de-4ad9-bbd0-adfebb2fa627",
+      "result_id": "6cb8f631-5aa5-4383-8f36-8110c0d2a7d5"
+    },
+    {
+      "claim_id": "d152639c-1487-4a4a-9f5d-7ea23e6e40ac",
+      "result_id": "6cb8f631-5aa5-4383-8f36-8110c0d2a7d5"
+    },
+    {
+      "claim_id": "5593e842-b56b-4a91-8d15-e42e8d0c66a8",
+      "result_id": "6cb8f631-5aa5-4383-8f36-8110c0d2a7d5"
+    },
+    {
+      "claim_id": "7e345381-3ddf-4e2d-925a-0dc1b198f970",
+      "result_id": "ea3acffc-0e23-41f9-aa4b-bd8931773b4b"
+    },
+    {
+      "claim_id": "8d4cb816-5799-4796-97b3-a839ad9b546d",
+      "result_id": "ea3acffc-0e23-41f9-aa4b-bd8931773b4b"
+    },
+    {
+      "claim_id": "61d177c2-687f-42a1-a8de-79deb5ee431d",
+      "result_id": "ea3acffc-0e23-41f9-aa4b-bd8931773b4b"
+    },
+    {
+      "claim_id": "8209f2a5-1d26-4791-ae24-13ae4a62694a",
+      "result_id": "61d6b578-c1a6-43b4-9d58-7fa92012ce70"
+    },
+    {
+      "claim_id": "8030603b-ec29-4f60-a689-7eb3403b4f2d",
+      "result_id": "61d6b578-c1a6-43b4-9d58-7fa92012ce70"
+    },
+    {
+      "claim_id": "22be9ad5-a8f8-4d33-940b-fbccfd883aa3",
+      "result_id": "61d6b578-c1a6-43b4-9d58-7fa92012ce70"
+    },
+    {
+      "claim_id": "0706cf4c-2bb2-45ae-9b03-8c36230be99c",
+      "result_id": "61d6b578-c1a6-43b4-9d58-7fa92012ce70"
+    },
+    {
+      "claim_id": "da228c0d-5d70-4cd1-967e-cd7de2c4baef",
+      "result_id": "0c2517db-ce9f-43cd-9fd7-d1e34383921b"
+    },
+    {
+      "claim_id": "94109981-9f08-48b4-86d2-fcbbb0bda881",
+      "result_id": "0c2517db-ce9f-43cd-9fd7-d1e34383921b"
+    },
+    {
+      "claim_id": "68da65b2-9210-4055-be4c-a48a291e7e41",
+      "result_id": "0c2517db-ce9f-43cd-9fd7-d1e34383921b"
+    },
+    {
+      "claim_id": "9fc35637-9488-494c-8382-2c1dcf6f8bef",
+      "result_id": "0c2517db-ce9f-43cd-9fd7-d1e34383921b"
+    },
+    {
+      "claim_id": "67ffa6f5-3724-40d3-9962-920904642131",
+      "result_id": "0c2517db-ce9f-43cd-9fd7-d1e34383921b"
+    },
+    {
+      "claim_id": "c3134265-81ba-4915-9d71-e101d17e4ce0",
+      "result_id": "ef4b7b10-fc53-49bc-ad10-48849a21bb18"
+    },
+    {
+      "claim_id": "a478afe6-507d-4d9f-a837-55563e8ff4a4",
+      "result_id": "ef4b7b10-fc53-49bc-ad10-48849a21bb18"
+    },
+    {
+      "claim_id": "83519224-80c4-4fac-adef-2310a142347a",
+      "result_id": "dddb179d-0799-435c-a5da-2543930432a4"
+    },
+    {
+      "claim_id": "465f39ae-95dd-40a3-bc92-81eba98a046b",
+      "result_id": "dddb179d-0799-435c-a5da-2543930432a4"
+    },
+    {
+      "claim_id": "ea5eb80a-581d-4929-b8ce-892a87786b84",
+      "result_id": "2017d003-9768-46bc-91c8-4e4c55bc8e05"
+    },
+    {
+      "claim_id": "7d802045-3137-47cb-b3c9-aa52d251ca36",
+      "result_id": "2017d003-9768-46bc-91c8-4e4c55bc8e05"
+    },
+    {
+      "claim_id": "ed4cec2d-a280-4e50-bfc8-2fca679b9132",
+      "result_id": "2017d003-9768-46bc-91c8-4e4c55bc8e05"
+    },
+    {
+      "claim_id": "bf6ceb2a-bf2f-49cc-a633-f11f4278d816",
+      "result_id": "2017d003-9768-46bc-91c8-4e4c55bc8e05"
+    },
+    {
+      "claim_id": "6b7f7215-2688-408b-bcfa-6b6fba5a4728",
+      "result_id": "2017d003-9768-46bc-91c8-4e4c55bc8e05"
+    },
+    {
+      "claim_id": "f1ee2934-be36-4156-b906-c8b7dc76e08c",
+      "result_id": "2017d003-9768-46bc-91c8-4e4c55bc8e05"
+    },
+    {
+      "claim_id": "3a051acb-b536-4d67-89c8-6939235d49cb",
+      "result_id": "2017d003-9768-46bc-91c8-4e4c55bc8e05"
+    },
+    {
+      "claim_id": "339063f6-e451-4428-8b2f-0aa974179c78",
+      "result_id": "2017d003-9768-46bc-91c8-4e4c55bc8e05"
+    },
+    {
+      "claim_id": "3e0fc3a9-4e13-4066-8dc2-ae5e3b13df39",
+      "result_id": "2017d003-9768-46bc-91c8-4e4c55bc8e05"
+    },
+    {
+      "claim_id": "7765e41f-a6ae-496d-96d9-55773a399365",
+      "result_id": "2017d003-9768-46bc-91c8-4e4c55bc8e05"
+    },
+    {
+      "claim_id": "a61f94d5-c8fc-4554-850d-01cd686b4593",
+      "result_id": "2017d003-9768-46bc-91c8-4e4c55bc8e05"
+    },
+    {
+      "claim_id": "b1b1420b-7420-49b1-a2f3-03f37cc64a78",
+      "result_id": "2017d003-9768-46bc-91c8-4e4c55bc8e05"
+    },
+    {
+      "claim_id": "1c1ad2f5-a5fc-4772-a825-b605f33ab542",
+      "result_id": "2017d003-9768-46bc-91c8-4e4c55bc8e05"
+    },
+    {
+      "claim_id": "672c0915-2091-4ad6-915d-89a0ae3dc229",
+      "result_id": "2017d003-9768-46bc-91c8-4e4c55bc8e05"
+    },
+    {
+      "claim_id": "7275a27e-d3af-4392-bef4-9ed0ec361d9c",
+      "result_id": "2017d003-9768-46bc-91c8-4e4c55bc8e05"
+    },
+    {
+      "claim_id": "45757a74-4e3a-4fef-a754-e0d513d3c2c1",
+      "result_id": "2017d003-9768-46bc-91c8-4e4c55bc8e05"
+    },
+    {
+      "claim_id": "43186ebd-320b-479e-9234-0afc29630ac2",
+      "result_id": "2017d003-9768-46bc-91c8-4e4c55bc8e05"
+    },
+    {
+      "claim_id": "1d087eed-6e3e-4987-948f-5a50e902b48e",
+      "result_id": "2017d003-9768-46bc-91c8-4e4c55bc8e05"
+    },
+    {
+      "claim_id": "4e72ccd7-877f-4948-b3f5-afb31799e2cf",
+      "result_id": "2017d003-9768-46bc-91c8-4e4c55bc8e05"
+    },
+    {
+      "claim_id": "c5e9728b-1285-4f79-a3c9-29f285febc00",
+      "result_id": "2017d003-9768-46bc-91c8-4e4c55bc8e05"
+    },
+    {
+      "claim_id": "aa21363b-77ec-4fdc-8996-48b6fa4436aa",
+      "result_id": "2017d003-9768-46bc-91c8-4e4c55bc8e05"
+    },
+    {
+      "claim_id": "93634423-a47f-410e-960f-ee020e972c43",
+      "result_id": "2017d003-9768-46bc-91c8-4e4c55bc8e05"
+    },
+    {
+      "claim_id": "5851eb9e-9f09-448d-8515-54298252d2fb",
+      "result_id": "270c7770-f6ca-4f53-b578-319ac714c033"
+    },
+    {
+      "claim_id": "34af2472-1aba-44d0-ac5c-235bef450bf2",
+      "result_id": "270c7770-f6ca-4f53-b578-319ac714c033"
+    },
+    {
+      "claim_id": "c23367fb-ae1f-453d-a794-27b4d8fcdb45",
+      "result_id": "270c7770-f6ca-4f53-b578-319ac714c033"
+    },
+    {
+      "claim_id": "bbe9b1c3-f989-4343-9de3-d0fa6a8b323f",
+      "result_id": "270c7770-f6ca-4f53-b578-319ac714c033"
+    },
+    {
+      "claim_id": "9587d5a4-1154-4026-877f-d2da7ca9685a",
+      "result_id": "270c7770-f6ca-4f53-b578-319ac714c033"
+    },
+    {
+      "claim_id": "f6f4292d-7041-47e4-8e0a-0387f2811d4a",
+      "result_id": "270c7770-f6ca-4f53-b578-319ac714c033"
+    },
+    {
+      "claim_id": "15a0dd72-0b12-4d9d-9a26-5692298f8c91",
+      "result_id": "270c7770-f6ca-4f53-b578-319ac714c033"
+    }
+  ],
+  "comparisons": []
+}

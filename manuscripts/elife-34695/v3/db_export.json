@@ -1,0 +1,1554 @@
+{
+  "submission": {
+    "id": "c0fe521a-f654-4633-a677-ea91a5dff39a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:53:24.962056Z",
+    "updated_at": "2025-12-02T00:53:24.962056Z"
+  },
+  "content": [
+    {
+      "id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "submission_id": "c0fe521a-f654-4633-a677-ea91a5dff39a",
+      "content_type": "manuscript",
+      "content_text": "# Microtubules soften due to cross-sectional flattening\n\n## Authors\n\n- Edvin Memet<sup>1</sup> ([ORCID: 0000-0001-9414-597X](https://orcid.org/0000-0001-9414-597X))\n- Feodor Hilitski<sup>2</sup> ([ORCID: 0000-0001-5629-1407](https://orcid.org/0000-0001-5629-1407))\n- Margaret A Morris<sup>2</sup>\n- Walter J Schwenger<sup>2</sup>\n- Zvonimir Dogic<sup>2</sup> ([ORCID: 0000-0003-0142-1838](https://orcid.org/0000-0003-0142-1838))\n- L Mahadevan<sup>1</sup> ([ORCID: 0000-0002-5114-0519](https://orcid.org/0000-0002-5114-0519)) \u2020\n\n### Affiliations\n\n1. Department of Physics Harvard University Cambridge United States\n2. Department of Physics Brandeis University Waltham United States\n3. Department of Physics University of California, Santa Barbara Santa Barbara United States\n4. Paulson School of Engineering and Applied Sciences Harvard University Cambridge United States\n5. Kavli Institute for Nano-Bio Science and Technology Harvard University Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe use optical trapping to continuously bend an isolated microtubule while simultaneously measuring the applied force and the resulting filament strain, thus allowing us to determine its elastic properties over a wide range of applied strains. We find that, while in the low-strain regime, microtubules may be quantitatively described in terms of the classical Euler-Bernoulli elastic filament, above a critical strain they deviate from this simple elastic model, showing a softening response with increasingdeformations. A three-dimensional thin-shell model, in which the increased mechanical compliance is caused by flattening and eventual buckling of the filament cross-section, captures this softening effect in the high strain regime and yields quantitative values of the effective mechanical properties of microtubules. Our results demonstrate that properties of microtubules are highly dependent on the magnitude of the applied strain and offer a new interpretation for the large variety in microtubule mechanical data measured by different methods.\n\n## Introduction\n\nMicrotubules (MTs) are long slender hollow cylindrical filaments with an approximate inner and outer diameter of 15 nm and 25 nm (Nogales et al., 1999). They are an indispensable structural element in biology, and their mechanical properties play an critical role in defining the shape and functionalities of various cellular architectures including neuronal axons, cilia and flagella, centrioles as well as the mitotic spindle (Howard, 2001). Therefore, a quantitative understanding of their mechanical properties is essential for elucidating the properties of various biological structures and functions (Schaedel et al., 2015; Wells and Aksimentiev, 2010; Schaap et al., 2006). A number of experimental studies have measured either the flexural rigidity ($EI$) or persistence length ($l_{P}$) of MTs, two closely related quantities that determine a filament\u2019s resistance to bending (see Hawkins et al., 2010). However, there is a considerable disagreement between different reported values of MT elastic moduli (Mickey and Howard, 1995), the dependence of the elastic moduli on the presence of stabilizing agents (taxol and GMPCPP), as well as a possible length-dependence of flexural rigidity (Pampaloni et al., 2006; Kis et al., 2002).\n\nIn principle, the properties of microtubules can be measured by either visualizing their intrinsic thermal fluctuations (Gittes et al., 1993; Mickey and Howard, 1995; Pampaloni et al., 2006; Brangwynne et al., 2007; Janson and Dogterom, 2004; Cassimeris et al., 2001) or by applying an external force through optical trapping or hydrodynamic flow experiments (Kikumoto et al., 2006; van Mameren et al., 2009; Van den Heuvel et al., 2008; Venier et al., 1994; Felgner et al., 1996; Kurachi et al., 1995; Dye et al., 1993). Because of significant rigidity of MTs these two types of measurements typically probe different deformation (strain) regimes. Thermally induced fluctuations only induce small strain deformations, while methods that use external forces are more suited to probe the high-strain regime. The existing measurements of microtubule mechanics have been extensively reviewed iteHawkins2010. Careful review of this data shows that the majority of measurements that rely on the filament fluctuations in the low strain regime yield values of microtubule flexural rigidity around , while measurements at high strains, tend to be for similarly prepared MTs (Supplementary file 2).\n\nHere we describe experiments that comprehensively probe the mechanical response of GMPCPP stabilized microtubules across a wide range of imposed strains. Using optical trapping, we attach micron-sized silica beads at different points along a single filament and subject it to tensile and compressive forces. This allows us to construct a force-strain relationship for an individual filament that connects the low and high strain regimes that were probed separately in previous experiments. In the compression region, which corresponds to microtubule bending, the buckling force increases linearly in the initial (low strain) region, but quickly deviates from this trend and saturates at some critical strain, and it gradually decreases at high strain values. Such behavior indicates softening of MTs, an outcome that cannot be captured by the ideal Euler-Bernoulli model. We show that the mechanical response of MTs is well-captured by an anisotropic elastic shell model with three coarse grained elastic parameters (oneshear, and two stretching moduli). Our numerical simulations demonstrate that the softening in the high strain regime can be ascribed to cross-sectional ovalization and eventual buckling, an effect first described for macroscopic hollow cylinders by Brazier (Brazier, 1927; Calladine, 1983). For microtubule filaments in particular, cross-sectional flattening and buckling in response to compressive radial strains has also been described (Kononova et al., 2014).\n\nTo test the validity of our method we calibrate our experiments and theory using a different biological filament - the bacterial flagellum. Similar to microtubules, flagella are long-filamentous cylindrical biopolymers with an outer diameter of $\u223c24$ nm (Yonekura et al., 2003). Furthermore, like microtubules flagella have a hollow core; however, their core diameter is only 2 nm. Therefore flagella should effectively behave as solid cylinders. Most wild-type flagella have a characteristic helical superstructure. We use flagellin monomers isolated from Salmonella typhimurium, strain SJW1660, which have a point mutation in their amino-acid sequence that causes them to assemble into straight filaments (Kamiya et al., 1980). A simple model based on Euler-Bernoullibeams quantitatively describes the measured force curve in all strain regimes. Such measurements validate our experimental method while also providing an estimate of the elastic properties of flagellar filaments that are in reasonable agreement with thefew existing measurements (Louzon et al., 2017; Darnton and Berg, 2007; Fujime et al., 1972).\n\n## Results\n\n### Optical tweezers buckle microtubules\n\nOptical trapping techniques have been used to manipulate and characterize diverse biological systems, including individual biological filaments and their assemblages (van Mameren et al., 2009; Hilitski et al., 2015; Wang et al., 1997; Darnton and Berg, 2007). We use independently controlled optical traps to attach a pair of neutravidin-coated silica beads ($D=1\u2009\\mum$) to a single, segmented partially biotinylated MT filament (Figure 1A). One of the traps - the detection trap - is held stationary and used as a force detector by measuring the displacement of its captured bead with back focal- plane interferometry (see Video 1 of the experiments in supplementary information). The second optical trap - the manipulation trap - is moved in increments of 2\u201320 nm in order to exert a force on the filament, which connects the two beads. Our instrumentation allows us to simultaneously apply an external force with optical tweezers and visualize the filament configuration (Figure 1B). Strain $\u03f5$ is defined as:\n\n$$\n\u03f5=(d_{b}\u2212L)/L.\n$$\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34695/elife-34695-fig1-v3.jpg)\n\n**Figure 1.:** (A) Schematic of the experimental setup for microtubule compression and stretching (note: not to-scale).\u00a0Beads of radius 0.5 $\\mu$m manipulated through optical traps are attached to the filament via biotin-streptavidin bonds. The left trap remains fixed, while the right one is incrementally displaced towards or away. The bead separation $d_{b}$ is different from the trap separation $d_{t}$ due to the displacement between the centers of each bead and the corresponding trap. The force exerted by the traps on the beads is proportional to this displacement, with the constant of proportionality being the optical trap stiffness. The (effective) MT length $L$ is the length between the attachment points of the two beads (but note that multiple bonds may form). The arclength coordinate $s$ is measured from the left attachment point and takes value between 0 and $L$: $0<s<L$. A cross-sectional profile is shown to illustrate our definition of \u2018eccentricity\u2019 or \u2018flatness\u2019 $e=(R\u2212a)/R$ (Equation 4) where $2a$ is the length of the small axis and $R$ is the radius of the undeformed MT cross-section, taken to be $R=12$ nm in our simulations. (B) Series of fluorescence images from microtubule compression experiment. Trap positions represented through red circles of arbitrary size are drawn for illustration purposes and may not precisely represent actual trap positions, since neither beads nor traps are visible in fluorescence imaging. The mobile trap is moved progressively closer to the detection trap in the first four snapshots, resulting in increasingly larger MT buckling amplitudes. The mobile trap then reverses direction, decreasing the buckling amplitude as seen in the last two snapshots. The scale bar represents 5 $\\mu$m, the end-to-end length of the MT is approximately 18 $\\mu$m, and the length of the MT segment between the optical beads is 7.7 $\\mu$m.\n\n![Video 1.](https://cdn.elifesciences.org/articles/34695/elife-34695-video1.mp4.jpg)\n\n**Video 1.:** The microtubule is labeled with fluorescent dye Alexa-647 and is actively kept in the focal plane. The scale bar represents 5 $\\mum$. Approximate positions of the optical traps are shown by red circles of arbitrary size.\n\n![Video 2.](https://cdn.elifesciences.org/articles/34695/elife-34695-video2.mp4.jpg)\n\n**Video 2.:** (left) Simulation of microtubule buckling experiment shown in\u00a0Figure\u00a04, first panel. The length of the microtubule between the optical bead attachment points is 3.6 $\\mum$ while the size of the optical beads is 0.5 $mum$. The shape of the cross-section located halfway along the microtubule is also shown. (right) Force-strain curves from experiment (blue) and simulation (red). The simulation curve is synchronized with the visualization on the left.\n\n![Video 3.](https://cdn.elifesciences.org/articles/34695/elife-34695-video3.mp4.jpg)\n\n**Video 3.:** The scale bar represents 5 $\\mum$. Approximate positions of the optical traps are shown by green circles of arbitrary size. Measured force vector and magnitude are also indicated.\n\nwhere $d_{b}$ is the bead separation once the MT has been deformed, and $L$ is the distance between the beads when there is no force on the MT. The measured force-strain curve exhibits an unexpected feature (Figure 2B). For small deformations, the force increases linearly as a function of the applied strain. Surprisingly, above a critical applied strain ($\u03f5\u223c\u22120.1$) the force-compression curve exhibits a qualitatively different behavior. In this regime the applied force remains flat or in some cases it even declines slightly, even as the strain changes from \u22120.1 to \u22120.5. Filaments subjected to repeated cycles of compression/extension do not seem to exhibit any aging (Figure 2B, inset).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34695/elife-34695-fig2-v3.jpg)\n\n**Figure 2.:** (A) Schematic of spring network model of microtubule.\u00a0Red particles discretize the filament while yellow particles represent the optical beads. Top inset: closeup of a region of the microtubule model, showing the 3D arrangement of the particles. Right inset: further closeup of the region, showing the defined interactions between particles. In the circumferential direction, ten particles are arranged in a circle of radius $R=12\u2009nm$, (only three particles are shown in the inset) with neighboring pairs connected by springs of stiffness $k_{c}$ and rest length $p$ (light green). Neighboring triplets in the circumferential direction form an angle $\u03d5_{c}$ and are characterized by a bending energy interaction with parameter $\u03ba_{c}$ (dark green). In the axial direction, cross-sections are connected by springs of stiffness $k_{a}$ (light blue) running between pairs of corresponding particles. Bending in the axial direction is characterized by a parameter $\u03ba_{a}$ and the angle $\u03d5_{a}$ formed by neighboring triplets (dark blue). All other triplets of connected particles that do not run exclusively in the axial or circumferential direction encode a shearing interaction with energy given by $V_{bend}(\u03ba_{s},\u03d5_{s},\\pi/2)$ (Table 1) with parameters $\u03ba_{s}$ and $\u03d5_{s}$ (yellow), where the stress-free shear angle is $\\pi/2$. (B) Force-strain curve for a microtubule of length 7.1 $\\mum$ from experiment (blue) and simulation using a 1D model (green, dashed) or a 3D model (red). Arrows on the red curve indicate forward or backward directions in the compressive regime. The bending rigidity for the 1D model fit is $B=12pN\\mum^{2}$. The fit parameters for the 3D model are $E_{a}=0.6\u2009$ GPa, $E_{c}=3\u2009$ MPa, and $G=1.5\u2009$ GPa. Errorbars are obtained by binning data spatially as well asaveraging over multiple runs. Inset: Raw data from individual \u2018forward\u2019 (green) and \u2018backward\u2019 (yellow) runs.\n\n### Flagellar filaments exhibit no anomalous softening at high strains\n\nThe softening of microtubules at high-strains is not predicted by simple elastic filament models of microtubule elasticity. A plausible hypothesis is that the hollow core of the microtubules significantly changes the effective elastic properties of the filament. To examine this hypothesis and quantitatively test our experimental method we measured the force-strain curve of bacterial flagellar filaments. As mentioned previously, the hollow core of flagellar filaments is only 2 nm. Therefore, we expect theywill exhibit classical slender-rod-like behavior that should be captured by a one-dimensional filament model.\n\nThe measured strain-force curve of a flagellar filament is qualitatively different from that observed for microtubules (Figure 3B). In both the compression and extension regime, the force monotonically increases. For classical buckling, the amplitude of thedeformed beam scales as $\\sqrt{F\u2212F_{c}}$, where $F_{c}=\\pi^{2}B/L^{2}$ is the classical buckling force (Timoshenko and Gere, 2012). For small deflections, since the strain goes like the square of the amplitude, the force-displacement curve should be roughly linear with strain, starting at $F_{c}$ (albeit growing very slowly). However, for the classical buckling analysis, the compressive force is assumed to apply directly along the centerline of the beam. Experimentally, this is not the case, since the force is exerted on the filament through trapped micron-sized beads, which displace the force contact points away from the beam\u2019s long axis. Therefore to quantitatively compare experiments to theory we numerically solved a more realistic problem that accounts for the entire filament-bead configuration. We also note that the slope in the extension region is higher than that in the compression region. Because the force is not applied along the filament centerline, in response to extensional forces the filament bends in the proximity of the bead attachments point. It is more difficult to bend the filament into such a configuration, hence the larger slope of the extensional regime.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34695/elife-34695-fig3-v3.jpg)\n\n**Figure 3.:** (A) Schematic of spring network model for bacterial flagellum.\u00a0Green particles discretize the flagellum while blue particles represent the optical beads. Right inset: closeup of a region of the filament, showing that neighboring masses are connected by linear springs of stiffness $k$ which give rise to a stretching energy $V_{stretch}(k,l,l_{0})$ according to Equation 2, where $l_{0}$ is the stress-free length of the springs. In addition, each triplet of neighbors determines an angle $\u03d5$ which dictates the bending energy of the unit: $V_{bend}(\u03ba,\u03d5,\\pi)$ (Equation 3). Left inset: closeup of the region where the bead connects to the flagellum. The bead particle is connected to a single particle of the flagellum by a very stiff spring $k_{b}$ of stress-free length $b$ corresponding to radius of the optical bead. In addition, there is a bending interaction $V_{bend}(\u03ba_{b},\u03d5_{b},\\pi/2)$, where $\u03d5_{b}$ is the angle determined by the bead, its connecting particle on the flagellum, and the latter\u2019s left neighbor. (B) Force-strain curve from experiment (blue) and simulation (yellow) for a flagellum of length $L=$ 4.1 $\\mum$. Errorbars are obtained by binning data spatially as well as averaging over multiple runs. The bending rigidity obtained from the fit is $B=4\u2009pN\\times\\mum^{2}$. The classical buckling force for a rod of the same length and bending rigidity with pinned boundary conditions is $F_{c}\u22482.3pN$.\n\nBy tuning a single parameter, flexural rigidity $B$, the force-strain curve obtained from simulations of a 1D filament model can be quantitatively fitted to the experimental data (Figure 3B). In the compressive regime, the data is well fitted by simulationsin which the bending rigidity $B=4pN\\times\\mum^{2}$. Note that the agreement extends to very large strains approaching \u22120.7. The fitting procedure was repeated for eight distinct flagella filaments, yielding flexural rigidity that ranges from 3.2 to 5.25 $pN\\times\\mum^{2}$, with a mean around $4.1\\pm0.6\u2009pN\\times\\mum^{2}$,. Interestingly, this value is close to the value of $3.5pN\\times\\mum^{2}$ and $2.9pN\\times\\mum^{2}$ reported, respectively for the coiled and straight forms of flagella (Louzon et al., 2017; Darnton and Berg, 2007). The magnitude of $B$ suggests that Young\u2019s modulus for the straight flagellum is GPa.\n\n### 3d model explains microtubule softening\n\nQuantitative agreement between experimentally measured force-strain curves of flagellar filaments and simulation results validate our experimental technique, while also demonstrating that the flagellar filaments behave as simple elastic filaments. However, the same one-dimensional model is not capable of reproducing the more complex elastic behavior observed in microtubule filaments. At most, it can describe the low strain regime of the force-compression curve (Figure 2B, green dashed curve). To explain theelastic behavior of microtubules over the entire strain regime we developed a more comprehensive 3D model of microtubules that explicitly accounts for their hollow center. We model the microtubule as a 3D orthogonal network of springs wrapped into a cylinder (Figure 2A). All interactions between particles are defined in terms of a stretching energy $V_{stretch}(k,l,l_{0})$ or a bending energy $V_{bend}(\u03ba,\u03d5,\u03d5_{0})$, where $l$ is the distance between a particle pair, $\u03d5$ is the angle defined by a triplet, and the subscript\u2019 zero\u2019 denotes the separation that minimizes particle interaction energy. Explicitly,\n\n$$\nV_{stretch}(k,l,l_{0})=\\frac{1}{2}k(l\u2212l_{0})^{2},\n$$\n\n\n\n$$\nV_{bend}(\u03ba,\u03d5,\u03d5_{0})=\\frac{1}{2}\u03ba(\u03d5\u2212\u03d5_{0})^{2}.\n$$\n\nNeighboring triplets in the axial and azimuthal directions encode bending energies (Table 1) through the parameters $\u03ba_{a}$ (Figure 2A, dark blue), respectively $\u03ba_{c}$ (Figure 2A, dark green) and equilibrium angles of $\\pi$, respectively $144\\pi/180$. Shearing is encoded by the same type of energy function as bending (Table 1), but with parameter $\u03ba_{s}$ (Figure 2A, brown) and rest angle $\\pi/2$: $V_{shear}(\u03ba_{s},\u03d5_{s})=V_{bend}(\u03ba_{s},\u03d5_{s},\\pi/2)$. The shearing interaction is defined for any triplet of neighbors that are not all along the axial or azimuthal directions. The microtubule-optical bead contact is modeled via parameters $k_{b}$ and $\u03ba_{b}$, which are made sufficiently large to enforce the constraints of inextensibility and fixed attachment point. The relationship between these microscopic parameters and the macroscopic parameters $E_{a}$, $E_{c}$, and $G$ (axial Young\u2019s modulus, circumferential Young\u2019s modulus, and shear modulus) can be derived based on the planar spring-network model and the orthotropic elastic shell model (Sim and Sept, 2013; Wang et al., 2006) and are shown in Table 1.\n\n**Table 1.**\n List of microscopic parameters for the 3D model, their physical significance, the energy functional associated with them (Equation2 or Equation 3), and their connection to the relevant macroscopic elastic parameter.Parameters, angles, and lengths are highlighted in Figure 2A. where $h\u22482.7\u2009$ nm and $h_{0}\u22481.6\u2009$ nm are the microtubule\u2019s thickness and effective thickness (see Materials\u00a0and\u00a0methods), respectively and factors involving the Poisson ratios $\u03bd_{a}$ and $\u03bd_{c}$ are neglected.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Microscopic</th>\n      <th>Physical</th>\n      <th>Associated</th>\n      <th>Relation to</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Parameter</td>\n      <td>Significance</td>\n      <td>Energy</td>\n      <td>Macroscopic moduli</td>\n    </tr>\n    <tr>\n      <td>ka</td>\n      <td>Axial stretching</td>\n      <td>12ka(la\u2212d)2</td>\n      <td>Eahpd</td>\n    </tr>\n    <tr>\n      <td>\u03baa</td>\n      <td>Axial bending</td>\n      <td>12\u03baa(\u03d5a\u2212\u03c0)2</td>\n      <td>16Eah03pd</td>\n    </tr>\n    <tr>\n      <td>kc</td>\n      <td>Circumferential stretching</td>\n      <td>12kc(lc\u2212p)2</td>\n      <td>Echdp</td>\n    </tr>\n    <tr>\n      <td>\u03bac</td>\n      <td>Circumferential bending</td>\n      <td>12\u03bac(\u03d5c\u2212144\u03c0/180)2</td>\n      <td>16Ec\u00a0h03d/p</td>\n    </tr>\n    <tr>\n      <td>\u03bas</td>\n      <td>Shearing</td>\n      <td>12\u03bas(\u03d5s\u2212\u03c0/2)2</td>\n      <td>2G\u2009hpd</td>\n    </tr>\n  </tbody>\n</table>\n\nThe 3D microtubule model quantitatively explains the softening that is observed in experimentally measured force-strain curves of microtubules. Overall we investigated the properties of 10 different filaments with lengths between 3 and 15 $\\mum$ (Figure 4) and fitted 10 different force-strain curves to our theoretical model. Fitting each measurement curve yields independent yet consistent estimates of the Young\u2019s modulus in axial and circumferential directions, $E_{a}$, $E_{c}$, as well as the shear modulus, $G$. We obtain $E_{c}$ that varies between 3\u201310 MPa, and $E_{a}$ between 0.6\u20131.1 GPa, which is in reasonable agreement with values reported in the literature (see Discussion). This observation confirms that microtubules are highly anisotropic materials. Interestingly, our values for shear modulus, $G$, are in the GPa range (Table 2), which is significantly higher than the largest values reported in the literature. This likely indicates that the microtubule deformations in our experiments are large enough to reach the point of deforming the tubulin units themselves rather than the bonds between them (see Discussion).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34695/elife-34695-fig4-v3.jpg)\n\n**Figure 4.:** Plots of force $F$ as a function of strain $\u03f5$ (Equation\u00a01) for microtubules ranging in length from $3.6$ to $11.1\\mum$ (blue).Best-fit curves from simulation of the 3D model (red) and fit parameters (top) are shown for each plot. Arrows on the red curves indicate forward or backward directions in the compressive regime.\n\n**Table 2.**\n Range of macroscopic elastic parameters that fit experimental data for microtubules and flagella.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>System</th>\n      <th>Fit parameters</th>\n      <th>Range that fits data</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>Ea</td>\n      <td>0.6\u20131.1 GPa</td>\n    </tr>\n    <tr>\n      <td>Microtubule</td>\n      <td>Ec</td>\n      <td>3\u201310 MPa</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>G</td>\n      <td>1.5\u20136 GPa</td>\n    </tr>\n    <tr>\n      <td>Flagellum</td>\n      <td>B</td>\n      <td>3\u20135 pN\u03bcm2</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cross-sections flatten and eventually buckle\n\nWith quantitative agreement between experiments and theory we are in a position to elucidate the microscopic origin of the microtubule softening at high strains. The decrease in the buckling force is directly associated with ovalisation of the microtubulecross-section. Plotting the microtubule cross-section at different deformation strains effectively demonstrates this effect. Figure 5A show the force-strain data for a microtubule of length 8.3 $\\mum$. The point labeled a is close to the boundary of the region where the 1D model (Figure 5A, green dashed line) fails, while points b and c are both inside the high-strain non-classical regime. The large inset shows a snapshot of the simulatedmicrotubule corresponding to point c and smaller insets show cross-sectional profiles at indicated locations. While cross-sectional deformations vanish at the endpoints (i.e. at the locations of the optical beads, shown in blue), deformations in the interior are considerable.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/34695/elife-34695-fig5-v3.jpg)\n\n**Figure 5.:** (A) Force-strain curve for a microtubule of length 8.3 $\\mum$ from experiment (blue) and simulation using a 1D model (green, dashed) or a 3D model (red).\u00a0Arrows on the red curve indicate forward or backward directions in the compressive regime. Errorbars are obtained by binning data spatially as well as averaging over multiple runs. The fit parameters for the 3D model are $E_{a}=0.9\u2009$ GPa, $E_{c}=4\u2009$ MPa, and $G=4\u2009$ GPa. The bending rigidity for the 1D model fit is $B=23pN\\mum^{2}$. Labels a, b, and c indicate specific points in the 3D simulation model. (inset) Snapshot from simulation corresponding to the point labeled c. Smaller insets show the shape of the cross-section at indicated points. (B) Profiles of flatness $e$ (Equation 4) along the dimensionless arclength coordinate $s^=s/L$ (see Figure 1A) at points identified in panel A as a (green), b (blue), and c (red). Three insets show the shape of the cross-section at indicated points for the curve labeled c (red). A fourth inset shows the curvature profiles corresponding, by color, to the flatness profiles in the main figure.\n\nTo quantify the cross-sectional deformation profiles more explicitly, we define a measure of cross-sectional eccentricity as:\n\n$$\ne=\\frac{R\u2212a}{R},\n$$\n\nwhere $a$ is semi-minor axis (Figure 1A) and $R=12$ nm is the radius of the undeformed microtubule cross-section. $e=0$ corresponds to a circular cross-section, while larger values of $e$ correspond to increasingly flatter cross-sections. The cross-sectional profile of a buckled filament in the low-strain regime (point a in Figure 5A) has $e\u22480$ almost everywhere (Figure 5B, green line), reflecting the fact that the simplified 1D model (Figure 5A, green dashed line) semi-quantitatively predicts the applied force. Point b in Figure 5A marks the onset of the high-strain regime. Here the flatness $e$ measurably deviates from its undeformed value. Noticeably, $e$ also varies along the filament contour length, attaining largest distortions at the filament midpoint (Figure 5B, blue line line). The significant cross-sectional deformations in the high-strain regime demonstrate that the non-classical behavior of force with compressive strain in microtubules isindeed due to cross-sectional flattening. The location of the force plateau is highly sensitive on the circumferential Young\u2019s modulus, $E_{c}$, and significantly less on the other parameters. Increasing $E_{c}$ shifts the onset of the plateau towards larger compressive strains, eventually leading to its disappearance.\n\nIt is well-established that local cross-sectional buckling (kinking) can occur in a thin-walled tube because of cross-sectional ovalization (Huang et al., 2017). This is indeed what we observe - the cross-section is circular (Figure 5B, green and blue curves) until a critical bending moment is reached. The blue curve in Figure 5B represents the profile right before the local buckling transition; afterwards, a sharp increase in $e$ takes place at the middle, representing the development of a kink. With further compression, subsequent kinks can develop - one at a time - in its vicinity. The red curve in Figure 5B, for example, shows five kinks (visible as spikes in the flatness profile) in the microtubule configuration corresponding to the point labeled esc in Figure 5A. The inset in Figure 5B shows that the corresponding curvature profiles effectively mirror the flatness profiles in the main figure. Thus, discontinuities in the curvature profile of a filament signal the existence of cross-sectional ovalization and eventual kinking. In simulations, the formation of kinks can be identified directly from the force-strain plots as a small drop in the buckling force (Figure 5A, red). Indeed, hysteresis associated with forward and backward compressionis observed in simulations in which the filament forms kinks. The often observed persistence of hysteresis at very low strains, as seen in Figures 2B, 4 and 5, is likely a simulation artefact, due to the lattice getting trapped in a local minimum; the addition of thermal noise either eliminates hysteresis or eliminates its low-strain persistence. Experimental data is too noisy to draw any conclusions regarding the presence or absence of hysteresis.\n\n### Critical curvature is relatively small\n\nThe critical bending moment $M_{B}$ at which a hollow tube becomes unstable, leading to local collapse and kinking, is given by (Brazier, 1927):\n\n$$\nM_{B}\u2248\\frac{2\\sqrt{2}\\pi}{9}h^{2}RE,\n$$\n\nwhere $h$ is the tube thickness, $R$ is the radius, and $E$ is its elastic modulus. Brazier\u2019s result applies to isotropic, infinitely long tubes. It has been extended to orthotropic materials (Huang et al., 2017) by replacing $E$ with the geometric mean of $E_{a}$ and $E_{c}$ and to finite-length tubes by including a numerical correction factor (Takano, 2013), so that we expect the following scaling for $M_{B}$:\n\n$$\nM_{B}\u223ch^{2}R\\sqrt{\\frac{E_{a}E_{c}}{1\u2212\u03bd_{a}\u03bd_{c}}}\u223ch^{2}R\\sqrt{E_{a}E_{c}}.\n$$\n\nTo understand this result, we first carry out simulations after subtracting the energy due to shear deformations and compute a \u2018modified\u2019 force as the derivative of all energies except for the shear energy. This modified force is then used to calculatea modified, shear-agnostic, critical bending moment. Multiplying force computed this way by the maximum vertical displacement of the filament yields the value of $M_{B}$ observed in simulation (Figure 6, vertical axis), which we compare to values of $M_{B}$computed according to Equstion 6 using a numerical factor of unity (Figure 6, horizontal axis). We confirmed the scaling predicted in Equation 6 by running additional simulations, varying the length of the microtubule $L$, their elastic moduli $E_{a}$, $E_{c}$, and $G$, and the size of the trapped bead beyond the typical range of our experiments (see Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/34695/elife-34695-fig6-v3.jpg)\n\n**Figure 6.:** (bottom) Expected (Equation 6, with a numerical factor of unity) versus observed critical bending moments $M_{B}$ of simulated microtubules of various lengths, elastic moduli, and optical bead sizes.Data points that correspond to actual experimental parameters are marked with stars, while the rest are marked with black circles. The shaded region is zoomed-in on (top), to show that most experimental points fall in the range about 1000\u20132000 $pN\\timesnm$.\n\nOur experimental results (Figure 6, stars) suggest that the critical bending moment is generally in the range $M_{B}\u2248$1000\u20132000 pN nm. This approximate range of the critical bending moment enables us to estimate the critical curvature at which softening occurs (as curvatures may be more easily extracted from experiments). Upon Brazier buckling, the curvature profile spikes at the location of the kink(s), just like the flatness profile (Figure 5B, inset), showing the correspondence betweencritical curvature and critical bending moment. Values of $M_{B}$ of around 1000\u20132000 pN nm imply a critical curvature for the onset of softening on the order of 0.1 rad / $\\mum$, given a bending rigidity $B$ of $\u223c$10\u201320 pN $\\times\\mum^{2}$. This estimate is confirmed by simulations, which show that the critical curvature at the onset of the Brazier buckling is close to 0.2 rad / $\\mum$for seven of eight experimental datasets (and 0.3 for the other dataset). Such values are small enough that they are likely reached and exceeded at least in some systems both in vivo, as in the beating flagella of Chlamydomonas (Sartori et al., 2016; Geyer et al., 2016) and in vitro, as in microtubule rings observed in gliding assays (Liu et al., 2011).\n\n## Discussion\n\nUsing optical trapping we have determined the mechanical properties of microtubules by measuring how the strain changes with an applied extensile/compressive force. We found that the force required to buckle the filament levels off or decreases with increasing compressive strain, demonstrating that microtubules significantly soften above a critical strain. Such non-classical behaviors are quantitatively captured by overdamped molecular dynamics simulations of an orthotropic cylindrical shell model. The simulations reveal that microtubule softening is a consequence of cross-sectional deformations enabled by a small circumferential Young\u2019s modulus of a few MPa.\n\n### MT softening could explain large variation of bending rigidity results\n\nWhile it is known that MTs do not behave as isotropic Euler-Bernoulli slender rods - since, for instance, lateral bonds between adjacent protofilaments are much weaker than longitudinal bonds along protofilaments (Nogales et al., 1999; VanBuren et al., 2002; Huang et al., 2008) -many groups have used the Euler-Bernoulli beam model to interpret their data (Kikumoto et al., 2006; Brangwynne et al., 2006; Li, 2008; Takasone et al., 2002; Jiang and Zhang, 2008). Introducing a shear degree of freedom to the Euler-Bernoulli beam results in a Timoshenko beam model. This model remains inadequate, however, since it does not allow for anisotropy between the axial and circumferential directions, which is substantial and plays an important role in the mechanical behavior of MTs (Deriu et al., 2010; Huang et al., 2008; Tuszy\u0144ski et al., 2005). Clearevidence supporting this assertion comes from experiments in which microtubules subject to osmotic pressure buckle radially at very low critical pressures ($\u223c600$ Pa) \u2013 over four orders of magnitude lower than what is expected for an isotropic shellwith $E\u223c1$ GPa (Needleman et al., 2005). More sophisticated models of MTs as anisotropic elastic cylindrical shells allow for an additional degree of freedom in the radial direction and can be found in papers that examine MT persistence length (Sim and Sept, 2013; Deriu et al., 2010; Ding and Xu, 2011; Gao et al., 2010), oscillation modes (Kasas et al., 2004), response to radial indentation (Huang et al., 2008), or buckling under osmotic pressure (Wang et al., 2006).\n\nDespite numerous studies on microtubule mechanics, considerable disagreement continues to persists regarding their coarse-grained elastic properties, including their bending rigidity or shear modulus (Hawkins et al., 2010). It is even unclear whether bending rigidity depends on the MT length or not (see, for example, [Pampaloni et al., 2006; Kis et al., 2002; Deriu et al., 2010; Zhang and Meguid, 2014] versus [Gittes and Schmidt, 1998; Kikumoto et al., 2006; Van den Heuvel et al., 2008]). Some of the disparity in measured elastic properties can be attributed to the variations in theexperimental protocols that could affect density of defects and filament heterogeneity as well as the number of microtubule protofilaments (Zhang and Meguid, 2014). Furthermore, different methods of stabilizing microtubules could also affect their coarse-grainedproperties. However, our work suggests that a significant source of variation could arise for a more fundamental reason, especially when interpreting results on mechanically deformed filaments. This is because theoretical models used so far to analyze properties of mechanical MT experiments may lack sufficient complexity to accurately describe all deformation regimes, and experiments that rely on the mechanical interrogation techniques have rarely if ever simultaneously explored the behavior of filaments in both large and small deformation regimes. In such a case, the force-strain curves are frequently measured only at high strains and thus leads to significant errors when extrapolated across all strain regimes using overly-simplistic Euler-Bernoulli or Timoshenko beam models. This methodology can significantly underestimate the microtubule persistence lengths that are measured using applied mechanical deformations. Indeed, a comprehensive summary of experimental results on MT flexural rigidity (Hawkins et al., 2010) strongly supports this interpretation: for example, the average flexural rigidity of Taxol stabilized MTs found via thermal fluctuations is more than twice as large as the average rigidity found from force-based experiments.\n\n### Large shear modulus likely reflects physical deformation of tubulin units\n\nFitting experimentally measured force-strain curve to our theoretical model provides an estimate of the microtubule elastic moduli $E_{a}$, $E_{c}$, and $G$ (Table 2), which can be compared to values reported in the literature. The range of axial Young\u2019s moduli $E_{a}$ that fits our experiments is 0.6\u20131.1 GPa, consistent with values of 0.5\u20132 GPa reported previously in the literature (Deriu et al., 2010; Enemark et al., 2008; Wells and Aksimentiev, 2010; Sept and MacKintosh, 2010). Similarly, we find $E_{c}$ between 3\u201310 MPa, which is consistent with figures of a few MPa reported by some groups (Wang et al., 2006; Tuszy\u0144ski et al., 2005), though other groups also report $E_{c}$ on the order of 1 GPa (Zeiger and Layton, 2008; Schaap et al., 2006). The discrepancy can be reconciled by noting that small radial deformations only impactthe weak bridges between adjacent protofilaments, while larger ones may deform the tubulin dimers, which, like typical proteins, have a high stiffness in the GPa range (Huang et al., 2008; Pampaloni et al., 2006; Needleman et al., 2005).\n\nWe also extract the microtubule shear modulus $G$, which assumes values of a few GPa (Table 2), which is significantly larger than values reported in the literature (which can vary by as much as five orders of magnitude) from around 1 (Pampaloni et al., 2006), to 1 MPa (Kis et al., 2002), up to 100 MPa (Deriu et al., 2010; Ding and Xu, 2011; Sept and MacKintosh, 2010). This is surprising, since it is well-established that microtubule lateral bonds are very compliant; a small shear modulus is believed to potentially help the microtubule correct defects in assembly by shifting the offset between protofilaments during the nucleation phase (Sim and Sept, 2013). However, inter-protofilament bonds may be very compliant for small deformations (on the 0.2 nm scale), while larger deviations may approach the limit of physically deforming the tubulin units (Pampaloni et al., 2006). Following estimates in (Pampaloni et al., 2006), a strain on the order of \u22120.01 would lead to deformations on the 0.2 nm scale, while our experiments routinely go up to much larger strains around \u22120.2. Therefore, it\u2019s likely that the large values we obtained for shear modulus are due to large shear deformations that surpass the elastic limits of inter-protofilament bonds.\n\nNotably, sufficiently large deformations can induce (reversible) breaking of lateral contacts between protofilaments and eventually even of longitudinal contacts between subunits in a protofilament as observed in radial indentation simulations (Kononova et al., 2014; Jiang et al., 2017) and corroborated with scanning force microscopy experiments (Schaap et al., 2004). Therefore, contact breaking may constitute an alternate or co-occurring reason for the large shear modulus obtained from fitting our experimental data. Thisis supported by comparable values of bending rigidity emerging from radial indentation simulations in (Kononova et al., 2014) (25 pN $\\times\\mum^{2}$) and from the current paper (10\u201320 pN $\\times\\mum^{2}$ where flattening and buckling become noticeable).\n\n### Softening may occur in parameter ranges typical of typical biological systems\n\nOur experimentally measured force-strain curves imply that the critical curvature for the onset of Brazier buckling is relatively small, around 0.2 rad /$\\mum$. Such curvatures are frequently observed in both in vitro and in vivo systems. For example, long-lived arcs and rings observed in microtubule gliding assays (Liu et al., 2011; Bourdieu et al., 1995) have curvatures between 0.4\u20132 rad /$\\mum$. From a different perspective, microtubules are the essential structural motif of diverse non-equilibrium materials including active isotropic gels, nematic liquid crystals, motile emulsions and deformable vesicles (Sanchez et al., 2012; Keber et al., 2014). The rich dynamics of all these systems is driven by the buckling instability of microtubule bundles that is driven by internal active stress generated by kinesin motors. In some systems the curvature associated with this buckling instability is large enough for microtubule softening to be relevant.\n\nIn living organisms, the static curvatures of the quiescent eukaryotic flagella, such as those found in Chlamydomonas Reinhardtii, are about 0.25 rad /$\\mum$ (Sartori et al., 2016) while the oscillating dynamic component can increase the curvature up to about 0.6 rad /$\\mum$ (Geyer et al., 2016), although presence of numerous microtubule associated proteins could significantly alter filament\u2019s mechanical properties. Furthermore, diverse active processes within a cellular cytoskeleton are also capable of generating highly curved microtubule configurations (Brangwynne et al., 2006). We may thus speculate about the biological significance of MT softening, with one hypothesis being that it decreases MT susceptibility to mechanical failure or depolymerization (Mohrbach et al., 2012).\n\nThe majority of other previous experiments have only examined the properties of stabilized microtubules which do not polymerize/depolymerize on relevant timescales. In comparison, a recent significant advance examined mechanical properties of dynamical microtubules that coexist with a background suspension of tubulin dimers (Schaedel et al., 2015). In particular, this study demonstrated that repeated large-scale deformations locally damage microtubules, which leads to effectively softer filaments. This damageis accompanied by a loss of tubulin monomers. Furthermore, after the external force ceases the damaged filaments effectively self-repair, as the tubulin monomers from the background suspensions incorporate back into the damaged regions. In comparison, here we study stabilized filaments that do not show any aging phenomena. However, it seems plausible that the ovalization and the formation of kinks is also relevant to dynamical microtubules, and the regions of high strain might be the location where monomers preferentially dissociate from filament.\n\nIt is also worth noting that the softening of microtubules we observe is analogous to phenomena that have already been observed and quantified in carbon nanotubes (e.g. see reviews by [Thostenson et al., 2001; Wang et al., 2007]). In particular, experiments demonstrate the formation of a single kink, followed by a multiple kink pattern upon further bending (Iijima et al., 1996), while simulations predict a reduction in effective nanotube stiffness, as the buckling force drops and remains almost constant after kinking eYakobson1996. Hysteresis due to plastic deformations triggered by kinking events has also been observed, at least in the case of multi-walled carbon nanotubes (Jensen et al., 2007). Stiffness variations of carbon nanotubes arise from deformation modes which cannot be explained by simple Euler-Bernoulli or Timoshenko rod models.\n\nIn conclusion, we have found that micron-long microtubules subject to buckling forces of a few pN become more mechanically compliant at relatively low strains due to significant cross-sectional deformations and subsequent buckling. This result seems biologically relevant, as the critical curvatures for the softening transition are surpassed, for instance, in the beating of Chlamydomonas flagella. Additionally, the softening of MTs with increasing strain provides an explanation for the discrepancy between values of flexural rigidity inferred by passive (thermal fluctuations) versus active methods, since the latter typically access higher strains and thus infer effectively lower rigidities. Despite the complex nature of microtubules, we found that their mechanical properties - at least as concerning buckling experiments via optical trapping - can be quantitatively summarized by three elastic moduli, even for very large strains, and need to be accounted for to explain observations that arise naturally in many biological systems.\n\n## Materials\u00a0and\u00a0methods\n\n### Tubulin and microtubule polymerization\n\nTubulin was purified from bovine brain tissue according to the established protocol (Castoldi and Popov, 2003). We conjugated two fluorescent dyes: Alexa Flour 568 NHS Ester (Life Technologies, A-20006), Alexa Flour 647 NHS Ester (Life Technologies, A-20003) orbiotin-PEG-NHS (Thermo Scienti1c, 20217) to tubulin as described previously (Hyman et al., 1991). We prepared NEM-modified tubulin by incubation of unmodified dimers at a concentration of 13 mg/ml with 1 mM NEM (N-Ethylmaleimide, Sigma, E3876) and 0.5 mM GMPCPP (Jena Bioscience, NU-405S) on ice for 10 min and then quenching the reaction with 8 mM beta-mercapthoethanol (Sigma, M6250) for another 10 mins (Hyman et al., 1991). All labeled and unlabeled tubulin monomers were stored at \u221280$^{\u2218}$C.\n\n### Bead functionalization\n\nCarboxyl silica microspheres (d\u00a0=\u00a00.97 $\\mum$, Bangs Labs SC04N/9895) were coated with NeutrAvidin-DyLight488 conjugate (Thermo Scientific, 22832) by incubating the mixture of beads and protein at pH\u00a0=\u00a08.0 in presence of N-Hydroxysuccinimide (NHS, Sigma, 130672) and N-(3-Dimethylaminopropyl)-N\u2019-ethylcarbodiimide hydrochloride (EDC, Sigma, E6383). The use of fluorescently labeled protein allows the bead to be imaged with fluorescence microscopy in order to verify Neutravidin presence on the surface. However, this is not always desirable. We have tested the protocol with a number of Neutravidin and Streptavidin proteins from various suppliers (Sigma, Thermo Fisher) and concluded that the protein attachment to the surface is reliable and reproducible.\n\n### Buffer solutions\n\nMicrotubules (MTs) were polymerized in the M2B buffer that contained 80 mM PIPES (Sigma, P6757), 2 mM MgCl 2, 1 mM EGTA (Sigma, E3889) and was titrated to pH\u00a0=\u00a06.8 with KOH. As a result of titration with potassium hydroxide, the buffer contained 140 mM of K\u00a0+\u00a0ions. In order to extend the range of accessible ionic strength in the solution, we used M2B- 20 buffer that contained 20 mM PIPES, 2 mM MgCl 2, 1 mM EGTA and was titrated to pH\u00a0=\u00a06.8 with KOH. As a result of titration with potassium hydroxide, the buffer contained $\u223c$35 mM of K\u00a0+\u00a0ions. Oxygen scavenger solution was prepared immediately before use by combining equal volumes of solutions of glucose (Sigma, G7528), glucose oxidase (Sigma, G2133) and catalase (Sigma, C40). Resulting mixture was dilutedinto the final sample in order to achieve the following concentrations: 40 mM Glucose, 250 nM glucose oxidase, 60 nM catalase (Gell et al., 2010).\n\n### Microscopy and optical trapping\n\nThe position of the detection bead is sampled with the QPD at a rate of 100 KHz and averaged in bins of 1000 samples, effectively resulting in a sampling rate of 100 Hz, that\u00a0is about 100 times per step. The force on the detection bead is obtained by multiplying the displacement of the bead by the stiffness $k_{o}$ of the optical trap.\n\nAll experiments required simultaneous use of fluorescence and brightfield microscopy modes, as well as optical trapping. We used an inverted Nikon Eclipse TE2000-U with Nikon PlanFlour 100x oil-immersion objective (NA\u00a0=\u00a01.3) equipped with the epifluorescence illumination arm, either a mercury-halide (X-Cite 120Q) or LED (Lumencor SOLA) light source, and an appropriate set of filter cubes (Semrock). In order to have multiple independently controlled optical traps we used an optical bench set-up based on two acousto-optical deflectors (AODs) - see (Ward et al., 2015). Briefly, the AOD consists of a transparent crystal, in which an acoustic wave is inducedby applied radio-frequency (RF, several MHz) electric current. The incoming laser beam interacts with the traveling sound wave and is deflected at a small angle, which depends on the RF current frequency. When the AOD crystal is imaged onto the back focal plane of a microscope objective, deflection of the beam is converted into translation of the focused laser spot in the focal (specimen) plane. By combining two AODs with perpendicular orientation, one can achieve precise control of the laser trap position in two dimensions within the focal plane of the microscope Molloy1997.\n\nIn our set-up, laser beam from a continuous infrared laser (1064 nm, Coherent Compass CW IR) is expanded and sent through the AOD (Intra-Action Corp., Model DTD-276HD2). The deflected beam is sent through a set of telescope lenses into the objective. The deflection angle of the AOD is controlled by custom LabVIEW software, which allows for positioning of optical traps in the x-y plane with nanometer precision.\n\nIn order to calibrate the optical traps, the setup was equipped with a separate laser (830 nm, Point Source iFlex 2000) and a quadrant photodiode (QPD) detection system (Simmons et al., 1996). Voltage readings from the QPD, which are directly proportional to the bead x and y coordinates, were obtained with 100 kHz frequency. The voltage readings were Fourier transformed and the trap stiffness was obtained from the Lorentzian fit to the power spectrum (Berg-S\u00f8rensen and Flyvbjerg, 2004; Gittes and Schmidt, 1998)\n\n### Bead attachment\n\nWe follow bead-microtubule attachment protocols very similar to those in the literature (van Mameren et al., 2009; Kikumoto et al., 2006). We prepare segmented microtubules in which short regions (seeds) are labeled with biotin. The biotinylated seeds and the biotin-free elongated segment are labeled with two different fluorescent dyes, which allows us to distinguish them and attach the Neutravidin-coated silica beads to the biotin labeled MT seeds through manipulations with laser tweezers (Figure 1A). Presence of biotin either throughout the filaments or in localized segments does not affect the measured single filament buckling force. For the case of the bacterial flagella, we labeled the entire filament with the fluorescent dye and biotin. In the end, our experiments seem consistent with an essentially rigid microtubule-bead attachment. We note that a finite range of bead movement or rotation relative to the attachment point would appear as a flat region near zero strain in the force-strain curve, which we do not observe.\n\n### Force averaging\n\nTrap separation is controlled by acousto-optical deflectors (AODs), and changed in discreet steps of 2\u201310 nm every 0.5\u20131 s. For a given trap separation, the force on the detection bead is obtained by multiplying the displacement of the bead (from the center of the optical trap) with the stiffness of the calibrated optical trap. The position of the detection bead is sampled with a quadrant photodiode (QPD) at a rate of 100 KHz and averaged in bins of 1000 samples, effectively resulting in a sampling rate of 100 Hz. Since trap separation is changed every 0.5\u20131 s, the force on the bead is measured 50\u2013100 times at a given distance. Several cycles of buckling and extension (\u201dback-and-forth runs\u2019) are performed for a given filament so that in the end, the raw force data is binned by trap separation and the average and standard deviation of the force in each bin are computed. Notably, then, force is averaged both over time and over multiple runs.\n\nThe minimum in the force-displacement curve separates the tensile and the compressive regimes and allows us to determine the equilibrium bead separation of the beads, that\u00a0is the effective length $L$ of the filament segment being actively stretched or buckled. Due to thermal fluctuations and other noise, experimentally measured forces fluctuate in direction (and magnitude). Since fluctuations in the direction perpendicular to the line connecting the optical traps average out to zero, the forces reported in our manuscript are the parallel components. In the manuscript, we present force - averaged and projected as explained - in terms of strain corresponding to bead separation, rather than optical trap separation (the schematic in Figure 1A illustrates the distinction). We compute bead separation from trap separation, measured force, and optical trap stiffness.\n\n### Simulations of flagellar buckling\n\nTo quantitatively describe the measured force-strain curve, the flagellar filament is modeled as a collection of $N$ masses connected to their neighbors with very stiff linear springs of constant $k$ (Figure 3A, right inset, blue). Bending energy of a triplet is encoded by a parameter $\u03ba$, and $\u03d5$, the angle determined by the triplet (Figure 3A, right inset, red) according to Equation 3. The trapped beads are represented as masses connected to their attachment points by springs of stiffness $k_{b}$ and rest length equal to the radius of the bead $b$. The optical beads are enforced to remain normal to the filament at the attachment point by defining a bending energy $V_{bend}(\u03ba_{b},\\pi/2)$ with a sufficiently large $\u03ba_{b}$ and rest angle $\\pi/2$ for the triplet consisting of the bead, its attachment point, and a neighboring mass (Figure 3A, left inset).\n\nSince the flagellum and the bead are essentially inextensible, $k$ and $k_{b}$ are set to values which are sufficiently large to essentially establish them as fixed parameters. The same is true for $\u03ba_{b}$, as explained above, and for the number $N$ of beads used that make up the flagellum. Thus, the only free parameter is $\u03ba$, which is related to flexural rigidity $B$ as follows:\n\n$$\n\u03ba=\\frac{BN}{L}.\n$$\n\n### Simulations of microtubule buckling\n\nTo fit experimental data for microtubules we model them as 3D networks of springs and simulate their quasistatic, overdamped mechanical response via the molecular dynamics software Espresso (Arnold et al., 2013; Limbach et al., 2006)\n\nIn vivo, MTs most commonly appear with 13 protofilaments (although there are exceptions depending on the cell type), whereas in vitro structures with 9\u201316 protofilaments have been observed (Mohrbach et al., 2012). Since the exact structure of microtubules can vary and since it has been shown that protofilament orientation is not important with respect to mechanical properties (Hunyadi et al., 2007; Donhauser et al., 2010), we consider the simplest case of 10 aligned protofilaments. Because microtubule monomers are composed of alpha- and beta-tubulin, they can contact other monomers laterally through alpha-alpha, beta-beta, or alpha-beta interactions. While there are differences in these interactions (and generally, in the mechanical properties of alpha- and beta-tubulin), they are relatively small so that it is safe to neglect these differences (Sim and Sept, 2013; Zhang and Meguid, 2014).\n\nThe microtubule is modeled as a planar spring network network wrapped into a cylindrical shell (Figure 2A). Energies are of two types: stretching energies $V_{stretch}$ (Equation 2) determined by the distance between pairs of particles connected by springs, and bending energies $V_{bend}$ (Equation 3) determined by the angle formed by neighboring triplets. Anisotropy is achieved by setting independent parameters $k_{a}$, $\u03ba_{a}$ and $k_{c}$, $\u03ba_{c}$ for the bending and stretching energies in the axial and circumferential directions, respectively (Figure 2A). The parameter $d$ (the distance between consecutive simulated dimers along the same protofilament) can set the level of coarse-graining, with $d\u22488\u2009nm$ for real microtubules. The distance between dimers at the same cross-section is denoted by $p=2R\u2009sin(\\pi/10)$.\n\nTable 1 shows the relationship between the microscopic parameters of the model and the three corresponding macroscopic elastic constants $E_{a}$, $E_{c}$ and $G$. The formulas are based on the orthothropic elastic shell model and involve an \u2018equivalent\u2019 thickness $h$ and a \u2018effective\u2019 thickness for bending $h_{0}$. The reason for this duality is that the actual thickness of the cross section of a microtubule varies periodically along the circumferential direction, between a minimum of about 1.1 nm (the \u2018bridge\u2019 thickness) and a maximum of about 4\u20135 nm (Huang et al., 2008). When modeled as a shell of uniform thickness, the actual cross section of a microtubule is replaced by an annular cross section with equivalent thickness $h\u22482.7\u2009$ nm (de Pablo et al., 2003). However, the effective bending stiffness is different; since most of the strain is localized to the bridges between the protofilaments (Schaap et al., 2006), the effective bending stiffness is closer to the bridge thickness. According to (de Pablo et al., 2003; Schaap et al., 2006), $h_{0}\u22481.6\u2009$ nm.\n\nIt must be noted that microtubules are not exactly thin shells, while the formulas shown in Table 1 apply in that limit. As a consequence, the numerical factors in the formulas are not precisely correct. Because of this, the formulas need to be adjusted by numerical factors; we do so by considering, for instance, a basic shear deformation, computing its elastic strain energy and adjusting the numerical factor to ensure agreement between the energy computed in the simulation and the theoretical energy. Interestingly, the orthotropic shell model does not contain an energy penalty for cross-sectional shearing. In simulations, this leads to an unphysical instability which can be resolved, for instance, by running the simulation at very high damping (which would, however, greatly increase the runtime). A faster way of resolving this artifact is to stabilize the microtubule in the lateral direction, effectively not allowing its centerline to break lateral symmetry by going out of plane.\n\nEach optical bead is represented by a particle connected to a single particle on the microtubule by a very stiff spring as well as a very stiff angle interaction aimed at keeping the \u2018bead\u2019 perpendicular to the attachment point. The left bead is fixed, while the right one is free to move. Starting with the filament unstretched, we move the mobile bead in small increments $dx$. After each move, we fix the position of the bead and allow the system to relax. The relaxation time is (Gittes et al., 1993):\n\n$$\n\\tau_{relax}\u223c\\frac{\\gammaL^{4}}{B},\n$$\n\nwhere $\\gamma$ is the friction coefficient. The parameter $\\gamma$ determines both how fast the system relaxes (smaller $\\gamma$ leads to faster relaxation) and how fast its kinetic energy decays (larger $\\gamma$ leads to faster decay). Sufficiently large values of $\\gamma$ correspond to overdamped kinetics, but the trade-off between relaxation and decay of kinetic energy implies that intermediate values of $\\gamma$ optimize computation time. Such values of $\\gamma$ are still acceptable, as theywill lead to the same results provided kinetic energy has dissipated sufficiently and that there are no instabilities. To check that the value of $\\gamma$ and the relaxation timescales are adequate, the system can be run forwards then backwards - if there is no hysteresis, then the parameters are adequate. This only holds until the system undergoes a kinking transition; once kinking takes place, hysteresis will occur even in the truly overdamped limit.\n",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "b2dee7b0-27bd-4c0e-8a36-a41cfdec64d3",
+      "submission_id": "c0fe521a-f654-4633-a677-ea91a5dff39a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Manuel Thery, CEA France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34695.022](https://doi.org/10.7554/eLife.34695.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Microtubules soften due to cross-sectional flattening\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a guest Reviewing Editor and Anna Akhmanova as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Gregory M Alushin (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. As you will see only one set of additional experiment is suggested. Other comments can be addressed by clarification and discussion in the main text.\n\nSummary:\n\nThe manuscript addresses a long-standing problem in microtubule mechanics, namely the discrepancy between the estimation of mechanical parameters (especially the bending rigidity) from different methods (passive - thermal fluctuations versus active - AFM or optical trapping).\n\nHere the mechanical response of microtubules to bending forces has been investigated using an optical trap setup combined with coarse grained molecular dynamics simulations.\n\nThe main results are:\n\n- Microtubule lattice experiences softening under relatively large compressive strains.\n\n- This behaviour can be fitted with a new 3D microtubule lattice model which takes into account lattice anisotropy and its hollow cylindrical geometry. In contrast, the 1D elastic beam model is unable to reproduce the experimental behavior for microtubules except for the regime of very small (compressive or tensile) strains.\n\n- An engineered bacterial flagellum more akin to a classical 1D beam, displays the expected Euler-Bernoulli bending mechanics, confirming that the microtubule behavior is not an experimental artifact. In this case the 1D model fits the experimental data very well.\n\nOverall, the manuscript is clearly written, and the results are interesting. Presented data offer a new interpretation for the large variety in microtubule mechanical data measured by different methods and point at the key role of microtubule flattening in the modulation of their apparent stiffness, which is likely to significantly impact our understanding of microtubule mechanics and microtubule network architecture.\n\nEssential revisions:\n\n- Although the present data is potentially too noisy, a step experimental protocol could likely be employed to test the \"aging\" hypothesis. Specifically, a microtubule could be subjected to a sufficient force to buckle and soften it, followed by a low force. If the microtubule remains soft for some time after buckling, the time between the two force applications could be varied to establish the time constant for \"healing\". If this is feasible, including these experiments would substantially strengthen the study.\n\n- The authors should explain how they control the attachment between bead and microtubule to obtain a configuration as shown in Figure 1A. The cartoon implies that the beads attach to the side of the microtubule in the direction of the curvature. Can the authors indicate the bead position in the experimental example in Figure 1B to make the cartoon in Figure 1A more credible? Indicated trap positions seem not consistent with the cartoon. Please describe in more detail, how the bead-microtubule attachment is controlled.\n\n- Please describe in more detail how the force strain curve is obtained. For example, is there some averaging for the bead-trap distance, or bead-bead distance?\n\n- From the simulations in Figure 2, Figure 4 and Figure 5 it seems that even at very low compressive strain < 0.05 a hysteresis is still present, and the microtubule may exist in two different conformations, associated with two different forces acting on the optical bead. Is this an artefact of the simulation algorithm, that the lattice gets trapped in a local minimum or do the authors have a physical explanation for the persistence of the hysteresis at very low strains? How is the steady state determined?\n\n- In Figure 4, did the authors test experimentally compressive strains beyond 0.3? Did microtubules break and if so, at which point?\n\n- It is unclear why the authors used a 10 protofilament model rather than a 13 protofilament one. Would the computational expense be so much greater in the latter case? One issue is that this choice leads to unrealistic lateral interactions/distances etc. And usually in vitro lattices with 10 protofilaments differ substantially from the 13 protofilament ones as they can exhibit more than the 1 seam from the 13 case. An explanation is needed.\n\n- A clear comparison of the calculated with the experimentally measured microtubule shapes to validate the presence of the kinking instability is missing.\n\nIt seems that the model parameters are determined from a fit against the experimental force-strain curves. Could the authors show, e.g. in additional plots in Figure 5, how the experimental microtubule shapes compare to the simulated microtubule shapes at the points a,b, and c from Figure 5A?\n\n- Alternative explanations could be envisaged and discussed:\n\nCan the authors exclude a twisting of the microtubule lattice? The model calculations (Figure 5) show, that the microtubule lattice undergoes very drastic deformations in the kinking region. Is it plausible, that the microtubule lattice can accommodate these high strains without undergoing structural damage?\n\nCan the authors exclude, that a lattice perturbation at the point of attachment between optical bead and microtubule is responsible for the observed softening?\n\n- The mechanical lattice model is as simple as possible, which is a good thing since it limits the number of microscopic parameters. However, it is unclear whether a single shearing interaction (i.e. $\\kappa_s$) in an effective 2D lattice is sufficient to stabilize the deformation of the lattice at the kinking instability. Furthermore, there seems to be some ambiguity concerning the relations between microscopic and macroscopic elastic constants (i.e. two different effective tube wall thicknesses are postulated, see. Table 2), which limits the quality of the predicted macroscopic elastic constants. This problem could be avoided by using for example a double shell lattice (with some diagonal elastic elements) which naturally includes stability against shear and bending in all directions.\n",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4f85cbf2-e900-4e31-a829-b1a414b32796",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C1",
+      "claim": "Microtubules have an approximate inner diameter of 15 nm and outer diameter of 25 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubules (MTs) are long slender hollow cylindrical filaments with an approximate inner and outer diameter of 15 nm and 25 nm (Nogales et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nogales et al., 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "e3262dfc-f228-4669-ae34-e4c19dafcc71",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C2",
+      "claim": "Microtubules are an indispensable structural element in biology.",
+      "claim_type": "EXPLICIT",
+      "source": "They are an indispensable structural element in biology, and their mechanical properties play an critical role in defining the shape and functionalities of various cellular architectures including neuronal axons, cilia and flagella, centrioles as well as the mitotic spindle (Howard, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Howard, 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "2b7d3b21-39fd-4217-b51c-6c0ca558d080",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C3",
+      "claim": "Microtubule mechanical properties play a critical role in defining the shape and functionalities of various cellular architectures including neuronal axons, cilia and flagella, centrioles and the mitotic spindle.",
+      "claim_type": "EXPLICIT",
+      "source": "They are an indispensable structural element in biology, and their mechanical properties play an critical role in defining the shape and functionalities of various cellular architectures including neuronal axons, cilia and flagella, centrioles as well as the mitotic spindle (Howard, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Howard, 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "0e9d9f52-dd3a-48df-9e57-9ed29edac98c",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C4",
+      "claim": "There is considerable disagreement between different reported values of microtubule elastic moduli.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is a considerable disagreement between different reported values of MT elastic moduli (Mickey and Howard, 1995), the dependence of the elastic moduli on the presence of stabilizing agents (taxol and GMPCPP), as well as a possible length-dependence of flexural rigidity (Pampaloni et al., 2006; Kis et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mickey and Howard, 1995; Pampaloni et al., 2006; Kis et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "002255db-aafb-4314-bd15-372078ce7799",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C5",
+      "claim": "Thermal fluctuation measurements of microtubules only induce small strain deformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of significant rigidity of MTs these two types of measurements typically probe different deformation (strain) regimes. Thermally induced fluctuations only induce small strain deformations, while methods that use external forces are more suited to probe the high-strain regime.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the significant rigidity of microtubules",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "198ace51-6265-49d4-ba9c-a38ffc8cca4d",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C6",
+      "claim": "External force methods are more suited to probe the high-strain regime of microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of significant rigidity of MTs these two types of measurements typically probe different deformation (strain) regimes. Thermally induced fluctuations only induce small strain deformations, while methods that use external forces are more suited to probe the high-strain regime.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the significant rigidity of microtubules",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "86c21ca9-7ba8-43ff-866c-820c39cfc516",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C7",
+      "claim": "The majority of measurements that rely on filament fluctuations in the low strain regime yield values of microtubule flexural rigidity around a certain value.",
+      "claim_type": "EXPLICIT",
+      "source": "Careful review of this data shows that the majority of measurements that rely on the filament fluctuations in the low strain regime yield values of microtubule flexural rigidity around , while measurements at high strains, tend to be for similarly prepared MTs (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to Supplementary file 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "f4210f69-c87e-4538-b472-5ac58eca8998",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C8",
+      "claim": "Measurements at high strains tend to yield lower flexural rigidity values for similarly prepared microtubules compared to low strain measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Careful review of this data shows that the majority of measurements that rely on the filament fluctuations in the low strain regime yield values of microtubule flexural rigidity around , while measurements at high strains, tend to be for similarly prepared MTs (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to Supplementary file 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "15ede3a0-d2a4-4bba-ac8e-8dbeeeb8d25a",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C9",
+      "claim": "Above a critical strain, microtubules deviate from the classical Euler-Bernoulli elastic filament model, showing a softening response with increasing deformations.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that, while in the low-strain regime, microtubules may be quantitatively described in terms of the classical Euler-Bernoulli elastic filament, above a critical strain they deviate from this simple elastic model, showing a softening response with increasingdeformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from optical trapping measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "8b9222cc-1658-44b6-963a-bec422fa7390",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C10",
+      "claim": "A three-dimensional thin-shell model captures the softening effect of microtubules in the high strain regime.",
+      "claim_type": "EXPLICIT",
+      "source": "A three-dimensional thin-shell model, in which the increased mechanical compliance is caused by flattening and eventual buckling of the filament cross-section, captures this softening effect in the high strain regime and yields quantitative values of the effective mechanical properties of microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation results that match experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "88bf0223-fd0a-4abf-864c-ef49b3272ee6",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C11",
+      "claim": "The increased mechanical compliance of microtubules at high strain is caused by flattening and eventual buckling of the filament cross-section.",
+      "claim_type": "EXPLICIT",
+      "source": "A three-dimensional thin-shell model, in which the increased mechanical compliance is caused by flattening and eventual buckling of the filament cross-section, captures this softening effect in the high strain regime and yields quantitative values of the effective mechanical properties of microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation results showing cross-sectional deformation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "1985fb08-fcc9-4493-9271-e0cb15c26b37",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C12",
+      "claim": "Microtubule properties are highly dependent on the magnitude of the applied strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that properties of microtubules are highly dependent on the magnitude of the applied strain and offer a new interpretation for the large variety in microtubule mechanical data measured by different methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing different behavior at different strain regimes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "b29268e2-137a-4fa8-af9c-022e9f288e84",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C14",
+      "claim": "Bacterial flagellar filaments have a hollow core with a diameter of only 2 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, like microtubules flagella have a hollow core; however, their core diameter is only 2 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established fact in the manuscript",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "d595b936-ac95-4455-bb5e-92c2d989517d",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C15",
+      "claim": "Flagella should effectively behave as solid cylinders due to their small hollow core.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, like microtubules flagella have a hollow core; however, their core diameter is only 2 nm. Therefore flagella should effectively behave as solid cylinders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the small core diameter",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "8fd6c080-b7a9-45cd-80cd-a8776e98e0f0",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C16",
+      "claim": "Flagellin monomers from Salmonella typhimurium strain SJW1660 have a point mutation that causes them to assemble into straight filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "We use flagellin monomers isolated from Salmonella typhimurium, strain SJW1660, which have a point mutation in their amino-acid sequence that causes them to assemble into straight filaments (Kamiya et al., 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kamiya et al., 1980",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "609818ac-a4cd-4cce-a5c6-d07f438ca73f",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C17",
+      "claim": "A simple Euler-Bernoulli beam model quantitatively describes the measured force curve of flagellar filaments in all strain regimes.",
+      "claim_type": "EXPLICIT",
+      "source": "A simple model based on Euler-Bernoullibeams quantitatively describes the measured force curve in all strain regimes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and simulation results for flagella",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "040a026d-6b90-4144-8b9c-5ed8a78ec08a",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C18",
+      "claim": "The buckling force of microtubules increases linearly in the initial low strain region.",
+      "claim_type": "EXPLICIT",
+      "source": "In the compression region, which corresponds to microtubule bending, the buckling force increases linearly in the initial (low strain) region, but quickly deviates from this trend and saturates at some critical strain, and it gradually decreases at high strain values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental force-strain measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "16b6790a-030f-4b13-9cb1-2e82d6d6b8ad",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C19",
+      "claim": "The buckling force of microtubules saturates at some critical strain.",
+      "claim_type": "EXPLICIT",
+      "source": "In the compression region, which corresponds to microtubule bending, the buckling force increases linearly in the initial (low strain) region, but quickly deviates from this trend and saturates at some critical strain, and it gradually decreases at high strain values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental force-strain measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "f64ed95b-2efd-4d4e-b705-c75b881f01d8",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C20",
+      "claim": "The buckling force of microtubules gradually decreases at high strain values.",
+      "claim_type": "EXPLICIT",
+      "source": "In the compression region, which corresponds to microtubule bending, the buckling force increases linearly in the initial (low strain) region, but quickly deviates from this trend and saturates at some critical strain, and it gradually decreases at high strain values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental force-strain measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "cdd4d8ce-3609-4e6c-a393-6e5a19de72d1",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C21",
+      "claim": "The softening behavior of microtubules cannot be captured by the ideal Euler-Bernoulli model.",
+      "claim_type": "EXPLICIT",
+      "source": "Such behavior indicates softening of MTs, an outcome that cannot be captured by the ideal Euler-Bernoulli model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of experimental data with 1D model predictions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "fbbf89b3-0885-4b22-9bcd-03ebb46146b5",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C22",
+      "claim": "The mechanical response of microtubules is well-captured by an anisotropic elastic shell model with three coarse grained elastic parameters (one shear, and two stretching moduli).",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the mechanical response of MTs is well-captured by an anisotropic elastic shell model with three coarse grained elastic parameters (oneshear, and two stretching moduli).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation results that match experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "af0bbe5c-da8e-42f7-99a0-801da6e0e100",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C23",
+      "claim": "Cross-sectional flattening and buckling in response to compressive radial strains has been described for microtubule filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "For microtubule filaments in particular, cross-sectional flattening and buckling in response to compressive radial strains has also been described (Kononova et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kononova et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "bc0ef4d2-934a-4974-8ebe-b92d9f6f085f",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C24",
+      "claim": "The force-strain curve of flagellar filaments is qualitatively different from that observed for microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "The measured strain-force curve of a flagellar filament is qualitatively different from that observed for microtubules (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "bf4be9d8-4ff4-4f77-ac4b-15e4f20bfcd8",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C25",
+      "claim": "In both the compression and extension regime, the force on flagellar filaments monotonically increases.",
+      "claim_type": "EXPLICIT",
+      "source": "In both the compression and extension regime, the force monotonically increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data for flagella",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "3437c92b-036a-43cb-bca6-cc6892f93c62",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C26",
+      "claim": "The slope in the extension region is higher than that in the compression region for flagellar filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that the slope in the extension region is higher than that in the compression region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data for flagella",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "08f155a9-16c0-4596-818a-c1395813f407",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C27",
+      "claim": "In response to extensional forces, the flagellar filament bends in the proximity of the bead attachment point.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the force is not applied along the filament centerline, in response to extensional forces the filament bends in the proximity of the bead attachments point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the experimental setup geometry",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "737f7bc2-ad90-4b76-8bc4-0adaa758a2d9",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C31",
+      "claim": "The one-dimensional model is not capable of reproducing the complex elastic behavior observed in microtubule filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the same one-dimensional model is not capable of reproducing the more complex elastic behavior observed in microtubule filaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of 1D model predictions with experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "0e76ccf1-e853-4da9-b9a2-34f085ae32b7",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C32",
+      "claim": "The 1D model can at most describe the low strain regime of the microtubule force-compression curve.",
+      "claim_type": "EXPLICIT",
+      "source": "At most, it can describe the low strain regime of the force-compression curve (Figure 2B, green dashed curve).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "e4ccf061-f7f7-40ec-b282-dbb66e4deb0d",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C33",
+      "claim": "The 3D model of microtubules explicitly accounts for their hollow center.",
+      "claim_type": "EXPLICIT",
+      "source": "To explain theelastic behavior of microtubules over the entire strain regime we developed a more comprehensive 3D model of microtubules that explicitly accounts for their hollow center.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the model construction",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "01d31975-e12f-43bc-a2d1-4c8e4212e04b",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C34",
+      "claim": "The 3D microtubule model quantitatively explains the softening observed in experimentally measured force-strain curves.",
+      "claim_type": "EXPLICIT",
+      "source": "The 3D microtubule model quantitatively explains the softening that is observed in experimentally measured force-strain curves of microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of simulation results with experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "864ffce6-6ccc-4c3d-b350-2b567237d12f",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C38",
+      "claim": "Microtubules are highly anisotropic materials.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation confirms that microtubules are highly anisotropic materials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the large difference between Ea and Ec values",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "9f4227a6-37f4-453a-bf8d-472206d6fff3",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C40",
+      "claim": "The large shear modulus values likely indicate that microtubule deformations in the experiments are large enough to reach the point of deforming the tubulin units themselves rather than the bonds between them.",
+      "claim_type": "EXPLICIT",
+      "source": "This likely indicates that the microtubule deformations in our experiments are large enough to reach the point of deforming the tubulin units themselves rather than the bonds between them (see Discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of the high shear modulus values",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "3dac2b20-7a39-47d4-b5ef-d2d2be0838dd",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C41",
+      "claim": "The decrease in the buckling force is directly associated with ovalisation of the microtubule cross-section.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in the buckling force is directly associated with ovalisation of the microtubulecross-section.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation results showing cross-sectional deformation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "c140ec4b-dc96-4ab0-afad-ab6ac7823854",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C42",
+      "claim": "Cross-sectional deformations vanish at the endpoints (at the locations of the optical beads).",
+      "claim_type": "EXPLICIT",
+      "source": "While cross-sectional deformations vanish at the endpoints (i.e. at the locations of the optical beads, shown in blue), deformations in the interior are considerable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "637fe279-2770-45de-914b-401c362172c1",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C43",
+      "claim": "Deformations in the interior of the microtubule are considerable.",
+      "claim_type": "EXPLICIT",
+      "source": "While cross-sectional deformations vanish at the endpoints (i.e. at the locations of the optical beads, shown in blue), deformations in the interior are considerable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "d47d3ae8-6258-4b66-8276-4dc0edfd76f8",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C44",
+      "claim": "The cross-section is circular until a critical bending moment is reached.",
+      "claim_type": "EXPLICIT",
+      "source": "This is indeed what we observe - the cross-section is circular (Figure 5B, green and blue curves) until a critical bending moment is reached.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "329aa8d5-5896-4bd7-b379-33f4584be612",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C46",
+      "claim": "With further compression, subsequent kinks can develop one at a time in the vicinity of the first kink.",
+      "claim_type": "EXPLICIT",
+      "source": "With further compression, subsequent kinks can develop - one at a time - in its vicinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "96a5916d-76cc-4f4b-876c-1c2886d466c6",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C47",
+      "claim": "Discontinuities in the curvature profile of a filament signal the existence of cross-sectional ovalization and eventual kinking.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, discontinuities in the curvature profile of a filament signal the existence of cross-sectional ovalization and eventual kinking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the correspondence between curvature and flatness profiles",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "edffe7ef-f88f-4792-92c8-b9bc2fe11890",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C48",
+      "claim": "The formation of kinks can be identified directly from the force-strain plots as a small drop in the buckling force.",
+      "claim_type": "EXPLICIT",
+      "source": "In simulations, the formation of kinks can be identified directly from the force-strain plots as a small drop in the buckling force (Figure 5A, red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "3292b98b-7c24-428e-8eed-da83d6249ea1",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C49",
+      "claim": "Hysteresis associated with forward and backward compression is observed in simulations in which the filament forms kinks.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, hysteresis associated with forward and backward compressionis observed in simulations in which the filament forms kinks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "c64d2d19-73d4-4b0c-a244-5029092abccc",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C56",
+      "claim": "Critical curvatures for microtubule softening are likely reached and exceeded in the beating flagella of Chlamydomonas.",
+      "claim_type": "EXPLICIT",
+      "source": "Such values are small enough that they are likely reached and exceeded at least in some systems both in vivo, as in the beating flagella of Chlamydomonas (Sartori et al., 2016; Geyer et al., 2016) and in vitro, as in microtubule rings observed in gliding assays (Liu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sartori et al., 2016; Geyer et al., 2016",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "5bfcf82b-b66d-4f8f-86dd-9be485d59166",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C57",
+      "claim": "Critical curvatures for microtubule softening are likely reached and exceeded in microtubule rings observed in gliding assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Such values are small enough that they are likely reached and exceeded at least in some systems both in vivo, as in the beating flagella of Chlamydomonas (Sartori et al., 2016; Geyer et al., 2016) and in vitro, as in microtubule rings observed in gliding assays (Liu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2011",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "65da8aa5-0c08-4fa0-a6f5-90b45f368477",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C58",
+      "claim": "Microtubule softening is a consequence of cross-sectional deformations enabled by a small circumferential Young's modulus of a few MPa.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulations reveal that microtubule softening is a consequence of cross-sectional deformations enabled by a small circumferential Young's modulus of a few MPa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation results and fitting to experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "173e3015-4240-4032-bee0-aa60a7eb2d4a",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C59",
+      "claim": "Lateral bonds between adjacent protofilaments are much weaker than longitudinal bonds along protofilaments.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is known that MTs do not behave as isotropic Euler-Bernoulli slender rods - since, for instance, lateral bonds between adjacent protofilaments are much weaker than longitudinal bonds along protofilaments (Nogales et al., 1999; VanBuren et al., 2002; Huang et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Nogales et al., 1999; VanBuren et al., 2002; Huang et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "c693d23f-5bb6-4c33-b67f-f691bbabf768",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C60",
+      "claim": "Many groups have used the Euler-Bernoulli beam model to interpret their microtubule data.",
+      "claim_type": "EXPLICIT",
+      "source": "many groups have used the Euler-Bernoulli beam model to interpret their data (Kikumoto et al., 2006; Brangwynne et al., 2006; Li, 2008; Takasone et al., 2002; Jiang and Zhang, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "8777cfca-04ca-4daf-ac43-229b6e0b05eb",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C61",
+      "claim": "The Timoshenko beam model remains inadequate for microtubules since it does not allow for anisotropy between the axial and circumferential directions.",
+      "claim_type": "EXPLICIT",
+      "source": "This model remains inadequate, however, since it does not allow for anisotropy between the axial and circumferential directions, which is substantial and plays an important role in the mechanical behavior of MTs (Deriu et al., 2010; Huang et al., 2008; Tuszy\u0144ski et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Deriu et al., 2010; Huang et al., 2008; Tuszy\u0144ski et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "4d85ac9a-2780-4ebb-9142-a1af9eaa79f5",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C63",
+      "claim": "The average flexural rigidity of Taxol stabilized microtubules found via thermal fluctuations is more than twice as large as the average rigidity found from force-based experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a comprehensive summary of experimental results on MT flexural rigidity (Hawkins et al., 2010) strongly supports this interpretation: for example, the average flexural rigidity of Taxol stabilized MTs found via thermal fluctuations is more than twice as large as the average rigidity found from force-based experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hawkins et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "9ac73bb8-0e68-4170-b880-e88e3e9e7dd5",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C66",
+      "claim": "Small radial deformations only impact the weak bridges between adjacent protofilaments, while larger ones may deform the tubulin dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "The discrepancy can be reconciled by noting that small radial deformations only impactthe weak bridges between adjacent protofilaments, while larger ones may deform the tubulin dimers, which, like typical proteins, have a high stiffness in the GPa range (Huang et al., 2008; Pampaloni et al., 2006; Needleman et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Huang et al., 2008; Pampaloni et al., 2006; Needleman et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "249a1ac8-0094-4bdc-842f-cfd131d4666d",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C68",
+      "claim": "Inter-protofilament bonds may be very compliant for small deformations (on the 0.2 nm scale), while larger deviations may approach the limit of physically deforming the tubulin units.",
+      "claim_type": "EXPLICIT",
+      "source": "However, inter-protofilament bonds may be very compliant for small deformations (on the 0.2 nm scale), while larger deviations may approach the limit of physically deforming the tubulin units (Pampaloni et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pampaloni et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "43f9c977-7931-498d-8472-28cf9588ccd6",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C69",
+      "claim": "A strain on the order of \u22120.01 would lead to deformations on the 0.2 nm scale.",
+      "claim_type": "EXPLICIT",
+      "source": "Following estimates in (Pampaloni et al., 2006), a strain on the order of \u22120.01 would lead to deformations on the 0.2 nm scale, while our experiments routinely go up to much larger strains around \u22120.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on estimates from Pampaloni et al., 2006 and experimental strain values",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "ee161ffa-35ec-482e-930a-858a6c038fae",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C70",
+      "claim": "The large values obtained for shear modulus are likely due to large shear deformations that surpass the elastic limits of inter-protofilament bonds.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it's likely that the large values we obtained for shear modulus are due to large shear deformations that surpass the elastic limits of inter-protofilament bonds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation based on the magnitude of experimental strains",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "43e1c91b-43ec-460d-8c1b-f00a8b4f4eae",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C71",
+      "claim": "Sufficiently large deformations can induce reversible breaking of lateral contacts between protofilaments and eventually even of longitudinal contacts between subunits in a protofilament.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, sufficiently large deformations can induce (reversible) breaking of lateral contacts between protofilaments and eventually even of longitudinal contacts between subunits in a protofilament as observed in radial indentation simulations (Kononova et al., 2014; Jiang et al., 2017) and corroborated with scanning force microscopy experiments (Schaap et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kononova et al., 2014; Jiang et al., 2017; Schaap et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "989d1127-5851-4499-b0c2-deb9204dd12e",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C72",
+      "claim": "Contact breaking may constitute an alternate or co-occurring reason for the large shear modulus obtained from fitting experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, contact breaking may constitute an alternate or co-occurring reason for the large shear modulus obtained from fitting our experimental data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation based on literature about contact breaking",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "2c2a6ac7-a0b2-4e0d-a997-64d53d26bccb",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C77",
+      "claim": "Microtubule softening may decrease microtubule susceptibility to mechanical failure or depolymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "We may thus speculate about the biological significance of MT softening, with one hypothesis being that it decreases MT susceptibility to mechanical failure or depolymerization (Mohrbach et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative hypothesis with citation to Mohrbach et al., 2012",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "0cec5acf-a317-4566-9f9c-842e1ecac99c",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C78",
+      "claim": "Repeated large-scale deformations locally damage dynamical microtubules, which leads to effectively softer filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, this study demonstrated that repeated large-scale deformations locally damage microtubules, which leads to effectively softer filaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Referring to findings from Schaedel et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "c75623e0-872e-4686-94a5-7dc76110818c",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C79",
+      "claim": "Damage to dynamical microtubules is accompanied by a loss of tubulin monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "This damageis accompanied by a loss of tubulin monomers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Referring to findings from Schaedel et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "54c6b308-9278-4de4-9f14-45e0db10e3f5",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C80",
+      "claim": "After external force ceases, damaged dynamical microtubules effectively self-repair as tubulin monomers from the background suspension incorporate back into the damaged regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, after the external force ceases the damaged filaments effectively self-repair, as the tubulin monomers from the background suspensions incorporate back into the damaged regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Referring to findings from Schaedel et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "9648bc21-05d2-4623-bc55-2aaa6c0a6347",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C81",
+      "claim": "Stabilized microtubule filaments do not show any aging phenomena.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, here we study stabilized filaments that do not show any aging phenomena.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "eb02f8d0-2836-4578-a01d-7fb1b96e2da3",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C82",
+      "claim": "The regions of high strain might be the location where monomers preferentially dissociate from dynamical microtubule filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it seems plausible that the ovalization and the formation of kinks is also relevant to dynamical microtubules, and the regions of high strain might be the location where monomers preferentially dissociate from filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative hypothesis connecting ovalization to monomer dissociation",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "24a301ec-115a-4721-8488-15fe65467c48",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C83",
+      "claim": "The softening of microtubules is analogous to phenomena observed in carbon nanotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also worth noting that the softening of microtubules we observe is analogous to phenomena that have already been observed and quantified in carbon nanotubes (e.g. see reviews by [Thostenson et al., 2001; Wang et al., 2007]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Thostenson et al., 2001; Wang et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "05ddb98b-7be4-4306-9a22-eb127f176ebf",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C84",
+      "claim": "Experiments on carbon nanotubes demonstrate the formation of a single kink, followed by a multiple kink pattern upon further bending.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, experiments demonstrate the formation of a single kink, followed by a multiple kink pattern upon further bending (Iijima et al., 1996)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Iijima et al., 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "1e66e8f0-e228-45eb-8ef2-7c569b6df0c9",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C85",
+      "claim": "Simulations of carbon nanotubes predict a reduction in effective nanotube stiffness, as the buckling force drops and remains almost constant after kinking.",
+      "claim_type": "EXPLICIT",
+      "source": "while simulations predict a reduction in effective nanotube stiffness, as the buckling force drops and remains almost constant after kinking eYakobson1996.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yakobson 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "134afb37-a647-4428-9eb2-a941887d74ef",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C86",
+      "claim": "Hysteresis due to plastic deformations triggered by kinking events has been observed in multi-walled carbon nanotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "Hysteresis due to plastic deformations triggered by kinking events has also been observed, at least in the case of multi-walled carbon nanotubes (Jensen et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jensen et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "28e17e0d-fb80-4281-a986-e5f3a74aebe6",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C87",
+      "claim": "Micron-long microtubules subject to buckling forces of a few pN become more mechanically compliant at relatively low strains due to significant cross-sectional deformations and subsequent buckling.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we have found that micron-long microtubules subject to buckling forces of a few pN become more mechanically compliant at relatively low strains due to significant cross-sectional deformations and subsequent buckling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and simulation results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "6a81f0ed-6602-4663-87a5-a9937779b45d",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C88",
+      "claim": "The critical curvatures for the softening transition are surpassed in the beating of Chlamydomonas flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "This result seems biologically relevant, as the critical curvatures for the softening transition are surpassed, for instance, in the beating of Chlamydomonas flagella.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of critical curvatures with literature values for flagellar curvatures",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "3e33f1fb-1515-482f-b748-1dcf766839fa",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C89",
+      "claim": "The softening of microtubules with increasing strain provides an explanation for the discrepancy between values of flexural rigidity inferred by passive versus active methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the softening of MTs with increasing strain provides an explanation for the discrepancy between values of flexural rigidity inferred by passive (thermal fluctuations) versus active methods, since the latter typically access higher strains and thus infer effectively lower rigidities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the finding that microtubules soften at high strains",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "2e7b754c-13e3-4cd8-b525-f8b6920b742c",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C90",
+      "claim": "The mechanical properties of microtubules can be quantitatively summarized by three elastic moduli, even for very large strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the complex nature of microtubules, we found that their mechanical properties - at least as concerning buckling experiments via optical trapping - can be quantitatively summarized by three elastic moduli, even for very large strains, and need to be accounted for to explain observations that arise naturally in many biological systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by successful fitting of experimental data with 3D model using three elastic moduli",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "b09ed892-8d76-49d5-bb2d-7d6073a64542",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C91",
+      "claim": "Tubulin was purified from bovine brain tissue according to an established protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Tubulin was purified from bovine brain tissue according to the established protocol (Castoldi and Popov, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Castoldi and Popov, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "2c8e53f4-af58-4e6b-8c63-3bbe1fe2a441",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C92",
+      "claim": "Filaments subjected to repeated cycles of compression/extension do not seem to exhibit any aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Filaments subjected to repeated cycles of compression/extension do not seem to exhibit any aging (Figure 2B, inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B inset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "ebc73352-34a9-4a7e-b047-6acfa1feeb76",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C93",
+      "claim": "The position of the detection bead is sampled with the QPD at a rate of 100 KHz and averaged in bins of 1000 samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The position of the detection bead is sampled with the QPD at a rate of 100 KHz and averaged in bins of 1000 samples, effectively resulting in a sampling rate of 100 Hz, that is about 100 times per step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "886117a8-d259-4f73-983d-2b8893b3c9f3",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C95",
+      "claim": "Presence of biotin either throughout the filaments or in localized segments does not affect the measured single filament buckling force.",
+      "claim_type": "EXPLICIT",
+      "source": "Presence of biotin either throughout the filaments or in localized segments does not affect the measured single filament buckling force.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "eff63f1c-c59f-4a3c-b604-cbbc074d6730",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "claim_id": "C96",
+      "claim": "The experiments seem consistent with an essentially rigid microtubule-bead attachment.",
+      "claim_type": "EXPLICIT",
+      "source": "In the end, our experiments seem consistent with an essentially rigid microtubule-bead attachment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the absence of a flat region near zero strain in force-strain curves",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c94acaf2-202b-410b-bf96-fa79c5e9b03b",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Microtubules exhibit strain-dependent mechanical softening: at low strains, buckling force increases linearly, but above a critical strain (~-0.1), the force saturates and then decreases, deviating from classical Euler-Bernoulli elastic behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C18-C20 describe the experimental observation of nonlinear force-strain behavior with softening at high strains, supported by optical trapping data (Figures 2B, 4, 5A). Claim C21 correctly identifies that this behavior cannot be captured by 1D Euler-Bernoulli models. Claim C87 summarizes the finding. The experimental data clearly shows the transition from linear to nonlinear regimes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "4240ba06-cbd7-4bba-8251-775c943d5115",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A 3D anisotropic thin-shell model with three elastic parameters (axial Young's modulus Ea, circumferential Young's modulus Ec, and shear modulus G) quantitatively explains microtubule softening through cross-sectional flattening and eventual buckling (kinking) at high strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C22, C33-C34 describe the 3D model and its quantitative agreement with experimental data (Figures 2B, 4, 5). Claims C11, C41-C44, C46-C47, C58 detail the mechanism of cross-sectional deformation leading to softening, supported by simulation results showing flatness profiles (Figure 5B). The model successfully fits multiple experimental datasets with consistent parameter values (Table 2).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "9d188c7b-1c66-4953-895d-d2fdc79ddf47",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Microtubules are highly anisotropic materials with axial Young's modulus (0.6-1.1 GPa) approximately 100-300 times larger than circumferential Young's modulus (3-10 MPa), and this anisotropy enables cross-sectional deformations at high strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C38 states microtubules are highly anisotropic, supported by the large difference between Ea and Ec values obtained from fitting 10 different filaments (Table 2, Figure 4). Claim C58 connects this small circumferential modulus to the softening mechanism. The consistency of fitted parameters across multiple experiments strengthens this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "bfbe888c-4dc1-4bfd-9a9a-359ed4ebfe3c",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Bacterial flagellar filaments exhibit classical elastic behavior across all strain regimes, with force monotonically increasing in both compression and extension, and are well-described by a 1D Euler-Bernoulli beam model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C24-C27 describe flagellar mechanical behavior that differs qualitatively from microtubules, supported by experimental data (Figure 3B). The 1D model quantitatively fits the data across all strains, validating the experimental method. This serves as an important control demonstrating that the softening observed in microtubules is not an experimental artifact.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "26664140-5361-4bb7-badf-b1a20e70764b",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The 1D Euler-Bernoulli model fails to capture microtubule behavior beyond the low strain regime, only describing the initial linear portion of the force-compression curve.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 are directly supported by Figure 2B showing the 1D model (green dashed line) deviating from experimental data at strains beyond ~-0.05. This inadequacy of the 1D model motivates the development of the 3D shell model and is a key finding distinguishing microtubules from solid filaments like flagella.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "18787911-36fa-4b2f-bf2e-ab6c6268eeb3",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The strain-dependent softening of microtubules explains the discrepancy in literature between flexural rigidity values measured by passive thermal fluctuation methods (higher values, low strain) versus active force-based methods (lower values, high strain).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 cite literature showing this discrepancy (Supplementary file 2), C63 quantifies it (>2-fold difference for Taxol-stabilized MTs), and C89 provides the mechanistic explanation based on the current findings. This interpretation is logical given the demonstrated strain-dependent mechanical properties, though it relies on the assumption that prior studies accessed different strain regimes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "0b728557-33b7-4ee8-ab5b-18c46f3171d2",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The large shear modulus values (1.5-6 GPa) obtained from fitting likely reflect deformation of tubulin dimers themselves rather than just inter-protofilament bonds, as experimental strains (~-0.2) far exceed the regime where inter-protofilament bonds remain elastic (~-0.01 strain, 0.2 nm deformations).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C40, C70, C72 are explicitly speculative interpretations. While claims C66, C68-C69, C71 cite literature supporting the scale-dependent stiffness concept, the authors acknowledge uncertainty about whether the high G values reflect tubulin deformation, bond breaking, or both. The fitted G values are 1-3 orders of magnitude higher than most literature values, requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "e08ae951-007a-4b8c-9c7d-cd4415d42961",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The critical curvature for microtubule softening (~0.2 rad/\u03bcm) is biologically relevant, being reached or exceeded in systems such as beating Chlamydomonas flagella and microtubule rings in gliding assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 cite literature values for curvatures in biological systems (Sartori et al., 2016; Geyer et al., 2016; Liu et al., 2011) that exceed the critical curvature determined from simulations. Claim C88 reiterates this biological relevance. The comparison is valid, though the presence of MAPs in vivo could alter mechanical properties, which the authors do not fully address.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "56a1cd06-917b-4d59-9288-9981383bfb58",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Kink formation in simulations can be identified as small drops in buckling force in force-strain plots, and is associated with hysteresis in forward versus backward compression cycles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 is supported by simulation results (Figure 5A, red curve). Claim C49 describes hysteresis observed in simulations with kinking. However, the authors note that experimental data is too noisy to confirm hysteresis, and low-strain hysteresis persistence may be a simulation artifact. The result is supported for simulations but uncertain for experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "4475262f-8600-44db-a480-fd27e3d4428c",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Despite their complexity, microtubule mechanical properties in optical trapping buckling experiments can be quantitatively summarized by three elastic moduli (Ea, Ec, G) even at very large strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C90 is supported by the successful fitting of experimental data across 10 different filaments with lengths 3-15 \u03bcm and strains up to -0.5 using only three parameters (Figure 4, Table 2). The consistency of fitted parameters across experiments validates this coarse-grained description, though the authors appropriately limit the claim to optical trapping buckling experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "c5d60f2c-4f4a-4c70-a712-aee61958a3e7",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Bacterial flagellar filaments have a small hollow core (2 nm diameter) and therefore behave effectively as solid cylinders, unlike microtubules with their larger hollow core (15 nm diameter).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C14 states the core diameter as established fact. Claim C15 is a logical inference that is validated by claim C17 showing flagella follow 1D elastic behavior. Claim C16 describes the specific mutant strain used. The comparison between flagella and microtubules effectively demonstrates that the hollow core size is critical for the observed softening behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "e27cd071-175a-47a6-882a-b727b16c26cd",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Thermal fluctuation measurements probe the low-strain regime while external force methods probe the high-strain regime due to the significant rigidity of microtubules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 are logical inferences supported by the rigidity of microtubules and validated by the experimental findings showing strain-dependent properties. This distinction is fundamental to understanding why different measurement techniques yield different results and is well-established in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "1f03168e-beca-4a0f-8749-f58fe1b230fd",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "While lateral bonds between protofilaments are known to be much weaker than longitudinal bonds, many groups have inappropriately used isotropic Euler-Bernoulli or Timoshenko beam models that do not account for this anisotropy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 cites established knowledge about bond strength anisotropy. Claims C60-C61 cite multiple studies using inadequate models and explain why Timoshenko beams remain insufficient. This assessment of prior work is well-supported and provides important context for why the 3D anisotropic model is necessary.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "2039a381-14b8-4911-925f-a234533bc255",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Microtubule softening may decrease susceptibility to mechanical failure or depolymerization, and regions of high strain might be preferential sites for monomer dissociation in dynamic microtubules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C77 and C82 are explicitly speculative hypotheses about biological function and relevance to dynamic microtubules. While plausible, these claims lack direct experimental support. The authors appropriately present these as speculation requiring future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "8c3806b5-4029-44ed-b0d5-0b6f3a3fa299",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Unlike dynamic microtubules that show damage and self-repair under repeated deformation (Schaedel et al., 2015), the stabilized microtubules studied here show no aging phenomena.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80 accurately describe findings from Schaedel et al., 2015 about dynamic microtubules. Claim C81 reports the observation that stabilized filaments in the current study show no aging (Figure 2B inset). This distinction is important for interpreting the results and is well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "5d6c10e9-5175-48cd-94ed-3093f2d79b04",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The softening behavior observed in microtubules is analogous to phenomena in carbon nanotubes, including kink formation, stiffness reduction, and hysteresis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C86 cite literature on carbon nanotubes showing similar mechanical behaviors. This analogy is appropriate and well-supported, providing useful context from materials science. However, the comparison is primarily qualitative rather than quantitative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "0b5eb9a1-4ef3-463c-9af1-31f19a685883",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Stabilized microtubules show no aging under repeated compression/extension cycles, biotin labeling does not affect buckling force, and the microtubule-bead attachment is essentially rigid.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C92 is supported by Figure 2B inset showing consistent force-strain curves across cycles. Claim C95 reports a control experiment. Claim C96 is inferred from the absence of a flat region near zero strain. These are important methodological validations supporting the reliability of the measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "2ce78b9b-e120-46cb-8f07-61a5eeaabb60",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Microtubules are hollow cylindrical filaments (15 nm inner, 25 nm outer diameter) that are structurally critical in biology, but there is considerable disagreement in the literature regarding their elastic moduli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 cite established structural and biological facts (Nogales et al., 1999; Howard, 2001). Claim C4 accurately describes the state of the literature regarding disagreement in measured elastic properties. This provides essential background and motivation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "1873eba5-a431-49f7-98c2-ec3e96b1c000",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Microtubule properties are highly dependent on the magnitude of applied strain, offering a new interpretation for the variety in mechanical data measured by different methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C12 is the central conclusion of the paper, directly supported by the experimental demonstration of strain-dependent softening (C9, C18-C20) and the explanation for literature discrepancies (C89). This is well-supported by the comprehensive experimental and modeling results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    },
+    {
+      "id": "a8ecbda1-42a5-4988-a85a-3c0d63b5e05c",
+      "content_id": "b0d1f07f-dbc1-403d-ba27-cc1c4028559e",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Tubulin was purified using established protocols and bead position was sampled at 100 KHz, averaged in 1000-sample bins for effective 100 Hz sampling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91 and C93 describe standard methodological details that are appropriately documented. These are routine procedures that support the experimental rigor but are not primary findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:24.962056Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "15ede3a0-d2a4-4bba-ac8e-8dbeeeb8d25a",
+      "result_id": "c94acaf2-202b-410b-bf96-fa79c5e9b03b"
+    },
+    {
+      "claim_id": "040a026d-6b90-4144-8b9c-5ed8a78ec08a",
+      "result_id": "c94acaf2-202b-410b-bf96-fa79c5e9b03b"
+    },
+    {
+      "claim_id": "16b6790a-030f-4b13-9cb1-2e82d6d6b8ad",
+      "result_id": "c94acaf2-202b-410b-bf96-fa79c5e9b03b"
+    },
+    {
+      "claim_id": "f64ed95b-2efd-4d4e-b705-c75b881f01d8",
+      "result_id": "c94acaf2-202b-410b-bf96-fa79c5e9b03b"
+    },
+    {
+      "claim_id": "cdd4d8ce-3609-4e6c-a393-6e5a19de72d1",
+      "result_id": "c94acaf2-202b-410b-bf96-fa79c5e9b03b"
+    },
+    {
+      "claim_id": "28e17e0d-fb80-4281-a986-e5f3a74aebe6",
+      "result_id": "c94acaf2-202b-410b-bf96-fa79c5e9b03b"
+    },
+    {
+      "claim_id": "8b9222cc-1658-44b6-963a-bec422fa7390",
+      "result_id": "4240ba06-cbd7-4bba-8251-775c943d5115"
+    },
+    {
+      "claim_id": "88bf0223-fd0a-4abf-864c-ef49b3272ee6",
+      "result_id": "4240ba06-cbd7-4bba-8251-775c943d5115"
+    },
+    {
+      "claim_id": "fbbf89b3-0885-4b22-9bcd-03ebb46146b5",
+      "result_id": "4240ba06-cbd7-4bba-8251-775c943d5115"
+    },
+    {
+      "claim_id": "e4ccf061-f7f7-40ec-b282-dbb66e4deb0d",
+      "result_id": "4240ba06-cbd7-4bba-8251-775c943d5115"
+    },
+    {
+      "claim_id": "01d31975-e12f-43bc-a2d1-4c8e4212e04b",
+      "result_id": "4240ba06-cbd7-4bba-8251-775c943d5115"
+    },
+    {
+      "claim_id": "3dac2b20-7a39-47d4-b5ef-d2d2be0838dd",
+      "result_id": "4240ba06-cbd7-4bba-8251-775c943d5115"
+    },
+    {
+      "claim_id": "c140ec4b-dc96-4ab0-afad-ab6ac7823854",
+      "result_id": "4240ba06-cbd7-4bba-8251-775c943d5115"
+    },
+    {
+      "claim_id": "637fe279-2770-45de-914b-401c362172c1",
+      "result_id": "4240ba06-cbd7-4bba-8251-775c943d5115"
+    },
+    {
+      "claim_id": "d47d3ae8-6258-4b66-8276-4dc0edfd76f8",
+      "result_id": "4240ba06-cbd7-4bba-8251-775c943d5115"
+    },
+    {
+      "claim_id": "329aa8d5-5896-4bd7-b379-33f4584be612",
+      "result_id": "4240ba06-cbd7-4bba-8251-775c943d5115"
+    },
+    {
+      "claim_id": "96a5916d-76cc-4f4b-876c-1c2886d466c6",
+      "result_id": "4240ba06-cbd7-4bba-8251-775c943d5115"
+    },
+    {
+      "claim_id": "65da8aa5-0c08-4fa0-a6f5-90b45f368477",
+      "result_id": "4240ba06-cbd7-4bba-8251-775c943d5115"
+    },
+    {
+      "claim_id": "864ffce6-6ccc-4c3d-b350-2b567237d12f",
+      "result_id": "9d188c7b-1c66-4953-895d-d2fdc79ddf47"
+    },
+    {
+      "claim_id": "65da8aa5-0c08-4fa0-a6f5-90b45f368477",
+      "result_id": "9d188c7b-1c66-4953-895d-d2fdc79ddf47"
+    },
+    {
+      "claim_id": "609818ac-a4cd-4cce-a5c6-d07f438ca73f",
+      "result_id": "bfbe888c-4dc1-4bfd-9a9a-359ed4ebfe3c"
+    },
+    {
+      "claim_id": "bc0ef4d2-934a-4974-8ebe-b92d9f6f085f",
+      "result_id": "bfbe888c-4dc1-4bfd-9a9a-359ed4ebfe3c"
+    },
+    {
+      "claim_id": "bf4be9d8-4ff4-4f77-ac4b-15e4f20bfcd8",
+      "result_id": "bfbe888c-4dc1-4bfd-9a9a-359ed4ebfe3c"
+    },
+    {
+      "claim_id": "3437c92b-036a-43cb-bca6-cc6892f93c62",
+      "result_id": "bfbe888c-4dc1-4bfd-9a9a-359ed4ebfe3c"
+    },
+    {
+      "claim_id": "08f155a9-16c0-4596-818a-c1395813f407",
+      "result_id": "bfbe888c-4dc1-4bfd-9a9a-359ed4ebfe3c"
+    },
+    {
+      "claim_id": "737f7bc2-ad90-4b76-8bc4-0adaa758a2d9",
+      "result_id": "26664140-5361-4bb7-badf-b1a20e70764b"
+    },
+    {
+      "claim_id": "0e76ccf1-e853-4da9-b9a2-34f085ae32b7",
+      "result_id": "26664140-5361-4bb7-badf-b1a20e70764b"
+    },
+    {
+      "claim_id": "86c21ca9-7ba8-43ff-866c-820c39cfc516",
+      "result_id": "18787911-36fa-4b2f-bf2e-ab6c6268eeb3"
+    },
+    {
+      "claim_id": "f4210f69-c87e-4538-b472-5ac58eca8998",
+      "result_id": "18787911-36fa-4b2f-bf2e-ab6c6268eeb3"
+    },
+    {
+      "claim_id": "4d85ac9a-2780-4ebb-9142-a1af9eaa79f5",
+      "result_id": "18787911-36fa-4b2f-bf2e-ab6c6268eeb3"
+    },
+    {
+      "claim_id": "3e33f1fb-1515-482f-b748-1dcf766839fa",
+      "result_id": "18787911-36fa-4b2f-bf2e-ab6c6268eeb3"
+    },
+    {
+      "claim_id": "9f4227a6-37f4-453a-bf8d-472206d6fff3",
+      "result_id": "0b728557-33b7-4ee8-ab5b-18c46f3171d2"
+    },
+    {
+      "claim_id": "9ac73bb8-0e68-4170-b880-e88e3e9e7dd5",
+      "result_id": "0b728557-33b7-4ee8-ab5b-18c46f3171d2"
+    },
+    {
+      "claim_id": "249a1ac8-0094-4bdc-842f-cfd131d4666d",
+      "result_id": "0b728557-33b7-4ee8-ab5b-18c46f3171d2"
+    },
+    {
+      "claim_id": "43f9c977-7931-498d-8472-28cf9588ccd6",
+      "result_id": "0b728557-33b7-4ee8-ab5b-18c46f3171d2"
+    },
+    {
+      "claim_id": "ee161ffa-35ec-482e-930a-858a6c038fae",
+      "result_id": "0b728557-33b7-4ee8-ab5b-18c46f3171d2"
+    },
+    {
+      "claim_id": "43e1c91b-43ec-460d-8c1b-f00a8b4f4eae",
+      "result_id": "0b728557-33b7-4ee8-ab5b-18c46f3171d2"
+    },
+    {
+      "claim_id": "989d1127-5851-4499-b0c2-deb9204dd12e",
+      "result_id": "0b728557-33b7-4ee8-ab5b-18c46f3171d2"
+    },
+    {
+      "claim_id": "c64d2d19-73d4-4b0c-a244-5029092abccc",
+      "result_id": "e08ae951-007a-4b8c-9c7d-cd4415d42961"
+    },
+    {
+      "claim_id": "5bfcf82b-b66d-4f8f-86dd-9be485d59166",
+      "result_id": "e08ae951-007a-4b8c-9c7d-cd4415d42961"
+    },
+    {
+      "claim_id": "6a81f0ed-6602-4663-87a5-a9937779b45d",
+      "result_id": "e08ae951-007a-4b8c-9c7d-cd4415d42961"
+    },
+    {
+      "claim_id": "edffe7ef-f88f-4792-92c8-b9bc2fe11890",
+      "result_id": "56a1cd06-917b-4d59-9288-9981383bfb58"
+    },
+    {
+      "claim_id": "3292b98b-7c24-428e-8eed-da83d6249ea1",
+      "result_id": "56a1cd06-917b-4d59-9288-9981383bfb58"
+    },
+    {
+      "claim_id": "2e7b754c-13e3-4cd8-b525-f8b6920b742c",
+      "result_id": "4475262f-8600-44db-a480-fd27e3d4428c"
+    },
+    {
+      "claim_id": "b29268e2-137a-4fa8-af9c-022e9f288e84",
+      "result_id": "c5d60f2c-4f4a-4c70-a712-aee61958a3e7"
+    },
+    {
+      "claim_id": "d595b936-ac95-4455-bb5e-92c2d989517d",
+      "result_id": "c5d60f2c-4f4a-4c70-a712-aee61958a3e7"
+    },
+    {
+      "claim_id": "8fd6c080-b7a9-45cd-80cd-a8776e98e0f0",
+      "result_id": "c5d60f2c-4f4a-4c70-a712-aee61958a3e7"
+    },
+    {
+      "claim_id": "002255db-aafb-4314-bd15-372078ce7799",
+      "result_id": "e27cd071-175a-47a6-882a-b727b16c26cd"
+    },
+    {
+      "claim_id": "198ace51-6265-49d4-ba9c-a38ffc8cca4d",
+      "result_id": "e27cd071-175a-47a6-882a-b727b16c26cd"
+    },
+    {
+      "claim_id": "173e3015-4240-4032-bee0-aa60a7eb2d4a",
+      "result_id": "1f03168e-beca-4a0f-8749-f58fe1b230fd"
+    },
+    {
+      "claim_id": "c693d23f-5bb6-4c33-b67f-f691bbabf768",
+      "result_id": "1f03168e-beca-4a0f-8749-f58fe1b230fd"
+    },
+    {
+      "claim_id": "8777cfca-04ca-4daf-ac43-229b6e0b05eb",
+      "result_id": "1f03168e-beca-4a0f-8749-f58fe1b230fd"
+    },
+    {
+      "claim_id": "2c2a6ac7-a0b2-4e0d-a997-64d53d26bccb",
+      "result_id": "2039a381-14b8-4911-925f-a234533bc255"
+    },
+    {
+      "claim_id": "eb02f8d0-2836-4578-a01d-7fb1b96e2da3",
+      "result_id": "2039a381-14b8-4911-925f-a234533bc255"
+    },
+    {
+      "claim_id": "0cec5acf-a317-4566-9f9c-842e1ecac99c",
+      "result_id": "8c3806b5-4029-44ed-b0d5-0b6f3a3fa299"
+    },
+    {
+      "claim_id": "c75623e0-872e-4686-94a5-7dc76110818c",
+      "result_id": "8c3806b5-4029-44ed-b0d5-0b6f3a3fa299"
+    },
+    {
+      "claim_id": "54c6b308-9278-4de4-9f14-45e0db10e3f5",
+      "result_id": "8c3806b5-4029-44ed-b0d5-0b6f3a3fa299"
+    },
+    {
+      "claim_id": "9648bc21-05d2-4623-bc55-2aaa6c0a6347",
+      "result_id": "8c3806b5-4029-44ed-b0d5-0b6f3a3fa299"
+    },
+    {
+      "claim_id": "24a301ec-115a-4721-8488-15fe65467c48",
+      "result_id": "5d6c10e9-5175-48cd-94ed-3093f2d79b04"
+    },
+    {
+      "claim_id": "05ddb98b-7be4-4306-9a22-eb127f176ebf",
+      "result_id": "5d6c10e9-5175-48cd-94ed-3093f2d79b04"
+    },
+    {
+      "claim_id": "1e66e8f0-e228-45eb-8ef2-7c569b6df0c9",
+      "result_id": "5d6c10e9-5175-48cd-94ed-3093f2d79b04"
+    },
+    {
+      "claim_id": "134afb37-a647-4428-9eb2-a941887d74ef",
+      "result_id": "5d6c10e9-5175-48cd-94ed-3093f2d79b04"
+    },
+    {
+      "claim_id": "2c8e53f4-af58-4e6b-8c63-3bbe1fe2a441",
+      "result_id": "0b5eb9a1-4ef3-463c-9af1-31f19a685883"
+    },
+    {
+      "claim_id": "886117a8-d259-4f73-983d-2b8893b3c9f3",
+      "result_id": "0b5eb9a1-4ef3-463c-9af1-31f19a685883"
+    },
+    {
+      "claim_id": "eff63f1c-c59f-4a3c-b604-cbbc074d6730",
+      "result_id": "0b5eb9a1-4ef3-463c-9af1-31f19a685883"
+    },
+    {
+      "claim_id": "4f85cbf2-e900-4e31-a829-b1a414b32796",
+      "result_id": "2ce78b9b-e120-46cb-8f07-61a5eeaabb60"
+    },
+    {
+      "claim_id": "e3262dfc-f228-4669-ae34-e4c19dafcc71",
+      "result_id": "2ce78b9b-e120-46cb-8f07-61a5eeaabb60"
+    },
+    {
+      "claim_id": "2b7d3b21-39fd-4217-b51c-6c0ca558d080",
+      "result_id": "2ce78b9b-e120-46cb-8f07-61a5eeaabb60"
+    },
+    {
+      "claim_id": "0e9d9f52-dd3a-48df-9e57-9ed29edac98c",
+      "result_id": "2ce78b9b-e120-46cb-8f07-61a5eeaabb60"
+    },
+    {
+      "claim_id": "1985fb08-fcc9-4493-9271-e0cb15c26b37",
+      "result_id": "1873eba5-a431-49f7-98c2-ec3e96b1c000"
+    },
+    {
+      "claim_id": "b09ed892-8d76-49d5-bb2d-7d6073a64542",
+      "result_id": "a8ecbda1-42a5-4988-a85a-3c0d63b5e05c"
+    },
+    {
+      "claim_id": "ebc73352-34a9-4a7e-b047-6acfa1feeb76",
+      "result_id": "a8ecbda1-42a5-4988-a85a-3c0d63b5e05c"
+    }
+  ],
+  "comparisons": []
+}

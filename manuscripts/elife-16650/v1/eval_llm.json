@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C6",
+      "C7",
+      "C8",
+      "C17",
+      "C18",
+      "C51",
+      "C59",
+      "C60",
+      "C64",
+      "C104"
+    ],
+    "result": "The manuscript reviews prior work by Lorteije et al. (2015) showing that monkeys performed a hierarchical decision task with four possible saccade targets based on visual information at primary (L1) and secondary (L2, L2') branching points. Lorteije et al. reported four key effects (two behavioral, two neural) that they argued favored a hierarchical model over a flat model, including: (1) L1 difficulty had no influence on L2 performance, (2) L1 decisions were biased by L2 difficulty, (3) selection signals first differentiated at L2 level then grew larger for correct branches, and (4) L2 and L2' selection signals interacted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8, C17-C18, C51, C59-C60, C64, and C104 accurately describe the experimental design and findings from Lorteije et al. (2015). These are properly cited and represent the foundation for the current manuscript's reanalysis. The description of the task structure and prior findings is consistent and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C23",
+      "C126",
+      "C127",
+      "C128",
+      "C132",
+      "C135"
+    ],
+    "result": "The authors implemented a flat race model with four competing units representing the four possible responses (TT, TD, DT, DD). The model includes key features: (1) each unit integrates evidence from both L1 and L2 branches leading to that response, (2) self-excitation and homogeneous cross-inhibition between all units, (3) activation rectification (non-negative values), and (4) a decision threshold for response selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C16, C23, C126-C128, C132, and C135 describe the model architecture and implementation details. The model is clearly specified with equations in the Methods section, and the features are justified by citations to standard race model literature (C21, C24-C27). The implementation is transparent and reproducible (C141).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The authors argue that the original Lorteije et al. flat model implementation lacked two classical ingredients of race models: inhibition between option representations and activation rectification. These features may underlie the reduction of choice-related neural activity when more alternatives are provided.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 are well-supported by multiple citations to race model literature (Usher and McClelland, 2001; Tsetsos et al., 2012; Churchland and Ditterich, 2012). The critique of the original implementation is specific and grounded in established modeling principles. The connection to neural phenomena (C22) is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C43",
+      "C44",
+      "C45",
+      "C50"
+    ],
+    "result": "Using a standard race model implementation with inhibition and rectification, the authors found that L1 difficulty had no influence on L2 performance (p>0.4), matching animal behavior. This null effect emerges because minimum accumulation time prevents early responses even with strong L1 evidence. When inhibition was removed, the interaction between L1 difficulty and L2 performance was recovered (p<10\u207b\u2074).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C43-C45, and C50 report simulation results with appropriate statistical tests. The mechanistic explanation (C44) is logical and supported by control simulations (C45, C50). Figure 2E and Figure 2\u2014figure supplement 1A provide visual evidence. The results directly address the first behavioral effect from Lorteije et al.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The authors address concerns from Zylberberg et al. (2017) about compatibility with short reaction times. Mathematical analysis (Appendix 1) shows that L1 difficulty influences L2 performance primarily when L1 difficulty strongly modulates reaction times. Short reaction times with low modulation are compatible with lack of L1-L2 interaction. Simulations with lowered threshold and time-dependent collapsing bound reproduced this result.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39 provide a coherent response to criticisms from the companion paper. The mathematical analysis (C33) supports the interpretation, and simulations (C35) demonstrate the effect. The time-dependent bound (C36-C37) is justified by experimental constraints and citations. The explanation for discrepancies (C39) is reasonable though speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C46",
+      "C30",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The flat model simulations reproduced multiple behavioral features from the monkey data: (1) primacy effect in L1 choices, (2) psychometric curves for L1 and L2 decisions with better performance at primary branches, (3) reaction time patterns matching Zylberberg et al. (2017), and (4) appropriate response type distributions. Parameters were tuned to qualitatively match behavioral and neural data, with 100,000 simulated trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42, C46, C30, C136-C140 describe simulation procedures and results that match experimental observations. Figure 2A-F provides visual evidence for these claims. The parameter tuning approach is transparent (C30, C136), and the simulation scale (C137) is appropriate. The model successfully captures multiple behavioral phenomena.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The flat model naturally accounts for the bias of L1 decisions toward branches with easier L2 decisions. Strong evidence at a secondary branch boosts selection of the corresponding final option, biasing L1 choice. This effect was reproduced in simulations (Figure 2G). In contrast, the hierarchical model requires an ad hoc modulatory signal from L2 to L1 that was not implemented in the original Lorteije et al. race model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C55 address the second behavioral effect from Lorteije et al. The mechanistic explanation (C48, C54) is clear and follows logically from the model architecture. Simulation results (C55) support the claim. The critique of the hierarchical model (C52-C53) is valid and properly cited. This demonstrates a key advantage of the flat model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The flat model has an important advantage over the hierarchical model: by integrating strength of evidence from each level, it optimally accounts for uncertainty in decisions, leading to more accurate responses. The hierarchical model integrates decisions independently of evidence strength, requiring ad hoc mechanisms that may not scale well with more options.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 present a logical argument about the relative merits of the two models. The advantage of the flat model (C56) follows from its architecture and is consistent with optimal decision-making principles. The critique of the hierarchical model (C57-C58) is reasonable, though the scalability concern (C58) is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The flat model accounts for the first neural effect: selection signals (difference between target and distractor activation) first increase in parallel for L2 and L2', then grow larger for correct branches. This emerges naturally through activation rectification and inhibition between options across branches. The dynamics closely resemble neural multi-unit activity in V4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63, C68-C70 address the first neural effect from Lorteije et al. The mechanistic explanation (C62, C69) is clear and follows from the model features. Figure 3A provides visual evidence matching neural data (C70). The role of rectification (C63) is supported by reference to neural recordings. This is a key result showing the flat model can explain neural dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The flat model accounts for the second neural effect: interaction between L2 and L2' selection signals, where clear evidence at one branch reduces the selection signal at the other. This emerges through inhibition between options across branches, causing activation to collapse at the zero boundary. Both directions of the effect were observed in simulations and match monkey visual cortex data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67, C71-C73 address the second neural effect from Lorteije et al. The mechanistic explanation (C67, C72) is clear and consistent with the model architecture. Figure 3B provides visual evidence for both directions of the effect (C73). The contrast with the hierarchical model (C65) highlights the parsimony of the flat model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C85",
+      "C86",
+      "C88"
+    ],
+    "result": "Unit activity in the flat model is modulated by evidence at both L1 and L2 levels, with TT and TD units showing positive modulation with L1 evidence and DT and DD units showing negative modulation (p<10\u207b\u2079). This mixing of evidence from both levels is consistent with new data from Zylberberg et al. (2017) showing that selection signals in at least 3 out of 4 L2 branches mix L1 and L2 evidence. The authors argue this observation is most compatible with the flat model and rules out the hierarchical model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76, C85-C86, and C88 present a critical distinguishing feature between models. The simulation results (C88) are statistically significant and shown in Figure 3C. The interpretation (C76) is logical. The connection to Zylberberg et al. data (C85) strengthens the argument. The conclusion (C86) is strong but appropriately qualified with an alternative interpretation (C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The simulations show positive modulation in TD signals, unlike the null effect in monkey data. However, modulation was weakest in the TD branch despite homogeneous inhibition. The authors suggest this weaker effect may explain the lack of significance in monkey data, and propose that stronger local inhibition (within same L1 branch) could reduce or abolish TD modulation, consistent with general cortical connectivity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C93 acknowledge a discrepancy between model and data. The observation (C90) is documented in Figure 3C. The explanations (C91-C92) are speculative but reasonable. The appeal to cortical connectivity (C93) is properly cited. However, this represents an unresolved limitation of the current model implementation that would require further work to address definitively.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Zylberberg et al. found that in the flat model, errors in L1 are associated with higher sensitivity at L2, whereas monkeys show no such effect. The authors acknowledge this challenges the current flat model implementation, but note it is unknown whether the hierarchical model could avoid this feature, as the reward maximization mechanism might produce the same interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 honestly acknowledge a limitation of the flat model. The citation to Zylberberg et al. (C94) is appropriate. The acknowledgment (C95) is direct. The speculation about the hierarchical model (C96-C97) is fair and balanced. This demonstrates scientific integrity in addressing challenges to the proposed model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors conclude that all four observations from Lorteije et al. can be accounted for with a standard race-model implementation of the flat model. The observations were robust and did not require fine tuning. All required features are classical constituents of race models, not ad hoc mechanisms. The flat model provides a more parsimonious explanation than the hierarchical model, which requires modulatory signals between parallel decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 summarize the main findings. The conclusion (C77) is supported by the simulation results presented throughout. The robustness claim (C78) is consistent with the reported results. The argument about parsimony (C79-C80) is logical and well-supported. The qualification (C81) appropriately notes that the evidence does not definitively favor either model, setting up the importance of the mixed evidence finding (C82-C86).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "A fundamental difference between the models is that selection signals in the flat model mix evidence from both L1 and L2 branches, while the hierarchical model predicts unmixed signals (influence across branches can only occur after decision).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 identify a key distinguishing prediction between models. This is a logical inference from the model architectures and provides a clear empirical test. This distinction is crucial for the argument that follows about which model is supported by the Zylberberg et al. data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors discuss whether selection signals in visual cortex are generated locally or reflect feedback from higher regions. The flat model is arguably more consistent with the feedback hypothesis, as it implies integration and inhibition across distant visual locations, which are typically associated with higher cortical regions. Selection signals represent neural markers for integration processes along subbranches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 provide thoughtful discussion of neural implementation. The uncertainty (C98) is appropriate. The inference about the flat model (C99) is logical and supported by citation to Wimmer et al. (2015). The general principle (C100) is properly cited. The interpretation (C101) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "A limitation of flat models is that they require learning high-order representations integrating evidence from all relevant sensory sources, which may take time to acquire. Monkeys performed ~60,000 trials, possibly sufficient for learning appropriate representations. When insufficient time is afforded, the system may rely on less efficient hierarchical strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 discuss an important limitation and boundary condition for the flat model. The limitation (C102) is properly cited and logical. The speculation about learning time (C103, C105) is reasonable given the citations. The hypothesis about strategy switching (C106) is interesting though speculative. This provides important context for when each model might apply.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The comparison of flat and hierarchical models relates to the debate about whether information from distinct sources is integrated before or after decision. In multimodal integration with complementary cues (e.g., object localization), the brain learns crossmodal representations and integrates information pre-decision. When mapping arbitrary unimodal signals to responses, crossmodal representations are not formed and integration occurs post-decision. The authors hypothesize that integration level depends on experience, switching from hierarchical to flat with learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C113 connect the work to broader principles of multisensory integration. The general principles (C108-C112) are properly cited (K\u00f6rding and Wolpert, 2004; Otto and Mamassian, 2012). The hypothesis (C113) is speculative but well-motivated by the preceding discussion and the learning limitation discussed earlier. This provides valuable theoretical context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The authors distinguish between hierarchical vs. flat nature of integration (level and structure of representations) and serial vs. parallel nature (whether evidence from different sources can be integrated simultaneously). The flat model is compatible with serial integration if attentional constraints limit processing of evidence from distant visual locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 clarify an important conceptual distinction. The definitions (C115-C116) are clear and logical. The point about compatibility (C117) is important and properly cited (Zylberberg et al., 2012). This prevents misinterpretation of the flat model as necessarily requiring parallel processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The model includes self-excitation, which models instability in attractor models and can underlie urgency signals. Noise did not scale with stimulus intensity, consistent with recent findings that noise in perceptual accumulation is associated with accumulation rather than sensory processing. A non-absorbing threshold was used, with same results for absorbing bounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 describe modeling choices that are well-justified by citations (Roxin and Ledberg, 2008; Drugowitsch et al., 2012, 2016; Gold and Shadlen, 2007). The robustness check (C29) strengthens confidence in the results. These are standard and appropriate choices for this type of model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "Despite premature conclusions, the experimental framework developed by Lorteije and colleagues opens a promising venue for understanding evidence accumulation and perceptual decisions in ecological settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C119 provides a balanced concluding assessment. While critiquing the original conclusions as premature, it acknowledges the value of the experimental approach. This is appropriate given that the manuscript reanalyzes the same dataset and finds it informative for distinguishing models.",
+    "result_type": "MINOR"
+  }
+]

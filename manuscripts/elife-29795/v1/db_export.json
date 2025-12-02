@@ -1,0 +1,1784 @@
+{
+  "submission": {
+    "id": "befda290-871c-431f-a15a-06bc9d2b3223",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:18:34.071616Z",
+    "updated_at": "2025-12-01T21:18:34.071616Z"
+  },
+  "content": [
+    {
+      "id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "submission_id": "befda290-871c-431f-a15a-06bc9d2b3223",
+      "content_type": "manuscript",
+      "content_text": "# Rac1 GTPase activates the WAVE regulatory complex through two distinct binding sites\n\n## Authors\n\n- Baoyu Chen<sup>1</sup> ([ORCID: 0000-0002-6366-159X](https://orcid.org/0000-0002-6366-159X)) \u2020\n- Hui-Ting Chou<sup>3</sup>\n- Chad A Brautigam<sup>1</sup>\n- Wenmin Xing<sup>1</sup>\n- Sheng Yang<sup>5</sup>\n- Lisa Henry<sup>1</sup>\n- Lynda K Doolittle<sup>1</sup>\n- Thomas Walz<sup>6</sup>\n- Michael K Rosen<sup>1</sup> ([ORCID: 0000-0002-0775-7917](https://orcid.org/0000-0002-0775-7917)) \u2020\n\n### Affiliations\n\n1. Department of Biophysics University of Texas Southwestern Medical Center at Dallas Dallas United States\n2. Howard Hughes Medical Institute University of Texas Southwestern Medical Center at Dallas Dallas United States\n3. Department of Cell Biology Harvard Medical School Boston United States\n4. Department of Microbiology University of Texas Southwestern Medical Center Dallas United States\n5. Roy J. Carver Department of Biochemistry, Biophysics and Molecular Biology Iowa State University Ames United States\n6. Rockefeller University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe Rho GTPase Rac1 activates the WAVE regulatory complex (WRC) to drive Arp2/3 complex-mediated actin polymerization, which underpins diverse cellular processes. Here we report the structure of a WRC-Rac1 complex determined by cryo-electron microscopy. Surprisingly, Rac1 is not located at the binding site on the Sra1 subunit of the WRC previously identified by mutagenesis and biochemical data. Rather, it binds to a distinct, conserved site on the opposite end of Sra1. Biophysical and biochemical data on WRC mutants confirm that Rac1 binds to both sites, with the newly identified site having higher affinity and both sites required for WRC activation. Our data reveal that the WRC is activated by simultaneous engagement of two Rac1 molecules, suggesting a mechanism by which cells may sense the density of active Rac1 at membranes to precisely control actin assembly.\n\n## Introduction\n\nDynamic rearrangements of the actin cytoskeleton play central roles in cellular processes, ranging from cell migration and adhesion to endocytosis and intracellular vesicle trafficking (Skau and Waterman, 2015). In many of these processes, actin dynamics are spatially and temporally controlled by members of the Wiskott-Aldrich Syndrome Protein (WASP) family. These proteins integrate a diverse array of upstream signals and transmit them through their conserved VCA sequence to the Arp2/3 complex, which, in turn, nucleates actin filaments to create branched actin networks at membranes (Campellone and Welch, 2010; Padrick and Rosen, 2010). In most WASP family proteins, the VCA element is inhibited in the resting state. Inhibition is mediated either by autoinhibition within a single polypeptide chain, as in WASP and N-WASP, or by trans-inhibition within large multi-protein assemblies, as in WAVE and WASH (Rotty et al., 2013). Multiple signals, including binding to ligands (e.g. Rho family GTPases, phosphoinositide lipids and membrane receptors) and covalent modifications (e.g. phosphorylation and ubiquitination), often act cooperatively to relieve inhibition and concomitantly recruit WASP proteins to their sites of action at membranes (Chen et al., 2014a, 2010; Hao et al., 2013; Lebensohn and Kirschner, 2009; Padrick and Rosen, 2010; Prehoda et al., 2000; Torres and Rosen, 2003; 2006).\n\nThe WASP family members WAVE1, WAVE2 and WAVE3 are essential to actin dynamics needed for normal development and function of most eukaryotic organisms, and are also implicated in many cancers (Bisi et al., 2013; Lane et al., 2014; Takenawa and Suetsugu, 2007; Yanagisawa et al., 2013). In cells, each WAVE protein functions exclusively within a 400 kDa, heteropentameric assembly, termed the WAVE Regulatory Complex (WRC), which also contains the proteins Sra1, Nap1, Abi2, and HSPC300 (or their homologs) (Stovold et al., 2005). Previously, we reported crystal structures of an inhibited WRC assembly containing all five subunits, but lacking the disordered C terminus and SH3 domain of Abi2 and the proline-rich region of WAVE1 (mini-WRC) (Chen et al., 2010), and of this assembly bound to a WRC Interacting Receptor Sequence (WIRS) motif peptide derived from the adhesion receptor, protocadherin 10 (Chen et al., 2014a). The structure revealed that Sra1 and Nap1 form an elongated dimer of about 100 \u00d7 100\u00a0\u00d7200 \u00c5. WAVE1, Abi2 and HSPC300 form a trimer as an elongated 4-helix bundle, which aligns along the long axis of the Sra1/Nap1 dimer (Figure 1A). Immediately following the helix bundle, an extended sequence of\u00a0~90 a.a. from WAVE1 \u2018meanders\u2019 across the surface of Sra1 as a loose collection of loops and helices (the meander region). The VCA element of WAVE1 is sequestered at the VCA-binding site by multiple interactions between its V and C helices and a group of helices from both Sra1 and the meander region of WAVE1 itself, explaining how WAVE1 is inhibited within the WRC (Chen et al., 2010).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/29795/elife-29795-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic representation (left) and size-exclusion chromatography profile (right) of the \u0394WRC230-Rac1 complex, with Coomassie blue-stained SDS-PAGE gel of the peak fraction shown. Dashed line indicates the tethering sequence between WAVE1 meander region and Rac1. (B) Overall EM density and the fitted model of the \u0394WRC230-Rac1 complex. WAVE1(130\u2013147, 161\u2013230) and (GGS)6 leading to Rac1 have no EM density and are shown as dotted lines. (C) Close-up views of Rac1 fitted into the extra density not accounted for by the WRC. Black arrow heads indicate close contacts between Rac1 and the WRC.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29795/elife-29795-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Coomassie blue-stained SDS-PAGE gel of a competition pull-down assay (schematic shown above the gel). GST-Rac1 was used to pull down \u0394WRC230 with various ratios of free Rac1 as a competitor (indicated by the blue triangle above the gel), or to pull down \u0394WRC230-Rac1 with the tethered Rac1 as an intrinsic competitor (right-most gel lane). Quantification of the WRC bands on the gel is plotted on the right, with the dashed orange line indicating the concentration of free Rac1 (blue curve) needed to achieve the same level of competition as the tethered Rac1 (orange circle). All Rac1 used here is residues 1\u2013177 and has the Q61L/P29S mutations. (B) Coomassie blue-stained SDS-PAGE gel showing GST-Rac1 (Q61L or Q61L/P29S as indicated; both loaded with GMPPNP) pull-down results for\u00a0\u0394WRC217. (C) Actin assembly assays using Rac1 (1-188) with the indicated mutations. Reactions contain 4 \u00b5M actin (5% pyrene labeled), 10 nM Arp2/3 complex, 100 nM WRC217VCA, and the indicated amounts of Rac1 loaded with GMPPNP. On the left are representative actin assembly curves. On the right are the derived maximum actin assembly rates at different Rac1 concentrations (Doolittle et al., 2013).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29795/elife-29795-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) EM image of negatively stained complex. (B) Cryo-EM image of vitrified complex. (C) The 56 averages obtained by subjecting 11,874 particle images to the iterative stable alignment and clustering (ISAC) procedure (Yang et al., 2012). Yellow arrows indicate extra density in addition to the WRC. (D) After 3D classification of 39,145 particles, 8 classes (indicated by asterisks) showing extra density for Rac1 were combined for subsequent refinement.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/29795/elife-29795-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Different views of the final density map. (B) Fourier shell correlation (FSC) curve obtained from separate refinement of two halves of the whole data set. Using FSC\u00a0=\u00a00.143 as a cut-off, the density map has a resolution of 7.0 \u00c5. (C) Local resolution of the density map calculated with ResMap (Kucukelbir et al., 2014).\n\nThe structures also suggested how the WRC might be activated and recruited to membranes by the combined actions of the Rho GTPase Rac1, the acidic phospholipid PIP3, phosphorylation on both Ser and Tyr residues, and membrane receptors containing WIRS motifs. Among these, the GTPase Rac1 functions as a canonical activator, whose direct interaction with the WRC is necessary, and in some reports, sufficient to drive activation (Chen et al., 2014a; Chen et al., 2010; Eden et al., 2002; Ismail et al., 2009). Based on mutagenesis and biochemical data, we previously proposed that Rac1 binds to a conserved surface at one end of Sra1 adjacent to the VCA-binding site (referred to as the \u2018A Site\u2019 in Figure 1B). We hypothesized that binding of Rac1 could cause structural changes that propagate through the meander region to the VCA to promote VCA release and consequent activation toward the Arp2/3 complex (Chen et al., 2010). However, in the absence of a WRC-Rac1 complex structure, it remained uncertain exactly how Rac1 binds to and activates the WRC.\n\nHere we report the structure of a WRC-Rac1 complex at 7 \u00c5 resolution determined by single-particle cryo-electron microscopy (cryo-EM), together with complementary mutagenesis and biochemical analyses of the complex. Surprisingly, Rac1 is not found on the binding site we predicted previously. Rather, it binds to a conserved site on the opposite end of Sra1. Our biochemical data, including quantitative pull-down, membrane recruitment, and analytical ultracentrifugation (AUC) assays with WRC mutants, confirm that both the original site and the new site can bind Rac1, the latter with approximately 40-fold higher affinity. Actin assembly experiments further reveal that both sites contribute to activation of the WRC toward the Arp2/3 complex. These data lead to a model in which maximal WRC activation requires simultaneous engagement of two Rac1 molecules on the membrane. This bivalent activation model suggests a mechanism by which cells may precisely control actin dynamics at membranes by sensing the density of active Rac1 produced by upstream signaling pathways.\n\n## Results\n\n### Engineering a stable WRC-Rac1 complex\n\nInitially we sought to determine the crystal structure of an intermolecular complex of the WRC bound to Rac1. Despite extensive efforts, however, we were unable to obtain diffracting crystals of such an assembly. These investigations led us to an engineered WRC-Rac1 complex with improved stability, which proved suitable for structure determination by cryo-EM (Figure 1A,B). Compared to the mini-WRC construct previously used for crystallography (Chen et al., 2010), we incorporated the following modifications to stabilize Rac1 binding (Figure 1A). First, we removed the VCA sequence from the WRC (herein named \u0394WRC), a modification that we previously showed increases the affinity for Rac1\u00a0~10 fold (Chen et al., 2010). Second, we genetically fused Rac1 to the C terminus of WAVE1 (a.a. 1\u2013230) through a flexible linker (GGS)6. The previous crystal structures (and the cryo-EM structure reported here) showed that WAVE1 is only ordered to residue L184 within the WRC, affording the system here an effective linker of 65 amino acids. This linker,~230 \u00c5 if fully extended, would provide ample length to connect Rac1 to the previously demonstrated binding site, which is approximately 70 \u00c5 from residue L184 of WAVE1. Based on experiments measuring binding to immobilized GST-Rac1, the tethered Rac1 protected the WRC from binding to GST-Rac1 much more efficiently than the un-tethered Rac1 protected the wild type WRC, suggesting the tethered Rac1 binds the WRC in a physiologically relevant manner (Figure 1\u2014figure supplement 1A). Third, we introduced two point mutations, Q61L and P29S, into the fused Rac1. The Q61L mutation abolishes the GTP hydrolysis activity of Rac1 (Der et al., 1986), maintaining the protein in the GTP-bound state. The P29S mutation was identified as one of the major somatic mutations in melanoma (Hodis et al., 2012; Krauthammer et al., 2012), and was shown to increase the affinity of Rac1 for the effectors PAK1 (p21 protein activated kinase 1) and MLK3 (mixed-lineage kinase 3) (Hodis et al., 2012; Krauthammer et al., 2012). Similarly, we found that the P29S mutation also increases the affinity of Rac1 for the WRC (Figure 1\u2014figure supplement 1B and C). Together, these optimizations facilitated stable association of Rac1 with the WRC. To distinguish this construct from the mini-WRC used for crystallography, we name it the \u0394WRC230-Rac1 complex.\n\n### Cryo-EM Structure of the\u00a0\u0394WRC230-Rac1 Complex\n\nWe first examined the \u0394WRC230-Rac1 complex by electron microscopy of negatively stained specimens, which showed images of monodisperse particles of homogeneous size and shape (Figure 1\u2014figure supplement 2A). This prompted us to collect cryo-EM images of vitrified samples for structure determination (Figure 1\u2014figure supplement 2B). We first manually picked\u00a0~12,000 particles from 489 images and calculated class averages using the iterative stable alignment and clustering (ISAC) procedure (Yang et al., 2012). Some of the resulting averages showed extra density in addition to the WRC, indicating the presence of Rac1 (Figure 1\u2014figure supplement 2C, arrows). We further collected 1684 images, from which a total of 160,591 particles were automatically picked, and then processed using Relion (Scheres, 2012). The pooled particle images were aligned to the low-pass filtered crystal structure of the mini-WRC (PDB 3P8C) (Chen et al., 2010) and subjected to 3D classification (Figure 1\u2014figure supplement 2D). After further refinement, we obtained a final density map from 29,784 particles at a resolution of 7 \u00c5 (Figure 1\u2014figure supplement 3).\n\nThe overall EM density map clearly revealed a structure containing both the WRC and Rac1 (Figure 1\u2014figure supplement 3A), with Rac1 bound to Sra1 at one end of the WRC (detailed below). The mini-WRC crystal structure (PDB 3P8C) could be unambiguously docked into the EM density map, with the majority of the secondary structural elements fitting into the density without need for adjustment (Figure 1B). Several surface loops in Sra1 and Nap1 that were not observed in the crystal structure also have defined EM densities (Figure 2A). The EM map shows no density for the V and C helices of the VCA region of WAVE1 (Figure 2B, right panel, elements colored black), which was present in the mini-WRC crystal structure but was removed in the\u00a0\u0394WRC230-Rac1 complex used here. No density was observed for the first helix (\u03b11) of Sra1 (Figure 2B, left panel). In crystals of mini-WRC this helix did not bind in intra-complex fashion, but rather to an adjacent WRC in the crystal lattice. Density was also not observed for residues 161\u2013230 of WAVE1 or the (GGS)6 linker (Figure 2B, right panel), which leads to the N terminus of the fused Rac1, suggesting that this sequence of 88 residues does not form a stable structure in the complex. No major conformational changes of the WRC were observed within the limits of our 7 \u00c5 resolution, except for the meander region of WAVE1 (a.a. 90\u2013184) (Figure 2C), which formed a series of helices (\u03b12-\u03b16) arrayed across the surface of Sra1 in the mini-WRC crystal structure (Chen et al., 2010). In the EM map, the meander region generally has weak density. Several regions either adopt an orientation different from the crystal structure (a.a. 90\u201397 in \u03b12, a.a. 113\u2013118 prior to \u03b13, and a.a. 148\u2013160 between \u03b15 and \u03b16), or have missing density (a.a. 130\u2013147 between \u03b13 and \u03b15 and a.a. 161\u2013182 of the long \u03b16 helix) (Figure 2C). In the crystal structure of the inhibited mini-WRC, helices \u03b12 and \u03b16 directly bind the V and C regions of the VCA, respectively. Mutagenesis studies suggest that these interactions act cooperatively to sequester the VCA, inhibiting its activity toward the Arp2/3 complex (Chen et al., 2010). The observations here support this idea, since removing the VCA (and possibly Rac1 binding as well) reciprocally appears to destabilize the meander region.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/29795/elife-29795-fig2-v1.jpg)\n\n**Figure 2.:** (A) EM density for surface loops (represented by red dashed lines) missing in the mini-WRC crystal structure. (B) Elements observed in the crystal structure but lacking densities in the EM reconstruction, with elements present in the\u00a0\u0394WRC230-Rac1 construct in red and elements absent from the \u0394WRC230-Rac1 construct in black. (C) Several structural elements (red) in the meander sequence have EM densities suggestive of different orientations.\n\nThe only major extra density not accounted for by the WRC was located on a surface of Sra1\u00a0~120 \u00c5 from the previously proposed Rac1 binding site, on the opposite end of the long axis of the WRC (Figure 1B). This density unambiguously accommodated the crystal structure of Rac1 P29S, including all secondary structure elements and most loops (PDB 3SBD) (Krauthammer et al., 2012) (Figure 1C). In this position, the N terminus of Rac1 is located\u00a0~100 \u00c5 from the last ordered residue of WAVE1 to which it is linked, a distance that could readily be spanned by the 88 disordered residues of the tether. Note that none of our EM maps resulting from 3D classification indicated that Rac1 was bound to other regions of the WRC. Even supervised classification that included as reference a model of the WRC with Rac1 bound to the previously predicted binding site failed to produce a map that revealed additional density at this site (data not shown).\n\nRac1 and other small GTPases use two conserved structural elements, Switch I (a.a. 25\u201339) and Switch II (a.a. 57\u201375), to bind and activate downstream signaling proteins in a nucleotide-dependent manner (Mott and Owen, 2015). In our model of the complex, both Switch I and Switch II of Rac1 make direct contact with the WRC, through a conserved surface on the Sra1 subunit (a.a. 957\u2013979, arrow heads in Figure 1C). This observation further validates the EM density map, which was derived without using crystal structures of Rac1 as a reference.\n\n### Rac1 binds to two distinct sites on the WRC with different affinities\n\nIn our structure Rac1 is not located at the site predicted by our previous biochemical/mutagenesis analyses. That site is a conserved surface patch on Sra1 near the \u03b14-\u03b16 helices of the WAVE1 meander region, adjacent to the VCA binding site (Figure 1B, Figure 3A) (Chen et al., 2010). Instead, in the EM reconstruction, Rac1 binds to a different conserved surface at the opposite end of the rod-shaped Sra1 subunit, which is distant from the meander-VCA region (Figure 1B, Figure 3A). For clarity, here we name the previously described site the \u2018A Site\u2019 (for Adjacent Site), and the site observed in the EM structure the \u2018D Site\u2019 (for Distant Site).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/29795/elife-29795-fig3-v1.jpg)\n\n**Figure 3.:** (A) Overall structure of the \u0394WRC230-Rac1 complex showing the locations of the A site and D site. Sra1 and Nap1 are shown in surface representation; WAVE1, Abi2, HSPC300 and Rac1 are shown in ribbon representation. Semitransparent pink cylinders are used to refer to the positions of WAVE1 \u03b16 helix (without observable EM density) and the V and C helices (only present in the mini-WRC). Residues in the A Site whose mutation was previously shown to impair Rac1 binding are black. Surface patches in the D Site mutated here are colored as in (B\u2013F). (B) Close-up view of the D Site with semitransparent surface and key side chains shown under the surface. Rac1 was removed for clarity. (C\u2013D) top and side views of the D Site, showing the location of the buried residue S969 (red). (E) Coomassie blue-stained SDS-PAGE gel showing GST-Rac1-GMPPNP (WT) pull-down assay of WRCs bearing the indicated mutations in Sra1 at the Rac1-binding sites. Top panel shows elution of material retained on the beads, bottom panel shows input control. See non-equilibrium GST pull down assay section of Experimental Methods for details of constructs. (F) Top: schematic of membrane recruitment assay using supported lipid bilayers. WRC construct was same as in panel E. Bottom: quantification of the EGFP-WRC/mCherry-Rac1 signals for each reaction used 10 separate TIRF images, with five each collected from two independent experiments. Error bars represent standard error, and p values were calculated by pairwise comparison using Tukey\u2019s test (*p<0.05, and ****p<0.00005).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29795/elife-29795-fig3-figsupp1-v1.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29795/elife-29795-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Coomassie blue-stained SDS-PAGE gels are shown. Each mutant is color-coded on top of the gel as in Figure 2E. (A) Pull-down using wild-type GST-Rac1 loaded with GDP under identical conditions as in Figure 2E. (B) Pull-down using GST-Rac1 (Q61L/P29S) and higher salt concentration (100 mM NaCl). Experiments were performed in parallel with those in main Figure 3, and the same input control gel (Figure 3E, lower panel) applies here.\n\nHow can the previous biochemical analyses be reconciled with the location of Rac1 found in the present structure? In our previous work, we found that the A Site was one of the few highly conserved surface patches on the WRC. We showed that mutating any of three surface residues (C179R, R190D, or M632D), or one pair of residues (E434K/F626A), at the A Site disrupted Rac1 binding in qualitative GST pull-down experiments, and that the two mutations analyzed in a quantitative equilibrium dialysis experiment (R190D and E434K/F626A) both decreased affinity (Chen et al., 2010). In comparison, the D Site is also conserved, although less so than the A Site (Supplementary file 1 and Figure 3\u2014figure supplement 1). To test if Rac1 also binds to the D Site, we introduced point mutations to its surface residues and examined the mutants in a battery of assays. We divided the surface into six distinct patches and mutated them separately (color coded in Figure 3B): P957A/K958D/I959A, R961D/P963A/R964D, Y967A, G971W, E974A/F975A/H978A/Q979A, and D1122A/E1123A. We also examined a point mutation, S969F, which is buried immediately beneath the D Site (labeled in red in Figure 3C and D). The equivalent mutation, S968F, in Cyfip2 (the mouse ortholog of Sra1) was shown to cause an altered cocaine response in mice through an unknown mechanism (Kumar et al., 2013). Finally, we also reanalyzed a previously tested mutation at the A Site, C179R (labeled in black in Figure 3A). As described in the Protein Purification section of the Materials and Methods, all of the WRC mutants appear to be properly folded and assembled.\n\nWe first examined the ability of immobilized GST-Rac1 to retain the WRC mutants. GST-Rac1 loaded with GMPPNP (a poorly hydrolyzable GTP analog) could efficiently retain wild type (WT) WRC as well as one of the six D Site mutants, D1122A/E1123A (Figure 3E). All other mutations at the D Site substantially diminished binding, suggesting that this region mediates high-affinity interactions with Rac1. The D1122A/E1123A mutation is located at the periphery of the D Site, likely explaining its lack of effect on binding (Figure 3B, grey patch). Consistent with our previous report (Chen et al., 2010), the A Site mutation, C179R, also decreased binding under the same experimental conditions, albeit more moderately (Figure 3E). The observed interactions are specific to active Rac1, since Rac1-GDP did not bind to any of the WRCs (Figure 3\u2014figure supplement 2A). The S969F mutation did not appreciably affect binding (Figure 3E).\n\nWe obtained similar results under different reaction conditions, employing the high-affinity mutant Rac1 (Q61L/P29S) at a higher salt concentration (100 mM NaCl, vs. 50 mM above) (Figure 3\u2014figure supplement 2B). Under these conditions, which favor binding to the WRC, the A Site mutation C179R, and the D Site mutations, P957A/K958D/I959A, G971W and E974A/F975A/H978A/Q979A, all weakened binding to a moderate degree, whereas the R961D/P963A/R964D and Y967A mutations at the D Site still eliminated observable binding. The D1122A/E1123A and S969F mutations had no effect. These data suggest that the A Site makes a modest contribution to the total observed binding in pull-down experiments, while the D Site, especially the surface patch formed by R961/P963/R964/Y967, has a major contribution. It is notable that P963 and Y967 are highly conserved in eukaryotic organisms including animals, fungi, amoebas and many protozoans, except plants (Supplementary file 1). In the experiments below, we focused on the Y967A mutation to disrupt the D Site.\n\nBecause Rac1 activates the WRC at membranes in vivo, we further developed an assay to examine if mutating the A or D Site could similarly disrupt the binding when Rac1 is attached to membranes (Figure 3F). We fused an N-terminal mCherry tag and a C-terminal His8 tag to Rac1 (either Q61L/P29S or wild type, as indicated in Figure 3F). The latter allowed the protein to be anchored on supported bilayers containing 2% Ni2+-NTA-DGS lipid (see schematic presentation in Figure 3F) (Banjade and Rosen, 2014). We then quantified the amount of EGFP-tagged WRC recruited to the Rac1-containing membrane using Total Internal Reflection Fluorescence (TIRF) microscopy. Paralleling the above GST pull-down experiments, mutating either the A Site (C179R) or the D Site (Y967A) significantly decreased membrane recruitment of the WRC, with the D Site mutation having a larger effect. In contrast, the S969F mutation did not decrease, but rather slightly increased membrane recruitment (Figure 3F).\n\nThese data suggest that Rac1 can bind to both the A and D sites. Nevertheless, it remained possible that only the D Site directly contacts the GTPase (as observed in the cryo-EM structure) and the A Site mutations disrupted binding through allosteric effects on the D site. To examine this possibility, we used Multi-Signal Sedimentation Velocity Analytical Ultracentrifugation (MSSV AUC) to directly measure the stoichiometry of the interaction between Rac1 (Q61L/P29S) and\u00a0\u0394WRC230 (Figure 4) (Balbo et al., 2005; Padrick et al., 2010). To separately track sedimentation of the two components, we fused EGFP to the N-terminus of Rac1. This labeling allowed us to use absorbance at 490 nm to specifically monitor EGFP-Rac1 and use interference signals to record the sedimentation of all proteins. Thus, in our assay EGFP-Rac1 was tracked by both signals, and the WRC by interference only. We note that MSSV AUC enables direct quantification of the EGFP-Rac1/WRC stoichiometry for any given species, as well as its sedimentation coefficient. Individually, both EGFP-Rac1 and the WRC sedimented as high-purity, monodisperse species, with sedimentation coefficients of 3.5 s and 10.5 s, respectively (Figure 4, and see Figure 4\u2014figure supplement 1 for SDS PAGE gels and gel filtration chromatography profiles of the protein samples). When the two proteins were mixed, keeping WRC at approximately 1 \u00b5M concentration and increasing EGFP-Rac1 from 1.2 \u00b5M to 15 \u00b5M, a fraction of EGFP-Rac1 began co-sedimenting with the WRC (Figure 4A, left panel, green curves). Addition of EGFP-Rac1 also shifted the WRC peak toward a higher sedimentation coefficient in a concentration dependent manner (Figure 4A, left panel, black curves). At an intermediate concentration of EGFP-Rac1 (3.7 \u03bcM), the WRC peak shifted to 11.7S with a Rac1:WRC stoichiometry of 1.3:1, suggesting more than one binding site. Increasing the concentration of EGFP-Rac1 up to 15.1 \u03bcM shifted the sedimentation coefficient of the WRC peak to 12.1S and stoichiometry to 1.9:1, confirming that two Rac1 molecules can simultaneously bind to a single WRC (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/29795/elife-29795-fig4-v1.jpg)\n\n**Figure 4.:** (A) Sedimentation profiles (ck(s) distributions) of indicated samples at various concentrations (green for EGFP-Rac1 (Q61L/P29S), black for WT \u0394WRC230, blue for C179R, and red for Y967A). Dashed lines are used as a reference to indicate the sedimentation coefficients of the WRC alone and EGFP-Rac alone, respectively. (B) Sedimentation coefficient and stoichiometry of Rac1/WRC in the WRC peak.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29795/elife-29795-fig4-figsupp1-v1.jpg)\n\nThe MSSV AUC data for the mutants were quite different. For the A Site mutant (C179R), at a nearly saturating concentration of EGFP-Rac1 (8.4 \u03bcM vs. dissociation constant KD of 0.27 \u03bcM as determined below), the binding stoichiometry only reached 1:1 (Figure 4A, blue curves, 4B). For the D Site mutant (Y967A), the binding stoichiometry only reached to 0.6:1 with 8.5 \u03bcM Rac1, consistent with the lower affinity (KD\u00a0~11.5 \u03bcM) of the A Site as determined below (Figure 4A, red curves, 4B) and implicated by the qualitative GST-pull down data above. Together, the AUC data confirmed that two molecules of Rac1 can engage the WRC at the A and D sites simultaneously, and that our mutations could selectively weaken binding to the individual sites.\n\nThe above data all suggest that the A Site has a weaker affinity than the D Site. To quantify this difference, we used an equilibrium pull-down (EPD) assay to determine the binding affinity of GST-Rac1 (Q61L/P29S) for each site (Figure 5) (Lee et al., 2000; Pollard, 2010). In this assay, we mixed a constant amount of \u0394WRC230 (0.1 \u03bcM) with varying concentrations of GST-Rac1 (0.01 \u03bcM to 140 \u03bcM) and a fixed amount of Glutathione Sepharose beads. The beads were sufficient, given their quantity and the extremely high affinity of GST for glutathione (KD\u00a0~7 pM, [Waterboer et al., 2005]) to retain virtually all GST-Rac1 and its bound WRC, even at the highest concentrations (Figure 5\u2014figure supplement 1). After a brief centrifugation to pellet the beads, uncomplexed WRC remained in the supernatant and could be quantified by SDS PAGE (example gels shown in Figure 5A), allowing us to determine the binding isotherms, which we could numerically fit to different binding models to obtain dissociation constants (Figure 5B and Figure 5\u2014figure supplement 2). Note that the binding isotherms determined by the EPD assays do not distinguish the WRC species with one or two bound Rac1 molecules, or the WRC species with Rac1 bound to the D-Site or the A-Site, because all species can be equally pelleted with the glutathione beads. Therefore, fitting the binding isotherm of the WT WRC to a cyclic two-site binding model (Figure 5\u2014figure supplement 2A) to extract the dissociation constants for both the D Site and the A Site could not converge, with large uncertainty for the derived KD (not shown). Fitting to a simplified sequential two-site binding model or to a single-site model resulted in a similar dissociation constant for the D Site (KD,D of 0.169\u00a0\u00b1\u00a00.008 \u03bcM in Figure 5C, black solid curve compared to 0.106\u00a0\u00b1\u00a00.002 \u03bcM in Figure 5C, grey dotted curve). Fitting to the sequential two-site binding model was statistically better than the single-site model (p=5.45\u00d710\u22129), and yielded a dissociation constant for the A Site for the D Site-bound WRC (KD,A(D)) of 0.262\u00a0\u00b1\u00a00.044 \u03bcM, suggesting positive cooperativity between the A and D Sites compared to the dissociation constant for the A Site alone (KD,A of 11.52\u00a0\u00b1\u00a00.11 \u00b5M as determined below). Such cooperativity likely results from avidity, as two nearby Rac1 molecules, either partners in a GST fusion or adjacent on the solid matrix, bind the same WRC.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/29795/elife-29795-fig5-v1.jpg)\n\n**Figure 5.:** (A). Representative Coomassie-blue-stained SDS-PAGE gels of the supernatant samples in equilibrium pull down experiments involving GST-Rac1 (Q61L/P29S) binding\u00a0to\u00a0\u0394WRC230. (B) Schematic representation of the three successful equilibrium models used to fit the binding isotherms. (C) Binding isotherms fit to the indicated models. For WT and C179R \u0394WRC230, results for single-site (dotted curves) and two-site (solid curves) models are shown. For Y967A WRC, results for single-site (dotted curves) and GST-dimer models (solid curves) are shown. The data were pooled from multiple independent experiments (5 experiments for WT and C179R, and 2 experiments for Y967A) covering various concentration ranges. Derived dissociation constants are shown in the right table, with KD,D representing the dissociation constant for the D Site, KD,A for the A Site, KD,A(D) for the A Site when the D Site is occupied by Rac1, and KD,A\u2019 for the A Site of the second WRC in the GST-dimer model. Standard errors of the fit for the derived KD values are shown. p values were obtained by F-test; the most appropriate dissociation constants based on the p values are shown in bold. See Figure 5\u2014figure supplement 2 and Methods for additional details.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29795/elife-29795-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The top gel is identical to the top gel in Figure 5A. Each reaction contained 30 \u03bcL of beads and 70 \u03bcL of supernatant. Samples for the top gel (supernatant) were prepared by mixing 40 \u03bcL of the supernatant with 8 \u03bcL of a 6X SDS PAGE loading buffer, with 15 \u03bcL of the samples (thus 12.5 \u03bcL of the supernatant) loaded to each lane. Samples for the bottom gel (beads) were prepared by adding 60 \u03bcL of a 2X SDS PAGE loading buffer to the remaining 60 \u03bcL of reaction (containing 30 \u03bcL of supernatant and 30 \u03bcL of beads), with 2.5 \u03bcL of the mixture (thus 0.625 \u03bcL of the supernatant and 0.625 \u03bcL of beads) loaded in each lane.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29795/elife-29795-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Schematic representation of all equilibrium models used to fit the binding isotherms. (B) Binding isotherms fit to the indicated models, with dotted curves for single-site, thick solid curves for two-site sequential, and thin solid lines for GST-dimerization models. The data were pooled from multiple independent experiments (5 experiments for WT and C179R, and 2 experiments for Y967A) covering various concentration ranges. (C) The derived dissociation constant KD (\u03bcM, shown with standard errors of the fit) and the fitting results used for F-test (Df for degree of freedom, RSS for residual sum of squares) are shown in the left table. F-test results are shown on the right with column colors matched to the curve colors in (B) (**** for p<0.0000001). The results for the best fits based on the p values are shown in bold.\n\nIn contrast to the WT WRC, the isotherm for the A Site mutant (C179R), fit well to a single-site binding model, yielding a KD,D of 0.265\u00a0\u00b1\u00a00.004 \u03bcM for the D Site (Figure 5C, light blue dotted curve), whereas fitting to a two-site binding model resulted in an identical KD,D with no statistical improvement (Figure 5C, blue solid curve), supporting the idea that the C179R mutation effectively impaired the A Site.\n\nFor the D Site mutant (Y967A), the strong shift of the data to higher Rac1 concentrations clearly shows that the interaction that recruits the WRC to the beads is appreciably weaker than that for the wild type or A site mutant WRCs. But the isotherm did not fit well to either a single- or a two-site binding model, although both yielded a similar KD,A for the A Site (10.85\u00a0\u00b1\u00a00.4 vs 9.6\u00a0\u00b1\u00a00.38 \u03bcM, Figure 5C red dotted curve, and see Figure 5\u2014figure supplement 2). More complicated models involving more than two dissociation constants did not converge (not shown). However, when we modeled a dimeric GST-Rac1 binding two WRCs cooperatively (Figure 5B, GST-dimer model), the fitting was significantly improved (p=1.39\u00d710\u221211, Figure 5C, red solid curve). This model yielded a KD,A of 11.52\u00a0\u00b1\u00a00.11 \u03bcM for binding of the first WRC, and a KD,A\u2019 of 0.033\u00a0\u00b1\u00a00.003 \u03bcM for binding of the second WRC to this initial (GST-Rac1)2-WRC assembly. These data would be consistent with strong positive cooperativity between WRC binding events when Rac1 only binds to the A Site. The better fit afforded by this model does not authenticate the molecular mechanism it describes. We note, however, that the potential for cooperative interactions between closely-positioned WRCs has been suggested by the crystal structure of miniWRC. There, the N-terminal helix of Sra1, which is not observed in the EM density of the dilute WRC studied here, bound between adjacent WRC assemblies in the crystal lattice (Chen et al., 2010). Future studies to examine such an interaction and its functional significance may be revealing. The GST-dimer model was not statistically better than the best fits for the WT or C179R WRC (Figure 5\u2014figure supplement 2B; Figure 5\u2014figure supplement 2C, thin solid curves).\n\nIn summary, our data demonstrate that both the previously identified A Site and the newly identified D Site are bona fide binding sites for Rac1, the latter with\u00a0~40 fold higher affinity than the former. The two sites can act together to recruit the WRC to membranes containing active Rac1. In retrospect, in our previous equilibrium dialysis experiments, the A Site mutants did not reach saturation at the highest concentrations of Rac1 used (8 \u03bcM), behavior we interpreted as indicating reduced affinity at a single site (see Figure 3B of [Chen et al., 2010]). Our new data provide a new interpretation for this observation, suggesting that the A Site mutants might have approached an asymptote at\u00a0~50% of the level reached by the WT WRC (i.e. with one site effectively eliminated by the mutation and a second site intact).\n\n### Both Rac1-Binding sites contribute to WRC activation\n\nWe next asked whether both Rac1-binding sites are important for activating the WRC toward the Arp2/3 complex in pyrene-actin assembly assays (Figure 6). In these assays, actin assembly (monitored by an increase in fluorescence of pyrene-labeled actin) occurs slowly and with a long initial lag in the presence of WRC230VCA and Arp2/3 complex alone (orange curve in Figure 6A). Addition of Rac1 (Q61L)-GMPPNP activates the WRC, which, in turn, stimulates the actin-nucleating function of the Arp2/3 complex, decreasing the lag and increasing the maximum rate of actin assembly (dashed curves in Figure 6A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/29795/elife-29795-fig6-v1.jpg)\n\n**Figure 6.:** (A\u2013D) Actin assembly assays of the wild-type WRC230VCA (A), Sra1 Y967A (B), Sra1 S969F (C), and Sra1 C179R (D), with corresponding reaction conditions shown on the right. Reactions contain 4 \u03bcM actin (5% pyrene labeled), 10 nM Arp2/3 complex, 100 nM WRC230VCA or VCA, and indicated amount of Rac1 Q61L loaded with GMPPNP. (E) Maximum actin assembly rates at different Rac1 concentrations derived from data in (A\u2013D) (Doolittle et al., 2013). (F) Maximum actin assembly rates at different concentrations of distinct WRC-Rac1 species, obtained from the data shown in Figure 1\u2014figure supplement 1C for WRC activation by Rac1 Q61L/P29S. Concentrations of the indicated species of WRC-Rac1 complexes (shown as cartoons) formed at different Rac1 concentrations in the actin assembly assay were calculated using DynaFit (Kuzmic, 1996) by using a two-site cyclic model shown in Figure 5\u2014figure supplement 2A, using KDD of 0.265 \u03bcM and KDA of 11.52 \u03bcM (derived from Figure 5, assuming no cooperativity between the A and D Site, since the actin assembly assays were performed in solution). Black data plot the summed concentration of all WRC-Rac1 species, while red data plot only WRC-(Rac1)2. A linear fit of the latter data yields r2 of 0.98.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29795/elife-29795-fig6-figsupp1-v1.jpg)\n\nFor the WT WRC, a saturating concentration of Rac1 (10 \u03bcM) could produce actin-assembly rates equivalent to that of the constitutively active WAVE1 VCA peptide (dashed cyan curve in Figure 6A). Mutating the D Site (Y967A, Figure 6B,E) or the A Site (C179A, Figure 6D,E) completely abrogated activation, suggesting that activation of the WRC requires binding of Rac1 to both sites. Interestingly, the S969F mutant, which had slightly higher affinity for Rac1 (Figure 3F), was more sensitive to the GTPase than was WT WRC (Figure 6A,C,E). For example, the S969F mutant WRC was fully activated by only 3 \u03bcM Rac1, instead of 10 \u03bcM (green dashed curve in Figure 6C vs. cyan dashed curve in Figure 6A). Similarly, 1 \u03bcM Rac1 plus the S969F mutant WRC produced actin-assembly rates equivalent to 3 \u03bcM Rac1 plus the WT WRC (magenta dashed curve in Figure 6C vs. green dashed curve in Figure 6A). These data suggest that both Rac1-binding sites are important for activation of the WRC.\n\nTo further examine this notion, we re-analyzed the actin assembly data for Rac1 Q61L/P29S\u00a0+\u00a0WRC shown in Figure 1\u2014figure supplement 1C in light of the dissociation constants derived from the EPD assays. As shown by the black data in Figure 6F, actin assembly rate is strongly non-linear with the total concentration of Rac1-bound WRC species, i.e. the sum of both WRC-(Rac1)1 complexes (A or D site engaged) and WRC-(Rac1)2. The lack of response to WRC-Rac1 concentrations up to 80 nM suggests suggests that engagement of a single site (primarily the D Site, due to its high affinity) is not sufficient to drive WRC activation. Further, plotting actin assembly rate versus the concentration of WRC-(Rac1)2 yields a linear relationship (red data in Figure 6F). The slope of this line gives a specific activity of\u00a0~0.22 nM actin/s/nM WRC-(Rac1)2. Together, the qualitative and quantitative actin assembly data show that engagement of both the A and D sites is necessary for WRC activation.\n\n## Discussion\n\nThe Rho family GTPase, Rac1, plays important roles in directing signals from upstream pathways to the WRC to promote actin cytoskeletal assembly. We have determined the structure of a WRC-Rac1 complex using cryo-EM, revealing a GTPase-binding site distinct, and physically distant, from the site indicated previously by mutagenesis. Nevertheless, several lines of biochemical data demonstrate that both sites do, in fact, bind Rac1. Moreover, both are required for activation of the WRC toward the Arp2/3 complex. These findings have several important implications.\n\nFirst, Rac1 activates the WRC through two binding sites that are distinct from the VCA-binding surface of Sra1. We previously posited that binding to the A Site might trigger conformational changes in the adjacent meander region. These, in turn, could destabilize the meander-VCA contacts, leading to release of the VCA from the body of the WRC (Chen et al., 2010). Such a mechanism, involving destabilization of a VCA-containing structural element, would be analogous to the activation of the WAVE1 relatives WASP and N-WASP by the Rho family GTPase Cdc42 (Kim et al., 2000; Prehoda et al., 2000; Torres and Rosen, 2003). Our current data suggest that the A Site and the D Site likely cooperate to trigger conformational changes that release the VCA. These changes may be focused in the meander region, as in our initial hypothesis, or may involve more substantial rearrangements of the WRC body, as suggested by the large distance between the D Site and the VCA-meander element of the assembly. In the latter scenario, the requirement for engagement of Rac1 at both sites to activate the WRC may explain why we did not observe major conformational changes on the WRC in our current structure, in which only the D Site is occupied. It remains to be understood how Rac1 binds the A Site and how the A and D Sites cooperate to drive allosteric activation of the WRC.\n\nSecond, our data inform on the recent observation that a point mutation, S968F, in Cyfip2 (corresponding to S969F in Sra1) caused phenotypes in mice including decreased response to cocaine and a reduced number of dendritic spines in neurons of the nucleus accumbens (Kumar et al., 2013). We found that S969 in Sra1 is buried immediately underneath the D Site. Unlike the previous hypothesis that this mutation may act by destabilizing the WRC, our results show that S969F in Sra1 facilitates Rac1 binding and WRC activation. It is possible that S969 may be part of the pathway for the conformational propagation from the D Site to the VCA-binding pocket upon Rac1 binding. Assuming the S968F mutation in Cyfip2 has a similar biochemical effect, our data suggest that excessive activation of the WRC by Rac1 might be responsible for the observed changes in cocaine response and neuronal morphology.\n\nThird, our data depict how Rac1 could work together with other signaling molecules to regulate the WRC on membranes (Figure 7).One face of the WRC is highly basic, and the opposite face is highly acidic (Chen et al., 2010). This charge distribution suggests that when the WRC is bound to the negatively charged inner leaflet of the plasma membrane, and/or specific phospholipids such as PIP3, its basic surface will lie against the membrane and its acidic surface will face the cytoplasm. In this orientation, both Rac1 binding sites can be positioned to enable a bound GTPase to bury its prenylated tail in the bilayer, consistent with an activation model involving simultaneous engagement of both sites. This orientation is also compatible with other potential interactions. For example, VCA can be readily released from above the membrane to interact with the Arp2/3 complex further in the cytoplasm (Chazeau et al., 2014). In addition, WIRS-containing transmembrane receptors could reach the WIRS-binding site on the acidic face of the WRC through\u00a0<\u00a023 residues (or\u00a0~80 \u00c5 in distance; Figure 7A) (Chen et al., 2014a). Indeed, with few exceptions, the WIRS elements in previously predicted WIRS-containing receptors in humans are generally located\u00a0>\u00a025 residues from their transmembrane sequence (not shown) (Chen et al., 2014a). These restraints together suggest a plausible model showing how the WRC may be oriented at membranes to interact with various regulatory molecules.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/29795/elife-29795-fig7-v1.jpg)\n\n**Figure 7.:** Surface representation (A) and surface charge representation (B) (calculated using APBS in Pymol) (Dolinsky et al., 2007) show how the WRC can be oriented on the membrane to simultaneously interact with multiple signaling molecules, including two Rac1 molecules (gold and orange) anchored on the membrane through prenylation of their C-terminal tails, WIRS-containing surface receptors (dark blue), and acidic phospholipids through electrostatic interaction (represented by membrane). The Rac1 at the D site is taken from the \u0394WRC230-Rac1 complex structure determined here; Rac1 at the A site was manually docked in a plausible orientation to contact Sra1 residues 179, 190, 434, 626 and 632 and place the C terminus near the membrane. WIRS-containing receptors could approach the WRC from the back (shown) or the front (not shown).\n\nFinally, our bivalent interaction model provides an appealing mechanism to explain how cells could sense the level of active Rac1 at membranes to spatially and temporally control WRC activation and actin polymerization. Our data suggest that WRC activation requires simultaneous engagement of two Rac1 molecules at two distinct binding sites with\u00a0~40 fold different affinity. When the density of Rac1 at membranes is low, Rac1 should interact with the WRC preferentially through the high-affinity site, which on its own is not sufficient to trigger activation but primes the complex. The WRC only becomes activated when Rac1 density is sufficient to enable binding to both sites. Consequently, activation of the WRC at membranes is likely non-linear with respect to Rac1 density (note that technical limitations in working with low Rac1 density on membranes prevented us from examining this experimentally). This behavior could be harnessed by cells to determine precisely where and when to turn on actin assembly. Analogous ideas have been suggested previously, based on observations that Rac1 and the Arf GTPase can cooperatively recruit and activate the WRC at membranes (Koronakis et al., 2011). Given the low sequence homology between Rac1 and Arf (22% and 38% identity in Switch I and Switch II, respectively), we feel it is unlikely that either the A or D site that we have characterized is also the binding site for Arf. Further, these cooperative effects could modulate the actions of other WRC ligands. For example, we previously discovered a large array of WIRS-containing receptors, which could potentially recruit the WRC to membranes (Chen et al., 2014a). For a given receptor, whether the recruitment would lead to productive activation of the WRC and actin polymerization would depend on the local membrane density of active Rac. Other regulators of the WRC, including kinases, acidic phospholipids and scaffolding proteins, might also cooperate with Rac1 activation in similar fashion (Chen et al., 2010; Lebensohn and Kirschner, 2009; Miki et al., 2000; Padrick et al., 2011). Moreover, the unstructured regions of WAVE and Abi (including the C terminal SH3 domain of Abi), which are not included in our current construct, may make additional contributions to Rac1 binding and activation. These regions have been shown to be important elements for regulating WRC activity, primarily by recruiting other regulatory molecules through interactions mediated by poly-proline sequences and/or SH3 domains (Chen et al., 2014c; Dai and Pendergast, 1995; Miki et al., 2000; Soderling et al., 2002) or by other mechanisms yet to be understood (Miyamoto et al., 2008). Together, these effects would lead to precise control of the timing and degree of actin assembly depending on the specific collection of upstream signals and their spatial organization at the membrane.\n\n## Materials and methods\n\n### Protein purification\n\nSimilar to mini-WRC, all WRC constructs used in this work contain human Sra1, Nap1, HSPC300 (or EGFP-HSPC300), and Abi2 (1-158), in addition to different WAVE1 constructs, including WAVE1(1\u2013230)-(GGS)6-Rac1(1-177)(Q61L/P29S) in \u0394WRC230-Rac1, WAVE1(1\u2013217) in \u0394WRC217, WAVE1(1\u2013230) in \u0394WRC230, WAVE1(1\u2013217)-(GGS)6-(485-559) in WRC217VCA, and WAVE1(1\u2013230)-(GGS)6-(485-559) in WRC230VCA. The WRCs were expressed and purified essentially as previously described for the mini-WRC (Chen et al., 2010; Ismail et al., 2009), except that the MBP-tagged WAVE1 proteins were expressed in ArcticExpressTM (DE3)RIL cells (Stratagene) at 10\u00b0C (Chen et al., 2014b).\n\nBased on the following arguments the mutant WRCs all appear to be properly assembled and stable. (1) All mutations were made to surface residues, except the S967F mutation, which is buried immediately underneath the D Site (and nevertheless did not negatively affect Rac1 binding/activation). Such mutations likely only disrupt the local binding surface, rather than the overall folding of the WRC, especially since the WRC is\u00a0~400 kDa in size and is held together through multiple, extensive inter-subunit interactions. (2) Reconstitution of the recombinant WRC is a multi-step process, involving purification of individual proteins from different host cells and assembly/purification of subcomplexes and ultimately the WRC by a variety of affinity, ion exchange and gel filtration chromatography steps. All the mutant WRCs behaved identically to the wild type WRC during each step of the reconstitution (see example in Figure 4\u2014figure supplement 1 top panel, and Figure 6\u2014figure supplement 1, comparing gel filtration chromatography profiles of mutant WRCs to the wild type). Furthermore, the C179R and Y967A mutants, each at a distinct Rac1 binding site, behaved identically to the wild type WRC in the MSSV AUC experiments. A mutation that disrupts the overall folding would very likely cause aberrant behaviors during certain steps in reconstitution, leading to lower purity and yield, or complete failure of reconstitution.\n\nMBP-tagged mCherry-(GGS)6-Rac1(1-188)-His8 (mCherry-Rac1-His8 for short) and MBP-tagged mEGFP-(GGS)6-Rac1(1-188) (EGFP-Rac1 for short) were expressed in BL21 (DE3) T1R cells at 18\u00b0C overnight and purified using amylose beads (New England Biolabs). After the MBP tag was removed by TEV-protease cleavage, the protein was further purified by Ni-NTA agarose beads (Qiagen,\u00a0Germany), followed by cation-exchange chromatography through a Source SP15 column (GE Healthcare). All constructs were verified by DNA sequencing. Other proteins, including Arp2/3 complex, actin, WAVE1 VCA, GST-Rac1, Rac1 and TEV protease, were purified as previously described (Ismail et al., 2009).\n\n### Electron microscopy\n\nPrior to the EM experiments, an aliquot of the purified \u0394WRC230-Rac1 complex was thawed and passed through a 2.4 mL Superdex 200 gel-filtration column (GE Healthcare) to remove glycerol from previous purification steps and exchange buffer to 10 mM HEPES pH 7.0, 100 mM NaCl, 1 mM MgCl2 and 2 mM TCEP. The protein sample (3.5 \u03bcl at 0.1 mg/mL) was applied to glow-discharged Quantifoil holey carbon grids (400 copper mesh, R1.2/1.3), which were then flash frozen in liquid ethane using a Gatan CryoPlunge 3. Grids were imaged with an FEI Tecnai F20 operated at an acceleration voltage of 200 kV and a calibrated magnification of 40,410x (nominal magnification of 29,000x), yielding a pixel size of 0.62 \u00c5 on the specimen level. A Gatan K2 Summit direct detector device (DDD) camera was used to collect dose-fractionated image stacks in super-resolution counting mode using the UCSF Figure 4 data acquisition software (Li et al., 2013). The dose rate used was 6.4 e\u2013/\u00c52/s. Of a total of 2173 image stacks, 30 frames were recorded with 200 ms per frame (total exposure time of 6 s) for 1366 stacks, 34 frames were recorded with 300 ms per frame (total exposure time of 10.2 s) for 407 stacks, and 51 frames were recorded with 200 ms per frame (total exposure time of 10.2 s) for 400 stacks. The frames were binned over 2 \u00d7 2 pixels (yielding a pixel size of 1.24 \u00c5), aligned to each other using motioncorr (Li et al., 2013), and summed.\n\n### Image processing\n\nThe defocus parameters of each micrograph were determined with CTFFIND3 (Mindell and Grigorieff, 2003). Particles from the first 489 images were manually picked using e2boxer (Tang et al., 2007) and windowed into 220 \u00d7 220 pixel images, which were then reduced to 64 \u00d7 64 pixel images. The 11,874 particle images were subjected to the iterative stable alignment and clustering (ISAC) procedure (Yang et al., 2012) implemented in SPARX (Hohn et al., 2007). Three ISAC generations, specifying 200 particles per group and a pixel error threshold of 0.7, resulted in classification of 2607 particles (~22% of the entire data set) into 56 classes.\n\nAll images were then automatically picked with Relion1.3 (Scheres, 2012), yielding 160,591 particles that were windowed into 250 \u00d7 250 pixel images. The particle images were subjected to 2D classification specifying 300 classes, and classes producing poor averages were discarded. This step was repeated specifying 200 classes. The remaining 78,406 particles were subjected to 3D classification specifying 12 classes and using as initial model the crystal structure of the mini-WRC (PDB 3P8C) (Chen et al., 2010) low-pass filtered to 60 \u00c5. Six classes showing extra density for Rac1 (39,145 particles) were combined and subjected to a second round of 3D classification specifying 10 classes. Of the resulting maps, 8 classes showed extra density for Rac1 (Figure 1\u2014figure supplement 2D) and were combined (29,784 particles) for refinement, yielding a map at a resolution of 7.4 \u00c5.\n\nFor particle polishing in Relion (Scheres, 2012), image stacks were created for which each frame represented 600 ms of exposure. For instance, for image stacks recorded with 200 ms frames, 3 frames were averaged; for image stacks recorded with 300 ms frames, 2 frames were averaged. Only the first 10 frames, corresponding to an exposure time of 6 s, were used for particle polishing. The final map had a resolution of 7.0 \u00c5, as estimated by Fourier shell correlation of independently refined 3D reconstructions from half data sets using the 0.143 cut-off criterion (Figure 1\u2014figure supplement 3B). The local resolution was assessed using the program ResMap (Kucukelbir et al., 2014) (Figure 1\u2014figure supplement 3C). Atomic models of the mini-WRC (PDB 3P8C) and Rac1 (PDB 3SBD) were docked into the EM map using UCSF Chimera (Pettersen et al., 2004). Figures were prepared with UCSF Chimera and Pymol (Schrodinger, 2015). The EM density map has been deposited in EMDB with accession number EMD-6642.\n\n### Non-equilibrium GST Pull-down assay\n\nNon-equilibrium GST pull-down experiments in Figure 3E were performed as previously described (Chen et al., 2014a). Briefly, 130 pmol of GST-Rac1(1-177)-GMPPNP and 260 pmol of WRC (composed of Sra1, Nap1, MBP-EGFP-HSPC300, MBP-Abi2(1-158) and MBP-WAVE1(1\u2013230)) were mixed with 20 \u03bcL of Glutathione Sepharose beads (GE Healthcare) in 1 mL of binding buffer (20 mM HEPES pH 7, 50 or 100 mM NaCl, 5% (w/v) glycerol, 2 mM MgCl2 and 5 mM \u03b2-mercaptoethanol) at 4\u00b0C for 30 min, followed by three washes using 1 mL of the binding buffer. Bound proteins were eluted with GST elution buffer (100 mM Tris-HCl pH 8.5, 50 mM NaCl, 5% (w/v) glycerol, 2 mM MgCl2, 5 mM \u03b2-mercaptoethanol and 30 mM reduced glutathione) and examined by SDS-PAGE. Figure 3\u2014figure supplement 2A and B used GST-Rac1(1-177)-GDP and GST-Rac1(1-177) (Q61L/P29S), respectively and the same WRC assemblies as Figure 3E.\n\n### Equilibrium GST pull-down assay\n\nEquilibrium GST pull-down (EPD) experiments were performed essentially as previously described (Lee et al., 2000; Pollard, 2010). Glutathione Sepharose beads (GE Healthcare) were first equilibrated in EPD buffer (20 mM HEPES pH 7, 100 mM NaCl, 5% (w/v) glycerol, 2 mM MgCl2, and 5 mM \u03b2-mercaptoethanol) and stored as a 50% (v/v) slurry. All protein samples were dialyzed against EPD buffer overnight at 4\u00b0C to maximize buffer match. After dialysis, GST-Rac1(1-188) (Q61L/P29S) was concentrated to\u00a0~500 \u03bcM using an Amicon Ultra centrifuge concentrator (3 kDa MWCO, Millipore). All proteins were centrifuged at\u00a0~21,000 g at 4\u00b0C for 10 min to remove denatured proteins before use. Each reaction was assembled in 100 \u03bcL total volume of EPD buffer in a 200 \u03bcL PCR tube (Axygen), which contained 0.1 \u03bcM \u0394WRC230 (consisting of Sra1, Nap1, HSPC300, MBP-Abi2(1-158) and MBP-WAVE1(1\u2013230)) varying concentrations of GST-Rac1(1-188) (Q61L/P29S), 30 \u03bcL of the Glutathione Sepharose beads (by aliquoting 60 \u03bcL of the 50% (v/v) slurry using a wide-bore pipette tip), and 0.05% Triton X100 to facilitate mixing. The reactions were gently mixed at 4\u00b0C on a rotary mixer for 30 min. After a brief centrifugation (~10,000 g for 30 s) to pellet the beads, 40 \u00b5L of the supernatant was immediately transferred to 8 \u00b5L of 6X loading buffer (360 mM Tris-HCl pH 6.8, 12% (w/v) SDS, 60% (w/v) glycerol, 0.00012% (w/v) bromophenol blue, and 140 mM freshly added 2-mercaptoethanol), and analyzed by Coomassie blue-stained SDS-PAGE gels. The gels were imaged by a ChemiDocTMXRS\u00a0+\u00a0system (BioRAD) using its standard protocols. Total intensity of the Sra1 and Nap1 bands was quantified by ImageJ (FIJI) to determine the unbound WRC. The derived fractional occupancy from 2 to 5 independent experiments was directly merged to obtain the binding isotherms. The program DynaFit (BioKin [Kuzmic, 1996]) was used to numerically fit the binding isotherms to different equilibrium models to obtain dissociation constants KD (see Supplementary file 2 for scripts). The uncertainty of the derived KDs was further evaluated by Monte Carlo simulations with a \u2018shuffle\u2019 algorithm implemented in DynaFit. The final KD values reported in Figure 5 together with the standard errors of the fit were determined by the histograms generated by 5,000 Monte Carlo simulations (Kuzmic, 1996). The fitting results were compared by the F-test using Matlab (Mathworks).\n\n### Membrane recruitment assay\n\nSupported lipid bilayers (SLBs) containing 98% POPC and 2% Ni2+-NTA DGS (Avanti Polar lipids) were prepared as previously described (Banjade and Rosen, 2014; Su et al., 2016), with the following modifications. After washing with 5% Hellmanex III (H\u00eblma Analytics), glass bottom 96-well plates (Matrical) were washed with 6 M NaOH for 30 min at 45\u00b0C twice, and thoroughly rinsed with MilliQ H2O. Small unilamellar vesicles (SUVs) were added to cleaned wells equilibrated with 50 mM HEPES pH 7.5, 150 mM NaCl and 1 mM TCEP, and incubated at 40\u00b0C for 1 hr.\n\nThe membrane recruitment assay was performed at room temperature. The SLBs were first washed twice with binding buffer containing 10 mM HEPES pH 7.0, 100 mM NaCl, 2 mM MgCl2, 1 mM TCEP and 1 mg/mL BSA. mCherry-Rac1-His8 protein (either Q61L/P29S or wild type, as indicated in Figure 3F) was added at 20 nM concentration, and allowed to bind the lipid bilayers for 30 min. Unbound proteins were then removed by three washes, which together afforded a 125-fold dilution of the initial solution. EGFP-tagged WRCs (composed of Sra1, Nap1, MBP-EGFP-HSPC300, MBP-Abi2(1-158) and MBP-WAVE1(1\u2013230)) were then added at 80 nM and incubated for 30 min, followed by three washes affording a 125-fold dilution of the initial solution to reduce non-specific binding of the WRC as well as background fluorescence.\n\nTIRF images were taken using a TIRF/iLas2 module (Biovision) mounted on a Leica DMI6000 microscope with a 100 \u00d7 1.49 NA objective (EM-CCD camera, ImagEMX2, Hamamatsu). Images were acquired at 488 nm for EGFP-WRC and 561 nm for mCherry-Rac1. Images were processed using ImageJ (FIJI). Signal from the 488 nm channel from samples with only mCherry Rac1 and binding buffer was used as background for EGFP-WRC measurements. Signal from the 561 nm channel from samples with only SLBs and EGFP-WRC was used as background for mCherry-Rac1 measurements. EGFP/mCherry signals were calculated from 10 images from two independent experiments. Data are reported as mean\u00a0\u00b1\u00a0SEM. The autofocus module on our microscope was used to find the focal plane for all measurements.\n\n### Analytical Ultracentrifugation\n\nThe Multi-Signal Sedimentation Velocity (MSSV) Analytical Ultracentrifugation (AUC) assay was performed as previously described (Balbo et al., 2005; Padrick et al., 2010), to measure the stoichiometry of binding between EGFP-Rac1 (1-188) (Q61L/S29S) and\u00a0\u0394WRC230 (consisting of Sra1, Nap1, HSPC300, MBP-Abi2(1-158) and MBP-WAVE1(1\u2013230)). Extra care was given when preparing the protein samples to ensure good data quality since the WRC is observed to be sensitive to denaturation, likely caused by liquid surface tension from air bubbles and mechanical shaking, especially in the absence of glycerol in the buffer. The sample preparation required gentle pipetting, avoiding air bubbles or foaming, and removing sticky, denatured WRC floating on the surface after centrifugation steps prior to AUC analyses (same cautions were applied to all other experiments reported here). Both the WRC and EGFP-Rac1 samples were passed through a Hiload Superdex 200 gel filtration column (GE Healthcare) equilibrated with 20 mM HEPES pH 7, 150 mM NaCl, 10 or 20% (w/v) glycerol and 1 mM DTT (and 2 mM MgCl2 for EGFP-Rac1) to remove potential aggregates. The proteins were aliquoted, flash frozen in liquid nitrogen, and stored at \u221280\u00b0C. Before use, proteins were thawed in a water bath at room temperature and subjected to extensive dialysis (for 3 continuous days with multiple buffer exchanges at 4\u00b0C) in the same beaker containing AUC buffer (10 mM HEPES pH 7, 100 mM NaCl, 2 mM MgCl2, and 1 mM DTT) to remove glycerol (which could affect the AUC interference signal) and to maximize buffer match. After dialysis, the samples were centrifuged at\u00a0~21,000 g for 10 min at 4\u00b0C to remove denatured proteins. Approximately 400 \u00b5L of the samples were introduced into the sample sectors of dual-sector Epon centerpieces that had been placed between sapphire windows in a standard AUC cell. The reference sectors were filled with the same volumes of AUC buffer. The cells were inserted into an An50Ti rotor and put under vacuum for temperature equilibration for a minimum of 2 hr. Subsequently, centrifugation was commenced at 50,000 rpm. Data were acquired using both absorbance at 490 nm and interference optics. All experiments were performed overnight at 20\u00b0C. Interferometric molar signal increments for the two protein species were calculated based on their respective amino-acid compositions (Zhao et al., 2011), resulting in 141,801 fringes M\u22121cm\u22121 for EGFP-Rac1 and 904,251 fringes M\u22121cm\u22121 for the WRC. Using the former value as a standard, the data sets for EGFP-Rac1 alone were globally analyzed to establish its sedimentation coefficient and the extinction coefficient (Padrick et al., 2010) at 490 nm (32,310.8 AU M\u22121cm\u22121. This value is lower than the reported value of 56,000 AU M\u22121cm\u22121 (Cranfill et al., 2016), likely due to incomplete maturation of the EGFP tag during overnight expression (Heim et al., 1995). A data set for WRC alone was analyzed using only interference data to determine its sedimentation coefficient. The actual concentrations of each protein species in the assembled cells were calculated by integrating the ck(s) distributions as described below.\n\nThe MSSV data were analyzed using SEDPHAT (Balbo et al., 2005). Using the extinction coefficients obtained above, the interferometric and absorbance (at 490 nm) data from mixtures of the WRC and EGFP-Rac1 were globally analyzed to yield component ck(s) distributions that reported on the concentrations of WRC and EGFP-Rac1 as a function of sedimentation coefficient. By integrating these distributions over sedimentation coefficient ranges where co-sedimentation was evident, the concentrations of the individual proteins in the complex could be calculated, and thus the molar ratios of the complexed WRC and EGFP-Rac1 were derived. Sedimentation coefficient values for the individual proteins and complexes were determined by a weighted integration scheme (Schuck, 2003), yielding signal-average sedimentation coefficients. In combination with the calculated molar ratios and refined frictional ratios (Padrick et al., 2010), these values allow the determination of the stoichiometries of the complexes.\n\n### Pyrene-actin assembly assay\n\nActin polymerization assays were performed at 22\u00b0C using a PTI Fluorometer (Photon Technology International) as previously described (Chen et al., 2014a). Reactions contained 4 \u03bcM actin (5% pyrene labeled), 10 nM Arp2/3 complex, 100 nM WRC217VCA (Figure 1\u2014figure supplement 1c; consisting of Sra1, Nap1, HSPC300, Abi2(1-158) and WAVE1(1\u2013217)-(GGS)6-(485-559)) or WRC230VCA (Figure 6; consisting of Sra1, Nap1, HSPC300, Abi2(1-158) and WAVE1(1\u2013230)-(GGS)6-(485-559)) or VCA, and various amounts of Rac1 Q61L loaded with GMPPNP.\n",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "359bf6f4-387e-489c-af94-44632d7bb952",
+      "submission_id": "befda290-871c-431f-a15a-06bc9d2b3223",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Axel T Brunger, Stanford University Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.29795.022](https://doi.org/10.7554/eLife.29795.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Rac1 GTPase Activates the WAVE Regulatory Complex Through Two Distinct Binding Sites\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Tony Hunter as the Senior Editor.\n\nThe Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nOur view is that this is a well-executed study that provides novel information about the regulation of actin assembly and membrane dynamics. In a previous round of review, there was a question around mutagenesis: did the authors make any measurements to verify that the mutant proteins are stable and well folded? This control would verify that the mutations are interfering with binding rather than protein structure.\n\nThe authors responded with good arguments that the mutated proteins are folded. Doing a simple urea-denaturation experiment while monitoring the intrinsic fluorescence of the complex might have revealed some loss of stability, which is different from being folded. Examples exist of apparently innocuous surface mutations that change the stability a protein.\n\nWe ask the authors to present their arguments why the mutants are properly folded in the manuscript and show gel filtration profiles for the most important mutants. Moreover, input lanes for the most important mutants along with wild type must be shown in the pull-down gels.\n",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "38090991-66ed-465a-a05f-f2c181fc9b79",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C1",
+      "claim": "The Rho GTPase Rac1 activates the WAVE regulatory complex (WRC) to drive Arp2/3 complex-mediated actin polymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "The Rho GTPase Rac1 activates the WAVE regulatory complex (WRC) to drive Arp2/3 complex-mediated actin polymerization, which underpins diverse cellular processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a foundational statement in the abstract supported by the entire body of work and established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "d2488dbe-1fa6-4c49-93cc-283be38024af",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C2",
+      "claim": "The structure of a WRC-Rac1 complex was determined by cryo-electron microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report the structure of a WRC-Rac1 complex determined by cryo-electron microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the cryo-EM methodology and presents structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "f22f6c3d-cf8c-4319-924b-d6e8e235ccc4",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C3",
+      "claim": "Rac1 is not located at the binding site on the Sra1 subunit of the WRC previously identified by mutagenesis and biochemical data.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, Rac1 is not located at the binding site on the Sra1 subunit of the WRC previously identified by mutagenesis and biochemical data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cryo-EM structure showing Rac1 at a different location than predicted.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "b2c65fd1-2132-42f4-9f1a-1a6cf10088b8",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C4",
+      "claim": "Rac1 binds to a distinct, conserved site on the opposite end of Sra1.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, it binds to a distinct, conserved site on the opposite end of Sra1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The cryo-EM structure reveals Rac1 binding at a new site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "cafb98b8-304d-43d6-be3d-6197f91d4a89",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C5",
+      "claim": "Rac1 binds to both the previously identified site (A Site) and the newly identified site (D Site) on the WRC.",
+      "claim_type": "EXPLICIT",
+      "source": "Biophysical and biochemical data on WRC mutants confirm that Rac1 binds to both sites, with the newly identified site having higher affinity and both sites required for WRC activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Multiple biochemical assays including pull-downs, AUC, and membrane recruitment assays support this claim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "8c3a8d34-fa48-40f0-a179-e03a53da27ae",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C6",
+      "claim": "The newly identified D Site has higher affinity for Rac1 than the previously identified A Site.",
+      "claim_type": "EXPLICIT",
+      "source": "Biophysical and biochemical data on WRC mutants confirm that Rac1 binds to both sites, with the newly identified site having higher affinity and both sites required for WRC activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Equilibrium pull-down assays show approximately 40-fold difference in affinity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "b08f64cd-7df6-45fc-bac9-18e8996f0def",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C7",
+      "claim": "Both Rac1 binding sites are required for WRC activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Biophysical and biochemical data on WRC mutants confirm that Rac1 binds to both sites, with the newly identified site having higher affinity and both sites required for WRC activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Actin assembly assays show that mutations at either site abolish activation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "8d5bcfb1-4a2f-4214-9f66-a10ab59c6260",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C8",
+      "claim": "The WRC is activated by simultaneous engagement of two Rac1 molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data reveal that the WRC is activated by simultaneous engagement of two Rac1 molecules, suggesting a mechanism by which cells may sense the density of active Rac1 at membranes to precisely control actin assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "AUC data show 2:1 stoichiometry and actin assembly data show requirement for both sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "b3c4e038-483f-416a-87e4-59e3a3127fb4",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C9",
+      "claim": "Dynamic rearrangements of the actin cytoskeleton play central roles in cellular processes ranging from cell migration and adhesion to endocytosis and intracellular vesicle trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynamic rearrangements of the actin cytoskeleton play central roles in cellular processes, ranging from cell migration and adhesion to endocytosis and intracellular vesicle trafficking (Skau and Waterman, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "258da2a4-cfdb-4335-b83f-c7ad03248a0c",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C10",
+      "claim": "WASP family proteins integrate diverse upstream signals and transmit them through their conserved VCA sequence to the Arp2/3 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "These proteins integrate a diverse array of upstream signals and transmit them through their conserved VCA sequence to the Arp2/3 complex, which, in turn, nucleates actin filaments to create branched actin networks at membranes (Campellone and Welch, 2010; Padrick and Rosen, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "b167732c-5d1a-460c-a569-664818a53a2b",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C11",
+      "claim": "The Arp2/3 complex nucleates actin filaments to create branched actin networks at membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "These proteins integrate a diverse array of upstream signals and transmit them through their conserved VCA sequence to the Arp2/3 complex, which, in turn, nucleates actin filaments to create branched actin networks at membranes (Campellone and Welch, 2010; Padrick and Rosen, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "e9f1cf77-57d6-4e63-9801-255549ba14a3",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C12",
+      "claim": "In most WASP family proteins, the VCA element is inhibited in the resting state.",
+      "claim_type": "EXPLICIT",
+      "source": "In most WASP family proteins, the VCA element is inhibited in the resting state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by subsequent citations and established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "27803dd3-c77c-4047-bc9e-8fda40bd2364",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C13",
+      "claim": "Inhibition of the VCA element is mediated either by autoinhibition within a single polypeptide chain (as in WASP and N-WASP) or by trans-inhibition within large multi-protein assemblies (as in WAVE and WASH).",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition is mediated either by autoinhibition within a single polypeptide chain, as in WASP and N-WASP, or by trans-inhibition within large multi-protein assemblies, as in WAVE and WASH (Rotty et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "af1a54bf-7a39-40c3-9ec5-1241671e43e0",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C14",
+      "claim": "Multiple signals including binding to ligands and covalent modifications often act cooperatively to relieve inhibition and recruit WASP proteins to their sites of action at membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple signals, including binding to ligands (e.g. Rho family GTPases, phosphoinositide lipids and membrane receptors) and covalent modifications (e.g. phosphorylation and ubiquitination), often act cooperatively to relieve inhibition and concomitantly recruit WASP proteins to their sites of action at membranes (Chen et al., 2014a, 2010; Hao et al., 2013; Lebensohn and Kirschner, 2009; Padrick and Rosen, 2010; Prehoda et al., 2000; Torres and Rosen, 2003; 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "5af20bda-6aad-4ff1-9609-df87c32ba6e4",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C15",
+      "claim": "WAVE1, WAVE2 and WAVE3 are essential to actin dynamics needed for normal development and function of most eukaryotic organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "The WASP family members WAVE1, WAVE2 and WAVE3 are essential to actin dynamics needed for normal development and function of most eukaryotic organisms, and are also implicated in many cancers (Bisi et al., 2013; Lane et al., 2014; Takenawa and Suetsugu, 2007; Yanagisawa et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "b06df7d6-9f40-45f5-8872-66a55c0a6de7",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C16",
+      "claim": "WAVE proteins are implicated in many cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "The WASP family members WAVE1, WAVE2 and WAVE3 are essential to actin dynamics needed for normal development and function of most eukaryotic organisms, and are also implicated in many cancers (Bisi et al., 2013; Lane et al., 2014; Takenawa and Suetsugu, 2007; Yanagisawa et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "db5d4690-f1ea-4464-89b6-0f29bb9f56af",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C17",
+      "claim": "Each WAVE protein functions exclusively within a 400 kDa heteropentameric assembly termed the WAVE Regulatory Complex (WRC).",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, each WAVE protein functions exclusively within a 400 kDa, heteropentameric assembly, termed the WAVE Regulatory Complex (WRC), which also contains the proteins Sra1, Nap1, Abi2, and HSPC300 (or their homologs) (Stovold et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "bffbcdfd-f8af-4302-9c11-7c90a50aee4f",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C18",
+      "claim": "The WRC contains the proteins Sra1, Nap1, Abi2, HSPC300, and WAVE.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, each WAVE protein functions exclusively within a 400 kDa, heteropentameric assembly, termed the WAVE Regulatory Complex (WRC), which also contains the proteins Sra1, Nap1, Abi2, and HSPC300 (or their homologs) (Stovold et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "60d87ca7-4833-4aa4-b350-a65694d982bc",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C19",
+      "claim": "Sra1 and Nap1 form an elongated dimer of about 100 \u00d7 100 \u00d7 200 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure revealed that Sra1 and Nap1 form an elongated dimer of about 100 \u00d7 100 \u00d7200 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previously reported crystal structures.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "1910561e-2f5a-4271-819c-50e0635030b3",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C20",
+      "claim": "WAVE1, Abi2 and HSPC300 form a trimer as an elongated 4-helix bundle.",
+      "claim_type": "EXPLICIT",
+      "source": "WAVE1, Abi2 and HSPC300 form a trimer as an elongated 4-helix bundle, which aligns along the long axis of the Sra1/Nap1 dimer (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on previously reported crystal structures and shown in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "0ddb7b7f-0658-44f2-bc58-a6f6892a5b5a",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C21",
+      "claim": "An extended sequence of ~90 amino acids from WAVE1 'meanders' across the surface of Sra1 as a loose collection of loops and helices.",
+      "claim_type": "EXPLICIT",
+      "source": "Immediately following the helix bundle, an extended sequence of ~90 a.a. from WAVE1 'meanders' across the surface of Sra1 as a loose collection of loops and helices (the meander region).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previously reported crystal structures.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "44f0fb2a-8719-422a-8827-e9e6d2c59740",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C22",
+      "claim": "The VCA element of WAVE1 is sequestered at the VCA-binding site by multiple interactions between its V and C helices and a group of helices from both Sra1 and the meander region of WAVE1 itself.",
+      "claim_type": "EXPLICIT",
+      "source": "The VCA element of WAVE1 is sequestered at the VCA-binding site by multiple interactions between its V and C helices and a group of helices from both Sra1 and the meander region of WAVE1 itself, explaining how WAVE1 is inhibited within the WRC (Chen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previously reported crystal structures.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "e5606abe-9302-4e3b-8460-3f06fa0979a3",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C23",
+      "claim": "The tethered Rac1 protected the WRC from binding to GST-Rac1 much more efficiently than the un-tethered Rac1 protected the wild type WRC.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on experiments measuring binding to immobilized GST-Rac1, the tethered Rac1 protected the WRC from binding to GST-Rac1 much more efficiently than the un-tethered Rac1 protected the wild type WRC, suggesting the tethered Rac1 binds the WRC in a physiologically relevant manner (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by competition pull-down assay data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "e310557a-85f5-4f00-a2ab-7585a883cd20",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C24",
+      "claim": "The Q61L mutation abolishes the GTP hydrolysis activity of Rac1, maintaining the protein in the GTP-bound state.",
+      "claim_type": "EXPLICIT",
+      "source": "The Q61L mutation abolishes the GTP hydrolysis activity of Rac1 (Der et al., 1986), maintaining the protein in the GTP-bound state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "e29a8158-21cb-4474-855b-0b9f63c24a34",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C25",
+      "claim": "The P29S mutation was identified as one of the major somatic mutations in melanoma.",
+      "claim_type": "EXPLICIT",
+      "source": "The P29S mutation was identified as one of the major somatic mutations in melanoma (Hodis et al., 2012; Krauthammer et al., 2012), and was shown to increase the affinity of Rac1 for the effectors PAK1 (p21 protein activated kinase 1) and MLK3 (mixed-lineage kinase 3) (Hodis et al., 2012; Krauthammer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "a3f3afa2-30ab-44ad-99fe-e71b4543f797",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C26",
+      "claim": "The P29S mutation increases the affinity of Rac1 for PAK1 and MLK3.",
+      "claim_type": "EXPLICIT",
+      "source": "The P29S mutation was identified as one of the major somatic mutations in melanoma (Hodis et al., 2012; Krauthammer et al., 2012), and was shown to increase the affinity of Rac1 for the effectors PAK1 (p21 protein activated kinase 1) and MLK3 (mixed-lineage kinase 3) (Hodis et al., 2012; Krauthammer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "cf90b4f3-9ca1-447d-9c70-40336f6ec50f",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C27",
+      "claim": "The P29S mutation increases the affinity of Rac1 for the WRC.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we found that the P29S mutation also increases the affinity of Rac1 for the WRC (Figure 1\u2014figure supplement 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pull-down and actin assembly assay data shown in Figure 1\u2014figure supplement 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "acfa2ce4-b48f-4acf-a931-3592e76c7950",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C28",
+      "claim": "The final density map from cryo-EM has a resolution of 7.0 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Using FSC = 0.143 as a cut-off, the density map has a resolution of 7.0 \u00c5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the FSC curve in Figure 1\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "f3dca267-e7bb-4735-a747-3fdb71ddf5bc",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C29",
+      "claim": "The mini-WRC crystal structure could be unambiguously docked into the EM density map.",
+      "claim_type": "EXPLICIT",
+      "source": "The mini-WRC crystal structure (PDB 3P8C) could be unambiguously docked into the EM density map, with the majority of the secondary structural elements fitting into the density without need for adjustment (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "fdf276e3-0759-462e-8dde-dcda78b8c2df",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C30",
+      "claim": "The EM map shows no density for the V and C helices of the VCA region of WAVE1.",
+      "claim_type": "EXPLICIT",
+      "source": "The EM map shows no density for the V and C helices of the VCA region of WAVE1 (Figure 2B, right panel, elements colored black), which was present in the mini-WRC crystal structure but was removed in the \u0394WRC230-Rac1 complex used here.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "0ca59baa-11a9-4384-ab65-5a93331529c3",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C31",
+      "claim": "No density was observed for the first helix (\u03b11) of Sra1.",
+      "claim_type": "EXPLICIT",
+      "source": "No density was observed for the first helix (\u03b11) of Sra1 (Figure 2B, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "6bb1fb32-f7a6-48f6-8f05-ecf332182fa6",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C32",
+      "claim": "In crystals of mini-WRC, the first helix of Sra1 did not bind in intra-complex fashion, but rather to an adjacent WRC in the crystal lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "In crystals of mini-WRC this helix did not bind in intra-complex fashion, but rather to an adjacent WRC in the crystal lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previously reported crystal structures.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "b9301438-846f-4f44-aac3-ada38264a54e",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C33",
+      "claim": "No major conformational changes of the WRC were observed within the limits of 7 \u00c5 resolution, except for the meander region of WAVE1.",
+      "claim_type": "EXPLICIT",
+      "source": "No major conformational changes of the WRC were observed within the limits of our 7 \u00c5 resolution, except for the meander region of WAVE1 (a.a. 90\u2013184) (Figure 2C), which formed a series of helices (\u03b12-\u03b16) arrayed across the surface of Sra1 in the mini-WRC crystal structure (Chen et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2C and compared to previous crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "08b26c5b-6bfc-4a2a-800d-2063b169e432",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C34",
+      "claim": "The meander region generally has weak density in the EM map.",
+      "claim_type": "EXPLICIT",
+      "source": "In the EM map, the meander region generally has weak density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the EM density map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "1b633db6-c79f-4ac9-89c4-cf8b54c97dd3",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C35",
+      "claim": "In the crystal structure of the inhibited mini-WRC, helices \u03b12 and \u03b16 directly bind the V and C regions of the VCA, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In the crystal structure of the inhibited mini-WRC, helices \u03b12 and \u03b16 directly bind the V and C regions of the VCA, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previously reported crystal structures.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "0821d559-ff9d-4869-9d7a-811f832a7965",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C36",
+      "claim": "Mutagenesis studies suggest that interactions between helices \u03b12 and \u03b16 and the VCA act cooperatively to sequester the VCA, inhibiting its activity toward the Arp2/3 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutagenesis studies suggest that these interactions act cooperatively to sequester the VCA, inhibiting its activity toward the Arp2/3 complex (Chen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous mutagenesis studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "bc5c5f20-b9be-45d8-81e3-7efeaffee738",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C37",
+      "claim": "Removing the VCA destabilizes the meander region.",
+      "claim_type": "EXPLICIT",
+      "source": "The observations here support this idea, since removing the VCA (and possibly Rac1 binding as well) reciprocally appears to destabilize the meander region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the weak density of the meander region in the EM map.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "a78e832a-20b2-4177-bc94-0aa5b7f74d6e",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C38",
+      "claim": "The only major extra density not accounted for by the WRC was located on a surface of Sra1 ~120 \u00c5 from the previously proposed Rac1 binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "The only major extra density not accounted for by the WRC was located on a surface of Sra1 ~120 \u00c5 from the previously proposed Rac1 binding site, on the opposite end of the long axis of the WRC (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the EM density map in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "bfb60b30-3842-44f4-bb72-0aeb36f07f22",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C39",
+      "claim": "The extra density unambiguously accommodated the crystal structure of Rac1 P29S, including all secondary structure elements and most loops.",
+      "claim_type": "EXPLICIT",
+      "source": "This density unambiguously accommodated the crystal structure of Rac1 P29S, including all secondary structure elements and most loops (PDB 3SBD) (Krauthammer et al., 2012) (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "3d1a6758-866e-4450-815c-4dca35dbd36a",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C40",
+      "claim": "The N terminus of Rac1 is located ~100 \u00c5 from the last ordered residue of WAVE1 to which it is linked.",
+      "claim_type": "EXPLICIT",
+      "source": "In this position, the N terminus of Rac1 is located ~100 \u00c5 from the last ordered residue of WAVE1 to which it is linked, a distance that could readily be spanned by the 88 disordered residues of the tether.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from the EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "f33fb8b4-38c8-4d6a-aa34-9906d4925727",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C41",
+      "claim": "Small GTPases use two conserved structural elements, Switch I and Switch II, to bind and activate downstream signaling proteins in a nucleotide-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Rac1 and other small GTPases use two conserved structural elements, Switch I (a.a. 25\u201339) and Switch II (a.a. 57\u201375), to bind and activate downstream signaling proteins in a nucleotide-dependent manner (Mott and Owen, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "b1920eb8-b9cc-4c79-bae3-e88d221a8b41",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C42",
+      "claim": "Both Switch I and Switch II of Rac1 make direct contact with the WRC through a conserved surface on the Sra1 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model of the complex, both Switch I and Switch II of Rac1 make direct contact with the WRC, through a conserved surface on the Sra1 subunit (a.a. 957\u2013979, arrow heads in Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the EM structure model in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "54a0cd23-bde0-45ee-8b28-689a61e78722",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C43",
+      "claim": "The A Site is a conserved surface patch on Sra1 near the \u03b14-\u03b16 helices of the WAVE1 meander region, adjacent to the VCA binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "That site is a conserved surface patch on Sra1 near the \u03b14-\u03b16 helices of the WAVE1 meander region, adjacent to the VCA binding site (Figure 1B, Figure 3A) (Chen et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figures 1B and 3A and referenced to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "caaefe4f-0735-49da-9b9d-d21ff5410b45",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C44",
+      "claim": "In the EM reconstruction, Rac1 binds to a different conserved surface at the opposite end of the rod-shaped Sra1 subunit, which is distant from the meander-VCA region.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, in the EM reconstruction, Rac1 binds to a different conserved surface at the opposite end of the rod-shaped Sra1 subunit, which is distant from the meander-VCA region (Figure 1B, Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the EM structure in Figures 1B and 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "77dfea3c-1757-474c-8c56-fa5c60efca3e",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C45",
+      "claim": "Mutating any of three surface residues (C179R, R190D, or M632D) at the A Site disrupted Rac1 binding in qualitative GST pull-down experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that mutating any of three surface residues (C179R, R190D, or M632D), or one pair of residues (E434K/F626A), at the A Site disrupted Rac1 binding in qualitative GST pull-down experiments, and that the two mutations analyzed in a quantitative equilibrium dialysis experiment (R190D and E434K/F626A) both decreased affinity (Chen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "99214e55-2b74-44c1-90b2-dd5824d75002",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C46",
+      "claim": "The D Site is conserved, although less so than the A Site.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the D Site is also conserved, although less so than the A Site (Supplementary file 1 and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Supplementary file 1 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "61d60b55-2900-4b13-b03b-ca9b62d3e402",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C47",
+      "claim": "GST-Rac1 loaded with GMPPNP could efficiently retain wild type WRC as well as the D1122A/E1123A mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "GST-Rac1 loaded with GMPPNP (a poorly hydrolyzable GTP analog) could efficiently retain wild type (WT) WRC as well as one of the six D Site mutants, D1122A/E1123A (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the pull-down assay in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "c7c6a763-8567-425d-9267-0c945dbf7cbe",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C48",
+      "claim": "All D Site mutations except D1122A/E1123A substantially diminished binding to GST-Rac1.",
+      "claim_type": "EXPLICIT",
+      "source": "All other mutations at the D Site substantially diminished binding, suggesting that this region mediates high-affinity interactions with Rac1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the pull-down assay in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "13eec545-4fae-450a-b4fa-16fd6df62836",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C49",
+      "claim": "The A Site mutation C179R decreased binding to GST-Rac1, albeit more moderately than most D Site mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our previous report (Chen et al., 2010), the A Site mutation, C179R, also decreased binding under the same experimental conditions, albeit more moderately (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the pull-down assay in Figure 3E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "67ee3ae5-b20b-4ffc-9e64-fdaf44d951b9",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C50",
+      "claim": "The observed interactions between Rac1 and the WRC are specific to active Rac1, since Rac1-GDP did not bind to any of the WRCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed interactions are specific to active Rac1, since Rac1-GDP did not bind to any of the WRCs (Figure 3\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the pull-down assay in Figure 3\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "3131c098-c038-4a25-bff5-859166ae4d1c",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C51",
+      "claim": "The S969F mutation did not appreciably affect binding to Rac1.",
+      "claim_type": "EXPLICIT",
+      "source": "The S969F mutation did not appreciably affect binding (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the pull-down assay in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "a7dc322d-1e0a-4cc1-a8e7-4dd3debfe5f7",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C52",
+      "claim": "P963 and Y967 are highly conserved in eukaryotic organisms including animals, fungi, amoebas and many protozoans, except plants.",
+      "claim_type": "EXPLICIT",
+      "source": "It is notable that P963 and Y967 are highly conserved in eukaryotic organisms including animals, fungi, amoebas and many protozoans, except plants (Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the conservation analysis in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "1952a199-641a-4f5f-93a9-33aba1e0af2f",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C53",
+      "claim": "Mutating either the A Site (C179R) or the D Site (Y967A) significantly decreased membrane recruitment of the WRC.",
+      "claim_type": "EXPLICIT",
+      "source": "Paralleling the above GST pull-down experiments, mutating either the A Site (C179R) or the D Site (Y967A) significantly decreased membrane recruitment of the WRC, with the D Site mutation having a larger effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the membrane recruitment assay in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "5191cfae-cbeb-4ee5-ba4f-762f8009237a",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C54",
+      "claim": "The D Site mutation (Y967A) had a larger effect on membrane recruitment than the A Site mutation (C179R).",
+      "claim_type": "EXPLICIT",
+      "source": "Paralleling the above GST pull-down experiments, mutating either the A Site (C179R) or the D Site (Y967A) significantly decreased membrane recruitment of the WRC, with the D Site mutation having a larger effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the membrane recruitment assay in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "635b53cc-e02e-4fbe-80f2-7b418342d28d",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C55",
+      "claim": "The S969F mutation did not decrease, but rather slightly increased membrane recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the S969F mutation did not decrease, but rather slightly increased membrane recruitment (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the membrane recruitment assay in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "ac0b8164-8a48-4218-9f2f-2805cdb68154",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C56",
+      "claim": "Two molecules of Rac1 can simultaneously bind to a single WRC.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the concentration of EGFP-Rac1 up to 15.1 \u03bcM shifted the sedimentation coefficient of the WRC peak to 12.1S and stoichiometry to 1.9:1, confirming that two Rac1 molecules can simultaneously bind to a single WRC (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the AUC data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "144050f0-e883-4c83-80a4-f2cbb7786fc9",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C57",
+      "claim": "For the A Site mutant (C179R), at a nearly saturating concentration of EGFP-Rac1, the binding stoichiometry only reached 1:1.",
+      "claim_type": "EXPLICIT",
+      "source": "For the A Site mutant (C179R), at a nearly saturating concentration of EGFP-Rac1 (8.4 \u03bcM vs. dissociation constant KD of 0.27 \u03bcM as determined below), the binding stoichiometry only reached 1:1 (Figure 4A, blue curves, 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the AUC data in Figure 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "5deb6079-39b9-4fde-bd31-3b8ec03cbae1",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C58",
+      "claim": "For the D Site mutant (Y967A), the binding stoichiometry only reached 0.6:1 with 8.5 \u03bcM Rac1.",
+      "claim_type": "EXPLICIT",
+      "source": "For the D Site mutant (Y967A), the binding stoichiometry only reached to 0.6:1 with 8.5 \u03bcM Rac1, consistent with the lower affinity (KD ~11.5 \u03bcM) of the A Site as determined below (Figure 4A, red curves, 4B) and implicated by the qualitative GST-pull down data above.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the AUC data in Figure 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "ad7260fd-1bfe-46e6-ac62-4ce2efbbda0f",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C59",
+      "claim": "The AUC data confirmed that two molecules of Rac1 can engage the WRC at the A and D sites simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the AUC data confirmed that two molecules of Rac1 can engage the WRC at the A and D sites simultaneously, and that our mutations could selectively weaken binding to the individual sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the AUC data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "be5802ef-8abf-4057-8831-207767a5367d",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C60",
+      "claim": "The dissociation constant for the D Site (KD,D) is 0.169 \u00b1 0.008 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitting to a simplified sequential two-site binding model or to a single-site model resulted in a similar dissociation constant for the D Site (KD,D of 0.169 \u00b1 0.008 \u03bcM in Figure 5C, black solid curve compared to 0.106 \u00b1 0.002 \u03bcM in Figure 5C, grey dotted curve).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from equilibrium pull-down assays shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "58e88a28-5db3-49a9-9ea7-f334e0970763",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C61",
+      "claim": "The dissociation constant for the A Site when the D Site is bound (KD,A(D)) is 0.262 \u00b1 0.044 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitting to the sequential two-site binding model was statistically better than the single-site model (p=5.45\u00d710\u22129), and yielded a dissociation constant for the A Site for the D Site-bound WRC (KD,A(D)) of 0.262 \u00b1 0.044 \u03bcM, suggesting positive cooperativity between the A and D Sites compared to the dissociation constant for the A Site alone (KD,A of 11.52 \u00b1 0.11 \u00b5M as determined below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from equilibrium pull-down assays shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "1eac655d-217f-4a12-a62c-af054de3574a",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C62",
+      "claim": "The dissociation constant for the A Site alone (KD,A) is 11.52 \u00b1 0.11 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitting to the sequential two-site binding model was statistically better than the single-site model (p=5.45\u00d710\u22129), and yielded a dissociation constant for the A Site for the D Site-bound WRC (KD,A(D)) of 0.262 \u00b1 0.044 \u03bcM, suggesting positive cooperativity between the A and D Sites compared to the dissociation constant for the A Site alone (KD,A of 11.52 \u00b1 0.11 \u00b5M as determined below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from equilibrium pull-down assays for the Y967A mutant shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "56a3b26e-9865-4fff-8690-b731c71061ff",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C63",
+      "claim": "There is positive cooperativity between the A and D Sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitting to the sequential two-site binding model was statistically better than the single-site model (p=5.45\u00d710\u22129), and yielded a dissociation constant for the A Site for the D Site-bound WRC (KD,A(D)) of 0.262 \u00b1 0.044 \u03bcM, suggesting positive cooperativity between the A and D Sites compared to the dissociation constant for the A Site alone (KD,A of 11.52 \u00b1 0.11 \u00b5M as determined below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the difference in KD values.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "79d013dc-61bf-4bf2-be3f-3295e578b662",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C64",
+      "claim": "The D Site has approximately 40-fold higher affinity for Rac1 than the A Site.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our data demonstrate that both the previously identified A Site and the newly identified D Site are bona fide binding sites for Rac1, the latter with ~40 fold higher affinity than the former.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the ratio of KD values (11.52/0.265 \u2248 43).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "110f90ff-ac42-4985-b874-5c39408f5b48",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C65",
+      "claim": "The two sites can act together to recruit the WRC to membranes containing active Rac1.",
+      "claim_type": "EXPLICIT",
+      "source": "The two sites can act together to recruit the WRC to membranes containing active Rac1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the membrane recruitment assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "33983043-4724-470a-a7d8-250a38e2bbf4",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C66",
+      "claim": "A saturating concentration of Rac1 (10 \u03bcM) could produce actin-assembly rates equivalent to that of the constitutively active WAVE1 VCA peptide for the WT WRC.",
+      "claim_type": "EXPLICIT",
+      "source": "For the WT WRC, a saturating concentration of Rac1 (10 \u03bcM) could produce actin-assembly rates equivalent to that of the constitutively active WAVE1 VCA peptide (dashed cyan curve in Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the actin assembly assay in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "18f3461b-ba97-494b-ab79-bcc26b2e051a",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C67",
+      "claim": "Mutating the D Site (Y967A) or the A Site (C179R) completely abrogated WRC activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutating the D Site (Y967A, Figure 6B,E) or the A Site (C179A, Figure 6D,E) completely abrogated activation, suggesting that activation of the WRC requires binding of Rac1 to both sites.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the actin assembly assays in Figures 6B, 6D, and 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "a0edbbe1-6945-47d3-a4da-1a01bab18b70",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C68",
+      "claim": "Activation of the WRC requires binding of Rac1 to both sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutating the D Site (Y967A, Figure 6B,E) or the A Site (C179A, Figure 6D,E) completely abrogated activation, suggesting that activation of the WRC requires binding of Rac1 to both sites.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the actin assembly assays showing that mutations at either site abolish activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "b64e7f68-3eba-4bdb-a717-9a75606ae6aa",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C69",
+      "claim": "The S969F mutant WRC was more sensitive to Rac1 than the WT WRC.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the S969F mutant, which had slightly higher affinity for Rac1 (Figure 3F), was more sensitive to the GTPase than was WT WRC (Figure 6A,C,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the actin assembly assays in Figures 6A, 6C, and 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "e6d9aae7-39a3-4d4f-90ec-f84864f51d31",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C70",
+      "claim": "The S969F mutant WRC was fully activated by only 3 \u03bcM Rac1, instead of 10 \u03bcM required for WT WRC.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the S969F mutant WRC was fully activated by only 3 \u03bcM Rac1, instead of 10 \u03bcM (green dashed curve in Figure 6C vs. cyan dashed curve in Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the actin assembly assays in Figures 6A and 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "abf6cd14-14e6-4f26-a107-435d36ad4c82",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C71",
+      "claim": "Engagement of a single site (primarily the D Site) is not sufficient to drive WRC activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of response to WRC-Rac1 concentrations up to 80 nM suggests suggests that engagement of a single site (primarily the D Site, due to its high affinity) is not sufficient to drive WRC activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the analysis of actin assembly data in Figure 6F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "bdb890c8-7486-4fc7-a536-e6bbf37e5524",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C72",
+      "claim": "Plotting actin assembly rate versus the concentration of WRC-(Rac1)2 yields a linear relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, plotting actin assembly rate versus the concentration of WRC-(Rac1)2 yields a linear relationship (red data in Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the analysis in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "45da9415-f06c-4e33-b756-82098eaaa95e",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C73",
+      "claim": "The specific activity of WRC-(Rac1)2 is approximately 0.22 nM actin/s/nM WRC-(Rac1)2.",
+      "claim_type": "EXPLICIT",
+      "source": "The slope of this line gives a specific activity of ~0.22 nM actin/s/nM WRC-(Rac1)2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the linear fit in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "a8547f4b-279e-4b92-9fd0-9108a33f51ac",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C74",
+      "claim": "Engagement of both the A and D sites is necessary for WRC activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the qualitative and quantitative actin assembly data show that engagement of both the A and D sites is necessary for WRC activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the actin assembly data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "2882ab6e-5c7d-4bad-8261-5cb1d46cdb15",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C75",
+      "claim": "Rac1 activates the WRC through two binding sites that are distinct from the VCA-binding surface of Sra1.",
+      "claim_type": "EXPLICIT",
+      "source": "First, Rac1 activates the WRC through two binding sites that are distinct from the VCA-binding surface of Sra1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural and biochemical data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "27928cd7-dd49-46cf-989b-ea5433cb4c20",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C76",
+      "claim": "The A Site and the D Site likely cooperate to trigger conformational changes that release the VCA.",
+      "claim_type": "EXPLICIT",
+      "source": "Our current data suggest that the A Site and the D Site likely cooperate to trigger conformational changes that release the VCA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the requirement for both sites for activation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "686a6b5e-a2d9-4bc6-b96a-1e14887bbaa2",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C77",
+      "claim": "The requirement for engagement of Rac1 at both sites to activate the WRC may explain why major conformational changes were not observed in the current structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In the latter scenario, the requirement for engagement of Rac1 at both sites to activate the WRC may explain why we did not observe major conformational changes on the WRC in our current structure, in which only the D Site is occupied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the structural observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "9d5a8878-f5eb-4458-8b79-7810d7ce303f",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C78",
+      "claim": "S969 in Sra1 is buried immediately underneath the D Site.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that S969 in Sra1 is buried immediately underneath the D Site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the structure in Figures 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "8db7c92a-d681-4598-8e85-e720d920153e",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C79",
+      "claim": "S969F in Sra1 facilitates Rac1 binding and WRC activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the previous hypothesis that this mutation may act by destabilizing the WRC, our results show that S969F in Sra1 facilitates Rac1 binding and WRC activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the membrane recruitment and actin assembly assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "18f92099-f703-48d1-9ae9-a41a4557ab20",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C80",
+      "claim": "S969 may be part of the pathway for conformational propagation from the D Site to the VCA-binding pocket upon Rac1 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that S969 may be part of the pathway for the conformational propagation from the D Site to the VCA-binding pocket upon Rac1 binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the location and effects of the S969F mutation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "c502bcf6-3f40-450a-b58d-4cd95cc7809d",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C81",
+      "claim": "Excessive activation of the WRC by Rac1 might be responsible for the observed changes in cocaine response and neuronal morphology in mice with the S968F mutation in Cyfip2.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming the S968F mutation in Cyfip2 has a similar biochemical effect, our data suggest that excessive activation of the WRC by Rac1 might be responsible for the observed changes in cocaine response and neuronal morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the biochemical effects of the S969F mutation in Sra1.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "c77efd0d-e30e-4e62-9d15-f3567da8b60b",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C82",
+      "claim": "The WRC has a basic face and an acidic face.",
+      "claim_type": "EXPLICIT",
+      "source": "One face of the WRC is highly basic, and the opposite face is highly acidic (Chen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "6f2b7b10-4b38-4d3b-a492-2a4251dbb01d",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C83",
+      "claim": "When the WRC is bound to the negatively charged inner leaflet of the plasma membrane, its basic surface will lie against the membrane and its acidic surface will face the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "This charge distribution suggests that when the WRC is bound to the negatively charged inner leaflet of the plasma membrane, and/or specific phospholipids such as PIP3, its basic surface will lie against the membrane and its acidic surface will face the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the charge distribution of the WRC.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "556eef22-d5ff-4701-9332-06de94e796bd",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C84",
+      "claim": "In the proposed membrane orientation, both Rac1 binding sites can be positioned to enable a bound GTPase to bury its prenylated tail in the bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "In this orientation, both Rac1 binding sites can be positioned to enable a bound GTPase to bury its prenylated tail in the bilayer, consistent with an activation model involving simultaneous engagement of both sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural model shown in Figure 7.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "36355c89-7009-4b6d-86f2-311d7c1ec13c",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C85",
+      "claim": "The proposed membrane orientation is compatible with VCA release to interact with the Arp2/3 complex in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "This orientation is also compatible with other potential interactions. For example, VCA can be readily released from above the membrane to interact with the Arp2/3 complex further in the cytoplasm (Chazeau et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural model and supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "d56b718c-a15e-4966-9568-849ec1994323",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C86",
+      "claim": "WIRS-containing transmembrane receptors could reach the WIRS-binding site on the acidic face of the WRC through less than 23 residues.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, WIRS-containing transmembrane receptors could reach the WIRS-binding site on the acidic face of the WRC through < 23 residues (or ~80 \u00c5 in distance; Figure 7A) (Chen et al., 2014a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structural model shown in Figure 7A and supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "1ae1beb1-78c7-45ac-afd5-b9120f251cc2",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C87",
+      "claim": "With few exceptions, the WIRS elements in previously predicted WIRS-containing receptors in humans are generally located more than 25 residues from their transmembrane sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, with few exceptions, the WIRS elements in previously predicted WIRS-containing receptors in humans are generally located > 25 residues from their transmembrane sequence (not shown) (Chen et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "91c76c42-c57e-4e05-aa5e-ce923f3fa12e",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C88",
+      "claim": "WRC activation requires simultaneous engagement of two Rac1 molecules at two distinct binding sites with approximately 40-fold different affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that WRC activation requires simultaneous engagement of two Rac1 molecules at two distinct binding sites with ~40 fold different affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the biochemical and structural data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "04697c5c-5b52-4e26-8277-0dc3c32064f0",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C89",
+      "claim": "When the density of Rac1 at membranes is low, Rac1 should interact with the WRC preferentially through the high-affinity D Site, which on its own is not sufficient to trigger activation but primes the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "When the density of Rac1 at membranes is low, Rac1 should interact with the WRC preferentially through the high-affinity site, which on its own is not sufficient to trigger activation but primes the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the affinity differences and activation requirements.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "7cca3f32-9b80-4f0f-8692-1083592896d1",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C90",
+      "claim": "The WRC only becomes activated when Rac1 density is sufficient to enable binding to both sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The WRC only becomes activated when Rac1 density is sufficient to enable binding to both sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the requirement for both sites for activation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "110a0365-0a6e-43a8-b487-3bc327769622",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C91",
+      "claim": "Activation of the WRC at membranes is likely non-linear with respect to Rac1 density.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, activation of the WRC at membranes is likely non-linear with respect to Rac1 density (note that technical limitations in working with low Rac1 density on membranes prevented us from examining this experimentally).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the bivalent binding model.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "44eda3a8-7cd2-478e-9862-13d716fcce19",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C92",
+      "claim": "The non-linear activation behavior could be harnessed by cells to determine precisely where and when to turn on actin assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "This behavior could be harnessed by cells to determine precisely where and when to turn on actin assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the proposed activation mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "7d1e0caf-ac68-48fb-bed0-2c1900b18fcf",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C93",
+      "claim": "Rac1 and the Arf GTPase can cooperatively recruit and activate the WRC at membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogous ideas have been suggested previously, based on observations that Rac1 and the Arf GTPase can cooperatively recruit and activate the WRC at membranes (Koronakis et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "ee75b141-bb40-43e0-8274-d84bb80ea175",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "claim_id": "C94",
+      "claim": "It is unlikely that either the A or D site is also the binding site for Arf GTPase.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the low sequence homology between Rac1 and Arf (22% and 38% identity in Switch I and Switch II, respectively), we feel it is unlikely that either the A or D site that we have characterized is also the binding site for Arf.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the low sequence homology between Rac1 and Arf.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f8a9594b-8dbf-45ef-a5a0-a727e9bc030d",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A 7.0 \u00c5 resolution cryo-EM structure of a WRC-Rac1 complex reveals Rac1 bound to a site on Sra1 approximately 120 \u00c5 distant from the previously predicted binding location. The structure shows both Switch I and Switch II of Rac1 making direct contact with a conserved surface on Sra1 (residues 957-979).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The cryo-EM structure determination is well-documented with appropriate resolution assessment (FSC=0.143 criterion), and the density map unambiguously accommodates the Rac1 crystal structure including secondary structure elements. The structural claims are directly supported by the density map and fitting procedures, with validation through conservation analysis and structural features consistent with GTPase-effector interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "0e9f89a4-6bbd-4489-a7b7-70ce15cce087",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The cryo-EM structure identifies Rac1 binding at a 'D Site' (Distant Site) on Sra1, distinct from the previously characterized 'A Site' (Adjacent Site) near the VCA-binding region. Both sites show evolutionary conservation, though the A Site is more highly conserved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural identification of the D Site is unambiguous from the EM density. The distinction from the A Site is clearly demonstrated, and conservation analysis supports functional significance of both sites. Previous mutagenesis data (C45) from cited work provides independent validation of the A Site's functional importance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "4510889e-c0bb-43e1-9e07-d85cc07b0742",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mutagenesis combined with GST pull-down and membrane recruitment assays demonstrates that Rac1 binds to both the A Site and D Site. Mutations at the D Site (particularly Y967A) have stronger effects on binding than A Site mutations (C179R), while the S969F mutation enhances binding and recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple complementary assays (pull-downs under different conditions, membrane recruitment) consistently show both sites contribute to Rac1 binding. The differential effects of mutations are reproducible across assays. Controls with GDP-bound Rac1 (C50) confirm specificity for active GTPase. The experimental design appropriately tests individual site contributions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "c9b55f11-e003-4256-8afc-7019d959282b",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Multi-signal sedimentation velocity analytical ultracentrifugation demonstrates that two Rac1 molecules can simultaneously bind a single WRC with 2:1 stoichiometry. Site-specific mutants show reduced stoichiometry: the A Site mutant (C179R) reaches only 1:1, while the D Site mutant (Y967A) reaches 0.6:1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The MSSV-AUC approach provides direct, quantitative measurement of binding stoichiometry by tracking both components independently. The concentration-dependent shifts in sedimentation coefficient and the differential behavior of site-specific mutants provide strong evidence for bivalent binding. The methodology is rigorous and appropriate for determining stoichiometry.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "35d180be-1325-41c9-a480-ce7435772dbc",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Equilibrium pull-down assays reveal the D Site has approximately 40-fold higher affinity for Rac1 (KD,D = 0.169 \u00b1 0.008 \u03bcM) compared to the A Site alone (KD,A = 11.52 \u00b1 0.11 \u03bcM). Positive cooperativity is observed, with the A Site showing enhanced affinity (KD,A(D) = 0.262 \u00b1 0.044 \u03bcM) when the D Site is occupied.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The equilibrium pull-down methodology is appropriate for KD determination, with multiple independent experiments and statistical model comparison (F-test, p=5.45\u00d710\u207b\u2079 favoring two-site model). The ~40-fold affinity difference is clearly demonstrated. However, the cooperativity interpretation should be cautious as the authors note this may reflect avidity effects from GST dimerization rather than true allosteric cooperativity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "0699ca39-bf5c-48e8-82ee-f705e0cce5fc",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Actin assembly assays demonstrate that both Rac1 binding sites are required for WRC activation. Mutations at either the D Site (Y967A) or A Site (C179R) completely abolish activation, and engagement of a single site is insufficient to drive activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The pyrene-actin assembly assays provide clear functional readout, with appropriate controls (VCA peptide, WRC alone). The complete loss of activation with single-site mutations provides strong evidence for the requirement of both sites. The analysis correlating activation with WRC-(Rac1)\u2082 concentration (C72) further supports the bivalent activation model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "4c804b45-175a-4561-92a3-e0f504ed58c0",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The S969F mutation in Sra1, buried beneath the D Site, enhances Rac1 binding and increases WRC sensitivity to activation, requiring only 3 \u03bcM Rac1 for full activation compared to 10 \u03bcM for wild-type WRC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The S969F mutation effects are consistently observed across binding assays (membrane recruitment) and functional assays (actin assembly). The structural location of S969 beneath the D Site provides mechanistic context. This result has translational relevance given the equivalent mutation in mouse Cyfip2 affects neuronal phenotypes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "eefbf965-7c43-4dc3-ae4e-d41dddfeca04",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The WRC is activated by simultaneous engagement of two Rac1 molecules at sites with ~40-fold different affinity, suggesting a mechanism for cells to sense Rac1 density at membranes. At low Rac1 density, the high-affinity D Site is preferentially occupied, priming but not activating the complex; activation occurs only when Rac1 density enables binding to both sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This mechanistic model is well-supported by the combination of stoichiometry data (2:1 binding), affinity measurements (40-fold difference), and functional data (requirement for both sites). The model logically integrates all experimental observations. However, the authors appropriately note they could not experimentally test the non-linear activation behavior at low Rac1 densities on membranes due to technical limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "76643c5b-16c8-4763-b8fc-783b25325e87",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The meander region of WAVE1 shows weak and disordered density in the EM map compared to the crystal structure of inhibited mini-WRC, suggesting that removal of the VCA destabilizes this region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The observation of weak/missing density for the meander region is clearly documented in the EM map. The interpretation that VCA removal destabilizes the meander is reasonable given previous structural data showing direct interactions between the meander and VCA. This supports the reciprocal stabilization model for WRC autoinhibition.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "61bc54a1-d29d-4e38-8916-91fab232c080",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The A and D Sites likely cooperate to trigger conformational changes releasing the VCA. The requirement for both sites may explain why major conformational changes were not observed in the current structure where only the D Site is occupied. S969 may be part of the conformational propagation pathway, and excessive WRC activation might explain phenotypes associated with the S968F mutation in mouse Cyfip2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are reasonable mechanistic hypotheses based on the data, but remain speculative. The lack of observed conformational changes could have alternative explanations (resolution limitations, inherent flexibility). The S969 pathway role and Cyfip2 mutation effects are plausible but require direct experimental validation. The authors appropriately present these as possibilities rather than established facts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "ea27869d-36f7-4cf8-b6b5-65a06fbc08a9",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The WRC has distinct basic and acidic faces, suggesting a membrane orientation where the basic face contacts the negatively charged membrane. In this orientation, both Rac1 binding sites can position bound GTPases to insert prenylated tails into the bilayer, and the VCA can be released to interact with Arp2/3 complex in the cytoplasm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The charge distribution observation is based on previous structural work (cited). The proposed membrane orientation is a logical inference that satisfies multiple geometric and biochemical constraints: membrane charge complementarity, Rac1 prenylation requirements, VCA accessibility, and WIRS receptor reach. While not directly demonstrated, the model is well-reasoned and testable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "57397e1c-d882-4799-b521-5c8f865cdced",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The engineered \u0394WRC230-Rac1 construct with tethered Rac1(Q61L/P29S) binds the WRC in a physiologically relevant manner, as demonstrated by competition assays. The Q61L mutation maintains GTP-bound state, and the P29S melanoma-associated mutation increases affinity for the WRC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The competition pull-down assay (C23) validates that the tethered Rac1 binds physiologically. The Q61L effect is well-established in the literature. The P29S mutation effect on WRC binding is directly demonstrated by pull-down and actin assembly assays, extending previous observations with PAK1 and MLK3. This construct design is well-justified for structural studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "170d7510-c6cc-4db4-8ae4-83fad2b3111d",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Activation of the WRC at membranes is likely non-linear with respect to Rac1 density, a behavior that could be harnessed by cells to precisely control where and when to activate actin assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the bivalent binding model with differential affinities logically predicts non-linear activation, the authors explicitly state they could not test this experimentally due to technical limitations with low Rac1 density on membranes. The prediction is reasonable but remains unvalidated. The biological significance, while plausible, is speculative without cellular validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    },
+    {
+      "id": "77cbd613-702b-46d9-86a2-ba0fa26f0fca",
+      "content_id": "53ccc802-3e51-4dd0-9758-71275445cc0b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background and context claims establishing the biological importance of the Rac1-WRC-Arp2/3 pathway in actin dynamics, the composition and structure of the WRC, and mechanisms of WASP family protein regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are well-established facts from the literature, appropriately cited. They provide necessary context but are not novel findings of this study. The citations appear appropriate and the statements accurately reflect current understanding of the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:34.071616Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d2488dbe-1fa6-4c49-93cc-283be38024af",
+      "result_id": "f8a9594b-8dbf-45ef-a5a0-a727e9bc030d"
+    },
+    {
+      "claim_id": "acfa2ce4-b48f-4acf-a931-3592e76c7950",
+      "result_id": "f8a9594b-8dbf-45ef-a5a0-a727e9bc030d"
+    },
+    {
+      "claim_id": "f3dca267-e7bb-4735-a747-3fdb71ddf5bc",
+      "result_id": "f8a9594b-8dbf-45ef-a5a0-a727e9bc030d"
+    },
+    {
+      "claim_id": "a78e832a-20b2-4177-bc94-0aa5b7f74d6e",
+      "result_id": "f8a9594b-8dbf-45ef-a5a0-a727e9bc030d"
+    },
+    {
+      "claim_id": "bfb60b30-3842-44f4-bb72-0aeb36f07f22",
+      "result_id": "f8a9594b-8dbf-45ef-a5a0-a727e9bc030d"
+    },
+    {
+      "claim_id": "3d1a6758-866e-4450-815c-4dca35dbd36a",
+      "result_id": "f8a9594b-8dbf-45ef-a5a0-a727e9bc030d"
+    },
+    {
+      "claim_id": "b1920eb8-b9cc-4c79-bae3-e88d221a8b41",
+      "result_id": "f8a9594b-8dbf-45ef-a5a0-a727e9bc030d"
+    },
+    {
+      "claim_id": "f22f6c3d-cf8c-4319-924b-d6e8e235ccc4",
+      "result_id": "0e9f89a4-6bbd-4489-a7b7-70ce15cce087"
+    },
+    {
+      "claim_id": "b2c65fd1-2132-42f4-9f1a-1a6cf10088b8",
+      "result_id": "0e9f89a4-6bbd-4489-a7b7-70ce15cce087"
+    },
+    {
+      "claim_id": "54a0cd23-bde0-45ee-8b28-689a61e78722",
+      "result_id": "0e9f89a4-6bbd-4489-a7b7-70ce15cce087"
+    },
+    {
+      "claim_id": "caaefe4f-0735-49da-9b9d-d21ff5410b45",
+      "result_id": "0e9f89a4-6bbd-4489-a7b7-70ce15cce087"
+    },
+    {
+      "claim_id": "77dfea3c-1757-474c-8c56-fa5c60efca3e",
+      "result_id": "0e9f89a4-6bbd-4489-a7b7-70ce15cce087"
+    },
+    {
+      "claim_id": "99214e55-2b74-44c1-90b2-dd5824d75002",
+      "result_id": "0e9f89a4-6bbd-4489-a7b7-70ce15cce087"
+    },
+    {
+      "claim_id": "cafb98b8-304d-43d6-be3d-6197f91d4a89",
+      "result_id": "4510889e-c0bb-43e1-9e07-d85cc07b0742"
+    },
+    {
+      "claim_id": "61d60b55-2900-4b13-b03b-ca9b62d3e402",
+      "result_id": "4510889e-c0bb-43e1-9e07-d85cc07b0742"
+    },
+    {
+      "claim_id": "c7c6a763-8567-425d-9267-0c945dbf7cbe",
+      "result_id": "4510889e-c0bb-43e1-9e07-d85cc07b0742"
+    },
+    {
+      "claim_id": "13eec545-4fae-450a-b4fa-16fd6df62836",
+      "result_id": "4510889e-c0bb-43e1-9e07-d85cc07b0742"
+    },
+    {
+      "claim_id": "67ee3ae5-b20b-4ffc-9e64-fdaf44d951b9",
+      "result_id": "4510889e-c0bb-43e1-9e07-d85cc07b0742"
+    },
+    {
+      "claim_id": "3131c098-c038-4a25-bff5-859166ae4d1c",
+      "result_id": "4510889e-c0bb-43e1-9e07-d85cc07b0742"
+    },
+    {
+      "claim_id": "1952a199-641a-4f5f-93a9-33aba1e0af2f",
+      "result_id": "4510889e-c0bb-43e1-9e07-d85cc07b0742"
+    },
+    {
+      "claim_id": "5191cfae-cbeb-4ee5-ba4f-762f8009237a",
+      "result_id": "4510889e-c0bb-43e1-9e07-d85cc07b0742"
+    },
+    {
+      "claim_id": "635b53cc-e02e-4fbe-80f2-7b418342d28d",
+      "result_id": "4510889e-c0bb-43e1-9e07-d85cc07b0742"
+    },
+    {
+      "claim_id": "ac0b8164-8a48-4218-9f2f-2805cdb68154",
+      "result_id": "c9b55f11-e003-4256-8afc-7019d959282b"
+    },
+    {
+      "claim_id": "144050f0-e883-4c83-80a4-f2cbb7786fc9",
+      "result_id": "c9b55f11-e003-4256-8afc-7019d959282b"
+    },
+    {
+      "claim_id": "5deb6079-39b9-4fde-bd31-3b8ec03cbae1",
+      "result_id": "c9b55f11-e003-4256-8afc-7019d959282b"
+    },
+    {
+      "claim_id": "ad7260fd-1bfe-46e6-ac62-4ce2efbbda0f",
+      "result_id": "c9b55f11-e003-4256-8afc-7019d959282b"
+    },
+    {
+      "claim_id": "be5802ef-8abf-4057-8831-207767a5367d",
+      "result_id": "35d180be-1325-41c9-a480-ce7435772dbc"
+    },
+    {
+      "claim_id": "58e88a28-5db3-49a9-9ea7-f334e0970763",
+      "result_id": "35d180be-1325-41c9-a480-ce7435772dbc"
+    },
+    {
+      "claim_id": "1eac655d-217f-4a12-a62c-af054de3574a",
+      "result_id": "35d180be-1325-41c9-a480-ce7435772dbc"
+    },
+    {
+      "claim_id": "56a3b26e-9865-4fff-8690-b731c71061ff",
+      "result_id": "35d180be-1325-41c9-a480-ce7435772dbc"
+    },
+    {
+      "claim_id": "79d013dc-61bf-4bf2-be3f-3295e578b662",
+      "result_id": "35d180be-1325-41c9-a480-ce7435772dbc"
+    },
+    {
+      "claim_id": "b08f64cd-7df6-45fc-bac9-18e8996f0def",
+      "result_id": "0699ca39-bf5c-48e8-82ee-f705e0cce5fc"
+    },
+    {
+      "claim_id": "33983043-4724-470a-a7d8-250a38e2bbf4",
+      "result_id": "0699ca39-bf5c-48e8-82ee-f705e0cce5fc"
+    },
+    {
+      "claim_id": "18f3461b-ba97-494b-ab79-bcc26b2e051a",
+      "result_id": "0699ca39-bf5c-48e8-82ee-f705e0cce5fc"
+    },
+    {
+      "claim_id": "a0edbbe1-6945-47d3-a4da-1a01bab18b70",
+      "result_id": "0699ca39-bf5c-48e8-82ee-f705e0cce5fc"
+    },
+    {
+      "claim_id": "abf6cd14-14e6-4f26-a107-435d36ad4c82",
+      "result_id": "0699ca39-bf5c-48e8-82ee-f705e0cce5fc"
+    },
+    {
+      "claim_id": "a8547f4b-279e-4b92-9fd0-9108a33f51ac",
+      "result_id": "0699ca39-bf5c-48e8-82ee-f705e0cce5fc"
+    },
+    {
+      "claim_id": "b64e7f68-3eba-4bdb-a717-9a75606ae6aa",
+      "result_id": "4c804b45-175a-4561-92a3-e0f504ed58c0"
+    },
+    {
+      "claim_id": "e6d9aae7-39a3-4d4f-90ec-f84864f51d31",
+      "result_id": "4c804b45-175a-4561-92a3-e0f504ed58c0"
+    },
+    {
+      "claim_id": "9d5a8878-f5eb-4458-8b79-7810d7ce303f",
+      "result_id": "4c804b45-175a-4561-92a3-e0f504ed58c0"
+    },
+    {
+      "claim_id": "8db7c92a-d681-4598-8e85-e720d920153e",
+      "result_id": "4c804b45-175a-4561-92a3-e0f504ed58c0"
+    },
+    {
+      "claim_id": "8d5bcfb1-4a2f-4214-9f66-a10ab59c6260",
+      "result_id": "eefbf965-7c43-4dc3-ae4e-d41dddfeca04"
+    },
+    {
+      "claim_id": "91c76c42-c57e-4e05-aa5e-ce923f3fa12e",
+      "result_id": "eefbf965-7c43-4dc3-ae4e-d41dddfeca04"
+    },
+    {
+      "claim_id": "04697c5c-5b52-4e26-8277-0dc3c32064f0",
+      "result_id": "eefbf965-7c43-4dc3-ae4e-d41dddfeca04"
+    },
+    {
+      "claim_id": "7cca3f32-9b80-4f0f-8692-1083592896d1",
+      "result_id": "eefbf965-7c43-4dc3-ae4e-d41dddfeca04"
+    },
+    {
+      "claim_id": "b9301438-846f-4f44-aac3-ada38264a54e",
+      "result_id": "76643c5b-16c8-4763-b8fc-783b25325e87"
+    },
+    {
+      "claim_id": "08b26c5b-6bfc-4a2a-800d-2063b169e432",
+      "result_id": "76643c5b-16c8-4763-b8fc-783b25325e87"
+    },
+    {
+      "claim_id": "bc5c5f20-b9be-45d8-81e3-7efeaffee738",
+      "result_id": "76643c5b-16c8-4763-b8fc-783b25325e87"
+    },
+    {
+      "claim_id": "27928cd7-dd49-46cf-989b-ea5433cb4c20",
+      "result_id": "61bc54a1-d29d-4e38-8916-91fab232c080"
+    },
+    {
+      "claim_id": "686a6b5e-a2d9-4bc6-b96a-1e14887bbaa2",
+      "result_id": "61bc54a1-d29d-4e38-8916-91fab232c080"
+    },
+    {
+      "claim_id": "18f92099-f703-48d1-9ae9-a41a4557ab20",
+      "result_id": "61bc54a1-d29d-4e38-8916-91fab232c080"
+    },
+    {
+      "claim_id": "c502bcf6-3f40-450a-b58d-4cd95cc7809d",
+      "result_id": "61bc54a1-d29d-4e38-8916-91fab232c080"
+    },
+    {
+      "claim_id": "c77efd0d-e30e-4e62-9d15-f3567da8b60b",
+      "result_id": "ea27869d-36f7-4cf8-b6b5-65a06fbc08a9"
+    },
+    {
+      "claim_id": "6f2b7b10-4b38-4d3b-a492-2a4251dbb01d",
+      "result_id": "ea27869d-36f7-4cf8-b6b5-65a06fbc08a9"
+    },
+    {
+      "claim_id": "556eef22-d5ff-4701-9332-06de94e796bd",
+      "result_id": "ea27869d-36f7-4cf8-b6b5-65a06fbc08a9"
+    },
+    {
+      "claim_id": "36355c89-7009-4b6d-86f2-311d7c1ec13c",
+      "result_id": "ea27869d-36f7-4cf8-b6b5-65a06fbc08a9"
+    },
+    {
+      "claim_id": "d56b718c-a15e-4966-9568-849ec1994323",
+      "result_id": "ea27869d-36f7-4cf8-b6b5-65a06fbc08a9"
+    },
+    {
+      "claim_id": "e5606abe-9302-4e3b-8460-3f06fa0979a3",
+      "result_id": "57397e1c-d882-4799-b521-5c8f865cdced"
+    },
+    {
+      "claim_id": "e310557a-85f5-4f00-a2ab-7585a883cd20",
+      "result_id": "57397e1c-d882-4799-b521-5c8f865cdced"
+    },
+    {
+      "claim_id": "e29a8158-21cb-4474-855b-0b9f63c24a34",
+      "result_id": "57397e1c-d882-4799-b521-5c8f865cdced"
+    },
+    {
+      "claim_id": "a3f3afa2-30ab-44ad-99fe-e71b4543f797",
+      "result_id": "57397e1c-d882-4799-b521-5c8f865cdced"
+    },
+    {
+      "claim_id": "cf90b4f3-9ca1-447d-9c70-40336f6ec50f",
+      "result_id": "57397e1c-d882-4799-b521-5c8f865cdced"
+    },
+    {
+      "claim_id": "110a0365-0a6e-43a8-b487-3bc327769622",
+      "result_id": "170d7510-c6cc-4db4-8ae4-83fad2b3111d"
+    },
+    {
+      "claim_id": "44eda3a8-7cd2-478e-9862-13d716fcce19",
+      "result_id": "170d7510-c6cc-4db4-8ae4-83fad2b3111d"
+    },
+    {
+      "claim_id": "38090991-66ed-465a-a05f-f2c181fc9b79",
+      "result_id": "77cbd613-702b-46d9-86a2-ba0fa26f0fca"
+    },
+    {
+      "claim_id": "b3c4e038-483f-416a-87e4-59e3a3127fb4",
+      "result_id": "77cbd613-702b-46d9-86a2-ba0fa26f0fca"
+    },
+    {
+      "claim_id": "258da2a4-cfdb-4335-b83f-c7ad03248a0c",
+      "result_id": "77cbd613-702b-46d9-86a2-ba0fa26f0fca"
+    },
+    {
+      "claim_id": "b167732c-5d1a-460c-a569-664818a53a2b",
+      "result_id": "77cbd613-702b-46d9-86a2-ba0fa26f0fca"
+    },
+    {
+      "claim_id": "e9f1cf77-57d6-4e63-9801-255549ba14a3",
+      "result_id": "77cbd613-702b-46d9-86a2-ba0fa26f0fca"
+    },
+    {
+      "claim_id": "27803dd3-c77c-4047-bc9e-8fda40bd2364",
+      "result_id": "77cbd613-702b-46d9-86a2-ba0fa26f0fca"
+    },
+    {
+      "claim_id": "af1a54bf-7a39-40c3-9ec5-1241671e43e0",
+      "result_id": "77cbd613-702b-46d9-86a2-ba0fa26f0fca"
+    },
+    {
+      "claim_id": "5af20bda-6aad-4ff1-9609-df87c32ba6e4",
+      "result_id": "77cbd613-702b-46d9-86a2-ba0fa26f0fca"
+    },
+    {
+      "claim_id": "b06df7d6-9f40-45f5-8872-66a55c0a6de7",
+      "result_id": "77cbd613-702b-46d9-86a2-ba0fa26f0fca"
+    },
+    {
+      "claim_id": "db5d4690-f1ea-4464-89b6-0f29bb9f56af",
+      "result_id": "77cbd613-702b-46d9-86a2-ba0fa26f0fca"
+    },
+    {
+      "claim_id": "bffbcdfd-f8af-4302-9c11-7c90a50aee4f",
+      "result_id": "77cbd613-702b-46d9-86a2-ba0fa26f0fca"
+    },
+    {
+      "claim_id": "60d87ca7-4833-4aa4-b350-a65694d982bc",
+      "result_id": "77cbd613-702b-46d9-86a2-ba0fa26f0fca"
+    },
+    {
+      "claim_id": "1910561e-2f5a-4271-819c-50e0635030b3",
+      "result_id": "77cbd613-702b-46d9-86a2-ba0fa26f0fca"
+    },
+    {
+      "claim_id": "0ddb7b7f-0658-44f2-bc58-a6f6892a5b5a",
+      "result_id": "77cbd613-702b-46d9-86a2-ba0fa26f0fca"
+    },
+    {
+      "claim_id": "44f0fb2a-8719-422a-8827-e9e6d2c59740",
+      "result_id": "77cbd613-702b-46d9-86a2-ba0fa26f0fca"
+    }
+  ],
+  "comparisons": []
+}

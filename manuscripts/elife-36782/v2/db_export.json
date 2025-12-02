@@ -1,0 +1,1775 @@
+{
+  "submission": {
+    "id": "8f884410-233b-4269-ac6f-4a513cc8b4df",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T02:10:40.545965Z",
+    "updated_at": "2025-12-02T02:10:40.545965Z"
+  },
+  "content": [
+    {
+      "id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "submission_id": "8f884410-233b-4269-ac6f-4a513cc8b4df",
+      "content_type": "manuscript",
+      "content_text": "# Kasugamycin potentiates rifampicin and limits emergence of resistance in Mycobacterium tuberculosis by specifically decreasing mycobacterial mistranslation\n\n## Authors\n\n- Swarnava Chaudhuri<sup>1</sup>\n- Liping Li<sup>2</sup>\n- Matthew Zimmerman<sup>2</sup>\n- Yuemeng Chen<sup>1</sup>\n- Yu-Xiang Chen<sup>1</sup>\n- Melody N Toosky<sup>1</sup>\n- Michelle Gardner<sup>3</sup>\n- Miaomiao Pan<sup>1</sup>\n- Yang-Yang Li<sup>1</sup>\n- Qingwen Kawaji<sup>1</sup>\n- Jun-Hao Zhu<sup>1</sup>\n- Hong-Wei Su<sup>1</sup>\n- Amanda J Martinot<sup>4</sup>\n- Eric J Rubin<sup>3</sup> ([ORCID: 0000-0001-5120-962X](https://orcid.org/0000-0001-5120-962X))\n- Veronique Anne Dartois<sup>2</sup> ([ORCID: 0000-0001-9470-5009](https://orcid.org/0000-0001-9470-5009)) \u2020\n- Babak Javid<sup>1</sup> ([ORCID: 0000-0002-6354-6305](https://orcid.org/0000-0002-6354-6305)) \u2020\n\n### Affiliations\n\n1. Centre for Global Health and Infectious Diseases, Collaborative Innovation Centre for the Diagnosis and Treatment of Infectious Diseases Tsinghua University School of Medicine Beijing China\n2. Public Health Research Institute, New Jersey Medical School, Rutgers The State University of New Jersey Newark United States\n3. Department of Immunology and Infectious Diseases Harvard TH Chan School of Public Health Boston United States\n4. Center for Virology and Vaccine Research Beth Israel Deaconess Medical Center, Harvard Medical School Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMost bacteria use an indirect pathway to generate aminoacylated glutamine and/or asparagine tRNAs. Clinical isolates of Mycobacterium tuberculosis with increased rates of error in gene translation (mistranslation) involving the indirect tRNA-aminoacylation pathway have increased tolerance to the first-line antibiotic rifampicin. Here, we identify that the aminoglycoside kasugamycin can specifically decrease mistranslation due to the indirect tRNA pathway. Kasugamycin but not the aminoglycoside streptomycin, can limit emergence of rifampicin resistance in vitro and increases mycobacterial susceptibility to rifampicin both in vitro and in a murine model of infection. Moreover, despite parenteral administration of kasugamycin being unable to achieve the in vitro minimum inhibitory concentration, kasugamycin alone was able to significantly restrict growth of Mycobacterium tuberculosis in mice. These data suggest that pharmacologically reducing mistranslation may be a novel mechanism for targeting bacterial adaptation.\n\n## Introduction\n\nThe long treatment duration of regimens for tuberculosis are thought in part to be due to phenotypic resistance (tolerance) of a subpopulation of genetically susceptible bacteria to antibiotic-mediated killing (Gold and Nathan, 2017; Maisonneuve and Gerdes, 2014; Lewis, 2010; Wakamoto et al., 2013). A better mechanistic understanding of antibiotic tolerance is required to rationally devise regimens that may reduce tuberculosis regimen duration. Multiple mechanisms have been proposed for how mycobacteria tolerate antibiotics, including non-replicating persistence (Saito et al., 2017; Gold and Nathan, 2017), antibiotic efflux (Adams et al., 2011) and phenotypic variation in cell-size (Rego et al., 2017; Richardson et al., 2016). We proposed that in mycobacteria, increased specific errors in gene translation \u2013 mistranslation \u2013 led to intracellular protein variants of the drug target of rifampicin, RpoB, which resulted in phenotypic resistance to rifampicin (Javid et al., 2014; Su et al., 2016). Clinical isolates with mutations in the essential amidase gatCAB that mediates variation in cellular mistranslation rates had both increased mistranslation and rifampicin tolerance, suggesting that this is a clinically relevant mode of antibiotic tolerance (Su et al., 2016).\n\nThe indirect aminoacylation pathway is present in the majority of bacterial species (with the exception of some proteobacteria such as Escherichia coli), all archaea, some mitochondria and other organelles (Sheppard and S\u00f6ll, 2008). Bacteria lacking specific glutamine and/or asparagine tRNA synthetases instead utilize a non-discriminatory glutamyl- (asparaginyl) synthetase that forms misacylated Glu-tRNAGln and Asp-tRNAAsn aminoacyl complexes, respectively (Curnow et al., 1997; Rathnayake et al., 2017). These misacylated complexes are specifically recognized by GatCAB and amidated to the cognate Gln-tRNAGln and Asn-tRNAAsn aminoacyl tRNAs, thereby preserving the fidelity of the genetic code. We recently identified that in mycobacteria, strains with mutations in gatA causing partial loss of function are not only viable, but can be isolated from patient samples (Su et al., 2016). These strains have much higher rates of specific mistranslation \u2013 of glutamine to glutamate, and asparagine to aspartate \u2013 since a proportion of misacylated Glu-tRNAGln and Asp-tRNAAsn complexes are not fully converted to the cognate aminoacyl forms before taking part in translation at the ribosome. Importantly, wild-type GatCAB could also be limiting. Wild-type mycobacteria flow-sorted for lower GatCAB expression had both higher mistranslation rates and rifampicin tolerance (Su et al., 2016), suggesting that targeting the indirect tRNA aminoacylation pathway may present a novel and attractive means for increasing mycobacterial rifampicin susceptibility.\n\nHere, we identify the natural product kasugamycin as a small molecule that can specifically decrease mistranslation due to the indirect tRNA aminoacylation pathway. At sub-inhibitory concentrations, kasugamycin, but not another aminoglycoside streptomycin can increase mycobacterial rifampicin susceptibility both in vitro and in animal infection.\n\n## Results\n\n### Kasugamycin increases mycobacterial discrimination against misacylated tRNAs\n\nWe hypothesized that a small molecule that could specifically decrease mycobacterial mistranslation would result in increased susceptibility to rifampicin. GatCAB-mediated mistranslation is not due to ribosomal decoding errors \u2013 but rather due to misacylated Glu-tRNAGln and Asp-tRNAAsn complexes taking part in translation (Su et al., 2016). In addition to other reported activities in E. coli (Lange et al., 2017; M\u00fcller et al., 2016; Kaberdina et al., 2009; Moll and Bl\u00e4si, 2002), the aminoglycoside kasugamycin decreased ribosomal misreading of mRNA (van Buul et al., 1984), but it was not known if it could also decrease errors due to translation of misacylated tRNAs, as the indirect tRNA aminoacylation pathway is not present in E. coli.\n\nWe tested whether kasugamycin could increase fidelity of misacylated tRNA-mediated mycobacterial mistranslation using a gain-of-function genetic reporter (Figure 1A). Kasugamycin at sub-inhibitory doses (Supplementary file 1) increased translational fidelity in both the model organism Mycobacterium smegmatis (Msm) and pathogenic Mycobacterium tuberculosis (Mtb) (Figure 1B,C and Figure 1\u2014figure supplement 1). Importantly, kasugamycin decreased mistranslation in mycobacterial strains with mutated gatA that have extremely high misacylated-tRNA-mediated mistranslation due to partial loss of GatCAB function (Su et al., 2016) \u2013 Figure 1D, verifying that it was effective in increasing discrimination against translation of misacylated Glu-tRNAGln and Asp-tRNAAsn aminoacyl-tRNAs.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/36782/elife-36782-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of the Nluc-luciferase/GFP gain-of-function reporter to measure mistranslation. Kasugamycin (Ksg) decreases asparagine-to-aspartate mistranslation in both Msm (B) and Mtb (C) in a dose-dependent manner (see Materials\u00a0and\u00a0methods). (D) Kasugamycin (50 \u00b5g/ml) reduces asparagine-to-aspartate and glutamine-to-glutamate mistranslation \u2013 measured using a Renilla-FF luciferase dual reporter (see Materials and methods and Su et al., 2016) in a strain (HWS.4 \u2013 M. smegmatis-gatA-V405D) with a specific defect in the indirect tRNA aminoacylation pathway. (E) An E. coli cell-free translation system spiked with a non-discriminatory aspartyl synthetase used in conjunction with the Nluc-GFP mistranslation reporter shows that kasugamycin can specifically decrease translational error from misacylated Asp-tRNAAsn in a dose-dependent manner. *p<0.05, **p<0.01, ***p<0.001 by Student\u2019s t-test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36782/elife-36782-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Mistranslation measured by gain-of-function Renilla-Firefly dual reporter as previously described: see Materials and methods and (Su et al., 2016). *p<0.05, **p<0.01, ***p<0.001 by Student\u2019s t-test.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36782/elife-36782-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** A strain of M. smegmatis was transformed with an episomal plasmid expressing gfp from the promoter Psmyc (canonical promoter with 5\u2019 UTR) and a leaderless version of Psmyc driving mCherry (A \u2013 schematic of the reporter). Chloramphenicol inhibited translation of both transcripts, whereas kasugamycin at 1500 \u00b5g/ml failed to significantly attenuate translation from either transcript. AB, antibiotics.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/36782/elife-36782-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Mistranslation was measured in Msm by the Nluc/GFP reporter as in Figure 1(A\u2013C). SubMIC concentrations of antibiotics \u2013 chloramphenicol (CAM \u2013 0.25\u20130.5 \u00b5g/ml), kasugamycin (Ksg, 25 \u00b5g/ml) and edeine (ED \u2013 0.25\u20130.5 \u00b5M) were used in the assay. **p<0.01, ***p<0.001, n.s. no significant difference by Student\u2019s t-test.\n\nTo further test whether kasugamycin was able to decrease Asp-tRNAAsn misacylation-mediated mistranslation, we developed a hybrid cell-free translation system. A commercially available E. coli coupled transcription-translation system was supplemented with a non-discriminatory aspartyl-synthetase (Ruan et al., 2008) that was able to misacylate E. coli tRNAAsn (see Materials and methods). Addition of the non-discriminatory synthetase markedly increased mistranslation, as measured by the Nano-luciferase-GFP gain-of-function reporter. Kasugamycin, at concentrations that did not decrease GFP signal, was able to reduce mistranslation-induced Nluc signal (Figure 1E), confirming that kasugamycin could increase ribosomal discrimination of misacylated tRNA.\n\nOne of the activities of kasugamycin in E. coli is the inhibition of the translation of canonical mRNA transcripts (i.e. those with a 5\u2019 UTR including a Shine-Dalgarno sequence), but not leaderless transcripts lacking a 5\u2019 UTR (Kaberdina et al., 2009; Moll and Bl\u00e4si, 2002), although permissive translation of leaderless transcripts was not universal (Schuwirth et al., 2006). We wanted to test whether selective inhibition of translation of canonical but not leaderless transcripts with kasugamycin was evident in mycobacteria, especially since mycobacteria have many annotated leaderless transcripts (Shell et al., 2015; Cortes et al., 2013). We constructed a reporter strain of M. smegmatis that expressed two fluorescent proteins, GFP and mCherry from the same basic promoter (Psmyc), but the promoter driving mCherry resulted in a leaderless transcript (Figure 1\u2014figure supplement 2A and Materials and methods). The translation inhibitor chloramphenicol inhibited translation of both fluorescent proteins, but kasugamycin at 1500 \u00b5g/ml, more than 10 times higher concentrations than required to decrease mistranslation, did not significantly attenuate translation of either fluorescent protein (Figure 1\u2014figure supplement 2B). Kasugamycin has also been reported to generate novel 61S ribosomes in E. coli (Kaberdina et al., 2009), but our attempts to isolate such structures from M. smegmatis were unsuccessful (not shown).\n\nKasugamycin acts on the ribosome as an inhibitor of 30S initiation (Wilson, 2014). Could other translation inhibitors \u2013 either targeting 30S initiation or other steps of translation also decrease mistranslation of misacylated tRNAs? We tested edeine, another 30S initiation inhibitor, and chloramphenicol, an inhibitor of peptide-bond formation (Wilson, 2014), both at sub-inhibitory concentrations with our gain-of-function mistranslation reporter. Intriguingly, edeine and kasugamycin, but not chloramphenicol could decrease mistranslation rates (Figure 1\u2014figure supplement 3), suggesting that inhibition of 30S initiation might interfere with ribosomal discrimination of misacylated tRNAs by a yet to be characterized mechanism.\n\n### Kasugamycin increases mycobacterial susceptibility to rifampicin in vitro\n\nWe had previously showed that mistranslation generated via the indirect tRNA aminoacylation pathway in mycobacteria played an important role in rifampicin phenotypic resistance (Su et al., 2016; Javid et al., 2014). We therefore hypothesized that since kasugamycin could reduce mistranslation generated by this pathway, it would be able to reduce rifampicin tolerance. In keeping with our hypothesis, kasugamycin reduced mycobacterial rifampicin phenotypic resistance in wild-type (Figure 2A,B) and high mistranslating gatA mutant mycobacterial strains (Figure 2C). We then tested the ability of kasugamycin to enhance rifampicin-mediated killing of mycobacteria in axenic culture. Kasugamycin had no effect on mycobacterial growth, but addition to rifampicin significantly enhanced killing and sterilization of mycobacterial cultures (Figure 2D). Kasugamycin-mediated decrease in rifampicin tolerance was not due to its activity as an aminoglycoside \u2013 known protein translation inhibitors. The aminoglycoside streptomycin increases mistranslation (Leng et al., 2015). Plating of Msm on rifampicin-agar in the presence of sub-inhibitory concentrations of streptomycin increased the number of phenotypically-resistant colonies (Figure 2\u2014figure supplement 1). Furthermore, in keeping with our observations with regard to 30S initiation inhibition and mistranslation, plating Msm on rifampicin-agar with sub-inhibitory concentrations of edeine but not chloramphenicol, decreased the number of phenotypically resistant colonies (Figure 2\u2014figure supplement 2), confirming the link between reducing mistranslation rates and decreasing rifampicin tolerance.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/36782/elife-36782-fig2-v2.jpg)\n\n**Figure 2.:** Ksg decreases plating rifampicin tolerance\u00a0(Su et al., 2016) in both Msm (A) and Mtb (B) and an Msm strain with a specific defect in the indirect tRNA aminoacylation pathway (C) as well as (D) increases killing of Msm by rifampicin in axenic culture. (E) A strain (M. smegmatis-RpoB-N434T) with a single point mutation in rpoB is less tolerant to rifampicin because it is unable to mistranslate via the indirect pathway a single asparagine residue critical for rifampicin binding (Su et al., 2016). This strain is, however, relatively resistant to kasugamycin\u2019s effects on rifampicin tolerance. *p<0.05, **p<0.01, ***p<0.001 by Student\u2019s t-test. (F) Pre-treatment of Msm cultures with low-dose rifampicin (1 \u00b5g/ml) increases likelihood of rifampicin resistance upon subsequent challenge with high-dose rifampicin (100 \u00b5g/ml). Addition of Ksg but not streptomycin in pre-treatment abolishes the increased likelihood of rifampicin resistance. *p<0.05, ***p<0.001, ns\u00a0=\u00a0not significant by Fisher\u2019s exact test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36782/elife-36782-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Cells were plated on rifampicin-agar\u00a0\u00b1\u00a0kasugamycin (50 \u00b5g/ml) or streptomycin (0.2 \u00b5g/ml) or LB alone. Survival fraction on rifampicin was measured after 5\u20137 days. **p<0.01, ***p<0.001 by Student\u2019s t-test.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36782/elife-36782-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Cells were plated on rifampicin-agar (25 \u00b5g/ml)\u00a0\u00b1DMSO or other antibiotics as shown (edeine, ED 0.25\u20131 \u00b5M, chloramphenicol, CAM 1 \u00b5g/ml and kasugamycin, Ksg, 50 \u00b5g/ml). The translation inhibitors at the concentration used did not affect plating efficiency when used as a solitary agent. Survival fraction (compared with no antibiotic) was measured after 5\u20136 days. **p<0.01, ***p<0.001, n.s. no significant difference by Student\u2019s t-test.\n\nTo further verify that kasugamycin\u2019s effects on rifampicin susceptibility are due to its specific activity in decreasing mycobacterial mistranslation, we used a mycobacterial strain with a single point mutation in RpoB \u2013 strain Msm-RpoB-N434T. This strain has lower tolerance to rifampicin since a critical rifampicin-binding residue could no longer be mistranslated via the indirect pathway (Su et al., 2016). Msm-RpoB-N434T was less rifampicin tolerant than its parent strain, but kasugamycin was less potent at decreasing rifampicin tolerance further (Figure 2E). Since other reported activities of kasugamycin (Lange et al., 2017; M\u00fcller et al., 2016; Kaberdina et al., 2009) would not be affected by a single point mutation in the rpoB gene, we conclude that the major mechanism by which kasugamycin increased rifampicin susceptibility is by decreasing mistranslation-induced protein variants.\n\nIn E. coli, antibiotic resistance is preceded by tolerance (Levin-Reisman et al., 2017). Kasugamycin but not streptomycin given alongside rifampicin pre-treatment significantly reduced the likelihood of resistance following high-dose rifampicin challenge (Figure 2F), suggesting that kasugamycin may limit development of de novo resistance.\n\n### Kasugamycin increases rifampicin susceptibility in vivo\n\nTo test activity in vivo, we needed to establish whether kasugamycin had favorable tolerability and pharmacokinetics in an animal model, and if so, was kasugamycin administration with rifampicin able to boost killing of M. tuberculosis. We characterized the pharmacokinetics of parenterally administered kasugamycin and streptomycin in mice. Both agents showed dose-dependent concentration-time profiles in plasma, with rapid clearance (Figure 3\u2014figure supplement 1). Administration of the maximum tolerated daily dose of kasugamycin \u2013 400 mg/kg \u2013 resulted in a Cmax/EC(mistranslation)50 (peak plasma concentration divided by the half-maximal effective in vitro dose of kasugamycin in reducing mistranslation rates \u2013 Figure 1C) of\u00a0~2.5 and time over EC50 of 1 hr or only 4% of the dosing interval. Nevertheless, co-administration of kasugamycin resulted in an astonishing 30-fold boosting of rifampicin killing of Mtb in mouse lungs (Figure 3A). However, concomitant dosing of rifampicin and kasugamycin was poorly tolerated, even in the absence of tuberculosis (Figure 3\u2014figure supplement 2). Histopathological examination of organs did not reveal a specific cause (not shown). Lower doses of kasugamycin co-administered with rifampicin were ineffective at enhancing rifampicin activity in vivo (not shown). In vitro, pre-treatment of axenic mycobacterial cultures with kasugamycin but not streptomycin decreased rifampicin tolerance, to a lesser degree (Figure 3\u2014figure supplement 3). We thus opted for successive administration of high-dose kasugamycin intermittently with rifampicin in mice, which was well-tolerated. To specifically exclude the observed activity as being due to aminoglycoside-mediated inhibition of protein synthesis or post-antibiotic effects, we also included streptomycin-treated arms (Figure 3B). Since the driver of aminoglycoside efficacy is Cmax/MIC (peak plasma concentration divided by in vitro minimum inhibitory concentration)\u00a0(Scaglione and Paraboni, 2006), we selected a streptomycin dose of 3 mg/kg, achieving a Cmax/MIC of 7, while the Cmax/MIC of kasugamycin was 0.8 (Supplementary file 1), thus avoiding underestimating streptomycin\u2019s activity. Sequential treatment with rifampicin and kasugamycin, but not streptomycin led to significantly enhanced killing of Mtb in mouse spleens but not lungs (Figure 3C, Figure 3\u2014figure supplement 4), which was not explained by differences in bulk-tissue PK (Figure 3\u2014figure supplement 5). Thus, despite limited drug exposure resulting in effective concentrations achieved for only a small fraction of the treatment period, the in vitro effects on rifampicin tolerance were recapitulated in mice.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/36782/elife-36782-fig3-v2.jpg)\n\n**Figure 3.:** (A) Lung burden of Mtb-infected mice treated for 2 weeks with rifampicin (10 mg/kg), Ksg (400 mg/kg) or combination of the two. (B) Schematic of the sequential Ksg (400 mg/kg)/rifampicin (10 mg/kg) or Streptomycin (3 mg/kg)/rifampicin (10 mg/kg) dosing schedule. (C) Lung (left panel) or spleen (right panel) burden of Mtb-infected mice treated for 4 weeks as per the schedule in (B). Each data point represents bacterial organ burden from a single mouse. *p<0.05, **p<0.01, ***p<0.001, ns\u00a0=\u00a0not significant by one-way ANOVA followed by Tukey\u2019s post-hoc multi-comparison correction. Only key comparators are shown for clarity, complete statistical analysis is shown in Supplementary file 2.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36782/elife-36782-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Kasugamycin (top) and streptomycin were given by intra-peritoneal injection and plasma concentration measured by liquid chromatography mass-spectrometry.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36782/elife-36782-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Mice were given ksg (intra-peritoneal injection) and rifampicin (oral gavage) daily at the indicated doses. Weight was measured daily.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/36782/elife-36782-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Msm cultures were pre-treated with ksg (50 \u00b5g/ml) or streptomycin (0.2 \u00b5g/ml) for 3 hr. Cells were then spun down, washed, resuspended and plated on rifampicin-agar or LB. Colonies were counted after 7 days.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/36782/elife-36782-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Organ burdens in lungs (left panel) and spleen (right panel) at indicated time-points shown. The data for the last point (4 weeks\u2019 treatment) is shown in Figure 2C.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/36782/elife-36782-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Tissue homogenates were used for PK analysis.\n\n## Discussion\n\nThere are multiple non-redundant models proposed for antibiotic tolerance (Abel Zur Wiesch et al., 2015; Aldridge et al., 2014; Balaban et al., 2013). In all these models, tolerance is mediated by generation of phenotypic heterogeneity within bacterial populations. Generation of stochastic errors during gene translation \u2013 mistranslation \u2013 is more prevalent, and occurs at higher rates, than previously appreciated (Mohler and Ibba, 2017; Ribas de Pouplana et al., 2014) and is one mechanism by which bacteria may generate considerable phenotypic heterogeneity. We show here that it is possible to identify a small molecule that can specifically decrease mistranslation rates, and hence increase antibiotic susceptibility.\n\nThere has been great interest in identifying small molecules that specifically target antibiotic-tolerant mycobacteria (Darby and Nathan, 2010; Zheng et al., 2014; Grant et al., 2013; Zheng et al., 2017; Sukheja et al., 2017; Alumasa et al., 2017; Wang et al., 2013; Vilch\u00e8ze et al., 2017). These molecules have for the most part been identified via in vitro phenotypic screens that are specific for non-replicating persistence, although novel \u2018target-specific\u2019, whole-cell screens are proving highly useful in identifying compounds with activity against mycobacteria in vitro that are specific for certain stress-adaptation pathways (Zheng et al., 2017). With one exception (Wang et al., 2013), however, none of these candidates, and the pathways that they target, have been validated within an animal model of infection.\n\nKasugamycin is unique among aminoglycosides in its ability to decrease translational error \u2013 all other aminoglycosides increase mistranslation (Leng et al., 2015; Ribas de Pouplana et al., 2014; van Buul et al., 1984). In addition to its known effects in reducing ribosomal decoding errors, we have shown that kasugamycin can increase discrimination against physiologically misacylated tRNAs. It had been previously demonstrated that the ribosome has some proof-reading functionality beyond Watson-Crick base-pairing. This was limited to rejection of peptides formed from incorrect codon\u00b7anti-codon base-pairs (Zaher and Green, 2009). Misacylated tRNAs would still form cognate codon\u00b7anti-codon pairs at the ribosome, and would therefore not be rejected by such a mechanism. Rejection of misacylated aminoacyl tRNA formation had previously been described at the aminoacyl synthetase stage (Ibba and S\u00f6ll, 1999), or by discrimination by EF-Tu (LaRiviere et al., 2001). Kasugamycin\u2019s binding to the E. coli ribosome is close to the A794 and G926 residues (E. coli numbering) of 16S rRNA (Schuwirth et al., 2006). Given that these residues are universally conserved, it is likely that kasugamycin\u2019s binding to mycobacterial and other bacterial ribosomes is in a similar location. Therefore, our data suggest that kasugamycin-bound ribosomes also possess a hitherto unknown ability to discriminate against misacylated EF-Tu\u00b7aminoacyl-tRNA complexes. Since edeine, another 30S initiation inhibitor, but not inhibitors of elongation (streptomycin) or peptide-bond formation (chloramphenicol) could also decrease mistranslation from misacylated tRNAs, this suggests a conserved mechanism, potentially involving translation initiation, directly or indirectly, in discrimination of physiologically misacylated tRNAs.\n\nWhen kasugamycin and rifampicin were given daily, there was significant potentiation in mouse lungs after 2 weeks of treatment (Figure 3A), but with significant toxicity. However, in the better-tolerated alternate dosing schedule (Figure 3B), potentiation was seen only in mouse spleens, not lungs (Figure 3C). These differences could not be explained by differences in kasugamycin bulk tissue distribution (Figure 3\u2014figure supplement 5). Even within a single organ/tissue, there can be significant heterogeneity in drug penetration and distribution (Prideaux et al., 2015), which we did not measure, and such heterogeneity of distribution in either rifampicin or kasugamycin or both may explain the differences observed. Furthermore, a greater proportion of M. tuberculosis may be resident in macrophages in lungs compared with spleens, and aminoglycosides have poor intra-cellular penetration (Brezden et al., 2016). As such, under this dosing schedule kasugamycin and rifampicin may be targeting the same mycobacterial subpopulation within spleens but different subpopulations within lungs, potentially explaining the observations.\n\nThe maximum dose of kasugamycin that could be administered to mice was limited due to toxicity and pharmacokinetics. At the maximum tolerated dose (400 mg/kg, once daily), the peak plasma concentration of 300 \u00b5g/ml failed to reach the in vitro minimum inhibitory concentration of 400 \u00b5g/ml. Intriguingly, these limitations allowed us to identify the relative in vivo potency of kasugamycin compared with conventional anti-microbials. Most anti-tuberculous drugs require peak plasma concentrations orders of magnitude greater than in vitro MIC for measurable efficacy (Mitchison, 2012; Pasipanodya and Gumbo, 2011; Pasipanodya et al., 2013). By contrast, the bacteriostatic kasugamycin given alone, administered intermittently (10 doses in 30 days) to infected mice, and with a Cmax/MIC\u00a0<1, and at plasma concentrations\u00a0<25% of MIC for 99% of the dosing interval was able to restrict Mtb growth in vivo. Streptomycin, a bactericidal aminoglycoside, given at far greater equivalent doses, had no effect. Mycobacteria increase specific mistranslation rates under conditions such as nutrient limitation and low pH (Javid et al., 2014), which mimic potential in vivo environments. These data suggest the efficacy of kasugamycin may not be as a conventional anti-microbial, but possibly by targeting bacterial adaptation to the host via reducing mistranslation.\n\nThere are several alternative mechanisms by which kasugamycin alone may have led to bacterial growth restriction in vivo. Kasugamycin\u2019s biological activities differ with other aminoglycosides in additional ways than its contrasting effects on translational fidelity. Most aminoglycosides inhibit translocation during protein synthesis, whereas kasugamycin inhibits translation initiation by blocking the mRNA channel in the small ribosomal subunit (Schluenzen et al., 2006; Schuwirth et al., 2006). The reported structures of kasugamycin bound to the ribosome suggest that during 70S (leaderless) initiation, there is less steric hindrance of mRNA passage than in canonical initiation (Schluenzen et al., 2006), potentially explaining why kasugamycin is permissive for translation of some, but not all (Schuwirth et al., 2006) leaderless transcripts (Kaberdina et al., 2009; Moll and Bl\u00e4si, 2002). With regard to potentiation of rifampicin in vitro, our data strongly suggest that kasugamycin is acting by reducing mistranslation generated by the indirect tRNA aminoacylation pathway, and hence protein variants that mediate rifampicin tolerance (Figure 2E). However, although we did not find evidence that in mycobacteria kasugamycin selectively blocks translation of canonical but not leaderless mRNA transcripts (Figure 1\u2014figure supplement 2), or form alternate ribosomes (Kaberdina et al., 2009) (not shown), we cannot formally exclude the possibility that these mechanisms play a role in kasugamycin\u2019s activity in restricting M. tuberculosis growth in mice in the absence of rifampicin. Other potential mechanisms may be that kasugamycin is concentrated in macrophages, such that the intracellular concentration exceeded the MIC. Although we did not measure the intra-macrophage concentration of kasugamycin, almost all aminoglycosides enter cells poorly due to their polar structure (Brezden et al., 2016).\n\nSynergistic drug combinations have the potential to radically improve treatment for tuberculosis. New methods for modelling synergy from purely empirical in vitro measurements can identify novel combinations (Cokol et al., 2017). More rational approaches can rescue current drugs that have limitations due to emergence of resistance or toxicity (Blondiaux et al., 2017). Our data suggest that targeting mycobacterial mistranslation may be a generally effective strategy, and not only in the context of potentiating rifampicin activity. Since most bacteria, with the notable exception of E. coli and a few other proteobacteria utilize the indirect tRNA pathway for synthesis of aminoacylated glutamine and/or asparagine tRNAs (Curnow et al., 1997), targeting adaptive mistranslation (Ribas de Pouplana et al., 2014) may be a useful strategy in the treatment of diverse bacterial infections.\n\n## Materials and methods\n\n### Bacterial strains, culture and antibiotics\n\nMycobacterium smegmatis mc2-155 and its derivatives were cultured in Middlebrook 7H9 (BD DifcoTM) broth supplemented with 0.2% glycerol, 0.05% Tween-80, 10% Albumin-dextrose-salt (ADS), and on Luria-Bertani agar (LB agar) for plate assays. The high mistranslating strain HWS.4 with a mutation, gatA-V405D and the M. smegmatis strain with a point mutation in rpoB Msm-rpoB-N434T are previously described (Su et al., 2016). Mycobacterium tuberculosis-H37Rv was cultured in Middlebrook 7H9 broth with 0.2% glycerol, 0.05% Tween-80, 10% OADC (oleic acid, albumin, dextrose and catalase), and in Middlebrook 7H11 agar (BD Difco) supplemented with OADC for plate assays. Rifampicin, kasugamycin and streptomycin were purchased from Sigma. Rifampicin was dissolved in dimethyl sulphoxide (DMSO); kasugamycin and streptomycin were dissolved in water, and filter sterilized.\n\n### Antibiotic dose selection\n\nThe in vitro MICs of kasugamycin, streptomycin and rifampicin for M. smegmatis and M. tuberculosis are given in Supplementary file 1. For in vitro experiments, kasugamycin and streptomycin doses were selected that had no effects on growth either in axenic culture or plating. Doses are given in the Figure legends. The only exception is Figure 1\u2014figure supplement 2 \u2013 testing whether kasugamycin could inhibit translation of canonical/leaderless transcripts, when a dose of 1500 \u00b5g/ml was chose: this was 50x higher than a dose that could decrease mistranslation, and was close to the MIC. For the in vivo experiments, the maximum tolerated dose (400 mg/kg daily) of kasugamycin was given to mice. The streptomycin dose was calculated to represent 9x higher equivalent dose than kasugamycin (by Cmax/MIC) so as to not underestimate its effects, but not so high that streptomycin\u2019s known bactericidal activity might interfere with interpretation of the data. Rifampicin (10 mg/kg) is a standard dose used in most in vivo experiments.\n\n### Generation of mistranslation reporter\n\nThe nano-luciferase gene (nluc) sequence was obtained from Promega and optimized to accommodate mycobacterial codon usage preference and synthesized (Genscript). The nano-luciferase gene was fused downstream of the secretion signal sequence (first forty amino acids) of the secreted mycobacterial antigen 85A/B. The fused product was PCR amplified and cloned into the pJet1.2 cloning vector (Thermo Fisher Scientific) and verified by Sanger sequencing. Site directed mutagenesis was used to create a D140N mutation in nano-luciferase, and the mutation was verified by Sanger sequencing. The mutated nluc gene containing the secretion signal was then cloned into the tetracycline-inducible pUVtetOR vector having a hygromycin-resistant gene cassette. After sequence verification, the recombinant plasmid was transformed into M. smegmatis mc2-155 and M. tuberculosis-H37Rv using standard methodology. Codon optimized green fluorescence protein (GFP) sequence was cloned into tetracycline inducible pMC1s vector, which has kanamycin-resistant gene cassette, and electroporated into M. smegmatis mc2-155 and M. tuberculosis-H37Rv containing the nano-luciferase (N-luc) reporter.\n\n### Mistranslation assays\n\nThe basis of the N-luc/GFP assay is a gain of Nano-luciferase (N-luc) signal, similar to previously published methods (Javid et al., 2014; Kramer and Farabaugh, 2007). The D140N mutation in N-luc caused approximately 100-fold reduction in activity compared with the wild-type enzyme. Mistranslation specifically of aspartate (D) for asparagine (N) in a subset of newly translated polypeptides would result in regaining of wild-type N-luc activity. Both N-luc and GFP were induced by the same tetracycline-responsive promoter, therefore total N-luc activity was corrected by dividing by total GFP fluorescence to account for variation in gene expression between samples. The N-luc/GFP ratio gave only a relative, not absolute, indication of specific mistranslation rates.\n\nM. smegmatis mc2-155 containing the N-luc and GFP reporter plasmids was grown in 7H9 broth containing hygromycin (50 \u00b5g/ml) and kanamycin (20 \u00b5g/ml) to late log phase (OD600\u00a0=\u00a02.0) at 37\u02daC, after which anhydrotetracycline (ATc, 50 ng/ml) was added to induce N-luc expression. The bacterial culture was then immediately aliquoted into a 96-well plate (100 \u00b5l, that\u00a0is approximately 6 \u00d7 107 cells per well), different concentrations of kasugamycin or water control were added, and the cultures incubated for 16 hr at 37\u02daC with shaking. The cultures were then transferred to a 96-well black plate and GFP fluorescence measured. The plate was then centrifuged (4000 rpm for 10 min), and supernatants transferred to a 96-well white luminescence plate. The nano-luciferase assay was performed using Nano-Glo luciferase assay kit (Promega), and luminescence measured by the same machine. Relative mistranslation rates for M. tuberculosis H37Rv was measured in the same way, with minor modification. The H37Rv strain containing the N-luc-D140N and GFP reporter plasmids was induced with ATc (100 ng/ml) for 2 days before measuring the N-luc and GFP signals.\n\nMistranslation measurement using the Renilla-Firefly dual luciferase was performed as described previously (Su et al., 2016). Briefly, M. smegmatis mc2-155 strains harboring the reporters were grown till stationary phase. The cultures were diluted 20 times in fresh 7H9 medium, and expression of the dual luciferase was induced with 50 ng/ml anhydrotetracycline (ATc). After 6 hr, the bacterial cells were lysed and luciferase activities measured by dual luciferase assay kit (Promega). Measurements of fluorescence/luminescence of M. smegmatis were performed on a Fluoroskan Ascent FL Fluorimeter and Luminometer (Thermoscientifc), and for M. tuberculosis (and the Edeine/Chloramphenicol experiments) on a Biotek Synergy H1 plate reader (Fisher Scientific). The different instruments used was largely responsible for the differences in arbitrary unit (AU) values for mistranslation rates between the two species. Mistranslation rates were calculated as previously (Su et al., 2016). Tests of difference of means were performed by two-tailed Student\u2019s t-test.\n\n### Cloning, expression and purification of Deinococcus radiodurans AspRS2 (Dr AspRS2)\n\nThe Deinococcus radiodurans non-discriminatory aspartyl synthetase Dr AspRS2 is able to misacylate E. coli asparagine tRNA with aspartate (Ruan et al., 2008) (i.e. form Asp-tRNAAsn \u2013 the mycobacterial non-discriminatory enzyme does not recognize E. coli tRNA, not shown), and was therefore used in the E. coli cell-free translation system. Codon optimized Dr AspRS2 gene containing 6xHis-tag at the 5\u00b4end was synthesized (Genewiz) and cloned into XbaI and EcoRI restriction sites of pET28a(+) vector and transformed into E. coli BL21(DE3). Expression of Dr AspRS2 was induced by adding 1 mM IPTG. After one hour of induction at 37\u00b0C, the cells were harvested and Dr AspRS2 was purified by Ni-NTA affinity chromatography using standard methods. The final protein concentration was determined by Bradford reagent (Bio-Rad). The activity of the enzyme was confirmed by 3H-Aspartate labeling of E. coli tRNAAsn (not shown).\n\n### Cell-free measurement of mistranslation\n\nFor cell-free measurement of mistranslation, a reporter expressing mutated N-luc (D140N) linked with wild-type GFP by a GGSGGG linker was generated. The mutated n-luc was produced by site directed mutagenesis and linked to WT gfp by Gibson assembly. The nluc linked gfp was then cloned into pIVEX vector (5 Prime) for in vitro coupled transcription-translation (IVT). The reporter measured relative mistranslation of aspartate for asparagine by gain-of-function Nluc activity/GFP fluorescence, as above. The coupled transcription-translation IVT reaction was carried out using an E. coli T7 S30 Extract System for Circular DNA kit (Promega) following manufacturer\u2019s instructions with the following modifications. Since E. coli lacks the indirect tRNA aminoacylation pathway, the reaction mix was spiked with the non-discriminatory Dr AspRS2 to form misacylated Asp-tRNAAsn complexes that could take part in translation. 2 \u00b5M Dr AspRS2 or reaction buffer was added to the IVT reaction mix. To determine if kasugamycin could increase ribosomal discrimination of misacylated Asp-tRNAAsn-mediated translational errors, different concentrations of kasugamycin or carrier were added to the reaction mix and incubated on ice for 10 min before addition of the reporter template. Once the DNA template was added, the tube was mixed thoroughly and incubated at 37\u00b0C for 2 hr before the reaction was quenched by placing on ice for 5 min. The Nluc activity and GFP fluorescence was measured as above.\n\n### Inhibition of leaderless and canonical translation assay\n\nA dual-fluorescent reporter was constructed to measure translation of leaderless and canonical transcripts. The Psmyc promoter was cloned from plasmid PML1357 (Huff et al., 2010) (Addgene) and its transcription start site mapped by 5\u2019 RACE (not shown). The gene for mCherry was fused directly to the transcription start site, forming a leaderless expressed gene, and gfp was cloned 3\u2019 to a canonical Shine-Dalgarno sequence (Figure 1\u2014figure supplement 2). Both fluorescent proteins had a C-terminal tag, AAV, which decreases stability and half-life of expressed proteins by targeting them for protease-mediated degradation (Andersen et al., 1998), thereby allowing monitoring of translation in real time. The two expression cassettes were subcloned into plasmid PSE100 and transformed into wild-type M. smegmatis. The transcription start sites of the two fluorescent promoters was verified by 5\u2019RACE and was as predicted (not shown). Biological triplicates of the strain were grown to log phase, and then back-diluted to lag phase. After 4 hr growth, antibiotics (or carrier) were added to cultures. OD600, green and red fluorescence were measured by a Varioskan FLASH (Thermo) instrument.\n\n### Rifampicin-specific phenotypic resistance (RSPR) assay\n\nRifampicin tolerance (phenotypic resistance) on agar medium was measured as previously described (Su et al., 2016). Stationary phase M. smegmatis mc2-155 cultures were serially diluted, and spread on LB-agar plates containing rifampicin (50 \u00b5g/ml), with or without kasugamycin/streptomycin. The plates were incubated at 37\u02daC for 5\u00a0\u2013\u00a07 days after which the number of colony-forming units (cfu) were counted. The number of bacterial cells in the inoculum was calculated by plating serial dilutions of the culture on antibiotic-free LB-agar plates and counting total plated cfu. For RSPR analysis of M. tuberculosis H37Rv, bacteria were spread on 7H11 agar medium containing rifampicin (0.2 \u00b5g/ml) with or without kasugamycin (31 \u00b5g/ml), and the plates were incubated for 6 weeks. For antibiotic pre-treatment experiments, M. smegmatis mc2-155 was grown in 7H9 broth containing kasugamycin (50 \u00b5g/ml) or streptomycin (0.25 \u00b5g/ml) and then spread on LB agar containing rifampicin. In all cases, doses of kasugamycin or streptomycin or other antibiotics were selected that did not by themselves decrease plating efficiency. Tests of difference of means were performed by two-tailed Student\u2019s t-test.\n\n### Minimum duration of killing assay\n\nM. smegmatis mc2-155 was grown overnight in 7H9 (OD600\u00a0=\u00a00.6) broth, and approximately 5 \u00d7 106 cells were inoculated into fresh 7H9 broth containing different concentrations of rifampicin (0, 10, 20, 50 \u00b5g/ml), with or without kasugamycin (50 \u00b5g/ml). At different time points, aliquots were removed from each culture, cells were washed once and 10-fold dilutions spread onto LB agar medium with sterile glass beads. The number of viable bacteria at each time point was calculated from the resulting number of colonies.\n\n### Rifampicin resistance assay\n\nM. smegmatis mc2-155 was grown to early stationary phase in 7H9 medium containing DMSO, rifampicin (1 \u00b5g/ml), or rifampicin with kasugamycin (50 \u00b5g/ml) or streptomycin (0.2 \u00b5g/ml) for 3 hr. After pre-exposure, cells were washed twice in PBS and 100 \u00b5l aliquots (2.5 \u00d7 107 cells) were transferred to wells in 96-well plates (240 wells/group in total, experiments conducted with three independent cultures over three separate days and results pooled) containing 7H9 and rifampicin (100 \u00b5g/ml), which was selective for bona fide genetic resistance to the antibiotic. After 4 days of incubation, the number of rifampicin resistant cultures was observed by the presence of turbid growth. The \u2018resistance ratio\u2019 was calculated as the percentage of wells with turbid (resistant) cultures divided by the total number of wells per condition. Statistical analysis was performed by Fischer\u2019s exact test (GraphPad Prism) to compare conditions.\n\n### Pharmacokinetic (PK) analysis of kasugamycin and streptomycin\n\nAll mouse experiments were approved by the Institutional Animal Care and Use Committee of the New Jersey Medical School, Rutgers University, Newark, NJ, under protocol number 15114D1018. For PK analysis, 8- to 10-week-old female BALB/c mice were injected intramuscularly with 100 mg/kg, 200 mg/kg or 400 mg/kg kasugamycin dissolved in 0.9% saline. Separate analysis for single-dose injections confirmed that intra-peritoneal and intra-muscular injection had exactly the same PK profiles (not shown). Blood was collected by tail snip after 15 and 30 mins, 1, 3, 5 and 8 hr following kasugamycin injection. Plasma was separated by centrifuging the blood at 5000 rpm for 5 min. Of plasma sample, 10\u00a0\u00b5l\u00a0was extracted by adding 10 \u00b5l of acetonitrile/water (1:1) and 100 \u00b5l of acetonitrile: methanol (1:1) containing 10 ng/ml of verapamil (used as internal standard to correct for differences in injection volume that may happen during HPLC run), and plasma kasugamycin levels determined by high-pressure liquid chromatography coupled with tandem mass spectrometry (LC/MS/MS). The LC/MS/MS was performed on a Sciex Applied Biosystems Qtrap 4000 triple quadrupole mass spectrometer coupled to an Agilent 1260 HPLC system. Chromatography for kasugamycin was performed on a Cogent Diamond Hydride column (2.1 \u00d7 50 mm, particle size 4 \u00b5m) using a normal phase gradient elution. The gradient used 0.1% formic acid in Milli-Q deionized water and 0.1% formic acid in acetonitrile. Kasugamycin and verapamil were ionized using ESI-positive mode ionization and monitored using masses 380.17/112.10 and 455.4/156.2, respectively. Standard curve and quality control solutions were created by diluting 1 mg/ml of DMSO stocks of kasugamycin in acetonitrile/water (1:1). 10 \u00b5l of each dilution was added to 10 \u00b5l of drug-free plasma (Bioreclamation) and 100 \u00b5l of acetonitrile: methanol (1:1) containing 10 ng/ml verapamil. These standards were extracted as mentioned above.\n\nFor PK analysis of streptomycin, (8-10) week-old female BALB/c mice were intraperitoneally injected with 10 mg/kg, 20 mg/kg and 50 mg/kg of streptomycin dissolved in 0.9% saline, and blood was collected by tail snip after 15 and 30 mins, 1, 3, 5 and 8 hr. To 10 \u00b5l of plasma samples, 15 \u00b5l of extraction solution (35% trichloroacetic acid in water) was added. Then 10 \u00b5l of internal standard (20 \u00b5g/ml amikacin in water) and 70 \u00b5l of water was added to the mixture, and centrifuged at 3000 rpm for 5 min at 10\u02daC. Of the\u00a0extract, 70\u00a0\u00b5l\u00a0was transferred to an analysis plate, and 3 \u00b5l was injected on LC/MS/MS for analysis. Agilent Zorbax SB-C8, 4.6 \u00d7 75 mm, 3.5 \u00b5m was used as liquid chromatography column and Sciex Applied Biosystems Qtrap 4000 mass spectrometer was used for analysis.\n\n### Antibiotic toxicity in mouse\n\nThis experiment was approved by the Institutional Animal Care and Use Committee of Tsinghua University under protocol number 17-BJ2. Six-week-old female BALB/c mice were given 10 mg/kg rifampicin orally by gavage and/or different doses (50 mg/kg and 400 mg/kg) of kasugamycin intraperitoneally daily for a week. Bodyweights of the mice were monitored daily. Mice were euthanized if they showed signs of visible distress or if they lost\u00a0>20% of initial bodyweight.\n\n### Mouse infection and treatment\n\nAll mouse infection and treatment experiments were approved by the Institutional Animal Care and Use committee of Rutgers University. Initial sample size calculation was calculated to have 80% power to detect a 0.5 log CFU reduction based on inter-animal variability established through a large number of similar animal efficacy experiments. For the subsequent animal experiments, sample size was determined from preliminary data. Nine-week-old female BALB/c mice were infected with M. tuberculosis H37Rv with a Glas-Col inhalation system. An inoculum of 1 \u00d7 107 cfu/ml bacteria was added to the nebulizer, and the initial bacterial lung load was determined by sacrificing four mice after 3 hr of infection. After 1 week, four mice were sacrificed to determine the bacterial burden in the lungs before start of treatment. The mice were treated daily with 10 mg/kg rifampicin orally (po) alone, or with 400 mg/kg kasugamycin intra-peritoneally (ip) alone, or with a combination of rifampicin (10 mg/kg) and kasugamycin (400 mg/kg) or carrier controls for 2 weeks. The mice were then sacrificed, the lungs harvested and homogenized; and the homogenates spread on Middlebrook 7H11 agar supplemented with OADC.\n\nFor the intermittent rifampicin-kasugamycin treatment procedure (Figure 2B), 10-\u00a0to\u00a012-week-old female BALB/c mice were infected with M. tuberculosis H37Rv, with 1 \u00d7 107 cfu/ml added to the nebulizer, and the lung bacterial load was determined by sacrificing four mice after 3 hr of infection. After 2 weeks of infection, four mice were sacrificed to determine bacterial burden in the lungs before start of treatment. The mice were given the following antibiotic regimen: The control group received PBS ip for 4 days, then water po for 5 days. From there on, they received PBS for 2 days followed by water for 5 days; and this cycle was repeated until the end of the treatment. This treatment procedure was used for the kasugamycin and streptomycin groups as well, with PBS being replaced by 400 mg/kg kasugamycin and 3 mg/kg streptomycin, respectively. The same procedure was also applied for the rifampicin only group, with water being replaced by 10 mg/kg rifampicin. Mice that received two antibiotics were given 400 mg/kg kasugamycin or 3 mg/kg streptomycin for 4 days, and then 10 mg/kg rifampicin for 5 days. This was followed by kasugamycin or streptomycin for 2 days and rifampicin for 5 days; and the cycle repeated until the end of the experiment. After 44 days of infection, mice were euthanized, lungs and spleens of the mice were harvested and homogenized, and the homogenates were spread on Middlebrook 7H11 agar supplemented with OADC. Statistical analysis of differences in means between groups was performed by one-way ANOVA followed by Tukey\u2019s post-hoc correction for multiple samples (GraphPad Prism).\n\n### Statistical analysis\n\nTests of significance are stated in the relevant methods sections and figure legends. All experiments were performed at least three times independently except for the edeine/chloramphenicol experiments (performed twice independently) and animal experiments. Figure 2A is representative of an experiment performed twice. For Figure 2B, data from two independent experiments are presented except for the Streptomycin arm, which was performed once.\n",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "11304664-8d20-4065-abfd-94657acfeb7f",
+      "submission_id": "8f884410-233b-4269-ac6f-4a513cc8b4df",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Madhukar Pai, McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.36782.023](https://doi.org/10.7554/eLife.36782.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Kasugamycin potentiates rifampicin in Mycobacterium tuberculosis by specifically decreasing mycobacterial mistranslation\" for consideration by eLife. Your article has been reviewed by 4 reviewers including Madhukar Pai as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Gisela Storz as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Andreas Diacon (Reviewer #3).\n\nAs you can see below, we received divergent feedback from the peer reviewers (reviewer #4, in particular, has raised several major concerns), and our final decision was reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nReviewer #1:\n\nI am not a basic TB scientist, and my comments are focused more on the relevance of this study and its potential implications for TB treatment.\n\nCurrent TB treatment is long, and therapy for drug-resistant TB is particularly long, toxic, and expensive. Success rates are only about 50% and identification of new TB drug targets is a key priority for the TB field.\n\nIn this novel study, the authors have identified kasugamycin as a small molecule that can specifically decrease mistranslation due to the indirect tRNA aminoacylation pathway. This, in turn could limit emergence of rifampicin resistance in vitro and increased mycobacterial susceptibility to rifampicin both in vitro and in a murine model of infection.\n\nThe study opens a potential approach to saving rifampicin, which is one of the best TB drugs we have today. Of course, much more follow-up and clinical work in humans is necessary to follow up on this proof of concept work.\n\nAs regards the lab methods, I will defer to expert reviewers working in this area.\n\nReviewer #2:\n\nOverall this is a very nice article trying to decipher the action of kasugamycin and its synergist effects with rifampicin. Considering the high death toll of Tuberculosis and the danger of MDR and XMDR Tb strains this is an important field of wide interest.\n\nIn order to provide more context for the general reader I would suggest to expand the discussion on other approaches to combat MDR TBR from a mere list of papers to a concise explanation of alternative strategies, as little as one sentence may be sufficient. I couldn't help noticing that recent excellent work from the Baulard group (ie. Blondiaux et al., 2017) could be mentioned.\n\nThe conclusions by the authors appear to be justified, however, I feel that the statistical treatment of a sometimes limited set of experiments needs to be explained in more detail. At several cases it is not clear how many independent measurements were taken to calculate the reported mean values and the error bars. I would suggest that the authors state that explicitly including the experiments in the supplementary material. I can only assume that the figures with individual data points refer to individual mice, so the authors should clarify that.\n\nGiven that the paper is not very long, I would also suggest that the authors consider which of the figures on the supplementary material should be in the main text.\n\nIn order to provide more molecular insight I'd like to suggest that the authors discuss the actual binding site of kasugamycin in the ribosome. This may provide further evidence for the hypothesis put forward. This would not require additional experiments but a very careful analysis of the structures in the data bases and possible some sequence alignments to see how conserved the binding site is.\n\nReviewer #3:\n\nKasugamycin potentiates rifampicin in Mycobacterium tuberculosis by specifically decreasing mycobacterial mistranslation\n\nOverall Comments:\n\nThis interesting, content-rich article, draws logical conclusions as to how kasugamycin reduces mistranslation and enhances the effects of rifampicin on Mycobacterium tuberculosis (Mtb). The detailed methods investigate these effects genotypically, phenotypically and using a murine model comparing the means in the effects of rifampicin +/- kasugamycin +/- streptomycin.\n\nPresentation of data\n\nThis is clear, but due to the density of information and number of methods used, it might be useful to have clearly stated objectives and how these were achieved. For example, in the third objective: \"Kasugamycin increases rifampicin susceptibility in vivo\", it could be noted that this was achieved through pharmacokinetic characterization of Kasugamycin and streptomycin, assessing CFUs from lung and spleen tissue, and determining toxicity. Similarly, if the figures and tables are displayed according to the objectives, it would be easier to cross-reference.\n\nFigures\n\nCompressing the display information into 2 figures makes it difficult to read. Since up to 4 figures / tables are allowed, perhaps rearrange this information to enhance the text. Again, consider linking the displayed items to the objectives.\n\nMethods\n\nIn the Materials and methods section, describing where different doses of Kasugamycin were used and how these were determined, would help clarify the figures and results.\n\nConclusions\n\nThe information related to Kasugamycin increasing the susceptibility of M tuberculosis to Rifampicin in vitro was convincing in both methods, results and interpretation. I had some concerns regarding the mouse model work and information relating to Figure 2 and related tables/figures.\n\nIf co-administration of Kasugamycin resulted in a 30-fold boosting of rifampicin killing of Mtb in mouse lungs (but was toxic), and Kasugamycin pre-treatment decreases rifampicin resistance, can the authors explain why sequential treatment with Kasugamycin and rifampicin in the murine model only occurred in spleen but not lungs? It is noted that this was not explained by differences in tissue PK, but are there any other possibilities?\n\nI was also a bit surprised to see, in Figure 2C and the Supplementary file 2 that provides the statistical detail, that killing with both strep and ksg was significant but \"strep vs ksg\" was not different. In subsection Kasugamycin increases rifampicin susceptibility in vivo\u201d, where the experiment is described, the aminoglycoside concentrations for the experiment appeared to have been chosen to show that the ksg-enhanced rif activity was not due to inhibition of protein synthesis alone (by aminoglycosides). If I understand the intention correctly, the concentration of streptomycin was chosen to demonstrate that such inhibition can be shown in the mouse model (at 7xMIC thus inhibitory). The concentration of Kasugamycin, conversely, was such that killing was not likely to occur (0.8xMIC, non-inhibitory). Yet killing is shown by both equally in Figure 2C. How can this be explained? Is the MIC for Kasugamycin correct? At 0.8xMIC no such direct killing should occur, without RIF?\n\nI found it equally intriguing, looking at Figure 2C, that the Rif+Ksg effect was seen in spleen but not lung, which, as mentioned above, was not explained by drug levels. Yet, looking at the figure, it seems that Rif+Ksg were equally effective in both organs reducing counts by about 1.5 logs (eyeballing the figure). Rif alone and Rif+ Strep were much less effective in spleen than lung, helping the effect of the Rif+Ksg in spleen to statistical significance. There seem to be mixed messages in here that could be carved out a bit better.\n\nReviewer #4:\n\nIn the present study, Swarnava Chaudhuri and colleagues explore the therapeutic potential of kasugamycin in tuberculosis treatment. They use in vitro and in vivo cultures of the tuberculosis agent, Mycobacterium tuberculosis, to show that kasugamycin administration prevents M. tuberculosis growth and sensitizes M. tuberculosis to another drug, RNA polymerase inhibitor rifampicin. Finally, the authors use in vitro translation system and laboratory strains M. tuberculosis in an attempt to test their hypothesis that kasugamycin alters M. tuberculosis growth and rifampicin sensitivity by suppressing GatCAB-mediated mistranslation.\n\nThe current manuscript is unacceptable for publication due to the poor quality of its experimental design, non-justified conclusions and misleading content.\n\nFirstly, kasugamycin has been extensively studied over the past few decades. It was shown that this drug is not simply a molecule that increases translation accuracy \u2013 as Chaudhuri and colleagues make the reader think, referring to (van Buul et al., 1984). Instead, kasugamycin was shown to:\n\n1) Inhibit protein synthesis by suppressing translation initiation of canonical mRNAs (Okuyama et al., 1971, Poldermans et al., 1979, Moll et al., 2002, Schluenzen et al., 2006, Kaberdina et al., 2009, Surkov et al., 2010).\n\n2) Allow translation of some leaderless mRNAs (Moll et al., 2002, Kaberdina et al., 2009, Lange et al., 2017).\n\n3) Rapidly alter protein content of bacterial cells and trigger a complex stress-like response, which nature we still do not fully understand (Kaberdina et al., 2009, Muller et al., 2016, Lange et al., 2017).\n\nChaudhuri and colleagues totally disregard four decades of kasugamycin research, apart from (van Buul et al., 1984) and a structural study by (Schurwirth et al., 2006). Did the authors ignore the kasugamycin studies that disagree with kasugamycin as a specific inhibitor of mistranslation? Or is it due to ignorance about the major object of their study?\n\nSecondly, the major conclusion of the manuscript \u2013 that kasugamycin inhibits M. tuberculosis by reducing Asn-to-Asp or Gln-to-Glu mistranslation \u2013 is not justified by their experimental data. I found no proof that kasugamycin specifically alters Asn-to-Asp or Gln-to-Glu mistranslation, because the read-through assay used in this study is not capable to discriminate Asn-to-Asp or Gln-to-Glu mistranslation from overall changes in the accuracy of protein synthesis. To prove that a small molecule alters one specific type of mistranslation (e.g. Asn-to-Asp and Gln-to-Glu but not other types of mistranslation) people typically use quantitative mass-spectrometry (for instance, Cvetesic et al., 2016).\n\nThirdly, I found several overstatements. For instance, the idea that \"reducing mistranslation may be a novel mechanism for targeting bacterial adaptation\" (the last sentence of the abstract) is by no means novel. It was pronounced in numerous papers by Paul Schimmel, Mike Ibba, Susan Martinis and others, including Babak Javid's group (e.g. Su et al., 2016).\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for resubmitting your work entitled \"Kasugamycin potentiates rifampicin in Mycobacterium tuberculosis by specifically decreasing mycobacterial mistranslation\" for further consideration at eLife. Your article has been favorably evaluated by two new reviewers together with Madhukar Pai (Reviewing Editor), and Gisela Storz (Senior Editor).\n\nBased on the new evaluations, your article will be considered for publication in eLife. However, the issues raised by the new reviewers need to be addressed, as outlined below. Please address these comments as well as the comments of the original reviewers in a revised version of your manuscript. (We realize this is a little non-standard for eLife but your manuscript has taken an unusual path.)\n\nReviewer #5:\n\nThe revised manuscript by Chaudhuri et al., describes a synergistic role of kasugamycin with rifampicin to inhibit mycobacteria by reducing mistranslation. I feel this work could potentially be an important contribution to understanding the role of translational fidelity in bacteria-host interactions as well as developing a combinatory treatment for mycobacteria infections.\n\nThe major criticism of the previous submission comes from reviewer #4, and I share some of the same concerns. The authors convinced me that kasugamycin decreases the level of mistranslation in mycoplasma, which is supported by the in vivo and in vitro experiments using split and fused reporters. The challenge is to demonstrate that the potentiating effect of kasugamycin is due to reducing mistranslation. The results of the mutant strains with mutations in gatA and rpoB genes (Figure 1D, Figure 2C, and 2E) are particularly interesting and provide support for their conclusion. However, tolerance to antibiotics is very complicated and not fully understood. The use of an additional antibiotic or introducing a mutation in the RNA polymerase may change cellular responses (e.g., toxin/antitoxin levels or efflux) that lead to altered sensitivity to rifampicin. As the authors also rightfully admitted, other effects of kasugamycin cannot be ruled out. Kasugamycin inhibits translation initiation. I feel it would strengthen their conclusion by using other non-aminoglycoside antibiotics that inhibit initiation (e.g., thermorubin) and other steps of translation (Wilson, 2014) in the potentiating assays (Figure 2A). This would reveal if inhibiting translation in general has synergistic effects with rifampicin to limit the growth of mycobacteria. In this manuscript, the authors used streptomycin as a control, which enhances mistranslation itself and therefore is not a proper control for general translation inhibition.\n\nTo summarize, I feel this work is worth reconsidering to be published in eLife if the authors can provide further data (as suggested above and below) to strengthen the conclusion statement in the title. These experiments are not expected to take a long time.\n\nReviewer #6:\n\nDespite being generally viewed as negative outcome, inaccurate translation of mRNA (commonly referred to as mistranslation) may in certain cases be beneficial for some organisms. One such case is Mycobacterium tuberculosis, in which mistranslation is related to emergence of rifampicin resistance. It has been proposed that mistranslation expands the phenotypic heterogeneity of the proteome, hence increasing the chances of antibiotic-resistant proteins. Based on this, Chaudhuri et al., hypothesize that decreasing mistranslation would lessen the occurrence of resistance. In this paper, the effect of kasugamycin on rifampicin resistance emergence is explored in pathogenic Mycobacterium strains. Using a fluorescence-based reporting system, the authors show that the addition of the antibiotic kasugamycin reduces indirect -tRNA mistranslation and prevents rifampicin-resistant strains emerging in vitro and in vivo. Finally, they are able to replicate these findings in a mouse model, in which they show that rifampicin killing potential is increased by addition of kasugamycin.\n\n*Strengths in vitro\u2026: The fluorescence-based assay used is this paper is an elegant and robust way of measuring the effects of mistranslation.\n\nin vivo: The most interesting point of the paper, in my opinion, is how they try to translate their in vitro findings to a live model. Despite some mixed results (such as clearing the Mycobacterium in the spleen but not in the lungs) and the toxicity of the co-administration of kasugamycin and rifampicin, they show that these two drugs are able to partially clear the infection. This is a very exciting and promising finding and it would be interesting to see if they can improve and replicate this in humans in the future.\n\nAssessment: The study of the \"beneficial\" effects of mistranslation is gaining a lot of attention. This study adds another piece of evidence about the link between translation accuracy and fitness. In this paper, the authors focus on the mistranslation product of the indirect pathway used for charging tRNA-Asn and tRNA-Gln. This is a very particular and well characterized \"controlled\" event of tRNA mischarging. The results presented in the first part of the paper (fluorescence-based assays and survival experiments) are adequate for the point the authors try to make, yet it is true that they are somewhat overused.\n\nIt is worth mentioning the effort the authors have placed to use a live mouse model to further test their findings. Physiology and pharmacokinetics are outside of my field of expertise, so I do not have anything meaningful to add on the second part of the study, but it seems promising. The authors seem to have problems delivering the antibiotics to high enough levels that do not cause toxicity as well, which casts some doubts about its possible application in humans.\n\n*Weaknesses\n\nLack of alternative methods: the fluorescence-based method, despite its usefulness, is only an indirect way of detecting mistranslation events. Although I think that asking for additional, more direct experiments would be out of the scope of this work, it would be something to consider in the future.\n",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3de8a4c9-136b-42c0-860b-96336825a437",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C1",
+      "claim": "Most bacteria use an indirect pathway to generate aminoacylated glutamine and/or asparagine tRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Most bacteria use an indirect pathway to generate aminoacylated glutamine and/or asparagine tRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is supported by established scientific knowledge about bacterial tRNA aminoacylation pathways.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "a91d376d-c6ab-4450-a8f8-2514b530a90e",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C2",
+      "claim": "Clinical isolates of Mycobacterium tuberculosis with increased rates of error in gene translation (mistranslation) involving the indirect tRNA-aminoacylation pathway have increased tolerance to the first-line antibiotic rifampicin.",
+      "claim_type": "EXPLICIT",
+      "source": "Clinical isolates of Mycobacterium tuberculosis with increased rates of error in gene translation (mistranslation) involving the indirect tRNA-aminoacylation pathway have increased tolerance to the first-line antibiotic rifampicin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work (Su et al., 2016; Javid et al., 2014) mentioned in the introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "746473a8-fd9c-489f-812b-a16c53141bc8",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C3",
+      "claim": "The aminoglycoside kasugamycin can specifically decrease mistranslation due to the indirect tRNA pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we identify that the aminoglycoside kasugamycin can specifically decrease mistranslation due to the indirect tRNA pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "eebf7502-de44-42d1-bd7a-42ecebd4f96f",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C4",
+      "claim": "Kasugamycin but not the aminoglycoside streptomycin can limit emergence of rifampicin resistance in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Kasugamycin but not the aminoglycoside streptomycin, can limit emergence of rifampicin resistance in vitro",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "ac525a3d-d3ba-4014-9cf9-bc8c2020c7e7",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C5",
+      "claim": "Kasugamycin increases mycobacterial susceptibility to rifampicin both in vitro and in a murine model of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Kasugamycin but not the aminoglycoside streptomycin, can limit emergence of rifampicin resistance in vitro and increases mycobacterial susceptibility to rifampicin both in vitro and in a murine model of infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "aefa3ff1-8087-4cca-a5f9-92972d94feb7",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C6",
+      "claim": "Despite parenteral administration of kasugamycin being unable to achieve the in vitro minimum inhibitory concentration, kasugamycin alone was able to significantly restrict growth of Mycobacterium tuberculosis in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, despite parenteral administration of kasugamycin being unable to achieve the in vitro minimum inhibitory concentration, kasugamycin alone was able to significantly restrict growth of Mycobacterium tuberculosis in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by pharmacokinetic data (Figure 3\u2014figure supplement 1) and in vivo efficacy data (Figure 3C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "a2a28d9e-bddc-4504-ba50-b59a9fda49bf",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C7",
+      "claim": "Pharmacologically reducing mistranslation may be a novel mechanism for targeting bacterial adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that pharmacologically reducing mistranslation may be a novel mechanism for targeting bacterial adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings presented in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "48f4dcca-d04d-4f6e-b02c-3e5880678c8c",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C8",
+      "claim": "The long treatment duration of regimens for tuberculosis are thought in part to be due to phenotypic resistance (tolerance) of a subpopulation of genetically susceptible bacteria to antibiotic-mediated killing.",
+      "claim_type": "EXPLICIT",
+      "source": "The long treatment duration of regimens for tuberculosis are thought in part to be due to phenotypic resistance (tolerance) of a subpopulation of genetically susceptible bacteria to antibiotic-mediated killing (Gold and Nathan, 2017; Maisonneuve and Gerdes, 2014; Lewis, 2010; Wakamoto et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "64d9b149-b4a3-4b17-8a4b-33e0a8085d24",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C9",
+      "claim": "Increased specific errors in gene translation \u2013 mistranslation \u2013 led to intracellular protein variants of the drug target of rifampicin, RpoB, which resulted in phenotypic resistance to rifampicin.",
+      "claim_type": "EXPLICIT",
+      "source": "We proposed that in mycobacteria, increased specific errors in gene translation \u2013 mistranslation \u2013 led to intracellular protein variants of the drug target of rifampicin, RpoB, which resulted in phenotypic resistance to rifampicin (Javid et al., 2014; Su et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a previously proposed mechanism supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "19981663-9277-42ac-826d-05b32b007b13",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C10",
+      "claim": "Clinical isolates with mutations in the essential amidase gatCAB that mediates variation in cellular mistranslation rates had both increased mistranslation and rifampicin tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "Clinical isolates with mutations in the essential amidase gatCAB that mediates variation in cellular mistranslation rates had both increased mistranslation and rifampicin tolerance, suggesting that this is a clinically relevant mode of antibiotic tolerance (Su et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work (Su et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "6e332adc-7b1d-48b7-95b2-997f3efd99eb",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C11",
+      "claim": "The indirect aminoacylation pathway is present in the majority of bacterial species (with the exception of some proteobacteria such as Escherichia coli), all archaea, some mitochondria and other organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "The indirect aminoacylation pathway is present in the majority of bacterial species (with the exception of some proteobacteria such as Escherichia coli), all archaea, some mitochondria and other organelles (Sheppard and S\u00f6ll, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "889e99e4-3aff-4c1b-918f-415b7d9730fd",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C12",
+      "claim": "Bacteria lacking specific glutamine and/or asparagine tRNA synthetases instead utilize a non-discriminatory glutamyl- (asparaginyl) synthetase that forms misacylated Glu-tRNAGln and Asp-tRNAAsn aminoacyl complexes, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria lacking specific glutamine and/or asparagine tRNA synthetases instead utilize a non-discriminatory glutamyl- (asparaginyl) synthetase that forms misacylated Glu-tRNAGln and Asp-tRNAAsn aminoacyl complexes, respectively (Curnow et al., 1997; Rathnayake et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "6b547dd6-1474-4bbf-af1f-9f997a5f3115",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C13",
+      "claim": "Misacylated complexes are specifically recognized by GatCAB and amidated to the cognate Gln-tRNAGln and Asn-tRNAAsn aminoacyl tRNAs, thereby preserving the fidelity of the genetic code.",
+      "claim_type": "EXPLICIT",
+      "source": "These misacylated complexes are specifically recognized by GatCAB and amidated to the cognate Gln-tRNAGln and Asn-tRNAAsn aminoacyl tRNAs, thereby preserving the fidelity of the genetic code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the function of GatCAB.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "b72823cb-4ab6-4a75-9b01-0a0c145595d8",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C14",
+      "claim": "In mycobacteria, strains with mutations in gatA causing partial loss of function are not only viable, but can be isolated from patient samples.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently identified that in mycobacteria, strains with mutations in gatA causing partial loss of function are not only viable, but can be isolated from patient samples (Su et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "59d813c7-41d4-4ce9-aef0-74d4402b5b87",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C15",
+      "claim": "Strains with mutations in gatA have much higher rates of specific mistranslation \u2013 of glutamine to glutamate, and asparagine to aspartate.",
+      "claim_type": "EXPLICIT",
+      "source": "These strains have much higher rates of specific mistranslation \u2013 of glutamine to glutamate, and asparagine to aspartate \u2013 since a proportion of misacylated Glu-tRNAGln and Asp-tRNAAsn complexes are not fully converted to the cognate aminoacyl forms before taking part in translation at the ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by previous work and mechanistic understanding.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "699880d2-be58-4e18-894c-9b9da46fd33c",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C16",
+      "claim": "Wild-type mycobacteria flow-sorted for lower GatCAB expression had both higher mistranslation rates and rifampicin tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type mycobacteria flow-sorted for lower GatCAB expression had both higher mistranslation rates and rifampicin tolerance (Su et al., 2016), suggesting that targeting the indirect tRNA aminoacylation pathway may present a novel and attractive means for increasing mycobacterial rifampicin susceptibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "fe82e210-6116-4f49-a78e-7014c9bb947b",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C17",
+      "claim": "Kasugamycin at sub-inhibitory doses increased translational fidelity in both Mycobacterium smegmatis and pathogenic Mycobacterium tuberculosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Kasugamycin at sub-inhibitory doses (Supplementary file 1) increased translational fidelity in both the model organism Mycobacterium smegmatis (Msm) and pathogenic Mycobacterium tuberculosis (Mtb) (Figure 1B,C and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "a5da3204-3fe8-452e-a433-2aee37541f28",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C18",
+      "claim": "Kasugamycin decreased mistranslation in mycobacterial strains with mutated gatA that have extremely high misacylated-tRNA-mediated mistranslation due to partial loss of GatCAB function.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, kasugamycin decreased mistranslation in mycobacterial strains with mutated gatA that have extremely high misacylated-tRNA-mediated mistranslation due to partial loss of GatCAB function (Su et al., 2016) \u2013 Figure 1D, verifying that it was effective in increasing discrimination against translation of misacylated Glu-tRNAGln and Asp-tRNAAsn aminoacyl-tRNAs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "cf54eb2c-4bf6-42ae-96e1-c1e0c46a5b63",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C19",
+      "claim": "Kasugamycin decreased ribosomal misreading of mRNA in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to other reported activities in E. coli (Lange et al., 2017; M\u00fcller et al., 2016; Kaberdina et al., 2009; Moll and Bl\u00e4si, 2002), the aminoglycoside kasugamycin decreased ribosomal misreading of mRNA (van Buul et al., 1984)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "f3d37a4a-30ce-4b1d-bc3c-6b63ce0ac47e",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C20",
+      "claim": "The indirect tRNA aminoacylation pathway is not present in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "but it was not known if it could also decrease errors due to translation of misacylated tRNAs, as the indirect tRNA aminoacylation pathway is not present in E. coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about E. coli.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "392e3607-256d-477c-a57a-0c6a5d4f10de",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C21",
+      "claim": "In an E. coli cell-free translation system spiked with a non-discriminatory aspartyl synthetase, kasugamycin can specifically decrease translational error from misacylated Asp-tRNAAsn in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "An E. coli cell-free translation system spiked with a non-discriminatory aspartyl synthetase used in conjunction with the Nluc-GFP mistranslation reporter shows that kasugamycin can specifically decrease translational error from misacylated Asp-tRNAAsn in a dose-dependent manner.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "6645bb2b-1379-49e0-aa31-791477047b19",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C22",
+      "claim": "Kasugamycin at 1500 \u00b5g/ml failed to significantly attenuate translation of canonical or leaderless transcripts in M. smegmatis.",
+      "claim_type": "EXPLICIT",
+      "source": "The translation inhibitor chloramphenicol inhibited translation of both fluorescent proteins, but kasugamycin at 1500 \u00b5g/ml, more than 10 times higher concentrations than required to decrease mistranslation, did not significantly attenuate translation of either fluorescent protein (Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "dd45f961-d6cb-4402-a0c7-dd16ef854ff4",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C23",
+      "claim": "Edeine and kasugamycin, but not chloramphenicol could decrease mistranslation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, edeine and kasugamycin, but not chloramphenicol could decrease mistranslation rates (Figure 1\u2014figure supplement 3), suggesting that inhibition of 30S initiation might interfere with ribosomal discrimination of misacylated tRNAs by a yet to be characterized mechanism.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "52a1daf3-95e3-4820-a49a-197f1056b042",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C24",
+      "claim": "Inhibition of 30S initiation might interfere with ribosomal discrimination of misacylated tRNAs by a yet to be characterized mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, edeine and kasugamycin, but not chloramphenicol could decrease mistranslation rates (Figure 1\u2014figure supplement 3), suggesting that inhibition of 30S initiation might interfere with ribosomal discrimination of misacylated tRNAs by a yet to be characterized mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "180b4bbd-534c-40f9-8ae2-60190d937744",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C25",
+      "claim": "Kasugamycin reduced mycobacterial rifampicin phenotypic resistance in wild-type mycobacterial strains.",
+      "claim_type": "EXPLICIT",
+      "source": "In keeping with our hypothesis, kasugamycin reduced mycobacterial rifampicin phenotypic resistance in wild-type (Figure 2A,B) and high mistranslating gatA mutant mycobacterial strains (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "838737eb-eabf-4bf5-bc42-0c12f17e027d",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C26",
+      "claim": "Kasugamycin reduced mycobacterial rifampicin phenotypic resistance in high mistranslating gatA mutant mycobacterial strains.",
+      "claim_type": "EXPLICIT",
+      "source": "In keeping with our hypothesis, kasugamycin reduced mycobacterial rifampicin phenotypic resistance in wild-type (Figure 2A,B) and high mistranslating gatA mutant mycobacterial strains (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "ffd4e7fe-5555-42a7-93e9-ac11502ac608",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C27",
+      "claim": "Kasugamycin had no effect on mycobacterial growth in axenic culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Kasugamycin had no effect on mycobacterial growth, but addition to rifampicin significantly enhanced killing and sterilization of mycobacterial cultures (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "9a22c6b7-1e78-4ff7-a9ac-f110b258407e",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C28",
+      "claim": "Addition of kasugamycin to rifampicin significantly enhanced killing and sterilization of mycobacterial cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Kasugamycin had no effect on mycobacterial growth, but addition to rifampicin significantly enhanced killing and sterilization of mycobacterial cultures (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "957ab8f0-ecd7-4703-9dbc-2a0113fc1322",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C29",
+      "claim": "The aminoglycoside streptomycin increases mistranslation.",
+      "claim_type": "EXPLICIT",
+      "source": "The aminoglycoside streptomycin increases mistranslation (Leng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "120e6781-ce10-4001-a269-3e551b333824",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C30",
+      "claim": "Plating of Msm on rifampicin-agar in the presence of sub-inhibitory concentrations of streptomycin increased the number of phenotypically-resistant colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Plating of Msm on rifampicin-agar in the presence of sub-inhibitory concentrations of streptomycin increased the number of phenotypically-resistant colonies (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "ec864419-9dda-4e51-8ead-407a19b97d9f",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C31",
+      "claim": "Plating Msm on rifampicin-agar with sub-inhibitory concentrations of edeine but not chloramphenicol, decreased the number of phenotypically resistant colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in keeping with our observations with regard to 30S initiation inhibition and mistranslation, plating Msm on rifampicin-agar with sub-inhibitory concentrations of edeine but not chloramphenicol, decreased the number of phenotypically resistant colonies (Figure 2\u2014figure supplement 2), confirming the link between reducing mistranslation rates and decreasing rifampicin tolerance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "a6e4fd34-203b-43de-8ee6-6e8ffb8d87de",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C32",
+      "claim": "A strain of M. smegmatis with a single point mutation in RpoB (Msm-RpoB-N434T) has lower tolerance to rifampicin since a critical rifampicin-binding residue could no longer be mistranslated via the indirect pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This strain has lower tolerance to rifampicin since a critical rifampicin-binding residue could no longer be mistranslated via the indirect pathway (Su et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "7863c165-f4bd-4d75-bccd-c5c81e893cda",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C33",
+      "claim": "Msm-RpoB-N434T was less rifampicin tolerant than its parent strain, but kasugamycin was less potent at decreasing rifampicin tolerance further.",
+      "claim_type": "EXPLICIT",
+      "source": "Msm-RpoB-N434T was less rifampicin tolerant than its parent strain, but kasugamycin was less potent at decreasing rifampicin tolerance further (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "70982cfe-64ac-43e7-90d7-e273d0494bcb",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C34",
+      "claim": "The major mechanism by which kasugamycin increased rifampicin susceptibility is by decreasing mistranslation-induced protein variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Since other reported activities of kasugamycin (Lange et al., 2017; M\u00fcller et al., 2016; Kaberdina et al., 2009) would not be affected by a single point mutation in the rpoB gene, we conclude that the major mechanism by which kasugamycin increased rifampicin susceptibility is by decreasing mistranslation-induced protein variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data with the RpoB mutant strain.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "36e2ea1c-f4b4-40ba-b33a-9b1a6aa5ea47",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C35",
+      "claim": "In E. coli, antibiotic resistance is preceded by tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "In E. coli, antibiotic resistance is preceded by tolerance (Levin-Reisman et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "8906308b-201a-4c66-8399-8ada6bf05f58",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C36",
+      "claim": "Kasugamycin but not streptomycin given alongside rifampicin pre-treatment significantly reduced the likelihood of resistance following high-dose rifampicin challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "Kasugamycin but not streptomycin given alongside rifampicin pre-treatment significantly reduced the likelihood of resistance following high-dose rifampicin challenge (Figure 2F), suggesting that kasugamycin may limit development of de novo resistance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "4b9f5e24-691b-4450-9715-9274b987cb84",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C37",
+      "claim": "Both kasugamycin and streptomycin showed dose-dependent concentration-time profiles in plasma, with rapid clearance.",
+      "claim_type": "EXPLICIT",
+      "source": "Both agents showed dose-dependent concentration-time profiles in plasma, with rapid clearance (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pharmacokinetic data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "105719a7-adda-4427-b6f5-21b2f85655a7",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C38",
+      "claim": "Administration of the maximum tolerated daily dose of kasugamycin \u2013 400 mg/kg \u2013 resulted in a Cmax/EC(mistranslation)50 of ~2.5 and time over EC50 of 1 hr or only 4% of the dosing interval.",
+      "claim_type": "EXPLICIT",
+      "source": "Administration of the maximum tolerated daily dose of kasugamycin \u2013 400 mg/kg \u2013 resulted in a Cmax/EC(mistranslation)50 (peak plasma concentration divided by the half-maximal effective in vitro dose of kasugamycin in reducing mistranslation rates \u2013 Figure 1C) of ~2.5 and time over EC50 of 1 hr or only 4% of the dosing interval.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from pharmacokinetic data and in vitro measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "cfeaa307-ca3a-4ab3-8f1e-e932d3794a8c",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C39",
+      "claim": "Co-administration of kasugamycin resulted in an astonishing 30-fold boosting of rifampicin killing of Mtb in mouse lungs.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, co-administration of kasugamycin resulted in an astonishing 30-fold boosting of rifampicin killing of Mtb in mouse lungs (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "bf93164d-5697-4bc1-82dd-470c4b0f3252",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C40",
+      "claim": "Concomitant dosing of rifampicin and kasugamycin was poorly tolerated, even in the absence of tuberculosis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, concomitant dosing of rifampicin and kasugamycin was poorly tolerated, even in the absence of tuberculosis (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "16b518e1-3ffa-44b5-801f-0f0950ae8f9e",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C41",
+      "claim": "Pre-treatment of axenic mycobacterial cultures with kasugamycin but not streptomycin decreased rifampicin tolerance, to a lesser degree.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro, pre-treatment of axenic mycobacterial cultures with kasugamycin but not streptomycin decreased rifampicin tolerance, to a lesser degree (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "84778892-1e96-42ef-8807-8010f66b5075",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C42",
+      "claim": "Sequential treatment with rifampicin and kasugamycin, but not streptomycin led to significantly enhanced killing of Mtb in mouse spleens but not lungs.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequential treatment with rifampicin and kasugamycin, but not streptomycin led to significantly enhanced killing of Mtb in mouse spleens but not lungs (Figure 3C, Figure 3\u2014figure supplement 4), which was not explained by differences in bulk-tissue PK (Figure 3\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C and related supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "10d52fe8-217a-41e6-837d-15eee4c5c36b",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C43",
+      "claim": "The differences in efficacy between lungs and spleens were not explained by differences in bulk-tissue PK.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequential treatment with rifampicin and kasugamycin, but not streptomycin led to significantly enhanced killing of Mtb in mouse spleens but not lungs (Figure 3C, Figure 3\u2014figure supplement 4), which was not explained by differences in bulk-tissue PK (Figure 3\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pharmacokinetic data shown in Figure 3\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "0423a498-17ca-4e1a-bce8-b65f5fdfe25b",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C44",
+      "claim": "Generation of stochastic errors during gene translation \u2013 mistranslation \u2013 is more prevalent, and occurs at higher rates, than previously appreciated.",
+      "claim_type": "EXPLICIT",
+      "source": "Generation of stochastic errors during gene translation \u2013 mistranslation \u2013 is more prevalent, and occurs at higher rates, than previously appreciated (Mohler and Ibba, 2017; Ribas de Pouplana et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "a58d0180-541f-4f19-8d04-16f4474682ba",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C45",
+      "claim": "Kasugamycin is unique among aminoglycosides in its ability to decrease translational error \u2013 all other aminoglycosides increase mistranslation.",
+      "claim_type": "EXPLICIT",
+      "source": "Kasugamycin is unique among aminoglycosides in its ability to decrease translational error \u2013 all other aminoglycosides increase mistranslation (Leng et al., 2015; Ribas de Pouplana et al., 2014; van Buul et al., 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "02d9e5f5-1243-4ebc-90b4-0f7a2a865d1a",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C46",
+      "claim": "The ribosome has some proof-reading functionality beyond Watson-Crick base-pairing, limited to rejection of peptides formed from incorrect codon\u00b7anti-codon base-pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "It had been previously demonstrated that the ribosome has some proof-reading functionality beyond Watson-Crick base-pairing. This was limited to rejection of peptides formed from incorrect codon\u00b7anti-codon base-pairs (Zaher and Green, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "f92bfc56-3b00-40f9-b866-94d1ad6608fc",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C47",
+      "claim": "Misacylated tRNAs would still form cognate codon\u00b7anti-codon pairs at the ribosome, and would therefore not be rejected by the ribosomal proof-reading mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Misacylated tRNAs would still form cognate codon\u00b7anti-codon pairs at the ribosome, and would therefore not be rejected by such a mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the nature of misacylated tRNAs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "43c587d4-d409-4512-b381-ad344e7dd711",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C48",
+      "claim": "Rejection of misacylated aminoacyl tRNA formation had previously been described at the aminoacyl synthetase stage or by discrimination by EF-Tu.",
+      "claim_type": "EXPLICIT",
+      "source": "Rejection of misacylated aminoacyl tRNA formation had previously been described at the aminoacyl synthetase stage (Ibba and S\u00f6ll, 1999), or by discrimination by EF-Tu (LaRiviere et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "c1d51891-ab35-41c2-80d3-f5e631b9af4b",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C49",
+      "claim": "Kasugamycin's binding to the E. coli ribosome is close to the A794 and G926 residues (E. coli numbering) of 16S rRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Kasugamycin's binding to the E. coli ribosome is close to the A794 and G926 residues (E. coli numbering) of 16S rRNA (Schuwirth et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous structural work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "8fec780f-3535-4449-96af-158923e22c40",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C50",
+      "claim": "The A794 and G926 residues of 16S rRNA are universally conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that these residues are universally conserved, it is likely that kasugamycin's binding to mycobacterial and other bacterial ribosomes is in a similar location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ribosomal RNA conservation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "59b08564-e196-48db-9b9f-ea712a5ddd88",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C51",
+      "claim": "Kasugamycin-bound ribosomes possess a hitherto unknown ability to discriminate against misacylated EF-Tu\u00b7aminoacyl-tRNA complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our data suggest that kasugamycin-bound ribosomes also possess a hitherto unknown ability to discriminate against misacylated EF-Tu\u00b7aminoacyl-tRNA complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a novel conclusion inferred from the experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "9dc1a4d7-1007-4b06-b5b1-33d1de7f6a6f",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C52",
+      "claim": "The mechanism of discrimination against misacylated tRNAs potentially involves translation initiation, directly or indirectly.",
+      "claim_type": "EXPLICIT",
+      "source": "Since edeine, another 30S initiation inhibitor, but not inhibitors of elongation (streptomycin) or peptide-bond formation (chloramphenicol) could also decrease mistranslation from misacylated tRNAs, this suggests a conserved mechanism, potentially involving translation initiation, directly or indirectly, in discrimination of physiologically misacylated tRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the experimental observations with different translation inhibitors.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "7441cd2f-fbc2-4d4e-b772-5dcc5cc7d3ab",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C53",
+      "claim": "When kasugamycin and rifampicin were given daily, there was significant potentiation in mouse lungs after 2 weeks of treatment, but with significant toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "When kasugamycin and rifampicin were given daily, there was significant potentiation in mouse lungs after 2 weeks of treatment (Figure 3A), but with significant toxicity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A and toxicity data in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "0850b0fd-ba57-48da-b611-3343088ce265",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C54",
+      "claim": "In the alternate dosing schedule, potentiation was seen only in mouse spleens, not lungs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the better-tolerated alternate dosing schedule (Figure 3B), potentiation was seen only in mouse spleens, not lungs (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "f7611048-5c47-429d-aa50-7e245b80300e",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C55",
+      "claim": "Heterogeneity of drug distribution in either rifampicin or kasugamycin or both may explain the differences observed between lungs and spleens.",
+      "claim_type": "EXPLICIT",
+      "source": "Even within a single organ/tissue, there can be significant heterogeneity in drug penetration and distribution (Prideaux et al., 2015), which we did not measure, and such heterogeneity of distribution in either rifampicin or kasugamycin or both may explain the differences observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed differences.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "c0c8d74e-d460-4306-a107-5767b807e84a",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C56",
+      "claim": "A greater proportion of M. tuberculosis may be resident in macrophages in lungs compared with spleens.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a greater proportion of M. tuberculosis may be resident in macrophages in lungs compared with spleens, and aminoglycosides have poor intra-cellular penetration (Brezden et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation supported by citation about aminoglycoside penetration.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "08203a31-55f7-49be-90a7-0a5548f73549",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C57",
+      "claim": "Aminoglycosides have poor intra-cellular penetration.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a greater proportion of M. tuberculosis may be resident in macrophages in lungs compared with spleens, and aminoglycosides have poor intra-cellular penetration (Brezden et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "94f13beb-4596-4fcf-9078-8c608f55be89",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C58",
+      "claim": "At the maximum tolerated dose (400 mg/kg, once daily), the peak plasma concentration of kasugamycin (300 \u00b5g/ml) failed to reach the in vitro minimum inhibitory concentration of 400 \u00b5g/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "At the maximum tolerated dose (400 mg/kg, once daily), the peak plasma concentration of 300 \u00b5g/ml failed to reach the in vitro minimum inhibitory concentration of 400 \u00b5g/ml.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on pharmacokinetic measurements and MIC determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "bb7d5162-2f96-4572-8613-c359ce65bc2f",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C59",
+      "claim": "Most anti-tuberculous drugs require peak plasma concentrations orders of magnitude greater than in vitro MIC for measurable efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "Most anti-tuberculous drugs require peak plasma concentrations orders of magnitude greater than in vitro MIC for measurable efficacy (Mitchison, 2012; Pasipanodya and Gumbo, 2011; Pasipanodya et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "2cfaee39-4985-4d05-bd47-d8cc87ae4e7b",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C60",
+      "claim": "The bacteriostatic kasugamycin given alone, administered intermittently (10 doses in 30 days) to infected mice, with a Cmax/MIC <1, and at plasma concentrations <25% of MIC for 99% of the dosing interval was able to restrict Mtb growth in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the bacteriostatic kasugamycin given alone, administered intermittently (10 doses in 30 days) to infected mice, and with a Cmax/MIC <1, and at plasma concentrations <25% of MIC for 99% of the dosing interval was able to restrict Mtb growth in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the in vivo efficacy data and pharmacokinetic measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "6d9fdadb-f13e-48e4-bd3c-2885b37a53cc",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C61",
+      "claim": "Streptomycin, a bactericidal aminoglycoside, given at far greater equivalent doses, had no effect on Mtb growth in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Streptomycin, a bactericidal aminoglycoside, given at far greater equivalent doses, had no effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the in vivo efficacy data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "de485adb-bb35-420b-ac94-d0ea8b033892",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C62",
+      "claim": "Mycobacteria increase specific mistranslation rates under conditions such as nutrient limitation and low pH.",
+      "claim_type": "EXPLICIT",
+      "source": "Mycobacteria increase specific mistranslation rates under conditions such as nutrient limitation and low pH (Javid et al., 2014), which mimic potential in vivo environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "2cbed383-d2bb-4e65-b1c9-766ce888bc63",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C63",
+      "claim": "The efficacy of kasugamycin may not be as a conventional anti-microbial, but possibly by targeting bacterial adaptation to the host via reducing mistranslation.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest the efficacy of kasugamycin may not be as a conventional anti-microbial, but possibly by targeting bacterial adaptation to the host via reducing mistranslation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the observed efficacy despite poor pharmacokinetics.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "e49024a5-2acc-4ecb-955a-7864e4215665",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C64",
+      "claim": "Most aminoglycosides inhibit translocation during protein synthesis, whereas kasugamycin inhibits translation initiation by blocking the mRNA channel in the small ribosomal subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Most aminoglycosides inhibit translocation during protein synthesis, whereas kasugamycin inhibits translation initiation by blocking the mRNA channel in the small ribosomal subunit (Schluenzen et al., 2006; Schuwirth et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "ac370efc-b635-41ee-be8d-abba11b9a7eb",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C65",
+      "claim": "During 70S (leaderless) initiation, there is less steric hindrance of mRNA passage than in canonical initiation with kasugamycin bound to the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The reported structures of kasugamycin bound to the ribosome suggest that during 70S (leaderless) initiation, there is less steric hindrance of mRNA passage than in canonical initiation (Schluenzen et al., 2006), potentially explaining why kasugamycin is permissive for translation of some, but not all (Schuwirth et al., 2006) leaderless transcripts (Kaberdina et al., 2009; Moll and Bl\u00e4si, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural and functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "71e9d017-7b8b-46c9-863d-da9bd93615c9",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C66",
+      "claim": "Kasugamycin is acting by reducing mistranslation generated by the indirect tRNA aminoacylation pathway with regard to potentiation of rifampicin in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "With regard to potentiation of rifampicin in vitro, our data strongly suggest that kasugamycin is acting by reducing mistranslation generated by the indirect tRNA aminoacylation pathway, and hence protein variants that mediate rifampicin tolerance (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "868d5350-8dd1-47dc-bf59-a9547ea20d4a",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C67",
+      "claim": "Most bacteria, with the notable exception of E. coli and a few other proteobacteria utilize the indirect tRNA pathway for synthesis of aminoacylated glutamine and/or asparagine tRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Since most bacteria, with the notable exception of E. coli and a few other proteobacteria utilize the indirect tRNA pathway for synthesis of aminoacylated glutamine and/or asparagine tRNAs (Curnow et al., 1997), targeting adaptive mistranslation (Ribas de Pouplana et al., 2014) may be a useful strategy in the treatment of diverse bacterial infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "50d5018f-f6ef-437b-a860-be72ff3046b6",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C68",
+      "claim": "Targeting adaptive mistranslation may be a useful strategy in the treatment of diverse bacterial infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Since most bacteria, with the notable exception of E. coli and a few other proteobacteria utilize the indirect tRNA pathway for synthesis of aminoacylated glutamine and/or asparagine tRNAs (Curnow et al., 1997), targeting adaptive mistranslation (Ribas de Pouplana et al., 2014) may be a useful strategy in the treatment of diverse bacterial infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the findings of the study.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "85d5e5ce-4dbb-4602-8015-42d32e46ce8f",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C70",
+      "claim": "Kasugamycin (50 \u00b5g/ml) reduces asparagine-to-aspartate and glutamine-to-glutamate mistranslation in strain HWS.4 (M. smegmatis-gatA-V405D) with a specific defect in the indirect tRNA aminoacylation pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "(D) Kasugamycin (50 \u00b5g/ml) reduces asparagine-to-aspartate and glutamine-to-glutamate mistranslation \u2013 measured using a Renilla-FF luciferase dual reporter (see Materials and methods and Su et al., 2016) in a strain (HWS.4 \u2013 M. smegmatis-gatA-V405D) with a specific defect in the indirect tRNA aminoacylation pathway.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "c9809f9e-7974-4e71-b9b4-c30f64c75f38",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C78",
+      "claim": "The D140N mutation in N-luc caused approximately 100-fold reduction in activity compared with the wild-type enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "The D140N mutation in N-luc caused approximately 100-fold reduction in activity compared with the wild-type enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the reporter system used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "b9977c70-5d81-4906-b580-85dc091c6d73",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C79",
+      "claim": "Mistranslation specifically of aspartate (D) for asparagine (N) in a subset of newly translated polypeptides would result in regaining of wild-type N-luc activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Mistranslation specifically of aspartate (D) for asparagine (N) in a subset of newly translated polypeptides would result in regaining of wild-type N-luc activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the principle behind the gain-of-function reporter system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "084892ce-0299-4f1e-bb58-1b869e13cd90",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C80",
+      "claim": "The Deinococcus radiodurans non-discriminatory aspartyl synthetase Dr AspRS2 is able to misacylate E. coli asparagine tRNA with aspartate.",
+      "claim_type": "EXPLICIT",
+      "source": "The Deinococcus radiodurans non-discriminatory aspartyl synthetase Dr AspRS2 is able to misacylate E. coli asparagine tRNA with aspartate (Ruan et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "110a5bd6-9ef6-4c5e-b980-7e047768b2e0",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C81",
+      "claim": "The mycobacterial non-discriminatory enzyme does not recognize E. coli tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The Deinococcus radiodurans non-discriminatory aspartyl synthetase Dr AspRS2 is able to misacylate E. coli asparagine tRNA with aspartate (Ruan et al., 2008) (i.e. form Asp-tRNAAsn \u2013 the mycobacterial non-discriminatory enzyme does not recognize E. coli tRNA, not shown)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from experiments not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "9316e42a-b0ba-4974-b7df-3d2c4d8d02a1",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C82",
+      "claim": "Addition of the non-discriminatory synthetase markedly increased mistranslation in the E. coli cell-free translation system.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of the non-discriminatory synthetase markedly increased mistranslation, as measured by the Nano-luciferase-GFP gain-of-function reporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "69bd3531-d955-477f-815b-dab38cb791c2",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C83",
+      "claim": "Kasugamycin at concentrations that did not decrease GFP signal was able to reduce mistranslation-induced Nluc signal in the E. coli cell-free system.",
+      "claim_type": "EXPLICIT",
+      "source": "Kasugamycin, at concentrations that did not decrease GFP signal, was able to reduce mistranslation-induced Nluc signal (Figure 1E), confirming that kasugamycin could increase ribosomal discrimination of misacylated tRNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "0dc1429d-112b-43ee-b573-b4d200d076d1",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C84",
+      "claim": "Kasugamycin selectively inhibits translation of canonical but not leaderless transcripts in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the activities of kasugamycin in E. coli is the inhibition of the translation of canonical mRNA transcripts (i.e. those with a 5' UTR including a Shine-Dalgarno sequence), but not leaderless transcripts lacking a 5' UTR (Kaberdina et al., 2009; Moll and Bl\u00e4si, 2002), although permissive translation of leaderless transcripts was not universal (Schuwirth et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "2e98d5e3-bd73-4a9d-b8bf-a1871ebe4ebd",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C85",
+      "claim": "Mycobacteria have many annotated leaderless transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "We wanted to test whether selective inhibition of translation of canonical but not leaderless transcripts with kasugamycin was evident in mycobacteria, especially since mycobacteria have many annotated leaderless transcripts (Shell et al., 2015; Cortes et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "abdd7e1e-387c-41dc-9bdb-acd666882b92",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C86",
+      "claim": "Kasugamycin has been reported to generate novel 61S ribosomes in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Kasugamycin has also been reported to generate novel 61S ribosomes in E. coli (Kaberdina et al., 2009), but our attempts to isolate such structures from M. smegmatis were unsuccessful (not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature, but the authors could not replicate this in mycobacteria.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "a2809c9c-db25-4dca-9f8c-033810ea502e",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C87",
+      "claim": "Attempts to isolate 61S ribosomes from M. smegmatis were unsuccessful.",
+      "claim_type": "EXPLICIT",
+      "source": "Kasugamycin has also been reported to generate novel 61S ribosomes in E. coli (Kaberdina et al., 2009), but our attempts to isolate such structures from M. smegmatis were unsuccessful (not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a negative result from experiments not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "1318681c-25f1-4774-a125-40f86fa4ae63",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C88",
+      "claim": "Kasugamycin acts on the ribosome as an inhibitor of 30S initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Kasugamycin acts on the ribosome as an inhibitor of 30S initiation (Wilson, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "66298e25-8402-4092-8b0b-ec54e08841f7",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C89",
+      "claim": "Edeine is a 30S initiation inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested edeine, another 30S initiation inhibitor, and chloramphenicol, an inhibitor of peptide-bond formation (Wilson, 2014), both at sub-inhibitory concentrations with our gain-of-function mistranslation reporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "05d43725-d3d6-497f-b64a-3fc313ed9a67",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C90",
+      "claim": "Chloramphenicol is an inhibitor of peptide-bond formation.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested edeine, another 30S initiation inhibitor, and chloramphenicol, an inhibitor of peptide-bond formation (Wilson, 2014), both at sub-inhibitory concentrations with our gain-of-function mistranslation reporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "6f514bcb-7ef3-49d3-8eec-2f6a44136d74",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C91",
+      "claim": "The driver of aminoglycoside efficacy is Cmax/MIC (peak plasma concentration divided by in vitro minimum inhibitory concentration).",
+      "claim_type": "EXPLICIT",
+      "source": "Since the driver of aminoglycoside efficacy is Cmax/MIC (peak plasma concentration divided by in vitro minimum inhibitory concentration) (Scaglione and Paraboni, 2006), we selected a streptomycin dose of 3 mg/kg, achieving a Cmax/MIC of 7, while the Cmax/MIC of kasugamycin was 0.8 (Supplementary file 1), thus avoiding underestimating streptomycin's activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature on aminoglycoside pharmacodynamics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "0bc89085-85df-48a1-a28f-b0f9a469b880",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C92",
+      "claim": "A streptomycin dose of 3 mg/kg achieved a Cmax/MIC of 7 in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the driver of aminoglycoside efficacy is Cmax/MIC (peak plasma concentration divided by in vitro minimum inhibitory concentration) (Scaglione and Paraboni, 2006), we selected a streptomycin dose of 3 mg/kg, achieving a Cmax/MIC of 7, while the Cmax/MIC of kasugamycin was 0.8 (Supplementary file 1), thus avoiding underestimating streptomycin's activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from pharmacokinetic data and MIC measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "ccf3b120-790a-4c52-ab8a-4807e6a059ca",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "claim_id": "C93",
+      "claim": "The Cmax/MIC of kasugamycin at 400 mg/kg was 0.8 in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the driver of aminoglycoside efficacy is Cmax/MIC (peak plasma concentration divided by in vitro minimum inhibitory concentration) (Scaglione and Paraboni, 2006), we selected a streptomycin dose of 3 mg/kg, achieving a Cmax/MIC of 7, while the Cmax/MIC of kasugamycin was 0.8 (Supplementary file 1), thus avoiding underestimating streptomycin's activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from pharmacokinetic data and MIC measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2ff6d822-ff2e-4e5d-88d9-8131ddef283f",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Kasugamycin specifically decreases mistranslation arising from the indirect tRNA aminoacylation pathway in both mycobacteria and a reconstituted E. coli cell-free system. This effect is dose-dependent and works in strains with high baseline mistranslation due to gatA mutations, as well as in wild-type strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C17, C18, C21, C70, and C83 provide converging experimental evidence from multiple systems (M. smegmatis, M. tuberculosis, gatA mutants, and E. coli cell-free system) demonstrating kasugamycin's specific activity in reducing mistranslation from misacylated tRNAs. The gain-of-function reporter system (C78, C79) is appropriately designed and validated. The E. coli cell-free system (C80-C83) provides orthogonal validation of the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "1ad13bf4-1658-41ac-b432-e2578e7b7548",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Kasugamycin at high concentrations (1500 \u00b5g/ml) does not selectively inhibit canonical versus leaderless transcript translation in M. smegmatis, unlike its reported activity in E. coli. Attempts to isolate 61S ribosomes from M. smegmatis were unsuccessful.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C22 is supported by experimental data showing no differential effect on canonical versus leaderless transcripts in mycobacteria. Claims C84-C85 establish the context from prior literature. Claims C86-C87 report negative results that are appropriately disclosed. These findings distinguish kasugamycin's mechanism in mycobacteria from E. coli.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "6827a500-daf8-4887-bd1e-bef5ea57c596",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "30S initiation inhibitors (kasugamycin and edeine) but not elongation or peptide-bond formation inhibitors (streptomycin and chloramphenicol) decrease mistranslation rates, suggesting that 30S initiation inhibition may interfere with ribosomal discrimination of misacylated tRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C23 and C31 provide experimental support showing differential effects of translation inhibitors on mistranslation. However, claim C24 acknowledges this mechanism is speculative and uncharacterized. The edeine/chloramphenicol experiments were only performed twice (stated in methods), which is below the standard for other experiments. Additional mechanistic studies would be needed to support this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "82c05b11-cc00-4b98-9f6b-54e4c6d9a450",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Kasugamycin reduces rifampicin phenotypic resistance in both wild-type and high-mistranslating gatA mutant mycobacterial strains and enhances rifampicin-mediated killing and sterilization in axenic culture without affecting mycobacterial growth on its own.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 are supported by experimental data from multiple strains (wild-type M. smegmatis, M. tuberculosis, and gatA mutants) shown in Figures 2A-D. The data demonstrate consistent effects across different genetic backgrounds and assay formats (plating tolerance and time-kill curves). Statistical significance is reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "fcabd189-7d7a-4946-827a-9135d7985da6",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Streptomycin, which increases mistranslation, has the opposite effect of kasugamycin: it increases the number of rifampicin-tolerant colonies when present at sub-inhibitory concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C29 is supported by citation to prior literature. Claim C30 provides experimental validation showing streptomycin increases rifampicin tolerance, which serves as an important negative control demonstrating that the kasugamycin effect is specific to decreasing mistranslation rather than a general aminoglycoside property.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "2bfa1308-ea65-4241-be17-44fae8bab473",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The major mechanism by which kasugamycin increases rifampicin susceptibility is through decreasing mistranslation-induced protein variants, as demonstrated by reduced kasugamycin potency in an RpoB mutant strain where a critical rifampicin-binding residue cannot be mistranslated via the indirect pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 and C66 provide strong mechanistic evidence using a genetic approach. The RpoB-N434T mutant is an elegant control that specifically tests whether kasugamycin's effect depends on mistranslation of the rifampicin target. The reduced potency in this strain (C33) supports the proposed mechanism (C34, C66), as other kasugamycin activities would not be affected by this single point mutation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "0f5d89aa-8826-48e9-9ba0-7ed09a1c80e2",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Kasugamycin but not streptomycin, when given alongside rifampicin pre-treatment, significantly reduces the likelihood of rifampicin resistance emerging following high-dose rifampicin challenge in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C36 are supported by experimental data in Figure 2F using a resistance emergence assay. The differential effect between kasugamycin and streptomycin strengthens the conclusion that the effect is specific to reducing mistranslation. Statistical significance is reported using Fisher's exact test, which is appropriate for this type of data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "d945f009-be8a-481d-bc67-2b5a80e21124",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Pharmacokinetic analysis shows kasugamycin and streptomycin have dose-dependent plasma concentration profiles with rapid clearance. At the maximum tolerated dose (400 mg/kg), kasugamycin achieves a Cmax/MIC of 0.8 and Cmax/EC50 of ~2.5, with only 4% of the dosing interval above EC50.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37, C38, C58, and C92-C93 are supported by LC-MS/MS pharmacokinetic data shown in Figure 3\u2014figure supplement 1. The calculations of Cmax/MIC and Cmax/EC50 ratios are clearly described. Claim C91 provides appropriate context from prior literature on aminoglycoside pharmacodynamics. The PK characterization is thorough and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "eb5941f3-47ac-4189-8abb-ca274ad020cf",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Co-administration of kasugamycin with rifampicin results in significant potentiation of rifampicin killing in mouse lungs (30-fold enhancement after 2 weeks), but this daily dosing regimen is poorly tolerated even in uninfected mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C39, C40, and C53 are supported by in vivo data from Figure 3A and toxicity data from Figure 3\u2014figure supplement 2. The 30-fold enhancement is substantial and statistically significant. However, the toxicity issue (C40, C53) is a critical limitation that prevents clinical translation of this dosing regimen. The authors appropriately report both efficacy and toxicity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "5528e9ea-f169-4edb-bf81-d7c167331ae8",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Sequential (intermittent) treatment with kasugamycin and rifampicin, but not streptomycin and rifampicin, leads to significantly enhanced killing of M. tuberculosis in mouse spleens but not lungs. These differences are not explained by bulk-tissue pharmacokinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 and C54 are supported by experimental data from Figure 3C and related supplementary figures. The organ-specific effect is intriguing and well-documented. Claim C43 is supported by PK data in Figure 3\u2014figure supplement 5. The differential effect between kasugamycin and streptomycin strengthens the mechanistic interpretation. Statistical analysis by one-way ANOVA with post-hoc correction is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "0f572304-26ab-4561-b030-62557a879088",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The differential efficacy between lungs and spleens may be explained by heterogeneity in drug distribution or differences in the proportion of intracellular versus extracellular bacteria, as aminoglycosides have poor intracellular penetration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55 and C56 are explicitly speculative explanations for the observed lung/spleen differences. Claim C57 is supported by citation. However, no direct measurements of drug distribution heterogeneity or bacterial localization were performed. These remain plausible but untested hypotheses that would require additional experiments (e.g., imaging mass spectrometry, bacterial localization studies) to validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "ec68555a-1ce1-4ebc-bd62-c21a3e048bd4",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Despite achieving plasma concentrations below the MIC for 99% of the dosing interval (Cmax/MIC <1), kasugamycin alone administered intermittently was able to significantly restrict M. tuberculosis growth in vivo, while streptomycin at higher equivalent doses had no effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C60, and C61 are supported by in vivo efficacy data from Figure 3C combined with PK data. This is a remarkable finding given the poor PK profile. The comparison with streptomycin (C61) is critical for ruling out general aminoglycoside effects. The data suggest kasugamycin may work through a non-conventional mechanism, though the exact mechanism remains uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "bce4e35e-0b8e-4241-8466-2ffaabbdf225",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The efficacy of kasugamycin may not be as a conventional antimicrobial but possibly by targeting bacterial adaptation to the host via reducing mistranslation, as mycobacteria increase mistranslation under stress conditions that mimic in vivo environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C62 is supported by citation to prior work showing stress-induced mistranslation. Claim C63 is a speculative conclusion based on the unusual efficacy despite poor PK. While this is a plausible hypothesis that integrates multiple observations, it remains speculative without direct evidence that kasugamycin is reducing mistranslation in vivo or that this is the mechanism of efficacy. Additional experiments measuring mistranslation in vivo would be needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "a87f4222-9688-4f43-856f-4f42d918443b",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Kasugamycin-bound ribosomes possess a novel ability to discriminate against misacylated EF-Tu\u00b7aminoacyl-tRNA complexes, potentially involving translation initiation. This represents a previously unknown ribosomal quality control mechanism distinct from known proofreading of codon-anticodon mismatches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C45-C48 establish the context from prior literature. Claims C49-C50 describe kasugamycin's binding site. Claim C51 is a novel mechanistic conclusion inferred from the data, but it is speculative. Claim C52 suggests involvement of translation initiation based on the edeine data, but this is also speculative (acknowledged in C24). While the data support that kasugamycin increases discrimination against misacylated tRNAs, the precise molecular mechanism remains uncharacterized and would require structural or biochemical studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "c76a57da-1604-4807-9a63-efb23d9b4a7a",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Most bacteria (except some proteobacteria like E. coli) use an indirect tRNA aminoacylation pathway involving non-discriminatory synthetases that form misacylated complexes, which are then corrected by GatCAB to preserve genetic code fidelity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C11, C12, C13, C20, and C67 describe established knowledge about the indirect tRNA aminoacylation pathway, supported by multiple citations to prior literature and general knowledge. This background information is accurate and provides essential context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "c549de29-8a84-4238-9bec-533c33f72bb1",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Clinical M. tuberculosis isolates with mutations in gatCAB have increased mistranslation and rifampicin tolerance. Mistranslation generates protein variants of RpoB that mediate phenotypic rifampicin resistance, representing a clinically relevant tolerance mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C8, C9, C10, C14, C15, and C16 describe prior work from the same research group (Su et al., 2016; Javid et al., 2014) that established the link between mistranslation and rifampicin tolerance. These claims are supported by citations and provide the rationale for the current study. The prior work is accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "186af97b-3fcf-4bd4-9795-1d1a6cd3dfbf",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Pharmacologically reducing mistranslation may be a novel mechanism for targeting bacterial adaptation and could be a useful strategy for treating diverse bacterial infections, given the widespread presence of the indirect tRNA pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C7 and C68 are broad conclusions that extend beyond the experimental data. While the study provides proof-of-concept that reducing mistranslation can affect antibiotic susceptibility and bacterial growth, generalizing this to 'diverse bacterial infections' is speculative. The efficacy was demonstrated only in mycobacteria, and the mechanism's relevance to other bacterial species remains untested. This represents a promising direction for future research rather than a supported conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "2c1e4729-d008-4365-a3ed-443541c3b9bc",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Kasugamycin differs from other aminoglycosides in its mechanism: it inhibits translation initiation by blocking the mRNA channel rather than inhibiting translocation, and structural data suggest differential effects on canonical versus leaderless initiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C64, and C65 are supported by citations to prior structural and functional studies. This background information accurately describes kasugamycin's known mechanism of action and provides context for understanding its unique properties among aminoglycosides.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "82c44625-ea64-4f02-9173-db13b362fb76",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Mistranslation is more prevalent than previously appreciated, and most anti-tuberculous drugs require peak plasma concentrations orders of magnitude greater than in vitro MIC for measurable efficacy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44 and C59 are supported by citations to recent literature and provide important context for interpreting the pharmacokinetic and efficacy data. These are accurate representations of current knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    },
+    {
+      "id": "064406b7-7240-4a0a-920b-1ee1d7236045",
+      "content_id": "580f4f44-0700-43f7-9faa-5731fd7fcf1a",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "In E. coli, antibiotic resistance is preceded by tolerance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C35 is supported by citation to prior literature (Levin-Reisman et al., 2017) and provides context for the resistance emergence experiments. This is an accurate representation of prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:10:40.545965Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "746473a8-fd9c-489f-812b-a16c53141bc8",
+      "result_id": "2ff6d822-ff2e-4e5d-88d9-8131ddef283f"
+    },
+    {
+      "claim_id": "fe82e210-6116-4f49-a78e-7014c9bb947b",
+      "result_id": "2ff6d822-ff2e-4e5d-88d9-8131ddef283f"
+    },
+    {
+      "claim_id": "a5da3204-3fe8-452e-a433-2aee37541f28",
+      "result_id": "2ff6d822-ff2e-4e5d-88d9-8131ddef283f"
+    },
+    {
+      "claim_id": "392e3607-256d-477c-a57a-0c6a5d4f10de",
+      "result_id": "2ff6d822-ff2e-4e5d-88d9-8131ddef283f"
+    },
+    {
+      "claim_id": "85d5e5ce-4dbb-4602-8015-42d32e46ce8f",
+      "result_id": "2ff6d822-ff2e-4e5d-88d9-8131ddef283f"
+    },
+    {
+      "claim_id": "c9809f9e-7974-4e71-b9b4-c30f64c75f38",
+      "result_id": "2ff6d822-ff2e-4e5d-88d9-8131ddef283f"
+    },
+    {
+      "claim_id": "b9977c70-5d81-4906-b580-85dc091c6d73",
+      "result_id": "2ff6d822-ff2e-4e5d-88d9-8131ddef283f"
+    },
+    {
+      "claim_id": "084892ce-0299-4f1e-bb58-1b869e13cd90",
+      "result_id": "2ff6d822-ff2e-4e5d-88d9-8131ddef283f"
+    },
+    {
+      "claim_id": "110a5bd6-9ef6-4c5e-b980-7e047768b2e0",
+      "result_id": "2ff6d822-ff2e-4e5d-88d9-8131ddef283f"
+    },
+    {
+      "claim_id": "9316e42a-b0ba-4974-b7df-3d2c4d8d02a1",
+      "result_id": "2ff6d822-ff2e-4e5d-88d9-8131ddef283f"
+    },
+    {
+      "claim_id": "69bd3531-d955-477f-815b-dab38cb791c2",
+      "result_id": "2ff6d822-ff2e-4e5d-88d9-8131ddef283f"
+    },
+    {
+      "claim_id": "6645bb2b-1379-49e0-aa31-791477047b19",
+      "result_id": "1ad13bf4-1658-41ac-b432-e2578e7b7548"
+    },
+    {
+      "claim_id": "0dc1429d-112b-43ee-b573-b4d200d076d1",
+      "result_id": "1ad13bf4-1658-41ac-b432-e2578e7b7548"
+    },
+    {
+      "claim_id": "2e98d5e3-bd73-4a9d-b8bf-a1871ebe4ebd",
+      "result_id": "1ad13bf4-1658-41ac-b432-e2578e7b7548"
+    },
+    {
+      "claim_id": "abdd7e1e-387c-41dc-9bdb-acd666882b92",
+      "result_id": "1ad13bf4-1658-41ac-b432-e2578e7b7548"
+    },
+    {
+      "claim_id": "a2809c9c-db25-4dca-9f8c-033810ea502e",
+      "result_id": "1ad13bf4-1658-41ac-b432-e2578e7b7548"
+    },
+    {
+      "claim_id": "dd45f961-d6cb-4402-a0c7-dd16ef854ff4",
+      "result_id": "6827a500-daf8-4887-bd1e-bef5ea57c596"
+    },
+    {
+      "claim_id": "52a1daf3-95e3-4820-a49a-197f1056b042",
+      "result_id": "6827a500-daf8-4887-bd1e-bef5ea57c596"
+    },
+    {
+      "claim_id": "ec864419-9dda-4e51-8ead-407a19b97d9f",
+      "result_id": "6827a500-daf8-4887-bd1e-bef5ea57c596"
+    },
+    {
+      "claim_id": "1318681c-25f1-4774-a125-40f86fa4ae63",
+      "result_id": "6827a500-daf8-4887-bd1e-bef5ea57c596"
+    },
+    {
+      "claim_id": "66298e25-8402-4092-8b0b-ec54e08841f7",
+      "result_id": "6827a500-daf8-4887-bd1e-bef5ea57c596"
+    },
+    {
+      "claim_id": "05d43725-d3d6-497f-b64a-3fc313ed9a67",
+      "result_id": "6827a500-daf8-4887-bd1e-bef5ea57c596"
+    },
+    {
+      "claim_id": "180b4bbd-534c-40f9-8ae2-60190d937744",
+      "result_id": "82c05b11-cc00-4b98-9f6b-54e4c6d9a450"
+    },
+    {
+      "claim_id": "838737eb-eabf-4bf5-bc42-0c12f17e027d",
+      "result_id": "82c05b11-cc00-4b98-9f6b-54e4c6d9a450"
+    },
+    {
+      "claim_id": "ffd4e7fe-5555-42a7-93e9-ac11502ac608",
+      "result_id": "82c05b11-cc00-4b98-9f6b-54e4c6d9a450"
+    },
+    {
+      "claim_id": "9a22c6b7-1e78-4ff7-a9ac-f110b258407e",
+      "result_id": "82c05b11-cc00-4b98-9f6b-54e4c6d9a450"
+    },
+    {
+      "claim_id": "957ab8f0-ecd7-4703-9dbc-2a0113fc1322",
+      "result_id": "fcabd189-7d7a-4946-827a-9135d7985da6"
+    },
+    {
+      "claim_id": "120e6781-ce10-4001-a269-3e551b333824",
+      "result_id": "fcabd189-7d7a-4946-827a-9135d7985da6"
+    },
+    {
+      "claim_id": "a6e4fd34-203b-43de-8ee6-6e8ffb8d87de",
+      "result_id": "2bfa1308-ea65-4241-be17-44fae8bab473"
+    },
+    {
+      "claim_id": "7863c165-f4bd-4d75-bccd-c5c81e893cda",
+      "result_id": "2bfa1308-ea65-4241-be17-44fae8bab473"
+    },
+    {
+      "claim_id": "70982cfe-64ac-43e7-90d7-e273d0494bcb",
+      "result_id": "2bfa1308-ea65-4241-be17-44fae8bab473"
+    },
+    {
+      "claim_id": "71e9d017-7b8b-46c9-863d-da9bd93615c9",
+      "result_id": "2bfa1308-ea65-4241-be17-44fae8bab473"
+    },
+    {
+      "claim_id": "eebf7502-de44-42d1-bd7a-42ecebd4f96f",
+      "result_id": "0f5d89aa-8826-48e9-9ba0-7ed09a1c80e2"
+    },
+    {
+      "claim_id": "8906308b-201a-4c66-8399-8ada6bf05f58",
+      "result_id": "0f5d89aa-8826-48e9-9ba0-7ed09a1c80e2"
+    },
+    {
+      "claim_id": "4b9f5e24-691b-4450-9715-9274b987cb84",
+      "result_id": "d945f009-be8a-481d-bc67-2b5a80e21124"
+    },
+    {
+      "claim_id": "105719a7-adda-4427-b6f5-21b2f85655a7",
+      "result_id": "d945f009-be8a-481d-bc67-2b5a80e21124"
+    },
+    {
+      "claim_id": "94f13beb-4596-4fcf-9078-8c608f55be89",
+      "result_id": "d945f009-be8a-481d-bc67-2b5a80e21124"
+    },
+    {
+      "claim_id": "6f514bcb-7ef3-49d3-8eec-2f6a44136d74",
+      "result_id": "d945f009-be8a-481d-bc67-2b5a80e21124"
+    },
+    {
+      "claim_id": "0bc89085-85df-48a1-a28f-b0f9a469b880",
+      "result_id": "d945f009-be8a-481d-bc67-2b5a80e21124"
+    },
+    {
+      "claim_id": "ccf3b120-790a-4c52-ab8a-4807e6a059ca",
+      "result_id": "d945f009-be8a-481d-bc67-2b5a80e21124"
+    },
+    {
+      "claim_id": "ac525a3d-d3ba-4014-9cf9-bc8c2020c7e7",
+      "result_id": "eb5941f3-47ac-4189-8abb-ca274ad020cf"
+    },
+    {
+      "claim_id": "cfeaa307-ca3a-4ab3-8f1e-e932d3794a8c",
+      "result_id": "eb5941f3-47ac-4189-8abb-ca274ad020cf"
+    },
+    {
+      "claim_id": "bf93164d-5697-4bc1-82dd-470c4b0f3252",
+      "result_id": "eb5941f3-47ac-4189-8abb-ca274ad020cf"
+    },
+    {
+      "claim_id": "7441cd2f-fbc2-4d4e-b772-5dcc5cc7d3ab",
+      "result_id": "eb5941f3-47ac-4189-8abb-ca274ad020cf"
+    },
+    {
+      "claim_id": "16b518e1-3ffa-44b5-801f-0f0950ae8f9e",
+      "result_id": "5528e9ea-f169-4edb-bf81-d7c167331ae8"
+    },
+    {
+      "claim_id": "84778892-1e96-42ef-8807-8010f66b5075",
+      "result_id": "5528e9ea-f169-4edb-bf81-d7c167331ae8"
+    },
+    {
+      "claim_id": "10d52fe8-217a-41e6-837d-15eee4c5c36b",
+      "result_id": "5528e9ea-f169-4edb-bf81-d7c167331ae8"
+    },
+    {
+      "claim_id": "0850b0fd-ba57-48da-b611-3343088ce265",
+      "result_id": "5528e9ea-f169-4edb-bf81-d7c167331ae8"
+    },
+    {
+      "claim_id": "f7611048-5c47-429d-aa50-7e245b80300e",
+      "result_id": "0f572304-26ab-4561-b030-62557a879088"
+    },
+    {
+      "claim_id": "c0c8d74e-d460-4306-a107-5767b807e84a",
+      "result_id": "0f572304-26ab-4561-b030-62557a879088"
+    },
+    {
+      "claim_id": "08203a31-55f7-49be-90a7-0a5548f73549",
+      "result_id": "0f572304-26ab-4561-b030-62557a879088"
+    },
+    {
+      "claim_id": "aefa3ff1-8087-4cca-a5f9-92972d94feb7",
+      "result_id": "ec68555a-1ce1-4ebc-bd62-c21a3e048bd4"
+    },
+    {
+      "claim_id": "2cfaee39-4985-4d05-bd47-d8cc87ae4e7b",
+      "result_id": "ec68555a-1ce1-4ebc-bd62-c21a3e048bd4"
+    },
+    {
+      "claim_id": "6d9fdadb-f13e-48e4-bd3c-2885b37a53cc",
+      "result_id": "ec68555a-1ce1-4ebc-bd62-c21a3e048bd4"
+    },
+    {
+      "claim_id": "de485adb-bb35-420b-ac94-d0ea8b033892",
+      "result_id": "bce4e35e-0b8e-4241-8466-2ffaabbdf225"
+    },
+    {
+      "claim_id": "2cbed383-d2bb-4e65-b1c9-766ce888bc63",
+      "result_id": "bce4e35e-0b8e-4241-8466-2ffaabbdf225"
+    },
+    {
+      "claim_id": "a58d0180-541f-4f19-8d04-16f4474682ba",
+      "result_id": "a87f4222-9688-4f43-856f-4f42d918443b"
+    },
+    {
+      "claim_id": "02d9e5f5-1243-4ebc-90b4-0f7a2a865d1a",
+      "result_id": "a87f4222-9688-4f43-856f-4f42d918443b"
+    },
+    {
+      "claim_id": "f92bfc56-3b00-40f9-b866-94d1ad6608fc",
+      "result_id": "a87f4222-9688-4f43-856f-4f42d918443b"
+    },
+    {
+      "claim_id": "43c587d4-d409-4512-b381-ad344e7dd711",
+      "result_id": "a87f4222-9688-4f43-856f-4f42d918443b"
+    },
+    {
+      "claim_id": "c1d51891-ab35-41c2-80d3-f5e631b9af4b",
+      "result_id": "a87f4222-9688-4f43-856f-4f42d918443b"
+    },
+    {
+      "claim_id": "8fec780f-3535-4449-96af-158923e22c40",
+      "result_id": "a87f4222-9688-4f43-856f-4f42d918443b"
+    },
+    {
+      "claim_id": "59b08564-e196-48db-9b9f-ea712a5ddd88",
+      "result_id": "a87f4222-9688-4f43-856f-4f42d918443b"
+    },
+    {
+      "claim_id": "9dc1a4d7-1007-4b06-b5b1-33d1de7f6a6f",
+      "result_id": "a87f4222-9688-4f43-856f-4f42d918443b"
+    },
+    {
+      "claim_id": "3de8a4c9-136b-42c0-860b-96336825a437",
+      "result_id": "c76a57da-1604-4807-9a63-efb23d9b4a7a"
+    },
+    {
+      "claim_id": "6e332adc-7b1d-48b7-95b2-997f3efd99eb",
+      "result_id": "c76a57da-1604-4807-9a63-efb23d9b4a7a"
+    },
+    {
+      "claim_id": "889e99e4-3aff-4c1b-918f-415b7d9730fd",
+      "result_id": "c76a57da-1604-4807-9a63-efb23d9b4a7a"
+    },
+    {
+      "claim_id": "6b547dd6-1474-4bbf-af1f-9f997a5f3115",
+      "result_id": "c76a57da-1604-4807-9a63-efb23d9b4a7a"
+    },
+    {
+      "claim_id": "f3d37a4a-30ce-4b1d-bc3c-6b63ce0ac47e",
+      "result_id": "c76a57da-1604-4807-9a63-efb23d9b4a7a"
+    },
+    {
+      "claim_id": "868d5350-8dd1-47dc-bf59-a9547ea20d4a",
+      "result_id": "c76a57da-1604-4807-9a63-efb23d9b4a7a"
+    },
+    {
+      "claim_id": "a91d376d-c6ab-4450-a8f8-2514b530a90e",
+      "result_id": "c549de29-8a84-4238-9bec-533c33f72bb1"
+    },
+    {
+      "claim_id": "48f4dcca-d04d-4f6e-b02c-3e5880678c8c",
+      "result_id": "c549de29-8a84-4238-9bec-533c33f72bb1"
+    },
+    {
+      "claim_id": "64d9b149-b4a3-4b17-8a4b-33e0a8085d24",
+      "result_id": "c549de29-8a84-4238-9bec-533c33f72bb1"
+    },
+    {
+      "claim_id": "19981663-9277-42ac-826d-05b32b007b13",
+      "result_id": "c549de29-8a84-4238-9bec-533c33f72bb1"
+    },
+    {
+      "claim_id": "b72823cb-4ab6-4a75-9b01-0a0c145595d8",
+      "result_id": "c549de29-8a84-4238-9bec-533c33f72bb1"
+    },
+    {
+      "claim_id": "59d813c7-41d4-4ce9-aef0-74d4402b5b87",
+      "result_id": "c549de29-8a84-4238-9bec-533c33f72bb1"
+    },
+    {
+      "claim_id": "699880d2-be58-4e18-894c-9b9da46fd33c",
+      "result_id": "c549de29-8a84-4238-9bec-533c33f72bb1"
+    },
+    {
+      "claim_id": "a2a28d9e-bddc-4504-ba50-b59a9fda49bf",
+      "result_id": "186af97b-3fcf-4bd4-9795-1d1a6cd3dfbf"
+    },
+    {
+      "claim_id": "50d5018f-f6ef-437b-a860-be72ff3046b6",
+      "result_id": "186af97b-3fcf-4bd4-9795-1d1a6cd3dfbf"
+    },
+    {
+      "claim_id": "cf54eb2c-4bf6-42ae-96e1-c1e0c46a5b63",
+      "result_id": "2c1e4729-d008-4365-a3ed-443541c3b9bc"
+    },
+    {
+      "claim_id": "e49024a5-2acc-4ecb-955a-7864e4215665",
+      "result_id": "2c1e4729-d008-4365-a3ed-443541c3b9bc"
+    },
+    {
+      "claim_id": "ac370efc-b635-41ee-be8d-abba11b9a7eb",
+      "result_id": "2c1e4729-d008-4365-a3ed-443541c3b9bc"
+    },
+    {
+      "claim_id": "0423a498-17ca-4e1a-bce8-b65f5fdfe25b",
+      "result_id": "82c44625-ea64-4f02-9173-db13b362fb76"
+    },
+    {
+      "claim_id": "bb7d5162-2f96-4572-8613-c359ce65bc2f",
+      "result_id": "82c44625-ea64-4f02-9173-db13b362fb76"
+    },
+    {
+      "claim_id": "36e2ea1c-f4b4-40ba-b33a-9b1a6aa5ea47",
+      "result_id": "064406b7-7240-4a0a-920b-1ee1d7236045"
+    }
+  ],
+  "comparisons": []
+}

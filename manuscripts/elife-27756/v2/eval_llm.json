@@ -1,0 +1,224 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Acetylcholine (1 \u03bcM) biases STDP toward synaptic depression in mouse hippocampal CA1 neurons. Pre-before-post pairing (\u0394t = +10 ms) that normally induces t-LTP instead produces robust t-LTD when acetylcholine is present. This effect is mediated by muscarinic acetylcholine receptors, as atropine blocks the acetylcholine-facilitated t-LTD. The depression occurs across multiple spike timing intervals (0 ms, -20 ms, +10 ms) but not at extended intervals (\u00b150 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C29 provide comprehensive experimental evidence with appropriate statistical tests (t-tests with p-values) and adequate sample sizes (n=5-8 per condition). The atropine blocking experiment (C25) provides mechanistic specificity. Controls show acetylcholine alone does not affect baseline transmission (C23), ruling out non-specific effects. The dose-response relationship is explored (C38), and the findings are consistent with prior work in other brain regions (C39-C40).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Dopamine converts acetylcholine-facilitated synaptic depression into potentiation when applied after the plasticity induction protocol. Dopamine (100 \u03bcM) applied within 1 minute after pairing reverses acetylcholine-induced t-LTD to t-LTP. This conversion is mediated via the cAMP signaling cascade, as forskolin mimics the dopamine effect. The effect is independent of spike order and requires dopamine application after, not during, the induction protocol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 provide strong experimental evidence with appropriate controls (atropine to prevent sustained muscarinic activation) and statistical validation (p<0.05). The forskolin experiment (C46) provides mechanistic insight into cAMP pathway involvement. The temporal specificity is demonstrated by showing acetylcholine has no effect when applied after induction (C49). Sample sizes are adequate (n=6-10) and the effect sizes are substantial (~145% vs ~79% baseline).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C63",
+      "C64",
+      "C65",
+      "C68"
+    ],
+    "result": "A computational model incorporating sequential acetylcholine-dopamine neuromodulation of STDP enables effective navigation to changing reward locations. The model shows modest improvement during initial learning but demonstrates clear advantages when reward locations change. Cholinergic depression enables unlearning of previously rewarded locations, facilitating exploration and subsequent learning of new reward locations. The model outperforms control simulations with dopamine-only modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 and C63 provide computational evidence with 1000 simulations per condition, showing statistically significant differences. The model demonstrates functional advantages specifically during reward relocation (C55-C56), with parametric manipulations (C57-C58) yielding predicted outcomes. However, the model makes simplifying assumptions (feed-forward architecture, symmetric STDP windows) that may not fully capture biological complexity. The behavioral relevance remains to be validated experimentally in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C50",
+      "C60"
+    ],
+    "result": "Both dopamine and acetylcholine convert spike timing-dependent plasticity into correlation-based learning rules, but in opposite directions. Dopamine promotes potentiation while acetylcholine facilitates depression, irrespective of precise spike order during pairing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result synthesizes findings from multiple experiments (C21-C29 for acetylcholine, prior work for dopamine). The conversion from timing-dependent to correlation-based rules is well-supported by data showing similar plasticity outcomes across different spike timing intervals within the effective window. However, the claim of complete independence from spike order may be overstated, as effects diminish at extended intervals (\u00b150 ms, C29).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Synaptic weights can shift polarity through sequential neuromodulation, and dopamine-mediated conversion of depression to potentiation can occur after extended delays (minutes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by experimental data in Figures 1-2 and prior work (Brzosko et al., 2015). The polarity shift is demonstrated by acetylcholine inducing depression followed by dopamine converting it to potentiation. The extended delay capability is shown in C45 (dopamine applied within 1 min after pairing) and referenced to prior work showing delays of minutes. The mechanistic basis via eligibility traces is theoretically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C53",
+      "C62",
+      "C66",
+      "C67",
+      "C69"
+    ],
+    "result": "Sequential neuromodulation of STDP by acetylcholine and dopamine provides a mechanism for associating actions with outcomes and aligning cellular and behavioral learning timescales. This mechanism may be used in reward-based navigation and other hippocampus-dependent functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the experimental data (C66-C67) and computational modeling (C62) support the proposed mechanism at cellular and network levels, the direct link to behavioral learning timescales and hippocampus-dependent functions remains speculative (C69 is explicitly labeled as speculation). The computational model demonstrates proof-of-principle but lacks in vivo behavioral validation. The claim about aligning timescales (C8) is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Co-activation of dopaminergic and cholinergic receptors produces complex plasticity outcomes: depression with post-before-pre pairing, and initial depression followed by gradual reversal toward baseline with pre-before-post pairing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by experimental data in Figure 1\u2014figure supplement 1. However, the sample sizes and statistical details are not fully reported in the main text for these co-application experiments. The biological interpretation of these complex dynamics is unclear, and the functional relevance is not explored in the computational model. This represents an interesting observation but requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The effects of acetylcholine on hippocampal plasticity are concentration-dependent and receptor subtype-specific. Lower concentrations (100 nM) prevent potentiation without inducing depression, while higher concentrations (1 \u03bcM) facilitate depression. These findings are consistent with some prior studies in other brain regions but contrast with some rat hippocampus studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 provides experimental evidence for concentration-dependence with appropriate statistics. Claims C35-C37 and C39-C41 accurately represent prior literature, acknowledging both supporting and contrasting findings. The authors appropriately note species differences (mouse vs. rat) and methodological variations (STDP vs. other protocols) that may explain discrepancies. The concentration-dependence is a well-established principle in pharmacology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C61"
+    ],
+    "result": "The computational model implements eligibility traces where the integral of the learning window, rather than exact spike timing, determines whether the agent learns or unlearns. This feature is necessary and sufficient for learning causal associations between synaptic activity and delayed outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by citations to established theoretical work on reinforcement learning. Claim C61 is demonstrated in the computational model (Figure 4\u2014figure supplement 4) showing that positive window integrals enable learning while negative integrals enable unlearning. The model successfully implements this principle with 1000 simulations per condition. However, the biological implementation of such eligibility traces remains to be fully characterized experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C42"
+    ],
+    "result": "Background claims establishing the theoretical framework: STDP is a form of Hebbian learning under neuromodulatory control; conventional STDP is unsupervised and operates on shorter timescales than behavior; the hippocampus mediates spatial learning; different neuromodulators are active during distinct behavioral states (acetylcholine during exploration, dopamine during reward).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C9-C20, C42) are well-established principles in the field, supported by extensive prior literature as indicated by multiple citations. They provide appropriate context for the current work. The claims accurately represent the state of knowledge and are not controversial. These are foundational concepts rather than novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C20"
+    ],
+    "result": "Prior work by the authors demonstrated that dopamine broadens the time window for synaptic potentiation and can convert t-LTD to t-LTP when applied after the plasticity induction protocol with delays of minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, and C20 accurately cite prior work (Brzosko et al., 2015) that is foundational to the current study. These claims establish the precedent for delayed neuromodulatory effects on plasticity. The current manuscript extends this work by examining acetylcholine and sequential neuromodulation. The prior findings are well-established and provide appropriate context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Methodological details: Wild-type C57BL/6 mice (postnatal days 12-18) were used; whole-cell patch-clamp recordings were made from CA1 pyramidal neurons; Schaffer collaterals were stimulated; plasticity was induced using 100 pairings at 0.2 Hz with various spike timing intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 describe standard electrophysiological methods that are appropriate for the study. The age range (P12-18) is typical for acute slice preparations. The recording configuration and stimulation protocol are well-established. However, the use of juvenile animals may limit generalizability to adult circuits. The methods are described in sufficient detail for replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Computational model architecture: The model uses a one-layer network with place cells coding for agent position, projecting to action neurons representing different directions. Action neurons compete via winner-take-all lateral connectivity, and their activity determines the agent's movement direction and velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 describe the computational model architecture, which is based on established modeling approaches (cited as Fr\u00e9maux et al., 2013). The model is relatively simple (feed-forward, one-layer) which facilitates interpretation but may not capture the full complexity of hippocampal circuits. The architecture is appropriate for testing the specific hypothesis about sequential neuromodulation. Mathematical details are provided in the Methods section.",
+    "result_type": "MINOR"
+  }
+]

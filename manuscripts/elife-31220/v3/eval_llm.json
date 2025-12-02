@@ -1,0 +1,316 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Cocaine and LiCl experiences induce robust transcription of a small subset of IEGs across multiple brain structures, with peak induction at 1 hour. The authors identified 29 genes induced >2-fold by cocaine and 30 genes by LiCl, sharing a common core of 16 genes. Five genes (Arc, Egr2, Egr4, Fos, Fosb) were selected based on frequency of appearance and low variance for further analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 provide converging evidence from qPCR data across multiple brain regions and time points. The selection criteria for marker genes (C13) are clearly defined and orthogonal to the tested hypothesis. The quantitative thresholds (2-fold induction) and statistical approaches are appropriate, with data shown in multiple figure panels supporting the temporal dynamics and spatial distribution of IEG induction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Classification based on 25 features (5 genes \u00d7 5 brain structures) enables decoding of recent cocaine and LiCl experiences with 97.3% accuracy using k-Nearest Neighbors algorithm, with only 1 of 37 mice misclassified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 demonstrate high classification accuracy with appropriate computational validation. The leave-one-out cross-validation approach is suitable for the sample size (n=37). However, the result would be strengthened by reporting confidence intervals and addressing potential overfitting concerns given the relatively small sample size and high dimensionality (25 features for 7 experience types).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Foot shock induces transcriptional coding of negative valence specifically in the amygdala, characterized by robust induction of Egr2 and Egr4. Context exposure alone induces IEG transcription across multiple structures, but foot shock selectively enhances amygdala transcription. This pattern is supported by acute LiCl also inducing Arc, Egr2, and Fos in the amygdala.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 provide strong evidence for valence-specific encoding in the amygdala. The experimental design appropriately includes 'no shock' controls to isolate the effect of aversive stimulation from contextual novelty. Statistical support is provided (Supplementary file 3), and the convergence of foot shock and LiCl data strengthens the interpretation of amygdala-specific negative valence encoding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C46"
+    ],
+    "result": "Rewarding experiences (cocaine, sucrose, feeding) show broader transcriptional representation across brain structures compared to negative valence experiences. Acute cocaine primarily activates striatal regions (DS, NAc) with smaller changes in VTA, Amy, and LCtx, while feeding induces significant gene expression across all structures studied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 and C46 are well-supported by the radar plot visualizations and statistical analyses. The contrast between narrow amygdala-specific encoding of negative valence and broader mesolimbic/limbic encoding of positive valence is clearly demonstrated. However, the interpretation would benefit from discussion of potential confounds such as differences in locomotor activity or arousal between rewarding and aversive experiences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Repeated exposure to aversive (LiCl) versus rewarding (cocaine) experiences drives opposing trajectories of IEG induction. Repeated LiCl shows diminished amygdala transcription (habituation), while repeated cocaine shows enhanced transcription in LCtx, DS, and VTA, with region-specific patterns including decreased Egr2 in NAc but increased Egr2 and Fos in LCtx, DS, and VTA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 demonstrate opposing transcriptional dynamics with appropriate statistical analyses (two-way ANOVA with treatment \u00d7 time interactions). The F-statistics and p-values are reported for key comparisons. The interpretation of habituation (for aversive) versus sensitization (for rewarding) is reasonable, though alternative explanations such as ceiling effects or differential receptor regulation are not discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Repeated rewarding experiences (sucrose, feeding) show enhanced transcriptional representation in the limbic cortex, with significant induction of Egr2 and Fos. This pattern suggests that increased LCtx transcription may be a hallmark of increasing salience of positively reinforcing experiences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 are supported by statistical analyses showing significant treatment \u00d7 time interactions for sucrose and significant one-way ANOVA effects for feeding. However, C29 is interpretive and somewhat speculative, as the link between transcriptional magnitude and 'salience' is not directly tested. The citation to Robinson & Berridge (2008) provides theoretical support but does not validate the transcriptional measure as a direct readout of salience.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C39",
+      "C40"
+    ],
+    "result": "A minimal set of 25 transcriptional features (5 genes \u00d7 5 brain structures) enables decoding of 10 different experiences with 90.7% accuracy. Permutation testing (p<1e-5) validates classifier reliability. Both spatial (brain region) and molecular (gene identity) information are necessary for optimal decoding, as averaging across structures reduces accuracy to 55%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32, C39-C40 provide strong computational validation of the transcriptional code concept. The permutation testing appropriately addresses concerns about overfitting. The systematic ablation of spatial or molecular information (C33-C35) demonstrates the necessity of both dimensions. However, the generalizability beyond the specific experiences tested remains uncertain, and independent validation on held-out data would strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Decoding accuracy depends on both spatial and molecular information. Averaging gene expression across structures yields 55% accuracy, individual structures yield 33-56% accuracy, and individual genes across structures yield 37-70% accuracy. Fos and Egr2 individually achieve 67% and 70% accuracy respectively, but multi-feature classification significantly improves performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 provide systematic ablation analysis demonstrating the importance of combinatorial coding. The range of accuracies for different feature subsets is clearly reported. This analysis strengthens the main conclusion that experience encoding requires distributed representation across genes and brain regions. However, the baseline accuracy for random classification (1/10 = 10%) should be explicitly stated for context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Feature selection using Random k-Nearest Neighbors identifies 8 optimal features (Egr2 and Fos in LCtx, NAc, Amy; Egr2 and Fosb in DS) achieving 93.6% accuracy. Independent Random Forest feature selection identifies a largely overlapping set with top 10 features achieving 94.4% accuracy (p<1e-5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 demonstrate robust feature selection with convergent results from two independent algorithms (RKNN and Random Forest). The high classification accuracies with reduced feature sets suggest the transcriptional code can be efficiently compressed. The statistical validation (p<1e-5) is appropriate. However, the manuscript does not discuss whether these specific features would generalize to other experience sets or whether they are optimal only for this particular set of 10 experiences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "IEG expression provides a quantitative neural transcriptional code for recent experience, defined by combinatorial expression across brain regions. Components of transcriptional signatures associate with affective attributes (valence, habituation, reinforcement), and patterns are modulated by repeated stimulus administration, suggesting a role in sustaining long-term plasticity underlying adaptive behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 and C70-C72 represent the main conceptual conclusions of the study. These are well-supported by the convergent experimental and computational evidence presented in earlier results. The demonstration of valence encoding (amygdala for negative, broader for positive), habituation (decreased transcription with repeated aversive), and sensitization (increased transcription with repeated rewarding) provides strong support for the transcriptional code concept. However, the causal link between transcriptional patterns and 'adaptive behavior' remains correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C47",
+      "C48",
+      "C80"
+    ],
+    "result": "Experiences of negative valence are represented by distinct transcriptional induction in the amygdala, while positive valence induces transcription in LCtx, NAc, DS, and VTA. Upon repetition, transcriptional representation is dynamically modulated, potentially underlying long-term adaptations. Inducible transcription serves as a resource for identifying brain regions encoding experience properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C47-C48, and C80 synthesize the main findings regarding valence encoding and plasticity. The evidence for valence-specific regional patterns is strong (C45). However, C47 includes speculative language ('potentially underlying') that is appropriate given the correlative nature of the data. The claim that transcription 'identifies brain regions encoding experience properties' (C48, C80) is supported but should be qualified\u2014transcription identifies regions with experience-induced plasticity, but does not directly demonstrate encoding in the information-theoretic sense.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Background claims establishing that inducible transcription is essential for memory consolidation, that neuroplasticity depends on temporally-defined transcriptional waves beginning with IEGs, and that IEGs contribute significantly to synaptic plasticity and may represent molecular signatures of long-term memory formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 represent established background knowledge supported by appropriate citations to prior literature. These claims provide the conceptual foundation for the study but are not novel findings. The citations appear appropriate and the characterization of prior work is accurate based on the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Methodological details including animal subjects (male C57BL/6 mice, 6-8 weeks), housing conditions (12:12 light/dark cycle, 20-22\u00b0C, 55\u00b110% humidity), drug doses (cocaine 20 mg/kg, LiCl 150-250 mg/kg, foot shock 0.7 mA for 2s), and tissue collection procedures (400 \u03bcm slices for most regions, 200 \u03bcm for VTA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C58 provide essential methodological details that are clearly stated and appropriate for the experiments. The use of male mice only is a limitation not discussed. The drug doses and behavioral parameters are within standard ranges. The tissue dissection approach (punch dissections from defined slices) is appropriate though lacks single-cell resolution. All tests during light phase is noted, which is important for circadian considerations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Marker gene selection involved compiling candidates from microarray analysis and literature, developing and testing qPCR probes for 212 genes (selecting 152 optimal pairs), then shortlisting 78 genes showing \u22651.25-fold induction in microfluidic qPCR arrays from cocaine and LiCl samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 describe a systematic and appropriate marker selection strategy. The multi-stage approach (literature \u2192 probe development \u2192 microarray screening \u2192 qPCR validation) is sound. However, the initial microarray data is not shown ('data not shown'), which limits full evaluation of the selection process. The 1.25-fold threshold for the 78-gene list is relatively permissive, but the subsequent ranking by frequency and variance (C13) provides additional stringency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Computational methods employed k-Nearest Neighbors (k=1, Euclidean space) for classification, evaluated by leave-one-out cross-validation, with feature selection performed using Random k-Nearest Neighbors or Breiman Random Forest algorithms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 describe appropriate computational methods with proper citations. The choice of k=1 for KNN is reasonable given the small sample size and distinct clusters. Leave-one-out cross-validation is appropriate for the dataset size. The use of two independent feature selection algorithms (RKNN and Random Forest) strengthens the analysis. However, no discussion of hyperparameter optimization or potential overfitting mitigation strategies beyond cross-validation is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Background claims establishing that neuronal plasticity enables adaptive behaviors, cocaine sensitization is a widely-used plasticity paradigm, prior studies have observed plasticity in limbic/mesolimbic structures, transcriptional analysis enables parallel multi-region investigation, and complex experiences involve coordinated plasticity across multiple brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 provide appropriate background and rationale for the experimental approach. The citations support the statements about prior work. C68 correctly identifies a key advantage of transcriptional analysis (parallel multi-region assessment) versus electrophysiology. C69 states an assumption ('assuming that...') that is reasonable but not directly tested in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Background claims that neural activity patterns can decode experiences in rodents and humans using various imaging techniques, that IEG expression provides quantitative metrics beyond activity markers, and that transcriptional markers have been successfully used for classification in other biomedical contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 provide appropriate context from prior work with suitable citations. C74 represents a key conceptual claim of the current study (IEGs as quantitative code rather than binary markers) that is supported by the classification results. C75 provides useful context that transcriptional classification is established in other domains, supporting the feasibility of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C81"
+    ],
+    "result": "Speculative claims that principles likely generalize to broader experiences, that marker genes could be substituted, that affect can be defined by valence and salience dimensions (Russell model), that valence is encoded in Amy/PFC/NAc/VTA, and that other brain areas likely encode different experience attributes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C79 and C81 are appropriately speculative and acknowledge limitations. C76-C77 suggest generalizability but this is not tested. C78-C79 cite the Russell circumplex model and prior work on valence encoding, providing theoretical context. C81 acknowledges the study's focus on limbic/mesolimbic structures and speculates about other regions. These claims are reasonable but represent hypotheses for future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Introduction of 'predictive transcriptional coding' concept, proposing that inducible transcription encodes experience valuation rather than merely reporting events, setting network state for prospective plasticity. This is conceptually similar to reward prediction error but on longer timescales. Transcription serves as a 'salience filter' determining which experiences warrant long-term encoding, with valuation encoded by circuit identity and transcription magnitude. The threshold for transcription may depend on coincident glutamatergic and neuromodulatory inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C87 introduce a novel conceptual framework that is intellectually interesting but largely speculative. The data show that transcriptional patterns correlate with experience attributes and change with repetition, which is consistent with the predictive coding framework but does not directly test it. C87 cites Clayton (2000) for the 'genomic action potential' concept, providing theoretical support. These claims represent valuable hypotheses for future mechanistic work but go beyond what the correlative data directly demonstrate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Speculative claims about potential applications and future directions, including implications for drug development and abuse liability assessment, that fundamental phenomena can be identified with simple methods, potential for non-invasive whole-brain imaging approaches, emerging technologies for transcriptional analysis, that behavioral transcriptomics will provide systems-level views of memory encoding, and that deciphering the transcriptional code could enable decoding of synapse-specific plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C95 represent forward-looking speculation about applications and future research directions. These are appropriately presented as possibilities rather than demonstrated results. C90 makes a valid point about the value of simple methods. C91-C92 cite relevant emerging technologies. C93-C95 are highly speculative, particularly C95's suggestion that transcriptional analysis could decode 'synapse-specific plasticity,' which would require substantial additional validation. These claims are appropriate for a Discussion section but represent hypotheses rather than supported results.",
+    "result_type": "MINOR"
+  }
+]

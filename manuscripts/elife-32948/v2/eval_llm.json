@@ -1,0 +1,415 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The authors developed a heterochromatin spreading sensor (HSS) system that enables quantitative examination of spreading separately from nucleation in single S. pombe cells. The system uses fluorescent reporters driven by the ade6 promoter to track nucleation ('green'), spreading ('orange'), and cellular noise ('red'), with high signal-to-noise ratio and minimal delay from epigenetic changes to fluorescent output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 describe the development and validation of the HSS system. The system design is well-documented with appropriate controls (C51), and the noise normalization approach (C52) is validated by correlation analysis in \u0394clr4 cells. The technical specifications and validation data support the functionality of this experimental system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "ncRNA-driven heterochromatin spreading at ectopic sites (ura4::dhHSS and his1::dhHSS) is stochastic, multimodal, and produces intermediate states of repression. Cells populate a wide range of nucleation and spreading states, with intermediate fluorescence corresponding to intermediate levels of mRNA, H3K9me2, and H3K4me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C53-C71 collectively demonstrate stochastic spreading behavior through flow cytometry (Figure 1C), RT-qPCR (C61, Figure 1D), and ChIP analysis (C63-C67, Figure 1E). The observations are replicated at multiple loci (C69-C70) and with switched fluorophores, strengthening the conclusion. The correlation between fluorescence, mRNA levels, and histone marks validates the intermediate states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "At the wild-type MAT locus, both reporters are tightly repressed in most cells. However, when REIII is inactivated (\u0394REIIIHSS), the high fidelity disappears and cenH-nucleated spreading behaves similarly to ectopic ncRNA-nucleated strains, showing high stochasticity and predominantly intermediate repression states with progressive decline of H3K9me2/me3 marks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C86 demonstrate the role of REIII in maintaining high-fidelity repression at MAT. Flow cytometry data (Figure 2B-C) shows the transition from tight repression to stochastic spreading upon REIII deletion. ChIP data (C84-C85, Figure 2D) confirms that nucleation at cenH is intact while spreading is compromised, supporting the interpretation that REIII stabilizes spreading rather than affecting nucleation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "In \u0394KHSS cells (cenH deleted), heterochromatin formation is sharply bimodal and REIII-dependent, with cells either fully repressed (OFF) or fully de-repressed (ON). In \u0394KHSS-OFF cells, H3K9me2/me3 methylation is uniform across the locus without intermediate states, indicating continuous spreading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C94 characterize REIII-dependent heterochromatin formation. Flow cytometry (Figure 2E) demonstrates bimodal distribution, and the requirement for REIII is shown by the failure to establish silencing when Atf1/Pcr1 binding sites are deleted (C90, 34/34 strains). ChIP data (C92-C93) confirms uniform methylation in OFF cells. The bimodal behavior is independent of REII and reporter placement (C91), strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Long-term single-cell imaging reveals that ncRNA-driven spreading (ura4::dhHSS3kb and \u0394REIIIHSS) exhibits dynamic fluctuations over time without fixed temporal patterns, with 83% of \u0394REIIIHSS cells experiencing at least half-maximal de-repression. In contrast, \u0394KHSS-OFF cells maintain stable repression for up to 25 generations, revealing fundamentally different dynamic behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C106 present FYLM imaging data (Figure 3) showing temporal dynamics. The observations are quantified (C100: 20% WT MAT cells show transient loss; C101: 83% \u0394REIIIHSS cells show de-repression) and demonstrate clear differences between ncRNA-dependent and REIII-dependent heterochromatin. The long-term stability of \u0394KHSS-OFF (C105, up to 25 generations) contrasts sharply with the fluctuating behavior of \u0394REIIIHSS, supporting the conclusion of fundamentally different mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Wild-type MATHSS exhibits robust epigenetic memory at 25 generations with a half-resistance point of ~2 \u03bcM TSA. In contrast, \u0394REIIIHSS shows significantly weaker memory that collapses beyond 0.2 \u03bcM TSA (10-fold lower half-resistance point), indicating that REIII is required for memory behavior at MAT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C115 present TSA gradient experiments (Figure 4B-C) demonstrating memory capacity. The quantitative measurements of half-resistance points (C109: ~2 \u03bcM for WT; C113: ~0.2 \u03bcM for \u0394REIII) provide clear evidence for REIII's role. The separation of ancestrally treated vs. untreated cell populations (C108) demonstrates memory, and the convergence of these populations in \u0394REIIIHSS (C112) shows loss of memory. The conclusion that memory derives from REIII rather than cenH (C114) is logically supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "\u0394KHSS cells show high resistance (~3 \u03bcM TSA half-resistance point) but cannot re-nucleate after ancestral TSA treatment. The increased resistance of wild-type MAT over \u0394REIIIHSS is conferred by REIII, indicating REIII is required for epigenetic stability at MAT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 complete the TSA gradient analysis (Figure 4D). The high resistance of \u0394KHSS (C117: ~3 \u03bcM) is similar to intact MAT, supporting REIII's role in resistance. The inability to re-nucleate after TSA treatment (C116) is consistent with prior literature (Hall et al., 2002) and doesn't undermine the resistance measurement. The conclusion that REIII confers stability (C119) is well-supported by the comparative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "ncRNA-nucleated spreading and WT MAT are sensitive to continuous high temperature, while \u0394KHSS heterochromatin is highly resistant. After transient 38\u00b0C exposure, WT MAT recovers spreading much faster than \u0394REIIIHSS (\u0394t1/2 ~22 hr or ~9-10 generations), indicating REIII is required for efficient recovery and safeguards epigenetic stability against environmental perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C129 present temperature perturbation experiments (Figure 4E-F, Figure 4\u2014figure supplement 2). The differential sensitivity to continuous high temperature (C120-C122) and recovery kinetics (C126-C127) are quantified. The rapid recovery of nucleation but slow recovery of spreading in \u0394REIIIHSS (C125-C126) supports the specific role of REIII in spreading stability. The half-life difference calculation (C127: ~22 hr) provides quantitative support for the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Removal of Pcr1 from \u0394KHSS-OFF has minimal effect on heterochromatin maintenance over ~200 generations, with only a small ON population appearing by ~400 hr. In contrast, removal of Seb1 from \u0394REIIIHSS causes rapid loss of spreading within 24 hr, indicating cenH-spreading requires continuous nucleation via the Seb1 pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C134 present nucleation factor removal experiments (Figure 5). The long-term stability of \u0394KHSS-OFF despite Pcr1 removal (C131-C132, ~200 generations) contrasts with rapid spreading loss in \u0394REIIIHSS seb1-1 (C133, 24 hr). This demonstrates differential requirements for maintenance: REIII-dependent heterochromatin is stable without continuous recruitment, while cenH-dependent spreading requires ongoing nucleation. The conclusion is consistent with prior work (Audergon et al., 2015; Ragunathan et al., 2015).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C8",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "REIII represses histone turnover, and this correlates with epigenetic stability. \u0394KHSS-OFF experiences very low H3 turnover at MAT targets, while \u0394REIIIHSS and \u0394KHSS-ON show near-euchromatic turnover levels. This suggests memory, rather than heterochromatin formation itself, requires repressed histone turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C8, and C135-C140 present RITE experiments (Figure 6B) measuring histone turnover. The differential turnover between \u0394KHSS-OFF (low) and \u0394REIIIHSS (high) at heterochromatic loci (C138-C139), while euchromatic loci show similar turnover across strains (C137), supports the specific role of REIII in repressing turnover. The conclusion that memory requires repressed turnover (C140) is logically supported, though the causal relationship could be further tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C141",
+      "C143",
+      "C144",
+      "C145",
+      "C172"
+    ],
+    "result": "The dominant form of heterochromatin in S. pombe, driven by ncRNA-nucleators, is epigenetically unstable, showing stochastic spreading, dynamic fluctuations, little memory, and low resistance to perturbations. The instability is likely caused by elevated histone turnover. ncRNA-nucleation requires collaboration with accessory elements like REIII to achieve high fidelity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 and C141-C145, C172 synthesize the major findings. The characterization of ncRNA-driven spreading as unstable (C141, C143) is supported by multiple lines of evidence: flow cytometry showing stochastic behavior, FYLM showing dynamic fluctuations, TSA gradients showing weak memory, and temperature experiments showing low resistance. The link to histone turnover (C144) is supported by RITE data. The conclusion that accessory elements are required for high fidelity (C11, C172) integrates the observations about REIII's stabilizing role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C9",
+      "C146",
+      "C147",
+      "C148",
+      "C161",
+      "C165",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "At the MAT locus, REIII restrains the unstable behavior of ncRNA-driven spreading and safeguards epigenetic memory against perturbations. REIII-dependent heterochromatin (\u0394KHSS) shows uniform repression, extraordinary resistance to perturbations, and high memory retention. The division of labor between cenH and REIII is suited for a cell type specification locus requiring robust and stable silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C9, and C146-C148, C161, C165, C168-C171 present the model for REIII function. The characterization of REIII-dependent heterochromatin as stable and resistant (C146-C148) is supported by flow cytometry, FYLM, TSA, and temperature data. The proposed model that cenH stimulates REIII nucleation (C161) and that REIII acts as a failsafe (C170) integrates the observations. While some aspects are speculative (C161, C170), the overall model is well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background claims about heterochromatin spreading: it is a central contributor to gene-repressive structures that are re-established with high positional precision; spreading is sequence-indifferent and propagates marks outward from nucleation sites; the precise extent has critical consequences for cell identity in both mammals and yeasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C12-C20 present established knowledge about heterochromatin spreading, supported by appropriate citations. These provide context for the study but are not novel findings. The claims accurately represent the field's understanding based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background claims about mechanisms of intergenerational inheritance: multiple mechanisms ensure inheritance at nucleation sites in H3K9me/H3K27me systems, including continuous DNA-mediated recruitment, low histone turnover, and read-write feedback loops. Nucleation depends on DNA-based recruitment while spreading depends on sequence-independent propagation requiring read-write feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 present established mechanistic understanding supported by appropriate citations. These provide important context for interpreting the current findings but represent prior knowledge rather than novel results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Background claims about spreading behavior and stability: initial spreading can be stochastic (PEV in flies); fission yeast heterochromatin lacks DNA methylation reinforcement; Epe1 opposes persistence by antagonizing H3K9me retention; S-phase weakens heterochromatin; theoretical and experimental work suggests both bistable and stochastic inheritance models exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C39 present relevant background about spreading behavior and the debate between bistable vs. stochastic models, supported by appropriate citations. This contextualizes the study's contribution to resolving this debate but represents prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Background claims about the MAT locus: it is tightly repressed and a high-fidelity locus capable of bistable behavior; it contains two cis elements (cenH and REIII) that recruit H3K9me through different pathways; cenH uses ncRNA-dependent pathways (RNAi and Seb1-dependent) while REIII recruits factors via Atf1/Pcr1 transcription factors independent of RNA processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 and C72-C78 present established knowledge about MAT locus structure and function, supported by appropriate citations. This provides essential context for the experimental system but represents prior knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "S. pombe does not execute an aging program but dies stochastically, allowing long-term imaging to avoid confounding effects of aging on epigenetic behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 present background about S. pombe biology that justifies the experimental approach, supported by appropriate citations. This is a methodological consideration rather than a result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C142"
+    ],
+    "result": "The linear distance-dependent behavior of ncRNA spreading observed in this study is reminiscent of the continuous spreading model in S. cerevisiae telomeres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C142 draws a comparison to prior work (Renauld et al., 1993; Talbert and Henikoff, 2006). The distance-dependent decline in spreading (Figure 1C) does support this comparison, though the analogy is descriptive rather than mechanistic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Discussion of \u0394KHSS behavior and REIII function: the bimodal behavior is consistent with previously documented bistability; Atf1/Pcr1 are required for heterochromatin establishment in \u0394K cells; REIII does not form significant heterochromatin when placed ectopically; REIII recruits Clr3 which promotes H3K9me3 accumulation required for efficient spreading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C152 integrate current findings with prior work. The consistency with bistable behavior (C149) is supported by citations. The requirement for Atf1/Pcr1 (C150) is demonstrated in this study (34/34 strains, Figure 2\u2014figure supplement 2A,B) and consistent with prior work. The lack of ectopic REIII activity (C151) is shown in Figure 2\u2014figure supplement 1D. The mechanistic link through Clr3 (C152) is supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Discussion of histone turnover: regulation of histone turnover has been linked to epigenetic memory in fission yeast and shown to be low at wild-type MAT; the high turnover in \u0394REIII cells results from unaided cenH-spreading; the \u0394KOFF allele features very low turnover similar to wild-type; the extraordinary memory in \u0394KOFF is likely explained by repressed turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C157 integrate current RITE findings (Figure 6B) with prior work. The link between turnover and memory (C153-C154) is supported by citations. The interpretation that high turnover in \u0394REIII results from cenH-spreading (C155) and that low turnover in \u0394KOFF explains memory (C157) are logical inferences from the data, though the authors appropriately note potential bias in \u0394KOFF isolation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C162",
+      "C163",
+      "C164",
+      "C166",
+      "C167"
+    ],
+    "result": "Mechanistic speculation and model: reduced histone turnover increases retention of H3K9me3 nucleosomes, promoting methylation via Clr4's read-write functionality; H3K9me3 is promoted by Clr3 recruited to REIII; repression of turnover requires cells to first adopt a heterochromatic state; Atf1/Pcr1 are present at REIII even in non-silenced cells; cenH heterochromatin might stabilize recruitment of silencing factors by Atf1/Pcr1; REIII must be active during TSA recovery; REIII plays a minor role under normal circumstances but major role in recovery from perturbation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C158-C159, C160, C162-C164, C166-C167 present mechanistic speculation and model building. While these are logical inferences from the data and consistent with cited literature, they represent hypotheses rather than directly demonstrated mechanisms. The speculation about Clr4's read-write functionality (C158) and stabilization of Atf1/Pcr1 recruitment (C163) are reasonable but not directly tested. The inference about REIII activity during TSA recovery (C164) is supported by resistance data but indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C173"
+    ],
+    "result": "The need for reliable control of cell type specification loci is shared in more complex systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C173 is a general statement about broader implications. While not directly tested in this study, it is a reasonable extrapolation given the conservation of heterochromatin mechanisms and the importance of cell fate specification across eukaryotes.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1562 @@
+{
+  "submission": {
+    "id": "3d7b99d6-36e7-4e31-8c57-d042930f2818",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:58:47.811440Z",
+    "updated_at": "2025-12-01T19:58:47.811440Z"
+  },
+  "content": [
+    {
+      "id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "submission_id": "3d7b99d6-36e7-4e31-8c57-d042930f2818",
+      "content_type": "manuscript",
+      "content_text": "# Sequential neuromodulation of Hebbian plasticity offers mechanism for effective reward-based navigation\n\n## Authors\n\n- Zuzanna Brzosko<sup>1</sup> ([ORCID: 0000-0003-0654-2655](https://orcid.org/0000-0003-0654-2655))\n- Sara Zannone<sup>2</sup> ([ORCID: 0000-0002-7189-2435](https://orcid.org/0000-0002-7189-2435))\n- Wolfram Schultz<sup>1</sup> ([ORCID: 0000-0002-8530-4518](https://orcid.org/0000-0002-8530-4518))\n- Claudia Clopath<sup>2</sup> ([ORCID: 0000-0003-4507-8648](https://orcid.org/0000-0003-4507-8648)) \u2020\n- Ole Paulsen<sup>1</sup> ([ORCID: 0000-0002-2258-5455](https://orcid.org/0000-0002-2258-5455)) \u2020\n\n### Affiliations\n\n1. Department of Physiology, Development and Neuroscience Physiological Laboratory Cambridge United Kingdom\n2. Department of Bioengineering Imperial College London, South Kensington Campus London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nSpike timing-dependent plasticity (STDP) is under neuromodulatory control, which is correlated with distinct behavioral states. Previously, we reported that dopamine, a reward signal, broadens the time window for synaptic potentiation and modulates the outcome of hippocampal STDP even when applied after the plasticity induction protocol (Brzosko et al., 2015). Here, we demonstrate that sequential neuromodulation of STDP by acetylcholine and dopamine offers an efficacious model of reward-based navigation. Specifically, our experimental data in mouse hippocampal slices show that acetylcholine biases STDP toward synaptic depression, whilst subsequent application of dopamine converts this depression into potentiation. Incorporating this bidirectional neuromodulation-enabled correlational synaptic learning rule into a computational model yields effective navigation toward changing reward locations, as in natural foraging behavior. Thus, temporally sequenced neuromodulation of STDP enables associations to be made between actions and outcomes and also provides a possible mechanism for aligning the time scales of cellular and behavioral learning.\n\n## Introduction\n\nSpike timing-dependent plasticity (STDP) is a form of Hebbian learning that depends on the order and precise timing of presynaptic and postsynaptic spikes (Gerstner et al., 1996; Markram et al., 1997; Bi and Poo, 1998; Song et al., 2000). STDP is a computationally attractive mechanism that has been implicated in several forms of learning and memory including competitive Hebbian learning (Song et al., 2000; Clopath et al., 2010). Nevertheless, from a theoretical perspective, two properties complicate its use as a general mechanistic explanation of behavioral learning. Firstly, in contrast to many forms of behavioral learning, conventional STDP is unsupervised, that\u00a0is, the resulting plasticity is not informed by the outcome of the activity (Hertz et al., 1991; Gerstner et al., 2014). Secondly, STDP relies on shorter time scales than most behaviors. Given that STDP is under neuromodulatory influence (Seol et al., 2007; Zhang et al., 2009; Pawlak et al., 2010), here we sought to determine whether behaviorally relevant activation of different neuromodulatory signals could address both of these issues in hippocampus-dependent learning.\n\nA wealth of experimental data has implicated the hippocampus with its constituent place cells (O'Keefe and Dostrovsky, 1971; O'Keefe and Nadel, 1978) in spatial learning and memory in non-human animals (Morris et al., 1982) as well as humans (Ekstrom et al., 2003). Hippocampal synaptic plasticity (Bliss and Lomo, 1973; Bliss and Collingridge, 1993), including STDP (Bi and Poo, 1998; Debanne et al., 1998; Kwag and Paulsen, 2009; Andrade-Talavera et al., 2016), is believed to mediate the encoding of spatial memories (Morris et al., 1986; Tsien et al., 1996). Different neuromodulatory inputs into the hippocampus are active during distinct behavioral states. In particular, whilst exploratory behavior coincides with an increased cholinergic tone (Kametani and Kawamura, 1990; Marrosu et al., 1995; Thiel et al., 1998), rewards are associated with activity of dopaminergic neurons (Schultz et al., 1997; Suri and Schultz, 1999; Pan et al., 2005). Importantly, we recently demonstrated that dopamine can convert hippocampal timing-dependent long-term depression (t-LTD) into timing-dependent long-term potentiation (t-LTP) when applied after a delay of minutes (Brzosko et al., 2015), thus providing a possible mechanism for a supervisory signal to associate specific experiences with delayed rewards in hippocampus-dependent reward learning. Here, we set out to investigate the effect of cholinergic and subsequent dopaminergic activity on hippocampal STDP. Moreover, we wanted to develop and test an ethologically relevant computational model of reward-based spatial navigation based on this temporally sequenced neuromodulation of STDP. Specifically, we wished to establish whether the temporal characteristics of cholinergic and dopaminergic modulation of hippocampal synaptic plasticity can explain key aspects of adaptive foraging behavior in a changing environment such as exploration and reward-seeking navigation, including unlearning of previously exploited reward locations.\n\n## Results and discussion\n\nTo examine the physiological rules governing hippocampal STDP, we first wanted to investigate the effect of cholinergic modulation on the induction of synaptic plasticity. As before (Brzosko et al., 2015), we monitored excitatory postsynaptic potentials (EPSPs) evoked by extracellular stimulation of the Schaffer collateral pathway during whole-cell recordings of CA1 pyramidal cells in mouse horizontal slices (postnatal days 12\u201318; Materials and methods). Plasticity was induced in current clamp mode using an induction protocol consisting of 100 pairings of a single EPSP followed by a single postsynaptic spike (pre-before-post pairing) or a single postsynaptic spike followed by a single EPSP (post-before-pre pairing) at 0.2 Hz. Consistent with previous studies (Bi and Poo, 1998; Zhang et al., 2009; Edelmann and Lessmann, 2011; Brzosko et al., 2015), in control condition the pre-before-post pairing with a time interval between the presynaptic and postsynaptic activity (\u0394t) of 10 ms induced t-LTP (+ Pairing \u2013 ACh: 135 \u00b1 7%, t(7) = 4.7, p=0.0022 vs. 100%, n\u00a0=\u00a08; Figure 1a,b; Figure 1\u2014source data 1). However, when acetylcholine (1 \u03bcM) was bath-applied for 10 min from 1 to 2 min before and during the same pre-before-post pairing in interleaved experiments, robust t-LTD was induced (+ Pairing + ACh: 63 \u00b1 8%, t(5) = 4.9, p=0.0046 vs. 100%, n\u00a0=\u00a06; t(12) = 6.6, p<0.0001 vs. + Pairing \u2013 ACh; Figure 1a,b; Figure 1\u2014source data 1). To exclude the possibility that acetylcholine by itself could induce LTD in the test pathway, control experiments with ongoing synaptic stimulation over 60 min at 0.2 Hz, but without pairing with postsynaptic action potentials, were performed. In accordance with earlier reports (Sugisaki et al., 2011), application of acetylcholine for 10 min had no significant effect on the basal Schaffer collateral transmission (\u2013 Pairing + ACh: 90 \u00b1 6%, t(6) = 1.8, p=0.1220 vs. 100%, n\u00a0=\u00a07; Figure 1a,b; Figure 1\u2014source data 1). Since muscarinic acetylcholine receptors are highly expressed in the hippocampus (Levey et al., 1995), the specificity of this cholinergic modulation of STDP was assessed using the muscarinic acetylcholine receptor antagonist atropine (100 nM). The application of atropine prevented acetylcholine-facilitated t-LTD, resulting in significant t-LTP instead (\u0394t =+10 ms; +ACh: 63 \u00b1 9%, t(4) = 4.1, p=0.0146 vs. 100%, n\u00a0=\u00a05; +ACh\u00a0+ Atropine: 141 \u00b1 8%, t(5) = 5.1, p=0.0037 vs. 100%, n\u00a0=\u00a06; t(9) = 6.5, p<0.0001 vs. +ACh; Figure 1c,d; Figure 1\u2014source data 1). This implies that the facilitation of t-LTD was due to specific muscarinic acetylcholine receptor activation. Input-specific t-LTD was also induced when acetylcholine was applied during the pairing protocol with \u0394t\u00a0=\u00a00 ms (Control: 160 \u00b1 17%, t(4) = 3.6, p=0.0238 vs. 100%, n\u00a0=\u00a05; + ACh: 64 \u00b1 13%, t(7) = 2.9, p=0.0245 vs. 100%, n\u00a0=\u00a08; t(4) = 5.9, p=0.0041 vs. Control; Figure 1e; Figure 1\u2014source data 1; unpaired control pathway not shown) and \u0394t = \u221220 ms (Control: 66 \u00b1 10%, t(6) = 3.5, p=0.0124 vs. 100%, n\u00a0=\u00a07; + ACh: 63 \u00b1 12%, t(5) = 3.0, p=0.0292 vs. 100%, n\u00a0=\u00a06; t(5) = 0.7, p=0.5265 vs. Control; Figure 1e; Figure 1\u2014source data 1). However, pairing protocols with spike timing interval extended to\u00a0\u00b150 ms during application of acetylcholine did not lead to a significant change in synaptic weights (\u0394t =+50 ms: 84 \u00b1 11%, t(6) = 1.5, p=0.1852 vs. 100%, n\u00a0=\u00a07; \u0394t = \u221250 ms: 113 \u00b1 15%, t(5) = 0.8, p=0.4409 vs. 100%, n\u00a0=\u00a06; Figure 1e; Figure 1\u2014source data 1). Together, our results suggest that the activation of muscarinic acetylcholine receptors during the coordinated spiking activity biases STDP toward synaptic depression at the Schaffer collateral pathway. Hence, both dopamine (Brzosko et al., 2015) and acetylcholine (Figure 1) modulate synaptic plasticity to yield synaptic potentiation (Figure 1\u2014figure supplement 1a,c; Figure 1\u2014source data 2; Brzosko et al., 2015) and depression (Figure 1e), respectively, irrespective of the precise spike order during pairing. Each of the two neuromodulators effectively converts a spike timing-dependent learning rule into a correlation-based learning rule but they do so in opposite directions. We also investigated the effect of co-application of acetylcholine and dopamine. We found that co-activation of dopaminergic and cholinergic receptors results in synaptic depression with\u00a0post-before-pre\u00a0pairing and leads to an initial synaptic depression followed by a gradual reversal of the synaptic weights back toward baseline with\u00a0pre-before-post\u00a0pairing (Figure 1\u2014figure supplement 1b,c; Figure 1\u2014source data 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/27756/elife-27756-fig1-v2.jpg)\n\n**Figure 1.:** (a) In control condition, the pre-before-post pairing protocol with \u0394t =+10 ms induced t-LTP (red), whereas in the presence of 1 \u03bcM acetylcholine (ACh), the same pairing protocol induced t-LTD (black). In the absence of the pairing protocol, ACh had no effect on baseline EPSPs (blue). Traces show an EPSP before (1) and 40 min after pairing (2) for each condition. (b) Summary of results (mean \u00b1 s.e.m.). (c) Application of muscarinic ACh receptor antagonist, 100 nM atropine, at the beginning of the recordings prevented ACh-facilitated t-LTD (\u0394t =+10 ms; black) and pre-before-post pairing resulted in significant t-LTP (red). Traces are presented as in a. (d) Summary of results. (e) Summary of the STDP induction with various spike timing intervals (\u0394t in ms) in control condition (\u2212 ACh; red) and in the presence of ACh (+ ACh; black). Each data point is the group mean percentage change from baseline of the EPSP slope. Error bars represent s.e.m. Significant difference (*p<0.05, **p<0.01, ***p<0.001) compared with the baseline or between the indicated two groups (two-tailed Student\u2019s t-test). The total numbers of individual cells (blue data points) are shown in parentheses.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27756/elife-27756-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Dopamine (DA) biases STDP toward potentiation: (ai) post-before-pre pairing protocol with \u0394t = \u221220 ms (data from Figure 1e in Brzosko et al., 2015) and (aii) pre-before-post pairing protocol with \u0394t =+10 ms. Traces show an EPSP before (1) and 40 min after pairing (2). (b) Co-application of DA and acetylcholine (ACh) yields depression: (bi) post-before-pre pairing protocol with \u0394t = \u221220 ms and (bii) pre-before-post pairing protocol with \u0394t =+10 ms produces initial synaptic depression which reverts back to baseline. Traces are presented as in a. (c) Summary of results. Each data point is the mean percentage change from baseline of the EPSP slope. Error bars represent s.e.m. Significant difference (*p<0.05, **p<0.01) compared with the baseline (two-tailed Student\u2019s t-test). The total numbers of individual cells are shown in parentheses.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27756/elife-27756-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) In control condition, the pre-before-post pairing protocol with \u0394t =\u00a0+10 ms induced t-LTP (red). Application of 100 nM acetylcholine (ACh) prevented development of significant t-LTP (blue). Traces show an EPSP before (1) and 40 min after pairing (2). (b) Summary of results. Error bars represent s.e.m. Significant difference (*p<0.05) compared with the baseline or between the indicated two groups (two-tailed Student\u2019s t-test). The total numbers of individual cells (blue data points) are shown in parentheses.\n\nWhile several previous studies using plasticity induction protocols other than STDP showed that acetylcholine, primarily via activation of muscarinic M1 receptors, facilitates hippocampal LTP (Boddeke et al., 1992; Huerta and Lisman, 1995; Ovsepian et al., 2004; Shinoe et al., 2005; Buchanan et al., 2010; Connor et al., 2012; Digby et al., 2012; Dennis et al., 2016), acetylcholine has also been found to induce LTD, particularly at higher concentrations (Scheiderer et al., 2006; Volk et al., 2007; Dickinson et al., 2009; Jo et al., 2010; Kamsler et al., 2010) \u2014 likely through the activation of a number of muscarinic receptor subtypes (Teles-Grilo Ruivo and Mellor, 2013). Thus, the polarity of acetylcholine-modulated plasticity can depend on the concentration of agonist used and specific cholinergic receptor subtype activated (M\u00fcller et al., 1988; Auerbach and Segal, 1996; Dennis et al., 2016). Under our experimental conditions, a lower concentration of acetylcholine (100 nM) during pre-before-post pairing did not result in synaptic depression, but it prevented significant potentiation from developing (\u0394t =+10 ms; \u2212 ACh: 162 \u00b1 16%, t(5) = 3.8, p=0.0127 vs. 100%, n\u00a0=\u00a06; + ACh: 113 \u00b1 9%, t(9) = 1.4, p=0.1888 vs. 100%, n\u00a0=\u00a010; t(14) = 2.9, p=0.0119 vs. \u2212 ACh; Figure 1\u2014figure supplement 2; Figure 1\u2014source data 3). Our findings are consistent with previous reports using STDP induction protocols, showing that cholinergic receptor activation enables t-LTD in the visual cortex (Seol et al., 2007) and facilitates t-LTD in the dorsal cochlear nucleus (Zhao and Tzounopoulos, 2011), but appear to contrast with results from studies in the rat hippocampus (Adams et al., 2004; Sugisaki et al., 2011, 2016).\n\nA crucial aspect of foraging involves reward-seeking behavior. Most reinforcement learning models rely on the ability of the reinforcing signal to strengthen active synapses, also when it arrives after the activity has occurred (Sutton and Barto, 1981). Therefore, we next wanted to extend our previous finding that the reinforcing signal dopamine can retroactively convert t-LTD into t-LTP (Brzosko et al., 2015) by investigating whether dopamine also modulates acetylcholine-facilitated t-LTD. Bath-application of atropine (100 nM) to block muscarinic acetylcholine receptors immediately after acetylcholine washout did not affect the expression of acetylcholine-facilitated t-LTD (\u0394t =+10 ms; 79 \u00b1 9%, t(9) = 2.4, p=0.0399 vs. 100%, n\u00a0=\u00a010; Figure 2a,c; Figure 2\u2014source data 1). Atropine also did not significantly affect baseline EPSPs (83 \u00b1 8%, t(6) = 2.2, p=0.0747 vs. 100%, n\u00a0=\u00a07; Figure 2c; Figure 2\u2014source data 1). Notably, when, in the presence of atropine (100 nM) to prevent sustained muscarinic receptor activation, dopamine (100 \u03bcM) was added to the superfusion fluid, for 10\u201312 min starting within 1\u00a0min after the pairing protocol in interleaved experiments, it converted acetylcholine-facilitated t-LTD into t-LTP (\u0394t =+10 ms; ACh + Atropine + DA: 145 \u00b1 15%, t(6) = 3.0, p=0.0244 vs. 100%, n\u00a0=\u00a07; t(15) = 4.0, p=0.0011 vs. ACh + Atropine; Figure 2a,c; Figure 2\u2014source data 1). Similarly, the adenylyl cyclase activator forskolin (50 \u03bcM), applied for 10\u201312 min immediately after the pairing protocol with \u0394t =+10 ms, also resulted in robust conversion of acetylcholine-facilitated t-LTD into t-LTP, emulating the effect of dopamine (143 \u00b1 17%, t(6) = 2.5, p=0.0447 vs. 100%, n\u00a0=\u00a07; Figure 2b,c; Figure 2\u2014source data 1). The magnitudes of the resultant synaptic potentiation in the current study (Figure 2a,b; Figure 2\u2014source data 1) are comparable to those of the dopamine-induced and forskolin-induced conversion of t-LTD into t-LTP in our previous study (\u0394t = \u221220 ms; + DA: 154 \u00b1 10%, t(10) = 5.2, p=0.0004 vs. 100%, n\u00a0=\u00a011; + Forskolin: 167 \u00b1 17%, t(6) = 3.9, p=0.0078 vs. 100%, n\u00a0=\u00a07; Figure 4a,b in Brzosko et al., 2015). These results show that dopamine can convert not only post-before-pre\u00a0pairing-induced t-LTD (Brzosko et al., 2015) but also acetylcholine-facilitated pre-before-post\u00a0pairing-induced t-LTD into t-LTP, when acting within a few minutes following the induction protocol. The effect of dopamine is therefore irrespective of the precise spike order and is mediated at least in part via the activation of the cyclic adenosine monophosphate (cAMP) signaling cascade. In contrast, acetylcholine did not have an effect on plasticity when applied after the induction protocol (Figure 2\u2014figure supplement 1; Figure 2\u2014source data 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/27756/elife-27756-fig2-v2.jpg)\n\n**Figure 2.:** (a) Application of muscarinic acetylcholine receptor antagonist, 100 nM atropine, following acetylcholine (ACh; 1 \u03bcM) washout after the pre-before-post pairing protocol with \u0394t =\u00a0+10 ms did not affect the development of ACh-facilitated t-LTD (black). Dopamine (DA; 100 \u03bcM) applied, together with atropine, immediately after ACh washout at the end of the same pairing protocol, converted ACh-facilitated t-LTD into t-LTP (red). Traces show an EPSP before (1) and 40 min after pairing (2) in the two conditions. (b) Forskolin (50 \u03bcM), applied together with atropine, converted ACh-facilitated t-LTD into t-LTP, mimicking the effect of DA. Traces are presented as in a. (c) Summary of results from a and b. In the absence of the pairing protocol, atropine had no significant effect on baseline EPSPs (blue). Error bars represent s.e.m. Significant difference (*p<0.05) compared with the baseline or between the indicated two groups (two-tailed Student\u2019s t-test). The total numbers of individual cells (blue data points) are shown in parentheses.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27756/elife-27756-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Application of acetylcholine after the pre-before-post pairing protocol with \u0394t =\u00a0+10 ms did not affect the development of t-LTP (n\u00a0=\u00a05). Traces show an EPSP before (1) and 40 min after (2) pairing. Error bars represent s.e.m.\n\nAt the synaptic level, our data emphasize three crucial features of neuromodulation of hippocampal STDP: (i) neuromodulation enables correlation-based synaptic plasticity, with dopamine promoting potentiation and acetylcholine facilitating depression (Figure 1); (ii) synaptic weights are not only graded in magnitude but also\u00a0can shift polarity by subsequent neuromodulation (Figures 1 and 2; Brzosko et al., 2015); and (iii) the conversion of synaptic depression into potentiation by dopamine can occur even after extended delay (Figure 2; Brzosko et al., 2015). These characteristics suggest that sequential neuromodulation of hippocampal STDP is behaviorally relevant (Figure 3a). We therefore wanted to test possible functional implications of our newly uncovered synaptic learning rule in a computational model of hippocampus-dependent reward-based navigation (Figure 3bi). We developed a network model with place cells that code for the location of an agent in its environment. These place cells projected onto action neurons that were part of a winner-takes-all network (Figure 3bii) and dictated the speed and direction of the agent (Figure 3biii, biv; Foster et al., 2000; Vasilaki et al., 2009; Fr\u00e9maux et al., 2010, 2013; Materials and methods). The synaptic connections between the place cells and the action neurons were subject to STDP. In test simulations (Figure 4a: + ACh), they followed our novel sequentially neuromodulated synaptic learning rule, with synaptic weights being updated in all trials. The weights were potentiated when reward, signaled via dopamine (Schultz et al., 1997; Suri and Schultz, 1999; Pan et al., 2005), was found before the end of a trial but they were depressed when reward was not found, reflecting the effect of the increased cholinergic tone associated with exploration (Kametani and Kawamura, 1990; Marrosu et al., 1995; Thiel et al., 1998). These test simulations were compared against a second set of simulations (Figure 4a: \u2212 ACh), with reward-modulated STDP following a positive symmetric window (Figure 3bi), gated by dopamine and with\u00a0no interaction with acetylcholine,\u00a0as\u00a0in previous computational work (Florian, 2007; Izhikevich, 2007; Legenstein et al., 2008). In this control set of simulations, the weights were potentiated when the reward was found before the end of a trial, but they were unchanged otherwise. Consistent with previous reward-modulated STDP models (Fr\u00e9maux et al., 2010, 2013), dopaminergic potentiation following a successful trial, in which the agent found the reward, enabled the agent to progressively develop effective navigation toward the reward location (trials 1\u201320; Figure 4ai,aii). During this initial reward learning phase, implementing the sequential modulation by acetylcholine and dopamine in the model led to a modest improvement in learning compared to control simulations (reward discovery: Figure 4aiii; successful trials: Figure 4aiv; time to reward: Figure 4av). The functional advantage of cholinergic depression became evident in the second phase of the simulation, when the reward location was moved to the opposite corner of the open field (Figure 4bi). In this case, cholinergic depression enabled unlearning of the previously rewarded location (Figure 4bii), which led to enhanced exploration (Figure 4\u2014figure supplement 1), thereby facilitating subsequent learning of the new reward location (Figure 4biii\u2013v). This is demonstrated by the large difference in the number of visits to the old reward location between the two sets of simulations (trials 21\u201340; + ACh vs. \u2013 ACh; Figure 4bii). The agent discovered the new reward location in fewer trials (Figure 4biii), exhibited a higher percentage of successful simulations over successive trials (Figure 4biv), and showed progressive reduction in the average time and trajectory length to reward in successful simulations (Figure 4bi,bv).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/27756/elife-27756-fig3-v2.jpg)\n\n**Figure 3.:** (a) Schematic diagram of synaptic and behavioral timescales in reward-related learning.\u00a0During Exploration, the activity-dependent modification of synaptic strength due to spike timing-dependent plasticity (STDP) depends on the coordinated spiking between presynaptic and postsynaptic neurons on a millisecond time scale. STDP develops gradually on a scale of minutes. Increased cholinergic tone (ACh) during Exploration facilitates synaptic depression. When Reward, signaled via dopamine (DA), follows Exploration with a Delay of seconds to minutes, synaptic depression is converted into potentiation. (b) Computational\u00a0model.\u00a0(bi) Symmetric STDP learning windows incorporated in the model, where acetylcholine biases STDP toward synaptic depression, while subsequent application of dopamine converts this depression into potentiation. (bii) The position of the agent in the field, x(t), is coded by place cells and its moves are determined by the activity of action neurons. STDP is implemented in the feed-forward connections between place cells and action neurons. Place cells become active with the proximity of the agent (active neurons in red: the darker, the higher their firing rate). Place cells are connected to action neurons through excitatory synapses (wfeed: the darker, the stronger the connection). Action neurons are connected with each other: recurrent synaptic weights (wlat) are excitatory (red) when action neurons have similar tuning, or inhibitory (blue) otherwise. Thus, the activation of action neurons is dependent on both the feed-forward and recurrent connections. (biii) Each action neuron j codes for a different direction aj (large arrow\u2019s direction) and has a different firing rate \u03c1j (large arrow\u2019s color: the darker, the higher the firing rate). The action to take a(t) (black arrow) is the average of all directions, weighted by their respective firing rate. (biv) The agent takes action a(t). Therefore, it moves to x(t + \u0394t) = x(t) + a(t).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/27756/elife-27756-fig4-v2.jpg)\n\n**Figure 4.:** (a) Learning of an initial reward location (trials 1\u201320; 1000 simulations in each trial) shows a modest improvement in learning when cholinergic depression is included in the model. (i) Example trajectories. The agent starts from the center of the open field (red dot) and learns the reward location (closed black circle) with (+ ACh; brown) and without (\u2212 ACh; green) cholinergic depression built into the model. Trials are coded from light to dark, according to their temporal order (early = light, late = dark). (ii) Color scheme. (iii) Reward discovery. The graph shows percent cumulative distribution of trials in which the reward location is discovered for the first time. (iv) Learning curve presented as a percentage of successful simulations over successive trials. (v) Average time to reward in each successful trial. Unsuccessful trials, in which the agent failed to find the reward, were excluded. (vi) Percentage of successful simulations in trial 5, under conditions with different magnitudes of dopaminergic effect (learning windows in the top-left corner). Decreasing the magnitude of dopaminergic potentiation significantly affects learning (p<0.001, two-sample Student\u2019s t-test: Small vs. Medium and Small vs. Large). Under Medium and Large conditions, the agent performs similarly most likely due to a saturation effect (p>0.05, two-sample Student\u2019s t-test: Medium vs. Large). (b) Learning of a displaced reward location is facilitated when cholinergic depression is included in the model. (i) Example trajectories (trials 21\u201340; 1000 simulations in each trial). The agent learns a novel reward location (closed circle; previously exploited reward = open circle). Trajectories presented as in ai. Comparison of control (\u2013 ACh) and test (+ ACh) simulations: (ii) visits to previous reward location (%); (iii) trial number at novel reward discovery; (iv) successful reward collection over successive trials (%); (v) average time to reward over trials. (vi) Percentage of visits to the old reward location in trial 25, under conditions with different magnitudes of cholinergic depression (learning windows in the top-right corner). Increasing the magnitude of acetylcholine effect yields faster unlearning (p<0.001, two-sample Student\u2019s t-test: Small vs. Medium, Medium vs. Large and Small vs. Large). The graphs (biii-bv) are presented as in a. The shaded area (aiv-v and bii, biv-v) represents the 95% confidence interval of the sample mean.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27756/elife-27756-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The mean firing rate of place cells (average over time and simulations) mapped onto the open field. When the reward location is displaced in Trial 21, in both test (+ ACh, right) and control (\u2212 ACh, left) simulations, agents still navigate toward the initial reward location (warmer colors in the upper right quadrant). By Trial 26, cholinergic depression in test simulations allows unlearning of the old reward location, which results in transient enhancement of exploration compared to control simulations. By Trial 31, agents with acetylcholine-modulated plasticity are able to successfully navigate to the novel goal area (lower left quadrant) whilst in control simulations most agents are not.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27756/elife-27756-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a) The agents are subject to the same learning paradigm as in Figure 4. Small magnitude of dopamine effect slows down learning and decreases performance. (ai) The parameters used for Small, Medium and Large amplitudes of dopaminergic effect are specified in the legend; darker colors correspond to larger amplitudes. (aii) Learning curve presented as a percentage of successful simulations over successive trials (trials 1\u201320; 1000 simulation). Decreasing the magnitude of dopamine effect leads to slower learning. In Medium and Large conditions, the agent\u2019s performance is similar most likely due to a saturation effect. (b) Learning of a displaced reward location is only marginally slower in Small condition. (bi) Over the trials, the percentage of visits to the previously rewarded location decreases for Medium and Large conditions (trials 21\u201340; 1000 simulation). However, Small condition agents present an initial advantage due to weaker learning in the first phase of the experiment. (bii) Learning of the novel reward location is slightly faster for Medium and High conditions. The shaded area (aii and bi-ii) represents the 95% confidence interval of the sample mean.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/27756/elife-27756-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (a) The agents are subject to the same learning paradigm as in Figure 4. Difference in the magnitude of cholinergic effect does not affect performance. (ai) The parameters used for Small, Medium and Large magnitudes of acetylcholine effect are specified in the legend; darker colors correspond to larger magnitudes of cholinergic effect. (aii) Learning curve presented as a percentage of successful simulations over successive trials (trials 1\u201320; 1000 simulation). The initial difference in performance is due to reduced speed, a consequence of the online depression. (b) Learning of a displaced reward location becomes more efficient with larger magnitudes of acetylcholine effect. (bi) The percentage of visits to the previously rewarded location is lower for conditions with larger magnitudes of acetylcholine effect (trials 21\u201340; 1000 simulation). (bii) Learning of the novel reward location is also faster for Medium and Large conditions. The shaded area (aii and bi-ii) represents the 95% confidence interval of the sample mean.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/27756/elife-27756-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (a) The agents are subject to the same learning paradigm as in Figure 4. Learning is successful only when the integral of the STDP window is positive. (ai) Learning windows with negative, zero and positive integrals. Parameters and color scheme are as specified at the top. (aii) Learning curve presented as a percentage of successful simulations over successive trials (trials 1\u201320; 1000 simulations). Only the agents using a learning rule with a net positive integral of the STDP window learn successfully. (b) Learning of a displaced reward location is not achieved successfully by any of the STDP learning rules. (bi) The percentage of visits to the previous reward area is low only for agents with a negative integral of the STDP window (trials 21\u201340; 1000 simulations). This is because unlearning occurred in the first phase of the experiments. (bii) Agents with a positive integral of the STDP window only partially learn the new reward location, but do not effectively unlearn the previous reward location (as shown in bi). Agents with a negative integral of the STDP window unlearn both the old and the new reward areas. The shaded area (aii and bi-ii) represents the 95% confidence interval of the sample mean.\n\nTo formulate testable predictions of the relationship between cellular neuromodulation and behavior, we proceeded to vary the degree of neuromodulation in our model. Decreasing the magnitude of dopaminergic potentiation resulted in slower learning, while increasing it did not produce any statistically significant difference (Figure 4avi and Figure 4\u2014figure supplement 2), probably due to a saturation effect. Altering the magnitude of cholinergic depression revealed a clear effect on unlearning performance, where increasing the magnitude of acetylcholine effect yielded faster unlearning (Figure 4bvi and Figure 4\u2014figure supplement 3).\n\nOur computational model bears resemblance to conventional reinforcement learning models (Sutton and Barto, 1998), in which the active connections carry a trace making them eligible for learning changes should a reinforcing event (\u2018reward\u2019) occur later in time. This concept of \u2018eligibility trace\u2019 is at the core of network models of reinforcement learning: it is both necessary and sufficient to learn causal associations between synaptic activity and delayed outcomes (Florian, 2007; Izhikevich, 2007; Legenstein et al., 2008). Not only do our experimental results offer evidence for these mechanisms, which previously had been only theorized, but they also reveal novel characteristics with important computational implications. Firstly, neuromodulation converts classical STDP into a correlation-based rule, with same-sign weight changes for both pre-before-post and post-before-pre pairings (Brzosko et al., 2015; this paper). This feature is incorporated into our model where, rather than the exact spike timing, it is the integral of the learning window (Figure 4\u2014figure supplement 4) that determines whether the agent learns (positive window) or unlearns (negative window). Secondly, cholinergic depression allows the agent to explicitly learn from unrewarded trials (this paper). This leads to a significant computational advantage. Our sequentially neuromodulated synaptic learning rule (test simulations), which allows the agent to learn from both rewarded (+ ACh + DA) and unrewarded actions (+ ACh \u2013 DA), outperformed both the model with symmetric dopamine-modulated learning window (\u2013 ACh + DA; Figure 3bi) and the standard reward modulated STDP model (Figure 4\u2014figure supplement 4) when the reward location was moved. Incorporating cholinergic depression allowed the agent to appropriately shift between learning and unlearning in a task-relevant manner. Several computational functions have been previously suggested for acetylcholine (Doya, 2002; Yu & Dayan, 2005; Hasselmo, 1999). Our results suggest a role for acetylcholine that is complementary to that of dopamine and particularly relevant to changing environments. Indeed, as demonstrated here, a simple feed-forward network obeying cholinergic-dopaminergic sequential neuromodulation of STDP is sufficient to guide an agent to changing reward locations as required during natural foraging behavior (Charnov, 1976; Stephens and Krebs, 1986).\n\nIn conclusion, our findings demonstrate that muscarinic acetylcholine receptor activation during coordinated spiking activity biases STDP toward synaptic depression. Meanwhile, the reward signal dopamine, via activation of the cAMP pathway, converts both conventional t-LTD (Brzosko et al., 2015) and acetylcholine-facilitated synaptic depression into potentiation. Incorporating this synaptic learning rule into a simple feed-forward neural network model successfully guides the agent towards changing reward locations similar to natural foraging behavior. We suggest that sequential neuromodulation of synaptic plasticity provides a robust biological mechanism that might be used in reward-based navigation and other hippocampus-dependent functions.\n\n## Materials and methods\n\n### Electrophysiology experiments\n\n#### Animals\n\nThe research was performed under the Animals (Scientific Procedures) Act 1986 Amendment Regulations 2012 following ethical review by the University of Cambridge Animal Welfare and Ethical Review Body (AWERB). The animal procedures were authorised under Project licence PPL 70/8892.\n\nWild-type mice (C57BL/6; RRID:IMSR_JAX:000664; postnatal days 12\u201318; from Harlan, Bicester, UK or Central Animal Facility, Cambridge University) of both sexes were housed on a 12 hr light/dark cycle at 19\u201323\u00b0C, with water and food ad libitum. Caution was taken to minimize stress and the number of animals used in experiments.\n\n#### Slice preparation\n\nMice were anesthetized with isoflurane and decapitated. The brain was rapidly removed, glued to the stage of a vibrating microtome (Leica VT 1200S, Leica Biosystems, Wetzlar, Germany) and immersed in ice-cold artificial cerebrospinal fluid (ACSF) containing the following (mM): 126 NaCl, 3 KCl, 26.4 NaH2CO3, 1.25 NaH2PO4, 2 MgSO4, 2 CaCl2, and 10 glucose. The ACSF solution, with pH adjusted to 7.2 and osmolarity to 270\u2013290 mOsm\u00a0L\u22121, was continuously bubbled with carbogen gas (95% O2/5% CO2). The brain was sectioned into 350-\u03bcm-thick horizontal slices. The slices were incubated in ACSF at room temperature in a submerged-style storage chamber for at least 1 hr. For recordings (1\u20137 hr after slicing), individual slices were transferred to an immersion-type recording chamber, perfused with ACSF (2 mL\u00a0min\u22121) at 24\u201326\u00b0C.\n\n#### Electrophysiology\n\n##### Whole-cell recordings\n\nWhole-cell patch-clamp recordings were made from CA1 pyramidal neurons (located adjacent to the stratum oriens). For stimulation of Schaffer collaterals, a monopolar stimulation electrode was placed in the stratum radiatum of the CA1 subfield. The hippocampal subfields were visually identified using infrared differential interference contrast (DIC) microscopy. Patch pipettes (resistance: 4\u20138 M\u03a9) were made from borosilicate glass capillaries (0.68 mm inner diameter, 1.2 mm outer diameter), pulled using a P-97 Flaming/Brown micropipette puller (Sutter Instruments Co., Novato, California, USA). The internal solution of patch pipettes was (mM): 110 potassium gluconate, 4 NaCl, 40 HEPES, 2 ATP-Mg, 0.3 GTP (pH adjusted with 1 M KOH to 7.2, and osmolarity with ddH2O to 270 mOsm\u00a0L\u22121). The liquid junction potential was not corrected for. Cells were accepted for experiment only if the resting membrane potential at the start of the recording was between \u221255 and \u221270 mV. Membrane potential was held at \u221270 mV throughout further recording by direct current application via the recording electrode. At the beginning of each recording, all cells were tested for regular spiking responses to positive current steps \u2013 characteristic of pyramidal neurons.\n\n##### Stimulation protocol\n\nSingle excitatory postsynaptic potentials (EPSPs) of amplitude between 3 and 8 mV were evoked at 0.2 Hz by adjusting the magnitude of direct current pulses (stimulus duration 50 \u03bcs, intensity 100 \u03bcA-1 mA). After a stable EPSP baseline period of at least 10 min, a pairing protocol was applied consisting of a single presynaptic EPSP evoked by stimulation of Schaffer collaterals and a single postsynaptic action potential elicited with the minimum effective somatic current pulse (1\u20131.8 nA, 3 ms) via the recording electrode, repeated 100 times at 0.2 Hz. Spike-timing intervals (\u2206t in ms) were measured between the onset of the EPSP and the onset of the action potential. The EPSPs were monitored for at least 40 min after the end of the pairing protocol. Presynaptic stimulation frequency remained constant throughout the experiment.\n\n#### Data acquisition and data analysis\n\nVoltage signals were low-pass filtered at 2 kHz using an Axon Multiclamp 700B amplifier (Molecular Devices, Sunnyvale, California, USA). Data were acquired at 5 kHz via an ITC18 interface board (Instrutech, Port Washington, New York, USA), transmitting to a Dell computer running the Igor Pro software (RRID:SCR_000325; WaveMetrics, Lake Oswego, Oregon, USA). All experiments were carried out in the current clamp (\u2018bridge\u2019) mode. Series resistance was monitored (10\u201315 M\u03a9) and compensated for by adjusting the bridge balance. Data were discarded if series resistance changed by more than 30%. Data were analyzed using Igor Pro. EPSP slopes were measured on the rising phase of the EPSP as a linear fit between the time points corresponding to 25\u201330% and 70\u201375% of the peak amplitude. For statistical analysis, the mean EPSP slope per minute of the recording was calculated from 12 consecutive sweeps and normalized to the baseline. Normalized ESPS slopes from the last 5 min of the baseline (immediately before pairing) and from the last 5 min of the recording (35\u201340 min or 55\u201360 min after pairing) were averaged. The magnitude of plasticity, as an indicator of synaptic change, was defined as the average EPSP slope after pairing expressed as a percentage of the average EPSP slope during baseline.\n\n#### Drugs\n\nThe following drugs were used: acetylcholine chloride 1 \u03bcM or 100 nM, atropine 100 nM, dopamine hydrochloride 20 \u03bcM, forskolin 50 \u03bcM. All drugs (purchased from Sigma-Aldrich, Dorset, United Kingdom; or Tocris Bioscience, Bristol, United Kindgom) were bath-applied through the perfusion system by dilution of concentrated stock solutions (prepared in water or DMSO) in ACSF.\n\n#### Statistical analysis\n\nStatistical comparisons were made using one-sample or two-sample two-tailed Student\u2019s t-test as appropriate, with a significance level of \u03b1\u00a0=\u00a00.05. Data are presented as mean \u00b1 s.e.m. Significance levels are indicated by *p<0.05, **p<0.01, ***p<0.001.\n\n### Computational modeling\n\nAll computer modeling was done in Matlab (RRID:SCR_001622). The code will be posted on ModelDB after publication. The navigation model is based on a one-layer network (Fr\u00e9maux et al., 2013). The place cells in the input layer code for the position of the agent in the environment. They project to the output layer of action neurons. Each one of the action neurons represents a different direction. The lateral connectivity in this layer ensures that the action neurons compete with each other in a winner-take-all scheme. Their activity is then used to determine the action (i.e. the direction and velocity) to take at every instant (Figure 3).\n\n#### Place cells (Figure 3bii)\n\nThe agent moves in an open field, modelled as a square of side length of 4 a.u. The initial position of the agent in each trial is the centre of the open field, which corresponds to the origin of the cartesian plane. The position of the agent at time $t$ is described by the bi-dimensional vector of its Cartesian coordinates, $x(t)$. The $11\\times11=121$ place cells are distributed on a grid, at a horizontal and vertical distance of $\\sigma=0.4$ from one another. The spiking activity of place cell $i$ is modeled as an inhomogeneous Poisson process, with parameter $\\lambda_{i}^{pc}(x(t))$ defined as follows:\n\n$$\n\\lambda_{i}^{pc}(x(t))=\\lambda\u00af^{pc}exp(\u2212\\frac{||x(t)\u2212x_{i}||^{2}}{\\sigma^{2}}).\n$$\n\nThe firing rate $\\lambda_{i}^{pc}$ is a function of the distance of the agent from the place cell centre $x_{i}$. It is at its maximum, $\\lambda\u00af^{pc}=400$ Hz, when the agent is located exactly in $x_{i}$ and it decreases as the agent moves away. This mechanism simulates a place field, which allows for an accurate representation of the position of the agent in the environment.\n\n#### Action neurons (Figure 3bii)\n\nPlace cells constitute the input to the network, and they project to all action neurons with weights $w^{feed}$. These feed-forward weights are initialized to $w_{in}=2$ and bounded between $w_{min}=1$ and $w_{max}=3$. Action neurons are also connected with each other through synaptic weights $w^{lat}$. The neurons are modeled as zero-order Spike Response Model ($SRM_{0}$; Gerstner, 1995). The membrane potential of neuron $j$ is given by:\n\n$$\nu_{j}(t)=\\sumi\\sumt\u00af_{i}\\inF_{i}^{pc},t>t^_{j}w_{ji}^{feed}\u22c5\u03f5(t\u2212t\u00af_{i})+\\sumk,k\\neqj\\sumt\u00af_{k}\\inF_{k}^{a},t>t^_{j}w_{jk}^{lat}\u22c5\u03f5(t\u2212t\u00af_{k})+\u03c7\u0398(t\u2212t^_{j})exp\u2061(\u2212\\frac{t\u2212t^_{j}}{\\tau_{m}}),\n$$\n\nwhere $\u03c7=\u22125$ mV scales the refractory period; $t^_{j}$ is the last postsynaptic spiking time; and $\u03f5$ is the EPSP described by the kernel $\u03f5(t)=\\frac{\u03f5_{0}}{\\tau_{m}\u2212\\tau_{s}}(e^{\\frac{\u2212t}{\\tau_{m}}}\u2212e^{\\frac{\u2212t}{\\tau_{s}}})\u0398(t),$ with $\u0398(t)$ being the Heaviside step function, $\\tau_{m}=20$ ms, $\\tau_{s}=5$ ms, $\u03f5_{0}=20$. $F_{i}^{pc}$ and $F_{k}^{a}$ are sets containing, respectively, $t\u00af_{i}$ and $t\u00af_{k}$, the arrival times of all spikes fired by place cell $i$ and action neuron $k$. Spiking behavior is stochastic and follows an inhomogeneous Poisson process with parameter $\\lambda_{j}(u_{j}(t))$, which depends on the membrane potential at time $t$. In particular,\n\n$$\n\\lambda_{j}(u_{j}(t))=\\lambda_{0}exp(\\frac{u_{j}(t)\u2212\\theta}{\u0394u}),\n$$\n\nwhere $\\lambda_{0}=60$ Hz, $\u0394u=2$ mV, $\\theta=16$ mV.\n\nAction neurons represent different directions in the Cartesian plane. Specifically, each action neuron $j$ represents direction $a_{j}$, where $a_{j}=a_{0}(sin\u2061(\\theta_{j}),\u00a0cos\u2061(\\theta_{j}))$, with $\\theta_{j}=\\frac{2j\\pi}{N},\u00a0N=40\u00a0and\u00a0a_{0}=0.08$. The lateral connectivity between action neuron $k$ and action neuron $j$ is defined as follows:\n\n$$\nw_{jk}^{lat}=\\frac{w_{\u2212}}{N}+w_{+}\\frac{f(j,k)}{N},\n$$\n\nwhere $w_{\u2212}=\u2212300,\u00a0w_{+}=100$ and $f$ is a lateral connectivity function, which is symmetric, positive and increases monotonically with the similarity of the actions. In particular, $f(j,k)=(1\u2212\\delta_{jk})e^{\u03b6cos(\\theta_{j}\u2212\\theta_{k})},$ with $\u03b6=20$. Neurons therefore excite each other when they have a similar tuning, and depress otherwise. This ensures that only a few similarly tuned action neurons are active at any given time, making the trajectory of the agent smooth and consistent.\n\n#### Action selection (Figure 3biii)\n\nThe action selection process determines $a(t)$, the action to take at time $t$, based on the firing rates of the action neurons. The activity of action neuron $j$ is approximated by filtering spike train $Y_{j}$ with kernel $\\gamma:$\n\n$$\n\u03c1_{j}(t)=(Y_{j}\u2218\\gamma)(t),\n$$\n\nwhere $Y_{j}=\\sumt\u00af_{j}\\inF_{j}^{a}\\delta(t\u2212t\u00af_{j})$ and $\\gamma(t)=\\frac{e^{\\frac{\u2212t}{\\tau_{\\gamma}}}\u2212e^{\\frac{\u2212t}{\u03bd_{\\gamma}}}}{\\tau_{\\gamma}\u2212\u03bd_{\\gamma}}\u0398(t),$ with $\\tau_{\\gamma}=50$ ms and $\u03bd_{\\gamma}=20$ ms.\n\nIf each action neuron $j$ represents direction $a_{j}$ and has an estimated firing rate $\u03c1_{j}(t)$, then the action $a(t)$ is the average of all the directions encoded, weighted by their respective firing rates:\n\n$$\na(t)=\\frac{1}{N}\\sumj\u03c1_{j}(t)a_{j},\n$$\n\nwhere $N=40$ is the total number of action neurons. This decision making mechanism allows the agent to move in any direction, making the action space effectively continuous.\n\n#### Navigation details (Figure 3biv)\n\nOnce action $a(t)$ has been determined, the update for the position of the agent is:\n\n$$\n\u0394x(t)={a(t)if\u00a0x(t+1)\u00a0in\u00a0the\u00a0squared\u22c5u(x(t))otherwise\n$$\n\nThe agent therefore normally moves with instantaneous velocity $a(t)$. When the agent tries to surpass the limits of the field, it is instantly bounced back by a distance $d=0.01$. The unit vector u(x(t)) points in the direction opposite to the boundary. To avoid large boundary effects, the feed-forward weights between place cells on the boundaries and action neurons that code for a direction aj outside of the field are set to zero.\n\nThe agent is free to explore the environment for a maximum duration of $t_{max}=15$ s. If it finds the reward at a time $t_{rew}\u00a0<\u00a0T_{max}$, the trial is terminated earlier, precisely at time $t=T_{rew}+300$ ms. The extra time mimics consummatory behavior, navigation is thus paused during this interval (i.e. place cells activity is set to zero). During the first 20 trials, the reward can be found in the circular goal area centered in $c_{1}=(1.5,1.5)$ with radius $r_{1}=0.3$. In trials 21 to 40, the goal area moves to center $c_{2}=(\u22121.5,\u22121.5)$, but maintains the same shape and size. The effect of the inter-trial interval is modeled by resetting all activity.\n\n#### Synaptic plasticity and learning\n\nThe synaptic weights between place cells and action neurons play a fundamental role in defining a policy for the agent. Plasticity is essential for the agent to learn to navigate the open field and is implemented in a way that follows the experimental results presented in Figures 1 and 2 and Brzosko et al., 2015. The synaptic changes combine the modified STDP rule (Figure 3bi) and an eligibility trace that allows for delayed updates.\n\nIn particular, the total weight update is:\n\n$$\n\u0394w_{ji}(t)=\u03b7A((\\sumt\u00af_{i}\\inF_{i}^{pc}\\sumt\u00af_{j}\\inF_{j}^{a}W(t\u00af_{j}\u2212t\u00af_{i}))\u2218\u03c8)(t),\n$$\n\nwhere $\u03b7$ is the learning rate, $A$ emulates the effect of the different neuromodulators, $W$ is the STDP window and $\u03c8$ is the eligibility trace. $F_{i}^{pc}$ and $F_{j}^{a}$ are sets containing $t\u00af_{i}$ and $t\u00af_{j}$, respectively,\u00a0the arrival times of all spikes fired by place cell $i$ and action neuron $j$.\n\nThe basic STDP window is $W(x)=e^{\u2212\\frac{|x|}{\\tau}},$\u00a0with $\\tau=10$ ms. This function is always symmetric and positive, but the sign of the final weight change is determined by the neuromodulators at the synapse:\n\n$$\nA={A_{ACh}=\u22121\u2212DA,+ACh0\u2212DA,\u2212AChA_{DA}=+1+DA,\\pmACh\n$$\n\nDopamine is assumed to be released simultaneously at all synapses whenever a reward is reached. All weight changes are gated by neuromodulators ($A=0$ when all neuromodulators are absent). The learning rate $\u03b7$ also depends on neuromodulators:\n\n$$\n\u03b7={0.002+ACh,\u2212DA0\u2212ACh,\u2212DA0.01\\pmACh,+DA\n$$\n\nThe weight change due to STDP is convoluted with an eligibility trace $\u03c8$, modeled as an exponential decay $\u03c8(t)=e^{\u2212\\alpha\\frac{t}{\\tau_{e}}}\u0398(t)$, with $\\tau_{e}=2$ s and $\\alpha={1+DA0\u2212DA$. The eligibility trace keeps track of the active synapses and allows for a delayed update of the synaptic strength. Variable $\\alpha$ in the exponent acts as a flag and ensures that the eligibility trace is active with dopamine only ($\\alpha=1$).\n\nTwo sets of simulations (1000 simulations each) were performed. In the first set (control: \u2212 ACh), no interaction with acetylcholine was assumed. The weights were therefore potentiated only when the agent found the reward ($A=1,\u00a0\\alpha=1$) and left unchanged otherwise ($A=0$). In the second set of simulations (test: + ACh), acetylcholine was present throughout the task. The weights were updated online ($A=\u22121,\u00a0\\alpha=0)$. When no reward was found before the end of the trial, weights were depressed. They were otherwise potentiated when reward was found ($A=1,\u00a0\\alpha=1$).\n\n#### Predictions\n\nWe tested the effect of varying the amplitudes of the STDP learning windows under dopaminergic and cholinergic modulation, $A_{DA}$ and $A_{ACh}$, on the agent\u2019s behavior. We ran simulations under Small, Medium and Large magnitudes of dopamine and acetylcholine effects, resulting in five different conditions (1000 simulations each). The exact parameters used can be found in the table below.\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Magnitude of neuromodulation</th>\n      <th>AACh</th>\n      <th>ADA</th>\n      <th>Figure</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"3\">Dopamine</td>\n      <td>Small</td>\n      <td>\u22121</td>\n      <td>0.1</td>\n      <td rowspan=\"3\">Figure 4avi; Figure 4\u2014figure supplement 2</td>\n    </tr>\n    <tr>\n      <td>Medium</td>\n      <td>\u22121</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Large</td>\n      <td>\u22121</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Acetylcholine</td>\n      <td>Small</td>\n      <td>\u22120.5</td>\n      <td>1</td>\n      <td rowspan=\"3\">Figure 4bvi; Figure 4\u2014figure supplement 3</td>\n    </tr>\n    <tr>\n      <td>Medium</td>\n      <td>\u22121</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Large</td>\n      <td>\u22121.5</td>\n      <td>1</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Dopamine-modulated standard asymmetric STDP curve\n\nWe also compared our symmetric learning windows with standard asymmetric\ufeff STDP curves (Figure 4\u2014figure supplement 4). The total weight update with this rule is\n\n$$\n\u0394w_{ji}(t)=\u03b7((\\sumt\u00af_{i}\\inF_{i}^{pc}\\sumt\u00af_{j}\\inF_{j}^{a}W_{2}(t\u00af_{j}\u2212t\u00af_{i}))\u2218\u03c8)(t),\n$$\n\nwhere $\u03b7=0.01$ is the learning rate, $W_{2}$ is the STDP window and $\u03c8$ is the eligibility trace (as defined above). $F_{i}^{pc}$ and $F_{j}^{a}$. are sets containing $t\u00af_{i}$ and $t\u00af_{j}$, respectively,\u00a0the arrival times of all spikes fired by place cell $i$ and action neuron $j$.\n\nThe spike timing plasticity rule was implemented as follows\n\n$$\nW_{2}(x)=\u00a0{A_{pre\u2212post}e^{\u2212\\frac{x}{\\tau}}if\u00a0x>0\\frac{1}{2}(A_{pre\u2212post}\u2212A_{post\u2212pre})if\u00a0x=0A_{post\u2212pre}e^{\\frac{x}{\\tau}}if\u00a0x<0\n$$\n\nThe integral of the learning window determines if the agent learns, unlearns or does not learn (Figure 4\u2014figure supplement 4). We therefore considered three different parameter sets: (i) positive integral ($A_{pre\u2212post}=2$, $A_{post\u2212pre}=\u22121$); (ii) zero integral ($A_{pre\u2212post}=1$, $A_{post\u2212pre}=\u22121$); (iii) negative integral ($A_{pre\u2212post}=1$, $A_{post\u2212pre}=\u22122$). The time constant was identical for the two sides of the window and was taken to be $\u00a0\\tau=10$ ms. We ran 1000 simulations for each parameter set.\n",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "a51fef62-c800-404d-a81b-385615917e14",
+      "submission_id": "3d7b99d6-36e7-4e31-8c57-d042930f2818",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marlene Bartos, University of Freiburg , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.27756.019](https://doi.org/10.7554/eLife.27756.019)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Sequential neuromodulation of Hebbian plasticity offers mechanism for effective reward-based navigation\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Eve Marder as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Hitoshi Morikawa (Reviewer #1); Guoqiang Bi (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThis work is a follow-up of the authors' previous work on the modulation of spike time dependent plasticity by dopamine. The authors found that the neuromodulator, acetylcholine, facilitates synaptic depression when applied prior to pairing stimulation apparently through muscarinic receptor activation. This depression can be reversed to long-term potentiation by subsequent application of dopamine, very likely via cAMP signaling. Implementing this bi-directionally modulated spike time dependent plasticity rule in a computational model yielded flexible learning of navigation towards changing target locations.\n\nBoth reviewers judged the study as interesting, linking synaptic plasticity rules with behavioral learning. Following the reviewers' comments the BRE would like to ask you to provide evidence that the timing of ACh and DA application is important for the observed changes in plasticity (ACh needs to be present during pairing and DA needs to be present after pairing; see reviewer #1). Reviewer #1 asked for additional figures and data analysis, which are described below in a point-by-point manner. The second reviewer wishes that you compare the effectiveness of the new learning rule with the classic STDP-based learning rule from e.g. Gerstner and Abbott 1997. This reviewer also asked for some direct predictions, e.g. the consequences of manipulating ACh receptors, which can be tested experimentally. We are including those reviews in their entirety in case this is helpful to you.\n\nReviewer #1:\n\n1) The entire timing of STDP in the presence of ACh is not characterized. For example, plasticity induction in the presence of ACh could lead to LTD regardless of the pre-post timing.\n\n2) The significance of the timing of ACh and DA application should be examined. It is assumed that ACh needs to be present during pairing and DA needs to be present after pairing but this necessity has not been explicitly examined (e.g., ACh present only after pairing).\n\n3) STDP timing curves under basal condition, in DA alone, in ACh alone, and in DA + ACh in the model should be illustrated as a figure. These timing curves should be discussed with respect to those demonstrated in the field (e.g., see Figure 2 in Feldman DE, Neuron 75, 556-571, 2012).\n\n4) Eligibility traces with decay kinetics should also be illustrated as a figure and discussed in comparison to DA action on STDP in brain slice. This will clearly illustrate the two timing rules, msec order timing for STDP and slower timing for DA action.\n\nReviewer #2:\n\nThe experiments were well designed and carried out. My main question is about their computational implications. The effects of ACh and dopamine on STDP are certainly interesting. However, they also \"disable\" the temporal asymmetry of STDP (as suggested in Figure 3A), a feature that was used in earlier modeling studies to accomplish learning of temporal sequences and navigational tasks.\n\n1) Can the authors compare the effectiveness of this new learning rule with classic STDP-based learning (e.g. Gerstner and Abbott 1997 as subsequent models)?\n\n2) Furthermore, can the authors offer some direct predictions, e.g. the consequences of manipulating ACh receptors, which can be tested by experiments?\n",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "02fa1b89-d24d-45eb-aa3e-5446ad547ec3",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C1",
+      "claim": "Spike timing-dependent plasticity (STDP) is under neuromodulatory control, which is correlated with distinct behavioral states.",
+      "claim_type": "EXPLICIT",
+      "source": "Spike timing-dependent plasticity (STDP) is under neuromodulatory control, which is correlated with distinct behavioral states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general principle underlying the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "cb633c57-152c-4ed9-88ae-6e58a2fb2a69",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C2",
+      "claim": "Dopamine, a reward signal, broadens the time window for synaptic potentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we reported that dopamine, a reward signal, broadens the time window for synaptic potentiation and modulates the outcome of hippocampal STDP even when applied after the plasticity induction protocol (Brzosko et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "0e0b8ece-1616-4399-a817-ba49192fc182",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C3",
+      "claim": "Dopamine modulates the outcome of hippocampal STDP even when applied after the plasticity induction protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we reported that dopamine, a reward signal, broadens the time window for synaptic potentiation and modulates the outcome of hippocampal STDP even when applied after the plasticity induction protocol (Brzosko et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "4ada4952-cfdc-49df-a36a-d33b172d449c",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C4",
+      "claim": "Acetylcholine biases STDP toward synaptic depression in mouse hippocampal slices.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, our experimental data in mouse hippocampal slices show that acetylcholine biases STDP toward synaptic depression, whilst subsequent application of dopamine converts this depression into potentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript (Figure 1).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "61a53666-6889-4f2b-97d2-bec09a7db184",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C5",
+      "claim": "Subsequent application of dopamine converts acetylcholine-induced synaptic depression into potentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, our experimental data in mouse hippocampal slices show that acetylcholine biases STDP toward synaptic depression, whilst subsequent application of dopamine converts this depression into potentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript (Figure 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "e26cd16e-7618-4d3f-b103-315d7706d7d5",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C6",
+      "claim": "Incorporating bidirectional neuromodulation-enabled correlational synaptic learning rule into a computational model yields effective navigation toward changing reward locations.",
+      "claim_type": "EXPLICIT",
+      "source": "Incorporating this bidirectional neuromodulation-enabled correlational synaptic learning rule into a computational model yields effective navigation toward changing reward locations, as in natural foraging behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational modeling results presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "cb0aa030-90d7-4aa4-9ce3-f37e741efa24",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C7",
+      "claim": "Temporally sequenced neuromodulation of STDP enables associations to be made between actions and outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, temporally sequenced neuromodulation of STDP enables associations to be made between actions and outcomes and also provides a possible mechanism for aligning the time scales of cellular and behavioral learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental and computational results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "224b6f9e-2a66-4219-afaa-2cb7daab80fa",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C8",
+      "claim": "Temporally sequenced neuromodulation of STDP provides a possible mechanism for aligning the time scales of cellular and behavioral learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, temporally sequenced neuromodulation of STDP enables associations to be made between actions and outcomes and also provides a possible mechanism for aligning the time scales of cellular and behavioral learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental and computational results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "282bc0a5-cc99-48fa-b59d-b78dc686e91d",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C9",
+      "claim": "STDP is a form of Hebbian learning that depends on the order and precise timing of presynaptic and postsynaptic spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "Spike timing-dependent plasticity (STDP) is a form of Hebbian learning that depends on the order and precise timing of presynaptic and postsynaptic spikes (Gerstner et al., 1996; Markram et al., 1997; Bi and Poo, 1998; Song et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to foundational work on STDP.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "d169074a-f619-456d-b12c-b642aa7222b4",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C10",
+      "claim": "STDP has been implicated in several forms of learning and memory including competitive Hebbian learning.",
+      "claim_type": "EXPLICIT",
+      "source": "STDP is a computationally attractive mechanism that has been implicated in several forms of learning and memory including competitive Hebbian learning (Song et al., 2000; Clopath et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous computational and experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "8a22389a-da3a-42e7-97f5-bb3a22877e0a",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C11",
+      "claim": "Conventional STDP is unsupervised, meaning the resulting plasticity is not informed by the outcome of the activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, in contrast to many forms of behavioral learning, conventional STDP is unsupervised, that is, the resulting plasticity is not informed by the outcome of the activity (Hertz et al., 1991; Gerstner et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical work on learning.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "2d78a921-337a-438c-8e4a-7a778190be22",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C12",
+      "claim": "STDP relies on shorter time scales than most behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, STDP relies on shorter time scales than most behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known property of STDP compared to behavioral timescales.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "39e5eec8-e55e-49da-9808-d8573702b70e",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C13",
+      "claim": "STDP is under neuromodulatory influence.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that STDP is under neuromodulatory influence (Seol et al., 2007; Zhang et al., 2009; Pawlak et al., 2010), here we sought to determine whether behaviorally relevant activation of different neuromodulatory signals could address both of these issues in hippocampus-dependent learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "a5269932-dec2-4b76-bfe6-27bc0c5bafac",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C14",
+      "claim": "The hippocampus with its constituent place cells has been implicated in spatial learning and memory in non-human animals.",
+      "claim_type": "EXPLICIT",
+      "source": "A wealth of experimental data has implicated the hippocampus with its constituent place cells (O'Keefe and Dostrovsky, 1971; O'Keefe and Nadel, 1978) in spatial learning and memory in non-human animals (Morris et al., 1982) as well as humans (Ekstrom et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to foundational work on hippocampal function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "ff65bf20-5540-4098-8128-3257ade9a62e",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C15",
+      "claim": "The hippocampus with its constituent place cells has been implicated in spatial learning and memory in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "A wealth of experimental data has implicated the hippocampus with its constituent place cells (O'Keefe and Dostrovsky, 1971; O'Keefe and Nadel, 1978) in spatial learning and memory in non-human animals (Morris et al., 1982) as well as humans (Ekstrom et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to work on human hippocampal function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "3179e979-9175-43f3-93ab-49cf43ccc091",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C16",
+      "claim": "Hippocampal synaptic plasticity, including STDP, is believed to mediate the encoding of spatial memories.",
+      "claim_type": "EXPLICIT",
+      "source": "Hippocampal synaptic plasticity (Bliss and Lomo, 1973; Bliss and Collingridge, 1993), including STDP (Bi and Poo, 1998; Debanne et al., 1998; Kwag and Paulsen, 2009; Andrade-Talavera et al., 2016), is believed to mediate the encoding of spatial memories (Morris et al., 1986; Tsien et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to work on hippocampal plasticity and memory.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "95b47583-1a0b-445f-b147-8a6d0a7090d6",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C17",
+      "claim": "Different neuromodulatory inputs into the hippocampus are active during distinct behavioral states.",
+      "claim_type": "EXPLICIT",
+      "source": "Different neuromodulatory inputs into the hippocampus are active during distinct behavioral states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle supported by the specific examples that follow.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "8beba15e-82fb-4c49-97c3-37817f14bbcf",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C18",
+      "claim": "Exploratory behavior coincides with an increased cholinergic tone.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, whilst exploratory behavior coincides with an increased cholinergic tone (Kametani and Kawamura, 1990; Marrosu et al., 1995; Thiel et al., 1998), rewards are associated with activity of dopaminergic neurons (Schultz et al., 1997; Suri and Schultz, 1999; Pan et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "7a9e8bf0-8e1a-4f38-b22e-a31adf0b4a97",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C19",
+      "claim": "Rewards are associated with activity of dopaminergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, whilst exploratory behavior coincides with an increased cholinergic tone (Kametani and Kawamura, 1990; Marrosu et al., 1995; Thiel et al., 1998), rewards are associated with activity of dopaminergic neurons (Schultz et al., 1997; Suri and Schultz, 1999; Pan et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "78a28617-50d4-4013-bc02-2bc4261fd996",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C20",
+      "claim": "Dopamine can convert hippocampal timing-dependent long-term depression (t-LTD) into timing-dependent long-term potentiation (t-LTP) when applied after a delay of minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we recently demonstrated that dopamine can convert hippocampal timing-dependent long-term depression (t-LTD) into timing-dependent long-term potentiation (t-LTP) when applied after a delay of minutes (Brzosko et al., 2015), thus providing a possible mechanism for a supervisory signal to associate specific experiences with delayed rewards in hippocampus-dependent reward learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "d56278ae-df0b-41cb-8046-da1895c4e98a",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C21",
+      "claim": "Pre-before-post pairing with a time interval of 10 ms induced t-LTP in control condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies (Bi and Poo, 1998; Zhang et al., 2009; Edelmann and Lessmann, 2011; Brzosko et al., 2015), in control condition the pre-before-post pairing with a time interval between the presynaptic and postsynaptic activity (\u0394t) of 10 ms induced t-LTP (+ Pairing \u2013 ACh: 135 \u00b1 7%, t(7) = 4.7, p=0.0022 vs. 100%, n = 8; Figure 1a,b; Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1 and consistent with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "73dfa04e-6fef-4190-b354-e3570326c953",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C22",
+      "claim": "When acetylcholine (1 \u03bcM) was bath-applied during pre-before-post pairing with \u0394t = 10 ms, robust t-LTD was induced.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when acetylcholine (1 \u03bcM) was bath-applied for 10 min from 1 to 2 min before and during the same pre-before-post pairing in interleaved experiments, robust t-LTD was induced (+ Pairing + ACh: 63 \u00b1 8%, t(5) = 4.9, p=0.0046 vs. 100%, n = 6; t(12) = 6.6, p<0.0001 vs. + Pairing \u2013 ACh; Figure 1a,b; Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "17e5c73a-695e-43e5-93c7-79bfa91b7e5a",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C23",
+      "claim": "Application of acetylcholine for 10 min had no significant effect on the basal Schaffer collateral transmission without pairing with postsynaptic action potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with earlier reports (Sugisaki et al., 2011), application of acetylcholine for 10 min had no significant effect on the basal Schaffer collateral transmission (\u2013 Pairing + ACh: 90 \u00b1 6%, t(6) = 1.8, p=0.1220 vs. 100%, n = 7; Figure 1a,b; Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1 and consistent with previous reports.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "e18653a3-281d-41e4-ba9c-478ba0e79509",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C24",
+      "claim": "Muscarinic acetylcholine receptors are highly expressed in the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Since muscarinic acetylcholine receptors are highly expressed in the hippocampus (Levey et al., 1995), the specificity of this cholinergic modulation of STDP was assessed using the muscarinic acetylcholine receptor antagonist atropine (100 nM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "afd05937-f01d-4bad-a0c5-9287fb5f24c1",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C25",
+      "claim": "The application of atropine prevented acetylcholine-facilitated t-LTD, resulting in significant t-LTP instead.",
+      "claim_type": "EXPLICIT",
+      "source": "The application of atropine prevented acetylcholine-facilitated t-LTD, resulting in significant t-LTP instead (\u0394t =+10 ms; +ACh: 63 \u00b1 9%, t(4) = 4.1, p=0.0146 vs. 100%, n = 5; +ACh + Atropine: 141 \u00b1 8%, t(5) = 5.1, p=0.0037 vs. 100%, n = 6; t(9) = 6.5, p<0.0001 vs. +ACh; Figure 1c,d; Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "a2ece4f6-4e49-48c4-a5be-42f780234c51",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C26",
+      "claim": "The facilitation of t-LTD was due to specific muscarinic acetylcholine receptor activation.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that the facilitation of t-LTD was due to specific muscarinic acetylcholine receptor activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the atropine blocking experiment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "62c8802c-7307-4b52-a75c-57e78de44c3a",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C27",
+      "claim": "Input-specific t-LTD was induced when acetylcholine was applied during the pairing protocol with \u0394t = 0 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Input-specific t-LTD was also induced when acetylcholine was applied during the pairing protocol with \u0394t = 0 ms (Control: 160 \u00b1 17%, t(4) = 3.6, p=0.0238 vs. 100%, n = 5; + ACh: 64 \u00b1 13%, t(7) = 2.9, p=0.0245 vs. 100%, n = 8; t(4) = 5.9, p=0.0041 vs. Control; Figure 1e; Figure 1\u2014source data 1; unpaired control pathway not shown)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "74c4da44-6e7d-426c-a478-96bf2129d06f",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C28",
+      "claim": "Input-specific t-LTD was induced when acetylcholine was applied during the pairing protocol with \u0394t = \u221220 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Input-specific t-LTD was also induced when acetylcholine was applied during the pairing protocol with \u0394t = 0 ms (Control: 160 \u00b1 17%, t(4) = 3.6, p=0.0238 vs. 100%, n = 5; + ACh: 64 \u00b1 13%, t(7) = 2.9, p=0.0245 vs. 100%, n = 8; t(4) = 5.9, p=0.0041 vs. Control; Figure 1e; Figure 1\u2014source data 1; unpaired control pathway not shown) and \u0394t = \u221220 ms (Control: 66 \u00b1 10%, t(6) = 3.5, p=0.0124 vs. 100%, n = 7; + ACh: 63 \u00b1 12%, t(5) = 3.0, p=0.0292 vs. 100%, n = 6; t(5) = 0.7, p=0.5265 vs. Control; Figure 1e; Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "c1de211d-7663-437e-bb26-145044994f56",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C29",
+      "claim": "Pairing protocols with spike timing interval extended to \u00b150 ms during application of acetylcholine did not lead to a significant change in synaptic weights.",
+      "claim_type": "EXPLICIT",
+      "source": "However, pairing protocols with spike timing interval extended to \u00b150 ms during application of acetylcholine did not lead to a significant change in synaptic weights (\u0394t =+50 ms: 84 \u00b1 11%, t(6) = 1.5, p=0.1852 vs. 100%, n = 7; \u0394t = \u221250 ms: 113 \u00b1 15%, t(5) = 0.8, p=0.4409 vs. 100%, n = 6; Figure 1e; Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "46a0908c-20be-4367-afc4-6aa3c513f676",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C30",
+      "claim": "The activation of muscarinic acetylcholine receptors during coordinated spiking activity biases STDP toward synaptic depression at the Schaffer collateral pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results suggest that the activation of muscarinic acetylcholine receptors during the coordinated spiking activity biases STDP toward synaptic depression at the Schaffer collateral pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results in Figure 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "9ea6cf30-8e53-49c1-96e9-c7bacc51f408",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C31",
+      "claim": "Both dopamine and acetylcholine modulate synaptic plasticity to yield synaptic potentiation and depression, respectively, irrespective of the precise spike order during pairing.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, both dopamine (Brzosko et al., 2015) and acetylcholine (Figure 1) modulate synaptic plasticity to yield synaptic potentiation (Figure 1\u2014figure supplement 1a,c; Figure 1\u2014source data 2; Brzosko et al., 2015) and depression (Figure 1e), respectively, irrespective of the precise spike order during pairing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1 and previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "0b19da92-529d-4bbb-905b-914832bd392f",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C32",
+      "claim": "Each of the two neuromodulators effectively converts a spike timing-dependent learning rule into a correlation-based learning rule but they do so in opposite directions.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the two neuromodulators effectively converts a spike timing-dependent learning rule into a correlation-based learning rule but they do so in opposite directions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "c045d9ed-40ff-4fef-9d2d-47fa38a27354",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C33",
+      "claim": "Co-activation of dopaminergic and cholinergic receptors results in synaptic depression with post-before-pre pairing.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that co-activation of dopaminergic and cholinergic receptors results in synaptic depression with post-before-pre pairing and leads to an initial synaptic depression followed by a gradual reversal of the synaptic weights back toward baseline with pre-before-post pairing (Figure 1\u2014figure supplement 1b,c; Figure 1\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "c92f7975-53cf-4b14-9d0f-ea41a80e8f1f",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C34",
+      "claim": "Co-activation of dopaminergic and cholinergic receptors leads to an initial synaptic depression followed by a gradual reversal of the synaptic weights back toward baseline with pre-before-post pairing.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that co-activation of dopaminergic and cholinergic receptors results in synaptic depression with post-before-pre pairing and leads to an initial synaptic depression followed by a gradual reversal of the synaptic weights back toward baseline with pre-before-post pairing (Figure 1\u2014figure supplement 1b,c; Figure 1\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "0d25312a-3203-4e9a-b82f-19bd26bff7c9",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C35",
+      "claim": "Acetylcholine, primarily via activation of muscarinic M1 receptors, facilitates hippocampal LTP in several previous studies using plasticity induction protocols other than STDP.",
+      "claim_type": "EXPLICIT",
+      "source": "While several previous studies using plasticity induction protocols other than STDP showed that acetylcholine, primarily via activation of muscarinic M1 receptors, facilitates hippocampal LTP (Boddeke et al., 1992; Huerta and Lisman, 1995; Ovsepian et al., 2004; Shinoe et al., 2005; Buchanan et al., 2010; Connor et al., 2012; Digby et al., 2012; Dennis et al., 2016), acetylcholine has also been found to induce LTD, particularly at higher concentrations (Scheiderer et al., 2006; Volk et al., 2007; Dickinson et al., 2009; Jo et al., 2010; Kamsler et al., 2010) \u2014 likely through the activation of a number of muscarinic receptor subtypes (Teles-Grilo Ruivo and Mellor, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "308829e2-6fc4-43bb-bb92-baf2b28f8a9e",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C36",
+      "claim": "Acetylcholine has been found to induce LTD, particularly at higher concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "While several previous studies using plasticity induction protocols other than STDP showed that acetylcholine, primarily via activation of muscarinic M1 receptors, facilitates hippocampal LTP (Boddeke et al., 1992; Huerta and Lisman, 1995; Ovsepian et al., 2004; Shinoe et al., 2005; Buchanan et al., 2010; Connor et al., 2012; Digby et al., 2012; Dennis et al., 2016), acetylcholine has also been found to induce LTD, particularly at higher concentrations (Scheiderer et al., 2006; Volk et al., 2007; Dickinson et al., 2009; Jo et al., 2010; Kamsler et al., 2010) \u2014 likely through the activation of a number of muscarinic receptor subtypes (Teles-Grilo Ruivo and Mellor, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "647d1d0b-ba5f-4738-8dca-80810c259cee",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C37",
+      "claim": "The polarity of acetylcholine-modulated plasticity can depend on the concentration of agonist used and specific cholinergic receptor subtype activated.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the polarity of acetylcholine-modulated plasticity can depend on the concentration of agonist used and specific cholinergic receptor subtype activated (M\u00fcller et al., 1988; Auerbach and Segal, 1996; Dennis et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "1933f8b4-73a9-4ef7-82ed-005e4828c4c1",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C38",
+      "claim": "A lower concentration of acetylcholine (100 nM) during pre-before-post pairing did not result in synaptic depression, but it prevented significant potentiation from developing.",
+      "claim_type": "EXPLICIT",
+      "source": "Under our experimental conditions, a lower concentration of acetylcholine (100 nM) during pre-before-post pairing did not result in synaptic depression, but it prevented significant potentiation from developing (\u0394t =+10 ms; \u2212 ACh: 162 \u00b1 16%, t(5) = 3.8, p=0.0127 vs. 100%, n = 6; + ACh: 113 \u00b1 9%, t(9) = 1.4, p=0.1888 vs. 100%, n = 10; t(14) = 2.9, p=0.0119 vs. \u2212 ACh; Figure 1\u2014figure supplement 2; Figure 1\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "16939f32-cc90-4cfd-a547-d03bea472477",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C39",
+      "claim": "The findings are consistent with previous reports using STDP induction protocols, showing that cholinergic receptor activation enables t-LTD in the visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are consistent with previous reports using STDP induction protocols, showing that cholinergic receptor activation enables t-LTD in the visual cortex (Seol et al., 2007) and facilitates t-LTD in the dorsal cochlear nucleus (Zhao and Tzounopoulos, 2011), but appear to contrast with results from studies in the rat hippocampus (Adams et al., 2004; Sugisaki et al., 2011, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "f4d7200e-82d8-44b9-ae13-f7b197b6ca75",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C40",
+      "claim": "The findings are consistent with previous reports using STDP induction protocols, showing that cholinergic receptor activation facilitates t-LTD in the dorsal cochlear nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are consistent with previous reports using STDP induction protocols, showing that cholinergic receptor activation enables t-LTD in the visual cortex (Seol et al., 2007) and facilitates t-LTD in the dorsal cochlear nucleus (Zhao and Tzounopoulos, 2011), but appear to contrast with results from studies in the rat hippocampus (Adams et al., 2004; Sugisaki et al., 2011, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "3cb2c983-f91f-4227-b34c-8dd795c690ef",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C41",
+      "claim": "The findings appear to contrast with results from studies in the rat hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are consistent with previous reports using STDP induction protocols, showing that cholinergic receptor activation enables t-LTD in the visual cortex (Seol et al., 2007) and facilitates t-LTD in the dorsal cochlear nucleus (Zhao and Tzounopoulos, 2011), but appear to contrast with results from studies in the rat hippocampus (Adams et al., 2004; Sugisaki et al., 2011, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "a1a750e2-75bd-4349-91d4-d120ddf816cb",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C42",
+      "claim": "Most reinforcement learning models rely on the ability of the reinforcing signal to strengthen active synapses, also when it arrives after the activity has occurred.",
+      "claim_type": "EXPLICIT",
+      "source": "Most reinforcement learning models rely on the ability of the reinforcing signal to strengthen active synapses, also when it arrives after the activity has occurred (Sutton and Barto, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to foundational work on reinforcement learning.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "2eb8da32-b5d4-4599-9fe2-b8a7f540923c",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C43",
+      "claim": "Bath-application of atropine (100 nM) to block muscarinic acetylcholine receptors immediately after acetylcholine washout did not affect the expression of acetylcholine-facilitated t-LTD.",
+      "claim_type": "EXPLICIT",
+      "source": "Bath-application of atropine (100 nM) to block muscarinic acetylcholine receptors immediately after acetylcholine washout did not affect the expression of acetylcholine-facilitated t-LTD (\u0394t =+10 ms; 79 \u00b1 9%, t(9) = 2.4, p=0.0399 vs. 100%, n = 10; Figure 2a,c; Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "4f1aab07-560a-4120-a2d2-56ed2ef2b18b",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C44",
+      "claim": "Atropine did not significantly affect baseline EPSPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Atropine also did not significantly affect baseline EPSPs (83 \u00b1 8%, t(6) = 2.2, p=0.0747 vs. 100%, n = 7; Figure 2c; Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "092fa6d5-7db7-48be-8268-f3d1160b921a",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C45",
+      "claim": "When dopamine (100 \u03bcM) was added to the superfusion fluid in the presence of atropine (100 nM) within 1 min after the pairing protocol, it converted acetylcholine-facilitated t-LTD into t-LTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, when, in the presence of atropine (100 nM) to prevent sustained muscarinic receptor activation, dopamine (100 \u03bcM) was added to the superfusion fluid, for 10\u201312 min starting within 1 min after the pairing protocol in interleaved experiments, it converted acetylcholine-facilitated t-LTD into t-LTP (\u0394t =+10 ms; ACh + Atropine + DA: 145 \u00b1 15%, t(6) = 3.0, p=0.0244 vs. 100%, n = 7; t(15) = 4.0, p=0.0011 vs. ACh + Atropine; Figure 2a,c; Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "7b191653-f201-4202-a8d1-dfed15a31867",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C46",
+      "claim": "The adenylyl cyclase activator forskolin (50 \u03bcM), applied for 10\u201312 min immediately after the pairing protocol with \u0394t =+10 ms, resulted in robust conversion of acetylcholine-facilitated t-LTD into t-LTP, emulating the effect of dopamine.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the adenylyl cyclase activator forskolin (50 \u03bcM), applied for 10\u201312 min immediately after the pairing protocol with \u0394t =+10 ms, also resulted in robust conversion of acetylcholine-facilitated t-LTD into t-LTP, emulating the effect of dopamine (143 \u00b1 17%, t(6) = 2.5, p=0.0447 vs. 100%, n = 7; Figure 2b,c; Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "2e52ecbc-cd47-456d-a1f8-24314ef1de4b",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C47",
+      "claim": "Dopamine can convert not only post-before-pre pairing-induced t-LTD but also acetylcholine-facilitated pre-before-post pairing-induced t-LTD into t-LTP, when acting within a few minutes following the induction protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that dopamine can convert not only post-before-pre pairing-induced t-LTD (Brzosko et al., 2015) but also acetylcholine-facilitated pre-before-post pairing-induced t-LTD into t-LTP, when acting within a few minutes following the induction protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results in Figure 2 and previous work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "c6b53575-1c40-4a78-87bb-4acf762ef89d",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C48",
+      "claim": "The effect of dopamine is irrespective of the precise spike order and is mediated at least in part via the activation of the cyclic adenosine monophosphate (cAMP) signaling cascade.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of dopamine is therefore irrespective of the precise spike order and is mediated at least in part via the activation of the cyclic adenosine monophosphate (cAMP) signaling cascade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the forskolin experiment which activates the cAMP pathway.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "3a54c8b1-3488-45b9-9b27-d5ab4255b944",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C49",
+      "claim": "Acetylcholine did not have an effect on plasticity when applied after the induction protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, acetylcholine did not have an effect on plasticity when applied after the induction protocol (Figure 2\u2014figure supplement 1; Figure 2\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "0efb37a6-1eb9-48ba-9f5f-20af7e340dbc",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C50",
+      "claim": "Neuromodulation enables correlation-based synaptic plasticity, with dopamine promoting potentiation and acetylcholine facilitating depression.",
+      "claim_type": "EXPLICIT",
+      "source": "At the synaptic level, our data emphasize three crucial features of neuromodulation of hippocampal STDP: (i) neuromodulation enables correlation-based synaptic plasticity, with dopamine promoting potentiation and acetylcholine facilitating depression (Figure 1);",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "db61b2a6-71c4-4432-b510-d68fa0be28f1",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C51",
+      "claim": "Synaptic weights are not only graded in magnitude but also can shift polarity by subsequent neuromodulation.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) synaptic weights are not only graded in magnitude but also can shift polarity by subsequent neuromodulation (Figures 1 and 2; Brzosko et al., 2015);",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "677882ed-e41b-4032-9885-a2c8f3cdd52c",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C52",
+      "claim": "The conversion of synaptic depression into potentiation by dopamine can occur even after extended delay.",
+      "claim_type": "EXPLICIT",
+      "source": "and (iii) the conversion of synaptic depression into potentiation by dopamine can occur even after extended delay (Figure 2; Brzosko et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "bb276208-9de8-4c7d-ba8a-4b475ca63b16",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C53",
+      "claim": "Sequential neuromodulation of hippocampal STDP is behaviorally relevant.",
+      "claim_type": "EXPLICIT",
+      "source": "These characteristics suggest that sequential neuromodulation of hippocampal STDP is behaviorally relevant (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the synaptic characteristics and tested in the computational model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "30af4252-5a4a-48b4-afb7-b9347af84d95",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C54",
+      "claim": "Implementing the sequential modulation by acetylcholine and dopamine in the model led to a modest improvement in learning compared to control simulations during the initial reward learning phase.",
+      "claim_type": "EXPLICIT",
+      "source": "During this initial reward learning phase, implementing the sequential modulation by acetylcholine and dopamine in the model led to a modest improvement in learning compared to control simulations (reward discovery: Figure 4aiii; successful trials: Figure 4aiv; time to reward: Figure 4av).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by computational modeling results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "c9e37238-688b-49eb-a85c-147302d34802",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C55",
+      "claim": "The functional advantage of cholinergic depression became evident when the reward location was moved to the opposite corner of the open field.",
+      "claim_type": "EXPLICIT",
+      "source": "The functional advantage of cholinergic depression became evident in the second phase of the simulation, when the reward location was moved to the opposite corner of the open field (Figure 4bi).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by computational modeling results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "e6d8158b-766a-4e34-a745-803df75519b2",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C56",
+      "claim": "Cholinergic depression enabled unlearning of the previously rewarded location, which led to enhanced exploration.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, cholinergic depression enabled unlearning of the previously rewarded location (Figure 4bii), which led to enhanced exploration (Figure 4\u2014figure supplement 1), thereby facilitating subsequent learning of the new reward location (Figure 4biii\u2013v).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by computational modeling results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "d49e041b-7e25-43bb-b0de-b44f41dbfa2f",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C57",
+      "claim": "Decreasing the magnitude of dopaminergic potentiation resulted in slower learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Decreasing the magnitude of dopaminergic potentiation resulted in slower learning, while increasing it did not produce any statistically significant difference (Figure 4avi and Figure 4\u2014figure supplement 2), probably due to a saturation effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by computational modeling results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "fcf59374-906c-4486-895c-6c183be21149",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C58",
+      "claim": "Increasing the magnitude of acetylcholine effect yielded faster unlearning.",
+      "claim_type": "EXPLICIT",
+      "source": "Altering the magnitude of cholinergic depression revealed a clear effect on unlearning performance, where increasing the magnitude of acetylcholine effect yielded faster unlearning (Figure 4bvi and Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by computational modeling results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "f5715318-9283-4a15-a4ef-57073472d544",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C59",
+      "claim": "The concept of 'eligibility trace' is at the core of network models of reinforcement learning: it is both necessary and sufficient to learn causal associations between synaptic activity and delayed outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This concept of 'eligibility trace' is at the core of network models of reinforcement learning: it is both necessary and sufficient to learn causal associations between synaptic activity and delayed outcomes (Florian, 2007; Izhikevich, 2007; Legenstein et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous theoretical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "f9ecf75a-316e-4027-8ed9-8c4feabbd28c",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C60",
+      "claim": "Neuromodulation converts classical STDP into a correlation-based rule, with same-sign weight changes for both pre-before-post and post-before-pre pairings.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, neuromodulation converts classical STDP into a correlation-based rule, with same-sign weight changes for both pre-before-post and post-before-pre pairings (Brzosko et al., 2015; this paper).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "45b8e842-5e14-4209-822f-66c09035a82a",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C61",
+      "claim": "It is the integral of the learning window that determines whether the agent learns (positive window) or unlearns (negative window).",
+      "claim_type": "EXPLICIT",
+      "source": "This feature is incorporated into our model where, rather than the exact spike timing, it is the integral of the learning window (Figure 4\u2014figure supplement 4) that determines whether the agent learns (positive window) or unlearns (negative window).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by computational modeling results shown in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "ad436fe0-4155-474d-a6ed-99130a9f966f",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C62",
+      "claim": "Cholinergic depression allows the agent to explicitly learn from unrewarded trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, cholinergic depression allows the agent to explicitly learn from unrewarded trials (this paper).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the computational modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "471bed7e-2e29-4ab6-8134-59c35cd3de53",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C63",
+      "claim": "The sequentially neuromodulated synaptic learning rule, which allows the agent to learn from both rewarded and unrewarded actions, outperformed the model with symmetric dopamine-modulated learning window when the reward location was moved.",
+      "claim_type": "EXPLICIT",
+      "source": "Our sequentially neuromodulated synaptic learning rule (test simulations), which allows the agent to learn from both rewarded (+ ACh + DA) and unrewarded actions (+ ACh \u2013 DA), outperformed both the model with symmetric dopamine-modulated learning window (\u2013 ACh + DA; Figure 3bi) and the standard reward modulated STDP model (Figure 4\u2014figure supplement 4) when the reward location was moved.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by computational modeling results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "bc7fe476-391b-4003-a43d-3f391fd9518b",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C64",
+      "claim": "Incorporating cholinergic depression allowed the agent to appropriately shift between learning and unlearning in a task-relevant manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Incorporating cholinergic depression allowed the agent to appropriately shift between learning and unlearning in a task-relevant manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the computational modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "4726086f-1637-4c61-82ac-5819feb67226",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C65",
+      "claim": "A simple feed-forward network obeying cholinergic-dopaminergic sequential neuromodulation of STDP is sufficient to guide an agent to changing reward locations as required during natural foraging behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, as demonstrated here, a simple feed-forward network obeying cholinergic-dopaminergic sequential neuromodulation of STDP is sufficient to guide an agent to changing reward locations as required during natural foraging behavior (Charnov, 1976; Stephens and Krebs, 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the computational modeling results and supported by citations to work on foraging behavior.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "f6e0aeb0-6e74-49f5-863e-c3fecf8f6e93",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C66",
+      "claim": "Muscarinic acetylcholine receptor activation during coordinated spiking activity biases STDP toward synaptic depression.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our findings demonstrate that muscarinic acetylcholine receptor activation during coordinated spiking activity biases STDP toward synaptic depression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "abcdca41-afe0-4bf3-8d0f-98d788e9da93",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C67",
+      "claim": "The reward signal dopamine, via activation of the cAMP pathway, converts both conventional t-LTD and acetylcholine-facilitated synaptic depression into potentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, the reward signal dopamine, via activation of the cAMP pathway, converts both conventional t-LTD (Brzosko et al., 2015) and acetylcholine-facilitated synaptic depression into potentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "0e03a76b-9ef4-43e4-aa2a-98b343b7038b",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C68",
+      "claim": "Incorporating this synaptic learning rule into a simple feed-forward neural network model successfully guides the agent towards changing reward locations similar to natural foraging behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Incorporating this synaptic learning rule into a simple feed-forward neural network model successfully guides the agent towards changing reward locations similar to natural foraging behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the computational modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "49d0c673-1fa9-49e3-8d53-b07996bbda9f",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C69",
+      "claim": "Sequential neuromodulation of synaptic plasticity provides a robust biological mechanism that might be used in reward-based navigation and other hippocampus-dependent functions.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that sequential neuromodulation of synaptic plasticity provides a robust biological mechanism that might be used in reward-based navigation and other hippocampus-dependent functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion drawn from the experimental and computational results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "5a76b317-aab1-4b03-b91c-423ea4e19764",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C70",
+      "claim": "Wild-type mice (C57BL/6; postnatal days 12\u201318) of both sexes were used in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type mice (C57BL/6; RRID:IMSR_JAX:000664; postnatal days 12\u201318; from Harlan, Bicester, UK or Central Animal Facility, Cambridge University) of both sexes were housed on a 12 hr light/dark cycle at 19\u201323\u00b0C, with water and food ad libitum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "4283ba59-bb39-4932-8225-ec71f4006974",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C71",
+      "claim": "Whole-cell patch-clamp recordings were made from CA1 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-cell patch-clamp recordings were made from CA1 pyramidal neurons (located adjacent to the stratum oriens).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "1a6ce45e-f364-4b4b-89d3-5fa6d0d58610",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C72",
+      "claim": "A monopolar stimulation electrode was placed in the stratum radiatum of the CA1 subfield for stimulation of Schaffer collaterals.",
+      "claim_type": "EXPLICIT",
+      "source": "For stimulation of Schaffer collaterals, a monopolar stimulation electrode was placed in the stratum radiatum of the CA1 subfield.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "5dce1d9e-96be-49dc-9387-84c2de5e254d",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C73",
+      "claim": "The plasticity induction protocol consisted of 100 pairings of a single EPSP followed by a single postsynaptic spike or a single postsynaptic spike followed by a single EPSP at 0.2 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasticity was induced in current clamp mode using an induction protocol consisting of 100 pairings of a single EPSP followed by a single postsynaptic spike (pre-before-post pairing) or a single postsynaptic spike followed by a single EPSP (post-before-pre pairing) at 0.2 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "25eeb297-cb35-4aa2-9ac5-7defc3c274b9",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C74",
+      "claim": "The computational model is based on a one-layer network with place cells in the input layer that code for the position of the agent in the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The navigation model is based on a one-layer network (Fr\u00e9maux et al., 2013). The place cells in the input layer code for the position of the agent in the environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "5a5f641a-76fe-49cb-94df-d7e9d421ef40",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C75",
+      "claim": "Place cells project to the output layer of action neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "They project to the output layer of action neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "7e4fe16f-dbf9-45e6-ad6f-a12ab0cd19cb",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C76",
+      "claim": "Each action neuron represents a different direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Each one of the action neurons represents a different direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "3ed544ca-6910-4c1e-89f0-b126b6b50fa8",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C77",
+      "claim": "The lateral connectivity in the action neuron layer ensures that the action neurons compete with each other in a winner-take-all scheme.",
+      "claim_type": "EXPLICIT",
+      "source": "The lateral connectivity in this layer ensures that the action neurons compete with each other in a winner-take-all scheme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "deb74a8e-7b09-4cea-93f7-6832d9b8b957",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "claim_id": "C78",
+      "claim": "The activity of action neurons is used to determine the action (i.e. the direction and velocity) to take at every instant.",
+      "claim_type": "EXPLICIT",
+      "source": "Their activity is then used to determine the action (i.e. the direction and velocity) to take at every instant (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ecb65638-f13b-4fc0-8fcb-c928b57a35fa",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Acetylcholine (1 \u03bcM) biases STDP toward synaptic depression in mouse hippocampal CA1 neurons. Pre-before-post pairing (\u0394t = +10 ms) that normally induces t-LTP instead produces robust t-LTD when acetylcholine is present. This effect is mediated by muscarinic acetylcholine receptors, as atropine blocks the acetylcholine-facilitated t-LTD. The depression occurs across multiple spike timing intervals (0 ms, -20 ms, +10 ms) but not at extended intervals (\u00b150 ms).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C29 provide comprehensive experimental evidence with appropriate statistical tests (t-tests with p-values) and adequate sample sizes (n=5-8 per condition). The atropine blocking experiment (C25) provides mechanistic specificity. Controls show acetylcholine alone does not affect baseline transmission (C23), ruling out non-specific effects. The dose-response relationship is explored (C38), and the findings are consistent with prior work in other brain regions (C39-C40).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "d7e552f9-de60-4571-98b3-a9ffd9861bde",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Dopamine converts acetylcholine-facilitated synaptic depression into potentiation when applied after the plasticity induction protocol. Dopamine (100 \u03bcM) applied within 1 minute after pairing reverses acetylcholine-induced t-LTD to t-LTP. This conversion is mediated via the cAMP signaling cascade, as forskolin mimics the dopamine effect. The effect is independent of spike order and requires dopamine application after, not during, the induction protocol.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 provide strong experimental evidence with appropriate controls (atropine to prevent sustained muscarinic activation) and statistical validation (p<0.05). The forskolin experiment (C46) provides mechanistic insight into cAMP pathway involvement. The temporal specificity is demonstrated by showing acetylcholine has no effect when applied after induction (C49). Sample sizes are adequate (n=6-10) and the effect sizes are substantial (~145% vs ~79% baseline).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "e4d366fe-c21d-41e7-ab29-268bcc39439c",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A computational model incorporating sequential acetylcholine-dopamine neuromodulation of STDP enables effective navigation to changing reward locations. The model shows modest improvement during initial learning but demonstrates clear advantages when reward locations change. Cholinergic depression enables unlearning of previously rewarded locations, facilitating exploration and subsequent learning of new reward locations. The model outperforms control simulations with dopamine-only modulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 and C63 provide computational evidence with 1000 simulations per condition, showing statistically significant differences. The model demonstrates functional advantages specifically during reward relocation (C55-C56), with parametric manipulations (C57-C58) yielding predicted outcomes. However, the model makes simplifying assumptions (feed-forward architecture, symmetric STDP windows) that may not fully capture biological complexity. The behavioral relevance remains to be validated experimentally in vivo.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "f9b20ccb-1dc5-446f-a72d-2a6b4645b40c",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Both dopamine and acetylcholine convert spike timing-dependent plasticity into correlation-based learning rules, but in opposite directions. Dopamine promotes potentiation while acetylcholine facilitates depression, irrespective of precise spike order during pairing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This result synthesizes findings from multiple experiments (C21-C29 for acetylcholine, prior work for dopamine). The conversion from timing-dependent to correlation-based rules is well-supported by data showing similar plasticity outcomes across different spike timing intervals within the effective window. However, the claim of complete independence from spike order may be overstated, as effects diminish at extended intervals (\u00b150 ms, C29).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "51da48dc-2f17-4ffe-9e94-bd074c0cb82f",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Synaptic weights can shift polarity through sequential neuromodulation, and dopamine-mediated conversion of depression to potentiation can occur after extended delays (minutes).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 are supported by experimental data in Figures 1-2 and prior work (Brzosko et al., 2015). The polarity shift is demonstrated by acetylcholine inducing depression followed by dopamine converting it to potentiation. The extended delay capability is shown in C45 (dopamine applied within 1 min after pairing) and referenced to prior work showing delays of minutes. The mechanistic basis via eligibility traces is theoretically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "3f58cbb1-6133-4119-86ff-012fa845fcba",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Sequential neuromodulation of STDP by acetylcholine and dopamine provides a mechanism for associating actions with outcomes and aligning cellular and behavioral learning timescales. This mechanism may be used in reward-based navigation and other hippocampus-dependent functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the experimental data (C66-C67) and computational modeling (C62) support the proposed mechanism at cellular and network levels, the direct link to behavioral learning timescales and hippocampus-dependent functions remains speculative (C69 is explicitly labeled as speculation). The computational model demonstrates proof-of-principle but lacks in vivo behavioral validation. The claim about aligning timescales (C8) is inferred rather than directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "0dab909b-f350-4b7b-95eb-42802e73e3e6",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Co-activation of dopaminergic and cholinergic receptors produces complex plasticity outcomes: depression with post-before-pre pairing, and initial depression followed by gradual reversal toward baseline with pre-before-post pairing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 are supported by experimental data in Figure 1\u2014figure supplement 1. However, the sample sizes and statistical details are not fully reported in the main text for these co-application experiments. The biological interpretation of these complex dynamics is unclear, and the functional relevance is not explored in the computational model. This represents an interesting observation but requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "784adc51-10ae-473a-97ab-7955b1566677",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The effects of acetylcholine on hippocampal plasticity are concentration-dependent and receptor subtype-specific. Lower concentrations (100 nM) prevent potentiation without inducing depression, while higher concentrations (1 \u03bcM) facilitate depression. These findings are consistent with some prior studies in other brain regions but contrast with some rat hippocampus studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C38 provides experimental evidence for concentration-dependence with appropriate statistics. Claims C35-C37 and C39-C41 accurately represent prior literature, acknowledging both supporting and contrasting findings. The authors appropriately note species differences (mouse vs. rat) and methodological variations (STDP vs. other protocols) that may explain discrepancies. The concentration-dependence is a well-established principle in pharmacology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "aa1e0430-c73c-497f-b4a0-61933b0bb07d",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The computational model implements eligibility traces where the integral of the learning window, rather than exact spike timing, determines whether the agent learns or unlearns. This feature is necessary and sufficient for learning causal associations between synaptic activity and delayed outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 is supported by citations to established theoretical work on reinforcement learning. Claim C61 is demonstrated in the computational model (Figure 4\u2014figure supplement 4) showing that positive window integrals enable learning while negative integrals enable unlearning. The model successfully implements this principle with 1000 simulations per condition. However, the biological implementation of such eligibility traces remains to be fully characterized experimentally.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "17ea2433-915e-4576-87de-69945d4b7ea3",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background claims establishing the theoretical framework: STDP is a form of Hebbian learning under neuromodulatory control; conventional STDP is unsupervised and operates on shorter timescales than behavior; the hippocampus mediates spatial learning; different neuromodulators are active during distinct behavioral states (acetylcholine during exploration, dopamine during reward).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1, C9-C20, C42) are well-established principles in the field, supported by extensive prior literature as indicated by multiple citations. They provide appropriate context for the current work. The claims accurately represent the state of knowledge and are not controversial. These are foundational concepts rather than novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "02f000ca-d0ef-4c5c-ae49-853e875608ec",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior work by the authors demonstrated that dopamine broadens the time window for synaptic potentiation and can convert t-LTD to t-LTP when applied after the plasticity induction protocol with delays of minutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, and C20 accurately cite prior work (Brzosko et al., 2015) that is foundational to the current study. These claims establish the precedent for delayed neuromodulatory effects on plasticity. The current manuscript extends this work by examining acetylcholine and sequential neuromodulation. The prior findings are well-established and provide appropriate context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "db38b2dd-5686-4026-b34b-3c2e49a2acaf",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Methodological details: Wild-type C57BL/6 mice (postnatal days 12-18) were used; whole-cell patch-clamp recordings were made from CA1 pyramidal neurons; Schaffer collaterals were stimulated; plasticity was induced using 100 pairings at 0.2 Hz with various spike timing intervals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C73 describe standard electrophysiological methods that are appropriate for the study. The age range (P12-18) is typical for acute slice preparations. The recording configuration and stimulation protocol are well-established. However, the use of juvenile animals may limit generalizability to adult circuits. The methods are described in sufficient detail for replication.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    },
+    {
+      "id": "26b5f3d8-5bfe-4df7-ad20-7c060a7c2fc9",
+      "content_id": "0e5b1113-d77a-4328-ad64-144ed88ec73f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Computational model architecture: The model uses a one-layer network with place cells coding for agent position, projecting to action neurons representing different directions. Action neurons compete via winner-take-all lateral connectivity, and their activity determines the agent's movement direction and velocity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C78 describe the computational model architecture, which is based on established modeling approaches (cited as Fr\u00e9maux et al., 2013). The model is relatively simple (feed-forward, one-layer) which facilitates interpretation but may not capture the full complexity of hippocampal circuits. The architecture is appropriate for testing the specific hypothesis about sequential neuromodulation. Mathematical details are provided in the Methods section.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:58:47.811440Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4ada4952-cfdc-49df-a36a-d33b172d449c",
+      "result_id": "ecb65638-f13b-4fc0-8fcb-c928b57a35fa"
+    },
+    {
+      "claim_id": "d56278ae-df0b-41cb-8046-da1895c4e98a",
+      "result_id": "ecb65638-f13b-4fc0-8fcb-c928b57a35fa"
+    },
+    {
+      "claim_id": "73dfa04e-6fef-4190-b354-e3570326c953",
+      "result_id": "ecb65638-f13b-4fc0-8fcb-c928b57a35fa"
+    },
+    {
+      "claim_id": "17e5c73a-695e-43e5-93c7-79bfa91b7e5a",
+      "result_id": "ecb65638-f13b-4fc0-8fcb-c928b57a35fa"
+    },
+    {
+      "claim_id": "e18653a3-281d-41e4-ba9c-478ba0e79509",
+      "result_id": "ecb65638-f13b-4fc0-8fcb-c928b57a35fa"
+    },
+    {
+      "claim_id": "afd05937-f01d-4bad-a0c5-9287fb5f24c1",
+      "result_id": "ecb65638-f13b-4fc0-8fcb-c928b57a35fa"
+    },
+    {
+      "claim_id": "a2ece4f6-4e49-48c4-a5be-42f780234c51",
+      "result_id": "ecb65638-f13b-4fc0-8fcb-c928b57a35fa"
+    },
+    {
+      "claim_id": "62c8802c-7307-4b52-a75c-57e78de44c3a",
+      "result_id": "ecb65638-f13b-4fc0-8fcb-c928b57a35fa"
+    },
+    {
+      "claim_id": "74c4da44-6e7d-426c-a478-96bf2129d06f",
+      "result_id": "ecb65638-f13b-4fc0-8fcb-c928b57a35fa"
+    },
+    {
+      "claim_id": "c1de211d-7663-437e-bb26-145044994f56",
+      "result_id": "ecb65638-f13b-4fc0-8fcb-c928b57a35fa"
+    },
+    {
+      "claim_id": "46a0908c-20be-4367-afc4-6aa3c513f676",
+      "result_id": "ecb65638-f13b-4fc0-8fcb-c928b57a35fa"
+    },
+    {
+      "claim_id": "61a53666-6889-4f2b-97d2-bec09a7db184",
+      "result_id": "d7e552f9-de60-4571-98b3-a9ffd9861bde"
+    },
+    {
+      "claim_id": "2eb8da32-b5d4-4599-9fe2-b8a7f540923c",
+      "result_id": "d7e552f9-de60-4571-98b3-a9ffd9861bde"
+    },
+    {
+      "claim_id": "4f1aab07-560a-4120-a2d2-56ed2ef2b18b",
+      "result_id": "d7e552f9-de60-4571-98b3-a9ffd9861bde"
+    },
+    {
+      "claim_id": "092fa6d5-7db7-48be-8268-f3d1160b921a",
+      "result_id": "d7e552f9-de60-4571-98b3-a9ffd9861bde"
+    },
+    {
+      "claim_id": "7b191653-f201-4202-a8d1-dfed15a31867",
+      "result_id": "d7e552f9-de60-4571-98b3-a9ffd9861bde"
+    },
+    {
+      "claim_id": "2e52ecbc-cd47-456d-a1f8-24314ef1de4b",
+      "result_id": "d7e552f9-de60-4571-98b3-a9ffd9861bde"
+    },
+    {
+      "claim_id": "c6b53575-1c40-4a78-87bb-4acf762ef89d",
+      "result_id": "d7e552f9-de60-4571-98b3-a9ffd9861bde"
+    },
+    {
+      "claim_id": "3a54c8b1-3488-45b9-9b27-d5ab4255b944",
+      "result_id": "d7e552f9-de60-4571-98b3-a9ffd9861bde"
+    },
+    {
+      "claim_id": "e26cd16e-7618-4d3f-b103-315d7706d7d5",
+      "result_id": "e4d366fe-c21d-41e7-ab29-268bcc39439c"
+    },
+    {
+      "claim_id": "30af4252-5a4a-48b4-afb7-b9347af84d95",
+      "result_id": "e4d366fe-c21d-41e7-ab29-268bcc39439c"
+    },
+    {
+      "claim_id": "c9e37238-688b-49eb-a85c-147302d34802",
+      "result_id": "e4d366fe-c21d-41e7-ab29-268bcc39439c"
+    },
+    {
+      "claim_id": "e6d8158b-766a-4e34-a745-803df75519b2",
+      "result_id": "e4d366fe-c21d-41e7-ab29-268bcc39439c"
+    },
+    {
+      "claim_id": "d49e041b-7e25-43bb-b0de-b44f41dbfa2f",
+      "result_id": "e4d366fe-c21d-41e7-ab29-268bcc39439c"
+    },
+    {
+      "claim_id": "fcf59374-906c-4486-895c-6c183be21149",
+      "result_id": "e4d366fe-c21d-41e7-ab29-268bcc39439c"
+    },
+    {
+      "claim_id": "471bed7e-2e29-4ab6-8134-59c35cd3de53",
+      "result_id": "e4d366fe-c21d-41e7-ab29-268bcc39439c"
+    },
+    {
+      "claim_id": "bc7fe476-391b-4003-a43d-3f391fd9518b",
+      "result_id": "e4d366fe-c21d-41e7-ab29-268bcc39439c"
+    },
+    {
+      "claim_id": "4726086f-1637-4c61-82ac-5819feb67226",
+      "result_id": "e4d366fe-c21d-41e7-ab29-268bcc39439c"
+    },
+    {
+      "claim_id": "0e03a76b-9ef4-43e4-aa2a-98b343b7038b",
+      "result_id": "e4d366fe-c21d-41e7-ab29-268bcc39439c"
+    },
+    {
+      "claim_id": "9ea6cf30-8e53-49c1-96e9-c7bacc51f408",
+      "result_id": "f9b20ccb-1dc5-446f-a72d-2a6b4645b40c"
+    },
+    {
+      "claim_id": "0b19da92-529d-4bbb-905b-914832bd392f",
+      "result_id": "f9b20ccb-1dc5-446f-a72d-2a6b4645b40c"
+    },
+    {
+      "claim_id": "0efb37a6-1eb9-48ba-9f5f-20af7e340dbc",
+      "result_id": "f9b20ccb-1dc5-446f-a72d-2a6b4645b40c"
+    },
+    {
+      "claim_id": "f9ecf75a-316e-4027-8ed9-8c4feabbd28c",
+      "result_id": "f9b20ccb-1dc5-446f-a72d-2a6b4645b40c"
+    },
+    {
+      "claim_id": "db61b2a6-71c4-4432-b510-d68fa0be28f1",
+      "result_id": "51da48dc-2f17-4ffe-9e94-bd074c0cb82f"
+    },
+    {
+      "claim_id": "677882ed-e41b-4032-9885-a2c8f3cdd52c",
+      "result_id": "51da48dc-2f17-4ffe-9e94-bd074c0cb82f"
+    },
+    {
+      "claim_id": "cb0aa030-90d7-4aa4-9ce3-f37e741efa24",
+      "result_id": "3f58cbb1-6133-4119-86ff-012fa845fcba"
+    },
+    {
+      "claim_id": "224b6f9e-2a66-4219-afaa-2cb7daab80fa",
+      "result_id": "3f58cbb1-6133-4119-86ff-012fa845fcba"
+    },
+    {
+      "claim_id": "bb276208-9de8-4c7d-ba8a-4b475ca63b16",
+      "result_id": "3f58cbb1-6133-4119-86ff-012fa845fcba"
+    },
+    {
+      "claim_id": "ad436fe0-4155-474d-a6ed-99130a9f966f",
+      "result_id": "3f58cbb1-6133-4119-86ff-012fa845fcba"
+    },
+    {
+      "claim_id": "f6e0aeb0-6e74-49f5-863e-c3fecf8f6e93",
+      "result_id": "3f58cbb1-6133-4119-86ff-012fa845fcba"
+    },
+    {
+      "claim_id": "abcdca41-afe0-4bf3-8d0f-98d788e9da93",
+      "result_id": "3f58cbb1-6133-4119-86ff-012fa845fcba"
+    },
+    {
+      "claim_id": "49d0c673-1fa9-49e3-8d53-b07996bbda9f",
+      "result_id": "3f58cbb1-6133-4119-86ff-012fa845fcba"
+    },
+    {
+      "claim_id": "c045d9ed-40ff-4fef-9d2d-47fa38a27354",
+      "result_id": "0dab909b-f350-4b7b-95eb-42802e73e3e6"
+    },
+    {
+      "claim_id": "c92f7975-53cf-4b14-9d0f-ea41a80e8f1f",
+      "result_id": "0dab909b-f350-4b7b-95eb-42802e73e3e6"
+    },
+    {
+      "claim_id": "0d25312a-3203-4e9a-b82f-19bd26bff7c9",
+      "result_id": "784adc51-10ae-473a-97ab-7955b1566677"
+    },
+    {
+      "claim_id": "308829e2-6fc4-43bb-bb92-baf2b28f8a9e",
+      "result_id": "784adc51-10ae-473a-97ab-7955b1566677"
+    },
+    {
+      "claim_id": "647d1d0b-ba5f-4738-8dca-80810c259cee",
+      "result_id": "784adc51-10ae-473a-97ab-7955b1566677"
+    },
+    {
+      "claim_id": "1933f8b4-73a9-4ef7-82ed-005e4828c4c1",
+      "result_id": "784adc51-10ae-473a-97ab-7955b1566677"
+    },
+    {
+      "claim_id": "16939f32-cc90-4cfd-a547-d03bea472477",
+      "result_id": "784adc51-10ae-473a-97ab-7955b1566677"
+    },
+    {
+      "claim_id": "f4d7200e-82d8-44b9-ae13-f7b197b6ca75",
+      "result_id": "784adc51-10ae-473a-97ab-7955b1566677"
+    },
+    {
+      "claim_id": "3cb2c983-f91f-4227-b34c-8dd795c690ef",
+      "result_id": "784adc51-10ae-473a-97ab-7955b1566677"
+    },
+    {
+      "claim_id": "f5715318-9283-4a15-a4ef-57073472d544",
+      "result_id": "aa1e0430-c73c-497f-b4a0-61933b0bb07d"
+    },
+    {
+      "claim_id": "45b8e842-5e14-4209-822f-66c09035a82a",
+      "result_id": "aa1e0430-c73c-497f-b4a0-61933b0bb07d"
+    },
+    {
+      "claim_id": "02fa1b89-d24d-45eb-aa3e-5446ad547ec3",
+      "result_id": "17ea2433-915e-4576-87de-69945d4b7ea3"
+    },
+    {
+      "claim_id": "282bc0a5-cc99-48fa-b59d-b78dc686e91d",
+      "result_id": "17ea2433-915e-4576-87de-69945d4b7ea3"
+    },
+    {
+      "claim_id": "d169074a-f619-456d-b12c-b642aa7222b4",
+      "result_id": "17ea2433-915e-4576-87de-69945d4b7ea3"
+    },
+    {
+      "claim_id": "8a22389a-da3a-42e7-97f5-bb3a22877e0a",
+      "result_id": "17ea2433-915e-4576-87de-69945d4b7ea3"
+    },
+    {
+      "claim_id": "2d78a921-337a-438c-8e4a-7a778190be22",
+      "result_id": "17ea2433-915e-4576-87de-69945d4b7ea3"
+    },
+    {
+      "claim_id": "39e5eec8-e55e-49da-9808-d8573702b70e",
+      "result_id": "17ea2433-915e-4576-87de-69945d4b7ea3"
+    },
+    {
+      "claim_id": "a5269932-dec2-4b76-bfe6-27bc0c5bafac",
+      "result_id": "17ea2433-915e-4576-87de-69945d4b7ea3"
+    },
+    {
+      "claim_id": "ff65bf20-5540-4098-8128-3257ade9a62e",
+      "result_id": "17ea2433-915e-4576-87de-69945d4b7ea3"
+    },
+    {
+      "claim_id": "3179e979-9175-43f3-93ab-49cf43ccc091",
+      "result_id": "17ea2433-915e-4576-87de-69945d4b7ea3"
+    },
+    {
+      "claim_id": "95b47583-1a0b-445f-b147-8a6d0a7090d6",
+      "result_id": "17ea2433-915e-4576-87de-69945d4b7ea3"
+    },
+    {
+      "claim_id": "8beba15e-82fb-4c49-97c3-37817f14bbcf",
+      "result_id": "17ea2433-915e-4576-87de-69945d4b7ea3"
+    },
+    {
+      "claim_id": "7a9e8bf0-8e1a-4f38-b22e-a31adf0b4a97",
+      "result_id": "17ea2433-915e-4576-87de-69945d4b7ea3"
+    },
+    {
+      "claim_id": "78a28617-50d4-4013-bc02-2bc4261fd996",
+      "result_id": "17ea2433-915e-4576-87de-69945d4b7ea3"
+    },
+    {
+      "claim_id": "a1a750e2-75bd-4349-91d4-d120ddf816cb",
+      "result_id": "17ea2433-915e-4576-87de-69945d4b7ea3"
+    },
+    {
+      "claim_id": "cb633c57-152c-4ed9-88ae-6e58a2fb2a69",
+      "result_id": "02f000ca-d0ef-4c5c-ae49-853e875608ec"
+    },
+    {
+      "claim_id": "0e0b8ece-1616-4399-a817-ba49192fc182",
+      "result_id": "02f000ca-d0ef-4c5c-ae49-853e875608ec"
+    },
+    {
+      "claim_id": "78a28617-50d4-4013-bc02-2bc4261fd996",
+      "result_id": "02f000ca-d0ef-4c5c-ae49-853e875608ec"
+    },
+    {
+      "claim_id": "5a76b317-aab1-4b03-b91c-423ea4e19764",
+      "result_id": "db38b2dd-5686-4026-b34b-3c2e49a2acaf"
+    },
+    {
+      "claim_id": "4283ba59-bb39-4932-8225-ec71f4006974",
+      "result_id": "db38b2dd-5686-4026-b34b-3c2e49a2acaf"
+    },
+    {
+      "claim_id": "1a6ce45e-f364-4b4b-89d3-5fa6d0d58610",
+      "result_id": "db38b2dd-5686-4026-b34b-3c2e49a2acaf"
+    },
+    {
+      "claim_id": "5dce1d9e-96be-49dc-9387-84c2de5e254d",
+      "result_id": "db38b2dd-5686-4026-b34b-3c2e49a2acaf"
+    },
+    {
+      "claim_id": "25eeb297-cb35-4aa2-9ac5-7defc3c274b9",
+      "result_id": "26b5f3d8-5bfe-4df7-ad20-7c060a7c2fc9"
+    },
+    {
+      "claim_id": "5a5f641a-76fe-49cb-94df-d7e9d421ef40",
+      "result_id": "26b5f3d8-5bfe-4df7-ad20-7c060a7c2fc9"
+    },
+    {
+      "claim_id": "7e4fe16f-dbf9-45e6-ad6f-a12ab0cd19cb",
+      "result_id": "26b5f3d8-5bfe-4df7-ad20-7c060a7c2fc9"
+    },
+    {
+      "claim_id": "3ed544ca-6910-4c1e-89f0-b126b6b50fa8",
+      "result_id": "26b5f3d8-5bfe-4df7-ad20-7c060a7c2fc9"
+    },
+    {
+      "claim_id": "deb74a8e-7b09-4cea-93f7-6832d9b8b957",
+      "result_id": "26b5f3d8-5bfe-4df7-ad20-7c060a7c2fc9"
+    }
+  ],
+  "comparisons": []
+}

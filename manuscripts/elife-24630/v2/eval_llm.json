@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "ASICs are excitatory channels that convert extracellular proton increases to sodium influx with ~10-fold Na+/K+ selectivity, a property conserved across the DEG/ENaC family. ASIC1a is widely expressed in the mammalian nervous system and involved in learning, memory, anxiety, neuroinflammation, ischemia, pain, and nociception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 describe established background knowledge about ASICs supported by multiple citations. These are well-documented properties of ASICs in the literature and provide context for the study rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior work suggested the GAS belt (formed by G-A-S motifs from three subunits) acts as a size-exclusion selectivity filter in ASICs, based on structural data showing a constriction and ENaC mutagenesis studies. However, mutations of G10' and S12' render homomeric ASICs non-functional, preventing direct experimental verification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 accurately summarize prior work with appropriate citations. The limitation that GAS belt mutations render channels non-functional (C14) is well-documented and motivates the current study's approach using unnatural amino acids.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The A11'\u03b1 substitution (replacing the G10' main chain amide carbonyl with an ester carbonyl) has minimal effects on channel function and Na+ conductance but modestly increases PNa+/PK+, indicating specific interactions with K+ at G10'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21, C68-C70 are well-supported by experimental data in Figures 1C-E showing preserved gating, unchanged Na+ conductance, and increased Na+/K+ selectivity. The unnatural amino acid incorporation is validated (Figure 1B), and the functional characterization is rigorous with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "MD simulations reveal no free energy preference for Na+ at the GAS belt. Both Na+ and K+ maintain their solvation shells when passing the GAS belt, but K+ interacts more with G10' carbonyl oxygens, explaining the modest effect of A11'\u03b1 on K+ permeability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25, C71-C73 are supported by free energy profiles (Figure 2B), FEP calculations (Figure 2\u2014supplement 1), and coordination analysis (Figure 2\u2014supplement 2). The simulations converged appropriately and provide mechanistic explanation for the experimental observations. The conclusion that the GAS belt does not preferentially select Na+ is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "MD simulations identify E18'/D21' as the primary selectivity determinant, showing significant free energy differences favoring Na+ over K+ (1.4 \u00b1 0.1 kcal/mol for single occupancy, 3.0 \u00b1 0.4 kcal/mol for double occupancy). Na+ forms more stable multi-ion complexes with these carboxylates than K+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C34 are well-supported by comprehensive simulation data including free energy profiles (Figure 2B), FEP calculations (Figure 2\u2014supplement 1), and occupancy analysis (Figure 2C). The convergence analysis is provided, and multiple independent calculations confirm the findings. The energetic differences are statistically significant and mechanistically interpretable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C83"
+    ],
+    "result": "The open-channel structure (PDB:4NTW) has a splayed lower pore, possibly due to removal of intracellular termini. Simulations with the closed-channel structure (PDB:2QTS), which has a narrower lower pore, show stronger Na+ selectivity (2.6 \u00b1 0.3 kcal/mol single occupancy, 5.9 \u00b1 0.6 kcal/mol double occupancy) through cooperative multi-ion binding at E18'/D21'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C44, C83 are supported by structural comparisons (Figure 3A-B) and simulation data (Figure 3B-C, Figure 2\u2014supplement 1). The speculation about the splayed pore (C36) is reasonable given the crystallization conditions. The narrower pore simulations provide important context for understanding selectivity in a more physiologically relevant conformation, though the closed state cannot directly inform on conduction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Systematic mutagenesis of 16 pore positions identifies L7', L14', E18', and D21' as key selectivity determinants. E18' charge is essential for Na+ selectivity (E18'\u20ac reduces PNa+/PK+ to unity), and both charge and length are critical (E18'Q and E18'D abolish selectivity; E18'D reduces single-channel conductance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C53 are well-supported by extensive mutagenesis data (Figure 4A), unnatural amino acid incorporation (Figure 4B), and single-channel recordings (Figure 4C). The use of the isosteric uncharged analog (\u20ac) provides strong evidence for the role of charge. The systematic approach and multiple complementary experiments strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Concatemeric channels with 1/3, 2/3, or 3/3 E18'Q mutations show that each E18' contributes to selectivity, but the selectivity profile collapses only with 2/3 or 3/3 mutations, consistent with cooperative multi-carboxylate interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by concatemeric channel data (Figure 4D) and Western blot validation (Figure 4\u2014supplement 2C). The stepwise loss of selectivity with increasing mutations provides strong evidence for cooperative interactions, consistent with the simulation predictions. The postulation in C54 is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C74"
+    ],
+    "result": "L7'A and S12'A mutations in concatemeric channels (1/3 and 2/3) cause no change in relative permeability, demonstrating that S12' makes little or no direct contribution to Na+ selectivity and that L7' effects may be indirect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61, C74 are supported by concatemeric channel data (Figure 4D). The S12'A result is particularly important as it directly addresses a residue that could not be studied in regular channels (C59). The lack of effect in partial mutations suggests these residues do not directly participate in ion selectivity, though L7' may have structural roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C75",
+      "C76",
+      "C95",
+      "C96"
+    ],
+    "result": "The GAS belt is not the primary selectivity filter in ASICs. Instead, it reduces the barrier to K+ through backbone interactions. The actual selectivity filter is located at E18'/D21' at the lower end of the pore, where carboxylate side chains discriminate ions through preferential Na+ binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66, C75-C76, C95-C96 represent the main conclusions of the study, well-supported by converging experimental (unnatural amino acids, mutagenesis, concatemers) and computational (MD simulations, free energy calculations) evidence. The revision of the long-standing GAS belt hypothesis is justified by the comprehensive data showing no Na+ preference at this site and strong selectivity at E18'/D21'.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "L7' and L14' likely contribute to selectivity indirectly through structural roles. Their side chains orient toward adjacent helices and may maintain pore conformation rather than directly interacting with permeating ions, consistent with their hydrophobic nature and effects on gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C77-C82 present reasonable interpretations of the mutagenesis data supported by structural information and prior work. The proposal that L7' and L14' have indirect structural roles (rather than direct ion interactions) is consistent with their hydrophobic nature, orientation in crystal structures, and the pattern of mutational effects. The inference is well-reasoned though somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "E18' is highly conserved in the DEG/ENaC family and likely controls Na+ conduction broadly. ENaCs show greater selectivity than ASICs, possibly due to differences in G10' orientation, the presence of E21' (vs D21' in ASICs), and a narrower selectivity filter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C94 involve speculation about ENaCs and other family members. While E18' conservation (C84) and ENaC mutations (C85) are documented, the mechanistic explanations (C88, C90, C92) are speculative. The D21'E mutation in ASICs did not increase selectivity (C91), which weakens some hypotheses. These claims require additional experimental validation in ENaCs.",
+    "result_type": "MINOR"
+  }
+]

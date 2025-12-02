@@ -1,0 +1,211 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Dephosphorylated Aurora A can adopt both inactive (DFG-out) and active (DFG-in) conformations in crystal structures, with or without AMPPCP bound. The active conformation displays all hallmarks of an active kinase state including proper regulatory spine assembly, despite lacking phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple crystal structures (C23-C25, C29) demonstrate both conformations, with detailed structural characterization (C26-C28) and consistency with prior crystallographic studies (C30). The structural data is internally consistent and well-documented with PDB codes and validation metrics provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Trp277, a residue unique to Aurora kinases immediately following the DFG motif, exhibits severe exchange broadening in NMR spectra indicative of conformational dynamics in the DFG-loop region. This was confirmed through 19F NMR of 5-fluoro-tryptophan labeled Aurora A and mutagenesis studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The NMR data (C34-C37) combined with mutagenesis validation (C37, C38) and correlation with crystallographic B-factors (C39) provide converging evidence for DFG-loop dynamics. The use of 19F NMR to overcome exchange broadening is methodologically sound and the W277L control confirms the assignment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C45",
+      "C48",
+      "C52"
+    ],
+    "result": "Gleevec binding to Aurora A follows a two-step mechanism involving conformational selection (DFG-in to DFG-out interconversion) followed by physical drug binding, but lacks an induced-fit step. This absence of induced-fit is the primary reason for Gleevec's weak binding to Aurora A (KD ~24-47 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biphasic kinetics (C40, C45), assignment of rate constants to conformational selection (C48), and correlation between calculated and measured KD values support the proposed mechanism. The lack of induced-fit is demonstrated by agreement between physical dissociation rate and observed koff (C52). Global fitting of kinetic data strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C57",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Danusertib binding to Aurora A follows a three-step mechanism: conformational selection (DFG-in/out), physical binding, and an induced-fit step. The induced-fit step results in four orders of magnitude tighter binding compared to Gleevec and is responsible for Danusertib's high affinity (KD ~0.87-1.1 nM) and extremely slow dissociation rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinetic data (C53-C55, C57) combined with thermodynamic analysis (C60-C63) and global fitting provide strong support. Multiple orthogonal techniques (stopped-flow, Creoptix WAVE, fluorescence) yield consistent results. The calculated KD from microscopic rate constants matches the experimentally measured macroscopic KD, validating the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "AT9283 can bind to both DFG-in and DFG-out states of Aurora A, but only the DFG-in bound complex undergoes an induced-fit step. This is supported by both kinetic analysis and a new crystal structure showing AT9283 bound to the DFG-out conformation, contrasting with a previously reported DFG-in structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinetic data (C65, C68-C70) that could not be fit to simpler models led to the four-state mechanism (C71), which is validated by the new crystal structure (C73-C74). The structural and kinetic data converge to support dual binding modes (C75). Global fitting and multiple experimental approaches strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C79",
+      "C80",
+      "C82"
+    ],
+    "result": "The natural substrate ATP (as mant-ATP) binds Aurora A through a two-step mechanism involving physical binding and an induced-fit step, demonstrating that conformational changes after ligand binding are a built-in property of the enzyme that inhibitors exploit. The faster reverse induced-fit rate for ATP compared to tight-binding inhibitors enables efficient catalytic turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biphasic kinetics for mant-ATP (C76), binding to both DFG conformations (C77), and global fitting support the mechanism. The inference that induced-fit is an intrinsic enzyme property (C79-C80) is logical given the ATP data. The comparison of rate constants between ATP and inhibitors (C82) provides mechanistic insight into the difference between substrates and drugs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "An induced-fit step after drug binding is key for all tight-binding inhibitors studied and may represent a general mechanism for kinase inhibitors. A highly-skewed equilibrium favoring the induced-fit state increases drug affinity, prolongs residence time, provides drug specificity, and can add selectivity through involvement of residues remote from the active site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the data for Aurora A with three inhibitors and ATP strongly support the induced-fit mechanism (C83), the generalization to all kinases and inhibitors (C84) is speculative and acknowledged as requiring broader validation. The logical consequences of induced-fit (C85-C88) are sound thermodynamically but some aspects (particularly C88 regarding remote residues) remain speculative without structural evidence of which residues are involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Conformational selection of DFG-state is argued to be a mistakenly pursued concept in kinase drug design because it weakens affinity, active site binding automatically confers inhibition regardless of DFG-state, and kinases interconvert between states. Instead, future efforts should focus on understanding and exploiting induced-fit steps and the unique dynamic energy landscape of each kinase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The thermodynamic argument that conformational selection weakens affinity (C91) is supported by the data and equations. The kinetic evidence that kinases interconvert between DFG states (C93) is demonstrated. The argument about active site binders (C92) is logical though relies on cited work. The recommendations for future work (C94-C95) are reasonable inferences from the findings, and the conclusion about unique energy landscapes (C96) follows from the differential induced-fit behavior observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7"
+    ],
+    "result": "Protein kinases are major drug targets due to their central role in cellular processes and involvement in cancer, but developing highly-selective inhibitors is challenging due to active site similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts in the field supported by the provided citations (Cohen, 2002; Hopkins and Groom, 2002; Carvajal et al., 2006; Gautschi et al., 2008; Katayama and Sen, 2010) and represent accepted background knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Prior work established that the DFG loop adopts distinct conformations and that Gleevec binds to the DFG-out state of Abl. While DFG-state conformational selection was long proposed to dictate selectivity, recent work showed that an induced-fit step after drug binding is the key determinant for Gleevec's selectivity to Abl.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize prior work with appropriate citations (Nagar et al., 2002; Schindler et al., 2000; Seeliger et al., 2007; Agafonov et al., 2014; Wilson et al., 2015). The progression from the conformational selection hypothesis to the induced-fit mechanism represents the historical context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background on Aurora A kinase function, cancer relevance, and inhibitors: Aurora A regulates mitotic events and is overexpressed in tumors. Danusertib and AT9283 are Aurora inhibitors that entered clinical trials with low nanomolar IC50 values. Crystal structures show Danusertib bound to DFG-out Aurora A and AT9283 bound to DFG-in Aurora A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are supported by appropriate citations and represent established knowledge about Aurora A biology and the clinical development of inhibitors. The crystal structure information (C19, C22) is from published work that provides context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C89"
+    ],
+    "result": "Protein dynamics in the drug-bound state plays a crucial role in drug selectivity, affinity, and residence time, with increased residence time providing pharmacological advantages including prolonged biological effect, decreased side effects, and lower risk of metabolic modification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The role of drug-bound dynamics (C5) is the central conclusion supported by all the kinetic data in the manuscript. The pharmacological advantages of increased residence time (C89) represent established pharmacological knowledge appropriately applied to interpret the findings.",
+    "result_type": "MAJOR"
+  }
+]

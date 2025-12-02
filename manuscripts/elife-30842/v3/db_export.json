@@ -1,0 +1,2054 @@
+{
+  "submission": {
+    "id": "15531abc-13d8-4870-aa09-2567044763e5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:14:54.325479Z",
+    "updated_at": "2025-12-01T23:14:54.325479Z"
+  },
+  "content": [
+    {
+      "id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "submission_id": "15531abc-13d8-4870-aa09-2567044763e5",
+      "content_type": "manuscript",
+      "content_text": "# TRAIN (Transcription of Repeats Activates INterferon) in response to chromatin destabilization induced by small molecules in mammalian cells\n\n## Authors\n\n- Katerina Leonova<sup>1</sup>\n- Alfiya Safina<sup>1</sup>\n- Elimelech Nesher<sup>1</sup> ([ORCID: 0000-0002-8326-5535](https://orcid.org/0000-0002-8326-5535))\n- Poorva Sandlesh<sup>1</sup>\n- Rachel Pratt<sup>1</sup>\n- Catherine Burkhart<sup>3</sup>\n- Brittany Lipchick<sup>1</sup>\n- Ilya Gitlin<sup>1</sup>\n- Costakis Frangou<sup>1</sup>\n- Igor Koman<sup>2</sup>\n- Jianmin Wang<sup>4</sup>\n- Kirill Kirsanov<sup>5</sup>\n- Marianna G Yakubovskaya<sup>5</sup>\n- Andrei V Gudkov<sup>1</sup>\n- Katerina Gurova<sup>1</sup> ([ORCID: 0000-0001-9189-0712](https://orcid.org/0000-0001-9189-0712)) \u2020\n\n### Affiliations\n\n1. Department of Cell Stress Biology Roswell Park Cancer Institute Buffalo United States\n2. Department of Molecular Biology Ariel University Ariel Israel\n3. Buffalo BioLabs Buffalo United States\n4. Department of Bioinformatics Roswell Park Cancer Institute Buffalo United States\n5. Department of Chemical Carcinogenesis Institute of Carcinogenesis, Blokhin Cancer Research Center RAMS Moscow Russia\n\n\u2020 Corresponding author\n\n## Abstract\n\nCellular responses to the loss of genomic stability are well-established, while how mammalian cells respond to chromatin destabilization is largely unknown. We previously found that DNA demethylation on p53-deficient background leads to transcription of repetitive heterochromatin elements, followed by an interferon response, a phenomenon we named TRAIN (Transcription of Repeats Activates INterferon). Here, we report that curaxin, an anticancer small molecule, destabilizing nucleosomes via disruption of histone/DNA interactions, also induces TRAIN. Furthermore, curaxin inhibits oncogene-induced transformation and tumor growth in mice in an interferon-dependent manner, suggesting that anticancer activity of curaxin, previously attributed to p53-activation and NF-kappaB-inhibition, may also involve induction of interferon response to epigenetic derepression of the cellular \u2018repeatome\u2019. Moreover, we observed that another type of drugs decondensing chromatin, HDAC inhibitor, also induces TRAIN. Thus, we proposed that TRAIN may be one of the mechanisms ensuring epigenetic integrity of mammalian cells via elimination of cells with desilenced chromatin.\n\n## Introduction\n\nControl of the integrity of genetic information in cells includes the activation of the DNA damage response, DNA-repair pathways and elimination of cells with damaged DNA (reviewed in [Miller, 2010; Wang and Lindahl, 2016]). The control of the integrity of epigenetic information is equally important and critical for the development and function of multicellular organisms, but far less studied. Epigenetic information is stored as chromatin, the highly\u00a0organized complex of DNA, histone proteins and their chemical modifications (reviewed in [Campos et al., 2014; Miska and Ferguson-Smith, 2016]). Destabilization of chromatin should lead to the dysregulation of the cellular transcriptional program and loss of cell identity. One of the examples that demonstrate the high stability of the cellular epigenome is the well-known, extremely low efficiency of reprogramming of differentiated cells (reviewed [Ebrahimi, 2015; Hussein and Nagy, 2012]). Another example is the absence of one common \u2018cancer cell\u2019 phenotype: transcriptome analysis has clearly demonstrated that tumors, including cell lines propagated for years in culture, bear easily identifiable traits of the tissue of origin in their transcriptional program (TCGA data). Nonetheless, we do not know what mechanisms control the stability of chromatin in cells, that\u00a0is, whether there is any stress response to chromatin destabilization or negative selection against cells that lose epigenetic integrity.\n\nOne of the reasons for this deficit was the absence of tools to induce \u2018chromatin damage\u2019 without simultaneous introduction of DNA damage. This possibility appeared, when we found anticancer small molecules, known as curaxins, that were able to cause chromatin disassembly in cells in the absence of DNA damage (Gasparian et al., 2011), (Safina et al., 2017). These small molecules were identified in a phenotype-based screening for the ability to simultaneously activate p53 and inhibit NF-kappaB (Gasparian et al., 2011). Our search for the mechanism of action of curaxins resulted in the discovery that curaxins bind DNA via intercalation of the carbazole body accompanied by the protrusion of two side chains into the major groove and a third side chain into the minor groove of DNA. Curaxins have no effect on DNA chemical structure, that is, they do not cause any DNA damage in mammalian cells. However, their binding to DNA changes both the helical shape and flexibility of DNA and reduces its negative charge (Safina et al., 2017).\n\nThe structural unit of chromatin in eukaryotic cells is the nucleosome, which consists of a core of positively charged histone proteins wrapped in negatively charged DNA. The stability of the nucleosome is based on the electrostatic interactions between the histones and phosphate backbone of DNA, which are supported by several precise spatially-oriented points of contact between histone amino acids and the base pairs of DNA (Luger et al., 1997). When nucleosomal DNA is unwrapped, histone octamer becomes unstable due to the repulsion of the positively charged histones from each other. Alterations of DNA helical shape, charge and flexibility, caused by curaxins, force DNA to dissociate from the octamer in vitro and in vivo (Safina et al., 2017). At lower concentrations of curaxin CBL0137, DNA is first unfolded from the outer parts of the nucleosome, that is, from H2A/H2B dimers located at both sides of the inner H3/H4 tetramer, which leads to the detachment of the H2A/H2B dimer(s) and exposure of the surface of the H3/H4 tetramer. At higher CBL0137 concentrations, DNA is unwrapped from the inner H3/H4 tetramer, which leads to complete nucleosome disassembly (Safina et al., 2017). At genomic regions where the DNA helix loses histones, it becomes significantly under twisted, which in principle may be alleviated by topoisomerases or free rotation of DNA. However, in cells, free rotation is impossible due to the length of DNA and the binding to multiple proteins. Moreover, topoisomerases cannot cleave DNA in the presence of curaxins (Safina et al., 2017). Under these conditions, the excessive energy of negative supercoiling causes base unpairing and DNA transition from B-DNA into alternative non-B DNA structures. We have shown a massive transition of right-handed B-DNA in cells treated with curaxin CBL0137 into the left-handed Z-DNA form (Safina et al., 2017). Thus, treatment of cells with CBL0137 leads to dose-dependent destabilization and disassembly of chromatin in the absence of DNA damage and, most importantly, of the classical DNA damage response, providing an opportunity to study how a cell reacts to chromatin damage and the role of chromatin perturbations in the anticancer activity of curaxins.The first type of response that we observed in curaxin-treated cells was the activation of p53, a well-known reaction of cells to DNA damage. However, no phosphorylation of p53 N-terminal serines, which are obligatory markers of the DNA damage response, was detected in curaxin-treated cells. Furthermore, there was no activation of DNA-damage-sensitive kinases, such as ATM, ATR, and DNA-PK. Instead, p53 in curaxin-treated cells was phosphorylated at serine 392 by casein kinase 2 (CK2) that formed a complex with the histone chaperone Facilitates Chromatin Transcription (FACT) (Gasparian et al., 2011). FACT consists of two conservative proteins present in all eukaryotes, Suppressor of Ty 16 (SPT16) and Structure Specific Recognition Protein 1 (SSRP1). In basal conditions FACT is involved in transcription elongation\u00a0(Belotserkovskaya et al., 2003),\u00a0(Gurova and Studitsky, 2018;\u00a0in\u00a0preparation). Human FACT binds poorly intact nucleosomes\u00a0(Tsunaka et al., 2016),\u00a0(Safina et al., 2017)\u00a0however, it may\u00a0bind histone oligomers via different domains of SSRP1 and SPT16, when they become exposed\u00a0during transcription (Gurova and Studitsky, 2018;\u00a0in\u00a0preparation). FACT binding prevents histone oligomers from dissociating while DNA is transcribed (Belotserkovskaya et al., 2003). We have found that nucleosome disassembly caused by curaxin opens multiple FACT-binding sites, which are normally hidden inside the nucleosome. Chromatin unfolding occurs first in heterochromatic regions, and all cellular FACT is rapidly relocated into these regions and depleted from the nucleoplasm (Safina et al., 2017). We named this phenomenon chromatin-trapping or c-trapping. Although curaxins do not bind and inhibit FACT directly, they cause exhaustion of FACT by trapping it in heterochromatin. Therefore, c-trapping is equivalent to functional FACT inhibition. We also observed that FACT not only binds partially disassembled nucleosomes but also Z-DNA via the CID (c-terminal intrinsically disordered) domain of the SSRP1 subunit (Safina et al., 2017). Importantly, it was already known that the immediate neighboring domain, HMG (high mobility group), also binds non-B DNA, bent or cruciform (Gariglio et al., 1997; Krohn et al., 2003; Yarnell et al., 2001). In all cases of SSRP1 binding to DNA, there is a CK2-mediated signal for p53 activation (Gasparian et al., 2011; Krohn et al., 2003). Therefore, c-trapping may be part of the general response to the destabilization of chromatin and may serve to recruit FACT to the regions of potential nucleosome loss to prevent this loss and to restore chromatin structure.\n\nHowever, there are many unclear issues within this model. Among the most immediate are two related questions: (i) what are the consequences, besides c-trapping, of nucleosome destabilization and chromatin unfolding in cells? (ii) Are all the effects of curaxins explained by the functional inactivation of FACT? In this study, we tried to answer these questions starting from the comparison of the effects of CBL0137 on transcription. We found that independently of the presence of FACT, CBL0137 activates transcription from heterochromatic regions normally silenced in cells, including centromeric and pericentromeric repeats and endogenous retroviral elements, associated with accumulation of double-stranded RNAs (dsRNA) in cells and activation of the type I interferon (IFN) response. This phenomenon, named TRAIN (Transcription of Repeats Activates INterferon) (Leonova et al., 2013) was observed previously upon DNA demethylation (Chiappinelli et al., 2015; Guryanova et al., 2016; Roulois et al., 2015). Although IFN activation has been traditionally viewed as part of an antiviral defense, TRAIN may present a more general cell response to the problems with chromatin organization in cells or a defense against loss of epigenetic integrity. We proposed that the reason for TRAIN in CBL0137-treated cells may be the direct effect of the drug on nucleosome structure leading to the opening of chromatin.\n\n## Results\n\n### Treatment with CBL0137 changes transcription of genes in FACT-positive and -negative tissues\n\nThe effect of CBL0137 on gene expression may be due to its binding to DNA and the unfolding of chromatin or due to the functional inhibition of FACT. To detect the potential FACT-independent effects of CBL0137, we sought to compare gene expression profiles in FACT-positive and -negative cells before and after CBL0137 treatment. All tumor and non-tumor cell lines tested to date express FACT subunits at different levels. The suppression of FACT expression with shRNA resulted in either partial reduction of FACT expression or complete knockdown of FACT in only a fraction of cells, which were quickly overgrown by FACT-positive cells (Carter et al., 2015; Dermawan et al., 2016; Garcia et al., 2013). To overcome this problem, we tested the effect of CBL0137 in vivo in tissues that either naturally express FACT or not. Liver and lung were selected as FACT-negative, and spleen and testis were used as FACT-positive tissues ([Garcia et al., 2011] and Figure 1A). Gene expression in these tissues was compared in mice treated with different doses of CBL0137 24 hr before organ collection. The three doses used represented different degrees of anticancer activity (absent, moderate and strong) with 90 mg/kg being close to the maximal tolerable dose (Figure 1\u2014figure supplement 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/30842/elife-30842-fig1-v3.jpg)\n\n**Figure 1.:** (A) IHC staining with SSRP1 antibody of liver and lung tissues with no detectable SSRP1 and spleen and testis expressing SSRP1. (B, C) Analyses of changes in genes expression in different tissues of mice treated with 30, 60 or 90 mg/kg of CBL0137 using microarray hybridization. Venn diagrams of the lists of genes for which expression was downregulated (B) or upregulated (C) in response to CBL0137 in different organs in response to any of doses of CBL0137. (D) Dose-dependent upregulation of expression of Ifit3 and Ifitm3 genes in different organs. Mean normalized value of microarray hybridization signals of two biological replicates\u00a0\u00b1\u00a0SD. Asterisks indicate conditions when expression was increased\u00a0>1.5 folds with p-value<0.05.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30842/elife-30842-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Change in a volume of subcutaneous HepG2 tumors in SCID mice treated once a week with IV with vehicle (5% dextrose) or 30, 60 and 90 mg/kg of CBL0137 for 4 weeks. (B) Dendrogram of gene expression in different organs of mice treated with different doses of CBL0137 IV or control vehicle 24 hr before organ collection obtained using unsupervised hierarchical clustering. (C) Volcano plots of changes in gene expression in different organs of mice treated as in B.\n\nHybridization analysis using mouse Illumina BeadChip array showed that all samples were clustered according to their tissue of origin and dose of CBL0137 (Figure 1\u2014figure supplement 1B). The liver and spleen samples from the vehicle or 30 mg/kg CBL0137-treated mice were grouped together, suggesting little or no effect of this dose on gene expression in the tested organs (Figure 1\u2014figure supplement 1B). Samples from mice treated with 60 and 90 mg/kg CBL0137 were also grouped together (spleen, testis) or close to each other (liver, lung), demonstrating a minimal difference between these doses. Surprisingly, very few genes changed expression in the testis (FACT-positive organ (Figure 1\u2014figure supplement 1C), which may be due to either limited accumulation of the drug in testis as the result of the blood-testis barrier (\u2018Sertoli cell barrier\u2019 (Mruk and Cheng, 2015) or the specific chromatin structure in most cells of this organ (Wu and Chu, 2008). Maximal changes were observed in the FACT-positive spleen followed by lung and liver (FACT-negative organs) (Figure 1\u2014figure supplement 1C). The changes in gene expression caused by CBL0137 in these FACT-negative tissues suggest a FACT-independent mechanism.\n\nThere was almost no overlap in genes downregulated in response to CBL0137 among different organs (Figure 1B, Figure 2\u2014source data 1\u20136). However, expression of one gene, Ifit3, was upregulated in all organs\u00a0>\u00a01.5-fold with p<0.05 (Figure 1C,D). Expression of another gene, Ifit3m, was upregulated in most of organs, but did not reach the formal criterion for upregulation, since its induction in liver was 1.45-fold (Figure 1D). Many transcripts in two or three organs increased similarly in a dose-dependent manner in response to CBL0137 (Figure 1C), suggesting that there may be a common pathway(s) induced by CBL0137 independently of FACT. To identify this pathway(s), we performed gene set enrichment analysis (GSEA) using the Molecular Signature Database (Broad Institute). The interferon (IFN) signaling pathway was upregulated in response to doses above 30 mg/kg in all organs except testis, which was not analyzed due to the low number of upregulated genes (Figure 2A, Figure 2 \u2013 Figure Supplement 1 and Figure 2\u2014source data 1\u20136). The same pathway was ranked first when the list of genes that were upregulated in response to CBL0137 in two or more organs was analyzed (Figure 2B). The transcription factors that regulate genes elevated in response to CBL0137 are STAT1, IRF1, IRF8 and IRF7 (Figure 2C). This analysis suggested that CBL0137 treatment leads to the activation of the IFN response in all tissues independently of FACT expression.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/30842/elife-30842-fig2-v3.jpg)\n\n**Figure 2.:** (A) Venn diagrams showing the number of up (red font) or down (blue font) regulated genes in response to CBL0137 together with gene set names enriched for these genes. The p-value of overlap is shown in parentheses. (B) GSEA of curated signaling pathways using the list of genes upregulated in two or more tissues in response to any dose of CBL0137. (C) GSEA of targets of known transcriptional factors using the list of genes upregulated in any of tissues in response to any of doses of CBL0137.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30842/elife-30842-fig2-figsupp1-v3.jpg)\n\n### CBL0137 causes rapid and robust IFN response in mouse tissues\n\nWe have shown previously that CBL0137 inhibits NF-kappaB via a FACT-dependent mechanism (Gasparian et al., 2011). Therefore, the activation of the IFN response was an unexpected finding, because the two pathways, NF-kappaB and IFN, have multiple common inducers and regulators (reviewed in [Pfeffer, 2011]). Hence, we confirmed the microarray data using different approaches. We observed an increase in the liver, lung, and spleen of the mRNA level of Irf7, a transcription factor whose expression is induced by IFN (Wathelet et al., 1998), following treatment with greater than 30 mg/kg CBL0137 (Figure 3A and Figure 3\u2014figure supplement 1A). The same trend was observed in testis, but it did not reach statistical significance. Activation of the IFN response was confirmed using a second mouse strain by RT-PCR detection of an expanded set of IFN-inducible mRNAs, and at the protein level in spleen using an antibody to ISG49, the protein encoded by Ifit3 gene (Figure 3B,C, and Figure 3\u2014figure supplement 1B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/30842/elife-30842-fig3-v3.jpg)\n\n**Figure 3.:** Quantitation of RT-PCR data (A, B, D, E, F, G) shown as fold change upon treatment with different doses of CBL0137 (mg/kg) comparing to vehicle-treated control. Mean values from three mice\u00a0\u00b1\u00a0SD. Immunoblotting of mouse plasma (C) or tissue lysates (H). (A) Treatment of C57Bl/6 mice for 24 hr. B and C. Treatment of NIH Swiss mice for 24 hr. D - H. Different time treatment of C57Bl/6 mice. C and H \u2013 numbers indicate individual mice in each group. Bars \u2013 mean of two or three replicates\u00a0+SD, asterisk \u2013 p<0.05 vs untreated control.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30842/elife-30842-fig3-figsupp1-v3.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30842/elife-30842-fig3-figsupp2-v3.jpg)\n\nThere are multiple known inducers of the IFN response, among which are components of viruses (e.g. dsRNA, cytoplasmic DNA), cytokines, DNA damage, and demethylation of genomic DNA (reviewed in [Silin et al., 2009]). Based on the literature, the kinetics of the IFN response are different depending on the inducer, with viral components and cytokines being the quickest (minutes \u2013 several hours [Silin et al., 2009]), followed by DNA damage (16\u201348 hr [Brzostek-Racine et al., 2011]), and demethylating agents (>48 hr [Leonova et al., 2013]). To compare the effect of CBL0137 vis-\u00e0-vis these stimuli, we assessed the kinetics of induction of the IFN response after CBL0137 treatment. We first measured Irf7 mRNA in the spleen and lung of mice treated with three doses of CBL0137 for 24, 48, or 96 hr before organ collection. The peak of induction was already seen at 24 hr following treatment with either 60 or 90 mg/kg CBL0137, while 30 mg/kg showed slower kinetics (Figure 3D,E, and Figure 3\u2014figure supplement 2A,B). Increased levels of two other IFN responsive transcripts, Isg15 and Usp18, were detected as early as 6 hrspost-treatment with 90 mg/kg CBL0137 and reached a peak at 12 hr, then gradually declined (Figure 3F,G, and Figure 3\u2014figure supplement 2C). Similar kinetics were observed at the protein level (Figure 3H). Thus, the CBL0137-induced IFN response is faster than that reported with other small molecules and is closer to the response observed with biologicals.\n\n### Increased expression of IFN-responsive genes induced by CBL0137 is dependent on IFN signaling\n\nExperiments with mice demonstrated that CBL0137 caused a rapid and robust induction of the IFN response in all tissues of mice that were tested. To investigate the mechanism of this phenomenon, we modeled this effect in vitro using normal and tumor cells (mouse and human). We detected an increase in mRNA and protein levels of IFN-inducible genes in both human and mouse fibroblasts (Figure 4A\u2013C). Effect was stronger on p53 null, than in p53 wild-type MEF\u00a0(Figure 4B,C), as we observed before with DNA demethylating agents (Leonova et al., 2013). However, no induction of IFN-inducible genes was detected in tumor cells of mouse or human origin. Since different components of the IFN response are frequently inactivated in tumors (Kulaeva et al., 2003), we employed a reporter assay that detected an IFN response through the activation of a consensus IFN-sensitive response element (ISRE), which drove the expression of mCherry or luciferase (Imam et al., 1990). We found that this way of assessment of IFN response is more sensitive, since in some tumor cells (e.g. HCT116) even treatment with IFN alpha did not cause induction of IFIT3, while ISRE reporter activity was easily detected (Figure 4\u2014figure supplement 1A,B). Using these assays, we observed that CBL0137 also induces an IFN response in both mouse and human tumor cells (Figure 4D,E and Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/30842/elife-30842-fig4-v3.jpg)\n\n**Figure 4.:** (A) RT-PCR and immunoblotting of mRNA and lysates from human normal diploid fibroblasts (NDF). ISG56 is a product of the human IFIT3 gene. (B) RT-PCR of mRNA from MEF, wild type or Trp53 (p53) deficient. (C) Immunoblotting of lysate of MEF treated with different doses of CBL0137 (0.03\u20132 \u03bcM) for 24 hr. D and E. Microphotographs of human (D) or mouse (E) tumor cells expressing ISRE-mCherry reporter, treated with different doses of CBL0137 for 48 hr. Poly(I:C) - polyinosinic:polycytidylic acid was used as a positive control for reporter activation at 50 \u03bcg/ml.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30842/elife-30842-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Cells were treated for 36 hr with indicated doses of IFN\u03b1 or CBL0137 and then either used for reporter assay (A) of for RNA isolation and RT-PCR (B).\n\nThe next step toward the mechanism of CBL0137-activated IFN response was to establish whether this was, in fact, a response to IFNs, that is,\u00a0was there an increase in the IFNs level after CBL0137 treatment. However, our attempts to detect IFNs (alpha, beta or gamma) in the plasma of mice treated with CBL0137 or in cell culture medium failed, which may be due to the short half-life, low levels of IFNs even after induction, or both. To overcome this limitation and to test whether the induction of IFN responsive transcription after CBL0137 treatment was due to IFNs, we used cells with different components of the IFN signaling pathway inactivated, such as MEF from mice with a knockout of either the type I IFN receptor (via Ifnar1) or Irf1, or MEF with shRNA to Irf7 (transcription factors controlling the expression of IFN-responsive genes in response to IFN). We also used Trp53 -/- MEF since we have shown previously that the absence of p53 increases IFN signaling in response to dsRNA (Leonova et al., 2013). A deficiency in either Ifnar1 and Irf7 reduced or eliminated the induction of Ifit3 expression after CBL0137, respectively. In contrast, the loss of p53 stimulated the response. There was no effect of Irf1 knockout (Figure 5A). Similar results were obtained in vivo using spleen from Ifnar1-/-, Irf7-/- or Trp53-/- mice treated with CBL0137 (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/30842/elife-30842-fig5-v3.jpg)\n\n**Figure 5.:** (A) RT-PCR of RNA from MEF cells of different genotype or wild type MEF transduced with control shRNA or shRNA to Irf7 and treated for 24 hr with 0.5 \u03bcM of CBL0137. (B) Immunoblotting of tissue lysates from mice of different genotypes treated with vehicle control (n\u00a0=\u00a02 for each genotype) or 60 mg/kg CBL0137 (n\u00a0=\u00a03) 24 hr before tissue collection.\n\n### CBL0137 treatment leads to transcription of repetitive heterochromatic genomic regions\n\nA known trigger of the IFN response is a viral infection. There are several ways by which cells can detect viral invasion. First, viral dsRNA can be detected by several intra-cellular receptors, such as TLR3, 7 or 8, RIG1, and MDA5 (reviewed in [Unterholzner, 2013]). Additionally, the presence of DNA in the cytoplasm or non-B DNA, such as left-handed Z-DNA, found in some viruses (Nordheim and Rich, 1983) can also be recognized by a cell as a viral infection. In the latter case, the IFN response is activated via Z-DNA-binding protein 1 (ZBP1), also known as the DNA-dependent activator of IFN (DAI) (Takaoka et al., 2007). Importantly, we have recently shown that high doses of CBL0137 caused disassembly of nucleosomes in cells, which led to the extensive negative supercoiling of DNA and a transition from B-DNA into left-handed Z-DNA (Safina et al., 2017). Although this effect was observed at significantly higher CBL0137 concentrations (>2.5 \u03bcM) than that which induced an IFN response, we investigated whether the induction of Z-DNA transition by CBL0137 could be responsible for its effect on the IFN response. To do this, we deleted the ZBP1 gene from HeLa and HT1080 cells using CRISP/Cas9 recombinase and two human ZBP1 gRNAs. The loss of ZBP1 expression was confirmed by RT-PCR (Figure 6\u2014figure supplement 1A). We compared the effect of CBL0137 on ISRE-mCherry reporter activity in these cells to wild-type cells and cells transduced with control gRNA and observed insignificant changes in the induction of the reporter activity 48 hr after CBL0137 treatment (Figure 6\u2014figure supplement 1B). Importantly, there was no Z-DNA present in the cells treated with CBL0137 doses that caused a robust IFN response as judged by the absence of staining with Z-DNA antibodies (Figure 6\u2014figure supplement 1C). Thus, we concluded that Z-DNA transition induced by CBL0137 does not play role in the induction of IFN response in CBL0137-treated cells.\n\nWe next determined whether dsRNA\u00a0induced an IFN response in CBL0137-treated cells. Using an antibody to dsRNA (Targett-Adams et al., 2008), we observed increased staining in CBL0137-treated cells (Figure 6A,B). One potential endogenous source of dsRNA may be from the transcription of repetitive elements, such as endogenous retroviruses, centromeric, or pericentromeric repeats (Leonova et al., 2013). Transcription of these elements may be enhanced as a result of nucleosome destabilization and chromatin unfolding caused by CBL0137. Short Interspersed Nuclear Element (SINE) retrotransposons constitute one of the main components of the genomic repetitive fraction (Kramerov and Vassetzky, 2011). Hence, we first tested whether transcription of B1 SINE is increased upon CBL0137 treatment using northern blotting. In samples of untreated MEFs, binding of the B1 probe was detected for a number of different length transcripts, possibly due to the presence of B1 repeats within the introns of multiple mRNAs. After CBL0137 treatment, a single lower molecular weight band appeared that was strongly bound by the B1 probe and was similar in size and abundance to the band in cells treated with the positive control (5-aza-cytidine (5-aza)) (Figure 6C). To determine whether other transcripts that can form dsRNAs appear in cells treated with CBL0137, we performed RNA-sequencing (RNA-seq) analysis using total RNA from wild-type and Trp53-/- MEF treated with CBL0137 in vitro or lungs from mice collected 24 hr after treatment with 60 mg/kg CBL0137 in vivo. This analysis demonstrated a significant increase in the number of transcripts corresponding to several classes of endogenous viruses as well as GSAT (pericentromeric) and SATMIN (centromeric) repeats in cells (Figure 6D, Figure 6\u2014figure supplements 1 and Figure 6\u2014source data 1). These data suggest that treatment with CBL0137 leads to the activation of the transcription of heterochromatic regions, which are not or minimally transcribed under basal conditions.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/30842/elife-30842-fig6-v3.jpg)\n\n**Figure 6.:** Immunofluorescent staining of MEF (A) and human HT1080 (B) cells with antibody to dsRNA (red) and Hoeschst (blue). (C) Northern blotting of RNA from MEF (Trp53-/-) treated with either 5-Aza for 72 hr or CBL0137 for 48 hr and hybridized with B1 or Actb probes. (D)\u00a0Increase in transcripts corresponding to major (GSAT) or minor (SATMIN) satellites or LINE1 in MEF cells or lung tissue of mice treated with either 1 \u03bcM or 60 mg/kg of CBL0137 for 24 hr. Bars are relative increase of the transcripts abundance in treated versus untreated samples. p=FDR corrected p-value (see Materials and methods for details).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30842/elife-30842-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) RT-PCR with primers to ZBP1 of mRNA from Hela cells in which ZBP1 gene was inactivated with CRISP-Cas9 recombinase. Two different gRNA to ZBP1 and one control were used. (B) Fluorescent intensity of ISRE-mCherry reporter in Hela cells control or with inactivated ZBP1 treated with CBL0137 for 48 hr. (C)\u00a0Immunofluorescent staining of Hela cells treated with CBL0137 for 1 hr with antibody to Z-DNA (red) or Hoechst (blue).\n\n### Opening of chromatin is accompanied by TRAIN\n\nCBL0137 may induce transcription of genomic regions that are silenced at physiological conditions via several different mechanisms. Loss of FACT via c-trapping may lead to activation of silenced transcription since mutations of FACT subunits in yeast causes transcription from cryptic sites that are covered by nucleosomes in basal conditions (Mason and Struhl, 2003), (Jamai et al., 2009). FACT is also important for chromatin assembly at centromeres (Okada et al., 2009; Prendergast et al., 2016). We observed the induction of the IFN response in organs that lacked FACT (lung and liver). However, the absence of FACT in these tissues does not exclude the role of FACT in the prevention of the response. Nevertheless, it was clear that there are FACT-independent effects of CBL0137 on transcription.\n\nOpening or disassembly of nucleosomes due to CBL0137 binding to DNA may increase accessibility of DNA to RNA Polymerase (RNAP) II. To see whether CBL0137 can induce transcription of a reporter silenced due to chromatin condensation, we used HeLa-TI cells (Poleshko et al., 2010; Shalginskikh et al., 2013), which contain an integrated avian sarcoma virus genome with a silenced green fluorescent protein (GFP) gene. Under basal conditions, GFP is expressed in very few cells. However, the opening of chromatin using the HDAC inhibitor trichostatin A (TSA) activates GFP expression in a significant proportion of cells (Figure 7A). An increase in the proportion of GFP-expressing cells was also observed after CBL0137 treatment (Figure 7A).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/30842/elife-30842-fig7-v3.jpg)\n\n**Figure 7.:** (A)\u00a0Increase in the proportion of cells expressing GFP from silenced viral promoter in Hela cells treated with either TSA (250 nM) or CBL0137 (500 nM). (B) Changes in the abundance of Ifit3 and Irf7 mRNAs in MEF treated with 500 nm of TSA or CBL0137 for 24 or 48 hr. Quantitation of RT-PCR, mean of two experiments\u00a0\u00b1\u00a0SD. All changes are significant versus untreated control (p<0.05). (C) Change in the proportion of Hela-TI-ISRE-mCherry cells positive for mCherry and GFP after 48 hr treatment with 10 \u03bcg/ml of polyI-C (pIC), 500 nM of CBL0137 or 125\u2013500 nM of TSA. (D) Immunoblotting of extracts of Hela cells treated with TSA (200 nM) or different doses of CBL0137 (\u03bcM) for 24 hr. Acetyl H3 and total H3 were detected in total nuclear extracts, chromatin bound H3 - in chromatin pellet, washed from nucleoplasm with 450 mM NaCl buffer. Bars are mean of two replicates\u00a0\u00b1\u00a0SD. Asterisk - p<0.05 vs untreated control.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30842/elife-30842-fig7-figsupp1-v3.jpg)\n\nNext, we tested whether chromatin opening by HDAC inhibition will be accompanied by TRAIN. We treated MEF and HeLa-TI cells with TSA or CBL0137 and monitored the activation of IFN signaling by RT-PCR in MEF or ISRE-mCherry reporter in Hela-TI cells (Figure 7B,C). In MEF cells, both TSA and CBL0137 induced expression of Ifit3 and Irf7 genes (Figure 7B), while in HeLa-TI cells, the robust induction of ISRE reporter was evident only after CBL0137 treatment. TSA caused only a weak increase in ISRE reporter activity (1.5 folds versus\u00a0>5 folds for CBL0137) only at the highest concentration (500 nM, Figure 7C) when evidence of toxicity was present. At the same time, the degree of activation of the silenced GFP in HeLa-TI cells was similar for TSA and CBL0137 (Figure 7C).\n\nImportantly, although GFP expression was increased by both agents, the mechanisms of chromatin opening were different for TSA and CBL0137. As expected, TSA treatment caused an increase in acetylated histone H3 levels, while CBL0137 decreased the amount of chromatin-bound histone H3 (Figure 7D). However, as we saw previously (Safina et al., 2017), substantial loss of core histones (i.e. chromatin disassembly) was observed with approximately 5 \u03bcM CBL0137, which is much higher than the concentrations at which we observed TRAIN (0.5\u20131 \u03bcM). We proposed that nucleosome \u2018opening,\u2019 that is, the state of loose contact between the DNA and histone core without loss of histones from the core (proposed in the review [Zlatanova et al., 2009]), may be enough to create conditions for TRAIN. Namely, no nucleosome disassembly or dissociation of nucleosome parts is needed. Although there is no clear definition of an opened and a closed nucleosome state, the closed nucleosome in cells is additionally \u2018locked\u2019 by the linker histone H1 (Syed et al., 2010; Zhou et al., 2013). Thus, we investigated how the distribution of H1 is changed upon treatment with CBL0137 using imaging of live cells that express m-Cherry-tagged histone H1.5. CBL0137 treatment led to a redistribution of H1.5 from the chromatin to the nucleoli, similarly to the effect of CBL0137 on core histones (Safina et al., 2017) but this phenomenon was observed at a faster and at much lower CBL0137 concentrations (Figure 8A,B). TRAIN in CBL0137-treated cells was observed at the same concentration range as redistribution of histone H1 and before the disassembly of the nucleosome core, suggesting that nucleosome opening is sufficient to allow the transcription of heterochromatic regions in cells. Thus, we observed the presence of TRAIN using different chromatin modifying agents; however, its degree depends on cell type and the mode of chromatin opening.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/30842/elife-30842-fig8-v3.jpg)\n\n**Figure 8.:** Live cell imaging of HT1080 cells expressing mCherry-tagged H1.5 and GFP-tagged SSRP1. (A) Images of nuclei of the same cells at different moments after addition of 1 \u03bcM CBL0137 to cell culture medium. (B) Images of nuclei of cells treated with different concentrations of CBL0137 (\u03bcM) for 1 hr.\n\n### TRAIN induced by CBL0137 impacts anti-cancer activity of CBL0137\n\nWe have previously shown that administration of CBL0137 to tumor prone mice prior to tumor onset significantly reduced the incidence of cancer and diminished the occurrence of aggressive forms of breast cancer (Koman et al., 2012). We explained this effect by the fact that CBL0137 inhibited NF-kappaB and activated p53, both well-established mechanisms of cancer prevention (rev. in [Athar et al., 2011] and [Lin et al., 2010]). However, activation of IFN may be an additional mechanism to eliminate transformed cells, because they are more sensitive to IFN-mediated apoptosis than normal cells (reviewed in [Parker et al., 2016]). To test this hypothesis, we used p53-negative MEF (to eliminate the effect of p53 activation) with a functional or disabled IFN response via knockout of Ifnar1 (Picaud et al., 2002). MEF cells have almost no basal NF-kappaB activity. Both cell types were transduced with a lentiviral construct for the expression of the mutant H-RasV12 oncogene. Forty-eight hours after lentiviral transduction, cells were treated with a low dose of CBL0137 for an additional 48 hr and then left to grow in drug-free medium. After 10 days, the number of transformed foci was significantly reduced in cells treated with CBL0137 compared to untreated cells, but only if the cells had functional IFN receptor (Ifnar1+/+, Figure 9A). Thus, TRAIN may be an additional mechanism by which CBL0137 exerts its tumor preventive effect.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/30842/elife-30842-fig9-v3.jpg)\n\n**Figure 9.:** (A)\u00a0Treatment of cells transduced with H-RasV12 with CBL0137 leads to the reduction in the number of transformed foci in Ifnar-dependent manner. MEF of different background were transduced with lentiviral HrasV12 followed by treatment with 250 nM CBL0137 for 48 hr. Number of foci was detected on day 10 after transduction. Cultures from two embryos of each genotype were used. Mean of two replicates\u00a0\u00b1\u00a0SD. * - p<0.05. B-C. Effect of CBL0137 on the growth of wild type (wt) (B) of Ifnar1-/- (C) transformed MEF in Ifnar1-/- mice. Group of five mice of each genotype were treated with vehicle of 70 mg/kg of CBL0137 once a week for 3 weeks. Mean tumor volume\u00a0+\u00a0SD. Asterisk \u2013 p<0.05 between CBL0137 and vehicle-treated groups.\n\nTo evaluate the impact of TRAIN in the anticancer activity of CBL0137, we inoculated H-RasV12-transformed MEF, wild type or Ifanr1-/-, into Ifanr1-/- mice. When tumors reached the size of 50\u00a0mm3,\u00a0we treated these mice with CBL0137 once a week for 3 weeks. Wild type tumors did not grow at all since the start of treatment, while Ifanr1-/- tumors continued growing, albeit slower than vehicle treated tumors (Figure 9B,C). Thus, induction of IFN response by CBL0137 is an important component of the anticancer activity of CBL0137.\n\n## Discussion\n\nOur study describes the consequences of chromatin destabilization caused by small molecule binding to DNA. CBL0137 was identified in a cell-based screen, and some of its effects, such as activation of p53 and inhibition of NF-kappaB, functional inactivation of FACT, and higher toxicity to tumor than normal cells, were already described (Gasparian et al., 2011), (Barone et al., 2017; Carter et al., 2015; Dermawan et al., 2016). However, recently, we demonstrated that binding of CBL0137 to DNA destabilizes nucleosomes in vitro and in vivo, leading to histone eviction and chromatin decondensation in cells (Safina et al., 2017). Since CBL0137 does not cause chemical DNA modifications and has no effect on transcription and replication of naked DNA in vitro at the concentrations used in this study, this creates a unique situation to assess how \u2018chromatin damage\u2019 influences transcription.\n\nFirst, we would like to define here \u2018chromatin damage\u2019 as a change in the original chromatin composition that is artificially induced by a drug or other experimental manipulations. In the case of CBL0137, this occurs most probably in a few continuous phases (Figure 10). At lower concentrations of CBL0137 (<1 \u03bcM in cells), the nucleosome \u2018opens,\u2019 loses the linker histone H1 without dissociation or loss of core histones. At higher CBL0137 concentrations (1\u20135 \u03bcM), dimer detachment occurs with occasional loss of core histones. We clearly saw this stage in vitro as the appearance of hexasomes (Safina et al., 2017). At CBL0137 concentrations greater than 5 \u03bcM, the nucleosome is disassembled, and core histones are evicted from the chromatin. This sequence of events is in line with the reversibility of the toxic effects of CBL0137. Indeed, after a short incubation with\u00a0<1 \u03bcM CBL0137, the drug can be washed from the cells with almost no harm to the cells; cells incubated with 1\u20133 \u03bcM CBL0137 for no more than 1\u00a0hr survive with some loss of viability. However, treatment with\u00a0>5 \u03bcM CBL0137 for more than 15 min leads to complete cell death after 48 hr, which is in line with the complete disassembly of chromatin (Figure 10B). An important and completely unknown question is what causes cell death upon loss of chromatin integrity.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/30842/elife-30842-fig10-v3.jpg)\n\nOther cellular \u2018responses\u2019 to CBL0137 treatment are also aligned with a gradual change in nucleosome organization. The first cellular factor that we found, \u2018reacting\u2019 to the problems with chromatin packaging in CBL0137-treated cells, was histone chaperone FACT, which underwent c-trapping in response to nucleosome disassembly (Safina et al., 2017). It was shown that human FACT cannot bind and uncoil a \u2018closed\u2019 nucleosome (Tsunaka et al., 2016; Valieva et al., 2017) (Figure 10). However, nucleosome opening most probably allows FACT to invade the nucleosome and bind the H3/H4 tetramer via the middle domain of SPT16 and the H2A/H2B dimer via the c-terminal portions of both subunits (Belotserkovskaya et al., 2003; Kemble et al., 2015; Tsunaka et al., 2016; Winkler and Luger, 2011). In cells, we see this as SPT16-mediated \u2018n (nucleosome)-trapping,\u2019 which is observed at 0.3\u20131 \u03bcM CBL0137. At CBL0137 concentrations greater than 3 \u03bcM, significant negative supercoiling, as a result of nucleosome disassembly, caused base-unpairing of DNA and the transition of B-DNA into left-handed Z-form DNA, which is bound by FACT via the c-terminal intrinsically disordered domain of SSRP1 subunit (Safina et al., 2017). FACT has a plethora of activities related to transcription (rev. in [Reinberg and Sims, 2006], [Gurova and Studitsky, 2018;\u00a0in\u00a0preparation). Therefore, many CBL0137 effects on transcription might be explained by the functional inactivation of FACT. However, we suspected that opening of chromatin might have consequences independent on FACT.\n\nThe most prominent and uniform change observed in the presence and absence of FACT was activation of the IFN response in all tested organs and cells at both the mRNA and protein levels. The induction of IFN-sensitive genes (ISG) has a bell-shaped curve, with a maximum increase at a CBL0137 concentration of approximately 0.5\u20131 \u03bcM, which corresponds to nucleosome \u2018opening\u2019 followed by the inhibition of transcription at concentrations greater than 1 \u03bcM, when nucleosome disassembly starts. We believe that IFN is activated in response to the dsRNA formed due to the increased transcription from normally silenced constitutive heterochromatin. There was a report that proposed the role of histone H1 in the silencing of ISGs where knockdown of the H1 chaperone TAF1 in cells resulted in H1 loss from ISG promoters and activation of their transcription (Kadota and Nagata, 2014). However, the set of data in that report does not exclude the role of general chromatin decondensation due to the reduction of H1 deposition in heterochromatin. We showed that in the case of CBL0137, transcription of ISGs is abrogated if the IFN signaling pathway is disabled (e.g. Ifnar1-/- cells and mice), suggesting that there is no direct effect of CBL0137 on the promoters of ISGs. If we assume that IFN is activated in response to increased transcription of \u2018repeatome\u2019, then the puzzling and intriguing question is why nucleosome \u2018opening\u2019 is accompanied by selective activation of transcription of these elements, but not most genes, while nucleosome disassembly leads to the inhibition of transcription genome-wide. We propose that displacement of histone H1 may make heterochromatin accessible for RNA polymerase, while accessibility of genomic regions not locked with H1 does not change. The inhibition may be explained by a direct effect of higher concentrations of CBL0137, bound to DNA, on RNA polymerase activity, but this requires further investigation.\n\nImportantly, the anticancer effect in mice is seen at concentrations that activate the IFN response, suggesting that chromatin opening without chromatin disassembly is enough to cause an anticancer effect in vivo. Activation of the IFN response by CBL0137 also creates an opportunity to use IFN-responsive factors as pharmacodynamic markers of curaxin activity in the clinic, since many of these factors are secreted and were detected in the plasma of mice.\n\nThus, curaxins, compounds with established anticancer activity in multiple preclinical models, may also be used as a tool to affect chromatin organization and folding globally in cells and animals to study the consequences of an abrupt loss of epigenetic regulation in vivo. Potentially, this property of curaxins may be useful for reprogramming and other types of therapeutic epigenetic manipulations.\n\nOne more important aspect of this study was the expansion of the set of situations when the TRAIN response occurs. Previously, we and others observed TRAIN upon loss of DNA methylation (Leonova et al., 2013), (Chiappinelli et al., 2015; Guryanova et al., 2016; Roulois et al., 2015), mostly in the case of p53 deficiency (Leonova et al., 2013). Here, we observed that general chromatin decondensation due to nucleosome opening is also accompanied by TRAIN. Based on this data, we propose that TRAIN may be a more general response to the problems associated with chromatin packaging and the danger of the loss of epigenetic integrity. The stability of the cell differentiation status, which can still be easily detected even in HeLa cells after more than 60 years in culture, is a long-standing puzzle. Theoretically, stability can be ensured either by the low rate of error in the replication of chromatin marks or by an auto-regulatory mechanism that eliminates cells with lost epigenetic information, similar to p53-dependent apoptosis in response to DNA damage. It is tempting to speculate that TRAIN may be such a mechanism, triggered by elevated expression of silenced repetitive genomic elements and executed by the IFN response, which is capable of killing cells. It is likely that this mechanism evolved in response to real viral threats, especially in the form of the expansion of endogenous retroviral elements. This mechanism may serve as an epigenetic lock, which supports the differentiation state and limits cell plasticity and, therefore, the ability to transdifferentiate and regenerate organs and tissues, as well as to undergo epigenetic transitions associated with malignant transformation and tumor progression.\n\n## Materials and methods\n\n### Chemicals, reagents, and plasmids\n\nCBL0137 was provided by Incuron, LLC. Trichostatin A was purchased from Sigma-Aldrich. Poly I:C (polyinosinic:polycytidylic acid) was purchased from Tocris Bioscience. ISRE-mCherry and ISRE-Luc reporter plasmids was purchased from Cellecta. Two ZBP1 gRNA, control gRNA, and CRISPR/Cas9 lentiviral single vector plasmids and mCherry-tagged histone H1.5 were purchased from GeneCopoeia. GFP-tagged SSRP1 was previously described in Safina et al. (2017).\n\n### Cells\n\nHeLa, HepG2, HT1080and normal skin fibroblast (NDF) cells were obtained from ATCC and maintained in DMEM with 5% Fetal Bovine Serum (FBS) and 50 \u03bcg/ml of penicillin/streptomycin. Mouse squamous cell carcinoma SCCVII cells were obtained from Dr. Burdelya (Roswell Park Cancer Institute (RPCI), Buffalo, NY). Preparation and maintenance of HeLa-TI cell populations containing integrated avian sarcoma genome with silent green fluorescent protein (GFP) gene were described previously (Poleshko et al., 2010; Shalginskikh et al., 2013).\n\n### Isolation and cultivation of mouse embryonic fibroblast (MEF) cells\n\nMEFs were isolated from embryos at 13.5 days post-coitus by breeding C57BL/6 and Trp53-heterozygous (Trp53+/-) mice or C57BL/6 Ifnar-null and Trp53-heterozygous females and males as described in the protocol http://www.molgen.mpg.de/~rodent/MEF_protocol.pdf. Cells from each embryo were individually plated. DNA was isolated from individual embryos using the PureLinkTM Genomic DNA Kit (Invitrogen,\u00a0Carlsbad,\u00a0CA). The genotype of the embryos was determined by PCR with the following primers: Trp53+/+ ACAGCGTGGTGGTACCTTAT; Trp53+/- TATACTCAGAGCCGGCCT; Trp53-/- TCCTCGTGCTTTACGGTATC; Ifnar1-/- 5\u2019common 5\u2019-ATTATTAAAAGAAAAGACGAGGAGGCGAAGTGG-3\u2019; Ifnar1-/- 3\u2019WT allele 5\u2019-AAGATGTGCTGTTCCCTTCCTCTGCTCTGA-3\u2019; Ifnar1-/- Neo 5\u2019-CCTGCGTGCAATCCATCTTG-3\u2019.\n\nMEF cells were cultured in DMEM supplemented with 10% FBS and 50 \u03bcg/ml penicillin/streptomycin for no more than eight passages. Transformation of p53-/- cells was done via lentiviral delivery of HRasV12 oncogene followed by selection with bleomycin.\n\n### Reverse transcriptase-PCR\n\ncDNA was made from 1 \u03bcg total RNA isolated by TRIzol (Invitrogen) using the iScript cDNA Synthesis Kit (BioRad,\u00a0Hercules,\u00a0CA). The PCR reaction was carried out in accordance with the manufacturer\u2019s protocol using USB\u00a0Taq PCR Master Mix (Affymetrix , Santa Clara, CA) in a reaction volume of 25 \u03bcl with 100 ng of the following primers: mouse Irf7 sense: 5\u2019-CAGCCAGCTCTCACCGAGCG; antisense: 5\u2019-GCCGAGACTGCTGCTGTCCA, mouse Ifit3 (Isg49) sense: 5\u2019-GCCGTTACAGGGAAATACTGG; antisense: 5\u2019-CCTCAACATCGGGGCTCT; human IFIT3 (ISG56) sense: 5\u2019- CCCTGCAGAACGGCTGCCTA; antisense: 5\u2019-AGCAGGCCTTGGCCCGTTCA; mouse Isg15 sense: 5\u2019-AAGAAGCAGATTGCCCAGAA; antisense: 5\u2019- TCTGCGTCAGAAAGACCTCA; mouse Usp18 sense: 5\u2019-AAGGACCAGATCACGGACAC; antisense: 5\u2019- CACATGTCGGAGCTTGCTAA, mouse Actb sense: 5\u2019- GCTCCGGCATGTGCAA; antisense: 5\u2019-AGGATCTTCATGAGGTAGT-3\u2019, human ZBP1 sense: 5\u2019- TGCAGCTACAATTCCAGAGA; antisense: 5\u2019- GAAGGTGCCTGCTCTTCATC.\n\n### Western immunoblotting\n\nProtein extracts were prepared by lysing cells or tissues in RIPA buffer (Sigma-Aldrich, St Louis, MO) containing protease inhibitor cocktail (Sigma-Aldrich). Extracts were spun down at 10,000 x rpm for 10 min at 4\u00b0C to obtain the soluble fraction. Protein concentrations were determined using the BioRad Protein Assay (Bio-Rad). Equal amounts of protein were run on 4\u201320% precast gradient gels (Invitrogen) and blotted/transferred to Immobilon-P membrane (Millipore,\u00a0Burlington,\u00a0MA). Membranes were blocked with 5% non-fat milk-TBS-T buffer for 1\u00a0hr and incubated overnight with primary antibodies. The following antibodies were used: 1:10,000 anti-ISG49 and anti-ISG56 (a kind gift from Dr. Ganes Sen, Cleveland Clinic,\u00a0Cleveland,\u00a0OH). \u03b2-Actin (Santa Cruz Biotechnology, Santa-Cruz, CA) antibodies were used to verify equal protein loading and transfer. Anti-mouse and anti-rabbit secondary horseradish peroxidase-conjugated antibodies were purchased from Santa Cruz. ECL detection reagent (GE Healthcare, Little Chalfont, UK) was used for protein visualization on autoradiography film (Denville Scientific,\u00a0Holliston,\u00a0MA).\n\n### Northern hybridization\n\nMouse cDNA probes for SINE B1 (sense: 5\u2019-GCCTTTAATCCCAGCACTTG, antisense: 5\u2019-CTCTGTGTAGCCCTGGTCGT), were made by reverse-PCR from the total RNA of MEF cells. The cDNAs were labeled with [\u03b132P]-dCTP, using the Random Primed DNA Labeling Kit following the manufacturer\u2019s protocol (Roche,\u00a0Basel,\u00a0Switzerland). Total RNA was extracted from cells that were either untreated or treated with 10 \u03bcM of 5-aza-dC for 48 hr or 0.5 uM of CBL0137 for 24 hr using Trizol (Invitrogen). Total RNA (5 \u03bcg) was loaded onto each lane, electrophoresed in an agarose\u2013formaldehyde gel, and transferred onto a Hybond-N membrane (Amersham Pharmacia Biotech, Little Chalfont, UK). After UV crosslinking, the transfers were hybridized with [\u03b132P]-dCTP-labeled probes and analyzed by autoradiography at \u221280\u00b0C.\n\n### Immunofluorescent staining\n\nCells were plated in 35-mm glass bottom plates from MatTek Corporation (Ashland, MA). After treatment, cells were washed with PBS and fixed in 4% paraformaldehyde at room temperature for 15 min. For Z-DNA staining, a 4% paraformaldehyde solution containing 0.1% Triton-X100 in PBS was added to cells for 15 min immediately after removal of media. Cells were then washed three times with PBS. Blocking was done in 3% BSA, 0.1% Triton-X100 in PBS. Primary antibodies: Z-DNA from Abcam (Cambridge,\u00a0UK,\u00a0cat# ab2079) was used at 1:200 dilution. dsRNA antibody (J2) from Scicons (Hungary) was used at 1:50 dilution. AlexaFluor 488 or 594 donkey anti-mouse (Invitrogen, cat# A21206; 1:1000) and AlexaFluor 594 donkey anti-sheep (Jackson ImmunoResearch, West Groove, PA, cat# 713-585-147; 1:500) were used as secondary antibodies. Antibodies were diluted in 0.5% BSA\u00a0+0.05% Triton X100 in PBS. After each antibody incubation, cells were washed three times with 0.05% Triton X100 in PBS. For DNA counterstaining, 1 \u00b5g/ml solution of Hoechst 33342 in PBS was used. Images were obtained with a Zeiss Axio Observer A1 inverted microscope with N-Achroplan 100\u00d7/1.25 oil lens, Zeiss MRC5 camera, and AxioVision Rel.4.8 software.\n\n### Flow cytometry\n\nFlow\u00a0cytometry\u00a0was performed on LSR Fortessa A and BD LSRII UV A Cytometers (BD Biosciences, San Jose, CA). Obtained data were analyzed by the WinList 3D program (Verity Software House, Topsham, ME).\n\n### Microarray hybridization, RNA-sequencing, and analyses\n\nTotal RNA from cells was isolated using TRIzol reagent (Invitrogen). Two biological replicates of each condition were used for microarray hybridization and RNA-sequencing. RNA processing, labeling, hybridization, generation of libraries, and sequencing were performed by the Genomics Shared Resource (Roswell\u00a0Park). MouseWG-6 v2.0 Expression BeadChip array (Illumina, San Diego, CA) was used for hybridization. The TruSeq Stranded Total RNA Library Prep Kit with Ribo-Zero Mouse kit (Illumina) was used for library preparation. Sequencing was done using Illumina HiSeq 2000 system. Gene expression data were analyzed using GeneSpring GX for microarray hybridization and Strand NGS for RNA-sequencing (Agilent Genomics, Santa Clara, CA). GSEA was done using MSigDB (Broad Institute,\u00a0Cambridge,\u00a0MA). Defaults statistical methods recommended by the programs were used.\n\nThe GRCm38.p5 (Genome Reference Consortium Mouse Reference 38) assembly was used for all mouse data, and the set of annotated repeat types was taken from the Repbase database (Kapitonov and Jurka, 2008). Sailfish version 0.6.3 aligner was used to quantify the abundance of previously annotated RNA transcripts from RNA-seq data (Patro et al., 2014). Analyses were performed with a modified k-mer size of k\u00a0=\u00a017 and used 16 concurrent threads (p 16). Sailfish was run with the poly-A option, which discards k-mers consisting of k consecutive A\u2019s or T\u2019s, and bias correction was enabled. Importantly, a read was associated with a particular 'repeat' type if it satisfied the following criteria: (a) The read aligned to a single or multiple locations within the canonical sequence of that repeat type, or annotated instances of that repeat type within the genome, incorporating 13 bp (half of the read length) genomic sequences flanking the annotated instances. (b) No alignment of such or better quality to canonical or instance sequences associated with any other annotated repeat types could be obtained. An optional masking procedure, designed to exclude reads potentially originating from un-annotated repeat types, added a third requirement. (c) No alignment of such or better quality to any portion of the genome assembly that is not associated with the annotated instances of that repeat type could be obtained. Collectively, the combined repeat assembly file contained a single FASTA entry for each repeat type as defined in the Repbase database. The Transcripts per Million quantification number was computed as described in (Wagner et al., 2013), (Qian and Huang, 2005) and is meant as an estimate of the number of transcripts, per million observed transcripts, originating from each target transcript. Its benefit over the F/RPKM measure is that it is independent of the mean expressed transcript length (i.e. if the mean expressed transcript length varies between samples, for example, this alone can affect differential analysis based on the K/RPKM). Finally, we used the variational Bayesian EM algorithm integrated into sailfish, rather than the \u2018standard\u2019 EM algorithm, to optimize abundance estimates. p-Values were corrected using an FDR correction using Baggerley test {Baggerly et al. (2003) #450} for samples with replicates (wild-type MEF and lung) and Kal\u2019s Z-test {Kal et al. (1999) #449} on samples without replicates (p53-/- MEF).\n\n### Statistical analyses\n\nUnpaired t-test was used for comparison of quantitative data between control and experimental groups. Analyses were conducted using SAS v9.4 (Cary, NC) and all p-values are two-sided.\n\n### Animal experiments\n\nAll experiments were reviewed and approved by the Roswell\u00a0Park IACUC. Mice were maintained in the Laboratory Animal Shared Resource with controlled air, light, and temperature conditions, and fed ad libitum with free access to water. NIH Swiss and C57Bl/6J mice were purchased from The Jackson Laboratory (Bar Harbor, ME).\n\nFor the analysis of gene expression, groups of two mice (male or female, 6\u20138 weeks old) were treated intravenously with one dose of CBL0137 dissolved in 5% dextrose using the tail vein. Control mice received an injection of 5% dextrose.\n\nFor the comparison of the efficacy of different doses of CBL0137, SCID mice (male, 6\u20138 weeks old) were inoculated in both flanks with 106 HepG2 cells in PBS. When tumors reach\u00a0~50 mm3, mice were randomized into four groups (n\u00a0=\u00a05). Sample size was calculated by power analysis (Festing and Altman, 2002) using power of 95%, expected difference in control and treated groups of two-folds and standard deviation of 40% of mean value. Treatment was administered intravenously once a week.\n\nFor the comparison of CBL0137 anti-cancer efficacy depending on the presence of IFN response, groups of C57Bl/6 mice with wild type Ifnar1 or Ifnar1-/- were inoculated subcutaneously into one flank with 750,000 p53-/- MEF cells, Ifnar1 wild type or Ifnar1-/- transformed with HRasV12, 10 mice for each combination of mouse and tumor genotypes. Tumors were measured every day. When tumor in any mouse reached 50\u00a0mm3, this mouse was assigned to treatment group, first for 50 mg/kg CBL0137, second for vehicle (5% dextrose) and so on until five mice were accumulated in each group. Treatment was done via tail vein injection once a week for 3 weeks.\n",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "18c2ab71-6471-44fe-8fd2-91dc94df64e2",
+      "submission_id": "15531abc-13d8-4870-aa09-2567044763e5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joaqu\u00edn M Espinosa, University of Colorado School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.30842.030](https://doi.org/10.7554/eLife.30842.030)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"TRAIN in response to chromatin destabilization induced with anti-cancer small molecules\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Kevin Struhl as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Robert H Silverman (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nIn this manuscript, Leonova et al. report that the anticancer molecule curaxin destabilizes nucleosomes resulting in TRAIN. This group and others previously showed that demethylation of DNA results in transcription of repetitive elements that generate dsRNA and an IFN response. The authors now demonstrate that the tumor suppressive activity of curaxin is partially independent of p53 through TRAIN. They also indicate that it is independent of FACT, which had previously been identified as a putative target. Using microarray analysis, Leonova et al. find that curaxin induces the IFN pathway in the liver, lung, and spleen, consistently. They go on to show that several ISGs are upregulated on the order of hours rather than days in mouse tissues as well as mouse and human cell lines. The authors also demonstrate that this induction does not happen in transformed cell lines. The authors next show that increased IFN signaling in response to CBL0137 is associated with increased levels of dsRNA, potentially from transcription of repetitive elements, some of which are induced to similar levels as with HDAC inhibitors. Finally, the authors show that in a Ras-driven model, colony formation is impeded in the absence of p53, but not in the absence of p53 and IFNAR1.\n\nAfter discussion, the reviewers assessed that, in its present form, the manuscript did not provide enough new knowledge relative to the previous manuscripts by these teams on CBL0137 and TRAIN, as IFN induction by derepression of heterochromatin, and subsequent production of dsRNAs, has been demonstrated by this group and others in a number of settings. In view of the severity of these concerns, we would welcome a quick response from you as to the feasibility of the essential additional work. Please document your ability to perform the additional animal work within a reasonable length of time in order to persuade the reviewers that recommended \"revision\" is justified.\n\nIf these experiments will require a substantial effort, it may be best to withdraw your submission to a future date or to another journal.\n\nMajor Concerns:\n\n1) The main concern is that there is little if any proof that TRAIN is actually required for the anti-tumor properties of curaxin. The last figure of the paper hints at this by testing the impact of depletion of the IFNA receptor (in a p53 null background) on RAS-transformed MEF foci. The authors conclude that TRAIN 'impacts on the tumor-preventive activity of curaxin', but there MEF foci formation assays cannot be equated to tumorigenesis. Given that the authors have already involved FACT and p53 as potential mediators of drug action, what is the relative importance of TRAIN in the potential therapeutic action of the drug? The reviewers considered this to be a critical question that would require new experiments in animal models to assess the relative contribution of each of the pathways to the therapeutic action of the drug.\n\n2) Another major concern is regarding the conclusion that 'TRAIN occurs in response to chromatin opening'. This conclusion if unfounded, as a cause-effect relationship between curaxin, HDAC inhibitors, chromatin opening and TRAIN cannot be established. Curaxin and HDAC inhibitors could be acting by other mechanisms beyond loosening nucleosomes to activate TRAIN. To prove that nucleosome opening is the key intermediate in the 'signaling pathway' seems impossible to demonstrate experimentally. As such, there is a correlation here, but no cause-effect relationship. The manuscript should be carefully rewritten to avoid making cause-effect relationships from these correlative observations.\n\n3) Figures 1 and 2 show that CBL0137 up-regulates ISGs in vivo in a FACT- independent manner; by examining 2 FACT-positive and 2 FACT-negative mouse tissues. Three doses of CBL0137 were used correlating to \"weak, intermediate, and strong\" anti-cancer activity. However, the lowest dose used, 30mg/kg actually increased tumor growth (as shown in Figure 1\u2014figure supplement 1). Some explanation for this should be stated in the text. The next two highest doses of CBL0137 (60 and 90mg/kg) did reduce tumor growth.\n\n4) Only one gene (IFIT3) was up-regulated in all four organs (lung, spleen, liver, testis) by the Venn diagram, very few genes were affected in testis (Figure 1B, C), yet IFITm3 was also up-regulated in all four organs (Figure 1D). Why is IFITm3 not in the Venn diagram center?\n\n5) There was no mention in the text that IFITm3 is unrelated to IFIT3, although levels of IFITm3 are reported in Figure 1D. Some explanation for including IFITm3 in Figure 1D should be provided in the text, while mentioning IFIT3 and IFITm3 are unrelated IFN inducible proteins.\n\n6) CBL0137 induced an IFN response in normal mouse and human cells, but not in tumor cells. However, using an ISRE-reporter construct, activation of the ISRE could be detected indirectly in both mouse and human tumor cells (Figure 4D, E). It is suggested that failure to detect ISG up-regulation in tumor cells is due to inactivation of the IFN response. However, activation of ISREs should lead to up-regulation of endogenous ISGs, not just of the ISRE-reporter construct. Further explanation should be provided to account for this discrepancy. Is the reporter construct more sensitive to IFN than endogenous ISGs? A comparison of different low doses of exogenous IFN on the ISRE-reporter vs. endogenous ISGs might resolve this issue. This should be done on normal and tumor cells.\n\n7) CBL0137 treatment greatly up-regulated levels of dsRNA from repetitive elements in the genome, including SINE B1 and LINE1 (Figure 6). CBL0137 treated MEF p53-/- Ifnar-/- and HT1080 are convincing, but not the MEF p53-/-, perhaps the authors have better images of this (Figure 6A, left two panels)?\n\n8) There does not appear to be much of an up-regulation of the repetitive transcripts in the lungs of p53+/+ mice in Figure 6D, this should be mentioned in the text with an explanation or statistics showing significance provided (add p-values for all of Figure 6D). The location of Table S7, referred to in the text, is not clear labeled and could be not be evaluated.\n",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cb2c8ead-d2a1-47ba-8d67-cb333c82e69a",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C1",
+      "claim": "Curaxin CBL0137 destabilizes nucleosomes via disruption of histone/DNA interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously found that DNA demethylation on p53-deficient background leads to transcription of repetitive heterochromatin elements, followed by an interferon response, a phenomenon we named TRAIN (Transcription of Repeats Activates INterferon). Here, we report that curaxin, an anticancer small molecule, destabilizing nucleosomes via disruption of histone/DNA interactions, also induces TRAIN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a direct assertion about the mechanism of curaxin action.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "ba9e1c36-976c-4cf7-98ca-493876dc9b8e",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C2",
+      "claim": "Curaxin inhibits oncogene-induced transformation in an interferon-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, curaxin inhibits oncogene-induced transformation and tumor growth in mice in an interferon-dependent manner, suggesting that anticancer activity of curaxin, previously attributed to p53-activation and NF-kappaB-inhibition, may also involve induction of interferon response to epigenetic derepression of the cellular 'repeatome'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript showing transformation assays with Ifnar1 knockout cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "1e13841c-5563-4bea-ae2c-7e724ac64f15",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C3",
+      "claim": "Curaxin inhibits tumor growth in mice in an interferon-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, curaxin inhibits oncogene-induced transformation and tumor growth in mice in an interferon-dependent manner, suggesting that anticancer activity of curaxin, previously attributed to p53-activation and NF-kappaB-inhibition, may also involve induction of interferon response to epigenetic derepression of the cellular 'repeatome'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by tumor growth experiments in Ifnar1-/- mice shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "284e1b28-a6d7-4bdc-adc6-8dc3a4907a9a",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C4",
+      "claim": "HDAC inhibitors also induce TRAIN.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we observed that another type of drugs decondensing chromatin, HDAC inhibitor, also induces TRAIN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing TSA (an HDAC inhibitor) induces interferon response in MEF cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "c86a688f-1302-400e-ad0d-30dd8f253c2f",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C5",
+      "claim": "TRAIN may be a mechanism ensuring epigenetic integrity of mammalian cells via elimination of cells with desilenced chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we proposed that TRAIN may be one of the mechanisms ensuring epigenetic integrity of mammalian cells via elimination of cells with desilenced chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal based on the observed phenomena.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "8c2c72c5-df67-46ce-8dd0-64e5400afd01",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C6",
+      "claim": "Curaxins bind DNA via intercalation of the carbazole body accompanied by protrusion of side chains into DNA grooves.",
+      "claim_type": "EXPLICIT",
+      "source": "Our search for the mechanism of action of curaxins resulted in the discovery that curaxins bind DNA via intercalation of the carbazole body accompanied by the protrusion of two side chains into the major groove and a third side chain into the minor groove of DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work (Safina et al., 2017) and represents established data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "f4d00647-20a1-4d8d-8b2c-49fc7f45eafe",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C7",
+      "claim": "Curaxins have no effect on DNA chemical structure and do not cause DNA damage in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Curaxins have no effect on DNA chemical structure, that is, they do not cause any DNA damage in mammalian cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a direct observation from previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "0ee3db29-893b-4059-931d-a6bca9b7b3b8",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C8",
+      "claim": "Curaxin binding to DNA changes both the helical shape and flexibility of DNA and reduces its negative charge.",
+      "claim_type": "EXPLICIT",
+      "source": "However, their binding to DNA changes both the helical shape and flexibility of DNA and reduces its negative charge (Safina et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work (Safina et al., 2017).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "545e57a7-15aa-499f-ba26-2cf885a3a9a0",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C9",
+      "claim": "Alterations of DNA helical shape, charge and flexibility caused by curaxins force DNA to dissociate from the histone octamer in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Alterations of DNA helical shape, charge and flexibility, caused by curaxins, force DNA to dissociate from the octamer in vitro and in vivo (Safina et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work (Safina et al., 2017).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "af4fea29-a173-40e4-b974-595941a42fff",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C10",
+      "claim": "At lower concentrations of CBL0137, DNA is unfolded from H2A/H2B dimers leading to their detachment.",
+      "claim_type": "EXPLICIT",
+      "source": "At lower concentrations of curaxin CBL0137, DNA is first unfolded from the outer parts of the nucleosome, that is, from H2A/H2B dimers located at both sides of the inner H3/H4 tetramer, which leads to the detachment of the H2A/H2B dimer(s) and exposure of the surface of the H3/H4 tetramer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work (Safina et al., 2017).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "a848d9c7-9190-4bb6-8266-3e2a28afc76e",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C11",
+      "claim": "At higher CBL0137 concentrations, DNA is unwrapped from the H3/H4 tetramer leading to complete nucleosome disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "At higher CBL0137 concentrations, DNA is unwrapped from the inner H3/H4 tetramer, which leads to complete nucleosome disassembly (Safina et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work (Safina et al., 2017).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "fd503eff-60ff-47e0-9b00-ef97a312de1a",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C12",
+      "claim": "Treatment of cells with CBL0137 causes massive transition of B-DNA into left-handed Z-DNA form.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown a massive transition of right-handed B-DNA in cells treated with curaxin CBL0137 into the left-handed Z-DNA form (Safina et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work (Safina et al., 2017).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "4d538109-0e4f-4379-a55f-790f8500645f",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C13",
+      "claim": "Treatment of cells with CBL0137 leads to dose-dependent destabilization and disassembly of chromatin in the absence of DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, treatment of cells with CBL0137 leads to dose-dependent destabilization and disassembly of chromatin in the absence of DNA damage and, most importantly, of the classical DNA damage response, providing an opportunity to study how a cell reacts to chromatin damage and the role of chromatin perturbations in the anticancer activity of curaxins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from previous work and provides the rationale for the current study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "ba7cd466-a27b-4c39-a9c7-a5c7da85292b",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C14",
+      "claim": "No phosphorylation of p53 N-terminal serines was detected in curaxin-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no phosphorylation of p53 N-terminal serines, which are obligatory markers of the DNA damage response, was detected in curaxin-treated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work (Gasparian et al., 2011).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "39bd2c36-f5d1-4108-b575-fad7a381a0f7",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C15",
+      "claim": "There was no activation of DNA-damage-sensitive kinases (ATM, ATR, DNA-PK) in curaxin-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, there was no activation of DNA-damage-sensitive kinases, such as ATM, ATR, and DNA-PK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work (Gasparian et al., 2011).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "bcd223c1-3599-45b4-9dde-3809714bed4c",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C16",
+      "claim": "p53 in curaxin-treated cells was phosphorylated at serine 392 by casein kinase 2 (CK2).",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, p53 in curaxin-treated cells was phosphorylated at serine 392 by casein kinase 2 (CK2) that formed a complex with the histone chaperone Facilitates Chromatin Transcription (FACT) (Gasparian et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work (Gasparian et al., 2011).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "c6723c71-50ef-4a46-97cd-5f51335122a6",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C17",
+      "claim": "FACT consists of two conservative proteins present in all eukaryotes, SPT16 and SSRP1.",
+      "claim_type": "EXPLICIT",
+      "source": "FACT consists of two conservative proteins present in all eukaryotes, Suppressor of Ty 16 (SPT16) and Structure Specific Recognition Protein 1 (SSRP1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about FACT composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "17c99ea3-0b39-4e7c-8e26-98a97f9ed2cb",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C18",
+      "claim": "In basal conditions FACT is involved in transcription elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "In basal conditions FACT is involved in transcription elongation (Belotserkovskaya et al., 2003), (Gurova and Studitsky, 2018; in preparation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "da7175c1-92a4-452c-b198-9f3a7598ad72",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C19",
+      "claim": "Human FACT binds poorly intact nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Human FACT binds poorly intact nucleosomes (Tsunaka et al., 2016), (Safina et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "4be2cf23-6798-4eed-aa02-37cc6ba6f539",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C20",
+      "claim": "Nucleosome disassembly caused by curaxin opens multiple FACT-binding sites normally hidden inside the nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "We have found that nucleosome disassembly caused by curaxin opens multiple FACT-binding sites, which are normally hidden inside the nucleosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work (Safina et al., 2017).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "5753907f-a11e-4fd8-9664-1a87f408b8ee",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C21",
+      "claim": "Chromatin unfolding occurs first in heterochromatic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin unfolding occurs first in heterochromatic regions, and all cellular FACT is rapidly relocated into these regions and depleted from the nucleoplasm (Safina et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work (Safina et al., 2017).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "5342a69d-899c-4390-87b2-45cae7033ac7",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C22",
+      "claim": "All cellular FACT is rapidly relocated into heterochromatic regions and depleted from the nucleoplasm after curaxin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin unfolding occurs first in heterochromatic regions, and all cellular FACT is rapidly relocated into these regions and depleted from the nucleoplasm (Safina et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work (Safina et al., 2017).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "7e89fa43-3d01-43a3-8b42-7c2267df50bc",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C23",
+      "claim": "FACT binds Z-DNA via the CID domain of the SSRP1 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that FACT not only binds partially disassembled nucleosomes but also Z-DNA via the CID (c-terminal intrinsically disordered) domain of the SSRP1 subunit (Safina et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work (Safina et al., 2017).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "35d941c0-ad6b-48fb-a72c-c7b97227ba73",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C24",
+      "claim": "The HMG domain of SSRP1 binds non-B DNA, bent or cruciform.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, it was already known that the immediate neighboring domain, HMG (high mobility group), also binds non-B DNA, bent or cruciform (Gariglio et al., 1997; Krohn et al., 2003; Yarnell et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "d6104bfc-2fee-4a6f-b71e-73b5cd806439",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C25",
+      "claim": "SSRP1 binding to DNA results in CK2-mediated signal for p53 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases of SSRP1 binding to DNA, there is a CK2-mediated signal for p53 activation (Gasparian et al., 2011; Krohn et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "d562dd9e-c1f4-45e8-92c5-0f9393d314b0",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C26",
+      "claim": "CBL0137 activates transcription from heterochromatic regions normally silenced in cells, including centromeric and pericentromeric repeats and endogenous retroviral elements.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that independently of the presence of FACT, CBL0137 activates transcription from heterochromatic regions normally silenced in cells, including centromeric and pericentromeric repeats and endogenous retroviral elements, associated with accumulation of double-stranded RNAs (dsRNA) in cells and activation of the type I interferon (IFN) response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data showing increased transcription of repetitive elements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "f0d91a59-1271-468f-91fe-036ec6949960",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C27",
+      "claim": "CBL0137 treatment is associated with accumulation of double-stranded RNAs (dsRNA) in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that independently of the presence of FACT, CBL0137 activates transcription from heterochromatic regions normally silenced in cells, including centromeric and pericentromeric repeats and endogenous retroviral elements, associated with accumulation of double-stranded RNAs (dsRNA) in cells and activation of the type I interferon (IFN) response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence staining with dsRNA antibody.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "60e8390b-f447-42a8-8c08-ac6737b2242c",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C28",
+      "claim": "CBL0137 treatment leads to activation of the type I interferon (IFN) response.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that independently of the presence of FACT, CBL0137 activates transcription from heterochromatic regions normally silenced in cells, including centromeric and pericentromeric repeats and endogenous retroviral elements, associated with accumulation of double-stranded RNAs (dsRNA) in cells and activation of the type I interferon (IFN) response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple assays including RT-PCR, Western blot, and reporter assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "673b3c51-ed68-42c6-8116-ec26d113ba4c",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C29",
+      "claim": "TRAIN was observed previously upon DNA demethylation.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon, named TRAIN (Transcription of Repeats Activates INterferon) (Leonova et al., 2013) was observed previously upon DNA demethylation (Chiappinelli et al., 2015; Guryanova et al., 2016; Roulois et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "a8c59dd6-7057-496f-89b1-719c45de3b9c",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C30",
+      "claim": "Liver and lung were selected as FACT-negative tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Liver and lung were selected as FACT-negative, and spleen and testis were used as FACT-positive tissues ([Garcia et al., 2011] and Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by IHC staining shown in Figure 1A and cited from previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "899fb286-9e85-4686-8973-8ae8f788c26b",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C31",
+      "claim": "Spleen and testis were used as FACT-positive tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Liver and lung were selected as FACT-negative, and spleen and testis were used as FACT-positive tissues ([Garcia et al., 2011] and Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by IHC staining shown in Figure 1A and cited from previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "78adf7b7-8bd6-4cb1-b5b1-9e5ab2e47c9f",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C32",
+      "claim": "Expression of Ifit3 gene was upregulated in all organs >1.5-fold with p<0.05 in response to CBL0137.",
+      "claim_type": "EXPLICIT",
+      "source": "There was almost no overlap in genes downregulated in response to CBL0137 among different organs (Figure 1B, Figure 2\u2014source data 1\u20136). However, expression of one gene, Ifit3, was upregulated in all organs > 1.5-fold with p<0.05 (Figure 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microarray data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "4b729fc1-4178-47fa-af6c-ec4742d0db58",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C33",
+      "claim": "The interferon (IFN) signaling pathway was upregulated in response to doses above 30 mg/kg CBL0137 in all organs except testis.",
+      "claim_type": "EXPLICIT",
+      "source": "The interferon (IFN) signaling pathway was upregulated in response to doses above 30 mg/kg in all organs except testis, which was not analyzed due to the low number of upregulated genes (Figure 2A, Figure 2 \u2013 Figure Supplement 1 and Figure 2\u2014source data 1\u20136).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GSEA analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "b7bd06b5-455f-4f02-b4cb-6b198a7d63c8",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C34",
+      "claim": "The transcription factors that regulate genes elevated in response to CBL0137 are STAT1, IRF1, IRF8 and IRF7.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcription factors that regulate genes elevated in response to CBL0137 are STAT1, IRF1, IRF8 and IRF7 (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GSEA analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "601e4757-646c-4deb-bf61-3a59c3d83df1",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C35",
+      "claim": "CBL0137 treatment leads to activation of the IFN response in all tissues independently of FACT expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis suggested that CBL0137 treatment leads to the activation of the IFN response in all tissues independently of FACT expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that IFN response is activated in both FACT-positive and FACT-negative tissues.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "684c40e2-3d05-46f1-8478-69473e6b001f",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C36",
+      "claim": "CBL0137 inhibits NF-kappaB via a FACT-dependent mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown previously that CBL0137 inhibits NF-kappaB via a FACT-dependent mechanism (Gasparian et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "46038f2c-c66f-4a24-96f0-c27503b8a2fc",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C37",
+      "claim": "The peak of Irf7 mRNA induction was seen at 24 hr following treatment with either 60 or 90 mg/kg CBL0137.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak of induction was already seen at 24 hr following treatment with either 60 or 90 mg/kg CBL0137, while 30 mg/kg showed slower kinetics (Figure 3D,E, and Figure 3\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 3D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "f82f22fd-b3b6-4a09-9a8f-a0c1dc871d83",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C38",
+      "claim": "Increased levels of Isg15 and Usp18 transcripts were detected as early as 6 hrs post-treatment with 90 mg/kg CBL0137 and reached a peak at 12 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased levels of two other IFN responsive transcripts, Isg15 and Usp18, were detected as early as 6 hrspost-treatment with 90 mg/kg CBL0137 and reached a peak at 12 hr, then gradually declined (Figure 3F,G, and Figure 3\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 3F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "3f931414-4823-41b3-b77f-861c90b71a5b",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C39",
+      "claim": "The CBL0137-induced IFN response is faster than that reported with other small molecules and is closer to the response observed with biologicals.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the CBL0137-induced IFN response is faster than that reported with other small molecules and is closer to the response observed with biologicals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison of kinetics data with literature reports.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "1113d543-c153-4717-b732-c4f0095e4767",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C40",
+      "claim": "CBL0137 causes a rapid and robust induction of the IFN response in all tissues of mice that were tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments with mice demonstrated that CBL0137 caused a rapid and robust induction of the IFN response in all tissues of mice that were tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple experiments showing IFN response in different mouse tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "c5dc8f3d-16ec-49bf-9893-08258513810d",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C41",
+      "claim": "CBL0137 induces an increase in mRNA and protein levels of IFN-inducible genes in both human and mouse fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected an increase in mRNA and protein levels of IFN-inducible genes in both human and mouse fibroblasts (Figure 4A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR and Western blot data shown in Figure 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "88cd1c9c-4548-46e8-b07a-c7a59b070f33",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C42",
+      "claim": "Effect of CBL0137 on IFN-inducible genes was stronger on p53 null than in p53 wild-type MEF.",
+      "claim_type": "EXPLICIT",
+      "source": "Effect was stronger on p53 null, than in p53 wild-type MEF (Figure 4B,C), as we observed before with DNA demethylating agents (Leonova et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR and Western blot data shown in Figure 4B,C and cited from previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "61fe53b2-7a2e-4e34-bdb1-14f9508ca424",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C43",
+      "claim": "No induction of IFN-inducible genes was detected in tumor cells of mouse or human origin.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no induction of IFN-inducible genes was detected in tumor cells of mouse or human origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "4a9c1db8-f6ae-4ec2-b783-d1ef5b5edfd2",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C44",
+      "claim": "Different components of the IFN response are frequently inactivated in tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Since different components of the IFN response are frequently inactivated in tumors (Kulaeva et al., 2003), we employed a reporter assay that detected an IFN response through the activation of a consensus IFN-sensitive response element (ISRE), which drove the expression of mCherry or luciferase (Imam et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "fbbea8c1-430d-493a-98ca-a737dcf90740",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C45",
+      "claim": "CBL0137 induces an IFN response in both mouse and human tumor cells as detected by ISRE reporter assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these assays, we observed that CBL0137 also induces an IFN response in both mouse and human tumor cells (Figure 4D,E and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reporter assay data shown in Figure 4D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "e33233f9-ef36-4e16-a09a-6878e7c1135e",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C46",
+      "claim": "A deficiency in Ifnar1 reduced the induction of Ifit3 expression after CBL0137.",
+      "claim_type": "EXPLICIT",
+      "source": "A deficiency in either Ifnar1 and Irf7 reduced or eliminated the induction of Ifit3 expression after CBL0137, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "bf9a34d6-d1c4-45d7-ae5a-a51350aa99f8",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C47",
+      "claim": "A deficiency in Irf7 eliminated the induction of Ifit3 expression after CBL0137.",
+      "claim_type": "EXPLICIT",
+      "source": "A deficiency in either Ifnar1 and Irf7 reduced or eliminated the induction of Ifit3 expression after CBL0137, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "be84b923-2663-48af-8821-e700ec05f566",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C48",
+      "claim": "The loss of p53 stimulated the IFN response to CBL0137.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the loss of p53 stimulated the response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-PCR and Western blot data shown in Figure 5A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "4fa29286-bcbc-40bd-99a1-5e07c689d92e",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C49",
+      "claim": "There was no effect of Irf1 knockout on the induction of Ifit3 expression after CBL0137.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no effect of Irf1 knockout (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "62511824-1ab3-456f-98db-e87689c0370c",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C50",
+      "claim": "High doses of CBL0137 caused disassembly of nucleosomes in cells, which led to extensive negative supercoiling of DNA and a transition from B-DNA into left-handed Z-DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we have recently shown that high doses of CBL0137 caused disassembly of nucleosomes in cells, which led to the extensive negative supercoiling of DNA and a transition from B-DNA into left-handed Z-DNA (Safina et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work (Safina et al., 2017).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "97e5a729-cc97-4980-a371-47552f9b4690",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C51",
+      "claim": "The loss of ZBP1 expression did not significantly change the induction of ISRE-mCherry reporter activity by CBL0137.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the effect of CBL0137 on ISRE-mCherry reporter activity in these cells to wild-type cells and cells transduced with control gRNA and observed insignificant changes in the induction of the reporter activity 48 hr after CBL0137 treatment (Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reporter assay data shown in Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "603f0c63-8dcb-45b6-a8da-07499082b83f",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C52",
+      "claim": "There was no Z-DNA present in the cells treated with CBL0137 doses that caused a robust IFN response.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, there was no Z-DNA present in the cells treated with CBL0137 doses that caused a robust IFN response as judged by the absence of staining with Z-DNA antibodies (Figure 6\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 6\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "0eaca101-0cfd-486d-bee7-e2f015eb11f1",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C53",
+      "claim": "Z-DNA transition induced by CBL0137 does not play role in the induction of IFN response in CBL0137-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we concluded that Z-DNA transition induced by CBL0137 does not play role in the induction of IFN response in CBL0137-treated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the ZBP1 knockout and Z-DNA staining experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "8cb9071c-0cf4-494e-8742-24043091ad81",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C54",
+      "claim": "Increased staining with dsRNA antibody was observed in CBL0137-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an antibody to dsRNA (Targett-Adams et al., 2008), we observed increased staining in CBL0137-treated cells (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 6A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "e6e83f38-6d75-4145-bf2d-130bff16f4ba",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C55",
+      "claim": "After CBL0137 treatment, a single lower molecular weight band appeared that was strongly bound by the B1 probe.",
+      "claim_type": "EXPLICIT",
+      "source": "After CBL0137 treatment, a single lower molecular weight band appeared that was strongly bound by the B1 probe and was similar in size and abundance to the band in cells treated with the positive control (5-aza-cytidine (5-aza)) (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Northern blot data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "00c29a27-4eb4-48d1-9702-757fca9481c8",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C56",
+      "claim": "RNA-seq analysis demonstrated a significant increase in the number of transcripts corresponding to several classes of endogenous viruses as well as GSAT and SATMIN repeats in CBL0137-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis demonstrated a significant increase in the number of transcripts corresponding to several classes of endogenous viruses as well as GSAT (pericentromeric) and SATMIN (centromeric) repeats in cells (Figure 6D, Figure 6\u2014figure supplements 1 and Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "2f156ac5-eb56-40ed-95bf-d150a1f1ff71",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C57",
+      "claim": "Treatment with CBL0137 leads to the activation of the transcription of heterochromatic regions, which are not or minimally transcribed under basal conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that treatment with CBL0137 leads to the activation of the transcription of heterochromatic regions, which are not or minimally transcribed under basal conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the RNA-seq data showing increased transcription of repetitive elements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "8948d214-b867-40ea-b672-16e533f2356f",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C58",
+      "claim": "Loss of FACT via c-trapping may lead to activation of silenced transcription since mutations of FACT subunits in yeast causes transcription from cryptic sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of FACT via c-trapping may lead to activation of silenced transcription since mutations of FACT subunits in yeast causes transcription from cryptic sites that are covered by nucleosomes in basal conditions (Mason and Struhl, 2003), (Jamai et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work in yeast.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "9c891fca-6ac1-444f-8542-e6a75bd37073",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C59",
+      "claim": "FACT is important for chromatin assembly at centromeres.",
+      "claim_type": "EXPLICIT",
+      "source": "FACT is also important for chromatin assembly at centromeres (Okada et al., 2009; Prendergast et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "60521ed2-75c8-4e26-af08-34b42c918ea0",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C60",
+      "claim": "CBL0137 treatment increased the proportion of GFP-expressing cells in HeLa-TI cells.",
+      "claim_type": "EXPLICIT",
+      "source": "An increase in the proportion of GFP-expressing cells was also observed after CBL0137 treatment (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "816add2d-0d29-42a7-897b-c5bc95d81b98",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C61",
+      "claim": "Both TSA and CBL0137 induced expression of Ifit3 and Irf7 genes in MEF cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In MEF cells, both TSA and CBL0137 induced expression of Ifit3 and Irf7 genes (Figure 7B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "c7e43ce3-c241-4092-9b8c-d0b0423bade7",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C62",
+      "claim": "TSA caused only a weak increase in ISRE reporter activity (1.5 folds versus >5 folds for CBL0137) only at the highest concentration (500 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "TSA caused only a weak increase in ISRE reporter activity (1.5 folds versus >5 folds for CBL0137) only at the highest concentration (500 nM, Figure 7C) when evidence of toxicity was present.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reporter assay data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "4bf07933-7b7a-4998-9f12-6007524dabaf",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C63",
+      "claim": "TSA treatment caused an increase in acetylated histone H3 levels.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, TSA treatment caused an increase in acetylated histone H3 levels, while CBL0137 decreased the amount of chromatin-bound histone H3 (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "932811ba-205b-4ba1-aea7-459ced2e2222",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C64",
+      "claim": "CBL0137 decreased the amount of chromatin-bound histone H3.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, TSA treatment caused an increase in acetylated histone H3 levels, while CBL0137 decreased the amount of chromatin-bound histone H3 (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "b8df8f79-285d-4b42-b31f-854a72706e00",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C65",
+      "claim": "Substantial loss of core histones (chromatin disassembly) was observed with approximately 5 \u03bcM CBL0137.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as we saw previously (Safina et al., 2017), substantial loss of core histones (i.e. chromatin disassembly) was observed with approximately 5 \u03bcM CBL0137, which is much higher than the concentrations at which we observed TRAIN (0.5\u20131 \u03bcM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work (Safina et al., 2017).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "4030e84b-2b60-4556-9c06-c3f6df5846ce",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C66",
+      "claim": "Nucleosome 'opening' may be enough to create conditions for TRAIN without nucleosome disassembly or dissociation of nucleosome parts.",
+      "claim_type": "EXPLICIT",
+      "source": "We proposed that nucleosome 'opening,' that is, the state of loose contact between the DNA and histone core without loss of histones from the core (proposed in the review [Zlatanova et al., 2009]), may be enough to create conditions for TRAIN. Namely, no nucleosome disassembly or dissociation of nucleosome parts is needed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal based on the observation that TRAIN occurs at lower CBL0137 concentrations than those causing nucleosome disassembly.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "9cbbb598-6a03-44a9-9608-bda1f146eefc",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C67",
+      "claim": "CBL0137 treatment led to a redistribution of H1.5 from the chromatin to the nucleoli.",
+      "claim_type": "EXPLICIT",
+      "source": "CBL0137 treatment led to a redistribution of H1.5 from the chromatin to the nucleoli, similarly to the effect of CBL0137 on core histones (Safina et al., 2017) but this phenomenon was observed at a faster and at much lower CBL0137 concentrations (Figure 8A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live cell imaging data shown in Figure 8A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "3d0dc807-cbd6-4342-9dd3-4ec42d5879fd",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C68",
+      "claim": "TRAIN in CBL0137-treated cells was observed at the same concentration range as redistribution of histone H1 and before the disassembly of the nucleosome core.",
+      "claim_type": "EXPLICIT",
+      "source": "TRAIN in CBL0137-treated cells was observed at the same concentration range as redistribution of histone H1 and before the disassembly of the nucleosome core, suggesting that nucleosome opening is sufficient to allow the transcription of heterochromatic regions in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing the concentration ranges for different effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "b8630482-e0ac-42be-b89c-e12cfb8e949b",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C69",
+      "claim": "Nucleosome opening is sufficient to allow the transcription of heterochromatic regions in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "TRAIN in CBL0137-treated cells was observed at the same concentration range as redistribution of histone H1 and before the disassembly of the nucleosome core, suggesting that nucleosome opening is sufficient to allow the transcription of heterochromatic regions in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that TRAIN occurs before nucleosome disassembly.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "e2b17942-6cde-43d1-8321-fff700b90e1b",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C70",
+      "claim": "The degree of TRAIN depends on cell type and the mode of chromatin opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we observed the presence of TRAIN using different chromatin modifying agents; however, its degree depends on cell type and the mode of chromatin opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing the effects of CBL0137 and TSA in different cell types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "c7cb716a-a980-4491-9dc3-24182512f4bf",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C71",
+      "claim": "Administration of CBL0137 to tumor prone mice prior to tumor onset significantly reduced the incidence of cancer and diminished the occurrence of aggressive forms of breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that administration of CBL0137 to tumor prone mice prior to tumor onset significantly reduced the incidence of cancer and diminished the occurrence of aggressive forms of breast cancer (Koman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "6c1c399a-5252-445f-ab69-401bb7671869",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C72",
+      "claim": "Activation of IFN may be an additional mechanism to eliminate transformed cells, because they are more sensitive to IFN-mediated apoptosis than normal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, activation of IFN may be an additional mechanism to eliminate transformed cells, because they are more sensitive to IFN-mediated apoptosis than normal cells (reviewed in [Parker et al., 2016]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a review.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "0796f3cd-4a1b-4790-8cdf-803dfcc8edf5",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C73",
+      "claim": "The number of transformed foci was significantly reduced in cells treated with CBL0137 compared to untreated cells, but only if the cells had functional IFN receptor (Ifnar1+/+).",
+      "claim_type": "EXPLICIT",
+      "source": "After 10 days, the number of transformed foci was significantly reduced in cells treated with CBL0137 compared to untreated cells, but only if the cells had functional IFN receptor (Ifnar1+/+, Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by transformation assay data shown in Figure 9A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "033da36c-d6a4-4dba-b44d-2fd377feb42f",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C74",
+      "claim": "TRAIN may be an additional mechanism by which CBL0137 exerts its tumor preventive effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, TRAIN may be an additional mechanism by which CBL0137 exerts its tumor preventive effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the transformation assay results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "89e5c0e2-4af3-4ad1-9e47-b4aea8ee7550",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C75",
+      "claim": "Wild type tumors did not grow at all since the start of CBL0137 treatment, while Ifanr1-/- tumors continued growing, albeit slower than vehicle treated tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild type tumors did not grow at all since the start of treatment, while Ifanr1-/- tumors continued growing, albeit slower than vehicle treated tumors (Figure 9B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tumor growth data shown in Figure 9B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "9b69f6a6-285b-43b6-84ba-79de2f79f65a",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C76",
+      "claim": "Induction of IFN response by CBL0137 is an important component of the anticancer activity of CBL0137.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, induction of IFN response by CBL0137 is an important component of the anticancer activity of CBL0137.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the tumor growth experiments in Ifnar1-/- mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "2566fd32-a1c4-45c7-8513-75521734c48e",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C77",
+      "claim": "At lower concentrations of CBL0137 (<1 \u03bcM in cells), the nucleosome 'opens,' loses the linker histone H1 without dissociation or loss of core histones.",
+      "claim_type": "EXPLICIT",
+      "source": "At lower concentrations of CBL0137 (<1 \u03bcM in cells), the nucleosome 'opens,' loses the linker histone H1 without dissociation or loss of core histones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by live cell imaging data showing H1 redistribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "78cedb36-54a3-4e8c-bb30-7550aeb8a8ef",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C78",
+      "claim": "At higher CBL0137 concentrations (1\u20135 \u03bcM), dimer detachment occurs with occasional loss of core histones.",
+      "claim_type": "EXPLICIT",
+      "source": "At higher CBL0137 concentrations (1\u20135 \u03bcM), dimer detachment occurs with occasional loss of core histones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work (Safina et al., 2017).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "cb6d6f5d-8d8c-414e-bf39-97267135a721",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C79",
+      "claim": "At CBL0137 concentrations greater than 5 \u03bcM, the nucleosome is disassembled, and core histones are evicted from the chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "At CBL0137 concentrations greater than 5 \u03bcM, the nucleosome is disassembled, and core histones are evicted from the chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work (Safina et al., 2017).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "07345bc5-d5dd-4ac3-b8bf-730564ebccad",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C80",
+      "claim": "After a short incubation with <1 \u03bcM CBL0137, the drug can be washed from the cells with almost no harm to the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, after a short incubation with <1 \u03bcM CBL0137, the drug can be washed from the cells with almost no harm to the cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about reversibility of CBL0137 effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "7a8f1d89-abc5-4deb-a897-2377568bb1a7",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C81",
+      "claim": "Cells incubated with 1\u20133 \u03bcM CBL0137 for no more than 1 hr survive with some loss of viability.",
+      "claim_type": "EXPLICIT",
+      "source": "cells incubated with 1\u20133 \u03bcM CBL0137 for no more than 1 hr survive with some loss of viability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about reversibility of CBL0137 effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "33473450-e9e2-41b9-bb72-01d99bc2f5b1",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C82",
+      "claim": "Treatment with >5 \u03bcM CBL0137 for more than 15 min leads to complete cell death after 48 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "However, treatment with >5 \u03bcM CBL0137 for more than 15 min leads to complete cell death after 48 hr, which is in line with the complete disassembly of chromatin (Figure 10B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation about irreversibility of CBL0137 effects at high concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "bdbbc613-342b-476d-9bfa-8998244bfea5",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C83",
+      "claim": "The first cellular factor that 'reacts' to the problems with chromatin packaging in CBL0137-treated cells was histone chaperone FACT, which underwent c-trapping in response to nucleosome disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "The first cellular factor that we found, 'reacting' to the problems with chromatin packaging in CBL0137-treated cells, was histone chaperone FACT, which underwent c-trapping in response to nucleosome disassembly (Safina et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work (Safina et al., 2017).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "037039b3-267a-4cee-b4df-64118db8b446",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C84",
+      "claim": "Human FACT cannot bind and uncoil a 'closed' nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "It was shown that human FACT cannot bind and uncoil a 'closed' nucleosome (Tsunaka et al., 2016; Valieva et al., 2017) (Figure 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is cited from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "57d3fe46-1afa-41e5-bfd8-bb1c2466e9ac",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C85",
+      "claim": "Nucleosome opening allows FACT to invade the nucleosome and bind the H3/H4 tetramer via the middle domain of SPT16 and the H2A/H2B dimer via the c-terminal portions of both subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "However, nucleosome opening most probably allows FACT to invade the nucleosome and bind the H3/H4 tetramer via the middle domain of SPT16 and the H2A/H2B dimer via the c-terminal portions of both subunits (Belotserkovskaya et al., 2003; Kemble et al., 2015; Tsunaka et al., 2016; Winkler and Luger, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "1e4a97df-08c9-4a5c-ab67-ee60353d0378",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C86",
+      "claim": "SPT16-mediated 'n (nucleosome)-trapping' is observed at 0.3\u20131 \u03bcM CBL0137.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, we see this as SPT16-mediated 'n (nucleosome)-trapping,' which is observed at 0.3\u20131 \u03bcM CBL0137.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "03d02dc7-566f-4fe0-8d51-7cb319452817",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C87",
+      "claim": "At CBL0137 concentrations greater than 3 \u03bcM, significant negative supercoiling caused base-unpairing of DNA and the transition of B-DNA into left-handed Z-form DNA, which is bound by FACT via the c-terminal intrinsically disordered domain of SSRP1 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "At CBL0137 concentrations greater than 3 \u03bcM, significant negative supercoiling, as a result of nucleosome disassembly, caused base-unpairing of DNA and the transition of B-DNA into left-handed Z-form DNA, which is bound by FACT via the c-terminal intrinsically disordered domain of SSRP1 subunit (Safina et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work (Safina et al., 2017).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "b46a4c1c-ba86-4917-aae5-7d9346633bc4",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C88",
+      "claim": "The most prominent and uniform change observed in the presence and absence of FACT was activation of the IFN response in all tested organs and cells at both the mRNA and protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The most prominent and uniform change observed in the presence and absence of FACT was activation of the IFN response in all tested organs and cells at both the mRNA and protein levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "0f3eee17-a6db-4dd2-b680-3522dd06209e",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C89",
+      "claim": "The induction of IFN-sensitive genes (ISG) has a bell-shaped curve, with a maximum increase at a CBL0137 concentration of approximately 0.5\u20131 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "The induction of IFN-sensitive genes (ISG) has a bell-shaped curve, with a maximum increase at a CBL0137 concentration of approximately 0.5\u20131 \u03bcM, which corresponds to nucleosome 'opening' followed by the inhibition of transcription at concentrations greater than 1 \u03bcM, when nucleosome disassembly starts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "6deac657-dd0f-4cb3-9e57-87fbd6e0ddef",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C90",
+      "claim": "IFN is activated in response to the dsRNA formed due to the increased transcription from normally silenced constitutive heterochromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that IFN is activated in response to the dsRNA formed due to the increased transcription from normally silenced constitutive heterochromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "dc72f970-0680-43ea-a095-e0e8c2f7ad98",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C91",
+      "claim": "Displacement of histone H1 may make heterochromatin accessible for RNA polymerase, while accessibility of genomic regions not locked with H1 does not change.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that displacement of histone H1 may make heterochromatin accessible for RNA polymerase, while accessibility of genomic regions not locked with H1 does not change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism to explain selective transcription of heterochromatin.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "11ff79d4-4a9a-44fb-9f78-3633a9b28a15",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C92",
+      "claim": "The anticancer effect in mice is seen at concentrations that activate the IFN response.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the anticancer effect in mice is seen at concentrations that activate the IFN response, suggesting that chromatin opening without chromatin disassembly is enough to cause an anticancer effect in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing the effective concentrations for different effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "e4f05348-c855-458d-bfe0-24576e489e3a",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C93",
+      "claim": "Chromatin opening without chromatin disassembly is enough to cause an anticancer effect in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the anticancer effect in mice is seen at concentrations that activate the IFN response, suggesting that chromatin opening without chromatin disassembly is enough to cause an anticancer effect in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that anticancer effects occur at lower concentrations than those causing nucleosome disassembly.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "bcb1df8a-e728-4729-89c3-733c329e0eeb",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C94",
+      "claim": "Activation of the IFN response by CBL0137 creates an opportunity to use IFN-responsive factors as pharmacodynamic markers of curaxin activity in the clinic.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of the IFN response by CBL0137 also creates an opportunity to use IFN-responsive factors as pharmacodynamic markers of curaxin activity in the clinic, since many of these factors are secreted and were detected in the plasma of mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed application based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "72285452-5742-4042-9ee7-0ec7b0e1b665",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C95",
+      "claim": "Curaxins may be used as a tool to affect chromatin organization and folding globally in cells and animals to study the consequences of an abrupt loss of epigenetic regulation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, curaxins, compounds with established anticancer activity in multiple preclinical models, may also be used as a tool to affect chromatin organization and folding globally in cells and animals to study the consequences of an abrupt loss of epigenetic regulation in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed application of curaxins based on their mechanism of action.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "d9217566-7d35-41dd-ae63-f1d2775c3a47",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C96",
+      "claim": "The property of curaxins to affect chromatin organization may be useful for reprogramming and other types of therapeutic epigenetic manipulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Potentially, this property of curaxins may be useful for reprogramming and other types of therapeutic epigenetic manipulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal about potential applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "4309f4c7-0e6f-4e22-929c-07a1bd144374",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C97",
+      "claim": "TRAIN may be a more general response to the problems associated with chromatin packaging and the danger of the loss of epigenetic integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this data, we propose that TRAIN may be a more general response to the problems associated with chromatin packaging and the danger of the loss of epigenetic integrity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed generalization based on observing TRAIN in multiple contexts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "bbe6f834-1650-4a72-9503-b78fa50c7d8c",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C98",
+      "claim": "TRAIN may be a mechanism triggered by elevated expression of silenced repetitive genomic elements and executed by the IFN response, which is capable of killing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It is tempting to speculate that TRAIN may be such a mechanism, triggered by elevated expression of silenced repetitive genomic elements and executed by the IFN response, which is capable of killing cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal about the function of TRAIN.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "7074dda6-9a89-4e20-b221-60bc460d2551",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C99",
+      "claim": "TRAIN mechanism may have evolved in response to real viral threats, especially in the form of the expansion of endogenous retroviral elements.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that this mechanism evolved in response to real viral threats, especially in the form of the expansion of endogenous retroviral elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal about the evolutionary origin of TRAIN.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "541570ac-b067-4837-9c8c-750b087e08a6",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "claim_id": "C100",
+      "claim": "TRAIN mechanism may serve as an epigenetic lock, which supports the differentiation state and limits cell plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism may serve as an epigenetic lock, which supports the differentiation state and limits cell plasticity and, therefore, the ability to transdifferentiate and regenerate organs and tissues, as well as to undergo epigenetic transitions associated with malignant transformation and tumor progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal about the function of TRAIN in maintaining cell identity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5584284d-9fea-4517-916a-32c9c42367a9",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CBL0137 binds DNA via intercalation and destabilizes nucleosomes in a dose-dependent manner without causing DNA damage. At lower concentrations, DNA unfolds from H2A/H2B dimers; at higher concentrations, complete nucleosome disassembly occurs with transition to Z-DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C13 are consistently supported by cited previous work (Safina et al., 2017) and represent established mechanistic understanding of CBL0137 action. The dose-dependent effects on nucleosome structure are well-documented, and the absence of DNA damage is clearly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "0d94e593-291a-4fb7-8f1d-018671570a4a",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CBL0137 activates p53 through a non-canonical pathway involving CK2 phosphorylation at serine 392, without activating DNA damage response kinases or phosphorylating N-terminal serines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16 and C25 are supported by cited previous work (Gasparian et al., 2011). The absence of classical DNA damage markers (ATM, ATR, DNA-PK activation, N-terminal p53 phosphorylation) and presence of alternative CK2-mediated phosphorylation is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "dae07db0-83fb-479d-8e18-60b7e8fab416",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "FACT (SPT16/SSRP1) undergoes chromatin-trapping (c-trapping) in response to CBL0137-induced nucleosome destabilization, binding to exposed nucleosome surfaces and Z-DNA via different domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C24 are supported by a combination of established knowledge about FACT composition (C17) and cited previous work (Safina et al., 2017; others). The c-trapping phenomenon and FACT binding to partially disassembled nucleosomes and Z-DNA is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "1f00c991-009b-4d98-8225-5155922850cf",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CBL0137 activates transcription of normally silenced heterochromatic regions (centromeric/pericentromeric repeats, endogenous retroviruses), leading to dsRNA accumulation and type I interferon response activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 and C54-C57 are supported by multiple experimental approaches: RNA-seq showing increased repetitive element transcription (C56, Figure 6D), Northern blot detecting B1 SINE transcripts (C55, Figure 6C), immunofluorescence showing dsRNA accumulation (C54, Figure 6A,B), and multiple assays demonstrating IFN response (RT-PCR, Western blot, reporter assays).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "8be9e39a-f832-49d1-b436-20ab99c869d1",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CBL0137 induces interferon response in both FACT-positive and FACT-negative mouse tissues, with Ifit3 upregulated in all organs and IFN signaling pathway enriched in GSEA analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C35 are supported by microarray data (Figures 1-2) showing tissue-specific FACT expression (C30-C31), consistent Ifit3 upregulation across organs (C32, Figure 1D), and GSEA demonstrating IFN pathway enrichment (C33-C34, Figure 2A,C). The FACT-independence is inferred from observing IFN response in FACT-negative tissues.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "ad96935a-a8e5-424d-9562-5fbfa614fad1",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CBL0137 induces rapid IFN response kinetics in mouse tissues, with peak Irf7 induction at 24 hours and Isg15/Usp18 induction as early as 6 hours, faster than other small molecules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 are supported by time-course RT-PCR and Western blot data (Figure 3D-H). The kinetics data clearly show dose-dependent responses with specific timing. The comparison to other inducers (C39) is based on literature comparison, though direct head-to-head experiments are not shown.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "37f70abf-8fe1-4d3a-a165-2410e5935f4c",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CBL0137 induces IFN-inducible genes in normal fibroblasts (stronger in p53-null cells) but not in tumor cells by standard assays; however, ISRE reporter assays detect IFN response in tumor cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 are supported by RT-PCR and Western blot data (Figure 4A-C) showing induction in fibroblasts with p53-dependence, and reporter assays (Figure 4D-E) demonstrating IFN response in tumor cells. The methodological difference (direct gene measurement vs. reporter) explains the apparent discrepancy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "9eddc7f6-88c4-4b43-b16e-1c8f734e0e44",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "CBL0137-induced IFN response requires Ifnar1 and Irf7 but not Irf1, and is enhanced by p53 loss, demonstrating dependence on canonical IFN signaling components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 are supported by RT-PCR and Western blot data using knockout MEF cells and mice (Figure 5A-B). The genetic experiments clearly demonstrate the requirement for Ifnar1 and Irf7, lack of requirement for Irf1, and enhancement by p53 loss.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "563845ff-7a3b-4d26-87ad-8eb0407ab5ac",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Z-DNA formation induced by high-dose CBL0137 does not mediate the IFN response, as ZBP1 knockout does not affect ISRE reporter activity and Z-DNA is absent at IFN-inducing concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 are supported by ZBP1 knockout experiments (Figure 6\u2014figure supplement 1A-B) showing no effect on ISRE reporter, and immunofluorescence (Figure 6\u2014figure supplement 1C) showing absence of Z-DNA at concentrations inducing IFN response. This effectively rules out Z-DNA as the IFN trigger.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "059b2001-6d50-4a43-88ec-ec8e0782671b",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Both CBL0137 and HDAC inhibitor TSA activate transcription from silenced chromatin, but TSA causes weaker IFN response despite similar chromatin opening effects, with different mechanisms (histone acetylation vs. histone eviction).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C65 are supported by multiple assays: flow cytometry showing GFP activation (C60, Figure 7A), RT-PCR showing gene induction (C61, Figure 7B), reporter assays showing differential IFN response (C62, Figure 7C), and Western blots showing different mechanisms (C63-C64, Figure 7D). The concentration comparison (C65) is cited from previous work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "799c1c9e-c5fb-4757-9b4e-2492a3768928",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Nucleosome 'opening' with H1 displacement, occurring at lower CBL0137 concentrations (0.5-1 \u03bcM) than core histone eviction, is sufficient to allow heterochromatin transcription and TRAIN.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69 are supported by live cell imaging showing H1 redistribution at lower concentrations (C67, Figure 8A-B) and correlation with TRAIN concentration range (C68). However, C66 and C69 involve some inference about the 'opened' nucleosome state, as direct structural evidence is not provided. The proposal is reasonable but somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "322ae387-9c7a-445f-b946-55d03ca49fa7",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CBL0137 inhibits oncogene-induced transformation in an interferon-dependent manner, as demonstrated by reduced transformed foci only in Ifnar1+/+ cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C73-C74 are supported by transformation assay data (Figure 9A) showing significant reduction in transformed foci with CBL0137 treatment only in cells with functional IFN receptor. The Ifnar1-dependence clearly demonstrates the role of IFN signaling in this anticancer effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "928a582f-6fe6-4674-914a-6ad5e94990d0",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "CBL0137 inhibits tumor growth in mice in an interferon-dependent manner, with wild-type tumors showing complete growth arrest while Ifnar1-/- tumors continue growing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C75-C76 are supported by tumor growth experiments (Figure 9B-C) showing differential response based on Ifnar1 status. The complete growth arrest in wild-type tumors versus continued growth in Ifnar1-/- tumors clearly demonstrates the importance of IFN signaling in CBL0137's anticancer activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "7f51d499-0270-4306-97ba-be378044b7a8",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "CBL0137 effects on nucleosomes are dose-dependent and reversible at lower concentrations: <1 \u03bcM causes opening with H1 loss, 1-5 \u03bcM causes dimer detachment, >5 \u03bcM causes complete disassembly and irreversible cell death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C82 are supported by a combination of current data (H1 redistribution imaging, Figure 8) and cited previous work (Safina et al., 2017) for higher concentration effects. The reversibility observations (C80-C82) are stated as experimental observations. The dose-response relationship is consistent across multiple experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "38f70aa0-db57-4dae-84f3-5f9da713021c",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "FACT responds to CBL0137-induced chromatin damage through concentration-dependent mechanisms: nucleosome-trapping at 0.3-1 \u03bcM and Z-DNA binding at >3 \u03bcM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C87 are supported by cited previous work (Safina et al., 2017; Tsunaka et al., 2016; others) for FACT binding properties and current observations of concentration-dependent effects. The mechanistic model is well-supported by structural and biochemical data from multiple sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "1dfb61bd-c883-4ad6-927e-f0d70530c0c6",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "IFN response activation is the most prominent FACT-independent effect of CBL0137, showing bell-shaped dose response with maximum at 0.5-1 \u03bcM, likely triggered by dsRNA from heterochromatin transcription.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90 are supported by comprehensive data showing IFN response across tissues and cell types, dose-response curves showing peak at 0.5-1 \u03bcM, and dsRNA detection. The mechanistic proposal (C90) is well-supported by the combination of heterochromatin transcription and dsRNA accumulation data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "9d9a7f26-9388-4e38-984b-367a8f4b4236",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "H1 displacement may selectively make heterochromatin accessible to RNA polymerase, and chromatin opening without complete disassembly is sufficient for anticancer effects in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C91-C93 involve significant inference and speculation. While C92-C93 are supported by the correlation between effective concentrations for IFN response and anticancer activity, C91 is a proposed mechanism without direct experimental validation. The selective transcription of heterochromatin is observed but the specific role of H1 displacement requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "25fa990d-316d-4e80-ad58-a7d7e7c0aa13",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "HDAC inhibitors also induce TRAIN, though the degree depends on cell type and mode of chromatin opening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C70 are supported by experiments with TSA showing IFN gene induction in MEF cells (Figure 7B) and differential responses in different cell types (Figure 7C). However, the TRAIN response to TSA is weaker than to CBL0137, suggesting cell-type and mechanism-specific differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "4ec82b47-346c-4030-9660-a24d0a970b87",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "TRAIN may be a general mechanism ensuring epigenetic integrity by eliminating cells with desilenced chromatin, potentially evolved from antiviral defense and serving as an epigenetic lock maintaining differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C5, C97-C100 are explicitly speculative proposals about the biological function and evolutionary origin of TRAIN. While the observations of TRAIN in multiple contexts (DNA demethylation, chromatin opening) support the generality, the proposed functions as epigenetic quality control and evolutionary origins are hypotheses requiring further experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "7db861b8-c336-4550-b0ad-d3a4c2c57458",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "TRAIN was previously observed with DNA demethylation, and CBL0137 previously showed cancer prevention in tumor-prone mice, potentially through IFN-mediated elimination of transformed cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C71-C72 are supported by cited previous work. C29 references prior TRAIN observations with demethylating agents, C71 cites previous cancer prevention studies with CBL0137, and C72 cites literature on differential IFN sensitivity of transformed vs. normal cells. These provide important context for the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "8d6a2208-dd82-4253-a0f4-a08b6e594457",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "CBL0137's effects suggest potential applications as pharmacodynamic markers in clinical trials and as tools for studying epigenetic regulation and therapeutic epigenetic manipulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C94-C96 are speculative proposals about future applications. While C94 has some support from detection of IFN factors in mouse plasma, C95-C96 are suggestions for potential uses without experimental validation. These represent reasonable hypotheses based on the mechanism but require further development.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    },
+    {
+      "id": "324c501d-91f2-41b6-8290-62a8e0b459ef",
+      "content_id": "9bfcf14c-3bdb-48af-9ced-abf78c852f9d",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Loss of FACT via c-trapping may contribute to activation of silenced transcription, as FACT mutations in yeast cause cryptic transcription and FACT is important for centromeric chromatin assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C58-C59 cite relevant previous work from yeast and mammalian systems, but the connection to TRAIN in CBL0137-treated cells is inferential. The authors observe IFN response in FACT-negative tissues, suggesting FACT-independent mechanisms are also important. The contribution of FACT loss to heterochromatin transcription remains unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:14:54.325479Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cb2c8ead-d2a1-47ba-8d67-cb333c82e69a",
+      "result_id": "5584284d-9fea-4517-916a-32c9c42367a9"
+    },
+    {
+      "claim_id": "8c2c72c5-df67-46ce-8dd0-64e5400afd01",
+      "result_id": "5584284d-9fea-4517-916a-32c9c42367a9"
+    },
+    {
+      "claim_id": "f4d00647-20a1-4d8d-8b2c-49fc7f45eafe",
+      "result_id": "5584284d-9fea-4517-916a-32c9c42367a9"
+    },
+    {
+      "claim_id": "0ee3db29-893b-4059-931d-a6bca9b7b3b8",
+      "result_id": "5584284d-9fea-4517-916a-32c9c42367a9"
+    },
+    {
+      "claim_id": "545e57a7-15aa-499f-ba26-2cf885a3a9a0",
+      "result_id": "5584284d-9fea-4517-916a-32c9c42367a9"
+    },
+    {
+      "claim_id": "af4fea29-a173-40e4-b974-595941a42fff",
+      "result_id": "5584284d-9fea-4517-916a-32c9c42367a9"
+    },
+    {
+      "claim_id": "a848d9c7-9190-4bb6-8266-3e2a28afc76e",
+      "result_id": "5584284d-9fea-4517-916a-32c9c42367a9"
+    },
+    {
+      "claim_id": "fd503eff-60ff-47e0-9b00-ef97a312de1a",
+      "result_id": "5584284d-9fea-4517-916a-32c9c42367a9"
+    },
+    {
+      "claim_id": "4d538109-0e4f-4379-a55f-790f8500645f",
+      "result_id": "5584284d-9fea-4517-916a-32c9c42367a9"
+    },
+    {
+      "claim_id": "ba7cd466-a27b-4c39-a9c7-a5c7da85292b",
+      "result_id": "0d94e593-291a-4fb7-8f1d-018671570a4a"
+    },
+    {
+      "claim_id": "39bd2c36-f5d1-4108-b575-fad7a381a0f7",
+      "result_id": "0d94e593-291a-4fb7-8f1d-018671570a4a"
+    },
+    {
+      "claim_id": "bcd223c1-3599-45b4-9dde-3809714bed4c",
+      "result_id": "0d94e593-291a-4fb7-8f1d-018671570a4a"
+    },
+    {
+      "claim_id": "d6104bfc-2fee-4a6f-b71e-73b5cd806439",
+      "result_id": "0d94e593-291a-4fb7-8f1d-018671570a4a"
+    },
+    {
+      "claim_id": "c6723c71-50ef-4a46-97cd-5f51335122a6",
+      "result_id": "dae07db0-83fb-479d-8e18-60b7e8fab416"
+    },
+    {
+      "claim_id": "17c99ea3-0b39-4e7c-8e26-98a97f9ed2cb",
+      "result_id": "dae07db0-83fb-479d-8e18-60b7e8fab416"
+    },
+    {
+      "claim_id": "da7175c1-92a4-452c-b198-9f3a7598ad72",
+      "result_id": "dae07db0-83fb-479d-8e18-60b7e8fab416"
+    },
+    {
+      "claim_id": "4be2cf23-6798-4eed-aa02-37cc6ba6f539",
+      "result_id": "dae07db0-83fb-479d-8e18-60b7e8fab416"
+    },
+    {
+      "claim_id": "5753907f-a11e-4fd8-9664-1a87f408b8ee",
+      "result_id": "dae07db0-83fb-479d-8e18-60b7e8fab416"
+    },
+    {
+      "claim_id": "5342a69d-899c-4390-87b2-45cae7033ac7",
+      "result_id": "dae07db0-83fb-479d-8e18-60b7e8fab416"
+    },
+    {
+      "claim_id": "7e89fa43-3d01-43a3-8b42-7c2267df50bc",
+      "result_id": "dae07db0-83fb-479d-8e18-60b7e8fab416"
+    },
+    {
+      "claim_id": "35d941c0-ad6b-48fb-a72c-c7b97227ba73",
+      "result_id": "dae07db0-83fb-479d-8e18-60b7e8fab416"
+    },
+    {
+      "claim_id": "d562dd9e-c1f4-45e8-92c5-0f9393d314b0",
+      "result_id": "1f00c991-009b-4d98-8225-5155922850cf"
+    },
+    {
+      "claim_id": "f0d91a59-1271-468f-91fe-036ec6949960",
+      "result_id": "1f00c991-009b-4d98-8225-5155922850cf"
+    },
+    {
+      "claim_id": "60e8390b-f447-42a8-8c08-ac6737b2242c",
+      "result_id": "1f00c991-009b-4d98-8225-5155922850cf"
+    },
+    {
+      "claim_id": "8cb9071c-0cf4-494e-8742-24043091ad81",
+      "result_id": "1f00c991-009b-4d98-8225-5155922850cf"
+    },
+    {
+      "claim_id": "e6e83f38-6d75-4145-bf2d-130bff16f4ba",
+      "result_id": "1f00c991-009b-4d98-8225-5155922850cf"
+    },
+    {
+      "claim_id": "00c29a27-4eb4-48d1-9702-757fca9481c8",
+      "result_id": "1f00c991-009b-4d98-8225-5155922850cf"
+    },
+    {
+      "claim_id": "2f156ac5-eb56-40ed-95bf-d150a1f1ff71",
+      "result_id": "1f00c991-009b-4d98-8225-5155922850cf"
+    },
+    {
+      "claim_id": "a8c59dd6-7057-496f-89b1-719c45de3b9c",
+      "result_id": "8be9e39a-f832-49d1-b436-20ab99c869d1"
+    },
+    {
+      "claim_id": "899fb286-9e85-4686-8973-8ae8f788c26b",
+      "result_id": "8be9e39a-f832-49d1-b436-20ab99c869d1"
+    },
+    {
+      "claim_id": "78adf7b7-8bd6-4cb1-b5b1-9e5ab2e47c9f",
+      "result_id": "8be9e39a-f832-49d1-b436-20ab99c869d1"
+    },
+    {
+      "claim_id": "4b729fc1-4178-47fa-af6c-ec4742d0db58",
+      "result_id": "8be9e39a-f832-49d1-b436-20ab99c869d1"
+    },
+    {
+      "claim_id": "b7bd06b5-455f-4f02-b4cb-6b198a7d63c8",
+      "result_id": "8be9e39a-f832-49d1-b436-20ab99c869d1"
+    },
+    {
+      "claim_id": "601e4757-646c-4deb-bf61-3a59c3d83df1",
+      "result_id": "8be9e39a-f832-49d1-b436-20ab99c869d1"
+    },
+    {
+      "claim_id": "46038f2c-c66f-4a24-96f0-c27503b8a2fc",
+      "result_id": "ad96935a-a8e5-424d-9562-5fbfa614fad1"
+    },
+    {
+      "claim_id": "f82f22fd-b3b6-4a09-9a8f-a0c1dc871d83",
+      "result_id": "ad96935a-a8e5-424d-9562-5fbfa614fad1"
+    },
+    {
+      "claim_id": "3f931414-4823-41b3-b77f-861c90b71a5b",
+      "result_id": "ad96935a-a8e5-424d-9562-5fbfa614fad1"
+    },
+    {
+      "claim_id": "1113d543-c153-4717-b732-c4f0095e4767",
+      "result_id": "ad96935a-a8e5-424d-9562-5fbfa614fad1"
+    },
+    {
+      "claim_id": "c5dc8f3d-16ec-49bf-9893-08258513810d",
+      "result_id": "37f70abf-8fe1-4d3a-a165-2410e5935f4c"
+    },
+    {
+      "claim_id": "88cd1c9c-4548-46e8-b07a-c7a59b070f33",
+      "result_id": "37f70abf-8fe1-4d3a-a165-2410e5935f4c"
+    },
+    {
+      "claim_id": "61fe53b2-7a2e-4e34-bdb1-14f9508ca424",
+      "result_id": "37f70abf-8fe1-4d3a-a165-2410e5935f4c"
+    },
+    {
+      "claim_id": "4a9c1db8-f6ae-4ec2-b783-d1ef5b5edfd2",
+      "result_id": "37f70abf-8fe1-4d3a-a165-2410e5935f4c"
+    },
+    {
+      "claim_id": "fbbea8c1-430d-493a-98ca-a737dcf90740",
+      "result_id": "37f70abf-8fe1-4d3a-a165-2410e5935f4c"
+    },
+    {
+      "claim_id": "e33233f9-ef36-4e16-a09a-6878e7c1135e",
+      "result_id": "9eddc7f6-88c4-4b43-b16e-1c8f734e0e44"
+    },
+    {
+      "claim_id": "bf9a34d6-d1c4-45d7-ae5a-a51350aa99f8",
+      "result_id": "9eddc7f6-88c4-4b43-b16e-1c8f734e0e44"
+    },
+    {
+      "claim_id": "be84b923-2663-48af-8821-e700ec05f566",
+      "result_id": "9eddc7f6-88c4-4b43-b16e-1c8f734e0e44"
+    },
+    {
+      "claim_id": "4fa29286-bcbc-40bd-99a1-5e07c689d92e",
+      "result_id": "9eddc7f6-88c4-4b43-b16e-1c8f734e0e44"
+    },
+    {
+      "claim_id": "62511824-1ab3-456f-98db-e87689c0370c",
+      "result_id": "563845ff-7a3b-4d26-87ad-8eb0407ab5ac"
+    },
+    {
+      "claim_id": "97e5a729-cc97-4980-a371-47552f9b4690",
+      "result_id": "563845ff-7a3b-4d26-87ad-8eb0407ab5ac"
+    },
+    {
+      "claim_id": "603f0c63-8dcb-45b6-a8da-07499082b83f",
+      "result_id": "563845ff-7a3b-4d26-87ad-8eb0407ab5ac"
+    },
+    {
+      "claim_id": "0eaca101-0cfd-486d-bee7-e2f015eb11f1",
+      "result_id": "563845ff-7a3b-4d26-87ad-8eb0407ab5ac"
+    },
+    {
+      "claim_id": "60521ed2-75c8-4e26-af08-34b42c918ea0",
+      "result_id": "059b2001-6d50-4a43-88ec-ec8e0782671b"
+    },
+    {
+      "claim_id": "816add2d-0d29-42a7-897b-c5bc95d81b98",
+      "result_id": "059b2001-6d50-4a43-88ec-ec8e0782671b"
+    },
+    {
+      "claim_id": "c7e43ce3-c241-4092-9b8c-d0b0423bade7",
+      "result_id": "059b2001-6d50-4a43-88ec-ec8e0782671b"
+    },
+    {
+      "claim_id": "4bf07933-7b7a-4998-9f12-6007524dabaf",
+      "result_id": "059b2001-6d50-4a43-88ec-ec8e0782671b"
+    },
+    {
+      "claim_id": "932811ba-205b-4ba1-aea7-459ced2e2222",
+      "result_id": "059b2001-6d50-4a43-88ec-ec8e0782671b"
+    },
+    {
+      "claim_id": "b8df8f79-285d-4b42-b31f-854a72706e00",
+      "result_id": "059b2001-6d50-4a43-88ec-ec8e0782671b"
+    },
+    {
+      "claim_id": "4030e84b-2b60-4556-9c06-c3f6df5846ce",
+      "result_id": "799c1c9e-c5fb-4757-9b4e-2492a3768928"
+    },
+    {
+      "claim_id": "9cbbb598-6a03-44a9-9608-bda1f146eefc",
+      "result_id": "799c1c9e-c5fb-4757-9b4e-2492a3768928"
+    },
+    {
+      "claim_id": "3d0dc807-cbd6-4342-9dd3-4ec42d5879fd",
+      "result_id": "799c1c9e-c5fb-4757-9b4e-2492a3768928"
+    },
+    {
+      "claim_id": "b8630482-e0ac-42be-b89c-e12cfb8e949b",
+      "result_id": "799c1c9e-c5fb-4757-9b4e-2492a3768928"
+    },
+    {
+      "claim_id": "ba9e1c36-976c-4cf7-98ca-493876dc9b8e",
+      "result_id": "322ae387-9c7a-445f-b946-55d03ca49fa7"
+    },
+    {
+      "claim_id": "0796f3cd-4a1b-4790-8cdf-803dfcc8edf5",
+      "result_id": "322ae387-9c7a-445f-b946-55d03ca49fa7"
+    },
+    {
+      "claim_id": "033da36c-d6a4-4dba-b44d-2fd377feb42f",
+      "result_id": "322ae387-9c7a-445f-b946-55d03ca49fa7"
+    },
+    {
+      "claim_id": "1e13841c-5563-4bea-ae2c-7e724ac64f15",
+      "result_id": "928a582f-6fe6-4674-914a-6ad5e94990d0"
+    },
+    {
+      "claim_id": "89e5c0e2-4af3-4ad1-9e47-b4aea8ee7550",
+      "result_id": "928a582f-6fe6-4674-914a-6ad5e94990d0"
+    },
+    {
+      "claim_id": "9b69f6a6-285b-43b6-84ba-79de2f79f65a",
+      "result_id": "928a582f-6fe6-4674-914a-6ad5e94990d0"
+    },
+    {
+      "claim_id": "2566fd32-a1c4-45c7-8513-75521734c48e",
+      "result_id": "7f51d499-0270-4306-97ba-be378044b7a8"
+    },
+    {
+      "claim_id": "78cedb36-54a3-4e8c-bb30-7550aeb8a8ef",
+      "result_id": "7f51d499-0270-4306-97ba-be378044b7a8"
+    },
+    {
+      "claim_id": "cb6d6f5d-8d8c-414e-bf39-97267135a721",
+      "result_id": "7f51d499-0270-4306-97ba-be378044b7a8"
+    },
+    {
+      "claim_id": "07345bc5-d5dd-4ac3-b8bf-730564ebccad",
+      "result_id": "7f51d499-0270-4306-97ba-be378044b7a8"
+    },
+    {
+      "claim_id": "7a8f1d89-abc5-4deb-a897-2377568bb1a7",
+      "result_id": "7f51d499-0270-4306-97ba-be378044b7a8"
+    },
+    {
+      "claim_id": "33473450-e9e2-41b9-bb72-01d99bc2f5b1",
+      "result_id": "7f51d499-0270-4306-97ba-be378044b7a8"
+    },
+    {
+      "claim_id": "bdbbc613-342b-476d-9bfa-8998244bfea5",
+      "result_id": "38f70aa0-db57-4dae-84f3-5f9da713021c"
+    },
+    {
+      "claim_id": "037039b3-267a-4cee-b4df-64118db8b446",
+      "result_id": "38f70aa0-db57-4dae-84f3-5f9da713021c"
+    },
+    {
+      "claim_id": "57d3fe46-1afa-41e5-bfd8-bb1c2466e9ac",
+      "result_id": "38f70aa0-db57-4dae-84f3-5f9da713021c"
+    },
+    {
+      "claim_id": "1e4a97df-08c9-4a5c-ab67-ee60353d0378",
+      "result_id": "38f70aa0-db57-4dae-84f3-5f9da713021c"
+    },
+    {
+      "claim_id": "03d02dc7-566f-4fe0-8d51-7cb319452817",
+      "result_id": "38f70aa0-db57-4dae-84f3-5f9da713021c"
+    },
+    {
+      "claim_id": "b46a4c1c-ba86-4917-aae5-7d9346633bc4",
+      "result_id": "1dfb61bd-c883-4ad6-927e-f0d70530c0c6"
+    },
+    {
+      "claim_id": "0f3eee17-a6db-4dd2-b680-3522dd06209e",
+      "result_id": "1dfb61bd-c883-4ad6-927e-f0d70530c0c6"
+    },
+    {
+      "claim_id": "6deac657-dd0f-4cb3-9e57-87fbd6e0ddef",
+      "result_id": "1dfb61bd-c883-4ad6-927e-f0d70530c0c6"
+    },
+    {
+      "claim_id": "dc72f970-0680-43ea-a095-e0e8c2f7ad98",
+      "result_id": "9d9a7f26-9388-4e38-984b-367a8f4b4236"
+    },
+    {
+      "claim_id": "11ff79d4-4a9a-44fb-9f78-3633a9b28a15",
+      "result_id": "9d9a7f26-9388-4e38-984b-367a8f4b4236"
+    },
+    {
+      "claim_id": "e4f05348-c855-458d-bfe0-24576e489e3a",
+      "result_id": "9d9a7f26-9388-4e38-984b-367a8f4b4236"
+    },
+    {
+      "claim_id": "284e1b28-a6d7-4bdc-adc6-8dc3a4907a9a",
+      "result_id": "25fa990d-316d-4e80-ad58-a7d7e7c0aa13"
+    },
+    {
+      "claim_id": "e2b17942-6cde-43d1-8321-fff700b90e1b",
+      "result_id": "25fa990d-316d-4e80-ad58-a7d7e7c0aa13"
+    },
+    {
+      "claim_id": "c86a688f-1302-400e-ad0d-30dd8f253c2f",
+      "result_id": "4ec82b47-346c-4030-9660-a24d0a970b87"
+    },
+    {
+      "claim_id": "4309f4c7-0e6f-4e22-929c-07a1bd144374",
+      "result_id": "4ec82b47-346c-4030-9660-a24d0a970b87"
+    },
+    {
+      "claim_id": "bbe6f834-1650-4a72-9503-b78fa50c7d8c",
+      "result_id": "4ec82b47-346c-4030-9660-a24d0a970b87"
+    },
+    {
+      "claim_id": "7074dda6-9a89-4e20-b221-60bc460d2551",
+      "result_id": "4ec82b47-346c-4030-9660-a24d0a970b87"
+    },
+    {
+      "claim_id": "541570ac-b067-4837-9c8c-750b087e08a6",
+      "result_id": "4ec82b47-346c-4030-9660-a24d0a970b87"
+    },
+    {
+      "claim_id": "673b3c51-ed68-42c6-8116-ec26d113ba4c",
+      "result_id": "7db861b8-c336-4550-b0ad-d3a4c2c57458"
+    },
+    {
+      "claim_id": "c7cb716a-a980-4491-9dc3-24182512f4bf",
+      "result_id": "7db861b8-c336-4550-b0ad-d3a4c2c57458"
+    },
+    {
+      "claim_id": "6c1c399a-5252-445f-ab69-401bb7671869",
+      "result_id": "7db861b8-c336-4550-b0ad-d3a4c2c57458"
+    },
+    {
+      "claim_id": "bcb1df8a-e728-4729-89c3-733c329e0eeb",
+      "result_id": "8d6a2208-dd82-4253-a0f4-a08b6e594457"
+    },
+    {
+      "claim_id": "72285452-5742-4042-9ee7-0ec7b0e1b665",
+      "result_id": "8d6a2208-dd82-4253-a0f4-a08b6e594457"
+    },
+    {
+      "claim_id": "d9217566-7d35-41dd-ae63-f1d2775c3a47",
+      "result_id": "8d6a2208-dd82-4253-a0f4-a08b6e594457"
+    },
+    {
+      "claim_id": "8948d214-b867-40ea-b672-16e533f2356f",
+      "result_id": "324c501d-91f2-41b6-8290-62a8e0b459ef"
+    },
+    {
+      "claim_id": "9c891fca-6ac1-444f-8542-e6a75bd37073",
+      "result_id": "324c501d-91f2-41b6-8290-62a8e0b459ef"
+    }
+  ],
+  "comparisons": []
+}

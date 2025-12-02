@@ -1,0 +1,1846 @@
+{
+  "submission": {
+    "id": "df8b2ffc-9a7a-4b8d-80a3-789477751547",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:53:07.582088Z",
+    "updated_at": "2025-12-02T00:53:07.582088Z"
+  },
+  "content": [
+    {
+      "id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "submission_id": "df8b2ffc-9a7a-4b8d-80a3-789477751547",
+      "content_type": "manuscript",
+      "content_text": "# Characterisation of molecular motions in cryo-EM single-particle data by multi-body refinement in RELION\n\n## Authors\n\n- Takanori Nakane<sup>1</sup> ([ORCID: 0000-0003-2697-2767](https://orcid.org/0000-0003-2697-2767))\n- Dari Kimanius<sup>2</sup> ([ORCID: 0000-0002-2662-6373](https://orcid.org/0000-0002-2662-6373))\n- Erik Lindahl<sup>2</sup> ([ORCID: 0000-0002-2734-2794](https://orcid.org/0000-0002-2734-2794))\n- Sjors HW Scheres<sup>1</sup> ([ORCID: 0000-0002-0462-6540](https://orcid.org/0000-0002-0462-6540)) \u2020\n\n### Affiliations\n\n1. MRC Laboratory of Molecular Biology Cambridge United Kingdom\n2. Department of Biochemistry and Biophysics, Science for Life Laboratory Stockholm University Stockholm Sweden\n3. Swedish e-Science Research Center, KTH Royal Institute of Technology Stockholm Sweden\n\n\u2020 Corresponding author\n\n## Abstract\n\nMacromolecular complexes that exhibit continuous forms of structural flexibility pose a challenge for many existing tools in cryo-EM single-particle analysis. We describe a new tool, called multi-body refinement, which models flexible complexes as a user-defined number of rigid bodies that move independently from each other. Using separate focused refinements with iteratively improved partial signal subtraction, the new tool generates improved reconstructions for each of the defined bodies in a fully automated manner. Moreover, using principal component analysis on the relative orientations of the bodies over all particle images in the data set, we generate movies that describe the most important motions in the data. Our results on two test cases, a cytoplasmic ribosome from Plasmodium falciparum, and the spliceosomal B-complex from yeast, illustrate how multi-body refinement can be useful to gain unique insights into the structure and dynamics of large and flexible macromolecular complexes.\n\n## Introduction\n\nIn electron cryo-microscopy (cryo-EM) single-particle analysis, biological macromolecules are embedded in a thin layer of vitrified buffer and imaged in a transmission electron microscope. In principle, this represents a single-molecule imaging technique that provides unique information about the structure of individual macromolecular complexes. However, because the electron dose needs to be carefully limited to reduce radiation damage, cryo-EM images are typically extremely noisy and one needs to combine\u00a0projections of many molecules supposedly in the same state to reliably recover high-resolution information. In recent years, with the development of direct-electron detectors and improved image processing procedures, this technique has allowed structure determination of many macromolecular complexes with enough detail to allow de novo atomic modelling (Fernandez-Leiro and Scheres, 2016).\n\nBecause macromolecular complexes often undergo conformational transitions as part of their functional cycles, many cryo-EM samples contain mixtures of different conformations. This type of structural heterogeneity may co-exist with incomplete complex formation or samples that have not been purified to homogeneity. In order to achieve high-resolution reconstructions, the presence of multiple different structures in the data needs to be dealt with during cryo-EM single-particle analysis. Many popular image\u00a0classification approaches are based on competitive refinement of a user-defined number of references. These methods effectively divide the data into a discrete number of subsets or classes, each of which is assumed to be structurally homogeneous, for\u00a0example see Heymann et al. (2004) and\u00a0Gao et al. (2004) for early applications. Particularly useful are so-called unsupervised classification approaches, which do not require prior knowledge about the structural heterogeneity in the data. Unsupervised classification of a discrete number of three-dimensional states became possible with the introduction of maximum likelihood classification methods (Scheres et al., 2007), which have since then been implemented in multiple image processing packages (Sorzano et al., 2004; Scheres, 2012b; Lyumkis et al., 2013; Punjani et al., 2017; Grant et al., 2018). Using many classes, competitive multi-reference refinement approaches have also been used to deduce energy landscapes from Boltzmann distributions of the relative number of particle images assigned to each of the class for flexible molecular complexes like the 26S proteasome (Haselbach et al., 2017) and the spliceosome (Haselbach et al., 2018).\n\nHowever, discrete classification approaches are ultimately not well suited when macromolecular complexes exhibit continuous molecular motions. In principle, an infinite amount of classes would be needed to describe a continuum, and given a finite data size the number of particle images per class would approach zero. When a limited number of classes is used instead, each class will still contain residual structural heterogeneity. Several approaches have been proposed to deal with continuous heterogeneity in cryo-EM data. Moreover, classification based on multi-reference refinement aims to optimise the metric used in the target function (e.g. a marginal likelihood), which is not necessarily the optimal classification to understand the conformational transitions in the data. An early approach to describe continuous heterogeneity used normal-mode analysis to deduce macromolecular motions from low-resolution maps (Tama et al., 2002), and such predictions have also been used to guide alignment and discrete classification of cryo-EM images (Jin et al., 2014). Normal-mode re-parametrisation has also been used to describe continuous deviations from helical symmetry in filamentous protein assemblies (Rohou and Grigorieff, 2014). An approach that in principle allows one to extract any three-dimensional state along a continuum is based on manifold embedding (Dashti et al., 2014). In this approach, each particle image represents a point in a multi-dimensional hyperspace, and a continuous manifold\u00a0is deduced from the cloud of all points in the data set. Moving along this manifold then represents moving along the continuum of conformational changes. The manifold would ideally be calculated from the particle images alone, but currently available methods require prior alignment of the particle images against a single consensus reference. This may limit its effectiveness in cases where orientational and conformational assignments are intertwined.\n\nPerhaps, a favourable case of continuous structural heterogeneity is when the molecular motion can be described by two or more rigid bodies that maintain their own internal structure but differ in their relative orientations. This model relies on the observation that tertiary protein structure often remains relatively constant upon domain movement. In case of such rigid-body motions, masked or focused refinements provide an efficient way to obtain high-resolution reconstructions. In this approach, at every\u00a0iteration of the refinement process one masks away all density from the reference structure that does not correspond to a user-defined part of the complex. Thereby, the variability in the orientation of that part relative to the rest of the complex is ignored, and the part can be reconstructed to higher resolution. This procedure allowed atomic modelling in the presence of continuous variability in the relative orientations of ribosomal subunits for the yeast mitochondrial ribosome (Amunts et al., 2014) and the Plasmodium falciparum cytoplasmic ribosome (Wong et al., 2014). Later, this approach was improved by partial signal subtraction, where density corresponding to the rest of the complex is subtracted from the experimental particle images prior to performing focused refinements (Bai et al., 2015; Zhou et al., 2015; Ilca et al., 2015). Partial signal subtraction typically uses a so-called consensus refinement of all particle images against a single reference, and subtracts projections of the resulting consensus reconstruction in the directions of the consensus orientations from the experimental images. A limitation of the focused refinement approach is that each domain that is refined separately needs to be large enough to allow alignment of the individual subtracted particle images. To overcome this problem, a new approach called WarpCraft was described recently for the structure determination of transcription pre-initiation complexes with TFIIH and Mediator (Schilbach et al., 2017). WarpCraft uses normal mode analysis on a pseudo-atomic model of the cryo-EM map to restrain the motions between different regions in the map, thereby allowing reconstructions of much smaller regions than in focused refinement. However, there will exist a balance between separating highly flexible structures into many pieces and the amount of data available to reconstruct each piece.\n\nIn general, dealing with both discrete and continuous structural heterogeneity in cryo-EM data sets not only allows one to obtain higher-resolution maps, but also provides unique insights into the conformational landscape of macromolecular complexes. The presence of continuous forms of structural heterogeneity represents one of the most important open questions in cryo-EM single-particle analysis. Nowadays, many groups apply combinations of different approaches to disentangle structural heterogeneity in high-resolution cryo-EM data sets, and optimal results depend strongly on user expertise in designing this strategy (Fernandez-Leiro and Scheres, 2016).\n\nHere, we introduce a new approach to describe continuous structural heterogeneity in cryo-EM single-particle data in a user-friendly and fully automated manner. This approach, called multi-body refinement, builds on the approach of focused refinement with\u00a0partial signal subtraction, and relies on the user to divide the reconstructed map from a consensus refinement into a discrete number of independently moving bodies. The multi-body model provides a balance between being able to describe large conformational transitions, while still being able to average (parts of) projections from the entire data set. During every iteration of multi-body refinement, the best relative orientation of each body is determined for every particle image, while the signal from the other bodies is subtracted on-the-fly. By keeping track of the relative orientations of all bodies for each particle image from the previous iteration, the partial signal subtraction is continually improved. Moreover, we use the refined relative orientations of all bodies upon convergence of the multi-body refinement to generate movies of the principal motions that exist within the data set. We first used an early implementation of our multi-body refinement to improve the density of mobile domains in the spliceosomal tri-snRNP complex (Nguyen et al., 2015). Since then, an approach that updates the relative orientations of different parts of a molecule was also implemented by others (Schoebel et al., 2017). In this paper, we formally introduce the multi-body approach and its implementation in relion, and describe its application to two test cases: the cytoplasmic ribosome (Wong et al., 2014) from Plasmodium falciparum, and the spliceosomal B-complex from yeast (Plaschka et al., 2017). These results showcase how multi-body refinement can improve cryo-EM reconstructions and provide insights into the conformational landscape of large and flexible macromolecular complexes.\n\n## Materials\u00a0and\u00a0methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type</th>\n      <th>Designation</th>\n      <th>Reference</th>\n      <th>Identifier</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>software</td>\n      <td>relion</td>\n      <td>(Scheres, 2012b)</td>\n      <td>RRID:SCR_016274</td>\n    </tr>\n  </tbody>\n</table>\n\n### Theoretical background\n\nMulti-body refinement in relion is based on the assumption that all particles in a cryo-EM data set comprise the same macromolecular complex, that\u00a0is, it is stoichiometrically homogeneous. Where multi-body refinement deviates from the standard approach for refinement of a single structure (or class) in relion (Scheres, 2012a), is in the assumption that the macromolecular complex of interest behaves as $B$ separate rigid bodies. These bodies are identical in all particles, but their relative orientations are permitted to vary among the particles.\n\nIn Fourier space, the model is described as follows:\n\n$$\nX_{i}=CTF_{i}(\\sumb=1B\u2009P_{\u03d5_{b}}V_{b})+N_{i}\u2009,\n$$\n\nwhere:\n\nIn analogy to standard refinement in relion, optimisation of a regularised, marginal likelihood function is performed using expectation-maximisation (Scheres, 2012b). Because the sum of the $B$ bodies represents the same underlying 3D structure as in the standard refinement, the main difference in multi-body refinement is a $B$-fold increase in the number of hidden variables $\u03d5_{b}$ to describe the orientations of all bodies in every particle image. Based on the model in Equation (1), the likelihood $P(X_{i}|\u03d5,\u0398^{(n)})$ of observing the $i$th experimental image given the current model parameter set $\u0398^{(n)}$ and any combination $\u03d5$ of all orientations $\u03d5_{b}$ can be calculated as a multivariate Gaussian centred on the difference between the particle image and the corresponding reference projection:\n\n$$\nP(X_{i}|\u03d5,\u0398^{(n)})\u221dexp(|\\frac{X_{i}\u2212CTF_{i}\\sumb=1B\u00a0P_{\u03d5_{b}}V_{b}}{\\sigma_{i}^{2}}|^{2}).\n$$\n\nTo prevent having to integrate for each body $b$ over the orientations $\u03d5_{b^{\u2032}}$ of all the other bodies $b^{\u2032}\\neqb$, we treat each body $b$ separately and assume that the most likely orientations of the other bodies as determined for that particle image in the previous iteration ($\u03d5_{ib^{\u2032}}^{\u2217}$) are the correct ones. Thereby, we can rewrite Eq (2) as:\n\n$$\nP(X_{i}|\u03d5_{b},\u0398^{(n)})\u221dexp(|\\frac{S_{ib}\u2212CTF_{i}P_{\u03d5_{b}}V_{b}}{\\sigma_{i}^{2}}|^{2}),\n$$\n\nwhere $S_{ib}$ is the $i$th particle image, from which the CTF-modulated reference projections of all the other bodies $b^{\u2032}\\neqb$ have been subtracted:\n\n$$\nS_{ib}=X_{i}\u2212CTF_{i}\\sumb^{\u2032}\\neqbB\u2009P_{\u03d5_{ib^{\u2032}}^{\u2217}}V_{b^{\u2032}}\n$$\n\nBy calculating all $S_{ib}$ on-the-fly during every expectation step, we can use Eq (3) to obtain posterior distributions $\u0393_{i\u03d5_{b}}$ of all orientations $\u03d5_{b}$ being the correct one for the $ith$ particle image given the model estimates at the current iteration $(n)$:\n\n$$\n\u0393_{i\u03d5_{b}}^{(n)}=\\frac{P(X_{i}|\u03d5_{b},\u0398^{(n)})P(\u03d5_{b}|\u0398^{(n)})}{\\int_{\u03d5^{\u2032}_{b}}\u2009P(X_{i}|\u03d5^{\u2032}_{b},\u0398^{(n)})P(\u03d5^{\u2032}_{b}|\u0398^{(n)})d\u03d5^{\u2032}_{b}}\u2009,\n$$\n\nwhere $P(\u03d5_{b}|\u0398^{(n)})$ expresses prior information about $\u03d5_{b}$. In our current implementation, $P(\u03d5_{b}|\u0398^{(n)})$ is implemented as a Gaussian function centred on the rotations and translations of the consensus refinement (see below), and with user-defined standard deviations.\n\nDuring the maximisation step, the posterior distributions are used to obtain updated estimates for each body $V_{b}$, and the optimal orientations $\u03d5_{ib}^{\u2217}$ of all bodies in every particle image using:\n\n$$\nV_{b}^{(n+1)}=\\frac{\\sum_{i=1}^{N}\u2009\\int_{\u03d5_{b}}\u2009\u0393_{i\u03d5_{b}}^{(n)}P_{\u03d5_{b}}^{T}\\frac{CTF_{i}S_{ib}}{\\sigma_{i}^{2}}d\u03d5_{b}}{\\sum_{i=1}^{N}\u2009\\int_{\u03d5_{b}}\u2009\u0393_{i\u03d5_{b}}^{(n)}P_{\u03d5_{b}}^{T}\\frac{CTF_{i}^{2}}{\\sigma_{i}^{2}}d\u03d5_{b}+\\frac{1}{\\tau_{b}^{2}}},\n$$\n\n\n\n$$\n\u03d5_{ib}^{\u2217(n+1)}=max\u03d5_{b}\u0393_{i\u03d5_{b}}^{(n)}.\n$$\n\nThereby, multi-body refinement is closely related to focused refinement with partial signal subtraction (Bai et al., 2015). However, whereas partial signal subtraction is typically performed once with a consensus model prior to starting a focused refinement, in multi-body refinement the partial signal subtraction is performed at every iteration with updated estimates for the reconstructed bodies and their relative orientations. A schematic overview of the multi-body approach is shown in Figure 1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/36861/elife-36861-fig1-v2.jpg)\n\n**Figure 1.:** After a consensus 3D auto-refinement in RELION, the three-dimensional consensus map is split into $B$ separate bodies using user-defined masks. In this example, $B=3$ and the letters\u00a0\u2019M\u2019 (orange),\u00a0\u2019R\u2019 (green) and\u00a0\u2019C\u2019 (puple) each represent a body, and the corresponding spherical masks are shown with transparency. During multi-body refinement, one performs focused refinement for all experimental particle images $X_{i}$, with local rotational and translational searches around the orientations from the consensus refinement. The yellow crosses in the reference projections for the focused refinements of each body indicate the centre-of-mass of each body\u2019s mask, around which all rotations are made.For each body, partial signal subtraction is performed with projections along the current estimates for the respective orientations of the other $B\u22121$ bodies. This leads to $B$ subtracted versions of each experimental particle image during every iteration, which are aligned against projections of the corresponding body. The resulting optimal orientations $\u03d5_{i}^{\u2217}$ for each body are used for the partial signal subtraction in the next iteration. Iterative alignment and reconstruction of all three bodiesis is\u00a0repeated until convergence, which is when resolutions no longer improve and changes in the relative orientations of all bodies become small.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36861/elife-36861-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Overlapping masks for the example shown in Figure 1. For the partial signal subtraction for focused refinement of the\u00a0\u2019M\u2019 body, the density of the\u00a0\u2019R\u2019 body within the\u00a0\u2019R\u2019 mask but not within the\u00a0\u2019M\u2019 mask will be subtracted, together with the density of the\u00a0\u2019C\u2019 body within the\u00a0\u2019C\u2019 mask, but not within the\u00a0\u2019R\u2019 mask (left). Partial signal subtraction for focused refinement of the\u00a0\u2019R\u2019 body comprises the density of the\u00a0\u2019M\u2019 body within the\u00a0\u2019M\u2019mask that does not overlap with the\u00a0\u2019R\u2019 mask and the density of the\u00a0\u2019C\u2019 body within the\u00a0\u2019C\u2019 mask that does not overlap with the\u00a0\u2019R\u2019 mask (middle). Similarly, for focused refinement of the\u00a0\u2019C\u2019 body, partial signal subtraction comprises the density of the\u00a0entire\u00a0\u2019M\u2019 body and the density of the\u00a0\u2019R\u2019 body within the\u00a0\u2019R\u2019 mask that does not overlap with either the\u00a0\u2019M\u2019 mask or the\u00a0\u2019C\u2019 mask. A total of seven different masked maps needs to be stored in computer memory. (B) As in A, but for an example whereall three masks overlap with each other. A total of nine different masked maps needs to be stored in computer memory.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36861/elife-36861-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The density for each body is placed with the centre-of-mass of its mask (indicated with orange and green dots for the\u00a0\u2019M\u2019 body and\u00a0\u2019R\u2019 body, respectively) at the centre of the three-dimensional\u00a0box, and all rotations are around this centre. Each body rotates relative to a neighbouring body, as defined using the rlnBodyRotateRelativeTo column in the input body STAR file (Figure 1\u2014source data 1). In this example, the\u00a0\u2019M\u2019 body rotates relative to the\u00a0\u2019R\u2019 body. The rotation is expressed in Euler angles around an axis perpendicular to the vector between the centre-of-mass of the two bodies to prevent ambiguities in Euler-angle definitions around zero values for the second Euler angle (tilt). The cone illustrates the width at half the maximum value (FWHM) of a Gaussian-shaped prior on the rot-tilt tuple. A separate Gaussian-shaped prior exists on the third Euler angle (psi).\n\n### Implementation details\n\nMulti-body refinement has been implemented as a continuation of a standard 3D auto-refine job (in the program relion_refine_mpi) and is hardware-accelerated on both CPU or GPU (Kimanius et al., 2016). We will refer to the previous standard refinement as the consensus refinement. It provides an initial estimate for the reconstructed density of each body, relative orientations for all particle images with respect to the consensus reconstruction, and estimates for the resolution-dependent variance in the experimental noise $\\sigma_{i}^{2}$.\n\nThe definition of the $B$ separate bodies is provided by the user through a dedicated metadata file in STAR format (Figure 1\u2014source data 1). The table in this file contains a single row for each body, where the entry rlnBodyMaskName points to a real-space mask that defines the outline of the corresponding body. Because sharp edges on masks cause artefacts in the Fourier-space refinements inside relion, the user should provide masks with soft edges, i.e. they contain grey values between zero outside the body, and one inside the body. Although Equation (1) only holds for non-overlapping masks, our actual implementation also allows for overlapping masks between the different bodies, and the program will subtract only the non-overlapping parts of\u00a0the masks of the other bodies when calculating $S_{i}^{b}$ for the focused refinements. For example, in Figure 1, when calculating the subtracted image for the first body, the program will only subtract projections of the second body corresponding to the\u00a0volume that does not overlap with the first body; and of the volume of the third body that does not overlap with the first or the second body (Figure 1\u2014figure supplement 2A). Likewise, when calculating subtracted images for the second body, only the volume of\u00a0the first body that does not overlap with the second will be subtracted, and only the volume of the third body that does not overlap with the first or second body will be subtracted, etc. Because bodies that are higher up in the STAR file are subtracted first, and only non-overlapping parts of subsequent bodies are subtracted, one should position larger bodies above smaller ones in the STAR file. This treatment of overlapping bodies results in an overhead in required computer memory, as besides the 3D Fourier transforms of the $B$ bodies, one also needs to store Fourier transforms of their non-overlapping parts. Therefore, if all bodies overlap with all other bodies, $B^{2}$ 3D Fourier transforms are stored in memory (see Figure 1\u2014figure supplement 2B).\n\nThe optimal orientations $\u03d5_{ib}^{\u2217(n+1)}$ for all bodies of all particle images are stored in additional tables (called data_images_body_b, with $b$ being the body number) in the _data.star file that is written out at every iteration. These orientations are defined as residual rotations and translations that need to be applied on top of the orientations from the consensus refinement. Internally, every body is reconstructed with the centre-of-mass of its mask in the centre\u00a0of the particle image box, and rotations are performed around this centre. The entry called rlnBodyRotateRelativeTo in the bodies STAR file defines the vector around which the rotations of the corresponding body are made: from its own centre-of-mass to the centre-of-mass of the body defined by this entry. For example, according to the STAR file defined in Figure 1\u2014source data 1, the letters\u00a0\u2019M\u2019 and\u00a0\u2019R\u2019 rotate relative to each other, while the letter\u00a0\u2019C\u2019 rotates relative to the letter\u00a0\u2019R\u2019. This description of rotations permits meaningful priors, $P(\u03d5_{b}|\u0398^{(n)})$, for the residual rotations of the bodies: the entries rlnBodySigmaAngles define the standard deviation (10 degrees for the bodies defined in Figure 1\u2014source data 1) of a Gaussian-shaped prior on the Euler angles of the three bodies. Thereby, larger rotations are down-weighted and rotational searches are limited from \u221230 to\u00a0+30 degrees (i.e.\u00a0\u00b13 times the standard deviation) around the consensus rotation for each of the three Euler angles. To avoid ambiguities in rotations where the second Euler angle (rlnAngleTilt) is close to zero, the stored Euler angles represent a rotation around a vector that is orthogonal to the vector between the centres-of-mass of the bodies. Thereby, the residual rotations are all around the Euler-angle values rlnAngleRot\u00a0=\u00a00, rlnAngleTilt\u00a0=\u00a090 and rlnAnglePsi\u00a0=\u00a00 (see Figure 1\u2014figure supplement 3). The entries for rlnBodySigmaOffset in the bodies STAR file define the standard deviation (in pixels) of a Gaussian prior on the translational offsets for each of the bodies, which again are relative to the translations for the entire particles as defined in the consensus refinement.\n\nRunning as a continuation of a consensus 3D auto-refinement, the multi-body refinement will estimate the power of the signal $\\tau_{b}^{2}$ for each body from the Fourier shell correlation (FSC) between two independently-refined half-sets of the data. Because the individual bodies occupy a relatively small volume in the particle image box, the option \"-\u2013solvent_correct_fsc\" is activated by default. This option performs an internal correction to the FSC curves that accounts for the convolution effects of the mask, much like the post-processing job-type does in the standard relion approach (Chen et al., 2013). The multi-body refinement approach is started from user-defined initial sampling rates for the rotations and translations, which are automatically increased during the refinement process. At every iteration the algorithm assesses whether the resolution is still increasing and whether the orientational assignments are still changing. The orientations of an individual body will be kept fixed once the angular sampling becomes finer than the estimated accuracy of the rotations for that body, and the algorithm converges once the resolutions no longer increase, changes in the orientations become small, and the sampling rate is finer than the angular accuracies of all bodies.\n\nIn case of extensive structural heterogeneity, the initial extent of the body masks will be hard to assess in blurry parts of the consensus reconstruction. In such cases, an initial multi-body refinement may be run with a relatively large mask that comprises the entire blurry region of each body. The resulting maps after the first multi-body refinement may then allow the definition of tighter masks for one or more of the bodies. To allow a second multi-body refinement to proceed from the higher\u00a0resolution\u00a0reconstructions of the bodies in the first multi-body refinement, one can then provide an optional column in the body STAR file called rlnBodyReferenceName, which points towards the initial reference map for each of the bodies. An example of this is given below for the spliceosome test case.\n\n### Analysis of multi-body orientations\n\nBesides potentially improved densities for the individual bodies, multi-body refinement also outputs the optimal orientations $\u03d5_{ib}^{\u2217}$ for all bodies and for all particle images in the data set. This information can be used to assess the molecular flexibility in the macromolecular complex. To this end, we have implemented a program called relion_flex_analyse. This program has two main applications. Firstly, it can write out subtracted images which may be useful in subsequent focused refinements or classifications outside the framework of multi-body refinement. To allow smaller image sizes and more meaningful priors in the subsequent refinements, the subtracted images are centered on the projected centre-of-mass of the remaining density after subtraction.\n\nSecondly, the relion_flex_analyse program can also perform a principal component analysis on the relative orientations of the bodies of all particle images in the data set. For the principal component analysis, the three Euler angles describing the relative orientations of the bodies are taken into account, together with the two translations in the projection plane. In order to compare the two translational offsets in different projection directions, they are converted into three translations on the three-dimensional Cartesian grid of the reconstructions by setting the translations along the projection direction to zero. Thereby, principal component analysis is performed on six variables per body. The corresponding\u00a0columns in the principal component analysis are normalised by the squared difference of the intensity values in the maps for each of the bodies after rotating them one degree or translating them one pixel in each of the directions. For each specified eigenvector, the program then outputs a user-specified number of maps ($M=10$ by default). This is done by dividing the histogram of the amplitudes along the eigenvector of interest into $M$ equi-populated bins, that\u00a0is each bin contains $1/M$th of the particle\u00a0images. For each bin, the same reconstructed densities of the $B$ bodies are positioned relative to each other according to the rotations and translations that correspond to the centre amplitude of that bin, and a combined map is generated by adding all repositioned body densities together. This generates $M$ combined maps for the entire complex with different relative orientations of the bodies, each corresponding to the median orientations for $1/M$th of the particle images in the data set. These maps can then be used to generate a movie that visualises the motion along that eigenvector. Movies can be made, for example, using the \u2018Volume Series\u2019 utility in UCSF Chimera (Pettersen et al., 2004) or using CueMol (www.cuemol.org), which we used to generate the images and movies in this paper. When analysing these movies, it is useful to consider that the principal components describe the largest variations in the data along orthogonal degrees of freedom, and that general motions in the data are formed by linear combinations of multiple principal components. Alternatively, the program can also be used to output a subset of particle images within a user-specified range of amplitudes along one of the eigenvectors. The latter can be used to classify particle images based on the extent of a specific motion in the data set. An example of the latter is shown below for the ribosome test case.\n\n## Results\n\n### A ribosome test case\n\nThe multi-body refinement approach was tested on two previously published, experimental data sets. The first data set comprises 105,247 particle images of a Plasmodium falciparum ribosome bound to the drug emetine (Wong et al., 2014). This data set is available as entry 10028 on the EMPIAR data base (Iudin et al., 2016) and is used as a standard benchmark for relion. We used the so-called polished particle images, that\u00a0is particle images after movie-refinement and radiation damage weighting in relion (Scheres, 2014).\n\nThe consensus refinement was started from a 60 \u00c5 low-pass filtered version of EMDB entry 2660, and yielded an overall resolution estimate of 3.2 \u00c5 after standard relion post-processing to account for the solvent effects of the mask on the\u00a0FSC curve (Chen et al., 2013). The estimated B-factor for sharpening this map was \u221261 \u00c5$^{2}$ (Rosenthal and Henderson, 2003). In accordance with results described previously (Wong et al., 2014), the consensus map showed excellent density for the large ribosomal subunit, but the density was worse in the small subunit. In particular, the so-called head region of the small subunit exhibited much more fuzzy density than the rest of the complex. Therefore, we decided to split the ribosome into three bodies, which we named\u00a0\u2019LSU\u2019 for the large subunit;\u00a0\u2019SSU\u2019 for the small subunit without the head; and\u00a0\u2019head\u2019 for the head region (Figure 2A). The corresponding masks were made using a 30 \u00c5 low-pass filtered version of the consensus map to define the boundary with the solvent region, and relied on available atomic models (PDB entries 3J79 and 3J7A) to determine the boundaries between the bodies. By placing soft-edges with a width of 11 \u00c5 on the boundaries of the masks, all three bodies overlapped with each other.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/36861/elife-36861-fig2-v2.jpg)\n\n**Figure 2.:** (A)\u00a0The ribosome consensus map with the three transparent body masks (LSU, SSU and head) superimposed. (B) Slices through the density of the three bodies after the consensus refinement (top) and after multi-body refinement (down). (C) Local resolution estimates (in \u00c5) calculated in relion after the consensus refinement (left) and after multi-body refinement (right). (D) The contributions of all eigenvectors to the variance. The first eigenvector, for which the maps at the extremes are shown in panel F, is highlighted in red. (E) Histograms of the amplitudes along the first and second eigenvectors for all particle images in the data set. The histogram of the amplitudes along the first eigenvector shows a bimodal distribution. The data set was split into two subsets: particle images with the amplitude along the first eigenvector smaller than \u221214 (red arrow) and particle images with that amplitude larger than \u221214 (blue arrow). (F) Refined maps for the two subsets in the same colors. As observed in the movie along the first eigenvector, the SSU rolls with respect to the the LSU and the head swivels with respect to the SSU, cf Video 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36861/elife-36861-fig2-figsupp1-v2.jpg)\n\n![Video 1.](https://cdn.elifesciences.org/articles/36861/elife-36861-video1.mp4.jpg)\n\nIn a first multi-body refinement, the standard deviation of the Gaussian prior on the rotations was set to 10 degrees for all three bodies, and the standard deviations on the body translations were all set to two pixels (2.7 \u00c5). These values represent an estimate of the amount of flexibility present in the different domains. Based on the domain architecture of the ribosome, the LSU and SSU were set to rotate with respect to each other, while the head was rotating with respect to the SSU. Multi-body refinement was started using an initial angular sampling rate of 1.8 degrees and an initial translational sampling rate of 0.25 pixels (0.33 \u00c5). The choice for the initial angular sampling rate reflects a compromise between computational cost and a sufficiently fine sampling to describe the estimated flexibility. The initial translational sampling rate is similar to the estimated accuracy of the translations in the consensus refinement. Convergence of the multi-body refinement occured after 16 iterations,\u00a0which took 16 hr on a single GPU work station with four nvidia 1080Ti GPUs, a 3.2 GHz Intel Xeon CPU, and 256 GB of RAM. Upon convergence, the solvent-corrected resolution estimates for the three bodies were: 3.1 \u00c5 for the LSU, 3.2 \u00c5\u00a0for the SSU, and 3.7 \u00c5 for the head. To test the influence of the mask boundaries on the results, we repeated the multi-body refinement with masks where the boundaries between the three bodies were defined by spheres that were manually positioned using the Volume Eraser tool in UCSF Chimera (Pettersen et al., 2004) to approximate the boundaries between the LSU, SSU and head. To test the influence of the standard deviations of the priors on the rotations and translations of the bodies, we also repeated multi-body refinement with standard deviations of 5 and 20 degrees on the rotations, and standard deviations of 1 pixel and 5 pixels on the translations of all three bodies. For all repeated multi-body refinements, the estimated resolutions in the three bodies did not differ by more than a single resolution shell ($<0.1$\u00a0\u00c5) from the first multi-body-refinement, indicating that the approach is relatively robust to the choice of these parameters.\n\nTo assess the improvement in reconstructed density after multi-body refinement, we post-processed the maps after the consensus refinement using the three body masks and compared the resulting maps with the post-processed maps of the three bodies after multi-body refinement (Figure 2B,C). The same B-factor of \u221261 \u00c5$^{2}$ was applied to all maps. The improvements for the LSU and SSU were modest, with average resolution in the LSU improving from 3.2 to 3.1 \u00c5, and in the SSU from 3.3 to 3.2 \u00c5, and visual inspection of the maps did not reveal major improvements (not shown). The improvements for the head were larger. In this region, the average resolution improved from 4.0 to 3.7 \u00c5, and the reconstructed density improved considerably upon visual inspection. In particular, in the region furthest away from the centre of the ribosome, the reconstructed density for the head improved to such an extent that previously unmodelled regions became interpretable.\n\nApplication of the principal component analysis in the relion_flex_analyse program revealed that approximately 30% of the variance in the rotations and translations of the three bodies is explained by the first two eigenvectors (Figure 2D). Movies of the reconstructed body densities repositioned along these eigenvectors reveal that the first eigenvector corresponds to a rolling-like motion of the SSU with respect to the LSU and a concomittant swiveling of the head (Video 1), whereas the motion\u00a0along the second eigenvector is more reminiscent of a ratchet-like motion of the SSU with respect to the LSU together with a displacement of the head (Video 2). With the exception of the amplitudes along the first eigenvector, histograms of all other amplitudes were monomodal. For the histogram of the amplitudes along the first eigenvector, a shoulder was visible on the negative side of the histogram, indicating that the structural heterogeneity along the first eigenvector may not be continuous. We then used the relion_flex_analyse program to write out two separate STAR files with 11,431 particle images for which the amplitude along the first eigenvector is less than \u221214, and 93,816 particle images for which the amplitude along the first eigenvector is greater than \u221214 (Figure 2E). Separate refinements of these subsets yielded overall resolution estimates of 4.4 and 3.2 \u00c5, respectively. The differences between the two maps reveal similar differences in the orientation of the SSU and head as observed in Video 1 (Figure 2F). This sort of discrete structural heterogeneity had remained undetected in our previous analysis (Wong et al., 2014), and re-running conventional 3D classifications on this data set (with six or eight classes, and\u00a0with exhaustive, local or no alignments of the particle images after the consensus refinement; results not shown) did not yield class reconstructions with meaningful differences between them.\n\n![Video 2.](https://cdn.elifesciences.org/articles/36861/elife-36861-video2.mp4.jpg)\n\n### A spliceosome test case\n\nThe second data set on which we tested multi-body refinement comprised 327,490 polished particle images of a spliceosomal B-complex from yeast (Plaschka et al., 2017). With the submission of this paper, we also submitted this data set to the EMPIAR\u00a0data base, where it is now available under entry 10180. In the original study describing this data set (Plaschka et al., 2017), different parts of the complex were refined separately using focused refinement with partial image subtraction. Here, we used four masks that were generated in the original study for multi-body refinement:\u00a0\u2019core\u2019 for the centre of the tri-snSNP structure,\u00a0\u2019foot\u2019 for the tri-snSNP foot domains,\u00a0\u2019helicase\u2019 for the helicase domain, and\u00a0\u2019SF3b\u2019 for the SF3b subunits (Figure 3A). Note that the centre of the tri-snSNP structure is often called\u00a0\u2019body\u2019 in the spliceosome literature, but we chose to call it the core to prevent confusion with the more general definition of body in this paper. The body masks were generated using a combination of the Volume Eraser tool in UCSF Chimera (Pettersen et al., 2004) and relion_mask_create. The masks were large enough to enclose the blurred, weak densities at the periphery of the complex, that\u00a0is in the foot, helicase and SF3b domains. To reduce memory consumption, polished particle images used in the previous study (Plaschka et al., 2017) were down-sampled to 1.7 \u00c5 per pixel and re-windowed into a 320 pixel box. All refinements were perfomed without Fourier space padding\u00a0by specifying the \"\u2013\u2013pad 1\" option.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/36861/elife-36861-fig3-v2.jpg)\n\n**Figure 3.:** (A)\u00a0The four body masks used for the first splicesome multi-body refinement are shown in semi-transparent colours on top of the consensus map on the left; the resulting density after the first multi-body refinement and the masks used for the second multi-body refinement are shown on the right. (B) Slices through the density of the four bodies after the consensus refinement (top) and after multi-body refinement (down). (C) Local resolution estimates (in \u00c5) calculated in RELION after the consensus refinement (left) and after multi-body refinement (right). (D) The contributions of all eigenvectors to the variance. The second eigenvector, for which the maps at the extremes are shown in panel E, is highlighted\u00a0in red. (E) Motion represented by the second eigenvector, cf Video 4. The helix that connects the core of the spliceosome and the LSm ring of the SF3b body that gets broken during the repositioning of the bodies in the eigenvector movies and the combined maps is indicated with an asterisk (also see main text).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36861/elife-36861-fig3-figsupp1-v2.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36861/elife-36861-fig3-figsupp2-v2.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/36861/elife-36861-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** For the latter, the third and eight out of ten movie frames are shown.\n\nThe consensus refinement was started from the B complex map in (Plaschka et al., 2017), which was low-pass filtered to 40 \u00c5. The overall resolution after the consensus refinement, using a mask around the entire complex for post-processing, was 4.3 \u00c5. The estimated B-factor for map sharpening was \u2212148 \u00c5$^{2}$. When postprocessed with individual masks for the four bodies, the core, foot, helicase and SF3b gave resolutions of 3.9, 4.2, 4.6 and 9.2 \u00c5, respectively. Consistent with these values, the density for the SF3b was weak and blurred (Figure 3C,D).\n\nFor multi-body refinement, the core and the foot were set to rotate against each other. The helicase and the SF3b were set to rotate relative to the core. Based on similar considerations as for the ribosome case, the initial angular sampling rate was set to 1.8 degrees, and the initial translational sampling range and rate were set to three pixel (5.1 \u00c5) and 0.75 pixel (1.3 \u00c5), respectively. The standard deviations of the angular and the translational prior were set to 10 degrees and two pixels (3.4 \u00c5) for all bodies. The multi-body refinement converged in 15 iterations, which took 33 hr on the same GPU workstation as used for the ribosome case. Upon covergence, the estimated resolutions for the core, foot, helicase and SF3b domains were 3.8, 4.0, 4.5 and 5.1 \u00c5, respectively.\n\nNext, we ran a second round of multi-body refinement using tighter masks that were generated from the body reconstructions from the first multi-body refinement. These masks were generated by low-pass filtering the reconstruction for each body from the first multi-body refinement to 30 \u00c5, extending the binarised maps by 10 pixels, and adding a soft edge of 5 pixels. In addition, we used 7 \u00c5 low-pass filtered maps of each body obtained in the first multi-body refinement as initial references for the\u00a0second run using the rlnBodyReferenceName label in the body STAR file. The second multi-body refinement converged in 12 iterations, and took 40 hr on our GPU workstation. The resolutions of the core, foot and helicase remained essentially the same as in the first multi-body refinement (3.7, 4.0 and 4.5 \u00c5, respectively), while that of the SF3b improved to 4.4 \u00c5 (Figure 3C; Figure 3\u2014figure supplement 1). Despite the reasonable overall resolutions for each of the bodies, the densities for the U4 Sm ring within the helicase domain and the LSm ring and Rse1\u2019s $\\beta$-propeller B (BPB) within the SF3b domain remained relatively fuzzy, indicating remaining flexibilities and/or compositional heterogeneity within these bodies.\n\nIn an attempt to address the remaining structural heterogeneity within the SF3b body, and as an illustration of how multi-body refinement can be combined with existing refinement approaches, we then used the relion_flex_analyse program to subtract the other three bodies from all experimental particle images, and performed a focused 3D classification on the SF3b without alignments. Using six classes, we identified a single class (containing 126,186 particle images) with better defined density than the other classes. A separate refinement of this class led to a SF3b map with improved local resolution of its central region (Figure 3\u2014figure supplement 2) and an overall resolution of 4.0 \u00c5. Subsequent focused refinements and classifications with partial signal subtraction on only the LSm ring did not yield better resolution maps (not shown).\n\nWe also examined the effect of wider search ranges for the rotations and translations of the bodies by changing the standard deviation of the angular and the translational priors to 20 degrees and 4 pixels. The resulting resolutions were within one or two\u00a0resolution shells (<0.5\u00c5) of those with the default values of 10 degrees and 2 pixels, which is consistent with the observations for the ribosome dataset.\n\nPrincipal component analysis by relion_flex_analyse revealed that the first two components describe approximately 30% of the variance in the rotations and translations (Figure 3D). In contrast to the ribosome discussed above, the histograms were unimodal, suggesting that these motions were of a continuous nature. The first component corresponded to a rocking motion of the SF3b over the core (Video 3). The second represented concerted rocking of the helicase and SF3b (Video 4). Interestingly, the latter motion may resemble an early phase of the transition from the B complex (this structure) to the B$^{act}$ complex, where the SF3b regions moves towards the U6 snRNA ACAGAGA stem to form the spliceosome active site (Yan et al., 2016; Rauhut et al., 2016; Plaschka et al., 2017).\n\n![Video 3.](https://cdn.elifesciences.org/articles/36861/elife-36861-video3.mp4.jpg)\n\n![Video 4.](https://cdn.elifesciences.org/articles/36861/elife-36861-video4.mp4.jpg)\n\nFinally, we compared the results from multi-body refinement with those from discrete classification. The two largest classes of a 3D classification run with eight classes (keeping the orientations fixed at those determined in the consensus refinement) comprised 40% and 27% of the particle images. These two classes represent a similar motion as identified by the first component in the relion_flex_analyse program (Figure 3\u2014figure supplement 3). However, even for the largest class, the local resolutions for the SF3b, the core and the foot domain were lower than those obtained using multi-body refinement (Figure 3\u2014figure supplement 1).\n\n## Discussion\n\nThe main assumption in conventional cryo-EM single-particle analysis is that every experimental particle image is a two-dimensional projection of a common three-dimensional structure. This assumption no longer holds in the presence of continuous structural heterogeneity in the data set. Instead, multi-body refinement assumes that the continuous structural heterogeneity can be modelled as independent movements between rigid bodies, that\u00a0is bodies that adopt the same structure but have different relative orientations among the data set. This assumption is probably reasonable for many macromolecular complexes, as tertiary protein structure often remains intact upon changes in quaternary structure. This is because within individual protein domains, the chemical environment of each amino acid does not change much upon movements of the entire domain. A major advantage of the multi-body model is that it allows one to use the entire data set for the reconstruction of each body, that\u00a0is no subdivision of the data is required to describe the structural heterogeneity. The usefulness of this model is illustrated by the observation that multi-body refinement yields marked improvements over consensus refinement in the maps of flexible domains for both the ribosome and the spliceosome. For both test cases, parts of the consensus map that were not interpretable in terms of an atomic model improved to resolutions around 4 \u00c5 after multi-body refinement. For the ribosome case, conventional 3D classification into a discrete number of classes turned out to be difficult and following standard procedures did not yield insights into the structural heterogeneity present. For the spliceosome case, multi-body refinement provided better maps than those obtained by conventional classification into a discrete number of classes. This is explained by the lower number of particle images that contribute to each class in discrete classification, whereas multi-body refinement allows the use of all particle images for each of the bodies. Moreover, in the presence of continuous heterogeneity, each discrete class will still correspond to a mixture of different structures. Therefore, we anticipate that multi-body refinement will be a useful tool in generating atomic models for domains that adopt multiple different orientations with respect to the rest of the complex.\n\nWhereas the internal structure of protein domains may change little when a body moves relative to a neighbour, significant changes in the chemical environment are expected for amino acids at the interfaces between the bodies. As one domain moves relative to another, continuous or multiple discrete conformational changes may occur at the interface. Ultimately, these changes may also affect the internal structure of the protein domains, in which case multi-body refinement would no longer be justified, but in general the structural variability will be largest at the interfaces. Our implementation allows the definition of overlapping body masks. Thereby, each body can be defined to include the interface with its neighbouring bodies. Provided this interface density is not large enough to affect the particle image alignments, the resulting blurry density may help to better understand the nature of the structural variability at these interfaces.\n\nOur implementation outputs a separate reconstruction for each of the bodies, which may then be used to build atomic models for the different bodies. Often, the experimentalist may want to combine these separately built atomic models into a single atomic model describing the entire complex. Such a combined atomic model can then be used to make figures for publication, or for submission to the Protein Data Bank. For example, in the original study on the spliceosomal B-complex, a combined atomic model was generated by rigid-body fitting the models that were built into maps resulting from separate focused refinements with partial signal subtraction, and a similar procedure could be used after multi-body refinement. However, we note that this representation of\u00a0a single atomic model for the entire complex is in principle not supported by the data. Besides creating a false impression of structural homogeneity, in particular the conformations of residues at the interfaces of the rigid-body fitted atomic models may not reflect the true interface with the relative orientation of the bodies observed in the combined model. For example, a helix connecting the core of the spliceosome and the LSm ring of the SF3b body (marked by asterisks in Figure 3D,E,G) looks broken in combined multi-body reconstructions, which is chemically unfeasible. This is where the rigid body assumption no longer holds. In reality, the interface should rearrange to keep the helix intact. As many different interface structures may exist in the data set, reconstruction of all these different densities and the generation of atomic models for these may not be possible. One could propose to keep the atomic models for each of the bodies separate, as this would prevent the impression of a well-defined\u00a0structure at the interface. However, such a solution would still not reflect the variability in conformations of residues at the interface, and would be more difficult to analyse by non-experts. How to tackle the problem of reflecting continuous structural heterogeneity with atomic models will require community-wide discussion.\n\nMulti-body refinement improved the maps for flexible parts of both the ribosome and spliceosome test cases. Similar improvements can also be achieved by existing focused refinement or classification approaches with partial signal subtraction. In fact, in the original study describing the spliceosomal B-complex, parts of the SF3b region were reconstructed to higher resolutions (3.9 \u00c5) than achieved in multi-body refinement (4.4 \u00c5). Multi-body refinement has the advantage of iteratively improving the partial signal subtraction, whereas focused refinement and classification is typically done with fixed subtracted particle images. On the other hand, combining multiple focused classifications and/or refinement runs, each with its own user-specified sampling and mask parameters, is more flexible than the fully automated multi-body refinement, but requires more user expertise. To combine the advantages of both approaches, the relion_flex_analyse program can output subtracted images according to\u00a0the iteratively\u00a0refined relative orientations from a multi-body refinement. The resulting subtracted particle images can then be used in subsequent focused classifications and/or refinements. An additional advantage of this program over previously existing subtraction tools in relion is the centering at the projected centre-of-mass of the subtracted particle images, which allows the use of more meaningful priors and smaller box sizes. The use of this procedure was illustrated for the SF3b region\u00a0of the spliceosome, where focused classification and refinement after subtraction in the relion_flex_analyse program led to a resolution of 4.0 \u00c5, which is close to the resolution of 3.9 \u00c5 obtained for this region in the original study.\n\nBesides improved reconstructed density for flexible domains, multi-body refinement also provides information about the relative orientations of all bodies for every particle image in the data set. The proposed principal component analysis on the relative rotations and translations of all bodies allows convenient visualisation of the principal motions that exist within the data set through the generation of movies. These movies provide the user with unique insights into how different bodies move with respect to each other, which bodies move together with others, etc. However, we do again point out that (as outlined above for the analysis of atomic models) densities at the interfaces between different bodies are not well-defined in these movies. For the ribosome, analysis of the movies for the first two eigenvectors revealed the presence of the typical ribosome motions of rolling and ratcheting of the SSU relative to the LSU. In addition, the presence of a bimodal histogram for the amplitudes along the first eigenvector indicated the presence of non-continuous heterogeneity in the rolling motion. In the general case of discrete heterogeneity, the movies generated from such non-unimodal histograms will display a discontinuous jump from one conformation to the other. Subsequent classification of the particle images based on the amplitude along the first eigenvector was also used to obtain two separately refined maps of the two states, which confirmed the motion observed along that eigenvector. For the spliceosome, rotations of the helicase and SF3b with respect to the core were observed. Interestingly, the motion corresponding to the second eigenvector resembles an early phase of the transition from the B complex to the B$^{act}$ state in the spliceosome functional cycle (Yan et al., 2016; Rauhut et al., 2016; Plaschka et al., 2017). These results illustrate that the movies generated by the relion_flex_analyser program may be useful in exploring biologically relevant molecular motions.\n\nOne of the main limitations of multi-body refinement, and focused refinement in general, is that when the size of individual bodies decreases the signal becomes too weak for reliable alignment of the subtracted particle images. Refinement of macromolecular complexes with molecular weights below 100 kDa becomes progressively difficult, although smaller complexes have been refined, and phase-plate imaging (Khoshouei et al., 2017) can help to reduce the size limits. In the case of perfect partial signal\u00a0subtraction, similar limits on the minimum size of the bodies are expected for multi-body refinement. In practice, partial signal subtraction will contain errors, and larger bodies may be required. The smallest body presented in this paper, the foot of the spliceosome, has a molecular weight of approximately 290 kDa. The current implementation allows keeping very small bodies fixed (by setting the standard deviations on their rotational and translational priors to zero). Thereby, at least the consensus density can be subtracted for the alignment of the other bodies.\n\nUltimately, one would aim to introduce dependencies between the alignments of bodies, such that simultaneous alignment of many small bodies would become feasible. This would allow modelling of much more complicated forms of continuous structural heterogeneity. The approach in WarpCraft represents a step in that direction. WarpCraft could be considered as a many-body approach, where the flexibility is re-parametrised using normal mode analysis. This reduces the number of degrees of freedom from five per body (three Euler angles and two in-plane shifts) to the number of normal modes considered, regardless of the number of bodies. Consequently, WarpCraft may perform well in cases where the structural flexibility can be described by a few correlated local motions, as was probably the case for the Mediator complex (Schilbach et al., 2017). However, when multiple independently moving bodies are present, one again needs many normal modes to describe the entire conformational landscape, and the advantage\u00a0of the normal-mode re-parametrisation would disappear. Moreover, the presence of domain rotations, which are highly non-linear deformations, as well as the presence of discrete heterogeneity are difficult to describe by normal modes. In such cases, provided the individual bodies are large enough, one would expect the multi-body approach to perform better than the approach implemented in WarpCraft. Probably, both approaches will suffer from similar problems at the boundaries between bodies that undergo large motions, as many data sets will not contain sufficient information to describe those. Currently, the exploration of new re-parametrisation schemes that allow modelling of commonly occurring types of flexibility in macromolecular complexes is a topic of active research in our groups.\n\nMeanwhile, the multi-body approach presented here offers a convenient tool to improve the reconstructed density of flexible regions in macromolecular complexes that can be described as multiple moving rigid bodies, and to provide unique insights into the nature of these movements. The computer programs described in this paper will be distributed as part of release 3.0 of relion, which is completely free for any user. As this software is distributed as open-source, others can contribute their own modifications and improvements of the presented algorithms, as has happened for partial signal subtraction approaches in the past (Zhou et al., 2015; Ilca et al., 2015; Schoebel et al., 2017). Based on the observations described here, we anticipate that multi-body refinement, possibly combined with existing classification and refinement approaches, will be a useful tool to extract more information from cryo-EM data sets on macromolecular complexes exhibiting continuous structural heterogeneity.\n",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "80136172-f227-442e-a59b-13a8b9e0923f",
+      "submission_id": "df8b2ffc-9a7a-4b8d-80a3-789477751547",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Axel T Brunger, Stanford University Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.36861.021](https://doi.org/10.7554/eLife.36861.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Characterisation of molecular motions in cryo-EM single-particle data by multi-body refinement in RELION\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Axel Brunger as the Reviewing Editor and Andrea Musacchio as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: John L Rubinstein (Reviewer #2); Nikolaus Grigorieff (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nScheres and colleagues describe an extension \u2013 multi-body refinement \u2013 of their software, RELION, to process images of single particles displaying large continuous heterogeneity that can be represented as motion of several independent rigid subdomains (the \"bodies\"). Their implementation follows a strategy that was applied previously, for example, to the ribosome and the spliceosome. The new tool is user-friendly and automates the steps established in these previous projects: masking of rigid subdomains by pre-defined masks, signal subtraction of parts of the particle outside the mask, focused refinement of the remaining domain, and combination of the separately refined domains to reconstitute the complete particle. In addition, the angles and translations for the subdomains can be analyzed using principal component analysis, and reconstructions with domains in intermediate positions can be calculated to visualize the motions. The new tool is applied to two previously published datasets, of Plasmodium ribosome and yeast spliceosome. Focused refinement itself is not new, but the new automated implementation in Relion should make it much easier to use when multiple focused regions (or multiple bodies) are necessary.\n\nThe multi-body refinement addresses an important problem in single-particle cryo-EM that occurs when domains of a complex move against each other without assuming distinct positions (conformations) relative to each other. This is one type of continuous heterogeneity that occurs frequently in large macromolecular machines. The authors demonstrate that multi-body refinement is an effective tool to improve the resolution of the subdomains. As they point out, features at the interfaces between the domains will not be reconstructed correctly.\n\nEssential revisions:\n\nThe WarpCraft approach appears to be superior in preserving details at domain interfaces. The authors should discuss situations in which their multi-body approach would be preferred.\n\nHow does the visualization of the motion by principal component analysis work when the motion is not continuous, i.e. there are only a few discrete states? What if dividing the particles into M equi-populated bins according to the chosen eigenvalue is not possible because there are not sufficient particles for some bins?\n\nThe multi-body refinement results are compared with the consensus refinement results that were obtained by refining a single class. A more interesting comparison would be with the results obtained using traditional 3D classification assuming discrete states. In the ribosome example, this may yield results similar to the multi-body approach.\n\nSome explanation of the rationale for choice of parameters subsection \u201cA ribosome test case\u201dand subsection \u201cA spliceosome test case\u201d would be valuable.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Characterisation of molecular motions in cryo-EM single-particle data by multi-body refinement in RELION\" for further consideration at eLife. Your revised article has been favorably evaluated by Andrea Musacchio (Senior Editor), a Reviewing Editor, and three reviewers.\n\nReviewer #1:\n\nI am satisfied with how the authors have addressed the concerns raised by the first round of reviews.\n\nI caught a few typos.\n\nReviewer #2:\n\nI am satisfied by the changes and think the paper should be published\n\nReviewer #3:\n\nI read the authors' rebuttal and am happy with their replies. I think that the manuscript is ready for publication in eLife.\n",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6857357d-42ee-4da4-95bb-b4b43b88bcc0",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C1",
+      "claim": "Cryo-EM is a single-molecule imaging technique that provides unique information about the structure of individual macromolecular complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "In electron cryo-microscopy (cryo-EM) single-particle analysis, biological macromolecules are embedded in a thin layer of vitrified buffer and imaged in a transmission electron microscope. In principle, this represents a single-molecule imaging technique that provides unique information about the structure of individual macromolecular complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a principle of cryo-EM single-particle analysis in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "a134884c-e515-4f89-953a-86e9d1236a81",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C2",
+      "claim": "The electron dose in cryo-EM needs to be carefully limited to reduce radiation damage.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because the electron dose needs to be carefully limited to reduce radiation damage, cryo-EM images are typically extremely noisy and one needs to combine projections of many molecules supposedly in the same state to reliably recover high-resolution information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fundamental constraint in cryo-EM imaging.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "ae9d0cb2-8e03-46a3-a32d-91afe3bfe279",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C3",
+      "claim": "Direct-electron detectors and improved image processing procedures have allowed structure determination of many macromolecular complexes with enough detail to allow de novo atomic modelling.",
+      "claim_type": "EXPLICIT",
+      "source": "In recent years, with the development of direct-electron detectors and improved image processing procedures, this technique has allowed structure determination of many macromolecular complexes with enough detail to allow de novo atomic modelling (Fernandez-Leiro and Scheres, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a review article.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "3e7ed965-a260-4062-a4df-45dc831160bd",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C4",
+      "claim": "Macromolecular complexes often undergo conformational transitions as part of their functional cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "Because macromolecular complexes often undergo conformational transitions as part of their functional cycles, many cryo-EM samples contain mixtures of different conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as general knowledge about macromolecular complexes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "1b6bc0cf-055f-493e-9e56-467348e26bc7",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C5",
+      "claim": "Maximum likelihood classification methods for unsupervised classification of three-dimensional states were introduced by Scheres et al. in 2007.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsupervised classification of a discrete number of three-dimensional states became possible with the introduction of maximum likelihood classification methods (Scheres et al., 2007), which have since then been implemented in multiple image processing packages (Sorzano et al., 2004; Scheres, 2012b; Lyumkis et al., 2013; Punjani et al., 2017; Grant et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to the original work and subsequent implementations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "1bd483e6-9423-4f20-bf8b-09c1603cd9f8",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C6",
+      "claim": "Competitive multi-reference refinement approaches have been used to deduce energy landscapes from Boltzmann distributions for flexible molecular complexes like the 26S proteasome and the spliceosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Using many classes, competitive multi-reference refinement approaches have also been used to deduce energy landscapes from Boltzmann distributions of the relative number of particle images assigned to each of the class for flexible molecular complexes like the 26S proteasome (Haselbach et al., 2017) and the spliceosome (Haselbach et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to specific studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "c1f8ef1c-8b17-4195-bc0b-9fe1865281a4",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C7",
+      "claim": "Discrete classification approaches are not well suited when macromolecular complexes exhibit continuous molecular motions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, discrete classification approaches are ultimately not well suited when macromolecular complexes exhibit continuous molecular motions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of discrete classification approaches and is reasoned from the nature of continuous heterogeneity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "44d1824c-b0e9-45f2-9513-2293036d7283",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C8",
+      "claim": "An infinite amount of classes would be needed to describe a continuum of structural states.",
+      "claim_type": "EXPLICIT",
+      "source": "In principle, an infinite amount of classes would be needed to describe a continuum, and given a finite data size the number of particle images per class would approach zero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the limitations of discrete classification for continuous heterogeneity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "38695267-4d66-49e9-a519-306af6b67117",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C9",
+      "claim": "Normal-mode analysis has been used to deduce macromolecular motions from low-resolution maps.",
+      "claim_type": "EXPLICIT",
+      "source": "An early approach to describe continuous heterogeneity used normal-mode analysis to deduce macromolecular motions from low-resolution maps (Tama et al., 2002), and such predictions have also been used to guide alignment and discrete classification of cryo-EM images (Jin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies using normal-mode analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "85b4a9c9-db4a-4ce8-9650-44d10a2b30d7",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C10",
+      "claim": "Manifold embedding allows extraction of any three-dimensional state along a continuum in principle.",
+      "claim_type": "EXPLICIT",
+      "source": "An approach that in principle allows one to extract any three-dimensional state along a continuum is based on manifold embedding (Dashti et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the manifold embedding approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "5d9daba0-ed54-4806-9c40-457f11e36376",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C11",
+      "claim": "Currently available manifold embedding methods require prior alignment of particle images against a single consensus reference.",
+      "claim_type": "EXPLICIT",
+      "source": "The manifold would ideally be calculated from the particle images alone, but currently available methods require prior alignment of the particle images against a single consensus reference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of current manifold embedding methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "3ebd9ef7-67c3-4cad-be8e-27c5b4b367ff",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C12",
+      "claim": "Masked or focused refinements provide an efficient way to obtain high-resolution reconstructions in cases of rigid-body motions.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps, a favourable case of continuous structural heterogeneity is when the molecular motion can be described by two or more rigid bodies that maintain their own internal structure but differ in their relative orientations. This model relies on the observation that tertiary protein structure often remains relatively constant upon domain movement. In case of such rigid-body motions, masked or focused refinements provide an efficient way to obtain high-resolution reconstructions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of focused refinement approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "be8aafd7-55d2-40e9-977e-5e2c87b461ab",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C13",
+      "claim": "Focused refinement allowed atomic modelling in the presence of continuous variability in the relative orientations of ribosomal subunits for the yeast mitochondrial ribosome and the Plasmodium falciparum cytoplasmic ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "This procedure allowed atomic modelling in the presence of continuous variability in the relative orientations of ribosomal subunits for the yeast mitochondrial ribosome (Amunts et al., 2014) and the Plasmodium falciparum cytoplasmic ribosome (Wong et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to specific studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "b54b02d4-91fc-4d7a-9544-1a9e0a8f4f11",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C14",
+      "claim": "Focused refinement was improved by partial signal subtraction where density corresponding to the rest of the complex is subtracted from experimental particle images.",
+      "claim_type": "EXPLICIT",
+      "source": "Later, this approach was improved by partial signal subtraction, where density corresponding to the rest of the complex is subtracted from the experimental particle images prior to performing focused refinements (Bai et al., 2015; Zhou et al., 2015; Ilca et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies implementing partial signal subtraction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "1308b15c-a809-4d43-abaa-6e6318fdf06e",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C15",
+      "claim": "A limitation of focused refinement is that each domain refined separately needs to be large enough to allow alignment of individual subtracted particle images.",
+      "claim_type": "EXPLICIT",
+      "source": "A limitation of the focused refinement approach is that each domain that is refined separately needs to be large enough to allow alignment of the individual subtracted particle images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation of the focused refinement approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "a5aa65df-5365-4d41-82ec-a1bc8fae6f34",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C16",
+      "claim": "WarpCraft uses normal mode analysis on a pseudo-atomic model to restrain motions between different regions in the map.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome this problem, a new approach called WarpCraft was described recently for the structure determination of transcription pre-initiation complexes with TFIIH and Mediator (Schilbach et al., 2017). WarpCraft uses normal mode analysis on a pseudo-atomic model of the cryo-EM map to restrain the motions between different regions in the map, thereby allowing reconstructions of much smaller regions than in focused refinement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the WarpCraft study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "a9b6d719-6435-452d-9868-8e1fd278778c",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C17",
+      "claim": "An early implementation of multi-body refinement was used to improve the density of mobile domains in the spliceosomal tri-snRNP complex.",
+      "claim_type": "EXPLICIT",
+      "source": "We first used an early implementation of our multi-body refinement to improve the density of mobile domains in the spliceosomal tri-snRNP complex (Nguyen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the tri-snRNP study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "a0b2113c-ac49-43df-8e5a-739d868d6307",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C18",
+      "claim": "Multi-body refinement assumes that all particles in a cryo-EM data set comprise the same macromolecular complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Multi-body refinement in relion is based on the assumption that all particles in a cryo-EM data set comprise the same macromolecular complex, that is, it is stoichiometrically homogeneous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fundamental assumption of the multi-body refinement method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "23900d91-04f3-4f49-87cb-ae82bd47718f",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C20",
+      "claim": "Multi-body refinement is implemented as a continuation of a standard 3D auto-refine job in relion_refine_mpi.",
+      "claim_type": "EXPLICIT",
+      "source": "Multi-body refinement has been implemented as a continuation of a standard 3D auto-refine job (in the program relion_refine_mpi) and is hardware-accelerated on both CPU or GPU (Kimanius et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the implementation details of the method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "33b62202-8582-41cb-8876-cab894cbca93",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C21",
+      "claim": "Multi-body refinement is hardware-accelerated on both CPU and GPU.",
+      "claim_type": "EXPLICIT",
+      "source": "Multi-body refinement has been implemented as a continuation of a standard 3D auto-refine job (in the program relion_refine_mpi) and is hardware-accelerated on both CPU or GPU (Kimanius et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a feature of the implementation with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "74465f4b-c9c7-4492-9287-169720066160",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C22",
+      "claim": "The user should provide masks with soft edges for multi-body refinement because sharp edges cause artefacts in Fourier-space refinements.",
+      "claim_type": "EXPLICIT",
+      "source": "Because sharp edges on masks cause artefacts in the Fourier-space refinements inside relion, the user should provide masks with soft edges, i.e. they contain grey values between zero outside the body, and one inside the body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a requirement based on known properties of Fourier-space refinements.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "e719e8e6-9f50-4fe2-9bf4-67d1c0d5565d",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C26",
+      "claim": "The multi-body refinement algorithm converges once resolutions no longer increase, changes in orientations become small, and sampling rate is finer than angular accuracies of all bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "The orientations of an individual body will be kept fixed once the angular sampling becomes finer than the estimated accuracy of the rotations for that body, and the algorithm converges once the resolutions no longer increase, changes in the orientations become small, and the sampling rate is finer than the angular accuracies of all bodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the convergence criteria for the algorithm.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "ece63b86-9672-4287-a919-9bdbfc40263d",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C27",
+      "claim": "The relion_flex_analyse program can write out subtracted images centered on the projected centre-of-mass of the remaining density after subtraction.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we have implemented a program called relion_flex_analyse. This program has two main applications. Firstly, it can write out subtracted images which may be useful in subsequent focused refinements or classifications outside the framework of multi-body refinement. To allow smaller image sizes and more meaningful priors in the subsequent refinements, the subtracted images are centered on the projected centre-of-mass of the remaining density after subtraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the relion_flex_analyse program.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "cc0e8be5-d72f-433c-9099-888799a78635",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C28",
+      "claim": "The relion_flex_analyse program performs principal component analysis on the relative orientations of bodies using three Euler angles and two translations in the projection plane.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, the relion_flex_analyse program can also perform a principal component analysis on the relative orientations of the bodies of all particle images in the data set. For the principal component analysis, the three Euler angles describing the relative orientations of the bodies are taken into account, together with the two translations in the projection plane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the principal component analysis method implemented in the program.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "b8dd2e42-80bf-4943-a21e-89e932cbd42e",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C29",
+      "claim": "The ribosome test case data set comprises 105,247 particle images of a Plasmodium falciparum ribosome bound to the drug emetine.",
+      "claim_type": "EXPLICIT",
+      "source": "The first data set comprises 105,247 particle images of a Plasmodium falciparum ribosome bound to the drug emetine (Wong et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the test data set used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "b6b24983-79a5-451c-93a3-b720cd46636d",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C30",
+      "claim": "The ribosome data set is available as entry 10028 on the EMPIAR data base.",
+      "claim_type": "EXPLICIT",
+      "source": "This data set is available as entry 10028 on the EMPIAR data base (Iudin et al., 2016) and is used as a standard benchmark for relion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides information about data availability with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "a2dfe3a5-b8c7-44af-89f1-9c5efa5e9e2c",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C31",
+      "claim": "The consensus refinement of the ribosome yielded an overall resolution estimate of 3.2 \u00c5 after standard relion post-processing.",
+      "claim_type": "EXPLICIT",
+      "source": "The consensus refinement was started from a 60 \u00c5 low-pass filtered version of EMDB entry 2660, and yielded an overall resolution estimate of 3.2 \u00c5 after standard relion post-processing to account for the solvent effects of the mask on the FSC curve (Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports a resolution measurement from the consensus refinement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "c42e2364-a492-4554-8790-36a537fa0e2f",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C33",
+      "claim": "The consensus map of the ribosome showed excellent density for the large ribosomal subunit but worse density in the small subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with results described previously (Wong et al., 2014), the consensus map showed excellent density for the large ribosomal subunit, but the density was worse in the small subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes observations from the consensus map with a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "766a38e0-ca26-47fa-a417-7afa1b2d82c4",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C34",
+      "claim": "The head region of the small ribosomal subunit exhibited much more fuzzy density than the rest of the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the so-called head region of the small subunit exhibited much more fuzzy density than the rest of the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an observation from the consensus map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "5ba740d3-b49d-4c4d-a90c-534a01ad1a80",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C35",
+      "claim": "The ribosome was split into three bodies named LSU, SSU, and head for multi-body refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we decided to split the ribosome into three bodies, which we named 'LSU' for the large subunit; 'SSU' for the small subunit without the head; and 'head' for the head region (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design for multi-body refinement.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "68fd8936-cae7-471d-b505-61b0202c8994",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C36",
+      "claim": "Multi-body refinement of the ribosome converged after 16 iterations.",
+      "claim_type": "EXPLICIT",
+      "source": "Convergence of the multi-body refinement occured after 16 iterations, which took 16 hr on a single GPU work station with four nvidia 1080Ti GPUs, a 3.2 GHz Intel Xeon CPU, and 256 GB of RAM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the convergence behavior of the algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "0f06c043-8b9e-4cbd-9975-5e258f34de21",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C37",
+      "claim": "Upon convergence of ribosome multi-body refinement, the solvent-corrected resolution estimates were 3.1 \u00c5 for the LSU, 3.2 \u00c5 for the SSU, and 3.7 \u00c5 for the head.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon convergence, the solvent-corrected resolution estimates for the three bodies were: 3.1 \u00c5 for the LSU, 3.2 \u00c5 for the SSU, and 3.7 \u00c5 for the head.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports resolution measurements after multi-body refinement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "e2d90be5-b905-4aca-84e4-ee3ae56da6fe",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C39",
+      "claim": "For the ribosome head, the average resolution improved from 4.0 to 3.7 \u00c5 after multi-body refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "The improvements for the head were larger. In this region, the average resolution improved from 4.0 to 3.7 \u00c5, and the reconstructed density improved considerably upon visual inspection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports a resolution improvement measurement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "630fd8f7-44a5-4336-a387-e8a7ae240d17",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C40",
+      "claim": "Approximately 30% of the variance in the rotations and translations of the three ribosome bodies is explained by the first two eigenvectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of the principal component analysis in the relion_flex_analyse program revealed that approximately 30% of the variance in the rotations and translations of the three bodies is explained by the first two eigenvectors (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports a result from principal component analysis with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "d6cb43d8-c15b-4762-9e3b-6c5e78ba7c57",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C41",
+      "claim": "The first eigenvector of the ribosome corresponds to a rolling-like motion of the SSU with respect to the LSU and a concomitant swiveling of the head.",
+      "claim_type": "EXPLICIT",
+      "source": "Movies of the reconstructed body densities repositioned along these eigenvectors reveal that the first eigenvector corresponds to a rolling-like motion of the SSU with respect to the LSU and a concomittant swiveling of the head (Video 1), whereas the motion along the second eigenvector is more reminiscent of a ratchet-like motion of the SSU with respect to the LSU together with a displacement of the head (Video 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the motion observed in the eigenvector analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "8e5ec777-e53f-4b83-af64-f2b747374b4f",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C42",
+      "claim": "The histogram of amplitudes along the first eigenvector for the ribosome showed a shoulder on the negative side, indicating non-continuous structural heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "With the exception of the amplitudes along the first eigenvector, histograms of all other amplitudes were monomodal. For the histogram of the amplitudes along the first eigenvector, a shoulder was visible on the negative side of the histogram, indicating that the structural heterogeneity along the first eigenvector may not be continuous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an observation from the histogram analysis and its interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "63da812f-84bc-45a8-83fc-4b97a07cd46c",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C43",
+      "claim": "Separate refinements of two ribosome subsets based on the first eigenvector yielded overall resolution estimates of 4.4 and 3.2 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Separate refinements of these subsets yielded overall resolution estimates of 4.4 and 3.2 \u00c5, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports resolution measurements from separate refinements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "555cb8a0-0998-4940-a3ee-453009127b1d",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C44",
+      "claim": "The discrete structural heterogeneity in the ribosome had remained undetected in the previous analysis by Wong et al., 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "This sort of discrete structural heterogeneity had remained undetected in our previous analysis (Wong et al., 2014), and re-running conventional 3D classifications on this data set (with six or eight classes, and with exhaustive, local or no alignments of the particle images after the consensus refinement; results not shown) did not yield class reconstructions with meaningful differences between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the current results with previous analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "e86b711e-87c2-4e21-a3b9-1f172769b34c",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C45",
+      "claim": "The spliceosome test case data set comprised 327,490 polished particle images of a spliceosomal B-complex from yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "The second data set on which we tested multi-body refinement comprised 327,490 polished particle images of a spliceosomal B-complex from yeast (Plaschka et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the second test data set.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "f90d4cc2-567b-462b-9a30-48fe7e2e3db2",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C46",
+      "claim": "The spliceosome data set is available under entry 10180 on the EMPIAR data base.",
+      "claim_type": "EXPLICIT",
+      "source": "With the submission of this paper, we also submitted this data set to the EMPIAR data base, where it is now available under entry 10180.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides information about data availability.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "1d6f29b4-891e-407a-9c32-194e923b71b1",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C47",
+      "claim": "Four masks were used for spliceosome multi-body refinement: core, foot, helicase, and SF3b.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used four masks that were generated in the original study for multi-body refinement: 'core' for the centre of the tri-snSNP structure, 'foot' for the tri-snSNP foot domains, 'helicase' for the helicase domain, and 'SF3b' for the SF3b subunits (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design with reference to a figure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "6dc06f4c-a9ef-41cd-8c27-a0cedf92e711",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C48",
+      "claim": "The overall resolution after the spliceosome consensus refinement was 4.3 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall resolution after the consensus refinement, using a mask around the entire complex for post-processing, was 4.3 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports a resolution measurement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "6a9a49a1-344a-4d56-b446-1cc844e5b892",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C50",
+      "claim": "The first spliceosome multi-body refinement converged in 15 iterations and took 33 hr on the GPU workstation.",
+      "claim_type": "EXPLICIT",
+      "source": "The multi-body refinement converged in 15 iterations, which took 33 hr on the same GPU workstation as used for the ribosome case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports convergence behavior and computational time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "c58f6f8a-5cd2-40e7-aa15-6e3e23984eb8",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C51",
+      "claim": "Upon convergence of the first spliceosome multi-body refinement, the estimated resolutions were 3.8, 4.0, 4.5 and 5.1 \u00c5 for the core, foot, helicase and SF3b domains, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon covergence, the estimated resolutions for the core, foot, helicase and SF3b domains were 3.8, 4.0, 4.5 and 5.1 \u00c5, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports resolution measurements after multi-body refinement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "4caa3588-a91b-418b-804b-33f71b0eb330",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C52",
+      "claim": "The second spliceosome multi-body refinement converged in 12 iterations and took 40 hr on the GPU workstation.",
+      "claim_type": "EXPLICIT",
+      "source": "The second multi-body refinement converged in 12 iterations, and took 40 hr on our GPU workstation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports convergence behavior and computational time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "485df922-dd7a-43a7-bb8e-a78a2f3ac29b",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C53",
+      "claim": "After the second spliceosome multi-body refinement, the resolution of the SF3b improved to 4.4 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The resolutions of the core, foot and helicase remained essentially the same as in the first multi-body refinement (3.7, 4.0 and 4.5 \u00c5, respectively), while that of the SF3b improved to 4.4 \u00c5 (Figure 3C; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports a resolution improvement with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "effa9989-4285-42bf-9352-51566a05ea81",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C54",
+      "claim": "Focused 3D classification on the SF3b identified a single class containing 126,186 particle images with better defined density than other classes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using six classes, we identified a single class (containing 126,186 particle images) with better defined density than the other classes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports a result from focused classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "806768d2-1722-4ccf-a8fd-3967bad4180a",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C55",
+      "claim": "A separate refinement of the SF3b class led to a map with an overall resolution of 4.0 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "A separate refinement of this class led to a SF3b map with improved local resolution of its central region (Figure 3\u2014figure supplement 2) and an overall resolution of 4.0 \u00c5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports a resolution measurement with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "8f4c164e-f8c8-4d3b-ac73-17516057668a",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C56",
+      "claim": "The first two principal components of the spliceosome describe approximately 30% of the variance in the rotations and translations.",
+      "claim_type": "EXPLICIT",
+      "source": "Principal component analysis by relion_flex_analyse revealed that the first two components describe approximately 30% of the variance in the rotations and translations (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports a result from principal component analysis with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "98362677-b782-4a53-bd4e-b8c8b3c9f565",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C57",
+      "claim": "The first principal component of the spliceosome corresponded to a rocking motion of the SF3b over the core.",
+      "claim_type": "EXPLICIT",
+      "source": "The first component corresponded to a rocking motion of the SF3b over the core (Video 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the motion observed in the eigenvector analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "e99a577e-f9e1-43c5-a505-69bed62fcbcc",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C58",
+      "claim": "The second principal component of the spliceosome represented concerted rocking of the helicase and SF3b.",
+      "claim_type": "EXPLICIT",
+      "source": "The second represented concerted rocking of the helicase and SF3b (Video 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the motion observed in the eigenvector analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "fcdcec2f-53c3-4585-87ae-3f327f6291f6",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C60",
+      "claim": "The two largest classes from 3D classification of the spliceosome comprised 40% and 27% of the particle images and represent a similar motion as identified by the first component in multi-body refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "The two largest classes of a 3D classification run with eight classes (keeping the orientations fixed at those determined in the consensus refinement) comprised 40% and 27% of the particle images. These two classes represent a similar motion as identified by the first component in the relion_flex_analyse program (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This compares results from 3D classification with multi-body refinement results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "71e6b895-2b18-4f99-8723-e49d7a28f7a3",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C61",
+      "claim": "For the largest class from 3D classification of the spliceosome, the local resolutions for the SF3b, core and foot domain were lower than those obtained using multi-body refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even for the largest class, the local resolutions for the SF3b, the core and the foot domain were lower than those obtained using multi-body refinement (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This compares resolution results between 3D classification and multi-body refinement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "71a3f736-95ed-4f8f-99ab-009880f0d209",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C62",
+      "claim": "The multi-body model assumes that continuous structural heterogeneity can be modelled as independent movements between rigid bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "The main assumption in conventional cryo-EM single-particle analysis is that every experimental particle image is a two-dimensional projection of a common three-dimensional structure. This assumption no longer holds in the presence of continuous structural heterogeneity in the data set. Instead, multi-body refinement assumes that the continuous structural heterogeneity can be modelled as independent movements between rigid bodies, that is bodies that adopt the same structure but have different relative orientations among the data set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This states the fundamental assumption of the multi-body model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "4ad85941-9e3f-4458-b3e9-e9b4d1e087b7",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C63",
+      "claim": "The multi-body assumption is probably reasonable for many macromolecular complexes because tertiary protein structure often remains intact upon changes in quaternary structure.",
+      "claim_type": "EXPLICIT",
+      "source": "This assumption is probably reasonable for many macromolecular complexes, as tertiary protein structure often remains intact upon changes in quaternary structure. This is because within individual protein domains, the chemical environment of each amino acid does not change much upon movements of the entire domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides reasoning for why the multi-body assumption is reasonable.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "3182a6a0-ae25-4083-905e-3fba7b8017cc",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C64",
+      "claim": "A major advantage of the multi-body model is that it allows use of the entire data set for reconstruction of each body without subdivision.",
+      "claim_type": "EXPLICIT",
+      "source": "A major advantage of the multi-body model is that it allows one to use the entire data set for the reconstruction of each body, that is no subdivision of the data is required to describe the structural heterogeneity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This states an advantage of the multi-body approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "98dc665c-2148-46b0-9e68-5a3a2fe1269a",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C65",
+      "claim": "Multi-body refinement yields marked improvements over consensus refinement in the maps of flexible domains for both the ribosome and the spliceosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The usefulness of this model is illustrated by the observation that multi-body refinement yields marked improvements over consensus refinement in the maps of flexible domains for both the ribosome and the spliceosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the results from both test cases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "6f4bd75a-0165-427e-84d5-dd9c8a58f7bf",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C66",
+      "claim": "For both test cases, parts of the consensus map that were not interpretable improved to resolutions around 4 \u00c5 after multi-body refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "For both test cases, parts of the consensus map that were not interpretable in terms of an atomic model improved to resolutions around 4 \u00c5 after multi-body refinement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the resolution improvements observed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "684e9596-66f9-491e-be58-f214fcf0b579",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C67",
+      "claim": "For the ribosome case, conventional 3D classification following standard procedures did not yield insights into the structural heterogeneity present.",
+      "claim_type": "EXPLICIT",
+      "source": "For the ribosome case, conventional 3D classification into a discrete number of classes turned out to be difficult and following standard procedures did not yield insights into the structural heterogeneity present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of conventional classification for this data set.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "9dc0d36d-ed94-4255-9d7f-6ac7e4bcdedb",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C68",
+      "claim": "For the spliceosome case, multi-body refinement provided better maps than those obtained by conventional classification into a discrete number of classes.",
+      "claim_type": "EXPLICIT",
+      "source": "For the spliceosome case, multi-body refinement provided better maps than those obtained by conventional classification into a discrete number of classes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares multi-body refinement with conventional classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "928976dc-b716-4820-85c7-a36d1fff4f99",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C69",
+      "claim": "Multi-body refinement allows use of all particle images for each body, whereas discrete classification divides the data into subsets with fewer particles per class.",
+      "claim_type": "EXPLICIT",
+      "source": "This is explained by the lower number of particle images that contribute to each class in discrete classification, whereas multi-body refinement allows the use of all particle images for each of the bodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains why multi-body refinement can outperform discrete classification.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "4e2c4be5-1e06-474a-ae79-458196f0ba02",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C70",
+      "claim": "In the presence of continuous heterogeneity, each discrete class will still correspond to a mixture of different structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in the presence of continuous heterogeneity, each discrete class will still correspond to a mixture of different structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains a limitation of discrete classification for continuous heterogeneity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "2dad5e5a-7513-4270-bb50-800906f94665",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C71",
+      "claim": "Multi-body refinement will be a useful tool in generating atomic models for domains that adopt multiple different orientations with respect to the rest of the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we anticipate that multi-body refinement will be a useful tool in generating atomic models for domains that adopt multiple different orientations with respect to the rest of the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about the utility of the method based on the results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "68ebcd8e-d988-4186-92ad-09639c9ff846",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C72",
+      "claim": "Significant changes in the chemical environment are expected for amino acids at the interfaces between bodies as one domain moves relative to another.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the internal structure of protein domains may change little when a body moves relative to a neighbour, significant changes in the chemical environment are expected for amino acids at the interfaces between the bodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a consequence of domain movements.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "8ed0504c-ed1b-4d88-9a9f-0b9d9caee004",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C73",
+      "claim": "The structural variability will be largest at the interfaces between bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, these changes may also affect the internal structure of the protein domains, in which case multi-body refinement would no longer be justified, but in general the structural variability will be largest at the interfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general principle about where variability occurs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "7371957d-36d3-4c4f-a2f3-e1afe47d586c",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C74",
+      "claim": "The implementation allows definition of overlapping body masks so each body can include the interface with its neighbouring bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Our implementation allows the definition of overlapping body masks. Thereby, each body can be defined to include the interface with its neighbouring bodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the implementation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "3e6ef47c-c6a9-469b-87be-8bdb35142277",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C75",
+      "claim": "A helix connecting the core of the spliceosome and the LSm ring of the SF3b body looks broken in combined multi-body reconstructions, which is chemically unfeasible.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a helix connecting the core of the spliceosome and the LSm ring of the SF3b body (marked by asterisks in Figure 3D,E,G) looks broken in combined multi-body reconstructions, which is chemically unfeasible.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an observation from the spliceosome results that illustrates a limitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "91fb9711-1109-4b88-971d-9388cba32f9f",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C76",
+      "claim": "Multi-body refinement has the advantage of iteratively improving the partial signal subtraction, whereas focused refinement is typically done with fixed subtracted particle images.",
+      "claim_type": "EXPLICIT",
+      "source": "Multi-body refinement has the advantage of iteratively improving the partial signal subtraction, whereas focused refinement and classification is typically done with fixed subtracted particle images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares multi-body refinement with focused refinement approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "f0a76def-f7d6-47b2-b2d3-d80382444948",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C77",
+      "claim": "Combining multiple focused classifications and/or refinement runs is more flexible than fully automated multi-body refinement but requires more user expertise.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, combining multiple focused classifications and/or refinement runs, each with its own user-specified sampling and mask parameters, is more flexible than the fully automated multi-body refinement, but requires more user expertise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the flexibility and expertise requirements of different approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "4a3d6232-212e-4777-9c8d-98acdaca0611",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C78",
+      "claim": "The relion_flex_analyse program has an additional advantage over previously existing subtraction tools in relion through centering at the projected centre-of-mass of subtracted particle images.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional advantage of this program over previously existing subtraction tools in relion is the centering at the projected centre-of-mass of the subtracted particle images, which allows the use of more meaningful priors and smaller box sizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an advantage of the new program.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "c278865d-50bd-45d1-95ad-43badce365fe",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C79",
+      "claim": "Focused classification and refinement after subtraction in relion_flex_analyse led to a resolution of 4.0 \u00c5 for the SF3b region of the spliceosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of this procedure was illustrated for the SF3b region of the spliceosome, where focused classification and refinement after subtraction in the relion_flex_analyse program led to a resolution of 4.0 \u00c5, which is close to the resolution of 3.9 \u00c5 obtained for this region in the original study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports a resolution measurement and compares it with previous results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "84ce3da8-4487-47fa-ad51-b7ab85a131a7",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C80",
+      "claim": "The principal component analysis movies provide unique insights into how different bodies move with respect to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "These movies provide the user with unique insights into how different bodies move with respect to each other, which bodies move together with others, etc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the utility of the movies generated by the analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "22d3de32-e056-458d-8fa0-33d8d01dc692",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C81",
+      "claim": "Densities at the interfaces between different bodies are not well-defined in the eigenvector movies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we do again point out that (as outlined above for the analysis of atomic models) densities at the interfaces between different bodies are not well-defined in these movies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This states a limitation of the eigenvector movies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "94b1c589-6121-40e3-a9d0-21be4d5e582b",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C82",
+      "claim": "Analysis of the ribosome movies for the first two eigenvectors revealed the presence of typical ribosome motions of rolling and ratcheting of the SSU relative to the LSU.",
+      "claim_type": "EXPLICIT",
+      "source": "For the ribosome, analysis of the movies for the first two eigenvectors revealed the presence of the typical ribosome motions of rolling and ratcheting of the SSU relative to the LSU.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the biological motions identified in the analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "be3abf02-57ef-4108-b8ad-4a1669d18637",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C83",
+      "claim": "The presence of a bimodal histogram for the amplitudes along the first eigenvector of the ribosome indicated the presence of non-continuous heterogeneity in the rolling motion.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the presence of a bimodal histogram for the amplitudes along the first eigenvector indicated the presence of non-continuous heterogeneity in the rolling motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interprets the histogram observation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "1b1947af-bc3f-4dea-a115-eb44918a0926",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C84",
+      "claim": "For the spliceosome, rotations of the helicase and SF3b with respect to the core were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "For the spliceosome, rotations of the helicase and SF3b with respect to the core were observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the motions observed in the spliceosome analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "748016cd-74d4-421d-b1fd-330a7ed30fe8",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C85",
+      "claim": "The movies generated by relion_flex_analyser may be useful in exploring biologically relevant molecular motions.",
+      "claim_type": "EXPLICIT",
+      "source": "These results illustrate that the movies generated by the relion_flex_analyser program may be useful in exploring biologically relevant molecular motions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the utility of the method based on the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "743e600d-03d2-4878-9049-75be90a6597e",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C86",
+      "claim": "One of the main limitations of multi-body refinement is that when the size of individual bodies decreases the signal becomes too weak for reliable alignment of subtracted particle images.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the main limitations of multi-body refinement, and focused refinement in general, is that when the size of individual bodies decreases the signal becomes too weak for reliable alignment of the subtracted particle images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This states a fundamental limitation of the approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "c5a3b6dc-3cf2-4125-9533-1237765d1d17",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C87",
+      "claim": "Refinement of macromolecular complexes with molecular weights below 100 kDa becomes progressively difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "Refinement of macromolecular complexes with molecular weights below 100 kDa becomes progressively difficult, although smaller complexes have been refined, and phase-plate imaging (Khoshouei et al., 2017) can help to reduce the size limits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This states a size limitation with a citation to a method that can help.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "9bda3b25-5f99-4021-800c-460cd1bb3408",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C88",
+      "claim": "The smallest body presented in this paper, the foot of the spliceosome, has a molecular weight of approximately 290 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "The smallest body presented in this paper, the foot of the spliceosome, has a molecular weight of approximately 290 kDa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides information about the size of bodies tested.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "f6e07e26-6b48-43ce-b7fa-b10784366acf",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C89",
+      "claim": "The current implementation allows keeping very small bodies fixed by setting the standard deviations on their rotational and translational priors to zero.",
+      "claim_type": "EXPLICIT",
+      "source": "The current implementation allows keeping very small bodies fixed (by setting the standard deviations on their rotational and translational priors to zero).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the implementation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "87fd84b3-f557-4d36-b6d7-51373830f09b",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C90",
+      "claim": "WarpCraft could be considered as a many-body approach where flexibility is re-parametrised using normal mode analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The approach in WarpCraft represents a step in that direction. WarpCraft could be considered as a many-body approach, where the flexibility is re-parametrised using normal mode analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This characterizes the WarpCraft approach in relation to multi-body refinement.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "be84b208-d283-4f46-8e6c-e78f149de767",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C91",
+      "claim": "WarpCraft may perform well in cases where structural flexibility can be described by a few correlated local motions.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, WarpCraft may perform well in cases where the structural flexibility can be described by a few correlated local motions, as was probably the case for the Mediator complex (Schilbach et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about when WarpCraft performs well with a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "085fcfd5-8c67-4ede-9d5f-b26d7efa43a8",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C92",
+      "claim": "When multiple independently moving bodies are present, one needs many normal modes to describe the entire conformational landscape and the advantage of normal-mode re-parametrisation would disappear.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when multiple independently moving bodies are present, one again needs many normal modes to describe the entire conformational landscape, and the advantage of the normal-mode re-parametrisation would disappear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of normal-mode approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "7281b78d-652b-4f9d-b796-b2e484e25545",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C93",
+      "claim": "The presence of domain rotations and discrete heterogeneity are difficult to describe by normal modes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the presence of domain rotations, which are highly non-linear deformations, as well as the presence of discrete heterogeneity are difficult to describe by normal modes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This states limitations of normal-mode approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "2c9a7115-1a74-4f22-b39f-01a4dab38ab8",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C94",
+      "claim": "When individual bodies are large enough, the multi-body approach would be expected to perform better than WarpCraft in cases with domain rotations or discrete heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "In such cases, provided the individual bodies are large enough, one would expect the multi-body approach to perform better than the approach implemented in WarpCraft.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about when multi-body refinement would outperform WarpCraft.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "b4d3fd80-1302-4f58-8e87-d896af5ac59c",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C95",
+      "claim": "Both multi-body refinement and WarpCraft will suffer from similar problems at the boundaries between bodies that undergo large motions.",
+      "claim_type": "EXPLICIT",
+      "source": "Probably, both approaches will suffer from similar problems at the boundaries between bodies that undergo large motions, as many data sets will not contain sufficient information to describe those.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about shared limitations of both approaches.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "711250a9-cfe7-4b34-bf36-278920ad6cf9",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C96",
+      "claim": "The computer programs described in this paper will be distributed as part of release 3.0 of relion, which is completely free for any user.",
+      "claim_type": "EXPLICIT",
+      "source": "The computer programs described in this paper will be distributed as part of release 3.0 of relion, which is completely free for any user.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides information about software availability.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "51cab872-6bd6-4680-b1f3-50aa749b48d2",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C97",
+      "claim": "The relion software is distributed as open-source, allowing others to contribute modifications and improvements.",
+      "claim_type": "EXPLICIT",
+      "source": "As this software is distributed as open-source, others can contribute their own modifications and improvements of the presented algorithms, as has happened for partial signal subtraction approaches in the past (Zhou et al., 2015; Ilca et al., 2015; Schoebel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the open-source nature of the software with citations to examples of community contributions.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "f9defdb6-cf5e-4a37-9c16-d51010861066",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "claim_id": "C98",
+      "claim": "Multi-body refinement, possibly combined with existing classification and refinement approaches, will be a useful tool to extract more information from cryo-EM data sets on macromolecular complexes exhibiting continuous structural heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the observations described here, we anticipate that multi-body refinement, possibly combined with existing classification and refinement approaches, will be a useful tool to extract more information from cryo-EM data sets on macromolecular complexes exhibiting continuous structural heterogeneity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about the utility of the method based on the results presented.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7d55afc5-5ed5-4bbb-9810-db9d6523ea9c",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on cryo-EM single-particle analysis, describing it as a single-molecule imaging technique that requires combining many noisy projections due to dose limitations, and noting that recent technological advances have enabled atomic-level structure determination of macromolecular complexes that often exhibit conformational heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 provide well-established background knowledge about cryo-EM methodology and are supported by appropriate citations (C3) and general knowledge in the field. These claims accurately describe the principles, constraints, and recent advances in cryo-EM.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "b63c4331-174e-4308-ade0-3059a8da35a2",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript describes limitations of discrete classification approaches for continuous heterogeneity, noting that while maximum likelihood methods have been successfully applied to classify discrete states and deduce energy landscapes, they are fundamentally unsuited for continuous motions because an infinite number of classes would theoretically be needed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C8 accurately describe prior work on classification methods (with appropriate citations) and provide sound logical reasoning about the limitations of discrete classification for continuous heterogeneity. The inference that infinite classes would be needed for a true continuum is mathematically sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "20f703e4-1b23-4896-898c-29589aa72254",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The manuscript reviews existing approaches for handling continuous heterogeneity in cryo-EM, including normal-mode analysis, manifold embedding, focused refinement with partial signal subtraction, and WarpCraft, noting their respective advantages and limitations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C16 provide an accurate literature review with appropriate citations for each method described. The stated limitations (C11, C15) are well-known in the field. This represents a fair assessment of prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "683cb8e1-6cba-44e4-8b75-be45a658da32",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The manuscript describes the implementation of multi-body refinement in RELION, including its fundamental assumption of stoichiometric homogeneity, implementation as a continuation of standard 3D auto-refine with GPU/CPU acceleration, requirements for soft-edged masks, and convergence criteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C22 and C26 accurately describe the implementation details and are consistent with the theoretical framework presented. The early application (C17) is appropriately cited. These are straightforward methodological descriptions that are internally consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "7f5b4caa-139d-4e59-8389-f35b3ce27729",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The relion_flex_analyse program provides two main functions: writing out subtracted images centered on the projected center-of-mass for subsequent refinements, and performing principal component analysis on relative body orientations using three Euler angles and two in-plane translations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 describe specific features of the analysis program that are consistent with the overall methodology. The description of the PCA approach using five degrees of freedom per body (converted to six variables as described in the text) is methodologically sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "36798a2f-7666-4229-aa49-9c9ebe341a2a",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "For the ribosome test case, consensus refinement of 105,247 particle images yielded 3.2 \u00c5 resolution with poor density in the small subunit head region. The complex was divided into three bodies (LSU, SSU, head), and multi-body refinement converged after 16 iterations with resolutions of 3.1 \u00c5, 3.2 \u00c5, and 3.7 \u00c5 respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C37 report specific experimental results with concrete resolution measurements and convergence behavior. The data availability is documented (C30), and observations are consistent with prior work (C33 cites Wong et al., 2014). The reported improvements are modest but measurable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "72594dee-7017-4f5d-a8a9-a6bcbf01c8e2",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Multi-body refinement improved the ribosome head resolution from 4.0 to 3.7 \u00c5. Principal component analysis revealed that ~30% of variance is explained by the first two eigenvectors, corresponding to rolling and ratcheting motions. A bimodal histogram along the first eigenvector indicated discrete heterogeneity that had been undetected by conventional 3D classification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C44 report specific improvements and discoveries. The resolution improvement is quantified (C39), PCA results are concrete (C40), and the biological interpretation of motions (C41) is reasonable. The discovery of previously undetected discrete heterogeneity (C44) is supported by comparison with prior analysis and unsuccessful conventional classification attempts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "9d8165e7-d9c0-403a-9201-7e48fb8bf0a5",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "For the spliceosome test case, consensus refinement of 327,490 particle images yielded 4.3 \u00c5 resolution. Using four body masks (core, foot, helicase, SF3b), the first multi-body refinement converged in 15 iterations with resolutions of 3.8, 4.0, 4.5, and 5.1 \u00c5 for the respective domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C51 report specific experimental results with concrete measurements. Data availability is documented (C46), and the experimental design is clearly described (C47). The resolution improvements over consensus refinement are quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "2344b4b8-4688-40e9-834a-c8b417a19bab",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A second multi-body refinement with tighter masks improved SF3b resolution to 4.4 \u00c5. Subsequent focused 3D classification identified a subset of 126,186 particles with better-defined SF3b density, which upon separate refinement yielded 4.0 \u00c5 resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 describe an iterative refinement strategy with concrete results. The resolution improvements are quantified and the workflow demonstrates how multi-body refinement can be combined with other approaches. The final 4.0 \u00c5 resolution is close to the 3.9 \u00c5 reported in the original study (C79).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "415cac4e-4267-4626-ac6f-097ca239c5dd",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "For the spliceosome, PCA revealed that the first two components describe ~30% of variance, corresponding to rocking motions of SF3b and concerted helicase-SF3b movements. Conventional 3D classification identified similar motions but yielded lower resolutions than multi-body refinement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C61 report PCA results and compare multi-body refinement with conventional classification. The quantitative comparison (C61) demonstrates the advantage of multi-body refinement. The biological interpretation of motions (C57-C58) is reasonable and supported by visualization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "3550552e-0610-4098-ad7d-00fd198677e2",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Multi-body refinement assumes continuous heterogeneity can be modeled as independent rigid-body movements, which is reasonable because tertiary structure often remains intact during quaternary changes. This allows using the entire dataset for each body reconstruction, yielding marked improvements to ~4 \u00c5 resolution for previously uninterpretable regions in both test cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C66 articulate the key assumption and advantage of the method, supported by the experimental results from both test cases. The reasoning about protein structure stability (C63) is sound, and the reported improvements (C65-C66) are documented in the results sections.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "a6475054-8630-42c4-9db3-9bdba9e31209",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Multi-body refinement outperformed conventional discrete classification for both test cases because it uses all particle images for each body rather than dividing data into subsets, and because discrete classes still contain residual heterogeneity when continuous motions are present.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 provide a clear explanation for why multi-body refinement outperforms discrete classification, supported by the experimental comparisons in both test cases. The reasoning about data subdivision (C69) and residual heterogeneity (C70) is logically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "c61aecfc-1e37-4d12-af36-07204ae6c5d0",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "While internal domain structure may remain stable, significant variability is expected at body interfaces where chemical environments change. The implementation allows overlapping masks to include interfaces, but a broken helix in the spliceosome reconstruction illustrates that interface densities are not well-defined.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 acknowledge an important limitation of the rigid-body assumption. The reasoning about interface variability is sound (C72-C73), the implementation feature is described (C74), and a concrete example of the limitation is provided (C75 with figure reference).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "b704f6d4-88bf-44d5-8533-78edc81c59ab",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Multi-body refinement iteratively improves partial signal subtraction, unlike focused refinement with fixed subtracted images. The relion_flex_analyse program enables combining multi-body refinement with focused classification/refinement, achieving 4.0 \u00c5 for spliceosome SF3b, comparable to the original study's 3.9 \u00c5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C79 compare multi-body refinement with alternative approaches and demonstrate how methods can be combined. The comparison is fair (C76-C77), the advantage of the new program is clear (C78), and the validation against prior results (C79) supports the method's effectiveness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "c21f471c-ecbf-4212-ae06-b07bd5d36f44",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "PCA-generated movies provide insights into body movements, revealing rolling/ratcheting motions in the ribosome and helicase/SF3b rotations in the spliceosome. However, interface densities are not well-defined in these movies. The bimodal histogram for the ribosome indicated non-continuous heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C85 describe the utility and limitations of the PCA visualization approach. The biological interpretations (C82, C84) are reasonable, the limitation is acknowledged (C81), and the discovery of discrete heterogeneity (C83) is supported by the histogram data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "88dcc3a3-e8b3-436a-a514-f45bf0173bef",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "A main limitation is that small bodies provide insufficient signal for reliable alignment, with refinement becoming difficult below ~100 kDa. The smallest body tested (spliceosome foot) was ~290 kDa. The implementation allows fixing very small bodies by setting prior standard deviations to zero.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C89 honestly acknowledge size limitations of the method. The stated limit (C87) is consistent with field knowledge and includes a citation to methods that can help. The smallest tested body size (C88) provides empirical context, and the workaround (C89) is described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "1b73675a-6338-4a56-8d3e-a01a1376b1fc",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "WarpCraft can be viewed as a many-body approach using normal-mode reparametrization, which may work well for correlated local motions but struggles with multiple independent bodies, domain rotations, and discrete heterogeneity. Multi-body refinement should perform better in such cases if bodies are large enough, though both approaches face similar interface problems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C95 provide a fair comparison with WarpCraft, acknowledging where each approach excels. The reasoning about normal-mode limitations (C92-C93) is sound, and the predictions (C94-C95) are appropriately qualified as expectations/speculations rather than proven facts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "9f230706-afe8-4e94-b19b-ea320d2e6f2c",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors anticipate that multi-body refinement will be useful for generating atomic models of domains with multiple orientations and for extracting more information from cryo-EM datasets with continuous heterogeneity, possibly in combination with existing approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71 and C98 represent reasonable predictions based on the demonstrated results. These are appropriately framed as anticipated utility rather than proven facts, and are supported by the successful application to two diverse test cases.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    },
+    {
+      "id": "72f4effd-d5bc-467d-8099-6de8d038e9d0",
+      "content_id": "4fe6f560-990f-48cd-bc56-3d08f2ae7bab",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The software will be distributed as part of RELION 3.0 as free, open-source software, allowing community contributions as has occurred with prior signal subtraction implementations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C97 describe software availability and distribution model. These are straightforward statements about release plans, with C97 citing examples of prior community contributions to support the open-source model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:07.582088Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6857357d-42ee-4da4-95bb-b4b43b88bcc0",
+      "result_id": "7d55afc5-5ed5-4bbb-9810-db9d6523ea9c"
+    },
+    {
+      "claim_id": "a134884c-e515-4f89-953a-86e9d1236a81",
+      "result_id": "7d55afc5-5ed5-4bbb-9810-db9d6523ea9c"
+    },
+    {
+      "claim_id": "ae9d0cb2-8e03-46a3-a32d-91afe3bfe279",
+      "result_id": "7d55afc5-5ed5-4bbb-9810-db9d6523ea9c"
+    },
+    {
+      "claim_id": "3e7ed965-a260-4062-a4df-45dc831160bd",
+      "result_id": "7d55afc5-5ed5-4bbb-9810-db9d6523ea9c"
+    },
+    {
+      "claim_id": "1b6bc0cf-055f-493e-9e56-467348e26bc7",
+      "result_id": "b63c4331-174e-4308-ade0-3059a8da35a2"
+    },
+    {
+      "claim_id": "1bd483e6-9423-4f20-bf8b-09c1603cd9f8",
+      "result_id": "b63c4331-174e-4308-ade0-3059a8da35a2"
+    },
+    {
+      "claim_id": "c1f8ef1c-8b17-4195-bc0b-9fe1865281a4",
+      "result_id": "b63c4331-174e-4308-ade0-3059a8da35a2"
+    },
+    {
+      "claim_id": "44d1824c-b0e9-45f2-9513-2293036d7283",
+      "result_id": "b63c4331-174e-4308-ade0-3059a8da35a2"
+    },
+    {
+      "claim_id": "38695267-4d66-49e9-a519-306af6b67117",
+      "result_id": "20f703e4-1b23-4896-898c-29589aa72254"
+    },
+    {
+      "claim_id": "85b4a9c9-db4a-4ce8-9650-44d10a2b30d7",
+      "result_id": "20f703e4-1b23-4896-898c-29589aa72254"
+    },
+    {
+      "claim_id": "5d9daba0-ed54-4806-9c40-457f11e36376",
+      "result_id": "20f703e4-1b23-4896-898c-29589aa72254"
+    },
+    {
+      "claim_id": "3ebd9ef7-67c3-4cad-be8e-27c5b4b367ff",
+      "result_id": "20f703e4-1b23-4896-898c-29589aa72254"
+    },
+    {
+      "claim_id": "be8aafd7-55d2-40e9-977e-5e2c87b461ab",
+      "result_id": "20f703e4-1b23-4896-898c-29589aa72254"
+    },
+    {
+      "claim_id": "b54b02d4-91fc-4d7a-9544-1a9e0a8f4f11",
+      "result_id": "20f703e4-1b23-4896-898c-29589aa72254"
+    },
+    {
+      "claim_id": "1308b15c-a809-4d43-abaa-6e6318fdf06e",
+      "result_id": "20f703e4-1b23-4896-898c-29589aa72254"
+    },
+    {
+      "claim_id": "a5aa65df-5365-4d41-82ec-a1bc8fae6f34",
+      "result_id": "20f703e4-1b23-4896-898c-29589aa72254"
+    },
+    {
+      "claim_id": "a9b6d719-6435-452d-9868-8e1fd278778c",
+      "result_id": "683cb8e1-6cba-44e4-8b75-be45a658da32"
+    },
+    {
+      "claim_id": "a0b2113c-ac49-43df-8e5a-739d868d6307",
+      "result_id": "683cb8e1-6cba-44e4-8b75-be45a658da32"
+    },
+    {
+      "claim_id": "23900d91-04f3-4f49-87cb-ae82bd47718f",
+      "result_id": "683cb8e1-6cba-44e4-8b75-be45a658da32"
+    },
+    {
+      "claim_id": "33b62202-8582-41cb-8876-cab894cbca93",
+      "result_id": "683cb8e1-6cba-44e4-8b75-be45a658da32"
+    },
+    {
+      "claim_id": "74465f4b-c9c7-4492-9287-169720066160",
+      "result_id": "683cb8e1-6cba-44e4-8b75-be45a658da32"
+    },
+    {
+      "claim_id": "e719e8e6-9f50-4fe2-9bf4-67d1c0d5565d",
+      "result_id": "683cb8e1-6cba-44e4-8b75-be45a658da32"
+    },
+    {
+      "claim_id": "ece63b86-9672-4287-a919-9bdbfc40263d",
+      "result_id": "7f5b4caa-139d-4e59-8389-f35b3ce27729"
+    },
+    {
+      "claim_id": "cc0e8be5-d72f-433c-9099-888799a78635",
+      "result_id": "7f5b4caa-139d-4e59-8389-f35b3ce27729"
+    },
+    {
+      "claim_id": "b8dd2e42-80bf-4943-a21e-89e932cbd42e",
+      "result_id": "36798a2f-7666-4229-aa49-9c9ebe341a2a"
+    },
+    {
+      "claim_id": "b6b24983-79a5-451c-93a3-b720cd46636d",
+      "result_id": "36798a2f-7666-4229-aa49-9c9ebe341a2a"
+    },
+    {
+      "claim_id": "a2dfe3a5-b8c7-44af-89f1-9c5efa5e9e2c",
+      "result_id": "36798a2f-7666-4229-aa49-9c9ebe341a2a"
+    },
+    {
+      "claim_id": "c42e2364-a492-4554-8790-36a537fa0e2f",
+      "result_id": "36798a2f-7666-4229-aa49-9c9ebe341a2a"
+    },
+    {
+      "claim_id": "766a38e0-ca26-47fa-a417-7afa1b2d82c4",
+      "result_id": "36798a2f-7666-4229-aa49-9c9ebe341a2a"
+    },
+    {
+      "claim_id": "5ba740d3-b49d-4c4d-a90c-534a01ad1a80",
+      "result_id": "36798a2f-7666-4229-aa49-9c9ebe341a2a"
+    },
+    {
+      "claim_id": "68fd8936-cae7-471d-b505-61b0202c8994",
+      "result_id": "36798a2f-7666-4229-aa49-9c9ebe341a2a"
+    },
+    {
+      "claim_id": "0f06c043-8b9e-4cbd-9975-5e258f34de21",
+      "result_id": "36798a2f-7666-4229-aa49-9c9ebe341a2a"
+    },
+    {
+      "claim_id": "e2d90be5-b905-4aca-84e4-ee3ae56da6fe",
+      "result_id": "72594dee-7017-4f5d-a8a9-a6bcbf01c8e2"
+    },
+    {
+      "claim_id": "630fd8f7-44a5-4336-a387-e8a7ae240d17",
+      "result_id": "72594dee-7017-4f5d-a8a9-a6bcbf01c8e2"
+    },
+    {
+      "claim_id": "d6cb43d8-c15b-4762-9e3b-6c5e78ba7c57",
+      "result_id": "72594dee-7017-4f5d-a8a9-a6bcbf01c8e2"
+    },
+    {
+      "claim_id": "8e5ec777-e53f-4b83-af64-f2b747374b4f",
+      "result_id": "72594dee-7017-4f5d-a8a9-a6bcbf01c8e2"
+    },
+    {
+      "claim_id": "63da812f-84bc-45a8-83fc-4b97a07cd46c",
+      "result_id": "72594dee-7017-4f5d-a8a9-a6bcbf01c8e2"
+    },
+    {
+      "claim_id": "555cb8a0-0998-4940-a3ee-453009127b1d",
+      "result_id": "72594dee-7017-4f5d-a8a9-a6bcbf01c8e2"
+    },
+    {
+      "claim_id": "e86b711e-87c2-4e21-a3b9-1f172769b34c",
+      "result_id": "9d8165e7-d9c0-403a-9201-7e48fb8bf0a5"
+    },
+    {
+      "claim_id": "f90d4cc2-567b-462b-9a30-48fe7e2e3db2",
+      "result_id": "9d8165e7-d9c0-403a-9201-7e48fb8bf0a5"
+    },
+    {
+      "claim_id": "1d6f29b4-891e-407a-9c32-194e923b71b1",
+      "result_id": "9d8165e7-d9c0-403a-9201-7e48fb8bf0a5"
+    },
+    {
+      "claim_id": "6dc06f4c-a9ef-41cd-8c27-a0cedf92e711",
+      "result_id": "9d8165e7-d9c0-403a-9201-7e48fb8bf0a5"
+    },
+    {
+      "claim_id": "6a9a49a1-344a-4d56-b446-1cc844e5b892",
+      "result_id": "9d8165e7-d9c0-403a-9201-7e48fb8bf0a5"
+    },
+    {
+      "claim_id": "c58f6f8a-5cd2-40e7-aa15-6e3e23984eb8",
+      "result_id": "9d8165e7-d9c0-403a-9201-7e48fb8bf0a5"
+    },
+    {
+      "claim_id": "4caa3588-a91b-418b-804b-33f71b0eb330",
+      "result_id": "2344b4b8-4688-40e9-834a-c8b417a19bab"
+    },
+    {
+      "claim_id": "485df922-dd7a-43a7-bb8e-a78a2f3ac29b",
+      "result_id": "2344b4b8-4688-40e9-834a-c8b417a19bab"
+    },
+    {
+      "claim_id": "effa9989-4285-42bf-9352-51566a05ea81",
+      "result_id": "2344b4b8-4688-40e9-834a-c8b417a19bab"
+    },
+    {
+      "claim_id": "806768d2-1722-4ccf-a8fd-3967bad4180a",
+      "result_id": "2344b4b8-4688-40e9-834a-c8b417a19bab"
+    },
+    {
+      "claim_id": "8f4c164e-f8c8-4d3b-ac73-17516057668a",
+      "result_id": "415cac4e-4267-4626-ac6f-097ca239c5dd"
+    },
+    {
+      "claim_id": "98362677-b782-4a53-bd4e-b8c8b3c9f565",
+      "result_id": "415cac4e-4267-4626-ac6f-097ca239c5dd"
+    },
+    {
+      "claim_id": "e99a577e-f9e1-43c5-a505-69bed62fcbcc",
+      "result_id": "415cac4e-4267-4626-ac6f-097ca239c5dd"
+    },
+    {
+      "claim_id": "fcdcec2f-53c3-4585-87ae-3f327f6291f6",
+      "result_id": "415cac4e-4267-4626-ac6f-097ca239c5dd"
+    },
+    {
+      "claim_id": "71e6b895-2b18-4f99-8723-e49d7a28f7a3",
+      "result_id": "415cac4e-4267-4626-ac6f-097ca239c5dd"
+    },
+    {
+      "claim_id": "71a3f736-95ed-4f8f-99ab-009880f0d209",
+      "result_id": "3550552e-0610-4098-ad7d-00fd198677e2"
+    },
+    {
+      "claim_id": "4ad85941-9e3f-4458-b3e9-e9b4d1e087b7",
+      "result_id": "3550552e-0610-4098-ad7d-00fd198677e2"
+    },
+    {
+      "claim_id": "3182a6a0-ae25-4083-905e-3fba7b8017cc",
+      "result_id": "3550552e-0610-4098-ad7d-00fd198677e2"
+    },
+    {
+      "claim_id": "98dc665c-2148-46b0-9e68-5a3a2fe1269a",
+      "result_id": "3550552e-0610-4098-ad7d-00fd198677e2"
+    },
+    {
+      "claim_id": "6f4bd75a-0165-427e-84d5-dd9c8a58f7bf",
+      "result_id": "3550552e-0610-4098-ad7d-00fd198677e2"
+    },
+    {
+      "claim_id": "684e9596-66f9-491e-be58-f214fcf0b579",
+      "result_id": "a6475054-8630-42c4-9db3-9bdba9e31209"
+    },
+    {
+      "claim_id": "9dc0d36d-ed94-4255-9d7f-6ac7e4bcdedb",
+      "result_id": "a6475054-8630-42c4-9db3-9bdba9e31209"
+    },
+    {
+      "claim_id": "928976dc-b716-4820-85c7-a36d1fff4f99",
+      "result_id": "a6475054-8630-42c4-9db3-9bdba9e31209"
+    },
+    {
+      "claim_id": "4e2c4be5-1e06-474a-ae79-458196f0ba02",
+      "result_id": "a6475054-8630-42c4-9db3-9bdba9e31209"
+    },
+    {
+      "claim_id": "68ebcd8e-d988-4186-92ad-09639c9ff846",
+      "result_id": "c61aecfc-1e37-4d12-af36-07204ae6c5d0"
+    },
+    {
+      "claim_id": "8ed0504c-ed1b-4d88-9a9f-0b9d9caee004",
+      "result_id": "c61aecfc-1e37-4d12-af36-07204ae6c5d0"
+    },
+    {
+      "claim_id": "7371957d-36d3-4c4f-a2f3-e1afe47d586c",
+      "result_id": "c61aecfc-1e37-4d12-af36-07204ae6c5d0"
+    },
+    {
+      "claim_id": "3e6ef47c-c6a9-469b-87be-8bdb35142277",
+      "result_id": "c61aecfc-1e37-4d12-af36-07204ae6c5d0"
+    },
+    {
+      "claim_id": "91fb9711-1109-4b88-971d-9388cba32f9f",
+      "result_id": "b704f6d4-88bf-44d5-8533-78edc81c59ab"
+    },
+    {
+      "claim_id": "f0a76def-f7d6-47b2-b2d3-d80382444948",
+      "result_id": "b704f6d4-88bf-44d5-8533-78edc81c59ab"
+    },
+    {
+      "claim_id": "4a3d6232-212e-4777-9c8d-98acdaca0611",
+      "result_id": "b704f6d4-88bf-44d5-8533-78edc81c59ab"
+    },
+    {
+      "claim_id": "c278865d-50bd-45d1-95ad-43badce365fe",
+      "result_id": "b704f6d4-88bf-44d5-8533-78edc81c59ab"
+    },
+    {
+      "claim_id": "84ce3da8-4487-47fa-ad51-b7ab85a131a7",
+      "result_id": "c21f471c-ecbf-4212-ae06-b07bd5d36f44"
+    },
+    {
+      "claim_id": "22d3de32-e056-458d-8fa0-33d8d01dc692",
+      "result_id": "c21f471c-ecbf-4212-ae06-b07bd5d36f44"
+    },
+    {
+      "claim_id": "94b1c589-6121-40e3-a9d0-21be4d5e582b",
+      "result_id": "c21f471c-ecbf-4212-ae06-b07bd5d36f44"
+    },
+    {
+      "claim_id": "be3abf02-57ef-4108-b8ad-4a1669d18637",
+      "result_id": "c21f471c-ecbf-4212-ae06-b07bd5d36f44"
+    },
+    {
+      "claim_id": "1b1947af-bc3f-4dea-a115-eb44918a0926",
+      "result_id": "c21f471c-ecbf-4212-ae06-b07bd5d36f44"
+    },
+    {
+      "claim_id": "748016cd-74d4-421d-b1fd-330a7ed30fe8",
+      "result_id": "c21f471c-ecbf-4212-ae06-b07bd5d36f44"
+    },
+    {
+      "claim_id": "743e600d-03d2-4878-9049-75be90a6597e",
+      "result_id": "88dcc3a3-e8b3-436a-a514-f45bf0173bef"
+    },
+    {
+      "claim_id": "c5a3b6dc-3cf2-4125-9533-1237765d1d17",
+      "result_id": "88dcc3a3-e8b3-436a-a514-f45bf0173bef"
+    },
+    {
+      "claim_id": "9bda3b25-5f99-4021-800c-460cd1bb3408",
+      "result_id": "88dcc3a3-e8b3-436a-a514-f45bf0173bef"
+    },
+    {
+      "claim_id": "f6e07e26-6b48-43ce-b7fa-b10784366acf",
+      "result_id": "88dcc3a3-e8b3-436a-a514-f45bf0173bef"
+    },
+    {
+      "claim_id": "87fd84b3-f557-4d36-b6d7-51373830f09b",
+      "result_id": "1b73675a-6338-4a56-8d3e-a01a1376b1fc"
+    },
+    {
+      "claim_id": "be84b208-d283-4f46-8e6c-e78f149de767",
+      "result_id": "1b73675a-6338-4a56-8d3e-a01a1376b1fc"
+    },
+    {
+      "claim_id": "085fcfd5-8c67-4ede-9d5f-b26d7efa43a8",
+      "result_id": "1b73675a-6338-4a56-8d3e-a01a1376b1fc"
+    },
+    {
+      "claim_id": "7281b78d-652b-4f9d-b796-b2e484e25545",
+      "result_id": "1b73675a-6338-4a56-8d3e-a01a1376b1fc"
+    },
+    {
+      "claim_id": "2c9a7115-1a74-4f22-b39f-01a4dab38ab8",
+      "result_id": "1b73675a-6338-4a56-8d3e-a01a1376b1fc"
+    },
+    {
+      "claim_id": "b4d3fd80-1302-4f58-8e87-d896af5ac59c",
+      "result_id": "1b73675a-6338-4a56-8d3e-a01a1376b1fc"
+    },
+    {
+      "claim_id": "2dad5e5a-7513-4270-bb50-800906f94665",
+      "result_id": "9f230706-afe8-4e94-b19b-ea320d2e6f2c"
+    },
+    {
+      "claim_id": "f9defdb6-cf5e-4a37-9c16-d51010861066",
+      "result_id": "9f230706-afe8-4e94-b19b-ea320d2e6f2c"
+    },
+    {
+      "claim_id": "711250a9-cfe7-4b34-bf36-278920ad6cf9",
+      "result_id": "72f4effd-d5bc-467d-8099-6de8d038e9d0"
+    },
+    {
+      "claim_id": "51cab872-6bd6-4680-b1f3-50aa749b48d2",
+      "result_id": "72f4effd-d5bc-467d-8099-6de8d038e9d0"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1905 @@
+{
+  "submission": {
+    "id": "6135b1d4-351b-410f-b09c-703e7fe8c72f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:52:17.597974Z",
+    "updated_at": "2025-12-01T23:52:17.597974Z"
+  },
+  "content": [
+    {
+      "id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "submission_id": "6135b1d4-351b-410f-b09c-703e7fe8c72f",
+      "content_type": "manuscript",
+      "content_text": "# Incomplete inhibition of HIV infection results in more HIV infected lymph node cells by reducing cell death\n\n## Authors\n\n- Laurelle Jackson<sup>1</sup>\n- Jessica Hunter<sup>1</sup>\n- Sandile Cele<sup>1</sup>\n- Isabella Markham Ferreira<sup>1</sup>\n- Andrew C Young<sup>1</sup> ([ORCID: 0000-0003-3616-7956](https://orcid.org/0000-0003-3616-7956))\n- Farina Karim<sup>1</sup>\n- Rajhmun Madansein<sup>4</sup>\n- Kaylesh J Dullabh<sup>4</sup>\n- Chih-Yuan Chen<sup>4</sup>\n- Noel J Buckels<sup>4</sup>\n- Yashica Ganga<sup>1</sup>\n- Khadija Khan<sup>1</sup>\n- Mikael Boulle<sup>1</sup>\n- Gila Lustig<sup>1</sup>\n- Richard A Neher<sup>6</sup> ([ORCID: 0000-0003-2525-1407](https://orcid.org/0000-0003-2525-1407))\n- Alex Sigal<sup>1</sup> ([ORCID: 0000-0001-8571-2004](https://orcid.org/0000-0001-8571-2004)) \u2020\n\n### Affiliations\n\n1. Africa Health Research Institute Durban South Africa\n2. School of Laboratory Medicine and Medical Sciences University of KwaZulu-Natal Durban South Africa\n3. Department of Neurology Massachusetts General Hospital and Harvard Medical School Boston United States\n4. Department of Cardiothoracic Surgery University of KwaZulu-Natal Durban South Africa\n5. Centre for the AIDS Programme of Research in South Africa Durban South Africa\n6. Biozentrum University of Basel Basel Switzerland\n7. SIB Swiss Institute of Bioinformatics Basel Switzerland\n8. Max Planck Institute for Infection Biology Berlin Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nHIV has been reported to be cytotoxic in vitro and in lymph node infection models. Using a computational approach, we found that partial inhibition of transmissions of multiple virions per cell could lead to increased numbers of live infected cells. If the number of viral DNA copies remains above one after inhibition, then eliminating the surplus viral copies reduces cell death. Using a cell line, we observed increased numbers of live infected cells when infection was partially inhibited with the antiretroviral efavirenz or neutralizing antibody. We then used efavirenz at concentrations reported in lymph nodes to inhibit lymph node infection by partially resistant HIV mutants. We observed more live infected lymph node cells, but with fewer HIV DNA copies per cell, relative to no drug. Hence, counterintuitively, limited attenuation of HIV transmission per cell may increase live infected cell numbers in environments where the force of infection is high.\n\n## Introduction\n\nHIV infection is known to result in extensive T cell depletion in lymph node environments (Sanchez et al., 2015), where infection is most robust (Brenchley et al., 2004; Doitsh et al., 2010; Doitsh et al., 2014; Finkel et al., 1995; Galloway et al., 2015; Mattapallil et al., 2005). Depletion of HIV infectable target cells, in addition to onset of immune control, is thought to account for the decreased replication ratio of HIV from an initial peak in early infection (Bonhoeffer et al., 1997; Nowak and May, 2000; Perelson, 2002; Phillips, 1996; Qui\u00f1ones-Mateu and Arts, 2006; Ribeiro et al., 2010; Wodarz and Levy, 2007). This is consistent with observations that individuals are most infectious in the initial, acute stage of infection, where the target cell population is relatively intact and produces high viral loads (Hollingsworth et al., 2008; Wawer et al., 2005).\n\nT-cell death occurs by several mechanisms, which are either directly or indirectly mediated by HIV infection. Accumulation of incompletely reverse transcribed HIV transcripts is sensed by interferon-\u03b3\u2013inducible protein 16 (Monroe et al., 2014) and leads to pyroptotic death of incompletely infected cells by initiating a cellular defence program involving the activation of caspase 1 (Doitsh et al., 2010; Doitsh et al., 2014; Galloway et al., 2015). HIV proteins Tat and Env have also been shown to lead to cell death of infected cells through CD95-mediated apoptosis following T-cell activation (Banda et al., 1992; Westendorp et al., 1995a; Westendorp et al., 1995b1995). Using SIV infection, it has been shown that damage to lymph nodes due to chronic immune activation leads to\u00a0an environment less conducive to T-cell survival (Zeng et al., 2012). Finally, double strand breaks in the host DNA caused by integration of the reverse transcribed virus results in cell death by the DNA-PK-mediated activation of the p53 response (Cooper et al., 2013).\n\nThe lymph node environment is conducive to HIV infection due to: (1) presence of infectable cells (Deleage et al., 2016; Embretson et al., 1993; Tenner-Racz et al., 1998); (2) proximity of cells to each other and lack of flow which should enable cell-to-cell HIV spread (Baxter et al., 2014; Dale et al., 2011; Groot et al., 2008; Groppelli et al., 2015; Gummuluru et al., 2002; H\u00fcbner et al., 2009; Jolly et al., 2004; Jolly et al., 2011; M\u00fcnch et al., 2007; Sherer et al., 2007; Sourisseau et al., 2007; Sowinski et al., 2008); (3) decreased penetration of antiretroviral therapy (ART) (Fletcher et al., 2014a). Multiple infections per cell have been reported in cell-to-cell spread of HIV (Baxter et al., 2014; Boull\u00e9 et al., 2016; Dang et al., 2004; Del Portillo et al., 2011; Dixit and Perelson, 2004; Duncan et al., 2013; Law et al., 2016; Reh et al., 2015; Russell et al., 2013; Sigal et al., 2011; Zhong et al., 2013). In this mode of HIV transmission, an interaction between the infected donor cell and the uninfected target results in directed transmission of large numbers of virions (Baxter et al., 2014; Groppelli et al., 2015; H\u00fcbner et al., 2009; Sowinski et al., 2008). This is in contrast to cell-free infection, where free-floating virus finds target cells through diffusion. Both modes occur simultaneously when infected donor cells are cocultured with targets. However, the cell-to-cell route is thought to be the main cause of multiple infections per cell (H\u00fcbner et al., 2009). In the lymph nodes, several studies showed multiple infections (Gratton et al., 2000; Jung et al., 2002; Law et al., 2016) while another study did not (Josefsson et al., 2013). One explanation for the divergent results is that different cell subsets are infected to different degrees. For example, T cells were shown not to be multiply infected in the peripheral blood compartment (Josefsson et al., 2011). However, more recent work investigating markers associated with HIV latency in the face of ART found that the average number of HIV DNA copies per cell is greater than one in 3 out of 12 individuals. This occurred in the face of ART in the CD3-positive, CD32a high CD4 T-cell subset (Descours et al., 2017). In the absence of suppressive ART, it would be expected that the number of HIV DNA copies per cell would be higher.\n\nMultiple viral integration attempts per cell may increase the probability of death. One consequence of HIV-mediated death may be that attenuation of infection may increase viral replication by increasing the number of live targets. Indeed, it has been suggested that more attenuated HIV strains result in more successful infections in terms of the ability of the virus to replicate in the infected individual (Ari\u00ebn et al., 2005; Nowak and May, 2000; Payne et al., 2014; Qui\u00f1ones-Mateu and Arts, 2006; Wodarz and Levy, 2007).\n\nHere, we experimentally examined the effect of attenuating cell-to-cell spread by using HIV inhibitors. We observed that partially inhibiting infection with drug or antibody resulted in an increase in the number of live infected cells in both a cell line and in lymph node cells. This is, to our knowledge, the first experimental demonstration at the cellular level that attenuation of HIV infection can result in an increase in live infected cells under specific infection conditions.\n\n## Results\n\nWe introduce a model of infection where each donor to target transmission leads to an infection probability r and death probability q per infection attempt. In our experimental system, one infection attempt is measured as one HIV DNA copy, whether integrated or unintegrated. The probability of successful infection of a target cell given n infection attempts is 1-(1 r)n (Sigal et al., 2011). We define Ln as the probability of a cell to survive infection in the face of n infection attempts. Assuming infection attempts act independently, Ln=(1-q)n. The probability of a cell to be infected and not die after it has been exposed to n infection attempts is therefore:\n\n$$\nP_{n}=(1\u2212(1\u2212r)^{n})(1\u2212q)^{n}\n$$\n\nThis model makes several simplifying assumptions: (1) all infection attempts have equal probabilities to infect targets. (2) The probability for a cell to die from each transmission is equal between transmissions. (3) Infection attempts act independently, and productive infection and death are independent events. In this model, r and q capture the probabilities for a cell to be infected or die post-reverse transcription. For example, mutations which reduce viral fitness by decreasing the probability of HIV to integrate would reduce r, while mutations which reduce the probability of successful reverse transcription would reduce n.\n\nIf the number of infection attempts n is Poisson distributed with mean \u03bb, the probability for a cell to be infected is 1-e-r\u03bb and the probability of a cell to live is Ln\u00a0=\u00a0e-q\u03bb (see Supplementary file 1 for parameters and definitions). As derived in Appendix 1, the probability that a cell is productively infected will be:\n\n$$\nP_{\\lambda}=e^{-\\lambdaq}(1-e^{-\\lambdar(1-q)})\n$$\n\nSince antiretroviral drugs lead to a reduction in the number of infection attempts by, for example, decreasing the probability of reverse transcription in the case of reverse transcriptase inhibitors, we introduced a drug strength value d, where d\u00a0=\u00a01 in the absence of drug and d\u00a0>\u00a01 in the presence of drug. In the presence of drug, \u03bb is decreased to \u03bb/d. The drug therefore tunes \u03bb, and if the antiretroviral regimen is fully suppressive, \u03bb/d is expected to be below what is required for ongoing replication. The probability of a cell to be infected and live given drug strength d is therefore:\n\n$$\nP_{\\lambda/d}=e^{-\\lambdaq/d}(1-e^{-\\lambdar(1-q)/d})\n$$\n\nAnalysis of the probability of a cell to survive and be infected as a function of r and q shows that at each drug strength d/\u03bb, P\u03bb increases as the probability of infection r increases (Figure 1). Hence, the value of r strongly influences the amplitude of P\u03bb. How P\u03bb behaves when drug strength d/\u03bb increases depends on the parameter values of r and q. A subset of parameter values results in a peak in the number of infected cells at intermediate d/\u03bb, decreasing as drug strength increases further (Figure 1). We refer to such a peak in infected numbers as an infection optimum. As q increases, the cost of multiple infections per cell increases, and the infection optimum shifts to higher d/\u03bb values. A fall from the infection optimum at decreasing d/\u03bb is driven by increasing cell death as a result of increasing infection attempts per cell. This slope is therefore shallower, and peaks broader, at low q values (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/30134/elife-30134-fig1-v2.jpg)\n\n**Figure 1.:** Probability for a cell to be infected and live was calculated for 20 infection attempts (\u03bb) and represented as a heat map. Drug strength (d/\u03bb) is on the y-axis, and the probability per infection attempt to infect (r) is on the x-axis. Each plot is the calculation for one value of the probability per infection attempt to die (q) denoted in white in the top left corner.\n\nOur model assumes that cellular infection and death due to an HIV infection attempt are independent processes. This is based on observations that support a role for cell death as a cellular defence mechanism which may occur before productive infection, such as programmed cell death triggered by HIV integration induced DNA damage (Cooper et al., 2013). An alternative model is that HIV-mediated cell death depends on productive infection. This would be consistent with cell death due to, for example, expression of viral proteins (Westendorp et al., 1995b1995). Since the concentration of viral proteins may also scale with the number of infections per cell, we derived the mathematical model for such a process in the supplementary mathematical analysis. The models are equivalent, showing that independence of cell death and infection is not a necessary condition for an infection optimum to occur in the presence of inhibitor.\n\nGiven that an infection optimum is dependent on parameter values, we next examined whether these parameter values occur experimentally in HIV infection. We therefore first tested for an infection optimum in the RevCEM cell line engineered to express GFP upon HIV Rev protein expression (Wu et al., 2007). We subcloned the cell line to maximize the frequency of GFP-positive cells upon infection (Boull\u00e9 et al., 2016). We needed to detect the number of infection attempts per cell \u03bb. To estimate this, we used PCR to detect the number of reverse transcribed copies of viral DNA in the cell by splitting each individual infected cell over multiple wells. We then detected the number of wells with HIV DNA by PCR amplification of the reverse transcriptase gene. Hence, the number of positive wells indicated the minimum number of viral DNA copies per cell, since more than one copy can be contained within the same well (Josefsson et al., 2011; Josefsson et al., 2013). We first measured the number of viral DNA copies in ACH-2 cells, reported to contain a single inactive HIV integration per genome (Chun et al., 1997; O'Doherty et al., 2002). We sorted a total of 166 ACH-2 cells at one cell per well into lysis buffer and subdivided single-cell lysates into four wells (Figure 2\u2014figure supplement 1A). About one quarter of cells showed a PCR product of the expected size. Cells with more than one HIV copy per cell were very rare and may reflect either errors in cell sorting or dividing cells (Figure 2\u2014figure supplement 1B). Similar frequencies were obtained when the ACH-2 cell line was subcloned or split over 10 wells (Figure 2\u2014figure supplement 1C). Given that each ACH-2 cell contains one HIV DNA copy, the frequency of detection indicated our detection efficiency per HIV DNA copy.\n\nTo investigate the effect of multiple infection attempts per cell, we used coculture infection, where infected (donor) cells are co-incubated with uninfected (target) cells and lead to cell-to-cell spread. We used approximately 2% infected donor cells as our input, and detected the number of HIV DNA copies per cell by flow cytometric sorting of individual GFP-positive cells followed by splitting each cell lysate over 10 wells.\u00a0Wells were then amplified by PCR and visualized on an agarose gel (Figure 2A). We assayed 60 cells and obtained a wide distribution of viral DNA copies per cell, which ranged from 0 to 9 copies (Figure 2B). The range of HIV DNA copies per cell fit a Poisson distribution with two means better than either a single mean Gaussian or Poisson distribution. However, the fit of the two mean Poisson distribution did not show two obvious peaks, and instead seemed to fit the data better due to the addition of fit parameters (Figure 2\u2014figure supplement 2). Hence we cannot conclude that the distribution is bimodal. We also detected the HIV copy number in 30 GFP-positive cells infected by cell-free HIV. HIV in cell-free form was obtained by filtering supernatant from HIV producing cells to exclude cells or cell fragments, then infecting target cells with the filtered virus. Infection with this virus is defined here as cell-free infection. In this case, we detected either zero or one HIV copy per cell (Figure 2B inset). The frequency of single HIV DNA copies was 0.23, identical to the measured result in the ACH-2 cell line. We computationally corrected the detected number of DNA copies in coculture infection for the sensitivity of our PCR reaction as determined by the ACH-2 results (Materials and methods). On average we obtained 15\u00a0\u00b1\u00a03 copies per cell after correction.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/30134/elife-30134-fig2-v2.jpg)\n\n**Figure 2.:** (A) To quantify HIV DNA copy number per cell, GFP-positive cells were sorted into individual wells and lysed. Each lysate was subdivided into 10 wells and PCR performed to detect HIV DNA, with the sum of positive wells being the raw HIV copy number for that cell. (B) Histogram of raw HIV DNA copies per cell in coculture infection (n\u00a0=\u00a060 cells, four independent experiments). Inset shows raw HIV DNA copies per cell in cell-free infection (n\u00a0=\u00a030, two independent experiments) (C) Number of live infected cells normalized by maximum number of live infected cells in cell-free infection with EFV. Black line is best-fit for EFV suppression of cell-free infection (IC50\u00a0=\u00a02.9 nM, h\u00a0=\u00a02.1). Means and standard errors for three independent experiments. (D) Number of live infected cells/ml 2 days post-infection resulting from coculture infection of 106 cells/ml in the presence of EFV. Means and standard errors for three independent experiments. Black line is best-fit of Equation (3) with r\u00a0=\u00a00.22 and q\u00a0=\u00a00.17. Dashed green line is the result of Equation (3) with experimentally measured r\u00a0=\u00a00.28, q\u00a0=\u00a00.15.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30134/elife-30134-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) To quantify HIV DNA copy number per cell in ACH-2 cells which contain single inactive integrations of HIV, cells were sorted into individual wells of a multi-well plate at 1 cell per well and lysed.\u00a0Each lysed cell was further subdivided into four wells and nested PCR performed to a region of the reverse transcriptase gene to detect whether the well contained a copy of HIV DNA. A total of 166 cells were tested. (B) Histogram of the raw number of HIV DNA copies per cell. (C) Histogram of the frequency of ACH-2 cells positive for HIV DNA copies on the parental ACH-2 population, two subclones of the parental line, and one of the subclones split over 10 wells. P, parental (n\u00a0=\u00a071 cells); D6, subclone D6 (n\u00a0=\u00a056); C3, subclone C3 (n\u00a0=\u00a024), and D6-10, subclone D6 with each lysed cell split over 10 wells (n\u00a0=\u00a015).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30134/elife-30134-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The experimentally determined distribution of the raw number of HIV-positive wells per cell was fitted by a Gaussian distribution (blue line), a Poisson distribution (green line), or a two-peaked Poisson distribution (red line) described by p(m; \u03b1,\u03bb1,\u03bb2)=(1-\u03b1)\u03bb1me-\u03bb1/m!+\u03b1\u03bb2me-\u03bb2/m!, where \u03bb1 and \u03bb2 are the means of the first and second peak, respectively, and \u03b1 is the fraction of transmissions which fall within the second peak. Only the double Poisson distribution could not be rejected using a chi-square goodness-of-fit test (p=0.2).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/30134/elife-30134-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Live infected cells are normalized by the maximum number of live infected cells in cell-free infection as a function of EFV. Black line represents best-fit for the effect of EFV on infection with single infection attempts, with IC50\u00a0=\u00a02.4 nM and Hill coefficient of 1.8. Shown are means and standard errors for three independent experiments. Y-axis shown on a log scale to better view fits at low live infected cell numbers.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/30134/elife-30134-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Possible outcomes of donor cell-target cell interactions are target cell infection, fusion, and target cell death. Each outcome is traced by fluorescent markers for donor cells (Cell Trace Far Red, CTFR), target cells (mCherry), infected cells (GFP) and death (DAPI). Live infected target cells were DAPI negative and mCherry and GFP positive. Donor-target fusions were excluded by excluding all CTFR-positive cells. (B) Representative flow cytometry scatter plots used in gating strategy. First, live cells were selected using the absence of DAPI fluorescence (left column). Next, target cells were separated from donor cells and donor-target fusions using CTFR and mCherry (middle column). Last, the number of infected targets was determined by GFP fluorescence (right column). Percentages represent fraction of the population in the gate and numbers in parentheses represent the number of infected cells/ml. Areas marked in red represent selection gates for live infected targets.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/30134/elife-30134-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (A) The probability of a cell to be infected and live (P\u03bb) as measured by the fraction of live cells which express GFP 2 days post-infection. Left plot shows uninfected control and right plot shows infected cells. Results from one of two independent experiments. Maximum GFP expression in this reporter system with highly concentrated virus was 70%. (B) The number of HIV DNA copies per cell 1 day post cell-free HIV infection for experiments in (A). First 14 cells from one of two independent experiments are shown. (C) To determine the fraction of live cells L\u03bb remaining after infection, cells were serum starved to prevent cell division. The concentration of live cells 2 days post cell-free infection was measured using trypan blue exclusion and divided by the concentration of live reporter cells in a separate cell culture infected with the identical amount of virus, but with infection was inhibited with 40 nM EFV. Results are of two independent experiments, with 10 fields of view counted per condition. ***p=7\u00d710\u22123 by two tailed t-test.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/30134/elife-30134-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Infection was performed by an input of 20% infected mCherry-negative donor cells. Black points represent the number of total live cells, as detected by the presence of cellular mCherry fluorescence. Green points represent the number of live infected target cells, as detected by co-expression of mCherry and HIV-dependent GFP. Top graph shows infection in the absence of drug and bottom graph in the presence of 30 nM EFV. Time-lapse interval was 20 min between frames, and three independent experiments were performed with 15 fields of view per condition in each experiment. The 45 fields of view from three independent experiments were averaged, and each point is the mean and standard error of the number of cells per field of view. For clarity, every second measurement is shown.\n\nTo tune \u03bb, we added the HIV reverse transcriptase inhibitor efavirenz (EFV) to infections. To calculate d, we used cell-free infection (Figure 2C, see Figure 2\u2014figure supplement 3 for logarithmic y-axis plot), which as verified above, results in single HIV copies per cell. For cell-free infection, we approximate d\u00a0=\u00a01/Tx, where Tx is defined as the number of infected cells with drug divided by the number of infected cells without drug with single infection attempts (see Materials and methods and [(Sigal et al., 2011]). This is equivalent to 1-\u03b5 in a commonly used model describing the effect of inhibitors on infection. In this model, \u03b5 is drug effectiveness, with the 50% inhibitory drug concentration (IC50) and the Hill coefficient for drug action as parameter values (Canini and Perelson, 2014; Shen et al., 2008). We fit the observed response of infection to EFV using this approach to estimate d across a range of EFV concentrations. Fit of the model to the cell-free data using wild type, EFV-sensitive HIV showed a monotonic decrease with IC50\u00a0=\u00a02.9 nM and Hill coefficient of 2.1 (Figure 2C, black line).\n\nWe next dialed in EFV to tune \u03bb/d in coculture infection. To obtain the number of infected target cells, and specifically exclude donor cells or donor-target cell fusions, target cells were marked by the expression of mCherry. Donor cells were stained with the vital stain Cell Trace Far Red (CTFR). The concentration of live infected cells was determined after 2 days in coculture with infected donors. Live infected cells were identified based on the absence of cell death indicator dye DAPI fluorescence, and presence of GFP. The input of infected donor cells was excluded from the count of infected cells based on the absence of mCherry fluorescence. Donor-target cell fusions were excluded by excluding CTFR-positive cells (see Figure 2\u2014figure supplement 4 for gating strategy).\n\nWhile the percent of infected cells was reduced with drug, the concentration of live infected cells increased (Figure 2\u2014figure supplement 4). We observed a peak in the number of live infected target cells at 4 nM EFV (Figure 2D). We then fit the number of live infected cells using Equation (3), where P\u03bb was multiplied by the input number of target cells per ml (106 cells/ml) to obtain the predicted number of live infected cells per ml of culture. This was done to constrain r in the model, which strongly determines the amplitude of P\u03bb/d as described above. Equation (3) best fit the behaviour of infection when r\u00a0=\u00a00.22 and q\u00a0=\u00a00.17, resulting in a peak at 4.8 nM EFV (Figure 2D, black line). Hence an infection optimum is present in the cell line infection system.\n\nIn order to determine whether the fitted r and q values were within a reasonable range, we measured these values experimentally. To measure r, we infected with cell-free HIV to avoid the broad distribution of HIV copy numbers observed in cell-to-cell spread, and determined the fraction of live infected cells P\u03bb (Figure 2\u2014figure supplement 5A). We then determined the mean number of HIV copies per cell \u03bb for the same set of experiments corrected by the efficiency of detection (Figure 2\u2014figure supplement 5B). The parameter r was calculated as -ln(1-P\u03bb)/\u03bb (Supplementary file 2). To measure q, we blocked cell division using serum starvation to measure differences in cell concentration due to cell death only, and not due to proliferation of uninfected cells (Figure 2\u2014figure supplement 5C). We then infected with cell-free HIV and measured L\u03bb, defined as the fraction of live cells remaining upon infection with \u03bb HIV DNA copies relative to infection blocked with EFV (see below). To specifically detect the decrease in live cells as a result of events downstream of reverse transcription, we compared infected cells to cells exposed to the same virus concentration but treated with 40 nM EFV, a drug concentration where infection by cell-free virus is negligible (Figure 2\u2014figure supplement 3). q was then calculated as -ln(L\u03bb)/\u03bb, where L\u03bb was the\u00a0probability of a cell to live given transmission with \u03bb copies\u00a0(Supplementary file 2). Measured r and q values were 0.28\u00a0\u00b1\u00a00.08 and 0.15\u00a0\u00b1\u00a00.07 (mean\u00a0\u00b1standard deviation), respectively. The solution to Equation (3) using these values showed similar behavior to the solution with the fitted values for wild-type HIV infection, indicating that the fitted values gave a reasonable approximation of the behavior of the system (Figure 2D, dashed green line).\n\nIn order to investigate the dynamics of cell depletion due to cell-to-cell HIV spread and its modulation by the\u00a0addition of\u00a0an inhibitor, we performed time-lapse microscopy over a two day infection window. While infection parameters were different due to the constraints of visualizing cells (Materials and methods), the general trend from the data was deterioration in the number of live cells in the time-lapse culture starting at 1 day post-infection when no drug was added. The deterioration in live cell numbers was averted by the addition of EFV (Figure 2\u2014figure supplement 6).\n\nWe next investigated whether an infection optimum occurs with EFV-resistant HIV. To derive the resistant mutant, we cultured wild-type HIV in our reporter cell line in the presence of EFV. We obtained the L100I partially resistant mutant. We then replaced the reverse transcriptase of the wild-type molecular clone with the mutant reverse transcriptase gene (Materials and methods). We derived dmut for the L100I mutant using cell-free mutant infection (Figure 3A, see Figure 3\u2014figure supplement 1 for logarithmic y-axis plot).\u00a0The L100I mutant was found to have an IC50\u00a0=\u00a029 nM EFV and a\u00a0Hill coefficient of 2.0 (Figure 3A, black line).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/30134/elife-30134-fig3-v2.jpg)\n\n**Figure 3.:** (A) The number of live infected cells normalized by the maximum number of live infected cells in cell-free infection as a function of EFV for the L100I mutant. Black line is best-fit for EFV suppression of cell-free infection (IC50\u00a0=\u00a029 nM, h\u00a0=\u00a02.0). Shown are means and standard errors for three independent experiments. (B) Number of live infected cells/ml 2 days post-infection resulting from coculture infection of 106 cells/ml in the presence of EFV. Means and standard errors for three independent experiments. Black line is best-fit of Equation (3) with r\u00a0=\u00a00.29 and q\u00a0=\u00a00.13. Dashed green line is the result of Equation (3) with the experimentally measured r\u00a0=\u00a00.28 and q\u00a0=\u00a00.15 for wild-type HIV infection.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30134/elife-30134-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Live infected cells are normalized by the maximum number of live infected cells in cell-free infection as a function of EFV. Black line represents best-fit for the effect of EFV on infection with single HIV infection attempts, with IC50\u00a0=\u00a026.5 nM and Hill coefficient of 2.0. Shown are means and standard errors for three independent experiments.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30134/elife-30134-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Representative flow cytometry scatter plots used in gating strategy. First, live cells were selected using the absence of DAPI fluorescence (left column). Next, target cells were separated from donor cells and donor-target fusions using CTFR and mCherry (middle column). Last, the number of infected targets was determined by GFP fluorescence (right column). Percentages represent fraction of the population in the gate and numbers in parentheses shown in the right column represent the number of infected cells/ml. Areas marked in red represent selection gates for live infected targets.\n\nWe next performed coculture infection (see Figure 3\u2014figure supplement 2 for gating strategy). Similarly to wild-type HIV coculture infection, there was a peak in the number of live infected target cells for the L100I mutant infection. However, the peak in live infected cells was shifted to 40 nM EFV (Figure 3B). Fits were obtained to Equation (3) using dmut values and \u03bb measured for wild-type infection. The fits recapitulated the experimental results when r\u00a0=\u00a00.29 and q\u00a0=\u00a00.13, with a fitted peak at 45 nM EFV (Figure 3B, black line). The solution to Equation (3) using the measured values for r and q showed a similar pattern to that obtained with the fitted values (Figure 3B, dashed green line). We note that both wild type and mutant coculture infection has data points above the fit line at the highest drug concentrations. This may be a limitation of our model at drug values much higher than observed at the infection optimum. In this range of drug values, our model predicts a more pronounced decline in the number of infected cells than is observed experimentally.\n\nIn order to examine whether a peak in live infected targets can be obtained with an unrelated inhibitor, we used the HIV neutralizing antibody b12. This antibody is effective against cell-to-cell spread of HIV (Baxter et al., 2014; Reh et al., 2015). We obtained a peak in live infected cells at 5 ug/ml b12 (Figure 4). The b12 concentration that resulted in a peak number of live infected cells was the same for wild-type virus and the L100I mutant, showing that L100I mutant fitness gain was EFV specific. In contrast, cell-free infection in the face of b12 showed a sharp and monotonic drop in live infected cells for both wild type and mutant virus (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/30134/elife-30134-fig4-v2.jpg)\n\n**Figure 4.:** Shown are the numbers of live infected cells normalized by the maximum number of live infected cells in coculture infection as a function of b12 antibody concentration. Infection was by either EFV-sensitive HIV (blue) or the L100I EFV-resistant mutant (green). Dashed lines are a guide to the eye. Shown are means and standard errors for three independent experiments.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30134/elife-30134-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Live infected cells are normalized by the maximum number of live infected cells in cell-free infection as a function of b12. Infection was by either EFV-sensitive HIV (blue) or the L100I EFV-resistant mutant (green). Dashed lines are a guide to the eye. Shown are means and standard errors for three independent experiments. Log scale on y-axis used for better resolution.\n\nWhile the RevCEM cell line is a useful tool to illustrate the principles governing the formation of an infection optimum, the sensitivity of such an optimum to parameter values would make its presence in primary HIV target cells speculative. We therefore investigated whether a fitness optimum occurs in primary human lymph node cells, the anatomical site which would be most likely to have a high force of infection. We derived human lymph nodes from HIV-negative individuals from indicated lung resections (Supplementary file 3), cellularized the lymph node tissue using mechanical separation, and infected the resulting lymph node cells with HIV. A fraction of the cells was infected by cell-free virus and used as infected donor cells. We added these to uninfected target cells from the same lymph node to test coculture infection, and detected the number of live infected cells 4 days post-infection with the L100I EFV-resistant mutant in the face of EFV. We detected the number of live infected cells by the exclusion of dead cells with the fixable death detection dye eFluor660 followed by single cell staining for HIV Gag using anti-p24 antibody (Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/30134/elife-30134-fig5-v2.jpg)\n\n**Figure 5.:** (A) Number of live infected cells as a function of EFV. Each row shows in vitro infected lymph node cells from one participant. Left column is the number of live infected cells normalized by maximum number of live infected cells in coculture infection. Middle and right columns are flow cytometry dot plots of infection without drug and at the infection optimum, with HIV p24 on x-axis and death detection by eFluor660 on y-axis. Infected live cells are bottom right. Number in brackets represents live infected cell density per ml. PID, participant identification number. For PID205 and 257, cells were sufficient for one experiment. For PID251, means and standard errors for three independent experiments are shown. Dashed lines are a guide to the eye. (B) HIV DNA copy number per cell was quantified by sorting fixed p24-positive cells from PID251 into individual wells. Cells were lysed and de-crosslinking performed. Each lysate was divided into four wells and PCR performed to detect HIV DNA. First row is representative of cells with no drug, second row is representative of 40 nM EFV. (C) Mean and standard error of the number of HIV DNA copies without drug and with 40 nM EFV after assay sensitivity correction. N\u00a0=\u00a056 cells from three independent experiments for each condition. ****p=4\u00d710\u22129, two tailed t-test.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30134/elife-30134-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The number of live infected cells was normalized by the maximum number of live infected cells after a 2-day coculture infection with wild-type HIV. For each donor, the means and standards errors are shown for three independent experiments. Dashed lines are a guide to the eye.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30134/elife-30134-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Fixed, p24-positive cells from PID251 were sorted into individual wells of a multi-well plate at 1 cell per well and lysed. Each lysed cell was further divided into four wells and nested PCR performed on a region of the reverse transcriptase gene. Shown are histograms of the raw numbers of positive wells per cell. (A) No drug. (B) 40 nM EFV. Results are from three independent experiments.\n\nIn each of the lymph nodes tested, we observed a peak in live infected cells at intermediate EFV concentrations. Lymph node cells from participant 205 showed a peak of live infected cells at 100 nM EFV (Figure 5A, first row). The infection optimum in the lymph node cells of study participant 257 was visible as a plateau between 50 and 200 nM EFV. In the presence of EFV, there was a decrease in the fraction of dead cells that was offset by a similar increase in the fraction of live infected cells for lymph nodes from all participants. There were more overall detectable cells with EFV, resulting in differences in the absolute concentrations of live infected cells being larger than the differences in the fractions of live infected cells between EFV and non-drug-treated cells (right two columns in Figure 5A, with absolute number of live infected cells shown in parentheses in the flow cytometry plots). This is most likely due to cells which died early becoming fragments and so being excluded from the total population in the absence of EFV. Peaks in the number of live infected cells in the face of drug may be specific to lymph node derived cells. Cell-to-cell infection of peripheral blood mononuclear cells (PBMC) with wild-type HIV showed a slight peak at a very low EFV concentration in cells from one blood donor, which was not repeated in cells from two other donors (Figure 5\u2014figure supplement 1).\n\nWe used a lymph node from study participant 251, where we obtained more cells, to examine the number of HIV DNA copies per cell. Cells from this lymph node showed an infection optimum at 50 nM EFV (Figure 5A, third row). To detect the effect of EFV on integrations per cell, we sorted single cells based on p24-positive signal, de-crosslinked to remove the fixative (Materials and methods), then divided each cell lysate into four wells. Using fewer wells saved reagents without changing sensitivity, as demonstrated in the ACH-2 cell line (Figure 2\u2014figure supplement 1C). We detected HIV DNA copies by PCR 2 days post-infection. We observed multiple DNA copies in EFV-untreated lymph node cells. The number of copies decreased with EFV (Figure 5B). We corrected for sensitivity of detection as quantified in ACH-2 cells (Materials and methods). The corrected numbers were 21 HIV DNA copies with no drug, and five copies in the presence of EFV at the infection optimum (Figure 5C, see Figure 5\u2014figure supplement 2 for histograms of raw HIV DNA copy numbers per cell). Hence, the decrease in the number of copies still results in sufficient copies to infect the cell.\n\nSince L100I does not often occur in the absence of other drug resistance mutations according to the Stanford HIV Drug Resistance Database (Rhee et al., 2003), we repeated the experiment with the K103N mutant, a frequently observed mutation in virologic failure with a higher level of resistance to EFV relative to the L100I mutant. We used cell-free infection to obtain drug inhibition per virion at each level of EFV, which we denote d103 (Figure 6A, see Figure 6\u2014figure supplement 1 for logarithmic y-axis plot). The fits showed a monotonic decrease with IC50\u00a0=\u00a026.0 nM and Hill coefficient of 1.5 (Figure 6A, black line). We then proceeded to use the K103N mutant in coculture infection, using cells from two different lymph nodes in different experiments (see Figure 6\u2014figure supplement 2 for results of individual experiments). We observed an infection optimum with EFV in lymph node cells. The peak in the number of live infected cells in the presence of drug was between 80 and 160 nM EFV (Figure 6B). We fit the experimental data with Equation (3) using d103 values and the number of DNA copies in the absence of drug measured for L100I infection. We did not calculate the predicted number of infected cells for P\u03bb/d values since the lymph node is a complex environment containing different cell subsets (Sallusto et al., 1999) and the number of infectable target cells at the start of infection is difficult to determine. Hence, we normalized both the experimental number of live infected cells and the P\u03bb/d values from Equation (3) to the maximum value in each case. The fits recapitulated the experimental results when r\u00a0=\u00a00.91 and q\u00a0=\u00a00.15, with a fitted peak at 90 nM EFV (Figure 6B, black line). The q value matched the measured result in the cell line, while the r value was much higher. However, the fitted r value in this case is not expected to be accurate since we were unable to constrain it with the number of infected cells relative to the starting number of target cells.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/30134/elife-30134-fig6-v2.jpg)\n\n**Figure 6.:** (A) The number of live infected cells normalized by the maximum number of live infected cells in cell-free infection as a function of EFV for the K103N mutant. Black line is best-fit for EFV suppression of cell-free infection (IC50\u00a0=\u00a026 nM, h\u00a0=\u00a01.5). Shown are means and standard errors for two independent experiments using cells from PID251. (B) The number of live infected cells normalized by the maximum number of live infected cells in coculture infection as a function of EFV for the K103N mutant. Black line represents best-fit model for the effect of EFV on coculture infection according to Equation (3), with d values calculated based on the cell-free infection data for the K103N mutant, and the mean number of HIV DNA copies in the absence of drug determined for L100I. The fits recapitulated the experimental results when r\u00a0=\u00a00.91 and q\u00a0=\u00a00.15. Shown are means and standard errors for three independent experiments. There were sufficient lymph node cells from PID251 for two of the three experiments, and the third experiment was performed with lymph node cells from PID274.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30134/elife-30134-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Live infected cells are normalized by the maximum number of live infected cells in cell-free infection as a function of EFV. Black line represents best-fit model for the effect of EFV on infection with single infection attempts, with IC50\u00a0=\u00a026.0 nM and Hill coefficient of 1.5. Shown are means and standard errors for three independent experiments.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30134/elife-30134-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Shown is the number of live infected cells normalized by the maximum number of live infected cells in coculture infection as a function of EFV for each experiment and study participant used. Two experiments per performed for lymph nodes resected from PID251, and one for PID274. Dashed lines are a guide to the eye.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/30134/elife-30134-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** The fraction of live cells at different EFV concentrations was normalized by the maximum fraction of live cells in the experiment. Shown are the means (grey squares) and standard errors for three independent experiments. Black squares are the normalized live K103N-infected cells as a function of EFV. Grey dotted line is a guide to the eye. Black line represents best-fit model for the effect of EFV on coculture infection according to Equation (3), with d values calculated based on the cell-free infection data for the K103N mutant, and the mean number of HIV DNA copies in the absence of drug determined for L100I. Best-fit parameters were r\u00a0=\u00a00.91 and q\u00a0=\u00a00.15.\n\nTo examine if the observed peak in live cells may be due to EFV alone, we measured cell viability in lymph node cells from one of the study participants used in the above experiment as a function of EFV without infection. No clear dependence on EFV in the absence of infection was detected (Figure 6\u2014figure supplement 3).\n\n## Discussion\n\nThe optimal virulence concept in ecology proposes that virulence needs to be balanced against host survival for optimal pathogen spread (Bonhoeffer et al., 1996; Bonhoeffer and Nowak, 1994; Gandon et al., 2001; Jensen et al., 2006). At the cellular level, this implies that the number of successfully infected cells may increase when infection virulence is reduced. The current study is, to our knowledge, the first to address this question experimentally at the level of individual cells infected with HIV.\n\nUsing a model where cells are infected and die in a probabilistic way, we found that there were two possible outcomes of partially inhibiting infection. In the case where cells were infected by single infection attempts, inhibition always led to a decline in the number of live infected cells, since inhibition reduced the number of infections per cell from one to zero. In contrast, in the case of multiple infection attempts per cell, the possibility existed that inhibition reduced the number of integrating HIV DNA copies, without extinguishing infection of the cell completely. If each HIV DNA copy increases the probability of cell death, reducing the number of HIV DNA copies without eliminating infection should lead to an increased probability of infected cell survival. This would consequently lead to an increase in the number of live infected cells.\n\nWe investigated the outcome of partial inhibition of infection in both a cell line and primary lymph node cells. In both systems, we observed that there was a peak in live infected cell number at intermediate inhibitor concentrations. This correlated to a decreased number of viral DNA copies per cell. Further increasing inhibitor concentration led to a decline in live infected cell numbers, and infecting with EFV resistant mutants shifted the peak in live infected number to higher EFV concentrations. Our model as described by Equation (3) reproduced the essential behaviour of the experimental results. Construction of the model assumed independence of productive infection and cell death. However, as shown in the Appendix 1, an equivalent model can be constructed assuming a dependence of cell death on infection. Neither model accurately captures infection dynamics at high-drug concentrations, away from the infection optimum. In this range, where the number of infection attempts per cell is much lower than 1, infection declined more slowly with drug than predicted. The model can be further refined using a distribution for the number of DNA copies per cell. Moreover, the probability of death per HIV DNA copy we denote q may be dependent on how many infection attempts preceded the current infection attempt, and the model can be improved by measuring this dependence.\n\nPhysiologically, an infection optimum in the face of an antiretroviral drug may be important in HIV infection of lymph node cells and may be less pronounced in cells from peripheral blood. We used EFV in our study since it is a common component of first line antiretroviral therapy, with frequent drug resistance mutations. However, the infection optimum we describe should occur with other classes of antiretroviral drugs, since all drugs should decrease the multiplicity of infection between cells. In terms of modeling, a future therapy component such as the integrase inhibitor dolutegravir would exert its effect on r and not \u03bb in our model. However, the effect is symmetrical since e-(\u03bb/d)r\u00a0=\u00a0e-\u03bb(r/d). The more complex outcome of partial inhibition of infection should also be considered in other infections where multiple pathogens infect one cell and host cell death is a possible outcome (Mahamed et al., 2017).\n\nThese observations reinforce previous results showing that successful completion of reverse transcription leads to cellular cytotoxicity. In addition to HIV cytotoxicity caused by viral integrations through the mechanism of double strand breaks (Cooper et al., 2013), other mechanisms of HIV-induced death are also present, including IFI16-dependent innate immune system sensing of abortive reverse transcripts following non-productive infection of resting T cells (Doitsh et al., 2014; Monroe et al., 2014). The experiments presented here reflect the effect of partial inhibition on productive infection of HIV target cells, which mostly consist of activated T-cell subsets, not resting T cells. More complex models would be needed to decipher the effect of partial inhibition of HIV infection on resting T-cell numbers and the outcome of this in terms of available T-cell targets in future infection cycles.\n\nThis study may have implications for the establishment of viral reservoirs in the context of poorly controlled infections, infections with some degree of drug resistance, or infections where some replication may take place in the face of ART, since infected cell survival is a pre-requisite for long-term persistence. The clinical implications of an infection optimum in the presence of EFV with EFV-sensitive HIV strains are likely to be negligible, since the drug concentrations at which the infection optimum occurs are extremely low. However, for EFV-resistant HIV, the infection optimum shifts to the range of EFV concentrations observed in lymph nodes (~100 nM) (Fletcher et al., 2014b), and can be expected to shift to even higher EFV concentrations with more resistant mutants. As EFV has a longer half-life than the other antiretroviral drugs co-formulated with it, it may be the only agent present in partially adherent individuals for substantial periods of time (Taylor et al., 2007). Therefore, partial inhibition of HIV infection with EFV may provide a surprising advantage to EFV resistant mutants, and may allow individuals failing therapy to better transmit drug resistant strains.\n\n## Materials and methods\n\n### Ethical statement\n\nLymph nodes were obtained from the field of surgery of participants undergoing surgery for diagnostic purposes and/or complications of inflammatory lung disease. Informed consent was obtained from each participant, and the study protocol approved by the University of KwaZulu-Natal Institutional Review Board (approval BE024/09). Blood for PBMC was obtained from healthy blood donors under the same study protocol.\n\n### Inhibitors, viruses and cell lines\n\nThe following reagents were obtained through the AIDS Research and Reference Reagent Program, National Institute of Allergy and Infectious Diseases, National Institutes of Health: the antiretroviral EFV; RevCEM cells from Y. Wu and J. Marsh; HIV molecular clone pNL4-3 from M. Martin; ACH-2 cells from T. Folks. Cell-free viruses were produced by transfection of HEK293 cells with pNL4-3 using TransIT-LT1 (Mirus,\u00a0Madison, WI\u00a0) or Fugene HD (Roche,\u00a0Risch-Rotkreuz,\u00a0Switzerland) transfection reagents. Virus containing supernatant was harvested after 2 days of incubation and filtered through a 0.45 \u00b5m filter (Corning, New York, NY). b12 antibody was produced from transfecting HEK293 cells with a b12 expression plasmid (expressed under a CMV promoter on a pHAGE6 lentiviral plasmid backbone, gift from A. Balazs), followed by harvesting of cell supernatant and purification at the California Institute of Technology protein expression core. The number of virus genomes in viral stocks was determined using the RealTime HIV-1 viral load test (Abbott Diagnostics,\u00a0Santa Clara,\u00a0CA). For r and q measurement, 0.45 \u00b5m filtered cell-free supernatants from infected RevCEM cells were used, to include any secreted factors which may modulate cell-death. The L100I and K103N mutants were evolved by serial passages of wild-type NL4-3 in RevCEM cells in the presence of 20 nM EFV. After 16 days of selection, the reverse transcriptase gene was cloned from the proviral DNA and the mutant reverse transcriptase gene was inserted into the NL4-3 molecular clone. RevCEM clones E7 and G2 used in this study were generated as previously described (Boull\u00e9 et al., 2016). Briefly, the E7 clone was generated by subcloning RevCEM cells at single-cell density. Surviving clones were subdivided into replicate plates. One of the plates was screened for the fraction of GFP expressing cells upon HIV infection using microscopy, and the clone with the highest fraction of GFP-positive cells was selected. To generate the G2 clone, E7 cells were stably infected with the mCherry gene under the EF-1\u03b1 promoter on a pHAGE2-based lentiviral vector (gift from A. Balazs), subcloned, and screened for\u00a0>99% mCherry-positive cells. All cell lines not authenticated, and mycoplasma negative. Cell culture and experiments were performed in complete RPMI 1640 medium supplemented with L-Glutamine, sodium pyruvate, HEPES, non-essential amino acids (Lonza,\u00a0Basel,\u00a0Switzerland), and 10% heat-inactivated FBS (GE Healthcare Bio-Sciences,\u00a0Pittsburgh, PA).\n\n### Primary cells\n\nLymph node cells were obtained by mechanical separation of lymph nodes and frozen at 5 \u00d7 106 cells/ml in a solution of 90% FBS and 10% DMSO with 2.5 \u03bcg/ml Amphotericin B (Lonza). Cells were stored in liquid nitrogen until use, then thawed and resuspended at 106 cells/ml in complete RPMI 1640 medium supplemented with L-Glutamine, sodium pyruvate, HEPES, non-essential amino acids (Lonza), 10% heat-inactivated FBS (Hyclone), and IL-2 at 5 ng/ml (PeproTech). Phytohemagglutinin at 10 \u00b5g/ml (Sigma-Aldrich,\u00a0St Louis, MO) was added to activate cells. PBMCs were isolated by density gradient centrifugation using Histopaque 1077 (Sigma-Aldrich) and cultured at 106 cells/ml in complete RPMI 1640 medium supplemented with L-Glutamine, sodium pyruvate, HEPES, non-essential amino acids (Lonza), 10% heat-inactivated FBS (GE Healthcare Bio-Sciences,\u00a0Pittsburgh, PA), and IL-2 at 5 ng/ml (PeproTech, Rocky Hill, NJ). Phytohemagglutinin at 10 \u00b5g/ml (Sigma-Aldrich) was added to activate cells. For both primary cell types, donor cells for coculture infection were cultured for one day then infected by cell-free virus, while target cells were cultured for three days and infected with either cell-free HIV or infected donor cells.\n\n### Subcloning of ACH-2 cells\n\nCells from the parental ACH-2 cell line were diluted to 10 cells/ml in conditioned medium, with conditioned medium generated by culturing ACH-2 cells to 106 cells/ml, then filtering through a 0.22 \u00b5m filter (Corning). 25 \u03bcl of the diluted cell suspension was then distributed to each well of a Greiner \u03bcClear 384-well plate (mean of 0.5 cells per well). Clones were cultured for 3 weeks, where each week an additional 25 \u03bcl of conditioned medium was added to each well. Clones were detected in 5% of wells and two clones, designated D6 and C3, were randomly chosen and further expanded.\n\n### Infection\n\nFor a cell-free infection of RevCEM clones, PBMC and lymph node cells, 106 cells/ml were infected with 2 \u00d7 108 NL4-3 viral copies/ml (~20ng p24 equivalent) for 2 days. For coculture infection, infected cells from the cell-free infection were used as the donors and cocultured with 106 cells/ml target cells. For RevCEM clones, 2% infected donor cells were added to uninfected targets and cocultured for 2 days in tissue culture experiments, and 20% infected donor cells were added to uninfected targets and cocultured for 2 days for time-lapse experiments. For lymph node cells and PBMCs, a ratio of 1:4 donor to targets cells was used. Infection was over 2 days in PBMC infection and for 4 days for infection of lymph node cells.\n\n### Staining and flow cytometry\n\nTo determine the number of live infected cells in reporter cell line experiments, E7 RevCEM reporter cells were infected as above used as donor cells. Prior to co-incubation with target cells, donor cells were stained with CellTrace Far Red (CTFR, Thermo Fisher Scientific,\u00a0Waltham,\u00a0MA) at 1 \u00b5M and washed according to manufacturer\u2019s instructions. The G2 mCherry-positive reporter cells were used as infection targets, and cocultured with 2% infected donor cells for 2 days. The coculture infection was pulsed with 100 ng/ml DAPI (Sigma-Aldrich) immediately before flow cytometry and the number of live infected targets cells was determined by the number of DAPI negative, CTFR negative and mCherry and GFP double positive cells on a FACSAria Fusion machine (BD Biosciences, Sparks, MD) using the 355, 488 and 633 nm laser lines. For cell-free infections where fewer fluorescence channels were used, a pulse of 300 nM of the far-red live cell impermeable dye DRAQ7 (Biolegend,\u00a0San Diego, CA) immediately before flow cytometry was substituted for DAPI, and live infected cells detected as the number of DRAQ7-negative, GFP-positive cells on a FACSCaliber machine using 488 and 633 nm laser lines. Lymph node cells were resuspended in 1 ml of phosphate buffered saline (PBS) and stained at a 1:1000 dilution of the eFlour660 dye (Thermo Fisher Scientific) according to the manufacturer\u2019s instructions. Cells were then fixed and permeabilized using the BD Cytofix/Cytoperm Fixation/Permeabilization kit (BD Biosciences) according to the manufacturer\u2019s instructions. Cells were then stained with anti-p24 FITC conjugated antibody (KC57, Beckman Coulter,\u00a0Brea,\u00a0CA). Live infected lymph node cells were detected as the number of eFluor660-negative, p24-positive cells. Cells were acquired with a FACSAriaIII or FACSCaliber machine (BD Biosciences) using 488 and 633 nm laser lines. Results were analysed with FlowJo 10.0.8 software. For single-cell sorting to detect the number of HIV DNA copies per cell, cells were single-cell sorted using 85 micron nozzle in a FACSAriaIII machine. GFP-positive, DRAQ7-negative RevCEM clones were sorted 1 day post-infection into 96 well plates (Biorad,\u00a0Hercules,\u00a0CA) containing 30 \u00b5l lysis buffer (2.5 \u00b5l 0.1M Dithiothreitol, 5 \u00b5l 5% NP40 and 22.5 \u00b5l molecular biology grade water [Kurimoto et al., 2007]). For experiments to determine the number of HIV DNA copies to measure r and q, the DRAQ7-negative subset was sorted. Fixed, p24-positive, eFluor660-negative lymph node cells were single-cell sorted two days post-infection into 96-well plates containing 5 \u00b5l of PKD buffer (Qiagen,\u00a0Hilden,\u00a0Germany) with 1:16 proteinase K solution (Qiagen) (Thomsen et al., 2016). Sorted plates were snap frozen and kept at \u221280\u00b0C until ready for PCR. For analysis by flow cytometry, a minimum of 50,000 cells were collected per data point.\n\n### Time-lapse microscopy and image analysis\n\nFor imaging infection by time-lapse microscopy, cell density was reduced to 5 \u00d7 104 cells/ml and cells were attached to ploy-l-lysine (Sigma-Aldrich) coated optical six-well plates (MatTek,\u00a0Ashland, MA). Infections with and without EFV were imaged in tandem using a Metamorph-controlled Nikon TiE motorized microscope with a Yokogawa spinning disk with a 20x, 0.75 NA phase objective in a biosafety level three facility. Excitation sources were 488 (GFP) and 561 (mCherry) laser lines and emission was detected through a Semrock Brightline quad band 440\u201340/521\u201321/607-34/700-45 nm filter. Images were captured using an 888 EMCCD camera (Andor,\u00a0Belfast,\u00a0UK). Temperature (37\u00b0C), humidity and CO2 (5%) were controlled using an environmental chamber (OKO Labs,\u00a0Naples,\u00a0Italy). Fields of view were captured every 20 min. To facilitate automated image analysis of time-lapse experiment data, mCherry expressing G2 clone cells were used as targets and E7 clone cells used as infected donors. The number of live cells was measured as the number of cells expressing mCherry since intracellular mCherry protein is soluble and hence lost upon cell death when cellular membrane integrity is compromised. The number of live infected cells was measured as the number of cells expressing both mCherry and GFP. Three independent experiments were performed. Movies were analyzed using custom code developed with the Matlab R2014a Image Analysis Toolbox. Images in the mCherry channel were thresholded and the imfindcircle function used to detect round objects within the cell radius range. Cell centers were found. GFP signal underwent the same binary thresholding. The number of mCherry-positive 16 pixel2 squares around the cell centers was used as the as the number of total target cells at each time-point, and the number of squares double positive for fluorescence in the GFP channel was used as the number of infected target cells.\n\n### Determination of HIV DNA copy number in individual cells\n\n96-well plates of cells previously sorted at 1 cell per well were thawed at room temperature and spun down. Fixed cells were de-crosslinked by incubating in a thermocycler at 56\u00b0C for 1 hr. The lysate from each well was split equally over 10 wells (2.5 \u00b5l each well after correction for evaporation) for E7 RevCEM or four wells (6.8 \u00b5l each well after correction for evaporation) for lymph nodes, containing 50 \u00b5l of Phusion hot start II DNA polymerase (New England Biolabs,\u00a0Ipswich,\u00a0MA) PCR reaction mix (10 \u00b5l 5X Phusion HF buffer, 1 \u00b5l dNTPs, 2.5 \u00b5l of the forward primer, 2.5 \u00b5l of the reverse primer, 0.5 \u00b5l Phusion hot start II DNA polymerase, 2.5 \u00b5l of DMSO and molecular biology grade water to 50 \u00b5l reaction volume). Two rounds of PCR were performed. The first round reaction amplified a 700 bp region of the reverse transcriptase gene using the forward primer 5\u2019 CCTACACCTGTCAACATAATTGGAAG 3\u2019 and reverse primer 5\u2019 GAATGGAGGTTCTTTCTGATG 3\u2019. Cycling program was 98\u00b0C for 30 s, then 34 cycles of 98\u00b0C for 10 s, 63\u00b0C for 30 s and 72\u00b0C for 15 s with a final extension of 72\u00b0C for 5 min. 1 \u00b5l of the first round product was then transferred into a PCR mix as above, with nested second round primers (forward 5\u2019 TAAAAGCATTAGTAGAAATTTGTACAGA 3\u2019, reverse 5\u2019 GGTAAATCCCCACCTCAACAGATG 3\u2019). The second round PCR amplified a 550 bp product which was then visualized on a 1% agarose gel. PCR reactions were found to work best if sorted plates were thawed no more than once, and plates which underwent repeated freeze-thaw cycles showed poor amplification.\n\n### Correction of raw number of detected DNA copies for detection sensitivity\n\nA stochastic simulation in Matlab was used to generate a distribution for the number of positive wells per cell for each mean number of DNA copies per cell \u03bb. The probability for a DNA copy to be present within a given well and be detected was set as \u03c3/w, where \u03c3 was the detection sensitivity calculated as the number of ACH-2 with detectable integrations divided by the total number of ACH-2 cells assayed (38/166, \u03c3\u00a0=\u00a00.23), and w was the number of wells. A random number m representing DNA copies per cell from a Poisson distribution with a mean \u03bb was drawn, and a vector R of m random numbers from a uniform distribution was generated. If there existed an element Ri of the vector with a value between 0 and \u03c3/w, the first well was occupied. If an element existed with a value between \u03c3/w+\u03b3 and 2(\u03c3/w), where \u03b3\u00a0<<1, the second well was occupied, and if between (\u03c3/w+\u03b3)(n-1) and n(\u03c3/w), the nth well was occupied. The sum of wells occupied at least once was determined, and the process repeated j times for each \u03bb, where j was the number of cells in the experimental data. A least squares fit was performed to select \u03bb which best fit the experimental results across well frequencies, and mean and standard deviation for \u03bb was derived by repeating the simulation 10 times.\n\n### Fit of the EFV response for single infections using IC50 and Hill coefficient\n\nTo obtain d, we normalized Equation (2) by the fraction of infected cells in the absence of drug (Sigal et al., 2011) to obtain Tx = (infected targets with EFV)/ (infected targets no EFV)= ((1- (1 r)\u03bb/d) (1-q)\u03bb/d)/ ((1- (1 r)\u03bb) (1-q)\u03bb). We approximate the result at small r, q to Tx = (1- e-r\u03bb/d) e-q\u03bb/d/ (1- e-r\u03bb) e-q\u03bb=eqq\u03bb(1-1/d) ((1- e-r\u03bb/d) / (1- e-r\u03bb)). Expanding the exponentials we obtain Tx = (1\u00a0+\u00a0q\u03bb(1\u20131/d)) ((-r\u03bb/d)/-r\u03bb) = (1\u00a0+\u00a0q\u03bb(1\u20131/d))(1/d). We note that at \u03bb\u00a0<1, q\u03bb(1\u20131/d)<<1, and hence Tx \u2245 1/d. Tx was measured from the experiments to obtain d values at the EFV concentrations used for cell-free infection, where \u03bb\u00a0<\u00a01. To obtain a fit of d as a function of the concentration of drug that gives half-maximal inhibition (IC50) and Hill coefficient (h) for EFV, we used the relation for the fraction cells remaining infected in the face of drug (Canini and Perelson, 2014), whose definition is equivalent to Tx at \u03bb\u00a0<\u00a01:\n\n$$\n\\frac{1}{d}=1\u2212\u00a0=1\u2212\\frac{[EFV]^{h}}{[EFV]^{h}+IC_{50}^{h}}.\n$$\n\n### Measurement of r\n\nCell-free supernatant used in infection was derived as follows: 106 cells/ml were infected with 2 \u00d7 108 NL4-3 viral copies/ml (~20ng p24 equivalent) for 2 days. Thereafter 0.2% of the infected cells from the cell-free infection were added to 106 cells/ml target cells. The infected supernatant from the coculture 2 days post-infection was filtered using a 0.45 \u00b5m filter (Corning) and added to cells at a 1:8 dilution, where the dilution was calibrated to result in non-saturating infection in terms of GFP expression. A fraction of the cells were sorted into lysis buffer at one cell per well 1 day post infection, split over four wells, and PCR performed as described above to determine HIV copy number per cell. The remaining cells from the same infection were used to determine frequency of DRAQ-7-negative, GFP-positive cells 2 days post-infection using flow cytometry.\n\n### Measurement of q\n\nCell-free supernatant used in infection was derived as for r, except that 1 day before harvesting of the viral supernatant from infected cells, infected cells were washed twice with PBS and serum-free growth medium added. At the same time, the target cells for the infection were washed twice with PBS and serum-free growth medium added. Cells were split into two wells, and EFV to a final concentration of 40 nM was added to one of the wells. Supernatant was harvested and filtered as described for r, and added to cells at a 1:2 dilution. A fraction of the cells were sorted into lysis buffer at one cell per well 1 day post-infection, split over four wells, and PCR performed as described above to determine HIV copy number per cell. The remaining cells from the same infection were used to determine the frequency of live and dead cells two days post-infection. The concentration of live cells was measured using the TC20TM automated cell counter (Bio-Rad) with trypan blue staining (Lonza).\n",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "5ec9918e-9c29-4148-aaa1-3589530874b0",
+      "submission_id": "6135b1d4-351b-410f-b09c-703e7fe8c72f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wenying Shou, Fred Hutchinson Cancer Research Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.30134.039](https://doi.org/10.7554/eLife.30134.039)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Incomplete inhibition of HIV infection results in more HIV infected lymph node cells by reducing cell death\" for consideration by eLife. Your article has been evaluated by Wenhui Li (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nJackson et al. mathematically predicted and experimentally demonstrated that in lymph node cells, intermediate antiviral (anti-HIV) drug concentrations can allow infected cells to live longer by reducing multiplicity of infection. Thus, intermediate drug concentration can presumably facilitate the persistence of HIV. The result is interesting and can have clinical implications.\n\nReviewer #1's concern is quite substantial. Other reviewers agreed to this concern. \"I strongly believe that infection probability r and death probability q should be measured experimentally. This is to eliminate fitting parameters and to ensure quality of the model.\"\n\nComments from Reviewers 2 and 3 are attached.\n\nReviewer #2:\n\nThe studies presented by Sigal et al. examine the interrelationship between cell death and the number of DNA copies of HIV that are detected per individual infected cell. Previous studies from a number of groups, including Sigal's, have indicated that cell-to-cell infection leads to infected cells with a higher number of integrated proviruses. The single cell PCR data provided by Sigal et al. support a hypothesis that the cell-to-cell infection not only leads to higher copy number of proviruses, but also generally leads to more rapid cell death. Using drugs or antibodies at low levels that do not fully inhibit infection, they found that low levels of inhibition paradoxically can give rise to a larger number of surviving infected cells. They also appear to find lower rates of cell death under conditions of partial inhibition. The studies are generally well conceived, and the results generally support the conclusions. The overall quality of the data could be improved by showing additional controls and increasing the numbers of cells analyzed to enhance the confidence in the copy number estimates. On the cell death front, it would be helpful for their hypothesis to show a time course with the cell death depicted over time. Lastly, an important detail not mentioned, is whether the use of lymph node cells is critical or not for the phenotypes that they describe. The study may have implications for the establishment of viral reservoirs in the context of poorly controlled infection or infections with some degree of drug resistance.\n\n1) The authors use the ACH2 cell line to test the ability of their assay to detect single copy integrations. Why do they only spread each cell over 4 wells in control studies as opposed to the 10 wells used in their experimental studies? The rationale for using different dilution schemes should be explained. A comparison of the efficiency of PCR at the different dilutions would also be informative.\n\nThe ACH2 cell line yields fewer than 1 copy per cell, which may be a limitation of the PCR assay, but also could be reflective of heterogeneity in a cell line that is assumed to be clonal and a uniform karyotype. It is not described how recently the ACH2 cell line that they are using has been cloned. Repeating the ACH2 studies with a subclone would be beneficial.\n\nFigure 2 would be more informative if it showed the results of both cell-free virus infection versus coculture infection. The numbers of cells analyzed in Figure 2C (n=34) does not appear sufficient to provide a robust sense of the distribution of the DNAs in the infected cells. Is this a bimodal distribution? Histogram comparison of cell-free should also be used for comparison.\n\n2) Figure 4.\n\nWhat happens with partial antibody inhibition of cell-free infection? These studies should be performed with infection from cell-free virus. To further test their hypothesis partial inhibition of cell-free infection should only decrease infected cells.\n\n3) Figure 5.\n\nAs controls for cell death measurements, the viability of the uninfected control lymph node cells, treated and untreated, should also be illustrated. In the literature lymph node cells (mostly tonsilar) are very prone to cell death, and it is important to understand to what extent they are measuring virus-induced cell death. In addition, a time course of the cell death observed in the infections may would also be helpful to evaluate their hypothesis that the increase of infected cells in the partially treated cells is due to increased infected cell survival \u2013 i.e. decreased death.\n\n4) Are the phenotypes described in the primary lymph node cells also observed for peripheral blood lymphocytes? Or are there differences between the peripheral blood versus the lymph node T cells.\n\nReviewer #3:\n\nThis is an interesting and worthwhile paper that examines the effects of incomplete inhibition of HIV infection with reverse transcription inhibitors. The experimental results presented are in accordance with model predictions. However, the presentation of the model should be improved as detailed below. Also, I found the labeling and numbering of the supplemental figures confusing. I have no substantial concerns and this the paper should be published after minor revision.\n\n1) The terms and concepts in the paper are not clearly defined. In the first paragraph of the Results, you mention each donor to target transmission. It is not clear what a transmission is. Does it refer to viral entry of either a free virus or a virus (or genome) by cell-to-cell transmission? It needs to be defined. Second define what you mean by infection. Does a cell have to produce virus to be considered infected? Does the virus have to integrate or is it sufficient to simply reverse transcribe? Is a latently infected cell an infected cell in your model? Also, when you say drug therapy increases the number of live infected cells do you mean live productively infected cells, live HIV DNA+ cells, etc.\n\n2) The assumption that all transmissions have equal probabilities to infect target cells seems to ignore the possibility that some virions carry defective genomes while others do not. This does not seem realistic. In your experimental system is the ratio of HIV RNA to TCID50 close to one so you can ignore defective particles?\n\n3) You assume productive infection and death are independent events. While the events may be independent the probability of death is certainly not independent of whether a cell is productively infected or not. Further the probability of death is time dependent. The probability a cell dies one hour after viral entry (infection?) is clearly quite different than the probability it dies days after infection. You may want to define q as the probability a cell has died by time t after infection and the same for P\u03bb\u03bb where t is 2 days or 4 days for your various experiments.\n\n4) Results, second paragraph. You claim antiretroviral drugs reduce the number of infecting virions. This implies that by infecting you must mean the virus reverse transcribes. In standard viral dynamic models the effects of ART are to reduce the infection probability, i.e., r in your model not \u03bb. Thus it is important to clarify your definitions.\n\n5) You introduce the drug effect as a constant d in the second paragraph of the Results. Later in the paper you make reference to IC50 and Hill coefficients for the drug. These need to be tied together in an explicit manner. In viral dynamic modeling the effectiveness of a drug, epsilon, (eps) is introduced where eps=1 is a 100% effective drug, e.g. stops all reverse transcription, and where eps=0 means the drug has no effect. Then a pharmacodynamic model is used to relate eps with the drug concentration, C, e.g. eps= C^n/(IC50^n + C^n). Thus rather than \u03bb/d you could model the drug effect by (1-eps)\u03bb and use the above formula to link the effect to drug concentration. See for example, Canini and Perelson, 2014. Equation 3 in your manuscript accomplished the same, but the above seems more straightforward.\n\n6) Results, fourth paragraph. When you measure the number of reverse transcribed copies of viral DNA I assume you are measuring both integrated and unintegrated DNA \u2013 please state this explicitly as later you seem to imply you are measuring integrated DNA, e.g. Results, sixth paragraph.\n\n7) The current work focuses only on reverse transcriptase inhibitors. Model therapy uses combination therapy including integrase inhibitors and protease inhibitors. Expanding the discussion of the clinical implications of this work to include combination therapy would be worthwhile.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Incomplete inhibition of HIV infection results in more HIV infected lymph node cells by reducing cell death\" for consideration by eLife. Your article has been favorably evaluated by Wenhui Li (Senior Editor) and three reviewers, one of whom, Wenying Shou (Reviewer #1), is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal his identity: Alan Perelson (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe want you to address the following comments. Note that we are not asking you to do further experiments. For the sake of record-keeping, we are enclosing all comments.\n\nReviewer #1:\n\nI am satisfied with their measurements.\n\nIn general, I suggest breaking up long sentences (especially the one in Abstract, also the end of the third paragraph in the Introduction) for readability. Sentences that last more than three lines are generally more difficult to read than shorter sentences.\n\nReviewer #2:\n\nThe authors have very rigorously addressed the critiques by performing new experiments and modifying the text. The response to the reviews is particularly comprehensive and thorough. The resulting new data are supportive of the original model and hypothesis. The authors should be commended.\n\nReviewer #3:\n\nIn this revised version on the paper the authors have clarified their definitions by incorporating a supplemental table and additional text describing their model. However, this clarification has raised the following issues that need to be resolved:\n\n1) As defined in the Results, \u03bb is the number of infection attempts, where one attempt is measured as one HIV DNA copy. Thus, \u03bb is an integer. The formula, Equation 1, makes sense when \u03bb is an integer. However, what is determined experimentally is not the integer number of DNA copies but rather the mean number of copies per cell, which is not necessarily an integer. To make sense Equation 1 should be reformulated as a conditional probability of a cell being infected and alive given x attempts, call this P(I | x). What I believe the authors want is the probability of a cell being infected and alive, which is then P(I) =Sum P(I |x) (p(x)), where p(x) is the probability of having x infection attempts, and the sum is over all non-negative values of x. One could then assume, for example, that the number of attempts is Poisson distributed with mean \u03bb. Then the resulting formula for P(I) would involve the mean value of the number of attempts. A better choice would be the empirical distribution that the authors measured. Note that what is actually measured is the number of infected cells that are alive at a certain time, i.e. P(I), and the mean number of attempts, what I called \u03bb above.\n\n2) According to the model q should be independent of the number of attempts. Can this be tested by using different drug concentrations, which would vary the mean number of attempts? If you already have experimental data on this, then include them. Otherwise, just discuss it.\n\n3) In the original manuscript where Equation 1 was derived the authors assumed q was independent of r. In the second paragraph of the Results the authors say q is the probability of a cell to die post reverse transcription, which seems more sensible to me. Under the original assumption of q and r being independent, a cell in which the attempt was unsuccessful would have the same probability of dying as a cell in which reverse transcription succeeded. With q now defined as in the second paragraph of the Results, the fundamental formula given by Equation 1 may not be correct and deserves a more thorough discussion. I think the fundamental process being described is that at each attempt a cell is either infected with probability r, or not infected with probability 1-r. If it is infected, i.e. had a successful reverse transcription, then with probability q it remains alive and with probability 1-q it dies. Assume there are x attempts. Let z be the number of cells infected after x attempts. Then z is binomially distributed, i.e. z= Bin (x,r). Further, if we are interested in the number of cells infected and alive after x attempts, then P(I|x) = Sum_z=1 to x (x choose r) r^z (1-r)^(x-z)(1-q)^z, where the factor (1-q)^z is the probability of a cell surviving after each of the z infections. Simplifying, P(I|x) = [r(1-q) + (1-r)]^x, which is not the same as Equation 1. The number of attempts, x, is again random and as above one can convert this conditional probability into P(I) by assuming a Poisson (or some other distribution such as the empirically measured one) for the number of attempts p(x).\n\n4) In Supplementary file 1 the authors say the way they measure the probability a cell is alive after \u03bb attempts is by computing the concentration of cells alive with \u03bb attempts divided by the concentration of cells alive with no transmissions. However, since the concentration of cells alive with no transmissions can approach zero as time goes on it is clear that this fraction need not be less than 1. Also, as noted above the authors need to use conditional probabilities and derive formulas that involve the mean number of attempts. I would suggest they compute the ratio of the probability a cell is infected to the probability a cell in not infected and alive, which is what they measure, and see if they can derive a formula for q.\n",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ef5d2c25-13a3-40bc-bf82-f2306a7c0a93",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C1",
+      "claim": "HIV has been reported to be cytotoxic in vitro and in lymph node infection models.",
+      "claim_type": "EXPLICIT",
+      "source": "HIV has been reported to be cytotoxic in vitro and in lymph node infection models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is supported by citations throughout the manuscript to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "7f219c6a-84b2-4948-b3bb-0661b10acde7",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C2",
+      "claim": "Partial inhibition of transmissions of multiple virions per cell could lead to increased numbers of live infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a computational approach, we found that partial inhibition of transmissions of multiple virions per cell could lead to increased numbers of live infected cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational model described in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "c3604791-db3f-47b2-93cd-467efc7db3eb",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C3",
+      "claim": "If the number of viral DNA copies remains above one after inhibition, then eliminating the surplus viral copies reduces cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "If the number of viral DNA copies remains above one after inhibition, then eliminating the surplus viral copies reduces cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the computational model and experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "be89aad5-78f3-44cf-b80f-bef3591f0804",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C4",
+      "claim": "Increased numbers of live infected cells were observed when infection was partially inhibited with the antiretroviral efavirenz in a cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a cell line, we observed increased numbers of live infected cells when infection was partially inhibited with the antiretroviral efavirenz or neutralizing antibody.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding reported in the abstract and detailed in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "ee04b0c9-fa4b-41b5-9c22-aad8b1c30999",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C5",
+      "claim": "Increased numbers of live infected cells were observed when infection was partially inhibited with neutralizing antibody in a cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a cell line, we observed increased numbers of live infected cells when infection was partially inhibited with the antiretroviral efavirenz or neutralizing antibody.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding reported in the abstract and detailed in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "2b504c56-d7a7-42b9-872e-0eddfe611759",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C6",
+      "claim": "More live infected lymph node cells were observed when lymph node infection by partially resistant HIV mutants was inhibited with efavirenz at concentrations reported in lymph nodes.",
+      "claim_type": "EXPLICIT",
+      "source": "We then used efavirenz at concentrations reported in lymph nodes to inhibit lymph node infection by partially resistant HIV mutants. We observed more live infected lymph node cells, but with fewer HIV DNA copies per cell, relative to no drug.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from lymph node infection experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "937b93e5-9cd6-448f-b3f4-96ea4e49567f",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C7",
+      "claim": "Lymph node cells infected with partially resistant HIV mutants and treated with efavirenz had fewer HIV DNA copies per cell relative to no drug.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed more live infected lymph node cells, but with fewer HIV DNA copies per cell, relative to no drug.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from lymph node infection experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "1214de4e-6254-47f9-9281-3edd4036f461",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C8",
+      "claim": "Limited attenuation of HIV transmission per cell may increase live infected cell numbers in environments where the force of infection is high.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, counterintuitively, limited attenuation of HIV transmission per cell may increase live infected cell numbers in environments where the force of infection is high.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental and computational findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "a48685ff-da76-417e-9e0b-ebcb40d6b2dc",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C9",
+      "claim": "HIV infection results in extensive T cell depletion in lymph node environments.",
+      "claim_type": "EXPLICIT",
+      "source": "HIV infection is known to result in extensive T cell depletion in lymph node environments (Sanchez et al., 2015), where infection is most robust (Brenchley et al., 2004; Doitsh et al., 2010; Doitsh et al., 2014; Finkel et al., 1995; Galloway et al., 2015; Mattapallil et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "49da31dd-05ab-4c52-b854-fc8164718b9c",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C10",
+      "claim": "Infection is most robust in lymph node environments.",
+      "claim_type": "EXPLICIT",
+      "source": "HIV infection is known to result in extensive T cell depletion in lymph node environments (Sanchez et al., 2015), where infection is most robust (Brenchley et al., 2004; Doitsh et al., 2010; Doitsh et al., 2014; Finkel et al., 1995; Galloway et al., 2015; Mattapallil et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "f9d69377-6546-4663-9c81-53e1a570ba35",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C11",
+      "claim": "Depletion of HIV infectable target cells, in addition to onset of immune control, is thought to account for the decreased replication ratio of HIV from an initial peak in early infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of HIV infectable target cells, in addition to onset of immune control, is thought to account for the decreased replication ratio of HIV from an initial peak in early infection (Bonhoeffer et al., 1997; Nowak and May, 2000; Perelson, 2002; Phillips, 1996; Qui\u00f1ones-Mateu and Arts, 2006; Ribeiro et al., 2010; Wodarz and Levy, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "d16b84f5-3383-4aae-a827-3c90bb24e5a9",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C12",
+      "claim": "Individuals are most infectious in the initial, acute stage of infection, where the target cell population is relatively intact and produces high viral loads.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with observations that individuals are most infectious in the initial, acute stage of infection, where the target cell population is relatively intact and produces high viral loads (Hollingsworth et al., 2008; Wawer et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "31bab968-392c-4217-b760-9ddec7c51367",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C13",
+      "claim": "T-cell death occurs by several mechanisms, which are either directly or indirectly mediated by HIV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "T-cell death occurs by several mechanisms, which are either directly or indirectly mediated by HIV infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by the subsequent detailed mechanisms described in the text.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "fb88cbc6-3cff-4b16-abae-1365dc99bee3",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C14",
+      "claim": "Accumulation of incompletely reverse transcribed HIV transcripts is sensed by interferon-\u03b3\u2013inducible protein 16.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulation of incompletely reverse transcribed HIV transcripts is sensed by interferon-\u03b3\u2013inducible protein 16 (Monroe et al., 2014) and leads to pyroptotic death of incompletely infected cells by initiating a cellular defence program involving the activation of caspase 1 (Doitsh et al., 2010; Doitsh et al., 2014; Galloway et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "6e0a05c9-345a-43d5-aefe-efe28321b8da",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C15",
+      "claim": "Accumulation of incompletely reverse transcribed HIV transcripts leads to pyroptotic death of incompletely infected cells by initiating a cellular defence program involving the activation of caspase 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulation of incompletely reverse transcribed HIV transcripts is sensed by interferon-\u03b3\u2013inducible protein 16 (Monroe et al., 2014) and leads to pyroptotic death of incompletely infected cells by initiating a cellular defence program involving the activation of caspase 1 (Doitsh et al., 2010; Doitsh et al., 2014; Galloway et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "5c8dc5ff-b5bf-47a2-9097-6c4585ec7288",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C16",
+      "claim": "HIV proteins Tat and Env have been shown to lead to cell death of infected cells through CD95-mediated apoptosis following T-cell activation.",
+      "claim_type": "EXPLICIT",
+      "source": "HIV proteins Tat and Env have also been shown to lead to cell death of infected cells through CD95-mediated apoptosis following T-cell activation (Banda et al., 1992; Westendorp et al., 1995a; Westendorp et al., 1995b1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "79838689-b4e1-4f03-a4c0-11243f9df9e1",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C17",
+      "claim": "Damage to lymph nodes due to chronic immune activation leads to an environment less conducive to T-cell survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Using SIV infection, it has been shown that damage to lymph nodes due to chronic immune activation leads to an environment less conducive to T-cell survival (Zeng et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research using SIV infection.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "fa9df4ca-ecd9-47d6-ad93-8d68d08ebb97",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C18",
+      "claim": "Double strand breaks in the host DNA caused by integration of the reverse transcribed virus results in cell death by the DNA-PK-mediated activation of the p53 response.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, double strand breaks in the host DNA caused by integration of the reverse transcribed virus results in cell death by the DNA-PK-mediated activation of the p53 response (Cooper et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "835d1a3f-c4b6-4cb1-b887-05a38bc1231e",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C19",
+      "claim": "The lymph node environment is conducive to HIV infection due to presence of infectable cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The lymph node environment is conducive to HIV infection due to: (1) presence of infectable cells (Deleage et al., 2016; Embretson et al., 1993; Tenner-Racz et al., 1998);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "6dcf1c0e-f152-4551-b080-6e95d124c69c",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C20",
+      "claim": "The lymph node environment is conducive to HIV infection due to proximity of cells to each other and lack of flow which should enable cell-to-cell HIV spread.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) proximity of cells to each other and lack of flow which should enable cell-to-cell HIV spread (Baxter et al., 2014; Dale et al., 2011; Groot et al., 2008; Groppelli et al., 2015; Gummuluru et al., 2002; H\u00fcbner et al., 2009; Jolly et al., 2004; Jolly et al., 2011; M\u00fcnch et al., 2007; Sherer et al., 2007; Sourisseau et al., 2007; Sowinski et al., 2008);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "2d877070-9b5f-4d85-8375-5e7f1d592ace",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C21",
+      "claim": "The lymph node environment is conducive to HIV infection due to decreased penetration of antiretroviral therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) decreased penetration of antiretroviral therapy (ART) (Fletcher et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "f7f97cc9-803c-4a9c-88c4-353162278935",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C22",
+      "claim": "Multiple infections per cell have been reported in cell-to-cell spread of HIV.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple infections per cell have been reported in cell-to-cell spread of HIV (Baxter et al., 2014; Boull\u00e9 et al., 2016; Dang et al., 2004; Del Portillo et al., 2011; Dixit and Perelson, 2004; Duncan et al., 2013; Law et al., 2016; Reh et al., 2015; Russell et al., 2013; Sigal et al., 2011; Zhong et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "e29c6f20-d6f4-4efb-a52e-2628aff2521a",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C23",
+      "claim": "In cell-to-cell mode of HIV transmission, an interaction between the infected donor cell and the uninfected target results in directed transmission of large numbers of virions.",
+      "claim_type": "EXPLICIT",
+      "source": "In this mode of HIV transmission, an interaction between the infected donor cell and the uninfected target results in directed transmission of large numbers of virions (Baxter et al., 2014; Groppelli et al., 2015; H\u00fcbner et al., 2009; Sowinski et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "e26cf422-c4be-44bf-a802-e59142b2656e",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C24",
+      "claim": "Cell-to-cell route is thought to be the main cause of multiple infections per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the cell-to-cell route is thought to be the main cause of multiple infections per cell (H\u00fcbner et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "9ed84381-9093-4587-91b9-89c3ca456502",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C25",
+      "claim": "Several studies showed multiple infections in the lymph nodes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the lymph nodes, several studies showed multiple infections (Gratton et al., 2000; Jung et al., 2002; Law et al., 2016) while another study did not (Josefsson et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "caf1a2d3-6576-47d1-a6d2-991a1cf5ea18",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C26",
+      "claim": "One study did not show multiple infections in the lymph nodes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the lymph nodes, several studies showed multiple infections (Gratton et al., 2000; Jung et al., 2002; Law et al., 2016) while another study did not (Josefsson et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "d87b7251-9b1a-4e1b-833d-23f6c72dbf4c",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C27",
+      "claim": "T cells were shown not to be multiply infected in the peripheral blood compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, T cells were shown not to be multiply infected in the peripheral blood compartment (Josefsson et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "1644f418-d150-444a-a6e4-6137a89f4582",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C28",
+      "claim": "The average number of HIV DNA copies per cell is greater than one in 3 out of 12 individuals in the CD3-positive, CD32a high CD4 T-cell subset in the face of ART.",
+      "claim_type": "EXPLICIT",
+      "source": "However, more recent work investigating markers associated with HIV latency in the face of ART found that the average number of HIV DNA copies per cell is greater than one in 3 out of 12 individuals. This occurred in the face of ART in the CD3-positive, CD32a high CD4 T-cell subset (Descours et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "6b6bee6f-2907-430c-b165-320caa3abb0c",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C29",
+      "claim": "Multiple viral integration attempts per cell may increase the probability of death.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple viral integration attempts per cell may increase the probability of death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis stated in the introduction and tested in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "ab3b9fa0-46cf-4e76-95a7-4f2e7c588630",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C30",
+      "claim": "Attenuation of infection may increase viral replication by increasing the number of live targets.",
+      "claim_type": "EXPLICIT",
+      "source": "One consequence of HIV-mediated death may be that attenuation of infection may increase viral replication by increasing the number of live targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis stated in the introduction.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "6b19ab47-6af3-4268-b14c-3b92a0f8e8b5",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C31",
+      "claim": "It has been suggested that more attenuated HIV strains result in more successful infections in terms of the ability of the virus to replicate in the infected individual.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it has been suggested that more attenuated HIV strains result in more successful infections in terms of the ability of the virus to replicate in the infected individual (Ari\u00ebn et al., 2005; Nowak and May, 2000; Payne et al., 2014; Qui\u00f1ones-Mateu and Arts, 2006; Wodarz and Levy, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "04a4ad38-64f5-4438-9074-4f72cc1e8983",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C32",
+      "claim": "Partially inhibiting infection with drug or antibody resulted in an increase in the number of live infected cells in both a cell line and in lymph node cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that partially inhibiting infection with drug or antibody resulted in an increase in the number of live infected cells in both a cell line and in lymph node cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding reported in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "cddef143-455d-41a7-907d-1efec6381b69",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C33",
+      "claim": "This is the first experimental demonstration at the cellular level that attenuation of HIV infection can result in an increase in live infected cells under specific infection conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "This is, to our knowledge, the first experimental demonstration at the cellular level that attenuation of HIV infection can result in an increase in live infected cells under specific infection conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "64cf0868-f4a2-44b6-b1df-bf57b985881c",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C34",
+      "claim": "The probability of successful infection of a target cell given n infection attempts is 1-(1-r)^n.",
+      "claim_type": "EXPLICIT",
+      "source": "The probability of successful infection of a target cell given n infection attempts is 1-(1 r)n (Sigal et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical model equation supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "ac6cadf1-151f-4ebe-95d5-e938bad9ddef",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C35",
+      "claim": "The probability of a cell to survive infection in the face of n infection attempts is Ln=(1-q)^n.",
+      "claim_type": "EXPLICIT",
+      "source": "We define Ln as the probability of a cell to survive infection in the face of n infection attempts. Assuming infection attempts act independently, Ln=(1-q)n.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical model definition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "531937d5-ed48-42e1-ba43-85f1adcdc7a7",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C36",
+      "claim": "At each drug strength d/\u03bb, P\u03bb increases as the probability of infection r increases.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the probability of a cell to survive and be infected as a function of r and q shows that at each drug strength d/\u03bb, P\u03bb increases as the probability of infection r increases (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the mathematical model analysis, supported by Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "5823a63a-a02c-4d5c-bf65-d3e34b06a8f5",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C37",
+      "claim": "A subset of parameter values results in a peak in the number of infected cells at intermediate d/\u03bb, decreasing as drug strength increases further.",
+      "claim_type": "EXPLICIT",
+      "source": "A subset of parameter values results in a peak in the number of infected cells at intermediate d/\u03bb, decreasing as drug strength increases further (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the mathematical model analysis, supported by Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "81ba72ea-3ab2-4058-b186-ce6f372a7848",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C38",
+      "claim": "As q increases, the cost of multiple infections per cell increases, and the infection optimum shifts to higher d/\u03bb values.",
+      "claim_type": "EXPLICIT",
+      "source": "As q increases, the cost of multiple infections per cell increases, and the infection optimum shifts to higher d/\u03bb values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the mathematical model analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "d916bf28-86d9-441e-823f-96711d0faaae",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C39",
+      "claim": "A fall from the infection optimum at decreasing d/\u03bb is driven by increasing cell death as a result of increasing infection attempts per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "A fall from the infection optimum at decreasing d/\u03bb is driven by increasing cell death as a result of increasing infection attempts per cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the mathematical model results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "8307f157-e6f4-433b-88f9-c6a16ea90687",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C40",
+      "claim": "About one quarter of ACH-2 cells showed a PCR product of the expected size when assayed for HIV DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We sorted a total of 166 ACH-2 cells at one cell per well into lysis buffer and subdivided single-cell lysates into four wells (Figure 2\u2014figure supplement 1A). About one quarter of cells showed a PCR product of the expected size.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from ACH-2 cell analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "1039c6b6-7ed3-4182-8953-6709ce9d41b0",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C41",
+      "claim": "Cells with more than one HIV copy per cell in ACH-2 cells were very rare and may reflect either errors in cell sorting or dividing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells with more than one HIV copy per cell were very rare and may reflect either errors in cell sorting or dividing cells (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation with a speculative interpretation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "af959bc0-8185-458e-9872-b42a49f46cab",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C42",
+      "claim": "The frequency of detection in ACH-2 cells indicated the detection efficiency per HIV DNA copy.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that each ACH-2 cell contains one HIV DNA copy, the frequency of detection indicated our detection efficiency per HIV DNA copy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the ACH-2 experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "755daf53-1d45-4019-bc24-29c515d02d50",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C43",
+      "claim": "In coculture infection with approximately 2% infected donor cells, 60 GFP-positive cells were assayed and obtained a wide distribution of viral DNA copies per cell, which ranged from 0 to 9 copies.",
+      "claim_type": "EXPLICIT",
+      "source": "We used approximately 2% infected donor cells as our input, and detected the number of HIV DNA copies per cell by flow cytometric sorting of individual GFP-positive cells followed by splitting each cell lysate over 10 wells. Wells were then amplified by PCR and visualized on an agarose gel (Figure 2A). We assayed 60 cells and obtained a wide distribution of viral DNA copies per cell, which ranged from 0 to 9 copies (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from coculture infection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "bf4ef591-3988-4a81-8ff4-57d652c9e465",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C44",
+      "claim": "In cell-free HIV infection, either zero or one HIV copy per cell was detected in 30 GFP-positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We also detected the HIV copy number in 30 GFP-positive cells infected by cell-free HIV. HIV in cell-free form was obtained by filtering supernatant from HIV producing cells to exclude cells or cell fragments, then infecting target cells with the filtered virus. Infection with this virus is defined here as cell-free infection. In this case, we detected either zero or one HIV copy per cell (Figure 2B inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from cell-free infection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "dd7d78ad-2672-4036-acfc-4da1ce557f02",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C45",
+      "claim": "The frequency of single HIV DNA copies in cell-free infection was 0.23, identical to the measured result in the ACH-2 cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of single HIV DNA copies was 0.23, identical to the measured result in the ACH-2 cell line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "3b60fd4f-ccea-469a-a7de-a71fec52d6a9",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C46",
+      "claim": "On average, 15 \u00b1 3 copies per cell were obtained after correction for detection sensitivity in coculture infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We computationally corrected the detected number of DNA copies in coculture infection for the sensitivity of our PCR reaction as determined by the ACH-2 results (Materials and methods). On average we obtained 15 \u00b1 3 copies per cell after correction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding after computational correction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "1fefe6d5-1dbf-487e-8e12-27cbfc81c841",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C47",
+      "claim": "Cell-free infection with EFV showed a monotonic decrease with IC50 = 2.9 nM and Hill coefficient of 2.1.",
+      "claim_type": "EXPLICIT",
+      "source": "Fit of the model to the cell-free data using wild type, EFV-sensitive HIV showed a monotonic decrease with IC50 = 2.9 nM and Hill coefficient of 2.1 (Figure 2C, black line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from fitting experimental data to a model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "1193376b-468a-49a0-8f41-e618b7c3cdaa",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C48",
+      "claim": "A peak in the number of live infected target cells was observed at 4 nM EFV in coculture infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a peak in the number of live infected target cells at 4 nM EFV (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from coculture infection with EFV.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "ce592d04-7aed-4d70-b881-035404cc4e12",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C49",
+      "claim": "Equation (3) best fit the behaviour of infection when r = 0.22 and q = 0.17, resulting in a peak at 4.8 nM EFV.",
+      "claim_type": "EXPLICIT",
+      "source": "Equation (3) best fit the behaviour of infection when r = 0.22 and q = 0.17, resulting in a peak at 4.8 nM EFV (Figure 2D, black line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from fitting experimental data to the mathematical model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "fe48519d-33bc-4ae1-a622-e1717c18d1aa",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C50",
+      "claim": "An infection optimum is present in the cell line infection system.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence an infection optimum is present in the cell line infection system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the experimental and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "f912168a-1c0d-417c-b3ff-0394c20db7fe",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C51",
+      "claim": "Measured r and q values were 0.28 \u00b1 0.08 and 0.15 \u00b1 0.07 (mean \u00b1standard deviation), respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Measured r and q values were 0.28 \u00b1 0.08 and 0.15 \u00b1 0.07 (mean \u00b1standard deviation), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental measurement of model parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "a7f9a422-4a00-40e3-909b-8f0e033eddf2",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C52",
+      "claim": "The solution to Equation (3) using measured r and q values showed similar behavior to the solution with the fitted values for wild-type HIV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The solution to Equation (3) using these values showed similar behavior to the solution with the fitted values for wild-type HIV infection, indicating that the fitted values gave a reasonable approximation of the behavior of the system (Figure 2D, dashed green line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of model predictions with different parameter values.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "0ea9eed1-22c5-40b4-889f-44bb2a49b6b1",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C53",
+      "claim": "Time-lapse microscopy showed deterioration in the number of live cells in the time-lapse culture starting at 1 day post-infection when no drug was added.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to investigate the dynamics of cell depletion due to cell-to-cell HIV spread and its modulation by the addition of an inhibitor, we performed time-lapse microscopy over a two day infection window. While infection parameters were different due to the constraints of visualizing cells (Materials and methods), the general trend from the data was deterioration in the number of live cells in the time-lapse culture starting at 1 day post-infection when no drug was added.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from time-lapse microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "ec4576e6-efdd-4be2-9241-e35954a97349",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C54",
+      "claim": "The deterioration in live cell numbers was averted by the addition of EFV in time-lapse microscopy experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The deterioration in live cell numbers was averted by the addition of EFV (Figure 2\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from time-lapse microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "5809b103-a6c7-42a2-bc35-96162665fbcc",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C55",
+      "claim": "The L100I mutant was obtained by culturing wild-type HIV in the reporter cell line in the presence of EFV.",
+      "claim_type": "EXPLICIT",
+      "source": "We next investigated whether an infection optimum occurs with EFV-resistant HIV. To derive the resistant mutant, we cultured wild-type HIV in our reporter cell line in the presence of EFV. We obtained the L100I partially resistant mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method to generate the mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "4a52ea26-4f80-4cbe-ad27-6ddeafa2942b",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C56",
+      "claim": "The L100I mutant was found to have an IC50 = 29 nM EFV and a Hill coefficient of 2.0.",
+      "claim_type": "EXPLICIT",
+      "source": "The L100I mutant was found to have an IC50 = 29 nM EFV and a Hill coefficient of 2.0 (Figure 3A, black line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from fitting experimental data to a model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "a6e301ee-8df0-4b15-ba68-d56b7b3fb10b",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C57",
+      "claim": "There was a peak in the number of live infected target cells for the L100I mutant infection at 40 nM EFV.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly to wild-type HIV coculture infection, there was a peak in the number of live infected target cells for the L100I mutant infection. However, the peak in live infected cells was shifted to 40 nM EFV (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from coculture infection with the L100I mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "38e7b94c-cbee-40f5-b078-d8e9a2517c84",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C58",
+      "claim": "Fits to Equation (3) for L100I mutant infection recapitulated the experimental results when r = 0.29 and q = 0.13, with a fitted peak at 45 nM EFV.",
+      "claim_type": "EXPLICIT",
+      "source": "Fits were obtained to Equation (3) using dmut values and \u03bb measured for wild-type infection. The fits recapitulated the experimental results when r = 0.29 and q = 0.13, with a fitted peak at 45 nM EFV (Figure 3B, black line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from fitting experimental data to the mathematical model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "27ee0f23-faec-4ba5-a6c1-9e62370f8da0",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C59",
+      "claim": "A peak in live infected cells was obtained at 5 ug/ml b12 antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to examine whether a peak in live infected targets can be obtained with an unrelated inhibitor, we used the HIV neutralizing antibody b12. This antibody is effective against cell-to-cell spread of HIV (Baxter et al., 2014; Reh et al., 2015). We obtained a peak in live infected cells at 5 ug/ml b12 (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding using b12 antibody.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "91e10922-03f1-44bf-9002-0a85c0fc4180",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C60",
+      "claim": "The b12 concentration that resulted in a peak number of live infected cells was the same for wild-type virus and the L100I mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "The b12 concentration that resulted in a peak number of live infected cells was the same for wild-type virus and the L100I mutant, showing that L100I mutant fitness gain was EFV specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding comparing wild-type and mutant responses to b12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "d951ef9b-8567-4c3d-ba3f-bbd306084c14",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C61",
+      "claim": "Cell-free infection in the face of b12 showed a sharp and monotonic drop in live infected cells for both wild type and mutant virus.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cell-free infection in the face of b12 showed a sharp and monotonic drop in live infected cells for both wild type and mutant virus (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from cell-free infection with b12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "26b5f8f0-25d5-4201-a50b-0c4c98c00bde",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C62",
+      "claim": "In each of the lymph nodes tested, a peak in live infected cells was observed at intermediate EFV concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "In each of the lymph nodes tested, we observed a peak in live infected cells at intermediate EFV concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from lymph node infection experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "2c3f3387-392d-4101-95a9-f30a2c846577",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C63",
+      "claim": "Lymph node cells from participant 205 showed a peak of live infected cells at 100 nM EFV.",
+      "claim_type": "EXPLICIT",
+      "source": "Lymph node cells from participant 205 showed a peak of live infected cells at 100 nM EFV (Figure 5A, first row).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from lymph node infection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "23ef1ef8-e842-437d-906c-50e10611775c",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C64",
+      "claim": "The infection optimum in the lymph node cells of study participant 257 was visible as a plateau between 50 and 200 nM EFV.",
+      "claim_type": "EXPLICIT",
+      "source": "The infection optimum in the lymph node cells of study participant 257 was visible as a plateau between 50 and 200 nM EFV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from lymph node infection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "d1096ee4-15e9-42a8-9fd3-35cb9774c564",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C65",
+      "claim": "In the presence of EFV, there was a decrease in the fraction of dead cells that was offset by a similar increase in the fraction of live infected cells for lymph nodes from all participants.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of EFV, there was a decrease in the fraction of dead cells that was offset by a similar increase in the fraction of live infected cells for lymph nodes from all participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from lymph node infection experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "6e09f4df-11c3-48ff-a209-be4a5055bf22",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C66",
+      "claim": "Cells from lymph node participant 251 showed an infection optimum at 50 nM EFV.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells from this lymph node showed an infection optimum at 50 nM EFV (Figure 5A, third row).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from lymph node infection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "5732abf2-cd59-4fab-8420-98e898e8d6e7",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C67",
+      "claim": "Multiple DNA copies were observed in EFV-untreated lymph node cells, and the number of copies decreased with EFV.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed multiple DNA copies in EFV-untreated lymph node cells. The number of copies decreased with EFV (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from lymph node infection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "02ed7e97-c668-4b5a-87cc-971107b7951e",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C68",
+      "claim": "The corrected numbers of HIV DNA copies were 21 with no drug, and five copies in the presence of EFV at the infection optimum in lymph node cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The corrected numbers were 21 HIV DNA copies with no drug, and five copies in the presence of EFV at the infection optimum (Figure 5C, see Figure 5\u2014figure supplement 2 for histograms of raw HIV DNA copy numbers per cell).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding after correction for detection sensitivity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "462b424b-8034-47eb-808c-b0553c1076da",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C69",
+      "claim": "The K103N mutant showed a monotonic decrease with IC50 = 26.0 nM and Hill coefficient of 1.5 in cell-free infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The fits showed a monotonic decrease with IC50 = 26.0 nM and Hill coefficient of 1.5 (Figure 6A, black line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from fitting experimental data to a model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "21781408-8808-4b01-916e-573d48d9e199",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C70",
+      "claim": "An infection optimum with EFV was observed in lymph node cells infected with the K103N mutant, with the peak in the number of live infected cells between 80 and 160 nM EFV.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed an infection optimum with EFV in lymph node cells. The peak in the number of live infected cells in the presence of drug was between 80 and 160 nM EFV (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from lymph node infection with K103N mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "d99aaf83-4c9c-4eef-a43c-e9bdfd9c49a3",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C71",
+      "claim": "Fits to Equation (3) for K103N mutant infection recapitulated the experimental results when r = 0.91 and q = 0.15, with a fitted peak at 90 nM EFV.",
+      "claim_type": "EXPLICIT",
+      "source": "The fits recapitulated the experimental results when r = 0.91 and q = 0.15, with a fitted peak at 90 nM EFV (Figure 6B, black line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from fitting experimental data to the mathematical model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "91256734-5f8e-4b96-8671-dff5342d67f7",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C72",
+      "claim": "No clear dependence on EFV in the absence of infection was detected in lymph node cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine if the observed peak in live cells may be due to EFV alone, we measured cell viability in lymph node cells from one of the study participants used in the above experiment as a function of EFV without infection. No clear dependence on EFV in the absence of infection was detected (Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental control to rule out EFV toxicity as the cause of the observed peak.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "0f5d8072-06b6-4de1-b872-cd04de6f9c18",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C73",
+      "claim": "The optimal virulence concept in ecology proposes that virulence needs to be balanced against host survival for optimal pathogen spread.",
+      "claim_type": "EXPLICIT",
+      "source": "The optimal virulence concept in ecology proposes that virulence needs to be balanced against host survival for optimal pathogen spread (Bonhoeffer et al., 1996; Bonhoeffer and Nowak, 1994; Gandon et al., 2001; Jensen et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concept from ecology supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "b379d555-905c-45ca-bef7-07508b3bf9fd",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C74",
+      "claim": "At the cellular level, optimal virulence implies that the number of successfully infected cells may increase when infection virulence is reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "At the cellular level, this implies that the number of successfully infected cells may increase when infection virulence is reduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the optimal virulence concept applied to cellular infection.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "d814decd-100d-4b8f-b139-7f652a259487",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C75",
+      "claim": "In the case where cells were infected by single infection attempts, inhibition always led to a decline in the number of live infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a model where cells are infected and die in a probabilistic way, we found that there were two possible outcomes of partially inhibiting infection. In the case where cells were infected by single infection attempts, inhibition always led to a decline in the number of live infected cells, since inhibition reduced the number of infections per cell from one to zero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "b2536366-5bbf-43bb-b3c9-3e5496f5a94b",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C76",
+      "claim": "In the case of multiple infection attempts per cell, the possibility existed that inhibition reduced the number of integrating HIV DNA copies, without extinguishing infection of the cell completely.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the case of multiple infection attempts per cell, the possibility existed that inhibition reduced the number of integrating HIV DNA copies, without extinguishing infection of the cell completely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "6d97745b-ffbf-4195-8fa5-e4b5398e29f8",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C77",
+      "claim": "If each HIV DNA copy increases the probability of cell death, reducing the number of HIV DNA copies without eliminating infection should lead to an increased probability of infected cell survival.",
+      "claim_type": "EXPLICIT",
+      "source": "If each HIV DNA copy increases the probability of cell death, reducing the number of HIV DNA copies without eliminating infection should lead to an increased probability of infected cell survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the model assumptions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "57a59224-cfa7-4d51-87fa-ff5a4a5006e3",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C78",
+      "claim": "The model as described by Equation (3) reproduced the essential behaviour of the experimental results.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model as described by Equation (3) reproduced the essential behaviour of the experimental results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the model's ability to fit experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "b5d2b753-267b-4d67-bd6a-9399477e045b",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C79",
+      "claim": "An equivalent model can be constructed assuming a dependence of cell death on infection.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as shown in the Appendix 1, an equivalent model can be constructed assuming a dependence of cell death on infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about an alternative mathematical model formulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "80c8aae1-0c49-4dfa-b4f5-eabc56acf804",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C80",
+      "claim": "Neither model accurately captures infection dynamics at high-drug concentrations, away from the infection optimum.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither model accurately captures infection dynamics at high-drug concentrations, away from the infection optimum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation of the models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "e5300870-aaf2-4ad8-9552-b7e572ed22d9",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C81",
+      "claim": "An infection optimum in the face of an antiretroviral drug may be important in HIV infection of lymph node cells and may be less pronounced in cells from peripheral blood.",
+      "claim_type": "EXPLICIT",
+      "source": "Physiologically, an infection optimum in the face of an antiretroviral drug may be important in HIV infection of lymph node cells and may be less pronounced in cells from peripheral blood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from comparing lymph node and PBMC infection results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "d32a9f32-0e75-452f-9c94-2acc7dcc663b",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C82",
+      "claim": "The infection optimum should occur with other classes of antiretroviral drugs, since all drugs should decrease the multiplicity of infection between cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the infection optimum we describe should occur with other classes of antiretroviral drugs, since all drugs should decrease the multiplicity of infection between cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a generalization of the findings to other drug classes.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "f0411795-a0b2-41ba-9258-99e33b1fb268",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C83",
+      "claim": "The more complex outcome of partial inhibition of infection should also be considered in other infections where multiple pathogens infect one cell and host cell death is a possible outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "The more complex outcome of partial inhibition of infection should also be considered in other infections where multiple pathogens infect one cell and host cell death is a possible outcome (Mahamed et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a generalization of the findings to other infections, supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "dd506795-490d-46cb-92a8-51c8f1f4a749",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C84",
+      "claim": "These observations reinforce previous results showing that successful completion of reverse transcription leads to cellular cytotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations reinforce previous results showing that successful completion of reverse transcription leads to cellular cytotoxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion that connects the current findings to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "9d57ba2b-b1ee-4f93-83df-a3ead74c72cc",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C85",
+      "claim": "The experiments presented reflect the effect of partial inhibition on productive infection of HIV target cells, which mostly consist of activated T-cell subsets, not resting T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The experiments presented here reflect the effect of partial inhibition on productive infection of HIV target cells, which mostly consist of activated T-cell subsets, not resting T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a clarification about the cell types studied in the experiments.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "58d0b137-693c-4ad1-9ae6-309692b212e9",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C86",
+      "claim": "This study may have implications for the establishment of viral reservoirs in the context of poorly controlled infections, infections with some degree of drug resistance, or infections where some replication may take place in the face of ART.",
+      "claim_type": "EXPLICIT",
+      "source": "This study may have implications for the establishment of viral reservoirs in the context of poorly controlled infections, infections with some degree of drug resistance, or infections where some replication may take place in the face of ART, since infected cell survival is a pre-requisite for long-term persistence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the clinical implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "428333d0-bdb3-4c92-84b7-dc5f021e6091",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C87",
+      "claim": "The clinical implications of an infection optimum in the presence of EFV with EFV-sensitive HIV strains are likely to be negligible, since the drug concentrations at which the infection optimum occurs are extremely low.",
+      "claim_type": "EXPLICIT",
+      "source": "The clinical implications of an infection optimum in the presence of EFV with EFV-sensitive HIV strains are likely to be negligible, since the drug concentrations at which the infection optimum occurs are extremely low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the clinical significance of the findings for EFV-sensitive HIV.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "70e48365-5e40-431f-9d26-91ee51940b14",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C88",
+      "claim": "For EFV-resistant HIV, the infection optimum shifts to the range of EFV concentrations observed in lymph nodes (~100 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "However, for EFV-resistant HIV, the infection optimum shifts to the range of EFV concentrations observed in lymph nodes (~100 nM) (Fletcher et al., 2014b), and can be expected to shift to even higher EFV concentrations with more resistant mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the experimental findings with resistant mutants, supported by a citation about EFV concentrations in lymph nodes.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "2452629f-4e92-4626-9396-ee8172f4e5fe",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C89",
+      "claim": "EFV has a longer half-life than the other antiretroviral drugs co-formulated with it.",
+      "claim_type": "EXPLICIT",
+      "source": "As EFV has a longer half-life than the other antiretroviral drugs co-formulated with it, it may be the only agent present in partially adherent individuals for substantial periods of time (Taylor et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a pharmacological fact supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "512855cc-42bf-41b6-977d-bf06f05b4633",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C90",
+      "claim": "Partial inhibition of HIV infection with EFV may provide a surprising advantage to EFV resistant mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, partial inhibition of HIV infection with EFV may provide a surprising advantage to EFV resistant mutants, and may allow individuals failing therapy to better transmit drug resistant strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the clinical implications of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "59cb97a7-c5e7-491c-9e4d-4ca60a858923",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C91",
+      "claim": "Partial inhibition of HIV infection with EFV may allow individuals failing therapy to better transmit drug resistant strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, partial inhibition of HIV infection with EFV may provide a surprising advantage to EFV resistant mutants, and may allow individuals failing therapy to better transmit drug resistant strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the clinical implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "64bc8162-3c53-4897-bcdc-7b2da144687d",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C92",
+      "claim": "ACH-2 cells contain a single inactive HIV integration per genome.",
+      "claim_type": "EXPLICIT",
+      "source": "We first measured the number of viral DNA copies in ACH-2 cells, reported to contain a single inactive HIV integration per genome (Chun et al., 1997; O'Doherty et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known characteristic of ACH-2 cells supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "0ee29022-1066-4220-a115-54f233f09168",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C93",
+      "claim": "The range of HIV DNA copies per cell in coculture infection fit a Poisson distribution with two means better than either a single mean Gaussian or Poisson distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The range of HIV DNA copies per cell fit a Poisson distribution with two means better than either a single mean Gaussian or Poisson distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "28780ff7-2d36-4f38-b563-941b24aa02a0",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C94",
+      "claim": "The fit of the two mean Poisson distribution did not show two obvious peaks, and instead seemed to fit the data better due to the addition of fit parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the fit of the two mean Poisson distribution did not show two obvious peaks, and instead seemed to fit the data better due to the addition of fit parameters (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the statistical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "90ac8618-713a-4cf7-b40e-d498c4922743",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C95",
+      "claim": "We cannot conclude that the distribution of HIV DNA copies per cell is bimodal.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence we cannot conclude that the distribution is bimodal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the statistical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "783784f7-ede6-4863-b9a4-12d9e030934f",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C96",
+      "claim": "The L100I mutant does not often occur in the absence of other drug resistance mutations according to the Stanford HIV Drug Resistance Database.",
+      "claim_type": "EXPLICIT",
+      "source": "Since L100I does not often occur in the absence of other drug resistance mutations according to the Stanford HIV Drug Resistance Database (Rhee et al., 2003), we repeated the experiment with the K103N mutant, a frequently observed mutation in virologic failure with a higher level of resistance to EFV relative to the L100I mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is information from a database supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "9d20c267-a286-4618-9a57-b8467ee4d93a",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "claim_id": "C97",
+      "claim": "K103N is a frequently observed mutation in virologic failure with a higher level of resistance to EFV relative to the L100I mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Since L100I does not often occur in the absence of other drug resistance mutations according to the Stanford HIV Drug Resistance Database (Rhee et al., 2003), we repeated the experiment with the K103N mutant, a frequently observed mutation in virologic failure with a higher level of resistance to EFV relative to the L100I mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is information about the K103N mutant supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9cc4f0a0-72b6-4367-a49f-f464a741afd8",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A mathematical model predicts that partial inhibition of HIV infection can lead to an infection optimum\u2014a peak in live infected cells at intermediate drug concentrations\u2014when multiple infection attempts per cell occur and each attempt increases the probability of cell death. The model shows this optimum depends on parameter values r (probability of infection per attempt) and q (probability of death per attempt), with the peak shifting to higher drug concentrations as q increases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C34-C39, and C75-C77 collectively establish the mathematical framework and predictions. The model is internally consistent and logically derives the conditions under which an infection optimum occurs. The mathematical derivations appear sound, and the model makes testable predictions that are subsequently evaluated experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "849e28e3-54e8-4f0b-8295-f4c2d1ecc660",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ACH-2 cells, which contain a single HIV integration per genome, showed HIV DNA detection in approximately one quarter of cells when assayed by single-cell PCR, establishing the detection efficiency of the assay at ~23%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 and C92 describe the calibration experiment using ACH-2 cells. The detection of ~25% of cells with known single integrations provides a reasonable estimate of assay sensitivity. This is a critical control for interpreting subsequent HIV DNA copy number measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "28d4e6bd-8acd-4a25-b38a-bcd16838c4c7",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Coculture infection resulted in a wide distribution of HIV DNA copies per cell (0-9 raw copies, mean ~15 copies after correction), while cell-free infection resulted in zero or one copy per cell. The distribution in coculture infection could not be conclusively determined to be bimodal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 and C93-C95 describe experimental measurements of HIV DNA copies per cell. The contrast between coculture (multiple copies) and cell-free (single copy) infection is clear and well-documented. The statistical analysis appropriately acknowledges uncertainty about bimodality. The correction for detection efficiency is reasonable given the ACH-2 calibration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "1a119f09-9628-4646-a1f1-7577a5e4c02e",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In cell line coculture infection with wild-type HIV, a peak in live infected cells was observed at 4 nM EFV. The mathematical model (Equation 3) fit the data with r=0.22 and q=0.17, and independently measured values (r=0.28\u00b10.08, q=0.15\u00b10.07) showed similar behavior, confirming an infection optimum in the cell line system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C52 demonstrate the infection optimum experimentally in cell lines and validate the model. The fitted parameters are close to independently measured values, providing strong support. The experimental design appropriately distinguishes cell-free from coculture infection and uses proper controls (CTFR staining, mCherry marking).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "7dd5b6e2-a20f-49c1-91e0-e815bb383bb0",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Time-lapse microscopy showed deterioration in live cell numbers starting at 1 day post-infection without drug, which was averted by addition of EFV.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 provide dynamic evidence supporting the model's predictions about cell death and its prevention by partial inhibition. The time-lapse data directly visualizes the protective effect of EFV on cell survival during infection, though the authors note infection parameters differed due to imaging constraints.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "23a09093-fbb3-4808-a2b6-e4d2a6acc4c9",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The L100I EFV-resistant mutant showed an infection optimum shifted to 40 nM EFV (compared to 4 nM for wild-type), with IC50=29 nM. Model fits yielded r=0.29 and q=0.13, consistent with the shift in the infection optimum to higher drug concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 demonstrate that the infection optimum shifts with drug resistance, as predicted by the model. The ~10-fold shift in both IC50 and the infection optimum peak is internally consistent. This provides strong evidence that the phenomenon is related to drug inhibition strength rather than non-specific effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "07f841d3-ba7d-43a4-9aac-23a1e7b02269",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The neutralizing antibody b12 produced a peak in live infected cells at 5 \u03bcg/ml for both wild-type and L100I mutant virus in coculture infection, but showed monotonic decline in cell-free infection, demonstrating the infection optimum occurs with an unrelated inhibitor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 extend the findings to a different class of inhibitor (antibody vs. small molecule), strengthening the generalizability of the results. The identical peak concentration for wild-type and L100I mutant with b12 confirms the L100I resistance is EFV-specific. The contrast with cell-free infection reinforces that multiple infections per cell are required.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "ee6cbd09-f314-4f8a-8e7b-2261c05ad30c",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In primary human lymph node cells infected with the L100I mutant, peaks in live infected cells were observed at intermediate EFV concentrations (50-100 nM) across three participants. HIV DNA copies decreased from 21 without drug to 5 at the infection optimum, while the fraction of live infected cells increased.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C68 demonstrate the infection optimum in physiologically relevant primary cells from lymph nodes. The consistency across three participants strengthens the finding. The decrease in HIV DNA copies with increased live infected cells directly supports the model's predictions. The EFV concentrations at the optimum (~50-100 nM) are clinically relevant for lymph nodes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "afd9f1a0-b34b-4b79-8608-54aa49434b0a",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The K103N mutant, a clinically relevant EFV-resistant mutation, showed an infection optimum in lymph node cells at 80-160 nM EFV (IC50=26 nM). Model fits yielded r=0.91 and q=0.15. EFV alone without infection did not affect cell viability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C72 replicate the lymph node findings with a more clinically relevant resistant mutant. The control experiment (C72) rules out direct EFV toxicity as an explanation. However, the fitted r value (0.91) is much higher than measured in cell lines, and the authors acknowledge they could not constrain this parameter in lymph node experiments, introducing some uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "5584187a-8e1a-4d6d-84ca-211d6fd961b2",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The mathematical model (Equation 3) reproduced experimental results, and an equivalent model assuming death depends on infection can be constructed. However, neither model accurately captures infection dynamics at high drug concentrations away from the infection optimum.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80 provide an honest assessment of model performance and limitations. The acknowledgment that the model fails at high drug concentrations is important and appropriately transparent. The equivalence of models with different assumptions about death-infection dependence is noted but not fully explored.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "13f420a4-3f51-4178-9c97-eb524f3ad38c",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Partial inhibition of HIV infection with EFV or neutralizing antibody increased the number of live infected cells in both cell lines and lymph node cells, representing the first experimental demonstration of this phenomenon at the cellular level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7 and C32-C33 summarize the main experimental findings. The results are consistently demonstrated across multiple systems (cell lines, lymph nodes), inhibitors (EFV, b12), and viral strains (wild-type, L100I, K103N). The novelty claim (C33) appears justified given the comprehensive experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "9b56d4be-e49e-41b1-8329-2f4649fd351b",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The infection optimum may be more important in lymph node cells than peripheral blood cells, should occur with other antiretroviral drug classes, and may be relevant to other infections with multiple pathogens per cell and cell death as an outcome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C81-C83 are speculative extrapolations. C81 is supported by limited PBMC data showing minimal peaks, but only three donors were tested. C82 is a reasonable inference but lacks experimental validation. C83 is highly speculative with only one supporting citation. These represent hypotheses for future work rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "5f993022-45de-4bd0-ab8f-ba2a15368828",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The clinical implications may be significant for EFV-resistant HIV, where the infection optimum shifts to physiologically relevant lymph node EFV concentrations (~100 nM), potentially providing an advantage to resistant mutants in partially adherent individuals and facilitating transmission of drug-resistant strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86-C91 discuss clinical implications but are largely speculative. While the EFV concentrations at the optimum for resistant mutants do overlap with reported lymph node concentrations (C88, supported by citation), the actual clinical impact on reservoir establishment (C86), transmission (C91), and treatment failure (C90) remains hypothetical. These are important considerations but require clinical validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "ebe147e8-6f2c-4524-8123-17f12c9153ab",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on HIV cytotoxicity, T-cell depletion in lymph nodes, mechanisms of HIV-induced cell death, conditions favoring cell-to-cell spread in lymph nodes, multiple infections per cell, and the optimal virulence concept from ecology, establishing the biological context for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C31, C73-C74, C84-C85 summarize prior knowledge and provide context. These are well-supported by citations to the literature. The background appropriately motivates the study and connects it to established concepts in virology and evolutionary ecology. C84 appropriately connects current findings to prior work on reverse transcription and cytotoxicity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    },
+    {
+      "id": "2b9154fe-8280-4602-8741-7c0d16d9cb2a",
+      "content_id": "a618ebf3-0ac5-49b9-badd-bff5a109f247",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The L100I mutant rarely occurs alone according to the Stanford HIV Drug Resistance Database, while K103N is frequently observed in virologic failure with higher EFV resistance than L100I.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C97 provide appropriate context for the choice of resistant mutants studied. These are factual statements about drug resistance patterns supported by database citations, justifying the use of K103N as a more clinically relevant mutant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:52:17.597974Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7f219c6a-84b2-4948-b3bb-0661b10acde7",
+      "result_id": "9cc4f0a0-72b6-4367-a49f-f464a741afd8"
+    },
+    {
+      "claim_id": "c3604791-db3f-47b2-93cd-467efc7db3eb",
+      "result_id": "9cc4f0a0-72b6-4367-a49f-f464a741afd8"
+    },
+    {
+      "claim_id": "64cf0868-f4a2-44b6-b1df-bf57b985881c",
+      "result_id": "9cc4f0a0-72b6-4367-a49f-f464a741afd8"
+    },
+    {
+      "claim_id": "ac6cadf1-151f-4ebe-95d5-e938bad9ddef",
+      "result_id": "9cc4f0a0-72b6-4367-a49f-f464a741afd8"
+    },
+    {
+      "claim_id": "531937d5-ed48-42e1-ba43-85f1adcdc7a7",
+      "result_id": "9cc4f0a0-72b6-4367-a49f-f464a741afd8"
+    },
+    {
+      "claim_id": "5823a63a-a02c-4d5c-bf65-d3e34b06a8f5",
+      "result_id": "9cc4f0a0-72b6-4367-a49f-f464a741afd8"
+    },
+    {
+      "claim_id": "81ba72ea-3ab2-4058-b186-ce6f372a7848",
+      "result_id": "9cc4f0a0-72b6-4367-a49f-f464a741afd8"
+    },
+    {
+      "claim_id": "d916bf28-86d9-441e-823f-96711d0faaae",
+      "result_id": "9cc4f0a0-72b6-4367-a49f-f464a741afd8"
+    },
+    {
+      "claim_id": "d814decd-100d-4b8f-b139-7f652a259487",
+      "result_id": "9cc4f0a0-72b6-4367-a49f-f464a741afd8"
+    },
+    {
+      "claim_id": "b2536366-5bbf-43bb-b3c9-3e5496f5a94b",
+      "result_id": "9cc4f0a0-72b6-4367-a49f-f464a741afd8"
+    },
+    {
+      "claim_id": "6d97745b-ffbf-4195-8fa5-e4b5398e29f8",
+      "result_id": "9cc4f0a0-72b6-4367-a49f-f464a741afd8"
+    },
+    {
+      "claim_id": "8307f157-e6f4-433b-88f9-c6a16ea90687",
+      "result_id": "849e28e3-54e8-4f0b-8295-f4c2d1ecc660"
+    },
+    {
+      "claim_id": "1039c6b6-7ed3-4182-8953-6709ce9d41b0",
+      "result_id": "849e28e3-54e8-4f0b-8295-f4c2d1ecc660"
+    },
+    {
+      "claim_id": "af959bc0-8185-458e-9872-b42a49f46cab",
+      "result_id": "849e28e3-54e8-4f0b-8295-f4c2d1ecc660"
+    },
+    {
+      "claim_id": "64bc8162-3c53-4897-bcdc-7b2da144687d",
+      "result_id": "849e28e3-54e8-4f0b-8295-f4c2d1ecc660"
+    },
+    {
+      "claim_id": "755daf53-1d45-4019-bc24-29c515d02d50",
+      "result_id": "28d4e6bd-8acd-4a25-b38a-bcd16838c4c7"
+    },
+    {
+      "claim_id": "bf4ef591-3988-4a81-8ff4-57d652c9e465",
+      "result_id": "28d4e6bd-8acd-4a25-b38a-bcd16838c4c7"
+    },
+    {
+      "claim_id": "dd7d78ad-2672-4036-acfc-4da1ce557f02",
+      "result_id": "28d4e6bd-8acd-4a25-b38a-bcd16838c4c7"
+    },
+    {
+      "claim_id": "3b60fd4f-ccea-469a-a7de-a71fec52d6a9",
+      "result_id": "28d4e6bd-8acd-4a25-b38a-bcd16838c4c7"
+    },
+    {
+      "claim_id": "0ee29022-1066-4220-a115-54f233f09168",
+      "result_id": "28d4e6bd-8acd-4a25-b38a-bcd16838c4c7"
+    },
+    {
+      "claim_id": "28780ff7-2d36-4f38-b563-941b24aa02a0",
+      "result_id": "28d4e6bd-8acd-4a25-b38a-bcd16838c4c7"
+    },
+    {
+      "claim_id": "90ac8618-713a-4cf7-b40e-d498c4922743",
+      "result_id": "28d4e6bd-8acd-4a25-b38a-bcd16838c4c7"
+    },
+    {
+      "claim_id": "1fefe6d5-1dbf-487e-8e12-27cbfc81c841",
+      "result_id": "1a119f09-9628-4646-a1f1-7577a5e4c02e"
+    },
+    {
+      "claim_id": "1193376b-468a-49a0-8f41-e618b7c3cdaa",
+      "result_id": "1a119f09-9628-4646-a1f1-7577a5e4c02e"
+    },
+    {
+      "claim_id": "ce592d04-7aed-4d70-b881-035404cc4e12",
+      "result_id": "1a119f09-9628-4646-a1f1-7577a5e4c02e"
+    },
+    {
+      "claim_id": "fe48519d-33bc-4ae1-a622-e1717c18d1aa",
+      "result_id": "1a119f09-9628-4646-a1f1-7577a5e4c02e"
+    },
+    {
+      "claim_id": "f912168a-1c0d-417c-b3ff-0394c20db7fe",
+      "result_id": "1a119f09-9628-4646-a1f1-7577a5e4c02e"
+    },
+    {
+      "claim_id": "a7f9a422-4a00-40e3-909b-8f0e033eddf2",
+      "result_id": "1a119f09-9628-4646-a1f1-7577a5e4c02e"
+    },
+    {
+      "claim_id": "0ea9eed1-22c5-40b4-889f-44bb2a49b6b1",
+      "result_id": "7dd5b6e2-a20f-49c1-91e0-e815bb383bb0"
+    },
+    {
+      "claim_id": "ec4576e6-efdd-4be2-9241-e35954a97349",
+      "result_id": "7dd5b6e2-a20f-49c1-91e0-e815bb383bb0"
+    },
+    {
+      "claim_id": "5809b103-a6c7-42a2-bc35-96162665fbcc",
+      "result_id": "23a09093-fbb3-4808-a2b6-e4d2a6acc4c9"
+    },
+    {
+      "claim_id": "4a52ea26-4f80-4cbe-ad27-6ddeafa2942b",
+      "result_id": "23a09093-fbb3-4808-a2b6-e4d2a6acc4c9"
+    },
+    {
+      "claim_id": "a6e301ee-8df0-4b15-ba68-d56b7b3fb10b",
+      "result_id": "23a09093-fbb3-4808-a2b6-e4d2a6acc4c9"
+    },
+    {
+      "claim_id": "38e7b94c-cbee-40f5-b078-d8e9a2517c84",
+      "result_id": "23a09093-fbb3-4808-a2b6-e4d2a6acc4c9"
+    },
+    {
+      "claim_id": "27ee0f23-faec-4ba5-a6c1-9e62370f8da0",
+      "result_id": "07f841d3-ba7d-43a4-9aac-23a1e7b02269"
+    },
+    {
+      "claim_id": "91e10922-03f1-44bf-9002-0a85c0fc4180",
+      "result_id": "07f841d3-ba7d-43a4-9aac-23a1e7b02269"
+    },
+    {
+      "claim_id": "d951ef9b-8567-4c3d-ba3f-bbd306084c14",
+      "result_id": "07f841d3-ba7d-43a4-9aac-23a1e7b02269"
+    },
+    {
+      "claim_id": "26b5f8f0-25d5-4201-a50b-0c4c98c00bde",
+      "result_id": "ee6cbd09-f314-4f8a-8e7b-2261c05ad30c"
+    },
+    {
+      "claim_id": "2c3f3387-392d-4101-95a9-f30a2c846577",
+      "result_id": "ee6cbd09-f314-4f8a-8e7b-2261c05ad30c"
+    },
+    {
+      "claim_id": "23ef1ef8-e842-437d-906c-50e10611775c",
+      "result_id": "ee6cbd09-f314-4f8a-8e7b-2261c05ad30c"
+    },
+    {
+      "claim_id": "d1096ee4-15e9-42a8-9fd3-35cb9774c564",
+      "result_id": "ee6cbd09-f314-4f8a-8e7b-2261c05ad30c"
+    },
+    {
+      "claim_id": "6e09f4df-11c3-48ff-a209-be4a5055bf22",
+      "result_id": "ee6cbd09-f314-4f8a-8e7b-2261c05ad30c"
+    },
+    {
+      "claim_id": "5732abf2-cd59-4fab-8420-98e898e8d6e7",
+      "result_id": "ee6cbd09-f314-4f8a-8e7b-2261c05ad30c"
+    },
+    {
+      "claim_id": "02ed7e97-c668-4b5a-87cc-971107b7951e",
+      "result_id": "ee6cbd09-f314-4f8a-8e7b-2261c05ad30c"
+    },
+    {
+      "claim_id": "462b424b-8034-47eb-808c-b0553c1076da",
+      "result_id": "afd9f1a0-b34b-4b79-8608-54aa49434b0a"
+    },
+    {
+      "claim_id": "21781408-8808-4b01-916e-573d48d9e199",
+      "result_id": "afd9f1a0-b34b-4b79-8608-54aa49434b0a"
+    },
+    {
+      "claim_id": "d99aaf83-4c9c-4eef-a43c-e9bdfd9c49a3",
+      "result_id": "afd9f1a0-b34b-4b79-8608-54aa49434b0a"
+    },
+    {
+      "claim_id": "91256734-5f8e-4b96-8671-dff5342d67f7",
+      "result_id": "afd9f1a0-b34b-4b79-8608-54aa49434b0a"
+    },
+    {
+      "claim_id": "57a59224-cfa7-4d51-87fa-ff5a4a5006e3",
+      "result_id": "5584187a-8e1a-4d6d-84ca-211d6fd961b2"
+    },
+    {
+      "claim_id": "b5d2b753-267b-4d67-bd6a-9399477e045b",
+      "result_id": "5584187a-8e1a-4d6d-84ca-211d6fd961b2"
+    },
+    {
+      "claim_id": "80c8aae1-0c49-4dfa-b4f5-eabc56acf804",
+      "result_id": "5584187a-8e1a-4d6d-84ca-211d6fd961b2"
+    },
+    {
+      "claim_id": "be89aad5-78f3-44cf-b80f-bef3591f0804",
+      "result_id": "13f420a4-3f51-4178-9c97-eb524f3ad38c"
+    },
+    {
+      "claim_id": "ee04b0c9-fa4b-41b5-9c22-aad8b1c30999",
+      "result_id": "13f420a4-3f51-4178-9c97-eb524f3ad38c"
+    },
+    {
+      "claim_id": "2b504c56-d7a7-42b9-872e-0eddfe611759",
+      "result_id": "13f420a4-3f51-4178-9c97-eb524f3ad38c"
+    },
+    {
+      "claim_id": "937b93e5-9cd6-448f-b3f4-96ea4e49567f",
+      "result_id": "13f420a4-3f51-4178-9c97-eb524f3ad38c"
+    },
+    {
+      "claim_id": "04a4ad38-64f5-4438-9074-4f72cc1e8983",
+      "result_id": "13f420a4-3f51-4178-9c97-eb524f3ad38c"
+    },
+    {
+      "claim_id": "cddef143-455d-41a7-907d-1efec6381b69",
+      "result_id": "13f420a4-3f51-4178-9c97-eb524f3ad38c"
+    },
+    {
+      "claim_id": "e5300870-aaf2-4ad8-9552-b7e572ed22d9",
+      "result_id": "9b56d4be-e49e-41b1-8329-2f4649fd351b"
+    },
+    {
+      "claim_id": "d32a9f32-0e75-452f-9c94-2acc7dcc663b",
+      "result_id": "9b56d4be-e49e-41b1-8329-2f4649fd351b"
+    },
+    {
+      "claim_id": "f0411795-a0b2-41ba-9258-99e33b1fb268",
+      "result_id": "9b56d4be-e49e-41b1-8329-2f4649fd351b"
+    },
+    {
+      "claim_id": "58d0b137-693c-4ad1-9ae6-309692b212e9",
+      "result_id": "5f993022-45de-4bd0-ab8f-ba2a15368828"
+    },
+    {
+      "claim_id": "428333d0-bdb3-4c92-84b7-dc5f021e6091",
+      "result_id": "5f993022-45de-4bd0-ab8f-ba2a15368828"
+    },
+    {
+      "claim_id": "70e48365-5e40-431f-9d26-91ee51940b14",
+      "result_id": "5f993022-45de-4bd0-ab8f-ba2a15368828"
+    },
+    {
+      "claim_id": "2452629f-4e92-4626-9396-ee8172f4e5fe",
+      "result_id": "5f993022-45de-4bd0-ab8f-ba2a15368828"
+    },
+    {
+      "claim_id": "512855cc-42bf-41b6-977d-bf06f05b4633",
+      "result_id": "5f993022-45de-4bd0-ab8f-ba2a15368828"
+    },
+    {
+      "claim_id": "59cb97a7-c5e7-491c-9e4d-4ca60a858923",
+      "result_id": "5f993022-45de-4bd0-ab8f-ba2a15368828"
+    },
+    {
+      "claim_id": "ef5d2c25-13a3-40bc-bf82-f2306a7c0a93",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "a48685ff-da76-417e-9e0b-ebcb40d6b2dc",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "49da31dd-05ab-4c52-b854-fc8164718b9c",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "f9d69377-6546-4663-9c81-53e1a570ba35",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "d16b84f5-3383-4aae-a827-3c90bb24e5a9",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "31bab968-392c-4217-b760-9ddec7c51367",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "fb88cbc6-3cff-4b16-abae-1365dc99bee3",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "6e0a05c9-345a-43d5-aefe-efe28321b8da",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "5c8dc5ff-b5bf-47a2-9097-6c4585ec7288",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "79838689-b4e1-4f03-a4c0-11243f9df9e1",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "fa9df4ca-ecd9-47d6-ad93-8d68d08ebb97",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "835d1a3f-c4b6-4cb1-b887-05a38bc1231e",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "6dcf1c0e-f152-4551-b080-6e95d124c69c",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "2d877070-9b5f-4d85-8375-5e7f1d592ace",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "f7f97cc9-803c-4a9c-88c4-353162278935",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "e29c6f20-d6f4-4efb-a52e-2628aff2521a",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "e26cf422-c4be-44bf-a802-e59142b2656e",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "9ed84381-9093-4587-91b9-89c3ca456502",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "caf1a2d3-6576-47d1-a6d2-991a1cf5ea18",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "d87b7251-9b1a-4e1b-833d-23f6c72dbf4c",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "1644f418-d150-444a-a6e4-6137a89f4582",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "6b6bee6f-2907-430c-b165-320caa3abb0c",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "ab3b9fa0-46cf-4e76-95a7-4f2e7c588630",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "6b19ab47-6af3-4268-b14c-3b92a0f8e8b5",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "0f5d8072-06b6-4de1-b872-cd04de6f9c18",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "b379d555-905c-45ca-bef7-07508b3bf9fd",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "dd506795-490d-46cb-92a8-51c8f1f4a749",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "9d57ba2b-b1ee-4f93-83df-a3ead74c72cc",
+      "result_id": "ebe147e8-6f2c-4524-8123-17f12c9153ab"
+    },
+    {
+      "claim_id": "783784f7-ede6-4863-b9a4-12d9e030934f",
+      "result_id": "2b9154fe-8280-4602-8741-7c0d16d9cb2a"
+    },
+    {
+      "claim_id": "9d20c267-a286-4618-9a57-b8467ee4d93a",
+      "result_id": "2b9154fe-8280-4602-8741-7c0d16d9cb2a"
+    }
+  ],
+  "comparisons": []
+}

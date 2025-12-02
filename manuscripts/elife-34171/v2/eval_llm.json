@@ -1,0 +1,463 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The authors demonstrate computationally that firing sequences bias synaptic transmissions to the opposite direction of propagation under symmetric STDP when modulated by short-term synaptic depression (STP). In rate neuron models, standard Hebbian plasticity without STP modulation potentiated synaptic weights symmetrically, but when modulated by STP, the same firing sequence selectively potentiated reverse synaptic pathways. This occurs because neurotransmitter depletion in the tail of the activity packet makes presynaptic outputs effective only at the head, creating spatial asymmetry that selectively potentiates connections from 'future' to 'past' in the firing sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 provide converging computational evidence from rate neuron simulations (Figure 1) showing that STP modulation creates directional bias in synaptic weight changes. The mechanistic explanation is clearly demonstrated through the spatial asymmetry of neurotransmitter release during sequence propagation. The finding is novel (C31) and represents a core computational discovery of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The authors show that accumulation of afterdepolarization (ADP) in postsynaptic neurons produces the same directional bias effect as STP modulation. This alternative mechanism depends on ADP accumulation over multiple postsynaptic spikes, analogous to how afterhyperpolarization modulates STDP in visual cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 is directly supported by Figure 1\u2014figure supplement 1 (C32), which demonstrates similar asymmetric potentiation through ADP accumulation. The hypothesis (C34) is based on established findings in visual cortex (C33), providing a plausible alternative mechanism. This represents an important extension showing the effect is not unique to STP modulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "In spiking neuron networks with symmetric STDP, STP modulation biased weight changes toward the reverse direction and enabled selective reverse sequence propagation. This effect was robust across different synaptic time constants, while asymmetric STDP (with or without STP modulation) strengthened forward sequence propagation as expected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are supported by simulations in Figure 2 and supplements showing that the reverse bias effect generalizes from rate neurons to biologically realistic spiking neurons. The robustness to synaptic parameters (C36) and the control showing asymmetric STDP behaves as expected (C37-C38) strengthen confidence in the specificity of the symmetric STDP + STP mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Using Poisson spike trains with varying parameters, the authors found significant biases toward the reverse direction across broad simulation conditions. The bias was statistically significant with as few as 2 spikes per neuron in some conditions and became prominent with increasing spike numbers. The magnitude of bias correlated with faster spike propagation, while the probability of bias (P(bias>0)) correlated with smaller mean ISI but not propagation speed. The bias was most prominent for bursts with intraburst ISIs <20 ms, which are observed in CA3 in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 are supported by systematic parameter exploration shown in Figure 3D and Table 1 with appropriate statistical tests (Wilcoxon signed rank test, binomial test, p<0.01). The connection to biological bursting (C46-C47) is supported by citations to experimental and modeling studies. This comprehensive parameter analysis strengthens the biological plausibility of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C51"
+    ],
+    "result": "Both mean bias and probability of positive bias clearly depend on the initial release probability of neurotransmitters. The bias toward the reverse direction occurred robustly for sufficiently high intraburst firing frequency and sufficiently high release probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C51 are supported by Figure 4 and Table 1 showing systematic variation of STP parameters. The correlation analysis demonstrates clear dependence on release probability, establishing this as a critical parameter for the mechanism. This identifies a key biological constraint and potential regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Asymmetric STDP was not effective in potentiating reversed synaptic transmissions even with STP modulation. With all-to-all spike coupling, asymmetric STDP never generated reverse bias for any STP parameters tested. However, with nearest-neighbor spike coupling, asymmetric STDP generated statistically significant reverse biases in some parameter regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by systematic simulations in Figure 4\u2014figure supplement 1. The negative result for all-to-all coupling (C53) and limited positive result for nearest-neighbor coupling (C54) are important controls demonstrating the specificity of the symmetric STDP mechanism. However, the authors appropriately note they cannot completely exclude asymmetric STDP under specific conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "During simulated run periods with theta-modulated place cell activity, weight biases primarily depended on coarse-grained firing rates rather than theta phase selectivity. The experimentally observed mean peak firing rate of 13 Hz was insufficient to induce significant bias, but bias became significant when summing inputs from 10 overlapping place cells or for the small fraction of place cells with extremely high firing rates (>30 Hz). The bias effect was weaker during run than replay because of lower mean firing rates and ineffective theta phase-locking with broad symmetric STDP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C66 are supported by systematic simulations in Figure 5 and Table 2 using biologically realistic parameters from experimental studies (C56-C58). The finding that phase selectivity has minimal effect with broad STDP windows (C59-C61) but emerges with narrow windows (C60) is well-demonstrated. The identification of conditions where bias becomes significant (C63, C65) provides important biological context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Enhanced firing propagation by STP and relatively slow long-term plasticity are necessary to create strongly biased forward synaptic pathways through reverse replay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by simulations in Figure 6 comparing three conditions with different time constants and STP strengths. The systematic manipulation demonstrates that both factors are required for strong forward bias accumulation through reverse replay, establishing key mechanistic requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "In W-maze simulations, the network generated reverse replay at reward locations (D1, D2) and forward replay at the start (A) after a few traversals. Forward replay selectively traveled toward the rewarded position D2 in trial 5 and later. Notably, firing sequences from the non-rewarded position D1 propagated to the rewarded position D2 despite the animal never directly experiencing this path, demonstrating the network's ability to combine multiple spatial paths into novel synaptic pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are supported by simulations shown in Figure 7D-E with statistical confirmation across 10 independent simulations (Figure 7F-H, Wilcoxon signed rank test, p<0.01). The emergence of goal-directed sequences along unexperienced paths (C70-C71) is a key prediction of the model and represents an important functional consequence of the learning mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "After W-maze exploration, the connection vector field was organized to route neural activities toward neurons encoding the rewarded position. This organization was consistent across different visiting orders but was abolished when reward was removed or when STP modulation of Hebbian plasticity was disabled. Direct synaptic pathways from D1 to D2 were created through the learning mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 are supported by connection vector field analysis in Figure 8 and supplements. The control conditions (C77-C78) demonstrate that both reward and STP modulation are necessary for the organized vector field, establishing causal requirements. The consistency across visiting orders (C76) shows robustness of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The model explains how connections are biased from goal to start in non-rewarded travels because theta sequences enhance synaptic pathways opposite to movement direction, and these biases are not overwritten by reverse replay. Joint replay events where reverse sequences from D2 propagate into D1 enhance biases toward the goal through unexperienced paths. The model thus creates a map not only for experienced paths but also for their combinations that guide the animal to reward, optimizing the cognitive map of the spatial environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 provide mechanistic explanations for the W-maze results, supported by Figure 8 supplements and Figure 7E-G. The interpretation that the model optimizes cognitive maps (C84-C85) is a reasonable inference from the demonstrated ability to create goal-directed pathways through path combination. This represents an important functional interpretation of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "When theta oscillation was turned off, the network generated replay-like long-lasting firing sequences during both immobility and run. The authors interpret that theta oscillation provides periodic hyperpolarization that terminates firing sequences and localizes place-cell activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by Figure 7\u2014figure supplement 1. The observation (C86) is clear, and the mechanistic interpretation (C87) is reasonable given the model architecture. This demonstrates an important functional role for theta oscillation in the model, though the interpretation is somewhat model-dependent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The model predicts that firing sequences triggered at reward sites in 2-D space propagate isotropically from trigger points rather than as reverse replay of recent paths. Divergent firing sequences from the center created a connection vector field converging to the center, generalizing the role of 1-D reverse replay to higher dimensional spaces where isotropic sequence propagation from reward sites achieves goal-directed sequence learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 are supported by 2-D simulations in Figure 9. The prediction (C89) is based on cited experimental observations (C88) and the model's mechanism. The demonstration that divergent sequences create convergent vector fields (C90) and the generalization to higher dimensions (C91) represent important extensions of the 1-D mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C97",
+      "C98",
+      "C99",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "In 2-D foraging task simulations, the model quickly learned efficient goal-directed navigation after SWITCH trials. In REPEAT trials, the bias from start to goal was stronger than from goal to recent paths, consistent with experimental observations. In SWITCH trials, bias to recent paths at the goal was stronger than bias to goal during other periods, which can be explained by the animal visiting the previous reward site. This bias provides an efficient way to update connection weights because updating is only necessary in the space between goals. The model predicts that bias from novel goal positions to previously learned goals appears when updating memories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C104 are supported by comprehensive 2-D foraging simulations in Figure 10 with appropriate statistical analyses (Wilcoxon rank sum test, paired t-test). The consistency with experimental observations (C98) and the mechanistic explanations for different trial types (C101-C102) strengthen the model's validity. The prediction (C103) is a reasonable extension of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The modified Hebbian plasticity rule modulated by STP biases synaptic weights toward the reverse direction of firing sequences. This phenomenon favors spike bursts and high presynaptic release probability, and is unlikely to occur for conventional asymmetric STDP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 provide a summary of the main computational findings, which are well-supported by the comprehensive simulations in Figures 1-4. This represents the core mechanistic discovery of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The model predicts that reverse replay is crucial for reinforcement of reward-seeking behavior and provides the first mechanistic account for how reverse replay enables hippocampal prospective coding of reward-seeking navigation. If reverse replay is modulated by other salient events beyond reward, the model generalizes to memorization of important paths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 represent key predictions and contributions of the model, supported by the W-maze and 2-D simulations combined with cited experimental observations about reward modulation of reverse replay. The generalization (C110) is a reasonable speculation about broader applicability. These claims appropriately characterize the model's novelty and significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The model reinforces unexperienced spatial paths by connecting multiple paths from separate experiences, consistent with experimental observations that hippocampus can generate replay along joint paths without direct experience. The model shows reverse replay creates forward bias even in early learning stages, consistent with weak forward replay bias observed in first exposure to long 1-D tracks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 connect model predictions to experimental observations. The ability to learn unexperienced paths (C111) is demonstrated in W-maze simulations, and experimental support exists for joint path replay (C112). The early learning prediction (C113) and supporting experimental observation (C114) provide additional validation of the model's biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "The model predicts that bias to goal-directed sequences will be suppressed or enhanced if reverse replay at the goal is selectively blocked or enhanced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 is a testable prediction that follows logically from the model's mechanism where reverse replay at reward locations drives forward pathway potentiation. This represents an important experimental prediction for validating the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The most critical assumption is rapid modulation of STDP coherent to presynaptic neurotransmitter release of STP. Such modulation was reported in visual cortex, and short-term depression exists in CA3, though STDP modulation in hippocampus shows slightly different characteristics. The modulation has not been tested for more than two presynaptic spikes, and contributions of STP to STDP should be further validated in CA3. The authors suggest experimental approaches including pharmacological manipulation of STP and testing ADP accumulation effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C124 identify the key assumption (C116) and acknowledge important limitations in existing experimental support. While STP modulation of STDP exists in visual cortex (C117) and STP exists in CA3 (C118), the specific combination required by the model has not been fully validated in CA3 (C119-C122). The suggestions for experimental validation (C123-C124) are appropriate, but the core assumption remains to be fully tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "CA3 receives dopaminergic input from locus coeruleus signaling novelty, suggesting sequence learning in CA3 is affected by novelty and salience. Any place with behaviorally important events can be a potential goal for hippocampal path learning, with goal valence encoded in downstream areas. The model may explain sequence learning for fear memory and vicarious trial and error, where reverse replay contributes to selective forward replay of paths informative for decision making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C131 extend the model's implications beyond reward-based learning, supported by citations to relevant experimental studies. The speculation about fear memory and decision-making (C130-C131) is reasonable given the model's mechanism, though these remain predictions requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Modulation of triggering replay events crucially affects learning with reverse replay in the model. CA2 encodes current position during immobility and can trigger sharp wave ripples, suggesting dopaminergic enhancement in CA2 may increase replay from current position. Dentate gyrus intensively encodes reward sites and triggers ripples in CA3, suggesting CA2 and dentate gyrus may play active roles in goal selection for hippocampal path learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C136 discuss the role of replay triggering (C132) and speculate about contributions of other hippocampal subregions based on their known properties (C133-C135). The speculation (C134, C136) is reasonable given cited experimental findings, though these remain predictions. This represents thoughtful consideration of how the model integrates with broader hippocampal circuitry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C140"
+    ],
+    "result": "The model predicts that release probability of neurotransmitter strongly affects magnitude and probability of bias toward reverse direction, suggesting modulation of neurotransmitter release in CA3 can regulate behavioral impact of hippocampal firing sequences. Presynaptic long-term plasticity may affect directional biases at longer timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 are supported by the parameter analysis in Figure 4 showing strong dependence on release probability. The inference about behavioral regulation (C138) is reasonable. The speculation about presynaptic LTP (C140) is appropriately tentative and represents a potential extension of the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Theta phase-locking of place cell activity did not have significant effects on learning in simulations, posing a question against the hypothesis that theta sequences are essential for sequence learning. However, theta phase-locking may be effective in learning CA3-to-CA1 connections with asymmetric STDP. In 2-D simulations, theta sequences acted as readout of weight biases to reward for planning future trajectories, consistent with experimental findings. Short-term facilitation contributed to theta sequence generation and enhanced readout of spatial information during run.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C147 are supported by simulations in Figure 5 and 2-D foraging results. The finding that phase-locking is not critical for CA3 recurrent learning (C141) challenges previous hypotheses (C142) but the alternative interpretation for CA3-CA1 learning (C143) is reasonable. The role in readout (C144-C145) and the contribution of short-term facilitation (C146-C147) provide functional interpretations consistent with the model architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The relationship between the learning mechanism and TD learning should be mathematically investigated. A previous conceptual model concluded goal-directed learning would not occur with homogeneous sequence propagation, but the present model shows this is not the case for STP-modulated symmetric STDP, proposing a network mechanism to implement the conceptual model based on reverse replay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C151 appropriately position the work relative to TD learning and a previous conceptual model. The suggestion for future work (C148) is reasonable. The comparison to the conceptual model (C149-C151) correctly identifies how the present model extends previous work by showing goal-directed learning can occur with homogeneous propagation when STP modulation is included.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The model has yet to learn context-dependent switching of behavior such as alternating T-maze navigation. A straightforward extension would maintain multiple charts representing alternating paths and switch them according to short-term memory or context, with each chart selectively reinforced by reverse replay. Protecting previous memories from overwriting is an unsolved issue; one solution is triggering remote replay at previous reward sites, with bias of remote replay starting points affecting persistence of multiple memories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C158 appropriately acknowledge important limitations of the current model (C152, C156) and propose reasonable extensions (C153-C155, C157-C158). These represent honest assessment of the model's scope and thoughtful suggestions for future development, though they remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "The model did not account for unidirectional properties of 1-D place cells. Learning unexperienced paths with unidirectional place cells would require continuous replay of multiple unidirectional place-cell ensembles, which has been experimentally observed. Previous models demonstrated Hebbian plasticity can connect multiple unidirectional place cells at junctions. Replay of long paths is accompanied by concatenated sharp wave ripples, with each ripple corresponding to a spatial segment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C164 acknowledge a limitation (C160) and discuss how the model might be extended to account for unidirectional place cells, supported by citations to relevant experimental (C161, C163-C164) and modeling (C162) studies. This represents appropriate consideration of biological complexity not captured in the current model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Reverse replay has not been found in neocortical circuits, where firing sequences are reactivated only in forward directions and synapses obey asymmetric STDP. However, if dopamine turns asymmetric STDP into symmetric STDP in neocortex (as occurs in hippocampal CA1), forward firing sequences would reinforce reverse sequence propagation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C168 discuss implications for neocortex, noting the absence of reverse replay (C165-C166) and asymmetric STDP (C167). The speculation about dopamine effects (C168) is based on known effects in CA1 and represents a testable prediction, though it remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "The proposed neural mechanism may provide cues for exploring neural substrates of logic operations. The model proposes a biologically plausible mechanism for goal-directed path learning through reverse sequences, enabling a path-finding mechanism similar to dynamic programming algorithms like Dijkstra's algorithm. Such mechanisms have been suggested in machine learning literature, but how neural dynamics achieves this remained unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C173 discuss broader implications and position the work relative to computational algorithms. The speculation about logic operations (C169) is tentative but reasonable. The comparison to dynamic programming (C171-C173) appropriately characterizes the computational function of the model and its novelty in providing a neural implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C174",
+      "C175"
+    ],
+    "result": "The model predicts roles of neuromodulators that modify plasticity rules and activity levels in sequence learning, and these predictions are testable by physiological experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C175 summarize the model's predictions about neuromodulation, which are supported by the various predictions made throughout the manuscript regarding dopamine, acetylcholine, and other modulators. The statement about testability (C175) is appropriate.",
+    "result_type": "MINOR"
+  }
+]

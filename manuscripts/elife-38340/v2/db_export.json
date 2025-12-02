@@ -1,0 +1,1754 @@
+{
+  "submission": {
+    "id": "5f2d0e11-b576-405e-9d54-e8a7aa057a39",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:45:17.395101Z",
+    "updated_at": "2025-12-02T01:45:17.395101Z"
+  },
+  "content": [
+    {
+      "id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "submission_id": "5f2d0e11-b576-405e-9d54-e8a7aa057a39",
+      "content_type": "manuscript",
+      "content_text": "# The origin of the odorant receptor gene family in insects\n\n## Authors\n\n- Philipp Brand<sup>1</sup> ([ORCID: 0000-0003-4287-4753](https://orcid.org/0000-0003-4287-4753)) \u2020\n- Hugh M Robertson<sup>2</sup> ([ORCID: 0000-0001-8093-0950](https://orcid.org/0000-0001-8093-0950)) \u2020\n- Wei Lin<sup>3</sup>\n- Ratnasri Pothula<sup>4</sup>\n- William E Klingeman<sup>5</sup>\n- Juan Luis Jurat-Fuentes<sup>4</sup>\n- Brian R Johnson<sup>3</sup>\n\n### Affiliations\n\n1. Department of Evolution and Ecology Center for Population Biology, University of California, Davis Davis United States\n2. Department of Entomology University of Illinois at Urbana-Champaign Urbana United States\n3. Department of Entomology and Nematology University of California, Davis Davis United States\n4. Department of Entomology and Plant Pathology University of Tennessee Knoxville United States\n5. Department of Plant Sciences University of Tennessee Knoxville United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe origin of the insect odorant receptor (OR) gene family has been hypothesized to have coincided with the evolution of terrestriality in insects. Missbach et al. (2014) suggested that ORs instead evolved with an ancestral OR co-receptor (Orco) after the origin of terrestriality and the OR/Orco system is an adaptation to winged flight in insects. We investigated genomes of the Collembola, Diplura, Archaeognatha, Zygentoma, Odonata, and Ephemeroptera, and find ORs present in all insect genomes but absent from lineages predating the evolution of insects. Orco is absent only in the ancestrally wingless insect lineage Archaeognatha. Our new genome sequence of the zygentoman firebrat Thermobia domestica reveals a full OR/Orco system. We conclude that ORs evolved before winged flight, perhaps as an adaptation to terrestriality, representing a key evolutionary novelty in the ancestor of all insects, and hence a molecular synapomorphy for the Class Insecta.\n\n## Introduction\n\nFrom bacteria to mammals, living organisms of all levels of complexity have evolved chemosensory receptors to detect and discriminate chemicals in the environment (Wuichet and Zhulin, 2010; Hansson and Stensmyr, 2011). The largest metazoan gene families encode tens to hundreds of odorant receptors (ORs) that interact with volatile chemicals at the sensory periphery underlying the sense of smell (S\u00e1nchez-Gracia et al., 2009). OR gene families have evolved multiple times throughout the metazoans, including independent origins in vertebrates, nematodes, and insects (Hansson and Stensmyr, 2011). In insects, the OR gene family evolved from within the ancestral gustatory receptor (GR) gene family (Scott et al., 2001; Robertson et al., 2003) that extends back to ancient metazoan lineages (Robertson, 2015; Saina et al., 2015; Eyun et al., 2017). ORs are absent from non-insect arthropod genomes (Pe\u00f1alva-Arana et al., 2009; Almeida et al., 2015; Gulia-Nuss et al., 2016; Ngoc et al., 2016; Eyun et al., 2017), and have been hypothesized to have evolved concomitant with the evolution of terrestriality in insects (Robertson et al., 2003).\n\nThe lack of molecular resources for ancestrally wingless (apterygote) insects and non-insect hexapods (Figure 1) has prevented the precise dating of the origin of insect ORs. Only recently, whole-genome sequencing efforts suggested that ORs are absent in non-insect hexapods such as Collembola (Wu et al., 2017) but present in derived winged (pterygote) insects such as damselflies (Odonata; Ioannidis et al., 2017). Efforts to understand more precisely the origin of the OR gene family within hexapods were greatly advanced by the findings of Missbach et al. (2014), who sequenced transcriptomes of the chemosensory organs of two apterygote insects, the bristletail Lepismachilis y-signata (Archaeognatha) and the firebrat Thermobia domestica (Zygentoma). They identified three ORs in the firebrat, which they named TdomOrco1-3, due to apparent similarity to the odorant receptor co-receptor (Orco; Vosshall and Hansson, 2011). Orco is a highly conserved single-copy gene present in all other insects studied to date and encodes a protein that is a partner with each of the other \u2018specific\u2019 ORs (Benton et al., 2006), a dimer required for OR-based olfaction in insects (Larsson et al., 2004). In contrast,\u00a0Missbach et al.\u00a0(2014)\u00a0could not find ORs or Orco relatives in their bristletail transcriptome, instead finding only members of the ionotropic receptor (IR) gene family. Given evidence that IRs serve olfactory roles in terrestrial crustaceans and insects (Rytz et al., 2013; Groh-Lunow et al., 2014; Rimal and Lee, 2018), they argued that olfaction in terrestrial non-insect hexapods and apterygote insects is entirely IR-dependent, with Orco evolving as ancestral OR from the GR lineage between the Archaeognatha and Zygentoma. Based on these findings, Missbach et al. (2014) suggested that the Orco/OR system evolved together with flight in pterygote insects and left off with the observation that \u2018the existence of three Orco types remains mysterious\u2019.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/38340/elife-38340-fig1-v2.jpg)\n\n**Figure 1.:** The number of ORs and OR co-receptors (Orcos) for all species of the insect and other hexapod orders analyzed was mapped on the hexapod phylogeny sensu (Misof et al., 2014). ORs are present in all insects but absent from non-insect hexapod genomes, and thus likely represent an evolutionary novelty for the Class Insecta. Orco is present in all but Archaeognatha, an ancestrally wingless (apterygote) insect order. This suggests two scenarios including either the loss of Orco in Archaeognatha or an Orco origin following the evolution of ORs (as indicated). The genomes of all neopteran insects analyzed to date encode ORs, ranging from 10 ORs in head lice (Kirkness et al., 2010) to more than 300 ORs in ants (Smith et al., 2011a, 2011b).\n\nRecently, phylogenetic analysis of the OR gene family of the damselfly Calopteryx splendens suggested that at least one of the three Orco-like ORs from T. domestica, TdomOrco3, might be a specific OR instead of an Orco (Ioannidis et al., 2017). If this is correct, then the entire Orco/OR system evolved before winged insects, which would explain the \u2018mystery\u2019 of three apparent Orco types in Zygentoma. In an effort to identify the origin of the insect OR gene family and the Orco/OR system, we investigated the genome sequences of species belonging to multiple insect and other terrestrial hexapod orders (Figure 1), specifically Collembola (springtails), Diplura (two-pronged bristletails), Archaeognatha (jumping bristletails), Zygentoma (silverfish and firebrats), Odonata (damselflies and dragonflies), and Ephemeroptera (mayflies).\n\n## Results and discussion\n\n### ORs were present in the ancestor of insects\n\nWe detected no ORs in two non-insect hexapod lineages, Collembola and Diplura (a genome sequence is not available for the third lineage, the Protura), despite extensive annotation efforts. In contrast, we identified genes with similarity to known insect ORs in all insect genomes investigated (Figure 1; Tables S2 and S3 in Supplementary file 1). These included one species of each of the two apterygote insect orders, the Archeognatha and Zygentoma, as well as the pterygote orders Odonata and Ephemeroptera. Accordingly, ORs were likely present in the ancestor of all insects but absent from all non-insect hexapod lineages. This suggests that the origin of the OR gene family coincided with the evolution of insects. Thus, our analysis does not support the hypothesis that ORs evolved with the evolution of winged flight in insects (Missbach et al., 2014) but is compatible with the hypothesis that they evolved with terrestriality in insects (Robertson et al., 2003).\n\n### The Thermobia domestica genome harbors a full Orco/OR gene family repertoire\n\nWith the exception of the Zygentoma, all orders analyzed had genome data either published (Faddeeva-Vakhrusheva et al., 2016, 2017; Wu et al., 2017) or available from the i5k Pilot Project from the Baylor College of Medicine at the i5k Workspace@NAL (Poelchau et al., 2015). To complete taxon sampling, we produced a draft genome assembly for T. domestica (Table S1 in Supplementary file 1; Supplementary file 2), enabling direct comparison to Missbach et al. (2014). We find that the T. domestica genome encodes far more than the three Orco-like OR proteins they described. Our manual annotation revealed 43 ORs encoded by 32 genes including the three previously identified genes (TdomOrco1-3; Missbach et al., 2014). Four genes are modeled as exhibiting alternative splicing leading to the additional protein isoforms. We used the antennal transcriptome of Missbach et al. (2014) for support of intron-exon boundaries, however only a few transcriptome reads mapped to the \u2018specific\u2019 OR genes (Table S2 in Supplementary file 1), indicating that these ORs might be expressed in untested tissues or life stages, or at such low levels that the RNA-seq analysis of Missbach et al. (2014) did not sequence to a sufficient depth to recover these low-expressed transcripts.\n\nPhylogenetic analyses of all ORs we annotated in the bristletail Machilis hrabei (5 ORs), the dragonfly Ladona fulva (4 ORs), and the mayfly Ephemera danica (47 ORs), as well as the previously annotated damselfly C. splendens (6 ORs; Ioannidis et al., 2017) revealed that one of the T. domestica ORs (TdomOrco2) clustered confidently with the Orco lineage in pterygote insects (Figure 2; Supplementary file 3). We believe this is the sole Orco relative because it shares unique features with the pterygote Orco proteins, such as a TKKQ motif in the expanded intracellular loop 2 (positions 327\u2013330 in DmelOrco), and so we rename it simply TdomOrco. TdomOr1-8 are a set of Orco-like proteins that share a common gene structure with TdomOrco, with introns in phases 0-2-0-0-0. These last four introns are present in all the other TdomOr genes, as well as those of the bristletail, odonates, and mayfly, and correspond to the four introns identified by Robertson et al. (2003) as being ancestral to the OR family. The first phase-0 intron of Orco and Or1-8 is the only additional intron shared by most pterygote Orco genes.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/38340/elife-38340-fig2-v2.jpg)\n\n**Figure 2.:** The Maximum Likelihood tree demonstrates monophyly of the single-copy insect Orco with high bootstrap support. The M. hrabei genome lacks Orco but encodes five ORs clustering in a single highly-supported clade. T. domestica has a fully developed functional OR/Orco system. The red arrowheads indicate the locations of the three T. domestica ORs identified by Missbach et al. (2014),\u00a0including the gene identified as T. domestica Orco in this study (formerly TdomOrco2).\n\nWith the exception of the bristletail M. hrabei, all insect genomes analyzed have both single genes with high similarity to Orco and multiple genes with similarity to specific ORs. The M. hrabei genome did not encode an Orco, but instead contains 5 ORs of high similarity that form a highly supported clade in the gene phylogeny (Figure 2). We also could not find an Orco in the deep RNAseq transcriptome Missbach et al. (2014) generated for their bristletail, L. y-signata. While it is formally possible that M. hrabei has an Orco gene that is not present in the draft genome assembly due to an assembly gap, unsuccessful searches of raw reads from this genome project make this unlikely. We consider two possibilities. First, bristletails might have lost their Orco gene, however this loss must have occurred recently in both bristletail species because their \u2018specific\u2019 ORs are still intact. Second, the OR family might have originated with a few specific ORs like those of M. hrabei, with the Orco lineage evolving between Archaegnatha and Zygentoma. Phylogenetic analysis using various sets of GRs from other insects, arthropods, and animals as outgroup to root the OR family tree does not resolve this question confidently (data not shown). In any case, if indeed functional, these five specific ORs in M. hrabei, at least one of which is present in L. y-signata, apparently function in the absence of Orco, perhaps alone or as dimers.\n\nFinally, we note that while insects are defined by many morphological and developmental novelties, to the best of our knowledge the OR gene family is the first molecular novelty (i.e. synapomorphy) for the Class Insecta.\n\n## Materials and methods\n\n### Sequencing, assembly, and assessment of the Thermobia Domestica genome\n\nSequencing, assembly, and repetitive element annotation of the T. domestica genome followed\u00a0Brand et al. (2018). DNA was extracted from a single individual using a Qiagen DNeasy kit following the manufacturer\u2019s instructions. DNA libraries were constructed following the Truseq DNA PCR Free library preparation kit instructions for 250 bp paired-end sequencing on an Illumina HiSeq 2500 to produce a sequencing library required for DISCOVAR v1 (Weisenfeld et al., 2014) assembly. Assembly was performed using default parameters followed by Redundans v1 (Pryszcz and Gabald\u00f3n, 2016) to collapse contigs with\u00a0\u226585% similarity in order to remove duplicates originating from expected high heterozygosity of outbred individuals. Finally, Agouti v1 (Zhang et al., 2016) was used with default parameters for scaffolding of the initial assembly. The quality and completeness of the assembly was assessed with standard N statistics and the Busco pipeline v2 (Sim\u00e3o et al., 2015) using the arthropoda_odb9 database (Zdobnov et al., 2017) in genome mode. In addition, a Jellyfish v2 (Mar\u00e7ais and Kingsford, 2011) produced k-mer frequency spectrum (k\u00a0=\u00a025) was used to assess the level of heterozygosity in the data and to estimate genome size on the basis of the consecutive length of all reads divided by the sequencing depth following Brand et al. (2017).\n\nThe T. domestica genome assembly resulted in 618,474 scaffolds with an N50 of 15.5 Kb and a total length of 5.5 Gb. This exceeds the estimated genome size of 4.6 Gb by about 1 Gb. This could be due to either high heterozygosity of the sequenced individual, an imprecise genome-size estimate, or both. Since we were unable to produce inbred lines, it is possible that the genome of the sequenced individual was highly heterozygous. Indeed, our k-mer analysis revealed a high level of heterozygosity in the sequencing data, as indicated by the presence of a heterozygous peak of about twice the size of the homozygous peak (Supplementaryfile 2).\n\nDespite the high level of heterozygosity in the sequencing data, BUSCO analysis suggested a low level of gene duplication. Only 7% of all 1066 benchmark genes tested were duplicated. In total, 90.8% of the BUSCO genes were present in the assembly, 63.6% of which were complete, and 27.2% incomplete. Although this suggests that the genome assembly is fragmented, it likely contains the majority of all genes at least in part. Indeed, the assembly was sufficient for the manual reconstruction of the odorant receptor gene set (described below).\n\nRepetitive genome content was estimated based on transposable element (TE) prediction via the RepeatModeler \u2013 RepeatMasker pipeline (Smit and Hubley, 2015). TEs represent by far the largest fraction of repetitive elements in insect genomes, and thus provide an adequate estimate of overall repetitiveness of the genome (Tribolium Genome Sequencing Consortium et al., 2008; Kapheim et al., 2015; Brand et al., 2017, Brand et al., 2018). We first ran RepeatModeler for de novo repeat element family detection on the assembly followed by RepeatMasker for the annotation and classification of repetitive elements within the genome. Although this approach cannot detect lineage-specific repeat elements missing from the RepeatModeler database, it provides a good estimate of the overall level of genome repetitiveness (Tarailo Graovac and Chen, 2002; Kapheim et al., 2015; Brand et al., 2017).\n\nThe RepeatModeler analysis identified a total of 1812 repeat element families in the assembly, most of which could not be classified into known TE families (65.7%). We used the newly detected repeat elements as input database for RepeatMasker and annotated 9,986,807 individual elements with a cumulative length of 2.9 Gb, representing about half of the entire assembly length (52.9%). This suggests that the genome is highly repetitive. Of all elements, 4,330,119 (43.4%) could be classified into known TE families while the majority remained unclassified (Table S1 in Supplementary file 1). This is characteristic of non-model taxa that have not been previously studied on a molecular level, and thus not surprising since we are presenting the first comprehensive genetic resource of the insect order Zygentoma.\n\nOverall, our assessment suggests that our approach produced a genomic resource of sufficient quality for the inference of gene family evolution. The BUSCO analysis indicates that most genes are present in the assembly. However, low N50 and a moderate level of incomplete BUSCO benchmarking genes indicates assembly fragmentation. Fragmentation is likely influenced by the high level of repetitive elements (>50%) in the genome which could interfere with the DISCOVAR approach that is based on a single library type of small insert size (Weisenfeld et al., 2014). While DISCOVAR assembly was reported to perform well on some insect genomes of comparatively small size (Love et al., 2016), our results suggest that a high fraction of repetitive elements in the genome data can negatively influence assembly performance.\n\nIn addition to a moderate level of fragmentation, duplication levels of homologous genomic regions are likely slightly elevated in the assembly, especially for regions of high heterozygosity. The observed discrepancy between genome size estimate and assembly length suggests that our Redundans approach could not entirely remove homologous genomic regions of high heterozygosity (i.e. duplicates) in the DISCOVAR assembly, despite conservative settings. It is thus important to adjust gene annotation efforts accordingly (described below).\n\nWhile a higher level of contiguity and thus assembly quality simplifies gene annotation and genome-level analyses, genomes of similar quality to the one we present have been successfully used to study genome evolution (e.g. some genomes in Kapheim et al., 2015; Neafsey et al., 2015). Especially for non-model organisms with high heterozygosity and large genome sizes like T. domestica, producing high-quality genomes comparable to model organisms such as Drosophila melanogaster remains a non-trivial task (Richards, 2018). The genome assembly in this study represents the first Zygentoma genome resource and thus will be highly useful in future studies of insect genome evolution.\n\n### Odorant receptor annotation\n\nThe genomes of the dipluran Catajapyx aquinolaris, the collembolans Holacanthella duospinosa, Orchesella cincta, and Folsomia candida, the firebrat Thermobia domestica, the bristletail Machilis hrabei, the dragonfly Ladona fulva, and the mayfly Ephemera danica were used for manual OR gene annotation.\n\n#### The firebrat Thermobia Domestica\n\nThe T. domestica assembly v1 described above was searched for ORs and models for them were manually built in a text editor (TextWrangler, which allows up to 18 kb of DNA sequence on each line). Protein translations were aligned against each candidate exonic region and exon-intron boundaries defined by a combination of support from RNAseq (see below), the shared intron locations and phases across genes (see below), and predictions using the Splice Site Prediction by Neural Network server at the Berkeley Drosophila Genome Project (http://www.fruitfly.org/seq_tools/splice.html).\n\nA variety of strategies were employed to find and build models for 32 OR genes. Initially TdomOrco1-3 from Missbach et al. (2014)\u00a0were used as queries to search using TBLASTN, which revealed that these three genes, for which Missbach et al. (2014) provided full-length cDNAs, are split across 7, 4, and 3 scaffolds, respectively (now renamed Orco, Or1, and Or9 in Table S2 in Supplementary file 1). These genes are revealed to be rather large, with long introns of considerable, and sometimes unknown, length as they include gaps of unknown length between scaffolds, explaining the large size of the genome assembly. Thus, Orco is at least 55 kb long, Or1 is at least 14 kb long, and Or9 is at least 38 kb long. These searches also revealed that our genome assembly is often redundant for two OR haplotypes, presumably resulting from the majority of the sequence being generated from a single diploid individual of high heterozygosity (described above). That these three genes were almost completely represented in the genome assembly, often in two very similar copies, with only 9 bp missing from Orco, gave us confidence that the assembly contains most unique sequence from the genome, and that we might therefore be able to find and build complete models for additional OR genes.\n\nThese three TBLASTN searches were performed with sensitive settings to detect even distantly related genes, and revealed many additional related genes, however like the first three, many exons were in separate scaffolds (Table S2 in Supplementary file 1). These sensitive searches used an E value of 1000 and word size of 2 with no filter to allow us to find divergent and sometimes short exons. We used seven strategies to assist in confidently and completely building models for almost all of these genes. First, some genes were clearly contained within single scaffolds, so models for them could be confidently built given some RNAseq support (see below), the shared gene structures of these genes (see below), and their sequence similarity. These genes are Or2, 3, 4, 18, 19, 21, 23, 24a/b, and 26. Their sizes of 20, 16, 24, 14, 43, 35, 35/29, and 14 kb, respectively, confirm the large typical size for these OR genes in this large genome. Iterative TBLASTN searches using the sensitive settings described above with these proteins and others confidently built below, allowed nearly complete annotation of the OR family in this genome assembly.\n\nSecond, we employed the antennal RNAseq information from Missbach et al. (2014), and to a lesser extent the 1Kite project that sequenced from whole animals hence has far less representation for genes usually expressed in antennae (Misof et al., 2014), to establish or confirm gene models as well as connections between exons on different scaffolds. These searches were done using MEGABLAST of the raw reads at the SRA, with word size of 16. This kind of experimental evidence is particularly valuable and sometimes allowed us to connect exons on different scaffolds that we might otherwise not have been able to associate confidently. Introns supported by spanning RNAseq reads (30 in total), as well as the three cDNAs from Missbach et al. (2014), are indicated in bold type in Table S2 in Supplementaryfile 1.\n\nThird, for this report we focused on T. domestica because of the availability of the above RNAseq information as experimental support, however we also generated a genome assembly of similar contiguity and haplotype redundancy for another zygentoman, the silverfish Ctenolepisma longicaudata. This genome sequence will be reported elsewhere, however we employed it here to assist in connecting exons on different scaffolds in T. domestica. We were able to build complete or nearly complete models for many apparently orthologous genes in C. longicaudata in single scaffolds, which by comparison then allowed confident connections of exons on different scaffolds in T. domestica. Even adjacent pairs of exons in single scaffolds in C. longicaudata sometimes allowed connections in T. domestica that facilitated completion of gene models. The resultant apparently orthologous proteins shared 50\u201388% amino acid identity between these two species (shown for most simple orthologous genes in Table S2 in Supplementary file 1). All gene models that employed one or more such connection are indicated with an asterisk after the suffix J after their names in Table S2 in Supplementary file 1.\n\nFourth, the redundancy of these two genome assemblies with two haplotypes for many genes occasionally assisted in connecting exons that were separately connected to other flanking exons in separate scaffolds, presumably representing the two haplotypes in each assembly. The scaffolds listed in Table S2 in Supplementary file 1 are generally the longest scaffolds containing one or more exons.\n\nFifth, for a few recently-duplicated genes like Or5-8, we associated the front and back halves on the basis of the availability of appropriate combinations of exons within scaffolds, and similarity to a single relative in C. longicaudata. It is possible that these models are not completely correct, however, as they constitute a small Thermobia-specific expansion, any such errors will not affect our phylogenetic analysis. Nevertheless, the final short exon could not be confidently identified for Or7.\n\nSixth, these genes all contain four short exons encoding the C-terminal regions of their proteins, and these are separated from the N-terminal-encoding exon(s) by a phase-2 intron followed by three phase-0 introns. To make TBLASTN searches for these short exons even more sensitive, particularly for divergent genes, two additional \u2018amino acids\u2019 were added to the ends of the query sequence encoded by the most closely related confident gene model, specifically FR to represent a phase-2 consensus intron acceptor, VS to represent a phase-0 donor, and LQ to represent a phase-0 acceptor.\n\nSeventh, four gene models have parts missing from the assembly. Orco has 9 bp missing from the ends of two scaffolds that contain the front and back halves of exon1, while Or25 has\u00a0~250 bp missing from within exon1 for similar reasons. In the case of Orco these 9 bp were provided by the cDNA from Missbach et al. (2014) as well as raw genome reads in the SRA, and the latter were used to repair the assembly for Or25. As noted above, the final exon for Or7 could not be confidently identified, and the same is true for Or16.\n\nFour of these genes are modeled as being alternatively-spliced in a fashion seen commonly in insect genomes, including the original descriptions of this family from D. melanogaster (Clyne et al., 1999; Vosshall et al., 1999). This alternative splicing is somewhat unusual because it involves multiple long first exons in tandem array that are alternatively spliced into the four short exons encoding the C-terminus. These genes are Or15a-c, 24a/b, 27a-d, and Or31a-f (Table S2 in Supplementary file 1). In the case of Or15, the three long first exons plus exon2 are contained within one scaffold, so this alternative splicing, while not supported by RNAseq reads between these three first exons and exon2, seems certain. Or24a/b are completely contained within one scaffold, and while again there are no RNAseq reads to support the alternative-splicing model, it appears confident. The Or27a-d locus is more complicated, because the Or27a first exon is in a separate scaffold, while the Or27b/c exons are in another, the Or27d plus exons2/3 in yet another, and the last two short exons in a fourth scaffold. Nevertheless, we believe this model because there is an RNAseq read that connects the Or27a first exon to the shared exon2, which along with exon3 is in the same scaffold as the Or27d first exon. The first exons for Or27b/c are together in a separate scaffold, but are so similar in sequence to Or27a (75% and 71% amino acid identity) that they most likely are also alternatively spliced, and exons4/5 in the fourth scaffold are most similar to the related Or25/26 genes. Finally, Or31a-f is also a complicated locus spread across five scaffolds with no RNAseq support for the alternative splicing model, which we nevertheless believe is confident because a comparable alternatively-spliced locus exists in C. longicaudata.\n\nOur ability to construct models for 32 OR genes encoding 43 proteins in this T. domestica genome assembly confirms our initial observation that the assembly contains most unique sequence from the genome. The only possible additional protein isoform we excluded is that there is a first exon 17 kb upstream of Orco in scaffold Ther_dom_306089 that could conceivably be alternatively spliced into Orco, yielding two Orco isoforms with only 31% amino acid identity for their first 200 amino acids. The same kind of arrangement is found in C. longicaudata, suggesting that it is a conserved and functional arrangement. Nevertheless, without RNAseq support for this model from Missbach et al. (2014) and the complete absence of alternative splicing for the single Orco gene in all other described insects, we chose not to include this potential divergent isoform.\n\nTwo of the alternatively-spliced isoforms are apparent pseudogenes (Or15c and Or24b), each with single stop codons in the first long exon, but it is possible that these are pseudo-pseudogenes, as shown for some OR genes in Drosophila flies (Prieto-Godino et al., 2016), otherwise the remaining 41 proteins appear to be functional.\n\n#### The dragonfly Ladona fulva and the mayfly Ephemera danica\n\nThese two draft genome assemblies were accessed at the i5k Workspace@NAL (Poelchau et al., 2015) where they are presented from the i5k Pilot Project at the Human Genome Sequencing Center at the Baylor College of Medicine. The dragonfly and mayfly OR families were manually annotated using the Apollo genome browser. These gene models and encoded proteins will eventually be available from these genome projects, and the proteins are provided in the supplement.\n\nThe four OR models including Orco for L. fulva are full-length and intact. For E. danica, in addition to Orco there are 46 OR models, 7 of which are partial models with termini or internal regions missing due to gaps in the assembly that could not be repaired with raw genome reads from the Sequence Read Archive (SRA) at the National Center for Biotechnology Information (NCBI), while 10 are pseudogenes.\n\n#### The bristletail Machilis hrabei:\n\nThe bristletail genome from the i5k pilot project is not available in the Apollo browser, so models for the five OR genes in that draft genome sequence were manually built in a text editor. All five required considerable repairs of both ambiguous bases and assembly gaps using raw genome reads from the SRA, and three were joined across scaffolds (Table S3 in Supplementaryfile 1). There is considerable RNAseq support for four of these five models from the whole-body RNAseq of the i5k and 1Kite projects (found with MEGABLAST searches at the SRA at NCBI), as well as five matching reads for MhraOr1 from the RNAseq of the related species employed by Missbach et al. (2014), Lepismachilis y-signata, detected using TBLASTN searches of raw reads downloaded from the SRA (Table S3 in Supplementary file 1). A first and second exon in 18 kb scaffold_47427 that encode 95% identical amino acids to MhraOr4 were not included in the analysis as they are a partial model and do not contribute significantly to the diversity of MhraOrs.\n\nWe note that the first two pairs of these MhraOr genes are in inverse orientation to each other, with their tails adjacent (Table S3 in Supplementary\u00a0file 1), a feature also seen with some of the TdomOrs, although they also have some genes in the head-to-head orientation, for example Orco/Or5, Or10/25, Or11/12/22, and Or13/14 (Table S2 in Supplementary\u00a0file 1).\n\nWe made extensive efforts to identify Orco in M. hrabei and L. y-signata using TdomOrco as query. There are no obvious matches for any part of Orco in the genome assembly of M. hrabei using TBLASTN searches. Because this is a highly conserved protein (for example, mostly co-linear and 88/45/42% identical between T. domestica and C. longicaudata, E. danica, and L. fulva, respectively), it should be readily discovered. It is always possible that a gene might be completely unassembled in a draft genome assembly, although unlikely given we were able to assemble full-length models for MhraOr1-5, so we undertook a TBLASTN search of a set of raw genome reads that gave 5-10X coverage for MhraOr1-5 and found nothing. We also did TBLASTN searches of the raw whole-body RNAseq reads from both the i5k M. hrabei project and the 1Kite set without success. Finally, in other insects Orco is generally well expressed in antennae and in TBLASTN searches of the raw reads from the antennal RNAseq of Missbach et al. (2014) for L. y-signata we found several reads that encode an Orco protein and were able to assemble a 713 bp contig encoding 237 amino acids, however it is a contaminant with matches of 85% identity to various lepidopteran Orco proteins. We therefore conclude that these two bristletails do not have an Orco gene. It is also noteworthy that the five MhraOr genes have the same gene structure as the TdomOr9-31 genes, without the additional phase-0 intron splitting the long first exon seen in TdomOrco and the Orco-like TdomOr1-8 (Table S3 in Supplementary file 1), so there is no hint of Orco-like genes in this bristletail genome.\n\n#### The basal hexapod lineages collembola and diplura\n\nWe similarly exhaustively examined the draft genome assemblies for three Collembola (Faddeeva-Vakhrusheva et al., 2016, 2017; Wu et al., 2017) as well as a dipluran from the i5k pilot project, Catajapyx aquinolaris, and found no evidence of either Orco or ORs, in agreement with Wu et al. (2017).\n\n### Phylogenetic analysis\n\nOR protein alignments were produced with CLUSTALX v2 (Larkin et al., 2007) and gaps were trimmed using Gappyout in TrimAl (Capella-Guti\u00e9rrez et al., 2009). The resulting alignment left 434 characters including a variable N-terminus caused by length variation in the first and second intracellular loop. The resulting alignments were used for gene tree inference using RaxML (Stamatakis et al., 2005) under the JTT\u00a0+\u00a0G substitution model which previously has been found to be the best model for OR gene trees (Brand and Ram\u00edrez, 2017). We used a total of 20 independent ML searches and 1000 bootstrap replicates (Supplementary file 3).\n",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "e8a1f1c0-27d1-4b98-a341-17ffad235800",
+      "submission_id": "5f2d0e11-b576-405e-9d54-e8a7aa057a39",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard Benton, University of Lausanne Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.38340.012](https://doi.org/10.7554/eLife.38340.012)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The origin of the odorant receptor gene family in insects\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Diethard Tautz as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Leslie B Vosshall (Reviewer #2); Roman Arguello (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript describes an interesting study of the evolutionary origins of the OR genes in insects. It is in \"Research Advance\" format, and is based on an earlier eLife article by Missbach et al. from 2014. Brand et al. consider the same issue as Missbach et al. but analyze a broader and deeper dataset, and arrive at some different conclusions. Missbach et al. suggested that the OR/Orco system is an adaptation to winged flight; Brand et al. provide convincing evidence that it evolved before winged flight. A species that Missbach et al. described as having 3 Orco-like genes and no ORs is found by Brand et al. to have one Orco and many ORs.\n\nEssential revisions:\n\n1) The paper is not written for a general readership: the authors should 'translate' the paper into language that is accessible to eLife readers (e.g., clarify the meaning of basal hexapods, synapomorphy, apterygote, pterygote etc.). To make the figures of greater visual interest and to help non-experts appreciate the profundity of the results, please include a representative photograph/graphic of each of the species analyzed. In particular, Figure 1 should be expanded by listing the species that are analyzed and their common names, as this would aid understanding of the text in which individual organisms are sometimes referred to by their species name, sometimes by the order in which they are classified, and sometimes by their common name.\n\n2) The authors should indicate the caveat that a missing Orco gene in Archaeognatha might be a technical issue (i.e., a genome sequence gap) at the appropriate passages in the manuscript. It would be helpful if the authors include a summary table of the genome data coverage for the various species, and discuss further the different possible reasons for failure of Missbach et al. to find T. domestica ORs beyond the possibility of low sequence coverage in their RNA-seq datasets (e.g., these genes could be expressed in different tissues or life stages form that analysed).\n\n3) Parsable alignment files should be included and the fasta sequences provided at the end of the Supplementary file 1 should be provided as a separate parsable file.\n",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fef4529f-0291-4a9a-b77f-3d5e29b06b17",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C1",
+      "claim": "The origin of the insect odorant receptor (OR) gene family has been hypothesized to have coincided with the evolution of terrestriality in insects.",
+      "claim_type": "EXPLICIT",
+      "source": "The origin of the insect odorant receptor (OR) gene family has been hypothesized to have coincided with the evolution of terrestriality in insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Robertson et al., 2003, as stated later in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "d25792d5-f2ae-4186-8d8f-6776bc142e9b",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C2",
+      "claim": "Missbach et al. (2014) suggested that ORs evolved with an ancestral OR co-receptor (Orco) after the origin of terrestriality and the OR/Orco system is an adaptation to winged flight in insects.",
+      "claim_type": "EXPLICIT",
+      "source": "Missbach et al. (2014) suggested that ORs instead evolved with an ancestral OR co-receptor (Orco) after the origin of terrestriality and the OR/Orco system is an adaptation to winged flight in insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is attributed to Missbach et al. (2014) through citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "22ecf597-d745-4c69-a1ba-734934251b2c",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C3",
+      "claim": "ORs are present in all insect genomes investigated.",
+      "claim_type": "EXPLICIT",
+      "source": "We investigated genomes of the Collembola, Diplura, Archaeognatha, Zygentoma, Odonata, and Ephemeroptera, and find ORs present in all insect genomes but absent from lineages predating the evolution of insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' genomic analysis of multiple insect orders.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "34c7f8c5-2bee-4375-8d2b-0ec5bcf9e02a",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C4",
+      "claim": "ORs are absent from lineages predating the evolution of insects.",
+      "claim_type": "EXPLICIT",
+      "source": "We investigated genomes of the Collembola, Diplura, Archaeognatha, Zygentoma, Odonata, and Ephemeroptera, and find ORs present in all insect genomes but absent from lineages predating the evolution of insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' genomic analysis showing no ORs in Collembola and Diplura.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "151c5bd4-0fce-427d-af96-4d8cf363191f",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C5",
+      "claim": "Orco is absent only in the ancestrally wingless insect lineage Archaeognatha.",
+      "claim_type": "EXPLICIT",
+      "source": "Orco is absent only in the ancestrally wingless insect lineage Archaeognatha.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' genomic analysis of Archaeognatha.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "13a5cea2-9da6-4937-adec-705c2239cda5",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C6",
+      "claim": "The zygentoman firebrat Thermobia domestica has a full OR/Orco system.",
+      "claim_type": "EXPLICIT",
+      "source": "Our new genome sequence of the zygentoman firebrat Thermobia domestica reveals a full OR/Orco system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' genome sequencing and annotation of T. domestica.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "52736c72-f55f-4dc7-8a77-a48a3c2b1dc4",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C7",
+      "claim": "ORs evolved before winged flight.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that ORs evolved before winged flight, perhaps as an adaptation to terrestriality, representing a key evolutionary novelty in the ancestor of all insects, and hence a molecular synapomorphy for the Class Insecta.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the presence of ORs in wingless insects (Archaeognatha and Zygentoma).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "c33c5bd8-bd4b-4059-87fd-581fdd4a7eba",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C8",
+      "claim": "ORs represent a key evolutionary novelty in the ancestor of all insects.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that ORs evolved before winged flight, perhaps as an adaptation to terrestriality, representing a key evolutionary novelty in the ancestor of all insects, and hence a molecular synapomorphy for the Class Insecta.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the presence of ORs in all insects but not in non-insect hexapods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "69a5c03a-5d9b-4436-9a65-8caace663049",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C9",
+      "claim": "ORs are a molecular synapomorphy for the Class Insecta.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that ORs evolved before winged flight, perhaps as an adaptation to terrestriality, representing a key evolutionary novelty in the ancestor of all insects, and hence a molecular synapomorphy for the Class Insecta.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the presence of ORs in all insects but not in non-insect hexapods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "0323dd3b-4106-440b-b6ec-58a19448e143",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C10",
+      "claim": "Living organisms of all levels of complexity have evolved chemosensory receptors to detect and discriminate chemicals in the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "From bacteria to mammals, living organisms of all levels of complexity have evolved chemosensory receptors to detect and discriminate chemicals in the environment (Wuichet and Zhulin, 2010; Hansson and Stensmyr, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Wuichet and Zhulin, 2010 and Hansson and Stensmyr, 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "4426124e-3233-4f17-b80f-34ae23ce4de2",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C11",
+      "claim": "The largest metazoan gene families encode tens to hundreds of odorant receptors (ORs) that interact with volatile chemicals at the sensory periphery underlying the sense of smell.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest metazoan gene families encode tens to hundreds of odorant receptors (ORs) that interact with volatile chemicals at the sensory periphery underlying the sense of smell (S\u00e1nchez-Gracia et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to S\u00e1nchez-Gracia et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "c8b13037-5e5d-48ea-a9eb-2f58aba84066",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C12",
+      "claim": "OR gene families have evolved multiple times throughout the metazoans, including independent origins in vertebrates, nematodes, and insects.",
+      "claim_type": "EXPLICIT",
+      "source": "OR gene families have evolved multiple times throughout the metazoans, including independent origins in vertebrates, nematodes, and insects (Hansson and Stensmyr, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Hansson and Stensmyr, 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "e423c347-c075-45fe-8427-c1ffe5c1479a",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C13",
+      "claim": "In insects, the OR gene family evolved from within the ancestral gustatory receptor (GR) gene family.",
+      "claim_type": "EXPLICIT",
+      "source": "In insects, the OR gene family evolved from within the ancestral gustatory receptor (GR) gene family (Scott et al., 2001; Robertson et al., 2003) that extends back to ancient metazoan lineages (Robertson, 2015; Saina et al., 2015; Eyun et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Scott et al., 2001 and Robertson et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "edb09c40-372d-4bb9-a04a-f009d4c3d1b8",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C14",
+      "claim": "The GR gene family extends back to ancient metazoan lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "In insects, the OR gene family evolved from within the ancestral gustatory receptor (GR) gene family (Scott et al., 2001; Robertson et al., 2003) that extends back to ancient metazoan lineages (Robertson, 2015; Saina et al., 2015; Eyun et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Robertson, 2015; Saina et al., 2015; Eyun et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "b2a14dbd-6f93-4d00-b3bc-88944fa50552",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C15",
+      "claim": "ORs are absent from non-insect arthropod genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "ORs are absent from non-insect arthropod genomes (Pe\u00f1alva-Arana et al., 2009; Almeida et al., 2015; Gulia-Nuss et al., 2016; Ngoc et al., 2016; Eyun et al., 2017), and have been hypothesized to have evolved concomitant with the evolution of terrestriality in insects (Robertson et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "8bb19106-8f6a-40fd-91c3-530498221542",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C16",
+      "claim": "ORs have been hypothesized to have evolved concomitant with the evolution of terrestriality in insects.",
+      "claim_type": "EXPLICIT",
+      "source": "ORs are absent from non-insect arthropod genomes (Pe\u00f1alva-Arana et al., 2009; Almeida et al., 2015; Gulia-Nuss et al., 2016; Ngoc et al., 2016; Eyun et al., 2017), and have been hypothesized to have evolved concomitant with the evolution of terrestriality in insects (Robertson et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Robertson et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "99108441-cbae-43ba-a527-f4ecaa9d85f6",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C17",
+      "claim": "ORs are absent in non-insect hexapods such as Collembola.",
+      "claim_type": "EXPLICIT",
+      "source": "Only recently, whole-genome sequencing efforts suggested that ORs are absent in non-insect hexapods such as Collembola (Wu et al., 2017) but present in derived winged (pterygote) insects such as damselflies (Odonata; Ioannidis et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Wu et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "f6f3ec88-7b22-4fbe-8c42-624f58006ee5",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C18",
+      "claim": "ORs are present in derived winged (pterygote) insects such as damselflies (Odonata).",
+      "claim_type": "EXPLICIT",
+      "source": "Only recently, whole-genome sequencing efforts suggested that ORs are absent in non-insect hexapods such as Collembola (Wu et al., 2017) but present in derived winged (pterygote) insects such as damselflies (Odonata; Ioannidis et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ioannidis et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "553920ff-fe14-486a-9cc1-90979bea596b",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C19",
+      "claim": "Missbach et al. (2014) identified three ORs in the firebrat Thermobia domestica, which they named TdomOrco1-3.",
+      "claim_type": "EXPLICIT",
+      "source": "Efforts to understand more precisely the origin of the OR gene family within hexapods were greatly advanced by the findings of Missbach et al. (2014), who sequenced transcriptomes of the chemosensory organs of two apterygote insects, the bristletail Lepismachilis y-signata (Archaeognatha) and the firebrat Thermobia domestica (Zygentoma). They identified three ORs in the firebrat, which they named TdomOrco1-3, due to apparent similarity to the odorant receptor co-receptor (Orco; Vosshall and Hansson, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Missbach et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "5b3dadd2-e6dc-4644-9e22-d14f3fab4e63",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C20",
+      "claim": "Orco is a highly conserved single-copy gene present in all other insects studied to date.",
+      "claim_type": "EXPLICIT",
+      "source": "Orco is a highly conserved single-copy gene present in all other insects studied to date and encodes a protein that is a partner with each of the other 'specific' ORs (Benton et al., 2006), a dimer required for OR-based olfaction in insects (Larsson et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Benton et al., 2006 and Larsson et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "38d67898-fc6e-477c-9627-4cfaf4caf4f1",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C21",
+      "claim": "Orco encodes a protein that is a partner with each of the other 'specific' ORs.",
+      "claim_type": "EXPLICIT",
+      "source": "Orco is a highly conserved single-copy gene present in all other insects studied to date and encodes a protein that is a partner with each of the other 'specific' ORs (Benton et al., 2006), a dimer required for OR-based olfaction in insects (Larsson et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Benton et al., 2006.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "b3e9b5f2-4cf4-4565-835f-e22adf2057fa",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C22",
+      "claim": "Orco forms a dimer required for OR-based olfaction in insects.",
+      "claim_type": "EXPLICIT",
+      "source": "Orco is a highly conserved single-copy gene present in all other insects studied to date and encodes a protein that is a partner with each of the other 'specific' ORs (Benton et al., 2006), a dimer required for OR-based olfaction in insects (Larsson et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Larsson et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "38e356eb-13c4-40c3-824b-68181211b5dd",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C23",
+      "claim": "Missbach et al. (2014) could not find ORs or Orco relatives in their bristletail transcriptome.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Missbach et al. (2014) could not find ORs or Orco relatives in their bristletail transcriptome, instead finding only members of the ionotropic receptor (IR) gene family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Missbach et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "3c1893fc-0b27-4b10-8c25-6ca1180788d8",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C24",
+      "claim": "IRs serve olfactory roles in terrestrial crustaceans and insects.",
+      "claim_type": "EXPLICIT",
+      "source": "Given evidence that IRs serve olfactory roles in terrestrial crustaceans and insects (Rytz et al., 2013; Groh-Lunow et al., 2014; Rimal and Lee, 2018), they argued that olfaction in terrestrial non-insect hexapods and apterygote insects is entirely IR-dependent, with Orco evolving as ancestral OR from the GR lineage between the Archaeognatha and Zygentoma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Rytz et al., 2013; Groh-Lunow et al., 2014; Rimal and Lee, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "1fffd668-9897-4305-8ec0-e83e9df968b6",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C25",
+      "claim": "Missbach et al. (2014) argued that olfaction in terrestrial non-insect hexapods and apterygote insects is entirely IR-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Given evidence that IRs serve olfactory roles in terrestrial crustaceans and insects (Rytz et al., 2013; Groh-Lunow et al., 2014; Rimal and Lee, 2018), they argued that olfaction in terrestrial non-insect hexapods and apterygote insects is entirely IR-dependent, with Orco evolving as ancestral OR from the GR lineage between the Archaeognatha and Zygentoma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is attributed to Missbach et al., 2014 through citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "79975858-3be3-4de1-bf82-08b09223ef20",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C26",
+      "claim": "Missbach et al. (2014) suggested that Orco evolved as ancestral OR from the GR lineage between the Archaeognatha and Zygentoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Given evidence that IRs serve olfactory roles in terrestrial crustaceans and insects (Rytz et al., 2013; Groh-Lunow et al., 2014; Rimal and Lee, 2018), they argued that olfaction in terrestrial non-insect hexapods and apterygote insects is entirely IR-dependent, with Orco evolving as ancestral OR from the GR lineage between the Archaeognatha and Zygentoma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is attributed to Missbach et al., 2014 through citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "b57c915e-38d7-48a7-827c-e782412d9bba",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C27",
+      "claim": "Missbach et al. (2014) suggested that the Orco/OR system evolved together with flight in pterygote insects.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these findings, Missbach et al. (2014) suggested that the Orco/OR system evolved together with flight in pterygote insects and left off with the observation that 'the existence of three Orco types remains mysterious'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is attributed to Missbach et al., 2014 through citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "771ed4e5-80a6-4a33-8ed0-34c1be42695f",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C28",
+      "claim": "Phylogenetic analysis of the OR gene family of the damselfly Calopteryx splendens suggested that at least one of the three Orco-like ORs from T. domestica, TdomOrco3, might be a specific OR instead of an Orco.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, phylogenetic analysis of the OR gene family of the damselfly Calopteryx splendens suggested that at least one of the three Orco-like ORs from T. domestica, TdomOrco3, might be a specific OR instead of an Orco (Ioannidis et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ioannidis et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "b948d459-7e7f-4850-acac-e8be769df184",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C29",
+      "claim": "No ORs were detected in two non-insect hexapod lineages, Collembola and Diplura.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected no ORs in two non-insect hexapod lineages, Collembola and Diplura (a genome sequence is not available for the third lineage, the Protura), despite extensive annotation efforts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' genomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "cd49eec6-d71b-4729-8847-e967c49f5a30",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C30",
+      "claim": "Genes with similarity to known insect ORs were identified in all insect genomes investigated.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we identified genes with similarity to known insect ORs in all insect genomes investigated (Figure 1; Tables S2 and S3 in Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the authors' genomic analysis and referenced in Figure 1 and supplementary tables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "79fa2731-607f-40b0-a4f8-876faec1fdc7",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C31",
+      "claim": "ORs were likely present in the ancestor of all insects but absent from all non-insect hexapod lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, ORs were likely present in the ancestor of all insects but absent from all non-insect hexapod lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the presence of ORs in all insects but not in non-insect hexapods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "b3c93b12-593d-4ba1-982f-570cc7c9781c",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C32",
+      "claim": "The origin of the OR gene family coincided with the evolution of insects.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the origin of the OR gene family coincided with the evolution of insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the presence of ORs in all insects but not in non-insect hexapods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "b474da4d-9c3a-4136-91d6-46bcd6b3913a",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C33",
+      "claim": "The analysis does not support the hypothesis that ORs evolved with the evolution of winged flight in insects.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our analysis does not support the hypothesis that ORs evolved with the evolution of winged flight in insects (Missbach et al., 2014) but is compatible with the hypothesis that they evolved with terrestriality in insects (Robertson et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the presence of ORs in wingless insects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "e23a1bbc-7b29-4c77-8d8f-bbed60fb2ca4",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C34",
+      "claim": "The analysis is compatible with the hypothesis that ORs evolved with terrestriality in insects.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our analysis does not support the hypothesis that ORs evolved with the evolution of winged flight in insects (Missbach et al., 2014) but is compatible with the hypothesis that they evolved with terrestriality in insects (Robertson et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the presence of ORs in all insects but not in non-insect hexapods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "b73201b3-c206-4f65-b3c3-c3f394ddd692",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C35",
+      "claim": "The T. domestica genome encodes 43 ORs encoded by 32 genes including the three previously identified genes (TdomOrco1-3).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the T. domestica genome encodes far more than the three Orco-like OR proteins they described. Our manual annotation revealed 43 ORs encoded by 32 genes including the three previously identified genes (TdomOrco1-3; Missbach et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' genome annotation of T. domestica.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "083d09ee-8908-47b6-b0aa-dfb31f1aa9d1",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C36",
+      "claim": "Four T. domestica OR genes are modeled as exhibiting alternative splicing leading to additional protein isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Four genes are modeled as exhibiting alternative splicing leading to the additional protein isoforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' genome annotation of T. domestica.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "cd8b7ab4-a202-422e-bcfb-f3e3ed487656",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C37",
+      "claim": "Only a few transcriptome reads mapped to the 'specific' OR genes in T. domestica.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the antennal transcriptome of Missbach et al. (2014) for support of intron-exon boundaries, however only a few transcriptome reads mapped to the 'specific' OR genes (Table S2 in Supplementary file 1), indicating that these ORs might be expressed in untested tissues or life stages, or at such low levels that the RNA-seq analysis of Missbach et al. (2014) did not sequence to a sufficient depth to recover these low-expressed transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' analysis of transcriptome data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "428e1fc8-6cf7-4ddb-835d-9f2436b741de",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C38",
+      "claim": "One of the T. domestica ORs (TdomOrco2) clustered confidently with the Orco lineage in pterygote insects.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic analyses of all ORs we annotated in the bristletail Machilis hrabei (5 ORs), the dragonfly Ladona fulva (4 ORs), and the mayfly Ephemera danica (47 ORs), as well as the previously annotated damselfly C. splendens (6 ORs; Ioannidis et al., 2017) revealed that one of the T. domestica ORs (TdomOrco2) clustered confidently with the Orco lineage in pterygote insects (Figure 2; Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by phylogenetic analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "ed6058d7-2f5a-460a-b555-999687a89f1c",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C39",
+      "claim": "TdomOrco2 shares unique features with the pterygote Orco proteins, such as a TKKQ motif in the expanded intracellular loop 2.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe this is the sole Orco relative because it shares unique features with the pterygote Orco proteins, such as a TKKQ motif in the expanded intracellular loop 2 (positions 327\u2013330 in DmelOrco), and so we rename it simply TdomOrco.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sequence analysis of TdomOrco2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "002c2c85-f3b3-4ac8-894a-1150b4e926ca",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C40",
+      "claim": "TdomOr1-8 share a common gene structure with TdomOrco, with introns in phases 0-2-0-0-0.",
+      "claim_type": "EXPLICIT",
+      "source": "TdomOr1-8 are a set of Orco-like proteins that share a common gene structure with TdomOrco, with introns in phases 0-2-0-0-0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene structure analysis of T. domestica ORs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "164d8f0f-5993-4c96-86df-7f0ba39888b4",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C41",
+      "claim": "The last four introns of TdomOr1-8 are present in all the other TdomOr genes, as well as those of the bristletail, odonates, and mayfly.",
+      "claim_type": "EXPLICIT",
+      "source": "These last four introns are present in all the other TdomOr genes, as well as those of the bristletail, odonates, and mayfly, and correspond to the four introns identified by Robertson et al. (2003) as being ancestral to the OR family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparative gene structure analysis across species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "e22944eb-ad78-49f0-9571-d10f3f2f4241",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C42",
+      "claim": "The last four introns of TdomOr1-8 correspond to the four introns identified by Robertson et al. (2003) as being ancestral to the OR family.",
+      "claim_type": "EXPLICIT",
+      "source": "These last four introns are present in all the other TdomOr genes, as well as those of the bristletail, odonates, and mayfly, and correspond to the four introns identified by Robertson et al. (2003) as being ancestral to the OR family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison to Robertson et al. (2003) findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "c08bf996-9830-4199-88ba-0052eae8e14c",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C43",
+      "claim": "The first phase-0 intron of Orco and Or1-8 is the only additional intron shared by most pterygote Orco genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The first phase-0 intron of Orco and Or1-8 is the only additional intron shared by most pterygote Orco genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparative gene structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "37fdbf0a-7f9f-4ecc-b255-9147d862c1c3",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C44",
+      "claim": "All insect genomes analyzed have both single genes with high similarity to Orco and multiple genes with similarity to specific ORs, with the exception of the bristletail M. hrabei.",
+      "claim_type": "EXPLICIT",
+      "source": "With the exception of the bristletail M. hrabei, all insect genomes analyzed have both single genes with high similarity to Orco and multiple genes with similarity to specific ORs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' genomic analysis across multiple insect species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "e1cb3d49-fb80-42ee-99f6-4a936c2d695a",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C45",
+      "claim": "The M. hrabei genome did not encode an Orco, but instead contains 5 ORs of high similarity that form a highly supported clade in the gene phylogeny.",
+      "claim_type": "EXPLICIT",
+      "source": "The M. hrabei genome did not encode an Orco, but instead contains 5 ORs of high similarity that form a highly supported clade in the gene phylogeny (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by genomic analysis and phylogenetic analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "c3f0aa69-48c5-4fa1-bcb5-0b8e3d197b6d",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C46",
+      "claim": "An Orco could not be found in the deep RNAseq transcriptome Missbach et al. (2014) generated for their bristletail, L. y-signata.",
+      "claim_type": "EXPLICIT",
+      "source": "We also could not find an Orco in the deep RNAseq transcriptome Missbach et al. (2014) generated for their bristletail, L. y-signata.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' analysis of transcriptome data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "d7d2587d-ff0d-4219-be53-aa0f31fe2f01",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C47",
+      "claim": "Unsuccessful searches of raw reads from the M. hrabei genome project make it unlikely that M. hrabei has an Orco gene not present in the draft genome assembly due to an assembly gap.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is formally possible that M. hrabei has an Orco gene that is not present in the draft genome assembly due to an assembly gap, unsuccessful searches of raw reads from this genome project make this unlikely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' analysis of raw sequencing reads.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "6444bd7d-6bc7-499b-a716-babee240d888",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C48",
+      "claim": "If bristletails lost their Orco gene, this loss must have occurred recently in both bristletail species because their 'specific' ORs are still intact.",
+      "claim_type": "EXPLICIT",
+      "source": "First, bristletails might have lost their Orco gene, however this loss must have occurred recently in both bristletail species because their 'specific' ORs are still intact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the presence of intact specific ORs in bristletails.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "15ca32db-8dac-42e9-85ba-9d2832a07a0e",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C49",
+      "claim": "The OR family might have originated with a few specific ORs like those of M. hrabei, with the Orco lineage evolving between Archaegnatha and Zygentoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the OR family might have originated with a few specific ORs like those of M. hrabei, with the Orco lineage evolving between Archaegnatha and Zygentoma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on the phylogenetic distribution of ORs and Orco.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "01d5b951-c1dc-4ae5-a6f9-40f3bfc9bd14",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C50",
+      "claim": "Phylogenetic analysis using various sets of GRs from other insects, arthropods, and animals as outgroup to root the OR family tree does not resolve the question of OR/Orco origin confidently.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic analysis using various sets of GRs from other insects, arthropods, and animals as outgroup to root the OR family tree does not resolve this question confidently (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' phylogenetic analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "33b2054f-366e-45da-94d2-058547a323e7",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C51",
+      "claim": "If functional, the five specific ORs in M. hrabei apparently function in the absence of Orco, perhaps alone or as dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "In any case, if indeed functional, these five specific ORs in M. hrabei, at least one of which is present in L. y-signata, apparently function in the absence of Orco, perhaps alone or as dimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the absence of Orco in M. hrabei.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "23c276b2-aef5-4fc8-a488-d54edf98fb55",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C52",
+      "claim": "The OR gene family is the first molecular novelty (i.e. synapomorphy) for the Class Insecta.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we note that while insects are defined by many morphological and developmental novelties, to the best of our knowledge the OR gene family is the first molecular novelty (i.e. synapomorphy) for the Class Insecta.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the presence of ORs in all insects but not in non-insect hexapods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "e81d8060-fb13-44c4-b02d-63528f2be487",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C53",
+      "claim": "The T. domestica genome assembly resulted in 618,474 scaffolds with an N50 of 15.5 Kb and a total length of 5.5 Gb.",
+      "claim_type": "EXPLICIT",
+      "source": "The T. domestica genome assembly resulted in 618,474 scaffolds with an N50 of 15.5 Kb and a total length of 5.5 Gb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' genome assembly statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "67bdfaa8-7eb9-4825-826a-26da17533104",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C54",
+      "claim": "The T. domestica genome assembly exceeds the estimated genome size of 4.6 Gb by about 1 Gb.",
+      "claim_type": "EXPLICIT",
+      "source": "This exceeds the estimated genome size of 4.6 Gb by about 1 Gb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of assembly size to genome size estimate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "d1890385-20bb-4e90-9ba2-f30f30885411",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C55",
+      "claim": "K-mer analysis revealed a high level of heterozygosity in the T. domestica sequencing data.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our k-mer analysis revealed a high level of heterozygosity in the sequencing data, as indicated by the presence of a heterozygous peak of about twice the size of the homozygous peak (Supplementaryfile 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by k-mer frequency analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "c14575b6-3e2b-42ef-bf47-9b48bab809c7",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C56",
+      "claim": "BUSCO analysis suggested a low level of gene duplication in the T. domestica genome assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the high level of heterozygosity in the sequencing data, BUSCO analysis suggested a low level of gene duplication. Only 7% of all 1066 benchmark genes tested were duplicated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by BUSCO analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "167a4959-64d6-4c05-bd10-8be8424d7e5b",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C57",
+      "claim": "90.8% of the BUSCO genes were present in the T. domestica assembly, 63.6% of which were complete, and 27.2% incomplete.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 90.8% of the BUSCO genes were present in the assembly, 63.6% of which were complete, and 27.2% incomplete.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by BUSCO analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "7ada4482-e4f4-469b-a9b6-07475eaabec4",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C58",
+      "claim": "The T. domestica genome assembly is fragmented but likely contains the majority of all genes at least in part.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this suggests that the genome assembly is fragmented, it likely contains the majority of all genes at least in part.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from BUSCO analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "cf34549c-78ba-40b7-9f96-c658e4c4d080",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C59",
+      "claim": "RepeatModeler analysis identified a total of 1812 repeat element families in the T. domestica assembly, most of which could not be classified into known TE families (65.7%).",
+      "claim_type": "EXPLICIT",
+      "source": "The RepeatModeler analysis identified a total of 1812 repeat element families in the assembly, most of which could not be classified into known TE families (65.7%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RepeatModeler analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "2205541b-4d23-4ea7-8a75-2e83133887f7",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C60",
+      "claim": "RepeatMasker annotated 9,986,807 individual elements with a cumulative length of 2.9 Gb in the T. domestica assembly, representing about half of the entire assembly length (52.9%).",
+      "claim_type": "EXPLICIT",
+      "source": "We used the newly detected repeat elements as input database for RepeatMasker and annotated 9,986,807 individual elements with a cumulative length of 2.9 Gb, representing about half of the entire assembly length (52.9%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RepeatMasker analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "76b5393f-a69e-4bd9-8ae1-1322eb6e516c",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C61",
+      "claim": "The T. domestica genome is highly repetitive.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the genome is highly repetitive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the high proportion of repetitive elements in the assembly.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "8d968431-7cbf-4a8e-b15e-35477913ea4a",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C62",
+      "claim": "The bristletail Machilis hrabei genome encodes 5 ORs.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic analyses of all ORs we annotated in the bristletail Machilis hrabei (5 ORs), the dragonfly Ladona fulva (4 ORs), and the mayfly Ephemera danica (47 ORs), as well as the previously annotated damselfly C. splendens (6 ORs; Ioannidis et al., 2017) revealed that one of the T. domestica ORs (TdomOrco2) clustered confidently with the Orco lineage in pterygote insects (Figure 2; Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' genome annotation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "b334e36b-c4cd-4d50-a809-1708ede21345",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C63",
+      "claim": "The dragonfly Ladona fulva genome encodes 4 ORs.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic analyses of all ORs we annotated in the bristletail Machilis hrabei (5 ORs), the dragonfly Ladona fulva (4 ORs), and the mayfly Ephemera danica (47 ORs), as well as the previously annotated damselfly C. splendens (6 ORs; Ioannidis et al., 2017) revealed that one of the T. domestica ORs (TdomOrco2) clustered confidently with the Orco lineage in pterygote insects (Figure 2; Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' genome annotation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "19c01385-93b3-4320-b536-3e66a3bf6206",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C64",
+      "claim": "The mayfly Ephemera danica genome encodes 47 ORs.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic analyses of all ORs we annotated in the bristletail Machilis hrabei (5 ORs), the dragonfly Ladona fulva (4 ORs), and the mayfly Ephemera danica (47 ORs), as well as the previously annotated damselfly C. splendens (6 ORs; Ioannidis et al., 2017) revealed that one of the T. domestica ORs (TdomOrco2) clustered confidently with the Orco lineage in pterygote insects (Figure 2; Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' genome annotation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "c2b9c0f9-1a49-4a91-9597-64d6e98d8fed",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C65",
+      "claim": "The damselfly C. splendens genome encodes 6 ORs.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic analyses of all ORs we annotated in the bristletail Machilis hrabei (5 ORs), the dragonfly Ladona fulva (4 ORs), and the mayfly Ephemera danica (47 ORs), as well as the previously annotated damselfly C. splendens (6 ORs; Ioannidis et al., 2017) revealed that one of the T. domestica ORs (TdomOrco2) clustered confidently with the Orco lineage in pterygote insects (Figure 2; Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ioannidis et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "b5c1487d-75e1-4399-bcd1-39606ff8e050",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C66",
+      "claim": "The genomes of all neopteran insects analyzed to date encode ORs, ranging from 10 ORs in head lice to more than 300 ORs in ants.",
+      "claim_type": "EXPLICIT",
+      "source": "The genomes of all neopteran insects analyzed to date encode ORs, ranging from 10 ORs in head lice (Kirkness et al., 2010) to more than 300 ORs in ants (Smith et al., 2011a, 2011b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to Kirkness et al., 2010 and Smith et al., 2011a, 2011b, and shown in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "607af40e-0cfe-42ee-ba55-159be789bcff",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C67",
+      "claim": "TdomOrco is at least 55 kb long.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Orco is at least 55 kb long, Or1 is at least 14 kb long, and Or9 is at least 38 kb long.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "6173e7a2-5c4a-42d1-98e9-3dd80510c99a",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C68",
+      "claim": "TdomOr1 is at least 14 kb long.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Orco is at least 55 kb long, Or1 is at least 14 kb long, and Or9 is at least 38 kb long.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "96ab116e-e1b4-4052-911b-93d3fb356cde",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C69",
+      "claim": "TdomOr9 is at least 38 kb long.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Orco is at least 55 kb long, Or1 is at least 14 kb long, and Or9 is at least 38 kb long.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "3d5d1daf-5b2e-4606-8b8d-6c7cde1edbc4",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C70",
+      "claim": "The T. domestica genome assembly is often redundant for two OR haplotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "These searches also revealed that our genome assembly is often redundant for two OR haplotypes, presumably resulting from the majority of the sequence being generated from a single diploid individual of high heterozygosity (described above).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the presence of highly similar duplicate sequences in the assembly.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "90a1cc67-31df-4487-bce8-6e16ea2f8659",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C71",
+      "claim": "Four T. domestica OR genes are modeled as being alternatively-spliced involving multiple long first exons in tandem array that are alternatively spliced into the four short exons encoding the C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "Four of these genes are modeled as being alternatively-spliced in a fashion seen commonly in insect genomes, including the original descriptions of this family from D. melanogaster (Clyne et al., 1999; Vosshall et al., 1999). This alternative splicing is somewhat unusual because it involves multiple long first exons in tandem array that are alternatively spliced into the four short exons encoding the C-terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene structure analysis and comparison to D. melanogaster.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "e2537225-5cba-487d-bac8-aa726bf5a4e4",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C72",
+      "claim": "The alternatively-spliced T. domestica OR genes are Or15a-c, 24a/b, 27a-d, and Or31a-f.",
+      "claim_type": "EXPLICIT",
+      "source": "These genes are Or15a-c, 24a/b, 27a-d, and Or31a-f (Table S2 in Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "60d924e7-5cdd-4c4f-b2f2-d35829ace7f5",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C73",
+      "claim": "Two of the alternatively-spliced isoforms are apparent pseudogenes (Or15c and Or24b), each with single stop codons in the first long exon.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of the alternatively-spliced isoforms are apparent pseudogenes (Or15c and Or24b), each with single stop codons in the first long exon, but it is possible that these are pseudo-pseudogenes, as shown for some OR genes in Drosophila flies (Prieto-Godino et al., 2016), otherwise the remaining 41 proteins appear to be functional.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sequence analysis and comparison to Drosophila.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "71dfc116-0f31-4ba1-8609-98a939de8b60",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C74",
+      "claim": "The four OR models for L. fulva are full-length and intact.",
+      "claim_type": "EXPLICIT",
+      "source": "The four OR models including Orco for L. fulva are full-length and intact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' genome annotation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "2e99baa5-72ab-4a1d-97ed-46289ef31be2",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C75",
+      "claim": "For E. danica, in addition to Orco there are 46 OR models, 7 of which are partial models with termini or internal regions missing due to gaps in the assembly, while 10 are pseudogenes.",
+      "claim_type": "EXPLICIT",
+      "source": "For E. danica, in addition to Orco there are 46 OR models, 7 of which are partial models with termini or internal regions missing due to gaps in the assembly that could not be repaired with raw genome reads from the Sequence Read Archive (SRA) at the National Center for Biotechnology Information (NCBI), while 10 are pseudogenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' genome annotation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "e1ccccf1-2af8-4b72-8c87-31a5f0e7391f",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C76",
+      "claim": "All five M. hrabei OR models required considerable repairs of both ambiguous bases and assembly gaps using raw genome reads from the SRA, and three were joined across scaffolds.",
+      "claim_type": "EXPLICIT",
+      "source": "The bristletail genome from the i5k pilot project is not available in the Apollo browser, so models for the five OR genes in that draft genome sequence were manually built in a text editor. All five required considerable repairs of both ambiguous bases and assembly gaps using raw genome reads from the SRA, and three were joined across scaffolds (Table S3 in Supplementaryfile 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' genome annotation methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "b346becc-6c16-4cc5-b6ff-9625b3f4ad48",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C77",
+      "claim": "There is considerable RNAseq support for four of the five M. hrabei OR models from the whole-body RNAseq of the i5k and 1Kite projects.",
+      "claim_type": "EXPLICIT",
+      "source": "There is considerable RNAseq support for four of these five models from the whole-body RNAseq of the i5k and 1Kite projects (found with MEGABLAST searches at the SRA at NCBI), as well as five matching reads for MhraOr1 from the RNAseq of the related species employed by Missbach et al. (2014), Lepismachilis y-signata, detected using TBLASTN searches of raw reads downloaded from the SRA (Table S3 in Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by transcriptome data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "95fe7ff1-5b23-460a-9d1f-af18d051dfa7",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C78",
+      "claim": "The first two pairs of MhraOr genes are in inverse orientation to each other, with their tails adjacent.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the first two pairs of these MhraOr genes are in inverse orientation to each other, with their tails adjacent (Table S3 in Supplementary file 1), a feature also seen with some of the TdomOrs, although they also have some genes in the head-to-head orientation, for example Orco/Or5, Or10/25, Or11/12/22, and Or13/14 (Table S2 in Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene structure and genomic location analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "7d81384f-66de-42d9-abee-b69570d3ba4c",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C79",
+      "claim": "There are no obvious matches for any part of Orco in the genome assembly of M. hrabei using TBLASTN searches.",
+      "claim_type": "EXPLICIT",
+      "source": "We made extensive efforts to identify Orco in M. hrabei and L. y-signata using TdomOrco as query. There are no obvious matches for any part of Orco in the genome assembly of M. hrabei using TBLASTN searches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' BLAST search results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "9037c1a0-4f13-46da-a12a-3eb3af860a4e",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C80",
+      "claim": "TBLASTN search of raw genome reads from M. hrabei found nothing matching Orco.",
+      "claim_type": "EXPLICIT",
+      "source": "It is always possible that a gene might be completely unassembled in a draft genome assembly, although unlikely given we were able to assemble full-length models for MhraOr1-5, so we undertook a TBLASTN search of a set of raw genome reads that gave 5-10X coverage for MhraOr1-5 and found nothing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' BLAST search results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "a8c3fdc3-93fa-433d-ac85-90568bf68290",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C81",
+      "claim": "TBLASTN searches of the raw whole-body RNAseq reads from both the i5k M. hrabei project and the 1Kite set found no Orco.",
+      "claim_type": "EXPLICIT",
+      "source": "We also did TBLASTN searches of the raw whole-body RNAseq reads from both the i5k M. hrabei project and the 1Kite set without success.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' BLAST search results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "1d6afd15-7a71-462f-a0c6-20d42ea2c1b5",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C82",
+      "claim": "In TBLASTN searches of the raw reads from the antennal RNAseq of Missbach et al. (2014) for L. y-signata, several reads that encode an Orco protein were found and assembled into a 713 bp contig encoding 237 amino acids, but it is a contaminant with matches of 85% identity to various lepidopteran Orco proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in other insects Orco is generally well expressed in antennae and in TBLASTN searches of the raw reads from the antennal RNAseq of Missbach et al. (2014) for L. y-signata we found several reads that encode an Orco protein and were able to assemble a 713 bp contig encoding 237 amino acids, however it is a contaminant with matches of 85% identity to various lepidopteran Orco proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' BLAST search and sequence analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "7e6e75b9-c07d-4ec1-9d9a-080f32baf650",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C83",
+      "claim": "The two bristletails M. hrabei and L. y-signata do not have an Orco gene.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that these two bristletails do not have an Orco gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from extensive unsuccessful searches for Orco in genomic and transcriptomic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "2aa0ea73-b27f-400a-8fe9-3c856d5b9679",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C84",
+      "claim": "The five MhraOr genes have the same gene structure as the TdomOr9-31 genes, without the additional phase-0 intron splitting the long first exon seen in TdomOrco and the Orco-like TdomOr1-8.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also noteworthy that the five MhraOr genes have the same gene structure as the TdomOr9-31 genes, without the additional phase-0 intron splitting the long first exon seen in TdomOrco and the Orco-like TdomOr1-8 (Table S3 in Supplementary file 1), so there is no hint of Orco-like genes in this bristletail genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "c2ef4e3c-50e0-4847-8609-82f9837f3199",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C85",
+      "claim": "No evidence of either Orco or ORs was found in the draft genome assemblies for three Collembola as well as a dipluran from the i5k pilot project, Catajapyx aquinolaris.",
+      "claim_type": "EXPLICIT",
+      "source": "We similarly exhaustively examined the draft genome assemblies for three Collembola (Faddeeva-Vakhrusheva et al., 2016, 2017; Wu et al., 2017) as well as a dipluran from the i5k pilot project, Catajapyx aquinolaris, and found no evidence of either Orco or ORs, in agreement with Wu et al. (2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' genomic analysis and agrees with Wu et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "01e6fc85-8c72-4b79-bafa-f8daecce780c",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C86",
+      "claim": "Figure 1 shows the number of ORs and OR co-receptors (Orcos) for all species of the insect and other hexapod orders analyzed mapped on the hexapod phylogeny.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of ORs and OR co-receptors (Orcos) for all species of the insect and other hexapod orders analyzed was mapped on the hexapod phylogeny sensu (Misof et al., 2014).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim describes the content of Figure 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "ead3d796-ebb1-4e46-b084-959d1a60db7a",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C87",
+      "claim": "ORs are present in all insects but absent from non-insect hexapod genomes, and thus likely represent an evolutionary novelty for the Class Insecta.",
+      "claim_type": "EXPLICIT",
+      "source": "ORs are present in all insects but absent from non-insect hexapod genomes, and thus likely represent an evolutionary novelty for the Class Insecta.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is stated in the Figure 1 caption and supported by the data shown in the figure.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "dc7e20cb-2f55-4782-9969-ce5594da2f4d",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C88",
+      "claim": "Orco is present in all insects analyzed except Archaeognatha.",
+      "claim_type": "EXPLICIT",
+      "source": "Orco is present in all but Archaeognatha, an ancestrally wingless (apterygote) insect order.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is stated in the Figure 1 caption and supported by the data shown in the figure.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "bf4d9fe5-806d-4e66-a42a-98428b4f36cb",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C89",
+      "claim": "The absence of Orco in Archaeognatha suggests two scenarios including either the loss of Orco in Archaeognatha or an Orco origin following the evolution of ORs.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests two scenarios including either the loss of Orco in Archaeognatha or an Orco origin following the evolution of ORs (as indicated).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is stated in the Figure 1 caption and represents inference from the phylogenetic distribution.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "68ac5289-2ddd-4ca7-9068-e0cdedb275f9",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C90",
+      "claim": "Figure 2 demonstrates monophyly of the single-copy insect Orco with high bootstrap support.",
+      "claim_type": "EXPLICIT",
+      "source": "The Maximum Likelihood tree demonstrates monophyly of the single-copy insect Orco with high bootstrap support.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim describes the phylogenetic analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "5271f087-0bdf-4f75-a920-b3ab6dfc2fb5",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C91",
+      "claim": "The M. hrabei genome lacks Orco but encodes five ORs clustering in a single highly-supported clade.",
+      "claim_type": "EXPLICIT",
+      "source": "The M. hrabei genome lacks Orco but encodes five ORs clustering in a single highly-supported clade.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is stated in the Figure 2 caption and shown in the phylogenetic tree.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "f360d4be-9a08-4638-b2bf-411413c6a5dd",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "claim_id": "C92",
+      "claim": "T. domestica has a fully developed functional OR/Orco system.",
+      "claim_type": "EXPLICIT",
+      "source": "T. domestica has a fully developed functional OR/Orco system.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is stated in the Figure 2 caption and supported by the phylogenetic analysis.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "142fdd2f-a016-46c6-9597-ce2d57f5b312",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ORs are present in all insect genomes investigated but absent from non-insect hexapod lineages (Collembola and Diplura), indicating that the OR gene family originated with the evolution of insects and represents a molecular synapomorphy for the Class Insecta.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C29, C30, C31, C32, C85, C86, and C87 collectively demonstrate through genomic analysis across multiple hexapod orders that ORs are consistently present in all insect lineages examined (Archaeognatha, Zygentoma, Odonata, Ephemeroptera, and Neoptera) but absent from non-insect hexapods (Collembola and Diplura). The phylogenetic distribution shown in Figure 1 provides strong visual support for this pattern, and the extensive annotation efforts described in the methods strengthen confidence in these negative results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "f3c42400-582d-4a43-9112-5f5245cb6123",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Orco is absent from the ancestrally wingless insect lineage Archaeognatha (specifically M. hrabei and L. y-signata), despite the presence of specific ORs, suggesting either recent loss of Orco or that Orco evolved after the initial origin of ORs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C44, C45, C46, C47, C79-C84, C88, and C89 provide extensive evidence for the absence of Orco in Archaeognatha through multiple independent search strategies (genome assembly searches, raw read searches, transcriptome searches). The thoroughness of the negative searches (C79-C82) and the identification of a lepidopteran contaminant (C82) strengthen confidence in this conclusion. The presence of intact specific ORs (C45, C48, C84) supports that this is not simply due to poor genome quality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "fe9f75f4-340e-4792-82c6-87bb82f28abc",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The firebrat Thermobia domestica possesses a full OR/Orco system with 43 ORs encoded by 32 genes, including one true Orco gene (TdomOrco2) that clusters with pterygote Orco and shares diagnostic features like the TKKQ motif.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C35-C43, C62-C75, C90, and C92 provide comprehensive genomic and phylogenetic evidence for a complete OR/Orco system in T. domestica. The identification of TdomOrco2 as the true Orco is supported by phylogenetic clustering (C38, C90), sequence motif analysis (C39), and gene structure analysis (C40-C43). The extensive manual annotation described in the methods, including use of multiple validation strategies (RNAseq support, comparison to C. longicaudata genome, gene structure conservation), provides strong support for the completeness of this annotation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "632c5c0b-43fd-41c3-a133-dc9751452120",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ORs evolved before winged flight in insects, contradicting the hypothesis that the OR/Orco system evolved with flight, and supporting the hypothesis that ORs evolved with terrestriality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C33, and C34 are well-supported by the presence of ORs in wingless insects (Archaeognatha and Zygentoma) as demonstrated in the phylogenetic distribution (Figure 1) and genomic analyses. The presence of a full OR/Orco system in the wingless Zygentoma (C6, C35-C43) and ORs in the wingless Archaeognatha (C45, C62) directly contradicts the flight-association hypothesis (C2, C27) and supports the terrestriality hypothesis (C1, C16, C34).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "3603e15d-956c-4c63-ba6c-de55b79d6fdb",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The OR gene family represents a key evolutionary novelty and molecular synapomorphy for the Class Insecta, being the first identified molecular synapomorphy for this taxonomic class.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C9, C52, and C87 are supported by the phylogenetic distribution showing ORs present in all insects but absent from non-insect hexapods (C3, C4, C29-C32). The claim that this is the first molecular synapomorphy for Insecta (C52) is stated cautiously ('to the best of our knowledge') and is supported by the clear phylogenetic pattern. However, the claim would be strengthened by more explicit discussion of other potential molecular synapomorphies that were considered and rejected.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "080cc974-b766-4063-8775-ea5e54b3fe04",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Two alternative hypotheses are proposed for the absence of Orco in Archaeognatha: either recent loss of Orco in bristletails, or that the OR family originated with specific ORs and Orco evolved later between Archaeognatha and Zygentoma. Phylogenetic analysis cannot confidently resolve which scenario is correct.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C48-C51 present two competing hypotheses but acknowledge that phylogenetic analysis (C50) cannot resolve between them. While both hypotheses are logically consistent with the data, the lack of resolution means neither can be definitively supported. The speculation about OR function in the absence of Orco (C51) is appropriately cautious but remains untested. Additional functional or phylogenetic data would be needed to distinguish between these scenarios.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "b4f71aed-8a56-437c-89bc-266ec97347db",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The T. domestica genome assembly is 5.5 Gb with moderate fragmentation (N50 15.5 Kb), high heterozygosity, and high repetitive element content (52.9%), but contains most genes as indicated by BUSCO analysis (90.8% present, 63.6% complete).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C61 provide comprehensive genome assembly statistics supported by standard quality metrics (N50, BUSCO, k-mer analysis, RepeatModeler/RepeatMasker). The k-mer analysis (C55) provides evidence for the high heterozygosity, and the BUSCO analysis (C56-C58) indicates reasonable gene completeness despite fragmentation. The authors appropriately acknowledge limitations (fragmentation, potential haplotype duplication) while demonstrating the assembly is sufficient for gene family analysis. The discrepancy between assembly size and genome size estimate (C54) is adequately explained by heterozygosity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "11d90eda-7851-48d4-aeae-89e38586d5a2",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The five M. hrabei OR genes were manually annotated with extensive repairs using raw genome reads, with RNAseq support for four of five models, and show characteristic tail-to-tail genomic organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 describe the annotation methodology and validation for M. hrabei ORs. The extensive manual curation using raw reads (C76) and RNAseq validation (C77) provide confidence in these gene models despite the draft genome quality. The genomic organization observation (C78) is a descriptive finding that adds context but is not critical to the main conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "fdc16d36-cd02-4d2d-a423-9e7dd541e79c",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background context on OR evolution, including prior hypotheses about OR origin coinciding with terrestriality (Robertson et al., 2003) or winged flight (Missbach et al., 2014), and the role of Orco as a conserved co-receptor required for OR-based olfaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C10-C28 provide background context from prior literature. These are appropriately cited claims about general knowledge (C10-C12, C20-C22, C24) and prior work (C1-C2, C13-C19, C23, C25-C28). The citations appear appropriate and the characterization of prior hypotheses is accurate based on the cited sources. This background appropriately frames the current study's contributions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    },
+    {
+      "id": "61e3c50c-9844-44a2-899b-b4716d0c577e",
+      "content_id": "148cb36c-a44a-4a77-b694-d1625e001513",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Neopteran insects show wide variation in OR gene number, ranging from 10 ORs in head lice to more than 300 ORs in ants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 is supported by appropriate citations (Kirkness et al., 2010; Smith et al., 2011a, 2011b) and is consistent with Figure 1. This provides useful context for the OR family size variation across insects but is not a novel finding of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:45:17.395101Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "22ecf597-d745-4c69-a1ba-734934251b2c",
+      "result_id": "142fdd2f-a016-46c6-9597-ce2d57f5b312"
+    },
+    {
+      "claim_id": "34c7f8c5-2bee-4375-8d2b-0ec5bcf9e02a",
+      "result_id": "142fdd2f-a016-46c6-9597-ce2d57f5b312"
+    },
+    {
+      "claim_id": "b948d459-7e7f-4850-acac-e8be769df184",
+      "result_id": "142fdd2f-a016-46c6-9597-ce2d57f5b312"
+    },
+    {
+      "claim_id": "cd49eec6-d71b-4729-8847-e967c49f5a30",
+      "result_id": "142fdd2f-a016-46c6-9597-ce2d57f5b312"
+    },
+    {
+      "claim_id": "79fa2731-607f-40b0-a4f8-876faec1fdc7",
+      "result_id": "142fdd2f-a016-46c6-9597-ce2d57f5b312"
+    },
+    {
+      "claim_id": "b3c93b12-593d-4ba1-982f-570cc7c9781c",
+      "result_id": "142fdd2f-a016-46c6-9597-ce2d57f5b312"
+    },
+    {
+      "claim_id": "c2ef4e3c-50e0-4847-8609-82f9837f3199",
+      "result_id": "142fdd2f-a016-46c6-9597-ce2d57f5b312"
+    },
+    {
+      "claim_id": "01e6fc85-8c72-4b79-bafa-f8daecce780c",
+      "result_id": "142fdd2f-a016-46c6-9597-ce2d57f5b312"
+    },
+    {
+      "claim_id": "ead3d796-ebb1-4e46-b084-959d1a60db7a",
+      "result_id": "142fdd2f-a016-46c6-9597-ce2d57f5b312"
+    },
+    {
+      "claim_id": "151c5bd4-0fce-427d-af96-4d8cf363191f",
+      "result_id": "f3c42400-582d-4a43-9112-5f5245cb6123"
+    },
+    {
+      "claim_id": "37fdbf0a-7f9f-4ecc-b255-9147d862c1c3",
+      "result_id": "f3c42400-582d-4a43-9112-5f5245cb6123"
+    },
+    {
+      "claim_id": "e1cb3d49-fb80-42ee-99f6-4a936c2d695a",
+      "result_id": "f3c42400-582d-4a43-9112-5f5245cb6123"
+    },
+    {
+      "claim_id": "c3f0aa69-48c5-4fa1-bcb5-0b8e3d197b6d",
+      "result_id": "f3c42400-582d-4a43-9112-5f5245cb6123"
+    },
+    {
+      "claim_id": "d7d2587d-ff0d-4219-be53-aa0f31fe2f01",
+      "result_id": "f3c42400-582d-4a43-9112-5f5245cb6123"
+    },
+    {
+      "claim_id": "7d81384f-66de-42d9-abee-b69570d3ba4c",
+      "result_id": "f3c42400-582d-4a43-9112-5f5245cb6123"
+    },
+    {
+      "claim_id": "9037c1a0-4f13-46da-a12a-3eb3af860a4e",
+      "result_id": "f3c42400-582d-4a43-9112-5f5245cb6123"
+    },
+    {
+      "claim_id": "a8c3fdc3-93fa-433d-ac85-90568bf68290",
+      "result_id": "f3c42400-582d-4a43-9112-5f5245cb6123"
+    },
+    {
+      "claim_id": "1d6afd15-7a71-462f-a0c6-20d42ea2c1b5",
+      "result_id": "f3c42400-582d-4a43-9112-5f5245cb6123"
+    },
+    {
+      "claim_id": "7e6e75b9-c07d-4ec1-9d9a-080f32baf650",
+      "result_id": "f3c42400-582d-4a43-9112-5f5245cb6123"
+    },
+    {
+      "claim_id": "2aa0ea73-b27f-400a-8fe9-3c856d5b9679",
+      "result_id": "f3c42400-582d-4a43-9112-5f5245cb6123"
+    },
+    {
+      "claim_id": "dc7e20cb-2f55-4782-9969-ce5594da2f4d",
+      "result_id": "f3c42400-582d-4a43-9112-5f5245cb6123"
+    },
+    {
+      "claim_id": "bf4d9fe5-806d-4e66-a42a-98428b4f36cb",
+      "result_id": "f3c42400-582d-4a43-9112-5f5245cb6123"
+    },
+    {
+      "claim_id": "13a5cea2-9da6-4937-adec-705c2239cda5",
+      "result_id": "fe9f75f4-340e-4792-82c6-87bb82f28abc"
+    },
+    {
+      "claim_id": "b73201b3-c206-4f65-b3c3-c3f394ddd692",
+      "result_id": "fe9f75f4-340e-4792-82c6-87bb82f28abc"
+    },
+    {
+      "claim_id": "083d09ee-8908-47b6-b0aa-dfb31f1aa9d1",
+      "result_id": "fe9f75f4-340e-4792-82c6-87bb82f28abc"
+    },
+    {
+      "claim_id": "cd8b7ab4-a202-422e-bcfb-f3e3ed487656",
+      "result_id": "fe9f75f4-340e-4792-82c6-87bb82f28abc"
+    },
+    {
+      "claim_id": "428e1fc8-6cf7-4ddb-835d-9f2436b741de",
+      "result_id": "fe9f75f4-340e-4792-82c6-87bb82f28abc"
+    },
+    {
+      "claim_id": "ed6058d7-2f5a-460a-b555-999687a89f1c",
+      "result_id": "fe9f75f4-340e-4792-82c6-87bb82f28abc"
+    },
+    {
+      "claim_id": "002c2c85-f3b3-4ac8-894a-1150b4e926ca",
+      "result_id": "fe9f75f4-340e-4792-82c6-87bb82f28abc"
+    },
+    {
+      "claim_id": "164d8f0f-5993-4c96-86df-7f0ba39888b4",
+      "result_id": "fe9f75f4-340e-4792-82c6-87bb82f28abc"
+    },
+    {
+      "claim_id": "e22944eb-ad78-49f0-9571-d10f3f2f4241",
+      "result_id": "fe9f75f4-340e-4792-82c6-87bb82f28abc"
+    },
+    {
+      "claim_id": "c08bf996-9830-4199-88ba-0052eae8e14c",
+      "result_id": "fe9f75f4-340e-4792-82c6-87bb82f28abc"
+    },
+    {
+      "claim_id": "8d968431-7cbf-4a8e-b15e-35477913ea4a",
+      "result_id": "fe9f75f4-340e-4792-82c6-87bb82f28abc"
+    },
+    {
+      "claim_id": "b334e36b-c4cd-4d50-a809-1708ede21345",
+      "result_id": "fe9f75f4-340e-4792-82c6-87bb82f28abc"
+    },
+    {
+      "claim_id": "19c01385-93b3-4320-b536-3e66a3bf6206",
+      "result_id": "fe9f75f4-340e-4792-82c6-87bb82f28abc"
+    },
+    {
+      "claim_id": "c2b9c0f9-1a49-4a91-9597-64d6e98d8fed",
+      "result_id": "fe9f75f4-340e-4792-82c6-87bb82f28abc"
+    },
+    {
+      "claim_id": "607af40e-0cfe-42ee-ba55-159be789bcff",
+      "result_id": "fe9f75f4-340e-4792-82c6-87bb82f28abc"
+    },
+    {
+      "claim_id": "6173e7a2-5c4a-42d1-98e9-3dd80510c99a",
+      "result_id": "fe9f75f4-340e-4792-82c6-87bb82f28abc"
+    },
+    {
+      "claim_id": "96ab116e-e1b4-4052-911b-93d3fb356cde",
+      "result_id": "fe9f75f4-340e-4792-82c6-87bb82f28abc"
+    },
+    {
+      "claim_id": "3d5d1daf-5b2e-4606-8b8d-6c7cde1edbc4",
+      "result_id": "fe9f75f4-340e-4792-82c6-87bb82f28abc"
+    },
+    {
+      "claim_id": "90a1cc67-31df-4487-bce8-6e16ea2f8659",
+      "result_id": "fe9f75f4-340e-4792-82c6-87bb82f28abc"
+    },
+    {
+      "claim_id": "e2537225-5cba-487d-bac8-aa726bf5a4e4",
+      "result_id": "fe9f75f4-340e-4792-82c6-87bb82f28abc"
+    },
+    {
+      "claim_id": "60d924e7-5cdd-4c4f-b2f2-d35829ace7f5",
+      "result_id": "fe9f75f4-340e-4792-82c6-87bb82f28abc"
+    },
+    {
+      "claim_id": "71dfc116-0f31-4ba1-8609-98a939de8b60",
+      "result_id": "fe9f75f4-340e-4792-82c6-87bb82f28abc"
+    },
+    {
+      "claim_id": "2e99baa5-72ab-4a1d-97ed-46289ef31be2",
+      "result_id": "fe9f75f4-340e-4792-82c6-87bb82f28abc"
+    },
+    {
+      "claim_id": "68ac5289-2ddd-4ca7-9068-e0cdedb275f9",
+      "result_id": "fe9f75f4-340e-4792-82c6-87bb82f28abc"
+    },
+    {
+      "claim_id": "f360d4be-9a08-4638-b2bf-411413c6a5dd",
+      "result_id": "fe9f75f4-340e-4792-82c6-87bb82f28abc"
+    },
+    {
+      "claim_id": "52736c72-f55f-4dc7-8a77-a48a3c2b1dc4",
+      "result_id": "632c5c0b-43fd-41c3-a133-dc9751452120"
+    },
+    {
+      "claim_id": "b474da4d-9c3a-4136-91d6-46bcd6b3913a",
+      "result_id": "632c5c0b-43fd-41c3-a133-dc9751452120"
+    },
+    {
+      "claim_id": "e23a1bbc-7b29-4c77-8d8f-bbed60fb2ca4",
+      "result_id": "632c5c0b-43fd-41c3-a133-dc9751452120"
+    },
+    {
+      "claim_id": "c33c5bd8-bd4b-4059-87fd-581fdd4a7eba",
+      "result_id": "3603e15d-956c-4c63-ba6c-de55b79d6fdb"
+    },
+    {
+      "claim_id": "69a5c03a-5d9b-4436-9a65-8caace663049",
+      "result_id": "3603e15d-956c-4c63-ba6c-de55b79d6fdb"
+    },
+    {
+      "claim_id": "23c276b2-aef5-4fc8-a488-d54edf98fb55",
+      "result_id": "3603e15d-956c-4c63-ba6c-de55b79d6fdb"
+    },
+    {
+      "claim_id": "ead3d796-ebb1-4e46-b084-959d1a60db7a",
+      "result_id": "3603e15d-956c-4c63-ba6c-de55b79d6fdb"
+    },
+    {
+      "claim_id": "6444bd7d-6bc7-499b-a716-babee240d888",
+      "result_id": "080cc974-b766-4063-8775-ea5e54b3fe04"
+    },
+    {
+      "claim_id": "15ca32db-8dac-42e9-85ba-9d2832a07a0e",
+      "result_id": "080cc974-b766-4063-8775-ea5e54b3fe04"
+    },
+    {
+      "claim_id": "01d5b951-c1dc-4ae5-a6f9-40f3bfc9bd14",
+      "result_id": "080cc974-b766-4063-8775-ea5e54b3fe04"
+    },
+    {
+      "claim_id": "33b2054f-366e-45da-94d2-058547a323e7",
+      "result_id": "080cc974-b766-4063-8775-ea5e54b3fe04"
+    },
+    {
+      "claim_id": "e81d8060-fb13-44c4-b02d-63528f2be487",
+      "result_id": "b4f71aed-8a56-437c-89bc-266ec97347db"
+    },
+    {
+      "claim_id": "67bdfaa8-7eb9-4825-826a-26da17533104",
+      "result_id": "b4f71aed-8a56-437c-89bc-266ec97347db"
+    },
+    {
+      "claim_id": "d1890385-20bb-4e90-9ba2-f30f30885411",
+      "result_id": "b4f71aed-8a56-437c-89bc-266ec97347db"
+    },
+    {
+      "claim_id": "c14575b6-3e2b-42ef-bf47-9b48bab809c7",
+      "result_id": "b4f71aed-8a56-437c-89bc-266ec97347db"
+    },
+    {
+      "claim_id": "167a4959-64d6-4c05-bd10-8be8424d7e5b",
+      "result_id": "b4f71aed-8a56-437c-89bc-266ec97347db"
+    },
+    {
+      "claim_id": "7ada4482-e4f4-469b-a9b6-07475eaabec4",
+      "result_id": "b4f71aed-8a56-437c-89bc-266ec97347db"
+    },
+    {
+      "claim_id": "cf34549c-78ba-40b7-9f96-c658e4c4d080",
+      "result_id": "b4f71aed-8a56-437c-89bc-266ec97347db"
+    },
+    {
+      "claim_id": "2205541b-4d23-4ea7-8a75-2e83133887f7",
+      "result_id": "b4f71aed-8a56-437c-89bc-266ec97347db"
+    },
+    {
+      "claim_id": "76b5393f-a69e-4bd9-8ae1-1322eb6e516c",
+      "result_id": "b4f71aed-8a56-437c-89bc-266ec97347db"
+    },
+    {
+      "claim_id": "e1ccccf1-2af8-4b72-8c87-31a5f0e7391f",
+      "result_id": "11d90eda-7851-48d4-aeae-89e38586d5a2"
+    },
+    {
+      "claim_id": "b346becc-6c16-4cc5-b6ff-9625b3f4ad48",
+      "result_id": "11d90eda-7851-48d4-aeae-89e38586d5a2"
+    },
+    {
+      "claim_id": "95fe7ff1-5b23-460a-9d1f-af18d051dfa7",
+      "result_id": "11d90eda-7851-48d4-aeae-89e38586d5a2"
+    },
+    {
+      "claim_id": "fef4529f-0291-4a9a-b77f-3d5e29b06b17",
+      "result_id": "fdc16d36-cd02-4d2d-a423-9e7dd541e79c"
+    },
+    {
+      "claim_id": "d25792d5-f2ae-4186-8d8f-6776bc142e9b",
+      "result_id": "fdc16d36-cd02-4d2d-a423-9e7dd541e79c"
+    },
+    {
+      "claim_id": "0323dd3b-4106-440b-b6ec-58a19448e143",
+      "result_id": "fdc16d36-cd02-4d2d-a423-9e7dd541e79c"
+    },
+    {
+      "claim_id": "4426124e-3233-4f17-b80f-34ae23ce4de2",
+      "result_id": "fdc16d36-cd02-4d2d-a423-9e7dd541e79c"
+    },
+    {
+      "claim_id": "c8b13037-5e5d-48ea-a9eb-2f58aba84066",
+      "result_id": "fdc16d36-cd02-4d2d-a423-9e7dd541e79c"
+    },
+    {
+      "claim_id": "e423c347-c075-45fe-8427-c1ffe5c1479a",
+      "result_id": "fdc16d36-cd02-4d2d-a423-9e7dd541e79c"
+    },
+    {
+      "claim_id": "edb09c40-372d-4bb9-a04a-f009d4c3d1b8",
+      "result_id": "fdc16d36-cd02-4d2d-a423-9e7dd541e79c"
+    },
+    {
+      "claim_id": "b2a14dbd-6f93-4d00-b3bc-88944fa50552",
+      "result_id": "fdc16d36-cd02-4d2d-a423-9e7dd541e79c"
+    },
+    {
+      "claim_id": "8bb19106-8f6a-40fd-91c3-530498221542",
+      "result_id": "fdc16d36-cd02-4d2d-a423-9e7dd541e79c"
+    },
+    {
+      "claim_id": "99108441-cbae-43ba-a527-f4ecaa9d85f6",
+      "result_id": "fdc16d36-cd02-4d2d-a423-9e7dd541e79c"
+    },
+    {
+      "claim_id": "f6f3ec88-7b22-4fbe-8c42-624f58006ee5",
+      "result_id": "fdc16d36-cd02-4d2d-a423-9e7dd541e79c"
+    },
+    {
+      "claim_id": "553920ff-fe14-486a-9cc1-90979bea596b",
+      "result_id": "fdc16d36-cd02-4d2d-a423-9e7dd541e79c"
+    },
+    {
+      "claim_id": "5b3dadd2-e6dc-4644-9e22-d14f3fab4e63",
+      "result_id": "fdc16d36-cd02-4d2d-a423-9e7dd541e79c"
+    },
+    {
+      "claim_id": "38d67898-fc6e-477c-9627-4cfaf4caf4f1",
+      "result_id": "fdc16d36-cd02-4d2d-a423-9e7dd541e79c"
+    },
+    {
+      "claim_id": "b3e9b5f2-4cf4-4565-835f-e22adf2057fa",
+      "result_id": "fdc16d36-cd02-4d2d-a423-9e7dd541e79c"
+    },
+    {
+      "claim_id": "38e356eb-13c4-40c3-824b-68181211b5dd",
+      "result_id": "fdc16d36-cd02-4d2d-a423-9e7dd541e79c"
+    },
+    {
+      "claim_id": "3c1893fc-0b27-4b10-8c25-6ca1180788d8",
+      "result_id": "fdc16d36-cd02-4d2d-a423-9e7dd541e79c"
+    },
+    {
+      "claim_id": "1fffd668-9897-4305-8ec0-e83e9df968b6",
+      "result_id": "fdc16d36-cd02-4d2d-a423-9e7dd541e79c"
+    },
+    {
+      "claim_id": "79975858-3be3-4de1-bf82-08b09223ef20",
+      "result_id": "fdc16d36-cd02-4d2d-a423-9e7dd541e79c"
+    },
+    {
+      "claim_id": "b57c915e-38d7-48a7-827c-e782412d9bba",
+      "result_id": "fdc16d36-cd02-4d2d-a423-9e7dd541e79c"
+    },
+    {
+      "claim_id": "771ed4e5-80a6-4a33-8ed0-34c1be42695f",
+      "result_id": "fdc16d36-cd02-4d2d-a423-9e7dd541e79c"
+    },
+    {
+      "claim_id": "b5c1487d-75e1-4399-bcd1-39606ff8e050",
+      "result_id": "61e3c50c-9844-44a2-899b-b4716d0c577e"
+    }
+  ],
+  "comparisons": []
+}

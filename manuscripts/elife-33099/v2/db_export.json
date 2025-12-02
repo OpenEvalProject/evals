@@ -1,0 +1,2198 @@
+{
+  "submission": {
+    "id": "cba7d7fe-4594-4d3d-bbe9-2f24e22a4ae2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:43:23.558793Z",
+    "updated_at": "2025-12-02T00:43:23.558793Z"
+  },
+  "content": [
+    {
+      "id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "submission_id": "cba7d7fe-4594-4d3d-bbe9-2f24e22a4ae2",
+      "content_type": "manuscript",
+      "content_text": "# Metabolic interactions between dynamic bacterial subpopulations\n\n## Authors\n\n- Adam Z Rosenthal<sup>1</sup> ([ORCID: 0000-0002-6936-3665](https://orcid.org/0000-0002-6936-3665))\n- Yutao Qi<sup>1</sup>\n- Sahand Hormoz<sup>1</sup>\n- Jin Park<sup>1</sup>\n- Sophia Hsin-Jung Li<sup>3</sup> ([ORCID: 0000-0001-8972-6921](https://orcid.org/0000-0001-8972-6921))\n- Michael B Elowitz<sup>1</sup> ([ORCID: 0000-0002-1221-0967](https://orcid.org/0000-0002-1221-0967)) \u2020\n\n### Affiliations\n\n1. Division of Biology and Biological Engineering California Institute of Technology Pasadena United States\n2. Department of Applied Physics California Institute of Technology Pasadena United States\n3. Department of Molecular Biology Princeton University Princeton United States\n4. Howard Hughes Medical Institute Pasadena United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIndividual microbial species are known to occupy distinct metabolic niches within multi-species communities. However, it has remained largely unclear whether metabolic specialization can similarly occur within a clonal bacterial population. More specifically, it is not clear what functions such specialization could provide and how specialization could be coordinated dynamically. Here, we show that exponentially growing Bacillus subtilis cultures divide into distinct interacting metabolic subpopulations, including one population that produces acetate, and another population that differentially expresses metabolic genes for the production of acetoin, a pH-neutral storage molecule. These subpopulations exhibit distinct growth rates and dynamic interconversion between states. Furthermore, acetate concentration influences the relative sizes of the different subpopulations. These results show that clonal populations can use metabolic specialization to control the environment through a process of dynamic, environmentally-sensitive state-switching.\n\n## Introduction\n\nCo-utilization of carbon sources was described alongside diauxie by Jacques Monod in his PhD thesis (Monod, 1958), and is common in many organisms (Peyraud et al., 2012). In the Gram-positive bacterium Bacillus subtilis, two preferred carbon sources are co-utilized: glucose and malate (Kleijn et al., 2010). When both of these carbon sources are available they are consumed simultaneously, generating growth rates that surpass those achieved with either substrate alone (Kleijn et al., 2010). Under conditions of rapid growth, co-consumption of glucose and malate leads to the accumulation of high levels of acetate (Kleijn et al., 2010). As a weak organic acid, acetate can be harmful to cells even in buffered medium (Rosenthal et al., 2008). Acetate and related short-chain fatty acids enter the cell passively in the neutral form and then dissociate intracellularly, releasing a proton and transiently acidifying the cytoplasm (Russell and Diez-Gonzalez, 1997; Roe et al., 1998). The intracellular dissociation of acetate also disrupts the cellular anion balance, with negative effects on metabolism (Roe et al., 1998; Roe et al., 2002) and transcription (Rosenthal et al., 2008). When extracellular acetate levels rise to toxic levels the growing Bacillus subtilis culture consumes the acetate and produces acetoin, a non-toxic pH-neutral overflow metabolite that can be used as a carbon source in later growth stages (Speck and Freese, 1973) (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/33099/elife-33099-fig1-v2.jpg)\n\n**Figure 1.:** (A) B. subtilis uses glucose and malate as preferred carbon sources, and under aerobic culture conditions produces acetate and acetoin as major overflow metabolites. Promoter reporter strains were made for genes participating in the reactions marked with a yellow dot (B) Histograms depict the heterogeneous expression of the central metabolism genes sucC (top panel) and alsS (bottom panel). Insets using merged phase and fluorescence images show typical fields of cells, including cells in the high expressing tail of the distributions. (C) The heterogeneous expression of sucC (red line) and alsS (green line) is maximal at different timepoints along the growth curve (black line). Black arrows denote the sampling timepoints shown in Figure 1B. (D) A line graph depicting the accumulation of extracellular acetate and acetoin in the growth media during exponential and early stationary growth (OD600, black line). Acetate (red line) is released around mid-exponential phase, and is reabsorbed at a later time during which acetoin is produced (green line).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33099/elife-33099-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The expression levels of promoter reporters for the genes citB, citZ, fumC, odhA, pdhA, ptsG,, and tkt in individual cells are shown from cultures in mid exponential phase (OD6000.8\u20131.2). Cells with similar expression levels were binned and values for each bin are displayed in the histograms. The histogram panels are ordered based on skew, from largest to smallest. Cells were collected from cultures grown in M9 Glucose/Malate media. Histograms in panel A use normalized X and Y axis values to show details for each promoter reporter.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/33099/elife-33099-fig1-figsupp2-v2.jpg)\n\nA biphasic growth strategy, in which acetate is produced to a toxic level and then reabsorbed and replaced by a non-toxic metabolite (Wolfe, 2005), is common to many bacterial species and is important both for understanding the basic biology of bacterial growth in culture, and for applications in metabolic engineering (Papagianni, 2012). However, it has generally been studied only at the population level, implicitly assuming a homogeneous progression of the entire culture from acetate producing to acetate detoxifying states. By contrast, single cell approaches suggest that bacterial populations can exhibit enormous heterogeneity in functional and gene expression states (Eldar et al., 2009; Locke et al., 2011; S\u00fcel et al., 2006; Levine et al., 2012; Davidson and Surette, 2008; Dubnau and Losick, 2006; Gefen and Balaban, 2009). This prompts the questions of whether microbial cells differentiate into metabolically distinct subpopulations, and more specifically, whether acetate production and detoxification might occur in distinct cells specializing in acetate production or detoxification, respectively.\n\n## Results\n\nTo address these questions we constructed a library of strains with reporters for key genes involved in central carbon metabolism, acetate production, and organic acid detoxification (Figure 1A). We introduced a fluorescent protein (YFP) under the control of promoters for 13 different metabolic genes and stably incorporated them into the commonly used sacA site within the genome (Supplementary file 1), (Eldar et al., 2009; Locke et al., 2011). We chose to use fluorescent promoter reporters because they allow acquisition of dynamic measurements from individual living cells, are easy to construct and integrate into the B. subtilis genome, allow for analysis of multiple genes within the same cell, and can be used in fluorescence cell sorting for RNAseq experiments. Using quantitative single-cell fluorescence microscopy, we analyzed the distribution of expression levels of these 13 metabolic genes in individual cells at different times along the growth curve in buffered culture medium containing 22 mM glucose and 50 mM malate. To eliminate oxygen gradients, 10 mL cultures were grown in 250 mL flasks with rapid shaking (250 RPM).\n\nFour genes had expression levels that were at or near background and were not considered further (acoA, gntZ, pycA, sdhC). Most of the genes showed unimodal distributions (Figure 1\u2014figure supplement 1), with relatively little skew (less than \u00b10.7). Two genes, sucC and alsS, encoding succinate co-A ligase and acetolactate synthase, respectively, were more heterogeneous (Figure 1B). We observed skew values greater than 1 (4.72 and 1.14, respectively) with 3.8% of PsucC-YFP and 8.1% of PalsS-YFP cells exhibiting high expression levels (\u22652 standard deviations above the mean) at OD600 ~0.8 (sucC) and OD600 ~2 (alsS). In addition, for both genes, we observed cells whose expression exceeded the mean by >3 fold. While gene expression distribution can be broader immediately after gene activation than at steady-state (Shahrezaei and Swain, 2008), both sucC and alsS maintained heterogeneous expression for several hours after the onset of expression. For these reasons, we decided to focus on these two genes for further study.\n\nTo better understand when this heterogeneity emerges in batch culture, we performed a time course analysis of the fraction of sucC and alsS positive cells (cells\u00a0\u2265\u00a02 standard deviations above the mean were denoted sucC+ and alsS+, Figure 1C). We observed that the subpopulation of sucC+ cells only existed transiently, in mid- to late-exponential phase (Figure 1C), coinciding with the time and culture optical density at which acetate production was observed (when the time derivative in acetate, that\u00a0is, the rate of change in acetate concentration, is positive\u00a0~150\u2013300 min, Figure 1D). This observation suggested that sucC expression could be involved in acetate production. A parallel analysis of alsS expression revealed the opposite behavior, with alsS expression dynamics coinciding with a decrease in acetate and a concomitant increase in acetoin levels (Figure 1C,D). This behavior is generally consistent with the known role of alsS in acetoin production in response to acetate toxicity (Speck and Freese, 1973). Together, these results show that a dynamic change in acetate and acetoin levels in the culture overlaps with changes in the population fraction of sucC and alsS expressing cells.\n\nA role for sucC in acetate production has not been studied previously. To understand the relationship between the subpopulation marked sucC+ and acetate production, we used fluorescence activated cell sorting (FACS) of the PsucCYFP reporter strain to sort cells expressing YFP from a SucC promoter at the time of peak acetate levels, and performed RNAseq to compare gene expression profiles (Figure 2A, Figure 2\u2014figure supplement 1). As expected, sucC expression was elevated 2-fold in the sucC+ sorted subpopulation (blue dot, Figure 2A). This is particularly meaningful considering the fact that the fluorescent marker used for sorting is a stable reporter, making it likely that some sorted cells may have high level of fluorescent signal even after exiting the transcriptionally active state. For most genes, we observed a broad correlation in gene expression between the two populations. However, RNAseq analysis with cuffdiff (Trapnell et al., 2010) and gene set enrichment analysis with GSEA (Subramanian et al., 2005) showed that genetic competence genes (Berka et al., 2002) were significantly enriched in the\u00a0~300 upregulated genes in the sucC+\u00a0subpopulation (red dots and inset, \u22122A and supplementary file 2; GSEA p<e-16). The sucC+ population also exhibited increased expression of the phosphate acetyltransferase gene, pta (green dot, Figure 2A), the enzyme that catalyzes the final step in overflow acetate production. Thus, sucC expression marks a distinct gene expression state that could be involved in acetate production.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/33099/elife-33099-fig2-v2.jpg)\n\n**Figure 2.:** (A) RNAseq of cells sorted at either a high or moderate sucC level reveals positive correlation between sucC expression, the competence program, and the acetate metabolism gene pta. Cells expressing YFP under the control of the sucC promoter were sorted at high or normal expression levels. Genes for genetic competence (red) and acetate production (pta \u2013 green) are higher in cells expressing high levels of sucC. The inset histogram shows a histogram of log2 fold change for all genes (grey) and the competence program genes (red) (B) A scatter plot shows that the expression of sucC reporter is positively correlated with the comG reporter, a marker for the competence program. Each dot represents a single cell centered on the mean fluorescence of reporters for sucC and comG. The right panel shows fluorescent microscopy images taken from a typical field of cells (C) A scatter plot shows that the expression of the sucC reporter is negatively correlated with expression of the metabolic gene pckA. Each dot represents a single cell centered on the mean fluorescence of reporters for sucC and pckA. Right panel shows fluorescent microscopy images taken from a typical field of cells. (D) The competence gene expression program is necessary for the buildup of high levels of extracellular acetate. Growth curves demonstrate only a small difference in growth of wildtype strain (solid black line) or the competence-null \u2206comK strain (dashed black line). However, maximal acetate buildup is approximately five fold higher in the wildtype strain (solid red line) than in a strain that is unable to produce the competent cell population (\u2206comK dashed red lines).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33099/elife-33099-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Cells carrying a promoter reporter expressing YFP under control of the sucC promoter were sorted based on relative YFP fluorescence. The G3 sorting gate (blue regions corresponding to 4.3% of analyzed events) was designated \u2018PsucC High\u2019. The G2 sorting gate (green region corresponding to 88.45% of analyzed events) was designated \u2018PsucC Normal\u2019.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/33099/elife-33099-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Scatter plots show that the expression of sucC reporter (CFP) is positively correlated with expression of the YFP promoter reporters for the classical competence program genes comK, nucA, and rapH in single cells. Each dot represents a single cell centered based on the mean fluorescence of fluorescent reporters for sucC and the competence gene.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/33099/elife-33099-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Three replicate scatter plots show that the expression of sucC reporter (CFP) is negatively correlated with expression of the YFP promoter reporter for the Phosphoenolpyruvate metabolism gene pckA in single cells. Each dot represents a single cell centered based on the mean fluorescence of fluorescent reporters for sucC and the competence gene. The red dashed lines show regions used in the figure to test for anticorrelation using the Fisher Exact Test. P values for the Fisher exact test (anticorrelation) are displayed for each replicate, as well as R values.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/33099/elife-33099-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) The expression levels of promoter reporters for the genes sucC (CFP), and comG (YFP) in individual cells were determined in wildtype cells (blue dots and blue shading) as well as in cells in which the master competence regulator comK was deleted (\u0394comK) (red dots and red shading). Cells with similar expression levels were binned and values for each bin are displayed in the histograms. Cells were collected from cultures grown in M9 Glucose/Malate media. The wildtype cultures had greater than 4% of cells expressing the reporter at levels\u00a0>\u00a02 standard deviations above the mean. Values in this tail of the distribution are shown in the zoom-in windows below the main panels. (B) Global gene expression of strains with a deletion of the competence master regulator comK is compared to cells displaying induced competence (constitutively activated comK) using RNAseq. Competence genes, pta, and sucC are elevated in samples that are in the competent state.\n\nBased on the strong correlation between sucC expression and competence gene expression in the RNAseq results (Figure 2A), we next asked whether the sucC+ population represented the competent state. To analyze the relationship between sucC expression and genetic competence in single cells, we constructed four dual reporter strains, expressing CFP from the sucC promoter and YFP from one of four competence promoters: comG, comK, nucA and rapH (Berka et al., 2002; Ogura et al., 2002). Imaging revealed a clear positive correlation between sucC and the competence genes (Figure 2B, Figure 2\u2014figure supplement 2). This positive correlation was not general to all metabolic genes, as sucC expression was anti-correlated with pckA (Figure 2C, Figure 2\u2014figure supplement 3), a gene involved in phosphoenolpyruvate synthesis (Meyer and St\u00fclke, 2013). We note that pta (phosphate acetyltransferase gene) and sucC were previously observed to be up-regulated in the competent state (Berka et al., 2002; Ogura et al., 2002). Together, these results suggest that individual cells can exist in at least two distinct metabolic states, one of which represents genetically competent cells and involves increased expression of sucC and pta, among other genes.\n\nWe next assessed how competence might be linked to elevated acetate production. The competence system is controlled by a noise-excitable gene circuit that stochastically initiates transient episodes of differentiation in individual cells (S\u00fcel et al., 2007; S\u00fcel et al., 2006; Ca\u011fatay et al., 2009; Maamar et al., 2007; Hahn et al., 1994) To better understand the relationship between competence and acetate metabolism, we next asked whether activation of the competence system is necessary for increased sucC expression and acetate metabolism. Strains in which the competence master transcription factor comK is deleted (Supplementary File 1) exhibited greatly reduced acetate production (Figure 2D) and a loss of sucC as well as comG expression (Figure 2\u2014figure supplement 4). In addition to the reduced level of acetate itself, expression of pta, the key step in acetate production, is greatly diminished in strains in which comK is deleted, both in our conditions (Figure 2\u2014figure supplement 4B) and also in data from previous microarray experiments (Ogura et al., 2002; Berka et al., 2002). Although the competent state has been suggested to be involved in other functions, such as attachment, motility, antibiotic resistance, and DNA metabolism (Redfield, 1993; Hahn et al., 2015; Bakkali, 2013; Finkel and Kolter, 2001), a role in central carbon metabolism has not been reported. These results indicate that the sucC subpopulation is controlled by the competence system, linking competence both to an alternative metabolic state and to the control of acetate levels in culture.\n\nTo better understand the dynamics with which cells switch into the competent state and later into the alsS+ state, we used the \u2018Mother Machine\u2019 microfluidic device (Figure 3A), to conduct long-term analysis of individual cells over tens of cell generations under chemostatic conditions (Wang et al., 2010; Norman et al., 2013). We set up the Mother Machine as described previously (Norman et al., 2013), but cultured cells with conditioned media obtained from batch growth of B. subtilis cultures at different final optical densities. Specifically, we used media from cultures at OD600 0.8 and OD600 2.0, points during the peak of sucC+ or alsS+ expression, respectively. This approach provides the simplicity of long-term chemostatic analysis with the ability to compare cellular behavior at different culture time-points.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/33099/elife-33099-fig3-v2.jpg)\n\n**Figure 3.:** (A) A schematic of the Mother Machine microfluidic experiment. Cells are loaded into growth channels that are capped on one end and surrounded by flowing media. A \u2018mother\u2019 cell settles at the capped end, and produces daughters. The daughters at the uncapped end of the growth channel are washed away by the current of media. Positions were filmed for up to 4 days, and for visualization purposes the images from each growth channel were cropped and aligned to generate a kymograph depicting time on the x-axis. (B) Filmstrip kymographs from representative mother-machine experiments using conditioned media at OD600 0.8 and sucC reporter strain (left panel) or conditioned media at OD600 2.0 using alsS reporter strain (right panel). Dashed red lines show the trend of growth of two daughters, a sucC+ and sucC- pair on the left panel and a alsS+ and alsS- pair on the right panel. As seen from the slope of the trend lines and as indicated below the kymographs, the elongation rates of both sucC+ and alsS+ cells are slower than their counterparts. All values reported (events per 100 hr, elongation rate, and dwell time) were averaged from at least three separate movies per condition. Representative mother machine movies are available in the supplement. (C) Extracellular acetate levels activate heterogeneous expression of the alsS promoter. A histogram shows the population of cells expressing different levels of YFP under control of the alsS promoter. When no acetate is added (green line), practically all cells are in the low expressing portion of the histogram. When extracellular acetate levels are added to mimic the maximal amount produced in the growth curve (orange and red lines), some cells remain in the low expressing portion of the histogram, but a correspondingly larger number of cells are in the long tail of high alsS expression.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33099/elife-33099-fig3-figsupp1-v2.jpg)\n\nUsing the Mother Machine, we analyzed cell lineages for up to 4 days (approximately 60 generations) for a total of 1,400 cell generations (Figure 3B). We tabulated the number of activation events per hour occurring in the terminal (top) cell of each channel, as well as the length of time that cells remained in an activated state (dwell time). Finally, we also measured the length of cells through successive frames of the movie, to obtain the mean relative elongation rates of alsS+\u00a0and alsS- cells (Materials and Methods).\n\nWith sucC-inducing media (conditioned at OD 0.8), we observed rare episodes of sucC activation in some cells, lasting for approximately four hours each (252\u00a0\u00b1\u00a089 min, mean\u00a0\u00b1standard deviation for n\u00a0=\u00a031 events) (Figure 3B, left). Consistent with previous analysis of competence dynamics (S\u00fcel et al., 2006), sucC+ cells divided less frequently and grew more slowly than other cells in the same movies (elongation rates of 47.4 \u00b1 2.7 %/hr and 67.7 \u00b1 2.3 %/hr, respectively). Cells in the activated state could switch out of the sucC+ state and resume normal growth rates (Figure 3\u2014figure supplement 1, Video 1). Under these conditions, we did not observe activation of alsS expression. By contrast, in the OD 2.0 conditioned media we did not observe activation of sucC expression, but did observe frequent pulses of alsS gene expression. alsS+ cells grew at a slightly reduced elongation rate (63 \u00b1 2.6 %/hr increase compared to 74 \u00b1 2.3 %/hr for alsS- cells, Figure 3B, right panel, Video 2). Together, these results provide rates of transitions into the sucC+ (competent) and alsS+ gene expression states, and show that these states have altered growth rates and respond to medium composition.\n\n![Video 1.](https://cdn.elifesciences.org/articles/33099/elife-33099-video1.mp4.jpg)\n\n**Video 1.:** Bright green cells, expressing high levels of sucC (sucC+) have a slower growth and division rate, but can still divide.\n\n![Video 2.](https://cdn.elifesciences.org/articles/33099/elife-33099-video2.mp4.jpg)\n\n**Video 2.:** Bright green cells, expressing high levels of alsS (alsS+) are able to divide.\n\nThese results further suggested the possibility that acetate predominantly produced by sucC+ cells early in the growth could induce cell switching to the alsS+ state in later growth stages, when it accumulates to toxic levels. However, many media components could differ between the OD600 0.8 and OD600 2.0 cultures. To determine whether acetate was sufficient to affect alsS expression, we cultured reporter cells in varying levels of acetate, in unconditioned liquid medium, and quantified the fraction of alsS+ cells. We observed both a systematic increase in the distribution of alsS expression levels, and in the fraction of cells in the high expressing \u2018tail\u2019 of the distribution (Figure 3C).\n\nThe Mother Machine is ideal for analyzing cells over multiple generations in a relatively constant environment but not ideal for analyzing responses to environmental changes that happen as a consequence of growth. We therefore designed microcolony pad experiments in which acetate was added to standard microcolony medium (Eldar et al., 2009; Locke et al., 2011; Young et al., 2011) to 20 mM, the acetate concentration present in mid-exponential phase (Figure 1D) (Speck and Freese, 1973). In these experiments (Figure 4), all cells started with a low growth rate, likely owing to the initial acetate present in the growth media. As cells divided, approximately half of the population switched on high levels of alsS expression within 7 to 10 hr (Figure 4, Figure 4\u2014figure supplement 1, Videos 3\u20135). As growth progressed, these alsS+ cells exhibited a reduced growth rate, similar to that of the original culture. However, a distinct subpopulation with approximately 2.5-fold lower alsS expression emerged (alsS-), becoming greater than 70% of the population. These cells exhibited a faster division rate (Figure 4B, Figure 4\u2014figure supplement 1) and faster elongation rate (Figure 4C, Figure 4\u2014figure supplement 2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/33099/elife-33099-fig4-v2.jpg)\n\n**Figure 4.:** (A) A filmstrip of a representative timelapse experiment. Cells were grown on agarose pads containing acetate at a level that mimics mid-exponential phase. Additional filmstrips are added in supplementary movies (B) AlsS+ cells divide more slowly. A genealogy tree depicts cell division events in the experiment shown in panel A. alsS levels are color coded by the heatmap on the right. Cells switch in and out of high alsS expression levels. Cells expressing high alsS levels (red and orange) divide more slowly than cells with low alsS levels (blue). Similar genealogy trees are provided for three separate experiments in Figure 4\u2014figure supplement 1. (C) AlsS- cells in the end of the experiment have faster elongation rates. Cells in the last 7 frames of the experiment which had arbitrary fluorescence levels greater than 5400 were designated alsS+ and those expressing less were designated alsS-. The elongation rate of each group of cells was determined and plotted as a histogram. alsS- cells (blue line) had a median elongation rate of 65.2 %/hr while alsS+ cells (red line) had a median elongation rate of 19.96 %/hr. Similar analysis was performed for three separate experiments. (D) Summary sucC and alsS interactions (schematic): In early growth stages a subset of cells become sucC+. These cells secrete acetate, which accumulates to toxic levels. High acetate levels in turn activate some cells in the population to preferentially express metabolic genes for the production of acetoin, a non-toxic pH-neutral metabolite. Finally, acetoin replaces acetate in the media.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33099/elife-33099-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The genealogy plots from three replicate pad experiments are provided. The movies from each movie are included as supplementary pad movies. Time in the movie is indicated on the tree ordinate (Y axis). The level of alsS is indicated by the provided heatmap.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/33099/elife-33099-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) The elongation rate of each cell throughout the entire length of the experiment is provided in the ordinate (Y axis) for all different times in the movie. The level of alsS promoter reporter fluorescence is indicated in the provided heatmap. Early in the movie all cells have low PalsS expression levels and slow elongation rate. Near the end of the movie cells expressing high levels of alsS (yellow, orange, and red dots) appear, having a slow elongation rate. Additionally, a population of low expressing cells (blue) with a faster elongation rate also appear near the end of the experiment. (B) The level of alsS in the final few frames is bimodal. Cells from the final frames were binned according to the level of alsS fluorescence. A low expressing population (AU\u00a0<5400) and a high expressing population (AU\u00a0>5400) are present. (C) The elongation rate in the final frames is higher for cells expressing low levels of alsS. Cells were designated high and low expressing based on the parameters in panel (B). Cells from each group (alsS high and alsS low) were binned based on elongation rates and bins were displayed as a histogram. The distribution of growth rates from cells expressing high alsS levels (red line) is left shifted (lower elongation values) compared to that of cells expressing high alsS levels (blue line).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/33099/elife-33099-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Colonies started with equal cell numbers of a B. subtilis alsS deletion strain (\u0394alsS) or wildtype strain were plated either next to themselves or next to each other. Wildtype colonies grew larger than \u0394alsS colonies. Colonies of \u0394alsS that were cultured next to (not physically touching) wildtype strain grew larger than \u0394alsS colonies that were plated a distance away from the wildtype strain. The figure shows representative colonies from three separate petri dishes. Each dish had four self-self and four wildtype-\u0394alsS sets of colonies. This result demonstrates that the wildtype strain enhances the growth of the deletion strain by altering the extracellular growth environment.\n\n![Video 3.](https://cdn.elifesciences.org/articles/33099/elife-33099-video3.mp4.jpg)\n\n**Video 3.:** Bright green cells, expressing high levels of alsS (alsS+) divide and elongate more slowly, but are able to divide.\n\n![Video 4.](https://cdn.elifesciences.org/articles/33099/elife-33099-video4.mp4.jpg)\n\n**Video 4.:** Bright green cells, expressing high levels of alsS (alsS+) divide and elongate more slowly, but are able to divide.\n\n![Video 5.](https://cdn.elifesciences.org/articles/33099/elife-33099-video5.mp4.jpg)\n\n**Video 5.:** Bright green cells, expressing high levels of alsS (alsS+) divide and elongate more slowly, but are able to divide.\n\nThe fast growing alsS- cells that appeared late in pad growth experiments had a large growth advantage compared to the slow growing alsS+ cells (median elongation rates of 65 %/hr and 20 %/hr, respectively). In general, growth in the chemostatic Mother Machine using conditioned media is faster than on a pad with non-conditioned media containing acetate. However, the difference between alsS- and alsS+ cells is much smaller in the microfluidic condition (74 %/hr vs 63 %/hr for alsS- and alsS+). This finding is consistent with the established role of acetoin as a molecule secreted to counter the pH and anion producing toxic effect of secreted short chain fatty acids,including acetate (Xiao and Xu, 2007; Speck and Freese, 1973). In the pad environment, transient activation of genes for the production of the pH-protective acetoin in the alsS+ cells has the potential to produce a milder growth environment which may enable other cells to grow faster (Figure 4D). By contrast, in the mother-machine experiments (Figure 3), while cells switch in and out of the alsS metabolic state, the chemostatic nature of the device minimizes their ability to impact the growth rates of their neighbors.\n\nTo test the idea that alsS+ cells can enhance the growth of alsS- cells by influencing the extracellular environment, we seeded petri plates with equal numbers of cells from either wild-type or \u2206alsS B. subtilis strains. The wildtype strain produced larger colonies than the deletion strain (Figure 4\u2014figure supplement 3). However, \u0394alsS colonies plated next to wildtype colonies exhibited a distinct growth advantage compared to the same colonies plated further away from the wildtype strain (Figure 4\u2014figure supplement 3), indicating that alsS+\u00a0cells (in the wildtype colony) alter the growth environment to benefit \u0394alsS cells. This may occur through detoxification by alsS+\u00a0cells (consistent with the role of alsS in the literature). However, our data do not rule out alternative scenarios in which alsS+ cells provide this benefit through a distinct mechanism, for example by the secretion of a shared metabolite or co-factor.\n\n## Discussion\n\nThe natural metabolic niches in soil occupied by B. subtilis are not well understood, and likely heterogeneous. In general, growth of soil organisms is typically highest near deposits of organic materials which serve as carbon and nitrogen sources, including deposits of rotting fruits and vegetation. In many fruits and vegetables both organic acids (including malic acid) and sugars are very high, providing a natural setting where B. subtilis has access to its two preferred carbon sources simultaneously. B subtilis is commonly enriched (almost to levels of purity) in traditional fermentation of certain foods, including fermented soy-bean foods (eg natto) that are common in Asia (Kubo et al., 2011). In these beans sugar is present, and malic acid is also present in the root system of legumes and in soybean exudate, where it plays a role in iron homeostasis as a metal chelating agent (Tiffin and Brown, 1962).\n\nThe \u2018acetate switch\u2019 refers to the accumulation and reabsorption of acetate. It is a classic hallmark of bacterial growth in aerobic conditions, common to many bacteria including B. subtilis and E. coli (Wolfe, 2005). It allows for rapid initial growth until acetate levels and associated acidity reach toxic levels, at which point acetate is reabsorbed and replaced with pH-neutral overflow metabolites such as acetoin (Wolfe, 2005; Speck and Freese, 1973). Growth strategies in which a preferred toxic overflow metabolite is produced under aerobic conditions are also used by other organisms that expel and control different fermented toxic overflow metabolites, including ethanol fermentation by yeast (Otterstedt et al., 2004) and lactic acid in lactobacillus species (Borch and Molin, 1989). Interestingly, in the fermentation of ethanol by the budding yeast Saccharomyces cerevisiae, ethanol is produced in dynamic bursts in which some cells switch in and out of fermentative metabolism. These bursts can be synchronized in chemostat growth (Tu et al., 2005), but also appear in batch culture (Silverman et al., 2010). In yeast, the single cell dynamics, mechanisms, and role of these bursts have not been fully elucidated. However, the presence of metabolically specialized subpopulations of cells in both eukaryotes and bacteria suggests that segregating different fermentative or respiratory pathways into individual cells may be a general strategy. It could function to avoid metabolic incompatibilities (Brandriss and Magasanik, 1981; Ackermann, 2015; Kumar et al., 2010), controlling cellular challenges such as reducing potential (Liu et al., 2017), or to optimize enzyme and substrate scaling, in which locally high concentrations of enzymes and substrates may be needed for efficient enzymatic conversion to occur (Nikel et al., 2014; Ackermann, 2015). Better understanding of the principles that govern segregation of metabolic activities will facilitate metabolic engineering and industrial fermentation approaches. This is especially true for commonly used industrial strains which naturally produce multiple fermentation products. For example, E. coli strains simultaneously produce five different fermentation products during mixed-acid fermentation (Clark, 1989).\n\nThe rapid release of toxic overflow products also has a role in the context of competition within a multi-species environment. In such environments, a quick buildup of toxic products can be advantageous to ward off competing species. In the case of human infectious disease, the buildup of byproducts such as lactic acid from normal microbiota limits infection by pathogens that are not lactic acid specialists (O'Hanlon et al., 2013). Likewise, in industrial fermenters and microbial food fermentation secreted overflow metabolites, including acetate and ethanol, limit contamination. Additionally, if a particular metabolic niche is transient, as in the case of acetate production in B. subtilis colony growth or batch culture, a strategy in which cells can switch in and out of metabolic states can be advantageous relative to an alternative scenario in which multiple strains are evolutionarily \u2018locked\u2019 into distinct specialist roles. This is especially true if the metabolic niche (e.g. acetate) is short-lived, because a \u2018locked\u2019 specialist strain would be at a disadvantage during periods of growth when acetate is absent.\n\nIn this study, we linked the presence of extracellular acetate with the activation of alsS in a subset of cells. In the case of competence and sucC, which are both controlled by the master regulator comK, quorum sensing plays a critical role in the activation of the competence program (Dubnau, 1991). Maximizing competence requires\u00a0specific media conditions (Dubnau, 1982), raising the possibility that alongside quorum sensing peptides, secreted metabolic byproducts also play a role in this process.\n\nOur results reveal that several metabolic processes may be affiliated with a given subpopulation. For instance, it is not clear at this point how sucC is related to acetate metabolism. One possible connection between sucC expression and acetate production might be that during co-consumption of glucose and malate, the TCA cycle may be overloaded with incoming material, causing accumulation of intermediates that can impact the glycolytic pathway, including acetate secretion. Another possibility is that sucC is used to regulate coenzyme-A levels at a time when a large amount of coenzyme-A is used and freed when pyruvate is converted to acetyl-coA and then acetate. Additionally, alongside the roles of the sucC and pta metabolic genes, arginine metabolism genes are also differentially regulated by competence, as seen in our results and in prior microarray experiments (Berka et al., 2002; Ogura et al., 2002), further complicating our understanding of the full physiological role of this subpopulation. Tools to systematically study metabolites in single cells would help to map the actual metabolic states of each subpopulation in a given condition and will allow us to address these questions.\n\nGoing beyond microbial systems, cell-cell heterogeneity can be advantageous as a \u2018bet-hedging\u2019 strategy both for microbial and cancer cells (Veening et al., 2008). In such cases, cell-cell heterogeneity enables the population as a whole to withstand unforeseen challenges, such as antibiotic or chemotherapeutic drugs (Sharma et al., 2010; Rotem et al., 2010), or metabolic shifts (Solopova et al., 2014). By contrast to simple bet-hedging, the emergence of alsS+ acetoin producing populations described here arises as a response to an anticipated challenge that is part of the growth progression in conditions favoring weak organic acid production. Thus, unlike in bet-hedging, metabolic state switching could provide a predictable benefit in a more deterministic dynamic environment.\n\n## Materials and methods\n\n### Plasmid design\n\nPlasmids for the integration of fluorescent reporters were made as previously reported (Eldar et al., 2009). YFP promoter reporters were cloned into the ECE174 backbone plasmid which uses sacA integration site and encodes chloramphenicol resistance (R. Middleton, obtained from the Bacillus Genetic Stock Center). CFP promoter reporters were cloned into the pDL30 backbone which uses amyE integration sites and encodes spectinomycin resistance (obtained from the Bacillus Genetic Stock Center). A constitutive RFP reporter, using a minimal sigA promoter, was used for image segmentation as previously reported (Locke et al., 2011). pAZR1: (Pcggr:alsS/D) is a plasmid for the integration of a constitutive promoter (cggr promoter) to drive the constitutive expression of the alsS/D regulon from its native site. The plasmid was constructed by Gibson cloning (Gibson et al., 2009). A markerless deletion of alsS/D was made using the alsS/D strain of the BKE collection and the pdr244 plasmid, both obtained from the BGSC, followed by selection.\n\n### Bacterial strains\n\nAll strains were made by genomic integration into the genome. Fluorescent reporters were integrated into either the sacA (YFP) or the amyE (CFP) loci as previously described (Locke et al., 2011). A constitutive RFP color was utilized, relying on constitutive expression of a partial ptrpE promoter reporter driving mCherry expression, which was inserted into the ppsB locus as previously (Locke et al. 2011b). Non chaining strains for microfluidic mother-machine experiments used a lytF overexpression construct as previously reported. Strain information is included as Supplementary file 1.\n\n### Growth conditions\n\nStrains were started from glycerol stocks and grown in M9 minimal media prepared according to the directions of the manufacturer (BD \u2013 difco, Franklin Lakes NJ). Base media was supplemented with 0.4% glucose (22 mM) and a cocktail of trace metals (Leadbetter et al., 1999) 50 mM Malate (0.66%) was added to growing cultures at OD 0.4\u20130.5 as per previous publications (Buescher et al. 2012; Kleijn et al., 2010) to facilitate comparison of results between our studies and other published work. Samples for fluorescence microscopy were prepared using agarose pads for either snapshot analysis (timepoint measurements) or pad movies, as previously described by our laboratory (Young et al. 2011b).\n\n### Microscopy\n\nImages were acquired using a Nikon inverted TI\u2010E microscope via a coolsnap HQ2 camera. Commercially available software (Metamorph) controlled the stage, microscope, camera, and shutters. Fluorescent illumination was provided by a Sola Light Engine LED source (Lumencor). Temperature was kept at 37\u00b0C using an enclosed microscope chamber (Nikon) attached to a temperature sensitive heat exchanger. All experiments used a Phase 100x Plan Apo (NA 1.4) objective. Filter sets used were Chroma #41027 (mCh), Chroma #41028 (YFP), and Chroma #31044 v2 (CFP).\n\n### Measurements of secreted acetate and acetoin\n\nMedia was collected from growing cultures by centrifuging 500 ul culture samples at 5000 g for 2 min and filtering the supernatant in 0.2 uM syringe filters. Clarified conditioned media samples were placed into glass sample vials and run at the Caltech environmental analysis center using an Aminex HPX-87H column (Bio-Rad, Rockville NY) in an Agilent 1100 HPLC with UV and Refractive Index detectors with elution using 0.013 N H2SO4 at ambient temperature and 36 ml/hour flow as described in (Leadbetter et al., 1999). Standards of acetate and acetoin were prepared in uninoculated growth media, and diluted to produce a standard curve.\n\n### Microfuidic mothermachine experiments\n\nMicrofluidic experiments used the mothermachine devices described in (REFS Wang Jun 2010; Norman Losick 2013). SU80 wafers were made based on masks provided by the Losick lab. PDMS devices were prepared by pouring degassed Sylgard 184 PDMS silicone (corning corporation, Corning NY) onto wafers and curing the molds for a minimum of 8 hr at 65\u00b0C. Cured PDMS devices were bonded onto microscopy coverslips (60 \u00d7 22 mm, Gold Seal coverslips Thermo Fisher Scientific, Waltham MA) by plasma cleaning. Plasma bonding was done in a PDC32G plasma cleaner (Harrick Plasma Ithaca, NY) set to chamber pressure between 600\u2013700 microns. Coverslips were cleaned separately for 1 min, and then the devices and coverslips were cleaned jointly for 20 s. Device bonding was immediately done by inverting the plasma treated device onto the treated coverslips. After bonding the devices were cured for an additional 4 hr at 65\u00b0C. Devices were kept for up to 2 weeks in the dark at room temperature. Before use, holes for inlet and outlet were punched using a biopsy punch and each device was passivated by loading the channels using growth-media containing 1 mg/ml BSA using a handheld micro-pippete and a 20 uM tip. Cells were loaded by flowing a concentrated cell culture (OD 2.0) and letting cells reach the growth chambers by waiting for 30 min. Devices were placed on an inverted Nikon TiE microscope and growth media was flowed using syringe pumps set to a flow rate of 50\u2013100 ul per hour. Media used in microfluidic mother machine experiments was conditioned media taken from batch growth cultures. Media for the sucC/competence experiments contained media conditioned by growth on glucose/malate media until OD 0.8. Conditioned media used for alsS movies was from OD 2.0. Fluorescent Images were captured using a CoolSnap HQ2 and analyzed with custom MATLAB software (Rosenthal, 2018; copy archived at https://github.com/elifesciences-publications/Schnitzcells_2018) and in imageJ.\n\nEvents were followed for the terminal \u2018mother\u2019 cell position in each channel of each device, and were manually counted to provide the events per hour. Dwell time was determined by counting the number of frames from activation (passing the fluorescence threshold) and deactivation, and converted to hours and minutes by multiplying the number of frames by the frame rate of the movie. Elongation rates were measured by quantifying the length of at least 50 cells in either the activated or non-active state per each movie (at least three movies per condition), and calculated as previously determined (Young et al., 2011).\n\n### RNAseq\n\nCultures of cells expressing YFP under the control of sucC (strain AZRE1) were grown in M9 glucose-malate media. Cells in mid log phase (OD 0.8) were fixed in 4% formaldehyde for 10 min at room temperature. Fixed cells were washed twice in Tris pH 7, and gently filtered using a 5.0 uM filter to remove clumps and chains. Cells were sorted on either a MoFlo astrios cell sorter or a BSfacsARIA in the USC medical school sorting facility. Cells sorted for either high YFP fluorescence or regular fluorescence (a minimum of 200,000 cells) were collected into tubes containing RNA protect (Qiagen, Hilden, Germany). Sorted samples were centrifuged and cells were rehydrated in 240 ul qiagen PKD buffer (FFPE miRNEASY kit, Qiagen). Cells were lysed by the addition of 10 ul lysosome solution for 10 min followed by bead beating for 2 min in high setting. Samples were further processed using the qiagen FFPE miRNA kit. Libraries were prepared using the Epicentre Scriptseq V2 kit, follow the directions for highly fragmented DNA. Libraries were sequenced at the Caltech Millard and Muriel Jacobs sequencing facility. Analysis followed the standard Galaxy RNAseq workflow (grooming, trimming, bowtie mapping, and cuff-diff and cuff-links) (Afgan et al., 2016).\n\n### Agarose pad timelapse experiments\n\nAgarose pad experiments were done as previously described (Young et al., 2011), with the following exceptions: Cells were spotted on agarose pads made with standard pad movie media (Young et al., 2011) which is a Spizizen\u2019s minimal media with 0.4% glucose to which acetate was added to a final concentration of 20 mM, to mimic acetate concentrations at mid exponential phase. Cells were allowed to acclimate to the agarose pad growth condition for \u223c2 hr, before the start of imaging. Images were acquired from multiple fields every 12 min for a total of 22 hr. Movie analysis was performed in Matlab using the Schnitzcells analysis package (Young et al., 2011) with slight edits. The current version of this analysis package is available at http://www.elowitz.caltech.edu\n",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "74c73e69-aefb-4a56-8fd1-0829049f0f58",
+      "submission_id": "cba7d7fe-4594-4d3d-bbe9-2f24e22a4ae2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Martin Ackermann, ETH Zurich Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.33099.027](https://doi.org/10.7554/eLife.33099.027)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Metabolic Interactions Between Dynamic Bacterial Subpopulations\" for consideration by eLife. Your article has been favorably evaluated by Naama Barkai (Senior Editor) and three reviewers, one of whom, Martin Ackerman (Reviewer #1), served as a guest Reviewing Editor. The following individual involved in review of your submission has agreed to reveal their identity: Michael G Surette (Reviewer #2). The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript addresses a fundamental question about microbial metabolism: do individual cells in clonal populations differentiate into different phenotypes that specialize on different metabolic processes, and that complement each other in their metabolic activities? Such metabolic differentiation could have important consequences: Metabolic differences between cells in clonal populations could potentially reduce metabolic incompatibilities between different pathways, and increase the rate at which different reactions can be performed at the level of clonal populations. Such metabolic specialization has been suggested in a few earlier studies, but the evidence has often remained inconclusive. This manuscript here provides substantial evidence for metabolic differentiation in acetate metabolism in Bacillus subtilis, and suggests that this specialization has the consequence of detoxifying the local environment and allowing sustained growth. It can make a substantial contribution to our understanding of how cellular individuality can lead to emergent properties at the level of clonal groups.\n\nEssential revisions:\n\nA first question pertains to the connection between sucC, acetate and competence. More specifically, two steps are currently quite weak: the first is whether sucC activity is really associated with acetate secretion. The metabolic connection between the two is not straightforward, and may be correlative rather than causal. The authors may be able to provide better evidence from revisiting their existing data (e.g. looking at other genes, and pathway activity). One possible connection between sucC increase and acetate production might be the fact that (especially with the malate coming directly into the TCA cycle), the TCA cycle is jammed with incoming material, causing accumulation of intermediates that would then slow down the whole glycolytic pathway, including acetate secretion. The reviewers suggest that the authors consider this scenario, or other possible metabolic explanations of the observations (with the caveat of the delay, discussed below). Alternatively, if the authors see sucC primarily as a proxy for a gene expression phenotype that is putatively producing acetate, without assuming that sucC plays a direct role in this, then they should state this explicitly. Some of the current phrasing seems to imply a direct role of sucC in acetate production (for example the beginning of the third paragraph in the Results section). The other weak link is the one between sucC and competence. It is not obvious, for example, whether the competence system master transcription factor (comK) controls specifically acetate secretion, as opposed to affecting metabolism globally. Again, this may be at least partially alleviated by revisiting the data, and making sure that statements in the text do not claim more than what the data actually show.\n\nA second question is whether alsS+ cells indeed detoxify the environment, a statement that is central to the idea that metabolic specialization controls the microenvironment, as stated in the Abstract. At the moment, the detoxifying activity is inferred from the analysis of gene expression reporters alone. To test whether alsS+ cells detoxify the environment, the authors could either construct an alsS knock-out strain, or (probably simpler) analyze existing microcolonies, and ask whether alsS- cells that are in a colony with many alsS+ cells grow faster than alsS- cells that are in a colony with few alsS+ cells.\n\nThe reviewers feel that these two first points will require either new experiments or new analysis of existing data, in addition to revising the text. They have two other main comments that do not require new experimental work.\n\nAbout the analysis of the coefficients of variation (CV) in transcriptional reporters: the authors report that they focus on sucC and alsS based on the higher CVs of these promoters compared to a set of 11 other promoters. The reviewers suggest that the authors discuss this decision in more detail, for two reasons: first, the CV of a transcriptional reporter is expected to be influenced by the timing of gene expression (e.g., Shahrezaei and Swain, 2008), with the CV being transiently higher after the activation of transcription, and lower later on. It would thus be useful to have information about when in the growth curve (and relative to the onset of their expression) the CVs of these different reporters were determined. Second, is the CV alone an appropriate way to identify promoters that have a high degree of variation, given that previous work suggests that the CV often depends on the level of gene expression (i.e., that it is not invariant)? Using a 30% CV for identifying promoters with high variation doesn't seem obvious; citB and tkt in Figure 1\u2014figure supplement 1 appear to possibly have a higher expressing sub-population. Also, to illustrate and justify the differential distributions of expression between different genes it may be best to include alsS and sucC with the other genes in Figure 1\u2014figure supplement 1 (in addition to presenting them in Figure 1B). It would seem useful to see, in addition to this revised Figure 1\u2014figure supplement 1, another version in which all graphs have the same x and y axes scales. Some genes will turn into very thin peaks, but it is very tricky right now to get a sense of how broad and high/low the different genes are relative to each other.\n\nThe reviewers would be interested in seeing a more thorough quantification of the time-resolved single-cell data (Figure 3 and Figure 4). First, there seems to be no information about the number of replicated experiments and sample size (some replicated experiments are shown in Figure 4\u2014figure supplement 1 \u2013 but have these experiments been quantified, and are the data included in the histograms shown in Figure 4?). Second, the title of the legend of Figure 3 states that \"Cells switch in and out of the [\u2026] states\", but the data and analysis underlying this statement did not become clear (maybe this is the \"events per 100 hours\" and \"dwell time\"? \u2013\n",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5d36577b-ba8d-45f3-92ef-7c31b000fecf",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C1",
+      "claim": "Individual microbial species occupy distinct metabolic niches within multi-species communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual microbial species are known to occupy distinct metabolic niches within multi-species communities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract without specific experimental data from this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "e185519b-6a86-4ef8-bfbf-0c540a879b7c",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C2",
+      "claim": "Exponentially growing Bacillus subtilis cultures divide into distinct interacting metabolic subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that exponentially growing Bacillus subtilis cultures divide into distinct interacting metabolic subpopulations, including one population that produces acetate, and another population that differentially expresses metabolic genes for the production of acetoin, a pH-neutral storage molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "8d8d4347-54bc-4e8c-b45d-7a131bc8cb13",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C3",
+      "claim": "One Bacillus subtilis subpopulation produces acetate.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that exponentially growing Bacillus subtilis cultures divide into distinct interacting metabolic subpopulations, including one population that produces acetate, and another population that differentially expresses metabolic genes for the production of acetoin, a pH-neutral storage molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by RNAseq and microscopy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "11168431-be8e-48ff-83a7-31b3dcd75709",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C4",
+      "claim": "Another Bacillus subtilis subpopulation differentially expresses metabolic genes for the production of acetoin.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that exponentially growing Bacillus subtilis cultures divide into distinct interacting metabolic subpopulations, including one population that produces acetate, and another population that differentially expresses metabolic genes for the production of acetoin, a pH-neutral storage molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by microscopy and gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "ea3eae43-59f5-4571-b8fc-0872d8a30f6f",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C5",
+      "claim": "Acetoin is a pH-neutral storage molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that exponentially growing Bacillus subtilis cultures divide into distinct interacting metabolic subpopulations, including one population that produces acetate, and another population that differentially expresses metabolic genes for the production of acetoin, a pH-neutral storage molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known property of acetoin.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "aedc087f-46c3-43f3-8500-42abb641541c",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C6",
+      "claim": "The metabolic subpopulations exhibit distinct growth rates.",
+      "claim_type": "EXPLICIT",
+      "source": "These subpopulations exhibit distinct growth rates and dynamic interconversion between states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Mother Machine and microcolony experiments showing different elongation rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "eff03800-25ec-4b1d-8752-f5602dfb18fe",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C7",
+      "claim": "The metabolic subpopulations exhibit dynamic interconversion between states.",
+      "claim_type": "EXPLICIT",
+      "source": "These subpopulations exhibit distinct growth rates and dynamic interconversion between states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by time-lapse microscopy showing cells switching between states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "b0301f7a-e021-4583-b519-b321755c1be9",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C8",
+      "claim": "Acetate concentration influences the relative sizes of the different subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, acetate concentration influences the relative sizes of the different subpopulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experiments showing increased alsS+ cells with added acetate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "1ad2a20f-4a0e-400b-9e09-0520ccd04529",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C9",
+      "claim": "Clonal populations can use metabolic specialization to control the environment through dynamic, environmentally-sensitive state-switching.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that clonal populations can use metabolic specialization to control the environment through a process of dynamic, environmentally-sensitive state-switching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "043a5c1c-5acf-4d5f-aaa9-1f381d99f78d",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C10",
+      "claim": "Co-utilization of carbon sources was described alongside diauxie by Jacques Monod in his PhD thesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-utilization of carbon sources was described alongside diauxie by Jacques Monod in his PhD thesis (Monod, 1958), and is common in many organisms (Peyraud et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Monod's work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "8d7e8808-9c0a-45e6-ae69-3436c08e1c3a",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C11",
+      "claim": "Co-utilization of carbon sources is common in many organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-utilization of carbon sources was described alongside diauxie by Jacques Monod in his PhD thesis (Monod, 1958), and is common in many organisms (Peyraud et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "5ff33563-d3f9-4383-9465-4a9a90442e52",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C12",
+      "claim": "In Bacillus subtilis, glucose and malate are two preferred carbon sources that are co-utilized.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Gram-positive bacterium Bacillus subtilis, two preferred carbon sources are co-utilized: glucose and malate (Kleijn et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "b2746d12-3dd8-47d5-af8e-d2edee897333",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C13",
+      "claim": "When glucose and malate are both available, they are consumed simultaneously by Bacillus subtilis.",
+      "claim_type": "EXPLICIT",
+      "source": "When both of these carbon sources are available they are consumed simultaneously, generating growth rates that surpass those achieved with either substrate alone (Kleijn et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "d02e8b35-d8c0-45f0-82b4-98a00a1119c5",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C14",
+      "claim": "Simultaneous consumption of glucose and malate generates growth rates that surpass those achieved with either substrate alone.",
+      "claim_type": "EXPLICIT",
+      "source": "When both of these carbon sources are available they are consumed simultaneously, generating growth rates that surpass those achieved with either substrate alone (Kleijn et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "526e577f-c9d0-49f9-9dbf-b331193f87f0",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C15",
+      "claim": "Co-consumption of glucose and malate under rapid growth conditions leads to the accumulation of high levels of acetate.",
+      "claim_type": "EXPLICIT",
+      "source": "Under conditions of rapid growth, co-consumption of glucose and malate leads to the accumulation of high levels of acetate (Kleijn et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "a4462ce7-7a7a-4916-b08a-562248e1686a",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C16",
+      "claim": "Acetate can be harmful to cells even in buffered medium.",
+      "claim_type": "EXPLICIT",
+      "source": "As a weak organic acid, acetate can be harmful to cells even in buffered medium (Rosenthal et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "74963920-e694-4c41-bb1c-3a631cf89f47",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C17",
+      "claim": "Acetate and related short-chain fatty acids enter the cell passively in the neutral form and then dissociate intracellularly, releasing a proton and transiently acidifying the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Acetate and related short-chain fatty acids enter the cell passively in the neutral form and then dissociate intracellularly, releasing a proton and transiently acidifying the cytoplasm (Russell and Diez-Gonzalez, 1997; Roe et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "cad0f6fc-3b31-44b3-9830-b58461ea990c",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C18",
+      "claim": "The intracellular dissociation of acetate disrupts the cellular anion balance, with negative effects on metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "The intracellular dissociation of acetate also disrupts the cellular anion balance, with negative effects on metabolism (Roe et al., 1998; Roe et al., 2002) and transcription (Rosenthal et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "884f4205-d62e-49f9-820e-8a539b3546d4",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C19",
+      "claim": "The intracellular dissociation of acetate has negative effects on transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "The intracellular dissociation of acetate also disrupts the cellular anion balance, with negative effects on metabolism (Roe et al., 1998; Roe et al., 2002) and transcription (Rosenthal et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "3ea5cfed-6095-4dd6-8c76-f1c4b416509d",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C20",
+      "claim": "When extracellular acetate levels rise to toxic levels, the growing Bacillus subtilis culture consumes the acetate and produces acetoin.",
+      "claim_type": "EXPLICIT",
+      "source": "When extracellular acetate levels rise to toxic levels the growing Bacillus subtilis culture consumes the acetate and produces acetoin, a non-toxic pH-neutral overflow metabolite that can be used as a carbon source in later growth stages (Speck and Freese, 1973) (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature and referenced figure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "c31543b2-fcb9-4712-9eb0-c6a37d189bc9",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C21",
+      "claim": "Acetoin is a non-toxic pH-neutral overflow metabolite that can be used as a carbon source in later growth stages.",
+      "claim_type": "EXPLICIT",
+      "source": "When extracellular acetate levels rise to toxic levels the growing Bacillus subtilis culture consumes the acetate and produces acetoin, a non-toxic pH-neutral overflow metabolite that can be used as a carbon source in later growth stages (Speck and Freese, 1973) (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "adaad6ff-b31e-41e8-bad2-8fa3cab3ec53",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C22",
+      "claim": "B. subtilis uses glucose and malate as preferred carbon sources under aerobic culture conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "B. subtilis uses glucose and malate as preferred carbon sources, and under aerobic culture conditions produces acetate and acetoin as major overflow metabolites.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1A and stated in the figure legend.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "93377e2d-adbf-409b-bbcb-a0bf15dcc64a",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C23",
+      "claim": "B. subtilis produces acetate and acetoin as major overflow metabolites under aerobic culture conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "B. subtilis uses glucose and malate as preferred carbon sources, and under aerobic culture conditions produces acetate and acetoin as major overflow metabolites.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1A and stated in the figure legend.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "87ec3d04-1e90-4194-a47e-fca2ad0c5c20",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C24",
+      "claim": "The expression of sucC is heterogeneous in individual cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Histograms depict the heterogeneous expression of the central metabolism genes sucC (top panel) and alsS (bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B histograms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "4c808f6f-e53e-48b1-8e7f-e34e26ac9394",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C25",
+      "claim": "The expression of alsS is heterogeneous in individual cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Histograms depict the heterogeneous expression of the central metabolism genes sucC (top panel) and alsS (bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B histograms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "aedd2e1d-174c-4825-bb98-e3129247f86e",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C26",
+      "claim": "The heterogeneous expression of sucC is maximal at different timepoints along the growth curve than alsS.",
+      "claim_type": "EXPLICIT",
+      "source": "The heterogeneous expression of sucC (red line) and alsS (green line) is maximal at different timepoints along the growth curve (black line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "85e7421a-26dc-4a57-9795-8a3c83aa7f86",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C27",
+      "claim": "Acetate is released around mid-exponential phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Acetate (red line) is released around mid-exponential phase, and is reabsorbed at a later time during which acetoin is produced (green line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "ed8e137b-f764-4045-a544-4d87ea5b29cf",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C28",
+      "claim": "Acetate is reabsorbed at a later time during which acetoin is produced.",
+      "claim_type": "EXPLICIT",
+      "source": "Acetate (red line) is released around mid-exponential phase, and is reabsorbed at a later time during which acetoin is produced (green line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "239d097d-0d1f-444f-a59b-ad0378d6ecc2",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C29",
+      "claim": "A biphasic growth strategy, in which acetate is produced to a toxic level and then reabsorbed and replaced by a non-toxic metabolite, is common to many bacterial species.",
+      "claim_type": "EXPLICIT",
+      "source": "A biphasic growth strategy, in which acetate is produced to a toxic level and then reabsorbed and replaced by a non-toxic metabolite (Wolfe, 2005), is common to many bacterial species and is important both for understanding the basic biology of bacterial growth in culture, and for applications in metabolic engineering (Papagianni, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "316b2375-18bd-4eb0-85f2-fc7269a9d96c",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C30",
+      "claim": "The biphasic growth strategy is important for understanding the basic biology of bacterial growth in culture.",
+      "claim_type": "EXPLICIT",
+      "source": "A biphasic growth strategy, in which acetate is produced to a toxic level and then reabsorbed and replaced by a non-toxic metabolite (Wolfe, 2005), is common to many bacterial species and is important both for understanding the basic biology of bacterial growth in culture, and for applications in metabolic engineering (Papagianni, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "c23fd42e-c14c-45fb-834f-072567c1c413",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C31",
+      "claim": "The biphasic growth strategy is important for applications in metabolic engineering.",
+      "claim_type": "EXPLICIT",
+      "source": "A biphasic growth strategy, in which acetate is produced to a toxic level and then reabsorbed and replaced by a non-toxic metabolite (Wolfe, 2005), is common to many bacterial species and is important both for understanding the basic biology of bacterial growth in culture, and for applications in metabolic engineering (Papagianni, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "7f543647-b6dc-4253-adb7-12c5544ce90c",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C32",
+      "claim": "The biphasic growth strategy has generally been studied only at the population level, implicitly assuming a homogeneous progression of the entire culture from acetate producing to acetate detoxifying states.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it has generally been studied only at the population level, implicitly assuming a homogeneous progression of the entire culture from acetate producing to acetate detoxifying states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of previous research approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "67607fd6-08cb-4526-897f-e06d02b01d36",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C33",
+      "claim": "Bacterial populations can exhibit enormous heterogeneity in functional and gene expression states.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, single cell approaches suggest that bacterial populations can exhibit enormous heterogeneity in functional and gene expression states (Eldar et al., 2009; Locke et al., 2011; S\u00fcel et al., 2006; Levine et al., 2012; Davidson and Surette, 2008; Dubnau and Losick, 2006; Gefen and Balaban, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "3607027a-8c80-424d-8b7c-ab8808d39ff6",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C34",
+      "claim": "A library of strains with reporters for key genes involved in central carbon metabolism, acetate production, and organic acid detoxification was constructed.",
+      "claim_type": "EXPLICIT",
+      "source": "To address these questions we constructed a library of strains with reporters for key genes involved in central carbon metabolism, acetate production, and organic acid detoxification (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental approach taken.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "76ffec7d-2993-42a3-aedf-d222c799741d",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C35",
+      "claim": "A fluorescent protein (YFP) was introduced under the control of promoters for 13 different metabolic genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We introduced a fluorescent protein (YFP) under the control of promoters for 13 different metabolic genes and stably incorporated them into the commonly used sacA site within the genome (Supplementary file 1), (Eldar et al., 2009; Locke et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental approach taken.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "4c5741a9-167b-4010-b67d-997a5f60798f",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C36",
+      "claim": "Four genes (acoA, gntZ, pycA, sdhC) had expression levels that were at or near background.",
+      "claim_type": "EXPLICIT",
+      "source": "Four genes had expression levels that were at or near background and were not considered further (acoA, gntZ, pycA, sdhC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the fluorescence microscopy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "5fd5ecdf-deaa-4e51-91e9-e55050a5c889",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C37",
+      "claim": "Most of the metabolic genes showed unimodal distributions with relatively little skew (less than \u00b10.7).",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the genes showed unimodal distributions (Figure 1\u2014figure supplement 1), with relatively little skew (less than \u00b10.7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the fluorescence microscopy experiments shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "d5639b9a-17db-42bf-a311-ebdad77e3546",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C38",
+      "claim": "sucC and alsS were more heterogeneous than other metabolic genes, with skew values greater than 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Two genes, sucC and alsS, encoding succinate co-A ligase and acetolactate synthase, respectively, were more heterogeneous (Figure 1B). We observed skew values greater than 1 (4.72 and 1.14, respectively) with 3.8% of PsucC-YFP and 8.1% of PalsS-YFP cells exhibiting high expression levels (\u22652 standard deviations above the mean) at OD600 ~0.8 (sucC) and OD600 ~2 (alsS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the fluorescence microscopy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "ae3ef149-55f1-4330-904a-5917ec3fd4c9",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C39",
+      "claim": "3.8% of PsucC-YFP cells exhibit high expression levels (\u22652 standard deviations above the mean) at OD600 ~0.8.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed skew values greater than 1 (4.72 and 1.14, respectively) with 3.8% of PsucC-YFP and 8.1% of PalsS-YFP cells exhibiting high expression levels (\u22652 standard deviations above the mean) at OD600 ~0.8 (sucC) and OD600 ~2 (alsS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the fluorescence microscopy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "b6c10898-7323-49b8-8ee5-b5596bdd9111",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C40",
+      "claim": "8.1% of PalsS-YFP cells exhibit high expression levels (\u22652 standard deviations above the mean) at OD600 ~2.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed skew values greater than 1 (4.72 and 1.14, respectively) with 3.8% of PsucC-YFP and 8.1% of PalsS-YFP cells exhibiting high expression levels (\u22652 standard deviations above the mean) at OD600 ~0.8 (sucC) and OD600 ~2 (alsS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the fluorescence microscopy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "aaa53384-98dd-4bfe-85b6-14845a5733f3",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C41",
+      "claim": "For both sucC and alsS, cells were observed whose expression exceeded the mean by >3 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, for both genes, we observed cells whose expression exceeded the mean by >3 fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the fluorescence microscopy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "ba9825f1-6217-43d2-b246-00d59cf1d0aa",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C42",
+      "claim": "Both sucC and alsS maintained heterogeneous expression for several hours after the onset of expression.",
+      "claim_type": "EXPLICIT",
+      "source": "While gene expression distribution can be broader immediately after gene activation than at steady-state (Shahrezaei and Swain, 2008), both sucC and alsS maintained heterogeneous expression for several hours after the onset of expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from time course experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "d7afc51b-3d70-4ea3-8c67-a4d88b6339d1",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C43",
+      "claim": "The subpopulation of sucC+ cells only existed transiently, in mid- to late-exponential phase.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the subpopulation of sucC+ cells only existed transiently, in mid- to late-exponential phase (Figure 1C), coinciding with the time and culture optical density at which acetate production was observed (when the time derivative in acetate, that is, the rate of change in acetate concentration, is positive ~150\u2013300 min, Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from time course experiments shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "b597b991-c0fe-4240-b3fe-1da3bd2971d4",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C44",
+      "claim": "The timing of sucC+ cells coincides with the time and culture optical density at which acetate production was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the subpopulation of sucC+ cells only existed transiently, in mid- to late-exponential phase (Figure 1C), coinciding with the time and culture optical density at which acetate production was observed (when the time derivative in acetate, that is, the rate of change in acetate concentration, is positive ~150\u2013300 min, Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a correlation observed between gene expression and metabolite measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "f85233da-e2d4-455a-9a56-80ede6def142",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C45",
+      "claim": "sucC expression could be involved in acetate production.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggested that sucC expression could be involved in acetate production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the temporal correlation between sucC expression and acetate production.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "7fd4e27c-5e38-458a-af86-9e517d1025b0",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C46",
+      "claim": "alsS expression dynamics coincide with a decrease in acetate and a concomitant increase in acetoin levels.",
+      "claim_type": "EXPLICIT",
+      "source": "A parallel analysis of alsS expression revealed the opposite behavior, with alsS expression dynamics coinciding with a decrease in acetate and a concomitant increase in acetoin levels (Figure 1C,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from time course experiments shown in Figures 1C and 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "e1a31d61-c425-488d-b8ca-95c3779c3992",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C47",
+      "claim": "The behavior of alsS is generally consistent with the known role of alsS in acetoin production in response to acetate toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "This behavior is generally consistent with the known role of alsS in acetoin production in response to acetate toxicity (Speck and Freese, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data in the context of published literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "9c56bbe7-04f5-404b-ae60-eb4861027cef",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C48",
+      "claim": "A dynamic change in acetate and acetoin levels in the culture overlaps with changes in the population fraction of sucC and alsS expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results show that a dynamic change in acetate and acetoin levels in the culture overlaps with changes in the population fraction of sucC and alsS expressing cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the temporal correlations observed in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "1d809e47-6339-478a-8fda-7f162bc0ffbd",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C49",
+      "claim": "A role for sucC in acetate production has not been studied previously.",
+      "claim_type": "EXPLICIT",
+      "source": "A role for sucC in acetate production has not been studied previously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in existing knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "246f2b39-11d4-4628-9684-716df10a2fa8",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C50",
+      "claim": "sucC expression was elevated 2-fold in the sucC+ sorted subpopulation.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, sucC expression was elevated 2-fold in the sucC+ sorted subpopulation (blue dot, Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from RNAseq analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "3193e6db-9370-41b1-9b06-892017e61829",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C51",
+      "claim": "Genetic competence genes were significantly enriched in the ~300 upregulated genes in the sucC+ subpopulation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, RNAseq analysis with cuffdiff (Trapnell et al., 2010) and gene set enrichment analysis with GSEA (Subramanian et al., 2005) showed that genetic competence genes (Berka et al., 2002) were significantly enriched in the ~300 upregulated genes in the sucC+ subpopulation (red dots and inset, \u22122A and supplementary file 2; GSEA p<e-16).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from RNAseq and gene set enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "b2f47bee-229a-49b9-b515-909d46349057",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C52",
+      "claim": "The sucC+ population exhibited increased expression of the phosphate acetyltransferase gene, pta.",
+      "claim_type": "EXPLICIT",
+      "source": "The sucC+ population also exhibited increased expression of the phosphate acetyltransferase gene, pta (green dot, Figure 2A), the enzyme that catalyzes the final step in overflow acetate production.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from RNAseq analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "8cf89e07-646e-449a-b12e-9b7b86b03b52",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C53",
+      "claim": "pta catalyzes the final step in overflow acetate production.",
+      "claim_type": "EXPLICIT",
+      "source": "The sucC+ population also exhibited increased expression of the phosphate acetyltransferase gene, pta (green dot, Figure 2A), the enzyme that catalyzes the final step in overflow acetate production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the function of pta.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "4e2ebffe-c2b1-4d22-a2ef-8cf7e6fd2e68",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C54",
+      "claim": "sucC expression marks a distinct gene expression state that could be involved in acetate production.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, sucC expression marks a distinct gene expression state that could be involved in acetate production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the RNAseq results showing correlation with pta expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "9a91a04b-a8de-45d0-9adb-9371698f1cd2",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C55",
+      "claim": "There is a positive correlation between sucC expression and the comG reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "A scatter plot shows that the expression of sucC reporter is positively correlated with the comG reporter, a marker for the competence program.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B scatter plot.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "f35196a8-dcfa-41ca-85c7-0cdec65efe89",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C56",
+      "claim": "There is a negative correlation between sucC expression and pckA expression.",
+      "claim_type": "EXPLICIT",
+      "source": "A scatter plot shows that the expression of the sucC reporter is negatively correlated with expression of the metabolic gene pckA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2C scatter plot.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "6dbc9368-a366-4546-a76d-5259efcfcac6",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C57",
+      "claim": "The competence gene expression program is necessary for the buildup of high levels of extracellular acetate.",
+      "claim_type": "EXPLICIT",
+      "source": "The competence gene expression program is necessary for the buildup of high levels of extracellular acetate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2D comparing wildtype and \u0394comK strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "101fb1d8-9d72-4e40-baed-ea76f6519a79",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C58",
+      "claim": "Maximal acetate buildup is approximately five fold higher in the wildtype strain than in a strain that is unable to produce the competent cell population (\u2206comK).",
+      "claim_type": "EXPLICIT",
+      "source": "However, maximal acetate buildup is approximately five fold higher in the wildtype strain (solid red line) than in a strain that is unable to produce the competent cell population (\u2206comK dashed red lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "ea620a24-d8e0-4975-a111-7c3d5228a6b5",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C59",
+      "claim": "The competence system is controlled by a noise-excitable gene circuit that stochastically initiates transient episodes of differentiation in individual cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The competence system is controlled by a noise-excitable gene circuit that stochastically initiates transient episodes of differentiation in individual cells (S\u00fcel et al., 2007; S\u00fcel et al., 2006; Ca\u011fatay et al., 2009; Maamar et al., 2007; Hahn et al., 1994)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "18ab9d17-42cc-4009-8230-2c563baa95ed",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C60",
+      "claim": "Strains in which comK is deleted exhibited greatly reduced acetate production.",
+      "claim_type": "EXPLICIT",
+      "source": "Strains in which the competence master transcription factor comK is deleted (Supplementary File 1) exhibited greatly reduced acetate production (Figure 2D) and a loss of sucC as well as comG expression (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from experiments with deletion strains shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "10e5ba91-1701-4c0e-ac0a-821cb064f0f3",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C61",
+      "claim": "Strains in which comK is deleted exhibited a loss of sucC expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Strains in which the competence master transcription factor comK is deleted (Supplementary File 1) exhibited greatly reduced acetate production (Figure 2D) and a loss of sucC as well as comG expression (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from experiments with deletion strains shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "37930fea-0eae-4000-a582-8447487640fe",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C62",
+      "claim": "Strains in which comK is deleted exhibited a loss of comG expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Strains in which the competence master transcription factor comK is deleted (Supplementary File 1) exhibited greatly reduced acetate production (Figure 2D) and a loss of sucC as well as comG expression (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from experiments with deletion strains shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "e7766934-0565-405c-8509-5e7a7c775398",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C63",
+      "claim": "Expression of pta is greatly diminished in strains in which comK is deleted.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the reduced level of acetate itself, expression of pta, the key step in acetate production, is greatly diminished in strains in which comK is deleted, both in our conditions (Figure 2\u2014figure supplement 4B) and also in data from previous microarray experiments (Ogura et al., 2002; Berka et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from RNAseq experiments and supported by citations to previous microarray data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "a21d557c-40fd-4dad-9efc-0874153676c6",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C64",
+      "claim": "The competent state has been suggested to be involved in attachment, motility, antibiotic resistance, and DNA metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the competent state has been suggested to be involved in other functions, such as attachment, motility, antibiotic resistance, and DNA metabolism (Redfield, 1993; Hahn et al., 2015; Bakkali, 2013; Finkel and Kolter, 2001), a role in central carbon metabolism has not been reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "aa33b038-beae-4173-b702-6a3c6fed7bfc",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C65",
+      "claim": "A role for the competent state in central carbon metabolism has not been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the competent state has been suggested to be involved in other functions, such as attachment, motility, antibiotic resistance, and DNA metabolism (Redfield, 1993; Hahn et al., 2015; Bakkali, 2013; Finkel and Kolter, 2001), a role in central carbon metabolism has not been reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in existing knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "fc6a17f2-2326-4a45-9a69-333c352d7ca1",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C66",
+      "claim": "The sucC subpopulation is controlled by the competence system.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the sucC subpopulation is controlled by the competence system, linking competence both to an alternative metabolic state and to the control of acetate levels in culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the deletion experiments and gene expression correlations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "01d9fbb1-4117-46c4-87e4-11176b7e66c2",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C67",
+      "claim": "Competence is linked to an alternative metabolic state.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the sucC subpopulation is controlled by the competence system, linking competence both to an alternative metabolic state and to the control of acetate levels in culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "80d75d61-0b69-4c18-8a51-13a10faffe06",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C68",
+      "claim": "Competence is linked to the control of acetate levels in culture.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the sucC subpopulation is controlled by the competence system, linking competence both to an alternative metabolic state and to the control of acetate levels in culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental results showing reduced acetate in comK deletion strains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "7ec50d72-dc39-4d62-96c7-ee160c2205e5",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C69",
+      "claim": "Rare episodes of sucC activation occur in some cells, lasting for approximately four hours each (252 \u00b1 89 min).",
+      "claim_type": "EXPLICIT",
+      "source": "With sucC-inducing media (conditioned at OD 0.8), we observed rare episodes of sucC activation in some cells, lasting for approximately four hours each (252 \u00b1 89 min, mean \u00b1standard deviation for n = 31 events) (Figure 3B, left).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from Mother Machine experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "6645b011-4288-482c-814e-cb6ad2e2c32b",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C70",
+      "claim": "sucC+ cells divided less frequently and grew more slowly than other cells in the same movies.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous analysis of competence dynamics (S\u00fcel et al., 2006), sucC+ cells divided less frequently and grew more slowly than other cells in the same movies (elongation rates of 47.4 \u00b1 2.7 %/hr and 67.7 \u00b1 2.3 %/hr, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from Mother Machine experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "3acdf840-77a3-4cca-b966-0690f4a6c3a8",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C71",
+      "claim": "Cells in the sucC+ activated state could switch out of the sucC+ state and resume normal growth rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells in the activated state could switch out of the sucC+ state and resume normal growth rates (Figure 3\u2014figure supplement 1, Video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from Mother Machine time-lapse experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "8dad8fdf-ba05-45ef-a131-b7640cfff887",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C72",
+      "claim": "In OD 2.0 conditioned media, activation of sucC expression was not observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, we did not observe activation of alsS expression. By contrast, in the OD 2.0 conditioned media we did not observe activation of sucC expression, but did observe frequent pulses of alsS gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from Mother Machine experiments with different media conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "358eb2fd-bcd9-4b68-bdf2-a2e007a665fa",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C73",
+      "claim": "In OD 2.0 conditioned media, frequent pulses of alsS gene expression were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, in the OD 2.0 conditioned media we did not observe activation of sucC expression, but did observe frequent pulses of alsS gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from Mother Machine experiments with different media conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "275d59d8-8e6e-4f7b-8824-4360d852a458",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C74",
+      "claim": "alsS+ cells grew at a slightly reduced elongation rate (63 \u00b1 2.6 %/hr) compared to alsS- cells (74 \u00b1 2.3 %/hr).",
+      "claim_type": "EXPLICIT",
+      "source": "alsS+ cells grew at a slightly reduced elongation rate (63 \u00b1 2.6 %/hr increase compared to 74 \u00b1 2.3 %/hr for alsS- cells, Figure 3B, right panel, Video 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from Mother Machine experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "f0b27875-312f-4343-ad95-b5154cbfc7b5",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C75",
+      "claim": "There is a systematic increase in the distribution of alsS expression levels with increasing acetate levels.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed both a systematic increase in the distribution of alsS expression levels, and in the fraction of cells in the high expressing 'tail' of the distribution (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from experiments with varying acetate concentrations shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "864d1c5e-2f7d-497b-850b-d878b550cdc0",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C76",
+      "claim": "There is an increase in the fraction of cells in the high expressing 'tail' of the alsS distribution with increasing acetate levels.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed both a systematic increase in the distribution of alsS expression levels, and in the fraction of cells in the high expressing 'tail' of the distribution (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from experiments with varying acetate concentrations shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "6a55630a-81b4-4cca-b82f-90d5547cf7d9",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C77",
+      "claim": "Approximately half of the population switched on high levels of alsS expression within 7 to 10 hr in microcolony pad experiments with 20 mM acetate.",
+      "claim_type": "EXPLICIT",
+      "source": "In these experiments (Figure 4), all cells started with a low growth rate, likely owing to the initial acetate present in the growth media. As cells divided, approximately half of the population switched on high levels of alsS expression within 7 to 10 hr (Figure 4, Figure 4\u2014figure supplement 1, Videos 3\u20135).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from microcolony pad experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "28444799-f775-4a63-890a-02679dadce03",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C78",
+      "claim": "alsS+ cells exhibited a reduced growth rate in microcolony pad experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "As growth progressed, these alsS+ cells exhibited a reduced growth rate, similar to that of the original culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from microcolony pad experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "99c8ffc3-bbd0-4631-9a34-96fb683f1fea",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C79",
+      "claim": "A distinct subpopulation with approximately 2.5-fold lower alsS expression (alsS-) emerged, becoming greater than 70% of the population.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a distinct subpopulation with approximately 2.5-fold lower alsS expression emerged (alsS-), becoming greater than 70% of the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from microcolony pad experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "19f0ea99-820e-408d-a059-b8c808d4186b",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C80",
+      "claim": "alsS- cells exhibited a faster division rate than alsS+ cells in microcolony pad experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells exhibited a faster division rate (Figure 4B, Figure 4\u2014figure supplement 1) and faster elongation rate (Figure 4C, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from microcolony pad experiments shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "7880b232-6c54-43f1-8614-391968096621",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C81",
+      "claim": "alsS- cells exhibited a faster elongation rate than alsS+ cells in microcolony pad experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells exhibited a faster division rate (Figure 4B, Figure 4\u2014figure supplement 1) and faster elongation rate (Figure 4C, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from microcolony pad experiments shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "5af97ffa-0faf-4d7f-bb3c-07219efd8c63",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C82",
+      "claim": "The fast growing alsS- cells had a large growth advantage compared to the slow growing alsS+ cells (median elongation rates of 65 %/hr and 20 %/hr, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "The fast growing alsS- cells that appeared late in pad growth experiments had a large growth advantage compared to the slow growing alsS+ cells (median elongation rates of 65 %/hr and 20 %/hr, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from microcolony pad experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "7b12eb32-c448-4b5e-be94-414733183dba",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C83",
+      "claim": "Growth in the chemostatic Mother Machine using conditioned media is faster than on a pad with non-conditioned media containing acetate.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, growth in the chemostatic Mother Machine using conditioned media is faster than on a pad with non-conditioned media containing acetate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of results from different experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "d3d1ffc0-eae1-4c86-8cbd-719e32202491",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C84",
+      "claim": "The difference between alsS- and alsS+ cell growth rates is much smaller in the microfluidic condition (74 %/hr vs 63 %/hr) than in the pad condition.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the difference between alsS- and alsS+ cells is much smaller in the microfluidic condition (74 %/hr vs 63 %/hr for alsS- and alsS+).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of quantitative results from different experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "5c9df02d-e9a3-410a-8627-f7a61e46ebca",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C85",
+      "claim": "Acetoin is a molecule secreted to counter the pH and anion producing toxic effect of secreted short chain fatty acids, including acetate.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is consistent with the established role of acetoin as a molecule secreted to counter the pH and anion producing toxic effect of secreted short chain fatty acids,including acetate (Xiao and Xu, 2007; Speck and Freese, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "4233eb5e-61e9-441d-bbc1-8870948be1a5",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C86",
+      "claim": "Transient activation of genes for the production of acetoin in alsS+ cells has the potential to produce a milder growth environment which may enable other cells to grow faster in the pad environment.",
+      "claim_type": "EXPLICIT",
+      "source": "In the pad environment, transient activation of genes for the production of the pH-protective acetoin in the alsS+ cells has the potential to produce a milder growth environment which may enable other cells to grow faster (Figure 4D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "db91f963-b85d-4836-b8a3-9f7fd860e845",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C87",
+      "claim": "In the mother-machine experiments, the chemostatic nature of the device minimizes the ability of cells to impact the growth rates of their neighbors.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, in the mother-machine experiments (Figure 3), while cells switch in and out of the alsS metabolic state, the chemostatic nature of the device minimizes their ability to impact the growth rates of their neighbors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the differences between experimental conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "a4c0deb1-3201-489d-9cf8-ce41eaa543ea",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C88",
+      "claim": "The wildtype strain produced larger colonies than the \u0394alsS deletion strain.",
+      "claim_type": "EXPLICIT",
+      "source": "The wildtype strain produced larger colonies than the deletion strain (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from colony growth experiments shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "2bf18218-8636-4af3-bc5f-ad19bc879030",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C89",
+      "claim": "\u0394alsS colonies plated next to wildtype colonies exhibited a distinct growth advantage compared to the same colonies plated further away from the wildtype strain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, \u0394alsS colonies plated next to wildtype colonies exhibited a distinct growth advantage compared to the same colonies plated further away from the wildtype strain (Figure 4\u2014figure supplement 3), indicating that alsS+ cells (in the wildtype colony) alter the growth environment to benefit \u0394alsS cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from colony growth experiments shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "2ee15809-537b-4d12-8f2b-04d660130e4b",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C90",
+      "claim": "alsS+ cells (in the wildtype colony) alter the growth environment to benefit \u0394alsS cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, \u0394alsS colonies plated next to wildtype colonies exhibited a distinct growth advantage compared to the same colonies plated further away from the wildtype strain (Figure 4\u2014figure supplement 3), indicating that alsS+ cells (in the wildtype colony) alter the growth environment to benefit \u0394alsS cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the colony growth experiment results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "06a0c78b-4e1c-4f9c-a0ff-a3de99274efd",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C91",
+      "claim": "The benefit to \u0394alsS cells may occur through detoxification by alsS+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This may occur through detoxification by alsS+ cells (consistent with the role of alsS in the literature).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the mechanism, consistent with known functions of alsS.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "8d849794-3c6c-42cc-811e-2a15f6f14318",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C92",
+      "claim": "The data do not rule out alternative scenarios in which alsS+ cells provide benefit through a distinct mechanism, for example by the secretion of a shared metabolite or co-factor.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our data do not rule out alternative scenarios in which alsS+ cells provide this benefit through a distinct mechanism, for example by the secretion of a shared metabolite or co-factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges alternative interpretations not excluded by the data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "c5209ee7-46ee-400e-9c61-2700b3829790",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C93",
+      "claim": "The natural metabolic niches in soil occupied by B. subtilis are not well understood, and likely heterogeneous.",
+      "claim_type": "EXPLICIT",
+      "source": "The natural metabolic niches in soil occupied by B. subtilis are not well understood, and likely heterogeneous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "e59abb7d-95ff-40df-aa85-ccdb023b7d97",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C94",
+      "claim": "Growth of soil organisms is typically highest near deposits of organic materials which serve as carbon and nitrogen sources.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, growth of soil organisms is typically highest near deposits of organic materials which serve as carbon and nitrogen sources, including deposits of rotting fruits and vegetation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as general knowledge about soil microbiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "c817d061-4c31-4daa-a28a-9aa34f438240",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C95",
+      "claim": "In many fruits and vegetables both organic acids (including malic acid) and sugars are very high.",
+      "claim_type": "EXPLICIT",
+      "source": "In many fruits and vegetables both organic acids (including malic acid) and sugars are very high, providing a natural setting where B. subtilis has access to its two preferred carbon sources simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as general knowledge about fruit and vegetable composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "fb8dc7c2-e805-4a45-b731-fdff13614ad3",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C96",
+      "claim": "B. subtilis is commonly enriched (almost to levels of purity) in traditional fermentation of certain foods, including fermented soy-bean foods (eg natto) that are common in Asia.",
+      "claim_type": "EXPLICIT",
+      "source": "B subtilis is commonly enriched (almost to levels of purity) in traditional fermentation of certain foods, including fermented soy-bean foods (eg natto) that are common in Asia (Kubo et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "e791f520-99b0-45fc-86e2-8549046c3778",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C97",
+      "claim": "Malic acid is present in the root system of legumes and in soybean exudate, where it plays a role in iron homeostasis as a metal chelating agent.",
+      "claim_type": "EXPLICIT",
+      "source": "In these beans sugar is present, and malic acid is also present in the root system of legumes and in soybean exudate, where it plays a role in iron homeostasis as a metal chelating agent (Tiffin and Brown, 1962).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "259e4ade-c606-4a17-9e0a-d924d8419600",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C98",
+      "claim": "The 'acetate switch' refers to the accumulation and reabsorption of acetate.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'acetate switch' refers to the accumulation and reabsorption of acetate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of a known phenomenon.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "5e8e9830-bbbe-4b56-a34a-cd4bb506565f",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C99",
+      "claim": "The acetate switch is a classic hallmark of bacterial growth in aerobic conditions, common to many bacteria including B. subtilis and E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "It is a classic hallmark of bacterial growth in aerobic conditions, common to many bacteria including B. subtilis and E. coli (Wolfe, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "e45756d7-374c-4ca0-9dfa-dacbb2b9efa2",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C100",
+      "claim": "The acetate switch allows for rapid initial growth until acetate levels and associated acidity reach toxic levels, at which point acetate is reabsorbed and replaced with pH-neutral overflow metabolites such as acetoin.",
+      "claim_type": "EXPLICIT",
+      "source": "It allows for rapid initial growth until acetate levels and associated acidity reach toxic levels, at which point acetate is reabsorbed and replaced with pH-neutral overflow metabolites such as acetoin (Wolfe, 2005; Speck and Freese, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "6c4ced1b-ff0d-4afa-a198-21bced93f13d",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C101",
+      "claim": "Growth strategies in which a preferred toxic overflow metabolite is produced under aerobic conditions are used by other organisms that expel and control different fermented toxic overflow metabolites, including ethanol fermentation by yeast and lactic acid in lactobacillus species.",
+      "claim_type": "EXPLICIT",
+      "source": "Growth strategies in which a preferred toxic overflow metabolite is produced under aerobic conditions are also used by other organisms that expel and control different fermented toxic overflow metabolites, including ethanol fermentation by yeast (Otterstedt et al., 2004) and lactic acid in lactobacillus species (Borch and Molin, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "a68324c8-6b2b-44a9-9bf9-319b31e696c2",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C102",
+      "claim": "In the fermentation of ethanol by Saccharomyces cerevisiae, ethanol is produced in dynamic bursts in which some cells switch in and out of fermentative metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in the fermentation of ethanol by the budding yeast Saccharomyces cerevisiae, ethanol is produced in dynamic bursts in which some cells switch in and out of fermentative metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from yeast studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "7caf6b9d-c9cf-444a-a649-48e03c3fc650",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C103",
+      "claim": "Ethanol production bursts in yeast can be synchronized in chemostat growth.",
+      "claim_type": "EXPLICIT",
+      "source": "These bursts can be synchronized in chemostat growth (Tu et al., 2005), but also appear in batch culture (Silverman et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "606aacd2-7b1d-4914-8abb-0937155d50e3",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C104",
+      "claim": "Ethanol production bursts also appear in batch culture in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "These bursts can be synchronized in chemostat growth (Tu et al., 2005), but also appear in batch culture (Silverman et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "e0248e1d-35e6-44e7-878b-be138022fdb4",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C105",
+      "claim": "In yeast, the single cell dynamics, mechanisms, and role of metabolic bursts have not been fully elucidated.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, the single cell dynamics, mechanisms, and role of these bursts have not been fully elucidated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in knowledge about yeast metabolism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "78044992-fcc8-4ecf-8b7c-b6ec9bc3573e",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C106",
+      "claim": "The presence of metabolically specialized subpopulations of cells in both eukaryotes and bacteria suggests that segregating different fermentative or respiratory pathways into individual cells may be a general strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the presence of metabolically specialized subpopulations of cells in both eukaryotes and bacteria suggests that segregating different fermentative or respiratory pathways into individual cells may be a general strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on observations in multiple organisms.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "ac243996-801a-4dc7-8825-42b4901e9907",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C107",
+      "claim": "Metabolic segregation could function to avoid metabolic incompatibilities.",
+      "claim_type": "EXPLICIT",
+      "source": "It could function to avoid metabolic incompatibilities (Brandriss and Magasanik, 1981; Ackermann, 2015; Kumar et al., 2010), controlling cellular challenges such as reducing potential (Liu et al., 2017), or to optimize enzyme and substrate scaling, in which locally high concentrations of enzymes and substrates may be needed for efficient enzymatic conversion to occur (Nikel et al., 2014; Ackermann, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by citations to relevant literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "7a4772ac-dfbe-4312-b6c8-b84ecb0545d6",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C108",
+      "claim": "Metabolic segregation could function to control cellular challenges such as reducing potential.",
+      "claim_type": "EXPLICIT",
+      "source": "It could function to avoid metabolic incompatibilities (Brandriss and Magasanik, 1981; Ackermann, 2015; Kumar et al., 2010), controlling cellular challenges such as reducing potential (Liu et al., 2017), or to optimize enzyme and substrate scaling, in which locally high concentrations of enzymes and substrates may be needed for efficient enzymatic conversion to occur (Nikel et al., 2014; Ackermann, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by citation to relevant literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "16145e24-5fc3-4f2a-9975-6018320e46ec",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C109",
+      "claim": "Metabolic segregation could function to optimize enzyme and substrate scaling, in which locally high concentrations of enzymes and substrates may be needed for efficient enzymatic conversion to occur.",
+      "claim_type": "EXPLICIT",
+      "source": "It could function to avoid metabolic incompatibilities (Brandriss and Magasanik, 1981; Ackermann, 2015; Kumar et al., 2010), controlling cellular challenges such as reducing potential (Liu et al., 2017), or to optimize enzyme and substrate scaling, in which locally high concentrations of enzymes and substrates may be needed for efficient enzymatic conversion to occur (Nikel et al., 2014; Ackermann, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by citations to relevant literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "097f09d5-1d8e-4331-9fa6-700baaad65ec",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C110",
+      "claim": "Better understanding of the principles that govern segregation of metabolic activities will facilitate metabolic engineering and industrial fermentation approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Better understanding of the principles that govern segregation of metabolic activities will facilitate metabolic engineering and industrial fermentation approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential applications of this research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "0db4f1e7-be0e-4af8-8622-2e2e0c1ec4d1",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C111",
+      "claim": "E. coli strains simultaneously produce five different fermentation products during mixed-acid fermentation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, E. coli strains simultaneously produce five different fermentation products during mixed-acid fermentation (Clark, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "24656ef2-7498-4715-8b98-b5265798f10f",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C112",
+      "claim": "The rapid release of toxic overflow products has a role in the context of competition within a multi-species environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The rapid release of toxic overflow products also has a role in the context of competition within a multi-species environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known ecological function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "94e041bb-6763-46e5-bd05-880ca819971f",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C113",
+      "claim": "A quick buildup of toxic products can be advantageous to ward off competing species in multi-species environments.",
+      "claim_type": "EXPLICIT",
+      "source": "In such environments, a quick buildup of toxic products can be advantageous to ward off competing species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general principle of microbial competition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "f39fbea1-7a08-45bd-a9ac-8c9d1491f995",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C114",
+      "claim": "The buildup of lactic acid from normal microbiota limits infection by pathogens that are not lactic acid specialists in human infectious disease.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of human infectious disease, the buildup of byproducts such as lactic acid from normal microbiota limits infection by pathogens that are not lactic acid specialists (O'Hanlon et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "58c242c0-3e18-4801-904c-dd66302f14f5",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C115",
+      "claim": "In industrial fermenters and microbial food fermentation, secreted overflow metabolites, including acetate and ethanol, limit contamination.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, in industrial fermenters and microbial food fermentation secreted overflow metabolites, including acetate and ethanol, limit contamination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known application in industrial microbiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "44749a8c-25b2-47a6-8350-c6d264a320fa",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C116",
+      "claim": "If a particular metabolic niche is transient, a strategy in which cells can switch in and out of metabolic states can be advantageous relative to an alternative scenario in which multiple strains are evolutionarily 'locked' into distinct specialist roles.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, if a particular metabolic niche is transient, as in the case of acetate production in B. subtilis colony growth or batch culture, a strategy in which cells can switch in and out of metabolic states can be advantageous relative to an alternative scenario in which multiple strains are evolutionarily 'locked' into distinct specialist roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical argument about evolutionary advantages.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "2b0e2c0c-528c-4659-b560-0944f932c88b",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C117",
+      "claim": "A 'locked' specialist strain would be at a disadvantage during periods of growth when acetate is absent.",
+      "claim_type": "EXPLICIT",
+      "source": "This is especially true if the metabolic niche (e.g. acetate) is short-lived, because a 'locked' specialist strain would be at a disadvantage during periods of growth when acetate is absent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical argument about evolutionary disadvantages of fixed specialization.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "c10c88a7-8255-4cde-8790-c1e0c851bef7",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C118",
+      "claim": "Quorum sensing plays a critical role in the activation of the competence program.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of competence and sucC, which are both controlled by the master regulator comK, quorum sensing plays a critical role in the activation of the competence program (Dubnau, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "ca9d041e-561d-429e-8895-b1fc8d4eeadd",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C119",
+      "claim": "Maximizing competence requires specific media conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Maximizing competence requires specific media conditions (Dubnau, 1982), raising the possibility that alongside quorum sensing peptides, secreted metabolic byproducts also play a role in this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "7619452a-c365-4d4d-b8d3-c14e80494207",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C120",
+      "claim": "Secreted metabolic byproducts may play a role in competence activation alongside quorum sensing peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Maximizing competence requires specific media conditions (Dubnau, 1982), raising the possibility that alongside quorum sensing peptides, secreted metabolic byproducts also play a role in this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the observation that media conditions affect competence.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "4a0b7572-45c2-4671-954e-9c953260207c",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C121",
+      "claim": "It is not clear at this point how sucC is related to acetate metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results reveal that several metabolic processes may be affiliated with a given subpopulation. For instance, it is not clear at this point how sucC is related to acetate metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an open question from the research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "901f333a-571f-4cee-988d-d2346b1e7fcf",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C122",
+      "claim": "One possible connection between sucC expression and acetate production might be that during co-consumption of glucose and malate, the TCA cycle may be overloaded with incoming material, causing accumulation of intermediates that can impact the glycolytic pathway, including acetate secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible connection between sucC expression and acetate production might be that during co-consumption of glucose and malate, the TCA cycle may be overloaded with incoming material, causing accumulation of intermediates that can impact the glycolytic pathway, including acetate secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the mechanism connecting sucC to acetate production.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "0ae2ff49-0992-4f2d-ba32-8b94ae48a262",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C123",
+      "claim": "Another possibility is that sucC is used to regulate coenzyme-A levels at a time when a large amount of coenzyme-A is used and freed when pyruvate is converted to acetyl-coA and then acetate.",
+      "claim_type": "EXPLICIT",
+      "source": "Another possibility is that sucC is used to regulate coenzyme-A levels at a time when a large amount of coenzyme-A is used and freed when pyruvate is converted to acetyl-coA and then acetate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the mechanism connecting sucC to acetate production.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "efd39d8d-cf45-46d2-8b4d-9b9b946a4947",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C124",
+      "claim": "Arginine metabolism genes are differentially regulated by competence.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, alongside the roles of the sucC and pta metabolic genes, arginine metabolism genes are also differentially regulated by competence, as seen in our results and in prior microarray experiments (Berka et al., 2002; Ogura et al., 2002), further complicating our understanding of the full physiological role of this subpopulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the current results and citations to previous microarray experiments.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "6417509a-0429-4417-bf29-92a5508ef180",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C125",
+      "claim": "Tools to systematically study metabolites in single cells would help to map the actual metabolic states of each subpopulation in a given condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Tools to systematically study metabolites in single cells would help to map the actual metabolic states of each subpopulation in a given condition and will allow us to address these questions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research needs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "991d9cce-bc99-4e34-9720-21c61255cac9",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C126",
+      "claim": "Cell-cell heterogeneity can be advantageous as a 'bet-hedging' strategy both for microbial and cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Going beyond microbial systems, cell-cell heterogeneity can be advantageous as a 'bet-hedging' strategy both for microbial and cancer cells (Veening et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "1d52631c-8deb-4423-875c-dbe53afecd9b",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C127",
+      "claim": "Cell-cell heterogeneity enables the population as a whole to withstand unforeseen challenges, such as antibiotic or chemotherapeutic drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "In such cases, cell-cell heterogeneity enables the population as a whole to withstand unforeseen challenges, such as antibiotic or chemotherapeutic drugs (Sharma et al., 2010; Rotem et al., 2010), or metabolic shifts (Solopova et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "7c8088a3-db40-4517-83c6-75f16781c0b3",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C128",
+      "claim": "Cell-cell heterogeneity enables the population as a whole to withstand metabolic shifts.",
+      "claim_type": "EXPLICIT",
+      "source": "In such cases, cell-cell heterogeneity enables the population as a whole to withstand unforeseen challenges, such as antibiotic or chemotherapeutic drugs (Sharma et al., 2010; Rotem et al., 2010), or metabolic shifts (Solopova et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "1f4b0122-e78e-48c1-ad76-622fe0e801a8",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C129",
+      "claim": "The emergence of alsS+ acetoin producing populations arises as a response to an anticipated challenge that is part of the growth progression in conditions favoring weak organic acid production, unlike simple bet-hedging.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast to simple bet-hedging, the emergence of alsS+ acetoin producing populations described here arises as a response to an anticipated challenge that is part of the growth progression in conditions favoring weak organic acid production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion distinguishing the observed phenomenon from bet-hedging.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "0f1883fb-2ebe-45b8-867e-fc9ec834b04f",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "claim_id": "C130",
+      "claim": "Unlike in bet-hedging, metabolic state switching could provide a predictable benefit in a more deterministic dynamic environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, unlike in bet-hedging, metabolic state switching could provide a predictable benefit in a more deterministic dynamic environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the functional difference from bet-hedging strategies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a8504db8-8367-4e94-9caa-f07aebd3bee5",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Exponentially growing B. subtilis cultures divide into distinct metabolic subpopulations: one producing acetate (sucC+) and another expressing genes for acetoin production (alsS+). These subpopulations exhibit distinct growth rates, dynamic interconversion between states, and acetate-dependent population sizes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C9 collectively establish the main finding. The existence of distinct subpopulations is demonstrated through fluorescence microscopy (C24-C26, C38-C41), temporal dynamics through time-course analysis (C43-C48), growth rate differences through Mother Machine and microcolony experiments (C69-C82), state switching through time-lapse imaging (C71, C77-C81), and acetate-dependent regulation (C75-C76, C8). Multiple independent experimental approaches converge on this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "2076d970-c505-4571-94e6-0a29d78d0d5b",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The sucC+ subpopulation is controlled by the competence system and is linked to acetate production. sucC expression coincides temporally with acetate production, correlates with competence genes and pta expression, and deletion of comK eliminates both sucC expression and high-level acetate production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C68 provide strong converging evidence linking sucC to competence and acetate production. Temporal correlation (C43-C44), RNAseq showing competence gene enrichment and pta upregulation (C50-C52), single-cell correlation with competence markers (C55), and genetic deletion experiments (C57-C63) all support this connection. The ~5-fold reduction in acetate in \u0394comK strains (C58) provides quantitative functional evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "b9413252-a4a0-48d4-aba2-0cb060774a96",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "alsS expression dynamics coincide with acetate consumption and acetoin production. alsS+ cells exhibit reduced growth rates, and alsS expression is induced by acetate in a dose-dependent manner. In microcolony experiments, alsS+ cells emerge followed by faster-growing alsS- cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C82 establish the alsS subpopulation characteristics through multiple approaches. Temporal correlation with acetate/acetoin dynamics (C46-C48), Mother Machine quantification of growth rates (C74), dose-dependent acetate induction (C75-C76), and microcolony dynamics showing emergence of both alsS+ and alsS- populations with distinct growth rates (C77-C82) provide comprehensive support. The quantitative growth rate measurements are particularly strong.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "0f19f1f9-3143-4159-b905-65ba18d822fe",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "alsS+ cells alter the extracellular environment to benefit alsS- cells. \u0394alsS colonies grown near wildtype colonies show enhanced growth compared to those grown distant from wildtype, suggesting environmental modification by alsS+ cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90 provide experimental evidence for cross-feeding or environmental modification. The spatial proximity experiment (C89) demonstrates that wildtype colonies enhance \u0394alsS growth in a distance-dependent manner, supporting the interpretation that alsS+ cells modify the shared environment. However, the mechanism remains incompletely defined (C91-C92 acknowledge alternative possibilities).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "fdf50505-daec-4064-9fd7-4cdf9ba4b63e",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "sucC+ cells exhibit transient activation episodes lasting ~4 hours with reduced growth rates (47.4\u00b12.7 %/hr vs 67.7\u00b12.3 %/hr for sucC- cells), and can switch out of the sucC+ state to resume normal growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 provide quantitative single-cell dynamics from Mother Machine experiments. The measurements include sample size (n=31 events), mean and standard deviation for dwell time, and growth rates with error estimates. The reversibility of the state (C71) is demonstrated through time-lapse imaging. These are well-supported quantitative findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "185bc73c-4951-4ec6-a386-8f10a4b10ed3",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A library of 13 metabolic gene reporters was constructed and characterized. Most genes showed unimodal distributions with low skew, but sucC and alsS exhibited heterogeneous expression with high skew values (4.72 and 1.14) and maintained heterogeneity for several hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C42 describe the methodological approach and initial screening results. The construction of reporter strains is clearly described (C34-C35), and quantitative characterization of expression distributions is provided with specific skew values and percentages of high-expressing cells (C38-C40). The persistence of heterogeneity over time (C42) addresses a potential concern about transient activation artifacts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "561a0b04-9641-4aee-a458-e97b7bd2eaec",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Growth rate differences between alsS+ and alsS- cells are smaller in chemostatic Mother Machine conditions (74 vs 63 %/hr) compared to microcolony pad conditions (65 vs 20 %/hr), consistent with the chemostatic device minimizing cells' ability to impact neighbors' growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 provide quantitative comparison between experimental conditions, and C87 offers a mechanistic interpretation. The data clearly show condition-dependent differences in growth rate disparities. The interpretation (C87) is reasonable given the experimental designs, though it remains somewhat inferential.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "bca5ad99-afc0-43dc-bbe9-e5d2fdb2215d",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "sucC expression is negatively correlated with pckA expression at the single-cell level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 is supported by scatter plot data in Figure 2C and supplementary figures showing anticorrelation with statistical significance (Fisher exact test p-values provided in Figure 2\u2014figure supplement 3). This demonstrates that sucC+ cells represent a distinct metabolic state beyond just competence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "0d6f275a-0241-4996-9ffa-f385220db817",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Arginine metabolism genes are differentially regulated by competence, as observed in both current RNAseq results and prior microarray experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C124 is supported by both the current RNAseq data and citations to previous microarray studies (Berka et al., 2002; Ogura et al., 2002). This adds complexity to understanding the full metabolic role of the competent subpopulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "4532a377-cc7b-4d34-b74f-d89a19a3e455",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "When acetate levels rise to toxic levels, B. subtilis cultures consume acetate and produce acetoin, a non-toxic pH-neutral overflow metabolite. Acetate is released around mid-exponential phase and reabsorbed later when acetoin is produced.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21, C27-C28 describe the biphasic acetate switch phenomenon. This is supported by HPLC measurements shown in Figure 1D and is consistent with established literature (Speck and Freese, 1973). The temporal dynamics are clearly demonstrated in the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "36761d92-e01a-4057-9749-093ee5e78358",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The emergence of alsS+ populations differs from bet-hedging strategies because it arises as a response to an anticipated challenge (acetate accumulation) that is part of the growth progression, providing predictable benefits in a deterministic dynamic environment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C129-C130 distinguish the observed phenomenon from bet-hedging based on the experimental evidence showing acetate-dependent induction (C75-C76) and temporal correlation with acetate dynamics (C46-C48). The distinction is conceptually sound and supported by the data showing environmental responsiveness rather than stochastic differentiation independent of environmental cues.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "6853eecd-9fea-4dd6-a074-fe6e4aaa7052",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The mechanistic connection between sucC expression and acetate production remains unclear, with possible explanations including TCA cycle overload or coenzyme-A regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C121-C123 explicitly acknowledge uncertainty about the mechanism. While the correlation between sucC and acetate production is established, the authors appropriately note that the biochemical mechanism remains speculative. This represents an important open question requiring future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    },
+    {
+      "id": "0b990813-12f2-4acb-b92f-5647bea89ab9",
+      "content_id": "ddb701b2-0ddb-4de8-9827-de7a865c2c02",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The mechanism by which alsS+ cells benefit \u0394alsS cells may involve detoxification, but alternative mechanisms such as secretion of shared metabolites or co-factors cannot be ruled out.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C91-C92 acknowledge mechanistic uncertainty. While the spatial proximity experiment (C89) demonstrates environmental modification, the specific mechanism remains unclear. The authors appropriately note that detoxification is consistent with known alsS function but that alternative explanations exist.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:43:23.558793Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e185519b-6a86-4ef8-bfbf-0c540a879b7c",
+      "result_id": "a8504db8-8367-4e94-9caa-f07aebd3bee5"
+    },
+    {
+      "claim_id": "8d8d4347-54bc-4e8c-b45d-7a131bc8cb13",
+      "result_id": "a8504db8-8367-4e94-9caa-f07aebd3bee5"
+    },
+    {
+      "claim_id": "11168431-be8e-48ff-83a7-31b3dcd75709",
+      "result_id": "a8504db8-8367-4e94-9caa-f07aebd3bee5"
+    },
+    {
+      "claim_id": "aedc087f-46c3-43f3-8500-42abb641541c",
+      "result_id": "a8504db8-8367-4e94-9caa-f07aebd3bee5"
+    },
+    {
+      "claim_id": "eff03800-25ec-4b1d-8752-f5602dfb18fe",
+      "result_id": "a8504db8-8367-4e94-9caa-f07aebd3bee5"
+    },
+    {
+      "claim_id": "b0301f7a-e021-4583-b519-b321755c1be9",
+      "result_id": "a8504db8-8367-4e94-9caa-f07aebd3bee5"
+    },
+    {
+      "claim_id": "1ad2a20f-4a0e-400b-9e09-0520ccd04529",
+      "result_id": "a8504db8-8367-4e94-9caa-f07aebd3bee5"
+    },
+    {
+      "claim_id": "d7afc51b-3d70-4ea3-8c67-a4d88b6339d1",
+      "result_id": "2076d970-c505-4571-94e6-0a29d78d0d5b"
+    },
+    {
+      "claim_id": "b597b991-c0fe-4240-b3fe-1da3bd2971d4",
+      "result_id": "2076d970-c505-4571-94e6-0a29d78d0d5b"
+    },
+    {
+      "claim_id": "f85233da-e2d4-455a-9a56-80ede6def142",
+      "result_id": "2076d970-c505-4571-94e6-0a29d78d0d5b"
+    },
+    {
+      "claim_id": "246f2b39-11d4-4628-9684-716df10a2fa8",
+      "result_id": "2076d970-c505-4571-94e6-0a29d78d0d5b"
+    },
+    {
+      "claim_id": "3193e6db-9370-41b1-9b06-892017e61829",
+      "result_id": "2076d970-c505-4571-94e6-0a29d78d0d5b"
+    },
+    {
+      "claim_id": "b2f47bee-229a-49b9-b515-909d46349057",
+      "result_id": "2076d970-c505-4571-94e6-0a29d78d0d5b"
+    },
+    {
+      "claim_id": "4e2ebffe-c2b1-4d22-a2ef-8cf7e6fd2e68",
+      "result_id": "2076d970-c505-4571-94e6-0a29d78d0d5b"
+    },
+    {
+      "claim_id": "9a91a04b-a8de-45d0-9adb-9371698f1cd2",
+      "result_id": "2076d970-c505-4571-94e6-0a29d78d0d5b"
+    },
+    {
+      "claim_id": "6dbc9368-a366-4546-a76d-5259efcfcac6",
+      "result_id": "2076d970-c505-4571-94e6-0a29d78d0d5b"
+    },
+    {
+      "claim_id": "101fb1d8-9d72-4e40-baed-ea76f6519a79",
+      "result_id": "2076d970-c505-4571-94e6-0a29d78d0d5b"
+    },
+    {
+      "claim_id": "18ab9d17-42cc-4009-8230-2c563baa95ed",
+      "result_id": "2076d970-c505-4571-94e6-0a29d78d0d5b"
+    },
+    {
+      "claim_id": "10e5ba91-1701-4c0e-ac0a-821cb064f0f3",
+      "result_id": "2076d970-c505-4571-94e6-0a29d78d0d5b"
+    },
+    {
+      "claim_id": "37930fea-0eae-4000-a582-8447487640fe",
+      "result_id": "2076d970-c505-4571-94e6-0a29d78d0d5b"
+    },
+    {
+      "claim_id": "e7766934-0565-405c-8509-5e7a7c775398",
+      "result_id": "2076d970-c505-4571-94e6-0a29d78d0d5b"
+    },
+    {
+      "claim_id": "fc6a17f2-2326-4a45-9a69-333c352d7ca1",
+      "result_id": "2076d970-c505-4571-94e6-0a29d78d0d5b"
+    },
+    {
+      "claim_id": "01d9fbb1-4117-46c4-87e4-11176b7e66c2",
+      "result_id": "2076d970-c505-4571-94e6-0a29d78d0d5b"
+    },
+    {
+      "claim_id": "80d75d61-0b69-4c18-8a51-13a10faffe06",
+      "result_id": "2076d970-c505-4571-94e6-0a29d78d0d5b"
+    },
+    {
+      "claim_id": "7fd4e27c-5e38-458a-af86-9e517d1025b0",
+      "result_id": "b9413252-a4a0-48d4-aba2-0cb060774a96"
+    },
+    {
+      "claim_id": "e1a31d61-c425-488d-b8ca-95c3779c3992",
+      "result_id": "b9413252-a4a0-48d4-aba2-0cb060774a96"
+    },
+    {
+      "claim_id": "9c56bbe7-04f5-404b-ae60-eb4861027cef",
+      "result_id": "b9413252-a4a0-48d4-aba2-0cb060774a96"
+    },
+    {
+      "claim_id": "358eb2fd-bcd9-4b68-bdf2-a2e007a665fa",
+      "result_id": "b9413252-a4a0-48d4-aba2-0cb060774a96"
+    },
+    {
+      "claim_id": "275d59d8-8e6e-4f7b-8824-4360d852a458",
+      "result_id": "b9413252-a4a0-48d4-aba2-0cb060774a96"
+    },
+    {
+      "claim_id": "f0b27875-312f-4343-ad95-b5154cbfc7b5",
+      "result_id": "b9413252-a4a0-48d4-aba2-0cb060774a96"
+    },
+    {
+      "claim_id": "864d1c5e-2f7d-497b-850b-d878b550cdc0",
+      "result_id": "b9413252-a4a0-48d4-aba2-0cb060774a96"
+    },
+    {
+      "claim_id": "6a55630a-81b4-4cca-b82f-90d5547cf7d9",
+      "result_id": "b9413252-a4a0-48d4-aba2-0cb060774a96"
+    },
+    {
+      "claim_id": "28444799-f775-4a63-890a-02679dadce03",
+      "result_id": "b9413252-a4a0-48d4-aba2-0cb060774a96"
+    },
+    {
+      "claim_id": "99c8ffc3-bbd0-4631-9a34-96fb683f1fea",
+      "result_id": "b9413252-a4a0-48d4-aba2-0cb060774a96"
+    },
+    {
+      "claim_id": "19f0ea99-820e-408d-a059-b8c808d4186b",
+      "result_id": "b9413252-a4a0-48d4-aba2-0cb060774a96"
+    },
+    {
+      "claim_id": "7880b232-6c54-43f1-8614-391968096621",
+      "result_id": "b9413252-a4a0-48d4-aba2-0cb060774a96"
+    },
+    {
+      "claim_id": "5af97ffa-0faf-4d7f-bb3c-07219efd8c63",
+      "result_id": "b9413252-a4a0-48d4-aba2-0cb060774a96"
+    },
+    {
+      "claim_id": "a4c0deb1-3201-489d-9cf8-ce41eaa543ea",
+      "result_id": "0f19f1f9-3143-4159-b905-65ba18d822fe"
+    },
+    {
+      "claim_id": "2bf18218-8636-4af3-bc5f-ad19bc879030",
+      "result_id": "0f19f1f9-3143-4159-b905-65ba18d822fe"
+    },
+    {
+      "claim_id": "2ee15809-537b-4d12-8f2b-04d660130e4b",
+      "result_id": "0f19f1f9-3143-4159-b905-65ba18d822fe"
+    },
+    {
+      "claim_id": "4233eb5e-61e9-441d-bbc1-8870948be1a5",
+      "result_id": "0f19f1f9-3143-4159-b905-65ba18d822fe"
+    },
+    {
+      "claim_id": "7ec50d72-dc39-4d62-96c7-ee160c2205e5",
+      "result_id": "fdf50505-daec-4064-9fd7-4cdf9ba4b63e"
+    },
+    {
+      "claim_id": "6645b011-4288-482c-814e-cb6ad2e2c32b",
+      "result_id": "fdf50505-daec-4064-9fd7-4cdf9ba4b63e"
+    },
+    {
+      "claim_id": "3acdf840-77a3-4cca-b966-0690f4a6c3a8",
+      "result_id": "fdf50505-daec-4064-9fd7-4cdf9ba4b63e"
+    },
+    {
+      "claim_id": "3607027a-8c80-424d-8b7c-ab8808d39ff6",
+      "result_id": "185bc73c-4951-4ec6-a386-8f10a4b10ed3"
+    },
+    {
+      "claim_id": "76ffec7d-2993-42a3-aedf-d222c799741d",
+      "result_id": "185bc73c-4951-4ec6-a386-8f10a4b10ed3"
+    },
+    {
+      "claim_id": "4c5741a9-167b-4010-b67d-997a5f60798f",
+      "result_id": "185bc73c-4951-4ec6-a386-8f10a4b10ed3"
+    },
+    {
+      "claim_id": "5fd5ecdf-deaa-4e51-91e9-e55050a5c889",
+      "result_id": "185bc73c-4951-4ec6-a386-8f10a4b10ed3"
+    },
+    {
+      "claim_id": "d5639b9a-17db-42bf-a311-ebdad77e3546",
+      "result_id": "185bc73c-4951-4ec6-a386-8f10a4b10ed3"
+    },
+    {
+      "claim_id": "ae3ef149-55f1-4330-904a-5917ec3fd4c9",
+      "result_id": "185bc73c-4951-4ec6-a386-8f10a4b10ed3"
+    },
+    {
+      "claim_id": "b6c10898-7323-49b8-8ee5-b5596bdd9111",
+      "result_id": "185bc73c-4951-4ec6-a386-8f10a4b10ed3"
+    },
+    {
+      "claim_id": "aaa53384-98dd-4bfe-85b6-14845a5733f3",
+      "result_id": "185bc73c-4951-4ec6-a386-8f10a4b10ed3"
+    },
+    {
+      "claim_id": "ba9825f1-6217-43d2-b246-00d59cf1d0aa",
+      "result_id": "185bc73c-4951-4ec6-a386-8f10a4b10ed3"
+    },
+    {
+      "claim_id": "7b12eb32-c448-4b5e-be94-414733183dba",
+      "result_id": "561a0b04-9641-4aee-a458-e97b7bd2eaec"
+    },
+    {
+      "claim_id": "d3d1ffc0-eae1-4c86-8cbd-719e32202491",
+      "result_id": "561a0b04-9641-4aee-a458-e97b7bd2eaec"
+    },
+    {
+      "claim_id": "db91f963-b85d-4836-b8a3-9f7fd860e845",
+      "result_id": "561a0b04-9641-4aee-a458-e97b7bd2eaec"
+    },
+    {
+      "claim_id": "f35196a8-dcfa-41ca-85c7-0cdec65efe89",
+      "result_id": "bca5ad99-afc0-43dc-bbe9-e5d2fdb2215d"
+    },
+    {
+      "claim_id": "efd39d8d-cf45-46d2-8b4d-9b9b946a4947",
+      "result_id": "0d6f275a-0241-4996-9ffa-f385220db817"
+    },
+    {
+      "claim_id": "3ea5cfed-6095-4dd6-8c76-f1c4b416509d",
+      "result_id": "4532a377-cc7b-4d34-b74f-d89a19a3e455"
+    },
+    {
+      "claim_id": "c31543b2-fcb9-4712-9eb0-c6a37d189bc9",
+      "result_id": "4532a377-cc7b-4d34-b74f-d89a19a3e455"
+    },
+    {
+      "claim_id": "85e7421a-26dc-4a57-9795-8a3c83aa7f86",
+      "result_id": "4532a377-cc7b-4d34-b74f-d89a19a3e455"
+    },
+    {
+      "claim_id": "ed8e137b-f764-4045-a544-4d87ea5b29cf",
+      "result_id": "4532a377-cc7b-4d34-b74f-d89a19a3e455"
+    },
+    {
+      "claim_id": "1f4b0122-e78e-48c1-ad76-622fe0e801a8",
+      "result_id": "36761d92-e01a-4057-9749-093ee5e78358"
+    },
+    {
+      "claim_id": "0f1883fb-2ebe-45b8-867e-fc9ec834b04f",
+      "result_id": "36761d92-e01a-4057-9749-093ee5e78358"
+    },
+    {
+      "claim_id": "4a0b7572-45c2-4671-954e-9c953260207c",
+      "result_id": "6853eecd-9fea-4dd6-a074-fe6e4aaa7052"
+    },
+    {
+      "claim_id": "901f333a-571f-4cee-988d-d2346b1e7fcf",
+      "result_id": "6853eecd-9fea-4dd6-a074-fe6e4aaa7052"
+    },
+    {
+      "claim_id": "0ae2ff49-0992-4f2d-ba32-8b94ae48a262",
+      "result_id": "6853eecd-9fea-4dd6-a074-fe6e4aaa7052"
+    },
+    {
+      "claim_id": "06a0c78b-4e1c-4f9c-a0ff-a3de99274efd",
+      "result_id": "0b990813-12f2-4acb-b92f-5647bea89ab9"
+    },
+    {
+      "claim_id": "8d849794-3c6c-42cc-811e-2a15f6f14318",
+      "result_id": "0b990813-12f2-4acb-b92f-5647bea89ab9"
+    }
+  ],
+  "comparisons": []
+}

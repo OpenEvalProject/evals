@@ -1,0 +1,2109 @@
+{
+  "submission": {
+    "id": "5635a5db-0d3a-4f97-893a-a91ea46d70ff",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:47:02.954572Z",
+    "updated_at": "2025-12-01T19:47:02.954572Z"
+  },
+  "content": [
+    {
+      "id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "submission_id": "5635a5db-0d3a-4f97-893a-a91ea46d70ff",
+      "content_type": "manuscript",
+      "content_text": "# Replication Study: The common feature of leukemia-associated IDH1 and IDH2 mutations is a neomorphic enzyme activity converting alpha-ketoglutarate to 2-hydroxyglutarate\n\n## Authors\n\n- Megan Reed Showalter<sup>1</sup>\n- Jason Hatakeyama<sup>2</sup> ([ORCID: 0000-0001-8690-5107](https://orcid.org/0000-0001-8690-5107))\n- Tomas Cajka<sup>1</sup>\n- Kacey VanderVorst<sup>2</sup>\n- Kermit L Carraway<sup>2</sup>\n- Oliver Fiehn<sup>1</sup>\n\n### Affiliations\n\n1. West Coast Metabolomics Center University of California Davis United States\n2. Department of Biochemistry and Molecular Medicine University of California California United States\n3. University of California Davis Comprehensive Cancer Center University of California California United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn 2016, as part of the Reproducibility Project: Cancer Biology, we published a Registered Report (Fiehn et al., 2016), that described how we intended to replicate selected experiments from the paper \"The common feature of leukemia-associated IDH1 and IDH2 mutations is a neomorphic enzyme activity converting alpha-ketoglutarate to 2-hydroxyglutarate\" (Ward et al., 2010). Here, we report the results of those experiments. We found that cells expressing R172K mutant IDH2 did not display isocitrate-dependent NADPH production above vector control levels, in contrast to the increased production observed with wild-type IDH2. Conversely, expression of R172K mutant IDH2 resulted in increased alpha-ketoglutarate-dependent consumption of NADPH compared to wild-type IDH2 or vector control. These results are similar to those reported in the original study (Figure 2; Ward et al., 2010). Further, expression of R172K mutant IDH2 resulted in increased 2HG levels within cells compared to the background levels observed in wild-type IDH2 and vector control, similar to the original study (Figure 3D; Ward et al., 2010). In primary human AML samples, the 2HG levels observed in samples with mutant IDH1 or IDH2 status were higher than those observed in samples without an IDH mutation, similar to what was observed in the original study (Figure 5C; Ward et al., 2010). Finally, we report meta-analyses for each result.\n\n## Introduction\n\nThe Reproducibility Project: Cancer Biology (RP:CB) is a collaboration between the Center for Open Science and Science Exchange that seeks to address concerns about reproducibility in scientific research by conducting replications of selected experiments from a number of high-profile papers in the field of cancer biology (Errington et al., 2014). For each of these papers a Registered Report detailing the proposed experimental designs and protocols for the replications was peer reviewed and published prior to data collection. The present paper is a Replication Study that reports the results of the replication experiments detailed in the Registered Report (Fiehn et al., 2016) for a paper by Ward et al., and uses a number of approaches to compare the outcomes of the original experiments and the replications.\n\nIn 2010, Ward et al. demonstrated that a shared feature of isocitrate dehydrogenase (IDH) mutations identified in gliomas and acute myeloid leukemia (AML) is the acquisition of a neomorphic enzyme activity. This study built upon a previous study demonstrating cancer-associated IDH1 mutations resulted in increased production of the oncometabolite 2-hydroxyglutarate (2HG) (Dang et al., 2009). Similar to the IDH1 R132 mutation, the cancer-associated IDH2 R172 mutation was demonstrated to be deficient in isocitrate-dependent NADPH production (Yan et al., 2009; Ward et al., 2010), while acquiring a gain of function for alpha-ketoglutarate-dependent NADPH consumption that resulted in the production of 2HG (Ward et al., 2010). 2HG was also reported to be detectable in AML patient samples and predictive of IDH mutational status (Ward et al., 2010).\n\nThe Registered Report for the paper by Ward et al. described the experiments to be replicated (Figures 2, 3D and 5), and summarized the current evidence for these findings (Fiehn et al., 2016). Since that publication, additional studies have reported R172 mutant IDH2 exhibiting decreased NADPH production, as well as increased intracellular accumulation of 2HG compared to wild-type IDH2 (Carbonneau et al., 2016; Robinson et al., 2016). Similarly, there have been numerous studies that have observed this with IDH1 mutations (Chaturvedi et al., 2017; Ward et al., 2013). There have also been numerous studies reporting the utility of using 2HG as a predictive biomarker for the presence of IDH mutations. This includes the detection of 2HG in the peripheral blood of patients with AML (DiNardo et al., 2013; McGehee et al., 2016), serum samples from patients with a myeloid sarcoma diagnosis (Willekens et al., 2015), serum samples from patients with angioimmunoblastic T-cell lymphoma (Lemonnier et al., 2016), as well as plasma, urine, and the cerebrospinal fluid in glioma patients (Fathi et al., 2016; Kalinina et al., 2016; Lombardi et al., 2015). Additional strategies have also been reported to detect 2HG noninvasively in glioma that are based on advanced imaging and spectroscopy approaches (An et al., 2016; de la Fuente et al., 2016; Ganji et al., 2016; Verma et al., 2016). Clinical trials are also underway to target mutant IDH1 and IDH2 in AML, gliomas, myelodysplastic syndrome, and other solid tumors (Mondesir et al., 2016; Vander Heiden and DeBerardinis, 2017).\n\nThe outcome measures reported in this Replication Study will be aggregated with those from the other Replication Studies to create a dataset that will be examined to provide evidence about reproducibility of cancer biology research, and to identify factors that influence reproducibility more generally.\n\n## Results and discussion\n\n### Assessing the isocitrate-dependent NADPH production and alpha-ketoglutarate-dependent NADPH consumption of wild-type or R172K mutant IDH2\n\nWe sought to independently replicate whether the cancer-associated IDH2 R172 mutation, exhibited a loss-of-function for isocitrate-dependent NADPH production and a gain-of-function for alpha-ketoglutarate-dependent NADPH consumption compared to wild-type IDH2. This experiment is similar to what was reported in Figure 2 of Ward et al. (2010) and described in Protocol 1 in the Registered Report (Fiehn et al., 2016). HEK293T cells, which endogenously express wild-type IDH2, were transfected to ectopically express wild-type or R172 mutant IDH2 (Figure 1E). Extracts from cells expressing wild-type IDH2 displayed an increase in isocitrate-dependent NADPH production (0.49 [n\u00a0=\u00a07, SD\u00a0=\u00a00.090] change in OD340 after 30 min); while, extracts from cells expressing R172K mutant IDH2 reached a 0.12 [n\u00a0=\u00a07, SD\u00a0=\u00a00.069] change in OD340 over the same period, similar to the levels observed in extracts from vector control transfected cells (0.094 [n\u00a0=\u00a07, SD\u00a0=\u00a00.055] change in OD340) (Figure 1A). This compares to the original study that reported extracts from wild-type IDH2 expressing cells increased isocitrate-dependent NADPH production (~1.3 change in OD340 after 30 min), while R172K mutant IDH2 and vector control resulted in an ~0.1 and ~0.02 change in OD340, respectively (Ward et al., 2010). The same extracts were also tested for alpha-ketoglutarate-dependent NADPH consumption (Figure 1C). Expression of R172K mutant IDH2 resulted in a 0.022 [n\u00a0=\u00a07, SD\u00a0=\u00a00.0077] change in OD340 after 180 min, while wild-type IDH2 transfected cell extracts had minimal activity (0.0034 [n\u00a0=\u00a07, SD\u00a0=\u00a00.0019] change in OD340), similar to vector control (0.0019 [n\u00a0=\u00a07, SD\u00a0=\u00a00.0040] change in OD340). This compares to the original study that reported an ~0.06 change in OD340 for R172K mutant IDH2 expression, an ~0.014 change in OD340 for wild-type IDH2, and an ~0.003 change in OD340 for vector control after 171 min (Ward et al., 2010). The variation in the change in OD340 observed between the original and replication studies might be due to methodological differences such as the adjustment in the amount of extract and substrate added to each reaction to generate a sufficient signal to noise, as well as other critical experimental and plate reader settings (Chavez et al., 2017; Giehm and Otzen, 2010).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/26030/elife-26030-fig1-v1.jpg)\n\n**Figure 1.:** IDH oxidative and reductive activity assays were performed on lysates of HEK293T cells transfected with wild-type or R172K mutant IDH2, or empty vector. (A) Lysates were assessed for generation of NADPH from NADP+ in the presence of 0.4 mM isocitrate over the indicated time course. Mean change in OD340 from the beginning of each assay (time\u00a0=\u00a00) is reported for each biological repeat performed [n\u00a0=\u00a07] and error bars represent s.e.m. (B) Linear regression slopes were determined for each biological repeat of the isocitrate-dependent NADPH production assay. Box and whisker plot with median represented as the line through the box and whiskers representing values within 1.5 IQR of the first and third quartile. Means as black dot and bold error bars represent 95% CI. Linear regression slope determined from the data estimated from the representative experiment reported in Figure 2A of Ward et al. (2010) is displayed as a single point (red circle) for comparison. Statistical analysis was performed on data generated during this replication attempt. Wild-type IDH2 compared to vector control: Wilcoxon-Mann-Whitney test; Z\u00a0=\u00a03.13, uncorrected p=0.00058, Bonferroni corrected p=0.0023. R172K mutant IDH2 compared to vector control: Wilcoxon-Mann-Whitney test; Z\u00a0=\u00a01.60, uncorrected p=0.13, Bonferroni corrected p=0.51. (C) Lysates were assessed for consumption of NADPH in the presence of 1 mM alpha-ketoglutarate over the indicated time course. Mean change in OD340 from the beginning of each assay (time\u00a0=\u00a00) is reported for each biological repeat performed [n\u00a0=\u00a07] and error bars represent s.e.m. (D) Linear regression slopes were determined for each biological repeat of the alpha-ketoglutarate-dependent NADPH consumption assay. Box and whisker plot with median represented as the line through the box and whiskers representing values within 1.5 IQR of the first and third quartile. Means as black dot and bold error bars represent 95% CI. Linear regression slope determined from the data estimated from the representative experiment reported in Figure 2B of Ward et al. (2010) is displayed as a single point (red circle) for comparison. Statistical analysis was performed on data generated during this replication attempt. Wild-type IDH2 compared to vector control: Welch\u2019s t-test; t(9.42)\u00a0=\u00a00.29, uncorrected p=0.78, Bonferroni corrected p>0.99. R172K mutant IDH2 compared to vector control: Welch\u2019s t-test; t(6.95)\u00a0=\u00a05.97, uncorrected p=0.00058, Bonferroni corrected p=0.0023. (E) Representative Western blots probed with an anti-IDH1 antibody, an anti-IDH2 antibody, and an anti-alpha-Tubulin antibody. Additional details for this experiment can be found at https://osf.io/6ve4d/.\n\nThere are multiple approaches that could be taken to explore these data; however, to provide a direct comparison to the original data, we are reporting the analysis specified a priori in the Registered Report (Fiehn et al., 2016). As outlined in the Registered Report, we planned to determine the linear regression slope for each biological repeat and compare vector control to wild-type IDH2 or R172K mutant IDH2 for both assays. To account for these multiple comparisons, the Bonferroni correction was used, making the a priori Bonferroni adjusted significance threshold 0.0125. For the isocitrate-dependent NADPH production assay, we performed a test on the slopes from vector control compared to wild-type IDH2, which was statistically significant (Wilcoxon-Mann-Whitney test; Z\u00a0=\u00a03.13, uncorrected p=0.00058, corrected p=0.0023). Thus, the null hypothesis that wild-type IDH2 and vector control have similar rates of isocitrate-dependent NADPH production can be rejected, while the test on the slopes from vector control compared to R172K mutant IDH2 was not statistically significant (Wilcoxon-Mann-Whitney test; Z\u00a0=\u00a01.60, uncorrected p=0.13, corrected p=0.51). Conversely, for the alpha-ketoglutarate-dependent NADPH consumption assay, the test on the slopes from vector control compared to wild-type IDH2 was not statistically significant (Welch\u2019s t-test; t(9.42)\u00a0=\u00a00.29, uncorrected p=0.78, corrected p>0.99), while the test on the slopes from vector control compared to R172K mutant IDH2 was statistically significant (Welch\u2019s t-test; t(6.95)\u00a0=\u00a05.97, uncorrected p=0.00058, corrected p=0.0023). To summarize, for this experiment we found results that were in the same direction as the original study and statistically significant where predicted.\n\n### Production of 2HG from wild-type or R172K mutant IDH2 transfected cells\n\nHEK293T cells expressing ectopic wild-type IDH2, R172K mutant IDH2, or vector control were analyzed for accumulation of the metabolite 2HG to test if R172K mutant IDH2 acquired enhanced conversion of alpha-ketoglutarate to 2HG. This experiment is similar to what was reported in Figure 3D of Ward et al. (2010), and described in Protocol 2 in the Registered Report (Fiehn et al., 2016), with cells analyzed 24 and 48 hr after transfection. Following expression of the ectopic proteins, the accumulation of 2HG, as well as other organic acids including aspartate and glutamate, were assessed by gas-chromatography mass spectrometry (GC-MS) after MTBSTFA derivatization. Metabolites were identified based on retention times and electron ionization (EI) spectra that matched with derivatized commercial standards. The intracellular levels of 2HG in HEK293T cells expressing R172K mutant IDH2 were determined using the total ion chromatograms (TIC) and found to be over 600 times the levels detected in vector control and wild-type IDH2 expressing cells 48 hr after transfection (Figure 2A\u2013B). This compares to the original study, which reported an approximately 100 times increase in intracellular 2HG levels in cells expressing R172K mutant IDH2 compared to vector control and wild-type IDH2 (Ward et al., 2010). The difference in magnitude between the original and replication studies is not due to the observed intracellular 2HG/glutamate levels in R172K mutant IDH2 expressing cells, but rather the lower bounds of detection in the vector control and wild-type IDH2 conditions (Figure 2A\u2013B). A similar observation was observed 24 hr after transfection as well as analysis using the extracted ion chromatograms (EIC) (Figure 2C\u2013D, Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/26030/elife-26030-fig2-v1.jpg)\n\n**Figure 2.:** HEK293T cells transfected with wild-type or R172K mutant IDH2, or empty vector, were analyzed for intracellular metabolites. (A) Cells harvested 48 hr after transfection had organic acids extracted, purified, and derivatized with MTBSTFA before analysis by GC-MS. Quantitation of 2HG signal intensity relative to glutamate was determined using the TIC for each biological repeat [n\u00a0=\u00a010]. Box and whisker plot with median represented as the line through the box and whiskers representing values within 1.5 IQR of the first and third quartile. Means as black dot and bold error bars represent 95% CI. Data estimated from the representative experiment reported in Figure 3D of Ward et al. (2010) is displayed as a single point (red circle) for comparison. Statistical analysis was performed on log10 transformed data generated during this replication attempt. R172K mutant IDH2 values were compared to the largest value observed in cells expressing vector control or wild-type IDH2 (0.005). One-sample t-test; t(9) = 21.9, uncorrected p=4.14\u00d710\u22129, Bonferroni corrected p=8.28\u00d710\u22129. (B) Representative TIC from samples harvested at 48 hr after transfection for vector control (top panel), wild-type IDH2 (middle panel), and R172K mutant IDH2 (bottom panel). The derivatized organic acids eluting between 31.4 and 34.4 min are shown, including aspartate (31.7 min), 2HG (33.1 min), and glutamate (34.3 min) based on spectra of derivatized commercial standards. (C) Cells harvested 24 hr after transfection were processed and analyzed similar to the 48 hr samples with [n\u00a0=\u00a010] biological repeats. Box and whisker plot with median represented as the line through the box and whiskers representing values within 1.5 IQR of the first and third quartile. Means as black dot and bold error bars represent 95% CI. R172K mutant IDH2 values were compared to the largest value observed in cells expressing vector control or wild-type IDH2 (0.001). One-sample Wilcoxon signed-rank test on log10 transformed data; V\u00a0=\u00a055, uncorrected p=0.0020, Bonferroni corrected p=0.0039. (D) Representative TIC from samples harvested at 24 hr after transfection for vector control (top panel), wild-type IDH2 (middle panel), and R172K mutant IDH2 (bottom panel). Additional details for this experiment can be found at https://osf.io/9ge2a/.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26030/elife-26030-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** This is the same experiment as in Figure 2, but with quantitation of 2HG signal intensity relative to glutamate determined using the EIC for each biological repeat. (A) Box and whisker plot with mean and 95% CI reported for each sample harvested 48 hr after transfection. R172K mutant IDH2 values were compared to the largest value observed in cells expressing vector control or wild-type IDH2 (0.004). One-sample t-test; t(9) = 22.4, uncorrected p=3.38\u00d710\u22129, Bonferroni corrected p=6.77\u00d710\u22129. (B) Representative EIC from samples harvested at 48 hr after transfection for vector control (left panels), wild-type IDH2 (middle panels), and R172K mutant IDH2 (right panels) with aspartate, glutamate, and 2HG shown. (C) Box and whisker plot with mean and 95% CI reported for each sample harvested 24 hr after transfection. R172K mutant IDH2 values were compared to the largest value observed in cells expressing vector control or wild-type IDH2 (0.001). One-sample Wilcoxon signed-rank test on log10 transformed data; V\u00a0=\u00a055, uncorrected p=0.0020, Bonferroni corrected p=0.0039. (D) Representative EIC from samples harvested at 24 hr after transfection for vector control (left panels), wild-type IDH2 (middle panels), and R172K mutant IDH2 (right panels) with aspartate, glutamate, and 2HG shown. Additional details for this experiment can be found at https://osf.io/9ge2a/.\n\nThe analysis plan specified in the Registered Report (Fiehn et al., 2016) proposed to compare the 2HG/glutamate levels among the different conditions. However, because of the near background levels of vector control and wild-type IDH2, we performed an exploratory analysis using the R172K mutant IDH2 values compared to the largest value observed in cells expressing vector control or wild-type IDH2. This resulted in a statistically significant result for the TIC analysis (one-sample t-test; t(9) = 21.9, uncorrected p=4.14\u00d710\u22129, Bonferroni corrected p=8.28\u00d710\u22129) and the EIC analysis (one-sample t-test; t(9) = 22.4, uncorrected p=3.38\u00d710\u22129, Bonferroni corrected p=6.77\u00d710\u22129) 48 hr after transfection. Similar results were determined on the samples analyzed 24 hr after transfection (one-sample Wilcoxon signed-rank test; V\u00a0=\u00a055, uncorrected p=0.0020, Bonferroni corrected p=0.0039). To summarize, for this experiment we found results that were in the same direction as the original study and statistically significant where predicted.\n\n### Assessing 2hg levels in AML patient samples\n\nTo test if 2HG is elevated in AML patients with IDH mutations, we performed GC-MS analysis on samples of AML cells from patients. This is comparable to the experiment that was reported in Figure 5 of Ward et al. (2010), and described in Protocol 3 in the Registered Report (Fiehn et al., 2016), except the mutational status of IDH1 and IDH2 were determined prior to conducting the metabolite analysis to have adequate samples for each genetically distinct group. Similar to the original study, all wild-type IDH samples displayed a 2HG/glutamate level less than 1%, while samples that had an IDH1 or IDH2 mutation had a 2HG/glutamate level greater than 1% (Figure 3, Figure 3\u2014figure supplement 1). Like the metabolite analysis conducted with HEK293T cells, the lower limits of detection in the patient samples without an IDH mutation were lower in this replication attempt (mean 2HG/glutamate ratio of 0.001) than what was reported in the original study (mean 2HG/glutamate ratio of\u00a0~0.005). However, the average ratio in the samples with IDH mutations reported in this replication attempt (mean 2HG/glutamate ratio of 0.20) were lower than what was reported in the original study (mean 2HG/glutamate ratio of\u00a0~0.8). Although these ratios do not allow for a true comparison of the absolute 2HG levels, a comparison of the 2HG peaks between samples with or without IDH mutations resulted in a similar trend. Of interest, detection of 2HG in wild-type IDH samples, albeit at much lower levels than in samples with an IDH mutation, has also been reported in other studies measuring 2HG levels in patient samples (Borger et al., 2014; DiNardo et al., 2013; Fathi et al., 2012; Gross et al., 2010; Janin et al., 2014; Lemonnier et al., 2016; Natsumeda et al., 2014). Cells without IDH mutations produce small quantities of 2HG, although the mechanism is poorly understood and thought to be largely due to error of normal metabolism (Andronesi et al., 2013; Intlekofer et al., 2015). While detection of 2HG levels in serum and urine in AML and intrahepatic cholangiocarcinoma has been reported by various studies as a biomarker for IDH mutational status, detection in glioma samples does not appear as straightforward with no difference between serum samples, likely due to the blood\u2013brain barrier, and further evaluation needed with the use of urinary samples (Fathi et al., 2016; Lombardi et al., 2016, 2015).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/26030/elife-26030-fig3-v1.jpg)\n\n**Figure 3.:** AML patient peripheral blood or bone marrow samples were analyzed for intracellular metabolites. Cells had organic acids extracted, purified, and derivatized with MTBSTFA before analysis by GC-MS. Patient samples were prescreened for IDH genotypic status prior to metabolite analysis. (A) Quantitation of 2HG signal intensity relative to glutamate was determined using the TIC for each sample. Dot plot with means reported as crossbars. One-sample t-tests on log10 transformed data comparing 2HG/glutamate level of samples to a constant of 0.0024 (2HG/glutamate threshold between IDH mutant and wild-type IDH samples). Samples with an IDH1 mutation compared to the threshold constant: t(3) = 4.47, uncorrected p=0.021, Bonferroni corrected p=0.063. Samples with an IDH2 mutation compared to the threshold constant: t(3) = 9.19, uncorrected p=0.0027, Bonferroni corrected p=0.0082. Samples with an IDH1 or IDH2 mutation compared to the threshold constant: t(7) = 8.73, uncorrected p=5.20\u00d710\u22125, Bonferroni corrected p=1.56\u00d710\u22124. (B) Representative TIC from samples without an IDH mutation (top panel), samples with an IDH1 mutation (middle panel), and samples with an IDH2 mutation (bottom panel). The derivatized organic acids eluting between 31.4 and 34.4 min are shown, including aspartate (31.7 min), 2HG (33.1 min), and glutamate (34.3 min) based on spectra of derivatized commercial standards. Additional details for this experiment can be found at https://osf.io/smdfr/.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26030/elife-26030-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** This is the same experiment as in Figure 3, but with quantitation of 2HG signal intensity relative to glutamate determined using the EIC for each AML patient sample. (A) Dot plot with means reported as crossbars. One-sample t-tests on log10 transformed data comparing 2HG/glutamate level of samples to a constant of 0.001 (2HG/glutamate threshold between IDH mutant and wild-type IDH samples). Samples with an IDH1 mutation compared to the threshold constant: t(3) = 5.40, uncorrected p=0.012, Bonferroni corrected p=0.037. Samples with an IDH2 mutation compared to the threshold constant: t(3) = 10.93, uncorrected p=0.0016, Bonferroni corrected p=0.0049. Samples with an IDH1 or IDH2 mutation compared to the threshold constant: t(7) = 10.44, uncorrected p=1.61\u00d710\u22125, Bonferroni corrected p=4.84\u00d710\u22125. (B) Representative EIC from samples without an IDH mutation (top panel), samples with an IDH1 mutation (middle panel), and samples with an IDH2 mutation (bottom panel) with aspartate, glutamate, and 2HG shown. Additional details for this experiment can be found at https://osf.io/smdfr/.\n\nAs outlined in the Registered Report (Fiehn et al., 2016), we planned to conduct three comparisons using the Bonferroni correction to adjust for multiple comparisons, making the a priori Bonferroni adjusted significance threshold 0.0167. We performed one-sample t-tests comparing the 2HG/glutamate level determined by TIC (log10 transformed) to a constant of 0.0024, which was the 2HG/glutamate threshold to delineate between IDH mutant and wild-type IDH samples. The sample size was determined a priori to detect the effects based on the originally reported data, which reported the 2HG/glutamate threshold as 0.01. The test on samples with an IDH2 mutation was statistically significant (t(3) = 9.19, uncorrected p=0.0027, corrected p=0.0082), as was the test on samples with an IDH1 or IDH2 mutation (t(7) = 8.73, uncorrected p=5.20\u00d710\u22125, corrected p=1.56\u00d710\u22124). The planned comparison of samples with an IDH1 mutation, however, was not statistically significant (t(3) = 4.47, uncorrected p=0.021, corrected p=0.063). The same analysis was conducted using the 2HG/glutamate levels determined by EIC, where the observed 2HG/glutamate threshold between IDH mutant and wild-type IDH samples was 0.001. All effects were found to be statistically significant (IDH1: t(3) = 5.40, uncorrected p=0.012, corrected p=0.037; IDH2: t(3) = 10.93, uncorrected p=0.0016, corrected p=0.0049; IDH1/IDH2: t(7) = 10.44, uncorrected p=1.61\u00d710\u22125, corrected p=4.84\u00d710\u22125). To summarize, for this experiment we found results that were in the same direction as the original study and statistically significant, except on samples with IDH1 mutations when using the same type of chromatograms as the original study. As with all statistical significance testing, these results should take into consideration that whether a result is statistically significant or not is dependent not only on the significance threshold, but also the number of samples (Sullivan and Feinn, 2012).\n\n### Meta-analyses of original and replication effects\n\nWe performed a meta-analysis using a random-effects model, where possible, to combine each of the effects described above as pre-specified in the confirmatory analysis plan (Fiehn et al., 2016). To provide a standardized measure of the effect, a common effect size was calculated for each effect from the original and replication studies. For a one-sample test, Cohen\u2019s d is the difference between the sample mean and the null value using the sample standard deviation. The estimate of the effect size of one study, as well as the associated uncertainty (i.e. confidence interval), compared to the effect size of the other study provides another approach to compare the original and replication results (Errington et al., 2014; Valentine et al., 2011). Importantly, the width of the confidence interval for each study is a reflection of not only the confidence level (e.g. 95%), but also variability of the sample (e.g. SD) and sample size.\n\nTo compare the original and replication results for the enzymatic assays, the linear regression slope was determined for the values estimated from the representative experiment reported in Figure 2 of Ward et al. (2010) and compared to the slopes reported in this replication attempt. For the isocitrate-dependent NADPH production assay, the slopes for wild-type IDH2 and vector control from the original study were outside the 95% confidence interval (CI) of the slopes generated during the replication attempt, while the slope for R172K mutant IDH2 from the original study was within the 95% CI of the replication attempt (Figure 1B). For the alpha-ketoglutarate-dependent NADPH consumption assay, the slopes for R172K mutant IDH2 and wild-type IDH2 from the original study fell outside the 95% CI of the slopes generated during the replication attempt, while the slope for vector control from the original study was within the 95% CI of the replication attempt (Figure 1D).\n\nSimilar to the enzymatic assays, the intracellular 2HG/glutamate levels determined 48 hr after transfection in the original study were estimated from the representative image reported in Figure 3D of Ward et al. (2010) and compared to the values reported in this replication attempt. For R172K mutant IDH2, the intracellular 2HG/glutamate levels in the original study were within the 95% CI of the replication attempt, while wild-type IDH2 and vector control fell outside the 95% CI (Figure 2A).\n\nThere were three comparisons made with the AML patient sample data analyzing 2HG/glutamate levels based on IDH mutational status (Figure 4). For each of the comparisons, the 2HG/glutamate levels were compared to a constant representing the 2HG/glutamate threshold between IDH mutant and wild-type IDH samples detected in the study (original: 0.01; replication: 0.0024). The comparison of samples with an IDH1 mutation resulted in d\u00a0=\u00a08.40, 95% CI [2.84, 14.09] for the data estimated a priori from Figure 5C in the original study (Ward et al., 2010), whereas d\u00a0=\u00a02.23, 95% CI [0.26, 4.17] for this study. A meta-analysis of these two effects resulted in d\u00a0=\u00a04.80, 95% CI [\u22121.16, 10.76], p=0.114. The original and replication effects were in the same direction, however, the point estimate of the replication effect size was not within the confidence interval of the original result, and vice versa. Further, the large confidence intervals of the meta-analysis along with a statistically significant Cochran\u2019s Q test (p=0.031), suggests heterogeneity between the original and replication studies. The test of samples with an IDH2 mutation resulted in d\u00a0=\u00a06.75, 95% CI [3.45, 10.04] for the original study, d\u00a0=\u00a04.60, 95% CI [1.05, 8.22] for this study, with a meta-analysis resulting in d\u00a0=\u00a05.72, 95% CI [3.42, 8.02], p=1.12\u00d710\u22126. Similarly, the test of samples with an IDH1 or IDH2 mutation resulted in d\u00a0=\u00a04.36, 95% CI [2.62, 6.09] for the original study, d\u00a0=\u00a03.09, 95% CI [1.35, 4.80] for this study, with a meta-analysis resulting in d\u00a0=\u00a03.71, 95% CI [2.46, 4.96], p=5.73\u00d710\u22129. For each of these two comparisons, the original and replication effects were in the same direction and the point estimate of the replication effect size was within the confidence interval of the original result, and vice versa.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/26030/elife-26030-fig4-v1.jpg)\n\n**Figure 4.:** Effect size and 95% confidence interval are presented for Ward et al. (2010), this replication study (RP:CB), and a random effects meta-analysis of those two effects. Sample sizes used in Ward et al. (2010) and this replication attempt are reported under the study name. Random effects meta-analysis of AML patient samples with an IDH1 mutation compared to a constant representing the 2HG/glutamate threshold between IDH mutant and wild-type IDH samples detected in the study (original: 0.01; replication: 0.0024) (meta-analysis p=0.114), AML patient samples with an IDH2 mutation compared to the threshold constant (meta-analysis p=1.12\u00d710\u22126), and AML patient samples with an IDH1 or IDH2 mutation compared to the threshold constant (meta-analysis p=5.73\u00d710\u22129). Additional details for these meta-analyses can be found at https://osf.io/4m3n8/.\n\nThis direct replication provides an opportunity to understand the present evidence of these effects. Any known differences, including reagents and protocol differences, were identified prior to conducting the experimental work and described in the Registered Report (Fiehn et al., 2016). However, this is limited to what was obtainable from the original paper, which means there might be particular features of the original experimental protocol that could be critical, but unidentified. So while some aspects, such as cell line, transfection reagent, and metabolite extraction technique were maintained, others were unknown or not easily controlled for. These include variables such as cell line genetic drift (Hughes et al., 2007; Kleensang et al., 2016), GC-MS parameters such as injection volume (Allwood et al., 2009), and other patient characteristics (Klevorn and Teague, 2016). Furthermore, recent studies since Ward et al. (2010) was published have identified numerous factors, such as hypoxic microenvironments that promote glutamine consumption for glutaminolysis and reductive carboxylation pathways, affecting IDH reactions, specifically alpha-ketoglutarate (Parker and Metallo, 2015). Additionally, enantiomers of 2HG have been found to be produced by different enzymes with distinct metabolisms (Losman and Kaelin, 2013). Whether these or other factors influence the outcomes of this study is open to hypothesizing and further investigation, which is facilitated by direct replications and transparent reporting.\n\n## Materials and methods\n\nAs described in the Registered Report (Fiehn et al., 2016), we attempted a replication of the experiments reported in Figures 2, 3D and 5 of Ward et al. (2010). A detailed description of all protocols can be found in the Registered Report (Fiehn et al., 2016). Additional detailed experimental notes, data, and analysis are available on the Open Science Framework (OSF) (RRID:SCR_003238) (https://osf.io/8l4ea/; Showalter et al., 2017).\n\n### Cell culture\n\nHEK239T cells (ATCC, cat# CRL-3216, RRID:CVCL_0063) were grown in DMEM supplemented with 10% Fetal Bovine Serum (FBS) (Hyclone, Logan,\u00a0UT,\u00a0cat# SH30071.03). Cells were grown at 37\u00b0C in a humidified atmosphere at 10% CO2. Quality control data for the cell line are available at https://osf.io/zt996/. This includes results confirming the cell line was free of mycoplasma contamination (MycoAlert PLUS, Lonza,\u00a0Basel,\u00a0Switzerland, cat# LT07-701). Additionally, STR DNA profiling of the cell line was performed (DDC Medical, Fairfield, Ohio) and cells were confirmed to be the indicated cell line when queried against STR profile databases.\n\n### Plasmids and transfection\n\nTo generate pcDNA3.1-IDH2WT (deposited in Addgene, plasmid# 87926) and pcDNA3.1-IDH2R172K (deposited in Addgene, plasmid# 87927), IDH2WT and IDH2R172K were amplified by PCR from pCMV6-Entry vectors (Origene,\u00a0Rockville,\u00a0MD, cat# RC201152 and cat# RC400103) and cloned into the BamH1 and EcoR1 sites of the pcDNA3.1 expression vector (Invitrogen,\u00a0Carlsbad,\u00a0CA, cat# V790-20). Identity of all vectors were confirmed by sequencing and agarose gel electrophoresis (https://osf.io/zqyyq/). The day before transfection HEK293T cells were plated and allowed to grow overnight. For the assessment of alpha-ketoglutarate dependent NADPH consumption (Figure 1), 6 \u00d7 105 cells were seeded per well in six-well plates. For assessing the production of 2HG (Figure 2), 3.5 \u00d7 106 cells were seeded per 10 cm plate. Cells were transfected with the appropriate plasmid with Lipofectamine 2000 (Invitrogen, cat# 11668027) according to manufacturer\u2019s instructions. For a 6-well plate, each well was transfected with 1 \u00b5g DNA diluted first in 50 \u00b5l serum-free, antibiotic-free DMEM and incubated for 3\u20135 min, and 2.67 \u00b5l Lipofectamine 2000 diluted first in 50 \u00b5l serum-free, antibiotic-free DMEM and incubated for 3\u20135 min. Transfections for 10 cm plates included 7.5 \u00b5g DNA diluted in 250 \u00b5l serum-free, antibiotic-free DMEM, and 20 \u00b5l Lipofectamine 2000 diluted in 250 \u00b5l serum-free, antibiotic-free DMEM. Following the individual incubations, the diluted DNA and Lipofectamine 2000 was combined and incubated for an additional 10 min before being added to the cells. Medium was replaced 24 hr later.\n\n### Cell lysate\u00a0based enzyme assays\n\nFor IDH oxidative and reductive activity assays, transfected cells were harvested 48 hr after transfection in 0.5 ml/well with mammalian protein extraction reagent (mPER) containing protease and phosphatase inhibitor cocktail (4 \u00b5g/ml aprotinin, 0.2 mM AEBSF, 4 \u00b5g/ml leupeptin, 4 \u00b5g/ml pepstatin A, 0.2 mM NaOV, and 1 mM NaF) on ice. Lysate was collected, homogenized using a T-10 homogenizer with S10N-5 tip (IKA, Staufen im Breisgau, Germany) for 1\u20132 min on ice, and then centrifuged at 14,000xg for 10 min at 4\u00b0C. Protein concentration was measured using the DC Protein Assay Kit II (BioRad,\u00a0Hercules,\u00a0CA, cat# 5000112) according to manufacturer\u2019s instructions. Lysate was aliquoted for IDH oxidative and reductive activity assays and Western blotting. IDH oxidative activity was determined by mixing 15 \u00b5g of each protein lysate with 200 \u00b5l of assay buffer (100 mM Tris-HCl, pH 7.5, 1.3 mM MnCl2, 0.33 mM EDTA, 0.4 mM \u00df-NADP+, 0.4 mM D-(+)-threo-isocitrate). Triplicate reactions were measured every 2.5 min for 30 min at 340 nm absorbance using a microplate spectrophotometer (Molecular Devices,\u00a0Sunnyvale,\u00a0CA, FilterMax F5 Multi-Mode Microplate Reader) and Multi-Mode Analysis Software (Molecular Devices, RRID:SCR_014789), version 3.4.0.25. IDH reductive activity was determined by mixing 30 \u00b5g of each protein lysate with 200 \u00b5l of assay buffer (100 mM Tris-HCl, pH 7.5, 1.3 mM MnCl2, 0.02 mM \u00df-NADPH, 1 mM alpha-ketoglutarate). Triplicate reactions were measured every 20 min for 3 hr at 340 nm. For all experiments, a mPER only sample lacking lysate protein was mixed with assay buffer to determine the background, which was subtracted from the average triplicate reading for each timepoint. For each biological repeat, the value at time 0 was subtracted from all timepoints to calculate change in absorbance.\n\n### Western blot\n\nSample buffer (50 mM Tris-HCl, pH 6.8, 2% SDS, 10% glycerol, 1% \u00df-mercaptoethanol, 0.02% bromophenol blue) was added to protein lysates and incubated at 95\u00b0C for 5 min. 40 \u00b5g of protein along with protein ladder was resolved by SDS-PAGE and transferred to nitrocellulose membrane as described in the Registered Report (Fiehn et al., 2016). Membrane was washed with deionized water and Ponceau stain was used to confirm transfer. The membrane was blocked with 5% w/v nonfat dry milk/0.2% sodium azide in 1X TBS with 0.1% Tween-20 (TBST) for 30 min at room temperature. Incubation with primary antibody was conducted overnight at 4\u00b0C. Membranes were probed with goat anti-IDH1 (Santa Cruz Biotechnology,\u00a0Dallas,\u00a0TX, cat# sc49996, RRID:AB_2123166); 1:500 dilution in 5% w/v nonfat dry milk/TBST, mouse anti-IDH2 (Abcam,\u00a0Cambridge,\u00a0UK, cat# ab55271, RRID:AB_943793); 0.5 \u00b5g/ml (1:1,000) dilution in 5% w/v nonfat dry milk/TBST, and mouse anti-alpha-Tubulin (Sigma-Aldrich,\u00a0St.\u00a0Louis,\u00a0MO, cat# T5168, RRID:AB_477579); 1:10,000 dilution in 5% w/v nonfat dry milk/TBST. Each incubation was followed by washes with TBST and the appropriate secondary antibody: HRP-conjugated rabbit anti-goat (Invitrogen, cat# 81\u20131620, RRID:AB_2534006); 1:5000 dilution in 5% w/v nonfat dry milk/TBST or HRP-conjugated goat anti-mouse (Bio-Rad, cat# 170\u20135047, RRID:AB_11125753); 1:7500 dilution in 5% w/v nonfat dry milk/TBST. The HRP-conjugated anti-Actin antibody (Cell Signaling,\u00a0Danvers,\u00a0MA, cat# 12620) listed in the Registered Report was tried; however, it overlapped with IDH2 and thus could not be utilized. Membranes were washed with TBST and incubated with SuperSignal West Femto Maximum Sensitivity Substrate (Thermo Fisher Scientific,\u00a0Waltham,\u00a0MA, cat# 34096) according to the manufacturer\u2019s instructions. Western blots were visualized using an Alpha Innotech (San Leandro, CA) imaging station (FluorChem FC2 system) using the AlphaView software (RRID:SCR_014549), version 3.2.2. Between antibody incubations, HRP was inactivated by incubating with 1 mM sodium azide and subsequently imaged to confirm HRP inactivation before proceeding to the next antibody incubation. All images taken are available at https://osf.io/th3za/.\n\n### AML patient samples\n\nPatient samples were obtained from Roswell Park Cancer Institute. The samples were prescreened for IDH genotypic status and the pre-specified sample of each group was determined prior to conducting the study. Approval was obtained from the institutional review board (protocol # CIC 9805) and shared samples and data were de-identified for this study. Cells used for this study were prepared by Ficoll separation of mononuclear cells from peripheral blood or bone marrow and were frozen as viable cells in 10% dimethyl sulfoxide (DMSO).\n\n### Metabolite extraction\n\nHEK293T cells were harvested 24 and 48 hr after transfection by removal of medium, while peripheral blood mononuclear cells from frozen AML samples, were centrifuged at 1000xg to remove freezing medium. After removal of medium, cells were rapidly quenched with 1.5 ml of methanol chilled to \u221280\u00b0C. Cells were incubated at \u221280\u00b0C for 15 min and in the case of HEK293T cells scraped off the dish. Cells were centrifuged for 5 min at 2000xg at 4\u00b0C to pellet cellular debris. Pellets were re-extracted by an addition of 500 \u00b5l of 80% methanol in water, chilled to \u221280\u00b0C, vortexed, then incubated at 4\u00b0C for 15 min and centrifuged for 5 min at 1000xg at 4\u00b0C.\n\nSupernatants from the multiple extractions were combined and evaporated to dryness using a cold trap concentrator (Labconco, Kansas City, MO). Samples were then resuspended in 200 \u00b5l LC-MS grade water. A 2 ml AG-1 \u00d7 8 100\u2013200 anion exchange column (Bio-Rad, cat# 731\u20136211) was washed with five column volumes (10 ml) of 3 N HCl followed by transfer of resuspended extracts to resin column. Metabolites were eluted using 10 ml 3 N HCl. Samples were evaporated to dryness using a cold trap concentrator and resuspended in 100 \u00b5l MTBSTFA/ACN (1:1, v/v) and shaken at 60\u00b0C for 1 hr using an Orbital Mixing Chilling/Heating Plate (Torrey Pines Scientific Inc.,\u00a0Carlsbad,\u00a0CA) at a maximum orbital speed of 9. Derivatized extracts were further diluted (1:4) with a MTBSTFA/ACN (1:1, v/v) mixture and transferred to glass vials with micro-inserts and capped immediately prior to GC-MS analysis.\n\n### GC-MS analysis\n\nThe system consisted of a GC-MS system (Agilent Technologies, Santa Clara, California), a 7693 Series autosampler, a split/splitless injector, a 7890A GC system, and a quadrupole mass spectrometer 5977A. Injection parameters were as follows: injection volume, 0.2 \u00b5l; injector temperature, 250\u00b0C; helium carrier gas flow, 1 ml/min; splitless period, 1 min. For GC separation a 30 m x 0.25 mm, 0.25 \u00b5m HP-5MS UI (Agilent Technologies) capillary column was used with an oven temperature program: 100\u00b0C (3 min), 4 \u00b0C/min to 230\u00b0C (hold 4 min), 30 \u00b0C/min to 300\u00b0C (hold 5 min). MS detection parameters were as follows: electron ionization, \u221270 eV; acquisition rate, 2.71 scans/s; mass range, m/z 50\u2013600; MS ion source temperature, 230\u00b0C; MS quadrupole temperature, 150\u00b0C; electron multiplier voltage, 1651 V. For the data acquisition, the MSD Productivity ChemStation Software (Agilent Technologies), version E.02.00 was used. Method blanks and quality control samples were run with experimental samples for quality control purposes. Both total ion chromatograms (TIC) and extracted ion chromatograms (EIC) are reported. Data files were processed using MassHunter Qualitative Analysis Software (Agilent Technologies), version B.05.00 and MassHunter Quantitative Analysis Software (Agilent Technologies), version B.05.01. Retention times for compounds were as follows: 31.7 min aspartate, 34.3 min glutamate, and 33.1 min 2-hydroxyglutarate. Metabolites were identified based on retention times and electron ionization (EI) spectra matching with authentic standards (Sigma, cat# 2HG:H8378, Asp:A9256, Glu:G1251). This metabolomics data is available at the NIH Common Fund's Data Repository and Coordinating Center (supported by NIH grant, U01-DK097430) website, (http://www.metabolomicsworkbench.org), where it has been assigned a Metabolomics Workbench Project ID: ST000548. The data is directly accessible at http://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&StudyID=ST000548.\n\n### Statistical analysis\n\nStatistical analysis was performed with R software (RRID:SCR_001905), version 3.3.2 (R Core Team, 2016). All data, csv files, and analysis scripts are available on the OSF (https://osf.io/8l4ea/). Confirmatory statistical analysis was pre-registered (https://osf.io/t873r/) before the experimental work began as outlined in the Registered Report (Fiehn et al., 2016). Proposed analysis of GC-MS data was conducted on TIC data, with additional exploratory analysis performed using the EIC data. Data were checked to ensure assumptions of statistical tests were met. When described in the results, the Bonferroni correction, to account for multiple testings, was applied to the alpha error or the p-value. The Bonferroni corrected value was determined by dividing the uncorrected value (.05) by the number of tests performed. Although the Bonferroni method is conservative, it was accounted for in the power calculations to ensure sample size was sufficient. A meta-analysis of a common original and replication effect size was performed with a random effects model and the metafor package (Viechtbauer, 2010) (available at: https://osf.io/4m3n8/). The original study data was extracted a priori from the published figures by estimating the value reported. The extracted data from Figures 2A-B of Ward et al. (2010) were used to calculate the mean slope after fitting the data to a linear regression. The extracted data were published in the Registered Report (Fiehn et al., 2016) and was used in the power calculations to determine the sample size for this study.\n\n### Deviations from registered report\n\nThe expression vector pcDNA3.1 was used instead of pcDNA3 since it was unavailable for order at the time the study was conducted. The concentrations of protein used was increased for the IDH oxidative (0.3 \u00b5g to 15 \u00b5g) and reductive (3 \u00b5g to 30 \u00b5g) assays, as well as the amount of substrate (D-(+)-threo-isocitrate: 0.1 mM to 0.4 mM; alpha-ketoglutarate: 0.5 mM to 1 mM). This was due to an inability to detect a signal above the noise with the originally specified protein concentrations, with the need to increase the substrate concentration due to saturation before the end of the time points. Cell lysates were also homogenized instead of sonicated to generate protein extracts. Following this optimization, the same procedure was carried out for the biological repeats reported. For the Western blot, Actin was not used as the additional control since it overlapped with IDH2; Alpha-Tubulin was used instead. For the GC-MS, the Registered Report listed MTBSTFA in the materials, but incorrectly listed MSTFA in the procedure. MTBSTFA was used in this replication attempt, similar to the original study. For the GC-MS run, it was unstated how ramping to 300\u00b0C was to be performed, as such 30 \u00b0C/min was used. Derivatized extracts were diluted 1:4 to ensure metabolites were in proper concentration range for the GC-MS instrument used since the cell number, derivatization volume, and injection volume were not listed in the original study. Additional materials and instrumentation not listed in the Registered Report, but needed during experimentation are also listed.\n",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "4076760f-0d2e-4c63-af64-bc1924bd789a",
+      "submission_id": "5635a5db-0d3a-4f97-893a-a91ea46d70ff",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jessica K Tyler, Weill Cornell Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.26030.009](https://doi.org/10.7554/eLife.26030.009)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Replication Study: The common feature of leukemia-associated IDH1 and IDH2 mutations is a neomorphic enzyme activity converting \u03b1-ketoglutarate to 2-hydroxyglutarate\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Vivek Malhotra as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary\n\nThe inherent property of any reproducibility study is that its design is directly related to the original work and set of experiments and cannot extend beyond. This exact situation has arisen with the current reproducibility study, that has been conducted according to the approved plan and results were carefully taken and were adequately statistically treated. It is not surprising that with exception of certain absolute values which did not match to the original publication of Ward et al., the results were reproduced with a high accuracy. The methodical approach is excellent and of the top level, adequate to the task, including derivatization and temperature gradients. Overall, the experiments appear to be performed to a high standard and clearly reproduce the majority of findings from the Ward paper, which is expected based on other independently published studies.\n\nEssential revisions\n\n1) It should be pointed out that specifically precleaning of samples on a column adds to a straightforward analysis. However, it should be verified, whether such precleaning does not withdraw from the sample any desired species to be tested.\n\n2) To bring an additional value besides the simple fact of reproducibility, the authors should discuss why certain other studies have found non zero levels of 2-hydroxyglutarate in cells with wild-type IDH2, or in patients plasma or urine. Discussion (or even the Result section) should include comparison of the absolute values and not only ratios towards glutamate (even if this has been a strict condition of the reproducibility study). Authors may comment on conditions under which the activity of wt IDH2 of mutant IDH2 was surveyed. Since 2010 research on the topic has identified numerous factors affecting IDH2 (and IDH1) reactions, namely affecting 2-oxoglutarate as the primary reactant. Distinct contribution of e.g. one-carbon metabolism, state of aerobic glycolysis vs. oxphos and glutaminolysis, etc., are different even in the same immune cells under different conditions. Moreover, enantiomers of 2-hydroxyglutarate have been found to be produced by different enzymes and having distinct metabolism (e.g. dehydrogenases). In the light of these new views, the current reproducibility study represents just a solid beginning in our understanding.\n\n3) Authors should correct the confused labels in Figure 1:\n\nFigure 1A Title legend NADPH \u2212> NADP+ (which actually stands for consumption whereas figure panel A shows the production) is confused with the Figure 1A Title legend. The legends need to be mutually exchanged, so to be for Figure 1A NADP+\u2212> NADPH and for Figure 1B NADPH \u2212> NADP+\n",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "76494e03-d0c5-439f-89ab-ec43f4cd4e24",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C1",
+      "claim": "Cells expressing R172K mutant IDH2 did not display isocitrate-dependent NADPH production above vector control levels.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that cells expressing R172K mutant IDH2 did not display isocitrate-dependent NADPH production above vector control levels, in contrast to the increased production observed with wild-type IDH2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from the replication study showing OD340 measurements for R172K mutant IDH2 and vector control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "4ffc3299-809a-46e9-bbb0-15ba31c9fb8d",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C2",
+      "claim": "Wild-type IDH2 showed increased isocitrate-dependent NADPH production compared to R172K mutant IDH2.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that cells expressing R172K mutant IDH2 did not display isocitrate-dependent NADPH production above vector control levels, in contrast to the increased production observed with wild-type IDH2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data comparing wild-type and mutant IDH2 NADPH production.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "97999b35-e9e4-4b20-a84b-3b46b5e54a86",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C3",
+      "claim": "Expression of R172K mutant IDH2 resulted in increased alpha-ketoglutarate-dependent consumption of NADPH compared to wild-type IDH2 or vector control.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, expression of R172K mutant IDH2 resulted in increased alpha-ketoglutarate-dependent consumption of NADPH compared to wild-type IDH2 or vector control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing NADPH consumption measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "9e8da55b-94ff-4c44-9096-da1f613b9bf0",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C4",
+      "claim": "The replication results for NADPH production and consumption are similar to those reported in the original study (Figure 2; Ward et al., 2010).",
+      "claim_type": "EXPLICIT",
+      "source": "These results are similar to those reported in the original study (Figure 2; Ward et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares replication results to the original study by citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "e6cc2bab-1f42-4f5e-9e75-8b7e0b5e6020",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C5",
+      "claim": "Expression of R172K mutant IDH2 resulted in increased 2HG levels within cells compared to the background levels observed in wild-type IDH2 and vector control.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, expression of R172K mutant IDH2 resulted in increased 2HG levels within cells compared to the background levels observed in wild-type IDH2 and vector control, similar to the original study (Figure 3D; Ward et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from GC-MS analysis of intracellular metabolites.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "d12cd2fb-0dc1-4ae4-a40f-963fc906d99a",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C6",
+      "claim": "The increased 2HG levels in R172K mutant IDH2 expressing cells are similar to the original study (Figure 3D; Ward et al., 2010).",
+      "claim_type": "EXPLICIT",
+      "source": "Further, expression of R172K mutant IDH2 resulted in increased 2HG levels within cells compared to the background levels observed in wild-type IDH2 and vector control, similar to the original study (Figure 3D; Ward et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares replication results to the original study by citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "e4bf35bf-c61f-4d89-8d18-6753fce955bc",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C7",
+      "claim": "In primary human AML samples, the 2HG levels observed in samples with mutant IDH1 or IDH2 status were higher than those observed in samples without an IDH mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "In primary human AML samples, the 2HG levels observed in samples with mutant IDH1 or IDH2 status were higher than those observed in samples without an IDH mutation, similar to what was observed in the original study (Figure 5C; Ward et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from GC-MS analysis of AML patient samples.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "5371a261-8cc6-4c6e-b830-e43ca3c18e4f",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C8",
+      "claim": "The 2HG levels in AML samples with IDH mutations are similar to what was observed in the original study (Figure 5C; Ward et al., 2010).",
+      "claim_type": "EXPLICIT",
+      "source": "In primary human AML samples, the 2HG levels observed in samples with mutant IDH1 or IDH2 status were higher than those observed in samples without an IDH mutation, similar to what was observed in the original study (Figure 5C; Ward et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares replication results to the original study by citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "b580defd-4036-4f82-8cda-793ec5952640",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C9",
+      "claim": "Ward et al. (2010) demonstrated that a shared feature of isocitrate dehydrogenase (IDH) mutations identified in gliomas and acute myeloid leukemia (AML) is the acquisition of a neomorphic enzyme activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2010, Ward et al. demonstrated that a shared feature of isocitrate dehydrogenase (IDH) mutations identified in gliomas and acute myeloid leukemia (AML) is the acquisition of a neomorphic enzyme activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references findings from the Ward et al. 2010 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "65862811-6341-4d66-bc52-6679cc657cef",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C10",
+      "claim": "Cancer-associated IDH1 mutations resulted in increased production of the oncometabolite 2-hydroxyglutarate (2HG) (Dang et al., 2009).",
+      "claim_type": "EXPLICIT",
+      "source": "This study built upon a previous study demonstrating cancer-associated IDH1 mutations resulted in increased production of the oncometabolite 2-hydroxyglutarate (2HG) (Dang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references findings from Dang et al. 2009 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "93494bf9-f8d6-4b98-994c-978a1f17b8b9",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C11",
+      "claim": "The cancer-associated IDH2 R172 mutation was demonstrated to be deficient in isocitrate-dependent NADPH production (Yan et al., 2009; Ward et al., 2010).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the IDH1 R132 mutation, the cancer-associated IDH2 R172 mutation was demonstrated to be deficient in isocitrate-dependent NADPH production (Yan et al., 2009; Ward et al., 2010), while acquiring a gain of function for alpha-ketoglutarate-dependent NADPH consumption that resulted in the production of 2HG (Ward et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references findings from Yan et al. 2009 and Ward et al. 2010 studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "2ca0cea3-878c-422f-9d7a-1901232a2440",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C12",
+      "claim": "The cancer-associated IDH2 R172 mutation acquired a gain of function for alpha-ketoglutarate-dependent NADPH consumption that resulted in the production of 2HG (Ward et al., 2010).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the IDH1 R132 mutation, the cancer-associated IDH2 R172 mutation was demonstrated to be deficient in isocitrate-dependent NADPH production (Yan et al., 2009; Ward et al., 2010), while acquiring a gain of function for alpha-ketoglutarate-dependent NADPH consumption that resulted in the production of 2HG (Ward et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references findings from Ward et al. 2010 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "b8ffcfc6-6be2-4f89-ae35-64f5c24728a0",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C13",
+      "claim": "2HG was reported to be detectable in AML patient samples and predictive of IDH mutational status (Ward et al., 2010).",
+      "claim_type": "EXPLICIT",
+      "source": "2HG was also reported to be detectable in AML patient samples and predictive of IDH mutational status (Ward et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references findings from Ward et al. 2010 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "1d5ca342-d709-4df2-877f-bae5292d185e",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C14",
+      "claim": "R172 mutant IDH2 exhibited decreased NADPH production compared to wild-type IDH2 (Carbonneau et al., 2016; Robinson et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "Since that publication, additional studies have reported R172 mutant IDH2 exhibiting decreased NADPH production, as well as increased intracellular accumulation of 2HG compared to wild-type IDH2 (Carbonneau et al., 2016; Robinson et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references findings from Carbonneau et al. 2016 and Robinson et al. 2016 studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "03c81a56-46b1-47b8-9d1e-bc2504a80743",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C15",
+      "claim": "R172 mutant IDH2 exhibited increased intracellular accumulation of 2HG compared to wild-type IDH2 (Carbonneau et al., 2016; Robinson et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "Since that publication, additional studies have reported R172 mutant IDH2 exhibiting decreased NADPH production, as well as increased intracellular accumulation of 2HG compared to wild-type IDH2 (Carbonneau et al., 2016; Robinson et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references findings from Carbonneau et al. 2016 and Robinson et al. 2016 studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "73c4230a-0219-4a6d-88e8-8c300566f6cb",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C16",
+      "claim": "IDH1 mutations exhibited decreased NADPH production and increased intracellular accumulation of 2HG (Chaturvedi et al., 2017; Ward et al., 2013).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, there have been numerous studies that have observed this with IDH1 mutations (Chaturvedi et al., 2017; Ward et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references findings from Chaturvedi et al. 2017 and Ward et al. 2013 studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "416870ce-d873-4e56-ac0c-3c5e1382e5f9",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C17",
+      "claim": "2HG has been detected in the peripheral blood of patients with AML (DiNardo et al., 2013; McGehee et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "This includes the detection of 2HG in the peripheral blood of patients with AML (DiNardo et al., 2013; McGehee et al., 2016), serum samples from patients with a myeloid sarcoma diagnosis (Willekens et al., 2015), serum samples from patients with angioimmunoblastic T-cell lymphoma (Lemonnier et al., 2016), as well as plasma, urine, and the cerebrospinal fluid in glioma patients (Fathi et al., 2016; Kalinina et al., 2016; Lombardi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references findings from DiNardo et al. 2013 and McGehee et al. 2016 studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "1b716ad0-545f-421c-8091-c9fa9826d6d0",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C18",
+      "claim": "2HG has been detected in serum samples from patients with a myeloid sarcoma diagnosis (Willekens et al., 2015).",
+      "claim_type": "EXPLICIT",
+      "source": "This includes the detection of 2HG in the peripheral blood of patients with AML (DiNardo et al., 2013; McGehee et al., 2016), serum samples from patients with a myeloid sarcoma diagnosis (Willekens et al., 2015), serum samples from patients with angioimmunoblastic T-cell lymphoma (Lemonnier et al., 2016), as well as plasma, urine, and the cerebrospinal fluid in glioma patients (Fathi et al., 2016; Kalinina et al., 2016; Lombardi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references findings from Willekens et al. 2015 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "1a9fbb04-6475-4722-b123-242b1294bfac",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C19",
+      "claim": "2HG has been detected in serum samples from patients with angioimmunoblastic T-cell lymphoma (Lemonnier et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "This includes the detection of 2HG in the peripheral blood of patients with AML (DiNardo et al., 2013; McGehee et al., 2016), serum samples from patients with a myeloid sarcoma diagnosis (Willekens et al., 2015), serum samples from patients with angioimmunoblastic T-cell lymphoma (Lemonnier et al., 2016), as well as plasma, urine, and the cerebrospinal fluid in glioma patients (Fathi et al., 2016; Kalinina et al., 2016; Lombardi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references findings from Lemonnier et al. 2016 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "a6c6fceb-bd79-4a32-9c37-6df857ea0f51",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C20",
+      "claim": "2HG has been detected in plasma, urine, and the cerebrospinal fluid in glioma patients (Fathi et al., 2016; Kalinina et al., 2016; Lombardi et al., 2015).",
+      "claim_type": "EXPLICIT",
+      "source": "This includes the detection of 2HG in the peripheral blood of patients with AML (DiNardo et al., 2013; McGehee et al., 2016), serum samples from patients with a myeloid sarcoma diagnosis (Willekens et al., 2015), serum samples from patients with angioimmunoblastic T-cell lymphoma (Lemonnier et al., 2016), as well as plasma, urine, and the cerebrospinal fluid in glioma patients (Fathi et al., 2016; Kalinina et al., 2016; Lombardi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references findings from Fathi et al. 2016, Kalinina et al. 2016, and Lombardi et al. 2015 studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "f9b71a11-74e2-4534-aea2-3e8670c1dbf3",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C21",
+      "claim": "Advanced imaging and spectroscopy approaches have been reported to detect 2HG noninvasively in glioma (An et al., 2016; de la Fuente et al., 2016; Ganji et al., 2016; Verma et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "Additional strategies have also been reported to detect 2HG noninvasively in glioma that are based on advanced imaging and spectroscopy approaches (An et al., 2016; de la Fuente et al., 2016; Ganji et al., 2016; Verma et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references findings from An et al. 2016, de la Fuente et al. 2016, Ganji et al. 2016, and Verma et al. 2016 studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "9be51271-2ae9-4dfd-b841-b864077c604c",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C22",
+      "claim": "Clinical trials are underway to target mutant IDH1 and IDH2 in AML, gliomas, myelodysplastic syndrome, and other solid tumors (Mondesir et al., 2016; Vander Heiden and DeBerardinis, 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "Clinical trials are also underway to target mutant IDH1 and IDH2 in AML, gliomas, myelodysplastic syndrome, and other solid tumors (Mondesir et al., 2016; Vander Heiden and DeBerardinis, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references findings from Mondesir et al. 2016 and Vander Heiden and DeBerardinis 2017 studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "af79bc8c-52b1-4510-8fca-66825798eb17",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C23",
+      "claim": "HEK293T cells endogenously express wild-type IDH2.",
+      "claim_type": "EXPLICIT",
+      "source": "HEK293T cells, which endogenously express wild-type IDH2, were transfected to ectopically express wild-type or R172 mutant IDH2 (Figure 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about HEK293T cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "29b6e1d0-58f0-4dca-a8c6-3b7b9ffaf44c",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C24",
+      "claim": "Extracts from cells expressing wild-type IDH2 displayed an increase in isocitrate-dependent NADPH production (0.49 [n = 7, SD = 0.090] change in OD340 after 30 min).",
+      "claim_type": "EXPLICIT",
+      "source": "Extracts from cells expressing wild-type IDH2 displayed an increase in isocitrate-dependent NADPH production (0.49 [n = 7, SD = 0.090] change in OD340 after 30 min); while, extracts from cells expressing R172K mutant IDH2 reached a 0.12 [n = 7, SD = 0.069] change in OD340 over the same period, similar to the levels observed in extracts from vector control transfected cells (0.094 [n = 7, SD = 0.055] change in OD340) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from the replication study and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "3b56e406-d6f6-4124-908b-983f2c796213",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C25",
+      "claim": "Extracts from cells expressing R172K mutant IDH2 reached a 0.12 [n = 7, SD = 0.069] change in OD340 after 30 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Extracts from cells expressing wild-type IDH2 displayed an increase in isocitrate-dependent NADPH production (0.49 [n = 7, SD = 0.090] change in OD340 after 30 min); while, extracts from cells expressing R172K mutant IDH2 reached a 0.12 [n = 7, SD = 0.069] change in OD340 over the same period, similar to the levels observed in extracts from vector control transfected cells (0.094 [n = 7, SD = 0.055] change in OD340) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from the replication study and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "00d8bc32-790d-47fb-8615-cbbb8f12084f",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C26",
+      "claim": "Extracts from vector control transfected cells showed 0.094 [n = 7, SD = 0.055] change in OD340 after 30 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Extracts from cells expressing wild-type IDH2 displayed an increase in isocitrate-dependent NADPH production (0.49 [n = 7, SD = 0.090] change in OD340 after 30 min); while, extracts from cells expressing R172K mutant IDH2 reached a 0.12 [n = 7, SD = 0.069] change in OD340 over the same period, similar to the levels observed in extracts from vector control transfected cells (0.094 [n = 7, SD = 0.055] change in OD340) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from the replication study and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "cbe608e2-a700-42db-877f-b406c27a267e",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C27",
+      "claim": "The original study reported extracts from wild-type IDH2 expressing cells increased isocitrate-dependent NADPH production (~1.3 change in OD340 after 30 min).",
+      "claim_type": "EXPLICIT",
+      "source": "This compares to the original study that reported extracts from wild-type IDH2 expressing cells increased isocitrate-dependent NADPH production (~1.3 change in OD340 after 30 min), while R172K mutant IDH2 and vector control resulted in an ~0.1 and ~0.02 change in OD340, respectively (Ward et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references data from Ward et al. 2010 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "d8082065-a6fd-4ea6-b29c-47542f5cf523",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C28",
+      "claim": "The original study reported R172K mutant IDH2 resulted in an ~0.1 change in OD340 after 30 min.",
+      "claim_type": "EXPLICIT",
+      "source": "This compares to the original study that reported extracts from wild-type IDH2 expressing cells increased isocitrate-dependent NADPH production (~1.3 change in OD340 after 30 min), while R172K mutant IDH2 and vector control resulted in an ~0.1 and ~0.02 change in OD340, respectively (Ward et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references data from Ward et al. 2010 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "59734ce7-933e-4b7b-90d5-e695e9eb3b19",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C29",
+      "claim": "The original study reported vector control resulted in an ~0.02 change in OD340 after 30 min.",
+      "claim_type": "EXPLICIT",
+      "source": "This compares to the original study that reported extracts from wild-type IDH2 expressing cells increased isocitrate-dependent NADPH production (~1.3 change in OD340 after 30 min), while R172K mutant IDH2 and vector control resulted in an ~0.1 and ~0.02 change in OD340, respectively (Ward et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references data from Ward et al. 2010 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "70f60120-67db-4d44-b41d-16681f52f3f9",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C30",
+      "claim": "Expression of R172K mutant IDH2 resulted in a 0.022 [n = 7, SD = 0.0077] change in OD340 after 180 min in the alpha-ketoglutarate-dependent NADPH consumption assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of R172K mutant IDH2 resulted in a 0.022 [n = 7, SD = 0.0077] change in OD340 after 180 min, while wild-type IDH2 transfected cell extracts had minimal activity (0.0034 [n = 7, SD = 0.0019] change in OD340), similar to vector control (0.0019 [n = 7, SD = 0.0040] change in OD340).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from the replication study and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "b27dbaa2-413f-40cb-8f40-06a141617633",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C31",
+      "claim": "Wild-type IDH2 transfected cell extracts had minimal activity (0.0034 [n = 7, SD = 0.0019] change in OD340) in the alpha-ketoglutarate-dependent NADPH consumption assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of R172K mutant IDH2 resulted in a 0.022 [n = 7, SD = 0.0077] change in OD340 after 180 min, while wild-type IDH2 transfected cell extracts had minimal activity (0.0034 [n = 7, SD = 0.0019] change in OD340), similar to vector control (0.0019 [n = 7, SD = 0.0040] change in OD340).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from the replication study and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "20807e8a-f1b4-47b8-baf0-6508810d2200",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C32",
+      "claim": "Vector control showed 0.0019 [n = 7, SD = 0.0040] change in OD340 in the alpha-ketoglutarate-dependent NADPH consumption assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of R172K mutant IDH2 resulted in a 0.022 [n = 7, SD = 0.0077] change in OD340 after 180 min, while wild-type IDH2 transfected cell extracts had minimal activity (0.0034 [n = 7, SD = 0.0019] change in OD340), similar to vector control (0.0019 [n = 7, SD = 0.0040] change in OD340).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from the replication study and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "b65adbda-e8a7-4c11-826b-7b0c3a9737a6",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C33",
+      "claim": "The original study reported an ~0.06 change in OD340 for R172K mutant IDH2 expression after 171 min.",
+      "claim_type": "EXPLICIT",
+      "source": "This compares to the original study that reported an ~0.06 change in OD340 for R172K mutant IDH2 expression, an ~0.014 change in OD340 for wild-type IDH2, and an ~0.003 change in OD340 for vector control after 171 min (Ward et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references data from Ward et al. 2010 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "769dc969-200c-49bd-bad1-6957ea6489ff",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C34",
+      "claim": "The original study reported an ~0.014 change in OD340 for wild-type IDH2 after 171 min.",
+      "claim_type": "EXPLICIT",
+      "source": "This compares to the original study that reported an ~0.06 change in OD340 for R172K mutant IDH2 expression, an ~0.014 change in OD340 for wild-type IDH2, and an ~0.003 change in OD340 for vector control after 171 min (Ward et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references data from Ward et al. 2010 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "a7d56cc9-774f-42de-958b-e4872d4296a0",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C35",
+      "claim": "The original study reported an ~0.003 change in OD340 for vector control after 171 min.",
+      "claim_type": "EXPLICIT",
+      "source": "This compares to the original study that reported an ~0.06 change in OD340 for R172K mutant IDH2 expression, an ~0.014 change in OD340 for wild-type IDH2, and an ~0.003 change in OD340 for vector control after 171 min (Ward et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references data from Ward et al. 2010 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "2f0af04d-138f-4ab4-ba2b-962ec60b61aa",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C36",
+      "claim": "The variation in the change in OD340 observed between the original and replication studies might be due to methodological differences such as the adjustment in the amount of extract and substrate added to each reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The variation in the change in OD340 observed between the original and replication studies might be due to methodological differences such as the adjustment in the amount of extract and substrate added to each reaction to generate a sufficient signal to noise, as well as other critical experimental and plate reader settings (Chavez et al., 2017; Giehm and Otzen, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning about potential causes of variation, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "9a49a8f2-8bf1-4ac2-b361-6585b44f748b",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C37",
+      "claim": "Wild-type IDH2 compared to vector control showed a statistically significant difference in isocitrate-dependent NADPH production (Wilcoxon-Mann-Whitney test; Z = 3.13, uncorrected p=0.00058, Bonferroni corrected p=0.0023).",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type IDH2 compared to vector control: Wilcoxon-Mann-Whitney test; Z = 3.13, uncorrected p=0.00058, Bonferroni corrected p=0.0023.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "ed35cd26-3a13-4a1c-a685-f02e7bc6ad48",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C38",
+      "claim": "R172K mutant IDH2 compared to vector control did not show a statistically significant difference in isocitrate-dependent NADPH production (Wilcoxon-Mann-Whitney test; Z = 1.60, uncorrected p=0.13, Bonferroni corrected p=0.51).",
+      "claim_type": "EXPLICIT",
+      "source": "R172K mutant IDH2 compared to vector control: Wilcoxon-Mann-Whitney test; Z = 1.60, uncorrected p=0.13, Bonferroni corrected p=0.51.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "b9ef3deb-9f7e-4eaa-8ada-eceee2635fba",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C39",
+      "claim": "Wild-type IDH2 compared to vector control did not show a statistically significant difference in alpha-ketoglutarate-dependent NADPH consumption (Welch's t-test; t(9.42) = 0.29, uncorrected p=0.78, Bonferroni corrected p>0.99).",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type IDH2 compared to vector control: Welch's t-test; t(9.42) = 0.29, uncorrected p=0.78, Bonferroni corrected p>0.99.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "faec615f-93a5-468b-86c2-68e6d293c2ce",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C40",
+      "claim": "R172K mutant IDH2 compared to vector control showed a statistically significant difference in alpha-ketoglutarate-dependent NADPH consumption (Welch's t-test; t(6.95) = 5.97, uncorrected p=0.00058, Bonferroni corrected p=0.0023).",
+      "claim_type": "EXPLICIT",
+      "source": "R172K mutant IDH2 compared to vector control: Welch's t-test; t(6.95) = 5.97, uncorrected p=0.00058, Bonferroni corrected p=0.0023.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "0c310f52-0ad3-4106-8255-a2c909df7f06",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C41",
+      "claim": "The intracellular levels of 2HG in HEK293T cells expressing R172K mutant IDH2 were over 600 times the levels detected in vector control and wild-type IDH2 expressing cells 48 hr after transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "The intracellular levels of 2HG in HEK293T cells expressing R172K mutant IDH2 were determined using the total ion chromatograms (TIC) and found to be over 600 times the levels detected in vector control and wild-type IDH2 expressing cells 48 hr after transfection (Figure 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from GC-MS analysis shown in Figure 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "f5b065a4-7786-4cfc-ada9-313c2b326c40",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C42",
+      "claim": "The original study reported an approximately 100 times increase in intracellular 2HG levels in cells expressing R172K mutant IDH2 compared to vector control and wild-type IDH2.",
+      "claim_type": "EXPLICIT",
+      "source": "This compares to the original study, which reported an approximately 100 times increase in intracellular 2HG levels in cells expressing R172K mutant IDH2 compared to vector control and wild-type IDH2 (Ward et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references data from Ward et al. 2010 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "87a0f421-a696-4023-b74c-1f585b115e82",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C43",
+      "claim": "The difference in magnitude between the original and replication studies is not due to the observed intracellular 2HG/glutamate levels in R172K mutant IDH2 expressing cells, but rather the lower bounds of detection in the vector control and wild-type IDH2 conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in magnitude between the original and replication studies is not due to the observed intracellular 2HG/glutamate levels in R172K mutant IDH2 expressing cells, but rather the lower bounds of detection in the vector control and wild-type IDH2 conditions (Figure 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is an inference based on comparison of data from the replication and original studies.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "45ded681-27f9-471c-b8df-35b9736a6239",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C44",
+      "claim": "R172K mutant IDH2 values were statistically significantly different from the largest value observed in cells expressing vector control or wild-type IDH2 (0.005) at 48 hr (One-sample t-test; t(9) = 21.9, uncorrected p=4.14\u00d710\u22129, Bonferroni corrected p=8.28\u00d710\u22129).",
+      "claim_type": "EXPLICIT",
+      "source": "R172K mutant IDH2 values were compared to the largest value observed in cells expressing vector control or wild-type IDH2 (0.005). One-sample t-test; t(9) = 21.9, uncorrected p=4.14\u00d710\u22129, Bonferroni corrected p=8.28\u00d710\u22129.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "2eb5fd1b-4e09-45e9-83ca-e931a73c9645",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C45",
+      "claim": "R172K mutant IDH2 values were statistically significantly different from the largest value observed in cells expressing vector control or wild-type IDH2 (0.001) at 24 hr (One-sample Wilcoxon signed-rank test on log10 transformed data; V = 55, uncorrected p=0.0020, Bonferroni corrected p=0.0039).",
+      "claim_type": "EXPLICIT",
+      "source": "R172K mutant IDH2 values were compared to the largest value observed in cells expressing vector control or wild-type IDH2 (0.001). One-sample Wilcoxon signed-rank test on log10 transformed data; V = 55, uncorrected p=0.0020, Bonferroni corrected p=0.0039.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "533ae6e8-f8c7-4039-8417-faeacf92871c",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C46",
+      "claim": "All wild-type IDH samples displayed a 2HG/glutamate level less than 1%.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the original study, all wild-type IDH samples displayed a 2HG/glutamate level less than 1%, while samples that had an IDH1 or IDH2 mutation had a 2HG/glutamate level greater than 1% (Figure 3, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from AML patient samples shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "fd0a49d2-c655-4f9d-87bc-b4be9c64e1a5",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C47",
+      "claim": "Samples that had an IDH1 or IDH2 mutation had a 2HG/glutamate level greater than 1%.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the original study, all wild-type IDH samples displayed a 2HG/glutamate level less than 1%, while samples that had an IDH1 or IDH2 mutation had a 2HG/glutamate level greater than 1% (Figure 3, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from AML patient samples shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "5ab5219b-7478-46be-a1df-e0ea300c1a34",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C48",
+      "claim": "The lower limits of detection in the patient samples without an IDH mutation were lower in this replication attempt (mean 2HG/glutamate ratio of 0.001) than what was reported in the original study (mean 2HG/glutamate ratio of ~0.005).",
+      "claim_type": "EXPLICIT",
+      "source": "Like the metabolite analysis conducted with HEK293T cells, the lower limits of detection in the patient samples without an IDH mutation were lower in this replication attempt (mean 2HG/glutamate ratio of 0.001) than what was reported in the original study (mean 2HG/glutamate ratio of ~0.005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares detection limits between the replication and original studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "ad61a2f4-5d9e-483d-97df-0b9520d16496",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C49",
+      "claim": "The average ratio in the samples with IDH mutations reported in this replication attempt (mean 2HG/glutamate ratio of 0.20) were lower than what was reported in the original study (mean 2HG/glutamate ratio of ~0.8).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the average ratio in the samples with IDH mutations reported in this replication attempt (mean 2HG/glutamate ratio of 0.20) were lower than what was reported in the original study (mean 2HG/glutamate ratio of ~0.8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares 2HG/glutamate ratios between the replication and original studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "dff8e177-36aa-4c38-9b0c-d1e46c3cc812",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C50",
+      "claim": "Detection of 2HG in wild-type IDH samples, albeit at much lower levels than in samples with an IDH mutation, has been reported in other studies (Borger et al., 2014; DiNardo et al., 2013; Fathi et al., 2012; Gross et al., 2010; Janin et al., 2014; Lemonnier et al., 2016; Natsumeda et al., 2014).",
+      "claim_type": "EXPLICIT",
+      "source": "Of interest, detection of 2HG in wild-type IDH samples, albeit at much lower levels than in samples with an IDH mutation, has also been reported in other studies measuring 2HG levels in patient samples (Borger et al., 2014; DiNardo et al., 2013; Fathi et al., 2012; Gross et al., 2010; Janin et al., 2014; Lemonnier et al., 2016; Natsumeda et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references findings from multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "07e5014b-1fb2-4073-92c8-3f70d8e10d18",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C51",
+      "claim": "Cells without IDH mutations produce small quantities of 2HG, although the mechanism is poorly understood and thought to be largely due to error of normal metabolism (Andronesi et al., 2013; Intlekofer et al., 2015).",
+      "claim_type": "EXPLICIT",
+      "source": "Cells without IDH mutations produce small quantities of 2HG, although the mechanism is poorly understood and thought to be largely due to error of normal metabolism (Andronesi et al., 2013; Intlekofer et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references findings from Andronesi et al. 2013 and Intlekofer et al. 2015 studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "cf8fd0a2-d88b-49e6-8291-e47887e511b8",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C52",
+      "claim": "Detection of 2HG levels in serum and urine in AML and intrahepatic cholangiocarcinoma has been reported as a biomarker for IDH mutational status.",
+      "claim_type": "EXPLICIT",
+      "source": "While detection of 2HG levels in serum and urine in AML and intrahepatic cholangiocarcinoma has been reported by various studies as a biomarker for IDH mutational status, detection in glioma samples does not appear as straightforward with no difference between serum samples, likely due to the blood\u2013brain barrier, and further evaluation needed with the use of urinary samples (Fathi et al., 2016; Lombardi et al., 2016, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references findings from Fathi et al. 2016, Lombardi et al. 2016, and Lombardi et al. 2015 studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "a3c573e3-13fb-4572-a059-1d25337b9237",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C53",
+      "claim": "Detection of 2HG in glioma samples does not appear as straightforward with no difference between serum samples, likely due to the blood\u2013brain barrier (Fathi et al., 2016; Lombardi et al., 2016, 2015).",
+      "claim_type": "EXPLICIT",
+      "source": "While detection of 2HG levels in serum and urine in AML and intrahepatic cholangiocarcinoma has been reported by various studies as a biomarker for IDH mutational status, detection in glioma samples does not appear as straightforward with no difference between serum samples, likely due to the blood\u2013brain barrier, and further evaluation needed with the use of urinary samples (Fathi et al., 2016; Lombardi et al., 2016, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references findings from Fathi et al. 2016, Lombardi et al. 2016, and Lombardi et al. 2015 studies and includes speculation about the blood-brain barrier.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "39d39e37-4414-4893-8cee-8957bec097ba",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C54",
+      "claim": "Samples with an IDH1 mutation compared to the threshold constant (0.0024) showed t(3) = 4.47, uncorrected p=0.021, Bonferroni corrected p=0.063.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples with an IDH1 mutation compared to the threshold constant: t(3) = 4.47, uncorrected p=0.021, Bonferroni corrected p=0.063.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "049f090d-b7e4-4bcf-89c1-fcbf6fa58928",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C55",
+      "claim": "Samples with an IDH2 mutation compared to the threshold constant (0.0024) showed t(3) = 9.19, uncorrected p=0.0027, Bonferroni corrected p=0.0082.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples with an IDH2 mutation compared to the threshold constant: t(3) = 9.19, uncorrected p=0.0027, Bonferroni corrected p=0.0082.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "c9065235-b1f0-4ead-b314-ae2a7a187509",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C56",
+      "claim": "Samples with an IDH1 or IDH2 mutation compared to the threshold constant (0.0024) showed t(7) = 8.73, uncorrected p=5.20\u00d710\u22125, Bonferroni corrected p=1.56\u00d710\u22124.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples with an IDH1 or IDH2 mutation compared to the threshold constant: t(7) = 8.73, uncorrected p=5.20\u00d710\u22125, Bonferroni corrected p=1.56\u00d710\u22124.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "b556a6e9-5f42-4599-9c1a-026b5fdee57a",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C57",
+      "claim": "The planned comparison of samples with an IDH1 mutation was not statistically significant (t(3) = 4.47, uncorrected p=0.021, corrected p=0.063).",
+      "claim_type": "EXPLICIT",
+      "source": "The planned comparison of samples with an IDH1 mutation, however, was not statistically significant (t(3) = 4.47, uncorrected p=0.021, corrected p=0.063).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "2bbd6a78-eb89-4a45-abe7-79947b34a433",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C58",
+      "claim": "Using EIC analysis, all effects for AML patient samples were found to be statistically significant (IDH1: t(3) = 5.40, uncorrected p=0.012, corrected p=0.037; IDH2: t(3) = 10.93, uncorrected p=0.0016, corrected p=0.0049; IDH1/IDH2: t(7) = 10.44, uncorrected p=1.61\u00d710\u22125, corrected p=4.84\u00d710\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "The same analysis was conducted using the 2HG/glutamate levels determined by EIC, where the observed 2HG/glutamate threshold between IDH mutant and wild-type IDH samples was 0.001. All effects were found to be statistically significant (IDH1: t(3) = 5.40, uncorrected p=0.012, corrected p=0.037; IDH2: t(3) = 10.93, uncorrected p=0.0016, corrected p=0.0049; IDH1/IDH2: t(7) = 10.44, uncorrected p=1.61\u00d710\u22125, corrected p=4.84\u00d710\u22125).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "b0282b4f-1634-447d-9bea-5604b1b5bb72",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C59",
+      "claim": "For the isocitrate-dependent NADPH production assay, the slopes for wild-type IDH2 and vector control from the original study were outside the 95% confidence interval (CI) of the slopes generated during the replication attempt.",
+      "claim_type": "EXPLICIT",
+      "source": "For the isocitrate-dependent NADPH production assay, the slopes for wild-type IDH2 and vector control from the original study were outside the 95% confidence interval (CI) of the slopes generated during the replication attempt, while the slope for R172K mutant IDH2 from the original study was within the 95% CI of the replication attempt (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on comparison of effect sizes between original and replication studies shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "7fbc0c80-80ec-4cfd-9aec-6ddae5686045",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C60",
+      "claim": "For the isocitrate-dependent NADPH production assay, the slope for R172K mutant IDH2 from the original study was within the 95% CI of the replication attempt.",
+      "claim_type": "EXPLICIT",
+      "source": "For the isocitrate-dependent NADPH production assay, the slopes for wild-type IDH2 and vector control from the original study were outside the 95% confidence interval (CI) of the slopes generated during the replication attempt, while the slope for R172K mutant IDH2 from the original study was within the 95% CI of the replication attempt (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on comparison of effect sizes between original and replication studies shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "f24bcd10-f3b4-4400-9c04-5aba11815262",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C61",
+      "claim": "For the alpha-ketoglutarate-dependent NADPH consumption assay, the slopes for R172K mutant IDH2 and wild-type IDH2 from the original study fell outside the 95% CI of the slopes generated during the replication attempt.",
+      "claim_type": "EXPLICIT",
+      "source": "For the alpha-ketoglutarate-dependent NADPH consumption assay, the slopes for R172K mutant IDH2 and wild-type IDH2 from the original study fell outside the 95% CI of the slopes generated during the replication attempt, while the slope for vector control from the original study was within the 95% CI of the replication attempt (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on comparison of effect sizes between original and replication studies shown in Figure 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "47b355e5-5808-4546-920c-2e15689d6382",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C62",
+      "claim": "For the alpha-ketoglutarate-dependent NADPH consumption assay, the slope for vector control from the original study was within the 95% CI of the replication attempt.",
+      "claim_type": "EXPLICIT",
+      "source": "For the alpha-ketoglutarate-dependent NADPH consumption assay, the slopes for R172K mutant IDH2 and wild-type IDH2 from the original study fell outside the 95% CI of the slopes generated during the replication attempt, while the slope for vector control from the original study was within the 95% CI of the replication attempt (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on comparison of effect sizes between original and replication studies shown in Figure 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "310e1e89-a962-4624-ae9c-cd7a28b47b56",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C63",
+      "claim": "For R172K mutant IDH2 intracellular 2HG/glutamate levels, the original study values were within the 95% CI of the replication attempt.",
+      "claim_type": "EXPLICIT",
+      "source": "For R172K mutant IDH2, the intracellular 2HG/glutamate levels in the original study were within the 95% CI of the replication attempt, while wild-type IDH2 and vector control fell outside the 95% CI (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on comparison of effect sizes between original and replication studies shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "cb947e72-00be-4949-8f6d-fd7009700749",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C64",
+      "claim": "For wild-type IDH2 and vector control intracellular 2HG/glutamate levels, the original study values fell outside the 95% CI of the replication attempt.",
+      "claim_type": "EXPLICIT",
+      "source": "For R172K mutant IDH2, the intracellular 2HG/glutamate levels in the original study were within the 95% CI of the replication attempt, while wild-type IDH2 and vector control fell outside the 95% CI (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on comparison of effect sizes between original and replication studies shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "e05fe4fc-70d6-40c1-9578-6a60753adf00",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C65",
+      "claim": "The comparison of AML samples with an IDH1 mutation resulted in d = 8.40, 95% CI [2.84, 14.09] for the original study and d = 2.23, 95% CI [0.26, 4.17] for the replication study.",
+      "claim_type": "EXPLICIT",
+      "source": "The comparison of samples with an IDH1 mutation resulted in d = 8.40, 95% CI [2.84, 14.09] for the data estimated a priori from Figure 5C in the original study (Ward et al., 2010), whereas d = 2.23, 95% CI [0.26, 4.17] for this study.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on meta-analysis comparing effect sizes shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "0a697816-09a6-4f26-bf13-77e329dff535",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C66",
+      "claim": "A meta-analysis of IDH1 mutation samples resulted in d = 4.80, 95% CI [\u22121.16, 10.76], p=0.114.",
+      "claim_type": "EXPLICIT",
+      "source": "A meta-analysis of these two effects resulted in d = 4.80, 95% CI [\u22121.16, 10.76], p=0.114.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on meta-analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "d447b4d2-5799-48ab-aa52-35037585c885",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C67",
+      "claim": "For IDH1 mutation samples, the original and replication effects were in the same direction, however, the point estimate of the replication effect size was not within the confidence interval of the original result, and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "The original and replication effects were in the same direction, however, the point estimate of the replication effect size was not within the confidence interval of the original result, and vice versa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of effect sizes from meta-analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "c1721867-0394-4ace-b44d-b1fd2cc7d344",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C68",
+      "claim": "The large confidence intervals of the meta-analysis for IDH1 samples along with a statistically significant Cochran's Q test (p=0.031), suggests heterogeneity between the original and replication studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the large confidence intervals of the meta-analysis along with a statistically significant Cochran's Q test (p=0.031), suggests heterogeneity between the original and replication studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical analysis of meta-analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "7777cffc-298d-4c6b-9582-8f56479e6d54",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C69",
+      "claim": "The test of AML samples with an IDH2 mutation resulted in d = 6.75, 95% CI [3.45, 10.04] for the original study and d = 4.60, 95% CI [1.05, 8.22] for the replication study.",
+      "claim_type": "EXPLICIT",
+      "source": "The test of samples with an IDH2 mutation resulted in d = 6.75, 95% CI [3.45, 10.04] for the original study, d = 4.60, 95% CI [1.05, 8.22] for this study, with a meta-analysis resulting in d = 5.72, 95% CI [3.42, 8.02], p=1.12\u00d710\u22126.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on meta-analysis comparing effect sizes shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "b760e883-a5cd-43fe-a97e-ddfad237b9e5",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C70",
+      "claim": "A meta-analysis of IDH2 mutation samples resulted in d = 5.72, 95% CI [3.42, 8.02], p=1.12\u00d710\u22126.",
+      "claim_type": "EXPLICIT",
+      "source": "The test of samples with an IDH2 mutation resulted in d = 6.75, 95% CI [3.45, 10.04] for the original study, d = 4.60, 95% CI [1.05, 8.22] for this study, with a meta-analysis resulting in d = 5.72, 95% CI [3.42, 8.02], p=1.12\u00d710\u22126.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on meta-analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "28071e04-dce6-456b-8538-4134e5913bd1",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C71",
+      "claim": "The test of AML samples with an IDH1 or IDH2 mutation resulted in d = 4.36, 95% CI [2.62, 6.09] for the original study and d = 3.09, 95% CI [1.35, 4.80] for the replication study.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the test of samples with an IDH1 or IDH2 mutation resulted in d = 4.36, 95% CI [2.62, 6.09] for the original study, d = 3.09, 95% CI [1.35, 4.80] for this study, with a meta-analysis resulting in d = 3.71, 95% CI [2.46, 4.96], p=5.73\u00d710\u22129.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on meta-analysis comparing effect sizes shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "719cac21-d049-43f0-ac1f-d6972c2851d5",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C72",
+      "claim": "A meta-analysis of IDH1 or IDH2 mutation samples resulted in d = 3.71, 95% CI [2.46, 4.96], p=5.73\u00d710\u22129.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the test of samples with an IDH1 or IDH2 mutation resulted in d = 4.36, 95% CI [2.62, 6.09] for the original study, d = 3.09, 95% CI [1.35, 4.80] for this study, with a meta-analysis resulting in d = 3.71, 95% CI [2.46, 4.96], p=5.73\u00d710\u22129.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on meta-analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "50ea019a-f7a2-40c3-bbc9-e93b966b6b36",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C73",
+      "claim": "For IDH2 and IDH1/IDH2 mutation samples, the original and replication effects were in the same direction and the point estimate of the replication effect size was within the confidence interval of the original result, and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "For each of these two comparisons, the original and replication effects were in the same direction and the point estimate of the replication effect size was within the confidence interval of the original result, and vice versa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of effect sizes from meta-analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "a7038cd2-2b4a-453b-b60f-96c21e3e80f8",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C74",
+      "claim": "Cell line genetic drift is a factor that could affect experimental outcomes (Hughes et al., 2007; Kleensang et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "These include variables such as cell line genetic drift (Hughes et al., 2007; Kleensang et al., 2016), GC-MS parameters such as injection volume (Allwood et al., 2009), and other patient characteristics (Klevorn and Teague, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references studies about factors affecting experimental outcomes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "67cc472b-bfb5-41a2-ae33-738274d04d2f",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C75",
+      "claim": "GC-MS parameters such as injection volume can affect experimental outcomes (Allwood et al., 2009).",
+      "claim_type": "EXPLICIT",
+      "source": "These include variables such as cell line genetic drift (Hughes et al., 2007; Kleensang et al., 2016), GC-MS parameters such as injection volume (Allwood et al., 2009), and other patient characteristics (Klevorn and Teague, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references a study about factors affecting experimental outcomes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "3b87b315-f246-45f0-8a4d-4bcb9475d33a",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C76",
+      "claim": "Patient characteristics can affect experimental outcomes (Klevorn and Teague, 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "These include variables such as cell line genetic drift (Hughes et al., 2007; Kleensang et al., 2016), GC-MS parameters such as injection volume (Allwood et al., 2009), and other patient characteristics (Klevorn and Teague, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references a study about factors affecting experimental outcomes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "a9cfce17-6e4b-4fd0-a357-c5d349e7c5a8",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C77",
+      "claim": "Hypoxic microenvironments promote glutamine consumption for glutaminolysis and reductive carboxylation pathways, affecting IDH reactions, specifically alpha-ketoglutarate (Parker and Metallo, 2015).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, recent studies since Ward et al. (2010) was published have identified numerous factors, such as hypoxic microenvironments that promote glutamine consumption for glutaminolysis and reductive carboxylation pathways, affecting IDH reactions, specifically alpha-ketoglutarate (Parker and Metallo, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references a study about factors affecting IDH reactions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "8dc52fa5-f5f1-4942-a40b-68ff8ff1c339",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C78",
+      "claim": "Enantiomers of 2HG have been found to be produced by different enzymes with distinct metabolisms (Losman and Kaelin, 2013).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, enantiomers of 2HG have been found to be produced by different enzymes with distinct metabolisms (Losman and Kaelin, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references a study about 2HG enantiomers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "0e47c293-79bb-428f-81c9-4750d12bae1b",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C79",
+      "claim": "HEK293T cells were grown in DMEM supplemented with 10% Fetal Bovine Serum (FBS).",
+      "claim_type": "EXPLICIT",
+      "source": "HEK239T cells (ATCC, cat# CRL-3216, RRID:CVCL_0063) were grown in DMEM supplemented with 10% Fetal Bovine Serum (FBS) (Hyclone, Logan, UT, cat# SH30071.03).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "75a7b5bb-fd2b-4d5e-9d6c-f57bc8c8868c",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C80",
+      "claim": "Cells were grown at 37\u00b0C in a humidified atmosphere at 10% CO2.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were grown at 37\u00b0C in a humidified atmosphere at 10% CO2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "17107985-1d3b-4842-a3ba-cc94f1c7d3b5",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C81",
+      "claim": "The cell line was confirmed to be free of mycoplasma contamination.",
+      "claim_type": "EXPLICIT",
+      "source": "This includes results confirming the cell line was free of mycoplasma contamination (MycoAlert PLUS, Lonza, Basel, Switzerland, cat# LT07-701).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes quality control measures performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "72e81138-34af-4127-b71f-7e3e63e31e5d",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C82",
+      "claim": "STR DNA profiling confirmed cells were the indicated cell line when queried against STR profile databases.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, STR DNA profiling of the cell line was performed (DDC Medical, Fairfield, Ohio) and cells were confirmed to be the indicated cell line when queried against STR profile databases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes quality control measures performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "b3aa26a0-0305-463a-acda-afe8e3df63ed",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C83",
+      "claim": "IDH2WT and IDH2R172K were amplified by PCR from pCMV6-Entry vectors and cloned into the BamH1 and EcoR1 sites of the pcDNA3.1 expression vector.",
+      "claim_type": "EXPLICIT",
+      "source": "To generate pcDNA3.1-IDH2WT (deposited in Addgene, plasmid# 87926) and pcDNA3.1-IDH2R172K (deposited in Addgene, plasmid# 87927), IDH2WT and IDH2R172K were amplified by PCR from pCMV6-Entry vectors (Origene, Rockville, MD, cat# RC201152 and cat# RC400103) and cloned into the BamH1 and EcoR1 sites of the pcDNA3.1 expression vector (Invitrogen, Carlsbad, CA, cat# V790-20).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "9d3704a7-7d6a-47e0-a22e-6605e33de7af",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C84",
+      "claim": "Identity of all vectors were confirmed by sequencing and agarose gel electrophoresis.",
+      "claim_type": "EXPLICIT",
+      "source": "Identity of all vectors were confirmed by sequencing and agarose gel electrophoresis (https://osf.io/zqyyq/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes quality control measures performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "f8835fd2-67d4-4c23-9bb3-a67507dc6c05",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C85",
+      "claim": "For the assessment of alpha-ketoglutarate dependent NADPH consumption, 6 \u00d7 10^5 cells were seeded per well in six-well plates.",
+      "claim_type": "EXPLICIT",
+      "source": "For the assessment of alpha-ketoglutarate dependent NADPH consumption (Figure 1), 6 \u00d7 105 cells were seeded per well in six-well plates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "d3b8bf03-1dcd-4fc5-909d-c473589b9ce0",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C86",
+      "claim": "For assessing the production of 2HG, 3.5 \u00d7 10^6 cells were seeded per 10 cm plate.",
+      "claim_type": "EXPLICIT",
+      "source": "For assessing the production of 2HG (Figure 2), 3.5 \u00d7 106 cells were seeded per 10 cm plate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "33da1d73-9ff7-445d-99cd-7e16a1a107f3",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C87",
+      "claim": "Cells were transfected with Lipofectamine 2000 according to manufacturer's instructions.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were transfected with the appropriate plasmid with Lipofectamine 2000 (Invitrogen, cat# 11668027) according to manufacturer's instructions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "b8509a90-80b0-4e15-a584-5866f3a3bcc2",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C88",
+      "claim": "Transfected cells were harvested 48 hr after transfection for IDH oxidative and reductive activity assays.",
+      "claim_type": "EXPLICIT",
+      "source": "For IDH oxidative and reductive activity assays, transfected cells were harvested 48 hr after transfection in 0.5 ml/well with mammalian protein extraction reagent (mPER) containing protease and phosphatase inhibitor cocktail (4 \u00b5g/ml aprotinin, 0.2 mM AEBSF, 4 \u00b5g/ml leupeptin, 4 \u00b5g/ml pepstatin A, 0.2 mM NaOV, and 1 mM NaF) on ice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "828a536a-72b8-4586-a079-d43edb19bc2a",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C89",
+      "claim": "IDH oxidative activity was determined by mixing 15 \u00b5g of each protein lysate with 200 \u00b5l of assay buffer containing 100 mM Tris-HCl, pH 7.5, 1.3 mM MnCl2, 0.33 mM EDTA, 0.4 mM \u00df-NADP+, 0.4 mM D-(+)-threo-isocitrate.",
+      "claim_type": "EXPLICIT",
+      "source": "IDH oxidative activity was determined by mixing 15 \u00b5g of each protein lysate with 200 \u00b5l of assay buffer (100 mM Tris-HCl, pH 7.5, 1.3 mM MnCl2, 0.33 mM EDTA, 0.4 mM \u00df-NADP+, 0.4 mM D-(+)-threo-isocitrate).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "7a4a12ab-2f4e-460d-9b36-8bb998a25ecb",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C90",
+      "claim": "IDH reductive activity was determined by mixing 30 \u00b5g of each protein lysate with 200 \u00b5l of assay buffer containing 100 mM Tris-HCl, pH 7.5, 1.3 mM MnCl2, 0.02 mM \u00df-NADPH, 1 mM alpha-ketoglutarate.",
+      "claim_type": "EXPLICIT",
+      "source": "IDH reductive activity was determined by mixing 30 \u00b5g of each protein lysate with 200 \u00b5l of assay buffer (100 mM Tris-HCl, pH 7.5, 1.3 mM MnCl2, 0.02 mM \u00df-NADPH, 1 mM alpha-ketoglutarate).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "cd85244e-448b-417a-a0ed-2570c044e09e",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C91",
+      "claim": "Patient samples were obtained from Roswell Park Cancer Institute.",
+      "claim_type": "EXPLICIT",
+      "source": "Patient samples were obtained from Roswell Park Cancer Institute.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the source of patient samples used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "81062eaa-531e-463f-ab45-36c4f32010ec",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C92",
+      "claim": "The samples were prescreened for IDH genotypic status prior to conducting the study.",
+      "claim_type": "EXPLICIT",
+      "source": "The samples were prescreened for IDH genotypic status and the pre-specified sample of each group was determined prior to conducting the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "1dfd297b-dc84-4d57-bad0-1d643a279eb6",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C93",
+      "claim": "Approval was obtained from the institutional review board (protocol # CIC 9805).",
+      "claim_type": "EXPLICIT",
+      "source": "Approval was obtained from the institutional review board (protocol # CIC 9805) and shared samples and data were de-identified for this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "1b4f8c9d-afdf-4304-8e64-0edd8a6018b1",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C94",
+      "claim": "Cells used for this study were prepared by Ficoll separation of mononuclear cells from peripheral blood or bone marrow and were frozen as viable cells in 10% dimethyl sulfoxide (DMSO).",
+      "claim_type": "EXPLICIT",
+      "source": "Cells used for this study were prepared by Ficoll separation of mononuclear cells from peripheral blood or bone marrow and were frozen as viable cells in 10% dimethyl sulfoxide (DMSO).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "061746bd-d609-4d46-b9be-fb44d8ac1cb9",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C95",
+      "claim": "HEK293T cells were harvested 24 and 48 hr after transfection for metabolite extraction.",
+      "claim_type": "EXPLICIT",
+      "source": "HEK293T cells were harvested 24 and 48 hr after transfection by removal of medium, while peripheral blood mononuclear cells from frozen AML samples, were centrifuged at 1000xg to remove freezing medium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "ed9f608c-4872-4f13-bfeb-50ca434cbb7b",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C96",
+      "claim": "Cells were rapidly quenched with 1.5 ml of methanol chilled to \u221280\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "After removal of medium, cells were rapidly quenched with 1.5 ml of methanol chilled to \u221280\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "491fe616-0671-43bd-8d26-5d21027cc36b",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C97",
+      "claim": "Metabolites were identified based on retention times and electron ionization (EI) spectra matching with authentic standards.",
+      "claim_type": "EXPLICIT",
+      "source": "Metabolites were identified based on retention times and electron ionization (EI) spectra matching with authentic standards (Sigma, cat# 2HG:H8378, Asp:A9256, Glu:G1251).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "2bc77035-3a58-4c34-9fa5-4798e06e4518",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C98",
+      "claim": "The metabolomics data has been assigned a Metabolomics Workbench Project ID: ST000548.",
+      "claim_type": "EXPLICIT",
+      "source": "This metabolomics data is available at the NIH Common Fund's Data Repository and Coordinating Center (supported by NIH grant, U01-DK097430) website, (http://www.metabolomicsworkbench.org), where it has been assigned a Metabolomics Workbench Project ID: ST000548.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes data availability for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "ae1f99d6-1ca1-4b25-9c44-3507680409dd",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C99",
+      "claim": "Statistical analysis was performed with R software, version 3.3.2.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistical analysis was performed with R software (RRID:SCR_001905), version 3.3.2 (R Core Team, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the statistical methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "f45ceb25-a947-4a91-bab0-6e1a2dee45d8",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C100",
+      "claim": "Confirmatory statistical analysis was pre-registered before the experimental work began.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirmatory statistical analysis was pre-registered (https://osf.io/t873r/) before the experimental work began as outlined in the Registered Report (Fiehn et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the pre-registration of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "e8eb3b53-3a84-4439-a525-4de502be9501",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C101",
+      "claim": "The expression vector pcDNA3.1 was used instead of pcDNA3 since it was unavailable for order at the time the study was conducted.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression vector pcDNA3.1 was used instead of pcDNA3 since it was unavailable for order at the time the study was conducted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a deviation from the registered report.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "a794d822-1ba3-475d-9d73-6606898a67ab",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C102",
+      "claim": "The concentrations of protein used was increased for the IDH oxidative (0.3 \u00b5g to 15 \u00b5g) and reductive (3 \u00b5g to 30 \u00b5g) assays due to an inability to detect a signal above the noise with the originally specified protein concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "The concentrations of protein used was increased for the IDH oxidative (0.3 \u00b5g to 15 \u00b5g) and reductive (3 \u00b5g to 30 \u00b5g) assays, as well as the amount of substrate (D-(+)-threo-isocitrate: 0.1 mM to 0.4 mM; alpha-ketoglutarate: 0.5 mM to 1 mM). This was due to an inability to detect a signal above the noise with the originally specified protein concentrations, with the need to increase the substrate concentration due to saturation before the end of the time points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a deviation from the registered report with reasoning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "c5cd767b-1192-40f7-a9df-858cb37a4e86",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C103",
+      "claim": "The amount of substrate was increased (D-(+)-threo-isocitrate: 0.1 mM to 0.4 mM; alpha-ketoglutarate: 0.5 mM to 1 mM) due to saturation before the end of the time points.",
+      "claim_type": "EXPLICIT",
+      "source": "The concentrations of protein used was increased for the IDH oxidative (0.3 \u00b5g to 15 \u00b5g) and reductive (3 \u00b5g to 30 \u00b5g) assays, as well as the amount of substrate (D-(+)-threo-isocitrate: 0.1 mM to 0.4 mM; alpha-ketoglutarate: 0.5 mM to 1 mM). This was due to an inability to detect a signal above the noise with the originally specified protein concentrations, with the need to increase the substrate concentration due to saturation before the end of the time points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a deviation from the registered report with reasoning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "59519acf-2268-4ac2-abf6-e002f2594a89",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C104",
+      "claim": "Cell lysates were homogenized instead of sonicated to generate protein extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell lysates were also homogenized instead of sonicated to generate protein extracts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a deviation from the registered report.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "7334a441-5075-45b1-9a35-9daab96a1191",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C105",
+      "claim": "Actin was not used as the additional control since it overlapped with IDH2; Alpha-Tubulin was used instead.",
+      "claim_type": "EXPLICIT",
+      "source": "For the Western blot, Actin was not used as the additional control since it overlapped with IDH2; Alpha-Tubulin was used instead.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a deviation from the registered report with reasoning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "e311319e-d7d2-4e15-831d-ca5fcbbf41b4",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C106",
+      "claim": "MTBSTFA was used in this replication attempt, similar to the original study.",
+      "claim_type": "EXPLICIT",
+      "source": "For the GC-MS, the Registered Report listed MTBSTFA in the materials, but incorrectly listed MSTFA in the procedure. MTBSTFA was used in this replication attempt, similar to the original study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a clarification of the registered report.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "0bca60a7-1bc5-4fb7-ac9d-00936e250bf1",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "claim_id": "C107",
+      "claim": "Derivatized extracts were diluted 1:4 to ensure metabolites were in proper concentration range for the GC-MS instrument used.",
+      "claim_type": "EXPLICIT",
+      "source": "Derivatized extracts were diluted 1:4 to ensure metabolites were in proper concentration range for the GC-MS instrument used since the cell number, derivatization volume, and injection volume were not listed in the original study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a deviation from the registered report with reasoning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "66362e9f-cd0b-4cda-a0b2-112bed5985f8",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "R172K mutant IDH2 exhibits loss of isocitrate-dependent NADPH production compared to wild-type IDH2. Wild-type IDH2 showed significantly increased NADPH production (0.49 change in OD340) compared to vector control (0.094), while R172K mutant IDH2 (0.12) was not significantly different from vector control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C24-C26 provide quantitative experimental data (n=7 with SD) showing wild-type IDH2 produces significantly more NADPH than R172K mutant or vector control. Statistical analysis (C37-C38) confirms wild-type vs. vector is significant (p=0.0023 corrected) while mutant vs. vector is not (p=0.51 corrected), supporting the loss-of-function phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "44c72d42-d305-4f47-b977-7435e7c73d55",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "R172K mutant IDH2 exhibits gain of function for alpha-ketoglutarate-dependent NADPH consumption. R172K mutant IDH2 showed significantly increased NADPH consumption (0.022 change in OD340) compared to wild-type IDH2 (0.0034) and vector control (0.0019).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C30-C32 provide quantitative data (n=7 with SD) demonstrating R172K mutant consumes significantly more NADPH than wild-type or vector control. Statistical analysis (C39-C40) confirms mutant vs. vector is significant (p=0.0023 corrected) while wild-type vs. vector is not (p>0.99), supporting the gain-of-function phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "2c3015fa-7ee3-4d23-8dab-be64a4401ac9",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "R172K mutant IDH2 produces elevated intracellular 2HG levels. Cells expressing R172K mutant IDH2 showed over 600-fold higher 2HG/glutamate ratios compared to wild-type IDH2 and vector control at both 24 and 48 hours post-transfection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C41 report >600-fold increase in 2HG levels in R172K mutant cells based on GC-MS analysis. Statistical tests (C44-C45) show highly significant differences (p<10^-8 at 48hr, p=0.0039 at 24hr corrected) between mutant and controls, with n=10 biological replicates providing robust support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "cad7a903-11f5-4cfb-a473-474eca97403d",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "AML patient samples with IDH1 or IDH2 mutations exhibit elevated 2HG levels compared to wild-type IDH samples. All wild-type IDH samples showed 2HG/glutamate ratios <1%, while all samples with IDH1 or IDH2 mutations showed ratios >1%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C46-C47 show clear separation between mutant and wild-type samples. However, statistical analysis reveals mixed results: IDH2 mutations (C55, p=0.0082 corrected) and combined IDH1/IDH2 (C56, p=0.00016 corrected) are significant, but IDH1 alone (C54, p=0.063 corrected) is not statistically significant after Bonferroni correction. The small sample size (n=4 per group) limits power for the IDH1 comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "36532158-6a2a-45f8-a987-9bc1b617498c",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Replication of isocitrate-dependent NADPH production assay shows directional consistency with original study but quantitative differences. The replication observed similar patterns (wild-type>mutant\u2248vector) but with lower absolute OD340 changes than the original study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C27-C29 compare replication to original data. While absolute values differ (replication: WT=0.49 vs original: WT=~1.3), the qualitative pattern is consistent. Meta-analysis (C59-C60) shows R172K mutant slope from original study falls within 95% CI of replication, but wild-type and vector do not, suggesting methodological differences affect magnitude but not direction of effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "d7e4fafd-ac72-4327-9808-35bbabcc59a9",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Replication of intracellular 2HG measurements shows directional consistency with original study. The replication observed >600-fold increase in R172K mutant cells compared to ~100-fold in the original study, with differences attributed to detection limits in control samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C42-C43 compare replication to original study. The higher fold-change in replication (>600\u00d7 vs ~100\u00d7) is explained by lower detection limits in controls rather than differences in mutant samples. Meta-analysis (C63-C64) confirms R172K mutant values from original study fall within 95% CI of replication, while controls do not, supporting the interpretation that detection sensitivity differs but biological effect is consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "ccc05702-5303-4bfd-91b7-0b010c39b755",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Meta-analysis of AML patient samples with IDH1 mutations shows heterogeneity between original and replication studies. While both studies show elevated 2HG in IDH1 mutant samples, effect sizes differ substantially (original: d=8.40 vs replication: d=2.23) and meta-analysis is not statistically significant (p=0.114).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C68 report meta-analysis results showing non-overlapping confidence intervals between studies and significant heterogeneity (Cochran's Q p=0.031). The replication shows lower 2HG/glutamate ratios in mutant samples (0.20 vs ~0.8 in original, C49) and better detection limits in wild-type samples (C48). This suggests technical differences in sample handling or measurement sensitivity may contribute to heterogeneity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "db62071e-141f-4882-af72-a1e83503077b",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Meta-analysis of AML patient samples with IDH2 mutations or combined IDH1/IDH2 mutations shows consistency between original and replication studies. Effect sizes overlap between studies and meta-analyses are highly significant (IDH2: p=1.12\u00d710^-6; IDH1/IDH2: p=5.73\u00d710^-9).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C73 report meta-analysis results showing overlapping confidence intervals between original and replication studies for both IDH2 and combined IDH1/IDH2 comparisons. The point estimates fall within each other's confidence intervals (C73), and meta-analyses show highly significant effects despite some quantitative differences in absolute 2HG levels (C49).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "fdd1eb67-ecb1-4c12-9624-9635e9db83a6",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Multiple factors may contribute to quantitative differences between original and replication studies, including methodological parameters, cell line drift, GC-MS settings, and biological variables affecting IDH metabolism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C74-C78 identify potential sources of variation supported by citations to relevant literature. C36 specifically addresses observed OD340 differences and cites appropriate methodological references. These factors provide plausible explanations for quantitative differences while maintaining qualitative consistency, though their specific contributions remain speculative without direct testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "ffb59d73-4e9d-4108-9419-ca267024a564",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Protocol modifications were necessary to achieve adequate signal-to-noise ratios in enzymatic assays. Protein concentrations were increased 50-fold (oxidative assay) and 10-fold (reductive assay), and substrate concentrations were increased 4-fold (isocitrate) and 2-fold (alpha-ketoglutarate).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C103 document substantial protocol deviations from the registered report with clear justification (inability to detect signal above noise, substrate saturation). These modifications are transparently reported and likely contribute to quantitative differences from the original study (C36), but the biological conclusions remain consistent. The need for such large adjustments raises questions about the original protocol specifications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "98431d4d-d710-4691-b9b6-b96e97116636",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Cell culture and molecular biology methods were performed with appropriate quality controls. HEK293T cells were authenticated by STR profiling, confirmed mycoplasma-free, and expression vectors were sequence-verified.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C84 describe standard cell culture conditions and quality control measures. STR profiling (C82) and mycoplasma testing (C81) confirm cell line identity and purity. Vector construction and verification (C83-C84) are appropriately documented. These quality controls support the validity of the experimental system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "8cffb7bf-2bf2-402a-b0db-871c6bf50a1f",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "AML patient samples were obtained with appropriate ethical approval and prescreened for IDH mutational status. Samples were processed by Ficoll separation and cryopreserved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C94 document appropriate ethical approval (IRB protocol CIC 9805, C93), sample source (Roswell Park Cancer Institute, C91), prescreening strategy (C92), and processing methods (C94). The prescreening approach differs from the original study but allows for adequate sample sizes in each genotype group, which is methodologically sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "94d062c7-e228-4e19-9550-e065a8f6fcf4",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Metabolite extraction and GC-MS analysis were performed using standard methods with appropriate metabolite identification. Data were deposited in a public repository (Metabolomics Workbench ST000548).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C98 describe metabolite extraction (rapid quenching at -80\u00b0C, C96), GC-MS analysis with authentic standards for identification (C97), and data deposition (C98). The methods are appropriate for metabolomics analysis and data sharing practices are exemplary. However, C107 notes a 1:4 dilution was added due to unspecified parameters in the original study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "0ffb2292-5b48-4ee6-ae6a-69ee11f2c526",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Statistical analyses were pre-registered and performed using appropriate software (R version 3.3.2). The pre-registration occurred before experimental work began.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C100 document use of appropriate statistical software and pre-registration of analysis plans before data collection. This represents best practices for reproducibility and reduces risk of p-hacking or selective reporting. The pre-registration is publicly accessible (https://osf.io/t873r/).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "8d8e1168-40bc-421f-991d-5f87752e875d",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Alternative analysis using extracted ion chromatograms (EIC) instead of total ion chromatograms (TIC) for AML patient samples yielded statistically significant results for all comparisons, including IDH1 mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 reports that EIC analysis found all effects statistically significant (IDH1: p=0.037, IDH2: p=0.0049, IDH1/IDH2: p=4.84\u00d710^-5, all corrected). This contrasts with TIC analysis where IDH1 alone was not significant (C57). The EIC method may provide better sensitivity for low-abundance metabolites, though the choice between TIC and EIC should be pre-specified to avoid analytical flexibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "8d821432-bb9f-47d6-9c63-d7f4b745453e",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Detection of low levels of 2HG in wild-type IDH samples is consistent with other published studies and may reflect normal metabolic errors. The utility of 2HG as a biomarker varies by cancer type and sample source.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 cite multiple studies supporting background 2HG detection in wild-type samples and discuss biomarker utility across different contexts. These claims appropriately contextualize the findings within the broader literature. However, C53 includes speculation about the blood-brain barrier that, while plausible and cited, represents interpretation rather than direct evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "517a1bc7-6630-40d2-80b1-ee4b0e255c69",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The introduction accurately summarizes prior work on IDH mutations, including the original Ward et al. 2010 findings, subsequent confirmatory studies, detection of 2HG in various patient samples, and ongoing clinical trials targeting mutant IDH.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C22 provide appropriate background context through citations to relevant literature. These claims accurately represent the state of knowledge regarding IDH mutations, 2HG production, biomarker development, and therapeutic targeting. The citations appear appropriate and the summary is consistent with the field's understanding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "ba080e02-2cd8-415f-ad18-732be18ad296",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "HEK293T cells endogenously express wild-type IDH2, making them an appropriate model system for studying effects of ectopic mutant IDH2 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C23 states established knowledge about HEK293T cells. This is a well-documented characteristic of this cell line and provides appropriate justification for the experimental design. The presence of endogenous wild-type IDH2 means the system tests mutant effects in the context of normal IDH2 expression.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "909460bc-66fd-4e45-9dea-aab89c105e5f",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Meta-analysis of alpha-ketoglutarate-dependent NADPH consumption shows partial consistency between original and replication studies. Vector control slopes overlap between studies, but R172K mutant and wild-type IDH2 slopes do not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61-C62 report that only vector control slopes from the original study fall within the 95% CI of the replication, while R172K mutant and wild-type slopes do not. This suggests quantitative differences in the assay despite qualitative consistency (both studies show mutant>wild-type\u2248vector). The substantial protocol modifications (C102-C103) likely contribute to these differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    },
+    {
+      "id": "de9dec54-087a-434c-ae45-2ee250e2ae4f",
+      "content_id": "b6b5ebb7-3fe6-4940-a32a-956bf565e0b5",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Multiple protocol deviations from the registered report were necessary and transparently documented, including vector substitution, protein extraction method, Western blot loading control, derivatization reagent clarification, and sample dilution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101, C104-C107 document various protocol deviations with justifications. Most are minor (vector substitution due to availability, C101; homogenization vs sonication, C104; loading control change due to overlap, C105; reagent clarification, C106) or necessary due to missing information (dilution factor, C107). Transparent reporting of deviations is appropriate, though the number of modifications highlights challenges in exact replication.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:47:02.954572Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "76494e03-d0c5-439f-89ab-ec43f4cd4e24",
+      "result_id": "66362e9f-cd0b-4cda-a0b2-112bed5985f8"
+    },
+    {
+      "claim_id": "4ffc3299-809a-46e9-bbb0-15ba31c9fb8d",
+      "result_id": "66362e9f-cd0b-4cda-a0b2-112bed5985f8"
+    },
+    {
+      "claim_id": "29b6e1d0-58f0-4dca-a8c6-3b7b9ffaf44c",
+      "result_id": "66362e9f-cd0b-4cda-a0b2-112bed5985f8"
+    },
+    {
+      "claim_id": "3b56e406-d6f6-4124-908b-983f2c796213",
+      "result_id": "66362e9f-cd0b-4cda-a0b2-112bed5985f8"
+    },
+    {
+      "claim_id": "00d8bc32-790d-47fb-8615-cbbb8f12084f",
+      "result_id": "66362e9f-cd0b-4cda-a0b2-112bed5985f8"
+    },
+    {
+      "claim_id": "9a49a8f2-8bf1-4ac2-b361-6585b44f748b",
+      "result_id": "66362e9f-cd0b-4cda-a0b2-112bed5985f8"
+    },
+    {
+      "claim_id": "ed35cd26-3a13-4a1c-a685-f02e7bc6ad48",
+      "result_id": "66362e9f-cd0b-4cda-a0b2-112bed5985f8"
+    },
+    {
+      "claim_id": "97999b35-e9e4-4b20-a84b-3b46b5e54a86",
+      "result_id": "44c72d42-d305-4f47-b977-7435e7c73d55"
+    },
+    {
+      "claim_id": "70f60120-67db-4d44-b41d-16681f52f3f9",
+      "result_id": "44c72d42-d305-4f47-b977-7435e7c73d55"
+    },
+    {
+      "claim_id": "b27dbaa2-413f-40cb-8f40-06a141617633",
+      "result_id": "44c72d42-d305-4f47-b977-7435e7c73d55"
+    },
+    {
+      "claim_id": "20807e8a-f1b4-47b8-baf0-6508810d2200",
+      "result_id": "44c72d42-d305-4f47-b977-7435e7c73d55"
+    },
+    {
+      "claim_id": "b9ef3deb-9f7e-4eaa-8ada-eceee2635fba",
+      "result_id": "44c72d42-d305-4f47-b977-7435e7c73d55"
+    },
+    {
+      "claim_id": "faec615f-93a5-468b-86c2-68e6d293c2ce",
+      "result_id": "44c72d42-d305-4f47-b977-7435e7c73d55"
+    },
+    {
+      "claim_id": "e6cc2bab-1f42-4f5e-9e75-8b7e0b5e6020",
+      "result_id": "2c3015fa-7ee3-4d23-8dab-be64a4401ac9"
+    },
+    {
+      "claim_id": "0c310f52-0ad3-4106-8255-a2c909df7f06",
+      "result_id": "2c3015fa-7ee3-4d23-8dab-be64a4401ac9"
+    },
+    {
+      "claim_id": "45ded681-27f9-471c-b8df-35b9736a6239",
+      "result_id": "2c3015fa-7ee3-4d23-8dab-be64a4401ac9"
+    },
+    {
+      "claim_id": "2eb5fd1b-4e09-45e9-83ca-e931a73c9645",
+      "result_id": "2c3015fa-7ee3-4d23-8dab-be64a4401ac9"
+    },
+    {
+      "claim_id": "e4bf35bf-c61f-4d89-8d18-6753fce955bc",
+      "result_id": "cad7a903-11f5-4cfb-a473-474eca97403d"
+    },
+    {
+      "claim_id": "533ae6e8-f8c7-4039-8417-faeacf92871c",
+      "result_id": "cad7a903-11f5-4cfb-a473-474eca97403d"
+    },
+    {
+      "claim_id": "fd0a49d2-c655-4f9d-87bc-b4be9c64e1a5",
+      "result_id": "cad7a903-11f5-4cfb-a473-474eca97403d"
+    },
+    {
+      "claim_id": "39d39e37-4414-4893-8cee-8957bec097ba",
+      "result_id": "cad7a903-11f5-4cfb-a473-474eca97403d"
+    },
+    {
+      "claim_id": "049f090d-b7e4-4bcf-89c1-fcbf6fa58928",
+      "result_id": "cad7a903-11f5-4cfb-a473-474eca97403d"
+    },
+    {
+      "claim_id": "c9065235-b1f0-4ead-b314-ae2a7a187509",
+      "result_id": "cad7a903-11f5-4cfb-a473-474eca97403d"
+    },
+    {
+      "claim_id": "9e8da55b-94ff-4c44-9096-da1f613b9bf0",
+      "result_id": "36532158-6a2a-45f8-a987-9bc1b617498c"
+    },
+    {
+      "claim_id": "cbe608e2-a700-42db-877f-b406c27a267e",
+      "result_id": "36532158-6a2a-45f8-a987-9bc1b617498c"
+    },
+    {
+      "claim_id": "d8082065-a6fd-4ea6-b29c-47542f5cf523",
+      "result_id": "36532158-6a2a-45f8-a987-9bc1b617498c"
+    },
+    {
+      "claim_id": "59734ce7-933e-4b7b-90d5-e695e9eb3b19",
+      "result_id": "36532158-6a2a-45f8-a987-9bc1b617498c"
+    },
+    {
+      "claim_id": "b0282b4f-1634-447d-9bea-5604b1b5bb72",
+      "result_id": "36532158-6a2a-45f8-a987-9bc1b617498c"
+    },
+    {
+      "claim_id": "7fbc0c80-80ec-4cfd-9aec-6ddae5686045",
+      "result_id": "36532158-6a2a-45f8-a987-9bc1b617498c"
+    },
+    {
+      "claim_id": "d12cd2fb-0dc1-4ae4-a40f-963fc906d99a",
+      "result_id": "d7e4fafd-ac72-4327-9808-35bbabcc59a9"
+    },
+    {
+      "claim_id": "f5b065a4-7786-4cfc-ada9-313c2b326c40",
+      "result_id": "d7e4fafd-ac72-4327-9808-35bbabcc59a9"
+    },
+    {
+      "claim_id": "87a0f421-a696-4023-b74c-1f585b115e82",
+      "result_id": "d7e4fafd-ac72-4327-9808-35bbabcc59a9"
+    },
+    {
+      "claim_id": "310e1e89-a962-4624-ae9c-cd7a28b47b56",
+      "result_id": "d7e4fafd-ac72-4327-9808-35bbabcc59a9"
+    },
+    {
+      "claim_id": "cb947e72-00be-4949-8f6d-fd7009700749",
+      "result_id": "d7e4fafd-ac72-4327-9808-35bbabcc59a9"
+    },
+    {
+      "claim_id": "5371a261-8cc6-4c6e-b830-e43ca3c18e4f",
+      "result_id": "ccc05702-5303-4bfd-91b7-0b010c39b755"
+    },
+    {
+      "claim_id": "5ab5219b-7478-46be-a1df-e0ea300c1a34",
+      "result_id": "ccc05702-5303-4bfd-91b7-0b010c39b755"
+    },
+    {
+      "claim_id": "ad61a2f4-5d9e-483d-97df-0b9520d16496",
+      "result_id": "ccc05702-5303-4bfd-91b7-0b010c39b755"
+    },
+    {
+      "claim_id": "e05fe4fc-70d6-40c1-9578-6a60753adf00",
+      "result_id": "ccc05702-5303-4bfd-91b7-0b010c39b755"
+    },
+    {
+      "claim_id": "0a697816-09a6-4f26-bf13-77e329dff535",
+      "result_id": "ccc05702-5303-4bfd-91b7-0b010c39b755"
+    },
+    {
+      "claim_id": "d447b4d2-5799-48ab-aa52-35037585c885",
+      "result_id": "ccc05702-5303-4bfd-91b7-0b010c39b755"
+    },
+    {
+      "claim_id": "c1721867-0394-4ace-b44d-b1fd2cc7d344",
+      "result_id": "ccc05702-5303-4bfd-91b7-0b010c39b755"
+    },
+    {
+      "claim_id": "7777cffc-298d-4c6b-9582-8f56479e6d54",
+      "result_id": "db62071e-141f-4882-af72-a1e83503077b"
+    },
+    {
+      "claim_id": "b760e883-a5cd-43fe-a97e-ddfad237b9e5",
+      "result_id": "db62071e-141f-4882-af72-a1e83503077b"
+    },
+    {
+      "claim_id": "28071e04-dce6-456b-8538-4134e5913bd1",
+      "result_id": "db62071e-141f-4882-af72-a1e83503077b"
+    },
+    {
+      "claim_id": "719cac21-d049-43f0-ac1f-d6972c2851d5",
+      "result_id": "db62071e-141f-4882-af72-a1e83503077b"
+    },
+    {
+      "claim_id": "50ea019a-f7a2-40c3-bbc9-e93b966b6b36",
+      "result_id": "db62071e-141f-4882-af72-a1e83503077b"
+    },
+    {
+      "claim_id": "2f0af04d-138f-4ab4-ba2b-962ec60b61aa",
+      "result_id": "fdd1eb67-ecb1-4c12-9624-9635e9db83a6"
+    },
+    {
+      "claim_id": "a7038cd2-2b4a-453b-b60f-96c21e3e80f8",
+      "result_id": "fdd1eb67-ecb1-4c12-9624-9635e9db83a6"
+    },
+    {
+      "claim_id": "67cc472b-bfb5-41a2-ae33-738274d04d2f",
+      "result_id": "fdd1eb67-ecb1-4c12-9624-9635e9db83a6"
+    },
+    {
+      "claim_id": "3b87b315-f246-45f0-8a4d-4bcb9475d33a",
+      "result_id": "fdd1eb67-ecb1-4c12-9624-9635e9db83a6"
+    },
+    {
+      "claim_id": "a9cfce17-6e4b-4fd0-a357-c5d349e7c5a8",
+      "result_id": "fdd1eb67-ecb1-4c12-9624-9635e9db83a6"
+    },
+    {
+      "claim_id": "8dc52fa5-f5f1-4942-a40b-68ff8ff1c339",
+      "result_id": "fdd1eb67-ecb1-4c12-9624-9635e9db83a6"
+    },
+    {
+      "claim_id": "a794d822-1ba3-475d-9d73-6606898a67ab",
+      "result_id": "ffb59d73-4e9d-4108-9419-ca267024a564"
+    },
+    {
+      "claim_id": "c5cd767b-1192-40f7-a9df-858cb37a4e86",
+      "result_id": "ffb59d73-4e9d-4108-9419-ca267024a564"
+    },
+    {
+      "claim_id": "0e47c293-79bb-428f-81c9-4750d12bae1b",
+      "result_id": "98431d4d-d710-4691-b9b6-b96e97116636"
+    },
+    {
+      "claim_id": "75a7b5bb-fd2b-4d5e-9d6c-f57bc8c8868c",
+      "result_id": "98431d4d-d710-4691-b9b6-b96e97116636"
+    },
+    {
+      "claim_id": "17107985-1d3b-4842-a3ba-cc94f1c7d3b5",
+      "result_id": "98431d4d-d710-4691-b9b6-b96e97116636"
+    },
+    {
+      "claim_id": "72e81138-34af-4127-b71f-7e3e63e31e5d",
+      "result_id": "98431d4d-d710-4691-b9b6-b96e97116636"
+    },
+    {
+      "claim_id": "b3aa26a0-0305-463a-acda-afe8e3df63ed",
+      "result_id": "98431d4d-d710-4691-b9b6-b96e97116636"
+    },
+    {
+      "claim_id": "9d3704a7-7d6a-47e0-a22e-6605e33de7af",
+      "result_id": "98431d4d-d710-4691-b9b6-b96e97116636"
+    },
+    {
+      "claim_id": "cd85244e-448b-417a-a0ed-2570c044e09e",
+      "result_id": "8cffb7bf-2bf2-402a-b0db-871c6bf50a1f"
+    },
+    {
+      "claim_id": "81062eaa-531e-463f-ab45-36c4f32010ec",
+      "result_id": "8cffb7bf-2bf2-402a-b0db-871c6bf50a1f"
+    },
+    {
+      "claim_id": "1dfd297b-dc84-4d57-bad0-1d643a279eb6",
+      "result_id": "8cffb7bf-2bf2-402a-b0db-871c6bf50a1f"
+    },
+    {
+      "claim_id": "1b4f8c9d-afdf-4304-8e64-0edd8a6018b1",
+      "result_id": "8cffb7bf-2bf2-402a-b0db-871c6bf50a1f"
+    },
+    {
+      "claim_id": "061746bd-d609-4d46-b9be-fb44d8ac1cb9",
+      "result_id": "94d062c7-e228-4e19-9550-e065a8f6fcf4"
+    },
+    {
+      "claim_id": "ed9f608c-4872-4f13-bfeb-50ca434cbb7b",
+      "result_id": "94d062c7-e228-4e19-9550-e065a8f6fcf4"
+    },
+    {
+      "claim_id": "491fe616-0671-43bd-8d26-5d21027cc36b",
+      "result_id": "94d062c7-e228-4e19-9550-e065a8f6fcf4"
+    },
+    {
+      "claim_id": "2bc77035-3a58-4c34-9fa5-4798e06e4518",
+      "result_id": "94d062c7-e228-4e19-9550-e065a8f6fcf4"
+    },
+    {
+      "claim_id": "ae1f99d6-1ca1-4b25-9c44-3507680409dd",
+      "result_id": "0ffb2292-5b48-4ee6-ae6a-69ee11f2c526"
+    },
+    {
+      "claim_id": "f45ceb25-a947-4a91-bab0-6e1a2dee45d8",
+      "result_id": "0ffb2292-5b48-4ee6-ae6a-69ee11f2c526"
+    },
+    {
+      "claim_id": "2bbd6a78-eb89-4a45-abe7-79947b34a433",
+      "result_id": "8d8e1168-40bc-421f-991d-5f87752e875d"
+    },
+    {
+      "claim_id": "dff8e177-36aa-4c38-9b0c-d1e46c3cc812",
+      "result_id": "8d821432-bb9f-47d6-9c63-d7f4b745453e"
+    },
+    {
+      "claim_id": "07e5014b-1fb2-4073-92c8-3f70d8e10d18",
+      "result_id": "8d821432-bb9f-47d6-9c63-d7f4b745453e"
+    },
+    {
+      "claim_id": "cf8fd0a2-d88b-49e6-8291-e47887e511b8",
+      "result_id": "8d821432-bb9f-47d6-9c63-d7f4b745453e"
+    },
+    {
+      "claim_id": "a3c573e3-13fb-4572-a059-1d25337b9237",
+      "result_id": "8d821432-bb9f-47d6-9c63-d7f4b745453e"
+    },
+    {
+      "claim_id": "b580defd-4036-4f82-8cda-793ec5952640",
+      "result_id": "517a1bc7-6630-40d2-80b1-ee4b0e255c69"
+    },
+    {
+      "claim_id": "65862811-6341-4d66-bc52-6679cc657cef",
+      "result_id": "517a1bc7-6630-40d2-80b1-ee4b0e255c69"
+    },
+    {
+      "claim_id": "93494bf9-f8d6-4b98-994c-978a1f17b8b9",
+      "result_id": "517a1bc7-6630-40d2-80b1-ee4b0e255c69"
+    },
+    {
+      "claim_id": "2ca0cea3-878c-422f-9d7a-1901232a2440",
+      "result_id": "517a1bc7-6630-40d2-80b1-ee4b0e255c69"
+    },
+    {
+      "claim_id": "b8ffcfc6-6be2-4f89-ae35-64f5c24728a0",
+      "result_id": "517a1bc7-6630-40d2-80b1-ee4b0e255c69"
+    },
+    {
+      "claim_id": "1d5ca342-d709-4df2-877f-bae5292d185e",
+      "result_id": "517a1bc7-6630-40d2-80b1-ee4b0e255c69"
+    },
+    {
+      "claim_id": "03c81a56-46b1-47b8-9d1e-bc2504a80743",
+      "result_id": "517a1bc7-6630-40d2-80b1-ee4b0e255c69"
+    },
+    {
+      "claim_id": "73c4230a-0219-4a6d-88e8-8c300566f6cb",
+      "result_id": "517a1bc7-6630-40d2-80b1-ee4b0e255c69"
+    },
+    {
+      "claim_id": "416870ce-d873-4e56-ac0c-3c5e1382e5f9",
+      "result_id": "517a1bc7-6630-40d2-80b1-ee4b0e255c69"
+    },
+    {
+      "claim_id": "1b716ad0-545f-421c-8091-c9fa9826d6d0",
+      "result_id": "517a1bc7-6630-40d2-80b1-ee4b0e255c69"
+    },
+    {
+      "claim_id": "1a9fbb04-6475-4722-b123-242b1294bfac",
+      "result_id": "517a1bc7-6630-40d2-80b1-ee4b0e255c69"
+    },
+    {
+      "claim_id": "a6c6fceb-bd79-4a32-9c37-6df857ea0f51",
+      "result_id": "517a1bc7-6630-40d2-80b1-ee4b0e255c69"
+    },
+    {
+      "claim_id": "f9b71a11-74e2-4534-aea2-3e8670c1dbf3",
+      "result_id": "517a1bc7-6630-40d2-80b1-ee4b0e255c69"
+    },
+    {
+      "claim_id": "9be51271-2ae9-4dfd-b841-b864077c604c",
+      "result_id": "517a1bc7-6630-40d2-80b1-ee4b0e255c69"
+    },
+    {
+      "claim_id": "af79bc8c-52b1-4510-8fca-66825798eb17",
+      "result_id": "ba080e02-2cd8-415f-ad18-732be18ad296"
+    },
+    {
+      "claim_id": "f24bcd10-f3b4-4400-9c04-5aba11815262",
+      "result_id": "909460bc-66fd-4e45-9dea-aab89c105e5f"
+    },
+    {
+      "claim_id": "47b355e5-5808-4546-920c-2e15689d6382",
+      "result_id": "909460bc-66fd-4e45-9dea-aab89c105e5f"
+    },
+    {
+      "claim_id": "e8eb3b53-3a84-4439-a525-4de502be9501",
+      "result_id": "de9dec54-087a-434c-ae45-2ee250e2ae4f"
+    },
+    {
+      "claim_id": "59519acf-2268-4ac2-abf6-e002f2594a89",
+      "result_id": "de9dec54-087a-434c-ae45-2ee250e2ae4f"
+    },
+    {
+      "claim_id": "7334a441-5075-45b1-9a35-9daab96a1191",
+      "result_id": "de9dec54-087a-434c-ae45-2ee250e2ae4f"
+    },
+    {
+      "claim_id": "e311319e-d7d2-4e15-831d-ca5fcbbf41b4",
+      "result_id": "de9dec54-087a-434c-ae45-2ee250e2ae4f"
+    },
+    {
+      "claim_id": "0bca60a7-1bc5-4fb7-ac9d-00936e250bf1",
+      "result_id": "de9dec54-087a-434c-ae45-2ee250e2ae4f"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,346 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "A genomic survey of 3318 bacterial genomes identified 467 with full cco operons, 78 with multiple full operons, and 14 with orphan ccoN genes. Pseudomonas species are overrepresented among genomes with orphan ccoN genes, with three species (P. mendocina, P. aeruginosa, and A. xylosoxidans) containing more than one orphan ccoN gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 present findings from a systematic genomic analysis using the EggNOG database. The methodology is clearly described, the data are quantitative and specific, and the results are presented with appropriate context (Figure 1C). The analysis appropriately identifies orphan genes by comparing ccoO and ccoN homolog counts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Deletion of cco operons produces distinct colony biofilm morphologies. The \u0394N1\u0394N2 mutant shows wild-type-like biofilm development despite liquid culture growth defects, while \u0394N4 displays altered wrinkle formation and \u0394N1\u0394N2\u0394N4 recapitulates the severe \u0394cco1cco2 phenotype. Complementation restores wild-type phenotypes, and the \u0394N1\u0394N4 double mutant shows intermediate phenotypes suggesting functional redundancy between CcoN1 and CcoN4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C78 describe a comprehensive set of colony morphology experiments with appropriate controls including complementation (C71) and systematic combinatorial deletions (C72-C73). The observation that \u0394N1\u0394N2 shows wild-type biofilm morphology despite liquid culture defects (C67-C68) is particularly important and well-controlled. Multiple biological replicates are indicated (>10 for most experiments). The conclusion of functional redundancy (C74) is appropriately supported by the intermediate phenotype data (C73).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "TTC reduction assays demonstrate that CcoN4 contributes to respiratory activity in PA14 biofilms. The \u0394N1\u0394N2\u0394N4 mutant shows severe defects in TTC reduction comparable to \u0394cco1cco2, while \u0394N1\u0394N2 alone does not recapitulate this phenotype. The \u0394N1\u0394N4 double mutant shows intermediate TTC reduction levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 present TTC reduction data with appropriate statistical analysis (Figure 2B, n=5, p<0.0001). The assay is a standard method for assessing respiratory activity. The pattern of results across mutants is internally consistent and supports the conclusion that CcoN4 contributes to respiratory activity. The intermediate phenotype of \u0394N1\u0394N4 (C82) provides additional support for functional interactions between CcoN subunits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The biofilm-specific role of CcoN4 is independent of its role in cyanide resistance. Deletion of hcnABC (cyanide biosynthesis genes) in various cco mutant backgrounds did not affect biofilm morphology or liquid culture growth. Genomic analysis found no clear correlation between hcnABC and ccoN4 homologs in Pseudomonas genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 address an important alternative explanation for CcoN4 function. The experimental approach is sound: testing whether deletion of cyanide biosynthesis genes affects the phenotypes observed. The negative results (C84) combined with the lack of genomic correlation (C86) provide strong evidence that the biofilm phenotypes are independent of cyanide resistance. This is important for establishing the novelty of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "CcoN4-containing Cco isoforms support respiration and redox balancing in biofilms and are utilized preferentially compared to CcoN1- and CcoN2-containing complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 represent integrative conclusions drawn from the colony morphology and TTC reduction data. The conclusion is well-supported by the observation that \u0394N1\u0394N2 shows wild-type biofilm development while \u0394N4 and \u0394N1\u0394N2\u0394N4 show defects. However, the claim of 'preferential utilization' (C88) is somewhat stronger than the data directly demonstrate - the data show that CcoN4 is important/required, but don't directly measure relative utilization rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Competition assays reveal that \u0394N4 and \u0394N1\u0394N2 show 2-fold fitness disadvantages after 3 days, while \u0394N1\u0394N2\u0394N4 shows a 16-fold disadvantage comparable to \u0394cco1cco2. Time-course experiments show that fitness defects for \u0394N1\u0394N2 appear after 1 day while \u0394N4-specific defects emerge after 2 days, suggesting developmental stage-specific contributions of different N subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C96 present competition assay data with appropriate controls (bidirectional labeling experiments in Figure 3 and Figure 3\u2014figure supplement 1) and biological replicates (n=3). The time-course data (C94-C95) provide important mechanistic insight into when different subunits become important. Statistical analysis is provided (p-values in Figure 3A). The conclusion about developmental stage-specificity (C96) is appropriately supported by the temporal data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Oxygen profiling and colony thickness measurements show that O2 declines similarly in wild-type and \u0394phz biofilms, but thickness diverges between 30-48 hours when colonies reach ~70 \u03bcm (where O2 becomes undetectable). \u0394phz colonies reach maximum thickness of ~80 \u03bcm while wild-type colonies grow to ~150 \u03bcm. This divergence point corresponds to when CcoN4 becomes important for fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C103 present oxygen profiling and thickness measurement data with biological triplicates. The measurements are technically sound using microelectrodes. The correlation between the thickness divergence point and CcoN4 fitness contribution (C103) is an important observation linking multiple datasets. However, C104 is appropriately labeled as a hypothesis rather than a demonstrated result. The data support the temporal correlation but don't directly prove the mechanistic link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Reporter strain analysis shows that cco1 and ccoN4 are expressed throughout the biofilm depth, while cco2 shows sharp induction starting at ~45 \u03bcm depth. In liquid culture, ccoN4Q4 induction occurs after cco1 and cco2. However, ccoN4Q4 is expressed in the aerobic zone of biofilms where cco2 is not expressed, suggesting an Anr-independent induction mechanism during multicellular growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 present transcriptional reporter data from both biofilm thin sections (Figure 4) and liquid cultures (Figure 4\u2014figure supplement 1) with biological replicates (n=4 for biofilms). The spatial resolution of the biofilm data is good, and the comparison between liquid culture and biofilm expression patterns (C108-C109) reveals an important difference. The conclusion about Anr-independent regulation (C110) is appropriately framed as a suggestion based on the spatial expression pattern. The data are internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Redox profiling shows that wild-type colonies exhibit decreasing redox potential with depth (indicating increased reduced/oxidized phenazine ratio), while \u0394phz colonies show unchanged redox potential. \u0394phz colonies supplemented with PMS show wild-type-like profiles, confirming phenazines are the primary determinant of measured redox potential. O2 decreases rapidly from the surface while the strongest redox potential decrease occurs after ~50 \u03bcm, suggesting differential utilization of O2 and phenazines by position, with O2 as the preferred electron acceptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C118 present redox microelectrode profiling data with appropriate controls (\u0394phz, PMS supplementation). The technical approach is sound, and the control experiments (C113) validate the interpretation that phenazines drive the redox signal. The spatial offset between O2 depletion and redox potential change (C115-C116) is an important observation. The conclusions about differential utilization (C117) and O2 preference (C118) are reasonable inferences from the data, though they could be stated more cautiously as the data are correlative rather than directly demonstrating preference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Redox profiling of cco mutants shows that \u0394cco1cco2 exhibits very little phenazine reduction, while \u0394N1\u0394N2 shows wild-type-like profiles. The \u0394N1\u0394N2\u0394N4 mutant recapitulates the \u0394cco1cco2 phenotype, and \u0394N1\u0394N4 shows intermediate defects. The \u0394cox \u0394cyo \u0394cio triple mutant shows wild-type-like profiles. Phenazine production levels are similar across strains, indicating that differences in redox profiles reflect reduction activity rather than production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C128 present systematic redox profiling across multiple mutants with appropriate controls. The observation that \u0394N1\u0394N2 shows wild-type phenazine reduction (C121) while having fitness defects is important for dissecting the roles of different subunits. The phenazine quantification control (C128, Figure 5\u2014figure supplement 1C) is critical for ruling out production differences. The data support redundancy among CcoN subunits (C124) and specifically implicate cbb3-type oxidases in phenazine reduction (C120, C127). Multiple biological replicates are indicated (n\u22655 for redox profiles).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "Mutants unable to reduce phenazines (\u0394cco1cco2, \u0394N1\u0394N2\u0394N4) produce biofilms significantly thinner than wild-type and comparable to \u0394phz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 test a specific hypothesis linking phenazine reduction to biofilm thickness. The data (Figure 5B bottom) show that mutants with defective phenazine reduction profiles also have thin biofilms, supporting the hypothesis. Statistical analysis is provided (n\u22654, p-values in Figure 5B). This result connects the redox profiling data to the morphological phenotypes observed earlier.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Nitrate supplementation experiments show that 10 mM nitrate inhibits wrinkling in wild-type, \u0394N4, and \u0394N1\u0394N4 for 4 days, but \u0394phz and \u0394N1\u0394N2\u0394N4 initiate wrinkling. At 40 mM nitrate, inhibition increases such that wild-type, \u0394phz, \u0394N4, and \u0394N1\u0394N4 remain smooth. These results suggest that O2 reduction, phenazine reduction, and nitrate reduction operate in synchrony to maintain redox homeostasis, and nitrate can compensate for defects in O2 and phenazine reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C137 present nitrate supplementation experiments with biological replicates (n\u22653). The dose-response (10 mM vs 40 mM) and systematic testing across mutants provide strong support for the conclusions. The interpretation that these three electron acceptor systems can compensate for each other (C136-C137) is well-supported by the data showing that nitrate can suppress phenotypes in mutants defective in O2 or phenazine reduction. This is an important mechanistic insight into redox homeostasis in biofilms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Lectin staining of biofilm thin sections shows that wild-type and \u0394N1\u0394N2 have similar patterns with a faint band at ~40 \u03bcm depth, \u0394N4 shows slightly higher intensity, while \u0394N1\u0394N2\u0394N4 and \u0394cco1cco2 show increased staining throughout with wider, more intense bands. These data suggest that deletion of Cco complexes leads to a more reduced cellular redox state inducing increased matrix production, and that CcoN4 contributes significantly to maintaining redox homeostasis under O2 limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C145 present lectin staining data (Figure 5C) with biological replicates (n=4). The lectin staining method is appropriate for detecting Pel polysaccharide matrix (C66 citation). The pattern of results is consistent with the redox profiling and morphology data. The interpretation linking matrix production to redox state (C144) is supported by prior work (C138-C139 citations) and the current observations. The conclusion about CcoN4's role in redox homeostasis (C145) is well-supported by the convergent evidence from multiple assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "C. elegans slow killing assays show that \u0394N1\u0394N2 kills with wild-type-like kinetics, while \u0394N1\u0394N2\u0394N4 and \u0394cco1cco2 show comparably impaired killing relative to wild-type PA14. This demonstrates that CcoN4 contributes to P. aeruginosa virulence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C152 present C. elegans pathogenicity data with appropriate controls (gacA::Tn negative control) and biological replicates (n\u22654-9, starting sample size 30-35 worms per replicate). Statistical analysis is provided (p-values in Figure 6). The pattern of results parallels the biofilm fitness data, with \u0394N1\u0394N2 showing wild-type-like behavior while \u0394N1\u0394N2\u0394N4 shows severe defects. This establishes the relevance of CcoN4 to pathogenicity and validates the biofilm model's relevance to infection (C11).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "While CcoN4-containing heterocomplexes form in planktonic cultures, they do not contribute significantly to growth under these conditions. Deleting ccoN4 in \u0394N1\u0394N2 has no effect on planktonic growth. The overlap in expression zones of cco1, cco2, and ccoN4Q4 in biofilms implies CcoN4 forms heterocomplexes spanning the colony depth. Expression of ccoN4Q4 in the aerobic zone of biofilms (where cco2 is not expressed) may be biofilm-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C160 synthesize observations from liquid culture growth assays (Figure 2C) and reporter strain analysis (Figure 4) to draw conclusions about biofilm-specific functions. The distinction between planktonic and biofilm conditions is well-supported by the data. The inference about heterocomplex formation (C158) is reasonable based on the overlapping expression patterns, though it's indirect evidence. The suggestion of biofilm-specific regulation (C160) is appropriately cautious given that it's based on comparing spatial patterns in biofilms to temporal patterns in liquid culture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "\u0394N4 displays redox stress morphology and fitness disadvantages but no phenazine reduction defect, suggesting its phenotypes are due to its role in O2 reduction. Similarly, \u0394N1\u0394N2 shows reduced fitness with wild-type phenazine reduction, implying CcoN1 and/or CcoN2 contribute to O2 reduction in biofilms. These observations suggest cbb3-type oxidases have roles in phenazine reduction in addition to O2 reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C165 integrate data from multiple assays (morphology, fitness, redox profiling) to dissect the roles of different CcoN subunits. The logic is sound: mutants with fitness defects but normal phenazine reduction are inferred to have O2 reduction defects. The conclusion about dual roles (C165) is well-supported by the observation that some mutants (\u0394N1\u0394N2\u0394N4, \u0394cco1cco2) show defects in both O2-dependent fitness and phenazine reduction. This represents an important conceptual advance in understanding cbb3-type oxidase function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "The observation that cbb3-type oxidases containing CcoN1 or CcoN4 are required for phenazine reduction in hypoxic biofilm subzones implicates the electron transport chain in phenazine utilization. This suggests that enzyme complexes traditionally considered specific to O2 reduction may contribute to anaerobic survival in biofilms. Different mechanisms of phenazine reduction may be relevant at different biofilm depths or depending on electron donor availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C172 place the findings in the context of prior work on P. aeruginosa metabolism under anoxic conditions. The integration with previous studies (C166-C168 citations) is appropriate. The conclusion that cbb3-type oxidases contribute to phenazine reduction (C169) is directly supported by the redox profiling data. The speculation about indirect effects through complex stability (C170) and depth-dependent mechanisms (C171) are appropriately framed as possibilities. The broader conclusion about anaerobic survival (C172) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "In C. elegans slow killing assays, \u0394cco1cco2 shows a more severe phenotype than \u0394N1\u0394N2, and deleting ccoN4 in \u0394N1\u0394N2 produces a \u0394cco1cco2-like phenotype. This suggests that an orphan subunit (specifically CcoN4) can substitute for CcoN1 and CcoN2 in this infection model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C176 analyze the C. elegans data to draw conclusions about subunit substitution. The pattern of results (\u0394N1\u0394N2 less severe than \u0394cco1cco2, but \u0394N1\u0394N2\u0394N4 similar to \u0394cco1cco2) logically supports the conclusion that CcoN4 can compensate for loss of CcoN1 and CcoN2. This parallels the biofilm observations and strengthens the overall conclusions about CcoN4 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "CcoN4-containing isoforms could contribute to O2 reduction in oxic host microenvironments and facilitate phenazine reduction in hypoxic zones, both contributing to bacterial persistence. The contributions of cbb3-type oxidases to pathogenicity suggest that compounds interfering with Cco function could be effective therapies, with the advantage of bacterial specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C177-C181 are appropriately framed as speculation about potential therapeutic applications. While the data demonstrate that cbb3-type oxidases contribute to virulence (C152), the leap to therapeutic targeting (C180-C181) is speculative and would require extensive additional work including drug development, specificity testing, and efficacy studies. The bacterial specificity argument (C181) is reasonable but untested. These are appropriate discussion points but not supported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "The discovery that orphan cbb3-type oxidase subunit CcoN4 contributes to biofilm growth expands understanding of P. aeruginosa's respiratory flexibility. The respiratory chain activity is influenced by substitution of orphan catalytic subunits for native ones. CcoN4-containing isoforms promote phenazine reduction and may influence aerobic respiration in biofilms. This fine control could be advantageous for species with orphan subunits during growth in environments with varying electron acceptor availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C186 represent the main conclusions of the study. The discovery of CcoN4's biofilm-specific role (C182) is well-supported by the comprehensive data. The conclusion about respiratory chain modularity (C183) is supported by the genetic and phenotypic data. The statement about phenazine reduction (C184) is directly supported, while the speculation about aerobic respiration (C185) is appropriately cautious. The broader evolutionary/ecological speculation (C186) is reasonable given the genomic survey showing the rarity of orphan subunits. These conclusions appropriately synthesize the major findings.",
+    "result_type": "MAJOR"
+  }
+]

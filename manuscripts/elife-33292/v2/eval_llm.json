@@ -1,0 +1,365 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Removal of all stop codons from unc-54::gfp in C. elegans results in profound loss of both mRNA (~6-fold) and protein (>100-fold), demonstrating that C. elegans has functional nonstop mRNA decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 provide converging evidence from multiple levels (phenotype, RNA-seq, immunoblot) with appropriate controls including an Unc mutant (e1301) to rule out secondary effects. The quantitative measurements are consistent and the conclusion is well-supported by the data presented in Figures 1B-D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "A T2A peptide inserted between unc-54::gfp and the nonstop region partially rescues protein expression (50-100-fold down vs >100-fold down) without substantially affecting RNA levels, creating a sensitized reporter for genetic screens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 demonstrate that the T2A peptide separates protein-level from RNA-level repression, supported by RNA-seq (Figure 1E) and immunoblot data (Figure 1F). The differential effect on RNA vs protein is clearly documented and provides the rationale for the subsequent genetic screen.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "A forward genetic screen of ~55,000 mutagenized genomes identified skih-2 and ttc-37 as required for nonstop decay in C. elegans, with these genes being functional homologs of yeast ski2 and ski3 based on sequence homology and complementation analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C37 describe a well-executed genetic screen with appropriate mapping (Figure 2\u2014figure supplement 1), DNA sequencing validation, and CRISPR/Cas9 complementation (C33). The sequence homology (C34-C35) and functional data converge to support the identification of the SKI complex in C. elegans. Multiple independent alleles strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "C. elegans r74.6 (pelo-1) is identified as the functional ortholog of dom34/pelota based on sequence homology and its effect on nonstop reporter expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 establish pelo-1 identity through sequence homology (Figure 2\u2014figure supplement 3) and functional data. While C40 is implicit, the text indicates three lines of evidence support this conclusion. The identification is consistent with known pelota function in other organisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Loss of skih-2 increases nonstop reporter RNA levels 7.12\u00b10.18-fold, loss of pelo-1 increases levels 3.81\u00b10.35-fold, and the double mutant shows 19.4\u00b12.2-fold increase, indicating partially independent mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 present quantitative RNA-seq data with standard deviations from biological replicates (Figure 3B). The greater-than-additive effect in the double mutant (C43) is appropriately noted as suggesting SKI-independent pelo-1 activity. Statistical rigor is adequate with replicates reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Ribosome profiling reveals pelo-1-dependent accumulation of 15-18nt footprints (representing stalled ribosomes with partial A-sites) on the nonstop reporter, with phased peaks at ~24-30nt intervals consistent with recursive nonstop decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C51 describe ribosome profiling data (Figures 3D-H) showing specific accumulation of short footprints in pelo-1 mutants. The size specificity (15-18nt but not 19-22nt, C47), 3' enrichment (C49), and periodicity analysis (C50) all support the recursive model. Comparison with yeast data (C51) strengthens evolutionary conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "723 endogenous mRNAs accumulate 15-18nt ribosome footprints in skih-2/pelo-1 mutants (p<2.73e-6), including the conserved nonstop target xbp-1, which shows pelo-1-dependent accumulation at tRNA endonuclease cleavage sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 identify endogenous targets using DESeq with appropriate statistical thresholds (C52). The xbp-1 example (C53-C58) provides strong validation through conservation with yeast hac1 and precise mapping to known cleavage sites (Figure 4B-C). The pelo-1 dependence (C57) is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Genome-wide analysis reveals pelo-1-dependent accumulation of 15-18nt footprints at stop codons (~2.5-fold in pelo-1, ~5-fold in pelo-1/skih-2 double mutants), with endogenous SKI/PELO targets showing >13-fold enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 describe metagene analysis (Figure 5A) showing stop codon-specific accumulation. The quantitative fold-changes (C63-C64) are clearly stated and the positional specificity (14nt upstream, C62) is consistent with ribosome structure. The differential enrichment at endogenous targets strengthens the biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Stop codons in pelo-1 mutants show codon-specific truncation patterns (UAG/UAA after 2nd/3rd base, UGA after 2nd base), with truncations creating inefficient eRF1 substrates that are instead recognized by PELO-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 describe detailed metacodon analysis (Figure 5B) showing stop codon-specific truncation patterns not seen in sense codons (C68). The interpretation linking truncation to eRF1 inefficiency (C69) and PELO-1 substrate specificity (C70-C71) is well-reasoned and supported by prior structural/biochemical studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Endogenous SKI/PELO targets include known NMD substrates, and introduction of a premature stop codon (unc-54(e1092)) into skih-2/pelo-1 mutants causes accumulation of 15-18nt footprints at the premature stop with phased upstream peaks and bimodal RNA distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C79 connect endogenous targets to NMD through literature comparison (C72) and direct testing with e1092 (C74-C79). The Ribo-seq data (Figure 6A-B) shows clear accumulation at the premature stop with characteristic phasing. The bimodal RNA distribution (C78) provides strong evidence for mRNA cleavage and stabilization of fragments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Loss of the NMD factor smg-1 eliminates accumulation of 15-18nt footprints at premature stop codons and endogenous SKI/PELO targets, demonstrating that NMD activity is required to generate nonstop decay substrates at stop codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C89 demonstrate NMD-dependence through smg-1 mutant analysis (Figure 6A-F). The loss of short footprints specifically at stop codons (C85-C86) but not at other nonstop features like xbp-1 cleavage sites (C89) provides strong specificity. The correlation with published RNA-seq data (C88) adds independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Loss of smg-1 partially rescues the fertility defects of skih-2/pelo-1 double mutants, consistent with a model where NMD generates stalled ribosomes that cause toxicity when nonstop factors are absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 describe genetic interaction data (Figure 6H) showing phenotypic rescue. The brood size analysis appears appropriately conducted with adequate sample sizes. The interpretation (C91-C92) logically follows from the molecular data showing NMD-dependent generation of nonstop substrates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The coupling of NMD to nonstop decay in C. elegans is demonstrated for engineered premature stop codons, endogenous NMD targets, and depends on the NMD factor SMG-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 summarize the main conclusion integrating multiple lines of evidence. The three-part demonstration (engineered, endogenous, SMG-1-dependent) provides strong support for the coupling model. This represents a synthesis of the preceding results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "C. elegans provides a tractable metazoan system for studying nonstop decay, with the isolation of skih-2 and ttc-37 providing strong evidence for a conserved SKI complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 represent methodological conclusions supported by the successful genetic and genomic analyses throughout the manuscript. The ability to generate viable mutants in C. elegans (unlike mammals/flies, C16) is a key advantage demonstrated by the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "The skih-2(cc4142) missense mutation affects a conserved glycine at the Ski2p-ribosome interface, providing functional validation of structural studies showing SKI complex binding to the 40S mRNA entry tunnel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 connect genetic data to structural studies (Figure 2\u2014figure supplement 2). The identification of a functionally important residue at a structurally defined interface provides strong validation of both the genetic screen and the structural model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors propose a model where nonstop decay suppresses prematurely-terminated mRNAs after NMD commitment, reconciling previous models of pathway separation with recent observations of functional coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 present a conceptual model integrating the current findings with prior literature. The model is well-supported by the experimental data showing NMD-dependent generation of nonstop substrates. Claims C104-C105 represent logical implications rather than direct experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "The authors failed to detect NMD-nonstop coupling in S. cerevisiae through reanalysis of published data, potentially due to fundamental differences in NMD machinery between yeast and metazoans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 describe negative results from S. cerevisiae analysis (Figure 4\u2014figure supplement 1) and note mechanistic differences (C107). The negative result is appropriately reported and the proposed explanation (different NMD machinery) is reasonable, though speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "A major function of C. elegans nonstop pathway is to clear NMD intermediates, as evidenced by the large fraction of SKI/PELO targets derived from nonsense mRNAs and the genetic suppression data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 represent a major conclusion integrating the endogenous target analysis (showing overlap with NMD substrates) and genetic interaction data (smg-1 suppression of skih-2/pelo-1 phenotypes). The conclusion is well-supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The coupling of NMD to nonstop decay may solve the paradox of NMD requiring translation (thus producing truncated protein) by enabling nonstop protein decay to degrade the initial translation products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C113 present speculative implications of the NMD-nonstop coupling model. While C112 states established knowledge, C110-C111 and C113 are speculative proposals about phenotypic origins and protein degradation that lack direct experimental support in this manuscript. These represent reasonable hypotheses for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background claims establishing the known features of NMD and nonstop decay pathways, including their molecular components, mechanistic differences between organisms, and disease relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 represent background knowledge supported by appropriate citations to prior literature. These establish the context for the current work and are generally well-accepted in the field. C17-C18 note previous unsuccessful efforts to identify nonstop factors in C. elegans, motivating the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The authors present a model where NMD funnels into nonstop decay in C. elegans, with SKI-exosome decay and PELO-1-based ribosome removal as key steps, and premature stop codons eliciting nucleolytic cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 represent the main conclusions of the manuscript, supported by the extensive experimental data described in other result groups. These are appropriately stated as a model supported by data rather than definitive proof of mechanism. The evidence from genetic, RNA-seq, and ribosome profiling experiments converges to support this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C12",
+      "C26",
+      "C39",
+      "C54",
+      "C55",
+      "C69",
+      "C70",
+      "C80",
+      "C114"
+    ],
+    "result": "Citations to prior literature establishing specific facts about nonstop decay in Drosophila, T2A peptide function, pelota effects on nonstop mRNA levels, xbp-1/hac1 splicing, eRF1 structure, pelota substrate specificity, smg-1 function, and disease relevance of nonsense mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C26, C39, C54, C55, C69, C70, C80, and C114 represent specific factual statements supported by citations to prior literature. These are appropriately used to support interpretations and provide context. The citations appear accurate based on the claims made.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2100 @@
+{
+  "submission": {
+    "id": "b5a6047e-011b-46ba-a5b6-529a8e18cb55",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:26:11.848230Z",
+    "updated_at": "2025-12-02T00:26:11.848230Z"
+  },
+  "content": [
+    {
+      "id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "submission_id": "b5a6047e-011b-46ba-a5b6-529a8e18cb55",
+      "content_type": "manuscript",
+      "content_text": "# Synthetic hormone-responsive transcription factors can monitor and re-program plant development\n\n## Authors\n\n- Arjun Khakhar<sup>1</sup> ([ORCID: 0000-0002-4676-6533](https://orcid.org/0000-0002-4676-6533))\n- Alexander R Leydon<sup>2</sup>\n- Andrew C Lemmex<sup>2</sup>\n- Eric Klavins<sup>1</sup> ([ORCID: 0000-0002-3805-5117](https://orcid.org/0000-0002-3805-5117)) \u2020\n- Jennifer L Nemhauser<sup>2</sup> ([ORCID: 0000-0002-8909-735X](https://orcid.org/0000-0002-8909-735X)) \u2020\n\n### Affiliations\n\n1. Department of Electrical Engineering University of Washington Seattle United States\n2. Department of Biology University of Washington Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDevelopmental programs sculpt plant morphology to meet environmental challenges, and these same programs have been manipulated to increase agricultural productivity (Doebley et al., 1997; Khush, 2001). Hormones coordinate these programs, creating chemical circuitry (Vanstraelen and Benkov\u00e1, 2012) that has been represented in mathematical models (Refahi et al., 2016; Prusinkiewicz et al., 2009); however, model-guided engineering of plant morphology has been limited by a lack of tools (Parry et al., 2009; Voytas and Gao, 2014). Here, we introduce a novel set of synthetic and modular hormone activated Cas9-based repressors (HACRs) in Arabidopsis thaliana that respond to three hormones: auxin, gibberellins and jasmonates. We demonstrate that HACRs are sensitive to both exogenous hormone treatments and local differences in endogenous hormone levels associated with development. We further show that this capability can be leveraged to reprogram development in an agriculturally relevant manner by changing how the hormonal circuitry regulates target genes. By deploying a HACR to re-parameterize the auxin-induced expression of the auxin transporter PIN-FORMED1 (PIN1), we decreased shoot branching and phyllotactic noise, as predicted by existing models (Refahi et al., 2016; Prusinkiewicz et al., 2009).\n\n## Introduction\n\nThe body plans of plants are inherently plastic, making them amenable to optimization for a wide range of natural or artificial environments. Extrinsic and intrinsic cues are integrated by developmental programs to maximize the fitness of wild plants (Vanstraelen and Benkov\u00e1, 2012). Domestication of crops frequently relies on altering such programs to create more productive morphologies for agriculture, such as the dramatic reduction in bushiness of maize (Doebley et al., 1997) or the dwarfing of cereals that drove the green revolution (Khush, 2001).\n\nDevelopmental programs are coordinated in large part by a set of hormones (Vanstraelen and Benkov\u00e1, 2012). Accumulation of a given hormone by de novo synthesis or transport influences the expression or activity of developmental master controller genes, analogous to wires in a circuit. Auxin, perhaps the best-studied hormone, controls many developmental programs that drive agriculturally relevant traits (Weijers and Wagner, 20152016). Many mathematical models connecting auxin signaling and transport at the molecular level to specific developmental phenotypes at the whole plant level have been developed (Refahi et al., 2016; Prusinkiewicz et al., 2009; Smith et al., 2006). These models highlight the importance of subtle parameters, like the strength of specific feedback loops in hormone signaling networks, in determining plant morphology.\n\nWhile the ability of hormones to trigger and tune developmental programs makes altering hormonal signaling an attractive target for re-engineering the plant form, there are significant hurdles to overcome in such approaches. Native hormone signaling pathways are comprised of co-expressed and redundant components, embedded in highly reticulate cross-regulatory relationships with other signaling pathways, and have several layers of feedback (Weijers and Wagner, 20152016). For example, the auxin signaling pathway is comprised of three families of proteins, ARFs, AUX/IAAs, and TIR1/AFBs, all of which have multiple members with redundant regulatory roles and are cross regulated by a plethora of other signals (Koltai, 2015; Naseem et al., 2015).\n\nThus, there is a need for tools that can predictably alter how a specific hormone regulates a gene of interest to facilitate re-wiring plant development (Brophy et al., 2017). To date, such efforts have been largely limited to reducing or increasing expression of components of the native hormone signaling machinery (Voytas and Gao, 2014), an approach ill-suited for tuning the strength of connections within a network and easily confounded by redundancy and buffering within a network. In trying to circumvent redundancy, researchers are often forced to construct high order mutants of the multiple genes underlying the function of a single network hub. This approach reduces the precision of experimental or engineering interventions, as these genes are frequently only partially redundant with one another, and, thus this approach introduces more off-target effects. Chimeric promoters with altered hormonal regulation of a gene of interest have been used with some success (Ulmasov, 1997; Rushton et al., 2002). However, the paucity of detailed mechanistic maps connecting promoter architecture and chromatin state, and the high heterogeneity in these factors between genes, means that promoter design remains a bespoke approach with an associated high design and development cost for each network of interest. Additionally, these methods often require adding an extra copy of the gene of interest in a novel chromatin context, making it difficult to make definitive mechanistic conclusions. These challenges have made it difficult to study the significance of hormone regulation on specific genes, particularly in regard to the impact of transcriptional feedback loops on differentiation and morphogenesis. For all of these reasons, the potential predictive power of mathematical models has not been fully leveraged in the engineering of morphologies of agronomic interest. To facilitate more sophisticated interventions in plant developmental programs, we designed a set of synthetic and modular hormone-activated Cas9-based repressors (HACRs, pronounced \u2018hackers\u2019).\n\n## Results and discussion\n\nWe previously validated the design of similar synthetic auxin-sensitive transcription factors in Saccharomyces cerevisiae (Khakhar et al., 2016). Guided by this work, we fused the deactivated Cas9 (dCas9) protein from Streptococcus pyogenes (Gilbert et al., 2013) to a highly sensitive auxin-induced degron (Moss et al., 2015) and the first 300 amino acids of the TOPLESS repressor (TPL) (Pierre-Jerome et al., 2014) (Figure 1A). The dCas9 associates with a guide RNA (gRNA) that targets the HACR to a promoter with sequence complementarity where it can repress transcription. Upon auxin accumulation, the degron sequence targets the HACR for ubiquitination and subsequent proteasomal degradation. Thus, in parallel to the natural auxin response, auxin triggers relief of repression on HACR target genes. Transgenic plants were generated with HACRs and a gRNA targeting a constitutively expressed Venus-Luciferase reporter, and, as expected, auxin treatment increased overall fluorescence (Figure 1B,C). A time-course using luciferase to quantify de-repression of the reporter supported these results with a significant spike in reporter signal (p<0.001, n\u00a0=\u00a010) peaking approximately 80 min post auxin exposure (Figure 1D,E). A HACR with a stabilized degron (Moss et al., 2015) showed significantly lower reporter signal upon auxin treatment (p=0.01, n\u00a0=\u00a010) (Figure 1F).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34702/elife-34702-fig1-v2.jpg)\n\n**Figure 1.:** (A) A general schematic of the constructs transformed into Arabidopsis thaliana to test HACR hormone response. (B,C) Confocal microscopy images of root tips from plant lines with an auxin HACR regulating a Venus reporter 24 hr after treatment with (B) control or (C) 5 \u00b5M auxin. (D) An example of a luciferase based time course assay testing whole seedlings of an auxin HACR line treated with auxin (solid blue line) and a control (dashed blue line). The timepoint of auxin induction is highlighted with an orange bar. The time point of maximum auxin response is highlighted by the grey bar. (E) The difference between auxin and control induction at the time of maximum auxin response for the tested seedlings (n\u00a0=\u00a010) is summarized in the box plot. Every seedling is represented as a different colored dot. (F) A HACR variant line with a stabilized auxin degron was also assayed (D, solid and dashed grey lines) and the response to auxin of these seedlings compared to seedlings of the line with a functional auxin degron at the time of maximum auxin response are summarized in box plot in F. (G) A schematic of how the hormone specificity of HACRs were altered by swapping the hormone degron. (H,I,J) These box plots summarize the response of transgenic seedlings carrying these constructs (n\u00a0=\u00a010) to treatment with either control or the appropriate hormone. The degron used in the HACR is specified in the top left corner of the plot. Every seedling is represented as a different colored dot. All p-values reported were calculated using a one-way ANOVA.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34702/elife-34702-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) A schematic of how the hormone specificity of HACRs were altered by replacing the hormone degron with the jasmonate responsive degron from JAZ9 (Katsir et al., 2008) or the gibberellin responsive RGA1 or GAI proteins (Murase et al., 2008). (B,C,D) These box plots summarize the response of T2 transgenic seedlings of the indicated genotype (n\u00a0=\u00a010) to treatment with either control or the appropriate hormone. The degron used in the HACR is specified in the top left corner of every column of plots. Every seedling is represented as a different colored dot. Three different lines representing three different insertion events of the HACR variant are shown in each column.\n\nThe modular nature of HACRs should allow substitution of the degron with any sequence that has a specific degradation cue. We tested this hypothesis by building HACR variants with degrons sensitive to two other plant hormones: jasmonates (JAs) (Katsir et al., 2008) and gibberellins (GAs) (Murase et al., 2008). Treatment of transgenic plants with exogenous hormones matched to the expressed variants significantly increased reporter signal as compared to control treatments (Figure 1H,I,J, Figure 1\u2014figure supplement 1).\n\nTo rewire the connections between the hormone circuitry and developmental master controllers, HACRs must be able to respond to local differences in endogenous hormone levels. To visualize subtle differences in HACR sensitivity at the cellular level, we built a ratiometric auxin HACR by combining our previous design with a second reporter (tdTomato) driven by the same UBQ1 promoter driving the Venus reporter, with the only difference being that its gRNA target site was mutated (Figure 2A). An estimation of relative auxin levels was then calculated by normalizing the Venus reporter signal in each cell to that of the tdTomato signal in the same cell, minimizing any effect of differential expression of the UBQ1 promoter in different cell types. Using these lines, we visualized tissues at different developmental stages where auxin distributions had been previously described using auxin reporters like DII-VENUS or R2D2 (Liao et al., 2015). Auxin accumulation assayed by the HACR largely matched previous reports, such as the reverse fountain pattern of reporter signal in the root tip (Band et al., 2014) (Figure 2B) and higher signal in the vasculature as compared to the epidermis of the elongation zone (Band et al., 2014) (Figure 2C). We also observed high reporter signal in emerging lateral root primordia consistent with the auxin accumulation that triggers this developmental event (Dubrovsky et al., 2008) (Figure 2D,E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34702/elife-34702-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of the genetic circuit used to build ratiometric lines of auxin responsive HACRs. In addition to an auxin HACR regulating a nuclear localized Venus-luciferase reporter the lines also have a nuclear localized tdTomato reporter being driven by a version of the UBQ1 promoter with the gRNA target site mutated. (B\u2013E) Confocal microscopy images of roots of seedlings from lines described in A. Reporter signal in images is the background subtracted Venus signal normalized by the background subtracted tdTomato signal. Warmer colors correspond to higher normalized reporter signal. (B) The stereotypical reverse fountain pattern of auxin distribution is observed in the root tip. (C) Higher reporter signal is observed in the vasculature compared to the epidermis of the elongation zone of the root, consistent with auxin being trafficked along the vasculature. The dashed white boxes highlight high reporter signal in (D) the founder cells of lateral roots and in (E) a developing lateral root primordium. (F\u2013J) Confocal microscopy images visualizing reporter signal of a non-ratiometric auxin HACR regulated reporter (F) in the ovule 48 hr post pollination, (G) in the two-cells embryo, (H) in the globular embryo, (I) in the heart stage embryo and (J) in the early torpedo stage embryo. Warmer colors correspond to higher reporter signal. (K\u2013M) Confocal microscopy images visualizing reporter signal of a GA HACR regulated reporter (K) in the ovule 48 hr post pollination, (L) reporter signal merged with red auto-fluorescence to highlight the endosperm region and (M) an unregulated tdTomato reporter, with the endosperm highlighted with a dashed white line, for comparison. (N\u2013Q) Visualization of JA HACR regulated reporter expression in leaves in response to mechanical damage using a luciferase-based assay. Images of leaves overlaid with the luciferase signal before (N) and after damage (O) are shown to the left of a representative plot of the normalized reporter signal over time (P). (Q) Box plot summarizing the maximum fold change at 70 min for control and damaged leaves. Points of the same color represent leaves from the same plant.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34702/elife-34702-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013D) These schematics depict the HACR circuits in the plant lines whose ovules have been imaged using confocal microscopy directly below them. (E\u2013L) Confocal microscopy images of ovules from these reporter lines 48 hr post pollination visualizing either the tdTomato (in the case of the unregulated reporter) reporter signal or the Venus (in the case of the HACR lines) reporter signal. We observe ubiquitous reporter signal in the unregulated reporter (E,F) confirming that the UBQ1 promoter does not have differential expression across the ovule that could confound the observations from the HACR reporters. The auxin HACR reporter signal is present in the developing embryo, as reported previously. The JA HACR reporter signal is potentially localized to specific cell files (inner- and outer-layers) in the integument of the ovule (I,J). The GA HACR reporter signal is specifically localized to the endosperm, as we would expect based on the expression of GA biosynthesis genes (K,L).\n\nTo further explore the capacity of HACRs to respond to differences in endogenous hormone levels, we visualized the activity of auxin, GA and JA HACRs targeting a Venus reporter. Auxin accumulates in the apical domain of the early embryo and eventually resolves in later stages to the tips of the developing cotyledons, vasculature, and future root apical meristem (Liao et al., 2015)\u2013 the same patterns that were observed in plants expressing an auxin HACR (Figure 2F\u2013J). In plants expressing a GA HACR, we observed a strong reporter signal in the early endosperm, consistent with the expression of GA biosynthesis enzymes (Hu et al., 2008) (Figure 2K\u2013M, Figure 2\u2014figure supplement 1). There are few reports of developmental regulation of JA distribution; however, we did detect accumulation of reporter signal in the developing ovule of plants expressing a JA HACR (Figure 2\u2014figure supplement 1). Specifically, reporter signal appeared to be localized to the inner- and outermost layers of the integuments that surround the developing seed. We also observed that the JA HACR reporter was strongly induced in leaves subjected to mechanical damage (Figure 2N\u2013Q), a condition known to induce high levels of JA (Katsir et al., 2008).\n\nBeyond their application as sensors of endogenous hormone distributions, HACRs should also be capable of reprogramming how such signals are translated into plant morphology. To test this, we turned to shoot architecture, an agronomically important trait with a well-established connection to auxin. Fewer side-branches allow for higher density planting (Khush, 2001) and more regular arrangement of lateral organs (phyllotaxy) facilitates efficient mechanized harvest (Burks et al., 2005). The molecular mechanisms that control branching and phyllotaxy are well studied and have been mathematically modeled (Refahi et al., 2016; Prusinkiewicz et al., 2009). These models predict that a key parameter controlling both these processes is the strength with which auxin promotes its own polar transport (Bennett et al., 2014), which we will refer to as feedback strength. One molecular mechanism that contributes to this feedback is the auxin-induced increase in expression of the auxin transporter PIN-FORMED1 (PIN1) (Vieten et al., 2005). Thus far, it has been impossible to tune the strength of auxin-mediated transcriptional feedback on PIN1, and thus impossible to fully test its role in regulating shoot architecture or its potential for engineering this trait.\n\nTo test whether we could rationally alter shoot architecture by changing feedback strength, we generated transgenic plants with a HACR targeting PIN1 (Figure 3A), as well as a model that produced a qualitative hypothesis of the impact of this intervention (Supplementary note 1). Our model predicts that this perturbation will decrease the activation of expression of PIN1 by auxin and dampen the dose response relationship between auxin and PIN1 expression (Figure 3\u2014figure supplement 1B,C). Quantitative PCR results on transgenic plants support these predictions, as the modest but significant reduction in PIN1 expression observed in plants expressing a PIN1 gRNA can be erased with exogenous auxin treatment (Figure 3\u2014figure supplement 1D). Our model and these results highlight the substantial difference between regulation by a hormone-responsive transcription factor and a static repressor. Static repressors would consistently suppress target gene expression at all hormone levels. In contrast, HACRs dampen both the dynamic and steady state dose response relationship between hormone concentration and gene expression akin to modulating the gain in a circuit (Figure 3\u2014figure supplement 1B,C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34702/elife-34702-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematics of auxin driven PIN1 expression, which is one of the drivers of transcriptional feedback. In the box on the right we show how we decreased PIN1 transcriptional feedback strength by targeting an auxin HACR to regulate PIN1. (B,C) Representative pictures of T3 plants of the same age without (B) and with (C) a gRNA targeting an auxin HACR to regulate PIN1. (D) Schematic of the mechanism behind the predicted decrease in branching from decreasing transcriptional feedback strength. In plants without a HACR targeted to PIN1 (grey), the stronger transcriptional feedback allows the lateral bud (green) to drain auxin (orange arrows) into the central vasculature. In plants with a HACR targeted to PIN1 leading to reduced transcriptional feedback (blue), the bud is not able to drain its auxin, preventing branch formation. (E) Box plots summarizing the number of branches of adult T3 plant lines (n\u00a0=\u00a025) with a HACR targeted to regulate PIN1 expression (blue boxes), compared to control lines that did not have a gRNA targeting PIN1 (grey boxes). Every dot represents an individual plant. (F) Schematic depicting the role of transcriptional feedback in the pattern of formation of new primordia (green circles) around the shoot apical meristem. We hypothesize that in the shoot apex of lines without a HACR targeting PIN1 (grey) the stronger transcriptional feedback leads to smaller zones of auxin depletion around primordia compared to lines that have a HACR targeting PIN1 (blue). This leads to a broader zone where auxin can accumulate (orange) and create new primordia (dashed green circles) which increases chances of phyllotactic defects. (G) Box plots summarizing the number of co-initiations in T3 plant lines (n\u00a0=\u00a025) with a HACR targeted to regulate PIN1 expression (blue boxes), compared to parental control lines that did not have a gRNA targeting PIN1 (grey boxes). Every dot represents an individual plant. All p-values reported were calculated using a one-way ANOVA.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34702/elife-34702-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Schematics of auxin driven PIN1 expression with and without a HACR targeted to regulate PIN1 expression. (B) Simulations of the expression of PIN1 in response to auxin induction at time 0. The grey line depicts the auxin activation of PIN1 in a cell with an untargeted HACR, while the blue line depicts the damped activation when a HACR is regulating PIN1. The green line depicts PIN1 activation with a repressor that has no auxin degron targeting PIN1. It demonstrates how not having an auxin degron present leads to qualitatively different activation dynamics as compared to a HACR. (C) A plot depicting the dose response relationship between auxin and PIN1. As in panel B the grey line depicts the wild type, the blue line depicts the case where a HACR is regulating PIN1 and the green line depicts the case where a repressor without a degron is regulating PIN1. The model predicts a damped dose response relationship when a HACR is regulating PIN1, with larger damping at lower auxin concentrations and little to no damping at higher auxin concentrations. (D) Plot depicting the relative expression levels of PIN1 measured by qPCR, normalized to the constitutively expressed gene PP2A, for seedlings of lines that either had a gRNA targeting a HACR to PIN1 (Blue box plots) or did not (Grey box plots), with either mock or 50 nM 2-4D (synthetic auxin) treatment for three hours. The yellow and purple bars in C correspond to approximately where in the dose response relationship we hypothesize these treatment conditions to be. We observe that the seedlings with a HACR targeted to PIN1 have significantly lower PIN1 expression compared to the untargeted control (p=0.003, n\u00a0=\u00a09). We observe no significant difference between the two genotypes under 50 nM 2-4D induction (n\u00a0=\u00a04).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34702/elife-34702-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) A schematic that illustrates how transcriptional feedback strength was decreased by targeting an auxin responsive HACR to regulate PIN1. (B,C) Box plots characterizing the number of branches of adult T2 plant lines with the HACR targeted to regulate PIN1 expression (blue boxes), compared to a parental control line that did not have a gRNA targeting PIN1 (grey boxes). HACR backgrounds (B and C) indicate lines generated from independent insertion events of the same HACR constructs and every dot represents an individual T2 transgenic plant. Each auxin HACR targeted to PIN1 line is a different PIN1 targeting gRNA insertion event into the same HACR background (Control). All data was collected from plants that were grown in parallel.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/34702/elife-34702-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The box plots summarize the number of branches on plant lines with the genetic circuit shown in the corresponding schematic above them. The light grey box plot depicts data for a line with a HACR that has a stabilized auxin degron (Moss et al., 2015) but no gRNA targeting PIN1, where each dot is an individual T2 transgenic plant. The dark grey box plot depicts data for first-generation transgenic plants where each dot represents a different insertion of the PIN1 gRNA into the previously described HACR background. All data was collected from adult plants that were grown in parallel. We observe no change in the median number of branches when the HCAR with the stabilized degron is targeted to PIN1. This is consistent with the hypothesis that it is a change in the auxin-activated expression of PIN1 (canalization) that is causing the branching phenotype and not simply the repression of PIN1.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/34702/elife-34702-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) A schematic that illustrates how we decreased transcriptional feedback strength by targeting an auxin responsive HACR to regulate PIN1. (B) Box plots summarizing the number of co-initiations of lateral organs. Data was collected from adult T2 transgenic plants carrying a HACR targeted to regulate PIN1 expression (blue boxes), compared to parental control lines that lacked the PIN1 gRNA (grey boxes). All data was collected from plants that were grown in parallel. The number of co-initiations is an established metric of phyllotactic noise and we expect decreasing transcriptional feedback strength would decrease the noise. Every dot represents an individual plant and each line is a different PIN1-targeting gRNA insertion event into the parental control background.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/34702/elife-34702-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (A) Schematic of how we reduced the transcriptional feedback strength by using a HACR to regulate PIN1. (B) Box plot summarizing data collected from T3 plants of lines that have either just a HACR (grey box plot) or T3 plants of that same HACR background transformed with a gRNA targeting PIN1. These plants were not selected using antibiotic, but rather genotyped for the presence of the HACR and the gRNA by PCR after they were phenotyped. All data reported here is from plants that passed genotyping. We observe the same trends as before with a lower number of branches in lines with the PIN1 gRNA as compared to the control. There was a significant decrease for lines 4 and 5 (p<0.05). (C) Box plots summarizing the number of branches observed on T2 plants from lines in a third auxin HACR background. These plants were also selected with genotyping post phenotyping rather than with antibiotics. We observe a significant decrease in the number of branches in the line that has the gRNA (blue box plot), as compared to the control (grey box plot) (p<0.05).\n\nIn relation to shoot architecture models, the effect of an auxin-regulated HACR targeting PIN1 should be a reduction in feedback strength. In Prusinkiewicz et al. (Prusinkiewicz et al., 2009), auxin-regulated feedback is modeled as a post-translational mechanism dependent on the flux of auxin through the cell membrane. The magnitude of this flux is proportional to the recruitment of PIN1 to the membrane. According to their simulations, feedback strength is directly proportional to the number of branches the plant will develop. This effect is hypothesized to result from the reduced ability of lateral buds to establish auxin efflux into the main stem, an essential step in bud outgrowth (Figure 3D). While the transcriptional mode of feedback we are altering with our HACR is not directly encoded in the Prusinkiewicz et al. model, we hypothesized that decreasing transcriptional feedback strength would have qualitatively similar results to decreasing post-translational feedback strength. Thus, we expected a decrease in the number of branches in lines where auxin HACRs were targeted to PIN1. This is exactly what we observed (Figure 3\u2014figure supplements 2 and 5). In lines with the strongest phenotypes, we observed roughly half the total number of branches per plant (Figure 3E). No difference in the number of branches was observed for lines that had a HACR with a stabilized auxin degron regulating PIN1 expression, suggesting this phenotype was not simply due to repression of PIN1 (Figure 3\u2014figure supplement 3).\n\nFeedback strength is also an important control parameter for the process of phyllotactic patterning. In the inhibition zone model, each primordium (Figure 3F, green circles) creates an inhibition zone around itself by depleting auxin (Figure 3F, shown in orange) from its surroundings, thereby preventing enough auxin to accumulate to form a new primordium. This zone is created by a feedback driven flow of auxin towards the primordium. The cells that are capable of forming new primordia are present in a region called the central zone periphery (Figure 3F, black ring) surrounding the shoot apical meristem (Figure 3F, green circle in the back ring). The overlapping inhibition zones from all the existing nearby primordia leave only certain regions of the central zone periphery capable of forming new primordia (Figure 3F, dashed green circles on yellow arcs). A mathematical model by Refahi et al (Refahi et al., 2016). divides the central zone periphery into discrete units or cells and calculates a probability for each cell to form a new primordium at every timepoint. This probability is used to simulate the growth of the plant and estimate the expected frequency of phyllotactic patterning errors, such as co-initiation of primordia (Figure 3F, as shown in the grey meristem). This occurs when there is more than one region on the central zone periphery that is competent to form a primordia, leading to two primordia being initiated at the same time. According to the model, the radius of the inhibition zones is inversely proportional to the number of co-initiatiating primordia. In auxin HACR plants with a PIN1 gRNA, we hypothesized that lower feedback strength would lead to a less sharp auxin gradient around each primordium and thus a larger inhibition zone (Bennett et al., 2014) (Figure 3F, as shown in the blue meristem). Consistent with this prediction, plants with a HACR targeting PIN1 showed a significant reduction in co-initiations (Figure 3G, Figure 3\u2014figure supplement 4).\n\nBy making it possible to alter transcriptional feedback strength rather than simply gene expression, the HACR platform enabled exploration of previously inaccessible parameter regimes. This proof-of-concept establishes a new method for modifying a large number of desired traits. Additionally, the modular nature of HACRs allows for independent tuning of hormone sensitivity and repression strength (Khakhar et al., 2016), as well as allowing for tissue-specific modulation of target genes. These modifications could substantially extend the range of possible phenotypes and mitigate trade-offs, for example having few branches to fit more plants on a field versus the total number of fruits per plant. The use of HACRs here is among the first examples of utilizing synthetic signaling systems to re-engineer the morphology of a multicellular organism in a model-driven manner, a long standing goal across the fields of pattern formation and tissue engineering, and this strategy should be extensible to a wide variety of organisms, particularly given the success of implementing the auxin-induced degradation module (AID) in diverse eukaryotes (Nishimura et al., 2009). In agricultural settings, farmers already manipulate development or defense pathways by applying hormones or their synthetic mimics. HACRs could be used to connect these treatments with the expression of genes, such as those involved in defense, to create inducible traits. Additionally, HACRs could be extended to any other hormone that utilizes degradation-based signaling, such as salicyclic acid, strigalactones and karrikins. The wide range of degradation cues, the ease of targeting any gene, and the likely conserved function across angiosperms should mean that HACRs have the capacity to reprogram a plethora of developmental traits in a broad range of crop species.\n\n## Materials\u00a0and\u00a0methods\n\n### Construction of plasmids\n\nExpression cassettes for the gRNAs, HACRs and the reporters were built using Gibson assembly (Gibson et al., 2009). These were then linearized by restriction enzyme digestion and assembled into a yeast artificial chromosome based plant transformation vector with kanamycin resistance using homologous recombination based assembly in yeast (Shih et al., 2016). The PIN1 gRNA expression vector and the additional tdTomato expression vector for the ratiometric lines were built using Golden-Gate assembly (Engler et al., 2008) into the pGRN backbone (Hellens et al., 2000) with hygromycin resistance.\n\nThe gRNA expression cassettes contain a sgRNA driven by the U6 promoter and have a U6 terminator. The HACR expression cassettes are driven by the constitutive UBQ10 (AT4G05320) promoter and have a NOS terminator. All HACR variants contain the same deactivated SpCas9 (dCas9) domain (Gilbert et al., 2013) translationally fused at the N-terminus to an SV40 nuclear localization signal. The hormone degron domain and the repressor domain were fused to the C terminus of dCas9, with the respective degron domain in the middle and flexible 6xGS linkers separating the sub-domains. The rapidly degrading NdC truncation of the IAA17 degron (Moss et al., 2015) was used for all the auxin HACRs described in the paper. The JA HACR contained the degron from the Arabidopsis JAZ9 protein (AT1G70700) (Katsir et al., 2008). The GA HACRs contained either GAI (At1g14920) (Murase et al., 2008) or RGA1 (At2g01570) (Murase et al., 2008) cloned from Arabidopsis cDNA. The HACR repression domain was the nucleic acid sequence corresponding to the first 300 amino acids of the TOPLESS repressor (TPL, At1g15750) (Pierre-Jerome et al., 2014). We chose this repression domain as TPL is the co-repressor used in native auxin and JA signal transduction pathways. The reporter cassette that was regulated by the HACRs contained a yellow fluorescent protein (Venus) translationally fused to a nuclear localization sequence on its N-terminus and firefly luciferase translationally fused on its C-terminus with flexible linkers. The reporter was driven by a constitutive UBQ1 (AT3G52590) promoter and had a UBQ1 terminator. The additional reporter in the ratiometric lines was identical to these constructs except Venus-Luciferase was replaced with tdTomato and the gRNA target site in the UBQ1 promoter was mutated. The PIN1 gRNA expression vector contained a U6 promoter and terminator.\n\n### Construction of plant lines\n\nAll HACR reporter lines were built by transforming the yeast artificial chromosome plasmids described above into Agrobacterium tumefaciens (GV3101) and using the resulting strains to transform a Columbia-0 background by floral dip (Clough and Bent, 1998). Transformants were then selected using a light pulse selection (Harrison et al., 2006). Briefly, this involves exposing the seeds to light for 6 hr after stratification (4\u00b0C for 2 days in the dark) followed by a three day dark treatment. Resistant seedlings demonstrate hypocotyl elongation in the case of Hygromycin and leaf greening after 5 days in the case of Kanamycin. After selection seedlings were transplanted to soil and grown in long day conditions at 22\u00b0C.\n\nFor all the HACR reporter genotypes (Figures 1 and 2) at least three lines were grown to the T2 and tested for their response to the appropriate hormone treatment with n\u00a0=\u00a010 for seedlings. To generate the ratiometric auxin HACR lines the additional tdTomato reporter was transformed into Col0 and then lines that were screened for uniform tdTomato expression were crossed into a line that had the HACR targeted to a Venus reporter.\n\nThree different auxin HACR backgrounds were transformed with a gRNA targeting PIN1. The branching of three independent lines, representing three independent PIN1 gRNA insertion events, in each HACR background was characterized in the T2 at n\u00a0=\u00a05. Several lines were characterized in the T3 at n\u00a0>\u00a020 both with and without selection. The number of co-initiations of three independent lines in one HACR background was characterized in the T2 at n\u00a0=\u00a05. The number of co-initiating siliques of one of these lines was characterized in the T3 at n\u00a0=\u00a025.\n\n### Fluorescence microscopy\n\nFor imaging the effects of auxin treatment on root tips we selected plants on 0.5xLS\u00a0+0.8% bactoagar containing Kanamycin using the light pulse protocol described above. Four days after the seedlings were removed from the dark we transplanted to fresh 0.5xLS\u00a0+0.8% bactoagar without Kanamycin and then imaged on a Leica TCS SP5 II laser scanning confocal microscope on an inverted stand. For auxin induction of root tips, the seedlings were sprayed with a 1:1000 dilution in water of either control (DMSO) or auxin dissolved in DMSO (5 \u00b5M final concentration) and then mounted on slides in water and imaged after 24 hr.\n\nFor the imaging of ratiometric lines seedlings were germinated without selection and then visually screened using a fluorescence microscope for expression of both reporters. These seedlings were then imaged on a confocal microscope at several positions along the primary root to visualize auxin distributions in the root tip, the elongation zone and in developing lateral roots. The images were taken using a Leica TCS SP5 II laser scanning confocal microscope on an inverted stand. The ratiometric images were generated using the calcium imaging calculator in the Leica software, by background subtracting both the tdTomato and Venus signals and then normalizing the Venus signal by the tdTomato signal.\n\nThe images of ovules 48 hr after pollination were obtained by emasculating flowers prior to anther dehiscence followed by hand pollination 12 hr after. After 48 hr, the ovules from the pistils of these flowers were dissected using hypodermic needles under a dissection microscope and then mounted on slides in 80 mM sorbitol and imaged with confocal microscopy as in Beale et al. (Beale et al., 2012). To image the developing embryos, ovules were dissected from siliques at the appropriate developmental stages, individually dissected and mounted onto slides in MS0 media before being analyzed by confocal microscopy. All confocal microscopy images presented in this work are maximum projections of sub-stacks from regions of interest.\n\n### Luciferase assays\n\nLuciferase based time course assays were used to characterize the dynamics of HACR response to exogenous or endogenous hormone stimulus. All imaging was done using the NightOWL LB 983 in vivo Imaging System, which uses a CCD camera to visualize bioluminescence. For the data collected for Figure 1 and Figure 3\u2014figure supplement 1, assays were performed on seedlings. Here, T2 plants were selected by Kanamycin selection using the previously described light pulse protocol. These were then transplanted to fresh plates without antibiotic four days after selection and sprayed with luciferin (5 \u00b5M in water) in the evening. The next morning, after approximately 16 hr, they were sprayed again with luciferin. After 5 hr they were imaged for one hour (10 min exposure with continuous time points), then sprayed with a control treatment (a 1:1000 dilution of DMSO in water) and then imaged for five hours. These same plates were then re-sprayed with luciferin (5 \u00b5M in water) and left overnight. The next day these same plates were again imaged with an identical protocol as the previous day, except they were sprayed with a 1:1000 dilution of hormone in water (5 \u00b5M Indole-3-acetic acid (auxin), 30 \u00b5M coronatine (JA) or 100 \u00b5M GA3 post dilution) rather than control. Luminescence of each seedling was recorded over time and reported as values normalized to the time-point prior to treatment. For the mechanical damage assay of the jasmonate HACR in Figure 2, plants were treated identically as described above except that instead of being sprayed with hormones, leaves on the plant were mechanically crushed using forceps.\n\n### Data analysis\n\nAll the data collected was analyzed and plotted using python (Khakhar, 2018; https://github.com/arjunkhakhar/HACR_Data_Analysis; *copy archived at https://github.com/elifesciences-publications/HACR_Data_Analysis). For the luciferase assays, all the time courses were normalized the reading before induction to make them comparable. All p-values reported were calculated in python using the one-way ANOVA function from the SciPy package (Oliphant, 2007). (https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.f_oneway.html)\n\n### Characterizing plant phenotypes\n\nTo characterize branching in plant lines with and without an auxin HACR regulating PIN1, we selected T2 transformants for lines that had a gRNA targeting PIN1 and the parental HACR background that had no gRNA. The plants that passed the selection were transplanted onto soil and then characterized as adults at the point that there were on average four stems on the no gRNA control lines. In all cases the parental controls that lack a gRNA and the lines derived from them, by transforming with a gRNA targeting PIN1, were all grown in parallel and phenotyped on the same day to ensure the data collected was comparable. Additionally, while we do not believe that the selection would have a significant effect on the phenotyping data as we collected it more than a month after the plants had been transplanted off selection plates onto soil, both the lines with a PIN1 targeting gRNA and the parental controls they were compared to were selected in parallel to control for any confounding effect. Phenotyping involved counting the number of branches on the plant. We quantified the number of branches on five T2 plants for three different lines with a HACR targeted to regulate PIN1 in two different HACR backgrounds, in parallel with the parental HACR background. The line with the strongest phenotype was propagated to the T3 generation with its parental HACR background and the same experiment was repeated with an n\u00a0=\u00a025. To quantify the number of co-initiating siliques we measured the internode length between the first 20 siliques on a single axillary stem and every instance of two siliques emerging from the same point on the stem (an internode length less than 1 mm which we found to be the threshold for visual discrimination) was considered a co-initiation. The line that showed the strongest phenotype was propagated to the T3 generation with its parental HACR background and the same experiment was repeated with an n\u00a0=\u00a025.\n\nTo prove the phenotypes we were observing were independent of selection conditions we also characterized branching of T2 and T3 plant lines that were not selected on antibiotic selections. These plant lines were transplanted off 0.5x LS plates ten days after germination. They were then grown till adulthood and then phenotyped and genotyped for the presence of the HACR and PIN1 gRNA.\n\nAll plants that were phenotyped were grown in long day conditions on Sunshine #4 mix soil in rose pots and watered every other day on a watering table.\n\n### qPCR assays\n\nAll qPCR assays were performed on seedlings seven days after they been selected using the light pulse procedure (fifteen days post germination). For each biological replicate five seedlings that passed selection were transplanted off the selection plate and into 4 ml of 0.5xLS with either mock of 50 nM 2-4D. They were then incubated in well lit, humidity-controlled conditions for 3 hr and then the seedlings were blotted and flash frozen in liquid nitrogen. The RNA was extracted from these seedlings using the Illustra RNAspin Mini Kit from GE. cDNA was then prepared from 1 ug of RNA using the iScript cDNA synthesis kit from Biorad and then used to run a qPCR with the iQ SYBR Green Supermix also from Biorad on a Biorad qPCR machine. Each sample was analyzed for expression of PIN1 and PP2A which was used to normalize PIN1 levels. A standard curve was generated using the pooled samples for each primer set to determine amplification efficiency. The primers used are listed below:\n\nPIN1_q_R: AACATAGCCATGCCTAGACC\n\nPIN1_q_F: CGTGGAGAGGGAAGAGTTTA\n\nPP2A_q_R: AACCGCTTGGTCGACTATCG\n\nPP2A_q_F: AACGTGGCCAAAATGATGC\n\n### Plant genotype list\n\n<table>\n  <thead>\n    <tr>\n      <th>Plant genotype</th>\n      <th>Used in the following figure</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ABS44 (p2301Y-tOCS-pUBQ1:NLS-Venus-LucPlus-tUBQ1-pU6:pUBQ1_gRNA_Target1-tU6-pUBQ10:dCas9-NdC_IAA17-TPLRD2-tNos)</td>\n      <td>Figure 1B\u2013F, Figure 2F\u2013J, Figure 3B,E,G,H, Figure 1\u2014figure supplement 1, Figure 2\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>PHD5 (p2301Y-tOCS-pUBQ1:NLS-Venus-LucPlus-tUBQ1-pU6:pUBQ1_gRNA_Target1-tU6-pUBQ10:dCas9-Jas9-TPLRD2-tNos)</td>\n      <td>Figure 1H, Figure 2N\u2013Q, Figure 1\u2014figure supplement 1, Figure 2\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>PHD3 (p2301Y-tOCS-pUBQ1:NLS-Venus-LucPlus-tUBQ1-pU6:pUBQ1_gRNA_Target1-tU6-pUBQ10:dCas9-GAI1-TPLRD2-tNos)</td>\n      <td>Figure 1J, Figure 2K\u2013M, Figure 1\u2014figure supplement 1, Figure 2\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>PHD6 (p2301Y-tOCS-pUBQ1:NLS-Venus-LucPlus-tUBQ1-pU6:pUBQ1_gRNA_Target1-tU6-pUBQ10:dCas9-RGA1-TPLRD2-tNos)</td>\n      <td>Figure 1I, Figure 1\u2014figure supplement 1, Figure 2\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>ABS44 (p2301Y-tOCS-pUBQ1:NLS-Venus-LucPlus-tUBQ1-pU6:pUBQ1_gRNA_Target1-tU6-pUBQ10:dCas9-NdC_IAA17-TPLRD2-tNos) +pGRN_H-pU6:pPIN1_gRNA_Target1-tU6</td>\n      <td>Figure 3C,E,G,H, Figure 1\u2014figure supplement 1, Figure 2\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>ABS50 (p2301Y-tOCS-pUBQ1:NLS-Venus-LucPlus-tUBQ1-pU6:pUBQ1_gRNA_Target1-tU6-pUBQ10:dCas9-IAA28_DegronDead-TPLRD2-tNos)</td>\n      <td>Figure 1D,F, Figure 3\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>ABS50 (p2301Y-tOCS-pUBQ1:NLS-Venus-LucPlus-tUBQ1-pU6:pUBQ1_gRNA_Target1-tU6-pUBQ10:dCas9-IAA28_DegronDead-TPLRD2-tNos) +pGRN_H-pU6:pPIN1_gRNA_Target1-tU6</td>\n      <td>Figure 3\u2014figure supplement 1</td>\n    </tr>\n  </tbody>\n</table>\n\n### Plasmid maps\n\nABS44 - https://benchling.com/s/yXKJkba5\n\nABS50 - https://benchling.com/s/897tnlX2\n\nPHD5 - https://benchling.com/s/HnODIKMV\n\nPHD3 - https://benchling.com/s/HOEPc5FA\n\nPHD6 - https://benchling.com/s/Ge8pztYw\n\npGRN_H-pU6:pPIN1_gRNA_Target1-tU6 - https://benchling.com/s/3RBYAIkF\n\npGRN_H-pUBQ1_AlteredGrnaTargetSite:NLS-tdTomato-tUBQ1 - https://benchling.com/s/Pd0Ms4Qs\n",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "bb306b97-e65e-4342-aade-1b1c7d179848",
+      "submission_id": "b5a6047e-011b-46ba-a5b6-529a8e18cb55",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Dominique C Bergmann, Stanford University/HHMI United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34702.031](https://doi.org/10.7554/eLife.34702.031)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Synthetic hormone-responsive transcription factors can monitor and re-program plant development\" for consideration by eLife. Your article has been favorably evaluated by Christian Hardtke (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. Given the interesting applications of your reporter system, we think this manuscript is a better fit as a Tools and Resources paper. This in no way changes the value we place on publishing this submission, but given the nature of this contribution, we feel it is more of a technical rather than a conceptual advance.\n\nSummary:\n\nWith the expansion of systems and modeling approaches in developmental biology (and plant biology) the need for tools to test predictions of these approaches is increasing. This paper describes a bioengineering tool that uses CRISPR-Cas9 based targeting to bring selected genes under the control of phytohormones that signal by targeted protein degradation. This provides a way to (a) tune the transcription from these genes by exogenous hormone addition; (b) report levels of endogenous hormone signaling; and (c) re-parameterize hormone signaling networks at specific nodes. The basic system has already been described in yeast, but this paper aims to provide in planta evidence of the efficacy of these three applications.\n\nOverall, the work described is an important a proof of concept, and all three reviewers felt that the HACRs could be valuable tools for the research community. The two major concerns were about (1) the limited robustness of the phenotypic analysis, and (2) whether it was clearly demonstrated that these tools enabled manipulations not possible with existing tools. Experiments suitable to address these issues are delineated below.\n\nEssential revisions:\n\n1) Analysis of phenotypes should be extended to T3 plants not grown under antibiotic selection. The authors argue that it is robust, given their controls and the long time between the selection and the phenotypic analysis. However, antibiotic selection often has long term effects in the primary shoot apical meristem, which can affect both the phenotypes analysed. Therefore use of unselected homozygous T3 lines necessary for truly reliable data. Extension of the n=25 T3 approach to additional independent lines is advisable.\n\n2) Clear evidence that addition of the targeted HACR repressor will affect the dynamics of PIN1 induction and dampen positive feedback between auxin and PIN1 levels is needed. The authors assume that addition of the targeted HACR repressor will affect the dynamics of PIN1 induction and dampen positive feedback between auxin and PIN1 levels. This is never directly tested. Ideally it would be better to use a tagged PIN1 that rescues the pin1 mutant phenotype and validate the authors hypotheses about PIN polarization in buds and meristems more directly.\n\nAlternatively some transcription dose-response analysis could be undertaken to test whether the induction threshold for auxin really is shifted as expected.\n\n3) An example of an experiment that could only have been done with HACRs (and not weak alleles or existing tools) would be a strong addition to this paper. This could be done alongside a transcription dose-analysis as suggested in point 2. Alternatively, taking advantage of the inducibility of the constructs to provide spatial or temporally restricted manipulations followed by phenotypic analysis.\n\n4) More information about the predictions from existing models is necessary. It is not clear from notes 1 and 2 whether the authors ran simulations to generate these predictions or rather intuited them from examination of model terms. Because of the relationship between auxin transport and auxin concentration, it is not easy to predict what the effects of changing the relationship between auxin concentration and PIN1 expression might be. If expression of PIN1 increases proportionately PIN1 at the plasma membrane, then increasing PIN1 expression will decrease cellular auxin concentration. Because of this negative feedback of PIN1 on auxin concentration, the effects on the system of reducing the positive feedback of auxin on PIN1 may not be very intuitive, especially at a tissue level.\n",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "80086145-e960-423c-947d-7d5cd6040d32",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C1",
+      "claim": "Developmental programs sculpt plant morphology to meet environmental challenges.",
+      "claim_type": "EXPLICIT",
+      "source": "Developmental programs sculpt plant morphology to meet environmental challenges, and these same programs have been manipulated to increase agricultural productivity (Doebley et al., 1997; Khush, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Doebley et al., 1997 and Khush, 2001",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "fcb8d47d-3108-41e0-adca-f0ffb22fdcd4",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C2",
+      "claim": "Developmental programs have been manipulated to increase agricultural productivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Developmental programs sculpt plant morphology to meet environmental challenges, and these same programs have been manipulated to increase agricultural productivity (Doebley et al., 1997; Khush, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Doebley et al., 1997 and Khush, 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "11611bda-f01d-4df5-9e68-14a9fac723d7",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C3",
+      "claim": "Hormones coordinate developmental programs, creating chemical circuitry.",
+      "claim_type": "EXPLICIT",
+      "source": "Hormones coordinate these programs, creating chemical circuitry (Vanstraelen and Benkov\u00e1, 2012) that has been represented in mathematical models (Refahi et al., 2016; Prusinkiewicz et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Vanstraelen and Benkov\u00e1, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "d2761ebd-47a6-4729-8385-aea5c70384f2",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C4",
+      "claim": "Hormonal chemical circuitry has been represented in mathematical models.",
+      "claim_type": "EXPLICIT",
+      "source": "Hormones coordinate these programs, creating chemical circuitry (Vanstraelen and Benkov\u00e1, 2012) that has been represented in mathematical models (Refahi et al., 2016; Prusinkiewicz et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Refahi et al., 2016 and Prusinkiewicz et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "202c01a0-66cc-4dcb-adc6-38472b53503d",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C5",
+      "claim": "Model-guided engineering of plant morphology has been limited by a lack of tools.",
+      "claim_type": "EXPLICIT",
+      "source": "however, model-guided engineering of plant morphology has been limited by a lack of tools (Parry et al., 2009; Voytas and Gao, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Parry et al., 2009 and Voytas and Gao, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "9febc358-038d-4edb-bb74-ffd2bb1a2dd5",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C6",
+      "claim": "HACRs are synthetic and modular hormone activated Cas9-based repressors in Arabidopsis thaliana.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we introduce a novel set of synthetic and modular hormone activated Cas9-based repressors (HACRs) in Arabidopsis thaliana that respond to three hormones: auxin, gibberellins and jasmonates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the nature of HACRs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "c2a39447-a2c8-4d98-b2cf-5e3c79604e88",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C7",
+      "claim": "HACRs respond to three hormones: auxin, gibberellins and jasmonates.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we introduce a novel set of synthetic and modular hormone activated Cas9-based repressors (HACRs) in Arabidopsis thaliana that respond to three hormones: auxin, gibberellins and jasmonates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement supported by experimental data in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "204f0bee-a10e-496a-ae12-9117c13d5f8c",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C8",
+      "claim": "HACRs are sensitive to exogenous hormone treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that HACRs are sensitive to both exogenous hormone treatments and local differences in endogenous hormone levels associated with development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "10f0e07a-8a27-4791-b1fc-add6f449bd9c",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C9",
+      "claim": "HACRs are sensitive to local differences in endogenous hormone levels associated with development.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that HACRs are sensitive to both exogenous hormone treatments and local differences in endogenous hormone levels associated with development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "43eabad2-5f4e-4804-af9a-4622f3eae915",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C10",
+      "claim": "HACRs can reprogram development in an agriculturally relevant manner by changing how hormonal circuitry regulates target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We further show that this capability can be leveraged to reprogram development in an agriculturally relevant manner by changing how the hormonal circuitry regulates target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "dabcb542-85d4-4eac-8a09-ade9266aa12c",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C11",
+      "claim": "Deploying a HACR to re-parameterize auxin-induced expression of PIN1 decreased shoot branching.",
+      "claim_type": "EXPLICIT",
+      "source": "By deploying a HACR to re-parameterize the auxin-induced expression of the auxin transporter PIN-FORMED1 (PIN1), we decreased shoot branching and phyllotactic noise, as predicted by existing models (Refahi et al., 2016; Prusinkiewicz et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data in Figure 3 and predicted by cited models",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "fc972d6a-de89-46d0-97b8-aaf020f5d705",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C12",
+      "claim": "Deploying a HACR to re-parameterize auxin-induced expression of PIN1 decreased phyllotactic noise.",
+      "claim_type": "EXPLICIT",
+      "source": "By deploying a HACR to re-parameterize the auxin-induced expression of the auxin transporter PIN-FORMED1 (PIN1), we decreased shoot branching and phyllotactic noise, as predicted by existing models (Refahi et al., 2016; Prusinkiewicz et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data in Figure 3 and predicted by cited models",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "93ef37c7-749c-44c0-acdf-7dca66d33bdc",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C13",
+      "claim": "The body plans of plants are inherently plastic.",
+      "claim_type": "EXPLICIT",
+      "source": "The body plans of plants are inherently plastic, making them amenable to optimization for a wide range of natural or artificial environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about plant development",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "3d3a29f4-786a-4bff-bd06-df4a9b9cb096",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C14",
+      "claim": "Plant body plan plasticity makes plants amenable to optimization for a wide range of natural or artificial environments.",
+      "claim_type": "EXPLICIT",
+      "source": "The body plans of plants are inherently plastic, making them amenable to optimization for a wide range of natural or artificial environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from plant plasticity",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "f2a5a6d5-b1b9-4205-a839-6709b6839d92",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C15",
+      "claim": "Extrinsic and intrinsic cues are integrated by developmental programs to maximize fitness of wild plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Extrinsic and intrinsic cues are integrated by developmental programs to maximize the fitness of wild plants (Vanstraelen and Benkov\u00e1, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Vanstraelen and Benkov\u00e1, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "fa4491d1-e94f-4949-a1ee-2821e4efbfa0",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C16",
+      "claim": "Domestication of crops frequently relies on altering developmental programs to create more productive morphologies for agriculture.",
+      "claim_type": "EXPLICIT",
+      "source": "Domestication of crops frequently relies on altering such programs to create more productive morphologies for agriculture, such as the dramatic reduction in bushiness of maize (Doebley et al., 1997) or the dwarfing of cereals that drove the green revolution (Khush, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Doebley et al., 1997 and Khush, 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "4abf1bf9-687e-41a0-bdde-3ad1dbfd4169",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C17",
+      "claim": "Maize domestication involved a dramatic reduction in bushiness.",
+      "claim_type": "EXPLICIT",
+      "source": "Domestication of crops frequently relies on altering such programs to create more productive morphologies for agriculture, such as the dramatic reduction in bushiness of maize (Doebley et al., 1997) or the dwarfing of cereals that drove the green revolution (Khush, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Doebley et al., 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "e2640cd6-a623-4bbb-958d-d83c190d4a73",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C18",
+      "claim": "Dwarfing of cereals drove the green revolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Domestication of crops frequently relies on altering such programs to create more productive morphologies for agriculture, such as the dramatic reduction in bushiness of maize (Doebley et al., 1997) or the dwarfing of cereals that drove the green revolution (Khush, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Khush, 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "a168d433-fdf0-4ee1-b1dc-db8f71ebe543",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C19",
+      "claim": "Developmental programs are coordinated in large part by a set of hormones.",
+      "claim_type": "EXPLICIT",
+      "source": "Developmental programs are coordinated in large part by a set of hormones (Vanstraelen and Benkov\u00e1, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Vanstraelen and Benkov\u00e1, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "9188bf29-1b67-411c-89d1-72f70484e00d",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C20",
+      "claim": "Accumulation of a given hormone by de novo synthesis or transport influences the expression or activity of developmental master controller genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulation of a given hormone by de novo synthesis or transport influences the expression or activity of developmental master controller genes, analogous to wires in a circuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of hormone signaling",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "0dfcb32d-f54e-4c87-b8e9-42141f118885",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C21",
+      "claim": "Auxin controls many developmental programs that drive agriculturally relevant traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Auxin, perhaps the best-studied hormone, controls many developmental programs that drive agriculturally relevant traits (Weijers and Wagner, 20152016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Weijers and Wagner, 2015/2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "90b19a1a-f030-42d9-b47b-770379978cfb",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C22",
+      "claim": "Many mathematical models connecting auxin signaling and transport at the molecular level to specific developmental phenotypes at the whole plant level have been developed.",
+      "claim_type": "EXPLICIT",
+      "source": "Many mathematical models connecting auxin signaling and transport at the molecular level to specific developmental phenotypes at the whole plant level have been developed (Refahi et al., 2016; Prusinkiewicz et al., 2009; Smith et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Refahi et al., 2016; Prusinkiewicz et al., 2009; Smith et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "e88877a3-1c78-4823-ace0-2ba5e010cad3",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C23",
+      "claim": "Mathematical models highlight the importance of subtle parameters, like the strength of specific feedback loops in hormone signaling networks, in determining plant morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "These models highlight the importance of subtle parameters, like the strength of specific feedback loops in hormone signaling networks, in determining plant morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from mathematical models cited in the manuscript",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "60dd5517-5dd8-4b51-b50f-d9950721ef7e",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C24",
+      "claim": "Native hormone signaling pathways are comprised of co-expressed and redundant components.",
+      "claim_type": "EXPLICIT",
+      "source": "Native hormone signaling pathways are comprised of co-expressed and redundant components, embedded in highly reticulate cross-regulatory relationships with other signaling pathways, and have several layers of feedback (Weijers and Wagner, 20152016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Weijers and Wagner, 2015/2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "8846cefd-5097-4e07-b1b0-f7983da70e1b",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C25",
+      "claim": "Native hormone signaling pathways are embedded in highly reticulate cross-regulatory relationships with other signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Native hormone signaling pathways are comprised of co-expressed and redundant components, embedded in highly reticulate cross-regulatory relationships with other signaling pathways, and have several layers of feedback (Weijers and Wagner, 20152016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Weijers and Wagner, 2015/2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "6f9f575f-d19a-4559-b6d8-80f56e978271",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C26",
+      "claim": "Native hormone signaling pathways have several layers of feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "Native hormone signaling pathways are comprised of co-expressed and redundant components, embedded in highly reticulate cross-regulatory relationships with other signaling pathways, and have several layers of feedback (Weijers and Wagner, 20152016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Weijers and Wagner, 2015/2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "e392d916-2077-431b-87ce-fb868c0c4402",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C27",
+      "claim": "The auxin signaling pathway is comprised of three families of proteins: ARFs, AUX/IAAs, and TIR1/AFBs.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the auxin signaling pathway is comprised of three families of proteins, ARFs, AUX/IAAs, and TIR1/AFBs, all of which have multiple members with redundant regulatory roles and are cross regulated by a plethora of other signals (Koltai, 2015; Naseem et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Koltai, 2015 and Naseem et al., 2015",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "ce3352fb-2cd2-4a16-9138-0dba6c0754c9",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C28",
+      "claim": "ARFs, AUX/IAAs, and TIR1/AFBs all have multiple members with redundant regulatory roles.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the auxin signaling pathway is comprised of three families of proteins, ARFs, AUX/IAAs, and TIR1/AFBs, all of which have multiple members with redundant regulatory roles and are cross regulated by a plethora of other signals (Koltai, 2015; Naseem et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Koltai, 2015 and Naseem et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "70c628ab-db29-4af9-acf1-d83d94f06837",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C29",
+      "claim": "ARFs, AUX/IAAs, and TIR1/AFBs are cross regulated by a plethora of other signals.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the auxin signaling pathway is comprised of three families of proteins, ARFs, AUX/IAAs, and TIR1/AFBs, all of which have multiple members with redundant regulatory roles and are cross regulated by a plethora of other signals (Koltai, 2015; Naseem et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Koltai, 2015 and Naseem et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "a1f43b8e-7e51-45a9-a91a-4f096f53e8f3",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C30",
+      "claim": "There is a need for tools that can predictably alter how a specific hormone regulates a gene of interest to facilitate re-wiring plant development.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, there is a need for tools that can predictably alter how a specific hormone regulates a gene of interest to facilitate re-wiring plant development (Brophy et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Brophy et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "54a96374-90ba-447c-9961-977d486688ac",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C31",
+      "claim": "Efforts to alter hormone signaling have been largely limited to reducing or increasing expression of components of the native hormone signaling machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, such efforts have been largely limited to reducing or increasing expression of components of the native hormone signaling machinery (Voytas and Gao, 2014), an approach ill-suited for tuning the strength of connections within a network and easily confounded by redundancy and buffering within a network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Voytas and Gao, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "dc4e2040-fc5a-4ef2-88bc-2064dbad6492",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C32",
+      "claim": "Reducing or increasing expression of components of native hormone signaling machinery is ill-suited for tuning the strength of connections within a network.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, such efforts have been largely limited to reducing or increasing expression of components of the native hormone signaling machinery (Voytas and Gao, 2014), an approach ill-suited for tuning the strength of connections within a network and easily confounded by redundancy and buffering within a network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the limitations of existing approaches",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "bc5b67fb-b393-4d97-b81d-02ae2febec9f",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C33",
+      "claim": "Reducing or increasing expression of components of native hormone signaling machinery is easily confounded by redundancy and buffering within a network.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, such efforts have been largely limited to reducing or increasing expression of components of the native hormone signaling machinery (Voytas and Gao, 2014), an approach ill-suited for tuning the strength of connections within a network and easily confounded by redundancy and buffering within a network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the limitations of existing approaches",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "549d669a-8389-4b7f-b3e9-d6d192527690",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C34",
+      "claim": "Chimeric promoters with altered hormonal regulation of a gene of interest have been used with some success.",
+      "claim_type": "EXPLICIT",
+      "source": "Chimeric promoters with altered hormonal regulation of a gene of interest have been used with some success (Ulmasov, 1997; Rushton et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ulmasov, 1997 and Rushton et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "94405d32-0762-4064-adee-3f2ff898fac6",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C35",
+      "claim": "The paucity of detailed mechanistic maps connecting promoter architecture and chromatin state means that promoter design remains a bespoke approach with high design and development cost.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the paucity of detailed mechanistic maps connecting promoter architecture and chromatin state, and the high heterogeneity in these factors between genes, means that promoter design remains a bespoke approach with an associated high design and development cost for each network of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about the state of the field",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "8b55f4f3-3c98-4e8d-825b-616ae2b2acbb",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C36",
+      "claim": "The authors designed a set of synthetic and modular hormone-activated Cas9-based repressors (HACRs).",
+      "claim_type": "EXPLICIT",
+      "source": "To facilitate more sophisticated interventions in plant developmental programs, we designed a set of synthetic and modular hormone-activated Cas9-based repressors (HACRs, pronounced 'hackers').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the work performed",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "a59574dd-aac3-4d94-b302-5f6feb3ce0b8",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C37",
+      "claim": "The authors previously validated the design of similar synthetic auxin-sensitive transcription factors in Saccharomyces cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously validated the design of similar synthetic auxin-sensitive transcription factors in Saccharomyces cerevisiae (Khakhar et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Khakhar et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "31c8c728-f49f-4b53-8982-35dbaa6180a4",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C38",
+      "claim": "The HACR design fuses dCas9 protein from Streptococcus pyogenes to a highly sensitive auxin-induced degron and the first 300 amino acids of the TOPLESS repressor.",
+      "claim_type": "EXPLICIT",
+      "source": "Guided by this work, we fused the deactivated Cas9 (dCas9) protein from Streptococcus pyogenes (Gilbert et al., 2013) to a highly sensitive auxin-induced degron (Moss et al., 2015) and the first 300 amino acids of the TOPLESS repressor (TPL) (Pierre-Jerome et al., 2014) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations and shown in Figure 1A",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "f516da29-c8cd-45e3-938b-2f8af69b3762",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C39",
+      "claim": "The dCas9 associates with a guide RNA (gRNA) that targets the HACR to a promoter with sequence complementarity where it can repress transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "The dCas9 associates with a guide RNA (gRNA) that targets the HACR to a promoter with sequence complementarity where it can repress transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of dCas9 function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "4f7a36ee-054a-4bd3-a42d-d80298b9b542",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C40",
+      "claim": "Upon auxin accumulation, the degron sequence targets the HACR for ubiquitination and subsequent proteasomal degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon auxin accumulation, the degron sequence targets the HACR for ubiquitination and subsequent proteasomal degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of auxin-induced degron function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "de589bce-a850-4a2c-bc35-f2a8328c8629",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C41",
+      "claim": "In parallel to the natural auxin response, auxin triggers relief of repression on HACR target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in parallel to the natural auxin response, auxin triggers relief of repression on HACR target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the design of HACRs",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "36598d1c-1078-4e2f-b181-7393fc8f3762",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C42",
+      "claim": "Auxin treatment increased overall fluorescence in transgenic plants with HACRs and a gRNA targeting a constitutively expressed Venus-Luciferase reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Transgenic plants were generated with HACRs and a gRNA targeting a constitutively expressed Venus-Luciferase reporter, and, as expected, auxin treatment increased overall fluorescence (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "fc7988ea-3e99-48b9-a807-c56aaeb2f52b",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C43",
+      "claim": "A time-course using luciferase showed a significant spike in reporter signal (p<0.001, n = 10) peaking approximately 80 min post auxin exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "A time-course using luciferase to quantify de-repression of the reporter supported these results with a significant spike in reporter signal (p<0.001, n = 10) peaking approximately 80 min post auxin exposure (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1D,E with statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "b9a5631c-d4ae-40d3-ba4b-bef88bb84073",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C44",
+      "claim": "A HACR with a stabilized degron showed significantly lower reporter signal upon auxin treatment (p=0.01, n = 10).",
+      "claim_type": "EXPLICIT",
+      "source": "A HACR with a stabilized degron (Moss et al., 2015) showed significantly lower reporter signal upon auxin treatment (p=0.01, n = 10) (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1F with statistical analysis",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "a2567f4e-45e7-457e-b2ea-8c1c5ddab93b",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C45",
+      "claim": "The modular nature of HACRs allows substitution of the degron with any sequence that has a specific degradation cue.",
+      "claim_type": "EXPLICIT",
+      "source": "The modular nature of HACRs should allow substitution of the degron with any sequence that has a specific degradation cue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis tested by building HACR variants",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "1fabf6ab-93ad-4b6b-a32a-7e54e241d10f",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C46",
+      "claim": "HACR variants with degrons sensitive to jasmonates and gibberellins were built and tested.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested this hypothesis by building HACR variants with degrons sensitive to two other plant hormones: jasmonates (JAs) (Katsir et al., 2008) and gibberellins (GAs) (Murase et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "b2e4d166-11f0-4352-8760-f6ddc5919ec5",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C47",
+      "claim": "Treatment of transgenic plants with exogenous hormones matched to the expressed HACR variants significantly increased reporter signal as compared to control treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of transgenic plants with exogenous hormones matched to the expressed variants significantly increased reporter signal as compared to control treatments (Figure 1H,I,J, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1H,I,J and Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "e621bd63-bcf1-40c7-ba41-8a4e32e0562c",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C48",
+      "claim": "HACRs must be able to respond to local differences in endogenous hormone levels to rewire connections between hormone circuitry and developmental master controllers.",
+      "claim_type": "EXPLICIT",
+      "source": "To rewire the connections between the hormone circuitry and developmental master controllers, HACRs must be able to respond to local differences in endogenous hormone levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical requirement for the application of HACRs",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "136f8a91-9c92-4ba2-ada2-cd5dfba1f0ef",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C49",
+      "claim": "A ratiometric auxin HACR was built by combining the HACR design with a second reporter (tdTomato) driven by the same UBQ1 promoter with a mutated gRNA target site.",
+      "claim_type": "EXPLICIT",
+      "source": "To visualize subtle differences in HACR sensitivity at the cellular level, we built a ratiometric auxin HACR by combining our previous design with a second reporter (tdTomato) driven by the same UBQ1 promoter driving the Venus reporter, with the only difference being that its gRNA target site was mutated (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of experimental design shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "47470133-404a-461c-8064-c35ba27bcc8e",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C50",
+      "claim": "Auxin accumulation assayed by the HACR largely matched previous reports using auxin reporters like DII-VENUS or R2D2.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these lines, we visualized tissues at different developmental stages where auxin distributions had been previously described using auxin reporters like DII-VENUS or R2D2 (Liao et al., 2015). Auxin accumulation assayed by the HACR largely matched previous reports, such as the reverse fountain pattern of reporter signal in the root tip (Band et al., 2014) (Figure 2B) and higher signal in the vasculature as compared to the epidermis of the elongation zone (Band et al., 2014) (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison to cited studies and data shown in Figure 2B,C",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "d36807bf-aaa7-4b80-a971-c32fdb0d6fff",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C51",
+      "claim": "The HACR showed a reverse fountain pattern of reporter signal in the root tip.",
+      "claim_type": "EXPLICIT",
+      "source": "Auxin accumulation assayed by the HACR largely matched previous reports, such as the reverse fountain pattern of reporter signal in the root tip (Band et al., 2014) (Figure 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2B and citation to Band et al., 2014",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "afc4f801-fef8-4462-a643-af5f2c723c4c",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C52",
+      "claim": "The HACR showed higher signal in the vasculature as compared to the epidermis of the elongation zone.",
+      "claim_type": "EXPLICIT",
+      "source": "and higher signal in the vasculature as compared to the epidermis of the elongation zone (Band et al., 2014) (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2C and citation to Band et al., 2014",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "decc568e-0847-4f28-8528-a05907609f05",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C53",
+      "claim": "High reporter signal was observed in emerging lateral root primordia consistent with auxin accumulation that triggers this developmental event.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed high reporter signal in emerging lateral root primordia consistent with the auxin accumulation that triggers this developmental event (Dubrovsky et al., 2008) (Figure 2D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2D,E and citation to Dubrovsky et al., 2008",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "8e4e588c-0968-4397-bc41-4a6eca1976ea",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C54",
+      "claim": "Auxin accumulates in the apical domain of the early embryo and eventually resolves in later stages to the tips of the developing cotyledons, vasculature, and future root apical meristem.",
+      "claim_type": "EXPLICIT",
+      "source": "Auxin accumulates in the apical domain of the early embryo and eventually resolves in later stages to the tips of the developing cotyledons, vasculature, and future root apical meristem (Liao et al., 2015)\u2013 the same patterns that were observed in plants expressing an auxin HACR (Figure 2F\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Liao et al., 2015 and data shown in Figure 2F\u2013J",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "c856511f-f087-4b1a-aa36-f7bc247ac84b",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C55",
+      "claim": "Plants expressing a GA HACR showed strong reporter signal in the early endosperm, consistent with the expression of GA biosynthesis enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "In plants expressing a GA HACR, we observed a strong reporter signal in the early endosperm, consistent with the expression of GA biosynthesis enzymes (Hu et al., 2008) (Figure 2K\u2013M, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2K\u2013M, Figure 2\u2014figure supplement 1 and citation to Hu et al., 2008",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "2d171960-45f1-4122-8aef-4ade800875a1",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C56",
+      "claim": "Accumulation of reporter signal was detected in the developing ovule of plants expressing a JA HACR.",
+      "claim_type": "EXPLICIT",
+      "source": "There are few reports of developmental regulation of JA distribution; however, we did detect accumulation of reporter signal in the developing ovule of plants expressing a JA HACR (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "e5932f06-eed1-4618-82f0-5b7194e4bef3",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C57",
+      "claim": "Reporter signal in JA HACR plants appeared to be localized to the inner- and outermost layers of the integuments that surround the developing seed.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, reporter signal appeared to be localized to the inner- and outermost layers of the integuments that surround the developing seed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from imaging data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "762b889e-852f-41b3-a439-63d18a7d6d6e",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C58",
+      "claim": "The JA HACR reporter was strongly induced in leaves subjected to mechanical damage.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that the JA HACR reporter was strongly induced in leaves subjected to mechanical damage (Figure 2N\u2013Q), a condition known to induce high levels of JA (Katsir et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2N\u2013Q and citation to Katsir et al., 2008",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "4bad2dd4-bb1e-4f8e-a231-40e804085f63",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C59",
+      "claim": "Mechanical damage is a condition known to induce high levels of JA.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that the JA HACR reporter was strongly induced in leaves subjected to mechanical damage (Figure 2N\u2013Q), a condition known to induce high levels of JA (Katsir et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Katsir et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "8a6d8887-7fd7-4862-97f3-b0193737da16",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C60",
+      "claim": "Shoot architecture is an agronomically important trait with a well-established connection to auxin.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, we turned to shoot architecture, an agronomically important trait with a well-established connection to auxin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "a43d35f7-e20f-4de0-8e11-1a5f6e579733",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C61",
+      "claim": "Fewer side-branches allow for higher density planting.",
+      "claim_type": "EXPLICIT",
+      "source": "Fewer side-branches allow for higher density planting (Khush, 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Khush, 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "c228e797-864c-4ad4-b3e5-5a732b6a38e2",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C62",
+      "claim": "More regular arrangement of lateral organs (phyllotaxy) facilitates efficient mechanized harvest.",
+      "claim_type": "EXPLICIT",
+      "source": "and more regular arrangement of lateral organs (phyllotaxy) facilitates efficient mechanized harvest (Burks et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Burks et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "f6eacaa1-163e-4fa1-bc4c-8dbc11b56db6",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C63",
+      "claim": "The molecular mechanisms that control branching and phyllotaxy are well studied and have been mathematically modeled.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular mechanisms that control branching and phyllotaxy are well studied and have been mathematically modeled (Refahi et al., 2016; Prusinkiewicz et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Refahi et al., 2016 and Prusinkiewicz et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "a88ed566-792e-4817-8757-5fedf02fc0b3",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C64",
+      "claim": "Mathematical models predict that a key parameter controlling branching and phyllotaxy is the strength with which auxin promotes its own polar transport.",
+      "claim_type": "EXPLICIT",
+      "source": "These models predict that a key parameter controlling both these processes is the strength with which auxin promotes its own polar transport (Bennett et al., 2014), which we will refer to as feedback strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bennett et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "7191b5c8-a450-4d3d-9c97-09e31da1ed27",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C65",
+      "claim": "One molecular mechanism that contributes to auxin feedback is the auxin-induced increase in expression of the auxin transporter PIN1.",
+      "claim_type": "EXPLICIT",
+      "source": "One molecular mechanism that contributes to this feedback is the auxin-induced increase in expression of the auxin transporter PIN-FORMED1 (PIN1) (Vieten et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Vieten et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "9281489b-42d1-4560-b663-1a645c8441b5",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C66",
+      "claim": "It has been impossible to tune the strength of auxin-mediated transcriptional feedback on PIN1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus far, it has been impossible to tune the strength of auxin-mediated transcriptional feedback on PIN1, and thus impossible to fully test its role in regulating shoot architecture or its potential for engineering this trait.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the limitations of existing methods",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "087c74ce-81f2-41eb-af1f-966ccafe558e",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C67",
+      "claim": "Transgenic plants were generated with a HACR targeting PIN1.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether we could rationally alter shoot architecture by changing feedback strength, we generated transgenic plants with a HACR targeting PIN1 (Figure 3A), as well as a model that produced a qualitative hypothesis of the impact of this intervention (Supplementary note 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of experimental work shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "31853d65-386b-4474-9d9d-e6ae8d190232",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C68",
+      "claim": "A model was developed that produced a qualitative hypothesis of the impact of HACR targeting PIN1.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether we could rationally alter shoot architecture by changing feedback strength, we generated transgenic plants with a HACR targeting PIN1 (Figure 3A), as well as a model that produced a qualitative hypothesis of the impact of this intervention (Supplementary note 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to modeling work in Supplementary note 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "5f066858-ed19-412c-8771-db8b8a084d85",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C69",
+      "claim": "The model predicts that HACR targeting PIN1 will decrease the activation of expression of PIN1 by auxin and dampen the dose response relationship between auxin and PIN1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model predicts that this perturbation will decrease the activation of expression of PIN1 by auxin and dampen the dose response relationship between auxin and PIN1 expression (Figure 3\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Prediction from model shown in Figure 3\u2014figure supplement 1B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "6fe532a8-76d8-4a7e-ab18-9cc0125b7a29",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C70",
+      "claim": "Quantitative PCR results support the model predictions, showing a modest but significant reduction in PIN1 expression in plants expressing a PIN1 gRNA that can be erased with exogenous auxin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative PCR results on transgenic plants support these predictions, as the modest but significant reduction in PIN1 expression observed in plants expressing a PIN1 gRNA can be erased with exogenous auxin treatment (Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 3\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "52b16b2e-5a83-48e7-95e6-f719b3a5c832",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C71",
+      "claim": "HACRs dampen both the dynamic and steady state dose response relationship between hormone concentration and gene expression akin to modulating the gain in a circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model and these results highlight the substantial difference between regulation by a hormone-responsive transcription factor and a static repressor. Static repressors would consistently suppress target gene expression at all hormone levels. In contrast, HACRs dampen both the dynamic and steady state dose response relationship between hormone concentration and gene expression akin to modulating the gain in a circuit (Figure 3\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from model and experimental results shown in Figure 3\u2014figure supplement 1B,C",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "3bc128c4-6974-472a-8d57-041c2eddd00b",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C72",
+      "claim": "Static repressors would consistently suppress target gene expression at all hormone levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Static repressors would consistently suppress target gene expression at all hormone levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about the behavior of static repressors",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "8f54738f-b799-4638-964e-3623c7dd1c21",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C73",
+      "claim": "In the Prusinkiewicz et al. model, auxin-regulated feedback is modeled as a post-translational mechanism dependent on the flux of auxin through the cell membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In relation to shoot architecture models, the effect of an auxin-regulated HACR targeting PIN1 should be a reduction in feedback strength. In Prusinkiewicz et al. (Prusinkiewicz et al., 2009), auxin-regulated feedback is modeled as a post-translational mechanism dependent on the flux of auxin through the cell membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the Prusinkiewicz et al. model cited",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "5ebb08dc-6b2e-4957-86c0-9fc01a5e5f88",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C74",
+      "claim": "The magnitude of auxin flux is proportional to the recruitment of PIN1 to the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of this flux is proportional to the recruitment of PIN1 to the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the Prusinkiewicz et al. model",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "24d686ce-949e-44e4-b57c-f491cc23ca04",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C75",
+      "claim": "According to Prusinkiewicz et al. simulations, feedback strength is directly proportional to the number of branches the plant will develop.",
+      "claim_type": "EXPLICIT",
+      "source": "According to their simulations, feedback strength is directly proportional to the number of branches the plant will develop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on simulations from Prusinkiewicz et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "7f77b05e-34ef-47cd-a1dd-068ebac69314",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C76",
+      "claim": "The effect of reduced feedback strength on branching is hypothesized to result from the reduced ability of lateral buds to establish auxin efflux into the main stem.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect is hypothesized to result from the reduced ability of lateral buds to establish auxin efflux into the main stem, an essential step in bud outgrowth (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Hypothesis based on model predictions illustrated in Figure 3D",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "06b088d7-66b6-4a04-88aa-4ee027b4b82e",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C77",
+      "claim": "Decreasing transcriptional feedback strength was hypothesized to have qualitatively similar results to decreasing post-translational feedback strength.",
+      "claim_type": "EXPLICIT",
+      "source": "While the transcriptional mode of feedback we are altering with our HACR is not directly encoded in the Prusinkiewicz et al. model, we hypothesized that decreasing transcriptional feedback strength would have qualitatively similar results to decreasing post-translational feedback strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis about the relationship between transcriptional and post-translational feedback",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "96b7713b-8968-4430-bd2f-67ff64418309",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C78",
+      "claim": "A decrease in the number of branches was expected in lines where auxin HACRs were targeted to PIN1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we expected a decrease in the number of branches in lines where auxin HACRs were targeted to PIN1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Prediction based on hypothesis",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "fb0f1d4d-ad50-460e-92a6-2869620a7ded",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C79",
+      "claim": "A decrease in the number of branches was observed in lines where auxin HACRs were targeted to PIN1.",
+      "claim_type": "EXPLICIT",
+      "source": "This is exactly what we observed (Figure 3\u2014figure supplements 2 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3\u2014figure supplements 2 and 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "a035603e-e35c-45c8-8b5a-50e90dfe5801",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C80",
+      "claim": "In lines with the strongest phenotypes, roughly half the total number of branches per plant was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In lines with the strongest phenotypes, we observed roughly half the total number of branches per plant (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "f1b75db0-9913-41d3-b1da-bba6bae63305",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C81",
+      "claim": "No difference in the number of branches was observed for lines that had a HACR with a stabilized auxin degron regulating PIN1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "No difference in the number of branches was observed for lines that had a HACR with a stabilized auxin degron regulating PIN1 expression, suggesting this phenotype was not simply due to repression of PIN1 (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "4f2133e1-8765-476e-85b9-dd4f7baeeb3b",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C82",
+      "claim": "The branching phenotype was not simply due to repression of PIN1.",
+      "claim_type": "EXPLICIT",
+      "source": "No difference in the number of branches was observed for lines that had a HACR with a stabilized auxin degron regulating PIN1 expression, suggesting this phenotype was not simply due to repression of PIN1 (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from control experiment shown in Figure 3\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "85426df1-b311-474a-aef7-5b404d8f4057",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C83",
+      "claim": "Feedback strength is an important control parameter for the process of phyllotactic patterning.",
+      "claim_type": "EXPLICIT",
+      "source": "Feedback strength is also an important control parameter for the process of phyllotactic patterning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge and models",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "0742fce1-85e7-48ff-bcc3-0f3db6e14d86",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C84",
+      "claim": "In the inhibition zone model, each primordium creates an inhibition zone around itself by depleting auxin from its surroundings.",
+      "claim_type": "EXPLICIT",
+      "source": "In the inhibition zone model, each primordium (Figure 3F, green circles) creates an inhibition zone around itself by depleting auxin (Figure 3F, shown in orange) from its surroundings, thereby preventing enough auxin to accumulate to form a new primordium.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of the inhibition zone model illustrated in Figure 3F",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "65347312-0510-4686-9a7a-9c8de32088f8",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C85",
+      "claim": "The inhibition zone is created by a feedback driven flow of auxin towards the primordium.",
+      "claim_type": "EXPLICIT",
+      "source": "This zone is created by a feedback driven flow of auxin towards the primordium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the inhibition zone model",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "a4ca2a1c-3b76-478c-ae70-512299a78fce",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C86",
+      "claim": "A mathematical model by Refahi et al. calculates a probability for each cell to form a new primordium at every timepoint.",
+      "claim_type": "EXPLICIT",
+      "source": "A mathematical model by Refahi et al (Refahi et al., 2016). divides the central zone periphery into discrete units or cells and calculates a probability for each cell to form a new primordium at every timepoint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the Refahi et al. model",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "812213f8-c1bc-4f99-9739-963f7fc5d9fb",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C87",
+      "claim": "According to the Refahi et al. model, the radius of the inhibition zones is inversely proportional to the number of co-initiating primordia.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the model, the radius of the inhibition zones is inversely proportional to the number of co-initiatiating primordia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the Refahi et al. model",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "f5c91c9f-9388-48e5-ae80-b4a3fa3f2284",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C88",
+      "claim": "Lower feedback strength was hypothesized to lead to a less sharp auxin gradient around each primordium and thus a larger inhibition zone.",
+      "claim_type": "EXPLICIT",
+      "source": "In auxin HACR plants with a PIN1 gRNA, we hypothesized that lower feedback strength would lead to a less sharp auxin gradient around each primordium and thus a larger inhibition zone (Bennett et al., 2014) (Figure 3F, as shown in the blue meristem).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Hypothesis based on Bennett et al., 2014 and illustrated in Figure 3F",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "f4e447ac-49f9-4268-a5a9-2d690c5271e7",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C89",
+      "claim": "Plants with a HACR targeting PIN1 showed a significant reduction in co-initiations.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this prediction, plants with a HACR targeting PIN1 showed a significant reduction in co-initiations (Figure 3G, Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3G and Figure 3\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "d5e872d8-cf07-4f02-8c44-d1f4bcb954d1",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C90",
+      "claim": "The HACR platform enabled exploration of previously inaccessible parameter regimes by making it possible to alter transcriptional feedback strength rather than simply gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "By making it possible to alter transcriptional feedback strength rather than simply gene expression, the HACR platform enabled exploration of previously inaccessible parameter regimes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the capabilities demonstrated",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "478dbc3d-ef0e-48dd-8433-885db9c15f80",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C91",
+      "claim": "The modular nature of HACRs allows for independent tuning of hormone sensitivity and repression strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the modular nature of HACRs allows for independent tuning of hormone sensitivity and repression strength (Khakhar et al., 2016), as well as allowing for tissue-specific modulation of target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Khakhar et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "51db56a2-f129-4145-967c-ebee51099d4d",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C92",
+      "claim": "HACRs allow for tissue-specific modulation of target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the modular nature of HACRs allows for independent tuning of hormone sensitivity and repression strength (Khakhar et al., 2016), as well as allowing for tissue-specific modulation of target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the modular design of HACRs",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "35fa6229-cd97-4b9a-ae3a-826452084a7a",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C93",
+      "claim": "The use of HACRs is among the first examples of utilizing synthetic signaling systems to re-engineer the morphology of a multicellular organism in a model-driven manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of HACRs here is among the first examples of utilizing synthetic signaling systems to re-engineer the morphology of a multicellular organism in a model-driven manner, a long standing goal across the fields of pattern formation and tissue engineering, and this strategy should be extensible to a wide variety of organisms, particularly given the success of implementing the auxin-induced degradation module (AID) in diverse eukaryotes (Nishimura et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the significance of the work with citation to Nishimura et al., 2009",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "d81d596b-8e57-4366-bdc8-60e59587f1ad",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C94",
+      "claim": "The HACR strategy should be extensible to a wide variety of organisms, particularly given the success of implementing the auxin-induced degradation module (AID) in diverse eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of HACRs here is among the first examples of utilizing synthetic signaling systems to re-engineer the morphology of a multicellular organism in a model-driven manner, a long standing goal across the fields of pattern formation and tissue engineering, and this strategy should be extensible to a wide variety of organisms, particularly given the success of implementing the auxin-induced degradation module (AID) in diverse eukaryotes (Nishimura et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation supported by citation to Nishimura et al., 2009",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "7f50d806-3a81-48c7-af44-d9244ceae7bf",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C95",
+      "claim": "Farmers already manipulate development or defense pathways by applying hormones or their synthetic mimics.",
+      "claim_type": "EXPLICIT",
+      "source": "In agricultural settings, farmers already manipulate development or defense pathways by applying hormones or their synthetic mimics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established agricultural practices",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "2fd5817b-9ed3-4926-b815-29237531a1c1",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C96",
+      "claim": "HACRs could be used to connect hormone treatments with the expression of genes to create inducible traits.",
+      "claim_type": "EXPLICIT",
+      "source": "HACRs could be used to connect these treatments with the expression of genes, such as those involved in defense, to create inducible traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential applications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "7b99a738-d916-4ceb-a221-cb1d55bca7e1",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C97",
+      "claim": "HACRs could be extended to any other hormone that utilizes degradation-based signaling, such as salicyclic acid, strigalactones and karrikins.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, HACRs could be extended to any other hormone that utilizes degradation-based signaling, such as salicyclic acid, strigalactones and karrikins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential extensions",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "56378634-00b8-43bb-86c1-7eb17d9f301e",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C98",
+      "claim": "HACRs have the capacity to reprogram a plethora of developmental traits in a broad range of crop species.",
+      "claim_type": "EXPLICIT",
+      "source": "The wide range of degradation cues, the ease of targeting any gene, and the likely conserved function across angiosperms should mean that HACRs have the capacity to reprogram a plethora of developmental traits in a broad range of crop species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about the potential applications of HACRs",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "a8d17b83-30ce-4d3a-86fd-f04444fd35f0",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C99",
+      "claim": "Expression cassettes for the gRNAs, HACRs and the reporters were built using Gibson assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression cassettes for the gRNAs, HACRs and the reporters were built using Gibson assembly (Gibson et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods with citation to Gibson et al., 2009",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "e3109cea-2c0b-4ebe-a2aa-a7a517f73c06",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C100",
+      "claim": "The rapidly degrading NdC truncation of the IAA17 degron was used for all the auxin HACRs described in the paper.",
+      "claim_type": "EXPLICIT",
+      "source": "The rapidly degrading NdC truncation of the IAA17 degron (Moss et al., 2015) was used for all the auxin HACRs described in the paper.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods with citation to Moss et al., 2015",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "8d6b21ea-ae14-4156-baec-0a41e3964d88",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C101",
+      "claim": "The JA HACR contained the degron from the Arabidopsis JAZ9 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The JA HACR contained the degron from the Arabidopsis JAZ9 protein (AT1G70700) (Katsir et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods with citation to Katsir et al., 2008",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "b44b21c5-02a2-4c86-8b8c-b0f562002d3a",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C102",
+      "claim": "The GA HACRs contained either GAI or RGA1 cloned from Arabidopsis cDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The GA HACRs contained either GAI (At1g14920) (Murase et al., 2008) or RGA1 (At2g01570) (Murase et al., 2008) cloned from Arabidopsis cDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods with citation to Murase et al., 2008",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "c97bc7a7-e6ba-4a0c-8082-a72510777a9f",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C103",
+      "claim": "The HACR repression domain was the nucleic acid sequence corresponding to the first 300 amino acids of the TOPLESS repressor (TPL).",
+      "claim_type": "EXPLICIT",
+      "source": "The HACR repression domain was the nucleic acid sequence corresponding to the first 300 amino acids of the TOPLESS repressor (TPL, At1g15750) (Pierre-Jerome et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods with citation to Pierre-Jerome et al., 2014",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "9f74ec3b-3c8e-434e-8c21-953b79439078",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C104",
+      "claim": "TPL is the co-repressor used in native auxin and JA signal transduction pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose this repression domain as TPL is the co-repressor used in native auxin and JA signal transduction pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of TPL function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "b5a22da8-9332-40a5-9044-72e515104cdb",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C105",
+      "claim": "All HACR reporter lines were built by transforming yeast artificial chromosome plasmids into Agrobacterium tumefaciens (GV3101) and using the resulting strains to transform Columbia-0 background by floral dip.",
+      "claim_type": "EXPLICIT",
+      "source": "All HACR reporter lines were built by transforming the yeast artificial chromosome plasmids described above into Agrobacterium tumefaciens (GV3101) and using the resulting strains to transform a Columbia-0 background by floral dip (Clough and Bent, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods with citation to Clough and Bent, 1998",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "0d922aaa-5a39-4418-a536-fc1a626f2d3e",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C106",
+      "claim": "Transformants were selected using a light pulse selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Transformants were then selected using a light pulse selection (Harrison et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods with citation to Harrison et al., 2006",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "16ad34d5-118c-4121-b198-c9a2dbabccd9",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C107",
+      "claim": "For all the HACR reporter genotypes, at least three lines were grown to the T2 and tested for their response to the appropriate hormone treatment with n = 10 for seedlings.",
+      "claim_type": "EXPLICIT",
+      "source": "For all the HACR reporter genotypes (Figures 1 and 2) at least three lines were grown to the T2 and tested for their response to the appropriate hormone treatment with n = 10 for seedlings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "de2fb0c7-8ce9-4346-8a0b-ed00be0d8c5d",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C108",
+      "claim": "Three different auxin HACR backgrounds were transformed with a gRNA targeting PIN1.",
+      "claim_type": "EXPLICIT",
+      "source": "Three different auxin HACR backgrounds were transformed with a gRNA targeting PIN1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "d9198fed-ebcc-4f80-a9d2-733abb3a6774",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C109",
+      "claim": "The branching of three independent lines in each HACR background was characterized in the T2 at n = 5.",
+      "claim_type": "EXPLICIT",
+      "source": "The branching of three independent lines, representing three independent PIN1 gRNA insertion events, in each HACR background was characterized in the T2 at n = 5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "c7b422a0-5673-4b53-b911-9c37bcfd42d8",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C110",
+      "claim": "Several lines were characterized in the T3 at n > 20 both with and without selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Several lines were characterized in the T3 at n > 20 both with and without selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "6cc1702a-c4d4-4f9f-982a-bfcc9f7616eb",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C111",
+      "claim": "The number of co-initiations of three independent lines in one HACR background was characterized in the T2 at n = 5.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of co-initiations of three independent lines in one HACR background was characterized in the T2 at n = 5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "a92136e2-c3ad-4a69-aa47-6604891aad21",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "claim_id": "C112",
+      "claim": "The number of co-initiating siliques of one line was characterized in the T3 at n = 25.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of co-initiating siliques of one of these lines was characterized in the T3 at n = 25.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "df2caf4b-3ee3-493a-bd80-2387793e89f2",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors designed and constructed synthetic hormone-activated Cas9-based repressors (HACRs) in Arabidopsis thaliana that respond to auxin, gibberellins, and jasmonates. The HACR design fuses dCas9 to hormone-sensitive degrons and a TOPLESS repressor domain, enabling hormone-triggered relief of transcriptional repression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 and C36-C41 describe the HACR design and mechanism, supported by detailed molecular descriptions (C38-C40) and methodological details (C99-C106). The design is based on prior work in yeast (C37) and uses well-characterized components with appropriate citations. The construction methods are clearly described with sufficient detail for reproducibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "83501a55-e175-4a07-8c33-90a30fc64743",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "HACRs respond to exogenous hormone treatments in a dose-dependent and hormone-specific manner. Auxin treatment increased reporter fluorescence with a significant spike peaking at ~80 min (p<0.001, n=10), while a stabilized degron control showed significantly reduced response (p=0.01, n=10). HACR variants with jasmonate and gibberellin degrons also showed significant hormone-specific responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 provide quantitative data with statistical significance and appropriate sample sizes (n=10). The stabilized degron control (C44) is a critical negative control demonstrating specificity. Claims C46-C47 extend the modularity to other hormones with supporting data in Figure 1. The experimental design (C107) indicates multiple independent lines were tested, strengthening the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "83b1ed2d-40ae-4513-beaa-3f4fe9f8b4fa",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "HACRs are sensitive to local differences in endogenous hormone levels during development. A ratiometric auxin HACR recapitulated known auxin distribution patterns including the reverse fountain pattern in root tips, higher vasculature signal, and accumulation in lateral root primordia and embryonic tissues. GA and JA HACRs showed expected patterns in endosperm and wounded leaves, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 demonstrate that HACR-reported auxin distributions match established patterns from prior reporters (DII-VENUS, R2D2), with appropriate citations to Band et al., 2014 and Liao et al., 2015. The ratiometric design (C49) controls for differential promoter activity. GA HACR patterns (C55) match GA biosynthesis enzyme expression. JA HACR response to mechanical damage (C58) aligns with known JA biology. The convergence of multiple hormone systems and developmental contexts strongly supports endogenous hormone sensitivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "c01e0521-5d85-43e7-832f-feb8c83f4f9c",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Deploying a HACR to modulate auxin-induced expression of PIN1 decreased shoot branching by approximately half in the strongest lines and reduced phyllotactic noise. A mathematical model predicted dampened PIN1 dose-response, which was confirmed by qPCR showing reduced PIN1 expression that could be rescued by exogenous auxin. A stabilized degron control showed no branching phenotype, indicating the effect requires auxin-responsive degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 describe model predictions validated by qPCR data (Figure 3\u2014figure supplement 1D). The branching phenotype (C79-C80) is supported by data from multiple independent lines across different HACR backgrounds (C108-C110) with appropriate sample sizes (n=5 in T2, n>20 in T3). The stabilized degron control (C81-C82) is critical for demonstrating that the phenotype results from modulating feedback strength rather than simple repression. The convergence of modeling, molecular data, and phenotypic analysis across multiple lines provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "e6c97f8d-4cbd-4ddb-9aa1-087f880608b4",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Plants with a HACR targeting PIN1 showed a significant reduction in co-initiations of lateral organs, consistent with model predictions that reduced feedback strength increases inhibition zone size. This was characterized in T2 (n=5) and T3 (n=25) generations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C89 reports a significant reduction in co-initiations supported by data in Figure 3G and Figure 3\u2014figure supplement 4. The hypothesis (C88) is grounded in established models (Refahi et al., 2016; Bennett et al., 2014) described in C83-C87. The experimental design (C111-C112) includes appropriate replication across generations. However, the manuscript does not report p-values for the co-initiation phenotype, which is a minor weakness compared to the branching data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "fbdddf42-2966-4d1b-a7f5-48052bb3d69b",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Mathematical models predict that feedback strength\u2014the degree to which auxin promotes its own polar transport\u2014is a key parameter controlling branching and phyllotaxy. One mechanism contributing to this feedback is auxin-induced PIN1 expression, but it has been impossible to tune this transcriptional feedback strength until now.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 are well-supported by citations to established models (Bennett et al., 2014; Vieten et al., 2005). Claims C73-C76 accurately describe the Prusinkiewicz et al. model. Claim C66 correctly identifies a gap in the field. The hypothesis (C77-C78) that transcriptional feedback modulation would have similar effects to post-translational feedback is reasonable but represents an extrapolation from existing models, which is appropriately framed as a hypothesis to be tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "902ad656-e515-47b0-b7d5-937e52b64f5d",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The HACR platform enables exploration of previously inaccessible parameter regimes by modulating transcriptional feedback strength rather than simply altering gene expression. The modular design allows independent tuning of hormone sensitivity, repression strength, and tissue-specificity. This represents one of the first examples of using synthetic signaling systems to re-engineer multicellular organism morphology in a model-driven manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C90 is a reasonable inference from the demonstrated capabilities (C71, C79-C82). Claim C91 is supported by citation to prior work (Khakhar et al., 2016) demonstrating modularity. Claim C92 is a logical inference from the modular design. Claim C93 is appropriately qualified as \"among the first examples\" and supported by citation to Nishimura et al., 2009 regarding AID system extensibility. These claims synthesize the significance of the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "53c2bcf6-7370-4a10-b822-b7d4f5177310",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Plant developmental programs sculpt morphology and have been manipulated for agricultural productivity. Hormones coordinate these programs through chemical circuitry that has been represented in mathematical models, but model-guided engineering has been limited by lack of tools. Mathematical models highlight the importance of subtle parameters like feedback loop strength in determining morphology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 and C13-C23 provide background context supported by appropriate citations to established literature (Doebley et al., 1997; Khush, 2001; Vanstraelen and Benkov\u00e1, 2012; Refahi et al., 2016; Prusinkiewicz et al., 2009; Weijers and Wagner, 2015/2016). These claims establish the motivation and context for the work. All citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "4fb96e29-b6a6-4482-a306-94177c342548",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Native hormone signaling pathways are complex, redundant, and embedded in cross-regulatory networks, making them difficult to manipulate. Existing approaches (altering expression of native components or using chimeric promoters) have significant limitations. There is a need for tools that can predictably alter how specific hormones regulate genes of interest.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C29 accurately describe the complexity of native hormone signaling with appropriate citations (Weijers and Wagner, 2015/2016; Koltai, 2015; Naseem et al., 2015). Claims C31-C35 identify limitations of existing approaches with supporting citations (Voytas and Gao, 2014; Ulmasov, 1997; Rushton et al., 2002). Claim C30 articulates the need addressed by this work. These claims effectively establish the problem and justify the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "9ee67bcf-e9f9-430b-a5f0-e4efa2492852",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Shoot architecture is an agronomically important trait with well-established connections to auxin. Fewer branches enable higher density planting, and more regular phyllotaxy facilitates mechanized harvest. The molecular mechanisms controlling these traits have been mathematically modeled.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 provide context for the choice of shoot architecture as a test case, with appropriate citations (Khush, 2001; Burks et al., 2005; Refahi et al., 2016; Prusinkiewicz et al., 2009). These claims establish the agricultural relevance and modeling foundation for the experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    },
+    {
+      "id": "1e2714cb-4060-47cb-b42f-a0718ed5e610",
+      "content_id": "f37ca3c6-2a24-46cb-b7bb-f427bcccfd02",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The HACR strategy should be extensible to diverse organisms given the success of AID systems in eukaryotes. HACRs could be used to create inducible traits by connecting existing agricultural hormone treatments with gene expression, and could be extended to other degradation-based hormone signaling systems. HACRs have the capacity to reprogram developmental traits in a broad range of crop species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C94-C98 are speculative about future applications and extensibility. While C94 is supported by citation to Nishimura et al., 2009 regarding AID system success, and C95 correctly notes existing agricultural practices, claims C96-C98 are projections about potential applications without experimental validation. These are reasonable speculations based on the demonstrated proof-of-concept, but remain to be tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:26:11.848230Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9febc358-038d-4edb-bb74-ffd2bb1a2dd5",
+      "result_id": "df2caf4b-3ee3-493a-bd80-2387793e89f2"
+    },
+    {
+      "claim_id": "c2a39447-a2c8-4d98-b2cf-5e3c79604e88",
+      "result_id": "df2caf4b-3ee3-493a-bd80-2387793e89f2"
+    },
+    {
+      "claim_id": "8b55f4f3-3c98-4e8d-825b-616ae2b2acbb",
+      "result_id": "df2caf4b-3ee3-493a-bd80-2387793e89f2"
+    },
+    {
+      "claim_id": "a59574dd-aac3-4d94-b302-5f6feb3ce0b8",
+      "result_id": "df2caf4b-3ee3-493a-bd80-2387793e89f2"
+    },
+    {
+      "claim_id": "31c8c728-f49f-4b53-8982-35dbaa6180a4",
+      "result_id": "df2caf4b-3ee3-493a-bd80-2387793e89f2"
+    },
+    {
+      "claim_id": "f516da29-c8cd-45e3-938b-2f8af69b3762",
+      "result_id": "df2caf4b-3ee3-493a-bd80-2387793e89f2"
+    },
+    {
+      "claim_id": "4f7a36ee-054a-4bd3-a42d-d80298b9b542",
+      "result_id": "df2caf4b-3ee3-493a-bd80-2387793e89f2"
+    },
+    {
+      "claim_id": "de589bce-a850-4a2c-bc35-f2a8328c8629",
+      "result_id": "df2caf4b-3ee3-493a-bd80-2387793e89f2"
+    },
+    {
+      "claim_id": "a8d17b83-30ce-4d3a-86fd-f04444fd35f0",
+      "result_id": "df2caf4b-3ee3-493a-bd80-2387793e89f2"
+    },
+    {
+      "claim_id": "e3109cea-2c0b-4ebe-a2aa-a7a517f73c06",
+      "result_id": "df2caf4b-3ee3-493a-bd80-2387793e89f2"
+    },
+    {
+      "claim_id": "8d6b21ea-ae14-4156-baec-0a41e3964d88",
+      "result_id": "df2caf4b-3ee3-493a-bd80-2387793e89f2"
+    },
+    {
+      "claim_id": "b44b21c5-02a2-4c86-8b8c-b0f562002d3a",
+      "result_id": "df2caf4b-3ee3-493a-bd80-2387793e89f2"
+    },
+    {
+      "claim_id": "c97bc7a7-e6ba-4a0c-8082-a72510777a9f",
+      "result_id": "df2caf4b-3ee3-493a-bd80-2387793e89f2"
+    },
+    {
+      "claim_id": "9f74ec3b-3c8e-434e-8c21-953b79439078",
+      "result_id": "df2caf4b-3ee3-493a-bd80-2387793e89f2"
+    },
+    {
+      "claim_id": "b5a22da8-9332-40a5-9044-72e515104cdb",
+      "result_id": "df2caf4b-3ee3-493a-bd80-2387793e89f2"
+    },
+    {
+      "claim_id": "0d922aaa-5a39-4418-a536-fc1a626f2d3e",
+      "result_id": "df2caf4b-3ee3-493a-bd80-2387793e89f2"
+    },
+    {
+      "claim_id": "204f0bee-a10e-496a-ae12-9117c13d5f8c",
+      "result_id": "83501a55-e175-4a07-8c33-90a30fc64743"
+    },
+    {
+      "claim_id": "36598d1c-1078-4e2f-b181-7393fc8f3762",
+      "result_id": "83501a55-e175-4a07-8c33-90a30fc64743"
+    },
+    {
+      "claim_id": "fc7988ea-3e99-48b9-a807-c56aaeb2f52b",
+      "result_id": "83501a55-e175-4a07-8c33-90a30fc64743"
+    },
+    {
+      "claim_id": "b9a5631c-d4ae-40d3-ba4b-bef88bb84073",
+      "result_id": "83501a55-e175-4a07-8c33-90a30fc64743"
+    },
+    {
+      "claim_id": "a2567f4e-45e7-457e-b2ea-8c1c5ddab93b",
+      "result_id": "83501a55-e175-4a07-8c33-90a30fc64743"
+    },
+    {
+      "claim_id": "1fabf6ab-93ad-4b6b-a32a-7e54e241d10f",
+      "result_id": "83501a55-e175-4a07-8c33-90a30fc64743"
+    },
+    {
+      "claim_id": "b2e4d166-11f0-4352-8760-f6ddc5919ec5",
+      "result_id": "83501a55-e175-4a07-8c33-90a30fc64743"
+    },
+    {
+      "claim_id": "16ad34d5-118c-4121-b198-c9a2dbabccd9",
+      "result_id": "83501a55-e175-4a07-8c33-90a30fc64743"
+    },
+    {
+      "claim_id": "10f0e07a-8a27-4791-b1fc-add6f449bd9c",
+      "result_id": "83b1ed2d-40ae-4513-beaa-3f4fe9f8b4fa"
+    },
+    {
+      "claim_id": "e621bd63-bcf1-40c7-ba41-8a4e32e0562c",
+      "result_id": "83b1ed2d-40ae-4513-beaa-3f4fe9f8b4fa"
+    },
+    {
+      "claim_id": "136f8a91-9c92-4ba2-ada2-cd5dfba1f0ef",
+      "result_id": "83b1ed2d-40ae-4513-beaa-3f4fe9f8b4fa"
+    },
+    {
+      "claim_id": "47470133-404a-461c-8064-c35ba27bcc8e",
+      "result_id": "83b1ed2d-40ae-4513-beaa-3f4fe9f8b4fa"
+    },
+    {
+      "claim_id": "d36807bf-aaa7-4b80-a971-c32fdb0d6fff",
+      "result_id": "83b1ed2d-40ae-4513-beaa-3f4fe9f8b4fa"
+    },
+    {
+      "claim_id": "afc4f801-fef8-4462-a643-af5f2c723c4c",
+      "result_id": "83b1ed2d-40ae-4513-beaa-3f4fe9f8b4fa"
+    },
+    {
+      "claim_id": "decc568e-0847-4f28-8528-a05907609f05",
+      "result_id": "83b1ed2d-40ae-4513-beaa-3f4fe9f8b4fa"
+    },
+    {
+      "claim_id": "8e4e588c-0968-4397-bc41-4a6eca1976ea",
+      "result_id": "83b1ed2d-40ae-4513-beaa-3f4fe9f8b4fa"
+    },
+    {
+      "claim_id": "c856511f-f087-4b1a-aa36-f7bc247ac84b",
+      "result_id": "83b1ed2d-40ae-4513-beaa-3f4fe9f8b4fa"
+    },
+    {
+      "claim_id": "2d171960-45f1-4122-8aef-4ade800875a1",
+      "result_id": "83b1ed2d-40ae-4513-beaa-3f4fe9f8b4fa"
+    },
+    {
+      "claim_id": "e5932f06-eed1-4618-82f0-5b7194e4bef3",
+      "result_id": "83b1ed2d-40ae-4513-beaa-3f4fe9f8b4fa"
+    },
+    {
+      "claim_id": "762b889e-852f-41b3-a439-63d18a7d6d6e",
+      "result_id": "83b1ed2d-40ae-4513-beaa-3f4fe9f8b4fa"
+    },
+    {
+      "claim_id": "43eabad2-5f4e-4804-af9a-4622f3eae915",
+      "result_id": "c01e0521-5d85-43e7-832f-feb8c83f4f9c"
+    },
+    {
+      "claim_id": "dabcb542-85d4-4eac-8a09-ade9266aa12c",
+      "result_id": "c01e0521-5d85-43e7-832f-feb8c83f4f9c"
+    },
+    {
+      "claim_id": "fc972d6a-de89-46d0-97b8-aaf020f5d705",
+      "result_id": "c01e0521-5d85-43e7-832f-feb8c83f4f9c"
+    },
+    {
+      "claim_id": "087c74ce-81f2-41eb-af1f-966ccafe558e",
+      "result_id": "c01e0521-5d85-43e7-832f-feb8c83f4f9c"
+    },
+    {
+      "claim_id": "31853d65-386b-4474-9d9d-e6ae8d190232",
+      "result_id": "c01e0521-5d85-43e7-832f-feb8c83f4f9c"
+    },
+    {
+      "claim_id": "5f066858-ed19-412c-8771-db8b8a084d85",
+      "result_id": "c01e0521-5d85-43e7-832f-feb8c83f4f9c"
+    },
+    {
+      "claim_id": "6fe532a8-76d8-4a7e-ab18-9cc0125b7a29",
+      "result_id": "c01e0521-5d85-43e7-832f-feb8c83f4f9c"
+    },
+    {
+      "claim_id": "52b16b2e-5a83-48e7-95e6-f719b3a5c832",
+      "result_id": "c01e0521-5d85-43e7-832f-feb8c83f4f9c"
+    },
+    {
+      "claim_id": "fb0f1d4d-ad50-460e-92a6-2869620a7ded",
+      "result_id": "c01e0521-5d85-43e7-832f-feb8c83f4f9c"
+    },
+    {
+      "claim_id": "a035603e-e35c-45c8-8b5a-50e90dfe5801",
+      "result_id": "c01e0521-5d85-43e7-832f-feb8c83f4f9c"
+    },
+    {
+      "claim_id": "f1b75db0-9913-41d3-b1da-bba6bae63305",
+      "result_id": "c01e0521-5d85-43e7-832f-feb8c83f4f9c"
+    },
+    {
+      "claim_id": "4f2133e1-8765-476e-85b9-dd4f7baeeb3b",
+      "result_id": "c01e0521-5d85-43e7-832f-feb8c83f4f9c"
+    },
+    {
+      "claim_id": "de2fb0c7-8ce9-4346-8a0b-ed00be0d8c5d",
+      "result_id": "c01e0521-5d85-43e7-832f-feb8c83f4f9c"
+    },
+    {
+      "claim_id": "d9198fed-ebcc-4f80-a9d2-733abb3a6774",
+      "result_id": "c01e0521-5d85-43e7-832f-feb8c83f4f9c"
+    },
+    {
+      "claim_id": "c7b422a0-5673-4b53-b911-9c37bcfd42d8",
+      "result_id": "c01e0521-5d85-43e7-832f-feb8c83f4f9c"
+    },
+    {
+      "claim_id": "f4e447ac-49f9-4268-a5a9-2d690c5271e7",
+      "result_id": "e6c97f8d-4cbd-4ddb-9aa1-087f880608b4"
+    },
+    {
+      "claim_id": "85426df1-b311-474a-aef7-5b404d8f4057",
+      "result_id": "e6c97f8d-4cbd-4ddb-9aa1-087f880608b4"
+    },
+    {
+      "claim_id": "0742fce1-85e7-48ff-bcc3-0f3db6e14d86",
+      "result_id": "e6c97f8d-4cbd-4ddb-9aa1-087f880608b4"
+    },
+    {
+      "claim_id": "65347312-0510-4686-9a7a-9c8de32088f8",
+      "result_id": "e6c97f8d-4cbd-4ddb-9aa1-087f880608b4"
+    },
+    {
+      "claim_id": "a4ca2a1c-3b76-478c-ae70-512299a78fce",
+      "result_id": "e6c97f8d-4cbd-4ddb-9aa1-087f880608b4"
+    },
+    {
+      "claim_id": "812213f8-c1bc-4f99-9739-963f7fc5d9fb",
+      "result_id": "e6c97f8d-4cbd-4ddb-9aa1-087f880608b4"
+    },
+    {
+      "claim_id": "f5c91c9f-9388-48e5-ae80-b4a3fa3f2284",
+      "result_id": "e6c97f8d-4cbd-4ddb-9aa1-087f880608b4"
+    },
+    {
+      "claim_id": "6cc1702a-c4d4-4f9f-982a-bfcc9f7616eb",
+      "result_id": "e6c97f8d-4cbd-4ddb-9aa1-087f880608b4"
+    },
+    {
+      "claim_id": "a92136e2-c3ad-4a69-aa47-6604891aad21",
+      "result_id": "e6c97f8d-4cbd-4ddb-9aa1-087f880608b4"
+    },
+    {
+      "claim_id": "a88ed566-792e-4817-8757-5fedf02fc0b3",
+      "result_id": "fbdddf42-2966-4d1b-a7f5-48052bb3d69b"
+    },
+    {
+      "claim_id": "7191b5c8-a450-4d3d-9c97-09e31da1ed27",
+      "result_id": "fbdddf42-2966-4d1b-a7f5-48052bb3d69b"
+    },
+    {
+      "claim_id": "9281489b-42d1-4560-b663-1a645c8441b5",
+      "result_id": "fbdddf42-2966-4d1b-a7f5-48052bb3d69b"
+    },
+    {
+      "claim_id": "8f54738f-b799-4638-964e-3623c7dd1c21",
+      "result_id": "fbdddf42-2966-4d1b-a7f5-48052bb3d69b"
+    },
+    {
+      "claim_id": "5ebb08dc-6b2e-4957-86c0-9fc01a5e5f88",
+      "result_id": "fbdddf42-2966-4d1b-a7f5-48052bb3d69b"
+    },
+    {
+      "claim_id": "24d686ce-949e-44e4-b57c-f491cc23ca04",
+      "result_id": "fbdddf42-2966-4d1b-a7f5-48052bb3d69b"
+    },
+    {
+      "claim_id": "7f77b05e-34ef-47cd-a1dd-068ebac69314",
+      "result_id": "fbdddf42-2966-4d1b-a7f5-48052bb3d69b"
+    },
+    {
+      "claim_id": "06b088d7-66b6-4a04-88aa-4ee027b4b82e",
+      "result_id": "fbdddf42-2966-4d1b-a7f5-48052bb3d69b"
+    },
+    {
+      "claim_id": "96b7713b-8968-4430-bd2f-67ff64418309",
+      "result_id": "fbdddf42-2966-4d1b-a7f5-48052bb3d69b"
+    },
+    {
+      "claim_id": "d5e872d8-cf07-4f02-8c44-d1f4bcb954d1",
+      "result_id": "902ad656-e515-47b0-b7d5-937e52b64f5d"
+    },
+    {
+      "claim_id": "478dbc3d-ef0e-48dd-8433-885db9c15f80",
+      "result_id": "902ad656-e515-47b0-b7d5-937e52b64f5d"
+    },
+    {
+      "claim_id": "51db56a2-f129-4145-967c-ebee51099d4d",
+      "result_id": "902ad656-e515-47b0-b7d5-937e52b64f5d"
+    },
+    {
+      "claim_id": "35fa6229-cd97-4b9a-ae3a-826452084a7a",
+      "result_id": "902ad656-e515-47b0-b7d5-937e52b64f5d"
+    },
+    {
+      "claim_id": "80086145-e960-423c-947d-7d5cd6040d32",
+      "result_id": "53c2bcf6-7370-4a10-b822-b7d4f5177310"
+    },
+    {
+      "claim_id": "fcb8d47d-3108-41e0-adca-f0ffb22fdcd4",
+      "result_id": "53c2bcf6-7370-4a10-b822-b7d4f5177310"
+    },
+    {
+      "claim_id": "11611bda-f01d-4df5-9e68-14a9fac723d7",
+      "result_id": "53c2bcf6-7370-4a10-b822-b7d4f5177310"
+    },
+    {
+      "claim_id": "d2761ebd-47a6-4729-8385-aea5c70384f2",
+      "result_id": "53c2bcf6-7370-4a10-b822-b7d4f5177310"
+    },
+    {
+      "claim_id": "202c01a0-66cc-4dcb-adc6-38472b53503d",
+      "result_id": "53c2bcf6-7370-4a10-b822-b7d4f5177310"
+    },
+    {
+      "claim_id": "93ef37c7-749c-44c0-acdf-7dca66d33bdc",
+      "result_id": "53c2bcf6-7370-4a10-b822-b7d4f5177310"
+    },
+    {
+      "claim_id": "3d3a29f4-786a-4bff-bd06-df4a9b9cb096",
+      "result_id": "53c2bcf6-7370-4a10-b822-b7d4f5177310"
+    },
+    {
+      "claim_id": "f2a5a6d5-b1b9-4205-a839-6709b6839d92",
+      "result_id": "53c2bcf6-7370-4a10-b822-b7d4f5177310"
+    },
+    {
+      "claim_id": "fa4491d1-e94f-4949-a1ee-2821e4efbfa0",
+      "result_id": "53c2bcf6-7370-4a10-b822-b7d4f5177310"
+    },
+    {
+      "claim_id": "4abf1bf9-687e-41a0-bdde-3ad1dbfd4169",
+      "result_id": "53c2bcf6-7370-4a10-b822-b7d4f5177310"
+    },
+    {
+      "claim_id": "e2640cd6-a623-4bbb-958d-d83c190d4a73",
+      "result_id": "53c2bcf6-7370-4a10-b822-b7d4f5177310"
+    },
+    {
+      "claim_id": "a168d433-fdf0-4ee1-b1dc-db8f71ebe543",
+      "result_id": "53c2bcf6-7370-4a10-b822-b7d4f5177310"
+    },
+    {
+      "claim_id": "9188bf29-1b67-411c-89d1-72f70484e00d",
+      "result_id": "53c2bcf6-7370-4a10-b822-b7d4f5177310"
+    },
+    {
+      "claim_id": "0dfcb32d-f54e-4c87-b8e9-42141f118885",
+      "result_id": "53c2bcf6-7370-4a10-b822-b7d4f5177310"
+    },
+    {
+      "claim_id": "90b19a1a-f030-42d9-b47b-770379978cfb",
+      "result_id": "53c2bcf6-7370-4a10-b822-b7d4f5177310"
+    },
+    {
+      "claim_id": "e88877a3-1c78-4823-ace0-2ba5e010cad3",
+      "result_id": "53c2bcf6-7370-4a10-b822-b7d4f5177310"
+    },
+    {
+      "claim_id": "60dd5517-5dd8-4b51-b50f-d9950721ef7e",
+      "result_id": "4fb96e29-b6a6-4482-a306-94177c342548"
+    },
+    {
+      "claim_id": "8846cefd-5097-4e07-b1b0-f7983da70e1b",
+      "result_id": "4fb96e29-b6a6-4482-a306-94177c342548"
+    },
+    {
+      "claim_id": "6f9f575f-d19a-4559-b6d8-80f56e978271",
+      "result_id": "4fb96e29-b6a6-4482-a306-94177c342548"
+    },
+    {
+      "claim_id": "e392d916-2077-431b-87ce-fb868c0c4402",
+      "result_id": "4fb96e29-b6a6-4482-a306-94177c342548"
+    },
+    {
+      "claim_id": "ce3352fb-2cd2-4a16-9138-0dba6c0754c9",
+      "result_id": "4fb96e29-b6a6-4482-a306-94177c342548"
+    },
+    {
+      "claim_id": "70c628ab-db29-4af9-acf1-d83d94f06837",
+      "result_id": "4fb96e29-b6a6-4482-a306-94177c342548"
+    },
+    {
+      "claim_id": "a1f43b8e-7e51-45a9-a91a-4f096f53e8f3",
+      "result_id": "4fb96e29-b6a6-4482-a306-94177c342548"
+    },
+    {
+      "claim_id": "54a96374-90ba-447c-9961-977d486688ac",
+      "result_id": "4fb96e29-b6a6-4482-a306-94177c342548"
+    },
+    {
+      "claim_id": "dc4e2040-fc5a-4ef2-88bc-2064dbad6492",
+      "result_id": "4fb96e29-b6a6-4482-a306-94177c342548"
+    },
+    {
+      "claim_id": "bc5b67fb-b393-4d97-b81d-02ae2febec9f",
+      "result_id": "4fb96e29-b6a6-4482-a306-94177c342548"
+    },
+    {
+      "claim_id": "549d669a-8389-4b7f-b3e9-d6d192527690",
+      "result_id": "4fb96e29-b6a6-4482-a306-94177c342548"
+    },
+    {
+      "claim_id": "94405d32-0762-4064-adee-3f2ff898fac6",
+      "result_id": "4fb96e29-b6a6-4482-a306-94177c342548"
+    },
+    {
+      "claim_id": "8a6d8887-7fd7-4862-97f3-b0193737da16",
+      "result_id": "9ee67bcf-e9f9-430b-a5f0-e4efa2492852"
+    },
+    {
+      "claim_id": "a43d35f7-e20f-4de0-8e11-1a5f6e579733",
+      "result_id": "9ee67bcf-e9f9-430b-a5f0-e4efa2492852"
+    },
+    {
+      "claim_id": "c228e797-864c-4ad4-b3e5-5a732b6a38e2",
+      "result_id": "9ee67bcf-e9f9-430b-a5f0-e4efa2492852"
+    },
+    {
+      "claim_id": "f6eacaa1-163e-4fa1-bc4c-8dbc11b56db6",
+      "result_id": "9ee67bcf-e9f9-430b-a5f0-e4efa2492852"
+    },
+    {
+      "claim_id": "d81d596b-8e57-4366-bdc8-60e59587f1ad",
+      "result_id": "1e2714cb-4060-47cb-b42f-a0718ed5e610"
+    },
+    {
+      "claim_id": "7f50d806-3a81-48c7-af44-d9244ceae7bf",
+      "result_id": "1e2714cb-4060-47cb-b42f-a0718ed5e610"
+    },
+    {
+      "claim_id": "2fd5817b-9ed3-4926-b815-29237531a1c1",
+      "result_id": "1e2714cb-4060-47cb-b42f-a0718ed5e610"
+    },
+    {
+      "claim_id": "7b99a738-d916-4ceb-a221-cb1d55bca7e1",
+      "result_id": "1e2714cb-4060-47cb-b42f-a0718ed5e610"
+    },
+    {
+      "claim_id": "56378634-00b8-43bb-86c1-7eb17d9f301e",
+      "result_id": "1e2714cb-4060-47cb-b42f-a0718ed5e610"
+    }
+  ],
+  "comparisons": []
+}

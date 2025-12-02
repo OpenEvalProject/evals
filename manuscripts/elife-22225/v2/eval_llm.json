@@ -1,0 +1,124 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The manuscript reviews established knowledge about short-term memory, including its role in intelligence, capacity limitations, temporal decay, and the hypothesis that persistent neural activity underlies memory storage with degradation over time due to noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are all supported by appropriate citations to prior work in the field. These claims establish the background and motivation for the study, citing well-established findings about memory capacity limits, temporal decay, and neural mechanisms. The citations appear appropriate and the claims represent accurate summaries of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C34"
+    ],
+    "result": "In a delayed orientation estimation task with 10 subjects, response accuracy degraded significantly with delay duration when 6 items were presented, with statistical significance (F(3,36)=6.15, p=0.002 for errors <10 degrees).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 is directly supported by experimental data shown in Figure 1C with appropriate statistical tests reported. Claim C34 describes a basic methodological detail about subject inclusion criteria. The experimental design appears sound with appropriate controls and statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C21"
+    ],
+    "result": "In ring attractor networks, rotations of the activity bump form a continuum of steady states, and noise leads to diffusive drift along this manifold, with diffusivity scaling inversely with neuron number and peak firing rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 are well-supported by established theory of ring attractor networks, with appropriate citations (particularly Burak and Fiete, 2012 for C21) and illustration in Figure 2. These represent established theoretical results that form the foundation for the direct storage model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C46"
+    ],
+    "result": "The direct storage model, where information is stored without encoding in persistent activity networks, fails to match human short-term memory performance, with p-values strongly suggesting rejection of the model for multiple item conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C46 are supported by quantitative comparison between model predictions (Equation 1) and experimental data shown in Figure 3A-B. Multiple p-values are reported (<0.05 for several conditions), and the systematic underestimation of error at short delays for 4- and 6-item curves provides clear evidence of model failure. The statistical analysis appears appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "The well-coded storage model predicts that increasing stored items degrades performance more steeply than increasing storage interval (because item number is in the exponent), and for a single item, decline with storage duration is predicted to be weak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are mathematical predictions directly derived from Equation 2, where K appears in the exponent as (1+1/2\ud835\udc9fT)^(-N/K). The mathematical form clearly supports these qualitative predictions about the differential scaling with K versus T. These are valid inferences from the theoretical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C47"
+    ],
+    "result": "Information-theoretic analysis shows that appropriate encoding before storage in persistent activity networks can enable substantially more faithful storage, and human performance is well-fit by the theoretical bound from well-coded storage (p-values mostly >0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by the information-theoretic derivation in the Materials and Methods leading to Equation 2. Claim C47 is supported by the fits shown in Figure 4E with reported p-values (0.99, 0.07, 0.75 for 1 item; 0.46, 0.07, 0.60 for 2 items; etc.) that are substantially better than the direct storage model. The BIC analysis (\u0394BIC\u224899) strongly favors the well-coded model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Well-coded storage requires substantially fewer neural resources (N/2\ud835\udc9f\u224822-32 seconds) compared to direct storage (N/2\ud835\udc9f\u22481215 seconds) for similar performance, representing a ~40-fold reduction in resource requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are supported by quantitative comparison of fitted parameters between the two models. The 40-fold difference in the resource parameter N/2\ud835\udc9f is clearly stated and represents a valid inference from the model fits. However, this comparison assumes both models achieve 'similar performance,' which is questionable given that the direct storage model is rejected by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Neural responses for short-term memory exhibit diverse tuning that is not as simple or uniform as typical classical population codes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by multiple citations to neurophysiological studies (Miller et al., 1996; Fuster and Alexander, 1971; Romo et al., 1999; Wang, 2001; Funahashi, 2006; Fuster and Jervey, 1981; Rigotti et al., 2013). This represents an accurate summary of prior neurophysiological findings that motivates the possibility of complex encoding schemes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "The finding that human performance matches the well-coded storage bound is consistent with the view that the brain might use codes that minimize noise effects in persistent activity storage, motivating the search for such codes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C48 is explicitly speculative (evidence_type includes 'SPECULATION'). While the fit of the well-coded model to data is good, this does not prove that the brain actually uses such codes. The claim appropriately uses cautious language ('might use,' 'consistent with'), but represents an interpretation rather than a demonstrated result. Alternative explanations are not ruled out.",
+    "result_type": "MAJOR"
+  }
+]

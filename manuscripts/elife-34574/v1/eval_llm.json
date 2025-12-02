@@ -1,0 +1,309 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C25",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C43",
+      "C45",
+      "C46",
+      "C47",
+      "C98",
+      "C99"
+    ],
+    "result": "Stu2 polymerase activity does not require different kinds of TOG domains, nor strict requirements for how TOGs are linked. Variants with only TOG1 or TOG2 domains retain activity (~40-60% of wild-type), and monomeric/dimeric variants with equivalent TOG numbers show comparable activity when basic region charge is matched.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C25, C34-C39 provide direct experimental evidence from dose-response curves (Figure 1) showing that Stu2 variants with single TOG types retain polymerase activity. Claims C43, C45-C46 demonstrate that activity scales with TOG number regardless of linkage. The data consistently support that TOG identity and linkage architecture have minimal impact on activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Polymerase activity is modulated by the strength of the basic region. Monomeric Stu2-\u0394cc shows reduced activity and end-binding affinity, but supercharging the basic region (2xBasic) restores high-affinity end-binding and activity comparable to dimeric two-TOG variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 provide experimental data (Figure 1D,F) showing that increasing basic region charge rescues the defects of monomeric variants. This directly demonstrates that basic region strength modulates activity, supporting C44.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "A positional effect exists where the basic-proximal TOG domain (TOG2) is critical for polymerase function. Deleting TOG2 abolishes activity and end-localization, while inactivating it increases specific activity. TOG position relative to the basic region, not TOG identity, determines end accumulation and activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 show differential end accumulation (Figure 2B), C53 demonstrates positional effects cannot be rescued by TOG swapping, and C56-C59 show deletion vs. mutation phenotypes. The genetic rescue data (C59) and spacing experiments provide converging evidence for positional requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Stu2 is a modestly processive polymerase with ~2 second residence time, adding ~16 tubulins per binding event. Inactivating the basic-proximal TOG2 domain increases residence time (~4 seconds) and processivity, while inactivating TOG1 has minimal effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 provide direct measurements from single-molecule tracking (Figure 3) establishing processivity parameters. Claims C68-C71 show differential effects of TOG inactivation on residence time with clear experimental support. The calculations linking residence time to tubulin addition are transparent and reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C26",
+      "C27",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C85"
+    ],
+    "result": "An unexpected antagonism exists between TOG:tubulin binding and basic:lattice interactions. When TOGs are empty, Stu2 coats the lattice strongly; when at least two TOGs engage tubulin, lattice binding is attenuated and plus-end specificity is restored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 provide direct experimental evidence (Figure 4) showing that doubly-dead variants coat the lattice while variants with \u22652 active TOGs show tip localization. Claims C79-C80 confirm this with stabilized microtubules. The requirement for at least two TOG:tubulin interactions is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Lateral contacts between TOG-bound tubulins are important for tubulin-induced antagonism of basic:lattice interactions. Tubulin C-termini and longitudinal contacts are not required, but mutations blocking lateral interfaces prevent attenuation of lattice binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are supported by systematic testing of tubulin mutants (Figure 5B, Figure 5\u2014figure supplement 2). The tail-less tubulin experiment (C81-C82) rules out one mechanism, while lateral interface mutants (C84) provide positive evidence for the importance of lateral contacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The antagonism between lattice binding and TOG:tubulin engagement is conserved in the Stu2/XMAP215 family. Zyg-9 from C. elegans shows the same tubulin-dependent attenuation of lattice binding as Stu2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 provide direct experimental evidence (Figure 5D) showing that Zyg-9 exhibits the same behavior as Stu2. This supports the broader conclusion (C88) about conservation, though testing only one additional family member limits the strength of the generalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C92",
+      "C93",
+      "C95",
+      "C96",
+      "C97",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Perturbations that strengthen tubulin:tubulin interactions (\u03b2:T238A mutation or Epothilone B) diminish polymerase activity and cause Stu2 to coat the lattice. This leads to futile cycling where tubulin release occurs away from the microtubule end.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93, C95-C96 provide experimental evidence (Figure 6) showing loss of activity and end-specificity with stabilizing perturbations. The futile cycling interpretation (C29, C108-C110) is a reasonable inference from the data, though the mechanism is not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "End-localization of Stu2 requires unpolymerized tubulin, at least two active TOGs, and polymerase competence. These requirements are identical to those for polymerase activity, suggesting end-localization depends on polymerase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C101-C102 are supported by experimental observations showing loss of end-localization when these requirements are not met (Figures 2D, 4). The inference that localization depends on activity (C9, C103) is logical given the shared requirements, though not directly proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C118",
+      "C119"
+    ],
+    "result": "A ratcheting model is proposed for processivity: transfer of tubulin from TOGs to the lattice activates the basic region, retaining the polymerase at the end for subsequent rounds. This alternating engagement between TOGs and basic region explains processive action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10-C11, C118-C119 present a mechanistic model based on the observed antagonism between TOG:tubulin and basic:lattice interactions. While the model is consistent with the data and provides a conceptual framework, it remains speculative without direct demonstration of the proposed conformational changes or alternating engagement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "The concentration-dependence of end-binding for Stu2 (KD ~20 nM) is comparable to the concentration-dependence for activity (KM ~60 nM). The microtubule end can support approximately one Stu2 dimer per two protofilaments (~6 dimers total).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by fluorescence intensity measurements (Figure 2A) and photobleaching analysis. The calculation of ~6 dimers per end is based on reasonable assumptions about single-molecule intensity, though some uncertainty exists in the quantification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C30",
+      "C97"
+    ],
+    "result": "The tubulin conformational cycle plays a central role in modulating polymerase activity. Normal function requires that TOG-bound tubulins resist self-association-induced straightening to ensure release occurs only at the microtubule end.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C97 are supported by the experiments with \u03b2:T238A tubulin and Epothilone B (Figure 6), which show that perturbations affecting the conformational cycle dramatically impact activity. This represents a novel insight into the importance of tubulin conformation dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Polymerases carrying tubulins are disadvantaged for lattice diffusion compared to empty polymerases, meaning polymerases arrive at the end mostly empty. Consequently, diffusive tubulin shuttling makes little contribution to polymerase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These inferences (C105-C107) logically follow from the demonstrated antagonism between TOG:tubulin binding and lattice binding (C4-C6, C75). While not directly measured, the conclusion is a reasonable interpretation of the experimental observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The comparison of Stu2/XMAP215 family polymerases to formins is not apt. Unlike formins where end localization can be separated from activity, in Stu2 these properties appear inseparable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 is supported by the experimental observations showing shared requirements for localization and activity. The comparison to formins (C111-C112) is appropriately supported by citations and represents a valid reinterpretation based on the new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Ena/VASP proteins share functional characteristics with Stu2: they are weakly processive, their polymer side binding is attenuated by unpolymerized monomers, and their end localization requires interactions with unpolymerized monomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 are supported by appropriate citations to prior work on Ena/VASP. This comparison provides useful context for understanding Stu2 mechanism, though it represents synthesis of existing knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Stu2 forms a homodimer with defined domain organization. Stu2 variants track growing microtubule ends and show dose-dependent stimulation of polymerization rates, reaching ~6-fold at saturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 describe basic properties of Stu2 confirmed by the assays (Figure 1B-C). These represent validation of the experimental system and confirmation of prior findings rather than novel discoveries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C72",
+      "C89",
+      "C90",
+      "C91",
+      "C94",
+      "C100",
+      "C104"
+    ],
+    "result": "Background knowledge and prior findings about microtubules, Stu2/XMAP215 family polymerases, TOG domains, and tubulin conformations from the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from prior work, appropriately cited throughout the manuscript. They provide necessary context but are not novel findings from this study.",
+    "result_type": "MINOR"
+  }
+]

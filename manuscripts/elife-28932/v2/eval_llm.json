@@ -1,0 +1,320 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Current screening and diagnostic approaches for ovarian cancer are inadequate. CA125 has limited sensitivity for early-stage and non-serous cancers and poor specificity. Large randomized trials (PLCO, UKCTOCS) showed no survival benefit from CA125/ultrasound screening. Adding biomarkers to CA125 did not improve screening performance. FDA-approved panels have not been effective for early diagnosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 establish the clinical context and limitations of current ovarian cancer diagnostics through multiple cited studies. The claims about CA125 limitations, failed screening trials, and ineffective FDA-approved panels are well-supported by appropriate citations and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Circulating miRNAs represent a promising alternative biomarker for ovarian cancer diagnosis with several advantages over protein markers, including PCR amplification, uniform measurement units, and biological relevance to cancer. However, prior efforts have been hampered by methodological challenges including statistical approaches, platform reproducibility, and disease heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C18 establish the rationale for miRNA-based diagnostics through appropriate citations. The advantages of miRNAs (C11-C15) and prior evidence of altered profiles in ovarian cancer (C16-C17) are supported by citations. The acknowledged challenges (C18) provide important context for the current study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The study assembled a well-designed cohort of 179 pre-treatment samples from three independent studies (ERASMOS, PMP, NECC) that were randomized into demographically similar training and testing sets with balanced histopathological diagnoses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 describe the study design with appropriate detail. The use of multiple independent cohorts with different enrichment strategies is a strength. The randomization produced balanced training/testing sets as evidenced by Table 2 (C23-C24), supporting proper experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "A neural network model using 14 miRNAs achieved an AUC of 0.90 (95% CI: 0.81-0.99) on the testing set, meeting pre-specified statistical objectives. The model performed consistently on both batch-adjusted and unadjusted data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 present the primary diagnostic model with appropriate statistical metrics. The neural network met pre-specified criteria (p=0.03 vs. AUC 0.75) and showed robustness to batch adjustment. However, the testing set was relatively small (n=44), and the wide confidence interval (0.81-0.99) suggests some uncertainty in the estimate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Post-hoc analyses showed the neural network performed equally well across patient age, histologic subtypes (serous vs. non-serous), and disease stage (early vs. advanced).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C29-C31 describe important subgroup analyses but are labeled as 'post-hoc' and reference only supplementary files without presenting the actual performance metrics or sample sizes in each subgroup. The claim of 'equally well' performance lacks quantitative support and statistical testing for interactions. These analyses should have been pre-specified given the known heterogeneity of ovarian cancer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "In 120 subjects with CA125 data, the neural network (AUC 0.93) significantly outperformed CA125 (AUC 0.74, p=0.001), primarily by reducing false positives (8/43 vs. 23/43, p=0.002). The two markers were independent of each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 provide a direct comparison to the clinical standard with appropriate statistical testing. The superior performance is well-documented with specific metrics. The independence of the markers (C35) is an important finding supported by Figure 4 supplement 1. However, the subset with CA125 data (120/179) may introduce selection bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Tiered testing strategies combining the neural network with CA125 would worsen performance, increasing both false positive rates (4.2% to 19.2%) and false negative rates (5.8% to 13.3%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 demonstrate that combining the markers does not improve performance, which is logical given their independence (C35). The analysis is supported by Figure 4 supplement 2. This finding argues against combination strategies and supports using the neural network alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "External validation using the Keller et al. dataset (454 patients with 13 different diagnoses) showed the neural network had 100% specificity for ovarian cancer with 75% sensitivity (AUC 0.93 on testing set), and did not detect any of 12 other diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 demonstrate disease specificity using an independent public dataset with multiple disease types. The 100% specificity on the testing set is impressive but should be interpreted cautiously given the small number of ovarian cancer cases (15 total). The perfect classification on the training set (C39, AUC 1.00) suggests possible overfitting. The cross-platform validation (microarray vs. sequencing) is a strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Global sensitivity analysis reduced the model to 7 miRNAs plus 4 normalizers for qPCR implementation, achieving AUC 0.89 on training and 0.80 on testing sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 describe model optimization for clinical translation. The reduction from 14 to 7 miRNAs simplifies implementation while maintaining reasonable performance. However, the drop in testing set AUC from 0.90 (sequencing) to 0.80 (qPCR) is notable and may reflect platform differences or overfitting to the sequencing data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Independent external validation in 51 Polish patients showed positive predictive value of 91.3% (95% CI: 73.3-97.6%), negative predictive value of 78.6% (95% CI: 64.2-88.2%), and AUC of 0.85.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 provide crucial independent validation in a completely separate cohort from a different country. The performance metrics are clinically relevant (PPV, NPV) and reasonably strong. However, the sample size is small (n=51), leading to wide confidence intervals. The lower NPV (78.6%) compared to PPV suggests the test may miss some cancers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C65",
+      "C66"
+    ],
+    "result": "Circulating levels of miR-200a-3p and miR-200c-3p decreased significantly within 72 hours of tumor removal, suggesting active tumor production. Other miRNAs showed smaller decreases, possibly reflecting different half-lives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C65-C66 provide biological validation showing tumor-derived miRNAs. The significant decrease in miR-200 family members after surgery (C49) supports their tumor origin. The speculation about half-lives (C66) is reasonable but unproven. The 72-hour timepoint is relatively short; longer follow-up would strengthen conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C67",
+      "C68"
+    ],
+    "result": "In situ hybridization of 30 pre-metastatic lesions showed 100% overlap between lesional cells and key miRNAs, demonstrating their presence in early-stage and pre-invasive lesions, raising the possibility of detecting pre-metastatic disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52, C67-C68 provide important biological validation. The 100% concordance (C50) between lesional cells and miRNA expression is striking and supports the biological relevance of the signature. The finding in pre-invasive lesions (C68) is novel and important. However, the claim about detecting 'pre-metastatic disease' (C52) is speculative and would require prospective validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "This is the first study combining next-generation sequencing of serum miRNAs with machine learning for ovarian cancer diagnosis. Sequencing provides superior sensitivity, and machine learning can capture non-linear relationships among miRNAs that basic statistics would miss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 establish the methodological novelty. The combination of NGS and machine learning (C53) is appropriately claimed as novel for ovarian cancer. The advantages of sequencing (C54) and the non-linear nature of miRNA relationships (C55-C56) justify the analytical approach, as evidenced by Figure 10 showing complex clustering patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "The neural network correctly classified 81% of borderline tumors as non-invasive, compared to only 47% for CA125 (p=0.002).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 demonstrate an important clinical advantage in distinguishing borderline from invasive tumors. This is clinically relevant as borderline tumors have different management. The statistical significance (p=0.002) supports the superiority of the neural network for this distinction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The study design incorporated multiple cohorts with complementary strengths: ERASMOS provided consecutive cases reflecting natural disease frequency, PMP enriched for challenging cases, and NECC provided age-matched controls. External validation demonstrated performance across platforms and disease characteristics, distinguishing this work from prior miRNA studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 describe the study's design strengths. The multi-cohort approach (C59-C62) addresses different aspects of clinical heterogeneity. The external validation across platforms (C63) and disease specificity (C64) are important strengths that distinguish this from prior work with smaller, more homogeneous samples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The study's phase II design is comparable to prior FDA-approved panels (OVA1, ROMA). The neural network's performance (AUC 0.90-0.93) compares favorably to OVA1 (AUC 0.80-0.82) and ROMA (AUC 0.91), with the advantage of not including borderline tumors as malignancies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C77 provide important context by comparing to FDA-approved tests. The comparisons are appropriate given similar study designs. The neural network's performance is competitive or superior, with the important distinction of correctly classifying borderline tumors as non-malignant. However, direct head-to-head comparisons in the same population would be more definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Current guidelines do not recommend routine ovarian cancer screening in the general population based on failed trials, but screening is recommended for high-risk women despite lack of survival benefit evidence. Timely referral to specialists is a strong predictor of survival, supporting the need for blood-based tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 accurately summarize current clinical guidelines and their evidence base through appropriate citations. This context justifies the need for improved diagnostic tests. The apparent contradiction in recommending screening for high-risk women without survival evidence (C81-C82) highlights the clinical dilemma.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Prior miRNA studies identified altered circulating miRNAs in ovarian cancer, but with limited overlap to the current study. Differences may reflect small sample sizes in prior studies (e.g., 5-28 cases) and platform variability, with 12-fold differences in miRNA detection across platforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 appropriately contextualize prior work and explain discrepancies. The critique of small sample sizes (C85) is valid and well-documented. The platform variability issue (C86-C87) is supported by citation to Mestdagh et al. and justifies the current study's approach using NGS followed by qPCR validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The neural network includes miR-200 family members previously associated with ovarian cancer. While individual miRNAs like miR-1246 are found in multiple diseases, the network as a whole was specific to ovarian cancer, emphasizing the importance of multimarker panels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 address biological plausibility and specificity concerns. The inclusion of miR-200 family members (C88-C89) validates against prior literature. The acknowledgment that individual miRNAs lack specificity (C90) but the panel is specific (C91) is well-supported by Figure 5 and emphasizes the value of the multimarker approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The study developed a miRNA neural network diagnostic for ovarian cancer (AUC 0.90) that outperformed CA125 and functioned across patient subgroups, showed 100% specificity among 454 patients with various diagnoses, was validated in 51 independent samples (PPV 91.3%, NPV 78.6%), and demonstrated biological relevance in pre-metastatic lesions, suggesting potential for non-invasive ovarian cancer diagnosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 summarize the main findings. The diagnostic performance (C92-C94) is well-supported by the data. The specificity claim (C95) is strong but based on small numbers. The independent validation (C96) and biological validation (C97) strengthen the conclusions. However, the conclusion about 'potential' (C98) is appropriately cautious, as the study acknowledges limitations and need for further validation in phase III specimens.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C7",
+      "C35",
+      "C36",
+      "C37",
+      "C41",
+      "C43",
+      "C81",
+      "C82"
+    ],
+    "result": "DDM1 enables methylation of nucleosomal DNA in Arabidopsis heterochromatin. In ddm1 mutants, CG methylation shows overt depletion over well-positioned nucleosomes compared to mild depletion in WT. The h1ddm1 double mutant exhibits even stronger core-to-linker methylation differential than ddm1 alone, with near-WT linker methylation but severely depleted core methylation. These patterns demonstrate that nucleosomes are strong barriers to DNA methylation in the absence of DDM1 remodeling activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37, C41, and C43 are directly supported by experimental data in Figure 1A-C showing genotype-specific methylation patterns at well-positioned nucleosomes. The inference that DDM1 enables nucleosomal methylation (C4, C81-C82) logically follows from the observation that its absence causes nucleosome core methylation depletion. The conclusion that nucleosomes are barriers without remodeling (C7, C43) is well-supported by the h1ddm1 phenotype showing strong linker-specific methylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C42"
+    ],
+    "result": "Non-CG methylation (CHG and CHH) shows pronounced nucleosome core depletion in all genotypes, with h1ddm1 exhibiting the most exaggerated core-to-linker differential for CHG. Unlike CG methylation, non-CG methylation of nucleosomal DNA remains well below linker levels even in WT, indicating that DDM1 does not enable efficient non-CG methylation of nucleosomal DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 and C42 are directly supported by experimental data in Figure 1D-E and supplementary figures. The observation that non-CG methylation shows core depletion even in WT distinguishes it from CG methylation patterns and is consistently demonstrated across multiple genotypes and contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Mouse Lsh facilitates methylation of nucleosomal DNA similarly to Arabidopsis DDM1. Analysis of published data shows that Lsh-/- mouse cells exhibit much stronger methylation periodicity around CTCF binding sites with far greater depletion at nucleosome cores compared to WT, indicating that the DDM1/Lsh family has a conserved function in enabling nucleosomal DNA methylation across plants and mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by reanalysis of published mouse data shown in Figure 1F. The inference that this represents a conserved function (C46-C47) is reasonable given the parallel phenotypes in Arabidopsis and mouse. However, the mouse analysis relies on published nucleosome positions from WT cells rather than Lsh-/- cells, which could introduce some uncertainty, though the authors acknowledge this limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C58"
+    ],
+    "result": "Nucleosomes in euchromatic transposable elements are refractory to DNA methylation. CG and CHG methylation at DRM-dependent loci shows depletion over nucleosomes similar to heterochromatin, while CHH methylation depletion is not enhanced in mutant genotypes, likely due to the RdDM pathway's independence from DDM1. CMT2-dependent loci recapitulate heterochromatic TE behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C56, and C58 are directly supported by experimental data in Figure 2A-F. The inference that euchromatic TE nucleosomes are refractory to methylation (C55) follows logically from the observed depletion patterns. The explanation for CHH methylation behavior (C56) is supported by citations to prior work on RdDM pathway independence from DDM1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C69"
+    ],
+    "result": "DDM1 facilitates methylation of nucleosomal DNA in a subset of genes, particularly lowly-expressed genes. Genic nucleosomes show enrichment of CG methylation in WT, with exonic but not intronic nucleosomes showing clear enrichment. Lowly-expressed genes depend on DDM1 to maintain nucleosome methylation, whereas highly expressed genes do not require DDM1 on average.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62, C64-C66 are directly supported by experimental data in Figure 3A-D. The inference that methylation is not intrinsically targeted to genic nucleosomes (C63) is reasonable given the exon-specific enrichment. The differential DDM1 dependence based on expression level (C65-C66) is well-documented in Figure 3D and provides mechanistic insight linking transcription-coupled nucleosome displacement to methylation maintenance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The 10 bp DNA methylation periodicity observed in Arabidopsis and mouse requires nucleosome remodeling activity. WT plants display 10 bp periodicity in all sequence contexts in heterochromatin, but this periodicity is virtually absent in ddm1 mutants. Genic nucleosomes retain 10 bp periodicity in all genotypes. Similarly, mouse Lsh-/- cells show loss of clear 10 bp periodicity around CTCF sites. These results indicate that the 10 bp periodicity requires a nucleosome remodeler and support the hypothesis that DNA methyltransferases cannot directly methylate nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 are directly supported by FFT analysis shown in Figure 4A-C. The inference that periodicity requires remodeling (C75) and the hypothesis that methyltransferases cannot directly methylate nucleosomes (C76) are logical conclusions from the data. The retention of periodicity in genic nucleosomes (C72) provides an important control showing the specificity of the ddm1 effect to DDM1-dependent loci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C6"
+    ],
+    "result": "The h1ddm1 double mutant reproduces linker-specific methylation patterns resembling those of marine algae that diverged over a billion years ago. At cluster C2 loci with highly structured nucleosome arrays, h1ddm1 shows near-WT linker CG methylation but ddm1-level core methylation, creating dramatic methylation phasing that closely resembles patterns observed in evolutionarily distant algal species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are directly supported by experimental data in Figure 5B showing the dramatic methylation phasing at cluster C2. The comparison to algal patterns (C80, C6) is supported by citations to prior work and phylogenetic analysis in supplementary figures. The clustering analysis using an unsupervised algorithm strengthens the objectivity of identifying these loci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Linker-specific methylation can evolve by breaking the connection between nucleosome remodeling and DNA methylation. Species with linker-specific methylation are phylogenetically interspersed with species lacking this pattern, have well-positioned nucleosomes, and most lack canonical H1. A transition to linker-specific methylation in species with positioned nucleosomes and low H1 would only require uncoupling remodeling from methylation maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C102 are supported by phylogenetic analysis (Figure 5\u2014figure supplement 2-3) and citations. However, the evolutionary hypothesis (C8, C103) is speculative and based on inference from the experimental h1ddm1 phenotype. While the model is plausible and parsimonious, it lacks direct evolutionary evidence such as identification of specific mutations that uncouple remodeling from methylation, or demonstration that such uncoupling has actually occurred in linker-specific species. The hypothesis requires future work to test predictions about the molecular basis of this evolutionary transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Cytosine methyltransferases generally require naked DNA as substrate, and DDM1/Lsh remodelers provide this substrate by making nucleosomal DNA accessible. This hypothesis is supported by the experimental data showing nucleosome barriers to methylation and by prior work demonstrating that various DNA-modifying enzymes (cytidine deaminases, TET1, CAS9, bacterial methyltransferases) prefer naked DNA substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The hypothesis (C88-C89) is well-supported by the cumulative experimental evidence from this study showing that nucleosomes block methylation without remodeling. Claims C83-C87 provide supporting context from prior work on other DNA-modifying enzymes. While the mechanism by which DDM1/Lsh provides naked DNA substrate is not directly demonstrated, the inference is reasonable and consistent with all available evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "DDM1/Lsh remodelers likely render nucleosomal DNA accessible by a mechanism analogous to Swi2/Snf2, which translocates DNA from linker toward dyad to generate a nucleosome-free DNA loop. This loop would allow methyltransferases biased access to DNA based on its orientation to the histone surface, potentially explaining the 10 bp periodicity. Alternatively, the periodicity could arise from effects of 5-methylcytosine orientation on nucleosome formation or stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91 about Swi2/Snf2 mechanism is supported by citations. However, the proposed DDM1/Lsh mechanism (C90, C92) is speculative and based on analogy rather than direct evidence. The alternative explanation for periodicity (C93) is also speculative. While these models are plausible and consistent with the data, they lack direct experimental support such as structural studies of DDM1-nucleosome complexes or demonstration of DNA loop formation. These mechanistic hypotheses require future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Other nucleosome remodelers likely facilitate methylation of euchromatic loci and may be inhibited by H1. The RdDM pathway requires remodelers other than DDM1, and H1 can prevent nucleosome remodeling by some Swi2/Snf2-type remodelers in vitro, potentially explaining why h1 mutants show increased methylation in both nucleosome cores and linkers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inference about other remodelers (C94) is reasonable given that many nucleosomes are methylated without DDM1. Claims C95 and C96 are supported by citations to prior work. This provides a coherent explanation for the partial rescue of methylation in h1 mutants and the DDM1-independence of some methylation pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Background and context claims establishing the importance of DNA methylation, the mechanisms of methylation maintenance and establishment in plants and animals, nucleosome structure, and prior observations about methylation-nucleosome relationships. These claims establish the scientific context and identify the unresolved question of whether nucleosomal or naked DNA is the preferred methyltransferase substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C34) are primarily supported by citations to established literature and represent accurate summaries of prior knowledge. They provide essential context for understanding the significance of the current work. The claims about prior observations (C26-C30) correctly identify the apparent contradictions in the literature that motivated this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C57",
+      "C67",
+      "C77",
+      "C97",
+      "C107"
+    ],
+    "result": "Additional context claims about TE classification, methyltransferase specificities, transcription-coupled nucleosome displacement, algal nucleosome positioning, effects of methylation on nucleosomes, and permanence of ddm1-induced methylation losses. These claims provide supporting context from prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C48-C53, C57, C67, C77, C97, C107) are supported by citations to prior work and provide important context for interpreting the experimental results. They represent accurate summaries of established knowledge relevant to the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Speculative hypotheses about the functional significance of gene body methylation and exonic nucleosome methylation enrichment, and evolutionary advantages of linker-specific methylation systems. These represent potential explanations and evolutionary scenarios based on the experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C99 about gene body methylation function are explicitly speculative and lack direct experimental support in this study. Claims C104-C106 about selective advantages and evolutionary consequences of linker-specific methylation are also speculative. While these hypotheses are reasonable and provide interesting frameworks for future research, they require additional experimental validation and are appropriately presented as speculation by the authors.",
+    "result_type": "MINOR"
+  }
+]

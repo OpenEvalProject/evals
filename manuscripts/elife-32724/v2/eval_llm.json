@@ -1,0 +1,415 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C30"
+    ],
+    "result": "SauCas9 and CjeCas9 (type II-A and II-C) cleave single-stranded RNA in a PAM-independent manner, while SpyCas9 and FnoCas9 do not exhibit this activity without a PAMmer. The cleavage efficiencies of SauCas9 and CjeCas9 are indistinguishable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C18-C21, and C30 are directly supported by in vitro cleavage assays shown in Figure 1 and supplementary figures. The data clearly demonstrate PAM-independent RNA cleavage by SauCas9 and CjeCas9, with appropriate negative controls (SpyCas9, FnoCas9) and comparative kinetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "SauCas9 RNA cleavage requires both a guide RNA and catalytically active protein, depends on divalent metal ions, and proceeds through single-turnover kinetics similar to DNA cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 are well-supported by control experiments in Figure 1\u2014figure supplement 2A-C. The use of catalytically inactive mutants, EDTA chelation, and excess substrate experiments provide strong mechanistic evidence for the requirements and kinetics of RNA cleavage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The RNA cleavage site by SauCas9 is shifted by one nucleotide compared to DNA cleavage, consistent with SpyCas9 RNA cleavage and likely due to differences in RNA-RNA versus RNA-DNA helix geometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is directly supported by hydrolysis mapping data in Figure 1\u2014figure supplement 2D,E. Claims C28-C29 provide reasonable structural explanations supported by citations to prior work, though C29 is somewhat speculative about the mechanistic basis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "The presence of a complementary PAMmer slows SauCas9 RNA cleavage by two-fold compared to reactions without PAMmer, indicating that the PAMmer impairs rather than enhances RNA cleavage activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by kinetic data in Figure 1C and Figure 1\u2014figure supplement 3C, including appropriate controls with non-complementary DNA oligos. This finding distinguishes SauCas9 from SpyCas9, which requires a PAMmer for RNA cleavage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "SauCas9 RNA cleavage is guide-dependent and specific for single-stranded RNA; non-complementary ssRNA and double-stranded RNA are not cleaved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by specificity controls shown in Figure 1 and Figure 1\u2014figure supplement 3, demonstrating that cleavage requires sequence complementarity and that dsRNA is not a substrate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Optimal guide length for SauCas9 RNA targeting is 23 nucleotides, which provides tighter binding (Kd,app = 1.8 \u00b1 0.09 nM) and more efficient cleavage than shorter guides, though binding to ssRNA is ~5-fold weaker than to dsDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are well-supported by systematic guide length experiments and binding assays in Figure 1\u2014figure supplement 4. The data show clear trends in cleavage efficiency and binding affinity with guide length, with appropriate quantification and error bars.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "SauCas9-catalyzed ssRNA cleavage plateaus at ~30% fraction cleaved, compared to >80% for DNA substrates, potentially due to greater thermodynamic stability of RNA secondary structures that occlude binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are directly observed in cleavage assays (Figure 1\u2014figure supplement 3). Claim C42 is a reasonable hypothesis tested by structured RNA experiments in Figure 2, though the mechanistic explanation remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "SauCas9 cannot cleave duplex RNA with small (2-6 bp) unpaired regions but can cleave substrates with 12 bp or larger unpaired segments. Fully unpaired 'bubble' substrates are cleaved more efficiently than ssRNA despite similar binding affinities, and this difference is PAM-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are well-supported by systematic structured RNA experiments in Figure 2A-D. The data include cleavage assays with various substrate architectures, binding measurements, and PAM mutant controls, providing strong evidence for the role of RNA structure in accessibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The limited cleavage of ssRNA substrates is not due to enzyme inactivation but rather to intrinsic properties of the RNA substrate. SauCas9 RNP remains competent throughout the reaction and can cleave fresh substrate added after the initial reaction plateaus, suggesting that RNA structural accessibility limits cleavage extent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by spike-in and sequential substrate experiments in Figure 2\u2014figure supplement 1B-E. The data convincingly rule out enzyme inactivation and support the conclusion that substrate properties limit cleavage. Claim C57 is a reasonable interpretation of the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "A genome-wide sgRNA library screen against MS2 bacteriophage identified 131-166 significantly enriched guides (FDR < 0.05), with the majority perfectly complementary to MS2 and only 3-5 control guides enriched out of 708 total controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 describe the MS2 screen design and results, which are well-documented in the methods and Figure 3A-B. The library size (18,114 sgRNAs), statistical analysis (FDR-adjusted p-values), and control performance provide strong evidence for specific targeting activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Enriched guide sequences were skewed toward shorter lengths, but this likely reflects input library bias rather than biological preference. When comparing enrichment levels, 23-nt guides were preferentially enriched over shorter guides, consistent with in vitro data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by analysis in Figure 3C and Figure 3\u2014figure supplement 1A. The authors appropriately distinguish between library composition bias and actual enrichment levels, with the latter showing preference for longer guides consistent with biochemical data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "No specific sequence bias was observed in enriched guides relative to the unselected library, consistent with structural data showing absence of base-specific contacts between Cas9 and the target strand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 are supported by sequence logo analysis (Figure 3\u2014figure supplement 1B) and citation to structural data. The lack of sequence bias is appropriately interpreted in light of known Cas9 structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Enriched sgRNAs clustered at specific 'hotspot' regions of the MS2 genome, interpreted as regions of low structural complexity. Guides of different lengths overlap at these hotspots, suggesting that target accessibility is more important than guide length for targeting efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are well-supported by genome mapping data in Figure 3D and supplementary figures. Claim C71 is a reasonable inference combining biochemical and screen data. Claim C73 is somewhat speculative but consistent with the observed overlap of different guide lengths at hotspots.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Some enriched guides targeted regions that appear to form stable secondary structures in the MS2 genome structure, though this structure was determined on intact phage particles and may not represent the relevant RNA conformation during infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C74 is supported by mapping to the MS2 structure (Figure 3\u2014figure supplement 2), but claim C75 appropriately notes an important caveat: the structural data may not reflect the biologically relevant conformation. This uncertainty limits interpretation of which regions are truly 'structured' during infection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "SauCas9 programmed with targeting guides confers approximately 10-fold protection against MS2 phage infection in a sequence-specific manner. Protection requires both sgRNA and SauCas9 protein, and guide segments of all tested lengths (20-23 nt) confer similar protection levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 are well-supported by plaque assay data in Figure 3E-F and Figure 3\u2014figure supplement 3A-B. Appropriate controls (no sgRNA, no Cas9, scrambled guides) demonstrate specificity, and the similar protection across guide lengths is consistent with screen results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Two 'control' guides with scrambled sequences were unexpectedly enriched and conferred protection. One guide (#14238) has a possible off-target site in MS2, but the mechanism for guide #14210 remains unclear and may involve targeting of E. coli host factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C82 are supported by data in Figure 3\u2014figure supplement 3C-E. However, claims C83-C84 acknowledge uncertainty about the mechanism, particularly for guide #14210. The speculation about host factor targeting is reasonable but unproven, limiting confidence in this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Mismatch sensitivity analysis shows that shorter guides are less sensitive to mismatches while longer guides show decreased recovery with mismatches. The seed region and a central region show sensitivity to mismatches, similar to SpyCas9 DNA cleavage, with correlation between in vivo screen and in vitro cleavage data for 23-nt guides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 are supported by mismatch analysis in Figure 3\u2014figure supplement 4. The authors appropriately note potential noise from guides targeting inaccessible regions, but the correlation between screen and in vitro data for 23-nt guides strengthens the findings. The pattern is consistent with prior work on DNA targeting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "dSauCas9 can repress GFP expression in E. coli in a PAM-independent manner when targeting the coding strand, while dSpyCas9 requires a PAM. Longer guides work more efficiently in vivo, consistent with in vitro data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 are well-supported by GFP repression experiments in Figure 4A-B and Figure 4\u2014figure supplement 1A. The data include appropriate controls (PAM vs. no PAM, coding vs. non-coding strand) and show consistency between in vitro and in vivo guide length preferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Different guide sequences show variable GFP repression efficiency, with some dSauCas9 RNPs reducing GFP to 15-30% of control levels while others show no repression ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 are supported by tiling experiments across the GFP mRNA in Figure 4C. The variable efficiency is consistent with the accessibility model, though the specific reasons for failure of some guides (GFP7, GFP9) are not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "GFP repression occurs at the RNA level rather than DNA level (confirmed by EMSA) and is largely equivalent between catalytically active and inactive SauCas9, suggesting that binding of the Cas9-sgRNA complex to mRNA is sufficient for repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 are supported by EMSA data (Figure 4\u2014figure supplement 1B) and comparison of active vs. inactive Cas9 (Figure 4\u2014figure supplement 1C). The conclusion that binding is sufficient for repression is reasonable given the single-turnover kinetics, though the exact mechanism (ribosome blocking vs. mRNA destabilization) remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "A model is proposed where SauCas9 can bind and cleave exposed, unstructured RNA sequences but cannot access strongly structured regions or RNA occluded by RNA-binding proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 represent a model well-supported by the combined biochemical and in vivo data. Claim C102 is a reasonable extension of the accessibility model, though it remains speculative as protein-occluded RNA was not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Type II-A and II-C Cas9 enzymes can catalyze programmable, PAM-independent ssRNA cleavage. SauCas9 can be used both biochemically and in cells to cleave RNA and regulate genes at transcriptional and translational levels, requiring only an sgRNA without a PAMmer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 summarize the main findings, which are well-supported by the comprehensive in vitro and in vivo data presented throughout the manuscript. The PAM-independence and lack of PAMmer requirement are key practical advantages demonstrated by multiple experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "SauCas9 RNA-targeting capability offers potential for repressing RNA viruses without DNA intermediates, as demonstrated by protection against MS2 bacteriophage. Whether this occurs naturally is unknown but seems possible based on these results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 is a reasonable inference from the MS2 results. Claim C107 is directly demonstrated by the phage protection experiments. Claim C108 appropriately acknowledges uncertainty about natural biological relevance while suggesting plausibility based on the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "DNA cleavage by SauCas9 is more rapid than RNA cleavage, suggesting DNA-targeting is the biologically preferred mechanism. However, PAM-independent RNA activity may provide an additional defense against PAM-escape mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 are supported by comparative kinetic data showing faster DNA cleavage. Claim C111 is speculative but represents a reasonable hypothesis about potential biological function, appropriately framed as a possibility rather than a proven mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "SauCas9 cleavage efficiency is inversely related to RNA structural complexity. Experimental RNA structure data (e.g., SHAPE-seq) could simplify target identification for viral targeting applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 is well-supported by the structured RNA experiments and MS2 hotspot data. Claim C113 is a reasonable proposal for future applications based on the accessibility findings, though it remains to be experimentally validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "SauCas9 can repress gene expression in E. coli in a PAM-independent manner specific for the coding strand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 are directly supported by the GFP repression experiments in Figure 4 and supplementary data, with appropriate controls demonstrating PAM-independence and strand specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Compared to Cas13, SauCas9 RNA cleavage is single-turnover and kinetically less robust, but unlike Cas13, SauCas9 does not cleave RNAs indiscriminately and is suitable for targeting specific transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 provide a reasonable comparison to Cas13 based on citations to prior work and the data presented. The distinction between specific targeting (Cas9) and trans-cleavage (Cas13) is well-supported by the specificity controls and single-turnover kinetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "RNA-level gene repression by SauCas9 has potential advantages over DNA-based CRISPRi, including possible isoform-specific targeting and utility as a platform for directing effector proteins to specific RNA molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C121 are speculative proposals for future applications. While the basic RNA-targeting capability is demonstrated, the specific advantages (isoform targeting, effector protein recruitment) remain to be experimentally validated. These are reasonable hypotheses but not yet supported by data.",
+    "result_type": "MINOR"
+  }
+]

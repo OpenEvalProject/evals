@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C83"
+    ],
+    "result": "Microendoscopic calcium imaging enables deep brain imaging but presents unique computational challenges due to large background fluctuations and high spatial overlaps that dominate the neural signals and prevent simple temporal or spatial filtering approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C6-C10 establish the context and challenges of microendoscopic imaging with strong support from Figure 1 demonstrating background dominance and temporal overlap. C83 correctly identifies this as an inherent property of one-photon imaging. The characterization is well-supported by both citations and experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Existing methods for analyzing microendoscopic data (ROI analysis, PCA/ICA, and basic CNMF) have significant limitations including failure to demix overlapping neurons, inadequate background correction, and poor performance with high spatial overlaps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 describe known limitations of existing methods, supported by citations and demonstrated empirically throughout the manuscript (Figures 4, 6-8). The characterization of these limitations provides appropriate motivation for the proposed method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C24",
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C33",
+      "C35"
+    ],
+    "result": "CNMF-E utilizes a novel spatiotemporal background model that reconstructs background activity from neighboring pixels, enabling accurate separation of complex, high-rank background fluctuations from neural signals, outperforming rank-1 NMF and higher-rank NMF approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C24-C35 describe the core methodological innovation with strong support from Figure 2 showing accurate background recovery in simulations. The comparison to NMF approaches (C32-C33) demonstrates clear superiority with quantitative metrics. The model's robustness across varying numbers of background sources (C35) is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "CNMF-E's initialization procedure using spatial filtering and seed pixel selection based on local correlation and peak-to-noise ratio successfully identifies all neurons in simulated data with high spatial and temporal similarity to ground truth, and is robust to parameter selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 describe the initialization algorithm with strong support from Figure 3. The demonstration of 100% neuron detection (C39), high similarity metrics (C40), and clear separation in parameter space (C41) provide convincing evidence. However, this is demonstrated only in simulation with known ground truth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "In simulated data, CNMF-E detects all 200 neurons with high spatial and temporal accuracy, while PCA/ICA misses neurons and produces noisy traces, and basic CNMF shows temporal contamination despite being initialized at ground truth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 present comparative results on simulated data with ground truth, supported by Figure 4A-C. The comparison is rigorous with quantitative similarity metrics. Note that CNMF comparison (C43-C44) is somewhat unfair as acknowledged by authors, since it uses ground truth initialization, yet still shows limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "CNMF-E accurately preserves pairwise correlation structure between neurons while PCA/ICA corrupts correlations due to its independence constraint, even after post-processing with thresholding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 address an important downstream analysis consideration, supported by Figure 4D showing correlation matrices. The explanation for PCA/ICA's failure (independence constraint) is theoretically sound and empirically demonstrated. This has important implications for network analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "CNMF-E maintains high detection rates and accuracy across a wide range of SNR levels, while PCA/ICA performance degrades substantially at low SNR. The accuracy benefits from modeling calcium dynamics for temporal denoising.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 demonstrate robustness to noise with support from Figures 4E-H. The SNR sweep (reduction factors 1-6) provides convincing evidence. C53 correctly attributes performance to the calcium dynamics model, though the contribution of this component versus the background model could be better isolated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "In dorsal striatum data, CNMF-E extracted 692 components versus 547 for PCA/ICA, with background accounting for ~90% of variance. CNMF-E detected additional low-SNR neurons missed by PCA/ICA and produced higher SNR traces with cleaner signals important for event detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 present results on experimental data supported by Figure 6. The variance decomposition (C58-C59) quantifies background dominance. The detection of additional neurons (C60) and SNR improvements (C61) are well-documented. However, without ground truth, 'realistic components' relies on visual inspection and morphological criteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "In prefrontal cortex data, CNMF-E detected 33 additional weak-signal components missed by PCA/ICA, showed strong SNR improvements for matched neurons, and recovered weak signals in low-SNR traces that were undetectable in PCA/ICA outputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 present PFC dataset results supported by Figure 7. The pattern of improvements is consistent with striatum data. C68's claim about visual recovery of weak signals is somewhat subjective but supported by the figure. The spatial footprint differences (C67) are well-illustrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "CNMF-E's nonlinear matrix factorization approach better demixes spatially overlapping neurons compared to PCA/ICA's linear method, avoiding negative spikes and crosstalk artifacts present in PCA/ICA traces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 address demixing performance with support from Figure 7G showing specific examples of artifacts in PCA/ICA (negative spikes, crosstalk). The theoretical explanation (linear vs. nonlinear) is sound and the empirical demonstration is convincing, though limited to specific examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "In ventral hippocampus data with heterogeneous neuron sizes, both methods detected 24 components with 20 in common. CNMF-E traces showed lower noise and cleaner signals in both high and low SNR settings, while PCA/ICA-specific components showed noisy, non-neural signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 present hippocampus results supported by Figure 8. This dataset tests robustness to size heterogeneity. The equal detection numbers but quality differences are notable. C77's assessment of 'unlikely to be neural' is based on visual inspection without ground truth, introducing subjectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "In BNST footshock experiments, CNMF-E enabled significantly better detection of stimulus-evoked responses compared to PCA/ICA, demonstrating that improved source extraction enhances downstream analysis of neural responses to behavioral stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 demonstrate practical impact on downstream analysis, supported by Figure 9. The footshock paradigm provides a clear test case. Quantitative comparison (C80, Figure 9E) shows significant differences. This effectively demonstrates the translational value of improved extraction, though statistical testing of significance is not explicitly shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C87",
+      "C88"
+    ],
+    "result": "CNMF-E substantially improves signal quality and detects more well-isolated neurons across diverse experimental conditions (brain regions, SNR regimes, calcium indicators, neuron densities, hardware), leading to enhanced statistical power for downstream analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C87-C88 present the main conclusions, supported by results across Figures 4-9 covering simulated and experimental data from multiple brain regions. The breadth of validation is impressive. However, 'substantially improved' and 'significantly enhance' lack precise quantification across all conditions. C88 is somewhat speculative about future benefits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "CNMF-E outputs enable better tracking of neurons across multiple days compared to PCA/ICA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is supported only by citation to another study (Sheintuch et al., 2017), not by data presented in this manuscript. While the citation provides external validation, this result is not independently demonstrated here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Insufficient background removal in microendoscopic data analysis could yield problematic conclusions in downstream analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is a logical inference supported by the footshock experiment (Figure 9) demonstrating reduced detection of stimulus responses with poorer extraction. However, this is demonstrated in only one specific downstream analysis context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "CNMF-E can operate in automatic or semi-automatic modes, requires few easily interpretable parameters that can be selected within broad ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 describe practical features of the algorithm. C86 is supported by Figure 3H showing parameter robustness in simulation. However, the 'broad range' claim is demonstrated primarily in high-SNR simulation; lower SNR cases required parameter adjustment as noted in methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "CNMF-E has been released as open-source software in both MATLAB and Python implementations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 state facts about code availability with specific URLs and citations. These are verifiable statements about software release, not scientific results requiring evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "CNMF-E supports three computational modes (single, patch, multi-batch) optimized for different dataset sizes, with patch mode enabling parallel processing for speed-up proportional to available CPU cores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 describe implementation features. The parallel scaling claim (C93) is stated but not empirically demonstrated with timing data across different core counts. Table 3 shows running times but not scaling analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Experimental methods for the four datasets involved standard viral expression of calcium indicators (GCaMP6f/6s), GRIN lens implantation, and imaging at 10-20 Hz in freely moving mice during various behavioral paradigms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C105 describe experimental methods that are standard in the field. These are procedural descriptions rather than results. The methods appear appropriate and are described with sufficient detail for the datasets used.",
+    "result_type": "MINOR"
+  }
+]

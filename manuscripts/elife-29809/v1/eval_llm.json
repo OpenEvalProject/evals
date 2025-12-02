@@ -1,0 +1,240 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Visual signals are predominantly eye-centered while vestibular signals are predominantly head-centered in both FEFsem and MSTd. Visual signals in FEFsem (DI=0.74\u00b10.05) are more shifted toward head-centered coordinates compared to MSTd (DI=0.95\u00b10.05), while vestibular signals remain head-centered in both areas (FEFsem: DI=0.14\u00b10.05; MSTd: DI=0.17\u00b10.08).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The displacement index (DI) measurements provide quantitative evidence for distinct spatial reference frames. Statistical tests confirm visual DI values are significantly different from both 0 and 1 in FEFsem (p=1.3E-32, p=6.5E-7) and significantly different between areas (p=0.005). Vestibular DI values are close to 0 in both areas. Bootstrap confidence interval analysis and categorical breakdowns corroborate these findings. The data consistently support separated reference frames across multiple analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Model-fitting analysis using eye-centered and head-centered models confirms that visual signals are better fit by eye-centered models while vestibular signals are better fit by head-centered models in both FEFsem and MSTd. The separation between visual and vestibular reference frames is smaller in FEFsem than in MSTd.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model-fitting approach using Z-score differences provides independent validation of the DI results. In FEFsem, mean Z-score differences are 0.10 (visual) and -1.28 (vestibular), both significantly different from 0 (p=0.0025, p=2.0E-11). In MSTd, differences are 1.50 (visual) and -3.21 (vestibular), both significant (p=3.4E-4, p=1.4E-18). The categorical breakdowns and Z-score magnitudes support the conclusion that reference frames are closer in FEFsem than MSTd.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Spatial reference frame measurements under eccentric fixation are independent of smooth pursuit eye movements. DI values under pursuit (FEFsem: 0.24\u00b10.08; MSTd: 0.31\u00b10.10) are significantly smaller than under eccentric fixation and not significantly correlated (FEFsem: p=0.10; MSTd: p=0.82), demonstrating that pursuit compensation does not imply head-centered spatial reference frames.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of correlation between pursuit and eccentric fixation DI values (p=0.10 and p=0.82) provides strong evidence that these measure different properties. The pursuit DI values indicate compensation for eye rotation (closer to 0 than 1), but this is dissociated from the spatial reference frame measured under static eye positions. This is a novel finding that clarifies methodological confusion in the literature and is supported by appropriate statistical tests on paired data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C137"
+    ],
+    "result": "Motion parallax cues do not affect spatial reference frame measurements under eccentric fixation. DI values with and without motion parallax are highly correlated (R=0.70, p=1.5E-7) with no significant difference in means (FEFsem: p=0.37; MSTd: p=0.29).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The high correlation and lack of significant mean differences provide clear evidence that motion parallax does not substantially affect reference frame measurements under eccentric fixation. The categorical breakdowns of neurons (eye-centered, head-centered, intermediate) are similar with and without motion parallax. This addresses a methodological inconsistency in prior literature and is supported by appropriate paired statistical tests.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C138",
+      "C139"
+    ],
+    "result": "Motion parallax has a weak but statistically significant effect on pursuit compensation. DI values with and without motion parallax under pursuit are significantly correlated (FEFsem: R=0.68, p=2.9E-4; MSTd: R=0.74, p=4.4E-6), but mean DI without motion parallax is slightly larger (FEFsem: p=0.01; MSTd: p=0.07).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical evidence shows both correlation and a small but significant difference in means, indicating a weak effect of motion parallax on pursuit compensation. The effect size is modest (mean differences are small) but statistically significant. The interpretation that 2D vs 3D flow may have different effects on pursuit is reasonable given the data, though the biological significance of this small effect is unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C128",
+      "C129",
+      "C145"
+    ],
+    "result": "Training animals to judge heading directions relative to their head produces a modest shift in visual reference frames toward head-centered coordinates, more pronounced in MSTd (pre: 0.95\u00b10.05, post: 0.67\u00b10.04, p=1.6E-5) than FEFsem (pre: 0.74\u00b10.05, post: 0.58\u00b10.07, p=0.08). However, visual and vestibular reference frames remain separated after training under both passive and active behavioral contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The training effect is statistically significant in MSTd and shows a trend in FEFsem. Behavioral data demonstrate that animals learned the task (estimation errors reduced from ~20\u00b0 to <10%). The high correlation between passive and active conditions (R=0.81 and R=0.77, both p<1E-7) with no significant mean differences (p=0.59, p=0.55) supports the conclusion that behavioral context has limited effect on reference frames. The persistent separation of visual and vestibular coordinates is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C120",
+      "C121",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Approximately 24% of FEFsem neurons and 40% of MSTd neurons exhibit gain field modulation by eye position in the visual condition. In the vestibular condition, 14.3% (FEFsem) and 14.8% (MSTd) of neurons show gain fields. These proportions suggest that less than half of neurons contain gain fields that could potentially be used for coordinate transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gain field proportions are clearly reported with categorical breakdowns (monotonic vs non-monotonic). The authors appropriately note that these proportions may be underestimated due to testing only three eye positions along one axis, citing prior work showing >80% modulation with 2D sampling. The conclusion that FEFsem has fewer gain fields than MSTd, combined with its more intermediate visual coordinate, supports the interpretation that FEFsem is at a later stage of coordinate transformation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Simulation studies demonstrate that noise in tuning curves broadens DI distributions but does not cause systematic bias toward head-centered coordinates. In real neuronal data, DI values are not significantly dependent on tuning curve noise levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The simulation approach (Figure 2\u2014figure supplement 1) systematically tests the effect of noise by varying SNR and shows that while noise increases variability, it does not bias DI toward specific values. The analysis of real data using DDI (direction discrimination index) as a noise metric confirms no significant relationship between DI and noise (R=0.11, p=0.3). This addresses a potential confound in the interpretation of DI measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "DI measurements are not significantly dependent on the amplitude of eccentric fixation (10\u00b0, 20\u00b0, 30\u00b0), indicating that using 20\u00b0 eccentricity neither over- nor under-estimates reference frames.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Testing at three different eccentricities (N=38 neurons) shows no significant difference in average DI (p>0.3). This validates the choice of 20\u00b0 eccentricity used in the main experiments and demonstrates that the DI metric scales appropriately with eye position changes. The sample size is modest but adequate for this control analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Neither MSTd nor FEFsem has fully completed coordinate transformations of visual and vestibular signals for multisensory heading perception. The authors conclude that other sensory regions or sensory-motor association areas need to be explored with proper methods including complete tuning function measures under active behavioral performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion logically follows from the persistent separation of visual and vestibular reference frames demonstrated across multiple experimental conditions. The recommendation for future research is appropriate given that no head-centered visual reference frames were found despite testing multiple conditions. The suggestion to examine sensory-motor areas is reasonable based on the hierarchical position of the tested areas.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "The study recorded from 171 visual-tuned and 71 vestibular-tuned neurons in FEFsem, and 99 visual-tuned and 54 vestibular-tuned neurons in MSTd, using established methods for anatomical localization and neurophysiological recording with appropriate stimulus parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methods are clearly described with appropriate detail including anatomical localization via MRI and microstimulation, neuron selection criteria (p<0.05, ANOVA), stimulus parameters (Gaussian velocity profile, 2s duration, etc.), and analysis windows (middle 1s). The sample sizes are substantial and appropriate for population-level analyses. Ethical approval is documented.",
+    "result_type": "MINOR"
+  }
+]

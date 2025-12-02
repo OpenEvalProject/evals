@@ -1,0 +1,517 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "MATR3 overexpression causes dose-dependent neuronal toxicity. MATR3-EGFP expressing neurons show increased risk of death (HR=1.48) compared to EGFP controls, with toxicity increasing at high expression levels while EGFP alone shows a protective effect at higher expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 provide converging evidence from survival analysis (Cox proportional hazards), immunofluorescence validation of overexpression (2.8-fold increase), linear correlation between GFP and MATR3 levels (r\u00b2=0.90), and penalized spline modeling showing dose-dependent effects. The statistical approaches are appropriate and sample sizes are adequate (n>1000 neurons per condition).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C6",
+      "C103"
+    ],
+    "result": "Disease-associated MATR3 mutations (S85C, F115C, P154S, T622A) exhibit enhanced toxicity compared to wild-type MATR3 without obvious changes in subcellular localization or aggregation in primary neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 demonstrate that all four mutations show modest but statistically significant increases in toxicity (Figure 2B) while maintaining normal nuclear distribution without aggregation. The consistency across multiple mutations and agreement with prior literature (C35) strengthens this finding. Statistical significance is properly reported with appropriate sample sizes (n>2000 per condition).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C5",
+      "C38",
+      "C102",
+      "C112"
+    ],
+    "result": "Neurons exhibit bidirectional vulnerability to MATR3 levels, with both overexpression and knockdown (65% reduction) causing significant toxicity (HR=1.48 for overexpression, HR=1.20 for knockdown).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 provide direct experimental evidence for knockdown toxicity with validated siRNA efficiency (65% reduction, p<0.0001) and survival analysis (n>2500 per condition). Combined with overexpression data (C29, C102, C112), this establishes bidirectional vulnerability. The magnitude of effects is comparable between gain and loss conditions, supporting the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C7",
+      "C104"
+    ],
+    "result": "MATR3's ZF2 domain modulates overexpression toxicity. Deletion of ZF2, alone or with ZF1, partially rescues toxicity without affecting protein localization, while ZF1 deletion alone has no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 show that ZF domain deletions don't affect localization (microscopy, Figure 3B) but ZF2 deletion reduces toxicity (survival analysis, Figure 3C, n>1100-1600 per condition). The selective effect of ZF2 vs ZF1 suggests specific functional importance. Statistical significance is demonstrated with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C105",
+      "C129"
+    ],
+    "result": "Deletion of RRM2 causes redistribution of MATR3 into spherical intranuclear granules representing hyperconcentrated protein, while RRM1 deletion has no effect. RRM2 normally prevents this redistribution, suggesting it inhibits MATR3 self-association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 provide microscopy evidence (Figure 3D) showing dramatic phenotypic change with RRM2 deletion. The spherical morphology, reduced diffuse signal, and consistency between \u0394RRM2 and \u0394RRM1/2 phenotypes support the interpretation. However, the mechanism by which RRM2 prevents redistribution (C47, C52) is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C8",
+      "C125",
+      "C141",
+      "C142"
+    ],
+    "result": "Deletion of RRM1, RRM2, or both has no overall effect on MATR3-mediated toxicity when all neurons are pooled together, contrasting with other ALS-associated RBPs where RNA binding is required for toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C141 show no significant differences in survival among RRM deletion variants (Figure 3E, n>1000-1400 per condition). This is surprising given the dramatic redistribution with RRM2 deletion, but the statistical analysis is sound. The contrast with TDP-43/FUS (C56, C148) is appropriately cited and highlights MATR3's unique properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Nuclear granule formation by MATR3(\u0394RRM2) occurs in a time-dependent manner and is predicted by the rate of protein accumulation rather than absolute expression level. 76.1% of \u0394RRM2 and 91.2% of \u0394RRM1/2 neurons display granules by 24 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 use automated CV-based detection (validated by ROC analysis, Figure 4B) to quantify granule formation. The finding that rate of change (C62, p=0.015) but not initial level (C61, p=0.30) predicts granule formation is well-supported by penalized spline analysis. Sample sizes are large (n>1700-2700) and the statistical approach is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Sequestration of RNA-binding deficient MATR3 into nuclear granules is protective, while diffuse MATR3(\u0394RRM2) or MATR3(\u0394RRM1/2) is highly toxic. Toxicity is inversely proportional to RNA-binding capacity when MATR3 is diffusely localized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65, C143-C144 demonstrate that neurons with granules survive better than those with diffuse protein (Figure 4G-H). The comparison between \u0394RRM2 (partial RNA binding via RRM1) and \u0394RRM1/2 (no RNA binding) showing greater toxicity for the latter (C145) supports the dose-response relationship (C147). This is a key mechanistic insight, though the protective mechanism of sequestration is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C9"
+    ],
+    "result": "Nuclear granules formed by MATR3(\u0394RRM2) and MATR3(\u0394RRM1/2) exhibit liquid-like properties including mobility, fusion, and internal rearrangement, consistent with liquid-liquid phase separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by time-lapse microscopy showing dynamic behavior (Figure 5A) and FRAP experiments demonstrating fluorescence recovery (Figure 5C-D). The liquid-like properties are well-characterized using established biophysical criteria. This provides strong evidence for LLPS, though the physiological relevance of these deletion mutants is uncertain (C154).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C106",
+      "C151",
+      "C76"
+    ],
+    "result": "The S85C mutation selectively increases the viscosity of MATR3(\u0394RRM1/2) droplets (~3-fold, p<0.0001) without affecting other mutations (F115C, P154S, T622A) or full-length protein mobility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 show significantly delayed FRAP recovery for S85C \u0394RRM1/2 (Figure 5C-E, n=5 per condition, p<0.0001) while C74-C75 show no differences among full-length variants (Figure 5F-H). The selective effect on droplets but not full-length protein (C76) is intriguing but the mechanism is unclear. The small sample size (n=5) for FRAP is a limitation, though the effect size is large.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Other N-terminal mutations (Q66K, A72T) do not alter MATR3(\u0394RRM1/2) droplet viscosity, indicating S85C is unique among N-terminal low-complexity domain mutations in affecting phase-separated MATR3 mobility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are supported by FRAP data (Figure 5\u2014supplement 1, n=5-6 per condition, p=0.11). This specificity strengthens the conclusion that S85C has unique biophysical effects. However, only two additional mutations were tested, limiting generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C89",
+      "C107",
+      "C157",
+      "C158"
+    ],
+    "result": "The N-terminal arm of the bipartite pNLS4 (amino acids 588-595) is necessary and sufficient for MATR3 nuclear localization in neurons. Deletion causes nuclear clearance and formation of cytoplasmic granules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84, C157-C158 provide systematic deletion mapping (Figure 6A-C) showing only \u0394pNLS4N causes nuclear clearance. The sufficiency is demonstrated by appending pNLS4N to EGFP (Figure 6\u2014supplement 1), which produces nuclear localization comparable to SV40 NLS. This is thorough and well-controlled work identifying the key localization signal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C90",
+      "C10",
+      "C108",
+      "C161",
+      "C91",
+      "C92"
+    ],
+    "result": "Cytoplasmic MATR3 redistribution (via \u0394pNLS4N) reduces toxicity (HR=0.89, p=0.00041), contrasting with TDP-43 and FUS where cytoplasmic localization increases toxicity. This suggests nuclear MATR3 functions mediate neurodegeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85, C90, C161 show significant protection from cytoplasmic localization (Figure 6E, n>1800-2400). The contrast with TDP-43/FUS (C91, C159-C160) is well-cited and represents a major conceptual difference. The inference that nuclear functions mediate toxicity (C92, C162) is logical but not directly tested\u2014cytoplasmic MATR3 could simply be sequestered from toxic interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C164"
+    ],
+    "result": "Pathogenic MATR3 mutations show no significant differences in subcellular distribution compared to wild-type as assessed by automated image analysis (p=0.067) and biochemical fractionation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 use two independent methods (automated microscopy and fractionation, Figure 6F-G) showing no localization changes. Sample sizes are adequate (n>450-650 per condition) and the p-value (0.067) is close to but above the significance threshold. This negative result is important for ruling out mislocalization as the primary mechanism of enhanced mutant toxicity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C165"
+    ],
+    "result": "Western blot analysis consistently shows reduced abundance of MATR3(S85C) in transfected HEK293T cell lysates under mild lysis conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C165 report reduced S85C levels (Figure 6G), consistent with prior literature (C166). However, this could reflect reduced expression, stability, or solubility. The subsequent experiments (C93-C99) address this ambiguity, showing it's primarily a solubility issue rather than stability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C167"
+    ],
+    "result": "MATR3(S85C) shows a subtle but significant reduction in half-life (p<0.0001) compared to wild-type using optical pulse labeling, but the magnitude is small and unlikely to fully explain reduced abundance in lysates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 uses OPL to measure half-life in living neurons (Figure 7C-D, n>900-1600 per condition). The statistical significance is clear but the authors appropriately note the effect size is modest (C94). This careful interpretation distinguishes between statistical and biological significance. The large sample sizes strengthen confidence in the small effect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C109",
+      "C110",
+      "C168"
+    ],
+    "result": "The S85C and T622A mutations reduce MATR3 solubility without drastically affecting stability. Harsher lysis conditions reveal equivalent protein levels, with S85C markedly enriched and T622A modestly enriched in urea-soluble fractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 show that differential solubility, not stability, explains reduced S85C detection (Figure 7E). The comparison between mild (RIPA) and harsh (RIPA+sonication+urea) conditions is well-designed. The finding that T622A shows similar but weaker effects (C98, C110) suggests convergent mechanisms for mutations in different domains (C111).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C150"
+    ],
+    "result": "Both S85C and T622A mutations lie within regions of predicted intrinsic disorder, consistent with their effects on MATR3 aggregation and solubility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 connect structural predictions (Figure 1A) to biochemical observations. The disorder prediction is computational (PONDR VSL2) and the connection to aggregation/solubility is correlative rather than mechanistic. However, this is a reasonable interpretation given the established role of disordered regions in protein aggregation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "Four of 13 pathogenic MATR3 mutations (S85C, S610F, T622A, S707L) eliminate phosphorylatable residues. Inadequate phosphorylation and disinhibited self-association may be a conserved feature of MATR3 mutants, analogous to FUS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C170, C172 correctly identify that these mutations eliminate serine/threonine residues. The connection to phosphorylation and self-association (C173) is speculative (explicitly marked as such) and based on analogy to FUS (C171). No direct evidence for altered phosphorylation or its functional consequences is provided. This is a reasonable hypothesis for future work but not a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "MATR3(\u0394RRM2) and MATR3(\u0394RRM1/2) granules do not colocalize with markers of nucleoli (fibrillarin), nuclear speckles (SC35), or PML bodies, indicating they represent distinct structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 use immunofluorescence with established organelle markers (Figure 3\u2014supplement 1) to rule out association with known nuclear bodies. This is important for characterizing the granules as novel structures rather than recruitment to existing compartments. The negative result is clearly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C39",
+      "C111",
+      "C114",
+      "C121",
+      "C122",
+      "C128",
+      "C173",
+      "C177",
+      "C180"
+    ],
+    "result": "Multiple speculative claims about mechanisms (gain vs. loss of function, compensatory mechanisms in mice, DNA substrates, phosphorylation, contribution to neurodegeneration) are presented as possibilities requiring future investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C39, C111, C114, C121-C122, C128, C173, C177, C180) are explicitly speculative or identify knowledge gaps. They represent reasonable hypotheses based on the data but are not tested. It's appropriate to include such speculation in a Discussion, but these should not be considered supported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background claims establish that MATR3 is a DNA/RNA-binding protein implicated in familial ALS/FTD through 13 identified mutations, with MATR3 pathology also observed in sporadic disease, suggesting broad involvement in ALS pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C28 provide literature-based context supported by appropriate citations. These establish the rationale for studying MATR3 and are generally well-supported by prior work. Claim C4 (MATR3 dysfunction integrally linked to pathogenesis) is somewhat inferential but reasonable given the evidence from both familial and sporadic cases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C123",
+      "C124",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Prior literature suggests RNA recognition by MATR3 is largely driven by RRM2, which binds thousands of RNAs via a pyrimidine-rich consensus sequence. The current data showing RRM2 deletion causes phase separation supports a model where RNA binding prevents MATR3 self-association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C123-C124, C137-C138 cite prior literature on MATR3 RNA binding. The current data (C139-C140, C52) showing phase separation upon RRM2 deletion provides functional support for RRM2's importance. The model that RNA binding prevents self-association (C52) is a reasonable inference from the data, though direct binding studies would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C79",
+      "C80",
+      "C81",
+      "C132",
+      "C148",
+      "C149",
+      "C159",
+      "C160"
+    ],
+    "result": "Background on other ALS-associated RBPs (TDP-43, FUS, TIA1) establishes that disease mutations promote LLPS and cytoplasmic aggregation, with cytoplasmic localization linked to toxicity\u2014providing context for MATR3's contrasting behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69, C79-C81, C132, C148-C149, C159-C160 are well-supported by citations and provide important comparative context. The contrast between MATR3 (where cytoplasmic localization is protective) and TDP-43/FUS (where it's toxic) is a key finding of the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C113",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Post-mortem studies show MATR3 pathology in ALS patients, and mouse models show that Matr3 knockout is embryonic lethal while MATR3(F115C) overexpression causes myopathy without significant neurodegeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113, C115-C120 cite prior studies characterizing MATR3 in patient tissues and animal models. These are appropriately referenced and provide context for interpreting the current findings. The lack of neurodegeneration in MATR3(F115C) mice (C120) is discussed in relation to the dose-dependency observed in the current study (C121).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C162"
+    ],
+    "result": "The partial rescue by ZF2 deletion and protection from cytoplasmic localization together suggest MATR3 overexpression elicits neurodegeneration through nuclear DNA binding activity mediated by ZF2, though MATR3's genomic targets remain uncharacterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C162 integrates findings from ZF2 deletion (C43, C104, C126) and cytoplasmic localization (C85, C90) to infer a mechanism involving nuclear DNA binding. While this is a logical inference, it remains indirect\u2014no DNA binding or transcriptional effects are directly measured. The acknowledgment that genomic targets are unknown (C127) is appropriate. This represents a reasonable working model but requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Cytoplasmic MATR3 granules form when nuclear localization is disrupted, potentially due to lower cytoplasmic RNA concentrations favoring phase separation. This phenomenon is shared with TDP-43 and FUS and may involve increased protein-protein interactions through low-complexity domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 show cytoplasmic granule formation (Figure 6D) and cite literature on RNA concentration gradients. The comparison to TDP-43/FUS (C132-C133) and connection to protein interactions (C134-C136, citing work in C2C12 cells) provide mechanistic context. However, RNA concentrations and protein interactions were not directly measured in the current system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C152",
+      "C153"
+    ],
+    "result": "S85C is unique among disease mutations in being associated with both myopathy and neurodegeneration, and shows cell-type specific differences in MATR3(\u0394RRM2) behavior (spherical droplets in neurons vs. irregular clusters in myoblasts).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C152 correctly identifies S85C's unique clinical presentation (cited). Claim C153 cites prior work showing different morphology in myoblasts. This suggests cell-type specific factors influence MATR3 behavior, which is relevant for understanding tissue-specific disease manifestations. However, the current study doesn't directly investigate myoblasts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C155",
+      "C156"
+    ],
+    "result": "Different NLS sequences control MATR3 localization in different cell types: amino acids 701-718 are essential in Ac2F cells but deletion of the homologous sequence (701-720) has no effect in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C156 compare prior literature (Ac2F cells) to current findings (neurons, Figure 6B). This demonstrates cell-type specificity in NLS usage and justifies the systematic mapping approach. The observation is clearly documented though the mechanistic basis for cell-type differences is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C163",
+      "C166",
+      "C169"
+    ],
+    "result": "Prior studies suggested enhanced toxicity of pathogenic MATR3 variants might arise from changes in localization or solubility, with reduced S85C stability previously reported. The current study finds no localization changes but confirms solubility alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163, C166, C169 appropriately cite and contextualize prior work. The current findings (C164, C168) partially agree (solubility) and partially disagree (stability) with prior reports, which is clearly discussed. This demonstrates how the current work refines understanding of mutant MATR3 properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C178",
+      "C179"
+    ],
+    "result": "The study confirms MATR3 is essential for neuronal survival and shows that MATR3 accumulation causes neurodegeneration dependent on subcellular localization and ZF domains. MATR3 pathology in sporadic ALS may reflect alterations in RNA/protein homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C175 cite prior work on MATR3 functions and pathology. Claims C178-C179 appropriately summarize the current findings. Claim C176 makes a reasonable inference about MATR3 pathology reflecting homeostatic alterations, though this is not directly tested. These represent fair summary statements of the work's implications.",
+    "result_type": "MAJOR"
+  }
+]

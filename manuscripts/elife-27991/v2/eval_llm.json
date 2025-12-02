@@ -1,0 +1,335 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C54"
+    ],
+    "result": "Approximately 3% (98 out of 3418) of random aneuploid karyotypes generated through triploid meiosis disrupt chromatin silencing at the HML locus, while no silencing defects were observed in 100 haploid control colonies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11, C12, and C54 provide direct experimental evidence from a large-scale screen showing that 98/3418 aneuploid colonies exhibited silencing defects while 0/100 haploid controls showed defects. The experimental design is appropriate with adequate sample sizes and proper controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C13"
+    ],
+    "result": "Chromosome III and chromosome X gains are significantly enriched in aneuploid strains with chromatin silencing defects compared to control aneuploid strains without silencing phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C13 are supported by karyotype analysis of 24 stable aneuploid strains with silencing defects compared to previously characterized control aneuploid strains. Statistical significance is demonstrated in Figure 1C, though the exact statistical test and p-values should be more clearly reported in the text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C24"
+    ],
+    "result": "Chromosome X disomy alone is sufficient to cause HML desilencing, while gains of Chr III alone do not affect silencing. This was demonstrated through segregation analysis and conditional centromere inactivation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C19, C20, C21, C23, and C24 collectively provide strong evidence through multiple experimental approaches: segregation analysis showing co-segregation of Chr X with desilencing phenotype, demonstration that Chr III gains alone are insufficient, and conditional centromere experiments showing acute Chr X gain causes desilencing. The convergence of multiple independent experimental strategies strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Chromosome X disomy disrupts yeast mating-type identity, as demonstrated by impaired G1 arrest in response to \u03b1-factor (14\u00b11.5% of disome X cells remained in G2 vs. 0% for WT) and reduced pheromone sensitivity in halo assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C26, C27, C28, and C29 are supported by FACS-based cell cycle analysis and halo assays showing quantitative defects in pheromone response. The data demonstrate functional consequences of chromatin desilencing on cellular differentiation. Statistical significance is reported with appropriate replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C18"
+    ],
+    "result": "The silencing defect in disome X extends beyond HML to multiple genomic loci including subtelomeric genes (YFR057W, COS12, AAD15, PAU4) and rDNA regions (NTS1-2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C18 are supported by qPCR analysis showing significant derepression of multiple normally silenced loci across different chromosomes. This demonstrates that the effect is not limited to the HML locus and represents a broader disruption of heterochromatin silencing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Chromatin desilencing in disome X is associated with increased H4K16 acetylation and reduced Sir2 occupancy at HM loci, suggesting that reduced chromatin-localized Sir2 and corresponding increased H4K16 acetylation contribute to the silencing defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C32, C33, and C34 are supported by ChIP-qPCR data showing significant changes in H4K16 acetylation and Sir2 occupancy at both HML and HMR loci. The mechanistic inference (C34) is reasonable given the established role of Sir2 in deacetylating H4K16, though causality is not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C35",
+      "C36",
+      "C67"
+    ],
+    "result": "Sir2 protein shows a more diffuse nuclear distribution in disome X cells compared to WT haploid cells, with significantly reduced coefficient of variation (CV) of Sir2-mTurq fluorescence (p<0.001), consistent with reduced concentration of Sir2 in silenced chromatin regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C35, C36, and C67 are supported by quantitative microscopy analysis of Sir2-mTurq localization. The CV metric appropriately captures the difference in spatial distribution while accounting for overall fluorescence levels. The inference connecting diffuse distribution to reduced Sir2 concentration at silenced loci is consistent with ChIP data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "The HML locus shows altered nuclear positioning in disome X cells, with significant reduction in perinuclear localization (zone 1) and corresponding increase in central nuclear localization (zone 3), suggesting that the silencing defect is associated with altered chromatin positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C38 are supported by microscopy analysis of HML positioning relative to the nuclear envelope using LacO/LacI-GFP system. Statistical significance is demonstrated (p<0.05). However, the causal relationship between altered positioning and silencing defect remains unclear\u2014this could be cause or consequence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C81"
+    ],
+    "result": "Genome-wide ChIP-seq and RNA-seq analysis reveals that while there is no global correlation between H3K4me3 or H3K79me3 changes and gene expression in disome X, subtelomeric genes show significant enrichment of H3K4me3 and increased expression, with specific genes (COS12, IMD2, YIR042C) showing increased expression and enrichment of both H3K4me3 and H3K79me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43, C45, and C81 are supported by integrated ChIP-seq and RNA-seq analysis of ~3502 genes. The lack of genome-wide correlation but specific effects at subtelomeric genes is clearly demonstrated with appropriate statistical analysis (Fisher's exact test, p=2.5\u00d710\u207b\u2078). The data show that histone modification changes are localized to specific chromatin domains rather than genome-wide.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C46",
+      "C47",
+      "C49",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The chromatin silencing defect of disome X can be partially recapitulated by combining four Chr X genes (RPL39, RPS14B, ASF1, and DPB11) integrated into the haploid genome, while individual genes or pairs of genes are insufficient, suggesting a complex multigenic mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C46, C47, C49, C51, C52, and C53 are supported by systematic integration experiments showing that four genes together cause significant desilencing while individual genes or pairs do not. The MOBY library screen identified candidate genes, and integration experiments tested them systematically. The conclusion that the mechanism is complex and multigenic is well-supported, though the effect is weaker than full disome X.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "Whole-genome sequencing revealed no coding region mutations in four aneuploid strains that were not already present in parental euploid strains, ruling out point mutations as the cause of silencing defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C14 is supported by whole-genome sequencing analysis with appropriate variant calling and filtering. This control experiment is critical for establishing that aneuploidy itself, rather than spontaneous mutations, causes the silencing defects. The methods describe appropriate quality control steps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "YFP expression from the HML locus is heterogeneous within aneuploid populations, with transitions between silenced and desilenced states occurring during cell proliferation. This heterogeneity is not due to karyotypic variation, as both YFP+ and YFP- subpopulations retain the same aneuploid karyotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C16, and C17 are supported by microscopy observations, FACS sorting followed by qPCR karyotyping, and time-lapse imaging. The demonstration that both subpopulations have the same karyotype rules out karyotypic instability as the cause of heterogeneity. Time-lapse imaging directly demonstrates switching between states, indicating epigenetic instability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "Gaining two copies of Chr III exacerbates the silencing defect of disome X, though Chr III gains alone are insufficient for desilencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 is supported by microscopy analysis of segregants showing that strains with both Chr III and Chr X gains have stronger desilencing than disome X alone (Figure 2A). This suggests a synergistic or additive effect, though the mechanism is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "The disome X/\u0394sir1 double mutant shows significantly higher HML::YFP fluorescence than either single mutant (p<0.05), suggesting an additive or synergistic effect on silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by microscopy analysis showing statistically significant increase in the double mutant. This suggests that disome X and \u0394sir1 affect silencing through partially independent mechanisms, though the exact nature of the interaction is not fully characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "SIR2 is not haploinsufficient for silencing, as demonstrated by heterozygous SIR2 diploid strains (\u0394sir2/SIR2) showing no compromise in HML silencing despite reduced Sir2 levels similar to disome X.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is supported by experimental data from heterozygous diploid strains and citation to prior work (Dodson and Rine, 2015). This control experiment is important for ruling out simple Sir2 haploinsufficiency as the mechanism of disome X-induced desilencing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "NAD supplementation does not rescue the desilencing phenotype in disome X strains, ruling out NAD depletion as the primary mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C88 reports a negative result from NAD supplementation experiments, but the data are not shown ('data not shown'). Without seeing the experimental details, concentrations used, or extent of rescue attempted, it is difficult to fully evaluate this claim. The conclusion may be correct, but the evidence is not presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "Most subtelomeric genes are not strongly affected by Chr X disomy, suggesting that aneuploidy does not have a general effect on silencing at subtelomeres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is supported by RNA-seq analysis showing that only a subset of subtelomeric genes are significantly affected. This is an important qualification of the broader findings, indicating that the effects are specific rather than representing complete loss of subtelomeric silencing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C9",
+      "C74"
+    ],
+    "result": "Aneuploidy can directly cause epigenetic instability and disrupt cellular differentiation by derepressing heterochromatin, relaxing epigenetic inheritance, and causing stochastic variation in cell identity that impairs responsiveness to regulatory factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C74 represent the major conclusions of the study, synthesizing findings from chromatin desilencing, heterogeneous expression, impaired pheromone response, and altered histone modifications. These conclusions are well-supported by the collective experimental evidence, though the generalizability beyond yeast mating-type specification remains to be established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Aneuploidy-induced changes in heterochromatin inheritance and histone-modification landscape may be an important mechanism by which chromosomal instability drives phenotypic variability during tumor evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C75 is speculative and extends the yeast findings to cancer biology. While the hypothesis is reasonable and the yeast data provide proof-of-principle, there is no direct evidence presented linking these mechanisms to tumor evolution. This represents an interesting hypothesis for future work rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Perturbed nuclear compartmentalization causing gene expression changes may be an emergent outcome of gene copy number imbalance associated with certain chromosome aneuploidy, as suggested by findings in both yeast disome X and human trisomy 21 fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C72 is an inference connecting the current study's findings to prior work on trisomy 21 (Letourneau et al., 2014). While the parallel is interesting, the mechanisms may differ between organisms and the causal relationship between nuclear organization changes and gene expression changes is not established in either system. This represents a reasonable hypothesis but not a firmly supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C10",
+      "C30",
+      "C31",
+      "C44",
+      "C48",
+      "C50",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C83",
+      "C84",
+      "C86",
+      "C87",
+      "C89",
+      "C90"
+    ],
+    "result": "Background knowledge claims about aneuploidy in cancer, yeast biology, chromatin silencing mechanisms, histone modifications, and nuclear organization are cited from the literature to provide context for the experimental findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C10, C30, C31, C44, C48, C50, C54-C73, C77-C80, C83-C84, C86-C87, C89-C90) represent established knowledge from the literature, appropriately cited. They provide necessary background and context for interpreting the experimental results. The citations appear appropriate and the claims are consistent with established understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Most aneuploid yeast obtained through triploid meiosis are karyotypically unstable, necessitating screening for stable karyotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is an inference based on the experimental design requiring extensive screening to identify 24 stable aneuploid strains. This is consistent with prior literature (Pavelka et al., 2010) and the methods describe appropriate stability testing through repeated FACS analysis.",
+    "result_type": "MINOR"
+  }
+]

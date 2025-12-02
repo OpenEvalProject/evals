@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "RAMPAGE assays generated genome-wide TSS usage maps at single-nucleotide resolution with 1 hr temporal resolution throughout embryonic development in five Drosophila species spanning 25-50 million years of evolution, identifying 2.2\u00d710^4 to 2.7\u00d710^4 high-confidence TSCs per species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 establish the experimental design and data generation, while C48-C51 and C114-C117 provide methodological validation. The narrow distribution of RAMPAGE signal over annotated loci (C50, Figure 1C) confirms high specificity for true TSSs. The methodology is well-documented with appropriate technical details.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C52"
+    ],
+    "result": "82% of D. melanogaster TSCs can be attributed to annotated genes, with highly reproducible quantification of promoter expression levels across biological replicates (Pearson R\u00b2=0.95 for TSCs with maximum expression \u226525 RPM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 provide direct quantification from the data analysis with statistical validation shown in Figures 1D-E and 2A. Claim C52 confirms that variation across species vastly exceeds variation across replicates, validating the biological signal. The reproducibility metrics are appropriate and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Expression profiles of individual promoters are overall tightly conserved across species, but with substantial gene-to-gene variability. The degree of expression divergence differs significantly between Gene Ontology categories (p<10^-16), with transcription and splicing regulation showing strongest conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 are supported by comprehensive analysis shown in Figure 2C-D with appropriate statistical testing (one-way ANOVA). Claims C54-C55 provide specific examples (hunchback vs RpL19) demonstrating the range of conservation patterns. The global alignment approach (C53) is validated by marker gene profiles (Figure 2B).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C56"
+    ],
+    "result": "Three major classes of core promoters are defined by distinct sets of core motifs and are associated with three broad phases of embryonic development: Early (DRE, Ohler-1/5/6/7), Intermediate (INR, MTE, DPE), and Late (TATA). A classifier trained on core motif scores can predict these classes with substantial predictive power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 describe the three promoter classes with specific motif enrichments shown in Figure 3B. Claim C13 demonstrates predictive capability through quadratic discriminant analysis (Figure 3D). Claim C56 notes that expression clusters with different specificities share promoter structure trends, supporting the hierarchical model. The classification is well-supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Different sets of TFBSs are enriched near core promoters active in the three developmental phases, with specific TFBSs strongly associated with particular core promoter motifs. The presence of most core promoter motifs and TFBSs is conserved between species far beyond random expectations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 are supported by enrichment analysis (Figure 3E-F) with FDR-corrected chi-square tests demonstrating significant conservation. Claims C57-C58 provide specific examples of TFBS-core motif associations (Figure 3G). Claim C59 proposes a mechanistic hypothesis that is reasonable given the data but remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C60",
+      "C61",
+      "C62",
+      "C66"
+    ],
+    "result": "The three promoter classes display markedly different profiles of sequence conservation, with differential conservation overlapping regions occupied by core promoter elements (TATA, INR, DPE) and TFBSs. Selective constraints on developmental expression timing act particularly strongly on core promoter elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C60 are supported by PhastCons analysis (Figure 3H, 4A) showing distinct conservation patterns. Claim C62 validates the functional importance through ab initio motif discovery returning canonical sequences (Figure 4E). Claim C61 appropriately notes the boundary of the correlation. Claim C66 provides a well-supported conclusion from the conservation analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "There is a subtle but highly significant correlation between conservation of promoter sequence and expression profiles. Promoters with highly divergent expression profiles are depleted of sites under purifying selection and enriched for sites under positive selection. Promoters with conserved expression tend to have core elements closer to motif consensus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 are supported by correlation analysis (Figure 4A-B, F-G) with appropriate statistical testing. Claims C18 uses phyloP analysis (Figure 4C-D) to quantify selection regimes. Claims C63-C65 extend the analysis to TFBSs and composition (Figure 4\u2014figure supplement 1). The correlations are subtle but statistically significant with appropriate p-values provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C67",
+      "C68"
+    ],
+    "result": "Only 49% of D. melanogaster TSCs are functionally conserved in all five species (75% when restricted to syntenic alignments), with a false positive rate under 0.1%. The species phylogeny can be accurately reconstructed from TSC gain/loss patterns. Functionally conserved promoters display far higher sequence conservation than species-specific ones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 provide quantification of TSC conservation with appropriate controls for technical artifacts (Figure 5A). Claim C24 validates the biological signal through phylogenetic reconstruction (Figure 5B). Claim C25 demonstrates the relationship between functional and sequence conservation (Figure 5C). Claims C67-C68 provide appropriate caveats and stratification by expression level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C69",
+      "C70"
+    ],
+    "result": "Non-genic promoters evolve at a substantially higher rate than genic ones (p<0.01 for all pairwise comparisons), though a substantial proportion of non-genic promoters is deeply conserved. Overall, promoters evolve no more slowly, and possibly even faster, than TFBSs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 is supported by conservation analysis (Figure 5D) with appropriate statistical testing. Claim C70 notes the existence of deeply conserved non-genic promoters, suggesting functionality. Claim C69 compares with published TFBS data (Figure 5\u2014figure supplement 4), though the authors appropriately note the difficulty of rigorous comparison between disparate data types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "3973 embryonic TSCs in D. melanogaster represent putative lncRNA promoters, validated by DNaseI hypersensitivity data. The vast majority do not overlap protein-coding sequences and are unlikely to encode proteins or peptides as short as 10 amino acids. lncRNA promoters tend to be substantially more stage-specific than protein-coding gene promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are supported by multiple lines of evidence: DNase-seq validation (C28, Figure 6B), transcript modeling (C29, Figure 6\u2014figure supplement 2), and phyloCSF analysis (C30, Figure 6C). Claim C31 is supported by Shannon entropy analysis (Figure 6D). The characterization is comprehensive and well-validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "631 lncRNA TSCs are active in all five species and display sequence conservation similar to protein-coding gene promoters, with developmental expression specificity more constrained than many protein-coding genes. This includes well-known essential noncoding transcription units such as bithoraxoid and roX1. At least 1529 lncRNA promoters are conserved within the melanogaster subgroup.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by PhastCons analysis (Figure 6F) and expression profile conservation (Figure 6G). Claim C73 provides validation through known functional lncRNAs. Claims C71-C72 and C74 provide reproducibility data and subgroup-specific analysis (Figure 6E, Figure 6\u2014figure supplement 5). The evidence strongly supports purifying selection on these lncRNA promoters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C75",
+      "C76",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "195 lncRNA TSCs specific to the melanogaster subgroup display sequence conservation similar to protein-coding gene promoters within the subgroup, with lineage-specific selective constraints. This suggests that lineage-specific lncRNAs have come under purifying selection after acquiring lineage-specific functions, and that noncoding transcription may be a major driver of phenotypic diversification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 are supported by conservation analysis within and outside the subgroup (Figure 6H, Figure 6\u2014figure supplement 6). Claims C75-C76 and C107-C109 provide well-reasoned conclusions from the data. The observation that lineage-specific lncRNAs show conservation within but not outside the lineage is compelling evidence for lineage-specific function under selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C112"
+    ],
+    "result": "The FBgn0264479 lncRNA is 0.5 kb, extremely unlikely to encode functional peptides (phyloCSF score -217.3), and is highly expressed in all five species in a strikingly conserved temporal pattern restricted to ~3 hr encompassing gastrulation onset. The transcript displays hallmarks of robust purifying selection and shows specific spatial expression patterns with cytoplasmic apical localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 provide comprehensive characterization through multiple experimental approaches: phyloCSF analysis (C36, Figure 7\u2014figure supplement 1), expression profiling (C37, Figure 7B), Northern blot validation (C38, Figure 7C), sequence conservation (C39, Figure 7A), ChIP-chip data integration (C40, Figure 7\u2014figure supplement 2), RNA-FISH (C41-C42, Figure 7D-E), and structure prediction (C43, Figure 7F). Claims C80-C81 provide additional regulatory evidence. The characterization is thorough and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The FBgn0264479 lncRNA is expressed in a spatial profile highly similar to the schnurri gene, with punctate cytoplasmic localization reminiscent of Dpp pathway component targeting to endosomes, raising the possibility of a role in TGF-\u03b2 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C84 draw comparisons with known genes and pathways based on expression patterns and localization. While the comparisons are reasonable and supported by appropriate citations, claim C85 explicitly acknowledges this as speculative (\"intriguing possibility\"). The hypothesis is plausible but requires experimental validation beyond expression pattern similarity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C59",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "A hierarchical regulatory model is proposed in which core promoters define broad windows of opportunity for expression by defining a range of transcription factors from which they can receive regulatory inputs, while enhancers mediate fine-grained regulation. Core promoters may restrict inputs by recruiting different sets of general transcription factors that interact with distinct groups of transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 and C101 present the hierarchical model, which is well-supported by the comprehensive data on core promoter classes, TFBS associations, and temporal expression patterns. Claim C99 validates the model by detecting in vivo associations previously described in vitro. Claim C100 appropriately characterizes this as the first demonstration of global relevance in development. Claims C59 and C102 provide mechanistic hypotheses supported by literature. Claim C103 is appropriately speculative about spatial extension.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C86",
+      "C87",
+      "C88",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C104",
+      "C105",
+      "C106",
+      "C110",
+      "C111",
+      "C113"
+    ],
+    "result": "The sequence and expression specificity of noncoding RNA promoters are evolutionarily conserved, implying biological relevance. Noncoding transcription is extremely prevalent, tightly regulated, and deeply conserved in animal development. D. melanogaster is established as an excellent model for exploring lncRNA functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 and C88 provide summary conclusions well-supported by the comprehensive conservation analyses. Claims C86-C87 and C95-C96 establish the broader context from literature. Claims C97-C98 justify the comparative genomics approach. Claims C104-C106 appropriately acknowledge the scope and limitations. Claims C110-C111 propose a mechanism for lncRNA evolution. Claim C113 is appropriately forward-looking. The conclusions are well-supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The prevailing view is that core promoters are generally not thought to play a significant regulatory role and are structural elements contributing little regulatory information, while enhancers are the primary determinants of expression specificity. However, there is evidence that core promoters can influence expression specificity of some genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 accurately describe the prevailing views and established knowledge from the literature, appropriately supported by citations. These claims establish the context and motivation for the current study, which challenges the traditional view. The characterization of prior knowledge is accurate and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Methodological criteria for TSC conservation analysis and phylogenetic reconstruction are defined, including a 100-fold signal reduction threshold for absence determination and parsimony-based phylogenetic inference treating TSC presence/absence as discrete characters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 describe methodological details that are clearly stated and appropriate for the analyses performed. The 100-fold threshold (C118) is conservative and validated by the low false positive rate (C22). The phylogenetic reconstruction method (C119) is standard and appropriate. The sequence conservation methods (C120) use established tools with appropriate parameters.",
+    "result_type": "MINOR"
+  }
+]

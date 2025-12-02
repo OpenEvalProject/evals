@@ -1,0 +1,624 @@
+{
+  "submission": {
+    "id": "036ebf19-d7c3-41ca-9390-f797b6f9148a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:51:51.775872Z",
+    "updated_at": "2025-12-02T00:51:51.775872Z"
+  },
+  "content": [
+    {
+      "id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "submission_id": "036ebf19-d7c3-41ca-9390-f797b6f9148a",
+      "content_type": "manuscript",
+      "content_text": "# The eukaryotic bell-shaped temporal rate of DNA replication origin firing emanates from a balance between origin activation and passivation\n\n## Authors\n\n- Jean-Michel Arbona<sup>1</sup> ([ORCID: 0000-0001-6166-9056](https://orcid.org/0000-0001-6166-9056))\n- Arach Goldar<sup>2</sup>\n- Olivier Hyrien<sup>3</sup> ([ORCID: 0000-0001-8879-675X](https://orcid.org/0000-0001-8879-675X))\n- Alain Arneodo<sup>4</sup>\n- Benjamin Audit<sup>1</sup> ([ORCID: 0000-0003-2683-9990](https://orcid.org/0000-0003-2683-9990)) \u2020\n\n### Affiliations\n\n1. Laboratoire de Physique, Universit\u00e9 de Lyon, Ens de Lyon, Universit\u00e9 Claude Bernard Lyon 1, CNRS Lyon France\n2. Ibitec-S, CEA Gif-sur-Yvette France\n3. Institut de Biologie de l\u2019Ecole Normale Sup\u00e9rieure Ecole Normale Sup\u00e9rieure, CNRS, INSERM, PSL Research University Paris France\n4. LOMA Univ de Bordeaux, CNRS, UMR 5798 Talence France\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe time-dependent rate I(t) of origin firing per length of unreplicated DNA presents a universal bell shape in eukaryotes that has been interpreted as the result of a complex time-evolving interaction between origins and limiting firing factors. Here, we show that a normal diffusion of replication fork components towards localized potential replication origins (p-oris) can more simply account for the I(t) universal bell shape, as a consequence of a competition between the origin firing time and the time needed to replicate DNA separating two neighboring p-oris. We predict the I(t) maximal value to be the product of the replication fork speed with the squared p-ori density. We show that this relation is robustly observed in simulations and in experimental data for several eukaryotes. Our work underlines that fork-component recycling and potential origins localization are sufficient spatial ingredients to explain the universality of DNA replication kinetics.\n\n## Introduction\n\nEukaryotic DNA replication is a stochastic process (Hyrien et al., 2013; Hawkins et al., 2013; Hyrien, 2016b). Prior to entering the S(ynthesis)-phase of the cell cycle, a number of DNA loci called potential origins (p-oris) are licensed for DNA replication initiation (Machida et al., 2005; Hyrien et al., 2013; Hawkins et al., 2013). During S-phase, in response to the presence of origin firing factors, pairs of replication forks performing bi-directional DNA synthesis will start from a subset of the p-oris, the active replication origins for that cell cycle (Machida et al., 2005; Hyrien et al., 2013; Hawkins et al., 2013). Note that the inactivation of p-oris by the passing of a replication fork called origin passivation, forbids origin firing in already replicated regions (de Moura et al., 2010; Hyrien and Goldar, 2010; Yang et al., 2010). The time-dependent rate of origin firing per length of unreplicated DNA, $I(t)$, is a fundamental parameter of DNA replication kinetics. $I(t)$ curves present a universal bell shape in eukaryotes (Goldar et al., 2009), increasing toward a maximum after mid-S-phase and decreasing to zero at the end of S-phase. An increasing $I(t)$ results in a tight dispersion of replication ending times, which provides a solution to the random completion problem (Hyrien et al., 2003; Bechhoefer and Marshall, 2007; Yang and Bechhoefer, 2008).\n\nModels of replication in Xenopus embryo (Goldar et al., 2008; Gauthier and Bechhoefer, 2009) proposed that the initial $I(t)$ increase reflects the progressive import during S-phase of a limiting origin firing factor and its recycling after release upon forks merge. The $I(t)$ increase was also reproduced in a simulation of human genome replication timing that used a constant number of firing factors having an increasing reactivity through S-phase (Gindin et al., 2014). In these three models, an additional mechanism was required to explain the final $I(t)$ decrease by either a subdiffusive motion of the firing factor (Gauthier and Bechhoefer, 2009), a dependency of firing factors\u2019 affinity for p-oris on replication fork density (Goldar et al., 2008), or an inhomogeneous firing probability profile (Gindin et al., 2014). Here, we show that when taking into account that p-oris are distributed at a finite number of localized sites then it is possible to reproduce the universal bell shape of the $I(t)$ curves without any additional hypotheses than recycling of fork components. $I(t)$ increases following an increase of fork mergers, each merger releasing a firing factor that was trapped on DNA. Then $I(t)$ decreases due to a competition between the time $t_{c}$ to fire an origin and the time $t_{r}$ to replicate DNA separating two neighboring p-ori. We will show that when $t_{c}$ becomes smaller than $t_{r}$, p-ori density over unreplicated DNA decreases, and so does $I(t)$. Modeling random localization of active origins in Xenopus embryo by assuming that every site is a (weak) p-ori, previous work implicitly assumed $t_{r}$ to be close to zero (Goldar et al., 2008; Gauthier and Bechhoefer, 2009) forbidding the observation of a decreasing $I(t)$. Licensing of a limited number of sites as p-ori thus appears to be a critical property contributing to the observed canceling of $I(t)$ at the end of S-phase in all studied eukaryotes.\n\n## Results\n\n### Emergence of a bell-shaped I(t)\n\nIn our modeling of replication kinetics, a bimolecular reaction between a diffusing firing factor and a p-ori results in an origin firing event; then each half of the diffusing element is trapped and travels with a replication fork until two converging forks merge (termination, Figure 1a). A molecular mechanism explaining the synchronous recruitment of firing factors to both replication forks was recently proposed (Araki, 2016), supporting the bimolecular scenario for p-ori activation. Under the assumption of a well-mixed system, for every time step $dt$, we consider each interaction between the $N_{FD}(t)$ free diffusing firing factors and the $N_{p\u2212ori}(t)$ p-oris as potentially leading to a firing with a probability $k_{on}dt$. The resulting simulated firing rate per length of unreplicated DNA is then:\n\n$$\nI_{S}(t)=\\frac{N_{fired}(t,t+dt)}{L_{unrepDNA}(t)dt}\u2009,\n$$\n\nwhere $N_{fired}(t,t+dt)$ is the number of p-oris fired between times $t$ and $t+dt$, and $L_{unrepDNA}(t)$ is the length of unreplicated DNA a time $t$. Then we propagate the forks along the chromosome with a constant speed $v$, and if two forks meet, the two half firing complexes are released and rapidly reform an active firing factor. Finally, we simulate the chromosomes as 1D chains where prior to entering S-phase, the p-oris are precisely localized. For Xenopus embryo, the p-ori positions are randomly sampled, so that each simulated S-phase corresponds to a different positioning of the p-oris. We compare results obtained with periodic or uniform p-ori distributions (Materials and methods). For S. cerevisiae, the p-ori positions, identical for each simulation, are taken from the OriDB database (Siow et al., 2012). As previously simulated in human (L\u00f6b et al., 2016), we model the entry in S-phase using an exponentially relaxed loading of the firing factors with a time scale shorter than the S-phase duration $T_{phase}$ (3 min for Xenopus embryo, where $T_{phase}\u223c30$ min, and 10 min for S. cerevisiae, where $T_{phase}\u223c60$ mins). After the short loading time, the total number of firing factors $N_{D}^{T}$ is constant. As shown in Figure 1b (see also Figure 2), the universal bell shape of the $I(t)$ curves (Goldar et al., 2009) spontaneously emerges from our model when going from weak to strong interaction, and decreasing the number of firing factors below the number of p-oris. The details of the firing factor loading dynamics do not affect the emergence of a bell shaped $I(t)$, even though it can modulate its precise shape, especially early in S-phase.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/35192/elife-35192-fig1-v2.jpg)\n\n**Figure 1.:** Emergence of a bell-shaped $I(t)$.(a) Sketch of the different steps of our modeling of replication initiation and propagation.\u00a0(b) $I_{S}(t)$ (Equation 1) obtained from numerical simulations (Materials\u00a0and\u00a0methods) of one chromosome of length 3000 kb, with a fork speed $v=0.6$ kb/min. The firing factors are loaded with a characteristic time of 3 min. From blue to green to red the interaction is increased and the number of firing factors is decreased: blue ($k_{on}=5\\times10^{\u22125}$ min$^{\u22121}$, $N_{D}^{T}=1000$, $\u03c1_{0}=0.3$ kb$^{\u22121}$), green ($k_{on}=6\\times10^{\u22124}$ min$^{\u22121}$, $N_{D}^{T}=250$, $\u03c1_{0}=0.5$ kb$^{\u22121}$), red ($k_{on}=6\\times10^{\u22123}$ min$^{\u22121}$, $N_{D}^{T}=165$, $\u03c1_{0}=0.28$ kb$^{\u22121}$). (c) Corresponding normalized densities of p-oris (solid lines), and corresponding normalized numbers of free diffusing firing factors (dashed line): blue ($N_{FD}^{\u2217}=3360$), green ($N_{FD}^{\u2217}=280$), red ($N_{FD}^{\u2217}=28$); the horizontal dotted-dashed line corresponds to the critical threshold value $N_{FD}(t)=N_{FD}^{\u2217}$. (d) Corresponding number of passivated origins over the number of activated origins (solid lines). Corresponding probability distribution functions (PDF) of replication time (dashed lines).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/35192/elife-35192-fig2-v2.jpg)\n\n**Figure 2.:** (a) Xenopus embryo: Simulated $I_{S}(t)$ (Equation (1), Materials and methods) for a chromosome of length $L=3000$ kb and a uniform distribution of p-oris (blue: $v=0.6$ kb/min, $k_{on}=3.\\times10^{\u22123}$ min$^{\u22121}$, $N_{D}^{T}=187$, $\u03c1_{0}=0.70$ kb$^{\u22121}$) or a periodic distribution of p-oris (red: $v=0.6$ kb/min, $k_{on}=6\\times10^{\u22123}$ min$^{\u22121}$, $N_{D}^{T}=165$, $\u03c1_{0}=0.28$ kb$^{\u22121}$); (red squares) 3D simulations with the same parameter values as for periodic p-ori distribution; (black) experimental $I(t)$: raw data obtained from Goldar et al. (2009) were binned in groups of 4 data points; the mean value and standard error of the mean of each bin were represented. (b) S. cerevisiae: Simulated $I_{S}(t)$ (Materials and methods) for the 16 chromosomes with the following parameter values: $v=1.5$ kb/min, $N_{D}^{T}=143$, $k_{on}=3.6\\times10^{\u22123}$ min-1, when considering only Confirmed origins (light blue), Confirmed and Likely origins (yellow) and Confirmed, Likely and Dubious origins (purple); the horizontal dashed lines mark the corresponding predictions for $I_{max}$ (Equation 5); (purple squares) 3D simulations with the same parameter values considering Confirmed, Likely and Dubious origins; (black) experimental $I(t)$ from Goldar et al. (2009). (c) Eukaryotic organisms: $I_{max}$ as a function of $v\u03c1_{0}^{2}$; (squares and bullets) simulations performed for regularly spaced origins (blue) and uniformly distributed origins (green) (Materials and methods) with two sets of parameter values: $L=3000$ kb, $v=0.6$ kb/min, $k_{on}=1.2\\times10^{\u22122}$ min$^{\u22121}$ and $N_{D}^{T}=12$ (dashed line) or $165$ (solid line); (black diamonds) experimental data points for Xenopus embryo, S. cerevisiae, S. cerevisae grown in Hydroxyurea (HU), S. pombe, D. melanogaster, human (see text and Table 1). The following figure supplement is available for Figure 2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35192/elife-35192-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Definition of the color coding; (b) once in the vicinity of an origin of replication, a firing factor can be captured; (c) it is then splitted; (d) the two forks then travel in opposite direction, each carrying half of the diffusing firing factor.\n\nIn a simple bimolecular context, the rate of origin firing is $i(t)=k_{on}N_{p\u2212ori}(t)N_{FD}(t)$. The firing rate by element of unreplicated DNA is then given by\n\n$$\nI(t)=k_{on}N_{FD}(t)\u03c1_{p\u2212ori}(t)\u2009,\n$$\n\nwhere $\u03c1_{p\u2212ori}(t)=N_{p\u2212ori}(t)/L_{unrepDNA}(t)$. In the case of a strong interaction and a limited number of firing factors, all the diffusing factors react rapidly after loading and $N_{FD}(t)$ is small (Figure 1 (c), dashed curves). Then follows a stationary phase where as long as the number of p-oris is high (Figure 1 (c), solid curves), once a diffusing factor is released by the encounter of two forks, it reacts rapidly, and so $N_{FD}(t)$ stays small. Then, when the rate of fork mergers increases due to the fact that there are as many active forks but a smaller length of unreplicated DNA, the number of free firing factors increases up to $N_{D}^{T}$ at the end of S-phase. As a consequence, the contribution of $N_{FD}(t)$ to $I(t)$ in Equation (2) can only account for a monotonous increase during the S phase. For $I(t)$ to reach a maximum $I_{max}$ before the end of S-phase, we thus need that $\u03c1_{p\u2212ori}(t)$ decreases in the late S-phase. This happens if the time to fire a p-ori is shorter than the time to replicate a typical distance between two neighboring p-oris. The characteristic time to fire a p-ori is $t_{c}=1/k_{on}N_{FD}(t)$. The mean time for a fork to replicate DNA between two neighboring p-oris is $t_{r}=d(t)/v$, where $d(t)$ is the mean distance between unreplicated p-oris at time $t$. So the density of origins is constant as long as:\n\n$$\n\\frac{d(t)}{v}<\\frac{1}{k_{on}N_{FD}(t)}\u2009,\n$$\n\nor\n\n$$\nN_{FD}(t)<N_{FD}^{\u2217}=\\frac{v}{k_{on}d(t)}\u2009.\n$$\n\nThus, at the beginning of the S-phase, $N_{FD}(t)$ is small, $\u03c1_{p\u2212ori}(t)$ is constant (Figure 1 (c), solid curves) and so $I_{S}(t)$ stays small. When $N_{FD}(t)$ starts increasing, as long as Equation (4) stays valid, $I_{S}(t)$ keeps increasing. When $N_{FD}(t)$ becomes too large and exceeds $N_{FD}^{\u2217}$, then Equation (4) is violated and the number of p-oris decreases at a higher rate than the length of unreplicated DNA, and $\u03c1_{p\u2212ori}(t)$ decreases and goes to zero (Figure 1 (c), red solid curve). As $N_{FD}(t)$ tends to $N_{D}^{T}$, $I_{S}(t)$ goes to zero, and its global behavior is a bell shape (Figure 1 (b), red). Let us note that if we decrease the interaction strength ($k_{on}$), then the critical $N_{FD}^{\u2217}$ will increase beyond $N_{D}^{T}$ (Figure 1 (c), dashed blue and green curves). $I_{S}(t)$ then monotonously increase to reach a plateau (Figure 1 (b), green), or if we decrease further $k_{on}$, $I_{S}(t)$ present a very slow increasing behavior during the S-phase (Figure 1 (b), blue). Now if we come back to strong interactions and increase the number of firing factors, almost all the p-oris are fired immediately and $I_{S}(t)$ drops to zero after firing the last p-ori.\n\nAnother way to look at the density of p-oris is to compute the ratio of the number of passivated origins by the number of activated origins (Figure 1 (d)). After the initial loading of firing factors, this ratio is higher than one. For weak and moderate interactions (Figure 1 (d), blue and green solid curves, respectively), this ratio stays bigger than one during all the S-phase, where $I_{S}(t)$ was shown to be monotonously increasing (Figure 1 (b)). For a strong interaction (Figure 1 (b), red solid curve), this ratio reaches a maximum and then decreases below one, at a time corresponding to the maximum observed in $I_{S}(t)$ (Figure 1 (d), red solid curve). Hence, the maximum of $I(t)$ corresponds to a switch of the balance between origin passivation and activation, the latter becoming predominant in late S-phase. We have seen that up to this maximum $\u03c1_{p\u2212ori}(t)\u2248cte\u2248\u03c1_{0}$, so $I_{S}(t)\u2248k_{on}\u03c1_{0}N_{F}(t)$. When $N_{FD}(t)$ reaches $N_{FD}^{\u2217}$, then $I_{S}(t)$ reaches its maximum value:\n\n$$\nI_{max}=k_{on}\u03c1_{0}N_{FD}^{\u2217}\u2248\\frac{\u03c1_{0}v}{d(t)}\u2248v\u03c1_{0}^{2}\u2009,\n$$\n\nwhere we have used the approximation $d(t)\u2248d(0)=1/\u03c1_{0}$ (which is exact for periodically distributed p-oris). $I_{max}$ can thus be predicted from two measurable parameters, providing a direct test of the model.\n\n### Comparison with different eukaryotes\n\n#### Xenopus embryo\n\nGiven the huge size of Xenopus embryo chromosomes, to make the simulations more easily tractable, we rescaled the size $L$ of the chromosomes, $k_{on}$ and $N_{D}^{T}$ to keep the duration of S-phase $T_{phase}\u2248L/2vN_{D}^{T}$ and $I(t)$ (Equation (2)) unchanged ($L\u2192\\alphaL$, $N_{D}^{T}\u2192\\alphaN_{D}^{T}$, $k_{on}\u2192k_{on}/\\alpha$). In Figure 2 (a) are reported the results of our simulations for a chromosome length $L=3000$ kb. We see that a good agreement is obtained with experimental data (Goldar et al., 2009) when using either a uniform distribution of p-oris with a density $\u03c1_{0}=0.70$ kb$^{\u22121}$ and a number of firing factors $N_{D}^{T}=187$, or a periodic distribution with $\u03c1_{0}=0.28$ kb$^{\u22121}$ and $N_{D}^{T}=165$. A higher density of p-oris was needed for uniformly distributed p-oris where $d(t)$ (slightly) increases with time, than for periodically distributed p-oris where $d(t)$ fluctuates around a constant value $1/\u03c1_{0}$. The uniform distribution, which is the most natural to simulate Xenopus embryo replication, gives a density of activated origins of 0.17 kb$^{\u22121}$ in good agreement with DNA combing data analysis (Herrick et al., 2002) but twice lower than estimated from real time replication imaging of surface-immobilized DNA in a soluble Xenopus egg extract system (Loveland et al., 2012). Note that in the latter work, origin licensing was performed in condition of incomplete chromatinization and replication initiation was obtained using a nucleoplasmic extract system with strong initiation activity, which may explain the higher density of activated origins observed in this work.\n\n#### S. cerevisiae\n\nTo test the robustness of our minimal model with respect to the distribution of p-oris, we simulated the replication in S. cerevisiae, whose p-oris are known to be well positioned as reported in OriDB (Siow et al., 2012). 829 p-oris were experimentally identified and classified into three categories: Confirmed origins (410), Likely origins (216), and Dubious origins (203). When comparing the results obtained with our model to the experimental $I(t)$ data (Goldar et al., 2009) (Figure 2 (b)), we see that to obtain a good agreement we need to consider not only the Confirmed origins but also the Likely and the Dubious origins. This shows that in the context of our model, the number of p-oris required to reproduce the experimental $I(t)$ curve in S. cerevisiae exceeds the number of Confirmed and Likely origins. Apart from the unexpected activity of Dubious origins, the requirement for a larger number of origins can be met by some level of random initiation (Czajkowsky et al., 2008) or initiation events away from mapped origins due to helicase mobility (Gros et al., 2015; Hyrien, 2016a). If fork progression can push helicases along chromosomes instead of simply passivating them, there will be initiation events just ahead of progressing forks. Such events are not detectable by the replication profiling experiments used to determine $I(t)$ in Figure 2(b) and thus not accounted for by $I_{max}$. Given the uncertainty in replication fork velocity (a higher fork speed would require only Confirmed and Likely origins) and the possible experimental contribution of the p-oris in the rDNA part of chromosome 12 (not taken into account in our modeling), this conclusion needs to be confirmed in future experiments. It is to be noted that even if 829 p-oris are needed, on average only 352 origins have fired by the end of S-phase. For S. cerevisiae with well positioned p-oris, we have checked the robustness of our results with respect to a stochastic number of firing factors $N_{D}^{T}$ from cell to cell (Poisson distribution, Iyer-Biswas et al. (2009)). We confirmed the $I(t)$ bell shape with a robust duration of the S-phase of $58.6\\pm4.3$ min as compared to $58.5\\pm3.3$ min obtained previously with a constant number of firing factors. Interestingly, in an experiment where hydroxyurea (HU) was added to the yeast growth media, the sequence of activation of replication origins was shown to be conserved even though $T_{phase}$ was lengthened from 1 hr to 16 hr (Alvino et al., 2007). HU slows down the DNA synthesis to a rate of $\u223c50\u2009bp\u2009min^{\u22121}$ corresponding to a 30-fold decrease of the fork speed (Sogo et al., 2002). Up to a rescaling of time, the replication kinetics of our model is governed by the ratio between replication fork speed and the productive-interaction rate $k_{on}$ (neglecting here the possible contribution of the activation dynamics of firing factors). Hence, our model can capture the observation of Alvino et al. (2007) when considering a concomitant fork slowing down and $k_{on}$ reduction in response to HU, which is consistent with the molecular action of the replication checkpoint induced by HU (Zegerman and Diffley, 2010). In a model where the increase of $I(t)$ results from the import of replication factors, the import rate would need to be reduced by the presence of HU in proportion with the lengthening of S-phase in order to maintain the pattern of origin activations. Extracting $I(t)$ from experimental replication data for cells grown in absence (HU$^{\u2212}$) or presence (HU$^{+}$) (Alvino et al., 2007), we estimated $I_{max}^{HU\u2212}\u223c6.0\u2009Mb^{\u22121}min^{\u22121}$ and $I_{max}^{HU+}\u223c0.24\u2009Mb^{\u22121}min^{\u22121}$ for HU$^{\u2212}$ and HU$^{+}$ cells, respectively. The ratio $I_{max}^{HU\u2212}/I_{max}^{HU+}\u224324.8\u223cv^{HU\u2212}/v^{HU+}$ is quite consistent with the prediction of the scaling law (Equation (5)) for a constant density of p-oris.\n\n#### D. melanogaster and human\n\nWe gathered from the literature experimental estimates of $I_{max}$, $\u03c1_{0}$ and $v$ for different eukaryotic organisms (Table 1). As shown in Figure 2 (c), when plotting $I_{max}$ vs $v\u03c1_{0}^{2}$, all the experimental data points remarkably follow the diagonal trend indicating the validity of the scaling law (Eq. (5)) for all considered eukaryotes. We performed two series of simulations for fixed values of parameters $k_{o}$, $N_{D}^{T}$ and $v$ and decreasing values of $\u03c1_{0}$ with both periodic distribution (blue) and uniform (green) distributions of p-oris (Figure 2 (c)). The first set of parameters was chosen to cover high $I_{max}$ values similar the one observed for Xenopus embryo (bullets, solid lines). When decreasing $\u03c1_{0}$, the number of firing factors becomes too large and $I(t)$ does no longer present a maximum. We thus decreased the value of $N_{D}^{T}$ keeping all other parameters constant (boxes, dashed line) to explore smaller values of $I_{max}$ in the range of those observed for human and D. melanogaster. We can observe that experimental data points\u2019 deviation from Equation (5) is smaller than the deviation due to specific p-oris distributions.\n\n**Table 1.**\n Experimental data for various eukaryotic organisms with genome length $L$ ($Mb$), replication fork velocity $v$ (kb/min), number of p-oris ($N_{p\u2212ori}(t=0)$), $\u03c1_{0}=N_{p\u2212ori}(t=0)/L$ (kb$^{\u22121}$) and $I_{max}$ (Mb$^{\u22121}$min$^{\u22121}$).All $I_{max}$ data are from Goldar et al. (2009), except for S. cerevisiae grown in presence or absence of hydroxyurea (HU) which were computed from the replication profile of Alvino et al. (2007).\u00a0For S. cerevisiae and S. pombe, Confirmed, Likely, and Dubious origins were taken into account. For D. melanogaster, $N_{p\u2212ori}(t=0)$ was obtained from the same Kc cell type as the one used to estimate $I_{max}$. For Xenopus embryo, we assumed that a p-ori corresponds to a dimer of MCM2-7 hexamer so that $N_{p\u2212ori}(t=0)$ was estimated as a half of the experimental density of MCM3 molecules reported for Xenopus sperm nuclei DNA in Xenopus egg extract (Mahbubani et al., 1997). For human, we averaged the number of origins experimentally identified in K562 (62971) and in MCF7 (94195) cell lines.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>L</th>\n      <th>v</th>\n      <th>Np\u2212ori</th>\n      <th>\u03c10</th>\n      <th>Imax</th>\n      <th>Ref.</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>S. cerevisiae</td>\n      <td>12.5</td>\n      <td>1.60</td>\n      <td>829</td>\n      <td>0.066</td>\n      <td>6.0</td>\n      <td>Sekedat et al. (2010) and Siow et al. (2012)</td>\n    </tr>\n    <tr>\n      <td>S. cerevisiae in presence of HU</td>\n      <td>12.5</td>\n      <td>0.05</td>\n      <td>829</td>\n      <td>0.066</td>\n      <td>0.24</td>\n      <td>Alvino et al. (2007). Same Np\u2212ori and \u03c10 as S. cerevisiae in normal growth condition.</td>\n    </tr>\n    <tr>\n      <td>S. pombe</td>\n      <td>12.5</td>\n      <td>2.80</td>\n      <td>741</td>\n      <td>0.059</td>\n      <td>10.0</td>\n      <td>Siow et al. (2012) and Kaykov and Nurse (2015)</td>\n    </tr>\n    <tr>\n      <td>D. melanogaster</td>\n      <td>143.6</td>\n      <td>0.63</td>\n      <td>6184</td>\n      <td>0.043</td>\n      <td>0.5</td>\n      <td>Ananiev et al. (1977) and Cayrou et al. (2011)</td>\n    </tr>\n    <tr>\n      <td>human</td>\n      <td>6469.0</td>\n      <td>1.46</td>\n      <td>78000</td>\n      <td>0.012</td>\n      <td>0.3</td>\n      <td>Conti et al. (2007) and Martin et al. (2011)</td>\n    </tr>\n    <tr>\n      <td>Xenopus sperm</td>\n      <td>2233.0</td>\n      <td>0.52</td>\n      <td>744333</td>\n      <td>0.333</td>\n      <td>70.0</td>\n      <td>Mahbubani et al. (1997) and Loveland et al. (2012)</td>\n    </tr>\n  </tbody>\n</table>\n\nNote that in human it was suggested that early and late replicating domains could be modeled by spatial inhomogeneity of the p-ori distribution along chromosomes, with a high density in early replicating domains ($\u03c1_{0,early}=2.6$ ORC/100 kb) and a low density in late replicating domains ($\u03c1_{0,late}=0.2$ ORC/100 kb) (Miotto et al., 2016). If low- and high-density regions each cover one half of the genome and $\u03c1_{0,early}\u226b\u03c1_{0,late}$, most p-oris are located in the high-density regions and the origin firing kinetics ($N_{fired}(t,t+dt)$) will mainly come from initiation in these regions. However, the length of unreplicated DNA also encompasses the late replicating domains resulting in a lowering of the global $I(t)$ by at least a factor of 2 (Equation (1)). Hence, in the context of our model $I_{max}\u22720.5v\u03c1_{early}^{2}$. Interestingly, considering the experimental values for the human genome ($I_{max}=0.3\u00a0Mb^{\u22121}min^{\u22121}$ and $v=1.46\u00a0kb min^{\u22121}$, Table 1), this leads to $\u03c1_{0,early}\u22732.3$ Ori/100 kb, in good agreement with the estimated density of 2.6 ORC/100 kb (Miotto et al., 2016). Inhomogeneities in origin density could create inhomogeneities in firing factor concentration that would further enhance the replication kinetics in high density regions, possibly corresponding to early replication foci.\n\n## Discussion\n\nTo summarize, we have shown that within the framework of 1D nucleation and growth models of DNA replication kinetics (Herrick et al., 2002; Jun and Bechhoefer, 2005), the sufficient conditions to obtain a universal bell shaped $I(t)$ as observed in eukaryotes are a strong bimolecular reaction between localized p-oris and limiting origin firing factors that travel with replication forks and are released at termination. Under these conditions, the density of p-oris naturally decreases by the end of the S-phase and so does $I_{S}(t)$. Previous models in Xenopus embryo (Goldar et al., 2008; Gauthier and Bechhoefer, 2009) assumed that all sites contained a p-ori implying that the time $t_{r}$ to replicate DNA between two neighboring p-oris was close to zero. This clarifies why they needed some additional mechanisms to explain the final decrease of the firing rate. Moreover, our model predicts that the maximum value for $I(t)$ is intimately related to the density of p-oris and the fork speed (Equation (5)), and we have shown that without free parameter, this relationship holds for five species with up to a 300-fold difference of $I_{max}$ and $v\u03c1_{0}^{2}$ (Table 1, Figure 2 (c)).\n\nOur model assumes that all p-oris are governed by the same rule of initiation resulting from physicochemically realistic particulars of their interaction with limiting replication firing factors. Any spatial inhomogeneity in the firing rate $I(x,t)$ along the genomic coordinate in our simulations thus reflects the inhomogeneity in the distribution of the potential origins in the genome. In yeast, replication kinetics along chromosomes were robustly reproduced in simulations where each replication origin fires following a stochastic law with parameters that change from origin to origin (Yang et al., 2010). Interestingly, this heterogeneity between origins is captured by the Multiple-Initiator Model where origin firing time distribution is modeled by the number of MCM2-7 complexes bound at the origin (Yang et al., 2010; Das et al., 2015). In human, early and late replicating domains could be modeled by the spatial heterogeneity of the origin recognition complex (ORC) distribution (Miotto et al., 2016). In these models, MCM2-7 and ORC have the same status as our p-oris, they are potential origins with identical firing properties. Our results show that the universal bell-shaped temporal rate of replication origin firing can be explained irrespective of species-specific spatial heterogeneity in origin strength. Note, however, that current successful modeling of the chromosome organization of DNA replication timing relies on heterogeneities in origins\u2019 strength and spatial distributions (Bechhoefer and Rhind, 2012).\n\nTo confirm the simple physical basis of our modeling, we used molecular dynamics rules as previously developed for S. cerevisiae (Arbona et al., 2017) to simulate S-phase dynamics of chromosomes confined in a spherical nucleus. We added firing factors that are free to diffuse in the covolume left by the chain and that can bind to proximal p-oris to initiate replication, move along the chromosomes with the replication forks and be released when two fork merges. As shown in Figure 2 (a,b) for Xenopus embryo and S. cerevisiae, results confirmed the physical relevance of our minimal modeling and the validity of its predictions when the 3D diffusion of the firing factors is explicitly taken into account. Modeling of replication timing profiles in human was recently successfully achieved in a model with both inhibition of origin firing 55 kb around active forks, and an enhanced firing rate further away up to a few 100 kb (L\u00f6b et al., 2016) as well as in models that do not consider any inhibition nor enhanced firing rate due to fork progression (Gindin et al., 2014; Miotto et al., 2016). These works illustrate that untangling spatio-temporal correlations in replication kinetics is challenging. 3D modeling opens new perspectives for understanding the contribution of firing factor transport to the correlations between firing events along chromosomes. For example in S. cerevisiae (Knott et al., 2012) and in S. pombe (Kaykov and Nurse, 2015), a higher firing rate has been reported near origins that have just fired (but see Yang et al. (2010)). In mammals, megabase chromosomal regions of synchronous firing were first observed a long time ago (Huberman and Riggs, 1968; Hyrien, 2016b) and the projection of the replication program on 3D models of chromosome architecture was shown to reproduce the observed S-phase dynamics of replication foci (L\u00f6b et al., 2016). Recently, profiling of replication fork directionality obtained by Okazaki fragment sequencing have suggested that early firing origins located at the border of Topologically Associating Domains (TADs) trigger a cascade of secondary initiation events propagating through the TAD (Petryk et al., 2016). Early and late replicating domains were associated with nuclear compartments of open and closed chromatin (Ryba et al., 2010; Boulos et al., 2015; Goldar et al., 2016; Hyrien, 2016b). In human, replication timing U-domains (0.1\u20133 Mb) were shown to correlate with chromosome structural domains (Baker et al., 2012; Moindrot et al., 2012; Pope et al., 2014) and chromatin loops (Boulos et al., 2013, Boulos et al., 2014).\n\nUnderstanding to which extent spatio-temporal correlations of the replication program can be explained by the diffusion of firing factors in the tertiary chromatin structure specific to each eukaryotic organism is a challenging issue for future work.\n\n## Materials\u00a0and\u00a0methods\n\n### Well-mixed model simulations\n\nEach model simulation allows the reconstruction of the full replication kinetics during one S-phase. Chromosome initial replication state is described by the distribution of p-oris along each chromosomes. For Xenopus embryo, p-ori positions are randomly determined at the beginning of each simulation following two possible scenarios:\n\nFor yeast, the p-ori positions are identical in each S-phase simulations and correspond to experimentally determined positions reported in OriDB (Siow et al., 2012). The simulation starts with a fixed number $N_{D}^{T}$ of firing factors that are progressively made available as described in Results. At every time step $t=ndt$, each free firing factor (available factors not bound to an active replication fork) has a probability to fire one of the $N_{p\u2212ori}(t)$ p-oris at unreplicated loci given by:\n\n$$\n1\u2212(1\u2212k_{on}dt)^{N_{p\u2212ori}(t)}.\n$$\n\nA random number is generated, and if it is inferior to this probability, an unreplicated p-ori is chosen at random, two diverging forks are created at this locus and the number of free firing factors decreases by 1. Finally, every fork is propagated by a length $vdt$ resulting in an increase amount of DNA marked as replicated and possibly to the passivation of some p-oris. If two forks meet they are removed and the number of free firing factors increases by 1. Forks that reach the end of a chromosome are discarded. The numbers of firing events ($N_{fired}(t)$), origin passivations, free firing factors ($N_{FD}(t)$) and unreplicated p-oris ($N_{p\u2212ori}(t)$) as well as the length of unreplicated DNA ($L_{unrepDNA}(t)$) are recorded allowing the computation of $I_{S}(t)$ (Eq. (1)), the normalized density of p-oris ($\u03c1_{p\u2212ori}(t))/\u03c1_{0}$), the normalized number of free firing factors ($N_{FD}(t)/N_{FD}^{\u2217}(t)$) and the ratio between the number of origin passivations and activations. Simulation ends when all DNA has been replicated, which define the replication time.\n\n### 3D model simulations\n\nReplication kinetics simulation for the 3D model follows the same steps as in the well-mixed model except that the probability that a free firing factor activates an unreplicated p-ori depends on their distance $d$ obtained from a molecular dynamic simulation performed in parallel to the replication kinetics simulation. We used HOOMD-blue (Anderson et al., 2008) with parameters similar to the ones previously considered in Arbona et al. (2017) to simulate chromosome conformation dynamics and free firing factor diffusion within a spherical nucleus of volume $V_{N}$. The details of the interaction between the diffusing firing factors and the p-oris is illustrated in Figure 2\u2014figure supplement 1. Given a capture radius $r_{c}$ set to two coarse grained chromatin monomer radiuses, when a free firing factor is within the capture volume $V_{c}=\\frac{4}{3}\\pir_{c}^{3}$ around an unreplicated p-ori ($d<r_{c}$), it can activate the origin with a probability $p$. In order to have a similar firing activity as in the well-mixed model, $r_{c}$ and $p$ were chosen so that $pV_{c}/V_{N}$ takes a value comparable to the $k_{on}$ values used in the well-mixed simulations.\n\nFor each set of parameters of the well-mixed and 3D models, we reported the mean curves obtained over a number of independent simulations large enough so that the noisy fluctuations of the mean $I_{S}(t)$ are small compared to the average bell-shaped curve. The complete set of parameters for each simulation series is provided in Supplementary file 1. The scripts used to extract yeast $I(t)$ from the experimental data of Alvino et al. (2007) can be found here https://github.com/ jeammimi/ifromprof/blob/master/notebooks/exploratory/Alvino_WT.ipynb (yeast in normal growth conditions) and here https://github.com/jeammimi/ifromprof/blob/master/notebooks/exploratory/Alvino_H.ipynb (yeast grown grown in Hydroxyurea) (Arbona and Goldar, 2018). A copy is archived at https://github.com/elifesciences-publications/ifromprof.\n",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "45a0f87f-8275-430a-bc9c-74c11af117e4",
+      "submission_id": "036ebf19-d7c3-41ca-9390-f797b6f9148a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bruce Stillman, Cold Spring Harbor Laboratory United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.35192.013](https://doi.org/10.7554/eLife.35192.013)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The eukaryotic bell-shaped temporal rate of DNA replication origin firing emanates from a balance between origin activation and passivation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Kevin Struhl as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nBased on the three positive reviews, it is possible that this model can by published in eLife, but there are some issues that two of the reviewers raise that require a response. Once a response is received, the paper will be re-considered.\n\nSummary:\n\nThis appealing paper advances a new hypothesis to explain the observed, apparently quite general phenomenon in eukaryotic replication that the initiation rate of origin firing (relative to the amount of unreplicated DNA) decreases at the end of S-phase after having increased substantially throughout the first part of S-phase. There is agreement on the mechanism of the increase, but three different groups (one of which includes two of the present authors) have advanced three different hypotheses (subdiffusive motion, a dependence on replication fork density of firing factor affinity for p-oris, or inhomogeneous firing probabilities). The present paper proposes a fourth, that the limiting factor is the finite average spacing between potential origins (p-oris) and makes a case that this new hypothesis is both simple and natural. The evidence presented is a mix of heuristic argument, simulation, and a limited comparison of experimental data. The major experimental test is of a simple relation derived by the authors, Imax ~ v \u03c102, where Imax is the maximum initiation rate, v the fork velocity, and \u03c10 the density of potential origins at the start of S-phase. The authors further look at a 3d simulation of the diffusion process in a simple model where all origins are treated on an equal footing and find a qualitative agreement in the I(t) curves.\n\nThe paper thus gives a simple model that advances our understanding of the replication process, adding a reasonable dynamical model to explain kinetics, and providing at least some experimental support-probably not enough to be completely convincing on its own but enough to make others take the hypothesis seriously and inspire further experimental tests. It is thus a nice advance.\n\nHaving said all of this, there are questions / reservations about some of the details as outlined below.\n\nEssential revisions:\n\n1) In the figures given for Xenopus laevis in Table 1, the value of \u03c10is given as 0.333/kb, with Loveland et al. the reference. In that reference, though, Figure 3D shows only that the minimum average distance between fired origins decreases to 3kb. This implies only a lower bound on \u03c10, since there may be passive replication in those experiments.\n\n2) The 3D simulations, if they are understood correctly, will fail to reproduce the known genome-position dependence of firing times. Put another way, the authors argue in the Discussion section (second paragraph) that their modeling implies that all p-oris are the same. But in the S. cerevisiae data (and for other organisms), there are known dependences of median firing time on genome position. It may be that the model set forth here does a good job explaining the I(t) dependence but not the full I(x,t) dependence, where x is the genome position.\n\n3) In a related point, the authors speculate that enhanced firing rates could result from diffusion of factors released. However, there is also evidence that chromatin looping can inhibit the firing of neighboring origins. Both effects could be present, suggesting that untangling spatiotemporal correlations might be subtle.\n\n4) When the authors modeled replication in the presence of HU, it appears that the only change made in the parameters from unperturbed replication was the speed of replication forks. Is this correct? If so, it is surprising, as activation of late-firing origins are suppressed or delayed in HU, and according to Figure 1a, one might expect less origins to be passivated with slower replication forks in HU. The authors need to comment on this.\n\n5) Figure 2B: It was unexpected that dubious origins needed to be included for better modeling. The authors need to discuss potential reasons for this.\n\n6) It has been proposed that DNA replication takes place at replication foci in vivo, where replication factors are highly concentrated. Based on the authors' model that the localization of origins and recycling of replication factors can explain most of DNA replication kinetics, the authors need to discuss how the presence of replication foci would affect origin usage and replication kinetics.\n\n7) The paper does not cite a published model for DNA replication timing by Miotto et al., 2016 that essentially states that there are more ORC sites than are utilized during S phase and early replicating regions at the beginning of S phase is favored simply because there are far more ORC sites, whereas firing from relatively few ORC sites in late replication regions is due to increased time and the unavailability of ORC sites previously replicated. This paper should be cited and discussed to compare it to the proposed model.\n",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "759825a1-804e-4768-aaea-a546c7874d54",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C1",
+      "claim": "The time-dependent rate I(t) of origin firing per length of unreplicated DNA presents a universal bell shape in eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "The time-dependent rate I(t) of origin firing per length of unreplicated DNA presents a universal bell shape in eukaryotes that has been interpreted as the result of a complex time-evolving interaction between origins and limiting firing factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established observation in the abstract and is supported by citation to Goldar et al., 2009 in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "21ccd1ec-2a56-40f6-84a0-4bc663e22ae0",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C2",
+      "claim": "Normal diffusion of replication fork components towards localized potential replication origins can account for the I(t) universal bell shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that a normal diffusion of replication fork components towards localized potential replication origins (p-oris) can more simply account for the I(t) universal bell shape, as a consequence of a competition between the origin firing time and the time needed to replicate DNA separating two neighboring p-oris.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the manuscript, supported by simulations and experimental data comparisons presented in the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "0624709b-b215-4b34-b07c-cabb40975cae",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C3",
+      "claim": "The I(t) maximal value is predicted to be the product of the replication fork speed with the squared p-ori density.",
+      "claim_type": "EXPLICIT",
+      "source": "We predict the I(t) maximal value to be the product of the replication fork speed with the squared p-ori density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prediction is derived theoretically in Equation 5 and tested against simulations and experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "81c3f403-5820-47f6-ad6c-39ed551ba70c",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C4",
+      "claim": "The relation I_max = v*\u03c1_0^2 is robustly observed in simulations and experimental data for several eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that this relation is robustly observed in simulations and in experimental data for several eukaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 2c and Table 1, showing agreement across multiple species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "8974d25e-ec65-43a7-bc54-50be14bfd42e",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C5",
+      "claim": "Fork-component recycling and potential origins localization are sufficient spatial ingredients to explain the universality of DNA replication kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work underlines that fork-component recycling and potential origins localization are sufficient spatial ingredients to explain the universality of DNA replication kinetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the work, supported by the modeling results and comparisons with experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "036163fc-413b-4d85-a64b-073fe3637f21",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C6",
+      "claim": "Eukaryotic DNA replication is a stochastic process.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotic DNA replication is a stochastic process (Hyrien et al., 2013; Hawkins et al., 2013; Hyrien, 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "46317109-2d86-42b4-85cd-683bdb06ae33",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C7",
+      "claim": "Prior to entering S-phase, a number of DNA loci called potential origins are licensed for DNA replication initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to entering the S(ynthesis)-phase of the cell cycle, a number of DNA loci called potential origins (p-oris) are licensed for DNA replication initiation (Machida et al., 2005; Hyrien et al., 2013; Hawkins et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "7b3cc995-6911-4c1a-8248-0d637fddff27",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C8",
+      "claim": "During S-phase, pairs of replication forks performing bi-directional DNA synthesis start from a subset of the p-oris in response to origin firing factors.",
+      "claim_type": "EXPLICIT",
+      "source": "During S-phase, in response to the presence of origin firing factors, pairs of replication forks performing bi-directional DNA synthesis will start from a subset of the p-oris, the active replication origins for that cell cycle (Machida et al., 2005; Hyrien et al., 2013; Hawkins et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "fe8cc941-8e5b-4cdf-8395-7c6176ed7fe6",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C9",
+      "claim": "Origin passivation forbids origin firing in already replicated regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the inactivation of p-oris by the passing of a replication fork called origin passivation, forbids origin firing in already replicated regions (de Moura et al., 2010; Hyrien and Goldar, 2010; Yang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "e953cb0c-9ef3-4b65-af2b-0a8fb0b542c4",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C20",
+      "claim": "A bimolecular reaction between a diffusing firing factor and a p-ori results in an origin firing event in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "In our modeling of replication kinetics, a bimolecular reaction between a diffusing firing factor and a p-ori results in an origin firing event; then each half of the diffusing element is trapped and travels with a replication fork until two converging forks merge (termination, Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the modeling approach, illustrated in Figure 1a.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "0a4e2f6d-4a48-4e2d-ba37-b8c7ed351dbe",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C21",
+      "claim": "A molecular mechanism explaining the synchronous recruitment of firing factors to both replication forks was recently proposed, supporting the bimolecular scenario for p-ori activation.",
+      "claim_type": "EXPLICIT",
+      "source": "A molecular mechanism explaining the synchronous recruitment of firing factors to both replication forks was recently proposed (Araki, 2016), supporting the bimolecular scenario for p-ori activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites recent work supporting the modeling assumptions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "173d22ba-0429-4170-8113-5a43a26f3bf6",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C36",
+      "claim": "The requirement for a larger number of origins can be met by some level of random initiation or initiation events away from mapped origins due to helicase mobility.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from the unexpected activity of Dubious origins, the requirement for a larger number of origins can be met by some level of random initiation (Czajkowsky et al., 2008) or initiation events away from mapped origins due to helicase mobility (Gros et al., 2015; Hyrien, 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about possible explanations, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "3415bee4-f1f6-4051-a426-f5f1c5fe8d9b",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C37",
+      "claim": "Even though 829 p-oris are needed in S. cerevisiae, on average only 352 origins have fired by the end of S-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "It is to be noted that even if 829 p-oris are needed, on average only 352 origins have fired by the end of S-phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "08b49202-4a82-43ad-9cb2-9b270f7d9de8",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C44",
+      "claim": "Experimental data points' deviation from Equation (5) is smaller than the deviation due to specific p-oris distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "We can observe that experimental data points' deviation from Equation (5) is smaller than the deviation due to specific p-oris distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in Figure 2c comparing experimental data with simulations using different distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "af91c036-a828-4808-b49b-85c0f81a3eeb",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C52",
+      "claim": "The model assumes all p-oris are governed by the same rule of initiation resulting from physicochemically realistic particulars of their interaction with limiting replication firing factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model assumes that all p-oris are governed by the same rule of initiation resulting from physicochemically realistic particulars of their interaction with limiting replication firing factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key assumption of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "b1a5f078-b1db-4705-97e7-c1c220252bd2",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C54",
+      "claim": "In yeast, replication kinetics along chromosomes were robustly reproduced in simulations where each replication origin fires following a stochastic law with parameters that change from origin to origin.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, replication kinetics along chromosomes were robustly reproduced in simulations where each replication origin fires following a stochastic law with parameters that change from origin to origin (Yang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites previous modeling work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "f9fe7422-d3b9-4d99-8345-69e3d6d8302a",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C55",
+      "claim": "The heterogeneity between origins is captured by the Multiple-Initiator Model where origin firing time distribution is modeled by the number of MCM2-7 complexes bound at the origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this heterogeneity between origins is captured by the Multiple-Initiator Model where origin firing time distribution is modeled by the number of MCM2-7 complexes bound at the origin (Yang et al., 2010; Das et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites previous modeling work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "58eef55d-7eb5-40ad-ac78-0ebc342d1ec6",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C56",
+      "claim": "The universal bell-shaped temporal rate of replication origin firing can be explained irrespective of species-specific spatial heterogeneity in origin strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that the universal bell-shaped temporal rate of replication origin firing can be explained irrespective of species-specific spatial heterogeneity in origin strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the modeling results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "c3cd1bac-9fa9-4e37-8c2a-7b619a2f98be",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C57",
+      "claim": "Current successful modeling of chromosome organization of DNA replication timing relies on heterogeneities in origins' strength and spatial distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Note, however, that current successful modeling of the chromosome organization of DNA replication timing relies on heterogeneities in origins' strength and spatial distributions (Bechhoefer and Rhind, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites previous modeling approaches.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "5f1fe2b8-2a9d-4b17-8bb8-3f7a50cd41f0",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C58",
+      "claim": "3D simulations with explicit diffusion of firing factors confirmed the physical relevance of the minimal modeling and the validity of its predictions for Xenopus embryo and S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2 (a,b) for Xenopus embryo and S. cerevisiae, results confirmed the physical relevance of our minimal modeling and the validity of its predictions when the 3D diffusion of the firing factors is explicitly taken into account.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2a,b comparing 3D simulations with the well-mixed model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "c9cef836-2cab-4954-a989-faad93e34c9e",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C59",
+      "claim": "Modeling of replication timing profiles in human was successfully achieved in a model with both inhibition of origin firing 55 kb around active forks and an enhanced firing rate further away up to a few 100 kb.",
+      "claim_type": "EXPLICIT",
+      "source": "Modeling of replication timing profiles in human was recently successfully achieved in a model with both inhibition of origin firing 55 kb around active forks, and an enhanced firing rate further away up to a few 100 kb (L\u00f6b et al., 2016) as well as in models that do not consider any inhibition nor enhanced firing rate due to fork progression (Gindin et al., 2014; Miotto et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites previous modeling work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "77b06803-c7e7-46b3-9854-c92261b3e919",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C60",
+      "claim": "In S. cerevisiae and S. pombe, a higher firing rate has been reported near origins that have just fired.",
+      "claim_type": "EXPLICIT",
+      "source": "For example in S. cerevisiae (Knott et al., 2012) and in S. pombe (Kaykov and Nurse, 2015), a higher firing rate has been reported near origins that have just fired (but see Yang et al. (2010)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "5531d6aa-540d-483c-889a-95dedd39c818",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C61",
+      "claim": "In mammals, megabase chromosomal regions of synchronous firing were first observed a long time ago.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, megabase chromosomal regions of synchronous firing were first observed a long time ago (Huberman and Riggs, 1968; Hyrien, 2016b) and the projection of the replication program on 3D models of chromosome architecture was shown to reproduce the observed S-phase dynamics of replication foci (L\u00f6b et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites historical and recent experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "ccc94cea-91c2-459c-8a5b-8f8c252f06b5",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C62",
+      "claim": "Profiling of replication fork directionality obtained by Okazaki fragment sequencing suggested that early firing origins located at the border of TADs trigger a cascade of secondary initiation events propagating through the TAD.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, profiling of replication fork directionality obtained by Okazaki fragment sequencing have suggested that early firing origins located at the border of Topologically Associating Domains (TADs) trigger a cascade of secondary initiation events propagating through the TAD (Petryk et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites recent experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "3d20838e-f422-48d6-aaf9-8587146586e3",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C63",
+      "claim": "Early and late replicating domains were associated with nuclear compartments of open and closed chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Early and late replicating domains were associated with nuclear compartments of open and closed chromatin (Ryba et al., 2010; Boulos et al., 2015; Goldar et al., 2016; Hyrien, 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "6a2ecc11-0d59-4223-a25a-f78bb826cd49",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C64",
+      "claim": "In human, replication timing U-domains (0.1\u20133 Mb) were shown to correlate with chromosome structural domains and chromatin loops.",
+      "claim_type": "EXPLICIT",
+      "source": "In human, replication timing U-domains (0.1\u20133 Mb) were shown to correlate with chromosome structural domains (Baker et al., 2012; Moindrot et al., 2012; Pope et al., 2014) and chromatin loops (Boulos et al., 2013, Boulos et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "0081335e-f11a-4788-a7bb-9dfef8114d87",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C65",
+      "claim": "For Xenopus embryo simulations, p-ori positions are randomly sampled so that each simulated S-phase corresponds to a different positioning of the p-oris.",
+      "claim_type": "EXPLICIT",
+      "source": "For Xenopus embryo, the p-ori positions are randomly sampled, so that each simulated S-phase corresponds to a different positioning of the p-oris.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation methodology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "8dad8d0f-1387-474f-ba82-d256edd730f7",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "claim_id": "C66",
+      "claim": "For S. cerevisiae simulations, the p-ori positions are identical for each simulation and are taken from the OriDB database.",
+      "claim_type": "EXPLICIT",
+      "source": "For S. cerevisiae, the p-ori positions, identical for each simulation, are taken from the OriDB database (Siow et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation methodology with citation to the data source.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7a72de80-0411-4da7-b480-406a32dacaa3",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors propose a minimal model where normal diffusion of firing factors to localized potential origins, combined with fork-component recycling, explains the universal bell-shaped I(t) curve observed in eukaryotes. The model predicts I_max = v*\u03c1\u2080\u00b2, which is validated across multiple species spanning a 300-fold range of I_max values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C5 present the core theoretical framework and its validation. The model's key prediction (C3, Equation 5) is robustly supported by both simulations and experimental data across six eukaryotic species (C4, Figure 2c, Table 1). The bimolecular reaction mechanism (C20) is supported by recent molecular evidence (C21), and the model assumptions (C52) are clearly stated. The convergence of theory, simulation, and multi-species experimental validation provides strong support for this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "e19a34ee-4d6c-45bd-91e3-3557ab321b86",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "3D molecular dynamics simulations with explicit diffusion of firing factors in confined nuclear space confirm the predictions of the minimal well-mixed model for both Xenopus embryo and S. cerevisiae.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 is directly supported by Figure 2a,b, which shows good agreement between 3D simulations (squares) and the well-mixed model predictions. This validation across two different organisms with different origin distributions (random vs. localized) strengthens confidence in the model's physical basis and demonstrates that the well-mixed approximation captures the essential physics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "20dc0186-ab35-4555-8f2b-1f206170a1bc",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The universal bell-shaped I(t) can be explained independently of species-specific heterogeneity in origin strength, with experimental deviations from the I_max = v*\u03c1\u2080\u00b2 scaling being smaller than deviations due to different p-ori spatial distributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44 and C56 are supported by Figure 2c, which demonstrates that experimental data from diverse eukaryotes follow the predicted scaling law more closely than simulations with different origin distributions deviate from it. This suggests that the simple spatial ingredients (localization and recycling) capture the dominant physics, though the authors acknowledge (C57) that heterogeneity is important for chromosome-scale replication timing organization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "304487a5-a161-4688-8904-b0a6f85ea865",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In S. cerevisiae simulations, 829 p-oris (including Confirmed, Likely, and Dubious origins) are required to reproduce experimental I(t), though only 352 origins fire on average by the end of S-phase. The need for Dubious origins may reflect random initiation or helicase mobility effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C37 reports a clear simulation result, but the interpretation requires including Dubious origins whose biological status is uncertain. Claim C36 offers speculative explanations (random initiation, helicase mobility) supported by citations but not tested in this work. The authors acknowledge uncertainty about fork velocity and rDNA contributions. While the simulation-experiment agreement is shown in Figure 2b, the biological interpretation of why Dubious origins are needed remains unresolved and requires future experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "6cdf1857-0b14-4bef-b814-2bf859e97339",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The simulation methodology uses random p-ori positioning for Xenopus embryo (each S-phase has different origin locations) and fixed experimentally-determined positions from OriDB for S. cerevisiae.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65 and C66 clearly describe the simulation methodology, which is appropriate given the biological differences between these organisms. Xenopus embryo exhibits stochastic origin usage with high density, justifying random sampling, while S. cerevisiae has well-characterized, reproducibly used origins, justifying the use of OriDB data (C66 cites Siow et al., 2012). The methodology is transparent and biologically justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "16519018-8b29-4e7e-a1ea-faadf73ad680",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Background claims establish that eukaryotic DNA replication is stochastic, involves licensing of potential origins before S-phase, activation of a subset during S-phase in response to firing factors, and passivation of origins by passing replication forks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C6-C9 present established knowledge supported by multiple citations to prior work. These are standard concepts in the DNA replication field and provide necessary context for the current work. The universal bell-shaped I(t) (C1) is the phenomenon being explained, while C6-C9 describe the biological framework within which the model operates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    },
+    {
+      "id": "4548f3fc-66a2-4abe-9a96-7ebcbea2306b",
+      "content_id": "62fa7414-56b0-420f-b834-79fb95bf4e09",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Prior modeling work has successfully captured various aspects of replication kinetics using origin heterogeneity, spatial correlations, and 3D chromosome architecture, including the Multiple-Initiator Model, replication timing domains, and TAD-associated replication patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C64 accurately cite and describe prior work in the field. These claims establish the context for the current study by showing what has been achieved with more complex models that incorporate origin heterogeneity and spatial organization. The citations appear appropriate and the descriptions are consistent with the cited work. This provides important context showing that while heterogeneity-based models work for specific aspects, the current simpler model explains the universal I(t) shape.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:51:51.775872Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "21ccd1ec-2a56-40f6-84a0-4bc663e22ae0",
+      "result_id": "7a72de80-0411-4da7-b480-406a32dacaa3"
+    },
+    {
+      "claim_id": "0624709b-b215-4b34-b07c-cabb40975cae",
+      "result_id": "7a72de80-0411-4da7-b480-406a32dacaa3"
+    },
+    {
+      "claim_id": "81c3f403-5820-47f6-ad6c-39ed551ba70c",
+      "result_id": "7a72de80-0411-4da7-b480-406a32dacaa3"
+    },
+    {
+      "claim_id": "8974d25e-ec65-43a7-bc54-50be14bfd42e",
+      "result_id": "7a72de80-0411-4da7-b480-406a32dacaa3"
+    },
+    {
+      "claim_id": "e953cb0c-9ef3-4b65-af2b-0a8fb0b542c4",
+      "result_id": "7a72de80-0411-4da7-b480-406a32dacaa3"
+    },
+    {
+      "claim_id": "0a4e2f6d-4a48-4e2d-ba37-b8c7ed351dbe",
+      "result_id": "7a72de80-0411-4da7-b480-406a32dacaa3"
+    },
+    {
+      "claim_id": "af91c036-a828-4808-b49b-85c0f81a3eeb",
+      "result_id": "7a72de80-0411-4da7-b480-406a32dacaa3"
+    },
+    {
+      "claim_id": "5f1fe2b8-2a9d-4b17-8bb8-3f7a50cd41f0",
+      "result_id": "e19a34ee-4d6c-45bd-91e3-3557ab321b86"
+    },
+    {
+      "claim_id": "08b49202-4a82-43ad-9cb2-9b270f7d9de8",
+      "result_id": "20dc0186-ab35-4555-8f2b-1f206170a1bc"
+    },
+    {
+      "claim_id": "58eef55d-7eb5-40ad-ac78-0ebc342d1ec6",
+      "result_id": "20dc0186-ab35-4555-8f2b-1f206170a1bc"
+    },
+    {
+      "claim_id": "3415bee4-f1f6-4051-a426-f5f1c5fe8d9b",
+      "result_id": "304487a5-a161-4688-8904-b0a6f85ea865"
+    },
+    {
+      "claim_id": "173d22ba-0429-4170-8113-5a43a26f3bf6",
+      "result_id": "304487a5-a161-4688-8904-b0a6f85ea865"
+    },
+    {
+      "claim_id": "0081335e-f11a-4788-a7bb-9dfef8114d87",
+      "result_id": "6cdf1857-0b14-4bef-b814-2bf859e97339"
+    },
+    {
+      "claim_id": "8dad8d0f-1387-474f-ba82-d256edd730f7",
+      "result_id": "6cdf1857-0b14-4bef-b814-2bf859e97339"
+    },
+    {
+      "claim_id": "759825a1-804e-4768-aaea-a546c7874d54",
+      "result_id": "16519018-8b29-4e7e-a1ea-faadf73ad680"
+    },
+    {
+      "claim_id": "036163fc-413b-4d85-a64b-073fe3637f21",
+      "result_id": "16519018-8b29-4e7e-a1ea-faadf73ad680"
+    },
+    {
+      "claim_id": "46317109-2d86-42b4-85cd-683bdb06ae33",
+      "result_id": "16519018-8b29-4e7e-a1ea-faadf73ad680"
+    },
+    {
+      "claim_id": "7b3cc995-6911-4c1a-8248-0d637fddff27",
+      "result_id": "16519018-8b29-4e7e-a1ea-faadf73ad680"
+    },
+    {
+      "claim_id": "fe8cc941-8e5b-4cdf-8395-7c6176ed7fe6",
+      "result_id": "16519018-8b29-4e7e-a1ea-faadf73ad680"
+    },
+    {
+      "claim_id": "b1a5f078-b1db-4705-97e7-c1c220252bd2",
+      "result_id": "4548f3fc-66a2-4abe-9a96-7ebcbea2306b"
+    },
+    {
+      "claim_id": "f9fe7422-d3b9-4d99-8345-69e3d6d8302a",
+      "result_id": "4548f3fc-66a2-4abe-9a96-7ebcbea2306b"
+    },
+    {
+      "claim_id": "c3cd1bac-9fa9-4e37-8c2a-7b619a2f98be",
+      "result_id": "4548f3fc-66a2-4abe-9a96-7ebcbea2306b"
+    },
+    {
+      "claim_id": "c9cef836-2cab-4954-a989-faad93e34c9e",
+      "result_id": "4548f3fc-66a2-4abe-9a96-7ebcbea2306b"
+    },
+    {
+      "claim_id": "77b06803-c7e7-46b3-9854-c92261b3e919",
+      "result_id": "4548f3fc-66a2-4abe-9a96-7ebcbea2306b"
+    },
+    {
+      "claim_id": "5531d6aa-540d-483c-889a-95dedd39c818",
+      "result_id": "4548f3fc-66a2-4abe-9a96-7ebcbea2306b"
+    },
+    {
+      "claim_id": "ccc94cea-91c2-459c-8a5b-8f8c252f06b5",
+      "result_id": "4548f3fc-66a2-4abe-9a96-7ebcbea2306b"
+    },
+    {
+      "claim_id": "3d20838e-f422-48d6-aaf9-8587146586e3",
+      "result_id": "4548f3fc-66a2-4abe-9a96-7ebcbea2306b"
+    },
+    {
+      "claim_id": "6a2ecc11-0d59-4223-a25a-f78bb826cd49",
+      "result_id": "4548f3fc-66a2-4abe-9a96-7ebcbea2306b"
+    }
+  ],
+  "comparisons": []
+}

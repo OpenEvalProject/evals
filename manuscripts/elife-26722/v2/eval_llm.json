@@ -1,0 +1,416 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C50",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Optogenetic recruitment of either Cdc24 or Bem1 is sufficient to induce polarization and bias bud site selection in unpolarized yeast cells. Both proteins induce robust Cdc42 activation at the illumination site without altering polarization timing (~95 min between bud emergence events). At low light doses, Bem1 is slightly more efficient than Cdc24 at biasing the bud site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C39-C42, C50, C53-C55 are supported by experimental data in Figures 1 and 2 showing that both Cdc24 and Bem1 recruitment efficiently bias bud site selection and activate Cdc42. The polarization efficiency data (Figure 1D), Cdc42 biosensor accumulation (Figure 1E-F), and timing measurements provide converging evidence for this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C43",
+      "C44",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C52"
+    ],
+    "result": "The cellular response to optogenetic recruitment depends on the recruited molecule, cell cycle stage, and existing polarization state. Cdc24 maintains constant polarization efficiency across light doses, while Bem1 efficiency drops ~50% at >3 pulses/min. In unpolarized cells near cell cycle start, both proteins activate Cdc42, but in polarized cells, only high-level Cdc24 recruitment can generate Cdc42-GTP, while Bem1 recruitment cannot activate Cdc42 even at high illumination frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C43-C44, C46-C49, C51-C52 are well-supported by dose-response experiments (Figure 1D-F) and cell cycle stage-specific analyses (Figure 1E-F, Figure 1\u2014figure supplement 5). The differential responses between Cdc24 and Bem1, and between polarized and unpolarized cells, are clearly demonstrated with quantitative data showing limitations to Cdc42 activation in polarized cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C62"
+    ],
+    "result": "Optogenetic recruitment of Bem1 induces accumulation of endogenous Bem1 at the prescribed site, providing direct evidence that yeast polarization proceeds via positive feedback mediated by the Bem1-GEF complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C57, C62 are strongly supported by experimental data in Figure 2A-B showing that recruited Bem1-ePDZ induces accumulation of endogenous Bem1-tdTomato. This is the first direct demonstration of positive feedback in this system, representing a key validation of the existing model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Despite efficiently inducing cell polarization, Bem1 recruitment does not induce precocious Cdc42 activation or precocious accumulation of Cdc24 or Bem1 compared to control cells, suggesting that the Cdc24-Bem1-Cla4 feedback loop is sensitive to cell cycle regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by timing data in Figure 2B and Figure 2\u2014figure supplement 1 showing that Bem1 recruitment does not advance the timing of polarization events. The inference about cell cycle regulation (C60) is reasonable given the temporal constraints observed, though the molecular mechanism remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C63"
+    ],
+    "result": "Polarity induction by Bem1 requires direct interaction with Cdc24, and bud site selection requires activation of Cdc42. The Bem1 K482A mutant, which cannot bind Cdc24, fails to induce polarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C63 are supported by mutant analysis in Figure 2D showing that Bem1(K482A), which lacks Cdc24-binding ability, cannot induce polarization, while wild-type Bem1 and other mutants retain activity. This demonstrates the requirement for Bem1-Cdc24 interaction and Cdc42 activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Local recruitment of Cdc24 polarizes yeast cell growth through its ability to activate Cdc42. Mutation of conserved GEF-GTPase interface residues abolishes polarization activity, while deletion of the Bem1-binding domain only marginally reduces efficiency. The interaction of recruited Cdc24 with other cellular proteins is not sufficient to induce polarization without GEF activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by domain analysis in Figure 3A-B showing that GEF activity is essential while Bem1 binding is less critical. The conclusion that Cdc24 functions through Cdc42 activation rather than scaffolding is well-supported by the mutant data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Cdc24 recruitment induces precocious Cdc42 activation (~27 min before bud emergence vs. ~12 min in controls), but this early activation is less robust than later activation. Strikingly, Bem1 does not accumulate until ~13 min prior to bud emergence despite earlier Cdc42 activation, indicating that Cdc24 can induce Cdc42 activation at an earlier cell cycle stage than Bem1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 are strongly supported by time-course data in Figure 3C-D and Figure 3\u2014figure supplement 1. The temporal separation between Cdc42 activation and Bem1 accumulation is clearly demonstrated and represents a key finding challenging the existing model that Cdc42 activation invariably recruits the intact polarity complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Cdc24 has the potential to activate Cdc42 independently of Bem1, and activated Cdc42 does not inevitably induce recruitment of the intact polarity complex, contrary to previous models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by the temporal dissociation between Cdc42 activation and Bem1 recruitment shown in Figure 3. This inference is well-justified by the experimental observations, though the molecular mechanism of Bem1-independent Cdc42 activation requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Cdc24, Bem1, and active Cdc42 do not constitutively colocalize throughout the cell cycle. In early G1, Bem1 and Cdc24 localize in cortical puncta with limited overlap (~35-50% colocalization with Cdc42 biosensor). In late G1, colocalization increases to >70%, with all three components localizing to a wide band. This cell cycle-dependent colocalization pattern suggests Cdc24 can function independently of Bem1 prior to polarization onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C85 are supported by detailed colocalization analysis in Figure 4A-B and supplementary figures. The quantitative measurements of puncta overlap in different cell cycle stages provide strong evidence for cell cycle-regulated assembly of the polarity complex. Control experiments with dual-tagged proteins (Figure 4\u2014figure supplement 2) validate the specificity of the observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Each polarity component (Cdc42-GTP, Bem1, Cdc24) is highly dynamic in the minutes leading up to formation of a prominent wide band, confirming that the punctate stage precedes polarization. Many Cdc24 and Bem1 molecules are not in a constitutive complex during early G1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by time-lapse imaging in Figure 4C showing dynamic puncta that precede stable polarization. The conclusion about non-constitutive complex formation is consistent with the limited colocalization observed in early G1 (Figure 4B).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Whi5 nuclear localization marks Cdk1 inactivation, with Whi5 concentrated in the nucleus from mitotic exit until Cdk1 activation at Start (~25 min before bud emergence). Mother cells without nuclear Whi5 are unresponsive to Cdc24 recruitment, while cells with nuclear Whi5 or after Whi5 export can activate Cdc42 in response to Cdc24. However, Bem1 recruitment does not occur until ~12 min after Whi5 export (~13 min before budding), suggesting Cdk1 activation promotes assembly of the Bem1-GEF complex to engage active Cdc42.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C96 are supported by experiments using Whi5-tdTomato as a cell cycle marker (Figure 5A-B, Figure 5\u2014figure supplement 1-2). The temporal relationship between Whi5 export, Cdc42 activation, and Bem1 recruitment is clearly demonstrated. The model proposing Cdk1-dependent Bem1-GEF assembly (C96) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "In cdk1-as cells treated with 1NM-PP1, Cdk1 inhibition prevents bud emergence and bud growth, but Cdc24 recruitment still induces Cdc42 accumulation in 67% of cells with the same kinetics as uninhibited cells. However, Bem1 fails to accumulate within >1.5 hr of Cdk1 inhibition, and Bem1 recruitment cannot activate Cdc42 in Cdk1-inhibited cells. This demonstrates that Cdk1 activation promotes both Bem1 accumulation and bud emergence even in cells with locally activated Cdc42.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 are strongly supported by chemical genetics experiments in Figure 5C-D and Figure 5\u2014figure supplement 3-4. The use of the cdk1-as allele with 1NM-PP1 provides specific Cdk1 inhibition, and the differential effects on Cdc42 activation vs. Bem1 recruitment clearly demonstrate Cdk1's role in regulating the polarity complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Optogenetic recruitment of Cdc24 induces a self-sustaining pool of Cdc42 activation that persists after target removal. Cdc24-tdTomato appears on the cortex ~25 min before bud emergence in recruited cells vs. ~15 min in controls, with kinetics paralleling Cdc42 activation. Catalytically inactive Cdc24 cannot induce Cdc24-tdTomato recruitment. This reveals a second pathway for positive feedback involving Cdc24 that can induce both Cdc42 activation and Cdc24 recruitment prior to Cdk1 activation, apparently independent of Bem1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C110 are supported by target removal experiments (Figure 6A-B) and Cdc24-tdTomato recruitment analysis (Figure 6C-F). The persistence of Cdc42 activation after optogenetic cue removal and the precocious recruitment of endogenous Cdc24 provide strong evidence for a Bem1-independent positive feedback mechanism. The requirement for GEF activity (Figure 6\u2014figure supplement 2) confirms this is not simply scaffolding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "After cessation of optogenetic perturbation, Cdc24 is maintained at the site for ~6 min, and >55% of cells bud from the targeted region when target removal occurs ~30 min before bud emergence. This indicates that optogenetically-initiated sites of Cdc42 activation are stable and maintained, at least in part, by Cdc24 accumulation without detectable Bem1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 are supported by target removal experiments in Figure 6E-F showing persistence of Cdc24 signal and successful bud site specification even after early target removal. This demonstrates the stability of the Bem1-independent feedback mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "During early G1, repositioning the optogenetic target causes Cdc42 to accumulate at the new site while dissipating from the old site, with both sites active for ~5 min. However, within ~13 min of bud emergence, a qualitative change occurs: Cdc42 remains at the initial site and accumulates only weakly at new sites, with cells budding from the site active at the ~13 min transition. Bem1 only accumulates at the site defined at this transition point. This indicates that activation of the Bem1-dependent positive feedback loop stabilizes sites of Cdc42 activation, and that nascent sites compete prior to Cdk1 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C120 are supported by dynamic repositioning experiments in Figure 7A-D and Video 2. The temporal transition at ~13 min before bud emergence, coinciding with Bem1 accumulation, clearly demonstrates cell cycle-dependent changes in site stability and competition. The data provide strong evidence for two distinct modes of feedback with different competitive properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "In cdk1-as cells treated with 1NM-PP1, Cdc42 activation can be dynamically repositioned for >70 min without detectable Bem1 recruitment, confirming that Cdk1 activation is required for Bem1-mediated positive feedback. These results support three conclusions: (i) Cdc24's ability to induce Bem1 accumulation is cell cycle regulated, (ii) once active, the canonical positive feedback loop is highly stable and limits Cdc42 activation at competing sites, and (iii) maintenance of active Cdc42 and cytosolic Cdc24 before cell cycle entry appears independent of Bem1, indicating the GTPase and GEF participate in a positive feedback mechanism that functions earlier than the canonical Bem1-dependent loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C128 are strongly supported by Cdk1 inhibition experiments in Figure 7E-F showing prolonged dynamic repositioning without Bem1 recruitment. These data, combined with earlier results, provide compelling evidence for two temporally distinct positive feedback mechanisms with different properties. The three conclusions (C124-C127) are well-justified by the cumulative experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Actin depolymerization with Latrunculin A partially inhibits cell polarization (88% polarize with f-actin vs. 32% without), affecting both Cdc42-GTP and Bem1 polarization efficiency. However, light-directed recruitment of Cdc24 dramatically increases the fraction of cells that locally accumulate Cdc42-GTP in the absence of actin and rescues Bem1 polarization. This suggests actin depolymerization does not affect Cdc42 availability but rather impacts localization of the Bem1-Cdc24 complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C132, C135-C137 are supported by experiments in Figure 8 showing that optogenetic Cdc24 recruitment can overcome the polarization defect caused by actin depolymerization. The interpretation that actin affects complex localization rather than Cdc42 availability is reasonable, though alternative mechanisms cannot be completely excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "When Cdc24 is recruited to two sites simultaneously, both sites generate activated Cdc42 and retain it until ~11 min before bud emergence. Subsequently, Cdc42 activity becomes limited to only one site where bud emergence occurs. Bem1 accumulates at only one of the two sites, which invariably predicts the bud site. Similarly, when Bem1-ePDZ is recruited to two sites, Cdc42 activation and Bem1 accumulation occur at one site in 31/33 cells. This indicates that multiple sites cannot coexist after activation of the Bem1-mediated positive feedback loop, even when simultaneously specified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C144 are supported by two-site recruitment experiments in Figure 9A-B and Videos 3-4. The data clearly demonstrate competition between sites, with Bem1 accumulation at only one site predicting the final bud location. This provides strong evidence for winner-take-all competition mediated by the Bem1-dependent feedback loop.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C37",
+      "C38"
+    ],
+    "result": "The study provides direct evidence that positive feedback contributes to polarity establishment once Cdk1 is activated at START. However, contrary to the current model predicting polarity components invariably function together in a potent positive feedback loop, they do not do so prior to Cdk1 activation, and Cdc42 activation does not invariably induce the canonical positive feedback loop. Instead, a second positive feedback loop involving Cdc24 precedes the canonical loop and appears to function independently of Bem1. Two alternative modes of positive feedback function in concert to promote polarity initiation and establishment, with their behaviors under strict cell cycle control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34, C37-C38 represent the main conclusions of the study, synthesizing results from multiple experiments (Figures 2-7, 9). The evidence for Bem1-dependent positive feedback after Cdk1 activation is direct (Figure 2), while the evidence for a Bem1-independent Cdc24-mediated feedback in early G1 is compelling though indirect (Figures 3-7). The cell cycle regulation is clearly demonstrated through Whi5 tracking and Cdk1 inhibition experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The manuscript provides background on cell polarization as a fundamental process in all kingdoms of life, with Cdc42 as the central conserved regulator in eukaryotes. In budding yeast, the current model suggests polarization involves a focus of Cdc42\u2022GTP that self-sustains by recruiting a complex containing Cla4, Bem1, and Cdc24, with positive feedback supported by computational models and in vivo observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C11-C22 represent established knowledge from prior literature, appropriately cited throughout the introduction. These provide the scientific context for the current study and are well-supported by the referenced literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Important assumptions of existing polarization models have not been directly tested, including the critical assumption that whenever Cdc42 is active it should induce accumulation of the polarity complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 correctly identify a gap in the literature that the current study addresses. This gap identification is validated by the subsequent experimental findings showing that Cdc42 activation does not invariably recruit the polarity complex.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The TULIP optogenetic system consists of membrane-tethered LOVpep and cytoplasmic ePDZ. Illumination induces rapid (<10 s) ePDZ relocation to the membrane, with LOVpep relaxing to the dark state with t1/2 = 80 s. Previous work demonstrated that local Cdc24 recruitment directs mating projection formation in \u03b1-factor treated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 describe the optogenetic tool used in the study, supported by citations to prior characterization work (Strickland et al., 2012). The system's properties are well-established and appropriate for the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C89",
+      "C129"
+    ],
+    "result": "Cell cycle regulated assembly of the polarity complex could explain both the colocalization results and differential response to Cdc24 vs Bem1 recruitment. The alternative positive feedback activity may play a physiological role in establishing Cdc42 activity before Start in diploid cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89 and C129 are speculative interpretations about mechanisms and physiological roles. While C89 is a reasonable mechanistic hypothesis consistent with the data, it requires direct testing. C129 about diploid cell function is purely speculative without supporting data in diploids beyond the brief experiment in Figure 1\u2014figure supplement 4.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "The observed activation of Cdc42 likely represents a combination of direct Cdc42 activation by optogenetically recruited Cdc24 and its amplification by endogenous mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 is a reasonable interpretation of the mechanism, though it cannot be definitively proven with the current data. The contribution of direct vs. amplified activation cannot be precisely quantified, but the overall interpretation is consistent with the requirement for GEF activity and the recruitment of endogenous Cdc24.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "Actin depolymerization slows cell cycle entry as judged by Whi5 exit from the nucleus, indicating that actin depolymerization affects several cellular processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 are supported by data in Figure 8\u2014figure supplement 1 showing delayed Whi5 nuclear exit in LatA-treated cells. This demonstrates pleiotropic effects of actin depolymerization beyond polarization.",
+    "result_type": "MINOR"
+  }
+]

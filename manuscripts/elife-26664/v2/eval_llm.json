@@ -1,0 +1,315 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C36",
+      "C37",
+      "C40",
+      "C53",
+      "C54",
+      "C56",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The orphan CRISPR2 locus, ubiquitous in E. faecalis but lacking cas genes in MDR strains, can be reactivated for genome defense by introducing CRISPR1-cas9. This functional linkage between CRISPR2 and CRISPR1-Cas9 is preserved across diverse E. faecalis lineages including MDR strains V583 and Merz96.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C54, C56, and C59 provide direct experimental evidence showing cas9-dependent reductions in conjugation frequencies when CRISPR2 is activated with introduced cas9 across multiple strains (ATCC 4200RF, V583, Merz96). The promoter deletion experiment (C59) confirms transcription is required. The data in Figures 1 and 2 support these conclusions with appropriate controls including cas9 deletion mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C78"
+    ],
+    "result": "E. faecalis transiently maintains CRISPR-targeted plasmids despite active CRISPR-Cas systems, obtaining transconjugants at ~10^5 CFU/mL. Without selection, plasmids are lost over time in a cas9-dependent manner; with selection, cells can proliferate for days but exhibit fitness costs including extended lag phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C76 are supported by direct experimental data in Figures 3 and 5-supplement 1. The transient tolerance is demonstrated by obtaining large numbers of transconjugants (C69), cas9-dependent plasmid loss without selection (C70, Figure 3), and growth defects with selection (C76, C85). The sample sizes (2-4 biological replicates) and controls (cas9 deletion, non-targeted plasmids) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C73",
+      "C74",
+      "C77"
+    ],
+    "result": "When selection for CRISPR-targeted plasmids is present, spacer deletions occur in some transconjugants (2 of 4 V649 transconjugants), while other transconjugants maintain both plasmid and spacers for 14 days. Without selection, plasmids are lost instead of spacers being deleted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C73-C74 are directly supported by the spacer deletion assay data in Figure 4a showing differential outcomes based on selection pressure. The observation that only 2 of 4 transconjugants showed spacer deletions indicates heterogeneity in the response, which is appropriately acknowledged. The mechanistic interpretation in C77 is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C118",
+      "C122"
+    ],
+    "result": "Terminal CRISPR repeats are degenerated in sequence and render terminal spacers non-functional for genome defense. Replacing the degenerate terminal repeat with a direct repeat restores spacer function. Terminal degenerate repeats prevent terminal spacer deletion, as evidenced by zero terminal spacer deletions in V649 versus three in V485 (with restored terminal repeat).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 are supported by sequence analysis (Figure 2-supplement 2) and functional data (Figure 2c) showing terminal spacers are non-functional until the repeat is replaced. Claims C81-C84 are supported by the spacer deletion assay (Figure 4b) showing differential deletion patterns between V649 (0 terminal deletions) and V485 (3 terminal deletions). The sample sizes (10 transconjugants each) provide adequate statistical power for this comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C111"
+    ],
+    "result": "Forced maintenance of CRISPR targets induces fitness costs that can be exploited in competitive environments to selectively remove specific E. faecalis strains from mixed populations. When CRISPR-incompatible plasmids are propagated with antibiotic selection, strains with active CRISPR systems targeting the plasmid are outcompeted and can be reduced to 0.001% of the population or below detection limits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C85 are supported by growth curve data (Figure 5-supplement 1) showing extended lag phase. Claims C86-C92 are supported by competition assay data (Figures 5, 6) with appropriate replicates (3-4 biological replicates) showing strain-specific depletion based on CRISPR targeting. Controls include non-targeted plasmids and cas9-deficient strains. The experimental design appropriately tests the hypothesis across multiple strain combinations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C140"
+    ],
+    "result": "CRISPR targeting of antibiotic resistance genes (ermB) or chromosomal regions reduces conjugation frequencies in a cas9-dependent manner. The outcome depends on plasmid essentiality: targeting ermB on pTEF1 (essential for V649) leads to strain elimination, while targeting ermB on pAM771 (dispensable for T11CR1) leads to plasmid loss and resistance gene depletion without killing the host strain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C110 are supported by conjugation frequency data (Figure 7) and competition assays (Figure 8) with 3 biological replicates. The differential outcomes based on plasmid essentiality (C106, C109-C110) are logically inferred from the data and consistent with known toxin-antitoxin systems on pTEF1 (C102). The 261-fold reduction in ermB-resistant transconjugants (C105) provides quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C98",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "CRISPR chromosomal targeting in E. faecalis does not induce a canonical DNA damage response. V649 transconjugants with chromosomal CRISPR targeting showed a 1.7-fold decrease in recA transcript levels (not the expected increase), contrasting with the 26-fold increase observed with levofloxacin treatment. A small but statistically significant increase in cell death was observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98, C113-C116 are supported by RT-qPCR data (Figure 7-supplement 1a) and live/dead assays (Figure 7-supplement 1b) with 3 biological replicates. The contrast with levofloxacin control is appropriate. However, the interpretation (C116) should be cautious as the 1.7-fold decrease in recA may not be biologically meaningful, and the small increase in cell death (statistically significant but effect size not reported) warrants careful interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C54"
+    ],
+    "result": "CRISPR1-Cas function was validated using conjugation assays in ATCC 4200RF. pKHS244 (targeted by CRISPR1 spacer S244) showed a 56-fold lower acquisition rate than control plasmid pKH12, and this phenotype was lost in the cas9 deletion mutant, confirming CRISPR interference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by experimental data in Figure 1b with 5 biological replicates and appropriate statistical analysis (p<0.001). The cas9 deletion control (C49) provides strong evidence for CRISPR-mediated interference. Similar validation was performed for CRISPR2 (C54, Figure 1c) with 3 replicates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "CK111SSp(pCF10-101) was identified as an effective donor strain for mobilizing pKH-derivatives into various E. faecalis strains, though Merz96 and DS5 showed bactericidal activity against this donor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by experimental observations throughout the study. Claim C44 is noted as observed but data not shown. The bactericidal activity necessitated using transconjugants per recipient rather than per donor for conjugation frequency calculations in these strains, which is methodologically appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "The CRISPR2 transcriptional start site was confirmed by primer extension to occur 85 bp upstream of the first CRISPR2 repeat, agreeing with previous transcriptional profiling studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by primer extension data from 2 independent experiments and agreement with prior published work (Innocenti et al., 2015). This provides validation of the CRISPR2 promoter location used for subsequent deletion experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Terminal spacers are the least likely to be lost from CRISPR arrays based on conservation analysis, and they correspond to the 'oldest' memories since CRISPR adaptation occurs at the leader end.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by conservation analysis (Figure 2-supplement 4) showing fractional conservation of 0.999 for terminal spacers versus ~0.5 for upstream spacers. Claim C80 is well-established CRISPR biology supported by appropriate citations. These claims provide context for the spacer deletion experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C112"
+    ],
+    "result": "Prior studies in other organisms (E. coli, Sulfolobus, streptococci, S. epidermidis, P. atrosepticum) showed that CRISPR systems and their targets cannot coexist, often inducing SOS responses or requiring CRISPR inactivation. P. aeruginosa shows similar transient tolerance to E. faecalis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97, C99, C112 are supported by appropriate citations to prior work. These provide important context for the novelty of the E. faecalis findings. The citations appear accurate based on the descriptions provided, though the original papers were not reviewed here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The transient tolerance of CRISPR targets in E. faecalis is a striking feature that cannot be fully explained by plasmid copy number titrating Cas9 complexes, as chromosomal targeting also produces large transconjugant pools. The mechanism may involve efficient DNA repair, stress responses, or low cas9 expression, and may represent an evolved strategy to enhance genetic diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C123 is supported by data. Claims C124-C125 provide reasonable comparative analysis with P. aeruginosa. However, claims C127-C129 are explicitly speculative (noted in evidence_type as SPECULATION). The mechanistic basis remains unclear and would require additional experiments (RNA-seq, cas9 expression analysis, DNA repair studies) to resolve. The evolutionary interpretation (C129) is particularly speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C141",
+      "C142"
+    ],
+    "result": "CRISPR-based therapeutics face delivery challenges. Phage delivery has limitations (narrow host range, incomplete delivery, resistance development). Conjugative delivery in E. coli yielded few viable transconjugants with chromosomal targeting, contrasting with E. faecalis. The approach may be applicable in vivo, potentially using probiotic E. faecalis with conjugative vectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C136 are supported by appropriate citations and provide context. However, claims C137, C139, C142 are explicitly speculative about future applications. Claim C138 about PRPs providing in vivo advantages is supported by citation. The therapeutic potential is plausible based on the in vitro data, but no in vivo experiments were performed. This represents a reasonable discussion of future directions but lacks experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C47",
+      "C50",
+      "C51",
+      "C52",
+      "C55",
+      "C93",
+      "C117",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Background information on E. faecalis, CRISPR-Cas systems, and the specific CRISPR loci (CRISPR1, CRISPR2, CRISPR3) in E. faecalis, including their distributions, characteristics, and prior observations about correlations with antibiotic resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide essential background context and are supported by appropriate citations to prior work (C1, C2, C9-C16, C27-C42, C45-C47, C50-C52, C55, C93, C117, C119-C120) or represent well-established knowledge about CRISPR-Cas systems (C16-C26). Claim C121 is speculative about evolutionary implications. These are primarily literature-based claims that frame the study.",
+    "result_type": "MINOR"
+  }
+]

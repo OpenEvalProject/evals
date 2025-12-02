@@ -1,0 +1,211 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C66",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors developed and validated a transgenic mouse line (VG3-Cre:Ai148) for imaging VG3-AC neurites using GCaMP6f. Immunohistochemistry confirmed high specificity of GCaMP6f expression to VG3-ACs (98-100% co-localization with VGluT3), with sparse off-target RGC expression that was controlled for using optic nerve crush experiments showing 74% RGC reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C66, C70, and C71 collectively establish a well-validated experimental system. The immunohistochemistry data (C71) demonstrates high specificity, and the optic nerve crush control (C70) addresses potential confounds from off-target expression. The validation is thorough and appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C8"
+    ],
+    "result": "VG3-AC neurites exhibit depth-dependent contrast preferences across the IPL, with outer IPL neurites (21-29% depth) showing OFF bias and inner IPL neurites (51-60% depth) showing ON bias. This stratification pattern follows bipolar cell axon distributions but with less extreme polarities, suggesting local bipolar cell innervation and restricted signal spread determine contrast preferences and limit vertical integration of visual information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C37-C39 provide strong statistical evidence (p<10^-16, Kruskal-Wallis ANOVA) for depth-dependent contrast preferences. Claims C40-C42 appropriately interpret these findings in the context of known bipolar cell anatomy. The inference about limited vertical integration (C8, C42) is well-supported by the data showing depth-specific responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "ON receptive field centers of VG3-AC neurites are consistently larger than OFF receptive field centers across all IPL depths (p<10^-99), while both remain smaller than VG3-AC arbors and only slightly larger than bipolar cell receptive field centers. Size-selectivity indices are uniformly high across depths, indicating strong receptive field surrounds. These findings suggest local input from a small number of bipolar cells shapes spatial receptive fields with limited lateral integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 present robust experimental findings with strong statistical support. The comparison to bipolar cell receptive field sizes (C48) is appropriately cited. The mechanistic explanations (C46-C47, C49) are reasonable interpretations supported by the data and existing literature, though C46 is appropriately presented as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C83"
+    ],
+    "result": "ON and OFF responses of VG3-AC neurites show equal transience across IPL depths. Control experiments at higher scan rates (37.9 Hz vs 9.5 Hz) confirmed measurements were not limited by acquisition rate. Response transience showed weak correlation with amplitude (R\u00b2=0.0187, p<10^-34), which was corrected by linear regression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are well-supported by experimental data including appropriate control experiments (Figure 2\u2014figure supplement 3). The statistical analysis (C83) appropriately identifies and corrects for the weak correlation between transience and amplitude. The validation of temporal resolution is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C52",
+      "C53",
+      "C54",
+      "C64",
+      "C65",
+      "C9"
+    ],
+    "result": "Population activity in the VG3-AC plexus forms continuous topographic maps of visual space with high spatial precision. Naive Bayes classifiers achieved remarkably high accuracy in assigning neurite activity to spatial locations based on receptive field positions, with minimal separable distances decreasing when considering multiple pixels per processing domain. This demonstrates that local processing generates precise topographic maps reflecting local presynaptic input patterns rather than postsynaptic identity, limiting lateral integration of location information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C52-C53 present novel findings with appropriate quantitative analysis using naive Bayes classification. The interpretation (C54, C64-C65, C9) logically follows from the data. The analysis is methodologically sound with proper controls (shuffled data showing chance-level performance). This represents a significant advance in understanding population coding in neuropils.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "VG3-AC neurites exhibit uniform object motion sensitivity across all IPL depths, responding strongly to local motion but remaining silent during global motion. Over 70% of ROIs showed local motion preference indices >0.8, demonstrating consistent selectivity for object motion despite diversity in contrast responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C55-C57 present consistent findings across IPL depths with strong quantitative support (>70% of ROIs with indices >0.8). The experimental design appropriately separates local and global motion using center-surround gratings. The conclusion about uniform object motion sensitivity (C57) is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Local processing in VG3-AC neurites enables the dense plexus to contribute precise object motion signals to diverse RGC targets without distorting target-specific contrast preferences and spatial receptive fields. The depth-dependent contrast preferences likely allow VG3-ACs to provide motion-sensitive input to ON DSGCs, ON-OFF DSGCs, and OFF\u03b1-RGCs while maintaining their diverse contrast preferences, and may explain selective deficits in inhibitory input to SbC-RGCs for OFF but not ON stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C61, and C63 are speculative interpretations of functional significance, appropriately presented as proposals. While C59-C60, C62 cite relevant prior work, the mechanistic links between local processing and circuit function remain hypothetical. Direct experimental validation of these proposed functions would be needed to elevate this from speculation to supported conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The study employed two-photon calcium imaging at 9.5 Hz with 4.7 pixels/\u03bcm\u00b2 density in flat-mounted retinas. Visual stimulation (385 nm) was spectrally separated from GCaMP6f imaging (940 nm excitation), with recordings from ventral retina where S-opsin dominates. IPL depths were registered relative to layer boundaries using transmitted light, and imaging parameters were validated by comparing different scan rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36, C72-C79 describe methodological details that are internally consistent and appropriately justified. The choice of imaging parameters (C76) is validated by control experiments. The spectral separation (C35) and retinal location choice (C36) are well-reasoned to avoid confounds. Methods are described with sufficient detail for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors developed a serial clustering procedure for objective image segmentation to identify functional processing domains in VG3-AC neurites. The method, based on Shekhar et al. (2016), uses iterative functional clustering with PCA dimensionality reduction, K-nearest-neighbor connectivity, and community detection. Various indices (polarity, size selectivity, local motion preference) were defined to quantify response properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 describe a methodological innovation appropriately adapted from prior work. The definitions of analytical metrics (C82, C84-C85, C87-C88) are clear and standard. The segmentation approach addresses the challenge of analyzing dense neuropil activity objectively. While the method is based on established algorithms, its application to this problem is novel and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The study analyzed VG3-AC neurites stratifying between 20-60% IPL depth across 17 mice, using appropriate non-parametric statistics (Kruskal-Wallis ANOVA) with multiple comparison corrections (Tukey-Kramer method) to test depth-dependent differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 describe the sample characteristics and statistical approach. The sample size (n=17 mice) is reasonable for this type of study. The choice of non-parametric statistics is appropriate given the distributions shown in figures. Multiple comparison corrections are properly applied, demonstrating statistical rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The introduction establishes the context of local processing in dendrites and axons, describes amacrine cell diversity and VG3-AC anatomy/physiology, and identifies gaps in understanding how most AC types process information and how population activity is organized in neuropils.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C32 provide appropriate background from cited literature, establishing the scientific context and knowledge gaps. The citations appear appropriate and the characterization of prior work on starburst ACs (C20), A17 ACs (C21), and VG3-ACs (C26-C32) accurately represents published findings. The identification of knowledge gaps (C22, C25) appropriately motivates the current study.",
+    "result_type": "MINOR"
+  }
+]

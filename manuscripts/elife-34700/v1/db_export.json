@@ -1,0 +1,2345 @@
+{
+  "submission": {
+    "id": "cd259b0b-d71f-46fa-8941-487a19f0f42e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:12:22.277260Z",
+    "updated_at": "2025-12-02T01:12:22.277260Z"
+  },
+  "content": [
+    {
+      "id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "submission_id": "cd259b0b-d71f-46fa-8941-487a19f0f42e",
+      "content_type": "manuscript",
+      "content_text": "# Chronic 2P-STED imaging reveals high turnover of dendritic spines in the hippocampus in vivo\n\n## Authors\n\n- Thomas Pfeiffer<sup>1</sup> ([ORCID: 0000-0002-0571-4139](https://orcid.org/0000-0002-0571-4139))\n- Stefanie Poll<sup>3</sup> ([ORCID: 0000-0001-5301-2791](https://orcid.org/0000-0001-5301-2791))\n- Stephane Bancelin<sup>1</sup> ([ORCID: 0000-0001-6328-0423](https://orcid.org/0000-0001-6328-0423))\n- Julie Angibaud<sup>1</sup>\n- VVG Krishna Inavalli<sup>1</sup>\n- Kevin Keppler<sup>4</sup>\n- Manuel Mittag<sup>3</sup>\n- Martin Fuhrmann<sup>3</sup> ([ORCID: 0000-0001-7672-2913](https://orcid.org/0000-0001-7672-2913)) \u2020\n- U Valentin N\u00e4gerl<sup>1</sup> ([ORCID: 0000-0001-6831-9008](https://orcid.org/0000-0001-6831-9008)) \u2020\n\n### Affiliations\n\n1. Interdisciplinary Institute for Neuroscience CNRS UMR 5297 Bordeaux France\n2. Interdisciplinary Institute for Neuroscience University of Bordeaux Bordeaux France\n3. Neuroimmunology and Imaging Group German Center for Neurodegenerative Diseases Bonn Germany\n4. Light Microscope Facility German Center for Neurodegenerative Diseases Bonn Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nRewiring neural circuits by the formation and elimination of synapses is thought to be a key cellular mechanism of learning and memory in the mammalian brain. Dendritic spines are the postsynaptic structural component of excitatory synapses, and their experience-dependent plasticity has been extensively studied in mouse superficial cortex using two-photon microscopy in vivo. By contrast, very little is known about spine plasticity in the hippocampus, which is the archetypical memory center of the brain, mostly because it is difficult to visualize dendritic spines in this deeply embedded structure with sufficient spatial resolution. We developed chronic 2P-STED microscopy in mouse hippocampus, using a \u2018hippocampal window\u2019 based on resection of cortical tissue and a long working distance objective for optical access. We observed a two-fold higher spine density than previous studies and measured a spine turnover of ~40% within 4 days, which depended on spine size. We thus provide direct evidence for a high level of structural rewiring of synaptic circuits and new insights into the structure-dynamics relationship of hippocampal spines. Having established chronic super-resolution microscopy in the hippocampus in vivo, our study enables longitudinal and correlative analyses of nanoscale neuroanatomical structures with genetic, molecular and behavioral experiments.\n\n## Introduction\n\nDendritic spines form the postsynaptic structural component of most excitatory synapses in the mammalian brain. They constitute computational units of information processing that underlie essentially all higher brain functions (Nimchinsky et al., 2002; Sala and Segal, 2014; Yuste and Bonhoeffer, 2004) and play a crucial role in brain disorders such as autism spectrum disorder and Alzheimer's disease (Dorostkar et al., 2015; S\u00fcdhof, 2008). Spine structure is closely linked to synapse function, as the size of spine heads scales with synaptic strength (Matsuzaki et al., 2001; Noguchi et al., 2011) and the shape and number of spines can be modified by the induction of synaptic plasticity (Matsuzaki et al., 2001; Engert and Bonhoeffer, 1999; N\u00e4gerl et al., 2004; T\u00f8nnesen et al., 2014; Zhou et al., 2004) and by sensory experience (Holtmaat et al., 2006; Keck et al., 2011).\n\nRewiring of neural circuits by spine plasticity is considered a key neurobiological mechanism of memory formation (reviewed in [Nimchinsky et al., 2002; Sala and Segal, 2014; Yuste and Bonhoeffer, 2004; Kasai et al., 2010]). Notably, a recent study showed that optically induced shrinkage of potentiated spines disrupts newly acquired motor skills (Hayashi-Takagi et al., 2015), indicating a causal link between spine plasticity and memory. While experience-dependent plasticity of dendritic spines has been a consistent finding across mouse cortex in\u00a0vivo (Holtmaat and Svoboda, 2009), very little is known about it in the hippocampus. However, this is a major knowledge gap, because this neural structure constitutes the archetypical memory center of the brain, and hippocampal brain slices and primary cell cultures are the dominant model systems for the study of synaptic plasticity mechanisms.\n\nImaging dendritic spines in the hippocampus in vivo is challenging because of its remote location more than 1 mm below the surface of the mouse brain. A pioneering study accomplished this with two-photon (2P) microscopy, but only over a period of a few hours (Mizrahi et al., 2004). Recently, approaches based on a \u2018hippocampal window\u2019 (Gu et al., 2014) or micro-endoscopy (Attardo et al., 2015) enabled \u2018chronic\u2019 2P imaging over several weeks. However, 2P microscopy inevitably lacks the spatial resolution to visualize important details of spine morphology, such as spine necks (Bethge et al., 2013), and even struggles to resolve individual dendritic spines on CA1 pyramidal neurons, leaving a high fraction of them undetected (Attardo et al., 2015).\n\nWhile regular light microscopy typically detects a spine density of around 1 spine/\u00b5m (Gu et al., 2014; Attardo et al., 2015; Brigman et al., 2010), electron microscopy (EM) reports\u00a0~3 spines/\u00b5m on CA1 hippocampal pyramidal neurons in rats (Harris et al., 1992) and in stratum radiatum of mice (Bloss et al., 2018). By comparison, spine density is about ten times lower in many cortical areas, for\u00a0example\u00a0~0.24 spines/\u00b5m for pyramidal neurons in layer 5 of mouse barrel cortex (Holtmaat et al., 2006).\n\nGiven the limited spatial resolution of 2P microscopy, we turned to super-resolution stimulated emission depletion (STED) microscopy (Klar et al., 2000; Hell, 2007) to improve the visualization of dendritic spines in the intact hippocampus of living mice. We used a home-built STED microscope based on 2P excitation (2P-STED) (Bethge et al., 2013; Ter Veer et al., 2017) and equipped it with a long working distance objective to reach the deeply located hippocampus. We adopted a \u2018hippocampal window\u2019 technique (Gu et al., 2014; Schmid et al., 2016; Dombeck et al., 2010), where a portion of the overlying somatosensory cortex is surgically removed and replaced by a metal cylinder sealed with a cover slip, providing stable optical access to the CA1 area of the hippocampus.\n\nWe demonstrate that our new approach offers substantially improved spatial resolution and image quality compared to regular 2P microscopy in mouse hippocampus in vivo. Using transgenic mice with fluorescently labeled pyramidal neurons, we measured spine density on basal dendrites of pyramidal neurons in stratum oriens of the CA1 area and compared results obtained with 2P and 2P-STED microscopy in vivo as well as with STED microscopy in fixed hippocampal sections. Furthermore, we carried out repetitive 2P-STED in vivo imaging over a 4-day period to measure spine turnover.\n\nOur analysis showed a two times higher spine density than reported by conventional 2P microscopy, and around 40% of all spines turned over within 4 days, suggesting a high level of circuit remodeling in the hippocampus in vivo. Furthermore, detailed morphological analysis revealed that primarily small spines were affected by spine turnover.\n\n## Results\n\n### 2P-STED microscopy with a long working distance objective\n\nWe set up in vivo STED microscopy of dendritic spines in mouse hippocampus to track their morphological dynamics over the course of several days. We used a custom-built 2P-STED microscope (Figure 1A) (Bethge et al., 2013; Ter Veer et al., 2017) in combination with a modified \u2018cranial window\u2019 technique to gain high-quality optical access to stratum oriens in the CA1 area of the hippocampus (Gu et al., 2014; Dombeck et al., 2010). We surgically removed the overlying somatosensory cortex and inserted a metal tube sealed with a cover slip as a physical place holder (Figure 1B) (Gu et al., 2014; Dombeck et al., 2010). To bridge the distance between the surface of the skull and the alveus located right above the hippocampus, we used an objective with a long working distance yet relatively high numerical aperture (Nikon N60X-NIR: WD 2.8 mm, NA 1.0).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34700/elife-34700-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of the custom-built upright 2P-STED microscope. A Ti:Sapphire laser emits light pulses at 834 nm with 80 MHz repetition rate. The laser pumps an optical parametric oscillator (OPO) to obtain pulsed STED light at 598 nm. A glass rod and a polarization-maintaining fiber (PMF) stretch the STED pulses. The STED doughnut is engineered by a helical 2\u03c0 phase mask in combination with \u03bb/2 and \u03bb/4 wave plates. The second Ti:Sapphire laser tuned to 900 nm with 80 MHz repetition rate served for two-photon (2P) excitation and is synchronized to the STED light pulses. The 2P and STED beam are combined using a dichroic mirror (DM1). Both beams are swept over the specimen using a galvo-based x-y scanner and a z-focusing device. Scan (SL) and tube lens (TL) image the scan mirrors into the back focal plane of the objective and ensure that the expanded laser beams overfill the back aperture of the objective. Fluorescence is de-scanned and guided to the avalanche photodiode (APD) via a dichroic mirror (DM2) and filters (EF). Electro-optical modulators (EOM) serve for quick adjustments of the beam intensity. (B) Schematic visualizing the combined use of the hippocampal window preparation and a long working distance objective (top). A 2P overview image showing the cell body and basal dendrites of a GFP-labeled pyramidal neuron in hippocampal CA1 in vivo (bottom). Maximum intensity projection (MIP) of ten z-sections with 2 \u00b5m z-steps. (C) Quantification of the lateral\u00a0resolution with 40 nm fluorescent nanospheres. Upper panel: Representative comparison of 40 nm beads imaged by 2P and 2P-STED microscopy. Lower panel: Paired comparison of mean full-width at half maximum (FWHM) of line profiles obtained from 40 nm nanospheres (p<0.0001, paired t-test; n\u00a0=\u00a017 beads). (D) Representative images obtained from a GFP-labeled dendrite acquired by 2P and 2P-STED microscopy. Insets show line profiles fitted with Lorentzian functions and FWHM values obtained from the indicated dotted lines of the spine neck (MIP of three z-sections). (E) Paired measurements of spine neck widths imaged in 2P and 2P-STED mode (p<0.0001, paired t-test; n\u00a0=\u00a029 spine necks, 11 dendrites, 6 mice).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34700/elife-34700-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) 2P and 2P-STED axial PSF. Scale bar: 500 nm. (B) FWHM of the axial PSF measured on 170 nm fluorescent beads in 2P (1200\u00a0\u00b1\u00a014 nm) and 2P-STED (1218\u00a0\u00b1\u00a024 nm) modes (n\u00a0=\u00a017 beads; paired t-test; p=0.52).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34700/elife-34700-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) 2P-STED image of a dendritic stretch with intensity profiles (orange), Lorentzian fit (white) and FWHM measurements (white horizontal line). Two-pixel line profiles were taken on single sections at the locations indicated by the white dotted lines (for illustrative purposes). FWHM values indicate that 2P-STED microscopy allows for sub-diffraction imaging in the hippocampus in vivo . MIP of three z-sections of a GFP-labeled basal dendrite imaged\u00a0~10\u201315 \u00b5m below the coverslip. (B, C, D) Dendrites imaged consecutively in 2P and 2P-STED mode showing the improvement in lateral resolution. MIP of three z-sections.\n\nTo verify that this objective is compatible with STED imaging, we measured the point-spread function (PSF) of the microscope using fluorescent nanospheres (diameter: 40 nm). The full-width at half maximum (FWHM) was 54\u00a0\u00b1\u00a02 nm in the x-y plane in 2P-STED mode, compared with 325\u00a0\u00b1\u00a05 nm in regular 2P mode (p<0.0001, paired t-test; n\u00a0=\u00a017 beads; Figure 1C), demonstrating that our super-resolution approach delivered a six-fold nominal gain in lateral spatial resolution. In contrast, the axial resolution remained unchanged in 2P-STED (Figure 1\u2014figure supplement 1).\n\n### 2P-STED microscopy of dendritic spines in the hippocampus in vivo\n\nWe then used the 2P-STED microscope to image dendritic spines on basal dendrites of CA1 pyramidal neurons (stratum oriens) in anesthetized mice. We used transgenic mice (Thy1-HYFP/+ and Thy1-MGFP/+, 4\u201312 months old) that expressed either GFP or YFP in a subset of CA1 pyramidal neurons (Feng et al., 2000). Focusing on dendrites close to the coverslip (5\u201320 \u00b5m), spines were much more clearly delineated in 2P-STED than in 2P mode (Figure 1D, Figure 1\u2014figure supplement 2). In particular, spine necks were better resolved with 2P-STED as evidenced by paired measurements of spine neck widths (2P-STED: 147\u00a0\u00b1\u00a08 nm; 2P: 369\u00a0\u00b1\u00a06 nm; p<0.0001, paired t-test; n\u00a0=\u00a035 spine necks, 17 dendrites, 6 mice; Figure 1E).\n\nImage distortions caused by animal breathing and heartbeat normally pose a serious challenge for imaging in vivo,\u00a0in\u00a0particular STED microscopy,\u00a0which is especially sensitive to brain motion due to its high spatial resolution. However, we only encountered mild levels of image blur (Figure 1\u2014video 1), making it not necessary to apply motion correction\u00a0(see\u00a0Discussion).\n\n### Dendritic spine density of CA1 pyramidal neurons in vivo\n\nWe determined spine density of basal dendrites of CA1 pyramidal neurons, comparing it in images acquired both in 2P-STED and 2P mode (Figure 2A). There was a significant difference between the two modes (2P-STED: 2.13\u00a0\u00b1\u00a00.10 \u00b5m\u22121; 2P: 1.61\u00a0\u00b1\u00a00.07 \u00b5m\u22121; p<0.0001, paired t-test; n\u00a0=\u00a082 dendrites, 6 mice; Figure 2B and Figure 2\u2014figure supplement 1), where 2P-STED detected on average 32% more spines than 2P in a direct comparison (Figure 2B). This increase was due to the improved detection or discrimination of (1) spines that either had short necks or that extended into the z-direction, which were otherwise obscured by the fluorescence signal of the dendritic shaft, and (2) closely clustered spines, which appeared merged in the 2P images (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34700/elife-34700-fig2-v1.jpg)\n\n**Figure 2.:** (A) CA1 basal dendrite imaged with 2P (top) or 2P-STED (bottom) microscopy. Filled arrowheads highlight spines discerned in 2P-STED, but not 2P mode. Open arrowheads indicate spines that could only be visualized in 2P-STED mode as they were otherwise masked by the blurry fluorescence of the dendrite in the 2P image (MIP of two z-sections). (B) Measured spine densities in consecutive 2P and 2P-STED acquisitions of the same dendrites (p<0.0001, paired t-test; n\u00a0=\u00a082 basal dendrites, 6 mice). (C) Image of a basal dendrite obtained from fixed brain tissue acquired on a confocal STED. (D) Dendritic spine density on basal dendrites in fixed hippocampal tissue (n\u00a0=\u00a037 basal dendrites, 6 mice). (E) Geometric model to extrapolate the spine density in 3D. Spines cannot be detected when they are inside the \u2018blind zone\u2019, depending on the dimensions of the morphology and microscope PSF. (F) Extrapolation of spine density in 3D following the model in (E) for in vivo (black line) and fixed tissue measurements (red line).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34700/elife-34700-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (1) MIP of a basal dendrite acquired using 2P-STED in vivo. (2 - 9) Identification of dendritic spines in single z-planes. Magenta arrowheads indicate spines and magenta outlines highlight the spine shape. (10) Maximum intensity projection (MIP) of identified spines. (11) Measurement of dendritic length. (12) Overlay of (10) and (11) and analysis of spine density.\n\nWhile our 2P-based mean value for spine density (1.61 \u00b5m\u22121) is around 45% higher than the values reported in the light microscopy literature (~1.1 \u00b5m\u22121) (Gu et al., 2014; Attardo et al., 2015), the mean value based on 2P-STED is about twice as large as this (2.13 \u00b5m\u22121). We also counted spines in fixed brain slices obtained from the same animals (Figure 2C and Figure 2\u2014video 1). Using a commercial STED microscope with one-photon excitation, we measured a density of 2.68\u00a0\u00b1\u00a00.08 \u00b5m\u22121 (n\u00a0=\u00a037 dendrites, 6 mice; Figure 2D), which comes closer to the values reported by EM.\n\nTo understand where the remaining discrepancy might come from, we made a simple geometrical model to account for the limited axial resolution of our STED approach, which had left some spines invisible (Figure 2E). According to the model, which took into account the actual dimensions of dendritic morphology and the PSF of the microscope, about a quarter of the spines could not be detected in vivo because of this problem. Correcting the measured values by this fraction, we calculated a spine density of 2.91\u00a0\u00b1\u00a00.14 \u00b5m\u22121 for the in vivo data and 3.15\u00a0\u00b1\u00a00.09 \u00b5m\u22121 for the fixed tissue data (Figure 2F), which effectively closed the gap to the \u2018ground truth\u2019 EM values.\n\n### Dendritic spines undergo high morphological turnover in vivo\n\nTo determine the kinetics of spine emergence and elimination, which is a matter of controversy (Gu et al., 2014; Attardo et al., 2015), we performed repeated 2P-STED imaging of individual dendritic stretches over 4 days (day 0, 2 and 4; Figure 3A). To retrieve a particular dendrite in consecutive imaging sessions, we used tissue landmarks such as blood vessels, fluorescent cell bodies and dendrites.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34700/elife-34700-fig3-v1.jpg)\n\n**Figure 3.:** (A) Repetitive imaging of basal dendrites in CA1 area using 2P-STED microscopy. The upper panel shows low-magnification overviews containing the dendrite of interest highlighted with a white box. The lower panel shows the corresponding 2P-STED images of the dendrite over time. The images represent single z-planes. Dendritic spines with blue arrowheads were stable between imaging sessions. Red arrowheads mark lost spines, and green arrowheads mark new ones. The axonal bouton (AB) is marked by a white arrowhead. The numbering of spines is continuous. (B) Quantification of spine density over 4 days (n\u00a0=\u00a014 dendrites, 3 mice). (C) Quantification of the 4-day survival fraction of dendritic spines. (D) Fraction of lost spines and (E) fraction of new spines. Thin grey lines represent the measurements of single dendrites.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34700/elife-34700-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Quantification of the 4-day survival fraction in 2P and 2P-STED (n\u00a0=\u00a014 dendrites, 3 mice). (B) Fraction of lost spines and (C) fraction of new spines in 2P and 2P-STED (n\u00a0=\u00a014 dendrites, 3 mice). Thin grey lines represent the measurement of single dendrites. In all panels, orange and black lines represent 2P and 2P-STED, respectively.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34700/elife-34700-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** 2P-STED could be used for time-lapse imaging of hippocampal dendrites as bleaching of the volume-filling fluorophore was negligible and no apparent phototoxicity was induced. MIP of three z-sections of a YFP-labeled dendrite imaged every 10 min.\n\nFirst, we quantified the average spine density for each time point, which remained stable over the entire observation period (day 0: 2.31\u00a0\u00b1\u00a00.10 \u00b5m\u22121; day 2: 2.28\u00a0\u00b1\u00a00.08 \u00b5m\u22121; day 4: 2.30\u00a0\u00b1\u00a00.10 \u00b5m\u22121; n\u00a0=\u00a014 dendrites, 3 mice; Figure 3A,B and Figure 3\u2014source data 1).\n\nNext, we examined spine turnover by counting all spines that appeared and disappeared from one imaging session to the next. Furthermore, we calculated the \u2018survival fraction\u2019, which is the percentage of spines that were present on day 0 and visible during the subsequent imaging sessions. The survival fraction was 78.1 \u00b1 3.6% for day 2, and 60.8 \u00b1 3.4% for day 4 (Figure 3C).\n\nWe then calculated the fraction of spines lost and gained between the imaging sessions. The fraction of lost spines was 21.2 \u00b1 3.6% from day 0 to 2, and 24.7 \u00b1 3.0% from day 2 to 4 (Figure 3D), while the fraction of new spines from day 0 to 2 was 20.4 \u00b1 2.6%, and 21.9 \u00b1 3.0% from day 2 to 4 (Figure 3E). These results indicate that the rates of spine loss and gain were balanced and did not change over the sessions, which is consistent with the constant spine density we observed.\n\nBy comparison, spine turnover was less visible in 2P mode, amounting to a survival fraction of 74.9 \u00b1 2.2% after 4 days (Figure 3\u2014figure supplement 1).\n\n### Spine turnover affects primarily small spines\n\nGiven the detailed morphological information in the 2P-STED images, we examined if there was a relationship between spine turnover and morphology. In cortex, spines with a large head have been shown to be more stable than filopodial and thin spines (Holtmaat and Svoboda, 2009; Knott et al., 2006), but it is unknown whether such a link also exists for the hippocampus.\n\nAfter deconvolution of the images and 3D reconstruction (see Materials\u00a0and\u00a0methods), we analyzed the morphology of all spines that were visible on any of the imaging sessions (i.e. on days 0, 2 and/or 4; Figure 4), dividing the spines into two groups according to their \u2018observed persistence\u2019. Spines that were visible on all three imaging sessions (Persistence\u00a0>2 days) had larger heads than spines that were visible on only one or two sessions (Persistence\u00a0\u22642 days), suggesting that small spines are more short-lived than large ones (>2 days:\u00a00.03 \u03bcm3 and 0.01\u20130.06 \u03bcm3 versus \u2264 2\u00a0days:\u00a00.02 \u03bcm3 and 0.01\u20130.04 \u03bcm3, median and interquartile range; Figure 4A,B; p<0.0001).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34700/elife-34700-fig4-v1.jpg)\n\n**Figure 4.:** (A) 3D reconstruction of a dendrite imaged on days 0, 2 and 4. Spines persisting for more than 2 days (#0\u20138, blue), and 2 days or less\u00a0(#9\u201320, salmon) are illustrated. (B) Spine head volumes measured on reconstructed dendrites (p<0.0001, Mann-Whitney test; n =\u00a014 dendrites, 3 mice; box plot shows median and 10, 25, 75 and 90th percentiles). (C, D) 3D morphology plots visualizing the populations of spines observed persistent for more than 2 days and 2 days or less (C), and their affiliation to identified clusters 1, 2 and 3 (D) (see also Figure 4\u2014figure supplement 1A). Plotted are, the ratio of mean head to neck diameters (\u00d8Head/\u00d8Neck), spine length and maximum head diameter (\u00d8max\u00a0Head). (E) Quantification of spine proportions within identified clusters, distinguishing spines of different persistence (>2 days versus\u00a0\u22642 days). (F) Table summarizing the morphological parameters utilized for cluster analysis: \u00d8Head/\u00d8Neck, \u00d8max Head and length of spines, for spines that persist for\u00a0>2 days (blue) and\u00a0\u22642 days (salmon). Data are represented as median and interquartile range (25th\u201375th percentile). Significant differences are marked by asterisks (***p<0.001, ****p<0.0001, unpaired t-test or Mann-Whitney test; for all comparisons see Figure 4\u2014figure supplement 1B; n\u00a0=\u00a014 dendrites, 3 mice).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34700/elife-34700-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Dendrogram displaying the Euclidean distances of individual spines and their respective assignment to one of the three identified clusters. (B) Statistical comparison of morphological parameters between spines of different observed persistence (>2 days versus\u00a0\u22642 days; n\u00a0=\u00a014 dendrites, 3 mice).\n\nRefining this analysis, we plotted key morphological parameters (dendritic spine length, maximum head diameter, ratio of mean head to neck diameters) in three dimensions. The 3D plot revealed a clear difference in the distributions of the morphological parameters depending on the observed persistence of the spine (Figure 4C). A cluster analysis (\u2018Agglomerative Hierarchical Clustering\u2019 analysis based on Euclidian distance in the parameter space, see Materials and methods) revealed at least three distinct populations of spines (Figure 4\u2014figure supplement 1), which resemble the different categories commonly used in the literature to classify dendritic spines (\u2018small\u2019 \u2245 cluster 1, \u2018thin\u2019 \u2245 cluster 2 and \u2018mushroom-like\u2019 \u2245 cluster 3; Figure 4D). The latter category is generally composed of long spines with high head to neck diameter ratios. Notably, whereas around 50% of more persistent spines exhibited a mushroom-like morphology, less persistent spines rarely (7%) belonged to this category (Figure 4E). Even within cluster 3, less persistent spines had on average smaller heads and lower head to neck diameter ratios (Figure 4F).\n\n## Discussion\n\nWe established chronic super-resolution imaging of dendritic spines in the intact hippocampus of living mice. It is based on a home-built upright 2P-STED microscope (Bethge et al., 2013; Ter Veer et al., 2017) equipped with a long working distance water immersion objective and a \u2018hippocampal window\u2019 to reach this deeply embedded brain structure (Gu et al., 2014; Dombeck et al., 2010).\n\nSTED microscopy has been used before for imaging dendritic spines in vivo, but only in superficial cortical layers and for one-off and acute imaging sessions (Berning et al., 2012; Willig et al., 2014). Considering the importance of the hippocampus for learning and memory, it is of great interest to develop and improve approaches for faithful detection and monitoring of dendritic spines there.\n\nDendritic spines commonly serve as a morphological proxy for excitatory synapses, allowing inferences on synaptic strength and functional connectivity, for instance when their shape, size or number change over the course of an electrophysiological or behavioral experiment (Yuste and Bonhoeffer, 2004; Holtmaat and Svoboda, 2009). However, since spines have nanoscale dimensions and are densely packed in light scattering tissue, an accurate and quantitative anatomical readout is oftentimes difficult to obtain (Bethge et al., 2013).\n\nSpine density has been shown to vary between 2 and 4 \u00b5m\u22121 on proximal apical dendrites in stratum radiatum in adult rats (Harris et al., 1992; Harris and Stevens, 1989) and mice (Bloss et al., 2018) according to serial section transmission EM, and between 2\u00a0and\u00a03 \u00b5m\u22121 on basal oblique dendrites in stratum oriens in adult mice according to array tomography (Bloss et al., 2016). By comparison, the spine densities we detected in stratum oriens lie within the range of these measurements, while the two recent in vivo 2P microscopy studies reported values less than half the amount (Gu et al., 2014; Attardo et al., 2015).\n\nAs our STED approach only improved the lateral resolution, spines that protruded into the axial direction were still difficult to detect, explaining why our density values are still below those reported by EM. Indeed, correcting our data based on a simple geometric model removed the residual difference. In the near future, our method stands to benefit from ongoing technical advances, for instance in 3D beam shaping, which will improve axial resolution (Gould et al., 2012; Patton et al., 2016), and should enable nearly complete spine detection in vivo.\n\nWe could only image spines in the stratum oriens within 20 \u00b5m from the cover slip; beyond this distance, image quality degraded rapidly. This depth limitation was likely due to optical aberrations caused by mismatches in refractive index between the immersion medium, the glass cover slip and the sample (n \u2248 1.37 for brain tissue [Lue et al., 2007]). Unlike other objectives we have used for STED microscopy in brain tissue (Bethge et al., 2013; Urban et al., 2011), the new objective did not have a correction collar to reduce spherical aberrations, which otherwise probably would have permitted greater imaging depth. However, the use of adaptive optics is bound to allow for deeper imaging (Ji, 2017) and thus to reach dendrites in stratum radiatum and other areas of the hippocampus.\n\nWe suspect that the near total absence of motion artifacts in the images was primarily due to two effects: firstly, the implanted metal tube probably stabilized the brain mechanically, and secondly, blood pulsations are likely much weaker in the hippocampus where the vasculature is mostly formed by capillaries and has fewer large arteries than in superficial cortex (Marinkovi\u0107 et al., 1992).\n\nFaithful and complete detection of spines across space and time is absolutely critical for an accurate assessment of spine turnover. Failure to distinguish closely spaced spines will lead to an underestimate of spine turnover, because events of individual spines appearing or disappearing within a merged cluster will inevitably be missed, giving a false impression of spine stability (Attardo et al., 2015). Conversely, temporal fluctuations, for instance when spines rotate in or out of the optical axis, will lead to an overestimate of spine turnover. Moreover, biased detection of large spines might distort the measurements of spine turnover as large spines are reportedly less structurally plastic than small spines (Matsuzaki et al., 2004), as we have also shown here.\n\nThe spine detection problem was highlighted by two recent studies that pioneered chronic imaging in the hippocampus in vivo (Gu et al., 2014; Attardo et al., 2015) and reported very different lifetimes for spines on apical and basal dendrites of CA1 pyramidal neurons. The study by Gu et al. (Gu et al., 2014) reported that\u00a0~96% of spines survived for at least 16 days in stratum radiatum, whereas the study by Attardo et al. (Attardo et al., 2015) predicted that the entire population of spines in stratum oriens turned over within a month.\n\nBoth studies used 2P microscopy with relatively low NA optics and presented images of comparable quality, reporting similar average spine densities (~1.1 \u00b5m\u22121) that were stable over time. While Gu et al. assessed spine turnover directly from the 2P images, Attardo et al. went a step further and used mathematical modeling to account for the effect of merged spines on apparent spine turnover. Importantly though, without applying the mathematical correction, their survival fraction was around 80% after 21 days, indicating that direct analysis of 2P images is highly problematic when it comes to establishing spine turnover rates.\n\nOur super-resolution approach documented a spine survival fraction of 60% after 4\u00a0days, providing direct and unambiguous evidence that spines can turn over extremely rapidly in CA1 stratum oriens, supporting one of the main modeling-based conclusions of the Attardo et al. study. However, since we imaged just three time points over a relatively short period, it is hard to extrapolate our results in time and determine the extent to which the observed kinetics hold for the entire spine population. In fact, our observation that larger spines were more stable is a sign for the existence of multiple, kinetically distinct spine populations, unlike the Attardo et al. study, which argued for a single population.\n\nWe did not observe any overt signs of phototoxicity, such as dendritic \u2018blebbing\u2019 during short time-lapse sequences and across the imaging sessions (Figure 3A, Figure 3\u2014figure supplement 2). This absence together with the fact that spine density remained constant indicates that the observed kinetics were real and not an artifact induced by our hippocampal window approach or 2P-STED imaging. The use of the NMDA-receptor antagonist ketamine could be problematic given the important role of NMDA-receptors in hippocampal synaptic plasticity. However, as the drug was applied only for a couple of hours per imaging session and we did not induce any plasticity, it is unlikely that our results were compromised by it. The use of more innocuous drugs or performing the experiments with non-anesthetized and head-fixed animals will be preferable in the future.\n\nAs we did not image in the stratum radiatum, we do not know to what extent the divergence in spine turnover between stratum radiatum reported by Gu et al. and stratum oriens (Attardo et al. and our data) reflects methodological or genuine anatomical or physiological differences. In fact, stratum radiatum primarily receives input from CA3 (Somogyi, 2010; Cappaert et al., 2014), whereas stratum oriens also has afferents from entorhinal cortex and amygdala. In addition, there may be intrinsic differences in the postsynaptic neuron, which account for dendrite-specific spine turnover.\n\nOur finding that hippocampal dendrites are subject to ongoing intense anatomical remodeling supports the view of the hippocampus as a highly dynamic structure designed to encode and process new memories, but not as a long-term repository of information (Frankland and Bontempi, 2005). The situation may be quite different in cortical areas, where typically a large fraction of spines is stable for many weeks in adult mice (Grutzendler et al., 2002; Majewska et al., 2006; Trachtenberg et al., 2002), unless they are subjected to behavioral training (Xu et al., 2009; Yang et al., 2009) or sensory manipulations (Hofer et al., 2009; Keck et al., 2008). However, whether and how spine turnover actually reflects memory-relevant functional adaptations in synaptic strength and connectivity remains to be determined.\n\nIn summary, the present work adds up to a substantial advance for the study of hippocampal synapses in living mice, extending the scope of super-resolution microscopy to a deeply embedded brain structure that is critical for memory function. By correlating spine-level structural changes with genetic, molecular and behavioral interventions and assays, our chronic super-resolution imaging approach creates manifold opportunities to study the neurobiological mechanisms and functional significance of spine plasticity in the mammalian brain.\n\n## Materials\u00a0and\u00a0methods\n\n### Animals\n\nWe used adult female and male transgenic mice (Thy1-HYFP/+ and Thy1-MGFP/+, 4\u201312 months old) where a subset of pyramidal neurons is fluorescently labeled (Feng et al., 2000). The mice were group housed by gender at a day/night cycle of 12/12 hr. All procedures were in accordance with the Directive 2010/63/EU of the European Parliament and approved by the Ethics Committee of Bordeaux and by the government of North Rhine Westphalia.\n\n### Hippocampal window surgery\n\nChronic hippocampal windows were implanted as described previously (Gu et al., 2014; Schmid et al., 2016), providing optical access to the stratum oriens of the CA1 region of the hippocampus (Figure 1B). In brief, mice were anesthetized with an i.p. injection of ketamin/xylazine (0.13/0.01 mg/g bodyweight) and received subcutaneous injections of analgesics (buprenorphine, 0.05 mg/kg) and anti-inflammatory agents (dexamethasone, 0.2 mg/kg) to prevent the brain from swelling during the surgical procedure. Using a dental drill, a craniotomy of 3 mm in diameter was performed above the right hemisphere (stereotactic coordinates: anteroposterior, \u22122.2 mm; mediolateral, +1.8 mm relative to bregma). The dura and somatosensory cortex above the hippocampus were carefully aspirated, while leaving the external capsule of the hippocampus intact. Subsequently, a custom-made metal tube sealed with a coverslip on the bottom side (both 3 mm in diameter, height 1.5 mm and 0.13 mm) was inserted into the craniotomy and fixed to the skull with dental acrylic. Following the surgery, mice received analgesics for 3 days (buprenorphine, 0.05 mg/kg, s.c.) and were allowed to recover from the surgery for 4 weeks before experiments started.\n\n### Two-photon STED microscopy\n\nWe used a custom-made upright 2P-STED microscope (Figure 1A) based on two-photon excitation and stimulated emission depletion (STED) using pulsed lasers (Bethge et al., 2013; Ter Veer et al., 2017). Briefly, a femtosecond mode-locked Ti:Sapphire laser (Chameleon, Coherent, Santa Clara,\u00a0CA) operating at 80 MHz and emitting light at 834 nm was used in combination with an optical parametric oscillator (OPO BASIC Ring fs, APE, Berlin, Germany) to produce STED light pulses at 598 nm with\u00a0~150 fs pulse duration. The pulses were stretched to\u00a0~100 ps by passing them through a glass rod and a 20 m long polarization-maintaining fiber. A STED light reflection served to synchronize a second Ti:Sapphire laser (Tsunami, Spectra Physics, Darmstadt, Germany) tuned to 910 nm and running at a repetition rate of 80 MHz, which was used for two-photon excitation of the fluorophores. Synchronization and optimal pulse delay were achieved with phase-locked loop electronics (3930, Lok-to-Clock, Spectra Physics). The STED doughnut was created by passing the STED beam through a vortex phase mask (RPC Photonics, Rochester,\u00a0NY), which imposed a helical 2\u03c0-phase delay on the wave front. Wave plates (\u03bb/2 and \u03bb/4) were used to make the STED light circularly polarized before it entered into the objective. The 2P and STED beam were combined using a long-pass dichroic mirror. The two laser beams were moved over the sample in all three dimensions using a galvanometric x-y scanner (Janus IV, TILL Photonics) combined with a z-focusing piezo actuator (Pifoc, PI, Karlsruhe, Germany). To bridge the physical distance between the surface of the brain and the deeply embedded hippocampus, we employed a long-working distance water-immersion objective (Nikon CFI Apo 60X W NIR, 1.0 NA, 2.8 mm WD). The epi-fluorescence was de-scanned and imaged onto an avalanche photodiode (SPCM-AQR-13-FC, PerkinElmer, Villebone-sur-Yvette, France). Signal detection and peripheral hardware were controlled by the Imspector scanning software (Abberior Instruments, G\u00f6ttingen, Germany) via a data acquisition card (PCIe-6259, National Instruments). Optical resolution was assessed by imaging 40 nm fluorescent nanospheres (yellow-green fluospheres, Invitrogen) immobilized on glass slides (Figure 1C). Regions of interest were consecutively imaged in 2P and 2P-STED mode (10 \u00d7 10 \u00b5m2; 10 nm pixel size; 50 \u00b5s pixel dwell time). The laser power at the sample was typically around 5\u201320 mW for 2P and 5\u201315 mW for STED.\n\n### In vivo imaging\n\nMice were anesthetized with an i.p. injection of ketamin/xylazine (0.13/0.01 mg/g bodyweight) and the eyes were protected with ointment (Bepanthen). The mouse was fixed to a custom-made stereotactic frame and kept at body temperature using a heating pad. For the quantification of spine density, 2P-STED and 2P images of basal dendrites of CA1 pyramidal neurons were acquired applying identical acquisition parameters (10 \u00d7 10\u00a0\u00d7\u00a04\u20138 \u00b5m3; 20\u201340 nm pixel size; 0.5\u20131 \u00b5m z-step; 20\u201370 \u00b5s pixel dwell time). For the chronic repetitive imaging, the position of the field of view (FOV) was registered in the first imaging session with the help of vascular landmarks and cell bodies of CA1 pyramidal neurons. This allowed for subsequent retrieval of the FOV for each mouse. An overview 2P image z-stack (100 \u00d7 100\u00a0\u00d7\u00a020 \u00b5m3; 200 nm pixel size; 1 \u00b5m z-steps) was acquired at each time point starting from the coverslip. Subsequently, identified distal stretches of basal dendrites in CA1 stratum oriens (5\u201320 \u00b5m in depth) were imaged in 2P and 2P-STED mode. A single imaging session lasted for\u00a0~1 hr and mice woke up in their home cage afterwards. All mice survived the imaging sessions and recovered normally from the anesthesia. Mice were excluded from the analysis if the hippocampal window was faulty or if their fluorescence levels were too low.\n\n### Image analysis\n\nThe 2P and 2P-STED images were spatially filtered (1 pixel median filter) and their brightness and contrast were individually adjusted. Optical resolution of the 2P-STED microscope was assessed by taking images of 40 nm fluorescent nanospheres. We measured two-pixel line profiles across the nanospheres and perpendicular to the spine neck, and fitted them with a Lorentzian function, whose full-width at half maximum (FWHM) served as a measure of the spatial resolution or the neck width, respectively. Paired spine neck measurements were only done for spines where the necks could be discerned in both the 2P and 2P-STED images. Spine density was determined as described before (Gu et al., 2014; Fuhrmann et al., 2007; Holtmaat et al., 2005). All dendritic spines, which extended out laterally from the dendritic shaft by more than 200 nm, were counted by manually scrolling through the z-stacks. Spine density was calculated as the number of spines divided by the dendritic length in micrometer (Figure 2\u2014figure supplement 1). For the 4-day repetitive imaging data set, the spine density of each dendrite was determined blindly with respect to the time point of acquisition. Lost and new spines over the 4-day interval were identified by scrolling through the z-stacks in a chronological order. Spines were scored lost, if they were under the 200 nm threshold. Spines were considered new, if their position on the dendrite relative to neighboring spines shifted by\u00a0\u2265500 nm (Gu et al., 2014), (Holtmaat et al., 2005). The survival fraction of spines (Fs) was calculated as the number of remaining spines at day t (Nr(t)) divided by the number of spines at day 1 (N(1)), expressed in percent:\n\n$$\nF_{s}=\\frac{N_{r}(t)}{N(1)}\\times100\n$$\n\nThe fraction of lost spines (Flost) was assessed for each time point by dividing the number of spines that disappeared on day t (NL(t)) by the total number of spines (N(t)):\n\n$$\nF_{lost}=\\frac{N_{L}(t)}{N(t)}\\times100\n$$\n\nThe fraction of new spines (Fnew) was assessed for each time point by dividing the number of spines that appeared on day t (Nn(t)) by the total number of spines (N(t)):\n\n$$\nF_{new}=\\frac{N_{n}(t)}{N(t)}\\times100\n$$\n\n### Reconstruction of dendritic segments\n\nTo enhance contrast, raw 2P-STED image stacks were subjected to deconvolution (Huygens HuCore version 17.4, Scientific Volume Imaging b.v., Hilversum, The Netherlands) utilizing a theoretical PSF based on microscope parameters and classic maximum likelihood estimation (cmle) with a quality stop criterion of 0.01, automatic background estimation and a signal-to-noise ratio (SNR) of 15.\n\nAfter deconvolution, image stacks were 3D reconstructed in IMARIS v 8.4.1 (Bitplane AG, Zurich). Dendrites and associated spines were reconstructed semi-automatically using the Filament Tracer module. Morphological parameters of spines (mean head width, mean neck width, maximum head width, spine head volume and spine length) were measured and exported for further analysis. To quantify persistence, spines were manually traced over time by assigning individual spines of consecutive imaging sessions to each other. Morphological parameters of spines that were present in all three imaging sessions (persistence\u00a0>2 days) were measured on the last imaging time point. Morphological parameters of spines that were observed for 2 days or less (persistence\u00a0\u22642 days) were measured at the time point of first appearance (new spines), or at the last time point of presence (lost spines).\n\n### Cluster analysis\n\nFor the cluster analysis, the spine parameters, ratio of the mean head to neck diameters (\u00d8Head/\u00d8Neck), the maximum head width (\u00d8max Head) and spine length were taken into account. Agglomerative Hierarchical Clustering Analysis (AHC) was performed using Python\u2019s scikit-learn toolbox. Before cluster analysis, the parameters were centered and scaled to unit variance using the standard scaler from Python\u2019s scikit-learn toolbox. AHC dissimilarity level was calculated based on Euclidean distance. Agglomeration was performed using Ward\u2019s method. By fitting the hierarchical clustering to the population of all analyzed spines, we identified three clusters.\n\n### Tissue preparation and immunochemistry\n\nAll mice were injected with a lethal dose of pentobarbital (200 mg/kg, i.p., Centravet) and perfused transcardially with saline solution followed by 4% (w/v) paraformaldehyde in 0.1 M Phosphate buffer. Brains were removed, post-fixed in 4% paraformaldehyde for 6\u20138 hr, and then sectioned at 40 \u03bcm in the coronal plane on a vibratome (VT1200, Leica). Free floating sections were blocked and permeabilized with a blocking buffer containing 5% normal goat serum (NGS) and 0.5% TritonX-100 diluted in PBS for 1 hr at room temperature. They were then incubated with the rabbit anti-GFP (polyclonal serum 1/1000, Invitrogen) diluted in PBS containing 0.1% tween and 1% NGS for 24 hr at 4\u00b0C; and with the photostable Atto647N-conjugated goat anti-rabbit secondary antibody for 45 min at room temperature (2 \u00b5g/ml, Sigma-Aldrich). The sections were mounted directly on coverslips (high-performance coverglass D\u00a0=\u00a00.17\u00a0\u00b10.005 mm refractive index\u00a0=\u00a01.526, Zeiss) using Mowiol (Mowiol 4\u201388 Calbiochem #475904, refractive index\u00a0=\u00a01.460) for imaging.\n\n### Fixed tissue imaging\n\nSTED images of fixed brain slices were acquired on a commercial STED microscope (Leica DMI6000 TCS SP8 X, Leica Microsystems, Mannheim, Germany), using a 93X glycerol objective with a numerical aperture of 1.3 that was equipped with a motorized correction collar. The microscope was supplied with a white light laser 2 (WLL2) with freely tunable excitation from 470 to 670 nm. The STED module used a pulsed laser for depletion at 775 nm. Image stacks of basal dendrites of CA1 pyramidal neurons were acquired with a pixel size of 20 nm, a z-step size of 200 nm and at a scan speed of 200 Hz using three line averages and four frame accumulations. Spine density analysis was performed as described for the in vivo image analysis (see Image Analysis).\n\n### Quantification and statistics\n\nQuantifications and statistical analysis were performed using Microsoft Excel and GraphPad Prism 7 (GraphPad Software, Inc.). All data were tested for normal distribution using the Shapiro-Wilk normality test. For normally distributed data t-tests, either paired (data of Figures 1\u20133) or unpaired (Figure 4F), were performed to test for statistical significance. Not normally distributed data were tested with Mann-Whitney test (Figure 4B;\u00a0Figure 4F;\u00a0Figure 4\u2014figure supplement 1B). All values are represented as mean\u00a0\u00b1\u00a0sem, unless stated otherwise.\n",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "3bab5c6c-699a-4ca6-9cdb-08c56a6bf9b3",
+      "submission_id": "cd259b0b-d71f-46fa-8941-487a19f0f42e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Karel Svoboda, Janelia Research Campus, Howard Hughes Medical Institute United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34700.028](https://doi.org/10.7554/eLife.34700.028)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Chronic STED imaging reveals high turnover of dendritic spines in the hippocampus in vivo\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Karel Svoboda as the Reviewing Editor, and the evaluation has been overseen by Eve Marder as the Senior Editor. The following individual involved in review of your submission has also agreed to reveal their identity: Anthony Holtmaat (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nImaging and tracking of dendritic spines in vivo poses two distinct challenges: 1. the resolution, contrast and sensitivity need to be sufficiently high to discern spines from the parent dendrite and from one another. 2. dealing with motion artifacts, which can equally degrade the resolution. The first challenge is particularly important in hippocampus, since this is a deep structure with high spine densities. The latter is usually more of an issue in neocortex because it contains a high density of large, pulsating, blood vessels. 2-photon laser scanning microscopy allows imaging dendritic microstructures over time, however its resolution is limited and may not always be sufficient to resolve/detect all spines in the hippocampus. Modeling approaches have been applied to infer dynamics and turnover based on 2P in vivo images (Attardo et al., 2015).\n\nThe authors have applied 2P-STED, a super-resolution method, to image spine dynamics in the mouse hippocampus in vivo over 4 days. They dealt with access and motion artifacts by surgically replacing the cortex with a metal cylinder. To showcase the possibilities of the microscope and prep the authors provide paired comparisons between regular 2-photon and 2-photon STED images and measurements of spines. Then they went on to show that, due to the superior resolution, spine densities are closer to the values reported in EM (used as ground truth). The spine turnover rates are higher than what was reported in a previous 2-photon imaging study with a similar preparation (Gu et al. 2014), and similar to the modeling-based measurements derived from microendoscopic images (Attardo et al. 2015).\n\nThis paper describes a proof of principle using 2P-STED in vivo and provides a first analysis of structural plasticity data. We have no major concerns as to the validity of the results or their interpretation, but suggest expanding the analysis in order to provide more details about the structure-dynamics relationships.\n\nMajor concerns:\n\n1) The spine density reported with STED is still lower than that measured with EM. The authors should produce best-of-class STED images from fixed samples of the same mice and compare the spine densities, this would also control for possible effects of the surgery, loss of resolution in vivo etc.\n\n2) The paper is short, but still a bit flabby. In parts it reads a bit like an infomercial for STED. The resolution advantage over 2p is obvious and should be mentioned once. The effects on measured spine density are also obvious and don't need to be belabored multiple times etc.\n\n3) The data are under-analyzed. One of the main advantages of the current study as compared to the Attardo et al. study, is the information about spine structure (size, length, head size, neck size etc). In cortex, there are clear structure-dynamics relationships, but for hippocampus in vivo this is not known. The authors should expand their analysis into this direction and show whether such relationships between spine dynamics and spine length/size, head size etc exist.\n\n4) The authors argue that the current data set experimentally confirms the modeling data from the Attardo et al. study. Indeed, the first 4 days of imaging suggest that the entire population of spines may be impermanent. However, due to the limited sampling rate, it is not inconceivable that the authors could not detect a more or less stable spine population. To get more insight into this, it would be interesting to analyze the survival rate of new spines, and perhaps model this to estimate the stability and turnover of the entire population. In cortex new spines tend have a half-life in the order of 2 days or so, but in the current data set they could probably live longer. This, together with the finding that about 30% of the entire population disappears over 4 days, may indeed suggest that the whole population of spines is subject to turnover (in contrast to cortex, where the turnover rates to a large extent concerns newly formed spines). The structure-dynamics relationship could also be incorporated into this model.\n\n5) The authors need to discuss or analyze more extensively what were the critical factors in causing the quite different turnover rates between the current study and the Gu et al. paper (one of the co-authors is on both papers!). It is difficult to fathom that the different values (96% stability over 16 days in Gu et al., and 60% stability over 4 days in the current paper) were entirely due to the improved resolution or the hippocampal region. A direct comparison of turnover rates scored in 2P and 2P-STED could have possibly hinted at the underlying factors, or could have identified the type of spines that can be seen turning over in 2P-STED and not in 2P. Furthermore, they should also discuss if long-term 2P-STED could provide better data for cortex or not, given that cortex is usually more prone to movement artefacts?\n\n6) Since this paper focuses heavily on showing the potential of in vivo 2P-STED, we suggest that the authors provide a more substantive comparison between 2P-STED and 2P images in 3D, that is by showing the image stacks that were typically used for scoring, in addition to the projections. This could be done as a figure supplement or as a new figure. This is important since spines are usually scored in 3D (as the authors do too), and resolving them in the axial dimension is most problematic \u2013 and probably still difficult in 2P-STED (as the authors comment). This might relate to the remaining difference between the reported spine densities in 2P-STED and EM.\n\n7a) Most of the spine necks measured in 2P-STED are smaller than the PSF in 2P (as measured on beads). For example, there are spines that measure 500-700 nm in 2P, but less than 200 in 2P-STED. Wouldn't one expect the size of the smaller necks in 2P to be limited to the PSF of the microscope? Can the authors explain this phenomenon?\n\nb) Can the authors also explain why the PSF in 2P is highly variable (the FWHM varies from \u00b1 300-450nm)? We assume that the beads were imaged under optimal and standardized conditions. So, what causes the large variability? The PSF in the axial dimension should be presented as well, as this is the dominant factor in the difficulty to discern spines from the parent dendrite in 2P and probably also in 2P-STED.\n\nc) Along similar lines since the PSF, it would be better to measure the PSFs on beads that are embedded in the preparation. This could change the variance and the bounds as seen in Figure 1C, as well as the relationship of the PSF to the measurements in E.\n\n8) The authors should specify the length of dendrite that was analyzed, and provide the number of spines that were counted. For example, subsection \u201cDendritic spine density of CA1 pyramidal neurons in vivo\u201d, first paragraph and subsection \u201cDendritic spines undergo high morphological turnover in vivo\u201d, second paragraph.\n\n9) The authors used a parametric test to report differences throughout. Did the authors check for normality of the data? They need to specify this.\n\n10) All dendritic images presented in the manuscript appear saturated, which makes it difficult to judge the accuracy of spine counting and the health of dendrite.\n\n11) The criteria used in counting spines are a bit vague. For example, in Figure 3A, day 1, spine 10 does not seem to be connected to the dendritic shaft; spine 9 seems to be a small bump from the dendritic shaft, whereas similarly-sized bumps (e.g., between spine 18 and 19) are not counted. The methods of counting need to be documented in great and quantitative detail.\n",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "27399ec7-18aa-42e7-a012-87c2cd55dd19",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C1",
+      "claim": "Dendritic spines are the postsynaptic structural component of excitatory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Dendritic spines are the postsynaptic structural component of excitatory synapses, and their experience-dependent plasticity has been extensively studied in mouse superficial cortex using two-photon microscopy in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the structural role of dendritic spines in synaptic architecture.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "9c7334f3-b671-4593-bd9c-73aff478893b",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C2",
+      "claim": "Experience-dependent plasticity of dendritic spines has been extensively studied in mouse superficial cortex using two-photon microscopy in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Dendritic spines are the postsynaptic structural component of excitatory synapses, and their experience-dependent plasticity has been extensively studied in mouse superficial cortex using two-photon microscopy in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references the existing body of literature on spine plasticity studies in cortex.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "22b535b4-4875-4536-ac29-82995056acd5",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C3",
+      "claim": "Very little is known about spine plasticity in the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, very little is known about spine plasticity in the hippocampus, which is the archetypical memory center of the brain, mostly because it is difficult to visualize dendritic spines in this deeply embedded structure with sufficient spatial resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a knowledge gap identified by the authors based on the state of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "ab207fc9-49f3-4e8c-8ab2-cbba0ee97cd1",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C4",
+      "claim": "The hippocampus is the archetypical memory center of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, very little is known about spine plasticity in the hippocampus, which is the archetypical memory center of the brain, mostly because it is difficult to visualize dendritic spines in this deeply embedded structure with sufficient spatial resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established neuroscience knowledge about the hippocampus's role in memory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "a31f0b8a-5310-4f32-9665-7f0690260141",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C5",
+      "claim": "It is difficult to visualize dendritic spines in the hippocampus with sufficient spatial resolution because it is a deeply embedded structure.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, very little is known about spine plasticity in the hippocampus, which is the archetypical memory center of the brain, mostly because it is difficult to visualize dendritic spines in this deeply embedded structure with sufficient spatial resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the anatomical location of the hippocampus and technical limitations of imaging.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "82f33021-92c9-47fb-9966-0e16bd28939a",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C6",
+      "claim": "The authors developed chronic 2P-STED microscopy in mouse hippocampus using a 'hippocampal window' based on resection of cortical tissue and a long working distance objective.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed chronic 2P-STED microscopy in mouse hippocampus, using a 'hippocampal window' based on resection of cortical tissue and a long working distance objective for optical access.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological development described in the manuscript with supporting experimental details.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "da20e086-726b-45ac-9c42-1dbd2f307673",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C7",
+      "claim": "The authors observed a two-fold higher spine density than previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a two-fold higher spine density than previous studies and measured a spine turnover of ~40% within 4 days, which depended on spine size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the authors' measurements compared to literature values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "bc2abe88-fe2a-46a6-b761-cd05962e50d9",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C8",
+      "claim": "The authors measured a spine turnover of ~40% within 4 days.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a two-fold higher spine density than previous studies and measured a spine turnover of ~40% within 4 days, which depended on spine size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the longitudinal imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "a962e1ce-7bf6-48ba-a297-ec6853c85d21",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C9",
+      "claim": "Spine turnover depends on spine size.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a two-fold higher spine density than previous studies and measured a spine turnover of ~40% within 4 days, which depended on spine size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the morphological analysis of spine dynamics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "c91c2703-3479-48fa-bf3f-5e2b6899cbba",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C10",
+      "claim": "Dendritic spines constitute computational units of information processing that underlie essentially all higher brain functions.",
+      "claim_type": "EXPLICIT",
+      "source": "They constitute computational units of information processing that underlie essentially all higher brain functions (Nimchinsky et al., 2002; Sala and Segal, 2014; Yuste and Bonhoeffer, 2004) and play a crucial role in brain disorders such as autism spectrum disorder and Alzheimer's disease (Dorostkar et al., 2015; S\u00fcdhof, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "7b20e9fe-d289-4655-a4da-d305f151ac62",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C11",
+      "claim": "Dendritic spines play a crucial role in brain disorders such as autism spectrum disorder and Alzheimer's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "They constitute computational units of information processing that underlie essentially all higher brain functions (Nimchinsky et al., 2002; Sala and Segal, 2014; Yuste and Bonhoeffer, 2004) and play a crucial role in brain disorders such as autism spectrum disorder and Alzheimer's disease (Dorostkar et al., 2015; S\u00fcdhof, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on spine dysfunction in disease.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "82d88dda-7cab-4b2f-be83-a7e3dd024be4",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C12",
+      "claim": "The size of spine heads scales with synaptic strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Spine structure is closely linked to synapse function, as the size of spine heads scales with synaptic strength (Matsuzaki et al., 2001; Noguchi et al., 2011) and the shape and number of spines can be modified by the induction of synaptic plasticity (Matsuzaki et al., 2001; Engert and Bonhoeffer, 1999; N\u00e4gerl et al., 2004; T\u00f8nnesen et al., 2014; Zhou et al., 2004) and by sensory experience (Holtmaat et al., 2006; Keck et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "6611bfeb-5316-4770-829c-de74684b73d2",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C13",
+      "claim": "The shape and number of spines can be modified by the induction of synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Spine structure is closely linked to synapse function, as the size of spine heads scales with synaptic strength (Matsuzaki et al., 2001; Noguchi et al., 2011) and the shape and number of spines can be modified by the induction of synaptic plasticity (Matsuzaki et al., 2001; Engert and Bonhoeffer, 1999; N\u00e4gerl et al., 2004; T\u00f8nnesen et al., 2014; Zhou et al., 2004) and by sensory experience (Holtmaat et al., 2006; Keck et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to plasticity studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "77049de8-9c1c-4e37-9195-63deb5094d92",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C14",
+      "claim": "The shape and number of spines can be modified by sensory experience.",
+      "claim_type": "EXPLICIT",
+      "source": "Spine structure is closely linked to synapse function, as the size of spine heads scales with synaptic strength (Matsuzaki et al., 2001; Noguchi et al., 2011) and the shape and number of spines can be modified by the induction of synaptic plasticity (Matsuzaki et al., 2001; Engert and Bonhoeffer, 1999; N\u00e4gerl et al., 2004; T\u00f8nnesen et al., 2014; Zhou et al., 2004) and by sensory experience (Holtmaat et al., 2006; Keck et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experience-dependent plasticity studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "168648f4-598e-45a9-971d-b61aebe7b0c8",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C15",
+      "claim": "Rewiring of neural circuits by spine plasticity is considered a key neurobiological mechanism of memory formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Rewiring of neural circuits by spine plasticity is considered a key neurobiological mechanism of memory formation (reviewed in [Nimchinsky et al., 2002; Sala and Segal, 2014; Yuste and Bonhoeffer, 2004; Kasai et al., 2010]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to review articles on the topic.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "954eacfb-903d-4349-9011-bb9dec0ec554",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C16",
+      "claim": "Optically induced shrinkage of potentiated spines disrupts newly acquired motor skills.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, a recent study showed that optically induced shrinkage of potentiated spines disrupts newly acquired motor skills (Hayashi-Takagi et al., 2015), indicating a causal link between spine plasticity and memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a specific experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "e97a83cd-3c20-47bd-975e-07e6614cb63c",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C17",
+      "claim": "There is a causal link between spine plasticity and memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, a recent study showed that optically induced shrinkage of potentiated spines disrupts newly acquired motor skills (Hayashi-Takagi et al., 2015), indicating a causal link between spine plasticity and memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited experimental study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "413c5c43-451c-42b8-abd1-b6791f12e5e8",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C18",
+      "claim": "Experience-dependent plasticity of dendritic spines has been a consistent finding across mouse cortex in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "While experience-dependent plasticity of dendritic spines has been a consistent finding across mouse cortex in vivo (Holtmaat and Svoboda, 2009), very little is known about it in the hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a review of cortical spine plasticity studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "0efd6cbf-b093-4463-9d2d-fa25c480e203",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C19",
+      "claim": "The hippocampus constitutes the archetypical memory center of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this is a major knowledge gap, because this neural structure constitutes the archetypical memory center of the brain, and hippocampal brain slices and primary cell cultures are the dominant model systems for the study of synaptic plasticity mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established neuroscience knowledge about the hippocampus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "94153fb5-8579-4c8f-8572-810d3b7a2ec6",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C20",
+      "claim": "Hippocampal brain slices and primary cell cultures are the dominant model systems for the study of synaptic plasticity mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this is a major knowledge gap, because this neural structure constitutes the archetypical memory center of the brain, and hippocampal brain slices and primary cell cultures are the dominant model systems for the study of synaptic plasticity mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about common experimental practices in neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "d787dce5-0f3d-46c8-a6c1-0045187a493e",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C21",
+      "claim": "Imaging dendritic spines in the hippocampus in vivo is challenging because of its remote location more than 1 mm below the surface of the mouse brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging dendritic spines in the hippocampus in vivo is challenging because of its remote location more than 1 mm below the surface of the mouse brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the anatomical location and technical challenges it poses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "7e73cba1-654d-4d04-af6a-fc3ca335a4b9",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C22",
+      "claim": "A pioneering study accomplished imaging of hippocampal spines with two-photon microscopy, but only over a period of a few hours.",
+      "claim_type": "EXPLICIT",
+      "source": "A pioneering study accomplished this with two-photon (2P) microscopy, but only over a period of a few hours (Mizrahi et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "96d4a523-90f5-496b-9e37-615d68ba3c92",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C23",
+      "claim": "Approaches based on a 'hippocampal window' or micro-endoscopy enabled 'chronic' 2P imaging over several weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, approaches based on a 'hippocampal window' (Gu et al., 2014) or micro-endoscopy (Attardo et al., 2015) enabled 'chronic' 2P imaging over several weeks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to specific methodological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "29715d98-ac82-4adc-a2ff-637f417cfcc7",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C24",
+      "claim": "2P microscopy inevitably lacks the spatial resolution to visualize important details of spine morphology, such as spine necks.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 2P microscopy inevitably lacks the spatial resolution to visualize important details of spine morphology, such as spine necks (Bethge et al., 2013), and even struggles to resolve individual dendritic spines on CA1 pyramidal neurons, leaving a high fraction of them undetected (Attardo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies demonstrating resolution limitations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "53674d29-7a33-4d4b-8e1a-cc9170f0fc0e",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C25",
+      "claim": "2P microscopy struggles to resolve individual dendritic spines on CA1 pyramidal neurons, leaving a high fraction of them undetected.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 2P microscopy inevitably lacks the spatial resolution to visualize important details of spine morphology, such as spine necks (Bethge et al., 2013), and even struggles to resolve individual dendritic spines on CA1 pyramidal neurons, leaving a high fraction of them undetected (Attardo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "20662ee2-4f1d-47df-9d23-79d9f8a70795",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C26",
+      "claim": "Regular light microscopy typically detects a spine density of around 1 spine/\u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "While regular light microscopy typically detects a spine density of around 1 spine/\u00b5m (Gu et al., 2014; Attardo et al., 2015; Brigman et al., 2010), electron microscopy (EM) reports ~3 spines/\u00b5m on CA1 hippocampal pyramidal neurons in rats (Harris et al., 1992) and in stratum radiatum of mice (Bloss et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple light microscopy studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "3fd88f83-f977-4a1b-aa60-b73904626795",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C27",
+      "claim": "Electron microscopy reports ~3 spines/\u00b5m on CA1 hippocampal pyramidal neurons in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "While regular light microscopy typically detects a spine density of around 1 spine/\u00b5m (Gu et al., 2014; Attardo et al., 2015; Brigman et al., 2010), electron microscopy (EM) reports ~3 spines/\u00b5m on CA1 hippocampal pyramidal neurons in rats (Harris et al., 1992) and in stratum radiatum of mice (Bloss et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to an EM study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "0036d3e4-8149-46cc-8341-2ddd4a81b79e",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C28",
+      "claim": "Electron microscopy reports ~3 spines/\u00b5m in stratum radiatum of mice.",
+      "claim_type": "EXPLICIT",
+      "source": "While regular light microscopy typically detects a spine density of around 1 spine/\u00b5m (Gu et al., 2014; Attardo et al., 2015; Brigman et al., 2010), electron microscopy (EM) reports ~3 spines/\u00b5m on CA1 hippocampal pyramidal neurons in rats (Harris et al., 1992) and in stratum radiatum of mice (Bloss et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to an EM study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "92b37eb5-30c6-43d2-a4ef-927a147aadf6",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C29",
+      "claim": "Spine density is about ten times lower in many cortical areas compared to hippocampus, for example ~0.24 spines/\u00b5m for pyramidal neurons in layer 5 of mouse barrel cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, spine density is about ten times lower in many cortical areas, for example ~0.24 spines/\u00b5m for pyramidal neurons in layer 5 of mouse barrel cortex (Holtmaat et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a cortical spine density study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "4c465de8-bd4e-4ffd-8ddd-3d3a39653e77",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C30",
+      "claim": "The authors used a home-built STED microscope based on 2P excitation.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a home-built STED microscope based on 2P excitation (2P-STED) (Bethge et al., 2013; Ter Veer et al., 2017) and equipped it with a long working distance objective to reach the deeply located hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description with citations to previous work on the microscope design.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "9afbc3f3-ab28-4d54-94b4-fa0f6b643753",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C31",
+      "claim": "The authors adopted a 'hippocampal window' technique where a portion of the overlying somatosensory cortex is surgically removed and replaced by a metal cylinder sealed with a cover slip.",
+      "claim_type": "EXPLICIT",
+      "source": "We adopted a 'hippocampal window' technique (Gu et al., 2014; Schmid et al., 2016; Dombeck et al., 2010), where a portion of the overlying somatosensory cortex is surgically removed and replaced by a metal cylinder sealed with a cover slip, providing stable optical access to the CA1 area of the hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description with citations to previous work on the technique.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "51cf0ee4-477c-4fd2-8f4a-22fb49dbe958",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C32",
+      "claim": "The hippocampal window provides stable optical access to the CA1 area of the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "We adopted a 'hippocampal window' technique (Gu et al., 2014; Schmid et al., 2016; Dombeck et al., 2010), where a portion of the overlying somatosensory cortex is surgically removed and replaced by a metal cylinder sealed with a cover slip, providing stable optical access to the CA1 area of the hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the functional outcome of the surgical technique.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "8594d473-924c-45c3-b726-0fb742dc7fdc",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C33",
+      "claim": "The new approach offers substantially improved spatial resolution and image quality compared to regular 2P microscopy in mouse hippocampus in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that our new approach offers substantially improved spatial resolution and image quality compared to regular 2P microscopy in mouse hippocampus in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim supported by comparative imaging data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "bb363392-d82a-4c1f-87d7-6f6f3af1ee22",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C34",
+      "claim": "The authors used transgenic mice with fluorescently labeled pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Using transgenic mice with fluorescently labeled pyramidal neurons, we measured spine density on basal dendrites of pyramidal neurons in stratum oriens of the CA1 area and compared results obtained with 2P and 2P-STED microscopy in vivo as well as with STED microscopy in fixed hippocampal sections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description of the experimental model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "16d612f2-11d3-4158-9158-4703c971be9f",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C35",
+      "claim": "The authors measured spine density on basal dendrites of pyramidal neurons in stratum oriens of the CA1 area.",
+      "claim_type": "EXPLICIT",
+      "source": "Using transgenic mice with fluorescently labeled pyramidal neurons, we measured spine density on basal dendrites of pyramidal neurons in stratum oriens of the CA1 area and compared results obtained with 2P and 2P-STED microscopy in vivo as well as with STED microscopy in fixed hippocampal sections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental measurements performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "785d0cb9-dae9-405a-a96e-658ed874a010",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C36",
+      "claim": "The authors compared results obtained with 2P and 2P-STED microscopy in vivo as well as with STED microscopy in fixed hippocampal sections.",
+      "claim_type": "EXPLICIT",
+      "source": "Using transgenic mice with fluorescently labeled pyramidal neurons, we measured spine density on basal dendrites of pyramidal neurons in stratum oriens of the CA1 area and compared results obtained with 2P and 2P-STED microscopy in vivo as well as with STED microscopy in fixed hippocampal sections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the comparative analysis performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "5da2f6c9-3fee-4eb9-a0e3-403b1da2891c",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C37",
+      "claim": "The authors carried out repetitive 2P-STED in vivo imaging over a 4-day period to measure spine turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we carried out repetitive 2P-STED in vivo imaging over a 4-day period to measure spine turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the longitudinal imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "343bf4e4-20bc-4966-9c9c-1ad162baa0e7",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C38",
+      "claim": "The analysis showed a two times higher spine density than reported by conventional 2P microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis showed a two times higher spine density than reported by conventional 2P microscopy, and around 40% of all spines turned over within 4 days, suggesting a high level of circuit remodeling in the hippocampus in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "9626467d-59c3-421d-a234-884c394ac39b",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C39",
+      "claim": "Around 40% of all spines turned over within 4 days, suggesting a high level of circuit remodeling in the hippocampus in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis showed a two times higher spine density than reported by conventional 2P microscopy, and around 40% of all spines turned over within 4 days, suggesting a high level of circuit remodeling in the hippocampus in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding with an interpretation about circuit remodeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "2518c60e-b7e5-4421-bd4f-5b7f056dcc4b",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C40",
+      "claim": "Detailed morphological analysis revealed that primarily small spines were affected by spine turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, detailed morphological analysis revealed that primarily small spines were affected by spine turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the morphological analysis of spine dynamics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "bf564560-eeef-4ed2-a1df-bdab47c8586d",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C41",
+      "claim": "The FWHM was 54 \u00b1 2 nm in the x-y plane in 2P-STED mode.",
+      "claim_type": "EXPLICIT",
+      "source": "The full-width at half maximum (FWHM) was 54 \u00b1 2 nm in the x-y plane in 2P-STED mode, compared with 325 \u00b1 5 nm in regular 2P mode (p<0.0001, paired t-test; n = 17 beads; Figure 1C), demonstrating that our super-resolution approach delivered a six-fold nominal gain in lateral spatial resolution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from PSF characterization experiments shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "55f8bcb8-451c-418c-87db-db8c3864eb1c",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C42",
+      "claim": "The FWHM was 325 \u00b1 5 nm in regular 2P mode.",
+      "claim_type": "EXPLICIT",
+      "source": "The full-width at half maximum (FWHM) was 54 \u00b1 2 nm in the x-y plane in 2P-STED mode, compared with 325 \u00b1 5 nm in regular 2P mode (p<0.0001, paired t-test; n = 17 beads; Figure 1C), demonstrating that our super-resolution approach delivered a six-fold nominal gain in lateral spatial resolution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from PSF characterization experiments shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "744d8383-61c1-4d1d-8ab2-ffb223f3bbd7",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C43",
+      "claim": "The super-resolution approach delivered a six-fold nominal gain in lateral spatial resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The full-width at half maximum (FWHM) was 54 \u00b1 2 nm in the x-y plane in 2P-STED mode, compared with 325 \u00b1 5 nm in regular 2P mode (p<0.0001, paired t-test; n = 17 beads; Figure 1C), demonstrating that our super-resolution approach delivered a six-fold nominal gain in lateral spatial resolution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculation based on the ratio of FWHM measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "a3b5e68f-e563-47ad-bd92-88f0c8f9e0c3",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C44",
+      "claim": "The axial resolution remained unchanged in 2P-STED.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the axial resolution remained unchanged in 2P-STED (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from axial PSF measurements shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "04f8db27-d24c-44bc-bae3-f23f06c64a81",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C45",
+      "claim": "The authors used transgenic mice (Thy1-HYFP/+ and Thy1-MGFP/+, 4\u201312 months old) that expressed either GFP or YFP in a subset of CA1 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We used transgenic mice (Thy1-HYFP/+ and Thy1-MGFP/+, 4\u201312 months old) that expressed either GFP or YFP in a subset of CA1 pyramidal neurons (Feng et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental model with a citation to the mouse line.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "9006a3b9-984a-4c35-b833-de33f68919dd",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C46",
+      "claim": "Spines were much more clearly delineated in 2P-STED than in 2P mode when focusing on dendrites close to the coverslip (5\u201320 \u00b5m).",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing on dendrites close to the coverslip (5\u201320 \u00b5m), spines were much more clearly delineated in 2P-STED than in 2P mode (Figure 1D, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a qualitative observation supported by images in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "bf6c479a-f404-40fb-943d-6ec0a5ed1ef3",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C47",
+      "claim": "Spine necks were better resolved with 2P-STED as evidenced by paired measurements of spine neck widths (2P-STED: 147 \u00b1 8 nm; 2P: 369 \u00b1 6 nm; p<0.0001, paired t-test; n = 35 spine necks, 17 dendrites, 6 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, spine necks were better resolved with 2P-STED as evidenced by paired measurements of spine neck widths (2P-STED: 147 \u00b1 8 nm; 2P: 369 \u00b1 6 nm; p<0.0001, paired t-test; n = 35 spine necks, 17 dendrites, 6 mice; Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement comparing spine neck widths between imaging modes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "62394ffa-5c84-474e-966d-ba23d39920f3",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C48",
+      "claim": "Image distortions caused by animal breathing and heartbeat normally pose a serious challenge for imaging in vivo, in particular STED microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Image distortions caused by animal breathing and heartbeat normally pose a serious challenge for imaging in vivo, in particular STED microscopy, which is especially sensitive to brain motion due to its high spatial resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about known technical challenges in in vivo imaging.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "dd665a1c-1225-4580-ae49-2e1752a1007a",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C49",
+      "claim": "STED microscopy is especially sensitive to brain motion due to its high spatial resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Image distortions caused by animal breathing and heartbeat normally pose a serious challenge for imaging in vivo, in particular STED microscopy, which is especially sensitive to brain motion due to its high spatial resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the relationship between spatial resolution and motion sensitivity.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "6654eaff-3540-49bd-a54e-48b3af799056",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C50",
+      "claim": "The authors only encountered mild levels of image blur, making it not necessary to apply motion correction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we only encountered mild levels of image blur (Figure 1\u2014video 1), making it not necessary to apply motion correction (see Discussion).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the imaging experiments supported by video data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "311ebfe9-afe0-4147-8e82-c9844a9dbe52",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C51",
+      "claim": "There was a significant difference in spine density between 2P-STED and 2P mode (2P-STED: 2.13 \u00b1 0.10 \u00b5m\u22121; 2P: 1.61 \u00b1 0.07 \u00b5m\u22121; p<0.0001, paired t-test; n = 82 dendrites, 6 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "There was a significant difference between the two modes (2P-STED: 2.13 \u00b1 0.10 \u00b5m\u22121; 2P: 1.61 \u00b1 0.07 \u00b5m\u22121; p<0.0001, paired t-test; n = 82 dendrites, 6 mice; Figure 2B and Figure 2\u2014figure supplement 1), where 2P-STED detected on average 32% more spines than 2P in a direct comparison (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative comparison of spine density measurements with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "f7e3827b-c829-4a45-bf08-e045c46c973a",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C52",
+      "claim": "2P-STED detected on average 32% more spines than 2P in a direct comparison.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a significant difference between the two modes (2P-STED: 2.13 \u00b1 0.10 \u00b5m\u22121; 2P: 1.61 \u00b1 0.07 \u00b5m\u22121; p<0.0001, paired t-test; n = 82 dendrites, 6 mice; Figure 2B and Figure 2\u2014figure supplement 1), where 2P-STED detected on average 32% more spines than 2P in a direct comparison (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculation based on the spine density measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "8601b189-f05d-4b69-bbd5-2062926f8ada",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C53",
+      "claim": "The increase in detected spines was due to the improved detection or discrimination of (1) spines that either had short necks or that extended into the z-direction, which were otherwise obscured by the fluorescence signal of the dendritic shaft, and (2) closely clustered spines, which appeared merged in the 2P images.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase was due to the improved detection or discrimination of (1) spines that either had short necks or that extended into the z-direction, which were otherwise obscured by the fluorescence signal of the dendritic shaft, and (2) closely clustered spines, which appeared merged in the 2P images (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the data based on visual inspection of the images.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "e328bd1d-7b28-4ea1-9ff5-748e28f31d6f",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C54",
+      "claim": "The 2P-based mean value for spine density (1.61 \u00b5m\u22121) is around 45% higher than the values reported in the light microscopy literature (~1.1 \u00b5m\u22121).",
+      "claim_type": "EXPLICIT",
+      "source": "While our 2P-based mean value for spine density (1.61 \u00b5m\u22121) is around 45% higher than the values reported in the light microscopy literature (~1.1 \u00b5m\u22121) (Gu et al., 2014; Attardo et al., 2015), the mean value based on 2P-STED is about twice as large as this (2.13 \u00b5m\u22121).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the authors' measurements to literature values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "5f69c467-8c0f-45e9-8f8f-6d00fe45fbc5",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C55",
+      "claim": "The mean value based on 2P-STED is about twice as large as the values reported in the light microscopy literature (~1.1 \u00b5m\u22121).",
+      "claim_type": "EXPLICIT",
+      "source": "While our 2P-based mean value for spine density (1.61 \u00b5m\u22121) is around 45% higher than the values reported in the light microscopy literature (~1.1 \u00b5m\u22121) (Gu et al., 2014; Attardo et al., 2015), the mean value based on 2P-STED is about twice as large as this (2.13 \u00b5m\u22121).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the authors' measurements to literature values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "683b15c0-4e41-4ad1-b3ad-274b2a3e11eb",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C56",
+      "claim": "Using a commercial STED microscope with one-photon excitation, the authors measured a spine density of 2.68 \u00b1 0.08 \u00b5m\u22121 in fixed brain slices (n = 37 dendrites, 6 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "Using a commercial STED microscope with one-photon excitation, we measured a density of 2.68 \u00b1 0.08 \u00b5m\u22121 (n = 37 dendrites, 6 mice; Figure 2D), which comes closer to the values reported by EM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from fixed tissue imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "7521153f-b1dc-4d91-a010-54dab2c7cbb2",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C57",
+      "claim": "The spine density measured in fixed tissue comes closer to the values reported by EM.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a commercial STED microscope with one-photon excitation, we measured a density of 2.68 \u00b1 0.08 \u00b5m\u22121 (n = 37 dendrites, 6 mice; Figure 2D), which comes closer to the values reported by EM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of the authors' measurements to EM literature values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "f852a846-62e2-488b-a85a-238d242e116d",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C58",
+      "claim": "According to a geometrical model accounting for limited axial resolution, about a quarter of the spines could not be detected in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the model, which took into account the actual dimensions of dendritic morphology and the PSF of the microscope, about a quarter of the spines could not be detected in vivo because of this problem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from a theoretical model based on geometric considerations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "c18760df-e93b-4990-af18-f1b2bee7cc76",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C59",
+      "claim": "Correcting the measured values by the fraction of undetectable spines, the authors calculated a spine density of 2.91 \u00b1 0.14 \u00b5m\u22121 for the in vivo data and 3.15 \u00b1 0.09 \u00b5m\u22121 for the fixed tissue data.",
+      "claim_type": "EXPLICIT",
+      "source": "Correcting the measured values by this fraction, we calculated a spine density of 2.91 \u00b1 0.14 \u00b5m\u22121 for the in vivo data and 3.15 \u00b1 0.09 \u00b5m\u22121 for the fixed tissue data (Figure 2F), which effectively closed the gap to the 'ground truth' EM values.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculation based on the model correction applied to the measured data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "e3548a19-3ce0-4543-9dad-c34c4665af22",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C60",
+      "claim": "The corrected spine density values effectively closed the gap to the 'ground truth' EM values.",
+      "claim_type": "EXPLICIT",
+      "source": "Correcting the measured values by this fraction, we calculated a spine density of 2.91 \u00b1 0.14 \u00b5m\u22121 for the in vivo data and 3.15 \u00b1 0.09 \u00b5m\u22121 for the fixed tissue data (Figure 2F), which effectively closed the gap to the 'ground truth' EM values.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of corrected values to EM literature values.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "35fbb9d8-3969-48e9-bc99-d010d566d5bd",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C61",
+      "claim": "The authors performed repeated 2P-STED imaging of individual dendritic stretches over 4 days (day 0, 2 and 4).",
+      "claim_type": "EXPLICIT",
+      "source": "To determine the kinetics of spine emergence and elimination, which is a matter of controversy (Gu et al., 2014; Attardo et al., 2015), we performed repeated 2P-STED imaging of individual dendritic stretches over 4 days (day 0, 2 and 4; Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the longitudinal imaging protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "f72d384a-e181-4cac-b0c2-06cd9d5f1247",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C62",
+      "claim": "The kinetics of spine emergence and elimination is a matter of controversy.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine the kinetics of spine emergence and elimination, which is a matter of controversy (Gu et al., 2014; Attardo et al., 2015), we performed repeated 2P-STED imaging of individual dendritic stretches over 4 days (day 0, 2 and 4; Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about conflicting findings in the literature, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "4eba5cfb-cdca-4a5b-8fe0-51b6fc3d36cd",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C63",
+      "claim": "The authors used tissue landmarks such as blood vessels, fluorescent cell bodies and dendrites to retrieve a particular dendrite in consecutive imaging sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "To retrieve a particular dendrite in consecutive imaging sessions, we used tissue landmarks such as blood vessels, fluorescent cell bodies and dendrites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodological approach for longitudinal tracking.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "9fdbbb51-a483-45f9-9099-d0da950368ca",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C64",
+      "claim": "The average spine density remained stable over the entire observation period (day 0: 2.31 \u00b1 0.10 \u00b5m\u22121; day 2: 2.28 \u00b1 0.08 \u00b5m\u22121; day 4: 2.30 \u00b1 0.10 \u00b5m\u22121; n = 14 dendrites, 3 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "First, we quantified the average spine density for each time point, which remained stable over the entire observation period (day 0: 2.31 \u00b1 0.10 \u00b5m\u22121; day 2: 2.28 \u00b1 0.08 \u00b5m\u22121; day 4: 2.30 \u00b1 0.10 \u00b5m\u22121; n = 14 dendrites, 3 mice; Figure 3A,B and Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the longitudinal imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "3ac2d68a-4ff8-4b20-acef-f72fc3352ebf",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C65",
+      "claim": "The survival fraction was 78.1 \u00b1 3.6% for day 2, and 60.8 \u00b1 3.4% for day 4.",
+      "claim_type": "EXPLICIT",
+      "source": "The survival fraction was 78.1 \u00b1 3.6% for day 2, and 60.8 \u00b1 3.4% for day 4 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement of spine persistence over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "4be96362-366b-4f15-ac8c-ea7beadc41b0",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C66",
+      "claim": "The fraction of lost spines was 21.2 \u00b1 3.6% from day 0 to 2, and 24.7 \u00b1 3.0% from day 2 to 4.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of lost spines was 21.2 \u00b1 3.6% from day 0 to 2, and 24.7 \u00b1 3.0% from day 2 to 4 (Figure 3D), while the fraction of new spines from day 0 to 2 was 20.4 \u00b1 2.6%, and 21.9 \u00b1 3.0% from day 2 to 4 (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement of spine loss over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "17a2635a-9ee7-46c1-a6cf-bde3e0c9e594",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C67",
+      "claim": "The fraction of new spines from day 0 to 2 was 20.4 \u00b1 2.6%, and 21.9 \u00b1 3.0% from day 2 to 4.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of lost spines was 21.2 \u00b1 3.6% from day 0 to 2, and 24.7 \u00b1 3.0% from day 2 to 4 (Figure 3D), while the fraction of new spines from day 0 to 2 was 20.4 \u00b1 2.6%, and 21.9 \u00b1 3.0% from day 2 to 4 (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement of spine formation over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "163c692a-49a7-4951-a11f-b8fa22cafb64",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C68",
+      "claim": "The rates of spine loss and gain were balanced and did not change over the sessions, which is consistent with the constant spine density observed.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the rates of spine loss and gain were balanced and did not change over the sessions, which is consistent with the constant spine density we observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the turnover data in relation to the stable density measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "0e5245b5-24ef-43b9-8dae-e18adc2dfef7",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C69",
+      "claim": "Spine turnover was less visible in 2P mode, amounting to a survival fraction of 74.9 \u00b1 2.2% after 4 days.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, spine turnover was less visible in 2P mode, amounting to a survival fraction of 74.9 \u00b1 2.2% after 4 days (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative comparison of turnover measurements between imaging modes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "46a18110-bcc1-4e4b-a969-4c43ef81eae2",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C70",
+      "claim": "In cortex, spines with a large head have been shown to be more stable than filopodial and thin spines.",
+      "claim_type": "EXPLICIT",
+      "source": "In cortex, spines with a large head have been shown to be more stable than filopodial and thin spines (Holtmaat and Svoboda, 2009; Knott et al., 2006), but it is unknown whether such a link also exists for the hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to cortical spine stability studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "a47aec1c-7558-483f-8b18-6f38481d5ce8",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C71",
+      "claim": "It is unknown whether a link between spine size and stability exists for the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "In cortex, spines with a large head have been shown to be more stable than filopodial and thin spines (Holtmaat and Svoboda, 2009; Knott et al., 2006), but it is unknown whether such a link also exists for the hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a knowledge gap in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "3756705a-04d9-4170-bab3-744986b18e8a",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C72",
+      "claim": "Spines that were visible on all three imaging sessions (Persistence >2 days) had larger heads than spines that were visible on only one or two sessions (Persistence \u22642 days).",
+      "claim_type": "EXPLICIT",
+      "source": "Spines that were visible on all three imaging sessions (Persistence >2 days) had larger heads than spines that were visible on only one or two sessions (Persistence \u22642 days), suggesting that small spines are more short-lived than large ones (>2 days: 0.03 \u03bcm3 and 0.01\u20130.06 \u03bcm3 versus \u2264 2 days: 0.02 \u03bcm3 and 0.01\u20130.04 \u03bcm3, median and interquartile range; Figure 4A,B; p<0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative comparison of spine head volumes based on persistence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "7c8d6c7d-13f5-47b6-8d5c-f2f08b0707c6",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C73",
+      "claim": "Small spines are more short-lived than large ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Spines that were visible on all three imaging sessions (Persistence >2 days) had larger heads than spines that were visible on only one or two sessions (Persistence \u22642 days), suggesting that small spines are more short-lived than large ones (>2 days: 0.03 \u03bcm3 and 0.01\u20130.06 \u03bcm3 versus \u2264 2 days: 0.02 \u03bcm3 and 0.01\u20130.04 \u03bcm3, median and interquartile range; Figure 4A,B; p<0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the relationship between spine size and persistence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "f375b730-5a0e-4580-8d74-21a6232de624",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C74",
+      "claim": "A cluster analysis revealed at least three distinct populations of spines.",
+      "claim_type": "EXPLICIT",
+      "source": "A cluster analysis ('Agglomerative Hierarchical Clustering' analysis based on Euclidian distance in the parameter space, see Materials and methods) revealed at least three distinct populations of spines (Figure 4\u2014figure supplement 1), which resemble the different categories commonly used in the literature to classify dendritic spines ('small' \u2245 cluster 1, 'thin' \u2245 cluster 2 and 'mushroom-like' \u2245 cluster 3; Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from statistical cluster analysis of morphological parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "d197b068-48e5-4847-b217-237e5ec7a80e",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C75",
+      "claim": "The three spine clusters resemble the different categories commonly used in the literature to classify dendritic spines ('small' \u2245 cluster 1, 'thin' \u2245 cluster 2 and 'mushroom-like' \u2245 cluster 3).",
+      "claim_type": "EXPLICIT",
+      "source": "A cluster analysis ('Agglomerative Hierarchical Clustering' analysis based on Euclidian distance in the parameter space, see Materials and methods) revealed at least three distinct populations of spines (Figure 4\u2014figure supplement 1), which resemble the different categories commonly used in the literature to classify dendritic spines ('small' \u2245 cluster 1, 'thin' \u2245 cluster 2 and 'mushroom-like' \u2245 cluster 3; Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation relating the cluster analysis results to established spine classifications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "2cf31422-d4e8-47ca-80df-a45d60b9deb0",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C76",
+      "claim": "Around 50% of more persistent spines exhibited a mushroom-like morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, whereas around 50% of more persistent spines exhibited a mushroom-like morphology, less persistent spines rarely (7%) belonged to this category (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the cluster analysis related to spine persistence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "c98d1ebd-e273-4f5d-b6e5-65affb36ab04",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C77",
+      "claim": "Less persistent spines rarely (7%) belonged to the mushroom-like category.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, whereas around 50% of more persistent spines exhibited a mushroom-like morphology, less persistent spines rarely (7%) belonged to this category (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the cluster analysis related to spine persistence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "8c430311-9493-4397-a539-19c333c6f034",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C78",
+      "claim": "Within cluster 3, less persistent spines had on average smaller heads and lower head to neck diameter ratios.",
+      "claim_type": "EXPLICIT",
+      "source": "Even within cluster 3, less persistent spines had on average smaller heads and lower head to neck diameter ratios (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative comparison of morphological parameters within a spine cluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "be021e17-839e-4998-a17a-022e37a80b03",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C79",
+      "claim": "The authors established chronic super-resolution imaging of dendritic spines in the intact hippocampus of living mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We established chronic super-resolution imaging of dendritic spines in the intact hippocampus of living mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the methodological achievement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "441128c8-f890-4a80-a921-d317ee8e058a",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C80",
+      "claim": "STED microscopy has been used before for imaging dendritic spines in vivo, but only in superficial cortical layers and for one-off and acute imaging sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "STED microscopy has been used before for imaging dendritic spines in vivo, but only in superficial cortical layers and for one-off and acute imaging sessions (Berning et al., 2012; Willig et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous STED imaging studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "ed82529a-4079-4789-9ae5-a3afde9acf5a",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C81",
+      "claim": "Dendritic spines commonly serve as a morphological proxy for excitatory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Dendritic spines commonly serve as a morphological proxy for excitatory synapses, allowing inferences on synaptic strength and functional connectivity, for instance when their shape, size or number change over the course of an electrophysiological or behavioral experiment (Yuste and Bonhoeffer, 2004; Holtmaat and Svoboda, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in neuroscience supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "05301e28-8358-4815-b4fa-433f1b474779",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C82",
+      "claim": "Spines have nanoscale dimensions and are densely packed in light scattering tissue, making accurate and quantitative anatomical readout difficult to obtain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since spines have nanoscale dimensions and are densely packed in light scattering tissue, an accurate and quantitative anatomical readout is oftentimes difficult to obtain (Bethge et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about technical challenges in spine imaging, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "02de6894-7f65-4391-bd72-73d0308cbc2a",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C83",
+      "claim": "Spine density has been shown to vary between 2 and 4 \u00b5m\u22121 on proximal apical dendrites in stratum radiatum in adult rats according to serial section transmission EM.",
+      "claim_type": "EXPLICIT",
+      "source": "Spine density has been shown to vary between 2 and 4 \u00b5m\u22121 on proximal apical dendrites in stratum radiatum in adult rats (Harris et al., 1992; Harris and Stevens, 1989) and mice (Bloss et al., 2018) according to serial section transmission EM, and between 2 and 3 \u00b5m\u22121 on basal oblique dendrites in stratum oriens in adult mice according to array tomography (Bloss et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to EM studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "10193353-730b-4102-a988-d561e8f0bfdd",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C84",
+      "claim": "Spine density has been shown to vary between 2 and 4 \u00b5m\u22121 on proximal apical dendrites in stratum radiatum in adult mice according to serial section transmission EM.",
+      "claim_type": "EXPLICIT",
+      "source": "Spine density has been shown to vary between 2 and 4 \u00b5m\u22121 on proximal apical dendrites in stratum radiatum in adult rats (Harris et al., 1992; Harris and Stevens, 1989) and mice (Bloss et al., 2018) according to serial section transmission EM, and between 2 and 3 \u00b5m\u22121 on basal oblique dendrites in stratum oriens in adult mice according to array tomography (Bloss et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to an EM study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "7bbb0297-2e80-4e25-afb4-5f814665cc3c",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C85",
+      "claim": "Spine density varies between 2 and 3 \u00b5m\u22121 on basal oblique dendrites in stratum oriens in adult mice according to array tomography.",
+      "claim_type": "EXPLICIT",
+      "source": "Spine density has been shown to vary between 2 and 4 \u00b5m\u22121 on proximal apical dendrites in stratum radiatum in adult rats (Harris et al., 1992; Harris and Stevens, 1989) and mice (Bloss et al., 2018) according to serial section transmission EM, and between 2 and 3 \u00b5m\u22121 on basal oblique dendrites in stratum oriens in adult mice according to array tomography (Bloss et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to an array tomography study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "55c3dbe4-379a-4252-b613-a3021a737ac9",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C86",
+      "claim": "The spine densities detected in stratum oriens lie within the range of EM and array tomography measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, the spine densities we detected in stratum oriens lie within the range of these measurements, while the two recent in vivo 2P microscopy studies reported values less than half the amount (Gu et al., 2014; Attardo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the authors' measurements to literature values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "1cee4ab7-67d6-4adf-a091-4e9278ef85e1",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C87",
+      "claim": "Two recent in vivo 2P microscopy studies reported spine density values less than half the amount of EM measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, the spine densities we detected in stratum oriens lie within the range of these measurements, while the two recent in vivo 2P microscopy studies reported values less than half the amount (Gu et al., 2014; Attardo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of literature values from different imaging modalities.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "45377221-0886-4025-bbdb-9969e6124c4a",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C88",
+      "claim": "The STED approach only improved the lateral resolution, so spines that protruded into the axial direction were still difficult to detect.",
+      "claim_type": "EXPLICIT",
+      "source": "As our STED approach only improved the lateral resolution, spines that protruded into the axial direction were still difficult to detect, explaining why our density values are still below those reported by EM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the technical limitations and their impact on measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "9c480a79-18b5-4627-aec5-72681c7ace9e",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C89",
+      "claim": "Correcting the data based on a simple geometric model removed the residual difference between STED and EM measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, correcting our data based on a simple geometric model removed the residual difference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from applying the geometric correction model to the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "69de7112-0135-4a87-9c89-375a4512c899",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C90",
+      "claim": "Ongoing technical advances in 3D beam shaping will improve axial resolution and should enable nearly complete spine detection in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In the near future, our method stands to benefit from ongoing technical advances, for instance in 3D beam shaping, which will improve axial resolution (Gould et al., 2012; Patton et al., 2016), and should enable nearly complete spine detection in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future technical improvements supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "8606892b-5584-4e8b-9614-1c5ff22e315f",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C91",
+      "claim": "The authors could only image spines in the stratum oriens within 20 \u00b5m from the cover slip; beyond this distance, image quality degraded rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "We could only image spines in the stratum oriens within 20 \u00b5m from the cover slip; beyond this distance, image quality degraded rapidly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the depth limitation of the imaging approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "d2dcc002-4664-40c1-bbdf-64d106b0f153",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C92",
+      "claim": "The depth limitation was likely due to optical aberrations caused by mismatches in refractive index between the immersion medium, the glass cover slip and the sample.",
+      "claim_type": "EXPLICIT",
+      "source": "This depth limitation was likely due to optical aberrations caused by mismatches in refractive index between the immersion medium, the glass cover slip and the sample (n \u2248 1.37 for brain tissue [Lue et al., 2007]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the cause of the depth limitation, supported by a citation about tissue refractive index.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "a31cfda0-93df-4cf8-986e-a5c0072f9eb0",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C93",
+      "claim": "The new objective did not have a correction collar to reduce spherical aberrations, which otherwise probably would have permitted greater imaging depth.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike other objectives we have used for STED microscopy in brain tissue (Bethge et al., 2013; Urban et al., 2011), the new objective did not have a correction collar to reduce spherical aberrations, which otherwise probably would have permitted greater imaging depth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about how a different objective design might have improved performance.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "c77221bb-9fc7-4989-8a7e-b902f90756d9",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C94",
+      "claim": "The use of adaptive optics is bound to allow for deeper imaging and thus to reach dendrites in stratum radiatum and other areas of the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the use of adaptive optics is bound to allow for deeper imaging (Ji, 2017) and thus to reach dendrites in stratum radiatum and other areas of the hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future technical improvements supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "709f3436-b8d7-4575-8185-83155c752c69",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C95",
+      "claim": "The near total absence of motion artifacts in the images was primarily due to two effects: the implanted metal tube probably stabilized the brain mechanically, and blood pulsations are likely much weaker in the hippocampus where the vasculature is mostly formed by capillaries.",
+      "claim_type": "EXPLICIT",
+      "source": "We suspect that the near total absence of motion artifacts in the images was primarily due to two effects: firstly, the implanted metal tube probably stabilized the brain mechanically, and secondly, blood pulsations are likely much weaker in the hippocampus where the vasculature is mostly formed by capillaries and has fewer large arteries than in superficial cortex (Marinkovi\u0107 et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the reasons for reduced motion artifacts, with one part supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "960d1fb9-d995-48eb-905e-21d8e3e8ccca",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C96",
+      "claim": "Faithful and complete detection of spines across space and time is absolutely critical for an accurate assessment of spine turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Faithful and complete detection of spines across space and time is absolutely critical for an accurate assessment of spine turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical statement about the requirements for accurate turnover measurements.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "efa4be90-35c8-4ba0-b96a-f618dfa95bd6",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C97",
+      "claim": "Failure to distinguish closely spaced spines will lead to an underestimate of spine turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Failure to distinguish closely spaced spines will lead to an underestimate of spine turnover, because events of individual spines appearing or disappearing within a merged cluster will inevitably be missed, giving a false impression of spine stability (Attardo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about how resolution limitations affect turnover measurements, supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "ff459268-d662-4ae9-8d08-26846d6fabad",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C98",
+      "claim": "Temporal fluctuations, for instance when spines rotate in or out of the optical axis, will lead to an overestimate of spine turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, temporal fluctuations, for instance when spines rotate in or out of the optical axis, will lead to an overestimate of spine turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about how certain artifacts can affect turnover measurements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "65b43fee-41a2-448b-940b-fae80fd3c32b",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C99",
+      "claim": "Biased detection of large spines might distort the measurements of spine turnover as large spines are reportedly less structurally plastic than small spines.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, biased detection of large spines might distort the measurements of spine turnover as large spines are reportedly less structurally plastic than small spines (Matsuzaki et al., 2004), as we have also shown here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about how detection bias affects turnover measurements, supported by a citation and the authors' own data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "586de5c2-24cc-456e-a179-60007fe97f0f",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C100",
+      "claim": "Two recent studies that pioneered chronic imaging in the hippocampus in vivo reported very different lifetimes for spines on apical and basal dendrites of CA1 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The spine detection problem was highlighted by two recent studies that pioneered chronic imaging in the hippocampus in vivo (Gu et al., 2014; Attardo et al., 2015) and reported very different lifetimes for spines on apical and basal dendrites of CA1 pyramidal neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about conflicting findings in the literature, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "321f837e-2028-4fd6-918a-aef887d473fc",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C101",
+      "claim": "The study by Gu et al. reported that ~96% of spines survived for at least 16 days in stratum radiatum.",
+      "claim_type": "EXPLICIT",
+      "source": "The study by Gu et al. (Gu et al., 2014) reported that ~96% of spines survived for at least 16 days in stratum radiatum, whereas the study by Attardo et al. (Attardo et al., 2015) predicted that the entire population of spines in stratum oriens turned over within a month.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "800e1c2c-8280-42e0-b956-f7438de8aa0c",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C102",
+      "claim": "The study by Attardo et al. predicted that the entire population of spines in stratum oriens turned over within a month.",
+      "claim_type": "EXPLICIT",
+      "source": "The study by Gu et al. (Gu et al., 2014) reported that ~96% of spines survived for at least 16 days in stratum radiatum, whereas the study by Attardo et al. (Attardo et al., 2015) predicted that the entire population of spines in stratum oriens turned over within a month.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "da770acc-574b-474d-9b6c-8c7fcc5911e8",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C103",
+      "claim": "Both studies used 2P microscopy with relatively low NA optics and presented images of comparable quality, reporting similar average spine densities (~1.1 \u00b5m\u22121) that were stable over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Both studies used 2P microscopy with relatively low NA optics and presented images of comparable quality, reporting similar average spine densities (~1.1 \u00b5m\u22121) that were stable over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of methodological approaches in the cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "3703a6ea-89c8-41a7-a67c-5c8983cfa45f",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C104",
+      "claim": "Gu et al. assessed spine turnover directly from the 2P images.",
+      "claim_type": "EXPLICIT",
+      "source": "While Gu et al. assessed spine turnover directly from the 2P images, Attardo et al. went a step further and used mathematical modeling to account for the effect of merged spines on apparent spine turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the analytical approach used in a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "37ab95ae-7fb5-4bca-9efd-1f0602415b74",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C105",
+      "claim": "Attardo et al. used mathematical modeling to account for the effect of merged spines on apparent spine turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "While Gu et al. assessed spine turnover directly from the 2P images, Attardo et al. went a step further and used mathematical modeling to account for the effect of merged spines on apparent spine turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the analytical approach used in a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "b7712d71-ceb7-4c2c-a6c4-db105af00416",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C106",
+      "claim": "Without applying the mathematical correction, the survival fraction in the Attardo et al. study was around 80% after 21 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly though, without applying the mathematical correction, their survival fraction was around 80% after 21 days, indicating that direct analysis of 2P images is highly problematic when it comes to establishing spine turnover rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "e929ef34-ae6f-4f72-80b9-1861b3ae7bdc",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C107",
+      "claim": "Direct analysis of 2P images is highly problematic when it comes to establishing spine turnover rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly though, without applying the mathematical correction, their survival fraction was around 80% after 21 days, indicating that direct analysis of 2P images is highly problematic when it comes to establishing spine turnover rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the comparison of corrected and uncorrected turnover measurements.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "b142a57d-8ad1-4e5c-8460-189f3bd37bdc",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C108",
+      "claim": "The super-resolution approach documented a spine survival fraction of 60% after 4 days, providing direct and unambiguous evidence that spines can turn over extremely rapidly in CA1 stratum oriens.",
+      "claim_type": "EXPLICIT",
+      "source": "Our super-resolution approach documented a spine survival fraction of 60% after 4 days, providing direct and unambiguous evidence that spines can turn over extremely rapidly in CA1 stratum oriens, supporting one of the main modeling-based conclusions of the Attardo et al. study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the authors' findings and their interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "508db8dc-9494-42a0-ac24-fd27501523ba",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C109",
+      "claim": "The findings support one of the main modeling-based conclusions of the Attardo et al. study.",
+      "claim_type": "EXPLICIT",
+      "source": "Our super-resolution approach documented a spine survival fraction of 60% after 4 days, providing direct and unambiguous evidence that spines can turn over extremely rapidly in CA1 stratum oriens, supporting one of the main modeling-based conclusions of the Attardo et al. study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the authors' findings to a cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "8e9d8499-94f4-4e9d-9110-b1963a10f17e",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C110",
+      "claim": "It is hard to extrapolate the results in time and determine the extent to which the observed kinetics hold for the entire spine population since only three time points over a relatively short period were imaged.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since we imaged just three time points over a relatively short period, it is hard to extrapolate our results in time and determine the extent to which the observed kinetics hold for the entire spine population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the limitations of the experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "f8c246e1-d986-42e2-9778-a9638d628da2",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C111",
+      "claim": "The observation that larger spines were more stable is a sign for the existence of multiple, kinetically distinct spine populations.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, our observation that larger spines were more stable is a sign for the existence of multiple, kinetically distinct spine populations, unlike the Attardo et al. study, which argued for a single population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the morphology-turnover relationship data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "e6b96345-a063-41c1-940f-361db058e654",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C112",
+      "claim": "The Attardo et al. study argued for a single spine population.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, our observation that larger spines were more stable is a sign for the existence of multiple, kinetically distinct spine populations, unlike the Attardo et al. study, which argued for a single population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of a conclusion from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "f8246fd3-b387-468e-bab0-c87bba9675cf",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C113",
+      "claim": "The authors did not observe any overt signs of phototoxicity, such as dendritic 'blebbing' during short time-lapse sequences and across the imaging sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any overt signs of phototoxicity, such as dendritic 'blebbing' during short time-lapse sequences and across the imaging sessions (Figure 3A, Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "0e862076-dc92-497e-9162-af74701c6cbc",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C114",
+      "claim": "The absence of phototoxicity together with the fact that spine density remained constant indicates that the observed kinetics were real and not an artifact induced by the hippocampal window approach or 2P-STED imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "This absence together with the fact that spine density remained constant indicates that the observed kinetics were real and not an artifact induced by our hippocampal window approach or 2P-STED imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from multiple observations to validate the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "cf2ce04e-dce0-4e5f-a036-b1cd1b951a8f",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C115",
+      "claim": "The use of the NMDA-receptor antagonist ketamine could be problematic given the important role of NMDA-receptors in hippocampal synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of the NMDA-receptor antagonist ketamine could be problematic given the important role of NMDA-receptors in hippocampal synaptic plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a potential confound based on known pharmacology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "2c522b3b-2dba-4d4e-b3d3-0550209052bf",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C116",
+      "claim": "It is unlikely that the results were compromised by ketamine as the drug was applied only for a couple of hours per imaging session and no plasticity was induced.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as the drug was applied only for a couple of hours per imaging session and we did not induce any plasticity, it is unlikely that our results were compromised by it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the minimal impact of the anesthetic based on the experimental conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "571d6ec9-65e7-444d-8d20-25282441cad6",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C117",
+      "claim": "The use of more innocuous drugs or performing the experiments with non-anesthetized and head-fixed animals will be preferable in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of more innocuous drugs or performing the experiments with non-anesthetized and head-fixed animals will be preferable in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future experimental improvements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "7c934686-47fa-4682-b1f2-3c232d519ace",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C118",
+      "claim": "The authors did not image in the stratum radiatum, so they do not know to what extent the divergence in spine turnover between stratum radiatum and stratum oriens reflects methodological or genuine anatomical or physiological differences.",
+      "claim_type": "EXPLICIT",
+      "source": "As we did not image in the stratum radiatum, we do not know to what extent the divergence in spine turnover between stratum radiatum reported by Gu et al. and stratum oriens (Attardo et al. and our data) reflects methodological or genuine anatomical or physiological differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the limitations in interpreting differences between studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "fd96a643-f927-4377-9467-5d7da7e0ff97",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C119",
+      "claim": "Stratum radiatum primarily receives input from CA3.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, stratum radiatum primarily receives input from CA3 (Somogyi, 2010; Cappaert et al., 2014), whereas stratum oriens also has afferents from entorhinal cortex and amygdala.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "693ef02d-6efa-4003-aaf0-07c85b55a1ab",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C120",
+      "claim": "Stratum oriens has afferents from entorhinal cortex and amygdala.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, stratum radiatum primarily receives input from CA3 (Somogyi, 2010; Cappaert et al., 2014), whereas stratum oriens also has afferents from entorhinal cortex and amygdala.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "acf78f19-1d19-4f9a-9e63-72e0a081e665",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C121",
+      "claim": "There may be intrinsic differences in the postsynaptic neuron which account for dendrite-specific spine turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, there may be intrinsic differences in the postsynaptic neuron, which account for dendrite-specific spine turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential mechanisms underlying regional differences.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "472cfdaa-b164-419c-95c8-5e564010c972",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C122",
+      "claim": "The finding that hippocampal dendrites are subject to ongoing intense anatomical remodeling supports the view of the hippocampus as a highly dynamic structure designed to encode and process new memories, but not as a long-term repository of information.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that hippocampal dendrites are subject to ongoing intense anatomical remodeling supports the view of the hippocampus as a highly dynamic structure designed to encode and process new memories, but not as a long-term repository of information (Frankland and Bontempi, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings in the context of hippocampal function, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "0d2d9332-9538-4156-9133-ea314adb92db",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C123",
+      "claim": "The situation may be quite different in cortical areas, where typically a large fraction of spines is stable for many weeks in adult mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The situation may be quite different in cortical areas, where typically a large fraction of spines is stable for many weeks in adult mice (Grutzendler et al., 2002; Majewska et al., 2006; Trachtenberg et al., 2002), unless they are subjected to behavioral training (Xu et al., 2009; Yang et al., 2009) or sensory manipulations (Hofer et al., 2009; Keck et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to cortical spine stability based on cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "e8d4c4e6-a8c9-4a83-bd07-7061ae666b1e",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C124",
+      "claim": "Cortical spines can become unstable when subjected to behavioral training or sensory manipulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The situation may be quite different in cortical areas, where typically a large fraction of spines is stable for many weeks in adult mice (Grutzendler et al., 2002; Majewska et al., 2006; Trachtenberg et al., 2002), unless they are subjected to behavioral training (Xu et al., 2009; Yang et al., 2009) or sensory manipulations (Hofer et al., 2009; Keck et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about experience-dependent plasticity in cortex, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "0ffae69e-d2ff-471a-bc52-64146b636b0a",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C125",
+      "claim": "Whether and how spine turnover actually reflects memory-relevant functional adaptations in synaptic strength and connectivity remains to be determined.",
+      "claim_type": "EXPLICIT",
+      "source": "However, whether and how spine turnover actually reflects memory-relevant functional adaptations in synaptic strength and connectivity remains to be determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of an open question in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "b8f88171-86f0-4f4c-bce3-bed277a60413",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C126",
+      "claim": "The present work adds up to a substantial advance for the study of hippocampal synapses in living mice, extending the scope of super-resolution microscopy to a deeply embedded brain structure that is critical for memory function.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the present work adds up to a substantial advance for the study of hippocampal synapses in living mice, extending the scope of super-resolution microscopy to a deeply embedded brain structure that is critical for memory function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the significance of the work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "667f73fc-b6eb-4a75-a149-bb3d247728d5",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "claim_id": "C127",
+      "claim": "The chronic super-resolution imaging approach creates manifold opportunities to study the neurobiological mechanisms and functional significance of spine plasticity in the mammalian brain by correlating spine-level structural changes with genetic, molecular and behavioral interventions and assays.",
+      "claim_type": "EXPLICIT",
+      "source": "By correlating spine-level structural changes with genetic, molecular and behavioral interventions and assays, our chronic super-resolution imaging approach creates manifold opportunities to study the neurobiological mechanisms and functional significance of spine plasticity in the mammalian brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential applications and impact of the developed method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "bec0338f-1072-4144-96e2-45db02d0917c",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed chronic 2P-STED microscopy in mouse hippocampus using a hippocampal window and long working distance objective, achieving a six-fold improvement in lateral spatial resolution (54 \u00b1 2 nm vs 325 \u00b1 5 nm FWHM) compared to conventional 2P microscopy, with substantially improved image quality and spine neck visualization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C30-C33, C41-C47, and C79 collectively demonstrate successful development of the method with quantitative PSF measurements (C41-C43), statistical validation (C47: p<0.0001, n=35 spine necks), and visual evidence from figures. The technical specifications are well-documented and the resolution improvement is rigorously characterized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "20e23fa2-5659-4e23-a697-97c3a70d98de",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "2P-STED microscopy detected approximately two-fold higher spine density (2.13 \u00b1 0.10 \u00b5m\u207b\u00b9) compared to conventional 2P microscopy (1.61 \u00b1 0.07 \u00b5m\u207b\u00b9) in vivo, representing 32% more spines detected and approaching EM-reported values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C38, C51-C57, and C86 provide converging quantitative evidence with appropriate statistical testing (p<0.0001, paired t-test, n=82 dendrites, 6 mice). The comparison across imaging modalities (2P, 2P-STED in vivo, STED in fixed tissue) and to literature EM values provides strong validation. The mechanistic explanation for increased detection (C53) is supported by visual evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "fd0c92db-0f4f-4bb9-b568-3c4bb5bff7cb",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A geometric model accounting for limited axial resolution predicted that approximately 25% of spines could not be detected in vivo. Correcting for this yielded spine density estimates of 2.91 \u00b1 0.14 \u00b5m\u207b\u00b9 (in vivo) and 3.15 \u00b1 0.09 \u00b5m\u207b\u00b9 (fixed tissue), effectively matching EM ground truth values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C58-C60, C88-C89 present a theoretical correction model, but the model itself is described as 'simple' and 'geometric' without detailed validation. While the corrected values align with EM data, the model assumptions (actual dendritic dimensions, PSF characteristics) are not fully specified or independently validated. The correction is plausible but requires additional experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "8fd86ad2-83a9-4457-a2e7-fdc1ea76512c",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Longitudinal 2P-STED imaging over 4 days revealed approximately 40% spine turnover, with a survival fraction of 60.8 \u00b1 3.4% at day 4, while spine density remained stable (day 0: 2.31 \u00b1 0.10 \u00b5m\u207b\u00b9; day 4: 2.30 \u00b1 0.10 \u00b5m\u207b\u00b9), indicating balanced rates of spine loss (~21-25%) and gain (~20-22%) between imaging sessions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C37, C39, C61, C64-C68, and C108 provide comprehensive quantitative data from longitudinal imaging (n=14 dendrites, 3 mice) with consistent measurements across time points. The balanced turnover rates (C68) are logically consistent with stable density (C64). The methodology for tracking individual dendrites is described (C63), and the absence of phototoxicity (C113-C114) validates that observed dynamics are biological rather than artifactual.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "371c233e-99fa-4aa2-bff7-4a6e0e289608",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Spine turnover depends on spine size, with small spines being more short-lived than large ones. Cluster analysis revealed three distinct spine populations resembling 'small', 'thin', and 'mushroom-like' categories, with persistent spines (>2 days) having larger heads and 50% exhibiting mushroom-like morphology, while less persistent spines rarely (7%) belonged to this category.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C40, C72-C78, and C111 present a comprehensive morphological analysis with statistical validation (C72: p<0.0001) and appropriate clustering methodology (Agglomerative Hierarchical Clustering). The relationship between spine size/morphology and persistence is demonstrated quantitatively with 3D reconstructions and multiple morphological parameters. The finding of multiple kinetically distinct populations (C111) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "4c27fe61-fe2c-4774-aa92-c30573ac8d2b",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The imaging approach exhibited minimal motion artifacts and no overt phototoxicity, with imaging limited to within 20 \u00b5m from the coverslip due to optical aberrations from refractive index mismatches. The metal tube implant likely provided mechanical stabilization and hippocampal vasculature characteristics reduced motion artifacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C91-C92, C95, C113-C114 describe technical observations and limitations with supporting evidence (video data for C50, stable spine density for C114). The depth limitation (C91) is clearly documented, and the explanations for reduced motion artifacts (C95) and depth limitations (C92) are reasonable inferences supported by citations. The absence of phototoxicity is evidenced by lack of blebbing and stable spine density.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "ea55b825-3027-442f-af24-68d48797839b",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The super-resolution approach resolved discrepancies in the literature regarding hippocampal spine turnover, providing direct evidence supporting the modeling-based conclusions of Attardo et al. that spines turn over rapidly in CA1 stratum oriens, while demonstrating that direct 2P analysis underestimates turnover (74.9% vs 60.8% survival at 4 days).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69, C97, C99-C107, and C109 contextualize the findings within existing literature and demonstrate how improved resolution addresses methodological limitations. The comparison between 2P and 2P-STED turnover measurements (C69) directly validates the resolution-dependent detection problem. The citations to conflicting prior studies (C100-C102) and analysis of their methodological differences (C104-C107) provide strong support for the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "21118c0d-765b-4a62-8faf-4191a04e3039",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study acknowledges several limitations: only three time points over 4 days were imaged, limiting extrapolation of kinetics; ketamine anesthesia was used but unlikely to compromise results given short exposure; stratum radiatum was not imaged, preventing assessment of regional differences; and potential intrinsic differences in postsynaptic neurons may account for dendrite-specific turnover.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110, C115-C118, and C121 represent appropriate acknowledgment of experimental limitations and alternative interpretations. These are honest assessments of what the data can and cannot support, with reasonable inferences about potential confounds (C116) and suggestions for future improvements (C117). The limitations do not invalidate the main findings but appropriately constrain their interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "91f481a9-f271-480b-b4b7-67b18c9f4627",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Future technical improvements including 3D beam shaping for improved axial resolution, adaptive optics for deeper imaging, correction collars to reduce spherical aberrations, and use of non-anesthetized head-fixed animals could further enhance the method and enable broader applications for studying spine plasticity mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90, C93-C94, C117, and C127 are speculative statements about future work and potential applications. While the suggestions are reasonable and supported by citations to relevant technical advances (C90, C94), they represent possibilities rather than demonstrated results. These forward-looking statements are appropriate for a Discussion section but cannot be evaluated as supported findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "184bcfe8-51fe-4593-b2aa-f837034df02d",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The finding of high hippocampal spine turnover supports the view of the hippocampus as a dynamic structure for encoding and processing new memories rather than long-term storage, contrasting with cortical areas where spines are typically stable unless subjected to behavioral training or sensory manipulations, though the functional significance of spine turnover for memory remains to be determined.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C122-C125 provide appropriate interpretation of the findings in the context of hippocampal function, supported by citations to relevant literature (C122-C124). The comparison to cortical spine stability (C123-C124) is well-documented in cited studies. The acknowledgment that functional significance remains uncertain (C125) is an honest assessment of current knowledge limitations. The interpretation is reasonable given the data but appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological and technical context for the study, documenting that dendritic spines are postsynaptic components of excitatory synapses with established roles in brain function and disease, that spine plasticity has been extensively studied in cortex but not hippocampus due to technical limitations, and that previous 2P microscopy approaches detected only ~1 spine/\u00b5m compared to ~3 spines/\u00b5m reported by EM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5, C10-C29, C70-C71, C80-C87, C96, C119-C120 represent background knowledge and literature review that appropriately contextualizes the study. These claims are well-supported by citations to established literature and accurately represent the state of the field. They establish the knowledge gap (C3, C71) and technical challenges (C5, C21, C24-C25) that motivate the study, as well as the discrepancy between light microscopy and EM measurements (C26-C28, C87) that the new method addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    },
+    {
+      "id": "59e024d0-9c23-4629-a5a5-ee5e23a740e0",
+      "content_id": "d71bb8a0-c430-4aab-adae-717d69364afe",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The work represents a substantial advance for studying hippocampal synapses in living mice, extending super-resolution microscopy to a deeply embedded brain structure critical for memory function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C126 is a summary statement that is well-supported by the collective evidence from the methodological development (C6, C30-C33, C79), improved spine detection (C7, C51-C52), and successful longitudinal imaging (C8, C61, C64-C68). The achievement of chronic super-resolution imaging in hippocampus represents a genuine technical advance that was not previously possible, as documented by the literature review (C22-C23, C80).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:12:22.277260Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "82f33021-92c9-47fb-9966-0e16bd28939a",
+      "result_id": "bec0338f-1072-4144-96e2-45db02d0917c"
+    },
+    {
+      "claim_id": "4c465de8-bd4e-4ffd-8ddd-3d3a39653e77",
+      "result_id": "bec0338f-1072-4144-96e2-45db02d0917c"
+    },
+    {
+      "claim_id": "9afbc3f3-ab28-4d54-94b4-fa0f6b643753",
+      "result_id": "bec0338f-1072-4144-96e2-45db02d0917c"
+    },
+    {
+      "claim_id": "51cf0ee4-477c-4fd2-8f4a-22fb49dbe958",
+      "result_id": "bec0338f-1072-4144-96e2-45db02d0917c"
+    },
+    {
+      "claim_id": "8594d473-924c-45c3-b726-0fb742dc7fdc",
+      "result_id": "bec0338f-1072-4144-96e2-45db02d0917c"
+    },
+    {
+      "claim_id": "bf564560-eeef-4ed2-a1df-bdab47c8586d",
+      "result_id": "bec0338f-1072-4144-96e2-45db02d0917c"
+    },
+    {
+      "claim_id": "55f8bcb8-451c-418c-87db-db8c3864eb1c",
+      "result_id": "bec0338f-1072-4144-96e2-45db02d0917c"
+    },
+    {
+      "claim_id": "744d8383-61c1-4d1d-8ab2-ffb223f3bbd7",
+      "result_id": "bec0338f-1072-4144-96e2-45db02d0917c"
+    },
+    {
+      "claim_id": "a3b5e68f-e563-47ad-bd92-88f0c8f9e0c3",
+      "result_id": "bec0338f-1072-4144-96e2-45db02d0917c"
+    },
+    {
+      "claim_id": "04f8db27-d24c-44bc-bae3-f23f06c64a81",
+      "result_id": "bec0338f-1072-4144-96e2-45db02d0917c"
+    },
+    {
+      "claim_id": "9006a3b9-984a-4c35-b833-de33f68919dd",
+      "result_id": "bec0338f-1072-4144-96e2-45db02d0917c"
+    },
+    {
+      "claim_id": "bf6c479a-f404-40fb-943d-6ec0a5ed1ef3",
+      "result_id": "bec0338f-1072-4144-96e2-45db02d0917c"
+    },
+    {
+      "claim_id": "be021e17-839e-4998-a17a-022e37a80b03",
+      "result_id": "bec0338f-1072-4144-96e2-45db02d0917c"
+    },
+    {
+      "claim_id": "da20e086-726b-45ac-9c42-1dbd2f307673",
+      "result_id": "20e23fa2-5659-4e23-a697-97c3a70d98de"
+    },
+    {
+      "claim_id": "343bf4e4-20bc-4966-9c9c-1ad162baa0e7",
+      "result_id": "20e23fa2-5659-4e23-a697-97c3a70d98de"
+    },
+    {
+      "claim_id": "311ebfe9-afe0-4147-8e82-c9844a9dbe52",
+      "result_id": "20e23fa2-5659-4e23-a697-97c3a70d98de"
+    },
+    {
+      "claim_id": "f7e3827b-c829-4a45-bf08-e045c46c973a",
+      "result_id": "20e23fa2-5659-4e23-a697-97c3a70d98de"
+    },
+    {
+      "claim_id": "8601b189-f05d-4b69-bbd5-2062926f8ada",
+      "result_id": "20e23fa2-5659-4e23-a697-97c3a70d98de"
+    },
+    {
+      "claim_id": "e328bd1d-7b28-4ea1-9ff5-748e28f31d6f",
+      "result_id": "20e23fa2-5659-4e23-a697-97c3a70d98de"
+    },
+    {
+      "claim_id": "5f69c467-8c0f-45e9-8f8f-6d00fe45fbc5",
+      "result_id": "20e23fa2-5659-4e23-a697-97c3a70d98de"
+    },
+    {
+      "claim_id": "683b15c0-4e41-4ad1-b3ad-274b2a3e11eb",
+      "result_id": "20e23fa2-5659-4e23-a697-97c3a70d98de"
+    },
+    {
+      "claim_id": "7521153f-b1dc-4d91-a010-54dab2c7cbb2",
+      "result_id": "20e23fa2-5659-4e23-a697-97c3a70d98de"
+    },
+    {
+      "claim_id": "55c3dbe4-379a-4252-b613-a3021a737ac9",
+      "result_id": "20e23fa2-5659-4e23-a697-97c3a70d98de"
+    },
+    {
+      "claim_id": "f852a846-62e2-488b-a85a-238d242e116d",
+      "result_id": "fd0c92db-0f4f-4bb9-b568-3c4bb5bff7cb"
+    },
+    {
+      "claim_id": "c18760df-e93b-4990-af18-f1b2bee7cc76",
+      "result_id": "fd0c92db-0f4f-4bb9-b568-3c4bb5bff7cb"
+    },
+    {
+      "claim_id": "e3548a19-3ce0-4543-9dad-c34c4665af22",
+      "result_id": "fd0c92db-0f4f-4bb9-b568-3c4bb5bff7cb"
+    },
+    {
+      "claim_id": "45377221-0886-4025-bbdb-9969e6124c4a",
+      "result_id": "fd0c92db-0f4f-4bb9-b568-3c4bb5bff7cb"
+    },
+    {
+      "claim_id": "9c480a79-18b5-4627-aec5-72681c7ace9e",
+      "result_id": "fd0c92db-0f4f-4bb9-b568-3c4bb5bff7cb"
+    },
+    {
+      "claim_id": "bc2abe88-fe2a-46a6-b761-cd05962e50d9",
+      "result_id": "8fd86ad2-83a9-4457-a2e7-fdc1ea76512c"
+    },
+    {
+      "claim_id": "5da2f6c9-3fee-4eb9-a0e3-403b1da2891c",
+      "result_id": "8fd86ad2-83a9-4457-a2e7-fdc1ea76512c"
+    },
+    {
+      "claim_id": "9626467d-59c3-421d-a234-884c394ac39b",
+      "result_id": "8fd86ad2-83a9-4457-a2e7-fdc1ea76512c"
+    },
+    {
+      "claim_id": "35fbb9d8-3969-48e9-bc99-d010d566d5bd",
+      "result_id": "8fd86ad2-83a9-4457-a2e7-fdc1ea76512c"
+    },
+    {
+      "claim_id": "9fdbbb51-a483-45f9-9099-d0da950368ca",
+      "result_id": "8fd86ad2-83a9-4457-a2e7-fdc1ea76512c"
+    },
+    {
+      "claim_id": "3ac2d68a-4ff8-4b20-acef-f72fc3352ebf",
+      "result_id": "8fd86ad2-83a9-4457-a2e7-fdc1ea76512c"
+    },
+    {
+      "claim_id": "4be96362-366b-4f15-ac8c-ea7beadc41b0",
+      "result_id": "8fd86ad2-83a9-4457-a2e7-fdc1ea76512c"
+    },
+    {
+      "claim_id": "17a2635a-9ee7-46c1-a6cf-bde3e0c9e594",
+      "result_id": "8fd86ad2-83a9-4457-a2e7-fdc1ea76512c"
+    },
+    {
+      "claim_id": "163c692a-49a7-4951-a11f-b8fa22cafb64",
+      "result_id": "8fd86ad2-83a9-4457-a2e7-fdc1ea76512c"
+    },
+    {
+      "claim_id": "b142a57d-8ad1-4e5c-8460-189f3bd37bdc",
+      "result_id": "8fd86ad2-83a9-4457-a2e7-fdc1ea76512c"
+    },
+    {
+      "claim_id": "a962e1ce-7bf6-48ba-a297-ec6853c85d21",
+      "result_id": "371c233e-99fa-4aa2-bff7-4a6e0e289608"
+    },
+    {
+      "claim_id": "2518c60e-b7e5-4421-bd4f-5b7f056dcc4b",
+      "result_id": "371c233e-99fa-4aa2-bff7-4a6e0e289608"
+    },
+    {
+      "claim_id": "3756705a-04d9-4170-bab3-744986b18e8a",
+      "result_id": "371c233e-99fa-4aa2-bff7-4a6e0e289608"
+    },
+    {
+      "claim_id": "7c8d6c7d-13f5-47b6-8d5c-f2f08b0707c6",
+      "result_id": "371c233e-99fa-4aa2-bff7-4a6e0e289608"
+    },
+    {
+      "claim_id": "f375b730-5a0e-4580-8d74-21a6232de624",
+      "result_id": "371c233e-99fa-4aa2-bff7-4a6e0e289608"
+    },
+    {
+      "claim_id": "d197b068-48e5-4847-b217-237e5ec7a80e",
+      "result_id": "371c233e-99fa-4aa2-bff7-4a6e0e289608"
+    },
+    {
+      "claim_id": "2cf31422-d4e8-47ca-80df-a45d60b9deb0",
+      "result_id": "371c233e-99fa-4aa2-bff7-4a6e0e289608"
+    },
+    {
+      "claim_id": "c98d1ebd-e273-4f5d-b6e5-65affb36ab04",
+      "result_id": "371c233e-99fa-4aa2-bff7-4a6e0e289608"
+    },
+    {
+      "claim_id": "8c430311-9493-4397-a539-19c333c6f034",
+      "result_id": "371c233e-99fa-4aa2-bff7-4a6e0e289608"
+    },
+    {
+      "claim_id": "f8c246e1-d986-42e2-9778-a9638d628da2",
+      "result_id": "371c233e-99fa-4aa2-bff7-4a6e0e289608"
+    },
+    {
+      "claim_id": "6654eaff-3540-49bd-a54e-48b3af799056",
+      "result_id": "4c27fe61-fe2c-4774-aa92-c30573ac8d2b"
+    },
+    {
+      "claim_id": "8606892b-5584-4e8b-9614-1c5ff22e315f",
+      "result_id": "4c27fe61-fe2c-4774-aa92-c30573ac8d2b"
+    },
+    {
+      "claim_id": "d2dcc002-4664-40c1-bbdf-64d106b0f153",
+      "result_id": "4c27fe61-fe2c-4774-aa92-c30573ac8d2b"
+    },
+    {
+      "claim_id": "709f3436-b8d7-4575-8185-83155c752c69",
+      "result_id": "4c27fe61-fe2c-4774-aa92-c30573ac8d2b"
+    },
+    {
+      "claim_id": "f8246fd3-b387-468e-bab0-c87bba9675cf",
+      "result_id": "4c27fe61-fe2c-4774-aa92-c30573ac8d2b"
+    },
+    {
+      "claim_id": "0e862076-dc92-497e-9162-af74701c6cbc",
+      "result_id": "4c27fe61-fe2c-4774-aa92-c30573ac8d2b"
+    },
+    {
+      "claim_id": "0e5245b5-24ef-43b9-8dae-e18adc2dfef7",
+      "result_id": "ea55b825-3027-442f-af24-68d48797839b"
+    },
+    {
+      "claim_id": "efa4be90-35c8-4ba0-b96a-f618dfa95bd6",
+      "result_id": "ea55b825-3027-442f-af24-68d48797839b"
+    },
+    {
+      "claim_id": "65b43fee-41a2-448b-940b-fae80fd3c32b",
+      "result_id": "ea55b825-3027-442f-af24-68d48797839b"
+    },
+    {
+      "claim_id": "586de5c2-24cc-456e-a179-60007fe97f0f",
+      "result_id": "ea55b825-3027-442f-af24-68d48797839b"
+    },
+    {
+      "claim_id": "321f837e-2028-4fd6-918a-aef887d473fc",
+      "result_id": "ea55b825-3027-442f-af24-68d48797839b"
+    },
+    {
+      "claim_id": "800e1c2c-8280-42e0-b956-f7438de8aa0c",
+      "result_id": "ea55b825-3027-442f-af24-68d48797839b"
+    },
+    {
+      "claim_id": "da770acc-574b-474d-9b6c-8c7fcc5911e8",
+      "result_id": "ea55b825-3027-442f-af24-68d48797839b"
+    },
+    {
+      "claim_id": "3703a6ea-89c8-41a7-a67c-5c8983cfa45f",
+      "result_id": "ea55b825-3027-442f-af24-68d48797839b"
+    },
+    {
+      "claim_id": "37ab95ae-7fb5-4bca-9efd-1f0602415b74",
+      "result_id": "ea55b825-3027-442f-af24-68d48797839b"
+    },
+    {
+      "claim_id": "b7712d71-ceb7-4c2c-a6c4-db105af00416",
+      "result_id": "ea55b825-3027-442f-af24-68d48797839b"
+    },
+    {
+      "claim_id": "e929ef34-ae6f-4f72-80b9-1861b3ae7bdc",
+      "result_id": "ea55b825-3027-442f-af24-68d48797839b"
+    },
+    {
+      "claim_id": "508db8dc-9494-42a0-ac24-fd27501523ba",
+      "result_id": "ea55b825-3027-442f-af24-68d48797839b"
+    },
+    {
+      "claim_id": "8e9d8499-94f4-4e9d-9110-b1963a10f17e",
+      "result_id": "21118c0d-765b-4a62-8faf-4191a04e3039"
+    },
+    {
+      "claim_id": "cf2ce04e-dce0-4e5f-a036-b1cd1b951a8f",
+      "result_id": "21118c0d-765b-4a62-8faf-4191a04e3039"
+    },
+    {
+      "claim_id": "2c522b3b-2dba-4d4e-b3d3-0550209052bf",
+      "result_id": "21118c0d-765b-4a62-8faf-4191a04e3039"
+    },
+    {
+      "claim_id": "571d6ec9-65e7-444d-8d20-25282441cad6",
+      "result_id": "21118c0d-765b-4a62-8faf-4191a04e3039"
+    },
+    {
+      "claim_id": "7c934686-47fa-4682-b1f2-3c232d519ace",
+      "result_id": "21118c0d-765b-4a62-8faf-4191a04e3039"
+    },
+    {
+      "claim_id": "acf78f19-1d19-4f9a-9e63-72e0a081e665",
+      "result_id": "21118c0d-765b-4a62-8faf-4191a04e3039"
+    },
+    {
+      "claim_id": "69de7112-0135-4a87-9c89-375a4512c899",
+      "result_id": "91f481a9-f271-480b-b4b7-67b18c9f4627"
+    },
+    {
+      "claim_id": "a31cfda0-93df-4cf8-986e-a5c0072f9eb0",
+      "result_id": "91f481a9-f271-480b-b4b7-67b18c9f4627"
+    },
+    {
+      "claim_id": "c77221bb-9fc7-4989-8a7e-b902f90756d9",
+      "result_id": "91f481a9-f271-480b-b4b7-67b18c9f4627"
+    },
+    {
+      "claim_id": "571d6ec9-65e7-444d-8d20-25282441cad6",
+      "result_id": "91f481a9-f271-480b-b4b7-67b18c9f4627"
+    },
+    {
+      "claim_id": "667f73fc-b6eb-4a75-a149-bb3d247728d5",
+      "result_id": "91f481a9-f271-480b-b4b7-67b18c9f4627"
+    },
+    {
+      "claim_id": "472cfdaa-b164-419c-95c8-5e564010c972",
+      "result_id": "184bcfe8-51fe-4593-b2aa-f837034df02d"
+    },
+    {
+      "claim_id": "0d2d9332-9538-4156-9133-ea314adb92db",
+      "result_id": "184bcfe8-51fe-4593-b2aa-f837034df02d"
+    },
+    {
+      "claim_id": "e8d4c4e6-a8c9-4a83-bd07-7061ae666b1e",
+      "result_id": "184bcfe8-51fe-4593-b2aa-f837034df02d"
+    },
+    {
+      "claim_id": "0ffae69e-d2ff-471a-bc52-64146b636b0a",
+      "result_id": "184bcfe8-51fe-4593-b2aa-f837034df02d"
+    },
+    {
+      "claim_id": "27399ec7-18aa-42e7-a012-87c2cd55dd19",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "9c7334f3-b671-4593-bd9c-73aff478893b",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "22b535b4-4875-4536-ac29-82995056acd5",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "ab207fc9-49f3-4e8c-8ab2-cbba0ee97cd1",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "a31f0b8a-5310-4f32-9665-7f0690260141",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "c91c2703-3479-48fa-bf3f-5e2b6899cbba",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "7b20e9fe-d289-4655-a4da-d305f151ac62",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "82d88dda-7cab-4b2f-be83-a7e3dd024be4",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "6611bfeb-5316-4770-829c-de74684b73d2",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "77049de8-9c1c-4e37-9195-63deb5094d92",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "168648f4-598e-45a9-971d-b61aebe7b0c8",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "954eacfb-903d-4349-9011-bb9dec0ec554",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "e97a83cd-3c20-47bd-975e-07e6614cb63c",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "413c5c43-451c-42b8-abd1-b6791f12e5e8",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "0efd6cbf-b093-4463-9d2d-fa25c480e203",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "94153fb5-8579-4c8f-8572-810d3b7a2ec6",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "d787dce5-0f3d-46c8-a6c1-0045187a493e",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "7e73cba1-654d-4d04-af6a-fc3ca335a4b9",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "96d4a523-90f5-496b-9e37-615d68ba3c92",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "29715d98-ac82-4adc-a2ff-637f417cfcc7",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "53674d29-7a33-4d4b-8e1a-cc9170f0fc0e",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "20662ee2-4f1d-47df-9d23-79d9f8a70795",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "3fd88f83-f977-4a1b-aa60-b73904626795",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "0036d3e4-8149-46cc-8341-2ddd4a81b79e",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "92b37eb5-30c6-43d2-a4ef-927a147aadf6",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "46a18110-bcc1-4e4b-a969-4c43ef81eae2",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "a47aec1c-7558-483f-8b18-6f38481d5ce8",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "441128c8-f890-4a80-a921-d317ee8e058a",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "ed82529a-4079-4789-9ae5-a3afde9acf5a",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "05301e28-8358-4815-b4fa-433f1b474779",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "02de6894-7f65-4391-bd72-73d0308cbc2a",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "10193353-730b-4102-a988-d561e8f0bfdd",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "7bbb0297-2e80-4e25-afb4-5f814665cc3c",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "1cee4ab7-67d6-4adf-a091-4e9278ef85e1",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "960d1fb9-d995-48eb-905e-21d8e3e8ccca",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "fd96a643-f927-4377-9467-5d7da7e0ff97",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "693ef02d-6efa-4003-aaf0-07c85b55a1ab",
+      "result_id": "a9d5a879-afc1-4f2d-826f-a8c543cffbf1"
+    },
+    {
+      "claim_id": "b8f88171-86f0-4f4c-bce3-bed277a60413",
+      "result_id": "59e024d0-9c23-4629-a5a5-ee5e23a740e0"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1857 @@
+{
+  "submission": {
+    "id": "94360174-70aa-4589-9af5-5698bad0e1c6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:27:16.970026Z",
+    "updated_at": "2025-12-02T00:27:16.970026Z"
+  },
+  "content": [
+    {
+      "id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "submission_id": "94360174-70aa-4589-9af5-5698bad0e1c6",
+      "content_type": "manuscript",
+      "content_text": "# Distinct chromatin functional states correlate with HIV latency reactivation in infected primary CD4+ T cells\n\n## Authors\n\n- Emilie Battivelli<sup>1</sup> ([ORCID: 0000-0003-3297-0231](https://orcid.org/0000-0003-3297-0231))\n- Matthew S Dahabieh<sup>1</sup>\n- Mohamed Abdel-Mohsen<sup>4</sup>\n- J Peter Svensson<sup>7</sup> ([ORCID: 0000-0002-5863-6250](https://orcid.org/0000-0002-5863-6250))\n- Israel Tojal Da Silva<sup>8</sup>\n- Lillian B Cohn<sup>8</sup> ([ORCID: 0000-0002-3485-8692](https://orcid.org/0000-0002-3485-8692))\n- Andrea Gramatica<sup>1</sup>\n- Steven Deeks<sup>2</sup> ([ORCID: 0000-0001-6371-747X](https://orcid.org/0000-0001-6371-747X))\n- Warner C Greene<sup>1</sup>\n- Satish K Pillai<sup>4</sup>\n- Eric Verdin<sup>1</sup> ([ORCID: 0000-0003-3703-3183](https://orcid.org/0000-0003-3703-3183)) \u2020\n\n### Affiliations\n\n1. Gladstone Institute of Virology and Immunology Gladstone Institutes San Francisco United States\n2. Department of Medicine University of California San Francisco San Francisco United States\n3. Buck Institute for Research on Aging Novato United States\n4. University of California San Francisco San Francisco United States\n5. Blood Systems Research Institute San Francisco United States\n6. The Wistar Institute Philadelphia United States\n7. Department of Biosciences and Nutrition Karolinska Institutet Solna Sweden\n8. Laboratory of Molecular Immunology The Rockefeller University New York United States\n9. Laboratory of Computational Biology and Bioinformatics International Research Center Sao Paulo Brazil\n10. Department of Cellular and Molecular Pharmacology University of California San Francisco San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHuman immunodeficiency virus (HIV) infection is currently incurable, due to the persistence of latently infected cells. The \u2018shock and kill\u2019 approach to a cure proposes to eliminate this reservoir via transcriptional activation of latent proviruses, enabling direct or indirect killing of infected cells. Currently available latency-reversing agents (LRAs) have however proven ineffective. To understand why, we used a novel HIV reporter strain in primary CD4+ T cells and determined which latently infected cells are reactivatable by current candidate LRAs. Remarkably, none of these agents reactivated more than 5% of cells carrying a latent provirus. Sequencing analysis of reactivatable vs. non-reactivatable populations revealed that the integration sites were distinguishable in terms of chromatin functional states. Our findings challenge the feasibility of \u2018shock and kill\u2019, and suggest the need to explore other strategies to control the latent HIV reservoir.\n\n## Introduction\n\nAntiretroviral therapy (ART) has transformed HIV infection from a uniformly deadly disease into a chronic lifelong condition, saving millions of lives. However, ART interruption leads to rapid viral rebound within weeks due to the persistence of proviral latency in rare, long-lived resting CD4+ T cells and possibly in tissue macrophages (Honeycutt et al., 2017). HIV latency is defined as the presence of a transcriptionally silent but replication-competent proviral genome. Latency allows infected cells to evade both immune clearance mechanisms and currently available ART, which is based solely on the elimination of actively replicating virus.\n\nAn extensively investigated approach to purging latent HIV is the \u2018shock and kill\u2019 strategy, which consists of forcing the reactivation of latent proviruses (\u2018shock\u2019 phase) with the use of latency reversing agents (LRAs), while maintaining ART to prevent de novo infections. Subsequently, reactivation of HIV expression would expose such cells (shocked cells) to killing by viral cytopathic effects and immune clearance (\u2018kill\u2019 phase). A variety of LRAs have been explored in vitro and ex vivo, with only a few candidates being advanced to testing in pilot human clinical trials. Use of histone deacetylase inhibitors (HDACi: vorinostat, panobinostat, romidepsin, and disulfiram) in clinical studies has shown increases in cell-associated HIV RNA production and/or plasma viremia after in vivo administration (Archin et al., 2012a; Elliott et al., 2015; Elliott et al., 2014; Rasmussen et al., 2014; S\u00f8gaard et al., 2015). However, none of these interventions alone has succeeded in significantly reducing the size of the latent HIV reservoir (Rasmussen and Lewin, 2016).\n\nSeveral obstacles can explain the failure of LRAs, as reviewed in (Margolis et al., 2016; Rasmussen et al., 2016). However, the biggest challenge to date is our inability to accurately quantify the size of the reservoir. The absolute quantification (number of cells) of the latent reservoir in vivo (and ex vivo) has thus far been technically impossible. The most sensitive, quickest, and easiest assays to measure the prevalence of HIV-infected cells are PCR-based, quantifying total or integrated HIV DNA or RNA transcripts. However these assays substantially overestimate the number of latently infected cells, due to the predominance of defective HIV DNA genomes in vivo (Bruner et al., 2016; Ho et al., 2013). The best currently available assay to measure the latent reservoir is the relatively cumbersome viral outgrowth assay (VOA), which is based on quantification of the number of resting CD4+ T cells that produce infectious virus after a single round of maximum in vitro T-cell activation. After several weeks of culture, viral outgrowth is assessed by an ELISA assay for HIV-1 p24 antigen or a PCR assay for HIV-1 RNA in the culture supernatant. Importantly, the number of latently infected cells detected in the VOA is 300-fold lower than the number of resting CD4+ T cells that harbor proviruses detectable by PCR.\n\nThis reliance on a single round of T-cell activation likely incorrectly estimates the viral reservoir for two reasons. First, the discovery of intact non-induced proviruses indicates that the size of the latent reservoir may be much greater than previously thought: the authors estimate that the number may be at least 60 fold higher than estimates based on VOA (Ho et al., 2013; Sanyal et al., 2017). This work and that of others (Chen et al., 2017) highlight the heterogeneous nature of HIV latency and suggest that HIV reactivation is a stochastic process that only reactivates a small fraction of latent viruses at any given time (Dar et al., 2012; Ho et al., 2013; Singh et al., 2010; Weinberger et al., 2005). Second, the ability of defective proviruses to be transcribed and translated in vivo (Pollack et al., 2017): this study shows that, although defective proviruses cannot produce infectious particles, they express viral RNA and proteins, which can be detectable by any p24 antigen or PCR assays used for the reservoir-size quantification.\n\nThus, current assays underestimate the actual number of latently infected cells, both in vivo and ex vivo, and the real size of HIV reservoir is still to be determined. Therefore, it has been difficult to judge the potential of LRAs in in\u00a0vitro (latency primary models), ex-vivo (patients\u2019 samples) and in vivo (clinical trial) experiments.\n\nHIV latency is a complex, multi-factorial process (reviewed in [Dahabieh et al., 2015]). Its establishment and maintenance depend on: (a) viral factors, such as integrase that specifically interacts with cellular proteins, including LEDGF, (b) trans-acting factors (e.g., transcription factors) and their regulation by the activation state of T cells and the environmental cues that these cells receive, and (c) cis-acting mechanisms, such as the local chromatin environment at the site of integration of the virus into the genome. Recent evidence has also highlighted the association of specific HIV-1 integration sites with clonal expansion of latently infected cells (reviewed in [Maldarelli, 2016]).\n\nThe role of the site of HIV integration into the cellular genome in the establishment and maintenance of HIV latency has remained controversial. While early studies found that the HIV integration site does affect both the entry into latency (Chen et al., 2017; Jordan et al., 2003; Jordan et al., 2001), and the viral response to LRAs (Chen et al., 2017), other studies have failed to find a significant role of integration sites in regulating the fate of HIV infection (Dahabieh et al., 2014; Sherrill-Mix et al., 2013).\n\nIn this study, we have used a new dual color reporter virus, HIVGKO, to investigate the reactivation potential of various LRAs in pure latent population. We find that latency is heterogeneous and that only a small fraction (<5%) of the latently infected cells is reactivated by LRAs. We also show that both\u00a0genomic localization and chromatin context of the integration site affect the fate of HIV infection and the reversal of viral latency.\n\n## Results\n\n### A second-generation dual-fluorescence HIV-1 reporter (HIVGKO) to study latency\n\nOur laboratory reported the development of a dual-labeled virus (DuoFluoI) in which eGFP is under the control of the HIV-1 promoter in the 5\u2032 LTR and mCherry is under the control of the cellular elongation factor one alpha promoter (EF1\u03b1) (Calvanese et al., 2013). However, we noted that the model was limited by a modest number of latently infected cells (<1%) generated regardless of viral input (Figure 1\u2014figure supplement 1A\u20131C), as well as a high proportion of productively infected cells in which the constitutive promoter EF1\u03b1 was not active (GFP+, mCherry-).\n\nTo address these issues, which we suspected were due to recombination between the 20\u201330 bp regions of homology at the N- and C-termini of the adjacent fluorescent proteins (eGFP and mCherry) (Salamango et al., 2013), we generated a new version of dual-labeled virus (HIVGKO), containing a codon-switched eGFP (csGFP) and a distinct, unrelated fluorescent protein mKO2 under the control of EF1\u03b1 (Figure 1A). First, titration of HIVGKO input revealed that productively and latently infected cells increased proportionately as the input virus increased (Figure 1B and Figure 1\u2014figure supplement 1), unlike the original DuoFluoI (Figure 1\u2014figure supplement 1). Second, comparison of primary CD4+ T cells infected with HIVGKO or the original DuoFluoI revealed an increase in double-positive (csGFP+ mKO2+) infected cells in HIVGKO infected cells (Figure 1C). A small proportion of csGFP+ mKO2- cells were still visible in HIVGKO infected cells. We generated a HIVGKO virus lacking the U3 promoter region of the 3\u2032LTR (\u0394U3-GKO), resulting in an integrated virus devoid of the 5\u2019 HIV U3 region. This was associated with a suppression of HIV transcription and an inversion of the latency ratio (ratios latent/productive = 0.34 for HIVGKO-WT-LTR and 8.8 for HIVGKO-\u0394U3-3\u2019LTR - Figure 1D). Finally, to further characterize the constituent populations of infected cells, double-negative cells, latently and productively infected cells were sorted using FACS and analyzed for viral mRNA and protein content. (Figures 1E and F, Figure 1\u2014source data 1). As expected, productively infected cells (csGFP+) expressed higher amounts of viral mRNA and viral proteins, but latently infected cells (csGFP- mKO2+) had very small amounts of viral mRNA and no detectable viral proteins.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34655/elife-34655-fig1-v3.jpg)\n\n**Figure 1.:** (A) Schematic representation of first (top: HIVDuoFluoI) and second generation (bottom: HIVGKO) of dual-labeled HIV-1 reporters. (B) Representative experiment of HIVGKO virus titration in activated primary CD4+ T cells (4 days post-infection). Primary CD4+ T cells were activated with \u03b1CD3/CD28 beads\u00a0+\u00a020 U/mL IL-2 for 3 days before infection with different amounts of HIVGKO (input, ng/p24) and analyzed by flow cytometry 4 days post-infection. (C) Comparison of HIVDuoFluoI and HIVGKO infection profiles by flow cytometry in activated primary CD4+ T-cells (4 days post-infection). Cells were treated as in (B). (D) Comparison of GKO-WT-LTR and GKO-\u0394U3 3'LTR infection profiles by flow cytometry in cells treated as in (B). (E, F) Primary CD4+ T cells were treated as in (B). At 4 days post-infection, double-negative, productively infected, and latently infected cells were sorted out, and (E) the total RNA isolated from each population was subjected to Taqman RT-qPCR analysis (Source Data - Figure 1). Unspliced (US), singly spliced (SS), and multiply spliced (MS) HIV-1 mRNAs were quantified relative to cellular GAPDH. (F) Western blot analysis of each population.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34655/elife-34655-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Titration of HIVGKO input revealed that latently and productively infected cells increased proportionately as viral input increased (Figure 1\u2014figure supplement 1A and B), as reflected by steady ratios of latent/productive (Figure 1\u2014figure supplement 1C). On the contrary, increasing HIVDuoFluoI input does not lead to a proportional increase of latent and productive populations (Figure 1\u2014figure supplement 1A and B), as reflected on the ratios latent/productive (Figure 1\u2014figure supplement 1C). Briefly, CD4+ T-cells were purified from blood of one representative healthy donor and activated for 72 hr with \u03b1CD3/CD28 beads and 100 U/ml IL-2 before infection with serial dilutions of either HIVGKO or HIVDuoFluoI. Four days post-infection, the percentage of latent cells (csGFP- mKO2+, Figure 1\u2014figure supplement 1A) and productive cells (csGFP+, Figure 1\u2014figure supplement 1AB) were quantified by FACS for both dual-fluorescence viruses, and ratios of latent versus productive populations were calculated (Figure 1\u2014figure supplement 1C).\n\nBased on all these findings, the second-generation of dual-fluorescence reporter, HIVGKO, is able to more accurately quantify latent infections in primary CD4+ T cells than HIVDuoFluoI, and thus allows for the identification and purification of a larger number of latently infected cells. Using flow cytometry, we can determine infection and HIV productivity of individual cells and simultaneously control for cell viability.\n\n### Correlation between LRA efficacy in HIV-infected patient samples and activity in HIVGKO latently infected cells\n\nNext, we evaluated the reactivation of latent HIVGKO in primary CD4+ T cells by LRAs, and compared it with the ability of the same LRAs to reverse latency in CD4+ T cells isolated from HIV-infected individuals. We tested the following LRAs: (a) the histone deacetylase inhibitor (HDACi) panobinostat (Rasmussen et al., 2013), (b) the bromodomain-containing protein 4 (BRD4) inhibitor JQ1, which acts through positive transcription elongation factor (P-TEFb) (Banerjee et al., 2012; Boehm et al., 2013; Filippakopoulos et al., 2010; Li et al., 2013; Zhu et al., 2012), and (c) the PKC activator, bryostatin-1 (del Real et al., 2004; Mehla et al., 2010). Viral reactivation mediated by these LRAs was compared to treatment of CD4+ T cells with \u03b1CD3/CD28 (Spina et al., 2013). Several studies have shown synergetic effects when combining different LRAs (Darcis et al., 2015; Jiang et al., 2015; Laird et al., 2015; Mart\u00ednez-Bonet et al., 2015), therefore we also tested bryostatin-1 in combination with either panobinostat or JQ1. Drugs were used at concentrations previously shown to be effective at reversing latency in other model systems (Archin et al., 2012a; Bullen et al., 2014; Laird et al., 2015; Spina et al., 2013).\n\nTo measure reactivation by LRAs in patient samples, we treated 5 million purified resting CD4+ T cells from four HIV infected individuals on suppressive ART (participant characteristics in Table 1) with single LRAs, combinations thereof, or vehicle alone for 24 hr. LRAs efficacy was assessed using a\u00a0PCR-based assay, by measuring levels of intracellular HIV-1 RNA using primers and a probe that detect the 3\u2032 sequence common to all correctly terminated HIV-1 mRNAs (Bullen et al., 2014). Of the LRAs tested individually, none exhibited a statistically significant effect (n=4 - Figure 2A, Figure 2\u2014source data 1). Importantly, T-cell activation positive control, \u03b1CD3/CD28 (24.4-fold, Figure 2A), showed expected fold induction value (10 to 100-fold increases of HIV RNA in PBMCs [Bullen et al., 2014; Darcis et al., 2015; Laird et al., 2015]). Combinations of the PKC agonist bryostatin-1 with JQ1 or with panobinostat (fold-increases of 126.2- and 320.8-fold, respectively, Figure 2A), were highly more effective than bryostatin-1, JQ1 or panobinostat alone (fold-increases of 6.8, 1.7- and 2.9-fold, respectively, Figure 3A), and even greater than T-cell activation with \u03b1CD3/CD28. This observation is consistent with previous reports (Darcis et al., 2015; Jiang et al., 2015; Laird et al., 2015; Mart\u00ednez-Bonet et al., 2015).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34655/elife-34655-fig2-v3.jpg)\n\n**Figure 2.:** (A) Intracellular HIV-1 mRNA levels in rCD4s, obtained from infected individuals and treated ex vivo with a single LRA or a combination of two LRAs for 24 hr in presence of raltegravir, presented as fold induction relative to DMSO control. (n\u00a0=\u00a04, mean\u00a0+SEM) (Figure 2\u2014source data 1). (B) Intracellular HIV-1 mRNA levels in HIVGKO latently infected CD4+ T-cells, and treated with a single LRA or a combination of two LRAs for 6 hr in presence of raltegravir, presented as fold induction relative to DMSO control. (n\u00a0=\u00a03 (different donors), mean\u00a0+SEM, paired t-test) (Figure 2\u2014source data 1). (C) Correlation between intracellular HIV-1 mRNA levels quantified in either 6 hr stimulated HIVGKO latently infected CD4+ T-cells from different donors, or 24 hr stimulated rCD4s from HIV infected patients, with a single LRA or a combination of two LRAs in presence of raltegravir.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34655/elife-34655-fig3-v3.jpg)\n\n**Figure 3.:** (A) Schematic of experimental procedure with primary CD4+ T cells. Briefly, CD4+ T cells were purified from blood of healthy donors and activated for 72 hr with \u03b1CD3/CD28 beads and 100 U/ml IL-2 before infection with HIVGKO. Five days post-infection, latently infected cells (csGFP- mKO2+) cells were sorted, put back in culture overnight and stimulated with different LRAs in presence of raltegravir for 24 hr before performing FACS analysis. (B) Percentage of GFP+\u00a0cells is shown after stimulation of latently infected CD4+ T-cells with LRAs (n\u00a0=\u00a04 (different donors), mean\u00a0+SEM, paired t-test) (Figure 3\u2014source data 1). (C) Histogram plot of percent live cells for each drug treatment (n\u00a0=\u00a03 (different donors), mean\u00a0+\u00a0SEM, paired t-test) (Figure 3\u2014source data 1). p-value: *p<0.05, **p<0.01 relative to DMSO.\n\n**Table 1.**\n Characteristics of HIV-1-infected study participantsABC, abacavir; DRV, darunavir; FTC, emtricitabine; RPV, rilpivirine; RTV, ritonavir; TCV, tivicay; TDF, tenofovir; 3TC, lamivudine; VL, viral load.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Scope ID</th>\n      <th>Age</th>\n      <th>Sex</th>\n      <th>Ethnicity</th>\n      <th>CD4 Count</th>\n      <th>Duration of infection (years)</th>\n      <th>ART regimen</th>\n      <th>Duration of ART (years)</th>\n      <th>Peak reporter VL (copies/ml\u22121)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1597</td>\n      <td>56</td>\n      <td>M</td>\n      <td>Mixed</td>\n      <td>469</td>\n      <td>19</td>\n      <td>RPV/TDF/FTC</td>\n      <td>5</td>\n      <td>45734</td>\n    </tr>\n    <tr>\n      <td>2147</td>\n      <td>59</td>\n      <td>M</td>\n      <td>Asian</td>\n      <td>597</td>\n      <td>28</td>\n      <td>RPV/TDF/FTC</td>\n      <td>23</td>\n      <td>374000</td>\n    </tr>\n    <tr>\n      <td>2461</td>\n      <td>62</td>\n      <td>M</td>\n      <td>White</td>\n      <td>664</td>\n      <td>32</td>\n      <td>RPV/TCV</td>\n      <td>19</td>\n      <td>20000</td>\n    </tr>\n    <tr>\n      <td>3162</td>\n      <td>54</td>\n      <td>M</td>\n      <td>White</td>\n      <td>734</td>\n      <td>29</td>\n      <td>RTV, DRV, ABC/TCV/3TC</td>\n      <td>20</td>\n      <td>171000</td>\n    </tr>\n  </tbody>\n</table>\n\nThe same LRAs and combinations were next tested after infection of human CD4+T cells in vitro with HIVGKO. Measurement of intracellular HIV-1 mRNA in HIVGKO latently infected cells showed an expected fold induction of latency in response to \u03b1CD3/CD28 (11.3-fold, Figure 2B, Figure 2\u2014source data 1). Second, JQ1, panobinostat, and bryostatin-1 alone all caused limited reactivation of latent HIV (fold-increases of 1.1-, 5.6- and 6.2-fold, respectively, Figure 2B), as observed in patients\u2019 samples. Finally, we observed low synergy when combining bryostatin and JQ1 (8-fold increase), but high synergy between bryostatin and panobinostat (67.3-fold increase). These data together demonstrate that HIVGKO closely mimics in vitro what is observed in ex vivo patients\u2019 samples (correlation rate r2\u00a0=\u00a00.88, p=0.0056 - Figure 2C), and validate the robustness and reliability of the dual-florescence HIV reporter as a model to study HIV-1 latency.\n\n### HIV-1 LRAs target a minority of latently infected primary CD4+ T cells\n\nCurrent assays have relied on PCR-based assays to measure HIV RNA, and to evaluate the efficacy of different LRAs (Figure 2A). The use of dual-fluorescent HIV reporters, however, provides a tool to quantify directly the fraction of cells that become reactivated.\n\nTo quantify the absolute number of latently infected cells reactivated following LRA treatment, primary CD4+ T cells were infected with HIVGKO, and cultured for 5 days (in the presence of IL-2) before sorting the pure latent population (GFP-, mKO2+). Cells were allowed to rest overnight and were treated for 24 hr with the various LRAs (same drug concentrations as in Figure 2) (Figure 3A, Figure 3\u2014source data 1). Culture of DMSO-treated latently infected primary CD4+ T cells produced little spontaneous reactivation (average of four experiments: 1.4% of GFP+\u00a0cells). Unexpectedly, we found that none of the individual LRAs or their combinations reactivated more than 5.5% of the latently infected cells: JQ1 (1.7%) panobinostat (3.7%), bryostatin-1 (3%) \u03b1CD3/CD28 (4.5%), bryostatin-1 and JQ1 (3.3%.). bryostatin-1 and panobinostat (5.5%) (Figure 3B).\n\n### Small fractional rate of latency reactivation is not explained by low cellular response to activation signals\n\nThese data highlight two important facts: a) cell-associated HIV RNA quantification does not reflect the absolute number of cells undergoing viral reactivation, and b) induced cell-associated HIV RNA, in response to all reversing agents, comes from a small fraction of reactivated latent cells. This was particularly surprising with \u03b1CD3/CD28 stimulation, as a currently accepted model for HIV latency is that the state of T cell activation dictates the transcriptional state of the provirus. Treatment of latently infected primary CD4+ T cells with \u03b1CD3/CD28 stimulated HIV production in less than 5% of the cells, while the other 95% remained latent, even though after 24 hr of treatment nearly all of the cells had upregulated the early T cell activation marker CD69 (Figure 4\u2014figure supplement 1).\n\nTo further rule out the possibility that non-reactivated latently infected cells (NRLIC) simply represented a lack of efficient response to T-cell activation signals, we analyzed T-cell activation markers within the different populations (i.e., within uninfected, non reactivated (NRLIC) and reactivated latently infected cells (RLIC); Figure 4, Figure 4\u2014source data 1). Briefly, 72h-stimulated CD4+ T cells were infected with HIVGKO, and 4 days later, GFP- cells were sorted, and allowed to rest overnight before restimulation with \u03b1CD3/CD28. After another 24 hr, cells were stained for the early, intermediate, and late markers of T cell activation CD69, CD25 and HLA-DR respectively. The three different populations, double negative, RLIC and NRLIC, had similar profiles of activated T-cell subsets, as shown in Figure 4, and were mainly composed of strongly activated cells (CD69+/CD25+/HLA-DR+/-). We only observed a statistically significant increase of NRLIC compared with RLIC in the CD69+/CD25-/HLA-DR+\u00a0population, however this small increase in a relatively minor population is insufficient to explain the low reactivation rate of latently infected cells. Overall, comparison of both reactivated and non reactivated latent populations showed little difference in their activation state.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34655/elife-34655-fig4-v3.jpg)\n\n**Figure 4.:** T-cell activation patterns between double negative, reactivated (RLIC) and non-reactivated (NRLIC) latently infected cells. Briefly, CD4+ T-cells were purified from blood of four healthy donors and activated for 72 hr with \u03b1CD3/CD28 beads and 20 U/ml IL-2 before infection with HIVGKO. At 4 days post-infection, csGFP- were sorted, cultured overnight and stimulated with \u03b1CD3/CD28 in presence of raltegravir. At 24 hr post-treatment, cells were stained for CD25, CD69, and HLA-DR activation markers before performing FACS analysis. (n\u00a0=\u00a04, mean\u00a0+SEM, paired t-test; *p<0.05; **p<0.01) (Figure 4\u2014source data 1).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34655/elife-34655-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Quantification of T-cell activation-associated surface markers after 24 hr stimulation. Briefly, CD4+ T-cells were purified from blood of two healthy donors and activated for 72 hr with \u03b1CD3/CD28 beads and 100 U/ml IL-2 before infection with HIVGKO. Five-days post-infection, latently infected cells (csGFP- mKO2+) were sorted, cultured overnight and stimulated with either \u03b1CD3/CD28 or bryostatin\u00a0+\u00a0panobinostat in presence of raltegravir. 24 hr post-treatment, cells were stained for CD25 and CD69 activation markers before performing FACS analysis.\n\n### Integration sites, gene expression, transcription units and the fate of HIV infection\n\nThe role of the site of HIV integration into the genome in latency remains a subject of debate (Chen et al., 2017; Dahabieh et al., 2014; Jordan et al., 2003; Jordan et al., 2001; Sherrill-Mix et al., 2013). To identify possible differences in integration sites between reactivated and non-reactivated HIV genomes, primary CD4+ T-cells were infected with HIVGKO. At 5 days post-infection, productively infected cells (GFP+, PIC) were sorted and frozen. The GFP negative population (consisting of a mixture of latent and uninfected) was isolated and treated with \u03b1CD3/CD28. 48 hr post-induction, both non reactivated (NRLIC) and reactivated (RLIC) populations were isolated. Nine libraries (three donors, three samples/donor: PIC, RLIC, NRLIC) were constructed from genomic DNA as described (Cohn et al., 2015) and analyzed by high-throughput sequencing to locate HIV proviruses within the human genome. A total of 1803 virus integration sites were determined: 960 integrations in PIC, 681 in NRLIC, and 162 in RLIC (Integration Sites Source data).\n\nTo determine whether integration within genes differentially expressed during T-cell activation predicted infection reactivation fate, we compared our HIV integration dataset with a published dataset for gene expression in resting and activated (48 hr - \u03b1CD3/CD28) CD4+ T cells from healthy individuals (Ye et al., 2014). The analysis revealed that most of the \u03b1CD3/CD28-induced latent proviruses were not integrated in genes responsive to T-cell activation signals (Figure 5A and B, Figure 5\u2014source data 1). Interestingly, PIC and RLIC integration events were associated with genes whose basal expression was significantly higher than genes targeted in NRLIC, both in activated and resting T cells (Figure 5C, Figure 5\u2014source data 2).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/34655/elife-34655-fig5-v3.jpg)\n\n**Figure 5.:** (A) Scatter chart showing primary CD4+ T-cell gene expression changes after 48 hr of stimulation with \u03b1CD3/CD28 beads. Integration sites displayed outside of the two solid gray lines were targeted genes whose expression is at least\u00a0\u00b1\u00a0twofold differentially expressed after 48 hr stimulation. Plot points size can be different, the bigger the plot point is, the more integration events happened within the same gene. (B) Fraction of integration sites from the different populations PIC, RLIC or NRLIC, integrated within genes whose expression is at least\u00a0\u00b1\u00a0twofold differentially expressed after 48 hr of \u03b1CD3/CD28 stimulation (**p<0.01; ***p<0.001; two-proportion z test) (Figure 5\u2014source data 1). (C) Relative expression of genes targeted by HIV-1 integration in PIC, RLIC or NRLIC before TCR stimulation and after \u03b1CD3/CD28 stimulation (n\u00a0=\u00a03, mean\u00a0+SEM, paired t-test). ***p<0.001; ****p<0.0001. (Figure 5\u2014source data 2).\n\nNext, we investigated whether different genomic regions were associated with productive, inducible or non-inducible latent HIV-1 infections. In agreement with previous studies (Cohn et al., 2015; Dahabieh et al., 2014; Maldarelli et al., 2014; Wagner et al., 2014), the majority of integration sites were found within genes in each population (Figure 6A, Figure 6\u2014source data 1), although the proportion of genic integrations in NRLIC was significantly lower than in PIC and RLIC samples. Moreover, integration events in the PIC and RLIC populations were more frequent in transcribed regions (64% and 58%, respectively, [sum of low\u00a0+\u00a0medium\u00a0+ high transcribed regions] (Figure 6B), Figure 6\u2014source data 1), while these regions were significantly less represented in the NRLIC (31%) (Figure 6B). As expected since introns represent a much larger proportion of genes, genic integration events were more frequent in the introns for each population (>65%, Figure 6C, Figure 6\u2014source data 1). Finally, viral orientation of proviruses with respect to the transcriptional unit did not correlate with the fate of HIV infection (latent vs productive) or the reactivation or absence thereof of HIV latency (Figure 6D, Figure 6\u2014source data 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/34655/elife-34655-fig6-v3.jpg)\n\n**Figure 6.:** (A) Proportion of mapped insertions that are in genic or intergenic regions. (Figure 6\u2014source data 1). (B) Proportion of integration\u00a0sites in transcribed regions with high (top 1/8), medium (top 1/4\u20131/8), low expression (top 1/2\u20131/4), trace (bottom 1/2) or silent (0) expression. (Figure 6\u2014source data 1). (C) Proportion of unique genic integration\u00a0sites located in introns, exons, UTR or promoters. (Figure 6\u2014source data 1). (D) Transcriptional orientation of integrated HIV-1 relative to host gene. (Figure 6\u2014source data 1). p-value: *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001 using two-proportion z test.\n\n### Chromatin modifications at the site of HIV integration and latency\n\nChromatin marks, such as histone post-translational modifications (e.g., methylation and acetylation) and DNA methylation, are involved in establishing and maintaining HIV-1 latency (De Crignis and Mahmoudi, 2017). We examined 500 bp regions centered on all integration sites in each population for several chromatin marks by comparing our data with several histone modifications and DNaseI ENCODE datasets. We first looked at distinct and predictive chromatin signatures, such as H3K4me1 (active enhancers), H3K36m3 (active transcribed regions), H3K9m3 and H3K27m3 (repressive marks of transcription) (reviewed in [Kumar et al., 2015; Shlyueva et al., 2014]). All three populations exhibited distinct profiles, although productive and inducible latent infections profiles appeared most similar (Figure 7A, Figure 7\u2014source data 1). The analysis showed that PIC integration events were associated with active chromatin (i.e., transcribed genes - H3K36me3 or enhancers - H3K4me1), while NRLIC integration events appeared biased toward heterochromatin (H3K27me3 and H3K9me3) and non-accessible regions (DNase hyposensitivity).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/34655/elife-34655-fig7-v3.jpg)\n\n**Figure 7.:** (A) 500 bp centered on HIV-1 integration sites for each population were analyzed for the presence of H3K4me1 (active enhancers), H3K36m3 (active transcribed regions), H3K9m3 and H3K27m3 (repressive marks of transcription), and DNA accessibility (DNAseI). (Figure 7\u2014source data 1). (B) Nuclear localization of HIV-1 integration sites. Quantification was based on inside a LAD (=1) or outside (=0), which means the Y axis represents the fraction of integrations within a LAD. (Figure 7\u2014source data 1). (n\u00a0=\u00a03\u20134 ENCODE donors, mean\u00a0+SEM, paired t-test). *p<0.05; **p<0.01; ***p<0.001).\n\nMarini et al. recently reported that HIV-1 mainly integrates at the nuclear periphery (Marini et al., 2015). We therefore examined the topological distribution of integration sites from each population inside the nucleus by comparing our integration site data with a previously published dataset of lamin-associated domains (LADs) (Guelen et al., 2008). LADs consist of H3K9me2 heterochromatin and are present at the nuclear periphery. This analysis showed that latent integration sites from both RLIC and NRLIC were in LADs to a significantly higher degree (32% and 30.4%) than productive integrations (23.6%) (p<0.05, Figure 7B, Figure 7\u2014source data 1). Overall, these data show similar features between productively infected\u00a0cells and inducible latently infected cells, while non-reactivated latently infected cells appear distinct from the other populations. These findings support a prominent role for the site of integration and the chromatin context for the fate of the infection itself, as well as for latency reversal.\n\n## Discussion\n\nDual-color HIV-1 reporters are unique and powerful tools (Calvanese et al., 2013; Dahabieh et al., 2013), that allow for the identification and the isolation of latently infected cells from productively infected cells and uninfected cells. Latency is established very early in the course of HIV-1 infection (Archin et al., 2012b; Chun et al., 1998; Whitney et al., 2014) and, until the advent of dual-reporter constructs, no primary HIV-1 latency models have allowed the study of latency heterogeneity at this very early stage. Importantly, the comparison of data obtained from distinct primary HIV-1 latency models is complicated as some models are better suited to detect latency establishment (e.g., dual-reporters), while others are biased towards latency maintenance (e.g., Bcl2-transduced CD4+ T cells). The use of env-defective viruses limits HIV replication to a single-round and, thereby limits the appearance of defective viruses (Bruner et al., 2016).\n\nIn this study, we describe and validate an improved version of HIVDuoFluoI, previously developed in our laboratory (Calvanese et al., 2013), which accurately allows for: (a) the quantification of latently infected cells, (b) the purification of latently infected cells, and (c) the evaluation of the \u2018shock and kill\u2019 strategy. Our data highlight two important facts: (a) cell-associated HIV RNA quantification does not reflect the number of cells undergoing viral reactivation, and (b) a small portion of the cells carrying latent proviruses (<5%) is reactivated, although LRAs target the whole latent population. Hence, even if cells harboring reactivated virus die, this small reduction would likely remain undetectable when quantifying the latent reservoir in vivo. Our data are in agreement with previous reports, which show that levels of cellular HIV RNA and virion production are not correlated, and that the absolute number of cells being reactivated by \u03b1CD3/CD28 is indeed limited to a small fraction of latently infected cells (Cillo et al., 2014; Sanyal et al., 2017; Yucha et al., 2017). Using our dual-fluorescence reporter, we confirm these findings, and extend these observations to LRAs combinations. However, although LRAs combinations show synergy when measuring cell-associated HIV RNA, we do not find such synergy at the level of individual cells, but rather only partial additive effect. Our work, as well as that of others (Cillo et al., 2014; Sanyal et al., 2017; Yucha et al., 2017), demonstrate the importance of single cell analysis when it comes to the evaluation of potential LRAs. Indeed, it is necessary to determine wheter potential increases in HIV RNA after stimulation in a bulk population result from a small number of highly productive cells, or from a larger but less productive population, as these two mechanisms likely have very different impacts on the latent reservoir.\n\nOur data further highlight the heterogeneous nature of the latent reservoir (Chen et al., 2017; Ho et al., 2013). We currently have a limited understanding of why some latently infected cells are capable of being induced while others are not. It is possible that different chromatin environments impose different degrees of transcriptional repression on the integrated HIV genome, with the non reactivatable latent HIV corresponding to the most repressive environment. (Chen et al., 2017). Since HIVGKO allows for the isolation of productively infected cells and reactivated latent cells from those that do not reactivate, it provides a unique opportunity to explore the impact of HIV integration on the fate of the infection.\n\nDifferent integration site-specific features contribute to latency, such as the chromatin structure, including adjacent loci but also the provirus location in the nucleus (Lusic and Giacca, 2015; Lusic et al., 2013). Viral integration is a semi-random process (Bushman et al., 2005) in which HIV-1 preferentially integrates into active genes (Barr et al., 2006; Bushman et al., 2005; Demeulemeester et al., 2015; Ferris et al., 2010; Han et al., 2004; Lewinski et al., 2006; Mitchell et al., 2004; Schr\u00f6der et al., 2002; Sowd et al., 2016; Wang et al., 2007). LEDGF, one of the main chromatin-tethering factors of HIV-1, binds to the viral integrase and to H3K36me3, and to a lesser extent to H3K4me1, thus directing the integration of HIV-1 into transcriptional units (Daugaard et al., 2012; Eidahl et al., 2013; Pradeepa et al., 2012). Also CPSF6, which binds to the viral capsid, markedly influences integration into transcriptionally active genes and regions of euchromatin (Sowd et al., 2016), explaining how HIV-1 maintains its integration in the euchromatin regions of the genome independently of LEDGF (Quercioli et al., 2016). Several studies have characterized the integration sites, however, these analyses have been restricted to productive infections.\n\nUsing ENCODE reference datasets, our data are consistent with previous results, showing that HIV-1 preferentially targets actively transcribed regions (Marini et al., 2015; Wang et al., 2007; Chen et al., 2017). However, non-inducible latent proviruses are observed to be integrated to a higher extent into silenced chromatin. In addition, even though HIV integration is normally strongly disfavored in the heterochromatic condensed regions in LADs due to low chromatin accessibility, we show that some HIV integration does occur in LADs when using a previously published dataset of LADs (Guelen et al., 2008; Marini et al., 2015), and that latent proviruses that are not readily reactivatable are integrated at higher extent in LADs.\n\nImportantly, we identify a unique rare population among the latent cells that can be reactivated. In contrast to the non-inducible latent infections, the latency reversal of inducible latent proviruses might be explained by integration in an open chromatin context, similar to integration sites for productive proviruses, followed by subsequent heterochromatin formation and proviral silencing. As a consequence, the distinct integration sites between induced and non-induced latent proviruses highlight new possibilities for cure strategies. Indeed, the \u2018shock and kill\u2019 strategy aims to reactivate and eliminate every single replication-competent latent provirus, since a single remaining cell carrying a latent inducible provirus could, in theory, reseed the infection. However, our study and others point out several significant barriers to successful implementation of the \u2018shock and kill\u2019 strategy. First, LRAs only reactivate a limited fraction of latent proviruses. It is likely that some of the non-induced proviruses, such as those integrated into enhancers and transcriptionnal active regions of the genome, will reactivate after several rounds of activation, due to the stochastic nature of HIV activation (Dar et al., 2012; Ho et al., 2013; Singh et al., 2010; Weinberger et al., 2005). It is also likely that better suited LRAs combinations (two or more LRAs) will reactivate some of the non-induced proviruses integrated into silenced chromatin marked by H3K27me3 and H3K9me3. Indeed, several studies have shown that the pharmaceutical inhibition of H3K27me3 and H3K9me2/3 could sensitize latent proviruses to LRAs (Friedman et al., 2011; Nguyen et al., 2017; Tripathy et al., 2015). Second, Shan et al. have shown that latently reactivated cells are not cleared due to cytopathic effects or CTL response implying that immunomodulatory approaches, in addition of more potent LRAs, are likely required to achieve a cure for HIV infection (Shan et al., 2012).\n\nIn conclusion, the heterogeneity of the latent reservoir calls for therapies addressing the different pools of latently infected cells. While \u2018shock and kill\u2019 might be helpful in reactivating and possibly eliminating a small subset of highly reactivatable latent HIV genomes, other approaches will be necessary to control or eliminate the less readily reactivatable population identified here and in patients. Perhaps, this latter population should rather be \u2018blocked and locked\u2019 using latency-promoting agents (LPAs), as described by several groups (Besnard et al., 2016; Kessing et al., 2017; Kim et al., 2016; Vranckx et al., 2016). For a functional cure, a stably silenced, non-reactivatable provirus is preferable to a lifetime of chronic active infection.\n\n## Materials and methods\n\n### Patients\u2019 samples\n\nFour HIV-1-infected individuals, who met the criteria of suppressive ART, undetectable plasma HIV-1 RNA levels (<50 copies/ml) for a minimum of six months, and with CD4+ T cell count of at least 350 cells/mm3, were enrolled. The participants were recruited from the SCOPE cohort at the University of California, San Francisco. Table 1 details the characteristics of the study participants.\n\n### Plasmids construction\n\nTo construct HIVGKO, the csGFP sequence was designed and ordered from Life Technologies. The sequence was cut out from Life Technologies\u2019 plasmid with BamHI and XhoI and cloned into DuoFluoI, previously cut with the same enzymes (DuoFluoI-csGFP). HIVGKO was creating by PCR overlapping: csGFP-EF1\u03b1 (Product 1) was PCR amplified from DuoFluoI using primers P1: 5' for-GATTAGTGAACGGATCCTTGGCAC-3' and P2: 5\u2019 rev-GGCTTGATCACAGAAACCATGGTGGCGACCGGTAGCGC-3'. mKO2 (Product 2) was PCR amplified from Brian Webster\u2019s plasmid (kind gift from Warner Greene) using primers P3: 5' for-GCGCTACCGGTCGCCACCATGGTTTCTGTGATCAA\n\nGCC-3\u2019 and P4: 5\u2019 rev-CTCCATGTTTTTCCAGGTCTCGAGCCTAGCTGTAGTGGGC CACGGC-3\u2019. Finally, we amplified the 3\u2019LTR sequence (Product 3) from RGH plasmid (Dahabieh et al., 2013) using primers P5: 5\u2019 for-GCTCGAGACCTGGAAAAACATGGAG-3\u2019 and P6: 5\u2019 rev-GTGCCACCTGACGTCTAAGAAACC-3\u2019, to add a fragment containing the AatII restriction site, in order to ligate the csGFP-EF1\u03b1-mKO2 cassette into pLAI\u00a0(Peden et al., 1991). We then did sequential PCRs: products 1 and 2 were amplified using primers P1 and P4. PCR product (1\u00a0+\u00a02) was mixed with product three and PCR amplified with P1 and P6 thus creating the full cassette. The cassette csGFP-EF1\u03b1-mKO2 was then digested with BamHI and AatII, and cloned into pLAI previously digested with the same enzymes to create HIVGKO.\n\nOf note, the Envelope open reading frame was disrupted by the introduction of a frame shift at position 7136 by digestion with KpnI, blunting, and re-ligation.\n\nTo construct GKO-\u2206U3 3\u2019LTR, we cloned a \u2206U3 linker from pTY-EFeGFP (Chang et al., 1999; Cui et al., 1999; Iwakuma et al., 1999; Zolotukhin et al., 1996) into the KpnI/SacI sites of the 3\u2019 LTR in HIVGKO.\n\n### Virus production\n\nThe production of\u00a0HIVGKO\u00a0and the assessment of HIV Latency Reversal Agents in Human Primary CD4+ T Cells are described in more detail at Bio-protocol (Battivelli and Verdin, 2018).\u00a0Pseudotyped HIVDuoFluoI and HIVGKO viral stocks were generated by co-transfecting (standard calcium phosphate transfection method) HEK293T cells with a plasmid encoding HIVDuoFluoI or HIVGKO, and a plasmid encoding HIV-1 dual-tropic envelope (pSVIII-92HT593.1). Medium was changed 6\u20138 hr post-transfection, and supernatants were collected after 48 hr, centrifuged (20 min, 2000 rpm, RT), filtered through a 0.45 \u03bcM membrane to clear cell debris, and then concentrated by ultracentrifugation (22,000 g, 2 hr, 4\u00b0C). Concentrated virions were resuspended in complete media and stored at \u221280\u00b0C. Virus concentration was estimated by p24 titration using the FLAQ assay (Gesner et al., 2014).\n\n### Primary cell isolation and cell culture\n\nCD4+ T cells were extracted from peripheral blood mononuclear cells (PBMCs) from continuous-flow centrifugation leukophoresis product using density centrifugation on a Ficoll-Paque gradient (GE Healthcare Life Sciences,\u00a0Chicago,\u00a0IL). Resting CD4+ lymphocytes were enriched by negative depletion with an EasySepHuman CD4+ T Cell Isolation Kit (Stemcell\u00a0Technologies,\u00a0Canada). Cells were cultured in RPMI medium supplemented with 10% fetal bovine serum, penicillin/streptomycin and 5 \u00b5M saquinavir.\n\nPrimary CD4+ T cells were purified from healthy donor blood (Blood Centers of the Pacific, San Francisco, CA, and Stanford Blood Center), by negative selection using the RosetteSep Human CD4+ T Cell Enrichment Cocktail (StemCell Technologies,\u00a0Canada). Purified resting CD4+ T cells from HIV-1 or healthy individuals were cultured in RPMI 1640 medium supplemented with 10% FBS, L-glutamine (2 mM), penicillin (50 U/ml), streptomycin (50 mg/ml), and IL-2 (20 to 100 U/ml) (37\u00b0C, 5% CO2). Spin-infected primary CD4+ T cells were maintained in 50% of complete RPMI media supplemented with IL-2 (20\u2013100 U/ml) and 50% of supernatant from H80 cultures (previously filtered to remove cells) without beads. Medium was replenished every 2 days until further experiment.\n\nHEK293T cells were obtained from ATCC (mycoplasma free). Feeder cells H80 was a kind gift from Jonathan Karn. H80 cells were cultured in RPMI 1640 medium supplemented with 10% fetal bovine serum (FBS), L-glutamine (2 mM), penicillin (50 U/ml), and streptomycin (50 mg/ml) (37\u00b0C, 5% CO2). HEK293T cells were cultured in DMEM medium supplemented with 10% FBS, 50 U/ml penicillin, and 50 mg/ml streptomycin.\n\n### Cell infection\n\nPurified CD4+ T cells isolated from healthy peripheral blood were stimulated with \u03b1CD3/CD28 activating beads (Thermofisher,\u00a0Waltham,\u00a0MA) at a concentration of 0.5 bead/cell in the presence of 20\u2013100 U/ml IL-2 (PeproTech, Rocky Hill, NJ) for three days. All cells were spinoculated with either HIVDuoFluoI, HIVGKO or HIV \u03943U-GKO at a concentration of 300 ng of p24 per 1.106 cells for 2 hr at 2000 rpm at 32\u00b0C without activation beads.\n\nInfected cells were either analyzed by flow cytometry or sorted 4\u20135 days post-infection.\n\n### Latency-reversing agent treatment conditions\n\nCD4+ T cells were stimulated for 24 hr unless stipulated differently, with latency-reversing agents at the following concentrations for all single and combination treatments: 10 nM bryostatin-1, 1 \u03bcM JQ1, 30 nM panobinostat, \u03b1CD3/CD28 activating beads (1 bead/cell), or media alone plus 0.1% (v/v) DMSO. For all single and combination treatments, 30 \u03bcM Raltregravir (National AIDS Reagent Program) was added to media. Concentrations were chosen based on Laird et al. paper (Laird et al., 2015).\n\n### Staining, flow cytometry and cell sorting\n\nCells from Figure 4 were stained with\u00a0\u03b1-CD69-PE-Cy7 (561928), \u03b1-CD25-APC (560987), and \u03b1-HLA-DR-PerCP-Cy5.5 (562007) (BD Bioscience, Franklin Lakes, NJ).\n\nBefore collecting data using the FACS LSRII (BD Biosciences, Franklin Lakes, NJ) or the FACS AriaII (BD Biosciences, Franklin Lakes, NJ, Figures 3 and 4), cells were stained with violet Live/Dead Fixable Dead Cell Stain (Thermofisher,\u00a0Waltham,\u00a0MA) and fixed with 2% formaldehyde. Analyses were performed with FlowJo V10.1 software (TreeStar).\n\nSorting of infected CD4+ T cells was performed with a FACS AriaII (BD Biosciences, Franklin Lakes, NJ) based on their GFP and mKO2 fluorescence markers at 4/5 days post-infection, and placed back in culture for further experimentation. In the experiments shown in Figures 2B and 4, we isolated both HIVGKO latently infected cells (GFP-, mKO2+, 3%) and uninfected cells (csGFP-, mKO2-, 97%) five days post-infection, before treating cells with LRAs.\n\nIn the experiment shown in Figure 3, we isolated pure latent cells (GFP-, mKO2+) five days post-infection, before treating this pure population with LRAs.\n\n### DNA, RNA and protein extraction, qPCR and western blot\n\nRNA and proteins (Figure 1B and C) were extracted with PARISTM kit (Ambion, Thermofisher, Waltham, MA) according to manufacturer\u2019s protocol from same samples. RNA was retro-transcribed using random primers with the SuperScript II Reverse Transcriptase (Thermofisher,\u00a0Waltham,\u00a0MA) and qPCR was performed in the AB7900HT Fast Real-Time PCR System, using 2X HoTaq Real Time PCR kit (McLab, South San Francisco, CA) and the appropriate primer-probe combinations described in (Calvanese et al., 2013). Quantification for each qPCR reaction was assessed by the ddCt algorithm, relative to Taq Man assay GAPDH Hs99999905_m1. Protein content was determined using the Bradford assay (Bio-Rad,\u00a0Hercules,\u00a0CA) and 20 \u03bcg were separated by electrophoresis into 12% SDS-PAGE gels. Bands were detected by chemiluminescence (ECL Hyperfilm Amersham,\u00a0GE Healthcare Life Sciences,\u00a0Chicago,\u00a0I) with anti-Vif, HIV-p24 and \u03b1-actin (Sigma,\u00a0Saint-Louis,\u00a0MO) primary antibodies.\n\nTotal RNA (Figure 2A and B) wasextracted using the Allprep DNA/RNA/miRNA Universal Kit (Qiagen, Germany) with on-column DNAase treatment (Qiagen RNase-Free DNase Set, Germany). cDNA synthesis was performed using SuperScript IV Reverse Transcriptase with a combination of random hexamers and oligo-dT primers (ThermoFisher, Waltham, MA). Relative cellular HIV mRNA levels were quantified using a qPCR TaqMan assay using primers and probes described in (Bullen et al., 2014) on a QuantStudio 6 Flex Real-Time PCR System (Thermofisher, Waltham, MA). Relative cell-associated HIV mRNA copy numbers were determined in a reaction volume of 20 \u03bcL with 10 \u03bcL of 2x TaqMan Universal Master Mix II with UNG ( Thermofisher, Waltham, MA), 4 pmol of each primer, 4 pmol of probe, 0.5 \u03bcL reverse transcriptase, and 2.5 \u03bcL of cDNA. Cycling conditions were 50\u00b0C or 2 min, 95\u00b0C for 10 min, then 60 cycles of 95\u00b0C for 15 s and 60\u00b0C for 1 min. Real-time PCR was performed in triplicate reaction wells, and relative cell-associated HIV mRNA copy number was normalized to cell equivalents using human genomic GAPDH expression by qPCR and applying the comparative Ct method (Livak and Schmittgen, 2001).\n\n### HIV integration site libraries and computational analysis\n\nHIV integration site libraries and computational analysis were executed in collaboration with Lilian B. Cohn and Israel Tojal Da Silva as described in their published paper (Cohn et al., 2015), with a few small changes added to the computational analysis pipeline. First, we included integration sites with only a precise junction to the host genome. Second, to eliminate any possibility of PCR mispriming, we have excluded integration sites identified within 100 bp (50 bp upstream and 50 bp downstream) of a 9 bp motif identified in our LTR1 primer: TGCCTTGAG. Thirdly we have merged integration sites within 250 bp and have counted each integration site as a unique event. The list of integration sites for each donor and each population can be found as a source data file linked to this manuscript (Integration Sites Source data 1).\n\n### Datasets\n\nChromatin data (ChIP-seq) from CD4+ T cells was downloaded from ENCODE: H3K4me1 (ENCFF112QDR, ENCFF499NFE, ENCFF989BNS), H3K9me3 (ENCFF044NLN, ENCFF736KRZ, ENCFF844IWD, ENCFF929BPC), H3K27ac (ENCFF618IUD, ENCFF862SKP), H3K27me3 (ENCFF124QDD, ENCFF298JKA, ENCFF717ODY), H3K36me3 (ENCFF006VTQ, ENCFF169QYM, ENCFF284PKI, ENCFF504OUW), DNAse (GSM665812, GSM665839, GSM701489, GSM701491). Data were analyzed using Seqmonk (v0.33, http://www.bioinformatics.bbsrc.ac.uk/projects/ seqmonk/).\n\nWe calculated expression (GSM669617) and chromatin mark abundance (the remaining ENCODE datasets) at the integration sites as bins of 500 bp centered on the integration site (read count quantification in Seqmonk: all non-duplicated reads regardless of strand, corrected per million reads total, non-log transformed). Gene annotations were not taken into account. Thresholds for expression values (upper 1/8th, upper quarter, half, and above 0) were set to distinguish five different categories, set as the upper 1/8th of expression values (high), upper quarter\u20131/8th (medium), upper half\u2013quarter (low), lower half but above 0 (trace), 0 (silent).\n\nCD4+ T cells activation data in Figure 5A weredownloaded from GEO (GSE60235).\n\n### Statistical analysis\n\nSignificance was analyzed by either paired t-test (GraphPad Prism) or proportion test (standard test for the difference between proportions), also known as a two-proportion z test (https://www.medcalc.org/calc/comparison_of_proportions.php), and specified in the manuscript.\n",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "2d53efc3-f1ae-4275-bcaf-75f0ae0b4fc0",
+      "submission_id": "94360174-70aa-4589-9af5-5698bad0e1c6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Viviana Simon, Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34655.027](https://doi.org/10.7554/eLife.34655.027)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Chromatin Functional States Correlate with HIV Latency Reversal in Infected Primary CD4+ T Cells\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Prabhat Jha as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Marina Lusic (Reviewer #1); Vicente Planelles (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this elegant study, the authors report on the establishment of latency and reactivation of latent proviruses using a dual reporter HIV-1 virus (HIVGKO), which allows accurate separation and quantification of cells actively producing HIV from those harboring LTR silent, latent viruses.\n\nBy using several latency-reversing agents (LRAs) the authors compare the efficacy of HIV-1 reactivation in cells from HIV-1 infected individuals and in cells infected in vitro with the HIVGKO. HDAC inhibitor panobinostat, BRD4 inhibitor JQ1, and the PKC inhibitor bryostatin-1 showed limited reactivation unless used in combination. The similar trends in reactivation potential with single or combination LRAs recapitulates well the existing literature. The observation that the synergistic effect of these drugs in reactivating HIV in patient samples was stronger than that observed in the cells infected in vitro is very interesting.\n\nThe authors mapped a total of 1,803 integration sites mostly located in introns of actively transcribing genes. The transcription profiles of these genes as well as several histone marks using ENCODE data were also analyzed. Proviruses appear to be integrated in intragenic regions, with proviruses integrated more frequently in enhancer and actively transcribed regions of the genome compared to silenced regions. Non-inducible latently infected cells harbored virus integrated in enhancer and activated regions to a higher extent than in silenced regions, although reduced compared to productively infecting and reactivated proviruses. Non-inducible latently infected cells showed an increased level of integration into heterochromatin compared to productively and reactivated proviruses. The authors conclude that HIV-1 reversal from latency highly depends on the host transcriptional activity and chromatin context. Integration sites from PICs are outside of lamin-associated domains (LADs) whereas those from RLIC and NRLIC are found more often within LADs compared to latent cells.\n\nIn conclusion, this well-written manuscript highlights the heterogeneous nature of the HIV-1 latent reservoir and the challenges it poses to strategies seeking to induce virus from latency as a method to eradicate HIV infection. Moreover, it underlines several important aspects regarding latent HIV, such as that viral RNA does not truly reflect the number of cells that are reactivated and that LRAs and T cell stimulation with CD3/CD28 results in reactivation of only a small portion of latent viruses. This powerful new dual color HIV reagent will be exciting to those in the field.\n\nA revised manuscript will be considered if the authors can address the major points outlined below within a reasonable amount of time.\n\nEssential revisions:\n\n1) Throughout the paper the definition of productively infected cells appears to change. For example, in Figure 1D the ratio of latent to productively infected cells, appears to be calculated by combining csGFP+mKO2- and csGFP+mKO2+ populations whereas in the text corresponding to Figure 1E and 1F the productively infected population is defined as csGFP+mKO2+ cells only. While the csGFP+mKO2- population is reduced in the HIVGKO model, this population is not negligible and should be consistently included when examining the productively infected population.\n\n2) As the authors aim to establish a superior HIV latency model they should directly quantify the percent increase in latently infected cells compared to their previous DuoFluo reporter instead of only stating that they can identify a 'much larger' number of latent cells.\n\n3) Throughout the paper the authors express surprise at the low level of reactivation of the latent reservoir observed while also stating that this observation is in agreement with the current literature giving a confusing impression of the novelty of their results. Please amend.\n\n4) The fact that JQ1 and bryostatin induce reactivation in patient samples but only little effect on in vitro infected cells is a very interesting finding, pointing to differences in the sites of viral integration between patient cells and in vitro infected cells. It would be interesting if the authors could comment on these findings in the Discussion section.\n\n5) The authors convincingly show that only a minor fraction of latently infected cells becomes GFP+ upon treatment with LRAs. Are there GFP- KO2-cells in the culture before and after treatment with LRAs (and if yes, which percentage?).\n\nIt would be important to analyze the effect of sequential (e.g., 2) rounds of treatment with LRAs. Another important experiment, which the authors may consider to strengthen the conclusions, is to inhibit H3K27me3 and H3K9me3 followed by treatment with LRAs. Lastly, please clarify why the time of LRAs application is different for in vitro infected versus patient samples (such as 6 hours vs 24 hours).\n\n6) The CD3/CD28 beads (positive control) only reactivated HIV in 3.1% of the latently infected cells. Can the authors comment on why they used 0.5 CD3/CD28 beads/cell for their infection as this is less than the 1 bead per cell recommended by the manufacturer.\n\nDid the authors try other positive controls such as PMA and Ionomycin as reported elsewhere (Laird et al., 2015)? Additionally, can the authors comment on why the latently infected cells were not incubated with the stimuli for longer than 24 hours? This might have resulted in a different outcome.\n\n7) The authors compare the activation status of non-infected, reactivated and non-reactivated cells and conclude that \"Overall, the comparison of the latent populations showed very little difference\". Judging from the data, the conclusion appears too strong to me. There is a significantly lower percentage of CD25+CD69+ in non-reactivated cells which leaves open the possibility that, at least in part, this population has an incomplete/lower activation (which might partially account for lack of reactivation). The addition of a late marker of activation such as HLA-DR would also greatly strengthen the conclusions.\n\nAn important control would be to repeat this experiment with another reactivating stimulation (e.g. PHA) and see if these differences persist. If so, the possibility that lack of full activation accounts for lower viral reactivation must be acknowledged and discussed.\n\n8) The number of integration sites appears to be too low for RLIC (only 162). Please disclose how many genes are hit by these 162 IS. There is no tabular representation of the IS sequencing information. A file with all sorted IS is missing.\n\nIs the value for RLIC really 0% in Figure 5? A significantly higher expression (upon CD3-CD28 activation) of genes containing integration sites of non-reactivated HIV versus reactivated virus seems counterintuitive. As mentioned before the possibility that the lack of complete activation upon CD3-CD28 treatment characterizes the non-reactivated population must be further analyzed and discussed.\n\n9) Clarification on which method was used for the quantification of gene expression is needed. The method presented is not as cited as it requires at least two housekeeping genes. (ddCT method is referenced in the Materials and methods section).\n\n10) In the Discussion section the authors state that \"productive proviruses predominantly target actively transcribed regions\u2026.On the other hand, non-inducible latent proviruses are observed to integrate into silenced chromatin\u2026\". The data in Figure 7A show that the majority of NRLIC viruses still integrate into enhancer and transcriptionally active regions of the genome although integrations in the NRLIC population occur to a higher extent in silenced regions of the genome compared to PIC and RLIC populations. This observation is not addressed in the discussion and the statement is, therefore, a bit misleading.\n",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "520ca195-f7d7-40c3-8526-87421c3bdfa3",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C1",
+      "claim": "Antiretroviral therapy (ART) has transformed HIV infection from a uniformly deadly disease into a chronic lifelong condition, saving millions of lives.",
+      "claim_type": "EXPLICIT",
+      "source": "Antiretroviral therapy (ART) has transformed HIV infection from a uniformly deadly disease into a chronic lifelong condition, saving millions of lives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific consensus about the impact of ART on HIV infection outcomes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "18436bc5-509a-429f-9b16-05bc979d0865",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C2",
+      "claim": "ART interruption leads to rapid viral rebound within weeks due to the persistence of proviral latency in rare, long-lived resting CD4+ T cells and possibly in tissue macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ART interruption leads to rapid viral rebound within weeks due to the persistence of proviral latency in rare, long-lived resting CD4+ T cells and possibly in tissue macrophages (Honeycutt et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Honeycutt et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "c5e00354-e0e8-4c48-936d-d5d527c52888",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C3",
+      "claim": "HIV latency is defined as the presence of a transcriptionally silent but replication-competent proviral genome.",
+      "claim_type": "EXPLICIT",
+      "source": "HIV latency is defined as the presence of a transcriptionally silent but replication-competent proviral genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "a3ea504f-70df-4d0f-aec6-eb1ac7ad84a4",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C4",
+      "claim": "Latency allows infected cells to evade both immune clearance mechanisms and currently available ART.",
+      "claim_type": "EXPLICIT",
+      "source": "Latency allows infected cells to evade both immune clearance mechanisms and currently available ART, which is based solely on the elimination of actively replicating virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established understanding of HIV latency and ART mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "2c7a0a9b-ee31-494c-830b-5002b85f745a",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C5",
+      "claim": "Use of histone deacetylase inhibitors (HDACi: vorinostat, panobinostat, romidepsin, and disulfiram) in clinical studies has shown increases in cell-associated HIV RNA production and/or plasma viremia after in vivo administration.",
+      "claim_type": "EXPLICIT",
+      "source": "Use of histone deacetylase inhibitors (HDACi: vorinostat, panobinostat, romidepsin, and disulfiram) in clinical studies has shown increases in cell-associated HIV RNA production and/or plasma viremia after in vivo administration (Archin et al., 2012a; Elliott et al., 2015; Elliott et al., 2014; Rasmussen et al., 2014; S\u00f8gaard et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "e3162b51-90f5-4959-9747-31d5b990fd53",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C6",
+      "claim": "None of the HDACi interventions alone has succeeded in significantly reducing the size of the latent HIV reservoir.",
+      "claim_type": "EXPLICIT",
+      "source": "However, none of these interventions alone has succeeded in significantly reducing the size of the latent HIV reservoir (Rasmussen and Lewin, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Rasmussen and Lewin, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "6449263c-c65e-48ef-96ac-eb209d61fdde",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C7",
+      "claim": "PCR-based assays substantially overestimate the number of latently infected cells, due to the predominance of defective HIV DNA genomes in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "However these assays substantially overestimate the number of latently infected cells, due to the predominance of defective HIV DNA genomes in vivo (Bruner et al., 2016; Ho et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bruner et al., 2016 and Ho et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "532fa19b-9e59-4828-ad5a-e8d78babfb0d",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C8",
+      "claim": "The number of latently infected cells detected in the VOA is 300-fold lower than the number of resting CD4+ T cells that harbor proviruses detectable by PCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the number of latently infected cells detected in the VOA is 300-fold lower than the number of resting CD4+ T cells that harbor proviruses detectable by PCR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison stated in the text without a specific citation, suggesting it is based on established knowledge or inference from the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "7e92d11b-7d36-4c9d-85f1-1f81e099f222",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C9",
+      "claim": "The discovery of intact non-induced proviruses indicates that the size of the latent reservoir may be at least 60 fold higher than estimates based on VOA.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the discovery of intact non-induced proviruses indicates that the size of the latent reservoir may be much greater than previously thought: the authors estimate that the number may be at least 60 fold higher than estimates based on VOA (Ho et al., 2013; Sanyal et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ho et al., 2013 and Sanyal et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "b73ec483-40d4-4fb0-b63f-35e92782222f",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C10",
+      "claim": "HIV reactivation is a stochastic process that only reactivates a small fraction of latent viruses at any given time.",
+      "claim_type": "EXPLICIT",
+      "source": "This work and that of others (Chen et al., 2017) highlight the heterogeneous nature of HIV latency and suggest that HIV reactivation is a stochastic process that only reactivates a small fraction of latent viruses at any given time (Dar et al., 2012; Ho et al., 2013; Singh et al., 2010; Weinberger et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "3aeafefa-6e73-4071-8bba-2887248f83f7",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C11",
+      "claim": "Defective proviruses can be transcribed and translated in vivo, expressing viral RNA and proteins detectable by p24 antigen or PCR assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the ability of defective proviruses to be transcribed and translated in vivo (Pollack et al., 2017): this study shows that, although defective proviruses cannot produce infectious particles, they express viral RNA and proteins, which can be detectable by any p24 antigen or PCR assays used for the reservoir-size quantification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Pollack et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "f5fcbcfb-a7f5-45d5-994e-2e37c6b8e15a",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C12",
+      "claim": "HIVGKO contains a codon-switched eGFP (csGFP) and mKO2 under the control of EF1\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "To address these issues, which we suspected were due to recombination between the 20\u201330 bp regions of homology at the N- and C-termini of the adjacent fluorescent proteins (eGFP and mCherry) (Salamango et al., 2013), we generated a new version of dual-labeled virus (HIVGKO), containing a codon-switched eGFP (csGFP) and a distinct, unrelated fluorescent protein mKO2 under the control of EF1\u03b1 (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental construct shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "19366cb4-38f7-47ae-91d8-b468afc52434",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C13",
+      "claim": "Titration of HIVGKO input revealed that productively and latently infected cells increased proportionately as the input virus increased.",
+      "claim_type": "EXPLICIT",
+      "source": "First, titration of HIVGKO input revealed that productively and latently infected cells increased proportionately as the input virus increased (Figure 1B and Figure 1\u2014figure supplement 1), unlike the original DuoFluoI (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "876e905f-0969-42ac-824e-0b75881aba76",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C14",
+      "claim": "Comparison of primary CD4+ T cells infected with HIVGKO or the original DuoFluoI revealed an increase in double-positive (csGFP+ mKO2+) infected cells in HIVGKO infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, comparison of primary CD4+ T cells infected with HIVGKO or the original DuoFluoI revealed an increase in double-positive (csGFP+ mKO2+) infected cells in HIVGKO infected cells (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "8a9226a7-30b2-47ff-8cd2-ac54e63dd71c",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C15",
+      "claim": "A HIVGKO virus lacking the U3 promoter region of the 3\u2032LTR (\u0394U3-GKO) resulted in an integrated virus devoid of the 5' HIV U3 region, which was associated with a suppression of HIV transcription and an inversion of the latency ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated a HIVGKO virus lacking the U3 promoter region of the 3\u2032LTR (\u0394U3-GKO), resulting in an integrated virus devoid of the 5' HIV U3 region. This was associated with a suppression of HIV transcription and an inversion of the latency ratio (ratios latent/productive = 0.34 for HIVGKO-WT-LTR and 8.8 for HIVGKO-\u0394U3-3'LTR - Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "f6bb3abe-a6dd-4779-a455-405b1dbef25d",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C16",
+      "claim": "Productively infected cells (csGFP+) expressed higher amounts of viral mRNA and viral proteins, but latently infected cells (csGFP- mKO2+) had very small amounts of viral mRNA and no detectable viral proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, productively infected cells (csGFP+) expressed higher amounts of viral mRNA and viral proteins, but latently infected cells (csGFP- mKO2+) had very small amounts of viral mRNA and no detectable viral proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 1E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "7432f517-73e4-40fb-8af7-0fbfade711b4",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C17",
+      "claim": "None of the LRAs tested individually exhibited a statistically significant effect on HIV-1 RNA levels in resting CD4+ T cells from four HIV infected individuals on suppressive ART.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the LRAs tested individually, none exhibited a statistically significant effect (n=4 - Figure 2A, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from patient samples shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "03cbbf55-8e0f-4756-baa1-6bba3472f48c",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C18",
+      "claim": "T-cell activation positive control, \u03b1CD3/CD28, showed a 24.4-fold increase in HIV RNA in patient samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, T-cell activation positive control, \u03b1CD3/CD28 (24.4-fold, Figure 2A), showed expected fold induction value (10 to 100-fold increases of HIV RNA in PBMCs [Bullen et al., 2014; Darcis et al., 2015; Laird et al., 2015]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A and citations to expected values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "c0a3f389-494c-43a0-a82d-532013c16707",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C19",
+      "claim": "Combinations of the PKC agonist bryostatin-1 with JQ1 or with panobinostat (fold-increases of 126.2- and 320.8-fold, respectively) were highly more effective than bryostatin-1, JQ1 or panobinostat alone in patient samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Combinations of the PKC agonist bryostatin-1 with JQ1 or with panobinostat (fold-increases of 126.2- and 320.8-fold, respectively, Figure 2A), were highly more effective than bryostatin-1, JQ1 or panobinostat alone (fold-increases of 6.8, 1.7- and 2.9-fold, respectively, Figure 3A), and even greater than T-cell activation with \u03b1CD3/CD28.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "b8c156b7-38be-4356-8e14-b5d632f5b2f5",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C20",
+      "claim": "HIVGKO closely mimics in vitro what is observed in ex vivo patients' samples (correlation rate r2 = 0.88, p=0.0056).",
+      "claim_type": "EXPLICIT",
+      "source": "These data together demonstrate that HIVGKO closely mimics in vitro what is observed in ex vivo patients' samples (correlation rate r2 = 0.88, p=0.0056 - Figure 2C), and validate the robustness and reliability of the dual-florescence HIV reporter as a model to study HIV-1 latency.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical correlation analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "0ae24c81-493d-4c9b-8479-68e2b46df347",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C21",
+      "claim": "Culture of DMSO-treated latently infected primary CD4+ T cells produced little spontaneous reactivation (average of four experiments: 1.4% of GFP+ cells).",
+      "claim_type": "EXPLICIT",
+      "source": "Culture of DMSO-treated latently infected primary CD4+ T cells produced little spontaneous reactivation (average of four experiments: 1.4% of GFP+ cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from four experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "73ccf12f-f8e9-4ce2-874f-2a0914eb13e4",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C22",
+      "claim": "None of the individual LRAs or their combinations reactivated more than 5.5% of the latently infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, we found that none of the individual LRAs or their combinations reactivated more than 5.5% of the latently infected cells: JQ1 (1.7%) panobinostat (3.7%), bryostatin-1 (3%) \u03b1CD3/CD28 (4.5%), bryostatin-1 and JQ1 (3.3%.). bryostatin-1 and panobinostat (5.5%) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "ae64b1d3-7788-40aa-b706-ac10b3ac759d",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C23",
+      "claim": "Treatment of latently infected primary CD4+ T cells with \u03b1CD3/CD28 stimulated HIV production in less than 5% of the cells, while nearly all of the cells had upregulated the early T cell activation marker CD69 after 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of latently infected primary CD4+ T cells with \u03b1CD3/CD28 stimulated HIV production in less than 5% of the cells, while the other 95% remained latent, even though after 24 hr of treatment nearly all of the cells had upregulated the early T cell activation marker CD69 (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "a69410bf-2da9-4d19-83fc-e25bb17a05a6",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C24",
+      "claim": "The three different populations (double negative, RLIC and NRLIC) had similar profiles of activated T-cell subsets and were mainly composed of strongly activated cells (CD69+/CD25+/HLA-DR+/-).",
+      "claim_type": "EXPLICIT",
+      "source": "The three different populations, double negative, RLIC and NRLIC, had similar profiles of activated T-cell subsets, as shown in Figure 4, and were mainly composed of strongly activated cells (CD69+/CD25+/HLA-DR+/-).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "6b6552ab-679f-46b6-b1d7-3ec871bb953d",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C25",
+      "claim": "A statistically significant increase of NRLIC compared with RLIC was observed in the CD69+/CD25-/HLA-DR+ population.",
+      "claim_type": "EXPLICIT",
+      "source": "We only observed a statistically significant increase of NRLIC compared with RLIC in the CD69+/CD25-/HLA-DR+ population, however this small increase in a relatively minor population is insufficient to explain the low reactivation rate of latently infected cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "e705aaef-fb35-4211-a1ba-a80ba80ef2c6",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C26",
+      "claim": "A total of 1803 virus integration sites were determined: 960 integrations in PIC, 681 in NRLIC, and 162 in RLIC.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 1803 virus integration sites were determined: 960 integrations in PIC, 681 in NRLIC, and 162 in RLIC (Integration Sites Source data).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sequencing data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "d6b38e4e-b4c4-4975-b1ff-d36fcded2c5b",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C27",
+      "claim": "Most of the \u03b1CD3/CD28-induced latent proviruses were not integrated in genes responsive to T-cell activation signals.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis revealed that most of the \u03b1CD3/CD28-induced latent proviruses were not integrated in genes responsive to T-cell activation signals (Figure 5A and B, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by integration site analysis shown in Figure 5A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "116be6f9-97b9-4b7e-b85c-90dd857b1f43",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C28",
+      "claim": "PIC and RLIC integration events were associated with genes whose basal expression was significantly higher than genes targeted in NRLIC, both in activated and resting T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, PIC and RLIC integration events were associated with genes whose basal expression was significantly higher than genes targeted in NRLIC, both in activated and resting T cells (Figure 5C, Figure 5\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene expression analysis shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "b1928534-c5e9-436d-8c6b-a0b44d4cc7f7",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C29",
+      "claim": "The majority of integration sites were found within genes in each population.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous studies (Cohn et al., 2015; Dahabieh et al., 2014; Maldarelli et al., 2014; Wagner et al., 2014), the majority of integration sites were found within genes in each population (Figure 6A, Figure 6\u2014source data 1), although the proportion of genic integrations in NRLIC was significantly lower than in PIC and RLIC samples.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by integration site analysis shown in Figure 6A and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "8c63777c-c2b2-44dd-af02-ce942d55906c",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C30",
+      "claim": "The proportion of genic integrations in NRLIC was significantly lower than in PIC and RLIC samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous studies (Cohn et al., 2015; Dahabieh et al., 2014; Maldarelli et al., 2014; Wagner et al., 2014), the majority of integration sites were found within genes in each population (Figure 6A, Figure 6\u2014source data 1), although the proportion of genic integrations in NRLIC was significantly lower than in PIC and RLIC samples.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by integration site analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "4e2d9711-4b86-4649-8ee6-68ebe2ae67b4",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C31",
+      "claim": "Integration events in the PIC and RLIC populations were more frequent in transcribed regions (64% and 58%, respectively), while these regions were significantly less represented in the NRLIC (31%).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, integration events in the PIC and RLIC populations were more frequent in transcribed regions (64% and 58%, respectively, [sum of low + medium + high transcribed regions] (Figure 6B), Figure 6\u2014source data 1), while these regions were significantly less represented in the NRLIC (31%) (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by integration site analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "3b518d48-1201-4d66-9272-2e140782eb6a",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C32",
+      "claim": "Genic integration events were more frequent in the introns for each population (>65%).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected since introns represent a much larger proportion of genes, genic integration events were more frequent in the introns for each population (>65%, Figure 6C, Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by integration site analysis shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "1632f945-a2d5-44bb-9f24-ca478ba792c1",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C33",
+      "claim": "Viral orientation of proviruses with respect to the transcriptional unit did not correlate with the fate of HIV infection (latent vs productive) or the reactivation or absence thereof of HIV latency.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, viral orientation of proviruses with respect to the transcriptional unit did not correlate with the fate of HIV infection (latent vs productive) or the reactivation or absence thereof of HIV latency (Figure 6D, Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by integration site analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "c3c63fff-94dc-4497-a396-d8fdf0b99dd4",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C34",
+      "claim": "All three populations (PIC, RLIC, NRLIC) exhibited distinct chromatin profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "All three populations exhibited distinct profiles, although productive and inducible latent infections profiles appeared most similar (Figure 7A, Figure 7\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by chromatin analysis shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "6486b2e0-e852-46b5-a30f-8f2fd98c1082",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C35",
+      "claim": "PIC integration events were associated with active chromatin (i.e., transcribed genes - H3K36me3 or enhancers - H3K4me1), while NRLIC integration events appeared biased toward heterochromatin (H3K27me3 and H3K9me3) and non-accessible regions (DNase hyposensitivity).",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis showed that PIC integration events were associated with active chromatin (i.e., transcribed genes - H3K36me3 or enhancers - H3K4me1), while NRLIC integration events appeared biased toward heterochromatin (H3K27me3 and H3K9me3) and non-accessible regions (DNase hyposensitivity).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by chromatin analysis shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "0a1fe4f1-2136-4b7e-8c10-c6824b30e62c",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C36",
+      "claim": "Latent integration sites from both RLIC and NRLIC were in LADs to a significantly higher degree (32% and 30.4%) than productive integrations (23.6%).",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis showed that latent integration sites from both RLIC and NRLIC were in LADs to a significantly higher degree (32% and 30.4%) than productive integrations (23.6%) (p<0.05, Figure 7B, Figure 7\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by LAD analysis shown in Figure 7B with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "65631020-dad4-4235-aa7d-703064b4dfec",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C37",
+      "claim": "Cell-associated HIV RNA quantification does not reflect the absolute number of cells undergoing viral reactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "These data highlight two important facts: a) cell-associated HIV RNA quantification does not reflect the absolute number of cells undergoing viral reactivation, and b) induced cell-associated HIV RNA, in response to all reversing agents, comes from a small fraction of reactivated latent cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "2d9fa90d-5aef-40a6-a71c-d3d83a04d4e5",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C38",
+      "claim": "Induced cell-associated HIV RNA, in response to all reversing agents, comes from a small fraction of reactivated latent cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These data highlight two important facts: a) cell-associated HIV RNA quantification does not reflect the absolute number of cells undergoing viral reactivation, and b) induced cell-associated HIV RNA, in response to all reversing agents, comes from a small fraction of reactivated latent cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "8824a86d-853d-4e35-b31b-d063cfe4450c",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C39",
+      "claim": "The second-generation of dual-fluorescence reporter, HIVGKO, is able to more accurately quantify latent infections in primary CD4+ T cells than HIVDuoFluoI.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on all these findings, the second-generation of dual-fluorescence reporter, HIVGKO, is able to more accurately quantify latent infections in primary CD4+ T cells than HIVDuoFluoI, and thus allows for the identification and purification of a larger number of latently infected cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparative experimental data presented in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "71cd60e7-4cff-4d69-b864-a5031dbdc3b1",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C40",
+      "claim": "HIVGKO allows for the identification and purification of a larger number of latently infected cells compared to HIVDuoFluoI.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on all these findings, the second-generation of dual-fluorescence reporter, HIVGKO, is able to more accurately quantify latent infections in primary CD4+ T cells than HIVDuoFluoI, and thus allows for the identification and purification of a larger number of latently infected cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparative experimental data presented in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "b7c87065-6c58-4e8b-b623-a714e9c50197",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C41",
+      "claim": "The heterogeneity of the latent reservoir calls for therapies addressing the different pools of latently infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, the heterogeneity of the latent reservoir calls for therapies addressing the different pools of latently infected cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the integration site and chromatin analysis data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "ca4d1e7e-2958-4593-a0b7-b299af990543",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C42",
+      "claim": "The 'shock and kill' strategy might be helpful in reactivating and possibly eliminating a small subset of highly reactivatable latent HIV genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "While 'shock and kill' might be helpful in reactivating and possibly eliminating a small subset of highly reactivatable latent HIV genomes, other approaches will be necessary to control or eliminate the less readily reactivatable population identified here and in patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings about limited LRA efficacy.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "0b7b8c13-0e9d-4e5f-ad6f-2e05c2d0fc62",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C43",
+      "claim": "Other approaches beyond 'shock and kill' will be necessary to control or eliminate the less readily reactivatable population of latently infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While 'shock and kill' might be helpful in reactivating and possibly eliminating a small subset of highly reactivatable latent HIV genomes, other approaches will be necessary to control or eliminate the less readily reactivatable population identified here and in patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings about limited LRA efficacy.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "e33dfb80-f9d6-47b3-b51a-5647c54f9de1",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C44",
+      "claim": "For a functional cure, a stably silenced, non-reactivatable provirus is preferable to a lifetime of chronic active infection.",
+      "claim_type": "EXPLICIT",
+      "source": "For a functional cure, a stably silenced, non-reactivatable provirus is preferable to a lifetime of chronic active infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about therapeutic strategy.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "c0f3fa79-7378-4301-b7ec-38510be6e966",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C45",
+      "claim": "HIV-1 preferentially integrates into active genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral integration is a semi-random process (Bushman et al., 2005) in which HIV-1 preferentially integrates into active genes (Barr et al., 2006; Bushman et al., 2005; Demeulemeester et al., 2015; Ferris et al., 2010; Han et al., 2004; Lewinski et al., 2006; Mitchell et al., 2004; Schr\u00f6der et al., 2002; Sowd et al., 2016; Wang et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "c5a22cc2-5939-48ba-b341-7eebb23fd606",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C46",
+      "claim": "LEDGF binds to the viral integrase and to H3K36me3, and to a lesser extent to H3K4me1, thus directing the integration of HIV-1 into transcriptional units.",
+      "claim_type": "EXPLICIT",
+      "source": "LEDGF, one of the main chromatin-tethering factors of HIV-1, binds to the viral integrase and to H3K36me3, and to a lesser extent to H3K4me1, thus directing the integration of HIV-1 into transcriptional units (Daugaard et al., 2012; Eidahl et al., 2013; Pradeepa et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Daugaard et al., 2012; Eidahl et al., 2013; Pradeepa et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "236694fd-7cf0-4dcb-a1ef-566e51cb1ea9",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C47",
+      "claim": "CPSF6, which binds to the viral capsid, markedly influences integration into transcriptionally active genes and regions of euchromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Also CPSF6, which binds to the viral capsid, markedly influences integration into transcriptionally active genes and regions of euchromatin (Sowd et al., 2016), explaining how HIV-1 maintains its integration in the euchromatin regions of the genome independently of LEDGF (Quercioli et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Sowd et al., 2016 and Quercioli et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "061b1fc5-3f8c-4587-9af9-b734664d4c94",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C48",
+      "claim": "HIV-1 maintains its integration in the euchromatin regions of the genome independently of LEDGF.",
+      "claim_type": "EXPLICIT",
+      "source": "Also CPSF6, which binds to the viral capsid, markedly influences integration into transcriptionally active genes and regions of euchromatin (Sowd et al., 2016), explaining how HIV-1 maintains its integration in the euchromatin regions of the genome independently of LEDGF (Quercioli et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Quercioli et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "43cbe6a7-80f7-4c5e-9693-df52d66e012f",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C49",
+      "claim": "HIV-1 preferentially targets actively transcribed regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Using ENCODE reference datasets, our data are consistent with previous results, showing that HIV-1 preferentially targets actively transcribed regions (Marini et al., 2015; Wang et al., 2007; Chen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' data and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "4851434e-3cf1-404e-ab47-2cb3c212379d",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C50",
+      "claim": "Non-inducible latent proviruses are observed to be integrated to a higher extent into silenced chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "However, non-inducible latent proviruses are observed to be integrated to a higher extent into silenced chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the chromatin analysis data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "c3cddbb6-fb1a-4487-b851-e5ac4f93b5c6",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C51",
+      "claim": "HIV integration is normally strongly disfavored in the heterochromatic condensed regions in LADs due to low chromatin accessibility.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, even though HIV integration is normally strongly disfavored in the heterochromatic condensed regions in LADs due to low chromatin accessibility, we show that some HIV integration does occur in LADs when using a previously published dataset of LADs (Guelen et al., 2008; Marini et al., 2015), and that latent proviruses that are not readily reactivatable are integrated at higher extent in LADs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Guelen et al., 2008 and Marini et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "eafbe4b2-5fa1-4e0e-b12f-622b461ee4f8",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C52",
+      "claim": "Some HIV integration does occur in LADs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, even though HIV integration is normally strongly disfavored in the heterochromatic condensed regions in LADs due to low chromatin accessibility, we show that some HIV integration does occur in LADs when using a previously published dataset of LADs (Guelen et al., 2008; Marini et al., 2015), and that latent proviruses that are not readily reactivatable are integrated at higher extent in LADs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' analysis using LAD datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "330995f0-8e17-4bcd-81c3-959c1e1fbaac",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C53",
+      "claim": "Latent proviruses that are not readily reactivatable are integrated at higher extent in LADs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, even though HIV integration is normally strongly disfavored in the heterochromatic condensed regions in LADs due to low chromatin accessibility, we show that some HIV integration does occur in LADs when using a previously published dataset of LADs (Guelen et al., 2008; Marini et al., 2015), and that latent proviruses that are not readily reactivatable are integrated at higher extent in LADs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' analysis shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "1c350264-0954-45e2-ab81-30deb1d8a022",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C54",
+      "claim": "The distinct integration sites between induced and non-induced latent proviruses highlight new possibilities for cure strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, the distinct integration sites between induced and non-induced latent proviruses highlight new possibilities for cure strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the integration site analysis data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "4fbb55b5-d775-4d16-b8b4-1970a0975b83",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C55",
+      "claim": "LRAs only reactivate a limited fraction of latent proviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "First, LRAs only reactivate a limited fraction of latent proviruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing <5% reactivation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "863fe06c-e288-434b-bd2a-1c028eede219",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C56",
+      "claim": "Some of the non-induced proviruses, such as those integrated into enhancers and transcriptional active regions of the genome, will reactivate after several rounds of activation, due to the stochastic nature of HIV activation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that some of the non-induced proviruses, such as those integrated into enhancers and transcriptionnal active regions of the genome, will reactivate after several rounds of activation, due to the stochastic nature of HIV activation (Dar et al., 2012; Ho et al., 2013; Singh et al., 2010; Weinberger et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement supported by citations about stochastic HIV activation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "90f90085-b79d-40c9-87af-b585a753ba76",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C57",
+      "claim": "Better suited LRAs combinations (two or more LRAs) will likely reactivate some of the non-induced proviruses integrated into silenced chromatin marked by H3K27me3 and H3K9me3.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also likely that better suited LRAs combinations (two or more LRAs) will reactivate some of the non-induced proviruses integrated into silenced chromatin marked by H3K27me3 and H3K9me3. Indeed, several studies have shown that the pharmaceutical inhibition of H3K27me3 and H3K9me2/3 could sensitize latent proviruses to LRAs (Friedman et al., 2011; Nguyen et al., 2017; Tripathy et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement supported by citations to studies on histone methylation inhibitors.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "78db12d1-de03-4806-9c87-0bc3b4745472",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C58",
+      "claim": "Latently reactivated cells are not cleared due to cytopathic effects or CTL response.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, Shan et al. have shown that latently reactivated cells are not cleared due to cytopathic effects or CTL response implying that immunomodulatory approaches, in addition of more potent LRAs, are likely required to achieve a cure for HIV infection (Shan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Shan et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "d96eb2ca-69af-4463-992c-15ceaa897599",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C59",
+      "claim": "Immunomodulatory approaches, in addition to more potent LRAs, are likely required to achieve a cure for HIV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, Shan et al. have shown that latently reactivated cells are not cleared due to cytopathic effects or CTL response implying that immunomodulatory approaches, in addition of more potent LRAs, are likely required to achieve a cure for HIV infection (Shan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the citation to Shan et al., 2012.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "3966067d-6291-434b-8c9e-d5c5a9d6adb6",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C60",
+      "claim": "Remarkably, none of the tested LRAs reactivated more than 5% of cells carrying a latent provirus.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, none of these agents reactivated more than 5% of cells carrying a latent provirus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "c9e70c6b-b74b-4ca1-ae89-c7c2368e93b4",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C61",
+      "claim": "Sequencing analysis of reactivatable vs. non-reactivatable populations revealed that the integration sites were distinguishable in terms of chromatin functional states.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequencing analysis of reactivatable vs. non-reactivatable populations revealed that the integration sites were distinguishable in terms of chromatin functional states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the integration site and chromatin analysis findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "ceb794f9-c3a0-4b64-ada7-82ef06aca8dc",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C62",
+      "claim": "The findings challenge the feasibility of 'shock and kill'.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings challenge the feasibility of 'shock and kill', and suggest the need to explore other strategies to control the latent HIV reservoir.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings about limited LRA efficacy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "7ac3b032-4350-4a1f-aa22-cd0228c466ed",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C63",
+      "claim": "The findings suggest the need to explore other strategies to control the latent HIV reservoir.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings challenge the feasibility of 'shock and kill', and suggest the need to explore other strategies to control the latent HIV reservoir.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings about limited LRA efficacy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "a8d50604-34b5-4bd5-85ad-5c31685244b2",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C64",
+      "claim": "The latency reversal of inducible latent proviruses might be explained by integration in an open chromatin context, similar to integration sites for productive proviruses, followed by subsequent heterochromatin formation and proviral silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the non-inducible latent infections, the latency reversal of inducible latent proviruses might be explained by integration in an open chromatin context, similar to integration sites for productive proviruses, followed by subsequent heterochromatin formation and proviral silencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation of the chromatin analysis data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "d8757a4c-6a42-4369-917a-843729858206",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C65",
+      "claim": "The 'shock and kill' strategy aims to reactivate and eliminate every single replication-competent latent provirus.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the 'shock and kill' strategy aims to reactivate and eliminate every single replication-competent latent provirus, since a single remaining cell carrying a latent inducible provirus could, in theory, reseed the infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the theoretical goal of the 'shock and kill' strategy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "cf85a85f-89db-484c-84ae-61f1d1db5ae6",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C66",
+      "claim": "A single remaining cell carrying a latent inducible provirus could, in theory, reseed the infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the 'shock and kill' strategy aims to reactivate and eliminate every single replication-competent latent provirus, since a single remaining cell carrying a latent inducible provirus could, in theory, reseed the infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement about HIV infection dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "892618db-98a7-47b9-b1a9-fe5d2db1b1fa",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C67",
+      "claim": "Comparison of both reactivated and non reactivated latent populations showed little difference in their activation state.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, comparison of both reactivated and non reactivated latent populations showed little difference in their activation state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the T-cell activation marker analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "bba80c05-eee2-475c-9d0e-e41b0c622bd7",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C68",
+      "claim": "The small increase in the CD69+/CD25-/HLA-DR+ population in NRLIC is insufficient to explain the low reactivation rate of latently infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We only observed a statistically significant increase of NRLIC compared with RLIC in the CD69+/CD25-/HLA-DR+ population, however this small increase in a relatively minor population is insufficient to explain the low reactivation rate of latently infected cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the statistical analysis of T-cell activation markers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "bf383d4b-4504-408e-b6f8-992ef5f4a78b",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C69",
+      "claim": "Productive and inducible latent infections profiles appeared most similar in terms of chromatin marks.",
+      "claim_type": "EXPLICIT",
+      "source": "All three populations exhibited distinct profiles, although productive and inducible latent infections profiles appeared most similar (Figure 7A, Figure 7\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the chromatin analysis shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "2debe914-a681-4d6d-99b0-7f8deee50456",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C70",
+      "claim": "Non-reactivated latently infected cells appear distinct from the other populations (PIC and RLIC) in terms of chromatin features.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these data show similar features between productively infected cells and inducible latently infected cells, while non-reactivated latently infected cells appear distinct from the other populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the chromatin and integration site analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "0d0ff3da-6dea-499e-832d-ec46b2179294",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C71",
+      "claim": "The site of integration and the chromatin context play a prominent role in the fate of the infection itself, as well as for latency reversal.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings support a prominent role for the site of integration and the chromatin context for the fate of the infection itself, as well as for latency reversal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the integration site and chromatin analysis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "0571fbc8-a995-4402-b464-7578d6669eb5",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C72",
+      "claim": "Dual-color HIV-1 reporters allow for the identification and the isolation of latently infected cells from productively infected cells and uninfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Dual-color HIV-1 reporters are unique and powerful tools (Calvanese et al., 2013; Dahabieh et al., 2013), that allow for the identification and the isolation of latently infected cells from productively infected cells and uninfected cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the capabilities of dual-color HIV-1 reporters, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "97f85df0-9b08-4ec4-a727-14333985169d",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C73",
+      "claim": "Latency is established very early in the course of HIV-1 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Latency is established very early in the course of HIV-1 infection (Archin et al., 2012b; Chun et al., 1998; Whitney et al., 2014) and, until the advent of dual-reporter constructs, no primary HIV-1 latency models have allowed the study of latency heterogeneity at this very early stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Archin et al., 2012b; Chun et al., 1998; Whitney et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "3b8ed565-6e6b-4167-abdd-234bdc03ef21",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C74",
+      "claim": "Until the advent of dual-reporter constructs, no primary HIV-1 latency models have allowed the study of latency heterogeneity at this very early stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Latency is established very early in the course of HIV-1 infection (Archin et al., 2012b; Chun et al., 1998; Whitney et al., 2014) and, until the advent of dual-reporter constructs, no primary HIV-1 latency models have allowed the study of latency heterogeneity at this very early stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of previous models and the innovation of dual-reporter constructs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "3ac22b1a-985a-4a0d-a97d-83f77a2423ba",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C75",
+      "claim": "The use of env-defective viruses limits HIV replication to a single-round and thereby limits the appearance of defective viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of env-defective viruses limits HIV replication to a single-round and, thereby limits the appearance of defective viruses (Bruner et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bruner et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "374f80c6-6b22-4625-9119-97ecaa9967bf",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C76",
+      "claim": "Levels of cellular HIV RNA and virion production are not correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data are in agreement with previous reports, which show that levels of cellular HIV RNA and virion production are not correlated, and that the absolute number of cells being reactivated by \u03b1CD3/CD28 is indeed limited to a small fraction of latently infected cells (Cillo et al., 2014; Sanyal et al., 2017; Yucha et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Cillo et al., 2014; Sanyal et al., 2017; Yucha et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "a3ef4bbf-37a3-4160-8217-521a65322e96",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C77",
+      "claim": "The absolute number of cells being reactivated by \u03b1CD3/CD28 is limited to a small fraction of latently infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data are in agreement with previous reports, which show that levels of cellular HIV RNA and virion production are not correlated, and that the absolute number of cells being reactivated by \u03b1CD3/CD28 is indeed limited to a small fraction of latently infected cells (Cillo et al., 2014; Sanyal et al., 2017; Yucha et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Cillo et al., 2014; Sanyal et al., 2017; Yucha et al., 2017 and the authors' own data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "2b2717aa-235f-407f-bde1-f6a5dd2cbc01",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C78",
+      "claim": "Although LRAs combinations show synergy when measuring cell-associated HIV RNA, there is only partial additive effect at the level of individual cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although LRAs combinations show synergy when measuring cell-associated HIV RNA, we do not find such synergy at the level of individual cells, but rather only partial additive effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing bulk RNA measurements with single-cell analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "5daa2738-c94b-4c5d-ad27-5598ffdb1fdc",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C79",
+      "claim": "Single cell analysis is necessary when evaluating potential LRAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work, as well as that of others (Cillo et al., 2014; Sanyal et al., 2017; Yucha et al., 2017), demonstrate the importance of single cell analysis when it comes to the evaluation of potential LRAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the authors' work and cited studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "cc12464b-dfc5-4e6b-a398-1d1662cb3e14",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C80",
+      "claim": "It is necessary to determine whether potential increases in HIV RNA after stimulation in a bulk population result from a small number of highly productive cells, or from a larger but less productive population, as these two mechanisms likely have very different impacts on the latent reservoir.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it is necessary to determine wheter potential increases in HIV RNA after stimulation in a bulk population result from a small number of highly productive cells, or from a larger but less productive population, as these two mechanisms likely have very different impacts on the latent reservoir.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reasoning about the importance of distinguishing between different mechanisms of HIV RNA increase.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "3e63e19b-2d19-49d6-bebf-d13b08a51383",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C81",
+      "claim": "Different chromatin environments impose different degrees of transcriptional repression on the integrated HIV genome.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that different chromatin environments impose different degrees of transcriptional repression on the integrated HIV genome, with the non reactivatable latent HIV corresponding to the most repressive environment. (Chen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement supported by a citation to Chen et al., 2017.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "7a921eee-c1a2-46c5-86a0-989564c4f8cb",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C82",
+      "claim": "Non reactivatable latent HIV corresponds to the most repressive chromatin environment.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that different chromatin environments impose different degrees of transcriptional repression on the integrated HIV genome, with the non reactivatable latent HIV corresponding to the most repressive environment. (Chen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement supported by a citation to Chen et al., 2017 and the authors' data.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "0d24f719-8372-4b3b-a0f4-954c51e97238",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C83",
+      "claim": "HIVGKO provides a unique opportunity to explore the impact of HIV integration on the fate of the infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Since HIVGKO allows for the isolation of productively infected cells and reactivated latent cells from those that do not reactivate, it provides a unique opportunity to explore the impact of HIV integration on the fate of the infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the utility of the HIVGKO system based on its capabilities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "6703f425-f3ed-4d68-99e1-59e3f0ffc458",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C84",
+      "claim": "Different integration site-specific features contribute to latency, such as the chromatin structure, including adjacent loci but also the provirus location in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Different integration site-specific features contribute to latency, such as the chromatin structure, including adjacent loci but also the provirus location in the nucleus (Lusic and Giacca, 2015; Lusic et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Lusic and Giacca, 2015; Lusic et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "a31076b2-f488-46f2-bbbb-d40b14a480b6",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C85",
+      "claim": "Viral integration is a semi-random process.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral integration is a semi-random process (Bushman et al., 2005) in which HIV-1 preferentially integrates into active genes (Barr et al., 2006; Bushman et al., 2005; Demeulemeester et al., 2015; Ferris et al., 2010; Han et al., 2004; Lewinski et al., 2006; Mitchell et al., 2004; Schr\u00f6der et al., 2002; Sowd et al., 2016; Wang et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bushman et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "cc30e138-47f4-4361-b976-8fc21163ec9c",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C86",
+      "claim": "HIV-1 mainly integrates at the nuclear periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "Marini et al. recently reported that HIV-1 mainly integrates at the nuclear periphery (Marini et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Marini et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "20689d8a-2527-4d75-8db8-9e59943b5b45",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C87",
+      "claim": "LADs consist of H3K9me2 heterochromatin and are present at the nuclear periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "LADs consist of H3K9me2 heterochromatin and are present at the nuclear periphery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about LADs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "1f566595-6e86-424a-84c8-8fb127bf6b65",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C88",
+      "claim": "The pharmaceutical inhibition of H3K27me3 and H3K9me2/3 could sensitize latent proviruses to LRAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, several studies have shown that the pharmaceutical inhibition of H3K27me3 and H3K9me2/3 could sensitize latent proviruses to LRAs (Friedman et al., 2011; Nguyen et al., 2017; Tripathy et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Friedman et al., 2011; Nguyen et al., 2017; Tripathy et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "379fb201-a4c8-47b6-920a-039e58b58d35",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "claim_id": "C89",
+      "claim": "The less readily reactivatable population should be 'blocked and locked' using latency-promoting agents (LPAs).",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps, this latter population should rather be 'blocked and locked' using latency-promoting agents (LPAs), as described by several groups (Besnard et al., 2016; Kessing et al., 2017; Kim et al., 2016; Vranckx et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative therapeutic suggestion supported by citations to studies on LPAs.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "630bd9ee-8832-402d-9e74-34a19bbb8a28",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The second-generation dual-fluorescence HIV reporter HIVGKO improves upon the original HIVDuoFluoI by using codon-switched eGFP and mKO2 fluorescent proteins, resulting in proportional increases in latent and productive infections with viral input, increased double-positive cells, and accurate quantification of latent infections in primary CD4+ T cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C16 provide experimental validation of HIVGKO construct design and characterization (Figures 1A-F). Claims C39-C40 draw appropriate conclusions from the comparative data. The construct addresses recombination issues in the original reporter, shows dose-dependent infection, and properly distinguishes latent from productive infections based on viral mRNA/protein expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "627d4f54-1761-46cb-9b16-af3c71f9e3fd",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "HIVGKO-infected primary CD4+ T cells show similar responses to latency-reversing agents (LRAs) as ex vivo patient samples, with individual LRAs showing minimal effects but combinations of bryostatin-1 with JQ1 or panobinostat showing synergistic increases in HIV RNA (correlation r\u00b2=0.88, p=0.0056).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 present experimental data from both patient samples (n=4) and HIVGKO-infected cells showing consistent LRA response patterns (Figure 2A-B). Claim C20 provides statistical validation of the correlation between the two systems. The positive control (\u03b1CD3/CD28) shows expected fold-induction, supporting assay validity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "fe920143-261b-43b4-afd4-9b929a9cdc3f",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "None of the tested LRAs (individual or combinations) reactivated more than 5.5% of latently infected cells, with spontaneous reactivation at only 1.4% in DMSO-treated controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 and C60 present consistent single-cell flow cytometry data (Figure 3B) from four independent experiments showing remarkably low reactivation rates across all LRA treatments. This is a key finding that challenges the 'shock and kill' paradigm, though the sample size (n=4 donors) is modest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "9a1f1d1b-3176-4ce0-af36-1ab24e477fda",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Cell-associated HIV RNA quantification does not reflect the absolute number of cells undergoing viral reactivation; instead, induced HIV RNA comes from a small fraction of reactivated cells, and LRA combinations show only partial additive effects at the single-cell level despite apparent synergy in bulk RNA measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 and C76-C78 draw important conclusions from the discrepancy between bulk RNA measurements (Figure 2) and single-cell reactivation data (Figure 3). This is supported by citations to similar findings in the literature and the authors' own data showing <5% reactivation despite high RNA fold-changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "81d0d51d-5493-4247-af0c-31afb7637bc7",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Reactivated and non-reactivated latently infected cells show similar T-cell activation profiles after \u03b1CD3/CD28 stimulation, with nearly all cells upregulating CD69 but only <5% producing HIV, indicating that lack of cellular activation does not explain low reactivation rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 present flow cytometry data (Figure 4) showing comparable activation marker profiles between RLIC and NRLIC populations. Claims C67-C68 appropriately interpret these findings. The only significant difference (CD69+/CD25-/HLA-DR+ population) is correctly noted as insufficient to explain the low reactivation phenomenon.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "84105199-bbc7-49a6-b4ce-93c2b8e93ab8",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Integration site analysis of 1,803 proviruses revealed that most \u03b1CD3/CD28-induced latent proviruses were not integrated in genes responsive to T-cell activation signals, but PIC and RLIC integration events were associated with genes having significantly higher basal expression than NRLIC in both activated and resting T cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 reports the sequencing dataset (960 PIC, 681 NRLIC, 162 RLIC sites). Claims C27-C28 present integration site analysis using published gene expression datasets (Figure 5A-C). The analysis appropriately compares integration sites with T-cell activation-responsive genes and basal expression levels, though the lower number of RLIC sites (162) may limit statistical power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "88cbb407-f592-4db7-8c17-4c751745d8d6",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Integration site analysis shows that while the majority of integrations occur within genes across all populations, NRLIC has significantly lower genic integration and integration in transcribed regions (31%) compared to PIC (64%) and RLIC (58%), with most genic integrations in introns (>65%) and no correlation between viral orientation and infection fate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33 present comprehensive integration site characterization (Figure 6A-D) with appropriate statistical testing (two-proportion z-test). The findings are consistent with cited previous studies and show clear differences between populations. The analysis of transcription levels, genic vs. intergenic regions, and orientation is methodologically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "1dc38954-2a0d-4da8-95db-78d3c17cb509",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Chromatin analysis reveals distinct profiles among the three populations, with PIC and RLIC integration events associated with active chromatin marks (H3K36me3, H3K4me1) while NRLIC shows bias toward heterochromatin (H3K27me3, H3K9me3) and DNase hyposensitivity. Both latent populations (RLIC and NRLIC) show significantly higher integration in LADs (32% and 30.4%) compared to productive infections (23.6%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 and C69-C70 present chromatin analysis using ENCODE datasets (Figure 7A-B). The analysis of histone modifications and LAD localization is methodologically appropriate, using 500bp windows centered on integration sites. Statistical significance is reported (p<0.05) for LAD enrichment. The use of multiple ENCODE donors (n=3-4) strengthens the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "ea205ac9-a6bd-4bc0-8c96-838bcdfbc575",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The site of integration and chromatin context play a prominent role in determining the fate of HIV infection and latency reversal, with integration sites distinguishable between reactivatable and non-reactivatable populations in terms of chromatin functional states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71, C54, and C61 synthesize the integration site and chromatin analysis findings (Figures 5-7). The conclusion is well-supported by the distinct chromatin profiles, gene expression patterns, and LAD localization differences between populations. This represents a major mechanistic insight into HIV latency heterogeneity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "fb12b5b7-00b7-4748-ae90-82f47b4224b4",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The findings challenge the feasibility of the 'shock and kill' strategy, as LRAs only reactivate a limited fraction of latent proviruses. While 'shock and kill' might help eliminate a small subset of highly reactivatable latent HIV genomes, other approaches are necessary to control the less readily reactivatable population, and the heterogeneity of the latent reservoir calls for therapies addressing different pools of latently infected cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55, C62-C63, and C41-C43 draw appropriate conclusions from the experimental findings showing <5% reactivation rates and distinct chromatin profiles. These interpretations are logical extensions of the data, though claims C42-C43 include some speculation about future therapeutic approaches. The conclusions are appropriately cautious about the limitations of current 'shock and kill' strategies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "a83fca52-14cc-4cb8-97e8-171b86a61fb5",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Single-cell analysis is necessary when evaluating potential LRAs, as it is essential to determine whether increases in HIV RNA result from a small number of highly productive cells or a larger but less productive population, which have different impacts on the latent reservoir.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 present an important methodological conclusion supported by the discrepancy between bulk RNA measurements and single-cell reactivation data. This is reinforced by citations to similar findings in other studies (Cillo et al., 2014; Sanyal et al., 2017; Yucha et al., 2017). The reasoning is sound and has significant implications for LRA evaluation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "9bf1ce58-fb95-4b2f-8ca4-8b383947b201",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Different chromatin environments impose different degrees of transcriptional repression on integrated HIV genomes, with non-reactivatable latent HIV corresponding to the most repressive environment. Some non-induced proviruses in active regions may reactivate after multiple rounds due to stochastic activation, while better LRA combinations targeting H3K27me3 and H3K9me3 may reactivate proviruses in silenced chromatin. Inducible latent proviruses may result from integration in open chromatin followed by heterochromatin formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C56-C57 and C64, C81-C82 are largely speculative interpretations of the chromatin data, supported by citations to relevant studies but not directly tested in this work. While the speculation is reasonable given the data, these mechanistic models require experimental validation. The stochastic reactivation hypothesis and the temporal model of chromatin changes are plausible but unproven.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "9df30b79-161b-444e-b606-9f6b0b3033f6",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Latently reactivated cells are not cleared due to cytopathic effects or CTL response, implying that immunomodulatory approaches in addition to more potent LRAs are likely required to achieve a cure for HIV infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 appropriately cite Shan et al., 2012 for the observation about lack of clearance and draw a reasonable inference about the need for immunomodulatory approaches. While this is not directly tested in the current study, it is a well-supported conclusion from the cited literature and relevant to interpreting the implications of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "17e6c17d-78a8-4e96-9f21-4167f8618799",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "For a functional cure, a stably silenced, non-reactivatable provirus is preferable to chronic active infection, and the less readily reactivatable population should be 'blocked and locked' using latency-promoting agents (LPAs).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C44 and C89 present speculative therapeutic strategies not tested in this study. While the 'block and lock' approach is supported by citations to relevant studies, the preference for silenced proviruses over active infection is a value judgment about therapeutic goals rather than an experimental finding. These represent reasonable future directions but lack direct experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "d0f088bc-d7ad-4cba-a639-a26bb91dc2a4",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background on HIV latency and ART: ART has transformed HIV into a chronic condition, but interruption leads to rapid viral rebound due to proviral latency. HDACi clinical studies showed increases in HIV RNA but failed to significantly reduce the latent reservoir.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 provide well-established background information supported by appropriate citations. These are accurate representations of the current state of knowledge about ART, HIV latency, and the limitations of HDACi interventions in clinical trials.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "a5d8c540-a1ed-47ed-929f-e5f207c9fbce",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Current assays for measuring the latent reservoir have significant limitations: PCR-based assays overestimate due to defective genomes, VOA underestimates by 60-300 fold due to intact non-induced proviruses and stochastic reactivation, and defective proviruses can express detectable RNA and proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C11 accurately summarize limitations of current reservoir measurement techniques, supported by appropriate citations (Bruner et al., 2016; Ho et al., 2013; Sanyal et al., 2017; Pollack et al., 2017). These provide important context for the study's rationale and are well-established in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "c008dec0-5c14-4892-a54e-26c5c31b33a9",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "HIV-1 integration is a semi-random process preferentially targeting active genes through LEDGF (binding H3K36me3/H3K4me1) and CPSF6. The current data confirm HIV-1 preferentially targets actively transcribed regions, though non-inducible latent proviruses integrate more into silenced chromatin and LADs despite HIV integration being normally disfavored in these regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C53 combine established knowledge (C45-C48, supported by multiple citations) with the study's findings (C49-C53, supported by Figures 6-7). The integration of prior knowledge with new data is appropriate, and the findings about NRLIC integration patterns are well-supported by the chromatin analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "dad58462-6447-450e-9134-94218f27dd0d",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Dual-color HIV-1 reporters are unique tools allowing identification and isolation of latently infected cells. Latency is established early in HIV-1 infection, and until dual-reporter constructs, no primary models allowed study of early latency heterogeneity. The use of env-defective viruses limits replication to single-round and limits defective virus appearance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 provide methodological context supported by appropriate citations. These accurately describe the advantages of dual-reporter systems and the rationale for using env-defective viruses. The statements are well-established in the field and provide important justification for the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "e30ac90c-f667-45c1-9b2d-57ed176fa951",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "HIVGKO provides a unique opportunity to explore HIV integration's impact on infection fate. Different integration site-specific features (chromatin structure, nuclear location) contribute to latency. Viral integration is semi-random, HIV-1 mainly integrates at the nuclear periphery, and LADs consist of H3K9me2 heterochromatin at the nuclear periphery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C87 combine the study's contribution (C83) with established knowledge (C84-C87) supported by appropriate citations. The statement about HIVGKO's utility is a reasonable inference from the system's capabilities, and the background information is accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "dbc7e673-bf5b-4681-a6aa-6506b024ca56",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The 'shock and kill' strategy aims to reactivate and eliminate every replication-competent latent provirus, since a single remaining cell carrying a latent inducible provirus could theoretically reseed infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 accurately describe the theoretical rationale for 'shock and kill' strategies. While C66 includes the qualifier 'in theory,' this represents established understanding of HIV cure requirements and provides important context for evaluating the study's findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    },
+    {
+      "id": "b8786cfb-b135-486c-9c7d-184453ccc754",
+      "content_id": "2b2e5a4a-26b7-473d-a4dc-7029b47f45c7",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Pharmaceutical inhibition of H3K27me3 and H3K9me2/3 could sensitize latent proviruses to LRAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 is supported by citations to three relevant studies (Friedman et al., 2011; Nguyen et al., 2017; Tripathy et al., 2015). This represents established knowledge from the literature that provides context for potential future therapeutic approaches targeting the non-reactivatable population.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:16.970026Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f5fcbcfb-a7f5-45d5-994e-2e37c6b8e15a",
+      "result_id": "630bd9ee-8832-402d-9e74-34a19bbb8a28"
+    },
+    {
+      "claim_id": "19366cb4-38f7-47ae-91d8-b468afc52434",
+      "result_id": "630bd9ee-8832-402d-9e74-34a19bbb8a28"
+    },
+    {
+      "claim_id": "876e905f-0969-42ac-824e-0b75881aba76",
+      "result_id": "630bd9ee-8832-402d-9e74-34a19bbb8a28"
+    },
+    {
+      "claim_id": "8a9226a7-30b2-47ff-8cd2-ac54e63dd71c",
+      "result_id": "630bd9ee-8832-402d-9e74-34a19bbb8a28"
+    },
+    {
+      "claim_id": "f6bb3abe-a6dd-4779-a455-405b1dbef25d",
+      "result_id": "630bd9ee-8832-402d-9e74-34a19bbb8a28"
+    },
+    {
+      "claim_id": "8824a86d-853d-4e35-b31b-d063cfe4450c",
+      "result_id": "630bd9ee-8832-402d-9e74-34a19bbb8a28"
+    },
+    {
+      "claim_id": "71cd60e7-4cff-4d69-b864-a5031dbdc3b1",
+      "result_id": "630bd9ee-8832-402d-9e74-34a19bbb8a28"
+    },
+    {
+      "claim_id": "7432f517-73e4-40fb-8af7-0fbfade711b4",
+      "result_id": "627d4f54-1761-46cb-9b16-af3c71f9e3fd"
+    },
+    {
+      "claim_id": "03cbbf55-8e0f-4756-baa1-6bba3472f48c",
+      "result_id": "627d4f54-1761-46cb-9b16-af3c71f9e3fd"
+    },
+    {
+      "claim_id": "c0a3f389-494c-43a0-a82d-532013c16707",
+      "result_id": "627d4f54-1761-46cb-9b16-af3c71f9e3fd"
+    },
+    {
+      "claim_id": "b8c156b7-38be-4356-8e14-b5d632f5b2f5",
+      "result_id": "627d4f54-1761-46cb-9b16-af3c71f9e3fd"
+    },
+    {
+      "claim_id": "0ae24c81-493d-4c9b-8479-68e2b46df347",
+      "result_id": "fe920143-261b-43b4-afd4-9b929a9cdc3f"
+    },
+    {
+      "claim_id": "73ccf12f-f8e9-4ce2-874f-2a0914eb13e4",
+      "result_id": "fe920143-261b-43b4-afd4-9b929a9cdc3f"
+    },
+    {
+      "claim_id": "3966067d-6291-434b-8c9e-d5c5a9d6adb6",
+      "result_id": "fe920143-261b-43b4-afd4-9b929a9cdc3f"
+    },
+    {
+      "claim_id": "65631020-dad4-4235-aa7d-703064b4dfec",
+      "result_id": "9a1f1d1b-3176-4ce0-af36-1ab24e477fda"
+    },
+    {
+      "claim_id": "2d9fa90d-5aef-40a6-a71c-d3d83a04d4e5",
+      "result_id": "9a1f1d1b-3176-4ce0-af36-1ab24e477fda"
+    },
+    {
+      "claim_id": "374f80c6-6b22-4625-9119-97ecaa9967bf",
+      "result_id": "9a1f1d1b-3176-4ce0-af36-1ab24e477fda"
+    },
+    {
+      "claim_id": "a3ef4bbf-37a3-4160-8217-521a65322e96",
+      "result_id": "9a1f1d1b-3176-4ce0-af36-1ab24e477fda"
+    },
+    {
+      "claim_id": "2b2717aa-235f-407f-bde1-f6a5dd2cbc01",
+      "result_id": "9a1f1d1b-3176-4ce0-af36-1ab24e477fda"
+    },
+    {
+      "claim_id": "ae64b1d3-7788-40aa-b706-ac10b3ac759d",
+      "result_id": "81d0d51d-5493-4247-af0c-31afb7637bc7"
+    },
+    {
+      "claim_id": "a69410bf-2da9-4d19-83fc-e25bb17a05a6",
+      "result_id": "81d0d51d-5493-4247-af0c-31afb7637bc7"
+    },
+    {
+      "claim_id": "6b6552ab-679f-46b6-b1d7-3ec871bb953d",
+      "result_id": "81d0d51d-5493-4247-af0c-31afb7637bc7"
+    },
+    {
+      "claim_id": "892618db-98a7-47b9-b1a9-fe5d2db1b1fa",
+      "result_id": "81d0d51d-5493-4247-af0c-31afb7637bc7"
+    },
+    {
+      "claim_id": "bba80c05-eee2-475c-9d0e-e41b0c622bd7",
+      "result_id": "81d0d51d-5493-4247-af0c-31afb7637bc7"
+    },
+    {
+      "claim_id": "e705aaef-fb35-4211-a1ba-a80ba80ef2c6",
+      "result_id": "84105199-bbc7-49a6-b4ce-93c2b8e93ab8"
+    },
+    {
+      "claim_id": "d6b38e4e-b4c4-4975-b1ff-d36fcded2c5b",
+      "result_id": "84105199-bbc7-49a6-b4ce-93c2b8e93ab8"
+    },
+    {
+      "claim_id": "116be6f9-97b9-4b7e-b85c-90dd857b1f43",
+      "result_id": "84105199-bbc7-49a6-b4ce-93c2b8e93ab8"
+    },
+    {
+      "claim_id": "b1928534-c5e9-436d-8c6b-a0b44d4cc7f7",
+      "result_id": "88cbb407-f592-4db7-8c17-4c751745d8d6"
+    },
+    {
+      "claim_id": "8c63777c-c2b2-44dd-af02-ce942d55906c",
+      "result_id": "88cbb407-f592-4db7-8c17-4c751745d8d6"
+    },
+    {
+      "claim_id": "4e2d9711-4b86-4649-8ee6-68ebe2ae67b4",
+      "result_id": "88cbb407-f592-4db7-8c17-4c751745d8d6"
+    },
+    {
+      "claim_id": "3b518d48-1201-4d66-9272-2e140782eb6a",
+      "result_id": "88cbb407-f592-4db7-8c17-4c751745d8d6"
+    },
+    {
+      "claim_id": "1632f945-a2d5-44bb-9f24-ca478ba792c1",
+      "result_id": "88cbb407-f592-4db7-8c17-4c751745d8d6"
+    },
+    {
+      "claim_id": "c3c63fff-94dc-4497-a396-d8fdf0b99dd4",
+      "result_id": "1dc38954-2a0d-4da8-95db-78d3c17cb509"
+    },
+    {
+      "claim_id": "6486b2e0-e852-46b5-a30f-8f2fd98c1082",
+      "result_id": "1dc38954-2a0d-4da8-95db-78d3c17cb509"
+    },
+    {
+      "claim_id": "0a1fe4f1-2136-4b7e-8c10-c6824b30e62c",
+      "result_id": "1dc38954-2a0d-4da8-95db-78d3c17cb509"
+    },
+    {
+      "claim_id": "bf383d4b-4504-408e-b6f8-992ef5f4a78b",
+      "result_id": "1dc38954-2a0d-4da8-95db-78d3c17cb509"
+    },
+    {
+      "claim_id": "2debe914-a681-4d6d-99b0-7f8deee50456",
+      "result_id": "1dc38954-2a0d-4da8-95db-78d3c17cb509"
+    },
+    {
+      "claim_id": "0d0ff3da-6dea-499e-832d-ec46b2179294",
+      "result_id": "ea205ac9-a6bd-4bc0-8c96-838bcdfbc575"
+    },
+    {
+      "claim_id": "1c350264-0954-45e2-ab81-30deb1d8a022",
+      "result_id": "ea205ac9-a6bd-4bc0-8c96-838bcdfbc575"
+    },
+    {
+      "claim_id": "c9e70c6b-b74b-4ca1-ae89-c7c2368e93b4",
+      "result_id": "ea205ac9-a6bd-4bc0-8c96-838bcdfbc575"
+    },
+    {
+      "claim_id": "4fbb55b5-d775-4d16-b8b4-1970a0975b83",
+      "result_id": "fb12b5b7-00b7-4748-ae90-82f47b4224b4"
+    },
+    {
+      "claim_id": "ceb794f9-c3a0-4b64-ada7-82ef06aca8dc",
+      "result_id": "fb12b5b7-00b7-4748-ae90-82f47b4224b4"
+    },
+    {
+      "claim_id": "7ac3b032-4350-4a1f-aa22-cd0228c466ed",
+      "result_id": "fb12b5b7-00b7-4748-ae90-82f47b4224b4"
+    },
+    {
+      "claim_id": "b7c87065-6c58-4e8b-b623-a714e9c50197",
+      "result_id": "fb12b5b7-00b7-4748-ae90-82f47b4224b4"
+    },
+    {
+      "claim_id": "ca4d1e7e-2958-4593-a0b7-b299af990543",
+      "result_id": "fb12b5b7-00b7-4748-ae90-82f47b4224b4"
+    },
+    {
+      "claim_id": "0b7b8c13-0e9d-4e5f-ad6f-2e05c2d0fc62",
+      "result_id": "fb12b5b7-00b7-4748-ae90-82f47b4224b4"
+    },
+    {
+      "claim_id": "5daa2738-c94b-4c5d-ad27-5598ffdb1fdc",
+      "result_id": "a83fca52-14cc-4cb8-97e8-171b86a61fb5"
+    },
+    {
+      "claim_id": "cc12464b-dfc5-4e6b-a398-1d1662cb3e14",
+      "result_id": "a83fca52-14cc-4cb8-97e8-171b86a61fb5"
+    },
+    {
+      "claim_id": "863fe06c-e288-434b-bd2a-1c028eede219",
+      "result_id": "9bf1ce58-fb95-4b2f-8ca4-8b383947b201"
+    },
+    {
+      "claim_id": "90f90085-b79d-40c9-87af-b585a753ba76",
+      "result_id": "9bf1ce58-fb95-4b2f-8ca4-8b383947b201"
+    },
+    {
+      "claim_id": "a8d50604-34b5-4bd5-85ad-5c31685244b2",
+      "result_id": "9bf1ce58-fb95-4b2f-8ca4-8b383947b201"
+    },
+    {
+      "claim_id": "3e63e19b-2d19-49d6-bebf-d13b08a51383",
+      "result_id": "9bf1ce58-fb95-4b2f-8ca4-8b383947b201"
+    },
+    {
+      "claim_id": "7a921eee-c1a2-46c5-86a0-989564c4f8cb",
+      "result_id": "9bf1ce58-fb95-4b2f-8ca4-8b383947b201"
+    },
+    {
+      "claim_id": "78db12d1-de03-4806-9c87-0bc3b4745472",
+      "result_id": "9df30b79-161b-444e-b606-9f6b0b3033f6"
+    },
+    {
+      "claim_id": "d96eb2ca-69af-4463-992c-15ceaa897599",
+      "result_id": "9df30b79-161b-444e-b606-9f6b0b3033f6"
+    },
+    {
+      "claim_id": "e33dfb80-f9d6-47b3-b51a-5647c54f9de1",
+      "result_id": "17e6c17d-78a8-4e96-9f21-4167f8618799"
+    },
+    {
+      "claim_id": "379fb201-a4c8-47b6-920a-039e58b58d35",
+      "result_id": "17e6c17d-78a8-4e96-9f21-4167f8618799"
+    },
+    {
+      "claim_id": "520ca195-f7d7-40c3-8526-87421c3bdfa3",
+      "result_id": "d0f088bc-d7ad-4cba-a639-a26bb91dc2a4"
+    },
+    {
+      "claim_id": "18436bc5-509a-429f-9b16-05bc979d0865",
+      "result_id": "d0f088bc-d7ad-4cba-a639-a26bb91dc2a4"
+    },
+    {
+      "claim_id": "c5e00354-e0e8-4c48-936d-d5d527c52888",
+      "result_id": "d0f088bc-d7ad-4cba-a639-a26bb91dc2a4"
+    },
+    {
+      "claim_id": "a3ea504f-70df-4d0f-aec6-eb1ac7ad84a4",
+      "result_id": "d0f088bc-d7ad-4cba-a639-a26bb91dc2a4"
+    },
+    {
+      "claim_id": "2c7a0a9b-ee31-494c-830b-5002b85f745a",
+      "result_id": "d0f088bc-d7ad-4cba-a639-a26bb91dc2a4"
+    },
+    {
+      "claim_id": "e3162b51-90f5-4959-9747-31d5b990fd53",
+      "result_id": "d0f088bc-d7ad-4cba-a639-a26bb91dc2a4"
+    },
+    {
+      "claim_id": "6449263c-c65e-48ef-96ac-eb209d61fdde",
+      "result_id": "a5d8c540-a1ed-47ed-929f-e5f207c9fbce"
+    },
+    {
+      "claim_id": "532fa19b-9e59-4828-ad5a-e8d78babfb0d",
+      "result_id": "a5d8c540-a1ed-47ed-929f-e5f207c9fbce"
+    },
+    {
+      "claim_id": "7e92d11b-7d36-4c9d-85f1-1f81e099f222",
+      "result_id": "a5d8c540-a1ed-47ed-929f-e5f207c9fbce"
+    },
+    {
+      "claim_id": "b73ec483-40d4-4fb0-b63f-35e92782222f",
+      "result_id": "a5d8c540-a1ed-47ed-929f-e5f207c9fbce"
+    },
+    {
+      "claim_id": "3aeafefa-6e73-4071-8bba-2887248f83f7",
+      "result_id": "a5d8c540-a1ed-47ed-929f-e5f207c9fbce"
+    },
+    {
+      "claim_id": "c0f3fa79-7378-4301-b7ec-38510be6e966",
+      "result_id": "c008dec0-5c14-4892-a54e-26c5c31b33a9"
+    },
+    {
+      "claim_id": "c5a22cc2-5939-48ba-b341-7eebb23fd606",
+      "result_id": "c008dec0-5c14-4892-a54e-26c5c31b33a9"
+    },
+    {
+      "claim_id": "236694fd-7cf0-4dcb-a1ef-566e51cb1ea9",
+      "result_id": "c008dec0-5c14-4892-a54e-26c5c31b33a9"
+    },
+    {
+      "claim_id": "061b1fc5-3f8c-4587-9af9-b734664d4c94",
+      "result_id": "c008dec0-5c14-4892-a54e-26c5c31b33a9"
+    },
+    {
+      "claim_id": "43cbe6a7-80f7-4c5e-9693-df52d66e012f",
+      "result_id": "c008dec0-5c14-4892-a54e-26c5c31b33a9"
+    },
+    {
+      "claim_id": "4851434e-3cf1-404e-ab47-2cb3c212379d",
+      "result_id": "c008dec0-5c14-4892-a54e-26c5c31b33a9"
+    },
+    {
+      "claim_id": "c3cddbb6-fb1a-4487-b851-e5ac4f93b5c6",
+      "result_id": "c008dec0-5c14-4892-a54e-26c5c31b33a9"
+    },
+    {
+      "claim_id": "eafbe4b2-5fa1-4e0e-b12f-622b461ee4f8",
+      "result_id": "c008dec0-5c14-4892-a54e-26c5c31b33a9"
+    },
+    {
+      "claim_id": "330995f0-8e17-4bcd-81c3-959c1e1fbaac",
+      "result_id": "c008dec0-5c14-4892-a54e-26c5c31b33a9"
+    },
+    {
+      "claim_id": "0571fbc8-a995-4402-b464-7578d6669eb5",
+      "result_id": "dad58462-6447-450e-9134-94218f27dd0d"
+    },
+    {
+      "claim_id": "97f85df0-9b08-4ec4-a727-14333985169d",
+      "result_id": "dad58462-6447-450e-9134-94218f27dd0d"
+    },
+    {
+      "claim_id": "3b8ed565-6e6b-4167-abdd-234bdc03ef21",
+      "result_id": "dad58462-6447-450e-9134-94218f27dd0d"
+    },
+    {
+      "claim_id": "3ac22b1a-985a-4a0d-a97d-83f77a2423ba",
+      "result_id": "dad58462-6447-450e-9134-94218f27dd0d"
+    },
+    {
+      "claim_id": "0d24f719-8372-4b3b-a0f4-954c51e97238",
+      "result_id": "e30ac90c-f667-45c1-9b2d-57ed176fa951"
+    },
+    {
+      "claim_id": "6703f425-f3ed-4d68-99e1-59e3f0ffc458",
+      "result_id": "e30ac90c-f667-45c1-9b2d-57ed176fa951"
+    },
+    {
+      "claim_id": "a31076b2-f488-46f2-bbbb-d40b14a480b6",
+      "result_id": "e30ac90c-f667-45c1-9b2d-57ed176fa951"
+    },
+    {
+      "claim_id": "cc30e138-47f4-4361-b976-8fc21163ec9c",
+      "result_id": "e30ac90c-f667-45c1-9b2d-57ed176fa951"
+    },
+    {
+      "claim_id": "20689d8a-2527-4d75-8db8-9e59943b5b45",
+      "result_id": "e30ac90c-f667-45c1-9b2d-57ed176fa951"
+    },
+    {
+      "claim_id": "d8757a4c-6a42-4369-917a-843729858206",
+      "result_id": "dbc7e673-bf5b-4681-a6aa-6506b024ca56"
+    },
+    {
+      "claim_id": "cf85a85f-89db-484c-84ae-61f1d1db5ae6",
+      "result_id": "dbc7e673-bf5b-4681-a6aa-6506b024ca56"
+    },
+    {
+      "claim_id": "1f566595-6e86-424a-84c8-8fb127bf6b65",
+      "result_id": "b8786cfb-b135-486c-9c7d-184453ccc754"
+    }
+  ],
+  "comparisons": []
+}

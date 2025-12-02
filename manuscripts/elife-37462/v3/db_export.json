@@ -1,0 +1,1794 @@
+{
+  "submission": {
+    "id": "f33e5149-a7a5-4a78-83c3-f2061b7c19e1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T02:09:30.213131Z",
+    "updated_at": "2025-12-02T02:09:30.213131Z"
+  },
+  "content": [
+    {
+      "id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "submission_id": "f33e5149-a7a5-4a78-83c3-f2061b7c19e1",
+      "content_type": "manuscript",
+      "content_text": "# Epigenetic age-predictor for mice based on three CpG sites\n\n## Authors\n\n- Yang Han<sup>1</sup>\n- Monika Eipel<sup>1</sup>\n- Julia Franzen<sup>1</sup>\n- Vadim Sakk<sup>3</sup>\n- Bertien Dethmers-Ausema<sup>4</sup>\n- Laura Yndriago<sup>5</sup>\n- Ander Izeta<sup>5</sup>\n- Gerald de Haan<sup>4</sup> ([ORCID: 0000-0001-9706-0138](https://orcid.org/0000-0001-9706-0138))\n- Hartmut Geiger<sup>3</sup> ([ORCID: 0000-0002-5794-5430](https://orcid.org/0000-0002-5794-5430))\n- Wolfgang Wagner<sup>1</sup> ([ORCID: 0000-0002-1971-3217](https://orcid.org/0000-0002-1971-3217)) \u2020\n\n### Affiliations\n\n1. Helmholtz-Institute for Biomedical Engineering, Stem Cell Biology and Cellular Engineering RWTH Aachen University Medical School Aachen Germany\n2. Institute for Biomedical Engineering \u2013 Cell Biology University Hospital RWTH Aachen Aachen Germany\n3. Institute of Molecular Medicine Ulm University Ulm Germany\n4. Laboratory of Ageing Biology and Stem Cells, European Research Institute for the Biology of Ageing University Medical Center Groningen Groningen Netherlands\n5. Tissue Engineering Laboratory Instituto Biodonostia San Sebastian Spain\n6. Department of Biomedical Engineering, School of Engineering Tecnun-University of Navarra San Sebastian Spain\n7. Experimental Hematology and Cancer Biology Cincinnati Children's Hospital Burnet Campus Cincinnati United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEpigenetic clocks for mice were generated based on deep-sequencing analysis of the methylome. Here, we demonstrate that site-specific analysis of DNA methylation levels by pyrosequencing at only three CG dinucleotides (CpGs) in the genes Prima1, Hsf4, and Kcns1 facilitates precise estimation of chronological age in murine blood samples, too. DBA/2 mice revealed accelerated epigenetic aging as compared to C57BL6 mice, which is in line with their shorter life-expectancy. The three-CpG-predictor provides a simple and cost-effective biomarker to determine biological age in large intervention studies with mice.\n\n## Introduction\n\nAge-associated DNA methylation (DNAm) was first described for humans after Illumina Bead Chip microarray data became available to enable cross comparison of thousands of CpG loci (Bocklandt et al., 2011; Koch and Wagner, 2011). Many of these age-associated CpGs were then integrated into epigenetic age-predictors (Hannum et al., 2013; Horvath, 2013; Weidner et al., 2014). However, site-specific DNAm analysis at individual CpGs can also provide robust biomarkers for aging. For example, we have described that DNAm analysis at only three CpGs enables age-predictions for human blood samples with a mean absolute deviation (MAD) from chronological age of less than five years (Weidner et al., 2014). Such simplistic age-predictors for human specimen are widely used because they enable fast and cost-effective analysis in large cohorts.\n\nRecently, epigenetic clocks were also published for mice by using either reduced representation bisulfite sequencing (RRBS) or whole genome bisulfite sequencing (WGBS) (Petkovich et al., 2017; Stubbs et al., 2017; Wang et al., 2017). For example, Petkovich et al. described a 90 CpG model for blood (Petkovich et al., 2017), and Stubbs and coworkers a 329 CpG model for various different tissues (Stubbs et al., 2017). Nutrition and genetic background seem to affect the epigenetic age of mice \u2013 and thereby possibly aging of the organism (Cole et al., 2017; Hahn et al., 2017; Maegawa et al., 2017). In analogy, epigenetic aging of humans is associated with life expectancy, indicating that it rather reflects biological age than chronological age (Lin et al., 2016; Marioni et al., 2015). However, DNAm profiling by deep sequencing technology is technically still challenging, relatively expensive, and not every sequencing-run covers all relevant CpG sites with enough reading depth.\n\n## Results\n\nTherefore, we established pyrosequencing assays for nine genomic regions of previously published predictors (Petkovich et al., 2017; Stubbs et al., 2017). These regions were preselected to have multiple age-associated CpGs in close vicinity. DNAm was then analyzed in 24 blood samples of female C57BL/6 mice that covered a broad range of 12 different age groups (11 to 117 weeks old). The nine amplicons covered a total of 71 CpG sites (Supplementary file 1) and we used machine learning to identify the best fitted model for epigenetic age-predictions using cross-fold validation on the training set. The best results were observed for 15 CpGs from five different amplicons that provided an extremely high correlation with chronological age in the training set (R2\u00a0=\u00a00.99; mean absolute deviation [MAD]=2.76 weeks; Supplementary file 2), albeit the training set might be too small for this approach. To make the method more easily applicable and more cost-effective, we wanted to focus on less CpGs. When we varied the regularization parameters for models with less CpGs, the precision declined significantly. For example the best model with three CpGs comprised the three CpGs of Hsf4 (CpGs# 3,4,5) that also revealed the overall highest Pearson correlations with chronological age (R2\u00a0=\u00a00.95; MAD\u00a0=\u00a05.24 weeks). However, combination of different hypo- and hypermethylated amplicons might be advantageous to facilitate better assessment of plausibility of the results. Therefore, we alternatively selected those three CpGs that revealed the highest Pearson correlation with chronological age in different amplicons. These three CpGs were associated with the genes Proline rich membrane anchor 1 (Prima1: chr12:103214639; R2\u00a0=\u00a00.71), Heat shock transcription factor 4 (Hsf4: chr8:105271000; R2\u00a0=\u00a00.95) and Potassium voltage-gated channel modifier subfamily S member 1 (Kcns1: chr2:164168110; R2\u00a0=\u00a00.83; Figure 1A\u2013C; Figure 1\u2014figure supplement 1). Notably, all three CpGs were derived from the epigenetic age-predictor for blood samples (Petkovich et al., 2017). A multivariable model for age-predictions was established for DNAm at the CpGs in Prima 1 (\u03b1), Hsf4 (\u03b2), and Kcns1 (\u03b3):\n\nPredicted ageC57BL/6\u00a0(in weeks)\u00a0=\u00a0\u221258.076\u00a0+\u00a00.25788\u00a0\u03b1\u00a0+\u00a03.06845\u00a0\u03b2\u00a0+\u00a01.00879\u00a0\u03b3\n\nAge-predictions correlated very well with the chronological age of C57BL/6 mice in the training set (R2\u00a0=\u00a00.96;\u00a0MAD\u00a0=\u00a04.86\u00a0weeks;\u00a0Figure 1D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/37462/elife-37462-fig1-v3.jpg)\n\n**Figure 1.:** (a\u2013c) DNA methylation (DNAm) of three CpGs in the genes Prima1, Hsf4 and Kcns1 was analyzed by pyrosequencing in 24 C57BL/6 mice (training set). Coefficient of determination (R2) of DNAm versus chronological age is indicated. (d)\u00a0Based on these age-associated DNAm changes a multivariable model for age prediction was calculated. (e\u2013g) Subsequently, two independent validation sets were analyzed: 21 C57BL/6 mice from the University of Ulm and 19 C57BL/6 mice from the University of Groningen (validation sets 1 and 2, respectively). (h) Age predictions with the three-CpG-model revealed a high correlation with chronological age in the independent validation sets (MAD\u00a0=\u00a0mean absolute deviation; MAE\u00a0=\u00a0median absolute error).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37462/elife-37462-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Sequences for the three genomic regions are depicted and CpG sites (red) are numbered by the dispensation order. The relevant CpGs with highest age-correlation are highlighted in bold.\n\nOur three CpG age-predictor was subsequently validated in a blinded manner for 21 C57BL/6J mice (7 to 104 weeks old) from the University of Ulm (validation set 1) and 19 C57BL/6J mice (14 to 109 weeks old) from the University of Groningen (validation set 2). The results of both validation sets revealed high correlations with chronological age (R2\u00a0=\u00a00.95 and 0.91, respectively; Figure 1E\u2013H) with relatively small MADs (6.9 and 7.1 weeks) and median absolute errors (MAE; 5.0 and 5.9 weeks). Thus, our age-predictions seem to have similar precision as previously described for multi-CpG predictors based on RRBS or WGBS data (Petkovich et al., 2017; Stubbs et al., 2017; Wang et al., 2017).\n\nGender did not have significant impact on our epigenetic age-predictions for mice (Figure 2), as described before (Maegawa et al., 2017; Petkovich et al., 2017; Stubbs et al., 2017). In contrast, the human epigenetic clock is clearly accelerated in male donors (Hannum et al., 2013; Horvath, 2013; Weidner et al., 2014). This coincides with shorter life expectancy in men than woman, whereas in mice there are no consistent sex differences in longevity (Goodrick, 1975).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/37462/elife-37462-fig2-v3.jpg)\n\n**Figure 2.:** The deviations of predicted age by our three-CpG predictor versus chronological age did not reveal significant differences between female and male C57BL/6 mice (Mann\u2013Whitney U test p=0.6).\n\nTo address the question if our three CpG signature was also applicable for other tissues than blood we analyzed the DNAm in skin, kidney, intestine, lung, liver, heart, brain, testis, and pancreas of 3 young (9.6 weeks old) and three old mice (56.9 weeks old). In all tissues tested the samples of old mice were predicted to be older using our three CpG signature. However, the different DNAm levels clearly demonstrate that the model needs to be retrained to be applied for these tissues (Figure 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/37462/elife-37462-fig3-v3.jpg)\n\n**Figure 3.:** Different tissues were isolated of three young (9.6 weeks) and three old mice (56.9 weeks) and DNAm was analyzed at the three relevant CpGs in (a) Prima1, (b) Hsf4, and (c) Kcns1. Epigenetic age-predictions using the 3 CpG model for blood demonstrated also significant differences between young and old mice in skin, intestine, brain, and testis (mean\u00a0\u00b1\u00a0standard deviation; Student t-tests: *p<0.05; **p<0.01; ***p<0.001).\n\nSubsequently, we analyzed epigenetic aging of DBA/2 mice that have a shorter life expectancy than C57BL/6 mice (Goodrick, 1975) (33 mice from Ulm and Groningen; 6 to 109 weeks old). The three CpGs in Prima1, Hsf4 and Kcns1 revealed high correlation with chronological age (R2\u00a0=\u00a00.91, 0.88 and 0.83, respectively), albeit the offset in DNAm between DBA/2 and C57BL/6 mice indicated that the signature needs to be retrained for different mouse strains (Figure 4a\u2013c). Notably, the slopes were higher in DBA/2 mice, particularly for the CpG in Prima1. Furthermore, DNAm of Hsf4 increased at a higher rate in young DBA/2 mice, indicating that it is more accurately modelled as a function of logarithmic age. This has also been described in human for many age-associated CpGs in pediatric cohorts (Alisch et al., 2012). In fact, epigenetic age-predictions in DBA/2 mice seemed to follow a logarithmic model of age (R2\u00a0=\u00a00.89; Figure 4d) rather than a linear association (R2\u00a0=\u00a00.86). These results provided evidence for accelerated epigenetic aging of DBA/2 mice.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/37462/elife-37462-fig4-v3.jpg)\n\n**Figure 4.:** (a\u2013c) Age-related DNA methylation (DNAm) determined by pyrosequencing assay for three candidate CpGs on 33 of DBA/2 blood samples (14 mice from the University of Ulm and 19 mice from the University of Groningen; red). For comparison we provided measurements of the C57BL/6 mice (only from validation sets; blue). (d) Epigenetic age-predictions using the three CpG multivariable model for the C57BL/6 mice (blue; linear regression) and DBA/2 mice (red, logarithmic regression). Age-predictions in DBA/2 mice rather followed a logarithmic regression (R\u00a0=\u00a0Pearson correlation); (e) Based on the DNAm measurements in DBA/2 we adjusted the multivariate regression model for age-predictions of this mouse strain as described in the text (DBA/2 predictor).\n\nEither way, epigenetic age-predictions were overall significantly overestimated in the shorter-lived DBA/2 mice, suggesting that age-predictors need to be adjusted for different inbreed mice strains. To this end, we have retrained a multivariate model for DBA/2 mice:\n\nPredicted ageDBA/2 (in weeks)\u00a0=\u00a087.54294\u20131.22221 \u03b1\u00a0+\u00a00.991558 \u03b2\u00a0+\u00a00.355444 \u03b3\n\nThis adjusted model facilitated relatively precise age-predictions for DBA/2 mice (R2\u00a0=\u00a00.95; MAD\u00a0=\u00a07.1 weeks; MAE\u00a0=\u00a05.3 weeks; Figure 4e).\n\n## Discussion\n\nGeneration of confined epigenetic signatures is always a tradeoff between integrating more CpGs for higher precision and higher costs for analysis (Wagner, 2017). It was somewhat unexpected that with only three CpGs our signature facilitated similar precision of epigenetic age-predictions as the previously published signatures based on more than 90 CpGs. This can be attributed to the higher precision of DNAm measurements at individual CpGs by bisulfite pyrosequencing, which is one of the most precise methods for determining DNAm at single CpG resolution (BLUEPRINT consortium, 2016). Particularly in RRBS data not all CpG sites are covered in all samples and a limited number of reads notoriously entails lower precision of DNAm levels at these genomic locations. Thus, genome wide deep sequencing approaches facilitate generation of robust large epigenetic age-predictors, while site specific analysis may compensate by higher precision of DNAm measurement at individual CpGs.\n\nThe ultimate goal of epigenetic age-predictors for mice is not to develop near perfect age predictors, but to provide a surrogate for biological aging that facilitates assessment of interventions on aging. In fact, using deep sequencing approaches (RRBS or WGBS) several groups already indicated that relevant parameters that affect aging of the organism - such as diet, genetic background, and drugs - do also impact on epigenetic aging (Cole et al., 2017; Hahn et al., 2017; Maegawa et al., 2017). It is yet unclear if epigenetic aging signatures can be specifically trained to either correlate with chronological age or biological age. For humans, recent studies indicate that this might be possible (Levine et al., 2018) and we have previously demonstrated that even individual age-associated CpGs can be indicative for life expectancy (Zhang et al., 2017). Further studies will be necessary to gain better understanding how epigenetic age predictions are related to the real state of biological aging, and how it is related to alternative approaches to quantify biological aging, such as telomere length (Belsky et al., 2018).\n\nOur three CpG model has been trained for blood samples \u2013 a specimen that is commonly used in biochemical analysis and the small required volume can be taken without sacrificing the mice. However, epigenetic aging may occur at different rates in different tissues. It is difficult to address this question in humans because it is difficult to collect samples of various tissues in large aging cohorts, whereas this is feasible in mice. We demonstrate that age-associated DNAm changes occur in multiple tissues in our three CpGs albeit they were initially identified in blood (Petkovich et al., 2017). Furthermore, DNAm levels may vary between different hematopoietic subsets (Frobel et al., 2018; Houseman et al., 2014). In the future, sorted subsets should be analyzed to determine how the three CpG signature is affected by blood counts.\n\nThe results of our three CpG signature suggest that epigenetic aging is accelerated in DBA/2 mice. Notably, in elderly DBA/2 mice the epigenetic age predictions revealed higher \u2018errors\u2019 from chronological age, which might be attributed to the fact that the variation of lifespan is higher in DBA/2 than C57BL/6 mice (de Haan et al., 1998; Goodrick, 1975). It will be important to validate the association of the epigenetic age-predictions with biological age by additional correlative studies, including life expectancy in mice.\n\nTaken together, we describe an easily applicable but quite precise approach to determine epigenetic age of mice. We believe that our assay will be instrumental to gain additional insight into mechanisms that regulate age-associated DNAm and for longevity intervention studies in mice.\n\n## Materials and methods\n\n### Mouse strains and blood collection\n\nBlood samples of C57BL/6J mice of the training set and of the validation set one were taken at the University of Ulm by submandibular bleeding (100\u2013200 \u03bcl) of living mice or postmortem from the vena cava. C57BL/6J samples of the validation set two were taken at the University of Groningen from the cheek. DBA/2J samples were taken at the University of Ulm (n\u00a0=\u00a014) and Groningen (n\u00a0=\u00a019). All mice were accommodated under pathogen-free conditions. Experiments were approved by the Institutional Animal Care of the Ulm University as well as by Regierungspr\u00e4sidium T\u00fcbingen and by the Institutional Animal Care and Use Committee of the University of Groningen (IACUC-RUG), respectively. To analyze age-associated changes in different tissues we used three young (9.6 weeks old) and three old mice (56.9 weeks old) C57BL/6J mice (JaxMice) in accordance with relevant Spanish and European guidelines after approval by the Biodonostia Animal Care Committee. These mice were sacrificed and dissected immediately. 25 mg of tissue (10 mg in the case of spleen) or 200 \u00b5l of blood were used for DNA extraction.\n\n### Genomic DNA isolation and bisulfite conversion\n\nGenomic DNA was isolated from 50 \u00b5l blood using the QIAamp DNA Mini Kit (Qiagen, Hilden, Germany). Kidney and liver DNA extractions were digested with Ribonuclease A (100 mg/ml, Sigma R4875). DNA concentration was quantified by Nanodrop 2000 Spectrophotometers (Thermo Scientific, Wilmington, USA). 200 ng of genomic DNA was subsequently bisulfite-converted with the EZ DNA Methylation Kit (Zymo Research, Irvine, USA).\n\n### Pyrosequencing\n\nBisulfite converted DNA was subjected to PCR amplification. Primers were purchased at Metabion and the sequences are provided in Supplementary file 3. 20 \u00b5g PCR product was immobilized to 5 \u00b5l Streptavidin Sepharose High Performance Bead (GE Healthcare, Piscataway, NJ, USA), and then annealed to 1 \u00b5l sequencing primer (5 \u03bcM) for 2 min at 80\u00b0C. Amplicons were sequenced on PyroMark Q96 ID System (Qiagen, Hilden, Germany) and analyzed with PyroMark Q CpG software (Qiagen).\n\n### Alternative approaches to select CpGs for multivariable models\n\nWe used a penalized regression model from the R package glmnet on the training dataset to establish a predictor of mouse age based on CpG methylation. The alpha parameter of glmnet was set to 1 (lasso regression) and the lambda parameter was chosen by cross-fold validation of the training dataset (10-fold cross validation). Alternatively, we trained our multivariable model with preselected CpGs based on location in three different amplicons, high Pearson correlation (R) of DNAm with chronological age, and combination of hyper- and hypomethylated sites.\n\n### Statistical analysis\n\nLinear regressions, MAD and MAE were calculated with Excel. Statistical significance of the deviations between predicted and chronological age was estimated by Mann\u2013Whitney U test or Student\u00b4s t-test as indicated.\n",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "c9c55de8-36c4-40f9-854c-d88a23aa5dd9",
+      "submission_id": "f33e5149-a7a5-4a78-83c3-f2061b7c19e1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Vadim N Gladyshev, Brigham and Women's Hospital, Harvard Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.37462.014](https://doi.org/10.7554/eLife.37462.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Epigenetic Age-Predictor for Mice based on Three CpG Sites\" for consideration by eLife. Your article has been reviewed by three peer reviewers and the evaluation has been overseen by a Reviewing Editor and Jessica Tyler as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. We consider this work more appropriate in the category of a Tools and Resources paper rather than as a Research Article.\n\nSummary:\n\nThe submitted study presents a new methylation clock for mouse blood based on analysis of only three CpG sites. This seems to be a useful and practical tool, as previous studies produced accurate methylation clocks based on ~100 sites. The training set included 24 blood samples obtained from C57BL/6 mice representing 12 age groups ranging from 11 to 117 week old. Although the number of samples is not large, fair representation of age groups seems to make the clock usable across ages. The authors focused on 9 genomic regions enriched in age-associated sites obtained from previous studies. Three individual sites with the highest correlation with the training set were then selected, and the clock was built based on a simple multivariate linear model. The validation set included 21 mice from the same site (University of Ulm) and 19 mice from a different site (University of Groningen). Precision of the clock was equal to MAE = 3.6 weeks for the training set and MAE = 5 and MAE = 5.9 weeks for validation sets. This is comparable with the available clocks produced by other methods. The new clock was applied to 25 samples of DBA/2 mice having a shorter lifespan. The clock showed a higher age for these short-lived mice compared to C57BL/6 mice of the same chronological age.\n\nEssential revisions:\n\n1) Methods used for site selection are not completely clear. The authors explain their selection by choosing the sites with maximal correlation with age. However, first, it's not clear why exactly three sites were chosen. Second, selection of sites with maximal individual correlation doesn't guarantee that the multivariate model based on these sites would result in highest precision. To make site selection more convincing, you may apply a machine learning approach (linear model with L1 regularization) to the whole set of sites (all sites from 9 genomic regions) and vary the regularization parameter to obtain models with different numbers of sites. Then, these models can be applied to the validation set 1, and precision can be calculated. In this case, you could show how precision changes with the number of sites (the number of remaining sites in the model on the x axis and precision (R2 or MAE) on the y axis). This will tell how much precision you lose when proceeding to the model with fewer sites. Based on this plot, you could select the model with the optimal number of sites (minimal number of sites that provides precision, which doesn't significantly increase with the addition of additional sites). And then apply it to the validation set 2 to get the unbiased estimate of precision. This approach could make the analysis much more convincing and also explain the choice of the number of sites.\n\n2) R2 is shown for every training and validation set as a metric of quality. However, in the text it is explained as Spearman correlation. This complicates interpretation of the results as usually the ratio of explained variance is denoted by R2, which is equal to the square of Pearson correlation, but not to the Spearman correlation. Please, either change the symbol you use (for example, correlation coefficient is usually denoted as \u03c1), or explain the R2 in the text (for example, specify that this is Spearman correlation squared).\n\n3) You didn't specify the number of age groups used for the development of the clock. From the figure, it seems 12 age groups were used. We recommend adding this information to the text as it supports the analysis (12 age groups is a broad range that makes the results more convincing).\n\n4) Comparison of age prediction for C57BL/6 and DBA/2 mice is questionable. DBA/2 samples represent a narrow range of ages, which includes almost no young mice (based on the figure it appears that only 4 samples represent mice <75 weeks old). This reduces quality of the analysis, as nonlinear behavior is often observed in the old ages, which can partly explain the difference between the ages predicted for C57BL/6 and DBA/2 mice. Development of the clock for DBA/2 samples is even more dependent on the age range. Therefore, quality of the clock built for DBA/2 does not look reliable. Additional samples of young DBA/2 mice could improve quality of the findings. Alternatively, this drawback should be clearly noted in the text and text revised accordingly.\n\n5) In the Abstract, you state \"DBA/2J mice revealed accelerated epigenetic aging as compared to C57BL6 mice\" In fact, Figure 2 appears to show that the DBA/2 mice are about \"40 weeks older\" at every age \u2013 there is barely any age-associated divergence of the predicted aged for DBA/2 and C57BL/6. In other words, it does not seem as if the DBA/2 are aging faster. Rather, they appear to be born older and remain so throughout life. This is perhaps best explained by a need for re-calibrating the clock in different strains of mice. Figure 4E appears to confirm this. So, we agree with the authors conclusion that \"age-predictors should be adjusted for different inbred mice strains\" but do not agree that \"DBA/2J mice revealed accelerated epigenetic aging as compared to C57BL6 mice.\"\n\n6) You didn't specify if both training and validation sets or only validation sets of C57BL/6 mice were used when the predicted age was compared between this strain and DBA/2. To make the analysis unbiased from the construction of the clock, only validation sets should be used there. Based on the figure, it seems this was indeed the case, but anyway it should be specified in the text as this is important from the methodological point of view.\n\n7) There is far too much emphasis placed on age prediction. Ultimately, the residual or difference between chronological and epigenetic age is of the most interest. The goal is not to develop near perfect age predictors. In humans, the clocks with the strongest age predictions typically do not contribute the most to differential risk of aging-related conditions, which should be the goal. This point can be addressed by revision of the text.\n\n8) Is this new measure specific to blood? Were any experiments done to validate it in any other tissue or in sorted cells? It is possible that changes in methylation may be confounded by blood cell composition, etc. If it is not possible to address it experimentally within the revision timeframe, it should at the very least be discussed as a limitation.\n\n9) Epigenetic measures in mice will only be useful if (a) they track difference in lifespan/healthspan both between and within strains, and (b) they show response to intervention. We feel like the utility of this clock is being over-sold prior to the necessary validations being shown.\n\n10) \"These results provide further evidence that age-associated DNAm is generally rather related to biological age [\u2026]\" is an overstatement. If the DBA/2J mice are not aging epigenetically, there is little data in this manuscript to support the idea that the epigenetic clock is a measure of biological age as opposed to chronological age. The clock that the authors have reported here was calibrated vs. chronological age and appears to function well as such. However, there is no direct evidence that it reports on biological age.\n",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ff1d25a6-fecf-4f68-b81b-bd56a0a15f81",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C1",
+      "claim": "Epigenetic clocks for mice were generated based on deep-sequencing analysis of the methylome.",
+      "claim_type": "EXPLICIT",
+      "source": "Epigenetic clocks for mice were generated based on deep-sequencing analysis of the methylome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work on mouse epigenetic clocks using sequencing methods.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "9024b923-be75-4ec5-bfc4-57310305ad61",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C2",
+      "claim": "Site-specific analysis of DNA methylation levels by pyrosequencing at only three CG dinucleotides (CpGs) in the genes Prima1, Hsf4, and Kcns1 facilitates precise estimation of chronological age in murine blood samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that site-specific analysis of DNA methylation levels by pyrosequencing at only three CG dinucleotides (CpGs) in the genes Prima1, Hsf4, and Kcns1 facilitates precise estimation of chronological age in murine blood samples, too.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript showing correlations between DNAm at these sites and chronological age.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "99a0332e-482a-4b04-b3b0-e9d807355785",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C3",
+      "claim": "DBA/2 mice revealed accelerated epigenetic aging as compared to C57BL6 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "DBA/2 mice revealed accelerated epigenetic aging as compared to C57BL6 mice, which is in line with their shorter life-expectancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing epigenetic age predictions between the two mouse strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "74f524d4-e8ee-4de4-9d7e-77571b75a7bb",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C4",
+      "claim": "DBA/2 mice have shorter life-expectancy than C57BL6 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "DBA/2 mice revealed accelerated epigenetic aging as compared to C57BL6 mice, which is in line with their shorter life-expectancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge about these mouse strains.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "a2cc603f-9957-4d88-a90e-fca989fb8f2b",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C5",
+      "claim": "The three-CpG-predictor provides a simple and cost-effective biomarker to determine biological age in large intervention studies with mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The three-CpG-predictor provides a simple and cost-effective biomarker to determine biological age in large intervention studies with mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the demonstrated precision and simplicity of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "4b8e5373-6097-4a3d-b494-ee50265e8026",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C6",
+      "claim": "Age-associated DNA methylation (DNAm) was first described for humans after Illumina Bead Chip microarray data became available to enable cross comparison of thousands of CpG loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Age-associated DNA methylation (DNAm) was first described for humans after Illumina Bead Chip microarray data became available to enable cross comparison of thousands of CpG loci (Bocklandt et al., 2011; Koch and Wagner, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "e7f1e5ca-a65d-4f4b-a0b5-dc1c0aa53f35",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C7",
+      "claim": "Many age-associated CpGs were integrated into epigenetic age-predictors.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of these age-associated CpGs were then integrated into epigenetic age-predictors (Hannum et al., 2013; Horvath, 2013; Weidner et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "0b53ab1d-7e07-4b62-8127-02e77770c672",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C8",
+      "claim": "Site-specific DNAm analysis at individual CpGs can provide robust biomarkers for aging.",
+      "claim_type": "EXPLICIT",
+      "source": "However, site-specific DNAm analysis at individual CpGs can also provide robust biomarkers for aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and the authors' own prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "822f6491-9ccc-4bad-87f6-d76354e71fca",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C9",
+      "claim": "DNAm analysis at only three CpGs enables age-predictions for human blood samples with a mean absolute deviation (MAD) from chronological age of less than five years.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we have described that DNAm analysis at only three CpGs enables age-predictions for human blood samples with a mean absolute deviation (MAD) from chronological age of less than five years (Weidner et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "1c884c9c-ccb5-4e7e-94f9-22e585af656f",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C10",
+      "claim": "Simplistic age-predictors for human specimen are widely used because they enable fast and cost-effective analysis in large cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "Such simplistic age-predictors for human specimen are widely used because they enable fast and cost-effective analysis in large cohorts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of the field and practical considerations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "11b84c91-3445-408d-b50b-0c3b40e0db0d",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C11",
+      "claim": "Epigenetic clocks were published for mice using either reduced representation bisulfite sequencing (RRBS) or whole genome bisulfite sequencing (WGBS).",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, epigenetic clocks were also published for mice by using either reduced representation bisulfite sequencing (RRBS) or whole genome bisulfite sequencing (WGBS) (Petkovich et al., 2017; Stubbs et al., 2017; Wang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "2908a862-c819-4162-ad0f-be39e527483d",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C12",
+      "claim": "Petkovich et al. described a 90 CpG model for blood.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Petkovich et al. described a 90 CpG model for blood (Petkovich et al., 2017), and Stubbs and coworkers a 329 CpG model for various different tissues (Stubbs et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "0a86ba0e-ad21-4399-9f31-ca897cf03343",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C13",
+      "claim": "Stubbs and coworkers described a 329 CpG model for various different tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Petkovich et al. described a 90 CpG model for blood (Petkovich et al., 2017), and Stubbs and coworkers a 329 CpG model for various different tissues (Stubbs et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "33edd419-af6f-4b24-bb54-13384613f527",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C14",
+      "claim": "Nutrition and genetic background seem to affect the epigenetic age of mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Nutrition and genetic background seem to affect the epigenetic age of mice \u2013 and thereby possibly aging of the organism (Cole et al., 2017; Hahn et al., 2017; Maegawa et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "a072affa-de5e-4dfe-82c0-71d0d94e54c9",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C15",
+      "claim": "Nutrition and genetic background possibly affect aging of the organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Nutrition and genetic background seem to affect the epigenetic age of mice \u2013 and thereby possibly aging of the organism (Cole et al., 2017; Hahn et al., 2017; Maegawa et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on cited studies.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "6e31a21a-347e-48bf-8d8c-fab0bf2e571b",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C16",
+      "claim": "Epigenetic aging of humans is associated with life expectancy.",
+      "claim_type": "EXPLICIT",
+      "source": "In analogy, epigenetic aging of humans is associated with life expectancy, indicating that it rather reflects biological age than chronological age (Lin et al., 2016; Marioni et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "ca46b105-27d4-40a0-be6c-6f82cbb3d339",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C17",
+      "claim": "Epigenetic aging reflects biological age rather than chronological age.",
+      "claim_type": "EXPLICIT",
+      "source": "In analogy, epigenetic aging of humans is associated with life expectancy, indicating that it rather reflects biological age than chronological age (Lin et al., 2016; Marioni et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on cited studies showing association with life expectancy.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "203b4c8c-85cc-4f43-8c00-28e7ebfb9e6e",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C18",
+      "claim": "DNAm profiling by deep sequencing technology is technically still challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "However, DNAm profiling by deep sequencing technology is technically still challenging, relatively expensive, and not every sequencing-run covers all relevant CpG sites with enough reading depth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of current sequencing technology limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "50749756-81da-4765-956f-47132783f668",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C19",
+      "claim": "DNAm profiling by deep sequencing technology is relatively expensive.",
+      "claim_type": "EXPLICIT",
+      "source": "However, DNAm profiling by deep sequencing technology is technically still challenging, relatively expensive, and not every sequencing-run covers all relevant CpG sites with enough reading depth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of current sequencing technology costs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "d89cf0f9-2325-4678-9b0d-c52ea5933b9c",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C20",
+      "claim": "Not every sequencing-run covers all relevant CpG sites with enough reading depth.",
+      "claim_type": "EXPLICIT",
+      "source": "However, DNAm profiling by deep sequencing technology is technically still challenging, relatively expensive, and not every sequencing-run covers all relevant CpG sites with enough reading depth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of sequencing technology limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "a88eadc4-e6b0-41a2-9f03-8e9a9982c45b",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C21",
+      "claim": "Pyrosequencing assays were established for nine genomic regions of previously published predictors.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we established pyrosequencing assays for nine genomic regions of previously published predictors (Petkovich et al., 2017; Stubbs et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "85a8254a-6042-40bd-9a52-edab6cc5a2b6",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C22",
+      "claim": "The nine genomic regions were preselected to have multiple age-associated CpGs in close vicinity.",
+      "claim_type": "EXPLICIT",
+      "source": "These regions were preselected to have multiple age-associated CpGs in close vicinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the selection criteria used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "d6c37215-c8f5-4b13-a7a9-95d08f524726",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C23",
+      "claim": "DNAm was analyzed in 24 blood samples of female C57BL/6 mice that covered a broad range of 12 different age groups (11 to 117 weeks old).",
+      "claim_type": "EXPLICIT",
+      "source": "DNAm was then analyzed in 24 blood samples of female C57BL/6 mice that covered a broad range of 12 different age groups (11 to 117 weeks old).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design and sample characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "ae522944-7a45-4d29-880f-61fc54eea85f",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C24",
+      "claim": "The nine amplicons covered a total of 71 CpG sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The nine amplicons covered a total of 71 CpG sites (Supplementary file 1) and we used machine learning to identify the best fitted model for epigenetic age-predictions using cross-fold validation on the training set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and supplementary information.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "21befdff-938a-43d1-afda-46c14730b2d8",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C25",
+      "claim": "Machine learning was used to identify the best fitted model for epigenetic age-predictions using cross-fold validation on the training set.",
+      "claim_type": "EXPLICIT",
+      "source": "The nine amplicons covered a total of 71 CpG sites (Supplementary file 1) and we used machine learning to identify the best fitted model for epigenetic age-predictions using cross-fold validation on the training set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "d60c43b4-37a1-466f-80d1-4c83389fb87a",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C26",
+      "claim": "The best results were observed for 15 CpGs from five different amplicons that provided an extremely high correlation with chronological age in the training set (R2 = 0.99; mean absolute deviation [MAD]=2.76 weeks).",
+      "claim_type": "EXPLICIT",
+      "source": "The best results were observed for 15 CpGs from five different amplicons that provided an extremely high correlation with chronological age in the training set (R2 = 0.99; mean absolute deviation [MAD]=2.76 weeks; Supplementary file 2), albeit the training set might be too small for this approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the training set.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "4bc86f9b-83d7-49d7-a57f-98d169d46465",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C27",
+      "claim": "The training set might be too small for the 15 CpG approach.",
+      "claim_type": "EXPLICIT",
+      "source": "The best results were observed for 15 CpGs from five different amplicons that provided an extremely high correlation with chronological age in the training set (R2 = 0.99; mean absolute deviation [MAD]=2.76 weeks; Supplementary file 2), albeit the training set might be too small for this approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential limitations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "d562b7a4-dae3-45e3-aa9d-1d746daa9765",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C28",
+      "claim": "When regularization parameters were varied for models with less CpGs, the precision declined significantly.",
+      "claim_type": "EXPLICIT",
+      "source": "When we varied the regularization parameters for models with less CpGs, the precision declined significantly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from model testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "88e533ed-effa-4e3d-b5a9-006817a805bb",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C29",
+      "claim": "The best model with three CpGs comprised the three CpGs of Hsf4 (CpGs# 3,4,5) that revealed the overall highest Pearson correlations with chronological age (R2 = 0.95; MAD = 5.24 weeks).",
+      "claim_type": "EXPLICIT",
+      "source": "For example the best model with three CpGs comprised the three CpGs of Hsf4 (CpGs# 3,4,5) that also revealed the overall highest Pearson correlations with chronological age (R2 = 0.95; MAD = 5.24 weeks).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from model testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "6c64394f-6e98-4d46-8fc4-72eb69aa6a7c",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C30",
+      "claim": "Combination of different hypo- and hypermethylated amplicons might be advantageous to facilitate better assessment of plausibility of the results.",
+      "claim_type": "EXPLICIT",
+      "source": "However, combination of different hypo- and hypermethylated amplicons might be advantageous to facilitate better assessment of plausibility of the results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about methodological advantages.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "77d28bf2-eb09-45a9-9108-675c676bf0e0",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C31",
+      "claim": "Three CpGs with the highest Pearson correlation with chronological age in different amplicons were selected: Prima1 (chr12:103214639; R2 = 0.71), Hsf4 (chr8:105271000; R2 = 0.95) and Kcns1 (chr2:164168110; R2 = 0.83).",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we alternatively selected those three CpGs that revealed the highest Pearson correlation with chronological age in different amplicons. These three CpGs were associated with the genes Proline rich membrane anchor 1 (Prima1: chr12:103214639; R2 = 0.71), Heat shock transcription factor 4 (Hsf4: chr8:105271000; R2 = 0.95) and Potassium voltage-gated channel modifier subfamily S member 1 (Kcns1: chr2:164168110; R2 = 0.83; Figure 1A\u2013C; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "0fb16d45-b181-4980-b441-bc3fb2f937ef",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C32",
+      "claim": "All three CpGs were derived from the epigenetic age-predictor for blood samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, all three CpGs were derived from the epigenetic age-predictor for blood samples (Petkovich et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "0e4df35e-c508-40e6-80b6-65651752cc6a",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C33",
+      "claim": "Age-predictions using the three-CpG model correlated very well with the chronological age of C57BL/6 mice in the training set (R2 = 0.96; MAD = 4.86 weeks).",
+      "claim_type": "EXPLICIT",
+      "source": "Age-predictions correlated very well with the chronological age of C57BL/6 mice in the training set (R2 = 0.96; MAD = 4.86 weeks; Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "fa646ec4-7bae-4322-94ff-c7bbf7115893",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C34",
+      "claim": "The three-CpG-predictor was validated in a blinded manner for 21 C57BL/6J mice (7 to 104 weeks old) from the University of Ulm (validation set 1).",
+      "claim_type": "EXPLICIT",
+      "source": "Our three CpG age-predictor was subsequently validated in a blinded manner for 21 C57BL/6J mice (7 to 104 weeks old) from the University of Ulm (validation set 1) and 19 C57BL/6J mice (14 to 109 weeks old) from the University of Groningen (validation set 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the validation experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "d9f38d6b-b1ea-4b8a-924e-dc2f9e0d876d",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C35",
+      "claim": "The three-CpG-predictor was validated in a blinded manner for 19 C57BL/6J mice (14 to 109 weeks old) from the University of Groningen (validation set 2).",
+      "claim_type": "EXPLICIT",
+      "source": "Our three CpG age-predictor was subsequently validated in a blinded manner for 21 C57BL/6J mice (7 to 104 weeks old) from the University of Ulm (validation set 1) and 19 C57BL/6J mice (14 to 109 weeks old) from the University of Groningen (validation set 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the validation experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "099c9000-d64c-4918-b10c-1f2f27b7e0bc",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C36",
+      "claim": "The results of both validation sets revealed high correlations with chronological age (R2 = 0.95 and 0.91, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "The results of both validation sets revealed high correlations with chronological age (R2 = 0.95 and 0.91, respectively; Figure 1E\u2013H) with relatively small MADs (6.9 and 7.1 weeks) and median absolute errors (MAE; 5.0 and 5.9 weeks).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "261091eb-9aa5-4b6b-ba5e-b1009fcfd7cf",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C37",
+      "claim": "The validation sets had relatively small MADs (6.9 and 7.1 weeks) and median absolute errors (MAE; 5.0 and 5.9 weeks).",
+      "claim_type": "EXPLICIT",
+      "source": "The results of both validation sets revealed high correlations with chronological age (R2 = 0.95 and 0.91, respectively; Figure 1E\u2013H) with relatively small MADs (6.9 and 7.1 weeks) and median absolute errors (MAE; 5.0 and 5.9 weeks).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "80c0a3a2-0169-43e1-8bf5-486364a6bc4d",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C38",
+      "claim": "The age-predictions have similar precision as previously described for multi-CpG predictors based on RRBS or WGBS data.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our age-predictions seem to have similar precision as previously described for multi-CpG predictors based on RRBS or WGBS data (Petkovich et al., 2017; Stubbs et al., 2017; Wang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference comparing the current results to cited prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "0a4a195c-c884-41f1-b6f1-bf8963703b77",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C39",
+      "claim": "Gender did not have significant impact on epigenetic age-predictions for mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Gender did not have significant impact on our epigenetic age-predictions for mice (Figure 2), as described before (Maegawa et al., 2017; Petkovich et al., 2017; Stubbs et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2 and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "88b5cf98-70f7-4b2a-96aa-2ff00e446cc2",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C40",
+      "claim": "The human epigenetic clock is clearly accelerated in male donors.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the human epigenetic clock is clearly accelerated in male donors (Hannum et al., 2013; Horvath, 2013; Weidner et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "4d449c62-9354-4b5b-bcd4-a12914916a3e",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C41",
+      "claim": "Men have shorter life expectancy than women.",
+      "claim_type": "EXPLICIT",
+      "source": "This coincides with shorter life expectancy in men than woman, whereas in mice there are no consistent sex differences in longevity (Goodrick, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge and cited work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "ab2d4832-5bce-4cda-b35f-c9b5a8da6460",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C42",
+      "claim": "In mice there are no consistent sex differences in longevity.",
+      "claim_type": "EXPLICIT",
+      "source": "This coincides with shorter life expectancy in men than woman, whereas in mice there are no consistent sex differences in longevity (Goodrick, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "3b673922-521c-486d-8a07-cda67cd5bfb4",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C43",
+      "claim": "DNAm was analyzed in skin, kidney, intestine, lung, liver, heart, brain, testis, and pancreas of 3 young (9.6 weeks old) and three old mice (56.9 weeks old).",
+      "claim_type": "EXPLICIT",
+      "source": "To address the question if our three CpG signature was also applicable for other tissues than blood we analyzed the DNAm in skin, kidney, intestine, lung, liver, heart, brain, testis, and pancreas of 3 young (9.6 weeks old) and three old mice (56.9 weeks old).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design for tissue analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "68d9b828-31a8-4542-8e08-2aad1e8b2cb4",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C44",
+      "claim": "In all tissues tested the samples of old mice were predicted to be older using the three CpG signature.",
+      "claim_type": "EXPLICIT",
+      "source": "In all tissues tested the samples of old mice were predicted to be older using our three CpG signature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from tissue analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "783bd08e-3d43-4037-a91f-15f66ce71ae0",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C45",
+      "claim": "The different DNAm levels in different tissues demonstrate that the model needs to be retrained to be applied for these tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the different DNAm levels clearly demonstrate that the model needs to be retrained to be applied for these tissues (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on experimental data shown in Figure 3.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "be483418-ea26-4e00-9356-a04fcf3f8394",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C46",
+      "claim": "Epigenetic age-predictions using the 3 CpG model for blood demonstrated significant differences between young and old mice in skin, intestine, brain, and testis.",
+      "claim_type": "EXPLICIT",
+      "source": "Epigenetic age-predictions using the 3 CpG model for blood demonstrated also significant differences between young and old mice in skin, intestine, brain, and testis (mean \u00b1 standard deviation; Student t-tests: *p<0.05; **p<0.01; ***p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and statistical analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "c1532244-0657-4eec-880c-4e419084fe94",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C47",
+      "claim": "Epigenetic aging of DBA/2 mice was analyzed using 33 mice from Ulm and Groningen (6 to 109 weeks old).",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, we analyzed epigenetic aging of DBA/2 mice that have a shorter life expectancy than C57BL/6 mice (Goodrick, 1975) (33 mice from Ulm and Groningen; 6 to 109 weeks old).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design for DBA/2 analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "eba44c7a-338a-4e07-a33b-991ff205f930",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C48",
+      "claim": "DBA/2 mice have a shorter life expectancy than C57BL/6 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, we analyzed epigenetic aging of DBA/2 mice that have a shorter life expectancy than C57BL/6 mice (Goodrick, 1975) (33 mice from Ulm and Groningen; 6 to 109 weeks old).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "28230dab-f90e-43f1-8608-dc4e969a42fa",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C49",
+      "claim": "The three CpGs in Prima1, Hsf4 and Kcns1 revealed high correlation with chronological age in DBA/2 mice (R2 = 0.91, 0.88 and 0.83, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "The three CpGs in Prima1, Hsf4 and Kcns1 revealed high correlation with chronological age (R2 = 0.91, 0.88 and 0.83, respectively), albeit the offset in DNAm between DBA/2 and C57BL/6 mice indicated that the signature needs to be retrained for different mouse strains (Figure 4a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4a-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "e27722fe-94b2-45b4-ae09-64d23d7fa844",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C50",
+      "claim": "The offset in DNAm between DBA/2 and C57BL/6 mice indicated that the signature needs to be retrained for different mouse strains.",
+      "claim_type": "EXPLICIT",
+      "source": "The three CpGs in Prima1, Hsf4 and Kcns1 revealed high correlation with chronological age (R2 = 0.91, 0.88 and 0.83, respectively), albeit the offset in DNAm between DBA/2 and C57BL/6 mice indicated that the signature needs to be retrained for different mouse strains (Figure 4a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on experimental data shown in Figure 4a-c.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "f6fb2cc7-0f0e-4d16-9f37-11f536c96482",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C51",
+      "claim": "The slopes were higher in DBA/2 mice, particularly for the CpG in Prima1.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the slopes were higher in DBA/2 mice, particularly for the CpG in Prima1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing the two strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "5942b001-8e5f-4998-8cd5-7842f14c3bd3",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C52",
+      "claim": "DNAm of Hsf4 increased at a higher rate in young DBA/2 mice, indicating that it is more accurately modelled as a function of logarithmic age.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, DNAm of Hsf4 increased at a higher rate in young DBA/2 mice, indicating that it is more accurately modelled as a function of logarithmic age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "4974b500-2b7a-429c-8462-5a02a5559ff2",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C53",
+      "claim": "Many age-associated CpGs in pediatric cohorts follow a logarithmic model of age.",
+      "claim_type": "EXPLICIT",
+      "source": "This has also been described in human for many age-associated CpGs in pediatric cohorts (Alisch et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "2c32f21f-ca8e-42e3-8625-16138c1ef253",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C54",
+      "claim": "Epigenetic age-predictions in DBA/2 mice seemed to follow a logarithmic model of age (R2 = 0.89) rather than a linear association (R2 = 0.86).",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, epigenetic age-predictions in DBA/2 mice seemed to follow a logarithmic model of age (R2 = 0.89; Figure 4d) rather than a linear association (R2 = 0.86).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "bb035ca2-74db-4ad8-be7a-776b0eda76d1",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C55",
+      "claim": "The results provided evidence for accelerated epigenetic aging of DBA/2 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "These results provided evidence for accelerated epigenetic aging of DBA/2 mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data comparing DBA/2 and C57BL/6 mice.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "ad1e9067-8080-41c9-9983-0604b2a0ad69",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C56",
+      "claim": "Epigenetic age-predictions were overall significantly overestimated in the shorter-lived DBA/2 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Either way, epigenetic age-predictions were overall significantly overestimated in the shorter-lived DBA/2 mice, suggesting that age-predictors need to be adjusted for different inbreed mice strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing predictions to chronological age.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "f13d4e2b-c732-4145-b796-2cf89192bc39",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C57",
+      "claim": "Age-predictors need to be adjusted for different inbreed mice strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Either way, epigenetic age-predictions were overall significantly overestimated in the shorter-lived DBA/2 mice, suggesting that age-predictors need to be adjusted for different inbreed mice strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the overestimation observed in DBA/2 mice.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "ffaca06a-bbcd-46ce-99b7-053e05f4c737",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C58",
+      "claim": "A multivariate model was retrained for DBA/2 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we have retrained a multivariate model for DBA/2 mice:",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical approach taken.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "0e884f0e-e7a3-4658-8a90-f3e1240686af",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C59",
+      "claim": "The adjusted model facilitated relatively precise age-predictions for DBA/2 mice (R2 = 0.95; MAD = 7.1 weeks; MAE = 5.3 weeks).",
+      "claim_type": "EXPLICIT",
+      "source": "This adjusted model facilitated relatively precise age-predictions for DBA/2 mice (R2 = 0.95; MAD = 7.1 weeks; MAE = 5.3 weeks; Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "fcc64877-ec52-4a67-9bf5-f34df1903cf7",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C60",
+      "claim": "Generation of confined epigenetic signatures is always a tradeoff between integrating more CpGs for higher precision and higher costs for analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Generation of confined epigenetic signatures is always a tradeoff between integrating more CpGs for higher precision and higher costs for analysis (Wagner, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of the field and cited work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "e031aaeb-c82f-47dd-b402-4158a4012d06",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C61",
+      "claim": "With only three CpGs the signature facilitated similar precision of epigenetic age-predictions as the previously published signatures based on more than 90 CpGs.",
+      "claim_type": "EXPLICIT",
+      "source": "It was somewhat unexpected that with only three CpGs our signature facilitated similar precision of epigenetic age-predictions as the previously published signatures based on more than 90 CpGs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference comparing the current results to prior work.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "f76e26ef-5f96-4510-aa03-b397910b5dd3",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C62",
+      "claim": "The similar precision can be attributed to the higher precision of DNAm measurements at individual CpGs by bisulfite pyrosequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be attributed to the higher precision of DNAm measurements at individual CpGs by bisulfite pyrosequencing, which is one of the most precise methods for determining DNAm at single CpG resolution (BLUEPRINT consortium, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on knowledge of pyrosequencing precision and cited work.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "4ba5b8a9-2282-46a0-ad17-7f5756ebf1e6",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C63",
+      "claim": "Bisulfite pyrosequencing is one of the most precise methods for determining DNAm at single CpG resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be attributed to the higher precision of DNAm measurements at individual CpGs by bisulfite pyrosequencing, which is one of the most precise methods for determining DNAm at single CpG resolution (BLUEPRINT consortium, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "1eefc3fa-b334-4cb6-9734-f9bd7c20120c",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C64",
+      "claim": "In RRBS data not all CpG sites are covered in all samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly in RRBS data not all CpG sites are covered in all samples and a limited number of reads notoriously entails lower precision of DNAm levels at these genomic locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of RRBS technology limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "7ded49b0-686a-44ff-ba4c-161c577791ad",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C65",
+      "claim": "A limited number of reads in RRBS notoriously entails lower precision of DNAm levels at genomic locations.",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly in RRBS data not all CpG sites are covered in all samples and a limited number of reads notoriously entails lower precision of DNAm levels at these genomic locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of sequencing technology limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "ae07e758-26e1-416a-84de-3a320cc7cb81",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C66",
+      "claim": "Genome wide deep sequencing approaches facilitate generation of robust large epigenetic age-predictors.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, genome wide deep sequencing approaches facilitate generation of robust large epigenetic age-predictors, while site specific analysis may compensate by higher precision of DNAm measurement at individual CpGs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on knowledge of different methodological approaches.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "4c8bfda0-dc84-4ed4-ad6f-728c7ec6d0fe",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C67",
+      "claim": "Site specific analysis may compensate by higher precision of DNAm measurement at individual CpGs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, genome wide deep sequencing approaches facilitate generation of robust large epigenetic age-predictors, while site specific analysis may compensate by higher precision of DNAm measurement at individual CpGs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on knowledge of different methodological approaches.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "581fb2c3-f13e-4841-b3c0-6bf2b64a445a",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C68",
+      "claim": "The ultimate goal of epigenetic age-predictors for mice is not to develop near perfect age predictors, but to provide a surrogate for biological aging that facilitates assessment of interventions on aging.",
+      "claim_type": "EXPLICIT",
+      "source": "The ultimate goal of epigenetic age-predictors for mice is not to develop near perfect age predictors, but to provide a surrogate for biological aging that facilitates assessment of interventions on aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the purpose and application of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "e1c31a1e-d949-40ed-8959-f304f6de832a",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C69",
+      "claim": "Using deep sequencing approaches (RRBS or WGBS) several groups indicated that relevant parameters that affect aging of the organism - such as diet, genetic background, and drugs - do also impact on epigenetic aging.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, using deep sequencing approaches (RRBS or WGBS) several groups already indicated that relevant parameters that affect aging of the organism - such as diet, genetic background, and drugs - do also impact on epigenetic aging (Cole et al., 2017; Hahn et al., 2017; Maegawa et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "04521eca-5333-4533-a0bf-b500ba253a6c",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C70",
+      "claim": "It is yet unclear if epigenetic aging signatures can be specifically trained to either correlate with chronological age or biological age.",
+      "claim_type": "EXPLICIT",
+      "source": "It is yet unclear if epigenetic aging signatures can be specifically trained to either correlate with chronological age or biological age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about current knowledge gaps in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "a52ac2dd-c848-4aa5-868b-d489ca9520b1",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C71",
+      "claim": "Recent studies indicate that epigenetic aging signatures might be specifically trainable to correlate with chronological or biological age.",
+      "claim_type": "EXPLICIT",
+      "source": "For humans, recent studies indicate that this might be possible (Levine et al., 2018) and we have previously demonstrated that even individual age-associated CpGs can be indicative for life expectancy (Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "9dad44e1-8b0f-4415-a4a6-a8b49fb481a2",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C72",
+      "claim": "Individual age-associated CpGs can be indicative for life expectancy.",
+      "claim_type": "EXPLICIT",
+      "source": "For humans, recent studies indicate that this might be possible (Levine et al., 2018) and we have previously demonstrated that even individual age-associated CpGs can be indicative for life expectancy (Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "b28f9d59-43ea-4af4-baf4-697f3d01019d",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C73",
+      "claim": "Further studies will be necessary to gain better understanding how epigenetic age predictions are related to the real state of biological aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Further studies will be necessary to gain better understanding how epigenetic age predictions are related to the real state of biological aging, and how it is related to alternative approaches to quantify biological aging, such as telomere length (Belsky et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research needs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "facd3c8e-3cfc-4ec9-8f84-e36c16c3a1fe",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C74",
+      "claim": "The three CpG model has been trained for blood samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Our three CpG model has been trained for blood samples \u2013 a specimen that is commonly used in biochemical analysis and the small required volume can be taken without sacrificing the mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the training data used for the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "c9617e67-c2aa-4802-91d4-857ba7ba5e3f",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C75",
+      "claim": "Blood is commonly used in biochemical analysis and the small required volume can be taken without sacrificing the mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Our three CpG model has been trained for blood samples \u2013 a specimen that is commonly used in biochemical analysis and the small required volume can be taken without sacrificing the mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of experimental practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "dd24b215-889c-4238-9824-bb75bc5510af",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C76",
+      "claim": "Epigenetic aging may occur at different rates in different tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "However, epigenetic aging may occur at different rates in different tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge and inference from the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "d594c60b-1015-41c6-8bd1-c714c8c25bea",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C77",
+      "claim": "It is difficult to address tissue-specific epigenetic aging in humans because it is difficult to collect samples of various tissues in large aging cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "It is difficult to address this question in humans because it is difficult to collect samples of various tissues in large aging cohorts, whereas this is feasible in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of practical limitations in human studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "0583f243-e80c-4e88-9b64-b44198ff792d",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C78",
+      "claim": "Collecting samples of various tissues in large aging cohorts is feasible in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "It is difficult to address this question in humans because it is difficult to collect samples of various tissues in large aging cohorts, whereas this is feasible in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of experimental practices with mice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "3910aa4f-43a2-4ed8-a6f3-017807e503df",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C79",
+      "claim": "Age-associated DNAm changes occur in multiple tissues in the three CpGs.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that age-associated DNAm changes occur in multiple tissues in our three CpGs albeit they were initially identified in blood (Petkovich et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from tissue analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "24343e4e-0a07-4259-8997-e7ba97b62559",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C80",
+      "claim": "DNAm levels may vary between different hematopoietic subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, DNAm levels may vary between different hematopoietic subsets (Frobel et al., 2018; Houseman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "bb8fe77d-e46f-4488-889f-53ced4bb0818",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C81",
+      "claim": "In the future, sorted subsets should be analyzed to determine how the three CpG signature is affected by blood counts.",
+      "claim_type": "EXPLICIT",
+      "source": "In the future, sorted subsets should be analyzed to determine how the three CpG signature is affected by blood counts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "905f73fc-589b-4014-9864-bec4f97dd776",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C82",
+      "claim": "The results of the three CpG signature suggest that epigenetic aging is accelerated in DBA/2 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of our three CpG signature suggest that epigenetic aging is accelerated in DBA/2 mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "86266924-fa6d-40de-b641-bece2c0f3a3e",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C83",
+      "claim": "In elderly DBA/2 mice the epigenetic age predictions revealed higher 'errors' from chronological age.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in elderly DBA/2 mice the epigenetic age predictions revealed higher 'errors' from chronological age, which might be attributed to the fact that the variation of lifespan is higher in DBA/2 than C57BL/6 mice (de Haan et al., 1998; Goodrick, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "18cd8a75-e3f9-4537-9084-f2cff897d0ee",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C84",
+      "claim": "The variation of lifespan is higher in DBA/2 than C57BL/6 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in elderly DBA/2 mice the epigenetic age predictions revealed higher 'errors' from chronological age, which might be attributed to the fact that the variation of lifespan is higher in DBA/2 than C57BL/6 mice (de Haan et al., 1998; Goodrick, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "e8e927c0-c33d-42f3-9427-5b21e96cc8be",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C85",
+      "claim": "It will be important to validate the association of the epigenetic age-predictions with biological age by additional correlative studies, including life expectancy in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "It will be important to validate the association of the epigenetic age-predictions with biological age by additional correlative studies, including life expectancy in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research needs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "a3f627fe-7a14-4a33-a94d-8e92807e14ca",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C86",
+      "claim": "The assay will be instrumental to gain additional insight into mechanisms that regulate age-associated DNAm.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that our assay will be instrumental to gain additional insight into mechanisms that regulate age-associated DNAm and for longevity intervention studies in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "82605214-d024-4b8f-9ca1-522197e8f214",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C87",
+      "claim": "The assay will be instrumental for longevity intervention studies in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that our assay will be instrumental to gain additional insight into mechanisms that regulate age-associated DNAm and for longevity intervention studies in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "a44f9af5-90b2-4265-9bc6-526dd41f5a60",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C88",
+      "claim": "Blood samples of C57BL/6J mice of the training set and validation set one were taken at the University of Ulm by submandibular bleeding (100\u2013200 \u03bcl) of living mice or postmortem from the vena cava.",
+      "claim_type": "EXPLICIT",
+      "source": "Blood samples of C57BL/6J mice of the training set and of the validation set one were taken at the University of Ulm by submandibular bleeding (100\u2013200 \u03bcl) of living mice or postmortem from the vena cava.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "2b0b1d0e-9990-49bf-9723-2d3b56188661",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C89",
+      "claim": "C57BL/6J samples of validation set two were taken at the University of Groningen from the cheek.",
+      "claim_type": "EXPLICIT",
+      "source": "C57BL/6J samples of the validation set two were taken at the University of Groningen from the cheek.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "d5efa1ab-3a26-4d24-83b7-70cc71fa5799",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C90",
+      "claim": "DBA/2J samples were taken at the University of Ulm (n = 14) and Groningen (n = 19).",
+      "claim_type": "EXPLICIT",
+      "source": "DBA/2J samples were taken at the University of Ulm (n = 14) and Groningen (n = 19).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "d87349da-f173-48ab-a1e6-64af6a9ecce4",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C91",
+      "claim": "All mice were accommodated under pathogen-free conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "All mice were accommodated under pathogen-free conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "29d90c99-b940-4d5d-83de-e413ca4cc3ab",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C92",
+      "claim": "Experiments were approved by the Institutional Animal Care of the Ulm University as well as by Regierungspr\u00e4sidium T\u00fcbingen and by the Institutional Animal Care and Use Committee of the University of Groningen (IACUC-RUG).",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments were approved by the Institutional Animal Care of the Ulm University as well as by Regierungspr\u00e4sidium T\u00fcbingen and by the Institutional Animal Care and Use Committee of the University of Groningen (IACUC-RUG), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes ethical approval for the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "9cef1921-5c46-446e-afbd-16e8ad3f86fc",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C93",
+      "claim": "Three young (9.6 weeks old) and three old mice (56.9 weeks old) C57BL/6J mice (JaxMice) were used for tissue analysis in accordance with relevant Spanish and European guidelines after approval by the Biodonostia Animal Care Committee.",
+      "claim_type": "EXPLICIT",
+      "source": "To analyze age-associated changes in different tissues we used three young (9.6 weeks old) and three old mice (56.9 weeks old) C57BL/6J mice (JaxMice) in accordance with relevant Spanish and European guidelines after approval by the Biodonostia Animal Care Committee.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design and ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "a2c13621-2b4f-4e05-b250-d2e1f2627dff",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C94",
+      "claim": "Genomic DNA was isolated from 50 \u00b5l blood using the QIAamp DNA Mini Kit.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomic DNA was isolated from 50 \u00b5l blood using the QIAamp DNA Mini Kit (Qiagen, Hilden, Germany).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "5143a449-e259-45db-8983-6ef8e40aea65",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C95",
+      "claim": "200 ng of genomic DNA was bisulfite-converted with the EZ DNA Methylation Kit.",
+      "claim_type": "EXPLICIT",
+      "source": "200 ng of genomic DNA was subsequently bisulfite-converted with the EZ DNA Methylation Kit (Zymo Research, Irvine, USA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "db296afd-9572-4053-ae22-80c2bf275545",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C96",
+      "claim": "A penalized regression model from the R package glmnet was used on the training dataset to establish a predictor of mouse age based on CpG methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a penalized regression model from the R package glmnet on the training dataset to establish a predictor of mouse age based on CpG methylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "a96d5bfb-63e6-4c1c-874e-ae5fd3e567ef",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C97",
+      "claim": "The alpha parameter of glmnet was set to 1 (lasso regression).",
+      "claim_type": "EXPLICIT",
+      "source": "The alpha parameter of glmnet was set to 1 (lasso regression) and the lambda parameter was chosen by cross-fold validation of the training dataset (10-fold cross validation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "9b67785a-84bf-42de-89ab-808d65afa2d6",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "claim_id": "C98",
+      "claim": "The lambda parameter was chosen by cross-fold validation of the training dataset (10-fold cross validation).",
+      "claim_type": "EXPLICIT",
+      "source": "The alpha parameter of glmnet was set to 1 (lasso regression) and the lambda parameter was chosen by cross-fold validation of the training dataset (10-fold cross validation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "312c92fb-0430-437f-a5ef-33e7e406a648",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a three-CpG epigenetic age predictor for C57BL/6 mice by analyzing DNAm at CpGs in Prima1, Hsf4, and Kcns1 genes. The predictor was trained on 24 blood samples using machine learning with cross-fold validation, achieving high correlation with chronological age (R\u00b2 = 0.96; MAD = 4.86 weeks) in the training set.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C33 describe a methodologically sound approach with appropriate experimental design, machine learning methodology (lasso regression with cross-validation), and strong performance metrics. The training set size (n=24) is acknowledged as potentially small (C27), showing appropriate self-critique. The data in Figure 1A-D support the reported correlations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "25d372d7-4dcb-45b7-bf73-e856d5368563",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The three-CpG predictor was validated in two independent blinded cohorts of C57BL/6J mice (n=21 and n=19), demonstrating high correlations with chronological age (R\u00b2 = 0.95 and 0.91) and low prediction errors (MAD = 6.9 and 7.1 weeks; MAE = 5.0 and 5.9 weeks), with precision comparable to previously published multi-CpG predictors based on sequencing data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 demonstrate rigorous validation with blinded independent cohorts from different institutions, which strengthens confidence in the predictor's generalizability. The performance metrics are well-documented and Figure 1E-H supports the reported correlations. The comparison to prior work (C38) is reasonable given the similar error rates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "7fa6fcab-2c27-451b-9187-f7187e5844d9",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Gender did not significantly impact epigenetic age predictions in mice, contrasting with human epigenetic clocks where males show accelerated aging. This difference aligns with the absence of consistent sex differences in mouse longevity versus shorter male life expectancy in humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 are supported by Figure 2 showing no significant difference between male and female mice (Mann-Whitney U test p=0.6) and citations to prior work. The comparison to human data and longevity patterns provides appropriate biological context. However, the sample size for males appears limited in Figure 2.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "360a1047-a6c5-421f-a916-2e2e6cb4e9e1",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The three-CpG signature showed age-associated DNAm changes across multiple tissues (skin, kidney, intestine, lung, liver, heart, brain, testis, pancreas), with old mice consistently predicted as older than young mice. However, different baseline DNAm levels across tissues indicate the model requires retraining for non-blood tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 are supported by Figure 3 showing tissue-specific DNAm patterns and statistical significance in several tissues. The acknowledgment that retraining is needed (C45) is appropriate given the different DNAm baselines. However, the sample size is very small (n=3 per age group), limiting statistical power and generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "3fd6facb-aa34-43b9-808e-57ea350d70c5",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "DBA/2 mice showed accelerated epigenetic aging compared to C57BL/6 mice, with higher slopes for age-associated DNAm changes and epigenetic age predictions that were significantly overestimated when using the C57BL/6-trained model. The DNAm changes in DBA/2 mice followed a logarithmic rather than linear model of age (R\u00b2 = 0.89 vs 0.86).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C57 demonstrate strain-specific differences in epigenetic aging supported by Figure 4a-d. The observation of accelerated aging in shorter-lived DBA/2 mice is biologically plausible and consistent with their known shorter lifespan (C48, C84). The logarithmic model for DBA/2 (C54) is supported by data and parallels human pediatric findings (C53). The overestimation of age in DBA/2 mice using the C57BL/6 model (C56) appropriately leads to the conclusion that strain-specific retraining is needed (C57).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "c63f3ea1-68a3-4ce8-b15a-305de5a77490",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A strain-specific multivariate model was retrained for DBA/2 mice, achieving precise age predictions (R\u00b2 = 0.95; MAD = 7.1 weeks; MAE = 5.3 weeks) comparable to the C57BL/6 model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 are supported by Figure 4e showing the retrained model's performance. The precision metrics are similar to the C57BL/6 validation sets, demonstrating that the approach is generalizable across strains with appropriate retraining. The sample size (n=33) is adequate for this analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "77071b4e-b6f6-4899-af9d-dafaa6de77c7",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The three-CpG signature achieved precision comparable to previously published 90+ CpG predictors, which the authors attribute to the higher measurement precision of bisulfite pyrosequencing compared to RRBS/WGBS methods that have incomplete CpG coverage and lower per-site precision due to limited read depth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C67 provide a reasonable explanation for the unexpected performance of a minimal CpG signature. The technical advantages of pyrosequencing for single-CpG precision are well-established (C63, supported by citation). The limitations of RRBS regarding coverage and read depth (C64-C65) are accurate based on knowledge of the technology. This represents sound methodological reasoning about the tradeoffs between genome-wide and targeted approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "ddd5bb43-380c-4a65-bd84-623ae6888664",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Elderly DBA/2 mice showed higher prediction errors from chronological age, potentially due to greater variation in lifespan in DBA/2 compared to C57BL/6 mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 are supported by the data showing increased scatter in older DBA/2 mice (visible in Figure 4d) and citations documenting higher lifespan variation in DBA/2 mice. This represents appropriate interpretation of increased prediction error as potentially reflecting biological variation rather than model failure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "2387bea9-61da-4a59-96c6-5bf76e95a281",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The three-CpG predictor provides a simple, cost-effective biomarker for determining biological age in mice that could be instrumental for longevity intervention studies and understanding mechanisms of age-associated DNAm, though further validation linking epigenetic age to biological age and life expectancy is needed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C2 and C5 assert the predictor facilitates 'precise estimation of chronological age' and provides a biomarker for 'biological age,' but the manuscript primarily validates prediction of chronological age. While C69 cites prior work showing interventions affect epigenetic aging, and C3/C55/C82 suggest accelerated aging in shorter-lived DBA/2 mice, direct validation that this predictor reflects biological age or predicts lifespan is acknowledged as needed (C73, C85). The utility claims (C86-C87) are speculative. The distinction between chronological and biological age prediction remains unresolved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "686fb973-b976-4cc3-b1e6-2ff32e7c1324",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The three-CpG model was trained on blood samples, which are practical for longitudinal studies without sacrificing mice. Age-associated DNAm changes occur in multiple tissues at these CpGs, though DNAm levels may vary between hematopoietic subsets, warranting future analysis of sorted cell populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C81 appropriately describe the tissue specificity and practical advantages of blood-based analysis. The observation that age-associated changes occur across tissues (C79, supported by Figure 3) is valuable, while acknowledging potential confounding from cell composition (C80, supported by citations). The recommendation for future work with sorted subsets (C81) is appropriate given this limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    },
+    {
+      "id": "82597112-41ee-464e-89bc-f2ffce751a08",
+      "content_id": "1c509571-d5bd-448a-acfb-5e61f1b0ef89",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study employed appropriate experimental methods including ethical approval, standardized housing conditions, validated DNA extraction and bisulfite conversion protocols, and lasso regression with 10-fold cross-validation for model development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C98 describe standard, appropriate methodological approaches with proper ethical oversight (C92, C93). The analytical approach using glmnet with lasso regression and cross-validation (C96-C98) is sound. Methods are sufficiently detailed for reproducibility. The use of samples from multiple institutions (C88-C90) strengthens generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:30.213131Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a88eadc4-e6b0-41a2-9f03-8e9a9982c45b",
+      "result_id": "312c92fb-0430-437f-a5ef-33e7e406a648"
+    },
+    {
+      "claim_id": "85a8254a-6042-40bd-9a52-edab6cc5a2b6",
+      "result_id": "312c92fb-0430-437f-a5ef-33e7e406a648"
+    },
+    {
+      "claim_id": "d6c37215-c8f5-4b13-a7a9-95d08f524726",
+      "result_id": "312c92fb-0430-437f-a5ef-33e7e406a648"
+    },
+    {
+      "claim_id": "ae522944-7a45-4d29-880f-61fc54eea85f",
+      "result_id": "312c92fb-0430-437f-a5ef-33e7e406a648"
+    },
+    {
+      "claim_id": "21befdff-938a-43d1-afda-46c14730b2d8",
+      "result_id": "312c92fb-0430-437f-a5ef-33e7e406a648"
+    },
+    {
+      "claim_id": "d60c43b4-37a1-466f-80d1-4c83389fb87a",
+      "result_id": "312c92fb-0430-437f-a5ef-33e7e406a648"
+    },
+    {
+      "claim_id": "4bc86f9b-83d7-49d7-a57f-98d169d46465",
+      "result_id": "312c92fb-0430-437f-a5ef-33e7e406a648"
+    },
+    {
+      "claim_id": "d562b7a4-dae3-45e3-aa9d-1d746daa9765",
+      "result_id": "312c92fb-0430-437f-a5ef-33e7e406a648"
+    },
+    {
+      "claim_id": "88e533ed-effa-4e3d-b5a9-006817a805bb",
+      "result_id": "312c92fb-0430-437f-a5ef-33e7e406a648"
+    },
+    {
+      "claim_id": "6c64394f-6e98-4d46-8fc4-72eb69aa6a7c",
+      "result_id": "312c92fb-0430-437f-a5ef-33e7e406a648"
+    },
+    {
+      "claim_id": "77d28bf2-eb09-45a9-9108-675c676bf0e0",
+      "result_id": "312c92fb-0430-437f-a5ef-33e7e406a648"
+    },
+    {
+      "claim_id": "0fb16d45-b181-4980-b441-bc3fb2f937ef",
+      "result_id": "312c92fb-0430-437f-a5ef-33e7e406a648"
+    },
+    {
+      "claim_id": "0e4df35e-c508-40e6-80b6-65651752cc6a",
+      "result_id": "312c92fb-0430-437f-a5ef-33e7e406a648"
+    },
+    {
+      "claim_id": "fa646ec4-7bae-4322-94ff-c7bbf7115893",
+      "result_id": "25d372d7-4dcb-45b7-bf73-e856d5368563"
+    },
+    {
+      "claim_id": "d9f38d6b-b1ea-4b8a-924e-dc2f9e0d876d",
+      "result_id": "25d372d7-4dcb-45b7-bf73-e856d5368563"
+    },
+    {
+      "claim_id": "099c9000-d64c-4918-b10c-1f2f27b7e0bc",
+      "result_id": "25d372d7-4dcb-45b7-bf73-e856d5368563"
+    },
+    {
+      "claim_id": "261091eb-9aa5-4b6b-ba5e-b1009fcfd7cf",
+      "result_id": "25d372d7-4dcb-45b7-bf73-e856d5368563"
+    },
+    {
+      "claim_id": "80c0a3a2-0169-43e1-8bf5-486364a6bc4d",
+      "result_id": "25d372d7-4dcb-45b7-bf73-e856d5368563"
+    },
+    {
+      "claim_id": "0a4a195c-c884-41f1-b6f1-bf8963703b77",
+      "result_id": "7fa6fcab-2c27-451b-9187-f7187e5844d9"
+    },
+    {
+      "claim_id": "88b5cf98-70f7-4b2a-96aa-2ff00e446cc2",
+      "result_id": "7fa6fcab-2c27-451b-9187-f7187e5844d9"
+    },
+    {
+      "claim_id": "4d449c62-9354-4b5b-bcd4-a12914916a3e",
+      "result_id": "7fa6fcab-2c27-451b-9187-f7187e5844d9"
+    },
+    {
+      "claim_id": "ab2d4832-5bce-4cda-b35f-c9b5a8da6460",
+      "result_id": "7fa6fcab-2c27-451b-9187-f7187e5844d9"
+    },
+    {
+      "claim_id": "3b673922-521c-486d-8a07-cda67cd5bfb4",
+      "result_id": "360a1047-a6c5-421f-a916-2e2e6cb4e9e1"
+    },
+    {
+      "claim_id": "68d9b828-31a8-4542-8e08-2aad1e8b2cb4",
+      "result_id": "360a1047-a6c5-421f-a916-2e2e6cb4e9e1"
+    },
+    {
+      "claim_id": "783bd08e-3d43-4037-a91f-15f66ce71ae0",
+      "result_id": "360a1047-a6c5-421f-a916-2e2e6cb4e9e1"
+    },
+    {
+      "claim_id": "be483418-ea26-4e00-9356-a04fcf3f8394",
+      "result_id": "360a1047-a6c5-421f-a916-2e2e6cb4e9e1"
+    },
+    {
+      "claim_id": "c1532244-0657-4eec-880c-4e419084fe94",
+      "result_id": "3fd6facb-aa34-43b9-808e-57ea350d70c5"
+    },
+    {
+      "claim_id": "eba44c7a-338a-4e07-a33b-991ff205f930",
+      "result_id": "3fd6facb-aa34-43b9-808e-57ea350d70c5"
+    },
+    {
+      "claim_id": "28230dab-f90e-43f1-8608-dc4e969a42fa",
+      "result_id": "3fd6facb-aa34-43b9-808e-57ea350d70c5"
+    },
+    {
+      "claim_id": "e27722fe-94b2-45b4-ae09-64d23d7fa844",
+      "result_id": "3fd6facb-aa34-43b9-808e-57ea350d70c5"
+    },
+    {
+      "claim_id": "f6fb2cc7-0f0e-4d16-9f37-11f536c96482",
+      "result_id": "3fd6facb-aa34-43b9-808e-57ea350d70c5"
+    },
+    {
+      "claim_id": "5942b001-8e5f-4998-8cd5-7842f14c3bd3",
+      "result_id": "3fd6facb-aa34-43b9-808e-57ea350d70c5"
+    },
+    {
+      "claim_id": "4974b500-2b7a-429c-8462-5a02a5559ff2",
+      "result_id": "3fd6facb-aa34-43b9-808e-57ea350d70c5"
+    },
+    {
+      "claim_id": "2c32f21f-ca8e-42e3-8625-16138c1ef253",
+      "result_id": "3fd6facb-aa34-43b9-808e-57ea350d70c5"
+    },
+    {
+      "claim_id": "bb035ca2-74db-4ad8-be7a-776b0eda76d1",
+      "result_id": "3fd6facb-aa34-43b9-808e-57ea350d70c5"
+    },
+    {
+      "claim_id": "ad1e9067-8080-41c9-9983-0604b2a0ad69",
+      "result_id": "3fd6facb-aa34-43b9-808e-57ea350d70c5"
+    },
+    {
+      "claim_id": "f13d4e2b-c732-4145-b796-2cf89192bc39",
+      "result_id": "3fd6facb-aa34-43b9-808e-57ea350d70c5"
+    },
+    {
+      "claim_id": "ffaca06a-bbcd-46ce-99b7-053e05f4c737",
+      "result_id": "c63f3ea1-68a3-4ce8-b15a-305de5a77490"
+    },
+    {
+      "claim_id": "0e884f0e-e7a3-4658-8a90-f3e1240686af",
+      "result_id": "c63f3ea1-68a3-4ce8-b15a-305de5a77490"
+    },
+    {
+      "claim_id": "fcc64877-ec52-4a67-9bf5-f34df1903cf7",
+      "result_id": "77071b4e-b6f6-4899-af9d-dafaa6de77c7"
+    },
+    {
+      "claim_id": "e031aaeb-c82f-47dd-b402-4158a4012d06",
+      "result_id": "77071b4e-b6f6-4899-af9d-dafaa6de77c7"
+    },
+    {
+      "claim_id": "f76e26ef-5f96-4510-aa03-b397910b5dd3",
+      "result_id": "77071b4e-b6f6-4899-af9d-dafaa6de77c7"
+    },
+    {
+      "claim_id": "4ba5b8a9-2282-46a0-ad17-7f5756ebf1e6",
+      "result_id": "77071b4e-b6f6-4899-af9d-dafaa6de77c7"
+    },
+    {
+      "claim_id": "1eefc3fa-b334-4cb6-9734-f9bd7c20120c",
+      "result_id": "77071b4e-b6f6-4899-af9d-dafaa6de77c7"
+    },
+    {
+      "claim_id": "7ded49b0-686a-44ff-ba4c-161c577791ad",
+      "result_id": "77071b4e-b6f6-4899-af9d-dafaa6de77c7"
+    },
+    {
+      "claim_id": "ae07e758-26e1-416a-84de-3a320cc7cb81",
+      "result_id": "77071b4e-b6f6-4899-af9d-dafaa6de77c7"
+    },
+    {
+      "claim_id": "4c8bfda0-dc84-4ed4-ad6f-728c7ec6d0fe",
+      "result_id": "77071b4e-b6f6-4899-af9d-dafaa6de77c7"
+    },
+    {
+      "claim_id": "86266924-fa6d-40de-b641-bece2c0f3a3e",
+      "result_id": "ddd5bb43-380c-4a65-bd84-623ae6888664"
+    },
+    {
+      "claim_id": "18cd8a75-e3f9-4537-9084-f2cff897d0ee",
+      "result_id": "ddd5bb43-380c-4a65-bd84-623ae6888664"
+    },
+    {
+      "claim_id": "9024b923-be75-4ec5-bfc4-57310305ad61",
+      "result_id": "2387bea9-61da-4a59-96c6-5bf76e95a281"
+    },
+    {
+      "claim_id": "a2cc603f-9957-4d88-a90e-fca989fb8f2b",
+      "result_id": "2387bea9-61da-4a59-96c6-5bf76e95a281"
+    },
+    {
+      "claim_id": "581fb2c3-f13e-4841-b3c0-6bf2b64a445a",
+      "result_id": "2387bea9-61da-4a59-96c6-5bf76e95a281"
+    },
+    {
+      "claim_id": "e1c31a1e-d949-40ed-8959-f304f6de832a",
+      "result_id": "2387bea9-61da-4a59-96c6-5bf76e95a281"
+    },
+    {
+      "claim_id": "04521eca-5333-4533-a0bf-b500ba253a6c",
+      "result_id": "2387bea9-61da-4a59-96c6-5bf76e95a281"
+    },
+    {
+      "claim_id": "a52ac2dd-c848-4aa5-868b-d489ca9520b1",
+      "result_id": "2387bea9-61da-4a59-96c6-5bf76e95a281"
+    },
+    {
+      "claim_id": "9dad44e1-8b0f-4415-a4a6-a8b49fb481a2",
+      "result_id": "2387bea9-61da-4a59-96c6-5bf76e95a281"
+    },
+    {
+      "claim_id": "b28f9d59-43ea-4af4-baf4-697f3d01019d",
+      "result_id": "2387bea9-61da-4a59-96c6-5bf76e95a281"
+    },
+    {
+      "claim_id": "e8e927c0-c33d-42f3-9427-5b21e96cc8be",
+      "result_id": "2387bea9-61da-4a59-96c6-5bf76e95a281"
+    },
+    {
+      "claim_id": "a3f627fe-7a14-4a33-a94d-8e92807e14ca",
+      "result_id": "2387bea9-61da-4a59-96c6-5bf76e95a281"
+    },
+    {
+      "claim_id": "82605214-d024-4b8f-9ca1-522197e8f214",
+      "result_id": "2387bea9-61da-4a59-96c6-5bf76e95a281"
+    },
+    {
+      "claim_id": "facd3c8e-3cfc-4ec9-8f84-e36c16c3a1fe",
+      "result_id": "686fb973-b976-4cc3-b1e6-2ff32e7c1324"
+    },
+    {
+      "claim_id": "c9617e67-c2aa-4802-91d4-857ba7ba5e3f",
+      "result_id": "686fb973-b976-4cc3-b1e6-2ff32e7c1324"
+    },
+    {
+      "claim_id": "dd24b215-889c-4238-9824-bb75bc5510af",
+      "result_id": "686fb973-b976-4cc3-b1e6-2ff32e7c1324"
+    },
+    {
+      "claim_id": "d594c60b-1015-41c6-8bd1-c714c8c25bea",
+      "result_id": "686fb973-b976-4cc3-b1e6-2ff32e7c1324"
+    },
+    {
+      "claim_id": "0583f243-e80c-4e88-9b64-b44198ff792d",
+      "result_id": "686fb973-b976-4cc3-b1e6-2ff32e7c1324"
+    },
+    {
+      "claim_id": "3910aa4f-43a2-4ed8-a6f3-017807e503df",
+      "result_id": "686fb973-b976-4cc3-b1e6-2ff32e7c1324"
+    },
+    {
+      "claim_id": "24343e4e-0a07-4259-8997-e7ba97b62559",
+      "result_id": "686fb973-b976-4cc3-b1e6-2ff32e7c1324"
+    },
+    {
+      "claim_id": "bb8fe77d-e46f-4488-889f-53ced4bb0818",
+      "result_id": "686fb973-b976-4cc3-b1e6-2ff32e7c1324"
+    },
+    {
+      "claim_id": "a44f9af5-90b2-4265-9bc6-526dd41f5a60",
+      "result_id": "82597112-41ee-464e-89bc-f2ffce751a08"
+    },
+    {
+      "claim_id": "2b0b1d0e-9990-49bf-9723-2d3b56188661",
+      "result_id": "82597112-41ee-464e-89bc-f2ffce751a08"
+    },
+    {
+      "claim_id": "d5efa1ab-3a26-4d24-83b7-70cc71fa5799",
+      "result_id": "82597112-41ee-464e-89bc-f2ffce751a08"
+    },
+    {
+      "claim_id": "d87349da-f173-48ab-a1e6-64af6a9ecce4",
+      "result_id": "82597112-41ee-464e-89bc-f2ffce751a08"
+    },
+    {
+      "claim_id": "29d90c99-b940-4d5d-83de-e413ca4cc3ab",
+      "result_id": "82597112-41ee-464e-89bc-f2ffce751a08"
+    },
+    {
+      "claim_id": "9cef1921-5c46-446e-afbd-16e8ad3f86fc",
+      "result_id": "82597112-41ee-464e-89bc-f2ffce751a08"
+    },
+    {
+      "claim_id": "a2c13621-2b4f-4e05-b250-d2e1f2627dff",
+      "result_id": "82597112-41ee-464e-89bc-f2ffce751a08"
+    },
+    {
+      "claim_id": "5143a449-e259-45db-8983-6ef8e40aea65",
+      "result_id": "82597112-41ee-464e-89bc-f2ffce751a08"
+    },
+    {
+      "claim_id": "db296afd-9572-4053-ae22-80c2bf275545",
+      "result_id": "82597112-41ee-464e-89bc-f2ffce751a08"
+    },
+    {
+      "claim_id": "a96d5bfb-63e6-4c1c-874e-ae5fd3e567ef",
+      "result_id": "82597112-41ee-464e-89bc-f2ffce751a08"
+    },
+    {
+      "claim_id": "9b67785a-84bf-42de-89ab-808d65afa2d6",
+      "result_id": "82597112-41ee-464e-89bc-f2ffce751a08"
+    }
+  ],
+  "comparisons": []
+}

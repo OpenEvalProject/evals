@@ -1,0 +1,1668 @@
+{
+  "submission": {
+    "id": "66de18cc-42b0-41f9-9c5a-f88e15adf678",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:29:45.651642Z",
+    "updated_at": "2025-12-01T21:29:45.651642Z"
+  },
+  "content": [
+    {
+      "id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "submission_id": "66de18cc-42b0-41f9-9c5a-f88e15adf678",
+      "content_type": "manuscript",
+      "content_text": "# The human auditory brainstem response to running speech reveals a subcortical mechanism for selective attention\n\n## Authors\n\n- Antonio Elia Forte<sup>1</sup>\n- Octave Etard<sup>1</sup>\n- Tobias Reichenbach<sup>1</sup> ([ORCID: 0000-0003-3367-3511](https://orcid.org/0000-0003-3367-3511)) \u2020\n\n### Affiliations\n\n1. Department of Bioengineering, Centre for Neurotechnology Imperial College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nHumans excel at selectively listening to a target speaker in background noise such as competing voices. While the encoding of speech in the auditory cortex is modulated by selective attention, it remains debated whether such modulation occurs already in subcortical auditory structures. Investigating the contribution of the human brainstem to attention has, in particular, been hindered by the tiny amplitude of the brainstem response. Its measurement normally requires a large number of repetitions of the same short sound stimuli, which may lead to a loss of attention and to neural adaptation. Here we develop a mathematical method to measure the auditory brainstem response to running speech, an acoustic stimulus that does not repeat and that has a high ecological validity. We employ this method to assess the brainstem's activity when a subject listens to one of two competing speakers, and show that the brainstem response is consistently modulated by attention.\n\n## Introduction\n\nIt is well known that selective attention to one of several competing acoustic signals affects the encoding of sound in the auditory cortex (Shinn-Cunningham, 2008; Hackley et al., 1990; Choi et al., 2013; Fritz et al., 2007b; Hillyard et al., 1973; Womelsdorf and Fries, 2007; Fritz et al., 2007a; N\u00e4\u00e4t\u00e4nen et al., 2001). Because extensive auditory centrifugal pathways carry information from central to more peripheral levels of the auditory system (Winer, 2006; Pickels, 1988; Song et al., 2008; Bajo et al., 2010), neural activity in the subcortical structures may contribute to attention as well. Previous attempts to determine an attentional modulation from recording the auditory brainstem response through scalp electrodes have, however, yielded highly inconclusive results.\n\nIn particular, one investigation found that selective attention alters the brainstem's response to the fundamental frequency of a speech signal (Galbraith et al., 1998), while another study concluded that this response is modulated in an unsystematic but subject-specific manner (Lehmann and Sch\u00f6nwiesner, 2014) and a third recent experiment did not find a significant attentional effect (Varghese et al., 2015). Results on the effects of attention on the auditory-brainstem response to short clicks or pure tones are similarly inconclusive (Brix, 1984; Gregory et al., 1989; Hoormann et al., 2000; Galbraith et al., 2003). These inconsistencies may result from a main experimental limitation in these studies: because the brainstem response is tiny, its measurement requires hundred- to thousandfold repetition of the same sound. The large number of repetitions may lead to difficulties for subjects in sustaining selective attention, to adaptation in the nervous system, and to a reduction in efferent feedback (Lasky, 1997; Kumar Neupane et al., 2014).\n\nTo overcome this limitation, we develop here a method to measure the auditory brainstem's response to natural running speech that does not repeat. We then use this method to assess the modulation of the auditory brainstem response to one of two competing speakers by selective attention.\n\n## Results\n\nAssessing the brainstem's response to continuous non-repetitive speech does not allow to average over many repeated presentations of the same sound. Instead, we sought to quantify the brainstem's response to the fundamental frequency of speech. Neuronal activity in the brainstem, and in particular in the inferior colliculus, can indeed phase lock to the periodicity of voiced speech (Skoe and Kraus, 2010). The fundamental frequency of running speech varies over time, however, compounding a direct read-out of the evoked brainstem response.\n\nTo overcome this difficulty, we employed empirical mode decomposition (EMD) of the speech stimuli to identify an empirical mode that, at each time instance, oscillates at the fundamental frequency of the speech signal (Huang and Pan, 2006) (Materials\u00a0and\u00a0methods). This mode is a nonlinear and nonstationary oscillation with a temporally-varying amplitude and frequency that we refer to as the 'fundamental waveform' of the speech stimulus (Figure 1a).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/27203/elife-27203-fig1-v1.jpg)\n\n**Figure 1.:** (a) Speech (black) contains voiced parts with irregular oscillations at a time-varying fundamental frequency and higher harmonics. We extract a fundamental waveform (red) that oscillates nonlinearly and nonstationary at the fundamental frequency. (b) The autocorrelation of the fundamental waveform (red) peaks when the delay vanishes and oscillates at the average fundamental frequency. The cross-correlation of the fundamental waveform with its Hilbert transform (blue) can be seen as an imaginary part of the autocorrelation. The amplitude of the resulting complex cross-correlation (black) shows a life-time of a few ms. (c) The correlation of the speech-evoked brainstem response, recorded from one subject, to the fundamental waveform of the speech signal (red) as well as to its Hilbert transform (blue) can serve as real and imaginary parts of a complex correlation function. Its amplitude (black) peaks at a latency of 9 ms. The latency of the correlation is not altered by the processing of the speech signal or of the neural recording, and contains neither a stimulus artifact nor the cochlear microphonic (Figure 1\u2014figure supplement 1).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27203/elife-27203-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) The cross-correlation between the original speech signal with the fundamental waveform (red) as well as with its Hilbert transform (blue) and the resulting amplitude (black) show a peak at 0 ms and no phase shift. The processing of the acoustic signal does accordingly not change the latency or phase of that signal. (b) The computation of the cross-correlation of the fundamental waveform to the neural recording involved processing of the neural signal such as through filtering. However, the cross-correlation between the recorded neural signal and the filtered version shows a peak at vanishing latency. The processing of the neural signal did therefore not alter the latency. (c) When the earphones are placed close to the ears, but not inside the ear canal, preventing a subject from hearing the speech signal, the cross-correlation between the recorded neural signal and the fundamental waveform of speech (red) as well as its Hilbert transform (blue) do not yield a measurable peak. The amplitude of the resulting complex correlation function (black) does not peak either, demonstrating the absence of a stimulus artifact. (d) When a subject listened to a speech signal and then to the same signal with reversed polarity, and when the average over the neural recordings to both stimulus presentations was employed for the analysis, the complex cross-correlation showed the same structure as when it was computed using the neural response to one stimulus only. This shows the absence of a stimulus artifact as well as the absence of the cochlear microphonic in the measured response. (e) Putative cortical contributions to the neural response would occur at latencies above 15 ms and likely between 50\u2013500 ms. The complex correlation at those latencies shows, however, no significant peak. To enable comparison, all recordings were obtained from the same subject for whom we report the exemplary recording in Figure 1c.\n\nWe then recorded the brainstem response to running non-repetitive speech stimuli of several minutes in duration from human volunteers through scalp electrodes. We cross-correlated the obtained recording with the fundamental waveform of the speech signal (Figure 1b). Because the brainstem response may occur at a phase that is different from that of the fundamental waveform, we also correlated the neural signal to the Hilbert transform of the fundamental waveform that has a phase shift of 90\u02da. The two correlations can be viewed as the real and imaginary part of a complex correlation function that can trace the brainstem response at any phase shift. The amplitude of the complex correlation informs then on the strength of the brainstem response.\n\nOur statistical analysis showed that the peak amplitude of the complex correlation was significantly different from the noise in fourteen out of sixteen subjects (p<0.05, Materials\u00a0and\u00a0methods). The peak occurred at a mean latency of 9.3\u00a0\u00b1\u00a00.7 ms, verifying that the measured neural response resulted from the brainstem and not from the cerebral cortex (Hashimoto et al., 1981; Picton et al., 1981). Moreover, the latency agreed with that found previously regarding the brainstem's response to short repeated speech stimuli (Skoe and Kraus, 2010). The average value of the correlation at the peak was 0.015\u00a0\u00b1\u00a00.003. We checked that the response did not contain a stimulus artifact or a contribution from the cochlear microphonic, and that the latency of the response was not affected by the processing of the speech signal or of the neural response (Materials\u00a0and\u00a0methods; Figure 1\u2014figure supplement 1). We also verified that the response did not contain further peaks at higher latencies, showing that the neural signal did not contain a measurable contribution from the cortex.\n\nWe further considered a highly simplistic model of the auditory brainstem response in which a burst of neural spikes occurred at each cycle of the fundamental waveform, at a fixed phase \u03c6, and was then shifted in time by a certain delay \u03c4 (Figure 2a,b; Materials\u00a0and\u00a0methods). Adding noise that is realistic of neural recordings from scalp electrodes, and computing the complex correlation of the obtained signal with the fundamental waveform, showed a peak in the complex correlation at the time delay \u03c4 (Figure 2c). The phase \u03c6 of the fundamental waveform at which the neural bursts occurred was obtained from the phase of the complex correlation at the time delay \u03c4. This demonstrated that the brainstem's response to continuous speech could be reliably extracted through the developed method. The response can be characterized through the latency and amplitude of the correlation's peak.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/27203/elife-27203-fig2-v1.jpg)\n\n**Figure 2.:** (a) The fundamental waveform (red) as well as its Hilbert transform (blue) oscillate with a varying amplitude and frequency. (b) We model a simplistic brainstem response in which bursts of neural spikes occur at each cycle of the fundamental waveform, at a phase of \u00bc \u03c0 rad (black dots). Furthermore, all neural bursts are shifted by a temporal delay of 8 ms. (c) When adding realistic noise as emerges from scalp recordings, and then computing the complex correlation with the fundamental waveform as performed for the actual brainstem recording, we find a peak at the modelled delay of 8 ms. The modelled phase of \u00bc \u03c0 rad is obtained as the inverse phase of the complex correlation at that latency.\n\nArmed with the ability to quantify the brainstem's response to running non-repetitive speech, we sought to investigate if this neural activity is affected by selective attention. Employing a well-established paradigm of attention to one of two speakers (Ding and Simon, 2012), we presented volunteers diotically with two concurrent speech streams of equal intensity, one by a male and another by a female voice. For parts of the speech presentation subjects attended the male voice and ignored the female voice, and vice versa for the remaining parts.\n\nWe quantified the brainstem's response to both the male and the female voice by extracting the fundamental waveforms of both speech signals and correlating the neural recording separately to both. We found that the latency of the response was unaffected by attention: the response to the unattended speaker occurred 0.8\u00a0\u00b1\u00a00.5 ms later than that to the attended speaker, which was not statistically significant (p=0.2; average over the responses to the male and the female voice as well as all subjects).\n\nIn contrast, all subjects showed a larger response of the auditory brainstem, at the peak latency, to the male voice when attending rather than ignoring it (Figure 3a). The difference in the responses was statistically significant in nine of the fourteen subjects (p<0.05). The brainstem's response to the attended female speaker similarly exceeded that to the unattended female voice in all but one subject, with eight subjects showing a statistically-significant difference (p<0.05; Figure 3b). The ratio of the brainstem's response to attended and to ignored speech, averaged over all subjects, was 1.5\u00a0\u00b1\u00a00.1 and 1.6\u00a0\u00b1\u00a00.2 for the male and for the female speaker, respectively. Both ratios were significantly different from unity (p<0.001, male voice; p<0.01, female voice). The male and the female voice elicited a comparable attentional modulation: the difference between the corresponding ratios was insignificant (p=0.7). The magnitude of the brainstem's response was hence significantly enhanced through attention, and consistently so across subjects and speakers.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/27203/elife-27203-fig3-v1.jpg)\n\n**Figure 3.:** (a) The brainstem's response to the male speaker is larger for each subject when attending the speaker (dark blue) than when ignoring it (light blue). The average ratio of the brainstem responses to the attended and to the ignored male speaker is significantly larger than 1 (black, mean and standard error of the mean). (b) With the exception of subject 13, the neural response to the female voice is also larger when subjects attend to it (dark red) instead of ignoring it (light red). The average ratio of the brainstem responses to the attended and to the ignored female speaker is significantly larger than one as well (black, mean and standard error of the mean).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27203/elife-27203-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) The correlation between the amplitude of the brainstem's response to a single speaker and its fundamental frequency is slightly negative. (b, c) The amplitude of the brainstem's response to an attended (b) as well as an ignored (c) speaker decreases slightly with increasing fundamental frequency as well. The range of fundamental frequencies in the competing speaker scenarios (b, c) is larger than in the single speaker situation (a) since the latter consists of a single female speaker only whereas the former contain both a male and a female speaker, with the female speaker having a fundamental frequency that is on average larger than that of the male speaker.\n\nThe auditory brainstem response to short speech stimuli has a low-pass nature: the amplitude of the response declines with increasing frequency (Musacchia et al., 2007; Skoe and Kraus, 2010).To determine if this relation held for the brainstem response to continuous speech that we measured here as well, and how it may be affected by attention, we computed the correlation between the amplitude of the brainstem response to short speech segments and the fundamental frequency of the segments (Materials\u00a0and\u00a0methods). We found a small but statistically significant negative correlation between the amplitude of the brainstem response and the fundamental frequency, both for the neural response to a single speaker as well as for the response to the attended and ignored speech signal of two competing speakers, evidencing the low-pass nature of the brainstem response (Figure 3\u2014figure supplement 1). The correlations between the amplitude and the frequency did not differ significantly between the different conditions.\n\nThe brainstem response to short clicks in noise can have a delay that becomes longer with increasing noise level, while the amplitude of the brainstem response declines, presumably reflecting varying contributions of auditory-nerve fibers with different spontaneous rates and from different cochlear locations (Mehraei et al., 2016). However, for the brainstem response to continuous speech that we measured here, we did not find a statistically-significant correlation between amplitude and latency (Materials\u00a0and\u00a0methods).\n\n## Discussion\n\nOur results show that the human auditory brainstem response to continuous speech is larger when attending than when ignoring a speech signal, and consistently so across different subjects and speakers. In particular, the strength of the phase locking of the neural activity to the pitch structure of speech is larger for an attended than for an unattended speech stream. In contrast, we did not observe a difference in the latency of this activity.\n\nThe fundamental waveform of speech that we have obtained from EMD has a temporally varying frequency and amplitude and is therefore not a simple component of Fourier analysis. While it may be obtained from short-time Fourier transform or wavelet analysis, both methods suffer from an inherently limited time-frequency resolution that makes them inferior to the EMD analysis (Huang and Pan, 2006).\n\nBecause we have employed a diotic stimulus presentation in which the same acoustical stimulus was presented to each ear, the attentional modulation cannot result from a general modulation of the brainstem's activity to acoustic stimuli between the two hemispheres. Moreover, although the fundamental frequencies of the two competing speakers differ at most time points, their spectra largely overlap. The attentional modulation can therefore not result from a broad-band modulation of the neural activity either. Instead, the attentional effect must result from a modulation of the brainstem's response to the specific pitch structure of a speech stimulus.\n\nThe brainstem response to the pitch of continuous speech that we have measured can reflect a response both to the fundamental frequency of speech as well as to higher harmonics. Indeed, previous studies have found that the brainstem responds at the fundamental frequency of a speech stimulus even when that frequency itself is removed from the acoustic signal (Galbraith and Doan, 1995), or when it cancels out due to presentation of stimuli with opposite polarities and averaging of the obtained responses (Aiken and Picton, 2008). The attentional modulation of the brainstem response can thus reflect a modulation of the response to the fundamental frequency itself or to higher harmonics. Moreover, attentional modulation of higher harmonics may depend on frequency as shown recently in recordings of otoacoustic emissions from the inner ear (Maison et al., 2001).\n\nThe attentional modulation of the brainstem's response to the pitch of a speaker may result from an enhancement of the neural response to an attended speech signal, from the suppression of the response to an ignored speech stimulus, or from both. Further investigation into this issue may compare brainstem responses to speech when attending to the acoustical signal and when attending to a visual stimulus (Woods et al., 1992; Karns and Knight, 2009; Saupe et al., 2009).\n\nThe response at the fundamental frequency of speech can result from multiple sites in the brainstem (Chandrasekaran and Kraus, 2010). However, we observed a single peak with a width of a few ms in the correlation of the neural signal to the fundamental waveform of speech. The brainstem response to running speech that we have measured here can therefore only reflect neural sources whose latencies vary by a few ms or less from the peak latency. The neural delay of about 9 ms as well as the similarity of the speech-evoked brainstem response to the frequency-following response suggest that the main neural source may be in the inferior colliculus (Sohmer et al., 1977). The attentional effect that we have observed may then result from the multiple feedback loops between the inferior colliculus, the medial geniculate body and the auditory cortex (Huffman and Henson, 1990).\n\nOur study provides a mathematical methodology to analyse the brainstem response to complex, real world stimuli such as speech. Since our method does not require artificial and repeated stimuli, it fosters sustained attention and avoids potential neural adaptation. This method can therefore pave the way to further explore how the brainstem contributes to the processing of complex real-world acoustic environments. It may also be relevant for better understanding and diagnosing the recently discovered cochlear neuropathy or 'hidden hearing loss' (Kujawa and Liberman, 2009). Because the latter alters the brainstem's activity (Schaette and McAlpine, 2011; Mehraei et al., 2016), assessing the auditory brainstem response to speech as well as its modulation by attention may further clarify the origin, prevalence and consequences of such poorly understood supra-threshold hearing loss.\n\n## Materials\u00a0and\u00a0methods\n\n### Participants\n\n16 healthy adult volunteers aged 18 to 32, eight of which were female, participated in the study. All subjects were native English speakers and had no history of hearing or neurological impairments. All participants had pure-tone hearing thresholds better than 20 dB hearing level in both ears at octave frequencies between 250 Hz and 8 kHz. Each subject provided written informed consent. All experimental procedures were approved by the Imperial College Research Ethics Committee.\n\n### Auditory brainstem recordings to running speech\n\nSamples of continuous speech from a male and a female speaker were obtained from publicly available audiobooks (https://librivox.org). All samples had a duration of at least two minutes and ten seconds; some were slightly longer to end upon completion of a sentence. To construct speech samples with two competing speakers, samples from the male and from the female speaker were normalized to the same root-mean-square amplitude and then superimposed.\n\nParticipants were placed in a comfortable chair in an acoustically and electrically insulated room (IAC Acoustics, UK). A personal computer outside the room controlled audio presentation and data acquisition. Speech stimuli were presented at a sampling frequency of 44.1 kHz through a high-performance sound card (Xonar Essence STX, Asus, USA). Stimuli were delivered diotically through insert earphones (ER-3C, Etymotic, USA) at a level of 76 dB(A) SPL (A-weighted frequency response). Sound intensity was calibrated with an ear simulator (Type 4157, Br\u00fcel and Kjaer, Denmark). All subjects reported that the stimulus level was comfortable.\n\nThe response from the auditory brainstem was measured through five passive Ag/AgCl electrodes (Multitrode, BrainProducts, Germany). Two electrodes were positioned at the cranial vertex (Cz), two further electrodes were placed on the left and right mastoid processes, and the remaining electrode was positioned on the forehead to measure the ground. The impedance between each electrode and the skin was reduced to below 5 k\u03a9 using abrasive electrolyte-gel (Abralyt HiCl, Easycap, Germany). The electrode on the left mastoid, at the cranial vertex and the ground electrode were connected to a bipolar amplifier with low-level noise and a gain of 50 (EP-PreAmp, BrainProducts, Germany). The remaining two electrodes were connected to a second identical bipolar amplifier. The output from both bipolar amplifiers was fed into an integrated amplifier (actiCHamp, BrainProducts, Germany) where it was low-pass filtered through a hardware anti-aliasing filter with a corner frequency of 4.9 kHz and sampled at 25 kHz. The audio signals were measured by the integrated amplifier as well through an acoustic adapter (Acoustical Stimulator Adapter and StimTrak, BrainProducts, Germany). The electrophysiological data were acquired through PyCorder (BrainProducts, Germany). The simultaneous measurement of the audio signal and the brainstem response from the integrated amplifier was employed to temporally align both signals to a precision of less than 40 \u03bcs, the inverse of the sampling rate (25 kHz).\n\n### Experimental design\n\nIn the first part of the experiment, each volunteer listened to four speech samples of the female speaker only. Comprehension questions were asked at the end of each part in order to verify the subject's attention to the story.\n\nThe second part of the experiment employed eight samples of speech that contained both a male and a female voice. During the presentation of the first four samples, subjects were asked to attend either the male or the female speaker. Volunteers were then presented with the next four speech samples and asked to attend to the speaker that they had ignored earlier. Whether the subject was asked to attend first to the male or to the female voice was determined randomly for every subject. Comprehension questions were asked after each sample.\n\n### Computation of the fundamental waveform of speech\n\nThe fundamental waveform of each speech sample with a single speaker was computed through a custom-written Matlab program (code available on Github; Forte, 2017;\u00a0a copy is archived at https://github.com/elifesciences-publications/fundamental_waveforms_extraction). The fundamental waveform of a speech sample with two speakers followed from the two corresponding samples with a single speaker only.\n\nFirst, each speech signal was downsampled to 8820 Hz, low-pass filtered at 1,500 Hz (linear-phase FIR filter, transition band 1500\u20131650 Hz, stopband attenuation \u221280 dB, passband ripple 1 dB, order 296) and time-shifted to compensate for the filter delay. Silent parts between words were identified by computing the envelope of the speech signal. Each part where the envelope was less than 10% of the maximal value found in the speech was considered silent, and the speech signal there was set to zero.\n\nSecond, the instantaneous fundamental frequency of the voiced parts of the speech signal was detected through the autocorrelation method, employing rectangular windows of 50 ms duration with a successive overlap of 49 ms. Speech segments that yielded a fundamental frequency outside the range of 60 Hz to 400 Hz, or in which the fundamental frequency varied by more than 10 Hz between two successive windows were considered voiceless. The speech segments that corresponded to voiced speech, as well as their fundamental frequency, were thus obtained. The fundamental frequency of each segment was interpolated through a cubic spline, and varied between 100 and 300 Hz in each segment. Note that this method yields the fundamental frequency but not by itself the fundamental wavemode.\n\nThird, the voiced speech segments were analysed through the Hilbert-Huang transform. The latter is an adaptive signal processing based on empirical basis functions and can thus be better suited for analysing nonlinear and nonstationary signals such as speech than Fourier analysis (Huang and Pan, 2006). The transform consists of two parts. First, empirical mode decomposition extracts intrinsic mode functions (IMFs) that satisfy two properties: (i) the numbers of extrema and zero crossings are either equal or differ by one; (ii) the mean of the upper and lower envelope vanishes. The signal follows as the linear superposition of the IMFs. Second, the Hilbert spectrum of each IMF is determined, which yields, in particular, the mode's instantaneous frequency. This analysis was performed for each short segment of voiced speech, that is, for each part of voiced speech that was preceded and followed by a pause or voiceless speech.\n\nFourth, the fundamental frequency of each short speech segment was compared to the instantaneous frequencies of the segment's IMFs at each individual time point. All IMFs with an instantaneous frequency that differed by less than 20% from the segment's fundamental frequency were determined, and the IMF with the largest amplitude was therefrom selected as the fundamental wavemode of that segment and at that time point (Huang and Pan, 2006). If no IMF had an instantaneous frequency within 20% of the fundamental frequency, or if a speech segment was unvoiced, that time point was assigned a fundamental waveform of zero. The fundamental waveforms obtained at the different time points were combined through cosine crossfading functions with a window width of 10 ms to obtain the fundamental waveform of the speech signal. The Hilbert transform of that fundamental waveform was computed as well.\n\nTo control for latency changes in the acoustic signal induced by the subsequent processing steps, and in particular by the involved frequency filtering, the cross-correlation between the original speech signal and the fundamental waveform as well as with its Hilbert transform was computed (Figure 1\u2014figure supplement 1a). The cross-correlations show that the fundamental waveform has no latency change and no phase difference with respect to the original speech stimulus.\n\n### Analysis of the auditory-brainstem response\n\nThe brainstem responses from the two measurement channels were averaged. A frequency-domain regression technique (CleanLine, EEGLAB) was used to attenuate noise from the power line in the brainstem recording. Moreover, because a voltage amplitude above 20 mV cannot result from the brainstem but represents artefacts such as spurious muscle activity, the signal was set to zero during episodes of such high voltage. The electrophysiological recording was then filtered between 100\u2013300 Hz since the fundamental frequency of the speech was in that range (high-pass filter: linear-phase FIR filter, transition band from 90 to 100 Hz, stopband attenuation \u221280 dB, passband ripple 1 dB, order 6862; low-pass filter: linear-phase FIR filter, transition band 300\u2013360 Hz, stopband attenuation \u221280 dB, passband ripple 1 dB, order 1054). In particular, the high-pass filter eliminated neural signals from the cerebral cortex that occur predominantly below 100 Hz. To avoid transient activity at the beginning of each speech sample, the first ten seconds of each brainstem recording in response to a speech sample were discarded. The following two minutes of data were divided into 40 epochs of a duration of 3 s each, and the remaining data were discarded, if any.\n\nThe processing of the neural signal did not induce a latency. This was confirmed by computing the cross-correlation between the processed neural response and the original signal, demonstrating a maximum correlation at zero temporal delay (Figure 1\u2014figure supplement 1b).\n\nAs set out above, the first part of the experiment measured the brainstem response to running speech without background noise. For each subject and each epoch, the cross-correlation of the brainstem response with the corresponding segment of the fundamental waveform as well as with its Hilbert transform were computed. A delay of 1 ms of the acoustic signal produced by the earphones was taken into account. The two cross-correlation functions were interpreted as the real and the imaginary part of a complex correlation function. For each individual subject, the average of the complex cross-correlation over all epochs was then computed, and the latency at which the amplitude peaked was determined.\n\nThe obtained latencies of about 9 ms affirmed that the signal resulted from the auditory brainstem and not from the cerebral cortex (Hashimoto et al., 1981). The latency also evidenced that the signal resulted neither from stimulus artifacts nor from the cochlear microphonic, which would occur at or near zero delay (Skoe and Kraus, 2010). As an additional control, the brainstem response was recorded when the earphones were near the ear, but not inserted into the ear canal, so the subject could not hear the speech signals. The recording did then not yield a measurable brainstem response (Figure 1\u2014figure supplement 1c). Two presentations of the same speech stimulus, but with opposite polarities, were employed as well, and the neural response to both presentations was averaged before computing the correlation to the fundamental waveform. The correlation was identical to that obtained by a single stimulus presentation, demonstrating the absence of a stimulus artifact and of the cochlear microphonic (Figure 1\u2014figure supplement 1d).\n\nTo further verify our analysis we considered a highly simplistic model of the brainstem response. In particular, we constructed a simplified hypothetical brainstem response to speech of a duration of 10 min in which neural spikes occur in bursts (Figure 2a,b). We described each burst by a Gaussian distribution with a width of 1 ms. Each cycle of the fundamental waveform triggered a burst, which was centered at a fixed phase \u03c6 of the waveform and shifted by a certain time delay \u03c4. We then added an actual neural recording from a trial without sound presentation, representing realistic noise, to the simulated brainstem response, at a signal-to-noise ratio of \u221220 dB. Processing this simulated brainstem response through the methods described above yielded a complex correlation that peaked at the imposed time delay \u03c4 (Figure 2c). The phase of the complex correlation was the inverse of the phase \u03c6 of the fundamental waveform at which the modelled brainstem response occurred; the inverse of the phase appeared due to the complex conjugate in the definition of the cross-correlation. This confirmed the validity of our methodology as well as that our processing of the neural data did not alter the temporal delay.\n\nTo determine whether the peak in the cross-correlation obtained from a given subject was significant, the values of the complex cross-correlation from the individual epochs, and at the peak latency, were analysed. Because each correlation value is an average of many measurements, it follows from the Central Limit Theorem that the complex correlations from the different epochs exhibit a two-dimensional normal distribution with a mean of zero if the measurements are randomly distributed. A one-sample Hotelling\u2019s T-squared test was therefore used to assess the significance of the complex correlation at the peak latency. Two subjects who did not show a significant correlation (p>0.05) were not included in the further analysis.\n\nThe population mean and standard error of the mean of the latency were computed from the latencies of the individual subjects.\n\nThe brainstem responses to competing speakers were then analysed for each individual subject. For each epoch, the complex cross-correlation between the brainstem response and the fundamental waveform was computed, both for the fundamental waveform of the attended and for that of the unattended speaker. The corresponding complex correlation functions were averaged across epochs, and the amplitudes as well as latencies of the peaks were determined.\n\nStatistical significance of the difference in latency of the brainstem responses to the attended and the unattended speaker, obtained from the eight samples, was tested by computing population mean as well as standard error of the mean for the differences in latencies obtained from individual subjects. A two-tailed Student's t-test was employed to test if the difference was significantly different from zero.\n\nTo control for differences in the voice of the male and the female speaker, differences in amplitude of the brainstem response to the attended and ignored male speaker were determined separately from differences in the amplitude of the brainstem response to the attended and ignored female speaker. The amplitudes of the complex cross-correlations, at the peak latencies, were computed for all epochs. A two-sample Student\u2019s t-test was then employed to test for a significant difference between the amplitude in response to the attended and the ignored speaker.\n\nThe amplitude of the brainstem response to speech can vary widely between subjects (3), due to variations such as in anatomy and scalp conductivity. The ratios of the amplitudes of the brainstem responses to attended and ignored speech, rather than the differences, were thus computed for each individual. The population mean and standard error of the mean were therefrom obtained. A one-tailed Student's t-test assessed whether the population average of the ratio was significantly larger than unity. A two-tailed two-sample Student's t-test was employed to assess whether the ratios obtained from the responses to the male and to the female speaker were significantly different.\n\nWe assessed the correlation between the amplitude of the brainstem response and the frequency of the fundamental waveform by dividing each speech signal into 160 segments, and by dividing the corresponding neural recording analogously. We then computed the complex correlation of each segment of the neural data with the corresponding segment of the fundamental waveform, and obtained the amplitude at the peak latency. We further computed the average fundamental waveform of each segment. The correlation between amplitude and frequency was tested for statistical significance through a one-tailed Student's t-test. It was found to be significant for the brainstem response to a single speaker as well as for the response to the attended and the ignored speaker in the two-speaker stimuli (p<0.05). However, none of the differences between the obtained correlation coefficients were statistically significant (two-tailed Student's t-test, p<0.05).\n\nWe also computed the correlation between the amplitude and the latency of the brainstem response from short speech segments of 120 s in duration; such long segments were required to obtain a reliable assessment of the latency. We performed this analysis for the auditory brainstem response to a single speaker as well as for those to the attended and ignored speaker when subjects were presented with two competing speakers. However, none of these correlations were statistically significant (two-tailed Student's t-test, p>0.05).\n",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "4cebe197-63f5-4285-8621-d8fbed4c4fb8",
+      "submission_id": "66de18cc-42b0-41f9-9c5a-f88e15adf678",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Barbara G Shinn-Cunningham, Boston University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.27203.008](https://doi.org/10.7554/eLife.27203.008)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The human auditory brainstem response to running speech reveals a subcortical mechanism for selective attention\" for consideration by eLife. Your article has been favorably evaluated by Andrew King (Senior Editor) and three reviewers, one of whom, Barbara G Shinn-Cunningham (Reviewer #1), is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Steve Aiken (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe results of this study are very intriguing, showing differences in auditory steady-state responses (ASSRs) that are specific to which of two speech streams a listener is attending. Although the correlations between the stimulus and response are small, the peak of the cross-correlation function was significant in most of the subjects, as was the effect of attention. The writing is generally clear and concise.\n\nAll three reviewers thought that the conclusion that brainstem-generated responses are modulated by attentional focus, if properly justified, is novel and noteworthy. While many aspects of this paper are intriguing, there are questions that affect the interpretation. These technical issues and concerns must be addressed adequately for the study to be acceptable for publication in eLife.\n\nEssential revisions:\n\n1) For any response like this, including the more-common FFR (with a steady-state constant-frequency acoustic signal), observations are a mixture of IC responses and other responses (perhaps in thalamus \u2013 but also lower responses such as the cochlear microphonic). For the same relative delays and magnitudes of the responses, these different responses will add in different phases, depending on their frequency. Unlike with the FFR, here, the frequency is changing from moment to moment. This will lead to different cancellation / summation at different frequencies that likely result in different peak delays. Only if there is a single truly dominant source in the mixture will the peak delay be at a fixed delay independent of frequency.\n\nAttention effects in FFRs have been suggested to be due to the involvement of the cortex (the work of Emma Holmes presented at ARO 2017). While the delay of 10 ms relative to the stimulus calls into question a dominant role for the cortex in the present study (see above), it is also possible that the attention effect is mediated through olivocochlear inhibition.\n\nThe stats show that attention is changing the observed responses. The question is just where these responses are coming from. Given that the observed response is a mixture, further analysis is warranted to tease apart whether the effects are due to a single dominant source with a fixed delay that is modulated by attention, or whether higher-level sources, which are modulated by attention, cause different summation / cancellation effects depending on attentional focus.\n\n2) The latency reported, 10.3ms, is greater than is usually attributed to a brainstem response. The latency of the largest peak of the click-evoked ABR (usually attributed to inferior colliculus) is usually assumed to be ~5ms or somewhat greater for lower-frequency stimuli (Don and Eggermont, 1978).\n\nOften, the delay in an ASSR is longer (presumably in part because it is a mixture of neural sources as noted above). The authors say that their estimate agrees with that reported by Skoe and Kraus (2010) for speech, but the value reported in that paper is actually 7-8ms. Figure 1 of that paper, where that value is mentioned, illustrates it as the amount by which the response precedes the stimulus (!), so that source itself may have some methodological problems.\n\nBecause the latency is the primary fact used to conclude that the induced attentional changes are from brainstem, this issue is very important to consider and discuss.\n\n3) The latency is calculated as a cross-correlation between electrode signals and a \"fundamental waveform\" defined as a \"nonlinear oscillation\" derived from the speech by empirical mode decomposition (EMD). EMD is attractive but not very well defined or theoretically grounded; as far as we can tell, it just extracts an approximation of the fundamental Fourier component. The Hilbert transform is calculated, and both the waveform and its Hilbert transform are cross-correlated with the EEG to obtain a \"complex correlation function\", the amplitude of which peaks at a latency of 10.3ms. The rationale for introducing this Hilbert component is not clear, as it would seem more straightforward to correlate simply with the speech waveform (or its \"fundamental waveform). The \"amplitude of the complex CC\" has a wider peak than the raw CC.\n\nPlease explain and justify the analysis more clearly.\n\n4) An accurate estimate of latency is crucial for saying that the response reflects the brainstem. Temporal alignment between audio and EEG may be affected by acoustic delay in the earphones (not specified, possibly ~1ms for ER 3), as well as the signal processing of the inputs and of the brain measures.\n\nAudio is down-sampled (interpolation filter unspecified), filtered by a FIR of order 296 (IR temporal extent 33.4 ms), time-shifted to \"compensate for delay\" of the FIR, processed by the EMD algorithm, and finally by the Hilbert transform. The Hilbert transform is presumably performed by applying an STFT to a window of unspecified duration. It involves a 90-degree phase shift that translates (for the quasi-sinusoidal fundamental wave) to a frequency-dependent time shift of up to 2.5ms at 100Hz.\n\nOn the EEG side, the signal is processed by a frequency-domain method (ClearLine) to attenuate 50Hz and (presumably) harmonics. The possibility that this might affect the fundamental waveform (its time-varying frequency falls in this range) is not discussed. The EEG is filtered by a cascade of FIR filters of order 6862 and 1054 (IR lengths 274ms and 42ms) before correlation with the audio-based signal. There are clearly many stages at which a latency mismatch could arise, and the fact that this is not acknowledged or addressed (for example by calibration) is troubling.\n\nThe peak value of the cross-correlation function shown in Figure 1C, 0.05, seems rather high given that the ABR is supposed to have very low SNR. Similar values (0.05 \u2013 0.1) have been reported for cross-correlation with filtered cortical responses that are supposed to have a much better SNR. The shape of the function is also somewhat intriguing because it is approximately symmetrical and extends to negative lag (i.e., there is a noncausal relationship between the input and the neural response). This suggests that it is largely determined by temporal smearing in the processing, for example due to convolution with the various unspecified filter kernels.\n\nPlease carefully outline how the acoustical and neural signal processing affects the estimated latency of the neural responses.\n\n5) From the description of methods, it would seem that the stimulus is always presented with the same polarity. Electrode signals measured in that case are likely to be dominated by cochlear microphonic or possibly even cross-talk from the earphone drivers or cables. There is no reason to believe that they are from brainstem, except possibly latency (and as discussed above, it is unclear how good an indicator that is of brainstem activity).\n\nPlease include some calibration or analysis to verify that electrical artifact is not a significant factor in your findings.\n\n6) While the speech presentation levels were relatively high, individual high-frequency harmonics would be relatively low in level given the low-pass characteristic of speech signals. Attentional modulation of cochlear gain has been shown to be frequency-specific (e.g., Maison et al., Psychophysiol 2001) and certainly could be specific to a harmonic complex.\n\nIt would be useful to include this point in the Discussion.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting your article \"The human auditory brainstem response to running speech reveals a subcortical mechanism for selective attention\" for consideration by eLife. Your article has been favorably evaluated by Andrew King (Senior Editor) and three reviewers, one of whom, Barbara G Shinn-Cunningham (Reviewer #1), is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Steve Aiken (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. It is not normally eLife policy to allow a paper to go through multiple rounds of reviews, so this will be the last opportunity to revise the manuscript before a final decision is made.\n\nSummary:\n\nThis paper provides evidence for attentional modulation in neural responses measured in response to running speech. The approach is relatively novel and the findings interesting.\n\nThe revision has gone some way to addressing the concerns raised by the reviewers. However, several questions still need to be answered. The reviewers also provide suggestions for how to strengthen the argument. The controls added here would definitely strengthen the paper.\n\nEssential revisions:\n\n1) The paper continues to over-emphasize that the measured responses are from the brainstem. The evidence shows a clear attentional effect; however, the claim that the observed effects are absolutely from the brainstem is still problematic. If cortical contributions cannot be ruled out, it would be presumptuous to conclude that this is an attentional effect in the brainstem.\n\nThe authors should make their case more persuasively. One approach to enhance this argument is to conduct further analysis of their present data. If cortical contributions are indeed responsible for the attentional effects, one would expect to find a positive correlation between peak latency and amplitude in the attended conditions. One might also expect such effects to be stronger for segments with lower fundamental frequencies (e.g., < 200 Hz) given cortical phase-locking limits.\n\nThe authors should test for these possibilities. Of interest would be any relationship between peak cross-correlation latency and peak cross-correlation amplitude for attended streams, and between peak cross-correlation amplitude and segment fundamental frequency (also for attended vs. unattended streams). Such an analysis might lead to a more nuanced understanding of the data or conversely add weight to the conclusions.\n\n2) The cross-correlation functions between speech and \"fundamental wave\" and between raw and processed EEG) address earlier concerns about the effect of processing on latency estimates. Still, an end-to-end calibration would be even more convincing. This does not require recording new data, but rather running simulated data through the processing pipeline: (a) formulate a simple speech-to-neural response model based on the conclusions the authors believe follow from their results, (b) add background EEG signal (e.g., from recorded data shifted in time), (c) run the analysis, (d) check whether latencies conform to what is expected based on the model. Given the importance of the timing of the responses to the argument that the effects are subcortical, the extra effort is worthwhile: the EEG processing pipeline involves many convolutional stages that the authors still do not fully characterize (are all filters zero-phase?).\n",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "15701606-9d05-4cfd-88e2-3a2ecb49c0c3",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C1",
+      "claim": "Humans excel at selectively listening to a target speaker in background noise such as competing voices.",
+      "claim_type": "EXPLICIT",
+      "source": "Humans excel at selectively listening to a target speaker in background noise such as competing voices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about human auditory capabilities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "af917f05-1693-4184-b916-c50acd6c1a7a",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C2",
+      "claim": "The encoding of speech in the auditory cortex is modulated by selective attention.",
+      "claim_type": "EXPLICIT",
+      "source": "While the encoding of speech in the auditory cortex is modulated by selective attention, it remains debated whether such modulation occurs already in subcortical auditory structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge in the field, contrasted with the debated subcortical modulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "8dfb179f-205b-424d-8a7e-a6be31f4272e",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C3",
+      "claim": "It remains debated whether attentional modulation occurs in subcortical auditory structures.",
+      "claim_type": "EXPLICIT",
+      "source": "While the encoding of speech in the auditory cortex is modulated by selective attention, it remains debated whether such modulation occurs already in subcortical auditory structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This characterizes the current state of scientific debate in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "eae6594b-3826-4dbc-87e0-f73bed814b96",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C4",
+      "claim": "Investigating the contribution of the human brainstem to attention has been hindered by the tiny amplitude of the brainstem response.",
+      "claim_type": "EXPLICIT",
+      "source": "Investigating the contribution of the human brainstem to attention has, in particular, been hindered by the tiny amplitude of the brainstem response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about methodological challenges based on the physical properties of the brainstem response.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "edb48e82-6049-4ea2-951e-33ba409c9fda",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C5",
+      "claim": "Measurement of the brainstem response normally requires a large number of repetitions of the same short sound stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Its measurement normally requires a large number of repetitions of the same short sound stimuli, which may lead to a loss of attention and to neural adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes established methodological practices in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "eda51558-7da1-40df-968b-9da1c2ca405d",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C6",
+      "claim": "Large numbers of repetitions of the same short sound stimuli may lead to a loss of attention and to neural adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Its measurement normally requires a large number of repetitions of the same short sound stimuli, which may lead to a loss of attention and to neural adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential consequences of the measurement methodology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "2168757b-bc7b-4d1d-981b-e5fc67a47db7",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C7",
+      "claim": "A mathematical method was developed to measure the auditory brainstem response to running speech.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we develop a mathematical method to measure the auditory brainstem response to running speech, an acoustic stimulus that does not repeat and that has a high ecological validity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, describing the methodological contribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "5eba47e4-67b0-4d61-87b4-311a77173f6d",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C8",
+      "claim": "Running speech is an acoustic stimulus that does not repeat and has high ecological validity.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we develop a mathematical method to measure the auditory brainstem response to running speech, an acoustic stimulus that does not repeat and that has a high ecological validity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This characterizes the properties of running speech as a stimulus based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "540f4df0-19f1-4ea0-b07a-b1fd8652fd6e",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C9",
+      "claim": "The brainstem response is consistently modulated by attention when a subject listens to one of two competing speakers.",
+      "claim_type": "EXPLICIT",
+      "source": "We employ this method to assess the brainstem's activity when a subject listens to one of two competing speakers, and show that the brainstem response is consistently modulated by attention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "1d3da7c4-bc13-4fbf-b57b-881d86fe99ea",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C10",
+      "claim": "Selective attention to one of several competing acoustic signals affects the encoding of sound in the auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well known that selective attention to one of several competing acoustic signals affects the encoding of sound in the auditory cortex (Shinn-Cunningham, 2008; Hackley et al., 1990; Choi et al., 2013; Fritz et al., 2007b; Hillyard et al., 1973; Womelsdorf and Fries, 2007; Fritz et al., 2007a; N\u00e4\u00e4t\u00e4nen et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "418396d2-d54b-4847-a84b-016aa25674b4",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C11",
+      "claim": "Extensive auditory centrifugal pathways carry information from central to more peripheral levels of the auditory system.",
+      "claim_type": "EXPLICIT",
+      "source": "Because extensive auditory centrifugal pathways carry information from central to more peripheral levels of the auditory system (Winer, 2006; Pickels, 1988; Song et al., 2008; Bajo et al., 2010), neural activity in the subcortical structures may contribute to attention as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior anatomical research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "5c62cdcc-04ab-4742-ad8b-00f20a7dce1e",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C12",
+      "claim": "Neural activity in subcortical structures may contribute to attention.",
+      "claim_type": "EXPLICIT",
+      "source": "Because extensive auditory centrifugal pathways carry information from central to more peripheral levels of the auditory system (Winer, 2006; Pickels, 1988; Song et al., 2008; Bajo et al., 2010), neural activity in the subcortical structures may contribute to attention as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the anatomical pathways and a speculation about their functional role.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "b50373f0-9c5e-4eb4-bf85-f9def546d6b1",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C13",
+      "claim": "Previous attempts to determine attentional modulation from recording the auditory brainstem response through scalp electrodes have yielded highly inconclusive results.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous attempts to determine an attentional modulation from recording the auditory brainstem response through scalp electrodes have, however, yielded highly inconclusive results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This characterizes the state of prior research in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "44ae0aa5-cfea-45bc-ba1b-a53f2f2f5a21",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C14",
+      "claim": "One investigation found that selective attention alters the brainstem's response to the fundamental frequency of a speech signal.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, one investigation found that selective attention alters the brainstem's response to the fundamental frequency of a speech signal (Galbraith et al., 1998), while another study concluded that this response is modulated in an unsystematic but subject-specific manner (Lehmann and Sch\u00f6nwiesner, 2014) and a third recent experiment did not find a significant attentional effect (Varghese et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "46e91170-3a27-4509-9c0e-ccd9be19570c",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C15",
+      "claim": "Another study concluded that the brainstem's response to the fundamental frequency of speech is modulated in an unsystematic but subject-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, one investigation found that selective attention alters the brainstem's response to the fundamental frequency of a speech signal (Galbraith et al., 1998), while another study concluded that this response is modulated in an unsystematic but subject-specific manner (Lehmann and Sch\u00f6nwiesner, 2014) and a third recent experiment did not find a significant attentional effect (Varghese et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "cd4044f8-9d51-48f7-ad36-5286a3910a10",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C16",
+      "claim": "A third recent experiment did not find a significant attentional effect on the brainstem's response to the fundamental frequency of speech.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, one investigation found that selective attention alters the brainstem's response to the fundamental frequency of a speech signal (Galbraith et al., 1998), while another study concluded that this response is modulated in an unsystematic but subject-specific manner (Lehmann and Sch\u00f6nwiesner, 2014) and a third recent experiment did not find a significant attentional effect (Varghese et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "3cac56df-e064-4169-af69-a12b66c017e2",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C17",
+      "claim": "Results on the effects of attention on the auditory-brainstem response to short clicks or pure tones are inconclusive.",
+      "claim_type": "EXPLICIT",
+      "source": "Results on the effects of attention on the auditory-brainstem response to short clicks or pure tones are similarly inconclusive (Brix, 1984; Gregory et al., 1989; Hoormann et al., 2000; Galbraith et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "f5b43b1c-4d32-458a-b30f-f54d7ba94f87",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C18",
+      "claim": "The inconsistencies in prior studies may result from the experimental limitation that the brainstem response is tiny and requires hundred- to thousandfold repetition of the same sound.",
+      "claim_type": "EXPLICIT",
+      "source": "These inconsistencies may result from a main experimental limitation in these studies: because the brainstem response is tiny, its measurement requires hundred- to thousandfold repetition of the same sound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the cause of inconsistencies in prior research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "00043ec7-024b-49de-b1b2-d0ecae00aba6",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C19",
+      "claim": "Large numbers of repetitions may lead to difficulties for subjects in sustaining selective attention.",
+      "claim_type": "EXPLICIT",
+      "source": "The large number of repetitions may lead to difficulties for subjects in sustaining selective attention, to adaptation in the nervous system, and to a reduction in efferent feedback (Lasky, 1997; Kumar Neupane et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential consequences, with some citation support.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "00045b90-9fba-4cd7-8cc8-3fe7fb129978",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C20",
+      "claim": "Large numbers of repetitions may lead to adaptation in the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "The large number of repetitions may lead to difficulties for subjects in sustaining selective attention, to adaptation in the nervous system, and to a reduction in efferent feedback (Lasky, 1997; Kumar Neupane et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential consequences, with some citation support.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "c7769931-09c0-40a3-b399-4594b6ba1728",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C21",
+      "claim": "Large numbers of repetitions may lead to a reduction in efferent feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "The large number of repetitions may lead to difficulties for subjects in sustaining selective attention, to adaptation in the nervous system, and to a reduction in efferent feedback (Lasky, 1997; Kumar Neupane et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential consequences, with some citation support.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "4df59731-6bf5-4e32-ab73-f13317cbfd3f",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C22",
+      "claim": "Neuronal activity in the brainstem, particularly in the inferior colliculus, can phase lock to the periodicity of voiced speech.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal activity in the brainstem, and in particular in the inferior colliculus, can indeed phase lock to the periodicity of voiced speech (Skoe and Kraus, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "7e6037ba-b861-4e0d-9d41-84708711da90",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C23",
+      "claim": "The fundamental frequency of running speech varies over time.",
+      "claim_type": "EXPLICIT",
+      "source": "The fundamental frequency of running speech varies over time, however, compounding a direct read-out of the evoked brainstem response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the acoustic properties of speech.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "c25b3d65-23dc-4968-b723-3fcd0d35d421",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C24",
+      "claim": "The varying fundamental frequency of running speech compounds a direct read-out of the evoked brainstem response.",
+      "claim_type": "EXPLICIT",
+      "source": "The fundamental frequency of running speech varies over time, however, compounding a direct read-out of the evoked brainstem response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the methodological challenge posed by the varying fundamental frequency.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "ddebbf94-b860-498b-af1c-82de06b27e1c",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C25",
+      "claim": "Empirical mode decomposition (EMD) was employed to identify an empirical mode that oscillates at the fundamental frequency of the speech signal at each time instance.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome this difficulty, we employed empirical mode decomposition (EMD) of the speech stimuli to identify an empirical mode that, at each time instance, oscillates at the fundamental frequency of the speech signal (Huang and Pan, 2006) (Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "ab139c65-1a61-45f9-bacb-3fa3ccd7cdc9",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C26",
+      "claim": "The fundamental waveform is a nonlinear and nonstationary oscillation with a temporally-varying amplitude and frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "This mode is a nonlinear and nonstationary oscillation with a temporally-varying amplitude and frequency that we refer to as the 'fundamental waveform' of the speech stimulus (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This characterizes the properties of the fundamental waveform extracted by the method, with reference to Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "b8378348-72d0-43a1-8d97-3b7addca9a6e",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C27",
+      "claim": "The peak amplitude of the complex correlation was significantly different from the noise in fourteen out of sixteen subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Our statistical analysis showed that the peak amplitude of the complex correlation was significantly different from the noise in fourteen out of sixteen subjects (p<0.05, Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "98404b59-1226-4d99-87ec-e53dccc0fb30",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C28",
+      "claim": "The peak of the complex correlation occurred at a mean latency of 9.3 \u00b1 0.7 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak occurred at a mean latency of 9.3 \u00b1 0.7 ms, verifying that the measured neural response resulted from the brainstem and not from the cerebral cortex (Hashimoto et al., 1981; Picton et al., 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "09c788a5-cb39-4afb-b293-05536bb19128",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C29",
+      "claim": "The latency of 9.3 \u00b1 0.7 ms verifies that the measured neural response resulted from the brainstem and not from the cerebral cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak occurred at a mean latency of 9.3 \u00b1 0.7 ms, verifying that the measured neural response resulted from the brainstem and not from the cerebral cortex (Hashimoto et al., 1981; Picton et al., 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the measured latency and supported by citations to prior research on brainstem response latencies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "1d2c876d-7aef-480e-92c5-936889365f2c",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C30",
+      "claim": "The latency of the brainstem response to running speech agreed with that found previously regarding the brainstem's response to short repeated speech stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the latency agreed with that found previously regarding the brainstem's response to short repeated speech stimuli (Skoe and Kraus, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the current findings to prior research, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "9afd59f6-4998-4f38-9428-613aeb662e74",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C31",
+      "claim": "The average value of the correlation at the peak was 0.015 \u00b1 0.003.",
+      "claim_type": "EXPLICIT",
+      "source": "The average value of the correlation at the peak was 0.015 \u00b1 0.003.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "5e9eb6cb-6a95-4962-a24c-3e9de3dfa480",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C32",
+      "claim": "The response did not contain a stimulus artifact or a contribution from the cochlear microphonic.",
+      "claim_type": "EXPLICIT",
+      "source": "We checked that the response did not contain a stimulus artifact or a contribution from the cochlear microphonic, and that the latency of the response was not affected by the processing of the speech signal or of the neural response (Materials and methods; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by control experiments described in the methods and shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "1211c8c0-5f57-474c-9348-814a6a5547b1",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C33",
+      "claim": "The latency of the response was not affected by the processing of the speech signal or of the neural response.",
+      "claim_type": "EXPLICIT",
+      "source": "We checked that the response did not contain a stimulus artifact or a contribution from the cochlear microphonic, and that the latency of the response was not affected by the processing of the speech signal or of the neural response (Materials and methods; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by control experiments described in the methods and shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "b18c43f4-6baf-4397-9a1d-38f3121d70e6",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C34",
+      "claim": "The neural signal did not contain a measurable contribution from the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "We also verified that the response did not contain further peaks at higher latencies, showing that the neural signal did not contain a measurable contribution from the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the absence of peaks at higher latencies in the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "387b44b1-9a8c-4858-8148-df3f3180b79b",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C35",
+      "claim": "The latency of the brainstem response was unaffected by attention.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the latency of the response was unaffected by attention: the response to the unattended speaker occurred 0.8 \u00b1 0.5 ms later than that to the attended speaker, which was not statistically significant (p=0.2; average over the responses to the male and the female voice as well as all subjects).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "50980112-0c2d-455e-8358-ce324274ea3b",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C36",
+      "claim": "All subjects showed a larger response of the auditory brainstem to the male voice when attending rather than ignoring it.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, all subjects showed a larger response of the auditory brainstem, at the peak latency, to the male voice when attending rather than ignoring it (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from experimental data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "46175031-2eed-4ebd-ba23-9f2287cb87b8",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C37",
+      "claim": "The difference in the brainstem responses to attended versus ignored male voice was statistically significant in nine of the fourteen subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in the responses was statistically significant in nine of the fourteen subjects (p<0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "9e814a17-0f2d-4094-b454-ae84d085dd68",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C38",
+      "claim": "The brainstem's response to the attended female speaker exceeded that to the unattended female voice in all but one subject.",
+      "claim_type": "EXPLICIT",
+      "source": "The brainstem's response to the attended female speaker similarly exceeded that to the unattended female voice in all but one subject, with eight subjects showing a statistically-significant difference (p<0.05; Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from experimental data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "69835158-620d-4418-9d8f-ecdc03d8d179",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C39",
+      "claim": "Eight subjects showed a statistically-significant difference in brainstem response to attended versus ignored female voice.",
+      "claim_type": "EXPLICIT",
+      "source": "The brainstem's response to the attended female speaker similarly exceeded that to the unattended female voice in all but one subject, with eight subjects showing a statistically-significant difference (p<0.05; Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "564ec1ca-62a1-4858-a885-36a0bcfbaa44",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C40",
+      "claim": "The ratio of the brainstem's response to attended and to ignored speech, averaged over all subjects, was 1.5 \u00b1 0.1 for the male speaker.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio of the brainstem's response to attended and to ignored speech, averaged over all subjects, was 1.5 \u00b1 0.1 and 1.6 \u00b1 0.2 for the male and for the female speaker, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "74ceccae-7711-4b69-adbf-8d86bc61b817",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C41",
+      "claim": "The ratio of the brainstem's response to attended and to ignored speech, averaged over all subjects, was 1.6 \u00b1 0.2 for the female speaker.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio of the brainstem's response to attended and to ignored speech, averaged over all subjects, was 1.5 \u00b1 0.1 and 1.6 \u00b1 0.2 for the male and for the female speaker, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "0948c9c3-6abb-40aa-9887-ad63d6abfee3",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C42",
+      "claim": "The ratio of brainstem response to attended versus ignored male voice was significantly different from unity.",
+      "claim_type": "EXPLICIT",
+      "source": "Both ratios were significantly different from unity (p<0.001, male voice; p<0.01, female voice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "a328d2b7-fffe-453f-b208-3ffb43af886f",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C43",
+      "claim": "The ratio of brainstem response to attended versus ignored female voice was significantly different from unity.",
+      "claim_type": "EXPLICIT",
+      "source": "Both ratios were significantly different from unity (p<0.001, male voice; p<0.01, female voice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "326b8459-0b8b-4b49-bbc4-0b4d8a029b0d",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C44",
+      "claim": "The male and the female voice elicited a comparable attentional modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The male and the female voice elicited a comparable attentional modulation: the difference between the corresponding ratios was insignificant (p=0.7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "854c6c85-44ba-4618-b018-d6a41d6811b4",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C45",
+      "claim": "The magnitude of the brainstem's response was significantly enhanced through attention, consistently across subjects and speakers.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of the brainstem's response was hence significantly enhanced through attention, and consistently so across subjects and speakers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "e2c4456a-bff9-4a5e-8808-180e7d769626",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C46",
+      "claim": "The human auditory brainstem response to continuous speech is larger when attending than when ignoring a speech signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that the human auditory brainstem response to continuous speech is larger when attending than when ignoring a speech signal, and consistently so across different subjects and speakers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "d7b99b8d-39f7-45be-a9ae-5b2f7276c256",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C47",
+      "claim": "The strength of the phase locking of neural activity to the pitch structure of speech is larger for an attended than for an unattended speech stream.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the strength of the phase locking of the neural activity to the pitch structure of speech is larger for an attended than for an unattended speech stream.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "fe032826-c2c8-4411-b3b4-9cdeb312e59f",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C48",
+      "claim": "No difference was observed in the latency of brainstem activity between attended and unattended speech.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we did not observe a difference in the latency of this activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "82c75d36-a917-4f3b-afdb-12981ee17efe",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C49",
+      "claim": "The fundamental waveform of speech obtained from EMD has a temporally varying frequency and amplitude and is not a simple component of Fourier analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The fundamental waveform of speech that we have obtained from EMD has a temporally varying frequency and amplitude and is therefore not a simple component of Fourier analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This characterizes the properties of the fundamental waveform based on the mathematical method used.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "3562172d-e2e9-47fb-a647-1bb8c3ffe744",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C50",
+      "claim": "Short-time Fourier transform and wavelet analysis suffer from an inherently limited time-frequency resolution that makes them inferior to EMD analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "While it may be obtained from short-time Fourier transform or wavelet analysis, both methods suffer from an inherently limited time-frequency resolution that makes them inferior to the EMD analysis (Huang and Pan, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research on signal processing methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "66a27fff-0248-4d6e-a579-250419eca930",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C51",
+      "claim": "The attentional modulation cannot result from a general modulation of the brainstem's activity to acoustic stimuli between the two hemispheres.",
+      "claim_type": "EXPLICIT",
+      "source": "Because we have employed a diotic stimulus presentation in which the same acoustical stimulus was presented to each ear, the attentional modulation cannot result from a general modulation of the brainstem's activity to acoustic stimuli between the two hemispheres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "d4c17b3d-d275-4037-b02b-6fb8cad6da89",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C52",
+      "claim": "The fundamental frequencies of the two competing speakers differ at most time points, but their spectra largely overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, although the fundamental frequencies of the two competing speakers differ at most time points, their spectra largely overlap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the acoustic properties of the stimuli.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "ab84d03e-21ce-460d-a9e9-cc19dfc0c39a",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C53",
+      "claim": "The attentional modulation cannot result from a broad-band modulation of the neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The attentional modulation can therefore not result from a broad-band modulation of the neural activity either.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the spectral overlap of the stimuli.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "167fd8c9-4b2b-4aea-936c-f6db9a044588",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C54",
+      "claim": "The attentional effect must result from a modulation of the brainstem's response to the specific pitch structure of a speech stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the attentional effect must result from a modulation of the brainstem's response to the specific pitch structure of a speech stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on ruling out alternative explanations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "b74c3e58-fade-4ceb-a112-e3266cd2e32f",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C55",
+      "claim": "The brainstem response to the pitch of continuous speech can reflect a response both to the fundamental frequency of speech as well as to higher harmonics.",
+      "claim_type": "EXPLICIT",
+      "source": "The brainstem response to the pitch of continuous speech that we have measured can reflect a response both to the fundamental frequency of speech as well as to higher harmonics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the measured response based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "2c7ecdc3-81e7-4328-894c-969d6ee417cc",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C56",
+      "claim": "Previous studies have found that the brainstem responds at the fundamental frequency of a speech stimulus even when that frequency itself is removed from the acoustic signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, previous studies have found that the brainstem responds at the fundamental frequency of a speech stimulus even when that frequency itself is removed from the acoustic signal (Galbraith and Doan, 1995), or when it cancels out due to presentation of stimuli with opposite polarities and averaging of the obtained responses (Aiken and Picton, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "45b14338-3cbe-49f5-a4e2-0731c61fcc54",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C57",
+      "claim": "The brainstem responds at the fundamental frequency of a speech stimulus when it cancels out due to presentation of stimuli with opposite polarities and averaging of the obtained responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, previous studies have found that the brainstem responds at the fundamental frequency of a speech stimulus even when that frequency itself is removed from the acoustic signal (Galbraith and Doan, 1995), or when it cancels out due to presentation of stimuli with opposite polarities and averaging of the obtained responses (Aiken and Picton, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "a6231882-5bb9-4018-850b-420bbbfabdd2",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C58",
+      "claim": "The attentional modulation of the brainstem response can reflect a modulation of the response to the fundamental frequency itself or to higher harmonics.",
+      "claim_type": "EXPLICIT",
+      "source": "The attentional modulation of the brainstem response can thus reflect a modulation of the response to the fundamental frequency itself or to higher harmonics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about possible mechanisms underlying the observed effect.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "38d36e82-bf4c-46ba-9ed8-76d4ebd3313d",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C59",
+      "claim": "Attentional modulation of higher harmonics may depend on frequency as shown recently in recordings of otoacoustic emissions from the inner ear.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, attentional modulation of higher harmonics may depend on frequency as shown recently in recordings of otoacoustic emissions from the inner ear (Maison et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "d15ac48f-e26f-45fd-96d5-f096523e288f",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C60",
+      "claim": "The attentional modulation of the brainstem's response to the pitch of a speaker may result from an enhancement of the neural response to an attended speech signal, from the suppression of the response to an ignored speech stimulus, or from both.",
+      "claim_type": "EXPLICIT",
+      "source": "The attentional modulation of the brainstem's response to the pitch of a speaker may result from an enhancement of the neural response to an attended speech signal, from the suppression of the response to an ignored speech stimulus, or from both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about possible mechanisms underlying the observed effect.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "2b365b16-c94e-49d9-ac40-6b8bbe064ed9",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C61",
+      "claim": "The response at the fundamental frequency of speech can result from multiple sites in the brainstem.",
+      "claim_type": "EXPLICIT",
+      "source": "The response at the fundamental frequency of speech can result from multiple sites in the brainstem (Chandrasekaran and Kraus, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "20cd57c4-f1a5-4d02-8498-272f3b602d6b",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C62",
+      "claim": "A single peak with a width of a few ms was observed in the correlation of the neural signal to the fundamental waveform of speech.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed a single peak with a width of a few ms in the correlation of the neural signal to the fundamental waveform of speech.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "debdb3c5-3085-436d-87e4-fc4ae5b6b884",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C63",
+      "claim": "The brainstem response to running speech can only reflect neural sources whose latencies vary by a few ms or less from the peak latency.",
+      "claim_type": "EXPLICIT",
+      "source": "The brainstem response to running speech that we have measured here can therefore only reflect neural sources whose latencies vary by a few ms or less from the peak latency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed peak width.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "165843c0-cdfd-4981-bec0-b1598b702745",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C64",
+      "claim": "The main neural source of the speech-evoked brainstem response may be in the inferior colliculus.",
+      "claim_type": "EXPLICIT",
+      "source": "The neural delay of about 9 ms as well as the similarity of the speech-evoked brainstem response to the frequency-following response suggest that the main neural source may be in the inferior colliculus (Sohmer et al., 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the measured latency and similarity to known responses, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "9910cf4c-504c-4cdf-a523-e64068d135e1",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C65",
+      "claim": "The attentional effect may result from the multiple feedback loops between the inferior colliculus, the medial geniculate body and the auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "The attentional effect that we have observed may then result from the multiple feedback loops between the inferior colliculus, the medial geniculate body and the auditory cortex (Huffman and Henson, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism, supported by citation to anatomical research.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "12bef233-5d9c-4e9b-9038-1e000eacc47e",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C66",
+      "claim": "The study provides a mathematical methodology to analyse the brainstem response to complex, real world stimuli such as speech.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study provides a mathematical methodology to analyse the brainstem response to complex, real world stimuli such as speech.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the methodological contribution of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "583aabd0-1194-4bd6-aecd-f192b0eb2fb0",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C67",
+      "claim": "The method does not require artificial and repeated stimuli, fostering sustained attention and avoiding potential neural adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Since our method does not require artificial and repeated stimuli, it fosters sustained attention and avoids potential neural adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the advantages of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "2567c1b3-8554-4baa-a466-e63036a47ec0",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C68",
+      "claim": "Cochlear neuropathy or 'hidden hearing loss' alters the brainstem's activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the latter alters the brainstem's activity (Schaette and McAlpine, 2011; Mehraei et al., 2016), assessing the auditory brainstem response to speech as well as its modulation by attention may further clarify the origin, prevalence and consequences of such poorly understood supra-threshold hearing loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "b9c81304-4a04-4e4e-9f16-812202af915b",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C69",
+      "claim": "Assessing the auditory brainstem response to speech and its modulation by attention may clarify the origin, prevalence and consequences of cochlear neuropathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the latter alters the brainstem's activity (Schaette and McAlpine, 2011; Mehraei et al., 2016), assessing the auditory brainstem response to speech as well as its modulation by attention may further clarify the origin, prevalence and consequences of such poorly understood supra-threshold hearing loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential applications of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "531e8225-0590-4221-a99a-c405bda614c8",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C70",
+      "claim": "16 healthy adult volunteers aged 18 to 32 participated in the study, eight of which were female.",
+      "claim_type": "EXPLICIT",
+      "source": "16 healthy adult volunteers aged 18 to 32, eight of which were female, participated in the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the participant demographics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "a16b427d-b836-4aab-8240-ef14143dc51a",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C71",
+      "claim": "All subjects were native English speakers and had no history of hearing or neurological impairments.",
+      "claim_type": "EXPLICIT",
+      "source": "All subjects were native English speakers and had no history of hearing or neurological impairments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the participant inclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "199beec8-0bfe-4616-bcfb-1173e2477346",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C72",
+      "claim": "All participants had pure-tone hearing thresholds better than 20 dB hearing level in both ears at octave frequencies between 250 Hz and 8 kHz.",
+      "claim_type": "EXPLICIT",
+      "source": "All participants had pure-tone hearing thresholds better than 20 dB hearing level in both ears at octave frequencies between 250 Hz and 8 kHz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the participant hearing characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "0268e16e-3a13-4254-943c-e160b6d5ec07",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C73",
+      "claim": "The amplitude of the brainstem response to short speech stimuli has a low-pass nature: the amplitude of the response declines with increasing frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "The auditory brainstem response to short speech stimuli has a low-pass nature: the amplitude of the response declines with increasing frequency (Musacchia et al., 2007; Skoe and Kraus, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "18b117e2-d3b2-4099-855c-eb5af93d0317",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C74",
+      "claim": "A small but statistically significant negative correlation was found between the amplitude of the brainstem response and the fundamental frequency for the neural response to a single speaker.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a small but statistically significant negative correlation between the amplitude of the brainstem response and the fundamental frequency, both for the neural response to a single speaker as well as for the response to the attended and ignored speech signal of two competing speakers, evidencing the low-pass nature of the brainstem response (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "7264ce23-428d-44e1-b41b-6fc4d97cc693",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C75",
+      "claim": "A small but statistically significant negative correlation was found between the amplitude of the brainstem response and the fundamental frequency for the response to the attended and ignored speech signal of two competing speakers.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a small but statistically significant negative correlation between the amplitude of the brainstem response and the fundamental frequency, both for the neural response to a single speaker as well as for the response to the attended and ignored speech signal of two competing speakers, evidencing the low-pass nature of the brainstem response (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "c07e72f0-7ee0-4e28-afff-6e6c112cc6f8",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C76",
+      "claim": "The correlations between the amplitude and the frequency did not differ significantly between the different conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlations between the amplitude and the frequency did not differ significantly between the different conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "706cb8d0-c277-4a70-89a3-576a517cb423",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C77",
+      "claim": "The brainstem response to short clicks in noise can have a delay that becomes longer with increasing noise level, while the amplitude of the brainstem response declines.",
+      "claim_type": "EXPLICIT",
+      "source": "The brainstem response to short clicks in noise can have a delay that becomes longer with increasing noise level, while the amplitude of the brainstem response declines, presumably reflecting varying contributions of auditory-nerve fibers with different spontaneous rates and from different cochlear locations (Mehraei et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "9f2ff4ca-5c7d-403b-a836-f7ecc33f24f6",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C78",
+      "claim": "No statistically-significant correlation was found between amplitude and latency for the brainstem response to continuous speech.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for the brainstem response to continuous speech that we measured here, we did not find a statistically-significant correlation between amplitude and latency (Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "210e76c5-80a5-408d-98b6-9636d42c472a",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C79",
+      "claim": "Speech samples were obtained from publicly available audiobooks.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples of continuous speech from a male and a female speaker were obtained from publicly available audiobooks (https://librivox.org).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of the experimental stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "bbd8454e-e5f9-4048-a9a9-a01cc4a189da",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C80",
+      "claim": "All speech samples had a duration of at least two minutes and ten seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "All samples had a duration of at least two minutes and ten seconds; some were slightly longer to end upon completion of a sentence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the properties of the experimental stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "87cf21ac-d52c-42d2-b302-c3db5e8cc9a2",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C81",
+      "claim": "Speech stimuli were presented at a level of 76 dB(A) SPL.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimuli were delivered diotically through insert earphones (ER-3C, Etymotic, USA) at a level of 76 dB(A) SPL (A-weighted frequency response).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "f383cc09-1c12-4acc-a644-a60e47872349",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C82",
+      "claim": "All subjects reported that the stimulus level was comfortable.",
+      "claim_type": "EXPLICIT",
+      "source": "All subjects reported that the stimulus level was comfortable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes participant feedback on the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "ade0f1c1-38ee-42f7-939b-e6e5ab6fec18",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C83",
+      "claim": "The impedance between each electrode and the skin was reduced to below 5 k\u03a9.",
+      "claim_type": "EXPLICIT",
+      "source": "The impedance between each electrode and the skin was reduced to below 5 k\u03a9 using abrasive electrolyte-gel (Abralyt HiCl, Easycap, Germany).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "e1466884-58ea-46c5-8eaa-03383af1aa6f",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C84",
+      "claim": "The fundamental frequency of each speech segment was interpolated through a cubic spline and varied between 100 and 300 Hz in each segment.",
+      "claim_type": "EXPLICIT",
+      "source": "The fundamental frequency of each segment was interpolated through a cubic spline, and varied between 100 and 300 Hz in each segment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "7b5588a4-e07a-48f3-bd10-822b791f2006",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C85",
+      "claim": "The cross-correlations show that the fundamental waveform has no latency change and no phase difference with respect to the original speech stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "The cross-correlations show that the fundamental waveform has no latency change and no phase difference with respect to the original speech stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from control analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "867b6b23-df19-4b35-87b6-66b0d6af77c7",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "claim_id": "C86",
+      "claim": "The processing of the neural signal did not induce a latency.",
+      "claim_type": "EXPLICIT",
+      "source": "The processing of the neural signal did not induce a latency. This was confirmed by computing the cross-correlation between the processed neural response and the original signal, demonstrating a maximum correlation at zero temporal delay (Figure 1\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from control analyses shown in Figure 1\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "91ddbdf4-0be2-4d6c-bad3-ec0cec023ec9",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a novel mathematical method using empirical mode decomposition (EMD) to measure the auditory brainstem response to continuous, non-repetitive running speech. The method extracts a fundamental waveform that oscillates at the time-varying fundamental frequency of speech and correlates it with neural recordings. The brainstem response was successfully detected at a mean latency of 9.3 \u00b1 0.7 ms in 14 of 16 subjects, with appropriate controls confirming the absence of artifacts and cortical contributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C25-C34, C85-C86 collectively demonstrate successful development and validation of the method. The measured latency (C28-C30) is consistent with known brainstem response timing, and comprehensive controls (C32-C34, C85-C86) rule out artifacts. The statistical significance in 14/16 subjects (C27) provides strong evidence. The methodological advantages over traditional approaches (C49-C50, C66-C67) are well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "8e3ff328-bcb2-44fe-815c-5b2a34aa8f8f",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The brainstem response to continuous speech is consistently modulated by selective attention across subjects and speakers. All subjects showed larger brainstem responses to attended versus ignored speech for the male voice, and all but one for the female voice. The average ratio of attended to ignored response was 1.5 \u00b1 0.1 for male and 1.6 \u00b1 0.2 for female speakers (both significantly different from unity, p<0.01). Importantly, attention modulated response amplitude but not latency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C35-C48 provide converging evidence for attentional modulation. The consistency across all subjects for male voice (C36) and 13/14 for female voice (C38), with statistical significance in 9 and 8 subjects respectively (C37, C39), demonstrates robust effects. The ratios significantly exceeding unity (C42-C43) and comparable modulation across speakers (C44) strengthen the conclusion. The absence of latency effects (C35, C48) is appropriately documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "9ce334c7-783b-40dd-8412-06973545dacb",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The attentional modulation observed in the brainstem response is specific to the pitch structure of speech rather than resulting from general hemispheric or broad-band modulation. This conclusion is based on the diotic stimulus presentation (same acoustic input to both ears) and the overlapping spectra of the two competing speakers despite different fundamental frequencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 present a logical chain of inference ruling out alternative explanations. The diotic presentation (C51) eliminates hemispheric explanations, and the spectral overlap despite different fundamental frequencies (C52) rules out broad-band modulation (C53). The conclusion that modulation is pitch-specific (C54) follows logically from these experimental constraints.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "65ae4230-09c2-4773-81d7-b06e3bf8bbab",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The measured brainstem response to pitch may reflect neural activity tracking either the fundamental frequency itself or higher harmonics, with potential frequency-dependent modulation. This interpretation is supported by prior research showing brainstem responses at the fundamental frequency even when that frequency is removed from or cancelled in the acoustic signal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 appropriately acknowledge ambiguity in the neural mechanisms while providing well-cited support (C56-C57, C59). The interpretation (C55, C58) is cautious and consistent with established knowledge about brainstem pitch processing. This represents appropriate scientific reasoning about mechanistic uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "bd594a17-60ee-4be1-83fc-ef3d5573578e",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The observed brainstem response likely originates primarily from the inferior colliculus, based on the ~9 ms latency and narrow peak width. The attentional modulation may result from feedback loops between the inferior colliculus, medial geniculate body, and auditory cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61-C65 involve substantial speculation about neural sources. While the latency (C64) and peak width (C62-C63) provide some constraints, the localization to inferior colliculus remains inferential. The proposed feedback mechanism (C65) is speculative despite anatomical plausibility. The single-peak observation (C62) does constrain possible sources, but definitive source localization would require additional techniques (e.g., imaging, depth recordings).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "4a478f0c-b0cd-4109-8f52-d3dc1c73e676",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The amplitude of the brainstem response to continuous speech shows a small but statistically significant negative correlation with fundamental frequency, consistent with the known low-pass nature of brainstem responses. This relationship holds for single-speaker and competing-speaker conditions, with no significant differences between conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76 demonstrate appropriate characterization of frequency-dependent response properties. The negative correlation is statistically significant and consistent with prior research on short speech stimuli (C73). The lack of difference between conditions (C76) is appropriately documented. This represents solid supporting evidence for the method's validity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "24effcc0-af23-417e-8050-b17a364d4ecf",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "No statistically significant correlation was found between amplitude and latency of the brainstem response to continuous speech, contrasting with findings for brainstem responses to clicks in noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 appropriately reports a negative finding with statistical support. The contrast with click responses (C77) is noted. However, the manuscript provides limited discussion of why this difference might exist or what it implies about the nature of the speech-evoked response. The finding is clearly stated but its interpretation remains uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "6a3ab4fa-8ea0-4f22-8bf1-b81b34007fad",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The attentional modulation may result from enhancement of attended speech, suppression of ignored speech, or both mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C60 acknowledges mechanistic uncertainty but provides no data to distinguish between these possibilities. The current experimental design with diotic presentation of mixed speech cannot separate enhancement from suppression. Resolving this would require additional experiments comparing attended speech to passive listening conditions or using different stimulus configurations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "130f8427-7a30-430c-aaf8-b1c68157977a",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The developed method may have applications for understanding cochlear neuropathy ('hidden hearing loss'), as this condition alters brainstem activity and the method could clarify its origin, prevalence, and consequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C69 propose potential applications but provide no empirical evidence. While C68 correctly cites that cochlear neuropathy alters brainstem activity, C69 is purely speculative about future utility. This represents reasonable speculation about translational potential but requires validation studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "33e3405e-c98a-4276-ab87-22e8bfbd9fca",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study employed appropriate participant selection criteria (16 healthy adults, native English speakers, normal hearing) and experimental parameters (audiobook stimuli, 76 dB SPL presentation, proper electrode impedance, validated signal processing).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C84 document standard methodological details. Participant characteristics (C70-C72) are appropriate for the research question. Stimulus parameters (C79-C82) are well-specified and comfortable for subjects. Technical details (C83-C84) follow established practices. These represent competent experimental design and execution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "93810b71-c6ad-4125-9fb3-79a0d64ddf2b",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript establishes the scientific context: humans excel at selective listening (C1), cortical attention effects are well-established (C2, C10), but subcortical attentional modulation remains debated (C3, C13-C17) due to methodological limitations of traditional approaches requiring extensive stimulus repetition (C4-C6, C18-C21).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C21 appropriately characterize the state of the field with proper citations. The motivation for the study is well-established: prior work on subcortical attention is inconclusive (C13-C17) due to methodological constraints (C4-C6, C18-C21). The anatomical basis for potential subcortical effects (C11-C12) is appropriately cited. This represents solid scientific framing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    },
+    {
+      "id": "ec60af61-90d1-4951-bece-b346f93424c4",
+      "content_id": "9c4dddf1-665b-4719-bbe1-1403556b1c8e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Brainstem neurons can phase-lock to speech periodicity, but the time-varying fundamental frequency of running speech creates methodological challenges for measuring brainstem responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 correctly identify the technical challenge motivating the methodological development. C22 is well-cited, C23 states established acoustic properties, and C24 logically infers the measurement difficulty. This provides clear rationale for the EMD approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:29:45.651642Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2168757b-bc7b-4d1d-981b-e5fc67a47db7",
+      "result_id": "91ddbdf4-0be2-4d6c-bad3-ec0cec023ec9"
+    },
+    {
+      "claim_id": "ddebbf94-b860-498b-af1c-82de06b27e1c",
+      "result_id": "91ddbdf4-0be2-4d6c-bad3-ec0cec023ec9"
+    },
+    {
+      "claim_id": "ab139c65-1a61-45f9-bacb-3fa3ccd7cdc9",
+      "result_id": "91ddbdf4-0be2-4d6c-bad3-ec0cec023ec9"
+    },
+    {
+      "claim_id": "b8378348-72d0-43a1-8d97-3b7addca9a6e",
+      "result_id": "91ddbdf4-0be2-4d6c-bad3-ec0cec023ec9"
+    },
+    {
+      "claim_id": "98404b59-1226-4d99-87ec-e53dccc0fb30",
+      "result_id": "91ddbdf4-0be2-4d6c-bad3-ec0cec023ec9"
+    },
+    {
+      "claim_id": "09c788a5-cb39-4afb-b293-05536bb19128",
+      "result_id": "91ddbdf4-0be2-4d6c-bad3-ec0cec023ec9"
+    },
+    {
+      "claim_id": "1d2c876d-7aef-480e-92c5-936889365f2c",
+      "result_id": "91ddbdf4-0be2-4d6c-bad3-ec0cec023ec9"
+    },
+    {
+      "claim_id": "9afd59f6-4998-4f38-9428-613aeb662e74",
+      "result_id": "91ddbdf4-0be2-4d6c-bad3-ec0cec023ec9"
+    },
+    {
+      "claim_id": "5e9eb6cb-6a95-4962-a24c-3e9de3dfa480",
+      "result_id": "91ddbdf4-0be2-4d6c-bad3-ec0cec023ec9"
+    },
+    {
+      "claim_id": "1211c8c0-5f57-474c-9348-814a6a5547b1",
+      "result_id": "91ddbdf4-0be2-4d6c-bad3-ec0cec023ec9"
+    },
+    {
+      "claim_id": "b18c43f4-6baf-4397-9a1d-38f3121d70e6",
+      "result_id": "91ddbdf4-0be2-4d6c-bad3-ec0cec023ec9"
+    },
+    {
+      "claim_id": "82c75d36-a917-4f3b-afdb-12981ee17efe",
+      "result_id": "91ddbdf4-0be2-4d6c-bad3-ec0cec023ec9"
+    },
+    {
+      "claim_id": "3562172d-e2e9-47fb-a647-1bb8c3ffe744",
+      "result_id": "91ddbdf4-0be2-4d6c-bad3-ec0cec023ec9"
+    },
+    {
+      "claim_id": "12bef233-5d9c-4e9b-9038-1e000eacc47e",
+      "result_id": "91ddbdf4-0be2-4d6c-bad3-ec0cec023ec9"
+    },
+    {
+      "claim_id": "583aabd0-1194-4bd6-aecd-f192b0eb2fb0",
+      "result_id": "91ddbdf4-0be2-4d6c-bad3-ec0cec023ec9"
+    },
+    {
+      "claim_id": "7b5588a4-e07a-48f3-bd10-822b791f2006",
+      "result_id": "91ddbdf4-0be2-4d6c-bad3-ec0cec023ec9"
+    },
+    {
+      "claim_id": "867b6b23-df19-4b35-87b6-66b0d6af77c7",
+      "result_id": "91ddbdf4-0be2-4d6c-bad3-ec0cec023ec9"
+    },
+    {
+      "claim_id": "540f4df0-19f1-4ea0-b07a-b1fd8652fd6e",
+      "result_id": "8e3ff328-bcb2-44fe-815c-5b2a34aa8f8f"
+    },
+    {
+      "claim_id": "387b44b1-9a8c-4858-8148-df3f3180b79b",
+      "result_id": "8e3ff328-bcb2-44fe-815c-5b2a34aa8f8f"
+    },
+    {
+      "claim_id": "50980112-0c2d-455e-8358-ce324274ea3b",
+      "result_id": "8e3ff328-bcb2-44fe-815c-5b2a34aa8f8f"
+    },
+    {
+      "claim_id": "46175031-2eed-4ebd-ba23-9f2287cb87b8",
+      "result_id": "8e3ff328-bcb2-44fe-815c-5b2a34aa8f8f"
+    },
+    {
+      "claim_id": "9e814a17-0f2d-4094-b454-ae84d085dd68",
+      "result_id": "8e3ff328-bcb2-44fe-815c-5b2a34aa8f8f"
+    },
+    {
+      "claim_id": "69835158-620d-4418-9d8f-ecdc03d8d179",
+      "result_id": "8e3ff328-bcb2-44fe-815c-5b2a34aa8f8f"
+    },
+    {
+      "claim_id": "564ec1ca-62a1-4858-a885-36a0bcfbaa44",
+      "result_id": "8e3ff328-bcb2-44fe-815c-5b2a34aa8f8f"
+    },
+    {
+      "claim_id": "74ceccae-7711-4b69-adbf-8d86bc61b817",
+      "result_id": "8e3ff328-bcb2-44fe-815c-5b2a34aa8f8f"
+    },
+    {
+      "claim_id": "0948c9c3-6abb-40aa-9887-ad63d6abfee3",
+      "result_id": "8e3ff328-bcb2-44fe-815c-5b2a34aa8f8f"
+    },
+    {
+      "claim_id": "a328d2b7-fffe-453f-b208-3ffb43af886f",
+      "result_id": "8e3ff328-bcb2-44fe-815c-5b2a34aa8f8f"
+    },
+    {
+      "claim_id": "326b8459-0b8b-4b49-bbc4-0b4d8a029b0d",
+      "result_id": "8e3ff328-bcb2-44fe-815c-5b2a34aa8f8f"
+    },
+    {
+      "claim_id": "854c6c85-44ba-4618-b018-d6a41d6811b4",
+      "result_id": "8e3ff328-bcb2-44fe-815c-5b2a34aa8f8f"
+    },
+    {
+      "claim_id": "e2c4456a-bff9-4a5e-8808-180e7d769626",
+      "result_id": "8e3ff328-bcb2-44fe-815c-5b2a34aa8f8f"
+    },
+    {
+      "claim_id": "d7b99b8d-39f7-45be-a9ae-5b2f7276c256",
+      "result_id": "8e3ff328-bcb2-44fe-815c-5b2a34aa8f8f"
+    },
+    {
+      "claim_id": "fe032826-c2c8-4411-b3b4-9cdeb312e59f",
+      "result_id": "8e3ff328-bcb2-44fe-815c-5b2a34aa8f8f"
+    },
+    {
+      "claim_id": "66a27fff-0248-4d6e-a579-250419eca930",
+      "result_id": "9ce334c7-783b-40dd-8412-06973545dacb"
+    },
+    {
+      "claim_id": "d4c17b3d-d275-4037-b02b-6fb8cad6da89",
+      "result_id": "9ce334c7-783b-40dd-8412-06973545dacb"
+    },
+    {
+      "claim_id": "ab84d03e-21ce-460d-a9e9-cc19dfc0c39a",
+      "result_id": "9ce334c7-783b-40dd-8412-06973545dacb"
+    },
+    {
+      "claim_id": "167fd8c9-4b2b-4aea-936c-f6db9a044588",
+      "result_id": "9ce334c7-783b-40dd-8412-06973545dacb"
+    },
+    {
+      "claim_id": "b74c3e58-fade-4ceb-a112-e3266cd2e32f",
+      "result_id": "65ae4230-09c2-4773-81d7-b06e3bf8bbab"
+    },
+    {
+      "claim_id": "2c7ecdc3-81e7-4328-894c-969d6ee417cc",
+      "result_id": "65ae4230-09c2-4773-81d7-b06e3bf8bbab"
+    },
+    {
+      "claim_id": "45b14338-3cbe-49f5-a4e2-0731c61fcc54",
+      "result_id": "65ae4230-09c2-4773-81d7-b06e3bf8bbab"
+    },
+    {
+      "claim_id": "a6231882-5bb9-4018-850b-420bbbfabdd2",
+      "result_id": "65ae4230-09c2-4773-81d7-b06e3bf8bbab"
+    },
+    {
+      "claim_id": "38d36e82-bf4c-46ba-9ed8-76d4ebd3313d",
+      "result_id": "65ae4230-09c2-4773-81d7-b06e3bf8bbab"
+    },
+    {
+      "claim_id": "2b365b16-c94e-49d9-ac40-6b8bbe064ed9",
+      "result_id": "bd594a17-60ee-4be1-83fc-ef3d5573578e"
+    },
+    {
+      "claim_id": "20cd57c4-f1a5-4d02-8498-272f3b602d6b",
+      "result_id": "bd594a17-60ee-4be1-83fc-ef3d5573578e"
+    },
+    {
+      "claim_id": "debdb3c5-3085-436d-87e4-fc4ae5b6b884",
+      "result_id": "bd594a17-60ee-4be1-83fc-ef3d5573578e"
+    },
+    {
+      "claim_id": "165843c0-cdfd-4981-bec0-b1598b702745",
+      "result_id": "bd594a17-60ee-4be1-83fc-ef3d5573578e"
+    },
+    {
+      "claim_id": "9910cf4c-504c-4cdf-a523-e64068d135e1",
+      "result_id": "bd594a17-60ee-4be1-83fc-ef3d5573578e"
+    },
+    {
+      "claim_id": "18b117e2-d3b2-4099-855c-eb5af93d0317",
+      "result_id": "4a478f0c-b0cd-4109-8f52-d3dc1c73e676"
+    },
+    {
+      "claim_id": "7264ce23-428d-44e1-b41b-6fc4d97cc693",
+      "result_id": "4a478f0c-b0cd-4109-8f52-d3dc1c73e676"
+    },
+    {
+      "claim_id": "c07e72f0-7ee0-4e28-afff-6e6c112cc6f8",
+      "result_id": "4a478f0c-b0cd-4109-8f52-d3dc1c73e676"
+    },
+    {
+      "claim_id": "9f2ff4ca-5c7d-403b-a836-f7ecc33f24f6",
+      "result_id": "24effcc0-af23-417e-8050-b17a364d4ecf"
+    },
+    {
+      "claim_id": "d15ac48f-e26f-45fd-96d5-f096523e288f",
+      "result_id": "6a3ab4fa-8ea0-4f22-8bf1-b81b34007fad"
+    },
+    {
+      "claim_id": "2567c1b3-8554-4baa-a466-e63036a47ec0",
+      "result_id": "130f8427-7a30-430c-aaf8-b1c68157977a"
+    },
+    {
+      "claim_id": "b9c81304-4a04-4e4e-9f16-812202af915b",
+      "result_id": "130f8427-7a30-430c-aaf8-b1c68157977a"
+    },
+    {
+      "claim_id": "531e8225-0590-4221-a99a-c405bda614c8",
+      "result_id": "33e3405e-c98a-4276-ab87-22e8bfbd9fca"
+    },
+    {
+      "claim_id": "a16b427d-b836-4aab-8240-ef14143dc51a",
+      "result_id": "33e3405e-c98a-4276-ab87-22e8bfbd9fca"
+    },
+    {
+      "claim_id": "199beec8-0bfe-4616-bcfb-1173e2477346",
+      "result_id": "33e3405e-c98a-4276-ab87-22e8bfbd9fca"
+    },
+    {
+      "claim_id": "210e76c5-80a5-408d-98b6-9636d42c472a",
+      "result_id": "33e3405e-c98a-4276-ab87-22e8bfbd9fca"
+    },
+    {
+      "claim_id": "bbd8454e-e5f9-4048-a9a9-a01cc4a189da",
+      "result_id": "33e3405e-c98a-4276-ab87-22e8bfbd9fca"
+    },
+    {
+      "claim_id": "87cf21ac-d52c-42d2-b302-c3db5e8cc9a2",
+      "result_id": "33e3405e-c98a-4276-ab87-22e8bfbd9fca"
+    },
+    {
+      "claim_id": "f383cc09-1c12-4acc-a644-a60e47872349",
+      "result_id": "33e3405e-c98a-4276-ab87-22e8bfbd9fca"
+    },
+    {
+      "claim_id": "ade0f1c1-38ee-42f7-939b-e6e5ab6fec18",
+      "result_id": "33e3405e-c98a-4276-ab87-22e8bfbd9fca"
+    },
+    {
+      "claim_id": "e1466884-58ea-46c5-8eaa-03383af1aa6f",
+      "result_id": "33e3405e-c98a-4276-ab87-22e8bfbd9fca"
+    },
+    {
+      "claim_id": "15701606-9d05-4cfd-88e2-3a2ecb49c0c3",
+      "result_id": "93810b71-c6ad-4125-9fb3-79a0d64ddf2b"
+    },
+    {
+      "claim_id": "af917f05-1693-4184-b916-c50acd6c1a7a",
+      "result_id": "93810b71-c6ad-4125-9fb3-79a0d64ddf2b"
+    },
+    {
+      "claim_id": "8dfb179f-205b-424d-8a7e-a6be31f4272e",
+      "result_id": "93810b71-c6ad-4125-9fb3-79a0d64ddf2b"
+    },
+    {
+      "claim_id": "eae6594b-3826-4dbc-87e0-f73bed814b96",
+      "result_id": "93810b71-c6ad-4125-9fb3-79a0d64ddf2b"
+    },
+    {
+      "claim_id": "edb48e82-6049-4ea2-951e-33ba409c9fda",
+      "result_id": "93810b71-c6ad-4125-9fb3-79a0d64ddf2b"
+    },
+    {
+      "claim_id": "eda51558-7da1-40df-968b-9da1c2ca405d",
+      "result_id": "93810b71-c6ad-4125-9fb3-79a0d64ddf2b"
+    },
+    {
+      "claim_id": "1d3da7c4-bc13-4fbf-b57b-881d86fe99ea",
+      "result_id": "93810b71-c6ad-4125-9fb3-79a0d64ddf2b"
+    },
+    {
+      "claim_id": "418396d2-d54b-4847-a84b-016aa25674b4",
+      "result_id": "93810b71-c6ad-4125-9fb3-79a0d64ddf2b"
+    },
+    {
+      "claim_id": "5c62cdcc-04ab-4742-ad8b-00f20a7dce1e",
+      "result_id": "93810b71-c6ad-4125-9fb3-79a0d64ddf2b"
+    },
+    {
+      "claim_id": "b50373f0-9c5e-4eb4-bf85-f9def546d6b1",
+      "result_id": "93810b71-c6ad-4125-9fb3-79a0d64ddf2b"
+    },
+    {
+      "claim_id": "44ae0aa5-cfea-45bc-ba1b-a53f2f2f5a21",
+      "result_id": "93810b71-c6ad-4125-9fb3-79a0d64ddf2b"
+    },
+    {
+      "claim_id": "46e91170-3a27-4509-9c0e-ccd9be19570c",
+      "result_id": "93810b71-c6ad-4125-9fb3-79a0d64ddf2b"
+    },
+    {
+      "claim_id": "cd4044f8-9d51-48f7-ad36-5286a3910a10",
+      "result_id": "93810b71-c6ad-4125-9fb3-79a0d64ddf2b"
+    },
+    {
+      "claim_id": "3cac56df-e064-4169-af69-a12b66c017e2",
+      "result_id": "93810b71-c6ad-4125-9fb3-79a0d64ddf2b"
+    },
+    {
+      "claim_id": "f5b43b1c-4d32-458a-b30f-f54d7ba94f87",
+      "result_id": "93810b71-c6ad-4125-9fb3-79a0d64ddf2b"
+    },
+    {
+      "claim_id": "00043ec7-024b-49de-b1b2-d0ecae00aba6",
+      "result_id": "93810b71-c6ad-4125-9fb3-79a0d64ddf2b"
+    },
+    {
+      "claim_id": "00045b90-9fba-4cd7-8cc8-3fe7fb129978",
+      "result_id": "93810b71-c6ad-4125-9fb3-79a0d64ddf2b"
+    },
+    {
+      "claim_id": "c7769931-09c0-40a3-b399-4594b6ba1728",
+      "result_id": "93810b71-c6ad-4125-9fb3-79a0d64ddf2b"
+    },
+    {
+      "claim_id": "4df59731-6bf5-4e32-ab73-f13317cbfd3f",
+      "result_id": "ec60af61-90d1-4951-bece-b346f93424c4"
+    },
+    {
+      "claim_id": "7e6037ba-b861-4e0d-9d41-84708711da90",
+      "result_id": "ec60af61-90d1-4951-bece-b346f93424c4"
+    },
+    {
+      "claim_id": "c25b3d65-23dc-4968-b723-3fcd0d35d421",
+      "result_id": "ec60af61-90d1-4951-bece-b346f93424c4"
+    }
+  ],
+  "comparisons": []
+}

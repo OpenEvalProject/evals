@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C42",
+      "C70",
+      "C78",
+      "C79"
+    ],
+    "result": "Noradrenergic blockade with propranolol significantly enhanced metacognitive performance (AUROC2) compared to placebo, while dopamine blockade with amisulpride had no effect. The propranolol group showed significantly higher AUROC2 than placebo (p<0.001, d=1.26) and marginally higher than amisulpride (p=0.051, d=0.65), with Bayesian analysis providing moderate evidence (BF=3.31) for no difference between amisulpride and placebo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C19-C24 provide converging statistical evidence for the metacognitive enhancement with propranolol. The experimental design (C9-C17) appropriately controlled for confounds, the statistical analyses are appropriate with adequate sample sizes (n=20 per group), and the effect sizes are substantial. The Bayesian analysis (C23) strengthens the null finding for amisulpride.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C56"
+    ],
+    "result": "The metacognitive enhancement under propranolol was primarily driven by lower confidence ratings on error trials rather than correct trials. A significant group-by-correctness interaction (p=0.006) showed that the effect was driven by error trials (p=0.036, d=0.69) but not correct trials (p=0.848, d=0.06).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 provide statistical evidence for the mechanism underlying the metacognitive enhancement. The interaction analysis is appropriate and the follow-up tests clearly demonstrate that the effect is specific to error trials, which aligns with theoretical predictions about noradrenaline function (C53-C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C6",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C44"
+    ],
+    "result": "Neither propranolol nor amisulpride affected perceptual decision-making performance. No significant differences were found between groups in accuracy (p=0.212), perceptual sensitivity d' (p=0.194), response bias c (p=0.112), stimulus strength (p=0.321), reaction times (p=0.424), or median confidence ratings (p=0.684). AUROC2 differences remained significant after controlling for these variables (p=0.010).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C37 provide comprehensive evidence that the metacognitive enhancement was not due to changes in perceptual performance or response biases. The staircase procedure (C17) successfully equated performance across groups, and the ANCOVA (C32) confirms that metacognitive differences persist after controlling for potential confounds. Multiple convergent null results strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The study employed a rigorous double-blind, placebo-controlled, between-subjects design with 60 subjects (20 per group) matched for gender, age, affect, and intellectual abilities. Subjects were successfully blinded to drug condition (p=0.868) and drugs had no effect on mood (p>0.12 for all comparisons).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13, C81-C86 describe appropriate experimental controls and demonstrate successful implementation of blinding and matching procedures. The lack of drug effects on mood (C13) and successful blinding (C12) are important controls that strengthen causal inference. Sample sizes of n=20 per group provide adequate power for the observed effect sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The study used a well-validated global motion discrimination task with confidence judgments, employing a staircase procedure to equate performance across groups. AUROC2 was used as the primary metacognitive metric, which is unbiased by overall confidence levels and robust to non-normal distributions. Appropriate data preprocessing excluded outliers and unstable trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18, C87-C107 describe methodological details that are appropriate and well-justified by citations to prior work. The choice of AUROC2 as the metacognitive metric (C106-C107) is well-motivated, and the staircase procedure (C17) successfully controlled for performance differences. Data preprocessing steps (C102-C105) follow established practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C43"
+    ],
+    "result": "Dopamine D2/3 receptor blockade with 400 mg amisulpride had no effect on metacognition, with the amisulpride group showing equivalent AUROC2 performance to placebo (p=0.465, d=0.23) and Bayesian analysis providing moderate evidence for the null hypothesis (BF=3.31).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C22, C23, C43 provide converging evidence for the null effect of amisulpride on metacognition. The Bayesian analysis (C23) strengthens this conclusion by quantifying evidence for the null hypothesis. However, the interpretation is limited by uncertainty about receptor occupancy (C64, C67-C69) and potential dose-response relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "This is claimed to be the first study showing pharmacological enhancement of metacognitive performance without affecting perceptual decision-making, pointing to a regulatory role for noradrenergic neurotransmission in perceptual metacognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 are supported by the experimental findings (C3-C6, C19-C37) demonstrating selective enhancement of metacognition without perceptual effects. The novelty claim (C7) appears justified based on the discussion of prior literature (C62-C63), though comprehensive verification of this claim would require exhaustive literature review.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C57",
+      "C58"
+    ],
+    "result": "The authors propose two theoretical mechanisms for how noradrenaline blockade enhances metacognition: (1) the neural gain hypothesis suggests noradrenaline amplifies strong signals while diminishing weak ones, potentially omitting subtle information needed for metacognitive judgments; (2) the unexpected uncertainty hypothesis suggests phasic noradrenaline resets accumulated information after errors, making it unavailable for confidence judgments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C58 present theoretical interpretations of the findings, but these remain speculative (C52, C55). While the finding that propranolol primarily affects error trial confidence (C26-C27) is consistent with the unexpected uncertainty account (C53-C55), the study does not directly test these mechanisms. Alternative explanations are not fully explored, and the mechanisms could be tested with additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors acknowledge important limitations in comparing amisulpride and propranolol effects: little is known about precise pharmacokinetics and receptor occupancy for these single-dose administrations. While dosages were based on prior neurocognitive studies, there are no PET studies for single-dose amisulpride or occupancy studies for propranolol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 appropriately acknowledge limitations in the direct comparison between drugs. The authors took reasonable steps to match timing (C65) and dosages (C66) based on prior literature, but the lack of receptor occupancy data (C68-C69) limits interpretation of the null effect for amisulpride. This is an honest assessment of study limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The selective effect of noradrenaline but not dopamine on metacognition is notable given that both neuromodulators are often ascribed similar functions. The findings suggest a rare sensitivity to noradrenaline and raise the possibility that previous reports of dopaminergic effects on confidence may reflect performance rather than metacognitive effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C63 provide interesting context about neuromodulator similarities (supported by citations) and speculate about implications for prior findings. However, the reinterpretation of prior dopamine studies (C62) is speculative and would require reanalysis of those data. The claim of 'rare sensitivity' (C61) is also speculative without systematic comparison across cognitive domains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C40",
+      "C41",
+      "C80"
+    ],
+    "result": "The authors contextualize their findings within psychiatric disorders, noting that metacognitive impairments are common in psychiatric patients and suggesting that noradrenergic blockade could provide a therapeutic target for treating metacognitive deficits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C1 and C40 about metacognitive impairments in psychiatric disorders are well-supported by citations. However, the therapeutic implications (C41, C80) are highly speculative. The study was conducted in healthy volunteers, and translating these findings to patient populations would require additional research. The direction of effect (enhancement with blockade) also raises questions about how this would translate to therapeutic interventions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors discuss generalizability of findings across cognitive domains, noting that while metacognitive ability is stable across perceptual tasks, it is unclear whether metacognition in different domains (e.g., perception vs. memory) relies on the same processes. They speculate that noradrenergic effects might extend beyond perception given whole-brain modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C74 appropriately acknowledge uncertainty about domain-generality of metacognition (C72) while speculating about potential broader effects (C74). The speculation is reasonable given noradrenaline's whole-brain effects (C73), but this remains an empirical question requiring future research. The authors appropriately frame this as speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors raise the question of whether noradrenaline effects on metacognition are purely central or involve peripheral mechanisms, suggesting that drugs targeting only peripheral noradrenaline could help distinguish visceral contributions to metacognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C77 raise an interesting mechanistic question based on prior work showing embodied aspects of confidence (C75). However, propranolol crosses the blood-brain barrier and affects both central and peripheral receptors, so the current study cannot distinguish these contributions. The suggestion for future work (C77) is reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C58"
+    ],
+    "result": "The findings are consistent with previous work by the authors showing that unexpected arousal biases metacognition, an effect possibly modulated by noradrenaline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C2 cites prior work on arousal and metacognition, and C58 connects current findings to that work. However, the mechanistic link to noradrenaline in the prior study is speculative ('possibly modulated'). The current findings are consistent with but do not directly test this connection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors provide general context about the importance of confidence and metacognition for decision-making and note that while noradrenaline is known to impact arousal and higher-order cognition, precise mechanisms remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 about the importance of confidence are based on established knowledge. Claims C45-C46 appropriately characterize the current state of knowledge about noradrenaline function, acknowledging both what is known and what remains unclear. These provide appropriate context for the study.",
+    "result_type": "MINOR"
+  }
+]

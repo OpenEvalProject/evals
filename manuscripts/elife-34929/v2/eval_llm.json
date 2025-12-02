@@ -1,0 +1,243 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C20",
+      "C46"
+    ],
+    "result": "Prior to this study, neural circuits causally responsible for evidence accumulation had not been determined, despite observation of neural correlates in multiple brain regions including posterior parietal cortex and frontal orienting fields, which recent studies suggest are not central to the computation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9-C13, C20, and C46 establish the state of the field prior to this work through citations to prior literature. These claims consistently document that while evidence accumulation is widely studied and neural correlates have been observed in multiple regions, the causal circuits remained unknown, and recent work suggested PPC and FOF/FEF are not central to the computation. This provides appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C21"
+    ],
+    "result": "The authors propose three criteria for identifying brain regions directly involved in evidence accumulation: directly influencing accumulation-based decision-making behavior, having graded neural encoding of accumulated evidence, and contributing throughout the accumulation process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C21 establish logical criteria for identifying regions involved in evidence accumulation. These are reasonable criteria based on the computational requirements of the task and are supported by methodological citations (C21). The criteria provide a clear framework for evaluating the ADS and are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C42",
+      "C52"
+    ],
+    "result": "The anterior dorsal striatum is anatomically positioned as a convergence hub receiving inputs from multiple cortical areas including PPC and FOF, and prior work in primates has found neural correlates of evidence accumulation and behavioral effects of microstimulation in the ADS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19, C42, and C52 establish the anatomical and functional rationale for studying the ADS, supported by multiple citations to anatomical and primate electrophysiology studies. The convergence of inputs from regions showing neural correlates of accumulation provides strong motivation for the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Rats were trained on a Poisson-clicks auditory evidence accumulation task and behavioral analysis confirmed they gradually accumulated evidence over the entire trial to make binary left/right choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C48-C51 describe the behavioral task and confirm rats perform evidence accumulation. C22 is supported by behavioral analysis with references to figures and supplementary files. The task description is clear and the behavioral validation is appropriate. Ethical approval is documented (C51).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Unilateral pharmacological inactivation of the ADS with muscimol biased rats to make more ipsilateral choices (19.2\u00b14.4% for right, 18.6\u00b13.3% for left, p<0.01), and this effect was specific to accumulation trials, not motor control trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 report unilateral inactivation effects with statistical significance and appropriate controls. The specificity to accumulation trials (p>0.4 for motor control) demonstrates the effect is not due to gross motor impairment. The data are shown in Figure 1b and Figure 1\u2014figure supplement 2. The experimental design with motor control trials is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Bilateral pharmacological inactivation of the ADS caused substantial performance impairment on accumulation trials (12.6\u00b13.2%, p<0.01) but not on motor control trials (p>0.6), demonstrating the ADS is required for accumulation-based decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 report bilateral inactivation effects with statistical significance and appropriate motor control comparisons. The specificity to accumulation trials strengthens the conclusion that ADS is required for evidence accumulation per se, not just motor execution. Data are shown in Figure 1c and supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C44"
+    ],
+    "result": "Model-based analysis of inactivation effects revealed that unilateral ADS inactivation increased lapse rate bias and significantly increased accumulator and sensory noise parameters, with bilateral inactivation also increasing the combined noise parameters, suggesting the ADS affects accumulator noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 and C44 report model fitting results showing effects on lapse rates and noise parameters. The analysis uses an 11-parameter drift-diffusion model with algorithmic differentiation for simultaneous parameter fitting. The trade-offs between parameters are acknowledged and confidence intervals are provided. The conclusion that accumulator noise is affected (C44) is appropriately cautious given parameter trade-offs. Figure 2 shows likelihood landscapes supporting the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C47"
+    ],
+    "result": "Electrophysiological recordings revealed that over a third of striatal neurons (64/173, 37%) showed side-selective activity during the fixation period hundreds of milliseconds before movement, while many neurons also showed movement-related activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C47 report electrophysiological findings with appropriate statistical thresholds (p<0.05) and sample sizes. The distinction between pre-movement side-selective activity and movement-related activity is important for interpreting the role of these neurons. Data are shown in Figure 3 and supplementary figures with clear documentation of analysis methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Side-selective striatal neurons showed ramping responses for preferred-direction stimuli, with the slope of the ramp proportional to stimulus strength after an initial onset latency, consistent with prior primate studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 describe ramping neural responses with stimulus-strength dependence, supported by electrophysiological data in Figure 3 and Figure 4a. The comparison to primate work (Ding and Gold, 2010) provides cross-species validation. However, the authors appropriately note that ramping alone is not conclusive evidence for accumulation encoding, motivating further analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "Click-triggered average analysis showed that striatal neurons modulated their activity in close agreement with the theoretical prediction of a fixed-magnitude sustained increase in firing rate for each click, supporting a role in evidence accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 reports click-triggered average analysis comparing neural responses to theoretical predictions for evidence accumulation. The analysis is shown in Figure 4b with both data and model predictions. This analysis goes beyond simple ramping to test specific predictions about how individual evidence quanta affect neural activity, providing stronger evidence for accumulation encoding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Tuning curve analysis revealed that side-selective striatal neurons encoded accumulated evidence in a graded manner throughout the accumulation period, with this graded encoding consistent across the population of recorded neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 report tuning curve analysis showing graded encoding of accumulated evidence. The analysis uses a recently developed method (Hanks et al., 2015) that relates firing rates to model-derived accumulator values on individual trials. Data are shown in Figures 4c-d and Figure 5. This provides the strongest evidence for graded accumulation encoding, addressing the second criterion proposed by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C54"
+    ],
+    "result": "Full-trial unilateral optogenetic inactivation of the ADS resulted in ipsilateral choice bias (9.0\u00b12.3%, p<0.01), with control rats expressing YFP alone showing no bias (0.1\u00b11.8%, p=0.89), and acute recordings verified effective neural silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 and C54 report optogenetic inactivation effects with appropriate controls. The YFP-only control (C37) rules out non-specific effects of viral injection or light delivery. Acute recordings (C54, Figure 6b) validate the optogenetic silencing method. The effect size is smaller than pharmacological inactivation but still significant and consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C38",
+      "C45"
+    ],
+    "result": "Temporally specific optogenetic inactivation showed that the ADS contributes during both the first half (10.4\u00b14.0%, p<0.01) and second half (12.9\u00b13.7%, p<0.01) of evidence accumulation, with the first-half effect significantly greater than that observed for FOF inactivation (p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C45 report temporally specific inactivation effects demonstrating ADS contribution throughout accumulation. The comparison to FOF (which shows no first-half effect) is critical for establishing that ADS is involved earlier in the accumulation process than cortical regions. Statistical comparisons are appropriate (nonparametric bootstrap, Figure 7). This addresses the third criterion and distinguishes ADS from FOF.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Optogenetic inactivation of the ADS had no significant effect during pre-accumulation (0.4\u00b15.4%, p=0.42) or post-choice periods (0.9\u00b15.2%, p=0.38), indicating the effect is specific to the accumulation period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 reports lack of effects outside the accumulation period, demonstrating temporal specificity. The non-significant effects during pre-accumulation and post-choice periods (Figure 6e) indicate the ADS contribution is limited to the evidence accumulation computation itself, not preparatory or post-decision processes. This strengthens the conclusion about ADS's specific role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C40",
+      "C41"
+    ],
+    "result": "The anterior dorsal striatum is the first brain region to satisfy all three criteria for direct involvement in evidence accumulation: being required for unimpaired accumulation-based decisions, having graded neural encoding of accumulated evidence, and making causal contributions throughout the accumulation process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C40-C41 state the main conclusion, which is supported by the convergence of pharmacological inactivation (C23-C26), electrophysiological recordings showing graded encoding (C30-C35), and temporally specific optogenetic inactivation (C38-C39). Each of the three criteria is addressed with multiple complementary approaches. The claim that ADS is the \"first\" region to satisfy all three criteria is supported by C46 and the literature review.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "The striatum may be directly involved in a more expansive set of computations, traditionally considered cognitive in nature, beyond its established functions in action selection, response initiation, reward uncertainty evaluation, and habit formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C43 is a speculative interpretation extending beyond the current data. While the evidence supports ADS involvement in evidence accumulation, the claim about \"more expansive\" cognitive functions is not directly tested. The relationship between evidence accumulation and other striatal functions remains to be determined. This is appropriately framed as speculation but requires future work for validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Infusion cannulas were implanted at 15\u00b0 lateral angle to minimize potential muscimol backflow to the frontal orienting fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 describes a methodological control to prevent confounding effects from drug spread to FOF. This is an important control given that FOF is known to be necessary for task performance (Erlich et al., 2015). The angled approach is a reasonable strategy, though direct verification of spread would strengthen the claim.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,356 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C125",
+      "C126",
+      "C127",
+      "C130",
+      "C131",
+      "C132",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "NPVF signaling and NPVF neurons are both necessary and sufficient to promote sleep in zebrafish. Loss-of-function experiments (npvf mutants, pharmacological inhibition with RF9 and GJ-14, neuronal ablation) demonstrate necessity, while gain-of-function experiments (NPVF overexpression, optogenetic and chemogenetic stimulation) demonstrate sufficiency. These manipulations affect multiple sleep parameters including sleep amount, sleep bout architecture, arousal threshold, and sleep latency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by converging evidence from multiple experimental approaches including genetic mutants (C85-C90), pharmacological antagonists (C91-C104), arousal threshold assays (C105-C109), optogenetic stimulation (C125-C127), chemogenetic stimulation (C130-C132), and neuronal ablation (C134-C143). The consistency across these diverse methodologies provides strong support for both necessity and sufficiency. Statistical significance is reported for all key findings with appropriate tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Mature RFRP peptides derived from the NPVF preproprotein promote sleep synergistically. Individual RFRP peptides (RFRP1 or RFRP3 alone) have minimal effects on sleep, while RFRP2 alone has moderate effects. However, any combination of two RFRP peptides produces robust sleep-promoting effects similar to wild-type NPVF. This synergy is supported by c-fos expression patterns in ventricular cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The synergistic action of RFRP peptides is well-demonstrated through systematic testing of all peptide combinations (C64-C72) with appropriate statistical analysis. The correlation between behavioral phenotypes and c-fos expression patterns (C74-C82) provides mechanistic support. Control experiments with scrambled peptides (C64) and dosage experiments (C73) rule out alternative explanations. The claim of synergy is justified by the observation that combinations produce effects greater than additive effects of individual peptides.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Stimulation of NPVF neurons induces neuronal activity levels consistent with normal sleep. Using 2P-SPIM imaging, optogenetic and chemogenetic stimulation of NPVF neurons suppresses neuronal activity in the brain (particularly in the optic tectum) to levels similar to those observed during natural sleep at night. This suppression occurs without external visual stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The imaging data (C144-C156) using 2P-SPIM provides direct evidence that NPVF neuron stimulation produces brain-wide activity patterns resembling natural sleep. The use of both optogenetic (C148) and chemogenetic (C151-C154) approaches provides converging evidence. Statistical significance is demonstrated (p<0.05). However, the interpretation that this represents 'normal sleep' (C9) is somewhat inferential, as the activity patterns are similar but not identical to natural sleep, and alternative explanations (e.g., circadian regulation, C147) are acknowledged but not fully ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "NPVF is expressed exclusively in approximately 15 glutamatergic neurons per hemisphere in the zebrafish dorsomedial hypothalamus. These neurons are excitatory (expressing vglut2a/b but not gad67) and project densely to the hypothalamus and raphe nuclei, with sparse projections to forebrain, tectum, and spinal cord.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The anatomical characterization is well-supported by ISH (C110), FISH (C112-C114), and transgenic reporter analysis (C116-C118) with high specificity (>95% colocalization). The projection pattern is documented through imaging (C119-C120). The inference that these neurons are excitatory (C115) is reasonable based on neurotransmitter marker expression, though functional confirmation would strengthen this claim. The small number of neurons (C111) is notable and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Optogenetic stimulation with ReaChR effectively activates NPVF neurons. Blue light stimulation of Tg(npvf:ReaChR-mCitrine) animals induces c-fos expression in 75% of NPVF neurons, compared to ~1% in controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The c-fos expression data (C122-C124) provides clear evidence that the optogenetic approach successfully activates NPVF neurons. The large difference between experimental and control conditions (75% vs ~1%) with appropriate controls (WT siblings and sham-treated transgenics) supports the specificity of the manipulation. This is an important validation for the optogenetic experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "Chemogenetic stimulation with TRPV1/capsaicin effectively activates NPVF neurons without causing cell death. Treatment with 2 \u03bcM capsaicin induces c-fos expression in NPVF neurons without reducing their number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The validation of the chemogenetic approach is supported by c-fos expression data (C128) and cell counting (C129). The demonstration that 2 \u03bcM capsaicin does not cause neuronal loss is important for interpreting the behavioral effects. This concentration was appropriately chosen based on prior work showing that higher concentrations can cause apoptosis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C133"
+    ],
+    "result": "Metronidazole treatment of Tg(npvf:mTagYFP-T2A-eNTR) animals results in nearly complete ablation of NPVF neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The neuronal ablation is well-documented by ISH data shown in Figure 6B-C. This validates the ablation approach used for the loss-of-function experiments. The near-complete loss of neurons provides confidence that the behavioral phenotypes observed are due to loss of NPVF neurons rather than partial ablation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "NPVF-induced sleep does not require circadian rhythms but sleep architecture is influenced by lighting conditions. NPVF overexpression promotes sleep in constant light and constant dark conditions, though the mechanism differs (increased bout number in LL vs increased bout length in DD). The timing of NPVF overexpression affects phenotype duration, likely due to protein degradation rather than circadian regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experiments in constant light (C53-C55) and constant dark (C56) conditions demonstrate that NPVF can promote sleep independent of circadian rhythms. The observation that npvf mRNA levels do not vary circadianly (C52) supports this interpretation. However, the differences in sleep architecture between lighting conditions (C59) indicate that while NPVF function doesn't require circadian rhythms, its effects are modulated by light. The interpretation about protein degradation (C51) is reasonable but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The C. elegans RFamide peptide FLP-13 has modest effects on zebrafish locomotor activity but does not significantly affect sleep. FLP-13 overexpression decreased locomotor activity by 26% but had no significant effect on sleep, suggesting partial conservation of RFamide function in suppressing motor behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FLP-13 overexpression data (C61-C62) is clearly presented with appropriate statistics. The interpretation (C63) that this represents partial conservation of function is reasonable, though the lack of sleep effect suggests important functional differences between invertebrate and vertebrate RFamide systems. This negative result is important for understanding the specificity of NPVF function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C60",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C235"
+    ],
+    "result": "RFamide neuropeptides participate in an ancient and evolutionarily conserved sleep regulatory mechanism. The conservation of sleep-promoting function between invertebrate RFamides (FLP-13 in C. elegans, sNPF in Drosophila) and vertebrate NPVF suggests these peptides regulate a fundamental aspect of sleep control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim of evolutionary conservation is supported by the demonstration that NPVF promotes sleep in zebrafish (current study) combined with extensive prior literature showing RFamide peptides promote sleep in invertebrates (C23, C157-C161). The sequence similarity between NPVF and FLP-13 peptides (C165) and the synergistic action of multiple peptides in both systems (C162) support this interpretation. However, the claim is somewhat weakened by the observation that FLP-13 itself has limited effects in zebrafish (C61-C62), suggesting the conservation is at a functional rather than molecular level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "NPVF neurons are positioned to integrate sleep-relevant cues and regulate sleep/wake states through their hypothalamic location and widespread projections. Their projections to the optic tectum (processing visual input) and ventricular cells (secreting CSF factors) suggest multiple mechanisms of sleep regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the anatomical data supporting the projection patterns is solid (C119-C120, C179), the functional interpretations (C172, C180-C181) are largely speculative. The claims about integration of sleep-relevant cues and regulation of downstream neurons are reasonable hypotheses based on anatomy, but lack direct experimental support. The connection to CSF signaling (C181) is particularly speculative, based primarily on c-fos expression patterns rather than direct evidence of CSF factor release.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200"
+    ],
+    "result": "NPVF neurons are glutamatergic (excitatory), distinguishing them from most previously described sleep-promoting neurons which are GABAergic (inhibitory). This excitatory nature is conserved between zebrafish and mammals, suggesting a distinct circuit mechanism for sleep promotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The glutamatergic identity of zebrafish NPVF neurons is well-established by FISH data (C112-C114, C194). The conservation with mammals is supported by citations to prior work (C198-C199). The contrast with most other sleep-promoting neurons (C195-C196) is accurate based on the literature. However, the inference that this represents a 'distinct circuit mechanism' (C200) is speculative and would require circuit-level analysis to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205"
+    ],
+    "result": "Zebrafish and humans both possess three RFRP peptides (including RFRP2), while rodents and birds lack RFRP2. RFRP2 has stronger sleep-promoting effects than RFRP1 or RFRP3 alone, making zebrafish a potentially more appropriate model than rodents for some aspects of human NPVF function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conservation of RFRP2 between zebrafish and humans (C201-C202) is well-documented in the literature. The stronger effect of RFRP2 compared to RFRP1/3 (C69-C70, C204-C205) is clearly demonstrated by the behavioral data. The inference that zebrafish may be a better model than rodents for human NPVF function (C203) is reasonable given this conservation, though it remains to be tested whether RFRP2 has similar functions in humans.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212",
+      "C213",
+      "C217"
+    ],
+    "result": "RFRP peptides may promote sleep by inducing release of factors into the cerebrospinal fluid (CSF). Overexpression of NPVF or effective RFRP combinations induces c-fos expression in ventricular cells, similar to patterns associated with EGFR-induced rest. RFRP2 may act through an unidentified receptor expressed in ventricular cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The c-fos expression pattern in ventricular cells (C206) is well-documented. The similarity to EGFR-related patterns (C207-C208) and the presence of RFamide peptides in human CSF (C211) provide circumstantial support. However, the mechanism remains highly speculative (C212, C217). No direct evidence is provided for CSF factor release, receptor identity, or causal relationships. This represents an interesting hypothesis requiring substantial additional experimentation to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C214",
+      "C215",
+      "C216"
+    ],
+    "result": "This study provides the first demonstration of in vivo biological activity for RFRP2. RFRP2 peptide has not been detected in vivo previously, and its cognate receptor(s) remain unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims about the novelty of demonstrating RFRP2 activity (C215) and the lack of prior in vivo detection (C214) or known receptors (C216) are statements about the current state of knowledge that appear accurate based on the literature review. The demonstration of RFRP2 activity through genetic overexpression (C69-C70) represents a genuine advance, though the lack of peptide detection and receptor identification remain limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C218",
+      "C219",
+      "C220",
+      "C221"
+    ],
+    "result": "NPVF neurons may directly regulate sensory processing in the tectum during sleep. Optogenetic stimulation of NPVF neurons suppresses tectal activity, and NPVF neurons project to the tectum, suggesting direct regulation. This is surprising given current models of sensory gating during sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The suppression of tectal activity upon NPVF stimulation (C148, C218) is well-documented by imaging data. The presence of NPVF projections to the tectum (C219) is confirmed anatomically. However, the inference of direct regulation (C220) is speculative without functional connectivity experiments (e.g., showing that tectal suppression requires NPVF terminals in the tectum). The comparison to C. elegans (C221) provides some support for this mechanism, but the claim remains uncertain without additional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C222",
+      "C223",
+      "C224",
+      "C228",
+      "C232",
+      "C233"
+    ],
+    "result": "NPVF signaling represents a potential therapeutic target for sleep disorders, particularly insomnia. Inhibition of NPVF signaling impairs both sleep initiation and maintenance (hallmarks of insomnia), and NPVF receptors are GPCRs amenable to drug development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation that NPVF inhibition/ablation impairs sleep initiation and maintenance (C222) is well-supported by the data. The identification of these as insomnia characteristics is accurate (C222). However, the therapeutic potential (C224, C228, C232-C233) is highly speculative. While GPCRs are indeed druggable (C225-C227), translation from zebrafish to human therapeutics faces numerous challenges not addressed here. This represents a reasonable direction for future research rather than a supported conclusion.",
+    "result_type": "MINOR"
+  }
+]

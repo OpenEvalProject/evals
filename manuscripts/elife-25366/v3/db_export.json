@@ -1,0 +1,1609 @@
+{
+  "submission": {
+    "id": "77be4377-3799-47ad-929a-d43ae9e73371",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T18:55:34.252533Z",
+    "updated_at": "2025-12-01T18:55:34.252533Z"
+  },
+  "content": [
+    {
+      "id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "submission_id": "77be4377-3799-47ad-929a-d43ae9e73371",
+      "content_type": "manuscript",
+      "content_text": "# Protein Phosphatase 1 inactivates Mps1 to ensure efficient Spindle Assembly Checkpoint silencing\n\n## Authors\n\n- Margarida Moura<sup>1</sup>\n- Mariana Osswald<sup>1</sup>\n- Nelson Le\u00e7a<sup>1</sup>\n- Jo\u00e3o Barbosa<sup>1</sup>\n- Ant\u00f3nio J Pereira<sup>1</sup>\n- Helder Maiato<sup>1</sup>\n- Claudio E Sunkel<sup>1</sup> \u2020\n- Carlos Conde<sup>1</sup> ([ORCID: 0000-0002-4177-8519](https://orcid.org/0000-0002-4177-8519)) \u2020\n\n### Affiliations\n\n1. i3S, Instituto de Investiga\u00e7\u00e3o e Inova\u00e7\u00e3o em Sa\u00fade Universidade do Porto Porto Portugal\n2. Instituto de Biologia Molecular e Celular Universidade do Porto Porto Portugal\n3. Departamento de Biomedicina Unidade de Biologia Experimental, FMUP - Faculdade de Medicina da Universidade do Porto Porto Portugal\n4. Departamento de Biologia Molecular ICBAS - Instituto de Ci\u00eancias Biom\u00e9dicas Abel Salazar Porto Portugal\n\n\u2020 Corresponding author\n\n## Abstract\n\nFaithfull genome partitioning during cell division relies on the Spindle Assembly Checkpoint (SAC), a conserved signaling pathway that delays anaphase onset until all chromosomes are attached to spindle microtubules. Mps1 kinase is an upstream SAC regulator that promotes the assembly of an anaphase inhibitor through a sequential multi-target phosphorylation cascade. Thus, the SAC is highly responsive to Mps1, whose activity peaks in early mitosis as a result of its T-loop autophosphorylation. However, the mechanism controlling Mps1 inactivation once kinetochores attach to microtubules and the SAC is satisfied remains unknown. Here we show in vitro and in Drosophila that Protein Phosphatase 1 (PP1) inactivates Mps1 by dephosphorylating its T-loop. PP1-mediated dephosphorylation of Mps1 occurs at kinetochores and in the cytosol, and inactivation of both pools of Mps1 during metaphase is essential to ensure prompt and efficient SAC silencing. Overall, our findings uncover a mechanism of SAC inactivation required for timely mitotic exit.\n\n## Introduction\n\nAccurate chromosome segregation depends on the Spindle Assembly Checkpoint (SAC), a conserved signaling pathway that monitors the attachment of kinetochores to microtubules and prevents sister chromatid separation until all chromosomes are attached to microtubules emanating from opposite spindle poles (Musacchio and Salmon, 2007; Foley and Kapoor, 2013). Mps1 kinase is a master regulator of SAC function (Liu and Winey, 2012). Mps1 phosphorylates MELT motifs on Spc105/KNL1 creating docking sites for the hierarchical recruitment of additional SAC proteins required for the assembly of the Mitotic Checkpoint Complex (MCC), a tetrameric protein complex that inhibits the Anaphase Promoting Complex (APC/C) and thereby prevents anaphase onset (Shepperd et al., 2012; Primorac et al., 2013; Vleugel et al., 2015; London et al., 2012; Yamagishi et al., 2012). Moreover, Mps1-mediated phosphorylation of Mad1 dramatically accelerates the structural conversion of Mad2 into its closed conformer, the rate-limiting step for MCC assembly and thus, of SAC activation (Faesen et al., 2017; Ji et al., 2017). The recruitment of Mps1 to unattached kinetochores is directly mediated by the Ndc80 complex and promoted by Aurora B kinase (Santaguida et al., 2011; Saurin et al., 2011; Conde et al., 2013; Nijenhuis et al., 2013). This localized accumulation of Mps1 is thought to potentiate its trans-autophosphorylation on the T-loop to ensure full kinase activity and robust SAC signaling (Kang et al., 2007; Sacristan and Kops, 2015).\n\nThe events that underlie SAC inactivation are less well understood. The phosphatases PP1-\u03b3 and PP2A-B56 appear to play an important role in this process by dephosphorylating KNL1-MELT motifs (London et al., 2012; Espert et al., 2014; Nijenhuis et al., 2014), which contributes to the removal of SAC proteins from kinetochores following microtubule attachments (Etemad and Kops, 2016). Furthermore, elegant in vitro studies demonstrated that binding of Mps1 to the calponin homology (CH) domains of Ndc80 and Nuf2 is inhibited by microtubules (Hiruma et al., 2015; Ji et al., 2015). Although this competition mechanism precludes the recruitment of Mps1 to bioriented kinetochores, it is however insufficient to remove all Mps1 from kinetochores even after the formation of stable end-on attachments (Aravamudhan et al., 2015; Hiruma et al., 2015; Ji et al., 2015). Work in budding yeast proposes that end-on attachments physically separate residual Mps1 from the Spc105/KNL1 phosphodomain, hence disrupting MELT phosphorylation at metaphase kinetochores (Aravamudhan et al., 2015). While this may contribute to silence the SAC in yeast, this model does not account for the highly dynamic behaviour of active Mps1 that has been observed in human cells (Jelluma et al., 2010). The association of Mps1 with the Ndc80 complex is very transient and the kinase diffuses rapidly into the cytoplasm, which is likely to allow Mps1 to overcome the increased spatial separation between its kinetochore receptor and Spc105/KNL1 MELT motifs. Moreover, kinetochore recruitment of Mad1-Mad2 in metazoa is also mediated through an Spc105/KNL1-independent pathway (Schittenhelm et al., 2009; Caldas et al., 2015; Sili\u00f3 et al., 2015). This is known to rely on the recruitment of the Rod/ZW10/Zwilch (RZZ) complex to unattached kinetochores, an event that is also controlled by Mps1 kinase (Santaguida et al., 2010). Importantly, in addition to its role at unattached kinetochores, Mps1 also contributes to SAC signaling in the cytoplasm. Soluble Mps1 is required for the assembly of pre-mitotic MCC that determines the peak time of anaphase onset in the absence of kinetochore\u2013microtubule attachment problems (Rodriguez-Bravo et al., 2014). Moreover, Mps1 lacking its kinetochore-binding domain is sufficient to delay mitotic exit in mouse embryonic fibroblasts and RPE1 cells challenged with spindle poisons (Foijer et al., 2014; Maciejowski et al., 2010) and cytosolic Mps1 was shown to be required to support SAC arrest caused by kinetochore-tethered Mad1 (Maldonado and Kapoor, 2011). Therefore, in addition to the control exerted on Mps1 kinetochore recruitment and to alterations on kinetochore architecture, other mechanisms must contribute to disrupt SAC signaling upon stable end-on microtubule attachments. Here we show that in Drosophila, PP1-87B/PP1-\u03b3 dephosphorylates the T-loop of cytosolic and kinetochore-associated Mps1. This renders both pools of Mps1 inactive during metaphase, which we find to be critical for rapid SAC silencing and timely mitotic exit.\n\n## Results\n\n### Depletion of PP1-87B results in a metaphase delay with stable kinetochore-microtubule attachments\n\nIn yeast and human cells, KNL1-bound PP1-\u03b3 antagonizes Mps1 signaling at kinetochores through dephosphorylation of MELT motifs, which leads to a reduction in Bub and Mad proteins at metaphase kinetochores (London et al., 2012; Zhang et al., 2014; Nijenhuis et al., 2014). Since Drosophila Spc105/KNL1 inherently lacks phospho-regulatable MELTs (Schittenhelm et al., 2009; Conde et al., 2013) but PP1 is still required for timely mitotic exit in flies (Chen et al., 2007), we resorted to this model organism to uncover novel SAC-silencing mechanisms that might have been overlooked in other systems.\n\nLive cell-imaging analysis showed that depletion of PP1-87B orthologue from Drosophila S2 cells results in an abnormal accumulation of Mad1 at aligned kinetochores and a pronounced extension of the metaphase duration (Figure 1A,B; Figure 1\u2014figure supplement 1 and Videos 1 and 2). Co-depletion of Mps1 prevented the anaphase onset delay, indicating it is due to active SAC signaling (Figure 1A,B; Figure 1\u2014figure supplement 1 and Video 3). Aurora B phosphorylates KMN proteins to destabilize erroneous kinetochore-microtubules interactions (Liu et al., 2009; Welburn et al., 2010; Lampson and Cheeseman, 2011). Since in human cells PP1 was shown to modulate Aurora B activity by antagonizing its activating T232 autophosphorylation (Liu et al., 2010; Posch et al., 2010; Wurzenberger et al., 2012), the metaphase delay observed in PP1-87B depleted cells could be caused by labile kinetochore-microtubule attachments continuously engaging the SAC. We found that depletion of PP1-87B from Drosophila S2 cells increased Aurora B activation at centromeres/kinetochores of prometaphase and metaphase chromosomes, as expected (Figure 1C,D). However, the inter-kinetochore distances on aligned chromosomes were similar to those measured in control cells (Figure 1E), indicating that kinetochores are under mechanical tension compatible with stably attached microtubules (Li and Nicklas, 1995; Akiyoshi et al., 2010; Khodjakov and Pines, 2010; Ye et al., 2016). In agreement, PP1-87B depleted cells revealed the presence of cold stable kinetochore-fibers, as observed in control cells (Figure 1F,G). Furthermore, we quantified the stability of kinetochore-microtubule attachments by measuring microtubule turnover rates with inducible speckle imaging (ISI) (Pereira et al., 2016). Briefly, a speckled laser beam imprints a bleaching pattern on GFP-\u03b1-Tubulin that dissipates (by fade-out of the bright spots and fade-in of the dark spots) in a timescale indicative of microtubule lifetime. In contrast to conventional photobleaching experiments, ISI imprinting is 3D and immune to aberrations. Depletion of PP1-87B fails to cause significant changes in the stability of kinetochore-microtubule attachments in metaphase cells and there are no significant differences in the fractions of microtubules in the stable (KT-MT) versus unstable (non-KT-MT) populations when compared to control cells (Figure 1H,I; Figure 1\u2014figure supplement 2 and Videos 4 and 5). Taken together, these results clearly show that Mad1 accumulation at metaphase-aligned kinetochores and the delayed anaphase onset observed in PP1-87B-depleted cells are not caused by unattached kinetochores transiently generated as a result of increased Aurora B activity.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/25366/elife-25366-fig1-v3.jpg)\n\n**Figure 1.:** (A,B) Kymograph analysis of mitotic progression monitored by live-cell imaging (A) and corresponding quantification of Mad1-EGFP kinetochore levels (B) of control, PP1-87B depleted or Mps1 and PP1-87B co-depleted Drosophila S2 cells expressing mCherry-Tubulin and Mad1-EGFP under control of Mad1 promoter. The mean time from nuclear envelope breakdown to anaphase onset for each condition is displayed in the corresponding kymograph. Mad1-EGFP fluorescence intensities at kinetochores were corrected for cytosolic signal (N\u00a0\u2265\u00a09 cells for each condition). Vertical dashed line indicates the frame corresponding to nuclear envelope breakdown. Horizontal scale bar: 5 min. Vertical scale bar: 5 \u03bcm. (C,D) Representative immunofluorescence images (C) and corresponding quantifications (D) of inter-kinetochore distances and relative levels of Aurora B T232 phosphorylation (AurBT232Ph) at unaligned and aligned chromosomes in control and PP1-87B depleted S2 cells. AurBT232Ph relative levels were plotted over the inter-kinetochore distance measured as the distance between centroids of CID pairs. AurBT232Ph fluorescence intensities were determined relative to CID signal (N\u00a0\u2265\u00a058 kinetochore pairs for each condition). Scale bar: 5 \u03bcm. (E) Quantification of inter-kinetochore distances measured in chromosomes aligned at the metaphase plate of control and PP1-87B depleted S2 cells. Inter-kinetochore distances were measured as the distance between centroids of identified CID pairs (N\u00a0\u2265\u00a086 kinetochores for each condition). (F,G) Representative immunofluorescence images (F) and corresponding quantification (G) of cold-stable kinetochore fibers in control, PP1-87B and Ndc80 depleted S2 cells. CID immunolocalization was used as kinetochore reference. The insets display magnifications of the outlined regions. The graph represents the % of kinetochores attached to cold-stable microtubules per cell (N\u00a0\u2265\u00a010 cells for each condition). (H,I) Analysis of microtubules turnover rates by speckle contrast fadeout of GFP-\u03b1-Tubulin. (H) Contrast fadeout\u2013time curves of GFP-\u03b1-Tubulin fluorescent speckles (lines) and their time point means (dots) measured in rectangular areas enclosing the spindle of control and PP1-87B-depleted S2 cells in prometaphase and metaphase. The rate of speckle contrast fadeout was calculated to obtain microtubule turnover rates. (I) Table showing microtubules half-lives of non-kinetochore- (non-KT-MTs) and kinetochore-microtubules (KT-MTs) of control and PP1-87B-depleted S2 cells determined by inducible speckle imaging in prometaphase and metaphase. The average speckle intensity squared-contrast at each time point was fit to a double-exponential curve A1*exp(-k1*t)+A2*exp(-k2*t), in which t is time, A1 represent the less stable population (non-KT-MTs) and A2 the more stable population (KT-MTs) with decay rates of k1 and k2, respectively. The turnover half-life for each population was calculated as ln2/k (N\u00a0\u2265\u00a07 metaphase cells for each condition). Data information: in (A), (B), (E), (G) and (H) data are presented as mean \u00b1 SD. Numerical source data for this figure are provided in Figure 1\u2014source data 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25366/elife-25366-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Representative mitotic progression of control, PP1-87B depleted or Mps1 and PP1-87B co-depleted Drosophila S2 cells co-expressing Mad1-EGFP and mCherry-\u03b1-Tubulin. Mitotic progression was monitored by time-lapse microscopy. (NEB) nuclear envelope breakdown. Time is in min:sec.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/25366/elife-25366-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Representative inducible speckle imaging (ISI) imprinting and progressive contrast fade-out of GFP\u2013\u03b1-tubulin in control and PP1-87B depleted metaphase S2 cells. The observed speckle contrast fadeout is due to microtubule turnover. Time is sec.\n\n![Video 1.](https://cdn.elifesciences.org/articles/25366/elife-25366-media1.mp4.jpg)\n\n**Video 1.:** Mitotic progression of S2 cells co-expressing mCherry-\u03b1-Tubulin (red) and Mad1-EGFP (green) was monitored by spinning disk confocal microscopy. Each frame represents a maximal intensity projection acquired every 60 s. NEB corresponds to time 0:0. Time is shown minutes.\n\n![Video 2.](https://cdn.elifesciences.org/articles/25366/elife-25366-media2.mp4.jpg)\n\n**Video 2.:** Mitotic progression of S2 cells depleted of PP1-87B co-expressing mCherry-\u03b1-Tubulin (red) and Mad1-EGFP (green) was monitored by spinning disk confocal microscopy. Video illustrates the prolonged metaphase duration with Mad1-EGFP present at kinetochores of bioriented chromosomes in PP1-87B depleted cells. Each frame represents a maximal intensity projection acquired every 60 s. NEB corresponds to time 0:0. Time is shown minutes.\n\n![Video 3.](https://cdn.elifesciences.org/articles/25366/elife-25366-media3.mp4.jpg)\n\n**Video 3.:** Mitotic progression of S2 cells co-depleted of PP1-87B and Mps1 co-expressing mCherry-\u03b1-Tubulin (red) and Mad1-EGFP (green) was monitored by spinning disk confocal microscopy. Video illustrates that Mps1 depletion abolishes the prolonged metaphase delay and Mad1-EGFP accumulation at bioriented kinetochores observed in PP1-87B depleted cells. Each frame represents a maximal intensity projection acquired every 60 s. NEB corresponds to time 0:0. Time is shown minutes.\n\n![Video 4.](https://cdn.elifesciences.org/articles/25366/elife-25366-media4.mp4.jpg)\n\n**Video 4.:** The Video illustrates ISI imprinting and progressive contrast fade-out of GFP\u2013\u03b1-tubulin in a control metaphase spindle. The observed speckle contrast fadeout of tubulin is due to microtubule turnover. The time between frames is variable and is presented on the corresponding excel source data file.\n\n![Video 5.](https://cdn.elifesciences.org/articles/25366/elife-25366-media5.mp4.jpg)\n\n**Video 5.:** The Video illustrates ISI imprinting and progressive contrast fade-out of GFP\u2013\u03b1-tubulin in a PP1-87B depleted metaphase spindle. The observed speckle contrast fadeout of tubulin is due to microtubule turnover. The time between frames is variable and is presented on the corresponding excel source data file.\n\n### PP1-87B antagonizes Mps1 T-loop autophosphorylation at kinetochores\n\nThe results described in the previous section suggest that the metaphase delay evoked by PP1-87B depletion results from problems in SAC silencing. Although, Mps1 is dispensable for kinetochore localization of Bub1 and BubR1 in flies (Schittenhelm et al., 2009; Conde et al., 2013) its activity is nonetheless required for Mad1 and Mad2 recruitment and therefore for SAC signaling (Althoff et al., 2012; Conde et al., 2013). In accordance, co-depletion of Mps1 with PP1-87B abolished Mad1 kinetochore recruitment and led to a premature anaphase onset, demonstrating that Mps1 is required for the SAC-dependent metaphase delay observed in PP1-87B RNAi (Figure 1A,B). Therefore, we sought to examine Mps1 kinetochore recruitment and activation in S2 cells depleted of PP1-87B. Immunofluorescence analysis showed that depletion of PP1-87B has no significant impact on Mps1 kinetochore localization. Mps1 accumulates at prometaphase kinetochores and its levels decrease significantly as microtubules attach, with a fraction of Mps1 persisting at kinetochores of metaphase chromosomes (Figure 2A\u2013D). This residual pool of Mps1 is retained at bioriented kinetochores until anaphase onset, even after establishment of inter-kinetochore tension, as revealed by live imaging of S2 cells expressing EGFP-Mps1 under control of Mps1 cis-regulatory region (Figure 2\u2014figure supplement 1A,B and Video 6). To evaluate Mps1 activation status we used a phospho-specific antibody that recognizes the conserved activating autophosphorylation (T490Ph) on Mps1 T-loop (Jelluma et al., 2008). Interestingly, we found that depletion of PP1-87B resulted in a substantial increase of Mps1 T-loop autophosphorylation during prometaphase and on metaphases kinetochores stably attached to microtubule bundles (Figure 2A\u2013D, Figure 2\u2014figure supplement 1C,D and Figure 2\u2014figure supplement 2A\u2013F with phospho-antibody characterization described in supplementary information). Moreover, depletion of PP1 noncatalytic subunit Sds22/PPP1R7, which positively regulates the phosphatase activity at kinetochores (Posch et al., 2010; Wurzenberger et al., 2012; Heroes et al., 2013), mimicked PP1-87B RNAi by increasing Mps1 T490 phosphorylation both at unattached and aligned kinetochores (Figure 2\u2014figure supplement 3A\u2013D). Mps1 association with prometaphase kinetochores in human cells is highly transient (Jelluma et al., 2010). Likewise, Drosophila Mps1 exhibits a fast turnover rate at unattached kinetochores that relies in part on its kinase activity, as revealed by FRAP measurements of wild type (WT) and kinase-dead (KD) versions of EGFP-Mps1 expressed in S2 cells (Figure 2E,F). In line with the observed reduction in Mps1 T490 autophosphorylation, both the half-life and stable population of Mps1 increase at metaphase kinetochores (Figure 2E,F). However, in the absence of PP1-87B, Mps1 displays a faster dynamic exchange at aligned kinetochores, as expected from enhanced kinase activity (Figure 2E,F). Collectively, these results demonstrate that PP1-87B activity is required to represses the activating autophosphorylation of Mps1 that remains associated with metaphase kinetochores.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/25366/elife-25366-fig2-v3.jpg)\n\n**Figure 2.:** (A,B) Representative immunofluorescence images (A) and corresponding quantifications (B) of Mps1 T490 phosphorylation (Mps1T490Ph) and Mps1 relative levels at prometaphase kinetochores of control and PP1-87B depleted Drosophila S2 cells. The insets display magnifications of the outlined regions. Mps1T490Ph and Mps1 fluorescence intensities were determined relative to CID signal (N\u00a0\u2265\u00a0252 kinetochores from at least 10 cells for each condition). Scale bar: 5 \u03bcm. (C,D) Representative immunofluorescence images (C) and corresponding quantifications (D) of Mps1 T490 phosphorylation (Mps1T490Ph) and Mps1 relative levels at metaphase kinetochores of control and PP1-87B depleted S2 cells. The insets display magnifications of the outlined regions. Mps1T490Ph and Mps1 fluorescence intensities were determined relative to CID signal (N\u00a0\u2265\u00a0217 kinetochores from at least 15 cells for each condition). Scale bar: 5 \u03bcm. (E,F) FRAP analysis of EGFP-Mps1WT (wild type) and EGFP-Mps1KD (kinase dead) at unattached or metaphase-aligned kinetochores of control and PP1-87B depleted S2 cells. To generate unattached kinetochores, S2 cells were treated with colchicine (30 \u00b5M) for 2 hr prior to FRAP experiments (E) Graph displays recovery-time curves of EGFP-Mps1 fluorescence (lines) and their time point means (dots) after bleaching of individual kinetochores in the indicated conditions. (F) Table showing the recovery half-lives and the % of mobile EGFP-Mps1 population obtained after fitting the average fluorescence intensity at each time point to a single-exponential one-phase association curve (N\u00a0\u2265\u00a09 cells for each condition). Data information: in (B), (D) and (E) data are presented as mean \u00b1 SD. Asterisks indicate that differences between mean ranks are statistically significant, ****p<0.0001 (Mann-Whitney U test). Numerical source data for this figure are provided in Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25366/elife-25366-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Detailed analysis of mitotic progression of Drosophila S2 cells expressing mCherry-\u03b1-Tubulin and EGFP-Mps1. EGFP-Mps1 was expressed under control of Mps1 cis-regulatory region and mitotic progression monitored by time-lapse microscopy. The insets display magnifications of the outlined regions. Time is in min:sec. (B) Quantification of EGFP-Mps1 kinetochores levels from (A). The average fluorescence intensity at kinetochores was corrected for the average EGFP-Mps1 signal in the cytoplasm. Time 0 min corresponds to nuclear envelope breakdown (NEB). Metaphase duration was defined by the length of time between the first still in which all kinetochore pairs were perfectly aligned at the cell equator (Metaphase) and anaphase onset. Dashed lines indicate the time from NEB to metaphase and to anaphase onset. (C,D) Representative immunofluorescence images (C) and corresponding quantifications (D) of Mps1 T490 phosphorylation (Mps1T490Ph) levels at metaphase kinetochores attached to cold-resistant microtubules bundles of control and PP1-87B depleted Drosophila S2 cells. The insets display magnifications of the outlined regions. Mps1T490Ph and Mps1 fluorescence intensities were determined relative to CID signal (N\u00a0\u2265\u00a0270 kinetochores from at least 12 cells for each condition). Scale bar: 5 \u03bcm. Data information: in (B) and (D) data are presented as mean \u00b1 SD. Asterisks indicate that differences between mean ranks are statistically significant, ****p<0.0001 (Mann-Whitney U test).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/25366/elife-25366-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Conservation among Mps1 T-loop residues. Clustal W alignments of T-loop residues of indicated Mps1 orthologues. The conserved Mps1 activating autophosphorylation threonine is highlighted in grey shading. The red numbers note specific residues for human Mps1/TTK (Thr676) and Drosophila Mps1 (Thr490), and P indicates phosphorylation. (B) In vitro autophosphorylation of Drosophila Mps1 detected by western blotting. Recombinant wild type (WT) and kinase dead (KD) versions of recombinant Drosophila Mps1 were incubated with ATP for 30 min and phosphorylation of T490 (Mps1T490Ph) probed with a phospho-specific antibody. The chemiluminescence signal intensity of Mps1T490Ph was determined relative to the signal of total Mps1. (C,D) Representative immunofluorescence images (C) and corresponding quantifications (D) of Mps1 T490 phosphorylation (Mps1T490Ph) at prometaphase kinetochores of third instar larval neuroblasts from w1118 and aldG4422 homozygous (ald/ald). Mps1T490Ph fluorescence intensities were determined relative to Spc105 signal and the mean values for control w1118 neuroblasts were set to 100% (N\u00a0\u2265\u00a0135 kinetochores from at least 12 neuroblasts for each condition from two independent experiments). Scale bar: 5 \u03bcm. (E,F) Representative immunofluorescence images (E) and corresponding quantifications (F) of Mps1 T490 phosphorylation (Mps1T490Ph) at prometaphase kinetochores of third instar larval neuroblasts from aldG4422 homozygous expressing EGFP-Mps1WT (wild type) or EGFP-Mps1KD (kinase dead) under control of Mps1 cis-regulatory elements. The insets display magnifications of the outlined regions. Mps1T490Ph fluorescence intensities were determined relative to Spc105 signal and the mean values for neuroblasts expressing EGFP-Mps1WT were set to 100% (N\u00a0\u2265\u00a087 kinetochores from at least 10 neuroblasts for each condition from two independent experiments). Scale bar: 5 \u03bcm. Data information: in (D) and (F) data are presented as mean \u00b1 SD. Asterisks indicate that differences between mean ranks are statistically significant, ****p<0.0001 (Mann-Whitney U test).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/25366/elife-25366-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A,B) Representative immunofluorescence images (A) and corresponding quantifications (B) of Mps1 T490 phosphorylation (Mps1T490Ph) and Mps1 relative levels at prometaphase kinetochores of control and Sds22 depleted S2 cells. The insets display magnifications of the outlined regions. Mps1T490Ph and Mps1 fluorescence intensities were determined relative to CID signal (N\u00a0\u2265\u00a0177 kinetochores from at least 8 cells for each condition). Scale bar: 5 \u03bcm. (C,D) Representative immunofluorescence images (C) and corresponding quantifications (D) of Mps1 T490 phosphorylation (Mps1T490Ph) and Mps1 relative levels at metaphase kinetochores of control and Sds22 depleted S2 cells. The insets display magnifications of the outlined regions. Mps1T490Ph and Mps1 fluorescence intensities were determined relative to CID signal (N\u00a0\u2265\u00a0186 kinetochores from at least 8 cells for each condition). Scale bar: 5 \u03bcm. Data information: in (B) and (D) data are presented as mean \u00b1 SD. Asterisks indicate that differences between mean ranks are statistically significant, ****p<0.0001 (Mann-Whitney U test).\n\n![Video 6.](https://cdn.elifesciences.org/articles/25366/elife-25366-media6.mp4.jpg)\n\n**Video 6.:** Mitotic progression of S2 cells expressing mCherry-\u03b1-Tubulin (red) and EGFP-Mps1WT (green) monitored by spinning disk confocal microscopy. Each frame represents a maximal intensity projection acquired every 2 min. NEB corresponds to time 0:0. Time is shown minutes.\n\n### PP1-87B/ PP1-\u03b3 dephosphorylates Mps1 T-loop\n\nTo evaluate whether PP1 directly antagonizes Mps1 T-loop activating autophosphorylation, we started by assessing in vitro the capacity of PP1-\u03b3 to dephosphorylate the kinase T-loop. Simultaneous incubation of PP1-\u03b3 with recombinant versions of human (Mps1/TTK) and Drosophila Mps1 orthologues led to a concentration-dependent decrease of T676 (T676Ph) and T490 (T490Ph) autophosphorylation, respectively (Figure 3A,C). Moreover, PP1-\u03b3 was able to dephosphorylate the T-loop of Mps1/TTK that had been previously activated by autophosphorylation (Figure 3B). In contrast, \u03bb-phosphatase failed to antagonize to the same extent the autophosphorylation of human Mps1/TTK T676 and of Drosophila Mps1 T490 (Figure 3C and Figure 3\u2014figure supplement 1), indicating a higher specificity of PP1-\u03b3 towards Mps1 T-loop in vitro.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/25366/elife-25366-fig3-v3.jpg)\n\n**Figure 3.:** (A,B) Western blot analysis of Mps1/TTK T676 autophosphorylation. Recombinant human Mps1 was incubated during 30 min with increasing concentrations of recombinant human PP1-\u03b3 (A) or PP1-\u03b3 (42.7 nM) was added to previously active Mps1 and phosphorylation of Mps1 T676 (Mps1T676Ph) monitored over time (B). (C) Western blot analysis of Drosophila Mps1 T490 autophosphorylation. Recombinant Drosophila Mps1 was incubated during 30 min with 10 nM of recombinant human PP1-\u03b3 or \u03bb-PP and phosphorylation of Mps1 T490 (Mps1T490Ph) monitored. (D) Clustal W alignments of amino acid residues of indicated Mps1 orthologues. Red boxes highlight putative PP1-docking motifs identified in silico by the Eukaryotic Linear Motif (ELM) resource. (E) MBP-PP1-87B pull-downs from total cell lysates of S2 cells expressing EGFP-Mps1WT or EGFP-Mps1K231A/F234A or EGFP-Mps1WT upon depletion of Sds22. Immobilized MBP was used as negative control. Input, beads and flow-through (FT) were probed by western blotting for the indicated proteins. (F) Quantification of Mps1 binding to PP1-87B from the pull-downs in (E). The chemiluminescence signal intensity of EGFP-Mps1 was determined relative to the signal of MBP-PP1-87B beads. The graph represents the quantification of relative levels of EGFP-Mps1 in MBP-PP1-87B pull-downs from at least two independent experiments. The values obtained for EGFP-Mps1WT from control cells were set to 1. (G) MBP-87B pull-downs of purified recombinant Mps1 N-terminus region (104\u2013330 amino acids) harboring the wild-type (6xHis-N-Mps1WT) or mutated PP1-docking motif (6xHis-N-Mps1K231A/F234A). Immobilized MBP was used as negative control. Input, beads and flow-through (FT) were probed by western blotting for the indicated proteins. (H) Western blot analysis of EGFP-Mps1WT and EGFP-Mps1K231A/F234A T-loop dephosphorylation by PP1-\u03b3. EGFP-Mps1WT and EGFP-Mps1K231A/F234A were immunoprecipitated from mitotic S2 lysates and incubated with ATP for 30 min to allow Mps1 T-loop autophosphorylation. Increasing concentrations of recombinant GST-PP1-\u03b3 were subsequently added to the reaction mixture and Mps1 T490 phosphorylation (Mps1T490Ph) assessed after 30 min. Immunoprecipitates were probed by immunoblotting (IB) for the indicated proteins. (I) Quantification of Mps1T490Ph levels from the dephosphorylation assay in (H). The chemiluminescence signal intensity of Mps1T490Ph was determined relative to the corresponding signal of EGFP-Mps1 immunoprecipitates. The values obtained for each control reaction were set to 100%. The graph represents the quantification of Mps1T490Ph relative levels from two independent experiments. (J\u2013L) Representative immunofluorescence images (J,K) and corresponding quantifications (L) of Mps1 T490 phosphorylation (Mps1T490Ph) at kinetochores of unaligned (J) and aligned (K) chromosomes from S2 cells expressing EGFP-Mps1WT or EGFP-Mps1K231A/F234A and from PP1-87B depleted S2 cells expressing EGFP-Mps1WT. EGFP-Mps1 transgenes were expressed under the control of Mps1 cis-regulatory region (Althoff et al., 2012). Mps1T490Ph fluorescence intensities were determined relative to EGFP-Mps1 signal (N\u00a0\u2265\u00a0150 unaligned kinetochores from at least 8 cells for each condition and N\u00a0\u2265\u00a0111 aligned kinetochores from at least 7 cells for each condition). Scale bar: 5 \u03bcm. Data information: in (F), (I) and (L) data are presented as mean \u00b1 SD. Asterisks indicate that differences between mean ranks are statistically significant, ****p<0.0001 (Kruskal-Wallis, Dunn\u2019s multiple comparison test). Numerical source data for this figure are provided in Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25366/elife-25366-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A,B) Western blot analysis of Mps1T676 autophosphorylation. Recombinant human Mps1 was incubated during 30 min with increasing concentrations of recombinant human \u03bb-phosphatase (\u03bbPP) (A) or \u03bb-PP (42.7 nM) was added to previously active Mps1 and phosphorylation of Mps1 T676 (Mps1T676Ph) monitored over time (B).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/25366/elife-25366-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Western blot of analysis of BubR1 depletion and of EGFP-Mps1WT and EGFP-Mps1K231A/F234A expression in Drosophila S2 cells used in the studies described in Figure 3J\u2013L. \u03b1-Tubulin was used as loading control. Expression of EGFP-Mps1 transgenes was under control of Mps1 cis-regulatory region.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/25366/elife-25366-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A,B) FRAP analysis of EGFP-Mps1WT and EGFP-Mps1K231A/F234A at prometaphase and metaphase kinetochores. (A) Graph displays recovery-time curves of EGFP-Mps1 fluorescence (lines) and their time point means (dots) after bleaching of individual kinetochores in the indicated conditions. (B) Table showing the recovery half-lives and the % of mobile EGFP-Mps1 populations obtained after fitting the average fluorescence intensity at each time point to a single-exponential one-phase association curve (N\u00a0\u2265\u00a010 cells for each condition).\n\nWe then sought to examine whether PP1 directly dephosphorylates Mps1 T-loop in a cellular context and determine its implications for SAC silencing. Because PP1 has numerous mitotic substrates acting on a multitude of pathways, its depletion results in pleiotropic phenotypes that preclude a clear and direct analysis of individual events. To circumvent this, we devised a strategy to specifically prevent Mps1 dephosphorylation without impacting the remaining PP1-87B cellular activity. The association of PP1 with the majority of its interactors is mediated by short motifs that bind to the phosphatase hydrophobic groove (Egloff et al., 1997; Wakula et al., 2003). Drosophila Mps1 N-terminus contains a clear match for a PP1-docking motif of the [R/K]VxF \u2013 type (Figure 3D). To assess the relevance of Mps1 KVLF231-234 for the interaction with PP1-87B, we converted K231 and F234 to alanine and expressed both the wild type (EGFP-Mps1WT) and mutant versions (EGFP-Mps1K231A/F234A) of Mps1 in S2 cells. The interaction between Mps1 and PP1-87B was confirmed in pull-down assays in which EGFP-Mps1WT from S2 cell lysates bound efficiently to recombinant MBP-PP1-87B but not to the MBP used as negative control (Figure 3E). Conversely, mutating Mps1 KVLF231-234 to AVLA231-234 markedly decreased the ability of EGFP-Mps1 to interact with MBP-PP1-87B, hence validating KVLF as a PP1-binding motif (Figure 3E,F). To demonstrate that PP1-87B directly interacts with Mps1 via the KVLF motif, we performed pull-down assays with MBP-PP1-87B and bacterially purified fragments of Mps1 N-terminus (104\u2013330 amino acids) harboring the wild-type (6xHis-N-Mps1WT) or mutated PP1-docking motif (6xHis-N-Mps1K231A/F234A). While 6xHis-N-Mps1WT bound efficiently to MBP-PP1-87B, the fragment 6xHis-N-Mps1K231A/F234A did not (Figure 3G), thus confirming that the KVLF motif mediates a direct interaction between Mps1 N-terminus and PP1-87B. In accordance, in vitro assays with EGFP-Mps1 immunoprecipitated from mitotic S2 cell lysates showed that recombinant PP1-\u03b3 antagonized with discernible less efficiency the T-loop autophosphorylation of EGFP-Mps1K231A/F234A in comparison to EGFP-Mps1WT (Figure 3H,I). Collectively, these results indicate that Mps1 T-loop is a direct substrate of PP1-87B/PP1-\u03b3. However, we found that MBP-PP1-87B failed to pull-down EGFP-Mps1WT from S2 cells depleted of Sds22/PPP1R7 (Figure 3E,F), which suggests that in addition to the KVLF motif on the kinase N-terminus, the Sds22/PPP1R7 regulatory subunit is also required for competent binding of full-length Mps1 to PP1-87B in cell extracts.\n\nTo analyse the impact of diminished PP1-87B binding on cellular Mps1 activation and SAC signaling, we monitored Mps1 T-loop phosphorylation and mitotic progression in S2 cells expressing EGFP-Mps1WT and EGFP-Mps1K231A/F234A under control of Mps1 cis-regulatory region (Figure 3\u2014figure supplement 2). Phosphorylation of T490 at unaligned kinetochores was significantly higher for EGFP-Mps1K231A/F234A relative to EGFP-Mps1WT (Figure 3J,L). A similar increment in the T-loop activation status was observed for EGFP-Mps1WT of prometaphase cells depleted of PP1-87B (Figure 3J,L). Notably, the mutation KVLF231-234 prevented the dephosphorylation of Mps1 T-loop also at bioriented kinetochores, mimicking the result obtained in metaphase cells expressing EGFP-Mps1WT in the absence of PP1-87B (Figure 3K,L). As expected from increased T490 autophosphorylation, EGFP-Mps1K231A/F234A exhibits faster dynamics than EGFP-Mps1WT at aligned kinetochores (Figure 3\u2014figure supplement 3A,B). From these results, we conclude that PP1-87B directly controls Mps1 T-loop dephosphorylation at kinetochores during prometaphase and metaphase.\n\n### PP1-mediated dephosphorylation of Mps1 T-loop inactivates the kinase and promotes SAC silencing\n\nLive-cell imaging revealed that expression of EGFP-Mps1K231A/F234A caused a pronounced metaphase delay when compared to EGFP-Mps1WT expressing cells (Figure 4A,B; Videos 7 and 8). Depletion of BubR1 prevented this delay showing it is SAC-dependent (Figure 4A,B and Video 9). However, the delay is not caused by unstable kinetochore-microtubule interactions, since the inter-kinetochore distances monitored throughout metaphase and the attachments of bioriented kinetochores to cold-resistant microtubule bundles in EGFP-Mps1K231A/F234A cells were similar to those observed in metaphase cells expressing the wild-type kinase (Figure 4C,D and Figure 4\u2014figure supplement 1A). Nevertheless, cells expressing EGFP-Mps1K231A/F234A retained higher levels of Mad1 at aligned kinetochores (Figure 4E,F and Figure 4\u2014figure supplement 1B,C), which is consistent with lasting Mps1 activation and SAC signaling in metaphase. These results strongly suggest that impairing PP1-mediated dephosphorylation of the residual pool of Mps1 that remains associated with kinetochores of bioriented chromosomes is sufficient to delay SAC silencing and prevent anaphase onset despite normal chromosome attachment and high inter-kinetochore tension.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/25366/elife-25366-fig4-v3.jpg)\n\n**Figure 4.:** (A,B) Mitotic progression (A) and prometaphase and metaphase duration (B) of S2 cells expressing mCherry-\u03b1-Tubulin and EGFP-Mps1WT, EGFP-Mps1K231A/F234A or EGFP-Mps1K231A/F234A in a BubR1-depleted background. EGFP-Mps1 transgenes were expressed under control of Mps1 cis-regulatory region and mitotic progression monitored by time-lapse microscopy. The metaphase duration was defined by the length of time measured between the first still in which all kinetochore pairs were perfectly aligned at the metaphase plate (Metaphase) and anaphase onset (AO) (N\u00a0\u2265\u00a014 cells for each condition, from at least two independent experiments). (C) Quantification of inter-kinetochore distances throughout mitosis in S2 cells expressing EGFP-Mps1WT and EGFP-Mps1K231A/F234A. Inter-kinetochore distances were measured as the distance between centroids of identified EGFP-Mps1 pairs at selected prometaphase and metaphase time frames. Time 0 min corresponds to the first metaphase frame. (D) Representative immunofluorescence images of cold-stable kinetochore fibers in S2 cells expressing EGFP-Mps1WT, EGFP-Mps1K231A/F234A or EGFP-Mps1WT upon Ndc80 depletion. CID immunolocalization was used as kinetochore reference. The insets display magnifications of the outlined regions. Scale bar: 5 \u03bcm. (E,F) Representative immunofluorescence images (E) and corresponding quantifications (F) of Mad1 levels at metaphase kinetochores of S2 cells expressing EGFP-Mps1WT or EGFP-Mps1K231A/F234A. Mad1 fluorescence intensities were determined relative to EGFP-Mps1 signal (N\u00a0\u2265\u00a0162 kinetochores from at least 10 cells for each condition). Scale bar: 5 \u03bcm. (G\u2013I) Mitotic index (G), representative immunofluorescence images (H) and quantification of Mps1T490Ph and Mad1 levels at unattached kinetochores (I) of colchicine treated S2 cells expressing EGFP-Mps1WT or EGFP-Mps1K231A/F234A in the presence of Aurora B inhibitor, binucleine 2 (Bin2) for 2 hr. Mitotic index in (G) was determined through p-H3 staining of cultured cells incubated in the absence or presence of colchicine (30 \u00b5M) for 12 hr. Increasing concentrations of Bin2 were added to cultures 10 hr after colchicine and mitotic index determined 2 hr later. In (H and I) Mps1T490Ph and Mad1 fluorescence intensities were determined relative to EGFP-Mps1 signal in cells treated with Bin2 (20 \u00b5M) and colchicine as in (G). Proteasome inhibitor MG132 (20 \u00b5M) was added to cultured cells 1 hr prior to Bin2 incubation to prevent mitotic exit (N\u00a0\u2265\u00a0185 kinetochores from at least 9 cells for each condition). Scale bar: 5 \u03bcm. Data information: in (B), (C), (F), (G) and (I) data are presented as mean \u00b1 SD. Asterisks indicate that differences between mean ranks are statistically significant, **p<0.05, ****p<0.0001 (Mann-Whitney U test). Numerical source data for this figure are provided in Figure 4\u2014source data 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25366/elife-25366-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Quantification of cold-stable kinetochore fibers in S2 cells expressing EGFP-Mps1WT, EGFP-Mps1K231A/F234A and EGFP-Mps1WT upon Ndc80 depletion. The graph represents the % of kinetochores attached to cold-stable microtubules per cell (N\u00a0\u2265\u00a09 cells for each condition). (B,C) Quantifications of EGFP-Mps1WT, EGFP-Mps1K231A/F234A (B) and of Mad1 (C) levels at metaphase kinetochores of S2 cells expressing EGFP-Mps1WT or EGFP-Mps1K231A/F234A. EGFP-Mps1 and Mad1 fluorescence intensities were determined relative to CID signal (N\u00a0\u2265\u00a0162 kinetochores from at least 10 cells for each condition). Scale bar: 5 \u03bcm. Data information: in (A\u2013C) data are presented as mean \u00b1 SD. Asterisks indicate that differences between mean ranks are statistically significant, ****p<0.0001 (Mann-Whitney U test).\n\n![Video 7.](https://cdn.elifesciences.org/articles/25366/elife-25366-media7.mp4.jpg)\n\n**Video 7.:** Mitotic progression of S2 cells expressing mCherry-\u03b1-Tubulin (red) and EGFP-Mps1WT (green) monitored by spinning disk confocal microscopy. Each frame represents a maximal intensity projection acquired every 7 min. NEB corresponds to time 0:0. Time is shown minutes.\n\n![Video 8.](https://cdn.elifesciences.org/articles/25366/elife-25366-media8.mp4.jpg)\n\n**Video 8.:** Mitotic progression of S2 cells expressing mCherry-\u03b1-Tubulin (red) and EGFP-Mps1K231A/F234A (green) monitored by spinning disk confocal microscopy. Video illustrates the prolonged metaphase delay. Each frame represents a maximal intensity projection acquired every 5 min. NEB corresponds to time 0:0. Time is shown minutes.\n\n![Video 9.](https://cdn.elifesciences.org/articles/25366/elife-25366-media9.mp4.jpg)\n\n**Video 9.:** Mitotic progression of S2 cells depleted of BubR1 and expressing mCherry-\u03b1-Tubulin (red) and EGFP-Mps1 K231A/F234A (green) monitored by spinning disk confocal microscopy. Video illustrates that the prolonged metaphase duration caused by the expression of EGFP-Mps1K231A/F234A is SAC-dependent. Each frame represents a maximal intensity projection acquired every 4 min. NEB corresponds to time 0:0. Time is shown minutes.\n\nTo further confirm the increment in Mps1 activity in EGFP-Mps1K231A/F234A and its impact on SAC signaling, we treated cells with colchicine to generate unattached kinetochores and monitored their capacity to arrest in mitosis. As expected for SAC competent cells, this led to an evident increase in the mitotic index of both EGFP-Mps1WT and EGFP-Mps1K231A/F234A expressing cells (Figure 4G). Consistent with the role of Aurora B in potentiating Mps1 activation and SAC signaling, inhibition of the former with increasing concentrations of Binucleine 2 (Smurnyy et al., 2010) weakened the SAC in EGFP-Mps1WT cells, as revealed by the gradual reduction in the mitotic index of colchicine incubated cultures (Figure 4G). In accordance, Aurora B inhibition negatively affected Mps1 T-loop autophosphorylation and Mad1 accumulation at unattached kinetochores. Strikingly, expression of EGFP-Mps1K231A/F234A partially rescued Mps1 T490 phosphorylation, Mad1 kinetochore recruitment and consistently attenuated the decline of SAC function following Aurora B inhibition (Figure 4G\u2013I). Collectively, these results demonstrate that compromising Mps1 T-loop dephosphorylation is sufficient to delay SAC silencing and mitotic exit. Thus, we conclude that PP1-mediated dephosphorylation of Mps1 T-loop is required for efficient Mps1 inactivation and consequently for prompt SAC silencing.\n\n### Preventing PP1-mediated inactivation of cytosolic Mps1 delays mitotic exit\n\nMps1 T-loop activation is first detected in the nucleoplasm and on pre-kinetochores during prophase (Figure 5A). Interestingly, kinetochore-null S2 cells engendered through CENP-C knockdown retain high levels of nucleoplasmic Mps1 T490 phosphorylation (Figure 5A,B), indicating that Mps1 activation at mitotic entry can occur through kinetochore-independent mechanisms. Since previous studies have shown that cytosolic Mps1 also contributes for SAC function (Maciejowski et al., 2010; Maldonado and Kapoor, 2011; Rodriguez-Bravo et al., 2014), we reasoned that the activation status of soluble Mps1 must be tightly controlled during mitosis to allow timely anaphase onset. This prompted us to examine whether PP1-87B also represses cytoplasmic Mps1 activation and whether this is relevant for SAC signaling. To assess the impact of PP1-mediated dephosphorylation specifically on cytosolic Mps1 and completely avert contributions from kinetochore-generated MCC, we monitored mitotic progression in CENP-C depleted cells (Figure 5C; Figure 5\u2014figure supplement 1 and Videos 10\u201313). Live-cell imaging revealed that in the absence of kinetochores, cells expressing EGFP-Mps1WT rapidly progressed through mitosis, whereas expression of EGFP-Mps1K231A/F234A markedly delayed anaphase onset (Figure 5C,D). Importantly, preventing MCC assembly through BubR1 co-depletion or expressing Mps1K231A/F234A harboring unphosphorylatable T490 (EGFP-Mps1K231A/F234A/T490A), failed to cause an obvious increase in the mitotic timing indicating that the delay in mitosis observed in kinetochore-null Mps1K231A/F234A cells is SAC-dependent and requires Mps1 activating T-loop autophosphorylation (Figure 5C,D). These results show that impairing T-loop dephosphorylation of cytosolic Mps1 prolongs mitosis in a SAC-dependent manner even in the absence of a kinetochore-generated \u2018wait anaphase\u2019 signal. Therefore, timely transition to anaphase requires that SAC extinction at stably attached kinetochores coincides with the inactivation of cytosolic Mps1. These results allow us to conclude that PP1-mediated dephosphorylation of non-kinetochore Mps1 is a critical mechanism to efficiently silence the SAC and ensure prompt anaphase onset.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/25366/elife-25366-fig5-v3.jpg)\n\n**Figure 5.:** (A,B) Representative immunofluorescence images (A) and corresponding quantification (B) of Mps1T490Ph levels in the nucleoplasm of control and CENP-C depleted cells in prophase. Mean values for control cells were set to 100% (N\u00a0\u2265\u00a040 cells for each condition from four independent experiments). Scale bar: 5 \u03bcm. (C,D) mitotic progression (C) and mitotic timing (D) of CENP-C depleted S2 cells expressing mCherry-Tubulin and EGFP-Mps1WT, EGFP-Mps1K231A/F234A or EGFP-Mps1K231A/F234A/T490A under control of Mps1 cis-regulatory region. Mitotic progression was monitored through time-lapse microscopy and the mitotic timing was defined by the length of time between nuclear envelope breakdown (NEB) and anaphase onset (AO) (N\u00a0\u2265\u00a011 cells for each condition from at least two independent experiments). Scale bar: 5 \u03bcm. Data information: in (B) and (D) data are presented as mean \u00b1 SD. Asterisks indicate that differences between mean ranks are statistically significant, *p<0.05 (Mann-Whitney U test). Numerical source data for this figure are provided in Figure 5\u2014source data 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25366/elife-25366-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Western blot of analysis of CENP-C and BubR1 depletion and of EGFP-Mps1WT, EGFP-Mps1K231A/F234A and EGFP-Mps1K231A/F234A/T490A expression in S2 cells used in the studies described in Figure 5C. \u03b1-Tubulin was used as loading control. Expression of EGFP-Mps1 transgenes was under control of Mps1 cis-regulatory region.\n\n![Video 10.](https://cdn.elifesciences.org/articles/25366/elife-25366-media10.mp4.jpg)\n\n**Video 10.:** S2 cells depleted of CENP-C expressing mCherry-\u03b1-Tubulin (red) and EGFP-Mps1WT (green) monitored by spinning disk confocal microscopy. Each frame represents a maximal intensity projection acquired every 4 min. NEB corresponds to time 0:0. Time is shown minutes.\n\n![Video 11.](https://cdn.elifesciences.org/articles/25366/elife-25366-media11.mp4.jpg)\n\n**Video 11.:** S2 cells depleted of CENP-C expressing mCherry-\u03b1-Tubulin (red) and EGFP-Mps1K231A/F234A (green) monitored by spinning disk confocal microscopy. Video illustrates that impairing the interaction between Mps1 and PP1-87B delays mitotic exit in kinetochore-null cells. Each frame represents a maximal intensity projection acquired every 4 min. NEB corresponds to time 0:0. Time is shown minutes.\n\n![Video 12.](https://cdn.elifesciences.org/articles/25366/elife-25366-media12.mp4.jpg)\n\n**Video 12.:** S2 cells co-depleted of CENP-C and BubR1 expressing mCherry-\u03b1-Tubulin (red) and EGFP-Mps1K231A/F234A (green) monitored by spinning disk confocal microscopy. Video illustrates that the depletion of BubR1 from kinetochore-null cells expressing EGFP-Mps1K231A/F234A accelerates anaphase onset. Each frame represents a maximal intensity projection acquired every 4 min. NEB corresponds to time 0:0. Time is shown minutes.\n\n![Video 13.](https://cdn.elifesciences.org/articles/25366/elife-25366-media13.mp4.jpg)\n\n**Video 13.:** S2 cells depleted of CENP-C expressing mCherry-\u03b1-Tubulin (red) and EGFP-Mps1K231A/F234A/T490A (green) monitored by spinning disk confocal microscopy. Video illustrates that the extended mitotic timing in kinetochore-null cells expressing EGFP-Mps1K231A/F234A requires Mps1 T-loop phosphorylation. Each frame represents a maximal intensity projection acquired every 4 min. NEB corresponds to time 0:0. Time is shown minutes.\n\n### Regulation of PP1 activity during mitosis\n\nThe activity of PP1 must be tightly regulated to allow robust Mps1 activation during early mitosis and to ensure its inactivation and SAC silencing when all kinetochores become stably attached to spindle microtubules. Immunofluorescence analysis of S2 cells revealed that PP1-87B preferentially accumulates on kinetochores when chromosomes are bioriented at the metaphase plate (Figure 6A,B). Kinetochore recruitment of PP1 in human cells is mediated in part by SILK and RVSF motifs present on KNL1 N-terminus. Aurora B-dependent phosphorylation of both motifs prevents the binding of PP1 during prometaphase (Liu et al., 2010). As Drosophila Spc105/KNL1 also contains a RVSF motif in its N-terminus, we examined whether a similar mechanism operates in S2 cells to control PP1-87B kinetochore localization. Cultured cells were incubated with Aurora B inhibitor Binucleine two in the presence of colchicine and of the proteasome inhibitor MG132, which respectively generate unattached kinetochores and prevent mitotic exit resulting from SAC abrogation. Inhibition of Aurora B led to an increase of PP1-87B levels at unattached kinetochores (Figure 6C,D), suggesting that similarly to the described for human cells, Aurora B activity limits the association of PP1-87B with unattached/unaligned kinetochores in flies. In addition to the control exerted by Aurora B on PP1 kinetochore localization, CDK1 phosphorylation of PP1 C-terminus was shown to repress the phosphatase activity during early mitosis (Dohadwala et al., 1994; Yamano et al., 1994; Wu et al., 2009; Grallert et al., 2015). In accordance, inhibition of CDK1 with RO-3306 in colchicine-treated S2 cells led to a reduction of Mps1 T490 autophosphorylation at unattached kinetochores, which was partially restored upon depletion of PP1-87B (Figure 6E,F). Thus, although CDK1 might also directly potentiate Mps1 activity (Morin et al., 2012), these results suggest that CDK1-dependent inhibition of PP1-87B contributes to maintain Mps1 active in prometaphase S2 cells. Declining Cyclin B levels were proposed to relieve PP1 inhibition, thereby ensuring high phosphatase activity in late mitosis (Dohadwala et al., 1994; Wu et al., 2009; Grallert et al., 2015). We monitored by live-cell imaging the levels of EGFP-Cyclin B throughout mitosis in S2 cells and as expected found that it starts to be rapidly degraded upon biorientation of all chromosomes (Figure 6G,H and Video 14). Interestingly, we could further observe that proteolysis of Cyclin B also occurs during prometaphase but at a significant lower rate (Figure 6G,H and Video 14). It was recently proposed that a small reduction in CDK1/Cyclin B activity is sufficient to allow PP1 auto-reactivation, which consequently triggers a feedback loop that ensures robust phosphatase activity (Grallert et al., 2015; Rogers et al., 2016). Thus, the modest decline in Cyclin B that takes place before metaphase might be critical to permit PP1-mediated inactivation of Mps1 and SAC silencing.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/25366/elife-25366-fig6-v3.jpg)\n\n**Figure 6.:** (A,B) Representative immunofluorescence images (A) and corresponding quantifications (B) of PP1-87B levels at kinetochores of unaligned and aligned chromosomes in S2 cells. PP1-87B fluorescence intensities were determined relative to Spc105 signal (N\u00a0=\u00a0241 unaligned kinetochores and N\u00a0=\u00a0110 aligned kinetochores from at least 6 cells). Scale bar: 5 \u03bcm. (C,D) Representative immunofluorescence images (C) and corresponding quantifications (D) of PP1-87B levels at unattached kinetochores of control and Binucleine 2-treated S2 cells. Cells were treated with MG132 (20 \u00b5M) for 1 hr followed by a 2 hr incubation with colchicine (30 \u00b5M) to generate unattached kinetochores. Binucleine 2 (20 \u00b5M) was added to cultures 30 min prior to colchicine treatment. PP1-87B fluorescence intensities were determined relative to Spc105 signal (N\u00a0\u2265\u00a0282 kinetochores from at least 12 cells for each condition). Scale bar: 5 \u03bcm. (E,F) Representative immunofluorescence images (E) and corresponding quantifications (F) of Mps1T490Ph levels at unattached kinetochores of control and PP1-87B depleted cells in the presence of CDK1 inhibitor (RO-3306, 10 \u00b5M) for 1 hr. To generate unattached kinetochores cultured cells were incubated with colchicine (30 \u00b5M) for 2 hr. The insets display magnifications of the outlined regions. Mps1T490Ph fluorescence intensities were determined relative to CID signal (N\u00a0\u2265\u00a0236 kinetochores from at least 10 cells for each condition). Scale bar: 5 \u03bcm. (G,H) Representative mitotic progression (G) and Cyclin B degradation profile (H) of S2 cells during an unperturbed mitosis. Mitotic progression of S2 cells expressing EGFP-Cyclin B was monitored by time-lapse microscopy and the integrated intensity of EGFP-Cyclin B fluorescence measured in all the frames. The values for EGFP-Cyclin B fluorescence at nuclear envelope breakdown (NEB) (time 0 min) were set to 100%. Dashed blue lines indicate the mean time from NEB to metaphase and to anaphase onset (AO) (N\u00a0=\u00a05 cells from a single experiment). Data information: in (B), (D), (F) and (H) data are presented as mean \u00b1 SD. Asterisks indicate that differences between mean ranks are statistically significant, ****p<0.0001 (Mann-Whitney U test). Numerical source data for this figure are provided in Figure 6\u2014source data 1.\n\n![Video 14.](https://cdn.elifesciences.org/articles/25366/elife-25366-media14.mp4.jpg)\n\n**Video 14.:** S2 cells expressing mCherry-\u03b1-Tubulin (red) and EGFP-Cyclin B (green) monitored by spinning disk confocal microscopy. Each frame represents a maximal intensity projection acquired every 30 s. NEB corresponds to time 0:0. Time is shown minutes.\n\n## Discussion\n\nHow the SAC is rapidly extinguished allowing anaphase to proceed when the last chromosome becomes bioriented has remained a key unanswered question. The present study shows that efficient SAC silencing requires the inactivation of its most upstream regulator, Mps1 kinase. We demonstrate in vitro and in vivo that PP1 directly antagonizes Mps1 T-loop autophosphorylation rendering the kinase inactive at metaphase kinetochores and in the cytoplasm. In Drosophila this relies on a [R/K]VxF motif that is present on Mps1 N-terminus and requires the PP1 regulatory subunit Sds22. Importantly, Mps1 orthologues encompass several other PP1-binding motifs within different regions of the kinase, such as SILK signatures in the C-terminus of human and mouse Mps1. This suggests that despite the diversification in type and localization of PP1-docking motifs among Mps1 orthologues, the dephosphorylation of the kinase T-loop by PP1 is likely to be conserved.\n\nThe calponin homology (CH) domains of Ndc80 and Nuf2 directly mediate Mps1 accumulation at unattached kinetochores, which is proposed to promote the kinase activation required for efficient SAC signaling (Kemmler et al., 2009; Santaguida et al., 2011; Saurin et al., 2011; Nijenhuis et al., 2013). Because microtubules bind to the same surface of the CH domains that interacts with Mps1, microtubules forming end-on attachments outcompete Mps1 for Ndc80 binding (Hiruma et al., 2015; Ji et al., 2015). This competition mechanism is consistent with the reduction of Mps1 from metaphase kinetochores, but is however insufficient to dislodge all Mps1 molecules. As in human and budding yeast (V\u00e1zquez-Novelle and Petronczki, 2010; Aravamudhan et al., 2015), Drosophila kinetochores retain a fraction of Mps1 even after the formation of end-on attachments that exert proper kinetochore tension. Intriguingly, although low levels of Mps1 were shown to be sufficient to delay anaphase onset (Herriott et al., 2012; Foijer et al., 2014), the residual pool of Mps1 at metaphase kinetochores does not prevent SAC silencing. Work in budding yeast proposes that this is due to changes on kinetochore architecture imposed by end-on attachments. Stably bound microtubules exert mechanical tension on kinetochores, which increases the distance between the CH domains of the Ndc80 complex and the MELT motifs on Spc105/KNL1, thus preventing phosphorylation of the latter by Mps1 and allowing SAC silencing (Aravamudhan et al., 2015). However, since in higher eukaryotes kinetochore-localized Mps1 dynamically exchanges with the cytoplasmic pool (Jelluma et al., 2010), free diffusion of Mps1 is expected to overcome the physical separation between the kinase receptor and its substrates at metaphase kinetochores. Moreover, the recruitment of Mad1-Mad2 to budding yeast kinetochores occurs exclusively through a linear pathway in which Mps1-phosphorylated MELTs function as docking sites for the binding of Bub1-Bub3 complexes, which in turn act as a loading platform for Mad1-Mad2 localization (London and Biggins, 2014). In Drosophila and in human cells however, an Spc105/KNL1- and Bub1-independent pathway also recruits Mad1-Mad2 to unattached kinetochores (Schittenhelm et al., 2009; Caldas et al., 2015; Sili\u00f3 et al., 2015). This relies on the localization of the RZZ complex at kinetochores, which is itself regulated by Mps1 activity (Santaguida et al., 2010) and is sufficient to activate the SAC in response to unattached kinetochores, even in the absence of KNL1 (Schittenhelm et al., 2009; Sili\u00f3 et al., 2015). Hence, in addition to the physical separation between the Ndc80 complex and Spc105/KNL1 phosphodomain, other mechanisms must operate in metazoans to limit the activity of kinetochore-associated Mps1 and extinguish SAC signaling in metaphase. Here we demonstrate that this is accomplished by PP1-mediated dephosphorylation of Mps1 T-loop. We found that depletion of PP1-87B or preventing its interaction with Mps1 increases the activation status of the residual fraction of Mps1 that persists at kinetochores of bioriented chromosomes. This correlates with higher levels of Mad1 retained on kinetochores and a prolonged metaphase delay that is caused by chronic SAC engagement despite stable end-on attachments and establishment of kinetochore tension. Thus, we reason that intra-kinetochore tension or alterations on kinetochore architecture, which also correlate with SAC satisfaction in Drosophila and human cells (Maresca and Salmon, 2009; Uchida et al., 2009), are important not only to disrupt the interaction of Mps1 with its kinetochore substrates but also to increase the recruitment of PP1 to metaphase chromosomes. Similarly to human cells (Liu et al., 2010), kinetochore levels of PP1-87B in Drosophila S2 cells are significantly higher at bioriented chromosomes. The association of PP1-\u03b3 with human kinetochores is directly mediated by SILK and [R/K]VxF motifs on Spc105/KNL1 N-terminus and by the Spindle- and Kinetochore-Associated (Ska) complex (Sivakumar et al., 2016). At tensionless kinetochores, the recruitment of PP1-\u03b3 is limited due to phosphorylation of Spc105/KNL1 N-terminus and of the Ska complex by Aurora B, which respectively inhibits the binding of PP1-\u03b3 to Spc105/KNL1 and Ska kinetochore localization (Liu et al., 2010; Chan et al., 2012). As microtubules bind to kinetochores and tension is established, the spatial repositioning of the KMN network decreases Aurora-B mediated phosphorylation of the Ska complex and of Spc105/KNL1 N-terminus (Welburn et al., 2010), hence allowing bulk accumulation of PP1-\u03b3, which then catalyses the dephosphorylation of Mps1 T-loop. This provides a mechanism to ensure the complete inactivation of any vestigial Mps1 residing at microtubule-attached kinetochores during late stages of mitosis.\n\nIn addition to the MCC generated at unattached kinetochores in prometaphase, APC/C inhibitory complexes are also assembled at the nuclear pore and in the cytoplasm during late interphase and prophase (Sudakin et al., 2001; Lopes et al., 2005; Lince-Faria et al., 2009; Maciejowski et al., 2010; Schweizer et al., 2013; Rodriguez-Bravo et al., 2014). This pre-mitotic MCC defines the minimum length of time a cell will spend in mitosis as it ensures APC/C inhibition until newly assembled kinetochores are able to generate an efficient SAC response. Interestingly, inhibition of Mps1 causes a substantial decrease in pre-mitotic MCC levels and a consequent reduction in Cyclin B levels already in G2 and prophase (Maciejowski et al., 2010; Rodriguez-Bravo et al., 2014). Moreover, a truncated form of Mps1 unable to localize at kinetochores failed to promote the recruitment of Bub1 to unattached kinetochores but was nevertheless sufficient to sustain the assembly of mitotic APC/C inhibitory complexes and delay anaphase onset (Maciejowski et al., 2010). In addition, cytosolic Mps1 activity was shown to be critical to maintain the metaphase arrest caused by Mad1 constitutively tethered to stably attached bioriented kinetochores that were stripped from Mps1 (Maldonado and Kapoor, 2011). These observations indicate that the activity of soluble Mps1 is required to generate the MCC and/or prevent its disassembly during mitosis, further strengthening the idea that removing the kinase from kinetochores is not sufficient for efficient SAC silencing. Therefore, determining how cytosolic Mps1 is inactivated after the SAC signal is extinguished at stably attached kinetochores becomes essential to understand the mechanism that allows timely mitotic exit. Here we show that PP1 directly controls Mps1 activation, not only at kinetochores but also in the cytoplasm. We demonstrate that preventing PP1-mediated dephosphorylation of soluble Mps1 maintains the kinase active in the cytosol and that this is sufficient to significantly delay mitotic exit even in the absence of kinetochore-generated MCC. Although kinetochore recruitment of Mps1 substantially increases the cell capacity to sustain a prolonged mitotic arrest when challenged with spindle poisons (Nijenhuis et al., 2013), during an unperturbed mitosis in which MCC production at kinetochores is minimal (Collin et al., 2013; Dick and Gerlich, 2013), controlled activity of soluble Mps1 is expected to be particularly relevant. We envisage that the inactivation of cytosolic Mps1 is critical to ensure SAC responsiveness at kinetochores during late mitosis so that transition to anaphase occurs without delay after the last unattached kinetochore forms stable attachments.\n\nCDK1 phosphorylation of PP1 C-terminus represses the phosphatase activity during early mitosis (Dohadwala et al., 1994; Yamano et al., 1994; Wu et al., 2009; Grallert et al., 2015). Our data suggest that CDK1-dependent inhibition of PP1-87B contributes to maintain Mps1 active in prometaphase S2 cells. Declining Cyclin B levels were shown to relieve PP1 inhibition (Dohadwala et al., 1994; Wu et al., 2009; Grallert et al., 2015). However, several lines of evidence indicate that the SAC is switched off under condition of high CDK1/Cyclin B activity (Mirchenko and Uhlmann, 2010; Oliveira et al., 2010; Kamenz and Hauf, 2014; Rattani et al., 2014; V\u00e1zquez-Novelle et al., 2014), hence challenging the impact that CDK1/Cyclin B-mediated regulation of PP1 might have on SAC silencing. Interestingly, recent mathematical modelling support that small decreases in CDK1/Cyclin B activity are sufficient to initiate PP1 re-activation of and trigger a positive feedback loop that ensures robust phosphatase activity (Rogers et al., 2016). Therefore, slow Cyclin B proteolysis occurring before metaphase in S2 cells might be sufficient to allow PP1-mediated inactivation of Mps1 and SAC silencing when biorientation of all chromosomes is achieved. Another possibility is that global repression of PP1 during early mitosis is ensured by CDK1/Cyclin A. Cyclin A is progressively degraded during prometaphase and its abundance governs the overall stability of kinetochore-microtubule attachments, which increases in metaphase when cyclin A levels fall below a critical threshold (Kabeche and Compton, 2013). It would be interesting to investigate whether decreased CDK1/Cyclin A coordinates this switch in attachment stability at the prometaphase to metaphase transition with the re-activation of PP1 and consequently with SAC silencing. This could explain how PP1 switches off the SAC despite elevated Cyclin B levels in early metaphase.\n\nTaking our results together with previously reported work (Dohadwala et al., 1994; Yamano et al., 1994; Liu et al., 2010; Mochida and Hunt, 2012; Grallert et al., 2015; Qian et al., 2015; Rogers et al., 2016), we propose a model that controls Mps1 activation in a timely manner and perfectly coordinated with mitotic progression. Elevated CDK1 and Aurora B activities during prometaphase, respectively repress PP1 activity and avert the phosphatase localization at unattached kinetochores. This ensures high levels of active kinetochore- and cytosolic Mps1 and therefore, robust SAC signaling in early mitosis (Figure 7). As kinetochores become stably attached to spindle microtubules, Mps1 levels drastically decrease whereas PP1 accumulation increases. This occurs concomitantly with a drop in Cyclin B (and Cyclin A) that allows prompt PP1-mediated inactivation of Mps1 at kinetochores and in the cytoplasm (Figure 7). We propose that this coincides with the dephosphorylation of Mps1 substrates, with the removal of other SAC proteins and with modifications on kinetochore organization. As Mps1 promotes MCC assembly through multi-target phosphorylations along the SAC signaling cascade, the checkpoint is highly responsive to changes in Mps1 activity (Faesen et al., 2017; Ji et al., 2017). Inactivation of Mps1 by PP1 prevents the kinase from counteracting the dephosphorylation of its substrates, thus avoiding futile cycles and ensuring efficient and rapid SAC silencing. This guarantees a swift anaphase onset following chromosome biorientation.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/25366/elife-25366-fig7-v3.jpg)\n\n**Figure 7.:** Proposed model for regulation of soluble- and kinetochore-Mps1 activation in mitosis. During prometaphase, Aurora B potentiates the recruitment of Mps1 to unattached kinetochores and phosphorylates KNL1/Spc105 to limit PP1 kinetochore association. This allows the accumulation of active Mps1 at unattached kinetochores to instate efficient MCC assembly. In parallel, high levels of active CDK1 repress PP1 activity in the cytoplasm, which prevents the dephosphorylation and consequently inactivation of soluble Mps1. Active Mps1 in the cytoplasm promotes the assembly and/or prevents the disassembly of APC/C inhibitory complexes through mechanisms that are yet to be described. Cytoplasmic-and kinetochore generated MCC orchestrated by Mps1 cooperate to ensure efficient APC/C inhibition during unperturbed early mitosis. End-on attachment of microtubules mediated by the Ndc80 complex and KNL1 prevent the recruitment of Mps1 and exert tension across kinetochores and/or impose alterations on kinetochore architecture. Under these conditions, phosphorylation of KNL1 by Aurora B is minimal, and PP1 becomes enriched at bioriented kinetochores, where it dephosphorylates and inactivates the remaining residual pool of Mps1. Declining levels of active\u00a0CDK1 allow PP1 to auto-activate and repress Mps1 activity in the cytoplasm, hence ensuring efficient SAC silencing and prompt anaphase onset.\n\n## Materials and methods\n\n### S2 cell cultures, RNAi and drug treatments\n\nDrosophila S2 cell cultures (S2-DGRC), RNAi synthesis and RNAi treatments were performed as previously described (Conde et al., 2013). At selected time points, cells were collected and processed for immunofluorescence, time-lapse microscopy or immunoblotting. When required, cells were subjected to several drug treatments before being collected and processed for the desired analysis. In order to promote microtubule depolymerisation, cells were incubated with 30 \u00b5M colchicine (Sigma\u2013Aldrich, St. Louis, MO) for 2\u201312 hr. To inhibit Aurora B activity, selected concentrations of Binucleine 2 (Sigma-Aldrich) were added to cultured cells for 2 hr. To inhibit CDK1/Cyclin B activity, 10 \u00b5M RO-3306 (Sigma-Aldrich) were added to cultured cells for 1 hr. When required the 20 \u00b5M MG132 (Calbiochem, San Diego, CA) was added to cultured cells to inhibit the proteasome. The Drosophila S2-DGRC cell line (stock#6) was acquired from the Drosophila Genomics Resource Center, Indiana University and was not independently authenticated. The cell lines were routinely tested negative for mycoplasma contamination.\n\n### Constructs and S2 cell transfection\n\nThe pCaSpeR4 harboring EGFP-Mps1WT under control of Mps1 cis-regulatory region was a gift from Christian Lehner (Althoff et al., 2012). Constructs EGFP-Mps1K231A/F234A and EGFP-Mps1K231A/F234A/T490A were generated by site-directed mutagenesis with primers harboring the desired mutation. PCR reactions were performed with Phusion polymerase (New England Biolabs,\u00a0Ipswich,\u00a0MA) and pCaSpeR4-EGFP-Mps1WT as template. PCR products were digested with DpnI restriction enzyme (New England Biolabs), used to transform competent bacteria and selected for positives. To overexpress EGFP-Mps1WT and EGFP-Mps1K231A/F234A in S2 cells, Mps1 coding sequence was cloned in frame with N-terminal EGFP under regulation of a metallothionein promoter in the pMT-EGFP-C vector (Invitrogen,\u00a0Carlsbad,\u00a0CA) as previously described (Conde et al., 2013). pMT-EGFP-Mps1K231A/F234A was generated by site-directed mutagenesis with primers harboring the desired mutation. PCR reactions were performed with Phusion polymerase (New England Biolabs) and pMT-EGFP-Mps1WT as template. PCR products were digested with DpnI restriction enzyme (New England Biolabs), used to transform competent bacteria and selected for positives. Mad1-EGFP construct under regulation of Mad1 native promoter cloned in the pMT backbone (Invitrogen) was a gift from Thomas Maresca (University of Massachusetts Amherst). The constructs H2B-GFP, mCherry-\u03b1-Tubulin and EGFP-Cyclin B have been previously described (Conde et al., 2013). Stable cell lines expressing the indicated constructs were obtained by cotransfection with the pCoBlast and selection in medium with 20 \u00b5g/ml blasticidin. Transfections of recombinant plasmids and pCoBlast into S2 cells were performed using Effectene Transfection Reagent (Qiagen), according to the manufacturer\u2019s instructions.\n\n### Recombinant proteins\n\nTo generate pFastBac-MpsWT/KD for expression of Drosophila Mps1WT (Wild type) and Mps1KD (Kinase-dead, D478A) in the baculovirus/Sf21 system, pMT-EGFP-Mps1WT/KD (Conde et al., 2013) and pFastBac HT A were digested with EcoRI and XbaI restriction enzymes (New England Biolabs). A 1414 bp fragment harboring Mps1WT/KD coding region was cloned into the destination vector. The obtained recombinant pFastBac-MpsWT/KD was used to transform DH10EMBacY competent cells in order to generate recombinant bacmid His6-Mps1WT/KD. Positive clones were identified by blue/white screening and baculoviral DNA was isolated with QIAprep Spin Miniprep Kit (QIAGEN,\u00a0Hilden,\u00a0Germany) and used to transfect 106 Sf21 cells in 6-well plate. Forty-eight hours after transfection, the supernatant was collected (V0) and used to infect Sf21cells. Cell cultures in shaker flasks were split every 24 hr until proliferation arrest. Protein expression was monitored by YFP fluorescence and confirmed by SDS-PAGE. Cells were harvested 48 hr post infection and lysed in 50 mM Tris-HCl pH 7.5, 500 mM NaCl, 10 mM Imidazole. Lysates were sonicated and clarified by centrifugation at 4\u00b0C. Recombinant His6-Mps1WT/KD was purified by affinity chromatography in a His-TrapTM-HP nickel-column (Amersham, Little Chalfon, United-Kingdom). The protein was eluted with 250 mM Imidazole and dialysed against 20 mM Hepes pH 7.5, 150 mM NaCl, 10 mM MgCl2, 1 mM DTT. To generate MBP-PP1-87B constructs for expression in bacteria, PCR products harboring PP1-87B coding sequence were cloned into StuI/XbaI sites of pMal-c2 (New England Biolabs) vector. Recombinant constructs were used to transform BL21-star competent cells and protein expression induced with 0.1 mM IPTG at 15\u00b0C, overnight. Lysates were sonicated and clarified by centrifugation at 4\u00b0C. Recombinant MBP-PP1-87B was purified with amylose magnetic beads (New England Biolabs) and eluted with 10 mM Maltose, 200 mM NaCl, 20 mM Tris-HCl pH 7.4, 1 mM EDTA and 1 mM DTT. To generate 6xHis-N-Mps1WT and 6xHis-N-Mps1K231A/F234A constructs for expression in bacteria, PCR products with the coding sequence corresponding to N-terminus 104\u2013330 amino acids from Mps1WT and Mps1K231A/F234A were cloned into KpnI/XhoI sites of pET30a (+) vector (Novagen,\u00a0Darmstadt,\u00a0Germany). Recombinant constructs were used to transform BL21-star competent cells and protein expression induced with 0.05 mM IPTG at 15\u00b0C, overnight. Lysates were sonicated and clarified by centrifugation at 4\u00b0C. Recombinant 6xHis-N-Mps1WT and 6xHis-N-Mps1K231A/F234A were purified with Novex Dynabeads (Invitrogen) and eluted with 50 mM Imidazole, 200 mM NaCl, 20 mM Tris-HCl pH 7.4, 1 mM EDTA and 1 mM DTT. Recombinant human Mps1/TTK, PP1-\u03b3 and \u03bb-Phosphatase were purchased from SignalChem, MRC-PPU Reagents (University of Dundee) and New England Biolabs, respectively.\n\n### S2 cell lysates, pull-downs, immunoprecipitation and western blotting\n\nFor preparation of S2 cell lysates used in pull-down and immunoprecipitation experiments, S2 cultured cells overexpressing EGFP-Mps1WT and EGFP-Mps1K231A/F234A were treated with colchicine for 12 hr. Overexpression of EGFP-Mps1WT and EGFP-Mps1K231A/F234A was induced with 0.1 mM CuSO4 during 12 hr. Cells were harvested through centrifugation at 5000 rpm for 10 min at 4\u00b0C and afterwards washed with 2 mL PBS supplemented with protease inhibitors cocktail (Roche,\u00a0Basel,\u00a0Switzerland). Cell pellet was resuspended in lysis buffer (150 mM KCl, 75 mM HEPES, pH 7.5, 1.5 mM EGTA, 1.5 mM MgCl2, 15% glycerol, 0.1% NP-40, 1\u00d7 protease inhibitors cocktail (Roche) and 1\u00d7 phosphatase inhibitors cocktail 3 (Sigma)) before disruption through freezing in liquid nitrogen. Cell lysates were then clarified through centrifugation at 8000 rpm for 10 min at 4\u00b0C and quantified by Bradford protein assay (Bio-Rad). EGFP-Mps1WT and EGFP-Mps1K231A/F234A were immunoprecipitated from 0.5 mg of total cell lysates using the GFP-Trap_MA system (Chromotec GmbH, Planegg-Martinsried, Germany) according to the manufacturer\u2019s instructions. For pull-down assays using S2 cell protein extracts, 0.5 mg of total cell lysates were diluted in a final volume of 500 \u03bcl of column buffer (250 mM NaCl, 20 mM Tris-HCl pH 7.4, 1 mM EDTA, 1 mM DTT, 0.05% Tween-20, 1\u00d7 protease inhibitors cocktail (Roche) and 1\u00d7 phosphatase inhibitors cocktail 3 (Sigma-Aldrich)) and incubated with 5 \u03bcl of MBP or MBP-PP1-87B bound to amylose magnetic beads (New England Biolabs) for 90 min at room temperature with rotation. The magnetic beads and bound protein fraction were collected and washed 3 times with 750 \u03bcl of column buffer. For pull-down assays with purified recombinant proteins, 5 \u03bcl of 6xHis-N-Mps1WT or 6xHis-N-Mps1K231AF234A were incubated with 3 \u03bcl of MBP or MBP-PP1-87B bound to amylose magnetic beads (New England Biolabs) in a final volume of 30 \u03bcl of column buffer (250 mM NaCl, 20 mM Tris-HCl pH 7.4, 1 mM EDTA, 1 mM DTT) for 60 min at room temperature with rotation. The magnetic beads and bound protein fraction were collected and washed 3 times with 100 \u03bcl of column buffer. Magnetic beads and bound protein were resuspended in Laemmli sample buffer and boiled for 5 min at 95\u00b0C. After removal of the magnetic beads, samples were resolved by SDS-PAGE and probed for proteins of interest through western blotting. For western blot analysis, resolved proteins were transferred to a nitrocellulose membrane, using the iBlot Dry Blotting System (Invitrogen) according to the manufacturer\u2019s instructions. Transferred proteins were confirmed by Ponceau staining (0.25% Ponceau S in 40% methanol and 15% acetic acid). The membrane was blocked for 3 hr at room temperature with 5% dry milk in PBS-T. All the primary and secondary antibodies were diluted in PBS-T containing 1% dry milk and the membranes were incubated overnight at 4\u00b0C under agitation, then washed three times 10 min with PBS-T and immediately incubated with secondary antibodies for 1 hr at room temperature under agitation. Secondary antibodies conjugated to Horseradish peroxidase (Amersham) were used according to the manufacturer\u00b4s instructions. Blots were developed with ECL Chemiluminescent Detection System (Amersham) according to manufacturer\u2019s protocol and detected on X-ray film (Fuji Medical X-Ray Film).\n\n### In vitro kinase and phosphatase assays\n\nFor in vitro kinase assays, 6xHis-DmMps1WT, 6xHis-DmMps1KD, HsMps1/TTK (0.25 \u03bcg) (SignalChem,\u00a0Richmond,\u00a0Canada) or immunoprecipitated EGFP-Mps1 were incubated for 30 min in a total volume of 15\u201330 \u03bcL kinase reaction buffer (5 mM MOPS, pH 7.2, 2.5 mM \u03b2-glycerol-phosphate, 5 mM MgCl2, 1 mM EGTA, 0.4 mM EDTA, 0.25 mM DTT, 100 \u03bcM ATP. Reactions were carried out at 25\u00b0C for His6-DmMps1WT, His6-DmMps1KD and immunoprecipitated EGFP-Mps1 and at 30\u00b0C when using HsMps1/TTK. For inhibition of HsMps1/TTK activity, AZ3146 (Tocris,\u00a0Bristol,\u00a0United-Kingdom) was added to the reaction at a final concentration of 10 \u03bcM. For phosphatase assays, recombinant human PP1-\u03b3 was added either to the kinase reaction at t0 or after Mps1/TTK inhibition. Reactions were carried out at 30\u00b0C for 30 min in PMP phosphatase buffer (New England Biolabs) containing 50 mM HEPES pH 7.5, 100 mM NaCl, 2 mM DTT, 0.01% Brij 35, 1 mM MnCl2. Reactions were stopped by addition of Laemmli sample buffer (4% SDS, 10% mercaptoetanol, 0.125 M Tris-HCl, 20% glycerol, 0.004% bromophenol blue) and heated for 5 min at 95\u00b0C. Peptides were resolved in an 8% SDS-PAGE. The activating autophosphorylation on T676 or T490 (for human Mps1/TTK and Drosophila Mps1, respectively) were detected by western blotting with a phospho-specific antibody provided by Geert Kops (Jelluma et al., 2008).\n\n### Immunofluorescence analysis\n\nFor immunofluorescence analysis of S2 cells, 105 cells were centrifuged onto slides for 5 min, at 1500 rpm (Cytospin 2, Shandon), and simultaneously fixed and extracted in 3.7% formaldehyde (Sigma-Aldrich), 0.5% Triton X-100 in PBS for 10 min followed by thee washing steps in PBS-T (PBS with 0.05% Tween 20) for 5 min each. Immunostaining was performed as described previously (Conde et al., 2013). Images were collected in Leica TCS SP5 II laser scanning confocal microscope (Leica Microsystems, Germany). Data stacks were analyzed and projected using ImageJ software (http://rsb.info.nih.gov/ij/). For immunofluorescence quantification, the mean pixel intensity was obtained from maximum projected raw images acquired with fixed exposure acquisition settings. For kinetochore proteins, the mean fluorescence intensity was quantified for individual kinetochores, selected manually by CID or Spc105 staining. The size of the region of interest (ROI) was predefined so that each single kinetochore could fit into. After subtraction of background intensities, estimated from regions of the cell with no kinetochores, the intensity was determined relative to CID or Spc105 reference and averaged over multiple kinetochores.\n\n### Live cell imaging\n\nLive analysis of mitosis was done in S2 cell lines expressing the indicated constructs. 4D datasets were collected at 25\u00b0C with a spinning disc confocal system (Revolution; Andor) equipped with an electron multiplying charge-coupled device camera (iXonEM+; Andor) and a CSU-22 unit (Yokogawa) based on an inverted microscope (IX81; Olympus). Two laser lines (488 and 561 nm) were used for near-simultaneous excitation of EGFP and mCherry. The system was driven by iQ software (Andor). Time-lapse imaging of z stacks with 0.8 \u03bcm steps covering the entire volume of the cell were collected and image sequence analysis and video assembly done with ImageJ and iQ software. For quantification of EGFP-Mad1 fluorescence at kinetochores, the mean intensity was calculated within the area corresponding to kinetochores and corrected for cytosolic signal. The changes in fluorescence intensity with time were plotted as normalized signal relative to the signal measured at NEB.\n\n### Analysis of microtubule dynamics by inducible fluorescent speckle microscopy\n\nInducible speckle imaging (ISI) was used to measure spindle microtubule turnover in Drosophila S2 cells as previously described (Pereira et al., 2016). Speckle patterns were imprinted using \u223c200- to 500-ms-long pulses with a bleaching strength (\u03b3) between 1.5 and 2, a regime which maximizes speckle fluorescence amplitude. A rectangular ROI was defined enclosing a significant portion of the spindle area. Intensity contrast was then determined at each time point of the acquired sequence after the subtraction of a mean dark reference level from each frame. The microtubule turnover half-time was calculated by fitting a double-exponential curve (y0\u00a0+A1*exp[\u2212(t \u2212 t0)/\u03c41]+A2 *exp[\u2212(t \u2212 t0)/\u03c42]) to the mean intensity squared-contrast from independent cells for each time point. Before averaging, contrast curves were normalized to a 0-to-1 contrast change defining the pre- and post-ISI transition.\n\n### FRAP experiments\n\nFRAP experiments were performed in S2 cells expressing EGFP-MPS1WT, EGFP-MPS1KD or EGFP-MPS1K231A/F234A. When required, colchicine was added to cultures at least 2 hr prior FRAP experiment. Datasets were collected at 25\u00b0C with a Leica TCS SP5II scanning confocal microscope (Leica Microsystems, Germany). The EGFP tag was excited using the 488 nm laser line set to 10% and bleached with the 405 nm laser line. Single kinetochores were bleached for three iterations once the EGFP fluorescence signal had become stable. Fluorescence intensity in the bleached area was acquired every 537 ms, 555 ms or 777 ms before and after bleaching. FRAP data analysis was performed with ImageJ. For each measurement the average fluorescence intensity in the bleached area was corrected for background and the ratio to average fluorescence in the cytoplasm determined. Average values before bleaching were set to 100%. The exponential kinetics of FRAP were analyzed by calculating the normalized unrecovered fluorescence at each time point (Finf-F(t))/(Finf-F(0)) where Finf is the value reached at the plateau, F(0) is the value observed in the first frame after bleaching and F(t) is the value at a given time point. FRAP kinetics parameters were determined by one phase exponential association curve fitting to normalized data using GraphPad Prism software.\n\n### Fly stocks\n\nAll fly stocks were obtained from Bloomington Stock Center (Indiana, USA), unless stated otherwise. The mps1 mutant allele aldG4422 has been described before (Conde et al., 2013). insc-GAL4 was used to drive the expression of UAS-PP1-87BRNAi in neuroblasts from brains of 3rd instar larvae brains. w1118 was used as wild-type control. Fly stocks harboring gEGFP-MPS1WT and gEGFP-MPS1KD (D478A) under control of Mps1 cis-regulatory region were kindly provided by Christian Lehner (Althoff et al., 2012).\n\n### Antibodies\n\nThe following primary antibodies were used for immunofluorescence studies: mouse anti-\u03b1-tubulin B512 (Sigma-Aldrich, RRID:AB_86546) used at 1:4000; rat anti-CID (Rat4) used at 1:250; guinea pig anti-Mps1 (Gp15) (a gift from Scott Hawley, RRID:AB_2567774) used at 1:250; rabbit anti-phosphorylated ser10-Histone H3 (p-H3) (Milipore, Billerica, MA, RRID:AB_565299) used at 1:5000; rabbit anti-Mad1 (Rb1, Conde et al., 2013) used at 1:2500; rabbit anti-phosphorylated Thr676-Mps1 (T676) (a gift from Geert Kops) used at 1:10000; rabbit anti-phosphorylated Thr232-Aurora B (Rockland, Limerik, PA) used at 1:1000; sheep anti PP1-87B (MRC-PPU Reagents, University of Dundee) used at 1:5000; rabbit anti-BubR1 (Rb 666, RRID:AB_2566989) used at 1:3000; rabbit anti-CenpC (Rb1) used at 1:5000; rat anti-Spc105 used at 1:250 and rabbit anti-Ndc80 (Rb272) (a gift from Michael Goldberg) used a 1:5000. The following primary antibodies were used for western blotting studies: mouse anti-\u03b1-tubulin DM1A (Sigma-Aldrich, RRID:AB_477593) used at 1:10000; mouse anti-Mps1 (NT clone 3-472-1, Milipore, RRID:AB_309903) used at 1:5000; guinea pig anti-Mps1 (Gp15) (a gift from Scott Hawley, RRID:AB_2567774) used at 1:5000; rabbit anti-phosphorylated Thr676-Mps1 (T676) (a gift from Geert Kops) used at 1:2000; mouse anti-MBP (New England Biolabs, RRID:AB_1559738) used at 1:5000; rabbit anti-BubR1 (Rb 666, RRID:AB_2566989) used at 1:3500; rabbit anti-CenpC (Rb1) used at 1:8000; mouse anti-GST (B-14) (Santa Cruz Biotech, Santa Cryz, CA, RRID:AB_627677) used at 1:2000.\n\n### Statistical and kinetics analysis\n\nAll statistical and enzyme kinetics analysis was performed with GraphPad Prism V6.0f (Graph- Pad Software, Inc.).\n\n### Supplementary\u00a0information\n\nThe phospho-antibody that recognizes human Mps1 T676 autophosphorylation can be used to detect the conserved activating T-loop autophosphorylation on Drosophila Mps1 (T490). The phospho-antibody generated against human Mps1 T676 autophosphorylation readily detected in immunoblots the autophosphorylation of a recombinant wild type version of Drosophila Mps1 (His6-Mps1WT) contrasting with the absence of evident phosphorylation on a catalytically inactive version of the kinase (His6-Mps1KD) (Figure 2\u2014figure supplement 2B). Moreover, immunofluorescence analyses of 3rd instar larval neuroblasts revealed a significant decrease in Mps1 T490 phosphorylation at kinetochores of aldG4422 strong hypomorphic Mps1 mutants (Figure 2\u2014figure supplement 2C,D). Importantly, a similar reduction was observed following the expression of kinase dead EGFP-Mps1 in aldG4422 background when compared with mutants expressing the Mps1 wild-type transgene (Figure 2\u2014figure supplement 2E,F). Taken together, these data validate the phospho-antibody as a read-out for the activation status of Drosophila Mps1.\n",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "336c0f61-bc60-4dba-93f7-300432d34023",
+      "submission_id": "77be4377-3799-47ad-929a-d43ae9e73371",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andrea Musacchio, Max Planck Institute of Molecular Physiology , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.25366.039](https://doi.org/10.7554/eLife.25366.039)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Protein Phosphatase 1 inactivates Mps1 to ensure efficient Spindle Assembly Checkpoint silencing\" for consideration by eLife. Your article has been favorably evaluated by Anna Akhmanova (Senior Editor) and three reviewers, one of whom, Andrea Musacchio (Reviewer #1), is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, Moura, Osswald et al. investigated an important unresolved problem in the spindle assembly checkpoint (SAC) field: how the wait-anaphase signal is inactivated in a timely manner once the SAC has been satisfied. Specifically, the manuscript describes a new facet of the complex regulation of the SAC kinase Mps1. The authors contend that depletion of the Drosophila melanogaster (dm) Protein Phosphatase 1 (PP1) ortholog PP1-87B leads to a mitotic arrest in metaphase, and that this correlates in turn with the presence of the active, phosphorylated form of Mps1 on the kinetochores of aligned metaphase chromosomes, for all apparent levels of tension (using inter-kinetochore distance as its surrogate marker). This is an important observation, because current models based on two 2015 papers in Science by the Kops and Yu laboratories have proposed that microtubule binding prevents kinetochore recruitment of Mps1 through direct competition. At face value, the authors' observations appear inconsistent with this previously proposed model. The authors also make the compelling point that Drosophila cells are the ideal model system to analyze this SAC regulatory mechanism because Dm Spc105/KNL1 MELT-like motifs are not subjected to phospho-regulation, yet PP1 is required for mitotic exit, pointing to Mps1 as a possible crucial target. Indeed, the authors focus on a possible physical interaction of PP1 with Mps1, which ultimately results in the dephosphorylation of the T-loop of Mps1 in metaphase, ensuring timely SAC inactivation. The authors contend that the expression of an Mps1 mutant that escapes this interaction largely phenocopies the depletion of PP1. In addition, the authors show that regulation by Mps1 is not only affecting the kinetochore pool of the kinase, but also extends to the cytosolic form. The authors suggest that this regulation may not be limited to Drosophila Mps1, and that it could be more general.\n\nAll three reviewers recognise the significant interest and potential importance of the work. However, they also agree that the data provided do not unequivocally show that Mps1 is a direct substrate of PP1. Main points of criticism are:\n\n1) In Drosophila the PP1-87B isoform accounts for about three quarters of all PP1 activity. Hence, the depletion of PP1-87B will increase the phosphorylation of hundreds of substrates and affect nearly every cellular process. Some of the observed effects may even be mediated by other phosphatases (e.g. PP2A), which are known to be regulated by PP1. Therefore, an increased phosphorylation of Mps1 by the depletion of PP1-87B can at best be used as preliminary evidence for an (in)direct role of PP1 in the dephosphorylation and inactivation of Mps1.\n\n2) One way to delineate the exact contribution of PP1 to Mps1 dephosphorylation is by interference with the involved PP1-targeting subunit. The authors conclude that PP1 directly interacts with Mps1 via a canonical RVxF motif. However, the data are not conclusive. First, the consensus binding motif for PP1 is not conserved in other organisms (Figure 3D) and it is not clear whether this motif resides in an intrinsically disordered region of Mps1, which is a requirement for binding to PP1. Second, RVxF and SILK consensus sequences are present in a third of all proteins and their mere presence does not imply that they also function as PP1 binding motifs. In fact, most consensus PP1 binding sequences do not interact with PP1, often because they reside in structured domains. Most importantly, a PP1 binding mutant of Mps1 still binds nearly normal amounts of PP1 (Figure 3E) and it is therefore not clear how to explain the effects of the expression of this Mps1 mutant. All three reviewers raised this point, which is therefore critical. At present, it cannot be concluded that the increased phosphorylation of Mps1 at its T-loop following mutation of the RVxF sequence is due to a loss of associated PP1. This also implies that the molecular mechanism underlying the metaphase delay effects after expression of the Mps1 K231A/F234A mutant remains unaccounted for.\n\nEssential revisions:\n\n1) All reviewers felt that the pulldowns in Figure 3E are not convincing. It definitely looks like the amount of MBP-PP187B is significantly higher in the WT extracts. The levels of EGFP to MBP were ratioed, but the data are not strongly convincing, as the EGFP looks quite comparable between the WT and mutant. The cell-based data on this mutant are more convincing than the results obtained in vitro. However, with the present data, one of the paper's main hypotheses appears unsubstantiated, and the reviewers recommend a more detailed characterisation of the Mps1-PP1 interaction.\n\n2) The depletion of SDS22 mimicked PP1-87B RNAi (Figure 2\u2014figure supplement 3). This interesting observation was not explored further. In view of the criticisms raised in point 1, it is possible that SDS22 mediates the binding of PP1-87B by Mps1. This possibility could be tested relatively easily.\n\n3) The purified catalytic subunit of PP1 will dephosphorylate nearly every phosphoprotein when added in sufficient amounts, which makes the experiments shown in Figures 3A-C inconclusive. It would have been much more informative to compare the dephosphorylation of Mps1-WT and Mps1-K231A/F234A by limiting concentrations of PP1. If Mps1 directly recruits PP1 via its putative RVxF motif (but see point above) the WT protein can be expected to be dephosphorylated at lower PP1 concentrations than the K231A/F234A mutant.\n\n4) Figure 3\u2014figure supplement 1 is taken as evidence that the \u03bb phosphatase does not dephosphorylate Mps1 at T676. However, panel C shows much faster dephosphorylation with \u03bb phosphatase than with PP1. Likewise, in Figure 3C, the major band disappears with \u03bb phosphatase. The phosphatase units should be clearly defined: a comparison based upon units only makes sense if they are defined in the same manner.\n\n5) A central finding is that PP1 depletion leads to delay in SAC satisfaction due to excess active p-Mps1 at kinetochores (and in the cytosol). Mad1 is also retained at these kinetochores. A possible explanation for this phenotype is that elevated aurora B kinase, as a consequence of PP1 depletion, simply generates unattached kinetochores that retain Mad1 and delay the cell in metaphase. Key in this regard is to convincingly demonstrate that fully stable attachments are formed. To strengthen this conclusion, the authors should better quantify the cold stability data. All that is shown for these experiments are a few images of cold-treated cells.\n\n6) Related to point 5, turnover measurements after photo-activation have been used more commonly, and the authors should elaborate on the validity and robustness of the ISI protocol. Has the ISI approach been validated by comparison to PA measurements? In Figure 1H, the slow turnover component corresponding to KT-MTs has a relatively short half-life in comparison to those reported in previous studies (extending to several minutes). What may be the reason for this? If PA measurements could be considered, they would strengthen this line of enquiry, which is critical for the study. A supplemental video of a representative ISI experiment would be helpful.\n\nFurthermore, the authors may consider the following two comments:\n\n7) The pMps1-T490P seems to localize to the inner centromere rather than the kinetochore in the w1118 larval neuroblasts and the EGFP-WT Mps1 in ald/ald neuroblasts. A CID internal (inner centromere?) Mps1-T490P staining pattern is also observed in Figure 6C. Can the authors share their thoughts on the relevance of Mps1 localization patterns? For example, are there multiple Mps1 sub-populations: cytosolic, kinetochore, inner centromere?\n\n8) Figure 6A-F should be discussed in the Results section, not in the Discussion. The authors speculate that the phosphorylation of PP1 by Cdk1 (at the C-terminus, not the N-terminus as indicated in the fourth paragraph of the Discussion) contributes to keeping Mps1 active at the beginning of mitosis. However, there are no data supporting the notion that Mps1-associated PP1-87B is actually phosphorylated by Cdk1 at the beginning of mitosis. More generally, regulation of PP1 by Cdk1 is unlikely to contribute to the switch from the SAC on to the SAC off condition, as the SAC is switched off before Cyclin B destruction can start, i.e. it is switched off under conditions of high Cdk1 activity. Furthermore, while the focus is on CDK1/CyclinB-mediated regulation of PP1, CDK1/CyclinA is also likely contributing to this pathway during prometaphase. Please add some discussion of the contributions of Cyclin A during prometaphase. Does MG132-treatment block the increase in kinetochore-associated PP1 at aligned kinetochores that is nicely shown in Figures 6A, B?\n",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bdc9515c-f246-49d3-b765-61605329d240",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C1",
+      "claim": "The Spindle Assembly Checkpoint (SAC) is a conserved signaling pathway that delays anaphase onset until all chromosomes are attached to spindle microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Faithfull genome partitioning during cell division relies on the Spindle Assembly Checkpoint (SAC), a conserved signaling pathway that delays anaphase onset until all chromosomes are attached to spindle microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in cell biology supported by extensive literature and is stated as background knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "66c237bb-bd46-4688-b97d-cc1a7df6e458",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C2",
+      "claim": "Mps1 kinase is an upstream SAC regulator that promotes the assembly of an anaphase inhibitor through a sequential multi-target phosphorylation cascade.",
+      "claim_type": "EXPLICIT",
+      "source": "Mps1 kinase is an upstream SAC regulator that promotes the assembly of an anaphase inhibitor through a sequential multi-target phosphorylation cascade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established scientific knowledge about Mps1's role in SAC signaling.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "97fedbb5-a1dd-498f-9a48-47c0dc63f07f",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C3",
+      "claim": "Mps1 activity peaks in early mitosis as a result of its T-loop autophosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the SAC is highly responsive to Mps1, whose activity peaks in early mitosis as a result of its T-loop autophosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about Mps1 regulation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "12775197-9521-404c-8f91-0a24b3957dfa",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C4",
+      "claim": "The mechanism controlling Mps1 inactivation once kinetochores attach to microtubules and the SAC is satisfied remains unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the mechanism controlling Mps1 inactivation once kinetochores attach to microtubules and the SAC is satisfied remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in knowledge that the study aims to address.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "6a4e8afb-383a-466c-aca4-79df9cb39b23",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C5",
+      "claim": "Protein Phosphatase 1 (PP1) inactivates Mps1 by dephosphorylating its T-loop in vitro and in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show in vitro and in Drosophila that Protein Phosphatase 1 (PP1) inactivates Mps1 by dephosphorylating its T-loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "285a6fcb-8ca8-4a20-94ec-a2cb6f17a3a9",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C6",
+      "claim": "PP1-mediated dephosphorylation of Mps1 occurs at kinetochores and in the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "PP1-mediated dephosphorylation of Mps1 occurs at kinetochores and in the cytosol, and inactivation of both pools of Mps1 during metaphase is essential to ensure prompt and efficient SAC silencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "c46292d2-4929-4875-a6f8-77a6ef0711da",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C7",
+      "claim": "Inactivation of both kinetochore and cytosolic pools of Mps1 during metaphase is essential to ensure prompt and efficient SAC silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "PP1-mediated dephosphorylation of Mps1 occurs at kinetochores and in the cytosol, and inactivation of both pools of Mps1 during metaphase is essential to ensure prompt and efficient SAC silencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "c664abda-2f32-43f1-8631-d6794c901e47",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C8",
+      "claim": "Depletion of PP1-87B from Drosophila S2 cells results in an abnormal accumulation of Mad1 at aligned kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "Live cell-imaging analysis showed that depletion of PP1-87B orthologue from Drosophila S2 cells results in an abnormal accumulation of Mad1 at aligned kinetochores and a pronounced extension of the metaphase duration (Figure 1A,B; Figure 1\u2014figure supplement 1 and Videos 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live cell imaging data shown in Figure 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "3837e873-1d9c-4623-8a63-14e1337102f7",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C9",
+      "claim": "Depletion of PP1-87B from Drosophila S2 cells results in a pronounced extension of the metaphase duration.",
+      "claim_type": "EXPLICIT",
+      "source": "Live cell-imaging analysis showed that depletion of PP1-87B orthologue from Drosophila S2 cells results in an abnormal accumulation of Mad1 at aligned kinetochores and a pronounced extension of the metaphase duration (Figure 1A,B; Figure 1\u2014figure supplement 1 and Videos 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live cell imaging data shown in Figure 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "04419972-45aa-424a-8e2c-393012a370d0",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C10",
+      "claim": "Co-depletion of Mps1 prevented the anaphase onset delay caused by PP1-87B depletion, indicating it is due to active SAC signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-depletion of Mps1 prevented the anaphase onset delay, indicating it is due to active SAC signaling (Figure 1A,B; Figure 1\u2014figure supplement 1 and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data showing that Mps1 depletion rescues the PP1-87B depletion phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "26615bbb-15a0-4d49-944a-b81eff58e805",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C11",
+      "claim": "Depletion of PP1-87B from Drosophila S2 cells increased Aurora B activation at centromeres/kinetochores of prometaphase and metaphase chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that depletion of PP1-87B from Drosophila S2 cells increased Aurora B activation at centromeres/kinetochores of prometaphase and metaphase chromosomes, as expected (Figure 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 1C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "266896a4-d690-43c3-a384-1ff8c3383b26",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C12",
+      "claim": "The inter-kinetochore distances on aligned chromosomes in PP1-87B depleted cells were similar to those measured in control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the inter-kinetochore distances on aligned chromosomes were similar to those measured in control cells (Figure 1E), indicating that kinetochores are under mechanical tension compatible with stably attached microtubules (Li and Nicklas, 1995; Akiyoshi et al., 2010; Khodjakov and Pines, 2010; Ye et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification data shown in Figure 1E and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "507cb8fa-e178-4e0f-a34b-8c8bf134b8f1",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C13",
+      "claim": "PP1-87B depleted cells revealed the presence of cold stable kinetochore-fibers, as observed in control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, PP1-87B depleted cells revealed the presence of cold stable kinetochore-fibers, as observed in control cells (Figure 1F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 1F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "657687c7-bee8-4e62-9c65-577d051d8239",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C14",
+      "claim": "Depletion of PP1-87B fails to cause significant changes in the stability of kinetochore-microtubule attachments in metaphase cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of PP1-87B fails to cause significant changes in the stability of kinetochore-microtubule attachments in metaphase cells and there are no significant differences in the fractions of microtubules in the stable (KT-MT) versus unstable (non-KT-MT) populations when compared to control cells (Figure 1H,I; Figure 1\u2014figure supplement 2 and Videos 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by inducible speckle imaging data shown in Figure 1H,I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "791529d4-6ca5-43dd-b20b-4f5bbae437e1",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C15",
+      "claim": "Mad1 accumulation at metaphase-aligned kinetochores and the delayed anaphase onset observed in PP1-87B-depleted cells are not caused by unattached kinetochores transiently generated as a result of increased Aurora B activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results clearly show that Mad1 accumulation at metaphase-aligned kinetochores and the delayed anaphase onset observed in PP1-87B-depleted cells are not caused by unattached kinetochores transiently generated as a result of increased Aurora B activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the combined data showing stable attachments despite increased Aurora B activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "d8ff3057-b75e-49fa-a334-20559163fa83",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C16",
+      "claim": "Depletion of PP1-87B has no significant impact on Mps1 kinetochore localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence analysis showed that depletion of PP1-87B has no significant impact on Mps1 kinetochore localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from immunofluorescence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "75feaa60-3be0-45c9-a950-1abf5d85de67",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C17",
+      "claim": "Mps1 accumulates at prometaphase kinetochores and its levels decrease significantly as microtubules attach, with a fraction of Mps1 persisting at kinetochores of metaphase chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Mps1 accumulates at prometaphase kinetochores and its levels decrease significantly as microtubules attach, with a fraction of Mps1 persisting at kinetochores of metaphase chromosomes (Figure 2A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 2A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "c946ebf7-6f8e-4105-bc53-2be23dbea80c",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C18",
+      "claim": "The residual pool of Mps1 is retained at bioriented kinetochores until anaphase onset, even after establishment of inter-kinetochore tension.",
+      "claim_type": "EXPLICIT",
+      "source": "This residual pool of Mps1 is retained at bioriented kinetochores until anaphase onset, even after establishment of inter-kinetochore tension, as revealed by live imaging of S2 cells expressing EGFP-Mps1 under control of Mps1 cis-regulatory region (Figure 2\u2014figure supplement 1A,B and Video 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live imaging data shown in Figure 2\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "736dc14c-e3db-4ea8-91a8-c15203d4810d",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C19",
+      "claim": "Depletion of PP1-87B resulted in a substantial increase of Mps1 T-loop autophosphorylation during prometaphase and on metaphases kinetochores stably attached to microtubule bundles.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that depletion of PP1-87B resulted in a substantial increase of Mps1 T-loop autophosphorylation during prometaphase and on metaphases kinetochores stably attached to microtubule bundles (Figure 2A\u2013D, Figure 2\u2014figure supplement 1C,D and Figure 2\u2014figure supplement 2A\u2013F with phospho-antibody characterization described in supplementary information).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data using phospho-specific antibody shown in Figure 2A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "9a622ada-e437-4f88-b9ce-a956b7eeaa2b",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C20",
+      "claim": "Depletion of PP1 noncatalytic subunit Sds22/PPP1R7 mimicked PP1-87B RNAi by increasing Mps1 T490 phosphorylation both at unattached and aligned kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, depletion of PP1 noncatalytic subunit Sds22/PPP1R7, which positively regulates the phosphatase activity at kinetochores (Posch et al., 2010; Wurzenberger et al., 2012; Heroes et al., 2013), mimicked PP1-87B RNAi by increasing Mps1 T490 phosphorylation both at unattached and aligned kinetochores (Figure 2\u2014figure supplement 3A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 2\u2014figure supplement 3A-D and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "c13dcd80-eb2e-43d3-9b5b-01cad0e9655e",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C21",
+      "claim": "Drosophila Mps1 exhibits a fast turnover rate at unattached kinetochores that relies in part on its kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila Mps1 exhibits a fast turnover rate at unattached kinetochores that relies in part on its kinase activity, as revealed by FRAP measurements of wild type (WT) and kinase-dead (KD) versions of EGFP-Mps1 expressed in S2 cells (Figure 2E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FRAP data shown in Figure 2E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "5614a7f4-a9f9-400a-b91b-73a432b16aff",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C22",
+      "claim": "Both the half-life and stable population of Mps1 increase at metaphase kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the observed reduction in Mps1 T490 autophosphorylation, both the half-life and stable population of Mps1 increase at metaphase kinetochores (Figure 2E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FRAP data shown in Figure 2E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "cba97a13-62d6-4937-aa36-b4433332c864",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C23",
+      "claim": "In the absence of PP1-87B, Mps1 displays a faster dynamic exchange at aligned kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the absence of PP1-87B, Mps1 displays a faster dynamic exchange at aligned kinetochores, as expected from enhanced kinase activity (Figure 2E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FRAP data shown in Figure 2E,F and is consistent with enhanced kinase activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "953137ac-fa06-418c-bc5f-119e15ef5c94",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C24",
+      "claim": "PP1-87B activity is required to repress the activating autophosphorylation of Mps1 that remains associated with metaphase kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results demonstrate that PP1-87B activity is required to represses the activating autophosphorylation of Mps1 that remains associated with metaphase kinetochores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "a090f62a-a7bc-44aa-8a1a-0df7864f1fc8",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C25",
+      "claim": "Simultaneous incubation of PP1-\u03b3 with recombinant versions of human (Mps1/TTK) and Drosophila Mps1 orthologues led to a concentration-dependent decrease of T676 and T490 autophosphorylation, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous incubation of PP1-\u03b3 with recombinant versions of human (Mps1/TTK) and Drosophila Mps1 orthologues led to a concentration-dependent decrease of T676 (T676Ph) and T490 (T490Ph) autophosphorylation, respectively (Figure 3A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro kinase/phosphatase assay data shown in Figure 3A,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "e2c8ebce-0c16-4f25-8090-fa80e96043dc",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C26",
+      "claim": "PP1-\u03b3 was able to dephosphorylate the T-loop of Mps1/TTK that had been previously activated by autophosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, PP1-\u03b3 was able to dephosphorylate the T-loop of Mps1/TTK that had been previously activated by autophosphorylation (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro phosphatase assay data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "d277e9c8-0218-4719-baaa-67977049aa05",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C27",
+      "claim": "\u03bb-phosphatase failed to antagonize to the same extent the autophosphorylation of human Mps1/TTK T676 and of Drosophila Mps1 T490.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, \u03bb-phosphatase failed to antagonize to the same extent the autophosphorylation of human Mps1/TTK T676 and of Drosophila Mps1 T490 (Figure 3C and Figure 3\u2014figure supplement 1), indicating a higher specificity of PP1-\u03b3 towards Mps1 T-loop in vitro.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro phosphatase assay data shown in Figure 3C and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "ec378168-32f9-4186-90ba-e3aff3fe16df",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C28",
+      "claim": "Drosophila Mps1 N-terminus contains a clear match for a PP1-docking motif of the [R/K]VxF \u2013 type.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila Mps1 N-terminus contains a clear match for a PP1-docking motif of the [R/K]VxF \u2013 type (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "add36807-764a-4156-a066-4e7fda12b1fc",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C29",
+      "claim": "EGFP-Mps1WT from S2 cell lysates bound efficiently to recombinant MBP-PP1-87B but not to the MBP used as negative control.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction between Mps1 and PP1-87B was confirmed in pull-down assays in which EGFP-Mps1WT from S2 cell lysates bound efficiently to recombinant MBP-PP1-87B but not to the MBP used as negative control (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pull-down assay data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "c56eda78-5907-48ef-8354-5111d96d9c66",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C30",
+      "claim": "Mutating Mps1 KVLF231-234 to AVLA231-234 markedly decreased the ability of EGFP-Mps1 to interact with MBP-PP1-87B.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, mutating Mps1 KVLF231-234 to AVLA231-234 markedly decreased the ability of EGFP-Mps1 to interact with MBP-PP1-87B, hence validating KVLF as a PP1-binding motif (Figure 3E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pull-down assay data shown in Figure 3E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "326e59b2-f756-4d62-9646-55db1b93f2be",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C31",
+      "claim": "6xHis-N-Mps1WT bound efficiently to MBP-PP1-87B, while the fragment 6xHis-N-Mps1K231A/F234A did not.",
+      "claim_type": "EXPLICIT",
+      "source": "While 6xHis-N-Mps1WT bound efficiently to MBP-PP1-87B, the fragment 6xHis-N-Mps1K231A/F234A did not (Figure 3G), thus confirming that the KVLF motif mediates a direct interaction between Mps1 N-terminus and PP1-87B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pull-down assay data with purified recombinant proteins shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "f1aa1aec-0fda-43b9-b5e1-f2f7da305064",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C32",
+      "claim": "Recombinant PP1-\u03b3 antagonized with discernible less efficiency the T-loop autophosphorylation of EGFP-Mps1K231A/F234A in comparison to EGFP-Mps1WT.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance, in vitro assays with EGFP-Mps1 immunoprecipitated from mitotic S2 cell lysates showed that recombinant PP1-\u03b3 antagonized with discernible less efficiency the T-loop autophosphorylation of EGFP-Mps1K231A/F234A in comparison to EGFP-Mps1WT (Figure 3H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro dephosphorylation assay data shown in Figure 3H,I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "be3b40be-382e-4679-8027-a162d5c43064",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C33",
+      "claim": "Mps1 T-loop is a direct substrate of PP1-87B/PP1-\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results indicate that Mps1 T-loop is a direct substrate of PP1-87B/PP1-\u03b3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the combined in vitro and cellular data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "8b5c2abd-1e13-494b-971c-8eb96bd198ac",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C34",
+      "claim": "MBP-PP1-87B failed to pull-down EGFP-Mps1WT from S2 cells depleted of Sds22/PPP1R7.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that MBP-PP1-87B failed to pull-down EGFP-Mps1WT from S2 cells depleted of Sds22/PPP1R7 (Figure 3E,F), which suggests that in addition to the KVLF motif on the kinase N-terminus, the Sds22/PPP1R7 regulatory subunit is also required for competent binding of full-length Mps1 to PP1-87B in cell extracts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pull-down assay data shown in Figure 3E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "0686f822-8708-46b7-a808-b018b6791c34",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C35",
+      "claim": "Phosphorylation of T490 at unaligned kinetochores was significantly higher for EGFP-Mps1K231A/F234A relative to EGFP-Mps1WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylation of T490 at unaligned kinetochores was significantly higher for EGFP-Mps1K231A/F234A relative to EGFP-Mps1WT (Figure 3J,L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 3J,L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "760cd505-35da-41c8-bdd8-4d653dbcd09c",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C36",
+      "claim": "A similar increment in the T-loop activation status was observed for EGFP-Mps1WT of prometaphase cells depleted of PP1-87B.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar increment in the T-loop activation status was observed for EGFP-Mps1WT of prometaphase cells depleted of PP1-87B (Figure 3J,L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 3J,L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "abbaef98-06cf-47fb-8c1f-9333c8f2cd58",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C37",
+      "claim": "The mutation KVLF231-234 prevented the dephosphorylation of Mps1 T-loop also at bioriented kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the mutation KVLF231-234 prevented the dephosphorylation of Mps1 T-loop also at bioriented kinetochores, mimicking the result obtained in metaphase cells expressing EGFP-Mps1WT in the absence of PP1-87B (Figure 3K,L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 3K,L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "295d938c-1d4d-4291-9b6b-fb3de7734c5d",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C38",
+      "claim": "EGFP-Mps1K231A/F234A exhibits faster dynamics than EGFP-Mps1WT at aligned kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected from increased T490 autophosphorylation, EGFP-Mps1K231A/F234A exhibits faster dynamics than EGFP-Mps1WT at aligned kinetochores (Figure 3\u2014figure supplement 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FRAP data shown in Figure 3\u2014figure supplement 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "d6caeb15-2145-41a8-bc5d-b910e907c919",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C39",
+      "claim": "PP1-87B directly controls Mps1 T-loop dephosphorylation at kinetochores during prometaphase and metaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "From these results, we conclude that PP1-87B directly controls Mps1 T-loop dephosphorylation at kinetochores during prometaphase and metaphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "775ea1d5-9dd7-405b-9e85-5344b5bd45aa",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C40",
+      "claim": "Expression of EGFP-Mps1K231A/F234A caused a pronounced metaphase delay when compared to EGFP-Mps1WT expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Live-cell imaging revealed that expression of EGFP-Mps1K231A/F234A caused a pronounced metaphase delay when compared to EGFP-Mps1WT expressing cells (Figure 4A,B; Videos 7 and 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live cell imaging data shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "03f335c9-f84e-4629-ab3f-414edec236b0",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C41",
+      "claim": "Depletion of BubR1 prevented the metaphase delay caused by EGFP-Mps1K231A/F234A expression, showing it is SAC-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of BubR1 prevented this delay showing it is SAC-dependent (Figure 4A,B and Video 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live cell imaging data shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "ca5cac99-975e-4405-9447-6174197a7c07",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C42",
+      "claim": "The inter-kinetochore distances monitored throughout metaphase and the attachments of bioriented kinetochores to cold-resistant microtubule bundles in EGFP-Mps1K231A/F234A cells were similar to those observed in metaphase cells expressing the wild-type kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the delay is not caused by unstable kinetochore-microtubule interactions, since the inter-kinetochore distances monitored throughout metaphase and the attachments of bioriented kinetochores to cold-resistant microtubule bundles in EGFP-Mps1K231A/F234A cells were similar to those observed in metaphase cells expressing the wild-type kinase (Figure 4C,D and Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification data shown in Figure 4C,D and Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "b8801489-9a16-4ac7-a453-ef3a937b0e65",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C43",
+      "claim": "Cells expressing EGFP-Mps1K231A/F234A retained higher levels of Mad1 at aligned kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, cells expressing EGFP-Mps1K231A/F234A retained higher levels of Mad1 at aligned kinetochores (Figure 4E,F and Figure 4\u2014figure supplement 1B,C), which is consistent with lasting Mps1 activation and SAC signaling in metaphase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 4E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "de4e36e1-1f68-4388-a3aa-95dc8b725fe4",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C44",
+      "claim": "Impairing PP1-mediated dephosphorylation of the residual pool of Mps1 that remains associated with kinetochores of bioriented chromosomes is sufficient to delay SAC silencing and prevent anaphase onset despite normal chromosome attachment and high inter-kinetochore tension.",
+      "claim_type": "EXPLICIT",
+      "source": "These results strongly suggest that impairing PP1-mediated dephosphorylation of the residual pool of Mps1 that remains associated with kinetochores of bioriented chromosomes is sufficient to delay SAC silencing and prevent anaphase onset despite normal chromosome attachment and high inter-kinetochore tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "4111fa35-0660-4149-9d7e-ecb62c521563",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C45",
+      "claim": "Expression of EGFP-Mps1K231A/F234A partially rescued Mps1 T490 phosphorylation, Mad1 kinetochore recruitment and consistently attenuated the decline of SAC function following Aurora B inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, expression of EGFP-Mps1K231A/F234A partially rescued Mps1 T490 phosphorylation, Mad1 kinetochore recruitment and consistently attenuated the decline of SAC function following Aurora B inhibition (Figure 4G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence and mitotic index data shown in Figure 4G-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "96459c36-bac0-4b32-bf41-32719fa91157",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C46",
+      "claim": "Compromising Mps1 T-loop dephosphorylation is sufficient to delay SAC silencing and mitotic exit.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results demonstrate that compromising Mps1 T-loop dephosphorylation is sufficient to delay SAC silencing and mitotic exit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "b725cb5a-dd93-4a21-83f4-d0eacb756700",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C47",
+      "claim": "PP1-mediated dephosphorylation of Mps1 T-loop is required for efficient Mps1 inactivation and consequently for prompt SAC silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that PP1-mediated dephosphorylation of Mps1 T-loop is required for efficient Mps1 inactivation and consequently for prompt SAC silencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "f6f11299-39e7-42dd-8e91-b26e0d825bd6",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C48",
+      "claim": "Mps1 T-loop activation is first detected in the nucleoplasm and on pre-kinetochores during prophase.",
+      "claim_type": "EXPLICIT",
+      "source": "Mps1 T-loop activation is first detected in the nucleoplasm and on pre-kinetochores during prophase (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "4fb25397-115e-4e27-bb97-8dfc96f95075",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C49",
+      "claim": "Kinetochore-null S2 cells engendered through CENP-C knockdown retain high levels of nucleoplasmic Mps1 T490 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, kinetochore-null S2 cells engendered through CENP-C knockdown retain high levels of nucleoplasmic Mps1 T490 phosphorylation (Figure 5A,B), indicating that Mps1 activation at mitotic entry can occur through kinetochore-independent mechanisms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 5A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "8362393a-a5a7-4b61-81e9-0851ca4f54f1",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C50",
+      "claim": "In the absence of kinetochores, cells expressing EGFP-Mps1WT rapidly progressed through mitosis, whereas expression of EGFP-Mps1K231A/F234A markedly delayed anaphase onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Live-cell imaging revealed that in the absence of kinetochores, cells expressing EGFP-Mps1WT rapidly progressed through mitosis, whereas expression of EGFP-Mps1K231A/F234A markedly delayed anaphase onset (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live cell imaging data shown in Figure 5C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "b9d69954-7500-468f-a018-3363138156f9",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C51",
+      "claim": "Preventing MCC assembly through BubR1 co-depletion or expressing Mps1K231A/F234A harboring unphosphorylatable T490 (EGFP-Mps1K231A/F234A/T490A), failed to cause an obvious increase in the mitotic timing.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, preventing MCC assembly through BubR1 co-depletion or expressing Mps1K231A/F234A harboring unphosphorylatable T490 (EGFP-Mps1K231A/F234A/T490A), failed to cause an obvious increase in the mitotic timing indicating that the delay in mitosis observed in kinetochore-null Mps1K231A/F234A cells is SAC-dependent and requires Mps1 activating T-loop autophosphorylation (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live cell imaging data shown in Figure 5C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "ee11d5ef-129d-419e-adcb-5be42bcecc33",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C52",
+      "claim": "Impairing T-loop dephosphorylation of cytosolic Mps1 prolongs mitosis in a SAC-dependent manner even in the absence of a kinetochore-generated 'wait anaphase' signal.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that impairing T-loop dephosphorylation of cytosolic Mps1 prolongs mitosis in a SAC-dependent manner even in the absence of a kinetochore-generated 'wait anaphase' signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the kinetochore-null cell experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "dc9ecc80-f049-4f2a-8f2f-4af0c21d174d",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C53",
+      "claim": "Timely transition to anaphase requires that SAC extinction at stably attached kinetochores coincides with the inactivation of cytosolic Mps1.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, timely transition to anaphase requires that SAC extinction at stably attached kinetochores coincides with the inactivation of cytosolic Mps1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "d9e90dd2-d720-4b8b-80b4-edd8c3b34d50",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C54",
+      "claim": "PP1-mediated dephosphorylation of non-kinetochore Mps1 is a critical mechanism to efficiently silence the SAC and ensure prompt anaphase onset.",
+      "claim_type": "EXPLICIT",
+      "source": "These results allow us to conclude that PP1-mediated dephosphorylation of non-kinetochore Mps1 is a critical mechanism to efficiently silence the SAC and ensure prompt anaphase onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "cd8ca197-7507-4de9-9947-6177a00ce0dc",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C55",
+      "claim": "PP1-87B preferentially accumulates on kinetochores when chromosomes are bioriented at the metaphase plate.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence analysis of S2 cells revealed that PP1-87B preferentially accumulates on kinetochores when chromosomes are bioriented at the metaphase plate (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 6A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "9e51155f-7950-4f3f-abd4-c23677b48a5f",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C56",
+      "claim": "Inhibition of Aurora B led to an increase of PP1-87B levels at unattached kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of Aurora B led to an increase of PP1-87B levels at unattached kinetochores (Figure 6C,D), suggesting that similarly to the described for human cells, Aurora B activity limits the association of PP1-87B with unattached/unaligned kinetochores in flies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 6C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "13a2e124-dc3d-46ee-9345-be115b972692",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C57",
+      "claim": "Inhibition of CDK1 with RO-3306 in colchicine-treated S2 cells led to a reduction of Mps1 T490 autophosphorylation at unattached kinetochores, which was partially restored upon depletion of PP1-87B.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance, inhibition of CDK1 with RO-3306 in colchicine-treated S2 cells led to a reduction of Mps1 T490 autophosphorylation at unattached kinetochores, which was partially restored upon depletion of PP1-87B (Figure 6E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 6E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "46a639aa-99e5-4031-b04b-4faa947266ee",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C58",
+      "claim": "CDK1-dependent inhibition of PP1-87B contributes to maintain Mps1 active in prometaphase S2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, although CDK1 might also directly potentiate Mps1 activity (Morin et al., 2012), these results suggest that CDK1-dependent inhibition of PP1-87B contributes to maintain Mps1 active in prometaphase S2 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the CDK1 inhibition experiments and cited literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "1e0e4ea1-cb32-450b-a751-5e80f34f4e12",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C59",
+      "claim": "Cyclin B starts to be rapidly degraded upon biorientation of all chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We monitored by live-cell imaging the levels of EGFP-Cyclin B throughout mitosis in S2 cells and as expected found that it starts to be rapidly degraded upon biorientation of all chromosomes (Figure 6G,H and Video 14).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live cell imaging data shown in Figure 6G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "b6a79bf4-6f45-4330-b072-3b2244434d86",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C60",
+      "claim": "Proteolysis of Cyclin B also occurs during prometaphase but at a significant lower rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we could further observe that proteolysis of Cyclin B also occurs during prometaphase but at a significant lower rate (Figure 6G,H and Video 14).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live cell imaging data shown in Figure 6G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "85327b08-5c77-4322-bb96-53b686aea5f9",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C61",
+      "claim": "The modest decline in Cyclin B that takes place before metaphase might be critical to permit PP1-mediated inactivation of Mps1 and SAC silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the modest decline in Cyclin B that takes place before metaphase might be critical to permit PP1-mediated inactivation of Mps1 and SAC silencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the observed Cyclin B degradation pattern and cited literature.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "c03b2851-2cef-41ec-93ad-0a5cfdb9bd0b",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C62",
+      "claim": "Mps1 orthologues encompass several other PP1-binding motifs within different regions of the kinase, such as SILK signatures in the C-terminus of human and mouse Mps1.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, Mps1 orthologues encompass several other PP1-binding motifs within different regions of the kinase, such as SILK signatures in the C-terminus of human and mouse Mps1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "85875019-2327-4d30-8668-b4181beeac50",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C63",
+      "claim": "Despite the diversification in type and localization of PP1-docking motifs among Mps1 orthologues, the dephosphorylation of the kinase T-loop by PP1 is likely to be conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that despite the diversification in type and localization of PP1-docking motifs among Mps1 orthologues, the dephosphorylation of the kinase T-loop by PP1 is likely to be conserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the presence of PP1-binding motifs in different Mps1 orthologues.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "75b787b4-e28d-4a3c-b044-8ce70c90df41",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C64",
+      "claim": "Microtubules forming end-on attachments outcompete Mps1 for Ndc80 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Because microtubules bind to the same surface of the CH domains that interacts with Mps1, microtubules forming end-on attachments outcompete Mps1 for Ndc80 binding (Hiruma et al., 2015; Ji et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "fb83854c-52a1-4d43-b0d5-5432a95a6da5",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C65",
+      "claim": "The competition mechanism between microtubules and Mps1 for Ndc80 binding is consistent with the reduction of Mps1 from metaphase kinetochores, but is however insufficient to dislodge all Mps1 molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "This competition mechanism is consistent with the reduction of Mps1 from metaphase kinetochores, but is however insufficient to dislodge all Mps1 molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of existing knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "cd742a4f-5c6c-4713-bcb9-c477b483d925",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C66",
+      "claim": "Drosophila kinetochores retain a fraction of Mps1 even after the formation of end-on attachments that exert proper kinetochore tension.",
+      "claim_type": "EXPLICIT",
+      "source": "As in human and budding yeast (V\u00e1zquez-Novelle and Petronczki, 2010; Aravamudhan et al., 2015), Drosophila kinetochores retain a fraction of Mps1 even after the formation of end-on attachments that exert proper kinetochore tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation consistent with findings in other organisms, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "ae81b1fe-f21a-4ffc-81b7-0bea78fd3c02",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C67",
+      "claim": "Low levels of Mps1 were shown to be sufficient to delay anaphase onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, although low levels of Mps1 were shown to be sufficient to delay anaphase onset (Herriott et al., 2012; Foijer et al., 2014), the residual pool of Mps1 at metaphase kinetochores does not prevent SAC silencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "a44ac50a-35ee-41f2-bc6a-fb1cd13059a2",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C68",
+      "claim": "In Drosophila and in human cells, an Spc105/KNL1- and Bub1-independent pathway also recruits Mad1-Mad2 to unattached kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila and in human cells however, an Spc105/KNL1- and Bub1-independent pathway also recruits Mad1-Mad2 to unattached kinetochores (Schittenhelm et al., 2009; Caldas et al., 2015; Sili\u00f3 et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "569f672c-cc07-4a67-bd48-1b7dd8142772",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C69",
+      "claim": "The recruitment of Mad1-Mad2 through the RZZ complex relies on the localization of the RZZ complex at kinetochores, which is itself regulated by Mps1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This relies on the localization of the RZZ complex at kinetochores, which is itself regulated by Mps1 activity (Santaguida et al., 2010) and is sufficient to activate the SAC in response to unattached kinetochores, even in the absence of KNL1 (Schittenhelm et al., 2009; Sili\u00f3 et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "39881969-1a92-4a90-a59b-f6d887dba40d",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C70",
+      "claim": "Intra-kinetochore tension or alterations on kinetochore architecture are important not only to disrupt the interaction of Mps1 with its kinetochore substrates but also to increase the recruitment of PP1 to metaphase chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we reason that intra-kinetochore tension or alterations on kinetochore architecture, which also correlate with SAC satisfaction in Drosophila and human cells (Maresca and Salmon, 2009; Uchida et al., 2009), are important not only to disrupt the interaction of Mps1 with its kinetochore substrates but also to increase the recruitment of PP1 to metaphase chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined data and cited literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "919731be-cc47-4e00-ba7a-81065db42e6a",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C71",
+      "claim": "Kinetochore levels of PP1-87B in Drosophila S2 cells are significantly higher at bioriented chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly to human cells (Liu et al., 2010), kinetochore levels of PP1-87B in Drosophila S2 cells are significantly higher at bioriented chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation consistent with findings in human cells, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "264b0778-5131-4971-a6aa-ed29852bd071",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C72",
+      "claim": "At tensionless kinetochores, the recruitment of PP1-\u03b3 is limited due to phosphorylation of Spc105/KNL1 N-terminus and of the Ska complex by Aurora B.",
+      "claim_type": "EXPLICIT",
+      "source": "At tensionless kinetochores, the recruitment of PP1-\u03b3 is limited due to phosphorylation of Spc105/KNL1 N-terminus and of the Ska complex by Aurora B, which respectively inhibits the binding of PP1-\u03b3 to Spc105/KNL1 and Ska kinetochore localization (Liu et al., 2010; Chan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "21a985df-430d-4546-b92f-4a0878779ba6",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C73",
+      "claim": "As microtubules bind to kinetochores and tension is established, the spatial repositioning of the KMN network decreases Aurora-B mediated phosphorylation of the Ska complex and of Spc105/KNL1 N-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "As microtubules bind to kinetochores and tension is established, the spatial repositioning of the KMN network decreases Aurora-B mediated phosphorylation of the Ska complex and of Spc105/KNL1 N-terminus (Welburn et al., 2010), hence allowing bulk accumulation of PP1-\u03b3, which then catalyses the dephosphorylation of Mps1 T-loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a mechanism based on established knowledge and cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "4e2ea4cd-f223-4d4c-89ea-3699587e97d3",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C74",
+      "claim": "Inhibition of Mps1 causes a substantial decrease in pre-mitotic MCC levels and a consequent reduction in Cyclin B levels already in G2 and prophase.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, inhibition of Mps1 causes a substantial decrease in pre-mitotic MCC levels and a consequent reduction in Cyclin B levels already in G2 and prophase (Maciejowski et al., 2010; Rodriguez-Bravo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "f6fd40f2-d0eb-4cab-8132-37429709cbcc",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C75",
+      "claim": "A truncated form of Mps1 unable to localize at kinetochores failed to promote the recruitment of Bub1 to unattached kinetochores but was nevertheless sufficient to sustain the assembly of mitotic APC/C inhibitory complexes and delay anaphase onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a truncated form of Mps1 unable to localize at kinetochores failed to promote the recruitment of Bub1 to unattached kinetochores but was nevertheless sufficient to sustain the assembly of mitotic APC/C inhibitory complexes and delay anaphase onset (Maciejowski et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "6293d736-e132-41f5-a4e7-55c3bcfee2d1",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C76",
+      "claim": "Cytosolic Mps1 activity was shown to be critical to maintain the metaphase arrest caused by Mad1 constitutively tethered to stably attached bioriented kinetochores that were stripped from Mps1.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, cytosolic Mps1 activity was shown to be critical to maintain the metaphase arrest caused by Mad1 constitutively tethered to stably attached bioriented kinetochores that were stripped from Mps1 (Maldonado and Kapoor, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "662233b3-a346-43d7-b031-bedfaab3b572",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C77",
+      "claim": "Kinetochore recruitment of Mps1 substantially increases the cell capacity to sustain a prolonged mitotic arrest when challenged with spindle poisons.",
+      "claim_type": "EXPLICIT",
+      "source": "Although kinetochore recruitment of Mps1 substantially increases the cell capacity to sustain a prolonged mitotic arrest when challenged with spindle poisons (Nijenhuis et al., 2013), during an unperturbed mitosis in which MCC production at kinetochores is minimal (Collin et al., 2013; Dick and Gerlich, 2013), controlled activity of soluble Mps1 is expected to be particularly relevant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "bd7b81e2-69da-4197-9647-419e71eaa7ec",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C78",
+      "claim": "CDK1 phosphorylation of PP1 C-terminus represses the phosphatase activity during early mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "CDK1 phosphorylation of PP1 C-terminus represses the phosphatase activity during early mitosis (Dohadwala et al., 1994; Yamano et al., 1994; Wu et al., 2009; Grallert et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "4915e5a5-e416-4073-a384-1583517bc53a",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C79",
+      "claim": "The SAC is switched off under condition of high CDK1/Cyclin B activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, several lines of evidence indicate that the SAC is switched off under condition of high CDK1/Cyclin B activity (Mirchenko and Uhlmann, 2010; Oliveira et al., 2010; Kamenz and Hauf, 2014; Rattani et al., 2014; V\u00e1zquez-Novelle et al., 2014), hence challenging the impact that CDK1/Cyclin B-mediated regulation of PP1 might have on SAC silencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "2bfd2407-cc8b-4fe1-b02e-09dd7dfe8d08",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C80",
+      "claim": "Small decreases in CDK1/Cyclin B activity are sufficient to initiate PP1 re-activation of and trigger a positive feedback loop that ensures robust phosphatase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, recent mathematical modelling support that small decreases in CDK1/Cyclin B activity are sufficient to initiate PP1 re-activation of and trigger a positive feedback loop that ensures robust phosphatase activity (Rogers et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "3abce55c-2d0b-4845-9f20-bd142bac5d4a",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "claim_id": "C81",
+      "claim": "Cyclin A is progressively degraded during prometaphase and its abundance governs the overall stability of kinetochore-microtubule attachments, which increases in metaphase when cyclin A levels fall below a critical threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclin A is progressively degraded during prometaphase and its abundance governs the overall stability of kinetochore-microtubule attachments, which increases in metaphase when cyclin A levels fall below a critical threshold (Kabeche and Compton, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "51367b72-8627-482f-91ec-b2c5a950d974",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "PP1-87B depletion in Drosophila S2 cells causes a metaphase delay with Mad1 accumulation at aligned kinetochores, but this delay is not due to unstable kinetochore-microtubule attachments. Despite increased Aurora B activity, inter-kinetochore distances, cold-stable kinetochore fibers, and microtubule turnover rates remain normal, indicating stable attachments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C15 provide converging evidence from live-cell imaging (C8, C9), genetic rescue experiments (C10), immunofluorescence (C11-C13), and microtubule dynamics measurements (C14) that collectively demonstrate PP1-87B depletion causes a SAC-dependent metaphase delay without destabilizing kinetochore-microtubule attachments. The multiple independent assays and controls (Mps1 co-depletion, inter-kinetochore distance, cold stability, ISI) provide strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "ac219f38-19da-43cd-b1a5-f4ea70829ef6",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PP1-87B antagonizes Mps1 T-loop autophosphorylation at kinetochores. PP1-87B depletion increases Mps1 T490 phosphorylation at both prometaphase and metaphase kinetochores without affecting Mps1 localization. Mps1 dynamics at metaphase kinetochores are faster in PP1-87B depleted cells, consistent with enhanced kinase activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C24 demonstrate through immunofluorescence (C17, C19, C20), live imaging (C18), and FRAP analysis (C21-C23) that PP1-87B specifically regulates Mps1 T-loop phosphorylation without affecting its localization. The phospho-specific antibody validation (Figure 2\u2014figure supplement 2) and consistency across multiple experimental approaches (depletion of PP1-87B and Sds22) provide strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "c12bdfeb-4518-4461-ac85-eee3193b387b",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PP1-\u03b3 directly dephosphorylates Mps1 T-loop in vitro. Recombinant PP1-\u03b3 shows concentration-dependent dephosphorylation of both human and Drosophila Mps1 T-loop autophosphorylation sites, with higher specificity than \u03bb-phosphatase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 and C33 are supported by in vitro biochemical assays showing dose-dependent and time-dependent dephosphorylation of Mps1 T-loop by PP1-\u03b3 (Figure 3A-C). The comparison with \u03bb-phosphatase (C27) demonstrates specificity. These direct biochemical experiments provide strong evidence for PP1 as a Mps1 T-loop phosphatase.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "24c21545-41c9-4440-a1e3-d6d3b4f05441",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mps1 contains a PP1-docking motif (KVLF) in its N-terminus that mediates direct interaction with PP1-87B. Mutation of this motif (K231A/F234A) disrupts the interaction and reduces PP1-mediated dephosphorylation of Mps1 T-loop. The Sds22/PPP1R7 regulatory subunit is also required for full-length Mps1 binding to PP1-87B in cell extracts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32 and C34 are supported by sequence analysis (C28), pull-down assays with cell lysates (C29, C30, C34), pull-down with purified recombinant proteins (C31), and in vitro dephosphorylation assays (C32). The combination of bioinformatics, protein-protein interaction studies, and functional assays provides strong evidence for direct PP1-Mps1 interaction mediated by the KVLF motif.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "59cabae8-40f6-4684-9af3-c7fc9114c669",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "PP1-87B directly controls Mps1 T-loop dephosphorylation at kinetochores during prometaphase and metaphase. The KVLF motif mutation (K231A/F234A) prevents Mps1 T-loop dephosphorylation at both unaligned and bioriented kinetochores, mimicking PP1-87B depletion, and results in faster Mps1 dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 demonstrate through immunofluorescence (C35-C37) and FRAP (C38) that disrupting the PP1-Mps1 interaction phenocopies PP1-87B depletion. The consistency between genetic (PP1-87B RNAi) and molecular (KVLF mutation) perturbations provides strong support for the direct regulatory relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "0b78a7db-2743-45a2-a5ea-415f4a52f508",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "PP1-mediated dephosphorylation of Mps1 T-loop inactivates the kinase and promotes SAC silencing. Expression of Mps1K231A/F234A causes a SAC-dependent metaphase delay with elevated Mad1 at aligned kinetochores despite normal kinetochore-microtubule attachments. This mutant partially rescues SAC function after Aurora B inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C47 are supported by live-cell imaging (C40, C41), measurements of kinetochore-microtubule stability (C42), immunofluorescence (C43), and Aurora B inhibition experiments (C45). The genetic controls (BubR1 depletion in C41) and multiple independent assays demonstrate that preventing PP1-mediated Mps1 dephosphorylation is sufficient to delay SAC silencing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "39087dd3-ba0b-44b0-9af5-cbd6b836d0f3",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "PP1-mediated dephosphorylation of cytosolic Mps1 is critical for efficient SAC silencing. In kinetochore-null cells, Mps1K231A/F234A expression delays mitotic exit in a SAC-dependent manner requiring T-loop phosphorylation, demonstrating that inactivation of cytosolic Mps1 is essential for timely anaphase onset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C54 use kinetochore-null cells (CENP-C depletion) to isolate the role of cytosolic Mps1. The experiments show that Mps1 T490 phosphorylation persists in the absence of kinetochores (C49), and that preventing PP1-mediated dephosphorylation of cytosolic Mps1 delays mitosis (C50-C51). The genetic controls (BubR1 depletion, T490A mutation) demonstrate SAC-dependence and requirement for T-loop phosphorylation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "512f71d3-1268-474e-9091-007556644b44",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PP1-87B preferentially accumulates at bioriented kinetochores, and its recruitment is regulated by Aurora B and CDK1. Aurora B inhibition increases PP1-87B at unattached kinetochores, while CDK1 inhibition reduces Mps1 T490 phosphorylation in a PP1-87B-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 are supported by immunofluorescence showing differential PP1-87B localization (C55), Aurora B inhibition experiments (C56), and CDK1 inhibition experiments (C57). These results are consistent with known mechanisms in other systems and provide insight into how PP1 activity is regulated during mitosis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "98d97639-b7bb-4df1-98a0-a7b01c1d21f8",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Cyclin B is rapidly degraded upon chromosome biorientation, but also undergoes slow proteolysis during prometaphase. The modest decline in Cyclin B before metaphase might permit PP1-mediated Mps1 inactivation and SAC silencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C60 are supported by live-cell imaging data (Figure 6G,H), but C61 is explicitly speculative ('might be critical'). While the observation of Cyclin B dynamics is well-documented, the causal link to PP1-mediated Mps1 inactivation is not directly tested and remains a hypothesis requiring further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "7d03fecf-181a-4581-ac1b-f78d9cf250e8",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mps1 orthologues contain multiple PP1-binding motifs in different regions, suggesting that PP1-mediated dephosphorylation of Mps1 T-loop is likely conserved across species despite diversification in motif type and location.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 are supported by sequence analysis showing PP1-binding motifs in multiple Mps1 orthologues (C62) and the demonstration that human Mps1/TTK is also dephosphorylated by PP1-\u03b3 in vitro (C25-C26). The inference of conservation (C63) is reasonable given the experimental evidence in both Drosophila and human systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "00171b80-4e1a-44bd-a1c8-3e009c3fed43",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background on SAC function and the knowledge gap addressed by the study. The SAC delays anaphase until chromosomes attach to microtubules, Mps1 is an upstream regulator whose activity peaks in early mitosis through T-loop autophosphorylation, but the mechanism of Mps1 inactivation after kinetochore attachment was unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 represent well-established background knowledge (C1-C3) and identification of the knowledge gap (C4) that motivates the study. These are appropriately cited and provide context for the experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "bd4cb46c-1438-4bd7-9372-e66c3617439c",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Summary of main findings: PP1 inactivates Mps1 by dephosphorylating its T-loop in vitro and in Drosophila, occurring at both kinetochores and in the cytosol, and inactivation of both pools is essential for efficient SAC silencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 represent the main conclusions of the study, which are supported by the comprehensive experimental evidence detailed in the other result groups. These summary claims accurately reflect the findings demonstrated through multiple experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    },
+    {
+      "id": "b61c2d3d-224f-452c-ab75-1f11de8f108b",
+      "content_id": "48a36b24-3d8b-4401-b5a6-6afe5587643a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Discussion of prior work and mechanistic context. These claims review established knowledge about microtubule-Mps1 competition for Ndc80 binding, Mad1-Mad2 recruitment pathways, cytosolic Mps1 function, PP1 regulation by Aurora B and CDK1, and cyclin dynamics during mitosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C81 represent discussion of prior work that is appropriately cited and provides context for interpreting the current findings. These claims are supported by the cited literature and help frame the significance of the new results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:34.252533Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c664abda-2f32-43f1-8631-d6794c901e47",
+      "result_id": "51367b72-8627-482f-91ec-b2c5a950d974"
+    },
+    {
+      "claim_id": "3837e873-1d9c-4623-8a63-14e1337102f7",
+      "result_id": "51367b72-8627-482f-91ec-b2c5a950d974"
+    },
+    {
+      "claim_id": "04419972-45aa-424a-8e2c-393012a370d0",
+      "result_id": "51367b72-8627-482f-91ec-b2c5a950d974"
+    },
+    {
+      "claim_id": "26615bbb-15a0-4d49-944a-b81eff58e805",
+      "result_id": "51367b72-8627-482f-91ec-b2c5a950d974"
+    },
+    {
+      "claim_id": "266896a4-d690-43c3-a384-1ff8c3383b26",
+      "result_id": "51367b72-8627-482f-91ec-b2c5a950d974"
+    },
+    {
+      "claim_id": "507cb8fa-e178-4e0f-a34b-8c8bf134b8f1",
+      "result_id": "51367b72-8627-482f-91ec-b2c5a950d974"
+    },
+    {
+      "claim_id": "657687c7-bee8-4e62-9c65-577d051d8239",
+      "result_id": "51367b72-8627-482f-91ec-b2c5a950d974"
+    },
+    {
+      "claim_id": "791529d4-6ca5-43dd-b20b-4f5bbae437e1",
+      "result_id": "51367b72-8627-482f-91ec-b2c5a950d974"
+    },
+    {
+      "claim_id": "d8ff3057-b75e-49fa-a334-20559163fa83",
+      "result_id": "ac219f38-19da-43cd-b1a5-f4ea70829ef6"
+    },
+    {
+      "claim_id": "75feaa60-3be0-45c9-a950-1abf5d85de67",
+      "result_id": "ac219f38-19da-43cd-b1a5-f4ea70829ef6"
+    },
+    {
+      "claim_id": "c946ebf7-6f8e-4105-bc53-2be23dbea80c",
+      "result_id": "ac219f38-19da-43cd-b1a5-f4ea70829ef6"
+    },
+    {
+      "claim_id": "736dc14c-e3db-4ea8-91a8-c15203d4810d",
+      "result_id": "ac219f38-19da-43cd-b1a5-f4ea70829ef6"
+    },
+    {
+      "claim_id": "9a622ada-e437-4f88-b9ce-a956b7eeaa2b",
+      "result_id": "ac219f38-19da-43cd-b1a5-f4ea70829ef6"
+    },
+    {
+      "claim_id": "c13dcd80-eb2e-43d3-9b5b-01cad0e9655e",
+      "result_id": "ac219f38-19da-43cd-b1a5-f4ea70829ef6"
+    },
+    {
+      "claim_id": "5614a7f4-a9f9-400a-b91b-73a432b16aff",
+      "result_id": "ac219f38-19da-43cd-b1a5-f4ea70829ef6"
+    },
+    {
+      "claim_id": "cba97a13-62d6-4937-aa36-b4433332c864",
+      "result_id": "ac219f38-19da-43cd-b1a5-f4ea70829ef6"
+    },
+    {
+      "claim_id": "953137ac-fa06-418c-bc5f-119e15ef5c94",
+      "result_id": "ac219f38-19da-43cd-b1a5-f4ea70829ef6"
+    },
+    {
+      "claim_id": "a090f62a-a7bc-44aa-8a1a-0df7864f1fc8",
+      "result_id": "c12bdfeb-4518-4461-ac85-eee3193b387b"
+    },
+    {
+      "claim_id": "e2c8ebce-0c16-4f25-8090-fa80e96043dc",
+      "result_id": "c12bdfeb-4518-4461-ac85-eee3193b387b"
+    },
+    {
+      "claim_id": "d277e9c8-0218-4719-baaa-67977049aa05",
+      "result_id": "c12bdfeb-4518-4461-ac85-eee3193b387b"
+    },
+    {
+      "claim_id": "be3b40be-382e-4679-8027-a162d5c43064",
+      "result_id": "c12bdfeb-4518-4461-ac85-eee3193b387b"
+    },
+    {
+      "claim_id": "ec378168-32f9-4186-90ba-e3aff3fe16df",
+      "result_id": "24c21545-41c9-4440-a1e3-d6d3b4f05441"
+    },
+    {
+      "claim_id": "add36807-764a-4156-a066-4e7fda12b1fc",
+      "result_id": "24c21545-41c9-4440-a1e3-d6d3b4f05441"
+    },
+    {
+      "claim_id": "c56eda78-5907-48ef-8354-5111d96d9c66",
+      "result_id": "24c21545-41c9-4440-a1e3-d6d3b4f05441"
+    },
+    {
+      "claim_id": "326e59b2-f756-4d62-9646-55db1b93f2be",
+      "result_id": "24c21545-41c9-4440-a1e3-d6d3b4f05441"
+    },
+    {
+      "claim_id": "f1aa1aec-0fda-43b9-b5e1-f2f7da305064",
+      "result_id": "24c21545-41c9-4440-a1e3-d6d3b4f05441"
+    },
+    {
+      "claim_id": "8b5c2abd-1e13-494b-971c-8eb96bd198ac",
+      "result_id": "24c21545-41c9-4440-a1e3-d6d3b4f05441"
+    },
+    {
+      "claim_id": "0686f822-8708-46b7-a808-b018b6791c34",
+      "result_id": "59cabae8-40f6-4684-9af3-c7fc9114c669"
+    },
+    {
+      "claim_id": "760cd505-35da-41c8-bdd8-4d653dbcd09c",
+      "result_id": "59cabae8-40f6-4684-9af3-c7fc9114c669"
+    },
+    {
+      "claim_id": "abbaef98-06cf-47fb-8c1f-9333c8f2cd58",
+      "result_id": "59cabae8-40f6-4684-9af3-c7fc9114c669"
+    },
+    {
+      "claim_id": "295d938c-1d4d-4291-9b6b-fb3de7734c5d",
+      "result_id": "59cabae8-40f6-4684-9af3-c7fc9114c669"
+    },
+    {
+      "claim_id": "d6caeb15-2145-41a8-bc5d-b910e907c919",
+      "result_id": "59cabae8-40f6-4684-9af3-c7fc9114c669"
+    },
+    {
+      "claim_id": "775ea1d5-9dd7-405b-9e85-5344b5bd45aa",
+      "result_id": "0b78a7db-2743-45a2-a5ea-415f4a52f508"
+    },
+    {
+      "claim_id": "03f335c9-f84e-4629-ab3f-414edec236b0",
+      "result_id": "0b78a7db-2743-45a2-a5ea-415f4a52f508"
+    },
+    {
+      "claim_id": "ca5cac99-975e-4405-9447-6174197a7c07",
+      "result_id": "0b78a7db-2743-45a2-a5ea-415f4a52f508"
+    },
+    {
+      "claim_id": "b8801489-9a16-4ac7-a453-ef3a937b0e65",
+      "result_id": "0b78a7db-2743-45a2-a5ea-415f4a52f508"
+    },
+    {
+      "claim_id": "de4e36e1-1f68-4388-a3aa-95dc8b725fe4",
+      "result_id": "0b78a7db-2743-45a2-a5ea-415f4a52f508"
+    },
+    {
+      "claim_id": "4111fa35-0660-4149-9d7e-ecb62c521563",
+      "result_id": "0b78a7db-2743-45a2-a5ea-415f4a52f508"
+    },
+    {
+      "claim_id": "96459c36-bac0-4b32-bf41-32719fa91157",
+      "result_id": "0b78a7db-2743-45a2-a5ea-415f4a52f508"
+    },
+    {
+      "claim_id": "b725cb5a-dd93-4a21-83f4-d0eacb756700",
+      "result_id": "0b78a7db-2743-45a2-a5ea-415f4a52f508"
+    },
+    {
+      "claim_id": "f6f11299-39e7-42dd-8e91-b26e0d825bd6",
+      "result_id": "39087dd3-ba0b-44b0-9af5-cbd6b836d0f3"
+    },
+    {
+      "claim_id": "4fb25397-115e-4e27-bb97-8dfc96f95075",
+      "result_id": "39087dd3-ba0b-44b0-9af5-cbd6b836d0f3"
+    },
+    {
+      "claim_id": "8362393a-a5a7-4b61-81e9-0851ca4f54f1",
+      "result_id": "39087dd3-ba0b-44b0-9af5-cbd6b836d0f3"
+    },
+    {
+      "claim_id": "b9d69954-7500-468f-a018-3363138156f9",
+      "result_id": "39087dd3-ba0b-44b0-9af5-cbd6b836d0f3"
+    },
+    {
+      "claim_id": "ee11d5ef-129d-419e-adcb-5be42bcecc33",
+      "result_id": "39087dd3-ba0b-44b0-9af5-cbd6b836d0f3"
+    },
+    {
+      "claim_id": "dc9ecc80-f049-4f2a-8f2f-4af0c21d174d",
+      "result_id": "39087dd3-ba0b-44b0-9af5-cbd6b836d0f3"
+    },
+    {
+      "claim_id": "d9e90dd2-d720-4b8b-80b4-edd8c3b34d50",
+      "result_id": "39087dd3-ba0b-44b0-9af5-cbd6b836d0f3"
+    },
+    {
+      "claim_id": "cd8ca197-7507-4de9-9947-6177a00ce0dc",
+      "result_id": "512f71d3-1268-474e-9091-007556644b44"
+    },
+    {
+      "claim_id": "9e51155f-7950-4f3f-abd4-c23677b48a5f",
+      "result_id": "512f71d3-1268-474e-9091-007556644b44"
+    },
+    {
+      "claim_id": "13a2e124-dc3d-46ee-9345-be115b972692",
+      "result_id": "512f71d3-1268-474e-9091-007556644b44"
+    },
+    {
+      "claim_id": "46a639aa-99e5-4031-b04b-4faa947266ee",
+      "result_id": "512f71d3-1268-474e-9091-007556644b44"
+    },
+    {
+      "claim_id": "1e0e4ea1-cb32-450b-a751-5e80f34f4e12",
+      "result_id": "98d97639-b7bb-4df1-98a0-a7b01c1d21f8"
+    },
+    {
+      "claim_id": "b6a79bf4-6f45-4330-b072-3b2244434d86",
+      "result_id": "98d97639-b7bb-4df1-98a0-a7b01c1d21f8"
+    },
+    {
+      "claim_id": "85327b08-5c77-4322-bb96-53b686aea5f9",
+      "result_id": "98d97639-b7bb-4df1-98a0-a7b01c1d21f8"
+    },
+    {
+      "claim_id": "c03b2851-2cef-41ec-93ad-0a5cfdb9bd0b",
+      "result_id": "7d03fecf-181a-4581-ac1b-f78d9cf250e8"
+    },
+    {
+      "claim_id": "85875019-2327-4d30-8668-b4181beeac50",
+      "result_id": "7d03fecf-181a-4581-ac1b-f78d9cf250e8"
+    },
+    {
+      "claim_id": "bdc9515c-f246-49d3-b765-61605329d240",
+      "result_id": "00171b80-4e1a-44bd-a1c8-3e009c3fed43"
+    },
+    {
+      "claim_id": "66c237bb-bd46-4688-b97d-cc1a7df6e458",
+      "result_id": "00171b80-4e1a-44bd-a1c8-3e009c3fed43"
+    },
+    {
+      "claim_id": "97fedbb5-a1dd-498f-9a48-47c0dc63f07f",
+      "result_id": "00171b80-4e1a-44bd-a1c8-3e009c3fed43"
+    },
+    {
+      "claim_id": "12775197-9521-404c-8f91-0a24b3957dfa",
+      "result_id": "00171b80-4e1a-44bd-a1c8-3e009c3fed43"
+    },
+    {
+      "claim_id": "6a4e8afb-383a-466c-aca4-79df9cb39b23",
+      "result_id": "bd4cb46c-1438-4bd7-9372-e66c3617439c"
+    },
+    {
+      "claim_id": "285a6fcb-8ca8-4a20-94ec-a2cb6f17a3a9",
+      "result_id": "bd4cb46c-1438-4bd7-9372-e66c3617439c"
+    },
+    {
+      "claim_id": "c46292d2-4929-4875-a6f8-77a6ef0711da",
+      "result_id": "bd4cb46c-1438-4bd7-9372-e66c3617439c"
+    },
+    {
+      "claim_id": "75b787b4-e28d-4a3c-b044-8ce70c90df41",
+      "result_id": "b61c2d3d-224f-452c-ab75-1f11de8f108b"
+    },
+    {
+      "claim_id": "fb83854c-52a1-4d43-b0d5-5432a95a6da5",
+      "result_id": "b61c2d3d-224f-452c-ab75-1f11de8f108b"
+    },
+    {
+      "claim_id": "cd742a4f-5c6c-4713-bcb9-c477b483d925",
+      "result_id": "b61c2d3d-224f-452c-ab75-1f11de8f108b"
+    },
+    {
+      "claim_id": "ae81b1fe-f21a-4ffc-81b7-0bea78fd3c02",
+      "result_id": "b61c2d3d-224f-452c-ab75-1f11de8f108b"
+    },
+    {
+      "claim_id": "a44ac50a-35ee-41f2-bc6a-fb1cd13059a2",
+      "result_id": "b61c2d3d-224f-452c-ab75-1f11de8f108b"
+    },
+    {
+      "claim_id": "569f672c-cc07-4a67-bd48-1b7dd8142772",
+      "result_id": "b61c2d3d-224f-452c-ab75-1f11de8f108b"
+    },
+    {
+      "claim_id": "39881969-1a92-4a90-a59b-f6d887dba40d",
+      "result_id": "b61c2d3d-224f-452c-ab75-1f11de8f108b"
+    },
+    {
+      "claim_id": "919731be-cc47-4e00-ba7a-81065db42e6a",
+      "result_id": "b61c2d3d-224f-452c-ab75-1f11de8f108b"
+    },
+    {
+      "claim_id": "264b0778-5131-4971-a6aa-ed29852bd071",
+      "result_id": "b61c2d3d-224f-452c-ab75-1f11de8f108b"
+    },
+    {
+      "claim_id": "21a985df-430d-4546-b92f-4a0878779ba6",
+      "result_id": "b61c2d3d-224f-452c-ab75-1f11de8f108b"
+    },
+    {
+      "claim_id": "4e2ea4cd-f223-4d4c-89ea-3699587e97d3",
+      "result_id": "b61c2d3d-224f-452c-ab75-1f11de8f108b"
+    },
+    {
+      "claim_id": "f6fd40f2-d0eb-4cab-8132-37429709cbcc",
+      "result_id": "b61c2d3d-224f-452c-ab75-1f11de8f108b"
+    },
+    {
+      "claim_id": "6293d736-e132-41f5-a4e7-55c3bcfee2d1",
+      "result_id": "b61c2d3d-224f-452c-ab75-1f11de8f108b"
+    },
+    {
+      "claim_id": "662233b3-a346-43d7-b031-bedfaab3b572",
+      "result_id": "b61c2d3d-224f-452c-ab75-1f11de8f108b"
+    },
+    {
+      "claim_id": "bd7b81e2-69da-4197-9647-419e71eaa7ec",
+      "result_id": "b61c2d3d-224f-452c-ab75-1f11de8f108b"
+    },
+    {
+      "claim_id": "4915e5a5-e416-4073-a384-1583517bc53a",
+      "result_id": "b61c2d3d-224f-452c-ab75-1f11de8f108b"
+    },
+    {
+      "claim_id": "2bfd2407-cc8b-4fe1-b02e-09dd7dfe8d08",
+      "result_id": "b61c2d3d-224f-452c-ab75-1f11de8f108b"
+    },
+    {
+      "claim_id": "3abce55c-2d0b-4845-9f20-bd142bac5d4a",
+      "result_id": "b61c2d3d-224f-452c-ab75-1f11de8f108b"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,459 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C35",
+      "C36",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Human tilt estimation performance differs dramatically between natural and artificial stimuli. With artificial stimuli, estimates are precise, unbiased, and have low variance across all tilts. With natural stimuli, estimates are imprecise and strongly biased, with maximum bias at oblique tilts and minimum bias at cardinal tilts, and variance is highest at oblique tilts (~60\u00b0 and ~120\u00b0) and lowest at cardinal tilts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C35, C36, C40, C41, and C42 are well-supported by experimental data shown in Figures 2E and 2F. The experimental design appropriately matched artificial and natural stimuli on key dimensions (tilt, slant, distance, luminance contrast) per C33-C34, allowing valid comparison. The data clearly show the described performance patterns across stimulus types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C52",
+      "C53",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C91",
+      "C93"
+    ],
+    "result": "A Bayes optimal model (MMSE estimator) grounded in natural scene statistics predicts human tilt estimation performance without free parameters. The model accounts for summary statistics (estimate counts, means, variances), conditional error distributions, conditional groundtruth distributions, and explains a large proportion of variance (R\u00b2 values shown in Figure 5D). This indicates humans estimate tilt in accordance with optimal processes that minimize error in natural scenes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C37, C52, C53, C75-C80, C91, and C93 are strongly supported by the modeling results shown in Figures 2-5. The model's parameter-free predictions (C53, C80) matching human performance across multiple levels of analysis (summary statistics, conditional distributions) provides compelling evidence. The high R\u00b2 values (Figure 5D) quantitatively support C77. The conclusion that human performance is near-optimal (C78, C93) follows logically from the close model-human match.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Natural stimuli elicit similar trial-by-trial errors from human and model observers. Circular correlation coefficients between model and human trial-by-trial estimates are significant and approach the human-human correlation bound in some cases. This correlation persists even after bias correction, indicating that natural stimulus variation at a given groundtruth tilt causes similar response variation in human and model observers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 are supported by the trial-by-trial error analysis shown in Figure 6. The significant correlation coefficients (C84) with confidence intervals (Figure 6B,D) provide statistical support. The comparison to human-human correlations (C87, C88) establishes an appropriate upper bound. The persistence of correlations after bias correction (C86) strengthens the conclusion that stimulus properties drive both human and model errors (C85, C89).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C56",
+      "C57",
+      "C58",
+      "C134"
+    ],
+    "result": "Despite poorer overall performance with natural stimuli, all tilt estimates (cardinal and oblique) are similarly good predictors of groundtruth tilt. The most probable groundtruth tilt conditional on the estimate peaks at the estimated tilt for both stimulus types, and the variance of these conditional distributions is approximately constant regardless of whether the estimated tilt is cardinal or oblique. Estimates from natural and artificial stimuli provide nearly equivalent information about groundtruth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C51, C56, C57, C58, and C134 are supported by the conditional probability analysis shown in Figure 4A and Figure 4\u2014figure supplement 1. The data clearly show that p(\u03c4|\u03c4\u0302) peaks at the estimated tilt with approximately constant variance across estimate values. This counterintuitive finding\u2014that low-accuracy estimates from natural stimuli predict groundtruth as well as high-accuracy estimates from artificial stimuli\u2014is well-documented in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The variability in measurement reliability across natural scenes, combined with Bayesian estimation principles, explains why all tilt estimates are equally reliable predictors of groundtruth. Cardinal tilt estimates can result from either reliable measurements of cardinal tilts or unreliable measurements of oblique tilts (influenced by the prior), while oblique tilt estimates can only result from reliable measurements of oblique tilts that overcome the prior's influence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 provide a theoretical explanation for the empirical findings in C50-C58. The reasoning is logically sound and consistent with Bayesian estimation theory (C60 is established knowledge per C39). The explanation accounts for how variable measurement reliability combined with a non-uniform prior (Figure 1C, C15) produces the observed pattern where all estimates are equally informative about groundtruth despite differences in accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C49"
+    ],
+    "result": "With natural stimuli, estimation error distributions are irregularly distributed and change systematically with groundtruth tilt. At oblique groundtruth tilts (e.g., 60\u00b0), error distributions are bimodal with peaks at non-zero errors, indicating that observers frequently estimated cardinal tilts instead of the correct oblique tilt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C49 are supported by the conditional error distributions shown in Figure 3A. The data clearly show irregular, bimodal error distributions for oblique groundtruth tilts, with specific examples at \u03c4=60\u00b0 and \u03c4=120\u00b0 showing peaks at errors corresponding to cardinal tilt estimates. This pattern contrasts with the unimodal, zero-centered distributions for artificial stimuli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Slant and distance substantially impact tilt estimation error with both natural and artificial stimuli. Absolute error decreases linearly with slant (approximately 20\u00b0 decrease from 30\u00b0 to 60\u00b0 slant) and increases linearly with distance (approximately 15\u00b0 increase from 3m to 30m).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 are supported by the data shown in Figure 7A and 7B. The linear relationships are clearly demonstrated, and the quantitative estimates (20\u00b0 change with slant, 15\u00b0 change with distance) are consistent with the plotted data. The finding is also consistent with previous literature (C94 cites Watt et al., 2005).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Even after controlling for slant, distance, and luminance contrast, tilt estimation with natural stimuli is considerably poorer than with artificial stimuli. Tilt variance (departure from surface planarity) is identified as an additional key stimulus factor that impacts performance. Estimation error increases linearly with tilt variance for both human and model observers, and this effect is independent of groundtruth tilt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C105 are supported by the analysis in Figures 7 and 8. The experimental design matched natural and artificial stimuli on slant, distance, and contrast (C33), yet performance differences persisted (C99), necessitating identification of other factors (C100). The definition of tilt variance (C101) is clear, and Figure 8A shows the linear relationship with error (C102). Figure 8B demonstrates covariation with groundtruth tilt (C103), and Figure 8C shows the effect persists when controlling for this covariation (C104), supporting the conclusion in C105.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Human tilt estimation performance with full-field viewing (36\u00b0 x 21\u00b0) is essentially the same as with small patches (1\u00b0 or 3\u00b0). This is explained by the fact that scene structure is correlated only over a local area, and surfaces rarely have constant orientation over large visual angles (except the ground plane), so distant scene locations add little information about local tilt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 are supported by the full-field viewing experiment data shown in Figure 2\u2014figure supplement 5. The data clearly show similar performance between full-field and patch viewing (C106). The explanation provided in C107-C109 is based on established knowledge about the spatial statistics of natural scenes and provides a reasonable account for the finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Alternative models (single-cue MMSE estimators, prior-based model, random model) predict human performance more poorly than the three-cue normative model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is supported by the model comparison shown in Figure 6\u2014figure supplement 2. Multiple alternative models are tested, and all show lower correlation with human performance than the three-cue normative model. This establishes that the model's predictive power is not trivial and provides a benchmark for future models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "The results are robust to the scale used for computing groundtruth tilt and image cue values. All eight combinations of scales (two for groundtruth tilt, four for image cues) yield the same qualitative pattern of results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110 is supported by the robustness analysis described in the text. Testing multiple scale combinations and finding consistent qualitative patterns demonstrates that the main findings are not artifacts of the specific scales chosen. This is an important control for the validity of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The experimental design involved three human observers (two authors, one na\u00efve) binocularly viewing thousands of randomly sampled natural scene patches and matched artificial stimuli. Stimuli were presented on a large stereo projection system at 3m viewing distance to minimize focus cues to flatness. Natural and artificial stimuli were matched on tilt, slant, distance, and luminance contrast, allowing attribution of performance differences to other factors. The study was ethically approved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 and C150-C152 describe the experimental methods and are supported by the detailed Materials and methods section. The experimental design is appropriate for the research questions, with key controls (matching stimuli on multiple dimensions, long viewing distance to minimize focus cues) properly implemented. The ethical procedures (informed consent, IRB approval) are documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C157",
+      "C160"
+    ],
+    "result": "The unbiased responses to artificial stimuli imply that biased responses to natural stimuli accurately reflect biased perceptual estimates, under the assumption that the output-mapping function (from perceptual estimates to probe responses) is stable across stimulus types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C157, and C160 present a logical inference about the interpretation of the data. The reasoning is sound: unbiased responses to artificial stimuli (C35, C42) suggest an unbiased output-mapping function, and if this function is stable across stimulus types, then biased responses to natural stimuli must reflect biased perceptual estimates. The assumption of stable output mapping is explicitly stated and reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C67",
+      "C68",
+      "C73",
+      "C74"
+    ],
+    "result": "The normative model is a Bayes optimal observer that optimizes 3D tilt estimation given a squared error cost function. The model is 'image-computable' (computes cues from image pixels and produces tilt estimates) and is free of assumptions about statistical independence and the form of the joint probability distribution, providing a principled benchmark grounded in natural scene statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C67, C68, C73, and C74 describe key properties of the normative model. These are supported by the model description in the text and Figure 5, with appropriate citations (Burge et al., 2016). The model's freedom from independence assumptions (C73) is an important advantage over standard cue-combination approaches (C71, C129), making it particularly suitable for natural scenes where independence may not hold (C72).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Cardinal surface tilts associated with the ground plane (90\u00b0) and tree trunks (0\u00b0 and 180\u00b0) occur far more frequently than oblique tilts in natural scenes. This prior distribution was computed from 600 million groundtruth tilt samples in the natural scene database.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C16 are supported by the prior distribution shown in Figure 1C. The large sample size (600 million samples) provides strong statistical support for the distribution. This prior distribution is fundamental to the Bayesian interpretation of the results and is consistent with previous work (citations in C15).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "With artificial stimuli, the normative model predicts unbiased estimate means but underestimates the variance of human estimates. This discrepancy may be because the model does not explicitly account for internal noise, which may be swamped by natural stimulus variability in natural scenes but may be important for artificial stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C119 identify a limitation of the model and offer speculation about the cause. C115 and C116 are supported by the data (the model predicts means well but underestimates variance with artificial stimuli). However, C117-C119 are explicitly speculative (C117, C118, C119 all use 'may'). The proposed explanation is plausible but not tested, so the cause of the discrepancy remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The statistics of local surface orientation change with elevation in natural scenes. The current study's scene statistics were computed from range scans captured from human eye height with earth-parallel gaze. Since the vast majority of eye movements in natural scenes are smaller than 10\u00b0, the results are likely representative of an important subset of natural viewing conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 address the generalizability of the findings. C111 is supported by citations (Adams et al., 2016; Yang and Purves, 2003b). C112 describes the data collection conditions with citation support. C113 is supported by multiple citations about eye movement statistics. C114 is a reasonable inference based on C113, though it acknowledges the results may not generalize to all viewing conditions (e.g., different gaze angles).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C81",
+      "C92"
+    ],
+    "result": "The similarities between human and model performance suggest that human performance patterns with natural stimuli are lawful and that human visual systems have internalized local image and scene statistics to optimally infer 3D structure. The close agreement suggests humans use the same cues (or strongly correlated cues) as the normative model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C81, and C92 present high-level interpretations of the findings. These inferences are well-supported by the extensive evidence of human-model similarity across multiple levels of analysis (summary statistics, conditional distributions, trial-by-trial errors). The conclusion that humans have internalized natural scene statistics (C7) is a reasonable interpretation of the parameter-free model's ability to predict human performance. The inference about cue usage (C81) is appropriately cautious ('or cues that strongly correlate').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The current study extends previous work in three ways: (1) demonstrating model-human similarity at the level of summary statistics, distributions, and trial-by-trial errors (not just summary statistics); (2) showing humans behave as if they have encoded joint statistics of 2D images and 3D scene properties (not just 2D image statistics); (3) testing performance with both natural and artificial stimuli (not just artificial stimuli). The dramatic but lawful changes with natural stimuli highlight the importance of studying vision with ecologically relevant stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C149 position the current work relative to previous literature. The comparisons to previous work (C143, C145, C147) are supported by appropriate citations. The claims about the current study's contributions (C144, C146, C148) are supported by the results presented. The conclusion about the importance of natural stimuli (C149) is a reasonable inference from the observed performance differences between natural and artificial stimuli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "There is no guarantee that the three local image cues used by the normative model (luminance, texture, disparity gradients) are the most informative cues in natural scenes, though different local cues are speculated to be unlikely to yield substantially better performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125 and C126 acknowledge a limitation and offer speculation. C125 correctly notes that the optimality of the chosen cues is not guaranteed. C126 is explicitly speculative ('we speculate') with citation support (Burge et al., 2016). Without testing alternative cues, the claim remains uncertain. This is appropriately identified as a direction for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C135",
+      "C137",
+      "C138"
+    ],
+    "result": "The finding that local tilt estimates are unbiased predictors with nearly equal reliability implies that optimal spatial pooling of local estimates may be relatively simple (e.g., straight averaging under independence assumptions). However, local groundtruth tilts and estimates are spatially correlated, so the independence assumption is not strictly correct, though spatial correlations could be estimated from the database and incorporated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135, C137, and C138 discuss implications for local-global processing. C135 is a reasonable inference from the findings in C134 (supported by Figure 4). C137 correctly acknowledges a limitation of the independence assumption. C138 suggests a potential solution (estimating spatial correlations from the database). The reasoning is sound, though the actual implementation and testing of spatial pooling is identified as future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Estimating local surface orientation (slant and tilt) is fundamental to recovering 3D structure. Slant is the amount of rotation away from an observer; tilt is the direction of rotation. Tilt has received less attention than slant despite both being critically important for 3D interaction (e.g., determining where one can walk based on surface tilt).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C14 provide background and motivation. C1, C8, C9, and C11 are statements of established knowledge in the field. C10 is a statement about the literature that is reasonable given the relative scarcity of tilt studies. C12-C14 provide intuitive examples of tilt's functional importance, based on common knowledge about locomotion and surface properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Most previous studies used artificial stimuli (planar or smoothly curved surfaces with regular or random patterns) that are not representative of natural scenes, which have complex geometries and textures. Performance with artificial stimuli may not generalize to natural scenes, and models developed with artificial stimuli often generalize poorly. Few studies have examined 3D orientation estimation with natural photographic images, and none with high-resolution groundtruth. Natural images are complex and difficult to characterize, groundtruth is difficult to collect, and research with natural stimuli has been criticized for being too complicated or poorly controlled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C26 provide literature review and identify gaps. C17 is well-supported by extensive citations. C18-C21 are reasonable inferences about limitations of previous work. C22-C23 identify a gap in the literature based on the authors' knowledge. C24-C26 describe well-known challenges in natural scene research. These claims effectively motivate the current study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Standard cue-combination approaches (maximum likelihood estimation) make multiple assumptions (squared error cost, cue independence, unbiased Gaussian single-cue estimates, flat prior). The current approach assumes only a squared error cost function and is guaranteed to produce Bayes optimal estimates regardless of whether other assumptions hold. A simple average of single-cue estimates underperforms the three-cue normative model, which is unsurprising given that cues are not independent, single-cue estimates are not Gaussian, and the prior is not flat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C133 compare the current modeling approach to standard methods. C129 accurately describes standard approaches with appropriate citations. C130-C131 correctly describe advantages of the current approach. C132-C133 report preliminary analyses showing that simple averaging underperforms, with a reasonable explanation based on violations of standard assumptions. This justifies the more sophisticated modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Classic studies face a dilemma: artificial stimuli have known groundtruth but artificial properties, while natural stimuli have realistic properties but typically unknown groundtruth. The current study's use of natural stereo-images with laser-based groundtruth and matched artificial stimuli allows relating results to classic literature while isolating performance-controlling differences. Tilt variance is identified as a pervasive performance-altering feature not explicitly considered in most investigations, and characterizing its impact is speculated to be fundamental for understanding real-world 3D orientation estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C142 discuss the study's methodological contribution. C139-C140 accurately describe limitations of previous approaches based on general knowledge. C141 is supported by the tilt variance analysis (Figures 8-9) and is a reasonable conclusion. C142 is speculation ('we speculate') but is supported by analogy to the importance of luminance contrast in pattern detection (with citation). The speculation is reasonable given the demonstrated impact of tilt variance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "The uniformly reliable information provided by estimates about groundtruth may simplify computational processes that optimally pool local estimates into global estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C63 is explicitly speculative ('may simplify') about implications for subsequent processing. While the speculation is reasonable given the findings about uniform reliability (C56, C134), it is not tested in the current study. The claim appropriately directs readers to the Discussion for further elaboration, but without empirical testing of global pooling, the claim remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Natural stimuli were chosen via constrained random sampling, which increases the likelihood that performance levels are representative of generic natural scenes. The normative model's tilt estimates change smoothly with image cue values, so systematic sparse sampling should be sufficient to explore the space of optimal estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 address sampling methodology. C120 describes the sampling method. C121 is a reasonable inference about the benefits of random sampling for generalizability. C122 describes a property of the model's estimate function. C123 is a reasonable inference from C122 about the sufficiency of sparse sampling. Together, these claims justify the sampling approach and address potential concerns about limited sample size.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "The estimation of 3D structure is aided by joint estimation of tilt and slant (Marr's '2.5D sketch'). The current work addresses only unsigned tilt estimation, not signed tilt, slant, or joint tilt-slant estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127 and C128 acknowledge scope limitations. C127 is supported by citation to Marr (1982). C128 clearly states what the current study does and does not address. This is appropriate scoping and identifies directions for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C155",
+      "C156"
+    ],
+    "result": "The texture cue to tilt is defined as the orientation of the major axis of the local amplitude spectrum of the luminance image. This texture cue is more accurate in natural scenes than traditional texture cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155 and C156 describe the texture cue definition and properties. C155 provides a clear definition. C156 is supported by multiple citations (Burge et al., 2016; Clerc and Mallat, 2002; Galasso and Lasenby, 2007; Malik and Rosenholtz, 1997; Massot and H\u00e9rault, 2008). This justifies the choice of this non-standard texture cue.",
+    "result_type": "MINOR"
+  }
+]

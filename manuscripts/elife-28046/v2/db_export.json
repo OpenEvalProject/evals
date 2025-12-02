@@ -1,0 +1,2012 @@
+{
+  "submission": {
+    "id": "767dff88-8f1a-4b41-9ab0-7d7ef4b05dc9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:42:20.929412Z",
+    "updated_at": "2025-12-01T20:42:20.929412Z"
+  },
+  "content": [
+    {
+      "id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "submission_id": "767dff88-8f1a-4b41-9ab0-7d7ef4b05dc9",
+      "content_type": "manuscript",
+      "content_text": "# Ubiquitination-dependent control of sexual differentiation in fission yeast\n\n## Authors\n\n- Fabrizio Simonetti<sup>1</sup>\n- Tito Candelli<sup>1</sup>\n- Sebastien Leon<sup>3</sup> ([ORCID: 0000-0002-2536-8595](https://orcid.org/0000-0002-2536-8595))\n- Domenico Libri<sup>1</sup>\n- Mathieu Rougemaille<sup>1</sup> ([ORCID: 0000-0002-9675-3888](https://orcid.org/0000-0002-9675-3888)) \u2020\n\n### Affiliations\n\n1. Institut Jacques Monod, Team \u201cMetabolism and Function of RNA in the Nucleus\u201d CNRS, UMR7592, Universit\u00e9 Paris-Diderot, Sorbonne Paris Cit\u00e9 Paris France\n2. Universit\u00e9 Paris-Saclay Gif-sur-Yvette France\n3. Institut Jacques Monod, Team \u201cMembrane Trafficking, Ubiquitin and Signaling\u201d CNRS, UMR9198, Universit\u00e9 Paris-Diderot, Sorbonne Paris Cit\u00e9 Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn fission yeast, meiosis-specific transcripts are selectively eliminated during vegetative growth by the combined action of the YTH-family RNA-binding protein Mmi1 and the nuclear exosome. Upon nutritional starvation, the master regulator of meiosis Mei2 inactivates Mmi1, thereby allowing expression of the meiotic program. Here, we show that the E3 ubiquitin ligase subunit Not4/Mot2 of the evolutionarily conserved Ccr4-Not complex, which associates with Mmi1, promotes suppression of meiotic transcripts expression in mitotic cells. Our analyses suggest that Mot2 directs ubiquitination of Mei2 to preserve the activity of Mmi1 during vegetative growth. Importantly, Mot2 is not involved in the constitutive pathway of Mei2 turnover, but rather plays a regulatory role to limit its accumulation or inhibit its function. We propose that Mmi1 recruits the Ccr4-Not complex to counteract its own inhibitor Mei2, thereby locking the system in a stable state that ensures the repression of the meiotic program by Mmi1.\n\n## Introduction\n\nThe cell cycle switch from mitosis to meiosis is associated with profound changes in gene expression. In yeast, initiation of meiosis occurs upon nutrient starvation and depends on well-characterized signalling pathways (Yamamoto, 2010). Several hundred genes are induced thanks to specific transcription factors, which define the key steps of the meiotic program (Mata et al., 2007). Previous work in S. pombe has revealed the existence of an additional mechanism that controls the onset of meiosis. An RNA degradation system selectively eliminates meiosis-specific transcripts produced during the mitotic cell cycle, thereby inhibiting sexual differentiation (Harigaya et al., 2006). Essential to this regulatory process is Mmi1 (meiotic mRNA interceptor 1), a member of the conserved YTH family of RNA-binding proteins that localizes exclusively to the nucleus. Mmi1 recognizes a cis-acting region within targeted mRNAs, called DSR (Determinant of Selective Removal), which confers nuclear exosome-mediated degradation. DSR regions are enriched in repeats of the hexanucleotide motif UNAAAC to which Mmi1 binds to via its C-terminal YTH domain (Yamashita et al., 2012; Wang et al., 2016; Chatterjee et al., 2016; Wu et al., 2017; Touat-Todeschini et al., 2017). Mmi1 also associates to several coding and non-coding RNAs with fewer UNAAAC motifs, indicating flexibility in target recognition (Kilchert et al., 2015; Touat-Todeschini et al., 2017).\n\nSeveral factors identified both by genetic screens and biochemical analyses, cooperate with Mmi1 to promote meiotic mRNA suppression during vegetative growth. Previous studies demonstrated a role for components of the 3\u2019-end processing machinery as well as the canonical poly(A) polymerase Pla1 and the poly(A) binding protein Pab2 (St-Andr\u00e9 et al., 2010; Yamanaka et al., 2010). Mechanistically, it was first proposed that Mmi1 promotes hyperadenylation of targeted transcripts and binding of Pab2 onto mRNAs poly(A) tails, which in turn recruits the nuclear exosome subunit Rrp6 for degradation. Mmi1 was next found to associate and cooperate with the multi-subunit MTREC complex to mediate meiotic mRNAs suppression (Sugiyama and Sugioka-Sugiyama, 2011; Yamashita et al., 2012; Lee et al., 2013; Egan et al., 2014; Zhou et al., 2015). Core components of this complex include the zinc finger-containing protein Red1 and the Mtr4-like RNA helicase Mtl1 (Lee et al., 2013; Egan et al., 2014; Zhou et al., 2015). MTREC is crucial for meiotic mRNA degradation and has been proposed to physically bridge RNA-bound Mmi1 to the nuclear exosome. Recent studies also reported an interaction between Mmi1 and the Ccr4-Not complex (Cotobal et al., 2015; Ukleja et al., 2016; Sugiyama et al., 2016; Stowell et al., 2016), the major cytoplasmic mRNA deadenylation machinery conserved from yeast to humans (Wahle and Winkler, 2013). However, although Mmi1 recruits Ccr4-Not to its RNA targets in vivo (Cotobal et al., 2015) and stimulates its deadenylation activity in vitro (Stowell et al., 2016), this function of the complex is not required for the turnover and the translation of DSR-containing meiotic mRNAs (Cotobal et al., 2015; Sugiyama et al., 2016).\n\nA subset of Mmi1-regulated genes is covered by repressive chromatin marks (i.e. dimethylated histone H3 lysine 9 or H3K9me2) during vegetative growth, which disappear upon developmental or environmental cues (Zofall et al., 2012; Hiriart et al., 2012; Tashiro et al., 2013; Shah et al., 2014). Mmi1 and the MTREC subunit Red1 recruit the H3K9 methyltransferase Clr4 to mediate H3K9me2 deposition and direct components of the RNAi machinery to these loci (Zofall et al., 2012; Hiriart et al., 2012; Tashiro et al., 2013; Shah et al., 2014). The function of Mmi1, Clr4 and RNAi factors in suppressing the expression of meiotic mRNAs in vegetative cells also prevents the incidence of chromosome missegregation events (Folco et al., 2017). However, the contribution of heterochromatin and RNAi machineries to the silencing of Mmi1 targets is moderate. Rather, the post-transcriptional degradation pathway mediated by Mmi1, MTREC and the exosome is predominant (Harigaya et al., 2006; Lee et al., 2013; Ard et al., 2014).\n\nUpon nutritional starvation, Mmi1 is sequestered in an RNP complex, which allows translation of meiotic mRNAs and progression of the cell through meiosis (Harigaya et al., 2006). This inhibitory complex includes the nucleocytoplasmic shuttling RNA-binding protein Mei2, required for pre-meiotic DNA synthesis and the first meiotic division, and the DSR-containing lncRNA meiRNA, encoded by the sme2+\u00a0gene (Watanabe and Yamamoto, 1994; Sato et al., 2001; Shimada et al., 2003). Sequestration of Mmi1 by the Mei2-meiRNA complex occurs at the sme2+ locus (Shimada et al., 2003; Shichino et al., 2014) and is essential for entry into meiosis and sexual differentiation (Harigaya et al., 2006; Shichino et al., 2014).\n\nMitotic cells exploit transcriptional and post-translational mechanisms to control Mei2 abundance and activity. mei2+\u00a0expression depends on the meiosis-specific transcription factor Ste11 (Sugimoto et al., 1991) and its activity and stability are regulated by phosphorylation via two protein kinases, Pat1 (also known as Ran1) and Tor2, both of which are essential for vegetative growth and inhibition of sexual differentiation (Kitamura et al., 2001; Alvarez and Moreno, 2006; Otsubo et al., 2014). Phosphorylated forms of Mei2 are inhibited by 14-3-3 family proteins (Sato et al., 2002) and are targeted for degradation by the proteasome in an ubiquitination-dependent manner (Kitamura et al., 2001; Otsubo et al., 2014).\n\nDespite recent progresses, a full understanding of how Mmi1 cooperates with its cofactors during vegetative growth to prevent initiation of the meiotic program is still elusive. Using affinity purification and co-immunoprecipitation assays, we show that Mmi1, but not MTREC, stably associates in vivo with the evolutionarily conserved Ccr4-Not complex. This interaction is functionally relevant because integrity of the Ccr4-Not complex is required for meiotic mRNA suppression during vegetative growth. Surprisingly, we show that the RNA deadenylases Ccr4 and Caf1/Pop2 are dispensable for controlling the levels of meiotic transcripts, while the E3 ubiquitin ligase subunit Not4/Mot2 is essential for this process. Importantly, biochemical and genetic analyses suggest that Mot2 ubiquitinates the Mmi1 inhibitor Mei2 to functionnally inactivate the latter or to limit its steady state levels. Our results reveal that Mot2 is not responsible for the constitutive pathway of Mei2 turnover, which depends on the E3 ubiquitin ligase Ubr1, but negatively controls Mei2 to preserve the activity of Mmi1. We propose that Mmi1 recruits the Ccr4-Not complex to fine-tune the levels or the activity of its own inhibitor Mei2, thereby sustaining efficient meiotic mRNAs suppression. Our data unveil an important role for the conserved E3 ligase Not4/Mot2 in providing an additional level of control to the repression of the meiotic program in vegetative cells.\n\n## Results\n\n### The RNA-binding protein Mmi1, but not MTREC, associates with the Ccr4-Not complex in vivo\n\nTo obtain a comprehensive view of Mmi1 protein partners during vegetative growth, we affinity-purified a C-terminally TAP-tagged version of the protein and analyzed interacting proteins by mass spectrometry (Figure 1A\u2013B, Figure 1\u2014figure supplement 1A). We identified several factors that co-purify with Mmi1, even when extracts were treated with RNases (Figure 1B, Figure 1\u2014source data 1). As previously reported (Yamashita et al., 2012; Lee et al., 2013; Egan et al., 2014; Zhou et al., 2015; Sugiyama et al., 2016), we found the Mmi1 cofactor Erh1, components of the MTREC complex as well as splicing factors. The most abundant interacting factors were the subunits of the Ccr4-Not complex (Figure 1B), which was also reported independently while this work was in progress (Cotobal et al., 2015; Ukleja et al., 2016; Sugiyama et al., 2016; Stowell et al., 2016). Other associated proteins include subunits of the proteasome, transcription and chromatin remodelling factors as well as components of signalling pathways. We further focused on the functional implications of the interaction between Mmi1 and Ccr4-Not.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/28046/elife-28046-fig1-v2.jpg)\n\n**Figure 1.:** (A) Silver-stained SDS polyacrylamide gel showing proteins co-eluting with TAP-tagged Mmi1 in minimal medium (EMM0.5X) after one-step affinity purification. Extracts were treated with RNaseA/T1 before immunoprecipitation and TEV cleavage. As a control, extracts from cells expressing untagged protein were used. The positions of the bait protein (Mmi1-CBP) and TEV are indicated. (B) Results of liquid chromatography-tandem mass spectrometry (LC-MS/MS) analysis of Mmi1-TAP associated proteins. The percentage of sequence coverage, scores (i.e. significance of the identified peptides represented as the -log10 of the Posterior Error Probability provided by the Percolator algorithm) and molecular weights are indicated. (C) Western blot showing that Not1-3xFLAG co-immunoprecipitates with Mmi1-TAP in minimal medium (EMM0.5X) in an RNA- and Red1-independent manner. (WCE) Whole Cell Extract; (IP) Immunoprecipitation. (D) Western blot showing that Not1-3xFLAG co-immunoprecipitates with Mmi1-TAP in minimal medium (EMM0.5X), but not with Mtl1-TAP and Red1-TAP. (WCE) Whole Cell Extract; (IP) Immunoprecipitation.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28046/elife-28046-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) RT-qPCR analysis of the mei4+, ssm4+\u00a0and mcp5+\u00a0meiotic transcripts in Mmi1-TAP cells grown in minimal medium (EMM0.5X). Signals were normalized to act1+\u00a0mRNA levels and expressed relative to the wild type strain. A strain deleted for Rrp6 was used as a control. Error bars represent the standard deviation from three independent experiments. Note that Mmi1-TAP cells display minor accumulation of meiotic transcripts. (B), (C) Western blots showing that Caf1-3xFLAG (B) and Mot2-GFP (C) co-immunoprecipitate with Mmi1-TAP in minimal medium (EMM0.5X) in an RNA- and Red1-independent manner. (D) Western blot showing that Caf1-3xFLAG co-immunoprecipitates with Mmi1-TAP in rich medium (YE), but not with Mtl1-TAP and Red1-TAP.\n\nThe Ccr4-Not complex assembles around its scaffolding component Not1 and contains three catalytic subunits, the Ccr4 and Caf1/Pop2 deadenylases and the E3 ubiquitin ligase Not4/Mot2 (Ukleja et al., 2016). We validated the interactions revealed by the MS analysis using co-immunoprecipitation experiments. Mmi1 efficiently pulled down Not1, Caf1 and Mot2 in an RNA-independent manner (Figure 1C, Figure 1\u2014figure supplement 1B\u2013C ). These interactions were preserved in the absence of Red1, which is required for MTREC integrity, possibly supporting the existence of alternative Mmi1-containing complexes. Consistent with this, Mtl1 and Red1 did not interact with Not1 and Caf1 in our assays (Figure 1D, and Figure 1\u2014figure supplement 1D). Together, our data support the notion that Mmi1 associates independently with MTREC and Ccr4-Not during vegetative growth.\n\n### The E3 ubiquitin ligase Mot2 of the Ccr4-Not complex is required for meiotic mRNAs suppression\n\nThe Ccr4-Not complex localizes throughout the cell and is involved in essentially all steps in gene expression, including chromatin modification, transcription, nuclear and cytoplasmic mRNA degradation, translational repression, protein degradation and quality control (Miller and Reese, 2012; Collart, 2016). To assess whether Ccr4-Not plays a role in the suppression of meiotic mRNAs by Mmi1 during vegetative growth, we first examined steady state levels of meiotic transcripts by RT-qPCR in strains deleted for its non-essential subunits (i.e. all but the scaffolding component Not1). Neither the RNA deadenylases Ccr4 and Caf1 nor the E3 ubiquitin ligase Mot2 were required for meiotic mRNAs degradation when cells were grown in rich medium, in contrast to the nuclear exosome subunit Rrp6 (Figure 2A). However, a significant role for the complex became apparent when cells were cultured in minimal medium. Indeed, several selected meiotic mRNAs, including mei4+, ssm4+\u00a0and mcp5+\u00a0were upregulated specifically in the mot2\u2206 mutant (Figure 2B), in some cases to levels comparable to those observed in rrp6\u2206 cells (e.g. mcp5+). Interestingly, the lack of meiotic RNAs stabilization in caf1\u2206, ccr4\u2206 and caf1\u2206 ccr4\u2206 mutants, indicates that the deadenylation activity of the complex is not required for RNA degradation (Figure 2B, data not shown), consistent with recent studies (Cotobal et al., 2015; Sugiyama et al., 2016). Rather, the specific requirement for the Mot2 subunit strongly suggests the unprecedented possibility that meiotic mRNA suppression involves protein ubiquitination.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/28046/elife-28046-fig2-v2.jpg)\n\n**Figure 2.:** (A) RT-qPCR analysis of the mei4+, ssm4+\u00a0and mcp5+\u00a0meiotic transcripts in cells grown in rich medium (YE) and deleted for Ccr4, Caf1, Mot2 or Rrp6. Signals were normalized to act1+\u00a0mRNA levels and expressed relative to the wild type strain. Error bars represent the standard deviation from at least three independent experiments. Stars denote statistical significance relative to wild type cells (t-test p-values: mei4+\u00a0=\u00a02.4E-5; ssm4+\u00a0=\u00a07.84E-3; mcp5+\u00a0=\u00a05.88E-3). (B) RT-qPCR analysis of the mei4+, ssm4+\u00a0and mcp5+\u00a0meiotic transcripts in cells grown in minimal medium (EMM0.5X) and deleted for all non-essential Ccr4-Not subunits (i.e. all but Not1) or Rrp6 as a control. Signals were normalized to act1+\u00a0mRNA levels and expressed relative to the wild type strain. Error bars represent the standard deviation from at least three independent experiments. Stars denote statistical significance relative to wild type cells (t-test p-values for mot2\u2206 and rrp6\u2206 strains: mei4+\u00a0=\u00a02.28E-3 and 4.34E-3; ssm4+\u00a0=\u00a01.74E-3 and 1.34E-3; mcp5+\u00a0=\u00a02.26E-3 and 5.83E-3). (C) Comparison of the mot2\u2206 (duplicate) and wild type (triplicate) transcriptomes in minimal medium (EMM0.5X). Volcano plot shows the fold change (log2) on the x axis and the P-value distribution (-log10 P value) on the y axis for the transcripts identified in RNA-seq analysis. Each dot represents one transcript and the colour code refers to the different functional categories of Mmi1 targets, as described in Hiriart et al. (2012). (D) Venn diagram showing the overlap of transcripts stabilized in mot2\u2206 and rrp6\u2206 strains and compared to Mmi1 targets (Hiriart et al., 2012). The R package \u00abSuperExactTest\u00bb (Wang et al., 2016) was used to calculate the p-values of intersects: mot2\u2206\u00a0\u2229 rrp6\u2206\u00a0=\u00a06.98E-24; mot2\u2206\u00a0\u2229 mmi1\u2206\u00a0=\u00a04.4E-25; mmi1\u00a0\u2206 \u2229 rrp6\u2206\u00a0=\u00a01.63E-16; mot2\u2206 \u2229 rrp6\u2206 \u2229 mmi1\u2206\u00a0=\u00a04.85E-40.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28046/elife-28046-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** RNA-immunoprecipitation experiments in wild type cells. Shown are the enrichments (% input) of act1+, mei4+\u00a0and mcp5+\u00a0transcripts upon pulldown of 3xFLAG-tagged Mmi1, Mot2 and Caf1. Error bars represent the standard deviation of three or four independent immunoprecipitations from biological duplicates. Stars denote statistical significance (t-test p-values for 3xFLAG-tagged Mmi1, Mot2 and Caf1 strains: mei4+\u00a0=\u00a02.3E-4, 3.2E-2 and 3.7E-2; mcp5+\u00a0=\u00a01.5E-3, 1.7E-2 and 3.5E-3).\n\nPrevious work showed that the RNA deadenylases Ccr4 and Caf1 associate with DSR-containing meiotic mRNAs (Cotobal et al., 2015). Using RNA-immunoprecipitation assays, we found that the E3 ubiquitin ligase Mot2 interacts with the mei4+\u00a0and mcp5+\u00a0transcripts to the same extent as the Caf1 subunit, albeit less efficiently than Mmi1 (Figure 2\u2014figure supplement 1). This is consistent with the notion that Mmi1 recruits the whole Ccr4-Not complex to its RNA targets (Stowell et al., 2016).\n\nTo establish whether the requirement for Mot2 in meiotic mRNA suppression is general, we analyzed the transcriptomes of wild type, mot2\u2206 and rrp6\u2206 strains grown in minimal medium by RNA-seq. Differentially expressed genes were determined by taking into account the fold enrichment of transcripts in mutant versus wild type cells (<or\u00a0>\u00a01.5 fold) and their statistical significance (p-value<5E-2) (Figure 2C). This analysis revealed increased expression for 622 and 393 transcripts in the mot2\u2206 and rrp6\u2206 mutants respectively (Figure 2\u2014source data 1). A highly significant overlap of 100 transcripts indicates that Rrp6 and Mot2 function to repress expression of a common set of targets (Figure 2D). Importantly, a large fraction of these RNAs contain DSR elements and are known targets of Mmi1, MTREC and the nuclear exosome during vegetative growth (Figure 2C\u2013D) (Lee et al., 2013; Hiriart et al., 2012). Gene ontology analysis indicated that upregulated transcripts in mot2\u2206 cells fall into three distinct functional categories (Figure 2\u2014source data 1). The most significant group included genes involved in meiosis or that show an increase in expression upon meiotic induction. The second group includes genes required for mating and conjugation, and the third class contains genes encoding protein kinases (Figure 2\u2014source data 1). However, these two latter categories were not over-represented in the rrp6\u2206 mutant, suggesting that the genes they belong to are not regulated in an Mmi1-dependent manner. Whether this relates to other functions of Mot2 and/or indirect effects remains to be determined. Together, our results reveal a global requirement for Mot2 in suppressing meiotic transcripts, among which Mmi1 targets are significantly enriched.\n\n### The E3 ubiquitin ligase Mot2 negatively affects the levels of the Mmi1 inhibitor Mei2\n\nThe E3 ubiquitin ligase Not4/Mot2 has various functions in protein metabolism. Previous work showed that Mot2 controls protein turnover through ubiquitination and proteasome-dependent degradation to regulate chromatin modification, DNA replication, transcription as well as translation (Panasenko et al., 2006; Laribee et al., 2007; Mersman et al., 2009; Haworth et al., 2010; Cooper et al., 2012; Sun et al., 2015; Laribee et al., 2015; Br\u00f6nner et al., 2017). Other studies revealed roles in the functional integrity of the proteasome (Panasenko and Collart, 2011) and in translational quality control (Dimitrova et al., 2009; Halter et al., 2014; Preissler et al., 2015). Mot2 also mediates non-destabilizing protein ubiquitination (Panasenko and Collart, 2012), highlighting its functional versatility.\n\nThe requirement of Mot2 for meiotic mRNAs suppression might reflect the need for inhibiting or degrading a negative regulator of nuclear RNA decay during vegetative growth. One possible candidate is the RNA-binding protein Mei2, which functions to inactivate Mmi1 (Harigaya et al., 2006). We therefore hypothesized that Mmi1 might recruit the Ccr4-Not complex to Mei2 to promote its ubiquitination by Mot2.\n\nWe first determined Mei2 protein levels in wild type and mot2\u2206 cells grown in different conditions. In the presence of Mot2, Mei2 was hardly detectable in rich medium and accumulated only to low levels in minimal medium (Figure 3A, lanes 2 and 5). Deletion of mot2+\u00a0resulted in a slight accumulation of Mei2 in rich medium, reaching levels comparable to those observed in a wild type strain grown in minimal medium (Figure 3A, compare lanes 3 and 5). Importantly, Mei2 levels increased substantially in mot2\u2206 cells cultured in minimal medium (Figure 3A, lane 6), which correlates with the requirement for Mot2 in meiotic mRNAs suppression in these conditions (Figure 2B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/28046/elife-28046-fig3-v2.jpg)\n\n**Figure 3.:** (A) Western blot showing total Mei2-3xHA levels in wt and mot2\u2206 cells grown at 30\u00b0C to mid-log phase in rich (YE) and minimal (EMM0.5X) media. An anti-tubulin antibody was used as a loading control. (B) Western blot showing total TAP-Mei2 levels expressed from the P41nmt1 promoter in wt and mot2\u2206 cells grown in minimal medium (EMM0.5X). An anti-tubulin antibody was used as a loading control. (C) Quantification of TAP-Mei2 protein levels, normalized to tubulin and expressed relative to wt cells. Error bars represent the standard deviation from five independent experiments. Stars denote statistical significance (t-test p-value=1.38E-3). (D) RT-qPCR analysis of mei2+, ssm4+\u00a0and mcp5+\u00a0transcripts in wt and mot2\u2206 strains expressing Mei2 from the P41nmt1 promoter. Cells were grown in minimal medium (EMM0.5X). Signals were normalized to act1+\u00a0mRNA levels and expressed relative to the P41nmt1-TAP-Mei2 strain. Error bars represent the standard deviation from four independent experiments. Stars denote statistical significance (t-test p-values: mei2+\u00a0=\u00a08.5E-3; ssm4+\u00a0=\u00a01.53E-3; mcp5+\u00a0=\u00a01.49E-3).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28046/elife-28046-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) RT-qPCR analysis of mei2+\u00a0mRNAs levels in wt and mot2\u2206 cells grown in minimal medium (EMM0.5X). Signals were normalized to act1+\u00a0mRNA levels and expressed relative to the wild type strain. Error bars represent the standard deviation from at least three independent experiments. The star denotes statistical significance relative to wild type cells (t-test p-value=1.1E-2). (B) Western blot showing total TAP-Mei2 levels expressed from the P41nmt1 promoter in minimal medium (EMM0.5X) in wild type cells and strains deleted for non-essential subunits of the Ccr4-Not complex (i.e. all but Not1). An anti-tubulin antibody was used as a loading control.\n\nHigher Mei2 levels in mot2\u2206 cells might result from an effect on the production (or stability) of mei2+\u00a0mRNAs. Indeed, we found increased mei2+\u00a0transcript levels in the mot2\u2206 mutant (Figure 3\u2014figure supplement 1A), possibly as a result of a direct or indirect negative control exerted by Mot2 on the promoter of the mei2+ gene. To assess whether Ccr4-Not regulates Mei2 levels in a transcription-independent manner, we replaced the endogenous mei2+\u00a0promoter with the nmt1+\u00a0promoter, which is active in minimal medium lacking thiamine. In this context, we also detected a four-fold increase of the Mei2 protein in the mot2\u2206 mutant relative to wild type cells (Figure 3B\u2013C), while mei2+\u00a0mRNAs accumulated to only a limited extent (1.6 fold) (Figure 3D). Moreover, defective meiotic mRNA suppression was still observed in the absence of Mot2 (Figure 3D). These data indicate that increased Mei2 protein levels cannot solely arise from altered transcription and/or stability of mei2+ mRNAs in mot2\u2206 cells.\n\nWe also examined whether the control of Mei2 abundance involves additional Ccr4-Not components. Deletion of the non-essential subunits of the complex other than Mot2, including the RNA deadenylases Ccr4 and Caf1, did not result in the accumulation of Mei2 (Figure 3\u2014figure supplement 1B). This supports the notion that the regulation of Mei2 levels depends specifically on the integrity of the E3 ubiquitin ligase.\n\n### Mot2 functions with Mmi1 to limit the accumulation of Mei2 and meiotic mRNAs\n\nOur results strongly suggest that Mot2 suppresses the expression of meiotic RNAs in vegetative cells by acting on the Mmi1 inhibitor Mei2. It is however possible that Mot2 affects the levels of meiotic RNAs independently of Mei2. To demonstrate that the two events are causally linked, we assessed the levels of meiotic transcripts in a mot2\u2206 mei2\u2206 double mutant. Crucially, deletion of mei2+\u00a0restored degradation of meiotic mRNAs in the absence of Mot2 but not in rrp6\u2206 cells (Figure 4A), indicating that loss of Mei2 does not induce degradation of these transcripts by another pathway. Importantly, over-expression of the mei2+\u00a0gene in a wild type background led to a strong stabilization of meiotic RNAs (Figure 4B), phenocopying the effect of a mot2\u2206 mutant.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/28046/elife-28046-fig4-v2.jpg)\n\n**Figure 4.:** (A), (B) RT-qPCR analyses of meiotic transcripts in cells of the indicated genetic backgrounds and grown in minimal medium (EMM0.5X). Shown is the fold enrichment of RNAs levels normalized to act1+\u00a0transcripts and expressed relative to the wild type strain. Error bars represent the standard deviation from three independent experiments. (A) Pairwise comparisons of four meiotic transcripts in mot2\u2206 versus mei2\u2206 mot2\u2206 mutants give p-values<7.3E-3. (B) Stars denote statistical significance relative to wild type cells (t-test p-values: mei4+\u00a0=\u00a01.29E-4; ssm4+\u00a0=\u00a01.9E-3; mcp5+\u00a0=\u00a06.3E-3; sme2+\u00a0=\u00a02.04E-2). (C) Western blot showing that Mei2-GFP co-immunoprecipitates with Mmi1-TAP upon RNaseA/T1 treatment in mot2\u2206 cells grown in minimal medium (EMM0.5X). (D), (E) Western blots showing total Mei2 levels (P41nmt1-TAP-Mei2 in (D) or Mei2-3xHA in (E)) in cells of the indicated genetic backgrounds and grown in minimal medium (EMM0.5X). Anti-tubulin and anti-CDC2 antibodies were used as loading controls in panels (D) and (E), respectively.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28046/elife-28046-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Phase contrast images of exponentially growing wild type, mot2\u2206, mei2\u2206 and mot2\u2206 mei2\u2206 cells cultured in minimal medium (EMM0.5X). (B) Cells of the indicated genotypes were grown in rich (YE; left panel) and minimal (EMM0.5X; right panel) media, and the optical density (OD600nm) was measured over time.\n\nThus, these results demonstrate that Mot2 is important to maintain low levels of Mei2 and/or repress its activity to ensure efficient Mmi1- and exosome-dependent degradation of meiotic transcripts during vegetative growth.\n\nExamination of exponentially growing cells by microscopy did not reveal the occurrence of ectopic meiosis in mot2\u2206 cells (Figure 4\u2014figure supplement 1A), supporting the notion that meiotic transcripts accumulate in actively dividing cells and not in a fraction of cells undergoing meiosis. mot2\u2206 cells displayed a moderate growth defect in minimal medium that was in part due to the inappropriate expression of meiotic RNAs since the defect was partially suppressed by deletion of mei2+ (Figure 4\u2014figure supplement 1B). Consistent with this notion, although the mot2\u2206 mutant also grew slower than wild type cells in rich medium, this defect was Mei2-independent (Figure 4\u2014figure supplement 1B) and presumably due to other functions of Mot2.\n\nAccording to the model that Mmi1 recruits Mot2 to limit the levels of Mei2 or control its activity, the association of Mei2 with Mmi1 should persist in the absence of the E3 ligase. Consistent with this notion, co-immunoprecipitation assays and MS analyses of Mmi1 purified from the mot2\u2206 mutant grown in minimal medium indicated that Mei2 persisted in association with Mmi1, as anticipated from its higher steady state levels (Figure 4C, Figure 1\u2014source data 1).\n\nAnother prediction is that the control of Mei2 levels should depend on Mmi1. We indeed observed an accumulation of Mei2 in an mmi1\u2206 mutant, despite the presence of wild type Mot2 (Figure 4D). Instead, neither Red1 nor Rrp6 affected Mei2 levels. This indicates that Mmi1 and Mot2 are components of a cellular pathway that is distinct from the post-transcriptional regulation of meiotic mRNAs exerted by Mmi1, MTREC and the exosome.\n\nRecent work showed that the most N-terminal residues of Mmi1 are required for its association with the Ccr4-Not complex (Stowell et al., 2016). Expression of a variant of Mmi1 lacking the first 65 amino acids (Mmi1-(1-65)\u2206) led to the accumulation of Mei2, similarly to mot2\u2206 cells (Figure 4E), strongly suggesting that the recruitment of Ccr4-Not by Mmi1 is required to maintain low levels of Mei2.\n\n### Mot2 and Mmi1 do not repress mei2+\u00a0mRNA translation\n\nThe Ccr4-Not complex has been involved in mRNA translational repression (Miller and Reese, 2012; Collart, 2016). To determine whether Mot2 affects the production of Mei2, we analyzed the levels of mei2+\u00a0mRNAs that co-immunoprecipitate with the translation machinery in wild type and mot2\u2206 cells. If Mot2 represses translation of mei2+\u00a0mRNAs, then the fraction of transcripts associated with translating ribosomes should increase in the mot2\u2206 mutant. Contrary to this scenario, both the 60S ribosomal subunit Rpl1601 and the elongation factor Tef3 did not pull down more mei2+\u00a0transcripts in the absence of Mot2, despite identical protein levels (Figure 5A, and Figure 5\u2014figure supplement 1A,C). Further indicating that mei2+\u00a0mRNA translation is not specifically increased in mot2\u2206 cells, the fraction of immunoprecipitated mei2+\u00a0mRNAs relative to act1+\u00a0transcripts was even slightly decreased in the mutant (Figure 5B, and Figure 5\u2014figure supplement 1B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/28046/elife-28046-fig5-v2.jpg)\n\n**Figure 5.:** (A) RNA-immunoprecipitation experiments in wild type and mot2\u2206 cells. Shown are the enrichments (% input) of act1+\u00a0and mei2+\u00a0mRNAs upon pulldown of the 3xFLAG-tagged translation elongation factor Tef3. Error bars represent the standard deviation of six independent immunoprecipitations from at least three biological replicates. Stars denote statistical significance between samples (t-test p-values: act1+\u00a0=\u00a06.87E-3; mei2+\u00a0=\u00a04.26E-3). (B) Quantification of mei2+\u00a0mRNA levels normalized to act1+\u00a0transcripts and expressed relative to the wild type tagged strain (Tef3-3xFLAG). Error bars represent the standard deviation of six independent immunoprecipitations from at least three biological replicates. (C) RNA-immunoprecipitation experiments in wild type cells. Shown are the enrichments (% input) of act1+, mei2+, mei4+\u00a0and mcp5+\u00a0transcripts upon pulldown of 3xFLAG-tagged Mmi1. Error bars represent the standard deviation of four independent immunoprecipitations from three biological replicates. Stars denote statistical significance (t-test p-values: mei4+\u00a0=\u00a01.87E-4; mcp5+\u00a0=\u00a01.35E-3). (D) Western blot showing total Mei2-3xHA levels in cells of the indicated genetic backgrounds grown in minimal medium (EMM0.5X) following a temperature shift at 37\u00b0C for 1 hr. Shown are short and long exposures for the anti-HA immunoblotting. An anti-tubulin antibody was used as a loading control.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28046/elife-28046-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) RNA-immunoprecipitation experiments in wild type and mot2\u2206 cells. Shown are the enrichments (% input) of act1+\u00a0and mei2+\u00a0mRNAs upon pulldown of the 3xFLAG-tagged 60S ribosomal subunit Rpl1601. Error bars represent the standard deviation of six independent immunoprecipitations from at least three biological replicates. Stars denote statistical significance between samples (t-test p-values: act1+\u00a0=\u00a04.29E-2; mei2+\u00a0=\u00a01.08E-4). (B) Quantification of mei2+\u00a0mRNA levels normalized to act1+\u00a0transcripts and expressed relative to the wild type tagged strain (Rpl1601-3xFLAG). Error bars represent the standard deviation of six independent immunoprecipitations from at least three biological replicates. The star denotes statistical significance between samples (t-test p-value=1.39E-2). (C) Western blot showing that total levels of Rpl1601 and Tef3 are not affected by the deletion of mot2+. 3xFLAG-tagged proteins were detected with an anti-FLAG antibody and an anti-tubulin antibody was used as a loading control.\n\nSince Mmi1 interacts with the Ccr4-Not complex (Figure 1; Cotobal et al., 2015; Ukleja et al., 2016; Sugiyama et al., 2016; Stowell et al., 2016), we also investigated whether it associates with mei2+\u00a0transcripts. We found that Mmi1 co-immunoprecipitates DSR-containing transcripts (e.g. mei4+\u00a0and mcp5+) but not mei2+\u00a0mRNAs, further supporting the notion that Mmi1 and Mot2 do not partake in the translational control of Mei2 (Figure 5C).\n\nFinally, we compared Mei2 protein levels in strains carrying the mts2-1 thermosensitive mutation of the proteasome subunit Rpt2/Mts2 alone or in combination with the deletion of mot2+. If the absence of Mot2 leaded to enhanced translation of mei2+\u00a0transcripts, then Mei2 levels should be further increased in an mts2-1 mot2\u2206 double mutant relative to a mts2-1 single mutant because of increased production and decreased degradation. Conversely, if Mot2 and the proteasome function in the same degradation pathway, Mei2 levels should not be affected by deletion of mot2+ in mts2-1 cells. Consistent with the latter notion, Mei2 accumulates to similar levels in both mts2-1 and mts2-1 mot2\u2206 mutants at the non-permissive temperature, suggesting that Mot2 triggers Mei2 degradation via the proteasome pathway (Figure 5D, compare lanes 3 and 5). Note that lower-migrating Mei2 isoforms were specifically detected in mts2-1 cells, possibly reflecting the accumulation of phosphorylated and/or ubiquitinated degradation intermediates.\n\nTogether, these results support the notion that Mmi1 and Mot2 do not mediate translational repression of mei2+\u00a0mRNAs.\n\n### The E3 ubiquitin ligase activity of Mot2 is required for repressing Mei2 during vegetative growth\n\nBecause Mot2 is an E3 ubiquitin ligase, we assessed whether its catalytic activity is required for controlling Mei2 during vegetative growth. Expression of Mot2 variants lacking the RING domain (Mot2-RING\u2206) or carrying single substitutions in residues involved in substrate ubiquitination (Mot2-C37A, -C45A and -C57A) did not restore wild type levels of Mei2 in a mot2\u2206 background (Figure 6A). This indicates that the ubiquitination activity of Mot2 is required for suppressing expression of Mei2 in vegetative cells.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/28046/elife-28046-fig6-v2.jpg)\n\n**Figure 6.:** (A) Western blot showing total TAP-Mei2 levels expressed from the P41nmt1 promoter in cells of the indicated genetic backgrounds and grown in minimal medium lacking leucine (EMM-LEU0.5X). An anti-FLAG antibody was used to detect Mot2 variants expressed from the pREP41 vector. An anti-CDC2 antibody was used as loading control. The star denotes a non-specific band. (B) In vivo ubiquitination of Mei2-3xHA in wt, mot2\u2206 and ubr1\u2206 cells expressing 6His tagged-ubiquitin in minimal medium (EMM-LEU0.5X). Total and ubiquitinated Mei2 as well as ubiquitin conjugates were analyzed by immunoblotting using anti-HA and anti-ubiquitin antibodies respectively. An untagged wild type strain was used as negative control. The star denotes unmodified Mei2 molecules. (C) Quantification of Mei2 ubiquitinated species relative to total protein levels and expressed relative to Mei2-3xHA wild type cells. Error bars represent the standard deviation from five independent experiments. Stars denote statistical significance relative to Mei2-3xHA wild type cells (t-test p-values=2.29E-6 for mot2\u2206, and 5.64E-9 for ubr1\u2206). (D) RT-qPCR analysis of meiotic transcripts in wt, mot2\u2206 and ubr1\u2206 cells. Shown is the fold enrichment of RNAs levels normalized to act1+\u00a0transcripts and expressed relative to the wild type strain. Error bars represent the deviation from the mean of biological duplicates.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28046/elife-28046-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) In vivo ubiquitination of Mei2-3xHA in wt and mot2\u2206 cells as described in Figure 6B. Samples of the mot2\u2206 mutant were serial diluted to estimate the levels of ubiquitinated Mei2 species when similar amounts of total Mei2 are used from the two strains. (B) In vivo ubiquitination of Mei2-3xHA as described in Figure 6B but in mts2-1 and mts2-1 mot2\u2206 cells grown in EMM-LEU0.5X at 28\u00b0C before a temperature shift at 37\u00b0C for 1 hr. (C) Quantification of Mei2 ubiquitinated species relative to total protein levels and expressed relative to mts2-1 cells. Error bars represent the standard deviation from three independent experiments. Stars denote statistical significance relative to the mts2-1 Mei2-3xHA strain (t-test p-value=1.89E-2). (D) In vivo ubiquitination of 3xFLAG-tagged Mei2 as described in Figure 6B but in cells expressing endogenous levels of the protein (e.g. Mei2-3xFLAG) or overexpressing it (e.g. P3nmt1-3xFLAG-Mei2). Total and ubiquitinated Mei2, as well as ubiquitin conjugates were analyzed using anti-FLAG and anti-ubiquitin antibodies respectively. Shown are short and long exposures for the anti-FLAG immunoblotting. (E) Quantification of Mei2 ubiquitinated species relative to total protein levels and expressed relative to Mei2-3xFLAG wild type cells. Error bars represent the deviation from the mean of biological duplicates.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/28046/elife-28046-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Representative Western blot showing total Mei2-3xHA levels in wt, mot2\u2206 and ubr1\u2206 cells grown in minimal medium (EMM0.5X) at 30\u00b0C. Mei2 was detected using an anti-HA antibody and an anti-CDC2 antibody was used as a loading control. (B) Quantification of total Mei2-3xHA levels, normalized to CDC2 and expressed relative to wild type cells. Error bars represent the standard deviation from five independent experiments. Stars denote statistical significance relative to Mei2-3xHA wild type cells (t-test p-values=2.66E-3 for mot2\u2206, and 2.25E-4 for ubr1\u2206). (C) Cycloheximide chase experiment of Mei2-3xHA in wt, mot2\u2206 and ubr1\u2206 cells. Cells were grown in minimal medium (EMM0.5X) at 30\u00b0C and harvested at the indicated time points following addition of 100 \u00b5g/mL cycloheximide. Mei2 was detected by immunoblotting using an anti-HA antibody and an anti-CDC2 antibody was used as a loading control. (D) Live cell microscopy of GFP-tagged Mei2 in wt, mot2\u2206 and ubr1\u2206 cells. Cells were grown in minimal medium (EMM0.5X) and imaged by phase contrast and with a GFP filter. Scale bars\u00a0=\u00a05 \u00b5m.\n\nTo address whether Mei2 is a substrate for ubiquitination by Mot2 in vivo, we purified total cellular ubiquitinated proteins from cells expressing His6-tagged ubiquitin. The presence of ubiquitinated species of C-terminally 3xHA-tagged Mei2 was probed by immunoblotting in wild type and mot2\u2206 cells. Because total Mei2 levels are higher in the absence of Mot2, we compared the levels of Mei2 ubiquitinated species (Ubi-Mei2) relative to the total in the two strains. Up to four specific bands corresponding to Ubi-Mei2 could be observed in wild type cells (Figure 6B, lane 6). Deletion of mot2+ resulted in the detection of similar levels of Ubi-Mei2 in spite of the higher amount of total Mei2, which corresponds to an approximate four-fold decrease in the fraction of ubiquitinated species (Figure 6C; see also Figure 6\u2014figure supplement 1A for equal Mei2 loading). We also analyzed the fraction of Ubi-Mei2 species in mts2-1 and mts2-1 mot2\u2206 mutants, in which the levels of total Mei2 are nearly identical, and reproducibly observed a 2-fold decrease in the absence of Mot2 in this context (Figure 6\u2014figure supplement 1B\u2013C).\n\nTo exclude the possibility that the decrease in the fraction of Ubi-Mei2 species in the mot2\u2206 mutant is the consequence - and not the cause - of increased Mei2 levels, we compared the fraction of Ubi-Mei2 in cells expressing endogenous levels of the protein (e.g. Mei2-3xFLAG) or overexpressing it (e.g. P3nmt1-3xFLAG-Mei2). Even upon a roughly 100-fold Mei2 overexpression, we observed a proportional increase in Ubi-Mei2 levels (Figure 6\u2014figure supplement 1D\u2013E). This indicates that ubiquitination is not limiting and that the decreased level of Ubi-Mei2 in mot2\u2206 cells is not the mere consequence of an overproduction of Mei2.\n\nTogether, these results are consistent with the notion that Mot2 ubiquitinates Mei2, which likely promotes its degradation and/or inhibits its activity.\n\nPrevious work showed that mutation of the E3 ubiquitin ligase Ubr1 also triggers accumulation of Mei2 in vegetative cells (Kitamura et al., 2001). To determine which of the two E3 ligases is responsible for the main Mei2 turnover pathway, we compared total and Ubi-Mei2 levels in ubr1\u2206 and mot2\u2206 cells. Total Mei2 levels were strongly increased in the absence of Ubr1 relative to the mot2\u2206 mutant (Figure 6B, Figure 6\u2014figure supplement 2A\u2013B). This was due to a major effect on the turnover rate of Mei2, as shown by cycloheximide chase experiments (Figure 6\u2014figure supplement 2C). Note that because of the low levels of Mei2 in wild type cells and the relatively modest impact of Mot2 on Mei2 stability, it is not possible to reliably evaluate the differences in turnover rate between the wild type and mot2\u2206 strains (see discussion). Consistent with a predominant role for Ubr1, ubiquitination of Mei2 was strongly decreased in ubr1\u2206 cells (Figure 6B\u2013C). Live-cell microscopy of GFP-tagged Mei2 further substantiated the major requirement for Ubr1 in the control of Mei2 abundance (Figure 6\u2014figure supplement 2D). Finally, increased Mei2 levels in ubr1\u2206 cells resulted in a pronounced accumulation of Mmi1-targeted meiotic mRNAs (Figure 6D), highlighting the functional importance of suppressing Mei2 levels.\n\nFrom these results, we conclude that Mot2 is not responsible for the main turnover pathway of Mei2, which depends on Ubr1. We propose that the control exerted by Mot2 on Mei2 has an important role in fine-tuning its levels and/or regulating its function, allowing full repression of meiotic mRNAs during vegetative growth (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/28046/elife-28046-fig7-v2.jpg)\n\n**Figure 7.:** Shown is the regulatory circuit whereby Mmi1 recruits Mot2, likely in the context of Ccr4-Not, to ubiquitinate its own inhibitor Mei2. The E3 ubiquitin ligase Ubr1 is involved in the constitutive pathway of Mei2 turnover. Both Mot2 and Ubr1 contribute to maintain low levels of Mei2, thereby preserving the activity of Mmi1 and sustaining meiotic mRNAs suppression in vegetative cells.\n\n## Discussion\n\nFission yeast cells selectively eliminate meiosis-specific transcripts during the mitotic cell cycle to inhibit sexual differentiation and ensure robust vegetative growth. Here, we report that the E3 ubiquitin ligase subunit Not4/Mot2 of the Ccr4-Not complex strengthens the control exerted by the YTH-family RNA-binding protein Mmi1 on the repression of the meiotic program during vegetative growth (Figure 7). Our results suggest that Mmi1 recruits Mot2 to ubiquitinate its own inhibitor Mei2, although we cannot formally exclude that the ubiquitination activity of Mot2 impacts the function or levels of Mei2 in an indirect manner. Importantly, Mot2 is not involved in the constitutive pathway of Mei2 turnover, which depend on the E3 ubiquitin ligase Ubr1, but rather targets a fraction of Mei2 to prevent inhibition of Mmi1. This ensures the maintenance of Mmi1 in a functional state and the persistent suppression of meiotic mRNAs. Thus, Mmi1 has a dual role: in nuclear RNA surveillance, by targeting meiotic transcripts for degradation by the exosome, and in the regulation of protein ubiquitination, by recruiting Mot2 to Mei2. These results also reveal a novel role for the E3 ubiquitin ligase Mot2 in the control of sexual differentiation in fission yeast.\n\nThe existence of a regulatory circuit whereby a protein controls the levels or the function of its own inhibitor might hamper alterations in the activity of the protein (Mmi1) due to fluctuations in the levels of the inhibitor (Mei2), which might occur under given growth conditions. This, in turn, is expected to prevent variations in the levels of meiotic RNAs and their translation products, which might affect, directly or indirectly, the robustness of vegetative growth.\n\nThe need for buffering increased Mei2 production is the likely reason why Mot2 only affects the levels of meiotic transcripts during growth in minimal medium. In yeast, meiosis occurs upon exposure to nutritional starvation, which activates signalling pathways that converge towards the induction of a complex transcriptional program finalized to sexual differentiation (Yamamoto, 2010). Growth in minimal medium, when nutrients are available but limiting, might induce a partially analogous response, possibly anticipating the need for entry into meiosis. Indeed, we observed increased levels of Mei2 protein upon vegetative growth in minimal versus rich medium (Figure 3A), which might in principle be due to increased transcription, translation and/or protein stabilization. The low levels of Mei2 in rich medium even upon deletion of mot2+\u00a0suggest that the expression of the mei2+\u00a0gene is limited by transcription in these growth conditions. Conversely, the requirement for Mot2 ubiquitination activity to restrict Mei2 levels or activity in minimal medium (Figure 6A) might suggest that Mei2 is post-translationally controlled in this context. Thus, Mot2 has an important role in controlling the levels of Mei2 under conditions where entry into meiosis is to some extent transcriptionally prefigured, but for which a no-return commitment is premature.\n\nHigher levels of Mei2 in mot2\u2206 cells could be due to increased Mei2 production, consistent with a known role of the Ccr4-Not complex in translational repression (Miller and Reese, 2012; Collart, 2016). However, our data argue against this possibility because (i) the fraction of mei2+\u00a0mRNAs associated with translating ribosomes does not increase in the absence of Mot2 (Figure 5A\u2013B, Figure 5\u2014figure supplement 1A\u2013B), (ii) the regulation of Mei2 by Mot2 requires Mmi1 (Figure 4D\u2013E), which localizes to the nucleus (Harigaya et al., 2006; Sugiyama and Sugioka-Sugiyama, 2011; Yamashita et al., 2013; Shichino et al., 2014; Sugiyama et al., 2016) and does not bind to mei2+\u00a0mRNAs (Figure 5C), and (iii) the absence of Mot2 does not lead to further increased Mei2 levels upon proteasome inactivation (Figure 5D). Our results also exclude significant effects of Mot2 on mei2+\u00a0transcription and mRNA stability (Figure 3B\u2013D). Together with the demonstration that Mot2 ubiquitination activity is required for controlling Mei2 protein levels (Figure 6A), these results suggest that mutation of Mot2 affects the stability of Mei2.\n\nThe turnover of Mei2 mainly depends on the E3 ubiquitin ligase Ubr1. Considering the steady state levels of Mei2 in ubr1\u2206 and mot2\u2206 cells, the Mot2-dependent degradation rate is expected to be approximately six times less active than that dependent on Ubr1 (Figure 6\u2014figure supplement 2A\u2013B). This implies that Mei2 half-life might differ only by roughly 15% between wild type (in which both ubiquitin ligases are active) and mot2\u2206 cells (in which only Ubr1 is active), which amounts to less than 1.5 min. This small difference, together with the very low levels of Mei2 in wild type cells, is the main reason why we could not reliably measure the impact of Mot2 deletion on Mei2 degradation rate. Because of this limitation, we cannot formally exclude the possibility that indirect effects may account for the increased Mei2 steady state levels in the absence of Mot2. Yet, we showed that higher Mei2 levels in mot2\u2206 cells did not result from increased transcription and translation, pointing to the most parsimonious explanation that Mot2 impacts directly Mei2 turnover.\n\nIt is however unclear whether maintaining the levels of Mei2 under a given threshold is the main physiological role of Mot2 for controlling its activity or whether ubiquitination by itself is the key regulatory event. In the latter scenario, ubiquitination would be the primary Mei2 inhibitory event and Mot2-dependent protein degradation would ensue as a secondary consequence.\n\nIn vegetative cells, Mmi1 localizes to scattered nuclear foci to mediate meiotic RNAs degradation (Sugiyama and Sugioka-Sugiyama, 2011; Yamashita et al., 2013; Shichino et al., 2014; Sugiyama et al., 2016). It is possible that Mot2 ubiquinates Mei2 to prevent its entry and/or its persistence in nuclear dots, thereby preserving the function of Mmi1. Ubiquinated Mei2 might then be directed more efficiently to the turnover pathway, thus explaining the impact of Mot2 on Mei2 steady state levels.\n\nThe control exerted by Mot2 (and Ubr1) on Mei2 levels is only part of the mechanism that prevents meiosis onset in vegetative cells. Although Mei2 levels in mot2\u2206 cells exceed those observed in the wild type strain in minimal medium (Figure 3A), this is not sufficient to induce ectopic entry in meiosis (Figure 4\u2014figure supplement 1A). This observation suggests that additional events are required to activate meiosis and/or that another control exists on Mei2 that backs up the roles of the E3 ligases. Consistent with this latter hypothesis, the Pat1 and Tor2 protein kinases phosphorylate Mei2 to inhibit its activity and promote its degradation, and mutation of these enzymes or expression of a non-phosphorylatable form of Mei2 trigger ectopic entry into meiosis, even in haploid cells (Yamamoto, 2010; Kitamura et al., 2001; Alvarez and Moreno, 2006; Otsubo et al., 2014). Thus, it is possible that the increased pools of Mei2 in mot2\u2206 and ubr1\u2206 cells might be partially inactivated by Pat1 and/or Tor2, thereby preventing full activation of the meiotic program.\n\nA strict control on the inhibition of Mmi1 appears to be essential given the important role of this factor in suppressing mRNAs encoding meiosis-specific transcription factors that, in turn, control the expression of other transcription factors (Mata et al., 2007). On the other side, the onset of meiosis might require abrupt changes in physiology, which could benefit from a faster response associated to releasing the inhibition of factors already present in the cell as opposed to synthesizing these factors de novo. Whether this also requires regulation of expression or activity of Mot2 is an important question and matter for future studies.\n\nThe function of Ccr4-Not in sexual differentiation in fission yeast is analogous to the role played by the metazoan complex in controlling developmental decisions (Rouget et al., 2010; Joly et al., 2013; Nousch et al., 2013; Solana et al., 2013; Yamaji et al., 2017). However, in these examples, the mechanism of action of the complex essentially relies on its deadenylation and translational repression activities. The YTH proteins Pho92 and YTHDF2, the budding yeast and human homologues of Mmi1 respectively, also recruit Ccr4-Not to regulate mRNA deadenylation and turn over (Kang et al., 2014; Du et al., 2016). In light of these findings, the control of Mei2 abundance by Mmi1 and the conserved E3 ubiquitin ligase Not4/Mot2 might provide another layer of complexity to the regulatory potential of the Ccr4-Not complex. Our work paves the way for addressing the conservation of this type of regulation in other networks and species.\n\n## Materials and methods\n\n### Fission yeast strains and growth media\n\nThe S. pombe strains used in this study are listed in Supplementary file 1. Strains were generated by transformation with a lithium acetate-based method or by random spore analysis. mmi1\u0394 cells were generated from a parental strain possessing a deletion of mei4+, since the absence of Mmi1 leads to severe growth and viability defects due to the deleterious expression of Mei4, a key meiosis-specific transcription factor. Growth media included complete medium (YE Broth, Formedium, #PMC0105) and minimal medium (EMM Broth, Formedium, #PMD0210). All experiments in minimal medium were performed using EMM 0.5X supplemented with 1% glucose (2% final concentration) and 125 mg/L of each adenine (Sigma, #A2786), L-histidine (Sigma, #H8000), uracil (Sigma, #U750), L-lysine (Sigma, #L5501) and L-leucine (Sigma, #L8000).\n\n### Affinity purification and mass spectrometry analysis\n\n500 mL of cells were grown at 30\u00b0C in EMM 0.5X until OD600nm = 1.0\u20131.2 and harvested by centrifugation. Cell pellets were resuspended in 5 mL lysis buffer (6 mM Na2HPO4, 4 mM NaH2PO4, 150 mM NaC2H3O2, 5 mM MgC2H3O2, 0.25% NP-40, 2 mM EDTA, 1 mM EGTA, 5% glycerol, 1 mM AEBSF, 4 mM benzamidine and 2X Roche complete EDTA-free protease inhibitor cocktail) and slowly dropped into liquid nitrogen to form \u2018pop-corn\u2019. Lysis was performed using a Ball Mill (Retsch, MM400) for 15 min at a 10 Hz frequency. Extracts were cleared by centrifugation before precipitation with 7.5 mg of pre-washed rabbit IgG-conjugated M-270 Epoxy Dynabeads (Invitrogen, #14311D) for 1 hr at 4\u00b0C. Lysates were incubated with or without 1 \u00b5L RNaseA/T1 cocktail (Ambion, #AM2286) per mL of extract for 20 min at 4\u00b0C prior to immunoprecipitation. Beads were then washed twice with IPP150 (10 mM Tris pH8, 150 mM NaCl, 0.1% NP-40). Immunoprecipitated complexes were eluted over-night at 4\u00b0C by adding 50 units TEV protease (Invitrogen, #12575\u2013015) in 200 \u00b5L TEV cleavage buffer (10 mM Tris pH8, 150 mM NaCl, 0.1% NP-40, 0.5 mM EDTA, 1 mM DTT). 5% of eluates were subjected to silver staining using the SilverQuest Silver Staining kit (Invitrogen, #LC6070) and the remaining samples were precipitated with methanol-chloroform. Briefly, TEV eluates were mixed sequentially with 4 volumes of methanol, 1 vol of chloroform and 3 volumes of water. Samples were centrifuged at 16000 g for 30 min at 4\u00b0C and the upper phases were discarded. 3 volumes of methanol were added to the lower phases to extract chloroform and samples were vortexed, left at \u221220\u00b0C for 30 min and centrifuged at 16000 g for 20 min at 4\u00b0C. Following removal of supernatants, protein precipitates were air dried and stored at \u221280\u00b0C prior to MS/MS analysis.\n\nPrecipitated proteins were digested overnight at 37\u00b0C by sequencing grade trypsin (12.5 \u03bcg/ml; Promega Madison, Wi, USA) in 20 \u03bcl of NH4HCO325 mmol/L. Digests were analyzed by an Orbitrap Fusion Tribrid mass spectrometer (Thermo Fisher Scientific, San Jose, CA) equipped with a Thermo Scientific EASY-Spray nanoelectrospray ion source and coupled to an Easy nano-LC Proxeon 1000 system (Thermo Fisher Scientific, San Jose, CA). Chromatographic separation of peptides was performed with the following parameters: pre-column Acclaim PepMap100 (2 cm, 75 \u03bcm i.d., 3 \u03bcm, 100 \u00c5), column Pepmap-RSLC Proxeon C18 (50 cm, 75 \u03bcm i.d., 2 \u03bcm, 100 \u00c5), 300 nl/min flow, gradient rising from 95% solvent A (water, 0.1% formic acid) to 35% B (100% acetonitrile, 0.1% formic acid) in 98 min. Peptides were analyzed in the orbitrap in full ion scan mode at a resolution of 60000 (at m/z 400) and with a mass range of m/z 350\u20131550. Fragments were obtained with a Higher-energy Collisional Dissociation (HCD) activation with a collisional energy of 30%, and a quadrupole isolation width of 1.6 Da. MS/MS data were acquired in the linear ion trap in top-speed mode, with a dynamic exclusion of 50 s and a repeat duration of 60 s. The maximum ion accumulation times were set to 250 ms for MS acquisition and 60 ms for MS/MS acquisition in parallelization mode. MS/MS data were processed with Proteome Discoverer 1.4 software (Thermo Fisher scientific, San Jose, CA) coupled to an in house Mascot search server (Matrix Science, Boston, MA; version 2.5.1). The mass tolerance was set to 7 ppm for precursor ions and 0.5 Dalton for fragments. The following modifications were used in variable modifications: oxidation (M), phosphorylations (STY), acetylations (K, N-term), deamidations (N, Q), methylations (K), ubiquitinylation (GG and LRGG motifs on K amino acids). The maximum number of missed cleavages by trypsin was limited to 2. MS/MS data were searched against SwissProt databases with the Schizosaccharomyces pombe taxonomy. False Discovery Rate (FDR) for peptides was calculated using the Percolator algorithm and peptides were considered identified under the 1% FDR threshold.\n\n### Coimmunoprecipitation\n\nCoIPs were performed essentially as described in the previous section with the following modifications: 50 ODs of cells were grown at 30\u00b0C in EMM 0.5X and harvested by centrifugation. Cell pellets were resuspended in 2 ml lysis buffer to make \u2018pop-corn\u2019. 1 mg of pre-washed rabbit IgG-conjugated M-270 Epoxy Dynabeads (Invitrogen, #14311D) was used for immunoprecpitation in the presence or the absence of RNaseA/T1 cocktail (Ambion, #AM2286). Following washes, precipitates and input fractions were boiled at 95\u00b0C for 10 min in the presence of sample loading buffer and analyzed by SDS-PAGE and Western blotting using 1:3000 peroxydase-conjugated antiperoxydase (PAP) (Sigma, #P1291, RRID:AB_1079562), 1:3000 monoclonal anti-FLAG antibody (Sigma, #F3165, RRID:AB_259529), 1:3000 monoclonal anti-GFP antibody (Roche, #11814460001, RRID:AB_390913) and 1:4000 goat anti-mouse IgG-HRP (Santa Cruz Biotechnology, #sc-2005, RRID:AB_631736). Detection was performed using SuperSignal West Pico Chemiluminescent Substrate (ThermoFischer Scientific, #34080), ECL Select reagent (GE Healthcare, #RPN2235) and a Fujifilm LAS-4000 imager.\n\n### Total protein analysis\n\n2 to 5 ODs of cells grown at 30\u00b0C in YE, EMM 0.5X were harvested and lysed on ice in the presence of 0.3M NaOH and 1% \u03b2-mercaptoethanol for 15 min with occasional vortexing. Extracts were treated with TCA (7% final concentration) for 15 min on ice before full speed centrifugation at 4\u00b0C. Pellets were then resuspended in loading buffer (200 mM phosphate buffer pH 6.8, 8 M urea, 5% SDS, 1 mM EDTA, 100 mM DTT, 0.08% bromophenol blue) and heat-denaturated at 70\u00b0C for 10 min. Soluble fractions were recovered and samples were analyzed by standard immunoblotting procedures using 1:3000 peroxydase-conjugated antiperoxydase (PAP) (Sigma, #P1291, RRID:AB_1079562), 1:3000 monoclonal anti-HA antibody (12CA5) (Sigma, #11583816001, RRID:AB_514505), 1:3000 monoclonal anti-FLAG antibody (Sigma, #F3165, RRID:AB_259529), 1:3000 monoclonal anti-tubulin antibody (Abcam, #ab6160, RRID:AB_305328), 1:3000 anti-CDC2 antibody (Abcam, #ab5467, RRID:AB_2074778), 1:4000 goat anti-mouse IgG-HRP (Santa Cruz Biotechnology, #sc-2005, RRID:AB_631736) and 1:4000 goat anti-rat IgG-HRP (Santa Cruz Biotechnology, #sc-2032, RRID:AB_631755). For chase experiments, 100 \u00b5g/mL cycloheximide (Sigma, #C7698) was directly added to the cultures. Detection was performed using SuperSignal West Pico Chemiluminescent Substrate (ThermoFischer Scientific, #34080), ECL Select reagent (GE Healthcare, #RPN2235) and a Fujifilm LAS-4000 imager. The ImageQuant TL software (1D gel analysis) was used for signal quantification. Measurements were statistically compared using two-tailed t-tests with the following p-value cut-offs for significance: 5E-2>*>1E-2; 1E-2>**>1E-5; ***<1E-5.\n\n### RNA extraction and RT-qPCR analyses\n\nRNAs were prepared using the hot acid phenol method and treated with DNaseI (New England Biolabs, #M0303S). 4 \u00b5g RNAs were used in reverse transcription reactions with 200 units of M-MLV RT (Invitrogen, #28025\u2013013) and strand-specific primers. Following cDNA synthesis at 37\u00b0C for 50 min, the enzyme was inactivated at 80\u00b0C for 10 min. Samples were analyzed by qPCR with SYBR Green using a LightCycler LC480 apparatus (Roche) and quantification was performed using the \u2206\u2206Ct method. Controls without reverse transcriptase were systematically run in parallel to estimate the contribution of contaminating DNA. Amplification efficiencies were measured for each primer pairs in every run. Measurements were statistically compared using two-tailed t-tests with the following p-value cut-offs for significance: 5E-2>*>1E-2; 1E-2>**>1E-5; ***<1E-5. Oligonucleotides used in qPCR reactions are listed in Supplementary file 2.\n\n### RNA-immunoprecipitation\n\n50 ODs of cells were grown at 30\u00b0C in EMM 0.5X and harvested by centrifugation. Cell pellets were resuspended in 2 ml lysis buffer (6 mM Na2HPO4, 4 mM NaH2PO4, 150 mM NaC2H3O2, 5 mM MgC2H3O2, 0.25% NP-40, 2 mM EDTA, 1 mM EGTA, 5% glycerol, 1 mM AEBSF, 4 mM benzamidine, 2X Roche complete EDTA-free protease inhibitor cocktail and 160 U Murine RNase inhibitor (New England Biolabs, #M0314L)) to make \u2018pop-corn\u2019. Lysis was performed using a Ball Mill (Retsch, MM400) for 15 min at a 10 Hz frequency. Extracts were cleared by centrifugation before precipitation with 40 \u00b5L pre-washed anti-FLAG M2 affinity gel (Sigma, #A2220) for 2 hr at 4\u00b0C. Beads were then washed twice with IPP150 (10 mM Tris pH8, 150 mM NaCl, 0.1% NP-40). Total and immunoprecipitated RNAs were extracted with phenol:chloroform 5:1 pH4.7 (Sigma, #P1944) and precipitated with ethanol. RNA samples were treated with DNase (Ambion, #AM1906) prior to RT-qPCR analyses as mentioned above. Measurements were statistically compared using two-tailed t-tests with the following p-value cut-offs for significance: 5E-2>*>1E-2; 1E-2>**>1E-5; ***<1E-5.\n\nTranscriptome analyses by RNA-sequencing cDNA libraries were generated according to standard Illumina protocols. The RNA sequences reported in this paper have been deposited in the NCBI Gene Expression Omnibus with the accession number GSE72327. Reads were trimmed with cutadapt and mapped to the ASM294v2.23 S.pombe genome using bowtie2. Read counts for every annotated transcript were calculated using HT-seq count and the ASM294v2.23 genome annotation. Differential expression was computed using the R bioconductor package DESeq2. Functional analysis was performed using the DAVID online tool.\n\n### Ubiquitin pulldown\n\n50 ODs of cells grown at 30\u00b0C in EMM 0.5X lacking L-leucine were harvested after 1 hr in the presence of 10 mM N-ethylmaleimide (Sigma, #E3876). Cell pellets were lysed with the NaOH/TCA method. Following centrifugation, pellets were washed twice with ice-cold acetone and then resuspended in 1.5 mL buffer A (6 M guanidinium chloride, 100 mM NaH2PO4, 125 mM Tris-base, 0.05% Tween-20), and incubated for up to 2 hr at room temperature on a nutator. Cell debris were removed by centrifugation and extracts were supplemented with 10 mM imidazole. 40 \u00b5L of pre-washed His tag isolation and pulldown Dynabeads (Life Technology, #10103D) were added and samples were incubated for up to 3 hr at room temperature on a nutator. Beads were then washed three times in buffer A containing 1 mM imidazole and four times in buffer C (8 M urea, 100 mM NaH2PO4, 100 mM Tris-base, 0.05% Tween-20, 1 mM imidazole) before elution in 30 \u00b5L sample loading buffer at 95\u00b0C for 10 min. For input samples, a fraction of extracts was precipitated with TCA, washed with acetone, air-dried and denaturated in sample loading buffer at 37\u00b0C for 15 min. Samples were analyzed by western blotting using 4\u201312% NuPAGE gels, 1:3000 anti-HA antibody (12CA5) (Sigma, #11583816001, RRID:AB_514505), 1:3000 anti-FLAG antibody (Sigma, #F3165, RRID:AB_259529), 1:1000 anti-ubiquitin HRP-conjugated antibody (Santa Cruz Biotechnology, #sc-8017, RRID:AB_628423) and 1:4000 goat anti-mouse IgG-HRP (Santa Cruz Biotechnology, #sc-2005, RRID:AB_631736). Detection was performed using SuperSignal West Pico Chemiluminescent Substrate (ThermoFischer Scientific, #34080), ECL Select reagent (GE Healthcare, #RPN2235) and a Fujifilm LAS-4000 imager. Measurements were statistically compared using two-tailed t-tests with the following p-value cut-offs for significance: 5E-2>*>1E-2; 1E-2>**>1E-5; ***<1E-5.\n\n### Microscopy\n\nExponentially growing cells cultured in minimal medium (EMM0.5X) were imaged at room temperature with a motorized Olympus BX-61 fluorescence microscope equipped with an Olympus PlanApo 100\u00a0\u00d7\u00a0oil immersion objective (1.40 NA), Nomarski optics, a QiClick cooled monochrome camera (QImaging, Surrey, BC, Canada) and the MetaVue acquisition software (Molecular Devices; Sunnyvale, CA, USA). GFP-tagged proteins were visualized using a GFP filter set (41020 from Chroma Technology, Bellows Falls, VT; excitation HQ480/20x, dichroic Q505LP, emission HQ535/50 m). Images were processed in ImageJ (NIH).\n",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "86852ec6-02ce-4f08-8629-1f443bf294f4",
+      "submission_id": "767dff88-8f1a-4b41-9ab0-7d7ef4b05dc9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Torben Heick Jensen, Aarhus University Denmark\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.28046.023](https://doi.org/10.7554/eLife.28046.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Ubiquitination-dependent control of sexual differentiation by the Ccr4-Not complex in fission yeast\" for consideration by eLife. Your article has been favorably evaluated by Kevin Struhl (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe authors explore a role for Mot2, a RING domain containing subunit of the Ccr4-Not complex, in the regulation of meiotic transcripts. It was previously determined by other studies that Mmi1 associates with the Ccr4-Not complex. Mmi1 is an RNA binding protein that targets Ccr4-Not to meiotic transcripts for their repression. The authors confirm this interaction and set out to determine how Ccr4-Not regulates the repressed transcripts. Contrary to expectations, deleting the deadenylase subunits, Ccr4 and Caf1, does not affect significantly the levels of meiotic transcripts. The lone catalytic subunit of the complex that does is Mot2 (Not4). This leads the authors to explore a role of the reported ubiquitin ligase promoting activity of Mot2 in the regulation of Mei2, another RNA binding protein. They find that the amount of Mei2 protein is increased in a mot2 mutant, which is dependent on the RING domain, suggesting its ability to recruit E2s is important.\n\nThe discovery that repression is not mediated by deadenylation and may require the ubiquitylation function is interesting. The experiments presented are mostly convincing and done well. A weakness is that it is questionable if Mot2 directly ubiquitylates Mei2. This is outlined below.\n\n- No direct evidence that Mot2 affects the stability of the Mei2 protein, such as pulse chase, is provided. In fact, the attempt to measure half-life using CHX in Figure 6\u2014figure supplement 1 suggests that the half-life is equivalent in the wild type and mot2 mutant. There is also no direct evidence that Mot2 ubiquitylates Mei2. The in vivo genetic evidence contained in Figure 6C suggests the shifted band (presumably ubiquitylated Mei2) migrating between 130-250 is the same in both the WT and mot2 mutant. The normalization to total protein is not convincing. Furthermore, the result that the overall levels of ubiquitylation detected by 6HIS pulldown in the figure is not surprising since Not4 has multiple substrates. Could the authors perform a reciprocal experiment of IP'ing Mei2 (in the presence of proteasome inhibitors) and measuring ubiquitylation levels of this protein?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Ubiquitination-dependent control of sexual differentiation in fission yeast\" for further consideration at eLife. Your revised article has been favorably evaluated by Kevin Struhl (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there is one remaining issue that needs to be addressed before acceptance, as outlined below:\n\nThe genetics supporting Mot2's function in regulating Mmi1 is compelling. A significant gap, however, is the lack of evidence showing Mot2 ubiquitylates the suggested target. The effect on target turnover is also not solid. Since there is a limit to what can be done in the utilized system, the authors should, before acceptance, discuss these limitations of the study and that it is unclear that Mot2 directly ubiquitylates the substrate.\n",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3a183af6-dff0-45a0-92f7-970802e8f743",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C1",
+      "claim": "In fission yeast, meiosis-specific transcripts are selectively eliminated during vegetative growth by the combined action of the YTH-family RNA-binding protein Mmi1 and the nuclear exosome.",
+      "claim_type": "EXPLICIT",
+      "source": "In fission yeast, meiosis-specific transcripts are selectively eliminated during vegetative growth by the combined action of the YTH-family RNA-binding protein Mmi1 and the nuclear exosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established finding in the field, supported by citations in the introduction (Harigaya et al., 2006).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "230be17a-bc1f-4172-b233-9d710df2f9d5",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C2",
+      "claim": "Upon nutritional starvation, the master regulator of meiosis Mei2 inactivates Mmi1, thereby allowing expression of the meiotic program.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon nutritional starvation, the master regulator of meiosis Mei2 inactivates Mmi1, thereby allowing expression of the meiotic program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, supported by citations in the introduction (Harigaya et al., 2006).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "50bf842c-c3c5-4154-824a-6e67158bf7db",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C3",
+      "claim": "The E3 ubiquitin ligase subunit Not4/Mot2 of the Ccr4-Not complex associates with Mmi1.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that the E3 ubiquitin ligase subunit Not4/Mot2 of the evolutionarily conserved Ccr4-Not complex, which associates with Mmi1, promotes suppression of meiotic transcripts expression in mitotic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by co-immunoprecipitation experiments and mass spectrometry data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "1216ae93-fd7b-4589-b39d-c885c5ee465c",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C4",
+      "claim": "Mot2 promotes suppression of meiotic transcripts expression in mitotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that the E3 ubiquitin ligase subunit Not4/Mot2 of the evolutionarily conserved Ccr4-Not complex, which associates with Mmi1, promotes suppression of meiotic transcripts expression in mitotic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RT-qPCR data in Figure 2B showing accumulation of meiotic transcripts in mot2\u2206 mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "97de1661-54ea-4f9a-bcb3-a7ee015a9211",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C5",
+      "claim": "Mot2 directs ubiquitination of Mei2 to preserve the activity of Mmi1 during vegetative growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses suggest that Mot2 directs ubiquitination of Mei2 to preserve the activity of Mmi1 during vegetative growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ubiquitination assays in Figure 6B-C showing decreased Mei2 ubiquitination in mot2\u2206 cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "77cd83e5-417b-43b9-aa6c-d6d91dea0520",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C6",
+      "claim": "Mot2 is not involved in the constitutive pathway of Mei2 turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, Mot2 is not involved in the constitutive pathway of Mei2 turnover, but rather plays a regulatory role to limit its accumulation or inhibit its function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of Mei2 levels and ubiquitination in mot2\u2206 versus ubr1\u2206 cells shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "34f90a2d-52df-4e70-9be8-a08094949d2f",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C7",
+      "claim": "Mot2 plays a regulatory role to limit Mei2 accumulation or inhibit its function.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, Mot2 is not involved in the constitutive pathway of Mei2 turnover, but rather plays a regulatory role to limit its accumulation or inhibit its function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Western blot data in Figure 3A showing increased Mei2 levels in mot2\u2206 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "c3e36af3-3888-4078-b30a-fdc66f3598cb",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C8",
+      "claim": "Mmi1 recruits the Ccr4-Not complex to counteract its own inhibitor Mei2.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that Mmi1 recruits the Ccr4-Not complex to counteract its own inhibitor Mei2, thereby locking the system in a stable state that ensures the repression of the meiotic program by Mmi1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the data showing Mmi1-Ccr4-Not interaction and Mot2's effect on Mei2.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "376dde96-8eaa-4bbd-b285-129a915f5cc4",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C9",
+      "claim": "Mmi1 is a member of the conserved YTH family of RNA-binding proteins that localizes exclusively to the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Essential to this regulatory process is Mmi1 (meiotic mRNA interceptor 1), a member of the conserved YTH family of RNA-binding proteins that localizes exclusively to the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations (Harigaya et al., 2006).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "1b792978-5ef1-43fa-8953-fe3ddeaa5902",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C10",
+      "claim": "Mmi1 recognizes a cis-acting region within targeted mRNAs called DSR (Determinant of Selective Removal), which confers nuclear exosome-mediated degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mmi1 recognizes a cis-acting region within targeted mRNAs, called DSR (Determinant of Selective Removal), which confers nuclear exosome-mediated degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations (Yamashita et al., 2012; Wang et al., 2016; Chatterjee et al., 2016; Wu et al., 2017; Touat-Todeschini et al., 2017).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "eb043af8-c0c1-4d25-914d-10162d4bef32",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C11",
+      "claim": "DSR regions are enriched in repeats of the hexanucleotide motif UNAAAC to which Mmi1 binds via its C-terminal YTH domain.",
+      "claim_type": "EXPLICIT",
+      "source": "DSR regions are enriched in repeats of the hexanucleotide motif UNAAAC to which Mmi1 binds to via its C-terminal YTH domain (Yamashita et al., 2012; Wang et al., 2016; Chatterjee et al., 2016; Wu et al., 2017; Touat-Todeschini et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "b2bfec62-92b2-42ff-a254-ce9de03de241",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C12",
+      "claim": "Mmi1 associates with the MTREC complex to mediate meiotic mRNAs suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Mmi1 was next found to associate and cooperate with the multi-subunit MTREC complex to mediate meiotic mRNAs suppression (Sugiyama and Sugioka-Sugiyama, 2011; Yamashita et al., 2012; Lee et al., 2013; Egan et al., 2014; Zhou et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "75a3bf62-3c54-40d0-8c7f-b5a4fbaeab36",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C13",
+      "claim": "Core components of the MTREC complex include the zinc finger-containing protein Red1 and the Mtr4-like RNA helicase Mtl1.",
+      "claim_type": "EXPLICIT",
+      "source": "Core components of this complex include the zinc finger-containing protein Red1 and the Mtr4-like RNA helicase Mtl1 (Lee et al., 2013; Egan et al., 2014; Zhou et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "10d14dbf-cb66-4842-85fc-c33ce8da9478",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C14",
+      "claim": "Mmi1 interacts with the Ccr4-Not complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies also reported an interaction between Mmi1 and the Ccr4-Not complex (Cotobal et al., 2015; Ukleja et al., 2016; Sugiyama et al., 2016; Stowell et al., 2016), the major cytoplasmic mRNA deadenylation machinery conserved from yeast to humans (Wahle and Winkler, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and confirmed by the authors' own data in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "375ad83b-78c8-4a42-b0d0-4aaee6f9a6d3",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C15",
+      "claim": "The Ccr4-Not complex is the major cytoplasmic mRNA deadenylation machinery conserved from yeast to humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies also reported an interaction between Mmi1 and the Ccr4-Not complex (Cotobal et al., 2015; Ukleja et al., 2016; Sugiyama et al., 2016; Stowell et al., 2016), the major cytoplasmic mRNA deadenylation machinery conserved from yeast to humans (Wahle and Winkler, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "2a256e5a-a562-4ac2-aa8d-ce40ac13cc97",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C16",
+      "claim": "Mmi1 recruits Ccr4-Not to its RNA targets in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although Mmi1 recruits Ccr4-Not to its RNA targets in vivo (Cotobal et al., 2015) and stimulates its deadenylation activity in vitro (Stowell et al., 2016), this function of the complex is not required for the turnover and the translation of DSR-containing meiotic mRNAs (Cotobal et al., 2015; Sugiyama et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "8f11b814-6972-4fbd-8f04-1c231255a04a",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C17",
+      "claim": "Mmi1 stimulates the deadenylation activity of Ccr4-Not in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although Mmi1 recruits Ccr4-Not to its RNA targets in vivo (Cotobal et al., 2015) and stimulates its deadenylation activity in vitro (Stowell et al., 2016), this function of the complex is not required for the turnover and the translation of DSR-containing meiotic mRNAs (Cotobal et al., 2015; Sugiyama et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "ca5f0130-19bd-41aa-b4ef-d417f9186b90",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C18",
+      "claim": "The deadenylation function of Ccr4-Not is not required for the turnover and translation of DSR-containing meiotic mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although Mmi1 recruits Ccr4-Not to its RNA targets in vivo (Cotobal et al., 2015) and stimulates its deadenylation activity in vitro (Stowell et al., 2016), this function of the complex is not required for the turnover and the translation of DSR-containing meiotic mRNAs (Cotobal et al., 2015; Sugiyama et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and confirmed by the authors' data in Figure 2B showing no effect of ccr4\u2206 and caf1\u2206 on meiotic mRNA levels.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "b8828327-05c3-4d81-80ee-731db94058b0",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C19",
+      "claim": "A subset of Mmi1-regulated genes is covered by repressive chromatin marks (H3K9me2) during vegetative growth.",
+      "claim_type": "EXPLICIT",
+      "source": "A subset of Mmi1-regulated genes is covered by repressive chromatin marks (i.e. dimethylated histone H3 lysine 9 or H3K9me2) during vegetative growth, which disappear upon developmental or environmental cues (Zofall et al., 2012; Hiriart et al., 2012; Tashiro et al., 2013; Shah et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "cebac4f8-fc1a-45ff-9302-4dc3aff9a0ac",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C20",
+      "claim": "Mmi1 and Red1 recruit the H3K9 methyltransferase Clr4 to mediate H3K9me2 deposition.",
+      "claim_type": "EXPLICIT",
+      "source": "Mmi1 and the MTREC subunit Red1 recruit the H3K9 methyltransferase Clr4 to mediate H3K9me2 deposition and direct components of the RNAi machinery to these loci (Zofall et al., 2012; Hiriart et al., 2012; Tashiro et al., 2013; Shah et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "77a8f8e0-7043-487b-a1d7-e296b6c8ee82",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C21",
+      "claim": "The post-transcriptional degradation pathway mediated by Mmi1, MTREC and the exosome is predominant over heterochromatin and RNAi contributions to silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the contribution of heterochromatin and RNAi machineries to the silencing of Mmi1 targets is moderate. Rather, the post-transcriptional degradation pathway mediated by Mmi1, MTREC and the exosome is predominant (Harigaya et al., 2006; Lee et al., 2013; Ard et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "491964db-d255-4057-b374-69cc108567ca",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C22",
+      "claim": "Upon nutritional starvation, Mmi1 is sequestered in an RNP complex that includes Mei2 and the lncRNA meiRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon nutritional starvation, Mmi1 is sequestered in an RNP complex, which allows translation of meiotic mRNAs and progression of the cell through meiosis (Harigaya et al., 2006). This inhibitory complex includes the nucleocytoplasmic shuttling RNA-binding protein Mei2, required for pre-meiotic DNA synthesis and the first meiotic division, and the DSR-containing lncRNA meiRNA, encoded by the sme2+ gene (Watanabe and Yamamoto, 1994; Sato et al., 2001; Shimada et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "1bec0647-d818-4893-ba4c-1181cbf07e50",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C23",
+      "claim": "Sequestration of Mmi1 by the Mei2-meiRNA complex occurs at the sme2+ locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequestration of Mmi1 by the Mei2-meiRNA complex occurs at the sme2+ locus (Shimada et al., 2003; Shichino et al., 2014) and is essential for entry into meiosis and sexual differentiation (Harigaya et al., 2006; Shichino et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "d89e5c39-a10b-444f-b780-9ea9a64360ad",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C24",
+      "claim": "Mei2 expression depends on the meiosis-specific transcription factor Ste11.",
+      "claim_type": "EXPLICIT",
+      "source": "mei2+ expression depends on the meiosis-specific transcription factor Ste11 (Sugimoto et al., 1991) and its activity and stability are regulated by phosphorylation via two protein kinases, Pat1 (also known as Ran1) and Tor2, both of which are essential for vegetative growth and inhibition of sexual differentiation (Kitamura et al., 2001; Alvarez and Moreno, 2006; Otsubo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "696a7582-637b-45ab-8b3a-dba87afc65aa",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C25",
+      "claim": "Mei2 activity and stability are regulated by phosphorylation via Pat1 and Tor2 protein kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "mei2+ expression depends on the meiosis-specific transcription factor Ste11 (Sugimoto et al., 1991) and its activity and stability are regulated by phosphorylation via two protein kinases, Pat1 (also known as Ran1) and Tor2, both of which are essential for vegetative growth and inhibition of sexual differentiation (Kitamura et al., 2001; Alvarez and Moreno, 2006; Otsubo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "a8ec41b1-a258-4ff8-b3d0-202835224691",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C26",
+      "claim": "Phosphorylated forms of Mei2 are inhibited by 14-3-3 family proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylated forms of Mei2 are inhibited by 14-3-3 family proteins (Sato et al., 2002) and are targeted for degradation by the proteasome in an ubiquitination-dependent manner (Kitamura et al., 2001; Otsubo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "a221c774-4491-4785-9d8a-91580ad5cb9a",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C27",
+      "claim": "Phosphorylated Mei2 is targeted for degradation by the proteasome in an ubiquitination-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylated forms of Mei2 are inhibited by 14-3-3 family proteins (Sato et al., 2002) and are targeted for degradation by the proteasome in an ubiquitination-dependent manner (Kitamura et al., 2001; Otsubo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "67b955b5-fade-4aa2-845a-f731e4d48f77",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C28",
+      "claim": "Mmi1 associates independently with MTREC and Ccr4-Not during vegetative growth.",
+      "claim_type": "EXPLICIT",
+      "source": "These interactions were preserved in the absence of Red1, which is required for MTREC integrity, possibly supporting the existence of alternative Mmi1-containing complexes. Consistent with this, Mtl1 and Red1 did not interact with Not1 and Caf1 in our assays (Figure 1D, and Figure 1\u2014figure supplement 1D). Together, our data support the notion that Mmi1 associates independently with MTREC and Ccr4-Not during vegetative growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by co-immunoprecipitation data in Figure 1C-D showing Mmi1-Ccr4-Not interaction is Red1-independent, and MTREC components do not interact with Ccr4-Not.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "0c60921c-be7a-4284-bea8-62f4d754d1e4",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C29",
+      "claim": "The subunits of the Ccr4-Not complex were the most abundant interacting factors with Mmi1 in mass spectrometry analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The most abundant interacting factors were the subunits of the Ccr4-Not complex (Figure 1B), which was also reported independently while this work was in progress (Cotobal et al., 2015; Ukleja et al., 2016; Sugiyama et al., 2016; Stowell et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mass spectrometry data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "e2eb12c9-e0a6-4bf4-a86b-e5cb9873780c",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C30",
+      "claim": "Mmi1 efficiently pulled down Not1, Caf1 and Mot2 in an RNA-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We validated the interactions revealed by the MS analysis using co-immunoprecipitation experiments. Mmi1 efficiently pulled down Not1, Caf1 and Mot2 in an RNA-independent manner (Figure 1C, Figure 1\u2014figure supplement 1B\u2013C ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by co-immunoprecipitation data in Figure 1C and Figure 1\u2014figure supplement 1B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "c31fedc2-3fd2-4082-8116-bf82023e8587",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C31",
+      "claim": "The RNA deadenylases Ccr4 and Caf1 are not required for meiotic mRNAs degradation when cells are grown in rich medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither the RNA deadenylases Ccr4 and Caf1 nor the E3 ubiquitin ligase Mot2 were required for meiotic mRNAs degradation when cells were grown in rich medium, in contrast to the nuclear exosome subunit Rrp6 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "5c424d25-c314-401b-84d6-b73c9c6efb22",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C32",
+      "claim": "Mot2 is not required for meiotic mRNAs degradation when cells are grown in rich medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither the RNA deadenylases Ccr4 and Caf1 nor the E3 ubiquitin ligase Mot2 were required for meiotic mRNAs degradation when cells were grown in rich medium, in contrast to the nuclear exosome subunit Rrp6 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "7b71d3c1-ecd5-4e9d-9ec0-8dcf96b6d260",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C33",
+      "claim": "Several meiotic mRNAs including mei4+, ssm4+ and mcp5+ are upregulated specifically in the mot2\u2206 mutant when cells are cultured in minimal medium.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a significant role for the complex became apparent when cells were cultured in minimal medium. Indeed, several selected meiotic mRNAs, including mei4+, ssm4+ and mcp5+ were upregulated specifically in the mot2\u2206 mutant (Figure 2B), in some cases to levels comparable to those observed in rrp6\u2206 cells (e.g. mcp5+).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "4ebacd09-5b28-4b52-b5c3-bdcb77dab5aa",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C34",
+      "claim": "The deadenylation activity of the Ccr4-Not complex is not required for meiotic RNA degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the lack of meiotic RNAs stabilization in caf1\u2206, ccr4\u2206 and caf1\u2206 ccr4\u2206 mutants, indicates that the deadenylation activity of the complex is not required for RNA degradation (Figure 2B, data not shown), consistent with recent studies (Cotobal et al., 2015; Sugiyama et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data in Figure 2B and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "905134a6-4890-4edb-9458-e17f0ad7d29c",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C35",
+      "claim": "The E3 ubiquitin ligase Mot2 associates with DSR-containing meiotic mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work showed that the RNA deadenylases Ccr4 and Caf1 associate with DSR-containing meiotic mRNAs (Cotobal et al., 2015). Using RNA-immunoprecipitation assays, we found that the E3 ubiquitin ligase Mot2 interacts with the mei4+ and mcp5+ transcripts to the same extent as the Caf1 subunit, albeit less efficiently than Mmi1 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-immunoprecipitation data in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "99e781d5-e39c-40aa-835d-398dcf8d83f0",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C36",
+      "claim": "Mmi1 recruits the whole Ccr4-Not complex to its RNA targets.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the notion that Mmi1 recruits the whole Ccr4-Not complex to its RNA targets (Stowell et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and the authors' RNA-IP data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "ff901a1d-a67e-4bd0-a047-1866dc26d94c",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C37",
+      "claim": "622 transcripts show increased expression in the mot2\u2206 mutant in minimal medium.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed increased expression for 622 and 393 transcripts in the mot2\u2206 and rrp6\u2206 mutants respectively (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 2C and source data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "5dfa6430-557e-45e1-bcf7-8922946029a8",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C38",
+      "claim": "393 transcripts show increased expression in the rrp6\u2206 mutant in minimal medium.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed increased expression for 622 and 393 transcripts in the mot2\u2206 and rrp6\u2206 mutants respectively (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 2C and source data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "4f82e311-6189-4617-a31e-78d239952325",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C39",
+      "claim": "100 transcripts are upregulated in both mot2\u2206 and rrp6\u2206 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "A highly significant overlap of 100 transcripts indicates that Rrp6 and Mot2 function to repress expression of a common set of targets (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Venn diagram analysis in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "61f9ea24-ef69-40fa-973b-9709f86a2dd7",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C40",
+      "claim": "A large fraction of transcripts upregulated in mot2\u2206 cells contain DSR elements and are known targets of Mmi1, MTREC and the nuclear exosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, a large fraction of these RNAs contain DSR elements and are known targets of Mmi1, MTREC and the nuclear exosome during vegetative growth (Figure 2C\u2013D) (Lee et al., 2013; Hiriart et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data in Figure 2C-D and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "dd2b476a-45d1-4a5e-9470-23fa2eb3b924",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C41",
+      "claim": "Mot2 controls protein turnover through ubiquitination and proteasome-dependent degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work showed that Mot2 controls protein turnover through ubiquitination and proteasome-dependent degradation to regulate chromatin modification, DNA replication, transcription as well as translation (Panasenko et al., 2006; Laribee et al., 2007; Mersman et al., 2009; Haworth et al., 2010; Cooper et al., 2012; Sun et al., 2015; Laribee et al., 2015; Br\u00f6nner et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "f501909d-42db-4603-b0b0-471ff19cf490",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C42",
+      "claim": "Mot2 has roles in the functional integrity of the proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies revealed roles in the functional integrity of the proteasome (Panasenko and Collart, 2011) and in translational quality control (Dimitrova et al., 2009; Halter et al., 2014; Preissler et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "a49c3ebd-388b-4fde-8b31-e91a39ce17cb",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C43",
+      "claim": "Mot2 mediates non-destabilizing protein ubiquitination.",
+      "claim_type": "EXPLICIT",
+      "source": "Mot2 also mediates non-destabilizing protein ubiquitination (Panasenko and Collart, 2012), highlighting its functional versatility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "829347f9-3403-44cb-b403-3bc6aa650111",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C44",
+      "claim": "Mei2 is hardly detectable in rich medium in the presence of Mot2.",
+      "claim_type": "EXPLICIT",
+      "source": "We first determined Mei2 protein levels in wild type and mot2\u2206 cells grown in different conditions. In the presence of Mot2, Mei2 was hardly detectable in rich medium and accumulated only to low levels in minimal medium (Figure 3A, lanes 2 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "15124811-6bdb-4152-a0ea-a7d3b9da71c0",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C45",
+      "claim": "Deletion of mot2+ results in accumulation of Mei2 in rich medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of mot2+ resulted in a slight accumulation of Mei2 in rich medium, reaching levels comparable to those observed in a wild type strain grown in minimal medium (Figure 3A, compare lanes 3 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "f2fb68bf-be29-4d51-9df3-f2656cfa16db",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C46",
+      "claim": "Mei2 levels increase substantially in mot2\u2206 cells cultured in minimal medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, Mei2 levels increased substantially in mot2\u2206 cells cultured in minimal medium (Figure 3A, lane 6), which correlates with the requirement for Mot2 in meiotic mRNAs suppression in these conditions (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "5cabda0d-d80a-462f-bf90-fe944c889d36",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C47",
+      "claim": "mei2+ mRNA levels are increased in the mot2\u2206 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher Mei2 levels in mot2\u2206 cells might result from an effect on the production (or stability) of mei2+ mRNAs. Indeed, we found increased mei2+ transcript levels in the mot2\u2206 mutant (Figure 3\u2014figure supplement 1A), possibly as a result of a direct or indirect negative control exerted by Mot2 on the promoter of the mei2+ gene.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "7413f068-0bbc-4971-b4aa-122f18cd93ec",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C48",
+      "claim": "When mei2+ is expressed from the nmt1+ promoter, Mei2 protein shows a four-fold increase in mot2\u2206 mutant relative to wild type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess whether Ccr4-Not regulates Mei2 levels in a transcription-independent manner, we replaced the endogenous mei2+ promoter with the nmt1+ promoter, which is active in minimal medium lacking thiamine. In this context, we also detected a four-fold increase of the Mei2 protein in the mot2\u2206 mutant relative to wild type cells (Figure 3B\u2013C), while mei2+ mRNAs accumulated to only a limited extent (1.6 fold) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data in Figure 3B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "e281174e-0fae-49c1-84d8-1e4d5ed269da",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C49",
+      "claim": "Increased Mei2 protein levels cannot solely arise from altered transcription and/or stability of mei2+ mRNAs in mot2\u2206 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that increased Mei2 protein levels cannot solely arise from altered transcription and/or stability of mei2+ mRNAs in mot2\u2206 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data showing modest mei2+ mRNA increase versus large protein increase.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "34384d8e-4dd8-42b4-9abc-769fadb93cb7",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C50",
+      "claim": "Deletion of non-essential Ccr4-Not subunits other than Mot2 does not result in accumulation of Mei2.",
+      "claim_type": "EXPLICIT",
+      "source": "We also examined whether the control of Mei2 abundance involves additional Ccr4-Not components. Deletion of the non-essential subunits of the complex other than Mot2, including the RNA deadenylases Ccr4 and Caf1, did not result in the accumulation of Mei2 (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "cbef99f1-6293-4758-b5c1-03dd63172ec6",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C51",
+      "claim": "The regulation of Mei2 levels depends specifically on the integrity of the E3 ubiquitin ligase Mot2.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports the notion that the regulation of Mei2 levels depends specifically on the integrity of the E3 ubiquitin ligase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the specific requirement for Mot2 but not other Ccr4-Not subunits.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "c026236f-e06d-4878-a005-0b86a6e5da9e",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C52",
+      "claim": "Deletion of mei2+ restores degradation of meiotic mRNAs in the absence of Mot2.",
+      "claim_type": "EXPLICIT",
+      "source": "To demonstrate that the two events are causally linked, we assessed the levels of meiotic transcripts in a mot2\u2206 mei2\u2206 double mutant. Crucially, deletion of mei2+ restored degradation of meiotic mRNAs in the absence of Mot2 but not in rrp6\u2206 cells (Figure 4A), indicating that loss of Mei2 does not induce degradation of these transcripts by another pathway.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "743783d9-5578-4ec4-92f0-6614fe1a7103",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C53",
+      "claim": "Over-expression of mei2+ in a wild type background leads to strong stabilization of meiotic RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, over-expression of the mei2+ gene in a wild type background led to a strong stabilization of meiotic RNAs (Figure 4B), phenocopying the effect of a mot2\u2206 mutant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "fbab49ac-8a2e-4297-9053-bb3e6ecf6d53",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C54",
+      "claim": "Mot2 is important to maintain low levels of Mei2 and/or repress its activity to ensure efficient Mmi1- and exosome-dependent degradation of meiotic transcripts during vegetative growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these results demonstrate that Mot2 is important to maintain low levels of Mei2 and/or repress its activity to ensure efficient Mmi1- and exosome-dependent degradation of meiotic transcripts during vegetative growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the genetic epistasis data in Figure 4A-B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "5c558df3-9254-44ea-8bc2-d58df87e0744",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C55",
+      "claim": "mot2\u2206 cells do not undergo ectopic meiosis during exponential growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of exponentially growing cells by microscopy did not reveal the occurrence of ectopic meiosis in mot2\u2206 cells (Figure 4\u2014figure supplement 1A), supporting the notion that meiotic transcripts accumulate in actively dividing cells and not in a fraction of cells undergoing meiosis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy data in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "046ef0ca-2606-4ec5-9606-a5a315502d32",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C56",
+      "claim": "mot2\u2206 cells display a moderate growth defect in minimal medium that is partially due to inappropriate expression of meiotic RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "mot2\u2206 cells displayed a moderate growth defect in minimal medium that was in part due to the inappropriate expression of meiotic RNAs since the defect was partially suppressed by deletion of mei2+ (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by growth curve data in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "be266c9a-5f3b-4fc0-9eda-2a0bbd85a5d2",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C57",
+      "claim": "The association of Mei2 with Mmi1 persists in the absence of Mot2.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the model that Mmi1 recruits Mot2 to limit the levels of Mei2 or control its activity, the association of Mei2 with Mmi1 should persist in the absence of the E3 ligase. Consistent with this notion, co-immunoprecipitation assays and MS analyses of Mmi1 purified from the mot2\u2206 mutant grown in minimal medium indicated that Mei2 persisted in association with Mmi1, as anticipated from its higher steady state levels (Figure 4C, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by co-immunoprecipitation data in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "f4443e5c-f79e-4145-996f-dd4bd8ca96c2",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C58",
+      "claim": "Mei2 accumulates in an mmi1\u2206 mutant despite the presence of wild type Mot2.",
+      "claim_type": "EXPLICIT",
+      "source": "Another prediction is that the control of Mei2 levels should depend on Mmi1. We indeed observed an accumulation of Mei2 in an mmi1\u2206 mutant, despite the presence of wild type Mot2 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "af220def-59b1-44af-bffd-1559c0495834",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C59",
+      "claim": "Neither Red1 nor Rrp6 affect Mei2 levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, neither Red1 nor Rrp6 affected Mei2 levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "e39d7852-e710-418b-8539-c04b571a5640",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C60",
+      "claim": "Mmi1 and Mot2 are components of a cellular pathway that is distinct from the post-transcriptional regulation of meiotic mRNAs exerted by Mmi1, MTREC and the exosome.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that Mmi1 and Mot2 are components of a cellular pathway that is distinct from the post-transcriptional regulation of meiotic mRNAs exerted by Mmi1, MTREC and the exosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that Red1 and Rrp6 don't affect Mei2 levels.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "20b7e823-bc46-468c-8060-54e9692a7fa6",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C61",
+      "claim": "The most N-terminal residues of Mmi1 are required for its association with the Ccr4-Not complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work showed that the most N-terminal residues of Mmi1 are required for its association with the Ccr4-Not complex (Stowell et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "db9bd444-13c3-44b5-92f5-29378c8e9d53",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C62",
+      "claim": "Expression of Mmi1-(1-65)\u2206 variant leads to accumulation of Mei2.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of a variant of Mmi1 lacking the first 65 amino acids (Mmi1-(1-65)\u2206) led to the accumulation of Mei2, similarly to mot2\u2206 cells (Figure 4E), strongly suggesting that the recruitment of Ccr4-Not by Mmi1 is required to maintain low levels of Mei2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "05454a3a-4520-47bc-8ae3-0b00821dfe3a",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C63",
+      "claim": "The recruitment of Ccr4-Not by Mmi1 is required to maintain low levels of Mei2.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of a variant of Mmi1 lacking the first 65 amino acids (Mmi1-(1-65)\u2206) led to the accumulation of Mei2, similarly to mot2\u2206 cells (Figure 4E), strongly suggesting that the recruitment of Ccr4-Not by Mmi1 is required to maintain low levels of Mei2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data showing Mmi1-(1-65)\u2206 phenocopies mot2\u2206.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "6ddaf1e9-5a32-4dcc-84ec-a215b9c2a834",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C64",
+      "claim": "The fraction of mei2+ mRNAs associated with translating ribosomes does not increase in the mot2\u2206 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "If Mot2 represses translation of mei2+ mRNAs, then the fraction of transcripts associated with translating ribosomes should increase in the mot2\u2206 mutant. Contrary to this scenario, both the 60S ribosomal subunit Rpl1601 and the elongation factor Tef3 did not pull down more mei2+ transcripts in the absence of Mot2, despite identical protein levels (Figure 5A, and Figure 5\u2014figure supplement 1A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-IP data in Figure 5A and Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "50cb9566-b94c-4473-9ec9-34f1629043b6",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C65",
+      "claim": "mei2+ mRNA translation is not specifically increased in mot2\u2206 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Further indicating that mei2+ mRNA translation is not specifically increased in mot2\u2206 cells, the fraction of immunoprecipitated mei2+ mRNAs relative to act1+ transcripts was even slightly decreased in the mutant (Figure 5B, and Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-IP data in Figure 5B and Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "509fb0dd-4a1d-499a-9970-754524a5571f",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C66",
+      "claim": "Mmi1 co-immunoprecipitates DSR-containing transcripts but not mei2+ mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Mmi1 interacts with the Ccr4-Not complex (Figure 1; Cotobal et al., 2015; Ukleja et al., 2016; Sugiyama et al., 2016; Stowell et al., 2016), we also investigated whether it associates with mei2+ transcripts. We found that Mmi1 co-immunoprecipitates DSR-containing transcripts (e.g. mei4+ and mcp5+) but not mei2+ mRNAs, further supporting the notion that Mmi1 and Mot2 do not partake in the translational control of Mei2 (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-IP data in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "1b2d1c56-6ba5-483c-83e0-598f7abe18d9",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C67",
+      "claim": "Mei2 accumulates to similar levels in both mts2-1 and mts2-1 mot2\u2206 mutants at the non-permissive temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the latter notion, Mei2 accumulates to similar levels in both mts2-1 and mts2-1 mot2\u2206 mutants at the non-permissive temperature, suggesting that Mot2 triggers Mei2 degradation via the proteasome pathway (Figure 5D, compare lanes 3 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "72679f0f-599d-447b-b244-bdfaadf7890f",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C68",
+      "claim": "Mot2 triggers Mei2 degradation via the proteasome pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the latter notion, Mei2 accumulates to similar levels in both mts2-1 and mts2-1 mot2\u2206 mutants at the non-permissive temperature, suggesting that Mot2 triggers Mei2 degradation via the proteasome pathway (Figure 5D, compare lanes 3 and 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the genetic epistasis data in Figure 5D.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "602a5472-8643-41e9-b37f-dc0e0b65a023",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C69",
+      "claim": "Lower-migrating Mei2 isoforms are specifically detected in mts2-1 cells, possibly reflecting accumulation of phosphorylated and/or ubiquitinated degradation intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that lower-migrating Mei2 isoforms were specifically detected in mts2-1 cells, possibly reflecting the accumulation of phosphorylated and/or ubiquitinated degradation intermediates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on observation of Western blot data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "cf8eacd2-29a4-4177-8cd0-934cfec2d235",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C70",
+      "claim": "Mmi1 and Mot2 do not mediate translational repression of mei2+ mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results support the notion that Mmi1 and Mot2 do not mediate translational repression of mei2+ mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the RNA-IP and genetic data in Figure 5.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "840533c0-95ae-4c2a-ab06-927f57ca1c25",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C71",
+      "claim": "The ubiquitination activity of Mot2 is required for suppressing expression of Mei2 in vegetative cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of Mot2 variants lacking the RING domain (Mot2-RING\u2206) or carrying single substitutions in residues involved in substrate ubiquitination (Mot2-C37A, -C45A and -C57A) did not restore wild type levels of Mei2 in a mot2\u2206 background (Figure 6A). This indicates that the ubiquitination activity of Mot2 is required for suppressing expression of Mei2 in vegetative cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data in Figure 6A showing Mot2 catalytic mutants cannot rescue Mei2 accumulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "4125ac74-a1ec-4f4c-b1b0-802765d3ba97",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C72",
+      "claim": "Up to four specific bands corresponding to ubiquitinated Mei2 can be observed in wild type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Up to four specific bands corresponding to Ubi-Mei2 could be observed in wild type cells (Figure 6B, lane 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "1102e0e9-032d-4b76-8e83-70a1487abf2a",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C73",
+      "claim": "Deletion of mot2+ results in an approximate four-fold decrease in the fraction of ubiquitinated Mei2 species.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of mot2+ resulted in the detection of similar levels of Ubi-Mei2 in spite of the higher amount of total Mei2, which corresponds to an approximate four-fold decrease in the fraction of ubiquitinated species (Figure 6C; see also Figure 6\u2014figure supplement 1A for equal Mei2 loading).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification in Figure 6C and Western blot in Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "535296c3-32f9-442a-81be-1cebca7f2a6b",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C74",
+      "claim": "In mts2-1 mot2\u2206 mutants, there is a 2-fold decrease in the fraction of ubiquitinated Mei2 species compared to mts2-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We also analyzed the fraction of Ubi-Mei2 species in mts2-1 and mts2-1 mot2\u2206 mutants, in which the levels of total Mei2 are nearly identical, and reproducibly observed a 2-fold decrease in the absence of Mot2 in this context (Figure 6\u2014figure supplement 1B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot and quantification in Figure 6\u2014figure supplement 1B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "f5cb0422-7fea-4405-bb60-550fb7a0b58a",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C75",
+      "claim": "Upon roughly 100-fold Mei2 overexpression, there is a proportional increase in ubiquitinated Mei2 levels.",
+      "claim_type": "EXPLICIT",
+      "source": "To exclude the possibility that the decrease in the fraction of Ubi-Mei2 species in the mot2\u2206 mutant is the consequence - and not the cause - of increased Mei2 levels, we compared the fraction of Ubi-Mei2 in cells expressing endogenous levels of the protein (e.g. Mei2-3xFLAG) or overexpressing it (e.g. P3nmt1-3xFLAG-Mei2). Even upon a roughly 100-fold Mei2 overexpression, we observed a proportional increase in Ubi-Mei2 levels (Figure 6\u2014figure supplement 1D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot and quantification in Figure 6\u2014figure supplement 1D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "e3c52235-0bfc-4456-8f1b-3a2d4eedc9aa",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C76",
+      "claim": "The decreased level of ubiquitinated Mei2 in mot2\u2206 cells is not the mere consequence of an overproduction of Mei2.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that ubiquitination is not limiting and that the decreased level of Ubi-Mei2 in mot2\u2206 cells is not the mere consequence of an overproduction of Mei2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the Mei2 overexpression data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "721304ae-583a-4873-89de-26f1c76c04b9",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C77",
+      "claim": "Mot2 ubiquitinates Mei2, which likely promotes its degradation and/or inhibits its activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results are consistent with the notion that Mot2 ubiquitinates Mei2, which likely promotes its degradation and/or inhibits its activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the ubiquitination data in Figure 6.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "8bff221d-edde-4f05-bca9-90ab4a6cec00",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C78",
+      "claim": "Mutation of the E3 ubiquitin ligase Ubr1 triggers accumulation of Mei2 in vegetative cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work showed that mutation of the E3 ubiquitin ligase Ubr1 also triggers accumulation of Mei2 in vegetative cells (Kitamura et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "d4c341ac-4282-4151-a5f7-d5a7eb77e239",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C79",
+      "claim": "Total Mei2 levels are strongly increased in the absence of Ubr1 relative to the mot2\u2206 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine which of the two E3 ligases is responsible for the main Mei2 turnover pathway, we compared total and Ubi-Mei2 levels in ubr1\u2206 and mot2\u2206 cells. Total Mei2 levels were strongly increased in the absence of Ubr1 relative to the mot2\u2206 mutant (Figure 6B, Figure 6\u2014figure supplement 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data in Figure 6B and Figure 6\u2014figure supplement 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "f09e4281-51fa-4991-98c8-c8882a7179a1",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C80",
+      "claim": "Ubr1 has a major effect on the turnover rate of Mei2.",
+      "claim_type": "EXPLICIT",
+      "source": "This was due to a major effect on the turnover rate of Mei2, as shown by cycloheximide chase experiments (Figure 6\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cycloheximide chase data in Figure 6\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "cab899c0-b02b-4e28-90fc-cb074d91c055",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C81",
+      "claim": "Ubiquitination of Mei2 is strongly decreased in ubr1\u2206 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a predominant role for Ubr1, ubiquitination of Mei2 was strongly decreased in ubr1\u2206 cells (Figure 6B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot and quantification in Figure 6B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "d2c04d5c-d6a2-4cef-a3c9-162cf0e5e774",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C82",
+      "claim": "Increased Mei2 levels in ubr1\u2206 cells result in pronounced accumulation of Mmi1-targeted meiotic mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, increased Mei2 levels in ubr1\u2206 cells resulted in a pronounced accumulation of Mmi1-targeted meiotic mRNAs (Figure 6D), highlighting the functional importance of suppressing Mei2 levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "b2c9ebed-92d0-44a9-bb78-61604e6e0e52",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C83",
+      "claim": "Mot2 is not responsible for the main turnover pathway of Mei2, which depends on Ubr1.",
+      "claim_type": "EXPLICIT",
+      "source": "From these results, we conclude that Mot2 is not responsible for the main turnover pathway of Mei2, which depends on Ubr1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on comparison of mot2\u2206 and ubr1\u2206 effects on Mei2 levels and turnover.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "f75d363f-1cae-469c-a393-177d883a6c08",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C84",
+      "claim": "Mot2 plays a regulatory role to fine-tune Mei2 levels and/or regulate its function, allowing full repression of meiotic mRNAs during vegetative growth.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the control exerted by Mot2 on Mei2 has an important role in fine-tuning its levels and/or regulating its function, allowing full repression of meiotic mRNAs during vegetative growth (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model based on all the data presented.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "4465b0bd-3776-458f-ade0-8b01ed24db2f",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C85",
+      "claim": "Mmi1 has a dual role: in nuclear RNA surveillance and in regulation of protein ubiquitination.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Mmi1 has a dual role: in nuclear RNA surveillance, by targeting meiotic transcripts for degradation by the exosome, and in the regulation of protein ubiquitination, by recruiting Mot2 to Mei2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the data showing Mmi1's roles in both RNA degradation and Mei2 regulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "a9c9a4de-97bd-4d48-9226-e32b945914ee",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C86",
+      "claim": "The regulatory circuit whereby Mmi1 controls its own inhibitor Mei2 might prevent variations in the levels of meiotic RNAs due to fluctuations in Mei2 levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of a regulatory circuit whereby a protein controls the levels or the function of its own inhibitor might hamper alterations in the activity of the protein (Mmi1) due to fluctuations in the levels of the inhibitor (Mei2), which might occur under given growth conditions. This, in turn, is expected to prevent variations in the levels of meiotic RNAs and their translation products, which might affect, directly or indirectly, the robustness of vegetative growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the biological significance of the regulatory circuit.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "0b39af2f-0ffa-4859-bdaa-21b0c339bc75",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C87",
+      "claim": "Mei2 protein levels increase upon vegetative growth in minimal versus rich medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed increased levels of Mei2 protein upon vegetative growth in minimal versus rich medium (Figure 3A), which might in principle be due to increased transcription, translation and/or protein stabilization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "3383170d-9ccd-4538-b1fa-be43e7b9663f",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C88",
+      "claim": "The expression of the mei2+ gene is limited by transcription in rich medium growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The low levels of Mei2 in rich medium even upon deletion of mot2+ suggest that the expression of the mei2+ gene is limited by transcription in these growth conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that mot2\u2206 doesn't increase Mei2 much in rich medium.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "139009e1-d272-47df-9941-44497a1b2155",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C89",
+      "claim": "Mei2 is post-translationally controlled in minimal medium growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the requirement for Mot2 ubiquitination activity to restrict Mei2 levels or activity in minimal medium (Figure 6A) might suggest that Mei2 is post-translationally controlled in this context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the requirement for Mot2 in minimal medium.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "4eeb524d-6bba-4f95-9bb7-9dfe70bf88fc",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C90",
+      "claim": "Mot2 has an important role in controlling Mei2 levels under conditions where entry into meiosis is transcriptionally prefigured but premature.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Mot2 has an important role in controlling the levels of Mei2 under conditions where entry into meiosis is to some extent transcriptionally prefigured, but for which a no-return commitment is premature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the biological significance of Mot2's role.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "f80c12e7-b298-4150-88be-11783a72cffc",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C91",
+      "claim": "The Mot2-dependent degradation rate is approximately six times less active than that dependent on Ubr1.",
+      "claim_type": "EXPLICIT",
+      "source": "The turnover of Mei2 mainly depends on the E3 ubiquitin ligase Ubr1. Considering the steady state levels of Mei2 in ubr1\u2206 and mot2\u2206 cells, the Mot2-dependent degradation rate is expected to be approximately six times less active than that dependent on Ubr1 (Figure 6\u2014figure supplement 2A\u2013B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the steady-state levels observed in Figure 6\u2014figure supplement 2A-B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "7b8ae782-30dd-4404-976d-fac639d9c40a",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C92",
+      "claim": "Mei2 half-life might differ only by roughly 15% between wild type and mot2\u2206 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that Mei2 half-life might differ only by roughly 15% between wild type (in which both ubiquitin ligases are active) and mot2\u2206 cells (in which only Ubr1 is active), which amounts to less than 1.5 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the relative activities of the two E3 ligases.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "e77fe553-a21e-4233-b71e-2f1b8af61fb3",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C93",
+      "claim": "Mot2 might ubiquitinate Mei2 to prevent its entry and/or persistence in nuclear dots, thereby preserving the function of Mmi1.",
+      "claim_type": "EXPLICIT",
+      "source": "In vegetative cells, Mmi1 localizes to scattered nuclear foci to mediate meiotic RNAs degradation (Sugiyama and Sugioka-Sugiyama, 2011; Yamashita et al., 2013; Shichino et al., 2014; Sugiyama et al., 2016). It is possible that Mot2 ubiquinates Mei2 to prevent its entry and/or its persistence in nuclear dots, thereby preserving the function of Mmi1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism of Mot2 action.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "4424489f-64f9-486a-bad8-c980ef744107",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C94",
+      "claim": "Ubiquitinated Mei2 might be directed more efficiently to the turnover pathway, explaining the impact of Mot2 on Mei2 steady state levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquinated Mei2 might then be directed more efficiently to the turnover pathway, thus explaining the impact of Mot2 on Mei2 steady state levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism linking ubiquitination to degradation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "e0c73f45-8c38-4498-b81d-9e5feafde156",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C95",
+      "claim": "Mei2 levels in mot2\u2206 cells are not sufficient to induce ectopic entry into meiosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Mei2 levels in mot2\u2206 cells exceed those observed in the wild type strain in minimal medium (Figure 3A), this is not sufficient to induce ectopic entry in meiosis (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy data in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "c4a59dfb-5f1c-4256-a7ca-b76ebd4c337f",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C96",
+      "claim": "Additional events are required to activate meiosis beyond Mei2 accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that additional events are required to activate meiosis and/or that another control exists on Mei2 that backs up the roles of the E3 ligases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observation that mot2\u2206 doesn't induce meiosis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "54f85b2c-dd3a-446c-94fd-df94338aedf8",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C97",
+      "claim": "Pat1 and Tor2 protein kinases phosphorylate Mei2 to inhibit its activity and promote its degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this latter hypothesis, the Pat1 and Tor2 protein kinases phosphorylate Mei2 to inhibit its activity and promote its degradation, and mutation of these enzymes or expression of a non-phosphorylatable form of Mei2 trigger ectopic entry into meiosis, even in haploid cells (Yamamoto, 2010; Kitamura et al., 2001; Alvarez and Moreno, 2006; Otsubo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "e8addf9d-6dfc-470b-ada5-39c3c32fc555",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C98",
+      "claim": "The increased pools of Mei2 in mot2\u2206 and ubr1\u2206 cells might be partially inactivated by Pat1 and/or Tor2.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is possible that the increased pools of Mei2 in mot2\u2206 and ubr1\u2206 cells might be partially inactivated by Pat1 and/or Tor2, thereby preventing full activation of the meiotic program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about why mot2\u2206 and ubr1\u2206 don't induce meiosis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "69162829-3e64-4393-a97f-55d6b9ec73cc",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C99",
+      "claim": "The function of Ccr4-Not in sexual differentiation in fission yeast is analogous to the role played by the metazoan complex in controlling developmental decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "The function of Ccr4-Not in sexual differentiation in fission yeast is analogous to the role played by the metazoan complex in controlling developmental decisions (Rouget et al., 2010; Joly et al., 2013; Nousch et al., 2013; Solana et al., 2013; Yamaji et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "1a7d0787-d9c1-49c8-ae53-572996be44fd",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C100",
+      "claim": "In metazoans, the mechanism of action of Ccr4-Not essentially relies on its deadenylation and translational repression activities.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in these examples, the mechanism of action of the complex essentially relies on its deadenylation and translational repression activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about metazoan Ccr4-Not function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "e77c6d52-4650-42e9-8516-bf2d13d2c364",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C101",
+      "claim": "The YTH proteins Pho92 and YTHDF2 recruit Ccr4-Not to regulate mRNA deadenylation and turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "The YTH proteins Pho92 and YTHDF2, the budding yeast and human homologues of Mmi1 respectively, also recruit Ccr4-Not to regulate mRNA deadenylation and turn over (Kang et al., 2014; Du et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "9bffa086-8fba-4985-836b-d4f31e94e675",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "claim_id": "C102",
+      "claim": "The control of Mei2 abundance by Mmi1 and Mot2 might provide another layer of complexity to the regulatory potential of the Ccr4-Not complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of these findings, the control of Mei2 abundance by Mmi1 and the conserved E3 ubiquitin ligase Not4/Mot2 might provide another layer of complexity to the regulatory potential of the Ccr4-Not complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the broader significance of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d6a88cb0-fd6b-47e9-9e14-c417ec97941f",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Mmi1 associates with the Ccr4-Not complex independently of MTREC during vegetative growth. Mass spectrometry identified Ccr4-Not subunits as the most abundant Mmi1 interactors, and co-immunoprecipitation confirmed RNA-independent interactions with Not1, Caf1, and Mot2 that persist in the absence of Red1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C14, C28-C30 are well-supported by mass spectrometry (Figure 1B) and co-immunoprecipitation data (Figure 1C-D) showing Mmi1-Ccr4-Not interactions are Red1-independent and RNA-independent. The data converge to demonstrate independent association of Mmi1 with MTREC and Ccr4-Not complexes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "c3a98793-40af-4098-ad2e-6d586423dbb1",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The E3 ubiquitin ligase Mot2, but not the deadenylases Ccr4 and Caf1, is required for suppression of meiotic transcripts in minimal medium. RT-qPCR and RNA-seq analyses show that mot2\u0394 cells accumulate meiotic mRNAs in minimal medium, with 622 upregulated transcripts including 100 shared with rrp6\u0394 and enriched for DSR-containing Mmi1 targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C31-C34, C37-C40 are strongly supported by RT-qPCR (Figure 2A-B) and RNA-seq data (Figure 2C-D) showing specific requirement for Mot2 but not Ccr4/Caf1 in minimal medium. The overlap analysis and DSR enrichment provide robust evidence for Mot2's role in meiotic mRNA suppression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "73987a3f-d36c-4781-b814-b9d4a53838bf",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mot2 associates with DSR-containing meiotic mRNAs, consistent with Mmi1 recruiting the whole Ccr4-Not complex to its RNA targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 are supported by RNA-IP data (Figure 2\u2014figure supplement 1) showing Mot2 interacts with mei4+ and mcp5+ transcripts at levels comparable to Caf1. This is consistent with prior work showing Mmi1 recruits the entire complex.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "d9e19034-7eaf-486e-b62b-33e8be967676",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mot2 negatively regulates Mei2 protein levels in a transcription-independent manner, particularly in minimal medium. Mei2 accumulates substantially in mot2\u0394 cells in minimal medium, and this effect persists when mei2+ is expressed from a heterologous promoter despite only modest mRNA increases. The regulation depends specifically on Mot2, not other Ccr4-Not subunits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C51, C87 are well-supported by Western blot data (Figure 3A-C) showing Mei2 accumulation in mot2\u0394 cells, particularly in minimal medium. The heterologous promoter experiment (Figure 3B-D) demonstrates transcription-independent regulation. The specificity for Mot2 is confirmed by testing other Ccr4-Not subunits (Figure 3\u2014figure supplement 1B).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "2cae58c4-8a62-47e6-b8d3-b7d5797db0f3",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mot2 suppresses meiotic mRNA expression by controlling Mei2 levels/activity. Deletion of mei2+ restores meiotic mRNA degradation in mot2\u0394 cells, and mei2+ overexpression phenocopies mot2\u0394, demonstrating causal linkage between Mot2's effects on Mei2 and meiotic transcript suppression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 are strongly supported by genetic epistasis experiments (Figure 4A-B) showing mei2\u0394 suppresses the mot2\u0394 phenotype and mei2+ overexpression mimics mot2\u0394. This establishes a clear causal relationship between Mot2's regulation of Mei2 and meiotic mRNA suppression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "0e6586e4-87ce-4e78-9ac4-83f99d800a32",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "mot2\u0394 cells do not undergo ectopic meiosis during exponential growth but display a moderate growth defect in minimal medium partially due to inappropriate meiotic RNA expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 are supported by microscopy (Figure 4\u2014figure supplement 1A) showing no ectopic meiosis and growth curve data (Figure 4\u2014figure supplement 1B) showing partial suppression of the growth defect by mei2\u0394. This demonstrates the phenotypic consequences of Mot2 loss.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "ccb37e0b-f6cc-4817-9b1b-ab6a07b12900",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Mmi1 is required for Mot2-dependent regulation of Mei2. Mei2 persists in association with Mmi1 in mot2\u0394 cells, accumulates in mmi1\u0394 cells despite wild-type Mot2, and accumulates when Mmi1 lacks its Ccr4-Not binding domain. Red1 and Rrp6 do not affect Mei2 levels, indicating Mmi1-Mot2 function in a pathway distinct from MTREC/exosome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C60, C62-C63 are supported by co-IP data (Figure 4C), Western blots (Figure 4D-E), and the Mmi1-(1-65)\u0394 experiment. The data converge to show Mmi1 recruits Mot2 to regulate Mei2 independently of the MTREC/exosome pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "9adeea9a-04c6-42ba-8858-593ff0069aec",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mmi1 and Mot2 do not mediate translational repression of mei2+ mRNAs. The fraction of mei2+ mRNAs associated with translating ribosomes does not increase in mot2\u0394 cells, and Mmi1 does not bind mei2+ transcripts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66, C70 are supported by RNA-IP experiments (Figure 5A-C, Figure 5\u2014figure supplement 1A-B) showing no increase in ribosome-associated mei2+ mRNAs in mot2\u0394 and no Mmi1 binding to mei2+ transcripts. This rules out translational control as the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "7aa7bb2a-ac4c-4626-9b64-f2f5aef97730",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mot2 triggers Mei2 degradation via the proteasome pathway. Mei2 accumulates to similar levels in mts2-1 and mts2-1 mot2\u0394 mutants at non-permissive temperature, suggesting genetic epistasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 are supported by Western blot data (Figure 5D) showing similar Mei2 accumulation in mts2-1 and mts2-1 mot2\u0394 cells. This genetic epistasis suggests Mot2 and the proteasome function in the same pathway, though the inference is indirect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "aee9cbc6-1140-447e-8c97-a850727b91ba",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mot2 ubiquitinates Mei2 through its E3 ligase activity. Mot2 catalytic mutants cannot restore wild-type Mei2 levels, and mot2\u0394 cells show a 4-fold decrease in the fraction of ubiquitinated Mei2 species. This decrease is not due to Mei2 overproduction, as demonstrated by overexpression experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C77 are well-supported by Western blots showing Mot2 catalytic mutants fail to rescue (Figure 6A), ubiquitination assays showing decreased Ubi-Mei2 in mot2\u0394 (Figure 6B-C), and controls ruling out saturation effects (Figure 6\u2014figure supplement 1). The data strongly support Mot2-mediated ubiquitination of Mei2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "b056d427-a1d2-4ee9-9d32-81250dfc5f72",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Mot2 is not responsible for the main constitutive turnover pathway of Mei2, which depends on Ubr1. Mei2 levels are much higher in ubr1\u0394 than mot2\u0394 cells, Ubr1 has a major effect on Mei2 turnover rate, and ubiquitination is strongly decreased in ubr1\u0394 cells. Increased Mei2 in ubr1\u0394 leads to pronounced meiotic mRNA accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C78-C83 are strongly supported by Western blots (Figure 6B, Figure 6\u2014figure supplement 2A-B), cycloheximide chase experiments (Figure 6\u2014figure supplement 2C), ubiquitination assays (Figure 6B-C), and RT-qPCR (Figure 6D). The data clearly distinguish Ubr1 as the major constitutive pathway and Mot2 as a regulatory pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "a45395f2-94cc-4816-a0d0-bb87a94cf32a",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Mot2 directs ubiquitination of Mei2 to preserve Mmi1 activity during vegetative growth, playing a regulatory role to fine-tune Mei2 levels/function. Mmi1 recruits the Ccr4-Not complex to counteract its own inhibitor Mei2, establishing a regulatory circuit. Mmi1 has a dual role in nuclear RNA surveillance and protein ubiquitination regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C7-C8, C84-C85 represent the authors' main model/conclusions, which are well-supported by the collective data showing Mmi1-Mot2 interaction, Mot2-dependent Mei2 ubiquitination, and the functional consequences for meiotic mRNA suppression. The model integrates all major findings into a coherent regulatory circuit.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "ea602ecf-d3cb-49ac-be74-c7a3d61f6a12",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The Mot2-dependent degradation rate is approximately six times less active than Ubr1-dependent degradation, implying Mei2 half-life differs by only ~15% (less than 1.5 min) between wild-type and mot2\u0394 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C91-C92 are calculations based on steady-state levels (Figure 6\u2014figure supplement 2A-B), but the authors acknowledge they cannot reliably measure Mei2 turnover differences between wild-type and mot2\u0394 due to low Mei2 levels and modest impact. The calculations are reasonable but lack direct experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "a10bfd8b-d6c2-477b-a18a-6de8f58eaa40",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The regulatory circuit whereby Mmi1 controls Mei2 might prevent variations in meiotic RNA levels due to Mei2 fluctuations. Mot2 may control Mei2 under conditions where meiosis is transcriptionally prefigured but premature. The mechanism may involve preventing Mei2 entry/persistence in nuclear dots, and additional controls may back up the E3 ligases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86, C88-C90, C93-C94, C96, C98 are speculative interpretations about mechanisms and biological significance. While plausible and consistent with the data, they lack direct experimental support and represent hypotheses for future testing rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background knowledge claims about the Mmi1/MTREC/exosome system, Mei2 regulation, Ccr4-Not functions, and evolutionary conservation are established by prior work cited in the introduction and discussion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C9-C13, C15-C27, C41-C43, C61, C78, C97, C99-C101 represent established knowledge supported by appropriate citations. These provide necessary context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    },
+    {
+      "id": "ca8f4298-867d-453f-bd8a-4145e67b8657",
+      "content_id": "d2618664-5e03-43ed-a9ab-c278cb88c1cd",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Lower-migrating Mei2 isoforms in mts2-1 cells possibly reflect phosphorylated/ubiquitinated intermediates. Mei2 levels in mot2\u0394 cells are not sufficient to induce ectopic meiosis. The control of Mei2 by Mmi1/Mot2 might provide additional regulatory complexity to Ccr4-Not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C69, C95, C102 include observations (C95 supported by Figure 4\u2014figure supplement 1A) and speculations (C69, C102) about mechanisms and broader significance. C95 is supported, but C69 and C102 are interpretive without direct evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:42:20.929412Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "50bf842c-c3c5-4154-824a-6e67158bf7db",
+      "result_id": "d6a88cb0-fd6b-47e9-9e14-c417ec97941f"
+    },
+    {
+      "claim_id": "10d14dbf-cb66-4842-85fc-c33ce8da9478",
+      "result_id": "d6a88cb0-fd6b-47e9-9e14-c417ec97941f"
+    },
+    {
+      "claim_id": "67b955b5-fade-4aa2-845a-f731e4d48f77",
+      "result_id": "d6a88cb0-fd6b-47e9-9e14-c417ec97941f"
+    },
+    {
+      "claim_id": "0c60921c-be7a-4284-bea8-62f4d754d1e4",
+      "result_id": "d6a88cb0-fd6b-47e9-9e14-c417ec97941f"
+    },
+    {
+      "claim_id": "e2eb12c9-e0a6-4bf4-a86b-e5cb9873780c",
+      "result_id": "d6a88cb0-fd6b-47e9-9e14-c417ec97941f"
+    },
+    {
+      "claim_id": "1216ae93-fd7b-4589-b39d-c885c5ee465c",
+      "result_id": "c3a98793-40af-4098-ad2e-6d586423dbb1"
+    },
+    {
+      "claim_id": "c31fedc2-3fd2-4082-8116-bf82023e8587",
+      "result_id": "c3a98793-40af-4098-ad2e-6d586423dbb1"
+    },
+    {
+      "claim_id": "5c424d25-c314-401b-84d6-b73c9c6efb22",
+      "result_id": "c3a98793-40af-4098-ad2e-6d586423dbb1"
+    },
+    {
+      "claim_id": "7b71d3c1-ecd5-4e9d-9ec0-8dcf96b6d260",
+      "result_id": "c3a98793-40af-4098-ad2e-6d586423dbb1"
+    },
+    {
+      "claim_id": "4ebacd09-5b28-4b52-b5c3-bdcb77dab5aa",
+      "result_id": "c3a98793-40af-4098-ad2e-6d586423dbb1"
+    },
+    {
+      "claim_id": "ff901a1d-a67e-4bd0-a047-1866dc26d94c",
+      "result_id": "c3a98793-40af-4098-ad2e-6d586423dbb1"
+    },
+    {
+      "claim_id": "5dfa6430-557e-45e1-bcf7-8922946029a8",
+      "result_id": "c3a98793-40af-4098-ad2e-6d586423dbb1"
+    },
+    {
+      "claim_id": "4f82e311-6189-4617-a31e-78d239952325",
+      "result_id": "c3a98793-40af-4098-ad2e-6d586423dbb1"
+    },
+    {
+      "claim_id": "61f9ea24-ef69-40fa-973b-9709f86a2dd7",
+      "result_id": "c3a98793-40af-4098-ad2e-6d586423dbb1"
+    },
+    {
+      "claim_id": "905134a6-4890-4edb-9458-e17f0ad7d29c",
+      "result_id": "73987a3f-d36c-4781-b814-b9d4a53838bf"
+    },
+    {
+      "claim_id": "99e781d5-e39c-40aa-835d-398dcf8d83f0",
+      "result_id": "73987a3f-d36c-4781-b814-b9d4a53838bf"
+    },
+    {
+      "claim_id": "829347f9-3403-44cb-b403-3bc6aa650111",
+      "result_id": "d9e19034-7eaf-486e-b62b-33e8be967676"
+    },
+    {
+      "claim_id": "15124811-6bdb-4152-a0ea-a7d3b9da71c0",
+      "result_id": "d9e19034-7eaf-486e-b62b-33e8be967676"
+    },
+    {
+      "claim_id": "f2fb68bf-be29-4d51-9df3-f2656cfa16db",
+      "result_id": "d9e19034-7eaf-486e-b62b-33e8be967676"
+    },
+    {
+      "claim_id": "5cabda0d-d80a-462f-bf90-fe944c889d36",
+      "result_id": "d9e19034-7eaf-486e-b62b-33e8be967676"
+    },
+    {
+      "claim_id": "7413f068-0bbc-4971-b4aa-122f18cd93ec",
+      "result_id": "d9e19034-7eaf-486e-b62b-33e8be967676"
+    },
+    {
+      "claim_id": "e281174e-0fae-49c1-84d8-1e4d5ed269da",
+      "result_id": "d9e19034-7eaf-486e-b62b-33e8be967676"
+    },
+    {
+      "claim_id": "34384d8e-4dd8-42b4-9abc-769fadb93cb7",
+      "result_id": "d9e19034-7eaf-486e-b62b-33e8be967676"
+    },
+    {
+      "claim_id": "cbef99f1-6293-4758-b5c1-03dd63172ec6",
+      "result_id": "d9e19034-7eaf-486e-b62b-33e8be967676"
+    },
+    {
+      "claim_id": "0b39af2f-0ffa-4859-bdaa-21b0c339bc75",
+      "result_id": "d9e19034-7eaf-486e-b62b-33e8be967676"
+    },
+    {
+      "claim_id": "c026236f-e06d-4878-a005-0b86a6e5da9e",
+      "result_id": "2cae58c4-8a62-47e6-b8d3-b7d5797db0f3"
+    },
+    {
+      "claim_id": "743783d9-5578-4ec4-92f0-6614fe1a7103",
+      "result_id": "2cae58c4-8a62-47e6-b8d3-b7d5797db0f3"
+    },
+    {
+      "claim_id": "fbab49ac-8a2e-4297-9053-bb3e6ecf6d53",
+      "result_id": "2cae58c4-8a62-47e6-b8d3-b7d5797db0f3"
+    },
+    {
+      "claim_id": "5c558df3-9254-44ea-8bc2-d58df87e0744",
+      "result_id": "0e6586e4-87ce-4e78-9ac4-83f99d800a32"
+    },
+    {
+      "claim_id": "046ef0ca-2606-4ec5-9606-a5a315502d32",
+      "result_id": "0e6586e4-87ce-4e78-9ac4-83f99d800a32"
+    },
+    {
+      "claim_id": "be266c9a-5f3b-4fc0-9eda-2a0bbd85a5d2",
+      "result_id": "ccb37e0b-f6cc-4817-9b1b-ab6a07b12900"
+    },
+    {
+      "claim_id": "f4443e5c-f79e-4145-996f-dd4bd8ca96c2",
+      "result_id": "ccb37e0b-f6cc-4817-9b1b-ab6a07b12900"
+    },
+    {
+      "claim_id": "af220def-59b1-44af-bffd-1559c0495834",
+      "result_id": "ccb37e0b-f6cc-4817-9b1b-ab6a07b12900"
+    },
+    {
+      "claim_id": "e39d7852-e710-418b-8539-c04b571a5640",
+      "result_id": "ccb37e0b-f6cc-4817-9b1b-ab6a07b12900"
+    },
+    {
+      "claim_id": "db9bd444-13c3-44b5-92f5-29378c8e9d53",
+      "result_id": "ccb37e0b-f6cc-4817-9b1b-ab6a07b12900"
+    },
+    {
+      "claim_id": "05454a3a-4520-47bc-8ae3-0b00821dfe3a",
+      "result_id": "ccb37e0b-f6cc-4817-9b1b-ab6a07b12900"
+    },
+    {
+      "claim_id": "6ddaf1e9-5a32-4dcc-84ec-a215b9c2a834",
+      "result_id": "9adeea9a-04c6-42ba-8858-593ff0069aec"
+    },
+    {
+      "claim_id": "50cb9566-b94c-4473-9ec9-34f1629043b6",
+      "result_id": "9adeea9a-04c6-42ba-8858-593ff0069aec"
+    },
+    {
+      "claim_id": "509fb0dd-4a1d-499a-9970-754524a5571f",
+      "result_id": "9adeea9a-04c6-42ba-8858-593ff0069aec"
+    },
+    {
+      "claim_id": "cf8eacd2-29a4-4177-8cd0-934cfec2d235",
+      "result_id": "9adeea9a-04c6-42ba-8858-593ff0069aec"
+    },
+    {
+      "claim_id": "1b2d1c56-6ba5-483c-83e0-598f7abe18d9",
+      "result_id": "7aa7bb2a-ac4c-4626-9b64-f2f5aef97730"
+    },
+    {
+      "claim_id": "72679f0f-599d-447b-b244-bdfaadf7890f",
+      "result_id": "7aa7bb2a-ac4c-4626-9b64-f2f5aef97730"
+    },
+    {
+      "claim_id": "840533c0-95ae-4c2a-ab06-927f57ca1c25",
+      "result_id": "aee9cbc6-1140-447e-8c97-a850727b91ba"
+    },
+    {
+      "claim_id": "4125ac74-a1ec-4f4c-b1b0-802765d3ba97",
+      "result_id": "aee9cbc6-1140-447e-8c97-a850727b91ba"
+    },
+    {
+      "claim_id": "1102e0e9-032d-4b76-8e83-70a1487abf2a",
+      "result_id": "aee9cbc6-1140-447e-8c97-a850727b91ba"
+    },
+    {
+      "claim_id": "535296c3-32f9-442a-81be-1cebca7f2a6b",
+      "result_id": "aee9cbc6-1140-447e-8c97-a850727b91ba"
+    },
+    {
+      "claim_id": "f5cb0422-7fea-4405-bb60-550fb7a0b58a",
+      "result_id": "aee9cbc6-1140-447e-8c97-a850727b91ba"
+    },
+    {
+      "claim_id": "e3c52235-0bfc-4456-8f1b-3a2d4eedc9aa",
+      "result_id": "aee9cbc6-1140-447e-8c97-a850727b91ba"
+    },
+    {
+      "claim_id": "721304ae-583a-4873-89de-26f1c76c04b9",
+      "result_id": "aee9cbc6-1140-447e-8c97-a850727b91ba"
+    },
+    {
+      "claim_id": "77cd83e5-417b-43b9-aa6c-d6d91dea0520",
+      "result_id": "b056d427-a1d2-4ee9-9d32-81250dfc5f72"
+    },
+    {
+      "claim_id": "8bff221d-edde-4f05-bca9-90ab4a6cec00",
+      "result_id": "b056d427-a1d2-4ee9-9d32-81250dfc5f72"
+    },
+    {
+      "claim_id": "d4c341ac-4282-4151-a5f7-d5a7eb77e239",
+      "result_id": "b056d427-a1d2-4ee9-9d32-81250dfc5f72"
+    },
+    {
+      "claim_id": "f09e4281-51fa-4991-98c8-c8882a7179a1",
+      "result_id": "b056d427-a1d2-4ee9-9d32-81250dfc5f72"
+    },
+    {
+      "claim_id": "cab899c0-b02b-4e28-90fc-cb074d91c055",
+      "result_id": "b056d427-a1d2-4ee9-9d32-81250dfc5f72"
+    },
+    {
+      "claim_id": "d2c04d5c-d6a2-4cef-a3c9-162cf0e5e774",
+      "result_id": "b056d427-a1d2-4ee9-9d32-81250dfc5f72"
+    },
+    {
+      "claim_id": "b2c9ebed-92d0-44a9-bb78-61604e6e0e52",
+      "result_id": "b056d427-a1d2-4ee9-9d32-81250dfc5f72"
+    },
+    {
+      "claim_id": "97de1661-54ea-4f9a-bcb3-a7ee015a9211",
+      "result_id": "a45395f2-94cc-4816-a0d0-bb87a94cf32a"
+    },
+    {
+      "claim_id": "34f90a2d-52df-4e70-9be8-a08094949d2f",
+      "result_id": "a45395f2-94cc-4816-a0d0-bb87a94cf32a"
+    },
+    {
+      "claim_id": "c3e36af3-3888-4078-b30a-fdc66f3598cb",
+      "result_id": "a45395f2-94cc-4816-a0d0-bb87a94cf32a"
+    },
+    {
+      "claim_id": "f75d363f-1cae-469c-a393-177d883a6c08",
+      "result_id": "a45395f2-94cc-4816-a0d0-bb87a94cf32a"
+    },
+    {
+      "claim_id": "4465b0bd-3776-458f-ade0-8b01ed24db2f",
+      "result_id": "a45395f2-94cc-4816-a0d0-bb87a94cf32a"
+    },
+    {
+      "claim_id": "f80c12e7-b298-4150-88be-11783a72cffc",
+      "result_id": "ea602ecf-d3cb-49ac-be74-c7a3d61f6a12"
+    },
+    {
+      "claim_id": "7b8ae782-30dd-4404-976d-fac639d9c40a",
+      "result_id": "ea602ecf-d3cb-49ac-be74-c7a3d61f6a12"
+    },
+    {
+      "claim_id": "a9c9a4de-97bd-4d48-9226-e32b945914ee",
+      "result_id": "a10bfd8b-d6c2-477b-a18a-6de8f58eaa40"
+    },
+    {
+      "claim_id": "3383170d-9ccd-4538-b1fa-be43e7b9663f",
+      "result_id": "a10bfd8b-d6c2-477b-a18a-6de8f58eaa40"
+    },
+    {
+      "claim_id": "139009e1-d272-47df-9941-44497a1b2155",
+      "result_id": "a10bfd8b-d6c2-477b-a18a-6de8f58eaa40"
+    },
+    {
+      "claim_id": "4eeb524d-6bba-4f95-9bb7-9dfe70bf88fc",
+      "result_id": "a10bfd8b-d6c2-477b-a18a-6de8f58eaa40"
+    },
+    {
+      "claim_id": "e77fe553-a21e-4233-b71e-2f1b8af61fb3",
+      "result_id": "a10bfd8b-d6c2-477b-a18a-6de8f58eaa40"
+    },
+    {
+      "claim_id": "4424489f-64f9-486a-bad8-c980ef744107",
+      "result_id": "a10bfd8b-d6c2-477b-a18a-6de8f58eaa40"
+    },
+    {
+      "claim_id": "c4a59dfb-5f1c-4256-a7ca-b76ebd4c337f",
+      "result_id": "a10bfd8b-d6c2-477b-a18a-6de8f58eaa40"
+    },
+    {
+      "claim_id": "e8addf9d-6dfc-470b-ada5-39c3c32fc555",
+      "result_id": "a10bfd8b-d6c2-477b-a18a-6de8f58eaa40"
+    },
+    {
+      "claim_id": "3a183af6-dff0-45a0-92f7-970802e8f743",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "230be17a-bc1f-4172-b233-9d710df2f9d5",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "376dde96-8eaa-4bbd-b285-129a915f5cc4",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "1b792978-5ef1-43fa-8953-fe3ddeaa5902",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "eb043af8-c0c1-4d25-914d-10162d4bef32",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "b2bfec62-92b2-42ff-a254-ce9de03de241",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "75a3bf62-3c54-40d0-8c7f-b5a4fbaeab36",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "375ad83b-78c8-4a42-b0d0-4aaee6f9a6d3",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "2a256e5a-a562-4ac2-aa8d-ce40ac13cc97",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "8f11b814-6972-4fbd-8f04-1c231255a04a",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "ca5f0130-19bd-41aa-b4ef-d417f9186b90",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "b8828327-05c3-4d81-80ee-731db94058b0",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "cebac4f8-fc1a-45ff-9302-4dc3aff9a0ac",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "77a8f8e0-7043-487b-a1d7-e296b6c8ee82",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "491964db-d255-4057-b374-69cc108567ca",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "1bec0647-d818-4893-ba4c-1181cbf07e50",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "d89e5c39-a10b-444f-b780-9ea9a64360ad",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "696a7582-637b-45ab-8b3a-dba87afc65aa",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "a8ec41b1-a258-4ff8-b3d0-202835224691",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "a221c774-4491-4785-9d8a-91580ad5cb9a",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "dd2b476a-45d1-4a5e-9470-23fa2eb3b924",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "f501909d-42db-4603-b0b0-471ff19cf490",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "a49c3ebd-388b-4fde-8b31-e91a39ce17cb",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "20b7e823-bc46-468c-8060-54e9692a7fa6",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "8bff221d-edde-4f05-bca9-90ab4a6cec00",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "54f85b2c-dd3a-446c-94fd-df94338aedf8",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "69162829-3e64-4393-a97f-55d6b9ec73cc",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "1a7d0787-d9c1-49c8-ae53-572996be44fd",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "e77c6d52-4650-42e9-8516-bf2d13d2c364",
+      "result_id": "b35f33fe-08b3-4754-abb7-023b53ae0ba0"
+    },
+    {
+      "claim_id": "602a5472-8643-41e9-b37f-dc0e0b65a023",
+      "result_id": "ca8f4298-867d-453f-bd8a-4145e67b8657"
+    },
+    {
+      "claim_id": "e0c73f45-8c38-4498-b81d-9e5feafde156",
+      "result_id": "ca8f4298-867d-453f-bd8a-4145e67b8657"
+    },
+    {
+      "claim_id": "9bffa086-8fba-4985-836b-d4f31e94e675",
+      "result_id": "ca8f4298-867d-453f-bd8a-4145e67b8657"
+    }
+  ],
+  "comparisons": []
+}

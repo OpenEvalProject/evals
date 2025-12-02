@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The manuscript establishes foundational knowledge about TADs as megabase-scale chromatin domains (~700 kb) that are conserved across tissues and mammalian evolution, with CTCF and cohesin serving as key architectural proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6, C7, and C8 represent well-established prior knowledge supported by multiple citations. These claims provide the necessary background context for the study and are appropriately referenced to prior literature (Dixon et al., 2012; Nora et al., 2012; Vietri Rudan et al., 2015).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "TAD boundaries are characterized by enrichment of CAC sites (cohesin-and-CTCF), motif-oriented CTCF binding, cohesin knockdown-resistant sites, tissue-ubiquitous CTCF binding, and CpG hypomethylation, while CNC sites and other transcription factors show no such enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 are well-supported by data presented in Figure 1A-E and supplementary figures, showing consistent enrichment patterns at TAD boundaries. The quantitative measurements (3-4 fold enrichment for tissue-ubiquitous CTCF, specific percentages for knockdown resistance) are directly derived from experimental data with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "TADs segregate the genome into active and inactive chromatin compartments, with 40.9% of TAD boundaries representing compartment transitions. Genes in active TADs show dramatically higher expression (median 1.095 FPKM) compared to inactive TADs (0.003 FPKM), with inactive TAD genes being more tissue-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 are supported by k-means clustering analysis (Figure 1F) and gene expression data (Figure 1H-I). The quantitative differences in gene expression between active and inactive TADs are substantial and statistically significant, with clear biological interpretation regarding tissue specificity patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "Only a minority of CTCF binding sites (14.7%) are associated with TAD boundaries, and even among CTCF sites with all four key features (tissue ubiquitous, cohesin knockdown-resistant, species-conserved, at TAD boundaries), only 23% are within 25 kb of a TAD boundary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20 and C21 are supported by data in Figure 2\u2014figure supplement 1A and are consistent with prior literature. These observations motivate the central question of the paper: what is the function of the majority of CTCF sites that are not at TAD boundaries?",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "A computational method identified 9,543 intra-TAD loops (median length 151 kb) present in all four liver samples, with 91% wholly contained within single TADs (versus 67% for random controls), and 17.1% sharing one anchor with a TAD boundary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 describe the primary computational results of the study. The method is clearly described in Materials and Methods, and the validation against random controls (C23) provides important statistical support. The consistency across four biological replicates strengthens confidence in the predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Intra-TAD loop anchors share structural features with TAD anchors, including tissue-ubiquitous CTCF binding (majority in \u226510 tissues), high resistance to cohesin knockdown (90% vs 80% for TAD anchors), enrichment for Top2b co-binding (77.6% vs 70.6% for TAD anchors), and greater sequence conservation within CTCF motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 are supported by data in Figure 2C-E comparing multiple structural features between intra-TAD loop anchors and TAD anchors. The quantitative comparisons are appropriate and show that intra-TAD loop anchors are structurally similar to, or even exceed, TAD anchors in these properties, supporting the hypothesis that they function through similar mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Predicted intra-TAD loops show substantial validation across cell types, with 62-63% overlap with Hi-C loops in mESCs/NPCs, 57-63% overlap with ChIA-PET loops, and ~75% observed in at least one other cell type. Tissue-ubiquitous loops show stronger interactions than tissue-specific loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 provide extensive cross-validation of the computational predictions using independent experimental datasets (Hi-C, ChIA-PET). The overlap percentages are substantial and consistent across multiple validation approaches. The observation that multi-tissue loops are stronger (C32) provides additional functional validation of the predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Intra-TAD loop anchors show strong directional chromatin interactions, with virtual 4C analysis demonstrating that viewpoints within intra-TAD loops show shifted interaction distributions (58.8-79.9% downstream bias), comparable to TAD anchors but weaker in magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C36 are supported by inward bias index analysis (Figure 3A) and virtual 4C analysis (Figure 3B, Figure 3\u2014figure supplement 1). The directional bias is a key functional property of loop anchors, and the demonstration of this property for intra-TAD loops supports their functional similarity to TADs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Intra-TAD loop anchors insulate repressive histone marks (H3K27me3 and H3K9me3) to a similar degree as TAD anchors, with both showing significantly greater insulation than other CTCF sites or CNC sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C38 are supported by Jensen Shannon Divergence analysis (Figure 3D) comparing insulation across different classes of binding sites. The use of IgG controls (Figure 3\u2014figure supplement 2C) strengthens the conclusion that the observed insulation is real and not an artifact. The statistical comparisons (KS test p-values) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "DNase hypersensitive sites in mouse liver were classified into five functional classes (promoter, weak promoter, enhancer, weak enhancer, insulator) based on H3K4me1/H3K4me3 ratios, revealing that enhancer-DHS bind cohesin without CTCF while promoter-DHS bind both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C40 describe a classification scheme for open chromatin regions that is well-supported by the data in Figure 4A-B and Figure 4\u2014figure supplement 1. The classification is based on established histone mark associations and provides a functional framework for understanding CTCF/cohesin binding patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "503 core super-enhancers were identified in mouse liver representing 14.1% of enhancer regions and 2.8% of enhancer clusters. Super-enhancer-adjacent genes are more highly expressed and tissue-specific than typical enhancer-adjacent genes, with only 6.8% overlap with super-enhancer targets in other cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 describe the identification and characterization of super-enhancers using the ROSE pipeline across 19 samples. The tissue specificity of super-enhancer targets (C44, C45) is well-demonstrated, and the enrichment of RNA Pol2 without H3K4me3 (C46) supports their enhancer identity. The statistical comparisons are appropriate (KS test p<0.0001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "72.2% of core super-enhancers overlap intra-TAD loops or single-gene TADs. Genes within intra-TAD loops containing super-enhancers are significantly more highly expressed than linearly closer genes outside the loops, and genes within intra-TAD loops show more uniform tissue specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 demonstrate the functional impact of intra-TAD loops on gene regulation. The high percentage of super-enhancers overlapping intra-TAD loops (C47) and the differential expression of genes inside vs outside loops (C48, Figure 5A) provide strong evidence for the regulatory role of intra-TAD loops in constraining enhancer-promoter interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "4C-seq analysis of the Albumin promoter shows that 40% of interactions are within super-enhancer constituents, >80% within the super-enhancer, and >98% within the intra-TAD loop, with high reproducibility between male and female liver (92.9% overlap).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by 4C-seq data (Figure 6A, Figure 6\u2014figure supplement 1). The progressive containment of interactions (40% in constituents, >80% in super-enhancer, >98% in loop) provides strong evidence for the insulating function of intra-TAD loops. The sex-independent nature of these interactions strengthens the generality of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Distal TADs that highly interact with the Albumin promoter are predominantly active (>80% active, >90% active or weakly active), while non-interacting TADs are predominantly inactive (only 16.6% active in cis, 25.9% in trans).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C54 are supported by 4C-seq analysis combined with TAD activity classification (Figure 6B, D). The strong association between interaction frequency and TAD activity supports the transcription factory model of nuclear compartmentalization. The use of appropriate background models for cis and trans interactions strengthens the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C3"
+    ],
+    "result": "Intra-TAD loop anchors are structurally and functionally indistinguishable from TAD anchors, retaining key features including chromatin contact insulation, blockage of repressive histone mark spread, and tissue ubiquity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C3 represent the central conclusion of the manuscript, synthesizing results from multiple analyses (Figures 2-3). The comprehensive comparison across structural features (binding partners, conservation, knockdown resistance) and functional features (insulation, tissue conservation) provides strong support for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "Intra-TAD loops are proposed to form by the same loop extrusion mechanism as TAD loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C4 is explicitly stated as a proposal/hypothesis based on structural similarities. While the structural and functional similarities between intra-TAD loops and TADs are well-demonstrated, direct evidence for the loop extrusion mechanism (e.g., live-cell imaging, perturbation experiments) is not provided. This remains a reasonable inference but requires additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "The shorter length of intra-TAD loops enables finer regulatory control in restricting enhancer-promoter interactions, enabling selective high-level expression of super-enhancer targets and genes in repressive compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is supported by multiple lines of evidence: the median length difference (151 kb for intra-TAD loops vs ~700 kb for TADs), the enrichment of super-enhancers in intra-TAD loops (C47), the differential expression of genes inside vs outside loops (C48), and the example of Scd1 expression in a repressive compartment (Figure 5E). The inference about 'finer regulatory control' is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Prior high-resolution Hi-C studies established that ~90% of DNA loops are associated with CTCF and cohesin binding, 92% involve inwardly oriented CTCF anchors, and extreme deep sequencing identifies ~10,000 loops with median size 185 kb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 represent established knowledge from prior high-resolution Hi-C studies (Rao et al., 2014), appropriately cited. These claims provide important context for the computational approach and expected number of loops.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Prior studies established that complete knockout of CTCF or cohesin is embryonic lethal, complete removal leads to loss of virtually all loop structures, and mutations at CAC loop anchors are frequently seen in cancer with dysregulation of adjacent genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 represent established knowledge from prior studies, appropriately cited. These claims provide important biological context for the functional importance of CTCF/cohesin-mediated loops.",
+    "result_type": "MINOR"
+  }
+]

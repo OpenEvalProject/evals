@@ -1,0 +1,222 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C18",
+      "C21",
+      "C22"
+    ],
+    "result": "Visual cortex shows enhanced responses to visual-only speech compared to audiovisual speech, with the divergence occurring at 400 ms after stimulus onset. This enhancement is variable across electrodes (ranging from \u221216 to 78%) and is absent for auditory-only speech.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C17, C18, C21, and C22 provide converging evidence from direct neural recordings showing enhanced visual cortex responses when auditory speech is absent. The temporal dynamics and variability across electrodes are well-documented with appropriate statistical testing (Figure 1C-D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Enhancement of visual cortex responses to visual-only speech is spatially specific to electrodes with receptive fields representing the mouth region of the talker (<5\u00b0 eccentricity). Mouth electrodes showed 26% enhancement compared to 2% in non-mouth electrodes (p=0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 demonstrate spatial specificity through receptive field mapping and statistical analysis. The classification criteria (5\u00b0 threshold based on mouth size, C25-C27) is reasonable and the LME analysis (Table 1) appropriately tests the interaction between electrode type and stimulus condition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "A control experiment with fixation on the talker's shoulder (placing the mouth in peripheral vision) demonstrated that enhancement is specific to mouth representations rather than the center of gaze. Mouth electrodes with peripheral receptive fields showed 50% vs. 9% enhancement (p=10\u207b\u00b3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 provide critical control data addressing the confound between mouth location and gaze center. The finding that peripherally-located mouth electrodes still show enhancement strongly supports the spatial specificity hypothesis. However, this is based on a single subject (N=1), which limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Frontal cortex shows strong functional connectivity with mouth regions of visual cortex (\u03c1=0.2) but weak connectivity with non-mouth regions (\u03c1=\u22120.02, p=10\u207b\u2075). This connectivity is reduced during auditory-only speech when no visual speech is present (p=0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 demonstrate selective frontal-visual connectivity using trial-by-trial power correlations. The LME analysis (Table 3) appropriately tests main effects and interactions. The connectivity measure (Spearman correlation) is appropriate for this type of analysis, though causality cannot be inferred from correlation alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Frontal cortex shows enhanced responses to visual-only speech (53% vs. 33% for AV, p=0.001) that precede visual cortex enhancement by an average of 230 ms (frontal: 257\u00b1150 ms; visual: 487\u00b1110 ms after auditory onset, p=10\u207b\u2074).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 provide temporal evidence supporting frontal cortex as a source of top-down modulation. The latency analysis is appropriate and the statistical test (paired t-test, t34=4) is significant. However, 27/29 electrodes showing the predicted pattern is strong but not universal, and temporal precedence does not definitively establish causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Auditory cortex shows strong responses to auditory speech (148% peak) but no differential response between auditory-only and audiovisual conditions (p=0.8). Frontal-auditory connectivity is weaker than frontal-visual connectivity (0.04 vs. 0.23, p=0.001) and reduced during visual-only speech (p=0.02).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 provide an important contrast with visual cortex results. The lack of enhancement in auditory cortex and weaker frontal connectivity are well-supported by LME analyses (Tables 4-5). This asymmetry strengthens the interpretation that modulation is task-dependent and specific to the sensory modality requiring attentional enhancement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Unlike visual cortex where mouth-representing electrodes showed anatomical clustering on the occipital pole, auditory electrodes with strongest responses to auditory-only speech showed no anatomical clustering and equivalent frontal connectivity (\u03c1=\u22120.04 vs. \u03c1=0.06, p=0.3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 document the absence of spatial organization in auditory cortex analogous to that found in visual cortex. This negative result is appropriately reported and strengthens the specificity of the visual cortex findings. The statistical test appropriately shows no difference between electrode groups.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C45",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The authors propose that frontal cortex near the precentral sulcus selectively modulates visual cortex through top-down attention, enhancing mouth representations when auditory speech is absent, thereby playing an important role in audiovisual speech perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C45, C49-C51 represent the main interpretive conclusion. This model is well-supported by the convergence of spatial specificity (C3, C28), temporal precedence (C36-C37), and selective connectivity (C32) data. However, the causal mechanism remains inferential as the study is correlational. The claims about 'time-varying control' (C50) and 'precise spatial control' (C51) are reasonable extrapolations but go beyond the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Removing auditory speech increased visual cortex responses and frontal-visual connectivity, while removing visual speech did not affect auditory cortex. This asymmetry is attributed to auditory speech being easily intelligible without visual input, whereas visual-only speech (speechreading) is difficult and demands attentional engagement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 summarize the key asymmetry between visual and auditory cortex and provide a reasonable interpretation based on task difficulty. The interpretation (C57-C58) is consistent with established knowledge about speech intelligibility, though it remains somewhat speculative without direct measures of task difficulty or attentional demand.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C19",
+      "C20",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The study used subdural electrode recordings from 8 epilepsy patients to measure broadband (70-150 Hz) responses to audiovisual, visual-only, and auditory-only speech stimuli. 73 visual cortex electrodes and 8 frontal electrodes (one per subject) were selected based on response criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16, C19-C20, C62-C66 describe the methodology. The experimental design is appropriate with clear stimulus timing and electrode selection criteria. The use of broadband high-gamma as a neural activity measure is well-established (C64). However, selecting only one frontal electrode per subject (C66) based on maximum response could introduce selection bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "The authors predict that presenting auditory speech with added noise would increase auditory cortex response amplitudes and frontal-auditory connectivity, analogous to the visual cortex findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C59 is a reasonable prediction for future work based on the current findings, but it remains untested speculation. This prediction would be an important test of the proposed model's generalizability across sensory modalities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C13"
+    ],
+    "result": "The manuscript establishes background knowledge that speech perception is multisensory, visual speech is more important when auditory information is degraded, the mouth carries the most speech information, and prior studies show frontal cortex activation during speechreading and visual cortex enhancement with degraded auditory speech.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C11, C13 accurately represent established knowledge in the field, supported by appropriate citations. These claims provide the necessary context and motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C14"
+    ],
+    "result": "The authors predicted that frontal regions serve as the source of control signals enhancing visual cortex when auditory speech is noisy or absent, and that this enhancement should occur preferentially in mouth-representing regions of visual cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C14 represent the a priori hypotheses that motivated the study design. These predictions are logical based on prior knowledge and were subsequently supported by the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C52",
+      "C53",
+      "C54",
+      "C60",
+      "C61"
+    ],
+    "result": "The discussion contextualizes findings within prior fMRI studies of speech perception and attention, notes anatomical connections (inferior fronto-occipital fasciculus), and suggests visual cortex should be considered an important component of speech perception networks alongside traditional auditory-frontal-parietal models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48, C52-C54, C60-C61 appropriately situate the findings within existing literature. The suggestion to incorporate visual cortex into speech perception models (C54) is a reasonable conclusion based on the data, though the claim about the inferior fronto-occipital fasciculus (C52) is speculative regarding its functional role in the observed effects.",
+    "result_type": "MINOR"
+  }
+]

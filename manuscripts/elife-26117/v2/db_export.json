@@ -1,0 +1,1362 @@
+{
+  "submission": {
+    "id": "89e75c38-4f97-43dc-8725-df2a767c25c2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:49:33.264243Z",
+    "updated_at": "2025-12-01T20:49:33.264243Z"
+  },
+  "content": [
+    {
+      "id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "submission_id": "89e75c38-4f97-43dc-8725-df2a767c25c2",
+      "content_type": "manuscript",
+      "content_text": "# Microsaccadic sampling of moving image information provides Drosophila hyperacute vision\n\n## Authors\n\n- Mikko Juusola<sup>1</sup> ([ORCID: 0000-0002-4428-5330](https://orcid.org/0000-0002-4428-5330)) \u2020\n- An Dau<sup>2</sup> ([ORCID: 0000-0002-7802-565X](https://orcid.org/0000-0002-7802-565X))\n- Zhuoyi Song<sup>2</sup> ([ORCID: 0000-0001-9991-4053](https://orcid.org/0000-0001-9991-4053))\n- Narendra Solanki<sup>2</sup>\n- Diana Rien<sup>1</sup>\n- David Jaciuch<sup>2</sup>\n- Sidhartha Anil Dongre<sup>2</sup> ([ORCID: 0000-0003-2575-4362](https://orcid.org/0000-0003-2575-4362))\n- Florence Blanchard<sup>2</sup>\n- Gonzalo G de Polavieja<sup>3</sup> ([ORCID: 0000-0001-5359-3426](https://orcid.org/0000-0001-5359-3426))\n- Roger C Hardie<sup>4</sup> ([ORCID: 0000-0001-5531-3264](https://orcid.org/0000-0001-5531-3264))\n- Jouni Takalo<sup>2</sup>\n\n### Affiliations\n\n1. National Key Laboratory of Cognitive Neuroscience and Learning Beijing Normal University Beijing China\n2. Department of Biomedical Science University of Sheffield Sheffield United Kingdom\n3. Champalimaud Neuroscience Programme Champalimaud Center for the Unknown Lisbon Portugal\n4. Department of Physiology Development and Neuroscience Cambridge University Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nSmall fly eyes should not see fine image details. Because flies exhibit saccadic visual behaviors and their compound eyes have relatively few ommatidia (sampling points), their photoreceptors would be expected to generate blurry and coarse retinal images of the world. Here we demonstrate that Drosophila see the world far better than predicted from the classic theories. By using electrophysiological, optical and behavioral assays, we found that R1-R6 photoreceptors\u2019 encoding capacity in time is maximized to fast high-contrast bursts, which resemble their light input during saccadic behaviors. Whilst over space, R1-R6s resolve moving objects at saccadic speeds beyond the predicted motion-blur-limit. Our results show how refractory phototransduction and rapid photomechanical photoreceptor contractions jointly sharpen retinal images of moving objects in space-time, enabling hyperacute vision, and explain how such microsaccadic information sampling exceeds the compound eyes\u2019 optical limits. These discoveries elucidate how acuity depends upon photoreceptor function and eye movements.\n\n## Introduction\n\nThe acuity of an eye is limited by its photoreceptor spacing, which provides the grain of the retinal image. To resolve two stationary objects, at least three photoreceptors are needed for detecting the intensity difference in between. To resolve two moving objects is harder, as vision becomes further limited by each photoreceptor\u2019s finite integration time and receptive field size (Srinivasan and Bernard, 1975; Juusola and French, 1997; Land, 1997).\n\nNevertheless, animals - from insects to man - view the world by using saccades, fast movements, which direct their eyes to the surroundings, and fixation intervals between the saccades, during which gaze is held near stationary (Land, 1999). Because of photoreceptors\u2019 slow integration-time, saccades should blur image details and these are thought to be sampled when gaze is stabilized. Thus, information would be captured during fixations whilst during saccades animals would be effectively blind. This viewpoint, however, ignores fast photoreceptor adaptation, which causes perceptual fading during fixation (Ditchburn and Ginsborg, 1952; Riggs and Ratliff, 1952), reducing visual information and possibly rendering perception to mean light only. Therefore, to maximize information and acuity, it is plausible that evolution has optimized photoreceptor function in respect to visual behaviors and needs.\n\nWe have now devised a suite of new experimental and theoretical methods to study this question both in time and over space in Drosophila R1-R6 photoreceptors. The Drosophila compound eyes are composed of\u00a0~750 seemingly regular lens-capped modules called ommatidia, which should provide the fly a panoramic visual field of low optical resolution (Barlow, 1952; Land, 1997). Each ommatidium contains eight photoreceptor cells (R1-R8), pointing to seven different directions. The ultraviolet and blue-green-sensitive outer photoreceptors, R1-R6, initiate the motion vision pathway, whilst the central R7 and R8, which lie on top of each other, detect different colors from one direction (Wardill et al., 2012). Owing to the eye\u2019s neural superposition principle, R1, R2, R3, R4, R5 and R6, each from a separate neighboring ommatidium, also point to the same direction. By pooling their output for synaptic transmission, the photoreceptor spacing (spatial resolution) effectively matches the ommatidium spacing (average interommatidial angle, \u0394\u03c6 = 4.5o (G\u00f6tz, 1964; Land, 1997; Gonzalez-Bellido et al., 2011) but the signal-to-noise ratio of the transmitted image could improve by \u221a6 (de Ruyter van Steveninck and Laughlin, 1996; Zheng et al., 2006).\n\nHere we show how evolution has improved Drosophila vision beyond these classic ideas, suggesting that light information sampling in R1-R6 photoreceptors is tuned to saccadic behavior.\n\nOur intracellular recordings reveal that R1-R6s capture 2-to-4-times more information in time than previous maximum estimates (Juusola and Hardie, 2001a; Song et al., 2012; Song and Juusola, 2014) when responding to high-contrast bursts (periods of rapid light changes followed by quiescent periods) that resemble light input from natural scenes generated by saccadic viewing. Biophysically-realistic model simulations suggest that this improvement largely results from interspersed \u2018fixation\u2019 intervals, which allow photoreceptors to sample more information from phasic light changes by relieving them from\u00a0refractoriness (Song et al., 2012; Song and Juusola, 2014; Juusola et al., 2015).\n\nRemarkably, over space, our intracellular recordings, high-speed microscopy and modeling further reveal how photomechanical photoreceptor contractions (Hardie and Franze, 2012) work together with refractory sampling to improve spatial acuity. We discover that by actively modulating light input and photoreceptor output, these processes reduce motion blur during saccades and adaptation during gaze fixation, which otherwise could fade vision (Ditchburn and Ginsborg, 1952; Riggs and Ratliff, 1952; Land, 1997). The resulting phasic responses sharpen retinal images by highlighting the times when visual objects cross a photoreceptor\u2019s receptive field, thereby encoding space in time (see also: Ahissar and Arieli, 2001; Donner and Hemil\u00e4, 2007; Rucci et al., 2007; Kuang et al., 2012a; Kuang et al., 2012; Franceschini et al., 2014; Viollet, 2014). Thus, neither saccades nor fixations blind the flies, but together improve vision.\n\nIncorporation of this novel opto-mechano-electric mechanism into our \u2018microsaccadic sampling\u2019-model predicts that Drosophila can see\u00a0>4 fold finer details than their eyes\u2019 spatial sampling limit \u2013 a prediction directly confirmed by optomotor behavior experiments. By demonstrating how fly photoreceptors\u2019 fast microsaccadic information sampling provides hyperacute vision of moving images, these results change our understanding of insect vision, whilst showing an important relationship between eye movements and visual acuity.\n\n## Results\n\nThese results establish that Drosophila exploit image motion (through eye movements) to see spatial details, down to hyperacute resolution. A fly\u2019s visual acuity is limited by how well its photoreceptors resolve different photon rate changes, and their receptive field sizes. However, because each photoreceptor\u2019s signal-to-noise ratio and receptive field size adapt dynamically to light changes, acuity also depends upon the eye movements that cause them. To make these relationships clear, the results are presented in the following order:\n\nVideos\u00a01-4\u00a0and Appendixes 1\u201310 explain in detail the new ideas, methods, experiments and theory behind these results.\n\n### Breaking the code by coupling experiments with theory\n\nTo work out how well a Drosophila R1-R6 photoreceptor can see the world, we compared intracellular recordings with realistic theoretical predictions from extensive quantal light information sampling simulations (Appendixes 1\u20133), having the following physical limits and properties (Song et al., 2012; Song and Juusola, 2014; Juusola et al., 2015; Song et al., 2016):\n\nAs previously described for a variety of other stimuli (Song et al., 2012; Song and Juusola, 2014; Juusola et al., 2015), we found a close correspondence between the recordings and simulations (waveforms, noise, adaptation dynamics and information transfer) for all the tested stimuli, establishing how refractory quantal sampling is tuned by light changes. Conversely, control models without refractoriness or based on the Volterra black-box method (Juusola and French, 1997) failed to predict R1-R6s\u2019 information sampling and adaptation dynamics. Nevertheless, these limitations and differences gave us vital clues into the hidden/combined mechanisms that underpin photoreceptor function (Appendixes 2\u20139). We now analyze and explain the key results step-by-step.\n\n### High-contrast \u2018saccadic\u2019 bursts maximize encoding\n\nA well-known trade-off of fast adaptation is that it causes perceptual fading during fixation (Ditchburn and Ginsborg, 1952; Riggs and Ratliff, 1952), and to see the world requires motion or self-motion: body, head and eye movements (Hengstenberg, 1971; Land, 1973; Franceschini and Chagneux, 1997; Schilstra and van Hateren, 1998; Blaj and van Hateren, 2004; Martinez-Conde et al., 2013), which remove adaptation. However, it remains unclear whether or how the fly photoreceptors\u2019 information sampling dynamics is tuned to visual behaviors to see the world better. To start unravelling these questions, we first surveyed what kind of stimuli drove their information transfer maximally (Figure 1), ranging from high-contrast bursts, in which transient intensity fluctuations were briefer than Drosophila\u2019s normal head/body-saccades (Fry et al., 2003; Geurten et al., 2014), to Gaussian white-noise (GWN). These stimuli tested systematically different contrast and bandwidth patterns over R1-R6s\u2019 diurnal encoding gamut.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/26117/elife-26117-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of intracellular recordings to repeated bursty light intensity time series (20 Hz bandwidth). Responses changed little (minimal adaptation) during bursts. (B) Testing a R1-R6 photoreceptor\u2019s diurnal encoding gamut. Means (thick traces) and 20 individual responses (thin; near-perfectly overlapped) to 20 different stimuli; each with a specific bandwidth (columns: from 20 Hz, red, to 500 Hz, blue) and mean contrast (rows). Reducing the background (BG) of Gaussian white-noise stimuli (GWN; 2-unit peak-to-peak modulation) from bright (1.5-unit, bottom) to dark (0-unit, top) halved their modulation, generating bursts of increasing contrast: the lower the BG, the higher the contrast. Left-top: responses from (A). Yellow box: maximum information responses. Arrows: dark intervals. Because of half-Gaussian waveforms, light bursts carried fewer photons (see Figure 2\u2014figure supplement 3). Yet their larger responses comply with the stochastic adaptive visual information sampling theory (Song et al., 2012; Song and Juusola, 2014; Juusola et al., 2015) (Appendixes 1\u20133), whereby dark intervals rescue refractory microvilli for transducing high-frequency (1\u201320 ms) saccadic photon surges (of high contrast) into quantum bumps efficiently. Thus, larger responses would incorporate more bumps. Recordings are from the same photoreceptor. Vertical dotted rectangle (orange square) and horizontal rectangle (black circle): responses for contrast and bandwidth analyses in Figure 2A. Similar R1-R6 population data is in Figure 1\u2014figure supplement 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26117/elife-26117-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) The mean voltage response and SD of 15 R1-R6 cells to the same repeated 20 Hz bandwidth bursts. Photoreceptor output adapts within\u00a0~2 s to the stimulation. (B) Population means (thick) and 4\u201316 mean voltage responses of individual photoreceptors (thin traces) to 20 different stimuli; each with specific bandwidth (columns: from 20 Hz, red to 500 Hz, blue) and mean contrast (rows). Stimulation changes from Gaussian white-noise (GWN; bottom) to bursts (top) with the light background: from BG0 (dark) to BG1.5 (very bright). Left top: the traces from (A). The yellow box indicates the responses with the highest entropy and information content. Vertical dotted rectangle (orange square) and horizontal rectangle (black circle): responses for contrast and bandwidth analyses in Figure 2\u2014figure supplement 1A. All recordings were done at 25\u00b0C. Compare this data to Figure 1.\n\nIntracellular recordings (Figure 1A) revealed that photoreceptors responded most vigorously to high-contrast bursts, which contained fast transient events with darker intervals. Figure 1B shows the averages (signals; thick) and individual responses (thin) of a typical R1-R6, grouped by the stimulus bandwidth and mean contrast. For all the bandwidths (columns), the responses increased with contrast, while for all the contrasts (rows), the responses decreased with the increasing bandwidth (left). Therefore, the slowest high-contrast bursts (red; top-left) with the longest darker intervals, which theoretically (Song et al., 2012; Song and Juusola, 2014; Juusola et al., 2015) should relieve most refractory microvilli (Appendixes 1\u20133), evoked the largest peak-to-peak responses (43.4\u00a0\u00b1\u00a05.6 mV; mean\u00a0\u00b1\u00a0SD, n\u00a0=\u00a016 cells; Figure 1\u2014figure supplement 1). Whereas the fastest low-contrast GWN (blue; bottom-right), which would keep more microvilli refractory, evoked the smallest responses (3.7\u00a0\u00b1\u00a01.1 mV; n\u00a0=\u00a04).\n\nNotably, whilst all the stimuli were very bright, the largest responses (to bursts) were induced at the dimmest background (BG0, darkness) and the smallest responses (to GWN) at the brightest background (BG1.5) (Figure 1B). Thus, the mean emitted photon rate and light information at the source was lower for the bursts and higher for the GWNs (the signal-to-noise ratio of the observable world increases with brightening illumination; e.g. Appendix 2\u2014figures 5D and H). However, in very bright stimulation, the global mean light intensity (over the experiment) becomes less critical for good vision as the eye self-regulates its own input more. Photons galore are lost to intracellular pupil (Howard et al., 1987; Song and Juusola, 2014) and refractory microvilli (Song et al., 2012), which reduce quantum efficiency. Although a R1-R6\u2019s receptive field could be bombarded by 106\u2013109 photons/s (in daylight), due to the dramatic drop in quantum efficiency, the photoreceptor could only count up \u223c80,000\u2013800,000 quantum bumps/s (Appendix 2). Therefore, the stimulus contrast and bandwidth, which drive the dynamic quantum bump rate changes, summing up the photoreceptor output, are confounded with changes in mean intensity. And, as such, this stimulus design, by containing four different BGs, makes it difficult to see the exact contributions of contrast, bandwidth and mean in controlling the responses.\n\nInformation theoretical analysis (Figure 2 and Figure 2\u2014figure supplement 1) indicated that the response differences largely reflected differences in their quantum bump counts. The maximum signal power spectra to bursty stimuli could be up to\u00a0~6,000 times larger than that of the noise, which was effectively stimulus-invariant (Figure 2\u2014figure supplement 2A). Because the noise power spectrum largely represents the average quantum bump\u2019s frequency composition (Wong et al., 1982; Juusola and Hardie, 2001a; Song and Juusola, 2014), the bumps adapted to a similar size. Here, given the brightness of the stimuli, the bumps had light-adapted close to their minimum (Juusola and Hardie, 2001a). Thereby, the larger responses simply comprised more bumps. Moreover, with Poisson light statistics, the response precision - how well it estimated photon flux changes - should increase with the square root of bump count until saturation; when more microvilli remained refractory (Song and Juusola, 2014). Accordingly, signaling performance (Figure 2A,C) increased both with the stimulus bandwidth (left) and contrast (right), until these became too fast to follow. Information transfer peaked at 100 Hz bursts, which allocated the R1-R6\u2019s limited bandwidth and amplitude range near-optimally, generating the broadest frequency (Figure 2A and Figure 2\u2014figure supplement 1A) and (Gaussian) voltage distributions (Figure 2B and Figure 2\u2014figure supplement 1B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/26117/elife-26117-fig2-v2.jpg)\n\n**Figure 2.:** A R1-R6\u2019s information transfer to high-frequency 100 Hz bursts exceeded 2-to-4-times the previous estimates. (A) Response signal-to-noise ratio (SNR, left) to 20 (red), 100 (yellow) and 500 Hz (blue) bursts, and to 50 Hz bandwidth stimuli of different contrasts (right); data from Figure 1. SNR increased with contrast (right), reaching the maximum (~6,000) for 20 Hz bursts (left, red) and the broadest frequency range for 100 Hz bursts (yellow). (B) Skewed bursts drove largely Gaussian responses (exception: 20 Hz bursts, red), with 100 Hz bursts evoking the broadest amplitude range (yellow). (C) Information transfer peaked for 100 Hz stimuli, irrespective of contrast (or BG; left), having the global maximum of\u00a0~850 bits/s (capacity, infomax) for the high-frequency high-contrast bursts. (D) Encoding efficiency, the ratio between input and output information (Routput/Rinput), was\u00a0>\u00a0100% for 20 Hz bursts. Extra information came from the neighboring cells. Rinput at each BG was determined for the optimal mean light intensity, which maximized a biophysically realistic photoreceptor model\u2019s information transfer (Appendix 2). Encoding efficiency fell with stimulus bandwidth but remained more constant with contrast. Population dynamics are in Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26117/elife-26117-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Response signal-to-noise ratios (SNR) to 20 (red), 100 (yellow) and 500 Hz (blue) bandwidth (left) saccadic bursts, and to 50 Hz bandwidth stimuli of different contrasts (right); color scheme as in Figure 1. SNR increases with contrast (right), reaching (in some cells)~6000 maximum for 20 Hz bursts (left, red). All R1-R6s showed the broadest frequency range for 100 Hz bursts (yellow). (B) Highly skewed bursts drove mostly Gaussian responses (exception: 20 Hz, red), with 100 Hz bursts evoking the broadest amplitude range (yellow). (C) Information transfer of all cells peaked for 100 Hz stimuli, irrespective of the tested contrast (or BG; left), having global maxima (infomax) between 600\u2013850 bits/s (yellow box). (D) Mean encoding efficiency (Routput/Rinput) reached\u00a0>100% for 20 Hz bursts, with its extra information coming from the neighboring cells. For determining Rinput see Figure 3. Encoding efficiency fell with increasing stimulus bandwidth, but less with contrast. Note: encoding efficiency for bursts (\u03b7burst; black trace, left) was lower than for GWNs (\u03b7GWN; grey and light grey traces). Because photomechanical adaptations let optimally 8-times brighter intensity modulation (photon absorption rate) through for high-contrast bursts (8 \u00d7 105 photons/s) than for GWN (1 \u00d7 105 photons/s), their input information is higher; $R_{input}^{burst}\u226b\u00a0Rt>_{input}^{GWN}$. Thus, whilst $R_{output}^{burst}>\u00a0R_{output}^{GWN}\u00a0$, $\\eta\u00a0^{burst}<\\eta\u00a0^{GWN}$(Appendix 2).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26117/elife-26117-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Photoreceptor noise (from Figure 1) remained largely constant for all the test stimuli; extracted from the responses (output) to stimulus repetition (input); see Materials\u00a0and\u00a0methods. (B) Corresponding photoreceptor noise of the model (Song et al., 2012; Song and Juusola, 2014) simulations was also broadly constant but lacked the recordings\u2019 low-frequency noise in (A). (C) The mean simulated noise power ascends with membrane impedance, which here was larger than that in the recordings in (A). Yet, the high-frequency parts of the real and simulated noise (>60 Hz), indicating the corresponding average light-adapted quantum bump waveform (Wong et al., 1982; Juusola and Hardie, 2001b; Juusola and Hardie, 2001a; Song et al., 2012; Song and Juusola, 2014), sloped similarly. (D) Overlaying these exposed the low-frequency noise difference (<60 Hz). Our results (Figure 8) predicted that this difference was a by-product of photomechanical rhabdomere and eye muscle movements, which the simulations lacked. (E) Mean rhabdomere movement responses (\u00b1\u00a0SD, grey) in five different flies to the same repeated 20 Hz high-contrast bursts. These were smaller than those to 1 s flashing (Figure 8E, Appendix 7). (F) Average variability of the recording series (mean \u2013 individual response) shown as rhabdomere movement noise power spectra. (G) Mean rhabdomere movement noise (black trace; from F) matched its prediction (grey; from D). Therefore, the recordings\u2019 extra noise resulted from variable rhabdomere contractions; jittering light input to R1-R6s. Crucially, this noise is minute; for 20 Hz saccadic bursts,~1/6,000 of R1-R6 signal power (Figure 2A).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26117/elife-26117-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) The mean (signal; purple) and voltage responses (pink) of a R1-R6 photoreceptor to naturalistic light intensity time series. (B) At the light source, NS (purple), which is dominated by low-frequency transitions between darker and brighter events, had higher power than GWN (grey) or bursty high-contrast stimuli (yellow), but its mean contrast (0.58) is between the other two. (C) Signal-to-noise ratio of responses to NS has a similar low-frequency maximum to responses to bursty 100 Hz stimuli, but lower values at high-frequencies, similar to GWN-driven responses (grey). Both of these signaling performance estimates are from the same R1-R6 in (A). (D) Information transfer rate in photoreceptor output directly depends upon the mean stimulus contrast. Photoreceptors encode more information during naturalistic stimulation than during GWN stimulation (see also: Song and Juusola, 2014). But encoding can further double during high-contrast bursts, which utilize better the refractory sampling dynamics of 30,000 microvilli, generating the largest sampling rate changes. Significance by two-tailed t-test. For more explanation, see Appendix 3.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/26117/elife-26117-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Using triple extrapolation method to estimate entropy rate, RS, noise entropy rate, RN, and information transfer rate, R, of photoreceptor output to 20 Hz bursts. (A) Mean (black) and 30 voltage responses (light gray) of a photoreceptor to a 2-s-long bursty light intensity time series. (B), The responses were digitized to 2\u201320 voltage levels, \u03bd; shown for 20 levels. Entropy, HS, and noise entropy HN, are calculated for T-letters-long words, in which each 1-ms-long letter is a voltage level, \u03bd, as explained previously (Juusola and de Polavieja, 2003). (C) first extrapolation to infinite data size. Entropies of the 10 letter words (top) and five letter words (bottom) for 5\u201310 voltage levels fitted with linear trends. Thus, HSTT = 10,\u03bd and HSTT = 5,\u03bd (black and blue \u25a0, respectively, for \u03bd\u00a0=\u00a05\u201310) are obtained from extrapolation of HSTT = 10,\u03bd,size and HSTT = 5,\u03bd,size for size \u2192 \u221e (1/size \u2192 0). Here, the probability of 5 letter words is similar for 50\u2013100% of data so size corrections in HSTT = 5,\u03bd are minute, but for 10 letter words size corrections impact HSTT = 10,\u03bd slightly more. (D) second extrapolation to infinite voltage levels. HST,v is shown for words of 1\u201310 letters, each fitted with its linear trend. HST (gray \u25a0s for T\u00a0=\u00a05\u201310) is obtained from the extrapolation of HST,v when \u03bd \u2192 \u221e (1/\u03bd \u2192 0); HST\u00a0=\u00a05\u00a0= blue \u25a0; HST\u00a0=\u00a010\u00a0= black \u25a0. (E) third extrapolation. Entropy rates obtained from extrapolations to infinitely long words. The total entropy rate, RS (red \u25a0), is obtained from a linear extrapolation when T \u2192 \u221e (1/T \u2192 0). RN (red \u25cf) for the same data. Both RS and RN collapse to 0 when the data are inadequate to provide a satisfactory extrapolation of HST and HNT for long words and high voltage resolutions. The graph, however, shows enough linearly aligned points for good estimations of RS, RN, and R. (F) Effect of the number of voltage levels v used in the second extrapolation on R. For v\u00a0\u2265\u00a08, the first point for the second extrapolation is the fifth voltage level. Linear fits (red) and second-order Taylor series (black) give similar estimates (<10% difference) when v\u00a0=\u00a010\u201320 for these data. (G) Average R estimates obtained from linear (red) or second-order Taylor series (black) fits by the triple extrapolation method (Eq. 4) and from Shannon equation (Eq. 1). These estimates for data in (A) are similar. For 20 voltage level data (B), the mean Shannon capacity estimate is only \u223c2\u20135% less than the mean estimates for the full response waveforms with n\u00a0=\u00a030 trials or when extrapolated to infinite data (1/n \u2192 0), implying consistency in these estimation methods.\n\nThus, with the right mixture of bright \u2018saccadic\u2019 bursts (to maximally activate microvilli) and darker \u2018fixation\u2019 intervals (to recover from refractoriness) forming the high-contrast input, a photoreceptor\u2019s information transfer approached the capacity (Shannon, 1948), the theoretical maximum, where every symbol (voltage value) of a message (macroscopic voltage response) is transmitted equally often (Figure 2C and Figure 2\u2014figure supplement 1C). Remarkably, this performance (610\u2013850 bits/s) was 2-to-4-times of that for GWN (200\u2013350 bits/s), which has often been used for characterizing maximal encoding (Juusola and Hardie, 2001a), and twice of that for rich naturalistic stimuli (380\u2013510 bits/s) (Song and Juusola, 2014) (Figure 2\u2014figure supplement 3). GWN, especially, lacks longer darker events, which should make microvilli refractory (Song and Juusola, 2014) with fewer sampled photons limiting information transfer (Appendixes 2\u20133).\n\nThere are two reasons why these information rate estimates, which were calculated from equal-sized data chunks by the Shannon formula (Equation 1, Material and methods), should be robust and largely bias-free. First, apart from the responses to 20 Hz high-contrast bursts (Figure 2B, red trace), the responses to all the other stimuli had broadly Gaussian signal and noise distributions, obeying the Shannon formula\u2019s major assumptions (Shannon, 1948). Second, our previous tests in comparing the Shannon formula to triple extrapolation method (Juusola and de Polavieja, 2003), which is directly derived from Shannon\u2019s information theory, have shown that for sufficiently large sets of data both these methods provide similar estimates even for this type of highly non-Gaussian responses (~5\u201320% maximal differences) (Song and Juusola, 2014; Dau et al., 2016). And, indeed, new tests using additional recordings to longer stimulus repetitions (Figure 2\u2014figure supplement 4) indicated the same. Thus here, the Shannon formula should provide a sufficiently accurate information estimate also for the 20 Hz high-contrast burst responses, making this evaluation fair (see Appendix 2).\n\n### Simulations reveal network contribution\n\nThese findings were largely replicated by stochastic simulations (Figures 3\u20134). A biophysically realistic photoreceptor model, which contains 30,000 microvilli (Song et al., 2012), sampled light information much like a real R1-R6, generating authentic responses to all the test stimuli (Figure 3A\u2013B). Yet, markedly, the model lacked the intracellular pupil (or any structural adaptation), which protects microvilli from saturation (Howard et al., 1987; Song and Juusola, 2014), and network connections (Zheng et al., 2006; Rivera-Alba et al., 2011; Wardill et al., 2012). In real photoreceptors, the pupil screens off excess light to maximize information transfer (Howard et al., 1987; Song and Juusola, 2014). Similarly, in the simulations, the mean light intensity of each stimulus was optimized (Appendix 2) for maximum information (Figure 4A\u2013C), establishing the photon absorption rate for a R1-R6 photoreceptor\u2019s best signaling performance (bits/s).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/26117/elife-26117-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013B) Simulated responses of a stochastic Drosophila R1-R6 model to the tested light stimuli show similar response dynamics to the corresponding real recordings (cf. Figure 1 and Figure 1\u2014figure supplement 1). The model has 30,000 microvilli (sampling units) that convert absorbed photons to quantum bumps (samples). Simulations at each background (BG) were set for the mean light level (effective or absorbed photons/s) that generated responses with the maximum information transfer (Appendix 2). These effective light levels should correspond to the optimal photomechanical screening throughput (by intracellular pupil mechanism and photomechanical rhabdomere contractions, Appendix 7), which minimize saturation effects (refractory microvilli) on a Drosophila photoreceptor; see Figure 4. Notice that the model had no free parameters - it was the same in all simulations and had not been fitted to data. Thus, these macroscopic voltage responses emerged naturally as a by-product of refractory information sampling by 30,000 microvilli. Yellow box: maximum information responses. Vertical dotted rectangle (orange square) and horizontal rectangle (black circle): responses for contrast and bandwidth analyses in Figure 4.\n\nAt its peak, the model transferred 633\u00a0\u00b1\u00a020 bits/s (mean\u00a0\u00b1\u00a0SD; Figure 4C) for 100 Hz bursts of 8 \u00d7 105 photons/s, with further brightening reducing information as more microvilli became refractory. This performance matches that of many real R1-R6s (Figure 2\u2014figure supplement 1C), but is\u00a0~200 bits/s less than in some recordings (Figure 2C). The real R1-R6s, on balance, receive extra information from their neighbors (Rivera-Alba et al., 2011; Wardill et al., 2012), which through superposition (Zheng et al., 2006) sample information from overlapping receptive fields. In other words, since our stimuli (from a white LED) were spatially homogenous, these synaptic feedbacks should be able to enhance the system\u2019s signal-to-noise by averaging the photoreceptors\u2019 independent photon count estimates from the same visual area, reducing noise (Zheng et al., 2006; Juusola and Song, 2017).\n\nMoreover, as their rhabdomere sizes (Figure 5A\u2013B) and connectivity vary systematically (Rivera-Alba et al., 2011), each R1-R6 receives different amounts of information (Figure 5C\u2013D) (see also: Wardill et al., 2012). Here, R6s, with large rhabdomeres (Figure 5B) and gap-junctions to R8 (Figure 5C), should receive the most (Wardill et al., 2012), suggesting that the best performing cells (e.g. Figures 1\u00a0and\u00a02) might be of the R6-type (Figure 5E). And yet whilst R7s also share gap-junctions with R6s (Shaw et al., 1989), our stimuli contained little UV component to drive them.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/26117/elife-26117-fig4-v2.jpg)\n\n**Figure 4.:** Encoding capacity of a stochastic photoreceptor model peaks to high-contrast bursts with 100 Hz cut-off, much resembling that of the real recordings (cf. Figure 2). (A) Inserts show simulations for the bursty input patterns of similar high contrast values (left) that drove its responses (outputs) with maximum information transfer rates. Output signal-to-noise ratios peaked for 20 Hz bursts (red), but was the broadest for 100 Hz bursts (yellow). Signal-to-noise ratio rose with stimulus contrast (right). (B) The corresponding probability density functions show that 100 Hz bursts evoked responses with the broadest Gaussian amplitude distribution (yellow). Only responses to low-frequency bursts (20\u201350 Hz) deviated from Gaussian (skewed). (C) Information transfer of the model output reached its global maximum (infomax) of 632.7\u00a0\u00b1\u00a019.8 bits/s (yellow) for 100 Hz (left) bursts (right). Corresponding information transfer for Gaussian white-noise stimuli was significantly lower. (D) Encoding efficiency peaked for low-frequency stimuli (left), decaying gradually with increasing contrast. For details see Appendix 2.\n\nEncoding efficiency for the different stimuli (Figure 2D and Figure 2\u2014figure supplement 1D) was determined as the ratio between the related photoreceptor and light information rates (Routput/Rinput); with Rinput estimated from the simulated Poisson stimulus repeats, which maximized information in R1-R6 model output (Figures 3B and 4C; Appendix 2). Thus, as Rinput included the photon loss by the intracellular pupil and other structural adaptations (Howard et al., 1987; Song and Juusola, 2014), it was less than at the light source. Moreover, in vivo, the combined stimulus information captured simultaneously by other photoreceptors in the retina network must be more than that by a single R1-R6 (Zheng et al., 2006). E.g. as summation reduces noise, the signal-to-noise of a postsynaptic interneuron, LMC, which receives similar inputs from six R1-R6s, can be \u221a6-times higher than that of a R1-R6 (de Ruyter van Steveninck and Laughlin, 1996; Zheng et al., 2006), but lower than what is broadcasted from the source (Song and Juusola, 2014). Thus, information is lost during sampling and processing, with the analysis obeying data processing theorem (Shannon, 1948; Cover and Thomas, 1991). Finally, as the LED light source\u2019s photon emission statistics were untested (if sub-Poisson, Rinput would be higher), the efficiency estimates represented the theoretical upper bounds.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/26117/elife-26117-fig5-v2.jpg)\n\n**Figure 5.:** (A) Electron micrograph of an ommatidium, showing R1-R7 rhabdomeres with characteristic cross-sectional area differences. (B) R1 and R6 rhabdomeres are always the largest and R4 the smallest (statistics in Appendix 5, Appendix 4\u2014table 1). (C) R6 can receive\u00a0~\u00a0200 bits/s of network information through axonal gap-junctions from R7/R8 (Wardill et al., 2012) in the lamina about local light changes - due to their neural superposition. Gap-junctions between R1-R6 axons and synapses (Zheng et al., 2006; Rivera-Alba et al., 2011) in the lamina redistribute information (Appendix 2). (D) R1-R6s\u2019 response waveforms and frequency range varied cell-to-cell; as evidenced by the recording system\u2019s low noise and the cells\u2019 high signal-to-noise ratios (~1,000). Here, Cell #17 encoded 100 Hz bursts reliably until\u00a0~\u00a0140 Hz, but Cell #11 only until\u00a0~\u00a0114 Hz. See also Figure 5\u2014figure supplement 1. (E)\u00a0Maximum information (for 100 Hz bursts) of 18 R1-R6s, grouped in their predicted ascending order and used for typifying the cells. Because R6s\u2019 rhabdomeres are large (B), and their axons communicate with R7/R8 (C), the cells with the distinctive highest infomax were likely this type (blue). Conversely, R3, R4 and R2 rhabdomeres are smaller and their axons furthest away from R7/R8, and thus they should have lower infomaxes. Notably, our photoreceptor model (Song et al., 2012) (grey), which lacked network information, had a similar infomax. The mean infomax of the recordings was 73 bits/s higher than the simulation infomax.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26117/elife-26117-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Intracellular responses to the same repeated stimuli recorded in vivo from two different R1-R6 photoreceptors (Cell #18 and Cell #12) in two wild-type Drosophila. (A) 20 Hz light bursts drove both cells vigorously, but the output of Cell #18 rose and decayed faster. Both outputs had maximum signal-to-noise ratios (SNRmax)\u00a0>5,000, but because of its faster response dynamics Cell #18 encoded better high stimulus frequencies (B-C) for 100 and 500 Hz light bursts, respectively, Cell #12\u2019s output had a higher SNRmax but again laged behind Cell #18\u2019s output. The corresponding information transfer rate estimates, Routput, for Cell #18 were 787 bits/s (20 Hz bursts), 850 bits/s (100 Hz) and 625 bits/s (500 Hz) and for Cell #12: 569 bits/s (20 Hz), 711 bits/s (100 Hz) and 503 bits/s (500 Hz).\n\nWe found that encoding efficiency for both the recordings (Figure 2D and Figure 2\u2014figure supplement 1D) and simulations (Figure 4D) weakened with the increasing bandwidth (left) but less so with contrast (right). This was because Rinput estimates (Appendix 2) increased monotonically with bandwidth (Song and Juusola, 2014) and contrast, while Routput for bandwidth did not (Figure 2C). However, as predicted, some recordings showed\u00a0>100% efficiency for 20 Hz bursts, presumably due to their extra network information (Figure 5 and Figure 5\u2014figure supplement 1) (Zheng et al., 2006; Wardill et al., 2012; Dau et al., 2016).\n\nA locomoting Drosophila generates\u00a0~1\u20135 head/body-saccades/s, which direct its gaze in high velocities to the surroundings (Fry et al., 2003; Geurten et al., 2014). Here, our recordings and simulations suggested that the refractoriness in R1-R6s\u2019 phototransduction, together with network inputs, might be tuned for capturing information during such fast light changes in time.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/26117/elife-26117-fig6-v2.jpg)\n\n**Figure 6.:** (A) A prototypical walking trajectory recoded by Geurten et al. (2014) (B) Angular velocity and yaw of this walk. Arrows indicate saccades (velocity \u2265 |\u00b1200| o/s). (C) A 360o natural scene used for generating light intensity time series: (i). ) by translating the walking fly\u2019s yaw (A\u2013B) dynamics on it (blue trace), and (ii) by this walk\u2019s median (linear: 63.3 o/s, red) and (iii) shuffled velocities. Dotted white line indicates the intensity plane used for the walk. Brief saccades and longer fixation periods \u2018burstify\u2019 light input. (D) This increases sparseness, as explained by comparing its intensity difference (first derivative) histogram (blue) to that of the linear walk (red). The saccadic and linear walk histograms for the tested images (Appendix 3; six panoramas each with 15 line-scans) differed significantly: Peaksac\u00a0=\u00a04478.66\u00a0\u00b1\u00a01424.55 vs Peaklin\u00a0=\u00a03379.98\u00a0\u00b1\u00a01753.44 counts (mean\u00a0\u00b1\u00a0SD, p=1.4195\u00a0\u00d7\u00a010\u221232, pair-wise t-test). Kurtosissac\u00a0=\u00a048.22\u00a0\u00b1\u00a099.80 vs Kurtosislin\u00a0=\u00a030.25\u00a0\u00b1\u00a037.85 (mean\u00a0\u00b1\u00a0SD, p=0.01861, pair-wise t-test). (E) Bursty stimuli (in Figure 1, continuous) had sparse intensity difference histograms, while GWN (dotted) did not. (F) Saccadic viewing improves R1-R6s\u2019 information transmission, suggesting that it evolved with refractory photon sampling to maximize information capture from natural scenes. Details in Appendix 3.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26117/elife-26117-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Mean intracellular voltage responses of a R1-R6 photoreceptor to Naturalistic light intensities that have been modulated by saccadic (blue), linear (red) and shuffled (gray) yaw signals. (B) Simulations of biophysically realistic Drosophila R1-R6 photoreceptor model (Appendix 1) to the same stimuli. (C) Mean information transfer rates of seven R1-R6 photoreceptor outputs to the same stimuli and their population means. These information rates are further compared to the corresponding model output rates. Note that every photoreceptor sampled most information from the NS with saccadic modulation.\n\n### Saccades and fixations increase information capture from natural scenes\n\nTo test this idea more directly, we used published body yaw velocities (Geurten et al., 2014) of a walking Drosophila (Figure 6A) to sample light intensity information from natural images (of characteristic 1/fn-statistics [van Hateren, 1997a]) (Figure 6B). This resulted in time series of contrasts (Figure 6C, blue) that (i) mimicked light input to a R1-R6 photoreceptor during normal visual behavior, containing fixations, translational movements and saccadic turns. As controls, we further used light inputs resulting from corresponding (ii) linear median (red) and (iii) shuffled (gray) velocity walks across the same images (Video 1). These stimuli were then played back to R1-R6s in intracellular experiments and stochastic refractory model simulations.\n\n![Video 1.](https://cdn.elifesciences.org/articles/26117/elife-26117-video1.mp4.jpg)\n\n**Video 1.:** A published recording of a fly\u2019s saccadic walk (Geurten et al., 2014) was used to sample light intensity values from 360o panoramic images of natural scenes. We collected three types of light stimuli, resulting from: (a) saccadic, (b) median (linear) and (c) shuffled velocities of the walk.\n\nWe found that saccadic viewing of natural images (Figure 6C,i), even without visual selection (i.e. without the fly choosing what it gazes), transformed the resulting light input to resemble the bursty high-contrast stimulation (Video 1), which maximized photoreceptor information (Figures 1\u20132). Such inputs had increasingly sparse light intensity difference (first derivative) distributions in respect to those of the linear walks or GWN stimulation (Figure 6D\u2013E; Appendix 3). Specifically, the saccadic walks contained fixation periods that retained the same light input values for longer durations than the linear walks, which lacked these periods, causing the\u00a0~63% higher peak in the saccadic histogram (Figure 6D). Saccadic walking also enhanced the proportion of large intensity differences between two consecutive moments, seen as\u00a0~18% higher histogram flanks than those for linear walking (p=3.65\u00a0\u00d7\u00a010\u22129, pair-wise t-test for the combined 0.5\u20131.0 and -0.5--1 ranges). These dynamics drove refractory sampling efficiently (Song and Juusola, 2014), enabling a R1-R6 to better utilize its output range, and thus capture more information than through the median or shuffled velocity viewing (Figure 6F; Figure 6\u2014figure supplement 1; cf. Figure 2\u2014figure supplement 3).\n\nAltogether, these results (Figures 1\u20136) imply that saccades and fixations improve a R1-R6\u2019s neural representation of the world in time. Furthermore, as behaviors modulate visual inputs in a sensorimotor-loop, bursty spike trains from the brain (Franceschini et al., 1991; Franceschini and Chagneux, 1994; Tang and Juusola, 2010), which direct the gaze through self-motion, may have evolved with photoreceptors\u2019 information sampling dynamics to better detect changes in the world. So when a freely-moving fly directs its gaze to visual features that are relevant for its behavior, its R1-R6\u2019s information capture may become optimized for the imminent task.\n\nHowever, visual behaviors should also affect spatial acuity (Srinivasan and Bernard, 1975; Juusola and French, 1997; Land, 1997; Geurten et al., 2014). Hence, we next asked how R1-R6s see saccadic light changes over space.\n\n### Testing acuity at saccadic velocities\n\nA Drosophila\u2019s head/body-saccades generate fast phasic photoreceptor movements, which ought to blur retinal images (Srinivasan and Bernard, 1975; Juusola and French, 1997; Land, 1997). Moreover, saccades \u2013 when dominated by axial rotation - provide little distance information (Land, 1999) because objects, near and far, would move across the retina with the same speed. Therefore, it has been long thought that visual information is mostly captured during translational motion and gaze fixation, and less during saccades.\n\nTo test this hypothesis, we reasoned that object motion and self-motion shape a photoreceptor\u2019s light input the same way. Thus, the influence of eye movements (and motion blur) on a R1-R6\u2019s ability to resolve objects could be measured in experiments, where, instead of moving the eye, the objects were moved over its stationary receptive field (Figure 7A; Appendixes 4\u20136).\n\nUsing this approach, we recorded individual R1-R6s' voltage responses (Figure 7B; black traces) to a pair of bright dots (each 1.7\u00b0 in size and 6.8o apart, as seen by the fly), moving at constant speed across their receptive field in front-to-back direction. The movements were either fast (205 o/s) or double-fast (409 o/s), both within the head/body saccadic velocity range of a walking Drosophila (Figure 6A\u2013B: 200\u2013800 o/s) (Geurten et al., 2014), and were presented against a dark or lit background (note: during a free flight (Fry et al., 2003), saccadic velocities may reach 2,000 o/s). Importantly, the dots\u2019 angular separation was less than the half-width of a R1-R6\u2019s receptive field (Figure 7C) at the two backgrounds (\u2206\u03c1dark = 9.47 \u00b1 1.57\u00b0, n\u00a0=\u00a019 cells; \u2206\u03c1light = 7.70 \u00b1 1.27\u00b0, n\u00a0=\u00a06; mean\u00a0\u00b1\u00a0SD; Figure 7\u2014figure supplements 1 and 2) and 1.5-times the average interommatidial angle (\u0394\u03c6\u00a0~\u00a04.5\u00b0), which should determine Drosophila\u2019s visual acuity (Gonzalez-Bellido et al., 2011). Thus, these fast-moving point objects tested the theoretical limit of what a R1-R6 should be able to resolve.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/26117/elife-26117-fig7-v2.jpg)\n\n**Figure 7.:** (A) 25-light-point stimulus array centered at a R1-R6\u2019s receptive field (RF). Each tested photoreceptor saw two bright dots, 6.8o apart, travelling fast (205 o/s) or double-fast (409 o/s) in front-to-back direction. (B) Responses (black), both at dark (left) or illuminated backgrounds (right), characteristically showed two peaks. In contrast, the corresponding classic model simulations (blue) rarely resolved the dots. (C) In the simulations, each photoreceptor\u2019s receptive field (or its Gaussian fit) was convolved with its impulse response (first Volterra kernel). The resolvability, D, of the recordings and simulations, was determined by Raleigh criterion. (D) Recordings outperformed simulations. (E) hdcJK910 R1-R6s (red), which lacked the neurotransmitter histamine, and so network modulation, resolved the dots as well as the wild-type, indicating that the recordings\u2019 higher resolvability was intrinsic and unpredictable by the classic models (Appendix 6). (F) To resolve the two dots as well as a real R1-R6 does in light-adaptation, the model\u2019s acceptance angle (\u2206\u03c1) would need to be \u22643.70o (blue trace); instead of its experimentally measured value of 5.73 (black; the narrowest \u2206\u03c1. The population mean, grey, is wider). (G) Normalized responses of a typical R1-R6 to a bright dot, crossing its receptive field in front-to-back or back-to-front at different speeds. Responses to back-to-front motions rose and decayed earlier, suggesting direction-selective encoding. This lead at the half-maximal values was 2\u201310 ms. See Appendixes 4 and 6.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26117/elife-26117-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** The receptive field of each tested cell was estimated as in Appendix 4, Appendix 4\u2014figure 2. (A) Dark-adapted wild-type photoreceptors\u2019 receptive fields (above), shown as the mean of their Gaussian fits (black), were\u00a0~11% wider than those of hdcJK910 photoreceptors (red). Their receptive field sizes (below) were quantified by the corresponding half-maximum widths, giving the mean acceptance angles: \u2206\u03c1wild-type = 9.47 \u00b1 0.36\u00b0; \u2206\u03c1hdc\u00a0=\u00a08.44\u00a0\u00b1\u00a00.32\u00b0; p=0.0397, two-tailed t-test. (B) Wild-type and mutant photoreceptors\u2019 peak responses (above), evoked by a sub-saturating 10 ms light flash (grey bar) at the center of the receptive field, showed similar dynamics and amplitudes, V0 (below). V0wild-type = 28.77 \u00b1 1.19 mV; V0hdc = 28.11 \u00b1 1.03 mV; p=0.67, two-tailed t-test. This indicates that hdcJK910 phototransduction is functionally intact and wild-type-like. See also (Dau et al., 2016). (C) Linear correlation between \u2206\u03c1 and V0 of dark-adapted wild-type photoreceptors. Adjusted R-squared\u00a0=\u00a00.1043. (D) Linear correlation between \u2206\u03c1 and V0 of dark-adapted hdcJK910 photoreceptors. Adjusted R-squared\u00a0=\u00a00.072. (A-D) nwild-type\u00a0=\u00a019; nhdc\u00a0=\u00a018. (A, B) Mean\u00a0\u00b1\u00a0SEM; two-tailed t-test.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26117/elife-26117-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Comparing wild-type and hdcJK910 photoreceptors, of which receptive fields were assessed in both the dark- and light-adapted states. (A) Their dark-adapted and (B) and light-adapted \u2206\u03c1 values were similar. Dark-adapted: \u2206\u03c1wild-type = 9.65 \u00b1 1.06\u00b0; \u2206\u03c1hdc\u00a0=\u00a08.16\u00a0\u00b1\u00a00.62\u00b0; p=0.258, two-tailed t-test. Light-adapted: \u2206\u03c1wild-type = 7.7 \u00b1 0.52\u00b0; \u2206\u03c1hdc\u00a0=\u00a06.98\u00a0\u00b1\u00a00.46\u00b0; p=0.323, two-tailed t-test. (C) Predictably, their receptive fields narrowed during light-adaptation (only wild-type shown). The relative changes between the two adaptation states between were statistically similar in wild-type and hdcJK910 photoreceptors. Relative changes, calculated as $C=\\frac{\ufffd\u03c1_{Dark}\u2212\ufffd\u03c1_{Light}}{\ufffd\u03c1_{Dark}}\\times100%$. Cwild-type\u00a0=\u00a018.44 \u00b1 3.5%; Chdc\u00a0=\u00a013.68\u00a0\u00b1\u00a03.37%, p=0.347, two-tailed t-test. A-C: Mean\u00a0\u00b1\u00a0SEM; nwild-type\u00a0=\u00a06; nhdc\u00a0=\u00a08 cells.\n\nWe further estimated each cell\u2019s respective impulse response (Appendix 6). Then following the classic theory of compound eyes\u2019 resolving power (Srinivasan and Bernard, 1975; Juusola and French, 1997; Land, 1997), we calculated each R1-R6\u2019s expected voltage output to the moving dots by convolving its impulse response with its measured dark- or light-adapted receptive field. These Volterra-model (Juusola and French, 1997) predictions (Figure 7B\u2013C; blue) were then compared to the actual recordings (black).\n\n### Eyesight beyond the motion blur-limit\n\nRemarkably in all these tests, the recordings showed distinctive responses to the two dots (Figure 7B), as two peaks separated by a trough. The relative magnitude of this amplitude separation was quantified as resolvability, using the Raleigh criterion (Juusola and French, 1997) (Figure 7C). However, in marked contrast, the model predictions failed to resolve the double-fast dots, instead blurring into one broad response in both adapting states (Figure 7D; blue vs. black bars, respectively). The predictions for the fast dots were also poorer than the measured responses. Thus, a photoreceptor\u2019s real resolving power was significantly better and less affected by motion blur than predicted by classic theory (Appendix 6).\n\nWe next asked whether this better-than-expected resolving power resulted from synaptic interactions (Zheng et al., 2006; Freifeld et al., 2013) by using hdcJK910 mutants (Figure 7E, red traces), in which photoreceptors lacked their neurotransmitter, histamine (Burg et al., 1993) (Appendixes 4\u20136). Because hdcJK910 R1-R6s cannot transmit information to their post-synaptic targets (Dau et al., 2016) (LMCs, which initiate the motion detection pathways (Joesch et al., 2010), and the amacrine cells), neither could these photoreceptors receive any light-driven interneuron feedback modulation (Dau et al., 2016). Therefore, if the synaptic interactions improved the wild-type output to the moving dots, then hdcJK910 R1-R6s, which lacked these interactions, should show diminished resolvability. But this was never observed. Instead, we found that hdcJK910 R1-R6s resolved the dots at least equally well as the wild-type (Figure 7D, red). Thus, high acuity did not result from synaptic inputs but was intrinsic to photoreceptors.\n\nWe also calculated \u0394\u03c1 needed to explain the spatial acuity of the recordings. The example (Figure 7F) is from a R1-R6, which had the narrowest light-adapted receptive field (\u0394\u03c1 = 5.73o) (Figure 7\u2014figure supplement 2). Its response resolved the two fast-moving dots with a 40.5% dip. However, the Volterra model prediction, using its receptive field, only resolved the dots with a 12.5% dip (cf. Figure 7D). In fact, for 41.0% resolvability, its \u0394\u03c1 would need to narrow to 3.70o (from 5.73o). Thus, for the prediction to match the recording, the receptive field would have to narrow at least by one-third. Because the required (predicted) acceptance angles of R1-R6s were always much narrower (\u2264 4o) than the actual measurements (\u2206\u03c1dark = 9.47 and \u2206\u03c1light = 7.70; see above), measurement bias cannot explain this disparity.\n\nWe further discovered that R1-R6 recordings often showed phasic directional selectivity (Figure 7G), with the responses rising and decaying faster to back-to-front than to front-to-back moving dots. We asked whether these lag-time differences originated from asymmetric photomechanical photoreceptor contractions. Namely, atomic-force microscopy has revealed minute (<275 nm) vertical movements on the surface of dissected Drosophila eyes, generated by contraction of individual microvilli as PIP2 is hydrolyzed from the inner leaflet of the lipid bilayer (Hardie and Franze, 2012). Here, we reasoned that if the ommatidium lenses were effectively fixed and R1-R8s levered to the retinal matrix, the contractions (Video 2) might be larger in situ, moving and shaping the photoreceptors\u2019 receptive fields along some preferred direction. Such mechanical feedback could then reduce light input to R1-R8s, making it more transient and directional.\n\n![Video 2.](https://cdn.elifesciences.org/articles/26117/elife-26117-video2.mp4.jpg)\n\n**Video 2.:** Wild-type and trp/trpl-mutant R1-R8 photoreceptors contract photomechanically to light flashes. The panels show: top, a sideview of ex vivo wild-type R1-R8 photoreceptors of a single dissociated ommatidium contracting to 1 ms bright light flash; bottom left, R1-R8 of a trp/trpl null-mutant, which express normal phototransduction reactants but lack completely their light-gated ion channels, contracting to a similar flash. Notably, trp/trpl photoreceptors cannot generate electrical responses to light, with their eyes showing no ERG signal (Appendix 7). Nonetheless, trp/trpl-mutant photoreceptors contract photomechanically (but require\u00a0~5 min dark-adaptation between flashes to restore their contractility). These observations are consistent with the hypothesis of the light-induced phosphatidylinositol 4,5-bisphosphate (PIP2) cleaving from the microvillar photoreceptor plasma membrane causing the rhabdomere contractions (Hardie and Franze, 2012). Video playback slowed down and down-sampled to reveal the contractions, which otherwise would be too fast to see with a naked eye. Each video clip is repeated three times with a running timer giving the time course of the contractions. Notice that the longitudinal contractions reduce the photoreceptor length. Thus, in an intact compound eye, the rhabdomeres would move inwards, away from the lens, likely narrowing their receptive fields (see Appendix 7, Appendix 7\u2014figure 10 and Appendix 8, Appendix 8\u2014figure 3).\n\n### Microsaccadic sampling of retinal images\n\nTo probe this idea, we recorded in vivo high-speed videos of photoreceptor rhabdomeres (viewed by optical neutralization of the cornea) inside the eyes reacting to blue-green light flashes (470\u00a0+\u00a0560 nm) (Figure 8A). The recordings were performed under far-red (>720 nm) illumination, which is nearly invisible to Drosophila (Appendix 7).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/26117/elife-26117-fig8-v2.jpg)\n\n**Figure 8.:** (A) High-speed videos showed fast lateral R1-R7 rhabdomere movements to blue/green flashes, recorded under far-red illumination that Drosophila barely saw (Wardill et al., 2012). (B) Rhabdomeres moved inside those seven ommatidia (up-right: their pseudopupil), which faced and absorbed the incident blue/green light, while the others reflected it. Rhabdomeres moved frontwards 8\u201320 ms after a flash onset, being maximally displaced 70\u2013200 ms later, before returning. (C) Movements were larger and faster the brighter the flash, but slower than R1-R6s\u2019 voltage responses. (D) Movements followed R1-R6s\u2019 logarithmic light-sensitivity relationship. Concurrently, given the ommatidium optics (Stavenga, 2003b; Gonzalez-Bellido et al., 2011), R1-R6s\u2019 receptive fields (RFs) shifted by 0.5\u20134.0o. (E) Rhabdomeres moved along the eye\u2019s horizontal (red) axis, with little vertical components (black), adapting to\u00a0~\u00a030% contractions in\u00a0~\u00a010 s during 1 s repetitive flashing. (F) Moving ommatidium structures. Cone and pigment cells, linking to the rhabdomeres by adherens-junctions (Tepass and Harris, 2007), formed an aperture smaller than the rhabdomeres\u2019 pseudopupil pattern. Rhabdomeres moved\u00a0~\u00a02 times more than this aperture, and\u00a0~\u00a010 times more than the lens. (G\u2013H) Simulated light inputs and photoreceptor outputs for the classic theory and new \u2018microsaccadic sampling\u2019-hypothesis when two dots cross a R1-R6\u2019s RF (i) front-to-back at saccadic speeds. (G) In the classic model, because the rhabdomere (ii) and its broad RF (i) were immobile (ii), light input from the dots fused (iii), making them neurally unresolvable (iv). (H) In the new model, with rhabdomere photomechanics (ii) moving and narrowing its RF (here acceptance angle, \u2206\u03c1, narrows from 8.1o to 4.0o), light input transformed into two intensity spikes (iii), which photoreceptor output resolved (iv). (I) New predictions matched recordings (Figure 8\u2014figure supplement 1). Details in Appendixes 7\u20138.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26117/elife-26117-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Receptive fields of four R1-R6 photoreceptors, measured with 25 light point stimulator (Appendix 4). (B) Microsaccadic sampling hypothesis predicts that because the rhabdomeres move photomechanically, the photoreceptors\u2019 receptive fields move in the opposite direction and narrow transiently (acceptance angles, \u2206\u03c1, change from 8.2 to 9.5o to 3.5\u20134.5o). (C) The resulting light input for each tested photoreceptor was predicted from its measured receptive field in (A) by the microsaccadic sampling hypothesis. (D and E) These inputs then drove our biophysically realistic R1-R6 model, predicting the photoreceptor voltage output, which was compared to the corresponding real recordings. The simulated R1-R6 output closely resembled the recorded R1-R6 output of the same cells to saccadic two dot stimuli.\n\nWe found that 8\u201320 ms after a flash the rhabdomeres, which directly faced the light source at the image center, shifted rapidly towards the anterior side of their ommatidia (Figure 8B). These local movements were faster and larger the brighter the flash (Figure 8C), and reached their intensity-dependent maxima (0.2\u20131.2 \u00b5m; Figure 8D) in 70\u2013200 ms, before returning more slowly to their original positions (Appendix 7 analyses hdcJK910-rhabdomere responses). Because the mean R1-R6 rhabdomere tip diameter is\u00a0~1.7 \u00b5m (Figure 5B), a bright flash could shift it more than its half-width sideways. Consequently, the fast rhabdomere movements, whilst still\u00a0~3 times slower than their voltage responses (Figure 8C, wine), adapted photoreceptors photomechanically by shifting their receptive fields by 0.5\u20134.0o, away from directly pointing to the light source.\n\nVideo footage at different eye locations indicated that light-activated rhabdomeres moved in back-to-front direction along the eye\u2019s equatorial (anterior-posterior) plane (Figure 8E, red; Video 3), with little up-down components (black). Therefore, as each ommatidium lens inverts projected images, the photoreceptors\u2019 receptive fields should follow front-to-back image motion. This global motion direction, which corresponds to a forward locomoting fly\u2019s dominant horizontal optic flow field, most probably explains the phasic directional selectivity we found to opposing image motions (Figure 7F; Appendix 8). Thus, the responses to back-to-front moving dots were faster because the dots entered and exited each contracting photoreceptor's front-to-back moving receptive field earlier; whereas the dots moving in the opposite direction stayed slightly longer inside each receptive field.\n\n![Video 3.](https://cdn.elifesciences.org/articles/26117/elife-26117-video3.mp4.jpg)\n\n**Video 3.:** We utilized the optical cornea-neutralization technique with antidromic deep-red (740 or 785 nm peak) illumination to observe deep pseudopupils (photoreceptor rhabdomeres that align with the observer\u2019s viewing axis) in the Drosophila eye. High-speed video captures fast rhabdomere movements to bright orthodromic blue-green flashes (470\u00a0+\u00a0535 nm peaks). The panels show: left, R1-R7 photoreceptor rhabdomere tips moving rapidly back-to-front and returning slower to each 10 ms flash, delivered repeatedly every second; right, the cross-correlated horizontal (blue) and vertical (red) components as the time series of this movement. Grey vertical lines indicate each flash. The rhabdomere movement is caused by the photomechanical photoreceptor contractions (not by muscle activity). These in vivo movements are large, here 1.7 \u00b5m from dark-adapted rest-state; causing up to five degree transient shift in the R1-R6 photoreceptors receptive fields (Appendix 7). Note average diameter of R1-R6 rhabdomeres is 1.7 \u00b5m (Appendix 5). The high-speed video rate was 500 frames/s. Video playback slowed down and down-sampled to reveal the contractions, which otherwise would be too fast to see with a naked eye.\n\nVideo analyses further revealed that the first rhabdomere movement was the largest (Figure 8E), but 1 s dark intervals, as used in Figure 7, could resensitize the photoreceptors for the next (~0.5 \u00b5m) movements. Even\u00a0<100 ms dark periods rescued noticeable motility (Figure 2\u2014figure supplement 2E).\n\nTo inspect how rhabdomere contractions affected the cornea lens system\u2019s image projection, we scanned ommatidia by z-axis piezo steps, with the imaged focal plane travelling down from the lens surface into rhabdomeres (Figure 8F; Video 4), delivering flashes at predetermined depths. Crucially, we found that the ommatidium lens stayed nearly still, while specific pigment and cone cells, which are connected to the rhabdomere tips by adherens junctions (Tepass and Harris, 2007), formed a narrow aperture that moved with the rhabdomeres but only half as much. Thus, as the lens system was immobile but the aperture and sensors (rhabdomeres) underneath swung differentially, the light input to the moving rhabdomeres was shaped dynamically. This implied that, during saccadic image motion, R1-R6s\u2019 receptive fields might not only move but also narrow (Appendixes 7\u20138; Video 2).\n\n![Video 4.](https://cdn.elifesciences.org/articles/26117/elife-26117-video4.mp4.jpg)\n\n**Video 4.:** We used a z-axis micromanipulator to shift and reposition Drosophila in piezo-steps vertically underneath the microscope. This allowed the focused image, as projected on the camera, to scan through each studied ommatidium, providing exact depth readings in \u00b5m. We then recorded any structural movements inside the ommatidia to light flashes at different depths; from the corneal lens down to the narrow base, where the cone and pigment cells form an intersection between the crystalline cone and the rhabdomere. The left panels show: up, ommatidium lens; middle, basal cone/pigment cell layer; down, R1-R7 photoreceptor rhabdomeres tips during and after flash stimulation. The right panels show the cross-correlation time series of these high-speed videos: up, the corneal lens and the upper ommatidium structures were essentially immobile), and normally remained so throughout the recordings; Middle, cone cells that connect to the rhabdomere tips with adherens junctions (Tepass and Harris, 2007) showed clear light-induced movements; down, R1-R7 rhabdomeres moved half as much as the cone cells above. The high-speed video rate was 500 frames/s. Video playback slowed down and down-sampled to reveal the contractions, which otherwise would be too fast to see with a naked eye.\n\nEssentially, light input to a R1-R6 was modulated by the photoreceptor itself (Figure 8F). To estimate how these photomechanics influenced encoding, we implemented them in stochastic model simulations. We then compared how the predicted light inputs of the classic theory (Figure 8G) and the new \u2018microsaccadic sampling\u2019-hypothesis (Figure 8H) would drive R1-R6 output during the saccadic dot stimulation.\n\nIn the classic theory, the rhabdomere is immobile (ii). Therefore, light input of two moving dots was a convolution of two broad Gaussians (i) that fused together (iii), making them irresolvable to phototransduction (iv); this also flawed the Volterra-models (Figure 7).\n\nIn the new hypothesis, instead, as microvilli became light-activated (ii), the rhabdomere contracted away from the focal point, and then returned back more slowly, recovering from refractoriness. And because its receptive field moved and narrowed concurrently (its acceptance angle, \u2206\u03c1, halved to 4.0o), the light input of two moving dots transformed into two intensity peaks (iii), in which time-separation was enhanced by the rhabdomere\u2019s asymmetric motion. Crucially, with such input driving the refractory photon sampling model, its output (iv) closely predicted the responses to the two moving dots (Figure 8I and Figure 8\u2014figure supplement 1). Interestingly, early behavioral experiments in bright illumination (G\u00f6tz, 1964) suggested similarly narrow R1-R6 acceptance angles (~3.5o).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/26117/elife-26117-fig9-v2.jpg)\n\n**Figure 9.:** (A) Simulated R1-R6 output to two dots, at different distances apart, crossing the photoreceptor\u2019s receptive field at different speeds. The yellow backgrounds indicate those inter-dot-distances and speeds, which evoked two-peaked responses. The prediction is that the real R1-R6s could resolve (and Drosophila distinguish) these dots as two separate objects, whereas those on the white backgrounds would be seen as one object. The simulations were generated with our biophysically realistic R1-R6 model (Song et al., 2012; Song and Juusola, 2014; Juusola et al., 2015), which now included the estimated light input modulation by photomechanical rhabdomere movements (Figure 8H). (B) The resulting object resolution/speed heat-map, using the Raleigh criterion, D (Figure 7C), shows the stimulus/behavioral speed regime where Drosophila should have hyperacute vision. Thus, by adjusting its behavior (from gaze fixation to saccadic turns) to changing surroundings, Drosophila should see the world better than its compound eye\u2019s optical resolution. (C) Intracellular R1-R6 responses resolved the two dots, which were less that the interommatidial angle (\u0394\u03c6 = 4.5o) apart when these crossed the cell\u2019s receptive field at the predicted speed range. Arrows indicate the two response peaks corresponding to the dot separation. Cf. Figure 9\u2014figure supplement 1; details in Appendixes 7\u20138. These results reveal remarkable temporal acuity, which could be used by downstream neurons (Zheng et al., 2006; Joesch et al., 2010; Behnia et al., 2014; Yang et al., 2016) for spatial discrimination between a single passing object from two passing objects.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26117/elife-26117-fig9-figsupp1-v2.jpg)\n\n**Figure 9\u2014figure supplement 1.:** 25 light-point-array positioned at a R1-R6\u2019s receptive field center, generating two bright front-to-back moving dots. (A) Characteristic responses of a R1-R6 at 25\u00b0C to the dots, 1.7, 3.4 or 6.8o apart, travelling 102 o/s in front-to-back direction. (B) Individual outputs resolved the dots, which were less than the interommatidial angle (\u0394\u03c6 = 4.5o) apart (yellow box); resolvability given by the Raleigh criterion (Figure 7C). Microsaccadic sampling model (Figure 9) predicted a comparable resolvability threshold (dotted line). (C) At lower dot velocities (20\u201350 o/s), corresponding to normal gaze fixation speeds in close-loop flight simulator experiments (Appendix 10), each R1-R6 responded to the tested hyperacute dot separations (1.7o and 3.4o) even stronger. Notice the small staircase-like steps in voltage responses. These represent light from 25 individual light-guide-ends being turned on/off in sequence to generate the moving dots, crossing the receptive field slowly (see Appendix 6). (D) At 20 o/s velocity, neural resolvability to the tested hyperacute dot separations was between 10\u201320%. (E) R1-R6 output to the two dots, having the same separations as above, but now moving at fast saccadic velocity (409 o/s). (F) Although, at such a high speed, R1-R6 output could not resolve the hyperacute dot separations (1.7o and 3.4o) consistently, the dots were nevertheless clearly detected when at 5.1o apart (cyan bar), which is about \u0394\u03c6.\n\n### From microsaccades to hyperacuity\n\nBecause of the close correspondence between R1-R6 recordings and the new hypothesis (Appendixes 6\u20139), we used it further to predict whether Drosophila possessed hyperacute vision (Figure 9). We asked whether \u2018saccade-fixation-saccade\u2019-like behaviors, when linked to refractory photon sampling and photomechanical photoreceptor contractions, allowed encoding in time finer spatial details than the compound eye\u2019s optical limit (\u0394\u03c6 ~4.5o). R1-R6 output was simulated to two bright dots 1-4o apart, crossing its receptive field at different speeds at 25\u00b0C.\n\nWe found that if the dots, or a Drosophila, moved at suitable speed, a photoreceptor should resolve them well (Figure 9A), with this performance depending upon the inter-dot-distance. When the dots/eye moved at 10 o/s, a R1-R6 may capture image details at 1o resolution. But with slower movement (\u22642.5 o/s), adaptation should fuse the dots together, making them neurally unresolvable. Conversely, 3o-apart-dots should be seen at 5\u2013100 o/s speeds and 4o-apart-dots even during fast saccades (200\u2013300 o/s).\n\nThus, the \u2018microsaccadic sampling\u2019-hypothesis implied that Drosophila had hyperacute vision over a broad speed range (Figure 9B), and through its own self-motion, could adjust the resolution of its neural images. Further comparisons of model outputs with and without refractoriness indicated that it extends the speed range of hyperacute vision (Appendix 8). Again, intracellular recordings corroborated these predictions (Figure 9C and Figure 9\u2014figure supplement 1), demonstrating how acuity could be enhanced by encoding space in time.\n\nThese results meant that the unexpectedly fine temporal responses of R1-R6s (Figures 7\u20139) could be used by downstream neurons (Zheng et al., 2006; Joesch et al., 2010; Rivera-Alba et al., 2011; Wardill et al., 2012; Behnia et al., 2014), which can have even faster dynamics (Juusola et al., 1995b; Uusitalo et al., 1995; Zheng et al., 2006), for spatial discrimination between a single passing object from two passing objects, even if these objects were less than an interommatidial angle apart. The fly brain could then integrate information from hyperacute moving objects and use it for directing behaviors.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/26117/elife-26117-fig10-v2.jpg)\n\n**Figure 10.:** Classic open-loop experiments using high-resolution panoramas. (A) 360o hyperacute black-and-white bar panorama, with 1.16o or 2.88o wavelengths (= 0.58o and 1.44o inter-bar-distances), rotated counterclockwise and clockwise (grey, arrows) around a tethered fly, with a torque meter measuring its optomotor responses. (B) Controls: the same flies\u2019 optomotor responses to white (no bars) and wide-bar (14.4o wavelength) rotating panoramas. (C) Every Drosophila responded to the hyperacute panoramas (wavelength\u00a0<\u00a0interommatidial angle, \u0394\u03c6, yellow area; Figure 10\u2014figure supplement 1), but not to the white panorama (orange), which thus provided the recording noise level. The flies optomotor responses were the strongest to the wide-bar panorama (perception index\u00a0=\u00a01). As the flies\u2019 optomotor responses followed the rotation directions consistently, irrespective of the tested bar wavelengths, the hyperacute visual panorama did not generate perceptual aliasing. (D) Optomotor responses of five flies to hyperacute panorama with 3.9o wavelength, rotating at 50o/s and saccadic speeds of 200 and 300o/s. (E) Control responses of the same flies to 14.4o wavelength panorama at the same speeds. (F) The flies\u2019 ability to follow hyperacute panorama reduces dramatically when the stimulation approaches the photoreceptors\u2019 predicted acuity limit, which for ~4o point resolution is just over 300o/s (cf. Figure 9A). Details in Appendix 10.\n\n![Figure 10\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26117/elife-26117-fig10-figsupp1-v2.jpg)\n\n**Figure 10\u2014figure supplement 1.:** (A) 22\u201335 individual optomotor responses (thin grey traces) and their mean (think trace) of the same tethered fly to 45o/s clockwise and counterclockwise panoramic field rotations (light grey sections), having a full wavelength of 1.16o (left, black) or 14.40o (center, blue), or no-bar (right, orange) stimuli. (B) Every tested fly (n\u00a0=\u00a09) responded to hyperacute (<\u0394\u03c6 ~4.5o) bar stimuli (1,16o and 2.88o, red; having 0.58o and 1.44o inter-bar-distances, respectively) consistently. (C) Their maximum (peak-to-peak) responses to the hyperacute stimuli and the no-bar and coarse-bar controls. (D) The relative response strength to the hyperacute stimuli varied between 30\u201380% of the maximum responses to the coarse-bar stimulus.\n\n### Optomotor behavior confirms hyperacute vision\n\nTo test this prediction, we investigated the spatial resolution of Drosophila vision through their optomotor behavior in a conventional flight simulator system, which used brightly-lit high-resolution prints for panoramic scenes (Figure 10; Appendix 10). We asked whether tethered Drosophila possessed motion vision hyperacuity by recording their yaw torque (optomotor response) to vertical black-and-white bar panoramas with <4.5o wavelengths, which slowly rotated (45 o/s) to clockwise and counterclockwise.\n\nWe found that every tested fly responded down to ~1o panoramic bar resolution (Figure 10A and Figure 10\u2014figure supplement 1) with their responses becoming smaller the finer its bars (Figure 10A\u2013C). Importantly, because these responses consistently followed the rotation direction changes, they were not caused by aliasing. Thus, optomotor behavior verified that Drosophila see the world at least in 4-fold finer detail than what was previously thought. Moreover, when a fine-grained (3.9o) panoramic image was rotated faster (Figure 10D), the response declined as predicted (cf. two dots 4o apart in Figure 9A). This result is consistent with photoreceptor output setting the perceptual limit for vision and demonstrates that Drosophila see hyperacute details even at saccadic speeds (Figure 10D\u2013F).\n\n## Discussion\n\nWe have provided deep new insight into spatiotemporal information processing in Drosophila R1-R6 photoreceptors and animal perception in general. Our results indicate that the dynamic interplay between saccades and gaze fixation is important for both the maintenance and enhancement of vision already at the photoreceptor level. This interplay, which is commonly observed in locomoting Drosophila (Geurten et al., 2014), makes light input to photoreceptors bursty.\n\nWe showed that high-contrast bursts, which resemble light input during a fly\u2019s saccadic behaviors, maximize photoreceptors\u2019 information capture in time, and provided evidence that such encoding involves four interlinked mechanisms. Light input is first regulated by two processes inside photoreceptors: slower screening pigment migration (intracellular pupil, 1\u201310 s) and much faster photomechanical rhabdomere contractions (0.01\u20131 s). These modulations have low noise (Figure 2\u2014figure supplement 2), enabling refractory photon sampling by microvilli to enhance information intake in phasic stimulus components. Finally, asymmetric synaptic inputs from the network differentiate individual R1-R6 outputs. Remarkably, over space, these mechanisms further sharpen neural resolvability by\u00a0~4 fold below the theoretical limit of the compound eye optics, providing hyperacute vision. Further analyses imply that these mechanisms with systematic rhabdomere size variations combat aliasing (Appendixes 2 and 5).\n\nThus, with microsaccadic sampling, a fly\u2019s behavioral decisions govern its visual information/acuity trade-off. To see the finest image details it should scan the world slowly, which probably happens during normal gaze fixation. But gaze fixation cannot be too slow; otherwise, adaptation would fade vision. Conversely, by locomoting faster, in a saccadic or bursty fashion, visual information capture in time is increased (see also: Juusola and de Polavieja, 2003), while surprisingly little spatial details about its surroundings would be lost.\n\nThis viewing strategy corresponds well with the recent human psychophysics results and modeling of ganglion cell firing (Rucci and Victor, 2015), which indicate that microsaccades and ocular drift in the foveal region of the retina actively enhance perception of spatial details (Rucci et al., 2007; Poletti et al., 2013; Rucci and Victor, 2015). Interestingly, here our findings further imply that, in Drosophila, the extraction of phasic stimulus features, which characterize object boundaries and line elements in visual scenes, already starts during sampling and integration of visual information in the microvilli, at the first processing stage (rather than later on in the retinal network or in the brain).\n\nOur results make a general prediction about the optimal viewing strategy for maximizing information capture from the world. Animals should fixate gaze on darker features, as this resensitizes photoreceptors by relieving their refractory sampling units (e.g. microvilli). And then, rapidly move gaze across to brighter image areas, as saccadic crossings over high-contrast boundaries enhance information intake by increasing photoreceptors\u2019 sample (quantum bump) rate changes/time (Appendix 9).\n\nGiven the high occurrence of eye/head-saccades in animals with good vision (Land, 1999), it seems plausible that their photoreceptors could also have adapted encoding dynamics to quicken response modulation, reducing motion blur. Therefore, if information sampling biophysics in rods and cones were matched to microsaccadic eye movements, this could provide a mechanistic explanation to the old paradox: how saccadic gaze fixation provides stable perception of the world, while curtailing motion blur effects.\n\n## Materials and methods\n\n### Flies\n\n2\u201310 day old wild-type red-eyed (Canton-S and Berlin) fruit flies (Drosophila melanogaster) and hdcJK910-mutants were used in the experiments. Other transgenic and mutant Drosophila tests and controls are explained in specific Appendixes. Drosophila were raised at 18\u00b0C in a 12 hr/12 hr dark/light cycle and fed on standard medium in our laboratory culture.\n\n### Electrophysiology\n\nSharp microelectrode recordings from Drosophila R1-R6 photoreceptors were detailed before (Juusola and Hardie, 2001a; Juusola et al., 2016), and we only list the key steps here. Flies were immobilized to a conical holder by beeswax (Juusola and Hardie, 2001a) (Figure 1A). A small hole, the size of a few ommatidia, was cut in the dorsal cornea for the recording electrode and sealed with Vaseline to prevent tissue from drying. R1-R6s\u2019 intracellular voltage responses were recorded to different spatiotemporal light patterns (see below) using sharp filamented quartz or borosilicate microelectrodes (120\u2013220 M\u03a9), filled with 3 M KCl. A blunt reference electrode, filled with fly ringer, was inserted in the head capsule. The flies\u2019 temperature was kept either at 19\u00a0\u00b1\u00a01 or 25 \u00b1 1\u00b0C by a feedback-controlled Peltier device, as indicated in the figures. The recordings were performed after 1\u20132 min of dark adaptation, using the discontinuous clamp method with a switching frequency 20\u201340 kHz. The electrode capacitance was compensated using the head-stage output voltage. To minimize effects of damage and external noise on the analysis, only stable recordings of low-noise and high sensitivity were chosen for this study (sometimes lasting several hours). Such photoreceptors typically had resting potentials <-60 mV in darkness and\u00a0>45 mV responses to saturating test light pulses (Juusola and Hardie, 2001a).\n\n#### Light stimulation\n\nWe used a high power \u2018white\u2019 LED (Seoul Z-Power P4 star, white, 100 Lumens) to test individual R1-R6 photoreceptors\u2019 encoding dynamics (Figures 1 and 6F). It was connected to a randomized quartz fiber optic bundle (transmission range: 180\u20131,200 nm), fitted with a lens (providing\u00a0~3\u00b0 homogeneous light disk as seen by the flies), and attached onto a Cardan arm system for accurate positioning at the center of each tested cell\u2019s receptive field. Its light output was driven by an OptoLED (Cairn Research Ltd, UK), which utilizes a feedback circuitry with a light-sensor. This LED has red component wavelengths, which minimizes prolonged depolarizing afterpotential (PDA) effects. Because long recordings can show sensitivity drifts, attributable to muscle activity (Appendix 4), the stimulus XY-position was regularly tested and, if needed, re-centered between long stimulus runs.\n\nWe used a bespoke 25 light-point array to measure individual R1-R6 photoreceptors\u2019 receptive fields and responses to moving point objects (bright dots, Figure 7; dark dots, Appendix 9). Again, a custom-made Cardan arm system was used to accurately position the array\u2019s center light-point (no. 13) at the center of each tested cell\u2019s receptive field. The dot size and the minimum inter-dot-distance, as seen by Drosophila, was 1.7o. Details of this device and the recording procedures are given in Appendixes 4 and 6.\n\n#### Stimulus patterns\n\nSingle photoreceptors\u2019 diurnal temporal encoding gamut was tested systematically over different bandwidth and contrast distributions; using 20 distinct light intensity time series stimuli, which were presented at the center of their receptive fields. The used test stimuli was based upon 5 different 2 s long Gaussian white-noise light intensity time series patterns (generated by Matlab\u2019s randn-function), which had \u2018flat\u2019 power spectrum up to 20, 50, 100, 200, or 500 Hz (Figure 1B), as low-pass filtered by MATLAB's filter toolbox, and the same peak-to-peak modulation (two units). These were then superimposed on four backgrounds: BG0 (0 units, dark), BG0.5 (0.5 units), BG1 (one unit) or BG1.5 (1.5 units, bright) on a linear intensity scale, giving altogether 20 unique stimulus patterns. As the two lowest backgrounds clipped downwards-modulation, prolonging dark intervals, the resulting stimuli ranged from high-contrast bursts (c = \u0394I/I\u00a0~\u00a01.46 at BG0) to low-contrast Gaussian (c\u00a0~\u00a00.22 at BG1.5).\n\nAs further controls, we tested how well R1-R6 photoreceptors responded to dark contrast bursts of different bandwidths (Appendix 9) and to their bright counterparts. In these experiments, R1-R6s were adapted for 10 s to BG0.5 and BG1 before repeated stimulation. In addition, we recorded the tested cells\u2019 responses to naturalistic light intensity time series (van Hateren, 1997a; Song and Juusola, 2014) (NS), selected from van Hateren natural stimulus collection (van Hateren, 1997a) (Figure 2\u2014figure supplement 3). We also sampled light intensity time series from panoramic natural images, using three different velocity profiles of a published 10 s Drosophila walk (see Video 1; details in Appendix 3). These stimuli were then played back to a R1-R6 photoreceptor by the \u2018white\u2019 LED (see above).\n\nIn all these experiments,\u226525 consecutive responses to each repeated stimulus were recorded.\n\n#### Data acquisition\n\nBoth the stimuli and responses were filtered at 500 Hz (KEMO VBF/23 low-pass elliptic filter, UK), and sampled together at 1\u201310 kHz using a 12-bit A/D converter (National Instruments, USA), controlled by a custom-written software system, Biosyst in Matlab (Mathworks, USA) environment. For signal analyses, if need, the data was down-sampled to 1 kHz.\n\n### Analyses\n\nBecause of short-term adaptive trends, we removed the first 3\u201310 responses to repeated stimulation from the analysis and used the most stable continuous segment of the recordings. Information theoretical methods for quantifying responses of approximately steady-state-adapted fly photoreceptors to different stimuli were described in detail before (Juusola and Hardie, 2001b; Juusola and de Polavieja, 2003; Song et al., 2012; Song and Juusola, 2014). Below we list the key approaches used here.\n\n#### Signal-to-noise ratio (SNR) and information transfer rate estimates\n\nIn each recording, simulation or Poisson light stimulus series (see below), the signal was the mean, and the noise was the difference between individual traces and the signal (Juusola and Hardie, 2001a). Therefore, for a data chunk of 20 responses (n\u00a0=\u00a020 traces), there was one signal trace and 20 noise traces. The signal and noise traces were divided into 50% overlapping stretches and windowed with a Blackman\u2013Harris 4-term window, each giving three 500-points-long samples. Because each trace was 2 s long, we obtained 60 spectral samples for the noise and seven for the signal. These were averaged, respectively, to improve the estimates.\n\nSNR(f), of the recording, simulation, or Poisson light stimulus series was calculated from their signal and noise power spectra, <|Sf, |2> and <|Nf, |2>, respectively, as their ratio, where | | denotes the norm and\u00a0<>the average over the different stretches (Juusola and Hardie, 2001a). To eliminate data size and processing bias, the same number of traces (n\u00a0=\u00a020) of equal length (2000 points) and sampling rate (1 kHz; 1 ms bin size) were used for calculating the SNR(f), estimates for the corresponding real recordings, photoreceptor model simulations and the simulated Poisson stimuli.\n\nInformation transfer rates, R, for each recording, simulation, or Poisson light stimulus series were estimated by using the Shannon formula (Shannon, 1948), which has been shown to obtain robust estimates for these types of continuous signals (Juusola and de Polavieja, 2003; Song and Juusola, 2014). We analyzed steady-state-adapted recordings and simulations, in which each response (or stimulus trace) is expected to be equally representative of the underlying encoding (or statistical) process. From SNR(f), the information transfer rate estimates were calculated as follows:\n\n$$\nR=\\int0\u221e(log_{2}[SNR(f)+1])df\n$$\n\nWe used minimum\u00a0=\u00a02 Hz and maximum\u00a0=\u00a0500 Hz (resulting from 1 kHz sampling rate and 500 points window size). The underlying assumptions of this method and how the number and resolution of spectral signal and noise estimates and the finite size of the used data can affect the resulting Information transfer rate estimates have been analyzed before (van Hateren, 1992b; Juusola and Hardie, 2001b; Juusola and de Polavieja, 2003; Song and Juusola, 2014) and are further discussed in Appendix 2. The mean and SD of each photoreceptor recording series (20\u00a0\u00d7\u00a02000 points) was obtained by estimating R from eleven 1,000-point data chunks with 100-point overlaps.\n\nWe also tested how the Shannon method\u2019s information transfer rate estimates of bursty responses compare with those obtained by the triple extrapolation method (Juusola and de Polavieja, 2003) using additional longer recordings. In the triple extrapolation, photoreceptor responses were first digitized (Figure 2\u2014figure supplement 4A\u2013B) by dividing these into time intervals, Tw, that were subdivided into smaller intervals of tw\u00a0=\u00a01 ms. This procedure selects \u2018words\u2019 of length Tw with Tw/tw \u2018letters.\u2019 The mutual information between the response S and the stimulus is then the difference between the total entropy, Hs:\n\n$$\nH_{S}=\u2212\\sumiP_{S}(s_{i})log_{2}P_{S}(s_{i})\n$$\n\nwhere PS(si) is the probability of finding the i-th word in the response, and the noise entropy HN:\n\n$$\nH_{N}=\u2212\u27e8\\sumi=1P_{i}(\\tau)log_{2}P_{i}(\\tau)\u27e9_{\\tau}\n$$\n\nwhere Pi(\u03c4) denotes the probability of finding the i-th word at a time t after the initiation of the trial. This probability Pi(\u03c4) was calculated across trials of identical 20 Hz bursty stimulation. The values of the digitized entropies depend on the length of the \u2018words\u2019 Tw, the number of voltage levels v, and the size (as %) of the data file, HT,\u03bd,size. The rate of information transfer was obtained taking the following three successive limits (Figure 2\u2014figure supplement 4C\u2013E, respectively):\n\n$$\nR=R_{S}\u2212R_{N}=limT_{w}\u2192\u221e\\frac{1}{T_{w}}limv\u2192\u221elimsize\u2192\u221e(H_{S}^{T_{w}v,size}\u2212H_{N}^{T_{w}v,size})\n$$\n\nThese limits were calculated by extrapolating the values of the experimentally obtained entropies. A response matrix for the analysis contained 2,000 points\u00a0\u00d7\u00a030 trials (note, the 10 first trials from the light onset were removed to minimize any adaptation effects). The total entropy and noise entropy of the responses were then obtained from the response matrices using linear extrapolation within the following parameter ranges: size\u00a0=\u00a05/10, 6/10,\u2026,10/10 of data; \u03bd\u00a0=\u00a04, 5,\u2026,20 voltage levels; Tw\u22121\u00a0=\u00a02, 3,\u2026, 7 points. As adaptation in photoreceptors approaches steady state, their output varies progressively less (Juusola and de Polavieja, 2003). Similarly, the entropies of their responses, when digitized to\u00a0\u226420 voltage levels, ceases to increase with increasing data size, enabling their limits to be extrapolated in control by linear fits (Figure 2\u2014figure supplement 4C\u2013F) or Taylor series fits. Consequently, as few as 30 response traces (each 2,000 points long) provided similar information rate estimates to the Shannon method (Figure 2\u2014figure supplement 4G) for 20 Hz burst stimulation.\u00a0All data analyses were performed with Matlab (MathWorks).\n\n#### Measuring photoreceptors\u2019 visual acuity\n\nWe measured dark- and light-adapted wild-type R1-R6 photoreceptors\u2019 receptive fields by their acceptance angles, \u2206\u03c1, using intracellular voltage responses to random light-points in a stimulation array. These measurements were compared to those of hdcJK910-mutants (Burg et al., 1993), in which first-order interneurones receive no neurotransmitter (histamine) from photoreceptors and so are incapable of feedback-modulating the photoreceptor output. Both the wild-type and mutant R1-R6 photoreceptors\u2019 mean \u2206\u03c1 was about twice the mean interommatidial angle, \u2206\u03c6. The stimulus apparatus, the method and result details and theoretical electron micrograph comparisons of their mean rhabdomere sizes are explained in Appendixes 4\u20135.\n\n#### Spatiotemporal analyses using the classic conventional models\n\nVoltage responses of wild-type and hdcJK910 R1-R6s to moving bright dots were evaluated against their respective classic model simulations, in which each recorded receptive field was convoluted by the same cell\u2019s impulse response (Srinivasan and Bernard, 1975; Juusola and French, 1997) (1st order Volterra kernels). The motion blur effects were quantified by comparing the real R1-R6 outputs to their deterministic model predictions. Details of the analysis are given in Appendix 6.\n\n### Biophysical modeling\n\n#### Time series analyses\n\nWe used our recently published biophysically-realistic stochastic photon sampling model (Song et al., 2012) of a Drosophila R1-R6 photoreceptor to simulate macroscopic voltage response to different repeated light intensity time series patterns from a point source (Figures 3\u20134). The model has no free parameters. Its design and the general aims and details of these simulations are given in Appendixes 1 and 2. To eliminate data size bias, the signaling properties and performance of the simulations were quantified and compared to the corresponding recordings by using the same analytical routines on the same-sized data-chunks. The models were run using Matlab in the University of Sheffield computer cluster (Iceberg).\n\nFor each stimulus, its mean was adjusted to maximize information of the simulated photoreceptor outputs, mimicking the action of the photomechanical adaptations (intracellular pupil mechanism and rhabdomere contractions; Appendixes 2 and 7). This optimization set the effective mean photon rates from 8 \u00d7 104 at BG1.5 to 8 \u00d7 105 photons/s at BG0 (Figure 3). Thus, each of these light levels was considered to represent the optimal daylight input (that survived the photomechanical adaptations and was absorbed by a rhabdomere), in which modulation enabled the largest sample (bump) rate changes. Otherwise, more of its sampling units (30,000 microvilli) would be either underutilized or refractory (saturation). The maximum information rates of the simulated photoreceptor outputs closely followed the corresponding mean information transfer rates of the real recordings over the whole tested encoding range (Appendix 2). This implies that the central function of the photoreceptors\u2019 combined photomechanical adaptations is to maximize their information transfer, and that the resulting estimates represent realistic maxima.\n\n#### Encoding efficiency\n\nA photoreceptor\u2019s encoding efficiency, \u03b7, was the ratio between the information rates of its voltage output, Routput, and the corresponding effective light input, Rinput:\n\n$$\n\u03b7=\\frac{R_{output}}{R_{input}}\n$$\n\nwith Routput and Rinput estimated by the Shannon formula (Equation 1). Details are in Appendix 2.\n\n#### Modeling R1-R6 output to moving dots\n\nWe developed a new \u2018microsaccadic sampling\u2019-model to predict how photomechanical rhabdomere contractions (microsaccades) move and narrow Drosophila R1-R6 photoreceptors\u2019 receptive fields to resolve fast-moving objects. Appendix 8 gives the details of this modeling approach, which combines the stochastic photon sampling model(Song et al., 2012) with additional fixed ommatidium optics and photomechanical rhabdomere contraction parameters. The same appendix shows examples of how refractory photon sampling and rhabdomere contractions jointly improve visual acuity.\n\n### High-speed video of the light-induced rhabdomere movements\n\nCornea-neutralization method with antidromic far-red (>720 nm) illumination was used to observe deep pseudopupils (Franceschini and Kirschfeld, 1971b) (photoreceptor rhabdomeres) in the Drosophila eye at 21\u00b0C. A high-speed camera (Andor Zyla, UK; 500 frames/s), connected to a purpose-built microscope system, recorded fast rhabdomere movements in vivo to blue-green light stimuli (470\u00a0+\u00a0535 nm peaks), which were delivered orthodromically into the eye. The method details, mutant and transgenic Drosophila used and the related image analyses are explained in Appendix 7.\n\n### Flight simulator experiments\n\nOpen-loop configuration was used to test hyperacute motion vision. Wild-type flies were tethered in a classic torque meter (Tang and Guo, 2001) with heads fixed, and lowered by a manipulator into the center of a black and white cylinder (spectral full-width: 380\u2013900 nm). A flying fly saw a continuous panoramic scene (360\u00b0), which in the tests contained multiple vertical stripes (black and white bars of equal width). The control was a diffuse white background. After viewing the still scene for 1 s, it was spun counterclockwise by a linear stepping motor for 2 s, stopped for 2 s before rotating clockwise for 2 s, and stopped again for 1 s. This 8 s stimulus was repeated 10 times and each trial, together with the fly's yaw torque responses, was sampled at 1 kHz (Wardill et al., 2012). Flies followed the stripe scene rotations, generating yaw torque responses (optomotor responses to right and left), the strength of which reflected the strength of their motion perception. The flies did not follow the white control scene rotations. The panoramic scenes had\u00a0\u00b1360\u00b0 azimuth and\u00a0\u00b145\u00b0 elevation, as seen by the fly. The stripe scenes had 1.0 contrast and their full-wavelength resolutions were either hyperacute (1.16\u00b0 or 2.88o) or coarse (14.40o), giving the inter-bar-distances of 0.58o, 1.44o and 7.20o, respectively. The white scene has zero contrast. The tested\u00a0scene rotation velocities were 45, 50, 200 and 300\u00b0/s.\n\n### Transmission electron microscopy\n\nThe fly eye dissection, fixation embedding, sectioning and imaging protocols for EM (Figure 5A) are described in Appendix 5.\n\n### Statistics\n\nTest responses were compared with their controls by performing two-tailed t-tests to evaluate the difference in the compared data. Welch\u2019s t-test was used to accommodate groups with different variances for the unpaired comparisons. In the figures, asterisks are used to mark the statistical significance: ns indicates p>0.05, \u2217 indicates p\u22640.05, \u2217\u2217 indicates p\u22640.01, and \u2217\u2217\u2217 indicates p\u22640.001.\n\n### Software code\n\nCustom written simulation and analyses software used in this study can be downloaded under GNU General Public License v3.0 from: https://github.com/JuusolaLab/Microsaccadic_Sampling_Paper.\u00a0A copy is archived at\u00a0https://github.com/elifesciences-publications/Microsaccadic_Sampling_Paper.\n",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "84d45d39-78df-4d39-829e-622380925cb8",
+      "submission_id": "89e75c38-4f97-43dc-8725-df2a767c25c2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Fred Rieke, Howard Hughes Medical Institute, University of Washington United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.26117.098](https://doi.org/10.7554/eLife.26117.098)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Microsaccadic information sampling provides Drosophila hyperacute vision\" for consideration by eLife. Your article has been reviewed by two peer reviewers, one of whom is a member of our Board of Reviewing Editors and the evaluation has been overseen David Van Essen as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThis is an impressively comprehensive paper on visual acuity in flies. Both reviewers appreciated the depth with which the paper tackled a number of important issues. The work in the paper has an opportunity both to make an important point about the relation between eye movements and visual acuity and to become a reference on a number of issues about fly vision. To reach these dual goals, however, the work in the paper needs to be presented more clearly. Several options emerged from discussions among the editors and reviewers, including splitting the work in the paper into two related papers, with the intention that they would appear back-to-back, or revising the paper to into account suggestions in the individual reviews (below). Most important in considering the revisions is to target the paper or papers to a broad audience and to deliver the message in a way that is broadly accessible. These and some other points are elaborated below.\n\nReviewer #1:\n\nThis is a difficult paper to evaluate. I am not an expert on insect vision, but struggled more than I should have to follow the main arguments. I will leave detailed comments for the more expert reviewers, and focus primarily on accessibility. The paper contains several interesting ideas. Unfortunately, the data and analysis supporting these ideas is sufficiently spread out that it is very hard to follow and evaluate. I also felt that some of the essential aspects of the paper were not developed sufficiently.\n\nMajor points:\n\n1) Stimulus manipulations in experiments of Figure 1.\n\nThe results illustrated in Figure 1 are interpreted in terms of changes in stimuluscontrast, \"burstiness\" and temporal frequency. But the mean light level is also changing substantially, which confounds interpretation of these experiments. Either a clear explanation for why the mean is not important needs to be given or the data needs to be interpreted with this in mind.\n\n2) Hyperacuity introduced late and not clearly connected to sampling.\n\nThe focus of the paper, from the title, is on visual acuity. Yet the underlying data only starts in Figure 7. This is part of a more general issue of the number of ideas packed into the paper, and the difficulty as a reader in keeping track of the key points. This is exacerbated because the relation between the key ideas is not clear (e.g. how the sampling and signal to noise experiments from the first figures relate to the acuity experiments at the end of results). I appreciate the comprehensiveness of the paper, but worry that few readers will make it through.\n\n3) Information and coding efficiency calculations.\n\nThe description of the coding efficiency measurements is quite spread out in the paper. Parts of it are in Results, Materials and methods and in the Appendices. Further, the measure is introduced (in Figure 2) before the relevant calculations are described. In addition to these issues about presentation, the calculations assume Gaussian signals and noise (i.e. for Equation 1 to hold). This is clearly not the case. Is the non-Gaussian nature of the signal (and possibly noise) an issue and if so how much is it likely to bias the information calculations and efficiency measures?\n\n4) Figure 6 and sampling of inputs via natural movements.\n\nThe differences between the intensities sampled for saccades and a linear sampling in Figure 6D are quite small. It is hard to know how much importance to place on such small differences.\n\n5) Speed tuning of behavior.\n\nFigure 9B makes clear predictions about the speed dependence of spatial resolution. The behavioral experiments of Figure 10 would be enhanced greatly if these predictions were tested; if there are reasons that this is difficult, a discussion of why would be helpful.\n\n6) Appendices and supplementary material.\n\nThere is a good deal of information central to the paper in the Appendices. It is unclear how much of this repeats previous papers and how much is new. I did not have time to evaluate the appendices. Is it possible to reduce them substantially in length by referencing out pieces?\n\nReviewer #2:\n\nUnderstanding the inputs to a sensory system is fundamental to any quantitative of neural processing. The fruit fly visual system has fundamentally enlightened our understanding both of invertebrate phototransduction mechanisms and, more recently, has provided a number of important insights into neural computation. However, despite an extensive body of work spanning more than 50 years, Juusola and colleagues convincingly demonstrate that a property of the system as fundamental as acuity has been incompletely understood.\n\nIn this monumental work, Juusola and colleagues systematically measure and model photoreceptor responses to light across a wide range of viewing conditions and substantially extend our understanding. More specifically, by quantitatively modeling and measuring a combination of electrical signals and rhadomere movements, combined with behavior, the authors demonstrate that the fly retina offers a much high acuity view of the world than previous appreciated, and that the saccadic structure of fly movements may play a central role in enhancing acuity, a finding that runs contrary to accepted intuition.\n\nThis work is substantial, spanning 48 figures and more than 200 pages, making it both challenging to grasp in its entirety, and certain to emerge as the go-to reference standard in this field. I am therefore strongly supportive of its publication. I have only a small number of conceptual points where I believe the authors overstate the implications of their case, which I believe can be readily addressed by changes to the text. These issues are as follows:\n\n1) The role of network connections to \"add\" information. In multiple places in the text, the authors refer to the ability of network connections to add information (for example, in the discussion of Figure 5 \"extra network information\u2026is mostly at high burst frequencies\" and \"the real R1-R6 cells receive extra information from their neighbors\"). The stimuli the authors use to make this point are spatially homogenous; as a result, the only possible role that lateral synaptic connections can possibly play in enhancing the SNR/infomax of the system is through additional averaging of independent photoreceptor estimates of photon count. If this is correct, please make this point more transparent in the text. If this is incorrect, please explain how the network can provide additional information. Is it also correct to infer that if the lateral connections are really enhancing infomax/bitrate of photoreceptors, these lateral synaptic connections must contribute substantially little noise themselves? Can the authors comment on this from their data? In the same vein, the authors note that inputs from R7 and R8 would also contribute additional information. However, while this is true for R8, it is unlikely to be true for R7 under the conditions used by the authors (in which the white LED used is unlikely to have a significant UV component to drive R7).\n\n2) As far as I can tell, the authors have no evidence to support the role for network connection asymmetries to produce differences in response in photoreceptors to motion in different directions. And despite the striking connectivity of L2 and L4, which has inspired a number of different functional models over the last 40 years, none of these models have received strong experimental support. Therefore please truncate this discussion in Appendix 6.\n\n3) I am also unclear of the evidence in support of the phasic differences in inputs from the two eyes having information relevant to \"measuring directional changes in the visual space, in respect to its head direction\" (Figure 46). That is, while I agree that the photoreceptor movement should produce such a phase lag to rotational stimuli, I don't see a circumstance in which this lag would add any new information to the representation of the direction of movement that isn't already available from monocular inputs. Either articulate a circumstance under which detecting this phase delay would provide useful, unique information, or reduce the speculation.\n\n4) Figure 6 \u2013 It appears that the authors examined responses to only six different natural scenes. How were these samples chosen? How representative are they of the image statistics in the van Hateren database? I could imagine how scenes with different spatial structure (particularly lower spatial frequency structure) would tend to bring contrast features into ideal sampling range at different turn velocities (notwithstanding the ability of saccades to make sampling shorter). Does this either match any existing data on saccade statistics, or make any predictions for future studies?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Microsaccadic sampling of moving image information provides Drosophila hyperacute vision\" for consideration by eLife. Your article has been reviewed by two peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen David Van Essen as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. Both reviewers felt the paper had improved. At the same time, several issues remain and we cannot reach a final decision until those are taken care of. In discussion, both reviewers felt these issues were important.\n\nReviewer #1:\n\nThis is a rereview of a paper about coding of naturalistic inputs by fly photoreceptors. The paper has improved in revision, but several substantial issues remain. These and some smaller points follow:\n\nFigure 1 stimulus.\n\nThe new paragraph added on line 161 did not really answer the concern about whether changes in information rate could be attributed to contrast and burstiness, or whether the (changing) mean also should be considered. The argument in that paragraph is certainly reasonable, but is suggestive rather than a real test of the issue. It seems to me that the stimulus design confounds changes in mean and contrast \u2013 and acknowledging that and the resulting difficulty in knowing what controls the responses in Figure 1 would be quite helpful.\n\nInformation calculations.\n\nI still have two concerns about the information calculations. First, testing for gaussian-distributed amplitudes for signal and noise is not a good test of whether the distributions are actually gaussian, since that also requires randomness of the phases of the different frequency components (e.g. a perfectly deterministic and periodic stimulus could have a gaussian amplitude distribution). Second, the argument that the Shannon formula is reasonable for highly non-gaussian responses cites previous work which, at least to my understanding, relies on extrapolation to obtain good estimates of information rates. It is not clear if that procedure was followed here, and if not whether the past work can be used to validate the current approach.\n\nHistograms in Figure 6D.\n\nI asked previously about the small differences between the linear and saccadic walk distributions in this figure. The additional supplementary data helps make the case that these differences are systematic, but not that they are large enough to really matter. Given the small size of the differences, I think a better argument needs to be give as to why one should care about them.\n\nReviewer #2:\n\nThe authors have thoughtfully responded to all of my concerns, and I am now fully supportive of publication in eLife.\n",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b39e3ddf-dbd3-4b3a-bff5-8a942dc46f2e",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C1",
+      "claim": "Drosophila compound eyes are composed of ~750 seemingly regular lens-capped modules called ommatidia",
+      "claim_type": "EXPLICIT",
+      "source": "The Drosophila compound eyes are composed of ~750 seemingly regular lens-capped modules called ommatidia, which should provide the fly a panoramic visual field of low optical resolution (Barlow, 1952; Land, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established anatomical fact about Drosophila eyes, supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "9cabd1de-73bc-405d-86a1-680b23610083",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C2",
+      "claim": "Each ommatidium contains eight photoreceptor cells (R1-R8), pointing to seven different directions",
+      "claim_type": "EXPLICIT",
+      "source": "Each ommatidium contains eight photoreceptor cells (R1-R8), pointing to seven different directions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge about ommatidium structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "6cbbc853-f10d-4b1e-84ae-1b24eaa7efa4",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C3",
+      "claim": "R1-R6 photoreceptors are ultraviolet and blue-green-sensitive outer photoreceptors that initiate the motion vision pathway",
+      "claim_type": "EXPLICIT",
+      "source": "The ultraviolet and blue-green-sensitive outer photoreceptors, R1-R6, initiate the motion vision pathway, whilst the central R7 and R8, which lie on top of each other, detect different colors from one direction (Wardill et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wardill et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "f73a49b2-dd41-49e3-82ac-5b72bd325df6",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C4",
+      "claim": "The average interommatidial angle in Drosophila is \u0394\u03c6 = 4.5\u00b0",
+      "claim_type": "EXPLICIT",
+      "source": "the photoreceptor spacing (spatial resolution) effectively matches the ommatidium spacing (average interommatidial angle, \u0394\u03c6 = 4.5o (G\u00f6tz, 1964; Land, 1997; Gonzalez-Bellido et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations providing the measurement.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "f1e061ea-4f9d-4558-8d9a-e3bd0f54dc3b",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C5",
+      "claim": "R1-R6 photoreceptors capture 2-to-4-times more information in time than previous maximum estimates when responding to high-contrast bursts",
+      "claim_type": "EXPLICIT",
+      "source": "Our intracellular recordings reveal that R1-R6s capture 2-to-4-times more information in time than previous maximum estimates (Juusola and Hardie, 2001a; Song et al., 2012; Song and Juusola, 2014) when responding to high-contrast bursts (periods of rapid light changes followed by quiescent periods) that resemble light input from natural scenes generated by saccadic viewing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data and comparison to previous estimates from cited work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "950a78bb-e7a8-4cb9-b847-f1dceb3c5368",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C6",
+      "claim": "High-contrast bursts resemble light input from natural scenes generated by saccadic viewing",
+      "claim_type": "EXPLICIT",
+      "source": "when responding to high-contrast bursts (periods of rapid light changes followed by quiescent periods) that resemble light input from natural scenes generated by saccadic viewing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing similarity between burst stimuli and natural saccadic viewing patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "47842fe5-ad4b-486f-9cdd-0d568bea20fb",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C7",
+      "claim": "Interspersed 'fixation' intervals allow photoreceptors to sample more information from phasic light changes by relieving them from refractoriness",
+      "claim_type": "EXPLICIT",
+      "source": "Biophysically-realistic model simulations suggest that this improvement largely results from interspersed 'fixation' intervals, which allow photoreceptors to sample more information from phasic light changes by relieving them from refractoriness (Song et al., 2012; Song and Juusola, 2014; Juusola et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by model simulations and citations to prior theoretical work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "0da37209-84a0-49be-a4ce-22f37cfb8ac3",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C8",
+      "claim": "Photomechanical photoreceptor contractions work together with refractory sampling to improve spatial acuity",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, over space, our intracellular recordings, high-speed microscopy and modeling further reveal how photomechanical photoreceptor contractions (Hardie and Franze, 2012) work together with refractory sampling to improve spatial acuity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by multiple experimental approaches (recordings, microscopy, modeling) and citation to prior work on photomechanical contractions.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "ce640add-5a63-4051-9f99-bcbf5672883b",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C9",
+      "claim": "Photomechanical processes reduce motion blur during saccades and adaptation during gaze fixation",
+      "claim_type": "EXPLICIT",
+      "source": "We discover that by actively modulating light input and photoreceptor output, these processes reduce motion blur during saccades and adaptation during gaze fixation, which otherwise could fade vision (Ditchburn and Ginsborg, 1952; Riggs and Ratliff, 1952; Land, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data and citations to prior work on visual fading.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "e0051915-7138-4998-a3c6-d27cd320dfdb",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C10",
+      "claim": "Phasic responses sharpen retinal images by highlighting the times when visual objects cross a photoreceptor's receptive field, thereby encoding space in time",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting phasic responses sharpen retinal images by highlighting the times when visual objects cross a photoreceptor's receptive field, thereby encoding space in time (see also: Ahissar and Arieli, 2001; Donner and Hemil\u00e4, 2007; Rucci et al., 2007; Kuang et al., 2012a; Kuang et al., 2012; Franceschini et al., 2014; Viollet, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data and citations to related work in other systems.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "14a91f54-2aac-4d05-956f-4dd330ff301d",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C11",
+      "claim": "Neither saccades nor fixations blind the flies, but together improve vision",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, neither saccades nor fixations blind the flies, but together improve vision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings about photomechanical processes and information sampling.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "3540e337-b4f5-477c-8a11-833b3b6e3c2d",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C12",
+      "claim": "Drosophila can see >4 fold finer details than their eyes' spatial sampling limit",
+      "claim_type": "EXPLICIT",
+      "source": "Incorporation of this novel opto-mechano-electric mechanism into our 'microsaccadic sampling'-model predicts that Drosophila can see >4 fold finer details than their eyes' spatial sampling limit \u2013 a prediction directly confirmed by optomotor behavior experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by both model predictions and behavioral experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "2bd3b6a3-d6a7-435b-941a-5b59dd142415",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C13",
+      "claim": "The acuity of an eye is limited by its photoreceptor spacing, which provides the grain of the retinal image",
+      "claim_type": "EXPLICIT",
+      "source": "The acuity of an eye is limited by its photoreceptor spacing, which provides the grain of the retinal image.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in vision science.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "e874314e-9187-43fe-8faa-68c85b9d0cb1",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C14",
+      "claim": "To resolve two stationary objects, at least three photoreceptors are needed for detecting the intensity difference in between",
+      "claim_type": "EXPLICIT",
+      "source": "To resolve two stationary objects, at least three photoreceptors are needed for detecting the intensity difference in between.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in vision science about spatial resolution limits.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "ccfb12a1-12e1-42ec-87f3-14ed71ef06fa",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C15",
+      "claim": "Resolving two moving objects is harder than stationary objects because vision becomes further limited by each photoreceptor's finite integration time and receptive field size",
+      "claim_type": "EXPLICIT",
+      "source": "To resolve two moving objects is harder, as vision becomes further limited by each photoreceptor's finite integration time and receptive field size (Srinivasan and Bernard, 1975; Juusola and French, 1997; Land, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to prior theoretical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "d2d91086-fa3b-44a8-b992-04cafbe65589",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C16",
+      "claim": "Animals from insects to man view the world by using saccades and fixation intervals",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, animals - from insects to man - view the world by using saccades, fast movements, which direct their eyes to the surroundings, and fixation intervals between the saccades, during which gaze is held near stationary (Land, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about visual behavior across species, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "a60bde17-5279-41ed-9c8f-f79e9c30d52e",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C17",
+      "claim": "Fast adaptation causes perceptual fading during fixation",
+      "claim_type": "EXPLICIT",
+      "source": "A well-known trade-off of fast adaptation is that it causes perceptual fading during fixation (Ditchburn and Ginsborg, 1952; Riggs and Ratliff, 1952)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to classic studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "1683a03a-1ee6-4ff9-9a7d-211465f44cc5",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C18",
+      "claim": "To see the world requires motion or self-motion: body, head and eye movements",
+      "claim_type": "EXPLICIT",
+      "source": "and to see the world requires motion or self-motion: body, head and eye movements (Hengstenberg, 1971; Land, 1973; Franceschini and Chagneux, 1997; Schilstra and van Hateren, 1998; Blaj and van Hateren, 2004; Martinez-Conde et al., 2013), which remove adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "27b6a802-49d7-4498-89d1-eb5cfb168282",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C19",
+      "claim": "R1-R6 photoreceptors responded most vigorously to high-contrast bursts containing fast transient events with darker intervals",
+      "claim_type": "EXPLICIT",
+      "source": "Intracellular recordings (Figure 1A) revealed that photoreceptors responded most vigorously to high-contrast bursts, which contained fast transient events with darker intervals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "857464e1-ad8f-405a-a067-510c330950c8",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C20",
+      "claim": "The slowest high-contrast bursts (20 Hz) evoked the largest peak-to-peak responses (43.4 \u00b1 5.6 mV; mean \u00b1 SD, n = 16 cells)",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the slowest high-contrast bursts (red; top-left) with the longest darker intervals, which theoretically (Song et al., 2012; Song and Juusola, 2014; Juusola et al., 2015) should relieve most refractory microvilli (Appendixes 1\u20133), evoked the largest peak-to-peak responses (43.4 \u00b1 5.6 mV; mean \u00b1 SD, n = 16 cells; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding with quantitative measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "732eff24-9e63-4c6a-aa2c-89a9931a7321",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C21",
+      "claim": "The fastest low-contrast GWN evoked the smallest responses (3.7 \u00b1 1.1 mV; n = 4)",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the fastest low-contrast GWN (blue; bottom-right), which would keep more microvilli refractory, evoked the smallest responses (3.7 \u00b1 1.1 mV; n = 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding with quantitative measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "c5d5a7c5-aa87-483e-a5b2-fe2d9830d578",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C22",
+      "claim": "The maximum signal power spectra to bursty stimuli could be up to ~6,000 times larger than that of the noise",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum signal power spectra to bursty stimuli could be up to ~6,000 times larger than that of the noise, which was effectively stimulus-invariant (Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "193a1651-3568-489c-8535-cab28e965315",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C23",
+      "claim": "Information transfer peaked at 100 Hz bursts",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, signaling performance (Figure 2A,C) increased both with the stimulus bandwidth (left) and contrast (right), until these became too fast to follow. Information transfer peaked at 100 Hz bursts, which allocated the R1-R6's limited bandwidth and amplitude range near-optimally",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "414d1f9b-0548-4c88-b2c3-675c67f0d95e",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C24",
+      "claim": "A photoreceptor's information transfer to 100 Hz bursts was 610\u2013850 bits/s",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, this performance (610\u2013850 bits/s) was 2-to-4-times of that for GWN (200\u2013350 bits/s), which has often been used for characterizing maximal encoding (Juusola and Hardie, 2001a), and twice of that for rich naturalistic stimuli (380\u2013510 bits/s) (Song and Juusola, 2014) (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding with quantitative measurements comparing different stimulus types.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "f47b0310-9cd4-4a57-b10e-325a0e850d7a",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C25",
+      "claim": "The biophysically realistic photoreceptor model transferred 633 \u00b1 20 bits/s at its peak for 100 Hz bursts",
+      "claim_type": "EXPLICIT",
+      "source": "At its peak, the model transferred 633 \u00b1 20 bits/s (mean \u00b1 SD; Figure 4C) for 100 Hz bursts of 8 \u00d7 105 photons/s",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from model simulations with quantitative measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "d5129db1-6f2b-4256-aba0-c12b4bd8bd50",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C26",
+      "claim": "Real R1-R6s receive extra information from their neighbors through superposition",
+      "claim_type": "EXPLICIT",
+      "source": "The real R1-R6s, on balance, receive extra information from their neighbors (Rivera-Alba et al., 2011; Wardill et al., 2012), which through superposition (Zheng et al., 2006) sample information from overlapping receptive fields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work on neural connectivity and inference from the data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "eb13fdae-718c-4328-a860-94701afbb8bf",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C27",
+      "claim": "R6 photoreceptors have large rhabdomeres and gap-junctions to R8",
+      "claim_type": "EXPLICIT",
+      "source": "Here, R6s, with large rhabdomeres (Figure 5B) and gap-junctions to R8 (Figure 5C), should receive the most (Wardill et al., 2012)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by anatomical data shown in Figure 5 and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "73d69b67-f78b-464a-ae14-c5950fc61f9d",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C28",
+      "claim": "A locomoting Drosophila generates ~1\u20135 head/body-saccades/s",
+      "claim_type": "EXPLICIT",
+      "source": "A locomoting Drosophila generates ~1\u20135 head/body-saccades/s, which direct its gaze in high velocities to the surroundings (Fry et al., 2003; Geurten et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Drosophila behavior supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "593e6004-9ec2-4c82-ad4e-07491704824f",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C29",
+      "claim": "Saccadic viewing of natural images transformed the resulting light input to resemble bursty high-contrast stimulation",
+      "claim_type": "EXPLICIT",
+      "source": "We found that saccadic viewing of natural images (Figure 6C,i), even without visual selection (i.e. without the fly choosing what it gazes), transformed the resulting light input to resemble the bursty high-contrast stimulation (Video 1), which maximized photoreceptor information (Figures 1\u20132).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data in Figure 6 and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "8a0a009c-32d7-447e-9a61-0c75ef17bd43",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C30",
+      "claim": "Saccadic walks contained fixation periods that retained the same light input values for longer durations than linear walks",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the saccadic walks contained fixation periods that retained the same light input values for longer durations than the linear walks, which lacked these periods, causing the ~63% higher peak in the saccadic histogram (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding with quantitative analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "5f4ad1a4-c592-4b4a-a6bc-8993268f3789",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C31",
+      "claim": "Saccadic walking enhanced the proportion of large intensity differences by ~18% higher histogram flanks than linear walking",
+      "claim_type": "EXPLICIT",
+      "source": "Saccadic walking also enhanced the proportion of large intensity differences between two consecutive moments, seen as ~18% higher histogram flanks than those for linear walking (p=3.65 \u00d7 10\u22129, pair-wise t-test for the combined 0.5\u20131.0 and -0.5--1 ranges).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding with quantitative statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "06b3527c-3a33-4f92-a63b-c58645c4288c",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C32",
+      "claim": "Dark-adapted wild-type R1-R6 photoreceptors' mean acceptance angle was \u2206\u03c1dark = 9.47 \u00b1 1.57\u00b0, n = 19 cells",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the dots' angular separation was less than the half-width of a R1-R6's receptive field (Figure 7C) at the two backgrounds (\u2206\u03c1dark = 9.47 \u00b1 1.57\u00b0, n = 19 cells; \u2206\u03c1light = 7.70 \u00b1 1.27\u00b0, n = 6; mean \u00b1 SD; Figure 7\u2014figure supplements 1 and 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental measurement of receptive field size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "a5809339-2a29-422c-80cc-39f537f50635",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C33",
+      "claim": "Light-adapted wild-type R1-R6 photoreceptors' mean acceptance angle was \u2206\u03c1light = 7.70 \u00b1 1.27\u00b0, n = 6",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the dots' angular separation was less than the half-width of a R1-R6's receptive field (Figure 7C) at the two backgrounds (\u2206\u03c1dark = 9.47 \u00b1 1.57\u00b0, n = 19 cells; \u2206\u03c1light = 7.70 \u00b1 1.27\u00b0, n = 6; mean \u00b1 SD; Figure 7\u2014figure supplements 1 and 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental measurement of receptive field size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "6117f88f-508f-46df-8e3b-ce3aa57d0f95",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C34",
+      "claim": "Recordings showed distinctive responses to two fast-moving dots as two peaks separated by a trough",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably in all these tests, the recordings showed distinctive responses to the two dots (Figure 7B), as two peaks separated by a trough.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "888797d5-af5c-4736-ab93-36a610feb3d8",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C35",
+      "claim": "Volterra-model predictions failed to resolve the double-fast dots, instead blurring into one broad response",
+      "claim_type": "EXPLICIT",
+      "source": "However, in marked contrast, the model predictions failed to resolve the double-fast dots, instead blurring into one broad response in both adapting states (Figure 7D; blue vs. black bars, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from model simulations compared to experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "31ff964d-962d-46c7-bbfc-4f18d8085c51",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C36",
+      "claim": "A photoreceptor's real resolving power was significantly better and less affected by motion blur than predicted by classic theory",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a photoreceptor's real resolving power was significantly better and less affected by motion blur than predicted by classic theory (Appendix 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing experimental data to theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "a1055c05-65cd-4516-accb-6d1ec2ddb25b",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C37",
+      "claim": "hdcJK910 R1-R6s resolved the dots at least equally well as the wild-type",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we found that hdcJK910 R1-R6s resolved the dots at least equally well as the wild-type (Figure 7D, red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding comparing mutant and wild-type photoreceptors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "85b402cd-504e-436a-8e23-719c509eca90",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C38",
+      "claim": "High acuity did not result from synaptic inputs but was intrinsic to photoreceptors",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, high acuity did not result from synaptic inputs but was intrinsic to photoreceptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the hdcJK910 mutant experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "00e1cd50-77a0-4a40-bbe6-77eb9c91934d",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C39",
+      "claim": "R1-R6 recordings often showed phasic directional selectivity, with responses rising and decaying faster to back-to-front than to front-to-back moving dots",
+      "claim_type": "EXPLICIT",
+      "source": "We further discovered that R1-R6 recordings often showed phasic directional selectivity (Figure 7G), with the responses rising and decaying faster to back-to-front than to front-to-back moving dots.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding shown in Figure 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "6acf55fd-b1f9-4330-ab3f-2e042278e384",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C40",
+      "claim": "Atomic-force microscopy has revealed minute (<275 nm) vertical movements on the surface of dissected Drosophila eyes generated by contraction of individual microvilli",
+      "claim_type": "EXPLICIT",
+      "source": "Namely, atomic-force microscopy has revealed minute (<275 nm) vertical movements on the surface of dissected Drosophila eyes, generated by contraction of individual microvilli as PIP2 is hydrolyzed from the inner leaflet of the lipid bilayer (Hardie and Franze, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior work, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "92d2a965-c1c3-460d-8458-7b2860ad1729",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C41",
+      "claim": "Rhabdomeres moved 8\u201320 ms after a flash onset, being maximally displaced 70\u2013200 ms later",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 8\u201320 ms after a flash the rhabdomeres, which directly faced the light source at the image center, shifted rapidly towards the anterior side of their ommatidia (Figure 8B). These local movements were faster and larger the brighter the flash (Figure 8C), and reached their intensity-dependent maxima (0.2\u20131.2 \u00b5m; Figure 8D) in 70\u2013200 ms, before returning more slowly to their original positions",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding from high-speed video recordings shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "cb19b73f-4241-47e4-9b1d-71990cf7c448",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C42",
+      "claim": "A bright flash could shift a rhabdomere more than its half-width sideways",
+      "claim_type": "EXPLICIT",
+      "source": "Because the mean R1-R6 rhabdomere tip diameter is ~1.7 \u00b5m (Figure 5B), a bright flash could shift it more than its half-width sideways.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from comparing movement measurements to anatomical measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "79564de3-80f1-40f9-8624-7b8ea66c3fbb",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C44",
+      "claim": "Light-activated rhabdomeres moved in back-to-front direction along the eye's equatorial (anterior-posterior) plane",
+      "claim_type": "EXPLICIT",
+      "source": "Video footage at different eye locations indicated that light-activated rhabdomeres moved in back-to-front direction along the eye's equatorial (anterior-posterior) plane (Figure 8E, red; Video 3), with little up-down components (black).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding from video analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "6a6197d2-a497-43a6-a572-e12a8bd12e2d",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C45",
+      "claim": "The ommatidium lens stayed nearly still during rhabdomere movements",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, we found that the ommatidium lens stayed nearly still, while specific pigment and cone cells, which are connected to the rhabdomere tips by adherens junctions (Tepass and Harris, 2007), formed a narrow aperture that moved with the rhabdomeres but only half as much.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding from z-axis scanning shown in Figure 8F and Video 4.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "660a83c2-510a-4e7c-b89c-a88819c0d996",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C46",
+      "claim": "Rhabdomeres moved ~ 2 times more than the aperture formed by cone and pigment cells, and ~ 10 times more than the lens",
+      "claim_type": "EXPLICIT",
+      "source": "Rhabdomeres moved ~ 2 times more than this aperture, and ~ 10 times more than the lens.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding with quantitative comparison shown in Figure 8F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "d4666520-a17f-4104-90cb-d7385b1636f4",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C47",
+      "claim": "The microsaccadic sampling model's output closely predicted the responses to two moving dots",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, with such input driving the refractory photon sampling model, its output (iv) closely predicted the responses to the two moving dots (Figure 8I and Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from model simulations that match experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "a11ebf41-2311-4575-9d92-ba06ae01354c",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C48",
+      "claim": "Early behavioral experiments in bright illumination suggested R1-R6 acceptance angles of ~3.5\u00b0",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, early behavioral experiments in bright illumination (G\u00f6tz, 1964) suggested similarly narrow R1-R6 acceptance angles (~3.5o).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior behavioral work, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "8e1e9e37-91d8-4bad-bcd7-875a0b92d2ef",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C49",
+      "claim": "If dots or a Drosophila moved at 10 o/s, a photoreceptor should resolve image details at 1\u00b0 resolution",
+      "claim_type": "EXPLICIT",
+      "source": "We found that if the dots, or a Drosophila, moved at suitable speed, a photoreceptor should resolve them well (Figure 9A), with this performance depending upon the inter-dot-distance. When the dots/eye moved at 10 o/s, a R1-R6 may capture image details at 1o resolution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the microsaccadic sampling model shown in Figure 9.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "b7dd30fb-623a-4b2b-9ffd-419c39a7d518",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C50",
+      "claim": "3\u00b0-apart-dots should be seen at 5\u2013100 o/s speeds and 4\u00b0-apart-dots even during fast saccades (200\u2013300 o/s)",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, 3o-apart-dots should be seen at 5\u2013100 o/s speeds and 4o-apart-dots even during fast saccades (200\u2013300 o/s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the microsaccadic sampling model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "48ea381f-acf1-43e0-9814-10344a4b1b74",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C51",
+      "claim": "Intracellular recordings corroborated the microsaccadic sampling model predictions",
+      "claim_type": "EXPLICIT",
+      "source": "Again, intracellular recordings corroborated these predictions (Figure 9C and Figure 9\u2014figure supplement 1), demonstrating how acuity could be enhanced by encoding space in time.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding that validates model predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "0ac03e0c-5ddc-4d7c-a3e8-267ec22598bc",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C52",
+      "claim": "Every tested fly responded to hyperacute (<4.5\u00b0) bar stimuli consistently",
+      "claim_type": "EXPLICIT",
+      "source": "We found that every tested fly responded down to ~1o panoramic bar resolution (Figure 10A and Figure 10\u2014figure supplement 1) with their responses becoming smaller the finer its bars (Figure 10A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding from optomotor behavior experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "8c7e0552-d24a-4ec0-8721-60ba6eb10894",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C53",
+      "claim": "Optomotor responses consistently followed the rotation direction changes, indicating they were not caused by aliasing",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, because these responses consistently followed the rotation direction changes, they were not caused by aliasing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the behavioral data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "775fdd57-087e-4056-afcc-49c88e2142cc",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C54",
+      "claim": "Optomotor behavior verified that Drosophila see the world at least in 4-fold finer detail than what was previously thought",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, optomotor behavior verified that Drosophila see the world at least in 4-fold finer detail than what was previously thought.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the behavioral experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "5e26eb77-2fb0-42be-bea1-78d02c5ea6e1",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C55",
+      "claim": "When a fine-grained (3.9\u00b0) panoramic image was rotated faster, the optomotor response declined as predicted",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, when a fine-grained (3.9o) panoramic image was rotated faster (Figure 10D), the response declined as predicted (cf. two dots 4o apart in Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding that matches model predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "1f4494e6-1eb2-4962-8a9b-c4b037af66af",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C56",
+      "claim": "Drosophila see hyperacute details even at saccadic speeds",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with photoreceptor output setting the perceptual limit for vision and demonstrates that Drosophila see hyperacute details even at saccadic speeds (Figure 10D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the behavioral experiments at different speeds.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "96015a8c-be19-4de6-878e-c9e377781e4b",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C57",
+      "claim": "The dynamic interplay between saccades and gaze fixation is important for both the maintenance and enhancement of vision already at the photoreceptor level",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that the dynamic interplay between saccades and gaze fixation is important for both the maintenance and enhancement of vision already at the photoreceptor level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion drawn from all the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "3def8270-4311-4189-b1c0-d931d2b8067b",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C58",
+      "claim": "Light input is first regulated by two processes inside photoreceptors: slower screening pigment migration (intracellular pupil, 1\u201310 s) and much faster photomechanical rhabdomere contractions (0.01\u20131 s)",
+      "claim_type": "EXPLICIT",
+      "source": "Light input is first regulated by two processes inside photoreceptors: slower screening pigment migration (intracellular pupil, 1\u201310 s) and much faster photomechanical rhabdomere contractions (0.01\u20131 s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings about photomechanical processes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "968833e8-9e36-4df9-94c9-54dc5f0efba6",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C59",
+      "claim": "Photomechanical modulations have low noise",
+      "claim_type": "EXPLICIT",
+      "source": "These modulations have low noise (Figure 2\u2014figure supplement 2), enabling refractory photon sampling by microvilli to enhance information intake in phasic stimulus components.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "48c78f82-c5f0-4a38-8949-1eefe1b3ffe7",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C60",
+      "claim": "Over space, photomechanical mechanisms sharpen neural resolvability by ~4 fold below the theoretical limit of the compound eye optics",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, over space, these mechanisms further sharpen neural resolvability by ~4 fold below the theoretical limit of the compound eye optics, providing hyperacute vision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion drawn from the spatial acuity experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "a8ce57a0-8079-4d9a-909d-5aa53ab01d33",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C61",
+      "claim": "With microsaccadic sampling, a fly's behavioral decisions govern its visual information/acuity trade-off",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, with microsaccadic sampling, a fly's behavioral decisions govern its visual information/acuity trade-off.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "687feeee-139b-4c26-aa86-7b4cb4c617f5",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C62",
+      "claim": "To see the finest image details a fly should scan the world slowly, which probably happens during normal gaze fixation",
+      "claim_type": "EXPLICIT",
+      "source": "To see the finest image details it should scan the world slowly, which probably happens during normal gaze fixation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the model predictions and experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "89c43ba1-3e7b-45a7-a552-a00c135e359f",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C63",
+      "claim": "By locomoting faster, in a saccadic or bursty fashion, visual information capture in time is increased while surprisingly little spatial details about surroundings would be lost",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, by locomoting faster, in a saccadic or bursty fashion, visual information capture in time is increased (see also: Juusola and de Polavieja, 2003), while surprisingly little spatial details about its surroundings would be lost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings, supported by citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "0b535121-f7f4-49c2-9d1b-ac47725f8a1c",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C64",
+      "claim": "The extraction of phasic stimulus features, which characterize object boundaries and line elements in visual scenes, already starts during sampling and integration of visual information in the microvilli",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, here our findings further imply that, in Drosophila, the extraction of phasic stimulus features, which characterize object boundaries and line elements in visual scenes, already starts during sampling and integration of visual information in the microvilli, at the first processing stage (rather than later on in the retinal network or in the brain).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings about photoreceptor function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "49ff6d87-7215-433b-b5b6-37dad8d55bb7",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C65",
+      "claim": "Animals should fixate gaze on darker features to resensitize photoreceptors by relieving their refractory sampling units",
+      "claim_type": "EXPLICIT",
+      "source": "Animals should fixate gaze on darker features, as this resensitizes photoreceptors by relieving their refractory sampling units (e.g. microvilli).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the experimental findings about refractory sampling.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "7fc9862e-dc38-4d04-aad5-1bcab4f5cf69",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C66",
+      "claim": "Animals should rapidly move gaze across to brighter image areas, as saccadic crossings over high-contrast boundaries enhance information intake",
+      "claim_type": "EXPLICIT",
+      "source": "And then, rapidly move gaze across to brighter image areas, as saccadic crossings over high-contrast boundaries enhance information intake by increasing photoreceptors' sample (quantum bump) rate changes/time (Appendix 9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the experimental findings about information sampling.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "5874cb4c-db1f-411e-84ec-5e68ab4bf045",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "claim_id": "C67",
+      "claim": "If information sampling biophysics in rods and cones were matched to microsaccadic eye movements, this could provide a mechanistic explanation to how saccadic gaze fixation provides stable perception while curtailing motion blur effects",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, if information sampling biophysics in rods and cones were matched to microsaccadic eye movements, this could provide a mechanistic explanation to the old paradox: how saccadic gaze fixation provides stable perception of the world, while curtailing motion blur effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative extension of the findings to vertebrate vision.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d730ed0e-f71f-4ea0-b516-9b6d4a422468",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "R1-R6 photoreceptors capture 2-4 times more information (610-850 bits/s) when responding to high-contrast bursts compared to Gaussian white noise (200-350 bits/s), with information transfer peaking at 100 Hz bursts. These bursts resemble light input from natural scenes during saccadic viewing, and the improvement results from interspersed fixation intervals that relieve photoreceptors from refractoriness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C19-C24 provide quantitative experimental measurements with appropriate sample sizes (n=4-16 cells) and statistical comparisons. The signal-to-noise ratios (~6,000 maximum) and information rates are calculated using established Shannon formula methods. Model simulations (C7) provide mechanistic support for the refractoriness hypothesis. The correspondence between burst stimuli and natural saccadic viewing (C6) is demonstrated through stimulus analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "286ded58-15fc-4293-950e-9ef5b66eacb9",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A biophysically realistic photoreceptor model with 30,000 microvilli transferred 633\u00b120 bits/s for 100 Hz bursts, closely matching real R1-R6 performance. The ~200 bits/s difference between some recordings and model predictions is attributed to extra information from neighboring photoreceptors through neural superposition, with R6 photoreceptors receiving the most due to large rhabdomeres and gap-junctions to R8.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C25 provides quantitative model results that match experimental data within reasonable bounds. Claims C26-C27 offer plausible explanations for the model-data discrepancy, supported by anatomical evidence (Figure 5) and citations to prior connectivity studies. However, the exact contribution of network information remains somewhat inferential, as the model lacks these connections and direct measurements of information flow through gap junctions are not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "126cb0cc-598d-48d0-bdef-98203f2260e0",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Saccadic viewing of natural images transforms light input to resemble bursty high-contrast stimulation that maximizes photoreceptor information. Saccadic walks contained fixation periods with ~63% higher histogram peaks and ~18% higher flanks for large intensity differences compared to linear walks (p=3.65\u00d710\u207b\u2079).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 provide quantitative experimental findings with statistical validation. The transformation of natural scene viewing into burst-like stimulation is demonstrated through histogram analysis (Figure 6D) with appropriate statistical tests. Claim C28 establishes the behavioral context through cited literature. The connection between saccadic behavior and optimal photoreceptor stimulation is well-supported by converging evidence from multiple stimulus types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "03bde157-6a1e-450c-b74e-b148c523b716",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "R1-R6 photoreceptors resolved two fast-moving dots (6.8\u00b0 apart) as distinct peaks despite receptive field widths (\u0394\u03c1_dark=9.47\u00b11.57\u00b0, n=19; \u0394\u03c1_light=7.70\u00b11.27\u00b0, n=6) that should blur them according to classic Volterra models. This hyperacuity was intrinsic to photoreceptors, as hdcJK910 mutants lacking synaptic transmission resolved dots equally well as wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 provide quantitative measurements with appropriate sample sizes. The failure of classic models (C35-C36) is clearly demonstrated through direct comparison. The hdcJK910 mutant experiments (C37-C38) provide strong evidence that hyperacuity is intrinsic rather than network-dependent. However, the exact mechanism enabling this performance beyond classic predictions requires the photomechanical explanation developed in subsequent results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "91aa451b-37ed-44d3-bbc3-fd87a52fe3e5",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "R1-R6 recordings showed phasic directional selectivity, with responses rising and decaying faster (2-10 ms lead at half-maximal values) to back-to-front than front-to-back moving dots.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 reports a clear experimental observation shown in Figure 7G with quantitative timing differences. This directional selectivity is consistent with the photomechanical mechanism proposed later, though the claim itself is purely descriptive of the observed phenomenon.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "bef5560b-a180-4b23-9c26-b2bdd8039bbf",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "High-speed video microscopy revealed that rhabdomeres moved 0.2-1.2 \u03bcm (up to half their width) in 8-20 ms after light flashes, reaching maxima in 70-200 ms. Movements occurred in back-to-front direction along the eye's equatorial plane. The ommatidium lens remained nearly stationary while rhabdomeres moved ~2 times more than the cone/pigment cell aperture and ~10 times more than the lens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42, C44-C46 provide quantitative measurements from high-speed video recordings with clear temporal and spatial resolution. The differential movement of optical components (C45-C46) is demonstrated through z-axis scanning (Figure 8F, Video 4). Claim C40 appropriately cites prior work establishing the photomechanical basis. The measurements are internally consistent and supported by multiple flies (n=5-21 depending on analysis).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "6146c6cc-a427-43be-a14b-742eed3d6e1d",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The microsaccadic sampling model incorporating photomechanical rhabdomere contractions closely predicted R1-R6 responses to two moving dots. Early behavioral experiments suggested similarly narrow acceptance angles (~3.5\u00b0).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 demonstrates good correspondence between model predictions and experimental recordings (Figure 8I, Figure 8\u2014figure supplement 1). The model incorporates measured photomechanical movements and predicts light input modulation that drives realistic photoreceptor outputs. Claim C48 provides independent historical support from behavioral studies, though these are less direct measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "3cab38da-3d3f-48c2-b3de-7e54315dad28",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The microsaccadic sampling model predicts that photoreceptors can resolve image details at 1\u00b0 resolution when moving at 10\u00b0/s, with 3\u00b0-apart dots visible at 5-100\u00b0/s and 4\u00b0-apart dots even during fast saccades (200-300\u00b0/s). Intracellular recordings corroborated these predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 present model predictions shown in Figure 9A-B with clear speed-resolution relationships. Claim C51 provides experimental validation through intracellular recordings (Figure 9C, Figure 9\u2014figure supplement 1) that match model predictions. The correspondence between predictions and measurements supports the model's validity, though the exact boundaries of hyperacute vision depend on model parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "107a7ed7-8a04-4938-904e-a9dfa520e2a1",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Optomotor behavior experiments demonstrated that every tested fly (n=9) responded consistently to hyperacute bar stimuli down to ~1\u00b0 resolution (<4.5\u00b0 interommatidial angle). Responses followed rotation direction changes (not aliasing) and declined with increasing speed as predicted, confirming that Drosophila see at least 4-fold finer detail than previously thought, even at saccadic speeds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 provide behavioral validation of the hyperacuity predictions. Every fly responded to hyperacute stimuli (C52), with responses following direction changes ruling out aliasing (C53). The speed-dependent decline (C55) matches model predictions (Figure 9A). The 4-fold improvement claim (C54, C56) is directly supported by the ~1\u00b0 behavioral resolution versus ~4.5\u00b0 optical limit. Sample size (n=9 flies) is adequate for behavioral consistency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "51526c9d-2e27-433a-ac69-4bcbd508e1ad",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The dynamic interplay between saccades and gaze fixation maintains and enhances vision at the photoreceptor level through four mechanisms: intracellular pupil (1-10 s), photomechanical rhabdomere contractions (0.01-1 s), refractory photon sampling, and network inputs. These mechanisms sharpen neural resolvability by ~4-fold below the theoretical optical limit with low noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C60 synthesize the major findings into a coherent mechanistic framework. The four mechanisms are each supported by experimental evidence presented earlier. The ~4-fold improvement (C60) is validated by behavioral experiments. The low noise of photomechanical modulations (C59) is shown in Figure 2\u2014figure supplement 2. This represents a well-supported integration of multiple experimental results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "10b83e5e-3028-4c34-bfd2-7de28c1b2937",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "With microsaccadic sampling, a fly's behavioral decisions govern its visual information/acuity trade-off. Slow scanning during fixation maximizes spatial detail, while faster saccadic locomotion increases temporal information capture with minimal loss of spatial detail.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 present logical conclusions from the experimental findings about speed-dependent resolution (Figure 9) and information transfer (Figures 1-2). The trade-off between temporal information and spatial acuity is demonstrated experimentally. However, these claims extend somewhat beyond direct measurements to predict optimal viewing strategies, making them partially inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "348a77e2-98b6-4fd9-90d6-ee9e1c6f6684",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The extraction of phasic stimulus features characterizing object boundaries and line elements begins during photon sampling and integration in microvilli, at the first processing stage rather than later in the retinal network or brain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 is a reasonable inference from the findings that photoreceptors themselves (not network processing) generate phasic responses to moving objects through intrinsic photomechanical mechanisms. The hdcJK910 experiments (C37-C38) support that this occurs without network feedback. However, this claim is more interpretive than directly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "628e73b1-aec5-4376-9767-783d5759708c",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Optimal viewing strategy prediction: animals should fixate gaze on darker features to resensitize photoreceptors by relieving refractory sampling units, then rapidly move gaze across to brighter areas as saccadic crossings over high-contrast boundaries enhance information intake.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C66 present predictions about optimal viewing strategies based on the refractoriness findings. While these predictions are logical extensions of the experimental results, they are not directly tested. The manuscript provides no behavioral experiments demonstrating that flies actually employ these specific strategies or that such strategies are optimal in natural contexts. These remain plausible but unvalidated hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "90100d28-2b88-42fe-8e6a-5d5609f04f21",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "If information sampling biophysics in vertebrate rods and cones were matched to microsaccadic eye movements, this could explain how saccadic gaze fixation provides stable perception while curtailing motion blur effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C67 is purely speculative, extending the Drosophila findings to vertebrate vision without any supporting data. While the hypothesis is interesting and the analogy reasonable given the prevalence of microsaccades across species, this represents speculation rather than a tested result. No experiments on vertebrate photoreceptors or comparisons of their biophysics to Drosophila are presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    },
+    {
+      "id": "5fe4f35c-de86-450b-9366-1aeb97fcae9a",
+      "content_id": "165f5575-aeac-4963-a36f-6077da2dd11a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background knowledge establishing Drosophila eye anatomy (~750 ommatidia with 8 photoreceptors each, \u0394\u03c6=4.5\u00b0), basic principles of visual acuity (requiring 3 photoreceptors for stationary objects, limited by integration time and receptive field for moving objects), and the prevalence of saccadic viewing behaviors across species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C13-C18 present well-established background knowledge appropriately cited to prior literature. These provide necessary context for understanding the significance of the experimental findings. The anatomical facts (C1-C4) and visual acuity principles (C13-C15) are standard knowledge in the field. The behavioral context (C16-C18) is well-documented across species.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:49:33.264243Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f1e061ea-4f9d-4558-8d9a-e3bd0f54dc3b",
+      "result_id": "d730ed0e-f71f-4ea0-b516-9b6d4a422468"
+    },
+    {
+      "claim_id": "950a78bb-e7a8-4cb9-b847-f1dceb3c5368",
+      "result_id": "d730ed0e-f71f-4ea0-b516-9b6d4a422468"
+    },
+    {
+      "claim_id": "47842fe5-ad4b-486f-9cdd-0d568bea20fb",
+      "result_id": "d730ed0e-f71f-4ea0-b516-9b6d4a422468"
+    },
+    {
+      "claim_id": "27b6a802-49d7-4498-89d1-eb5cfb168282",
+      "result_id": "d730ed0e-f71f-4ea0-b516-9b6d4a422468"
+    },
+    {
+      "claim_id": "857464e1-ad8f-405a-a067-510c330950c8",
+      "result_id": "d730ed0e-f71f-4ea0-b516-9b6d4a422468"
+    },
+    {
+      "claim_id": "732eff24-9e63-4c6a-aa2c-89a9931a7321",
+      "result_id": "d730ed0e-f71f-4ea0-b516-9b6d4a422468"
+    },
+    {
+      "claim_id": "c5d5a7c5-aa87-483e-a5b2-fe2d9830d578",
+      "result_id": "d730ed0e-f71f-4ea0-b516-9b6d4a422468"
+    },
+    {
+      "claim_id": "193a1651-3568-489c-8535-cab28e965315",
+      "result_id": "d730ed0e-f71f-4ea0-b516-9b6d4a422468"
+    },
+    {
+      "claim_id": "414d1f9b-0548-4c88-b2c3-675c67f0d95e",
+      "result_id": "d730ed0e-f71f-4ea0-b516-9b6d4a422468"
+    },
+    {
+      "claim_id": "f47b0310-9cd4-4a57-b10e-325a0e850d7a",
+      "result_id": "286ded58-15fc-4293-950e-9ef5b66eacb9"
+    },
+    {
+      "claim_id": "d5129db1-6f2b-4256-aba0-c12b4bd8bd50",
+      "result_id": "286ded58-15fc-4293-950e-9ef5b66eacb9"
+    },
+    {
+      "claim_id": "eb13fdae-718c-4328-a860-94701afbb8bf",
+      "result_id": "286ded58-15fc-4293-950e-9ef5b66eacb9"
+    },
+    {
+      "claim_id": "73d69b67-f78b-464a-ae14-c5950fc61f9d",
+      "result_id": "126cb0cc-598d-48d0-bdef-98203f2260e0"
+    },
+    {
+      "claim_id": "593e6004-9ec2-4c82-ad4e-07491704824f",
+      "result_id": "126cb0cc-598d-48d0-bdef-98203f2260e0"
+    },
+    {
+      "claim_id": "8a0a009c-32d7-447e-9a61-0c75ef17bd43",
+      "result_id": "126cb0cc-598d-48d0-bdef-98203f2260e0"
+    },
+    {
+      "claim_id": "5f4ad1a4-c592-4b4a-a6bc-8993268f3789",
+      "result_id": "126cb0cc-598d-48d0-bdef-98203f2260e0"
+    },
+    {
+      "claim_id": "06b3527c-3a33-4f92-a63b-c58645c4288c",
+      "result_id": "03bde157-6a1e-450c-b74e-b148c523b716"
+    },
+    {
+      "claim_id": "a5809339-2a29-422c-80cc-39f537f50635",
+      "result_id": "03bde157-6a1e-450c-b74e-b148c523b716"
+    },
+    {
+      "claim_id": "6117f88f-508f-46df-8e3b-ce3aa57d0f95",
+      "result_id": "03bde157-6a1e-450c-b74e-b148c523b716"
+    },
+    {
+      "claim_id": "888797d5-af5c-4736-ab93-36a610feb3d8",
+      "result_id": "03bde157-6a1e-450c-b74e-b148c523b716"
+    },
+    {
+      "claim_id": "31ff964d-962d-46c7-bbfc-4f18d8085c51",
+      "result_id": "03bde157-6a1e-450c-b74e-b148c523b716"
+    },
+    {
+      "claim_id": "a1055c05-65cd-4516-accb-6d1ec2ddb25b",
+      "result_id": "03bde157-6a1e-450c-b74e-b148c523b716"
+    },
+    {
+      "claim_id": "85b402cd-504e-436a-8e23-719c509eca90",
+      "result_id": "03bde157-6a1e-450c-b74e-b148c523b716"
+    },
+    {
+      "claim_id": "00e1cd50-77a0-4a40-bbe6-77eb9c91934d",
+      "result_id": "91aa451b-37ed-44d3-bbc3-fd87a52fe3e5"
+    },
+    {
+      "claim_id": "6acf55fd-b1f9-4330-ab3f-2e042278e384",
+      "result_id": "bef5560b-a180-4b23-9c26-b2bdd8039bbf"
+    },
+    {
+      "claim_id": "92d2a965-c1c3-460d-8458-7b2860ad1729",
+      "result_id": "bef5560b-a180-4b23-9c26-b2bdd8039bbf"
+    },
+    {
+      "claim_id": "cb19b73f-4241-47e4-9b1d-71990cf7c448",
+      "result_id": "bef5560b-a180-4b23-9c26-b2bdd8039bbf"
+    },
+    {
+      "claim_id": "79564de3-80f1-40f9-8624-7b8ea66c3fbb",
+      "result_id": "bef5560b-a180-4b23-9c26-b2bdd8039bbf"
+    },
+    {
+      "claim_id": "6a6197d2-a497-43a6-a572-e12a8bd12e2d",
+      "result_id": "bef5560b-a180-4b23-9c26-b2bdd8039bbf"
+    },
+    {
+      "claim_id": "660a83c2-510a-4e7c-b89c-a88819c0d996",
+      "result_id": "bef5560b-a180-4b23-9c26-b2bdd8039bbf"
+    },
+    {
+      "claim_id": "d4666520-a17f-4104-90cb-d7385b1636f4",
+      "result_id": "6146c6cc-a427-43be-a14b-742eed3d6e1d"
+    },
+    {
+      "claim_id": "a11ebf41-2311-4575-9d92-ba06ae01354c",
+      "result_id": "6146c6cc-a427-43be-a14b-742eed3d6e1d"
+    },
+    {
+      "claim_id": "8e1e9e37-91d8-4bad-bcd7-875a0b92d2ef",
+      "result_id": "3cab38da-3d3f-48c2-b3de-7e54315dad28"
+    },
+    {
+      "claim_id": "b7dd30fb-623a-4b2b-9ffd-419c39a7d518",
+      "result_id": "3cab38da-3d3f-48c2-b3de-7e54315dad28"
+    },
+    {
+      "claim_id": "48ea381f-acf1-43e0-9814-10344a4b1b74",
+      "result_id": "3cab38da-3d3f-48c2-b3de-7e54315dad28"
+    },
+    {
+      "claim_id": "0ac03e0c-5ddc-4d7c-a3e8-267ec22598bc",
+      "result_id": "107a7ed7-8a04-4938-904e-a9dfa520e2a1"
+    },
+    {
+      "claim_id": "8c7e0552-d24a-4ec0-8721-60ba6eb10894",
+      "result_id": "107a7ed7-8a04-4938-904e-a9dfa520e2a1"
+    },
+    {
+      "claim_id": "775fdd57-087e-4056-afcc-49c88e2142cc",
+      "result_id": "107a7ed7-8a04-4938-904e-a9dfa520e2a1"
+    },
+    {
+      "claim_id": "5e26eb77-2fb0-42be-bea1-78d02c5ea6e1",
+      "result_id": "107a7ed7-8a04-4938-904e-a9dfa520e2a1"
+    },
+    {
+      "claim_id": "1f4494e6-1eb2-4962-8a9b-c4b037af66af",
+      "result_id": "107a7ed7-8a04-4938-904e-a9dfa520e2a1"
+    },
+    {
+      "claim_id": "96015a8c-be19-4de6-878e-c9e377781e4b",
+      "result_id": "51526c9d-2e27-433a-ac69-4bcbd508e1ad"
+    },
+    {
+      "claim_id": "3def8270-4311-4189-b1c0-d931d2b8067b",
+      "result_id": "51526c9d-2e27-433a-ac69-4bcbd508e1ad"
+    },
+    {
+      "claim_id": "968833e8-9e36-4df9-94c9-54dc5f0efba6",
+      "result_id": "51526c9d-2e27-433a-ac69-4bcbd508e1ad"
+    },
+    {
+      "claim_id": "48c78f82-c5f0-4a38-8949-1eefe1b3ffe7",
+      "result_id": "51526c9d-2e27-433a-ac69-4bcbd508e1ad"
+    },
+    {
+      "claim_id": "a8ce57a0-8079-4d9a-909d-5aa53ab01d33",
+      "result_id": "10b83e5e-3028-4c34-bfd2-7de28c1b2937"
+    },
+    {
+      "claim_id": "687feeee-139b-4c26-aa86-7b4cb4c617f5",
+      "result_id": "10b83e5e-3028-4c34-bfd2-7de28c1b2937"
+    },
+    {
+      "claim_id": "89c43ba1-3e7b-45a7-a552-a00c135e359f",
+      "result_id": "10b83e5e-3028-4c34-bfd2-7de28c1b2937"
+    },
+    {
+      "claim_id": "0b535121-f7f4-49c2-9d1b-ac47725f8a1c",
+      "result_id": "348a77e2-98b6-4fd9-90d6-ee9e1c6f6684"
+    },
+    {
+      "claim_id": "49ff6d87-7215-433b-b5b6-37dad8d55bb7",
+      "result_id": "628e73b1-aec5-4376-9767-783d5759708c"
+    },
+    {
+      "claim_id": "7fc9862e-dc38-4d04-aad5-1bcab4f5cf69",
+      "result_id": "628e73b1-aec5-4376-9767-783d5759708c"
+    },
+    {
+      "claim_id": "5874cb4c-db1f-411e-84ec-5e68ab4bf045",
+      "result_id": "90100d28-2b88-42fe-8e6a-5d5609f04f21"
+    },
+    {
+      "claim_id": "b39e3ddf-dbd3-4b3a-bff5-8a942dc46f2e",
+      "result_id": "5fe4f35c-de86-450b-9366-1aeb97fcae9a"
+    },
+    {
+      "claim_id": "9cabd1de-73bc-405d-86a1-680b23610083",
+      "result_id": "5fe4f35c-de86-450b-9366-1aeb97fcae9a"
+    },
+    {
+      "claim_id": "6cbbc853-f10d-4b1e-84ae-1b24eaa7efa4",
+      "result_id": "5fe4f35c-de86-450b-9366-1aeb97fcae9a"
+    },
+    {
+      "claim_id": "f73a49b2-dd41-49e3-82ac-5b72bd325df6",
+      "result_id": "5fe4f35c-de86-450b-9366-1aeb97fcae9a"
+    },
+    {
+      "claim_id": "2bd3b6a3-d6a7-435b-941a-5b59dd142415",
+      "result_id": "5fe4f35c-de86-450b-9366-1aeb97fcae9a"
+    },
+    {
+      "claim_id": "e874314e-9187-43fe-8faa-68c85b9d0cb1",
+      "result_id": "5fe4f35c-de86-450b-9366-1aeb97fcae9a"
+    },
+    {
+      "claim_id": "ccfb12a1-12e1-42ec-87f3-14ed71ef06fa",
+      "result_id": "5fe4f35c-de86-450b-9366-1aeb97fcae9a"
+    },
+    {
+      "claim_id": "d2d91086-fa3b-44a8-b992-04cafbe65589",
+      "result_id": "5fe4f35c-de86-450b-9366-1aeb97fcae9a"
+    },
+    {
+      "claim_id": "a60bde17-5279-41ed-9c8f-f79e9c30d52e",
+      "result_id": "5fe4f35c-de86-450b-9366-1aeb97fcae9a"
+    },
+    {
+      "claim_id": "1683a03a-1ee6-4ff9-9a7d-211465f44cc5",
+      "result_id": "5fe4f35c-de86-450b-9366-1aeb97fcae9a"
+    }
+  ],
+  "comparisons": []
+}

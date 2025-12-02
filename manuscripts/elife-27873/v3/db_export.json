@@ -1,0 +1,1963 @@
+{
+  "submission": {
+    "id": "fd1b2b85-6fe0-4aab-b2cc-088493adba38",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:23:01.957889Z",
+    "updated_at": "2025-12-01T21:23:01.957889Z"
+  },
+  "content": [
+    {
+      "id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "submission_id": "fd1b2b85-6fe0-4aab-b2cc-088493adba38",
+      "content_type": "manuscript",
+      "content_text": "# Multiplexed genetic engineering of human hematopoietic stem and progenitor cells using CRISPR/Cas9 and AAV6\n\n## Authors\n\n- Rasmus O Bak<sup>1</sup> ([ORCID: 0000-0002-7383-0297](https://orcid.org/0000-0002-7383-0297))\n- Daniel P Dever<sup>1</sup>\n- Andreas Reinisch<sup>2</sup> ([ORCID: 0000-0001-9333-7689](https://orcid.org/0000-0001-9333-7689))\n- David Cruz Hernandez<sup>2</sup>\n- Ravindra Majeti<sup>2</sup> \u2020\n- Matthew H Porteus<sup>1</sup> ([ORCID: 0000-0002-3850-4648](https://orcid.org/0000-0002-3850-4648)) \u2020\n\n### Affiliations\n\n1. Department of Pediatrics Stanford University Stanford United States\n2. Department of Medicine, Division of Hematology Stanford University Stanford United States\n3. Department of Medicine, Institute for Stem Cell Biology and Regenerative Medicine Stanford University Stanford United States\n4. Department of Medicine, Cancer Institute Stanford University Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPrecise and efficient manipulation of genes is crucial for understanding the molecular mechanisms that govern human hematopoiesis and for developing novel therapies for diseases of the blood and immune system. Current methods do not enable precise engineering of complex genotypes that can be easily tracked in a mixed population of cells. We describe a method to multiplex homologous recombination (HR) in human hematopoietic stem and progenitor cells and primary human T cells by combining rAAV6 donor delivery and the CRISPR/Cas9 system delivered as ribonucleoproteins (RNPs). In addition, the use of reporter genes allows FACS-purification and tracking of cells that have had multiple alleles or loci modified by HR. We believe this method will enable broad applications not only to the study of human hematopoietic gene function and networks, but also to perform sophisticated synthetic biology to develop innovative engineered stem cell-based therapeutics.\n\n## Introduction\n\nThe current gold standard method for studying human hematopoietic stem and progenitor cell (HSPC) gene function has been either overexpression or RNAi-mediated knockdown of genes using lentiviral vectors (Doulatov et al., 2012; Chan et al., 2015). While these methods have provided great insights into HSPC biology, they come with several confounders, such as random integration of the vector into the host genome, unregulated transgene expression, and incomplete gene knockdown (Woods et al., 2006; Naldini, 2015). More recently, programmable nucleases such as zinc finger nucleases (ZFNs), transcription activator-like effector nucleases (TALENs), and CRISPR/Cas9 have been utilized to disrupt genes by the introduction of site-specific DNA double strand breaks (DSBs) that are corrected through non-homologous end-joining (NHEJ) (Hendel et al., 2015; Holt et al., 2010; Saydaminova et al., 2015; Mandal et al., 2014; Schumann et al., 2015; Kim et al., 2014; Lin et al., 2014). This error-prone system creates a heterogeneous mixture of cells with various genotypes of SNPs and small insertions or deletions (INDELs); moreover, not all of the genetic changes from INDELs cause functional gene disruption as they may preserve the open reading frame and may not change amino acids essential for protein functions (Shi et al., 2015; Hultquist et al., 2016). In a prior study, defined gene deletions were created in HSPCs using a dual sgRNA approach, however, more than half of the alleles were not modified leading to residual gene expression (Mandal et al., 2014). Another limitation of this prior study is that successfully modified cells were not distinguishable from unmodified wild type (WT) cells, and therefore could not be tracked or isolated as an enriched population. Although the versatility of the CRISPR/Cas9 system allows for simultaneous manipulation at multiple genetic loci in a single cell, multiplexing of NHEJ-based gene editing has mainly been performed in immortalized human cancer cell lines and mouse cells (Hultquist et al., 2016; Cong et al., 2013; Heckl et al., 2014; Platt et al., 2014; Brown et al., 2016). Finally, these interesting multiplexed proof-of-concept studies, only used NHEJ-mediated editing and did not harness the power of homologous recombination (HR) to create more sophisticated alterations to the genome at multiple alleles and/or loci.\n\nHere, we report an HR-mediated genome engineering method in human HSPCs and T cells that overcomes these limitations and enables the generation and enrichment of HSPC or T cell populations with complete gene knockout or gene replacement at multiple genetic loci. This method has the power to reveal functional gene networks during hematopoiesis and immune system disease pathogenesis and could be combined with the concepts of synthetic biology to create novel stem cell based therapeutics.\n\n## Results\n\n### Enriching HSPCs with targeted integration\n\nWe and others have previously shown that HR in human HSPCs can be efficiently induced by site-specific nucleases in combination with homologous donor DNA delivered as single-stranded oligonucleotides (ssODNs), integration-defective lentiviral vectors (\u00cdDLVs), or by recombinant adeno-associated virus serotype 6 (rAAV6) vectors (Dever et al., 2016; DeWitt et al., 2016; De Ravin et al., 2017; Wang et al., 2015; Hoban et al., 2016). We previously showed targeted integration in the beta-globin gene (HBB) by combining delivery of Cas9 protein pre-complexed with chemically modified sgRNAs (RNP) and delivery of an AAV6 donor. After successful on-target integration of a reporter transgene, FACS-based sorting of transgene reporterhigh-expressing HSPCs was used to purify an HSPC population with\u00a0>90% targeted integration that displayed long-term repopulation capacity in NSG mice (Dever et al., 2016). To extend this method beyond the HBB locus for therapeutic genome editing approaches of hemoglobinopathies, we tested six additional loci for their potential to be modified through HR by CRISPR/Cas9 in combination with AAV6-derived donor delivery. These genes are associated with hematopoiesis, hematopoietic malignancies, or safe harbor sites and include: interleukin-2 receptor gamma chain (IL2RG), chemokine (C-C motif) receptor 5 (CCR5), runt-related transcription factor one isoform c (RUNX1c), additional sex combs like 1 (ASXL1), stromal antigen 2 (STAG2), and adeno-associated virus integration site 1 (AAVS1) (Tebas et al., 2014; Genovese et al., 2014; Patel et al., 2012; Mazumdar et al., 2015; Kotin et al., 1992). Following electroporation with Cas9 RNP, containing a chemically-modified sgRNA targeting a single site in the selected locus, and transduction with an rAAV6 donor vector carrying homology arms for the targeted site and an expression cassette encoding a fluorescent reporter gene (Figure 1\u2014figure supplement 1a), we observed at early time points (day 4) a cell population with increased fluorescence intensity detectable by flow cytometry (reporterhigh cells) compared to cells receiving only the rAAV6 donor without electroporation of Cas9 RNP (reporterlow) (Figure 1a and Supplementary file 1a). For cells targeted at either CCR5 or IL2RG, reporterhigh, reporterlow, and reporterneg populations were sorted at day four post-electroporation and cultured up to 22 days. Reporterhigh populations remained 99.2 \u00b1 0.7% reporter positive (Figure 1b) while sorted reporterlow and reporterneg populations were 29.3 \u00b1 5.4% and 0.6 \u00b1 0.2% reporter positive, respectively. Dividing the reporterlow cells into three sub fractions based on fluorescence intensity revealed that GFP intensity at day four post-electroporation positively correlated with the propensity for maintaining GFP expression at day 20 (Figure 1\u2014figure supplement 1b\u2013c). In addition, single reporterhigh cells were plated in methylcellulose to assess integration events at the clonal level. Targeted HSPCs formed a mix of myeloid (CFU-M/GM) and erythroid colonies (BFU-E, CFU-E) indicating that they retained HSPC function. \u2018In-Out PCR\u2019 (one donor-specific primer and one locus-specific primer outside of the respective\u00a0homology arms) on genomic DNA (gDNA) from single cell-derived methylcellulose colonies confirmed that 99%, 92%, and 100% of reporterhigh HSPCs targeted at CCR5 (338 clones analyzed), IL2RG (117 clones analyzed), and RUNX1 (36 clones analyzed), respectively, had at least a monoallelic targeted integration (Figure 1c and Figure 1\u2014figure supplement 2). Analyses of clones with only mono-allelic integration showed gene-specific differences in the modification of the non-integrated alleles ranging from 38% INDELs for IL2RG to 89% INDELs for CCR5% and 88% INDELs for RUNX1, among which the majority was gene-disrupting (Figure 1\u2014figure supplement 2 and Supplementary file 1b). Collectively, these data indicate that the observed log-fold transgene expression shift following rAAV6 and RNP delivery is due to HR at the intended locus and that reporter expression can be used to enrich gene-targeted HSPCs.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/27873/elife-27873-fig1-v3.jpg)\n\n**Figure 1.:** (a) HSPCs were electroporated with CCR5-RNP and transduced with CCR5-tNGFR rAAV6 HR donor. Representative FACS plots from day four post-electroporation highlight the CCR5 tNGFRhigh population (red gate) generated by the addition of Cas9 RNP compared to cells with low reporter expression (green gate) and reporternegative cells (black gate). Numbers reflect percentage of cells within gates. (b) Day four post-electroporation, CCR5 (tNGFR or GFP) and IL2RG (GFP)-targeted HSPCs from reporterhigh (red), reporterlow (green), and reporterneg (blue) fractions were sorted and cultured for 20-22 days while monitoring the percentage of cells that remained GFP+. Error bars represent S.E.M. N\u00a0=\u00a06 for CCR5, N\u00a0=\u00a03 for IL2RG, all from different CD34+ donors. (c) HSPCs were targeted at CCR5 (with GFP or tNGFR donor) or at IL2RG (GFP donor; only female cells for IL2RG). At day four post-electroporation, reporterhigh cells were single-cell sorted into methylcellulose for colony formation. PCR was performed on colony-derived gDNA to detect targeted integrations. 338 CCR5 and 177 IL2RG myeloid and erythroid methylcellulose colonies were screened from at least two different CD34+ HSPC donors. (d) HSPCs were targeted at the STAG2 gene or the AAVS1 locus with a GFP reporter cassette. Cells that only received the STAG2-GFP AAV6 donor and not Cas9 RNP were included as an additional control. At day four post-electroporation and transduction, reporterhigh cells from the STAG2 and AAVS1 targeting experiments and bulk cells from the STAG2 AAV6 only population were plated in methylcellulose for colony formation. After 14 days, colonies were scored as either erythroid or myeloid based on morphology. Error bars represent S.E.M, N\u00a0=\u00a03, ***p<0.001, n.s.\u00a0=\u00a0p\u22650.05, unpaired t-test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27873/elife-27873-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Schematic showing the general layout of the AAV6 donors employed. ITR: inverted terminal repeat; SFFV promoter: spleen focus forming virus promoter; GFP: green fluorescent protein; polyA: bovine growth hormone polyadenylation signal; RHA: right homology arm. Approximate sizes are shown below each component. (b) Cells were targeted at the HBB locus by electroporation of Cas9 RNP followed by transduction of a homologous rAAV6 donor carrying a GFP expression cassette. At 4 days post electroporation and transduction, cells with different GFP intensities (GFPhigh, GFPLowHigh, GFPLowMed, GFPLowLow) were FACS-sorted and cultured for an additional 16 days. At day 20 post targeting, cells were analyzed for GFP expression by flow cytometry and the red gates show the GFPhigh\u00a0population at this time point. (c) The cells from b) were analyzed at different time points after sorting, and data points show the percentage of cells within the GFPhigh gate for the different populations as well as a population receiving only the rAAV6 donor and not Cas9 RNP.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27873/elife-27873-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Left, schematic representation of the three-primer PCR used to genotype CCR5 alleles for integrated (green PCR product) and non-integrated (red PCR product) alleles. One forward primer is located in the left homology arm (LHA), one forward primer is located in the poly A, and a common reverse primer is located outside the region of the right homology arm (RHA). Right, gel image of representative genotyped clones from Figure 1c (CCR5) showing colonies with biallelic and monoallelic integrations. (b) A subset of the CCR5 and IL2RG clones (only female cells for IL2RG) from Figure 1c with monoallelic integration had the genotype on the non-integrated allele analyzed by Sanger sequencing of purified PCR products. Note that in-frame INDELs can be gene-disrupting depending on the location and size of the INDEL. (c) As in Figure 1c, HSPCs were targeted at RUNX1 and at day four post-electroporation, reporterhigh cells were single cell-sorted into methylcellulose-containing 96-well plates to establish colonies. After 14 days, PCR was performed on colony-derived gDNA to detect targeted integrations. A total of 36 myeloid and erythroid methylcellulose colonies were screened. (d) The monoallelically targeted clones from c) had the genotype assessed on the non-integrated allele by Sanger sequencing of purified PCR products. See Supplementary file 1b for complete list of genotypes.\n\nTo evaluate the applicability of this technology in a biologically relevant setting we decided to modify the cohesin complex member, STAG2, in primary CD34+ HSPCs. The cohesin complex has previously been shown to play an essential part in maintaining normal erythroid differentiation potential of hematopoietic stem and progenitor cells (Mazumdar et al., 2015; Viny et al., 2015; Mullenders et al., 2015). Since the STAG2 gene is located on the human X chromosome, single-allele integration of a fluorescent reporter in male cells would be sufficient to fully knock out the gene. As expected, Cas9 RNP combined with rAAV6 donor transduction resulted in the generation of a reporterhigh population that could be sorted for subsequent differentiation experiments. Single cell methylcellulose assays of reporterhigh cells revealed an almost complete loss in the capacity to form erythroid colonies compared to cells that had only been exposed to rAAV6 and not Cas9 RNP, and also compared to cells with targeted integration at the AAVS1 locus (Figure 1d). These proof-of-concept studies provide evidence that gene-specific enrichment of reporterhigh cells can be used to study HSPC gene function.\n\n### Biallelic targeted integration in HSPCs\n\nTo determine if this method could be used to enrich HSPCs with biallelic gene disruption, necessary for complete functional gene knockout, we targeted the ASXL1 gene and simultaneously provided GFP and BFP-encoding rAAV6 donors. Four days after electroporation and transduction, 10.4% of cells were double positive for GFPhigh and BFPhigh compared to 0.2% for the AAV only sample (Figure 2a). Similarly, double-positive populations were apparent when targeting three other genes (RUNX1, HBB, and CCR5) with two rAAV6 donors with various color combinations (Figure 2\u2014figure supplement 1 and Supplementary file 1c). Double-positive cells sorted at day four after electroporation remained 94% double-positive for more than two weeks in culture (Figure 2b). \u2018In-out PCR\u2019 on gDNA from single cell-derived methylcellulose clones confirmed on-target integration of one transgene into one allele and the other transgene into the second allele (Figure 2c). We next tested if the biallelic targeting approach could be extended to another blood cell type and therefore targeted primary human T cells for biallelic HR at CCR5. After electroporation with CCR5-targeting Cas9 RNP followed by transduction with GFP and mCherry CCR5 rAAV6 donors, a GFPhigh/mCherryhigh double-positive population was observed, indicative of biallelic integration at the CCR5 gene (Figure 2d). No significant toxicity was associated with biallelic targeting in T cells (Figure 2\u2014figure supplement 2). Overall, these results demonstrate the utility of using rAAV6, Cas9 RNP, and FACS to enrich for primary human HSPCs and T cells that have undergone biallelic homologous recombination, which may have applications for studying hematological and immunological diseases or generating HSPC or T cell therapeutics that require gene modifications or gene knockout at both alleles.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/27873/elife-27873-fig2-v3.jpg)\n\n**Figure 2.:** (a) Left, Schematic showing biallelic targeting strategy for ASXL1 using GFP and BFP-encoding rAAV6 donors for integration into each allele of ASXL1. The SFFV promoter drives reporter expression. Middle, FACS plot from an \u2018AAV only\u2019 sample day four post electroporation, showing low episomal reporter expression (BFP and GFP) in cells without the CRISPR system. Right, FACS plot of CD34+ HSPCs treated with both Cas9 RNP and the two rAAV6 donors highlighting the generation of BFPhigh/GFPhigh double positive cells that have undergone ASXL1 dual-allelic targeting. (b) HSPCs were targeted at both alleles of HBB (Cas9 RNP with GFP and tdTomato rAAV6 donors) and at day four post electroporation, dual positive cells were sorted and cultured for 16 days while analyzing reporter expression. Error bars representing S.E.M. are present, but too small to be visible (N\u00a0=\u00a03 different HSPC donors). (c) Gel images showing PCR genotyping of six methylcellulose-derived clones from (e) confirming integration into each of the HBB alleles. (d) Human primary T cells were CD3/CD28 stimulated for three days and then electroporated with CCR5-targeting Cas9 RNP and transduced with two CCR5-specific rAAV6 donors encoding GFP and mCherry, respectively. FACS plots show GFPhigh/mCherryhigh biallelic targeting frequencies at day four post-electroporation.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27873/elife-27873-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Top, Representative FACS plots from HSPCs transduced with two rAAV6 (two fluorescent reporters for each gene), that have homology for the genes listed on the bottom panel, show low episomal expression and very few dual reporterhigh-expressing HSPCs. Bottom, HSPCs were electroporated with gene-specific Cas9 RNPs and then transduced with rAAV6 targeting each allele of a gene with two different indicated fluorescent reporters. FACS plots at Day 4-post electroporation highlight the dual reporterhigh cells that have undergone HR at both alleles of the intended gene.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27873/elife-27873-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Human primary T cells were isolated from buffy coats and stimulated for three days using anti-CD3 and anti-CD28 antibodies. Cells were then electroporated with CCR5-targeting Cas9 RNP and transduced with two CCR5-specific rAAV6 donors encoding GFP and mCherry, respectively, either alone or in combination. Cell viabilities were measured at Day two post-electroporation by Trypan Blue exclusion assay (N\u00a0=\u00a02 different buffy coat-derived T cells).\n\n### Simultaneous HR-mediated targeting of two genes (Di-Genic) in HSPCs\n\nThe vast majority of hematopoietic functions and immune diseases are governed by complex, polygenic networks (Seita and Weissman, 2010). To potentially study gene-gene interactions and/or generate cell therapeutics with HR modifications at two separate genes, we tested whether our methodology could facilitate simultaneous di-genic (two different genes) HR in HSPCs. We therefore co-delivered HBB-tdTomato and IL2RG-GFP rAAV6 donors with Cas9 RNP targeting both genes. This strategy produced 10.2% double positive GFPhigh/tdTomatohigh HSPCs compared to 0.1% for the AAV only control sample (Figure 3a). We also generated double reporterhigh positive populations when testing other combinations of di-genic HR (IL2RG/CCR5, RUNX1/ASXL1, and HBB/CCR5) (Figure 3\u2014figure supplement 1 and Supplementary file 1c). Again, double reporterhigh positive cells sorted at day four post-electroporation remained 94% double positive for 15 days in culture (Figure 3b). \u2018In-Out PCR\u2019 on double positive methylcellulose myeloid and erythroid clones showed on-target integration at both loci in 88% of clones (57 clones analyzed) (Figure 3c and d).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/27873/elife-27873-fig3-v3.jpg)\n\n**Figure 3.:** (a) Left, Schematic depicting HBB and IL2RG di-genic targeting. Middle, FACS plot of an \u2018AAV only\u2019 sample at day four post electroporation, showing low episomal reporter expression (HBB-tdTomato and IL2RG-GFP) in cells without the CRISPR system. Right, FACS plot at day four post-electroporation of HSPCs electroporated with Cas9 RNP targeting both HBB and IL2RG followed by transduction with HBB-tdTomato and IL2RG-GFP rAAV6 donors showing the generation of tdTomatohigh/GFPhigh cells with di-genic targeting at HBB and IL2RG. (b) Double-positive HSPCs targeted at HBB (GFP) and CCR5 (mCherry) were sorted at day four post-electroporation and cultured for 15 days while analyzing reporter expression. Error bars represent S.E.M. (N\u00a0=\u00a03 different HSPC donors). (c) Representative gel images showing PCR genotyping of six (out of 57 total) HBB-GFPhigh (gene reporter 1)/CCR5-mCherryhigh (gene reporter 2) methylcellulose-derived clones confirming integration at each locus (d) Representative fluorescence microscopy images of methylcellulose-derived clones with di-genic targeting at HBB and CCR5 show myeloid and erythroid progenitors with both GFP and mCherry expression. (e) HSPCs were targeted at the HBB and AAVS1 loci with a GFP and BFP expression cassette, respectively. Representative FACS plot (left panel) shows analysis seven days after targeting. All four gated populations were sorted and genomic DNA was subject to TIDE analysis for determining INDEL frequencies at the two loci (middle panel), and subject to ddPCR quantification of one of the two possible monocentric translocations between HBB and AAVS1 (right panel) (see also Figure 3\u2014figure supplement 2). (f) Representative FACS plots from cells targeted at the HBB and AAVS1 loci with a GFP and BFP expression cassette, respectively. Representative FACS plot shows analysis four days after targeting at which point the four populations were sorted and transplanted intrafemorally into NSG mice that were irradiated 24 hr before transplantation. (g) Bone marrow from the injected femurs from the mice transplanted as described in (f) was analyzed 12 weeks after transplantation. Representative FACS plots are from a mouse from each of the four groups depicted in (f) as well as a mouse transplanted with mock-electroporated cells. The middle row depicts human engraftment gated as positive for the human leukocyte antigen complex (HLA-ABC). The upper and lower rows depict FACS plots gated from the human populations and show myeloid (CD33+) and lymphoid (CD19+) engraftment (upper row) as well as reporter gene expression (lower row) (see also Figure 3\u2014figure supplement 3 for all transplantation data).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27873/elife-27873-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Top, Representative FACS plots of HSPCs transduced with two rAAV6 donors targeting two genes with two distinct fluorescent reporters (listed in FACS plots in lower panel) show low episomal expression and few dual reporterhigh-expressing HSPCs. Bottom, HSPCs were electroporated with two different gene-specific Cas9 RNPs and then transduced with homologous rAAV6 donors (each gene targeted with a different fluorescent reporter). Representative FACS plots from Day 4\u00a0post electroporation show the generation of dual reporterhigh positive HSPCs targeted at both genes.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27873/elife-27873-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) Schematic showing the HBB gene on chromosome 11 and the AAVS1 locus on chromosome 19. The Cas9 cut sites are shown in red. One of the two possible monocentric translocations is shown. (b) The reference sequence of the HBB-AAVS1 translocation is shown in the top. Below are representative translocation sequences from GFP-BFP- HSPCs sorted seven days after targeting (see Figure 3e, left panel). (c) Representative ddPCR analyses quantifying translocations in NTC (non-template control), mock-electroporated, and GFP-BFP- cells (see Figure 3e, right panel). The reference assay quantifies TERT gene copies used to normalize for DNA input. The translocation assay probe binds 50 bp away from the junction and none of the identified translocations would therefore exclude probe binding.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/27873/elife-27873-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The table shows an overview of the 11 NSG mice that were transplanted intrafemorally with either mock-electroporated cells or sorted cells from the four populations displayed in Figure 3f. 12 weeks after transplant, the transplanted femurs were flushed and the cells analyzed for human engraftment based on HLA-ABC expression, B cell or myeloid phenotype (CD19 and CD33, respectively), and expression of the two reporter genes.\n\nSince the combination of two sgRNAs has previously been used to create and study oncogenic translocations (Maddalo et al., 2014), and multiplexed TALEN-mediated gene editing in primary human T cells led to translocation frequencies between the two targeted genes of 0.01\u20131% with monocentric translocations occurring most frequently (Poirot et al., 2015), we assessed if our di-genic targeting scheme would enrich for translocations after purification of dual-reporter positive cells. Therefore, we analyzed one of the monocentric translocations between HBB and AAVS1 (Figure 3\u2014figure supplement 2a). We targeted HBB and AAVS1 with a GFP and BFP reporter, respectively, and sorted the four different populations (double negative, single positives (each gene), and double positive) seven days after targeting (Figure 3e, left panel). INDEL rates at HBB and AAVS1 were comparable among all four sorted populations, with a small enrichment of INDELs in the three populations positive for the reporter (Figure 3e, middle panel). Droplet digital PCR (ddPCR) quantification of the translocation showed frequencies ranging from 0.14\u20130.28%, and importantly, no evidence of enrichment of the translocation was observed in the population sorted for di-genic targeting (Figure 3e, right panel and Figure 3\u2014figure supplement 2c). Cloning and sequencing of PCR products spanning the translocation showed a wide variety of translocation junctions derived from different DNA end-processing products (Figure 3\u2014figure supplement 2b).\n\nTo confirm that HSPCs with long-term and multi-lineage engraftment potential were targeted, we again targeted HBB and AAVS1 with a GFP and BFP reporter, respectively, and transplanted the four different sorted populations into immune-compromised NSG mice (Figure 3f). 12 weeks after transplantation, human multi-lineage engraftment was evident in the bone marrow of the transplanted mice of all four groups (Figure 3g and Figure 3\u2014figure supplement 3).\n\nCollectively, these data show that human HSPCs that have undergone di-genic HR are not enriched for translocations, and maintain their multi-lineage colony forming capacity and long-term engraftment potential.\n\n### Multiplexed homologous recombination in HSPCs\n\nWe next tested if we could combine the di-genic and biallelic targeting approach to simultaneously target both alleles of ASXL1 (GFP and mCherry) as well as both alleles of RUNX1c (BFP and E2-Crimson) (tetra-allelic) (for schematic see Figure 4\u2014figure supplement 1a). Delivery of Cas9 RNPs targeting both genes followed by transduction of four rAAV6 donors gave rise to 1.1% GFPhigh/mCherryhigh/BFPhigh/E2Crimsonhigh quadruple-positive cells (Figure 4a and Figure 4\u2014figure supplement 1b\u2013c). A similar quadruple-positive population was evident when targeting all four combined alleles of HBB and RUNX1c (Figure 4\u2014figure supplement 1e\u2013h and Supplementary file 1e). Mixed, myeloid, and erythroid colonies were formed at frequency and ratio comparable to AAV only controls (Figure 4b). Genotyping of colonies revealed on-target integration at both alleles at both loci in 78% of clones (73 clones analyzed) (Figure 4c). Flow-cytometric analysis of individual colonies confirmed expression of all four reporters (BFP/GFP/mCherry/E2Crimson) at high levels (Figure 4\u2014figure supplement 1d). The total number of genetic changes in this enriched population, which could be used for synthetic biology purposes is six: two endogenous genes inactivated (both alleles of each gene) plus the addition of four different transgenes (represented in our experiment by four genes encoding different fluorescent proteins). Thus, this methodology could be used for studying interaction of genes that need both copies disrupted to lose function, such as tumor suppressor genes.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/27873/elife-27873-fig4-v3.jpg)\n\n**Figure 4.:** (a) HSPCs were electroporated with Cas9 RNP targeting ASXL1 and RUNX1 followed by rAAV6 transduction with two donors for ASXL1 (mCherry and GFP) and two donors for RUNX1 (E2Crimson and BFP). Tetra-allelically targeted HSPCs were identified as mCherryhigh/GFPhigh/BFPhigh/E2Crimsonhigh (N\u00a0=\u00a03 see Supplementary file 1e) (b) Cells modified at both alleles for RUNX1 and ASXL1 (as in (a)) were subjected to a methylcellulose assay (triplicates) and scored as BFU-E, CFU-M, CFU-GM or CFU-GEMM based on morphology 14 days after sorting. (c) PCR was performed on colony-derived gDNA to detect targeted integrations at both genes. 73 individual colonies were analyzed. Color coding for colonies with triple-allelic integration are as follows: grey: RUNX1 biallelic/ASXL monoallelic; white: RUNX1 monoallelic/ASXL1 biallelic. (d) For tri-genic targeting of HSPCs, cells were electroporated with Cas9 RNP targeting IL2RG, HBB, and CCR5 followed by transduction of three rAAV6 donors homologous to each of the three genes (IL2RG-GFP, HBB-tdTomato, and CCR5-tNGFR). Tri-genic-targeted cells were identified as reporterhigh for all three reporters (N\u00a0=\u00a05 see Supplementary file 1e). (e) Methylcellulose clones from the triple-positive cells in (d) were subjected to genotyping PCR and gel images show colonies with targeted integration at all three genes in 9/11 colonies (note that GFP shows a faint band in colony 6). (f) Left, Schematic showing strategy for targeting four different genes (HBB, RUNX1, ASXL1, and CCR5) simultaneously (tetra-genic). Four different genes are targeted by electroporation of four different Cas9 RNPs followed by transduction with four different rAAV6 donors that each targets a gene with a different reporter. Right, Tetra-genic targeting at the above-mentioned four genes was identified as reporterhigh for all four reporters (N\u00a0=\u00a03 see Supplementary file 1e).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27873/elife-27873-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Schematic showing experimental strategy for Figure 4a for targeting both alleles of RUNX1 and ASXL1. (b) FACS plots, gating scheme, and frequencies of HR at each allele for the experiment shown in Figure 4a. (c) FACS plot showing very low frequency of tetra-reporterhigh cells without Cas9. (d) FACS plots of cells from single methylcellulose colonies derived from tetra-reporterhigh cells from Figure 4a. (e) Schematic showing targeting both alleles of RUNX1 and HBB for HR with four distinct reporters. (f) Top, FACS plots of HSPCs transduced with four rAAV6s (no Cas9 RNPs) showing the gating scheme and low episomal reporter expression without a nuclease. Bottom, HSPCs were electroporated with RNPs targeting HBB and RUNX1 and then transduced with four rAAV6s. FACS plots from day four post electroporation show MFI shift for each reporter alone. HBB-tNGFR rAAV6 has reproducibly shown lower episomal expression than all other rAAV6 we have used. (g) Images from fluorescence microscopy showing an mCherry/BFP/GFP positive CFU-GM clone that has undergone tetra-allelic HR. The colony was not stained for HBB-tNGFR. (h) Left, FACS plots show very low frequency of tetra-reporterhigh cells without Cas9. Right, Nuclease addition increases the frequency of bi and tetra-reporterhigh HSPCs.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27873/elife-27873-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a) Schematic showing experimental strategy for Figure 4d targeting three genes, IL2RG, CCR5, and HBB. (b) FACS plots show gating scheme and HR frequencies at each locus for the experiment shown in Figure 4d. (c) Schematic outlining another tri-genic targeting experiment for RUNX1, ASXL1, and HBB. (d) Top, FACS plots of HSPCs transduced with three rAAV6\u00a0donors (no RNPs). Bottom, HSPCs were electroporated with gene-specific RNPs and then transduced with three rAAV6\u00a0donors. FACS plots at Day 4-post electroporation show MFI shift for each reporter alone. (e) FACS plots from same sample as in (d), but showing different combinations of di-genic reporterhigh populations that contain the same frequency of tri-genic reporterhigh cells.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/27873/elife-27873-fig4-figsupp3-v3.jpg)\n\n**Figure 4\u2014figure supplement 3.:** CD34+ cells from mobilized peripheral blood were targeted at one, two, or three genes with Cas9 RNP and rAAV6 donors. Viabilities were measured by flow cytometry 72 hr post-electroporation using Live/Dead and Annexin V stains. Viable cells are defined as live, non-apoptotic (Annexin V\u2212) and plotted as percentage of a single AAV6 donor alone. Error bars represent SD, ns\u00a0=\u00a0not statistically significant, Mann-Whitney test, N\u00a0=\u00a02 different HSPC donors.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/27873/elife-27873-fig4-figsupp4-v3.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Since capture of rAAV6 donors at the site of a DSB via NHEJ has been reported, we measured the false-positive rate of multiplexing HR via flow cytometry. (a) False-positive frequencies of di-genic targeting in HSPCs was determined by electroporating cells with an HBB-targeting Cas9 RNP followed by transduction with HBB-GFP (homologous) and CCR5-mCherry (non-homologous) rAAV6 donors. FACS plots show a false-positive rate of 0.24% dual reporterhigh cells. Note that 4% dual reporterhigh cells was reported in Figure 3\u2014figure supplement 1 when performing di-genic targeting at CCR5 and HBB, giving a false positive rate of 6% of targeting. (b) Left, To determine false-positive frequencies of tri-genic targeting in HSPCs, we electroporated IL2RG-RNP and HBB-RNP into HSPCs followed by transduction with the rAAV6 donors IL2RG-GFP (homologous), HBB-tdTomato (homologous), and CCR5-tNGFR (non-homologous). FACS plots show a false-positive frequency of 0.47%. Note that Figure 4d shows a tri-genic targeting frequency of 4.1% (a false-positive rate of 11% of targeting). Right, We employed a similar strategy to determine false-positive frequencies of tri-genic targeting, but this time used different combinations of on-target nucleases. The false-positive rate detected here was 0.1% (2.4% of targeting). (c) To determine tetra-genic false-positive frequencies, we electroporated HSPCs with three on-target nucleases (IL2RG, HBB, and CCR5) and then transduced with three homologous rAAV6 donors (IL2RG, HBB, and CCR5) and one non-homologous donor (CXCL12). FACS plots show a frequency of 0.09% that are reporterhigh for all four reporters with Figure 4f showing a tetra-genic targeting frequency of 1.0% (a false-positive rate of 9% of targeting).\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/27873/elife-27873-fig4-figsupp5-v3.jpg)\n\n**Figure 4\u2014figure supplement 5.:** (a) A heterozygous knockout population can be generated with two HR donors. The first donor is designed to knock-in a wild-type (WT) cDNA cassette into the start codon (ATG) of the gene of interest followed by a cassette encoding a reporter gene (here GFP). WT cDNA is expressed from the endogenous promoter as reported by Voit et al. (2014), Hubbard et al. (2016), and Dever et al. (2016), which maintains endogenous regulatory control over gene expression. The other donor encodes another reporter (here BFP), which disrupts the targeted gene. Double positive cells (GFP+/BFP+) are heterozygous for the knockout allele. (b) A population heterozygous for a particular SNP can be generated using two donors that knock in cDNA expression cassettes followed by different reporter genes. One cDNA is WT while the other carries the SNP of interest. Double positive cells (GFP+/BFP+) are heterozygous for the SNP allele. Endogenous 3\u2019 UTRs may be incorporated to preserve posttranscriptional regulation. Heterozygous SNP cDNA knock-in may be expanded to two or more genes, which may be of particular interest in studies of leukemia-mutated genes such as DNMT3A, IDH1/2, JAK2, and KRAS, which often occur in various combinations as heterozygous gain-of-function or dominant negative mutations. In addition, reporter knock-in combined with WT cDNA knock-in (as depicted in a) as well as SNP cDNA knock-in (SNP that disrupts gene or gene function) combined with WT cDNA knock-in (as depicted in b) could be used to study haploinsufficiencies. Though not depicted, all genes in the schematic are followed by polyadenylation signals.\n\nMulti-genic HR in HSPCs would allow for the characterization of functional gene networks during human hematopoiesis (Bystrykh et al., 2005). To validate that our methodology could multiplex HR in HSPCs in more than two genes simultaneously, we electroporated HSPCs with RNPs targeting HBB, CCR5, and IL2RG, and then transduced them with gene-specific rAAV6\u00a0donors (HBB-tdTomato, CCR5-tNGFR, IL2RG-GFP) (for schematic see Figure 4\u2014figure supplement 2a). At day four post-electroporation, 4.1% of HSPCs were triple-positive (Figure 4d and Figure 4\u2014figure supplement 2b). \u2018In-Out PCR\u2019 on gDNA from myeloid and erythroid colonies derived from this population showed that 78% (27 clones analyzed) had an integration event at all 3 loci, indicating at least mono-allelic integrations at each targeted locus (Figure 4e). Further analyses showed that 85% of these clones with tri-genic integrations were modified on all alleles either by biallelic integration or INDELs on the non-integrated allele that were mostly disruptive (Supplementary file 1d). These data confirm that the methodology can efficiently enrich for HSPCs with multiplexed HR. Targeting at another combination of three genes (RUNX1/HBB/ASXL1) showed 2.9% triple-positive cells (Figure 4\u2014figure supplement 2c\u2013e), and collectively, tri-genic targeting experiments yielded an average of 4.5% triple-positive cells, with the highest frequency of 14% (N\u00a0=\u00a05) (Supplementary file 1e). To test if multiplexing HR caused cellular senescence or more cell death than mono or di-genic targeting in HSPCs, we evaluated cell death and apoptosis rates at day three post-targeting and proliferation for up to 10 days post-targeting (corresponding to 7 days post-sorting). We observed similar proliferation rates comparing modified and unmodified cells (data not shown) and only a minor, non-statistically significant decrease in cell viability (p=0.333) when targeting three genes compared to one (Figure 4\u2014figure supplement 3). Finally, we targeted HSPCs for tetra-genic HR (HBB, CCR5, ASXL1, RUNX1) and found after four days in culture that 1% of cells were reporterhigh positive for all four reporters (Figure 4f). Targeting the same four genes with other combinations of reporter genes gave 0.41% and 0.78% tetra-genic targeting frequencies in the total cell population (Supplementary file 1e). Strikingly, 41\u201371% of HSPCs with tri-genic HR had undergone tetra-genic HR, suggesting that HR events at different genes may not be independent of each other, in contrast to recent findings for multiplexed NHEJ (Hultquist et al., 2016). Because rAAV\u00a0vectors can be captured at DSBs via NHEJ (Miller et al., 2004), we performed experiments that aimed to detect the frequency of capture events by including a non-homologous rAAV donor in targeting experiments. We found that 89\u201398% of reporterhigh cells were derived from on-target homologous recombination, confirming a relatively low rate of AAV capture (Figure 4\u2014figure supplement 4).\n\n## Discussion\n\nTable 1 summarizes the HR multiplex experiments (seven total genes targeted) and shows that by using Cas9 RNP, rAAV6, and flow cytometry-based sorting, we can reproducibly generate HSPC populations that have undergone HR events at multiple loci. For synthetic biology purposes, the tetra-genic targeting method, for example, can generate an enriched population of cells with eight genetic modifications: the knockout of at least a single allele of four different genes while introducing four different transgenes (in this proof-of-concept we used three fluorescent protein reporter genes and one biologically inert cell surface marker (tNGFR) that has been previously used in human clinical trials to track genetically modified hematopoietic stem cells over the course of decades). Our approach to studying gene function in human HSPCs has several advantages over lentiviral-based approaches because it enables: (1) multigenic targeted integration (at least four genes), (2) enrichment of highly pure edited populations, (3) the ability to trace cells with a specific genotype, (4) enrichment of a population with biallelic targeting of at least two genes, and (5) fluorescent protein-based hematopoietic cell lineage tracing. Our methodology has the potential to advance the biological understanding of gene functions in canonical HSC processes, including self-renewal, differentiation, and engraftment, all of which are critical aspects of fundamental stem cell biology and may augment the efficacy of stem cell based therapeutics.\n\n**Table 1.**\n Overview of targeting experiments in hematopoietic stem and progenitor cells (HSPCs).Overview of all HSPC targeting experiments performed in this study with the number of independent experiments (N) for each experiment type, and the mean targeting efficiency (\u00b1SD). See also Supplementary file 1a, c, and e.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Experiment</th>\n      <th>N</th>\n      <th>% efficiency\u00a0\u00b1\u00a0SD</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Monogenic</td>\n      <td>47</td>\n      <td>21.7\u00a0\u00b1\u00a013.4</td>\n    </tr>\n    <tr>\n      <td>Biallelic</td>\n      <td>16</td>\n      <td>5.5\u00a0\u00b1\u00a04.2</td>\n    </tr>\n    <tr>\n      <td>Di-genic</td>\n      <td>17</td>\n      <td>8.1\u00a0\u00b1\u00a08.1</td>\n    </tr>\n    <tr>\n      <td>Tetra-allelic</td>\n      <td>3</td>\n      <td>0.9\u00a0\u00b1\u00a00.3</td>\n    </tr>\n    <tr>\n      <td>Tri-genic</td>\n      <td>6</td>\n      <td>4.5\u00a0\u00b1\u00a04.8</td>\n    </tr>\n    <tr>\n      <td>Tetra-genic</td>\n      <td>3</td>\n      <td>0.7\u00a0\u00b1\u00a00.3</td>\n    </tr>\n  </tbody>\n</table>\n\nBy knocking in four different transgenes into four different genes, the method generates four gene disruptions and four gene additions. However, the use of multiple sgRNAs also increases the chances for off-target effects and chromosomal translocations. By looking for monocentric translocations between two genes (HBB and AAVS1), we observed low levels of translocation events similar to previously published studies (Poirot et al., 2015). Such effects are likely sgRNA and target gene-specific and need to be assessed on a case-by-case basis. The observed tetra-genic targeting efficiencies at\u00a0>0.5% are high enough to be experimentally useful, and though some applications may be restricted by HSPC source and starting cell numbers, our targeting methodology may be combined with recent advances in HSPC expansion protocols (Fares et al., 2014; Cutler et al., 2013; de Lima et al., 2012; Popat et al., 2015) or with transplantation into a humanized bone marrow ossicle xenotransplantation model, which supports higher engraftment levels compared to a standard NSG model (Reinisch et al., 2016). By using reporters as transgenes, one can both enrich and track the modified cells, and by using a transgene cassette in which a potentially biologically active transgene is linked through a 2A peptide or IRES to a reporter gene, one can enrich and track cells that could have up to four different new potentially bioactive genes expressed. Additionally, we and others have recently demonstrated the feasibility of knocking in a cDNA immediately after the start codon of the gene, thereby maintaining endogenous regulatory control over gene expression (Dever et al., 2016; Hubbard et al., 2016; Voit et al., 2014). This provides a genetic engineering toolbox where different types of alleles (WT, knockout, mutant cDNA forms) are fluorescently tagged and can be enriched or tracked in a population with mixed allele combinations. One potential caveat is the requirement for reporter gene expression and the fact that cells must be cultured for 2\u20133 days until reporter gene expression is detectable and cells can be sorted. Even though we have not detected any obvious negative impact in this or previous studies (Dever et al., 2016; Bak and Porteus, 2017), future studies may further investigate and optimize ex vivo culturing conditions, as well as promoter and reporter choice for minimal impact on biology and repopulation potential of edited HSPCs.\n\nOur methodology could be used for the characterization of gene interactions during blood and immune system disease pathogenesis. For example, functional knockouts can be created at one gene (e.g. reporter knock-in into tumor suppressor gene), while introducing disease-causing polymorphisms at another gene (cDNA expression cassette knock-in into proto-oncogene) (see Figure 4\u2014figure supplement 5 for schematic). For example, Zhao et al., showed that the loss of p53 cooperates with the KrasG12D mutation to promote acute myeloid leukemia (AML) in mouse HSPCs using a\u00a0retroviral methodology (Zhao et al., 2010). Our system could be used to address whether these findings can be translated to human HSPCs by achieving site specific HR that would simultaneously knock out a tumor suppressor (e.g. TP53) and drive mutant KRAS under endogenous regulatory conditions, instead of using strong constitutive exogenous viral promoters with little control over proviral copy number and heterogeneity of transgene expression. However, in cDNA knock-in experiments, proper expression should always be validated since elements in the adjacent reporter expression cassette or the lack of UTRs and introns could influence cDNA expression (Sweeney et al., 2017). We also show biallelic integration in primary human T cells at CCR5, which could be therapeutically applicable for engineering HIV-resistance, where biallelic knockout of CCR5 could be combined with expression of different HIV restriction factors (Voit et al., 2013). Additionally, this approach could be useful to extend recently published studies showing high potency of chimeric antigen receptors (CARs) that were site-specifically integrated into the TRAC gene using CRISPR and AAV6 in primary human T cells (Eyquem et al., 2017). Multiplexed gene editing may be used to knock-in different CARs or co-stimulatory ligands into genes that are desirable to knock-out in CAR T cell therapy. We anticipate in the future that multiplexed HR mediated cell engineering will facilitate even more sophisticated uses of synthetic biology-based stem cell therapeutics than the examples we have given. Our methodology should also be widely applicable to other cell types of the hematopoietic system besides HSPCs and T cells, and even to cells of non-hematopoietic origin.\n\nIn conclusion, we anticipate that this method will be applicable to studying human hematopoiesis and immune system disease pathogenesis through multiplexed, site-specific genome engineering by HR, which has the potential to lead to new discoveries in human hematopoietic stem cell biology.\n\n## Materials and methods\n\n### AAV vector production\n\nAAV vector plasmids were cloned in the pAAV-MCS plasmid (Agilent Technologies, Santa Clara, CA) containing ITRs from AAV serotype 2 (AAV2). CCR5, IL2RG, HBB, RUNX1, ASXL1, and CXCL12 vectors contained an SFFV promoter, a reporter gene such as tNGFR, MaxGFP (or Citrine), BFP, mCherry, tdTomato or E2Crimson and BGH polyA. MaxGFP and Citrine are referred to as GFP throughout. For translocation and NSG transplantation experiments, a UbC promoter (approx. 1200 bp) was used in the HBB donor instead of an SFFV promoter. For the T cell experiments, donors carried an EF1\u03b1 promoter (approx. 1200 bp). The homology arms for IL2RG, ASXL1, and CCR5 were 800 bp, whereas left and right homology arms for HBB were 540 bp and 420 bp, respectively. The homology arms for RUNX1, STAG2, and AAVS1 were 400 bp. CCR5 donors used in T cell experiments expressed Citrine or mCherry from the PGK promoter and contained 400 bp homology arms. rAAV6 vectors were produced as described with a few modifications (Khan et al., 2011). Briefly, 293FT cells (Life Technologies, Carlsbad, CA, USA) were seeded at 13 \u00d7 106 cells per dish in ten 15 cm dishes one day before transfection. Each 15 cm dish was transfected using standard PEI transfection with 6 \u03bcg ITR-containing plasmid and 22 \u03bcg pDGM6 (gift from David Russell, University of Washington, Seattle, WA, USA), which contains the AAV6 cap genes, AAV2 rep genes, and adenovirus five helper genes. Cells were incubated for 72 hr until rAAV6 was harvested from cells by three freeze-thaw cycles followed by a 45 min incubation with TurboNuclease (Abnova, Heidelberg, Germany) or Benzonase (Thermo Fisher) at 250 U/mL. AAV vectors were purified on an iodixanol density gradient by ultracentrifugation at 48,000 rpm for 2.25 hr at 18\u00b0C. AAV vectors were extracted at the 58\u201340% iodixanol interface and dialyzed three times in PBS with 5% sorbitol in the last dialysis using a 10K MWCO Slide-A-Lyzer G2 Dialysis Cassette (Thermo Fisher Scientific, Santa Clara, CA, USA). Vectors were added pluronic acid to a final concentration of 0.001%, aliquoted, and then stored at \u221280\u00b0C until further use. rAAV6 vectors were titered using quantitative PCR to measure number of vector genomes as described before (Aurnhammer et al., 2012).\n\n### CD34+\u00a0hematopoietic stem and progenitor cells\n\nFrozen CD34+ HSPCs derived from mobilized peripheral blood or cord blood were purchased from AllCells (Alameda, CA, USA) and thawed according to manufacturer\u2019s instructions. Fresh CD34+ HSPCs from cord blood were acquired from donors under informed consent via the Binns Program for Cord Blood Research at Stanford University and used without freezing. Fresh CD34+ HSPCs from bone marrow were obtained from Stanford BMT Cell-Therapy Facility after informed consent. CD34+ cells were isolated using a human CD34 MicroBead Kit (Miltenyi Biotec, San Diego, CA, USA). Generally, CB-derived HSPCs perform better in HR experiments. CD34+ HSPCs were cultured in stem cell retention media consisting of StemSpan SFEM II (Stemcell Technologies, Vancouver, Canada) supplemented with SCF (100 ng/ml), TPO (100 ng/ml), Flt3-Ligand (100 ng/ml), IL-6 (100 ng/ml), UM171 (Stemcell Technologies) (35 nM) and StemRegenin1 (0.75 mM). Mycoplasma contamination testing was not performed. Cells were cultured at 37\u00b0C, 5% CO2, and 5% O2.\n\n### T cell isolation and culturing\n\nPrimary human CD3+ T cells were isolated from buffy coats obtained from the Stanford School of Medicine Blood Center using a human T Cell Isolation Kit (Miltenyi) according to manufacturer\u2019s instructions. Cells were cultured in X-VIVO 15 (Lonza, Walkersville, MD, USA) containing 5% human serum (Sigma-Aldrich, St. Louis, MO, USA), 100 IU/ml human rIL-2 (Peprotech, Rocky Hill, NJ, USA) and 10 ng/ml human rIL-7 (BD Biosciences, San Jose, CA, USA). T cells were activated directly after isolation with immobilized anti-CD3 antibody (clone: OKT3, Tonbo Biosciences, San Diego, CA, USA) and soluble anti-CD28 antibody (clone: CD28.2, Tonbo Biosciences) for 72 hr. Mycoplasma contamination testing was not performed. T cells were cultured at 37\u00b0C, 5% CO2, and ambient oxygen levels.\n\n### Electroporation and transduction of cells\n\nAll synthetic sgRNAs were purchased from TriLink BioTechnologies (San Diego, CA, USA). sgRNAs were chemically modified with three terminal nucleotides at both the 5\u2032 and 3\u2032 ends containing 2\u2032 O-Methyl 3\u2032 phosphorothioate and HPLC-purified. The genomic sgRNA target sequences with PAM in bold) were: HBB: 5\u2019-CTTGCCCCACAGGGCAGTAACGG-3\u2019, CCR5: 5\u2019-GCAGCATAGTGAGCCCAGAAGGG-3\u2019, IL2RG: 5\u2019-TGGTAATGATGGCTTCAACATGG-3\u2019, RUNX1c: 5\u2019-TACCCACAGTGCTTCATGAGAGG-3\u2019 ASXL1: 5\u2019-ACAGATTCTGCAGGTCATAGAGG-3\u2019, STAG2: 5\u2019-AGTCCCACATGCTATCCACAAGG-3\u2019, AAVS1: 5\u2019-GGGGCCACTAGGGACAGGATTGG-3\u2019. Cas9 protein was purchased from Life Technologies and Integrated DNA Technologies. Cas9 RNP was made by incubating protein with sgRNA at a molar ratio of 1:2.5 at 25\u00b0C for 10 min immediately prior to electroporation into CD34+ HSPCs or T cells. CD34+ HSPCs were electroporated 1\u20132 days after thawing or isolation. T cells were electroporated three days following activation. Both CD34+ HSPCs and T cells were electroporated using the Lonza Nucleofector 2b (program U-014) or 4D (program EO-100) (we have not detected any device-specific differences in electroporation efficiencies) and the Human T Cell Nucleofection Kit (VPA-1002, Lonza) with the following conditions: 5 \u00d7 106 cells/ml, 150\u2013300 \u00b5g/ml Cas9 protein complexed with sgRNA at 1:2.5 molar ratio. Following electroporation, cells were incubated for 15 min at 37\u00b0C after which they were added rAAV6 donor vectors (generally at an MOI (vector genomes/cell) of 50,000\u2013100,000 for each gene). A mock-electroporated control was included in most experiments where cells were handled the same and was electroporated in the same electroporation buffer, but without Cas9 RNP. For experiments targeting multiple loci, electroporation volume and cell numbers were kept the same as stated above, and 150\u2013300 \u00b5g/ml Cas9 RNP and MOIs of 50,000\u2013100,000 were used for each targeted locus, but with no more than a total of 60 ug Cas9 per electroporation and 200,000 vector genomes/cell. All AAV vectors were added simultaneously and directly to the cell culture after which the cells were transferred to the incubator without further manipulation. AAV volume was kept less than 20% of the total culturing volume and medium was either supplemented or replaced with fresh medium after overnight culture.\n\n### Measuring multiplexed targeted integration of fluorescent and tNGFR donors\n\nReporterhigh expression was measured by flow cytometric analyses after 3\u20134 days post-electroporation and transduction using gates for multiplexed targeted integration set so that \u2018AAV only\u2019 samples (no nuclease) were less than 1% since previous data (not presented) have shown that after\u00a0~14 days in culture the frequency of reporter+ cells (from persistent episomal expression, random integration, and/or non-nuclease mediated HR) is generally less than 1%. The truncated NGFR receptor (tNGFR) where the cytoplasmic intracellular signaling domain is removed and is signaling incompetent, solely served the purpose of a reporter for targeted CD34+ HSPCs in indicated experiments (Bonini et al., 2003). Targeted integration of a tNGFR expression cassette was measured by flow cytometry of cells stained with APC-conjugated anti-human CD271 (NGFR) antibody (clone: ME20.4, BioLegend, San Diego, CA). For enriching of reporterhigh populations, cells were sorted on a FACS Aria II SORP using DAPI, PI (both Thermo Fisher, 1 \u00b5g/ml) or LIVE/DEAD Fixable Cell Stain Kit (Life Technologies) to discriminate live and dead cells according to manufacturer's instructions.\n\n### Scoring, FACS-analysis, and genotyping of methylcellulose colonies\n\nSingle reporterhigh cells were either single-cell sorted into 96-well plates (Corning) pre-filled with 100 \u00b5l of methylcellulose and water in the outer wells or plated at 500 cells per 6 cm dish with methylcellulose (Methocult, StemCell Technologies). After 14 days, colonies were counted and scored as BFU-E, CFU-M, CFU-GM and CFU-GEMM according to the manual for \u2018Human Colony-forming Unit (CFU) Assays Using MethoCult\u2019 from StemCell Technologies and prior expertise (Majeti et al., 2007). For DNA extraction from 96-well plates, PBS was added to wells with colonies, and the contents were mixed and transferred to a U-bottomed 96-well plate. From 6 cm dishes, colonies were picked and transferred to PBS. Cells were pelleted by centrifugation at 300xg for 5 min followed by a wash with PBS. Finally, cells were resuspended in 25 \u00b5l QuickExtract DNA Extraction Solution (Epicentre, Madison, WI, USA) and transferred to PCR plates, which were incubated at 65\u00b0C for 10 min followed by 100\u00b0C for 2 min. For CCR5, a 3-primer PCR was set up with a forward primer binding in the left homology arm, a forward primer binding in the insert, and a reverse primer binding in CCR5 outside the right homology arm CCR5_inside_LHA: 5\u2019-GCACAGGGTGGAACAAGATGG-3\u2019, CCR5_insert: 5\u2019-AAGGGGGAGGATTGGGAAGAC-3\u2019, CCR5_outside_RHA: 5\u2019-TCAAGAATCAGCAATTCTCTGAGGC-3\u2019. For all other genes, gene-specific integration was detected by \u2018In-Out\u2019 PCR using a primer that binds outside the homology arm (HA) and a primer specific for the transgene cassette (insert). HBB_outside_LHA: GAAGATATGCTTAGAACCGAGG, HBB_insert: ACCGCAGATATCCTGTTTGG IL2RG_insert: 5\u2019-GTACCAGCACGCCTTCAAGACC-3\u2019, IL2RG_outside_RHA: 5\u2019-CAGATATCCAGAGCCTAGCCTCATC-3\u2019, RUNX1_outside_RHA: 5\u2019- GAAGGGCATTGCTCAGAAAA-3\u2019, RUNX1_insert: 5\u2019- AAGGGGGAGGATTGGGAAGAC-3\u2019, ASXL1_outside_RHA: 5\u2019- AAGGGGGAGGATTGGGAAGAC-3\u2019, ASXL1_insert: 5\u2019- CCTCCCAAGCTGGAACTACA-3\u2019. For detecting IL2RG non-integrated (non_int) alleles the following primers were used: IL2RG_non_int_fw: 5\u2019-TCACACAGCACATATTTGCCACACCCTCTG-3\u2032, IL2RG_non_int_rv: 5\u2032-TGCCCACATGATTGTAATGGCCAGTGG-3\u2019. For detecting dual integration of GFP and tdTomato into two HBB alleles, a primer in HBB outside the right homology arm was used together with either a GFP or tdTomato-specific primer: HBB_outside_RHA: 5\u2019-GATCCTGAGACTTCCACACTGATGC-3\u2019, GFP: 5\u2019-GTACCAGCACGCCTTCAAGACC-3\u2019, tdTomato: 5\u2019-CGGCATGGACGAGCTGTACAAG-3\u2019. Clones with di-genic GFP (HBB)/mCherry (CCR5) and tri-genic GFP (IL2RG)/tdTomato (HBB)/tNGFR (CCR5) integrations were screened for integrations using the same primers as above. All integrated PCR bands were subjected to Sanger sequencing to confirm perfect HR at the intended locus. For flow-cytometric analysis of colonies generated from cells with quadruple-allelic HR, individual colonies were picked and directly resuspended in FACS buffer containing LIVE/DEAD staining solution (LIVE/DEAD Fixable Near-IR Dead Cell Stain, Thermo). After 30 min incubation (4\u00b0C, dark) cells were washed in FACS buffer and subjected to analysis. Dead cells were excluded from analysis based on APC-Cy7 positivity.\n\n### Transplantation of CD34+ HSPCs into NSG mice\n\n6 to 8 week-old NOD scid gamma (NSG) mice were used (Jackson laboratory, Bar Harbor, ME USA). The experimental protocol was approved by Stanford University\u2019s Administrative Panel on Lab Animal Care (IACUC 25065). Four days after electroporation/transduction, different populations of live (DAPI-negative) targeted cells were sorted. Mock-treated cells were also sorted to control for the effect of the sorting procedure. Directly after sorting, cells were transplanted into one femur of sub-lethally irradiated mice (200 rad, 24 hr before transplant). Mice were randomly assigned to each experimental group and analyzed in a blinded fashion.\n\n### Assessment of human engraftment\n\n12 weeks after transplantation, mice were sacrificed, mouse bone marrow (BM) was harvested from the transplanted femur by flushing. Non-specific antibody binding was blocked (10% vol/vol, TruStain FcX, BioLegend) and cells were stained (30 min, 4\u00b0C, dark) with monoclonal anti-human HLA-ABC APC-Cy7 (W6/32, BioLegend), anti-mouse CD45.1 PE-Cy7 (A20, eBioScience, San Diego, CA, USA), CD19 APC (HIB19, BD511 Biosciences), CD33 PE (WM53, BD Biosciences), and anti-mouse mTer119 PE-Cy5 (TER-119, BD Biosciences) antibodies, and Propidium Iodide to detect dead cells. Human engraftment was defined as HLA-ABC+ cells.\n\n### Analysis of HBB-AAVS1 translocations\n\nGenomic DNA was extracted from sorted populations using QuickExtract DNA Extraction Solution. For ddPCR quantification of translocations, ddPCR droplets were generated on a QX200 Droplet Generator (Bio-Rad) according to manufacturer\u2019s protocol. Briefly, PCR reactions were set up in a 25 \u00b5L total volume per reaction with the ddPCR Supermix for Probes (No dUTP) (Bio-Rad). A HEX reference assay detecting copy number input of the TERT gene was used to normalize for genomic DNA input (Bio-Rad: saCP1000100). A custom assay designed to detect the translocations between HBB and AAVS1 consisted of: Forward primer: 5\u2019-TCAGGGCAGAGCCATCTATTGC-3\u2019, Reverse primer: 5\u2019-CCAGATAAGGAATCTGCCTAACAGG-3', 5'\u22126FAM/ZEN/3'-IBFQ-labeled Probe (IDT): 5\u2019-CTTCTGACACAACTGTGTTCACTAGCAACC-3\u2019. The translocation assay was used at a final concentration of 900 nM for each of the primers and a final concentration of 250 nM for the probe. 20 \u00b5L of the PCR reaction was used for droplet generation, and 40 \u00b5L of the droplets was used in the following PCR conditions: 95\u00b0 - 10 min, 50 cycles of 94\u00b0 - 30 s, 57\u00b0C \u2013 30 s, and 72\u00b0 - 2 min, finalize with 98\u00b0 - 10 min and 4\u00b0C until droplet analysis. Droplets were analyzed on a QX200 Droplet Reader (Bio-Rad) detecting FAM and HEX positive droplets. Control samples with non-template control (H2O) or genomic DNA from mock-electroporated samples were included in the entire process. Translocation frequencies were calculated as the translocation copy number per \u00b5L divided by the TERT copy number per \u00b5L. For sequencing of translocations, PCR products were generated using Phusion polymerase (Fisher Scientific) with the forward and reverse primers listed above for the translocation ddPCR assay. PCR amplicons were gel-purified and cloned into the pMiniT 2.0 plasmid using the NEB PCR Cloning Kit (NEB) according to manufacturer\u2019s recommendations. Ligated plasmid reactions were transformed into XL-1 Blue competent cells, plated on ampicillin-containing agar plates, and single colonies were sequenced by MCLAB (South San Francisco, CA, USA) using rolling circle amplification followed by sequencing using the following primer: 5\u2019-ACCTGCCAACCAAAGCGAGAAC-3\u2019.\n\n### Analysis of cell viability and proliferation\n\nModified cells were FACS-sorted into individual wells of a 96-well U bottom plate and expanded in HSPC retention media (see above) at a density of\u00a0<100,000 cells per mL. To check viability and proliferation after multiplexed HR, cells from a single well were recovered and a known number of absolute counting beads (CountBright beads, Invitrogen) was added. Cells were stained with Ghost Dye Red 780 (Tonbo Biosciences) for 30 min at 4\u00b0C in the dark and analyzed on a FACS-Aria II without further manipulation to reduce potential cells loss. Viable cells were determined as GhostDye Red 780 negative and exact cell counts were assessed through concomitant acquisition of 10,000 beads. Cell counts were calculated based on ratio of beads to cells within the suspension.\n",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "16dbf7c9-bc74-4ef6-9a30-c2b83f1ae192",
+      "submission_id": "fd1b2b85-6fe0-4aab-b2cc-088493adba38",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ross L Levine, Memorial Sloan Kettering Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.27873.024](https://doi.org/10.7554/eLife.27873.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Multiplexed Genetic Engineering of Hematopoietic Stem and Progenitor Cells using CRISPR and AAV6\" for consideration by eLife. Your article has been favorably evaluated by Sean Morrison (Senior Editor) and three reviewers, one of whom, Ross L Levine (Reviewer #1), is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAlthough all three reviewers found merit in this work, some specific issues were raised which resonated with all of the reviewers and which need to be addressed. One is the relatively low level of engraftment, which is more striking than with the mock controls, raising concerns as to whether the multiplex gene editing is toxic to cells. This is an important question which needs to be thoughtfully addressed. The other major concern relates to potential off-target effects, and the need to see additional genomic data which addresses this question more comprehensively. Third, the authors should discuss how their method can be applied to biologic studies and what are the novel strengths and limitations to their approach.\n\nReviewer #1:\n\nThe authors describe a novel genome editing tool using HR mediated genome editing by combining delivery of Cas9/sgRNA complexes by electrocorporation and delivery of the homologous donor DNA and reporter genes by transduction of cells with a recombinant adeno associated vector.\n\nThey use this technology to introduce different modifications such as monoallelic and biallelic modification of a particular gene, but also simultaneous targeting of 4 different genes in human HSPCs \u2013 which might have important applications for functional and therapeutic studies in hematological diseases.\n\nThe paper does push the envelope further by showing additional technical improvements, which are substantive, above and beyond other reports. However, little biological insight is provided and it would be helpful to show novel biology to make this report of wide interest to the field. Nonetheless, as a Tools and Resources submission, this condition is relaxed a bit as long as the technique provides a rigorous proof of principle.\n\n1) Analysis of clones derived from single cell methylcellulose assays harboring monoallelic integration showed gene specific differences in the modification of non-integrated alleles. What do the authors think was the cause of these gene specific differences? And how could these be influenced?\n\n2) For the biallelic targeted integration in HPSCs, why was the rate of double positivity different in cells that have received RNP+AAV targeting e.g. Runx1 (14%) vs. CCR5 (1.2%)? Is this due to a lower transduction efficiency for the CCR5? Or other mechanisms interfering with HR? And how could this be optimized for CCR5? In Figure 1E, the authors should include the data for RUNX1, HBB and CCR5 as well.\n\n3) How did the authors design the sgRNA for introducing biallelic modifications? Were sgRNA on the both strands \"reciprocal\"? or were the sgRNA on both strands located at different nucleotide sequences?\n\n4) For the transplantation studies, 15 weeks after sorting double positive cells and transplanting them into sublethally irradiated mice, mice were sacrificed in engraftment (CDHLA-ABC+/CD45+) was assessed. After 15 weeks 1.5% of cells showed engraftment. Do the authors have sequential data, how this population changes over time \u2013 increases/ decreases?\n\n5) When multigenic HR was performed, was there evidence of NHEJ besides the HR directed repair? And what was its frequency? Was there evidence of gene fusions/ translocations?\n\n6) Cell viability 3 days post targeting 3 genes (RNP+AAV) was <70% compared to 100% in AAV only cells. Since the fraction of triple pos. cells is low (e.g. Runx1/HBB/ASXL1 2.9%), was flow analysis repeated at a later time point to ensure the triple-positive cells were still alive?\n\n7) The authors postulate that multiplex genome editing using their method will enable and facilitate functional studies of gene networks. Nevertheless, simultaneous gene editing of 3 genes showed an efficiency of 2.6% and of 4 genes and efficiency of 1% only. These fractions seem very small. Particularly in the setting of in vivo studies such as a BMT experiment: the authors were able to transplant ~30 000 double positive cells modifying 2 genes simultaneously with a double pos. rate of 10.2.% (di genic approach). If the triple or quadruple positive rate drops to 1%, this would mean to transplant 3 000 cells for a BMT, which seems very low. Please comment on this.\n\nReviewer #2:\n\nThis is a nicely designed and executed study using CRISPR tools to introduce reporter genes in human CD34+ HSPCs allowing sorting and/or tracking of cells with inactivation of specific genes.\n\nThe authors present an elegant approach that would be useful to model disease relevant inactivating mutations in human HSPCs, and potentially also point mutations (the authors discuss how this might be possible by modifying the CRISPR tools they present but do not actually show data on these strategies).\n\nThe data are of high quality, well presented and clearly described. A minor criticism is that the results are presented in a repetitive and a bit monotonous style, but nevertheless clear and with enough detail for others to reproduce.\n\n1) Figure 2E shows low engraftment (in the 0.1-1% range) of the edited cells compared to mock, indicating a potential engraftment impairment (although the mouse numbers are low). Can the authors comment on this?\n\n2) Related to my comment above, the authors could discuss a bit more the potential limitations of their approach. For example, an important point to discuss is the time it would take from the beginning of culture to cell sorting and how this might impact HSPC function.\n\n3) Trypan blue and Annexin staining (Figure 1\u2014figure supplement 3 and Figure 3\u2014figure supplement 3) may not be adequate ways to assess toxicity, as dead cells may be continuously removed from the cultures and not detected with these methods. I think that cell counts depicting the expansion of the edited cells vs. mock or unmodified would be more convincing way to evaluate toxicity of the method.\n\n4) Figure 1\u2014figure supplement 1B: the number of untargeted IL2RG alleles without indels is much higher than that of untargeted alleles of CCR5 or other genes. Is this due to lower gRNA activity (reflected by overall lower targeting efficiency in the IL2RG locus?) Can the authors comment on this?\n\nReviewer #3:\n\nIn this manuscript, Bak et al. describes a method to perform multiplex homology-directed genome editing of human HSPCs. Using Cas9-sgRNA ribonucleoprotein complex and rAAV as a donor for the homology-directed repair template, they remarkably achieve up to four (potentially more) HDR genome editing events, with little if any modification to a published protocol. Some weaknesses include lack of rigorous assessment of potential negative effects of multiplexed editing on HSPCs function and the genetic consequences. The work also lacks evidence that the functional consequences of multiplex genome editing can be read out even with the potential negative effects the editing protocol may have. Overall, this work could potentially be a highly valuable technique for the hematology field upon clarifying these issues.\n\n1) The chimerism achieved after transplantation of dual-edited cells are substantially lower than mock edited cells with no indication as to whether the cells had multi-lineage reconstitution, raising a concern that the multiplexed editing impaired the function of HSPCs. At least the contribution of dual-edited cells to each hematopoietic lineage should be shown. A concern is that this method uses rAAV6 at a high MOI (50,000-100,000 per gene. With tetra-editing, cells are exposed to 200,000 units of AAV). Is this high level of AAV exposure impairing the reconstitution potential of HSPCs (inflammation response or immune reaction?)? Do cells electroporated with Cas9-sgRNA RNP but not exposed to AAV reconstitute better?\n\n2) The authors should analyze the off-target mutagenesis events. There seems to be a substantial fraction of cells that undergo random integration of rAAV6 reporter, perhaps due to the high MOI of rAAV6 used. For example, Figure 1A shows that 7-8% of cells become reporterlow, some of which are maintained for long term (Figure 1B) indicating that the template DNA integrated into the HSPC genome. I agree that sorting reporterhigh cells will enrich for cells with HDR editing, but for a technology driven study it will be important to elucidate the nature of these reporterlow cells. This will be particularly important for some cell like T-cells (Figure 1G) that somehow have lower expression of the reporter genes. It also suggests that a fraction of reporterhigh cells also have substantial non-targeted integration, which may affect their function. Are these cells enriched for randomly integrated cells, or do they have specific integration into specific loci? Are these cells diluting the episome (so that the frequency of reporterlow cells decreases in Figure 1B) or these cells dying due to the mutagenic events of random integration?\n\n3) There is little effort to demonstrate the precision of the HDR events other than the \"in-out PCR\", which only tells that the reporter was integrated into the correct loci but does not tell whether the HDR was precise, or whether off-target cutting occurred, or whether translocation occurred at a level that impedes the usefulness of this protocol. The first point is important given that the authors envision their method could be used for targeted SNP knock-in. Off-targeting editing due to the use of multiple sgRNA is cautioned in the discussion but no data provided to assess whether this is a significant concern or not. The authors should perform sequencing analyses to provide quantitative assessment of precise vs. imprecise HDR editing at the targeted loci, and the extent to which off-target editing/translocation occurs.\n\n4) Although I understand that this is a method paper describing a toolbox to edit the genomes of HSPCs in a multiplexed manner, it is difficult to fully appreciate the potential of this method without a real example of how this could be used. In another word, there is no proof that it is possible to assess the functional consequences of multiplex editing other than analyzing the expression of reporter genes. Any of the concerns raised above (1-3) can impede the potential of multiplex HSPC editing. Can the authors provide evidence that multiplex editing can be used to examine the combinatorial effects of gene editing?\n",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2f7ffdb5-f311-41c4-afa8-129f7d8b46e4",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C1",
+      "claim": "Current methods do not enable precise engineering of complex genotypes that can be easily tracked in a mixed population of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Current methods do not enable precise engineering of complex genotypes that can be easily tracked in a mixed population of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about limitations of existing methods presented in the abstract without specific experimental data or citations in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "a4baed84-8a1b-4f99-aba8-70e6b15f4ec2",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C2",
+      "claim": "The method combines rAAV6 donor delivery and the CRISPR/Cas9 system delivered as ribonucleoproteins (RNPs) to multiplex homologous recombination in human hematopoietic stem and progenitor cells and primary human T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We describe a method to multiplex homologous recombination (HR) in human hematopoietic stem and progenitor cells and primary human T cells by combining rAAV6 donor delivery and the CRISPR/Cas9 system delivered as ribonucleoproteins (RNPs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology developed in the study, which is supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "f2646778-adb0-43c1-8392-334aee7a90e7",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C3",
+      "claim": "The use of reporter genes allows FACS-purification and tracking of cells that have had multiple alleles or loci modified by HR.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the use of reporter genes allows FACS-purification and tracking of cells that have had multiple alleles or loci modified by HR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing FACS sorting and tracking of reporter-positive cells throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "14cd1e61-13f1-4a7f-ba6a-f45050628bbc",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C4",
+      "claim": "Lentiviral-based overexpression or RNAi-mediated knockdown are the current gold standard methods for studying human hematopoietic stem and progenitor cell gene function.",
+      "claim_type": "EXPLICIT",
+      "source": "The current gold standard method for studying human hematopoietic stem and progenitor cell (HSPC) gene function has been either overexpression or RNAi-mediated knockdown of genes using lentiviral vectors (Doulatov et al., 2012; Chan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "a5fb961a-bf1c-4b67-b0e1-aee15b067913",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C5",
+      "claim": "Lentiviral methods have confounders including random integration of the vector into the host genome, unregulated transgene expression, and incomplete gene knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "While these methods have provided great insights into HSPC biology, they come with several confounders, such as random integration of the vector into the host genome, unregulated transgene expression, and incomplete gene knockdown (Woods et al., 2006; Naldini, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature describing limitations of lentiviral methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "a47f09c0-d6dc-4adc-ae51-94daa150e8b8",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C6",
+      "claim": "Programmable nucleases such as ZFNs, TALENs, and CRISPR/Cas9 have been utilized to disrupt genes by introducing site-specific DNA double strand breaks that are corrected through NHEJ.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, programmable nucleases such as zinc finger nucleases (ZFNs), transcription activator-like effector nucleases (TALENs), and CRISPR/Cas9 have been utilized to disrupt genes by the introduction of site-specific DNA double strand breaks (DSBs) that are corrected through non-homologous end-joining (NHEJ) (Hendel et al., 2015; Holt et al., 2010; Saydaminova et al., 2015; Mandal et al., 2014; Schumann et al., 2015; Kim et al., 2014; Lin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "d9a0fd06-af5b-48bd-a6d8-a61a89a7b1d7",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C7",
+      "claim": "NHEJ creates a heterogeneous mixture of cells with various genotypes of SNPs and small insertions or deletions (INDELs).",
+      "claim_type": "EXPLICIT",
+      "source": "This error-prone system creates a heterogeneous mixture of cells with various genotypes of SNPs and small insertions or deletions (INDELs); moreover, not all of the genetic changes from INDELs cause functional gene disruption as they may preserve the open reading frame and may not change amino acids essential for protein functions (Shi et al., 2015; Hultquist et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature describing NHEJ outcomes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "dcfdc9de-7bcf-4c2d-a990-cf2245233854",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C8",
+      "claim": "Not all genetic changes from INDELs cause functional gene disruption as they may preserve the open reading frame and may not change amino acids essential for protein functions.",
+      "claim_type": "EXPLICIT",
+      "source": "This error-prone system creates a heterogeneous mixture of cells with various genotypes of SNPs and small insertions or deletions (INDELs); moreover, not all of the genetic changes from INDELs cause functional gene disruption as they may preserve the open reading frame and may not change amino acids essential for protein functions (Shi et al., 2015; Hultquist et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "b735a148-99da-43c0-b0cf-80853ec9939d",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C9",
+      "claim": "A prior study created defined gene deletions in HSPCs using a dual sgRNA approach, but more than half of the alleles were not modified leading to residual gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In a prior study, defined gene deletions were created in HSPCs using a dual sgRNA approach, however, more than half of the alleles were not modified leading to residual gene expression (Mandal et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "045f9a50-a610-43ef-b28d-7e13be1db215",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C10",
+      "claim": "Successfully modified cells in the prior study were not distinguishable from unmodified wild type cells and could not be tracked or isolated as an enriched population.",
+      "claim_type": "EXPLICIT",
+      "source": "Another limitation of this prior study is that successfully modified cells were not distinguishable from unmodified wild type (WT) cells, and therefore could not be tracked or isolated as an enriched population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the cited prior study's methodology.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "9d6f45dd-8391-4543-9a3e-2db0d8cdfe91",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C11",
+      "claim": "Multiplexing of NHEJ-based gene editing has mainly been performed in immortalized human cancer cell lines and mouse cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the versatility of the CRISPR/Cas9 system allows for simultaneous manipulation at multiple genetic loci in a single cell, multiplexing of NHEJ-based gene editing has mainly been performed in immortalized human cancer cell lines and mouse cells (Hultquist et al., 2016; Cong et al., 2013; Heckl et al., 2014; Platt et al., 2014; Brown et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "70981d28-1653-46cc-ab80-0a9b6429e002",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C12",
+      "claim": "Prior multiplexed proof-of-concept studies only used NHEJ-mediated editing and did not harness the power of homologous recombination to create more sophisticated alterations to the genome at multiple alleles and/or loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, these interesting multiplexed proof-of-concept studies, only used NHEJ-mediated editing and did not harness the power of homologous recombination (HR) to create more sophisticated alterations to the genome at multiple alleles and/or loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the cited prior studies' methodologies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "c44ef33e-2bd5-4dd8-9847-27c4c52d3201",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C13",
+      "claim": "HR in human HSPCs can be efficiently induced by site-specific nucleases in combination with homologous donor DNA delivered as ssODNs, IDLVs, or rAAV6 vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others have previously shown that HR in human HSPCs can be efficiently induced by site-specific nucleases in combination with homologous donor DNA delivered as single-stranded oligonucleotides (ssODNs), integration-defective lentiviral vectors (\u00cdDLVs), or by recombinant adeno-associated virus serotype 6 (rAAV6) vectors (Dever et al., 2016; DeWitt et al., 2016; De Ravin et al., 2017; Wang et al., 2015; Hoban et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature including the authors' own work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "851cc5e2-b25e-408e-b8f0-fa0d7ed8e054",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C14",
+      "claim": "Targeted integration in the beta-globin gene (HBB) was previously achieved by combining delivery of Cas9 protein pre-complexed with chemically modified sgRNAs (RNP) and delivery of an AAV6 donor.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed targeted integration in the beta-globin gene (HBB) by combining delivery of Cas9 protein pre-complexed with chemically modified sgRNAs (RNP) and delivery of an AAV6 donor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim refers to the authors' prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "b201c6f6-8eed-4b02-9385-856ef582bc6a",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C15",
+      "claim": "FACS-based sorting of transgene reporter-high-expressing HSPCs was used to purify an HSPC population with >90% targeted integration that displayed long-term repopulation capacity in NSG mice.",
+      "claim_type": "EXPLICIT",
+      "source": "After successful on-target integration of a reporter transgene, FACS-based sorting of transgene reporterhigh-expressing HSPCs was used to purify an HSPC population with >90% targeted integration that displayed long-term repopulation capacity in NSG mice (Dever et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the authors' prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "1f0f8d38-3f8b-43d6-8bc8-2e79274c9f9a",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C16",
+      "claim": "Six additional loci (IL2RG, CCR5, RUNX1c, ASXL1, STAG2, and AAVS1) were tested for their potential to be modified through HR by CRISPR/Cas9 in combination with AAV6-derived donor delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "To extend this method beyond the HBB locus for therapeutic genome editing approaches of hemoglobinopathies, we tested six additional loci for their potential to be modified through HR by CRISPR/Cas9 in combination with AAV6-derived donor delivery. These genes are associated with hematopoiesis, hematopoietic malignancies, or safe harbor sites and include: interleukin-2 receptor gamma chain (IL2RG), chemokine (C-C motif) receptor 5 (CCR5), runt-related transcription factor one isoform c (RUNX1c), additional sex combs like 1 (ASXL1), stromal antigen 2 (STAG2), and adeno-associated virus integration site 1 (AAVS1) (Tebas et al., 2014; Genovese et al., 2014; Patel et al., 2012; Mazumdar et al., 2015; Kotin et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in the manuscript and citations for gene associations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "ab2768c4-6ea7-4477-a80d-19fd06023d93",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C17",
+      "claim": "Following electroporation with Cas9 RNP and transduction with an rAAV6 donor vector, a cell population with increased fluorescence intensity (reporterhigh cells) was detectable by flow cytometry at day 4 compared to cells receiving only the rAAV6 donor without electroporation of Cas9 RNP.",
+      "claim_type": "EXPLICIT",
+      "source": "Following electroporation with Cas9 RNP, containing a chemically-modified sgRNA targeting a single site in the selected locus, and transduction with an rAAV6 donor vector carrying homology arms for the targeted site and an expression cassette encoding a fluorescent reporter gene (Figure 1\u2014figure supplement 1a), we observed at early time points (day 4) a cell population with increased fluorescence intensity detectable by flow cytometry (reporterhigh cells) compared to cells receiving only the rAAV6 donor without electroporation of Cas9 RNP (reporterlow) (Figure 1a and Supplementary file 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1a and Supplementary file 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "6eb6be73-fe15-4e86-a78e-d794e2642102",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C18",
+      "claim": "Reporterhigh populations remained 99.2 \u00b1 0.7% reporter positive after sorting at day four post-electroporation and culturing up to 22 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Reporterhigh populations remained 99.2 \u00b1 0.7% reporter positive (Figure 1b) while sorted reporterlow and reporterneg populations were 29.3 \u00b1 5.4% and 0.6 \u00b1 0.2% reporter positive, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "025d6fd4-c7dc-4a7c-bf42-c083a57256e0",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C19",
+      "claim": "Sorted reporterlow populations were 29.3 \u00b1 5.4% reporter positive after culturing.",
+      "claim_type": "EXPLICIT",
+      "source": "Reporterhigh populations remained 99.2 \u00b1 0.7% reporter positive (Figure 1b) while sorted reporterlow and reporterneg populations were 29.3 \u00b1 5.4% and 0.6 \u00b1 0.2% reporter positive, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "7128531b-1f86-4e0d-9645-63df9f307646",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C20",
+      "claim": "Sorted reporterneg populations were 0.6 \u00b1 0.2% reporter positive after culturing.",
+      "claim_type": "EXPLICIT",
+      "source": "Reporterhigh populations remained 99.2 \u00b1 0.7% reporter positive (Figure 1b) while sorted reporterlow and reporterneg populations were 29.3 \u00b1 5.4% and 0.6 \u00b1 0.2% reporter positive, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "09400426-8e0f-40ba-8c66-030733914e80",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C21",
+      "claim": "GFP intensity at day four post-electroporation positively correlated with the propensity for maintaining GFP expression at day 20.",
+      "claim_type": "EXPLICIT",
+      "source": "Dividing the reporterlow cells into three sub fractions based on fluorescence intensity revealed that GFP intensity at day four post-electroporation positively correlated with the propensity for maintaining GFP expression at day 20 (Figure 1\u2014figure supplement 1b\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1b\u2013c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "3d766744-b93b-435c-bced-8fb7de4b62b8",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C22",
+      "claim": "Targeted HSPCs formed a mix of myeloid (CFU-M/GM) and erythroid colonies (BFU-E, CFU-E) indicating that they retained HSPC function.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeted HSPCs formed a mix of myeloid (CFU-M/GM) and erythroid colonies (BFU-E, CFU-E) indicating that they retained HSPC function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from methylcellulose colony assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "f795d8f4-adb1-4f27-93ac-33328e9a9b07",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C23",
+      "claim": "99% of reporterhigh HSPCs targeted at CCR5 (338 clones analyzed) had at least a monoallelic targeted integration.",
+      "claim_type": "EXPLICIT",
+      "source": "'In-Out PCR' (one donor-specific primer and one locus-specific primer outside of the respective homology arms) on genomic DNA (gDNA) from single cell-derived methylcellulose colonies confirmed that 99%, 92%, and 100% of reporterhigh HSPCs targeted at CCR5 (338 clones analyzed), IL2RG (117 clones analyzed), and RUNX1 (36 clones analyzed), respectively, had at least a monoallelic targeted integration (Figure 1c and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by PCR genotyping data shown in Figure 1c and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "0ad84213-5866-43fa-93f2-e66bfc47c8aa",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C24",
+      "claim": "92% of reporterhigh HSPCs targeted at IL2RG (117 clones analyzed) had at least a monoallelic targeted integration.",
+      "claim_type": "EXPLICIT",
+      "source": "'In-Out PCR' (one donor-specific primer and one locus-specific primer outside of the respective homology arms) on genomic DNA (gDNA) from single cell-derived methylcellulose colonies confirmed that 99%, 92%, and 100% of reporterhigh HSPCs targeted at CCR5 (338 clones analyzed), IL2RG (117 clones analyzed), and RUNX1 (36 clones analyzed), respectively, had at least a monoallelic targeted integration (Figure 1c and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by PCR genotyping data shown in Figure 1c and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "2f866c1d-dbf4-4762-b055-3f7fda95649d",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C25",
+      "claim": "100% of reporterhigh HSPCs targeted at RUNX1 (36 clones analyzed) had at least a monoallelic targeted integration.",
+      "claim_type": "EXPLICIT",
+      "source": "'In-Out PCR' (one donor-specific primer and one locus-specific primer outside of the respective homology arms) on genomic DNA (gDNA) from single cell-derived methylcellulose colonies confirmed that 99%, 92%, and 100% of reporterhigh HSPCs targeted at CCR5 (338 clones analyzed), IL2RG (117 clones analyzed), and RUNX1 (36 clones analyzed), respectively, had at least a monoallelic targeted integration (Figure 1c and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by PCR genotyping data shown in Figure 1c and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "99974647-c72a-4796-a87b-a88a0f7c8821",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C26",
+      "claim": "Analyses of clones with only mono-allelic integration showed gene-specific differences in the modification of the non-integrated alleles ranging from 38% INDELs for IL2RG to 89% INDELs for CCR5 and 88% INDELs for RUNX1.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses of clones with only mono-allelic integration showed gene-specific differences in the modification of the non-integrated alleles ranging from 38% INDELs for IL2RG to 89% INDELs for CCR5% and 88% INDELs for RUNX1, among which the majority was gene-disrupting (Figure 1\u2014figure supplement 2 and Supplementary file 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequencing data shown in Figure 1\u2014figure supplement 2 and Supplementary file 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "2c58bc4b-9a00-4ee8-84a1-ca734563a4b8",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C27",
+      "claim": "The majority of INDELs on non-integrated alleles were gene-disrupting.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses of clones with only mono-allelic integration showed gene-specific differences in the modification of the non-integrated alleles ranging from 38% INDELs for IL2RG to 89% INDELs for CCR5% and 88% INDELs for RUNX1, among which the majority was gene-disrupting (Figure 1\u2014figure supplement 2 and Supplementary file 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequencing data shown in Figure 1\u2014figure supplement 2 and Supplementary file 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "709abbdf-88af-4f73-9338-7af2985d1935",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C28",
+      "claim": "The observed log-fold transgene expression shift following rAAV6 and RNP delivery is due to HR at the intended locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data indicate that the observed log-fold transgene expression shift following rAAV6 and RNP delivery is due to HR at the intended locus and that reporter expression can be used to enrich gene-targeted HSPCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing correlation between reporter expression and confirmed targeted integration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "ed1e6312-58b0-47f8-8957-0e94d8d2720c",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C29",
+      "claim": "Reporter expression can be used to enrich gene-targeted HSPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data indicate that the observed log-fold transgene expression shift following rAAV6 and RNP delivery is due to HR at the intended locus and that reporter expression can be used to enrich gene-targeted HSPCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing high purity of targeted integration in sorted reporter-high cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "0bc74f01-bc9c-4541-92b1-468a6beab550",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C30",
+      "claim": "The cohesin complex has previously been shown to play an essential part in maintaining normal erythroid differentiation potential of hematopoietic stem and progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The cohesin complex has previously been shown to play an essential part in maintaining normal erythroid differentiation potential of hematopoietic stem and progenitor cells (Mazumdar et al., 2015; Viny et al., 2015; Mullenders et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "eed57852-214c-4702-8873-24cba8fe4e95",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C31",
+      "claim": "The STAG2 gene is located on the human X chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the STAG2 gene is located on the human X chromosome, single-allele integration of a fluorescent reporter in male cells would be sufficient to fully knock out the gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the chromosomal location of STAG2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "2e263ed6-06e8-4002-baf3-b1e4ed163280",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C32",
+      "claim": "Single-allele integration of a fluorescent reporter in male cells would be sufficient to fully knock out the STAG2 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the STAG2 gene is located on the human X chromosome, single-allele integration of a fluorescent reporter in male cells would be sufficient to fully knock out the gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the knowledge that males have only one X chromosome.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "656a1ee6-f9e5-4a38-ac11-750e41239354",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C33",
+      "claim": "Cas9 RNP combined with rAAV6 donor transduction resulted in the generation of a reporterhigh population for STAG2 targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Cas9 RNP combined with rAAV6 donor transduction resulted in the generation of a reporterhigh population that could be sorted for subsequent differentiation experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the STAG2 targeting experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "2d2050d6-fd9c-482e-85ff-7f6b0a5c4cc9",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C34",
+      "claim": "Single cell methylcellulose assays of STAG2 reporterhigh cells revealed an almost complete loss in the capacity to form erythroid colonies compared to cells that had only been exposed to rAAV6 and not Cas9 RNP.",
+      "claim_type": "EXPLICIT",
+      "source": "Single cell methylcellulose assays of reporterhigh cells revealed an almost complete loss in the capacity to form erythroid colonies compared to cells that had only been exposed to rAAV6 and not Cas9 RNP, and also compared to cells with targeted integration at the AAVS1 locus (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "de5ee390-0952-41a8-9236-4c2142d9af16",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C35",
+      "claim": "STAG2 reporterhigh cells showed an almost complete loss in the capacity to form erythroid colonies compared to cells with targeted integration at the AAVS1 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Single cell methylcellulose assays of reporterhigh cells revealed an almost complete loss in the capacity to form erythroid colonies compared to cells that had only been exposed to rAAV6 and not Cas9 RNP, and also compared to cells with targeted integration at the AAVS1 locus (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "dc8c75f4-2d19-4279-9987-66ab053b2e00",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C36",
+      "claim": "Gene-specific enrichment of reporterhigh cells can be used to study HSPC gene function.",
+      "claim_type": "EXPLICIT",
+      "source": "These proof-of-concept studies provide evidence that gene-specific enrichment of reporterhigh cells can be used to study HSPC gene function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the STAG2 functional study demonstrating loss of erythroid differentiation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "1d3931eb-6730-4ce5-8520-b79187a0798e",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C37",
+      "claim": "Targeting the ASXL1 gene with GFP and BFP-encoding rAAV6 donors resulted in 10.4% of cells being double positive for GFPhigh and BFPhigh four days after electroporation and transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine if this method could be used to enrich HSPCs with biallelic gene disruption, necessary for complete functional gene knockout, we targeted the ASXL1 gene and simultaneously provided GFP and BFP-encoding rAAV6 donors. Four days after electroporation and transduction, 10.4% of cells were double positive for GFPhigh and BFPhigh compared to 0.2% for the AAV only sample (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "bae314c7-9f93-4c8e-bd40-3e49a060e431",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C38",
+      "claim": "AAV only samples showed 0.2% double positive cells for GFPhigh and BFPhigh.",
+      "claim_type": "EXPLICIT",
+      "source": "Four days after electroporation and transduction, 10.4% of cells were double positive for GFPhigh and BFPhigh compared to 0.2% for the AAV only sample (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "7e7099c1-3caa-4655-8db3-60bc19d0a4be",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C39",
+      "claim": "Double-positive populations were apparent when targeting three other genes (RUNX1, HBB, and CCR5) with two rAAV6 donors with various color combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, double-positive populations were apparent when targeting three other genes (RUNX1, HBB, and CCR5) with two rAAV6 donors with various color combinations (Figure 2\u2014figure supplement 1 and Supplementary file 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1 and Supplementary file 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "f16d526e-d41b-410f-a3f7-936ae2d38560",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C41",
+      "claim": "'In-out PCR' on gDNA from single cell-derived methylcellulose clones confirmed on-target integration of one transgene into one allele and the other transgene into the second allele.",
+      "claim_type": "EXPLICIT",
+      "source": "'In-out PCR' on gDNA from single cell-derived methylcellulose clones confirmed on-target integration of one transgene into one allele and the other transgene into the second allele (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by PCR genotyping data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "50ffa659-124a-401b-8f10-2c336cad7ed0",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C42",
+      "claim": "Primary human T cells can be targeted for biallelic HR at CCR5.",
+      "claim_type": "EXPLICIT",
+      "source": "We next tested if the biallelic targeting approach could be extended to another blood cell type and therefore targeted primary human T cells for biallelic HR at CCR5. After electroporation with CCR5-targeting Cas9 RNP followed by transduction with GFP and mCherry CCR5 rAAV6 donors, a GFPhigh/mCherryhigh double-positive population was observed, indicative of biallelic integration at the CCR5 gene (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "b5d5658f-1b70-4f60-af4c-e043084d3db8",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C43",
+      "claim": "No significant toxicity was associated with biallelic targeting in T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant toxicity was associated with biallelic targeting in T cells (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by viability data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "00c5b501-8a8f-4d43-a702-355f1937f420",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C44",
+      "claim": "Human HSPCs and T cells that have undergone biallelic homologous recombination can be enriched using rAAV6, Cas9 RNP, and FACS.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results demonstrate the utility of using rAAV6, Cas9 RNP, and FACS to enrich for primary human HSPCs and T cells that have undergone biallelic homologous recombination, which may have applications for studying hematological and immunological diseases or generating HSPC or T cell therapeutics that require gene modifications or gene knockout at both alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data demonstrating biallelic targeting in HSPCs and T cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "1c9813e8-e873-4da9-b64a-a231a5a359cc",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C45",
+      "claim": "Co-delivery of HBB-tdTomato and IL2RG-GFP rAAV6 donors with Cas9 RNP targeting both genes produced 10.2% double positive GFPhigh/tdTomatohigh HSPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore co-delivered HBB-tdTomato and IL2RG-GFP rAAV6 donors with Cas9 RNP targeting both genes. This strategy produced 10.2% double positive GFPhigh/tdTomatohigh HSPCs compared to 0.1% for the AAV only control sample (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "1ecdf96b-8364-4af1-af41-e55ca3101453",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C46",
+      "claim": "AAV only control samples showed 0.1% double positive GFPhigh/tdTomatohigh HSPCs for di-genic targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "This strategy produced 10.2% double positive GFPhigh/tdTomatohigh HSPCs compared to 0.1% for the AAV only control sample (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "b9e75e43-9aca-4f77-8f0d-50ec98dbc632",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C47",
+      "claim": "Double reporterhigh positive populations were generated when testing other combinations of di-genic HR (IL2RG/CCR5, RUNX1/ASXL1, and HBB/CCR5).",
+      "claim_type": "EXPLICIT",
+      "source": "We also generated double reporterhigh positive populations when testing other combinations of di-genic HR (IL2RG/CCR5, RUNX1/ASXL1, and HBB/CCR5) (Figure 3\u2014figure supplement 1 and Supplementary file 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1 and Supplementary file 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "d5a4d6e3-3dc2-4d97-904b-11d3a18d5b16",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C48",
+      "claim": "Double reporterhigh positive cells sorted at day four post-electroporation remained 94% double positive for 15 days in culture for di-genic targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, double reporterhigh positive cells sorted at day four post-electroporation remained 94% double positive for 15 days in culture (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "78007ee2-3e8a-459a-80c9-b3ce055dedaa",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C49",
+      "claim": "'In-Out PCR' on double positive methylcellulose myeloid and erythroid clones showed on-target integration at both loci in 88% of clones (57 clones analyzed).",
+      "claim_type": "EXPLICIT",
+      "source": "'In-Out PCR' on double positive methylcellulose myeloid and erythroid clones showed on-target integration at both loci in 88% of clones (57 clones analyzed) (Figure 3c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by PCR genotyping data shown in Figure 3c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "edc16f60-7e2a-4338-96db-a1489581083e",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C50",
+      "claim": "INDEL rates at HBB and AAVS1 were comparable among all four sorted populations (double negative, single positives, and double positive), with a small enrichment of INDELs in the three populations positive for the reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "INDEL rates at HBB and AAVS1 were comparable among all four sorted populations, with a small enrichment of INDELs in the three populations positive for the reporter (Figure 3e, middle panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by TIDE analysis data shown in Figure 3e, middle panel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "5541c087-6d91-48cf-a67d-e44619b1ae57",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C51",
+      "claim": "Droplet digital PCR quantification of the translocation between HBB and AAVS1 showed frequencies ranging from 0.14\u20130.28%.",
+      "claim_type": "EXPLICIT",
+      "source": "Droplet digital PCR (ddPCR) quantification of the translocation showed frequencies ranging from 0.14\u20130.28%, and importantly, no evidence of enrichment of the translocation was observed in the population sorted for di-genic targeting (Figure 3e, right panel and Figure 3\u2014figure supplement 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ddPCR data shown in Figure 3e, right panel and Figure 3\u2014figure supplement 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "474df0ca-1910-466c-b975-bf4a0e8f98ee",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C52",
+      "claim": "No evidence of enrichment of the translocation was observed in the population sorted for di-genic targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "Droplet digital PCR (ddPCR) quantification of the translocation showed frequencies ranging from 0.14\u20130.28%, and importantly, no evidence of enrichment of the translocation was observed in the population sorted for di-genic targeting (Figure 3e, right panel and Figure 3\u2014figure supplement 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ddPCR data shown in Figure 3e, right panel and Figure 3\u2014figure supplement 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "2323ebbf-7185-4f6d-a851-37ff1c46a78e",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C53",
+      "claim": "Cloning and sequencing of PCR products spanning the translocation showed a wide variety of translocation junctions derived from different DNA end-processing products.",
+      "claim_type": "EXPLICIT",
+      "source": "Cloning and sequencing of PCR products spanning the translocation showed a wide variety of translocation junctions derived from different DNA end-processing products (Figure 3\u2014figure supplement 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequencing data shown in Figure 3\u2014figure supplement 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "3f8d8401-d96f-4169-a93d-d28ca31b3872",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C54",
+      "claim": "Human multi-lineage engraftment was evident in the bone marrow of transplanted NSG mice 12 weeks after transplantation for all four groups (double negative, single positives, and double positive).",
+      "claim_type": "EXPLICIT",
+      "source": "12 weeks after transplantation, human multi-lineage engraftment was evident in the bone marrow of the transplanted mice of all four groups (Figure 3g and Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data from transplanted mice shown in Figure 3g and Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "5fe9b0fd-97f7-4d4a-94ef-48f25a9c2ace",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C55",
+      "claim": "Human HSPCs that have undergone di-genic HR are not enriched for translocations.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data show that human HSPCs that have undergone di-genic HR are not enriched for translocations, and maintain their multi-lineage colony forming capacity and long-term engraftment potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the ddPCR translocation data and transplantation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "7fa76277-c7a8-457b-b386-6c29aa8a3935",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C56",
+      "claim": "Human HSPCs that have undergone di-genic HR maintain their multi-lineage colony forming capacity and long-term engraftment potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data show that human HSPCs that have undergone di-genic HR are not enriched for translocations, and maintain their multi-lineage colony forming capacity and long-term engraftment potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by methylcellulose colony assays and NSG mouse transplantation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "e08e490c-39f8-468c-b6a7-a7517bd803ba",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C57",
+      "claim": "Delivery of Cas9 RNPs targeting both ASXL1 and RUNX1c followed by transduction of four rAAV6 donors gave rise to 1.1% GFPhigh/mCherryhigh/BFPhigh/E2Crimsonhigh quadruple-positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Delivery of Cas9 RNPs targeting both genes followed by transduction of four rAAV6 donors gave rise to 1.1% GFPhigh/mCherryhigh/BFPhigh/E2Crimsonhigh quadruple-positive cells (Figure 4a and Figure 4\u2014figure supplement 1b\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4a and Figure 4\u2014figure supplement 1b\u2013c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "e60eee78-42a7-4c42-b369-1d49103e5eb8",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C58",
+      "claim": "A similar quadruple-positive population was evident when targeting all four combined alleles of HBB and RUNX1c.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar quadruple-positive population was evident when targeting all four combined alleles of HBB and RUNX1c (Figure 4\u2014figure supplement 1e\u2013h and Supplementary file 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1e\u2013h and Supplementary file 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "63ec2d1d-c603-4a03-b8ff-e325a0c7eaf8",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C59",
+      "claim": "Mixed, myeloid, and erythroid colonies were formed at frequency and ratio comparable to AAV only controls for tetra-allelic targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "Mixed, myeloid, and erythroid colonies were formed at frequency and ratio comparable to AAV only controls (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by methylcellulose colony assay data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "2086d68e-a01b-45c7-a41a-96b42fc04d0c",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C60",
+      "claim": "Genotyping of colonies revealed on-target integration at both alleles at both loci in 78% of clones (73 clones analyzed) for tetra-allelic targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "Genotyping of colonies revealed on-target integration at both alleles at both loci in 78% of clones (73 clones analyzed) (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by PCR genotyping data shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "0030c726-1aa9-4d65-9164-40adc62abb1d",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C61",
+      "claim": "Flow-cytometric analysis of individual colonies confirmed expression of all four reporters (BFP/GFP/mCherry/E2Crimson) at high levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow-cytometric analysis of individual colonies confirmed expression of all four reporters (BFP/GFP/mCherry/E2Crimson) at high levels (Figure 4\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 4\u2014figure supplement 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "102a1d06-7e0d-441d-8c86-e67272c8bd18",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C62",
+      "claim": "The total number of genetic changes in the tetra-allelic enriched population is six: two endogenous genes inactivated (both alleles of each gene) plus the addition of four different transgenes.",
+      "claim_type": "EXPLICIT",
+      "source": "The total number of genetic changes in this enriched population, which could be used for synthetic biology purposes is six: two endogenous genes inactivated (both alleles of each gene) plus the addition of four different transgenes (represented in our experiment by four genes encoding different fluorescent proteins).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental design of tetra-allelic targeting.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "36b82982-1042-4513-a11b-6d99083c92c2",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C63",
+      "claim": "Tri-genic targeting of HSPCs at IL2RG, HBB, and CCR5 resulted in 4.1% triple-positive cells at day four post-electroporation.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate that our methodology could multiplex HR in HSPCs in more than two genes simultaneously, we electroporated HSPCs with RNPs targeting HBB, CCR5, and IL2RG, and then transduced them with gene-specific rAAV6 donors (HBB-tdTomato, CCR5-tNGFR, IL2RG-GFP) (for schematic see Figure 4\u2014figure supplement 2a). At day four post-electroporation, 4.1% of HSPCs were triple-positive (Figure 4d and Figure 4\u2014figure supplement 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4d and Figure 4\u2014figure supplement 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "6e7858ba-810c-4484-9abf-9ad1a3857111",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C64",
+      "claim": "'In-Out PCR' on gDNA from myeloid and erythroid colonies derived from tri-genic targeted population showed that 78% (27 clones analyzed) had an integration event at all 3 loci.",
+      "claim_type": "EXPLICIT",
+      "source": "'In-Out PCR' on gDNA from myeloid and erythroid colonies derived from this population showed that 78% (27 clones analyzed) had an integration event at all 3 loci, indicating at least mono-allelic integrations at each targeted locus (Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by PCR genotyping data shown in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "0c38b8ea-b82b-4652-980e-ae3e151fd099",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C65",
+      "claim": "85% of clones with tri-genic integrations were modified on all alleles either by biallelic integration or INDELs on the non-integrated allele that were mostly disruptive.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analyses showed that 85% of these clones with tri-genic integrations were modified on all alleles either by biallelic integration or INDELs on the non-integrated allele that were mostly disruptive (Supplementary file 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by genotyping data shown in Supplementary file 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "0ade284c-dfb9-4532-93a0-062881240510",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C66",
+      "claim": "Targeting at another combination of three genes (RUNX1/HBB/ASXL1) showed 2.9% triple-positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting at another combination of three genes (RUNX1/HBB/ASXL1) showed 2.9% triple-positive cells (Figure 4\u2014figure supplement 2c\u2013e), and collectively, tri-genic targeting experiments yielded an average of 4.5% triple-positive cells, with the highest frequency of 14% (N = 5) (Supplementary file 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 2c\u2013e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "b2c6d4d1-41b3-4844-b60a-d68d2b73d179",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C67",
+      "claim": "Tri-genic targeting experiments yielded an average of 4.5% triple-positive cells, with the highest frequency of 14% (N = 5).",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting at another combination of three genes (RUNX1/HBB/ASXL1) showed 2.9% triple-positive cells (Figure 4\u2014figure supplement 2c\u2013e), and collectively, tri-genic targeting experiments yielded an average of 4.5% triple-positive cells, with the highest frequency of 14% (N = 5) (Supplementary file 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Supplementary file 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "4ec8712a-8801-4374-aa9b-23bf18444253",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C68",
+      "claim": "Only a minor, non-statistically significant decrease in cell viability (p=0.333) was observed when targeting three genes compared to one.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed similar proliferation rates comparing modified and unmodified cells (data not shown) and only a minor, non-statistically significant decrease in cell viability (p=0.333) when targeting three genes compared to one (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by viability data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "83109259-b49b-4fbe-86f5-e890a8f2f38f",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C69",
+      "claim": "Tetra-genic HR targeting (HBB, CCR5, ASXL1, RUNX1) resulted in 1% of cells being reporterhigh positive for all four reporters after four days in culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we targeted HSPCs for tetra-genic HR (HBB, CCR5, ASXL1, RUNX1) and found after four days in culture that 1% of cells were reporterhigh positive for all four reporters (Figure 4f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "06c6f1cc-f041-4c39-887f-efca4068f027",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C70",
+      "claim": "Targeting the same four genes with other combinations of reporter genes gave 0.41% and 0.78% tetra-genic targeting frequencies in the total cell population.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting the same four genes with other combinations of reporter genes gave 0.41% and 0.78% tetra-genic targeting frequencies in the total cell population (Supplementary file 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Supplementary file 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "0c41bc03-ec0f-475c-9236-919cf75e1e1b",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C71",
+      "claim": "41\u201371% of HSPCs with tri-genic HR had undergone tetra-genic HR, suggesting that HR events at different genes may not be independent of each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, 41\u201371% of HSPCs with tri-genic HR had undergone tetra-genic HR, suggesting that HR events at different genes may not be independent of each other, in contrast to recent findings for multiplexed NHEJ (Hultquist et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data and contrasted with prior literature on NHEJ.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "2d3427b3-23b8-441d-a69a-18a047cad486",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C72",
+      "claim": "89\u201398% of reporterhigh cells were derived from on-target homologous recombination, confirming a relatively low rate of AAV capture.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 89\u201398% of reporterhigh cells were derived from on-target homologous recombination, confirming a relatively low rate of AAV capture (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "973406ec-f7cd-4a53-9926-37a70bd67eb8",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C73",
+      "claim": "Monogenic targeting experiments in HSPCs (N=47) showed a mean efficiency of 21.7 \u00b1 13.4%.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 summarizes the HR multiplex experiments (seven total genes targeted) and shows that by using Cas9 RNP, rAAV6, and flow cytometry-based sorting, we can reproducibly generate HSPC populations that have undergone HR events at multiple loci.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data summarized in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "725d8206-34f3-482d-ab16-5119bb709a23",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C74",
+      "claim": "Biallelic targeting experiments in HSPCs (N=16) showed a mean efficiency of 5.5 \u00b1 4.2%.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 summarizes the HR multiplex experiments (seven total genes targeted) and shows that by using Cas9 RNP, rAAV6, and flow cytometry-based sorting, we can reproducibly generate HSPC populations that have undergone HR events at multiple loci.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data summarized in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "47da4c8f-9653-4b9f-999a-04eca2f0713e",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C75",
+      "claim": "Di-genic targeting experiments in HSPCs (N=17) showed a mean efficiency of 8.1 \u00b1 8.1%.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 summarizes the HR multiplex experiments (seven total genes targeted) and shows that by using Cas9 RNP, rAAV6, and flow cytometry-based sorting, we can reproducibly generate HSPC populations that have undergone HR events at multiple loci.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data summarized in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "d08e4dfc-1f72-4f2d-a085-32ba5950a4f4",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C76",
+      "claim": "Tetra-allelic targeting experiments in HSPCs (N=3) showed a mean efficiency of 0.9 \u00b1 0.3%.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 summarizes the HR multiplex experiments (seven total genes targeted) and shows that by using Cas9 RNP, rAAV6, and flow cytometry-based sorting, we can reproducibly generate HSPC populations that have undergone HR events at multiple loci.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data summarized in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "37f4d777-d11e-4dbb-9d8e-be31785eada4",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C77",
+      "claim": "Tri-genic targeting experiments in HSPCs (N=6) showed a mean efficiency of 4.5 \u00b1 4.8%.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 summarizes the HR multiplex experiments (seven total genes targeted) and shows that by using Cas9 RNP, rAAV6, and flow cytometry-based sorting, we can reproducibly generate HSPC populations that have undergone HR events at multiple loci.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data summarized in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "1bcfd45b-17a0-475f-b2ae-7ef642f56acf",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C78",
+      "claim": "Tetra-genic targeting experiments in HSPCs (N=3) showed a mean efficiency of 0.7 \u00b1 0.3%.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 summarizes the HR multiplex experiments (seven total genes targeted) and shows that by using Cas9 RNP, rAAV6, and flow cytometry-based sorting, we can reproducibly generate HSPC populations that have undergone HR events at multiple loci.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data summarized in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "75f8f1a5-5996-437a-8568-938f66148df0",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C79",
+      "claim": "The tetra-genic targeting method can generate an enriched population of cells with eight genetic modifications: the knockout of at least a single allele of four different genes while introducing four different transgenes.",
+      "claim_type": "EXPLICIT",
+      "source": "For synthetic biology purposes, the tetra-genic targeting method, for example, can generate an enriched population of cells with eight genetic modifications: the knockout of at least a single allele of four different genes while introducing four different transgenes (in this proof-of-concept we used three fluorescent protein reporter genes and one biologically inert cell surface marker (tNGFR) that has been previously used in human clinical trials to track genetically modified hematopoietic stem cells over the course of decades).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental design and results of tetra-genic targeting.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "8ea8a15b-b79a-4279-83d1-01c88619530a",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C80",
+      "claim": "The truncated NGFR (tNGFR) cell surface marker has been previously used in human clinical trials to track genetically modified hematopoietic stem cells over the course of decades.",
+      "claim_type": "EXPLICIT",
+      "source": "For synthetic biology purposes, the tetra-genic targeting method, for example, can generate an enriched population of cells with eight genetic modifications: the knockout of at least a single allele of four different genes while introducing four different transgenes (in this proof-of-concept we used three fluorescent protein reporter genes and one biologically inert cell surface marker (tNGFR) that has been previously used in human clinical trials to track genetically modified hematopoietic stem cells over the course of decades).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the use of tNGFR in clinical trials.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "72baf357-be55-4fd6-a943-52471cffc0fd",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C81",
+      "claim": "The approach to studying gene function in human HSPCs enables multigenic targeted integration (at least four genes).",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach to studying gene function in human HSPCs has several advantages over lentiviral-based approaches because it enables: (1) multigenic targeted integration (at least four genes), (2) enrichment of highly pure edited populations, (3) the ability to trace cells with a specific genotype, (4) enrichment of a population with biallelic targeting of at least two genes, and (5) fluorescent protein-based hematopoietic cell lineage tracing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data demonstrating tetra-genic targeting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "e6beac9b-5cb6-4e07-929b-d6009449cccc",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C82",
+      "claim": "The approach enables enrichment of highly pure edited populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach to studying gene function in human HSPCs has several advantages over lentiviral-based approaches because it enables: (1) multigenic targeted integration (at least four genes), (2) enrichment of highly pure edited populations, (3) the ability to trace cells with a specific genotype, (4) enrichment of a population with biallelic targeting of at least two genes, and (5) fluorescent protein-based hematopoietic cell lineage tracing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data showing high purity of sorted reporter-high cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "269a8600-f39f-4f82-8be2-d3d77b0ebb8d",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C83",
+      "claim": "The approach enables the ability to trace cells with a specific genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach to studying gene function in human HSPCs has several advantages over lentiviral-based approaches because it enables: (1) multigenic targeted integration (at least four genes), (2) enrichment of highly pure edited populations, (3) the ability to trace cells with a specific genotype, (4) enrichment of a population with biallelic targeting of at least two genes, and (5) fluorescent protein-based hematopoietic cell lineage tracing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data showing stable reporter expression over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "1df0ef21-6dad-4654-993f-995882ede219",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C84",
+      "claim": "The approach enables enrichment of a population with biallelic targeting of at least two genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach to studying gene function in human HSPCs has several advantages over lentiviral-based approaches because it enables: (1) multigenic targeted integration (at least four genes), (2) enrichment of highly pure edited populations, (3) the ability to trace cells with a specific genotype, (4) enrichment of a population with biallelic targeting of at least two genes, and (5) fluorescent protein-based hematopoietic cell lineage tracing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data demonstrating tetra-allelic targeting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "691981ea-1855-4b59-9397-40eced4bcae2",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C85",
+      "claim": "The approach enables fluorescent protein-based hematopoietic cell lineage tracing.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach to studying gene function in human HSPCs has several advantages over lentiviral-based approaches because it enables: (1) multigenic targeted integration (at least four genes), (2) enrichment of highly pure edited populations, (3) the ability to trace cells with a specific genotype, (4) enrichment of a population with biallelic targeting of at least two genes, and (5) fluorescent protein-based hematopoietic cell lineage tracing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the use of fluorescent reporters throughout the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "e81c5559-7477-4aa3-a5cb-dabf1e7dc012",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C86",
+      "claim": "The use of multiple sgRNAs increases the chances for off-target effects and chromosomal translocations.",
+      "claim_type": "EXPLICIT",
+      "source": "By knocking in four different transgenes into four different genes, the method generates four gene disruptions and four gene additions. However, the use of multiple sgRNAs also increases the chances for off-target effects and chromosomal translocations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from general knowledge about CRISPR/Cas9 and multiple DSBs.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "c79a3ed2-4031-4e81-9040-4f8bb3dacbec",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C87",
+      "claim": "Low levels of translocation events were observed between HBB and AAVS1, similar to previously published studies.",
+      "claim_type": "EXPLICIT",
+      "source": "By looking for monocentric translocations between two genes (HBB and AAVS1), we observed low levels of translocation events similar to previously published studies (Poirot et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the ddPCR translocation data and comparison to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "2ba778b3-a9dc-49d8-852d-22e7de9dae93",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C88",
+      "claim": "Off-target effects and translocations are likely sgRNA and target gene-specific and need to be assessed on a case-by-case basis.",
+      "claim_type": "EXPLICIT",
+      "source": "Such effects are likely sgRNA and target gene-specific and need to be assessed on a case-by-case basis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from general knowledge about CRISPR/Cas9 specificity.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "0f2dd2be-d9ef-4d19-8fc6-2529ad82d106",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C89",
+      "claim": "The observed tetra-genic targeting efficiencies at >0.5% are high enough to be experimentally useful.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed tetra-genic targeting efficiencies at >0.5% are high enough to be experimentally useful, and though some applications may be restricted by HSPC source and starting cell numbers, our targeting methodology may be combined with recent advances in HSPC expansion protocols (Fares et al., 2014; Cutler et al., 2013; de Lima et al., 2012; Popat et al., 2015) or with transplantation into a humanized bone marrow ossicle xenotransplantation model, which supports higher engraftment levels compared to a standard NSG model (Reinisch et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment based on the experimental data and citations to potential complementary methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "a7077067-57cd-4b3f-b039-b5f53ce0cd9b",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C90",
+      "claim": "The targeting methodology may be combined with recent advances in HSPC expansion protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed tetra-genic targeting efficiencies at >0.5% are high enough to be experimentally useful, and though some applications may be restricted by HSPC source and starting cell numbers, our targeting methodology may be combined with recent advances in HSPC expansion protocols (Fares et al., 2014; Cutler et al., 2013; de Lima et al., 2012; Popat et al., 2015) or with transplantation into a humanized bone marrow ossicle xenotransplantation model, which supports higher engraftment levels compared to a standard NSG model (Reinisch et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about future applications supported by citations to HSPC expansion methods.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "baac5672-2eb9-47e4-ae99-2c6d7b9fb70b",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C91",
+      "claim": "A humanized bone marrow ossicle xenotransplantation model supports higher engraftment levels compared to a standard NSG model.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed tetra-genic targeting efficiencies at >0.5% are high enough to be experimentally useful, and though some applications may be restricted by HSPC source and starting cell numbers, our targeting methodology may be combined with recent advances in HSPC expansion protocols (Fares et al., 2014; Cutler et al., 2013; de Lima et al., 2012; Popat et al., 2015) or with transplantation into a humanized bone marrow ossicle xenotransplantation model, which supports higher engraftment levels compared to a standard NSG model (Reinisch et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "ae956cb1-ba09-433c-a454-aaf908be0d8a",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C92",
+      "claim": "By using reporters as transgenes, one can both enrich and track the modified cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By using reporters as transgenes, one can both enrich and track the modified cells, and by using a transgene cassette in which a potentially biologically active transgene is linked through a 2A peptide or IRES to a reporter gene, one can enrich and track cells that could have up to four different new potentially bioactive genes expressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental design and results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "815f608e-94bd-46cf-bd9c-42ac84fc056b",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C93",
+      "claim": "By using a transgene cassette in which a potentially biologically active transgene is linked through a 2A peptide or IRES to a reporter gene, one can enrich and track cells that could have up to four different new potentially bioactive genes expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "By using reporters as transgenes, one can both enrich and track the modified cells, and by using a transgene cassette in which a potentially biologically active transgene is linked through a 2A peptide or IRES to a reporter gene, one can enrich and track cells that could have up to four different new potentially bioactive genes expressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential applications based on the methodology.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "c69216ce-6bf5-4018-9d80-e164db962af3",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C94",
+      "claim": "The feasibility of knocking in a cDNA immediately after the start codon of the gene has been demonstrated, thereby maintaining endogenous regulatory control over gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we and others have recently demonstrated the feasibility of knocking in a cDNA immediately after the start codon of the gene, thereby maintaining endogenous regulatory control over gene expression (Dever et al., 2016; Hubbard et al., 2016; Voit et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature including the authors' own work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "262611f1-ab33-4fd6-b46e-6f819a66bd0d",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C95",
+      "claim": "The methodology could be used for the characterization of gene interactions during blood and immune system disease pathogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our methodology could be used for the characterization of gene interactions during blood and immune system disease pathogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential applications of the methodology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "c5c21efb-5196-4191-961f-ffe96b377e6a",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C96",
+      "claim": "Zhao et al. showed that the loss of p53 cooperates with the KrasG12D mutation to promote acute myeloid leukemia (AML) in mouse HSPCs using a retroviral methodology.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Zhao et al., showed that the loss of p53 cooperates with the KrasG12D mutation to promote acute myeloid leukemia (AML) in mouse HSPCs using a retroviral methodology (Zhao et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "38617d1a-cbec-4cdf-90ae-285354c6a0c6",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C97",
+      "claim": "The system could be used to address whether findings from mouse HSPCs can be translated to human HSPCs by achieving site specific HR that would simultaneously knock out a tumor suppressor and drive mutant KRAS under endogenous regulatory conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our system could be used to address whether these findings can be translated to human HSPCs by achieving site specific HR that would simultaneously knock out a tumor suppressor (e.g. TP53) and drive mutant KRAS under endogenous regulatory conditions, instead of using strong constitutive exogenous viral promoters with little control over proviral copy number and heterogeneity of transgene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential applications of the methodology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "e58e5039-a17b-4721-ae6c-72dc97a70a6e",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C98",
+      "claim": "Biallelic integration in primary human T cells at CCR5 could be therapeutically applicable for engineering HIV-resistance, where biallelic knockout of CCR5 could be combined with expression of different HIV restriction factors.",
+      "claim_type": "EXPLICIT",
+      "source": "We also show biallelic integration in primary human T cells at CCR5, which could be therapeutically applicable for engineering HIV-resistance, where biallelic knockout of CCR5 could be combined with expression of different HIV restriction factors (Voit et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential therapeutic applications supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "d7e8a72f-fe72-43d6-b9f2-8a6153f4adbf",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C99",
+      "claim": "This approach could be useful to extend recently published studies showing high potency of chimeric antigen receptors (CARs) that were site-specifically integrated into the TRAC gene using CRISPR and AAV6 in primary human T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, this approach could be useful to extend recently published studies showing high potency of chimeric antigen receptors (CARs) that were site-specifically integrated into the TRAC gene using CRISPR and AAV6 in primary human T cells (Eyquem et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential applications supported by a citation to prior literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "978378ca-0797-4559-b91c-9a08973f1913",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C100",
+      "claim": "Multiplexed gene editing may be used to knock-in different CARs or co-stimulatory ligands into genes that are desirable to knock-out in CAR T cell therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiplexed gene editing may be used to knock-in different CARs or co-stimulatory ligands into genes that are desirable to knock-out in CAR T cell therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential therapeutic applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "202caa29-929d-468b-a58a-ec07a7fce4b4",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C101",
+      "claim": "The methodology should be widely applicable to other cell types of the hematopoietic system besides HSPCs and T cells, and even to cells of non-hematopoietic origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Our methodology should also be widely applicable to other cell types of the hematopoietic system besides HSPCs and T cells, and even to cells of non-hematopoietic origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the broader applicability of the methodology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "90cf1512-a358-41f0-9755-f2113bb571ed",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "claim_id": "C102",
+      "claim": "This method will be applicable to studying human hematopoiesis and immune system disease pathogenesis through multiplexed, site-specific genome engineering by HR.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we anticipate that this method will be applicable to studying human hematopoiesis and immune system disease pathogenesis through multiplexed, site-specific genome engineering by HR, which has the potential to lead to new discoveries in human hematopoietic stem cell biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the anticipated impact of the methodology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5b79e473-c85e-4ba2-bf3c-7d30e6875205",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors establish the limitations of current genome editing methods in HSPCs, including lentiviral approaches and NHEJ-based CRISPR editing, which lack precision, create heterogeneous populations, and cannot be easily tracked or enriched.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C12 collectively establish the context and limitations of prior methods through citations to published literature (C4-C12) and general statements about the field (C1). These claims are well-supported by appropriate citations and provide the rationale for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "60b4b2e2-c01e-43f4-97fc-c5e816f578ec",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors developed a method combining CRISPR/Cas9 RNPs with rAAV6 donor delivery to enable multiplexed homologous recombination in HSPCs and T cells, with reporter genes allowing FACS-based enrichment and tracking of modified cells across seven genetic loci.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3 describe the core methodology, supported by prior work (C13-C15) and experimental validation across multiple loci (C16). The method is well-documented with experimental data throughout the manuscript and builds on the authors' prior published work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "7ebd0079-cebf-45d3-9b41-9b0f063cf849",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Reporter-high HSPCs can be enriched by FACS sorting at day 4 post-electroporation, maintaining >99% reporter positivity over 22 days, with 92-100% of sorted cells having monoallelic targeted integration confirmed by PCR genotyping, and gene-specific INDEL rates on non-integrated alleles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C29 are supported by comprehensive experimental data including flow cytometry (C17-C21), colony assays (C22), and PCR genotyping of hundreds of clones (C23-C27). The data demonstrate high purity and stability of the enriched populations with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "8d80240d-49d3-41ed-95ed-f41ecab8838b",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Targeting STAG2, an X-linked cohesin complex gene, in male HSPCs results in functional gene knockout demonstrated by loss of erythroid colony formation capacity, validating the method for studying gene function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C36 demonstrate a proof-of-concept functional study. The biological rationale is supported by citations (C30), the genetic logic is sound (C31-C32), and the functional phenotype (C34-C35) provides validation. However, the study is limited to one gene and one functional readout.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "41f5f62c-fd3a-41f2-bb91-0562f0729401",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Biallelic targeting can be achieved in HSPCs and primary T cells by delivering two different reporter-encoding rAAV6 donors, generating 5-10% double-positive cells that maintain stable expression and show confirmed integration at both alleles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C44 demonstrate biallelic targeting across multiple genes (C37-C39) with PCR validation (C41), extension to T cells (C42-C43), and appropriate controls (C38). The data support the utility of the approach for complete gene knockout applications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "e2d16fa5-25d8-4d8f-86db-b55856406eea",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Di-genic targeting of two different genes simultaneously generates 8-10% double-positive HSPCs with confirmed integration at both loci in 88% of clones, low translocation frequencies (0.14-0.28%), and preserved multi-lineage engraftment potential in NSG mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C56 demonstrate di-genic targeting with comprehensive validation including flow cytometry (C45-C48), PCR genotyping (C49), INDEL analysis (C50), translocation quantification by ddPCR (C51-C53), and in vivo transplantation (C54). The translocation data addresses a key safety concern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "cca4a8cd-6491-4f97-aa9f-2f5a8e73905f",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Tetra-allelic targeting of both alleles at two genes generates ~1% quadruple-positive HSPCs with 78% showing confirmed integration at all four alleles, normal colony formation, and expression of all four reporters, representing six total genetic modifications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C62 demonstrate tetra-allelic targeting with flow cytometry (C57-C58), functional assays (C59), extensive PCR genotyping of 73 clones (C60), and reporter expression validation (C61). The interpretation of six genetic changes (C62) is logically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "905745a9-253f-4298-b420-62cffdff4caa",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Tri-genic targeting of three different genes generates an average of 4.5% triple-positive HSPCs (range 2.9-14%), with 78% showing integration at all three loci and 85% having all alleles modified, without significant toxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C68 demonstrate tri-genic targeting with flow cytometry (C63, C66-C67), PCR genotyping (C64-C65), and viability data (C68). The data show reproducibility across multiple experiments (N=5-6) with appropriate statistical analysis for the viability claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "1b10de4c-7363-4da1-a70e-3e1f7919613c",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Tetra-genic targeting of four different genes generates 0.7-1% quadruple-positive HSPCs, with 41-71% of tri-genic cells also showing tetra-genic modification, suggesting non-independence of HR events, and 89-98% of reporter-high cells derived from on-target HR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C72 demonstrate the highest level of multiplexing with flow cytometry data (C69-C70), an interesting observation about HR event correlation (C71), and validation of on-target specificity (C72). The non-independence observation (C71) is appropriately qualified as a suggestion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "59cf0c5c-7ba4-4c04-866c-05b7ae8d33cb",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Summary of targeting efficiencies across all multiplexing levels: monogenic (21.7\u00b113.4%, N=47), biallelic (5.5\u00b14.2%, N=16), di-genic (8.1\u00b18.1%, N=17), tetra-allelic (0.9\u00b10.3%, N=3), tri-genic (4.5\u00b14.8%, N=6), and tetra-genic (0.7\u00b10.3%, N=3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C78 summarize the targeting efficiencies from Table 1, representing data from multiple independent experiments. The sample sizes are adequate for most categories, though tetra-allelic and tetra-genic have only N=3. The high standard deviations reflect biological and technical variability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "2124c02e-fc50-48e9-8174-f76fc6da366a",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The method enables five key advantages over lentiviral approaches: multigenic targeting (\u22654 genes), enrichment of highly pure populations, cell tracking, biallelic targeting of \u22652 genes, and fluorescent lineage tracing, with potential for eight genetic modifications in tetra-genic targeting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C85 summarize the advantages of the method, which are supported by the experimental data throughout the manuscript. The claim about tNGFR use in clinical trials (C80) is established knowledge. These represent valid conclusions from the presented work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "ec1f431a-942a-4dce-a1aa-0a1b07e43ad1",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Multiple sgRNAs increase the risk of off-target effects and translocations, but observed translocation frequencies between HBB and AAVS1 were low (similar to prior studies), and effects are likely sgRNA and gene-specific requiring case-by-case assessment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C88 appropriately acknowledge limitations and risks. C86 is based on general knowledge about CRISPR, C87 is supported by the ddPCR data and comparison to prior literature, and C88 is a reasonable inference about the need for case-by-case validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "2f05d926-6849-4399-88d1-f7b50993b49e",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The tetra-genic targeting efficiency (>0.5%) is experimentally useful and could be combined with HSPC expansion protocols or improved transplantation models, with potential for tracking and enriching cells expressing up to four bioactive transgenes using reporter linkage strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C89-C94 mix supported conclusions (C89 based on achieved efficiencies, C94 supported by citations) with speculative future applications (C90, C92-C93). While C91 is supported by citation, the overall assessment of experimental utility and future combinations requires validation in specific applications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    },
+    {
+      "id": "8317d118-35c1-43c9-9cbc-93c48a141f9c",
+      "content_id": "e92f80ad-c69d-4f08-9ddb-79747a44c23e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The methodology has potential applications for studying gene interactions in disease pathogenesis, engineering HIV-resistant T cells, improving CAR-T cell therapy, and extending to other cell types, with anticipated impact on understanding human hematopoiesis and immune system diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C95-C102 are primarily speculative about future applications. While C96 is supported by citation to prior work, the other claims represent potential uses that have not been experimentally validated in this study. These are reasonable extrapolations but require future work to confirm.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:01.957889Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2f7ffdb5-f311-41c4-afa8-129f7d8b46e4",
+      "result_id": "5b79e473-c85e-4ba2-bf3c-7d30e6875205"
+    },
+    {
+      "claim_id": "14cd1e61-13f1-4a7f-ba6a-f45050628bbc",
+      "result_id": "5b79e473-c85e-4ba2-bf3c-7d30e6875205"
+    },
+    {
+      "claim_id": "a5fb961a-bf1c-4b67-b0e1-aee15b067913",
+      "result_id": "5b79e473-c85e-4ba2-bf3c-7d30e6875205"
+    },
+    {
+      "claim_id": "a47f09c0-d6dc-4adc-ae51-94daa150e8b8",
+      "result_id": "5b79e473-c85e-4ba2-bf3c-7d30e6875205"
+    },
+    {
+      "claim_id": "d9a0fd06-af5b-48bd-a6d8-a61a89a7b1d7",
+      "result_id": "5b79e473-c85e-4ba2-bf3c-7d30e6875205"
+    },
+    {
+      "claim_id": "dcfdc9de-7bcf-4c2d-a990-cf2245233854",
+      "result_id": "5b79e473-c85e-4ba2-bf3c-7d30e6875205"
+    },
+    {
+      "claim_id": "b735a148-99da-43c0-b0cf-80853ec9939d",
+      "result_id": "5b79e473-c85e-4ba2-bf3c-7d30e6875205"
+    },
+    {
+      "claim_id": "045f9a50-a610-43ef-b28d-7e13be1db215",
+      "result_id": "5b79e473-c85e-4ba2-bf3c-7d30e6875205"
+    },
+    {
+      "claim_id": "9d6f45dd-8391-4543-9a3e-2db0d8cdfe91",
+      "result_id": "5b79e473-c85e-4ba2-bf3c-7d30e6875205"
+    },
+    {
+      "claim_id": "70981d28-1653-46cc-ab80-0a9b6429e002",
+      "result_id": "5b79e473-c85e-4ba2-bf3c-7d30e6875205"
+    },
+    {
+      "claim_id": "a4baed84-8a1b-4f99-aba8-70e6b15f4ec2",
+      "result_id": "60b4b2e2-c01e-43f4-97fc-c5e816f578ec"
+    },
+    {
+      "claim_id": "f2646778-adb0-43c1-8392-334aee7a90e7",
+      "result_id": "60b4b2e2-c01e-43f4-97fc-c5e816f578ec"
+    },
+    {
+      "claim_id": "c44ef33e-2bd5-4dd8-9847-27c4c52d3201",
+      "result_id": "60b4b2e2-c01e-43f4-97fc-c5e816f578ec"
+    },
+    {
+      "claim_id": "851cc5e2-b25e-408e-b8f0-fa0d7ed8e054",
+      "result_id": "60b4b2e2-c01e-43f4-97fc-c5e816f578ec"
+    },
+    {
+      "claim_id": "b201c6f6-8eed-4b02-9385-856ef582bc6a",
+      "result_id": "60b4b2e2-c01e-43f4-97fc-c5e816f578ec"
+    },
+    {
+      "claim_id": "1f0f8d38-3f8b-43d6-8bc8-2e79274c9f9a",
+      "result_id": "60b4b2e2-c01e-43f4-97fc-c5e816f578ec"
+    },
+    {
+      "claim_id": "ab2768c4-6ea7-4477-a80d-19fd06023d93",
+      "result_id": "7ebd0079-cebf-45d3-9b41-9b0f063cf849"
+    },
+    {
+      "claim_id": "6eb6be73-fe15-4e86-a78e-d794e2642102",
+      "result_id": "7ebd0079-cebf-45d3-9b41-9b0f063cf849"
+    },
+    {
+      "claim_id": "025d6fd4-c7dc-4a7c-bf42-c083a57256e0",
+      "result_id": "7ebd0079-cebf-45d3-9b41-9b0f063cf849"
+    },
+    {
+      "claim_id": "7128531b-1f86-4e0d-9645-63df9f307646",
+      "result_id": "7ebd0079-cebf-45d3-9b41-9b0f063cf849"
+    },
+    {
+      "claim_id": "09400426-8e0f-40ba-8c66-030733914e80",
+      "result_id": "7ebd0079-cebf-45d3-9b41-9b0f063cf849"
+    },
+    {
+      "claim_id": "3d766744-b93b-435c-bced-8fb7de4b62b8",
+      "result_id": "7ebd0079-cebf-45d3-9b41-9b0f063cf849"
+    },
+    {
+      "claim_id": "f795d8f4-adb1-4f27-93ac-33328e9a9b07",
+      "result_id": "7ebd0079-cebf-45d3-9b41-9b0f063cf849"
+    },
+    {
+      "claim_id": "0ad84213-5866-43fa-93f2-e66bfc47c8aa",
+      "result_id": "7ebd0079-cebf-45d3-9b41-9b0f063cf849"
+    },
+    {
+      "claim_id": "2f866c1d-dbf4-4762-b055-3f7fda95649d",
+      "result_id": "7ebd0079-cebf-45d3-9b41-9b0f063cf849"
+    },
+    {
+      "claim_id": "99974647-c72a-4796-a87b-a88a0f7c8821",
+      "result_id": "7ebd0079-cebf-45d3-9b41-9b0f063cf849"
+    },
+    {
+      "claim_id": "2c58bc4b-9a00-4ee8-84a1-ca734563a4b8",
+      "result_id": "7ebd0079-cebf-45d3-9b41-9b0f063cf849"
+    },
+    {
+      "claim_id": "709abbdf-88af-4f73-9338-7af2985d1935",
+      "result_id": "7ebd0079-cebf-45d3-9b41-9b0f063cf849"
+    },
+    {
+      "claim_id": "ed1e6312-58b0-47f8-8957-0e94d8d2720c",
+      "result_id": "7ebd0079-cebf-45d3-9b41-9b0f063cf849"
+    },
+    {
+      "claim_id": "0bc74f01-bc9c-4541-92b1-468a6beab550",
+      "result_id": "8d80240d-49d3-41ed-95ed-f41ecab8838b"
+    },
+    {
+      "claim_id": "eed57852-214c-4702-8873-24cba8fe4e95",
+      "result_id": "8d80240d-49d3-41ed-95ed-f41ecab8838b"
+    },
+    {
+      "claim_id": "2e263ed6-06e8-4002-baf3-b1e4ed163280",
+      "result_id": "8d80240d-49d3-41ed-95ed-f41ecab8838b"
+    },
+    {
+      "claim_id": "656a1ee6-f9e5-4a38-ac11-750e41239354",
+      "result_id": "8d80240d-49d3-41ed-95ed-f41ecab8838b"
+    },
+    {
+      "claim_id": "2d2050d6-fd9c-482e-85ff-7f6b0a5c4cc9",
+      "result_id": "8d80240d-49d3-41ed-95ed-f41ecab8838b"
+    },
+    {
+      "claim_id": "de5ee390-0952-41a8-9236-4c2142d9af16",
+      "result_id": "8d80240d-49d3-41ed-95ed-f41ecab8838b"
+    },
+    {
+      "claim_id": "dc8c75f4-2d19-4279-9987-66ab053b2e00",
+      "result_id": "8d80240d-49d3-41ed-95ed-f41ecab8838b"
+    },
+    {
+      "claim_id": "1d3931eb-6730-4ce5-8520-b79187a0798e",
+      "result_id": "41f5f62c-fd3a-41f2-bb91-0562f0729401"
+    },
+    {
+      "claim_id": "bae314c7-9f93-4c8e-bd40-3e49a060e431",
+      "result_id": "41f5f62c-fd3a-41f2-bb91-0562f0729401"
+    },
+    {
+      "claim_id": "7e7099c1-3caa-4655-8db3-60bc19d0a4be",
+      "result_id": "41f5f62c-fd3a-41f2-bb91-0562f0729401"
+    },
+    {
+      "claim_id": "f16d526e-d41b-410f-a3f7-936ae2d38560",
+      "result_id": "41f5f62c-fd3a-41f2-bb91-0562f0729401"
+    },
+    {
+      "claim_id": "50ffa659-124a-401b-8f10-2c336cad7ed0",
+      "result_id": "41f5f62c-fd3a-41f2-bb91-0562f0729401"
+    },
+    {
+      "claim_id": "b5d5658f-1b70-4f60-af4c-e043084d3db8",
+      "result_id": "41f5f62c-fd3a-41f2-bb91-0562f0729401"
+    },
+    {
+      "claim_id": "00c5b501-8a8f-4d43-a702-355f1937f420",
+      "result_id": "41f5f62c-fd3a-41f2-bb91-0562f0729401"
+    },
+    {
+      "claim_id": "1c9813e8-e873-4da9-b64a-a231a5a359cc",
+      "result_id": "e2d16fa5-25d8-4d8f-86db-b55856406eea"
+    },
+    {
+      "claim_id": "1ecdf96b-8364-4af1-af41-e55ca3101453",
+      "result_id": "e2d16fa5-25d8-4d8f-86db-b55856406eea"
+    },
+    {
+      "claim_id": "b9e75e43-9aca-4f77-8f0d-50ec98dbc632",
+      "result_id": "e2d16fa5-25d8-4d8f-86db-b55856406eea"
+    },
+    {
+      "claim_id": "d5a4d6e3-3dc2-4d97-904b-11d3a18d5b16",
+      "result_id": "e2d16fa5-25d8-4d8f-86db-b55856406eea"
+    },
+    {
+      "claim_id": "78007ee2-3e8a-459a-80c9-b3ce055dedaa",
+      "result_id": "e2d16fa5-25d8-4d8f-86db-b55856406eea"
+    },
+    {
+      "claim_id": "edc16f60-7e2a-4338-96db-a1489581083e",
+      "result_id": "e2d16fa5-25d8-4d8f-86db-b55856406eea"
+    },
+    {
+      "claim_id": "5541c087-6d91-48cf-a67d-e44619b1ae57",
+      "result_id": "e2d16fa5-25d8-4d8f-86db-b55856406eea"
+    },
+    {
+      "claim_id": "474df0ca-1910-466c-b975-bf4a0e8f98ee",
+      "result_id": "e2d16fa5-25d8-4d8f-86db-b55856406eea"
+    },
+    {
+      "claim_id": "2323ebbf-7185-4f6d-a851-37ff1c46a78e",
+      "result_id": "e2d16fa5-25d8-4d8f-86db-b55856406eea"
+    },
+    {
+      "claim_id": "3f8d8401-d96f-4169-a93d-d28ca31b3872",
+      "result_id": "e2d16fa5-25d8-4d8f-86db-b55856406eea"
+    },
+    {
+      "claim_id": "5fe9b0fd-97f7-4d4a-94ef-48f25a9c2ace",
+      "result_id": "e2d16fa5-25d8-4d8f-86db-b55856406eea"
+    },
+    {
+      "claim_id": "7fa76277-c7a8-457b-b386-6c29aa8a3935",
+      "result_id": "e2d16fa5-25d8-4d8f-86db-b55856406eea"
+    },
+    {
+      "claim_id": "e08e490c-39f8-468c-b6a7-a7517bd803ba",
+      "result_id": "cca4a8cd-6491-4f97-aa9f-2f5a8e73905f"
+    },
+    {
+      "claim_id": "e60eee78-42a7-4c42-b369-1d49103e5eb8",
+      "result_id": "cca4a8cd-6491-4f97-aa9f-2f5a8e73905f"
+    },
+    {
+      "claim_id": "63ec2d1d-c603-4a03-b8ff-e325a0c7eaf8",
+      "result_id": "cca4a8cd-6491-4f97-aa9f-2f5a8e73905f"
+    },
+    {
+      "claim_id": "2086d68e-a01b-45c7-a41a-96b42fc04d0c",
+      "result_id": "cca4a8cd-6491-4f97-aa9f-2f5a8e73905f"
+    },
+    {
+      "claim_id": "0030c726-1aa9-4d65-9164-40adc62abb1d",
+      "result_id": "cca4a8cd-6491-4f97-aa9f-2f5a8e73905f"
+    },
+    {
+      "claim_id": "102a1d06-7e0d-441d-8c86-e67272c8bd18",
+      "result_id": "cca4a8cd-6491-4f97-aa9f-2f5a8e73905f"
+    },
+    {
+      "claim_id": "36b82982-1042-4513-a11b-6d99083c92c2",
+      "result_id": "905745a9-253f-4298-b420-62cffdff4caa"
+    },
+    {
+      "claim_id": "6e7858ba-810c-4484-9abf-9ad1a3857111",
+      "result_id": "905745a9-253f-4298-b420-62cffdff4caa"
+    },
+    {
+      "claim_id": "0c38b8ea-b82b-4652-980e-ae3e151fd099",
+      "result_id": "905745a9-253f-4298-b420-62cffdff4caa"
+    },
+    {
+      "claim_id": "0ade284c-dfb9-4532-93a0-062881240510",
+      "result_id": "905745a9-253f-4298-b420-62cffdff4caa"
+    },
+    {
+      "claim_id": "b2c6d4d1-41b3-4844-b60a-d68d2b73d179",
+      "result_id": "905745a9-253f-4298-b420-62cffdff4caa"
+    },
+    {
+      "claim_id": "4ec8712a-8801-4374-aa9b-23bf18444253",
+      "result_id": "905745a9-253f-4298-b420-62cffdff4caa"
+    },
+    {
+      "claim_id": "83109259-b49b-4fbe-86f5-e890a8f2f38f",
+      "result_id": "1b10de4c-7363-4da1-a70e-3e1f7919613c"
+    },
+    {
+      "claim_id": "06c6f1cc-f041-4c39-887f-efca4068f027",
+      "result_id": "1b10de4c-7363-4da1-a70e-3e1f7919613c"
+    },
+    {
+      "claim_id": "0c41bc03-ec0f-475c-9236-919cf75e1e1b",
+      "result_id": "1b10de4c-7363-4da1-a70e-3e1f7919613c"
+    },
+    {
+      "claim_id": "2d3427b3-23b8-441d-a69a-18a047cad486",
+      "result_id": "1b10de4c-7363-4da1-a70e-3e1f7919613c"
+    },
+    {
+      "claim_id": "973406ec-f7cd-4a53-9926-37a70bd67eb8",
+      "result_id": "59cf0c5c-7ba4-4c04-866c-05b7ae8d33cb"
+    },
+    {
+      "claim_id": "725d8206-34f3-482d-ab16-5119bb709a23",
+      "result_id": "59cf0c5c-7ba4-4c04-866c-05b7ae8d33cb"
+    },
+    {
+      "claim_id": "47da4c8f-9653-4b9f-999a-04eca2f0713e",
+      "result_id": "59cf0c5c-7ba4-4c04-866c-05b7ae8d33cb"
+    },
+    {
+      "claim_id": "d08e4dfc-1f72-4f2d-a085-32ba5950a4f4",
+      "result_id": "59cf0c5c-7ba4-4c04-866c-05b7ae8d33cb"
+    },
+    {
+      "claim_id": "37f4d777-d11e-4dbb-9d8e-be31785eada4",
+      "result_id": "59cf0c5c-7ba4-4c04-866c-05b7ae8d33cb"
+    },
+    {
+      "claim_id": "1bcfd45b-17a0-475f-b2ae-7ef642f56acf",
+      "result_id": "59cf0c5c-7ba4-4c04-866c-05b7ae8d33cb"
+    },
+    {
+      "claim_id": "75f8f1a5-5996-437a-8568-938f66148df0",
+      "result_id": "2124c02e-fc50-48e9-8174-f76fc6da366a"
+    },
+    {
+      "claim_id": "8ea8a15b-b79a-4279-83d1-01c88619530a",
+      "result_id": "2124c02e-fc50-48e9-8174-f76fc6da366a"
+    },
+    {
+      "claim_id": "72baf357-be55-4fd6-a943-52471cffc0fd",
+      "result_id": "2124c02e-fc50-48e9-8174-f76fc6da366a"
+    },
+    {
+      "claim_id": "e6beac9b-5cb6-4e07-929b-d6009449cccc",
+      "result_id": "2124c02e-fc50-48e9-8174-f76fc6da366a"
+    },
+    {
+      "claim_id": "269a8600-f39f-4f82-8be2-d3d77b0ebb8d",
+      "result_id": "2124c02e-fc50-48e9-8174-f76fc6da366a"
+    },
+    {
+      "claim_id": "1df0ef21-6dad-4654-993f-995882ede219",
+      "result_id": "2124c02e-fc50-48e9-8174-f76fc6da366a"
+    },
+    {
+      "claim_id": "691981ea-1855-4b59-9397-40eced4bcae2",
+      "result_id": "2124c02e-fc50-48e9-8174-f76fc6da366a"
+    },
+    {
+      "claim_id": "e81c5559-7477-4aa3-a5cb-dabf1e7dc012",
+      "result_id": "ec1f431a-942a-4dce-a1aa-0a1b07e43ad1"
+    },
+    {
+      "claim_id": "c79a3ed2-4031-4e81-9040-4f8bb3dacbec",
+      "result_id": "ec1f431a-942a-4dce-a1aa-0a1b07e43ad1"
+    },
+    {
+      "claim_id": "2ba778b3-a9dc-49d8-852d-22e7de9dae93",
+      "result_id": "ec1f431a-942a-4dce-a1aa-0a1b07e43ad1"
+    },
+    {
+      "claim_id": "0f2dd2be-d9ef-4d19-8fc6-2529ad82d106",
+      "result_id": "2f05d926-6849-4399-88d1-f7b50993b49e"
+    },
+    {
+      "claim_id": "a7077067-57cd-4b3f-b039-b5f53ce0cd9b",
+      "result_id": "2f05d926-6849-4399-88d1-f7b50993b49e"
+    },
+    {
+      "claim_id": "baac5672-2eb9-47e4-ae99-2c6d7b9fb70b",
+      "result_id": "2f05d926-6849-4399-88d1-f7b50993b49e"
+    },
+    {
+      "claim_id": "ae956cb1-ba09-433c-a454-aaf908be0d8a",
+      "result_id": "2f05d926-6849-4399-88d1-f7b50993b49e"
+    },
+    {
+      "claim_id": "815f608e-94bd-46cf-bd9c-42ac84fc056b",
+      "result_id": "2f05d926-6849-4399-88d1-f7b50993b49e"
+    },
+    {
+      "claim_id": "c69216ce-6bf5-4018-9d80-e164db962af3",
+      "result_id": "2f05d926-6849-4399-88d1-f7b50993b49e"
+    },
+    {
+      "claim_id": "262611f1-ab33-4fd6-b46e-6f819a66bd0d",
+      "result_id": "8317d118-35c1-43c9-9cbc-93c48a141f9c"
+    },
+    {
+      "claim_id": "c5c21efb-5196-4191-961f-ffe96b377e6a",
+      "result_id": "8317d118-35c1-43c9-9cbc-93c48a141f9c"
+    },
+    {
+      "claim_id": "38617d1a-cbec-4cdf-90ae-285354c6a0c6",
+      "result_id": "8317d118-35c1-43c9-9cbc-93c48a141f9c"
+    },
+    {
+      "claim_id": "e58e5039-a17b-4721-ae6c-72dc97a70a6e",
+      "result_id": "8317d118-35c1-43c9-9cbc-93c48a141f9c"
+    },
+    {
+      "claim_id": "d7e8a72f-fe72-43d6-b9f2-8a6153f4adbf",
+      "result_id": "8317d118-35c1-43c9-9cbc-93c48a141f9c"
+    },
+    {
+      "claim_id": "978378ca-0797-4559-b91c-9a08973f1913",
+      "result_id": "8317d118-35c1-43c9-9cbc-93c48a141f9c"
+    },
+    {
+      "claim_id": "202caa29-929d-468b-a58a-ec07a7fce4b4",
+      "result_id": "8317d118-35c1-43c9-9cbc-93c48a141f9c"
+    },
+    {
+      "claim_id": "90cf1512-a358-41f0-9755-f2113bb571ed",
+      "result_id": "8317d118-35c1-43c9-9cbc-93c48a141f9c"
+    }
+  ],
+  "comparisons": []
+}

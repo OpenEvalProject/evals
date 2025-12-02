@@ -1,0 +1,2138 @@
+{
+  "submission": {
+    "id": "8c2aa4a2-e538-497e-8c5d-1baf1daf9f0a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:03:28.797542Z",
+    "updated_at": "2025-12-01T22:03:28.797542Z"
+  },
+  "content": [
+    {
+      "id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "submission_id": "8c2aa4a2-e538-497e-8c5d-1baf1daf9f0a",
+      "content_type": "manuscript",
+      "content_text": "# A versatile genetic tool for post-translational control of gene expression in Drosophila melanogaster\n\n## Authors\n\n- Sachin Sethi<sup>1</sup>\n- Jing W Wang<sup>1</sup> ([ORCID: 0000-0001-6291-5802](https://orcid.org/0000-0001-6291-5802)) \u2020\n\n### Affiliations\n\n1. Neurobiology Section, Division of Biological Sciences University of California, San Diego San Diego United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSeveral techniques have been developed to manipulate gene expression temporally in intact neural circuits. However, the applicability of current tools developed for in vivo studies in Drosophila is limited by their incompatibility with existing GAL4 lines and side effects on physiology and behavior. To circumvent these limitations, we adopted a strategy to reversibly regulate protein degradation with a small molecule by using a destabilizing domain (DD). We show that this system is effective across different tissues and developmental stages. We further show that this system can be used to control in vivo gene expression levels with low background, large dynamic range, and in a reversible manner without detectable side effects on the lifespan or behavior of the animal. Additionally, we engineered tools for chemically controlling gene expression (GAL80-DD) and recombination (FLP-DD). We demonstrate the applicability of this technology in manipulating neuronal activity and for high-efficiency sparse labeling of neuronal populations.\n\n## Introduction\n\nTools for precise spatial and temporal control of gene expression are essential for understanding how neuronal circuits develop and function. For example, limiting genetic manipulation of a target gene to a specific time and a defined neuronal population permits the separation of the developmental role of the gene from its contribution to circuit function in the adult stage. In the vinegar fly, Drosophila melanogaster, bipartite expression systems (GAL4/UAS, LexA/LexAop, QF/QUAS) provide a powerful means to control gene expression in a spatially selective manner (Brand and Perrimon, 1993; Lai and Lee, 2006; Potter et al., 2010). Several modifications of these expression systems have been made to permit temporal control over the exogenous transcription factors (GAL4, LexA or QF) (Chan et al., 2015; McGuire et al., 2003; Osterwalder et al., 2001; Potter et al., 2010). Much of the effort has been focused on using temperature or chemicals as means to control the gene expression systems. Temperature-dependent expression systems have been previously engineered by the direct fusion of a heat-inducible promoter to a gene of interest (Lis et al., 1983), or by using a temperature sensitive allele of GAL80, GAL80ts. In the GAL4/UAS system, GAL80ts suppresses GAL4-induced gene expression at a low temperature (18\u00b0C) but not at a high temperature (29\u00b0C) (McGuire et al., 2003). Chemical-dependent tools include tetracycline-inducible systems (Bello et al., 1998; Bieschke et al., 1998), steroid hormone-inducible GAL4/LexA hormone receptor chimeras (Han et al., 2000; Osterwalder et al., 2001; Roman et al., 2001) and the quinic acid-inducible QS/QF/QUAS system (Potter et al., 2010). For example, an RU486-inducible GAL4 was made by fusing the GAL4 DNA-binding domain to the human progesterone receptor and the p65 transcriptional activation domain (Roman et al., 2001). However, there are limitations associated with the existing tools for temporal control of gene expression. First, temperature can have a significant impact on the physiology and behavior of a fly (Parisky et al., 2016; Sigrist et al., 2003), which may prevent detection of the phenotype of interest. For example, temperature-dependent tools are unlikely to be suitable for the study of thermosensory circuits and related behaviors. Second, temporal control of gene expression using GAL80ts can only be achieved with transcription factors containing the GAD-activation domain, making it incompatible with a majority of the driver lines (LexA, QF and split-GAL4) that do not have the GAD domain. Third, application of the current chemical-dependent tools requires the generation of new transgenic stocks, such as new promoter-GAL4 lines. Additionally, RU486, a chemical used to induce gene expression in the Geneswitch system, has been reported to cause developmental lethality in flies with pan-neuronal expression of the RU486-sensitive GAL4 (Li and Stavropoulos, 2016).\n\nWe propose an alternative chemically inducible system, in which gene expression is controlled at the post-translational stage, making it compatible with the existing library of GAL4 stocks. We adopted the destabilizing domain (DD) derived from dihydrofolate reductase (ecDHFR) of E. coli to control protein stability in a ligand-inducible manner (Cho et al., 2013; Iwamoto et al., 2010), a strategy that has been used to control gene expression in mice and worms (Cho et al., 2013; Iwamoto et al., 2010; Sando et al., 2013). On fusing the destabilizing domain to a protein of interest, the chimeric protein is degraded by the proteasome, but its degradation is blocked by trimethoprim (TMP), a cell-permeable ligand for DD (Figure 1A) (Iwamoto et al., 2010). Thus, the protein of interest can be temporally controlled by TMP. A recent study demonstrated that TMP can regulate activity of the yeast I-SceI endonuclease in Drosophila larvae expressing the fusion protein I-SceI-DD (Janssen et al., 2016). Here, we characterized the efficiency and dynamics of this technology in vivo in the fly brain. We then\u00a0used the DD technology to develop tools for mapping and manipulating neural circuits in Drosophila. As a proof of its utility, we fused DD to GAL80 and controlled GAL4-dependent gene expression in a TMP-dependent manner. We show that TMP can activate GAL80-DD to manipulate neuronal activity in behaviorally relevant sensory neurons. Additionally, by fusing DD to the FLP recombinase, we devised a strategy to control the recombination frequency within a neuronal population by controlling the concentration of TMP in fly food. We further used the destabilized FLP recombinase to refine the expression pattern arising from the intersection of two transgenic lines by temporally limiting the availability of TMP. In summary, we present a chemically inducible system optimized for neurogenetics in Drosophila with broader utility than comparable tools.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/30327/elife-30327-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of the destabilizing domain (DD) system. ecDHFR\u00a0=\u00a0E. coli. dihydrofolate reductase, POI\u00a0=\u00a0protein of interest, TMP\u00a0=\u00a0trimethoprim. (B) TMP-dependent GFP expression in the adult brain. Flies were fed 1 mM TMP-containing food from embryo stage up to dissection. (C, D) Dose-dependent change in GFP-DD expression in the axonal terminals of olfactory sensory neurons. Orco-Gal4, UAS-GFP-DD flies were fed with TMP (0\u20135 mM) for 48 hr before dissection (n\u00a0=\u00a05\u20136, p<0.001, F\u00a0=\u00a041.37, one-way ANOVA with Tukey\u2019s post-hoc test). (E, F) GFP-DD expression is dependent on duration of TMP feeding. All flies were fed with fly food containing 1 mM TMP (n\u00a0=\u00a05\u20136, p<0.001, F=\u00a087.34, one-way ANOVA with Tukey\u2019s post-hoc test). (G, H) GFP degradation kinetics. Flies were fed with 1 mM TMP for 48 hr and then switched to standard fly food. GFP-DD expression in the antennal lobe was observed at 12 hr intervals following the switch. (n\u00a0=\u00a08\u201310, p<0.001, F\u00a0=\u00a071.43, one-way ANOVA with Tukey\u2019s post-hoc test). Error bars indicate SEM. Significant differences between conditions (p<0.05) are denoted by different letters. Scale bar\u00a0=\u00a0100 \u03bcm (B), 50 \u03bcm (C, E, G).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30327/elife-30327-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic of the 10XUAS-GFP-DD construct.\u00a0Restriction sites are shown in red to facilitate cloning. All shown sites are unique apart from XhoI which has two cut sites (both shown). (B) DNA and protein sequence of the destabilizing domain.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30327/elife-30327-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Panels\u00a0from left to right: Larva, Early pupa (48 hr APF), Late pupa (96 hr APF), Adult (<12 hr post eclosion), Adult (3 day old).\u00a0Fluorescence intensity has been normalized to the mean fluorescence intensity from the brains of flies fed with the solvent. Scale bar\u00a0=\u00a0100 \u03bcm. Differences in GFP expression between solvent and TMP fed flies are significant (unpaired t-test, two-tailed) across all developmental stages - Larva (p<0.001, t\u00a0=\u00a018.6, n\u00a0=\u00a06), Early pupa (p<0.001, t\u00a0=\u00a010.89, n\u00a0=\u00a05\u20136), Late pupa (p=0.025, t\u00a0=\u00a03.46, n\u00a0=\u00a05\u20136), Adult at eclosion (p=0.022, t\u00a0=\u00a03.25, n\u00a0=\u00a06), 3 day old adult (p<0.001, t\u00a0=\u00a07.55, n\u00a0=\u00a06).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/30327/elife-30327-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) TMP-dependent GFP expression in different cell types in the adult brain.\u00a0Fluorescence intensity has been normalized to the mean fluorescence intensity from the brains of flies fed with the solvent. Flies were fed with solvent or TMP-containing food from embryo stage to five days post-eclosion. Differences in GFP expression between solvent and TMP-fed flies are significant for all cell-types shown (n\u00a0=\u00a04\u20136, p<0.003, t\u00a0>\u00a05.3, unpaired t-test, two-tailed, for all cell types). (B, C) TMP-dependent GFP expression in ovaries (B) and the foreleg (C). (D) TMP-dependent GFP expression in olfactory sensory neurons driven\u00a0by\u00a0the LexA/LexAop system. Scale bar\u00a0=\u00a050 \u03bcm (A, D), 100 \u03bcm (B), 150 \u03bcm (C).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/30327/elife-30327-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Survival of wild-type flies fed with 0\u201310 mM TMP from eclosion to death.\u00a015 flies were placed in each vial, four vials per condition. Error bars indicate SEM. (B) Survival (top) and developmental timing (bottom) of flies raised on 0\u201310 mM TMP. 20 eggs were placed in each vial, four vials per condition, one-way ANOVA with Tukey\u2019s post-hoc test. Significant differences between conditions (p<0.05) are denoted by different letters. Survival to pupa (n\u00a0=\u00a04, p=0.186, F\u00a0=\u00a01.88), survival to adult (n\u00a0=\u00a04, p=0.245, F\u00a0=\u00a01.58), time to pupation (n\u00a0=\u00a04, p<0.0001, F\u00a0=\u00a0389.04), and time to adulthood (n\u00a0=\u00a04, p<0.0001, F\u00a0=\u00a0251.73) (C) Walking speed of wild-type (CS) flies fed with 1 mM TMP or solvent for 48 hr prior to assay (n\u00a0=\u00a0159\u2013161, unpaired t-test, two-tailed). Bar indicates median. Whiskers indicate 90% percentile. (D) Percentage of flies reaching the food odor is plotted against time. Food odor: 1% apple cider vinegar. Error bars indicate SEM.\n\n## Results\n\n### Destabilized GFP\n\nWe first tested whether the ecDHFR-derived destabilizing domain (DD) can be used to control GFP expression levels. DD was genetically fused to the C-terminus of GFP and cloned into a 10XUAS construct (Figure 1A, Figure 1\u2014figure supplement 1) to make UAS-GFP-DD transgenic flies. We reasoned that GFP expression should be conditioned on both the presence of the transcriptional activator GAL4 and the availability of the stabilizing ligand TMP. The expression of GAL4 in select neuronal populations affords spatial specificity. Feeding these flies with TMP at a specific time could provide a temporal control of GFP expression.\n\nUsing the pan-neuronal nsyb-GAL4 to drive GFP-DD expression, we observed robust GFP expression throughout the brain of adult flies fed with TMP (Figure 1B). In the absence of TMP, GFP expression was low throughout the brain; this is consistent with the previous studies in mice and nematodes showing that unbound DD is an effective tag to mark the fusion protein for degradation (Cho et al., 2013; Sando et al., 2013) (Figure 1B). However, TMP levels may start to decline at the beginning of pupation, during which flies do not feed. To determine the efficiency of TMP-dependent GFP-DD stabilization during development, we measured GFP-DD expression throughout the brain from the larval to the adult stage (Figure 1\u2014figure supplement 2A). We found substantial differences in GFP-DD expression between flies fed with solvent versus TMP during the larval (44 fold), 48 hr APF (19 fold) and three day old adult (27 fold) stages. Notably, even though flies do not feed for several days leading up to the late pupal stage (96 hr APF) and eclosion (<12 hr adult), we observed a five-fold difference in GFP-DD expression between flies raised on solvent versus TMP (Figure 1\u2014figure supplement 2A). In summary, the TMP-inducible DD system is maximally effective during the larval, early pupal and adult stages. During the late pupal stage, however, the utility of the system may be limited by unavailability of TMP.\n\nBecause TMP-dependent protein stabilization acts through post-translational modification of protein levels, it should be compatible with any GAL4, LexA, QF or split-GAL4 line. To illustrate this principle, we visualized TMP-dependent GFP-DD expression across several different cell types in the adult brain using previously characterized driver lines (Figure 1\u2014figure supplement 3A). We observed a significant difference in GFP-DD expression (ranging from 4 to 64 fold) between solvent and TMP feeding for every cell type that we tested. Maximum differences were observed in the axon terminals of sensory neurons (at least 45 fold). Interestingly, different cell types innervating the same anatomical region showed differential susceptibility to the DD system. For example, olfactory sensory neurons showed a much larger difference between TMP and solvent feeding (45 fold) compared to olfactory projection neurons (6 fold), even though both cell types innervate the antennal lobe. Similarly, PAM dopamine neurons showed a larger difference in GFP-DD expression (12 fold) compared to Kenyon cells (4 fold), even though both cell types innervate the mushroom body. Based on these results, we conclude that at least some of the differences between cell types arise from the variability in their proteasome activity levels. We also observed that the DD system was effective in non-neuronal tissues, such as ovaries (Figure 1\u2014figure supplement 3B). Finally, to demonstrate that the DD system can be used in combination with other binary systems apart from GAL4/UAS, we generated a 13XLexAop-GFP-DD transgenic fly line and observed similar TMP-dependent GFP expression in olfactory sensory neurons using the Orco-LexA driver line (Figure 1\u2014figure supplement 3D).\n\nWe next carried out experiments to determine the kinetics and dynamic range of this chemical induction system using Orco-GAL4 to drive GFP-DD expression in olfactory sensory neurons. Feeding adult flies with food containing varying concentrations (0\u20135 mM) of TMP for 48 hr resulted in a dose-dependent change in GFP expression in the antennal lobe (Figure 1C,D). The maximum GFP expression, induced by 1 mM TMP, was between 34 and 45 times higher than that of control flies fed with the solvent-containing food (Figure 1D, Figure 1\u2014figure supplement 3A). Results from an experiment in which flies were fed for varying durations (0\u201360 hr) with food containing 1 mM TMP show that GFP levels increase initially but plateau within 36 hr (Figure 1E,F). To test if TMP-dependent GFP expression is reversible, we fed flies with food containing 1 mM TMP for 48 hr and then switched them to regular food (Figure 1G). We found that the GFP intensity was reduced by 73% within 24 hr (Figure 1H). In sum, using GFP as a test molecule, we show that genetic fusion of the ecDHFR-derived destabilizing domain confers instability to a protein of interest in Drosophila. Feeding flies with TMP can control protein levels in a reversible and dose-dependent manner with a large dynamic range.\n\nWe then investigated whether TMP has adverse effects on survival and behavior. Feeding adult flies with a defined medium containing TMP ranging from 0 to 10 mM did not have any detectable effect on their survival (Figure 1\u2014figure supplement 4A). Moreover, feeding adult flies with 1 mM TMP for 48 hr did not alter their locomotion speed (Figure 1\u2014figure supplement 4C) or their ability to locate an odor source (Figure 1\u2014figure supplement 4D) during foraging. We then tested if TMP affects the development of the fly. Flies raised on TMP ranging from 0 to 10 mM throughout development were equally likely to survive to adulthood (Figure 1\u2014figure supplement 4B). However, we observed a delay in the developmental time for flies raised on 1 mM TMP (11.2\u00a0\u00b1\u00a00.1 days to eclosion) and 10 mM TMP (15.3\u00a0\u00b1\u00a00.3 days) as compared to solvent (10.2\u00a0\u00b1\u00a00.1 days) (Figure 1\u2014figure supplement 4B). In summary, feeding adult flies TMP at 1 mM can induce GFP-DD expression at saturation level (Figure 1D) without any observable side effects on their survival or behavior. Notably, however, the same dosage of TMP delays development by about one day. Thus, we settled on the concentration of 1 mM TMP for further experiments except for cases when a lower level of induction was desirable.\n\n### Destabilized GAL80\n\nTo evaluate the utility of the DD system for manipulating circuit function, we next investigated whether expression of GAL80 could be controlled by TMP. Binding of GAL80 to GAL4 prevents GAL4-mediated transcriptional activation in the GAL4/UAS expression system (Lee and Luo, 1999). We engineered a chemically inducible GAL80 by fusing DD to the C-terminus of GAL80. GAL80-DD was cloned downstream of a pan-neuronal promoter, n-synaptobrevin (nsyb). Addition of GAL80-DD to the GAL4/UAS expression system could allow TMP to control gene expression. Indeed, we found that nsyb-GAL80-DD was able to suppress GAL4-dependent GFP expression in olfactory sensory neurons (Figure 2A). This suppression of GFP expression in flies carrying the Orco-GAL4, UAS-GFP and nsyb-GAL80-DD transgenes was TMP-dependent (Figure 2A). This feature can be used to control gene expression to perturb neuronal function in a stage-dependent manner. For example, RNAi expression could be targeted to specific neurons during the adult stage by removing TMP from the food, which causes the degradation of GAL80. As a proof-of-concept experiment, we fed flies with TMP throughout development and up to 3 days post-eclosion (Figure 2B,C). When flies were moved from TMP-containing food to regular food, GFP expression started to increase after 24 hr, and peaked at 72 hr post-TMP removal (Figure 2B1, C1). In contrast, flies fed with TMP continuously, from embryo to adult, showed low GFP expression throughout the course of the experiment (Figure 2B2, C2). Furthermore, flies that were raised on regular fly food throughout showed high GFP expression (Figure 2B3, C3). To determine how soon after eclosion it is possible to activate gene expression, we raised flies on TMP during development up to eclosion and measured GFP expression in the brains of young adult flies (Figure 2\u2014figure supplement 1A). We observed a difference between flies raised on TMP and those switched to solvent-containing food starting at one day post-eclosion (Figure 2\u2014figure supplement 1B,C). However, we did not detect any GFP expression in flies younger than eight hours for either condition (Figure 2\u2014figure supplement 1B,C). This lack of GFP expression even in the absence of TMP is most likely due to the time that is required to inactivate GAL80-DD upon TMP withdrawal (Figure 1H), although it is formally possible that the expression level of Orco-Gal4 is low at eclosion. Either way, these results suggest that fusion of the ecDHFR-derived destabilizing domain to GAL80 permits TMP to control GAL80 activity, providing a chemically inducible system to control gene transcription in a temporal manner.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/30327/elife-30327-fig2-v2.jpg)\n\n**Figure 2.:** (A) GAL4-driven GFP expression in olfactory sensory neurons can be suppressed by destabilized GAL80 (nsyb-GAL80-DD) in a TMP-dependent manner (n\u00a0=\u00a05, unpaired t-test, two-tailed, t\u00a0=\u00a013.25). (B, C) GAL80-DD can be used to temporally control GFP expression. (B1, C1) Orco-Gal4, UAS-GFP, nsyb-GAL80-DD flies were fed with food containing 1 mM TMP up to 3 days post-eclosion, following which flies were switched to standard fly food and dissected for quantification. GFP expression was compared to flies fed with 1 mM TMP throughout (B2, C2) or solvent throughout (B3, C3) (n\u00a0=\u00a04\u20135). 0 hr time point in C1 and C2 represent the same sample. (D) Tetanus toxin expression in the V glomerulus of flies fed with 1 mM TMP or solvent. (E) CO2 avoidance index of flies fed with 1 mM TMP or solvent. One arm of the T-maze contained 0.28% (v/v) CO2 and the other arm had air. GAL80-DD can restore CO2 aversion by suppressing TNT expression in the presence of TMP. n\u00a0=\u00a011 per condition, two-way ANOVA indicated a significant interaction between feeding condition and genotype, F\u00a0=\u00a023.66, p<0.001. Significant differences between conditions (p<0.05) are denoted by different letters (Tukey's post-hoc test). All flies were between 4\u20137 days old. Error bars indicate SEM. Scale bar\u00a0=\u00a050 \u03bcm (A), 25 \u03bcm (B,D).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30327/elife-30327-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Orco-Gal4, UAS-GFP, nsyb-GAL80-DD flies were fed with food containing 1 mM TMP up to eclosion, following which flies were switched to standard food or maintained on 1 mM TMP.\u00a0(B,C) After switching to standard fly food, GFP expression is visible in the antennal lobe starting at 1 day post-eclosion. No GFP is observed in either TMP or solvent-fed flies right after eclosion (<8 hr adults). n\u00a0=\u00a05\u20136 per condition, two-way ANOVA indicated a significant interaction between feeding condition and age, F\u00a0=\u00a016.22, p<0.001. Significant differences between conditions (p<0.05) are denoted by different letters (Tukey's post-hoc test). Error bars indicate SEM. Scale bar\u00a0=\u00a025 \u03bcm.\n\nWe further tested if GAL80-DD can be used to manipulate neuronal activity underlying behavior. We focused on the innate olfactory aversion to CO2 in a T-maze assay. Olfactory aversion to CO2 can be abolished by silencing Gr21a-expressing sensory neurons (Suh et al., 2004). We controlled the expression of tetanus toxin, a potent inhibitor of synaptic transmission (Sweeney et al., 1995), in Gr21a neurons using nsyb-GAL80-DD and TMP feeding (Figure 2D). Gr21a-GAL4-derived tetanus toxin expression was blocked in the presence of GAL80-DD when flies were fed TMP, but not when they were fed the solvent (Figure 2D). Accordingly, aversion to CO2 was observed only when flies expressing Gr21a-GAL4, UAS-TNT, nsyb-GAL80-DD were fed with TMP, and not when they were fed with the solvent (Figure 2E). In comparison, control flies with GAL4 alone had high avoidance for both solvent and TMP feeding conditions. We observed a difference between solvent- and TMP-fed flies expressing UAS-TNT, nsyb-GAL80-DD (Figure 2E). However, the avoidance indices of both solvent- and TMP-fed UAS-TNT, nsyb-GAL80-DD flies were significantly higher than the avoidance index of Gr21a-GAL4, UAS-TNT, nsyb-GAL80-DD flies fed with the solvent (Figure 2E). In summary, we show that GAL80-DD can be used to manipulate GAL4-dependent expression of neuronal effectors and thereby alter the function of neuronal circuits underlying behavior.\n\n### Destabilized flippase\n\nFlippase-mediated removal of a stop cassette has been widely used for lineage analysis and sparse neuronal labeling (Lee and Luo, 1999; Marin et al., 2002; Wong et al., 2002). Lineage analysis requires transient high-level expression of flippase (FLP) at specific developmental stages. On the other hand, sparse neuronal labeling requires low-level FLP expression in post-mitotic neurons for the stochastic removal of a stop cassette. Owing to the large dynamic range of the DD system, we reasoned it could be used to control FLP expression at different levels by varying TMP concentrations in fly food, thereby accommodating both sparse labeling and lineage mapping. The heat-shock promoter has been used previously to drive different levels of FLP expression by varying the duration of the heat-shock pulses. However, heat-shock driven FLP activity cannot be limited to a subset of cells due to the ubiquitous expression of the heat shock promoter. This limitation restricts the utility of hs-FLP for lineage analysis in an intersectional manner.\n\nWe fused DD to the C-terminus of FLP and incorporated the coding sequence into a 10XUAS construct (10XUAS-FLP-DD). We tested the destabilized flippase in olfactory projection neurons using GH146-GAL4 to drive UAS-FLP-DD and a GFP stop-cassette reporter, UAS(FRT.STOP)CD8GFP. In these flies, stabilization of FLP-DD by TMP should permit FLP-mediated excision of the stop cassette, resulting in GFP expression in certain projection neurons. We observed that the number of GFP-positive olfactory projection neurons was correlated to the TMP dosage (Figure 3A,B). By varying the concentration of TMP (0.01\u20131 mM) in fly food, we could control the number of labeled projection neurons (Figure 3A). Furthermore, there were similar numbers of labeled neurons in both brain hemispheres for a given sample (Figure 3B). For flies fed with standard fly food without TMP, 42% of the brain hemispheres had only one GFP-positive cell (Figure 3C). This feature of FLP-DD can be used to generate single-cell clones at a reasonable probability for connectomics applications. As a proof-of-concept, we analyzed GFP-labeled neurons in the brains of 36 flies fed with solvent only. Out of the\u00a072 brain hemispheres, 30 had only a single GFP-positive projection neuron (see Figure 3D for examples). In summary, dose-dependent expression of FLP-DD can be used to control the number of genetically manipulated cells within a population.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/30327/elife-30327-fig3-v2.jpg)\n\n**Figure 3.:** (A) GFP expression in a sub-population of olfactory projection neurons following excision of the STOP cassette by FLP-DD. Scale bar\u00a0=\u00a050 \u03bcm. (B) Number of GFP-positive projection neurons can be controlled by varying TMP dosage. The number of GFP-labeled cells within a sample is similar across both brain hemispheres. Each point represents number of cells in one brain. (C) Pie chart indicating the number of labeled projection neurons for flies fed with solvent. 42% of all hemispheres had a single GFP-labeled cell. (D) Examples of labeled single projection neurons (D - dorsal, V - ventral, M - medial, L - lateral). Red\u00a0=\u00a0anti Bruchpilot nc82, Green\u00a0=\u00a0GFP. Scale bar\u00a0=\u00a025 \u03bcm.\n\nRestricting the activity of FLP-DD in a spatial and temporal manner should further refine expression patterns which arise from the intersection of two expression systems (eg. GAL4/UAS and QF/QUAS). To illustrate this principle, we focused on the intersection of GH146-QF and NP21-GAL4. It has been reported that the expression patterns for NP21-GAL4 and GH146-GAL4 overlap only in the DA1 lateral projection neurons (lPNs) in the adult brain (Potter et al., 2010), which we validated (Figure 4A1,A2). However, when UAS-FLP expression is driven by NP21-GAL4, the adult intersection pattern includes additional olfactory projection neurons, ellipsoid body neurons and neurons with cell bodies close to the lateral horn (Figure 4B1,B2). Similarly, when QUAS-FLP is driven by GH146-QF, the adult intersection pattern includes additional neurons (visual projection neurons in this case) (Figure 4C1,C2). This discrepancy between the overlap and the intersection patterns arises because of the broader expression patterns for GH146-QF and NP21-GAL4 before the adult stage. Thus, the stop cassette is prematurely excised during development in neurons outside of the overlapping adult pattern. We reasoned that the adult expression pattern can be recapitulated by limiting TMP feeding to the adult stage thereby inactivating FLP during development. Indeed, when UAS-FLP-DD was expressed by the NP21-GAL4 line and 1 mM TMP was fed to flies only during the adult stage, GFP expression was limited only to DA1 lPNs in the whole brain (Figure 4D1,D2). In comparison, flies fed with solvent alone did not have GFP expression in any neurons in the brain (Figure 4E1,E2). Furthermore, flies fed with 1 mM TMP throughout development have GFP expression in additional olfactory projection neurons (Figure 4F1,F2). We noted that the expression pattern in UAS-FLP-DD flies fed with 1 mM TMP throughout development was a subset of that observed with UAS-FLP flies (Figure 4B,F). It is possible that TMP levels decline in the fly brain during metamorphosis after the larvae stop feeding. In fact, similar results have been observed in the context of RU486-induced FLP activity (Harris et al., 2015). To mitigate this potential decline of TMP, we fed flies with 10 mM TMP throughout the larval stage and obtained a larger portion of the UAS-FLP expression pattern (Figure 4B, Figure 4\u2014figure supplement 1). In sum, we show that TMP can be used to limit FLP-DD activity temporally in a way such that the intersection pattern is identical to the overlap in the adult expression patterns.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/30327/elife-30327-fig4-v2.jpg)\n\n**Figure 4.:** (A) Z-stack projections showing expression patterns of GH146-QF (green) and NP21-GAL4 (red). Both transgenic lines overlap in a single population of DA1 lPNs (arrow in A2). Between one to three overlapping neurons can be observed across all samples. Antenna was ablated from the brain sample shown in A2 to visualize projection neurons in the absence of sensory neuron axon terminals in the antennal lobe. (B\u2013C) Intersection using constitutively expressed flippase generates expanded patterns with additional expression in other olfactory (B) or visual (C) projection neurons. (D) Temporally limiting FLP-DD expression by feeding 1 mM TMP exclusively in adult stage results in GFP expression only in DA1-lPNs. (E) No GFP expression is observed in the absence of TMP. (F) GFP expression in additional olfactory projection neurons can be observed using FLP-DD if TMP is fed continuously. Scale bar\u00a0=\u00a025 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30327/elife-30327-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Scale bar\u00a0=\u00a025 \u03bcm.\n\n## Discussion\n\nHere we report a chemically inducible system to control gene expression in a dose-dependent and reversible manner. The DD system broadens the functionality of the Drosophila genetic toolkit as it provides an independent axis of control which can be used in combination with existing reagents. The DD system provides several advantages over existing chemical-dependent tools. First, TMP-induced DD stabilization is dose-dependent over several orders of magnitude of TMP concentration. This dose-dependency can be exploited for titration of in vivo gene expression levels. Here, we use this dose-dependent relationship to predictably alter the number of labeled projection neurons in the fly brain. Second, in contrast to existing chemical reagents, tools such as GAL80-DD can be combined with existing GAL4 lines to knockdown targeted genes by RNAi or to perform neuronal silencing screens in a temporally refined manner. Third, when TMP is withdrawn, the degradation kinetics of the DD fusion protein are most likely faster than those of the native protein. Thus, it is possible that the DD system offers fast temporal control in experiments which require reversible gene expression. Finally, it is worth noting that the cost of TMP is almost 150 times less than RU486 or quinic acid at their respective working concentrations, making the DD system conducive to large scale behavioral screens.\n\nThe applicability of the DD system for a given cell type is limited by two factors: (1) the cell type should have an active proteasome; (2) orally-fed TMP should be able to reach the cell. In the absence of TMP, the level of proteasome activity in a given cell type may influence the residual level of a DD chimeric protein. For instance, low proteasome activity may result in high residual levels of the chimeric protein. It may be possible to reduce the residual expression by co-expressing components of the protein degradation machinery, similar to how co-expression of Dicer enhances RNAi efficiency (Dietzl et al., 2007). As it is, the background accumulation of the DD-fusion protein and the sensitivity of the downstream targets should be taken into consideration while designing experiments using the DD-system. As TMP is a cell-permeable ligand which can cross the blood-brain barrier, it should be accessible to all tissues during the adult and larval stages. However, the effectiveness of TMP in stabilizing the protein of interest during late pupal stages is reduced due to lack of feeding for several days leading up to this stage (Figure 1\u2014figure supplement 2). This may lead to undesirable leaky expression when GAL80-DD is used with a GAL4 line that is highly expressed during the late pupal stage. Therefore, the level of gene expression controlled by GAL80-DD should always be determined using reporters before manipulating neuronal activity with effector transgenes. Due to the nature of chemical delivery, the utility of the DD-system is also limited to applications which can tolerate gene expression at a relatively slower rate. We anticipate that it will take roughly 24 hr to activate or inactivate the DD-system to an appreciable degree. However, the optimal delay from the start or stop of drug feeding is dependent on the level of gene expression required for a specific application. It may also be possible to achieve faster induction by using photocaged forms of trimethoprim (Ballister et al., 2015). During the course of our experiments, we observed a detrimental effect of the solvent DMSO (greater than 0.1%) on the survival of larvae (see Materials\u00a0and\u00a0methods). This toxicity can be circumvented by using a water-soluble form of TMP- trimethoprim lactate or by mixing pure TMP directly into the food. Finally, as trimethoprim is an antibiotic, experiments using the DD system should incorporate appropriate controls to rule out the effect of gut microbes on the phenotype of interest.\n\nDD-based tools are conducive for mapping and manipulating neural circuits underlying behavior. We illustrate this concept by using destabilized GAL80-DD to chemically manipulate neural activity in olfactory sensory neurons. To our knowledge, GAL80-DD is the first construct that allows control of GAL80 activity in vivo by a small molecule. Conventional experimental designs utilize the heat-inducible GAL80ts to suppress GAL4-depdendent transcription at low temperatures. While GAL80ts may still be preferable in experiments that require low background expression, GAL80-DD is a useful alternative for experiments that are disrupted by temperature manipulations. To further illustrate the utility of the DD-system for circuit mapping, we engineered FLP-DD for sparse neuronal labeling at high-efficiency and temporally controlled genetic intersection. In a previous study, an RU486-inducible FLP recombinase was constructed by fusing it with the human progesterone receptor (Flp-Switch) (Harris et al., 2015). Although this construct can be chemically induced similar to FLP-DD, further experiments will be required to compare the efficacy and dose-dependency of the two recombinases. All DD-fusion proteins presented in this study are soluble molecules which function in the cytoplasm or the nucleus. However, previous studies have used ecDHFR-derived destabilized domains to conditionally alter membrane protein expression (Iwamoto et al., 2010). Therefore, we predict that this tool can be used to temporally control expression of membrane proteins such as ion channels and G-protein-coupled receptors.\n\nIn addition to chemically inducible forms of GAL80 and FLP, the DD technology can be used in flies for several other applications. DD can be knocked-in and fused to endogenous proteins to control their expression by limiting TMP feeding. This can be done using custom-designed genome editing strategies or by integration into the large number of available MiMIC sites within coding introns (Venken et al., 2011). DD can also be fused to a variety of effector genes for the purpose of inducible neuronal silencing or genome editing (Maji et al., 2017). Due to its inducible nature, GFP-DD can be coupled with knock-in GAL4 lines to compare gene expression in individual cells across time points spanning only a few hours, such as circadian fluctuation of gene expression. GFP-DD may also be useful as a sensor for proteasome activity.\n\nIn conclusion, we have developed a new set of tools for chemical control of gene expression in Drosophila which has broad-ranging applications and several advantages over existing tools of a similar nature. We characterized its efficiency and temporal limitations, and demonstrated its utility by engineering tools for chemical control of gene expression, recombination and neuronal activity.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>genetic reagent (fly line)</td>\n      <td>nsyb-GAL4</td>\n      <td>(Riabinina et al., 2015)</td>\n      <td>RRID:BDSC_51941</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (fly line)</td>\n      <td>Orco-GAL4</td>\n      <td>(Kreher et al., 2005)</td>\n      <td>RRID:BDSC_23292</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (fly line)</td>\n      <td>UAS-GFP</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (fly line)</td>\n      <td>GH146-GAL4</td>\n      <td>(Stocker et al., 1997)</td>\n      <td>RRID:BDSC_30026</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (fly line)</td>\n      <td>Gr5a-GAL4</td>\n      <td>(Thorne et al., 2004)</td>\n      <td>RRID:BDSC_57591</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (fly line)</td>\n      <td>R58E02-GAL4</td>\n      <td>(Liu et al., 2012)</td>\n      <td>RRID:BDSC_41347</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (fly line)</td>\n      <td>P1a-split GAL4</td>\n      <td>(Hoopfer et al., 2015)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (fly line)</td>\n      <td>MB434B-split GAL4</td>\n      <td>(Aso et al., 2014)</td>\n      <td>RRID:BDSC_68325</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (fly line)</td>\n      <td>Tdc2-GAL4</td>\n      <td>(Cole et al., 2005)</td>\n      <td>RRID:BDSC_9313</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (fly line)</td>\n      <td>MB247-GAL4</td>\n      <td>(Zars et al., 2000)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (fly line)</td>\n      <td>UAS-(FRT.STOP)mCD8-GFP</td>\n      <td>(Potter et al., 2010)</td>\n      <td>RRID:BDSC_30032</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (fly line)</td>\n      <td>UAS-(FRT.STOP)GFP.myr</td>\n      <td></td>\n      <td>RRID:BDSC_55810</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (fly line)</td>\n      <td>UAS-6XmCherry-HA</td>\n      <td>(Shearin et al., 2014)</td>\n      <td>RRID:BDSC_52267</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (fly line)</td>\n      <td>QUAS-6xGFP</td>\n      <td>(Shearin et al., 2014)</td>\n      <td>RRID:BDSC_52264</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (fly line)</td>\n      <td>20XUAS-FLPD5</td>\n      <td>(Nern et al., 2011)</td>\n      <td>RRID:BDSC_55805</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (fly line)</td>\n      <td>GH146-QF</td>\n      <td>(Potter et al., 2010)</td>\n      <td>RRID:BDSC_30014</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (fly line)</td>\n      <td>QUAS(FRT.STOP)GFP</td>\n      <td>(Potter et al., 2010)</td>\n      <td>RRID:BDSC_30134</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (fly line)</td>\n      <td>NP21-GAL4</td>\n      <td>(Hayashi et al., 2002)</td>\n      <td>RRID:BDSC_30027</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (fly line)</td>\n      <td>Actin5C-GAL4</td>\n      <td></td>\n      <td>RRID:BDSC_4414</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (fly line)</td>\n      <td>Orco-LexAVP16</td>\n      <td>(Lai et al., 2008)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (fly line)</td>\n      <td>Gr21-GAL4</td>\n      <td>(Scott et al., 2001)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (fly line)</td>\n      <td>UAS-TNT</td>\n      <td>(Sweeney et al., 1995)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (fly line)</td>\n      <td>10XUAS-GFP-DD</td>\n      <td>this study</td>\n      <td></td>\n      <td>see Materials and\u00a0methods</td>\n    </tr>\n    <tr>\n      <td>genetic reagent (fly line)</td>\n      <td>10XUAS-FLP-DD</td>\n      <td>this study</td>\n      <td></td>\n      <td>see Materials and methods</td>\n    </tr>\n    <tr>\n      <td>genetic reagent (fly line)</td>\n      <td>nsyb-GAL80-DD</td>\n      <td>this study</td>\n      <td></td>\n      <td>see Materials and methods</td>\n    </tr>\n    <tr>\n      <td>genetic reagent (fly line)</td>\n      <td>13XLexAop-GFP-DD</td>\n      <td>this study</td>\n      <td></td>\n      <td>see Materials and methods</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>Rabbit anti-GFP</td>\n      <td>Invitrogen</td>\n      <td>A-11122, RRID:AB_221569</td>\n      <td>1:200</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>mouse anti-bruchpilot nc82</td>\n      <td>DSHB</td>\n      <td>RRID:AB_2314866</td>\n      <td>1:50</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>mouse anti-HA</td>\n      <td>Biolegend</td>\n      <td>901501, RRID:AB_2565006</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>rabbit anti-TeTx</td>\n      <td>Statens Serum Institut</td>\n      <td>POL 016</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>Alexa Fluor 488 anti-rabbit immunoglobulin G</td>\n      <td>Invitrogen</td>\n      <td>A-31628, AB_143165</td>\n      <td>1:100</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>Alexa Fluor 647 anti-mouse immunoglobulin G</td>\n      <td>Invitrogen</td>\n      <td>A-21235, AB_2535804</td>\n      <td>1:100</td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent (plasmids)</td>\n      <td>pJFRC81</td>\n      <td>Pfeiffer et al., 2012</td>\n      <td>Addgene_ 36432</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent (plasmids)</td>\n      <td>pJFRC95</td>\n      <td>Pfeiffer et al., 2012</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent (plasmids)</td>\n      <td>nsyb-GAL4-hsp70</td>\n      <td>Riabinina et al., 2015</td>\n      <td>Addgene_46107</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent (plasmids)</td>\n      <td>pCaSpeR-DEST5</td>\n      <td>DGRC</td>\n      <td>1031</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent (plasmids)</td>\n      <td>pAC-GAL80</td>\n      <td>Addgene</td>\n      <td>24346</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent (plasmids)</td>\n      <td>10XUAS-GFP-DD</td>\n      <td>this study</td>\n      <td></td>\n      <td>see Materials and methods</td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent (plasmids)</td>\n      <td>10XUAS-FLP-DD</td>\n      <td>this study</td>\n      <td></td>\n      <td>see Materials and methods</td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent (plasmids)</td>\n      <td>nsyb-GAL80-DD</td>\n      <td>this study</td>\n      <td></td>\n      <td>see Materials and methods</td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent (plasmids)</td>\n      <td>13XLexAop-GFP-DD</td>\n      <td>this study</td>\n      <td></td>\n      <td>see Materials and methods</td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>Trimethoprim</td>\n      <td>Teknova Inc., CA</td>\n      <td>T1205</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>Igor Pro V6.0</td>\n      <td>Wavemetrics, Inc.</td>\n      <td>RRID:SCR_000325</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>Foraging assay behavior quantification</td>\n      <td>(Zaninovich et al., 2013)</td>\n      <td></td>\n      <td>Code available from (Zaninovich et al., 2013)</td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>Focusclear mounting reagent</td>\n      <td>Cedarlane Labs</td>\n      <td>FC-101</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Fly husbandry\n\nFlies were raised on standard fly food (unless otherwise noted) at 25\u00b0C in a 12:12 light-dark cycle. The following transgenes were used in this study - nsyb-GAL4 (Riabinina et al., 2015) (BDSC_51941), Orco-GAL4 (Kreher et al., 2005) (BDSC_23292), UAS-GFP, GH146-GAL4 (Stocker et al., 1997)(BDSC_30026), Gr5a-GAL4 (Thorne et al., 2004), R58E02-GAL4 (Liu et al., 2012), P1a-split GAL4 (Hoopfer et al., 2015), MB434B-split GAL4 (Aso et al., 2014), Tdc2-GAL4 (Cole et al., 2005), MB247-GAL4 (Zars et al., 2000), UAS-(FRT.STOP)mCD8-GFP (Potter et al., 2010) (BDSC_30032) and UAS-(FRT.STOP)GFP.myr (BDSC_55810), UAS-6XmCherry-HA(Shearin et al., 2014) (BDSC_52267), QUAS-6xGFP(BDSC_52264)(Shearin et al., 2014), 20XUAS-FLPD5 (Nern et al., 2011)(BDSC_55805), GH146-QF(Potter et al., 2010) (BDSC_30014), QUAS(FRT.STOP)GFP (Potter et al., 2010) (BDSC_30134), NP21-GAL4 (Hayashi et al., 2002) (BDSC_30027), Actin5C-GAL4 (BDSC_4414), Orco-LexAVP16 (Lai et al., 2008), Gr21-GAL4 (Scott et al., 2001), UAS-TNT (Sweeney et al., 1995), 10XUAS-GFP-DD (this study), 10XUAS-FLP-DD (this study), nsyb-GAL80-DD (this study), 13XLexAop-GFP-DD (this study). See supplementary information for list of fly genotypes for every experiment.\n\n### Transgenic fly generation\n\nDrosophila codon optimized destabilized domain (DD) was synthesized with 5' XhoI and 3' XbaI overhangs by Genewiz, Inc. (La Jolla, CA). Plasmids were generated using standard protocols for PCR, restriction digestion and ligation.\n\n### Destabilized GFP\n\nTo generate the 10XUAS-GFP-DD fly, DD was ligated to the c-terminus of GFP in the pJFRC81 vector (Pfeiffer et al., 2012). GFP was subcloned from the pJFRC81 plasmid using primer P1 and P2. DD was ligated to the c-terminus of GFP using the XhoI cut site. GFP-DD was ligated into the pJFC81 vector between the PshAI and XbaI cut sites. To generate the 13XLexAop2-GFP-DD fly, GFP-DD was cut from the 10XUAS-GFP-DD and ligated to the pJFRC95 plasmid\u00a0(Pfeiffer et al., 2012) between the NotI and XbaI sites. Both GFP-DD constructs were transformed using phiC31 integrase mediated recombination into the attP2 landing site\u00a0(Groth et al., 2004) by Genetic Services Inc. (Cambridge, MA).\n\n### Destabilized GAL80\n\nTo generate the nsyb-GAL80-DD fly, DD was ligated to the c-terminus of GAL80. GAL80 was subcloned with 5' EcoRI and 3' XhoI overhangs from pAC-GAL80 plasmid (Addgene,\u00a0Cambridge,\u00a0MA. #24346) using primers P3 and P4. DD was subcloned from the 10XUAS-GFP-DD plasmid with 5' XhoI and 3' AatII overhangs using primers P5 and P6. GAL80-DD was triple ligated between EcoRI and AatII sites in the cut nsyb-GAL4-hsp70 plasmid (Addgene #46107)\u00a0(Riabinina et al., 2015). The resulting construct was transformed using phiC31 integrase mediated recombination into the VK00005 landing site\u00a0(Groth et al., 2004) by Genetic Services Inc. (Cambridge, MA).\n\n### Destabilized FLP\n\nThe 10XUAS-FLP-DD plasmid was generated by ligating DD to the c-terminus of FLPD5. FLPD5 was subcloned with 5' NotI and 3' XhoI overhangs from pCaSpeR-DEST5 (DGRC,\u00a0Bloomington,\u00a0IN. #1031) using primers P7 and P8. FLP was ligated between the NotI and XhoI sites in the cut 10XUAS-GFP-DD plasmid. The construct was transformed using phiC31 integrase-mediated recombination into the attP2 landing site by Bestgene Inc. (Chino Hills, CA).\n\n### Primers\n\nP1- GGAGTAGTCCCGATATTGGTTG\n\nP2- TTCATCTCGAGCTTGTAGAGCTCATCCATGCCGT\n\nP3- ATCATCGACAGCCGAATTCCAACATGGACTACAACAAGAGATCTTCG\n\nP4- GCGGCAATCAGGGAGATCTCGAGTAAACTATAATGCGAGATATT\n\nP5- CTGGTTTCCAAACTGATCGGTC\n\nP6- CGACGGTATCGATAGACGTCTATTAACGGCGCTCCAGAATCTCGAA\n\nP7- TACTTCAGGCGGCCGCGGCTGGAGGGTACCAACTTAAAAAAAAAAATCAAAATGCCACAATTTGATATATTATGT\n\nP8- ATCAGGGAGATCTCGAGTATGCGTCTATTTATGTAGGATG\n\n### Recommended steps for generation of new POI-DD constructs\n\nTo generate new protein of interest (POI)-DD fusion constructs driven by UAS, the POI can be cloned in a non-directional manner (between XhoI restriction sites) or in a directional manner (between NotI and XhoI) (See Figure 1\u2014figure supplement 1) using the UAS-GFP-DD plasmid as template. Note that for directional cloning between NotI and XhoI, the XhoI site upstream of Syn21 must be mutated during primer design (see P7 for example).The Syn21 sequence (21 bp) can be included within the primer if desired (see P7 for example).\n\n### TMP feeding\n\nTrimethoprim (Teknova Inc., CA) was maintained as a 100 mM stock solution in DMSO. To prepare food containing TMP for adult flies, standard fly food was heated to a liquid state. After cooling, TMP (or pure DMSO) was added to the food and vortexed to achieve a homogenous mixture of the required concentration. Food was poured into standard fly vials and allowed to solidify. Adult flies were transferred to new vials with TMP-containing food every 3 days. 1% DMSO was found to severely affect survival of larvae. Therefore, to feed flies with TMP from the embryo stage, pure TMP in powder form was mixed in fly food to attain the required concentrations. Detailed information on the feeding regimen for every experiment can be found in the supplementary information.\n\n### Histology\n\nTissue samples were prepared for imaging using protocols that have been previously described (Lin et al., 2013). Tissues were dissected in cold PBS and fixed in 4% (w/v) paraformaldehyde for 3 min on ice in a microwave. Next, tissues were fixed in 4% (w/v) paraformaldehyde containing 0.25% Triton-X-100 for 3 min on ice in a microwave. Fixed tissues were placed in blocking solution (2% Triton X-100, 0.02% sodium azide and 10% normal goat serum in PBS) and degassed in a vacuum chamber for 6 \u00d7 15 mins to expel tracheal air. For the purpose of quantification in Figures 1 and 2, samples were not immunostained. All samples for a given experiment were prepared and imaged in parallel to allow for comparison among them. Rabbit anti-GFP (Invitrogen,\u00a0Carlsbad,\u00a0CA. A-11122, 1:200), mouse anti-bruchpilot nc82 (DSHB AB_2314866, 1:50), mouse anti-HA (Biolegend, San Diego, CA. 901501, 1:500) and rabbit anti-TeTx antibody (Statens Serum Institut,\u00a0Denmark.\u00a0POL 016, 1:1000) were used as primary antibodies in this study. Alexa Fluor 488 anti-rabbit immunoglobulin G (Invitrogen A-31628; 1:100) and Alexa Fluor 647 anti-mouse immunoglobulin G (Invitrogen A-21235, 1:100) were used as secondary antibodies. Brains were incubated in primary antibodies in dilution buffer (1% normal goat serum, 0.02% sodium azide and 0.25% Triton X-100 in PBS) for 48 hr at 4\u00b0C, rinsed for 3 \u00d7 15 mins in washing buffer (1% Triton X-100, 3% NaCl in PBS), incubated in secondary antibodies in dilution buffer for 24 hr at 4\u00b0C, and rinsed again for 3 \u00d7 15 mins in washing buffer. Samples were mounted in Focusclear (Cedarlane Labs,\u00a0Canada) between glass coverslips separated by spacer rings.\n\nSamples were imaged with a 10X/0.3 or 20X/0.75 objective using a Zeiss LSM 510 confocal microscope to collect Z-stacks at 2 \u03bcm intervals. During the course of an experiment, the laser power and gain were held constant to allow for comparison among images from different experimental conditions. To quantify GFP expression, maximum intensity Z-projections were prepared using ImageJ (NIH). Average fluorescent intensity in the background was subtracted from the sample fluorescent intensity and the result was used as a proxy for GFP expression.\n\n### T-maze assay\n\nFlies were raised in standard fly food or food containing 1 mM TMP from embryo to adult stages up to the time of the experiment. Behavioral tests were performed as described previously (Su et al., 2012). About 30 flies were transferred from food vials into a 15 mL centrifuge tube (Fisher Scientific, Hampton,\u00a0NH.\u00a014959B) using a funnel. The tube containing the flies was connected to the T-maze apparatus and the flies were transferred into a horizontal elevator in the dark. Flies were held in the elevator for one minute before being pushed forward to choose between the test and the control arm. A fluorescent lamp was switched on at this point to phototactically draw flies out of the elevator. Flies were given one minute to choose between either arm, following which the elevator was retracted to separate the flies in the test arm from those in the control arm. The tubes serving as the test and the control arms were detached and flies in them were counted.\n\nFlies were forced to choose between the control arm containing air and the test arm containing 0.28% CO2. 400 \u03bcL of 10% CO2 was injected into the test arm using a 10\u00a0mL\u00a0syringe. The positions of the test arm and the control arm were alternated for each trial. The avoidance index was calculated as (no. of flies in the control arm - no. of flies in the test arm) /(no. of flies in the test arm\u00a0+\u00a0no. of flies in the control arm).\n\n### Survival assay\n\nAdult flies were raised on a defined medium (1 M sucrose, 1% agar) with 0\u201310 mM TMP from eclosion to death. Each experimental vial contained 5 males and 10 females. Flies were transferred to new vials every two days. Number of living flies was recorded every day. To quantify survival during development, 20 eggs were manually placed using forceps in a vial of fly food containing 0\u201310 mM TMP. Vials were observed daily to quantify the developmental timing for puparium formation and time to eclosion.\n\n### Odor localization and locomotion assay\n\nOdor localization ability and walking speed were measured using a setup described previously (Root et al., 2011; Zaninovich et al., 2013). Single flies were introduced in custom built chambers (60 mm diameter, 6 mm height) and tracked at 2 Hz under 660 nm LED illumination using custom software written in Labview (V.8.5, National Instruments, Austin,\u00a0TX.\u00a0Code available from Zaninovich et al., 2013). Wild type flies were fed with regular fly food containing 1 mM TMP or 1% DMSO for 48 hr before the experiment. The average walking speed of each fly during the first 50 s of each trial was determined using a custom macro with Igor Pro (V.6, Wavemetrics, Inc.,\u00a0Portland,\u00a0OR). To perform the odor localization experiment, flies were transferred to starvation vials containing water with 1 mM TMP or 1% DMSO in Kimwipes 24 hr prior to the experiment. 1% apple cider vinegar in low melting agarose was used as the odor source. Latency to localization is defined as the elapsed time before a fly spends more than 5 s within 5 mm of the odor source.\n\n### Statistical analysis\n\nStatistical results (p value, effect size, n) are indicated in figure legends corresponding to each experiment. All statistical analyses were performed in Igor Pro (V.6, Wavemetrics, Inc.). Sample size for each experiment was pre-determined based on variation in experimental groups in pilot experiments. Most experiments were performed at least twice to confirm results. Data from one representative experiment is shown.\n",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "284633b2-df1f-4a4e-b6e5-9c33d171603c",
+      "submission_id": "8c2aa4a2-e538-497e-8c5d-1baf1daf9f0a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mani Ramaswami, Trinity College Dublin Ireland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.30327.021](https://doi.org/10.7554/eLife.30327.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A versatile genetic tool for post-translational control of gene expression in Drosophila melanogaster\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Mani Ramaswami as Reviewing Editor and K VijayRaghavan as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Christopher J Potter (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn the manuscript, Sethi et al. developed a clever strategy to reversibly regulate protein degradation. They introduce and characterize the use of destabilizing domains (DD) to 3 proteins of interest: GFP, GAL80, and FLPase. A C-terminal DD leads to proteasome degradation of the tagged protein, which can be prevented (in a dose dependent manner) by the presence of the antibiotic trimethoprim. The authors characterize the temporal dynamics of DD-mediated turnover, demonstrate it is amendable to a variety of neuronal tissues, and utilize it for behavioral analyses and intersectional expression studies. Particularly interesting is using UAS-FLP-DD instead of hs-FLP for the selective labelling of FLP-out constructs. to acutely manipulate neuronal activity and perform circuit analysis by adopting the destabilizing domain (DD) derived from ecDHFR of E. coli. The authors engineered GAL80-DD and FLP-DD, and tested their effectiveness using immunohistochemistry and behavioral assay. The results from proof-of-concept experiments are absolutely striking and clear. The manuscript is well written. The reagents presented here will be valuable additions to the Drosophila toolkit, and introduce a new method of temporal control over protein function.\n\nEssential revisions:\n\n1) The system may not work to regulate protein levels at time-scales < 24 hrs, or at pupal stages. This could limit some of its applications and, if so, then these should be formally detailed and prominently acknowledged.\n\n2) Figure 2, Orco-GAL4, UAS-GFP, nsyb-GAL80-DD. TMP feeding was always performed from eclosion to 3 days. This allows ~2 days for adults to feed on TMP food. Is there GFP expression in newly eclosed flies? This should be checked. This is an important consideration, as it could suggest TMP+GAL80-DD may not function efficiently at late development stages (pupal), and the method needs a couple days post-eclosion of TMP feeding to stabilize protein levels in adult stages. This will influence the age at which adult animals are examined in many POI-DD experiments, as well as how future experiments are interpreted; for example, those that use the DD approach to ablate neurons.\n",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3783a8e6-a131-40be-946f-3379bfadb8a5",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C1",
+      "claim": "The destabilizing domain (DD) derived from E. coli dihydrofolate reductase (ecDHFR) can control protein stability in a ligand-inducible manner in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "We adopted the destabilizing domain (DD) derived from dihydrofolate reductase (ecDHFR) of E. coli to control protein stability in a ligand-inducible manner (Cho et al., 2013; Iwamoto et al., 2010), a strategy that has been used to control gene expression in mice and worms (Cho et al., 2013; Iwamoto et al., 2010; Sando et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies (Cho et al., 2013; Iwamoto et al., 2010; Sando et al., 2013) that demonstrated this technology in other organisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "5809188a-4ca0-444d-bcbc-507e70815869",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C2",
+      "claim": "When DD is fused to a protein of interest, the chimeric protein is degraded by the proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "On fusing the destabilizing domain to a protein of interest, the chimeric protein is degraded by the proteasome, but its degradation is blocked by trimethoprim (TMP), a cell-permeable ligand for DD (Figure 1A) (Iwamoto et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citation to Iwamoto et al., 2010 and illustrated in Figure 1A showing the mechanism.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "624d47e0-87d0-4f5a-abe8-8e86e4a6bf23",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C3",
+      "claim": "Trimethoprim (TMP) blocks the degradation of DD-fusion proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "On fusing the destabilizing domain to a protein of interest, the chimeric protein is degraded by the proteasome, but its degradation is blocked by trimethoprim (TMP), a cell-permeable ligand for DD (Figure 1A) (Iwamoto et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citation to Iwamoto et al., 2010 and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "8f225296-c6dd-4a31-9e5a-98a4ce429387",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C4",
+      "claim": "TMP is a cell-permeable ligand for the destabilizing domain.",
+      "claim_type": "EXPLICIT",
+      "source": "On fusing the destabilizing domain to a protein of interest, the chimeric protein is degraded by the proteasome, but its degradation is blocked by trimethoprim (TMP), a cell-permeable ligand for DD (Figure 1A) (Iwamoto et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Iwamoto et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "6a4c0bf8-f401-4bc7-b016-e1ab6b5fc055",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C5",
+      "claim": "Flies fed with TMP show robust GFP-DD expression throughout the brain when using pan-neuronal nsyb-GAL4 driver.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the pan-neuronal nsyb-GAL4 to drive GFP-DD expression, we observed robust GFP expression throughout the brain of adult flies fed with TMP (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "5281c077-84e8-4f07-8e09-64e7a7b3d30b",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C6",
+      "claim": "In the absence of TMP, GFP-DD expression is low throughout the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of TMP, GFP expression was low throughout the brain; this is consistent with the previous studies in mice and nematodes showing that unbound DD is an effective tag to mark the fusion protein for degradation (Cho et al., 2013; Sando et al., 2013) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data in Figure 1B and citations to previous studies in other organisms (Cho et al., 2013; Sando et al., 2013).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "875d7e57-021f-4859-a10d-87ba17552c6d",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C7",
+      "claim": "Unbound DD is an effective tag to mark fusion proteins for degradation in mice and nematodes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of TMP, GFP expression was low throughout the brain; this is consistent with the previous studies in mice and nematodes showing that unbound DD is an effective tag to mark the fusion protein for degradation (Cho et al., 2013; Sando et al., 2013) (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies (Cho et al., 2013; Sando et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "b0cf52c7-07e1-490f-8844-2fa8d9f19850",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C8",
+      "claim": "TMP-dependent GFP-DD stabilization shows substantial differences between solvent and TMP feeding during larval stage (44-fold difference).",
+      "claim_type": "EXPLICIT",
+      "source": "We found substantial differences in GFP-DD expression between flies fed with solvent versus TMP during the larval (44 fold), 48 hr APF (19 fold) and three day old adult (27 fold) stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative experimental data comparing solvent and TMP feeding conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "abb44f5f-ae07-495c-aa18-6bfd1eeaca33",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C9",
+      "claim": "TMP-dependent GFP-DD stabilization shows a 19-fold difference between solvent and TMP feeding at 48 hr APF.",
+      "claim_type": "EXPLICIT",
+      "source": "We found substantial differences in GFP-DD expression between flies fed with solvent versus TMP during the larval (44 fold), 48 hr APF (19 fold) and three day old adult (27 fold) stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "74575aac-cf45-41aa-aeb9-75bfd3476e4f",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C10",
+      "claim": "TMP-dependent GFP-DD stabilization shows a 27-fold difference between solvent and TMP feeding in three day old adults.",
+      "claim_type": "EXPLICIT",
+      "source": "We found substantial differences in GFP-DD expression between flies fed with solvent versus TMP during the larval (44 fold), 48 hr APF (19 fold) and three day old adult (27 fold) stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "3cde9ceb-db5a-46b3-b24c-165bca14ae69",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C11",
+      "claim": "During late pupal stage (96 hr APF) and eclosion (<12 hr adult), there is a five-fold difference in GFP-DD expression between flies raised on solvent versus TMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, even though flies do not feed for several days leading up to the late pupal stage (96 hr APF) and eclosion (<12 hr adult), we observed a five-fold difference in GFP-DD expression between flies raised on solvent versus TMP (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "b2cb62b3-2c83-4183-b201-b07067b329c1",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C12",
+      "claim": "Flies do not feed for several days leading up to the late pupal stage (96 hr APF) and eclosion.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, even though flies do not feed for several days leading up to the late pupal stage (96 hr APF) and eclosion (<12 hr adult), we observed a five-fold difference in GFP-DD expression between flies raised on solvent versus TMP (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about Drosophila development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "df5123f5-22f4-4f98-851d-ea942ad385cc",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C13",
+      "claim": "The TMP-inducible DD system is maximally effective during the larval, early pupal and adult stages.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the TMP-inducible DD system is maximally effective during the larval, early pupal and adult stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing fold-differences in GFP-DD expression across developmental stages.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "f15d1b4a-8ef1-4080-9ba0-375fbf00ea51",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C14",
+      "claim": "During the late pupal stage, the utility of the DD system may be limited by unavailability of TMP.",
+      "claim_type": "EXPLICIT",
+      "source": "During the late pupal stage, however, the utility of the system may be limited by unavailability of TMP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that flies do not feed during this stage and the reduced fold-difference in expression.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "b43249a5-236c-413c-96e2-029f29880a6f",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C15",
+      "claim": "TMP-dependent protein stabilization is compatible with any GAL4, LexA, QF or split-GAL4 line because it acts through post-translational modification.",
+      "claim_type": "EXPLICIT",
+      "source": "Because TMP-dependent protein stabilization acts through post-translational modification of protein levels, it should be compatible with any GAL4, LexA, QF or split-GAL4 line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on logical inference from the mechanism of action (post-translational control).",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "d8e9b9a5-1ce3-4a95-87f0-12b367b0a31c",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C16",
+      "claim": "Significant differences in GFP-DD expression (ranging from 4 to 64 fold) were observed between solvent and TMP feeding for every cell type tested.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a significant difference in GFP-DD expression (ranging from 4 to 64 fold) between solvent and TMP feeding for every cell type that we tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from multiple cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "eb2464e8-cbbc-4504-9bcd-e56976cbf344",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C17",
+      "claim": "Maximum differences in GFP-DD expression were observed in the axon terminals of sensory neurons (at least 45 fold).",
+      "claim_type": "EXPLICIT",
+      "source": "Maximum differences were observed in the axon terminals of sensory neurons (at least 45 fold).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "ef0fde4f-a46b-40c1-a831-ea52c9a0ef50",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C18",
+      "claim": "Olfactory sensory neurons showed a much larger difference between TMP and solvent feeding (45 fold) compared to olfactory projection neurons (6 fold), even though both cell types innervate the antennal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, olfactory sensory neurons showed a much larger difference between TMP and solvent feeding (45 fold) compared to olfactory projection neurons (6 fold), even though both cell types innervate the antennal lobe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data comparing two cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "583e2591-158c-4519-9a58-c078b852225d",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C19",
+      "claim": "PAM dopamine neurons showed a larger difference in GFP-DD expression (12 fold) compared to Kenyon cells (4 fold), even though both cell types innervate the mushroom body.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, PAM dopamine neurons showed a larger difference in GFP-DD expression (12 fold) compared to Kenyon cells (4 fold), even though both cell types innervate the mushroom body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data comparing two cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "379959a1-46e2-4f65-9a81-bedf08a83ce6",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C20",
+      "claim": "At least some of the differences between cell types in DD system effectiveness arise from variability in their proteasome activity levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results, we conclude that at least some of the differences between cell types arise from the variability in their proteasome activity levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that different cell types show different fold-changes in expression.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "43a644d0-d09f-4487-8512-45aa50094cf8",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C21",
+      "claim": "The DD system is effective in non-neuronal tissues such as ovaries.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that the DD system was effective in non-neuronal tissues, such as ovaries (Figure 1\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "5804cabc-e716-4a4c-a2a6-e6af8cf914ec",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C22",
+      "claim": "The DD system can be used in combination with the LexA/LexAop binary system.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, to demonstrate that the DD system can be used in combination with other binary systems apart from GAL4/UAS, we generated a 13XLexAop-GFP-DD transgenic fly line and observed similar TMP-dependent GFP expression in olfactory sensory neurons using the Orco-LexA driver line (Figure 1\u2014figure supplement 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "8c60c6c8-8779-4fe9-85d9-966549da24c7",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C23",
+      "claim": "Feeding adult flies with food containing varying concentrations (0\u20135 mM) of TMP for 48 hr results in a dose-dependent change in GFP expression in the antennal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "Feeding adult flies with food containing varying concentrations (0\u20135 mM) of TMP for 48 hr resulted in a dose-dependent change in GFP expression in the antennal lobe (Figure 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "a0afa7d1-70b9-45be-996d-a1421845afe8",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C24",
+      "claim": "The maximum GFP expression induced by 1 mM TMP was between 34 and 45 times higher than that of control flies fed with solvent-containing food.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum GFP expression, induced by 1 mM TMP, was between 34 and 45 times higher than that of control flies fed with the solvent-containing food (Figure 1D, Figure 1\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1D and Figure 1\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "643d14d9-eb1f-4049-95d7-169a4abce346",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C25",
+      "claim": "GFP levels increase initially but plateau within 36 hr when flies are fed with food containing 1 mM TMP for varying durations (0\u201360 hr).",
+      "claim_type": "EXPLICIT",
+      "source": "Results from an experiment in which flies were fed for varying durations (0\u201360 hr) with food containing 1 mM TMP show that GFP levels increase initially but plateau within 36 hr (Figure 1E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "97fe5970-aabd-4d46-872f-2c99e23d410a",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C26",
+      "claim": "GFP intensity is reduced by 73% within 24 hr after switching flies from TMP-containing food to regular food.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if TMP-dependent GFP expression is reversible, we fed flies with food containing 1 mM TMP for 48 hr and then switched them to regular food (Figure 1G). We found that the GFP intensity was reduced by 73% within 24 hr (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "0ccd139c-8cd4-4a4b-8a57-3750db0b9080",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C27",
+      "claim": "Genetic fusion of the ecDHFR-derived destabilizing domain confers instability to a protein of interest in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, using GFP as a test molecule, we show that genetic fusion of the ecDHFR-derived destabilizing domain confers instability to a protein of interest in Drosophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data showing low GFP expression without TMP and high expression with TMP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "9c48526b-1b97-477a-82e4-33064d48f207",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C28",
+      "claim": "Feeding flies with TMP can control protein levels in a reversible and dose-dependent manner with a large dynamic range.",
+      "claim_type": "EXPLICIT",
+      "source": "Feeding flies with TMP can control protein levels in a reversible and dose-dependent manner with a large dynamic range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing dose-dependency (Figure 1C,D) and reversibility (Figure 1G,H).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "84cd6815-83d2-4d6d-ad0e-4f191d80d0f6",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C29",
+      "claim": "Feeding adult flies with TMP ranging from 0 to 10 mM does not have any detectable effect on their survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Feeding adult flies with a defined medium containing TMP ranging from 0 to 10 mM did not have any detectable effect on their survival (Figure 1\u2014figure supplement 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "32a6d5d2-d443-42c7-8224-98428a0777c6",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C30",
+      "claim": "Feeding adult flies with 1 mM TMP for 48 hr does not alter their locomotion speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, feeding adult flies with 1 mM TMP for 48 hr did not alter their locomotion speed (Figure 1\u2014figure supplement 4C) or their ability to locate an odor source (Figure 1\u2014figure supplement 4D) during foraging.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "0fa211d6-ac1f-4da5-871a-3f66f15a05ed",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C31",
+      "claim": "Feeding adult flies with 1 mM TMP for 48 hr does not alter their ability to locate an odor source during foraging.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, feeding adult flies with 1 mM TMP for 48 hr did not alter their locomotion speed (Figure 1\u2014figure supplement 4C) or their ability to locate an odor source (Figure 1\u2014figure supplement 4D) during foraging.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "c6985b4a-e4a5-46bb-9a39-766f36b8eceb",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C32",
+      "claim": "Flies raised on TMP ranging from 0 to 10 mM throughout development are equally likely to survive to adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies raised on TMP ranging from 0 to 10 mM throughout development were equally likely to survive to adulthood (Figure 1\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "60de8ca1-b97f-4827-a490-d9c65b085f0e",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C33",
+      "claim": "Flies raised on 1 mM TMP show a delay in developmental time (11.2 \u00b1 0.1 days to eclosion) compared to solvent (10.2 \u00b1 0.1 days).",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed a delay in the developmental time for flies raised on 1 mM TMP (11.2 \u00b1 0.1 days to eclosion) and 10 mM TMP (15.3 \u00b1 0.3 days) as compared to solvent (10.2 \u00b1 0.1 days) (Figure 1\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "f50ff0a5-705c-477f-8151-105be9a16b6f",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C34",
+      "claim": "Flies raised on 10 mM TMP show a delay in developmental time (15.3 \u00b1 0.3 days to eclosion) compared to solvent (10.2 \u00b1 0.1 days).",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed a delay in the developmental time for flies raised on 1 mM TMP (11.2 \u00b1 0.1 days to eclosion) and 10 mM TMP (15.3 \u00b1 0.3 days) as compared to solvent (10.2 \u00b1 0.1 days) (Figure 1\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "041446d6-c3b6-4d2a-986b-9700f0b77e59",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C35",
+      "claim": "Feeding adult flies TMP at 1 mM can induce GFP-DD expression at saturation level without any observable side effects on their survival or behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, feeding adult flies TMP at 1 mM can induce GFP-DD expression at saturation level (Figure 1D) without any observable side effects on their survival or behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing saturation at 1 mM (Figure 1D) and no effects on survival or behavior (Figure 1\u2014figure supplement 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "31073cbc-6055-4654-87d4-d956323bbf10",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C36",
+      "claim": "1 mM TMP delays development by about one day.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, however, the same dosage of TMP delays development by about one day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing developmental delay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "65940a81-a441-45ca-b5fa-3cfbcdebd48b",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C37",
+      "claim": "Binding of GAL80 to GAL4 prevents GAL4-mediated transcriptional activation in the GAL4/UAS expression system.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of GAL80 to GAL4 prevents GAL4-mediated transcriptional activation in the GAL4/UAS expression system (Lee and Luo, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Lee and Luo, 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "e8dabf2e-8126-4e55-acc6-191d0c38a701",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C38",
+      "claim": "nsyb-GAL80-DD is able to suppress GAL4-dependent GFP expression in olfactory sensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that nsyb-GAL80-DD was able to suppress GAL4-dependent GFP expression in olfactory sensory neurons (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "7d021fe2-0b42-4b53-8f8c-c5e1011a2eda",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C39",
+      "claim": "The suppression of GFP expression by nsyb-GAL80-DD in flies carrying Orco-GAL4, UAS-GFP and nsyb-GAL80-DD transgenes is TMP-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "This suppression of GFP expression in flies carrying the Orco-GAL4, UAS-GFP and nsyb-GAL80-DD transgenes was TMP-dependent (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "6de581c2-1c92-4340-b039-ab9f8c5eb4f0",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C40",
+      "claim": "When flies are moved from TMP-containing food to regular food, GFP expression starts to increase after 24 hr and peaks at 72 hr post-TMP removal.",
+      "claim_type": "EXPLICIT",
+      "source": "When flies were moved from TMP-containing food to regular food, GFP expression started to increase after 24 hr, and peaked at 72 hr post-TMP removal (Figure 2B1, C1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B1, C1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "125f49a7-f115-4a9d-a8f3-66965d61fa86",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C41",
+      "claim": "Flies fed with TMP continuously from embryo to adult show low GFP expression throughout the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, flies fed with TMP continuously, from embryo to adult, showed low GFP expression throughout the course of the experiment (Figure 2B2, C2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B2, C2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "fd77042b-5ca2-48da-8c65-88f486ac94f8",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C42",
+      "claim": "Flies raised on regular fly food throughout show high GFP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, flies that were raised on regular fly food throughout showed high GFP expression (Figure 2B3, C3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B3, C3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "df08f69d-04ef-4805-b789-1e02d49401c1",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C43",
+      "claim": "A difference in GFP expression between flies raised on TMP and those switched to solvent-containing food is observed starting at one day post-eclosion.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a difference between flies raised on TMP and those switched to solvent-containing food starting at one day post-eclosion (Figure 2\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "0dbbfc76-02ea-4e89-86e7-794e77ad4c29",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C44",
+      "claim": "No GFP expression is detected in flies younger than eight hours for either TMP or solvent condition.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not detect any GFP expression in flies younger than eight hours for either condition (Figure 2\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "c413b2d5-ffb3-49ad-b3c9-8ecaf04f71c8",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C45",
+      "claim": "The lack of GFP expression even in the absence of TMP in young flies is most likely due to the time required to inactivate GAL80-DD upon TMP withdrawal.",
+      "claim_type": "EXPLICIT",
+      "source": "This lack of GFP expression even in the absence of TMP is most likely due to the time that is required to inactivate GAL80-DD upon TMP withdrawal (Figure 1H), although it is formally possible that the expression level of Orco-Gal4 is low at eclosion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the GFP degradation kinetics shown in Figure 1H.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "95ffc739-b7d1-4cfa-87ac-465827440a34",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C46",
+      "claim": "Fusion of the ecDHFR-derived destabilizing domain to GAL80 permits TMP to control GAL80 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Either way, these results suggest that fusion of the ecDHFR-derived destabilizing domain to GAL80 permits TMP to control GAL80 activity, providing a chemically inducible system to control gene transcription in a temporal manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental results showing TMP-dependent suppression of GAL4-driven expression.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "08e52551-3991-4157-9c2d-bab56af903cd",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C47",
+      "claim": "Olfactory aversion to CO2 can be abolished by silencing Gr21a-expressing sensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Olfactory aversion to CO2 can be abolished by silencing Gr21a-expressing sensory neurons (Suh et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Suh et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "061ca8d6-4f9a-466b-a7a7-720cddb633a2",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C48",
+      "claim": "Gr21a-GAL4-derived tetanus toxin expression is blocked in the presence of GAL80-DD when flies are fed TMP, but not when they are fed solvent.",
+      "claim_type": "EXPLICIT",
+      "source": "Gr21a-GAL4-derived tetanus toxin expression was blocked in the presence of GAL80-DD when flies were fed TMP, but not when they were fed the solvent (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "417c36e2-acf6-40d2-bdc0-c552a93932ce",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C49",
+      "claim": "Aversion to CO2 is observed only when flies expressing Gr21a-GAL4, UAS-TNT, nsyb-GAL80-DD are fed with TMP, and not when they are fed with solvent.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, aversion to CO2 was observed only when flies expressing Gr21a-GAL4, UAS-TNT, nsyb-GAL80-DD were fed with TMP, and not when they were fed with the solvent (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "99ffc5ec-fb05-4c1f-9e75-f8b00567efeb",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C50",
+      "claim": "Control flies with GAL4 alone have high avoidance for both solvent and TMP feeding conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, control flies with GAL4 alone had high avoidance for both solvent and TMP feeding conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "80d0133f-fefa-47ef-a311-5bfd3e24c442",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C51",
+      "claim": "GAL80-DD can be used to manipulate GAL4-dependent expression of neuronal effectors and thereby alter the function of neuronal circuits underlying behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we show that GAL80-DD can be used to manipulate GAL4-dependent expression of neuronal effectors and thereby alter the function of neuronal circuits underlying behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the CO2 avoidance behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "26ff11c6-5621-45bd-aed9-f143114e6e87",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C52",
+      "claim": "Flippase-mediated removal of a stop cassette has been widely used for lineage analysis and sparse neuronal labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Flippase-mediated removal of a stop cassette has been widely used for lineage analysis and sparse neuronal labeling (Lee and Luo, 1999; Marin et al., 2002; Wong et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies (Lee and Luo, 1999; Marin et al., 2002; Wong et al., 2002).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "4aab5f83-1556-4dcd-8d8c-fb894e54979d",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C53",
+      "claim": "Lineage analysis requires transient high-level expression of flippase (FLP) at specific developmental stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Lineage analysis requires transient high-level expression of flippase (FLP) at specific developmental stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about lineage analysis techniques.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "7d1e5be2-d22e-4378-903a-d000bc2fabc1",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C54",
+      "claim": "Sparse neuronal labeling requires low-level FLP expression in post-mitotic neurons for the stochastic removal of a stop cassette.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, sparse neuronal labeling requires low-level FLP expression in post-mitotic neurons for the stochastic removal of a stop cassette.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about sparse labeling techniques.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "47540aa1-872e-48f3-8b40-af0515f6f7b5",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C55",
+      "claim": "The number of GFP-positive olfactory projection neurons is correlated to the TMP dosage.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the number of GFP-positive olfactory projection neurons was correlated to the TMP dosage (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "a8929863-1f41-4ab8-8445-d9e9a8b0e4dd",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C56",
+      "claim": "By varying the concentration of TMP (0.01\u20131 mM) in fly food, the number of labeled projection neurons can be controlled.",
+      "claim_type": "EXPLICIT",
+      "source": "By varying the concentration of TMP (0.01\u20131 mM) in fly food, we could control the number of labeled projection neurons (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "6ed8d87f-3905-4a0c-b6ee-fe8fbf977187",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C57",
+      "claim": "There are similar numbers of labeled neurons in both brain hemispheres for a given sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, there were similar numbers of labeled neurons in both brain hemispheres for a given sample (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "80959ef8-a0f6-49ce-a34b-275b61d4aa16",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C58",
+      "claim": "For flies fed with standard fly food without TMP, 42% of the brain hemispheres have only one GFP-positive cell.",
+      "claim_type": "EXPLICIT",
+      "source": "For flies fed with standard fly food without TMP, 42% of the brain hemispheres had only one GFP-positive cell (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "0065ec3d-6755-49bd-9b71-13526222a09c",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C59",
+      "claim": "Dose-dependent expression of FLP-DD can be used to control the number of genetically manipulated cells within a population.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, dose-dependent expression of FLP-DD can be used to control the number of genetically manipulated cells within a population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing dose-dependent labeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "9242677a-a42f-4174-8da8-71bb1ba3ab1f",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C60",
+      "claim": "The expression patterns for NP21-GAL4 and GH146-GAL4 overlap only in the DA1 lateral projection neurons (lPNs) in the adult brain.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that the expression patterns for NP21-GAL4 and GH146-GAL4 overlap only in the DA1 lateral projection neurons (lPNs) in the adult brain (Potter et al., 2010), which we validated (Figure 4A1,A2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citation to Potter et al., 2010 and validated by experimental data shown in Figure 4A1,A2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "704b3bc0-bbc6-495b-801b-a8720e52e01b",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C61",
+      "claim": "When UAS-FLP expression is driven by NP21-GAL4, the adult intersection pattern includes additional olfactory projection neurons, ellipsoid body neurons and neurons with cell bodies close to the lateral horn.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when UAS-FLP expression is driven by NP21-GAL4, the adult intersection pattern includes additional olfactory projection neurons, ellipsoid body neurons and neurons with cell bodies close to the lateral horn (Figure 4B1,B2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4B1,B2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "feb6cffd-e675-4e0b-9952-300992fb70b5",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C62",
+      "claim": "When QUAS-FLP is driven by GH146-QF, the adult intersection pattern includes additional neurons (visual projection neurons).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, when QUAS-FLP is driven by GH146-QF, the adult intersection pattern includes additional neurons (visual projection neurons in this case) (Figure 4C1,C2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4C1,C2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "05e318f5-629c-421d-bc37-74f1b5724cc5",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C63",
+      "claim": "The discrepancy between the overlap and the intersection patterns arises because of the broader expression patterns for GH146-QF and NP21-GAL4 before the adult stage.",
+      "claim_type": "EXPLICIT",
+      "source": "This discrepancy between the overlap and the intersection patterns arises because of the broader expression patterns for GH146-QF and NP21-GAL4 before the adult stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that intersection patterns include more cells than overlap patterns.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "5a88f2de-6fa2-4654-913f-a39a66c03b0c",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C64",
+      "claim": "The stop cassette is prematurely excised during development in neurons outside of the overlapping adult pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the stop cassette is prematurely excised during development in neurons outside of the overlapping adult pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the broader expression patterns during development.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "33ec51b0-8ae0-419b-8df8-c2430526b8ab",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C65",
+      "claim": "When UAS-FLP-DD is expressed by the NP21-GAL4 line and 1 mM TMP is fed to flies only during the adult stage, GFP expression is limited only to DA1 lPNs in the whole brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when UAS-FLP-DD was expressed by the NP21-GAL4 line and 1 mM TMP was fed to flies only during the adult stage, GFP expression was limited only to DA1 lPNs in the whole brain (Figure 4D1,D2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4D1,D2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "5a05282e-d252-49f9-a1b1-7740dca3ea62",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C66",
+      "claim": "Flies fed with solvent alone do not have GFP expression in any neurons in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, flies fed with solvent alone did not have GFP expression in any neurons in the brain (Figure 4E1,E2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4E1,E2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "e1a3483b-a1f6-45cc-9c90-556936e8d7d0",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C67",
+      "claim": "Flies fed with 1 mM TMP throughout development have GFP expression in additional olfactory projection neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, flies fed with 1 mM TMP throughout development have GFP expression in additional olfactory projection neurons (Figure 4F1,F2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4F1,F2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "667dc7d5-ffa6-4e56-ab49-68c68cffec58",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C68",
+      "claim": "The expression pattern in UAS-FLP-DD flies fed with 1 mM TMP throughout development is a subset of that observed with UAS-FLP flies.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that the expression pattern in UAS-FLP-DD flies fed with 1 mM TMP throughout development was a subset of that observed with UAS-FLP flies (Figure 4B,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4B,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "c7876cdb-5f7b-4d05-9b90-ce2424b5608e",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C69",
+      "claim": "TMP levels may decline in the fly brain during metamorphosis after the larvae stop feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that TMP levels decline in the fly brain during metamorphosis after the larvae stop feeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, inferred from the observation that expression patterns differ between FLP and FLP-DD.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "1c972591-309d-4917-b3ea-0c3455326ced",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C70",
+      "claim": "Similar results regarding TMP decline during metamorphosis have been observed in the context of RU486-induced FLP activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, similar results have been observed in the context of RU486-induced FLP activity (Harris et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Harris et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "c32a5fd8-89e8-460b-96ab-22031bf4542f",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C71",
+      "claim": "Feeding flies with 10 mM TMP throughout the larval stage results in a larger portion of the UAS-FLP expression pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "To mitigate this potential decline of TMP, we fed flies with 10 mM TMP throughout the larval stage and obtained a larger portion of the UAS-FLP expression pattern (Figure 4B, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4B and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "1d628a55-ab47-48b4-9b2f-cca853a11fea",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C72",
+      "claim": "TMP can be used to limit FLP-DD activity temporally such that the intersection pattern is identical to the overlap in the adult expression patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, we show that TMP can be used to limit FLP-DD activity temporally in a way such that the intersection pattern is identical to the overlap in the adult expression patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing restricted expression to DA1 lPNs when TMP is fed only in adults.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "d58022d4-6eb8-4cd7-8225-323d1d06fe30",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C73",
+      "claim": "The DD system provides an independent axis of control which can be used in combination with existing reagents.",
+      "claim_type": "EXPLICIT",
+      "source": "The DD system broadens the functionality of the Drosophila genetic toolkit as it provides an independent axis of control which can be used in combination with existing reagents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the demonstrated compatibility with multiple binary systems.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "f1a8b497-0b22-437f-af39-d2a45ce202ae",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C74",
+      "claim": "TMP-induced DD stabilization is dose-dependent over several orders of magnitude of TMP concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "First, TMP-induced DD stabilization is dose-dependent over several orders of magnitude of TMP concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing dose-dependent effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "66dddd26-169c-456e-815b-9a14ac5ae3a4",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C75",
+      "claim": "Tools such as GAL80-DD can be combined with existing GAL4 lines to knockdown targeted genes by RNAi or to perform neuronal silencing screens in a temporally refined manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, in contrast to existing chemical reagents, tools such as GAL80-DD can be combined with existing GAL4 lines to knockdown targeted genes by RNAi or to perform neuronal silencing screens in a temporally refined manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the demonstrated functionality of GAL80-DD with existing GAL4 lines.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "6e3e8c2a-d0db-493a-9d82-24180fb71ff4",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C76",
+      "claim": "The degradation kinetics of the DD fusion protein are most likely faster than those of the native protein when TMP is withdrawn.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, when TMP is withdrawn, the degradation kinetics of the DD fusion protein are most likely faster than those of the native protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on the mechanism of DD-mediated degradation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "be24cecd-f013-4a13-b212-b1f8212188bd",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C77",
+      "claim": "The DD system may offer fast temporal control in experiments which require reversible gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is possible that the DD system offers fast temporal control in experiments which require reversible gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, inferred from the degradation kinetics.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "4488c171-c53a-4649-9e4b-7e3e4fb330c1",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C78",
+      "claim": "The cost of TMP is almost 150 times less than RU486 or quinic acid at their respective working concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it is worth noting that the cost of TMP is almost 150 times less than RU486 or quinic acid at their respective working concentrations, making the DD system conducive to large scale behavioral screens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of chemical costs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "4dcbf1a7-dff5-4633-82d4-598ec880bbfd",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C79",
+      "claim": "The applicability of the DD system for a given cell type is limited by two factors: the cell type should have an active proteasome, and orally-fed TMP should be able to reach the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The applicability of the DD system for a given cell type is limited by two factors: (1) the cell type should have an active proteasome; (2) orally-fed TMP should be able to reach the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the mechanism of the DD system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "c753e1af-3fc3-49e6-bdd5-7451cb24fe5c",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C80",
+      "claim": "Low proteasome activity may result in high residual levels of the chimeric protein in the absence of TMP.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of TMP, the level of proteasome activity in a given cell type may influence the residual level of a DD chimeric protein. For instance, low proteasome activity may result in high residual levels of the chimeric protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the mechanism of proteasome-mediated degradation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "125625a4-af61-46e2-bd27-14a15d17f33e",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C81",
+      "claim": "It may be possible to reduce residual expression by co-expressing components of the protein degradation machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "It may be possible to reduce the residual expression by co-expressing components of the protein degradation machinery, similar to how co-expression of Dicer enhances RNAi efficiency (Dietzl et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on analogy to RNAi enhancement strategies.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "7f641602-d12b-45a8-9dae-6bf21ea808ae",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C82",
+      "claim": "TMP is a cell-permeable ligand which can cross the blood-brain barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "As TMP is a cell-permeable ligand which can cross the blood-brain barrier, it should be accessible to all tissues during the adult and larval stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about TMP properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "98e6867c-99fd-4f63-9c4a-001d61e061f0",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C83",
+      "claim": "The effectiveness of TMP in stabilizing the protein of interest during late pupal stages is reduced due to lack of feeding for several days leading up to this stage.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the effectiveness of TMP in stabilizing the protein of interest during late pupal stages is reduced due to lack of feeding for several days leading up to this stage (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from experimental data and knowledge about pupal development.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "bfd3b87e-8887-4664-af13-75a3bb645289",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C84",
+      "claim": "The level of gene expression controlled by GAL80-DD should always be determined using reporters before manipulating neuronal activity with effector transgenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the level of gene expression controlled by GAL80-DD should always be determined using reporters before manipulating neuronal activity with effector transgenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a recommendation based on the potential for leaky expression during late pupal stages.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "83d475fd-7272-4e21-881d-4da82501d71d",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C85",
+      "claim": "It will take roughly 24 hr to activate or inactivate the DD-system to an appreciable degree.",
+      "claim_type": "EXPLICIT",
+      "source": "We anticipate that it will take roughly 24 hr to activate or inactivate the DD-system to an appreciable degree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the kinetics data shown in the results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "fd98639b-ed71-475b-95a2-a228d814bbcc",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C87",
+      "claim": "DMSO at concentrations greater than 0.1% has a detrimental effect on the survival of larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "During the course of our experiments, we observed a detrimental effect of the solvent DMSO (greater than 0.1%) on the survival of larvae (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "e7761331-660c-4e44-8d0e-5df66b119f1c",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C88",
+      "claim": "Trimethoprim is an antibiotic.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, as trimethoprim is an antibiotic, experiments using the DD system should incorporate appropriate controls to rule out the effect of gut microbes on the phenotype of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about trimethoprim.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "13de2c6a-e565-4e70-9959-1cc53b96fb6f",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C89",
+      "claim": "GAL80-DD is the first construct that allows control of GAL80 activity in vivo by a small molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, GAL80-DD is the first construct that allows control of GAL80 activity in vivo by a small molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "9a26d8f9-a4cf-4ecf-a9a4-aeed0044431c",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C90",
+      "claim": "GAL80ts may be preferable in experiments that require low background expression.",
+      "claim_type": "EXPLICIT",
+      "source": "While GAL80ts may still be preferable in experiments that require low background expression, GAL80-DD is a useful alternative for experiments that are disrupted by temperature manipulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from comparison of the two systems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "020cc928-9747-41ac-bbe2-d5b77b57242e",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C91",
+      "claim": "An RU486-inducible FLP recombinase was constructed by fusing it with the human progesterone receptor (Flp-Switch).",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous study, an RU486-inducible FLP recombinase was constructed by fusing it with the human progesterone receptor (Flp-Switch) (Harris et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Harris et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "b5f74514-3b47-4a8f-91fb-ae509c4e5286",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C92",
+      "claim": "All DD-fusion proteins presented in this study are soluble molecules which function in the cytoplasm or the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "All DD-fusion proteins presented in this study are soluble molecules which function in the cytoplasm or the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the design of the constructs presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "44c5629b-d4b7-4da0-8c98-48d1aeb40556",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C93",
+      "claim": "Previous studies have used ecDHFR-derived destabilized domains to conditionally alter membrane protein expression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, previous studies have used ecDHFR-derived destabilized domains to conditionally alter membrane protein expression (Iwamoto et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Iwamoto et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "ea167e97-4041-40f1-8bb8-d6a1eaae861e",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C94",
+      "claim": "The DD technology can be used to temporally control expression of membrane proteins such as ion channels and G-protein-coupled receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we predict that this tool can be used to temporally control expression of membrane proteins such as ion channels and G-protein-coupled receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on previous studies with membrane proteins.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "2571915e-9d19-45ca-a16a-630e17f6ca76",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C95",
+      "claim": "DD can be knocked-in and fused to endogenous proteins to control their expression by limiting TMP feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "DD can be knocked-in and fused to endogenous proteins to control their expression by limiting TMP feeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about potential applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "c83784e9-e70f-4c1d-9f3a-c980e2f36bde",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C96",
+      "claim": "DD knock-in can be done using custom-designed genome editing strategies or by integration into available MiMIC sites within coding introns.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be done using custom-designed genome editing strategies or by integration into the large number of available MiMIC sites within coding introns (Venken et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established genome editing techniques and citation to Venken et al., 2011.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "27714b52-959e-455c-9514-84fa7314cf74",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C97",
+      "claim": "DD can be fused to a variety of effector genes for the purpose of inducible neuronal silencing or genome editing.",
+      "claim_type": "EXPLICIT",
+      "source": "DD can also be fused to a variety of effector genes for the purpose of inducible neuronal silencing or genome editing (Maji et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about potential applications, with citation to Maji et al., 2017.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "7d297fb5-a4bf-4871-aeb4-1deacde35561",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C98",
+      "claim": "GFP-DD can be coupled with knock-in GAL4 lines to compare gene expression in individual cells across time points spanning only a few hours.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to its inducible nature, GFP-DD can be coupled with knock-in GAL4 lines to compare gene expression in individual cells across time points spanning only a few hours, such as circadian fluctuation of gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about potential applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "423f49f5-9d1b-46b7-9224-307514226e61",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C99",
+      "claim": "GFP-DD may be useful as a sensor for proteasome activity.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP-DD may also be useful as a sensor for proteasome activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about potential applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "3898e3f3-cc70-4511-999a-9a467c7017cc",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C100",
+      "claim": "Temperature can have a significant impact on the physiology and behavior of a fly.",
+      "claim_type": "EXPLICIT",
+      "source": "First, temperature can have a significant impact on the physiology and behavior of a fly (Parisky et al., 2016; Sigrist et al., 2003), which may prevent detection of the phenotype of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Parisky et al., 2016 and Sigrist et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "ce0c616a-79f3-4b72-90fe-80b64b181a6b",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C101",
+      "claim": "Temperature-dependent tools are unlikely to be suitable for the study of thermosensory circuits and related behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, temperature-dependent tools are unlikely to be suitable for the study of thermosensory circuits and related behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the impact of temperature on fly physiology and behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "dbae1b40-b1e6-4619-a1d0-16e9e4fad1fc",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C102",
+      "claim": "Temporal control of gene expression using GAL80ts can only be achieved with transcription factors containing the GAD-activation domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, temporal control of gene expression using GAL80ts can only be achieved with transcription factors containing the GAD-activation domain, making it incompatible with a majority of the driver lines (LexA, QF and split-GAL4) that do not have the GAD domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on knowledge about the mechanism of GAL80ts.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "43af3d7a-fce4-4617-9484-845a75913d02",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C103",
+      "claim": "GAL80ts is incompatible with a majority of driver lines (LexA, QF and split-GAL4) that do not have the GAD domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, temporal control of gene expression using GAL80ts can only be achieved with transcription factors containing the GAD-activation domain, making it incompatible with a majority of the driver lines (LexA, QF and split-GAL4) that do not have the GAD domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on knowledge about the structure of different driver lines.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "74a5a825-25e9-4cbf-a98d-6ac9a6f52711",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C104",
+      "claim": "Application of current chemical-dependent tools requires the generation of new transgenic stocks, such as new promoter-GAL4 lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, application of the current chemical-dependent tools requires the generation of new transgenic stocks, such as new promoter-GAL4 lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on knowledge about existing chemical-dependent systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "a420a666-3956-4bca-af24-61ad41edff29",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C105",
+      "claim": "RU486 has been reported to cause developmental lethality in flies with pan-neuronal expression of the RU486-sensitive GAL4.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, RU486, a chemical used to induce gene expression in the Geneswitch system, has been reported to cause developmental lethality in flies with pan-neuronal expression of the RU486-sensitive GAL4 (Li and Stavropoulos, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Li and Stavropoulos, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "2d986a04-854b-47ad-8be4-09f52c6f2164",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C106",
+      "claim": "A recent study demonstrated that TMP can regulate activity of the yeast I-SceI endonuclease in Drosophila larvae expressing the fusion protein I-SceI-DD.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study demonstrated that TMP can regulate activity of the yeast I-SceI endonuclease in Drosophila larvae expressing the fusion protein I-SceI-DD (Janssen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Janssen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "002f3be3-3b4a-411b-aead-9bfddbbde4b7",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C107",
+      "claim": "Differences in GFP expression between solvent and TMP fed flies are significant across all developmental stages tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Differences in GFP expression between solvent and TMP fed flies are significant (unpaired t-test, two-tailed) across all developmental stages - Larva (p<0.001, t = 18.6, n = 6), Early pupa (p<0.001, t = 10.89, n = 5\u20136), Late pupa (p=0.025, t = 3.46, n = 5\u20136), Adult at eclosion (p=0.022, t = 3.25, n = 6), 3 day old adult (p<0.001, t = 7.55, n = 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "89cd954c-64ed-40ed-8817-d425a966f868",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C108",
+      "claim": "Differences in GFP expression between solvent and TMP-fed flies are significant for all cell-types tested (n = 4\u20136, p<0.003, t > 5.3).",
+      "claim_type": "EXPLICIT",
+      "source": "Differences in GFP expression between solvent and TMP-fed flies are significant for all cell-types shown (n = 4\u20136, p<0.003, t > 5.3, unpaired t-test, two-tailed, for all cell types).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data shown in Figure 1\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "e640af57-86d3-4d1a-b37b-716e8ebaf99b",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "claim_id": "C109",
+      "claim": "1% DMSO severely affects survival of larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "1% DMSO was found to severely affect survival of larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "dc458488-cd89-46b2-977b-becac4141db0",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The destabilizing domain (DD) derived from E. coli dihydrofolate reductase can control protein stability in Drosophila in a ligand-inducible manner. When DD is fused to GFP, the fusion protein is degraded by the proteasome in the absence of trimethoprim (TMP), but stabilized when TMP is present, resulting in robust, reversible, and dose-dependent control of protein levels with a large dynamic range.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 and C27-C28 collectively demonstrate that the DD system functions in Drosophila as it does in other organisms. The experimental data (C5, C6) showing TMP-dependent GFP expression, combined with citations to prior work (C1, C2, C3, C7) and demonstration of dose-dependency and reversibility (C28), provide strong converging evidence for this core result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "da7d3332-a5b3-4d71-832f-15908eb73134",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The DD system is maximally effective during larval (44-fold), early pupal (19-fold), and adult stages (27-fold), with reduced effectiveness during late pupal stages (5-fold) when flies do not feed. Statistical analysis confirms significant differences between TMP and solvent conditions across all developmental stages tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C14 and C107 provide quantitative data with statistical support showing stage-dependent effectiveness of the DD system. The reduced effectiveness during late pupal stages is logically explained by lack of feeding (C12, C14), and all differences are statistically significant (C107). The data are internally consistent and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "35bd3809-d9f4-4025-8979-291fbe4936c4",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The DD system is broadly compatible with different binary expression systems (GAL4/UAS, LexA/LexAop) and effective across multiple cell types, showing 4-64 fold differences between TMP and solvent conditions. Different cell types show variable effectiveness, with sensory neurons showing the largest differences (45-fold), likely due to differences in proteasome activity levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C22 and C108 demonstrate broad applicability across cell types and expression systems with statistical support. The observation of cell-type-specific differences (C18, C19) and the inference about proteasome activity (C20) are reasonable given the mechanism. The compatibility with LexA/LexAop (C22) extends the utility beyond GAL4 systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "e361d272-62b6-416d-a2f5-d801fe6b22fd",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The DD system exhibits dose-dependent induction (0-5 mM TMP) with maximum expression at 1 mM TMP (34-45 fold over control), reaches plateau within 36 hours of TMP feeding, and shows rapid reversibility with 73% reduction in GFP within 24 hours of TMP withdrawal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 and C74 provide detailed kinetic characterization with quantitative data. The dose-response, time-course, and reversibility experiments are well-designed and provide clear evidence for the dynamic range and temporal control of the system. The data support the claimed advantages over existing systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "83724fcd-e1f3-427e-8c31-8b4207b7a832",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Feeding adult flies with 1 mM TMP does not affect survival, locomotion speed, or odor localization ability, and flies raised on 0-10 mM TMP throughout development show equal survival to adulthood, demonstrating that 1 mM TMP can induce saturation-level expression without observable behavioral or survival side effects in adults.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 and C35 provide comprehensive toxicity and behavioral assessment data. Multiple independent behavioral assays (locomotion, odor localization) and survival measurements across different life stages support the conclusion that 1 mM TMP is well-tolerated in adults. The data are consistent and address important practical concerns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "05d52281-690a-4b45-b609-a361db437688",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "TMP causes dose-dependent developmental delays, with 1 mM TMP delaying eclosion by approximately one day (11.2 vs 10.2 days) and 10 mM TMP causing a more severe delay (15.3 days).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33, C34, and C36 provide quantitative data on developmental timing with error estimates. The dose-dependent effect is clear and statistically supported. This represents an important limitation of the system during development, though it does not affect adult applications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "5f0dba4c-924d-48aa-9d1f-c652e8244778",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Fusion of DD to GAL80 creates a TMP-inducible system for temporal control of GAL4-dependent gene expression. GAL80-DD suppresses GAL4-driven GFP expression in a TMP-dependent manner, with GFP expression increasing 24-72 hours after TMP withdrawal, enabling temporal control of gene transcription and manipulation of neuronal circuit function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C46 and C51 demonstrate successful engineering of GAL80-DD with appropriate controls and time-course data. The mechanism is well-established (C37), the TMP-dependence is clearly shown (C38, C39), and the temporal dynamics are characterized (C40-C44). The inference about GAL80-DD inactivation kinetics (C45) is reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "df00bf02-d247-4aaf-b65b-e6e26510a95a",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "GAL80-DD can be used to manipulate neuronal activity and behavior, as demonstrated by TMP-dependent restoration of CO2 avoidance through suppression of tetanus toxin expression in Gr21a-expressing sensory neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 provide a clear behavioral demonstration of GAL80-DD functionality. The use of CO2 avoidance as a readout is well-established (C47), and the TMP-dependent behavioral rescue with appropriate controls (C50) provides strong evidence for the utility of this tool in circuit manipulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "9995e772-f3a1-46d3-b36c-bebf8b8e4000",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "FLP-DD enables dose-dependent control of recombination frequency, with TMP concentration (0.01-1 mM) determining the number of labeled neurons. At baseline (no TMP), 42% of brain hemispheres show single-cell labeling, enabling high-efficiency sparse labeling for connectomics applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C59 establish the utility of FLP-DD for sparse labeling with clear dose-response data (C55, C56) and bilateral symmetry (C57). The single-cell labeling frequency (C58) is quantified and demonstrates practical utility. The background knowledge about FLP applications (C52-C54) provides appropriate context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "1b95e9ee-075a-47da-bb68-54586272a04d",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "FLP-DD enables temporal refinement of genetic intersections by restricting FLP activity to specific developmental stages through TMP feeding. Adult-only TMP feeding limits GFP expression to DA1 lateral projection neurons (the true adult overlap), while developmental TMP feeding produces broader patterns due to premature recombination. Higher TMP concentrations (10 mM) during larval stages can compensate for potential TMP decline during metamorphosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C72 demonstrate sophisticated temporal control of genetic intersections with appropriate controls and validation. The discrepancy between overlap and intersection patterns (C61-C64) is well-documented, and the solution using FLP-DD with adult-only TMP feeding (C65) is clearly demonstrated. The speculation about TMP decline (C69) is supported by analogy to RU486 systems (C70) and addressed experimentally (C71).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "27e78e7c-07ac-420d-a2ba-4e4c4585dfab",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The DD system provides advantages over existing tools including: independent axis of control compatible with existing reagents, ability to combine with GAL4 lines for temporally refined RNAi or silencing screens, and significantly lower cost (150-fold less than RU486 or quinic acid at working concentrations).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73, C75, and C78 summarize key advantages supported by the experimental demonstrations throughout the paper. The compatibility claim (C73) is supported by data with multiple binary systems, the screening utility (C75) is a reasonable inference from the GAL80-DD results, and the cost comparison (C78) is factual.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "5981e967-169e-46ed-b817-ec75b6602427",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The DD system has limitations including: requirement for active proteasome and TMP accessibility in target cells, potential for high residual expression in cells with low proteasome activity, reduced effectiveness during late pupal stages due to lack of feeding, and approximately 24-hour timescale for activation/inactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C85 provide honest assessment of system limitations. The mechanistic limitations (C79, C80) are logical inferences from how the system works. The late pupal limitation (C83) is supported by experimental data (C11). The temporal resolution estimate (C85) is based on the kinetics data. The recommendation for validation (C84) is appropriate given the limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "5613eed9-fe1f-48b3-8c48-fc309fd9b39f",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "DMSO at concentrations greater than 0.1% severely affects larval survival, and trimethoprim is an antibiotic, requiring appropriate controls to rule out effects of gut microbes on phenotypes of interest.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87, C88, and C109 identify important technical considerations. The DMSO toxicity (C87, C109) is based on experimental observations and led to protocol modifications. The antibiotic property of TMP (C88) is established knowledge and the recommendation for controls is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "be67b344-e834-4cfb-8773-5a2ec9d9aa85",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "GAL80-DD is the first construct allowing small molecule control of GAL80 activity in vivo. While GAL80ts may be preferable for experiments requiring low background expression, GAL80-DD provides an alternative for experiments disrupted by temperature manipulations. An RU486-inducible FLP (Flp-Switch) was previously developed using a different mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C91 provide appropriate context and comparison to existing tools. The novelty claim (C89) is based on literature knowledge, the comparison to GAL80ts (C90) acknowledges trade-offs, and the citation of Flp-Switch (C91) provides relevant prior art. These claims appropriately position the work in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "4b41506e-cc23-4e27-8c10-2b30378e468b",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The DD technology has potential applications beyond those demonstrated, including: control of membrane proteins (ion channels, GPCRs), knock-in to endogenous proteins via genome editing or MiMIC sites, fusion to effector genes for inducible silencing or genome editing, temporal analysis of gene expression (e.g., circadian rhythms), and use as a proteasome activity sensor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C92-C99 are largely speculative about future applications (C94, C95, C97, C98, C99). While some are supported by prior work with membrane proteins (C93), most represent untested hypotheses. The suggestions are reasonable given the demonstrated functionality, but lack experimental validation in this study. These represent promising directions for future work rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "e3ef1013-c235-42e9-80ea-d79791975b6a",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Existing temporal control systems have limitations including: temperature effects on fly physiology and behavior that may prevent phenotype detection, GAL80ts incompatibility with most driver lines (LexA, QF, split-GAL4) lacking the GAD domain, requirement for new transgenic stocks for chemical-dependent tools, and RU486 causing developmental lethality with pan-neuronal expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C105 provide context for why new tools are needed. The temperature effects (C100) and RU486 toxicity (C105) are supported by citations. The GAL80ts incompatibility (C102, C103) and requirement for new stocks (C104) are based on established knowledge about these systems. These claims appropriately motivate the development of the DD system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "604c67f0-0859-4a18-b809-53825ec041af",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The degradation kinetics of DD fusion proteins are likely faster than native proteins upon TMP withdrawal, potentially offering fast temporal control for reversible gene expression experiments. It may be possible to reduce residual expression by co-expressing protein degradation machinery components, analogous to Dicer co-expression enhancing RNAi efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76, C77, and C81 are speculative (C76, C77) or suggest untested approaches (C81). While the speculation about faster degradation kinetics is reasonable given the mechanism, it lacks direct experimental comparison to native protein degradation. The suggestion about co-expressing degradation machinery (C81) is based on analogy but untested. These represent hypotheses rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    },
+    {
+      "id": "122a32f1-08ab-4837-bcb8-9d38f92e661a",
+      "content_id": "791ecb4b-2378-4718-8b8a-31c3c0ff4737",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "A recent study demonstrated that TMP can regulate activity of the yeast I-SceI endonuclease in Drosophila larvae expressing I-SceI-DD fusion protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C106 is a straightforward citation to prior work (Janssen et al., 2016) that demonstrated DD functionality in Drosophila with a different protein. This provides relevant context showing that the DD approach had been used in flies before, though the current study represents a much more comprehensive characterization and development of practical tools.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:03:28.797542Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3783a8e6-a131-40be-946f-3379bfadb8a5",
+      "result_id": "dc458488-cd89-46b2-977b-becac4141db0"
+    },
+    {
+      "claim_id": "5809188a-4ca0-444d-bcbc-507e70815869",
+      "result_id": "dc458488-cd89-46b2-977b-becac4141db0"
+    },
+    {
+      "claim_id": "624d47e0-87d0-4f5a-abe8-8e86e4a6bf23",
+      "result_id": "dc458488-cd89-46b2-977b-becac4141db0"
+    },
+    {
+      "claim_id": "8f225296-c6dd-4a31-9e5a-98a4ce429387",
+      "result_id": "dc458488-cd89-46b2-977b-becac4141db0"
+    },
+    {
+      "claim_id": "6a4c0bf8-f401-4bc7-b016-e1ab6b5fc055",
+      "result_id": "dc458488-cd89-46b2-977b-becac4141db0"
+    },
+    {
+      "claim_id": "5281c077-84e8-4f07-8e09-64e7a7b3d30b",
+      "result_id": "dc458488-cd89-46b2-977b-becac4141db0"
+    },
+    {
+      "claim_id": "875d7e57-021f-4859-a10d-87ba17552c6d",
+      "result_id": "dc458488-cd89-46b2-977b-becac4141db0"
+    },
+    {
+      "claim_id": "0ccd139c-8cd4-4a4b-8a57-3750db0b9080",
+      "result_id": "dc458488-cd89-46b2-977b-becac4141db0"
+    },
+    {
+      "claim_id": "9c48526b-1b97-477a-82e4-33064d48f207",
+      "result_id": "dc458488-cd89-46b2-977b-becac4141db0"
+    },
+    {
+      "claim_id": "b0cf52c7-07e1-490f-8844-2fa8d9f19850",
+      "result_id": "da7d3332-a5b3-4d71-832f-15908eb73134"
+    },
+    {
+      "claim_id": "abb44f5f-ae07-495c-aa18-6bfd1eeaca33",
+      "result_id": "da7d3332-a5b3-4d71-832f-15908eb73134"
+    },
+    {
+      "claim_id": "74575aac-cf45-41aa-aeb9-75bfd3476e4f",
+      "result_id": "da7d3332-a5b3-4d71-832f-15908eb73134"
+    },
+    {
+      "claim_id": "3cde9ceb-db5a-46b3-b24c-165bca14ae69",
+      "result_id": "da7d3332-a5b3-4d71-832f-15908eb73134"
+    },
+    {
+      "claim_id": "b2cb62b3-2c83-4183-b201-b07067b329c1",
+      "result_id": "da7d3332-a5b3-4d71-832f-15908eb73134"
+    },
+    {
+      "claim_id": "df5123f5-22f4-4f98-851d-ea942ad385cc",
+      "result_id": "da7d3332-a5b3-4d71-832f-15908eb73134"
+    },
+    {
+      "claim_id": "f15d1b4a-8ef1-4080-9ba0-375fbf00ea51",
+      "result_id": "da7d3332-a5b3-4d71-832f-15908eb73134"
+    },
+    {
+      "claim_id": "002f3be3-3b4a-411b-aead-9bfddbbde4b7",
+      "result_id": "da7d3332-a5b3-4d71-832f-15908eb73134"
+    },
+    {
+      "claim_id": "b43249a5-236c-413c-96e2-029f29880a6f",
+      "result_id": "35bd3809-d9f4-4025-8979-291fbe4936c4"
+    },
+    {
+      "claim_id": "d8e9b9a5-1ce3-4a95-87f0-12b367b0a31c",
+      "result_id": "35bd3809-d9f4-4025-8979-291fbe4936c4"
+    },
+    {
+      "claim_id": "eb2464e8-cbbc-4504-9bcd-e56976cbf344",
+      "result_id": "35bd3809-d9f4-4025-8979-291fbe4936c4"
+    },
+    {
+      "claim_id": "ef0fde4f-a46b-40c1-a831-ea52c9a0ef50",
+      "result_id": "35bd3809-d9f4-4025-8979-291fbe4936c4"
+    },
+    {
+      "claim_id": "583e2591-158c-4519-9a58-c078b852225d",
+      "result_id": "35bd3809-d9f4-4025-8979-291fbe4936c4"
+    },
+    {
+      "claim_id": "379959a1-46e2-4f65-9a81-bedf08a83ce6",
+      "result_id": "35bd3809-d9f4-4025-8979-291fbe4936c4"
+    },
+    {
+      "claim_id": "43a644d0-d09f-4487-8512-45aa50094cf8",
+      "result_id": "35bd3809-d9f4-4025-8979-291fbe4936c4"
+    },
+    {
+      "claim_id": "5804cabc-e716-4a4c-a2a6-e6af8cf914ec",
+      "result_id": "35bd3809-d9f4-4025-8979-291fbe4936c4"
+    },
+    {
+      "claim_id": "89cd954c-64ed-40ed-8817-d425a966f868",
+      "result_id": "35bd3809-d9f4-4025-8979-291fbe4936c4"
+    },
+    {
+      "claim_id": "8c60c6c8-8779-4fe9-85d9-966549da24c7",
+      "result_id": "e361d272-62b6-416d-a2f5-d801fe6b22fd"
+    },
+    {
+      "claim_id": "a0afa7d1-70b9-45be-996d-a1421845afe8",
+      "result_id": "e361d272-62b6-416d-a2f5-d801fe6b22fd"
+    },
+    {
+      "claim_id": "643d14d9-eb1f-4049-95d7-169a4abce346",
+      "result_id": "e361d272-62b6-416d-a2f5-d801fe6b22fd"
+    },
+    {
+      "claim_id": "97fe5970-aabd-4d46-872f-2c99e23d410a",
+      "result_id": "e361d272-62b6-416d-a2f5-d801fe6b22fd"
+    },
+    {
+      "claim_id": "f1a8b497-0b22-437f-af39-d2a45ce202ae",
+      "result_id": "e361d272-62b6-416d-a2f5-d801fe6b22fd"
+    },
+    {
+      "claim_id": "84cd6815-83d2-4d6d-ad0e-4f191d80d0f6",
+      "result_id": "83724fcd-e1f3-427e-8c31-8b4207b7a832"
+    },
+    {
+      "claim_id": "32a6d5d2-d443-42c7-8224-98428a0777c6",
+      "result_id": "83724fcd-e1f3-427e-8c31-8b4207b7a832"
+    },
+    {
+      "claim_id": "0fa211d6-ac1f-4da5-871a-3f66f15a05ed",
+      "result_id": "83724fcd-e1f3-427e-8c31-8b4207b7a832"
+    },
+    {
+      "claim_id": "c6985b4a-e4a5-46bb-9a39-766f36b8eceb",
+      "result_id": "83724fcd-e1f3-427e-8c31-8b4207b7a832"
+    },
+    {
+      "claim_id": "041446d6-c3b6-4d2a-986b-9700f0b77e59",
+      "result_id": "83724fcd-e1f3-427e-8c31-8b4207b7a832"
+    },
+    {
+      "claim_id": "60de8ca1-b97f-4827-a490-d9c65b085f0e",
+      "result_id": "05d52281-690a-4b45-b609-a361db437688"
+    },
+    {
+      "claim_id": "f50ff0a5-705c-477f-8151-105be9a16b6f",
+      "result_id": "05d52281-690a-4b45-b609-a361db437688"
+    },
+    {
+      "claim_id": "31073cbc-6055-4654-87d4-d956323bbf10",
+      "result_id": "05d52281-690a-4b45-b609-a361db437688"
+    },
+    {
+      "claim_id": "65940a81-a441-45ca-b5fa-3cfbcdebd48b",
+      "result_id": "5f0dba4c-924d-48aa-9d1f-c652e8244778"
+    },
+    {
+      "claim_id": "e8dabf2e-8126-4e55-acc6-191d0c38a701",
+      "result_id": "5f0dba4c-924d-48aa-9d1f-c652e8244778"
+    },
+    {
+      "claim_id": "7d021fe2-0b42-4b53-8f8c-c5e1011a2eda",
+      "result_id": "5f0dba4c-924d-48aa-9d1f-c652e8244778"
+    },
+    {
+      "claim_id": "6de581c2-1c92-4340-b039-ab9f8c5eb4f0",
+      "result_id": "5f0dba4c-924d-48aa-9d1f-c652e8244778"
+    },
+    {
+      "claim_id": "125f49a7-f115-4a9d-a8f3-66965d61fa86",
+      "result_id": "5f0dba4c-924d-48aa-9d1f-c652e8244778"
+    },
+    {
+      "claim_id": "fd77042b-5ca2-48da-8c65-88f486ac94f8",
+      "result_id": "5f0dba4c-924d-48aa-9d1f-c652e8244778"
+    },
+    {
+      "claim_id": "df08f69d-04ef-4805-b789-1e02d49401c1",
+      "result_id": "5f0dba4c-924d-48aa-9d1f-c652e8244778"
+    },
+    {
+      "claim_id": "0dbbfc76-02ea-4e89-86e7-794e77ad4c29",
+      "result_id": "5f0dba4c-924d-48aa-9d1f-c652e8244778"
+    },
+    {
+      "claim_id": "c413b2d5-ffb3-49ad-b3c9-8ecaf04f71c8",
+      "result_id": "5f0dba4c-924d-48aa-9d1f-c652e8244778"
+    },
+    {
+      "claim_id": "95ffc739-b7d1-4cfa-87ac-465827440a34",
+      "result_id": "5f0dba4c-924d-48aa-9d1f-c652e8244778"
+    },
+    {
+      "claim_id": "80d0133f-fefa-47ef-a311-5bfd3e24c442",
+      "result_id": "5f0dba4c-924d-48aa-9d1f-c652e8244778"
+    },
+    {
+      "claim_id": "08e52551-3991-4157-9c2d-bab56af903cd",
+      "result_id": "df00bf02-d247-4aaf-b65b-e6e26510a95a"
+    },
+    {
+      "claim_id": "061ca8d6-4f9a-466b-a7a7-720cddb633a2",
+      "result_id": "df00bf02-d247-4aaf-b65b-e6e26510a95a"
+    },
+    {
+      "claim_id": "417c36e2-acf6-40d2-bdc0-c552a93932ce",
+      "result_id": "df00bf02-d247-4aaf-b65b-e6e26510a95a"
+    },
+    {
+      "claim_id": "99ffc5ec-fb05-4c1f-9e75-f8b00567efeb",
+      "result_id": "df00bf02-d247-4aaf-b65b-e6e26510a95a"
+    },
+    {
+      "claim_id": "26ff11c6-5621-45bd-aed9-f143114e6e87",
+      "result_id": "9995e772-f3a1-46d3-b36c-bebf8b8e4000"
+    },
+    {
+      "claim_id": "4aab5f83-1556-4dcd-8d8c-fb894e54979d",
+      "result_id": "9995e772-f3a1-46d3-b36c-bebf8b8e4000"
+    },
+    {
+      "claim_id": "7d1e5be2-d22e-4378-903a-d000bc2fabc1",
+      "result_id": "9995e772-f3a1-46d3-b36c-bebf8b8e4000"
+    },
+    {
+      "claim_id": "47540aa1-872e-48f3-8b40-af0515f6f7b5",
+      "result_id": "9995e772-f3a1-46d3-b36c-bebf8b8e4000"
+    },
+    {
+      "claim_id": "a8929863-1f41-4ab8-8445-d9e9a8b0e4dd",
+      "result_id": "9995e772-f3a1-46d3-b36c-bebf8b8e4000"
+    },
+    {
+      "claim_id": "6ed8d87f-3905-4a0c-b6ee-fe8fbf977187",
+      "result_id": "9995e772-f3a1-46d3-b36c-bebf8b8e4000"
+    },
+    {
+      "claim_id": "80959ef8-a0f6-49ce-a34b-275b61d4aa16",
+      "result_id": "9995e772-f3a1-46d3-b36c-bebf8b8e4000"
+    },
+    {
+      "claim_id": "0065ec3d-6755-49bd-9b71-13526222a09c",
+      "result_id": "9995e772-f3a1-46d3-b36c-bebf8b8e4000"
+    },
+    {
+      "claim_id": "9242677a-a42f-4174-8da8-71bb1ba3ab1f",
+      "result_id": "1b95e9ee-075a-47da-bb68-54586272a04d"
+    },
+    {
+      "claim_id": "704b3bc0-bbc6-495b-801b-a8720e52e01b",
+      "result_id": "1b95e9ee-075a-47da-bb68-54586272a04d"
+    },
+    {
+      "claim_id": "feb6cffd-e675-4e0b-9952-300992fb70b5",
+      "result_id": "1b95e9ee-075a-47da-bb68-54586272a04d"
+    },
+    {
+      "claim_id": "05e318f5-629c-421d-bc37-74f1b5724cc5",
+      "result_id": "1b95e9ee-075a-47da-bb68-54586272a04d"
+    },
+    {
+      "claim_id": "5a88f2de-6fa2-4654-913f-a39a66c03b0c",
+      "result_id": "1b95e9ee-075a-47da-bb68-54586272a04d"
+    },
+    {
+      "claim_id": "33ec51b0-8ae0-419b-8df8-c2430526b8ab",
+      "result_id": "1b95e9ee-075a-47da-bb68-54586272a04d"
+    },
+    {
+      "claim_id": "5a05282e-d252-49f9-a1b1-7740dca3ea62",
+      "result_id": "1b95e9ee-075a-47da-bb68-54586272a04d"
+    },
+    {
+      "claim_id": "e1a3483b-a1f6-45cc-9c90-556936e8d7d0",
+      "result_id": "1b95e9ee-075a-47da-bb68-54586272a04d"
+    },
+    {
+      "claim_id": "667dc7d5-ffa6-4e56-ab49-68c68cffec58",
+      "result_id": "1b95e9ee-075a-47da-bb68-54586272a04d"
+    },
+    {
+      "claim_id": "c7876cdb-5f7b-4d05-9b90-ce2424b5608e",
+      "result_id": "1b95e9ee-075a-47da-bb68-54586272a04d"
+    },
+    {
+      "claim_id": "1c972591-309d-4917-b3ea-0c3455326ced",
+      "result_id": "1b95e9ee-075a-47da-bb68-54586272a04d"
+    },
+    {
+      "claim_id": "c32a5fd8-89e8-460b-96ab-22031bf4542f",
+      "result_id": "1b95e9ee-075a-47da-bb68-54586272a04d"
+    },
+    {
+      "claim_id": "1d628a55-ab47-48b4-9b2f-cca853a11fea",
+      "result_id": "1b95e9ee-075a-47da-bb68-54586272a04d"
+    },
+    {
+      "claim_id": "d58022d4-6eb8-4cd7-8225-323d1d06fe30",
+      "result_id": "27e78e7c-07ac-420d-a2ba-4e4c4585dfab"
+    },
+    {
+      "claim_id": "66dddd26-169c-456e-815b-9a14ac5ae3a4",
+      "result_id": "27e78e7c-07ac-420d-a2ba-4e4c4585dfab"
+    },
+    {
+      "claim_id": "4488c171-c53a-4649-9e4b-7e3e4fb330c1",
+      "result_id": "27e78e7c-07ac-420d-a2ba-4e4c4585dfab"
+    },
+    {
+      "claim_id": "4dcbf1a7-dff5-4633-82d4-598ec880bbfd",
+      "result_id": "5981e967-169e-46ed-b817-ec75b6602427"
+    },
+    {
+      "claim_id": "c753e1af-3fc3-49e6-bdd5-7451cb24fe5c",
+      "result_id": "5981e967-169e-46ed-b817-ec75b6602427"
+    },
+    {
+      "claim_id": "7f641602-d12b-45a8-9dae-6bf21ea808ae",
+      "result_id": "5981e967-169e-46ed-b817-ec75b6602427"
+    },
+    {
+      "claim_id": "98e6867c-99fd-4f63-9c4a-001d61e061f0",
+      "result_id": "5981e967-169e-46ed-b817-ec75b6602427"
+    },
+    {
+      "claim_id": "bfd3b87e-8887-4664-af13-75a3bb645289",
+      "result_id": "5981e967-169e-46ed-b817-ec75b6602427"
+    },
+    {
+      "claim_id": "83d475fd-7272-4e21-881d-4da82501d71d",
+      "result_id": "5981e967-169e-46ed-b817-ec75b6602427"
+    },
+    {
+      "claim_id": "fd98639b-ed71-475b-95a2-a228d814bbcc",
+      "result_id": "5613eed9-fe1f-48b3-8c48-fc309fd9b39f"
+    },
+    {
+      "claim_id": "e7761331-660c-4e44-8d0e-5df66b119f1c",
+      "result_id": "5613eed9-fe1f-48b3-8c48-fc309fd9b39f"
+    },
+    {
+      "claim_id": "e640af57-86d3-4d1a-b37b-716e8ebaf99b",
+      "result_id": "5613eed9-fe1f-48b3-8c48-fc309fd9b39f"
+    },
+    {
+      "claim_id": "13de2c6a-e565-4e70-9959-1cc53b96fb6f",
+      "result_id": "be67b344-e834-4cfb-8773-5a2ec9d9aa85"
+    },
+    {
+      "claim_id": "9a26d8f9-a4cf-4ecf-a9a4-aeed0044431c",
+      "result_id": "be67b344-e834-4cfb-8773-5a2ec9d9aa85"
+    },
+    {
+      "claim_id": "020cc928-9747-41ac-bbe2-d5b77b57242e",
+      "result_id": "be67b344-e834-4cfb-8773-5a2ec9d9aa85"
+    },
+    {
+      "claim_id": "b5f74514-3b47-4a8f-91fb-ae509c4e5286",
+      "result_id": "4b41506e-cc23-4e27-8c10-2b30378e468b"
+    },
+    {
+      "claim_id": "44c5629b-d4b7-4da0-8c98-48d1aeb40556",
+      "result_id": "4b41506e-cc23-4e27-8c10-2b30378e468b"
+    },
+    {
+      "claim_id": "ea167e97-4041-40f1-8bb8-d6a1eaae861e",
+      "result_id": "4b41506e-cc23-4e27-8c10-2b30378e468b"
+    },
+    {
+      "claim_id": "2571915e-9d19-45ca-a16a-630e17f6ca76",
+      "result_id": "4b41506e-cc23-4e27-8c10-2b30378e468b"
+    },
+    {
+      "claim_id": "c83784e9-e70f-4c1d-9f3a-c980e2f36bde",
+      "result_id": "4b41506e-cc23-4e27-8c10-2b30378e468b"
+    },
+    {
+      "claim_id": "27714b52-959e-455c-9514-84fa7314cf74",
+      "result_id": "4b41506e-cc23-4e27-8c10-2b30378e468b"
+    },
+    {
+      "claim_id": "7d297fb5-a4bf-4871-aeb4-1deacde35561",
+      "result_id": "4b41506e-cc23-4e27-8c10-2b30378e468b"
+    },
+    {
+      "claim_id": "423f49f5-9d1b-46b7-9224-307514226e61",
+      "result_id": "4b41506e-cc23-4e27-8c10-2b30378e468b"
+    },
+    {
+      "claim_id": "3898e3f3-cc70-4511-999a-9a467c7017cc",
+      "result_id": "e3ef1013-c235-42e9-80ea-d79791975b6a"
+    },
+    {
+      "claim_id": "ce0c616a-79f3-4b72-90fe-80b64b181a6b",
+      "result_id": "e3ef1013-c235-42e9-80ea-d79791975b6a"
+    },
+    {
+      "claim_id": "dbae1b40-b1e6-4619-a1d0-16e9e4fad1fc",
+      "result_id": "e3ef1013-c235-42e9-80ea-d79791975b6a"
+    },
+    {
+      "claim_id": "43af3d7a-fce4-4617-9484-845a75913d02",
+      "result_id": "e3ef1013-c235-42e9-80ea-d79791975b6a"
+    },
+    {
+      "claim_id": "74a5a825-25e9-4cbf-a98d-6ac9a6f52711",
+      "result_id": "e3ef1013-c235-42e9-80ea-d79791975b6a"
+    },
+    {
+      "claim_id": "a420a666-3956-4bca-af24-61ad41edff29",
+      "result_id": "e3ef1013-c235-42e9-80ea-d79791975b6a"
+    },
+    {
+      "claim_id": "6e3e8c2a-d0db-493a-9d82-24180fb71ff4",
+      "result_id": "604c67f0-0859-4a18-b809-53825ec041af"
+    },
+    {
+      "claim_id": "be24cecd-f013-4a13-b212-b1f8212188bd",
+      "result_id": "604c67f0-0859-4a18-b809-53825ec041af"
+    },
+    {
+      "claim_id": "125625a4-af61-46e2-bd27-14a15d17f33e",
+      "result_id": "604c67f0-0859-4a18-b809-53825ec041af"
+    },
+    {
+      "claim_id": "2d986a04-854b-47ad-8be4-09f52c6f2164",
+      "result_id": "122a32f1-08ab-4837-bcb8-9d38f92e661a"
+    }
+  ],
+  "comparisons": []
+}

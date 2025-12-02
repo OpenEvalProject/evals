@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C61"
+    ],
+    "result": "A likelihood-based decoder trained on discrimination task data achieved high cross-validation accuracy (>75%) in reconstructing stimulus identity from neural population responses, comparable to actual behavioral performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C61 both report the same cross-validation result showing >75% correct rate. The decoder performance was validated using proper cross-validation methodology (splitting trials into non-overlapping sets) and matched behavioral performance, providing strong evidence for successful decoding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "During the categorization task, neural population dynamics exhibited attractor-like behavior with trajectories converging toward two stable points corresponding to 'Red' and 'Green' categories. This clustering emerged gradually, with significantly stronger effects in the late period (450-550 ms) compared to early period (100-200 ms, p=0.001), and continued even after population firing rates stabilized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C5, C6, and C7 collectively demonstrate task-dependent attractor dynamics with proper statistical support (C7: p=0.001, bootstrap test). The temporal evolution is well-documented in Figure 2a-c, showing both the spatial structure of attractors and their time course. The finding that dynamics continue after firing rate stabilization (C5) strengthens the interpretation that these reflect genuine dynamical properties rather than simple rate changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "A time-invariant recurrent model outperformed three gain-modulation models (including time-variant and stimulus-dependent versions) in explaining task-dependent neural dynamics, showing the smallest cross-validation error despite having constant parameters across time and stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 provide converging evidence from model comparison using proper cross-validation. The recurrent model's superiority is notable because it achieved better fits with fewer parameters (time-invariant) than even the time-variant gain-modulation model, reducing concerns about overfitting. The cross-validation procedure and error metrics (Figure 2d inset) provide quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Neural population dynamics predicted behavioral choices in the categorization task. The decoder output matched the behavioral classification boundary, and trial-to-trial choice variability was reflected in neural trajectories that gradually diverged toward the chosen category, with significantly larger differences in late (450-550 ms) versus early (50-150 ms) periods (p=0.002).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 provide multiple lines of evidence linking neural dynamics to behavior: boundary matching (C11), trial-by-trial correspondence (C12-C13), and statistical validation of temporal evolution (C14: p=0.002, permutation test). Claim C15 provides theoretical support for the gradual amplification pattern. The convergence of behavioral and neural measures strengthens the functional interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Task-dependent neural dynamics selectively enhanced task-relevant information: category information increased in the categorization task (particularly in late periods), while hue information increased in the discrimination task (primarily in early periods), indicating functional benefits of the dynamical modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 demonstrate selective information enhancement through mutual information analysis. The temporal dissociation (C18-C19) between category and hue information changes is consistent with the attractor dynamics findings. However, C19 includes speculation about signal-to-noise ratio effects, and the mutual information analysis assumes no noise correlations, which may overestimate information content.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Task-dependent attractor dynamics were not readily apparent using conventional dimensionality reduction methods (PCA, tSNE, demixed PCA, population vector, optimal linear decoder), despite top PCs explaining >60% of variance, suggesting task-dependent components are distributed across multiple dimensions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 systematically demonstrate that multiple standard methods failed to reveal the task-dependent structure captured by the likelihood-based decoder. This is well-documented in Figure 5 with multiple methods tested. However, the comparison is somewhat limited as the authors acknowledge (C39) they did not exhaustively test all possible methods, and the negative results depend on visual inspection rather than quantitative metrics in some cases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "A computational model featuring recurrent interactions between hue-selective and category-selective neurons replicated key experimental observations through bifurcation of attractor structure controlled by background input strength. The model reproduced: bistability for neutral stimuli matching behavioral variability, gradually evolving categorical biases, choice-related neural variability, enhanced task-relevant information, and PCA-obscured task-dependent components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 describe a computational model that successfully replicates multiple aspects of the experimental data (Figures 6b-j). The bifurcation mechanism (C25-C26) provides a parsimonious explanation for task-dependent dynamics. The model's ability to reproduce diverse phenomena (C27-C31) including the PCA result strengthens its validity. However, the model includes assumptions about circuit architecture and parameters that are not directly validated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C62"
+    ],
+    "result": "The main findings were robust to various decoder modifications including noise correlations, subset of neurons (25th-75th percentile firing rates), non-Gaussian models, and time-invariant decoders, as demonstrated through control analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C62 report extensive control analyses (Figure 7) testing robustness to decoder assumptions. These controls address important methodological concerns about whether results depend on specific decoder choices. The consistency across variations strengthens confidence in the main findings, though the specific quantitative results of each control are not detailed in the claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C4"
+    ],
+    "result": "Approximately 64% of IT neurons showed task-dependent response modulation, with green stimuli consistently evoking larger responses than red stimuli in both tasks (mechanism unclear).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 cites prior work (Koida and Komatsu, 2007) and references Figure 1c. Claim C4 reports an observation from the current data. Both are descriptive findings. The 64% figure establishes the prevalence of task effects at single-neuron level, motivating the population analysis. The green-red asymmetry (C4) is noted but unexplained, representing an honest acknowledgment of an unexplained observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The hierarchical recurrent model shares features with recent models of recurrent top-down/bottom-up interactions and can theoretically approximate probabilistic inference. Its unique contribution is explaining context-dependent dynamics through attractor bifurcation via simple background input changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 appropriately contextualize the model within existing literature through citations. The theoretical connection to probabilistic inference (C33) is supported by cited work. Claim C35 correctly identifies the novel aspect (bifurcation mechanism). These claims appropriately distinguish between shared concepts and novel contributions, though the theoretical claims rely on cited work rather than new derivations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "While previous studies proposed context-dependent decision-making involves prefrontal attractor dynamics, the present results suggest sensory cortex (IT) also exhibits flexible attractor modulation depending on task context, which had not been previously demonstrated despite earlier reports of attractor dynamics in IT during categorization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 appropriately position the work relative to prior literature. C40 accurately cites previous prefrontal work. C41 is a reasonable inference from the present data. C42-C43 correctly identify the novelty: flexible modulation of attractor structure by task context in sensory cortex, distinguishing this from prior static attractor observations. The claims appropriately acknowledge prior work while identifying the specific advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The present task design (switching between categorization and discrimination) differs from previous task-switching studies (switching between different categorizations), which may explain apparent discrepancies regarding sensory cortex involvement. Population-level effects can be present even when single-neuron effects are unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C44 accurately describes a methodological difference with appropriate citations. However, C45 is speculative about whether this explains discrepancies, lacking direct evidence. C46 cites prior work showing population effects can exist without clear single-neuron signatures, which is relevant but doesn't directly test the speculation in C45. These claims raise valid points about interpretation but don't provide definitive evidence for the proposed explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The neural modulation pattern (increased sensitivity around categorical boundaries) is consistent with psychophysical findings of enhanced discriminability at category boundaries. The results add a dynamical perspective predicting time-dependent perceptual illusions, analogous to motion categorization biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 appropriately connects findings to prior psychophysics with citations. C48 is a reasonable prediction extending the findings, though it remains untested. C49 cites relevant prior work on motion perception. These claims appropriately link the findings to broader perceptual phenomena and generate testable predictions, though the predictions themselves are not validated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The involvement of sensory cortex in decision-related dynamics is consistent with feedback from higher areas. Enhanced task-relevant information and early-period (<250 ms) choice-related differences suggest the modulation likely contributed to behavioral performance rather than merely reflecting decision signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C53 make inferences about functional contributions and mechanisms. C50 appropriately cites relevant literature. C51-C53 make reasonable inferences based on timing and information content, but cannot definitively establish causality versus correlation. The early timing (C52) is suggestive but not conclusive evidence for a causal role. These are plausible interpretations but would require causal manipulations (e.g., inactivation experiments) for definitive support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Theoretical work proposes recurrent circuits can serve multiple functions (encoding, categorization, decision) enabling flexible context-dependent dynamics. The present findings suggest sensory neurons contribute to context-dependent behavior by flexibly modulating collective attractor dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 appropriately summarizes theoretical work with citations. C55 is a reasonable conclusion from the present findings, appropriately framed as a suggestion rather than definitive proof. The conclusion follows logically from the demonstrated task-dependent attractor dynamics in sensory cortex, though it represents an interpretation of functional significance rather than direct causal evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The study recorded 125 neurons from IT cortex area TE (a region with concentrated color-selective neurons) in two female macaque monkeys performing categorization and discrimination tasks with 11 color stimuli. Behavioral performance was high (80-90% correct in discrimination), and proper ethical approvals were obtained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C77 provide methodological details about subjects, recording locations, stimuli, behavioral tasks, and ethical compliance. These are straightforward factual statements about experimental procedures. The recording location (C57-C58) is appropriately supported by citations to prior work identifying this region. Behavioral performance (C59) is clearly stated. Ethical statements (C67-C69) provide required documentation. These claims establish the experimental foundation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C36",
+      "C38",
+      "C39"
+    ],
+    "result": "Recent studies emphasize stimulus-dependent contextual modulations in early visual cortex. Task-dependent attractor structures may be unclear with conventional unsupervised dimensionality reduction methods. Analyzing neural population state-space from a decoding perspective may be useful for extracting hidden dynamical properties relevant to neural function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 appropriately summarizes prior literature with citations. C38 is supported by the comparative analysis in the study (Figure 5) and cites relevant prior work. C39 is a methodological suggestion based on the study's results, appropriately framed as a suggestion rather than a definitive claim. These claims appropriately contextualize the methodological approach and its advantages.",
+    "result_type": "MINOR"
+  }
+]

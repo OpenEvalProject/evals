@@ -1,0 +1,438 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The authors identified and characterized DnB (Down-and-Back) interneurons using 412-Gal4 and 4051-Gal4 lines, showing these neurons have distinct morphology with medial dendritic arbors and lateral axonal projections, and are distinct from sensory neurons and motor axons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C27 provide converging anatomical and molecular evidence for DnB neuron identity and morphology. The use of multiple Gal4 lines (C16-C17), exclusion of sensory/motor identity (C19), identification of co-labeled neurons (C20-C21), and subcellular marker localization (C23, C25-C26) collectively support the characterization. The morphological description is consistent across single-cell labeling and marker studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Activation of DnB neurons in the VNC is sufficient to induce nociceptive rolling behavior, as demonstrated by both thermogenetic and optogenetic approaches, with VNC-specific activation showing 59% rolling probability compared to 0% when restricted to brain neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 demonstrate sufficiency through multiple independent activation methods (thermogenetic and optogenetic) and anatomical specificity through intersectional genetics. The control experiments excluding brain neurons (C30) and other co-labeled neurons (C32) strengthen the conclusion that VNC DnB neurons are responsible for the behavioral phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "DnB activation induces modular nociceptive behaviors, with preferential induction of sustained C-bending compared to cIV activation, suggesting that bending and rolling can be activated independently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 provide quantitative behavioral comparisons showing that while both cIV and DnB activation increase overall bending time (C34), they differ in the specific behavioral modules activated (C35-C36). The absence of escape crawl (C37) and ability to induce bending without rolling (C38) support the modularity conclusion, though the mechanism underlying this difference requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Dose-response experiments reveal that DnB activation triggers bending and rolling in a dose-dependent manner, with low activation inducing persistent bending and higher activation triggering bending followed by rolling, contrasting with cIV activation which triggers rapid rolling across all intensities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by systematic dose-response experiments using optogenetics at four different intensities. The temporal dynamics (C39-C40) and dose-dependent progression from bending to rolling (C42) are well-documented through behavioral ethograms and quantitative analysis, providing strong evidence for modular circuit organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "DnB neurons respond to noxious heat stimuli (39-42\u00b0C) as measured by calcium imaging, and this response is reduced by 68% when cIV nociceptors are silenced, indicating DnB neurons transduce noxious heat signals from cIV neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by calcium imaging experiments showing temperature-dependent DnB activation (C44) and substantial reduction upon cIV silencing (C45). The 68% reduction indicates cIV neurons provide major but not exclusive input to DnBs, consistent with the EM reconstruction showing multiple sensory inputs. The temperature threshold matches known cIV activation thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "DnB neurons function downstream of cIV nociceptors, as DnB activation can bypass cIV silencing to induce rolling behavior (82% rolling when DnBs activated despite cIV silencing).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 demonstrate functional hierarchy through epistasis experiments. The ability of DnB activation to rescue rolling behavior when cIV neurons are silenced (C48) provides strong evidence for downstream positioning. However, the incomplete rescue (82% vs typical higher percentages) suggests additional complexity in the circuit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Silencing DnB neurons using R70F01\u2229412 intersection significantly reduces rolling frequency (median 0 vs 3 rolls) and increases rolling duration (1.54s vs 0.84s), with this effect attributable to DnB rather than co-labeled A27j neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 demonstrate necessity through loss-of-function experiments with appropriate controls. The intersectional approach (C50-C51) and control experiment excluding A27j contribution (C52) strengthen the conclusion that DnB neurons are required for robust rolling. The quantitative behavioral metrics provide clear evidence of impairment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "DnB silencing reduces bend-rolling behavior while increasing bend-crawling and bending without rolling (49% vs 14% in controls), suggesting DnB neurons coordinate the transition from bending to rolling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 provide detailed behavioral analysis showing that DnB silencing affects the coupling between bending and rolling modules. The increase in bending without rolling (C56) is particularly informative, suggesting DnB neurons are specifically required for the bending-to-rolling transition rather than bending itself.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "DnB-silenced larvae show reduced body curvature during rolling attempts, with significantly more boundary points in the low curvature range compared to controls, suggesting DnB neurons promote both C-bending depth and rolling efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 employ sophisticated quantitative curvature analysis to demonstrate that DnB silencing affects the quality of body bending. The systematic analysis of curvature indices (C58-C59) provides objective evidence beyond simple behavioral categorization. The correlation between curvature and rolling efficiency (C61) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "DnB silencing does not impair normal crawling behavior (aside from modest speed increase), indicating DnB neurons have a specific role in escape motor circuitry rather than general motor function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 provide important negative control data showing behavioral specificity. The intact crawling with only modest speed increase (C62) argues against general motor deficits and supports a specific role in nociceptive escape circuits. This control is essential for interpreting the rolling deficits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "EM reconstruction reveals DnB neurons receive predominantly sensory input, with 45.5% from cIV nociceptors, 15% from cIII mechanosensors, 4% from cII neurons, and 3% from es neurons, with minimal non-sensory input from handle-A neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 are supported by systematic EM reconstruction providing quantitative connectivity data. The dominance of cIV input (C64) is consistent with functional data, while the substantial mechanosensory input (C65-C67) suggests multisensory integration. The near-exclusive sensory input (C68-C69) is well-documented through comprehensive circuit reconstruction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Different sensory neuron types target DnB neurons in spatially segregated patterns: cIII, cIV, and es neurons synapse on DnB dendrites in distinct regions, while cII neurons uniquely target DnB axons via collateral branches, potentially enabling presynaptic modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 combine EM reconstruction with anatomical co-labeling to demonstrate spatial organization of sensory inputs. The segregation of cIV and cIII inputs (C73-C75) and unique cII axo-axonic connectivity (C71) are well-supported by both EM and light microscopy. The speculation about presynaptic modulation (C72) is appropriately tentative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Despite receiving mechanosensory input, DnB neurons do not play a major role in gentle-touch responses, as neither activation nor silencing of DnB neurons affects gentle-touch behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 provide important functional characterization showing behavioral specificity despite anatomical connectivity. Both gain-of-function (C77) and loss-of-function (C78) experiments support the conclusion that DnB neurons are specialized for nociceptive rather than gentle-touch responses, despite receiving mechanosensory input.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "EM reconstruction identifies DnB outputs to nociceptive integrator neurons, particularly TePn05, which receives input from both DnBs and cIV neurons and projects to Basin interneurons, providing a pathway for DnB-Basin circuit communication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 describe DnB output connectivity to integrator neurons based on EM reconstruction. The identification of TePn05 as a convergence point (C81-C82) and its connection to Basin neurons (C82-C83) is well-supported by anatomical data, though functional validation of this pathway is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "DnB neurons form extensive synaptic connections with premotor neurons (A27k, A01d-3, A02g, A02e) implicated in locomotion, with anatomical segregation of outputs: nociceptive integrators receive input from DnB dendrites while premotor neurons receive input from DnB axons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 provide detailed connectivity mapping of DnB outputs to premotor circuits. The quantitative synapse counts (C84), laterality patterns (C85-C86), and functional context from prior studies (C87) support the conclusion. The spatial segregation of output sites (C90-C91) is particularly important for understanding functional organization, though the speculation about functional significance (C89) requires further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "DnB interneurons have a cholinergic identity, as demonstrated by Gal80 suppression, ChAT antibody co-localization, and ChAT-eGFP expression in DnB cell bodies and axons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 use multiple complementary approaches (genetic suppression, immunolabeling, and tagged protein expression) to establish neurotransmitter identity. The convergence of three independent methods (C92-C94) provides strong evidence for cholinergic identity, which is important for understanding circuit function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "DnB neurons contain large dense core vesicles at presynaptic sites and express PreproANF-GFP in axons, suggesting peptidergic or aminergic signaling in addition to cholinergic transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 provide evidence for additional signaling modalities beyond fast cholinergic transmission. The EM observation of dense core vesicles (C96) and PreproANF-GFP localization (C98) support peptidergic signaling, though the specific neuropeptide and its functional role remain to be determined. The speculation (C97) is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Silencing PMSI premotor neurons (including DnB targets A02g and A02e) using period-Gal4 reduces rolling frequency without affecting rolling bout length or the percentage of animals showing bending and rolling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C100 provide evidence for PMSI involvement in nociceptive behavior, but the interpretation is limited by lack of specificity. The period-Gal4 line labels multiple PMSI neurons beyond A02g and A02e (acknowledged in C100), making it difficult to attribute effects specifically to DnB downstream targets. More specific manipulations are needed to establish the role of DnB\u2192PMSI connections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "EM reconstruction identifies two indirect pathways from DnB to Goro rolling command neurons: through A09e neurons (connecting via Wave and A05q) and through TePn05 neurons (connecting via Basin interneurons and A05q/A23g).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C107 describe anatomical pathways based on EM reconstruction, with some functional validation from prior work (C106). The identification of multiple parallel pathways (C101-C105) is well-supported by connectivity data, though the speculation about functional significance (C107) requires direct testing. The convergence on A05q from both pathways is notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "DnB activation increases calcium responses in Goro neurons, as shown by both whole-CNS and segmental optogenetic activation, with no effect when only brain neurons are activated, demonstrating functional connectivity between DnB and Goro neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 provide functional validation of DnB\u2192Goro connectivity using calcium imaging. The anatomical specificity controls (C109) and consistency across activation methods (C108) support the conclusion of functional connectivity. This bridges the anatomical EM data with functional circuit properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Silencing Goro neurons while activating DnB neurons prevents rolling (88% bend\u2192no roll vs 61% bend\u2192roll in controls) but preserves bending behavior, demonstrating that C-bending and rolling are separable motor programs coordinated by DnB activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 provide critical functional evidence for modular organization through epistasis experiments. The dramatic shift from rolling to bending-only behavior (C112) when Goro is silenced during DnB activation strongly supports the conclusion that these are separable modules (C114). This is a key result demonstrating circuit logic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "DnB neurons serve as a multisensory integration node receiving direct input from nociceptive cIV neurons and multiple mechanosensory cell types, similar to vertebrate spinal interneurons that integrate nociceptive and mechanosensory information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 synthesize the connectivity data to propose DnB function as a multisensory integration node. The anatomical evidence (C115) is strong, and the comparison to vertebrate systems (C117) provides useful context. However, the functional integration of different sensory modalities by DnBs requires more direct testing beyond anatomical connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "DnB output synapses show spatial segregation, with axonal outputs targeting premotor neurons and dendritic outputs targeting neurons leading to Goro, potentially reflecting functional segregation into bending and rolling modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 describe anatomical organization of DnB outputs with speculation about functional significance. The spatial segregation (C119-C120) is well-documented through EM reconstruction, but the proposed functional segregation (C121) is speculative and requires direct testing through targeted manipulations of specific output pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "PMSI premotor neurons downstream of DnB are glutamatergic inhibitory neurons that regulate crawling speed, and their silencing reduces rolling behavior while leaving forward crawling largely intact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C125 integrate current findings with prior work on PMSI function. The evidence for PMSI involvement in nociceptive behavior (C122) is supported by data, and the characterization of PMSI properties (C123) is from prior work. The speculation about dual control of crawling and bending (C125) is reasonable but requires further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "DnB neurons target motor neurons innervating LT1 muscles implicated in self-righting behavior, suggesting these muscles may facilitate curved body bends underlying both self-righting and rolling behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 identify a specific motor output and propose functional significance based on prior work. The anatomical connection (C126) is supported by EM data, but the speculation about shared mechanisms between self-righting and rolling (C127) requires direct functional testing. This represents a testable hypothesis for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C128"
+    ],
+    "result": "DnB neurons likely have broader circuit impact than indicated by synaptic connections alone, as EM and marker expression suggest peptidergic signaling capability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C128 appropriately notes limitations of purely anatomical connectivity analysis given evidence for peptidergic signaling. This is a reasonable inference from the dense core vesicle and PreproANF data, though the specific peptide and its circuit effects remain to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "DnB neural circuitry is critical for evoking body bending during nocifensive rolling, with bending potentially providing rapid withdrawal and supporting rolling through body orientation and denticle belt positioning, with compromised rolling upon DnB inactivation arising from both weakened Goro activation and reduced bend angle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C133 synthesize findings to propose mechanisms for how bending supports rolling. The critical role of DnB in bending (C130) is well-supported by data, and the proposed mechanisms (C131-C132) are reasonable hypotheses based on biomechanics, though they require direct testing. The dual mechanism for rolling deficits (C133) is a logical inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Analysis of DnB function reveals modular control of nocifensive escape behavior with separable bending and rolling circuits that are sequentially regulated, with bending as primary DnB output and probabilistic rolling activation, consistent with hierarchical models of behavioral sequence generation but distinct in showing overlapping rather than strictly sequential execution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C143 synthesize the major findings into a comprehensive model of circuit organization. The evidence for modularity (C135-C136) and sequential regulation (C140) is strong from multiple experiments. The comparison to other behavioral sequences (C142) provides useful context, while noting the distinction of overlapping execution (C143). This represents a well-supported synthesis of the work.",
+    "result_type": "MAJOR"
+  }
+]

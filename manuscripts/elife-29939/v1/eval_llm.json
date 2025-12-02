@@ -1,0 +1,462 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Miranda localization is dynamic through the cell cycle: uniform cortical in interphase, progressively cleared during prophase in an apical-to-basal direction as aPKC/Bazooka accumulate apically, then reappears as a basal crescent after NEB with 2.5-fold increased intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide converging evidence from live imaging (BAC-tagged Mira::mCherry, n=5) and fixed samples showing the stepwise establishment of Miranda asymmetry. The temporal dynamics are well-documented with quantitative measurements of fluorescence intensity changes. This represents a key descriptive finding establishing the phenomenon to be explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C13",
+      "C18",
+      "C19"
+    ],
+    "result": "F-actin is dispensable for Miranda's uniform cortical localization in interphase and its clearance during prophase, but is required for both establishment and maintenance of basal Miranda crescents after NEB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 demonstrate through Latrunculin A (LatA) treatment that actin disruption does not affect interphase localization or prophase clearing, but prevents crescent formation after NEB and causes loss of established crescents in metaphase-arrested cells. The temporal specificity is clearly demonstrated with appropriate controls (cytokinesis failure confirms LatA efficacy). This is a central finding supporting the two-mode model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Miranda loss from the cortex upon LatA treatment precedes changes in aPKC/Bazooka localization by approximately 2.8\u00b11 minutes, indicating that actin's role in Miranda retention is direct rather than mediated through Par complex redistribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 provide temporal resolution (n=13 cells) showing Miranda becomes cytoplasmic before aPKC/Baz spread to the basal cortex. This timing experiment effectively distinguishes direct from indirect effects, though the ~3 minute difference is modest and could benefit from additional mechanistic validation. The conclusion is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Myosin light chain kinase (MLCK) activity is required for Miranda basal localization after NEB and maintenance of crescents, but unlike LatA, ML-7 treatment does not cause Par complex spreading, and the effect can be rescued by phosphomimetic Sqh (SqhEE).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 demonstrate through ML-7 treatment (MLCK inhibitor) that myosin activity is required for Miranda localization after NEB, with specificity confirmed by SqhEE rescue (Figure 2D shows significant delay in Mira loss, though exact statistics not provided in claims). The differential effect on Par complex compared to LatA (C16) is important for mechanistic interpretation. Well-controlled experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Previous work in S2 cells demonstrated that Miranda binds directly to plasma membrane phospholipids via its BH motif, and this binding is abolished by aPKC phosphorylation of Serine 96 within the BH motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 accurately cite prior work (Bailey and Prehoda, 2015) establishing the biochemical basis for Miranda-membrane interactions. These are foundational citations that provide context for the current in vivo studies. The authors appropriately distinguish prior S2 cell work from their neuroblast studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The Miranda S96A phosphomutant (preventing aPKC phosphorylation) localizes uniformly to the cortex in interphase, fails to clear during prophase, remains cortical throughout mitosis with transient apical enrichment, and is insensitive to LatA treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 describe the S96A mutant phenotype through live imaging. The failure to clear during prophase and LatA insensitivity (C27) are key predictions of the model that Miranda remains in the interphase (PM-binding) mode when phosphorylation is prevented. The apical enrichment (C26) is noted as possibly due to abnormal aPKC interactions, showing appropriate caution. Strong support for the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The Miranda S96D phosphomimetic mutant does not localize robustly to the cortex in interphase, accumulates on cortical microtubules (confirmed by colcemid sensitivity), but still localizes asymmetrically with basal bias after NEB at reduced levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 describe S96D behavior. The microtubule localization in interphase (C29, confirmed by colcemid treatment) indicates disrupted PM binding. The retained basal localization in mitosis (C30), though reduced, is important evidence that the metaphase mode can partially function even with a phosphomimetic mutation, supporting the existence of additional stabilizing interactions beyond simple PM binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Deletion of the BH motif abolishes both uniform cortical localization in interphase and asymmetric cortical localization after NEB, with Miranda becoming entirely cytoplasmic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 show that the BH motif is essential for Miranda localization in both cell cycle phases. This is a critical finding indicating the BH motif is necessary for both modes of cortical retention, though the mechanism may differ between interphase and mitosis. The complete loss of localization is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Overexpression of constitutively active aPKC\u0394N prevents Miranda cortical localization in interphase and most of mitosis, but Miranda localization is rescued in telophase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 describe aPKC\u0394N overexpression effects. The telophase rescue (C35) is an interesting observation suggesting Miranda retains some capacity for cortical engagement even with constitutive aPKC activity. The data are clearly presented in Figure 3\u2014figure supplement 1, though the mechanism of telophase rescue remains unexplained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "The BH motif is necessary and likely sufficient for Miranda's uniform cortical localization in interphase through plasma membrane interactions, and phospho-regulation of the BH motif affects Miranda localization in both interphase and mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 synthesize findings from BH deletion and phosphomutant experiments. The conclusion that the BH motif is necessary and likely sufficient for interphase localization is well-supported by the data, particularly the LatA insensitivity. The statement about phospho-regulation affecting both phases is clearly demonstrated by S96A and S96D phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "In apkc mutant neuroblasts, Miranda localizes uniformly to the cortex in interphase, fails to clear during prophase, remains uniformly cortical throughout mitosis, and this mitotic localization is insensitive to LatA treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 describe apkc mutant phenotype using live imaging (Video 12) and LatA treatment (Figure 4\u2014figure supplement 1). The LatA insensitivity in mitosis (C41) is a key prediction: if aPKC-dependent clearing is prevented, Miranda should persist in the interphase (actin-independent) mode. This is strong evidence for the two-mode model, with n=5 for LatA experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C48"
+    ],
+    "result": "FRAP measurements reveal that Miranda recovery is significantly different between interphase and mitosis; recovery is faster in mitosis when aPKC is inhibited (by RNAi or Lgl3A overexpression), and becomes as fast as interphase when both Lgl3A and LatA are applied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44, C48 present FRAP data (Figure 4C,C') showing differential turnover rates. The finding that aPKC inhibition accelerates mitotic recovery but doesn't reach interphase levels (C43-C44) is important, and the combination of Lgl3A + LatA achieving interphase-like recovery (C48) supports the model. Sample sizes appear adequate (n=17-26 for different conditions). Statistical significance is stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "A myristoylated membrane reporter (myr-Eos) shows approximately 4-fold slower dynamics in mitosis versus interphase, LatA treatment in mitosis restores interphase-like dynamics, and Lgl3A overexpression does not affect myr-Eos dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 use myr-Eos photoconversion to control for general cell cycle effects on membrane protein dynamics. This is an important control showing that the FRAP differences for Miranda are not simply due to general changes in membrane fluidity. The lack of Lgl3A effect on myr-Eos (C47) argues against Lgl3A causing non-specific cytoskeletal changes. Well-designed control experiment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Miranda turnover at the plasma membrane in interphase versus at the basal cortex in mitosis are different in unperturbed neuroblasts, and in apkc mutants, Miranda persists throughout mitosis with the same actin-insensitive uniform localization and similar turnover as in interphase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 synthesize the FRAP and apkc mutant findings to support the two-mode model. The conclusion that Miranda has different binding modes is well-supported by the combination of turnover measurements, drug sensitivities, and genetic manipulations. This represents a key mechanistic conclusion of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Treatment with 200 \u00b5M Y-27632 phenocopies the apkc phenotype (LatA-insensitive uniform cortical Miranda), but when added to metaphase-arrested cells, causes only partial loss of asymmetry with Miranda appearing faintly apically after ~52 minutes while retaining basal enrichment that is lost upon LatA addition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C55 describe high-dose Y-27632 effects. While the data show differential effects depending on when Y-27632 is added (before vs. after NEB), the interpretation is complicated by Y-27632's known non-specificity at 200 \u00b5M (acknowledged in C103). The conclusion that aPKC contributes to keeping Miranda off the apical cortex after NEB (C55) is reasonable but speculative given the drug's multiple targets. The n=15-25 sample sizes are adequate, but mechanistic certainty is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Low-dose Y-27632 (25 \u00b5M) added to cycling neuroblasts produces enlarged Miranda crescents without affecting aPKC crescent size; these enlarged crescents remain sensitive to LatA and ML-7, and correlate with increased daughter cell size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 describe a dose-dependent effect of Y-27632. The finding that 25 \u00b5M enlarges Miranda crescents without affecting aPKC (C57, n=22 for 50 \u00b5M control) suggests effects independent of aPKC inhibition. The correlation with daughter cell size (C61-C62, n=12) is interesting and suggests coupling between determinant localization and cell size control. The LatA/ML-7 sensitivity (C58-C59) confirms actomyosin dependence is maintained. Well-controlled experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Miranda crescent size is affected by low concentrations of Y-27632 likely independently of aPKC inhibition, and Miranda cortical retention has different mechanisms of regulation in interphase versus mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 synthesize the Y-27632 dose-response findings. The conclusion that low-dose effects are aPKC-independent is supported by the normal aPKC crescent size at 25 \u00b5M. The broader conclusion about different regulatory mechanisms (C64) is well-supported by the totality of drug treatment and mutant data. This represents an important summary conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The authors propose a two-mode model: in interphase, Miranda localizes uniformly via BH motif-mediated plasma membrane interactions independent of F-actin; after NEB, Miranda requires the BH motif for actomyosin-dependent basal retention; the transition depends on aPKC phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 present the central model of the paper, synthesizing findings from drug treatments, mutants, and FRAP experiments. The model is well-supported by converging lines of evidence: (1) differential actin dependence between phases, (2) BH motif requirement in both phases but with different properties, (3) aPKC-dependent transition. The model is clearly articulated and accounts for the major observations, though some mechanistic details remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Miranda can form homo-dimers and is likely already a dimer in interphase (as Prospero localizes to the plasma membrane in a Miranda-dependent manner), making changes in dimerization unlikely to explain differences in turnover between interphase and mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 address whether dimerization could explain the FRAP differences. The logic is sound: if Miranda is a dimer in both phases (C77, supported by Pros localization data in Figure 1\u2014figure supplement 1), then dimerization changes cannot explain turnover differences. This effectively rules out an alternative explanation, strengthening the two-mode model. The reasoning is clear and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "In mitosis, additional stabilizing interactions might retain Miranda basally that are not operating in interphase, potentially through direct F-actin binding, myosin-mediated anchoring, or interaction with mira mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C82 propose potential mechanisms for the mitotic mode but are explicitly speculative. While the proposal of additional stabilizing interactions (C79) is well-motivated by the data, the specific mechanisms (C80-C82) are hypothetical and cited from other contexts. These represent reasonable hypotheses for future work but lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The S96D phosphomimetic mutant strongly disrupts interphase localization but shows reduced basal localization in mitosis, consistent with the existence of stabilizing interactions in mitosis that are not present in interphase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 use the S96D phenotype to support the two-mode model. The differential effect in interphase (strong disruption) versus mitosis (reduced but present localization) is consistent with an additional, phosphorylation-insensitive retention mechanism in mitosis. This is a logical inference from the data, though the exact nature of the mitotic interactions remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The BH motif is essential for Miranda localization in both interphase and mitosis, but in mitosis, BH motif-mediated plasma membrane binding is no longer sufficient and the BH motif may mediate Miranda's interaction with actomyosin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 address the surprising finding that the BH motif is required in both phases despite different mechanisms. The observation that Mira\u0394BH is not found on mitotic microtubules (C90), unlike other mislocalized Miranda, suggests the deletion has specific effects beyond simply preventing PM binding. The proposal that the BH motif mediates actomyosin interaction (C91) is speculative but reasonable. The data clearly show BH motif necessity in both phases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Interfering with aPKC-dependent Miranda displacement during prophase (by apkc mutation or S96A) results in persistence of uniform, plasma membrane-bound Miranda in metaphase, suggesting that aPKC-dependent phosphorylation in prophase is a prerequisite for basal crescent formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 propose that prophase clearing is necessary for the transition to the mitotic mode. This is supported by the apkc and S96A phenotypes showing uniform cortical Miranda in metaphase with fast dynamics and actomyosin independence. The proposal that phosphorylation 'potentiates' actomyosin engagement (C94) is speculative but provides a mechanistic hypothesis. The data strongly support the necessity of prophase clearing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Miranda phosphorylation might need to be properly balanced and locally controlled for asymmetric localization, which could explain why the S96D phosphomimetic shows reduced basal localization and aPKC\u0394N overexpression prevents crescent formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 propose that phosphorylation must be precisely regulated. This is supported by the phenotypes of both too little (S96A) and too much (S96D, aPKC\u0394N) phosphorylation/aPKC activity disrupting proper localization. The inference is reasonable, though the exact requirements for 'proper balance' are not quantitatively defined. The data support the general principle.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Despite preventing cortical localization in interphase and metaphase, aPKC\u0394N overexpression allows Miranda localization rescue in telophase, suggesting Miranda retains the ability to engage with the cortex and that the BH motif might be important for this telophase rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 describe the telophase rescue phenomenon. The observation is clearly documented (Figure 3\u2014figure supplement 1), and the inference that the BH motif is important is supported by the lack of rescue with BH deletion (Video 11). However, the mechanism of telophase rescue remains unexplained. This is an interesting observation that warrants further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "High doses of Y-27632 (200 \u00b5M) added to metaphase-arrested neuroblasts lead to apical and lateral Miranda accumulation, suggesting aPKC contributes to keeping Miranda off the apical membrane after NEB, though at this concentration Y-27632 likely inhibits multiple processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C103 interpret high-dose Y-27632 effects. While the observation of apical Miranda accumulation is clear, the interpretation is explicitly uncertain due to the drug's non-specificity at 200 \u00b5M (C103). The conclusion about aPKC's role after NEB (C102) is reasonable but cannot be definitively established with this approach. Additional experiments with more specific aPKC inhibition would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Spatial information for Miranda crescent size could be provided by the actomyosin network itself, as low-dose Y-27632 yields enlarged Miranda crescents correlated with increased daughter cell size, suggesting determinant localization may be coupled to cell size control machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 propose a link between actomyosin organization and crescent size determination. The correlation between enlarged crescents and increased daughter cell size (C106, n=12) is clearly demonstrated. The proposal that actomyosin provides spatial information (C105) is speculative but well-motivated by the Y-27632 dose-response data. This represents an interesting hypothesis connecting two important aspects of asymmetric division.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "ROCK accumulates apically in prophase generating actomyosin asymmetry, and the IC50 of Y-27632 for ROCK is about 10-fold lower than for aPKC, suggesting that enlarged Miranda crescents at 25 \u00b5M Y-27632 might result from ROCK inhibition affecting actomyosin configuration and local tension anisotropies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 provide a mechanistic framework for interpreting the Y-27632 dose-response. The IC50 values (C109, from literature) support the interpretation that 25 \u00b5M primarily affects ROCK rather than aPKC. The proposal that ROCK inhibition affects actomyosin organization and tension (C111-C112) is reasonable and consistent with known ROCK functions, though direct measurements of tension or actomyosin organization are not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "ROCK and MLCK both affect myosin activity but have different effects on Miranda localization (ML-7 vs. Y-27632), potentially because they have different effects on myosin regulatory light chain phosphorylation as shown in other cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 address why ML-7 and Y-27632 have different effects despite both affecting myosin. The differential effects are clearly demonstrated (Figure 2 vs. Figure 5), and the explanation based on different phosphorylation patterns (C115, from MDCK cells) is reasonable. However, direct measurements of phosphorylation in neuroblasts would strengthen this interpretation. The logic is sound but relies on extrapolation from other systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Nuclear Prospero levels in neuroblasts affect quiescence and differentiation, and the two modes of Miranda cortical retention might allow regulation of nuclear Prospero levels in interphase while ensuring proper segregation of determinants in mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C119 propose a functional significance for the two-mode model. While C117 correctly cites prior work on Prospero's role, the proposals in C118-C119 are speculative. The idea that PM-bound Miranda sequesters Prospero is reasonable given their co-localization, but direct evidence for this function is not provided. This represents an interesting hypothesis about the biological significance of the two-mode system but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Prior work established that actomyosin is essential for Miranda polarization in mitosis and that Miranda can directly bind the plasma membrane via its BH motif, leading to a model where spatially controlled aPKC phosphorylation could explain asymmetry without requiring actomyosin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 accurately summarize prior work and the apparent contradiction that motivated this study. The citations are appropriate (Barros et al., 2003; Petritsch et al., 2003; Shen et al., 1998 for actomyosin; Bailey and Prehoda, 2015 for BH motif). This provides essential context for understanding the significance of the current findings that resolve this apparent inconsistency.",
+    "result_type": "MINOR"
+  }
+]

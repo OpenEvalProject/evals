@@ -1,0 +1,362 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C31",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The authors developed a methodology to genetically encode photoswitchable amino acids (PSAAs) into NMDA receptors using an orthogonal tRNA/synthetase pair from Methanosarcina mazei, enabling site-specific incorporation of azobenzene-based UAAs that undergo reversible photoisomerization between trans and cis configurations with a 3.5 \u00c5 change in end-to-end distance. Screening of 27 positions across receptor domains (NTD, ABD, TMD) identified at least one photosensitive site in each domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodology is well-established (C18-C19, C27) and the experimental approach is clearly described (C26, C30). The structural change upon photoisomerization (C28) is supported by prior literature (Beharry and Woolley, 2011). The screening results (C31, Table 1) demonstrate successful implementation across multiple receptor domains with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "PSAA incorporation at GluN1-P532 in the ABD dimer interface produces functional receptors with robust, reversible photoinhibition: UV light (365 nm) causes 48.9\u00b11% current inhibition (n=23), fully reversed by blue light (460 nm). The effect is state-independent and occurs with high PSAA incorporation fidelity, as evidenced by negligible currents without PSAA supplementation and independence from current amplitude or desensitization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative data are well-replicated (n=23) with appropriate controls including WT receptors showing no light sensitivity (C40) and minus-PSAA controls showing minimal background (C41). The state-independence (C38) and lack of correlation with amplitude/desensitization (C42) support homogeneous receptor populations. Statistical rigor is adequate with reported means, SEM, and sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The photoresponse kinetics of GluN1-P532PSAA receptors show millisecond-to-second timescales (\u03c4UV=500\u00b130 ms, \u03c4BLUE=45\u00b11 ms, n=23), with green light producing slower/partial recovery (\u03c4GREEN=1350\u00b1140 ms, 76\u00b17% recovery). The photoinactivated state is thermally stable for minutes, shows minimal photobleaching after 30s UV exposure, and sustains multiple toggling cycles without fatigue. Minimum 1s UV duration and \u226575% intensity are required for maximal effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinetic measurements are quantitative with appropriate fitting (monoexponential functions) and replication. The wavelength-dependent differences (C47-C48) are consistent with azobenzene photochemistry. The stability experiments (C54-C58) demonstrate robustness. However, the discrepancy between ultrafast azobenzene isomerization and slower biological response (C52-C53) is noted but only speculatively explained, which is appropriate given current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "PSAA at GluN1-P532 enables optical control of channel open probability (Po): MK-801 blocking kinetics show ~1.3-fold slower rates in dark (p=0.27) and ~2-fold slower under UV, indicating decreased Po in the photoinactivated state. WT receptors show no light-dependent Po changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The use of MK-801 blocking kinetics as a Po proxy is well-established. The quantitative differences are clear, though the dark state effect (p=0.27) is not statistically significant, appropriately noted. The WT control (C63) is essential and properly included. The conclusion (C64) follows logically from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Photoswitching GluN1-P532PSAA to cis-state selectively reduces glycine sensitivity (~20-fold EC50 increase under UV vs WT, approaching 94.3\u00b11% inhibition at 1 \u00b5M glycine) and accelerates glycine deactivation kinetics, while glutamate sensitivity and deactivation remain unaffected by light. This demonstrates dual mechanism: decreased Po and reduced glycine affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dose-response curves (C65-C67) are comprehensive with appropriate concentration ranges. The glycine-concentration dependence of photoinhibition (C68-C69) provides strong mechanistic insight. The deactivation kinetics (C70-C71) corroborate the equilibrium measurements. The dual mechanism conclusion (C72) is well-supported by converging evidence. However, the molecular basis for glycine-specific effects could benefit from structural analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "PSAA at GluN1-Y109 in the NTD dimer interface produces reversible photoinhibition in both GluN2A and GluN2B receptors, but with markedly different magnitudes: 21\u00b13% for GluN2A (n=6) vs 79\u00b12% for GluN2B (n=10). This contrasts with irreversible AzF photocrosslinking that only affects GluN2B, revealing subunit-specific NTD contributions to gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to prior AzF work (C74, Zhu et al., 2014) provides important context. The quantitative difference between GluN2A and GluN2B (C76) is substantial and well-replicated. The conclusion about subunit-specific NTD function (C79) is supported by the data, though the mechanistic basis remains inferential. The reversibility advantage over AzF is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "A conserved hydrophobic cluster in the TMD (GluN1 residues F554, W563, Y647, F654) tolerates PSAA incorporation and exhibits UV-induced photopotentiation (up to 4.3\u00b10.4-fold for Y647, n=14; 3.9\u00b10.2-fold for F654, n=12). The effect is bi-directional compared to ABD/NTD photoinhibition, state-independent, site-dependent in kinetics, and shows high stability and reversibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of the hydrophobic cluster is supported by structural analysis and conservation data (C81). The photopotentiation is quantitatively robust with adequate replication. The bi-directionality (C83) is a key finding demonstrating PSAA versatility. Controls for PSAA specificity (C85) and state-independence (C86) are appropriate. The site-dependent kinetics (C87) provide mechanistic insight into local steric environments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Single-channel analysis reveals distinct mechanisms for TMD photopotentiation: GluN1-F654PSAA shows increased channel activity (N*Po) with unchanged conductance (59.6\u00b13 pS vs 63.3\u00b12.4 pS WT, p=0.38), while GluN1-Y647PSAA exhibits both increased activity and conductance changes, with trans-state producing low-conductance brief openings that convert to WT-like large conductance under UV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The single-channel recordings provide critical mechanistic detail. The conductance measurements (C90) have appropriate statistical comparison. The contrasting behaviors of F654 vs Y647 (C89-C93) are clearly demonstrated. The noise analysis (C94) provides independent corroboration. However, the interpretation of Y647 brief openings in dark/blue states could benefit from more extensive kinetic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "GluN1-Y647PSAA exhibits light-dependent Mg\u00b2\u207a sensitivity: 2.5-fold higher IC50 in dark/blue (103 \u00b5M, 102 \u00b5M) vs UV (41.5 \u00b5M, similar to WT 34.6 \u00b5M), with full reversibility. GluN1-F654PSAA and WT show light-independent Mg\u00b2\u207a block. This indicates Y647 PSAA trans-state alters pore-Mg\u00b2\u207a interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dose-response curves are comprehensive (n=4-10 per point). The Y647-specific effect with F654 and WT controls (C98) strengthens the conclusion. The inference about pore interactions (C99) is reasonable given that Mg\u00b2\u207a block is largely Po-independent (Qian et al., 2002). The reversibility (C97) is well-demonstrated. However, the molecular basis for altered Mg\u00b2\u207a binding would benefit from structural modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "MK-801 block of GluN1-Y647PSAA shows pronounced photosensitivity (>85% UV vs 69% trans), while F654PSAA shows lesser effect (\u226590%). Combined with single-channel and Mg\u00b2\u207a data, this identifies GluN1-Y647 as a novel residue controlling channel open state energetics and pore size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MK-801 experiments complement the Mg\u00b2\u207a and single-channel data, providing converging evidence for Y647's role in pore properties (C102). The identification of Y647 as a novel determinant (C103) is justified by the comprehensive functional characterization. However, the claim of \"novel\" should be tempered by acknowledging that this is the first demonstration using this specific approach, not necessarily the first implication of this residue in channel function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "PSAA incorporation succeeded in 50% of tested positions (13/27), with failures primarily at GluN2 ABD sites homologous to permissive GluN1 positions. Successful incorporations yielded sufficiently large, stable currents for optical experiments. The single-arm photoswitch design eliminates requirements for residue proximity or post-translational labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The success rate (C111) is quantitatively reported with full data in Table 1. The pattern of failures (C115-C116) is informative, though the mechanistic explanation (C117) is speculative. The practical advantages (C114) are valid. The current amplitudes (C113, Figure 2\u2014supplement 1) support experimental feasibility. However, the 50% success rate also indicates significant limitations that should be acknowledged more prominently.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The incomplete UV inhibition (~50% at saturating glycine) of GluN1-P532PSAA receptors stems from biological mechanism rather than incomplete PSAA photochemistry, as evidenced by ~95% inhibition at 1 \u00b5M glycine. The mechanism involves dual effects: decreased Po (causing 50% inhibition at saturating glycine) plus reduced glycine sensitivity (causing greater inhibition at subsaturating glycine). The PSAA trans-state is proposed to stabilize closed-cleft GluN1 ABD conformation, with cis-state destabilizing it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The exclusion of alternative explanations (C125-C127) is thorough with appropriate controls. The mechanistic dissection (C129-C131) logically integrates Po and affinity data. The proposed structural mechanism (C135-C136) is reasonable given the hinge location, though it remains speculative without direct structural evidence. The comparison to TCN compounds (C137) provides useful context but doesn't constitute independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The GluN1 hydrophobic cluster (F554, W563, Y647, F654) is identified as a novel structural determinant controlling channel gating energetics. The proposed mechanism involves cluster compression during M3 bundle expansion upon opening, with rigid trans-PSAA rendering opening less favorable than compact cis-PSAA. For Y647, trans-state steric hindrance may prevent full M3 expansion, constraining the open state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The identification of the cluster as functionally important (C140) is supported by the photopotentiation data. However, the mechanistic explanations (C141-C144) are entirely speculative without direct structural evidence. The proposed compression model and M3 expansion are inferred from other studies (Kazi et al., 2013; Tajima et al., 2016) but not directly demonstrated here. The mechanism requires validation through structural studies (e.g., cryo-EM) or molecular dynamics simulations to be considered supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "GluN1-P532PSAA mutant receptors are insensitive to positive allosteric modulator GNE-6901 but retain light sensitivity in PAM presence, indicating PSAA disrupts the PAM-binding site. GluN1-Y535PSAA also shows UV-induced photoinactivation but with less pronounced photomodulation than P532.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PAM insensitivity (C44) with retained photosensitivity provides evidence for specific PSAA incorporation at the expected site, as GNE-6901 binds the ABD interface near P532 (Hackos et al., 2016). This serves as an important control. The Y535 comparison (C45) is useful but limited by lower expression levels, appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background on NMDA receptors: NMDARs are ionotropic glutamate receptors with unique capability for inducing synaptic plasticity underlying learning and memory. They are tetrameric complexes (>550 kD) with layered organization (NTD, ABD, TMD, CTD) and broad molecular heterogeneity. GluN2 subunits (four subtypes: GluN2A-D) determine functional diversity, with GluN2A/2B predominant in adult brain. Their roles in plasticity polarity and cell survival remain debated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts about NMDARs supported by appropriate citations to review literature (Traynelis et al., 2010; Paoletti et al., 2013; Karakas and Furukawa, 2014; Lee et al., 2014). The acknowledgment of ongoing debates (C11-C12) is appropriate and accurately reflects the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background on optogenetic approaches: Azobenzene photoswitches offer reversible trans-cis isomerization with high quantum yield and photostability. Photoswitchable tethered ligands have successfully photocontrolled various receptors but require accessible sites and protein conjugation. UAA methodology using orthogonal tRNA/synthetase pairs enables genetic encoding in diverse systems. Prior photocrosslinking UAAs (AzF, BzF) achieved light-triggered receptor inactivation but lack reversibility and require prolonged light exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This accurately summarizes the state of the field with appropriate citations. The limitations of existing approaches (C17, C21) provide clear rationale for the current work. The claims about azobenzene properties (C13-C14) and UAA methodology (C18-C19) are well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Summary of achievements: The study identified multiple positions enabling bidirectional photomodulation (inhibition or potentiation) through minimal single azobenzene side-chain toggling. Changes were reversible, time-locked to illumination, and stable over minutes. The PSAA methodology revealed contributions of specific residues to agonist sensitivity, Po, and permeation, extending classical mutagenesis with dynamic, real-time control while preserving overall receptor function and providing orthogonal control to natural ligand binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims accurately reflect the demonstrated findings. The bidirectionality (C107) is clearly shown with ABD/NTD inhibition vs TMD potentiation. The temporal properties (C109) are well-characterized. The mechanistic insights (C110) are supported by the functional studies. The advantages over classical mutagenesis (C118, C121) are valid, though the claim of \"orthogonality\" (C121) should be qualified since PSAA incorporation does alter basal receptor properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Proposed applications: The glycine-dependent photomodulation could assess synaptic glycine levels. A glutamate-sensitive GluN2 PSAA variant could enable subunit-specific synaptic control. The approach is anticipated to be useful in native settings for manipulating neuronal proteins with high spatiotemporal precision (ms-s timescale), molecular specificity, cell-type targeting, and allosteric modulation without interfering with natural activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative proposals for future applications (C138-C139, C149) that have not been demonstrated. While the technical capabilities (C150-C152) are supported by the current data, the feasibility in native systems remains to be proven. The claims are appropriately framed as anticipated/envisioned, but should not be considered validated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "In vivo feasibility discussion: Implementing optochemical approaches in native settings is challenging but feasible, as demonstrated for photosensitive ligands and UAAs. Requirements include efficient gene delivery (via in utero electroporation, AAV vectors, or transgenic mice) and UAA bioavailability (via injection, drinking water, or direct brain delivery). Transgenic mice for AzF and AcK incorporation exist, with extension to PSAA pairs expected. PSAA bioavailability is unknown, but red-shifted azobenzene derivatives offer improved biocompatibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discussion accurately represents the current state of in vivo UAA technology with appropriate citations (C155-C158, C160-C161). The acknowledgment of unknowns (C162) is appropriate. The requirements (C154) are accurately stated. However, the feasibility for PSAAs specifically remains uncertain, and the discussion could more clearly distinguish between demonstrated feasibility for other UAAs vs. anticipated feasibility for PSAAs.",
+    "result_type": "MINOR"
+  }
+]

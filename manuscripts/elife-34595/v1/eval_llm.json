@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C48"
+    ],
+    "result": "The protein-burden limit of S. cerevisiae cells is established at approximately 15% of total cellular protein. This limit was determined using GFP as a reference protein and confirmed by measuring expression limits of glycolytic proteins, with some reaching or exceeding this threshold. Only non-harmful proteins can be expressed up to this protein-burden limit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C8, and C48 collectively establish the protein-burden limit at ~15% of total cellular protein. The result is supported by prior work on GFP (C1), experimental measurements of glycolytic proteins reaching similar levels (C3, C12), and the logical framework that only non-harmful proteins reach this limit (C8). The convergence of GFP data and glycolytic protein measurements provides strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C56",
+      "C57"
+    ],
+    "result": "The expression limits of most glycolytic proteins are independent of their catalytic activities, as demonstrated by catalytic center mutants showing unchanged expression levels for most proteins. However, Pfk1 and Pfk2 are exceptions where metabolic perturbations restrict expression limits. Computational modeling supports that overexpression of most (14 of 20) glycolytic proteins causes minimal metabolic changes, while unidirectional enzymes show stronger effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C18-C23 provide experimental evidence from catalytic center mutants, while C26-C30 and C56-C57 provide computational support. The majority of proteins showed no change in expression with catalytic mutations (C18, C22), while Pfk1/Pfk2 showed increased expression with mutations (C19, C21, C23). The computational modeling (C26-C30) corroborates these findings by showing minimal metabolic perturbations for most proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C24",
+      "C25",
+      "C74"
+    ],
+    "result": "Mitochondrial localization restricts the expression limit of Adh3. Removal of the mitochondrial targeting sequence (\u0394MTS-Adh3) increased expression approximately three-fold compared to wild-type Adh3, demonstrating that subcellular localization is a limiting factor for protein expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 provide direct experimental evidence that removing the mitochondrial targeting sequence increases Adh3 expression ~3-fold. This is supported by C74 establishing Adh3 as mitochondrial and C5 generalizing the finding. The experimental design directly tests the hypothesis and shows a clear effect of localization on expression limits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C16",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C58",
+      "C59"
+    ],
+    "result": "Codon optimality limits protein expression for genes with low tRNA adaptation index (tAIg). Glk1, Pyk2, and Pdc6 showed low expression due to poor codon usage, and codon optimization of GLK1 increased expression 3.6-4.7 fold. Most yeast genes have insufficient codon optimality to reach the protein-burden limit even under strong transcriptional induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 provide experimental evidence that codon optimization increases Glk1 expression significantly. C16, C35, and C36 establish that low-expression proteins have low tAIg values. C58-C59 provide broader context showing that average yeast genes have tAIg similar to Glk1, suggesting widespread codon limitation. The experimental validation with CoGLK1 directly demonstrates causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C60",
+      "C61"
+    ],
+    "result": "S-S bond-mediated protein aggregation through cysteine residues restricts expression limits of some glycolytic proteins, particularly Tpi1. Cysteine-less mutants of Tpi1 showed significantly increased expression limits, and aggregates disappeared with DTT treatment or cysteine removal. The aggregates contain glycolytic proteins and translational factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 provide direct experimental evidence that removing cysteines from Tpi1 increases expression and eliminates aggregates. C41-C42 characterize the aggregates as S-S bond-mediated and identify their protein composition. C60-C61 provide supporting context. The combination of DTT treatment, cysteine mutation, and expression measurements provides strong mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C82"
+    ],
+    "result": "Overexpression of most glycolytic proteins from a strong promoter on multicopy plasmids causes growth defects. All proteins except HXT1, HXT3, and HXT4 showed significant growth retardation in low-copy conditions, and plasmid copy numbers were significantly lower than vector controls, confirming expression-induced toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 provide statistical evidence (p<0.01 and p<0.05) of growth defects and reduced plasmid copy numbers for most glycolytic proteins. C82 confirms that low-copy conditions were sufficient to cause growth defects. The gTOW system's inverse relationship between copy number and toxicity (C73) validates the interpretation. Multiple independent measurements support this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Metabolic measurements of cells overexpressing Pfk2, Pfk1, and Tdh3 show that wild-type Pfk2 causes a specific increase in F16bP (>3-fold vs CC mutant), while Pfk1 and Tdh3 overexpression do not cause significant metabolic changes in detected glycolytic metabolites. This suggests Pfk2's catalytic activity has metabolic effects, but these may not fully explain growth defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C31-C34 provide metabolite measurements, but the interpretation is complicated. While C32 shows a clear F16bP difference for Pfk2, C33-C34 show no major changes for Pfk1/Tdh3 despite their CC mutants having higher expression limits (C19). The discrepancy between computational predictions (Figure 4) and experimental measurements (Figure 5) is acknowledged but not resolved. The metabolic data alone cannot explain the expression limit differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C75"
+    ],
+    "result": "The codon usage of GLK1 was not optimized for translation after the diauxic shift, despite Glk1 expression increasing after this growth phase transition. GFP expression timing experiments with different codon usages showed no significant difference in lag times (p=0.44).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C75 address whether GLK1's low codon optimality serves a regulatory function related to the diauxic shift. The experimental test using GFP reporters with different codon usages (Figure 6C-D) directly tests this hypothesis and finds no significant difference, supporting the conclusion. However, this is a negative result with limited mechanistic insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "S-S bond-mediated aggregation does not affect the expression limits of Eno2 and Pgk1, as wild-type and cysteine-less mutants showed indistinguishable expression limits despite forming aggregates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by experimental data comparing expression limits of wild-type and cysteine-less mutants (Figure 7\u2014figure supplement 2). This contrasts with Tpi1 where cysteine removal increased expression (C46-C47), suggesting protein-specific effects of aggregation. The result is clearly stated and experimentally supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Most glycolytic proteins were expressed at levels visible by SDS-PAGE, with Pgk1, Gpm1, Eno2, and Eno1 exceeding GFP expression levels. Pfk1, Adh3, and Hxts were nearly undetectable. Some proteins showed >10,000-fold overexpression compared to native levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 describe the range of expression levels achieved in the experimental system. These are direct observations from SDS-PAGE and quantification (Figure 2B, Figure 2\u2014figure supplement 2-3). The measurements are straightforward and well-documented, providing the foundation for subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The relationship between plasmid copy number and protein expression distinguishes harmful proteins (Pfk1, Adh3, Hxts with low copy numbers) from repressed proteins (Glk1, Pyk2, Pdc6 with high copy numbers). Overall, there was no significant correlation between expression levels and plasmid copy numbers (r=0.28, p=0.12).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 interpret the relationship between copy number and expression (Figure 2D). The statistical analysis (C17) and the identification of distinct groups (C15-C16) are supported by the data. This interpretation is key to distinguishing different mechanisms limiting expression, though the lack of overall correlation (C17) indicates complexity in the system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Protein size does not affect expression limits in the molecular weight range of glycolytic proteins (27-47 kDa). Pgk1 and Eno2 (1.5-fold larger than Gpm1) showed similar expression limits, suggesting expression limits are determined by production cost rather than molar concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 make inferences from comparing expression limits of proteins with different sizes (Figure 2B). The logic is sound: if size mattered, larger proteins would have lower expression limits when measured in AU (which reflects total amino acids). The observation that similar AU values are achieved regardless of size supports the conclusion about production cost vs. molar concentration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Multiple mechanisms restrict the expression limits of Adh3 and Glk1, as removing single limiting factors (mitochondrial targeting for Adh3, codon optimization for Glk1) did not bring expression to the levels of highest-expressing proteins like Pgk1 and Gpm1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 synthesize observations that \u0394MTS-Adh3 (0.45 AU) and CoGlk1 (1.07 AU) remain below Pgk1/Gpm1 levels (>2.0 AU) despite removing known limiting factors. This inference is logical and supported by the data, though it does not identify what the additional mechanisms are. This represents an important limitation of the study's explanatory power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Growth rates in +leucine conditions are much greater than in -leucine conditions, likely because leu2-89 copy number is insufficient to fully support leucine requirements in -leucine conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 describe an experimental observation (Figure 1B-C) and provide a speculative explanation. The observation is clearly supported by data, and the explanation is reasonable given the experimental design. This is a technical detail about the experimental system rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "The relationship between arbitrary units (AU) and percentage of total protein was calibrated as % total protein = 5.5 \u00d7 AU using measurements from Gpm1, Pgk1, and Adh4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 describes a calibration performed in this study (Figure 2\u2014figure supplement 1) with R\u00b2=0.77. This is a methodological result that enables conversion between AU measurements and the biologically meaningful percentage of total protein. The calibration is adequately documented and statistically reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "PFK1 and PFK2 were expressed from the weaker PYK1/CDC19 promoter instead of TDH3 promoter because TDH3-driven expression was too toxic, resulting in very poor growth of transformants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C79 describes an experimental decision based on observations, but notes 'data not shown.' While the reasoning is plausible given the known toxicity of Pfk overexpression, the lack of presented data makes this claim uncertain. This represents a methodological choice that affects interpretation of Pfk results.",
+    "result_type": "MINOR"
+  }
+]

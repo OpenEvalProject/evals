@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The study analyzed 105 patients with severe S. aureus infections (55 bloodstream, 37 soft tissue, 13 bone/joint) by whole-genome sequencing 1163 bacterial colonies (median 5 per site), identifying 35 distinct strains across patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 describe the study cohort and sequencing methodology. The patient numbers, infection types, and sequencing details are clearly documented in Table 1 and the methods section, providing a solid foundation for the study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Most patients (95/105) had closely related nose-colonizing and infecting bacteria (0-66 variants), while 9 had unrelated strains (9398-50573 variants). Among related strains, 74/95 formed distinct populations separated by mean 5.7 variants with no shared genotypes, and 21/95 shared exactly one genotype, indicating small founding populations during migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 describe population structure patterns supported by genomic comparison data in Table 1 and Figure 1. The phylogenetic analysis and variant counting provide clear evidence for the relatedness patterns and migration bottlenecks, with appropriate citations to support the biological interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "In 72% of patients (39/49 with determinable ancestry), infections emerged from nose-colonizing bacteria, while in 18% (10/49) the reverse occurred. High diversity in three infection-ancestral cases suggests recolonization of the nose during persistent infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C26-C28 describe directional migration patterns based on phylogenetic reconstruction using MRCA analysis. The methodology for determining ancestral populations is sound, though confidence was high in only a subset of cases. The interpretation of recolonization is appropriately cautious (\"suggesting\").",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Genetic diversity in the nose (\u03c0=2.8) was similar to asymptomatic carriers (\u03c0=4.1, p=0.13) but significantly lower at infection sites (\u03c0=0.6, p=10^-10), revealing limited post-infection diversification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 present genetic diversity comparisons with appropriate statistical testing. The comparison to Reference Panel I provides context, and the significant difference at infection sites is well-supported. The inference of limited diversification follows logically from the low diversity observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Selection within patients generally conserved protein sequences (dN/dS ratios 0.55-0.68), but protein-truncating variants showed 3.9-fold enrichment in infected patients versus asymptomatic carriers (p=0.002), indicating loss-of-function mutations are disproportionately associated with infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 describe selection patterns supported by dN/dS calculations and statistical comparison to Reference Panel I (Table 2). The enrichment of truncating variants is significant and the inference about loss-of-function association is reasonable, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "agrA showed 58.3-fold enrichment of protein-altering B-class variants (p=10^-7.5), and clfB showed 15.9-fold enrichment (p=10^-4.7), both genes involved in quorum-sensing and host binding respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 report gene-level enrichments from Poisson regression analysis (Figure 2A, Table 3). The agrA enrichment is genome-wide significant while clfB is near-significant. The functional annotations are supported by citations and established knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "pbp2 showed 19.0-fold enrichment of C-class variants (p=10^-6.0), potentially reflecting antibiotic-driven adaptation in nose populations, as pbp2 encodes a \u03b2-lactam antibiotic target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 describe enrichment in nose-colonizing bacteria. The statistical evidence is strong (Figure 2\u2014supplement 1A), and the functional annotation is supported by citation. However, the antibiotic adaptation interpretation (C39) is appropriately speculative given the lack of direct evidence linking variants to antibiotic exposure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Genes down-regulated by cationic antimicrobial peptides (ovispirin-1, temporin L) showed 2.7-2.8-fold enrichment (p=10^-7.8, 10^-6.9), while up-regulated genes showed depletion (0.4-0.7-fold), indicating adaptive evolution in genes whose expression is inhibited by host antimicrobial peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 describe gene set enrichment analysis results (Figure 2C, Table 3) with strong statistical support. The functional context from Pieti\u00e4inen et al. 2009 is appropriately cited. The inference about expression inhibition (C47) follows logically from the enrichment patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Cell wall ontology genes showed 5.0-fold enrichment (p=10^-7.0) and cell adhesion ontology showed 6.4-fold enrichment (p=10^-6.5), indicating general enrichment of surface-expressed host-binding antigens undergoing adaptive evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 report gene ontology enrichments from GSEA (Figure 3, Table 3). Both enrichments are genome-wide significant. The inference about surface antigens (C50) is reasonable given the genes contributing to these ontologies (spa, sasA, clfA, clfB, fnbA, bbp).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The rsp regulon showed 3.6-fold enrichment in down-regulated genes (p=10^-6.4) versus 0.6-fold in up-regulated genes, implying alternative routes beyond direct rsp inactivation enable expression of rsp-repressed genes during infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 describe rsp regulon enrichment with strong statistical support (Table 3). The inference about alternative expression routes (C54) is logical given the enrichment pattern and rarity of rsp mutations themselves, though the specific mechanisms remain unidentified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Enrichments were found in genes regulated by agrA (p<10^-4.5), sarA (p=10^-4.6), and in strains with altered vancomycin (p<10^-4.7) or pine-oil disinfectant susceptibility (p=10^-4.4). All significant enrichments showed neutrality indices >1, consistent with adaptive evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 report additional GSEA results with appropriate statistical support. The functional context for agr mutants is cited (Das et al. 2016). The speculation about harsh environment response (C61) is appropriately cautious. Neutrality index calculations (C62) provide additional evidence for adaptive evolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Pathogenesis genes showed 3.1-fold enrichment in BD-class (infection-site) variants (p=10^-4.6) but only 1.7-fold in BC-class (nose) variants (p=0.13), indicating infection-specific adaptation in pathogenesis genes, while other adaptive signals occurred equally in both sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 describe differential enrichment between BC and BD variant classes. The statistical evidence supports infection-specific adaptation in pathogenesis genes, while Figure 2\u2014supplement 2 shows most other enrichments are similar across classes. The interpretation is appropriately nuanced.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C7",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "No significant enrichments were found in 10 asymptomatic carriers (235 variants), with significant depletions in rsp/agr/sarA regulons (p=10^-4.0) and pathogenesis ontology (p=10^-3.2) relative to patients. Species-level dN/dS analysis showed no excess protein-altering change in key genes (agrA, clfA, clfB, fnbA, sasA), confirming adaptive signatures are specific to infected patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 provide critical negative controls using Reference Panels III and IV. The absence of enrichments in carriers (Figure 2\u2014supplement 3) and lack of elevated dN/dS at species level (Figure 3\u2014supplement 1) strongly support the conclusion that observed patterns are infection-specific. The modest carrier sample size (n=10) is a limitation but goodness-of-fit tests partially address this.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "S. aureus infections frequently descend from nasal commensals and show repeatable adaptive evolution patterns. Pathogenesis genes adapted specifically in infecting bacteria, while genes responding to antimicrobial peptides and virulence regulators (rsp, agr) adapted in parallel in both nose and infection sites, revealing multiple evolutionary paths targeted by selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 synthesize major findings. The phylogenetic evidence (72% nose-ancestral), enrichment analyses showing parallel evolution, and differential patterns between BC/BD classes collectively support these conclusions. The interpretation of multiple evolutionary paths is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Within-patient adaptive signatures differ from species-level selection, indicating infection-associated mutations are rarely transmitted. This argues against a host-pathogen arms race and supports a life-history trade-off between adaptations favoring colonization/infection versus transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 present evolutionary interpretations based on discordance between within-patient and species-level patterns. The evidence from dN/dS comparisons supports the lack of transmission. The theoretical framework (trade-off model, Shopsin et al. 2010) is appropriately cited, though alternative explanations are not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Infection can be characterized as a source-sink ecological model where commensal bacteria provide the source for infections that may represent an incidental risk from mutations favored by short-term selection. Risk factors may create distinctive selection pressures mediated through effects on commensal bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C86 present theoretical interpretations and speculations about mechanisms. While the source-sink model (C83) is supported by citation and consistent with data, the characterization of infection as \"incidental\" (C84) and the role of risk factors (C85-C86) are speculative inferences not directly tested. The absence of adaptive signatures in healthy carriers supports but does not prove these interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The findings raise possibilities for developing new diagnostics, personalizing treatment based on commensal bacteria genetics, improving experimental infection models, and developing therapies targeting within-patient evolutionary processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 are explicitly speculative statements about future applications (\"raises the possibility,\" \"may be possible\"). These are appropriately framed as implications rather than demonstrated results. No evaluation of feasibility or validation is provided, which is appropriate for a discussion section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "One rsp variant (alanine to proline substitution in DNA binding domain) was found among 105 patients, which induces similar loss-of-function phenotypes to a previously characterized mutation, with reduced cytotoxicity but maintained ability to persist and cause abscesses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 describe a specific variant with functional characterization published separately (Das et al. 2016). The variant annotation is supported by data, and the phenotypic characterization is appropriately cited. This provides important validation of the enrichment patterns observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "Sequencing five colonies per sample provides 91% power to distinguish within-site polymorphisms from between-site substitutions under a neutral model, compared to 0% power with one colony.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 presents a power calculation based on a standard neutral model with explicit mathematical derivation. The calculation appropriately justifies the sampling strategy, though it assumes neutrality and random sampling which may not fully hold in structured bacterial populations.",
+    "result_type": "MINOR"
+  }
+]

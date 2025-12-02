@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "UP and DOWN period durations in anesthetized rats are highly variable and irregularly distributed. The mean durations varied widely across experiments (U: 0.43\u00b10.19 s, D: 0.46\u00b10.1 s), but coefficients of variation were consistently high (CV(U)=0.68\u00b10.09, CV(D)=0.69\u00b10.1), with gamma-like skewed distributions. This variability was not due to slow drifts in brain state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C53-C57 provide converging evidence from multiple statistical measures (CV, CV2, gamma fits) across n=7 animals with 448 cells total. The data are shown in Figure 2 with appropriate statistical controls for slow drifts. The consistency of high variability across experiments despite heterogeneous mean durations strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C67",
+      "C69",
+      "C72"
+    ],
+    "result": "Population firing rates showed no significant decay during UP periods. Analysis of onset vs offset windows found no significant difference in population rate (p=1, n=7 animals) or across 448 individual neurons (p=0.12), despite individual neurons showing heterogeneous modulation that canceled at the population level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C67, C69, C72 are supported by appropriate statistical tests (Wilcoxon signed rank) with adequate sample sizes (n=7 experiments, 448 cells). The analysis controlled for transients by excluding 50ms windows near transitions. Figure 3 shows the data clearly. This finding contradicts standard adaptation-driven models and is a key constraint for the modeling work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Adjacent UP and DOWN periods show weak but significant positive serial correlations limited to lag k=0 and k=1. This correlation pattern was not due to slow drifts (controlled by shuffling within 30s windows) and suggests a role for adaptive processes combined with stochastic transitions, though this seems inconsistent with the high variability of period durations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C60, C61 are supported by appropriate correlation analysis with proper controls for slow drifts and multiple comparisons (Figure 2C-D). The statistical significance is demonstrated in 6/7 animals (p<0.05). However, C63 correctly notes an apparent tension between adaptation-driven dynamics and high variability, which motivates the modeling work. The data support the correlations but the mechanistic interpretation requires the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C70",
+      "C124"
+    ],
+    "result": "During DOWN periods, excitatory neurons showed significant rate recovery (p=0.0002 for all cells, p=0.0092 for classified E cells), while inhibitory neurons showed no significant change. Population rate showed a small but significant increase (p=0.047).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C70, C124 are supported by appropriate statistical tests with adequate sample sizes. The finding is consistent with adaptation recovery in E cells during quiescence. However, the small effect size for the population (mean\u00b1SD: -0.014\u00b10.013 spikes/s) and the lack of data shown for I cells during D periods (noted as 'not shown' in C124) slightly weakens the conclusion for I cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C112",
+      "C113",
+      "C114",
+      "C120",
+      "C121",
+      "C123",
+      "C125"
+    ],
+    "result": "The model predicted and experiments validated that adaptation in E cells causes minimal decay in E-cell firing rates but marked decay in I-cell rates during UP periods. This counterintuitive prediction arises from the bistability mechanism requiring \u03b8I>\u03b8E and steeper I-nullcline slope. Experimental validation showed significant I-cell decay (p=0.013, mixed-effects ANOVA, n=5 experiments, 330 E cells, 21 I cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C112-C114, C120, C121, C123, C125 form a complete prediction-validation cycle. The model prediction (C112-C114) is mechanistically grounded in the bistability conditions (C114). The experimental validation (C121, C123) uses appropriate statistics (mixed-effects ANOVA accounting for neuron identity and experiment as random factors) with adequate E-cell sample size. However, the I-cell sample (n=21) is relatively small, and the authors acknowledge this limitation for D-period analysis. The validation of this counterintuitive prediction strongly supports the model mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C79",
+      "C81",
+      "C82",
+      "C85",
+      "C87"
+    ],
+    "result": "The rate model exhibits a novel bistable regime between a quiescent DOWN state and a low-rate inhibition-stabilized UP state, achieved through threshold nonlinearity alone with \u03b8I>\u03b8E and gI>gE. This bistability allows arbitrarily low UP-state firing rates, unlike previous models constrained by f-I curve inflection points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C79, C81, C82, C85, C87 describe the core theoretical contribution. The mathematical conditions for bistability are derived in Materials and methods (Equations 20-22). The novelty claim (C85, C86) is supported by comparison with previous models in the Discussion. The inhibition-stabilized nature (C87) is verified mathematically. This is a well-supported theoretical result, though experimental validation of the specific mechanism relies on the differential E/I decay prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C88",
+      "C99",
+      "C100",
+      "C102",
+      "C103",
+      "C104",
+      "C111"
+    ],
+    "result": "In the model, external input fluctuations drive irregular UP-DOWN transitions when both states are metastable. The high variability in experimental data (CV~0.7) constrains the model to this fluctuation-driven regime. Adaptation modulates transition probability and introduces serial correlations but does not directly cause transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C88, C99-C104, C111 describe how the model reproduces experimental statistics. The constraint from experimental CV values (C99) to the metastable regime is theoretically justified (C98). The model reproduces broad duration distributions, high CVs, serial correlations, and non-rhythmic autocorrelations (Figures 5C-E). Parameter tuning was required (C103), which is appropriate for a phenomenological model. The mechanistic interpretation is internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C43",
+      "C44",
+      "C136",
+      "C137",
+      "C138",
+      "C141",
+      "C142",
+      "C144",
+      "C148"
+    ],
+    "result": "The spiking network model requires stochastic synchronous high-amplitude input 'kicks' (Poisson statistics, ~2-3 Hz, ~10-15 mV) to generate DOWN-to-UP transitions while maintaining membrane potential bimodality and serial correlations. Independent Gaussian noise alone is insufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C43, C44, C136-C138, C141, C142, C144, C148 describe a key prediction from the spiking network implementation. The necessity of synchronous kicks is demonstrated by showing that alternative approaches (depolarization with Gaussian noise, C134-C135) fail to reproduce key features (bimodality, serial correlations). The kick parameters were tuned to match data statistics (C138). This is a strong mechanistic prediction, though the biological source of such kicks remains speculative (discussed as thalamic input or hippocampal sharp-wave ripples).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C128",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The spiking network implementation reproduces the rate model predictions: same bistability via mean-field analysis, differential E/I rate decay during UP periods, bimodal membrane potential distributions, and low-rate irregular firing (CV=0.74 for E, 0.94 for I).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128, C145-C147 show consistency between rate and spiking models. Mean-field analysis (C128) provides the theoretical bridge. The spiking network reproduces key features shown in Figure 7. The irregular firing with appropriate CV values (C147) matches experimental observations. This validates that the rate model captures essential dynamics, though the spiking model required additional mechanisms (kicks) not present in the rate model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C36",
+      "C48"
+    ],
+    "result": "Experimental methods: spiking activity recorded from large neuronal populations (64\u00b123 cells, n=7 rats) in deep somatosensory cortex under urethane anesthesia, selecting synchronized epochs with high-amplitude slow LFP fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C36, C48 describe standard experimental methods with adequate sample sizes. The selection criteria for synchronized states (silence density >0.4, SD <0.1, duration >5 min) are clearly defined in Materials and methods. The use of urethane anesthesia is appropriate and well-precedented for studying UP-DOWN dynamics, though the authors acknowledge differences from natural sleep.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "DOWN periods displayed occasional spiking (mean rate 0.018\u00b10.007 spikes/s), contrasting with the view that DOWN periods have no spiking activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 report a clear observation supported by data in Figure 3A-B and Figure 3\u2014figure supplement 1. The finding contradicts some prior work (Chauvette et al., 2010) but is consistent with others (Compte et al., 2003b). This is a straightforward empirical observation, though the biological significance and relationship to the model's synchronous kicks could be explored further.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The rate model structure consists of recurrently coupled E and I populations with adaptation only in E cells (justified by lack of adaptation in inhibitory interneurons), receiving fluctuating external inputs, designed to find bistability between quiescent and low-rate states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 describe the model architecture. The choice to include adaptation only in E cells (C75) is justified by experimental evidence (McCormick et al., 1985). The model structure is standard for E-I networks. The specific goal (C76) is clearly motivated by the experimental observations and gaps in previous models. This is well-justified model design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The asymmetry in E and I transfer functions (\u03b8I>\u03b8E, gI>gE) is based on experimental characterization of pyramidal vs fast-spiking interneuron f-I curves, though this asymmetry is not strictly necessary for bistability (alternative connectivity parameters could achieve similar results).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 appropriately cite experimental support (Cruikshank et al., 2007; Schiff and Reyes, 2012) for the E/I asymmetry. The acknowledgment that this is not the only way to achieve bistability (C84) is scientifically honest. The choice is justified as biologically motivated and mathematically convenient. This is a reasonable modeling choice with appropriate caveats.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "Spiking network implementation: 4000 E and 1000 I leaky integrate-and-fire neurons with all-to-all connectivity, current-based synapses, and spike-based AHP current in E cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 describe standard spiking network implementation with appropriate citations. The all-to-all connectivity is acknowledged as a simplification (discussed in manuscript). The model parameters are fully specified in Materials and methods. This is adequate for proof-of-principle modeling, though the authors acknowledge that sparse connectivity would be more realistic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Literature review establishing that UP-DOWN dynamics occur in multiple conditions (sleep, anesthesia, awake states, in vitro), have intracortical origins, are influenced by subcortical inputs, and that existing models focus on adaptation-driven oscillations or E-I balance, but conditions for bistability between quiescent and low-rate inhibition-stabilized states remain poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C35 provide extensive literature review with appropriate citations. The characterization of prior work appears accurate based on the cited papers. The identification of the knowledge gap (C35) is well-motivated. This contextualizes the study appropriately, though the accuracy of specific prior work characterizations cannot be fully verified without checking each citation.",
+    "result_type": "MINOR"
+  }
+]

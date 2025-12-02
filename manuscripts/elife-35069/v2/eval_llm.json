@@ -1,0 +1,252 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The csRNP method (Cas9 protein complexed with synthetic modified crRNA:tracrRNA and ssODN templates) achieves 5-30% knock-in efficiency for diverse epitope tags (V5, HA, 3XFLAG, Myc) across multiple genes (Olig2, Sox2, Sox3, Sox8, Sox9) in neural stem cells and glioma-initiating cells without selection. This represents a >4-10 fold improvement over IVT sgRNA methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C46 provide quantitative data from multiple independent experiments showing consistent knock-in efficiencies across different tags, genes, and cell lines. The data is supported by ICC, PCR genotyping, and Sanger sequencing (C41), demonstrating both the efficiency and accuracy of the method. The comparison to IVT methods provides appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C47",
+      "C48",
+      "C49",
+      "C93",
+      "C94"
+    ],
+    "result": "Biallelic-tagged clonal lines can be readily generated using the csRNP method, with 7-62.5% of V5-positive clones showing biallelic integration across different genes and cell lines. Clonal lines were routinely generated within 4-6 weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 provide specific quantitative data from Table 2 showing biallelic knock-in frequencies across multiple genes in different cell lines. The data is validated by PCR genotyping and sequencing. Claims C93-C94 provide practical timeline information consistent with the experimental workflow described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The csRNP method works effectively across diverse stem cell types including mouse ES cells, human ES cells, and human GBM-derived cells, achieving 6-70% knock-in efficiency. Non-expressed genes can be successfully tagged in ES cells and detected upon differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 demonstrate broad applicability across multiple cell types with quantitative efficiency data. The non-expressed gene tagging (C51-C52) is particularly well-supported, showing that tagged proteins become detectable upon differentiation (10.5-20% of Nestin-positive cells), validated by both PCR and ICC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Proximity of the DSB to the stop codon significantly influences knock-in efficiency. Proximal gRNAs (cutting 8-15 bp from stop codon) consistently show higher efficiency than distal gRNAs, with 60% success rate for proximal vs 54% for distal cuts across 50 genes tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 provide systematic data from 50 genes comparing proximal vs distal gRNA cutting sites. The trend is consistent across multiple examples (C58-C59), with no counter-examples (C60). The conclusion (C61) is appropriately supported by the data, though C55 cites prior work establishing the principle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C103",
+      "C104"
+    ],
+    "result": "A scalable 96-well format pipeline enabled V5-tagging of 185 transcription factors, with ~30% (61/185) successfully tagged at first attempt with 5-38% efficiency. The entire pipeline from reagent procurement to imaging was accomplished within three weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 provide quantitative data from two independent 96-well plates showing consistent success rates and efficiencies. The positive control (Sox2) showed consistent efficiency across the plate (C62), validating the robustness of the method. Claims C103-C104 provide practical information about scalability and timeline, supported by the experimental workflow described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Olig2-V5 knock-in lines were used to identify chromatin-bound interacting partners via RIME and ChIP-SICAP, detecting known interactors (SWI/SNF complexes, HDACs) and novel co-localizing bHLH proteins (Olig1, Olig3, Npas3, Tcf4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C79 demonstrate a proof-of-principle application using two complementary IP-MS methods. The detection of known interactors (C68-C69, C78-C79) validates the approach, while novel findings (C71, C73) are supported by prior literature showing functional relationships (C72, C74-C76). The conclusion about co-localization (C77) is appropriately cautious, suggesting rather than proving functional interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The csRNP method can be used for knock-in of larger fluorescent reporters (mCherry, ~700 bp) in NS cells, achieving 0.11-1.61% efficiency depending on homology arm length and target gene, with proper localization of fusion proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 provide systematic data showing the effect of homology arm length on knock-in efficiency for larger cargos. While efficiencies are lower than for small epitope tags (0.11-1.61% vs 5-30%), the method works across multiple genes with appropriate protein localization (C83). The conclusion (C84) is appropriately supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The csRNP method offers multiple practical advantages over plasmid-based and IVT methods: faster assembly (~30 min), greater stability (-20\u00b0C for months), reduced toxicity, and no requirement for plasmid production or prior genetic manipulation of cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C92 summarize key advantages demonstrated throughout the manuscript. The comparison to IVT methods (C88-C89) is supported by the head-to-head data in C38-C39. Claims about stability (C90) and reduced toxicity (C92) are stated as observations from the authors' experience. The mechanistic explanation for improved performance (C91) is reasonable given the known properties of modified RNAs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Current CRISPR-based epitope tagging methods face multiple limitations including inefficiency in primary cells, reliance on plasmid-based selection, time-consuming plasmid production, risk of insertional mutagenesis, poor scalability, and inefficient recovery of biallelic clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C14-C28 establish the context and limitations of existing methods. These are primarily knowledge claims citing prior literature (C14, C26) or stating well-established challenges in the field. The claims appropriately motivate the need for the improved method presented in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Epitope tagging provides physiologically relevant protein levels compared to overexpression approaches and has been successfully used in yeast for global protein complex characterization, but faces challenges in mammalian cells due to antibody limitations and poor HR efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13 provide background context citing appropriate literature. These establish the rationale for epitope tagging approaches and explain why they have not been widely adopted in mammalian systems. All claims are appropriately supported by citations or represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "CRISPR/Cas9 mechanisms and RNP delivery methods are well-established, with synthetic modified dual-RNA systems offering advantages over IVT sgRNAs and full-length synthetic sgRNAs in terms of cost, performance, stability, and reduced cellular immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C37 provide comprehensive background on CRISPR mechanisms and RNP methods, all appropriately cited from prior literature. These establish the foundation for the authors' approach and explain why they chose synthetic modified dual-RNA systems. The claims represent accurate summaries of established knowledge and prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The csRNP method has limitations and caveats: C-terminus tagging may compromise protein function, not all proteins are amenable to tagging, and design considerations (PAM strand selection, gRNA proximity to stop codon) affect success rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C102 appropriately acknowledge limitations and provide design recommendations. The caveats about potential effects on protein function (C95-C96) are reasonable. The design recommendations (C102) are supported by the data in C56-C61. Claims C97-C101 cite prior work or acknowledge gaps in the current study (C98).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The csRNP epitope tagging approach enables universal applications across cell types and species, potential for systematic ChIP-Seq studies, and is also effective for gene knockout studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C105 states a general advantage of epitope tagging but is not directly tested in this study. Claim C106 is speculative about future applications (\"will allow us to generate\"). Claim C107 references unpublished data and a single citation, making it difficult to evaluate. These represent potential applications rather than demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

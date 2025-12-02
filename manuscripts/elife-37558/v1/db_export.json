@@ -1,0 +1,2159 @@
+{
+  "submission": {
+    "id": "fd3e8d4b-2ec6-4136-9743-04370540c67d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T02:03:53.923445Z",
+    "updated_at": "2025-12-02T02:03:53.923445Z"
+  },
+  "content": [
+    {
+      "id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "submission_id": "fd3e8d4b-2ec6-4136-9743-04370540c67d",
+      "content_type": "manuscript",
+      "content_text": "# Single-particle cryo-EM structure of a voltage-activated potassium channel in lipid nanodiscs\n\n## Authors\n\n- Doreen Matthies<sup>1</sup> ([ORCID: 0000-0001-9221-4484](https://orcid.org/0000-0001-9221-4484))\n- Chanhyung Bae<sup>2</sup> ([ORCID: 0000-0003-3407-2857](https://orcid.org/0000-0003-3407-2857))\n- Gilman ES Toombes<sup>2</sup> ([ORCID: 0000-0001-8346-1790](https://orcid.org/0000-0001-8346-1790))\n- Tara Fox<sup>3</sup>\n- Alberto Bartesaghi<sup>1</sup>\n- Sriram Subramaniam<sup>1</sup> ([ORCID: 0000-0003-4231-4115](https://orcid.org/0000-0003-4231-4115)) \u2020\n- Kenton Jon Swartz<sup>2</sup> ([ORCID: 0000-0003-3419-0765](https://orcid.org/0000-0003-3419-0765)) \u2020\n\n### Affiliations\n\n1. Laboratory of Cell Biology, Center for Cancer Research, National Cancer Institute National Institutes of Health Bethesda United States\n2. Molecular Physiology and Biophysics Section, Porter Neuroscience Research Center, National Institute of Neurological Disorders and Stroke National Institutes of Health Bethesda United States\n3. Center for Molecular Microscopy, Center for Cancer Research, National Cancer Institute National Institutes of Health Bethesda United States\n4. Cancer Research Technology Program Frederick National Laboratory for Cancer Research Frederick United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nVoltage-activated potassium (Kv) channels open to conduct K+ ions in response to membrane depolarization, and subsequently enter non-conducting states through distinct mechanisms of inactivation. X-ray structures of detergent-solubilized Kv channels appear to have captured an open state even though a non-conducting C-type inactivated state would predominate in membranes in the absence of a transmembrane voltage. However, structures for a voltage-activated ion channel in a lipid bilayer environment have not yet been reported. Here we report the structure of the Kv1.2\u20132.1 paddle chimera channel reconstituted into lipid nanodiscs using single-particle cryo-electron microscopy. At a resolution of ~3 \u00c5 for the cytosolic domain and ~4 \u00c5 for the transmembrane domain, the structure determined in nanodiscs is similar to the previously determined X-ray structure. Our findings show that large differences in structure between detergent and lipid bilayer environments are unlikely, and enable us to propose possible structural mechanisms for C-type inactivation.\n\n## Introduction\n\nVoltage-activated potassium (Kv) channels open in response to membrane depolarization to conduct K+ ions, a process that is critical for electrical signaling in neurons and endocrine cells, as well as muscle contraction (Bocksteins, 2016; Jan and Jan, 2012). Kv channels contain voltage-sensing domains that activate with membrane depolarization, and a central pore domain that opens to conduct K+ ions with high selectivity (Bezanilla, 2008; Swartz, 2008). In the continual presence of membrane depolarization, most Kv channels subsequently enter non-conducting states through distinct mechanisms of inactivation (Hoshi et al., 1991; Yellen, 2002). In the Shaker Kv channel, for example, opening of the channel in response to membrane depolarization is only transient because the channel rapidly (msec) enters the N-type inactivated state (Timpe et al., 1988; Zagotta et al., 1990). N-type inactivation occurs through a ball-and-chain mechanism wherein the amino-terminal region of the channel plugs the internal pore once it opens in response to membrane depolarization (Demo and Yellen, 1991; Hoshi et al., 1990; Venkataraman et al., 2014; Zagotta et al., 1990; Zhou et al., 2001a2001). However, Shaker channels lacking this N-terminal region can still inactivate on a slower timescale (sec) through a process termed slow or C-type inactivation (Hoshi et al., 1991). C-type inactivation regulates the availability of functional Kv channels, modulating the firing of action potentials in neurons and cardiac muscle (Hoshi and Armstrong, 2013; Kurata and Fedida, 2006). In the human ether-a-go-go related gene\u00a0(hERG) Kv channel, rapid entry of the channel into the C-type inactivated state underlies the unique inwardly-rectifying properties of the channel that are critical for shaping the cardiac action potential (Keating and Sanguinetti, 2001; Smith et al., 1996).\n\nAlthough C-type inactivation in Kv channels is thought to involve a conformational change in the selectivity filter at the external end of the pore (Armstrong and Hoshi, 2014; Choi et al., 1991; Hoshi and Armstrong, 2013; Hoshi et al., 1991; Kurata and Fedida, 2006; Liu et al., 1996; L\u00f3pez-Barneo et al., 1993; Perozo et al., 1993; Yang et al., 1997, 2002; Yellen et al., 1994), its mechanism remains elusive. In the KcsA K+ channel, a K+ selective channel that lacks voltage-sensing domains and whose pore is related to that domain in Kv channels, X-ray structures of mutants that stabilize open and inactivated states have been solved (Cuello et al., 2017, 2010), but the extent to which these inform on the mechanism of slow inactivation in KcsA or Kv channels has been controversial (Devaraneni et al., 2013; Hoshi and Armstrong, 2013; Matulef et al., 2013; Valiyaveetil, 2017).\n\nThe X-ray crystal structure of Kv1.2, a mammalian homolog of the Shaker Kv channel, and those of the Kv1.2\u20132.1 chimera containing the S3b-S4 paddle motif from Kv2.1 (Kv chimera), serve as a structural framework for understanding the gating mechanism of Kv channels (Long et al., 2005a, 2005b, 2007). The 2.4 \u00c5 X-ray structure of the detergent solubilized Kv chimera solved in the presence of lipids has activated voltage sensors, an open internal pore, and a selectivity filter with K+ ions occupying all four ion binding sites, suggesting that it represents an open conducting conformation (Long et al., 2007). The presence of an open conducting state in the crystal structure was unanticipated because the Kv chimera C-type inactivates at 0 mV when reconstituted into lipid membranes (Tao and MacKinnon, 2008) (Figure 1\u2014figure supplement 1C). To characterize the non-conducting C-type inactivated state, Lu and colleagues recently solved the X-ray structure of a non-conducting mutant of the Kv chimera (Pau et al., 2017). Their crystals contained two molecules in the asymmetric unit, one of which showed subtle changes to the structure and ion occupancies of the selectivity filter, while the second was indistinguishable from the Kv chimera open conducting state even though this mutant channel is functionally non-conducting. These results suggest that the open and inactivated states are either very similar, or that the open state is preferentially stabilized by some aspect of the crystal environment, such as crystal contacts and/or the detergent and lipid molecules surrounding each channel. Indeed, the gating properties of Kv channels have been shown to be exquisitely sensitive to the lipid composition and mechanical state of the membrane (Hite et al., 2014; Milescu et al., 2009, 2007; Ramu et al., 2006; Schmidt et al., 2006; Schmidt and MacKinnon, 2008; Xu et al., 2008). Since no structure has been obtained for a voltage-activated ion channel in a membrane environment, in the present study we solved the structure of the Kv chimera reconstituted in a lipid nanodisc environment using single-particle cryo-electron microscopy (cryo-EM).\n\n## Results\n\n### Reconstitution of the Kv chimera into lipid nanodiscs\n\nNanodiscs are hockey-puck shaped lipid bilayers that provide a membrane-like environment for membrane proteins and have been used for structure determination of other membrane proteins using single-particle cryo-EM (Autzen et al., 2018; Chen et al., 2017; Dang et al., 2017; Efremov et al., 2015; Frauenfeld et al., 2011; Gao et al., 2016; Gatsogiannis et al., 2016; Gogol et al., 2013; Guo et al., 2017; Jin et al., 2017; McGoldrick et al., 2018). A typical nanodisc with an embedded membrane protein is composed of a lipid bilayer containing a membrane protein and two membrane scaffold proteins (MSP) that surround the bilayer (Denisov and Sligar, 2017; Hagn et al., 2013). We first optimized the assembly condition for empty nanodiscs because the success and the yield of nanodisc assemblies critically depend on the ratio between MSP and lipids used for membrane protein reconstitution (Grinkova et al., 2010; Inagaki et al., 2013). Using size-exclusion chromatography to assess nanodisc assembly, we found that the assembly of empty nanodiscs was optimal at a 1:100 molar ratio of MSP and lipids, and that using lower or higher ratios of MSP to lipid resulted in lower yields or formation of large aggregates that elute in the void volume (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/37558/elife-37558-fig1-v1.jpg)\n\n**Figure 1.:** (A) Size exclusion chromatograms of empty nanodiscs assembled under different molar ratios of MSP1E3D1:lipid where the lipid mixture is 3:1:1 POPC:POPG:POPE. (B) Reconstitution of Kv chimera into nanodiscs. Size exclusion chromatograms of the Kv chimera reconstituted into nanodiscs at different molar ratios of Kv chimera:MSP1E3D1:lipid (same lipids used for empty nanodiscs). (C) SDS-PAGE of main fractions collected from size exclusion chromatography (B) for nanodisc assembly at molar ratios of 1:10:1000.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37558/elife-37558-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Representative gel filtration chromatogram of the Kv chimera purified in detergent using Superdex\u00a0200 (10 \u00d7 300 mm) column. (B) SDS-PAGE profile of fractions (500 \u00b5l) collected from the Superdex\u00a0200 column. Fractions collected between 10 and 11 ml (red box) were pooled, concentrated and used for reconstitution into membrane vesicles comprised of POPE and POPG (3:1). (C) Recording of the Kv chimera reconstituted into a planar lipid bilayer formed with DPhPC. Holding voltage was \u2212110 mV and tail voltage was \u221290 mV, with voltage steps from \u2212130 to\u00a0+70 mV in 20 mV increments. Concentration of KCl was 150 mM on both sides of the bilayer.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/37558/elife-37558-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Representative micrograph indicating many isolated single particles. (B) Selected 2D class averages showing many side views of intact complexes composed of four \u03b1 and four \u03b2 subunits in lipid nanodiscs, along with some subcomplexes lacking the \u03b2 subunit. It is notable that the angle and position of the cytosolic domain with respect to the transmembrane region was variable in different 2D class averages. In addition, slight variations in the size of lipid nanodiscs can be observed, as well as various locations of the protein complex inside lipid nanodiscs. (C) An initial map generated from a subset of the 2D class averages is shown with the docked X-ray structure of the Kv channel (PDB entry 2r9r) from the side (left), slightly tilted (center) and from the cytosolic side (right).\n\nWe next expressed and purified the \u03b1 and \u03b2 subunits of the Kv chimera as previously described (Long et al., 2005a, 2005b, 2007; Parcej and Eckhardt-Strelau, 2003), and found that the purified channel was functional after reconstitution into planar lipid bilayers (Figure 1\u2014figure supplement 1). The purified Kv chimera could also be reconstituted into nanodiscs using a 1:10:1000 molar ratio of Kv chimera:MSP:lipid. When assessed with size-exclusion chromatography, two peaks eluting at 10.5 and 12.3 ml were observed along with a void peak (Figure 1B, red line). Analysis of these peaks using SDS-PAGE shows that the first corresponds to the Kv chimera reconstituted into nanodiscs and the second to empty nanodiscs (Figure 1C). Considering that embedding the Kv chimera into nanodiscs would necessarily displace lipid molecules, we tested a lower ratio of lipid to MSP with a fixed ratio of MSP to Kv chimera, and found that reconstitution of the channel at a ratio of 1:10:400 Kv:MSP:lipid increased the yield of nanodiscs containing the Kv chimera (Figure 1B, blue line).\n\n### Electron microscopy of the Kv chimera in lipid nanodiscs\n\nTo evaluate the quality of our sample, we used negative staining electron microscopy (Figure 1\u2014figure supplement 2). The sample showed nicely distributed particles with easily recognizable side views of the channel harboring a rod-like shape for the transmembrane domain surrounded by a lipid nanodisc, and a cone-shaped cytosolic domain protruding from the nanodisc. Besides the main species composed of the full complex in lipid nanodiscs harboring both\u00a0\u03b1 and auxiliary \u03b2 subunit (\u03b14\u03b24),a small number of complexes missing the \u03b2 subunits were also identified in the micrographs as well as in individual 2D class averages (\u03b14), indicating some heterogeneity. In addition, the cytosolic domain protruded from the membrane plane at different angles (Figure 1\u2014figure supplement 2B), most likely due to the flexible, long linkers connecting the T1 domain in the cytosol and the transmembrane domain of the four \u03b1 subunits.\n\nSince the Kv chimera sample looked promising, we prepared grids for cryo-EM. After screening different types of grids, micrographs collected on a holey gold grid showed the best results with recognizable nicely distributed particles of the Kv chimera in nanodiscs (Figure 2A), and 2D class averages of these particles illustrated views from different orientations with details in the cytosolic as well as the membrane domain (Figure 2B). We initially generated a map of the entire complex (\u03b14\u03b24)\u00a0and obtained an average resolution of the entire map of 3.3 \u00c5. However, the map exhibited a lower local resolution in the transmembrane domain (resolutions of\u00a0~4\u20137.5 \u00c5; Figure 2C), likely stemming from the alignment of particles against the cytosolic domain during 3D classification and 3D refinement, and the variability in relative arrangements of the cytosolic and transmembrane domains. To obtain maps with a higher local resolution, we performed particle subtraction, followed by additional classifications as well as 3D refinement on the cytosolic and transmembrane domain independently (Figure 2D and E, Figure 2\u2014figure supplement 1). The additional two maps showed higher resolution for each domain (3 \u00c5 for the cytosolic domain with local higher resolution as high as\u00a0~2.5\u00a0\u00c5, and\u00a0~4 \u00c5 for the transmembrane region with local higher resolution of up to\u00a0~3.0 \u00c5), which we used to build models of the Kv channel (Figure 2\u2014figure supplements 1 and 2; Table 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/37558/elife-37558-fig2-v1.jpg)\n\n**Figure 2.:** (A) A representative micrograph at approximately \u22121.7 \u00b5m defocus. (B) 2D class averages of the 16 most populated classes out of 118,556 selected particles. (C) 3.3 \u00c5 map of entire complex filtered and colored according to local resolution fitted into a low resolution 3D class envelope. (D) 3 \u00c5 map of the cytosolic domain after focused refinement colored according to local resolution and fitted into a low resolution 3D class envelope. (E) 4 \u00c5 map of the transmembrane domain after focused refinement and local resolution filtering, colored according to local resolution and fitted into a low resolution 3D class envelope. FSC curves for each map are shown in Figure 2\u2014figure supplement 2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37558/elife-37558-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** 281,021 particles were extracted from 2,062 micrographs using a binning factor of 4. 118,556 particles indicating the presence of a nanodisc were left after multiple rounds of 2D and 3D classification, which were then re-extracted with a binning factor of 2 only using frames 2\u201320. An additional round of 2D classification resulted in a selection of 94,131 particles. To obtain the map of the entire complex, a round of 3D classification into 2 classes was carried out that divided the data into particles with both \u03b1 and \u03b2 subunits, and particles that seem to contain only \u03b1 subunits. The particles yielding the map containing \u03b1 and \u03b2 subunits were used for 3D refinement to obtain the 3.3 \u00c5 map of the entire complex. Additional maps of the cytosolic domain and the transmembrane domain were obtained by a forced 3D classification of 94,131 particles into a single class, followed by signal subtraction and additional rounds of classifications and refinements. A 3 \u00c5 map of the cytosolic domain was finally generated from 57,384 particles. For the TM domain, an overall 4 \u00c5 map was generated from 65,745 particles.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/37558/elife-37558-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A\u2013C) Gold-standard FSC curves of entire complex (A), cytosolic domain (B) and transmembrane domain (C) are shown indicating resolutions according to the 0.143 FSC criteria of 3.3, 3 and 4 \u00c5, respectively. Masks used to calculate the FSC are shown in each panel, as well as the corresponding maps using RELION\u2019s postprocessing and local resolution filtering.\n\n**Table 1.**\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>Protein concentration</td>\n      <td>0.7 mg/ml</td>\n    </tr>\n    <tr>\n      <td>Sample volume for EM grid</td>\n      <td>3 \u00b5l</td>\n    </tr>\n    <tr>\n      <td>Grid type</td>\n      <td>UltraAuFoil 1.2/1.3</td>\n    </tr>\n    <tr>\n      <td>Plunge freezer</td>\n      <td>Leica GP EM</td>\n    </tr>\n    <tr>\n      <td>Blotting time</td>\n      <td>10 s</td>\n    </tr>\n    <tr>\n      <td>Blotting temperature</td>\n      <td>4\u00b0C</td>\n    </tr>\n    <tr>\n      <td>Blotting chamber humidity (set/measured)</td>\n      <td>95%/88%</td>\n    </tr>\n    <tr>\n      <td>Microscope</td>\n      <td>FEI Titan Krios</td>\n    </tr>\n    <tr>\n      <td>Camera</td>\n      <td>K2 Summit</td>\n    </tr>\n    <tr>\n      <td>Energy Filter</td>\n      <td>no</td>\n    </tr>\n    <tr>\n      <td>Cs corrector</td>\n      <td>no</td>\n    </tr>\n    <tr>\n      <td>Magnification</td>\n      <td>29,000x</td>\n    </tr>\n    <tr>\n      <td>Dose rate</td>\n      <td>~4.5 e-/px \u2219 s</td>\n    </tr>\n    <tr>\n      <td>Total dose</td>\n      <td>~40 e-/\u00c52</td>\n    </tr>\n    <tr>\n      <td>Number of frames</td>\n      <td>38</td>\n    </tr>\n    <tr>\n      <td>Physical pixel size (microscope)</td>\n      <td>0.858 \u00c5/px</td>\n    </tr>\n    <tr>\n      <td>Super-resolution pixel size (microscope)</td>\n      <td>0.429 \u00c5/px</td>\n    </tr>\n    <tr>\n      <td>Final pixel size used for final maps</td>\n      <td>0.835 \u00c5/px</td>\n    </tr>\n    <tr>\n      <td>Number of total micrographs</td>\n      <td>3,085</td>\n    </tr>\n    <tr>\n      <td>Number of selected micrographs</td>\n      <td>2,062</td>\n    </tr>\n    <tr>\n      <td>Number of particles picked</td>\n      <td>281,021</td>\n    </tr>\n    <tr>\n      <td>Number of particles selected containing a lipid nanodisc</td>\n      <td>118,556</td>\n    </tr>\n    <tr>\n      <td>Number of particles in \u03b14\u03b24 map</td>\n      <td>47,482</td>\n    </tr>\n    <tr>\n      <td>Number of particles in the cytosolic\u00a0domain map</td>\n      <td>57,384</td>\n    </tr>\n    <tr>\n      <td>Number of particles in the TM domain map</td>\n      <td>65,745</td>\n    </tr>\n    <tr>\n      <td>Average resolution in \u03b14\u03b24 map</td>\n      <td>3.3 \u00c5</td>\n    </tr>\n    <tr>\n      <td>Average resolution in cytosolic domain map</td>\n      <td>3.0 \u00c5</td>\n    </tr>\n    <tr>\n      <td>Average resolution in TM domain map</td>\n      <td>4.0 \u00c5</td>\n    </tr>\n    <tr>\n      <td>B-factor for \u03b14\u03b24 map</td>\n      <td>\u221289</td>\n    </tr>\n    <tr>\n      <td>B-factor for cytosolic domain map</td>\n      <td>\u221284</td>\n    </tr>\n    <tr>\n      <td>B-factor for TM domain map</td>\n      <td>\u2212123</td>\n    </tr>\n  </tbody>\n</table>\n\n### Structure of the Kv chimera in lipid nanodiscs\n\nWe built three models for the Kv chimera: one for the cytosolic domain, another for the transmembrane domain, and a third hybrid model that combines the two models which fits in the overall 3.3 \u00c5 resolution map of the entire complex (Figure 3). For the higher resolution cytosolic domains, cryo-EM densities for most of the side chains were clearly visible (Figure 3\u2014figure supplement 1), we could resolve density from the NADP+ cofactor bound to the \u03b2 subunit (Figure 3\u2014figure supplement 1G) and densities for bound water molecules in areas where local resolution was better than 2.8 \u00c5 (Figure 3\u2014figure supplement 1E\u2013F). Comparison of the cryo-EM structure in nanodiscs and the X-ray crystal structure in detergent shows that they are similar (Figure 3C). We do see a slight shift/rotation of the cytosolic region of the \u03b1 subunit and \u03b2 subunit with respect to the transmembrane domain of the \u03b1 subunit when compared to the crystal structure, with the most pronounced changes in the \u03b2 subunit (Figure 3A,C,D), likely reflecting the lack of contacts between molecules that are present in the crystal of the Kv chimera (Figure 3\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/37558/elife-37558-fig3-v1.jpg)\n\n**Figure 3.:** (A) The X-ray structure (PDB entry 2r9r) is shown in the overlapping cryo-EM maps with fitting of the transmembrane region to the map. Notice the slight displacement/shift of the X-ray structure is\u00a0most pronounced in the cytosolic \u03b2 subunit. (B) Final model refined against the cryo-EM maps is shown with the maps. (C) The structural difference between the X-ray structure and the cryo-EM structure is illustrated with the backbone atom RMSD values (0.096\u20135.759 \u00c5). \u03b1 subunits were used for superpositioning of the two structures. (D) The superpositioning of the X-ray (gold) and cryo-EM (purple) structure with the close-up views of the transmembrane (I) and cytosolic (II) domains.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37558/elife-37558-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013B) Examples of two \u03b1-helical regions. (C\u2013D) Examples of two \u03b2-sheets. (E\u2013F) Higher resolution regions revealing densities for bound water molecules. (G) Ligand NADP+ in \u03b2 subunit with its coordinating residues. Glu329, Ser325 and Asp85 were removed for clarity.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/37558/elife-37558-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** PDB entry 2r9r. The asymmetric unit contains two molecules (one of four \u03b1\u03b2 monomers in molecule I and II) and each molecule is composed of channel-forming \u03b1 subunits and auxiliary cytosolic \u03b2 subunits. Highlighted are the contact sites of \u03b2 subunits from independent molecules in the crystal.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/37558/elife-37558-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The map was filtered according to local resolution. Six transmembrane helices S1 to S6 are shown. Several areas with large side chains show bumps along the sausage-like densities for the transmembrane helices. The resolution for S5-S6 in the center of the TM domain shows higher resolution compared to the peripheral S1-S4 helices within the voltage-sensing domain.\n\nAlthough the transmembrane domain exhibits overall lower resolution than the cytosolic domain (Figure 2), we see cryo-EM densities for all transmembrane helices (S1-S6) with densities visible for many of the bulky side chains (Figure 3\u2014figure supplement 3), which enabled us to refine a model for the entire complex. In addition, the central pore domain shows higher local resolutions (3\u20134 \u00c5) compared to the peripheral voltage-sensing domains (resolutions of\u00a0~4\u20136 \u00c5), with the lowest resolution for the peripheral loops in the latter domain (Figure 2E). Within the pore domain, we observed densities for most side chains (Figure 3\u2014figure supplement 3, Figure 4), providing confidence in the structural model. Overall, the transmembrane domain only shows minimal structural differences when compared to the crystal structure (Figures 3 and 4), suggesting that the X-ray structure is representative of the structure of the protein in a membrane environment.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/37558/elife-37558-fig4-v1.jpg)\n\n**Figure 4.:** (A\u2013B) Extracellular views of the outer pore region of the structures of the Kv chimera solved by cryo-EM (A) and X-ray crystallography (B; 2r9r). D375 and W362, the key residues that are expected to be involved in C-type inactivation are shown. (C) Weak sidechain density for D375 shown at different contour levels.\n\nWe analyzed the cryo-EM map and model within the pore domain to investigate structural changes that may underlie C-type inactivation. For the intracellular end of the pore where the activation gate resides (del Camino and Yellen, 2001; Holmgren et al., 1998, Holmgren et al., 1997; Webster et al., 2004), we observed no discernable structural differences between the cryo-EM and X-ray structures (Figure 3). The S4-S5 linker that is critical for coupling the voltage-sensing and pore domains is also very similar between cryo-EM and X-ray structures (Figure 3). Within the external pore region that has been implicated in C-type inactivation (Armstrong and Hoshi, 2014; Choi et al., 1991; Hoshi and Armstrong, 2013; Hoshi et al., 1991; Liu et al., 1996; L\u00f3pez-Barneo et al., 1993; Yang et al., 1997; Yellen et al., 1994), we see no evidence for significant constriction or dilation of the pore (Figure 4, Figure 5, Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/37558/elife-37558-fig5-v1.jpg)\n\n**Figure 5.:** (A) Transmembrane view of the selectivity filter of the Kv chimera solved by cryo-EM in lipid nanodiscs with densities in the pore from the\u00a0~4.0 \u00c5 map with local higher resolution in this central region of 65,745 signal subtracted particles including only the transmembrane region. (B) Cryo-EM structure of the selectivity filter from the\u00a0~3.3 \u00c5 map of the entire complex of 47,482 particles. (C) Same view of the selectivity filter of the Kv chimera solved by X-ray crystallography (PDB entry 2r9r). (D) A variety of maps obtained during processing. From left to right,\u00a0~3.6 \u00c5 map of the entire complex obtained from 67,300 particles,\u00a0~3.8 \u00c5 map of the entire complex obtained from 75,633 particles,\u00a0~3.9 \u00c5 map of the entire complex obtained from 63,826 particles,\u00a0~3.9 \u00c5 map of the entire complex obtained from 118,556 particles, and\u00a0~4.6 \u00c5 map with local higher resolution in this central region of the transmembrane domain after signal subtraction and focused refinement of 34,654 particles (right). The blue densities are shown from the same maps in gray, just at higher contour level and restricted to the central region of the pore.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37558/elife-37558-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Superposition of the selectivity filter of the Kv chimera whose structure was solved by cryo-EM in lipid nanodiscs (purple) and by X-ray crystallography in detergent (tan, PDB entry 2r9r). (B) Superposition of the selectivity filter of KcsA (blue, PDB entry 1k4c) and an inactivation promoted mutant (green, KcsA Y82A, PDB entry 5vke), with distances shown between C\u03b1 atoms of G77.\n\nAlthough the cryo-EM density maps we have at present of the transmembrane region are at slightly lower resolution when compared to the cytosolic regions, careful inspection of the selectivity filter provides an opportunity to speculate whether the Kv chimera in our experiments is in the C-type inactivated state. Hydrogen bonding between D447 and W434 in the Shaker Kv channel (D375 and W362 in Kv chimera, respectively) has been shown to prevent C-type inactivation (Pless et al., 2013). Mutation of these residues profoundly speeds C-type inactivation in the Shaker Kv channel, strengthening the bond by incorporating fluorinated Trp slows C-type inactivation and weakening the bond by incorporating 2-amino-3-indol-1-yl-propionic acid speeds inactivation (Lueck et al., 2016; Perozo et al., 1993; Pless et al., 2013). Mutation of W366 in the Kv1.2 channel, the equivalent of W434 in Shaker, also speed C-type inactivation, albeit more modestly compared to Shaker, and both external K+ and TEA slow C-type inactivation in Kv1.2 (Cordero-Morales et al., 2011; Ishida, 2014), suggesting that the mechanisms of inactivation are similar between these Kv channels. Evidence for this hydrogen bond is clearly seen in all previous X-ray structures of the Kv chimera (Banerjee et al., 2013; Long et al., 2007; Pau et al., 2017; Tao et al., 2010) and KcsA (Cuello et al., 2017, 2010; Devaraneni et al., 2013; Matulef et al., 2013; Valiyaveetil, 2017; Valiyaveetil et al., 2006; Zhou et al., 2001b)\u00a0(Figure 4B). The structure that we have determined by cryo-EM is also potentially consistent with the presence of H-bonding between D375 and W362 (Figure 4C), similar to that reported in the X-ray structure. In this case, it would be necessary to invoke a different mechanism to explain inactivation of the Kv chimera. However, it is also possible that the Asp residue can adopt multiple rotameric positions, and that the loss of this H-bonding interaction may well account for the mechanism of inactivation, as proposed previously (Pless et al., 2013). In our structure of the Kv chimera, sidechain density for D375 (equivalent to D447 in Shaker) is weak compared to other nearby residues, including W362, Y373, M376 and V377 (Figure 4A,C), raising the possibility that the critical hydrogen bond between D375 in the P-loop and W362 in the pore helix may be broken (Figure 4A,C).\n\nA second piece of evidence that the Kv chimera may be C-type inactivated is that we find substoichiometric ion occupancy of the selectivity filter in our maps. We observed that processing different subsets of the data, containing different constellations of particles resulted in density maps where ion densities were absent in different positions (Figure 5A,B,D). In the final refined map, which is the one with the highest resolution in the transmembrane region, the ion density is absent in the S2 position (Figure 5A). In contrast, in the X-ray structure, all four ion sites exhibit comparable occupancy (Figure 5C). The origin of the variations we present in Figure 5A,B and D may well be because of the variability in resolution in these maps, and also because of the possibility of artifactual densities along the symmetry axis. Nevertheless, our results suggest that ion interactions with the selectivity filter are likely perturbed for the Kv chimera in a lipid bilayer environment as compared to the environment of the crystal lattice.\n\n## Discussion\n\nThe objective of the present study was to determine the structure of the Kv chimera in a membrane environment, both to assess the extent to which previous X-ray structures of detergent solubilized protein capture a native conformation of these channels, and to obtain structural information on the C-type inactivated state. Although the highest resolution X-ray structure of the Kv chimera is at 2.4 \u00c5 resolution (Long et al., 2007), and our cryo-EM structure is at a resolution of\u00a0~3 \u00c5 in the cytosolic domain and\u00a0~4 \u00c5 in the transmembrane domain, our structure in a membrane environment implies that the protein adopts an essentially native structure in detergent in the presence of lipids. We detected only subtle structural changes in the external pore in the selectivity filter of the Kv chimera, as well as a small rotation of the cytosolic region of the \u03b1 subunit and the \u03b2\u00a0subunit, a region involved in crystal packing in the X-ray structure.\n\nC-type inactivation in Kv channels has been extensively studied, yet the structural basis of this important mechanism has been controversial. Pioneering studies on the Shaker Kv channel point to a critical role of the external pore; increasing the external concentration of K+ ions and externally applied tetraethylammonium (TEA) slow C-type inactivation, and mutants in the external pore have profound effects on the kinetics of C-type inactivation (Armstrong and Hoshi, 2014; Choi et al., 1991; Hoshi and Armstrong, 2013; Hoshi et al., 1991; Kurata and Fedida, 2006; Liu et al., 1996; L\u00f3pez-Barneo et al., 1993; Perozo et al., 1993; Yang et al., 1997, 2002; Yellen et al., 1994). In addition, the T449C mutation in the external pore creates a stable Cd2+ bridge between subunits that favors the C-type inactivated state (Yellen et al., 1994), leading to the proposal that the selectivity filter constricts during C-type inactivation (Choi et al., 1991; Yellen et al., 1994). It has also been proposed that the external pore dilates during C-type inactivation based on the finding that C-type inactivated Kv channels can conduct Na+ and larger cations when K+ is removed (Hoshi and Armstrong, 2013; Korn and Ikeda, 1995; Loboda et al., 2001). Our cryo-EM structure of the Kv chimera in nanodiscs suggests that the structural changes during C-type inactivation are likely not large, and would be compatible with very small movements on the scale\u00a0<2 \u00c5. Although the resolution of our cryo-EM structure limits the extent to which we could unambiguously identify the structural changes that occur with C-type inactivation, it remains possible that our findings are compatible with earlier suggestions that inactivation involves the breakage of a critical hydrogen bond between D375 in the P-loop and W362 in the pore helix. The functional evidence for a critical role of this hydrogen bond in stabilizing a conducting state of the filter includes both gain- and loss-of-function experiments employing conventional and unnatural amino acid mutagenesis (Pless et al., 2013). A recent X-ray structure of a non-conducting mutant of the Kv chimera reported changes in occupancy of the S1 site in the filter without disruption of the hydrogen bond networks discussed above (Pau et al., 2017), suggesting that there may be multiple structural mechanisms of slow inactivation in the Kv chimera. Recent structures of the hERG Kv channel have raised the possibility of small structural changes underlying inactivation in that channel, including a role for F627, a residue equivalent to Y373 in the Kv chimera (Wang and MacKinnon, 2017).\n\nThe process of slow inactivation has also been extensively studied in the KcsA channel. There are a number of properties of slow inactivation in KcsA that are similar to what has been observed for C-type inactivation in Kv channels. Slow inactivation in KcsA becomes slower as the concentration of external K+ is raised (Chakrapani et al., 2007), and introduction of Cys at Y82, the equivalent of T449 in the Shaker Kv channel, generates a Cd2+ bridge that favors the inactivated state (Raghuraman et al., 2012). In addition, mutants in the external pore of KcsA either speed (Y82A) or effectively remove (E71A) slow inactivation (Cuello et al., 2017). A recent X-ray structure of the rapidly inactivating Y82A mutant of KcsA with the intracellular gate stabilized in the open state suggests that inactivation in this mutant involves a 2.6 \u00c5 constriction at G77 within the selectivity filter, leading to disruption of ion binding sites within the filter and water penetration behind the filter (Cuello et al., 2017) (Figure 5\u2014figure supplement 1B). Other studies have shown that the D-Ala mutant at the G77 position in KcsA can still slow inactivate even though the mutation would be expected to prevent constriction at this position within the filter (Devaraneni et al., 2013), suggesting that KcsA can inactivate without constriction at G77 within the filter. The overall message from these studies is that the filter of KcsA can likely undergo multiple types of structural changes that lead to alterations in ion binding to the filter and a decrease in ion conduction. In our cryo-EM structure, it appears that the C\u03b1 of G372 in the filter fits better in the cryo-EM density without constriction of the filter (Figure 5\u2014figure supplement 1A). It is also interesting that the key hydrogen bond between D375 and W362 that we highlight in the Kv chimera is preserved in all the KcsA structures that have alterations in ion occupancy of the selectivity filter, and mutants of the equivalent Trp in KcsA (W67F) slow rather than speed inactivation (Cordero-Morales et al., 2011). Collectively, these results suggest that the detailed mechanisms of inactivation in the Kv chimera and KcsA may be distinct.\n\nThe results discussed above for both the Kv chimera and KcsA suggest that the selectivity filters of these channels can be rendered non-conducting by mechanisms that are distinct for different mutants of the two channels, and that the detailed structural mechanism may not be generalizable. It will be important to assess whether higher resolutions can be achieved in the transmembrane domain of the Kv chimera in a membrane environment since these conditions seem to favor the C-type inactivated state without the need for mutations. Our results also suggest that it may be possible to solve structures of voltage-activated ion channels with voltage-sensing domains in a resting state, and with internal pores that are closed, to unravel the mechanisms of voltage sensing and voltage-dependent gating.\n\n## Materials and methods\n\n### Expression of Kv channels in Pichia pastoris\n\nThe Kv chimera was produced in Pichia pastoris as previously described (Long et al., 2007; Parcej and Eckhardt-Strelau, 2003). Pichia cells were milled using a ball mill (3 cycles of 3 min milling at 25 Hz with 3 min of cooling in liquid nitrogen using a Retsch mixer mill MM400) at cryogenic temperatures and stored at \u221280\u00b0C until further use. Breaking the cells under cryogenic temperature using a ball mill was critical for obtaining tetrameric Kv channels. Broken cells were suspended in buffer A (50 mM Tris, 150 mM KCl, 2 mM tris(2-carboxyethyl)phosphine (TCEP), and 10 mM \u03b2-mercaptoethanol pH 7.5) supplemented with 0.1 mg/ml of DNaseI and protease inhibitors (1 \u00b5g/ml leupeptin, 1 \u00b5g/ml aprotinin, 1 \u00b5g/ml pepstatin, 0.1 mg/ml of trypsin inhibitor, 0.624 mg/ml of benzamidine, and 1.5 mM of phenylmethylsulfonyl fluoride) for 2\u20133 hr at 4\u00b0C. The pH of the solution was checked every hour and KOH solution was added to keep the pH neutral. Cell debris were removed by centrifugation at 3000 x g for 10 min. The supernatant was centrifuged for 1 hr at 35,000 rpm (Beckman, Ti 45 rotor) to collect the membranes, which were flash frozen in liquid nitrogen and stored at \u221280\u00b0C until further use.\n\n### Purification of Kv channels expressed in Pichia pastoris\n\nTo purify the Kv chimera, collected membranes were thawed and resuspended in buffer A with added protease inhibitors as described above using a Dounce homogenizer. Approximately 50 ml of buffer was used for membranes collected from 10 grams of Pichia cell powder. Fresh n-Dodecyl \u03b2-D-maltoside (DDM) was added to the resuspended solution to a final concentration of 65 mM, and membrane proteins were extracted for 2 hr at 4\u00b0C with gentle stirring on a magnetic stirrer. Insoluble fractions were removed by centrifugation at 35,000 rpm for 1 hr (Beckman, Ti 45 rotor) and the supernatant fraction was incubated with TALON cobalt resin pre-equilibrated with buffer B (buffer A supplemented with 5 mM DDM) overnight. The next day the resin was washed with 10\u201320 column volumes of buffer C, which is buffer B supplemented with 30 mM imidazole and 0.1 mg/ml lipid mixtures composed of 3:1:1 mixture of 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine (POPC), 1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-(1'-rac-glycerol) (POPG) and 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine (POPE). Bound proteins were eluted with buffer D (buffer B with 0.1 mg/ml lipid mixture and 300 mM imidazole), concentrated using an Amicon 100 kDa ultrafiltration membrane and injected into Superdex 200 (10 \u00d7 300 mm) column. Loaded proteins were purified using a buffer composed of 20 mM Tris-HCl pH 7.5, 150 mM KCl, 6 mM n-decyl-\u00df-D-maltoside (DM), 2 mM TCEP, 2 mM DTT, 1 mM EDTA and 0.1 mg/ml of lipid mixtures described above. Tetrameric Kv chimera usually eluted after 10\u201311 ml, which were used for the reconstitution into lipid nanodiscs on the same day of purification. The purification steps described above was performed at 4\u00b0C.\n\n### Recordings of the Kv chimera in a planar lipid bilayer\n\nPlanar lipid bilayer experiments were performed as previously described (Hite et al., 2014; Tao and MacKinnon, 2008). Briefly, freshly prepared Kv chimera channels were reconstituted into lipid vesicles (POPE:POPG 3:1 mixture by mole) at a nominal protein to lipid concentration of 1:10 (by mass). The final vesicle concentration was 10 mg/ml in a buffer containing 450 mM KCl, 10 mM HEPES-KOH (pH 7.5) and 2 mM DTT. Bilayer experiments were performed using a commercial 1 ml polystyrene cup chamber with a 200 \u00b5m aperture (Warner Instruments). After filling the front and rear (cup) chambers with asymmetric solutions (150 mM KCl, 10 mM HEPES-KOH pH 7.5 in the front; 15 mM KCl, 10 mM HEPES-KOH pH 7.5 in the rear), a planar lipid bilayer was formed by touching a glass rod dipped in a DPhPC/decane solution (20 mg/ml) against the aperture. 2 \u00b5l of the vesicle solution was then added to the front chamber and after waiting several minutes for vesicle fusion, the osmotic and [K+] gradient across the membrane was dissipated by adding 135 mM of KCl to the rear chamber. The membrane was then held at \u2212110 mV (rear chamber voltage relative to front chamber) and channel activation probed with 100 msec depolarization steps every 5 s.\n\n### Reconstitution of Kv channel into nanodiscs\n\nMSP1E3D1 was purified as previously described (Grinkova et al., 2010; Inagaki et al., 2013). Lipids solubilized in chloroform (Avanti) were dried under the stream of nitrogen and placed under a desiccator overnight protected from light to completely remove residual chloroform. Dry lipids were resuspended in water thoroughly at a concentration of 20 mg/ml and formed\u00a0vesicles were\u00a0sonicated until the solution became nearly transparent. DM was added to a concentration of 26 mg/ml and divided into smaller aliquots which were kept frozen at \u221280\u00b0C until further use. To begin nanodisc assembly, the lipid mixture solubilized by DM was mixed with the Kv chimera purified using size exclusion chromatography in DM (usually 1\u20132 mg/ml after concentrating the fractions collected from the size exclusion purification) and MSP at room temperature for 30 min. The typical reconstitution concentration of the Kv chimera, MSP and lipid mixture was 3 \u00b5M, 30 \u00b5M and 12 mM, respectively. The protein concentrations were calculated by measuring the absorbance at 280 nm using molar extinction coefficients of 454,720 M\u22121cm\u22121 and 26,930 M\u22121cm\u22121 for the Kv chimera and MSP1E3D1, respectively. The solution was then transferred to a tube containing Biobeads (30 fold of detergent weight) that were previously washed with methanol and equilibrated in 20 mM Tris-HCl pH 7.5 and 150 mM KCl buffer to initiate nanodisc assembly and mixed at room temperature for 2\u20133 hr. Biobeads were separated by filtering through a 0.22 \u00b5m membrane and the filtrate was injected into Superdex\u00a0200 (10 \u00d7 300 mm) column using a buffer composed of 20 mM Tris-HCl pH 7.5 and 150 mM KCl for samples used in negative staining and 20 mM HEPES-KOH pH 7.5, 150 mM KCl and 2 mM TCEP for samples used in cryo-EM at 4\u00b0C. Using fresh Kv chimera (within 1\u20132 hr from the collection of fractions from size exclusion purification) for nanodisc assembly was critical for reconstitution into nanodisc.\n\n### Negative staining electron microscopy\n\nThe Kv chimera sample in lipid nanodiscs was first diluted to \u223c0.03 mg/ml and then adsorbed to a freshly plasma cleaned carbon-film grid for 30 s, and stained with 0.7% uranyl formate. Images were collected on an FEI Tecnai T12 equipped with a 4k \u00d7 4 k Gatan Ultrascan CCD camera. Image analysis, particle selection, 2D class averaging, and initial 3D modelling were performed using EMAN2 (Tang et al., 2007).\n\n### Cryo electron microscopy sample preparation\n\nWe initially prepared vitrified specimens by adding 3 \u03bcl of Kv chimera at various protein concentrations (in 20 mM HEPES-KOH pH 7.5, 150 mM KCl and 2 mM TCEP) to plasma cleaned Cu R1.2/1.3 holey carbon grids (Quantifoil Micro Tools GmbH, Gro\u00dfl\u00f6bichau, Germany); however, either the particles were too crowded at a higher protein concentration or only particles that did not look like the entire Kv chimera were detected at a lower protein concentration. To mitigate this problem, we prepared specimens using grids with a 2 nm carbon layer at a protein concentration of 0.1 mg/ml. Data collected on thin carbon layer grids yielded good 2D classes, but only resulted in low resolution 3D maps. Finally, we prepared specimens by adding 3 \u03bcl of Kv chimera at 0.7 mg/ml to a 15 s plasma cleaned 300 mesh UltrAuFoil R1.2/1.3 holey gold support grid (Quantifoil Micro Tools GmbH, Gro\u00dfl\u00f6bichau, Germany) (Russo and Passmore, 2014, 2016), and nicely dispersed particles with the shape of Kv chimera were detected in thin ice holes. The gold grid used for data collection was blotted for 10 s after 10 s pre-blotting time, then plunge-frozen in liquid ethane using a Leica EM GP instrument (Leica Microsystems Inc., Buffalo Grove, IL), with the chamber maintained at 4\u00b0C and 88% humidity.\n\n### Data collection\n\nCryo-EM imaging was performed on an FEI Titan Krios microscope (FEI Company) operated at 300 kV, aligned for parallel illumination. Data collection images (Figure 2A) were acquired with a K2 Summit camera operated in super-resolution counting mode with a calibrated physical pixel size of 0.858 \u00c5 and a super-resolution pixel size of 0.429 \u00c5 with a defocus range between \u22121.0 and \u22122.5 \u00b5m using the Latitude S software version 3.21.1253 (Gatan Inc., Pleasanton, CA). Focusing improved by using the edge of the previously imaged hole on the gold foil grid. No energy filter or Cs corrector was installed on the microscope. The dose rate used was \u223c4.5 e-/pixel\u00b7s to ensure operation in the linear range of the detector. The total exposure time was 15.2 s, and intermediate frames were recorded every 0.4 s giving an accumulated dose of \u223c40 e-/\u00c52 and a total of 38 frames per image. A total of 3,085 images were collected over six days. 2,928 and 1,852 images were collected using the same setup on Cu carbon grids and Cu carbon grids with a 2 nm carbon layer, respectively.\n\n### Data processing\n\nMovie frame alignment and CTF determination were done as described previously (Bartesaghi et al., 2014). Drift analysis comparing data collected on standard Quantifoil R 1.2/1.3 copper grids, R 1.2/1.3 copper grids with a 2 nm carbon layer and UltrAuFoil R 1.2/1.3 gold grids were performed using IMOD (Kremer et al., 1996). To quantify the amount of beam induced movement observed for different grid types, we measured the root mean square (RMS) displacement for movies acquired on 300 mesh R 1.2/1.3 QF grids, 200 mesh R 1.2/1.3 QF grids with a 2 nm carbon layer, and 300 mesh UltraAuFoil R 1.2/1.3 gold grids. Drift trajectories for each movie were computed using the whole frame alignment routines presented in (Bartesaghi et al., 2014), and the RMS displacements were plotted as a function of the frame number. For this analysis 2,853, 827, and 2,062 selected images were used for the QF, QF\u00a0+2 nm carbon, and gold data sets. Compared to the regular QF grids, the movement was reduced significantly when using either the 2 nm carbon layer or the gold grids.\n\nParticle picking was initially done using a nanodisc-embedded TRPV1 template (Gao et al., 2016), which was later replaced with a 3D class representing Kv chimera in nanodiscs. 281,021 particles were extracted from 2,062 selected micrographs using a binning factor of 4 (with respect to the super-resolution image size) and a box size of 256 \u00d7 256 pixels. 2D class averages (Figure 2B) were generated using RELION 2.1 (Scheres, 2012). A low-resolution initial model from negative staining (Figure 1\u2014figure supplement 2) was used as reference to initially run 3D classification in RELION. Multiple rounds of 2D and 3D classification (Figure 2\u2014figure supplement 1) produced an 118,556 particle-containing subset that was used to re-extract using a binning factor of 2 and a box size of 384 \u00d7 384 pixels. Only frames 2 to 20 were used for the final rounds of data processing. Additional 2D and 3D classification, 3D refinement and post-processing using RELION 2.1 produced a final map of the entire complex at 3.3 \u00c5 resolution from 47,482 particles with C4 symmetry imposed (Figure 2C, Figure 2\u2014figure supplements 1 and 2A). Using signal subtraction of the transmembrane region from the particle micrographs and only focusing on the soluble domain using the initial subset of 94,131 particles, followed by 3D classification, 3D refinement of 57,384 particles and postprocessing using RELION, we obtained a map at a resolution of\u00a0~3.0 \u00c5 (Figure 2D, Figure 2\u2014figure supplements 1 and 2B). The overall 4 \u00c5 map of the transmembrane region (Figure 2E, Figure 2\u2014figure supplements 1 and 2C) was obtained by using signal subtraction of the cytosolic domain from the particle micrographs using the initial subset of 94,131 particles, followed by 2D, and then 3D classification, 3D refinement of 65,745 particles and postprocessing using RELION. Local resolution was determined using RESMAP 1.1.4 (Kucukelbir et al., 2014) and local resolution filtering was performed using RELION 2.1.\n\n### Model fitting\n\nA tetrameric model for the Kv chimera was produced from an X-ray structure (PDB entry 2r9r) and used for rigid body fitting in UCSF Chimera (Pettersen et al., 2004). The final pixel size of the map was adjusted to be 0.835 \u00c5 based on the best fit of the X-ray coordinates of the cytosolic domain into the 3 \u00c5 density map. After rigid body fitting of the tetrameric cytosolic and transmembrane domain, initial flexible fitting was performed in COOT (Emsley et al., 2010) by manually going through the entire peptide chain of a single \u03b1\u00a0and \u03b2\u00a0subunit before applying the changes to the other three \u03b1 and \u03b2\u00a0subunits. After a rough fit using COOT, additional real space refinement was performed using Phenix (Adams et al., 2010). Models were subjected to an all-atom structure validation using MolProbity (Chen et al., 2010). Figures were produced using UCSF Chimera.\n",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "ea2dbe5d-b057-451e-acf2-4d9af0bb2e77",
+      "submission_id": "fd3e8d4b-2ec6-4136-9743-04370540c67d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Leon D Islas, Universidad Nacional Aut\u00f3noma de M\u00e9xico Mexico\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.37558.030](https://doi.org/10.7554/eLife.37558.030)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Single-particle cryo-EM structure of a voltage-activated potassium channel in lipid nanodiscs\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Leon D. Islas as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Richard Aldrich as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Fred Sigworth (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript Matthies et al., present an impressive and high-quality cryo-EM structure of the Kv1.2-2.1 paddle chimaera in nanodiscs, which is one of the few cryo-EM structures of Kv channels and is the first with high resolution. Several of the findings are exciting. The authors have refined their structure to an overall resolution of 3.4 Angstroms (\u00c5), although the resolution of the transmembrane domain is only 4.3 \u00c5. At this resolution, the main structural features of the model are almost indistinguishable from those of the structural model of the same protein obtained from X-ray diffraction, which is a nice indication that the crystallographic structure is not grossly distorted by the lack of a membrane. Although at this resolution it is ambiguous to assign side chains and geometry to the model, the authors find that some features around the pore region can be discerned and they speculate about the possible state of their model in relation to C-type inactivation, which is an inactivated state often found in potassium channels, although not well characterized in Kv1.2. One of the features of C-type inactivation in the Shaker channel is that it is highly sensitive to the state of a network of hydrogen bonds between aromatic residues and other residues, particularly acidic ones, that form a stabilizing cuff around the selectivity filter. Mutating some of these residues (in Shaker) accelerate or decelerate the rate of entry into the C-inactivated state(s). In the model presented in this work, the authors find that a critical H-bond between Trp362 and D375 seems to not be present, the distance between residues being 4.5 \u00c5. They also find that another H-bond between Tyr373 and Trp363 is also not present. These structural features would be consistent with the present structure in nanodiscs being in the C-type inactivated state, although other expected structural features, such as a constriction of the external part of the pore are not present.\n\nEssential revisions:\n\n1) The main concern, shared by all three reviewers, is that the low resolution might not allow the correct assignment of rotamers in all important residues and this might lead to an erroneous conclusion about the state of the structure. It is essential that this issue of fitting residues to the densities is dealt with more carefully.\n\n2) It could also be argued that the apparently long distance from the carboxylate of D375 to W362 (Figure 4) could be due to the phenomenon of \"disappearing carboxylates\" that has been argued to arise either from radiation damage or negative electrostatic potential. It would be helpful for the authors to address this issue. One possibility might be for the authors to display other nearby carboxylates (to show that they are visible) or perhaps even to show the density and model of a similar H-bonded pair in a nearby location in the map. Meanwhile, do you have any idea what might be the H-bond partner of D375 in your proposed model?\n\n3) Similarly, the argument that the Y373-W363 H-bond is absent (Figure 4C) depends crucially on the rotameric state chosen for W363. How sure are you of this choice? What about S367, is it also displaced from these residues and not participating in H-bonding?\n\n4) Another point to address is that it is important to show experimentally (or through citations of literature) that perturbations of these interactions do indeed affect C-type inactivation in the chimera channel as the results quoted are for the Shaker K+ channel. There may be differences in the effect of mutations on inactivation in Shaker and Kv1.2 chimeric channel. In this regard, the authors might find interesting a recent preprint: (https://www.biorxiv.org/content/early/2018/05/07/316174) and the abstract: (Gating Properties and Voltage Sensing in Kv1.2 Biophysical Journal, Vol. 102, Issue 3, p531a-532a)\n",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c65c9de6-9447-47b1-9128-47a164c4d2b9",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C1",
+      "claim": "Voltage-activated potassium (Kv) channels open to conduct K+ ions in response to membrane depolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "Voltage-activated potassium (Kv) channels open to conduct K+ ions in response to membrane depolarization, and subsequently enter non-conducting states through distinct mechanisms of inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about Kv channel function, supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "487c6fa2-c33b-4c16-93f9-ac6b7fa35a93",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C2",
+      "claim": "Kv channels subsequently enter non-conducting states through distinct mechanisms of inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Voltage-activated potassium (Kv) channels open to conduct K+ ions in response to membrane depolarization, and subsequently enter non-conducting states through distinct mechanisms of inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about Kv channel inactivation mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "87830295-2d0f-4693-a2f2-ca20492c33e8",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C3",
+      "claim": "X-ray structures of detergent-solubilized Kv channels appear to have captured an open state even though a non-conducting C-type inactivated state would predominate in membranes in the absence of a transmembrane voltage.",
+      "claim_type": "EXPLICIT",
+      "source": "X-ray structures of detergent-solubilized Kv channels appear to have captured an open state even though a non-conducting C-type inactivated state would predominate in membranes in the absence of a transmembrane voltage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison of X-ray structures with expected functional states in membranes.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "95ea9cf8-4ff2-49b6-96ce-aa455303f754",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C4",
+      "claim": "Structures for a voltage-activated ion channel in a lipid bilayer environment have not yet been reported prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "However, structures for a voltage-activated ion channel in a lipid bilayer environment have not yet been reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field prior to this work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "fa014ab4-9291-45ac-933d-533618d27c90",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C5",
+      "claim": "The structure of the Kv1.2\u20132.1 paddle chimera channel reconstituted into lipid nanodiscs was determined using single-particle cryo-electron microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report the structure of the Kv1.2\u20132.1 paddle chimera channel reconstituted into lipid nanodiscs using single-particle cryo-electron microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary experimental finding of the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "8b166cde-462f-48dc-8983-f77c454bbf60",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C6",
+      "claim": "The resolution of the cryo-EM structure is ~3 \u00c5 for the cytosolic domain.",
+      "claim_type": "EXPLICIT",
+      "source": "At a resolution of ~3 \u00c5 for the cytosolic domain and ~4 \u00c5 for the transmembrane domain, the structure determined in nanodiscs is similar to the previously determined X-ray structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement from the cryo-EM data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "2ba0cf95-fe1d-41db-a4ed-6be3b19f059b",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C7",
+      "claim": "The resolution of the cryo-EM structure is ~4 \u00c5 for the transmembrane domain.",
+      "claim_type": "EXPLICIT",
+      "source": "At a resolution of ~3 \u00c5 for the cytosolic domain and ~4 \u00c5 for the transmembrane domain, the structure determined in nanodiscs is similar to the previously determined X-ray structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement from the cryo-EM data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "6be76dbd-0b28-401e-9c5f-743a397ff2c3",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C8",
+      "claim": "The structure determined in nanodiscs is similar to the previously determined X-ray structure.",
+      "claim_type": "EXPLICIT",
+      "source": "At a resolution of ~3 \u00c5 for the cytosolic domain and ~4 \u00c5 for the transmembrane domain, the structure determined in nanodiscs is similar to the previously determined X-ray structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural comparison between the cryo-EM and X-ray structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "e97561ec-dfee-45a0-b28a-6a870b805778",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C9",
+      "claim": "Large differences in structure between detergent and lipid bilayer environments are unlikely.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings show that large differences in structure between detergent and lipid bilayer environments are unlikely, and enable us to propose possible structural mechanisms for C-type inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the similarity between the cryo-EM structure in nanodiscs and the X-ray structure in detergent.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "80ae6a41-062e-4c0d-a531-e31dc5b814af",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C10",
+      "claim": "Kv channels are critical for electrical signaling in neurons and endocrine cells, as well as muscle contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Voltage-activated potassium (Kv) channels open in response to membrane depolarization to conduct K+ ions, a process that is critical for electrical signaling in neurons and endocrine cells, as well as muscle contraction (Bocksteins, 2016; Jan and Jan, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Kv channel function, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "022353ad-e6aa-4ce0-be08-2d73219f66a9",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C11",
+      "claim": "Kv channels contain voltage-sensing domains that activate with membrane depolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "Kv channels contain voltage-sensing domains that activate with membrane depolarization, and a central pore domain that opens to conduct K+ ions with high selectivity (Bezanilla, 2008; Swartz, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural and functional knowledge about Kv channels, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "64411c3f-a1fb-49a2-8ff0-cc4a5d0da221",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C12",
+      "claim": "Kv channels contain a central pore domain that opens to conduct K+ ions with high selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Kv channels contain voltage-sensing domains that activate with membrane depolarization, and a central pore domain that opens to conduct K+ ions with high selectivity (Bezanilla, 2008; Swartz, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural and functional knowledge about Kv channels, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "6089ba69-8a0e-415f-9495-e9e4bf832613",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C13",
+      "claim": "Most Kv channels enter non-conducting states through distinct mechanisms of inactivation in the continual presence of membrane depolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "In the continual presence of membrane depolarization, most Kv channels subsequently enter non-conducting states through distinct mechanisms of inactivation (Hoshi et al., 1991; Yellen, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Kv channel behavior, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "2b4a38a9-ea51-429b-8f9b-24968eac1f22",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C14",
+      "claim": "The Shaker Kv channel rapidly (msec) enters the N-type inactivated state after opening in response to membrane depolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Shaker Kv channel, for example, opening of the channel in response to membrane depolarization is only transient because the channel rapidly (msec) enters the N-type inactivated state (Timpe et al., 1988; Zagotta et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Shaker channel inactivation kinetics, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "a512507f-a588-4b81-b69b-b840a3648569",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C15",
+      "claim": "N-type inactivation occurs through a ball-and-chain mechanism wherein the amino-terminal region of the channel plugs the internal pore once it opens.",
+      "claim_type": "EXPLICIT",
+      "source": "N-type inactivation occurs through a ball-and-chain mechanism wherein the amino-terminal region of the channel plugs the internal pore once it opens in response to membrane depolarization (Demo and Yellen, 1991; Hoshi et al., 1990; Venkataraman et al., 2014; Zagotta et al., 1990; Zhou et al., 2001a2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established mechanistic knowledge about N-type inactivation, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "77469efd-5ea9-4955-a622-75e7e7ebf846",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C16",
+      "claim": "Shaker channels lacking the N-terminal region can still inactivate on a slower timescale (sec) through C-type inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Shaker channels lacking this N-terminal region can still inactivate on a slower timescale (sec) through a process termed slow or C-type inactivation (Hoshi et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C-type inactivation, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "888ab992-a938-4a66-96bb-2a31c36f515a",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C17",
+      "claim": "C-type inactivation regulates the availability of functional Kv channels, modulating the firing of action potentials in neurons and cardiac muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "C-type inactivation regulates the availability of functional Kv channels, modulating the firing of action potentials in neurons and cardiac muscle (Hoshi and Armstrong, 2013; Kurata and Fedida, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the physiological role of C-type inactivation, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "33117df1-ac73-4b2d-8d5c-0a3a366cf3ef",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C18",
+      "claim": "In the hERG Kv channel, rapid entry into the C-type inactivated state underlies the unique inwardly-rectifying properties critical for shaping the cardiac action potential.",
+      "claim_type": "EXPLICIT",
+      "source": "In the human ether-a-go-go related gene (hERG) Kv channel, rapid entry of the channel into the C-type inactivated state underlies the unique inwardly-rectifying properties of the channel that are critical for shaping the cardiac action potential (Keating and Sanguinetti, 2001; Smith et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about hERG channel function, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "6660243f-069d-4fef-8dc1-0658f34c7cbd",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C19",
+      "claim": "C-type inactivation in Kv channels is thought to involve a conformational change in the selectivity filter at the external end of the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "Although C-type inactivation in Kv channels is thought to involve a conformational change in the selectivity filter at the external end of the pore (Armstrong and Hoshi, 2014; Choi et al., 1991; Hoshi and Armstrong, 2013; Hoshi et al., 1991; Kurata and Fedida, 2006; Liu et al., 1996; L\u00f3pez-Barneo et al., 1993; Perozo et al., 1993; Yang et al., 1997, 2002; Yellen et al., 1994), its mechanism remains elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prevailing hypothesis in the field, supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "0c85c2b0-d701-4532-92bf-99a688a4a910",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C20",
+      "claim": "The mechanism of C-type inactivation remains elusive.",
+      "claim_type": "EXPLICIT",
+      "source": "Although C-type inactivation in Kv channels is thought to involve a conformational change in the selectivity filter at the external end of the pore (Armstrong and Hoshi, 2014; Choi et al., 1991; Hoshi and Armstrong, 2013; Hoshi et al., 1991; Kurata and Fedida, 2006; Liu et al., 1996; L\u00f3pez-Barneo et al., 1993; Perozo et al., 1993; Yang et al., 1997, 2002; Yellen et al., 1994), its mechanism remains elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "8fe3ab97-9a20-4a5a-a9f0-893dc09fb6a4",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C21",
+      "claim": "X-ray structures of KcsA mutants that stabilize open and inactivated states have been solved.",
+      "claim_type": "EXPLICIT",
+      "source": "In the KcsA K+ channel, a K+ selective channel that lacks voltage-sensing domains and whose pore is related to that domain in Kv channels, X-ray structures of mutants that stabilize open and inactivated states have been solved (Cuello et al., 2017, 2010), but the extent to which these inform on the mechanism of slow inactivation in KcsA or Kv channels has been controversial (Devaraneni et al., 2013; Hoshi and Armstrong, 2013; Matulef et al., 2013; Valiyaveetil, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about published structures, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "c2627596-7c87-4602-98d6-2fd109414ef6",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C22",
+      "claim": "The extent to which KcsA structures inform on the mechanism of slow inactivation in KcsA or Kv channels has been controversial.",
+      "claim_type": "EXPLICIT",
+      "source": "In the KcsA K+ channel, a K+ selective channel that lacks voltage-sensing domains and whose pore is related to that domain in Kv channels, X-ray structures of mutants that stabilize open and inactivated states have been solved (Cuello et al., 2017, 2010), but the extent to which these inform on the mechanism of slow inactivation in KcsA or Kv channels has been controversial (Devaraneni et al., 2013; Hoshi and Armstrong, 2013; Matulef et al., 2013; Valiyaveetil, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ongoing scientific debate, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "3f7bc49d-3ae7-425d-9c48-8c1c4b0e089b",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C23",
+      "claim": "The X-ray crystal structure of Kv1.2 and the Kv1.2\u20132.1 chimera serve as a structural framework for understanding the gating mechanism of Kv channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The X-ray crystal structure of Kv1.2, a mammalian homolog of the Shaker Kv channel, and those of the Kv1.2\u20132.1 chimera containing the S3b-S4 paddle motif from Kv2.1 (Kv chimera), serve as a structural framework for understanding the gating mechanism of Kv channels (Long et al., 2005a, 2005b, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the importance of these structures, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "a06b9d28-3476-4b7b-99d9-5edb09ab1411",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C24",
+      "claim": "The 2.4 \u00c5 X-ray structure of the detergent solubilized Kv chimera has activated voltage sensors, an open internal pore, and a selectivity filter with K+ ions occupying all four ion binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The 2.4 \u00c5 X-ray structure of the detergent solubilized Kv chimera solved in the presence of lipids has activated voltage sensors, an open internal pore, and a selectivity filter with K+ ions occupying all four ion binding sites, suggesting that it represents an open conducting conformation (Long et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the X-ray structure, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "38c95e42-5dc6-46ee-807b-56bb486e5744",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C25",
+      "claim": "The X-ray structure of the Kv chimera is suggested to represent an open conducting conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "The 2.4 \u00c5 X-ray structure of the detergent solubilized Kv chimera solved in the presence of lipids has activated voltage sensors, an open internal pore, and a selectivity filter with K+ ions occupying all four ion binding sites, suggesting that it represents an open conducting conformation (Long et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the X-ray structure, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "357aae89-e708-4726-93b3-b876f739ee43",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C26",
+      "claim": "The presence of an open conducting state in the crystal structure was unanticipated because the Kv chimera C-type inactivates at 0 mV when reconstituted into lipid membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of an open conducting state in the crystal structure was unanticipated because the Kv chimera C-type inactivates at 0 mV when reconstituted into lipid membranes (Tao and MacKinnon, 2008) (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of the X-ray structure with functional data from lipid bilayer recordings, supported by citation and figure reference.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "c6cac7d9-41a3-409c-8d81-da2980bd29c0",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C27",
+      "claim": "Lu and colleagues recently solved the X-ray structure of a non-conducting mutant of the Kv chimera.",
+      "claim_type": "EXPLICIT",
+      "source": "To characterize the non-conducting C-type inactivated state, Lu and colleagues recently solved the X-ray structure of a non-conducting mutant of the Kv chimera (Pau et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a published structure, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "87f9d6e9-3b9f-4370-b657-64259cb09684",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C28",
+      "claim": "The crystals of the non-conducting mutant contained two molecules in the asymmetric unit, one showing subtle changes to the selectivity filter structure and ion occupancies, while the second was indistinguishable from the open conducting state.",
+      "claim_type": "EXPLICIT",
+      "source": "Their crystals contained two molecules in the asymmetric unit, one of which showed subtle changes to the structure and ion occupancies of the selectivity filter, while the second was indistinguishable from the Kv chimera open conducting state even though this mutant channel is functionally non-conducting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of findings from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "b0de62bd-26ce-4b55-813c-84f76a3a4f53",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C29",
+      "claim": "The open and inactivated states are either very similar, or the open state is preferentially stabilized by some aspect of the crystal environment.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the open and inactivated states are either very similar, or that the open state is preferentially stabilized by some aspect of the crystal environment, such as crystal contacts and/or the detergent and lipid molecules surrounding each channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural findings from the cited study.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "9dd8cc6d-5d1b-43ef-a95f-54163129d893",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C30",
+      "claim": "The gating properties of Kv channels have been shown to be exquisitely sensitive to the lipid composition and mechanical state of the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the gating properties of Kv channels have been shown to be exquisitely sensitive to the lipid composition and mechanical state of the membrane (Hite et al., 2014; Milescu et al., 2009, 2007; Ramu et al., 2006; Schmidt et al., 2006; Schmidt and MacKinnon, 2008; Xu et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Kv channel behavior, supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "81350366-1474-4af4-9f5a-278b0b39e4f7",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C31",
+      "claim": "Nanodiscs provide a membrane-like environment for membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Nanodiscs are hockey-puck shaped lipid bilayers that provide a membrane-like environment for membrane proteins and have been used for structure determination of other membrane proteins using single-particle cryo-EM (Autzen et al., 2018; Chen et al., 2017; Dang et al., 2017; Efremov et al., 2015; Frauenfeld et al., 2011; Gao et al., 2016; Gatsogiannis et al., 2016; Gogol et al., 2013; Guo et al., 2017; Jin et al., 2017; McGoldrick et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about nanodiscs, supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "dd54ac8a-5d85-47d3-81e3-2b42654dcdd0",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C32",
+      "claim": "Nanodiscs have been used for structure determination of other membrane proteins using single-particle cryo-EM.",
+      "claim_type": "EXPLICIT",
+      "source": "Nanodiscs are hockey-puck shaped lipid bilayers that provide a membrane-like environment for membrane proteins and have been used for structure determination of other membrane proteins using single-particle cryo-EM (Autzen et al., 2018; Chen et al., 2017; Dang et al., 2017; Efremov et al., 2015; Frauenfeld et al., 2011; Gao et al., 2016; Gatsogiannis et al., 2016; Gogol et al., 2013; Guo et al., 2017; Jin et al., 2017; McGoldrick et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the use of nanodiscs in cryo-EM, supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "e04f89de-3e2b-4cd8-884d-2940aede2f51",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C33",
+      "claim": "A typical nanodisc with an embedded membrane protein is composed of a lipid bilayer containing a membrane protein and two membrane scaffold proteins (MSP) that surround the bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "A typical nanodisc with an embedded membrane protein is composed of a lipid bilayer containing a membrane protein and two membrane scaffold proteins (MSP) that surround the bilayer (Denisov and Sligar, 2017; Hagn et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about nanodisc composition, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "e2b65321-ea2c-4391-a4a7-14327e8ce855",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C34",
+      "claim": "The success and yield of nanodisc assemblies critically depend on the ratio between MSP and lipids used for membrane protein reconstitution.",
+      "claim_type": "EXPLICIT",
+      "source": "We first optimized the assembly condition for empty nanodiscs because the success and the yield of nanodisc assemblies critically depend on the ratio between MSP and lipids used for membrane protein reconstitution (Grinkova et al., 2010; Inagaki et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about nanodisc assembly, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "2ebefe29-7bee-4d74-8e50-0f8d4e749b69",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C35",
+      "claim": "The assembly of empty nanodiscs was optimal at a 1:100 molar ratio of MSP and lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Using size-exclusion chromatography to assess nanodisc assembly, we found that the assembly of empty nanodiscs was optimal at a 1:100 molar ratio of MSP and lipids, and that using lower or higher ratios of MSP to lipid resulted in lower yields or formation of large aggregates that elute in the void volume (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from size-exclusion chromatography experiments, shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "73059afc-ea93-41f9-94a0-2e5d21109085",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C36",
+      "claim": "Using lower or higher ratios of MSP to lipid than 1:100 resulted in lower yields or formation of large aggregates that elute in the void volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Using size-exclusion chromatography to assess nanodisc assembly, we found that the assembly of empty nanodiscs was optimal at a 1:100 molar ratio of MSP and lipids, and that using lower or higher ratios of MSP to lipid resulted in lower yields or formation of large aggregates that elute in the void volume (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from size-exclusion chromatography experiments, shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "c4fbb7a6-9515-456f-979f-7062eddc18fe",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C37",
+      "claim": "The purified Kv chimera was functional after reconstitution into planar lipid bilayers.",
+      "claim_type": "EXPLICIT",
+      "source": "We next expressed and purified the \u03b1 and \u03b2 subunits of the Kv chimera as previously described (Long et al., 2005a, 2005b, 2007; Parcej and Eckhardt-Strelau, 2003), and found that the purified channel was functional after reconstitution into planar lipid bilayers (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from planar lipid bilayer recordings, shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "f658d684-3f9c-4445-bbee-c9570e4c0b13",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C38",
+      "claim": "The purified Kv chimera could be reconstituted into nanodiscs using a 1:10:1000 molar ratio of Kv chimera:MSP:lipid.",
+      "claim_type": "EXPLICIT",
+      "source": "The purified Kv chimera could also be reconstituted into nanodiscs using a 1:10:1000 molar ratio of Kv chimera:MSP:lipid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from nanodisc reconstitution experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "7f23ec01-5a78-4d7e-8186-9514fd2dea13",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C39",
+      "claim": "Reconstitution of the Kv chimera at a ratio of 1:10:400 Kv:MSP:lipid increased the yield of nanodiscs containing the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that embedding the Kv chimera into nanodiscs would necessarily displace lipid molecules, we tested a lower ratio of lipid to MSP with a fixed ratio of MSP to Kv chimera, and found that reconstitution of the channel at a ratio of 1:10:400 Kv:MSP:lipid increased the yield of nanodiscs containing the Kv chimera (Figure 1B, blue line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from optimization experiments, shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "eb50627a-f5de-4f10-a7f9-fd8b05bef1a6",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C40",
+      "claim": "The sample showed nicely distributed particles with easily recognizable side views of the channel in negative staining electron microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "The sample showed nicely distributed particles with easily recognizable side views of the channel harboring a rod-like shape for the transmembrane domain surrounded by a lipid nanodisc, and a cone-shaped cytosolic domain protruding from the nanodisc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from negative staining EM experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "f3d2a0b6-8996-4b48-964a-9ab4381230a3",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C41",
+      "claim": "Besides the main species composed of the full complex (\u03b14\u03b24), a small number of complexes missing the \u03b2 subunits (\u03b14) were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the main species composed of the full complex in lipid nanodiscs harboring both \u03b1 and auxiliary \u03b2 subunit (\u03b14\u03b24),a small number of complexes missing the \u03b2 subunits were also identified in the micrographs as well as in individual 2D class averages (\u03b14), indicating some heterogeneity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from negative staining EM and 2D classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "56cd226c-c638-4ac7-9b12-900eb5b347eb",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C42",
+      "claim": "The cytosolic domain protruded from the membrane plane at different angles.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the cytosolic domain protruded from the membrane plane at different angles (Figure 1\u2014figure supplement 2B), most likely due to the flexible, long linkers connecting the T1 domain in the cytosol and the transmembrane domain of the four \u03b1 subunits.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from negative staining EM, shown in Figure 1\u2014figure supplement 2B, with an interpretation about the cause.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "8ad178d7-28e1-45d0-b17e-78e24f0d6480",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C43",
+      "claim": "An initial map of the entire complex (\u03b14\u03b24) was generated with an average resolution of 3.3 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "We initially generated a map of the entire complex (\u03b14\u03b24) and obtained an average resolution of the entire map of 3.3 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from cryo-EM data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "acb7a02f-12a5-4ee3-8fbc-c05223b9126c",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C44",
+      "claim": "The map exhibited a lower local resolution in the transmembrane domain (resolutions of ~4\u20137.5 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the map exhibited a lower local resolution in the transmembrane domain (resolutions of ~4\u20137.5 \u00c5; Figure 2C), likely stemming from the alignment of particles against the cytosolic domain during 3D classification and 3D refinement, and the variability in relative arrangements of the cytosolic and transmembrane domains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from local resolution analysis, shown in Figure 2C, with an interpretation of the cause.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "06372897-1ff7-4364-90cd-b0e20368dbea",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C45",
+      "claim": "The lower local resolution in the transmembrane domain likely stems from the alignment of particles against the cytosolic domain during 3D classification and 3D refinement, and the variability in relative arrangements of the cytosolic and transmembrane domains.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the map exhibited a lower local resolution in the transmembrane domain (resolutions of ~4\u20137.5 \u00c5; Figure 2C), likely stemming from the alignment of particles against the cytosolic domain during 3D classification and 3D refinement, and the variability in relative arrangements of the cytosolic and transmembrane domains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the cause of lower resolution in the transmembrane domain.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "c552d4b1-a9f7-4703-afc4-d69f85dacfe6",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C46",
+      "claim": "Particle subtraction followed by additional classifications and 3D refinement on the cytosolic and transmembrane domain independently resulted in maps with higher local resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "To obtain maps with a higher local resolution, we performed particle subtraction, followed by additional classifications as well as 3D refinement on the cytosolic and transmembrane domain independently (Figure 2D and E, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the data processing strategy and its outcome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "60d665f0-6e8a-417e-9e5d-0ec0aa0f1d1f",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C47",
+      "claim": "The cytosolic domain map showed a resolution of 3 \u00c5 with local higher resolution as high as ~2.5 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The additional two maps showed higher resolution for each domain (3 \u00c5 for the cytosolic domain with local higher resolution as high as ~2.5 \u00c5, and ~4 \u00c5 for the transmembrane region with local higher resolution of up to ~3.0 \u00c5), which we used to build models of the Kv channel (Figure 2\u2014figure supplements 1 and 2; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from focused refinement and local resolution analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "35d02af5-e71f-4b04-9644-412b58dbd6dd",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C48",
+      "claim": "The transmembrane domain map showed a resolution of ~4 \u00c5 with local higher resolution of up to ~3.0 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The additional two maps showed higher resolution for each domain (3 \u00c5 for the cytosolic domain with local higher resolution as high as ~2.5 \u00c5, and ~4 \u00c5 for the transmembrane region with local higher resolution of up to ~3.0 \u00c5), which we used to build models of the Kv channel (Figure 2\u2014figure supplements 1 and 2; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from focused refinement and local resolution analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "7595f17a-09e0-4c22-97e5-d5a35238de43",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C49",
+      "claim": "Three models for the Kv chimera were built: one for the cytosolic domain, another for the transmembrane domain, and a third hybrid model that combines the two models.",
+      "claim_type": "EXPLICIT",
+      "source": "We built three models for the Kv chimera: one for the cytosolic domain, another for the transmembrane domain, and a third hybrid model that combines the two models which fits in the overall 3.3 \u00c5 resolution map of the entire complex (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the model building strategy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "3082aabc-353d-44e7-a4fc-aeb86c4a1e46",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C50",
+      "claim": "For the higher resolution cytosolic domains, cryo-EM densities for most of the side chains were clearly visible.",
+      "claim_type": "EXPLICIT",
+      "source": "For the higher resolution cytosolic domains, cryo-EM densities for most of the side chains were clearly visible (Figure 3\u2014figure supplement 1), we could resolve density from the NADP+ cofactor bound to the \u03b2 subunit (Figure 3\u2014figure supplement 1G) and densities for bound water molecules in areas where local resolution was better than 2.8 \u00c5 (Figure 3\u2014figure supplement 1E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the cryo-EM density maps, shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "9d9620cc-b29c-42f1-aef7-c9375e6ea7ea",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C51",
+      "claim": "Density from the NADP+ cofactor bound to the \u03b2 subunit could be resolved.",
+      "claim_type": "EXPLICIT",
+      "source": "For the higher resolution cytosolic domains, cryo-EM densities for most of the side chains were clearly visible (Figure 3\u2014figure supplement 1), we could resolve density from the NADP+ cofactor bound to the \u03b2 subunit (Figure 3\u2014figure supplement 1G) and densities for bound water molecules in areas where local resolution was better than 2.8 \u00c5 (Figure 3\u2014figure supplement 1E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the cryo-EM density maps, shown in Figure 3\u2014figure supplement 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "349fba5c-152e-42cf-8504-5a3253900b69",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C52",
+      "claim": "Densities for bound water molecules could be resolved in areas where local resolution was better than 2.8 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "For the higher resolution cytosolic domains, cryo-EM densities for most of the side chains were clearly visible (Figure 3\u2014figure supplement 1), we could resolve density from the NADP+ cofactor bound to the \u03b2 subunit (Figure 3\u2014figure supplement 1G) and densities for bound water molecules in areas where local resolution was better than 2.8 \u00c5 (Figure 3\u2014figure supplement 1E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the cryo-EM density maps, shown in Figure 3\u2014figure supplement 1E\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "e29ea865-ab93-4a61-a11c-f03de66c8f35",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C53",
+      "claim": "Comparison of the cryo-EM structure in nanodiscs and the X-ray crystal structure in detergent shows that they are similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the cryo-EM structure in nanodiscs and the X-ray crystal structure in detergent shows that they are similar (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from structural comparison, shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "2c2c748b-7dfc-4226-a940-e46ddfa443c7",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C54",
+      "claim": "There is a slight shift/rotation of the cytosolic region of the \u03b1 subunit and \u03b2 subunit with respect to the transmembrane domain of the \u03b1 subunit when compared to the crystal structure, with the most pronounced changes in the \u03b2 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "We do see a slight shift/rotation of the cytosolic region of the \u03b1 subunit and \u03b2 subunit with respect to the transmembrane domain of the \u03b1 subunit when compared to the crystal structure, with the most pronounced changes in the \u03b2 subunit (Figure 3A,C,D), likely reflecting the lack of contacts between molecules that are present in the crystal of the Kv chimera (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from structural comparison, shown in Figure 3A,C,D, with an interpretation of the cause.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "ccc083f6-63d2-42b9-83e5-92a8ae4ae813",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C55",
+      "claim": "The shift/rotation of the cytosolic region likely reflects the lack of contacts between molecules that are present in the crystal of the Kv chimera.",
+      "claim_type": "EXPLICIT",
+      "source": "We do see a slight shift/rotation of the cytosolic region of the \u03b1 subunit and \u03b2 subunit with respect to the transmembrane domain of the \u03b1 subunit when compared to the crystal structure, with the most pronounced changes in the \u03b2 subunit (Figure 3A,C,D), likely reflecting the lack of contacts between molecules that are present in the crystal of the Kv chimera (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the structural differences, with reference to crystal packing shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "5191e921-40e0-4ddd-8516-f9bb2cfa9c78",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C56",
+      "claim": "Cryo-EM densities for all transmembrane helices (S1-S6) were observed with densities visible for many of the bulky side chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the transmembrane domain exhibits overall lower resolution than the cytosolic domain (Figure 2), we see cryo-EM densities for all transmembrane helices (S1-S6) with densities visible for many of the bulky side chains (Figure 3\u2014figure supplement 3), which enabled us to refine a model for the entire complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the cryo-EM density maps, shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "3c650596-25ef-4eac-8566-f0f5753bed9a",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C57",
+      "claim": "The central pore domain shows higher local resolutions (3\u20134 \u00c5) compared to the peripheral voltage-sensing domains (resolutions of ~4\u20136 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the central pore domain shows higher local resolutions (3\u20134 \u00c5) compared to the peripheral voltage-sensing domains (resolutions of ~4\u20136 \u00c5), with the lowest resolution for the peripheral loops in the latter domain (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from local resolution analysis, shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "8e1c18d7-c65c-4aef-95b7-8dcb2c486bf1",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C58",
+      "claim": "Within the pore domain, densities for most side chains were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the pore domain, we observed densities for most side chains (Figure 3\u2014figure supplement 3, Figure 4), providing confidence in the structural model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the cryo-EM density maps, shown in Figure 3\u2014figure supplement 3 and Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "4006e6b6-b82d-42a4-8847-42f9c8384606",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C59",
+      "claim": "The transmembrane domain only shows minimal structural differences when compared to the crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the transmembrane domain only shows minimal structural differences when compared to the crystal structure (Figures 3 and 4), suggesting that the X-ray structure is representative of the structure of the protein in a membrane environment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from structural comparison, shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "fd184ee8-9017-4d2d-b775-9d0756722998",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C60",
+      "claim": "The X-ray structure is representative of the structure of the protein in a membrane environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the transmembrane domain only shows minimal structural differences when compared to the crystal structure (Figures 3 and 4), suggesting that the X-ray structure is representative of the structure of the protein in a membrane environment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the minimal structural differences observed between the cryo-EM and X-ray structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "be4ddb19-0c98-4204-bc0d-dc6f70037a02",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C61",
+      "claim": "No discernable structural differences were observed between the cryo-EM and X-ray structures at the intracellular end of the pore where the activation gate resides.",
+      "claim_type": "EXPLICIT",
+      "source": "For the intracellular end of the pore where the activation gate resides (del Camino and Yellen, 2001; Holmgren et al., 1998, Holmgren et al., 1997; Webster et al., 2004), we observed no discernable structural differences between the cryo-EM and X-ray structures (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from structural comparison, shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "d8ac6464-75bd-46a2-9364-0f29df181889",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C62",
+      "claim": "The S4-S5 linker is very similar between cryo-EM and X-ray structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The S4-S5 linker that is critical for coupling the voltage-sensing and pore domains is also very similar between cryo-EM and X-ray structures (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from structural comparison, shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "480c11f0-1f2f-4c17-bd33-2cbe97ef59cd",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C63",
+      "claim": "No evidence for significant constriction or dilation of the pore was observed in the external pore region.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the external pore region that has been implicated in C-type inactivation (Armstrong and Hoshi, 2014; Choi et al., 1991; Hoshi and Armstrong, 2013; Hoshi et al., 1991; Liu et al., 1996; L\u00f3pez-Barneo et al., 1993; Yang et al., 1997; Yellen et al., 1994), we see no evidence for significant constriction or dilation of the pore (Figure 4, Figure 5, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from structural analysis, shown in Figure 4, Figure 5, and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "a0f82044-950c-41be-986a-6e2aa241a62b",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C64",
+      "claim": "The cryo-EM structure in a membrane environment implies that the protein adopts an essentially native structure in detergent in the presence of lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the highest resolution X-ray structure of the Kv chimera is at 2.4 \u00c5 resolution (Long et al., 2007), and our cryo-EM structure is at a resolution of ~3 \u00c5 in the cytosolic domain and ~4 \u00c5 in the transmembrane domain, our structure in a membrane environment implies that the protein adopts an essentially native structure in detergent in the presence of lipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the similarity between the cryo-EM and X-ray structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "85115178-f340-4647-b28e-f5f9692cab5a",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C65",
+      "claim": "Only subtle structural changes were detected in the external pore in the selectivity filter of the Kv chimera.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected only subtle structural changes in the external pore in the selectivity filter of the Kv chimera, as well as a small rotation of the cytosolic region of the \u03b1 subunit and the \u03b2 subunit, a region involved in crystal packing in the X-ray structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "7d9d867e-5020-4437-82b2-1c2ef2245b03",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C66",
+      "claim": "A small rotation of the cytosolic region of the \u03b1 subunit and the \u03b2 subunit was detected, a region involved in crystal packing in the X-ray structure.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected only subtle structural changes in the external pore in the selectivity filter of the Kv chimera, as well as a small rotation of the cytosolic region of the \u03b1 subunit and the \u03b2 subunit, a region involved in crystal packing in the X-ray structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "0af47af2-7b0b-4bc0-a88a-d97dcb207d7e",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C67",
+      "claim": "Increasing the external concentration of K+ ions slows C-type inactivation in the Shaker Kv channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Pioneering studies on the Shaker Kv channel point to a critical role of the external pore; increasing the external concentration of K+ ions and externally applied tetraethylammonium (TEA) slow C-type inactivation, and mutants in the external pore have profound effects on the kinetics of C-type inactivation (Armstrong and Hoshi, 2014; Choi et al., 1991; Hoshi and Armstrong, 2013; Hoshi et al., 1991; Kurata and Fedida, 2006; Liu et al., 1996; L\u00f3pez-Barneo et al., 1993; Perozo et al., 1993; Yang et al., 1997, 2002; Yellen et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C-type inactivation, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "1e946e9d-9181-4efc-95c8-ad3d9f539a9e",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C68",
+      "claim": "Externally applied tetraethylammonium (TEA) slows C-type inactivation in the Shaker Kv channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Pioneering studies on the Shaker Kv channel point to a critical role of the external pore; increasing the external concentration of K+ ions and externally applied tetraethylammonium (TEA) slow C-type inactivation, and mutants in the external pore have profound effects on the kinetics of C-type inactivation (Armstrong and Hoshi, 2014; Choi et al., 1991; Hoshi and Armstrong, 2013; Hoshi et al., 1991; Kurata and Fedida, 2006; Liu et al., 1996; L\u00f3pez-Barneo et al., 1993; Perozo et al., 1993; Yang et al., 1997, 2002; Yellen et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C-type inactivation, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "d10e5e4d-33ab-4f08-a173-f059d22f0512",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C69",
+      "claim": "Mutants in the external pore have profound effects on the kinetics of C-type inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Pioneering studies on the Shaker Kv channel point to a critical role of the external pore; increasing the external concentration of K+ ions and externally applied tetraethylammonium (TEA) slow C-type inactivation, and mutants in the external pore have profound effects on the kinetics of C-type inactivation (Armstrong and Hoshi, 2014; Choi et al., 1991; Hoshi and Armstrong, 2013; Hoshi et al., 1991; Kurata and Fedida, 2006; Liu et al., 1996; L\u00f3pez-Barneo et al., 1993; Perozo et al., 1993; Yang et al., 1997, 2002; Yellen et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C-type inactivation, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "2d28edc2-56ea-4da5-9760-f207c8327570",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C70",
+      "claim": "The T449C mutation in the external pore creates a stable Cd2+ bridge between subunits that favors the C-type inactivated state.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the T449C mutation in the external pore creates a stable Cd2+ bridge between subunits that favors the C-type inactivated state (Yellen et al., 1994), leading to the proposal that the selectivity filter constricts during C-type inactivation (Choi et al., 1991; Yellen et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C-type inactivation, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "e3040e56-965b-4a20-a30a-6e011c64848f",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C71",
+      "claim": "It has been proposed that the selectivity filter constricts during C-type inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the T449C mutation in the external pore creates a stable Cd2+ bridge between subunits that favors the C-type inactivated state (Yellen et al., 1994), leading to the proposal that the selectivity filter constricts during C-type inactivation (Choi et al., 1991; Yellen et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis in the field, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "ac29d118-5b27-4f40-9560-ac3903b284d0",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C72",
+      "claim": "It has been proposed that the external pore dilates during C-type inactivation based on the finding that C-type inactivated Kv channels can conduct Na+ and larger cations when K+ is removed.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been proposed that the external pore dilates during C-type inactivation based on the finding that C-type inactivated Kv channels can conduct Na+ and larger cations when K+ is removed (Hoshi and Armstrong, 2013; Korn and Ikeda, 1995; Loboda et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis in the field, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "1f8c9119-00d6-47c1-b47c-6c3c5b3e98ee",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C73",
+      "claim": "The cryo-EM structure of the Kv chimera in nanodiscs suggests that the structural changes during C-type inactivation are likely not large, and would be compatible with very small movements on the scale <2 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Our cryo-EM structure of the Kv chimera in nanodiscs suggests that the structural changes during C-type inactivation are likely not large, and would be compatible with very small movements on the scale <2 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "e5fe42ed-0354-487c-aa80-55e9f1913e30",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C74",
+      "claim": "It remains possible that the findings are compatible with earlier suggestions that inactivation involves the breakage of a critical hydrogen bond between D375 in the P-loop and W362 in the pore helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the resolution of our cryo-EM structure limits the extent to which we could unambiguously identify the structural changes that occur with C-type inactivation, it remains possible that our findings are compatible with earlier suggestions that inactivation involves the breakage of a critical hydrogen bond between D375 in the P-loop and W362 in the pore helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the structural findings and prior hypotheses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "d98ec469-0ac1-4673-8fe7-7d06968d0ed9",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C75",
+      "claim": "Hydrogen bonding between D447 and W434 in the Shaker Kv channel (D375 and W362 in Kv chimera, respectively) has been shown to prevent C-type inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "The functional evidence for a critical role of this hydrogen bond in stabilizing a conducting state of the filter includes both gain- and loss-of-function experiments employing conventional and unnatural amino acid mutagenesis (Pless et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the role of this hydrogen bond, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "ff4e5da3-2e5a-4ed8-a21d-ac28ecba022a",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C76",
+      "claim": "Mutation of D447 and W434 profoundly speeds C-type inactivation in the Shaker Kv channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of these residues profoundly speeds C-type inactivation in the Shaker Kv channel, strengthening the bond by incorporating fluorinated Trp slows C-type inactivation and weakening the bond by incorporating 2-amino-3-indol-1-yl-propionic acid speeds inactivation (Lueck et al., 2016; Perozo et al., 1993; Pless et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the effects of mutations, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "6f76b788-2ec2-4bf6-b1ac-a62bcc040a94",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C77",
+      "claim": "Strengthening the bond between D447 and W434 by incorporating fluorinated Trp slows C-type inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of these residues profoundly speeds C-type inactivation in the Shaker Kv channel, strengthening the bond by incorporating fluorinated Trp slows C-type inactivation and weakening the bond by incorporating 2-amino-3-indol-1-yl-propionic acid speeds inactivation (Lueck et al., 2016; Perozo et al., 1993; Pless et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the effects of unnatural amino acid substitutions, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "40b830f1-123f-46ee-8496-9e094b3a5450",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C78",
+      "claim": "Weakening the bond between D447 and W434 by incorporating 2-amino-3-indol-1-yl-propionic acid speeds inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of these residues profoundly speeds C-type inactivation in the Shaker Kv channel, strengthening the bond by incorporating fluorinated Trp slows C-type inactivation and weakening the bond by incorporating 2-amino-3-indol-1-yl-propionic acid speeds inactivation (Lueck et al., 2016; Perozo et al., 1993; Pless et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the effects of unnatural amino acid substitutions, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "5dd142dc-ef5f-4a72-b56d-d7b6f9dd70c5",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C79",
+      "claim": "Mutation of W366 in the Kv1.2 channel speeds C-type inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of W366 in the Kv1.2 channel, the equivalent of W434 in Shaker, also speed C-type inactivation, albeit more modestly compared to Shaker, and both external K+ and TEA slow C-type inactivation in Kv1.2 (Cordero-Morales et al., 2011; Ishida, 2014), suggesting that the mechanisms of inactivation are similar between these Kv channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Kv1.2 inactivation, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "a1a40d74-34fe-4f19-96a8-56d45ca709ca",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C80",
+      "claim": "Both external K+ and TEA slow C-type inactivation in Kv1.2.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of W366 in the Kv1.2 channel, the equivalent of W434 in Shaker, also speed C-type inactivation, albeit more modestly compared to Shaker, and both external K+ and TEA slow C-type inactivation in Kv1.2 (Cordero-Morales et al., 2011; Ishida, 2014), suggesting that the mechanisms of inactivation are similar between these Kv channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Kv1.2 inactivation, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "9ceb57b1-1b1d-49c3-bc0b-6f1b642df3b9",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C81",
+      "claim": "The mechanisms of inactivation are similar between Shaker and Kv1.2 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of W366 in the Kv1.2 channel, the equivalent of W434 in Shaker, also speed C-type inactivation, albeit more modestly compared to Shaker, and both external K+ and TEA slow C-type inactivation in Kv1.2 (Cordero-Morales et al., 2011; Ishida, 2014), suggesting that the mechanisms of inactivation are similar between these Kv channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the similarity of functional effects, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "f8071615-785e-4e02-8f36-2d3ddfd80520",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C82",
+      "claim": "Evidence for the hydrogen bond between D375 and W362 is clearly seen in all previous X-ray structures of the Kv chimera and KcsA.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence for this hydrogen bond is clearly seen in all previous X-ray structures of the Kv chimera (Banerjee et al., 2013; Long et al., 2007; Pau et al., 2017; Tao et al., 2010) and KcsA (Cuello et al., 2017, 2010; Devaraneni et al., 2013; Matulef et al., 2013; Valiyaveetil, 2017; Valiyaveetil et al., 2006; Zhou et al., 2001b) (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about prior structural data, supported by citations and shown in Figure 4B.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "a32dcf36-cffd-4899-81f4-53c8515b2934",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C83",
+      "claim": "The structure determined by cryo-EM is potentially consistent with the presence of H-bonding between D375 and W362.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure that we have determined by cryo-EM is also potentially consistent with the presence of H-bonding between D375 and W362 (Figure 4C), similar to that reported in the X-ray structure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the cryo-EM structure, shown in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "998f5b99-241a-4d0b-980f-745937008f24",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C84",
+      "claim": "It is possible that the Asp residue can adopt multiple rotameric positions, and that the loss of H-bonding interaction may account for the mechanism of inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is also possible that the Asp residue can adopt multiple rotameric positions, and that the loss of this H-bonding interaction may well account for the mechanism of inactivation, as proposed previously (Pless et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the structural findings and prior hypotheses.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "3840b743-b0d3-4690-9242-97e3132c3b7d",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C85",
+      "claim": "Sidechain density for D375 is weak compared to other nearby residues, including W362, Y373, M376 and V377.",
+      "claim_type": "EXPLICIT",
+      "source": "In our structure of the Kv chimera, sidechain density for D375 (equivalent to D447 in Shaker) is weak compared to other nearby residues, including W362, Y373, M376 and V377 (Figure 4A,C), raising the possibility that the critical hydrogen bond between D375 in the P-loop and W362 in the pore helix may be broken (Figure 4A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the cryo-EM density maps, shown in Figure 4A,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "615f3e30-3d40-4200-8844-c8d338ed47c5",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C86",
+      "claim": "The weak sidechain density for D375 raises the possibility that the critical hydrogen bond between D375 and W362 may be broken.",
+      "claim_type": "EXPLICIT",
+      "source": "In our structure of the Kv chimera, sidechain density for D375 (equivalent to D447 in Shaker) is weak compared to other nearby residues, including W362, Y373, M376 and V377 (Figure 4A,C), raising the possibility that the critical hydrogen bond between D375 in the P-loop and W362 in the pore helix may be broken (Figure 4A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculation based on the weak density observed in the cryo-EM maps.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "03364c57-5154-4609-9a71-3be95a7c7b88",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C87",
+      "claim": "Substoichiometric ion occupancy of the selectivity filter was found in the cryo-EM maps.",
+      "claim_type": "EXPLICIT",
+      "source": "A second piece of evidence that the Kv chimera may be C-type inactivated is that we find substoichiometric ion occupancy of the selectivity filter in our maps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the cryo-EM density maps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "5cd99b00-72c2-45c6-9a5d-ba3f67b9bd7f",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C88",
+      "claim": "Processing different subsets of the data resulted in density maps where ion densities were absent in different positions.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that processing different subsets of the data, containing different constellations of particles resulted in density maps where ion densities were absent in different positions (Figure 5A,B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from data processing, shown in Figure 5A,B,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "798d4575-1de1-40b0-9f9a-a51f898062e2",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C89",
+      "claim": "In the final refined map, the ion density is absent in the S2 position.",
+      "claim_type": "EXPLICIT",
+      "source": "In the final refined map, which is the one with the highest resolution in the transmembrane region, the ion density is absent in the S2 position (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the final cryo-EM map, shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "43fd852c-f1b7-4ef3-ac51-5ba035329573",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C90",
+      "claim": "In the X-ray structure, all four ion sites exhibit comparable occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the X-ray structure, all four ion sites exhibit comparable occupancy (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the X-ray structure, shown in Figure 5C.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "0ce2c712-4047-4699-959a-08918cc03396",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C91",
+      "claim": "Ion interactions with the selectivity filter are likely perturbed for the Kv chimera in a lipid bilayer environment as compared to the environment of the crystal lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, our results suggest that ion interactions with the selectivity filter are likely perturbed for the Kv chimera in a lipid bilayer environment as compared to the environment of the crystal lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the differences in ion occupancy between the cryo-EM and X-ray structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "281be224-f829-4667-87aa-a516465b688a",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C92",
+      "claim": "A recent X-ray structure of a non-conducting mutant of the Kv chimera reported changes in occupancy of the S1 site in the filter without disruption of the hydrogen bond networks.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent X-ray structure of a non-conducting mutant of the Kv chimera reported changes in occupancy of the S1 site in the filter without disruption of the hydrogen bond networks discussed above (Pau et al., 2017), suggesting that there may be multiple structural mechanisms of slow inactivation in the Kv chimera.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a published structure, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "653a6a84-6958-4c83-820e-22a4762bcd8a",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C93",
+      "claim": "There may be multiple structural mechanisms of slow inactivation in the Kv chimera.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent X-ray structure of a non-conducting mutant of the Kv chimera reported changes in occupancy of the S1 site in the filter without disruption of the hydrogen bond networks discussed above (Pau et al., 2017), suggesting that there may be multiple structural mechanisms of slow inactivation in the Kv chimera.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings from a cited study.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "0e83dd00-7865-4c7e-a6b2-7b4907ad3f36",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C94",
+      "claim": "Recent structures of the hERG Kv channel have raised the possibility of small structural changes underlying inactivation in that channel, including a role for F627.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent structures of the hERG Kv channel have raised the possibility of small structural changes underlying inactivation in that channel, including a role for F627, a residue equivalent to Y373 in the Kv chimera (Wang and MacKinnon, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about published structures, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "69c15d9d-9db1-41af-9c17-e996b500bd37",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C95",
+      "claim": "Slow inactivation in KcsA becomes slower as the concentration of external K+ is raised.",
+      "claim_type": "EXPLICIT",
+      "source": "Slow inactivation in KcsA becomes slower as the concentration of external K+ is raised (Chakrapani et al., 2007), and introduction of Cys at Y82, the equivalent of T449 in the Shaker Kv channel, generates a Cd2+ bridge that favors the inactivated state (Raghuraman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about KcsA inactivation, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "e365a549-59ab-4c7f-8459-3ab942abacc4",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C96",
+      "claim": "Introduction of Cys at Y82 in KcsA generates a Cd2+ bridge that favors the inactivated state.",
+      "claim_type": "EXPLICIT",
+      "source": "Slow inactivation in KcsA becomes slower as the concentration of external K+ is raised (Chakrapani et al., 2007), and introduction of Cys at Y82, the equivalent of T449 in the Shaker Kv channel, generates a Cd2+ bridge that favors the inactivated state (Raghuraman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about KcsA inactivation, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "ac4403fa-848c-4b04-9c73-a7fd22f25a0e",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C97",
+      "claim": "Mutants in the external pore of KcsA either speed (Y82A) or effectively remove (E71A) slow inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, mutants in the external pore of KcsA either speed (Y82A) or effectively remove (E71A) slow inactivation (Cuello et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about KcsA mutants, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "aa78efd3-654c-4c58-b388-1d4dd2547cdc",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C98",
+      "claim": "A recent X-ray structure of the Y82A mutant of KcsA suggests that inactivation involves a 2.6 \u00c5 constriction at G77 within the selectivity filter, leading to disruption of ion binding sites and water penetration behind the filter.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent X-ray structure of the rapidly inactivating Y82A mutant of KcsA with the intracellular gate stabilized in the open state suggests that inactivation in this mutant involves a 2.6 \u00c5 constriction at G77 within the selectivity filter, leading to disruption of ion binding sites within the filter and water penetration behind the filter (Cuello et al., 2017) (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about a published structure, supported by citation and shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "2cbece45-4126-447a-9bb2-72270dcb065e",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C99",
+      "claim": "The D-Ala mutant at the G77 position in KcsA can still slow inactivate even though the mutation would be expected to prevent constriction at this position.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies have shown that the D-Ala mutant at the G77 position in KcsA can still slow inactivate even though the mutation would be expected to prevent constriction at this position within the filter (Devaraneni et al., 2013), suggesting that KcsA can inactivate without constriction at G77 within the filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about KcsA mutants, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "c206eaae-f9a7-4851-a648-a75e37faa0c0",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C100",
+      "claim": "KcsA can inactivate without constriction at G77 within the filter.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies have shown that the D-Ala mutant at the G77 position in KcsA can still slow inactivate even though the mutation would be expected to prevent constriction at this position within the filter (Devaraneni et al., 2013), suggesting that KcsA can inactivate without constriction at G77 within the filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the findings from a cited study.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "27f0e11e-1225-4a50-9ac6-4b8a5615c376",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C101",
+      "claim": "The filter of KcsA can likely undergo multiple types of structural changes that lead to alterations in ion binding to the filter and a decrease in ion conduction.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall message from these studies is that the filter of KcsA can likely undergo multiple types of structural changes that lead to alterations in ion binding to the filter and a decrease in ion conduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the collective findings from multiple studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "d940791b-4c79-4fdf-a685-f0d6d50409bd",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C102",
+      "claim": "The C\u03b1 of G372 in the filter fits better in the cryo-EM density without constriction of the filter.",
+      "claim_type": "EXPLICIT",
+      "source": "In our cryo-EM structure, it appears that the C\u03b1 of G372 in the filter fits better in the cryo-EM density without constriction of the filter (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from model fitting to the cryo-EM density, shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "a97d69c2-526d-40c7-874c-d0ce4da6a82b",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C103",
+      "claim": "The key hydrogen bond between D375 and W362 is preserved in all the KcsA structures that have alterations in ion occupancy of the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also interesting that the key hydrogen bond between D375 and W362 that we highlight in the Kv chimera is preserved in all the KcsA structures that have alterations in ion occupancy of the selectivity filter, and mutants of the equivalent Trp in KcsA (W67F) slow rather than speed inactivation (Cordero-Morales et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about published structures and functional data, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "965df0c9-b8fd-40a2-9bb8-ac3565ef1d76",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C104",
+      "claim": "Mutants of the equivalent Trp in KcsA (W67F) slow rather than speed inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also interesting that the key hydrogen bond between D375 and W362 that we highlight in the Kv chimera is preserved in all the KcsA structures that have alterations in ion occupancy of the selectivity filter, and mutants of the equivalent Trp in KcsA (W67F) slow rather than speed inactivation (Cordero-Morales et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about KcsA mutants, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "bb78a7bb-5451-484d-958d-c970c2d40019",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C105",
+      "claim": "The detailed mechanisms of inactivation in the Kv chimera and KcsA may be distinct.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results suggest that the detailed mechanisms of inactivation in the Kv chimera and KcsA may be distinct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the differences in structural and functional findings between the Kv chimera and KcsA.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "a507b35d-090d-4bbe-a993-cddf85f17861",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C106",
+      "claim": "The selectivity filters of the Kv chimera and KcsA can be rendered non-conducting by mechanisms that are distinct for different mutants of the two channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The results discussed above for both the Kv chimera and KcsA suggest that the selectivity filters of these channels can be rendered non-conducting by mechanisms that are distinct for different mutants of the two channels, and that the detailed structural mechanism may not be generalizable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the collective findings from the Kv chimera and KcsA studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "adc0b58f-6801-4369-9510-c7678d6db128",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C107",
+      "claim": "The detailed structural mechanism of inactivation may not be generalizable.",
+      "claim_type": "EXPLICIT",
+      "source": "The results discussed above for both the Kv chimera and KcsA suggest that the selectivity filters of these channels can be rendered non-conducting by mechanisms that are distinct for different mutants of the two channels, and that the detailed structural mechanism may not be generalizable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the collective findings from the Kv chimera and KcsA studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "a2483b8f-680a-423d-8ce1-779a929cf711",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C108",
+      "claim": "It will be important to assess whether higher resolutions can be achieved in the transmembrane domain of the Kv chimera in a membrane environment.",
+      "claim_type": "EXPLICIT",
+      "source": "It will be important to assess whether higher resolutions can be achieved in the transmembrane domain of the Kv chimera in a membrane environment since these conditions seem to favor the C-type inactivated state without the need for mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "3bd7643f-d71f-4fb2-adea-6d115cdfb960",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C109",
+      "claim": "Membrane environment conditions seem to favor the C-type inactivated state without the need for mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "It will be important to assess whether higher resolutions can be achieved in the transmembrane domain of the Kv chimera in a membrane environment since these conditions seem to favor the C-type inactivated state without the need for mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the functional behavior of the Kv chimera in lipid bilayers.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "1cecf4df-083d-47b0-87d5-b6362797429b",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C110",
+      "claim": "It may be possible to solve structures of voltage-activated ion channels with voltage-sensing domains in a resting state, and with internal pores that are closed.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results also suggest that it may be possible to solve structures of voltage-activated ion channels with voltage-sensing domains in a resting state, and with internal pores that are closed, to unravel the mechanisms of voltage sensing and voltage-dependent gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future research possibilities based on the success of this study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "cc91c2c5-fe66-4a4b-be55-876899b9c44d",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C111",
+      "claim": "The Kv chimera was produced in Pichia pastoris.",
+      "claim_type": "EXPLICIT",
+      "source": "The Kv chimera was produced in Pichia pastoris as previously described (Long et al., 2007; Parcej and Eckhardt-Strelau, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "3e7f526b-c6b6-4cf8-80b5-a56cdb060f85",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C112",
+      "claim": "Breaking the cells under cryogenic temperature using a ball mill was critical for obtaining tetrameric Kv channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Breaking the cells under cryogenic temperature using a ball mill was critical for obtaining tetrameric Kv channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "08e0ac6d-4971-4583-beb2-23c8fdd40bdf",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C113",
+      "claim": "Using fresh Kv chimera (within 1\u20132 hr from the collection of fractions from size exclusion purification) for nanodisc assembly was critical for reconstitution into nanodisc.",
+      "claim_type": "EXPLICIT",
+      "source": "Using fresh Kv chimera (within 1\u20132 hr from the collection of fractions from size exclusion purification) for nanodisc assembly was critical for reconstitution into nanodisc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "bde55676-81ae-48b5-8eab-4b2b6c3654ea",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C114",
+      "claim": "Compared to regular QF grids, the movement was reduced significantly when using either the 2 nm carbon layer or the gold grids.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the regular QF grids, the movement was reduced significantly when using either the 2 nm carbon layer or the gold grids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from drift analysis of different grid types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "61467d80-d3d1-4088-a2c7-07e6d83eb7e4",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "claim_id": "C115",
+      "claim": "The final pixel size of the map was adjusted to be 0.835 \u00c5 based on the best fit of the X-ray coordinates of the cytosolic domain into the 3 \u00c5 density map.",
+      "claim_type": "EXPLICIT",
+      "source": "The final pixel size of the map was adjusted to be 0.835 \u00c5 based on the best fit of the X-ray coordinates of the cytosolic domain into the 3 \u00c5 density map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model fitting procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "43f082dd-d18a-45b5-9bda-768239f38556",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors successfully determined the cryo-EM structure of the Kv1.2-2.1 paddle chimera channel reconstituted into lipid nanodiscs at resolutions of ~3 \u00c5 for the cytosolic domain and ~4 \u00c5 for the transmembrane domain. This required optimization of nanodisc assembly conditions, protein purification protocols, and cryo-EM data collection strategies including the use of gold grids to reduce beam-induced movement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claims collectively describe a complete and internally consistent workflow from protein expression through structure determination. The reported resolutions are supported by FSC curves (C43, C47, C48), the optimization steps are documented with experimental data (C35, C36, C39, C114), and the functional validation of the purified protein is shown (C37). The methodological details are sufficiently described to support reproducibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "668768dc-825e-4049-8bd0-b299f2e422e8",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The cryo-EM structure in lipid nanodiscs is highly similar to the previously determined X-ray crystal structure in detergent, with only subtle differences including a slight rotation of the cytosolic domain (likely due to absence of crystal packing contacts) and minimal changes in the transmembrane domain including the selectivity filter region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural comparison is well-documented with multiple lines of evidence (C53, C59, C61-C63) showing minimal differences between the two structures. The interpretation that the X-ray structure represents a native conformation (C60, C64) is reasonable given the similarity. The observed differences in the cytosolic domain are appropriately attributed to crystal packing effects (C54, C55, C66) with supporting evidence from crystal structure analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "d9d3e552-e094-4d1f-a447-90ba5381e914",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The structural similarity between the detergent-solubilized X-ray structure and the lipid nanodisc cryo-EM structure indicates that large conformational differences between these environments are unlikely, and any structural changes associated with C-type inactivation would be small (<2 \u00c5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This conclusion (C9, C73) logically follows from the demonstrated structural similarity (C8, C53, C59). The inference that C-type inactivation involves small structural changes is reasonable given the lack of large differences observed, though it remains an inference rather than direct observation of the inactivated state.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "66232df6-cee1-4c54-a931-1d24698e1cb2",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The high-resolution cytosolic domain map (~3 \u00c5 with local resolution up to ~2.5 \u00c5) allowed visualization of side chain densities, the NADP+ cofactor bound to the \u03b2 subunit, and water molecules in high-resolution regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These observations (C50-C52) are consistent with the reported resolution and are supported by figure references showing the density quality. The ability to resolve these features validates the quality of the structure determination and is appropriate for the reported resolution range.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "034f8047-07f3-4bb2-b57e-ffd8b9b5ed62",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The cryo-EM structure shows weak sidechain density for D375 compared to nearby residues, raising the possibility that the critical hydrogen bond between D375 and W362 (known to stabilize the conducting state) may be broken, potentially representing a C-type inactivated state. However, the structure is also potentially consistent with the hydrogen bond being present.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the weak density for D375 is an observation (C85), the interpretation that this indicates a broken hydrogen bond (C86) is speculative given the resolution limitations acknowledged by the authors. The extensive background on the functional importance of this hydrogen bond (C75-C81) is well-established, but the cryo-EM data at ~4 \u00c5 resolution in the transmembrane domain is insufficient to definitively determine hydrogen bonding states. The authors appropriately present this as uncertain (C74, C83, C84).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "8baba24e-3d1e-4fbe-8d8a-954857c8ee30",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The cryo-EM maps show substoichiometric ion occupancy in the selectivity filter with variable occupancy patterns in different data subsets, and absence of density at the S2 position in the final map, contrasting with full occupancy observed in the X-ray structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The observation of variable ion densities (C87-C89) is documented, but the authors acknowledge potential artifacts including resolution variability and possible artifactual densities along the symmetry axis. While the difference from the X-ray structure (C90) is clear, the interpretation that this represents perturbed ion interactions in the lipid environment (C91) versus technical artifacts cannot be definitively determined from the presented data. The variability across different processing subsets (C88) raises concerns about the reliability of these observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "f0d0dd29-03e5-4859-89ad-a2e9bff0be2f",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The Kv chimera functionally C-type inactivates at 0 mV when reconstituted into lipid membranes, suggesting that the membrane environment favors the C-type inactivated state without requiring mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The functional behavior is supported by both cited literature (C26) and the authors' own bilayer recordings. This provides important context for interpreting the structural findings, as it establishes that the channel should predominantly be in an inactivated state under the conditions used for structure determination.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "a183f583-34ff-461b-9b90-c5d164047b8c",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Comparison with KcsA and other Kv channel structures suggests that multiple distinct structural mechanisms may underlie inactivation in different channels and mutants, and that the detailed structural mechanism may not be generalizable across K+ channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This synthesis (C105-C107) is well-supported by the extensive comparison of structural and functional data from multiple studies (C92-C104). The authors appropriately acknowledge the complexity and variability in inactivation mechanisms across different channels and mutants, and avoid overgeneralizing from their findings. The observation that the critical hydrogen bond is preserved in KcsA structures but has different functional effects (C103, C104) supports the conclusion of mechanistic diversity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "88e9d583-af2b-41d4-8b10-ea35d6268473",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Future work should aim to achieve higher resolution structures of the Kv chimera transmembrane domain in membranes and potentially capture other functional states including resting voltage sensors and closed pores.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are reasonable suggestions for future work (C108, C110) based on the current study's achievements and limitations. The authors appropriately identify the need for higher resolution to definitively resolve questions about C-type inactivation mechanisms, and recognize the broader potential of the nanodisc approach for studying other channel states.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on Kv channel function, inactivation mechanisms, and prior structural studies, establishing the context and motivation for determining a structure in a lipid bilayer environment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately represent established knowledge in the field, supported by appropriate citations. They provide essential context for understanding the significance of the current work, particularly the gap in knowledge regarding structures in native lipid environments (C4) and the controversy surrounding inactivation mechanisms (C20, C22, C29).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    },
+    {
+      "id": "78e40f2d-fe88-4e24-8bb8-3da112c6e05f",
+      "content_id": "aaa50b44-cc28-47a4-989a-168526ee20c1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior to this study, X-ray structures of Kv channels appeared to capture an open state despite functional evidence suggesting a C-type inactivated state should predominate, and no structures of voltage-activated ion channels in lipid bilayers had been reported.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C3, C4) accurately describe the state of the field and the key knowledge gap that motivated this study. The apparent discrepancy between structural and functional states (C3) is well-documented in the literature and provides strong justification for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:03:53.923445Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fa014ab4-9291-45ac-933d-533618d27c90",
+      "result_id": "43f082dd-d18a-45b5-9bda-768239f38556"
+    },
+    {
+      "claim_id": "8b166cde-462f-48dc-8983-f77c454bbf60",
+      "result_id": "43f082dd-d18a-45b5-9bda-768239f38556"
+    },
+    {
+      "claim_id": "2ba0cf95-fe1d-41db-a4ed-6be3b19f059b",
+      "result_id": "43f082dd-d18a-45b5-9bda-768239f38556"
+    },
+    {
+      "claim_id": "2ebefe29-7bee-4d74-8e50-0f8d4e749b69",
+      "result_id": "43f082dd-d18a-45b5-9bda-768239f38556"
+    },
+    {
+      "claim_id": "73059afc-ea93-41f9-94a0-2e5d21109085",
+      "result_id": "43f082dd-d18a-45b5-9bda-768239f38556"
+    },
+    {
+      "claim_id": "c4fbb7a6-9515-456f-979f-7062eddc18fe",
+      "result_id": "43f082dd-d18a-45b5-9bda-768239f38556"
+    },
+    {
+      "claim_id": "f658d684-3f9c-4445-bbee-c9570e4c0b13",
+      "result_id": "43f082dd-d18a-45b5-9bda-768239f38556"
+    },
+    {
+      "claim_id": "7f23ec01-5a78-4d7e-8186-9514fd2dea13",
+      "result_id": "43f082dd-d18a-45b5-9bda-768239f38556"
+    },
+    {
+      "claim_id": "eb50627a-f5de-4f10-a7f9-fd8b05bef1a6",
+      "result_id": "43f082dd-d18a-45b5-9bda-768239f38556"
+    },
+    {
+      "claim_id": "f3d2a0b6-8996-4b48-964a-9ab4381230a3",
+      "result_id": "43f082dd-d18a-45b5-9bda-768239f38556"
+    },
+    {
+      "claim_id": "56cd226c-c638-4ac7-9b12-900eb5b347eb",
+      "result_id": "43f082dd-d18a-45b5-9bda-768239f38556"
+    },
+    {
+      "claim_id": "8ad178d7-28e1-45d0-b17e-78e24f0d6480",
+      "result_id": "43f082dd-d18a-45b5-9bda-768239f38556"
+    },
+    {
+      "claim_id": "acb7a02f-12a5-4ee3-8fbc-c05223b9126c",
+      "result_id": "43f082dd-d18a-45b5-9bda-768239f38556"
+    },
+    {
+      "claim_id": "06372897-1ff7-4364-90cd-b0e20368dbea",
+      "result_id": "43f082dd-d18a-45b5-9bda-768239f38556"
+    },
+    {
+      "claim_id": "c552d4b1-a9f7-4703-afc4-d69f85dacfe6",
+      "result_id": "43f082dd-d18a-45b5-9bda-768239f38556"
+    },
+    {
+      "claim_id": "60d665f0-6e8a-417e-9e5d-0ec0aa0f1d1f",
+      "result_id": "43f082dd-d18a-45b5-9bda-768239f38556"
+    },
+    {
+      "claim_id": "35d02af5-e71f-4b04-9644-412b58dbd6dd",
+      "result_id": "43f082dd-d18a-45b5-9bda-768239f38556"
+    },
+    {
+      "claim_id": "7595f17a-09e0-4c22-97e5-d5a35238de43",
+      "result_id": "43f082dd-d18a-45b5-9bda-768239f38556"
+    },
+    {
+      "claim_id": "cc91c2c5-fe66-4a4b-be55-876899b9c44d",
+      "result_id": "43f082dd-d18a-45b5-9bda-768239f38556"
+    },
+    {
+      "claim_id": "3e7f526b-c6b6-4cf8-80b5-a56cdb060f85",
+      "result_id": "43f082dd-d18a-45b5-9bda-768239f38556"
+    },
+    {
+      "claim_id": "08e0ac6d-4971-4583-beb2-23c8fdd40bdf",
+      "result_id": "43f082dd-d18a-45b5-9bda-768239f38556"
+    },
+    {
+      "claim_id": "bde55676-81ae-48b5-8eab-4b2b6c3654ea",
+      "result_id": "43f082dd-d18a-45b5-9bda-768239f38556"
+    },
+    {
+      "claim_id": "61467d80-d3d1-4088-a2c7-07e6d83eb7e4",
+      "result_id": "43f082dd-d18a-45b5-9bda-768239f38556"
+    },
+    {
+      "claim_id": "6be76dbd-0b28-401e-9c5f-743a397ff2c3",
+      "result_id": "668768dc-825e-4049-8bd0-b299f2e422e8"
+    },
+    {
+      "claim_id": "e29ea865-ab93-4a61-a11c-f03de66c8f35",
+      "result_id": "668768dc-825e-4049-8bd0-b299f2e422e8"
+    },
+    {
+      "claim_id": "2c2c748b-7dfc-4226-a940-e46ddfa443c7",
+      "result_id": "668768dc-825e-4049-8bd0-b299f2e422e8"
+    },
+    {
+      "claim_id": "ccc083f6-63d2-42b9-83e5-92a8ae4ae813",
+      "result_id": "668768dc-825e-4049-8bd0-b299f2e422e8"
+    },
+    {
+      "claim_id": "5191e921-40e0-4ddd-8516-f9bb2cfa9c78",
+      "result_id": "668768dc-825e-4049-8bd0-b299f2e422e8"
+    },
+    {
+      "claim_id": "3c650596-25ef-4eac-8566-f0f5753bed9a",
+      "result_id": "668768dc-825e-4049-8bd0-b299f2e422e8"
+    },
+    {
+      "claim_id": "8e1c18d7-c65c-4aef-95b7-8dcb2c486bf1",
+      "result_id": "668768dc-825e-4049-8bd0-b299f2e422e8"
+    },
+    {
+      "claim_id": "4006e6b6-b82d-42a4-8847-42f9c8384606",
+      "result_id": "668768dc-825e-4049-8bd0-b299f2e422e8"
+    },
+    {
+      "claim_id": "fd184ee8-9017-4d2d-b775-9d0756722998",
+      "result_id": "668768dc-825e-4049-8bd0-b299f2e422e8"
+    },
+    {
+      "claim_id": "be4ddb19-0c98-4204-bc0d-dc6f70037a02",
+      "result_id": "668768dc-825e-4049-8bd0-b299f2e422e8"
+    },
+    {
+      "claim_id": "d8ac6464-75bd-46a2-9364-0f29df181889",
+      "result_id": "668768dc-825e-4049-8bd0-b299f2e422e8"
+    },
+    {
+      "claim_id": "480c11f0-1f2f-4c17-bd33-2cbe97ef59cd",
+      "result_id": "668768dc-825e-4049-8bd0-b299f2e422e8"
+    },
+    {
+      "claim_id": "a0f82044-950c-41be-986a-6e2aa241a62b",
+      "result_id": "668768dc-825e-4049-8bd0-b299f2e422e8"
+    },
+    {
+      "claim_id": "85115178-f340-4647-b28e-f5f9692cab5a",
+      "result_id": "668768dc-825e-4049-8bd0-b299f2e422e8"
+    },
+    {
+      "claim_id": "7d9d867e-5020-4437-82b2-1c2ef2245b03",
+      "result_id": "668768dc-825e-4049-8bd0-b299f2e422e8"
+    },
+    {
+      "claim_id": "e97561ec-dfee-45a0-b28a-6a870b805778",
+      "result_id": "d9d3e552-e094-4d1f-a447-90ba5381e914"
+    },
+    {
+      "claim_id": "1f8c9119-00d6-47c1-b47c-6c3c5b3e98ee",
+      "result_id": "d9d3e552-e094-4d1f-a447-90ba5381e914"
+    },
+    {
+      "claim_id": "3082aabc-353d-44e7-a4fc-aeb86c4a1e46",
+      "result_id": "66232df6-cee1-4c54-a931-1d24698e1cb2"
+    },
+    {
+      "claim_id": "9d9620cc-b29c-42f1-aef7-c9375e6ea7ea",
+      "result_id": "66232df6-cee1-4c54-a931-1d24698e1cb2"
+    },
+    {
+      "claim_id": "349fba5c-152e-42cf-8504-5a3253900b69",
+      "result_id": "66232df6-cee1-4c54-a931-1d24698e1cb2"
+    },
+    {
+      "claim_id": "3840b743-b0d3-4690-9242-97e3132c3b7d",
+      "result_id": "034f8047-07f3-4bb2-b57e-ffd8b9b5ed62"
+    },
+    {
+      "claim_id": "615f3e30-3d40-4200-8844-c8d338ed47c5",
+      "result_id": "034f8047-07f3-4bb2-b57e-ffd8b9b5ed62"
+    },
+    {
+      "claim_id": "e5fe42ed-0354-487c-aa80-55e9f1913e30",
+      "result_id": "034f8047-07f3-4bb2-b57e-ffd8b9b5ed62"
+    },
+    {
+      "claim_id": "d98ec469-0ac1-4673-8fe7-7d06968d0ed9",
+      "result_id": "034f8047-07f3-4bb2-b57e-ffd8b9b5ed62"
+    },
+    {
+      "claim_id": "ff4e5da3-2e5a-4ed8-a21d-ac28ecba022a",
+      "result_id": "034f8047-07f3-4bb2-b57e-ffd8b9b5ed62"
+    },
+    {
+      "claim_id": "6f76b788-2ec2-4bf6-b1ac-a62bcc040a94",
+      "result_id": "034f8047-07f3-4bb2-b57e-ffd8b9b5ed62"
+    },
+    {
+      "claim_id": "40b830f1-123f-46ee-8496-9e094b3a5450",
+      "result_id": "034f8047-07f3-4bb2-b57e-ffd8b9b5ed62"
+    },
+    {
+      "claim_id": "5dd142dc-ef5f-4a72-b56d-d7b6f9dd70c5",
+      "result_id": "034f8047-07f3-4bb2-b57e-ffd8b9b5ed62"
+    },
+    {
+      "claim_id": "a1a40d74-34fe-4f19-96a8-56d45ca709ca",
+      "result_id": "034f8047-07f3-4bb2-b57e-ffd8b9b5ed62"
+    },
+    {
+      "claim_id": "9ceb57b1-1b1d-49c3-bc0b-6f1b642df3b9",
+      "result_id": "034f8047-07f3-4bb2-b57e-ffd8b9b5ed62"
+    },
+    {
+      "claim_id": "f8071615-785e-4e02-8f36-2d3ddfd80520",
+      "result_id": "034f8047-07f3-4bb2-b57e-ffd8b9b5ed62"
+    },
+    {
+      "claim_id": "a32dcf36-cffd-4899-81f4-53c8515b2934",
+      "result_id": "034f8047-07f3-4bb2-b57e-ffd8b9b5ed62"
+    },
+    {
+      "claim_id": "998f5b99-241a-4d0b-980f-745937008f24",
+      "result_id": "034f8047-07f3-4bb2-b57e-ffd8b9b5ed62"
+    },
+    {
+      "claim_id": "03364c57-5154-4609-9a71-3be95a7c7b88",
+      "result_id": "8baba24e-3d1e-4fbe-8d8a-954857c8ee30"
+    },
+    {
+      "claim_id": "5cd99b00-72c2-45c6-9a5d-ba3f67b9bd7f",
+      "result_id": "8baba24e-3d1e-4fbe-8d8a-954857c8ee30"
+    },
+    {
+      "claim_id": "798d4575-1de1-40b0-9f9a-a51f898062e2",
+      "result_id": "8baba24e-3d1e-4fbe-8d8a-954857c8ee30"
+    },
+    {
+      "claim_id": "43fd852c-f1b7-4ef3-ac51-5ba035329573",
+      "result_id": "8baba24e-3d1e-4fbe-8d8a-954857c8ee30"
+    },
+    {
+      "claim_id": "0ce2c712-4047-4699-959a-08918cc03396",
+      "result_id": "8baba24e-3d1e-4fbe-8d8a-954857c8ee30"
+    },
+    {
+      "claim_id": "357aae89-e708-4726-93b3-b876f739ee43",
+      "result_id": "f0d0dd29-03e5-4859-89ad-a2e9bff0be2f"
+    },
+    {
+      "claim_id": "3bd7643f-d71f-4fb2-adea-6d115cdfb960",
+      "result_id": "f0d0dd29-03e5-4859-89ad-a2e9bff0be2f"
+    },
+    {
+      "claim_id": "281be224-f829-4667-87aa-a516465b688a",
+      "result_id": "a183f583-34ff-461b-9b90-c5d164047b8c"
+    },
+    {
+      "claim_id": "653a6a84-6958-4c83-820e-22a4762bcd8a",
+      "result_id": "a183f583-34ff-461b-9b90-c5d164047b8c"
+    },
+    {
+      "claim_id": "0e83dd00-7865-4c7e-a6b2-7b4907ad3f36",
+      "result_id": "a183f583-34ff-461b-9b90-c5d164047b8c"
+    },
+    {
+      "claim_id": "69c15d9d-9db1-41af-9c17-e996b500bd37",
+      "result_id": "a183f583-34ff-461b-9b90-c5d164047b8c"
+    },
+    {
+      "claim_id": "e365a549-59ab-4c7f-8459-3ab942abacc4",
+      "result_id": "a183f583-34ff-461b-9b90-c5d164047b8c"
+    },
+    {
+      "claim_id": "ac4403fa-848c-4b04-9c73-a7fd22f25a0e",
+      "result_id": "a183f583-34ff-461b-9b90-c5d164047b8c"
+    },
+    {
+      "claim_id": "aa78efd3-654c-4c58-b388-1d4dd2547cdc",
+      "result_id": "a183f583-34ff-461b-9b90-c5d164047b8c"
+    },
+    {
+      "claim_id": "2cbece45-4126-447a-9bb2-72270dcb065e",
+      "result_id": "a183f583-34ff-461b-9b90-c5d164047b8c"
+    },
+    {
+      "claim_id": "c206eaae-f9a7-4851-a648-a75e37faa0c0",
+      "result_id": "a183f583-34ff-461b-9b90-c5d164047b8c"
+    },
+    {
+      "claim_id": "27f0e11e-1225-4a50-9ac6-4b8a5615c376",
+      "result_id": "a183f583-34ff-461b-9b90-c5d164047b8c"
+    },
+    {
+      "claim_id": "d940791b-4c79-4fdf-a685-f0d6d50409bd",
+      "result_id": "a183f583-34ff-461b-9b90-c5d164047b8c"
+    },
+    {
+      "claim_id": "a97d69c2-526d-40c7-874c-d0ce4da6a82b",
+      "result_id": "a183f583-34ff-461b-9b90-c5d164047b8c"
+    },
+    {
+      "claim_id": "965df0c9-b8fd-40a2-9bb8-ac3565ef1d76",
+      "result_id": "a183f583-34ff-461b-9b90-c5d164047b8c"
+    },
+    {
+      "claim_id": "bb78a7bb-5451-484d-958d-c970c2d40019",
+      "result_id": "a183f583-34ff-461b-9b90-c5d164047b8c"
+    },
+    {
+      "claim_id": "a507b35d-090d-4bbe-a993-cddf85f17861",
+      "result_id": "a183f583-34ff-461b-9b90-c5d164047b8c"
+    },
+    {
+      "claim_id": "adc0b58f-6801-4369-9510-c7678d6db128",
+      "result_id": "a183f583-34ff-461b-9b90-c5d164047b8c"
+    },
+    {
+      "claim_id": "a2483b8f-680a-423d-8ce1-779a929cf711",
+      "result_id": "88e9d583-af2b-41d4-8b10-ea35d6268473"
+    },
+    {
+      "claim_id": "1cecf4df-083d-47b0-87d5-b6362797429b",
+      "result_id": "88e9d583-af2b-41d4-8b10-ea35d6268473"
+    },
+    {
+      "claim_id": "c65c9de6-9447-47b1-9128-47a164c4d2b9",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "487c6fa2-c33b-4c16-93f9-ac6b7fa35a93",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "80ae6a41-062e-4c0d-a531-e31dc5b814af",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "022353ad-e6aa-4ce0-be08-2d73219f66a9",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "64411c3f-a1fb-49a2-8ff0-cc4a5d0da221",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "6089ba69-8a0e-415f-9495-e9e4bf832613",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "2b4a38a9-ea51-429b-8f9b-24968eac1f22",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "a512507f-a588-4b81-b69b-b840a3648569",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "77469efd-5ea9-4955-a622-75e7e7ebf846",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "888ab992-a938-4a66-96bb-2a31c36f515a",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "33117df1-ac73-4b2d-8d5c-0a3a366cf3ef",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "6660243f-069d-4fef-8dc1-0658f34c7cbd",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "0c85c2b0-d701-4532-92bf-99a688a4a910",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "8fe3ab97-9a20-4a5a-a9f0-893dc09fb6a4",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "c2627596-7c87-4602-98d6-2fd109414ef6",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "3f7bc49d-3ae7-425d-9c48-8c1c4b0e089b",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "a06b9d28-3476-4b7b-99d9-5edb09ab1411",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "38c95e42-5dc6-46ee-807b-56bb486e5744",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "c6cac7d9-41a3-409c-8d81-da2980bd29c0",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "87f9d6e9-3b9f-4370-b657-64259cb09684",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "b0de62bd-26ce-4b55-813c-84f76a3a4f53",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "9dd8cc6d-5d1b-43ef-a95f-54163129d893",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "81350366-1474-4af4-9f5a-278b0b39e4f7",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "dd54ac8a-5d85-47d3-81e3-2b42654dcdd0",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "e04f89de-3e2b-4cd8-884d-2940aede2f51",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "e2b65321-ea2c-4391-a4a7-14327e8ce855",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "0af47af2-7b0b-4bc0-a88a-d97dcb207d7e",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "1e946e9d-9181-4efc-95c8-ad3d9f539a9e",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "d10e5e4d-33ab-4f08-a173-f059d22f0512",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "2d28edc2-56ea-4da5-9760-f207c8327570",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "e3040e56-965b-4a20-a30a-6e011c64848f",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "ac29d118-5b27-4f40-9560-ac3903b284d0",
+      "result_id": "293caf4a-56cf-4f6a-82a2-675a4cdffb50"
+    },
+    {
+      "claim_id": "87830295-2d0f-4693-a2f2-ca20492c33e8",
+      "result_id": "78e40f2d-fe88-4e24-8bb8-3da112c6e05f"
+    },
+    {
+      "claim_id": "95ea9cf8-4ff2-49b6-96ce-aa455303f754",
+      "result_id": "78e40f2d-fe88-4e24-8bb8-3da112c6e05f"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C28",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The study analyzed TCR\u03b2 repertoire data from 666 healthy donors with high-resolution HLA typing at major class I and class II loci. Of 80 million unique TCR\u03b2 chains, approximately 11 million were public (found in \u22652 individuals), and 592 sequences were removed as potential cross-contamination artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C22, C28, C68, C69, and C70 collectively describe the cohort composition, data collection methods, and quality control procedures. The cohort size, HLA typing methods (SSOP, SBT, NGS), data availability across loci, and contamination removal are clearly documented with specific numbers and methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Global clustering analysis identified 28 significant TCR clusters (FWER=0.05), with the majority strongly associated with HLA alleles. One cluster was associated with the TRBJ2-7*02 germline allele, and another large non-HLA-associated cluster was identified as likely MAIT cells based on distinctive sequence features and age distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 describe findings from global TCR clustering with clear statistical thresholds and supporting evidence. The TRBJ2-7*02 association is validated by exact subject matching (C32), and MAIT cell identification is supported by multiple converging lines of evidence including V-gene usage, N-nucleotide patterns, age distribution, and validation against paired TCR and published MAIT datasets (C33).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "At FDR 0.05, 16,951 TCR\u03b2 sequences were assigned to HLA alleles. HLA-associated TCRs showed higher clonal expansion and lower generation probabilities compared to frequency-matched background TCRs, with stronger trends for class I than class II associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C38-C40 present quantitative findings with clear statistical thresholds and appropriate controls (frequency-matched background TCRs). The distributions shown in Figure 4 support the claims about clonal expansion and generation probability differences, and the inference about selection (C39) is reasonable given the observed patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "TCR-HLA association rates varied dramatically across HLA loci, with DRB1 showing the highest rate and HLA-C the lowest. The DR/DQ haplotype slope (12.2) approximated the sum of individual DR (7.99) and DQ (3.39) slopes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are supported by quantitative data in Figure 5 showing clear differences in association rates across loci. The additive relationship for DR/DQ haplotypes (C42) provides internal validation. However, C43's explanation for low HLA-C association is speculative and relies only on citation rather than direct evidence from this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "HLA associations were validated through multiple independent approaches: 90% agreement with VDJdb (96% for highest confidence entries), and concordance with CD4/CD8 sorting data showing class I-associated TCRs in CD8+ populations and class II-associated TCRs in CD4+ populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 describe validation using independent datasets. The VDJdb comparison (C44-C45) provides external validation with quantitative agreement rates. The CD4/CD8 analysis (C46, Figure 5\u2014figure supplement 1) provides biological validation showing expected MHC class-T cell subset concordance, though the analysis is limited by using occurrence counts rather than abundance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C51",
+      "C52",
+      "C60"
+    ],
+    "result": "HLA-restricted clustering identified 78 significant TCR clusters (FWER=0.05). The top clusters showed strong associations with common viral pathogens including parvovirus B19 (A*24:02-associated), influenza (A*02:01-associated), and EBV (B*08:01-associated), validated by matches to experimentally characterized TCRs and co-occurrence in independent cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48, C51-C52, and C60 describe HLA-restricted clustering results with clear statistical thresholds and multiple lines of validation. Pathogen associations are supported by matches to published epitope-specific TCRs (C48, C51), and validation on independent cohorts shows 94% (Keck120) and 92% (Brit86) of clusters have positive co-occurrence scores (C52).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C54"
+    ],
+    "result": "Significant negative correlation was found between CDR3 charge and DRB1 position 70 charge (R=-0.47, P<4\u00d710\u207b\u2074 for full CDR3; R=-0.52, P<7\u00d710\u207b\u2075 for non-germline CDR3), driven primarily by DRB1 alleles rather than DQ alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C54 present a novel finding about TCR-MHC covariation with clear statistical support (Table 2, Figure 9). The analysis appropriately considers both full and non-germline CDR3 sequences to account for V/J-gene contributions, and the structural context (position 70 contacts CDR3\u03b2) provides biological plausibility. Multiple testing correction is applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Analysis of 68 CMV-associated TCR\u03b2 chains showed that the majority were HLA-associated (exceeding FDR 0.05 threshold), with CMV association restricted to HLA-positive subjects. HLA associations appeared driven primarily by CMV exposure rather than pre-existing enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 describe systematic analysis of CMV-TCR-HLA relationships shown in Figure 10. The findings are supported by appropriate stratification analyses comparing HLA-positive vs. HLA-negative subjects (C56) and CMV-positive vs. CMV-negative subjects (C57). However, the inference in C57 is limited by lower statistical power in the CMV-negative subset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C24",
+      "C25"
+    ],
+    "result": "The analysis revealed striking imprints of common pathogens in TCR occurrence patterns and identified clusters of co-occurring TCRs representing potential markers of shared immune exposures. Four of the top five clusters were linked to common pathogens (parvovirus B19, influenza, CMV, EBV), and HLA-unrestricted clusters likely representing MAIT cells were identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C24-C25 summarize major findings that are supported by the detailed clustering analyses (C30-C33, C47-C52). The pathogen associations are validated through multiple lines of evidence including sequence matches to known epitope-specific TCRs and biological features consistent with MAIT cells. These represent the primary discoveries of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C26",
+      "C63"
+    ],
+    "result": "Substantial variation in TCR-MHC association strength was observed across HLA loci, with class II loci showing greater numbers of associated TCR\u03b2 chains than class I loci on average.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C26, and C63 describe a consistent finding about locus-specific differences in TCR association rates, clearly demonstrated in Figure 5. The observation is quantitatively supported with specific slopes for different loci (C41). However, the biological explanation (C64) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Eight A*02:01-associated TCR\u03b2 chains identified in this study were present in an independent experimental dataset of tetramer-sorted TCRs specific for influenza M1\u2085\u2088 and EBV BMLF1\u2082\u2088\u2080 epitopes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 provides strong external validation by showing that the study's HLA association method identifies TCRs with known epitope specificity. The comparison to the Dash et al. 2017 dataset provides independent experimental confirmation, and Figure 4\u2014figure supplement 2 shows detailed sequence-level concordance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The manuscript presents established immunological knowledge about TCR repertoires, V(D)J recombination, MHC function, T cell activation, and the relationship between TCR, HLA, and disease associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C8-C20 present background knowledge that is well-established in immunology and appropriately cited. These claims provide necessary context for the study but do not represent novel findings. The citations to prior work (C13-C14) are appropriate and the knowledge claims are accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29",
+      "C61"
+    ],
+    "result": "The study replicates and extends the finding by Emerson et al. that large numbers of TCR\u03b2 chains have occurrence patterns strongly associated with specific HLA alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C61 appropriately acknowledge prior work and position the current study as extending those findings. The replication is supported by the identification of 16,951 HLA-associated TCR\u03b2 chains (C35) and the extension includes higher resolution HLA typing, class II alleles, and novel clustering approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Responses to common pathogens may play a role in selecting TCR\u03b2 chains in an HLA-restricted manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is a reasonable inference based on the pathogen-associated clusters identified in the study (C24, C48, C51, C60). However, this remains an inference rather than a directly demonstrated causal relationship, as the study does not include direct measurements of pathogen exposure beyond CMV serostatus.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "The class II bias in TCR association numbers presumably reflects differences in selection and/or abundance between CD4+ and CD8+ T cell compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C64 is explicitly speculative (\"presumably\") and offers a potential explanation for the observed class II bias (C63). While the explanation is biologically plausible and supported by citation, it is not directly tested in this study. Alternative explanations (e.g., differences in epitope diversity, thymic selection stringency) are not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "The smaller rate of TCR association at the HLA-C locus could be explained by lower cell surface expression and greater tendency to interact with KIR receptors on NK cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C43 proposes an explanation for the observed low HLA-C association rate but is explicitly speculative (\"could be explained\"). While the explanation is supported by citation and is biologically plausible, it is not directly tested. The study does not measure HLA-C expression levels or KIR interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "TCRs with HLA promiscuity may be especially interesting from a diagnostic perspective, since their phenotype associations may be more robust to differences in genetic background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C59 is speculative about potential diagnostic applications. While the logic is sound, the study identifies relatively few HLA-promiscuous TCRs (Figure 10C shows most CMV-associated TCRs are HLA-restricted), and no diagnostic validation is performed. This represents a hypothesis for future work rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The lack of paired TCR\u03b1/\u03b2 repertoire data limits feature detection and may introduce bias, as many TCRs associated with specific immune exposures as paired chains may not be detectably associated when analyzing only the \u03b2 chain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 appropriately acknowledge a significant limitation of the study. The concern is valid given that TCR specificity is determined by both \u03b1 and \u03b2 chains, and the study's success in identifying associations despite analyzing only \u03b2 chains is somewhat surprising (as the authors note). This limitation affects interpretation of negative results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Two EBV-annotated clusters contain TCR\u03b2 chains also seen in rheumatoid arthritis, suggesting possible cross-reactivity between pathogen and autoimmune epitopes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 identifies an interesting observation but the inference about cross-reactivity is speculative. The presence of the same TCR\u03b2 chains in both EBV and rheumatoid arthritis contexts could reflect cross-reactivity, but alternative explanations (e.g., independent responses, database annotation errors) are not excluded. Direct testing of cross-reactivity is not performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "The study implemented a probabilistic model based on Walczak and co-workers' approach to assign generation probabilities to TCR\u03b2 chains, with validation showing good agreement (R=0.97) with the published IGoR tool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 describes a methodological implementation with appropriate citation and validation. The comparison to IGoR (R=0.97, slope=0.98) demonstrates that the implementation is accurate. The generation probability calculations are used throughout the study for important analyses (C39-C40), making this methodological validation important.",
+    "result_type": "MINOR"
+  }
+]

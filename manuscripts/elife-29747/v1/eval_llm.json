@@ -1,0 +1,169 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Ewing's sarcoma cell lines showed a trend toward greater olaparib sensitivity than osteosarcoma cell lines (median EC: 1 \u00b5M vs 3.2 \u00b5M), consistent in direction with the original study, but the difference was not statistically significant (U=12, p=0.390). Meta-analysis combining original and replication data yielded a statistically significant overall effect (Cliff's d=0.63, p=0.029), though confidence intervals of individual studies did not overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The replication found directional consistency with the original study but failed to achieve statistical significance (C2, C17, C18). The meta-analysis shows statistical significance (C42), but non-overlapping confidence intervals between studies (C43) suggest heterogeneity. The small sample sizes acknowledged by the authors (C20, C58) and use of different cell lines (C21) limit confidence in the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "In transformed mouse mesenchymal cells, both EWS-FLI1 and FUS-CHOP rearrangements resulted in olaparib resistance (>50% viability at highest dose), while SK-N-MC cells showed sensitivity (IC50=2.67 \u00b5M). This contradicts the original study where EWS-FLI1 transformed cells showed sensitivity similar to SK-N-MC (IC50~1.1-1.5 \u00b5M) and distinct from FUS-CHOP cells (IC50=7.8 \u00b5M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "The replication directly contradicts the original findings (C3, C4 vs C5, C6). The inability to determine IC50 values for transformed cells (C26) prevents quantitative comparison. The result suggests EWS-FLI1 transformation may not be sufficient for olaparib sensitivity, contradicting a key mechanistic claim of the original study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "EWS-FLI1 knockdown in A673 cells (65% reduction) did not alter olaparib sensitivity compared to control siRNA, contradicting the original study which reported partial rescue of sensitivity with 94% knockdown. The replication also showed higher residual viability at maximum olaparib doses (~40% vs 0%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "The replication failed to reproduce the original finding (C7, C28 vs C8, C29). However, the substantially lower knockdown efficiency (65% vs 94%; C27, C30, C31) is a critical confounding factor that may explain the discrepancy (C32, C33). The inability to determine IC50 values (C39) and differences in maximal response (C36, C37, C38) further complicate interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C58"
+    ],
+    "result": "The replication study acknowledges important methodological limitations including small sample sizes in both studies, use of only 5 overlapping cell lines, inability to obtain original Ewing's sarcoma cell lines, and heterogeneity in olaparib sensitivity within Ewing's sarcoma cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological limitations are clearly documented (C20, C21, C58) and appropriately acknowledged as factors affecting reproducibility. The recognition that not all Ewing's sarcoma lines show uniform sensitivity (C19) provides important context for interpreting the primary results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The introduction contextualizes the original study's findings within subsequent literature, noting that while multiple studies confirmed Ewing's sarcoma sensitivity to PARP inhibitors in vitro, xenograft studies and clinical trials showed limited effectiveness as monotherapy, though combination therapies show promise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This comprehensive literature review (C44-C57) is well-supported by multiple citations and provides essential context. The acknowledgment of conflicting evidence from different experimental systems (in vitro vs in vivo vs clinical) and the emergence of combination therapy approaches demonstrates appropriate scientific contextualization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Cell proliferation was confirmed during the viability assay in no-drug conditions, which is necessary since olaparib sensitivity depends on cellular proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This experimental control is appropriately documented (C59) and justified by cited literature (C60). Confirming proliferation is essential for interpreting olaparib sensitivity results, as the mechanism requires active DNA replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Quality control measures confirmed cell line identity (STR profiling), absence of contamination (mycoplasma and mouse pathogens), and documented the reclassification of A673 and SK-N-MC from neuroblastoma to Ewing's sarcoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Rigorous quality control is documented (C63, C64) and the historical reclassification of cell lines is appropriately cited (C61, C62). These measures are essential for ensuring experimental validity and reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Multiple uncontrolled variables are identified as potential factors affecting reproducibility, including cell line differences, knockdown efficiency, genetic drift, cell line sex, atmospheric oxygen, compound stock solutions, and cell division rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge numerous potential confounding variables (C9, C10, C65-C69) with supporting citations. This transparent discussion of limitations and uncontrolled factors is scientifically appropriate, though it also highlights the difficulty in definitively interpreting the replication results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "The authors note that observing different outcomes is informative for establishing the range of conditions under which a phenotype can be observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This perspective on the value of replication studies (C34) is appropriately cited and represents a constructive interpretation of negative or divergent results in the context of reproducibility research.",
+    "result_type": "MINOR"
+  }
+]

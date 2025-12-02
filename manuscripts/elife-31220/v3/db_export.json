@@ -1,0 +1,1941 @@
+{
+  "submission": {
+    "id": "5b418874-23ec-4d46-991a-ba73fb579d5f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:18:54.012871Z",
+    "updated_at": "2025-12-01T23:18:54.012871Z"
+  },
+  "content": [
+    {
+      "id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "submission_id": "5b418874-23ec-4d46-991a-ba73fb579d5f",
+      "content_type": "manuscript",
+      "content_text": "# Salient experiences are represented by unique transcriptional signatures in the mouse brain\n\n## Authors\n\n- Diptendu Mukherjee<sup>1</sup>\n- Bogna Marta Ignatowska-Jankowska<sup>2</sup> ([ORCID: 0000-0002-8427-1128](https://orcid.org/0000-0002-8427-1128))\n- Eyal Itskovits<sup>3</sup>\n- Ben Jerry Gonzales<sup>1</sup>\n- Hagit Turm<sup>1</sup>\n- Liz Izakson<sup>1</sup>\n- Doron Haritan<sup>1</sup>\n- Noa Bleistein<sup>1</sup>\n- Chen Cohen<sup>1</sup>\n- Ido Amit<sup>5</sup>\n- Tal Shay<sup>6</sup>\n- Brad Grueter<sup>7</sup> ([ORCID: 0000-0002-4224-3866](https://orcid.org/0000-0002-4224-3866))\n- Alon Zaslaver<sup>3</sup>\n- Ami Citri<sup>1</sup> ([ORCID: 0000-0002-9914-0278](https://orcid.org/0000-0002-9914-0278)) \u2020\n\n### Affiliations\n\n1. Department of Biological Chemistry, Silberman Institute of Life Sciences The Hebrew University Jerusalem Israel\n2. The Edmond and Lily Safra Center for Brain Sciences The Hebrew University Jerusalem Israel\n3. Department of Genetics, Silberman Institute of Life Sciences The Hebrew University Jerusalem Israel\n4. School of Computer Science and Engineering The Hebrew University Jerusalem Israel\n5. Department of Immunology Weizmann Institute of Science Rehovot Israel\n6. Department of Life Sciences Ben-Gurion University of the Negev Beer-Sheva Israel\n7. Department of Psychiatry Vanderbilt University School of Medicine Nashville United States\n8. Child and Brain Development Program Canadian Institute for Advanced Research Toronto Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nIt is well established that inducible transcription is essential for the consolidation of salient experiences into long-term memory. However, whether inducible transcription relays information about the identity and affective attributes of the experience being encoded, has not been explored. To this end, we analyzed transcription induced by a variety of rewarding and aversive experiences, across multiple brain regions. Our results describe the existence of robust transcriptional signatures uniquely representing distinct experiences, enabling near-perfect decoding of recent experiences. Furthermore, experiences with shared attributes display commonalities in their transcriptional signatures, exemplified in the representation of valence, habituation and reinforcement. This study introduces the concept of a neural transcriptional code, which represents the encoding of experiences in the mouse brain. This code is comprised of distinct transcriptional signatures that correlate to attributes of the experiences that are being committed to long-term memory.\n\n## Introduction\n\nNeuronal plasticity enables cognitive and behavioral flexibility underlying the development of adaptive behaviors (Alberini, 2009; Alberini and Kandel, 2015). This neuroplasticity, induced by salient experiences, has been shown to depend on the induction of temporally-defined waves of transcription (Alberini, 2009; Alberini and Kandel, 2015; McClung and Nestler, 2008; Flavell and Greenberg, 2008; West and Greenberg, 2011). The earliest of these waves consists of the expression of immediate-early genes (IEGs). IEGs have been conventionally treated as molecular markers for labeling neuronal populations that undergo plastic changes during the formation of long-term memory (Cruz et al., 2013; Minatohara et al., 2015). However, the literature indicates a much more significant contribution of IEGs to synaptic plasticity and memory formation (Lanahan and Worley, 1998; Okuno, 2011). It has been proposed that IEG transcription may represent the molecular signatures of long-term plastic changes underlying the formation of memory (Alberini, 2009). Thus, induced IEG transcription could represent an experience-specific neural code for long-term storage of information. The existence of a neural code embedded in transcription implies that it should be possible to decode the identity of recent experiences, and potentially derive information regarding the nature of the experience, from its transcriptional representation (Stanley, 2013).\n\nTo address the existence of a neural transcriptional code, we performed a detailed analysis of IEG transcription for 13 different experiences: cocaine (acute, repeated and challenge), volitional sucrose drinking (acute and repeated), reinstatement of feeding following food deprivation, lithium chloride administration (LiCl; acute and repeated), saline (acute injection without habituation, acute injection after habituation and repeated administration), acute administration of a mild foot shock, and exposure to a novel chamber with no foot shock. The experiences were selected to enable the identification of the transcriptional representations of affective attributes, such as salience and valence (Russell, 1980; Posner et al., 2005). As such, we chose to investigate experiences that drive robust positive or negative reinforcement. Repetition of rewarding and aversive experiences provided insight into the transcriptional representation of habituation to negative stimuli and positive reinforcement of rewarding experiences.\n\nExperiences included in this study have been previously studied using electrophysiological measures, and plasticity has been observed within individual limbic and mesolimbic brain structures (Russo and Nestler, 2013). In contrast to classic electrophysiological measurements of plasticity, which focus on measurements with synapse specificity, transcriptional analysis enables parallel investigation of the representation of experience across multiple brain structures. Assuming that the encoding of complex reinforced experiences involves coordinated neural plasticity in multiple brain regions, we analyzed transcription across structures associated with the limbic and mesolimbic systems (Russo and Nestler, 2013; Haber and Knutson, 2010). The brain structures that were analyzed include limbic cortex (LCtx; including medial prefrontal cortex and anterior cingulate cortex), nucleus accumbens (NAc), dorsal striatum (DS), amygdala (Amy), lateral hypothalamus (LH), dorsal hippocampus (Hipp) and ventral tegmental area (VTA).\n\nOur results demonstrate that the transcriptional representations of experience are robust, reliable and consistent, enabling the decoding of the recent experience of mice with high levels of accuracy from a minimal transcriptional signature. We identify transcriptional hallmarks of affective attributes of experience, prominently demonstrated in the encoding of valence. Moreover, we report opposing patterns of transcriptional modulation underlying the development of habituation to experiences of negative valence, in comparison to repeated rewarding experiences associated with positive reinforcement. We conclude with a discussion of the potential implications of a neural transcriptional code.\n\n## Results\n\n### Identification of transcriptional signatures of experience\n\nWe initiated our study with the investigation of gene expression programs induced during the development of behavioral sensitization to cocaine. Cocaine sensitization is one of the most widely applied paradigms for studying mechanisms of neural plasticity, due to the robustness of the behavioral model and the detailed insight acquired into the underlying mechanisms (McClung and Nestler, 2008; Robbins et al., 2008; Hyman et al., 2006; Nestler, 2002; Robison and Nestler, 2011; L\u00fcscher, 2016; Piechota et al., 2010). Using this paradigm, we studied the transcriptional programs induced following acute or repeated exposure to cocaine, as well as re-exposure to cocaine after a period of abstinence from repeated drug exposures (\u2018cocaine challenge\u2019) (Figure 1A,B) (Robison and Nestler, 2011). We analyzed the transcription induced at 0, 1, 2, 4 hr following each of these cocaine experiences across six brain structures (LCtx, NAc, DS, Amy, LH, and Hipp; Figure 1\u2014figure supplement 1). Transcription was analyzed with a comprehensive set of qPCR probes against putative IEGs (see Materials\u00a0and\u00a0methods and Supplementary file 1). Our results demonstrate that distinct cocaine experiences (acute, repeated, challenge) are characterized by robust induction of a handful of genes across the different brain structures studied, with peak induction at 1 hr following cocaine administration (Figure 1; Figure 1\u2014figure supplement 2; transcriptional dynamics shown in Figure 1\u2014figure supplement 3). 29 genes were induced above two fold in at least one of the six brain regions (predominantly in LCtx, NAc and DS), across the three cocaine experiences.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/31220/elife-31220-fig1-v3.jpg)\n\n**Figure 1.:** (A) Schematic of experimental paradigm for cocaine sensitization. Mice were exposed to cocaine (i.p., 20 mg/kg) or saline, either acutely, repeatedly or re-exposed following abstinence (challenge), with transcriptional dynamics studied at 0, 1, 2 or 4 hr. (B) Locomotor activity of mice following acute, repeated or challenge cocaine experiences (compared to saline). Sample size: acute and repeated saline n\u00a0=\u00a04; acute cocaine n\u00a0=\u00a030; repeated cocaine n\u00a0=\u00a022; challenge cocaine n\u00a0=\u00a019 mice. Results indicate mean\u00a0\u00b1\u00a0s.e.m. (C) Expression matrix of IEG induction dynamics following cocaine experiences. Individual animals are represented in columns sorted according to time points of cocaine experiences [sample numbers per time point - LCtx: limbic cortex (n\u00a0=\u00a05\u201311), NAc: nucleus accumbens (n\u00a0=\u00a05\u201312), DS: dorsal striatum (n\u00a0=\u00a05\u201312), Amy: amygdala (n\u00a0=\u00a03\u20134), LH: lateral hypothalamus (n\u00a0=\u00a02\u20134), Hipp: hippocampus (n\u00a0=\u00a02\u20134)]. Fold induction is graded from blue (low) to red (high). Genes represented were induced at least 2-fold over control in any one of the brain regions studied. Genes were sorted according to peak induction in the DS. (D)\u00a0Schematic of experimental paradigm for LiCl exposure. Mice were exposed to LiCl (i.p.) or saline, either acutely (150 or 250 mg/kg) or repeatedly (150 mg/kg). (E) Locomotor activity of mice following acute or repeated LiCl exposure (as in panel C). Sample size: n\u00a0=\u00a04\u20135. (F) Expression matrix of IEG induction dynamics following LiCl experiences (n\u00a0=\u00a04\u20135). Genes were sorted according to peak induction in the Amy. (G) Venn diagram indicating the identity of the most robustly induced genes common to cocaine and LiCl experiences (most appearances and lowest variance). (H) Confusion matrix representing the classification accuracy of decoding the recent experience (acute, chronic and challenge cocaine, acute and repeated LiCl and acute and repeated saline) of individual mice based on expression of Arc, Egr2, Egr4, Fos and Fosb induction in the LCtx, NAc, DS, Amy and LH using a KNN classifier. Accuracy is scaled from blue to green, with bright green corresponding to 100% accuracy (n\u00a0=\u00a037 mice). Overall accuracy\u00a0=\u00a097.3%. (I) Results of a permutation test for verifying classification. A randomization test was performed, in which the classifier was run on 105 random permutations of the association of individual mice to the appropriate experience, and the frequency of classification accuracies is plotted in grey, while the red dotted line represents the classification accuracy obtained for non-randomized data (97.3%).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31220/elife-31220-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Shaded regions in blue represent areas cut out from 400 \u00b5m slices for LCtx (limbic cortex), NAc (nucleus accumbens), DS (dorsal striatum), Amy (amygdala), LH (lateral hypothalamus), and Hipp (hippocampus) and 200 \u00b5m slices for VTA (ventral tegmental area), providing reproducible tissue samples for analysis of transcription. Distance from Bregma on the rostral-caudal axis is indicated in mm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31220/elife-31220-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Schematic of the experimental paradigm. (B) Average transcriptional induction of 78 genes one hour following acute, repeated or challenge cocaine experiences in six brain nuclei [LCtx: limbic cortex (n\u00a0=\u00a06\u201310), NAc: nucleus accumbens (n\u00a0=\u00a06\u201310), DS: dorsal striatum (n\u00a0=\u00a06\u201310), Amy: amygdala (n\u00a0=\u00a04), LH: lateral hypothalamus (n\u00a0=\u00a04), Hipp: hippocampus (n\u00a0=\u00a04)]. Genes are sorted alphabetically. Results indicate mean\u00a0\u00b1\u00a0s.e.m.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/31220/elife-31220-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Schematic of the experimental paradigms. (B) Arc, Egr2, Egr4, Fos and Fosb induction (0, 1, 2, 4 hr) following acute, repeated and challenge cocaine in seven brain nuclei (LCtx: limbic cortex, NAc: nucleus accumbens, DS: dorsal striatum, Amy: amygdala, LH: lateral hypothalamus, Hipp: hippocampus and VTA: ventral tegmental area), as well as acute saline (in the LCtx, NAc and DS). Subject numbers for each time point: n\u00a0=\u00a06\u201316 (LCtx, NAc and DS), n\u00a0=\u00a04\u20138 (Amy, LH and Hipp) and n\u00a0=\u00a02\u20134 (VTA) for acute, chronic and challenge cocaine. Acute saline included 6\u20138 animals in each time point for LCtx, NAc and DS. Results indicate mean\u00a0\u00b1\u00a0s.e.m.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/31220/elife-31220-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Schematic of experimental paradigm. (B) Comparison of average transcriptional induction of 78 genes following acute LiCl (n\u00a0=\u00a05) or repeated LiCl (n\u00a0=\u00a04) at 1 hr time point, in limbic cortex (LCtx), nucleus accumbens (NAc), dorsal striatum (DS), amygdala (Amy), lateral hypothalamus (LH), hippocampus (Hipp). Genes are sorted alphabetically. Results indicate mean\u00a0\u00b1\u00a0s.e.m. (C) Locomotor activity of mice following acute i.p. exposure to 150 mg/kg (n\u00a0=\u00a04) or 250 mg/kg LiCl (n\u00a0=\u00a04). (D) Radar plots representing the transcriptional response 1 hr following 150 mg/kg and 250 mg/kg of LiCl in the LCtx, NAc, DS, Amy, LH and Hipp. Results indicate mean\u00a0\u00b1\u00a0s.e.m.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/31220/elife-31220-fig1-figsupp5-v3.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) Experimental paradigm for i.p. saline injections. (B) Bar graphs demonstrating the transcriptional induction of Arc, Egr2, Egr4 and Fos in the LCtx, NAc, and DS (limbic cortex, nucleus accumbens, and dorsal striatum, respectively) 1 hr following i.p. injection of saline with no prior habituation (n\u00a0=\u00a04), or following three days of habituation (n\u00a0=\u00a05). Results show mean\u00a0\u00b1\u00a0s.e.m.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/31220/elife-31220-fig1-figsupp6-v3.jpg)\n\n**Figure 1\u2014figure supplement 6.:** (A) Schematic of the experimental paradigm of i.p. injections of saline. (B) Expression matrix of the transcriptional induction of IEGs following acute or repeated saline experiences. Each column represents the transcriptional profile of an individual mouse. Sample numbers for each time point for acute saline: n\u00a0=\u00a010\u201312 in LCtx (limbic cortex); n\u00a0=\u00a012\u201313 in NAc (nucleus accumbens) and DS (dorsal striatum); n\u00a0=\u00a05 in Amy (amygdala), LH (lateral hypothalamus), Hipp (hippocampus). Sample numbers for each time point for repeated saline: n\u00a0=\u00a03\u20135 in LCtx, NAc, DS, Amy, LH and Hipp. Transcriptional induction is graded from blue (low) to red (high). Genes represented were induced on average at least 1.5-fold following either cocaine or LiCl experiences in any one of the studied brain nuclei. Genes are sorted according to peak induction in the LCtx. (C) Average transcriptional induction of 78 genes 1 hr following acute or repeated saline experience in the LCtx, NAc, DS, Amy, LH and Hipp. Genes are sorted alphabetically. Sample sizes: LCtx: n\u00a0=\u00a010 for acute saline and n\u00a0=\u00a05 for repeated saline; NAc: n\u00a0=\u00a012 for acute saline and n\u00a0=\u00a05 for repeated saline; DS: n\u00a0=\u00a012 for acute saline and n\u00a0=\u00a05 for repeated saline; Amy: n\u00a0=\u00a05 for acute saline and n\u00a0=\u00a05 for repeated saline; LH: n\u00a0=\u00a05 for acute saline and n\u00a0=\u00a05 for repeated saline; Hipp: n\u00a0=\u00a06 for acute saline and n\u00a0=\u00a05 for repeated saline. Results indicate mean\u00a0\u00b1\u00a0s.e.m.\n\nWe were next interested in comparing the transcription programs induced by cocaine with those induced by an experience of opposite valence, within the same experimental context. For this purpose, we performed acute, as well as repeated, administration of the pharmacological compound LiCl, which induces malaise and decreases locomotion (Figure 1D,E)(Fortin et al., 2016).\u00a0Similar to cocaine, LiCl drove robust induction of a small subset of IEGs (Figure 1F). In the case of LiCl experiences, 30 genes were induced above 2-fold, predominantly in the LCtx, Amy and LH (Figure 1, Figure 1\u2014figure supplement 4; two doses of LiCl (150/250 mg/kg) induced transcriptional responses of similar magnitude - Figure 1\u2014figure supplement 4). As a reference for the transcription induced by cocaine and LiCl experiences, we characterized the transcription induced by saline in control animals (before and after habituation, as well as following repeated exposure; Figure 1\u2014figure supplements 5 and 6). Cocaine and LiCl experiences shared a common core set of 16 genes (Arc, Atf3, Cyr61, Dusp1, Egr2, Egr4, Elovl1, Enpp6, Fos, Fosb, JunB, Ier2, Ier5, Nr4a1, Ngfr\u00a0and Npas4) of which we selected five genes for further investigation. Marker gene selection was performed by ranking genes according to the frequency of their induction (i.e. # of appearances above two-fold induction from 30 possible appearances across 6 structures in five experiences), as well as ranking in inverse order of the average variance (S2) of the magnitude of induction. The five genes with combined highest ranking in frequency of appearance and lowest variance in expression were selected for further analysis (Arc, Egr2, Egr4, Fos and Fosb; Figure 1G).\n\nTo test our hypothesis that experiences can be decoded from patterns of induced transcription, mice were classified based on the induction of five genes (Arc, Egr2, Egr4, Fos and Fosb) across five brain structures (LCtx, NAc, DS, Amy and LH), defining 25 gene-structure \u2018features\u2019. Classification performed according to these 25 features using the k-Nearest Neighbors algorithm (KNN) allowed precise allocation of individual animals based on the identity of the recent experience with 97.3% accuracy, such that only one mouse (out of 37) was incorrectly classified (Figure 1H).\n\nTaken together, these results suggest that induced transcriptional signatures, defined by the combinatorial expression of minimal subsets of IEGs across brain structures, can be derived from comprehensive gene expression programs induced following an experience. Moreover, these minimal subsets are sufficient to decode the recent salient experience of mice.\n\n### Distinct experiences are represented by unique transcriptional signatures\n\nTo further address the existence of a transcriptional code for experience, we expanded our study, including naturalistic volitional experiences of positive valence \u2013 sucrose consumption and reinstatement of feeding, as well as foot shock, an additional experience of negative valence. To provide a birds-eye view of the transcriptional landscape, we represent the experience-specific transcriptional signatures induced by each of these experiences using radar plots (Figure 2). This representation enables immediate identification of the major transcriptional attributes of each of the experiences. Four genes (Arc, Egr2, Egr4 and Fos) are shown for simplicity of presentation; for individual mice, see Figure 2\u2014figure supplement 1. For full data, see Supplementary file 2.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/31220/elife-31220-fig2-v3.jpg)\n\n**Figure 2.:** (A) Schematic of experimental paradigms. Experiences analyzed include saline (acute and repeated); foot shock (acute shock and no-shock controls exposed to the same environment); LiCl (acute and repeated); cocaine (acute, repeated and challenge following abstinence); sucrose (acute and repeated) and reinstatement of feeding (following 18 hr of deprivation). (B) Radar plots representing the transcriptional induction of Arc, Egr2, Egr4 and Fos across seven brain structures 1 hr after the different experiences [LCtx: limbic cortex (n\u00a0=\u00a04\u201314), NAc: nucleus accumbens (n\u00a0=\u00a04\u201314), DS: dorsal striatum (n\u00a0=\u00a04\u201314), Amy: amygdala (n\u00a0=\u00a04\u20139), LH: lateral hypothalamus (n\u00a0=\u00a03\u20139), Hipp: hippocampus (n\u00a0=\u00a04\u20139); VTA: ventral tegmental area (n\u00a0=\u00a02\u20138)]. Results are shown in log2 scale as mean\u00a0\u00b1\u00a0s.e.m. of induction over baseline control.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31220/elife-31220-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Radar plots representing the transcriptional induction of Arc, Egr2, Egr4 and Fos, in seven brain nuclei [LCtx: limbic cortex (n\u00a0=\u00a04\u201314), NAc: nucleus accumbens (n\u00a0=\u00a04\u201314), DS: dorsal striatum (n\u00a0=\u00a04\u201314), Amy: amygdala (n\u00a0=\u00a04\u20139), LH: lateral hypothalamus (n\u00a0=\u00a03\u20139), Hipp: hippocampus (n\u00a0=\u00a04\u20138), VTA: ventral tegmental area, (n\u00a0=\u00a02\u20138)] 1 hr following the defined experiences. Results indicate fold induction at 1 hr in log2 scale, of individual subjects over relevant control conditions.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31220/elife-31220-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Comparison of average transcriptional induction of Arc, Egr2, Egr4 and Fos in the LCtx, NAc, DS, Amy, LH and Hipp, 1 hr following acute exposure to the fear-conditioning chamber (no shock) or brief foot shock within the chamber (shock), to mice not exposed to chamber (baseline controls). Sample sizes across structures n\u00a0=\u00a03\u20138. Results indicate mean\u00a0\u00b1\u00a0s.e.m. One-way ANOVA with Tukey post hoc comparison: **p<0.01, ***p<0.001 vs no shock control, #p<0.05, ##p<0.01, ###p<0.001 vs baseline control.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/31220/elife-31220-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Comparison of the transcriptional profiles induced by acute and repeated aversive (LiCl) and rewarding (cocaine and sucrose) experiences reveal distinctions and commonalities in the encoding of an anticipated experience of defined valence. Results indicate mean\u00a0\u00b1\u00a0s.e.m Sample numbers for each time point- LCtx: limbic cortex (n\u00a0=\u00a06\u201314), NAc: nucleus accumbens (n\u00a0=\u00a06\u201314), DS: dorsal striatum (n\u00a0=\u00a06\u201314), Amy: amygdala (n\u00a0=\u00a04\u20139), LH: lateral hypothalamus (n\u00a0=\u00a03\u20139), Hipp: hippocampus (n\u00a0=\u00a04\u20139); VTA: ventral tegmental area (n\u00a0=\u00a02\u20138)]. Two-way ANOVA followed by Tukey post hoc comparison: *p<0.05, **p<0.01, ***p<0.001 vs control (saline or water), #p<0.05, #p<0.01, ###p<0.001 vs acute/repeated treatment.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/31220/elife-31220-fig2-figsupp4-v3.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Schematic of experimental paradigm for reinstatement of feeding. Mice were continuously fed or food deprived for 18 hr, followed by analysis of transcription at 0, 1, 2, 4 hr after reinstatement of feeding. (B) Time course (at 0, 1, 2, 4 hr following reinstatement of feeding, in comparison to continuously fed mice, \u2018fed\u2019) of transcriptional induction of Arc, Egr2, Egr4, Fos and Fosb in five brain nuclei. Data for each group was normalized to the 0 hr baseline controls. Sample numbers for each time point: LCtx, limbic cortex n\u00a0=\u00a010\u201311; NAc, nucleus accumbens n\u00a0=\u00a010\u201311; DS, dorsal striatum n\u00a0=\u00a07\u20139; Amy, amygdala n\u00a0=\u00a03\u20134; LH, lateral hypothalamus n\u00a0=\u00a02\u20134. Results indicate mean\u00a0\u00b1\u00a0s.e.m.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/31220/elife-31220-fig2-figsupp5-v3.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Comparison of transcriptional induction of Arc, Egr2, Egr4 and Fos, at 0 (deprived) and 1 hr following reinstatement of feeding (re-fed), and continuously fed mice (fed control) across five brain nuclei. Sample numbers for each time point: LCtx, limbic cortex n\u00a0=\u00a010\u201311; NAc, nucleus accumbens n\u00a0=\u00a010\u201311; DS, dorsal striatum n\u00a0=\u00a07\u20139; Amy, amygdala n\u00a0=\u00a03\u20134; LH, lateral hypothalamus n\u00a0=\u00a02\u20134. Results indicate mean\u00a0\u00b1\u00a0s.e.m. One-way ANOVA followed by Tukey post hoc comparison: *p<0.05, **p<0.01, ***p<0.001 vs fed control; #p<0.05, ##p<0.01, ###p<0.001 vs deprived; $p<0.05 vs fed control.\n\nThis presentation further highlights the unique nature of the transcriptional signatures characterizing each experience, and the dynamic changes in IEG induction following repeated experience. Furthermore, commonalities in the transcriptional representation of experiences with shared affective attributes are visually apparent in this presentation.\n\n### Transcriptional representation of positive and negative valence\n\nTo investigate the transcriptional representation of negative valence, we focused on the aversive experiences induced either pharmacologically by LiCl administration, or by acute administration of mild foot shock. It is worth noting that while LiCl and foot shock are both characterized by negative valence, they are otherwise distinct; LiCl causes visceral discomfort and reduced locomotion (Fortin et al., 2016), while foot shock induces acute pain and fear (Bali and Jaggi, 2015). Interestingly, exposure to the experimental context (a 18 \u00d7 20 cm perspex chamber with a metal grid floor) was by itself sufficient to induce IEG transcription across multiple structures in na\u00efve mice (\u2018no shock\u2019 control; Figure 2). Mice that received a foot shock within this context displayed an indistinguishable pattern of transcriptional induction compared to their \u2018no shock\u2019 controls (Figure 2\u2014figure supplement 2, Supplementary file 3\u00a0- T4), with the sole distinction being a robust induction of transcription in the Amy (primarily of Egr2 and Egr4; Figure 2, Figure 2\u2014figure supplement 2, Statistics Supplementary file 3 \u2013 T4, Row 4 \u2013 Columns B, C). This result demonstrates transcriptional coding of negative valence in the Amy, induced by the addition of a single variable (foot shock) to the experience of exposure to a novel environment. This observation was supported by the transcriptional representation of acute LiCl, which drove induction of Arc, Egr2 and Fos in the Amy (Figure 2, Figure 2\u2014figure supplement 3, Statistics Supplementary file 3 \u2013 T3, Row 4 \u2013 Columns A, B, D).\n\nIn contrast to the experiences of negative valence, the rewarding experiences of cocaine, sucrose and feeding had a broader representation across brain structures, which was most obvious in the case of feeding, where significant gene induction was observed across all structures studied (Figure 2\u2014figure supplements 4 and 5; Statistics Supplementary file 3 \u2013 T6). The representation of acute cocaine was primarily observed in striatal regions (DS and NAc) and small but significant changes were also observed in additional mesocorticolimbic structures (VTA, Amy, LCtx; Figure 2\u2014figure supplement 3; Statistics Supplementary file 3 \u2013 T2), while the representation of acute sucrose was quite minimal, and was reinforced upon additional exposure, as discussed below (Figure 2\u2014figure supplement 3; Statistics Supplementary file 3 \u2013 T5).\n\n### Opposing trajectories of the representation of repeated positive and negative experiences\n\nRepetition of aversive or rewarding experiences drove opposing trajectories of IEG induction (Figure 2; Figure 2\u2014figure supplement 3). Following repeated exposure to LiCl, we observed a significantly diminished transcriptional representation in the Amy, to levels similar to those observed following repeated saline experience [interaction of treatment (LiCl vs saline) and time (acute vs repeated); Egr2: F(1,18) = 8.47, p<0.01; Fos: F(1,20) = 17.2, p=0.001, Arc: F(1,20) = 8.72, p<0.01] (Statistics Supplementary file 3 \u2013 T3 \u2013 row 4). In contrast, repeated exposure to cocaine administration was associated with enhanced transcriptional induction in the LCtx, DS, and VTA (Statistics Supplementary file 3 \u2013 T2 \u2013 rows 1,3,7). This enhancement was characterized by the significant induction of Egr2 in the LCtx and DS and Fos in the LCtx, DS, VTA [interaction of treatment (cocaine vs saline) and time (acute vs repeated); Egr2: LCtx F(1,29) = 6.43, p<0.05; DS F(1,29) = 4.58, p<0.05; Fos: LCtx F(1,29) = 5.35, p<0.05; DS F(1,29) = 4.21, p<0.05, VTA F(1,13) = 14.3, p<0.01] (Statistics Supplementary file 3 \u2013 T2 \u2013 rows 1,3,7 columns B,D). However, in the NAc, the initially robust induction of Egr2 transcription following acute cocaine decreased after repeated administration (interaction of treatment and time, Egr2: F (1, 28)=39.7, p<0.0001) (Figure 2, Figure 2\u2014figure supplement 3; Statistics Supplementary file 3 \u2013 T2 \u2013 Column B row 2).\n\nRepeated exposure to sugar was also represented by significantly enhanced transcription, most prominently in the LCtx [interaction of sucrose (sucrose vs water) and time (acute vs repeated); Egr2: F(1,26) = 5.02, p<0.05, Fos: F(1,26) = 7.51, p=0.01; Arc: F(1,26) = 6.79, p<0.05] (Figure 2, Figure 2\u2014figure supplement 3; Statistics Supplementary file 3 \u2013 T5 \u2013 row 1, columns A,B,D). Furthermore, reinstatement of feeding was also represented by significant induction of IEGs in the LCtx, specifically Egr2 and Fos (Egr2: F(2,28) = 13.1, p<0.0001; Fos: F(2,31) = 41.5, p<0.0001) (Figure 2, Figure 2\u2014figure supplements 4 and 5; Statistics Supplementary file 3 \u2013 T6 \u2013 row 1, columns B,D). The experiences of repeated cocaine, repeated sucrose and reinstatement of feeding, though quite diverse in many affective and cognitive aspects, are all characterized by positive valence and therefore positive reinforcement. Our results suggest that a hallmark of increasing salience of positively reinforcing experiences may be increased transcriptional representation, specifically in the LCtx (Robinson and Berridge, 2008). This transcriptional representation of positively reinforcing experiences contrasts with the diminished transcriptional representation associated with habituation to anticipated and unavoidable aversive experiences.\n\n### Decoding recent experiences of individual mice from minimal transcription\n\nFinally, we tested our capacity to decode the recent experience of mice on the full complement of experiences studied in this project. The transcriptional induction of five genes (Arc, Egr2, Egr4, Fos and Fosb) across five structures (LCtx, NAc, DS, Amy, LH) forms 25 gene-structure 'features\u2019, which were used for the decoding with the KNN algorithm. We found that these 25 features supported the decoding of the recent experience of individual mice with 90.7% efficiency (Figure 3A). Random shuffling of the association of mice to experiences demonstrated the reliability of the classifier, and the potential for our results to generalize beyond the given dataset (p<1e\u22125; Figure 3B). These results suggest that obtaining a reliable transcriptional representation of a recent experience requires knowledge regarding both the transcriptional induction of several genes and the identity of structures within which they are induced. To further test this hypothesis, we ran a number of permutations. We tested the capacity to decode recent experiences following averaging the data for each gene across the five tested structures (losing spatial information; Figure 3\u2014figure supplement 1; classification accuracy 55%), as well as decoding by individual structures (the expression of 5 genes in a single structure; Figure 3C; classification accuracies 33\u201356%) or individual genes (the expression of a single gene across five structures; Figure 3D; classification accuracies 37\u201370%). Taken together, while we find that measurement of the expression of individual genes, such as Fos and Egr2, across the five brain structures can support classification (67%, 70% respectively), the prediction is significantly improved by the measurement of multiple features (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/31220/elife-31220-fig3-v3.jpg)\n\n**Figure 3.:** (A) Confusion matrix representing the classification accuracy (90.7%) of decoding the recent experience of individual mice based on 25 features. Efficiency is scaled from blue to green, with bright green corresponding to 100% efficiency (n\u00a0=\u00a054 mice). (B) Verification of classification validity. A randomization test was performed, in which the classifier was run on 105 random permutations of the association of individual mice to the appropriate experience, and the frequency of classification accuracies is plotted in grey, while the red dotted line represents the classification accuracy obtained for non-randomized data (90.7%). (C, D) Confusion matrices representing the classification accuracy of decoding utilizing transcriptional measurements from individual brain structures (five genes in one structure, (C) or individual genes (single genes across five structures, (D). Dots represent the identity of the experience, color-coded according to A. X and Y axes denote the actual and predicted conditions. (E) A decision tree enabling the classification of mice according to experience by minimal gene expression (one of many possible trees which can equivalently segregate the data). Mice are classified based on features that enable maximal segregation at each internal node. The thresholds define the allocation of mice to the left branch of the tree at each bifurcation. Mice are color-coded according to experience.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31220/elife-31220-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Confusion matrix representing the classification accuracy (55.6%) of decoding the recent experience of individual mice based on averaged transcriptional induction of Arc, Egr2, Egr4, Fos and Fosb) across five structures (LCtx, limbic cortex; NAc, nucleus accumbens; DS, dorsal striatum; Amy, amygdala; LH, lateral hypothalamus and Hipp, hippocampus). Classification was performed using k-Nearest Neighbor Algorithm with a leave one out approach. Accuracy is scaled from blue to green, with bright green corresponding to 100% accuracy (n\u00a0=\u00a054 mice).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31220/elife-31220-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A, E)\u00a0Selection of features (expression of IEG in a brain structure) with the highest potential to contribute to the classification of recent experiences (\u2018support\u2019). Support was defined by running 106 classifiers with varying composition of features, and calculating the mean accuracy for each feature over all the iterations to which it contributed, using the Random k-Nearest Neighbors algorithm (RKNN; A) or by calculating the decrease in Gini gain for each feature, using the Random Forest algorithm (RF; E). The grey zone defines the features with the highest support values, selected for classification. (B, F) Accuracy of classification obtained with an increase in the number of features. For each # (subset) of features, the features ranking highest in support were chosen and a KNN (B) or RF (F) classifier was evaluated using only those features. (C, G) Confusion matrix representing the classification accuracy of decoding the recent experience of individual mice based on the most informative features for KNN (Accuracy-93.6%; C) or most informative features for RF (Accuracy: 94.4%; G). Efficiency is scaled from blue to green, with bright green corresponding to 100% efficiency (n\u00a0=\u00a054 mice). (D, H) Verification of classification validity. A randomization test was performed, in which the classifier was run on 106 random permutations of the association of individual mice to the appropriate experience, and the frequency of classification accuracies is plotted in grey, while the red dotted line represents the classification accuracy obtained for non-randomized data.\n\nWith the objective of identifying the individual features that provide maximal support for decoding, we performed Random K-Nearest Neighbor (R-KNN) feature selection (Figure 3\u2014figure supplement 2A) (Li et al., 2011). We identified that\u00a0a combination of eight features (expression of Egr2 and Fos in the LCtx, NAc and Amy, and expression of Egr2 and Fosb in the DS) provided the highest support, with a decoding efficiency of 93.6% (Figure 3\u2014figure supplement 2B,C). An independent approach for feature selection (Breiman Random Forest [Breiman, 2001]) identified a largely overlapping set of features, with the top 10 features supporting a classification accuracy of 94.4% (p<1e\u22125; Figure 3\u2014figure supplement 2E\u2013H). An intuitive representation of the divergence of experiences based on particular features is provided by a decision tree (one of a number of possible trees), in which mice were assigned to appropriate branches according to the extent of induction of a particular gene in a given structure (Figure 3E).\n\nTaken together, these results establish that a minimal set of transcriptional markers form representative signatures of recent experience, enabling precise decoding of recent salient experiences at the resolution of individual mice.\n\n## Discussion\n\nThe brain creates representations of the world, encoding salient information for long-term storage to support the development of adaptive behaviors. In real time, the representation of information has been shown to be correlated with neural activity in distinct brain structures (Bialek et al., 1991). Powerful demonstrations of the potential to decode sensory experiences and correlates of emotional state have been made in both rodents and humans from neural activation patterns using in-vivo electrophysiology, fMRI, and other imaging techniques (Horikawa et al., 2013; Santoro et al., 2017; Kragel et al., 2016; Lin et al., 2005; Reber et al., 2002). In this study we demonstrate that multiplexed IEG expression data from multiple regions of the mouse brain enables the decoding of recent salient experiences with high precision. We show that beyond mere \u2018activity markers\u2019 for labeling neurons activated during an experience, IEG expression provides a quantitative and scalable metric, representing a neural transcriptional code for recent experience. This neural transcriptional code is defined by the combinatorial expression of marker transcripts across brain regions. Interestingly, we find components of induced transcriptional signatures that are associated with affective attributes of the experiences that are being encoded. Moreover, these IEG expression patterns are modulated following repeated administration of a stimulus of positive or negative value, suggesting a role for inducible transcription in sustaining long-term plasticity underlying the development of adaptive behavior. As this code is comprised of molecular components, it also provides a rich resource for biological insight into the processes underlying the long-term encoding of experience-dependent plasticity.\n\nTranscriptional markers have been successfully utilized for the classification of developmental stages (Matcovitch-Natan et al., 2016), diseases (Lamb, 2007; McKinney et al., 2010), and many other aspects of contemporary biomedical science (Collins and Varmus, 2015). Here we describe the utility of transcriptional markers for classification of salient experiences characterized by diverse affective properties. While the information embedded in the expression pattern of a single gene is not sufficient, a minimal subset of transcriptional markers enable the decoding of recent experience with high accuracy. Importantly, the principles we identify likely generalize to a broader set of experiences. Furthermore, it is likely that markers we utilize in our study could be substituted by other markers genes, providing similar classification accuracy.\n\nAccording to the Russell circumplex model (Russell, 1980; Posner et al., 2005), affect can be defined in two dimensions \u2013 valence and salience. Valence has been suggested to be encoded in the Amy, PFC, NAc and VTA (Namburi et al., 2016). Our results demonstrate that experiences of negative valence are represented by a distinct transcriptional induction in the Amy. In contrast, experiences of positive valence induce transcription in the LCtx, NAc, DS and VTA. Moreover, we report that upon repetition, the transcriptional representation within these structures is dynamically modulated, potentially underlying long-term adaptations following positive and negative reinforcement. Taken together, our results suggest that inducible transcription is a rich resource for the identification of brain regions that encode properties of an experience, providing biological insight into the molecular processes underlying experience-dependent plasticity. It should be noted that in this study we focused our analysis on structures associated with limbic and mesolimbic system. It is highly likely that transcriptional signatures across other brain areas (as well as for other experiences) would be related to different attributes of the experience, besides affect or valence.\n\nTo explain how changes in transcription could affect future behavior, we introduce the concept of \u2018predictive transcriptional coding\u2019. Predictive transcriptional coding frames inducible transcription not as a reporter of a recent event, but rather as encoding the valuation of the experience. This experience-dependent plasticity, mediated by transcription, sets the state of the network in the context of a particular experience, priming it for prospective network plasticity, and adjusting the response of the individual to the occurrence of a similar event in the future. This notion is conceptually similar to the \u2018reward prediction error\u2019 (Schultz, 2010), but is established on prolonged time scales. In this respect, transcription also serves as a \u2018salience filter\u2019 \u2013 defining whether an experience is significant enough to induce plasticity and worthy of encoding for long-term storage. Thus, the valuation of an experience that passes the \u2018salience filter\u2019 is encoded by the identity of the neural circuits recruited by the experience and the magnitude of transcription induced within them. A crucial question arising from this concept is: how is the threshold to commit to induction of transcription determined in neurons and neural networks? One possibility, worthy of future investigation, was proposed in a landmark treatise, in which the analogy of a \u2018genomic action potential\u2019 was drawn for mechanisms underlying inducible transcription (Clayton, 2000). According to this hypothesis, the threshold for commitment to transcription depends on the coincidence of glutamatergic and neuromodulatory inputs.\n\nOur work provides a numerical definition of the imprint of recent experience, demonstrating a quantitative and predictive approach for the analysis of neural plasticity underlying adaptive behavior. Quantitative definitions of interoceptive states are expected to have implications for drug development - providing objective metrics for comprehensive characterization of the perception and valuation ascribed to an experience by individual subjects. For example, in the context of abuse liability, an objective quantitative interoceptive metric of the hedonic potential of a compound could increase standardization, reducing the reliance on variable behavioral outcomes.\n\nWhile there is substantial investment being made in the development of methodologies for transcriptional profiling with deeper coverage and increasing spatial resolution, our study demonstrates that fundamental phenomena can be identified by applying simple methods with low spatial resolution and coverage. Future work, applying tools of higher resolution, could build on our observations to address additional questions \u2013 such as the spatial distribution of neuronal ensembles recruited by experience and the identity of cell types recruited by distinct experiences.\n\nApproaches for non-invasive quantitative measurement of the encoding of experience can be envisioned, utilizing fluorescent markers of inducible transcription in combination with whole-brain imaging (Eguchi and Yamaguchi, 2009). New technologies are rapidly emerging for whole-brain analyses of transcription (Renier et al., 2016; Sylwestrak et al., 2016; Ye et al., 2016), as are strategies for comprehensive profiling of single neurons (Citri et al., 2011; Lacar et al., 2016). These technological developments, together with the novel concept we develop here, are expected to provide the foundation for a new area of neuroscience research. This discipline, of \u2018Behavioral Transcriptomics\u2019, will apply transcriptional analysis for investigation of intricate mechanisms of neural circuit plasticity underlying cognition. We propose that the approach of behavioral transcriptomics will provide a systems-level view of the encoding of experiences to long-term memory. One could speculate that different attributes of an experience may be mediated by activation of defined signaling pathways at different cellular locations, each inducing a component of the transcriptional program. If so, taken to its extreme, deciphering this transcriptional code will enable precise decoding of synapse-specific plasticity from quantitative analysis of inducible transcriptional markers.\n\n## Materials and methods\n\n### Animals\n\nMale C57BL/6 mice aged 6\u20138 weeks (Harlan Laboratories, Jerusalem, Israel) served as subjects for the study. Mouse body mass ranged from 18 to 35 g, while between experimental groups in each repetition of experiments, the difference in body mass between animals did not exceed four grams. Four to five mice were housed per cage in all experiments except for sucrose consumption experiments, for which animals were single-housed. Mice were maintained in 12\u201312 hr light/dark cycle (0700 on/1900 off), in a temperature (20\u201322\u00b0C) and humidity (55 \u00b1 10%) controlled facility. Mice received ad libitum access to water and food, with the exception of the experiment studying reinstatement of feeding, in which they were food deprived for 18 hr before reinstatement of feeding. Mice were randomly assigned to experimental groups and tested according to Latin square design. All tests were conducted during the light phase of the circadian cycle. Each experiment was performed at least twice, by independent researchers in the group, and provided similar results. All animal protocols were approved by the Institutional Animal Care and Use Committees at the Hebrew University of Jerusalem and were in accordance with the National Institutes of Health Guide for the Care and Use of Laboratory Animals. A table defining the number of mice (\u2018n\u2019) contributing to each experiment is included as Supplementary file 2.\n\n### Behavioral assays\n\nMice were acclimated to the animal facility for at least 2\u20135 days, followed by 3\u20134 days of experimenter handling, before the start of an experiment. Maintenance of uniform conditions across experiments and extensive handling were essential for reducing experimental variability, enabling the identification of a robust transcriptional response specifically induced by the experience being tested and minimal contamination from contextual background. Behavioral sensitization to cocaine. Mice were subjected to three days of intraperitoneal (i.p.) saline injections (250 microliter/injection), prior to exposure to cocaine (20 mg/kg freshly dissolved in physiological saline to 2 mg/ml and injected at a volume of 10 ml/kg; cocaine was obtained from the pharmacy at Hadassah Hospital, Jerusalem). The acute cocaine group received a single i.p. dose of cocaine, followed by analysis of locomotor behavior for 15 min in a video-monitored open-field arena. Animals were finally taken from their home cage and sacrificed at 1, 2 and 4 hr following the cocaine injection. The repeated cocaine group received five consecutive daily injections of cocaine and were studied (similar to the acute cocaine group) following the fifth cocaine injection. The challenge cocaine group were treated as the repeated cocaine group, and then made abstinent from cocaine for 21\u201322 days, following which they were challenged with cocaine and re-exposed to the open-field arena. All responses were normalized to baseline controls (time 0), which were interleaved with their peer group, but were not treated on the day of the experiment. Additional reference groups included acute saline without habituation, which were habituated to the open-field arena for three days after a brief period of handling, and were sacrificed 1 hr following a single injection of saline. Responses in this group were normalized to controls (time 0), which were not exposed to any saline injections. The group of acute saline without habituation served as a reference for the habituation of the acute saline group, in which animals were treated identically to the acute cocaine group (i.e. three consecutive days of habituation to saline injections in the open-field arena), but received a saline injection on the day of the experiment. Following each i.p. injection, mice were placed in an open-field arena for 20 min, during which locomotion was assayed between minutes 2 to 17. LiCl exposure. All mice were habituated to injections of saline and locomotor monitoring in an open-field arena for three days preceding onset of the experiment. Animals were subjected to either acute or repeated administration of LiCl (Sigma-Aldrich, St.Louis, MO, USA). In acute LiCl experiments, mice were administered with either a single dose of LiCl (at 150 or 250 mg/kg) or saline. In the experiments testing repeated LiCl, mice received LiCl (150 mg/kg) for five consecutive days, and following a 48 hr break were re-exposed to LiCl or saline. Mice were divided into four groups: a) Received saline injections for five days and were not exposed to an injection on the last day (saline-0h), b) Received LiCl injections for five days and were not exposed to an injection on the last day (LiCl-0h), c) Received saline injections for five days and were subjected to saline injection on the last day (repeated saline), d) Received LiCl injections for five days and were exposed to LiCl injection on the last day (repeated LiCl). In all experiments, immediately following administration of LiCl or saline, mice were placed in video-monitored open-field arenas for 30 min. Reinstatement of feeding. Mice were food deprived for 18 hr before the experiment and then re-exposed to food for 1, 2 or 4 hr before they were sacrificed. Control animals (0 hr) were sacrificed immediately after the 18 hr food restriction. An additional reference group was allowed to continuously feed. Sucrose Consumption. Mice were single-housed for at least seven days before the experiment and habituated to the addition of a second water bottle in the cage for three days before the onset of the experiment. Acute exposure to sucrose was tested by habituating mice to the bottle with 10% sucrose overnight (16 hr), and 48 hr later, re-exposing the mice to a bottle with sucrose or water (control) for 1 hr. Repeated exposure to sucrose was tested by exposing mice to sucrose repeatedly for eight consecutive days, 2 hr each day (12:00-14:00), and after a 48 hr break, re-exposed to sucrose or water (control) for 1 hr. Mice were sacrificed 1 hr following the exposure to sucrose. Sucrose and water intake were measured as a test for sucrose preference over water. Foot Shock. Following habituation to the experimental setup, the mice were placed in the experimental chamber (20 \u00d7 18 cm) for three minutes, during which time, baseline freezing behavior was measured. At three minutes, each subject received three mild foot shocks (2 s, 0.7 mA) separated by 30 s interval and post-shock freezing behavior was assessed immediately thereafter for 30 s before return to the home cage. Freezing, defined as a lack of movement other than respiration, was measured using Ethovision software (Noldus, Wageningen, The Netherlands).\n\n### Locomotor activity measurement\n\nLocomotor activity was assessed in sound- and light-attenuated open-field chambers. Mice were placed individually in a clear, dimly lit Plexiglas box (30\u00a0\u00d7\u00a030\u00a0\u00d7\u00a030 cm) immediately after injection of cocaine, LiCl or saline. Activity was monitored with an overhead video camera for 20 or 30 min (in cocaine sensitization and LiCl experiments respectively) using Ethovision software (Noldus, Wageningen, The Netherlands).\n\n### Dissections\n\nPerformed as previously described (Turm et al., 2014). Mice were deeply anesthetized with Isoflurane (Piramal Critical Care, Bethlehem, PA, USA) and euthanized by cervical dislocation, followed by rapid decapitation and harvesting of brains into ice cold artificial cerebrospinal fluid (ACSF) solution (204 mM sucrose, 26 mM NaHCO3, 10 mM glucose, 2.5 mM KCl, 1 mM NaH2PO4, 4 mM MgSO4 and 1 mM CaCl2; all from Sigma-Aldrich, St. Louis, MO). Coronal slices (400 \u00b5m) were cut on a vibrating microtome 7000 smz2 (Camden Instruments, Loughborough, UK) in ice-cold artificial cerebrospinal fluid (ACSF). Brain regions [Limbic cortex (LCtx), Nucleus Accumbens (NAc), Dorsal Striatum (DS), Amygdala (Amy), Lateral Hypothalamus (LH), Hippocampus (Hipp) and Ventral Tegmental Area (VTA)] were dissected from relevant slices under a stereoscope (Olympus, Shinjuku, Tokyo, Japan). Samples of LCtx, NAc, DS, Amy, LH AND Hipp were obtained from 2* 400 \u00b5m thick sections, while VTA, was obtained from 2* 200 \u00b5m thick sections (Figure 1\u2014figure supplement 1). All of the steps were performed in strictly cold conditions (~4\u00b0C) and care was taken to avoid warming of the tissue sections or the ASCF at all times. The tissue pieces were immediately submerged in Tri-Reagent (Sigma-Aldrich, St.Louis, MO) and stored at \u221280\u00b0C until processing for RNA extraction.\n\n### Marker selection, RNA extraction, qPCR and microfluidic qPCR\n\nThe strategy for marker selection consisted of three steps. The initial list of candidate IEGs was compiled from a whole-genome microarray analysis of transcriptional dynamics induced by cocaine experiences in the nucleus accumbens (Illumina MouseRef-8 v2 Expression BeadChip microarrays; data not shown), as well as a survey of literature and databases pertaining to IEG expression. qPCR primer probes were developed for 212 genes and primer efficiency was tested, resulting in selection of 152 optimal primer pairs. Differential expression of the shortlisted IEGs was then tested on samples from multiple brain structures, dissected from mice following cocaine and LiCl experiences, utilizing microfluidic qPCR arrays. Genes that displayed at least 1.25-fold induction in any measurement were shortlisted, resulting in a list of 78 genes. The next round of feature selection involved ranking genes based on their frequency of induction and variance. For ranking based on frequency of induction, we counted the number of times each gene was induced above a threshold of two-fold induction across the different brain structures (LCtx, NAc, DS, Amy, LH and Hipp) in the cocaine (acute, repeated and challenge) and LiCl (acute and repeated) conditions (i.e. induction in six structures*five experiences = #/30). In addition, we ranked genes in inverse order of average variance (S2) of their induction across structures. The five genes that were induced most consistently (combined highest ranking in frequency and lowest in variance) were selected for further investigation. The ranking of these genes was as follows: Arc (#=22/30, S2\u00a0=\u00a02.9), Egr2 (#=21/30, S2\u00a0=\u00a02.8), Egr4 (#=18/30, S2\u00a0=\u00a01.53), Fos (#=14/30, S2\u00a0=\u00a00.43), Fosb (#=11, S2\u00a0=\u00a00.6). Thus, criteria for marker selection were orthogonal to the tested hypothesis, supporting unbiased analysis.\n\nRNA extraction was performed strictly in cold RNase-free conditions. Tissue was homogenized using a 25G needle attached to a 1 ml syringe or using TissueLyser LT (Qiagen, Redwood city, CA, USA). The homogenate was centrifuged at high speed (15 k g for 10 min) and the supernatant was mixed with chloroform (Bio-Lab, Jerusalem, Israel) by vigorous shaking and centrifuged (15 k g for 15 min) to separate the RNA from other nucleic acids and proteins. Isopropanol (J. T. Baker, Center Valley, PA) and glycogen (Roche, Basel, Switzerland) were added to the aqueous layer and samples were placed either at \u221220\u00b0C for 24 hr or at \u221280\u00b0C for 1 hr (producing comparable results). The samples were centrifuged at high speed (15 k g for fifteen min) for the precipitation of the RNA. The RNA was then washed in 75% ethanol (J. T. Baker, Center Valley, PA) by centrifugation (12 k g for five min), dried and dissolved in ultrapure RNase free water (Biological Industries, Kibbutz Beit Haemek, Israel). RNA concentration was measured with a NanoDrop 2000c spectrophotometer (Thermo, Wilmington, DE) and random-primed cDNA was prepared from 100 to 300 ng of RNA, with use of a High Capacity cDNA Reverse Transcription Kit (Applied Biosystems, Foster city, CA), following manufacturer guidelines.\n\ncDNA was processed for qPCR analysis using qPCR primer pairs (IDTDNA, Coralville, IA) and SYBR Green in a Light-cycler 480 Real Time PCR Instrument (Roche Light Cycler*480 SYBR Green I Master, Roche, Basel, Switzerland) according to manufacturer guidelines. Relative levels of gene expression (\u0394Ct) were obtained by normalizing gene expression to a housekeeping gene (GAPDH). Fold induction was calculated using the \u0394\u0394Ct method, normalizing experimental groups to the average of a relevant control group.\n\nMicrofluidic qPCR, querying 96 samples against 96 sets of qPCR probes was performed utilizing Fluidigm Biomark Dynamic IFC (integrated fluidic circuit) Arrays (Fluidigm Corp, South San Francisco, CA). Briefly, samples are subjected to targeted preamplification to enrich for specific gene products, which were then assayed with dynamic array fluidic microchips. Sample preparation was performed according to previously published protocols (Turm et al., 2014). Targeted pre-amplification (STA) was achieved by mixing samples with a set of diluted primer pairs in TaqMan PreAmp Mastermix (Applied Biosystems; Foster City, CA, USA) followed by 10 min of denaturation at 95\u00b0C and 14 cycles of amplification (cycles of 95\u00b0C for 15 s and 60\u00b0C for 4 min). Primers were then eliminated by use of ExoI exonuclease (NEB; Ipswich, MA), placed in a thermal cycler at 37\u00b0C for 30 min and then at 80\u00b0C for 15 min. Samples were then loaded onto a primed dynamic array for qPCR in a specialized thermal cycler [Fluidigm Biomark; Thermal mixing: 70\u00b0C for 40 min, 60\u00b0C for 30 s, 95\u00b0C denaturation for 60 s, followed by 40 cycles of PCR (96\u00b0C for 5 s, 60\u00b0C for 20 s)]. For data analysis, a reference set of genes was identified, whose expression remained constant across all experimental conditions (Dkk3, Tagln3, Gars, Scrn1, Rpl36al, Mcfd2, Psma7 and Hpcla4). In order to reduce the potential for introduction of experimental error by normalization to a single gene, a 'global-normalization' Ct value was created for each sample from the average Ct values of the genes within the reference set. Fold induction was calculated using the \u0394\u0394Ct method, normalizing each gene in a sample to the global-normalization value (\u0394Ct), followed by normalization of the experimental groups to the average of their relevant control group.\n\n### Data analysis\n\nAll data are presented as mean\u00a0\u00b1\u00a0standard error (s.e.m.). Data were analyzed using one-way or two-way analysis of variance (ANOVA), as appropriate. Tukey or Dunnett test was used for post hoc analyses of significant ANOVAs to correct for multiple comparisons. Differences were considered significant at the level of p<0.05. Statistical analysis was performed, and bar graphs and line graphs were created, with Prism 6.0 (GraphPad, San Diego, CA). Heat maps were created in MATLAB R2012a (Mathworks, Natick, MA). Radar plots were created in Origin 6.0 (Originlab, Northampton, MA). Codes were written in MATLAB R2015b (MathWorks, Natick, MA) and confusion matrices, randomization plots were created in Python using the Matplotlib library (http://matplotlib.org).\n\n### Computational analyses\n\nThe analysis was performed on data obtained from 54 mice, each of which experienced one of the experiences (acute, repeated or challenge cocaine, acute and repeated sucrose, reinstatement of feeding, acute and repeated LiCl and foot shock and no-shock controls exposed to the same environment). Each mouse was represented by a vector of twenty-five features [corresponding to the induction of five genes (Arc, Egr2, Egr4, Fos and Fosb) across five structures [limbic cortex (LCtx), nucleus accumbens (NAc), dorsal striatum (DS), amygdala (Amy) and lateral hypothalamus (LH)]. Each gene-structure combination was defined as a \u2018feature\u2019.\n\n### Supervised classification\n\nThe classifier used was k-Nearest Neighbors (KNN), with k\u00a0=\u00a01 over the Euclidean space, unless otherwise stated. This approach was selected based on the observation that the transcriptional response of mice within an experience group formed unique clusters. We evaluated the performance of our classification by a leave-one-out method. In this approach, we iterated over each sample in our training set and classification was performed given the rest of the training set. Visualization of the accuracy of classification was performed using a confusion matrix, which conveys both mean precision and mean recall of each condition classified.\n\n### Feature selection\n\nFeature selections were performed using Random k-Nearest Neighbors (RKNN) (Li et al., 2011)\u00a0or Breiman Random Forest (RF) (Breiman, 2001) algorithm. For RKNN, the contribution of each feature for classification of individual experiences was called support. We chose large (n\u00a0=\u00a01e6), random subsets of the twenty five available features in varying sizes (between one and twenty five). For each such subset we trained a classifier. Each feature f appeared in some KNN classifiers, for example, set C(f) of size M, where M is the multiplicity of f. In turn, each classifier c \u2208 C(f) is an evaluator of its m features. We defined the support of a feature f as the mean accuracy of all the classifiers in C(f). Namely:\n\n$$\nsupport(f)=\\frac{\\sum_{c\u03f5C(f)}accuracy(c)}{M}\n$$\n\nTo further examine the effect of feature set sizes on classification performance we evaluated the classification accuracy of different subset sizes in the following manner: for each case, we chose the n features which were ranked the highest in their support, and evaluated the KNN classifier trained with those features only.\n\nFor classification using Random Forest (RF), we used the Breiman random forest algorithm (Breiman, 2001; ), according to which a large number (n\u00a0=\u00a01e5) of decision trees were built, where each tree used a varying number of features (between 1 and 25). Bifurcations were chosen according to modified Gini gain. For each feature, we averaged over the decrease in the Gini gain (MDG) (Han et al., 2016) over the ensemble of decision trees. The selected features were then evaluated using a regularized (pruned) decision tree with a maximal depth of 4, using a k-cross validation process with k\u00a0=\u00a010, with the constraint of a minimum categorization of 3 animals per group. The decision tree was constructed using the CART decision tree construction algorithm (Breiman et al., 1984) (Figure 3\u2014figure supplement 2E\u2013H).\n\n### Decision tree\n\nTo provide an example of a descriptive classifier, we created a decision tree using the CART algorithm with Information Gain (Ben-David and Shalev-Shwartz, 2014). No constraints were applied while building this tree.\n\n### Randomization\n\nConsidering the limited size of our dataset, we wanted to ensure that the classifier was not over fitted to our training set S. For this purpose, we produced a large number N (N\u00a0=\u00a01e5) of permuted versions of our training set (si, ...sN), and created KNN or decision tree as the classifiers in the same way as for the original data. The permutation was performed by shuffling the association of individual mice with experiences. For each such permuted training set we trained a classifier and evaluated its classification accuracy (leave-one-out, see previous description). We calculated the empirical p value (p<1e\u22125 for both conditions) for the classification accuracy on our original training set in the following manner:\n\n$$\np\u2212val=\\frac{1}{N}\\sumi=1N\ud835\udfd9_{acc_{(S_{i})}>acc(S)}\n$$\n\n### Data and code availability\n\nThe data sets generated during the current study, as well as the code used for analysis have all been uploaded as supplementary material (supplementary file 1\u20134, source code 1\u201311).\n",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "ed37d925-6ce4-49f3-a780-c391b8b815e9",
+      "submission_id": "5b418874-23ec-4d46-991a-ba73fb579d5f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sacha B Nelson, Brandeis University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.31220.036](https://doi.org/10.7554/eLife.31220.036)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Salient Experiences are Represented by Unique Transcriptional Signatures in the Brain\" for consideration by eLife. Your article has been favorably evaluated by Aviv Regev (Senior Editor) and three reviewers, one of whom, Sacha Nelson, is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Pavel Osten (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors use real-time PCR from dissected brain regions to assess the immediate early gene (IEG) transcriptional responses to a variety of rewarding and aversive experiences including drugs of abuse, feeding, foot shock and gastric distress. Results show specific transcriptional signatures for each experience, enabling decoding of the experience. Moreover, transcriptional codes appeared to primarily reflect the valence of the event, with experiences of neutral or negative valence showing opposing patterns of transcriptional activity. This is an interesting and novel approach akin to efforts to decode experience from brain imaging and neural recordings.\n\nEssential revisions:\n\n1) Increasing the rigor of Feature Selection: There is a fundamental issue with the number of features considered in the analyses and how they were selected from what was measured. Initially, 152 IEGs are measured in 7 brain areas (=1064 features). Then, the number of IEGs is reduced to 78 (>1.25-fold induction). From these, 5 are selected (Arc, Egr2, Egr4, Fos and Fosb), but this step is not well described or justified. Potentially, some of the reduction could be attributed to a priori assumptions based on the literature, but these should be orthogonal to the tested hypotheses (see below) and need to be justified.\n\nIn addition, some analyses only consider a smaller number of brain areas, without clear justification. All of these choices can be extremely impactful and may strongly affect the results and ultimately the conclusions drawn from the data. Most importantly, criteria for these choices need to be orthogonal to the tested hypothesis (they cannot depend on differences in IEGs between experiences). If feature selection is non-independent, subsequent analyses will be biased and produce invalid results. The authors need to describe what criteria were used for feature selection (regions and IEGs) and whether these criteria were orthogonal to comparisons among individual experiences. For example, the formal feature selection procedure conducted for results reported in Figure 3 is non-independent, resulting in biased (invalid) classification accuracies. The problem is that the same data were used to select features (estimate \"support\") and also to evaluate classifier performance, which is circular. Feature selection must be based on nested cross-validation within the training data only. For instance, the algorithm should start with all 1064 features (or 78 x 7 = 546 features) and use nested cross-validation to select a feature set that is then used to determine classifier accuracy in the left-out test data.\n\n2) Controlling for multiple comparisons \u2013 this is required for all tests.\n\n3) Statistical testing is needed for many results presented in the manuscript. No statistical tests are reported for any of the results summarized in the sentence \"The representation of rewarding experiences are characterized by robust transcriptional induction in the LCtx, NAc, DS, and VTA, while the representations of aversive experiences are dominated by transcriptional induction in the Amy\". There are also no tests for whether transcriptional signatures of different experiences with the same or different valence are positively or negatively correlated. All descriptive statements should be backed by appropriate statistical tests within the manuscript.\n\n4) The authors contrast the idea of a \"transcriptional code\" with the idea of IEG expression as simply \"molecular markers for labelling neuronal populations that undergo plastic changes.\" The issue of the degree to which differences in which genes are transcribed vs. where in the brain they are transcribed is not satisfyingly analyzed. Encoding that matches different experiences to different transcripts would be a transcriptional code in the sense that many might assume from use of the term. On the other hand, encoding that matches different experiences to different brain regions would be quite akin to the \"molecular marker\" model the authors wish to reject. In between these two extremes, and probably closer to the data is the view that different experiences activate different brain regions, but that different brain regions also have different preferred mixtures of IEGs to activate. Gene-structure pairs are treated as features, but the relative degree to which this is a \"spatial\" code across brain regions vs. a genetic code across genes is unclear. The authors should attempt to separate these two contributing factors to more precisely specify what kind of \"neural code embedded in transcription\" they are talking about. It looks from Figure 2B, for example, like there is a strong \"shape similarity\" across experiences within a region. This would seem to imply that relative activation of the 4 genes tested is more a function of the region than of the experience (e.g. LH and VTA have relatively little activation of Arc). On the other hand, overall magnitude is more related to the interaction between the experience and the structure (cocaine for VTA and DS; foot shock for hipp).\n\n5) The current findings suggest that transcriptional signatures for individual experiences are primarily driven by salience and valence. However, this could simply be a consequence of the (reward-related) brain regions considered here. It is possible that transcriptional signatures in other brain areas are not related to valence, and this should be discussed.\n\n6) Title: it is convention for eLife papers to include some reference to the preparation used. This could be achieved by including the word \"rodent\" or at least \"mammalian\" before the word \"brain\" in the title.\n",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f071fcfe-080a-4fbf-97bb-7489509b0124",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C1",
+      "claim": "Inducible transcription is essential for the consolidation of salient experiences into long-term memory.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well established that inducible transcription is essential for the consolidation of salient experiences into long-term memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "7f9e0040-9ea2-4c2a-baa7-40790ccedd00",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C2",
+      "claim": "Neuronal plasticity induced by salient experiences depends on the induction of temporally-defined waves of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "This neuroplasticity, induced by salient experiences, has been shown to depend on the induction of temporally-defined waves of transcription (Alberini, 2009; Alberini and Kandel, 2015; McClung and Nestler, 2008; Flavell and Greenberg, 2008; West and Greenberg, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "9163af92-e1d9-40bc-9642-f5cf55a47aad",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C3",
+      "claim": "The earliest wave of transcription consists of the expression of immediate-early genes (IEGs).",
+      "claim_type": "EXPLICIT",
+      "source": "The earliest of these waves consists of the expression of immediate-early genes (IEGs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "29cea5ef-3775-469e-81f9-d633f21b106f",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C4",
+      "claim": "IEGs have been conventionally treated as molecular markers for labeling neuronal populations that undergo plastic changes during the formation of long-term memory.",
+      "claim_type": "EXPLICIT",
+      "source": "IEGs have been conventionally treated as molecular markers for labeling neuronal populations that undergo plastic changes during the formation of long-term memory (Cruz et al., 2013; Minatohara et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "e596abd1-fd7b-4d17-820d-61defbc023e2",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C5",
+      "claim": "IEGs contribute significantly to synaptic plasticity and memory formation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the literature indicates a much more significant contribution of IEGs to synaptic plasticity and memory formation (Lanahan and Worley, 1998; Okuno, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "5986928f-41c9-4f49-95be-2618802a0617",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C6",
+      "claim": "IEG transcription may represent the molecular signatures of long-term plastic changes underlying the formation of memory.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed that IEG transcription may represent the molecular signatures of long-term plastic changes underlying the formation of memory (Alberini, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "f396525f-09be-433f-a788-6a8bf964c5e5",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C7",
+      "claim": "Distinct cocaine experiences (acute, repeated, challenge) are characterized by robust induction of a handful of genes across different brain structures, with peak induction at 1 hr following cocaine administration.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that distinct cocaine experiences (acute, repeated, challenge) are characterized by robust induction of a handful of genes across the different brain structures studied, with peak induction at 1 hr following cocaine administration (Figure 1; Figure 1\u2014figure supplement 2; transcriptional dynamics shown in Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "c89031cc-0189-49ae-a062-f5c92a98ea4b",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C8",
+      "claim": "29 genes were induced above two fold in at least one of the six brain regions across the three cocaine experiences.",
+      "claim_type": "EXPLICIT",
+      "source": "29 genes were induced above two fold in at least one of the six brain regions (predominantly in LCtx, NAc and DS), across the three cocaine experiences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative result from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "fb3a7204-4c04-42d9-b198-149c93cf5484",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C9",
+      "claim": "LiCl administration induces malaise and decreases locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "For this purpose, we performed acute, as well as repeated, administration of the pharmacological compound LiCl, which induces malaise and decreases locomotion (Figure 1D,E)(Fortin et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation and experimental data shown in figures.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "43f95b11-4b36-4a2c-ae1e-72562607da75",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C10",
+      "claim": "LiCl drove robust induction of a small subset of IEGs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to cocaine, LiCl drove robust induction of a small subset of IEGs (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "28a1b755-4df3-41ea-bfc5-30711c9e22d9",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C11",
+      "claim": "30 genes were induced above 2-fold following LiCl experiences, predominantly in the LCtx, Amy and LH.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of LiCl experiences, 30 genes were induced above 2-fold, predominantly in the LCtx, Amy and LH (Figure 1, Figure 1\u2014figure supplement 4; two doses of LiCl (150/250 mg/kg) induced transcriptional responses of similar magnitude - Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from experimental data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "f7243fa8-f535-4265-a3f6-39577c678c6a",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C12",
+      "claim": "Cocaine and LiCl experiences shared a common core set of 16 genes (Arc, Atf3, Cyr61, Dusp1, Egr2, Egr4, Elovl1, Enpp6, Fos, Fosb, JunB, Ier2, Ier5, Nr4a1, Ngfr and Npas4).",
+      "claim_type": "EXPLICIT",
+      "source": "Cocaine and LiCl experiences shared a common core set of 16 genes (Arc, Atf3, Cyr61, Dusp1, Egr2, Egr4, Elovl1, Enpp6, Fos, Fosb, JunB, Ier2, Ier5, Nr4a1, Ngfr and Npas4) of which we selected five genes for further investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "d0b01c4f-be62-4216-8154-3c890099bbb2",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C13",
+      "claim": "Five genes (Arc, Egr2, Egr4, Fos and Fosb) were selected based on combined highest ranking in frequency of appearance and lowest variance in expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The five genes with combined highest ranking in frequency of appearance and lowest variance in expression were selected for further analysis (Arc, Egr2, Egr4, Fos and Fosb; Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Describes the selection criteria and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "cedee143-53c5-42b7-be0a-1a5a97cef306",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C14",
+      "claim": "Classification based on the induction of five genes (Arc, Egr2, Egr4, Fos and Fosb) across five brain structures allowed precise allocation of individual animals based on the identity of the recent experience with 97.3% accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Classification performed according to these 25 features using the k-Nearest Neighbors algorithm (KNN) allowed precise allocation of individual animals based on the identity of the recent experience with 97.3% accuracy, such that only one mouse (out of 37) was incorrectly classified (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from computational analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "60d762c1-0efa-4b02-8846-936639ce6ebc",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C15",
+      "claim": "Minimal subsets of IEGs are sufficient to decode the recent salient experience of mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these minimal subsets are sufficient to decode the recent salient experience of mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the classification results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "7daf824e-57c6-4126-8fe2-11404cc8868b",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C16",
+      "claim": "Exposure to the experimental context (a 18 \u00d7 20 cm perspex chamber with a metal grid floor) was sufficient to induce IEG transcription across multiple structures in na\u00efve mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, exposure to the experimental context (a 18 \u00d7 20 cm perspex chamber with a metal grid floor) was by itself sufficient to induce IEG transcription across multiple structures in na\u00efve mice ('no shock' control; Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation shown in figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "9c4bf14d-f526-4daf-971a-5c4df8585720",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C17",
+      "claim": "Mice that received a foot shock displayed an indistinguishable pattern of transcriptional induction compared to their 'no shock' controls, with the sole distinction being a robust induction of transcription in the Amy (primarily of Egr2 and Egr4).",
+      "claim_type": "EXPLICIT",
+      "source": "Mice that received a foot shock within this context displayed an indistinguishable pattern of transcriptional induction compared to their 'no shock' controls (Figure 2\u2014figure supplement 2, Supplementary file 3 - T4), with the sole distinction being a robust induction of transcription in the Amy (primarily of Egr2 and Egr4; Figure 2, Figure 2\u2014figure supplement 2, Statistics Supplementary file 3 \u2013 T4, Row 4 \u2013 Columns B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "edc84ad6-9505-4537-ac82-a29cc41371a4",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C18",
+      "claim": "Foot shock induces transcriptional coding of negative valence in the Amy.",
+      "claim_type": "EXPLICIT",
+      "source": "This result demonstrates transcriptional coding of negative valence in the Amy, induced by the addition of a single variable (foot shock) to the experience of exposure to a novel environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "10eae6a2-0d94-4bec-8dd0-b094fb219704",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C19",
+      "claim": "Acute LiCl drove induction of Arc, Egr2 and Fos in the Amy.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation was supported by the transcriptional representation of acute LiCl, which drove induction of Arc, Egr2 and Fos in the Amy (Figure 2, Figure 2\u2014figure supplement 3, Statistics Supplementary file 3 \u2013 T3, Row 4 \u2013 Columns A, B, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "debdf65b-486c-49f0-a5d1-9867e66d0cbd",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C20",
+      "claim": "Rewarding experiences of cocaine, sucrose and feeding had a broader representation across brain structures compared to experiences of negative valence.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the experiences of negative valence, the rewarding experiences of cocaine, sucrose and feeding had a broader representation across brain structures, which was most obvious in the case of feeding, where significant gene induction was observed across all structures studied (Figure 2\u2014figure supplements 4 and 5; Statistics Supplementary file 3 \u2013 T6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "051f53ba-b887-4025-9539-388b4352d340",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C21",
+      "claim": "The representation of acute cocaine was primarily observed in striatal regions (DS and NAc) and small but significant changes were also observed in additional mesocorticolimbic structures (VTA, Amy, LCtx).",
+      "claim_type": "EXPLICIT",
+      "source": "The representation of acute cocaine was primarily observed in striatal regions (DS and NAc) and small but significant changes were also observed in additional mesocorticolimbic structures (VTA, Amy, LCtx; Figure 2\u2014figure supplement 3; Statistics Supplementary file 3 \u2013 T2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "5f2a69fa-c9a2-45f3-b06e-3f63bff9c135",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C22",
+      "claim": "Repetition of aversive or rewarding experiences drove opposing trajectories of IEG induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Repetition of aversive or rewarding experiences drove opposing trajectories of IEG induction (Figure 2; Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "0e6151a1-3333-4dc6-bfb7-bfe0f75582c6",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C23",
+      "claim": "Following repeated exposure to LiCl, there was a significantly diminished transcriptional representation in the Amy, to levels similar to those observed following repeated saline experience.",
+      "claim_type": "EXPLICIT",
+      "source": "Following repeated exposure to LiCl, we observed a significantly diminished transcriptional representation in the Amy, to levels similar to those observed following repeated saline experience [interaction of treatment (LiCl vs saline) and time (acute vs repeated); Egr2: F(1,18) = 8.47, p<0.01; Fos: F(1,20) = 17.2, p=0.001, Arc: F(1,20) = 8.72, p<0.01] (Statistics Supplementary file 3 \u2013 T3 \u2013 row 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "cdbce140-02d0-4c49-9ec1-5a5753472192",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C24",
+      "claim": "Repeated exposure to cocaine administration was associated with enhanced transcriptional induction in the LCtx, DS, and VTA.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, repeated exposure to cocaine administration was associated with enhanced transcriptional induction in the LCtx, DS, and VTA (Statistics Supplementary file 3 \u2013 T2 \u2013 rows 1,3,7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "3af9069f-90f7-4a9d-8ff2-fab6445ad235",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C25",
+      "claim": "Repeated cocaine was characterized by significant induction of Egr2 in the LCtx and DS and Fos in the LCtx, DS, VTA.",
+      "claim_type": "EXPLICIT",
+      "source": "This enhancement was characterized by the significant induction of Egr2 in the LCtx and DS and Fos in the LCtx, DS, VTA [interaction of treatment (cocaine vs saline) and time (acute vs repeated); Egr2: LCtx F(1,29) = 6.43, p<0.05; DS F(1,29) = 4.58, p<0.05; Fos: LCtx F(1,29) = 5.35, p<0.05; DS F(1,29) = 4.21, p<0.05, VTA F(1,13) = 14.3, p<0.01] (Statistics Supplementary file 3 \u2013 T2 \u2013 rows 1,3,7 columns B,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "66bae4e8-723c-4dcb-8b50-76dc5f55b170",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C26",
+      "claim": "In the NAc, the initially robust induction of Egr2 transcription following acute cocaine decreased after repeated administration.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the NAc, the initially robust induction of Egr2 transcription following acute cocaine decreased after repeated administration (interaction of treatment and time, Egr2: F (1, 28)=39.7, p<0.0001) (Figure 2, Figure 2\u2014figure supplement 3; Statistics Supplementary file 3 \u2013 T2 \u2013 Column B row 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "8496f5aa-ee96-4267-abb3-ada6659083ec",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C27",
+      "claim": "Repeated exposure to sugar was represented by significantly enhanced transcription, most prominently in the LCtx.",
+      "claim_type": "EXPLICIT",
+      "source": "Repeated exposure to sugar was also represented by significantly enhanced transcription, most prominently in the LCtx [interaction of sucrose (sucrose vs water) and time (acute vs repeated); Egr2: F(1,26) = 5.02, p<0.05, Fos: F(1,26) = 7.51, p=0.01; Arc: F(1,26) = 6.79, p<0.05] (Figure 2, Figure 2\u2014figure supplement 3; Statistics Supplementary file 3 \u2013 T5 \u2013 row 1, columns A,B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "0c4c1c20-4b7e-4049-8b0a-dd9e17912fd3",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C28",
+      "claim": "Reinstatement of feeding was represented by significant induction of IEGs in the LCtx, specifically Egr2 and Fos.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, reinstatement of feeding was also represented by significant induction of IEGs in the LCtx, specifically Egr2 and Fos (Egr2: F(2,28) = 13.1, p<0.0001; Fos: F(2,31) = 41.5, p<0.0001) (Figure 2, Figure 2\u2014figure supplements 4 and 5; Statistics Supplementary file 3 \u2013 T6 \u2013 row 1, columns B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "3e7e4ac0-8472-4473-9746-6c0402d0bc38",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C29",
+      "claim": "A hallmark of increasing salience of positively reinforcing experiences may be increased transcriptional representation, specifically in the LCtx.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that a hallmark of increasing salience of positively reinforcing experiences may be increased transcriptional representation, specifically in the LCtx (Robinson and Berridge, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of experimental results with citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "f9faad9c-7558-4156-9d2c-67761322e7b4",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C30",
+      "claim": "25 gene-structure features supported the decoding of the recent experience of individual mice with 90.7% efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that these 25 features supported the decoding of the recent experience of individual mice with 90.7% efficiency (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "2d1f8d1f-53cd-45bd-9a2a-8155bf9eeb9f",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C31",
+      "claim": "Random shuffling of the association of mice to experiences demonstrated the reliability of the classifier (p<1e\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "Random shuffling of the association of mice to experiences demonstrated the reliability of the classifier, and the potential for our results to generalize beyond the given dataset (p<1e\u22125; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical validation of computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "ddbdffce-205b-49eb-b7a7-729fa9f844f9",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C32",
+      "claim": "Obtaining a reliable transcriptional representation of a recent experience requires knowledge regarding both the transcriptional induction of several genes and the identity of structures within which they are induced.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that obtaining a reliable transcriptional representation of a recent experience requires knowledge regarding both the transcriptional induction of several genes and the identity of structures within which they are induced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of computational analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "3f5aa52f-6431-4460-bd16-b1b511f9ff89",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C33",
+      "claim": "Decoding by averaging data for each gene across five tested structures (losing spatial information) resulted in 55% classification accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested the capacity to decode recent experiences following averaging the data for each gene across the five tested structures (losing spatial information; Figure 3\u2014figure supplement 1; classification accuracy 55%)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "ccb2d5ea-c1ea-4577-9681-5dfbfb319d96",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C34",
+      "claim": "Decoding by individual structures (expression of 5 genes in a single structure) resulted in classification accuracies of 33\u201356%.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as decoding by individual structures (the expression of 5 genes in a single structure; Figure 3C; classification accuracies 33\u201356%)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "85743911-aa81-4706-bfa0-3073ee2229c7",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C35",
+      "claim": "Decoding by individual genes (expression of a single gene across five structures) resulted in classification accuracies of 37\u201370%.",
+      "claim_type": "EXPLICIT",
+      "source": "or individual genes (the expression of a single gene across five structures; Figure 3D; classification accuracies 37\u201370%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "edfd9874-b20f-4160-ab7b-c1841d84bf97",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C36",
+      "claim": "Measurement of the expression of individual genes Fos and Egr2 across five brain structures can support classification at 67% and 70% respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, while we find that measurement of the expression of individual genes, such as Fos and Egr2, across the five brain structures can support classification (67%, 70% respectively), the prediction is significantly improved by the measurement of multiple features (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "79b91ab3-5928-45df-b20b-46646fa0f6f4",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C37",
+      "claim": "A combination of eight features (expression of Egr2 and Fos in the LCtx, NAc and Amy, and expression of Egr2 and Fosb in the DS) provided the highest support, with a decoding efficiency of 93.6%.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified that a combination of eight features (expression of Egr2 and Fos in the LCtx, NAc and Amy, and expression of Egr2 and Fosb in the DS) provided the highest support, with a decoding efficiency of 93.6% (Figure 3\u2014figure supplement 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from computational feature selection analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "258014e6-2c33-4d02-a837-0030d7d7e577",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C38",
+      "claim": "Random Forest feature selection identified a largely overlapping set of features, with the top 10 features supporting a classification accuracy of 94.4% (p<1e\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "An independent approach for feature selection (Breiman Random Forest [Breiman, 2001]) identified a largely overlapping set of features, with the top 10 features supporting a classification accuracy of 94.4% (p<1e\u22125; Figure 3\u2014figure supplement 2E\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from computational feature selection analysis with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "71d9db41-295c-42c5-9e5a-bbd56ec8e489",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C39",
+      "claim": "A minimal set of transcriptional markers form representative signatures of recent experience, enabling precise decoding of recent salient experiences at the resolution of individual mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results establish that a minimal set of transcriptional markers form representative signatures of recent experience, enabling precise decoding of recent salient experiences at the resolution of individual mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from computational analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "cba842fe-4bd5-483c-aedf-6af38885912d",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C40",
+      "claim": "Multiplexed IEG expression data from multiple regions of the mouse brain enables the decoding of recent salient experiences with high precision.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study we demonstrate that multiplexed IEG expression data from multiple regions of the mouse brain enables the decoding of recent salient experiences with high precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of main finding from experimental and computational results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "e0c36294-cfc3-4783-9743-473984d0ba7a",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C41",
+      "claim": "IEG expression provides a quantitative and scalable metric, representing a neural transcriptional code for recent experience.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that beyond mere 'activity markers' for labeling neurons activated during an experience, IEG expression provides a quantitative and scalable metric, representing a neural transcriptional code for recent experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "c33002b2-4ec6-4dd2-9686-84fa79cec613",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C42",
+      "claim": "The neural transcriptional code is defined by the combinatorial expression of marker transcripts across brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "This neural transcriptional code is defined by the combinatorial expression of marker transcripts across brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "40d7f21e-e2e0-46ba-8ee7-89f4dacbd20f",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C43",
+      "claim": "Components of induced transcriptional signatures are associated with affective attributes of the experiences that are being encoded.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we find components of induced transcriptional signatures that are associated with affective attributes of the experiences that are being encoded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "595ec3f9-e5bc-4aaa-8331-faca3dc91468",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C44",
+      "claim": "IEG expression patterns are modulated following repeated administration of a stimulus of positive or negative value.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these IEG expression patterns are modulated following repeated administration of a stimulus of positive or negative value, suggesting a role for inducible transcription in sustaining long-term plasticity underlying the development of adaptive behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings with interpretation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "b09a4105-63c8-4d65-8ab5-63b8d2e910f2",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C45",
+      "claim": "Experiences of negative valence are represented by a distinct transcriptional induction in the Amy.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that experiences of negative valence are represented by a distinct transcriptional induction in the Amy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "69362468-045c-465d-8047-cbaf4571cc95",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C46",
+      "claim": "Experiences of positive valence induce transcription in the LCtx, NAc, DS and VTA.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, experiences of positive valence induce transcription in the LCtx, NAc, DS and VTA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "dfe28d12-144f-4c3e-acd4-8607876b68be",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C47",
+      "claim": "Upon repetition, the transcriptional representation within these structures is dynamically modulated, potentially underlying long-term adaptations following positive and negative reinforcement.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we report that upon repetition, the transcriptional representation within these structures is dynamically modulated, potentially underlying long-term adaptations following positive and negative reinforcement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings with interpretation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "d3f83311-4c7f-49ac-9c8a-852590ec9b23",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C48",
+      "claim": "Inducible transcription is a rich resource for the identification of brain regions that encode properties of an experience.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results suggest that inducible transcription is a rich resource for the identification of brain regions that encode properties of an experience, providing biological insight into the molecular processes underlying experience-dependent plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the study's implications.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "767b896a-1634-46e3-8c6a-1ba6910afa9f",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C49",
+      "claim": "Male C57BL/6 mice aged 6\u20138 weeks served as subjects for the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Male C57BL/6 mice aged 6\u20138 weeks (Harlan Laboratories, Jerusalem, Israel) served as subjects for the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "e1907222-b4b8-4939-9eb9-b960ed33f1ad",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C50",
+      "claim": "Mice were maintained in 12\u201312 hr light/dark cycle (0700 on/1900 off), in a temperature (20\u201322\u00b0C) and humidity (55 \u00b1 10%) controlled facility.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were maintained in 12\u201312 hr light/dark cycle (0700 on/1900 off), in a temperature (20\u201322\u00b0C) and humidity (55 \u00b1 10%) controlled facility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "7211c1d4-def7-4304-8786-f29876558ecd",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C51",
+      "claim": "All tests were conducted during the light phase of the circadian cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "All tests were conducted during the light phase of the circadian cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "6db6c686-65f7-459f-81ee-9b39b6a37435",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C52",
+      "claim": "Cocaine was administered at 20 mg/kg via intraperitoneal injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were subjected to three days of intraperitoneal (i.p.) saline injections (250 microliter/injection), prior to exposure to cocaine (20 mg/kg freshly dissolved in physiological saline to 2 mg/ml and injected at a volume of 10 ml/kg; cocaine was obtained from the pharmacy at Hadassah Hospital, Jerusalem).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "53e10ebc-380d-48b5-8f56-fd69391bd2ed",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C53",
+      "claim": "LiCl was administered at 150 or 250 mg/kg via intraperitoneal injection.",
+      "claim_type": "EXPLICIT",
+      "source": "In acute LiCl experiments, mice were administered with either a single dose of LiCl (at 150 or 250 mg/kg) or saline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "6641fd5e-7fe4-4133-852f-2967b860bfb8",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C54",
+      "claim": "Foot shocks were administered at 0.7 mA for 2 seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "At three minutes, each subject received three mild foot shocks (2 s, 0.7 mA) separated by 30 s interval and post-shock freezing behavior was assessed immediately thereafter for 30 s before return to the home cage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "69a42cf8-814a-476a-baa4-b8e215262d76",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C55",
+      "claim": "Mice were food deprived for 18 hr before reinstatement of feeding experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were food deprived for 18 hr before the experiment and then re-exposed to food for 1, 2 or 4 hr before they were sacrificed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "4f5049ba-df71-4b49-aa0b-28370a614fe3",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C56",
+      "claim": "Mice were single-housed for at least seven days before sucrose consumption experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were single-housed for at least seven days before the experiment and habituated to the addition of a second water bottle in the cage for three days before the onset of the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "9a07dbba-f42c-4d07-8409-1580d0df09f4",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C57",
+      "claim": "Brain regions were dissected from 400 \u00b5m thick coronal slices for LCtx, NAc, DS, Amy, LH and Hipp.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples of LCtx, NAc, DS, Amy, LH AND Hipp were obtained from 2* 400 \u00b5m thick sections, while VTA, was obtained from 2* 200 \u00b5m thick sections (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "c8a7fe6f-ed6a-4470-8823-a11dd7ff9cd3",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C58",
+      "claim": "VTA was dissected from 200 \u00b5m thick coronal slices.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples of LCtx, NAc, DS, Amy, LH AND Hipp were obtained from 2* 400 \u00b5m thick sections, while VTA, was obtained from 2* 200 \u00b5m thick sections (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "2e296556-ca7e-4d3d-9f60-ee17b26d1310",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C59",
+      "claim": "The initial list of candidate IEGs was compiled from a whole-genome microarray analysis of transcriptional dynamics induced by cocaine experiences in the nucleus accumbens.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial list of candidate IEGs was compiled from a whole-genome microarray analysis of transcriptional dynamics induced by cocaine experiences in the nucleus accumbens (Illumina MouseRef-8 v2 Expression BeadChip microarrays; data not shown), as well as a survey of literature and databases pertaining to IEG expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of marker selection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "f7e12fde-8f78-433b-9e64-c06a7d5daab4",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C60",
+      "claim": "qPCR primer probes were developed for 212 genes and primer efficiency was tested, resulting in selection of 152 optimal primer pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "qPCR primer probes were developed for 212 genes and primer efficiency was tested, resulting in selection of 152 optimal primer pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "9627f100-78a7-4a56-88b0-9a4c491f6e41",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C61",
+      "claim": "Genes that displayed at least 1.25-fold induction in any measurement were shortlisted, resulting in a list of 78 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential expression of the shortlisted IEGs was then tested on samples from multiple brain structures, dissected from mice following cocaine and LiCl experiences, utilizing microfluidic qPCR arrays. Genes that displayed at least 1.25-fold induction in any measurement were shortlisted, resulting in a list of 78 genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of marker selection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "8e01bc53-163c-45a6-a6f1-87a80fd2abc8",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C62",
+      "claim": "The classifier used was k-Nearest Neighbors (KNN), with k = 1 over the Euclidean space.",
+      "claim_type": "EXPLICIT",
+      "source": "The classifier used was k-Nearest Neighbors (KNN), with k = 1 over the Euclidean space, unless otherwise stated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of computational methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "a15daef4-2f80-4b10-9200-d6d69a8c8325",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C63",
+      "claim": "Classification performance was evaluated by a leave-one-out method.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated the performance of our classification by a leave-one-out method. In this approach, we iterated over each sample in our training set and classification was performed given the rest of the training set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of computational methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "1bcb43c1-e7f1-48f0-8e68-c53f0fe025db",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C64",
+      "claim": "Feature selection was performed using Random k-Nearest Neighbors (RKNN) or Breiman Random Forest (RF) algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "Feature selections were performed using Random k-Nearest Neighbors (RKNN) (Li et al., 2011) or Breiman Random Forest (RF) (Breiman, 2001) algorithm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of computational methods with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "4ed99711-9b71-42f3-ac2e-f35fad9d266b",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C65",
+      "claim": "Neuronal plasticity enables cognitive and behavioral flexibility underlying the development of adaptive behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal plasticity enables cognitive and behavioral flexibility underlying the development of adaptive behaviors (Alberini, 2009; Alberini and Kandel, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "c8622290-b544-4235-874a-d70a64757525",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C66",
+      "claim": "Cocaine sensitization is one of the most widely applied paradigms for studying mechanisms of neural plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Cocaine sensitization is one of the most widely applied paradigms for studying mechanisms of neural plasticity, due to the robustness of the behavioral model and the detailed insight acquired into the underlying mechanisms (McClung and Nestler, 2008; Robbins et al., 2008; Hyman et al., 2006; Nestler, 2002; Robison and Nestler, 2011; L\u00fcscher, 2016; Piechota et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "020cc386-4e3d-4a51-aa68-214c40f45af3",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C67",
+      "claim": "Plasticity has been observed within individual limbic and mesolimbic brain structures following experiences included in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiences included in this study have been previously studied using electrophysiological measures, and plasticity has been observed within individual limbic and mesolimbic brain structures (Russo and Nestler, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "321d0818-1179-4afd-9b56-9bad8952f1d0",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C68",
+      "claim": "Transcriptional analysis enables parallel investigation of the representation of experience across multiple brain structures.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to classic electrophysiological measurements of plasticity, which focus on measurements with synapse specificity, transcriptional analysis enables parallel investigation of the representation of experience across multiple brain structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of methodological approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "fed0bdbf-3c52-451b-abba-504bd3be2f91",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C69",
+      "claim": "The encoding of complex reinforced experiences involves coordinated neural plasticity in multiple brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming that the encoding of complex reinforced experiences involves coordinated neural plasticity in multiple brain regions, we analyzed transcription across structures associated with the limbic and mesolimbic systems (Russo and Nestler, 2013; Haber and Knutson, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated assumption with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "78a7afd8-1003-4b6c-abf7-8b114ce8f2c8",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C70",
+      "claim": "The transcriptional representations of experience are robust, reliable and consistent.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that the transcriptional representations of experience are robust, reliable and consistent, enabling the decoding of the recent experience of mice with high levels of accuracy from a minimal transcriptional signature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of main findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "eef8ada0-84f4-4b3a-9c25-8152c6db9d75",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C71",
+      "claim": "Transcriptional hallmarks of affective attributes of experience are prominently demonstrated in the encoding of valence.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify transcriptional hallmarks of affective attributes of experience, prominently demonstrated in the encoding of valence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "cce60a5a-f39c-4d60-b20e-7f1c4accd0f4",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C72",
+      "claim": "Opposing patterns of transcriptional modulation underlie the development of habituation to experiences of negative valence, in comparison to repeated rewarding experiences associated with positive reinforcement.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we report opposing patterns of transcriptional modulation underlying the development of habituation to experiences of negative valence, in comparison to repeated rewarding experiences associated with positive reinforcement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "21ac1bbd-12b1-4b8f-b24a-114f4dae3b0a",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C73",
+      "claim": "Powerful demonstrations of the potential to decode sensory experiences and correlates of emotional state have been made in both rodents and humans from neural activation patterns using in-vivo electrophysiology, fMRI, and other imaging techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Powerful demonstrations of the potential to decode sensory experiences and correlates of emotional state have been made in both rodents and humans from neural activation patterns using in-vivo electrophysiology, fMRI, and other imaging techniques (Horikawa et al., 2013; Santoro et al., 2017; Kragel et al., 2016; Lin et al., 2005; Reber et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "bf32e701-4978-43dd-a580-759f3c59a9a0",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C74",
+      "claim": "IEG expression provides a quantitative and scalable metric beyond mere 'activity markers' for labeling neurons activated during an experience.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that beyond mere 'activity markers' for labeling neurons activated during an experience, IEG expression provides a quantitative and scalable metric, representing a neural transcriptional code for recent experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "6bbe2f6b-9dbb-4147-9c8b-98f04edb5f1f",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C75",
+      "claim": "Transcriptional markers have been successfully utilized for the classification of developmental stages, diseases, and many other aspects of contemporary biomedical science.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptional markers have been successfully utilized for the classification of developmental stages (Matcovitch-Natan et al., 2016), diseases (Lamb, 2007; McKinney et al., 2010), and many other aspects of contemporary biomedical science (Collins and Varmus, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "2465576f-f3b8-4883-b254-1cfe84df3341",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C76",
+      "claim": "The principles identified likely generalize to a broader set of experiences.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the principles we identify likely generalize to a broader set of experiences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the study's implications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "120c9a06-4f57-4552-98e2-2199b75ea3fd",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C77",
+      "claim": "Marker genes utilized in the study could be substituted by other marker genes, providing similar classification accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it is likely that markers we utilize in our study could be substituted by other markers genes, providing similar classification accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about the generalizability of findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "b88887f8-b799-4b43-8ccd-563bb6b83161",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C78",
+      "claim": "According to the Russell circumplex model, affect can be defined in two dimensions \u2013 valence and salience.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the Russell circumplex model (Russell, 1980; Posner et al., 2005), affect can be defined in two dimensions \u2013 valence and salience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "8e5f6144-e0c9-47af-81b1-0ce979e4e55e",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C79",
+      "claim": "Valence has been suggested to be encoded in the Amy, PFC, NAc and VTA.",
+      "claim_type": "EXPLICIT",
+      "source": "Valence has been suggested to be encoded in the Amy, PFC, NAc and VTA (Namburi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "b79c26ce-e03d-4f6b-bcaf-c7e7aceda317",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C80",
+      "claim": "Inducible transcription is a rich resource for the identification of brain regions that encode properties of an experience, providing biological insight into the molecular processes underlying experience-dependent plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results suggest that inducible transcription is a rich resource for the identification of brain regions that encode properties of an experience, providing biological insight into the molecular processes underlying experience-dependent plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the study's implications.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "3c5d5611-02a8-4f13-a337-9527a50d83bc",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C81",
+      "claim": "Transcriptional signatures across other brain areas would likely be related to different attributes of the experience, besides affect or valence.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that in this study we focused our analysis on structures associated with limbic and mesolimbic system. It is highly likely that transcriptional signatures across other brain areas (as well as for other experiences) would be related to different attributes of the experience, besides affect or valence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential findings in other brain areas.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "82015c98-679b-4a28-920c-ffae73361fc6",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C82",
+      "claim": "Predictive transcriptional coding frames inducible transcription as encoding the valuation of the experience rather than as a reporter of a recent event.",
+      "claim_type": "EXPLICIT",
+      "source": "To explain how changes in transcription could affect future behavior, we introduce the concept of 'predictive transcriptional coding'. Predictive transcriptional coding frames inducible transcription not as a reporter of a recent event, but rather as encoding the valuation of the experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Introduction of a new conceptual framework.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "d597402f-2281-4f31-8228-fee64ee4030f",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C83",
+      "claim": "Experience-dependent plasticity, mediated by transcription, sets the state of the network in the context of a particular experience, priming it for prospective network plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "This experience-dependent plasticity, mediated by transcription, sets the state of the network in the context of a particular experience, priming it for prospective network plasticity, and adjusting the response of the individual to the occurrence of a similar event in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of the predictive transcriptional coding concept.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "c2724356-4bfd-423e-af93-130f9a90d7f6",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C84",
+      "claim": "The concept of predictive transcriptional coding is conceptually similar to the 'reward prediction error', but is established on prolonged time scales.",
+      "claim_type": "EXPLICIT",
+      "source": "This notion is conceptually similar to the 'reward prediction error' (Schultz, 2010), but is established on prolonged time scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to established concept with citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "781e264a-0aab-4a17-bb97-4d0e891cdc18",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C85",
+      "claim": "Transcription serves as a 'salience filter' \u2013 defining whether an experience is significant enough to induce plasticity and worthy of encoding for long-term storage.",
+      "claim_type": "EXPLICIT",
+      "source": "In this respect, transcription also serves as a 'salience filter' \u2013 defining whether an experience is significant enough to induce plasticity and worthy of encoding for long-term storage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the role of transcription.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "c2e552c1-f985-4aa6-903d-5cb8554a2c2d",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C86",
+      "claim": "The valuation of an experience that passes the 'salience filter' is encoded by the identity of the neural circuits recruited by the experience and the magnitude of transcription induced within them.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the valuation of an experience that passes the 'salience filter' is encoded by the identity of the neural circuits recruited by the experience and the magnitude of transcription induced within them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of how experiences are encoded.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "de47c6e4-16f4-4c1d-b0a3-047ee0ed4ed1",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C87",
+      "claim": "The threshold for commitment to transcription depends on the coincidence of glutamatergic and neuromodulatory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility, worthy of future investigation, was proposed in a landmark treatise, in which the analogy of a 'genomic action potential' was drawn for mechanisms underlying inducible transcription (Clayton, 2000). According to this hypothesis, the threshold for commitment to transcription depends on the coincidence of glutamatergic and neuromodulatory inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis from prior work with citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "048c4bb0-7c89-43e7-b325-ffd26c91ec47",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C88",
+      "claim": "Quantitative definitions of interoceptive states are expected to have implications for drug development.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative definitions of interoceptive states are expected to have implications for drug development - providing objective metrics for comprehensive characterization of the perception and valuation ascribed to an experience by individual subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "ed6c5519-a4ca-4a96-bed2-8e6d5b362d6d",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C89",
+      "claim": "An objective quantitative interoceptive metric of the hedonic potential of a compound could increase standardization in the context of abuse liability, reducing the reliance on variable behavioral outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the context of abuse liability, an objective quantitative interoceptive metric of the hedonic potential of a compound could increase standardization, reducing the reliance on variable behavioral outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "4057340e-aca3-45d5-86b6-e7ae532cea7a",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C90",
+      "claim": "Fundamental phenomena can be identified by applying simple methods with low spatial resolution and coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "While there is substantial investment being made in the development of methodologies for transcriptional profiling with deeper coverage and increasing spatial resolution, our study demonstrates that fundamental phenomena can be identified by applying simple methods with low spatial resolution and coverage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the study's methodological implications.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "63ba9032-93d8-44e2-97d4-2cf579808172",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C91",
+      "claim": "Approaches for non-invasive quantitative measurement of the encoding of experience can be envisioned, utilizing fluorescent markers of inducible transcription in combination with whole-brain imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Approaches for non-invasive quantitative measurement of the encoding of experience can be envisioned, utilizing fluorescent markers of inducible transcription in combination with whole-brain imaging (Eguchi and Yamaguchi, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about future approaches with citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "d3027c1d-6616-40f6-aaba-80401822b21c",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C92",
+      "claim": "New technologies are rapidly emerging for whole-brain analyses of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "New technologies are rapidly emerging for whole-brain analyses of transcription (Renier et al., 2016; Sylwestrak et al., 2016; Ye et al., 2016), as are strategies for comprehensive profiling of single neurons (Citri et al., 2011; Lacar et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as current knowledge with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "cea9740e-a16d-4c5d-8e59-5e8b3fa293ad",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C93",
+      "claim": "The approach of behavioral transcriptomics will provide a systems-level view of the encoding of experiences to long-term memory.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the approach of behavioral transcriptomics will provide a systems-level view of the encoding of experiences to long-term memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "59a50b4c-fb64-4c3c-b515-f08543203a7e",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C94",
+      "claim": "Different attributes of an experience may be mediated by activation of defined signaling pathways at different cellular locations, each inducing a component of the transcriptional program.",
+      "claim_type": "EXPLICIT",
+      "source": "One could speculate that different attributes of an experience may be mediated by activation of defined signaling pathways at different cellular locations, each inducing a component of the transcriptional program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "dd00aac2-15b3-4126-82fb-5db78297a8fe",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "claim_id": "C95",
+      "claim": "Deciphering the transcriptional code will enable precise decoding of synapse-specific plasticity from quantitative analysis of inducible transcriptional markers.",
+      "claim_type": "EXPLICIT",
+      "source": "If so, taken to its extreme, deciphering this transcriptional code will enable precise decoding of synapse-specific plasticity from quantitative analysis of inducible transcriptional markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about future possibilities.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a7335933-dc31-463e-bd05-3fe1968509e9",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Cocaine and LiCl experiences induce robust transcription of a small subset of IEGs across multiple brain structures, with peak induction at 1 hour. The authors identified 29 genes induced >2-fold by cocaine and 30 genes by LiCl, sharing a common core of 16 genes. Five genes (Arc, Egr2, Egr4, Fos, Fosb) were selected based on frequency of appearance and low variance for further analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C13 provide converging evidence from qPCR data across multiple brain regions and time points. The selection criteria for marker genes (C13) are clearly defined and orthogonal to the tested hypothesis. The quantitative thresholds (2-fold induction) and statistical approaches are appropriate, with data shown in multiple figure panels supporting the temporal dynamics and spatial distribution of IEG induction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "feb7801d-c208-4881-94cc-0884c535835e",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Classification based on 25 features (5 genes \u00d7 5 brain structures) enables decoding of recent cocaine and LiCl experiences with 97.3% accuracy using k-Nearest Neighbors algorithm, with only 1 of 37 mice misclassified.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 demonstrate high classification accuracy with appropriate computational validation. The leave-one-out cross-validation approach is suitable for the sample size (n=37). However, the result would be strengthened by reporting confidence intervals and addressing potential overfitting concerns given the relatively small sample size and high dimensionality (25 features for 7 experience types).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "84d9641d-66fd-4aaa-99b6-9f2f0e9e9ad1",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Foot shock induces transcriptional coding of negative valence specifically in the amygdala, characterized by robust induction of Egr2 and Egr4. Context exposure alone induces IEG transcription across multiple structures, but foot shock selectively enhances amygdala transcription. This pattern is supported by acute LiCl also inducing Arc, Egr2, and Fos in the amygdala.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 provide strong evidence for valence-specific encoding in the amygdala. The experimental design appropriately includes 'no shock' controls to isolate the effect of aversive stimulation from contextual novelty. Statistical support is provided (Supplementary file 3), and the convergence of foot shock and LiCl data strengthens the interpretation of amygdala-specific negative valence encoding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "5a5afe0b-bdc9-41f8-9858-07b220f97561",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Rewarding experiences (cocaine, sucrose, feeding) show broader transcriptional representation across brain structures compared to negative valence experiences. Acute cocaine primarily activates striatal regions (DS, NAc) with smaller changes in VTA, Amy, and LCtx, while feeding induces significant gene expression across all structures studied.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 and C46 are well-supported by the radar plot visualizations and statistical analyses. The contrast between narrow amygdala-specific encoding of negative valence and broader mesolimbic/limbic encoding of positive valence is clearly demonstrated. However, the interpretation would benefit from discussion of potential confounds such as differences in locomotor activity or arousal between rewarding and aversive experiences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "fbf5dd62-2e28-4568-ac78-f2a61582a98b",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Repeated exposure to aversive (LiCl) versus rewarding (cocaine) experiences drives opposing trajectories of IEG induction. Repeated LiCl shows diminished amygdala transcription (habituation), while repeated cocaine shows enhanced transcription in LCtx, DS, and VTA, with region-specific patterns including decreased Egr2 in NAc but increased Egr2 and Fos in LCtx, DS, and VTA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 demonstrate opposing transcriptional dynamics with appropriate statistical analyses (two-way ANOVA with treatment \u00d7 time interactions). The F-statistics and p-values are reported for key comparisons. The interpretation of habituation (for aversive) versus sensitization (for rewarding) is reasonable, though alternative explanations such as ceiling effects or differential receptor regulation are not discussed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "788bfbba-577b-4153-95d2-81904e9f2ce4",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Repeated rewarding experiences (sucrose, feeding) show enhanced transcriptional representation in the limbic cortex, with significant induction of Egr2 and Fos. This pattern suggests that increased LCtx transcription may be a hallmark of increasing salience of positively reinforcing experiences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 are supported by statistical analyses showing significant treatment \u00d7 time interactions for sucrose and significant one-way ANOVA effects for feeding. However, C29 is interpretive and somewhat speculative, as the link between transcriptional magnitude and 'salience' is not directly tested. The citation to Robinson & Berridge (2008) provides theoretical support but does not validate the transcriptional measure as a direct readout of salience.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "82536fad-84fe-42bf-aba8-4f9d3371229d",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A minimal set of 25 transcriptional features (5 genes \u00d7 5 brain structures) enables decoding of 10 different experiences with 90.7% accuracy. Permutation testing (p<1e-5) validates classifier reliability. Both spatial (brain region) and molecular (gene identity) information are necessary for optimal decoding, as averaging across structures reduces accuracy to 55%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32, C39-C40 provide strong computational validation of the transcriptional code concept. The permutation testing appropriately addresses concerns about overfitting. The systematic ablation of spatial or molecular information (C33-C35) demonstrates the necessity of both dimensions. However, the generalizability beyond the specific experiences tested remains uncertain, and independent validation on held-out data would strengthen the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "f3c35497-6e15-4dc3-819c-befa6ed8479f",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Decoding accuracy depends on both spatial and molecular information. Averaging gene expression across structures yields 55% accuracy, individual structures yield 33-56% accuracy, and individual genes across structures yield 37-70% accuracy. Fos and Egr2 individually achieve 67% and 70% accuracy respectively, but multi-feature classification significantly improves performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 provide systematic ablation analysis demonstrating the importance of combinatorial coding. The range of accuracies for different feature subsets is clearly reported. This analysis strengthens the main conclusion that experience encoding requires distributed representation across genes and brain regions. However, the baseline accuracy for random classification (1/10 = 10%) should be explicitly stated for context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "e61e778a-7294-47fa-bb6f-0de885b3fb95",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Feature selection using Random k-Nearest Neighbors identifies 8 optimal features (Egr2 and Fos in LCtx, NAc, Amy; Egr2 and Fosb in DS) achieving 93.6% accuracy. Independent Random Forest feature selection identifies a largely overlapping set with top 10 features achieving 94.4% accuracy (p<1e-5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 demonstrate robust feature selection with convergent results from two independent algorithms (RKNN and Random Forest). The high classification accuracies with reduced feature sets suggest the transcriptional code can be efficiently compressed. The statistical validation (p<1e-5) is appropriate. However, the manuscript does not discuss whether these specific features would generalize to other experience sets or whether they are optimal only for this particular set of 10 experiences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "88cb3eb4-4594-44ca-8019-4716a6ea4dcb",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "IEG expression provides a quantitative neural transcriptional code for recent experience, defined by combinatorial expression across brain regions. Components of transcriptional signatures associate with affective attributes (valence, habituation, reinforcement), and patterns are modulated by repeated stimulus administration, suggesting a role in sustaining long-term plasticity underlying adaptive behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 and C70-C72 represent the main conceptual conclusions of the study. These are well-supported by the convergent experimental and computational evidence presented in earlier results. The demonstration of valence encoding (amygdala for negative, broader for positive), habituation (decreased transcription with repeated aversive), and sensitization (increased transcription with repeated rewarding) provides strong support for the transcriptional code concept. However, the causal link between transcriptional patterns and 'adaptive behavior' remains correlative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "c44f6a1d-7fe6-4d8b-8a44-57cec3e76826",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Experiences of negative valence are represented by distinct transcriptional induction in the amygdala, while positive valence induces transcription in LCtx, NAc, DS, and VTA. Upon repetition, transcriptional representation is dynamically modulated, potentially underlying long-term adaptations. Inducible transcription serves as a resource for identifying brain regions encoding experience properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45, C47-C48, and C80 synthesize the main findings regarding valence encoding and plasticity. The evidence for valence-specific regional patterns is strong (C45). However, C47 includes speculative language ('potentially underlying') that is appropriate given the correlative nature of the data. The claim that transcription 'identifies brain regions encoding experience properties' (C48, C80) is supported but should be qualified\u2014transcription identifies regions with experience-induced plasticity, but does not directly demonstrate encoding in the information-theoretic sense.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "22de544f-2465-4558-8de0-c77cf1b6bcf4",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims establishing that inducible transcription is essential for memory consolidation, that neuroplasticity depends on temporally-defined transcriptional waves beginning with IEGs, and that IEGs contribute significantly to synaptic plasticity and may represent molecular signatures of long-term memory formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 represent established background knowledge supported by appropriate citations to prior literature. These claims provide the conceptual foundation for the study but are not novel findings. The citations appear appropriate and the characterization of prior work is accurate based on the cited references.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "67555540-1199-4b98-9ddf-4660edae7ab7",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Methodological details including animal subjects (male C57BL/6 mice, 6-8 weeks), housing conditions (12:12 light/dark cycle, 20-22\u00b0C, 55\u00b110% humidity), drug doses (cocaine 20 mg/kg, LiCl 150-250 mg/kg, foot shock 0.7 mA for 2s), and tissue collection procedures (400 \u03bcm slices for most regions, 200 \u03bcm for VTA).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C58 provide essential methodological details that are clearly stated and appropriate for the experiments. The use of male mice only is a limitation not discussed. The drug doses and behavioral parameters are within standard ranges. The tissue dissection approach (punch dissections from defined slices) is appropriate though lacks single-cell resolution. All tests during light phase is noted, which is important for circadian considerations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "9b201cd4-369e-4a7e-99f5-6ffae3aa4624",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Marker gene selection involved compiling candidates from microarray analysis and literature, developing and testing qPCR probes for 212 genes (selecting 152 optimal pairs), then shortlisting 78 genes showing \u22651.25-fold induction in microfluidic qPCR arrays from cocaine and LiCl samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 describe a systematic and appropriate marker selection strategy. The multi-stage approach (literature \u2192 probe development \u2192 microarray screening \u2192 qPCR validation) is sound. However, the initial microarray data is not shown ('data not shown'), which limits full evaluation of the selection process. The 1.25-fold threshold for the 78-gene list is relatively permissive, but the subsequent ranking by frequency and variance (C13) provides additional stringency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "90129b79-c737-4e91-8a32-dc588892b32f",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Computational methods employed k-Nearest Neighbors (k=1, Euclidean space) for classification, evaluated by leave-one-out cross-validation, with feature selection performed using Random k-Nearest Neighbors or Breiman Random Forest algorithms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 describe appropriate computational methods with proper citations. The choice of k=1 for KNN is reasonable given the small sample size and distinct clusters. Leave-one-out cross-validation is appropriate for the dataset size. The use of two independent feature selection algorithms (RKNN and Random Forest) strengthens the analysis. However, no discussion of hyperparameter optimization or potential overfitting mitigation strategies beyond cross-validation is provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "43fb3942-f31b-4214-bc4a-f5c9dfce8484",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background claims establishing that neuronal plasticity enables adaptive behaviors, cocaine sensitization is a widely-used plasticity paradigm, prior studies have observed plasticity in limbic/mesolimbic structures, transcriptional analysis enables parallel multi-region investigation, and complex experiences involve coordinated plasticity across multiple brain regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C69 provide appropriate background and rationale for the experimental approach. The citations support the statements about prior work. C68 correctly identifies a key advantage of transcriptional analysis (parallel multi-region assessment) versus electrophysiology. C69 states an assumption ('assuming that...') that is reasonable but not directly tested in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "8b9dd97e-f8f6-40aa-ad43-8bfecb0a2975",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background claims that neural activity patterns can decode experiences in rodents and humans using various imaging techniques, that IEG expression provides quantitative metrics beyond activity markers, and that transcriptional markers have been successfully used for classification in other biomedical contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75 provide appropriate context from prior work with suitable citations. C74 represents a key conceptual claim of the current study (IEGs as quantitative code rather than binary markers) that is supported by the classification results. C75 provides useful context that transcriptional classification is established in other domains, supporting the feasibility of the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "a1005056-6a8c-47aa-9d9f-2bb27f5eb8d1",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Speculative claims that principles likely generalize to broader experiences, that marker genes could be substituted, that affect can be defined by valence and salience dimensions (Russell model), that valence is encoded in Amy/PFC/NAc/VTA, and that other brain areas likely encode different experience attributes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76-C79 and C81 are appropriately speculative and acknowledge limitations. C76-C77 suggest generalizability but this is not tested. C78-C79 cite the Russell circumplex model and prior work on valence encoding, providing theoretical context. C81 acknowledges the study's focus on limbic/mesolimbic structures and speculates about other regions. These claims are reasonable but represent hypotheses for future work rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "5b5d3ad7-278b-4365-96d9-e42a46630151",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Introduction of 'predictive transcriptional coding' concept, proposing that inducible transcription encodes experience valuation rather than merely reporting events, setting network state for prospective plasticity. This is conceptually similar to reward prediction error but on longer timescales. Transcription serves as a 'salience filter' determining which experiences warrant long-term encoding, with valuation encoded by circuit identity and transcription magnitude. The threshold for transcription may depend on coincident glutamatergic and neuromodulatory inputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C87 introduce a novel conceptual framework that is intellectually interesting but largely speculative. The data show that transcriptional patterns correlate with experience attributes and change with repetition, which is consistent with the predictive coding framework but does not directly test it. C87 cites Clayton (2000) for the 'genomic action potential' concept, providing theoretical support. These claims represent valuable hypotheses for future mechanistic work but go beyond what the correlative data directly demonstrate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    },
+    {
+      "id": "33200746-3411-4165-a788-c8297b0b6fd2",
+      "content_id": "0353b071-6ac0-447b-baf3-3d90104383eb",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Speculative claims about potential applications and future directions, including implications for drug development and abuse liability assessment, that fundamental phenomena can be identified with simple methods, potential for non-invasive whole-brain imaging approaches, emerging technologies for transcriptional analysis, that behavioral transcriptomics will provide systems-level views of memory encoding, and that deciphering the transcriptional code could enable decoding of synapse-specific plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88-C95 represent forward-looking speculation about applications and future research directions. These are appropriately presented as possibilities rather than demonstrated results. C90 makes a valid point about the value of simple methods. C91-C92 cite relevant emerging technologies. C93-C95 are highly speculative, particularly C95's suggestion that transcriptional analysis could decode 'synapse-specific plasticity,' which would require substantial additional validation. These claims are appropriate for a Discussion section but represent hypotheses rather than supported results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:18:54.012871Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f396525f-09be-433f-a788-6a8bf964c5e5",
+      "result_id": "a7335933-dc31-463e-bd05-3fe1968509e9"
+    },
+    {
+      "claim_id": "c89031cc-0189-49ae-a062-f5c92a98ea4b",
+      "result_id": "a7335933-dc31-463e-bd05-3fe1968509e9"
+    },
+    {
+      "claim_id": "43f95b11-4b36-4a2c-ae1e-72562607da75",
+      "result_id": "a7335933-dc31-463e-bd05-3fe1968509e9"
+    },
+    {
+      "claim_id": "28a1b755-4df3-41ea-bfc5-30711c9e22d9",
+      "result_id": "a7335933-dc31-463e-bd05-3fe1968509e9"
+    },
+    {
+      "claim_id": "f7243fa8-f535-4265-a3f6-39577c678c6a",
+      "result_id": "a7335933-dc31-463e-bd05-3fe1968509e9"
+    },
+    {
+      "claim_id": "d0b01c4f-be62-4216-8154-3c890099bbb2",
+      "result_id": "a7335933-dc31-463e-bd05-3fe1968509e9"
+    },
+    {
+      "claim_id": "cedee143-53c5-42b7-be0a-1a5a97cef306",
+      "result_id": "feb7801d-c208-4881-94cc-0884c535835e"
+    },
+    {
+      "claim_id": "60d762c1-0efa-4b02-8846-936639ce6ebc",
+      "result_id": "feb7801d-c208-4881-94cc-0884c535835e"
+    },
+    {
+      "claim_id": "7daf824e-57c6-4126-8fe2-11404cc8868b",
+      "result_id": "84d9641d-66fd-4aaa-99b6-9f2f0e9e9ad1"
+    },
+    {
+      "claim_id": "9c4bf14d-f526-4daf-971a-5c4df8585720",
+      "result_id": "84d9641d-66fd-4aaa-99b6-9f2f0e9e9ad1"
+    },
+    {
+      "claim_id": "edc84ad6-9505-4537-ac82-a29cc41371a4",
+      "result_id": "84d9641d-66fd-4aaa-99b6-9f2f0e9e9ad1"
+    },
+    {
+      "claim_id": "10eae6a2-0d94-4bec-8dd0-b094fb219704",
+      "result_id": "84d9641d-66fd-4aaa-99b6-9f2f0e9e9ad1"
+    },
+    {
+      "claim_id": "debdf65b-486c-49f0-a5d1-9867e66d0cbd",
+      "result_id": "5a5afe0b-bdc9-41f8-9858-07b220f97561"
+    },
+    {
+      "claim_id": "051f53ba-b887-4025-9539-388b4352d340",
+      "result_id": "5a5afe0b-bdc9-41f8-9858-07b220f97561"
+    },
+    {
+      "claim_id": "69362468-045c-465d-8047-cbaf4571cc95",
+      "result_id": "5a5afe0b-bdc9-41f8-9858-07b220f97561"
+    },
+    {
+      "claim_id": "5f2a69fa-c9a2-45f3-b06e-3f63bff9c135",
+      "result_id": "fbf5dd62-2e28-4568-ac78-f2a61582a98b"
+    },
+    {
+      "claim_id": "0e6151a1-3333-4dc6-bfb7-bfe0f75582c6",
+      "result_id": "fbf5dd62-2e28-4568-ac78-f2a61582a98b"
+    },
+    {
+      "claim_id": "cdbce140-02d0-4c49-9ec1-5a5753472192",
+      "result_id": "fbf5dd62-2e28-4568-ac78-f2a61582a98b"
+    },
+    {
+      "claim_id": "3af9069f-90f7-4a9d-8ff2-fab6445ad235",
+      "result_id": "fbf5dd62-2e28-4568-ac78-f2a61582a98b"
+    },
+    {
+      "claim_id": "66bae4e8-723c-4dcb-8b50-76dc5f55b170",
+      "result_id": "fbf5dd62-2e28-4568-ac78-f2a61582a98b"
+    },
+    {
+      "claim_id": "8496f5aa-ee96-4267-abb3-ada6659083ec",
+      "result_id": "788bfbba-577b-4153-95d2-81904e9f2ce4"
+    },
+    {
+      "claim_id": "0c4c1c20-4b7e-4049-8b0a-dd9e17912fd3",
+      "result_id": "788bfbba-577b-4153-95d2-81904e9f2ce4"
+    },
+    {
+      "claim_id": "3e7e4ac0-8472-4473-9746-6c0402d0bc38",
+      "result_id": "788bfbba-577b-4153-95d2-81904e9f2ce4"
+    },
+    {
+      "claim_id": "f9faad9c-7558-4156-9d2c-67761322e7b4",
+      "result_id": "82536fad-84fe-42bf-aba8-4f9d3371229d"
+    },
+    {
+      "claim_id": "2d1f8d1f-53cd-45bd-9a2a-8155bf9eeb9f",
+      "result_id": "82536fad-84fe-42bf-aba8-4f9d3371229d"
+    },
+    {
+      "claim_id": "ddbdffce-205b-49eb-b7a7-729fa9f844f9",
+      "result_id": "82536fad-84fe-42bf-aba8-4f9d3371229d"
+    },
+    {
+      "claim_id": "71d9db41-295c-42c5-9e5a-bbd56ec8e489",
+      "result_id": "82536fad-84fe-42bf-aba8-4f9d3371229d"
+    },
+    {
+      "claim_id": "cba842fe-4bd5-483c-aedf-6af38885912d",
+      "result_id": "82536fad-84fe-42bf-aba8-4f9d3371229d"
+    },
+    {
+      "claim_id": "3f5aa52f-6431-4460-bd16-b1b511f9ff89",
+      "result_id": "f3c35497-6e15-4dc3-819c-befa6ed8479f"
+    },
+    {
+      "claim_id": "ccb2d5ea-c1ea-4577-9681-5dfbfb319d96",
+      "result_id": "f3c35497-6e15-4dc3-819c-befa6ed8479f"
+    },
+    {
+      "claim_id": "85743911-aa81-4706-bfa0-3073ee2229c7",
+      "result_id": "f3c35497-6e15-4dc3-819c-befa6ed8479f"
+    },
+    {
+      "claim_id": "edfd9874-b20f-4160-ab7b-c1841d84bf97",
+      "result_id": "f3c35497-6e15-4dc3-819c-befa6ed8479f"
+    },
+    {
+      "claim_id": "79b91ab3-5928-45df-b20b-46646fa0f6f4",
+      "result_id": "e61e778a-7294-47fa-bb6f-0de885b3fb95"
+    },
+    {
+      "claim_id": "258014e6-2c33-4d02-a837-0030d7d7e577",
+      "result_id": "e61e778a-7294-47fa-bb6f-0de885b3fb95"
+    },
+    {
+      "claim_id": "e0c36294-cfc3-4783-9743-473984d0ba7a",
+      "result_id": "88cb3eb4-4594-44ca-8019-4716a6ea4dcb"
+    },
+    {
+      "claim_id": "c33002b2-4ec6-4dd2-9686-84fa79cec613",
+      "result_id": "88cb3eb4-4594-44ca-8019-4716a6ea4dcb"
+    },
+    {
+      "claim_id": "40d7f21e-e2e0-46ba-8ee7-89f4dacbd20f",
+      "result_id": "88cb3eb4-4594-44ca-8019-4716a6ea4dcb"
+    },
+    {
+      "claim_id": "595ec3f9-e5bc-4aaa-8331-faca3dc91468",
+      "result_id": "88cb3eb4-4594-44ca-8019-4716a6ea4dcb"
+    },
+    {
+      "claim_id": "78a7afd8-1003-4b6c-abf7-8b114ce8f2c8",
+      "result_id": "88cb3eb4-4594-44ca-8019-4716a6ea4dcb"
+    },
+    {
+      "claim_id": "eef8ada0-84f4-4b3a-9c25-8152c6db9d75",
+      "result_id": "88cb3eb4-4594-44ca-8019-4716a6ea4dcb"
+    },
+    {
+      "claim_id": "cce60a5a-f39c-4d60-b20e-7f1c4accd0f4",
+      "result_id": "88cb3eb4-4594-44ca-8019-4716a6ea4dcb"
+    },
+    {
+      "claim_id": "b09a4105-63c8-4d65-8ab5-63b8d2e910f2",
+      "result_id": "c44f6a1d-7fe6-4d8b-8a44-57cec3e76826"
+    },
+    {
+      "claim_id": "dfe28d12-144f-4c3e-acd4-8607876b68be",
+      "result_id": "c44f6a1d-7fe6-4d8b-8a44-57cec3e76826"
+    },
+    {
+      "claim_id": "d3f83311-4c7f-49ac-9c8a-852590ec9b23",
+      "result_id": "c44f6a1d-7fe6-4d8b-8a44-57cec3e76826"
+    },
+    {
+      "claim_id": "b79c26ce-e03d-4f6b-bcaf-c7e7aceda317",
+      "result_id": "c44f6a1d-7fe6-4d8b-8a44-57cec3e76826"
+    },
+    {
+      "claim_id": "f071fcfe-080a-4fbf-97bb-7489509b0124",
+      "result_id": "22de544f-2465-4558-8de0-c77cf1b6bcf4"
+    },
+    {
+      "claim_id": "7f9e0040-9ea2-4c2a-baa7-40790ccedd00",
+      "result_id": "22de544f-2465-4558-8de0-c77cf1b6bcf4"
+    },
+    {
+      "claim_id": "9163af92-e1d9-40bc-9642-f5cf55a47aad",
+      "result_id": "22de544f-2465-4558-8de0-c77cf1b6bcf4"
+    },
+    {
+      "claim_id": "29cea5ef-3775-469e-81f9-d633f21b106f",
+      "result_id": "22de544f-2465-4558-8de0-c77cf1b6bcf4"
+    },
+    {
+      "claim_id": "e596abd1-fd7b-4d17-820d-61defbc023e2",
+      "result_id": "22de544f-2465-4558-8de0-c77cf1b6bcf4"
+    },
+    {
+      "claim_id": "5986928f-41c9-4f49-95be-2618802a0617",
+      "result_id": "22de544f-2465-4558-8de0-c77cf1b6bcf4"
+    },
+    {
+      "claim_id": "767b896a-1634-46e3-8c6a-1ba6910afa9f",
+      "result_id": "67555540-1199-4b98-9ddf-4660edae7ab7"
+    },
+    {
+      "claim_id": "e1907222-b4b8-4939-9eb9-b960ed33f1ad",
+      "result_id": "67555540-1199-4b98-9ddf-4660edae7ab7"
+    },
+    {
+      "claim_id": "7211c1d4-def7-4304-8786-f29876558ecd",
+      "result_id": "67555540-1199-4b98-9ddf-4660edae7ab7"
+    },
+    {
+      "claim_id": "6db6c686-65f7-459f-81ee-9b39b6a37435",
+      "result_id": "67555540-1199-4b98-9ddf-4660edae7ab7"
+    },
+    {
+      "claim_id": "53e10ebc-380d-48b5-8f56-fd69391bd2ed",
+      "result_id": "67555540-1199-4b98-9ddf-4660edae7ab7"
+    },
+    {
+      "claim_id": "6641fd5e-7fe4-4133-852f-2967b860bfb8",
+      "result_id": "67555540-1199-4b98-9ddf-4660edae7ab7"
+    },
+    {
+      "claim_id": "69a42cf8-814a-476a-baa4-b8e215262d76",
+      "result_id": "67555540-1199-4b98-9ddf-4660edae7ab7"
+    },
+    {
+      "claim_id": "4f5049ba-df71-4b49-aa0b-28370a614fe3",
+      "result_id": "67555540-1199-4b98-9ddf-4660edae7ab7"
+    },
+    {
+      "claim_id": "9a07dbba-f42c-4d07-8409-1580d0df09f4",
+      "result_id": "67555540-1199-4b98-9ddf-4660edae7ab7"
+    },
+    {
+      "claim_id": "c8a7fe6f-ed6a-4470-8823-a11dd7ff9cd3",
+      "result_id": "67555540-1199-4b98-9ddf-4660edae7ab7"
+    },
+    {
+      "claim_id": "2e296556-ca7e-4d3d-9f60-ee17b26d1310",
+      "result_id": "9b201cd4-369e-4a7e-99f5-6ffae3aa4624"
+    },
+    {
+      "claim_id": "f7e12fde-8f78-433b-9e64-c06a7d5daab4",
+      "result_id": "9b201cd4-369e-4a7e-99f5-6ffae3aa4624"
+    },
+    {
+      "claim_id": "9627f100-78a7-4a56-88b0-9a4c491f6e41",
+      "result_id": "9b201cd4-369e-4a7e-99f5-6ffae3aa4624"
+    },
+    {
+      "claim_id": "8e01bc53-163c-45a6-a6f1-87a80fd2abc8",
+      "result_id": "90129b79-c737-4e91-8a32-dc588892b32f"
+    },
+    {
+      "claim_id": "a15daef4-2f80-4b10-9200-d6d69a8c8325",
+      "result_id": "90129b79-c737-4e91-8a32-dc588892b32f"
+    },
+    {
+      "claim_id": "1bcb43c1-e7f1-48f0-8e68-c53f0fe025db",
+      "result_id": "90129b79-c737-4e91-8a32-dc588892b32f"
+    },
+    {
+      "claim_id": "4ed99711-9b71-42f3-ac2e-f35fad9d266b",
+      "result_id": "43fb3942-f31b-4214-bc4a-f5c9dfce8484"
+    },
+    {
+      "claim_id": "c8622290-b544-4235-874a-d70a64757525",
+      "result_id": "43fb3942-f31b-4214-bc4a-f5c9dfce8484"
+    },
+    {
+      "claim_id": "020cc386-4e3d-4a51-aa68-214c40f45af3",
+      "result_id": "43fb3942-f31b-4214-bc4a-f5c9dfce8484"
+    },
+    {
+      "claim_id": "321d0818-1179-4afd-9b56-9bad8952f1d0",
+      "result_id": "43fb3942-f31b-4214-bc4a-f5c9dfce8484"
+    },
+    {
+      "claim_id": "fed0bdbf-3c52-451b-abba-504bd3be2f91",
+      "result_id": "43fb3942-f31b-4214-bc4a-f5c9dfce8484"
+    },
+    {
+      "claim_id": "21ac1bbd-12b1-4b8f-b24a-114f4dae3b0a",
+      "result_id": "8b9dd97e-f8f6-40aa-ad43-8bfecb0a2975"
+    },
+    {
+      "claim_id": "bf32e701-4978-43dd-a580-759f3c59a9a0",
+      "result_id": "8b9dd97e-f8f6-40aa-ad43-8bfecb0a2975"
+    },
+    {
+      "claim_id": "6bbe2f6b-9dbb-4147-9c8b-98f04edb5f1f",
+      "result_id": "8b9dd97e-f8f6-40aa-ad43-8bfecb0a2975"
+    },
+    {
+      "claim_id": "2465576f-f3b8-4883-b254-1cfe84df3341",
+      "result_id": "a1005056-6a8c-47aa-9d9f-2bb27f5eb8d1"
+    },
+    {
+      "claim_id": "120c9a06-4f57-4552-98e2-2199b75ea3fd",
+      "result_id": "a1005056-6a8c-47aa-9d9f-2bb27f5eb8d1"
+    },
+    {
+      "claim_id": "b88887f8-b799-4b43-8ccd-563bb6b83161",
+      "result_id": "a1005056-6a8c-47aa-9d9f-2bb27f5eb8d1"
+    },
+    {
+      "claim_id": "8e5f6144-e0c9-47af-81b1-0ce979e4e55e",
+      "result_id": "a1005056-6a8c-47aa-9d9f-2bb27f5eb8d1"
+    },
+    {
+      "claim_id": "3c5d5611-02a8-4f13-a337-9527a50d83bc",
+      "result_id": "a1005056-6a8c-47aa-9d9f-2bb27f5eb8d1"
+    },
+    {
+      "claim_id": "82015c98-679b-4a28-920c-ffae73361fc6",
+      "result_id": "5b5d3ad7-278b-4365-96d9-e42a46630151"
+    },
+    {
+      "claim_id": "d597402f-2281-4f31-8228-fee64ee4030f",
+      "result_id": "5b5d3ad7-278b-4365-96d9-e42a46630151"
+    },
+    {
+      "claim_id": "c2724356-4bfd-423e-af93-130f9a90d7f6",
+      "result_id": "5b5d3ad7-278b-4365-96d9-e42a46630151"
+    },
+    {
+      "claim_id": "781e264a-0aab-4a17-bb97-4d0e891cdc18",
+      "result_id": "5b5d3ad7-278b-4365-96d9-e42a46630151"
+    },
+    {
+      "claim_id": "c2e552c1-f985-4aa6-903d-5cb8554a2c2d",
+      "result_id": "5b5d3ad7-278b-4365-96d9-e42a46630151"
+    },
+    {
+      "claim_id": "de47c6e4-16f4-4c1d-b0a3-047ee0ed4ed1",
+      "result_id": "5b5d3ad7-278b-4365-96d9-e42a46630151"
+    },
+    {
+      "claim_id": "048c4bb0-7c89-43e7-b325-ffd26c91ec47",
+      "result_id": "33200746-3411-4165-a788-c8297b0b6fd2"
+    },
+    {
+      "claim_id": "ed6c5519-a4ca-4a96-bed2-8e6d5b362d6d",
+      "result_id": "33200746-3411-4165-a788-c8297b0b6fd2"
+    },
+    {
+      "claim_id": "4057340e-aca3-45d5-86b6-e7ae532cea7a",
+      "result_id": "33200746-3411-4165-a788-c8297b0b6fd2"
+    },
+    {
+      "claim_id": "63ba9032-93d8-44e2-97d4-2cf579808172",
+      "result_id": "33200746-3411-4165-a788-c8297b0b6fd2"
+    },
+    {
+      "claim_id": "d3027c1d-6616-40f6-aaba-80401822b21c",
+      "result_id": "33200746-3411-4165-a788-c8297b0b6fd2"
+    },
+    {
+      "claim_id": "cea9740e-a16d-4c5d-8e59-5e8b3fa293ad",
+      "result_id": "33200746-3411-4165-a788-c8297b0b6fd2"
+    },
+    {
+      "claim_id": "59a50b4c-fb64-4c3c-b515-f08543203a7e",
+      "result_id": "33200746-3411-4165-a788-c8297b0b6fd2"
+    },
+    {
+      "claim_id": "dd00aac2-15b3-4126-82fb-5db78297a8fe",
+      "result_id": "33200746-3411-4165-a788-c8297b0b6fd2"
+    }
+  ],
+  "comparisons": []
+}

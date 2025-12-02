@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The manuscript reviews established knowledge about quorum sensing, including that autoinducers mediate intercellular communication, trigger coordinated gene expression, and regulate various genes including virulence, bioluminescence, and autoinducer synthase genes themselves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C2, C10-C14) represent well-established background knowledge in the quorum sensing field, supported by multiple citations to prior experimental work. They provide appropriate context for the study but are not novel findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Prior experimental studies have observed heterogeneous promoter activity of autoinducer synthase genes in isogenic populations, including in L. monocytogenes where two subpopulations were observed (one expressing and one not expressing), associated with biofilm formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C3, C15-C17) accurately summarize prior experimental observations from cited studies. The authors correctly attribute these findings to the appropriate sources and use them to motivate their theoretical investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C20",
+      "C24"
+    ],
+    "result": "The mechanism underlying phenotypic heterogeneity in quorum-sensing populations has remained elusive, particularly for monostable up-regulation where it is often unknown whether synthesis is up-regulated at all autoinducer levels or only above a threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C4, C20, C24) appropriately identify a gap in current understanding that the manuscript addresses. The characterization of the knowledge gap is reasonable and well-supported by the discussion of existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Current threshold models typically assume bistable gene regulation to explain phenotypic heterogeneity, where stochastic gene expression at the cellular level explains coexistence of 'on' and 'off' states in the population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C21-C23, C72-C74) accurately characterize the prevailing theoretical framework in the field, supported by appropriate citations. This establishes the context for the authors' alternative mechanism and is consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C26",
+      "C28",
+      "C30",
+      "C36"
+    ],
+    "result": "The theoretical model assumes cells synthesize and secrete autoinducers, up-regulate production in response to the environment, and that non-producers replicate faster than producers due to metabolic costs, with qualitative results remaining valid if only average population size is constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C5-C7, C26, C28, C30, C36) clearly describe the model assumptions. The fitness cost assumption is supported by citations to experimental studies (C26). The mathematical properties are appropriately characterized. These are reasonable simplifying assumptions for a theoretical model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C40",
+      "C42",
+      "C44",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C92"
+    ],
+    "result": "Numerical simulations using Gillespie's algorithm demonstrate that without quorum sensing, approach to stationarity is algebraically slow, with quorum sensing it is exponentially fast, and heterogeneity can arise with monostable response functions. Heterogeneous states are long-lived (time to absorption grows exponentially with N), arise for broad classes of initial distributions, and are robust to various forms of noise. Mean-field theory agrees with simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These simulation results (C38, C40, C42, C44, C46-C50, C92) are well-documented in Figures 2 and 3 with appropriate statistical analysis. The agreement between stochastic simulations and mean-field theory is demonstrated. The robustness checks (noise, initial conditions) strengthen the findings. The exponential scaling with N is clearly shown in Figure 3A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C76",
+      "C81"
+    ],
+    "result": "The coupling between ecological and population dynamics through quorum sensing can induce phenotypic heterogeneity in microbial populations, suggesting an alternative mechanism to stochastic gene expression in bistable gene regulatory circuits, where heterogeneity arises dynamically as a collective phenomenon for monostable regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central theoretical finding (C8, C9, C76, C81), supported by both mathematical analysis (Equation 1, Equation 2) and numerical simulations (Figures 2-3). The derivation of the autoinducer equation from microscopic dynamics is rigorous, and the stability analysis of heterogeneous stationary distributions is provided in Appendix 3. The mechanism is clearly distinct from existing bistable/stochastic gene expression models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "The heterogeneous stationary distributions are stable up to linear order in perturbations around stationarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mathematical result (C59) is stated to be proven in Appendix 3. Linear stability analysis is a standard approach for analyzing stationary distributions. The claim is consistent with the observed robustness in simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Phenotypic heterogeneity arises when the timescale of cellular response to autoinducers is similar to or larger than the timescale of growth rate differences affecting population dynamics. This balance is robust against perturbations and noise. For relevance, growth rate differences must balance response rates, degradation should be faster than population composition changes, and dispersal should be faster than degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These conditions (C78-C79, C82-C84) are derived from analysis of the autoinducer equation (the balance parameter \u03b2=2\u03bb/s). The robustness is demonstrated in Appendix figures. These represent important predictions about the spatiotemporal scales required for the mechanism to operate, though experimental validation is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Metabolic costs of autoinducer production vary widely: oligopeptides like those in S. aureus cost ~184 ATP per molecule, while AI-2 costs 0-1 ATP. Experimental studies have shown reduced fitness for AHL producers attributed to metabolic costs and toxic side products, and reduced growth rates for S. fredii NGR234 related to autoinducer production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C61-C62, C67-C69) accurately cite prior experimental work on metabolic costs and fitness effects. The authors appropriately use these to justify their model assumption of fitness costs, while acknowledging that quantitative relationships between production and growth rate remain incompletely characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Environmental factors like pH and temperature influence autoinducer stability, and positive feedback loops are not present in all autoinducer synthase systems but were reported for L. monocytogenes and S. fredii NGR234 that showed heterogeneous synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C70-C71) accurately summarize prior work on autoinducer stability and feedback regulation, supported by appropriate citations. They provide relevant biological context for the model assumptions and scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C77"
+    ],
+    "result": "If regulation of autoinducer synthesis is monostable, an explanation of phenotypic heterogeneity in terms of stochastic gene expression appears questionable. Monostable regulation would indicate heterogeneity is caused by a different mechanism such as the ecological feedback proposed here.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C75, C77) represent logical inferences from the theoretical results, but the assertion that stochastic gene expression is 'questionable' for monostable systems may be too strong. The authors acknowledge this is speculative and requires experimental validation. The distinction between mechanisms may not be as clear-cut in real biological systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "The model does not address the function or evolutionary benefit of phenotypic heterogeneity in autoinducer production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim (C80) is an explicit and appropriate statement of the study's scope and limitations. The authors clearly distinguish between explaining the mechanism of heterogeneity (their goal) and explaining its evolutionary function (not addressed).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "Under certain conditions, when microbes sense and respond to their self-shaped environment, the population may become a robustly controlled heterogeneous collective, not just a homogeneous collective as typically associated with quorum sensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion (C85) appropriately summarizes the theoretical findings. It is supported by the mathematical analysis and simulations showing stable heterogeneous states. However, experimental validation in real microbial systems is needed to confirm biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "The stable coexistence of different phenotypes may serve division of labor or act as a bet-hedging strategy, potentially beneficial for survival and resilience on long timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim (C18) appropriately cites prior work on evolutionary strategies. It provides context for why heterogeneity might be important, though the authors acknowledge they do not address evolutionary function in their model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "Expression of autoinducer synthase genes in L. monocytogenes is up-regulated through quorum-sensing in single cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim (C19) accurately cites prior experimental work and is used to motivate the model's assumption of up-regulation through quorum sensing.",
+    "result_type": "MINOR"
+  }
+]

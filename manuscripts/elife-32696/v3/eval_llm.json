@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Participants successfully performed the surprise memory test with 74.2\u00b16.3% accuracy, with 67.7\u00b115.9% hit rate for studied pictures and 80.8\u00b114.6% correct rejection rate for unstudied pictures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 provide consistent behavioral performance metrics from the surprise memory test. The data demonstrate that participants could distinguish studied from unstudied pictures above chance levels despite the incidental encoding paradigm, establishing the validity of the memory encoding task.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Time windows were successfully classified into high and low encoding states based on window-wise encoding performance, with balanced numbers of windows (22.7\u00b11.9 vs 22.3\u00b11.9) and distinct proportions of high-confidence hit trials (64.6\u00b115.4% vs 32.6\u00b115.0%). The encoding state showed temporal stability with below-chance state switching probability (41.0%, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 establish the validity of the window classification approach. The balanced window counts, significant differences in encoding performance between states, lack of temporal trends across sessions, and below-chance state switching probability all support the reliability of this classification method. Statistical tests appropriately support each claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Analysis of the 21-node SME/SFE network revealed trends toward increased functional connectivity between some SME region pairs during high encoding states (particularly hippocampus-occipital cortex connections), but these effects did not survive FDR correction and within-subnetwork connectivity showed no significant differences between states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C26-C29 show mixed results. While C26 confirms the ROIs exhibit expected SME/SFE activation patterns, C27-C29 reveal that FC differences between encoding states were not statistically robust after multiple comparison correction. The authors appropriately acknowledge these limitations, but the lack of significant findings after correction makes this result uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Large-scale network analysis revealed systematic reconfiguration between encoding states: 98 connections showed increased FC and 687 showed decreased FC during high encoding (FDR-corrected). Increased connections were longer-range (84.6\u00b127.3mm) while decreased connections were shorter-range (76.5\u00b129.7mm, p<0.0054). Hippocampus-occipital cortex FC was specifically increased during high encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 provide converging evidence for systematic network reconfiguration. The large number of significant connections surviving FDR correction, the differential spatial patterns (long-range increases vs short-range decreases), and specific hippocampal-occipital increases all support a coherent pattern of network reorganization associated with encoding performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Global efficiency (network integration) was significantly higher during high encoding states (z=3.9688, p=0.0001), while local efficiency (segregation) showed no difference between states (z=0.6861, p=0.4926). A significant state-by-metric interaction (F(1,24)=17.1006, p=0.0004) confirmed that only integration changed with encoding performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 provide strong statistical evidence for selective changes in network integration. The significant difference in global efficiency, lack of difference in local efficiency, and significant interaction term all converge to support the conclusion that integration specifically changes with encoding performance. The statistical tests are appropriate and results are robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Subnetwork-level analysis revealed significantly higher participation coefficients (integration) during high encoding in the salience network (SAN, z=3.0001, p=0.0027) and subcortical nodes (SUB, z=3.7535, p=0.0002). Only SAN showed a significant state-by-metric interaction (F(1,24)=11.9399, p=0.0021), indicating specific changes in integration rather than segregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 identify specific subnetworks showing increased integration during high encoding. The statistical tests survive FDR correction, and the interaction analysis for SAN specifically confirms that integration (not segregation) drives the effect. This provides mechanistic insight into which brain systems contribute to network-level integration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Inter-subnetwork efficiency analysis revealed higher integration during high encoding between SUB, SAN, DMN, VIN and other subnetworks (z>2.3274, p<0.0199), with only the SMN-AUD pair showing lower efficiency (z=-2.7041, p=0.0068).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 detail specific patterns of inter-subnetwork integration changes. The results survive FDR correction and identify which subnetwork pairs show increased vs decreased integration, providing detailed characterization of network reconfiguration patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Modularity (network segregation) was significantly higher during high encoding (z=2.5427, p=0.0110). Modularity showed no correlation with global efficiency (r=0.1155\u00b10.4408, p=0.1829) but positive correlation with local efficiency (r=0.5907\u00b10.1525, p<0.00001), suggesting these metrics capture independent network properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46-C48 present an unexpected finding of increased modularity during high encoding, which seems contradictory to increased integration. While the authors provide theoretical justification (C78-C79) and correlation analyses, C80 notes this result is less robust than global efficiency findings. The lack of correlation between modularity and global efficiency is interesting but requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The subcortical subnetwork (SUB) showed increased edge proportions both within (z=3.0003, p=0.0027) and across subnetworks (z=2.7580, p=0.0058) during high encoding, with greater increases for within-subnetwork connections (z=2.5965, p=0.0094), suggesting SUB contributes to both segregation and integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 provide detailed analysis of SUB connectivity patterns. The statistical tests support both within- and across-subnetwork increases, and the differential magnitude of these effects is appropriately tested. This helps explain how increased modularity and integration can co-occur.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "The default mode network (DMN) was decomposed into five submodules using group-level modular decomposition, with identical submodule assignments between high and low encoding states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 describe DMN submodule structure. The modular decomposition method is appropriate and the finding that submodule structure doesn't change between states is clearly stated. However, this is primarily a descriptive finding without strong functional implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "SVM classification successfully distinguished high from low encoding states using subnetwork-wise participation coefficients (74% accuracy, p=0.0094), local efficiency (68%, p=0.0267), and inter-subnetwork efficiency (72%, p=0.0029), but failed with full connectivity patterns (36%, p=0.9406).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 demonstrate that graph metrics effectively capture encoding state differences. The classification accuracies are significantly above chance with appropriate permutation testing. The failure with full connectivity matrices (C58) highlights the value of dimensionality reduction through graph metrics and rules out overfitting concerns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Control analyses showed that classification based on proportion of picture trials or reaction time did not yield significant accuracy with any graph metrics, demonstrating that network architecture differences are specific to encoding performance rather than visual stimulation or task difficulty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 provide critical control analyses ruling out confounding explanations. The lack of significant classification for alternative window sorting criteria strengthens the interpretation that observed network differences specifically relate to memory encoding rather than other task factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Robustness analyses confirmed that higher global efficiency during high encoding was maintained across different window sizes (including 7.2s windows), and that edge reliability did not differ between encoding states (z=1.2916, p=0.1965), ruling out artifacts from false-positive connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 address important methodological concerns. The robustness across window sizes and equivalent edge reliability between states rule out that findings are artifacts of the specific analysis parameters or differential false-positive rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C77"
+    ],
+    "result": "Motion confound analyses showed no significant difference in mean framewise displacement between encoding states (p=0.0544), no correlations between FD and graph metrics, and that global efficiency differences remained significant after regressing out FD (z=3.9688, p=0.0002).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66, C77 comprehensively address motion confounds. Multiple approaches (comparing mean FD, testing correlations, regressing out FD, analyzing subsets of participants) all support that findings are not driven by motion artifacts. This is critical for validating dynamic FC results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Time-varying FC analysis revealed that hippocampus-occipital cortex connectivity was higher during high encoding periods, suggesting functional interactions between visual areas and hippocampus support successful encoding. FC showed selective increases and decreases between specific regions, with enhanced long-range connectivity being important for encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 synthesize FC findings into interpretable patterns. The hippocampal-occipital finding is supported by data (C35), and the interpretation about visual-hippocampal interactions is reasonable given the visual nature of the task. The emphasis on long-range connectivity is supported by distance analysis (C32-C33).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Network integration was higher during high encoding at both whole-network (global efficiency) and subnetwork levels (SAN, SUB). The subcortical nodes may serve as hubs supporting large-scale integration, while DMN showed integration with multiple subnetworks related to within-individual fluctuations in memory performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 synthesize the integration findings into a coherent interpretation. The claims are well-supported by the statistical analyses (C36-C44) and provide mechanistic insight into how different brain systems contribute to successful encoding through dynamic integration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Graph metrics efficiently reduce dimensionality and achieve more accurate predictions than full connectivity patterns, as evidenced by successful classification with graph metrics but failure with full connectivity matrices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is directly supported by the classification results (C55-C58). The contrast between successful classification with graph metrics and failure with full connectivity demonstrates the value of this dimensionality reduction approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Additional analyses revealed that graph metrics substantially covaried with overall FC strength on a window-to-window basis, but findings are not attributable to differential proportions of false-positive edges as confirmed by edge reliability analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 acknowledge an important limitation (covariation with overall FC strength) while ruling out a specific artifact (false-positive edges). The authors appropriately discuss this complexity in their methods section, noting that adjusting for overall FC strength may be overly conservative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The study's main findings demonstrate that increased integration of subcortical, default-mode, salience, and visual subnetworks with other subnetworks is a hallmark of successful memory encoding, with multivariate analysis reliably classifying encoding states, suggesting diverse brain systems dynamically interact to support memory encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 represent the study's primary conclusions, which are well-supported by the comprehensive analyses presented. The integration findings (C36-C44), classification results (C55-C57), and control analyses (C59-C61, C65-C66) all converge to support these main conclusions. The extensive robustness checks strengthen confidence in these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Theoretical and empirical studies support that networks can exhibit both high integration and modularity simultaneously, though the modularity findings in this study were less robust than global efficiency results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C79 cite theoretical support for co-occurring integration and segregation, but C80 acknowledges the modularity result is less robust. While the theoretical framework is sound, the empirical support in this specific study is weaker, making this result uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The study discusses but cannot determine causality between FC dynamics and encoding performance, noting that intrinsic FC dynamics may underlie encoding fluctuations or vice versa. Future work examining shorter timescales may reveal network states related to individual encoding events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 appropriately acknowledge limitations regarding causality and timescales. These are speculative claims about future directions rather than assertions about current findings, and they are appropriately framed as such. C86 provides relevant citations supporting the plausibility of these future directions.",
+    "result_type": "MINOR"
+  }
+]

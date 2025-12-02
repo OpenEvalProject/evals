@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C48"
+    ],
+    "result": "Gag binding causes cooperative RNA collapse. Binding of Gag to RNAs results in an increase in diffusion coefficient, indicating a decrease in hydrodynamic radius and physical collapse of the RNA. This collapse is cooperative with Hill coefficients between 1.7 and 3.4 for all tested RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C48 are well-supported by experimental data in Figure 1. The increase in diffusion coefficient upon Gag binding is demonstrated for all RNAs tested, the collapse is confirmed not to be due to degradation (C45), and cooperativity is established through Hill coefficient analysis (C47-C48). The data are internally consistent and controls are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C30",
+      "C50",
+      "C51",
+      "C53",
+      "C54",
+      "C56"
+    ],
+    "result": "At physiological ionic strength (0.2 M NaCl), Gag binds to \u03a8-containing and control RNAs with similar nanomolar affinities. KD values range from 21 nM (dimeric HIV-1 \u03a8) to 44 nM (GRPE), all within a factor of two. Hill coefficients vary between 1.6 and 2.5, indicating cooperative binding is a general property of Gag.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28, C30, C50-C51, C53-C54, C56 are strongly supported by experimental data in Figure 2 and Table 1. The binding curves show similar affinities across different RNAs at physiological salt, with appropriate fitting to cooperative models. The conclusion that specificity is low under these conditions is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C175"
+    ],
+    "result": "Addition of excess competitor tRNA reveals binding specificity for HIV-1 \u03a8. tRNA competition reduces apparent affinity for HIV-1 \u03a8 by ~2-fold, MoMLV \u03a8 by ~4.5-fold, and GRPE by ~7-fold, demonstrating that Gag has higher binding specificity for HIV-1 \u03a8 than control RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C31, C58-C63, C175 are supported by experimental data in Figure 3 and Table 1. The differential effects of tRNA competition on different RNAs clearly demonstrate specificity for \u03a8. The ~120-fold molar excess of tRNA provides a stringent test, and the quantitative differences in KD changes are statistically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C200",
+      "C201"
+    ],
+    "result": "Gag/RNA binding exhibits hysteresis that is greater for GRPE than HIV-1 \u03a8. The order of addition of tRNA affects binding differently for different RNAs, with HIV-1 \u03a8 showing less hysteresis than GRPE, suggesting Gag/HIV-1 \u03a8 complexes are more stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73, C75-C79, C200-C201 are supported by experimental data in Figure 4. The order-of-addition experiments clearly demonstrate hysteresis, and the differential effects on HIV-1 \u03a8 versus GRPE are consistent across both binding affinity and diffusion measurements. The interpretation of greater stability for \u03a8 complexes is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C87",
+      "C88",
+      "C140",
+      "C141",
+      "C177",
+      "C218"
+    ],
+    "result": "The MA domain contributes to non-specific electrostatic binding. The 8N mutation (removing 8 basic residues in MA) reduces affinity 2-3 fold for all RNAs, with larger effects on control RNAs. Importantly, tRNA has no effect on 8N Gag binding, demonstrating these MA residues are essential for tRNA competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85, C87-C88, C140-C141, C177, C218 are well-supported by data in Figures 5, 9 and Table 1. The 8N mutation provides clear evidence for MA's role in electrostatic interactions. The lack of tRNA effect on 8N Gag (C87) is particularly informative and well-controlled. The differential effects on \u03a8 versus control RNAs support the specificity conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C106",
+      "C107",
+      "C113",
+      "C142",
+      "C143",
+      "C146",
+      "C147",
+      "C190",
+      "C191",
+      "C193",
+      "C196",
+      "C197",
+      "C198",
+      "C199"
+    ],
+    "result": "Gag-Gag interactions via the dimer interface contribute strongly to non-specific binding but not to \u03a8-specific binding. WM Gag (impaired dimerization) retains high affinity for dimeric HIV-1 \u03a8 but shows greatly reduced binding to control RNAs, especially in competition or high salt conditions. Binding remains cooperative, suggesting alternative Gag-Gag interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102, C106-C107, C113, C142-C143, C146-C147, C190-C191, C193, C196-C199 are strongly supported by data in Figures 6 and 9. The WM mutation provides compelling evidence that the dimer interface contributes to non-specific but not specific binding. The continued cooperativity (C190, C103) despite impaired dimerization is an important observation suggesting alternative interfaces (C193, C107).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Salt titration reveals non-linear log KD vs log [salt] plots with two distinct slopes. For dimeric HIV-1 \u03a8, binding is relatively salt-resistant up to 400 mM NaCl, then becomes highly salt-sensitive. The bent curves suggest two different binding modes at different ionic strengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C125, C127-C130 are supported by experimental data in Figures 7-8. The non-linearity is clearly demonstrated and the experimental error analysis (C130) confirms this is not an artifact. However, the interpretation of two binding modes (C129) is speculative. The data quality is good but the mechanistic interpretation requires caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C216",
+      "C240"
+    ],
+    "result": "The NC zinc fingers are the major source of non-electrostatic (specific) binding. SSHC Gag (disrupted zinc fingers) shows drastically reduced binding at elevated salt, demonstrating the zinc fingers mediate specific interactions. However, SSHC Gag retains some residual preference for \u03a8 over GRPE at 0.25-0.3 M NaCl.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C158, C179-C182, C216, C240 are well-supported by data in Figure 9. The SSHC mutation provides strong evidence for the role of zinc fingers in specific binding, consistent with in vivo data (C158, C179). The residual specificity (C180-C182) is an interesting observation but its interpretation is uncertain (alternative explanations in C183-C184).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "Four basic residues in the NC linker (310 mutation) are critical for electrostatic binding to control RNAs but not for \u03a8 binding. 310 Gag retains significant affinity for \u03a8 but shows drastically reduced binding to GRPE at salt >200 mM, demonstrating these residues are particularly important for non-specific electrostatic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C165, C185-C187 are supported by data in Figure 9. The 310 mutation provides clear evidence for the role of the NC linker in electrostatic interactions. The differential effects on \u03a8 versus GRPE are striking and well-documented. The interpretation that these 4 residues (out of 61 total basic residues) make disproportionate contributions is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C33",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C215",
+      "C220",
+      "C257"
+    ],
+    "result": "Gag binding affinity represents the sum of specific (non-electrostatic), non-specific (electrostatic), and Gag-Gag interaction components. At physiological salt, specificity for \u03a8 is obscured by strong non-specific interactions, but is revealed when these are attenuated by competition, mutations, or increased ionic strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C32-C33, C171-C174, C215, C220, C257 represent the central conclusion of the paper, well-supported by the totality of experimental data. The model that binding affinity is the sum of multiple components (C215) is consistent with all experimental observations. The conclusion that specificity is masked at physiological conditions is strongly supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C34",
+      "C259",
+      "C260",
+      "C261"
+    ],
+    "result": "The authors propose that gRNA is selectively packaged because \u03a8-specific interactions nucleate virion assembly more efficiently than binding to other RNAs. This mechanism would explain selective packaging while being consistent with the ability of Gag to assemble with cellular RNAs in the absence of gRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C34, C259-C261 represent a proposed mechanism that is speculative (C6, C34, C259 are marked as SPECULATION). While the model is consistent with the binding data and with in vivo observations (C260-C261), it is not directly tested. The mechanism requires validation through assembly kinetics experiments or other approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C212",
+      "C213",
+      "C214"
+    ],
+    "result": "Excess tRNA reduces Gag-induced RNA collapse, particularly for control RNAs. This effect occurs even with 8N Gag where tRNA does not affect binding affinity, suggesting tRNA is incorporated into complexes via domains other than MA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68, C212-C214 are supported by data in Figure 3\u2014figure supplement 1 and Figure 5. The observation that tRNA affects collapse but not binding affinity for 8N Gag (C213, C93) is particularly informative. The interpretation that tRNA is incorporated into complexes (C68, C214) is reasonable but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C69",
+      "C103",
+      "C170"
+    ],
+    "result": "Cooperativity is a general characteristic of Gag binding to RNA, not specific to any particular RNA sequence. Hill coefficients >1 are observed for all RNAs tested with both wild-type and mutant Gag proteins, implying Gag-Gag interactions occur on RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C69, C103, C170 are well-supported by data throughout (Table 1, Figures 2, 6). The consistent observation of cooperativity across different RNAs and Gag mutants is compelling. The inference that cooperativity implies Gag-Gag interactions (C69) is reasonable and consistent with the RNA collapse data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C37",
+      "C35",
+      "C36"
+    ],
+    "result": "FCS was used at low RNA concentrations to avoid VLP assembly, enabling measurement of binding affinities. This methodological approach circumvents the problem that most biophysical techniques require high concentrations where Gag/RNA complexes would assemble into VLPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 describe the methodological rationale, which is sound. The use of 15 nM RNA (C37) is appropriate to avoid VLP assembly while maintaining sufficient signal. This is a key methodological strength that enables the binding measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C231",
+      "C232",
+      "C241",
+      "C242",
+      "C243",
+      "C244"
+    ],
+    "result": "The bent salt titration curves may reflect a salt-induced conformational change in Gag that alters the balance of electrostatic and non-electrostatic interactions. A model where KD is a weighted sum of these components can reproduce the observed curves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C231-C232, C241-C244 are speculative interpretations of the bent salt titration curves. While the model in Figure 10 can reproduce the data (C242), this does not prove the mechanism. Alternative explanations (C233-C234, C238-C239) are considered but not definitively ruled out. The conformational change hypothesis is plausible but unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C221",
+      "C222",
+      "C223",
+      "C224"
+    ],
+    "result": "Binding to both \u03a8 and non-\u03a8 RNAs involves both MA and NC domains, which differs from a previous model suggesting \u03a8 binding involves only NC. The methodological differences between studies (salt titration of pre-mixed complexes vs. titration at fixed salt) may explain the discrepancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C221-C224 represent a comparison with prior work (Webb et al. 2013). The current data clearly show both MA and NC contribute to all RNA binding (C221), supported by the 8N and salt titration experiments. The identification of methodological differences (C223) is appropriate, though the speculation about causation (C224) is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C225",
+      "C226",
+      "C227"
+    ],
+    "result": "At high salt (500-550 mM NaCl), 8N Gag binds dimeric HIV-1 \u03a8 with higher affinity than WT Gag. This unexpected result may be due to electrostatic repulsion between positively charged WT MA domains that is reduced by the 8N mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C225 is supported by data in Figure 9\u2014figure supplement 3, but the interpretation (C226-C227) is speculative. The proposed mechanism of MA-MA repulsion is plausible but not directly tested. This observation is interesting but requires further investigation to understand the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C251",
+      "C252",
+      "C253",
+      "C254",
+      "C256"
+    ],
+    "result": "Monomeric HIV-1 \u03a8 and MoMLV \u03a8 show intermediate binding properties between dimeric HIV-1 \u03a8 and GRPE. Dimeric RNA consistently shows higher affinity than monomeric RNA, suggesting dimerization enhances specific Gag interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C251-C254, C256 are supported by data throughout the manuscript. The consistent observation that dimeric \u03a8 binds better than monomeric \u03a8 (C253) is well-documented. The inference that dimerization enhances specific interactions (C256) is reasonable given the data, though the magnitude of the effect is modest under most conditions.",
+    "result_type": "MINOR"
+  }
+]

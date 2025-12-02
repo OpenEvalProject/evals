@@ -1,0 +1,1643 @@
+{
+  "submission": {
+    "id": "7f1bc970-97df-46d6-a3ab-4c009edcf0e8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:57:58.083039Z",
+    "updated_at": "2025-12-02T01:57:58.083039Z"
+  },
+  "content": [
+    {
+      "id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "submission_id": "7f1bc970-97df-46d6-a3ab-4c009edcf0e8",
+      "content_type": "manuscript",
+      "content_text": "# Estimating the protein burden limit of yeast cells by measuring the expression limits of glycolytic proteins\n\n## Authors\n\n- Yuichi Eguchi<sup>1</sup> ([ORCID: 0000-0002-4809-1402](https://orcid.org/0000-0002-4809-1402))\n- Koji Makanae<sup>2</sup>\n- Tomohisa Hasunuma<sup>3</sup>\n- Yuko Ishibashi<sup>4</sup>\n- Keiji Kito<sup>4</sup>\n- Hisao Moriya<sup>1</sup> ([ORCID: 0000-0001-7638-3640](https://orcid.org/0000-0001-7638-3640)) \u2020\n\n### Affiliations\n\n1. Graduate School of Environmental and Life Science Okayama University Okayama Japan\n2. Research Core for Interdisciplinary Sciences Okayama University Okayama Japan\n3. Graduate School of Science, Technology and Innovation Kobe University Kobe Japan\n4. Department of Life Sciences, School of Agriculture Meiji University Kawasaki Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe ultimate overexpression of a protein could cause growth defects, which are known as the protein burden. However, the expression limit at which the protein-burden effect is triggered is still unclear. To estimate this limit, we systematically measured the overexpression limits of glycolytic proteins in Saccharomyces cerevisiae. The limits of some glycolytic proteins were up to 15% of the total cellular protein. These limits were independent of the proteins\u2019 catalytic activities, a finding that was supported by an in silico analysis. Some proteins had low expression limits that were explained by their localization and metabolic perturbations. The codon usage should be highly optimized to trigger the protein-burden effect, even under strong transcriptional induction. The S\u2013S-bond-connected aggregation mediated by the cysteine residues of a protein might affect its expression limit. Theoretically, only non-harmful proteins could be expressed up to the protein-burden limit. Therefore, we established a framework to distinguish proteins that are harmful and non-harmful upon overexpression.\n\n## Introduction\n\nProtein overexpression is sometimes harmful to cellular growth (Makanae et al., 2013; Sopko et al., 2006), and a few mechanisms that could result in overexpression-triggered growth defects have been proposed (Moriya, 2015). Resource overload, stoichiometric imbalance, promiscuous interaction, and pathway modulation are triggered upon overexpression of, respectively, (i) a protein that has a high demand of cellular resources (Dong et al., 1995; Kintaka et al., 2016; Stoebel et al., 2008), (ii) a protein that is part of a protein complex (Kaizu et al., 2010; Makanae et al., 2013; Papp et al., 2003), (iii) a protein with a nonspecific interaction domain (Ma et al., 2010; Vavouri et al., 2009), and (iv) a protein that catalyzes a pathway (Prelich, 2012; Youn et al., 2017). The mechanism of protein overexpression-triggered growth defects depends on the protein\u2019s structural and functional characteristics, which are not always fully understood yet. Therefore, it is still difficult to predict whether the overexpression of a particular protein will be harmful to cellular growth and which mechanisms cause the harmful effect.\n\nThe ultimate overexpression of a protein could be harmful for cellular growth, because it monopolizes and depletes limited resources that are involved in protein production, such as ribosomes and aminoacyl-tRNAs (Gong et al., 2006; Shachrai et al., 2010; Vind et al., 1993). This phenomenon is known as the protein burden/cost effect (Kafri et al., 2016; Snoep et al., 1995). Proteins that have no harmful effects on cellular functions can be overexpressed up to a level that causes protein-burden\u2013triggered growth defects. Conversely, if a protein cannot be overexpressed up to that level because it adversely affects cellular functioning, then overexpression of that protein will cause growth defects at relatively low expression levels, and we should consider mechanisms causing the defects.\n\nWe previously developed a genetic tug-of-war (gTOW) method that can be used to estimate the expression limit of a target protein that triggers growth defects in the yeast Saccharomyces cerevisiae (Makanae et al., 2013;\u00a0Moriya et al., 2006 , 2012 ). We estimated that the expression limit of a green fluorescent protein (GFP) was about 15% of the total cellular protein in S. cerevisiae (Kintaka et al., 2016). Because GFP is a highly structured cytoplasmic protein unrelated to the cellular functions of yeast and thus harmless, this level could be considered the expression limit for any protein that causes growth defects triggered by the protein-burden effect.\n\nWe predicted that the expression limits of some native highly expressed glycolytic proteins would be similar (>15% of the total cellular protein) (Moriya, 2015), suggesting that overexpression of these proteins would be harmless even though they have metabolic functions in yeast. The prediction was performed by the calculation of the proteins\u2019 native expression levels (Kulak et al., 2014) and their gene copy number limits as\u00a0determined by gTOW analysis, and has not yet been experimentally validated (Moriya, 2015). In this study, therefore, we tried to measure the expression limits of 29 glycolytic proteins to assess whether they are expressed up to levels that cause growth defects triggered by the protein-burden effect. There are five reasons why we chose glycolytic proteins: (1) because they are generally highly\u00a0expressed and thus considered non-harmful upon high-level expression, they are excellent targets for examining whether they are expressed up to the protein-burden limit; (2) because they have been intensely studied, we have information that can allow us to manipulate their catalytic activities; (3) because the glycolytic pathway is one of the best-known metabolic pathways, we can predict and measure metabolic changes upon overexpression of these\u00a0proteins; (4) they include a heteromer (Pfks), a mitochondrially localized protein (Adh3), and membrane proteins (Hxts), so we can assess how these characteristics affect expression limits; and\u00a0(5) they include paralogs whose expressions are differently regulated, so that we can test how their differences affect their expression limits.\n\nWe found that the expression limits of most of the 29 proteins were comparable to that of GFP and were independently determined by their catalytic activities, as suggested by a kinetic model of yeast glycolysis, confirming that their overexpression was harmless. Also, some of the proteins had far lower expression limits than those that would create a protein burden (the expression limit of GFP), and their harmful effects were derived from their localization and metabolic perturbations. Owing to their codon optimality, native poorly expressed isozymes were not produced at levels sufficient to cause growth defects, even when they were expressed from the strong TDH3 promoter on the multicopy plasmids. Some glycolytic proteins formed S\u2013S-bond-mediated aggregates when overexpressed, and this aggregation also seemed to restrict their expression limits.\n\n## Results\n\n### Overexpression of glycolytic proteins from a strong promoter on a multicopy plasmid causes growth defects\n\nFigure 1A shows the experimental system (plasmid) used\u00a0to express glycolytic proteins to limits that cause growth defects. The target glycolytic proteins analyzed in this study and their characteristics are summarized in Supplementary file 1. We cloned each target gene on the gTOW plasmid (pTOW40836) (Moriya et al., 2012), such that the target protein was expressed under the control of the strong TDH3 promoter. PFK1 and PFK2 were exceptionally expressed from the less-strong PYK1/CDC19 promoter because their expression from the TDH3 promoter was too strong and consequently\u00a0the\u00a0growth of the transformants was very poor (data not shown). The plasmids were used to transform the S. cerevisiae strain BY4741 (ura3\u0394 leu2\u0394). Copy numbers of the plasmid within the cell were controlled by changing growth conditions: up to 35 copies per cell in\u00a0+leucine (\u2013uracil) conditions (low-copy conditions) and up to 150 copies per cell in \u2013leucine conditions (high-copy conditions) due to the biases 2 \u00b5m ORI and leu2-89 (Moriya et al., 2012). In this experimental system, the\u00a0maximum growth rates of the cells with the vector in\u00a0+leucine conditions are much greater than those in \u2013leucine conditions (see Figure 1B\u2013C), probably because the copy number of leu2-89 is not sufficient tosupport fully\u00a0the leucine requirement in \u2013leucine conditions. We measured the expression limits of most of the 29 target proteins in low-copy conditions because the expression levels produced\u00a0under these conditions were\u00a0already sufficient\u00a0to\u00a0cause growth defects.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34595/elife-34595-fig1-v1.jpg)\n\n**Figure 1.:** (A) The plasmid used in this study. Each glycolytic gene was cloned into a 2-\u00b5m-based multicopy plasmid (pTOW40836) and expressed from the TDH3 promoter (TDH3pro) (with the exception of PYK1 which was expressed from the PYK1 promoter [PYK1pro], represented in the figure as (p)). In +leucine conditions, the copy number of the plasmid is relatively low (~30). In \u2013leucine conditions, the copy number goes up to 150 copies per cell due to the bias of leu2-89 (Moriya et al., 2012). Here, we designate these conditions low- and high-copy conditions, respectively. (B and C) Maximum growth rate of yeast cells harboring the plasmid overexpressing each glycolytic protein in the indicated growth conditions. The unit is min\u22121 \u00d7 10\u22124. (D and E) Copy number of the plasmid overexpressing each glycolytic protein in the indicated growth conditions. The unit is copy number per haploid genome. The error bars shows the standard deviation of at least three independent biological measurements.\n\nWe first measured the growth rates of cells harboring gTOW plasmids. As shown in Figure 1B, all cells expressing glycolytic proteins,\u00a0with\u00a0the exceptions of those expressing HXT1, HXT3, and HXT4, showed significant growth retardation compared to the vector control cells in low-copy conditions (p<0.01, Welch's t-test, Figure 1\u2014source data 1), indicating that expression\u00a0of\u00a0most of the glycolytic proteins caused\u00a0growth defects. This observation was confirmed by the growth measurement in the high-copy conditions shown in Figure 1C, as cells expressing most of the glycolytic proteins did not grow in these conditions. Cells expressing GLK1, FBA1, GPM1, PYK2, PDC6, ADH5, and ADH4 could grow in high-copy conditions, although their growth rate was significantly lower than that of the vector control (p<0.01, Welch's t-test, Figure 1\u2014source data 1).\n\nAs previously reported, the copy number of the gTOW plasmid inside the cell inversely reflects the deleterious effect of protein expression from the plasmid due to the gTOW effect: the plasmid copy number is low if expression of the target protein is harmful to cellular growth, and high if expression of the target protein is less harmful (Kintaka et al., 2016; Makanae et al., 2013;\u00a0Moriya et al., 2006, 2012). Figure 1D and E show the\u00a0copy numbers of gTOW plasmids in low- and high-copy conditions. In high-copy conditions, the\u00a0copy numbers of gTOW plasmids expressing only GLK1, FBA1, GPM1, PYK2, PDC6, and ADH4 were determined because yeast containing plasmids expressing the other protein-coding genes failed to grow. The\u00a0copy numbers of all gTOW plasmids containing target genes were significantly lower than those containing the empty vector (p<0.05, Welch's t-test, Figure 1\u2014source data 1), confirming that they were expressed up to levels that caused growth defects in this experimental system. Because the copy numbers of plasmids expressing most of\u00a0the\u00a0glycolytic proteins tested here, other than GLK1, PYK2, and ADH4, were not greater than the copy number of GFP, the expression of most glycolytic proteins in this experimental system seemed no less defective than that\u00a0of\u00a0GFP.\n\nWe concluded that most glycolytic proteins were expressed close to their upper limits, even in low-copy conditions, and that a copy number increase in high-copy conditions was required to express GLK1, FBA1, GPM1, PYK2, PDC6, and ADH4 to their limits.\n\n### Measurement of the\u00a0expression limits of glycolytic proteins\n\nNext, we measured the expression levels of proteins within the cells, overexpressing them from the gTOW plasmid. Figure 2A shows how protein abundance was estimated. As reported previously, when GFP is expressed up to its expression limit (and probably to the level required\u00a0to trigger the protein-burden effect), the protein is visible within whole cellular proteins separated by sodium dodecyl sulfate polyacrylamide gel electrophoresis (SDS-PAGE) (Kintaka et al., 2016). Because most glycolytic proteins were also expressed to similar levels by our experimental system, we measured the expression levels in arbitrary units (AU) as the\u00a0relative intensities of target protein bands within the total protein separated by SDS-PAGE. The AU is considered to reflect the total number\u00a0of\u00a0amino acids within the band, and the relative number of protein molecules can be estimated by dividing AU by the protein length. When two proteins of different sizes give bands\u00a0of\u00a0the same\u00a0number\u00a0of AUs, the molecule number of the larger protein in the band should be lower than that of the smaller protein. The relationship between the AU and the percentage of total protein that we previously reported (Kintaka et al., 2016) was estimated, as shown in Figure 2\u2014figure supplement 1, as % total protein\u00a0=\u00a05.5\u00a0\u00d7\u00a0AU. Representative images of SDS-PAGE-separated total proteins from cells harboring gTOW plasmids containing the target glycolytic protein genes are shown in Figure 2\u2014figure supplement 2. As shown in Figure 2B, most proteins were expressed at\u00a0levels\u00a0high enough to make\u00a0them visible within the SDS-PAGE\u2013separated whole cellular proteins, and the expression levels of Pgk1, Gmp1, Eno2, and Eno1 were higher than that of GFP. By contrast, the\u00a0expression levels of Pfk1, Adh3, and Hxts were almost undetectable with this experimental system. The x-fold increase in the expression of each target protein over its native level is shown in Figure 2\u2014figure supplement 3. The expression of some proteins was\u00a0increased\u00a0more than 10,000-fold in this experimental system. The\u00a0expression of Tdh3 and Gpm1 further increased in \u2013leucine conditions (Figure 2C), but the cells in this condition had\u00a0stunted growth (Figure 1C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34595/elife-34595-fig2-v1.jpg)\n\n**Figure 2.:** (A) Measurement of the expression level of an overexpressed glycolytic protein. Whole cellular proteins were stained by a fluorescent dye and separated by SDS-PAGE. The overexpression of the target protein (TBS), estimated from the intensity of it's band on the gel an its molecular weight, was compared with the corresponding expression of the vector control (TBV), after normalization using control bands (CBS and CBV) to calculate protein expression (AU). Measurement of Gpm1 expression level is shown as an example. (B and C) The expression level of glycolytic proteins overexpressed using the experimental system shown in Figure 1 in the indicated conditions. The TDH3 promoter was used for the expression of all genes except where (p) indicates the use of the PYK1 promoter. (D) Relationship between copy number and protein level in low-copy conditions. The copy number data are the same as in Figure 1D, and the protein level data are the same as in Figure 2B. The error bars shows the standard deviation of at least three independent biological measurements.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34595/elife-34595-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The equation derived by the linear regression of the data and the R-squared value are shown. Each circle indicates an independent measurement from Gpm1 (six samples), Pgk1 (three samples), and Adh4 (four samples) experiments.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34595/elife-34595-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Proteins were analyzed in low-copy conditions. Red dots indicate the expected size of the\u00a0target proteins. The\u00a0TDH3 promoter was used for the expression of all genes except where (p) indicates the use of the PYK1\u00a0promoter.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/34595/elife-34595-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Native expression level of each protein (A)\u00a0and the percentage per total S. cerevisiae protein were obtained and calculated using published data (Kulak et al., 2014). The percentage of each overexpressed protein (B) was calculated using the data in Figure 2B and the equation in Figure 2\u2014figure supplement 1. Fold overexpression of each target protein over the native level was then calculated as B/A.\n\nThere could be two reasons that explain\u00a0why\u00a0the expression level of a protein is low: (i) its strong overexpression is harmful to cellular growth and (ii) its expression is repressed. We can distinguish these two possibilities by comparing the copy numbers and protein abundance as shown in Figure 2D because the copy number of the plasmid inversely reflects the deflective effect of protein expression as described above. Overexpression of Pfk1, Adh3, and Hxts seemed harmful because their copy numbers were lower than the those of the other proteins (red circles in Figure 2D). By contrast, the expression of Glk1, Pyk2, and Pdc6 seemed to be repressed because their copy numbers were higher than those of the other proteins (blue circles in Figure 2D). The relationship between protein expression levels and copy numbers\u00a0(shown in Figure 2D) also suggested that expression levels are not solely determined by the promoter, because there was no significant correlation between the expression levels and plasmid copy numbers (Pearson r=0.28, p=0.12).\n\n### Mutations in catalytic centers do not affect the\u00a0expression limits of most glycolytic proteins\n\nNext, we tried to reveal the factors causing harmful effects that restrict expression limits, and the mechanisms that repress protein expression. Overproduction of glycolytic proteins might cause metabolic perturbations by accelerating the reactions that these proteins catalyze. To test whether growth inhibition caused by metabolic perturbations limits the expression levels of glycolytic proteins, we analyzed the expression limits of mutant proteins with reduced enzymatic activities by introducing mutations into the catalytic centers (here we call the mutant a\u00a0\u2018CC mutant\u2019). The mutations introduced into the glycolytic proteins are summarized in Supplementary file 1. Figure 3A shows the expression levels of wild-type and mutant proteins in low-copy conditions. The expression levels of all proteins except Pfk1, Fba1, Tdh3, and Eno1 were not significantly changed by introducing mutations. The expression levels of mutant Pfk1 and Tdh3 were significantly higher than those of wild-type proteins, and the\u00a0expression\u00a0levels of mutant Fba1 and Pgk1were significantly lower than those of wild-type proteins (p<0.05, Welch's t-test, Figure 3\u2014source data 1). For Pfk1, Tdh3, and Pfk2\u00a0(which catalyzes the same reaction with Pfk1), we further analyzed the expression levels in high-copy conditions (Figure 3B). The expression level of mutant Pfk2 significantly increased when\u00a0compared with that\u00a0of\u00a0wild-type Pfk2 (p=0.046, Welch's t-test). The expression levels of both wild-type and mutant Pfk1 were almost undetectable in these conditions, probably because their high-level expression was too toxic to the yeast cells. Because the expression level of wild-type Tdh3 was greater than that of mutant Tdh3, the enzymatic activity of Tdh3 probably did not restrict its protein expression limit. We concluded that the expression limits of most of the glycolytic proteins studied here are not restricted by metabolic perturbations triggered by their overproduction, whereas the expression limits of Pfk1 and Pfk2 are exceptionally restricted by metabolic perturbations. The expression levels of mutant Pfk1 and Pfk2, however, remained markedly lower than those of other glycolytic proteins, suggesting that other factors also influence their expression limits.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34595/elife-34595-fig3-v1.jpg)\n\n**Figure 3.:** (A and B) Expression levels of wild-type and CC mutant glycolytic proteins in\u00a0the indicated conditions. Each CC mutant has a mutation in the position shown in Supplementary file 1. (C) SDS-PAGE gel images of whole cellular proteins overexpressing Adh3 and \u0394MTS-Adh3 in low-copy conditions. Red dots indicate the expected sizes of the\u00a0target proteins. (D) Protein expression levels of Adh3 and \u0394MTS-Adh3 in low-copy conditions. The error bars indicates the standard deviation of the mean. *p<0.05; **p<0.01 in Welch's t-test.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34595/elife-34595-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Red letters indicate the predicted mitochondrial targeting sequence.\n\n### Mitochondrial localization restricts the expression limit of Adh3\n\nNext, we focused on Adh3, whose expression level was lower than those of the other glycolytic proteins, probably because high-level expression of Adh3 is harmful (Figure 2D). This harmful effect, however, is not triggered by metabolic perturbations, because the expression level of the\u00a0mutant Adh3 with reduced enzymatic activity was almost the same as that of wild-type Adh3 (Figure 3A). Among the glycolytic proteins tested in this study, Adh3 alone is a mitochondrial protein (Young and Pilgrim, 1985). To test whether the mitochondrial localization of Adh3 restricts its protein expression limit, we constructed a mutant without the mitochondrial targeting sequence (\u0394MTS-Adh3, Figure 3\u2014figure supplement 1) and compared its expression level to that\u00a0of\u00a0wild-type Adh3. As shown in Figure 3C and D, the expression level of \u0394MTS-Adh3 was about three times higher than that of wild-type Adh3. We concluded that the mitochondrial localization of Adh3 restricts its expression limit, probably because the\u00a0high-level expression of this\u00a0mitochondrial protein causes growth defects due to overloading of mitochondrial transport resources (Kintaka et al., 2016).\n\n### Metabolic perturbations triggered upon overexpression of glycolytic proteins\n\nThe results suggested that the\u00a0overexpression of most glycolytic proteins do\u00a0not cause serious metabolic perturbations. To test whether this speculation is theoretically supported, we used a kinetic model of the yeast glycolytic pathway (Smallbone et al., 2013); a schematic diagram of which\u00a0is shown in Figure 4\u2014figure supplement 1. Figure 4A\u2013D shows the x-fold change of glycolytic metabolites in simulations in which each glycolytic protein is overexpressed up to 128-fold compared with the wild-type simulation. Overproduction of 14 of 20 glycolytic proteins did not cause more than a two-fold metabolic change (gray lines in Figure 4A), indicating that overexpression of most glycolytic proteins does not cause serious metabolic perturbations. By contrast, the\u00a0overproduction of Hxk1 and Hxk2 affected glycolytic metabolism throughout, and the\u00a0overproduction of Pdc1 and Cdc19 affected metabolism\u00a0locally (Figure 4B\u2013C). Because the\u00a0experimental results using CC mutants suggested that their overexpression did\u00a0not trigger metabolic perturbations leading to the growth defects, unknown mechanisms to explain the discrepancy might exist. Overproduction of Pfk1 or Pfk2 did not cause a metabolic change, because, in the model, these\u00a0individual enzymes did not catalyze the Pfk reaction whereas\u00a0the Pfk1\u2013Pfk2 complex did. Simultaneous overproduction of both Pfk1 and Pfk2 caused severe metabolic changes (Figure 4D), whose pattern was quite similar to the\u00a0changes caused by Hxk1 and Hxk2 overexpression (Figure 4\u2014source data 1)\u00a0(except G6P and F6P levels did not change as these metabolites are upstream of the Pfk reaction). Although\u00a0metabolic changes upon overexpression of Pfks and Hxks showed a similar pattern, overexpression of Pfks but not Hxks caused growth defects (Figures 1 and 2), and catalytic mutations of only Pfks increased the expression limit of this protein (Figure 3). Hence, the\u00a0metabolic changes observed in the simulation do not by themselves explain the growth defects triggered by the overexpression of Pfks.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34595/elife-34595-fig4-v1.jpg)\n\n**Figure 4.:** (A\u2013D) Metabolic change triggered by overexpression of the indicated glycolytic protein in a kinetic model of glycolytic metabolism (Smallbone et al., 2013). Log10 fold-change in each metabolite level in a simulation with 128-fold overexpression of each glycolytic protein compared to that in the wild-type is shown. In (D), Pfk1 and Pfk2 are simultaneously overexpressed.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34595/elife-34595-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The diagram is drawn using the Systems Biology Graphic Notation (Le Nov\u00e8re et al., 2009).\n\nTo further characterize physiological conditions\u00a0that\u00a0are triggered by the overexpression of Pfks, we next analyzed metabolic changes in yeast cells overexpressing wild-type and CC mutant Pfk2 over the vector control by measuring 35 metabolites (Figure 5\u2014source data 1), because the CC mutants showed increased expression limits (Figure 3B). Figure 5A shows changes in the levels of nine glycolytic metabolites. Overexpression of both wild-type and CC mutant Pfk2 triggered significant reductions in some metabolites (p<0.05, Welch\u2019s t-test, Figure 5\u2014source data 1). Moreover, the patterns of metabolic changes were inconsistent with those predicted by the model (Figure 5\u2014figure supplement 1). These metabolic reductions were thus not triggered by the catalytic activity of Pfk2. We\u00a0noticed, however, that the level of F16bP in the cells overexpressing wild-type Pfk2 was\u00a0>3-fold higher than that in the CC mutant Pfk2 (Figure 5A, p<0.05, Welch\u2019s t-test, Figure 5\u2014source data 1). F16bP is the product of Pfk catalysis and the simulation predicted an increase in the F16bP level upon overexpression of Pfks (Figure 4D), suggesting that the catalytic activity of Pfk2 triggers this metabolic difference.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/34595/elife-34595-fig5-v1.jpg)\n\n**Figure 5.:** (A\u2013C) The bar graph shows the log2-fold change in each metabolite in the cells overexpressing wild-type and mutant Pfk2, Pfk1, and Tdh3 over the vector controls. The red circle shows the log2 fold-difference in each metabolite between the wild-type and the CC mutant measurements. The metabolites were measured in exponentially growing cells cultured in low-copy conditions. The error bars indicates the standard deviations of the mean for three (Pfk2) and two (Pfk1, Tdh3) biological replicates. *p<0.05 in Welch's t-test.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34595/elife-34595-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The line graph shows the simulation result, and the data are the same as those\u00a0used in Figure 4. Circles and diamonds show the metabolic measurements in vivo, and the data\u00a0are the same as those\u00a0used in Figure 5.\n\nWe next measured metabolic changes in 29 metabolites in cells overexpressing wild-type Pfk1 and Tdh3 and their CC mutants because these CC mutants also\u00a0showed increased expression limits (Figure 3A). As shown in Figure 5B and C, levels of glycolytic metabolites in the cells overexpressing wild-type Pfk1 and Tdh3 were not changed more than three-fold over the vector control. We did not observe any reproducible increase\u00a0in F16bP level in the cells overexpressing wild-type Pfk1 over\u00a0levels\u00a0in its CC mutant. Moreover, overall metabolic changes were higher in the cells overexpressing CC mutant than in those expressing wild-type Pfk1 (Figure 5B). We did not observe any reproducible difference in the metabolic changes between the cells overexpressing wild-type Tdh3 and its CC mutant (Figure 5C). We thus concluded that overexpression of Pfk1 and Tdh3 did not trigger significant metabolic changes through their catalytic activities, at least in the detected glycolytic metabolites.\n\n### Codon optimality explains the lower expression of non-harmful glycolytic proteins\n\nWe next focused on Glk1, Pyk2, and Pdc6, as their expression levels were lower than those of other glycolytic proteins in low-copy conditions, while they did not seem to be harmful (Figure 2D). Moreover, the\u00a0expression levels of Glk1 and Pyk2 were significantly elevated in high-copy conditions (Figure 6A). These results raised the possibility that expressed protein levels per single gene copy are lower than those for other genes either\u00a0because protein synthesis rates are low or because\u00a0protein degradation rates are high. Codon optimality strongly contributes totranslational elongation rate and mRNA stability (Presnyak et al., 2015). Therefore, we analyzed the tRNA adaptation index of a gene (tAIg) (Tuller et al., 2010) for\u00a0the the glycolytic genes studied here (Figure 6B and Figure 6\u2014figure supplement 1) and noticed that GLK1, PYK2, and PDC6 had a\u00a0much lower tAIg than the\u00a0other glycolytic genes. To test whether the codon optimality of GLK1 affects the protein expression level, we constructed codon-optimized GLK1 (CoGLK1) and measured its protein expression level (Figure 6A). Glk1 expressed from CoGLK1 was present at levels 3.6 and 4.7 times higher than that expressed from native GLK1 in low- and high-copy conditions, respectively. We concluded that Glk1 expression was low due to its low codon optimality.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/34595/elife-34595-fig6-v1.jpg)\n\n**Figure 6.:** (A) Expression levels of Glk1, Pyk2, Pdc6, and codon-optimized GLK1 (CoGlk1) in the\u00a0indicated conditions. (B) Relationship between the tAIg and the expression level of each glycolytic protein in low-copy conditions. Protein level data are the same as those\u00a0shown in Figure 2B. (C) Growth curves and GFP fluorescence of cells expressing codon-optimized GFPs. oG-GFP (tAIg\u00a0=\u00a00.40): a GFP gene whose codons were optimized for the GLK1 codon usage. oT-GFP (tAIg\u00a0=\u00a00.64): a GFP gene whose codons were optimized for the TDH3 codon usage. (D) Lag time between the timings with the maximum GFP fluorescence and the maximum growth rate. Timings of the maximum GFP fluorescence and the maximum growth rate are the time points with maximum second derivatives of GFP fluorescence and growth curves. The error bars indicate the standard deviations of the means. **p<0.01; ***p<0.001 in Welch's t-test.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34595/elife-34595-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The tAIg was calculated on the basis of the method described by\u00a0Tuller et al. (2010). For the native expression level of S. cerevisiae protein, a published dataset was used (Kulak et al., 2014). Red points indicate glycolytic genes/proteins that\u00a0are\u00a0analyzed in this study.\u00a0The\u00a0tAIgs of all yeast proteins are listed in Figure 6\u2014source data 1.\n\nGlk1 expression increases after a diauxic shift\u2014a growth-phase shift triggered by the carbon source alteration from glucose to ethanol (Zampar et al., 2013). We speculated that GLK1 might have a codon usage that\u00a0is\u00a0optimized for the tRNA pool after a diauxic shift and its translational rate might be higher after the shift. To investigate this possibility, we monitored the expression levels of GFPs with different codon usages under different growth conditions. We constructed two GFP genes whose codons were differently optimized: (i) oG-GFP, whose codons were selected at random with probabilities obtained from the codon usage table of GLK1, and (ii) oT-GFP, whose codons were substituted by the synonymous codon used most frequently in TDH3. We added the ornithine decarboxylase degron (Jungbluth et al., 2010) to the C-terminus of these GFP genes to allow accurate monitoring of the timings of their syntheses. Figure 6C shows the GFP fluorescence and the growth of cells expressing the GFP genes. The GFP fluorescence of both genes peaked during their exponential growth phases. Next, we measured the lag time between the inflection points of the GFP fluorescence curve and the growth curve (where the diauxic shift is supposed to happen), as shown in Figure 6D. Because the lag times were not significantly different (p=0.44), we concluded that the codon usage of GLK1 was not optimized to maximize their translation after the diauxic shift.\n\n### Overexpression-triggered protein aggregation through S\u2013S bonds restricts the\u00a0expression limits of Tpi1\n\nWhen we measured the expression levels of Eno2 and Pgk1 proteins, we unexpectedly observed high-molecular-weight bands whose sizes (~125 and 100 kDa) were different from the sizes of the monomers or dimers of Eno2 and Pgk1 (45 and 90 kDa, respectively) (Figure 7A). The band formation was independent of the catalytic activities of Eno2 because the\u00a0bands were also\u00a0observed in the experiment with Eno2 CC mutant (Figure 7A). The band in the\u00a0Eno2 experiment seemed to be S\u2013S-bond-connected protein aggregates because it disappeared after treatment with the reducing agent dithiothreitol (DTT)(Figure 7B). We confirmed that cysteines were responsible for creating these bands because they disappeared when cysteine residues were removed from Pgk1 and Eno2 (Figure 7\u2014figure supplement 1). To identify the protein species in the bands, we analyzed them by liquid chromatography-tandem mass spectrometry (LC-MS/MS). As shown in Figure 7C and D, we mainly detected glycolytic proteins, translational elongation factors, and translation initiation factors, in addition to each overexpressed protein. Most of the detected proteins were also detected in the CC mutant experiment (Figure 7C). This aggregation did not seem to affect the expression limits of Eno3 and Pgk1 because the expression limits of wild-type\u00a0proteins\u00a0and cysteine-less mutants (Eno2-C248S and Pgk1-C98S) were indistinguishable (Figure 7\u2014figure supplement 2).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/34595/elife-34595-fig7-v1.jpg)\n\n**Figure 7.:** (A) SDS-PAGE-separated total cellular proteins from cells overexpressing the\u00a0indicated proteins. (B) SDS-PAGE-separated total cellular proteins from cells overexpressing Eno2 after treatment with (+) or without (\u2013) the reducing agent DTT. (C and D) Enriched proteins in the high molecular bands from\u00a0cells\u00a0overexpressing the\u00a0indicated proteins. Proteins enriched in the high molecular bands\u00a0>\u00a01.5-fold over the vector control are shown. Proteins were analyzed in low-copy conditions. The red point indicates the expected molecular weight of overexpressed proteins. The asterisk indicates the high-molecular-weight band specifically observed upon overexpression of each glycolytic protein. Gel images were contrasted so that high-molecular-weight bands were visible. CC mut.: catalytic center mutant.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34595/elife-34595-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A and C) SDS-PAGE-separated total proteins of\u00a0cells overexpressing\u00a0the indicated proteins. Three biological replicates for each experiment are shown. C248S: substitution of cysteine 248\u00a0to serine; C98S: substitution of cysteine\u00a098 to serine. The arrow from A to B indicates the direction of the pixel intensity analysis shown in (B) and (D). (B and D) The pixel intensity analysis of the gel corresponding to the location containing the protein aggregate shown as the arrow between A and B. Image Quant TL software was used for the image analysis. The asterisk indicates the high-molecular-weight band specifically observed upon overexpression of each glycolytic protein.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34595/elife-34595-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** C248S: substitution of cysteine 248\u00a0with serine; C98S: substitution of cysteine 98\u00a0to serine. Proteins were analyzed in low-copy conditions.\n\nNext, we focused on Tpi1 because it was detected in both Pgk1\u00a0and Eno2 aggregates (Figure 7C\u2013D) and because\u00a0its expression limit (1.7 U) was lower than that\u00a0of\u00a0the highest-limit proteins such\u00a0as Pgk1 and Gpm1 (>2.0 U) (Figure 2B). As shown in Figure 8A, Tpi1 constituted many aggregation bands upon its overexpression. The\u00a0majority of these bands disappeared when cysteine residues were removed from Tpi1 (C41S, C126S), or after DTT treatment. These results suggested that non-specific S-S-bond-connected aggregation occurred upon overexpression of Tpi1. To test whether the aggregation restricts the Tpi1 expression limit, we measured the\u00a0expression limits of cysteine-less Tpi1. As shown in Figure 8B, the expression levels of cysteine-less Tpi1 significantly increased above those of wild-type Tpi1. Because mutant Tpi1 levels were higher than wild-type Tpi1 levels, even in\u00a0+DTT conditions, the\u00a0removal of cysteine residues would not only prevent the formation of aggregates\u00a0but would\u00a0also increase the expression limit of Tpi1.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/34595/elife-34595-fig8-v1.jpg)\n\n**Figure 8.:** (A) SDS-PAGE-separated total proteins from cells overexpressing indicated proteins, and their Western blot imaging using anti-Tpi1 antibodies. The red points indicate the expected molecular weight of overexpressed proteins. (B) Effect of cysteine substitutions on the expression level of Tpi1. *p<0.05; **p<0.01; ***p<0.001 in Welch's t-test. C41S: substitution of cysteine 41\u00a0to serine; C126S: substitution of\u00a0cysteine 126\u00a0to serine. Proteins were analyzed in low-copy conditions.\n\n## Discussion\n\nAccording to the protein-burden concept (Dong et al., 1995; Kafri et al., 2016; Shah et al., 2013; Snoep et al., 1995; Stoebel et al., 2008), the ultimate overexpression of any protein could cause growth defects by overloading basic protein production resources. But\u00a0only non-harmful proteins can be overexpressed up to the ultimate level, or the protein-burden limit, because the expression limit of harmful proteins should be restricted by their harmful effects. Knowing the protein-burden limit itself is thus essential when\u00a0seeking\u00a0to determine whether the\u00a0overexpression of a protein is harmful to cellular functions. We previously estimated the protein-burden limit of S. cerevisiae cells by measuring the expression\u00a0level of GFP that causes growth defects.\u00a0This\u00a0was\u00a015% of the total cellular protein (Kintaka et al., 2016).\n\nIn this study, we first tried to measure the expression limits of yeast glycolytic proteins in\u00a0order\u00a0to confirm whether the protein-burden limit measured using GFP applies to endogenous proteins. Most of the glycolytic proteins studied here caused growth defects when they were expressed from a strong promoter on a multicopy plasmid (Figure 1). The expression levels of some glycolytic proteins in these conditions were, indeed, comparative or even higher than that of GFP (Figure 2). Also, their expression levels did not increase due to mutations in their catalytic centers (Figure 3A). These results strongly suggest that the protein-burden effect largely\u00a0determines the expression limit, and that\u00a0the limit is around 15% of the total cellular protein. Among the glycolytic proteins studied here, Pgk1, Gpm1, and Eno2 had\u00a0the highest expression limits. Although Pgk1 (44.7 kDa) and Eno2 (46.9 kDa) are 1.5-fold larger than Gpm1 (27.6 kDa), their\u00a0expression limits were similar to those of Gpm1 (Figure 2B). These results suggest that\u00a0a protein's size does not affect its expression limit, at least for\u00a0proteins\u00a0in this molecular weight range. These data also suggest that the expression limits of\u00a0proteins\u00a0are not determined by the molar concentrations of those proteins but by the cost of the protein production.\n\nSome other glycolytic proteins, such as Pfk1, Pfk2, Adh3, and Hxts, showed expression limits far below the protein burden limit of 15% (Figure 2), suggesting that overexpression of these proteins is harmful. Of the\u00a018 glycolytic proteins\u00a0studied, Pfk1 and Pfk2 were the only ones whose expression limits were\u00a0significantly increased by mutations in their catalytic centers (Figure 3A\u2013B), suggesting that their metabolic functions restrict their expression limits. We\u00a0think, however, that\u00a0the metabolic perturbations that trigged the overexpression only partially affect the expression limits because the expression limits of the mutant proteins were still far below those of other glycolytic proteins (Figure 3A\u2013B). Pfk1 and Pfk2 form a hetero-octameric complex, and their stoichiometric imbalance leads to the formation of filamentous Pfk1\u00a0structures in the cytosol (Schwock et al., 2004). This stoichiometry-imbalance-triggered protein aggregate might cause growth defects upon overexpression of Pfk1 (and Pfk2), although we could not confirm this hypothesis\u00a0because simultaneous overexpression of Pfk1 and Pfk2 did not increase the expression limits of these proteins (our unpublished observation).\n\nThe CC mutants of Fba1 and Pgk1 showed lower expression limits than their wild-type\u00a0proteins (Figure 3A). We currently do not have any substantial and consistent explanation of\u00a0why these CC mutants have lower expression limits. We can assume some general mechanisms: CC mutant proteins sequester the wild-type enzymes into inactive complexes; CC mutant proteins sequester the\u00a0substrate molecules for the wild-type enzymes; or\u00a0mutation in the catalytic center destabilizes the structure of the enzyme. For example, Fba1 is an essential homodimeric enzyme (UniProtKB: P14540). Overexpression of CC mutant Fba1 molecules might sequester active wild-type Fba1 molecules into inactive complexes. The limit of CC mutant Tdh3 was higher than that\u00a0of\u00a0the wild-type in low-copy conditions whereas it was lower in high-copy conditions (Figure 3A\u2013B). This strange behavior might be related to its moonlighting function. The catalytic activity of Tdh3 did\u00a0not\u00a0seem to explain the difference in the expression limits of wild-type and CC mutant Tdh3 (Figure 5C). Beside its metabolic function, Tdh3 directly binds to Sir2 protein to promote transcriptional silencing, and a mutation in the catalytic center (C150G) reduces the silencing (Ringel et al., 2013). It is thus possible that the CC mutant Tdh3 (C150S) causes\u00a0silencing in a dose-dependent manner by competing with wild-type Tdh3 for binding with Sir2.\n\nWe speculated that the\u00a0localization of Adh3 to the mitochondria and of Hxts to the plasma membrane restricted their expression limits because localized proteins overload more-limited localization resources (Kintaka et al., 2016). This hypothesis was confirmed because the removal of the mitochondrial signal from Adh3 increased its expression limit (Figure 3C,D). We also speculated that the\u00a0expression limits of membrane proteins such as Hxts should be restricted by their localization, although there is no experimental evidence to support this hypothesis yet.\n\nThe fact that the\u00a0expression limits of most glycolytic proteins were not affected by mutations in their catalytic centers (Figure 3A) suggests that their overexpression does not cause metabolic perturbations. This finding was theoretically confirmed by simulations using a kinetic model of glycolytic metabolism (Figure 4). The reason why their overexpression does not cause metabolic perturbations is probably that they are bidirectional enzymes: the metabolic flux should be determined only by the availability of substrates when the concentrations of these enzymes are more than a certain level. To support this idea, the\u00a0overexpression of 14 bidirectional enzymes showed minor metabolic changes, whereas\u00a0the overexpression of 6 unidirectional enzymes (including\u00a0Hxks, Pfks, Cdc19, and Pdc1) showed strong metabolic changes in the simulation (Figure 4). The expression limits of Hxks in the cells, however, were close to the protein burden limit (Figure 2B) and were not affected by mutations in the catalytic center (Figure 3A). These results suggest an additional mechanism that is not implemented into the model that allows cells to avoid the effects of big metabolic changes upon overexpression of Hxks: a mechanism that prevents these metabolic perturbations from occurring, or a mechanism that prevents these metabolic perturbations from causing growth defects.\n\nThrough the metabolic analysis, we realized that we currently do not have any systematic way to identify metabolic changes\u00a0that\u00a0are directly triggered by the overexpression of an enzyme, because metabolism is interconnected and the\u00a0overexpression of a protein could cause non-specific perturbations that ultimately affect metabolism. Moreover, we know very little about how much change in which metabolite triggers a\u00a0growth defect. Comparison of the metabolic changes in cells overexpressing wild-type and CC-mutant enzymes could be one solution for this. In fact, we observed a three-fold difference between cells\u00a0expressing\u00a0wild-type and CC mutant Pfk2 (Figure 5A). Nevertheless, once again,\u00a0we cannot conclude from our current knowledge that this difference\u00a0causes the difference in the\u00a0expression limits of these two forms of Pfk2. By using a mathematical model, we tried to predict the\u00a0potential metabolic changes that would be triggered by overexpression of an enzyme without considering unknown effects other\u00a0than the\u00a0enzyme's metabolic activity. In the simulations, overexpression of Pfks and Hxks triggered divergent and almost catastrophic metabolic changes (~1000-fold increase in some metabolites, Figure 4B,D), suggesting that\u00a0their overexpression would cause growth defects due to these\u00a0strong metabolic perturbations. We thus expected to obtain similar metabolic changes upon overexpression of Pfks, whose CC mutants had higher expression limits. We\u00a0did not, however, observe such great changes (Figure 5A\u2013B and Figure 5\u2014figure supplement 1). To answer these issues\u00a0precisely, we need a much deeper understanding of the connections between metabolite levels and cellular growth.\n\nThe translational rate of some glycolytic proteins, including Glk1, seemed low because\u00a0of their lower codon optimality (Figure 6). Actually, the codon optimality of Glk1 (tAIg\u00a0=\u00a00.38) is close to the average for all the yeast genes (tAIg\u00a0=\u00a00.37), and the codon optimality of other glycolytic proteins studied here is exceptionally high (Figure 6\u2014figure supplement 1). These observations suggest that the codon optimality of most yeast genes is not high enough to allow\u00a0expression\u00a0of their proteins up to the protein-burden limit, even if they are expressed from a strong promoter on a multicopy plasmid.\n\nOverexpression of Eno2, Pgk1, and Tpi1 triggered S\u2013S-bond-connected aggregation (Figures 7 and 8), and the aggregates that are formed contain other glycolytic proteins and translational factors (Figure 7C\u2013D). We think that\u00a0this aggregation is triggered by spontaneous non-specific S\u2013S bond formation among proteins existing in high concentrations. Interestingly, we also detected the same proteins within the gel of the corresponding molecular weight in the vector control, although the amounts estimated by LC-MS/MS were lower and cannot be identified as visible protein bands (Figure 7\u2014source data 1). Therefore, we speculated that the S\u2013S-bond-mediated protein aggregation occurs even in normal physiological conditions, but it is accelerated by an increase in the concentration of cytoplasmic proteins upon overexpression of glycolytic proteins. This aggregation might affect the expression limits of cysteine-containing glycolytic proteins, because changing the\u00a0cysteine residues of Tpi1 into serine residues increases the protein's\u00a0expression limit (Figure 8B). As the amount of protein corresponding to the Tpi1 monomer was\u00a0not changed by DTT treatment, the expression level of Tpi1 should not be reduced simply by aggregation but by the harmful effect of spontaneous S\u2013S bond formation. This hypothesis is supported by the fact that the most highly expressed glycolytic protein Gpm1, which has a\u00a0molecular weight similar to that of Tpi1, does not have a cysteine residue. The deleterious effect of this aggregation, however, seems protein-specific because the\u00a0expression limits of Pgk1 and Eno1 were among highest measured\u00a0(Figure 2A), and removal of their cysteine did not increase their\u00a0expression limits (Figure 7\u2014figure supplement 1).\n\nAs described above, we revealed mechanisms that\u00a0restrict the expression limits of some glycolytic proteins. We\u00a0do not think, however, that these mechanisms are the sole factors restricting the\u00a0expression limits of these proteins. The expression limits of \u0394MTS-Adh3 (0.45 AU, Figure 3D) and CoGlkl (1.07 AU, Figure 6A) are still lower than those\u00a0of\u00a0other high limit proteins such as Pgk1 and Gpm1 (2.26 AU and 2.63 AU,\u00a0respectively, Figure 2B). It is thus likely that multiple mechanisms restrict the expression limits of these proteins.\n\nProtein misfolding or misinteraction is considered to cause toxicity upon high-level expression of a protein with low translational robustness, low folding stability, or a high propensity for misinteraction (Drummond and Wilke, 2009; Zhang and Yang, 2015). In general, highly\u00a0expressed proteins such\u00a0as glycolytic proteins are thus evolved to avoid these characteristics (Zhang and Yang, 2015), and that should be a requirement for a protein to be expressed up to the protein-burden limit. Cdc19, one of the glycolytic proteins studied here, aggregates in\u00a0a\u00a0stress-induced and reversible manner through a region of low compositional complexity (Saad et al., 2017). This aggregation capacity of Cdc19 might explain\u00a0why its expression limit (0.42 AU)\u00a0is\u00a0lower than the protein burden limit (>2.0 AU) (Figure 2B). Our finding in Figure 8 suggested that the\u00a0high-level expression of a cysteine-containing protein could also cause a\u00a0misinteraction-triggered toxic effect; hence unimportant cysteines should be avoided in highly\u00a0expressed proteins. Concentration-dependent liquid phase separation is also considered to cause toxicity upon overexpression of structurally\u00a0disordered and nucleic-acid-binding proteins (Bolognesi et al., 2016). We do not think that\u00a0this mechanism caused growth defects upon overexpression of the\u00a0glycolytic proteins studied here because they are less structurally\u00a0disordered (Moriya, 2015) and not nucleic-acid-binding proteins.\n\nWe summarize our analysis in Supplementary file 1. In conclusion, we established the ultimate expression level that causes cellular growth defects due to the protein-burden effect as around 15% of the total cellular protein. The next interesting theme is to identify characteristics of proteins that can be overexpressed up to the protein-burden limit because such proteins are considered non-harmful to cellular functions. Those characteristics should conversely imply the properties of proteins that are harmful when they are overexpressed.\n\n## Materials and methods\n\n### Strains, growth conditions, and yeast transformation\n\nBY4741 (MATa his3\u03941 leu2\u03940 met15\u03940 ura3\u03940) (Brachmann et al., 1998) was used as the host strain for the experiments. Yeast culture and transformation were performed as previously described (Amberg et al., 2005). A synthetic complete (SC) medium without uracil (Ura) or leucine (Leu), as indicated, was used for yeast culture.\n\n### Plasmids used in the study\n\nThe plasmids used in the study are listed in the\u00a0Key Resources Table (Supplementary file 2). The plasmids were constructed by the homologous recombination activity of yeast cells (Oldenburg et al., 1997), and their sequences were verified by DNA sequencing.\n\n### Measurement of the plasmid copy number\n\nThe plasmid copy number was measured by real-time polymerase chain reaction, as previously described (Moriya et al., 2006), using a LightCycler480 system (Roche). The LEU2 (LEU2-2F and LEU2-2R) and LEU3 primer sets (LEU3-3F and LEU3-3R) were used to amplify DNA fragments of the pTOW40836 plasmid and genomic DNAs, respectively. Mean values, standard deviations (SD), and p-values of Welch's t-test were calculated from biological triplicates.\n\n### Protein analysis\n\nThe total protein was extracted from log-phase cells with an NuPAGE LDS sample buffer (ThermoFisher) after 0.2N NaOH treatment (Kushnirov, 2000). For each analysis, the total protein extracted from two optical density (OD) units of cells with OD600 was used. For total protein visualization, the extracted total protein was labeled with Ezlabel FluoroNeo (ATTO), as described in the manufacturer\u2019s protocol, and separated by 4\u201312% SDS-PAGE. Proteins were detected and measured using the LAS-4000 image analyzer (GE Healthcare) in SYBR\u2013green fluorescence detection mode and Image Quant TL software (GE Healthcare). The expression of each target protein (AU) was calculated, as shown in Figure 2. Average values, SD, and p-values of Welch's t-test were calculated from biological triplicates. For detection of Tpi1, the SDS-PAGE-separated proteins were transferred to a PVDF membrane (ThermoFisher). Tpi1 was detected using an anti-Tpi1 antibody (RRID:AB_11130951), a peroxidase-conjugated secondary antibody (Nichirei Biosciences), and a chemiluminescent reagent (ThermoFisher). The chemiluminescent image was acquired with an LAS-4000 image analyzer in chemiluminescence detection mode.\n\n### Measuring growth rate and GFP fluorescence\n\nCellular growth and GFP fluorescence were measured by monitoring OD595 and Ex485 nm/Em 535 nm, respectively, every 30 min using an Infinite F200 microplate reader (Tecan). The maximum growth rate (MGR) was calculated as described previously (Moriya et al., 2006). Average values, SD, and p-values of Welch's t-test were calculated from biological triplicates. We define growth defect based on a significant reduction in the\u00a0maximum growth rate of the cells overexpressing a target protein compared with that of\u00a0cells\u00a0overexpressing the control vector (p<0.01, Welch\u2019s t-test).\n\n### In silico analysis of overexpression of glycolytic proteins\n\nWe used a kinetic model of the yeast glycolytic pathway\u00a0developed\u00a0previously (Smallbone et al., 2013). To predict metabolic changes upon overexpression of glycolytic proteins, we changed the initial concentration of each target protein 128-fold over the original concentration, and calculated the concentration of each metabolite at the steady state. We did not analyze the metabolism for the overproduction of Pyk2, Adh2, Adh3, Adh4, and Adh5, because they were not included or because\u00a0their turnover ratios were set to 0 in the model. We also did not analyze Hxts overexpression, because its concentration was not changeable in the model.\n\n### Metabolite analysis\n\nYeast cells were aerobically cultivated at 30\u00b0C for 24\u201348 hr in an SC\u2013Ura medium. The cells were inoculated into 200 mL of the medium at an\u00a0OD600 of 0.5 and then aerobically cultured at 30\u00b0C for 3 hr. 1.0 mL of culture containing cells with\u00a0an\u00a0of OD600 of 50 was mixed with 1.4 mL of methanol solution pre-cooled at \u201380\u00b0C. The sample was centrifuged at 5,000 g at \u201320\u00b0C for 5 min. After the removal of the supernatant, 1.0 mL of 75% ethanol pre-heated at 95\u00b0C was added to the sample, which\u00a0was then incubated for 3 min at 95\u00b0C. 10 \u00b5L of 17 \u00b5M D-camphor sulfonic acid was added to the sample as an internal standard for liquid chromatography triple\u2013stage quadrupole-mass spectrometry (LC-QqQ-MS) analysis. After placing on ice for 5 min, the sample was centrifuged at 5,000 g at 4\u00b0C for 5 min to remove cell debris. 950 \u00b5L of the supernatant was transferred to a new tube and centrifuged at 15,000 rpm at 4\u00b0C for 5 min. 300 \u00b5L of the supernatant collected as cell extract was dried under vacuum, and then stored at \u201380\u00b0C until the mass spectrometry analysis. All metabolites were measured using LC-QqQ-MS. LC-QqQ-MS analysis was performed according to the method given by Kato et al. (2012). We calculated the normalized internal standard peak areas for each metabolite. Samples from three independent cultures were analyzed for the cells overexpressing Pfk2, Pfk2 CC mutant, and the vector control. Samples from two independent cultures were analyzed for the cells overexpressing Pfk1, Pfk1 CC mutant, Tdh3, Tdh3 CC mutant, and the vector control.\n\n### Identification of aggregated protein species\n\nThe total protein extracts in the\u00a0overexpression of Eno2, Eno2 CC mutant, and Pgk1 were separated by SDS-PAGE and stained by Coomassie staining solution (ThermoFisher). Proteins of interest were excised from the gels and digested using trypsin. The tryptic peptides were analyzed by LC-MS/MS consisting of an LTQ-Orbitrap mass spectrometer (ThermoFisher) and a DiNa nano LC (KYA Technologies) system according to the method described previously (Kito et al., 2016). The peptide mixture was separated with reverse-phase chromatography. Mobile phase A contained 0.1% formic acid, and mobile phase B contained 0.1% formic acid/80% acetonitrile. Peptides were eluted at a flow rate of 200 nL/minute using a 55 min gradient as follows: from 0% to 32% solvent B over 45 min, from 32% to 40% solvent B over 5 min, and from 40% to 80% solvent B over 5 min. The acquired MS/MS spectra were subjected to a database search against the\u00a0protein sequences of S. cerevisiae. The\u00a0aggregating protein species in Figure 7 are those for which the number of peptide hits in the database search was five or more and was 1.5-fold more than that of the vector control.\n",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "b450defd-86cf-48f4-ad2b-962c6a3126a3",
+      "submission_id": "7f1bc970-97df-46d6-a3ab-4c009edcf0e8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nir Ben-Tal, Tel Aviv University Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34595.032](https://doi.org/10.7554/eLife.34595.032)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Estimating the Protein Burden Limit of Yeast Cells by Measuring Expression Limits of Glycolytic Proteins\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Detlef Weigel as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Claus O Wilke (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nMoriya et al., attempt to determine the protein expression limits of glycolytic proteins. They measure the growth rate, protein expression and copy number of glycolytic proteins using both high copy and low copy plasmids. They go on to estimate the contributions of various factors that might determine the upper limit of protein expression such as metabolic activity, codon usage, membrane localization and disulfide bond formation. The authors conclude that while metabolic activity has no role in determining the expression limit, disulfide bond formation, membrane localization and sub-optimal codon usage limit the extent of protein expression. The authors assert the ability of their pipeline to differentiate between proteins that can be overexpressed from those that will be harmful upon overexpression.\n\nEssential revisions:\n\n1) One of the main findings of the paper is that protein expression limits are not determined by the metabolic activity. The authors base this primarily on the lack of a difference between expression levels of proteins and their catalytic mutants (proteins with mutations in their catalytic sites). The authors need to verify that metabolism is indeed altered to unequivocally comment on the link between metabolic activity and protein expression levels. Instances that highlight the need to perform metabolic measurements in the manuscript are:\n\nA) The authors measured metabolic activity for only one protein-mutant pair (Pfk2, Figure 4), which did not show any difference in protein expression levels (Figure 3A). The authors need to measure the metabolic levels for pairs of proteins that show a significant difference in their expression levels like Pfk1 or Tdh3 to be able to comment on the link between metabolism and protein levels.\n\nB) In addition, there are several contradictions in the effect of these catalytic mutants on protein expression levels. Figure 3A shows that in two cases the mutant has higher expression (Pfk1 and Tdh3) but in other two cases, the wild-type has higher expression (Fba1, Eno1). How do the authors explain such differences? In addition, Tdh3 mutant has lower expression level compared to wild-type when expressed from a high copy plasmid. How do the authors explain this flip?\n\nC) Discussion, fifth paragraph: The authors claim that one of the reasons why they don't see any association between metabolic activity and expression is that the majority of these enzymes are bidirectional. This is not true for all the enzymes as some glycolytic enzymes are unidirectional. In addition, the authors need to show a control example where unidirectional enzyme has a higher protein expression in order to make any claim between enzymatic directionality and protein expression.\n\n2) The authors show that three mechanisms namely codon optimization, membrane localization and disulfide bond formation, determine the limit of expressions of several proteins. However, the differences observed by the authors are significant but really small. While it is likely that multiple mechanisms would contribute to determining the upper limit of protein expression, the authors need to be cautious about claiming them as the sole factors limiting expression levels (subsection \u201cMitochondrial localization restricting the expression limit of Adh3\u201d and subsection \u201cLower expression of nonharmful glycolytic proteins explained by their codon optimality\u201d, first paragraph). In addition, the authors claim that disulfide bonds limit the expression of Eno2 and Pgk1 by triggering aggregation. They show that addition of DTT removes the bond formation in Eno2, and changing cysteine to serine in a third protein (Tpi1) reduces its expression levels. Both these pieces of evidence are incomplete independently. Instead of performing the estimations in two different proteins, the authors need to alter cysteine to serine in Eno2 and Pgk1 and then show that the bands disappear in addition to increase in expression. Alternately, the authors need to show that Tpi1 also forms bonds which disappear upon treatment with DTT. The fact that expression of Tpi1 is independent of DTT contradicts that role of disulfide bonds in limiting expression.\n\n3) Overall the authors play a bit fast and loose with their statistics. First, p values should be accurately reported. Don't write \"p<0.05\", write \"p=0.032\". Second, whenever p values are stated it should also be stated what test was used (see e.g. subsection \u201cMutations in catalytic centers not affecting expression limits of most glycolytic proteins\u201d). Third, correlations should be reported with p values (e.g. subsection \u201cMetabolic perturbations triggered upon overexpression of glycolytic proteins\u201d, last paragraph).\n\n4) While the authors describe an interesting system to estimate the limits of protein expression within a cell, there are several discrepancies between vector copy number and measured expression levels, which raises the concern the results can be reflective of the technical experimental setting instead of true limitations. In addition, the authors use GFP, an exogenous protein with a high expression, as control. Endogenous proteins, preferably unidirectional and bidirectional enzymes, that show high and low expression levels, will make for better controls to the glycolytic enzymes. The following are specific examples of such discrepancies:\n\nA) In Figure 1B and C, why is the maximum growth rate between high and low copy number vector control so different?\n\nB) Subsection \u201cMeasurement of expression limits of glycolytic proteins\u201d, second paragraph: The two explanations mentioned by the authors are not mutually exclusive. The authors argue that proteins with low expression and low copy number are harmful for the cell and the ones with low expression and high copy number are repressed due to their high copy number. This is a circular argument and doesn't explain why the copy numbers are high in the first place. Finally, is the Pearson correlation of 0.3 significant? The authors have dismissed it but they need to show that it is statistically not significant.\n\nC) The authors claim that 15 percent of the total cellular protein is the limit for overexpression of protein. However, the authors do not observe any correlation between molecular weight and protein expression levels. How do the authors explain this lack of correlation?\n\n5) The results depend on how exactly one defines \"growth defect\" and how accurately one measures it. The paper does not discuss this issue. \"growth defect\" needs to be defined precisely, and the authors also need to argue that they can measure it with sufficient accuracy. One way by which one could get the result that there are no growth defects even at high levels of overexpression is by using a very insensitive assay.\n\n6) A simple summary table presenting the expression limit and proposed mechanism of toxicity (or not) and the evidence for this for all 29 proteins would be very helpful. This could replace some of the information in Table 1 which could be moved to the supplement.\n\n7) In places it is not entirely clear why the authors are only performing mechanistic experiments on a specific subset of the proteins. Again a summary table might help to better communicate what has been tested for which proteins and why.\n\n8) 'Repression' implies an active mechanism to lower protein concentration whereas it is just that these proteins are not using optimised codons that increase translation like the other enzymes. It is better to avoid this word and simply talk about 'lower expression'.\n\n9) The metabolic profiling is rather inconclusive. Is the conclusion simply that changes in the quantified metabolites cannot be causing the growth defect? There also doesn't seem to be much of a connection between the results of the computational simulations and the metabolic profiling, so it's not at all clear how useful the simulations are.\n\n10) There is an obvious other source of potential growth defects that have been discussed widely in the literature but that aren't mentioned at all: Toxic effects due to protein misfolding or misinteractions. For example, Geiler-Samerotte et al. measured the effect of overexpressed, misfolded GFP on yeast growth and found an effect in proportion to the amount of misfolded protein (https://doi.org/10.1073/pnas.1017570108). Also concentration-dependent liquid demixing e.g. Bolognesi et al., 2016. Similar topics have been discussed in the literature for a long time, see e.g. this review: https://www.nature.com/articles/nrg2662. No additional work required, but discussion is needed.\n",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4ae15102-ea06-4429-9843-074ede532cb5",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C1",
+      "claim": "The expression limit of GFP was about 15% of the total cellular protein in S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated that the expression limit of a green fluorescent protein (GFP) was about 15% of the total cellular protein in S. cerevisiae (Kintaka et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work (Kintaka et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "5cb2a861-fe77-4c9c-870e-be400488d326",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C2",
+      "claim": "GFP is a highly structured cytoplasmic protein unrelated to the cellular functions of yeast and thus harmless.",
+      "claim_type": "EXPLICIT",
+      "source": "Because GFP is a highly structured cytoplasmic protein unrelated to the cellular functions of yeast and thus harmless, this level could be considered the expression limit for any protein that causes growth defects triggered by the protein-burden effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about GFP's properties and its lack of interaction with yeast cellular functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "0744806b-3e09-43fc-84a0-15e15303ad20",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C3",
+      "claim": "The expression limits of some glycolytic proteins were up to 15% of the total cellular protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The limits of some glycolytic proteins were up to 15% of the total cellular protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, specifically protein expression measurements shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "f930a496-88fb-462f-9924-4069586d8377",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C4",
+      "claim": "The expression limits of glycolytic proteins were independent of the proteins' catalytic activities.",
+      "claim_type": "EXPLICIT",
+      "source": "These limits were independent of the proteins' catalytic activities, a finding that was supported by an in silico analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from catalytic center mutants (Figure 3) and computational modeling (Figure 4).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "238e5421-f299-4551-92aa-a915dc1be6a8",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C5",
+      "claim": "Some proteins had low expression limits that were explained by their localization and metabolic perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Some proteins had low expression limits that were explained by their localization and metabolic perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing that removal of mitochondrial targeting sequence from Adh3 increased its expression limit (Figure 3C-D) and metabolic measurements (Figure 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "490bd1ef-6c1f-43c2-9b5e-b28329dbdfc5",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C6",
+      "claim": "The codon usage should be highly optimized to trigger the protein-burden effect, even under strong transcriptional induction.",
+      "claim_type": "EXPLICIT",
+      "source": "The codon usage should be highly optimized to trigger the protein-burden effect, even under strong transcriptional induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing that proteins with low codon optimality (Glk1, Pyk2, Pdc6) had lower expression levels, and codon optimization of GLK1 increased its expression (Figure 6).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "c72aa786-647e-4c2d-83d5-fcbebfe5461b",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C7",
+      "claim": "The S\u2013S-bond-connected aggregation mediated by the cysteine residues of a protein might affect its expression limit.",
+      "claim_type": "EXPLICIT",
+      "source": "The S\u2013S-bond-connected aggregation mediated by the cysteine residues of a protein might affect its expression limit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing that cysteine-less mutants of Tpi1 had higher expression limits (Figure 8) and that aggregates disappeared after DTT treatment (Figure 7B).",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "0ff8646d-8f8d-4468-9786-d8a115b58495",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C8",
+      "claim": "Only non-harmful proteins could be expressed up to the protein-burden limit.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretically, only non-harmful proteins could be expressed up to the protein-burden limit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on logical inference from the protein burden concept.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "304e53ef-788f-409e-b35f-0541d8ffbd50",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C9",
+      "claim": "All cells expressing glycolytic proteins, with the exceptions of those expressing HXT1, HXT3, and HXT4, showed significant growth retardation compared to the vector control cells in low-copy conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1B, all cells expressing glycolytic proteins, with the exceptions of those expressing HXT1, HXT3, and HXT4, showed significant growth retardation compared to the vector control cells in low-copy conditions (p<0.01, Welch's t-test, Figure 1\u2014source data 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental growth rate measurements shown in Figure 1B with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "7338aea0-e9f7-4eeb-850c-5db5e52d7d38",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C10",
+      "claim": "The copy numbers of all gTOW plasmids containing target genes were significantly lower than those containing the empty vector.",
+      "claim_type": "EXPLICIT",
+      "source": "The copy numbers of all gTOW plasmids containing target genes were significantly lower than those containing the empty vector (p<0.05, Welch's t-test, Figure 1\u2014source data 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental plasmid copy number measurements shown in Figure 1D-E with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "0353043c-89ef-446a-a4f9-40ac26f23c2a",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C11",
+      "claim": "Most glycolytic proteins were expressed at levels high enough to make them visible within the SDS-PAGE\u2013separated whole cellular proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2B, most proteins were expressed at levels high enough to make them visible within the SDS-PAGE\u2013separated whole cellular proteins",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental protein expression data shown in Figure 2B and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "a2cc3bce-5ea5-42ba-8862-eaf9b07a9a47",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C12",
+      "claim": "The expression levels of Pgk1, Gmp1, Eno2, and Eno1 were higher than that of GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "the expression levels of Pgk1, Gmp1, Eno2, and Eno1 were higher than that of GFP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental protein expression measurements shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "73ed20d1-6993-4692-9d43-7fcb3fcce5b1",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C13",
+      "claim": "The expression levels of Pfk1, Adh3, and Hxts were almost undetectable with this experimental system.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the expression levels of Pfk1, Adh3, and Hxts were almost undetectable with this experimental system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental protein expression measurements shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "f84c2741-77cd-4513-9907-15086c24d2f4",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C14",
+      "claim": "The expression of some proteins was increased more than 10,000-fold in this experimental system.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of some proteins was increased more than 10,000-fold in this experimental system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "9c420bd9-c51f-462a-8809-04352796cac7",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C15",
+      "claim": "Overexpression of Pfk1, Adh3, and Hxts seemed harmful because their copy numbers were lower than those of the other proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of Pfk1, Adh3, and Hxts seemed harmful because their copy numbers were lower than the those of the other proteins (red circles in Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from the relationship between copy number and protein expression shown in Figure 2D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "7ab0b1a2-e216-4b70-8f54-47355567c4b7",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C16",
+      "claim": "The expression of Glk1, Pyk2, and Pdc6 seemed to be repressed because their copy numbers were higher than those of the other proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the expression of Glk1, Pyk2, and Pdc6 seemed to be repressed because their copy numbers were higher than those of the other proteins (blue circles in Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from the relationship between copy number and protein expression shown in Figure 2D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "b93a55d8-4691-446a-8044-eb57f58eb5ed",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C17",
+      "claim": "There was no significant correlation between the expression levels and plasmid copy numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "there was no significant correlation between the expression levels and plasmid copy numbers (Pearson r=0.28, p=0.12).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of the data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "59a186fc-aa0b-44e3-8268-28861b40900a",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C18",
+      "claim": "The expression levels of all proteins except Pfk1, Fba1, Tdh3, and Eno1 were not significantly changed by introducing mutations into catalytic centers.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression levels of all proteins except Pfk1, Fba1, Tdh3, and Eno1 were not significantly changed by introducing mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing wild-type and catalytic center mutant expression levels shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "47593f4e-20e2-48b7-a655-1e7bab1aa1e3",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C19",
+      "claim": "The expression levels of mutant Pfk1 and Tdh3 were significantly higher than those of wild-type proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression levels of mutant Pfk1 and Tdh3 were significantly higher than those of wild-type proteins",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A with statistical analysis (p<0.05, Welch's t-test).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "b623ee8d-e6da-4e85-962b-dcbf00b75cbb",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C20",
+      "claim": "The expression levels of mutant Fba1 and Pgk1 were significantly lower than those of wild-type proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "the expression levels of mutant Fba1 and Pgk1were significantly lower than those of wild-type proteins (p<0.05, Welch's t-test, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "5245ce9f-bf98-4084-b6b9-c5594b69232a",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C21",
+      "claim": "The expression level of mutant Pfk2 significantly increased when compared with that of wild-type Pfk2.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression level of mutant Pfk2 significantly increased when compared with that of wild-type Pfk2 (p=0.046, Welch's t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "16eeb46e-6cde-4828-b235-32456c213b15",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C22",
+      "claim": "The expression limits of most of the glycolytic proteins studied are not restricted by metabolic perturbations triggered by their overproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "We concluded that the expression limits of most of the glycolytic proteins studied here are not restricted by metabolic perturbations triggered by their overproduction",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental data from catalytic center mutants (Figure 3A) and computational modeling (Figure 4).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "9d895c5c-6c5f-44dd-89f3-ad59f10af5ca",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C23",
+      "claim": "The expression limits of Pfk1 and Pfk2 are exceptionally restricted by metabolic perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the expression limits of Pfk1 and Pfk2 are exceptionally restricted by metabolic perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental data showing that catalytic center mutants of Pfk1 and Pfk2 had higher expression limits (Figure 3A-B).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "0afd5103-3cb8-48dc-a6c8-97be1dc9ab08",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C24",
+      "claim": "The expression level of \u0394MTS-Adh3 was about three times higher than that of wild-type Adh3.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3C and D, the expression level of \u0394MTS-Adh3 was about three times higher than that of wild-type Adh3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "8670c8b6-a18d-4d8c-9ae5-f380a49cf1f3",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C25",
+      "claim": "The mitochondrial localization of Adh3 restricts its expression limit.",
+      "claim_type": "EXPLICIT",
+      "source": "We concluded that the mitochondrial localization of Adh3 restricts its expression limit, probably because the high-level expression of this mitochondrial protein causes growth defects due to overloading of mitochondrial transport resources (Kintaka et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing that removal of the mitochondrial targeting sequence increased Adh3 expression (Figure 3C-D) and a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "2a06d5c1-738c-452e-98eb-25ce26e9f077",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C26",
+      "claim": "Overproduction of 14 of 20 glycolytic proteins did not cause more than a two-fold metabolic change in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Overproduction of 14 of 20 glycolytic proteins did not cause more than a two-fold metabolic change (gray lines in Figure 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational modeling results shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "2c1349d2-a8e4-45a9-b463-8309808e8e8f",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C27",
+      "claim": "Overexpression of most glycolytic proteins does not cause serious metabolic perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that overexpression of most glycolytic proteins does not cause serious metabolic perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from computational modeling results shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "488d97d1-c0dd-4673-a094-df818b71b958",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C28",
+      "claim": "The overproduction of Hxk1 and Hxk2 affected glycolytic metabolism throughout in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the overproduction of Hxk1 and Hxk2 affected glycolytic metabolism throughout",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational modeling results shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "0c2787fa-0709-4416-95be-d363d40b3775",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C29",
+      "claim": "The overproduction of Pdc1 and Cdc19 affected metabolism locally in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "and the overproduction of Pdc1 and Cdc19 affected metabolism locally (Figure 4B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational modeling results shown in Figure 4B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "efadfe9f-6457-407e-b4c8-e4672377c3e2",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C30",
+      "claim": "Simultaneous overproduction of both Pfk1 and Pfk2 caused severe metabolic changes in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous overproduction of both Pfk1 and Pfk2 caused severe metabolic changes (Figure 4D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational modeling results shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "c5f6d05c-0faf-470b-9f45-0274a02a1151",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C31",
+      "claim": "Overexpression of both wild-type and CC mutant Pfk2 triggered significant reductions in some metabolites.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of both wild-type and CC mutant Pfk2 triggered significant reductions in some metabolites (p<0.05, Welch's t-test, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental metabolite measurements shown in Figure 5A with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "f6c701df-3d62-4d23-92b3-51ef868d2ac7",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C32",
+      "claim": "The level of F16bP in the cells overexpressing wild-type Pfk2 was >3-fold higher than that in the CC mutant Pfk2.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed, however, that the level of F16bP in the cells overexpressing wild-type Pfk2 was >3-fold higher than that in the CC mutant Pfk2 (Figure 5A, p<0.05, Welch's t-test, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental metabolite measurements shown in Figure 5A with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "0065d6d4-d5dd-4ff0-a799-65cb3b2da0e3",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C33",
+      "claim": "Levels of glycolytic metabolites in the cells overexpressing wild-type Pfk1 and Tdh3 were not changed more than three-fold over the vector control.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5B and C, levels of glycolytic metabolites in the cells overexpressing wild-type Pfk1 and Tdh3 were not changed more than three-fold over the vector control.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental metabolite measurements shown in Figure 5B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "22eba947-3ccd-48f9-bcde-8d0d46c4bbf3",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C34",
+      "claim": "Overexpression of Pfk1 and Tdh3 did not trigger significant metabolic changes through their catalytic activities.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus concluded that overexpression of Pfk1 and Tdh3 did not trigger significant metabolic changes through their catalytic activities, at least in the detected glycolytic metabolites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental metabolite measurements shown in Figure 5B-C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "be68b39e-b116-4167-b0d7-c877db14851f",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C35",
+      "claim": "The expression levels of Glk1 and Pyk2 were significantly elevated in high-copy conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the expression levels of Glk1 and Pyk2 were significantly elevated in high-copy conditions (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental protein expression measurements shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "87a6c231-900e-46b9-bf88-ec2633b5fafb",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C36",
+      "claim": "GLK1, PYK2, and PDC6 had a much lower tAIg than the other glycolytic genes.",
+      "claim_type": "EXPLICIT",
+      "source": "we analyzed the tRNA adaptation index of a gene (tAIg) (Tuller et al., 2010) for the the glycolytic genes studied here (Figure 6B and Figure 6\u2014figure supplement 1) and noticed that GLK1, PYK2, and PDC6 had a much lower tAIg than the other glycolytic genes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational analysis of codon usage shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "c5f63186-8ccf-4e63-b984-bddac3d991b0",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C37",
+      "claim": "Glk1 expressed from CoGLK1 was present at levels 3.6 and 4.7 times higher than that expressed from native GLK1 in low- and high-copy conditions, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Glk1 expressed from CoGLK1 was present at levels 3.6 and 4.7 times higher than that expressed from native GLK1 in low- and high-copy conditions, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental protein expression measurements shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "4e7333a3-afd0-4b09-a856-987a5c4711c2",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C38",
+      "claim": "Glk1 expression was low due to its low codon optimality.",
+      "claim_type": "EXPLICIT",
+      "source": "We concluded that Glk1 expression was low due to its low codon optimality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental data showing that codon optimization increased Glk1 expression (Figure 6A).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "be81d808-02e5-4e94-8424-ae376052ce95",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C39",
+      "claim": "The codon usage of GLK1 was not optimized to maximize their translation after the diauxic shift.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the lag times were not significantly different (p=0.44), we concluded that the codon usage of GLK1 was not optimized to maximize their translation after the diauxic shift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental measurements of GFP expression timing shown in Figure 6C-D with statistical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "013335b8-b3bf-49a3-ad31-ec96d47d1978",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C41",
+      "claim": "Cysteines were responsible for creating the high-molecular-weight bands in Pgk1 and Eno2 experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that cysteines were responsible for creating these bands because they disappeared when cysteine residues were removed from Pgk1 and Eno2 (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing that cysteine-less mutants did not form the bands (Figure 7\u2014figure supplement 1).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "77f821ab-124f-45ed-8985-4f04352b3235",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C42",
+      "claim": "Glycolytic proteins, translational elongation factors, and translation initiation factors were mainly detected in the high-molecular-weight bands.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 7C and D, we mainly detected glycolytic proteins, translational elongation factors, and translation initiation factors, in addition to each overexpressed protein.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by LC-MS/MS analysis data shown in Figure 7C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "7b79af58-5f7a-4da2-8ca5-c8b51a7365e2",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C43",
+      "claim": "The aggregation did not seem to affect the expression limits of Eno3 and Pgk1.",
+      "claim_type": "EXPLICIT",
+      "source": "This aggregation did not seem to affect the expression limits of Eno3 and Pgk1 because the expression limits of wild-type proteins and cysteine-less mutants (Eno2-C248S and Pgk1-C98S) were indistinguishable (Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental data comparing expression limits of wild-type and cysteine-less mutants shown in Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "ace1a360-ecc7-40f1-9b5f-b66e7041ae4f",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C44",
+      "claim": "Tpi1 constituted many aggregation bands upon its overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 8A, Tpi1 constituted many aggregation bands upon its overexpression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "78be124a-964a-49c2-91dd-a528433b546c",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C45",
+      "claim": "The majority of Tpi1 aggregation bands disappeared when cysteine residues were removed from Tpi1 or after DTT treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of these bands disappeared when cysteine residues were removed from Tpi1 (C41S, C126S), or after DTT treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "16480cc8-e90b-4272-8224-09ad697bb624",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C46",
+      "claim": "The expression levels of cysteine-less Tpi1 significantly increased above those of wild-type Tpi1.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 8B, the expression levels of cysteine-less Tpi1 significantly increased above those of wild-type Tpi1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 8B with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "28445762-f134-4123-9bec-30dd1d510303",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C47",
+      "claim": "The removal of cysteine residues would not only prevent the formation of aggregates but would also increase the expression limit of Tpi1.",
+      "claim_type": "EXPLICIT",
+      "source": "Because mutant Tpi1 levels were higher than wild-type Tpi1 levels, even in +DTT conditions, the removal of cysteine residues would not only prevent the formation of aggregates but would also increase the expression limit of Tpi1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from experimental data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "3030872a-ef59-4141-8d0c-88f323e927a2",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C48",
+      "claim": "The protein-burden limit of S. cerevisiae cells is around 15% of the total cellular protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we established the ultimate expression level that causes cellular growth defects due to the protein-burden effect as around 15% of the total cellular protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental data from GFP expression (cited from Kintaka et al., 2016) and glycolytic protein expression measurements in this study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "651e970d-64f9-45b9-8c4b-ec617c8ef604",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C49",
+      "claim": "Pgk1 and Eno2 are 1.5-fold larger than Gpm1.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Pgk1 (44.7 kDa) and Eno2 (46.9 kDa) are 1.5-fold larger than Gpm1 (27.6 kDa), their expression limits were similar to those of Gpm1 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on knowledge of protein molecular weights and experimental data shown in Figure 2B.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "9256e68b-0b96-4363-aafa-f0ffbdaa57dc",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C50",
+      "claim": "A protein's size does not affect its expression limit, at least for proteins in the molecular weight range of glycolytic proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that a protein's size does not affect its expression limit, at least for proteins in this molecular weight range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from experimental data comparing expression limits of proteins with different sizes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "dbfa9a4b-2383-47ce-83f7-8eb015105c98",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C51",
+      "claim": "The expression limits of proteins are not determined by the molar concentrations of those proteins but by the cost of the protein production.",
+      "claim_type": "EXPLICIT",
+      "source": "These data also suggest that the expression limits of proteins are not determined by the molar concentrations of those proteins but by the cost of the protein production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from experimental data showing that proteins of different sizes had similar expression limits when measured in AU.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "e340e729-e65a-4141-a949-34de8cb60efe",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C52",
+      "claim": "Pfk1 and Pfk2 form a hetero-octameric complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Pfk1 and Pfk2 form a hetero-octameric complex, and their stoichiometric imbalance leads to the formation of filamentous Pfk1 structures in the cytosol (Schwock et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work (Schwock et al., 2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "8b4ae750-b540-44ba-972b-52960563cf4f",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C53",
+      "claim": "Stoichiometric imbalance of Pfk1 and Pfk2 leads to the formation of filamentous Pfk1 structures in the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Pfk1 and Pfk2 form a hetero-octameric complex, and their stoichiometric imbalance leads to the formation of filamentous Pfk1 structures in the cytosol (Schwock et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work (Schwock et al., 2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "572f6671-9bef-40ca-9b4f-05f6dd80932b",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C54",
+      "claim": "Fba1 is an essential homodimeric enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Fba1 is an essential homodimeric enzyme (UniProtKB: P14540).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the UniProtKB database.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "e714c42c-1448-41d9-8626-997eb743622e",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C55",
+      "claim": "The catalytic activity of Tdh3 (C150G mutation) affects transcriptional silencing through interaction with Sir2 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Beside its metabolic function, Tdh3 directly binds to Sir2 protein to promote transcriptional silencing, and a mutation in the catalytic center (C150G) reduces the silencing (Ringel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work (Ringel et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "e04c834f-0d7d-40a5-a9c1-0401a091b796",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C56",
+      "claim": "The overexpression of 14 bidirectional enzymes showed minor metabolic changes in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "To support this idea, the overexpression of 14 bidirectional enzymes showed minor metabolic changes, whereas the overexpression of 6 unidirectional enzymes (including Hxks, Pfks, Cdc19, and Pdc1) showed strong metabolic changes in the simulation (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational modeling results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "7e4040e2-a820-459d-a56f-1402224a35ce",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C57",
+      "claim": "The overexpression of 6 unidirectional enzymes (including Hxks, Pfks, Cdc19, and Pdc1) showed strong metabolic changes in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "To support this idea, the overexpression of 14 bidirectional enzymes showed minor metabolic changes, whereas the overexpression of 6 unidirectional enzymes (including Hxks, Pfks, Cdc19, and Pdc1) showed strong metabolic changes in the simulation (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational modeling results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "f5408544-33f9-42c1-a3c1-75610c2407f9",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C58",
+      "claim": "The codon optimality of Glk1 (tAIg = 0.38) is close to the average for all the yeast genes (tAIg = 0.37).",
+      "claim_type": "EXPLICIT",
+      "source": "Actually, the codon optimality of Glk1 (tAIg = 0.38) is close to the average for all the yeast genes (tAIg = 0.37)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational analysis of codon usage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "56566622-bce8-4234-98b6-56f0864d698d",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C59",
+      "claim": "The codon optimality of most yeast genes is not high enough to allow expression of their proteins up to the protein-burden limit, even if they are expressed from a strong promoter on a multicopy plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that the codon optimality of most yeast genes is not high enough to allow expression of their proteins up to the protein-burden limit, even if they are expressed from a strong promoter on a multicopy plasmid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from codon optimality analysis and experimental expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "c06fc4f4-713a-4e4b-a64e-9cf52fdd4193",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C60",
+      "claim": "S\u2013S-bond-mediated protein aggregation occurs even in normal physiological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we speculated that the S\u2013S-bond-mediated protein aggregation occurs even in normal physiological conditions, but it is accelerated by an increase in the concentration of cytoplasmic proteins upon overexpression of glycolytic proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from LC-MS/MS data showing the same proteins detected in vector control samples at lower levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "cdb0e784-80d6-4286-a5aa-7f776e168276",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C61",
+      "claim": "The most highly expressed glycolytic protein Gpm1 does not have a cysteine residue.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis is supported by the fact that the most highly expressed glycolytic protein Gpm1, which has a molecular weight similar to that of Tpi1, does not have a cysteine residue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on knowledge of protein sequences.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "4486c01c-ad87-4229-b28b-a31955bf71c4",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C62",
+      "claim": "Cdc19 aggregates in a stress-induced and reversible manner through a region of low compositional complexity.",
+      "claim_type": "EXPLICIT",
+      "source": "Cdc19, one of the glycolytic proteins studied here, aggregates in a stress-induced and reversible manner through a region of low compositional complexity (Saad et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work (Saad et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "945ce419-1946-42bd-998b-6004909d0e11",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C63",
+      "claim": "Glycolytic proteins are less structurally disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "We do not think that this mechanism caused growth defects upon overexpression of the glycolytic proteins studied here because they are less structurally disordered (Moriya, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work (Moriya, 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "7481749c-be14-43af-93e5-fd13e7cad833",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C64",
+      "claim": "Glycolytic proteins are not nucleic-acid-binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "and not nucleic-acid-binding proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about glycolytic protein functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "1ff1865e-7fa2-4b0d-9c22-3b2615252d28",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C65",
+      "claim": "Protein overexpression is sometimes harmful to cellular growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein overexpression is sometimes harmful to cellular growth (Makanae et al., 2013; Sopko et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "6e90d97c-dc9d-466f-bda0-37863b783874",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C66",
+      "claim": "Resource overload is triggered upon overexpression of a protein that has a high demand of cellular resources.",
+      "claim_type": "EXPLICIT",
+      "source": "Resource overload, stoichiometric imbalance, promiscuous interaction, and pathway modulation are triggered upon overexpression of, respectively, (i) a protein that has a high demand of cellular resources (Dong et al., 1995; Kintaka et al., 2016; Stoebel et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "31cd6bc2-6b9e-4ffd-bfa0-da6efb92fd76",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C67",
+      "claim": "Stoichiometric imbalance is triggered upon overexpression of a protein that is part of a protein complex.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) a protein that is part of a protein complex (Kaizu et al., 2010; Makanae et al., 2013; Papp et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "add9b3cd-59bd-4304-9ad2-4d65c3856d72",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C68",
+      "claim": "Promiscuous interaction is triggered upon overexpression of a protein with a nonspecific interaction domain.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) a protein with a nonspecific interaction domain (Ma et al., 2010; Vavouri et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "bcdad576-99fd-422a-85c4-787d8ed7f97a",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C69",
+      "claim": "Pathway modulation is triggered upon overexpression of a protein that catalyzes a pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "(iv) a protein that catalyzes a pathway (Prelich, 2012; Youn et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "1322e16b-9226-4ba7-89de-6194498161c8",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C70",
+      "claim": "The ultimate overexpression of a protein could be harmful for cellular growth because it monopolizes and depletes limited resources involved in protein production.",
+      "claim_type": "EXPLICIT",
+      "source": "The ultimate overexpression of a protein could be harmful for cellular growth, because it monopolizes and depletes limited resources that are involved in protein production, such as ribosomes and aminoacyl-tRNAs (Gong et al., 2006; Shachrai et al., 2010; Vind et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "40cf44a6-0787-46a6-a9e3-4df57059fc25",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C71",
+      "claim": "The protein burden/cost effect is a phenomenon where ultimate protein overexpression is harmful due to resource depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon is known as the protein burden/cost effect (Kafri et al., 2016; Snoep et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work defining the protein burden concept.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "ffdd0821-a71b-40f0-bfe0-12c8570af7cf",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C72",
+      "claim": "The gTOW method can be used to estimate the expression limit of a target protein that triggers growth defects in S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously developed a genetic tug-of-war (gTOW) method that can be used to estimate the expression limit of a target protein that triggers growth defects in the yeast Saccharomyces cerevisiae (Makanae et al., 2013; Moriya et al., 2006 , 2012 ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work describing the gTOW method.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "6a6cdca3-8ebb-42a2-a29e-87ee68715a30",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C73",
+      "claim": "The copy number of the gTOW plasmid inside the cell inversely reflects the deleterious effect of protein expression from the plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported, the copy number of the gTOW plasmid inside the cell inversely reflects the deleterious effect of protein expression from the plasmid due to the gTOW effect: the plasmid copy number is low if expression of the target protein is harmful to cellular growth, and high if expression of the target protein is less harmful (Kintaka et al., 2016; Makanae et al., 2013; Moriya et al., 2006, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work describing the gTOW mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "18f40d15-9a9e-4e03-b796-18d51dc6fdcf",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C74",
+      "claim": "Adh3 is a mitochondrial protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the glycolytic proteins tested in this study, Adh3 alone is a mitochondrial protein (Young and Pilgrim, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "66e6d7e0-c985-427e-8624-0799fc3e612e",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C75",
+      "claim": "Glk1 expression increases after a diauxic shift.",
+      "claim_type": "EXPLICIT",
+      "source": "Glk1 expression increases after a diauxic shift\u2014a growth-phase shift triggered by the carbon source alteration from glucose to ethanol (Zampar et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "d62ad02f-b86b-4bd0-88d4-9d3ee15de4c1",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C76",
+      "claim": "Codon optimality strongly contributes to translational elongation rate and mRNA stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Codon optimality strongly contributes totranslational elongation rate and mRNA stability (Presnyak et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "b42f14d5-077e-42f2-8bfb-dd99ea478f90",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C77",
+      "claim": "Highly expressed proteins are evolved to avoid low translational robustness, low folding stability, or a high propensity for misinteraction.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, highly expressed proteins such as glycolytic proteins are thus evolved to avoid these characteristics (Zhang and Yang, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "6c343a8d-6847-4fe0-9e10-75b0432e9027",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C78",
+      "claim": "Concentration-dependent liquid phase separation is considered to cause toxicity upon overexpression of structurally disordered and nucleic-acid-binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Concentration-dependent liquid phase separation is also considered to cause toxicity upon overexpression of structurally disordered and nucleic-acid-binding proteins (Bolognesi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "82cd69ed-bb84-4a9a-abda-294b7a8acee3",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C79",
+      "claim": "PFK1 and PFK2 were expressed from the PYK1/CDC19 promoter because their expression from the TDH3 promoter was too strong and the growth of the transformants was very poor.",
+      "claim_type": "EXPLICIT",
+      "source": "PFK1 and PFK2 were exceptionally expressed from the less-strong PYK1/CDC19 promoter because their expression from the TDH3 promoter was too strong and consequently the growth of the transformants was very poor (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations (though data not shown).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "87af28e0-dcc2-4385-ae18-c2372d7bde64",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C80",
+      "claim": "The maximum growth rates of cells with the vector in +leucine conditions are much greater than those in \u2013leucine conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In this experimental system, the maximum growth rates of the cells with the vector in +leucine conditions are much greater than those in \u2013leucine conditions (see Figure 1B\u2013C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental growth rate data shown in Figure 1B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "cf318307-78a2-4a2e-add3-f4664c9ca022",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C81",
+      "claim": "The copy number of leu2-89 is not sufficient to support fully the leucine requirement in \u2013leucine conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "probably because the copy number of leu2-89 is not sufficient tosupport fully the leucine requirement in \u2013leucine conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the growth rate difference between conditions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "4ccbfdd8-e2d5-4d18-81a0-78e52ae67699",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C82",
+      "claim": "The expression levels produced under low-copy conditions were already sufficient to cause growth defects for most of the 29 target proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the expression limits of most of the 29 target proteins in low-copy conditions because the expression levels produced under these conditions were already sufficient to cause growth defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental observations of growth defects shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "71e9c4c0-f0d4-4e7b-b4c5-e6bc2fbefdcb",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C83",
+      "claim": "The relationship between AU and percentage of total protein is % total protein = 5.5 \u00d7 AU.",
+      "claim_type": "EXPLICIT",
+      "source": "The relationship between the AU and the percentage of total protein that we previously reported (Kintaka et al., 2016) was estimated, as shown in Figure 2\u2014figure supplement 1, as % total protein = 5.5 \u00d7 AU.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental calibration data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "17a1d2c3-f903-4318-9f27-4d61fd01aad2",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C84",
+      "claim": "The metabolic flux should be determined only by the availability of substrates when the concentrations of bidirectional enzymes are more than a certain level.",
+      "claim_type": "EXPLICIT",
+      "source": "The reason why their overexpression does not cause metabolic perturbations is probably that they are bidirectional enzymes: the metabolic flux should be determined only by the availability of substrates when the concentrations of these enzymes are more than a certain level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation based on enzyme kinetics principles.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "c020058f-a98d-4e10-8496-517a6d2e2ac5",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C85",
+      "claim": "The expression limits of \u0394MTS-Adh3 and CoGlk1 are still lower than those of other high limit proteins such as Pgk1 and Gpm1.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression limits of \u0394MTS-Adh3 (0.45 AU, Figure 3D) and CoGlkl (1.07 AU, Figure 6A) are still lower than those of other high limit proteins such as Pgk1 and Gpm1 (2.26 AU and 2.63 AU, respectively, Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on comparison of experimental protein expression data from multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "9ce4f1a7-8552-4f09-a34a-803f27c3b182",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "claim_id": "C86",
+      "claim": "Multiple mechanisms restrict the expression limits of Adh3 and Glk1.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thus likely that multiple mechanisms restrict the expression limits of these proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that removing single factors did not bring expression limits to the maximum level.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8f7405cf-04e7-488b-b630-a39cd43474ff",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The protein-burden limit of S. cerevisiae cells is established at approximately 15% of total cellular protein. This limit was determined using GFP as a reference protein and confirmed by measuring expression limits of glycolytic proteins, with some reaching or exceeding this threshold. Only non-harmful proteins can be expressed up to this protein-burden limit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C8, and C48 collectively establish the protein-burden limit at ~15% of total cellular protein. The result is supported by prior work on GFP (C1), experimental measurements of glycolytic proteins reaching similar levels (C3, C12), and the logical framework that only non-harmful proteins reach this limit (C8). The convergence of GFP data and glycolytic protein measurements provides strong evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "f4b31815-2701-4b12-830f-55c89cccf8ab",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The expression limits of most glycolytic proteins are independent of their catalytic activities, as demonstrated by catalytic center mutants showing unchanged expression levels for most proteins. However, Pfk1 and Pfk2 are exceptions where metabolic perturbations restrict expression limits. Computational modeling supports that overexpression of most (14 of 20) glycolytic proteins causes minimal metabolic changes, while unidirectional enzymes show stronger effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C18-C23 provide experimental evidence from catalytic center mutants, while C26-C30 and C56-C57 provide computational support. The majority of proteins showed no change in expression with catalytic mutations (C18, C22), while Pfk1/Pfk2 showed increased expression with mutations (C19, C21, C23). The computational modeling (C26-C30) corroborates these findings by showing minimal metabolic perturbations for most proteins.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "93480633-8c53-4f49-9ca5-a053f3c50cf0",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mitochondrial localization restricts the expression limit of Adh3. Removal of the mitochondrial targeting sequence (\u0394MTS-Adh3) increased expression approximately three-fold compared to wild-type Adh3, demonstrating that subcellular localization is a limiting factor for protein expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 provide direct experimental evidence that removing the mitochondrial targeting sequence increases Adh3 expression ~3-fold. This is supported by C74 establishing Adh3 as mitochondrial and C5 generalizing the finding. The experimental design directly tests the hypothesis and shows a clear effect of localization on expression limits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "870dc8ae-d5f4-4827-8430-a08fe1eeeb45",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Codon optimality limits protein expression for genes with low tRNA adaptation index (tAIg). Glk1, Pyk2, and Pdc6 showed low expression due to poor codon usage, and codon optimization of GLK1 increased expression 3.6-4.7 fold. Most yeast genes have insufficient codon optimality to reach the protein-burden limit even under strong transcriptional induction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 provide experimental evidence that codon optimization increases Glk1 expression significantly. C16, C35, and C36 establish that low-expression proteins have low tAIg values. C58-C59 provide broader context showing that average yeast genes have tAIg similar to Glk1, suggesting widespread codon limitation. The experimental validation with CoGLK1 directly demonstrates causality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "7233a4cf-8d17-4150-837f-a0b37099ae8b",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "S-S bond-mediated protein aggregation through cysteine residues restricts expression limits of some glycolytic proteins, particularly Tpi1. Cysteine-less mutants of Tpi1 showed significantly increased expression limits, and aggregates disappeared with DTT treatment or cysteine removal. The aggregates contain glycolytic proteins and translational factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 provide direct experimental evidence that removing cysteines from Tpi1 increases expression and eliminates aggregates. C41-C42 characterize the aggregates as S-S bond-mediated and identify their protein composition. C60-C61 provide supporting context. The combination of DTT treatment, cysteine mutation, and expression measurements provides strong mechanistic evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "d34050ed-1595-43bf-8603-26d0462371e3",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Overexpression of most glycolytic proteins from a strong promoter on multicopy plasmids causes growth defects. All proteins except HXT1, HXT3, and HXT4 showed significant growth retardation in low-copy conditions, and plasmid copy numbers were significantly lower than vector controls, confirming expression-induced toxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10 provide statistical evidence (p<0.01 and p<0.05) of growth defects and reduced plasmid copy numbers for most glycolytic proteins. C82 confirms that low-copy conditions were sufficient to cause growth defects. The gTOW system's inverse relationship between copy number and toxicity (C73) validates the interpretation. Multiple independent measurements support this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "1a2fffa9-1abc-4d60-8b0a-b6155c8cd8dc",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Metabolic measurements of cells overexpressing Pfk2, Pfk1, and Tdh3 show that wild-type Pfk2 causes a specific increase in F16bP (>3-fold vs CC mutant), while Pfk1 and Tdh3 overexpression do not cause significant metabolic changes in detected glycolytic metabolites. This suggests Pfk2's catalytic activity has metabolic effects, but these may not fully explain growth defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C31-C34 provide metabolite measurements, but the interpretation is complicated. While C32 shows a clear F16bP difference for Pfk2, C33-C34 show no major changes for Pfk1/Tdh3 despite their CC mutants having higher expression limits (C19). The discrepancy between computational predictions (Figure 4) and experimental measurements (Figure 5) is acknowledged but not resolved. The metabolic data alone cannot explain the expression limit differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "fde06ebd-b7fa-4742-a061-cec81222e58b",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The codon usage of GLK1 was not optimized for translation after the diauxic shift, despite Glk1 expression increasing after this growth phase transition. GFP expression timing experiments with different codon usages showed no significant difference in lag times (p=0.44).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39 and C75 address whether GLK1's low codon optimality serves a regulatory function related to the diauxic shift. The experimental test using GFP reporters with different codon usages (Figure 6C-D) directly tests this hypothesis and finds no significant difference, supporting the conclusion. However, this is a negative result with limited mechanistic insight.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "d957cf56-841a-45a2-9307-4dcc5af2492a",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "S-S bond-mediated aggregation does not affect the expression limits of Eno2 and Pgk1, as wild-type and cysteine-less mutants showed indistinguishable expression limits despite forming aggregates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 is supported by experimental data comparing expression limits of wild-type and cysteine-less mutants (Figure 7\u2014figure supplement 2). This contrasts with Tpi1 where cysteine removal increased expression (C46-C47), suggesting protein-specific effects of aggregation. The result is clearly stated and experimentally supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "25615c4e-801f-43c4-9afe-4992f0fc5847",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Most glycolytic proteins were expressed at levels visible by SDS-PAGE, with Pgk1, Gpm1, Eno2, and Eno1 exceeding GFP expression levels. Pfk1, Adh3, and Hxts were nearly undetectable. Some proteins showed >10,000-fold overexpression compared to native levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 describe the range of expression levels achieved in the experimental system. These are direct observations from SDS-PAGE and quantification (Figure 2B, Figure 2\u2014figure supplement 2-3). The measurements are straightforward and well-documented, providing the foundation for subsequent analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "12b9a47e-c2e5-481e-ba3a-6bb7ac38a7eb",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The relationship between plasmid copy number and protein expression distinguishes harmful proteins (Pfk1, Adh3, Hxts with low copy numbers) from repressed proteins (Glk1, Pyk2, Pdc6 with high copy numbers). Overall, there was no significant correlation between expression levels and plasmid copy numbers (r=0.28, p=0.12).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 interpret the relationship between copy number and expression (Figure 2D). The statistical analysis (C17) and the identification of distinct groups (C15-C16) are supported by the data. This interpretation is key to distinguishing different mechanisms limiting expression, though the lack of overall correlation (C17) indicates complexity in the system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "7ac399e1-c999-431a-9830-7824f6580f4a",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Protein size does not affect expression limits in the molecular weight range of glycolytic proteins (27-47 kDa). Pgk1 and Eno2 (1.5-fold larger than Gpm1) showed similar expression limits, suggesting expression limits are determined by production cost rather than molar concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 make inferences from comparing expression limits of proteins with different sizes (Figure 2B). The logic is sound: if size mattered, larger proteins would have lower expression limits when measured in AU (which reflects total amino acids). The observation that similar AU values are achieved regardless of size supports the conclusion about production cost vs. molar concentration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "47d489de-b770-472c-9b5d-6c5141e1f611",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Multiple mechanisms restrict the expression limits of Adh3 and Glk1, as removing single limiting factors (mitochondrial targeting for Adh3, codon optimization for Glk1) did not bring expression to the levels of highest-expressing proteins like Pgk1 and Gpm1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86 synthesize observations that \u0394MTS-Adh3 (0.45 AU) and CoGlk1 (1.07 AU) remain below Pgk1/Gpm1 levels (>2.0 AU) despite removing known limiting factors. This inference is logical and supported by the data, though it does not identify what the additional mechanisms are. This represents an important limitation of the study's explanatory power.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "0fdb5255-fd99-468d-9ac8-0f939b1cdaca",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Growth rates in +leucine conditions are much greater than in -leucine conditions, likely because leu2-89 copy number is insufficient to fully support leucine requirements in -leucine conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C81 describe an experimental observation (Figure 1B-C) and provide a speculative explanation. The observation is clearly supported by data, and the explanation is reasonable given the experimental design. This is a technical detail about the experimental system rather than a primary finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "d35b52d2-960b-44ed-bbe2-74c17ad6cf4f",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The relationship between arbitrary units (AU) and percentage of total protein was calibrated as % total protein = 5.5 \u00d7 AU using measurements from Gpm1, Pgk1, and Adh4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 describes a calibration performed in this study (Figure 2\u2014figure supplement 1) with R\u00b2=0.77. This is a methodological result that enables conversion between AU measurements and the biologically meaningful percentage of total protein. The calibration is adequately documented and statistically reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    },
+    {
+      "id": "0670d78a-6c1a-4bbc-bb45-76e62cefff4d",
+      "content_id": "85fbb0c0-1abc-46d5-bc9d-9f35458b357e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "PFK1 and PFK2 were expressed from the weaker PYK1/CDC19 promoter instead of TDH3 promoter because TDH3-driven expression was too toxic, resulting in very poor growth of transformants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C79 describes an experimental decision based on observations, but notes 'data not shown.' While the reasoning is plausible given the known toxicity of Pfk overexpression, the lack of presented data makes this claim uncertain. This represents a methodological choice that affects interpretation of Pfk results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:57:58.083039Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4ae15102-ea06-4429-9843-074ede532cb5",
+      "result_id": "8f7405cf-04e7-488b-b630-a39cd43474ff"
+    },
+    {
+      "claim_id": "5cb2a861-fe77-4c9c-870e-be400488d326",
+      "result_id": "8f7405cf-04e7-488b-b630-a39cd43474ff"
+    },
+    {
+      "claim_id": "0744806b-3e09-43fc-84a0-15e15303ad20",
+      "result_id": "8f7405cf-04e7-488b-b630-a39cd43474ff"
+    },
+    {
+      "claim_id": "0ff8646d-8f8d-4468-9786-d8a115b58495",
+      "result_id": "8f7405cf-04e7-488b-b630-a39cd43474ff"
+    },
+    {
+      "claim_id": "3030872a-ef59-4141-8d0c-88f323e927a2",
+      "result_id": "8f7405cf-04e7-488b-b630-a39cd43474ff"
+    },
+    {
+      "claim_id": "f930a496-88fb-462f-9924-4069586d8377",
+      "result_id": "f4b31815-2701-4b12-830f-55c89cccf8ab"
+    },
+    {
+      "claim_id": "59a186fc-aa0b-44e3-8268-28861b40900a",
+      "result_id": "f4b31815-2701-4b12-830f-55c89cccf8ab"
+    },
+    {
+      "claim_id": "47593f4e-20e2-48b7-a655-1e7bab1aa1e3",
+      "result_id": "f4b31815-2701-4b12-830f-55c89cccf8ab"
+    },
+    {
+      "claim_id": "b623ee8d-e6da-4e85-962b-dcbf00b75cbb",
+      "result_id": "f4b31815-2701-4b12-830f-55c89cccf8ab"
+    },
+    {
+      "claim_id": "5245ce9f-bf98-4084-b6b9-c5594b69232a",
+      "result_id": "f4b31815-2701-4b12-830f-55c89cccf8ab"
+    },
+    {
+      "claim_id": "16eeb46e-6cde-4828-b235-32456c213b15",
+      "result_id": "f4b31815-2701-4b12-830f-55c89cccf8ab"
+    },
+    {
+      "claim_id": "9d895c5c-6c5f-44dd-89f3-ad59f10af5ca",
+      "result_id": "f4b31815-2701-4b12-830f-55c89cccf8ab"
+    },
+    {
+      "claim_id": "2a06d5c1-738c-452e-98eb-25ce26e9f077",
+      "result_id": "f4b31815-2701-4b12-830f-55c89cccf8ab"
+    },
+    {
+      "claim_id": "2c1349d2-a8e4-45a9-b463-8309808e8e8f",
+      "result_id": "f4b31815-2701-4b12-830f-55c89cccf8ab"
+    },
+    {
+      "claim_id": "488d97d1-c0dd-4673-a094-df818b71b958",
+      "result_id": "f4b31815-2701-4b12-830f-55c89cccf8ab"
+    },
+    {
+      "claim_id": "0c2787fa-0709-4416-95be-d363d40b3775",
+      "result_id": "f4b31815-2701-4b12-830f-55c89cccf8ab"
+    },
+    {
+      "claim_id": "efadfe9f-6457-407e-b4c8-e4672377c3e2",
+      "result_id": "f4b31815-2701-4b12-830f-55c89cccf8ab"
+    },
+    {
+      "claim_id": "e04c834f-0d7d-40a5-a9c1-0401a091b796",
+      "result_id": "f4b31815-2701-4b12-830f-55c89cccf8ab"
+    },
+    {
+      "claim_id": "7e4040e2-a820-459d-a56f-1402224a35ce",
+      "result_id": "f4b31815-2701-4b12-830f-55c89cccf8ab"
+    },
+    {
+      "claim_id": "238e5421-f299-4551-92aa-a915dc1be6a8",
+      "result_id": "93480633-8c53-4f49-9ca5-a053f3c50cf0"
+    },
+    {
+      "claim_id": "0afd5103-3cb8-48dc-a6c8-97be1dc9ab08",
+      "result_id": "93480633-8c53-4f49-9ca5-a053f3c50cf0"
+    },
+    {
+      "claim_id": "8670c8b6-a18d-4d8c-9ae5-f380a49cf1f3",
+      "result_id": "93480633-8c53-4f49-9ca5-a053f3c50cf0"
+    },
+    {
+      "claim_id": "18f40d15-9a9e-4e03-b796-18d51dc6fdcf",
+      "result_id": "93480633-8c53-4f49-9ca5-a053f3c50cf0"
+    },
+    {
+      "claim_id": "490bd1ef-6c1f-43c2-9b5e-b28329dbdfc5",
+      "result_id": "870dc8ae-d5f4-4827-8430-a08fe1eeeb45"
+    },
+    {
+      "claim_id": "7ab0b1a2-e216-4b70-8f54-47355567c4b7",
+      "result_id": "870dc8ae-d5f4-4827-8430-a08fe1eeeb45"
+    },
+    {
+      "claim_id": "be68b39e-b116-4167-b0d7-c877db14851f",
+      "result_id": "870dc8ae-d5f4-4827-8430-a08fe1eeeb45"
+    },
+    {
+      "claim_id": "87a6c231-900e-46b9-bf88-ec2633b5fafb",
+      "result_id": "870dc8ae-d5f4-4827-8430-a08fe1eeeb45"
+    },
+    {
+      "claim_id": "c5f63186-8ccf-4e63-b984-bddac3d991b0",
+      "result_id": "870dc8ae-d5f4-4827-8430-a08fe1eeeb45"
+    },
+    {
+      "claim_id": "4e7333a3-afd0-4b09-a856-987a5c4711c2",
+      "result_id": "870dc8ae-d5f4-4827-8430-a08fe1eeeb45"
+    },
+    {
+      "claim_id": "f5408544-33f9-42c1-a3c1-75610c2407f9",
+      "result_id": "870dc8ae-d5f4-4827-8430-a08fe1eeeb45"
+    },
+    {
+      "claim_id": "56566622-bce8-4234-98b6-56f0864d698d",
+      "result_id": "870dc8ae-d5f4-4827-8430-a08fe1eeeb45"
+    },
+    {
+      "claim_id": "c72aa786-647e-4c2d-83d5-fcbebfe5461b",
+      "result_id": "7233a4cf-8d17-4150-837f-a0b37099ae8b"
+    },
+    {
+      "claim_id": "013335b8-b3bf-49a3-ad31-ec96d47d1978",
+      "result_id": "7233a4cf-8d17-4150-837f-a0b37099ae8b"
+    },
+    {
+      "claim_id": "77f821ab-124f-45ed-8985-4f04352b3235",
+      "result_id": "7233a4cf-8d17-4150-837f-a0b37099ae8b"
+    },
+    {
+      "claim_id": "ace1a360-ecc7-40f1-9b5f-b66e7041ae4f",
+      "result_id": "7233a4cf-8d17-4150-837f-a0b37099ae8b"
+    },
+    {
+      "claim_id": "78be124a-964a-49c2-91dd-a528433b546c",
+      "result_id": "7233a4cf-8d17-4150-837f-a0b37099ae8b"
+    },
+    {
+      "claim_id": "16480cc8-e90b-4272-8224-09ad697bb624",
+      "result_id": "7233a4cf-8d17-4150-837f-a0b37099ae8b"
+    },
+    {
+      "claim_id": "28445762-f134-4123-9bec-30dd1d510303",
+      "result_id": "7233a4cf-8d17-4150-837f-a0b37099ae8b"
+    },
+    {
+      "claim_id": "c06fc4f4-713a-4e4b-a64e-9cf52fdd4193",
+      "result_id": "7233a4cf-8d17-4150-837f-a0b37099ae8b"
+    },
+    {
+      "claim_id": "cdb0e784-80d6-4286-a5aa-7f776e168276",
+      "result_id": "7233a4cf-8d17-4150-837f-a0b37099ae8b"
+    },
+    {
+      "claim_id": "304e53ef-788f-409e-b35f-0541d8ffbd50",
+      "result_id": "d34050ed-1595-43bf-8603-26d0462371e3"
+    },
+    {
+      "claim_id": "7338aea0-e9f7-4eeb-850c-5db5e52d7d38",
+      "result_id": "d34050ed-1595-43bf-8603-26d0462371e3"
+    },
+    {
+      "claim_id": "4ccbfdd8-e2d5-4d18-81a0-78e52ae67699",
+      "result_id": "d34050ed-1595-43bf-8603-26d0462371e3"
+    },
+    {
+      "claim_id": "c5f6d05c-0faf-470b-9f45-0274a02a1151",
+      "result_id": "1a2fffa9-1abc-4d60-8b0a-b6155c8cd8dc"
+    },
+    {
+      "claim_id": "f6c701df-3d62-4d23-92b3-51ef868d2ac7",
+      "result_id": "1a2fffa9-1abc-4d60-8b0a-b6155c8cd8dc"
+    },
+    {
+      "claim_id": "0065d6d4-d5dd-4ff0-a799-65cb3b2da0e3",
+      "result_id": "1a2fffa9-1abc-4d60-8b0a-b6155c8cd8dc"
+    },
+    {
+      "claim_id": "22eba947-3ccd-48f9-bcde-8d0d46c4bbf3",
+      "result_id": "1a2fffa9-1abc-4d60-8b0a-b6155c8cd8dc"
+    },
+    {
+      "claim_id": "be81d808-02e5-4e94-8424-ae376052ce95",
+      "result_id": "fde06ebd-b7fa-4742-a061-cec81222e58b"
+    },
+    {
+      "claim_id": "66e6d7e0-c985-427e-8624-0799fc3e612e",
+      "result_id": "fde06ebd-b7fa-4742-a061-cec81222e58b"
+    },
+    {
+      "claim_id": "7b79af58-5f7a-4da2-8ca5-c8b51a7365e2",
+      "result_id": "d957cf56-841a-45a2-9307-4dcc5af2492a"
+    },
+    {
+      "claim_id": "0353043c-89ef-446a-a4f9-40ac26f23c2a",
+      "result_id": "25615c4e-801f-43c4-9afe-4992f0fc5847"
+    },
+    {
+      "claim_id": "a2cc3bce-5ea5-42ba-8862-eaf9b07a9a47",
+      "result_id": "25615c4e-801f-43c4-9afe-4992f0fc5847"
+    },
+    {
+      "claim_id": "73ed20d1-6993-4692-9d43-7fcb3fcce5b1",
+      "result_id": "25615c4e-801f-43c4-9afe-4992f0fc5847"
+    },
+    {
+      "claim_id": "f84c2741-77cd-4513-9907-15086c24d2f4",
+      "result_id": "25615c4e-801f-43c4-9afe-4992f0fc5847"
+    },
+    {
+      "claim_id": "9c420bd9-c51f-462a-8809-04352796cac7",
+      "result_id": "12b9a47e-c2e5-481e-ba3a-6bb7ac38a7eb"
+    },
+    {
+      "claim_id": "7ab0b1a2-e216-4b70-8f54-47355567c4b7",
+      "result_id": "12b9a47e-c2e5-481e-ba3a-6bb7ac38a7eb"
+    },
+    {
+      "claim_id": "b93a55d8-4691-446a-8044-eb57f58eb5ed",
+      "result_id": "12b9a47e-c2e5-481e-ba3a-6bb7ac38a7eb"
+    },
+    {
+      "claim_id": "651e970d-64f9-45b9-8c4b-ec617c8ef604",
+      "result_id": "7ac399e1-c999-431a-9830-7824f6580f4a"
+    },
+    {
+      "claim_id": "9256e68b-0b96-4363-aafa-f0ffbdaa57dc",
+      "result_id": "7ac399e1-c999-431a-9830-7824f6580f4a"
+    },
+    {
+      "claim_id": "dbfa9a4b-2383-47ce-83f7-8eb015105c98",
+      "result_id": "7ac399e1-c999-431a-9830-7824f6580f4a"
+    },
+    {
+      "claim_id": "c020058f-a98d-4e10-8496-517a6d2e2ac5",
+      "result_id": "47d489de-b770-472c-9b5d-6c5141e1f611"
+    },
+    {
+      "claim_id": "9ce4f1a7-8552-4f09-a34a-803f27c3b182",
+      "result_id": "47d489de-b770-472c-9b5d-6c5141e1f611"
+    },
+    {
+      "claim_id": "87af28e0-dcc2-4385-ae18-c2372d7bde64",
+      "result_id": "0fdb5255-fd99-468d-9ac8-0f939b1cdaca"
+    },
+    {
+      "claim_id": "cf318307-78a2-4a2e-add3-f4664c9ca022",
+      "result_id": "0fdb5255-fd99-468d-9ac8-0f939b1cdaca"
+    },
+    {
+      "claim_id": "71e9c4c0-f0d4-4e7b-b4c5-e6bc2fbefdcb",
+      "result_id": "d35b52d2-960b-44ed-bbe2-74c17ad6cf4f"
+    },
+    {
+      "claim_id": "82cd69ed-bb84-4a9a-abda-294b7a8acee3",
+      "result_id": "0670d78a-6c1a-4bbc-bb45-76e62cefff4d"
+    }
+  ],
+  "comparisons": []
+}

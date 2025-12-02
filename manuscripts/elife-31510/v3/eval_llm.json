@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C92"
+    ],
+    "result": "Nsp1-coated nanopores show ~80% conductance reduction with a threshold diameter of 41\u00b12 nm, while Nsp1-S-coated pores show ~50% reduction with a threshold of 23\u00b13 nm. Both exhibit two distinct conductance regimes above and below their respective thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 provide consistent experimental measurements across multiple pore sizes (5-65 nm) with clear quantitative differences between Nsp1 and Nsp1-S. The threshold diameters are reported with error estimates, and the two-regime behavior is well-documented in Figure 1B. Sample sizes appear adequate (N=3 mentioned for some measurements), though more detail on replicates would strengthen the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "A coarse-grained MD model with one-bead-per-amino-acid representation was developed and validated, accurately predicting Stokes radii within 20% error. The model uses experimentally determined grafting density of 1 per 28 nm\u00b2 (5.7 nm spacing).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 describe a well-validated computational model with experimental calibration. The grafting density was independently verified using two techniques (C38), and the model's accuracy was validated against previous measurements (C36). The match with biological NPC values (C39) provides additional validation. However, the 20% error margin should be considered when interpreting quantitative predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C8",
+      "C9"
+    ],
+    "result": "MD simulations reveal that Nsp1 pores exhibit high-density (70-100 mg/ml), nonuniform protein distribution with maximum density at the central axis, while Nsp1-S pores show uniform, less-dense distribution (~50 mg/ml).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 present consistent MD simulation results shown in Figures 2C and 3A. The density differences are substantial and attributed to hydrophobic residue content (C42, C44). However, C42 and C44 are marked as speculative/inference, indicating these are interpretations rather than direct measurements. The qualitative differences are clear, but the mechanistic explanations remain somewhat uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Nsp1 head regions (Stokes radius 3.2 nm) form localized cohesive structures at the pore center in larger pores, while stalk regions (6.5 nm) show 30% enlargement due to lateral constraints. Nsp1-S heads show widespread distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 describe structural organization from MD simulations with validation from previous measurements (C47). The radius of gyration analysis (C49-C50) provides quantitative support. However, C51 is speculative about the cause of stalk enlargement. The observations are consistent with Videos 1-3, but the mechanistic interpretations (C48, C51) require additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "A density-based conductance relation successfully predicts experimental conductance values for Nsp1, Nsp1-S, and Nup98 pores, with excellent quantitative agreement between theory and experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C102-C104 demonstrate strong agreement between computational predictions and experimental measurements. The model uses a single critical density parameter (85 mg/ml) and successfully predicts nonlinear conductance behavior. Figure 3B inset and Figure 3\u2014figure supplement 3 show good quantitative agreement. The model's applicability to different Nup types (C104) demonstrates robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C6"
+    ],
+    "result": "Kap95 translocates through Nsp1-coated pores with translocation time of 5.2\u00b12.4 ms and conductance blockade of 0.31\u00b10.10 nS (N=3), while tCherry passage is essentially blocked (90 vs 917 events). This demonstrates selective permeability of Nsp1 pores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 provide clear experimental evidence for selectivity with quantitative measurements and error estimates. The dramatic difference in event numbers (90 vs 917, C65) is compelling. Sample size N=3 is modest but adequate for the observed effect size. The increased translocation time for Kap95 (C64) supports interaction with Nsp1. Controls with bare pores strengthen the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C7"
+    ],
+    "result": "Both Kap95 (\u03c4=0.23\u00b10.13 ms) and tCherry (\u03c4=0.45\u00b10.23 ms) translocate rapidly through Nsp1-S-coated pores with similar characteristics to bare pores, demonstrating loss of selectivity when FG-domains are replaced by SG-domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 show that Nsp1-S pores lack selectivity, with both proteins translocating similarly. The translocation times are comparable to bare pores, supporting loss of barrier function. This is a critical control demonstrating the importance of hydrophobic residues. Sample size N=3 is consistent with other measurements. The conclusion (C70) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Event frequency analysis shows Kap95 translocates through all pore types at ~1.4-1.7 Hz, while tCherry is blocked by Nsp1 pores (0.02\u00b10.04 Hz) but passes through Nsp1-S pores (1.2\u00b10.3 Hz). Constant baseline current and linear concentration dependence indicate no Kap95 accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 provide comprehensive event frequency data with appropriate controls. The constant baseline (C73) and linear concentration dependence (C74) argue against accumulation models. The dramatic selectivity for tCherry (0.02 vs 1.3 Hz, C75-C76) is statistically significant. No diameter dependence for Nsp1-S (C77) is noted but could benefit from more systematic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Umbrella sampling MD simulations reveal energy barriers of 12 kJ/mol for tCherry and 6 kJ/mol for Kap95 in Nsp1 pores, while both show similar barriers (~6.4-6.5 kJ/mol) in Nsp1-S pores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 present PMF calculations using established umbrella sampling methods. The two-fold difference in energy barriers for Nsp1 (12 vs 6 kJ/mol) explains selectivity, while similar barriers for Nsp1-S (6.4-6.5 kJ/mol) explain loss of selectivity. The model parameters (C78-C79) are based on literature values. However, uncertainty in the absolute values and sensitivity to model parameters is not fully addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The high energy barrier for tCherry in Nsp1 pores is attributed to steric hindrance from high-density protein (100 mg/ml), while Kap95 experiences attraction to hydrophobic head groups, creating an energy well at |z|=30 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 provide mechanistic interpretation of PMF results based on density distributions and molecular interactions. The co-localization of the energy well with hydrophobic head groups (C85) is supported by Figure 2\u2014figure supplement 1. However, these are interpretations of simulation data rather than direct experimental measurements, and alternative explanations are not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Computed event rates using Arrhenius relation show excellent agreement with experiments: Nsp1 pores allow Kap95 (1.5\u00b10.3 Hz) but block tCherry (0.13\u00b10.03 Hz), while Nsp1-S pores are non-selective (1.3\u00b10.3 Hz and 1.2\u00b10.1 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 demonstrate strong agreement between computed and experimental event rates (Figure 5B). The Arrhenius relation provides a mechanistic link between energy barriers and kinetics. The agreement validates both the PMF calculations and the kinetic model. However, the pre-exponential factor \u0393\u2080 was fitted to the data (Figure 5\u2014figure supplement 3), which reduces the predictive power somewhat.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C57",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Nup98 pores exhibit a distinct high-density (300 mg/ml) ring-like structure with central depletion at small pore sizes (25-30 nm), contrasting with Nsp1's pore-filling network. This is attributed to lower charge-to-hydrophobicity ratio (0.2 vs 0.9 for Nsp1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55, C98-C101 describe Nup98 behavior from MD simulations and previous experiments. The structural differences are clear in Figure 2\u2014figure supplement 2. The charge-to-hydrophobicity ratios (C100) are calculated from sequences. The mechanistic explanation (C99) is reasonable but somewhat speculative. This comparison strengthens the main findings by showing sequence-dependent behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C93",
+      "C109"
+    ],
+    "result": "Biomimetic Nsp1 NPCs show conductance (~4 nS for 35 nm pores) and Kap95 dwell times (~5 ms) remarkably close to natural NPCs (0.3-2 nS conductance, 3-10 ms passage times), despite containing only one Nup type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61, C93, C109 compare biomimetic to natural NPCs using literature values. The similarity is notable given the system's simplicity. However, C61 acknowledges the values are 'quite close' rather than identical, and the difference (4 nS vs 0.3-2 nS) is actually 2-13 fold. The comparison is valuable but the agreement is more qualitative than quantitative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "High density throughout Nsp1 pores (even for radii >2\u00d7Stokes radius) is attributed to cohesive FG-rich head segments and geometric confinement from close-packed Nups (5.7 nm spacing < 2\u00d7Stokes radius), consistent with previous brush height measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 provide mechanistic interpretation supported by comparison to literature (Zahn et al., Vovk et al.). The geometric argument is sound (5.7 nm < 15 nm), and the consistency with previous measurements (C96-C97) validates the findings. However, C95 is marked as inference, indicating this is interpretation rather than direct proof of causation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The importance of hydrophobic FG residues for barrier formation is supported by comparison with previous hydrogel and surface-grafting studies, and by hexanediol disruption experiments showing FG motifs establish cohesiveness and assist NTR transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 place the current findings in context of previous literature. These are primarily citations to prior work rather than new results. The consistency with multiple previous studies (hydrogels, surface grafting, hexanediol disruption) strengthens the interpretation, but these claims don't present new experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C113"
+    ],
+    "result": "The main conclusion is that sequence-dependent density distribution of disordered FG-Nups plays a key role in determining both conductivity and selective permeability of NPCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C113 state the main conclusion, which is well-supported by the combined experimental and computational results. The sequence dependence is demonstrated by Nsp1 vs Nsp1-S comparison, the density distributions are shown by MD simulations, and the links to conductivity and selectivity are established through multiple lines of evidence. This represents a well-integrated conclusion from the entire study.",
+    "result_type": "MAJOR"
+  }
+]

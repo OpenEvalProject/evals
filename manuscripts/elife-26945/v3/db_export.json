@@ -1,0 +1,1486 @@
+{
+  "submission": {
+    "id": "116646a8-4fb3-4493-a316-18bb26f752d7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:29:42.823734Z",
+    "updated_at": "2025-12-01T21:29:42.823734Z"
+  },
+  "content": [
+    {
+      "id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "submission_id": "116646a8-4fb3-4493-a316-18bb26f752d7",
+      "content_type": "manuscript",
+      "content_text": "# Mouse embryonic stem cells can differentiate via multiple paths to the same state\n\n## Authors\n\n- James Alexander Briggs<sup>1</sup> ([ORCID: 0000-0001-6849-4156](https://orcid.org/0000-0001-6849-4156))\n- Victor C Li<sup>1</sup>\n- Seungkyu Lee<sup>2</sup>\n- Clifford J Woolf<sup>2</sup>\n- Allon Klein<sup>1</sup> \u2020\n- Marc W Kirschner<sup>1</sup> ([ORCID: 0000-0001-6540-6130](https://orcid.org/0000-0001-6540-6130)) \u2020\n\n### Affiliations\n\n1. Department of Systems Biology Harvard Medical School Boston United States\n2. Department of Neurobiology Harvard Medical School Boston United States\n3. FM Kirby Neurobiology Center Boston Children's Hospital Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn embryonic development, cells differentiate through stereotypical sequences of intermediate states to generate particular mature fates. By contrast, driving differentiation by ectopically expressing terminal transcription factors (direct programming) can generate similar fates by alternative routes. How differentiation in direct programming relates to embryonic differentiation is unclear. We applied single-cell RNA sequencing to compare two motor neuron differentiation protocols: a standard protocol approximating the embryonic lineage, and a direct programming method. Both initially undergo similar early neural commitment. Later, the direct programming path diverges into a novel transitional state rather than following the expected embryonic spinal intermediates. The novel state in direct programming has specific and uncharacteristic gene expression. It forms a loop in gene expression space that converges separately onto the same final motor neuron state as the standard path. Despite their different developmental histories, motor neurons from both protocols structurally, functionally, and transcriptionally resemble motor neurons isolated from embryos.\n\n## Introduction\n\nEmbryonic development proceeds through defined intermediate states, such as germ layer intermediates, and lineage-specific progenitors. Intermediates ramify into multiple states over time, and specialize their behaviors, ultimately producing a lineage tree that defines each mature cell type by a particular sequence of intermediates. This was first appreciated through classical lineage tracing and cell ablation studies. These studies showed that specifically labeled intermediate states generate stereotyped sets of downstream cell types, and that these downstream cell types fail to form if an intermediate that is upstream in their lineage is ablated (Takebayashi et al., 2002; Kretzschmar and Watt, 2012). Furthermore, most mature cell states are not produced by multiple differentiation paths in the embryo; the only known exceptions are rare and viewed as special cases, such as in the neural crest lineage.\n\nIn contrast to this rigid and hierarchical process, recent protocols that experimentally directly program cell fate suggest that the exact sequence of intermediates defining a lineage may be more flexible (Mazzoni et al., 2013; Li and Kirschner, 2014; Son et al., 2011; Vierbuchen et al., 2010; Ieda et al., 2010; Szabo et al., 2010; Cohen and Melton, 2011; Zhou and Melton, 2008; Treutlein et al., 2016). These studies reveal that mature cell states can be reached through paths that do not involve activation of the intermediate progenitor genes that are essential in embryos. Mouse embryonic stem cells (mESCs), for example, can be converted into motor neurons (MNs) by a process that involves overexpression of three transcription factors, Ngn2+Isl1+Lhx3\u00a0(Mazzoni et al., 2013; Velasco et al., 2017), and that never expresses the neural progenitor transcription factors Sox1 and Olig2 (Mazzoni et al., 2013). mESCs can also be driven rapidly into a terminal muscle phenotype without normal upregulation of intermediate genes such as Pax7 and Myf5, through a combination of cell-cycle inhibition and MyoD overexpression (Li and Kirschner, 2014). This plasticity of differentiation extends further, to the interconversion of mature cell states. Fibroblasts can be converted into mature neuron phenotypes (Vierbuchen et al., 2010; Treutlein et al., 2016), including MNs (Son et al., 2011), seemingly without completely dedifferentiating and retracing the embryonic lineage, as indicated by lack of expression of specific core pluripotency (Oct4, Sox2 and Nanog) and neural progenitor genes (Nestin) (Son et al., 2011).\n\nAlthough these direct programming (DP) experiments imply the existence of differentiation paths that differ from those in embryos, much of what actually occurs in these new programs remains mysterious. Does DP bypass normal intermediates by short-circuiting the natural lineage, or does it transition through alternative intermediates (Figure 1A)? Does it diverge only briefly to bypass specific early or late states, or does it utilize an entirely distinct path (Figure 1B)? And can DP converge fully to the same final state that is produced in embryos despite taking an alternative path, or does it simply approximate that state (Figure 1C)? These questions have been challenging to answer in part due to the high degree of heterogeneity in direct programming experiments, where unbiased bulk measurements of global gene expression obscure changes, and also because marker genes allowing the isolation of new but potentially important DP-specific intermediates are not known in advance. Here we aimed to overcome these issues by applying single cell RNA sequencing to compare the gene expression trajectories of DP and growth factor guided differentiation of mESCs into MNs\u00a0over\u00a0time. Our core research questions are summarized in Figure 1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/26945/elife-26945-fig1-v3.jpg)\n\n**Figure 1.:** (a) Direct programming could in principle skip progenitor states in one of two ways. It may either transition from early states directly into later states through a \u2018short-circuit\u2019 of the natural lineage, or it might utilize an alternative path involving new and potentially abnormal or unstable intermediate states. In the schematic, a conceptual depiction of the natural lineage is shown first, followed by two lineages that bypass the i2 intermediate from the normal lineage, either through short-ciruit or through a new alternative intermediate. (b) DP might diverge from the natural lineage only briefly, or it might access an entirely distinct path. In the schematic, three different possibilities are shown: (i) DP bypasses specific early intermediates, and then converges to the final state through a conserved seqeunce of terminal cell state transitions; (ii) DP transitions through conserved early stages of differentiation, before diverging into an alternate path that converges separately to the final state; (iii) DP takes an entirely distinct path with no resemblance to the natural lineage. Dashed lines represent a potential direct transition while solid lines represent an alternate path (as shown in the left panel). (c) It is possible that the price paid for taking an alternate differentiation path during direct programming is that cells retain subtle gene expression defects, thus converging only partially to the desired final state. Alternatively, convergence could be near perfect which would imply that differentiation into mature cell states is at least partially history independent. In the schematic, circles are an abstract representation of gene expression state and are used to represent the extent of overlap between MNs generated by either DP or by the natural lineage.\n\n## Results\n\n### Dissection of two MN differentiation protocols using single cell RNA sequencing\n\nWe compared two in vitro differentiation protocols that convert mESCs into spinal MNs, with the goal of identifying and comparing alternate differentiation trajectories between the same start state and similar \u2013 if not the same \u2013 end states. The first, standard protocol (SP) is a widely used method that attempts to drive cells into a spinal MN state through sequential addition of developmental signals that normally guide MN differentiation in the embryo (Fgfs, Retinoic Acid, and Sonic hedgehog)(Figure 1A) (Wichterle et al., 2002; Wu et al., 2012). Many variations of this method exist, including protocols that use 2D or 3D culture formats, serum or serum-free basal culture medias, and even partially different cocktails of growth factors. Yet, each variant is believed to shuttle cells through the same sequences of intermediate states (Sances et al., 2016), namely those that exist in the embryo. As a contrast to SP, we used an alternative direct programming (DP) strategy as our second method. The DP protocol drives cells toward a spinal MN fate by forcing the expression of spinal MN transcription factors (Ngn2+Isl1+Lhx3) (Mazzoni et al., 2013; Velasco et al., 2017) in cells grown in a simple growth factor free medium (Li and Kirschner, 2014). Previous studies have shown that this DP protocol does not induce key marker genes of some embryonic MN intermediate states; for this reason DP was among the first differentiation protocols for which it was explicitly argued that a distinct differentiation process may be occurring (Mazzoni et al., 2013; Velasco et al., 2017). Our focus in this study was to understand how a non-embryonic differentiation trajectory differs from the SP, which drives cells through an embryo-like sequence of states (Figure 1).\n\nWe used single-cell RNA sequencing (InDrops) (Klein et al., 2015) to profile the differentiation in both protocols over time (Figure 1B and C). Single-cell transcriptomics was our method of choice because of its ability to parse cell states and differentiation trajectories within populations that are not pure or contain rare intermediates (Treutlein et al., 2016; Treutlein et al., 2014; Scialdone et al., 2016; Trapnell et al., 2014; Setty et al., 2016; Bendall et al., 2014), as expected for both DP and SP. We initially profiled 4590 single-cell transcriptomes sampled from early (day 4/5) and late (day 11/12) timepoints for each protocol, and also used our previously published data from 975 mES cells as a day 0 reference (Klein et al., 2015). To visualize the combined single cell time course data for each protocol, we followed the same procedure described in Klein et al (Klein et al., 2015).: we identified highly-variable genes in each data set, retained non-noise dimensions after a principal component analysis on the standardized gene expression scores, and then employed t-distributed stochastic neighbor embedding (tSNE) (van der Maaten and Hinton, 2008) to visualize the data (Figure 2B\u2013C; further details in Supplementary Methods). The most immediate feature revealed by tSNE was a gene expression continuum for each protocol, which correlated with chronology, suggestive of a differentiation trajectory (Figure 2B\u2013C, inset). Several disconnected cell clusters were also visible outside of the main trajectory.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/26945/elife-26945-fig2-v3.jpg)\n\n**Figure 2.:** (a) Summary of the direct programming (DP) and standard protocol (SP) differentiation strategies. (b\u2013c) tSNE visualization of single cell RNA sequencing data from each differentiation strategy. Timepoints are shown inset. Cell state clusters are color coded and annotated with their identities: ESC\u00a0=\u00a0embryonic stem cell; NP\u00a0=\u00a0neural progenitor; PNP\u00a0=\u00a0posterior neural progenitor; PVNP\u00a0=\u00a0posterior and ventral neural progenitor; MNP\u00a0=\u00a0motor neuron progenitor; EMN\u00a0=\u00a0early motor neuron; LMN\u00a0=\u00a0late motor neuron; CN\u00a0=\u00a0cortical neuron; DSCN\u00a0=\u00a0dorsal spinal cord neuron; Gl1\u00a0=\u00a0glia type 1; Gl2\u00a0=\u00a0glia type 2; Mus\u00a0=\u00a0muscle; Meso\u00a0=\u00a0mesoderm; Endo\u00a0=\u00a0endoderm; Oligo\u00a0=\u00a0oligodendrocyte; Astro\u00a0=\u00a0astrocyte; Stro\u00a0=\u00a0stromal. Arrows inside the bounded area indicate the hypothesized cell state progression during MN differentiation for each method. (d\u2013e) Expression heatmap of marker genes used to identify each subpopulation. Colors and annotations for the subpopulations are the same. (f\u2013g) Subpopulation abundances for each protocol over time. DP has significantly higher MN production efficiency than SP (66% vs. 9%) at the late timepoint. MN\u00a0=\u00a0EMN or LMN; NP\u00a0=\u00a0NP, PNP, or PVNP; Other\u00a0=\u00a0everything else. Colors and labels match b-e).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26945/elife-26945-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** This figure relates to main text Figure 2. It shows the raw expression of sample marker genes that were used to identify each subpopulation. Two marker genes are shown per state.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26945/elife-26945-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** This figure relates to main text Figure 2. It shows the raw expression of sample marker genes that were used to identify each subpopulation. Two marker genes are shown per state.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26945/elife-26945-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a) Measurement of the bulk population gene expression over time helps to confirm that the trajectory inferred from single-cell analysis matches the true dynamical events of our system. These results confirm that key MN differentiation markers are induced on a real timescale that matches their ordering in our inferred trajectory. Terminal genes such as Mnx1 and Tubb3 are upregulated immediately after induction of early progenitor genes such as Sox1. The values plotted are shown in units of fold change relative to their expression in day 0 mESC cultures. (b) Plot shows that Olig2 is expressed\u00a0>=\u00a010\u22276 times lower than Gapdh during DP. Red line indicates the expected ratio if 0.1% of the population expressed one molecule per cell; the observed ratios are below even this low bound.\n\nBy examining gene expression on the continua and disconnected cell clusters, we annotated the observed cell states produced in DP and SP. We applied unsupervised density gradient clustering (DBSCAN) to each tSNE map to partition cells into clusters, as described in Macosko et al (Macosko et al., 2015). This approach robustly partitions each of the disconnected cell clusters, but can also identify boundaries between states within continua, although the latter are less reliably defined. The cells states identified in this manner possessed unique transcriptional signatures, including expression of specific transcription factors, signaling molecules, and structural genes such as synaptic components and neurotransmitters. To annotate each cell state cluster, we identified marker genes for each subpopulation, and used prior knowledge about the characteristics of these genes to interpret the identity of each state. The criteria used for each state are provided in Figure 2\u2014source datas 1\u20132, and the expression of specific marker genes is shown in Figure 2D\u2013E and Figure 2\u2014figure supplements 1\u20132.\n\nThese cell state annotations reinforced our interpretation of the main gene expression continua in DP and SP as representing differentiation trajectories. In addition to correlating with chronology, the ordering of cell states appeared sensible in both cases. Each trajectory begins with mESCs (Pou5f1+/Esrrb+/Nanog+), passes through familiar neural progenitor states (including for example neural progenitors (NPs) expressing Sox1, Pax6, and Lin28), progresses to early motor neurons (EMNs) (expressing Mnx1, Isl1, Isl2, Nefl, Nefm, Tubb3, and Map2), and terminates at a mature, or late, MN state (LMN) (downregulating MN progenitor genes Mnx1, Isl1, and Isl2, while upregulating genes indicative of neuronal maturation Robo3, Onecut2, Syn1, Vacht, and Gabr1) (Figure 2B\u2013E). Cells along both trajectories overlap between consecutive time points, which would be expected due to asynchrony in differentiation. This was reassuring to us that our experiments sampled all intermediate states. Below we define and compare the specific cell-state transitions that occur during MN differentiation in DP and SP, after first examining the efficiency of MN generation in each protocol.\n\n### Dynamics of MN generation versus off-target differentiation in DP and the SP\n\nOur single cell data allow us to quantify the dynamics of MN generation in DP and the SP over time, by counting the percentage of cells in each state at each time point. Previous reports have claimed up to 50% MN differentiation efficiency for the SP (Wichterle et al., 2002; Wu et al., 2012), and up to 98% efficiency for DP (after excluding cells that failed to activate the transgene) (Mazzoni et al., 2013). However, both of these studies identified MNs as Mnx1+\u00a0cells, and for SP this was measured as GFP+\u00a0cells in an Mnx1:GFP reporter system. Since GFP is a stable molecule, and Mnx1 is first expressed in early committed MN progenitors, this definition includes cells from early MN progenitors (between PVNP and MNP in our classification) through to LMNs. If we apply these criteria to our day 5 SP data, we find a similar SP efficiency of 42.2%, and an efficiency of 66% for the DP protocol (not pre-filtering for transgene activating cells).\n\nUsing single cell data, it is possible to construct more refined criteria for cell states during MN differentiation, that resolve between the least mature MNPs, maturing EMNs, and mature LMNs, by focusing not on a single marker gene, but on the entire transcriptional state (Figure 2B\u2013E; Figure 2\u2014source datas 1\u20132). As EMNs mature into LMNs they downregulate progenitor markers including Mnx1, and upregulate markers of terminal differentiation. For DP, MN production was observed as early as day 4 (17.8% EMN), and increased over time to 3.4% EMN and 62.7% LMN by day 11 (Figure 2F). A minority of off-target neuron subtypes, glia, mesoderm, and endoderm cells were also identified, together accounting for\u00a0<25% of the total population at day 11. We cannot rule out that these fates may emerge from cells that failed to activate the DP transgenes. In the SP, by contrast, we observed significantly lower efficiency in production of the most mature MN states. The SP population contained 18% EMNs and 1.1% LMNs at day 5, and just 6.5% EMNs and 2.6% LMNs at day 12 (9.1% total) (Figure 2G). These figures are lower than those obtained from Mnx1-GFP scoring, because they do not include the earliest committed MN progenitors, which are yet to downregulate progenitor genes such as Mnx1 and Isl1 or to upregulate neuronal genes such as Tubb3 and Map2, and because they distinguish between early and late MNs by their expression of terminal differentiation markers such as Syn1, Mapt, Celf4 or Gabr1. Our single cell classifications therefore capture varying degrees of maturity among differentiating MNs.\n\nAn unexpected result from this analysis was that, in the SP protocol, off-target populations increase in fractional abundance to overshadow the intended MN products. Off-target products included oligodendrocytes (7.2%), astrocytes (8.6%), muscle (30.6%), and stroma (8.9%), that together accounted for 55.3% of the population by day 12. The increase in these populations possibly reflects the ability of cell states such as oligodendrocytes and astrocytes to proliferate, which could progressively dilute the initial output of post-mitotic MNs, severely reducing MN generation efficiency. To test this idea and to gain additional EMN and LMN transcriptional data, we profiled an additional 1372 single cell transcriptomes from a replicate SP experiment at day 10 (Figure 3\u2014figure supplement 1; Supplementary methods). At this time point, the SP population contained 34.4% EMNs and 14.9% LMNs, which was higher than at either day 5 or day 12. This is consistent with the hypothesis that SP has an initial output of MNs, which may then be diluted by proliferating off-target lineages.\n\n### The DP differentiation trajectory lacks intermediates expressing Olig2 and Nkx6-1\n\nWhat are the differentiation paths taken by each protocol? In the SP differentiation path, cells transit through seven states (Figure 2C and E). These state transitions parallel patterning events in the embryo (Wichterle et al., 2002; Davis-Dusenbery et al., 2014; Jessell, 2000): cells first commit to the neural lineage (NP; Sox1+/Sox2+), then are posteriorized (PNP; Sox3+/Hoxb8+/Hoxd4+), ventralized (PVNP; Nkx6-1+/Olig2+), enter the committed MN progenitor state (MNP; Mnx1+), and then mature through early (EMN; Mnx1+/Tubb3+/Map2+) and late (LMN; Mnx1-/Tubb3+/Map2+/Syn1+) MN states. This is not a surprise as the growth factor cocktail defining this method was designed to reflect the signaling events taking place in the embryo. By contrast, we found that the path produced by DP was condensed relative to the SP path (Figure 2B and D), consisting of only four apparent states as opposed to seven. After neural commitment (NP; Sox1+), cells immediately began expressing committed MN markers (EMN; Mnx1+/Tubb3+). This immediate transition was also registered by time course qPCR measurements for a panel of MN genes across bulk populations (Figure 2\u2014figure supplement 3).\n\nA major difference between the DP and SP cell states is the seemingly complete absence of typical spinal embryonic intermediates (PNP or PVNP) in DP. These states are normally recognized by expression of the marker genes Olig2, Nkx6-1, Hoxb8, and Hoxd4, but these genes were not detected by scRNA-Seq in DP intermediates. Olig2 is necessary for MN development in embryos (Takebayashi et al., 2002), indicating that DP drives differentiation from ESC into MNs through a fundamentally new route.\n\nTo more confidently demonstrate that DP does not transit through an Olig2+\u00a0state, even transiently, we conducted a high-sensitivity gene expression analysis. In SP, our scRNA-Seq data reveals that Olig2 expression peaks (in the PVNP cells) at a level 5.4-fold higher than Gapdh, a constitutively expressed \u2018housekeeping\u2019 gene. We performed a dense qPCR time course measuring the expression of Olig2 and a panel of MN genes every day during DP across populations of\u00a0~106 cells. These measurements showed that committed MN markers were upregulated immediately following early neural progenitor genes in DP, but Olig2 was not detected at any time point during DP (no qPCR signal at CT\u00a0>\u00a040), showing that the average expression levels are 106-fold or more lower than Gapdh (Figure 2\u2014figure supplement 3). Accordingly, on any day, the fraction of cells expressing Olig2 at levels seen in SP was less than one in 106. Given that the total protocol duration was 11 days, this would require that an Olig2 transitional state would last less than 1 s (11 days/106), far shorter than the lifetime of mRNA molecules in a cell. Therefore, there is no significant Olig2+ transitional state in DP. This conclusion holds even after allowing for the possibility that Olig2 might act through just a single mRNA transcript. From the qPCR data, the fraction of cells expressing Olig2 at one molecule per cell cannot be more than 0.1% (see Supplementary Methods), and the corresponding lifetime of Olig2+\u00a0cells would correspondingly be 15 min (11 days/103), still inconsistent with the lifetime of a single mRNA molecule. These results are consistent with a previous study that reported Olig2 absence during DP (Mazzoni et al., 2013).\n\n### The DP and SP trajectories bifurcate after early neural commitment and converge separately to the terminal MN state\n\nSince the DP omits spinal embryonic intermediates characteristic of the SP path, there must be one of two possible trajectories. Either DP must discontinuously transition from an early neural progenitor into a MN, or it must transit through alternate intermediate state(s). To determine which of these possibilities was the case, we employed a data visualization technique called SPRING (Weinreb et al., 2016) to directly compare the topology of both paths. While tSNE is a powerful method for identifying discrete cell states, SPRING provides a complementary description emphasizing continuum gene expression topologies. SPRING builds a k-nearest-neighbor graph over cells in high-dimensional gene expression space, and then renders an interactive 2D visualization of the cell graph using a force directed layout. This representation revealed that the DP and SP trajectories overlap during early neural commitment, but that they then bifurcate and take distinct paths that converge independently to the same MN state (Figure 3A). The dynamics of gene expression over these trajectories resembled the behavior inferred using tSNE, with DP omitting intermediate progenitor genes following its bifurcation from the SP path (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/26945/elife-26945-fig3-v3.jpg)\n\n**Figure 3.:** (a) Visualization of differentiation paths for both protocols using SPRING reveals two paths to the same state. DP and SP overlap during early neural commitment, but then bifurcate and converge to the same final MN state separately. Reds\u00a0=\u00a0direct programming path; Blues\u00a0=\u00a0standard protocol path; arrows indicate hypothezed differentiation trajectories. Cell states are colored and labeled by according to their definition in Figure 1 for comparison. (b) Gene expression of key marker genes along each differentiation path confirms exit from the pluripotent state (Oct4) and progression towards the MN state (Tubb3, Stmn2) for both protocols. Only the SP upregulates Olig2 and Nkx6-1, which mark important MN lineage intermediates in the embryo; this occurs following the bifurcation of both paths. Expression in cells from each sample are colored using either a blue (ESC), red (DP), or green (SP) colormap to allow tracking of each path separately. (c) Pairwise cosine similarity of cell state centroids. Note early and late similarity of states, but prominent differences during intermediate state transitions. (d) Every individual cell of the DP trajectory was assigned to its most similar SP state using a maximum likelihood method. DP cells map to early and late but not intermediate states of the SP cell state progression.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26945/elife-26945-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** In our initial InDrops map of the SP, we found a low yield of the most mature EMN and LMN states in the SP (Figure 2C). To ensure that low representation of the SP end states did not interfere with our ability to make statistically rigorous comparisons between methods, we integrated additional EMN and LMN cells from a replicate SP experiment into our analyses. This figure serves as a control that shows that the topology of our joint SPRING visualization comparing DP and SP does not change from the case where we compare only cells from the original experiment (a), to when we compare the DP and SP using added EMN and LMN cells from the replicate SP experiment (b). As expected, the added cells specifically improve representation of terminal SP populations.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26945/elife-26945-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Like SPRING, tSNE shows similarity between early and late states, but it is ambiguous with respect to the continuous global topology of either path. Between DP and SP, tSNE confirms that ESC, NP, and LMN states between DP and SP are similar. Moreover, SP intermediate states (PNP, PVNP, and MNP) do not overlap with the DP intermediate state (EMN). However, since tSNE emphasizes local similarity relationships the overall joint topology, as revealed by SPRING in Figure 3A, is in this case ambiguous.\n\nThe bifurcation and subsequent convergence of the two differentiation paths is also revealed by two other complementary analyses. Pairwise cosine similarities between the cell states from both trajectories (Figure 3C; Supplementary methods) indicate similarities between the early states (ESC and NP; cosine similarity\u00a0>0.69) and late states (LMN; cosine similarity\u00a0=\u00a00.47), but not the intermediate states (PNP, PVNP, and MNP; cosine similarity\u00a0<\u22120.15,\u00a0\u20130.03, and 0.04 respectively). We also assigned every individual cell along the DP path to its most similar cluster in the SP path using a maximum likelihood method (Figure 3D; Supplementary methods). This showed that it was virtually impossible to find a single cell resembling the SP intermediate progenitors in the DP approach. Similarity was again observed only at the early and late states.\n\n### DP transitions through an unexpected intermediate state with forebrain gene expression\n\nThe bifurcation of the SP and DP trajectories leads to different intermediate cell states. A total of 26 transcription factors (TFs) are differentially expressed between the DP and SP intermediate states (Figure 4A). A majority of these (61%) were involved in an anterior-posterior positional gene expression axis. The SP intermediates were enriched more than 6-fold for nine posterior and spinal TFs including Olig2, Nkx6-1, Lhx3, and six posterior Hox genes with a corrected p-value<0.001. Each of these TFs is expressed in embryonic MNs. By contrast, the DP intermediates were enriched for seven forebrain TFs including Otx2, Otx1, Crx, Six1, Dmrta2, Zic1, and Zic3 at the same stringency, despite the absence of MNs in the forebrain of embryos. Anterior gene expression was previously observed through bulk measurements of DP (Mazzoni et al., 2013), and our results reveal that it occurs within a specific subpopulation of cells in the process of differentiating into MNs.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/26945/elife-26945-fig4-v3.jpg)\n\n**Figure 4.:** (a) The DP (red, EMN from Figure 2) and SP (black, PVNP\u00a0+\u00a0MNP\u00a0+ EMN from Figure 2) differentiation paths diverge into distinct intermediate states following early neural commitment. These distinct populations were compared by in silico differential expression analysis using single cell data (bottom left), or by FACS purification of the intermediate populations using and Mnx1::GFP reporter cell line followed by microarray analysis (bottom right). Figure 3b. shows that Mnx1 expression localizes to the distinct intermediate populations of both protocols, making it an appropriate target for their purification. Differential expression analysis revealed a total of 26 differentially expressed TFs between the intermediate populations (>6 fold differentially expressed, p<0.001), of which (61%) were involved in either forebrain positional identity (Otx2, Crx, Zic1, Six1, Dmrta2, Otx1, and Zic3) and enriched in DP, or in posterior spinal identity (Hoxb8, Hoxb3, Hoxb2, Hoxb4, Hoxb5, Hoxd4, Lhx3, Olig2, and Nkx6-1) and enriched in SP. The independent microarray comparison confirmed these differences with only one exception - Zic1. It also revealed that the SP intermediates are enriched for additional spinal neural progenitor genes including Ascl1, Nkx6-2, Olig1, and Nkx2-2. (b) Before forebrain genes are expressed, DP cells have a high proliferation score and low cell-cycle exit score (computed as the sum of a panel of cell-cycle-associated or tumor supressor genes respectively). They reduce cell cycle gene expression as they enter the abnormal transitional state, and upregulate forebrain genes including Otx2 and Crx. This abnormal forebrain expression is shut off as cells exit the transitional state into the final MN state, characterized by Map2 and Vacht expression. The final transition into a MN state is also accompanied by upregulation of posterior positional genes including Hoxb4 and Hoxd3, thus correcting the transient forebrain positional expression defect. Expression in cells from each sample are colored using either a blue (ESC), red (DP), or green (SP) colormap to allow tracking of each path separately. (c) Mnx1+\u00a0cells were isolated at day 3 of differentiation and cultured to determine their fate potential. By 12 days after replating most cells expressed motor neuron markers Map2 and Vacht. Scale bar\u00a0=\u00a0100 um.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26945/elife-26945-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** This figure relates to main text Figure 4B. (a) Cell cycle gene expression score overlayed on SPRING trajectory shown in main text. The score is the summed expression of a panel of 21 cell-cycle related genes. Cell cycle expression is high in ES cells and neural progenitors from both protocols, but drops sharply upon entry into the transitional states preceding terminal differentiation. (b) Shows the average proliferation score along both DP and SP trajectories computed by state (and max normalized). Arrows indicate the same transition as the arrows shown above in panel a. (c\u2013d) Example raw expression data for representative individual cell cycle or tumor suppressor/cell cycle exit genes. Some genes appear to be enriched in specific states, such as Ccnd3 in ES cells and Ccnd2 in neural progenitors from the SP. Expression in cells from each sample are colored using either a blue (ESC), red (DP), or green (SP) colormap.\n\nThe positional gene expression signature that characterizes the DP intermediate state appears to be transient. Forebrain gene expression is upregulated along the DP differentiation path, as cells exit the early NP state into the EMN intermediate state (Figure 4B). This transition is accompanied by the downregulation of proliferation-associated genes (Figure 4B; Figure 4\u2014figure supplement 1). By the time cells exit the EMN state and transit into the more differentiated LMN state, they downregulate forebrain genes and replace this abnormal positional signature with a spinal Hox expression signature characteristic of normal MNs (Figure 4B). Thus cells converge to the MN state in positional as well as neuronal identity gene expression in the final stages of DP.\n\nWe validated the existence of the abnormal transitional state in DP in two ways using an Mnx1:GFP reporter cell line. Mnx1 serves as a useful reporter in this context since its expression is localized precisely to the distinct intermediate populations of each differentiation path (Figure 3B). First, we performed bulk microarray comparisons of Mnx1+\u00a0DP and SP intermediates to compare their gene expression states by an independent method. The comparison confirmed the enrichment of forebrain TFs, and depletion of spinal progenitor and positional genes in the DP intermediates with just one exception \u2013 Zic1 was enriched in DP by our single cell comparison but in SP by microarray (Figure 4A). Second, we isolated Mnx1+\u00a0DP intermediate cells on day 3 of differentiation, the earliest time point at which Mnx1+\u00a0cells appear, and prior to maturation of any Mnx1-\u00a0GFP+\u00a0cells. We cultured this population for an additional 10 days, and validated by immunostaining for Vacht and Map2 that it indeed generates motor neurons (Figure 4C). This experiment confirms that the abnormal transitional state in DP gives rise to MNs. The abnormal DP intermediate thus simultaneously has a forebrain positional expression state and possesses MN fate potential.\n\n### Both DP and the SP approach a transcriptional state similar to bona-fide MNs in embryos\n\nGiven that the two protocols induce distinct \u2013 and in the case of DP, unnatural \u2013 differentiation paths, we were curious how their final products compared with primary MNs (pMNs). We harvested MNs from the embryo of a Mnx1:GFP reporter mouse and performed inDrops measurements on 874 Mnx1+\u00a0cells that were FACS purified from whole E13.5 spinal cords. Though the majority of Mnx1+\u00a0sorted cells were MNs (73.8%, n\u00a0=\u00a0645), this population also contained glia (20.1%), fibroblast-like cells (1.8%), and immune-type cells (1.2%; Figure 5A; Figure 5\u2014figure supplement 1). Using only the cells identified as bona-fide MNs, we compared the differentiating DP and SP cells to pMNs by both global transcriptome similarity of cell states centroids, and a nearest neighbor analysis of single cells. Global transcriptome comparisons confirmed that each state along the DP and SP differentiation paths becomes progressively more similar to pMNs (Figure 5B). The clusters most similar to pMNs were the LMN state from the DP protocol (cosine similarity\u00a0=\u00a00.60), and the LMN state from the SP (cosine similarity\u00a0=\u00a00.47). Since subsets of LMNs from DP and the SP might vary in similarity to pMNs, we analyzed the similarity of single cells from all three experiments using SPRING, by embedding all three data sets onto a single kNN graph. We performed this analysis including all cells (Figure 5C\u2013i), and then including only EMNs, LMNs, and pMNs (Figure 5C\u2013ii). Both approaches showed that pMNs closely associate with the LMNs of both DP and SP. It was also apparent that DP and SP LMNs are themselves heterogeneous, with particular subsets associating more closely with pMNs. Overall, a higher fraction of DP LMNs resembled primary MNs, as seen by calculating the fraction of cells in each state that had at least one pMN nearest neighbor out of its 50 most similar cells (Figure 5C\u2013iii; 64% for DP, 6% for SP). DP LMNs therefore appear if anything more related to pMNs in gene expression than SP LMNs, despite their unusual developmental path.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/26945/elife-26945-fig5-v3.jpg)\n\n**Figure 5.:** (a) tSNE visualization of 874 single cell transciptomes from FACS purified Mnx1+\u00a0MNs from embryos reveals heterogeneity within this population. To make comparisons between DP and SP with pMNs we used only the subset of Mnx1:GFP+\u00a0primary cells in a bona-fide MN state. See Figure 5\u2014figure supplement 1 for marker gene expression in each population. (b) Comparison of average gene expression profiles for cell states along the DP and SP trajectories with pMNs. In both methods similarity increases as differentiation proceeds. Late DP states are the most similar to embryonic MNs. (c) Projection of the reference E13.5 pMNs into the visualization from Figure 3 revealed that pMNs closely associate with the terminal states of both DP and SP (i). Close examination of the terminal populations (EMN, LMN) from DP and SP compared to pMNs reveals heterogeneity representing state subtypes (ii). At a single cell level DP LMNs were the most closely associated with E13.5 pMNs; 64% of DP LMNs had at least 1 pMN nearest neighbor out of its most similar 50 cells compared to 6% for SP LMNs (iii). The subtypes present within terminal DP and SP populations could be annotated using marker genes. DP and SP EMNs express progenitor genes including Mnx1, along with Nkx2-2 and Nkx6-1 in SP only. The major SP LMN outgroup expressed Gata3, indicating a hindbrain identity. Both DP LMNs and pMNs shared expression of the terminal MN differentiation gene Ebf2. (d) Systematic pairwise differential gene expression analysis between terminal DP and SP states and pMNs. Each panel is a volcano plot of differentially expressed transcription factors. Both DP and SP LMNs show limited gene expression differences to pMNs. The dominant differences are positional, with DP and SP LMNs lacking the most posterior Hox genes. Other expression differences are explained by differences in terminal state subtypes as shown in c). Differentially expressed genes were filtered for TFs with a corrected p-value<0.001, expression ratio\u00a0>\u00a04, and minimum expression of 1umi/cell average.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26945/elife-26945-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** This figure shows the raw expression of a set of marker genes that were used to identify the subpopulations indicated in main text Figure 5A. Two markers are shown per subpopulation, with their expression intensity overlaid on the original tSNE embedding.\n\nThe differences in similarity of DP and SP derived MNs to primary MNs can be understood in terms of differences in maturity and identity of the cells. As expected, both DP and SP EMNs were less mature than pMNs, as seen by expression of the MN progenitor marker Mnx1 (Figure 5C\u2013iv). Among the SP LMNs we detected multiple subpopulations. One subset appeared more anterior than the spinal E13.5 pMNs, as indicated by expression of the hindbrain marker Gata3; the second appeared less mature than pMNs as indicated by residual expression of progenitor genes such as Mnx1 or Nkx2-2; and the final population was closely associated with pMNs (Figure 5C\u2013iv). Most DP LMNs by contrast were closely related to pMNs. They lacked the residual progenitor gene expression seen in SP, and they shared with pMNs the expression of genes important to terminal MN differentiation (e.g. Ebf2 and Ebf3). Beyond individual marker genes, we also systematically compared DP LMNs, SP LMNs, and pMNs by pairwise differential gene expression analysis (Figure 5D). Overall, both DP and SP LMNs show limited gene expression differences to pMNs. In both cases there were 11 differentially expressed TFs. Of these, half were positional Hox genes that mark the most posterior MN pool and were enriched in pMNs, indicating a more anterior identity of the DP and SP LMNs. The remaining TFs included Gata3, which marks a hindbrain subpopulation of SP LMNs as noted above, and other genes related to neuronal maturation including Neurod6, Ebf2, and Mid1. These comparisons confirm the broad similarity of DP LMNs and SP LMNs, to pMNs, but reveal subtle differences between these terminal states that relate to positional identity and state of maturation.\n\n### DP MNs have structural and functional properties of true MNs\n\nHaving established that MNs derived via both gene expression trajectories reach roughly the same MN transcriptional state, we wished to validate that their function and structural organization was also independent of their distinct developmental histories. The SP has been characterized extensively as giving rise to functional MNs (Wichterle et al., 2002), so here we examined structural and functional characteristics following DP. We confirmed that selected protein content matches the mRNA markers by immunostaining for Tubb3, Map2, VACht, Isl1, and Hb9 (Figure 6A). Tubb3 and Map2 were present, and VACht was seen at discrete puncta on the axons (suggesting localization to acetylcholine secretory vesicles). TFs Isl1 and Hb9 were localized in the nucleus. Finally, the GFP from the Mnx1:GFP reporter was activated and expressed in the cytoplasm. To test the functional properties of the DP MNs, we performed whole-cell patch clamp recordings. Depolarization induced single or multiple action potentials in current-clamp experiments (Figure 6B). Depolarizing voltage steps induced fast inward currents and slow outward currents characteristic of sodium and potassium channels, respectively (Figure 6C). Exposure to 500 nM Tetrodotoxin (TTX) blocked the inward current, indicating sodium channel involvement. We then tested whether our DP neurons would respond to neurotransmitters that act on MN (Figure 6D). Exposure of the neurons to AMPA, kainate, GABA, and glycine (100 \u00b5M each) induced in each case inward currents similar to that seen in primary embryonic MNs. To see if the DP neurons could also form neuromuscular junctions, we co-cultured the neurons with differentiated C2C12 skeletal muscle myotubes and incubated them for 7 days. We observed clustering of acetylcholine receptors on the C2C12 myotubes near contact points with the DP neurons, which can be seen with alpha-bungarotoxin (\u03b1-BGT), which binds to acetylcholine receptors (Figure 6E). We then observed regular contractions of some C2C12 myotubes that began after several days in co-culture (Figure 6E, Figure 6\u2014video 1). These contractions could be stopped by the addition of 300 \u00b5M Tubocurarine (curare), an antagonist of acetylcholine receptors, indicating that the contractions were induced by the acetylcholine release from the MNs. Similarly, we noticed that the DP MNs could induce contractions in DP muscle myotubes that we previously generated with MyoD (Figure 6\u2014video 2) (Li and Kirschner, 2014). These results confirm that DP MNs have the expected functional properties of bona-fide MNs.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/26945/elife-26945-fig6-v3.jpg)\n\n**Figure 6.:** (a) Immunostaining of MN markers in DP MNs confirming expression and correct subcellular localization of Tubb3, Map2, VACht, Isl1, and Hb9. DP MNs also: b) can fire single or multiple action potentials upon stimulation, (c) show sodium and potassium channel currents, and d) are responsive to multiple MN neurotransmitters - AMPA, kainate, GABA, and glycine. (e) Co-culture experiments show that DP MNs can induce clustering of acetylcholine receptors on muscle myotubes (indicated by \u03b1-BGT staining) and induce their contractions. The induced contractions are dependent on MN activity as they can be blocked by addition of the acetylcholine antagonist curare.\n\n## Discussion\n\nWe provide evidence at the single cell level that differentiation can proceed by multiple routes and yet converge onto similar transcriptional states. While cells differentiated by growth factor stimulation in the SP retrace the embryonic lineage, cells differentiated by terminal state transcription factors in DP take a dramatically different path. The DP path bypasses multiple intermediate progenitor-states that are produced in the embryo, and yet they still converge to the same discrete and recognizable MN phenotype. This convergence occurs via an abnormal intermediate state, and does not appear to involve a shared set of terminal cell state transitions. Moreover, as cells converge they manage to not only establish gene expression related to MN functions, but they also correct positional gene expression defects (exchanging forebrain for spinal gene expression) in the absence of external signals. We conclude that DP of mESCs into MNs occurs via a late bypass that involves alternative intermediate states not seen in the embryo, and that this new route converges near perfectly to the same final state (Figure 1). Convergence into a MN therefore does not depend rigidly on the precise history of intermediate states through which cells differentiate.\n\nThis \u2018history independence\u2019 of the final state is consistent with a dynamical view of gene regulation in which cell states correspond to \u2018attractor basins\u2019, i.e. stable states of gene expression that are robust to modest perturbations. If attractor basins do not exist, the precision of the observed overlap between DP and SP MNs would require a special coincidence. The concept of cell states behaving as attractors has been proposed previously to explain several properties of blood cell types (Chang et al., 2008; Huang et al., 2007; Huang et al., 2005). There are at least two important corollaries of this behavior applied to motor neuron development. From a practical perspective, it is a common concern that DP methods may generate cell types with subtle defects due to their unusual developmental histories (Cohen and Melton, 2011). Attractors would be robust to this vulnerability and indeed our results show that it is not necessary to recreate the precise sequences of steps taken in embryos to generate MNs with the highest similarity to primary cells. It could also hint at a mechanism that might help animal body plans evolve flexibly. Specifically, by decoupling the identity of mature cell state attractors from their developmental histories evolution would be able to act on each independently. In principle this could contribute to evolvability by allowing mature cell states to be transposed onto new lineages in new body locations, without massively rewiring the internal differentiation circuit.\n\nThe mechanisms that define the MN attractor basin and allow the artificial DP trajectory to converge onto the correct final state are unclear. The MN state is thought to be stabilized by a network of self-reinforcing TFs (Jessell, 2000), involving Mnr2, Mnx1, Lim3, Isl1, Isl2, and Lhx3, Ngn2, Myt1l, Nefl, and Nefm. DP aims to kick-start this network by activating a subset of important components. Yet, far from immediately activating this network, our data show that DP initially drives cells to differentiate into an early NP state through the same pathway as the SP trajectory, seemingly oblivious to the DP TFs, and then even activates non-MN genes in the transitional state. Understanding why the activation of the MN program lags behind TF induction may provide important clues into how the DP factors act. One possible source for a lag is that activating a complete neuronal program requires first activating additional core TFs (so-called \u2018feed-forward\u2019 circuitry). Indeed, recent studies have shown that Ebf and Onecut are activated by Ngn2 (one of the DP TFs), and that both are required to subsequently direct binding of Isl1 and Lhx3 (the other two DP TFs) to MN target genes across the genome during DP (Velasco et al., 2017; Rhee et al., 2016). A second possible source of lag is that extracellular signaling provides inputs that immediately affect cell state, but take time to sensitize cells to the DP factors. For example, signaling changes might activate DP TFs through post-translational modifications, by activating co-factors, or by inducing chromatin state changes. We have indeed observed that MNs are not generated if DP TFs are induced in cells cultured in pluripotency media, indicating a requirement for changes in signaling (not shown). Conversely, when mES cells are transferred to minimal media without inducing DP factors, they acquire a forebrain neural progenitor identity by default (Pankratz et al., 2007; Smukler et al., 2006; Okada et al., 2004). This suggests that the early dynamics and abnormal forebrain/MN expression of the DP transitional state might in fact be driven by the signaling environment and not the DP TFs. These alternatives suggest future experiments to better resolve the mechanisms driving the DP, by re-mapping the trajectory induced during DP after changing signaling conditions, or the choice of DP TFs.\n\nAs a methodology, DP is significantly more efficient than the SP without loss of quality in the MN populations produced (Figure 2F\u2013G; Figure 5; Figure 6). The high-efficiency of DP most likely derives from both its more uniform experimental conditions as well as its more direct differentiation path. Experimentally, DP: relies on 2D rather than 3D tissue culture (as in the SP), minimizing uncontrolled cell-cell communication; forces every individual cell to express MN TFs from a genetically integrated construct, increasing uniformity; and employs a defined-media without growth factors that may minimize proliferation of competing progenitor states. The more direct differentiation path induced by DP might also itself increase MN conversion efficiency by minimizing error propagation through off-target fate choices. Long sequences of intermediate cell state transitions offer many sequential opportunities for off-target fate choices, which multiplicatively reduce efficiency, as compared to the more compact DP trajectory. Targeting terminal attractor basins through the shortest possible differentiation paths may prove to be a generally effective strategy for generating desired cell states, more quickly and more enriched in the desired product.\n\n## Materials and methods\n\n### ESC culture\n\nThe mouse ES cell line containing doxycycline-inducible Ngn2+Isl1+Lhx3 (NIL) and the Hb9::GFP reporter was graciously provided by Esteban Mazzoni. ESCs were cultured in standard media (DMEM with LIF\u00a0+\u00a015% fetal bovine serum) on 0.2% gelatin-coated dishes.\n\n### Differentiation into motor neurons: direct and standard programming\n\nTwenty-four hours before starting differentiation, ESCs were trypsinized and seeded onto plates pre-coated with a mix of poly-d-lysine (100 \u03bcg/ml) and laminin (50 \u03bcg/ml) instead of gelatin for adherence. ESCs were counted by a Beckman Coulter Counter and seeded at a density of approximately 200,000 cells per well of a 6-well dish. At day 0 (ESCs), the media was switched from standard ES media to N2B27 media (Invitrogen). Doxycycline was also added at 3 \u03bcg/ml starting to induce expression of the NIL transcription factors. Media was changed daily. For the standard programming protocol, the steps described in Wu et al. were followed strictly. The Wu et al. protocol involves a period of neural induction using embryoid body culture before subsequent replating on laminin. The culture media is serum containing base media supplemented with specific cocktails of growth factors that change during the early, middle, and late stages of differentiation (Figure 2A).\n\n### Mouse embryonic motor neuron cultures\n\nThe B6.Cg-Tg(Hlxb9-GFP)1Tmj/J mice (JAX# 005029) were bred with C57BL/6J (JAX# 000664) for embryonic motor neurons dissection. All animal protocols were approved the Institutional Animal Care and Use Committee at Boston Children\u2019s Hospital. On gestational day 13 (E13), the female mice were anesthetized and all embryos were collected by caesarian section. Only GFP embryos were used for further dissection. The spinal cords were isolated and their meninges were removed. Each isolated spinal cord was dissociated by trypsin and mechanical trituration. After filtering the cells with 100 \u03bcm strainers, the cells were spun down and re-suspended in PBS, and subjected to flow cytometry. Cells were run through a 100 \u03bcm nozzle at low pressure (20 p.s.i.) on a BD FACSaria II machine (Becton Dickinson, USA). A neural density filter (2.0 setting) was used to allow visualization of large cells.\n\n### Single cell transcriptomics using InDrops\n\nWe dissociated differentiating mESC cultures using a 0.25% Trypsin 2 mM EDTA solution (Gibco). Primary HB9+\u00a0sorted motor neurons were dissociated as above. Dissociated cell suspensions were verified to be monodisperse and of viability\u00a0>95% using a coulter counter with trypan blue staining (BioRad). We then performed droplet-based barcoding reverse transcription (RT) reactions and prepared massively multiplexed sequencing libraries using InDrops as described in Klein et al. Briefly: cells, lysis and RT reagents, and barcoding primers attached to hydrogel beads are combined in nanoliter sized droplets suspended in an oil emulsion using the InDrops microfluidic device. A barcoding RT reaction is then carried out in the droplet emulsion, uniquely labeling the RNA contents of every cell using a cell barcode and unique molecular identifier (UMI). Following RT, barcoded emulsions are split into batches, and the emulsion is broken. Combined material is amplified into a nanomolar Illumina sequencing library through a series of bulk reactions: second strand synthesis, in vitro transcription (IVT), fragmentation, RT2, and a final low cycle number PCR. The majority of the amplification takes place during IVT ensuring uniform library coverage. Single cell libraries were then sequenced on either the Illumina HiSeq or NextSeq platforms. Reads were demultiplexed using an updated version of the custom bioinformatics pipeline described in Klein et al.. A python implementation of this pipeline is now publically available on GitHub. Briefly, it filters for reads with the expected barcode structure, splits reads according to their cell barcode, aligns them to a reference transcriptome (we used GRCm38 with some added mitochondrial genome transcripts), and then counts the number of different UMIs appearing for each gene in each cell. The final output is a counts matrix of cells vs. genes that we loaded into MATLAB for further analysis.\n\n### Single-cell data clean up: minimum expression threshold, total count normalization, stressed cell removal\n\nBefore performing the analyses described below, three steps were taken to ensure that the data was of high quality. First, we required all cells to have at least 1000 UMIs detected. This removed any signal potentially coming from empty droplets. Second, data were total count normalized to ensure differences between cells were not due to technical variation in mRNA capture efficiency or cell size. Finally, cells that had a high stress gene signature were excluded from analysis. Stressed cells were initially recognized as a small percentage of cells (<10%) that clustered apart from everything else and specifically expressed very high levels of a mitochondrial gene set that is associated with cellular stress. Masks that convert raw counts into our filtered set are provided online.\n\n### Visualization of single-cell data using tSNE\n\nTo visualize high-dimensional single cell data, dimensionality reduction is essential. We chose to implement tSNE as described in Klein et al. The core steps are summarized as follows. Steps 1\u20132 preceed tSNE, and focus the algorithm on genes that best describe differences between cell populations.\n\n### Subpopulation analysis\n\nThe first goal of our single cell analysis was to describe the identity and proportions of cell states generated by each of two motor neuron differentiation strategies. For this purpose we found that good results were achieved using local-density gradient clustering on the 2D tSNE representation of the data. This approach provided a clear and natural cell state classification that was well aligned with prior knowledge about marker gene expression domains. The steps we took are summarized as follows:\n\nWe identified genes that were specifically expressed by each subpopulation through pairwise t-tests and visually inspected their expression over the tSNE embedding. In Figure 2D\u2013E of the main text, we show the z-score normalized expression of a selection of marker genes that we used as a heatmap. Z-score normalization preserves differences between populations while putting the expression level of every gene on the same scale. In Figure 2\u2014figure supplements 1\u20132, we show the un-normalized expression of each of these genes individually so that the reader may compare.\n\n### Initial identification of differentiation trajectories\n\nDuring our subpopulation analysis we observed, for both protocols, a continuous progression of cells that spanned the initial ES cell state through the early and late differentiation timepoints. This progression was punctuated by familiar progenitor states that were ordered in a way that was consistent with known events in motor neuron differentiation (Figure 2D\u2013E), and was correlated with chronology (Figure 2B\u2013C inset). We interpreted these progressions as differentiation trajectories. Each is reconstructed from three population snapshots (day 0, day 4/5, and day 11/12). Because differentiation in vitro is asynchronous, the single cell data overlapped from one timepoint to the next. We deduce from this that intermediate states were not missed due to the spacing of our timepoints. We also validated that important intermediate genes were not detected over a densely sampled timecourse using qPCR (see below).\n\n### Differential gene expression analysis between cell states from single-cell data\n\nWe identified differentially expressed genes between cell states by using two-tailed t-tests with a multiple hypothesis testing correction. We defined differentially expressed genes conservatively at a FDR of 5% and a significance level of p<0.0001. We only considered genes where at least one of the states being compared had\u00a0>=\u00a010 cells with non-zero expression. To find marker genes of a population we asked for genes that were enriched in that population versus everything else. For several comparisons we restricted our analysis to Riken transcription factors. This list contains\u00a0~1500 genes with manually annotated transcription factor activity. We represented differential expression data using volcano plots, and colored the expression intensity of each gene using a colorbar; the mean of the higher expressing state was used.\n\n### Integration of replicate SP EMN/LMN cells into original SP trajectory\n\nDue to the low efficiency of EMN/LMN production in our initial SP experiment, we performed a replicate experiment with the goal of extracting additional SP terminal state cells. We repeated SP differentiation and performed InDrops on an additional 1372 cells sample at day 10 of differentiation. To identify EMN or LMN cells within this population we: projected replicate SP cells into the PC-space from the original experiment; calculated a Euclidean distance matrix between all cells; extracted replicate SP cells which had\u00a0>=\u00a03 of their five nearest neighbors belonging to EMN or LMN clusters; then finally assigned cluster identities to these cells such that cells were called EMN if a majority of their neighbors were EMN, or otherwise were called LMN (majority LMN nearest neighbors or equal EMN and LMN nearest neighbors). This final rule slightly favors LMN over EMN cluster assignment but this helps to counter the low LMN efficiency of the original experiment, which reduces the possible nearest neighbors available during label assignment. For all comparisons of DP and SP we pooled EMN and LMN cells across the two replicate experiments for SP, improving the statistics of the end state comparisons.\n\n### Comparison of differentiation paths I: Visualization of alternate differentiation trajectories using SPRING\n\nAfter our initial identification of the differentiation paths for the standard protocol and for direct programming we wished compare their routes. One of the most powerful ways to begin addressing such a problem is to simply visualize the data. Yet, we found tSNE gave unclear results for a direct comparison of the paths; visualizing both protocols together resulted in some mixed clusters, and some distinct clusters, but no overall coherence to the representation as we had found looking at one or the other trajectory separately. The limitations of tSNE for analyzing continuous processes are well known.\n\nWe therefore turned to a new method developed in parallel to this work in our lab called SPRING (Weinreb et al., 2016), that in our experience does better in analyzing continuous processes in single cell data. SPRING has four core steps: first, it filters for genes with average expression\u00a0>0.02 UMIs/cell, and Fano factor\u00a0>2; second, it reduces dimensionality to a 50 dim PCA space; third, it constructs a k-nearest-neighbor (kNN) graph in this space; finally, it renders an interactive 2D visualization of this kNN graph using a force directed layout. In this visualization edges of the kNN graph are literally springs that pull together similar cells, while every cell has a magnetic repulsion force that pushes it away from other cells and an intrinsic gravity. The balance of these forces illuminates the topology of how cells are positioned in high-dimension with respect to one another. In this visualization nodes can be moved around to rotate the projection and find the clearest representation; in each new position the graph re-relaxes according to the underlying physics of the force directed layout. The specific steps we took to generate Figure 3A are as follows. Note that a small manual correction was made to the position of the ESC and LMN populations to reduce white space, but did not distort relationships between populations.\n\n### Comparison of differentiation paths II: Pairwise cosine similarity of cell state centroids\n\nWe also asked how the direct programming and standard motor neuron differentiation paths were related to each other by performing a pairwise comparison of cell state centroids. Centroids are the average or center of mass in gene expression space for a collection of cells. Centroids can provide a very accurate estimate of global gene expression that averages over the noise intrinsic to single-cell RNA sequencing at the level of individual cells. By computing the cosine similarity between two cell state centroids we are asking how similar these states are in average gene expression. If the paths do indeed split and then reconverge our expectation was to see similarity between early and late states in both progressions, but not between the intermediate states. We chose to perform these comparisons in a PV-gene space constructed from cells in both protocols to make our comparisons as sensitive as possible. We obtained similar but less sensitive results using all genes above a minimum expression value (not shown). A summary of the steps of this analysis is:\n\n### Comparison of differentiation paths III: Maximum likelihood assignment of single cells to cell state centroids between trajectories\n\nFinally, we performed an independent comparison of the differentiation paths that did not depend on our definition of cluster boundaries in the direct programming trajectory. We asked whether any potentially rare individual cells or subpopulations in the direct programming trajectory resemble the intermediate states of the standard trajectory. Because we were now dealing with single cells, not averages of many measurements, care was necessary in this analysis to remain robust relative to the noise in single cell measurements. We therefore took a Bayesian approach and reasoned as follows. In our data, each cell is a vector of counts, with one element for every gene. These counts can be viewed as a multinomial sample from some underlying distribution of gene expression. Since each state of the standard differentiation trajectory is defined by a particular gene expression distribution, we can ask: what is the probability a given direct programming protocol cell was sampled from each standard differentiation trajectory cluster? In this usage, probability amounts to a measure of similarity, with high probability indicating high similarity. We obtained similar results working in either a PV-gene expression space, or considering all genes expressed above a minimum counts threshold. The results of this analysis using PV-genes are presented in Figure 3D. We also obtained similar (but more noisy) results using cosine similarity as an alternative distance metric (not shown). The specific steps of our computation are as follows:\n\n### Cell cycle gene expression analysis\n\nCell-cycle activity can be estimated from a cell cycle associated gene expression signature; populations that express higher average levels of cell cycle genes are most likely cycling at higher frequency than a population with lower level expression of these genes. In Figure 4b and Figure 4\u2014figure supplement 1 we performed an analysis in this spirit to determine which parts of the DP and SP differentiation trajectories appeared to be proliferative, and to estimate where cells are exiting the cell cycle. We computed a proliferation score that was the aggregate expression of a panel of 21 cell cycle related genes: Aurka, Top2a, Ccna2, Ccnd1, Ccnd2, Ccnd3, Ccne1, Ccne2, Ccnb1, Cdk4, Cdk6, Cdk2, Cdk1, Cdkn2b, Cdkn2a, Cdkn2c, Cdkn2d, Cdkn1a, Cdkn1b, Cdkn1c, Mcm6, Cdc20, Plk1, and Pcna. We also computed a cell cycle exit score on the basis of the aggregate expression of a panel of 4 tumor suppressor genes that inhibit the cell cycle: Cdkn1c, Cdkn1b, Cdkn1a, and Cdkn2d. In Figure 4\u2014figure supplement 1 we show the expression of representative individual genes from this score; in general cell cycle genes were correlated with each other in their expression over cells, as were cell cycle exit genes.\n\n### Lifetime estimate for hypothetical Olig2+\u00a0intermediate cells in DP\n\nWe were interested to convert a bound on the population expression of Olig2, obtained by qPCR, into a bound on the lifetime of a hypothetical rare subpopulation that expressed appreciable levels of this transcript. To proceed, we noted that in SP, Olig2 is expressed 5-fold higher than Gapdh. By contrast, qPCR indicated that in DP, Olig2 was expressed 106-fold lower than Gapdh. Since we took qPCR measurements on every day during differentiation, we next reasoned that the maximum possible number of these intermediate cells would exist if they were spread uniformly across our timecourse (otherwise there would be a spike in their number, increasing the chances of their detection). This is unrealistic, but sets a conservative upper bound. Since the total differentiation protocol took 11 days, any Olig2+\u00a0intermediate that expressed the gene at the levels seen in SP (five fold higher than Gapdh) must thus exist for less than 11 days/106/5, or less than 0.2 s. To estimate what this lifetime would be for an Olig2+\u00a0population that expressed just one molecule per cell, we conservatively allowed for Gapdh expression levels of 1000 molecules per cell (smRNA-FISH studies have estimated\u00a0~200\u2013500 Gapdh copies per cell). The maximum fraction of Olig2+\u00a0cells expressing one molecule per cell at any timepoint in DP is correspondingly 0.1% (1000/106*100%). Our lifetime calculation becomes 11 days/103, or less than 15 min. Since the timescales of mRNA production and degradation are typically on the order of hours, we therefore concluded that an Olig2+\u00a0subpopulation must not exist during DP.\n\n### Comparison of motor neurons in vitro with primary motor neurons using single-cell data\n\nHow does the transcriptional state of motor neurons produced by both protocols compare to that of motor neurons in vivo? To answer this question we leveraged the ability of single-cell RNA sequencing to compare cell states even within populations that are not pure (also see below for functional comparisons of the phenotypes). We performed three analyses. First, we computed the cosine similarity between the centroids of each cell state in both protocols and primary motor neurons (Figure 5B). The specific steps of this analysis were as follows:\n\nSecond, we compared single cells from the DP and SP terminal states to pMN reference single cells. The goal of this analysis was to detect whether heterogeneity within the DP and SP terminal states correlated with similarity to pMNs. To gain a broad understanding of the relationship between the DP and SP trajectories to our pMN reference, we initially projected pMN single cells into the PCA-space used in the visualization from Figure 3A (Figure 5C\u2013i). The projection was performed by multiplying the pMN counts matrix (after quality filtering cells and z-score normalizing genes) by the PC-loadings matrix that was built on the DP and SP cells as described above. The combined coordinates of all cells in this space were then used as input to SPRING, which builds and visualizes a kNN graph. To generate a more refined visualization of how the terminal populations were related to each other we next constructed a new PC-space on EMN and LMN DP and SP cells, combined with pMNs, following the same steps of SPRING visualization described above (Figure 5C\u2013ii). This differs from the original projection in that the second PC-space was constructed to reflect variation within only the mature populations of cells (EMN, LMN and pMN). It thus has higher sensitivity to detect subtle differences between MN subpopulations, because the PC-space does not contain dimensions that describe unrelated process that occur in the process of becoming a neuron from an mES transcriptional state, and thus only introduce noise into the comparison of terminal states. To quantify how similar individual cells were to the pMN reference we performed nearest neighbor analysis on the distance matrix underlying this second SPRING visualization. For each DP or SP terminal state, we asked of every cell whether it had a pMN cell among its 50 most similar cells, and found the fraction of cells with similarity to pMNs. The number of nearest neighbors chosen, in this case 50, sets the size of the region in which we required a pMN cell to fall in order for a cell to be classified as similar to pMN. 50 cells equated to roughly 2% of the total cells in this visualization, and so provided an appropriate and stringent threshold.\n\nThird, we performed differential gene expression analysis, comparing the most mature motor neuron states from each protocol with primary HB9+\u00a0motor neurons (Figure 5D). This analysis was performed as described above.\n\n### qPCR\n\nRNA was isolated using Qiagen Rneasy Plus Kit. Purified RNA was then reverse transcribed using Bio-rad's iSCRIPT cDNA synthesis kit. Quantitative PCR was performed using Bio-rad's SYBR green Supermix on a CFX96 Real-Time PCR system.\n\n### Immunostaining\n\nAntibodies used for immunostaining were anti-Tubb3 (Cell Signaling D71G9; 1:100), anti-Map2 (Sigma M9942; 1:200), anti-VACht (Synaptic Systems 139 103; 1:200), anti-Isl1 (Abcam ab109517; 1:1000), and anti-Hb9 (DSHB 81.5C10; 1:100). Differentiated cells were fixed in 4% paraformaldehyde for 20 min and then permeabilized with 0.1% Triton-X for 15 min. After primary incubation for 1 hr, samples were labeled with a secondary antibody conjugated to AlexaFluor647. Samples were co-stained with DAPI before imaging on a Nikon Eclipse TE2000-E microscope.\n\n### Electrophysiology\n\nAll recordings were carried out at room temperature within 6 days of plating the neurons in 35 mm dish. Whole-cell voltage clamp recordings were made with a Multiclamp 700B amplifier (Molecular Devices) and patch pipettes with resistances of 2\u20133 M\u03a9. Pipette solution was 135 mM K-Gluconate, 10 mM KCl, 1 mM MgCl2, 5 mM EGTA, 10 mM HEPES, pH 7.2, adjusted with NaOH. The external solution was 140 mM NaCl, 5 mM KCl, 2 mM CaCl2, 2 mM MgCl2, 10 mM HEPES, and 10 mM D-glucose, pH 7.4, adjusted with NaOH. We used gravity perfusion system connected with Perfusion Pencil with Multi-Barrel Manifold Tip (AutoMate Scientific) to externally apply 0.5 \u00b5M tetrodotoxin, 100 \u00b5M AMPA, kainate, GABA, or glycine to the cells. Command protocols were generated and data was digitized with a Digidata 1440A A/D interface with pCLAMP10 software.\n\n### Co-culture muscle contraction assays\n\nC2C12 myoblasts were grown in 10%FBS\u00a0+\u00a0DMEM media and then differentiated into myotubes by incubating in differentiation medium (2% horse serum\u00a0+\u00a0DMEM). After myotubes were formed, the neurons were dissociated by trypsinization and reseeded on top of the differentiated muscle to allow contractions to develop. Video of contractions were taken using Metamorph software and manually counted over 5 s intervals. For stopping assay, 300 \u00b5M Tubocurarine (Sigma) was added to the media as an acetylcholine competitor. For labeling of acetylcholine receptors, bungarotoxin (Invitrogen) was used after cells were fixed with paraformaldehyde. Similarly to C2C12 cells, ES cells over-expressing MyoD were also differentiated to myotubes using differentiation medium and subjected to co-culture with neurons.\n\n### Microarray analysis\n\nThe mRNA of undifferentiated iNIL ES cells and NIH 3T3 cells (grow in DMEM\u00a0+\u00a010% FBS) were collected and purified by RNA extraction using RNeasy Plus Extraction Kit (Qiagen). Neurons differentiated by either protocol were first sorted by flow cytometry on a BD FACSaria II machine (Beckton Dickinson, USA) to collect Hb9::GFP+\u00a0cells, and then were subjected to RNA extraction in a similar fashion. Collected RNA was then amplified and hybridized to Affymetrix GeneChip Mouse Transcriptome Arrays (MTA 1.0). Results were processed by the Children\u2019s Hospital Microarray Core Facility, and were analyzed using Affrymetrix\u2019s Transcriptome Analysis Console and Expression Console software.\n",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "48d1e953-0f91-4162-9a1e-48e7d6ddf8ca",
+      "submission_id": "116646a8-4fb3-4493-a316-18bb26f752d7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Martin Pera, University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.26945.027](https://doi.org/10.7554/eLife.26945.027)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Mouse embryonic stem cells can differentiate via multiple paths to the same state\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors and the evaluation has been overseen by Marianne Bronner as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. Essential revisions are listed below and we have also included the detailed reviewer comments for your information.\n\nSummary:\n\nThis manuscript uses single cell transcriptomics to compare the cell state transitions that occur when mouse embryonic stem cells are directly reprogrammed into motor neurons using defined transcription factors (direct protocol) to those that occur during a directed differentiation designed to simulate normal embryological induction processes (standard protocol). The main conclusion is that the two pathways converge on a similar endpoint via distinct transition states. The authors assess this endpoint through functional assays and through comparison with bona fide neurons isolated from animals.\n\nEssential revisions:\n\nAll three reviewers are enthusiastic about the general concept and approach of your study. However, two Reviewers note that the induction of forebrain markers in the direct protocol might be an artifact of culture conditions rather than an obligate intermediate in the pathway. The reviewers suggest that 1) knockdown of the patterning factors in the direct and standard protocol or 2) isolation of intermediates to follow their fate prospectively or 3) early induction of factors by dox would strengthen the conclusions of the study and provide more mechanistic insight. Two reviewers also note that the efficiency of induction of motor neurons in the standard protocol is very low. Repetition of some of the key experiments with a higher yield would overcome these concerns. Finally, the reviewers request more clarity around the definition of particular cell types. Specific points are listed below.\n\n1) Though the overall concept behind this study is interesting, there are some significant issues with the experimental design. First, it is not clear to what extent the authors' observations are a function of the differences in the particular culture conditions employed-in particular transfer of pluripotent cells to serum-free medium in adherent culture in the direct protocol (which can induce forebrain specification as a default), versus three-dimensional culture or EB formation in the standard protocol (which can markedly influence heterogeneity and outcomes). Perhaps a greater concern with this study is the very low yields of the desired cell type from the standard protocol. The motor neuron yields peak at Day 5 with the standard protocol (about 25% early motor neurons) then a variety of other cell types are generated such that by Day 12, there are very few cells with properties of motor neurons. By contrast the direct protocol is highly efficient (62.7% versus 2.7% motor neurons). It is questionable whether any meaningful comparison can be drawn between these two protocols; when one yields only 3% of the desired endpoint using a different culture platform, it is hardly surprising to observe different intermediates. The protocol the authors follow for standard differentiation (Wu et al., 2012) reports ~50% motor neuron yield at 7 days; much closer to the direct protocol yields the authors report; it is not clear why they did not achieve a better yield in this study from the protocol of Wu et al., 2012.\n\n2) The percentage of MNs in the SP protocol is surprisingly low. The culture conditions, crucial for this conclusion, should be clearly described in methods. Recapitulating development, SD protocol produces oligodendrocytes after MNs, thus efficiency as percentage of total cells it is expected to decrease.\n\n3) MN are patterned along the rostro-caudal (R-C) axis of the spinal cord to innervate the different target by Hox genes. Thus, MN subtype identity varies greatly along the R-C axis. It is expected that neither of the in vitro differentiation protocol decapitates the diversity of embryonic derived MNs. Specifically, the SP was designed to make a very restricted set of MNs within the R-C axis. Without description of the method, it is left to the reader to assume MNs were collected from all R-C levels.\n\n4) Single cell RNA seq data is biased towards detecting highly expressed genes. While the DP protocol appears to follow a very artificial trajectory it is possibly that key genes that are crucial for generation of the SD intermediates that the DP approach seems to skip are transiently expressed at very low levels. The authors could/should show that shRNA mediated knockdown of the key TF that are important for in vivo/SD generation of MNs but appear to get skipped in the DP protocol, reduce differentiation outcomes for the SD but not the DP protocol. This will be crucial to support that DP MNs are indeed derived by a process that skips/bypasses key developmental intermediates.\n\n5) It will be important to investigate if the generation of Sox1/Sox3+ neural progenitors during the DP protocol is not simply an artefact of the authors experimental conditions. The authors cited (3) and stated in the introduction that MNs are generated by the DP approach by skipping the a Sox1 positive neural progenitor state. As neural commitment in N2B27 is a very rapid process and mESCs are exposed to the dox and N2B27 media at the same time it is possible that the cells start to differentiate before the NIL factors become active on a protein level. While the authors state that MNs cannot be generated by dox addition if cells are not removed from mESC maintenance media, pulsing the cells for 12, 24, or 48 hours with dox in mESC media before on set of differentiation very well might (the original DR publication shows that NIL factors are present on protein level by 48 hours). I understand that asking the authors to repeat the single cell transcriptome under this condition will be excessive, however I propose that the authors use qPCR (single cell) for neural progenitor markers and mature MN markers to test whether pre-exposure to dox abolishes the generation of neural progenitors during N2B27 culture. If it does this would indicate that SD/DR approaches are entirely different processes that do not even share the neural progenitor state and more importantly that mESCs do directly transition to MN-like state.\n\n6) As commented above, it would be interesting to test whether knock-down of forebrain transcription factors that get transiently upregulated during DP mediated MN generation reduce differentiation outcomes for the DP protocol. This would help to demonstrate more clearly and in a mechanistic way, whether the forebrain signature is important for the process or merely an artefact imposed by the N2B27 media which generates under normal differentiation conditions forebrain fates.\n\n7) Finally, to definitely proof that both the SD and DP protocol give rise to MN via different intermediate stages, it will be critical to isolate the presumed intermediate cells by FACS (either by using specific cell surface markers inferred from the single cell data or at least they should use their MNX1:GFP line) and show that these \"presumed\" intermediates are indeed the source of the mature MNs. That is, the authors should re-culture the isolated cells and demonstrate by IF characterisation that they give rise to the final end product.\n\nReviewer #1:\n\nThis manuscript uses single cell transcriptomics to compare the cell state transitions that occur when mouse embryonic stem cells are directly reprogrammed into motor neurons using defined transcription factors (direct protocol) to those that occur during a directed differentiation designed to simulate normal embryological induction processes (standard protocol). The main conclusion is that the two pathways converge on a similar endpoint via distinct transition states. The authors assess this endpoint through functional assays and through comparison with bona fide neurons isolated from animals.\n\nThe manuscript addresses an important question in cellular differentiation and stem cell biology. It is fair to point out that the direct reprogramming of embryonic stem cells (which are pluripotent) is liable to be significantly different in important ways to direct reprogramming of differentiated adult somatic cells (the more likely starting point for many direct reprogramming protocols). The latter type of conversion most often requires crossing or upwards traverse of cell lineages whereas the former might be expected to be more closely related to normal developmental pathways. All the same this study is certainly a valid model for direct reprogramming, and having a common starting point for the standard and direct protocols simplifies the analysis.\n\nThough the overall concept behind this study is interesting, there are some significant issues with the experimental design. First, it is not clear to what extent the authors' observations are a function of the differences in the particular culture conditions employed-in particular transfer of pluripotent cells to serum-free medium in adherent culture in the direct protocol (which can induce forebrain specification as a default), versus three-dimensional culture or EB formation in the standard protocol (which can markedly influence heterogeneity and outcomes). Perhaps a greater concern with this study is the very low yields of the desired cell type from the standard protocol. The motor neuron yields peak at Day 5 with the standard protocol (about 25% early motor neurons) then a variety of other cell types are generated such that by Day 12, there are very few cells with properties of motor neurons. By contrast the direct protocol is highly efficient (62.7% versus 2.7% motor neurons). It is questionable whether any meaningful comparison can be drawn between these two protocols; when one yields only 3% of the desired endpoint using a different culture platform, it is hardly surprising to observe different intermediates. The protocol the authors follow for standard differentiation (Wu et al., 2012) reports ~50% motor neuron yield at 7 days; much closer to the direct protocol yields the authors report; it is not clear why they did not achieve a better yield in this study from the protocol of Wu et al., 2012.\n\n1) Results section\u2013sometimes embryos do reach a common terminal differentiation endpoint through different pathways. Cartilage (derived from neural crest or mesoderm) is one example and there are others.\n\n2) Results section\u2013be more explicit about how the various cell states are defined.\n\n3) Results section\u2013how exactly were these efficiencies calculated? Do they take into account cell proliferation and loss at various stages?\n\n4) Results section\u2013is the intermediate DP state a necessary stage on the journey? Maybe it represents a default (early anterior stages) induced by growth factor depletion that then gets overtaken by the reprogramming factors.\n\n5) Discussion section\u2013 because the MN endpoint is not characterised at a functional level by the authors in this study, the conclusions rely on comparison to historical controls, and therefore depend on the degree to which the authors' protocol mimics earlier efforts. Direct comparison of the two endpoints is only possible at the transcriptional level.\n\nReviewer #2:\n\nBriggs, Li and coworkers aim to investigate if the developmental path taken by differentiating cells determines the final cellular state or if two alternative trajectories are able to produce a similar terminal fate. To do so, the collect single cell RNA-seq data from differentiating motor neurons induced by extracellular signals or by forced expression of transcription factors. An important difference between these samples rests on the fact that direct differentiation by forced transcription factor expression bypasses the canonical motor neuron progenitor stages. The results show that direct programming and standard differentiating cells diverge at early progenitor like state to take different path and converge on a final similar cell state. Although this was postulated before, these results test the hypothesis with the appropriate and up to date technology.\n\nThere are some important points that in my opinion should be addressed;\n\n1) A better description of the criteria used to assign cell types will be useful. For example, motor neuron progenitors (MNP) are characterized by Olig2 expression, low or no Isl1, Mnx1 and Lhx3. In Figure 1E, MNP have an average Olig2 and high Mnx1, Isl1 and Lhx3. Thus, some of the cells in this cluster might be early MNs than progenitors. Are the markers in Figure 1D-E some of the genes driving the clustering?\n\n2) The percentage of MNs in the SP protocol is surprisingly low. The culture conditions, crucial for this conclusion, should be clearly described in methods. Recapitulating development, SD protocol produces oligodendrocytes after MNs, thus efficiency as percentage of total cells it is expected to decrease. Where there antimitotic added to both (DP and SP) conditions to restrict the generation of mitotic byproducts?\n\n3) It is my opinion that Figure 5 should be divided into two figures. The first two panels are intrinsically linked to the goal of this manuscript, the characterization of DP MNs is less relevant and novel. The three-way comparison of SP, DP and PM is extremely valuable and on topic. Thus, I believe I deserves to be expanded and explained better. The supplementary figures associate with this figure should be in the main figure. On that note, it will be useful to color Figure 5\u2014figure supplement 2A based on DP, SP and pMN to understand where cells \"land\" in these dimensions. Describe what is gene set that take DP closer to pMN than SP for example? Is it possible to add pMN and remake here Figure 3A?\n\n4) MN are pattern along the rostro-caudal (R-C) axis of the spinal cord to innervate the different target by Hox genes. Thus, MN subtype identity varies greatly along the R-C axis. It is expected that neither of the in vitro differentiation protocol decapitates the diversity of embryonic derived MNs. Specifically, the SP was designed to make a very restricted set of MNs within the R-C axis. Without description of the method, it is left to the reader to assume MNs were collected from all R-C levels. Thus, it this is not a surprised or anything that should be left as a speculation and stated that way.\n\n5) Although with some novel detail, the rest of Figure 5 is a recapitulation of previous work. Finally, the Tubb3+BTX staining is not informative. Also, clustering of acetylcholine receptors when cells are platted without neurons is required to conclude that MNs induce clustering. A Vacht or SV2 staining plus BTX and quantification of the overlap will be a better measure of active NMJs.\n\n6) The finding that in the DP protocol cells don't transition through MNP stages is not novel. However, I do understand that for the purpose of comparing DP to SP it is a necessary description. Single cell RNA-seq and differentiation path is the appropriate and cutting edge tool to investigate the original question: does developmental path matters? The cellular system is appropriate too since three types of MNs can be compared: DP, SP, and pMN. The manuscript is clearly written following a logical argument. I believe it suffers from a very poor description of the experiment and methods that hurst the interpretation of the data. Also, it is superficial in important description as those single cell RNA-seq in Figure 5.\n\nReviewer #3:\n\nThe study, \"Mouse embryonic stem cells can differentiate via multiple paths to the same state\" by Briggs et al. uses single cell sequencing to demonstrate that mouse ESCs can give rise to motor neurons via alternative transcriptional trajectories. In detail the authors compare a traditional cytokine driven differentiation protocol (SD) with a transcription factor based direct \"programming\" approach. While the authors were able to detect discreet developmental intermediates in the SD protocol that correspond to known in vivo counter parts, the DP approach followed a mostly alternative path. While both DP and SD cultures appeared to transition into neural progenitors initially, beyond that they seemed to directly transition into an early motor neuron state bypassing a number of intermediate stages. The authors postulate that the same cell fate can be derived from mESCs via alternative routes that diverge after the neural commitment stage.\n\nThis is an important and highly interesting study that tries to unveil how direct programming produces its target cell type and whether this is achieved by an accelerated form of differentiation (transcription factor guided) or whether this occurs via an alternative route/more direct cell state transition. While the authors use state of the art bioinformatical analyses to mine their data set is well done, and allowed them reach interesting results, I believe that a few key experiments are required for the authors to mechanistically support their key findings.\n\n\u2013 Single cell RNA seq data is biased towards detecting highly expressed genes. While the DP protocol appears to follow a very artificial trajectory it is possibly that key genes that are crucial for generation of the SD intermediates that the DP approach seems to skip are transiently expressed at very low levels. The authors could/should show that shRNA mediated knockdown of the key TF that are important for in vivo/SD generation of MNs but appear to get skipped in the DP protocol, reduce differentiation outcomes for the SD but not the DP protocol. This will be crucial to support that DP MNs are indeed derived by a process that skips/bypasses key developmental intermediates.\n\n\u2013 It will be important to investigate if the generation of Sox1/Sox3+ neural progenitors during the DP protocol is not simply an artefact of the authors experimental conditions. The authors cited (3) and stated in the introduction that MNs are generated by the DP approach by skipping the a Sox1 positive neural progenitor state. As neural commitment in N2B27 is a very rapid process and mESCs are exposed to the dox and N2B27 media at the same time it is possible that the cells start to differentiate before the NIL factors become active on a protein level. While the authors state that MNs can not be generated by dox addition if cells are not removed from mESC maintenance media, pulsing the cells for 12, 24, or 48 hours with dox in mESC media before on set of differentiation very well might (the original DR publication shows that NIL factors are present on protein level by 48 hours). I understand that asking the authors to repeat the single cell transcriptome under this condition will be excessive, however I propose that the authors use qPCR (single cell) for neural progenitor markers and mature MN markers to test whether pre-exposure to dox abolishes the generation of neural progenitors during N2B27 culture. If it does this would indicate that SD/DR approaches are entirely different processes that do not even share the neural progenitor state and more importantly that mESCs do directly transition to MN-like state.\n\n\u2013 As commented above, it would be interesting to test whether knock-down of forebrain transcription factors that get transiently upregulated during DP mediated MN generation reduce differentiation outcomes for the DP protocol. This would help to demonstrate more clearly and in a mechanistic way, whether the forebrain signature is important for the process or merely an artefact imposed by the N2B27 media which generates under normal differentiation conditions forebrain fates.\n\n\u2013 Finally, to definitely proof that both the SD and DP protocol give rise to MN via different intermediate stages, it will be critical to isolate the presumed intermediate cells by FACS (either by using specific cell surface markers inferred from the single cell data or at least they should use their MNX1:GFP line) and show that these \"presumed\" intermediates are indeed the source of the mature MNs. That is, the authors should re-culture the isolated cells and demonstrate by IF characterisation that they give rise to the final end product.\n\nAn experiment that I have not suggested because it maybe an excess, but it would really enhance this manuscript, would be to use lineage tracing for Olig2 or Nkx6-1 during the DP protocol, and in this way show that they are never upregulated during the generation of MN by the DP approach.\n",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "462888fc-4a17-44bf-8de5-71dbbe076c5c",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C1",
+      "claim": "The standard protocol (SP) for motor neuron differentiation attempts to drive cells into a spinal motor neuron state through sequential addition of developmental signals (Fgfs, Retinoic Acid, and Sonic hedgehog).",
+      "claim_type": "EXPLICIT",
+      "source": "The first, standard protocol (SP) is a widely used method that attempts to drive cells into a spinal MN state through sequential addition of developmental signals that normally guide MN differentiation in the embryo (Fgfs, Retinoic Acid, and Sonic hedgehog)(Figure 1A) (Wichterle et al., 2002; Wu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published work (Wichterle et al., 2002; Wu et al., 2012) describing the standard protocol methodology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "a6721bac-8c50-4d92-9e7d-076ed59a991d",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C2",
+      "claim": "The direct programming (DP) protocol drives cells toward a spinal motor neuron fate by forcing expression of spinal motor neuron transcription factors (Ngn2+Isl1+Lhx3).",
+      "claim_type": "EXPLICIT",
+      "source": "The DP protocol drives cells toward a spinal MN fate by forcing the expression of spinal MN transcription factors (Ngn2+Isl1+Lhx3) (Mazzoni et al., 2013; Velasco et al., 2017) in cells grown in a simple growth factor free medium (Li and Kirschner, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published work (Mazzoni et al., 2013; Velasco et al., 2017; Li and Kirschner, 2014) describing the direct programming methodology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "52adbcc8-2460-4fb3-9ae8-1907dcb84ac0",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C3",
+      "claim": "The DP protocol does not induce key marker genes of some embryonic motor neuron intermediate states.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that this DP protocol does not induce key marker genes of some embryonic MN intermediate states; for this reason DP was among the first differentiation protocols for which it was explicitly argued that a distinct differentiation process may be occurring (Mazzoni et al., 2013; Velasco et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published work (Mazzoni et al., 2013; Velasco et al., 2017) that reported absence of embryonic intermediate marker genes during DP.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "63a2233a-bcbd-4f65-800b-47440400fe52",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C4",
+      "claim": "Single-cell RNA sequencing was used to profile 4590 single-cell transcriptomes from early (day 4/5) and late (day 11/12) timepoints for each protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "We initially profiled 4590 single-cell transcriptomes sampled from early (day 4/5) and late (day 11/12) timepoints for each protocol, and also used our previously published data from 975 mES cells as a day 0 reference (Klein et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the number of cells profiled and timepoints sampled.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "520d94ac-d4fe-4bb4-9c89-e52c0828cfe7",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C5",
+      "claim": "Both DP and SP protocols initially undergo similar early neural commitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Both initially undergo similar early neural commitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, which is supported by single-cell RNA sequencing data showing overlap of early states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "74d1a0c9-63e2-45a1-a462-56fbb39a3962",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C6",
+      "claim": "The direct programming path diverges into a novel transitional state rather than following the expected embryonic spinal intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "Later, the direct programming path diverges into a novel transitional state rather than following the expected embryonic spinal intermediates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, which is supported by single-cell RNA sequencing data and visualization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "8422fa23-81ce-475b-b0f3-4e68d38d610a",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C7",
+      "claim": "The novel state in direct programming has specific and uncharacteristic gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The novel state in direct programming has specific and uncharacteristic gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, which is supported by differential gene expression analysis showing forebrain gene expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "d0364c88-16eb-4fbb-bcf6-e2a1cb63e3ba",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C8",
+      "claim": "The direct programming trajectory forms a loop in gene expression space that converges separately onto the same final motor neuron state as the standard path.",
+      "claim_type": "EXPLICIT",
+      "source": "It forms a loop in gene expression space that converges separately onto the same final motor neuron state as the standard path.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, which is supported by SPRING visualization and similarity analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "cc0300ad-0b08-4436-9805-ee2b990d24bc",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C9",
+      "claim": "Motor neurons from both protocols structurally, functionally, and transcriptionally resemble motor neurons isolated from embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite their different developmental histories, motor neurons from both protocols structurally, functionally, and transcriptionally resemble motor neurons isolated from embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, which is supported by immunostaining, electrophysiology, and single-cell RNA sequencing comparisons with primary motor neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "53732b94-0b9b-4b10-ab15-51936069c220",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C10",
+      "claim": "Most mature cell states are not produced by multiple differentiation paths in the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, most mature cell states are not produced by multiple differentiation paths in the embryo; the only known exceptions are rare and viewed as special cases, such as in the neural crest lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge about embryonic development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "b939962d-c1e4-45f9-803f-da7bc78ae814",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C11",
+      "claim": "mESCs can be converted into motor neurons by overexpression of Ngn2+Isl1+Lhx3 without expressing the neural progenitor transcription factors Sox1 and Olig2.",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse embryonic stem cells (mESCs), for example, can be converted into motor neurons (MNs) by a process that involves overexpression of three transcription factors, Ngn2+Isl1+Lhx3 (Mazzoni et al., 2013; Velasco et al., 2017), and that never expresses the neural progenitor transcription factors Sox1 and Olig2 (Mazzoni et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published work (Mazzoni et al., 2013; Velasco et al., 2017) describing this direct programming method.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "45d70701-a848-4c33-8f2f-e157b049aecc",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C12",
+      "claim": "mESCs can be driven rapidly into a terminal muscle phenotype without normal upregulation of intermediate genes such as Pax7 and Myf5, through a combination of cell-cycle inhibition and MyoD overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "mESCs can also be driven rapidly into a terminal muscle phenotype without normal upregulation of intermediate genes such as Pax7 and Myf5, through a combination of cell-cycle inhibition and MyoD overexpression (Li and Kirschner, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published work (Li and Kirschner, 2014) describing this direct programming method for muscle.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "49c51cd1-8b12-43aa-b99b-cb895dee2264",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C13",
+      "claim": "Fibroblasts can be converted into mature neuron phenotypes without completely dedifferentiating and retracing the embryonic lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Fibroblasts can be converted into mature neuron phenotypes (Vierbuchen et al., 2010; Treutlein et al., 2016), including MNs (Son et al., 2011), seemingly without completely dedifferentiating and retracing the embryonic lineage, as indicated by lack of expression of specific core pluripotency (Oct4, Sox2 and Nanog) and neural progenitor genes (Nestin) (Son et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published work (Vierbuchen et al., 2010; Treutlein et al., 2016; Son et al., 2011) describing fibroblast to neuron conversion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "ed65ce97-e6e0-49d1-908a-8ca2a8346454",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C14",
+      "claim": "The SP differentiation path consists of seven cell states: ESC, NP, PNP, PVNP, MNP, EMN, and LMN.",
+      "claim_type": "EXPLICIT",
+      "source": "In the SP differentiation path, cells transit through seven states (Figure 2C and E). These state transitions parallel patterning events in the embryo (Wichterle et al., 2002; Davis-Dusenbery et al., 2014; Jessell, 2000): cells first commit to the neural lineage (NP; Sox1+/Sox2+), then are posteriorized (PNP; Sox3+/Hoxb8+/Hoxd4+), ventralized (PVNP; Nkx6-1+/Olig2+), enter the committed MN progenitor state (MNP; Mnx1+), and then mature through early (EMN; Mnx1+/Tubb3+/Map2+) and late (LMN; Mnx1-/Tubb3+/Map2+/Syn1+) MN states.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes these states based on single-cell RNA sequencing data and marker gene expression shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "9ac65339-3aad-4068-b295-fee5bb153be3",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C15",
+      "claim": "The DP differentiation path consists of four apparent states: ESC, NP, EMN, and LMN.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, we found that the path produced by DP was condensed relative to the SP path (Figure 2B and D), consisting of only four apparent states as opposed to seven. After neural commitment (NP; Sox1+), cells immediately began expressing committed MN markers (EMN; Mnx1+/Tubb3+).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes these states based on single-cell RNA sequencing data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "14d7acc5-2cb0-4678-9323-afd1c1f915a6",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C16",
+      "claim": "The DP path lacks typical spinal embryonic intermediates expressing Olig2, Nkx6-1, Hoxb8, and Hoxd4.",
+      "claim_type": "EXPLICIT",
+      "source": "A major difference between the DP and SP cell states is the seemingly complete absence of typical spinal embryonic intermediates (PNP or PVNP) in DP. These states are normally recognized by expression of the marker genes Olig2, Nkx6-1, Hoxb8, and Hoxd4, but these genes were not detected by scRNA-Seq in DP intermediates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports absence of these marker genes based on single-cell RNA sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "e79df8f1-f54c-46d5-aee3-abf141116280",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C17",
+      "claim": "Olig2 is necessary for motor neuron development in embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Olig2 is necessary for MN development in embryos (Takebayashi et al., 2002), indicating that DP drives differentiation from ESC into MNs through a fundamentally new route.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published work (Takebayashi et al., 2002) establishing Olig2's necessity in embryonic motor neuron development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "55b48bfb-745f-45be-ac89-28a40b7aeb2e",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C18",
+      "claim": "In SP, Olig2 expression peaks at a level 5.4-fold higher than Gapdh in PVNP cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In SP, our scRNA-Seq data reveals that Olig2 expression peaks (in the PVNP cells) at a level 5.4-fold higher than Gapdh, a constitutively expressed 'housekeeping' gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports this quantitative measurement from single-cell RNA sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "b44c4783-ae85-4348-bac5-c9250c27a935",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C19",
+      "claim": "Olig2 was not detected at any time point during DP by qPCR (no qPCR signal at CT > 40), showing that average expression levels are 10^6-fold or more lower than Gapdh.",
+      "claim_type": "EXPLICIT",
+      "source": "These measurements showed that committed MN markers were upregulated immediately following early neural progenitor genes in DP, but Olig2 was not detected at any time point during DP (no qPCR signal at CT > 40), showing that the average expression levels are 106-fold or more lower than Gapdh (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports qPCR measurements shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "cd46b743-c989-4617-8dc7-d564fd148458",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C20",
+      "claim": "The fraction of cells expressing Olig2 at levels seen in SP during DP was less than one in 10^6 on any day.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, on any day, the fraction of cells expressing Olig2 at levels seen in SP was less than one in 106.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers this from qPCR measurements and calculations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "e37cb38e-c981-443b-9dba-d94b3a9a42f9",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C21",
+      "claim": "An Olig2+ transitional state during DP would last less than 1 second if it existed.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the total protocol duration was 11 days, this would require that an Olig2 transitional state would last less than 1 s (11 days/106), far shorter than the lifetime of mRNA molecules in a cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript calculates this from the qPCR data and protocol duration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "33a27d84-f47d-4dfd-99c2-6600bd1fd36e",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C22",
+      "claim": "The DP and SP trajectories overlap during early neural commitment, then bifurcate and take distinct paths that converge independently to the same motor neuron state.",
+      "claim_type": "EXPLICIT",
+      "source": "This representation revealed that the DP and SP trajectories overlap during early neural commitment, but that they then bifurcate and take distinct paths that converge independently to the same MN state (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes this finding based on SPRING visualization shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "01ee6b27-fcc6-41cd-b073-8235db05d0c5",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C23",
+      "claim": "Pairwise cosine similarities indicate similarities between early states (ESC and NP; cosine similarity >0.69) and late states (LMN; cosine similarity = 0.47) of DP and SP, but not the intermediate states.",
+      "claim_type": "EXPLICIT",
+      "source": "Pairwise cosine similarities between the cell states from both trajectories (Figure 3C; Supplementary methods) indicate similarities between the early states (ESC and NP; cosine similarity >0.69) and late states (LMN; cosine similarity = 0.47), but not the intermediate states (PNP, PVNP, and MNP; cosine similarity <\u22120.15, \u20130.03, and 0.04 respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports these quantitative similarity measurements shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "e9467b28-35ed-4d87-be28-f132cdbd4431",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C24",
+      "claim": "Maximum likelihood assignment showed it was virtually impossible to find a single cell resembling the SP intermediate progenitors in the DP approach.",
+      "claim_type": "EXPLICIT",
+      "source": "This showed that it was virtually impossible to find a single cell resembling the SP intermediate progenitors in the DP approach. Similarity was again observed only at the early and late states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes this finding based on maximum likelihood cell assignment analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "3e440dc8-154c-4e6e-a381-e046d780bec9",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C25",
+      "claim": "A total of 26 transcription factors are differentially expressed between the DP and SP intermediate states.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 26 transcription factors (TFs) are differentially expressed between the DP and SP intermediate states (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports this from differential gene expression analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "9d06a2fc-d246-400d-ac5a-e457bf2684f1",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C26",
+      "claim": "61% of differentially expressed transcription factors between DP and SP intermediates are involved in an anterior-posterior positional gene expression axis.",
+      "claim_type": "EXPLICIT",
+      "source": "A majority of these (61%) were involved in an anterior-posterior positional gene expression axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript calculates this percentage from the differential gene expression analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "93b57521-e37d-4b88-8fe2-aa16eeba7f77",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C27",
+      "claim": "The SP intermediates are enriched more than 6-fold for nine posterior and spinal transcription factors including Olig2, Nkx6-1, Lhx3, and six posterior Hox genes with a corrected p-value<0.001.",
+      "claim_type": "EXPLICIT",
+      "source": "The SP intermediates were enriched more than 6-fold for nine posterior and spinal TFs including Olig2, Nkx6-1, Lhx3, and six posterior Hox genes with a corrected p-value<0.001.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports these enrichment statistics from differential gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "08554fa0-caef-4eef-b38b-325e57fe4d65",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C28",
+      "claim": "The DP intermediates are enriched for seven forebrain transcription factors including Otx2, Otx1, Crx, Six1, Dmrta2, Zic1, and Zic3 at corrected p-value<0.001.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the DP intermediates were enriched for seven forebrain TFs including Otx2, Otx1, Crx, Six1, Dmrta2, Zic1, and Zic3 at the same stringency, despite the absence of MNs in the forebrain of embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports these enrichment statistics from differential gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "e52e458c-587e-4df0-b5b6-e05ff128e56d",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C29",
+      "claim": "Forebrain gene expression is upregulated along the DP differentiation path as cells exit the early NP state into the EMN intermediate state.",
+      "claim_type": "EXPLICIT",
+      "source": "Forebrain gene expression is upregulated along the DP differentiation path, as cells exit the early NP state into the EMN intermediate state (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes this finding based on gene expression dynamics shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "23bcfa2f-64f6-4398-b47a-9dac700f92ae",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C30",
+      "claim": "The transition from NP to EMN in DP is accompanied by downregulation of proliferation-associated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This transition is accompanied by the downregulation of proliferation-associated genes (Figure 4B; Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes this finding based on gene expression analysis shown in Figure 4B and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "60bebb2d-d000-48e3-8fa8-2cd12cced727",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C31",
+      "claim": "As cells exit the EMN state and transit into the LMN state in DP, they downregulate forebrain genes and replace this abnormal positional signature with a spinal Hox expression signature.",
+      "claim_type": "EXPLICIT",
+      "source": "By the time cells exit the EMN state and transit into the more differentiated LMN state, they downregulate forebrain genes and replace this abnormal positional signature with a spinal Hox expression signature characteristic of normal MNs (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes this finding based on gene expression dynamics shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "7d181c2b-9445-4640-9490-e88507e53547",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C32",
+      "claim": "Bulk microarray comparisons of Mnx1+ DP and SP intermediates confirmed the enrichment of forebrain transcription factors and depletion of spinal progenitor and positional genes in the DP intermediates with one exception (Zic1).",
+      "claim_type": "EXPLICIT",
+      "source": "The comparison confirmed the enrichment of forebrain TFs, and depletion of spinal progenitor and positional genes in the DP intermediates with just one exception \u2013 Zic1 was enriched in DP by our single cell comparison but in SP by microarray (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports this validation using microarray data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "103700aa-a4f1-4a1c-9334-5ff9c1b44c72",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C33",
+      "claim": "Mnx1+ DP intermediate cells isolated on day 3 of differentiation generate motor neurons when cultured for an additional 10 days.",
+      "claim_type": "EXPLICIT",
+      "source": "We cultured this population for an additional 10 days, and validated by immunostaining for Vacht and Map2 that it indeed generates motor neurons (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports this experimental result shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "5b70a59a-c22f-4c13-a0c0-9813ae6a3add",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C34",
+      "claim": "874 Mnx1+ cells were FACS purified from whole E13.5 spinal cords and profiled using InDrops.",
+      "claim_type": "EXPLICIT",
+      "source": "We harvested MNs from the embryo of a Mnx1:GFP reporter mouse and performed inDrops measurements on 874 Mnx1+ cells that were FACS purified from whole E13.5 spinal cords.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the number of cells profiled and the method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "38d87dbe-f66d-44f6-88f8-429ed013bac4",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C35",
+      "claim": "The majority of Mnx1+ sorted cells from E13.5 spinal cords were motor neurons (73.8%, n = 645), with the population also containing glia (20.1%), fibroblast-like cells (1.8%), and immune-type cells (1.2%).",
+      "claim_type": "EXPLICIT",
+      "source": "Though the majority of Mnx1+ sorted cells were MNs (73.8%, n = 645), this population also contained glia (20.1%), fibroblast-like cells (1.8%), and immune-type cells (1.2%; Figure 5A; Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports these population percentages from single-cell RNA sequencing analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "a8608bc4-d9ea-41e3-80d9-8eec6abfa19e",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C36",
+      "claim": "The LMN state from the DP protocol has a cosine similarity of 0.60 to primary motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The clusters most similar to pMNs were the LMN state from the DP protocol (cosine similarity = 0.60), and the LMN state from the SP (cosine similarity = 0.47).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports this quantitative similarity measurement from centroid comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "f7512477-88b3-42ec-a3e0-10cb808ac654",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C37",
+      "claim": "The LMN state from the SP has a cosine similarity of 0.47 to primary motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The clusters most similar to pMNs were the LMN state from the DP protocol (cosine similarity = 0.60), and the LMN state from the SP (cosine similarity = 0.47).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports this quantitative similarity measurement from centroid comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "60bfe3ef-75a2-4900-a237-08d717ff185d",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C38",
+      "claim": "64% of DP LMNs had at least one primary motor neuron nearest neighbor out of its 50 most similar cells, compared to 6% for SP LMNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, a higher fraction of DP LMNs resembled primary MNs, as seen by calculating the fraction of cells in each state that had at least one pMN nearest neighbor out of its 50 most similar cells (Figure 5C\u2013iii; 64% for DP, 6% for SP).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports these percentages from nearest neighbor analysis shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "b2998340-162a-4735-bd1d-02e6c4beb494",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C39",
+      "claim": "Both DP and SP LMNs show limited gene expression differences to primary motor neurons, with 11 differentially expressed transcription factors in each case.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, both DP and SP LMNs show limited gene expression differences to pMNs. In both cases there were 11 differentially expressed TFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports this from systematic differential gene expression analysis shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "9087d273-7ae4-43bf-b448-be2bec13ae50",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C40",
+      "claim": "Half of the differentially expressed transcription factors between DP/SP LMNs and primary motor neurons are positional Hox genes that mark the most posterior motor neuron pool and are enriched in primary motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, half were positional Hox genes that mark the most posterior MN pool and were enriched in pMNs, indicating a more anterior identity of the DP and SP LMNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes this finding from differential gene expression analysis shown in Figure 5D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "c732c613-220c-4b23-8b15-aefa6159cef3",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C41",
+      "claim": "DP motor neurons express Tubb3, Map2, VACht, Isl1, and Hb9 proteins with correct subcellular localization.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that selected protein content matches the mRNA markers by immunostaining for Tubb3, Map2, VACht, Isl1, and Hb9 (Figure 6A). Tubb3 and Map2 were present, and VACht was seen at discrete puncta on the axons (suggesting localization to acetylcholine secretory vesicles). TFs Isl1 and Hb9 were localized in the nucleus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports immunostaining results shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "49341e32-0f5d-4174-82e7-616416faf089",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C42",
+      "claim": "DP motor neurons can fire single or multiple action potentials upon depolarization in current-clamp experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Depolarization induced single or multiple action potentials in current-clamp experiments (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports electrophysiology results shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "9df60651-8754-44b2-a735-eed503728887",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C43",
+      "claim": "DP motor neurons show fast inward currents and slow outward currents characteristic of sodium and potassium channels in voltage-clamp experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Depolarizing voltage steps induced fast inward currents and slow outward currents characteristic of sodium and potassium channels, respectively (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports electrophysiology results shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "928651c4-7a8b-4f44-8012-b2a4da460a3e",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C44",
+      "claim": "Exposure to 500 nM Tetrodotoxin (TTX) blocked the inward current in DP motor neurons, indicating sodium channel involvement.",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure to 500 nM Tetrodotoxin (TTX) blocked the inward current, indicating sodium channel involvement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports this pharmacological experiment result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "ec74acbe-c624-40c5-ab94-dc81a1537821",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C45",
+      "claim": "Exposure of DP motor neurons to AMPA, kainate, GABA, and glycine (100 \u00b5M each) induced inward currents similar to that seen in primary embryonic motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure of the neurons to AMPA, kainate, GABA, and glycine (100 \u00b5M each) induced in each case inward currents similar to that seen in primary embryonic MNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports these neurotransmitter response experiments shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "4d8b8d33-be06-486a-8650-a57fe4b79505",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C46",
+      "claim": "DP motor neurons induce clustering of acetylcholine receptors on C2C12 myotubes near contact points, as seen with alpha-bungarotoxin staining.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed clustering of acetylcholine receptors on the C2C12 myotubes near contact points with the DP neurons, which can be seen with alpha-bungarotoxin (\u03b1-BGT), which binds to acetylcholine receptors (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports this co-culture experiment result shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "c795d1de-1697-4b17-8dce-9d0c25ab48e5",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C47",
+      "claim": "DP motor neurons induce regular contractions of C2C12 myotubes in co-culture that can be stopped by addition of 300 \u00b5M Tubocurarine.",
+      "claim_type": "EXPLICIT",
+      "source": "We then observed regular contractions of some C2C12 myotubes that began after several days in co-culture (Figure 6E, Figure 6\u2014video 1). These contractions could be stopped by the addition of 300 \u00b5M Tubocurarine (curare), an antagonist of acetylcholine receptors, indicating that the contractions were induced by the acetylcholine release from the MNs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports this co-culture experiment result shown in Figure 6E and video.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "80da3131-533c-4549-ba6a-aa7e1adf2dce",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C48",
+      "claim": "DP motor neurons can induce contractions in DP muscle myotubes generated with MyoD.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we noticed that the DP MNs could induce contractions in DP muscle myotubes that we previously generated with MyoD (Figure 6\u2014video 2) (Li and Kirschner, 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports this co-culture experiment result with reference to video and prior work (Li and Kirschner, 2014).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "8cef496f-f255-48f1-8a3c-7cab60e3c587",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C49",
+      "claim": "DP has significantly higher motor neuron production efficiency than SP (66% vs. 9%) at the late timepoint.",
+      "claim_type": "EXPLICIT",
+      "source": "DP has significantly higher MN production efficiency than SP (66% vs. 9%) at the late timepoint.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states this comparison based on cell state quantification shown in Figure 2F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "74079f04-e94e-437d-a3e9-0b5fc849f763",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C50",
+      "claim": "In the SP protocol, off-target populations increase in fractional abundance to overshadow the intended motor neuron products by day 12.",
+      "claim_type": "EXPLICIT",
+      "source": "An unexpected result from this analysis was that, in the SP protocol, off-target populations increase in fractional abundance to overshadow the intended MN products. Off-target products included oligodendrocytes (7.2%), astrocytes (8.6%), muscle (30.6%), and stroma (8.9%), that together accounted for 55.3% of the population by day 12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports these population percentages from single-cell RNA sequencing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "3a611086-aee4-49d5-a42b-7ac5efedb976",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C51",
+      "claim": "At day 10, the SP population contained 34.4% EMNs and 14.9% LMNs, which was higher than at either day 5 or day 12.",
+      "claim_type": "EXPLICIT",
+      "source": "At this time point, the SP population contained 34.4% EMNs and 14.9% LMNs, which was higher than at either day 5 or day 12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports these percentages from a replicate SP experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "1202d269-dda2-4558-8232-d93f961175af",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C52",
+      "claim": "The increase in off-target populations in SP possibly reflects the ability of cell states such as oligodendrocytes and astrocytes to proliferate, which could progressively dilute the initial output of post-mitotic motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase in these populations possibly reflects the ability of cell states such as oligodendrocytes and astrocytes to proliferate, which could progressively dilute the initial output of post-mitotic MNs, severely reducing MN generation efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes this explanation based on the observed dynamics of cell populations over time.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "47b2d9bd-5a8c-47cb-b2d5-07983f4f4286",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C53",
+      "claim": "Differentiation can proceed by multiple routes and yet converge onto similar transcriptional states.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide evidence at the single cell level that differentiation can proceed by multiple routes and yet converge onto similar transcriptional states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a main conclusion supported by the single-cell RNA sequencing data comparing DP and SP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "e7f9f157-0efd-43fa-92cb-72bc8d863b4b",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C54",
+      "claim": "Convergence into a motor neuron does not depend rigidly on the precise history of intermediate states through which cells differentiate.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that DP of mESCs into MNs occurs via a late bypass that involves alternative intermediate states not seen in the embryo, and that this new route converges near perfectly to the same final state (Figure 1). Convergence into a MN therefore does not depend rigidly on the precise history of intermediate states through which cells differentiate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a main conclusion based on the comparison of DP and SP trajectories.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "7ce7522f-6d1f-4961-8e22-d62c01f4a619",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C55",
+      "claim": "The 'history independence' of the final motor neuron state is consistent with a dynamical view of gene regulation in which cell states correspond to 'attractor basins'.",
+      "claim_type": "EXPLICIT",
+      "source": "This 'history independence' of the final state is consistent with a dynamical view of gene regulation in which cell states correspond to 'attractor basins', i.e. stable states of gene expression that are robust to modest perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes this interpretation based on the observed convergence of DP and SP to the same final state.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "c2d8793d-cb11-4faf-9ded-0e78b07ca0da",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C56",
+      "claim": "It is not necessary to recreate the precise sequences of steps taken in embryos to generate motor neurons with the highest similarity to primary cells.",
+      "claim_type": "EXPLICIT",
+      "source": "From a practical perspective, it is a common concern that DP methods may generate cell types with subtle defects due to their unusual developmental histories (Cohen and Melton, 2011). Attractors would be robust to this vulnerability and indeed our results show that it is not necessary to recreate the precise sequences of steps taken in embryos to generate MNs with the highest similarity to primary cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this conclusion based on the comparison of DP and SP motor neurons to primary motor neurons, with reference to prior concerns (Cohen and Melton, 2011).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "92f02109-dd72-475e-bbaa-bcead3deddde",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C57",
+      "claim": "The motor neuron state is thought to be stabilized by a network of self-reinforcing transcription factors involving Mnr2, Mnx1, Lim3, Isl1, Isl2, Lhx3, Ngn2, Myt1l, Nefl, and Nefm.",
+      "claim_type": "EXPLICIT",
+      "source": "The MN state is thought to be stabilized by a network of self-reinforcing TFs (Jessell, 2000), involving Mnr2, Mnx1, Lim3, Isl1, Isl2, and Lhx3, Ngn2, Myt1l, Nefl, and Nefm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites established knowledge (Jessell, 2000) about the motor neuron transcription factor network.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "8c55870a-71aa-4437-a590-145a0d00ca63",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C58",
+      "claim": "Recent studies have shown that Ebf and Onecut are activated by Ngn2, and that both are required to subsequently direct binding of Isl1 and Lhx3 to motor neuron target genes across the genome during DP.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, recent studies have shown that Ebf and Onecut are activated by Ngn2 (one of the DP TFs), and that both are required to subsequently direct binding of Isl1 and Lhx3 (the other two DP TFs) to MN target genes across the genome during DP (Velasco et al., 2017; Rhee et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites recent published work (Velasco et al., 2017; Rhee et al., 2016) describing the mechanism of DP transcription factor action.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "a19fc417-7c45-436f-80f4-e9aab72341f4",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C59",
+      "claim": "Motor neurons are not generated if DP transcription factors are induced in cells cultured in pluripotency media.",
+      "claim_type": "EXPLICIT",
+      "source": "We have indeed observed that MNs are not generated if DP TFs are induced in cells cultured in pluripotency media, indicating a requirement for changes in signaling (not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports this unpublished observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "7cc64fb0-380a-4b2b-a106-6087d8dc942a",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C60",
+      "claim": "When mES cells are transferred to minimal media without inducing DP factors, they acquire a forebrain neural progenitor identity by default.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, when mES cells are transferred to minimal media without inducing DP factors, they acquire a forebrain neural progenitor identity by default (Pankratz et al., 2007; Smukler et al., 2006; Okada et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published work (Pankratz et al., 2007; Smukler et al., 2006; Okada et al., 2004) describing default neural differentiation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "7b4bede8-dcbf-4fe2-aff0-9033f6c52222",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C61",
+      "claim": "The high-efficiency of DP most likely derives from both its more uniform experimental conditions as well as its more direct differentiation path.",
+      "claim_type": "EXPLICIT",
+      "source": "The high-efficiency of DP most likely derives from both its more uniform experimental conditions as well as its more direct differentiation path.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes this explanation for DP efficiency based on the experimental design and observed trajectories.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "5d8936ed-44e0-421a-80b4-9d6037914fa9",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C62",
+      "claim": "DP relies on 2D rather than 3D tissue culture, minimizing uncontrolled cell-cell communication.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimentally, DP: relies on 2D rather than 3D tissue culture (as in the SP), minimizing uncontrolled cell-cell communication",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes this feature of the DP experimental design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "d5ace9c2-cb79-4c60-96d6-f870d06b8c44",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C63",
+      "claim": "DP forces every individual cell to express motor neuron transcription factors from a genetically integrated construct, increasing uniformity.",
+      "claim_type": "EXPLICIT",
+      "source": "forces every individual cell to express MN TFs from a genetically integrated construct, increasing uniformity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes this feature of the DP experimental design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "aa2a5ea4-56b2-431c-8eda-e02ff452cb79",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C64",
+      "claim": "DP employs a defined-media without growth factors that may minimize proliferation of competing progenitor states.",
+      "claim_type": "EXPLICIT",
+      "source": "and employs a defined-media without growth factors that may minimize proliferation of competing progenitor states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes this feature of the DP experimental design and proposes its effect.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "a9449238-2343-4206-89a5-7b5996f481dc",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C65",
+      "claim": "Long sequences of intermediate cell state transitions offer many sequential opportunities for off-target fate choices, which multiplicatively reduce efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Long sequences of intermediate cell state transitions offer many sequential opportunities for off-target fate choices, which multiplicatively reduce efficiency, as compared to the more compact DP trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes this explanation for the difference in efficiency between DP and SP.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "c694d5e7-f4b5-4655-bab4-2037bbdeece7",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C66",
+      "claim": "Targeting terminal attractor basins through the shortest possible differentiation paths may prove to be a generally effective strategy for generating desired cell states, more quickly and more enriched in the desired product.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting terminal attractor basins through the shortest possible differentiation paths may prove to be a generally effective strategy for generating desired cell states, more quickly and more enriched in the desired product.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes this as a general principle based on the findings from comparing DP and SP.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "65d86dc7-619c-41f3-bc92-12339e37b8c9",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C67",
+      "claim": "The mouse ES cell line containing doxycycline-inducible Ngn2+Isl1+Lhx3 (NIL) and the Hb9::GFP reporter was provided by Esteban Mazzoni.",
+      "claim_type": "EXPLICIT",
+      "source": "The mouse ES cell line containing doxycycline-inducible Ngn2+Isl1+Lhx3 (NIL) and the Hb9::GFP reporter was graciously provided by Esteban Mazzoni.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the source of the cell line used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "d3029dbc-1fcb-479c-9334-db591be29d70",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C68",
+      "claim": "ESCs were seeded at a density of approximately 200,000 cells per well of a 6-well dish for differentiation experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "ESCs were counted by a Beckman Coulter Counter and seeded at a density of approximately 200,000 cells per well of a 6-well dish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental protocol used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "cf0c5534-33df-4ee8-80b5-25f600172ed8",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C69",
+      "claim": "Doxycycline was added at 3 \u03bcg/ml to induce expression of the NIL transcription factors in the DP protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "At day 0 (ESCs), the media was switched from standard ES media to N2B27 media (Invitrogen). Doxycycline was also added at 3 \u03bcg/ml starting to induce expression of the NIL transcription factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental protocol used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "6adb308d-39e4-4b99-84dc-d50ff7fe2c0c",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C70",
+      "claim": "The Wu et al. protocol for the standard programming method involves a period of neural induction using embryoid body culture before subsequent replating on laminin.",
+      "claim_type": "EXPLICIT",
+      "source": "For the standard programming protocol, the steps described in Wu et al. were followed strictly. The Wu et al. protocol involves a period of neural induction using embryoid body culture before subsequent replating on laminin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the standard protocol used, referencing Wu et al.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "0dc65c13-d674-43e5-a02b-3ad7d434c8c1",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C71",
+      "claim": "All animal protocols were approved by the Institutional Animal Care and Use Committee at Boston Children's Hospital.",
+      "claim_type": "EXPLICIT",
+      "source": "All animal protocols were approved the Institutional Animal Care and Use Committee at Boston Children's Hospital.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the ethical approval for animal experiments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "733122e2-aefd-4155-b304-c4131a58ff6c",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C72",
+      "claim": "Cells were required to have at least 1000 UMIs detected to be included in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we required all cells to have at least 1000 UMIs detected. This removed any signal potentially coming from empty droplets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the quality control criteria used for single-cell data analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "c6173520-076d-4771-867e-8887b57f02ce",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C73",
+      "claim": "Data were total count normalized to ensure differences between cells were not due to technical variation in mRNA capture efficiency or cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, data were total count normalized to ensure differences between cells were not due to technical variation in mRNA capture efficiency or cell size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the normalization method used for single-cell data analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "4984628a-25d3-424d-9168-6d2dfbde2655",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "claim_id": "C74",
+      "claim": "Cells that had a high stress gene signature were excluded from analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, cells that had a high stress gene signature were excluded from analysis. Stressed cells were initially recognized as a small percentage of cells (<10%) that clustered apart from everything else and specifically expressed very high levels of a mitochondrial gene set that is associated with cellular stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the quality control criteria used for single-cell data analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "20ca6385-0b14-4a7d-b57f-485022b7c576",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Two motor neuron differentiation protocols are compared: a standard protocol (SP) that mimics embryonic development using sequential growth factors, and a direct programming (DP) protocol that forces expression of terminal transcription factors (Ngn2+Isl1+Lhx3). Prior work established that DP does not induce key embryonic intermediate marker genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 accurately describe the two protocols and cite appropriate prior work (Wichterle et al., 2002; Wu et al., 2012; Mazzoni et al., 2013; Velasco et al., 2017; Li and Kirschner, 2014). The descriptions are consistent with established methodologies and the citations support the claims about DP bypassing embryonic intermediates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "a4cb1e43-fc83-4fa7-8128-0c7f10f150fc",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Single-cell RNA sequencing of 4590 cells reveals that DP and SP initially undergo similar early neural commitment, but DP then diverges into a novel transitional state with uncharacteristic gene expression rather than following embryonic spinal intermediates. The DP trajectory forms a loop in gene expression space that converges separately onto the same final motor neuron state as SP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C8 describe the core finding supported by single-cell RNA sequencing data (C4), visualization analyses (tSNE, SPRING), and differential gene expression. The data clearly show trajectory bifurcation (C22), distinct intermediate states (C6-C7), and convergence to similar final states (C8-C9). Multiple complementary analyses support these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "8fcff2e9-42c1-4ae0-ad59-0e1b1a610bc8",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The SP path consists of seven cell states (ESC\u2192NP\u2192PNP\u2192PVNP\u2192MNP\u2192EMN\u2192LMN) that parallel embryonic development, while the DP path is condensed to four states (ESC\u2192NP\u2192EMN\u2192LMN). Critically, DP completely lacks expression of Olig2, a gene necessary for embryonic motor neuron development that is expressed 5.4-fold higher than Gapdh in SP. qPCR confirms Olig2 expression is >10^6-fold lower in DP than Gapdh, with any hypothetical Olig2+ transitional state lasting <1 second.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C21 are strongly supported by single-cell RNA sequencing data showing distinct cell states with appropriate marker genes, and by rigorous qPCR validation. The quantitative analysis of Olig2 absence is particularly thorough, using both population-level measurements and calculations to rule out even transient Olig2+ states. The citation of Takebayashi et al. (2002) appropriately establishes Olig2's necessity in embryonic development.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "848f996e-339c-4764-bdbf-ccdc34195f9c",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The DP and SP trajectories overlap during early neural commitment, then bifurcate and take distinct paths that converge independently to the same motor neuron state. Quantitative analyses show high similarity in early states (ESC and NP; cosine similarity >0.69) and late states (LMN; cosine similarity = 0.47), but not intermediate states. Maximum likelihood assignment confirms it is virtually impossible to find DP cells resembling SP intermediate progenitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 are supported by multiple complementary computational analyses: SPRING visualization (C22), pairwise cosine similarity of cell state centroids (C23), and maximum likelihood cell assignment (C24). The convergence of multiple independent analytical approaches strengthens the conclusion. The quantitative similarity metrics provide objective support for the trajectory topology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "a2642c5c-4560-464f-845a-d4906a3e0bff",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The DP intermediate state has a distinct gene expression signature characterized by enrichment of seven forebrain transcription factors (Otx2, Otx1, Crx, Six1, Dmrta2, Zic1, Zic3) rather than the nine posterior/spinal factors enriched in SP (Olig2, Nkx6-1, Lhx3, Hox genes). This abnormal forebrain expression is transient: it is upregulated as cells exit the NP state, accompanied by downregulation of proliferation genes, and is then corrected as cells mature into LMNs by replacing forebrain genes with spinal Hox expression. Validation by microarray and prospective culture of isolated Mnx1+ intermediates confirms these cells generate motor neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C33 are well-supported by differential gene expression analysis from single-cell data (C25-C28), gene expression dynamics along trajectories (C29-C31), independent microarray validation (C32), and functional validation showing Mnx1+ intermediates generate motor neurons (C33). The transient nature of the abnormal expression and its correction during maturation is clearly demonstrated. The one discrepancy noted (Zic1) between single-cell and microarray data is appropriately acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "0b9a72ae-ba2a-449d-869d-3b5f679b29d9",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Both DP and SP motor neurons are transcriptionally similar to primary motor neurons isolated from E13.5 embryos. DP LMNs show higher similarity to primary motor neurons (cosine similarity = 0.60) than SP LMNs (0.47), with 64% of DP LMNs having at least one primary motor neuron nearest neighbor compared to 6% for SP. Both show limited gene expression differences (11 differentially expressed transcription factors each), with half being positional Hox genes indicating more anterior identity of in vitro-derived motor neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C40 are supported by single-cell RNA sequencing of 874 FACS-purified Mnx1+ cells from embryos (C34-C35), multiple similarity analyses including centroid comparison (C36-C37), nearest neighbor analysis (C38), and systematic differential expression (C39-C40). The finding that DP motor neurons are more similar to primary motor neurons than SP motor neurons is particularly notable and well-supported by multiple metrics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "bce136aa-bbfd-48b7-84d7-acbd87b9e3d0",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "DP motor neurons are structurally and functionally authentic: they express motor neuron proteins (Tubb3, Map2, VACht, Isl1, Hb9) with correct subcellular localization, fire action potentials, show appropriate sodium and potassium channel currents that are TTX-sensitive, respond to motor neuron neurotransmitters (AMPA, kainate, GABA, glycine), induce acetylcholine receptor clustering on muscle myotubes, and trigger muscle contractions that are blocked by the acetylcholine antagonist curare.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C48 are supported by comprehensive functional validation including immunostaining (C41), electrophysiology showing action potentials and ion channel currents (C42-C44), neurotransmitter responses (C45), and neuromuscular junction formation with functional muscle contraction (C46-C48). The pharmacological controls (TTX for sodium channels, curare for acetylcholine receptors) strengthen the conclusions. These experiments demonstrate that despite the abnormal developmental trajectory, DP produces functionally authentic motor neurons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "5006013c-0202-4fc0-9070-99ad263db937",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "DP has significantly higher motor neuron production efficiency than SP (66% vs. 9% at late timepoints). In SP, off-target populations (oligodendrocytes, astrocytes, muscle, stroma) increase to 55.3% by day 12, overshadowing motor neuron products. A replicate experiment shows SP efficiency peaks at day 10 (34.4% EMN, 14.9% LMN) before declining, possibly due to proliferation of off-target cell types diluting post-mitotic motor neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 are supported by quantification of cell states from single-cell data across timepoints. The efficiency measurements are clearly stated and the temporal dynamics are tracked. However, C52 is speculative about the mechanism (proliferation of off-target cells), though this is appropriately qualified as 'possibly reflects.' The replicate experiment (C51) strengthens the conclusion about SP dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "af06f2be-17a4-45f3-9773-87aa2a08fe5a",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Differentiation can proceed by multiple routes and converge onto similar transcriptional states, demonstrating that convergence into a motor neuron does not depend rigidly on the precise history of intermediate states. This 'history independence' is consistent with cell states behaving as 'attractor basins' in gene regulatory networks, and shows it is not necessary to recreate precise embryonic sequences to generate motor neurons with highest similarity to primary cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 are well-supported by the comprehensive comparison of DP and SP trajectories showing convergence despite different paths. However, C55 is interpretive/speculative about attractor basins, though appropriately qualified as 'consistent with.' C56 is a practical conclusion supported by the data showing DP motor neurons have higher similarity to primary cells than SP motor neurons, addressing prior concerns (Cohen and Melton, 2011).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "d6df250a-8116-4a86-9709-5917468935a3",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The motor neuron state is stabilized by a self-reinforcing transcription factor network. Recent studies show Ebf and Onecut are activated by Ngn2 and direct Isl1/Lhx3 binding to motor neuron genes during DP. Motor neurons are not generated if DP factors are induced in pluripotency media, indicating signaling requirements. Conversely, mES cells in minimal media without DP factors acquire forebrain neural progenitor identity by default.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 appropriately cite established knowledge (Jessell, 2000) and recent mechanistic studies (Velasco et al., 2017; Rhee et al., 2016). C59 reports an unpublished observation that is appropriately qualified as 'not shown.' C60 cites prior work (Pankratz et al., 2007; Smukler et al., 2006; Okada et al., 2004) about default neural differentiation. These claims provide mechanistic context for understanding DP, though C59 lacks full documentation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "c3db36fc-2764-4e71-9136-f0fcd187aff9",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The high efficiency of DP likely derives from more uniform experimental conditions (2D culture, forced transcription factor expression, defined media without growth factors) and a more direct differentiation path. Long sequences of intermediate transitions offer sequential opportunities for off-target fate choices that multiplicatively reduce efficiency. Targeting terminal attractor basins through shortest possible paths may be a generally effective strategy for generating desired cell states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61-C66 are largely speculative interpretations about mechanisms underlying DP efficiency, appropriately qualified with terms like 'most likely,' 'may,' and 'possibly.' While C62-C64 accurately describe experimental design features, the causal connections to efficiency (C61, C65) and the general principle (C66) are not directly tested. These are reasonable hypotheses based on the data but lack experimental validation of the proposed mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "f3dcb0fd-4537-4569-9dd4-73349d1fd6bc",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study used appropriate methods including a doxycycline-inducible Ngn2+Isl1+Lhx3 cell line with Hb9::GFP reporter, standard differentiation protocols, FACS purification of primary motor neurons with IACUC approval, and rigorous single-cell data quality control (minimum 1000 UMIs, total count normalization, stressed cell removal).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C74 describe methodological details that are standard and appropriate. The cell line source is acknowledged (C67), experimental protocols are clearly described (C68-C70), ethical approval is documented (C71), and data quality control steps are rigorous and well-justified (C72-C74). These methodological claims support the validity of the experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    },
+    {
+      "id": "4f5eb2c7-2823-43f0-a91e-4bef56ed6148",
+      "content_id": "71bd556d-12f1-4374-94a1-9ea15ad26854",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior work has established that most mature cell states are not produced by multiple differentiation paths in embryos, but direct programming methods can bypass normal intermediates. Examples include motor neuron generation without Sox1/Olig2 expression, muscle differentiation without Pax7/Myf5, and fibroblast-to-neuron conversion without complete dedifferentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 accurately summarize prior knowledge and cite appropriate references. C10 correctly states the general principle about embryonic development with noted exceptions. C11-C13 cite relevant prior work (Mazzoni et al., 2013; Velasco et al., 2017; Li and Kirschner, 2014; Vierbuchen et al., 2010; Treutlein et al., 2016; Son et al., 2011) establishing the phenomenon of direct programming. These claims provide appropriate context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:29:42.823734Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "462888fc-4a17-44bf-8de5-71dbbe076c5c",
+      "result_id": "20ca6385-0b14-4a7d-b57f-485022b7c576"
+    },
+    {
+      "claim_id": "a6721bac-8c50-4d92-9e7d-076ed59a991d",
+      "result_id": "20ca6385-0b14-4a7d-b57f-485022b7c576"
+    },
+    {
+      "claim_id": "52adbcc8-2460-4fb3-9ae8-1907dcb84ac0",
+      "result_id": "20ca6385-0b14-4a7d-b57f-485022b7c576"
+    },
+    {
+      "claim_id": "63a2233a-bcbd-4f65-800b-47440400fe52",
+      "result_id": "a4cb1e43-fc83-4fa7-8128-0c7f10f150fc"
+    },
+    {
+      "claim_id": "520d94ac-d4fe-4bb4-9c89-e52c0828cfe7",
+      "result_id": "a4cb1e43-fc83-4fa7-8128-0c7f10f150fc"
+    },
+    {
+      "claim_id": "74d1a0c9-63e2-45a1-a462-56fbb39a3962",
+      "result_id": "a4cb1e43-fc83-4fa7-8128-0c7f10f150fc"
+    },
+    {
+      "claim_id": "8422fa23-81ce-475b-b0f3-4e68d38d610a",
+      "result_id": "a4cb1e43-fc83-4fa7-8128-0c7f10f150fc"
+    },
+    {
+      "claim_id": "d0364c88-16eb-4fbb-bcf6-e2a1cb63e3ba",
+      "result_id": "a4cb1e43-fc83-4fa7-8128-0c7f10f150fc"
+    },
+    {
+      "claim_id": "ed65ce97-e6e0-49d1-908a-8ca2a8346454",
+      "result_id": "8fcff2e9-42c1-4ae0-ad59-0e1b1a610bc8"
+    },
+    {
+      "claim_id": "9ac65339-3aad-4068-b295-fee5bb153be3",
+      "result_id": "8fcff2e9-42c1-4ae0-ad59-0e1b1a610bc8"
+    },
+    {
+      "claim_id": "14d7acc5-2cb0-4678-9323-afd1c1f915a6",
+      "result_id": "8fcff2e9-42c1-4ae0-ad59-0e1b1a610bc8"
+    },
+    {
+      "claim_id": "e79df8f1-f54c-46d5-aee3-abf141116280",
+      "result_id": "8fcff2e9-42c1-4ae0-ad59-0e1b1a610bc8"
+    },
+    {
+      "claim_id": "55b48bfb-745f-45be-ac89-28a40b7aeb2e",
+      "result_id": "8fcff2e9-42c1-4ae0-ad59-0e1b1a610bc8"
+    },
+    {
+      "claim_id": "b44c4783-ae85-4348-bac5-c9250c27a935",
+      "result_id": "8fcff2e9-42c1-4ae0-ad59-0e1b1a610bc8"
+    },
+    {
+      "claim_id": "cd46b743-c989-4617-8dc7-d564fd148458",
+      "result_id": "8fcff2e9-42c1-4ae0-ad59-0e1b1a610bc8"
+    },
+    {
+      "claim_id": "e37cb38e-c981-443b-9dba-d94b3a9a42f9",
+      "result_id": "8fcff2e9-42c1-4ae0-ad59-0e1b1a610bc8"
+    },
+    {
+      "claim_id": "33a27d84-f47d-4dfd-99c2-6600bd1fd36e",
+      "result_id": "848f996e-339c-4764-bdbf-ccdc34195f9c"
+    },
+    {
+      "claim_id": "01ee6b27-fcc6-41cd-b073-8235db05d0c5",
+      "result_id": "848f996e-339c-4764-bdbf-ccdc34195f9c"
+    },
+    {
+      "claim_id": "e9467b28-35ed-4d87-be28-f132cdbd4431",
+      "result_id": "848f996e-339c-4764-bdbf-ccdc34195f9c"
+    },
+    {
+      "claim_id": "3e440dc8-154c-4e6e-a381-e046d780bec9",
+      "result_id": "a2642c5c-4560-464f-845a-d4906a3e0bff"
+    },
+    {
+      "claim_id": "9d06a2fc-d246-400d-ac5a-e457bf2684f1",
+      "result_id": "a2642c5c-4560-464f-845a-d4906a3e0bff"
+    },
+    {
+      "claim_id": "93b57521-e37d-4b88-8fe2-aa16eeba7f77",
+      "result_id": "a2642c5c-4560-464f-845a-d4906a3e0bff"
+    },
+    {
+      "claim_id": "08554fa0-caef-4eef-b38b-325e57fe4d65",
+      "result_id": "a2642c5c-4560-464f-845a-d4906a3e0bff"
+    },
+    {
+      "claim_id": "e52e458c-587e-4df0-b5b6-e05ff128e56d",
+      "result_id": "a2642c5c-4560-464f-845a-d4906a3e0bff"
+    },
+    {
+      "claim_id": "23bcfa2f-64f6-4398-b47a-9dac700f92ae",
+      "result_id": "a2642c5c-4560-464f-845a-d4906a3e0bff"
+    },
+    {
+      "claim_id": "60bebb2d-d000-48e3-8fa8-2cd12cced727",
+      "result_id": "a2642c5c-4560-464f-845a-d4906a3e0bff"
+    },
+    {
+      "claim_id": "7d181c2b-9445-4640-9490-e88507e53547",
+      "result_id": "a2642c5c-4560-464f-845a-d4906a3e0bff"
+    },
+    {
+      "claim_id": "103700aa-a4f1-4a1c-9334-5ff9c1b44c72",
+      "result_id": "a2642c5c-4560-464f-845a-d4906a3e0bff"
+    },
+    {
+      "claim_id": "5b70a59a-c22f-4c13-a0c0-9813ae6a3add",
+      "result_id": "0b9a72ae-ba2a-449d-869d-3b5f679b29d9"
+    },
+    {
+      "claim_id": "38d87dbe-f66d-44f6-88f8-429ed013bac4",
+      "result_id": "0b9a72ae-ba2a-449d-869d-3b5f679b29d9"
+    },
+    {
+      "claim_id": "a8608bc4-d9ea-41e3-80d9-8eec6abfa19e",
+      "result_id": "0b9a72ae-ba2a-449d-869d-3b5f679b29d9"
+    },
+    {
+      "claim_id": "f7512477-88b3-42ec-a3e0-10cb808ac654",
+      "result_id": "0b9a72ae-ba2a-449d-869d-3b5f679b29d9"
+    },
+    {
+      "claim_id": "60bfe3ef-75a2-4900-a237-08d717ff185d",
+      "result_id": "0b9a72ae-ba2a-449d-869d-3b5f679b29d9"
+    },
+    {
+      "claim_id": "b2998340-162a-4735-bd1d-02e6c4beb494",
+      "result_id": "0b9a72ae-ba2a-449d-869d-3b5f679b29d9"
+    },
+    {
+      "claim_id": "9087d273-7ae4-43bf-b448-be2bec13ae50",
+      "result_id": "0b9a72ae-ba2a-449d-869d-3b5f679b29d9"
+    },
+    {
+      "claim_id": "c732c613-220c-4b23-8b15-aefa6159cef3",
+      "result_id": "bce136aa-bbfd-48b7-84d7-acbd87b9e3d0"
+    },
+    {
+      "claim_id": "49341e32-0f5d-4174-82e7-616416faf089",
+      "result_id": "bce136aa-bbfd-48b7-84d7-acbd87b9e3d0"
+    },
+    {
+      "claim_id": "9df60651-8754-44b2-a735-eed503728887",
+      "result_id": "bce136aa-bbfd-48b7-84d7-acbd87b9e3d0"
+    },
+    {
+      "claim_id": "928651c4-7a8b-4f44-8012-b2a4da460a3e",
+      "result_id": "bce136aa-bbfd-48b7-84d7-acbd87b9e3d0"
+    },
+    {
+      "claim_id": "ec74acbe-c624-40c5-ab94-dc81a1537821",
+      "result_id": "bce136aa-bbfd-48b7-84d7-acbd87b9e3d0"
+    },
+    {
+      "claim_id": "4d8b8d33-be06-486a-8650-a57fe4b79505",
+      "result_id": "bce136aa-bbfd-48b7-84d7-acbd87b9e3d0"
+    },
+    {
+      "claim_id": "c795d1de-1697-4b17-8dce-9d0c25ab48e5",
+      "result_id": "bce136aa-bbfd-48b7-84d7-acbd87b9e3d0"
+    },
+    {
+      "claim_id": "80da3131-533c-4549-ba6a-aa7e1adf2dce",
+      "result_id": "bce136aa-bbfd-48b7-84d7-acbd87b9e3d0"
+    },
+    {
+      "claim_id": "8cef496f-f255-48f1-8a3c-7cab60e3c587",
+      "result_id": "5006013c-0202-4fc0-9070-99ad263db937"
+    },
+    {
+      "claim_id": "74079f04-e94e-437d-a3e9-0b5fc849f763",
+      "result_id": "5006013c-0202-4fc0-9070-99ad263db937"
+    },
+    {
+      "claim_id": "3a611086-aee4-49d5-a42b-7ac5efedb976",
+      "result_id": "5006013c-0202-4fc0-9070-99ad263db937"
+    },
+    {
+      "claim_id": "1202d269-dda2-4558-8232-d93f961175af",
+      "result_id": "5006013c-0202-4fc0-9070-99ad263db937"
+    },
+    {
+      "claim_id": "47b2d9bd-5a8c-47cb-b2d5-07983f4f4286",
+      "result_id": "af06f2be-17a4-45f3-9773-87aa2a08fe5a"
+    },
+    {
+      "claim_id": "e7f9f157-0efd-43fa-92cb-72bc8d863b4b",
+      "result_id": "af06f2be-17a4-45f3-9773-87aa2a08fe5a"
+    },
+    {
+      "claim_id": "7ce7522f-6d1f-4961-8e22-d62c01f4a619",
+      "result_id": "af06f2be-17a4-45f3-9773-87aa2a08fe5a"
+    },
+    {
+      "claim_id": "c2d8793d-cb11-4faf-9ded-0e78b07ca0da",
+      "result_id": "af06f2be-17a4-45f3-9773-87aa2a08fe5a"
+    },
+    {
+      "claim_id": "92f02109-dd72-475e-bbaa-bcead3deddde",
+      "result_id": "d6df250a-8116-4a86-9709-5917468935a3"
+    },
+    {
+      "claim_id": "8c55870a-71aa-4437-a590-145a0d00ca63",
+      "result_id": "d6df250a-8116-4a86-9709-5917468935a3"
+    },
+    {
+      "claim_id": "a19fc417-7c45-436f-80f4-e9aab72341f4",
+      "result_id": "d6df250a-8116-4a86-9709-5917468935a3"
+    },
+    {
+      "claim_id": "7cc64fb0-380a-4b2b-a106-6087d8dc942a",
+      "result_id": "d6df250a-8116-4a86-9709-5917468935a3"
+    },
+    {
+      "claim_id": "7b4bede8-dcbf-4fe2-aff0-9033f6c52222",
+      "result_id": "c3db36fc-2764-4e71-9136-f0fcd187aff9"
+    },
+    {
+      "claim_id": "5d8936ed-44e0-421a-80b4-9d6037914fa9",
+      "result_id": "c3db36fc-2764-4e71-9136-f0fcd187aff9"
+    },
+    {
+      "claim_id": "d5ace9c2-cb79-4c60-96d6-f870d06b8c44",
+      "result_id": "c3db36fc-2764-4e71-9136-f0fcd187aff9"
+    },
+    {
+      "claim_id": "aa2a5ea4-56b2-431c-8eda-e02ff452cb79",
+      "result_id": "c3db36fc-2764-4e71-9136-f0fcd187aff9"
+    },
+    {
+      "claim_id": "a9449238-2343-4206-89a5-7b5996f481dc",
+      "result_id": "c3db36fc-2764-4e71-9136-f0fcd187aff9"
+    },
+    {
+      "claim_id": "c694d5e7-f4b5-4655-bab4-2037bbdeece7",
+      "result_id": "c3db36fc-2764-4e71-9136-f0fcd187aff9"
+    },
+    {
+      "claim_id": "65d86dc7-619c-41f3-bc92-12339e37b8c9",
+      "result_id": "f3dcb0fd-4537-4569-9dd4-73349d1fd6bc"
+    },
+    {
+      "claim_id": "d3029dbc-1fcb-479c-9334-db591be29d70",
+      "result_id": "f3dcb0fd-4537-4569-9dd4-73349d1fd6bc"
+    },
+    {
+      "claim_id": "cf0c5534-33df-4ee8-80b5-25f600172ed8",
+      "result_id": "f3dcb0fd-4537-4569-9dd4-73349d1fd6bc"
+    },
+    {
+      "claim_id": "6adb308d-39e4-4b99-84dc-d50ff7fe2c0c",
+      "result_id": "f3dcb0fd-4537-4569-9dd4-73349d1fd6bc"
+    },
+    {
+      "claim_id": "0dc65c13-d674-43e5-a02b-3ad7d434c8c1",
+      "result_id": "f3dcb0fd-4537-4569-9dd4-73349d1fd6bc"
+    },
+    {
+      "claim_id": "733122e2-aefd-4155-b304-c4131a58ff6c",
+      "result_id": "f3dcb0fd-4537-4569-9dd4-73349d1fd6bc"
+    },
+    {
+      "claim_id": "c6173520-076d-4771-867e-8887b57f02ce",
+      "result_id": "f3dcb0fd-4537-4569-9dd4-73349d1fd6bc"
+    },
+    {
+      "claim_id": "4984628a-25d3-424d-9168-6d2dfbde2655",
+      "result_id": "f3dcb0fd-4537-4569-9dd4-73349d1fd6bc"
+    },
+    {
+      "claim_id": "53732b94-0b9b-4b10-ab15-51936069c220",
+      "result_id": "4f5eb2c7-2823-43f0-a91e-4bef56ed6148"
+    },
+    {
+      "claim_id": "b939962d-c1e4-45f9-803f-da7bc78ae814",
+      "result_id": "4f5eb2c7-2823-43f0-a91e-4bef56ed6148"
+    },
+    {
+      "claim_id": "45d70701-a848-4c33-8f2f-e157b049aecc",
+      "result_id": "4f5eb2c7-2823-43f0-a91e-4bef56ed6148"
+    },
+    {
+      "claim_id": "49c51cd1-8b12-43aa-b99b-cb895dee2264",
+      "result_id": "4f5eb2c7-2823-43f0-a91e-4bef56ed6148"
+    }
+  ],
+  "comparisons": []
+}

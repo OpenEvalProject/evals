@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Both PV and SST interneurons preferentially fire during up states, but a small but significant fraction of spikes occurs during down states. The percentage of active up states and the number of spikes per active up state are higher than for down states in both interneuron types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are supported by juxtasomal recordings with statistical tests (p<1E-2 for PV, p<4E-2 for SST down state firing) and data shown in Figure 1c,h. The methodology includes appropriate controls (LFP-based state detection validated against ground truth membrane potential recordings) and sufficient sample sizes (N=16 PV cells from 5 animals, N=19 SST cells from 7 animals).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "PV cells exhibit significantly higher firing rates, percentages of active up and down states, and numbers of spikes per active state compared to SST interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 are supported by appropriate statistical comparisons (unpaired Student's t-test or Mann-Whitney test) with highly significant p-values (p=4E-8 for active up states, p=2E-4 for active down states, p=3E-6 for spikes per active up state, p=1E-3 for spikes per active down state). Sample sizes are adequate (N=16 PV, N=19 SST).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Both PV and SST interneurons show significant phase locking to slow wave oscillations, with preferred firing phases during the first half of the up state (167\u00b15 degrees for PV, 170\u00b15 degrees for SST).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 are supported by Rayleigh tests showing highly significant phase locking (p<2E-30 for PV, p<7E-7 for SST) in all recorded cells (16/16 PV, 15/15 SST). The phase of firing distributions are shown in Figure 2c,i with appropriate statistical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Time-shifted phase locking analysis reveals that interneuron firing causally influences LFP phase dynamics rather than being enslaved by it. Maximal locking occurs at negative time shifts (\u03c4max: -93\u00b119 ms for PV, -81\u00b113 ms for SST), with temporal extent of causation (\u03c4end) of -221\u00b141 ms for PV and -189\u00b130 ms for SST.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 are supported by systematic time-shifted phase locking analysis showing maximal locking at negative time shifts in 15/16 PV and 13/15 SST neurons. Statistical tests confirm \u03c4max values are significantly less than zero (p=1E-4 for PV, p=1E-5 for SST). The methodology follows established approaches (Siapas et al., 2005; Eschenko et al., 2012) and includes appropriate controls for LFP asymmetries.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Phase speed analysis shows that PV and SST spikes near the end of up states significantly increase phase speed, while PV spikes near the end of down states significantly decrease phase speed. No significant effect is observed for SST neurons during down states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are supported by spike-triggered phase speed analysis (Figure 2f,l) with appropriate statistical tests and controls. The analysis includes control stretches to rule out stereotyped LFP asymmetries (control p-values not significant: p=8E-1 for PV up, p=9E-1 for SST up, p=1E-1 for PV down, p=2E-1 for SST down). The lack of effect for SST in down states is appropriately attributed to paucity of spikes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "The authors hypothesize that firing of both PV and SST interneurons during up states causally contributes to their ending, while firing during down states (at least for PV cells) may delay the transition to up states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 represent hypotheses based on the phase locking and phase speed analyses (C19-C29). While labeled as hypotheses/speculation, they are well-supported by the preceding correlational data. However, these claims require direct causal testing through optogenetic manipulation, which is provided in subsequent experiments (C32-C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Brief optogenetic activation of PV or SST interneurons during up states triggers pronounced hyperpolarization and down state transitions in both anesthetized and awake mice, with effects observed in both intracellular recordings and network activity (LFP/MUA). Stimulation during down states produces no significant effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C43 are supported by patch-clamp recordings (Figure 3a-j) and extracellular recordings (Figure 3\u2014figure supplements 4-5) with appropriate statistical tests. The experiments include proper controls (anesthetized vs. awake conditions) and demonstrate reproducibility across conditions. Sample sizes are adequate (N=12 PV cells from 7 animals anesthetized, N=6 from 3 animals awake; N=9 SST cells from 6 animals anesthetized, N=6 from 3 animals awake). The lack of effect during down states is appropriately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Optogenetic inhibition of PV or SST interneurons during up states prolongs the up state for the duration of light stimulation, increases gamma power and MUA, and triggers down state transitions after stimulus offset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 are supported by patch-clamp recordings (Figure 4a-c, f-h) and extracellular recordings (Figure 4\u2014figure supplements 3-4) showing membrane depolarization, increased gamma power, and increased MUA during light stimulation. Statistical tests are appropriate (one-way ANOVA with significant p-values). The post-stimulus hyperpolarization is documented in Figure 4c,h. Sample sizes are adequate (N=11 PV cells from 4 animals, N=9 SST cells from 5 animals).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Optogenetic inhibition of PV or SST interneurons during down states triggers reliable transitions to up-like states in both anesthetized and awake mice, as evidenced by membrane depolarization in patch-clamp recordings and increased high-frequency power and MUA in network recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 are supported by patch-clamp recordings (Figure 4d-e, i-j) and extracellular recordings (Figure 4\u2014figure supplements 3-4) with appropriate statistical tests. The experiments demonstrate that inhibiting interneurons during down states reliably triggers up state transitions in both individual cells and network activity. Sample sizes are adequate and experiments are replicated in both anesthetized and awake conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Inhibitory control of state transitions is interneuron-subtype specific. PV inhibition, but not SST inhibition, significantly enhances pyramidal cell spiking. PV inhibition triggers down-to-up transitions with shorter latency (69\u00b14 ms vs 181\u00b115 ms in anesthetized; 30\u00b15 ms vs 67\u00b111 ms in awake) and less jitter compared to SST inhibition. PV inhibition produces transitions with larger slopes than spontaneous, while SST inhibition produces transitions indistinguishable from spontaneous.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65 are supported by direct comparisons between PV and SST manipulations with appropriate statistical tests (unpaired Student's t-test, p=6E-5 for latency in anesthetized, p=9E-3 in awake; p=6E-4 for jitter in anesthetized, p=3E-2 in awake). The data are shown in Figure 5 and Figure 5\u2014figure supplement 1. Sample sizes are adequate (N=11 PV cells from 4 animals, N=9 SST cells from 5 animals in anesthetized; N=8 cells from 5 animals for both in awake).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Local optogenetic manipulation of PV or SST interneurons in one cortical region induces state transitions that occur near-synchronously in cortical areas located ~2 mm apart. Activation during up states triggers down state transitions with short latencies (~3 ms), while inhibition during down states triggers up state transitions in both regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are supported by simultaneous dual recordings (patch-clamp and extracellular) from regions 2 mm apart (Figure 6 and Figure 6\u2014figure supplements 1-5). The experiments demonstrate mesoscale effects of local interneuron manipulation with appropriate controls (fiber optic vs. DMD patterned illumination to rule out direct illumination artifacts, Figure 6\u2014figure supplement 2). Response delays are quantified (Figure 6\u2014figure supplement 3). Sample sizes are adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "The authors propose that weak firing activity of interneurons during down states is fundamental to maintain the cortical circuitry in the silent state, preventing escape into up states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is a proposal/interpretation based on the optogenetic inhibition experiments (C51-C58) showing that inhibiting interneurons during down states triggers up state transitions. This interpretation is well-supported by the experimental data, though it represents an inference rather than direct demonstration. The claim is appropriately framed as a proposal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Quantitative estimates indicate that approximately 100 PV cells and 650 SST neurons were efficiently modulated during optogenetic manipulations, interfering with approximately 40 APs in PV cells and 20 APs in SST interneurons during down states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by calculations based on illuminated volume, cell density measurements (Figure 6\u2014figure supplement 6d-m), and spike activity data (Figure 1). The methodology for estimating illuminated volume is described in Materials and Methods, including light transmission measurements through tissue. While these are estimates with inherent uncertainties, the approach is reasonable and transparently described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Background claims establishing that during quiet wakefulness or NREM sleep, the cortex displays slow oscillations (<1 Hz) characterized by recurring transitions between active (up) and silent (down) states, which play fundamental roles in sensory processing, memory consolidation, task performance, and synaptic plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C84 are background/context claims supported by extensive citations to previous literature. These are well-established facts in the field and are appropriately cited. They provide necessary context for the current study but do not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Background claims summarizing previous work on the role of inhibition in up/down states, including that inhibitory cells are active during up states with tight excitatory-inhibitory balance, but without gradual buildup of inhibition at up state termination. Previous pharmacological and modeling studies have shown mixed results regarding inhibition's role in state transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C92 are background claims supported by appropriate citations to previous literature. They accurately summarize the state of the field and the controversy regarding inhibition's role in state transitions, providing motivation for the current study. These are not novel findings but appropriate contextualization.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1477 @@
+{
+  "submission": {
+    "id": "855fa49a-d288-4d78-837d-16b2a6387b40",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:03:35.657124Z",
+    "updated_at": "2025-12-01T21:03:35.657124Z"
+  },
+  "content": [
+    {
+      "id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "submission_id": "855fa49a-d288-4d78-837d-16b2a6387b40",
+      "content_type": "manuscript",
+      "content_text": "# Work minimization accounts for footfall phasing in slow quadrupedal gaits\n\n## Authors\n\n- James R Usherwood<sup>1</sup> ([ORCID: 0000-0001-8794-4677](https://orcid.org/0000-0001-8794-4677)) \u2020\n- Zoe T Self Davies<sup>1</sup> ([ORCID: 0000-0003-1419-8735](https://orcid.org/0000-0003-1419-8735))\n\n### Affiliations\n\n1. Structure and Motion Lab The Royal Veterinary College Hatfield United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nQuadrupeds, like most bipeds, tend to walk with an even left/right footfall timing. However, the phasing between hind and forelimbs shows considerable variation. Here, we account for this variation by modeling and explaining the influence of hind-fore limb phasing on mechanical work requirements. These mechanics account for the different strategies used by: (1) slow animals (a group including crocodile, tortoise, hippopotamus and some babies); (2) normal medium to large mammals; and (3) (with an appropriate minus sign) sloths undertaking suspended locomotion across a range of speeds. While the unusual hind-fore phasing of primates does not match global work minimizing predictions, it does approach an only slightly more costly local minimum. Phases predicted to be particularly costly have not been reported in nature.\n\n## Introduction\n\nAn understanding of the factors determining selection of gait parameters allows insight into what \u2018matters\u2019 to an animal as it locomotes. Many details of bipedal walking mechanics can be understood from the perspective of simple mechanical work minimization (Kuo, 2002; Srinivasan and Ruina, 2006; Srinivasan and Ruina, 2007); however, the situation for quadrupeds is less clear. While quadrupeds, like bipeds, tend to adopt \u2018symmetrical\u2019 walking gaits at low speeds, with left and right sides operating evenly in turn, a range of phases between hind and fore feet can be observed. The duration a foot spends in contact with the ground, expressed as a proportion of the stride cycle, is termed a \u2018duty factor\u2019 DF; walking gaits require a duty factor above 0.5, meaning that at least one foot of a pair is on the ground at all times. We follow Hildebrand\u2019s (Hildebrand, 1965) definitions for phasing of fore and hind limbs, defining phase as the \u2018proportion of stride interval [period] that footfall of forefoot follows hind on same side\u2019. Using this convention, a typical horse walking with a 25% phase would have an even timing between each foot contact: starting with the left hind, next would follow the left fore, then right hind then right fore. A \u2018trot\u2019 footfall pattern, with diagonal hind and fore feet striking the ground at the same time would have a 50% phase; a \u2018pace\u2019 pattern with simultaneous ipsilateral feet contact (i.e. both left then both right) could be expressed as a 0% or 100% phase.\n\nThe aim of this paper is to provide an account for the ranges of hind-fore limb phasing observed across walking quadrupeds.\n\nStability-based models usually assume that footfall patterns should be favoured that allow the centre of mass to be supported \u2013 or most nearly so \u2013 above feet forming a \u2018polygon of support\u2019 on the ground. The unsatisfactory or incomplete nature of accounts for phasing based in terms of only static stability has been widely identified (Gray, 1944; Jayes and Alexander, 1980; Vilensky and Larson, 1989; Cartmill et al., 2002). To highlight some of the issues of stability-based approaches, it should be noted that:\n\nSome or all of these issues have been acknowledged to a greater or lesser extent, at least since Gray (Gray, 1944); however, the view persists that \u2018other things being equal, it seems reasonable to expect that moving animals would deploy their limbs in such a way as to maximize their support polygons over the stride period\u2019 (Cartmill et al., 2002). Stability-based accounts continue to dominate the interpretation of functional significance of limb phasing in walking quadrupeds (Patrick et al., 2009). Here, we account for the limb phasing of walking quadrupeds by developing a general numerical model to determine the implications of phasing on mechanical work demands (i.e. showing why other things are not equal), and provide simple geometric explanations for the model results.\n\nTo summarize the phenomena we wish to account for, we plot (Figure 1) published trends for primates and sloth, and values for a diverse range of species (52 species from 120 observations) from freely available YouTube clips and video from the Structure and Motion lab from other projects (Table 1, Supplementary file 1). The relationships should be uncontroversial (see Supplementary file 1): many species have been studied previously, and we do not claim significant novelty in reporting duty factors and phases for walking. Hildebrand\u2019s pioneering and thorough work in this area should be emphasized; the new kinematic data in this paper are intended to be illustrative and not comprehensive. Formal statistical approaches incorporating phylogenetic comparative methods are beyond the scope of this study. Clip selection criteria were: a clear view of all feet during unconstrained, apparently \u2018natural\u2019 walking for a complete stride cycle over approximately flat, level ground. An observation of a mouse and a hamster walking on a treadmill (see [Spence et al., 2013] and acknowledgements) is also included. A summary of literature findings is included in Supplementary file 1, which broadly agree with the measurements reported here. We have no statistically based view as to whether our data should be viewed as continuous or clustered (though we do show a regression line, and cluster into Groups using\u00a0K-means assuming 2 groups); we proceed here by describing low and high duty factor species groupings as discrete for convenience only.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/29495/elife-29495-fig1-v1.jpg)\n\n**Figure 1.:** Sloth relationship from (Nyakatura et al., 2010); Primate from (Cartmill et al., 2002). Points show values for a diverse range of quadrupedal species (Table 1), tentatively classified into two groups using K-means: Group 1 \u2013 high duty factor, phase 40\u201350% including reptiles, amphibians, mouse and hippo (grey points); Group 2 \u2013 the \u2018normal mammalian\u2019 grouping, with lower duty factor and phase around or somewhat below 25% (black points). The regression line relating to the presented points is: phase (%)=130 DF \u2013 66. Phases greater than 80% are rarely if ever observed in steady, level gaits.\n\n**Table 1.**\n See Supplementary file 1 for further information.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Median duty factor</th>\n      <th>Median phase (%)</th>\n      <th>N</th>\n      <th>SD duty factor</th>\n      <th>SD phase (%)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Group 1</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Hamster* (Mesocricetus auratus)</td>\n      <td>0.70</td>\n      <td>45</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Giant Salamander (Andrias japonicus)</td>\n      <td>0.74</td>\n      <td>40</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Iguana (Iguana iguana)</td>\n      <td>0.75</td>\n      <td>44</td>\n      <td>2</td>\n      <td>0.126</td>\n      <td>6.6</td>\n    </tr>\n    <tr>\n      <td>Komodo Dragon (Varanus komodoensis)</td>\n      <td>0.77</td>\n      <td>45</td>\n      <td>3</td>\n      <td>0.031</td>\n      <td>1.7</td>\n    </tr>\n    <tr>\n      <td>Caiman (Caiman crocodilus)</td>\n      <td>0.78</td>\n      <td>43</td>\n      <td>2</td>\n      <td>0.049</td>\n      <td>0.7</td>\n    </tr>\n    <tr>\n      <td>Hippo (Hippopotamus amphibius)</td>\n      <td>0.76</td>\n      <td>45</td>\n      <td>4</td>\n      <td>0.082</td>\n      <td>2.1</td>\n    </tr>\n    <tr>\n      <td>Frog (Kassina maculata)</td>\n      <td>0.78</td>\n      <td>44</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bearded Dragon (Pogona vitticeps)</td>\n      <td>0.78</td>\n      <td>48</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Crocodile (Crocodylus palustris)</td>\n      <td>0.78</td>\n      <td>49</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Leopard Gecko (Eublepharis macularius)</td>\n      <td>0.79</td>\n      <td>43</td>\n      <td>2</td>\n      <td>0.034</td>\n      <td>3.5</td>\n    </tr>\n    <tr>\n      <td>Tiger Salamander (Ambystoma tigrinum)</td>\n      <td>0.80</td>\n      <td>40</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Monitor Lizard (Varanus salvator)</td>\n      <td>0.81</td>\n      <td>40</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Tortoise (Centrochelys sulcata)</td>\n      <td>0.82</td>\n      <td>42</td>\n      <td>2</td>\n      <td>0.003</td>\n      <td>2.5</td>\n    </tr>\n    <tr>\n      <td>Iguana (Conolophus pallidus)</td>\n      <td>0.84</td>\n      <td>47</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Marine Iguana (Amblyrhynchus cristatus)</td>\n      <td>0.85</td>\n      <td>41</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mouse* (Mus musculus)</td>\n      <td>0.86</td>\n      <td>40</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Alligator (Alligator mississippiensis)</td>\n      <td>0.87</td>\n      <td>42</td>\n      <td>3</td>\n      <td>0.046</td>\n      <td>2.7</td>\n    </tr>\n    <tr>\n      <td>Group 2</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mongoose (Mungos mungo)</td>\n      <td>0.60</td>\n      <td>16</td>\n      <td>2</td>\n      <td>0.046</td>\n      <td>2.8</td>\n    </tr>\n    <tr>\n      <td>Tapir (Tapirus indicus)</td>\n      <td>0.61</td>\n      <td>26</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Rat (Rattus norvegicus)</td>\n      <td>0.62</td>\n      <td>36</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Brown Bear (Ursus arctos)</td>\n      <td>0.65</td>\n      <td>17</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Hyena (Crocuta crocuta)</td>\n      <td>0.66</td>\n      <td>10</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cat (Felis catus)</td>\n      <td>0.66</td>\n      <td>21</td>\n      <td>2</td>\n      <td>0.060</td>\n      <td>3.7</td>\n    </tr>\n    <tr>\n      <td>Pig (Sus domesticus)</td>\n      <td>0.66</td>\n      <td>26</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Black Bear (Ursus americanus)</td>\n      <td>0.67</td>\n      <td>18</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Horse (Equus caballus)</td>\n      <td>0.67</td>\n      <td>24</td>\n      <td>2</td>\n      <td>0.015</td>\n      <td>1.1</td>\n    </tr>\n    <tr>\n      <td>Zebra (Equus quagga)</td>\n      <td>0.67</td>\n      <td>24</td>\n      <td>28**</td>\n      <td>0.025</td>\n      <td>2.4</td>\n    </tr>\n    <tr>\n      <td>Echidna (Tachyglossus aculeatus)</td>\n      <td>0.67</td>\n      <td>13</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Polar Bear (Ursus maritimus)</td>\n      <td>0.68</td>\n      <td>16</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Rhino (Ceratotherium simum)</td>\n      <td>0.68</td>\n      <td>21</td>\n      <td>2</td>\n      <td>0.079</td>\n      <td>1.7</td>\n    </tr>\n    <tr>\n      <td>Impala (Aepyceros melampus)</td>\n      <td>0.68</td>\n      <td>19</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Lion (Panthera leo)</td>\n      <td>0.68</td>\n      <td>15</td>\n      <td>3</td>\n      <td>0.017</td>\n      <td>1.5</td>\n    </tr>\n    <tr>\n      <td>Sheep (Ovis aries)</td>\n      <td>0.68</td>\n      <td>28</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Giraffe (Giraffa camelopardalis)</td>\n      <td>0.68</td>\n      <td>14</td>\n      <td>5</td>\n      <td>0.030</td>\n      <td>1.4</td>\n    </tr>\n    <tr>\n      <td>Cow (Bos taurus taurus)</td>\n      <td>0.69</td>\n      <td>29</td>\n      <td>5</td>\n      <td>0.035</td>\n      <td>3.4</td>\n    </tr>\n    <tr>\n      <td>Deer (Odocoileus virginianus)</td>\n      <td>0.69</td>\n      <td>31</td>\n      <td>2</td>\n      <td>0.049</td>\n      <td>9.1</td>\n    </tr>\n    <tr>\n      <td>Cheetah (Acinonyx jubatus)</td>\n      <td>0.70</td>\n      <td>18</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Giant Anteater (Myrmecophaga tridactyla)</td>\n      <td>0.70</td>\n      <td>27</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Tapir (Tapirus terrestris)</td>\n      <td>0.70</td>\n      <td>26</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>American Buffalo (Bison bison)</td>\n      <td>0.71</td>\n      <td>16</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bobcat (Lynx rufus)</td>\n      <td>0.71</td>\n      <td>17</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Barbary Sheep (Ammotragus lervia)</td>\n      <td>0.71</td>\n      <td>26</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Raccoon (Procyon lotor)</td>\n      <td>0.71</td>\n      <td>14</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Goat (Capra aegagrus hircus)</td>\n      <td>0.72</td>\n      <td>23</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Llama (Lama glama)</td>\n      <td>0.72</td>\n      <td>17</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Camel (Camelus bactrianus)</td>\n      <td>0.72</td>\n      <td>21</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Wildebeest (Connochaetes taurinus)</td>\n      <td>0.72</td>\n      <td>18</td>\n      <td>11**</td>\n      <td>0.017</td>\n      <td>1.6</td>\n    </tr>\n    <tr>\n      <td>Donkey (Equus africanus asinus)</td>\n      <td>0.73</td>\n      <td>25</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Elephant (Elephas maximus)</td>\n      <td>0.73</td>\n      <td>19</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Wombat (Lasiorhinus krefftii)</td>\n      <td>0.73</td>\n      <td>18</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Elephant (Loxodonta africana)</td>\n      <td>0.74</td>\n      <td>17</td>\n      <td>4</td>\n      <td>0.026</td>\n      <td>1.3</td>\n    </tr>\n    <tr>\n      <td>Porcupine (Erethizon dorsatum)</td>\n      <td>0.75</td>\n      <td>29</td>\n      <td>2</td>\n      <td>0.051</td>\n      <td>0</td>\n    </tr>\n  </tbody>\n</table>\n\n### Group 1: Duty factor near 0.8\n\nGroup 1 animals (Figure 1, Table 1) walk with a duty factor around 0.8 and phase between 40% and 50%. This group consists of 11 species of reptile, 3 amphibians and 3 mammals. Members of this group might be linked by being relatively slow (e.g. hippo), slow-muscled (\u2018cold-blooded\u2019 \u2013 consider tortoise muscle properties [Woledge, 1968]) or very small (mouse). If so, their high duty factors might be considered a strategy to limit the muscle activation cost due to instantaneous power demands (see [Usherwood, 2016]) (an argument related to, but distinct from, that proposed in (Jayes and Alexander, 1980) for tortoises). The issues of differential scaling between work and power has been covered elsewhere, and related to the scaling of: jumping performance (Bennet-Clark, 1977), gait selection and dynamic similarity (Alexander and Jayes, 1983), posture (Usherwood, 2013) and ontogeny of bipedal gaits (Hubel and Usherwood, 2015). It is sufficient here to note that it is not surprising that slow, slow-muscled and small walking quadrupeds operate with high duty factors; one aim of this paper is to account for why phases of 40\u201350% are adopted in this group.\n\n### Group 2: Duty factors around 0.6 to 0.75\n\nGroup 2 covers the majority of self-selected walking observed in upright, medium to large mammals: duty factors between around 0.6 and 0.75, and phases at or somewhat below 25%. A range of exceptions exists, notably some dogs [Hildebrand, 1968; Cartmill et al., 2002], which may adopt phases close to 0.5 (trotting) at higher speeds (lower duty factors). It appears likely that trotting mechanics can dominate at duty factors close to 0.5, equivalent to grounded running (Biknevicius and Reilly, 2006), and we do not attempt to include an account for this within the models of walking presented here.\n\n### Primates\n\nPrimates appear to adopt a discretely different limb phasing at the duty factors of Group 2, close to 75% ([Cartmill et al., 2002; Hildebrand, 1967] sometimes termed a \u2018diagonal sequence\u2019). Some other quadrupeds (opossum, [Schmitt and Lemelin, 2002]) occupy a similar region, potentially due to their grasping forelimbs and/or to cope with the hazards of walking along branches with a risk of failure (Cartmill et al., 2002).\n\n### Sloth\n\nData published for 2-toed sloths locomoting with a suspended, under-branch quadrupedal gait (Nyakatura et al., 2010) cover a large range of duty factors. The relationship between duty factor and phase appears to contrast with that found across non-primate quadrupeds (Group 1 vs. Group 2): sloths adopt phases close to 25% at high duty factors (low speed), and 50% at lower duty factors (higher speeds).\n\n### Phases above 0.8\n\nThere appears to be no record of a steady gait occurring at this phase in nature.\n\n## Theory methods\n\n### Model development\n\nA numerical model was developed to calculate the mechanical work requirements of all the limbs on the center of mass as a function of duty factor and phase for symmetrical quadrupedal gaits. Mass-normalized vertical, horizontal and lateral forces for each limb were modeled with sinusoidal waveforms (see Figure 2). Vertically, a half-sine force profile $F_{z,limb}$ was used through time t over the stance period Tstance:\n\n![Figure 2.](https://cdn.elifesciences.org/articles/29495/elife-29495-fig2-v1.jpg)\n\n**Figure 2.:** Overlying data (A, C, D) from a diverse range of quadrupedal species (see Figure 1), or only 2-toed sloth (B, [Nyakatura et al., 2010]). Overlying grey oval (A,C,D) denotes the region identified for primates by (Cartmill et al., 2002). Model C shifts the cost surface towards lower phases (arrow); Model D tips the surface, making higher phases more costly (denoted by +/\u2212), and consequently the lower phase trough becomes the global minimum for each duty factor (dark blue line).\n\n$$\nF_{z,limb}=A_{z}sin(\\frac{t}{T_{stance}}),\n$$\n\nwhere amplitude Az is sufficient to oppose gravity g for a given duty factor DF ($DF=\\frac{T_{stance}}{T_{stride}}$, where Tstride is the period of a complete stride cycle):\n\n$$\nA_{z}=\\frac{g}{8DF}.\n$$\n\nFore-aft forces were modeled with a full sine wave with bias from a half sine-wave:\n\n$$\nF_{x,limb}=A_{x}sin(\\frac{2t}{T_{stance}})\\pmA_{x,bias}sin(\\frac{t}{T_{stance}}),\n$$\n\nwhere the amplitude $A_{x}$, as a proportion of the vertical amplitude, would relate closely to stance angle. The maximum leg angle from vertical\u00a0$\u03a6$\u00a0can be approximated by considering an instant a quarter of the way through stance, assuming the combination of $F_{z,limb}$ and $F_{x,limb}$ to result in pure compression forces along the leg, and assuming the leg to sweep over the foot at a constant angular rate:\n\n$$\n\u03a6\u22482tan^{\u22121}(\\frac{A_{z}\\sqrt{2}}{A_{x}})\n$$\n\n$\u03a6\u22482tan^{\u22121}(\\frac{A_{z}\\sqrt{2}}{A_{x}})$A single value of $A_{z}/A_{x}$ (so a single stance angle) is used; we take no account of any variation in stance angle or stance length with duty factor or speed.\n\nFore-aft force profiles were supplemented with a bias (shown in the $A_{x,bias}$ term of Equation 3) in which the hindlimbs provide a net forward impulse, counteracted by an equivalent backward impulse from the forelimbs. Finally, small medial forces $F_{y,limb}$ were introduced, applied equally and medially by each leg. Both of these latter additions follow the half-sine waveform of the vertical force, but with much lower amplitudes (10% and 5% of vertical respectively). At this stage, these values merely serve to demonstrate tendencies; while their influences can easily be modeled, we do not explore this aspect of the parameter space quantitatively here as we have limited data on how they might vary with size, species, speed, duty factor etc.\n\nFrom the limb force profiles and timings relating to limb phasing, fluctuations in center of mass velocity $V_{CoM}\u2192$ were derived by integrating the sum of (mass normalized) limb forces through time (and then mean subtracting to give fluctuations about zero). Assuming a zero mean velocity vertically and laterally, and a positive mean forward velocity over a stride cycle, center of mass velocities were calculated. Note that the value of mean velocity, as long as sufficient to keep instantaneous fore-aft velocities always forward, has no bearing on the model results. The power demanded from each limb is given by:\n\n$$\nP_{limb}=F_{limb}\u2192\u22c5V_{CoM}\u2192=F_{z,limb}V_{z,CoM}+F_{x,limb}V_{x,CoM}+F_{y,limb}V_{y,CoM}\n$$\n\nand the positive components of Plimb \u2013 for all legs \u2013 provide the mechanical work \u2018cost\u2019. Note that the instantaneous limb power is the sum of all the components of the right hand side: a positive power due to a vertical force and velocity at the same time as a negative power due to a horizontal force and velocity would cancel; a simple vaulting or pendulum action would be calculated as passive and demand no limb power.\n\nOur approach assumes that the impulses from each limb \u2013 and the timing of these forces \u2013 act independently from the limb phasing; and that center of mass motions are due to the action of these limb forces. We assume that \u2018limb work\u2019 is costly \u2013 that negative work being performed by one limb cannot power the positive work being performed by another limb at the same time (as would be the assumption if only center of mass or \u2018external\u2019 work was being considered). In other words, simultaneous positive and negative power of equal magnitudes from different limbs would not change the mechanical energy of the centre of mass (no \u2018external work\u2019 would be performed) but would require mechanical power from a limb, and so impose a cost according to the current model. Further, all positive work is considered costly, with no capacity for recovery of negative work through elasticity. While a variety of cost functions may be important (peak power, muscle force etc.) \u2013 as discussed in (Usherwood, 2016) \u2013 we assume here that it is the sum of mechanical limb work \u2013 or a direct correlate thereof (which may include peak instantaneous power) \u2013 that is relevant to the animal.\n\nWhile this method has much in common with the pioneering analytical work of Alexander from the 1980\u2019s (Jayes and Alexander, 1980; Alexander and Jayes, 1980; Alexander, 1989), advances in computer capability now allow additional parameter spaces \u2013 including mediolateral and fore-aft force fluctuations \u2013 to be explored numerically without demanding detailed mathematical derivations.\n\nOur approach to studying work-minimizing strategies does not directly address the motivations behind the selection of stance angles, duty factors, fore-aft or lateral impulses, or details of force profiles more subtle than the sine-wave approximations use here. Clearly, many of these aspects may be related to work minimization provided the constraints of animal form; however, details may also relate to other geometric constraints - such as maximum allowable pitch or roll deviations as proposed by Jayes and Alexander for tortoises (Jayes and Alexander, 1980). Further, it should be emphasized that the approach taken here does not include any interplay between limb phasing and impulses or timing of forces through the stance; it is therefore incapable of approaching some aspects of passive vaulting or falling mechanics generally considered important in walking at above moderate speeds. Our approach therefore has limitations: many aspects of both energetics and stability (if indeed these two aspects should be separated) remain to be explored (e.g. [Wilshin et al., 2017]).\n\n#### To summarize the key caveats\n\nthe model makes no attempt to account for the selection of duty factor \u2013 it merely calculates the implications of different phases for given duty factors and force profiles. It assumes limb forces through time are not influenced by phasing; while this appears broadly reasonable at moderate speeds, where fluctuations in horizontal velocity are small compared with mean velocity (and so the timecourse of changes in leg angle varies little), it certainly fails at exceedingly low speeds with near-stationary periods (as in grazing). The model is exceedingly simple: no account is taken of lateral bending, belly or tail ground contact, all of which may be relevant to some (but not all) amphibians and reptiles.\n\nThis paper may, though, provide a default starting point for considering the mechanical energetic implications of footfall timing in quadrupedal walking, especially at moderate speeds.\n\n### Geometrical accounting for model results\n\nAn ideal rolling wheel can support the weight of a vehicle moving over level ground without performing mechanical work because the forces opposing weight are orientated perpendicular to the velocity of the mass. The same is not true when driving up hill: some component of body weight is in the direction of velocity, and an engine is required to deliver power. The value of this principle, that the orientation between the force (or impulse) and velocity accounts for the demand for mechanical power (or work), can be couched in terms of collision mechanics. This reduction is becoming to be appreciated in the study of human and animal mechanics (e.g. Kuo, 2002; Ruina et al., 2005; Lee et al., 2011; see Bertram, 2016 for an overview). We use the principle here to provide tractable, intuitive accounts for the outputs of the numerical models described above. We link the outputs of the numerical, sine-based models to the principles of collision mechanics by highlighting the angles between center of mass velocities and limb forces at key instants, or the net effect of limb forces in the form of impulses. This approach to explaining the principles underlying differences in mechanical work demand supports the case that the mechanisms found are reasonably general and not merely a mathematical peculiarity of the specific sine-based assumptions of the model.\n\nWhen approaching work calculations from a collisional perspective, the angle between the limb force (or impulse) and center of mass velocity is critical. It should be highlighted that, with multiple limbs applying forces to the center of mass at the same time, the relationship between limb forces and changes in center of mass velocity is not constant, and may not be intuitive. The geometry provides equal insight in terms of both the mechanical work \u2018lost\u2019 or \u2018demanded\u2019 \u2013 all gaits considered here balance the negative and positive works over a cycle. In the discussion, we generally focus on the mechanisms influencing the loss of energy; however, the process of returning this energy presumably dominates the physiological cost.\n\n## Model results and discussion\n\n### Numerical model results and mechanistic accounts\n\nThe simplest form of the model (Figure 2A) has vertical limb forces of a half sine-wave of sufficient amplitude to support body weight (increasing with decreasing duty factor) and horizontal forces of a sine-wave of a suitable amplitude \u2013 we choose a value of \u22120.2 the vertical amplitude, approximately equivalent to a stance sweep-angle of 30 degrees. All results are broadly insensitive to this assumption; systematic changes in stance angle with speed or duty factor are not included, but in any case are negligible after the normalization at each duty factor. The implications of duty factor and phase can be calculated in terms of limb work, and presented as a cost surface, normalized for each duty factor (blue minimum, red maximum for each duty factor). The surface shows work minimization at phases of 50% and 0/100% at duty factors above 0.75, and 25%/75% at duty factors below 0.75. The DF\u00a0=\u00a00.75 cut-off is not exact; it is slightly higher with increasing horizontal force amplitude \u2013 or stance angle.\n\nAt low duty factors (0.5\u00a0< DF < 0.75), the vertical forces produced by the legs relate closely to the vertical forces experienced by the center of mass (see Figure 3, which shows a 50% phasing). In this situation, center of mass velocity is forward and downward in the first half of stance (Figure 3C; Figure 4A), while it is met with an upward and decelerating force, resulting in negative work. The angle between the velocity and force vectors would be improved \u2013 made more nearly perpendicular \u2013 with a lower magnitude of vertical velocity. This would be achieved by distributing the vertical impulses evenly through time through using a 25% or 75% footfall phasing \u2013 benefits analogous to having more spokes on a rimless wheel. In contrast, at duty factors above 0.75, there is sufficient overlap for the forces produced by the limbs to combine such that sub-maximal vertical forces on the center of mass occur when an individual limb is maximally loaded. This results in a reversal in timing of upward and downward velocities compared with lower duty factors (Figure 3), at which point higher magnitudes of vertical velocity are favorable, as they increase the angle between center of mass velocity and limb force vectors (Figure 4A), reducing the limb power. This principle is analogous to that in bipedal walking with vaulting, stiff-limbed \u2018inverted pendulum\u2019 mechanics. The beneficial, higher vertical velocity magnitudes at the beginning of stance are achieved with synchronous footfalls \u2013 phases of 0% or 50% (pace or trot).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/29495/elife-29495-fig3-v1.jpg)\n\n**Figure 3.:** At high duty factors, the vertical limb forces combine such that peak vertical force on the center of mass does not occur at the same time as the peak vertical limb force; consequently, whereas the vertical velocity of the center of mass is predominantly downward during the first half of stance in low duty factors, they are predominantly upward over the same period at high duty factors.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/29495/elife-29495-fig4-v1.jpg)\n\n**Figure 4.:** Losses are lower if the angles (red wedges) between limb force (or impulse) and center of mass velocity vectors become closer to perpendicular. A): low mechanical work is demanded at 0/50% at high duty factors and 25/75% with low duty factors. B): the reversed relationship for sloths, in which horizontal forces profiles are reversed (see Figure 2B). In (A) and (B), force and velocity vectors are shown at snapshots in early, mid and late stance. 0% and 50% phasing (pace/trot timing) results in higher magnitude of center of mass vertical velocity, making the angle between limb force and center of mass velocity more nearly perpendicular at high duty factor (A), but at low duty factors for suspended, sloth-like gaits (B). C): the effect of inclined fore-aft impulses, demonstrated for low duty factors. Losses for purely vertical net impulses are minimized with even timing because changes in velocity vector are divided evenly; when the hind limbs impose net-acceleratory impulses (resisted by deceleration from the forelimbs), an even division of these collisions requires uneven phasing, reducing the period behind hind and fore contact (reducing the work-minimizing phase). D): a geometric account for the cost of high phases. Limb impulses (for left hind, LH, left fore, LF, right hind RH and right fore RF) and center of mass velocities are shown in the x-y plane (mediolateral/fore aft) for low and high phases. Again, angles between limb impulses and center of mass velocities are more favorable \u2013 closer to perpendicular \u2013 in the phase predicted to have lower cost by the numerical model. This is also consistent with lower fluctuations in speed (arrow length) \u2013 and so kinetic energy \u2013 for equivalent mean forward velocities.\n\nSuspended quadrupedal walking, as typical for sloths and used facultatively in a range of primates, provides a useful contrast. In this case, the sense of the horizontal forces is reversed (Figure 2B). In early stance each limb \u2013 acting predominantly in tension instead of compression \u2013 provides an accelerating force, and decelerates over the second half of stance (confirmed by force measurements in lemurs, [Granatosky et al., 2016]). With this difference, force-velocity angles are improved (Figure 4B) and work minimization is achieved with a reversed duty factor/phase relationship: high duty factor (slow) gaits benefit from low vertical velocity magnitudes and distributed foot timing; low duty factor (faster) gaits benefit from higher vertical velocity magnitudes and synchronous (trotting or pacing) foot contact phasing. This relationship appears to be supported by observations of locomoting sloths (Nyakatura et al., 2010).\n\nThe extension of the model to include net foreword impulses from the hind limbs and rear-ward impulses from the forelimbs (Figure 2C) is achieved with a fore-aft bias of an additional half sine-wave (positive for hindlimbs; negative for fore) of an amplitude 0.1 that of the vertical. The cost surface is shifted towards lower phases, with low-cost regions becoming\u00a0<50% (100%) at high duty factor and\u00a0<25% (75%) at low duty factors. The extent of this shifting increases with higher bias amplitudes.\n\nThe mechanism underlying this shift can again be described using the collisional framework (Figure 4C). In this case, the net impulse from each limb is treated as a single vector, orientated slightly forward for hindlimbs and backward in forelimbs. With this inclination the angles between velocities and impulses are most favorable \u2013 most near perpendicular \u2013 with a reduced interval between hind and forelimb contacts. This is the principle described by Ruina et al. (Ruina et al., 2005) to account for the \u2018gathered\u2019 gallop of horses, and is related to a previously speculated mechanism for walking dogs (Usherwood et al., 2007).\n\nUp to this stage of model development, everything could be treated in a planar manner: there is no difference between left and right, and phases\u00a0\u00b1\u00a050% are equivalent. The final addition to the model is small medial impulses (as generally reported, when measured ((e.g. dogs: [Griffin et al., 2004]) and considered of relevance) produced by a half sine-wave of amplitude 0.05 that of vertical (Figure 2D). The effect of this addition on the cost surface it to tip the low phases to be less costly; and make phases\u00a0>\u00a080% uneconomical. The cost at the troughs (blue regions) for each duty factor become slightly different; the dark blue line in Figure 2D denotes the global limb work minimum for each duty factor.\n\nThe mechanism underlying this change can again be related to collision mechanics (Figure 4D), this time considering only the horizontal plane. Each hindlimb produces an impulse that accelerates the body both forward and medially; each forelimb provides backward and medial impulses. Figure 4D demonstrates the difference between low and high phases: with low phasing, each impulse acts more closely to perpendicular to the center of mass velocities, and so lower mechanical limb work is required. With the addition of medial impulses, the undesirability of a 95% phase becomes apparent. Just prior to front-right foot contact, the center of mass velocity is a near-maximal downward, forward and lateral, before being opposed by an impulse orientated upward, backward and medially: much of the kinetic energy of the body cannot be maintained with small-angle collisions. This phenomenon, and the importance generally of timing on the energetic consequences of impulses, can be experienced directly. A human can be asked to crawl with a pacing footfall pattern \u2013 this is usually achieved with ease. A phasing just off pacing, with the knee landing just before the hand, is also easily achieved with comfort (phase roughly 5%). However, the slight change the other way, with the right hand landing just prior to the right knee (phase around 95%) is physically very demanding, and very challenging to maintain for any duration.\n\n### Further discussion\n\nBoth the limb-force-driven model and the geometric description of mechanism provide energetic accounts for selection of limb phasing in many quadrupeds undertaking slow locomotion. Phases somewhat below 50% are predicted at $DF\u22480.8$; somewhat below 25% at $DF\u22480.65$, with the reverse relation predicted for suspended sloth-like quadrupedal gaits. This provides a simple work-minimizing account for commonalities in quadrupedal gaits (Figure 2C) across extreme phylogenetic distance (Group 1 \u2013 Figure 1 \u2013 includes species that last shared a common ancestor around 300 million years ago), considerable difference in scale (Group 1 covers from hippo to mouse \u2013 a 500,000-fold difference in mass) and contrast in muscle properties (very \u2018slow\u2019 (tortoise [Woledge, 1968]) to \u2018fast\u2019 (mouse, e.g. [Askew and Marsh, 1997])). Group 2 (Figure 1), consisting of both familiar and exotic medium to large mammals walking at lower duty factors, approaches the even footfall or slightly lower phases predicted from simple planar collisional principles (Ruina et al., 2005; Usherwood et al., 2007). The advantage in terms of work minimization of near-25% vs. near-75% phase only becomes apparent when medial impulses are included (Figure 2D; Figure 4D).\n\nA purely energetic account is not found for the unusual phases used by many primates (and opossum, [Schmitt and Lemelin, 2002]); however, the cost landscape is such that the phases observed, while not meeting the absolute energetic minimum, may be in a region that achieves a nearly equivalent performance (see also [Sellers et al., 2013]). Some other account (perhaps associated with managing locomotion on unreliable substrates \u2013 [Cartmill et al., 2002]) is presumably required but beyond the scope of this study. Further support for the explanatory power of the model comes from cases where duty factors transitions over 0.75. The sloth data\u00a0set has already been discussed. The case of a macaque through ontogeny ([Hildebrand, 1967]; a generally consistent theme appears to hold across a range of primates, [Hurov, 1982]) also appears to fit model predictions very nicely (Figure 5). When very young, the macaque used a very high duty factor, and phase just below trotting. As it matured, it adopted lower duty factors and both horse-like and primate-like phases, but avoided the previous phase. As adult, it adopted a purely adult primate-like phase. As discussed above, the models presented here cannot account for the adult primate phase, but can account for the avoidance of phases around 40% at low duty factors.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/29495/elife-29495-fig5-v1.jpg)\n\n**Figure 5.:** Between 18 and 42 days (dashed line), high duty factors and phases close to 40% are observed. At 52 to 96 days (dotted lines), two regions are observed, before reaching the adult condition (solid line) typical of primates.\n\nThe driver behind the high duty factors of \u2018reptile\u2019, slow, small or juvenile gaits, while potentially related to the avoidance of excessive muscle activation for power demands, is not covered here. However, given high duty factors, phasing around 0.4 to 0.5 is consistent with limb work minimization. This provides an alternative account for the observation of these near-trotting (i.e. 0.4 to 0.5) phases in human infants (Patrick et al., 2009; Patrick et al., 2012): where previously they have been attributed to some immaturity in neural development (Patrick et al., 2012), they may actually be adaptive from a work minimization perspective. This has clear parallels with the contrasts between toddler and adult walking and running gaits (Hubel and Usherwood, 2015): might it be that we would do better viewing ontogeny of gait \u2013 whether quadrupedal or bipedal \u2013\u00a0first from an adaptive energetic framework before invoking some constraining limitation in the rate of neural development?\n",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "c8173991-b988-4149-a0cc-14ac54034bca",
+      "submission_id": "855fa49a-d288-4d78-837d-16b2a6387b40",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David Lentink, Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.29495.010](https://doi.org/10.7554/eLife.29495.010)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for choosing to send your work, \"Work minimization accounts for footfall phasing in slow quadrupedal gaits\", for consideration at eLife. Your submission has been reviewed by a Senior editor and three reviewers, one of whom is a member of our Board of Reviewing Editors. Although the work is of interest, we regret to inform you that the findings at this stage are too preliminary for further consideration at eLife.\n\nSpecifically, whereas we found considerable merit in the manuscript, there are a number of substantive issues to be addressed here and one in particular, namely, the use of n=1 for each species, the lack of a clear description of how these samples were selected from YouTube, and, finally, the full reliance on YouTube videos to support the main scientific point.\n\nThe editors of the journal and reviewers concur that YouTube based data is insufficient to provide the rigorous support required here. We do think that YouTube data can support the broader relevance of the main point in a paper, but the core evidence needs to be corroborated from rigorous lab or field data collected by researchers.\n\nWhereas we are rejecting the manuscript in its current form, we believe that it should be entirely possible to include rigorous lab and field measurement data based on RVC's terrestrial locomotion research program. Further, an additional significant increase of the YouTube-based sample size using a well-established (lab / field data-informed) and well-described screening process is needed. We do appreciate how these YouTube videos enable the sampling of species beyond the RVC terrestrial locomotion research program, combining both has the potential to support an especially compelling synthesis.\n\nConsidering the required effort to meet eLife expectations is deemed more than two months of work we are rejecting the paper at this stage, given eLife's policy to only ask for revisions when the work can be completed in two months. However, we expect that you should be able in principle to collect these data drawing on the archives at RVC, recording locomotion at a local zoo, and by expanding your YouTube search relying on more rigorous selection processes. We do appreciate how the models and scientific ideas in the paper can advance our understanding of the economy of terrestrial locomotion, they would be suitable for re-evaluation when corroborated from a more complete set of scientific observations.\n\nReviewer #1:\n\nThe strengths of this paper include that the modeling, the general framework on the manuscript, has a lot of merit and is of broader interest. The part that I found disappointing includes that the YouTube data is something that seems more appropriate for the last broader impact figure of a manuscript. This could function to illustrate how more rigorous lab or field results analyzed and discussed earlier can be extrapolated to more species, however the YouTube data is all the data presented so this manuscript is rather thin. This is N=1, n=1 data per species for about 40 species studied based on YouTube videos, although the number of animals per species and trials are not explicitly written, and the similarity between trials are unclear too, the std and other information are missing based on which I inferred this conclusion.\n\nIt seems like many more YouTube videos could be found for several of the species to better support the claims with statistics (N=3 individuals). A visit to the zoo could be sufficient for recording walking phases too. Much of the data is rather preliminary, and one would hope to see actual force plate and motion capture data from lab studies to backup model assumptions for a few species to demonstrate the effect more thoroughly (the world-class infrastructure of the group of the author enables such measurements). Perhaps more practically; the lab of the author already has a lot of data on many animals species archived based on many years of impactful research of the RVC Structure and Motion lab, this wealth of data could be better sampled and integrated to address the comment.\n\nHaving said this, a lot of data is not essential for a good paper, but I think it is essential to back up the claims made for a journal like eLife, especially due to strong claims such as \"Phases predicted to be particularly costly are not observed in nature\", which are awkward considering the small number of videos studied, and the fact that many of these animals actually locomote in complex terrains that make up their habitats, which is understudied and not discussed. Hence, I have reasons to believe that some of the claims in this manuscript are not as rigorously supported as we would like to see; the study is promising though.\n\nThe issues can be addressed by including data from the RVC archives, more YouTube videos and as needed some videos made in the local zoo. It would also help to remove some of the strong wording in the manuscript.\n\nFinally, the manuscript is not that well written, the short Abstract upfront is a hard read, the other Abstract and significant statement are good. In the introduction there are some exceptionally long and poorly structured sentences that are unreadable without staring and going back and forth. In general the manuscript needs a good polish.\n\nIn conclusion I am encouraging the authors to polish the manuscript, tone it down and integrate the RVC terrestrial locomotion research data from the past many years as well as more YouTube videos per species so proper statistics can be conducted per species and for the total dataset. With these changes it would be of interest for publication in eLife.\n\nReviewer #2:\n\nThis manuscript uses a model and gait data collected largely from YouTube to test a model of work minimization in gait. The model is used to explain an observed pattern of clustering of combinations of limb phase and duty factor in different groups of animals. The model shows regions of low work demands that are explained by different collisional costs of different combinations of gait patterns.\n\nA strength of the study is that the model is very simple. Of course with simplicity comes simplifying assumptions, and I had trouble convincing myself (and didn't find that the authors convinced me) that some of the ignored biological reality might be critical to the interpretation and validity of the model. A few particular known phenomena seem particularly important and at least should be acknowledged, if not dealt with. First, most of the group one animals have a gait that includes significant lateral undulation. None of the group two animals do. This might be an influence on phasing, and it might also influence the pattern of ground reaction forces that are modeled. Group 1 animals also adopt a sprawled limb posture, which would seem very relevant to the model assumption and designs described in subsection \u201cModel development\u201d. Some of the group 1 animals \"walk\" with their bellies dragging on the ground. Also, small animals tend to brake with their forelimbs and accelerate with their hindlimbs, whereas large animals distribute both tasks across all limbs. The modeling does not seem to account for this, or address whether it might influence the results. It seems to me incorporating such a known pattern might significantly alter the results.\n\nA simplification that I also found troubling is what seems to be a model of the quadrupedal gait as bipedal (Figure 3). I liked this figure and it helped me understand the model outputs. I could imagine how the simplification of focusing on just two limbs might be justified (although I didn't see a clear justification), but I could also imagine that a bipedal representation may not be appropriate. Limb cycles in quadrupedal walking are complex, and vary with phasing. The left and right sides are doing different things at different times. It would seem to me that a comparison of c.o.m. forces and limb forces would have to account for the phasing relationship between all four limbs.\n\nAs the application and interpretation of the model is so divorced from biological reality, it limits what it can tell us. It tells us perhaps that collisional mechanics are important and might shape footfall patterns. That by itself doesn't seem very surprising. A discussion of the biological realities mentioned above might serve not only to address critiques of the model, but to further inform our understanding of variation in how different animals move.\n\nMy concerns might be addressed by a presentation that does more to apply more skepticism to the model, and to connect it more solidly to the biology in its interpretation.\n\nReviewer #3:\n\nThe manuscript focuses on the effect of fore-hind leg phasing on external mechanical work during walking. The authors compute theoretical cost surfaces in duty factor and fore-hind timing space. The results support that collision reduction strategies are used generally in quadrupedal walking, similar to the consensus on bipedal walking and overall running mechanics.\n\nThe manuscript is captively written using examples that will have readers personally test work minimization. Most assumptions of the modeling efforts are accurately addressed. I expect the content to be of considerable interest to a broad audience.\n\nI only have a few comments and recommend acceptance with minor revisions.\n\nComments:\n\nState and justify the underlying assumption that muscle work is proportional to metabolic cost. A major underlying assumption of the collision reduction paradigm is that mechanical work requires proportional muscle work, and that increased muscle work incurs an increased metabolic cost. Force production with muscle is not free. Moreover, the cost of muscle producing isometric force is not necessarily lower than the cost of muscle producing force while going through work cycles (see Holt et al., JEB 2014). Please address these assumptions.\n\nPresumably, Vcom followed from integration of the limb force profiles. In order to obtain exact solutions of this integration, and thus CoM trajectories, an initial Vcom would be required. Please specify if CoM trajectories were determined, and if so, how the initial Vcom was determined. Different initial Vcom values may result in different CoM trajectories and thus cost surfaces, no?\n\nPlease use proper vector notation in Equation 5. As the authors point out, and perpendicular application of force to the CoM vector would result in no work. This is accurately reflected by the dot product between Flimb and Vcom. However, the assertion that \"the positive components of which\u2026 provide the mechanical work 'cost' \" is unclear. Please clarify if any positive components of the RHS of Equation 5 are taken as 'cost', or whether only positive parts of the LHS, Plimb, are considered 'cost'. To infer collision reduction strategies, the latter seems appropriate, and a clarification would be helpful.\n",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d8e239ea-0ea3-4fe0-b6ee-916735266648",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C1",
+      "claim": "Quadrupeds tend to walk with an even left/right footfall timing.",
+      "claim_type": "EXPLICIT",
+      "source": "Quadrupeds, like most bipeds, tend to walk with an even left/right footfall timing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about quadrupedal locomotion patterns.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "afc198de-12eb-4aa9-a824-45e756634528",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C2",
+      "claim": "The phasing between hind and forelimbs shows considerable variation in quadrupeds.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the phasing between hind and forelimbs shows considerable variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observed phenomenon in quadrupedal locomotion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "62c261ce-8ba5-41b8-8d75-3ccb80d88a07",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C3",
+      "claim": "Mechanical work requirements can account for variation in hind-fore limb phasing.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we account for this variation by modeling and explaining the influence of hind-fore limb phasing on mechanical work requirements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors present a model in the manuscript that demonstrates this relationship.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "ac4eba85-3a85-4c99-9f56-86a4d7d74d31",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C4",
+      "claim": "Slow animals including crocodile, tortoise, hippopotamus and some babies use specific limb phasing strategies explained by the mechanics model.",
+      "claim_type": "EXPLICIT",
+      "source": "These mechanics account for the different strategies used by: (1) slow animals (a group including crocodile, tortoise, hippopotamus and some babies);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents data and modeling results showing these animals follow predicted patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "f9753268-2eb4-4a04-a59c-4dea0ba11ec6",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C5",
+      "claim": "Normal medium to large mammals use limb phasing strategies explained by the mechanics model.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) normal medium to large mammals;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents data and modeling results for this group.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "74a7c588-451c-4706-93dc-8503feaae74c",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C6",
+      "claim": "Sloths undertaking suspended locomotion across a range of speeds use limb phasing strategies explained by the mechanics model with an appropriate minus sign.",
+      "claim_type": "EXPLICIT",
+      "source": "and (3) (with an appropriate minus sign) sloths undertaking suspended locomotion across a range of speeds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents modeling results that account for sloth locomotion patterns.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "9f5f3499-4317-40dd-804b-db0a0dec00cd",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C7",
+      "claim": "The unusual hind-fore phasing of primates does not match global work minimizing predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "While the unusual hind-fore phasing of primates does not match global work minimizing predictions, it does approach an only slightly more costly local minimum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents modeling results showing primate phasing does not align with the global minimum.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "e9058e3f-6303-468a-917a-3664c2535618",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C8",
+      "claim": "Primate hind-fore phasing approaches a slightly more costly local minimum.",
+      "claim_type": "EXPLICIT",
+      "source": "While the unusual hind-fore phasing of primates does not match global work minimizing predictions, it does approach an only slightly more costly local minimum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents modeling results showing primate phasing near a local minimum.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "f107f7c8-6637-4efd-a675-249b6b7d51ba",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C9",
+      "claim": "Phases predicted to be particularly costly have not been reported in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "Phases predicted to be particularly costly have not been reported in nature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript compares model predictions with observational data from nature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "0fbeeaa4-7252-4732-9e45-c8af760e86dd",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C10",
+      "claim": "Many details of bipedal walking mechanics can be understood from the perspective of simple mechanical work minimization.",
+      "claim_type": "EXPLICIT",
+      "source": "Many details of bipedal walking mechanics can be understood from the perspective of simple mechanical work minimization (Kuo, 2002; Srinivasan and Ruina, 2006; Srinivasan and Ruina, 2007);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "c9853e70-0d67-4e9d-b385-7893621858ee",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C11",
+      "claim": "The situation for quadrupeds regarding mechanical work minimization is less clear than for bipeds.",
+      "claim_type": "EXPLICIT",
+      "source": "however, the situation for quadrupeds is less clear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in current understanding that motivates the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "9d0313bf-3e96-434d-88a5-5f35b0672e7a",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C12",
+      "claim": "Quadrupeds tend to adopt 'symmetrical' walking gaits at low speeds.",
+      "claim_type": "EXPLICIT",
+      "source": "While quadrupeds, like bipeds, tend to adopt 'symmetrical' walking gaits at low speeds, with left and right sides operating evenly in turn, a range of phases between hind and fore feet can be observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observed phenomenon in quadrupedal locomotion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "51e59a07-2870-45e5-922d-ba515d661d14",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C13",
+      "claim": "A range of phases between hind and fore feet can be observed in quadrupeds.",
+      "claim_type": "EXPLICIT",
+      "source": "While quadrupeds, like bipeds, tend to adopt 'symmetrical' walking gaits at low speeds, with left and right sides operating evenly in turn, a range of phases between hind and fore feet can be observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observed phenomenon.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "a91ab070-2c7d-4eb4-b07c-b78bcbb85775",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C14",
+      "claim": "Walking gaits require a duty factor above 0.5.",
+      "claim_type": "EXPLICIT",
+      "source": "walking gaits require a duty factor above 0.5, meaning that at least one foot of a pair is on the ground at all times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about walking gaits.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "54f8886d-4be9-4b7b-8622-00a9bffe1ab4",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C15",
+      "claim": "A duty factor above 0.5 means that at least one foot of a pair is on the ground at all times.",
+      "claim_type": "EXPLICIT",
+      "source": "walking gaits require a duty factor above 0.5, meaning that at least one foot of a pair is on the ground at all times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the meaning of duty factor in walking.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "11c6ba5e-a318-4e48-b31b-2b0f0000f9d5",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C16",
+      "claim": "A typical horse walking with a 25% phase would have an even timing between each foot contact.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this convention, a typical horse walking with a 25% phase would have an even timing between each foot contact: starting with the left hind, next would follow the left fore, then right hind then right fore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an example illustrating the phase definition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "5e1a74cb-4d06-47f9-913f-d2a78dc2474d",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C17",
+      "claim": "A 'trot' footfall pattern with diagonal hind and fore feet striking the ground at the same time would have a 50% phase.",
+      "claim_type": "EXPLICIT",
+      "source": "A 'trot' footfall pattern, with diagonal hind and fore feet striking the ground at the same time would have a 50% phase;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about trot gait phasing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "a5fa3dc5-086b-435d-8e65-caf58355e7a4",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C18",
+      "claim": "A 'pace' pattern with simultaneous ipsilateral feet contact could be expressed as a 0% or 100% phase.",
+      "claim_type": "EXPLICIT",
+      "source": "a 'pace' pattern with simultaneous ipsilateral feet contact (i.e. both left then both right) could be expressed as a 0% or 100% phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about pace gait phasing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "56c754a3-28e4-4d58-8279-4944a6a29965",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C19",
+      "claim": "The unsatisfactory or incomplete nature of accounts for phasing based in terms of only static stability has been widely identified.",
+      "claim_type": "EXPLICIT",
+      "source": "The unsatisfactory or incomplete nature of accounts for phasing based in terms of only static stability has been widely identified (Gray, 1944; Jayes and Alexander, 1980; Vilensky and Larson, 1989; Cartmill et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "8ab170d2-a91f-4eaa-903a-828aad58bbab",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C20",
+      "claim": "The view persists that moving animals would deploy their limbs in such a way as to maximize their support polygons over the stride period.",
+      "claim_type": "EXPLICIT",
+      "source": "however, the view persists that 'other things being equal, it seems reasonable to expect that moving animals would deploy their limbs in such a way as to maximize their support polygons over the stride period' (Cartmill et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited view from the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "27bdddfd-67a2-4f70-a0f5-4fe4dc590c44",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C21",
+      "claim": "Stability-based accounts continue to dominate the interpretation of functional significance of limb phasing in walking quadrupeds.",
+      "claim_type": "EXPLICIT",
+      "source": "Stability-based accounts continue to dominate the interpretation of functional significance of limb phasing in walking quadrupeds (Patrick et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to recent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "306322a1-abb8-4779-8b70-38aebe4410b5",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C22",
+      "claim": "The study analyzed 52 species from 120 observations from YouTube clips and video from the Structure and Motion lab.",
+      "claim_type": "EXPLICIT",
+      "source": "we plot (Figure 1) published trends for primates and sloth, and values for a diverse range of species (52 species from 120 observations) from freely available YouTube clips and video from the Structure and Motion lab from other projects (Table 1, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "b1fb2928-8d72-465c-9d4e-675496f190cb",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C23",
+      "claim": "The relationships between duty factor and phase should be uncontroversial.",
+      "claim_type": "EXPLICIT",
+      "source": "The relationships should be uncontroversial (see Supplementary file 1): many species have been studied previously, and we do not claim significant novelty in reporting duty factors and phases for walking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors state this is consistent with existing knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "6a8ee0a8-01dd-4313-8edb-ce8e46ab123c",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C24",
+      "claim": "Many species have been studied previously for duty factors and phases.",
+      "claim_type": "EXPLICIT",
+      "source": "The relationships should be uncontroversial (see Supplementary file 1): many species have been studied previously, and we do not claim significant novelty in reporting duty factors and phases for walking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges prior work in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "2620ead7-a9cb-4eb5-960c-74cb0037db47",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C25",
+      "claim": "Hildebrand's pioneering and thorough work in the area of quadrupedal gait phasing should be emphasized.",
+      "claim_type": "EXPLICIT",
+      "source": "Hildebrand's pioneering and thorough work in this area should be emphasized;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges foundational work in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "4c2a98a8-b02d-4f5b-a415-5dc265631a29",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C26",
+      "claim": "The new kinematic data in this paper are intended to be illustrative and not comprehensive.",
+      "claim_type": "EXPLICIT",
+      "source": "the new kinematic data in this paper are intended to be illustrative and not comprehensive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors explicitly state the scope of their data collection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "c717170b-b8f0-4e32-8d3f-146e3a93d36d",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C27",
+      "claim": "Group 1 animals have high duty factor with phase 40-50% including reptiles, amphibians, mouse and hippo.",
+      "claim_type": "EXPLICIT",
+      "source": "Group 1 \u2013 high duty factor, phase 40\u201350% including reptiles, amphibians, mouse and hippo (grey points);",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and described in the text with data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "5aa2156d-f2d1-4368-96d8-febd729479d4",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C28",
+      "claim": "Group 2 is the 'normal mammalian' grouping with lower duty factor and phase around or somewhat below 25%.",
+      "claim_type": "EXPLICIT",
+      "source": "Group 2 \u2013 the 'normal mammalian' grouping, with lower duty factor and phase around or somewhat below 25% (black points).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and described in the text with data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "13916988-4b62-4499-8bcf-e79a2bcd18a6",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C29",
+      "claim": "The regression line relating duty factor to phase is: phase (%)=130 DF \u2013 66.",
+      "claim_type": "EXPLICIT",
+      "source": "The regression line relating to the presented points is: phase (%)=130 DF \u2013 66.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis of the collected data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "01d605e0-6ae3-4d36-9618-907fe27db75d",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C30",
+      "claim": "Phases greater than 80% are rarely if ever observed in steady, level gaits.",
+      "claim_type": "EXPLICIT",
+      "source": "Phases greater than 80% are rarely if ever observed in steady, level gaits.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption and shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "481ce930-ab6b-42f4-b23e-9fa88fec2c5f",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C31",
+      "claim": "Group 1 animals walk with a duty factor around 0.8 and phase between 40% and 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "Group 1 animals (Figure 1, Table 1) walk with a duty factor around 0.8 and phase between 40% and 50%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the data presented in Figure 1 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "e6446904-286a-42f6-a487-336a50fcbe59",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C32",
+      "claim": "Group 1 consists of 11 species of reptile, 3 amphibians and 3 mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "This group consists of 11 species of reptile, 3 amphibians and 3 mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from counting the species listed in Table 1 for Group 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "c075517b-85e2-43cb-b581-d811f9f49ee7",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C33",
+      "claim": "Members of Group 1 might be linked by being relatively slow, slow-muscled ('cold-blooded'), or very small.",
+      "claim_type": "EXPLICIT",
+      "source": "Members of this group might be linked by being relatively slow (e.g. hippo), slow-muscled ('cold-blooded' \u2013 consider tortoise muscle properties [Woledge, 1968]) or very small (mouse).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about common characteristics of Group 1 animals.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "0bb21ca2-c2e9-4d64-bd27-500f8e296c0a",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C34",
+      "claim": "High duty factors in Group 1 might be considered a strategy to limit the muscle activation cost due to instantaneous power demands.",
+      "claim_type": "EXPLICIT",
+      "source": "If so, their high duty factors might be considered a strategy to limit the muscle activation cost due to instantaneous power demands (see [Usherwood, 2016])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "bad32352-141d-42cd-851f-b5ec3ee0bb9b",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C35",
+      "claim": "It is not surprising that slow, slow-muscled and small walking quadrupeds operate with high duty factors.",
+      "claim_type": "EXPLICIT",
+      "source": "It is sufficient here to note that it is not surprising that slow, slow-muscled and small walking quadrupeds operate with high duty factors;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference based on established principles.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "41c1d3a6-1da7-4a1c-b83a-15bce30377fe",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C36",
+      "claim": "Group 2 covers the majority of self-selected walking observed in upright, medium to large mammals with duty factors between around 0.6 and 0.75, and phases at or somewhat below 25%.",
+      "claim_type": "EXPLICIT",
+      "source": "Group 2 covers the majority of self-selected walking observed in upright, medium to large mammals: duty factors between around 0.6 and 0.75, and phases at or somewhat below 25%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the data presented for Group 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "5f8f4811-4759-467a-8157-5f42615ab38d",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C37",
+      "claim": "Some dogs may adopt phases close to 0.5 (trotting) at higher speeds (lower duty factors).",
+      "claim_type": "EXPLICIT",
+      "source": "A range of exceptions exists, notably some dogs [Hildebrand, 1968; Cartmill et al., 2002], which may adopt phases close to 0.5 (trotting) at higher speeds (lower duty factors).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "03bf05ee-fbc0-4ecc-bace-236ef5db2c76",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C38",
+      "claim": "Trotting mechanics can dominate at duty factors close to 0.5, equivalent to grounded running.",
+      "claim_type": "EXPLICIT",
+      "source": "It appears likely that trotting mechanics can dominate at duty factors close to 0.5, equivalent to grounded running (Biknevicius and Reilly, 2006),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "9eb5327d-f609-4dd5-9a7e-4a99feb7b2b0",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C39",
+      "claim": "Primates appear to adopt a discretely different limb phasing at the duty factors of Group 2, close to 75%.",
+      "claim_type": "EXPLICIT",
+      "source": "Primates appear to adopt a discretely different limb phasing at the duty factors of Group 2, close to 75% ([Cartmill et al., 2002; Hildebrand, 1967] sometimes termed a 'diagonal sequence').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "e0459e50-0354-4d9d-9141-f1b5fce06a0b",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C40",
+      "claim": "Some other quadrupeds like opossum occupy a similar region to primates in terms of limb phasing.",
+      "claim_type": "EXPLICIT",
+      "source": "Some other quadrupeds (opossum, [Schmitt and Lemelin, 2002]) occupy a similar region, potentially due to their grasping forelimbs and/or to cope with the hazards of walking along branches with a risk of failure (Cartmill et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and includes speculation about the reasons.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "f27eca39-d26c-45fe-ae8a-8c93be4abaa9",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C41",
+      "claim": "Data published for 2-toed sloths locomoting with a suspended, under-branch quadrupedal gait cover a large range of duty factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Data published for 2-toed sloths locomoting with a suspended, under-branch quadrupedal gait (Nyakatura et al., 2010) cover a large range of duty factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited published data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "ee7735d2-e746-45b2-be67-43b8c5e2c94c",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C42",
+      "claim": "The relationship between duty factor and phase in sloths appears to contrast with that found across non-primate quadrupeds.",
+      "claim_type": "EXPLICIT",
+      "source": "The relationship between duty factor and phase appears to contrast with that found across non-primate quadrupeds (Group 1 vs. Group 2): sloths adopt phases close to 25% at high duty factors (low speed), and 50% at lower duty factors (higher speeds).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from comparing sloth data with other groups.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "73fb6326-6c15-4c00-9b39-590dc64329d8",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C43",
+      "claim": "Sloths adopt phases close to 25% at high duty factors (low speed).",
+      "claim_type": "EXPLICIT",
+      "source": "sloths adopt phases close to 25% at high duty factors (low speed), and 50% at lower duty factors (higher speeds).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited data from Nyakatura et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "def31fff-60ea-4019-a44d-2c08463f7f53",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C44",
+      "claim": "Sloths adopt phases close to 50% at lower duty factors (higher speeds).",
+      "claim_type": "EXPLICIT",
+      "source": "sloths adopt phases close to 25% at high duty factors (low speed), and 50% at lower duty factors (higher speeds).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited data from Nyakatura et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "053fcb47-83a0-4398-a5e6-0e55a92721cf",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C45",
+      "claim": "There appears to be no record of a steady gait occurring at phases above 0.8 in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "There appears to be no record of a steady gait occurring at this phase in nature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the literature and data review.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "e6e82359-3f38-408b-a162-3ea9f73c3351",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C46",
+      "claim": "A numerical model was developed to calculate the mechanical work requirements of all the limbs on the center of mass as a function of duty factor and phase for symmetrical quadrupedal gaits.",
+      "claim_type": "EXPLICIT",
+      "source": "A numerical model was developed to calculate the mechanical work requirements of all the limbs on the center of mass as a function of duty factor and phase for symmetrical quadrupedal gaits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "d13103e9-3acc-4067-b3d7-1e3d52c90552",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C47",
+      "claim": "Mass-normalized vertical, horizontal and lateral forces for each limb were modeled with sinusoidal waveforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass-normalized vertical, horizontal and lateral forces for each limb were modeled with sinusoidal waveforms (see Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the modeling approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "3a3bc93b-f332-4389-9596-b20d967ed64a",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C48",
+      "claim": "The simplest form of the model shows work minimization at phases of 50% and 0/100% at duty factors above 0.75.",
+      "claim_type": "EXPLICIT",
+      "source": "The surface shows work minimization at phases of 50% and 0/100% at duty factors above 0.75, and 25%/75% at duty factors below 0.75.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the numerical model shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "c70feba5-8617-4ce5-ba56-e3a383dbf817",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C49",
+      "claim": "The simplest form of the model shows work minimization at phases of 25%/75% at duty factors below 0.75.",
+      "claim_type": "EXPLICIT",
+      "source": "The surface shows work minimization at phases of 50% and 0/100% at duty factors above 0.75, and 25%/75% at duty factors below 0.75.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the numerical model shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "9c121586-94fb-443f-be95-3d897f80026b",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C50",
+      "claim": "At low duty factors (0.5 < DF < 0.75), the vertical forces produced by the legs relate closely to the vertical forces experienced by the center of mass.",
+      "claim_type": "EXPLICIT",
+      "source": "At low duty factors (0.5 < DF < 0.75), the vertical forces produced by the legs relate closely to the vertical forces experienced by the center of mass (see Figure 3, which shows a 50% phasing).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3 and explained in the text.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "c759f1fc-2a5a-4b40-8866-a3e802f9d75a",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C51",
+      "claim": "At duty factors above 0.75, there is sufficient overlap for the forces produced by the limbs to combine such that sub-maximal vertical forces on the center of mass occur when an individual limb is maximally loaded.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, at duty factors above 0.75, there is sufficient overlap for the forces produced by the limbs to combine such that sub-maximal vertical forces on the center of mass occur when an individual limb is maximally loaded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model results and shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "b868bcf9-ec41-44e4-a3e0-dfcbdd905e9e",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C52",
+      "claim": "The extension of the model to include net forward impulses from the hind limbs and rear-ward impulses from the forelimbs shifts the cost surface towards lower phases.",
+      "claim_type": "EXPLICIT",
+      "source": "The extension of the model to include net foreword impulses from the hind limbs and rear-ward impulses from the forelimbs (Figure 2C) is achieved with a fore-aft bias of an additional half sine-wave (positive for hindlimbs; negative for fore) of an amplitude 0.1 that of the vertical. The cost surface is shifted towards lower phases, with low-cost regions becoming <50% (100%) at high duty factor and <25% (75%) at low duty factors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the numerical model shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "ba50a457-46af-48b8-8bf6-a1915b6fe207",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C53",
+      "claim": "The final addition to the model of small medial impulses tips the low phases to be less costly and makes phases > 80% uneconomical.",
+      "claim_type": "EXPLICIT",
+      "source": "The final addition to the model is small medial impulses (as generally reported, when measured ((e.g. dogs: [Griffin et al., 2004]) and considered of relevance) produced by a half sine-wave of amplitude 0.05 that of vertical (Figure 2D). The effect of this addition on the cost surface it to tip the low phases to be less costly; and make phases > 80% uneconomical.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the numerical model shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "80e87a67-15b9-4cd8-a359-993bf0d559d5",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C54",
+      "claim": "The approach assumes that the impulses from each limb and the timing of these forces act independently from the limb phasing.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach assumes that the impulses from each limb \u2013 and the timing of these forces \u2013 act independently from the limb phasing; and that center of mass motions are due to the action of these limb forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated assumption of the modeling approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "4c110ab9-7c97-40d4-a6cc-6a162cdb8e88",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C55",
+      "claim": "The approach assumes that 'limb work' is costly and that negative work being performed by one limb cannot power the positive work being performed by another limb at the same time.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that 'limb work' is costly \u2013 that negative work being performed by one limb cannot power the positive work being performed by another limb at the same time (as would be the assumption if only center of mass or 'external' work was being considered).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated assumption of the modeling approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "acff0a42-f59f-4dc9-86cd-04fd30cf7727",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C56",
+      "claim": "All positive work is considered costly, with no capacity for recovery of negative work through elasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, all positive work is considered costly, with no capacity for recovery of negative work through elasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated assumption of the modeling approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "c3a27812-67c4-41fd-b893-794b4c00c6fb",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C57",
+      "claim": "The model makes no attempt to account for the selection of duty factor.",
+      "claim_type": "EXPLICIT",
+      "source": "the model makes no attempt to account for the selection of duty factor \u2013 it merely calculates the implications of different phases for given duty factors and force profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated limitation of the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "a986a03e-0a28-4d95-99b2-253689635210",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C58",
+      "claim": "The model assumes limb forces through time are not influenced by phasing.",
+      "claim_type": "EXPLICIT",
+      "source": "It assumes limb forces through time are not influenced by phasing; while this appears broadly reasonable at moderate speeds, where fluctuations in horizontal velocity are small compared with mean velocity (and so the timecourse of changes in leg angle varies little), it certainly fails at exceedingly low speeds with near-stationary periods (as in grazing).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated assumption and limitation of the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "087fab85-7708-451f-8899-e861f0981a7b",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C59",
+      "claim": "The model is exceedingly simple and takes no account of lateral bending, belly or tail ground contact.",
+      "claim_type": "EXPLICIT",
+      "source": "The model is exceedingly simple: no account is taken of lateral bending, belly or tail ground contact, all of which may be relevant to some (but not all) amphibians and reptiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated limitation of the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "8eccc3a0-352d-4603-a38d-126d0af4046d",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C60",
+      "claim": "An ideal rolling wheel can support the weight of a vehicle moving over level ground without performing mechanical work because the forces opposing weight are orientated perpendicular to the velocity of the mass.",
+      "claim_type": "EXPLICIT",
+      "source": "An ideal rolling wheel can support the weight of a vehicle moving over level ground without performing mechanical work because the forces opposing weight are orientated perpendicular to the velocity of the mass.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a principle from mechanics used to explain the model results.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "e9a472e3-443d-47c3-9bd9-351f3268dd03",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C61",
+      "claim": "The orientation between the force (or impulse) and velocity accounts for the demand for mechanical power (or work).",
+      "claim_type": "EXPLICIT",
+      "source": "The value of this principle, that the orientation between the force (or impulse) and velocity accounts for the demand for mechanical power (or work), can be couched in terms of collision mechanics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a principle from mechanics used to explain the model results.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "50f63bcd-e930-4442-b20f-5394c124ecc1",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C62",
+      "claim": "This reduction is becoming to be appreciated in the study of human and animal mechanics.",
+      "claim_type": "EXPLICIT",
+      "source": "This reduction is becoming to be appreciated in the study of human and animal mechanics (e.g. Kuo, 2002; Ruina et al., 2005; Lee et al., 2011; see Bertram, 2016 for an overview).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent work in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "7e8fe730-95b1-4f0b-a461-dbacfdd8e62a",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C63",
+      "claim": "With multiple limbs applying forces to the center of mass at the same time, the relationship between limb forces and changes in center of mass velocity is not constant, and may not be intuitive.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be highlighted that, with multiple limbs applying forces to the center of mass at the same time, the relationship between limb forces and changes in center of mass velocity is not constant, and may not be intuitive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of a complexity in the mechanical analysis.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "326f0a40-d63b-484d-8485-ed9a1012f202",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C64",
+      "claim": "The numerical model results provide energetic accounts for selection of limb phasing in many quadrupeds undertaking slow locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the limb-force-driven model and the geometric description of mechanism provide energetic accounts for selection of limb phasing in many quadrupeds undertaking slow locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings from the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "215690a8-a753-4efd-ad39-184593af0e7f",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C68",
+      "claim": "The work-minimizing account provides a simple explanation for commonalities in quadrupedal gaits across extreme phylogenetic distance.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides a simple work-minimizing account for commonalities in quadrupedal gaits (Figure 2C) across extreme phylogenetic distance (Group 1 \u2013 Figure 1 \u2013 includes species that last shared a common ancestor around 300 million years ago),",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the model results and data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "ba830a58-3807-443d-88ee-42c79b067e5b",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C69",
+      "claim": "Group 1 includes species that last shared a common ancestor around 300 million years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "(Group 1 \u2013 Figure 1 \u2013 includes species that last shared a common ancestor around 300 million years ago),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on phylogenetic knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "8df1fc3a-1387-4fcc-8254-53b6d4dd44a6",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C70",
+      "claim": "Group 1 covers from hippo to mouse, a 500,000-fold difference in mass.",
+      "claim_type": "EXPLICIT",
+      "source": "considerable difference in scale (Group 1 covers from hippo to mouse \u2013 a 500,000-fold difference in mass)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from known body masses of these animals.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "2b6c2460-b9fb-4d60-aaa4-d790f7a57e15",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C71",
+      "claim": "Group 1 includes contrast in muscle properties from very 'slow' (tortoise) to 'fast' (mouse).",
+      "claim_type": "EXPLICIT",
+      "source": "and contrast in muscle properties (very 'slow' (tortoise [Woledge, 1968]) to 'fast' (mouse, e.g. [Askew and Marsh, 1997])).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies of muscle properties.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "e2768005-8980-480a-b156-e7c3039a4c86",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C72",
+      "claim": "Group 2 approaches the even footfall or slightly lower phases predicted from simple planar collisional principles.",
+      "claim_type": "EXPLICIT",
+      "source": "Group 2 (Figure 1), consisting of both familiar and exotic medium to large mammals walking at lower duty factors, approaches the even footfall or slightly lower phases predicted from simple planar collisional principles (Ruina et al., 2005; Usherwood et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference comparing data with model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "308e2ec3-d01f-4e9c-848e-2de72e382741",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C73",
+      "claim": "The advantage in terms of work minimization of near-25% vs. near-75% phase only becomes apparent when medial impulses are included.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantage in terms of work minimization of near-25% vs. near-75% phase only becomes apparent when medial impulses are included (Figure 2D; Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from comparing different versions of the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "ad3df1b7-7723-4232-9ccb-dc1413277003",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C74",
+      "claim": "A purely energetic account is not found for the unusual phases used by many primates.",
+      "claim_type": "EXPLICIT",
+      "source": "A purely energetic account is not found for the unusual phases used by many primates (and opossum, [Schmitt and Lemelin, 2002]);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from comparing model predictions with observed data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "5d4b2866-55cb-4610-b663-af672d0e97e1",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C75",
+      "claim": "The cost landscape for primates is such that the phases observed, while not meeting the absolute energetic minimum, may be in a region that achieves a nearly equivalent performance.",
+      "claim_type": "EXPLICIT",
+      "source": "however, the cost landscape is such that the phases observed, while not meeting the absolute energetic minimum, may be in a region that achieves a nearly equivalent performance (see also [Sellers et al., 2013]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model results supported by a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "34daca33-2d1e-465f-b150-0365e522a87e",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C76",
+      "claim": "Some other account (perhaps associated with managing locomotion on unreliable substrates) is presumably required for primate phasing but is beyond the scope of this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Some other account (perhaps associated with managing locomotion on unreliable substrates \u2013 [Cartmill et al., 2002]) is presumably required but beyond the scope of this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about alternative explanations with a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "73d475b9-30d3-4030-89d0-c43f37802ad3",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C77",
+      "claim": "The case of a macaque through ontogeny fits model predictions very nicely.",
+      "claim_type": "EXPLICIT",
+      "source": "The case of a macaque through ontogeny ([Hildebrand, 1967]; a generally consistent theme appears to hold across a range of primates, [Hurov, 1982]) also appears to fit model predictions very nicely (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from comparing cited data with model predictions shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "cf566b78-091f-414b-a7b6-0711f330f229",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C78",
+      "claim": "When very young, the macaque used a very high duty factor, and phase just below trotting.",
+      "claim_type": "EXPLICIT",
+      "source": "When very young, the macaque used a very high duty factor, and phase just below trotting.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from cited data shown in Figure 5.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "54465184-ac22-4d48-b9d0-2e776326727b",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C79",
+      "claim": "As the macaque matured, it adopted lower duty factors and both horse-like and primate-like phases, but avoided the previous phase.",
+      "claim_type": "EXPLICIT",
+      "source": "As it matured, it adopted lower duty factors and both horse-like and primate-like phases, but avoided the previous phase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from cited data shown in Figure 5.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "87c92683-704b-4a1b-b8c2-47c15adf8861",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C80",
+      "claim": "As adult, the macaque adopted a purely adult primate-like phase.",
+      "claim_type": "EXPLICIT",
+      "source": "As adult, it adopted a purely adult primate-like phase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from cited data shown in Figure 5.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "8312bb82-bda0-41ce-82fa-52e4c2d4434d",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C81",
+      "claim": "The models can account for the avoidance of phases around 40% at low duty factors.",
+      "claim_type": "EXPLICIT",
+      "source": "As discussed above, the models presented here cannot account for the adult primate phase, but can account for the avoidance of phases around 40% at low duty factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "29147a8b-25f0-42f2-ab60-2582095babe0",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C82",
+      "claim": "The driver behind the high duty factors of 'reptile', slow, small or juvenile gaits is potentially related to the avoidance of excessive muscle activation for power demands.",
+      "claim_type": "EXPLICIT",
+      "source": "The driver behind the high duty factors of 'reptile', slow, small or juvenile gaits, while potentially related to the avoidance of excessive muscle activation for power demands, is not covered here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about mechanisms not addressed in the current study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "780bc6eb-c21c-44d9-b4d3-bcac9b9a3164",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C83",
+      "claim": "Given high duty factors, phasing around 0.4 to 0.5 is consistent with limb work minimization.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given high duty factors, phasing around 0.4 to 0.5 is consistent with limb work minimization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "3e4ea03f-637e-4ab0-b506-71bb187b80cc",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C84",
+      "claim": "The observation of near-trotting phases in human infants may be adaptive from a work minimization perspective rather than due to immaturity in neural development.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides an alternative account for the observation of these near-trotting (i.e. 0.4 to 0.5) phases in human infants (Patrick et al., 2009; Patrick et al., 2012): where previously they have been attributed to some immaturity in neural development (Patrick et al., 2012), they may actually be adaptive from a work minimization perspective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an alternative interpretation of cited observations based on the model results.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "ea2bf153-5824-4a5f-b6f1-a60a8c5ece41",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C85",
+      "claim": "There are clear parallels between infant quadrupedal gait and toddler bipedal walking and running gaits.",
+      "claim_type": "EXPLICIT",
+      "source": "This has clear parallels with the contrasts between toddler and adult walking and running gaits (Hubel and Usherwood, 2015):",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the current findings to previous work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "8ef63ab9-98b9-4a39-a61d-a42043c103f6",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "claim_id": "C86",
+      "claim": "Ontogeny of gait, whether quadrupedal or bipedal, should be viewed first from an adaptive energetic framework before invoking constraining limitations in the rate of neural development.",
+      "claim_type": "EXPLICIT",
+      "source": "might it be that we would do better viewing ontogeny of gait \u2013 whether quadrupedal or bipedal \u2013 first from an adaptive energetic framework before invoking some constraining limitation in the rate of neural development?",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal for how to interpret developmental changes in gait.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4c3e2878-22fc-48f1-b824-feb78252891b",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors collected kinematic data from 52 species (120 observations) from YouTube clips and lab videos, identifying two groups: Group 1 (high duty factor ~0.8, phase 40-50%, including reptiles, amphibians, and some mammals) and Group 2 (lower duty factor 0.6-0.75, phase at or below 25%, typical mammals). A regression line relating duty factor to phase was calculated (phase % = 130 DF - 66), and phases above 80% were noted as rarely observed in nature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C32, C36 provide consistent observational data with clear groupings shown in Figure 1 and Table 1. The authors explicitly state the data are illustrative rather than comprehensive (C26), appropriately limiting the scope. The regression analysis (C29) and observational patterns (C27, C28, C30) are directly supported by the presented data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "27336ff8-23ac-4891-b58c-b76f1bc8b0f9",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A numerical model using sinusoidal force waveforms predicts that at duty factors above 0.75, work is minimized at phases of 50% and 0/100%, while at duty factors below 0.75, work is minimized at phases of 25%/75%. This transition occurs because at high duty factors, limb forces combine such that peak center of mass forces are temporally separated from peak limb forces, reversing the optimal phasing strategy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 describe the basic model and its primary predictions, which are clearly shown in Figure 2A and explained mechanistically in Figure 3. The model assumptions are explicitly stated (C54-C59), and the geometric/mechanical explanations (C50-C51) provide physical justification for the numerical results. The transition at DF=0.75 is demonstrated both numerically and mechanistically.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "c76923ab-d8de-4f99-9813-4866c647c212",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Adding fore-aft bias (net forward impulses from hindlimbs, rearward from forelimbs) shifts optimal phases lower, and adding small medial impulses further tips the cost surface to favor lower phases while making phases >80% uneconomical. The advantage of near-25% versus near-75% phase only becomes apparent when medial impulses are included.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53, C73 describe progressive model refinements shown in Figures 2C and 2D. The effects are demonstrated numerically and explained geometrically in Figure 4C-D. The authors provide clear mechanistic explanations for why these additions shift the cost landscape, with the medial impulse effect being particularly important for distinguishing between symmetric phase options.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "051bbb0d-b2d7-42ac-b5db-aa112e403130",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The work minimization model successfully accounts for limb phasing strategies in Group 1 animals (slow, high duty factor animals including reptiles and hippos) and Group 2 animals (normal medium to large mammals), providing a unified mechanical explanation across extreme phylogenetic distances (300 million years), vast size ranges (500,000-fold mass difference), and diverse muscle properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C64, C68, C83 represent the main conclusion that the model explains observed phasing patterns. The model predictions (C48-C49, C52-C53) align well with the observed data for Groups 1 and 2 (C27-C28, C31, C36) as shown in Figure 2C-D. The mechanistic explanations (C50-C51, C60-C63) provide physical justification. The phylogenetic and size diversity (C69-C71) strengthens the generality of the finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "228efe04-3503-4adc-9f83-361b240024e6",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "For suspended locomotion in sloths, the model predicts a reversed relationship between duty factor and phase compared to terrestrial quadrupeds: phases near 25% at high duty factors and near 50% at lower duty factors. This prediction matches published sloth data across a range of speeds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C41-C44 describe the sloth case, which is supported by cited data (Nyakatura et al., 2010) and model predictions shown in Figure 2B. The mechanistic explanation (Figure 4B) demonstrates why reversing the horizontal force profile (tension vs. compression) reverses the optimal phasing relationship. This represents a strong test of the model's predictive power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "4a2e6414-873a-4ab9-ba52-bce83801f219",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The model does not fully explain primate limb phasing (~75% phase), which does not match the global work minimum. However, primate phasing approaches a local minimum with only slightly higher cost, suggesting that while energetics may contribute, other factors (possibly related to arboreal locomotion on unstable substrates) are required to fully explain primate gait.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C74-C76 acknowledge a limitation of the purely energetic model for primates. The authors appropriately recognize that primate phasing is near but not at the global minimum (shown in Figure 2D), suggesting energetics play a role but are not the sole determinant. The speculation about alternative explanations (C76) is appropriately cautious and supported by citations. This honest assessment of model limitations strengthens the overall work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "00ebdf26-623f-4ec0-b2a2-720b4804f274",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Phases predicted by the model to be particularly costly (especially >80%) have not been reported in nature, providing negative evidence supporting the model's predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C30, C45, C53 describe the absence of high-phase gaits in nature, which aligns with model predictions of high cost for these phases. This represents a form of negative evidence that supports the model. The observation is clearly stated in Figure 1 and the text, though the authors appropriately note this is based on available literature and their survey.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "3cb3e162-172f-4e6f-a43e-3dd8b8a4c264",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Ontogenetic data from macaques show that young individuals use high duty factors with phases near 50%, juveniles adopt both horse-like and primate-like phases while avoiding the previous phase, and adults adopt purely primate-like phases. The model successfully predicts the avoidance of phases around 40% at low duty factors during development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C81 describe macaque ontogeny data from Hildebrand (1967) that fits model predictions well, as shown in Figure 5. The model correctly predicts which phases are avoided during development (C81), even though it cannot fully explain the adult primate phase (acknowledged in C74-C76). This developmental trajectory provides additional support for the model's explanatory power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "b4bd9e1f-05a1-4d04-938e-a2e65477985e",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose that near-trotting phases (40-50%) observed in human infants during quadrupedal crawling may be adaptive from a work minimization perspective rather than reflecting neural immaturity, drawing parallels to toddler bipedal gait development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84-C86 present an alternative interpretation of infant gait patterns based on the model's predictions. While the model provides a plausible energetic explanation for infant phasing patterns, this remains speculative (C86 is explicitly speculative). The authors appropriately frame this as an alternative hypothesis rather than a definitive conclusion, but no direct evidence is provided to test this interpretation against the neural development hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    },
+    {
+      "id": "ec9696ce-bd01-4408-acd8-7ec7fb010f76",
+      "content_id": "b874d61b-9d77-41d9-a421-cfed09af34bc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The model makes several simplifying assumptions: limb forces and timing are independent of phasing, limb work is costly with no energy transfer between limbs, no elastic energy recovery, no attempt to explain duty factor selection, and no consideration of lateral bending or tail/belly contact. The model is acknowledged to fail at very low speeds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C59 explicitly state the model's assumptions and limitations. The authors are appropriately transparent about these simplifications, noting where the model is expected to work (moderate speeds) and where it fails (very low speeds, C58). This transparency is essential for proper interpretation of the results and represents good scientific practice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:03:35.657124Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "306322a1-abb8-4779-8b70-38aebe4410b5",
+      "result_id": "4c3e2878-22fc-48f1-b824-feb78252891b"
+    },
+    {
+      "claim_id": "4c2a98a8-b02d-4f5b-a415-5dc265631a29",
+      "result_id": "4c3e2878-22fc-48f1-b824-feb78252891b"
+    },
+    {
+      "claim_id": "c717170b-b8f0-4e32-8d3f-146e3a93d36d",
+      "result_id": "4c3e2878-22fc-48f1-b824-feb78252891b"
+    },
+    {
+      "claim_id": "5aa2156d-f2d1-4368-96d8-febd729479d4",
+      "result_id": "4c3e2878-22fc-48f1-b824-feb78252891b"
+    },
+    {
+      "claim_id": "13916988-4b62-4499-8bcf-e79a2bcd18a6",
+      "result_id": "4c3e2878-22fc-48f1-b824-feb78252891b"
+    },
+    {
+      "claim_id": "01d605e0-6ae3-4d36-9618-907fe27db75d",
+      "result_id": "4c3e2878-22fc-48f1-b824-feb78252891b"
+    },
+    {
+      "claim_id": "481ce930-ab6b-42f4-b23e-9fa88fec2c5f",
+      "result_id": "4c3e2878-22fc-48f1-b824-feb78252891b"
+    },
+    {
+      "claim_id": "e6446904-286a-42f6-a487-336a50fcbe59",
+      "result_id": "4c3e2878-22fc-48f1-b824-feb78252891b"
+    },
+    {
+      "claim_id": "41c1d3a6-1da7-4a1c-b83a-15bce30377fe",
+      "result_id": "4c3e2878-22fc-48f1-b824-feb78252891b"
+    },
+    {
+      "claim_id": "e6e82359-3f38-408b-a162-3ea9f73c3351",
+      "result_id": "27336ff8-23ac-4891-b58c-b76f1bc8b0f9"
+    },
+    {
+      "claim_id": "d13103e9-3acc-4067-b3d7-1e3d52c90552",
+      "result_id": "27336ff8-23ac-4891-b58c-b76f1bc8b0f9"
+    },
+    {
+      "claim_id": "3a3bc93b-f332-4389-9596-b20d967ed64a",
+      "result_id": "27336ff8-23ac-4891-b58c-b76f1bc8b0f9"
+    },
+    {
+      "claim_id": "c70feba5-8617-4ce5-ba56-e3a383dbf817",
+      "result_id": "27336ff8-23ac-4891-b58c-b76f1bc8b0f9"
+    },
+    {
+      "claim_id": "9c121586-94fb-443f-be95-3d897f80026b",
+      "result_id": "27336ff8-23ac-4891-b58c-b76f1bc8b0f9"
+    },
+    {
+      "claim_id": "c759f1fc-2a5a-4b40-8866-a3e802f9d75a",
+      "result_id": "27336ff8-23ac-4891-b58c-b76f1bc8b0f9"
+    },
+    {
+      "claim_id": "b868bcf9-ec41-44e4-a3e0-dfcbdd905e9e",
+      "result_id": "c76923ab-d8de-4f99-9813-4866c647c212"
+    },
+    {
+      "claim_id": "ba50a457-46af-48b8-8bf6-a1915b6fe207",
+      "result_id": "c76923ab-d8de-4f99-9813-4866c647c212"
+    },
+    {
+      "claim_id": "308e2ec3-d01f-4e9c-848e-2de72e382741",
+      "result_id": "c76923ab-d8de-4f99-9813-4866c647c212"
+    },
+    {
+      "claim_id": "62c261ce-8ba5-41b8-8d75-3ccb80d88a07",
+      "result_id": "051bbb0d-b2d7-42ac-b5db-aa112e403130"
+    },
+    {
+      "claim_id": "ac4eba85-3a85-4c99-9f56-86a4d7d74d31",
+      "result_id": "051bbb0d-b2d7-42ac-b5db-aa112e403130"
+    },
+    {
+      "claim_id": "f9753268-2eb4-4a04-a59c-4dea0ba11ec6",
+      "result_id": "051bbb0d-b2d7-42ac-b5db-aa112e403130"
+    },
+    {
+      "claim_id": "326f0a40-d63b-484d-8485-ed9a1012f202",
+      "result_id": "051bbb0d-b2d7-42ac-b5db-aa112e403130"
+    },
+    {
+      "claim_id": "215690a8-a753-4efd-ad39-184593af0e7f",
+      "result_id": "051bbb0d-b2d7-42ac-b5db-aa112e403130"
+    },
+    {
+      "claim_id": "780bc6eb-c21c-44d9-b4d3-bcac9b9a3164",
+      "result_id": "051bbb0d-b2d7-42ac-b5db-aa112e403130"
+    },
+    {
+      "claim_id": "74a7c588-451c-4706-93dc-8503feaae74c",
+      "result_id": "228efe04-3503-4adc-9f83-361b240024e6"
+    },
+    {
+      "claim_id": "f27eca39-d26c-45fe-ae8a-8c93be4abaa9",
+      "result_id": "228efe04-3503-4adc-9f83-361b240024e6"
+    },
+    {
+      "claim_id": "ee7735d2-e746-45b2-be67-43b8c5e2c94c",
+      "result_id": "228efe04-3503-4adc-9f83-361b240024e6"
+    },
+    {
+      "claim_id": "73fb6326-6c15-4c00-9b39-590dc64329d8",
+      "result_id": "228efe04-3503-4adc-9f83-361b240024e6"
+    },
+    {
+      "claim_id": "def31fff-60ea-4019-a44d-2c08463f7f53",
+      "result_id": "228efe04-3503-4adc-9f83-361b240024e6"
+    },
+    {
+      "claim_id": "9f5f3499-4317-40dd-804b-db0a0dec00cd",
+      "result_id": "4a2e6414-873a-4ab9-ba52-bce83801f219"
+    },
+    {
+      "claim_id": "e9058e3f-6303-468a-917a-3664c2535618",
+      "result_id": "4a2e6414-873a-4ab9-ba52-bce83801f219"
+    },
+    {
+      "claim_id": "ad3df1b7-7723-4232-9ccb-dc1413277003",
+      "result_id": "4a2e6414-873a-4ab9-ba52-bce83801f219"
+    },
+    {
+      "claim_id": "5d4b2866-55cb-4610-b663-af672d0e97e1",
+      "result_id": "4a2e6414-873a-4ab9-ba52-bce83801f219"
+    },
+    {
+      "claim_id": "34daca33-2d1e-465f-b150-0365e522a87e",
+      "result_id": "4a2e6414-873a-4ab9-ba52-bce83801f219"
+    },
+    {
+      "claim_id": "f107f7c8-6637-4efd-a675-249b6b7d51ba",
+      "result_id": "00ebdf26-623f-4ec0-b2a2-720b4804f274"
+    },
+    {
+      "claim_id": "01d605e0-6ae3-4d36-9618-907fe27db75d",
+      "result_id": "00ebdf26-623f-4ec0-b2a2-720b4804f274"
+    },
+    {
+      "claim_id": "053fcb47-83a0-4398-a5e6-0e55a92721cf",
+      "result_id": "00ebdf26-623f-4ec0-b2a2-720b4804f274"
+    },
+    {
+      "claim_id": "ba50a457-46af-48b8-8bf6-a1915b6fe207",
+      "result_id": "00ebdf26-623f-4ec0-b2a2-720b4804f274"
+    },
+    {
+      "claim_id": "73d475b9-30d3-4030-89d0-c43f37802ad3",
+      "result_id": "3cb3e162-172f-4e6f-a43e-3dd8b8a4c264"
+    },
+    {
+      "claim_id": "cf566b78-091f-414b-a7b6-0711f330f229",
+      "result_id": "3cb3e162-172f-4e6f-a43e-3dd8b8a4c264"
+    },
+    {
+      "claim_id": "54465184-ac22-4d48-b9d0-2e776326727b",
+      "result_id": "3cb3e162-172f-4e6f-a43e-3dd8b8a4c264"
+    },
+    {
+      "claim_id": "87c92683-704b-4a1b-b8c2-47c15adf8861",
+      "result_id": "3cb3e162-172f-4e6f-a43e-3dd8b8a4c264"
+    },
+    {
+      "claim_id": "8312bb82-bda0-41ce-82fa-52e4c2d4434d",
+      "result_id": "3cb3e162-172f-4e6f-a43e-3dd8b8a4c264"
+    },
+    {
+      "claim_id": "3e4ea03f-637e-4ab0-b506-71bb187b80cc",
+      "result_id": "b4bd9e1f-05a1-4d04-938e-a2e65477985e"
+    },
+    {
+      "claim_id": "ea2bf153-5824-4a5f-b6f1-a60a8c5ece41",
+      "result_id": "b4bd9e1f-05a1-4d04-938e-a2e65477985e"
+    },
+    {
+      "claim_id": "8ef63ab9-98b9-4a39-a61d-a42043c103f6",
+      "result_id": "b4bd9e1f-05a1-4d04-938e-a2e65477985e"
+    },
+    {
+      "claim_id": "80e87a67-15b9-4cd8-a359-993bf0d559d5",
+      "result_id": "ec9696ce-bd01-4408-acd8-7ec7fb010f76"
+    },
+    {
+      "claim_id": "4c110ab9-7c97-40d4-a6cc-6a162cdb8e88",
+      "result_id": "ec9696ce-bd01-4408-acd8-7ec7fb010f76"
+    },
+    {
+      "claim_id": "acff0a42-f59f-4dc9-86cd-04fd30cf7727",
+      "result_id": "ec9696ce-bd01-4408-acd8-7ec7fb010f76"
+    },
+    {
+      "claim_id": "c3a27812-67c4-41fd-b893-794b4c00c6fb",
+      "result_id": "ec9696ce-bd01-4408-acd8-7ec7fb010f76"
+    },
+    {
+      "claim_id": "a986a03e-0a28-4d95-99b2-253689635210",
+      "result_id": "ec9696ce-bd01-4408-acd8-7ec7fb010f76"
+    },
+    {
+      "claim_id": "087fab85-7708-451f-8899-e861f0981a7b",
+      "result_id": "ec9696ce-bd01-4408-acd8-7ec7fb010f76"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,157 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C51",
+      "C52"
+    ],
+    "result": "The PEV antibody mAb-3D11 was titrated to achieve approximately 50% efficacy in reducing mosquito-to-mouse transmission, comparable to RTS,S vaccine performance. The antibody targets the same circumsporozoite protein (CSP) as RTS,S and was administered at 50 \u00b5g i.v., preventing 47.2% (38.0-62.0% 95%CI) of transmission when mice received 5 potentially infectious mosquito bites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 and C51-C52 provide consistent experimental evidence for the PEV antibody characterization. The dose-response relationship was empirically determined through multiple experiments (n=40 passive transfers), and the mechanistic similarity to RTS,S is supported by citations. The efficacy estimate includes appropriate confidence intervals from experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The TBV antibody mAb-4B7 was titrated to achieve three efficacy levels (50%, 65%, and 85% reduction in oocyst prevalence). The antibody targets Pfs25 expressed by the transgenic parasite PbPfs25DR3, which is phenotypically indistinguishable from wild-type P. berghei. Specific doses were determined: 284.2 \u00b5g i.v. (244.7-337.3 \u00b5g) for 50% reduction, 371.8 \u00b5g i.v. (319.8-442.8 \u00b5g) for 65% reduction, and 629.5 \u00b5g i.v. (525-777.1 \u00b5g) for 85% reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 and C47-C50 are well-supported by experimental dose-response data fitted using generalized linear models with appropriate statistical methods. The transgenic parasite system is validated by prior publications (Goodman et al., 2011; Kapulu et al., 2015), and dose estimates include 95% confidence intervals from profile likelihood analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C56",
+      "C57"
+    ],
+    "result": "Combined PEV+TBV antibody treatment achieved 90.8% (86.7-94.2%) efficacy against parasite prevalence, significantly higher than the 83.3% (79.1-87.0%) expected if antibodies acted independently (p=0.0035). PEV alone achieved 48.0% (36.6-58.0%) efficacy, while TBV alone achieved 33.9%, 74.3%, and 95.8% efficacy at the 50%, 65%, and 85% doses respectively. The same synergistic relationship was observed for parasite density (p=0.0025).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C21 and C56-C57 demonstrate synergy through rigorous statistical analysis using a Bayesian density model that accounts for parasite distributions across life stages. The non-overlapping 95% credible intervals between observed and expected efficacies provide strong statistical evidence. The model explicitly addresses stochasticity in small populations (n=5 mice per group) and was validated through posterior predictive checks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C25",
+      "C26"
+    ],
+    "result": "Synergistic enhancement was dose-dependent, being strongest at lower TBV doses. At 50% TBV dose, combined treatment achieved 82.2% (74.6-88.9%) efficacy versus 65% (57.7-73.2%) expected (p=0.0015). Weaker synergy was observed at 65% TBV dose (p=0.0675 for prevalence, p=0.02 for density). At 85% TBV dose, parasites were eliminated by TBV alone, preventing detection of additional synergy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C25-C26 are supported by dose-stratified analysis shown in Figure 2 and Table 1. The dose-dependent pattern is logical: lower TBV doses leave more parasites for PEV to act upon, while the 85% dose achieves near-complete elimination independently. Statistical support varies appropriately by dose, with strongest evidence at 50% dose.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The mechanism of synergy involves TBV reducing parasite density in mosquitoes (oocysts: F1,1525=75.3, p<0.0001; sporozoites: F1,707=163.9, p<0.0001), which progressively curtails the tail of the sporozoite distribution across transmission cycles. PEV efficacy is density-dependent, achieving higher efficacy when mosquitoes have lower sporozoite loads. This reduced parasite burden enables the PEV to be more effective when co-administered with TBV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 and C34-C36 provide mechanistic explanation supported by ANOVA analysis and visual evidence in Figure 3. The density-dependent relationship between PEV efficacy and sporozoite load (Figure 3D) is demonstrated through binomial logistic regression. The experimental design allows unequivocal demonstration of mechanism by measuring effects at each parasite life stage across multiple transmission cycles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Both PEV and TBV vaccine efficacy depends on parasite density in rodent and human systems. TBV efficacy decreases with increased parasite dose, and RTS,S provides sterilizing immunity only against lightly infected mosquitoes. The mechanism of mAb-3D11 matches RTS,S by inhibiting sporozoite liver invasion through CSP-targeted antibodies. Human malaria transmission also depends on parasite density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 and C37-C39 establish the biological context through appropriate citations (Churcher et al., 2012, 2017; Miura et al., 2016; Gr\u00fcner et al., 2003; Sinden et al., 2007). The mechanistic similarity between the mouse model and human RTS,S vaccine is well-documented, supporting the translational relevance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Wild-caught mosquitoes have lower average oocyst counts than the rodent system, but oocyst distribution is highly over-dispersed. Highly infected mosquitoes are likely more infectious, so reducing their frequency through TBV could have additional impact on transmission beyond what was observed in the controlled experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 appropriately contextualize the experimental findings with field observations (Rosenberg, 2008; Medley et al., 1993). The inference about highly infected mosquitoes being more infectious (C42-C43) is logical given over-dispersion, though C43 is speculative about field impact. The claims acknowledge limitations of the laboratory system while suggesting potential real-world implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "This study provides the first direct evidence that co-administering anti-sporozoite (PEV) and anti-transmission (TBV) interventions act synergistically, enhancing PEV efficacy across a range of TBV doses and transmission intensities. Higher PEV efficacy at lower mosquito parasite loads was observed. Combining partially effective vaccines of differing anti-parasitic classes may be a pragmatic and powerful way to accelerate malaria elimination efforts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 accurately summarize the experimental findings with appropriate caveats. Claims C44-C46 extend to broader implications, which are reasonable inferences from the data but remain speculative regarding field implementation. The novelty claim (C53) appears justified as this is the first controlled demonstration of PEV-TBV synergy through density-dependent mechanisms. However, translation to human populations requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Background context establishes that malaria remains a major global health challenge (216 million cases, 445,000 deaths in 2016), requiring new tools for elimination. RTS,S/AS01, the first PEV to complete Phase III trials, showed 36.3% efficacy in children. TBV candidates targeting Pfs25, P230, and P48/45 have shown promise in pre-clinical studies but lack reproducible clinical translation. Partial PEV protection may result from over-dispersed sporozoite distributions, while TBVs reduce ookinete and sporozoite density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide appropriate background context supported by relevant citations (WHO 2017, RTSS Clinical Trials Partnership 2015, Hoffman et al. 2015, White et al. 2013, Bompard et al. 2017, etc.). These claims accurately represent prior work and establish the rationale for investigating PEV-TBV combinations. The hypothesis about over-dispersed sporozoite distributions (C7) is appropriately presented as speculative.",
+    "result_type": "MINOR"
+  }
+]

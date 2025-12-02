@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Non-aromatic pi-pi interactions are widespread in folded proteins, with planar pi-pi stacking interactions involving non-aromatic atoms outnumbering aromatic-aromatic stacking by approximately 13 to 1 in high-resolution structures. 36% of pi-pi interactions do not involve an aromatic partner, and face-to-face backbone peptide bond contacts occur as frequently as aromatic face-to-face contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C8-C13 provide converging quantitative evidence from systematic analysis of 5718 high-resolution crystal structures. The 13:1 ratio, the 36% non-aromatic involvement, and the prevalence of backbone contacts are all directly measured from structural data with clear methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C5",
+      "C24",
+      "C25"
+    ],
+    "result": "Pi-pi contact frequencies increase linearly with crystal structure resolution and NMR constraint density, and are lost during molecular dynamics simulations and energy minimization, indicating that these interactions are underestimated by force-fields used in structure calculations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18, C5, C24-C25 demonstrate through multiple independent lines of evidence (resolution dependence, NMR constraints, MD simulations, energy prediction accuracy) that force-fields systematically underestimate pi-pi interactions. The 90% loss during MD simulation and decreased \u0394\u0394G prediction accuracy at pi-contact positions provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Pi-pi contact frequency shows a positive correlation with solvation, with non-aromatic contacts becoming dominant at high solvation levels, and the relative increase being highest for like-charge contacts, especially arginine-arginine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are supported by systematic analysis of water contacts in high-resolution structures showing clear positive correlation. The observation that non-aromatic and like-charge contacts increase more with solvation provides mechanistic insight, though the underlying physical mechanism remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C7"
+    ],
+    "result": "Pi-pi interactions are enriched in regions lacking regular secondary structure, with contact frequency showing a sigmoidal relationship transitioning from 9.5% probability in ordered regions to 16% in disordered regions (>7 positions from helix/strand).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36, C7 provide quantitative evidence from secondary structure analysis showing clear enrichment in loops and disordered regions. The sigmoidal relationship and specific probability values are directly measured from structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "At protein-protein interfaces, overall and local pi-pi contact frequencies remain similar to non-interface positions, but there is a significant exchange of long-range inter-chain to intra-chain contacts, suggesting that non-local pi-pi contact propensity plays a general role in mediating protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by systematic analysis of interface vs. non-interface residues showing the exchange pattern. However, C40's extension to phase separation is speculative. The observation at crystal packing interfaces strengthens the generality claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C85"
+    ],
+    "result": "Replacing all 24 arginine residues with lysine in Ddx4 1-236 abolishes phase separation even at 400 mg/ml (200-fold higher than wild-type), providing evidence that the pi-character of arginine is critical for phase separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42, C85 provide direct experimental evidence through mutagenesis that arginine's pi-character (not just charge) is essential for phase separation. The 200-fold concentration difference is a dramatic effect, though only one protein system is tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C84"
+    ],
+    "result": "A phase separation predictor based solely on pi-pi contact propensity achieves AUC of 0.88-0.96 depending on test set stringency, with 8/11 training proteins and 81% (26/32) of self-sufficient test proteins scoring in the 99th percentile, demonstrating that long-range pi-contact propensity is sufficient for identifying most phase-separating proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50, C84 provide comprehensive quantitative validation across multiple test sets including natural and synthetic sequences. The high AUC values and consistent performance across different negative sets (human proteome, E. coli, yeast) support the predictor's validity, though the true positive rate in proteomes is unknown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The PScore predictor is better at identifying phase-separating proteins than disorder predictors (Disopred3, IUPRED-Long), highlighting only a subset of disordered proteins, with AUC of 0.84-0.93 when using known disordered proteins as the negative set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 demonstrate through direct comparison that PScore captures a distinct property beyond general disorder. The maintained high AUC (0.84-0.93) when using disordered proteins as negatives is strong evidence of specificity for phase separation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "FMR1 C-terminus (residues 445-632) undergoes liquid phase separation at 1 mM concentration at low temperature, and replacing all 28 arginine residues with lysine abolishes this behavior, validating the predictor and the importance of arginine pi-character.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 provide experimental validation of a novel prediction. The phase separation observation and the arginine-to-lysine mutation effect both support the predictor's utility and the mechanistic role of pi-interactions, though high concentrations are required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Human cytomegalovirus pAP shows reversible liquid phase separation with increasing temperature, and engrailed-2 shows temperature-dependent droplet formation with crowding reagent, validating predictions for proteins dissimilar to the training set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 provide experimental validation of predictions for proteins with novel functions and sequences dissimilar to training set. The requirement for crowding reagent for engrailed-2 suggests weaker phase separation propensity, but both validate the predictor's generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Sp2-containing sidechains show enrichment of planar contacts relative to sp3 controls, and 3.6% of arginine sidechains form direct pi-stacking contacts with other arginines despite charge repulsion, suggesting these are pi-pi rather than cation-pi interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 provide evidence through comparison with sp3 controls and the surprising arginine-arginine stacking observation. The inference that these are pi-pi rather than cation-pi is reasonable given the charge repulsion, though alternative explanations (screening, specific geometry) are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Pi-pi contacts are enriched 1.87-fold at catalytic sites, hydrogen bonding frequency increases at sp2 sidechains involved in pi-contacts, and a third sp2 group is frequently found stacking to both donor and acceptor of hydrogen bonds, suggesting cooperativity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 demonstrate functional enrichment at catalytic sites and correlation with hydrogen bonding. The quantitative enrichment values and the three-way interaction observation support a functional role, though the cooperativity mechanism remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Pi-pi contacts show up to 20-fold enrichment at the ends of secondary structure elements, often involving terminal hydrogen bonds, and protein-RNA interactions typically involve pi-pi contacts, especially with arginine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 identify specific structural contexts where pi-pi contacts are enriched. The 20-fold enrichment at secondary structure ends and the prevalence in RNA binding are well-documented observations, though mechanistic interpretation is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Long-range backbone contact predictions alone provide comparable predictive power to the full optimized predictor, and non-phase-separating disordered proteins are depleted in Gly/Pro but enriched in Lys compared to phase-separating sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 provide mechanistic insight into the predictor through retrospective analysis. The finding that backbone contacts are sufficient and the compositional differences between high and low PScore disordered proteins help explain what the predictor captures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "High-scoring proteins are over two-fold more likely to interact with proteins of similar score, and 26/28 known phase-separating proteins appear as contaminants in AP-MS experiments, with 17/28 appearing in >10% of experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 provide orthogonal validation through protein interaction data and AP-MS contamination patterns. The enrichment in like-score interactions and high contamination rates are consistent with phase separation behavior, though contamination has multiple causes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "40\u00b12% of proteins with PScore\u22654 have alternative splice variants that significantly change the score (vs. 23% baseline), and the number of phosphorylation and methylation sites correlates with PScore, with methylation showing stronger effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 demonstrate potential regulatory mechanisms through splicing and PTMs. The enrichment in splice variants affecting PScore and the correlation with PTM sites are well-documented, suggesting biological regulation of phase separation propensity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "High PScore proteins are enriched in GO terms for known phase-separated compartments (stress granules, Cajal bodies), RNA processing, structural assembly, and signaling/development, while 77.2% of GO terms show no enrichment, with depletion in metabolic/catalytic processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 demonstrate biological relevance through GO term enrichment analysis. The enrichment in known phase-separating compartments validates the predictor, while the functional enrichments suggest broader roles. The lack of enrichment in most terms indicates specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Specific PScore predictions are provided for cytoskeletal proteins (desmin 4.3, vimentin 4.4, keratins 5.9/5.4), signaling proteins (APC 3.2, axin1 2.2, \u03b2-catenin 5.5, GSK3\u03b1 6.4, GSK3\u03b2 2.2), and chaperones (DNAJB6 8.8), with literature support for phase separation-related phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C83 provide specific predictions with biological context. The cited literature on Mallory-Denk bodies (C75) and huntingtin aggregation (C78) supports the biological relevance, though these are primarily predictions rather than experimental validations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C14",
+      "C19"
+    ],
+    "result": "VDW contacts between aromatic sidechains coincide with face-to-face pi-pi stacking to a third sp2 group 49% of the time, and pi-pi contact frequencies for small ligands bound to proteins are higher than for the same groups within proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C19 provide additional observations about pi-pi contact geometry and ligand binding. The 49% three-way interaction frequency and higher ligand contact frequencies are interesting but represent secondary observations supporting the general prevalence of pi-pi interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Protein phase separation is implicated in membraneless organelles, signaling puncta, and the nuclear pore, can be driven by multivalent interactions of modular binding domains, and known phase-separating proteins are enriched in pi-orbital containing residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 are established background knowledge cited appropriately. Claim C3 is an observation motivating the study, supported by analysis of known phase-separating proteins, though the specific enrichment values are not provided in these claims.",
+    "result_type": "MINOR"
+  }
+]

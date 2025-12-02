@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The manuscript establishes background knowledge about RIG-I structure, function, and disease associations. RIG-I is an SF2 helicase that detects viral dsRNA and requires both ATP and RNA binding for activation. ATP hydrolysis provides proofreading activity to distinguish self from viral RNA, and mutations affecting this process cause autoimmune diseases including Singleton-Merten syndrome (SMS).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C23 represent well-established background knowledge supported by multiple citations to prior literature. These claims provide necessary context for understanding the novel findings about the C268F mutation and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The RIG-I SMS variants C268F and E373A are located in ATP binding/hydrolysis motifs I and II respectively, and both show constitutive activity. The E373A mechanism is explained by reduced ATP hydrolysis while maintaining ATP binding, whereas C268F shows constitutive activity despite being in the same P-loop as the inactive K270A mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 establish the contrasting behaviors of different motif I mutations and the known mechanism for E373A, setting up the central puzzle of how C268F causes constitutive activation. These claims are supported by citations and experimental data from Figure 1\u2014figure supplement 2A.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C36",
+      "C37",
+      "C74",
+      "C75"
+    ],
+    "result": "RIG-I C268F signaling is RNA-dependent but not due to 2CARD liberation in the absence of RNA. The double mutant C268F/T347A (which impairs RNA binding) fails to induce IFN-\u03b2 promoter activity, demonstrating that C268F requires RNA binding for signaling, similar to wild-type RIG-I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33, C36-C37, C74-C75 are well-supported by the luciferase reporter assay data in Figure 1A. The use of the T347A mutation as a control to test RNA-dependence is appropriate and the conclusion that C268F requires RNA binding is logically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Competition assays show that signaling-deficient RIG-I \u03942CARD or RIG-I \u03942CARD E373Q can titrate out C268F activity, suggesting they recognize identical RNA substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 are supported by data in Figure 1\u2014figure supplement 2B. The competition experiment is well-designed and the interpretation that both proteins recognize the same RNA substrates is reasonable, though alternative explanations (e.g., protein-protein interactions) are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C61"
+    ],
+    "result": "RIG-I C268F displays increased affinity for dsRNA compared to wild-type, and this affinity is further enhanced in the presence of ATP. Wild-type RIG-I shows decreased RNA affinity in the presence of ATP. C268F has two conformations (apo and ATP-bound) with increased dsRNA affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 and C61 are supported by fluorescence anisotropy data in Figure 1B. The experiments are appropriately designed with n=4 replicates. The conclusion that C268F has increased RNA affinity in both apo and ATP-bound states is well-supported, though KD values are not explicitly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "RIG-I C268F shows loss of ATP hydrolysis activity in the presence of dsRNA, supporting a model where C268F cannot dissociate from RNA due to lack of ATP turnover and translocation capability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by ATP hydrolysis assay data in Figure 2A using 32P-labeled ATP. The experimental approach is standard and appropriate. The inference that loss of ATP hydrolysis prevents RNA dissociation is logical and consistent with prior work (C2, C18, C19).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C80",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "ATP binding affinity measurements show that C268F has reduced ATP binding (166 \u00b1 34 \u00b5M) compared to wild-type (72 \u00b1 13 \u00b5M) or E373Q (72 \u00b1 13 \u00b5M), similar to the ATP-binding-deficient K270I mutant (298 \u00b1 81 \u00b5M). RNA increases ATP affinity for wild-type and E373Q but not for K270I or C268F.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 and C80-C86 are supported by MANT-ATP binding data in Figure 2B and Table 1 with n=4 replicates. The finding that C268F has reduced ATP binding despite being constitutively active is puzzling and well-documented, setting up the key mechanistic question addressed by structural studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Despite reduced ATP binding, C268F can signal in the absence of ATP, whereas K270I cannot, even though both are motif I mutants with reduced ATP binding. This suggests C268F has a unique mechanism for activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 synthesize the biochemical data to highlight the paradox: C268F signals despite reduced ATP binding, unlike K270I. This is supported by comparing luciferase data (Figure 1\u2014figure supplement 2A) with ATP binding data (Figure 2B, Table 1). The reasoning is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Engineering ATP-binding mutations R244A, Q247A into C268F partially reduces its signaling activity in response to endogenous or ppp-dsRNA, suggesting ATP binding at cellular concentrations contributes to C268F pathogenic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by luciferase data in Figure 2C. The triple mutant shows reduced but still elevated signaling compared to wild-type, suggesting C268F can signal both with and without ATP. The experiment is well-designed to test the contribution of ATP binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C6",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Crystal structures of RIG-I \u03942CARD C268F bound to dsRNA reveal that the F268 side chain displaces K270 from its ATP-binding position to a site normally occupied by Mg2+, where K270 forms a salt bridge with E702. This creates an ATP-like conformation without bound nucleotide, explaining ATP-independent signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C6, C52-C56, C71-C73 are supported by crystallographic data at 2.9-3.3 \u00c5 resolution (Table 2, Figure 3A, Figure 3\u2014figure supplement 1, Video 1). Two independent crystal forms were solved. The structural interpretation is clear and well-documented. The absence of nucleotide density despite crystallization attempts with ATP/ADP\u00b7BeFx is significant and supports the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Mutational analysis shows that disrupting K270 in C268F abolishes activity, while mutating E702 reduces but does not eliminate activity. E702A alone induces an autoimmune phenotype, suggesting the salt bridge is important but E702 has additional roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by luciferase data in Figure 3B. The differential effects of K270 vs E702 mutations provide functional validation of the structural model. The interpretation that K270 is essential while E702 has multiple roles is reasonable, though the authors acknowledge complexity in the E702 results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C63"
+    ],
+    "result": "C268F stabilizes an ATP-like state without ATP but can still form a proper ATP-bound state. At high cellular ATP concentrations, ATP binding likely contributes to pathogenic signaling activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C60 is a reasonable inference from structural and biochemical data, but claim C63 is explicitly speculative (\"it is very possible\"). While the triple mutant data (C62) supports some ATP contribution, the inability to co-crystallize with nucleotide and the lack of direct evidence for ATP binding at physiological concentrations leaves this uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The C268F mutation represents a novel mechanism where a P-loop mutation mimics ATP binding effects without ATP. Both SMS variants (C268F and E373A) trap RIG-I in an ATP-bound state (mimicked or stabilized), preventing ATP hydrolysis and RNA dissociation, leading to autoimmune signaling from self-RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C7, C64, C66-C70 represent the main conclusions integrating all experimental data. The unified mechanism for both SMS variants is well-supported by the combination of structural (C52-C56), biochemical (C42, C48), and functional (C32-C33, C39) data. The claim that this is the first demonstration of a P-loop mutation mimicking ATP binding is appropriately qualified (\"to our knowledge\").",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Wild-type RIG-I uses ATP turnover to decrease affinity for self-RNA, providing a proofreading mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 summarizes established knowledge from prior work (C2, C18, C19) and is illustrated in Figure 4A. This provides important context for understanding how SMS mutations disrupt normal function.",
+    "result_type": "MINOR"
+  }
+]

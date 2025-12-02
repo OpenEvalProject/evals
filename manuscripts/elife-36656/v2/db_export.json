@@ -1,0 +1,1527 @@
+{
+  "submission": {
+    "id": "4f7d8f58-c77a-419e-8ca1-eee6f1ceec2f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:03:14.594262Z",
+    "updated_at": "2025-12-02T01:03:14.594262Z"
+  },
+  "content": [
+    {
+      "id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "submission_id": "4f7d8f58-c77a-419e-8ca1-eee6f1ceec2f",
+      "content_type": "manuscript",
+      "content_text": "# Dynamics of human protein kinase Aurora A linked to drug selectivity\n\n## Authors\n\n- Warintra Pitsawong<sup>1</sup> ([ORCID: 0000-0001-5438-1783](https://orcid.org/0000-0001-5438-1783))\n- Vanessa Buosi<sup>1</sup>\n- Renee Otten<sup>1</sup> ([ORCID: 0000-0001-7342-6131](https://orcid.org/0000-0001-7342-6131))\n- Roman V Agafonov<sup>1</sup>\n- Adelajda Zorba<sup>1</sup> ([ORCID: 0000-0002-4452-8419](https://orcid.org/0000-0002-4452-8419))\n- Nadja Kern<sup>1</sup> ([ORCID: 0000-0002-1313-5890](https://orcid.org/0000-0002-1313-5890))\n- Steffen Kutter<sup>1</sup> ([ORCID: 0000-0002-0349-8161](https://orcid.org/0000-0002-0349-8161))\n- Gunther Kern<sup>1</sup>\n- Ricardo AP P\u00e1dua<sup>1</sup> ([ORCID: 0000-0001-9719-3440](https://orcid.org/0000-0001-9719-3440))\n- Xavier Meniche<sup>2</sup>\n- Dorothee Kern<sup>1</sup> ([ORCID: 0000-0002-7631-8328](https://orcid.org/0000-0002-7631-8328)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry Howard Hughes Medical Institute, Brandeis University Waltham United States\n2. Department of Microbiology and Physiological Systems University of Massachusetts Medical School Worcester United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nProtein kinases are major drug targets, but the development of highly-selective inhibitors has been challenging due to the similarity of their active sites. The observation of distinct structural states of the fully-conserved Asp-Phe-Gly (DFG) loop has put the concept of conformational selection for the DFG-state at the center of kinase drug discovery. Recently, it was shown that Gleevec selectivity for the Tyr-kinase Abl was instead rooted in conformational changes after drug binding. Here, we investigate whether protein dynamics after binding is a more general paradigm for drug selectivity by characterizing the binding of several approved drugs to the Ser/Thr-kinase Aurora A. Using a combination of biophysical techniques, we propose a universal drug-binding mechanism, that rationalizes selectivity, affinity and long on-target residence time for kinase inhibitors. These new concepts, where protein dynamics in the drug-bound state plays the crucial role, can be applied to inhibitor design of targets outside the kinome.\n\n## Introduction\n\nProtein kinases have become the number one drug target of the 21th century (Cohen, 2002; Hopkins and Groom, 2002), due to their central role in cellular processes and involvement in various types of cancer (Carvajal et al., 2006; Gautschi et al., 2008; Katayama and Sen, 2010). Despite their therapeutic significance, the development of specific kinase inhibitors proves to be extremely challenging because they must discriminate between the very similar active sites of a large number of kinases in human cells. One of the biggest success stories is Gleevec: a highly selective drug that specifically targets Abl kinase, providing an efficient treatment of chronic myelogenous leukemia (CML) and minimizing side effects (Iqbal and Iqbal, 2014). Despite being a multi-billion-dollar cancer drug, the mechanism responsible for its impressive selectivity has been elusive until recently. Seminal work by the Kuriyan lab demonstrated that Gleevec can only bind to an inactive DFG (for Asp-Phe-Gly) loop conformation in the \u2018out-conformation\u2019 due to steric clash of the active, DFG-in conformation (Nagar et al., 2002; Schindler et al., 2000; Seeliger et al., 2007). Since then it has long been proposed that the conformational state of the fully-conserved DFG loop (Taylor et al., 2012) dictates the selectivity for Gleevec and other kinase inhibitors (Lovera et al., 2012; Nagar et al., 2002; Schindler et al., 2000; Treiber and Shah, 2013; Xu et al., 1997). The orientation of the DFG-motif and its possible steric clashes is indeed important for the ability of a class of inhibitors to bind to the kinase, but proved insufficient to explain drug selectivity and affinity. Earlier elegant work on Src and Abl recognized this and explored other hypotheses (e.g., differences in drug-binding pocket, energetic changes remote from the binding site and a conformational-selection mechanism) to reconcile the differences in Gleevec binding (Dar et al., 2008; Levinson et al., 2006; Seeliger et al., 2007; 2009), but without conclusive success. Recent quantitative binding kinetics combined with ancestral sequence reconstruction put forward a mechanism where an induced-fit step after drug binding is the key determinant for Gleevec\u2019s selectivity (Agafonov et al., 2014; Wilson et al., 2015), and fully recapitulates the binding affinities.\n\nHere we ask the question whether this fundamentally different mechanism is a more general principle for drug efficacy and selectivity not only for Tyr kinases such as Abl, but also for Ser/Thr kinases. To this end, we chose the Ser/Thr kinase Aurora A and investigated the binding kinetics of three distinct kinase drugs: Danusertib, AT9283, and Gleevec. Aurora A kinase is one of the key regulators of mitotic events, including mitotic entry, centrosome maturation and spindle formation (Fu et al., 2007; Lukasiewicz and Lingle, 2009; Marumoto et al., 2005), as well as assisting in neuronal migration (Nikonova et al., 2013). Aurora A has attracted significant attention for the development of targeted agents for cancer because it is overexpressed in a wide range of tumors, including breast, colon, ovary and skin malignancies (Carvajal et al., 2006; Gautschi et al., 2008; Katayama and Sen, 2010; Lok et al., 2010; Marzo and Naval, 2013). The focus was mainly on ATP-competitive inhibitors, but more recently inhibition by allosteric compounds has also been pursued with the aim of achieving higher selectivity (Asteriti et al., 2017; Bayliss et al., 2017; Burgess et al., 2016; Jane\u010dek et al., 2016; McIntyre et al., 2017). So far, only the clinical significance of Aurora A inhibition by ATP-competitive drugs has been established (Bavetsias and Linardopoulos, 2015; Borisa and Bhatt, 2017), but little is known about their binding mechanisms. Many high-resolution X-ray structures of Aurora A kinase bound to different inhibitors have been solved (Bavetsias et al., 2015; Dodson et al., 2010; Fancelli et al., 2006; Ferguson et al., 2017; Heron et al., 2006; Howard et al., 2009; Kilchmann et al., 2016; Martin et al., 2012; Zhao et al., 2008), but the selectivity profile of those kinase inhibitors remains very difficult to explain.\n\nThe drugs used in this study are small, ATP-competitive inhibitors. Danusertib (PHA739358) and AT9283 were developed for Aurora kinases, whereas Gleevec is selective for the Tyr kinase Abl. Danusertib inhibits all members of the Aurora family with low nanomolar IC50 values (13, 79 and 61 nM for Aurora A, B and C, respectively) (Carpinelli et al., 2007; Fraedrich et al., 2012) and was one of the first Aurora kinase inhibitors to enter phase I and II clinical trials (Kollareddy et al., 2012; Steeghs et al., 2009). A crystal structure of Danusertib bound to Aurora A kinase shows an inactive kinase with the DFG-loop in the out conformation (Fancelli et al., 2006). AT9283 inhibits both Aurora A and B with an IC50 of 3 nM (Howard et al., 2009) and has also entered several clinical trials (Borisa and Bhatt, 2017). Interestingly, the crystal structure of Aurora A with AT9283 shows that this drug binds to the DFG-in, active conformation of the kinase (Howard et al., 2009). Both drugs are high-affinity binders that reportedly bind to a discrete kinase conformation and would allow us to probe for a conformational-selection step. Lastly, we selected Gleevec as a drug that is not selective for Aurora A and should, therefore, have a weaker binding affinity. We reasoned that this choice of inhibitors could reveal general mechanisms underlying drug selectivity and affinity.\n\nThe combination of X-ray crystallography, NMR spectroscopy and comprehensive analysis of drug binding and release kinetics delivered a general mechanistic view. Differential drug affinity is not rooted in the overwhelmingly favored paradigm of the DFG-conformation, but instead in the dynamic personality of the kinase that is manifested in conformational changes after drug binding. Notably, such conformational changes have evolved for its natural substrates, and the drugs take advantage of this built-in protein dynamics.\n\n## Results\n\n### Dephosphorylated Aurora A samples both an inactive and active structure\n\nA plethora of X-ray structures and functional assays led to the general notion that dephosphorylated Aurora A and, more universally, Ser/Thr kinases are in an inactive conformation and that phosphorylation or activator binding induces the active structure. A comparison of many X-ray structures of inactive and active forms of Ser/Thr kinases resulted in an elegant proposal of the structural hallmarks for the active state by Taylor and collaborators: the completion of both the regulatory and catalytic spines spanning the N- and C-terminal domains, including the orientation of the DFG-motif (Kornev and Taylor, 2010; 2015). X-ray structures, however, provide merely static snapshots of possible kinase conformations that do not necessarily reflect the situation in solution. In fact, recent experimental data postulate that phosphorylation of Aurora A does not \u2018lock\u2019 the kinase in the active conformation, and that the activation-loop still exhibits conformational dynamics (Gilburt et al., 2017; Ruff et al., 2018). On the other hand, X-ray crystallography provides high-resolution structural data that cannot readily be obtained from FRET or EPR and IR spectroscopy.\n\nTwo crystals from the same crystallization well capture both the inactive and active conformations of dephosphorylated Aurora A bound with AMPPCP (Figure 1A,B). As anticipated, the first structure (PDB 4C3R [Zorba et al., 2014]) superimposes with the well-known inactive, dephosphorylated Aurora A structure (PDB 1MUO [Cheetham et al., 2002]) and the activation loop is not visible as commonly observed for kinases lacking phosphorylation of the activation loop (Zorba et al., 2014). The second structure (PDB 6CPF; Table 1) adopts the same conformation as the previously published phosphorylated, active structure (PDB 1OL7 [Bayliss et al., 2003]) (Figure 1C) and the first part of the activation loop could be built, although the B-factors are high. Every hallmark of an active state is seen for this dephosphorylated protein, including the DFG-in conformation that is essential for completing the regulatory spine. In contrast, the DFG-loop is in the out position for the inactive form of Aurora A (Figure 1D, cyan). In the active, non-phosphorylated structure, electron density is seen in the canonical tighter Mg2+-binding site, where the metal ion is coordinated to the \u03b1- and \u03b2-phosphates of AMPPCP and Asp274. The presence of the metal is supported by the CheckMyMetal (Zheng et al., 2017) validation, except that the coordination is incomplete. We surmise that two water molecules, not visible in our data, complete the coordination sphere as is seen in several higher-resolution structures. In the inactive structure, no electron density for Mg2+ can be identified possibly due to the fact that Asp274 is rotated to the DFG-out position and is, therefore, lost as coordination partner. Furthermore, sampling of the active conformation does not depend on AMPPCP binding as dephosphorylated, apo Aurora A also crystallizes in the active form (PDB 6CPE; Figure 1E,F and Table 1). Our results are consistent with other crystallographic studies on wild-type, dephosphorylated Aurora A in its apo or nucleotide bound state, where the kinase was also found in the active conformation (Gustafson et al., 2014; Jane\u010dek et al., 2016; Nowakowski et al., 2002).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig1-v2.jpg)\n\n**Figure 1.:** (A) Superposition of X-ray structures of dephosphorylated Aurora A (residues 122\u2013403) with Mg2+\u00b7AMPPCP (AMPPCP in gray sticks and magnesium as yellow sphere) in the inactive (cyan, PDB 4C3R [Zorba et al., 2014]) and active (orange, PDB 6CPF) state, solved from crystals of the same crystallization well. (B) Zoom-in of (A) to visualize the nucleotide binding region (K162, D274, and E181), the R-spine (L196, Q185, F275, H254, and D311) and the activation loop region (D256, K258, and T292). (C) Same zoom-in as in (B), but dephosphorylated Aurora A in active state (orange) is superimposed with phosphorylated Aurora A (red, PDB 1OL7 [Bayliss et al., 2003]). (D) Superposition of the DFG(W) motif in the three states shown in (B) and (C). (E) Superposition of phosphorylated Aurora A in active conformation (red) and apo, dephosphorylated Aurora A also in the active conformation (yellow, PDB 6CPE). (F) Zoom-in of (E) showing the same region as in (B).\n\n**Table 1.**\n Data collection and refinement statistics for dephosphorylated Aurora A (122-403).\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>apo-Aurora A (6CPE)</th>\n      <th>Aurora A\u00a0+\u00a0AMPPCP (6CPF)</th>\n      <th>Aurora A\u00a0+\u00a0Mb\u00a0+\u00a0AT9283 (6CPG)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data collection</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P 61 2 2</td>\n      <td>P 61 2 2</td>\n      <td>P 21 21 21</td>\n    </tr>\n    <tr>\n      <td>Cell dimensions</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>a, b, c (\u00c5)</td>\n      <td>80.55, 80.55, 169.79</td>\n      <td>81.75, 81.75, 172.87</td>\n      <td>63.86, 69.7, 175.56</td>\n    </tr>\n    <tr>\n      <td>\u03b1, \u03b2, \u03b3 (\u00b0)</td>\n      <td>90, 90, 120</td>\n      <td>90, 90, 120</td>\n      <td>90, 90, 90</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>84.90\u20132.45 (2.55\u20132.45)*</td>\n      <td>86.44\u20132.30 (2.39\u20132.30)*</td>\n      <td>43.14\u20132.80 (2.87\u20132.80)*</td>\n    </tr>\n    <tr>\n      <td>Rmeas</td>\n      <td>0.073 (1.308)</td>\n      <td>0.113 (2.260)</td>\n      <td>0.189 (1.268)</td>\n    </tr>\n    <tr>\n      <td>I/\u03c3(I)</td>\n      <td>15.0 (1.6)</td>\n      <td>10.3 (1.3)</td>\n      <td>8.9 (1.1)</td>\n    </tr>\n    <tr>\n      <td>CC1/2</td>\n      <td>0.998 (0.711)</td>\n      <td>0.997 (0.465)</td>\n      <td>0.986 (0.625)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>99.9 (100)</td>\n      <td>100 (100)</td>\n      <td>99.2 (98.8)</td>\n    </tr>\n    <tr>\n      <td>Redundancy</td>\n      <td>7.6 (6.3)</td>\n      <td>9.7 (7.8)</td>\n      <td>5.4 (5.3)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>64.52\u20132.45</td>\n      <td>54.79\u20132.30</td>\n      <td>36.17\u20132.80</td>\n    </tr>\n    <tr>\n      <td>No. reflections</td>\n      <td>12617 (1224)</td>\n      <td>15756 (1527)</td>\n      <td>19556 (1845)</td>\n    </tr>\n    <tr>\n      <td>Rwork/Rfree</td>\n      <td>0.2151/0.2528</td>\n      <td>0.2179/0.2587</td>\n      <td>0.2792/0.3350</td>\n    </tr>\n    <tr>\n      <td>No. atoms</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>2035</td>\n      <td>2055</td>\n      <td>5122</td>\n    </tr>\n    <tr>\n      <td>Ligand/ion</td>\n      <td>11</td>\n      <td>32</td>\n      <td>56</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>4</td>\n      <td>6</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>B factors</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>71.83</td>\n      <td>63.68</td>\n      <td>78.84</td>\n    </tr>\n    <tr>\n      <td>Ligand/ion</td>\n      <td>75.77</td>\n      <td>76.44</td>\n      <td>81.05</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>52.52</td>\n      <td>45.84</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>R.m.s. deviations</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.005</td>\n      <td>0.004</td>\n      <td>0.003</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>0.98</td>\n      <td>0.97</td>\n      <td>0.98</td>\n    </tr>\n  </tbody>\n</table>\n\n_The number of crystals for each structure is one for apo-Aurora A and Aurora A\u00a0+\u00a0AMPPCP and two crystals for Aurora A\u00a0+\u00a0Mb\u00a0+\u00a0AT9283.*Values in parentheses are for highest-resolution shell._\n\nWe note that in Aurora kinase sequences a tryptophan residue, Trp277, is immediately following the DFG motif and displays a drastically different orientation whether Aurora A is in an active (DFG-in) or inactive (DFG-out) conformation (Figure 1D). This Trp moiety is unique for the Aurora kinase family in the Ser/Thr kinome and its position is suggested to be important for tuning the substrate specificity (Chen et al., 2014). We used this Trp residue as probe to monitor the DFG flip and drug binding in real time as described below.\n\nThe fact that the inactive and active states are seen in the crystal implies that both are sampled; however, it does not deliver information about the relative populations or interconversion rates. Therefore, we set out to monitor the conformational exchange of the DFG-in/out flip in solution. Owing to the reported importance of the DFG flip for activity, regulation and drug design, there have been extensive efforts to characterize this conformational equilibrium by computation (Badrinarayan and Sastry, 2014; Barakat et al., 2013; Meng et al., 2015; 2017; Sarvagalla and Coumar, 2015; Shukla et al., 2014). The general notion of these computational studies is that in the absence of phosphorylation the inactive form of the kinase is most favored, in agreement with experimental evidence. Nevertheless, short-lived excursions to the active state are observed.\n\nAs an experimental approach, NMR spectroscopy is an obvious choice; however efforts on several Ser/Thr and Tyr kinases led to the general conclusion that the activation loop, including the DFG motif and most of the active-site residues, cannot be detected due to exchange broadening, and at best can only be seen after binding of drugs that stabilize conformations (Campos-Olivas et al., 2011; Langer et al., 2004; Vajpai et al., 2008; Vogtherr et al., 2006).\n\n[1H-15N]-TROSY-HSQC experiments on uniformly 15N-labeled samples of Aurora A proved to be no exception: many peaks are missing and only three out of four tryptophan side chain indole signals are seen in the 2D spectra of a [15N]-Trp labeled sample (Figure 2A,B). Therefore, we sought a strategy to overcome this general problem of exchange broadening that hampers the detection of the DFG equilibrium. Aurora A was produced containing 5-fluoro-tryptophan residues to allow for one-dimensional 19F spectroscopy to deal with exchange broadening while providing sensitivity close to proton NMR (Kitevski-LeBlanc and Prosser, 2012). Now, we observe as expected four peaks in our NMR spectra for apo- and AMPPCP-bound wild-type Aurora A (Figure 2C). A deconvolution of the spectrum yields almost identical integral values for all four peaks, whereas the linewidth of one resonance is approximately 5-fold larger (Figure 2D, purple signal). This broad peak is a prime candidate to originate from Trp277, directly adjacent to the DFG-loop. The W277L mutation confirmed our hypothesis (Figure 2C), and the extensive line broadening of this signal in a one-dimensional spectrum is consistent with its absence in the [1H,15N]-TROSY-HSQC spectrum. Of note, the W277L mutant is still active, as confirmed by a kinase assay, most likely because this Trp is not conserved in Ser/Thr kinases, where a Leu residue is found at that position for several Ser/Thr family members. Mutating any of the other, more conserved Trp residues resulted in insoluble proteins. The broad line shape for the Trp277 peak hints at severe exchange broadening in the surrounding of the DFG-loop and is consistent with the high B-factors for Trp277 and its neighboring residues observed in all crystal structures described here. Determination of relative populations and rate constants of interconversion is not possible from this data, but this missing piece of information was obtained by stopped-flow kinetics of drug binding.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig2-v2.jpg)\n\n**Figure 2.:** (A) The four tryptophan residues in Aurora A are shown on the structure (PDB 4C3R [Zorba et al., 2014]) in stick representation; Trp277 in the DFGW-loop is highlighted in red. (B) Overlay of [1H-15N]-TROSY-HSQC spectra of dephosphorylated Aurora A in its apo-state (U-[15N], blue; [15N]-Trp, green) and AMPPCP-bound (U-[15N], red). Only three instead of the four expected cross peaks for tryptophan side chains are detected. (C) 19F NMR spectra of 5-fluoro-Trp labeled dephosphorylated wild-type Aurora A (apo in blue and AMPPCP-bound in red) and the W277L Aurora A mutant bound to AMPPCP (green). The assignment of Trp277 following the DFG-loop is shown. (D) 19F spectrum of wild-type Aurora A bound to AMPPCP (red) together with its deconvolution into four Lorentzian line shapes, the overall fit is shown as a black, dotted line. The integrals for all four signals are equal, but the linewidth for Trp277 (purple) is approximately 5-fold larger.\n\n### Gleevec binding to Aurora A distinguishes conformational selection versus induced-fit mechanisms\n\nThrough groundbreaking experiments on the Tyr kinases Abl and Src, the concept of drug selectivity based on the DFG-loop conformation has received considerable attention in kinase drug discovery (Lovera et al., 2012; Treiber and Shah, 2013). A recent report provides kinetic evidence for such conformational selection, but identifies an induced-fit step after drug binding as the overwhelming contribution for Gleevec selectivity towards Abl compared to Src (Agafonov et al., 2014). Here, we ask the obvious question if this mechanism of Gleevec binding to Abl might exemplify a more general mechanism for kinase inhibitors.\n\nTo assess which kinetic steps control drug affinity and selectivity, we first studied the binding kinetics for Gleevec to Aurora A by stopped-flow spectroscopy using intrinsic tryptophan fluorescence under degassing conditions to reduce photobleaching. At 25\u00b0C, the binding of Gleevec to Aurora A was too fast to be monitored and, therefore, experiments were performed at 10\u00b0C. Binding kinetics of Gleevec to Aurora A exhibited biphasic kinetic traces (Figure 3A). The first, fast phase is characterized by a decrease in the fluorescence intensity (Figure 3A,B), with an observed rate constant, $k_{obs}$, increasing linearly with Gleevec concentration (Figure 3C). The slope corresponds to the bimolecular rate constant, $k_{2}$ = 1.1 \u00b1 0.3\u00a0\u03bcM\u22121s\u22121, of Gleevec binding to Aurora A and the dissociation of Gleevec is determined from the intercept, $k_{-2}$ = 31 \u00b1 2 s\u22121 (Figure 3C). We note that the parameters for the physical binding step are comparable to the ones obtained for Gleevec binding to Abl (cf. $k_{2}$ = 1.5 \u00b1 0.1 \u03bcM\u22121s\u22121 and $k_{-2}$ = 25 \u00b1 6 s\u22121, measured at 5\u00b0C) (Agafonov et al., 2014). The second, slow phase exhibits an increase in fluorescence intensity (Figure 3A), with the observed rate constant decreasing with Gleevec concentration (Figure 3D). The decreasing $k_{obs}$ provides unequivocal evidence of conformational selection, where its rate of interconversion is slower than the rate of ligand dissociation ($k_{1}+k_{-1}\u226ak_{-2}$). The values of $k_{1}$ and $k_{-1}$ can be estimated by fitting the data to Equation 1 and are 0.014 \u00b1 0.001\u00a0s\u22121\u00a0and 0.011 \u00b1 0.002 s\u22121, respectively (Figure 3D). These rate constants represent the conformational change from DFG-in to -out and vice versa since Gleevec is a DFG-out selective inhibitor due to steric hindrance (Nagar et al., 2002; Schindler et al., 2000; Seeliger et al., 2007).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig3-v2.jpg)\n\n**Figure 3.:** (A) Kinetics after mixing 0.5 \u00b5M Aurora A with 4.5 \u00b5M Gleevec is double exponential with a fast decrease and a slow increase in fluorescence signal. (B) The decrease in fluorescence intensity due to the fast binding phase was completed within 0.25 s. (C) Observed rate constants of fast binding phase were plotted against increasing concentrations of\u00a0Gleevec ($k_{obs,\u00a0Binding}$= 1.1 \u00b1 0.3 \u00b5M\u22121s\u22121, $k_{diss}$ = 31 \u00b1 2 s\u22121 from the y-intercept). (D) The increase in fluorescence intensity of slow phase (A) is attributed to conformational selection. The plot of $k_{obs,\u00a0CS}$ of this slow phase versus Gleevec concentration was fit to Equation 1 and yields $k_{1}$= 0.014 \u00b1 0.001\u00a0s\u22121\u00a0and $k_{-1}$= 0.011 \u00b1 0.002 s\u22121. (E) Dissociation kinetics of pre-incubated solution with 5 \u00b5M Aurora A and 5 \u00b5M Gleevec measured by stopped-flow fluorescence after an 11-fold dilution of the complex yields the $k_{-2}$ = 23.3 \u00b1 2 s\u22121. (F) The macroscopic dissociation constant ($K_{D}$) of Gleevec binding to Aurora A measured by Creoptix WAVE. (G) Gleevec (labeled as G) binding scheme to Aurora A corresponds to a two-step binding mechanism: conformational selection followed by the physical binding step. The corresponding microscopic rate constants obtained from the global fit and calculated overall equilibrium and dissociation constants are shown. Fluorescence traces are the average of at least five replicate measurements (n > 5), and error bars and uncertainties given in C-G denote the (propagated) standard deviation in the fitted parameter.\n\nIn order to more rigorously analyze the data and test the model, all time courses of the fluorescence changes were globally fit using the microscopic rate constants determined above as starting values (Figure 4) to the model in Figure 3G, where also the resulting microscopic rate constants are given. The lack of a conformational transition after drug binding (i.e., induced-fit step) in Aurora A should dramatically decrease drug affinity in comparison to Abl. Indeed, Gleevec binds to Aurora A with a $K_{D}$ of 24 \u00b1 7 \u00b5M (Figure 3F) compared to the low nM affinity to Abl (Agafonov et al., 2014). Two pieces of independent evidence establish that there is indeed no induced-fit step in Gleevec binding to Aurora A: (i) the calculated\u00a0$K_{D}$ from the kinetic scheme is in agreement with the macroscopically measured $K_{D}$ (cf. Figure 3G and F), and (ii) the observed $k_{off}$ from the dilution experiment (Figure 3E) coincides with the physical dissociation rate (i.e., intercept of the binding plot, 31 \u00b1 2 s\u22121, in Figure 3C). In summary, the lack of an induced-fit step for Gleevec binding to Aurora A is the major reason for Gleevec\u2019s weak binding, and not the DFG-loop conformation or physical drug-binding step, consistent with our earlier results (Wilson et al., 2015).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig4-v2.jpg)\n\n**Figure 4.:** Fitting of kinetic traces (average, n > 5) of the mixing of 0.5 \u00b5M Aurora A with different Gleevec concentrations at two timescales, 0.25 and 120 s, and dissociation kinetics ($k_{off}$) were performed using the KinTek Explorer software with the binding scheme in Figure 3G. Red lines show the results of the global fit to the experimental data in black.\n\n### Kinetics of Danusertib binding to Aurora A: three-step kinetics with conformational selection and an induced-fit step\n\nNext, we wanted to shed light on why Danusertib, unlike Gleevec, binds very tightly to Aurora A. A high-resolution X-ray structure shows Danusertib bound to Aurora A\u2019s active site with its DFG-loop in the out conformation (Figure 5A) (Fancelli et al., 2006), and to rationalize Danusertib\u2019s high affinity we measured the kinetics of Danusertib binding to Aurora A directly by stopped-flow experiments at 25\u00b0C. An increase in fluorescence intensity was observed at all Danusertib concentrations and showed double-exponential behavior (Figure 5B). The dependence of the two observed rates constants on drug concentration is linear for one of them (Figure 5C) and non-linear for the other with an apparent plateau at approximately 16\u00a0\u00b1\u00a02 s\u22121 (Figure 5D). The step with linear inhibitor concentration dependence corresponds to the second-order binding step, whereas a non-linear concentration dependency hints at protein conformational transitions. For a hyperbolic increase of the observed rate with substrate concentrations, one cannot a priori differentiate between a conformational selection and an induced fit mechanism. However, conformational selection happens before drug binding, and the intrinsic slow DFG-in to DFG-out interconversion in Aurora A revealed by Gleevec binding (Figure 3) must, therefore, be unaltered. Since the apparent rate of 16\u00a0\u00b1\u00a02 s\u22121 (Figure 5D) is two orders of magnitude faster, it can only reflect an induced-fit step (i.e., $k_{obs}=k_{3}+k_{-3}$).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig5-v2.jpg)\n\n**Figure 5.:** (A) Danusertib bound to the DFG-out conformation of Aurora A is shown highlighting important active-site residues in stick representation (PDB 2J50 [Fancelli et al., 2006]). (B) The increase in fluorescence upon Danusertib binding is fitted to a double exponential. (C) Plot of $k_{obs,Binding}$ versus the concentration of Danusertib for the fast phase yields $k_{2}$ = 0.4 \u00b1 0.1 \u03bcM\u22121s\u22121 and $k_{-2}$ = 4.6 \u00b1 3 s\u22121 and the $k_{obs,IF}$ for the slow phase (D) reaches a plateau around 16 \u00b1 2 s\u22121. (E) Dissociation of Danusertib from Aurora A at 25\u00b0C after a 30-fold dilution of the Aurora A/Danusertib complex measured by Trp-fluorescence quenching and fitting with single exponential gives a value of $k_{-3}$ = (3.2 \u00b1 0.3) \u00d7 10\u22124 s\u22121. (F) Double-jump experiment (2 s incubation time of 1 \u03bcM Danusertib to Aurora A followed by 60 s long dissociation step initiated by a wash with buffer) was measured by Creoptix WAVE waveguide interferometry to properly define the value of $k_{-2}$ = 6.8 \u00b1 0.4 s\u22121. (G) Macroscopic dissociation constant ($K_{D}$) determined by Creoptix WAVE waveguide interferometry: surface-immobilized Aurora A was incubated with various concentrations of Danusertib (0.1 nM (black), 0.2 nM (blue), 0.4 nM (purple), 0.8 nM (red), 2.4 nM (green), 7.2 nM (pink), 21.6 nM (cyan), and 64.8 nM (orange)) and surface mass accumulation was observed until establishment of equilibrium. (H) A plot of the final equilibrium value versus Danusertib concentration yields a $K_{D}$ = 1.1 \u00b1 0.4 nM. (I) Binding scheme of Danusertib (labeled D) highlighting a three-step binding mechanism, containing both conformational selection and induced-fit step. Red lines in (B, F) and black line in (E) are the results from fitting. Kinetic constants shown in I determined from global fitting (Figure 6). Fluorescence traces are the average of at least five replicate measurements (n > 5), and error bars and uncertainties given in C-E, H, and I denote the (propagated) standard deviation in the fitted parameter.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Kinetic trace at 35\u00b0C of 18.2 \u00b5M Danusertib binding to 0.1 \u00b5M Aurora A.\u00a0The red line represents the best fit of the trace to a double exponential function. The initial fast increase in fluorescence is a convolution of the fast binding and induced-fit steps, whereas the slower phase gives an observed rate constant of approximately 0.1 s\u22121, suggestive of a third process (i.e., conformational selection). (B) Double-jump experiments measured with Creoptix WAVE waveguide intereferometry at 25\u00b0C using Danusertib and a 0.2, 0.4, 0.8 and 2 s incubation time. In the first step of the double jump, Danusertib is incubated with surface-immobilized Aurora A kinase before washing with buffer alone initiates dissociation in a second step. All traces show a single exponential decay with an observed rate constant of 6 s\u22121 and its amplitude increases with longer incubation time as more AurAout:D is formed. (C) Dilution of the Aurora A/Danusertib complex formed after 1 hour of incubation. The slow dissociation of Aurora A/Danusertib (limited by\u00a0$k_{\u22123}$) was measured by Creoptix WAVE waveguide interferometry and fitted to a single exponential with a value of\u00a0$k_{-3}$ = (2 \u00b1 0.6) \u00d7 10\u22124 s\u22121. (D) Representative selection of emission spectra obtained after the addition of increasing concentrations of Danusertib (0\u201311.25 nM from dark to light blue) to Aurora A (excitation at 295 nm). Plot of the increase in fluorescence intensity at 368 nm versus Danusertib concentration yields a $K_{D}$ value of 0.4 \u00b1 0.1 nM determined by fitting the data to Equation 6. Fluorescence trace in A is the average of five replicate measurements (n = 5), and the uncertainties given in D denotes the standard deviation in the fitted parameter.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) 0.5 \u00b5M Aurora A was mixed with indicated Gleevec concentrations. The increase in fluorescence intensity of slow phase reflects the conformational selection step (see Figure 3A). (B) $k_{obs,CS}$ of the slow phase as a function of the Gleevec concentration is an inverse hyperbolic function and fitting to Equation 1 gives $k_{1}$ = 0.09 \u00b1 0.01 s\u22121 and $k_{-1}$= 0.06 \u00b1 0.005 s\u22121. Corresponding binding scheme is depicted. Fluorescence traces are the average of at least five replicate measurements (n > 5), and error bars and uncertainties given in B denote the standard deviation in the fitted parameter.\n\nSo, what happened to the conformational selection step? We hypothesize that the lack of this step in our kinetic traces is due to a too small amplitude of this phase, or not observable because of photobleaching having a bigger effect at the longer measurement times. To lessen potential photobleaching, we reduced the enzyme concentration and increased the temperature to 35\u00b0C. Indeed, under these conditions, the slow DFG-in to DFG-out kinetics were observed as an increase of fluorescence intensity over time with an observed rate constant of approximately 0.1 s\u22121 (Figure 5\u2014figure supplement 1A).\n\nWhile these experiments clearly establish the three-step binding mechanism, it does not provide accurate rate constants for the conformational selection step and it cannot be observed at 25\u00b0C where all the other kinetic experiments are performed. To resolve this issue, we repeated the Aurora A\u2013Gleevec experiment at 25\u00b0C (Figure 5\u2014figure supplement 2A,B) and obtained reliable rate constants ($k_{1}$ = 0.09 \u00b1 0.01 s\u22121 and $k_{-1}$ = 0.06 \u00b1 0.005 s\u22121) for the conformational selection step in Aurora A, which will be used as \u2018knowns\u2019 in what follows. We hypothesize that the conformational selection step reflects the interconversion between inactive/active conformations and is correlated with the DFG-out and -in position (Figure 1). The following observations support our hypothesis: (i) two crystal structures for the apo-protein show Trp277 in very different environments (Figure 1E), (ii) Danusertib has been proposed to selectively bind to the DFG-out conformation based on a co-crystal structure (Figure 5A) (Fancelli et al., 2006), and (iii) the same slow step is observed for binding of both Gleevec and Danusertib.\n\nNext, the dissociation kinetics for Danusertib was measured by fluorescence and appeared to be extremely slow with an observed slow-off rate of (3.2 \u00b1 0.3) \u00d7 10\u22124 s\u22121 (Figure 5E). Rationalization of complex binding kinetics cannot be done anymore by visual inspection and kinetic intuition, which can, in fact, be misleading. In order to elucidate the correct binding mechanism and obtain accurate kinetic parameters, all kinetic traces were globally fit (Figure 6) to the three-step binding scheme (Figure 5I). Although global fitting of the binding and dissociation kinetics in KinTek Explorer delivered a value for $k_{-2}$, evaluation of the kinetic scheme with respect to the time traces exposes that $k_{-2}$ is not well determined from our experiments. We therefore designed a double-jump experiment to populate the AurAout:D state followed by dissociation to obtain more accurate information on $k_{-2}$. Our stopped-flow machine lacks the capability to perform double mixing\u00a0and, therefore, the double-jump experiment was performed using a Creoptix WAVE instrument. This label-free methodology uses waveguide interferometry to detect refractive index changes due to alteration in surface mass in a vein similar to Surface Plasmon Resonance (SPR). It is an orthogonal technique that sidesteps notable issues associated with fluorescence methods (e.g., photobleaching and inner-filter effects). In short, after immobilizing Aurora A on a WAVEchip, a high concentration of Danusertib was injected for a short, variable period of time, and dissociation was triggered by flowing buffer through the microfluidics channel to remove the drug. The dissociation kinetics fit to a single exponent with a rate constant, $k_{\u22122}$, of 6.8 \u00b1 0.4 s\u22121 (Figure 5F and Figure 5\u2014figure supplement 1B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig6-v2.jpg)\n\n**Figure 6.:** Binding kinetics was monitored by stopped-flow fluorescence for different concentrations of Danusertib (indicated) to 0.5 \u00b5M Aurora A, and dissociation kinetics ($k_{off}^{obs}$) by Creoptix and fluorimeter (see Figure 5). Fluorescence traces are the average of at least five replicate measurements (n > 5). Global fitting was performed using the KinTek Explorer software using the model shown in Figure 5I.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The apparent discrepancy between the experimentally observed off rates and the microscopic rate constant, $k_{-3}$, can be explained by considering the kinetic partitioning. Uncertainties given denote the (propagated) standard deviation in the fitted parameter.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Effect of the equilibrium constant for the conformational selection and induced-fit step on the overall $K_{D}$ for Danusertib.The equilibrium constant was changed in both directions by two orders of magnitude starting from unity for the conformational selection (CS) mechanism (A) and induced-fit (IF) step (B). A CS step only weakens the overall affinity compared to the equilibrium constant of the physical binding step ($K_{2}$; 14 \u03bcM for Danusertib, see\u00a0Figure 5), whereas an IF step makes the binding tighter. (C) Effect on the overall $K_{D}$ for Danusertib when changing the equilibrium constants $K_{1}$ and $K_{2}$ by two orders of magnitude starting from their actual values (see Figure 5I).\n\nWe want to discuss a few additional kinetic features. First, the observed rate constant measured in the dilution experiment (Figure 5E, $k_{-3}$ = (3.2 \u00b1 0.3) \u00d7 10\u22124 s\u22121) is slower than $k_{-3}$ from the global fit ($k_{-3}$ = (7.1 \u00b1 0.5) \u00d7 10\u22124 s\u22121), which might seem counterintuitive. The observed rate constant was verified by an additional dilution experiment using Creoptix WAVE ($k_{-3}$ = (2.0 \u00b1 0.6) \u00d7 10\u22124 s\u22121, Figure 5\u2014figure supplement 1C). The difference in the observed and microscopic rate constant can, however, be fully reconciled by considering the kinetic partitioning for the proposed scheme, as shown in Figure 6\u2014figure supplement 1. Second, a powerful and independent validation of the three-step binding mechanism is obtained by comparing the measured overall $K_{D}$ of Danusertib with the calculated macroscopic $K_{D}$ from the microscopic rate constants (Figure 5G,H,I and Figure 5\u2014figure supplement 1D) according to Equation 4, which indeed delivers values that are within experimental error. In addition, our values for $k_{2}$, $k_{-3}$, and $K_{D}$ are in good agreement with those reported in a recent study using SPR (Willemsen-Seegers et al., 2017).\n\nOur results illuminate trivial but profound principles of binding affinity and lifetime of drug/target complexes: a conformational selection mechanism always weakens the overall inhibitor affinity, while an induced-fit step tightens the affinity depending on how far-shifted the equilibrium in the enzyme/drug complex is (Equations 2\u20134, Figure 6\u2014figure supplement 2). For DFG-out binders (e.g., Danusertib and Gleevec), the DFG-in and -out equilibrium weakens the overall affinity 1.6-fold; however, the conformational change after drug binding results in a four orders of magnitude tighter binding for Danusertib and is the sole reason for its high affinity to Aurora A compared to Gleevec. The dissociation constants for the bimolecular binding step $K_{2}$ is very similar for both inhibitors. Finally, the lifetime of Danusertib on the target is very long because of the very slow conformational dynamics within the Aurora A/Danusertib complex ($k_{-3}$ = (7.1 \u00b1 0.5) \u00d7 10\u22124 s\u22121). Earlier examples of protein kinases that also show remarkable slow off-rates, presumably caused by conformational changes, include the epidermal growth factor receptors (Berezov et al., 2001; Wood et al., 2004) and CDK8 (Schneider et al., 2013) amongst others (Willemsen-Seegers et al., 2017). To the best of our knowledge, we present here for the first time a detailed stopped-flow kinetics analysis for Aurora A that unequivocally shows the slow off-rate is caused by the conformational change within the drug-bound state, and not the dissociation step.\n\n### Kinetics of AT9283 binding to Aurora A \u2013 a surprise\n\nWe chose AT9283 as a third inhibitor to characterize the binding mechanism because it has been described as a DFG-in binder based on a crystal structure of AT9283 bound to Aurora A (PDB 2W1G, [Howard et al., 2009]). We, therefore, anticipated that in its binding kinetics one can now detect the DFG-out to DFG-in switch. Rapid kinetic experiments of binding AT9283 to Aurora A at 25\u00b0C resulted in biphasic traces and both processes showed an increase in fluorescence over time (Figure 7A). The $k_{obs}$ for the faster phase ($k_{2}$) was linearly dependent on drug concentration reflecting the binding step (Figure 7B) and $k_{obs}$ for the slower phase ($k_{3}$) has a limiting value of 0.8 \u00b1 0.2 s\u22121 and is attributed to an induced-fit step (Figure 7C). For the conformational selection step (i.e., DFG-out to DFG-in), a decrease in fluorescence is expected because for the reverse flip observed in the Gleevec and Danusertib experiments, a fluorescence increase was seen (Figure 3A and Figure 5\u2014figure supplement 1A). However, we could not find any condition (e.g., by varying temperature and ligand concentrations) where such a phase could be observed.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig7-v2.jpg)\n\n**Figure 7.:** (A) The increase in fluorescence at 25\u00b0C upon AT9283 binding fitted to a double exponential. (B) The plot of $k_{obs,Binding}$\u00a0versus AT9283 concentration for the fast phase yields $k_{2}$ = 3.4 \u00b1 0.5 \u03bcM\u22121s\u22121 and an underdetermined intercept ($k_{-2}$) and (C) the $k_{obs}$ of the slow phase reaches a plateau around 0.8 \u00b1 0.2 s\u22121. (D) Dilution of the Aurora A/AT9283 complex formed after 1 hour of incubation. The slow dissociation was measured by Creoptix WAVE waveguide interferometry and fitted with a double exponential with rate constants of (1.1 \u00b1 0.02) \u00d7 10\u22122 s\u22121 and (0.1 \u00b1 0.01) \u00d7 10\u22122 s\u22121. (E) Double-jump experiments (1 s incubation time of 1 \u03bcM AT9283 to Aurora A followed by 60 s long dissociation step initiated by a wash with buffer) was measured by Creoptix WAVE waveguide interferometry to properly define the value of $k_{-2}$ = (1.0 \u00b1 0.1) x 10\u22122 s\u22121. (F) Macroscopic dissociation constant ($K_{D}$) determined by Creoptix WAVE waveguide interferometry: surface-immobilized Aurora A was incubated with various concentration of AT9283 (0.03 nM (black), 0.27 nM (blue), 0.8 nM (purple), 2.4 nM (green), 7.2 nM (red), 21.6 nM (cyan), and 64.8 nM (orange)) and surface mass accumulation was observed until establishment of equilibrium. (G) A plot of the final equilibrium value versus AT9283 concentration yields a $K_{D}$ = 2.1 \u00b1 1.8 nM. (H) Binding scheme for AT9283 (labeled AT) highlighting a four-steps binding mechanism, that contains binding to two different states, a conformational selection mechanism and an induced-fit step. Kinetic constants shown in H were determined from global fitting (see Figure 8). Fluorescence traces are the average of at least five replicate measurements (n > 5), and error bars and uncertainties given in B, C, G and H denote the (propagated) standard deviation in the fitted parameter.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) The apparent discrepancy between the experimentally observed off rates and the microscopic rate constant, $k_{-3}$, can be explained by considering the kinetic partitioning. (B) Double-jump experiments measured by Creoptix WAVE waveguide interferometry at 25\u00b0C of AT9283 at 1 and 3 s incubation time before induction of dissociation by a buffer wash are best described with a single exponential function of ($k$ = 0.01 s\u22121). Uncertainties given in A denote the (propagated) standard deviation in the fitted parameter.\n\nDissociation is characterized by double-exponential kinetics (Figure 7D and Figure 7\u2014figure supplement 1A). The fast phase (~38% of the total amplitude change) decays with a rate constant of (1.1 \u00b1 0.02) \u00d7 10\u22122 s\u22121, and the slow phase (~62% of the total change in amplitude) has a rate constant of (0.1 \u00b1 0.01) \u00d7 10\u22122 s\u22121. To distinguish between the reverse induced-fit step ($k_{-3}$) and the physical dissociation step ($k_{-2}$), a double-jump experiment was performed that unambiguously assigned the faster phase to $k_{-2}$\u00a0(Figure 7E and Figure 7\u2014figure supplement 1B). Our attempts to globally fit all kinetic traces assuming binding to only the DFG-in state and using the rate constants for the DFG-loop flip from the Gleevec experiment failed (Figure 8\u2014figure supplement 1A). An extended model, where AT9283 can bind to both DFGin/out conformations, followed by a common induced-fit step can also not explain the experimental kinetic traces (Figure 8\u2014figure supplement 1B). These failures, together with the lack of a detectable conformational selection step, led to a new model in which both the DFG-in and DFG-out states can bind AT9283, but only AurAin:AT can undergo an induced-fit step (Figure 7H). All data can be globally fit to this model (Figure 8) and the overall $K_{D}$ calculated from the corresponding microscopic rate constants (using Equation 5) is in good agreement with the experimentally measured $K_{D}$ (Figure 7F\u2013H). Finally, the 10-fold difference between the $k_{-3}$ from the global fit (Figure 7H) and the experimentally observed slow off-rate can be reconciled by kinetic partitioning as shown in Figure 7\u2014figure supplement 1A.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig8-v2.jpg)\n\n**Figure 8.:** Binding kinetics was monitored by stopped-flow fluorescence at different concentrations of AT9283 (indicated) to 0.5 \u00b5M Aurora A. Dissociation kinetics were obtained for fully equilibrated drug/kinase complex ($k_{off}^{obs}$) or for the initial encounter complex ($k_{off}^{djump}$) by using a 1 hour or a short 2 s incubation of the kinase with AT9283, respectively, before inducing dissociation by a buffer wash using Creoptix WAVE waveguide interferometry. Global fitting was performed with KinTek Explorer software using the model in Figure 7H (reduced \u03c72 = 3.2). Fluorescence traces are the average of at least five replicate measurements (n > 5).\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Our initial three-state binding scheme, where AT9283 binds only the DFGin state of Aurora A and is followed by an induced-fit step, is incorrect. The best global fit (shown in red) did not describe the data as can be seen by visual inspection and from the reduced \u03c72 value of 36. (B) An alternative model, where AT9283 can bind to Aurora A irrespective of the state of the DFG-loop, and binding is followed by an induced-fit step did not result in adequate fits (data not shown) and yield a reduced \u03c72 value of 52. In both cases the values for the interconversion between AurAout and AurAin were taken from the Gleevec experiment (Figure 5\u2014figure supplement 2). Fluorescence traces are the average of at least five replicate measurements (n\u00a0>\u00a05).\n\n### Crystal structures of AT9283 bound to Aurora A buttress new binding model\n\nIn an effort to structurally verify our model we solved a crystal structure of Aurora A with AT9283 bound and indeed observed the DFG-out conformation (PDB 6CPG, Figure 9B and Table 1), in contrast to the DFG-in conformation as previously reported (Figure 9A) (Howard et al., 2009). Our structure was obtained by co-crystalizing Aurora A with AT9283 and a monobody that binds to the same site as the natural allosteric activator TPX2 (Figure 9B). Binding of this monobody shifts Aurora A into an inactive conformation, with the DFG-loop in the out conformation. This new structure underscores the plasticity of Aurora A kinase and the ability of AT9283 to bind to a DFG-out state, in addition to the previously reported DFG-in state.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig9-v2.jpg)\n\n**Figure 9.:** (A) AT9283 (pink) bound to the active site of Aurora A (PDB 2W1G, [Howard et al., 2009]) shows the DFGin-loop conformation and a salt bridge between K162 and E181. (B) Aurora A dimer (light and dark blue ribbon) in complex with AT9283 (pink) and inhibiting monobody (Mb, grey), showing DFGout-loop and broken K162 and E181 salt bridge (PDB 6CPG).\n\nThus, our structural and kinetic data together support that AT9283 can bind to both DFG-in and DFG-out state of Aurora A, and emphasizes the need for caution when interpreting single X-ray structures.\n\n### Inhibitors take advantage of built-in dynamics for ATP binding\n\nWe finally compared the binding kinetics of the ATP-competitive inhibitors described above with the natural kinase substrate, ATP (Figure 10). In order to measure stopped-flow kinetics for ATP binding, FRET was measured by exciting Trp residues in Aurora A and detecting fluorescence transfer to the ATP-analogue mant-ATP (Lemaire et al., 2006; Ni et al., 2000). The binding of mant-ATP to Aurora A showed biphasic kinetic traces (Figure 10A) that describe the physical binding step (i.e., linear dependence on mant-ATP concentration; Figure 10B) and the induced-fit step (Figure 10C). The observed rate constant approaches a maximum value defined by the sum of $k_{3}+\u00a0k_{\u22123}$ (Figure 10C) and the intercept can be estimated to be $k_{\u22123}$ and is consistent with the value obtained from the $k_{off}$ experiment (Figure 10D). We find that mant-ATP can bind to both the DFG-in and -out conformations, consistent with our nucleotide-bound crystal structures (Figure 1A\u2013D) and recent single-molecule fluorescence spectroscopy data that indicates that nucleotide binding does not significantly affect this equilibrium (Cyphers et al., 2017). To confirm the model, the kinetic data were globally fit to a two-step binding mechanism (Figure 10G,H). The calculated $K_{D}$ from the corresponding microscopic rate constants (Figure 10H) is comparable with the\u00a0experimental macroscopic $K_{D}$ obtained from a titration experiment (Figure 10E,F).\n\n![Figure 10.](https://cdn.elifesciences.org/articles/36656/elife-36656-fig10-v2.jpg)\n\n**Figure 10.:** (A) Binding of mant-ATP to Aurora A was followed by an increase in fluorescence with biphasic kinetics. The plot of $k_{obs}$ versus concentration of mant-ATP of the fast phase (B) yields $k_{2}$ = 0.8 \u00b1 0.2 \u03bcM\u22121s\u22121 and $k_{-2}$ = 50 \u00b1 8 s\u22121 and the slow phase (C) reached a plateau around 21 \u00b1 1 s\u22121 ($k_{3}+k_{-3}$). (D) Dissociation kinetics of 10 \u03bcM Aurora A/10 \u03bcM mant-ATP complex was measured after a 11-fold dilution into buffer and yields $k_{off}^{obs}$ = 17.2 \u00b1 1 s\u22121. (E, F) Macroscopic dissociation constant of Aurora A with mant-ATP measured by fluorescence energy transfer. (E) Emission spectra (excitation at 290 nm) of 1 \u03bcM Aurora A (green), 160 \u03bcM mant-ATP (red), and 1 \u03bcM Aurora A/160 \u03bcM mant-ATP (blue). (F) The change in fluorescence at 450 nm ($\u0394F^{450}$) versus mant-ATP concentrations yields $K_{D}$ = 22 \u00b1 6 \u03bcM. (G) Global fitting (red) of all kinetics data (black) in KinTek Explorer to the binding scheme shown in (H) results in the kinetic constants given in the scheme and an overall $K_{D}$ = 48 \u00b1 8 \u03bcM, calculated from all rate constants. Fluorescence traces are the average of at least five replicate measurements (n > 5), and error bars and uncertainties given in B, C, D, F, and H denote the (propagated) standard deviation in the fitted parameter.\n\nThe presence of an induced-fit step for the natural substrate ATP suggests that such conformational change after ligand binding is a built-in property of the enzyme. In other words, inhibitors take advantage of the inherent plasticity of the enzyme that is required for its activity and regulation. The main difference between ATP and inhibitor binding is the rate constant for the reverse induced-fit step ($k_{\u22123}$). In the case of ATP, this rate is much faster and, therefore, does not significantly increase the overall affinity. Faster conformational changes and weaker binding are of course prerequisites for efficient turnover; whereas slow conformational changes, particularly the reverse induced-fit step, are at the heart of action for an efficient drug, because it results in tight binding and a long lifetime on the target. In summary, binding of different ligands to the ATP-binding site, such as nucleotides or ATP-competitive inhibitors, is comprised of the physical binding step followed by an induced-fit step. By definition, it is the nature of the induced-fit step that varies for the different ligands since it happens as a result of ligand binding.\n\n## Discussion\n\nCharacterizing the detailed kinetic mechanisms of drug binding is not just an academic exercise but delivers fundamental knowledge for developing selective inhibitors with high affinity. An induced-fit step turns out to be key for all tight-binding inhibitors studied. From our results on Aurora A kinase presented here and earlier data on Tyrosine-kinases (Agafonov et al., 2014; Wilson et al., 2015), we propose that this may be a general mechanism for different kinases and multiple inhibitors, thereby providing a platform for future computational and experimental efforts in rational drug design. Albeit, we note that verification of this proposition requires a larger sampling of small molecules and different protein kinases throughout the kinome.\n\nThe \u2018use\u2019 of a highly-skewed equilibrium towards E*:D for a promising drug is logical for the following reasons: (i) it increases the affinity for the drug by this coupled equilibrium, (ii) it prolongs the residence time of the drug on the target due to the often slow reverse rate, (iii) it is specific for each drug as it happens after the drug binding, and (iv) it can add selectivity for the targets because it likely involves residues more remote from the active site. An increased drug residence time has significant pharmacological advantages as it can lead to a prolonged biological effect, a decrease of side effects, and a lower risk of metabolic drug modification. Such inhibitors have long been described as slow tight-binding inhibitors (Copeland, 2016; Copeland et al., 2006). The concept of the advantageous roles of induced-fit steps is based on simple thermodynamics and protein flexibility, and is, therefore, likely of relevance for drug design to other targets outside of the kinome.\n\nAdditionally, our data provides unique insight into the extensively discussed DFG flip. Combining X-ray crystallography, NMR spectroscopy and stopped-flow kinetics of drug binding establish the nature of this DFG flip both structurally, thermodynamically and kinetically, and resolves the longstanding question of its role for drug affinity and selectivity. Selective binding of a specific DFG-state by Gleevec has been first proposed as the reason for selectivity towards Abl. This conformational selection principle has ever since been at the center of drug discovery for many kinases, including Aurora A (Badrinarayan and Sastry, 2014; Liu and Gray, 2006). Based on our results, we argue that conformational selection of the DFG-state by ATP-competitive inhibitors is a mistakenly pursued concept in drug design for the following reasons: (i) conformational selection by definition weakens the overall ligand affinity, (ii) active site binders are automatically inhibitors, therefore selective binding to a specific DFG-state has no advantage (Badrinarayan and Sastry, 2014; Liu and Gray, 2006), (iii) kinases interconvert between both states. High selectivity gained by DFG-state selective binding could only be achieved in the scenario of a highly skewed population towards the binding-competent state for one kinase relative to all others, which is unfounded.\n\nOur results exemplify why rational drug design is so challenging. The characterization of the complete free-energy landscape of drug binding is needed, which will require more sophisticated computational approaches guided by experimental data such as provided in our study. A good illustration of this point are the computational reports that focused on the DFG flip as a key determinant drug selectivity (Badrinarayan and Sastry, 2014) that now have been ruled out by our kinetic measurements. Our data suggest that future design efforts should be focusing on understanding and exploiting induced-fit steps. To this end, the different dynamic personalities of kinases or, more general, drug targets need to be investigated at atomic resolution and used to guide small-molecule design. The findings presented here are encouraging for developing selective inhibitors even for kinases with very similar folds and drug binding pockets since the action does not happen on a single structural element of the protein, but on a complex energy landscape that is unique to each kinase.\n\n## Materials and methods\n\n### Cloning, expression and purification of dephosphorylated Aurora A (122-403) and inhibiting monobody\n\nDephosphorylated Aurora A proteins were expressed and purified as described before (Zorba et al., 2014) and analyzed by mass spectrometry to confirm their phosphorylation state. The W227L mutant was generated using the QuickChange Lightning site-directed mutagenesis kit (Agilent).\n\nU-[15N] Aurora A was obtained by growing E. coli BL21(DE3) (New England Biolabs) in M9 minimal medium containing 1 g/L 15NH4Cl (Cambridge Isotope Laboratories, Tewksbury, MA, USA) and 5 g/L D-glucose as the sole nitrogen and carbon source, respectively. [15N]-Trp labeled wild-type Aurora A was obtained using the standard M9 minimal medium, complemented with all amino acids (0.5 g/L) with the exception of tryptophan. One hour prior to induction, 30 mg/L of 15N2-L-Trp (NLM-800; Cambridge Isotope Laboratories, Tewksbury, MA, USA) was added to the medium. Similarly, to obtain samples of wild-type and W277L Aurora A containing 5-fluoro-tryptophan, bacterial growth was performed in unlabeled M9 medium containing all amino acids (0.5 g/L) except for tryptophan. One hour before protein induction, the medium was supplemented with 30 mg/L of 5-fluoro-DL-tryptophan (Sigma-Aldrich) (Crowley et al., 2012). NMR samples contained 200\u2013300 \u00b5M Aurora A in 50 mM HEPES, pH 7.3, 50 mM NaCl, 20 mM MgCl2, 5 mM TCEP, 2 M TMAO and 10%(v/v) D2O.\n\nInhibiting monobody used for co-crystallization with Aurora A and AT9283 was expressed in E. coli BL21(DE3) cells harboring the plasmid pHBT containing His6-tagged-Mb. A culture of TB media containing 50 \u03bcg/mL kanamycin that was grown overnight at 37\u00b0C was added to 1\u00a0L of TB media with 50 \u03bcg/mL kanamycin to get a starting OD600 of\u00a0~0.2. This culture was grown at 37\u00b0C until the OD600 reached\u00a0~0.8. Protein expression was induced by 0.6 mM IPTG at 18\u00b0C for 13\u201315 h and cells were harvested by centrifugation. The cell pellet was resuspended in binding buffer (50 mM Tris-HCl, pH 8.0, 300 mM NaCl, 20 mM imidazole, 20 mM MgCl2, 10% glycerol) containing 0.5 mg/mL lysozyme, 5 \u03bcg/mL DNase, and 1x EDTA-free protease inhibitor cocktail. Cells were ruptured by sonication on ice then centrifuged at 18,000 rpm at 4\u00b0C for 1 h. The supernatant was loaded onto HisTrapTM HP (GE Healthcare) after filtration using 0.2 \u03bcm filtering unit. The pellet was resuspended with GuHCl buffer (20 mM Tris-HCl, pH 8.0, 6 M GuHCl) and allowed to rotate on wheel for 10 min at 4\u00b0C and spun down again. The supernatant was passed through 0.2 \u03bcm filtering unit and loaded onto HisTrap HP column previously loaded with soluble fraction and pre-equilibrated with GuHCl buffer. Refolding monobody on-column was achieved by washing the HisTrap HP column with five column volumes (CV) of GuHCl buffer, followed by 5 CV of Triton-X buffer (binding buffer\u00a0+\u00a00.1% Triton X-100), then 5 CV of \u03b2-cyclodextrin buffer (binding buffer\u00a0+\u00a05 mM \u03b2-cyclodextrin), and finally 5 CV of binding buffer. Monobody was eluted with 100% of elution buffer (binding buffer\u00a0+\u00a0500 mM imidazole). The protein was dialyzed overnight in gel-filtration buffer (20 mM Tris-HCl, pH 7.5, 200 mM NaCl, 20 mM MgCl2, 5 mM TCEP, 10% glycerol) in the presence of TEV protease (1:40 TEVP:Mb molar ratio). After dialysis, the TEV-cleaved monobody was passed through HisTrap HP column again. The flow-through containing TEV-cleaved monobody was collected and concentrated before loading onto Superdex 200 26/60 gel-filtration column pre-equilibrated with the gel-filtration buffer. The monobody was flash-frozen and stored in \u221280\u00b0C until use.\n\n### X-ray crystallography\n\nCrystals of dephosphorylated (deP) Aurora A122\u2212403 + AMPPCP were obtained by mixing 570 \u03bcM (18 mg/mL) deP Aurora A122\u2212403 and 1 mM AMPPCP in a 2:1 ratio with mother liquor (0.2 M ammonium sulfate, 0.2 M Tris-HCl, pH 7.50, 30% (w/v) PEG-3350). The crystals were grown at 18\u00b0C by vapor diffusion using the hanging-drop method. The protein used for the crystallization was in storage buffer (20 mM Tris-HCl, pH 7.5, 200 mM NaCl, 10% (v/v) glycerol, 20 mM MgCl2, 1 mM TCEP); AMPPCP was freshly prepared before use in the same buffer. Crystals were flash-frozen in liquid nitrogen prior to shipping. Crystals of apo, deP Aurora A122\u2212403 were grown at 18\u00b0C by vapor diffusion using the sitting-drop method (96-well plate). A 1:1 ratio of protein to mother liquor was obtained by combining 0.5 \u03bcL of 300 \u03bcM (10 mg/mL) deP Aurora A122\u2212403 in 50 mM HEPES, pH 7.3, 500 mM ammonium acetate, 1 mM MgCl2, 5 mM TCEP) with 0.5 \u03bcL of 0.15 M Tris-HCl, pH 7.5, 0.15 M ammonium sulfate, 35% (w/v) PEG-3350. Crystals were soaked for 10\u201320 s in cryo buffer (20% (w/v) PEG-400, 20% ethylene glycol, 10% water and 50% mother liquor) before flash-freezing in liquid nitrogen. The complex between Aurora A122\u2212403, inhibiting monobody (Mb) and AT9283 was crystallized at 18\u00b0C by vapor diffusion using the sitting-drop method. In short, a 1:1 ratio of protein mixture to mother liquor was obtained by combining 0.5 \u03bcL of sample [240 \u03bcM deP Aurora A122\u2212403 + 1.0 mM AT9283\u00a0+\u00a0250 \u03bcM Mb] with 0.5 \u03bcL of mother liquor [0.1 M Bis-Tris, pH 5.5, 0.2 M magnesium chloride, 19% (w/v) PEG-3350]. Crystals were soaked for 10\u201320 s in cryo buffer (17.5% (w/v) PEG-400, 17.5% ethylene glycol, 45% water and 20% mother liquor) before flash-freezing in liquid nitrogen.\n\nDiffraction data were collected at 100 K at the Advanced Light Source (Lawrence Berkeley National Laboratory) beamlines ALS 8.2.1 (apo-AurA and AurA + Mb + AT9283) and 8.2.2 (AurA + AMPPCP) with a collection wavelength of 1.00 \u00c5.\n\nData were indexed and integrated using iMOSFLM (Battye et al., 2011) for apo/AMPPCP-bound Aurora A and Xia2 (Winter, 2010) using XDS (Kabsch, 2010) for the Aurora A/Mb/AT9283 complex, respectively. Data were scaled and merged with AIMLESS (Evans and Murshudov, 2013), in the case of Aurora A/Mb/AT9283 two data separate data sets were merged. All software was used within the CCP4 software suite (Winn et al., 2011).\n\nAs initial search models 1MQ4 (Nowakowski et al., 2002) and 3K2M (Wojcik et al., 2010) were used for Aurora A and monobody, respectively, and molecular replacement was performed using Phaser (McCoy et al., 2007). The molecules were placed in the unit cell using the ACHESYM webserver (Kowiel et al., 2014). Iterative refinements were carried out with PHENIX (Adams et al., 2010), using rosetta.refine (DiMaio et al., 2013) and phenix.refine (Afonine et al., 2012), and manual rebuilding was performed in Coot (Emsley and Cowtan, 2004; Emsley et al., 2010).\n\nStructure validation was performed using MolProbity (Chen et al., 2010) and yielded the statistics given below. The Ramachandran statistics for dephosphorylated apo (AMPPCP-bound) Aurora A are: favored: 93.65 (94.90)%, allowed 5.95 (4.71)%, outliers: 0.4 (0.39)%; 0.48 (0.0)% rotamer outliers and an all-atom clashscore of 4.45 (2.44). For the Aurora A/Mb/AT9283 complex, the Ramachandran statistics are: favored: 92.64%, allowed 7.06%, outliers: 0.3%; 0.0% rotamer outliers and an all-atom clashscore of 2.81. We note that the B-factors for the monobodies in the complex of Aurora A/Mb/AT9283 are rather high, indicating significantly flexibility in the parts that are not part of the binding interface with Aurora A.\n\nThe data collection and refinement statistics are given in Table 1. Structure factors and refined models have been deposited in the PDB under accession codes: 6CPE (apo Aurora A), 6CPF (Aurora A\u00a0+\u00a0AMPPCP) and 6CPG (Aurora A/Mb/AT9283).\n\nAll figures were generated using Chimera (Pettersen et al., 2004).\n\n### NMR spectroscopy\n\nAll 19F NMR experiments were performed at 35\u00b0C on a Varian Unity Inova 500 MHz spectrometer, equipped with a 1H/19F switchable probe tuned to fluorine (90\u00b0 pulse width of 12 \u00b5s). All 1D 19F spectra were recorded with a spectral width of\u00a0~60 ppm and a maximum evolution time of 0.25 s. An interscan delay of 1.5 s was used with 5000 scans per transients, giving rise to a total acquisition time of 2.5 h per spectrum. To remove background signal from the probe and avoid baseline distortions, data acquisition was started after a\u00a0~100 \u00b5s delay (using the \u2018delacq\u2019 macro) and appropriate shifting of the data followed by backward linear prediction was performed. The data were apodized with an exponential filter (2.5 Hz line broadening) and zero-filled before Fourier transform. To improve the signal-to-noise ratio several data sets were recorded consecutively and, provided that the sample remained stable, added together after processing (two for apo Aurora A, four for Aurora A\u00a0+\u00a0AMPPCP, and five for W277L\u00a0+\u00a0AMPPCP, respectively). 19F chemical shifts were referenced externally to trifluoroacetic acid (TFA) at \u221276.55 ppm.\n\n[1H-15N]-TROSY-HSQC experiments were recorded at 25\u00b0C on an Agilent DD2 600 MHz four-channel spectrometer equipped with a triple-resonance cryogenically cooled probe-head. Typically, 115\u2013128 (15N)\u00a0\u00d7\u00a0512 (1H) complex points, with maximum evolution times equal to 48.5\u201364 (15N)\u00a0\u00d7\u00a064 (1H) ms. An interscan delay of 1.0 s was used along with 32 or 56 scans per transient, giving rise to a net acquisition time 1.5\u20132.5 h for each experiment. To improve the signal-to-noise ratio several data sets were recorded consecutively and, provided that the sample remained stable, added together after processing (typically three data sets per sample).\n\nAll data sets were processed with the NMRPipe/NMRDraw software package (Delaglio et al., 1995) and 2D spectra were visualized using Sparky (Goddard, 2008). Deconvolution of the 19F spectra and line shape fitting was performed using the Python package nmrglue (Helmus and Jaroniec, 2013).\n\n### Kinetics experiments of Aurora A with Gleevec, Danusertib, and AT9283\n\n#### Stopped-flow experiments\n\nIntrinsic tryptophan fluorescence spectroscopy was used to monitor drug binding kinetics to Aurora A. All experiments were performed at 25\u00b0C, except for the Gleevec kinetics that were measured at 10\u00b0C (unless otherwise stated) because the binding of Gleevec to Aurora A is too fast, $k_{obs,Binding}$. Stock solutions of 200 mM Danusertib, 200 mM AT9283 and 50 mM Gleevec (all purchased from Selleck Chemicals, http://www.selleckchem.com) were prepared in 100% DMSO were and stored at \u221280\u00b0C until used. Aurora A used in the kinetic experiments was dephosphorylated Aurora A as determined by mass spectrometry, Western blot and activity experiments (data not shown). The rapid kinetics were studied using a stopped-flow spectrophotometer (SX20 series from Applied Photophysics Ltd). The flow system was made anaerobic by rinsing with degassed buffer comprised of 50 mM HEPES, 50 mM NaCl, 20 mM MgCl2, 5 mM TCEP, 5% DMSO, pH 7.30 to minimize photobleaching. The stock solutions of Aurora A and all drugs were made anaerobic by degassing with ThermoVac (MicroCal) at the desired temperature. In general, a solution of 5 \u03bcM Aurora A was loaded in one syringe and quickly mixed with drug, prepared in the same buffer, in the other syringe (mixing ratio 1:10). A significant increase or decrease in the fluorescence intensity of Aurora A (excitation at 295 nm, emission cut-off at 320 nm) can be observed due to the drug binding. For each drug concentration, at least five replicate measurements were made and these transients were averaged. Analysis was performed by fitting the individual trace to exponential equations using Pro-Data Viewer (Applied Photophysics Ltd) or with Kinesyst 3 software (TgK Scientific) and error bars denote the standard errors as obtained from the fit. KaleidaGraph version 4.5.3 (Synergy) was used for data analysis and plotting. All kinetic data were globally fitted in KinTek Explorer software (Johnson, 2009b, 2009a).\n\nUnder the rapid equilibrium approximation, the binding and dissociation steps of Gleevec to Aurora A are fast compared to conformational selection, therefore the value of $k_{1}$ and $k_{\u22121}$ can be estimated according to Equation 1:\n\n$$\nk_{obs}=\u00a0\\frac{k_{\u22121}}{1+\u00a0(\\frac{[Gleevec]}{[Aurora\u00a0A]+\u00a0(\\frac{k_{\u22122}}{k_{2}})})}+\u00a0k_{1}\n$$\n\nwhere $k_{1}$ and $k_{\u22121}$\u00a0represent the conformational change from DFG-in to -out and vice versa, respectively. The approximate values of $k_{1}$ and $k_{\u22121}$ obtained from fitting to this equation are used as starting values for the global fit.\n\nFor the 5 \u03bcM Aurora A/Gleevec complex, the release of the drug was recorded after a 11-fold dilution of the complex using the stopped-flow instrument for 0.25 s (excitation at 295 nm, emission cut-off at 320 nm) at 10\u00b0C.\n\n#### Creoptix WAVE experiments\n\nDouble jump, slow-off, and macroscopic $K_{D}$ experiments of Aurora A with drugs were studied using a Creoptix WAVE instrument (Creoptix AG, W\u00e4denswil, Switzerland) at 25\u00b0C. All chemicals were purchased from GE Healthcare, unless otherwise stated. The protocols in the WAVE control software for conditioning of the chip, immobilization of proteins and performing kinetics experiments were followed. In short, the polycarboxylate chip (PCH) was activated by injection of a 1:1 mixture with final concentrations of 200 mM N-ethyl-N\u2019-(3-dimethylaminopropyl)carbodiimide (EDC) and 50 mM N-hydroxysuccinimide (NHS), followed by streptavidin immobilization (50 \u03bcg/mL in 10 mM sodium acetate pH 5.0). Unreacted sites on the chip were blocked with 1 M ethanolamine pH 8.0. For all activation, immobilization and passivation steps 0.2x HBS-EP was used as running buffer with a flowrate of 10 \u03bcL/min and an injection duration of 420 s on both channels 1 and 2.\n\nBiotinylated T288V variant that mimics dephosphorylated Aurora A was used for experiments performed on the Creoptix WAVE instrument. The activity of T288V with substrate Lats2, the macroscopic $K_{D}$ and slow-off rate of Danusertib were the same as wild-type (data not shown). Biotinylated T288V Aurora A (70 \u03bcg/mL) was immobilized on the PCH-streptavidin chip with 10 \u03bcL/min injection and 15 s injection duration over channel 1 only (channel 2 was used as reference channel). All experiments were run in 50 mM HEPES, 50 mM NaCl, 20 mM MgCl2, 5 mM TCEP, 0.03 mg/mL BSA, 0.005% Tween-20, pH 7.30 as running buffer. Binding experiments were evaluated over a range of Danusertib (0.13\u201366.67 nM), AT9283 (0.03\u201364.8 nM), and Gleevec (0.37\u201340 \u03bcM) concentrations. Gleevec binding experiments contained 5% DMSO in the running buffer (see above) to enhance Gleevec\u2019s solubility. Double-jump experiments of Aurora A/drugs were performed by injecting 1 \u03bcM Danusertib or AT9283 with 0.2, 0.4, 0.8, and 2 s injection duration for Danusertib and 1 and 3 s injection duration for AT9283 followed by a 60 s dissociation duration per injection. The slow-off experiments were performed by injecting 5 \u03bcM Danusertib or AT9283 with 5\u201310 s injection duration (to fully saturate Aurora A) followed by a 180 s injection of buffer to remove the excess drug and the dissociation was measured for a duration of 10800 s.\n\n#### Spectrofluorometer experiments\n\nThe spectrofluorometer FluoroMax-4 (Horiba Scientific) with temperature controller was used to study the slow-off rate of Aurora A with Danusertib at 25\u00b0C. For this experiment, a solution containing 30 nM Aurora A and 30 nM Danusertib was pre-incubated for an hour, before diluting 30-fold into degassed buffer (ratio 1:30). A significant decrease in the fluorescence intensity of Aurora A (excitation at 295 nm, emission at 340 nm) can be seen due to the Danusertib release. The fluorescence signal was recorded every 160 s for a duration of six hours using the photobleaching minimization option that will close the shutter after each acquisition. A control experiment was performed, using the same experimental conditions, but without drug in order to account for photobleaching.\n\n### Overall dissociation constant calculated from intrinsic rate constants\n\nIn the following equations, $K_{1}$, $K_{2}$, $K_{3}$ and $K_{4}$\u00a0are\u00a0equal to:\n\n$$\nK_{1}=\\frac{k_{\u22121}}{k_{1}}K_{2}=\\frac{k_{\u22122}}{k_{2}}=\\frac{k_{off}}{k_{on}}K_{3}=\\frac{k_{\u22123}}{k_{3}}K_{4}=\\frac{k_{\u22124}}{k_{4}}\n$$\n\nConformational selection followed by inhibitor binding:\n\n$$\nE_{in}\u21cck_{\u22121}k_{1}E_{out}+\u00a0I\u00a0\u21cck_{off}k_{on}E_{out}\u22c5IK_{1}K_{2}K_{D}=(K_{1}+1)\u2217K_{2}\n$$\n\nInhibitor binding followed by an induced-fit step:\n\n$$\nE_{out}+\u00a0I\u21cck_{off}k_{on}E_{out}\u22c5I\u21cck_{\u22123}k_{3}E_{out}^{\u2217}\u22c5I\u00a0K_{2}K_{3}K_{D}=\\frac{K_{2}\u2217K_{3}}{(K_{3}+1)}\n$$\n\nConformational selection followed by inhibitor binding and an induced-fit step:\n\n$$\nE_{in}\u21cck_{\u22121}k_{1}E_{out}+I\u21cck_{off}k_{on}E_{out}\u22c5I\u21cck_{\u22123}k_{3}E_{out}^{\u2217}\u22c5IK_{1}K_{2}K_{3}K_{D}=\\frac{(K_{1}+1)\u2217K_{2}\u2217K_{3}}{K_{3}+1}\n$$\n\nConformational selection mechanism, followed by inhibitor binding to both DFG-in and -out state, but an induced-fit step only occurs in the DFG-in state:\n\n$$\nE_{out}\u21cck_{\u22121}k_{1}E_{in}+I\u21cck_{off}k_{on}E_{in}\u22c5I\u21cck_{\u22123}k_{3}E_{in}^{\u2217}\u22c5IK_{4}\\frac{\u21c3\u21be}{E_{out}\u22c5I}K_{1}K_{2}K_{3}K_{D}=\\frac{(K_{1}+1)\u2217K_{2}\u2217K_{3}\u2217K_{4}}{K_{1}\u2217K_{2}\u2217K_{3}+K_{3}\u2217K_{4}+K_{4}}\n$$\n\nThe uncertainties in the calculated dissociation constant parameter using the equations above are obtained using standard error propagation.\n\n### Aurora A binding to mant-ATP\n\nFRET using intrinsic tryptophan fluorescence is used to monitor mant-ATP (obtained from Jena Bioscience) binding kinetics to Aurora A at 10\u00b0C. In the binding experiment or $k_{on}$, increasing concentration of mant-ATP were quickly mixed to 0.5 \u00b5M Aurora A (ratio 1:10, excitation at 295 nm, emission cut-off at 395 nm). In the experiment to measure the release of mant-ATP or $k_{off}$, 10 \u00b5M/10 \u00b5M Aurora A/mant-ATP complex was diluted with buffer (ratio 1:10). A significant decrease in the fluorescence intensity of Aurora A (excitation at 295 nm, emission cut-off at 395 nm) can be seen due to the mant-ATP release.\n\n### Macroscopic dissociation constant experiments\n\nFluorescence titration experiments were measured using FluoroMax-4 spectrofluorometer (Horiba Scientific). Increasing amounts of Aurora A/Danusertib complex (4 nM Aurora A and 150 nM Danusertib) or Aurora A/mant-ATP (1 \u00b5M Aurora A and 2 mM mant-ATP) were titrated into an Aurora A solution (4 nM and 1 \u00b5M Aurora A for experiments with Danusertib and mant-ATP, respectively). To measure Danusertib affinity, the excitation wavelength was 295 nm (5 nm bandwidth) and emission spectra were recorded from 310 to 450 nm (20 nm bandwidth) in increments of 2 nm and the temperature was maintained at 25\u00b0C. For the mant-ATP experiment, the dissociation constant was measured at 10\u00b0C using fluorescence energy transfer from tryptophan residues in Aurora A to mant-ATP by setting the excitation wavelength to 290 nm (5 nm bandwidth) and collecting the emission intensity from 310 to 550 nm (5 nm bandwidth) in increments of 2 nm. A control experiment in the absence of Aurora A was performed using the same experimental settings and used to correct for the mant-ATP interference. In all experiments, a 5 min equilibration time was used after each addition of Aurora A/Danusertib complex or Aurora A/mant-ATP complex.\n\nThe fluorescence intensity at 368 nm versus Danusertib concentration or the change in fluorescence at 450 nm ($\u0394F^{450}$) versus mant-ATP concentration was fitted to Equation 6 using Levenberg-Marquardt nonlinear fitting algorithm included in KaleidaGraph to obtain the $K_{D}$.\n\n$$\nF=F_{0}+A\u22c5\\frac{[I]+[E_{t}]+K_{D}\u2212\\sqrt{([I]+[E_{t}]+K_{D})^{2}\u22124\u22c5[E_{t}]\u22c5[I]}}{2\u22c5[E_{t}]}\n$$\n\n$F$ and $F_{0}$ are the fluorescence and initial fluorescence intensities, respectively. $[I]$ and $[E_{t}]$ are the total concentration of the drug or mant-ATP and the Aurora A, respectively.\n",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "36bc8597-f403-462c-bc64-6a2706b92725",
+      "submission_id": "4f7d8f58-c77a-419e-8ca1-eee6f1ceec2f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Philip A Cole, Harvard Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.36656.039](https://doi.org/10.7554/eLife.36656.039)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Dynamics of human protein kinases linked to drug selectivity\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Philip Cole as the Senior and Reviewing Editor. The following individual involved in review of your submission has agreed to reveal his identity: John Kuriyan (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThis manuscript by the Kern group presents an important advance in our understanding of why different ATP-competitive kinase inhibitors have dramatically different binding properties for the same kinase. The authors use an elegant combination of kinetic measurements using intrinsic tryptophan fluorescence, NMR, and X-ray crystallography, to identify discrete conformational states of the Ser/Thr kinase Aurora A, and to correlate the adoption of these states with drug binding. While the flipping of the DFG motif in the activation loop of kinases is often noted as a commonly-observed conformational change that impacts drug binding, here, the authors identify additional conformational changes, on top of the DFG flip, that impact the fast or slow off-rates of different drugs for Aurora A. The nature of these conformational changes is not defined in the paper, but the paper makes an important contribution by establishing these additional conformational changes are important for Aurora, as well as for the cytoplasmic tyrosine kinases for which the Kern group first established this property.\n\nCollectively, these experiments shed light on the nuanced interplay of inhibitor binding and kinase dynamics, and provide an experimental approach to dissect kinetic mechanisms of drug binding that could play an important role in future kinase inhibitor design strategies. The main conclusion is that the dynamical response to inhibitor binding that was established earlier (by this group) for the tyrosine kinases Src and Abl also applies to Aurora, a Ser/Thr kinase. As such, this work merits publication in eLife, after revision. While revising the manuscript, the authors should pay careful attention to placing this work in proper context within what is already known and appreciated about how kinases respond to inhibitors. Also, the work would be strengthened by being clearer about what is actually learned, rather than overstating the conclusions. This work advances the field in an important way, and would be valued all the more if it represented past insights more appropriately. In this regard, the title of the paper should be made more specific, and not imply that a broad cross-section of kinases have been studied, or that a single mechanism has been uniquely defined.\n\nEssential revisions:\n\n1) The way the paper is written the reader may get the mistaken impression that the DFG conformational change is irrelevant (or less important) for drug selectivity.\n\nIndeed, although previous work from the Kern group established that an induced conformational change after Gleevec binding to Abl, but not to Src, contributes to differential inhibition of these two kinases, it remains true that Gleevec can only bind to either of these kinases in the DFG-out state. Prior to the original observation of the DFG flip in Abl kinase, by the Kuriyan group, the DFG-out state was not known to be an accessible conformational state of protein kinases, let alone one that could bind a drug.\n\nRelated to this point, the authors aim to describe a new, generalizable paradigm for kinase-inhibitor interactions, one that decreases the importance of the DFG-flip. While this is intriguing, it awaits further analysis of the conformational landscape of other kinases, in the presence and absence of inhibitors. The authors should consider rephrasing sections so that they do not downplay the significance of the DFG-out conformation in drug binding. In other words, nothing that has followed since the original crystal structure of Abl bound to Gleevec (Schindler et al.) has overturned the conclusion drawn by the Kuriyan group that Gleevec specifically recognizes a DFG-flipped conformation of the kinase. What is now appreciated is that the DFG-flip is not the only requirement for drug binding, and many (if not all) kinases can undergo this conformational change. The way this paper is written, this is not obvious. Also, at points where the \"seminal\" observation of Gleevec selectivity is described, the authors cite much more recent papers, rather than the original discoveries. The work from the Kuriyan group is cited, but in a throw-away sentence in the middle of the paper.\n\n2) The authors somewhat mischaracterize our general understanding of the role of activation loop phosphorylation. While it is true that many seminal studies have established a correlation between activation loop phosphorylation and the adoption of an active, rather inactive configuration, several studies have actually suggested that this is a conformational selection, rather than induced fit, phenomenon. Indeed, some protein kinases lacking activation loop phosphorylation have been crystalized in an active conformation, and molecular dynamics calculations suggest that this the active state is accessible to the protein kinases in the absence of activation loop phosphorylation, albeit at a higher energetic cost (see work by Benoit Roux, and also Vijay Pande). Most recently, the work by Ruff et al. on Arora A (2018), the same kinase studied in this report, has convincingly shown that activation loop phosphorylation does not preclude access to an inactive conformation in this kinase.\n\n3) The issue of an unphosphorylated kinase domain adopting different conformations in crystals is presented as surprising, but this is well appreciated. These points were also made in Levinson et al. (2006) (not cited here) where the authors present \"crystal structures of the Abl kinase domain bound to substrate-mimicking ATP analog-peptide conjugates that represent four distinct conformations of the unphosphorylated kinase domain\". The idea that two different conformations can be found in the same crystal is also not new. Crystallographically, this was noted in Seeliger et al., 2007, who report a crystal structure in which two molecules of Src are found, one bound to Gleevec, and the other in an active conformation. Given these points, the authors could consider rewording parts of the first two paragraphs of the Results section so as not to suggest that their observation of an active-like unphosphorylated kinase is unexpected.\n\n4) The authors introduce the paper by pointing out that it remains a challenge to understand why certain drugs are selective for individual or few kinases out of the whole kinome (~500 related enzymes). They present the work in this manuscript with the intention of solving this problem. The work presented here, however, only explains how different inhibitors interact with one individual kinase, not why the same inhibitor might have differential binding properties for different kinases. This crossing of concepts is misleading to the readers.\n\n5) The fact that kinases can undergo a conformational change that results in remarkably slow off-rates for inhibitors has been appreciated from work such as the binding of Tykerb to EGFR (Wood et al., 2004). This point should be made in the revised paper, and the appropriate papers cited.\n\n6) The concept that the DFG flip is not the sole determining factor in determining the binding of Gleevec to Abl vs Src was first established by determining the structures of high-affinity compounds bound to Src in a DFG-flipped conformation by Seeliger et al. 2009, Cancer Research and Dar et al., 2008, Chemical Biology. Neither paper is cited in the present paper, which gives readers the misleading impression that the field was not aware of this fact prior to the Kern contributions.\n\n7) As noted earlier, a related paper was just published in eLife by Ruff et al. (2018), examining the impact of activation loop phosphorylation on kinase dynamics and the DFG-flip. In that report, the investigators conclude that Aurora A can sample the DFG-in and DFG-out states with and without activation loop phosphorylation, and that another drug, SNS-314 induces further conformational changes upon binding the DFG-in state of Arora A. These results are pertinent to several points in the manuscript reviewed here and should be discussed.\n\n8) The paper relies heavily on elegant kinetic studies using stopped-flow fluorescence measurements, and these measurements yield multi-step kinetic models for drug binding. These models are crucial to this study, but multi-step reactions are hard to intuitively understand. It would be worthwhile for the authors to model and graphically depict the outcomes of several scenarios varying one or two parameters in their kinetic models at a time, to show why, for example, conformational selection between the DFG-in and DFG-out states does not substantially contribute to Danusertib binding, whereas the induced fit step does. Similar analyses could be done for the other inhibitors as well and would greatly facilitate the readers' understanding of these important concepts.\n\n9) It might be interesting to examine the kinetic mechanism of one drug against a few different kinases. The authors already did this in their previous paper, comparing Gleevec binding with Src and Abl, and now with Aurora A in this manuscript. To infer that their observed induced fit phenomena underly a general principle of drug binding, perhaps the authors could compare Danusertib binding kinetics for Aurora A with a few other kinases. If this is not feasible, then the revised manuscript should state that the generality of the principles awaits further study.\n",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b304d863-2fab-461b-ab8f-b5dcab7ae918",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C1",
+      "claim": "Protein kinases are major drug targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein kinases are major drug targets, but the development of highly-selective inhibitors has been challenging due to the similarity of their active sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is supported by citations in the introduction (Cohen, 2002; Hopkins and Groom, 2002).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "25ea5a05-5345-464f-98de-80dcb2258ebb",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C2",
+      "claim": "The development of highly-selective kinase inhibitors has been challenging due to the similarity of their active sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein kinases are major drug targets, but the development of highly-selective inhibitors has been challenging due to the similarity of their active sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established challenge in the field, stated in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "f52693e6-0c70-4844-9dfb-388968070207",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C3",
+      "claim": "The DFG loop can adopt distinct structural states.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation of distinct structural states of the fully-conserved Asp-Phe-Gly (DFG) loop has put the concept of conformational selection for the DFG-state at the center of kinase drug discovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by crystallographic data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "502bab4d-9d01-411c-8557-987da7c1a682",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C4",
+      "claim": "Gleevec selectivity for Abl was rooted in conformational changes after drug binding rather than conformational selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it was shown that Gleevec selectivity for the Tyr-kinase Abl was instead rooted in conformational changes after drug binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and references prior work (Agafonov et al., 2014; Wilson et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "ea994030-02f5-441c-a2a3-f3f0b817759b",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C5",
+      "claim": "Protein dynamics in the drug-bound state plays a crucial role in drug selectivity, affinity, and on-target residence time for kinase inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "These new concepts, where protein dynamics in the drug-bound state plays the crucial role, can be applied to inhibitor design of targets outside the kinome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the abstract and supported by the kinetic data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "e9ad62c0-ad44-4473-bf83-c853fae3bfbb",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C6",
+      "claim": "Protein kinases have become the number one drug target of the 21st century.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein kinases have become the number one drug target of the 21th century (Cohen, 2002; Hopkins and Groom, 2002), due to their central role in cellular processes and involvement in various types of cancer (Carvajal et al., 2006; Gautschi et al., 2008; Katayama and Sen, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "a9efaa1c-6125-46e1-96ab-01ea1d3fae5e",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C7",
+      "claim": "Protein kinases play a central role in cellular processes and are involved in various types of cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein kinases have become the number one drug target of the 21th century (Cohen, 2002; Hopkins and Groom, 2002), due to their central role in cellular processes and involvement in various types of cancer (Carvajal et al., 2006; Gautschi et al., 2008; Katayama and Sen, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "2a4bff45-8d5d-4665-b27d-2021dfa0aae3",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C8",
+      "claim": "Gleevec is a highly selective drug that specifically targets Abl kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the biggest success stories is Gleevec: a highly selective drug that specifically targets Abl kinase, providing an efficient treatment of chronic myelogenous leukemia (CML) and minimizing side effects (Iqbal and Iqbal, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "957b867d-b80b-422f-b873-72090b8ecc4c",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C9",
+      "claim": "Gleevec provides an efficient treatment of chronic myelogenous leukemia (CML) and minimizes side effects.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the biggest success stories is Gleevec: a highly selective drug that specifically targets Abl kinase, providing an efficient treatment of chronic myelogenous leukemia (CML) and minimizing side effects (Iqbal and Iqbal, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "689bc356-96de-47e5-9234-51c2725261d8",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C10",
+      "claim": "Gleevec can only bind to an inactive DFG loop conformation in the 'out-conformation' due to steric clash of the active, DFG-in conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Seminal work by the Kuriyan lab demonstrated that Gleevec can only bind to an inactive DFG (for Asp-Phe-Gly) loop conformation in the 'out-conformation' due to steric clash of the active, DFG-in conformation (Nagar et al., 2002; Schindler et al., 2000; Seeliger et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "77b22fcc-01b3-411d-ae1e-f3f6607955c7",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C11",
+      "claim": "The conformational state of the DFG loop has been proposed to dictate the selectivity for Gleevec and other kinase inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Since then it has long been proposed that the conformational state of the fully-conserved DFG loop (Taylor et al., 2012) dictates the selectivity for Gleevec and other kinase inhibitors (Lovera et al., 2012; Nagar et al., 2002; Schindler et al., 2000; Treiber and Shah, 2013; Xu et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "31b58dcd-f11c-4df0-8181-a805d4afcd28",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C12",
+      "claim": "The orientation of the DFG-motif and its possible steric clashes proved insufficient to explain drug selectivity and affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "The orientation of the DFG-motif and its possible steric clashes is indeed important for the ability of a class of inhibitors to bind to the kinase, but proved insufficient to explain drug selectivity and affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a conclusion from prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "281dbfec-4e08-48dd-891c-e458bb349f57",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C13",
+      "claim": "An induced-fit step after drug binding is the key determinant for Gleevec's selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent quantitative binding kinetics combined with ancestral sequence reconstruction put forward a mechanism where an induced-fit step after drug binding is the key determinant for Gleevec's selectivity (Agafonov et al., 2014; Wilson et al., 2015), and fully recapitulates the binding affinities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "7b03c52e-d624-43b6-82a9-0da6c87d1411",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C14",
+      "claim": "Aurora A kinase is a key regulator of mitotic events, including mitotic entry, centrosome maturation and spindle formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Aurora A kinase is one of the key regulators of mitotic events, including mitotic entry, centrosome maturation and spindle formation (Fu et al., 2007; Lukasiewicz and Lingle, 2009; Marumoto et al., 2005), as well as assisting in neuronal migration (Nikonova et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "c38c3ba2-22a5-482c-a744-c4bd8bf6467c",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C15",
+      "claim": "Aurora A assists in neuronal migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Aurora A kinase is one of the key regulators of mitotic events, including mitotic entry, centrosome maturation and spindle formation (Fu et al., 2007; Lukasiewicz and Lingle, 2009; Marumoto et al., 2005), as well as assisting in neuronal migration (Nikonova et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "fcedee08-961f-4d2c-8b32-fbfb8393df9c",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C16",
+      "claim": "Aurora A is overexpressed in a wide range of tumors, including breast, colon, ovary and skin malignancies.",
+      "claim_type": "EXPLICIT",
+      "source": "Aurora A has attracted significant attention for the development of targeted agents for cancer because it is overexpressed in a wide range of tumors, including breast, colon, ovary and skin malignancies (Carvajal et al., 2006; Gautschi et al., 2008; Katayama and Sen, 2010; Lok et al., 2010; Marzo and Naval, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "cd568d50-db23-44c9-895d-c9a7623eff33",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C17",
+      "claim": "Danusertib (PHA739358) inhibits all members of the Aurora family with low nanomolar IC50 values (13, 79 and 61 nM for Aurora A, B and C, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Danusertib (PHA739358) and AT9283 were developed for Aurora kinases, whereas Gleevec is selective for the Tyr kinase Abl. Danusertib inhibits all members of the Aurora family with low nanomolar IC50 values (13, 79 and 61 nM for Aurora A, B and C, respectively) (Carpinelli et al., 2007; Fraedrich et al., 2012) and was one of the first Aurora kinase inhibitors to enter phase I and II clinical trials (Kollareddy et al., 2012; Steeghs et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "6bc14cce-161b-4b5e-bb53-37e77986b963",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C18",
+      "claim": "Danusertib was one of the first Aurora kinase inhibitors to enter phase I and II clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Danusertib inhibits all members of the Aurora family with low nanomolar IC50 values (13, 79 and 61 nM for Aurora A, B and C, respectively) (Carpinelli et al., 2007; Fraedrich et al., 2012) and was one of the first Aurora kinase inhibitors to enter phase I and II clinical trials (Kollareddy et al., 2012; Steeghs et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "28bc6a63-28ec-4628-a700-ed6237d1f0d5",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C19",
+      "claim": "A crystal structure of Danusertib bound to Aurora A kinase shows an inactive kinase with the DFG-loop in the out conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "A crystal structure of Danusertib bound to Aurora A kinase shows an inactive kinase with the DFG-loop in the out conformation (Fancelli et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "a0f91e3f-fc2a-409a-8f2f-ae4574248bff",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C20",
+      "claim": "AT9283 inhibits both Aurora A and B with an IC50 of 3 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "AT9283 inhibits both Aurora A and B with an IC50 of 3 nM (Howard et al., 2009) and has also entered several clinical trials (Borisa and Bhatt, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "3ae73bd8-bce9-41e9-a77f-f644fb1cacfb",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C21",
+      "claim": "AT9283 has entered several clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "AT9283 inhibits both Aurora A and B with an IC50 of 3 nM (Howard et al., 2009) and has also entered several clinical trials (Borisa and Bhatt, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "6c465fe4-803f-45ba-ae00-e47daee8091b",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C22",
+      "claim": "The crystal structure of Aurora A with AT9283 shows that this drug binds to the DFG-in, active conformation of the kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the crystal structure of Aurora A with AT9283 shows that this drug binds to the DFG-in, active conformation of the kinase (Howard et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "b4c3de89-af1e-46c2-9c51-609e0b71b163",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C23",
+      "claim": "Two crystals from the same crystallization well capture both the inactive and active conformations of dephosphorylated Aurora A bound with AMPPCP.",
+      "claim_type": "EXPLICIT",
+      "source": "Two crystals from the same crystallization well capture both the inactive and active conformations of dephosphorylated Aurora A bound with AMPPCP (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 1A,B showing the two structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "687bb664-fd3f-4ca8-a82c-df9d172a3b81",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C24",
+      "claim": "The first structure (PDB 4C3R) superimposes with the well-known inactive, dephosphorylated Aurora A structure (PDB 1MUO).",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, the first structure (PDB 4C3R [Zorba et al., 2014]) superimposes with the well-known inactive, dephosphorylated Aurora A structure (PDB 1MUO [Cheetham et al., 2002]) and the activation loop is not visible as commonly observed for kinases lacking phosphorylation of the activation loop (Zorba et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "41dbcd49-8cf5-4dec-97a6-50e71d18d7a8",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C25",
+      "claim": "The second structure (PDB 6CPF) adopts the same conformation as the previously published phosphorylated, active structure (PDB 1OL7).",
+      "claim_type": "EXPLICIT",
+      "source": "The second structure (PDB 6CPF; Table 1) adopts the same conformation as the previously published phosphorylated, active structure (PDB 1OL7 [Bayliss et al., 2003]) (Figure 1C) and the first part of the activation loop could be built, although the B-factors are high.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with a supporting citation and reference to Figure 1C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "8a3ca0c3-e3f9-42df-a42f-731d113c753f",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C26",
+      "claim": "Every hallmark of an active state is seen for dephosphorylated Aurora A, including the DFG-in conformation that is essential for completing the regulatory spine.",
+      "claim_type": "EXPLICIT",
+      "source": "Every hallmark of an active state is seen for this dephosphorylated protein, including the DFG-in conformation that is essential for completing the regulatory spine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by the crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "f1ce7328-d739-4af1-b85d-46bf28dfb815",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C27",
+      "claim": "In the active, non-phosphorylated structure, electron density is seen in the canonical tighter Mg2+-binding site, where the metal ion is coordinated to the \u03b1- and \u03b2-phosphates of AMPPCP and Asp274.",
+      "claim_type": "EXPLICIT",
+      "source": "In the active, non-phosphorylated structure, electron density is seen in the canonical tighter Mg2+-binding site, where the metal ion is coordinated to the \u03b1- and \u03b2-phosphates of AMPPCP and Asp274.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on crystallographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "4d68d4ee-f6bf-4784-922d-6f8167356f12",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C28",
+      "claim": "In the inactive structure, no electron density for Mg2+ can be identified possibly due to the fact that Asp274 is rotated to the DFG-out position.",
+      "claim_type": "EXPLICIT",
+      "source": "In the inactive structure, no electron density for Mg2+ can be identified possibly due to the fact that Asp274 is rotated to the DFG-out position and is, therefore, lost as coordination partner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on crystallographic data and structural reasoning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "049073b1-a993-4a27-84eb-ac4cd80c2c46",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C29",
+      "claim": "Sampling of the active conformation does not depend on AMPPCP binding as dephosphorylated, apo Aurora A also crystallizes in the active form.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, sampling of the active conformation does not depend on AMPPCP binding as dephosphorylated, apo Aurora A also crystallizes in the active form (PDB 6CPE; Figure 1E,F and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by the crystal structure (PDB 6CPE) and Figure 1E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "81981a8c-f698-42df-ac9a-f711fbcca8b2",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C30",
+      "claim": "Wild-type, dephosphorylated Aurora A in its apo or nucleotide bound state has been found in the active conformation in other crystallographic studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are consistent with other crystallographic studies on wild-type, dephosphorylated Aurora A in its apo or nucleotide bound state, where the kinase was also found in the active conformation (Gustafson et al., 2014; Jane\u010dek et al., 2016; Nowakowski et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "58aaf036-d859-4dd9-b843-c51b67a7fb3d",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C31",
+      "claim": "In Aurora kinase sequences a tryptophan residue, Trp277, is immediately following the DFG motif and displays a drastically different orientation whether Aurora A is in an active (DFG-in) or inactive (DFG-out) conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that in Aurora kinase sequences a tryptophan residue, Trp277, is immediately following the DFG motif and displays a drastically different orientation whether Aurora A is in an active (DFG-in) or inactive (DFG-out) conformation (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 1D showing the structural differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "c54ace8d-818b-4925-bb11-e08db2d2d612",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C32",
+      "claim": "Trp277 is unique for the Aurora kinase family in the Ser/Thr kinome.",
+      "claim_type": "EXPLICIT",
+      "source": "This Trp moiety is unique for the Aurora kinase family in the Ser/Thr kinome and its position is suggested to be important for tuning the substrate specificity (Chen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "4761dbed-3d58-48b4-8103-a168a1d4d9bf",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C33",
+      "claim": "The position of Trp277 is suggested to be important for tuning the substrate specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "This Trp moiety is unique for the Aurora kinase family in the Ser/Thr kinome and its position is suggested to be important for tuning the substrate specificity (Chen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "d2d52dfe-054b-49e2-b84f-c3cc4d1eb847",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C34",
+      "claim": "Only three out of four tryptophan side chain indole signals are seen in the 2D NMR spectra of a [15N]-Trp labeled sample of Aurora A.",
+      "claim_type": "EXPLICIT",
+      "source": "[1H-15N]-TROSY-HSQC experiments on uniformly 15N-labeled samples of Aurora A proved to be no exception: many peaks are missing and only three out of four tryptophan side chain indole signals are seen in the 2D spectra of a [15N]-Trp labeled sample (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 2A,B showing the NMR spectra.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "b2ef6591-191e-4c62-b781-48f615868fb7",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C35",
+      "claim": "Four peaks are observed in 19F NMR spectra for apo- and AMPPCP-bound wild-type Aurora A containing 5-fluoro-tryptophan residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Aurora A was produced containing 5-fluoro-tryptophan residues to allow for one-dimensional 19F spectroscopy to deal with exchange broadening while providing sensitivity close to proton NMR (Kitevski-LeBlanc and Prosser, 2012). Now, we observe as expected four peaks in our NMR spectra for apo- and AMPPCP-bound wild-type Aurora A (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 2C showing the 19F NMR spectra.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "3f234222-082b-4e46-b311-f3fed164a633",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C36",
+      "claim": "The linewidth of one resonance in the 19F NMR spectrum is approximately 5-fold larger than the others.",
+      "claim_type": "EXPLICIT",
+      "source": "A deconvolution of the spectrum yields almost identical integral values for all four peaks, whereas the linewidth of one resonance is approximately 5-fold larger (Figure 2D, purple signal).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 2D showing the deconvolution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "9a902b07-d3d9-41af-98bf-231f55c6b470",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C37",
+      "claim": "The broad peak in the 19F NMR spectrum originates from Trp277, directly adjacent to the DFG-loop.",
+      "claim_type": "EXPLICIT",
+      "source": "This broad peak is a prime candidate to originate from Trp277, directly adjacent to the DFG-loop. The W277L mutation confirmed our hypothesis (Figure 2C), and the extensive line broadening of this signal in a one-dimensional spectrum is consistent with its absence in the [1H,15N]-TROSY-HSQC spectrum.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and confirmed by mutagenesis data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "e4be1355-d8d4-48e2-8261-e27dfe41000d",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C38",
+      "claim": "The W277L mutant is still active, as confirmed by a kinase assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the W277L mutant is still active, as confirmed by a kinase assay, most likely because this Trp is not conserved in Ser/Thr kinases, where a Leu residue is found at that position for several Ser/Thr family members.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on kinase assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "7294f5a1-b470-4dee-acd3-10229f6d7667",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C39",
+      "claim": "The broad line shape for the Trp277 peak hints at severe exchange broadening in the surrounding of the DFG-loop.",
+      "claim_type": "EXPLICIT",
+      "source": "The broad line shape for the Trp277 peak hints at severe exchange broadening in the surrounding of the DFG-loop and is consistent with the high B-factors for Trp277 and its neighboring residues observed in all crystal structures described here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on NMR and crystallographic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "f7b2bace-83eb-48b3-8bce-0330dcaa582f",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C40",
+      "claim": "Binding kinetics of Gleevec to Aurora A exhibited biphasic kinetic traces at 10\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "At 25\u00b0C, the binding of Gleevec to Aurora A was too fast to be monitored and, therefore, experiments were performed at 10\u00b0C. Binding kinetics of Gleevec to Aurora A exhibited biphasic kinetic traces (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 3A showing the kinetic traces.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "507b24bf-01bb-4920-a862-e0bd89711ee4",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C45",
+      "claim": "The second, slow phase of Gleevec binding exhibits an increase in fluorescence intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "The second, slow phase exhibits an increase in fluorescence intensity (Figure 3A), with the observed rate constant decreasing with Gleevec concentration (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figures 3A and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "22fe0870-5515-4568-bbf6-cb7af2e6671b",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C48",
+      "claim": "These rate constants represent the conformational change from DFG-in to -out and vice versa since Gleevec is a DFG-out selective inhibitor due to steric hindrance.",
+      "claim_type": "EXPLICIT",
+      "source": "These rate constants represent the conformational change from DFG-in to -out and vice versa since Gleevec is a DFG-out selective inhibitor due to steric hindrance (Nagar et al., 2002; Schindler et al., 2000; Seeliger et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "e3a610b8-94ec-4b30-b0f2-a6333945ed46",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C52",
+      "claim": "The lack of an induced-fit step for Gleevec binding to Aurora A is the major reason for Gleevec's weak binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the lack of an induced-fit step for Gleevec binding to Aurora A is the major reason for Gleevec's weak binding, and not the DFG-loop conformation or physical drug-binding step, consistent with our earlier results (Wilson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the kinetic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "061c0f8c-bd87-4fe7-ba7c-108834fcf436",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C53",
+      "claim": "An increase in fluorescence intensity was observed at all Danusertib concentrations and showed double-exponential behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "An increase in fluorescence intensity was observed at all Danusertib concentrations and showed double-exponential behavior (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 5B showing the kinetic traces.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "356b10f7-e398-446f-8da1-776c14c9143c",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C54",
+      "claim": "The dependence of one of the observed rate constants on Danusertib concentration is linear.",
+      "claim_type": "EXPLICIT",
+      "source": "The dependence of the two observed rates constants on drug concentration is linear for one of them (Figure 5C) and non-linear for the other with an apparent plateau at approximately 16 \u00b1 2 s\u22121 (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 5C showing the linear dependence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "9c6e07d8-d894-4335-9692-559fb6f15f42",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C55",
+      "claim": "The step with linear inhibitor concentration dependence corresponds to the second-order binding step.",
+      "claim_type": "EXPLICIT",
+      "source": "The step with linear inhibitor concentration dependence corresponds to the second-order binding step, whereas a non-linear concentration dependency hints at protein conformational transitions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on kinetic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "555551e4-1db8-4b8e-9a8b-8318a4ae68e5",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C57",
+      "claim": "The slow-off rate of Danusertib from Aurora A is k-3 = (3.2 \u00b1 0.3) \u00d7 10\u22124 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, the dissociation kinetics for Danusertib was measured by fluorescence and appeared to be extremely slow with an observed slow-off rate of (3.2 \u00b1 0.3) \u00d7 10\u22124 s\u22121 (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 5E showing the dissociation kinetics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "a126a2ae-aa5d-4a0d-8f40-2bbdd5fb9f95",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C60",
+      "claim": "A conformational selection mechanism always weakens the overall inhibitor affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results illuminate trivial but profound principles of binding affinity and lifetime of drug/target complexes: a conformational selection mechanism always weakens the overall inhibitor affinity, while an induced-fit step tightens the affinity depending on how far-shifted the equilibrium in the enzyme/drug complex is (Equations 2\u20134, Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 6\u2014figure supplement 2 showing the effect on KD.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "9ae0511c-180e-4a4a-8caf-c409414ffaa8",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C61",
+      "claim": "An induced-fit step tightens the affinity depending on how far-shifted the equilibrium in the enzyme/drug complex is.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results illuminate trivial but profound principles of binding affinity and lifetime of drug/target complexes: a conformational selection mechanism always weakens the overall inhibitor affinity, while an induced-fit step tightens the affinity depending on how far-shifted the equilibrium in the enzyme/drug complex is (Equations 2\u20134, Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "86c8d5b3-0f15-4b32-8646-baebcb9b6621",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C62",
+      "claim": "For DFG-out binders, the DFG-in and -out equilibrium weakens the overall affinity 1.6-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "For DFG-out binders (e.g., Danusertib and Gleevec), the DFG-in and -out equilibrium weakens the overall affinity 1.6-fold; however, the conformational change after drug binding results in a four orders of magnitude tighter binding for Danusertib and is the sole reason for its high affinity to Aurora A compared to Gleevec.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on the kinetic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "baad4b27-24fb-4fd8-8ba6-89022809a7b7",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C63",
+      "claim": "The conformational change after drug binding results in a four orders of magnitude tighter binding for Danusertib and is the sole reason for its high affinity to Aurora A compared to Gleevec.",
+      "claim_type": "EXPLICIT",
+      "source": "For DFG-out binders (e.g., Danusertib and Gleevec), the DFG-in and -out equilibrium weakens the overall affinity 1.6-fold; however, the conformational change after drug binding results in a four orders of magnitude tighter binding for Danusertib and is the sole reason for its high affinity to Aurora A compared to Gleevec.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on the kinetic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "5290e1e6-abc1-4638-b5ed-7ac78a6495c5",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C65",
+      "claim": "Rapid kinetic experiments of binding AT9283 to Aurora A at 25\u00b0C resulted in biphasic traces and both processes showed an increase in fluorescence over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapid kinetic experiments of binding AT9283 to Aurora A at 25\u00b0C resulted in biphasic traces and both processes showed an increase in fluorescence over time (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 7A showing the kinetic traces.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "26400bf6-58c6-47d0-9046-00ba6a900872",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C68",
+      "claim": "Dissociation of AT9283 from Aurora A is characterized by double-exponential kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Dissociation is characterized by double-exponential kinetics (Figure 7D and Figure 7\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 7D showing the dissociation kinetics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "74affd06-ce4c-4d74-b5e5-6cc6dd2aafd0",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C69",
+      "claim": "The fast phase of AT9283 dissociation decays with a rate constant of (1.1 \u00b1 0.02) \u00d7 10\u22122 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "The fast phase (~38% of the total amplitude change) decays with a rate constant of (1.1 \u00b1 0.02) \u00d7 10\u22122 s\u22121, and the slow phase (~62% of the total change in amplitude) has a rate constant of (0.1 \u00b1 0.01) \u00d7 10\u22122 s\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on the dissociation kinetics data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "3780b5bf-d921-4099-b273-43e1bbc7fbbc",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C70",
+      "claim": "The slow phase of AT9283 dissociation has a rate constant of (0.1 \u00b1 0.01) \u00d7 10\u22122 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "The fast phase (~38% of the total amplitude change) decays with a rate constant of (1.1 \u00b1 0.02) \u00d7 10\u22122 s\u22121, and the slow phase (~62% of the total change in amplitude) has a rate constant of (0.1 \u00b1 0.01) \u00d7 10\u22122 s\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on the dissociation kinetics data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "25780013-cfbb-482c-bf7a-fccb4ddb05b2",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C71",
+      "claim": "AT9283 can bind to both DFG-in and DFG-out states of Aurora A, but only AurAin:AT can undergo an induced-fit step.",
+      "claim_type": "EXPLICIT",
+      "source": "These failures, together with the lack of a detectable conformational selection step, led to a new model in which both the DFG-in and DFG-out states can bind AT9283, but only AurAin:AT can undergo an induced-fit step (Figure 7H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 7H showing the binding scheme.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "e449687b-0791-4c99-82b2-707d1857eb5b",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C73",
+      "claim": "A crystal structure of AT9283 bound to Aurora A shows the DFG-out conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In an effort to structurally verify our model we solved a crystal structure of Aurora A with AT9283 bound and indeed observed the DFG-out conformation (PDB 6CPG, Figure 9B and Table 1), in contrast to the DFG-in conformation as previously reported (Figure 9A) (Howard et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 9B showing the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "899d8a48-4264-475c-b629-1e6db79f98bc",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C74",
+      "claim": "The new crystal structure of AT9283 bound to Aurora A is in contrast to the DFG-in conformation as previously reported.",
+      "claim_type": "EXPLICIT",
+      "source": "In an effort to structurally verify our model we solved a crystal structure of Aurora A with AT9283 bound and indeed observed the DFG-out conformation (PDB 6CPG, Figure 9B and Table 1), in contrast to the DFG-in conformation as previously reported (Figure 9A) (Howard et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with a supporting citation and Figures 9A and 9B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "00b489ea-a1a3-43f9-9847-553d495ef13b",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C75",
+      "claim": "The structural and kinetic data together support that AT9283 can bind to both DFG-in and DFG-out state of Aurora A.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our structural and kinetic data together support that AT9283 can bind to both DFG-in and DFG-out state of Aurora A, and emphasizes the need for caution when interpreting single X-ray structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the structural and kinetic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "86a6a01d-6b6b-4acc-beff-680357ac3244",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C76",
+      "claim": "The binding of mant-ATP to Aurora A showed biphasic kinetic traces.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding of mant-ATP to Aurora A showed biphasic kinetic traces (Figure 10A) that describe the physical binding step (i.e., linear dependence on mant-ATP concentration; Figure 10B) and the induced-fit step (Figure 10C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 10A showing the kinetic traces.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "9fc707c6-4805-4b6b-b0bb-52d0ef719fe8",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C77",
+      "claim": "Mant-ATP can bind to both the DFG-in and -out conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that mant-ATP can bind to both the DFG-in and -out conformations, consistent with our nucleotide-bound crystal structures (Figure 1A\u2013D) and recent single-molecule fluorescence spectroscopy data that indicates that nucleotide binding does not significantly affect this equilibrium (Cyphers et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by crystal structures and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "962eb006-a8d9-4760-8559-c15fe8cba02d",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C79",
+      "claim": "The presence of an induced-fit step for the natural substrate ATP suggests that such conformational change after ligand binding is a built-in property of the enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of an induced-fit step for the natural substrate ATP suggests that such conformational change after ligand binding is a built-in property of the enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as an inference from the ATP binding data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "9f8bd480-e2c9-4c77-9a48-434d343f67b1",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C80",
+      "claim": "Inhibitors take advantage of the inherent plasticity of the enzyme that is required for its activity and regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, inhibitors take advantage of the inherent plasticity of the enzyme that is required for its activity and regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as an inference from the comparison of ATP and inhibitor binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "7c035061-0dfa-4ade-928c-6cdcdd785c48",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C82",
+      "claim": "Slow conformational changes, particularly the reverse induced-fit step, are at the heart of action for an efficient drug, because it results in tight binding and a long lifetime on the target.",
+      "claim_type": "EXPLICIT",
+      "source": "Faster conformational changes and weaker binding are of course prerequisites for efficient turnover; whereas slow conformational changes, particularly the reverse induced-fit step, are at the heart of action for an efficient drug, because it results in tight binding and a long lifetime on the target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the kinetic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "1431eca5-26d6-41b0-9b0a-12350aedb701",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C83",
+      "claim": "An induced-fit step turns out to be key for all tight-binding inhibitors studied.",
+      "claim_type": "EXPLICIT",
+      "source": "An induced-fit step turns out to be key for all tight-binding inhibitors studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "e71f4385-2946-4fa7-b665-baf42079aee9",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C84",
+      "claim": "The induced-fit mechanism may be a general mechanism for different kinases and multiple inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "From our results on Aurora A kinase presented here and earlier data on Tyrosine-kinases (Agafonov et al., 2014; Wilson et al., 2015), we propose that this may be a general mechanism for different kinases and multiple inhibitors, thereby providing a platform for future computational and experimental efforts in rational drug design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a proposal based on the current and prior data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "a2b26426-f666-4a74-a8be-4fc39718d042",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C85",
+      "claim": "A highly-skewed equilibrium towards E*:D increases the affinity for the drug by this coupled equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'use' of a highly-skewed equilibrium towards E*:D for a promising drug is logical for the following reasons: (i) it increases the affinity for the drug by this coupled equilibrium, (ii) it prolongs the residence time of the drug on the target due to the often slow reverse rate, (iii) it is specific for each drug as it happens after the drug binding, and (iv) it can add selectivity for the targets because it likely involves residues more remote from the active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a logical consequence of the induced-fit mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "c620ccc9-18a8-49ec-9ffd-a7898a42732e",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C86",
+      "claim": "A highly-skewed equilibrium towards E*:D prolongs the residence time of the drug on the target due to the often slow reverse rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'use' of a highly-skewed equilibrium towards E*:D for a promising drug is logical for the following reasons: (i) it increases the affinity for the drug by this coupled equilibrium, (ii) it prolongs the residence time of the drug on the target due to the often slow reverse rate, (iii) it is specific for each drug as it happens after the drug binding, and (iv) it can add selectivity for the targets because it likely involves residues more remote from the active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a logical consequence of the induced-fit mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "3bd29b1f-89b8-4adb-b689-7e46c9dad825",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C87",
+      "claim": "The induced-fit step is specific for each drug as it happens after the drug binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'use' of a highly-skewed equilibrium towards E*:D for a promising drug is logical for the following reasons: (i) it increases the affinity for the drug by this coupled equilibrium, (ii) it prolongs the residence time of the drug on the target due to the often slow reverse rate, (iii) it is specific for each drug as it happens after the drug binding, and (iv) it can add selectivity for the targets because it likely involves residues more remote from the active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a logical consequence of the induced-fit mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "07cdc08e-983d-454e-826a-edb5662d715a",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C88",
+      "claim": "The induced-fit step can add selectivity for the targets because it likely involves residues more remote from the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'use' of a highly-skewed equilibrium towards E*:D for a promising drug is logical for the following reasons: (i) it increases the affinity for the drug by this coupled equilibrium, (ii) it prolongs the residence time of the drug on the target due to the often slow reverse rate, (iii) it is specific for each drug as it happens after the drug binding, and (iv) it can add selectivity for the targets because it likely involves residues more remote from the active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a logical consequence of the induced-fit mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "2601d914-dc54-42f1-85d3-873f0764a9b8",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C89",
+      "claim": "An increased drug residence time has significant pharmacological advantages as it can lead to a prolonged biological effect, a decrease of side effects, and a lower risk of metabolic drug modification.",
+      "claim_type": "EXPLICIT",
+      "source": "An increased drug residence time has significant pharmacological advantages as it can lead to a prolonged biological effect, a decrease of side effects, and a lower risk of metabolic drug modification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on pharmacological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "627198c8-8c15-4fc5-a455-04a587a06a11",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C91",
+      "claim": "Conformational selection by definition weakens the overall ligand affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our results, we argue that conformational selection of the DFG-state by ATP-competitive inhibitors is a mistakenly pursued concept in drug design for the following reasons: (i) conformational selection by definition weakens the overall ligand affinity, (ii) active site binders are automatically inhibitors, therefore selective binding to a specific DFG-state has no advantage (Badrinarayan and Sastry, 2014; Liu and Gray, 2006), (iii) kinases interconvert between both states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the kinetic data and thermodynamic principles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "4569da48-733e-4028-8a40-f42c3f5f3540",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C92",
+      "claim": "Active site binders are automatically inhibitors, therefore selective binding to a specific DFG-state has no advantage.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our results, we argue that conformational selection of the DFG-state by ATP-competitive inhibitors is a mistakenly pursued concept in drug design for the following reasons: (i) conformational selection by definition weakens the overall ligand affinity, (ii) active site binders are automatically inhibitors, therefore selective binding to a specific DFG-state has no advantage (Badrinarayan and Sastry, 2014; Liu and Gray, 2006), (iii) kinases interconvert between both states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with supporting citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "e1523a10-b4be-44ce-abe6-00d2f4a96eab",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C93",
+      "claim": "Kinases interconvert between both DFG states.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our results, we argue that conformational selection of the DFG-state by ATP-competitive inhibitors is a mistakenly pursued concept in drug design for the following reasons: (i) conformational selection by definition weakens the overall ligand affinity, (ii) active site binders are automatically inhibitors, therefore selective binding to a specific DFG-state has no advantage (Badrinarayan and Sastry, 2014; Liu and Gray, 2006), (iii) kinases interconvert between both states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the kinetic and structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "6a515e20-b93f-4a07-b0e6-f0b026120554",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C94",
+      "claim": "Future design efforts should focus on understanding and exploiting induced-fit steps.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that future design efforts should be focusing on understanding and exploiting induced-fit steps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a recommendation based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "a0249125-2dc2-4f2e-bebc-f663bd0d2690",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C95",
+      "claim": "The different dynamic personalities of kinases need to be investigated at atomic resolution and used to guide small-molecule design.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, the different dynamic personalities of kinases or, more general, drug targets need to be investigated at atomic resolution and used to guide small-molecule design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a recommendation for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "9755e07f-aa83-47eb-b337-77bf020a592b",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "claim_id": "C96",
+      "claim": "The findings are encouraging for developing selective inhibitors even for kinases with very similar folds and drug binding pockets since the action does not happen on a single structural element of the protein, but on a complex energy landscape that is unique to each kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "The findings presented here are encouraging for developing selective inhibitors even for kinases with very similar folds and drug binding pockets since the action does not happen on a single structural element of the protein, but on a complex energy landscape that is unique to each kinase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a conclusion from the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8a0cb9c3-ff07-48cc-b415-97368cddf453",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Dephosphorylated Aurora A can adopt both inactive (DFG-out) and active (DFG-in) conformations in crystal structures, with or without AMPPCP bound. The active conformation displays all hallmarks of an active kinase state including proper regulatory spine assembly, despite lacking phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple crystal structures (C23-C25, C29) demonstrate both conformations, with detailed structural characterization (C26-C28) and consistency with prior crystallographic studies (C30). The structural data is internally consistent and well-documented with PDB codes and validation metrics provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "b5c2dd40-1899-4842-85d3-5baa1b9742ae",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Trp277, a residue unique to Aurora kinases immediately following the DFG motif, exhibits severe exchange broadening in NMR spectra indicative of conformational dynamics in the DFG-loop region. This was confirmed through 19F NMR of 5-fluoro-tryptophan labeled Aurora A and mutagenesis studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The NMR data (C34-C37) combined with mutagenesis validation (C37, C38) and correlation with crystallographic B-factors (C39) provide converging evidence for DFG-loop dynamics. The use of 19F NMR to overcome exchange broadening is methodologically sound and the W277L control confirms the assignment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "e3652a79-c746-4122-a100-4381e3631f2e",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Gleevec binding to Aurora A follows a two-step mechanism involving conformational selection (DFG-in to DFG-out interconversion) followed by physical drug binding, but lacks an induced-fit step. This absence of induced-fit is the primary reason for Gleevec's weak binding to Aurora A (KD ~24-47 \u03bcM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The biphasic kinetics (C40, C45), assignment of rate constants to conformational selection (C48), and correlation between calculated and measured KD values support the proposed mechanism. The lack of induced-fit is demonstrated by agreement between physical dissociation rate and observed koff (C52). Global fitting of kinetic data strengthens the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "72ef1f44-820f-47a7-9971-99ba775cdaaf",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Danusertib binding to Aurora A follows a three-step mechanism: conformational selection (DFG-in/out), physical binding, and an induced-fit step. The induced-fit step results in four orders of magnitude tighter binding compared to Gleevec and is responsible for Danusertib's high affinity (KD ~0.87-1.1 nM) and extremely slow dissociation rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The kinetic data (C53-C55, C57) combined with thermodynamic analysis (C60-C63) and global fitting provide strong support. Multiple orthogonal techniques (stopped-flow, Creoptix WAVE, fluorescence) yield consistent results. The calculated KD from microscopic rate constants matches the experimentally measured macroscopic KD, validating the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "7e07b502-5624-4273-92b0-405c1d65d594",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "AT9283 can bind to both DFG-in and DFG-out states of Aurora A, but only the DFG-in bound complex undergoes an induced-fit step. This is supported by both kinetic analysis and a new crystal structure showing AT9283 bound to the DFG-out conformation, contrasting with a previously reported DFG-in structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The kinetic data (C65, C68-C70) that could not be fit to simpler models led to the four-state mechanism (C71), which is validated by the new crystal structure (C73-C74). The structural and kinetic data converge to support dual binding modes (C75). Global fitting and multiple experimental approaches strengthen the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "9eb16977-fcb1-4762-9fd8-18a3495e496a",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The natural substrate ATP (as mant-ATP) binds Aurora A through a two-step mechanism involving physical binding and an induced-fit step, demonstrating that conformational changes after ligand binding are a built-in property of the enzyme that inhibitors exploit. The faster reverse induced-fit rate for ATP compared to tight-binding inhibitors enables efficient catalytic turnover.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The biphasic kinetics for mant-ATP (C76), binding to both DFG conformations (C77), and global fitting support the mechanism. The inference that induced-fit is an intrinsic enzyme property (C79-C80) is logical given the ATP data. The comparison of rate constants between ATP and inhibitors (C82) provides mechanistic insight into the difference between substrates and drugs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "9cd458f3-7917-424a-9346-d9056a9b5e1c",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "An induced-fit step after drug binding is key for all tight-binding inhibitors studied and may represent a general mechanism for kinase inhibitors. A highly-skewed equilibrium favoring the induced-fit state increases drug affinity, prolongs residence time, provides drug specificity, and can add selectivity through involvement of residues remote from the active site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the data for Aurora A with three inhibitors and ATP strongly support the induced-fit mechanism (C83), the generalization to all kinases and inhibitors (C84) is speculative and acknowledged as requiring broader validation. The logical consequences of induced-fit (C85-C88) are sound thermodynamically but some aspects (particularly C88 regarding remote residues) remain speculative without structural evidence of which residues are involved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "2025709c-0eb5-4202-91ec-bff3a02f87ba",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Conformational selection of DFG-state is argued to be a mistakenly pursued concept in kinase drug design because it weakens affinity, active site binding automatically confers inhibition regardless of DFG-state, and kinases interconvert between states. Instead, future efforts should focus on understanding and exploiting induced-fit steps and the unique dynamic energy landscape of each kinase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The thermodynamic argument that conformational selection weakens affinity (C91) is supported by the data and equations. The kinetic evidence that kinases interconvert between DFG states (C93) is demonstrated. The argument about active site binders (C92) is logical though relies on cited work. The recommendations for future work (C94-C95) are reasonable inferences from the findings, and the conclusion about unique energy landscapes (C96) follows from the differential induced-fit behavior observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "9a4a1495-dae0-4700-b78f-b1ac809cf8bc",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Protein kinases are major drug targets due to their central role in cellular processes and involvement in cancer, but developing highly-selective inhibitors is challenging due to active site similarity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are well-established facts in the field supported by the provided citations (Cohen, 2002; Hopkins and Groom, 2002; Carvajal et al., 2006; Gautschi et al., 2008; Katayama and Sen, 2010) and represent accepted background knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "39e8b964-006d-4000-bf45-a8c8cdf42198",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior work established that the DFG loop adopts distinct conformations and that Gleevec binds to the DFG-out state of Abl. While DFG-state conformational selection was long proposed to dictate selectivity, recent work showed that an induced-fit step after drug binding is the key determinant for Gleevec's selectivity to Abl.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately summarize prior work with appropriate citations (Nagar et al., 2002; Schindler et al., 2000; Seeliger et al., 2007; Agafonov et al., 2014; Wilson et al., 2015). The progression from the conformational selection hypothesis to the induced-fit mechanism represents the historical context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "cd9581bb-0990-4171-88df-9ce0c830f50a",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background on Aurora A kinase function, cancer relevance, and inhibitors: Aurora A regulates mitotic events and is overexpressed in tumors. Danusertib and AT9283 are Aurora inhibitors that entered clinical trials with low nanomolar IC50 values. Crystal structures show Danusertib bound to DFG-out Aurora A and AT9283 bound to DFG-in Aurora A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims are supported by appropriate citations and represent established knowledge about Aurora A biology and the clinical development of inhibitors. The crystal structure information (C19, C22) is from published work that provides context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    },
+    {
+      "id": "6b4a75f8-4645-45c1-9b01-102d3181340a",
+      "content_id": "060ab2a6-0b26-4349-a885-dbbffb2d5640",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Protein dynamics in the drug-bound state plays a crucial role in drug selectivity, affinity, and residence time, with increased residence time providing pharmacological advantages including prolonged biological effect, decreased side effects, and lower risk of metabolic modification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The role of drug-bound dynamics (C5) is the central conclusion supported by all the kinetic data in the manuscript. The pharmacological advantages of increased residence time (C89) represent established pharmacological knowledge appropriately applied to interpret the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:03:14.594262Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b4c3de89-af1e-46c2-9c51-609e0b71b163",
+      "result_id": "8a0cb9c3-ff07-48cc-b415-97368cddf453"
+    },
+    {
+      "claim_id": "687bb664-fd3f-4ca8-a82c-df9d172a3b81",
+      "result_id": "8a0cb9c3-ff07-48cc-b415-97368cddf453"
+    },
+    {
+      "claim_id": "41dbcd49-8cf5-4dec-97a6-50e71d18d7a8",
+      "result_id": "8a0cb9c3-ff07-48cc-b415-97368cddf453"
+    },
+    {
+      "claim_id": "8a3ca0c3-e3f9-42df-a42f-731d113c753f",
+      "result_id": "8a0cb9c3-ff07-48cc-b415-97368cddf453"
+    },
+    {
+      "claim_id": "f1ce7328-d739-4af1-b85d-46bf28dfb815",
+      "result_id": "8a0cb9c3-ff07-48cc-b415-97368cddf453"
+    },
+    {
+      "claim_id": "4d68d4ee-f6bf-4784-922d-6f8167356f12",
+      "result_id": "8a0cb9c3-ff07-48cc-b415-97368cddf453"
+    },
+    {
+      "claim_id": "049073b1-a993-4a27-84eb-ac4cd80c2c46",
+      "result_id": "8a0cb9c3-ff07-48cc-b415-97368cddf453"
+    },
+    {
+      "claim_id": "81981a8c-f698-42df-ac9a-f711fbcca8b2",
+      "result_id": "8a0cb9c3-ff07-48cc-b415-97368cddf453"
+    },
+    {
+      "claim_id": "58aaf036-d859-4dd9-b843-c51b67a7fb3d",
+      "result_id": "b5c2dd40-1899-4842-85d3-5baa1b9742ae"
+    },
+    {
+      "claim_id": "c54ace8d-818b-4925-bb11-e08db2d2d612",
+      "result_id": "b5c2dd40-1899-4842-85d3-5baa1b9742ae"
+    },
+    {
+      "claim_id": "4761dbed-3d58-48b4-8103-a168a1d4d9bf",
+      "result_id": "b5c2dd40-1899-4842-85d3-5baa1b9742ae"
+    },
+    {
+      "claim_id": "d2d52dfe-054b-49e2-b84f-c3cc4d1eb847",
+      "result_id": "b5c2dd40-1899-4842-85d3-5baa1b9742ae"
+    },
+    {
+      "claim_id": "b2ef6591-191e-4c62-b781-48f615868fb7",
+      "result_id": "b5c2dd40-1899-4842-85d3-5baa1b9742ae"
+    },
+    {
+      "claim_id": "3f234222-082b-4e46-b311-f3fed164a633",
+      "result_id": "b5c2dd40-1899-4842-85d3-5baa1b9742ae"
+    },
+    {
+      "claim_id": "9a902b07-d3d9-41af-98bf-231f55c6b470",
+      "result_id": "b5c2dd40-1899-4842-85d3-5baa1b9742ae"
+    },
+    {
+      "claim_id": "e4be1355-d8d4-48e2-8261-e27dfe41000d",
+      "result_id": "b5c2dd40-1899-4842-85d3-5baa1b9742ae"
+    },
+    {
+      "claim_id": "7294f5a1-b470-4dee-acd3-10229f6d7667",
+      "result_id": "b5c2dd40-1899-4842-85d3-5baa1b9742ae"
+    },
+    {
+      "claim_id": "f7b2bace-83eb-48b3-8bce-0330dcaa582f",
+      "result_id": "e3652a79-c746-4122-a100-4381e3631f2e"
+    },
+    {
+      "claim_id": "507b24bf-01bb-4920-a862-e0bd89711ee4",
+      "result_id": "e3652a79-c746-4122-a100-4381e3631f2e"
+    },
+    {
+      "claim_id": "22fe0870-5515-4568-bbf6-cb7af2e6671b",
+      "result_id": "e3652a79-c746-4122-a100-4381e3631f2e"
+    },
+    {
+      "claim_id": "e3a610b8-94ec-4b30-b0f2-a6333945ed46",
+      "result_id": "e3652a79-c746-4122-a100-4381e3631f2e"
+    },
+    {
+      "claim_id": "061c0f8c-bd87-4fe7-ba7c-108834fcf436",
+      "result_id": "72ef1f44-820f-47a7-9971-99ba775cdaaf"
+    },
+    {
+      "claim_id": "356b10f7-e398-446f-8da1-776c14c9143c",
+      "result_id": "72ef1f44-820f-47a7-9971-99ba775cdaaf"
+    },
+    {
+      "claim_id": "9c6e07d8-d894-4335-9692-559fb6f15f42",
+      "result_id": "72ef1f44-820f-47a7-9971-99ba775cdaaf"
+    },
+    {
+      "claim_id": "555551e4-1db8-4b8e-9a8b-8318a4ae68e5",
+      "result_id": "72ef1f44-820f-47a7-9971-99ba775cdaaf"
+    },
+    {
+      "claim_id": "a126a2ae-aa5d-4a0d-8f40-2bbdd5fb9f95",
+      "result_id": "72ef1f44-820f-47a7-9971-99ba775cdaaf"
+    },
+    {
+      "claim_id": "9ae0511c-180e-4a4a-8caf-c409414ffaa8",
+      "result_id": "72ef1f44-820f-47a7-9971-99ba775cdaaf"
+    },
+    {
+      "claim_id": "86c8d5b3-0f15-4b32-8646-baebcb9b6621",
+      "result_id": "72ef1f44-820f-47a7-9971-99ba775cdaaf"
+    },
+    {
+      "claim_id": "baad4b27-24fb-4fd8-8ba6-89022809a7b7",
+      "result_id": "72ef1f44-820f-47a7-9971-99ba775cdaaf"
+    },
+    {
+      "claim_id": "5290e1e6-abc1-4638-b5ed-7ac78a6495c5",
+      "result_id": "7e07b502-5624-4273-92b0-405c1d65d594"
+    },
+    {
+      "claim_id": "26400bf6-58c6-47d0-9046-00ba6a900872",
+      "result_id": "7e07b502-5624-4273-92b0-405c1d65d594"
+    },
+    {
+      "claim_id": "74affd06-ce4c-4d74-b5e5-6cc6dd2aafd0",
+      "result_id": "7e07b502-5624-4273-92b0-405c1d65d594"
+    },
+    {
+      "claim_id": "3780b5bf-d921-4099-b273-43e1bbc7fbbc",
+      "result_id": "7e07b502-5624-4273-92b0-405c1d65d594"
+    },
+    {
+      "claim_id": "25780013-cfbb-482c-bf7a-fccb4ddb05b2",
+      "result_id": "7e07b502-5624-4273-92b0-405c1d65d594"
+    },
+    {
+      "claim_id": "e449687b-0791-4c99-82b2-707d1857eb5b",
+      "result_id": "7e07b502-5624-4273-92b0-405c1d65d594"
+    },
+    {
+      "claim_id": "899d8a48-4264-475c-b629-1e6db79f98bc",
+      "result_id": "7e07b502-5624-4273-92b0-405c1d65d594"
+    },
+    {
+      "claim_id": "00b489ea-a1a3-43f9-9847-553d495ef13b",
+      "result_id": "7e07b502-5624-4273-92b0-405c1d65d594"
+    },
+    {
+      "claim_id": "86a6a01d-6b6b-4acc-beff-680357ac3244",
+      "result_id": "9eb16977-fcb1-4762-9fd8-18a3495e496a"
+    },
+    {
+      "claim_id": "9fc707c6-4805-4b6b-b0bb-52d0ef719fe8",
+      "result_id": "9eb16977-fcb1-4762-9fd8-18a3495e496a"
+    },
+    {
+      "claim_id": "962eb006-a8d9-4760-8559-c15fe8cba02d",
+      "result_id": "9eb16977-fcb1-4762-9fd8-18a3495e496a"
+    },
+    {
+      "claim_id": "9f8bd480-e2c9-4c77-9a48-434d343f67b1",
+      "result_id": "9eb16977-fcb1-4762-9fd8-18a3495e496a"
+    },
+    {
+      "claim_id": "7c035061-0dfa-4ade-928c-6cdcdd785c48",
+      "result_id": "9eb16977-fcb1-4762-9fd8-18a3495e496a"
+    },
+    {
+      "claim_id": "1431eca5-26d6-41b0-9b0a-12350aedb701",
+      "result_id": "9cd458f3-7917-424a-9346-d9056a9b5e1c"
+    },
+    {
+      "claim_id": "e71f4385-2946-4fa7-b665-baf42079aee9",
+      "result_id": "9cd458f3-7917-424a-9346-d9056a9b5e1c"
+    },
+    {
+      "claim_id": "a2b26426-f666-4a74-a8be-4fc39718d042",
+      "result_id": "9cd458f3-7917-424a-9346-d9056a9b5e1c"
+    },
+    {
+      "claim_id": "c620ccc9-18a8-49ec-9ffd-a7898a42732e",
+      "result_id": "9cd458f3-7917-424a-9346-d9056a9b5e1c"
+    },
+    {
+      "claim_id": "3bd29b1f-89b8-4adb-b689-7e46c9dad825",
+      "result_id": "9cd458f3-7917-424a-9346-d9056a9b5e1c"
+    },
+    {
+      "claim_id": "07cdc08e-983d-454e-826a-edb5662d715a",
+      "result_id": "9cd458f3-7917-424a-9346-d9056a9b5e1c"
+    },
+    {
+      "claim_id": "627198c8-8c15-4fc5-a455-04a587a06a11",
+      "result_id": "2025709c-0eb5-4202-91ec-bff3a02f87ba"
+    },
+    {
+      "claim_id": "4569da48-733e-4028-8a40-f42c3f5f3540",
+      "result_id": "2025709c-0eb5-4202-91ec-bff3a02f87ba"
+    },
+    {
+      "claim_id": "e1523a10-b4be-44ce-abe6-00d2f4a96eab",
+      "result_id": "2025709c-0eb5-4202-91ec-bff3a02f87ba"
+    },
+    {
+      "claim_id": "6a515e20-b93f-4a07-b0e6-f0b026120554",
+      "result_id": "2025709c-0eb5-4202-91ec-bff3a02f87ba"
+    },
+    {
+      "claim_id": "a0249125-2dc2-4f2e-bebc-f663bd0d2690",
+      "result_id": "2025709c-0eb5-4202-91ec-bff3a02f87ba"
+    },
+    {
+      "claim_id": "9755e07f-aa83-47eb-b337-77bf020a592b",
+      "result_id": "2025709c-0eb5-4202-91ec-bff3a02f87ba"
+    },
+    {
+      "claim_id": "b304d863-2fab-461b-ab8f-b5dcab7ae918",
+      "result_id": "9a4a1495-dae0-4700-b78f-b1ac809cf8bc"
+    },
+    {
+      "claim_id": "25ea5a05-5345-464f-98de-80dcb2258ebb",
+      "result_id": "9a4a1495-dae0-4700-b78f-b1ac809cf8bc"
+    },
+    {
+      "claim_id": "e9ad62c0-ad44-4473-bf83-c853fae3bfbb",
+      "result_id": "9a4a1495-dae0-4700-b78f-b1ac809cf8bc"
+    },
+    {
+      "claim_id": "a9efaa1c-6125-46e1-96ab-01ea1d3fae5e",
+      "result_id": "9a4a1495-dae0-4700-b78f-b1ac809cf8bc"
+    },
+    {
+      "claim_id": "f52693e6-0c70-4844-9dfb-388968070207",
+      "result_id": "39e8b964-006d-4000-bf45-a8c8cdf42198"
+    },
+    {
+      "claim_id": "502bab4d-9d01-411c-8557-987da7c1a682",
+      "result_id": "39e8b964-006d-4000-bf45-a8c8cdf42198"
+    },
+    {
+      "claim_id": "689bc356-96de-47e5-9234-51c2725261d8",
+      "result_id": "39e8b964-006d-4000-bf45-a8c8cdf42198"
+    },
+    {
+      "claim_id": "77b22fcc-01b3-411d-ae1e-f3f6607955c7",
+      "result_id": "39e8b964-006d-4000-bf45-a8c8cdf42198"
+    },
+    {
+      "claim_id": "31b58dcd-f11c-4df0-8181-a805d4afcd28",
+      "result_id": "39e8b964-006d-4000-bf45-a8c8cdf42198"
+    },
+    {
+      "claim_id": "281dbfec-4e08-48dd-891c-e458bb349f57",
+      "result_id": "39e8b964-006d-4000-bf45-a8c8cdf42198"
+    },
+    {
+      "claim_id": "2a4bff45-8d5d-4665-b27d-2021dfa0aae3",
+      "result_id": "cd9581bb-0990-4171-88df-9ce0c830f50a"
+    },
+    {
+      "claim_id": "957b867d-b80b-422f-b873-72090b8ecc4c",
+      "result_id": "cd9581bb-0990-4171-88df-9ce0c830f50a"
+    },
+    {
+      "claim_id": "7b03c52e-d624-43b6-82a9-0da6c87d1411",
+      "result_id": "cd9581bb-0990-4171-88df-9ce0c830f50a"
+    },
+    {
+      "claim_id": "c38c3ba2-22a5-482c-a744-c4bd8bf6467c",
+      "result_id": "cd9581bb-0990-4171-88df-9ce0c830f50a"
+    },
+    {
+      "claim_id": "fcedee08-961f-4d2c-8b32-fbfb8393df9c",
+      "result_id": "cd9581bb-0990-4171-88df-9ce0c830f50a"
+    },
+    {
+      "claim_id": "cd568d50-db23-44c9-895d-c9a7623eff33",
+      "result_id": "cd9581bb-0990-4171-88df-9ce0c830f50a"
+    },
+    {
+      "claim_id": "6bc14cce-161b-4b5e-bb53-37e77986b963",
+      "result_id": "cd9581bb-0990-4171-88df-9ce0c830f50a"
+    },
+    {
+      "claim_id": "28bc6a63-28ec-4628-a700-ed6237d1f0d5",
+      "result_id": "cd9581bb-0990-4171-88df-9ce0c830f50a"
+    },
+    {
+      "claim_id": "a0f91e3f-fc2a-409a-8f2f-ae4574248bff",
+      "result_id": "cd9581bb-0990-4171-88df-9ce0c830f50a"
+    },
+    {
+      "claim_id": "3ae73bd8-bce9-41e9-a77f-f644fb1cacfb",
+      "result_id": "cd9581bb-0990-4171-88df-9ce0c830f50a"
+    },
+    {
+      "claim_id": "6c465fe4-803f-45ba-ae00-e47daee8091b",
+      "result_id": "cd9581bb-0990-4171-88df-9ce0c830f50a"
+    },
+    {
+      "claim_id": "ea994030-02f5-441c-a2a3-f3f0b817759b",
+      "result_id": "6b4a75f8-4645-45c1-9b01-102d3181340a"
+    },
+    {
+      "claim_id": "2601d914-dc54-42f1-85d3-873f0764a9b8",
+      "result_id": "6b4a75f8-4645-45c1-9b01-102d3181340a"
+    }
+  ],
+  "comparisons": []
+}

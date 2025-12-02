@@ -1,0 +1,2234 @@
+{
+  "submission": {
+    "id": "8aba9830-2b77-47ae-9339-8e837d0f439f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:52:25.484193Z",
+    "updated_at": "2025-12-02T00:52:25.484193Z"
+  },
+  "content": [
+    {
+      "id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "submission_id": "8aba9830-2b77-47ae-9339-8e837d0f439f",
+      "content_type": "manuscript",
+      "content_text": "# Predicting the likelihood and intensity of mosquito infection from sex specific Plasmodium falciparum gametocyte density\n\n## Authors\n\n- John Bradley<sup>1</sup> ([ORCID: 0000-0002-9449-4608](https://orcid.org/0000-0002-9449-4608))\n- Will Stone<sup>2</sup>\n- Dari F Da<sup>4</sup>\n- Isabelle Morlais<sup>5</sup>\n- Alassane Dicko<sup>6</sup>\n- Anna Cohuet<sup>5</sup>\n- Wamdaogo M Guelbeogo<sup>6</sup>\n- Almahamoudou Mahamar<sup>5</sup>\n- Sandrine Nsango<sup>7</sup>\n- Harouna M Soumar\u00e9<sup>5</sup>\n- Halimatou Diawara<sup>5</sup>\n- Kjerstin Lanke<sup>2</sup>\n- Wouter Graumans<sup>2</sup> ([ORCID: 0000-0003-3952-6491](https://orcid.org/0000-0003-3952-6491))\n- Rianne Siebelink-Stoter<sup>2</sup>\n- Marga van de Vegte-Bolmer<sup>2</sup>\n- Ingrid Chen<sup>8</sup>\n- Alfred Tiono<sup>9</sup>\n- Bronner Pamplona Gon\u00e7alves<sup>3</sup>\n- Roland Gosling<sup>8</sup>\n- Robert W Sauerwein<sup>2</sup>\n- Chris Drakeley<sup>3</sup> ([ORCID: 0000-0003-4863-075X](https://orcid.org/0000-0003-4863-075X))\n- Thomas S Churcher<sup>10</sup> ([ORCID: 0000-0002-8442-0525](https://orcid.org/0000-0002-8442-0525)) \u2020\n- Teun Bousema<sup>2</sup> ([ORCID: 0000-0003-2666-094X](https://orcid.org/0000-0003-2666-094X))\n\n### Affiliations\n\n1. MRC Tropical Epidemiology Group London School of Hygiene and Tropical Medicine London United Kingdom\n2. Radboud Institute for Health Sciences Radboud University Medical Center Nijmegen Netherlands\n3. Department of Immunology and Infection London School of Hygiene and Tropical Medicine London United Kingdom\n4. Institut de Recherche en Sciences de la Sant\u00e9, Direction Bobo Dioulasso Burkina Faso\n5. Institut de recherche pour le d\u00e9veloppement MIVEGEC (UM-CNRS 5290-IRD 224) Montpellier France\n6. Malaria Research and Training Centre, Faculty of Pharmacy and Faculty of Medicine and Dentistry University of Science, Techniques and Technologies of Bamako Bamako Mali\n7. Facult\u00e9 de M\u00e9decine et des Sciences Pharmaceutiques Universit\u00e9 de Douala Douala Cameroon\n8. Global Health Group, Malaria Elimination Initiative University of California, San Francisco San Francisco United States\n9. Centre National de Recherche et de Formation sur le Paludisme Ouagadougou Burkina Faso\n10. MRC Centre for Global Infectious Disease Analysis Imperial College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nUnderstanding the importance of gametocyte density on human-to-mosquito transmission is of immediate relevance to malaria control. Previous work (Churcher et al., 2013) indicated a complex relationship between gametocyte density and mosquito infection. Here we use data from 148 feeding experiments on naturally infected gametocyte carriers to show that the relationship is much simpler and depends on both female and male parasite density. The proportion of mosquitoes infected is primarily determined by the density of female gametocytes though transmission from low gametocyte densities may be impeded by a lack of male parasites. Improved precision of gametocyte quantification simplifies the shape of the relationship with infection increasing rapidly before plateauing at higher densities. The mean number of oocysts per mosquito rises quickly with gametocyte density but continues to increase across densities examined. The work highlights the importance of measuring both female and male gametocyte density when estimating the human reservoir of infection.\n\n## Introduction\n\nMosquitoes must ingest both male and female mature gametocytes to become infected with malaria. The shape of the relationship between gametocyte density and the probability of mosquito infection is thought to be complex for Plasmodium falciparum (Churcher et al., 2013; Lin et al., 2016; Da et al., 2015); but recent evidence has shown that the most comprehensive characterisation of this relationship was conducted using molecular tools that only quantified female gametocyte specific Pfs25 mRNA (Churcher et al., 2013; Lasonder et al., 2016). An additional shortcoming of these previous estimates is that female gametocytes were quantified from trendlines with unknown gametocyte sex-ratios, potentially affecting assay precision.\n\nIt is intuitive that gametocyte sex ratio is important in determining transmission efficiency (Reece et al., 2008; Paul et al., 2002). Gametocyte sex-ratio in P. falciparum is typically female biased but may differ between infections (West et al., 2001; Robert et al., 2003) and during infections (West et al., 2001; Paul et al., 2000), and may be influenced by immune responses that differentially affect male and female gametocytes (Ramiro et al., 2011). Fertility assurance explains why under certain conditions, such as a low gametocyte density, gametocyte sex-ratio may become less female biased to ensure all female gametes are fertilised (Gardner et al., 2003). Despite evidence that gametocyte sex ratio is adjusted in response to malaria developmental bottlenecks (Reece et al., 2008; Paul et al., 2002; Neal and Taylor, 2014), there is no direct evidence for its epidemiological importance. Since mosquito infections may occur from blood with P. falciparum gametocyte densities below the microscopic threshold for detection (Churcher et al., 2013; Gon\u00e7alves et al., 2017) and gametocyte density itself is an important determinant of sex ratio (Reece et al., 2008; Robert et al., 2003), sensitive quantification of male and female gametocytes is essential for assessments of the role of gametocyte sex ratio in natural infections and for reliable estimates of total gametocyte density. Here, we use a new molecular target of male P. falciparum gametocytes (Pf3D7_1469900 or PfMGET) (Stone et al., 2017) to explore the association between the density of female and male gametocytes and mosquito infection\u00a0prevalence. The relationship between gametocyte density and oocyst density is also investigated as this may show a different relationship with gametocyte density (Da et al., 2015) and recent work has highlighted the potential\u00a0importance of mosquito parasite density in mosquito-to-human transmission (Churcher et al., 2017). Both the number of infected mosquitoes and their parasite load may thus need to be considered when assessing the human reservoir of infection.\n\n## Results\n\n### Participant characteristics\n\nGametocyte carriers were included from Mali (n\u00a0=\u00a071), Burkina Faso (n\u00a0=\u00a064) and Cameroon (n\u00a0=\u00a013). P. falciparum parasite prevalence by microscopy ranged from\u00a0~40\u201370% between sites (Gon\u00e7alves et al., 2017; Hien et al., 2017; Mahamar et al., 2017; Sandeu et al., 2017); sampling occurred in different seasons (Table 1). All sites recruited gametocyte carriers prior to antimalarial treatment but used different enrolment criteria. Microscopically detected gametocyte carriers were included in three studies while one site (Balonghin) included submicroscopic gametocyte densities. Total gametocyte densities ranged from 0.04 to 1164 gametocytes/\u03bcL; the median proportion of male\u00a0gametocytes was 25% (interquartile range 13\u201339%)(Table 1, Figure 1). Gametocyte density estimates by microscopy and qRT-PCR were positively correlated in all sites, but there was variation in the strength of correlation: Ouelessebougou (r\u00a0=\u00a00.74), Bobo Dioulasso (r\u00a0=\u00a00.27), Balonghin (r\u00a0=\u00a00.56) and Yaound\u00e9 (r\u00a0=\u00a00.91) (Figure 1\u2014figure supplement 1). Across 148 successful membrane feeding experiments, 16.7% (1297/7757) of mosquitoes became infected, with considerable variation between gametocyte donors and study sites.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34463/elife-34463-fig1-v2.jpg)\n\n**Figure 1.:** The density of female gametocytes and male gametocytes is presented in panel (A) for samples from Ouelessebougou, Mali (red), Yaound\u00e9, Cameroon (green), Bobo-Dioulasso, Burkina Faso (blue) and Balonghin, Burkina Faso (purple). Female and male gametocyte densities were positively associated (r\u00a0=\u00a00.79, p<0.001) with the best fit relationship shown by the black solid line (grey shaded area showing 95% the confidence interval around this line). Coloured horizontal and vertical lines indicate Bayesian credible intervals (CIs) around point estimates. The proportion of gametocytes that were male was negatively associated with total gametocyte density (B) but not with asexual parasite density (C). All raw data can be found in Figure 1\u2014source data 1 whilst a description of the relationship modelled in (A) is provided in Figure 1\u2014source data 2. The relationship between gametocyte density as measured by microscopy and PCR is given for each site in Figure 1\u2014figure supplement 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34463/elife-34463-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Relationship is shown separately for each of the different sites, be it (A) Ouelessebougou, Mali (red), (B) Bobo-Dioulasso, Burkina Faso (blue), (C) Yaound\u00e9, Cameroon (green), and (D) Balonghin, Burkina Faso (purple). Black dashed line shows the 1:1 relationship for each site.\n\n**Table 1.**\n Characteristics of gametocyte carriers and mosquito feeding assays.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Ouelessebougou, Mali</th>\n      <th>Bobo Dioulasso, Burkina Faso</th>\n      <th>Balonghin, Burkina Faso</th>\n      <th>Yaound\u00e9, Cameroon</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Number of experiments</td>\n      <td>71</td>\n      <td>19</td>\n      <td>45</td>\n      <td>13</td>\n    </tr>\n    <tr>\n      <td>Enrolment criteria:</td>\n      <td>Detection of gametocytes by microscopy</td>\n      <td>Detection of gametocytes by microscopy</td>\n      <td>Detection of gametocytes by molecular QT-NASBA</td>\n      <td>Detection of gametocytes by microscopy</td>\n    </tr>\n    <tr>\n      <td>Period and season of data collection</td>\n      <td>January 2013-November 2014 (dry and wet season)</td>\n      <td>April-June 2016 (dry season)</td>\n      <td>October-November 2014 (wet season)</td>\n      <td>October-December 2015 (wet season)</td>\n    </tr>\n    <tr>\n      <td>P.\u00a0falciparum\u00a0parasite prevalence in cross-sectional surveys in the study area (microscopy)</td>\n      <td>70.2% in children\u00a0&lt;\u00a05 years, 2015\u201316 (Mahamar et al., 2017)</td>\n      <td>40.9\u201361.7% in children 1\u20139 years, 2014\u20132015 (Hien et al., 2017)</td>\n      <td>59.7% in children\u00a0&lt;\u00a015 years, 2014 wet season (Gon\u00e7alves et al., 2017)</td>\n      <td>44.7\u201355.6% in children 4\u201315 years, 2013\u20132014 (Sandeu et al., 2017)</td>\n    </tr>\n    <tr>\n      <td>Age, median (IRQ)</td>\n      <td>11 (7\u201325)</td>\n      <td>5\u201315 (range)*</td>\n      <td>10 (8\u201313)</td>\n      <td>9 (6\u201311)</td>\n    </tr>\n    <tr>\n      <td>Asexual parasite prevalence % (n/N)</td>\n      <td>64.8 (46/71)</td>\n      <td>73.7 (14/19)</td>\n      <td>73.3 (33/45)</td>\n      <td>76.9 (10/13)</td>\n    </tr>\n    <tr>\n      <td>Asexual parasite density per \u00b5L, median (IQR)</td>\n      <td>432 (96\u20132880)</td>\n      <td>360 (240\u20131040)</td>\n      <td>658 (336\u20131237)</td>\n      <td>944 (288\u20134224)</td>\n    </tr>\n    <tr>\n      <td>Total gametocyte density per \u00b5L, median (IQR)</td>\n      <td>62.8 (31.4\u2013146.8)</td>\n      <td>19.2 (10.5\u201326.1)</td>\n      <td>4.0 (0.6\u201311.0)</td>\n      <td>64.4 (11.7\u2013126.2)</td>\n    </tr>\n    <tr>\n      <td>Percentage of male gametocytes, median (IQR)</td>\n      <td>14% (7\u201325%)</td>\n      <td>51% (39\u201366%)</td>\n      <td>30% (18\u201340%)</td>\n      <td>32% (27\u201353%)</td>\n    </tr>\n    <tr>\n      <td>Number of mosquitoes examined per experiment, median (IQR)</td>\n      <td>70 (63\u201379)</td>\n      <td>29 (28\u201330)</td>\n      <td>40 (35\u201345)</td>\n      <td>37 (32\u201345)</td>\n    </tr>\n    <tr>\n      <td>Infectious individuals, % (n/N)</td>\n      <td>74.7 (53/71)</td>\n      <td>84.2 (16/19)</td>\n      <td>22.2 (10/45)</td>\n      <td>76.9 (10/13)</td>\n    </tr>\n    <tr>\n      <td>Infected mosquitoes, % (n/N)</td>\n      <td>17.0 (842/4960)</td>\n      <td>39.2 (208/531)</td>\n      <td>3.5 (63/1783)</td>\n      <td>38.1 (184/483)</td>\n    </tr>\n  </tbody>\n</table>\n\n_*the age of individual gametocyte donors was not recorded in Bobo Dioulasso; gametocyte carriers were recruited from the age range 5\u201315 years; asexual parasite density was determined by microscopy, gametocyte density by quantitative reverse transcriptase PCR. QT-NASBA\u00a0=\u00a0Pfs25 mRNA quantitative nucleic acid sequence based amplification._\n\n### Gametocyte sex ratios in natural infections\n\nFemale gametocyte densities quantified by Pfs25 quantitative reverse-transcriptase PCR (qRT-PCR) and male gametocyte densities by PfMGET qRT-PCR were positively correlated (Figure 1A; Spearman\u2019s rank correlation coefficient\u00a0=\u00a00.79, p<0.001). The fact that the relationship is linear on the log scale means that the percentage of gametocytes that were male decreased with increasing total gametocyte densities (Figure 1B, p<0.001 [Kruskal Wallis test]). This association remained apparent and statistically significant if any of the study sites with a smaller number of observations was removed (i.e. with removal of data from Bobo Dioulasso, Balonghin or Yaound\u00e9). Conversely there was no evidence for an association between proportion of male gametocytes with asexual parasite density (Figure 1C, p=0.713).\n\n### Infectivity in relation to gametocyte density\n\nThe proportion of mosquitoes developing oocysts is best described by a model that incorporates both the density of female and the density of male gametocytes (deviance information criterion, DIC\u00a0=\u00a0451.5). In the best fit model, female gametocyte density explains most of the variability with the proportion of mosquitoes infected increasing rapidly with increasing gametocytaemia before saturating at high female gametocyte densities (Figure 2A). At female gametocyte densities of 200 per \u00b5l approximately 30% of mosquitoes are infected. At low gametocyte densities transmission appears to be impeded by a lack of male parasites (Figure 2B). The number of mosquitoes infected is on average lower for hosts with fewer than 50 male gametocytes per \u00b5l of blood, with the model predicting that male densities\u00a0<\u00a010 per \u00b5l reduces the proportion of infected mosquitoes by 50% (Figure 2C). Predictions for the proportion of mosquitoes infected according to the density of female and male gametocytes in the blood is given in Figure 2D. Poorer statistical fits were observed for models where the proportion of mosquitoes with oocysts was described by either the density of females alone (DIC\u00a0=\u00a0481.3), the density of males (DIC\u00a0=\u00a0538.8), or total gametocyte density (sum of male and female gametocytes, DIC\u00a0=\u00a0501.7). There were considerable differences in the relative infectivity between sites. Compared to the Mali data, infectivity was similar in the study in Balonghin, Burkina Faso (0.95 times as high; 95% CI 0.1\u20131.4) but 3.65 times higher in Bobo Dioulasso, Burkina Faso (95% CI 2.3\u20135.2) and 1.68 times higher in site in Yaound\u00e9, Cameroon (95% CI 1.1\u20132.6) (Figure 2\u2014figure supplement 1, Figure 2\u2014source data 2.). Other models, including both qRT-PCR and microscopy, showed poorer performance in predicting mosquito infection prevalence (Figure 2\u2014source data 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34463/elife-34463-fig2-v2.jpg)\n\n**Figure 2.:** (A) The association with female gametocyte density. The solid black line indicates the best-fit statistical model with grey shaded 95% Bayesian credible intervals (CI). Infectivity depends on both the density of male and female gametocytes so the figure uses the relationship between male and female gametocyte density defined in Figure 1A to predict overall transmission. Point colour denotes the study from which the observation came (red\u00a0=\u00a0Ouelessebougou, Mali, green\u00a0=\u00a0Yaound\u00e9, Cameroon, blue\u00a0=\u00a0Bobo Dioulasso, Burkina Faso and purple\u00a0=\u00a0Balonghin, Burkina Faso) and point size is proportional to the number of mosquitoes dissected. Horizontal and vertical lines indicate 95% CIs around point estimates. To aid clarity the figure shows points and model predictions scaled to the largest dataset (i.e. each site was scaled by the relative infectivity compared to the Mali dataset). A version of the figure without this scaling is shown in Figure 2\u2014figure supplement 1, which shows all raw data and separate model predictions for each site. (B) Relationship between female gametocyte density and the proportion of infected mosquitoes for different male gametocyte densities for experiments from Mali (n\u00a0=\u00a071). Points are coloured according to the density of male gametocytes (<10 male gametocytes/\u00b5L\u00a0=\u00a0pink,\u226510 male gametocytes/\u00b5L\u00a0=\u00a0dark blue). Note bloodmeals containing lower numbers of male parasites typically have lower infectivity for a given female density. Figure 2\u2014figure supplement 2 shows the same figure but differentiating between points using the sex ratio instead of absolute male density. (C) Model predictions for the reduction in the proportion of mosquitoes infected due to male gametocyte density. Data points are the observed infectivity divided by the predicted infectivity as predicted by the statistical model using the density of female gametocytes in the sample (colours matching panel A). Values less than one indicate reductions in relative transmission. The solid black line shows the best fit model for this restriction from the model in 2A, with shaded area and horizontal and vertical lines indicating 95% CIs. (D) illustrates the best fit model predictions for the 3D relationship between female gametocyte density, male gametocyte density and the percentage of mosquitoes which develop oocysts (colour scale from 0 to\u00a0\u226550% infected mosquitoes, see legend). All raw data can be found in Figure 2\u2014source data 1 whilst statistical comparisons of the different curves tested in (A) are provided in Figure 2\u2014source data 2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34463/elife-34463-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Figure is the same as Figure 2A but without the scaling the mean proportion of mosquitoes infected to the Mali dataset. Panel (A) shows all sites together whilst (B\u2013E) show figures for each site independently. Point colour denotes the study from which the observation came: Ouelessebougou, Mali (red, (B)), Bobo-Dioulasso, Burkina Faso (blue, (C)), Yaound\u00e9, Cameroon (green, (D)) and Balonghin, Burkina Faso (purple, (E)). Horizontal and vertical lines indicate 95% Bayesian credible intervals (CIs) around point estimates. The coloured lines indicate the best-fit model for each site with the shaded area indicates the 95% CI uncertainty around these lines. The colours of the lines correspond to the colours of the points. Best fit model predictions are projected across the gametocyte-density range observed per site.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34463/elife-34463-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Points are coloured according to gametocyte sex ratio: green\u00a0>=\u00a016% male, brown\u00a0<16% male (16% is the median value). At low and intermediate female densities (between 1 and 100 female gametocytes per microlitre), a high proportion of males results in higher transmission because a minimum density of males is required for successful transmission. But for higher female densities, only a small proportion of males is needed to bring the density of males over the threshold for successful transmission, and beyond that extra females contribute more to infectivity.\n\n### Oocyst density in mosquitoes\n\nThe distribution of oocysts between mosquitoes is highly over-dispersed, with some mosquitoes harbouring very high oocyst densities. This aggregated distribution is reflected in the relationship between proportion of mosquitoes infected and mean oocyst density (Figure 3A). Mean oocyst density increased with increasing gametocyte density and continued to increase across the range of gametocyte densities observed, without evidence for a plateau being reached (Figure 3B). Total gametocyte density (sum of females and males) was able to predict mean oocyst density better than female gametocyte density alone. The higher complexity of the density model (requiring the fitting of the negative binomial distribution) meant that it was not possible to fit a model analogous to the best fit model on infectivity (i.e. a function dependent on female gametocyte density but with reduced transmission at low male densities). Care should be taken interpreting the relative importance of females and male gametocytes in predicting oocyst density as this result should be validated with a larger dataset.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34463/elife-34463-fig3-v2.jpg)\n\n**Figure 3.:** (A) The relationship between mean oocyst density and the proportion of mosquitoes that develop oocysts (red\u00a0=\u00a0Ouelessebougou, Mali, green\u00a0=\u00a0Yaound\u00e9, Cameroon, blue\u00a0=\u00a0Bobo Dioulasso, Burkina Faso, purple\u00a0=\u00a0Balonghin, Burkina Faso; point size is proportional to the number of mosquitoes dissected). A Hill function gave the best fit to these data (DIC linear\u00a0=\u00a01310; power\u00a0=\u00a0602; Hill\u00a0=\u00a0434). (B) The relationship between total gametocyte density and the mean oocyst density in all mosquitoes. The power function gave the best fit to these data (DIC linear\u00a0=\u00a01042; hyperbolic\u00a0=\u00a01044; gompertz\u00a0=\u00a01067; power\u00a0=\u00a01036); total gametocyte density gave a better fit than only female gametocyte density (best DIC\u00a0=\u00a01061). Horizontal and vertical lines indicate 95% Bayesian credible intervals (CIs) around point estimates, solid black line indicates the best-fit model with grey shaded area indicates the 95% CI around this line. Like Figure 2A, Panel 3B aids clarity by scaling model and data to the average infectivity of the largest dataset though the raw data and model fits are provided in Figure 3\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34463/elife-34463-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Figure is the same as Figure 3B but without the scaling average oocyst density to the Mali dataset. Panel (A) shows all sites together whilst (B\u2013E) show figures for each site independently. Point colour denotes the study from which the observation came: Ouelessebougou, Mali (red, (B)), Bobo-Dioulasso, Burkina Faso (blue, (C)), Yaound\u00e9, Cameroon (green, (D)), and Balonghin, Burkina Faso (purple, (E)). Horizontal and vertical lines indicate 95% Bayesian credible intervals (CIs) around point estimates. The coloured lines indicate the best-fit model for each site with the shaded area indicates the 95% CI uncertainty around these lines. The colours of the lines correspond to the colours of the points. Best fit model predictions are projected across the gametocyte-density range observed per site.\n\n## Discussion\n\nWe present an improved model to predict mosquito infection from female and male gametocyte density estimates. Previous molecular assessments of P. falciparum gametocyte density quantified female specific Pfs25 mRNA then converted this into a measure of gametocytes per \u00b5L of blood by reference to standard curve of mixed-sex gametocytes (Churcher et al., 2013; Wampfler et al., 2013; Ou\u00e9draogo et al., 2016). These assessments therefore quantified neither female nor total gametocyte density accurately. The current model presents a considerable improvement over previous work (Churcher et al., 2013), both by separately quantifying male and female gametocytes using sex-specific mRNA markers and standard curves (Lasonder et al., 2016) and also by using considerably more accurate estimates of total gametocyte density. Male and female gametocytes were quantified separately using automated extraction of nucleic acids (Stone et al., 2017). Manual extraction can result in considerable variation (Walker et al., 2015) that may have affected the accuracy of our earlier gametocyte estimates (Churcher et al., 2013). In addition, we used qRT-PCR that has higher precision than the previously used quantitative nucleic acid sequence based amplification, QT-NASBA (Pett et al., 2016).\n\nThe analyses show that the relationship between the density of gametocytes and transmission can be adequately described by a simple saturating relationship, and that a more complicated curve with two inflection points (which generates a double plateau) does not improve model fit (Churcher et al., 2013). The change in shape of the best fit relationship has implications for predicting the effect of transmission blocking interventions such as gametocytocidal drugs. The first plateau of the previous relationship (Churcher et al., 2013) predicted similar infectivity for gametocyte densities between 1 and 200 gametocytes per \u00b5l. If this was the case then an intervention that killed 99% of gametocytes would have very little effect on infectivity on a person with a density of 200 gametocytes per \u00b5l but impacted transmission considerably below this level. The new relationship presented here suggests an intervention reducing gametocyte density would have an impact on transmission to mosquitoes across the entire range of gametocyte densities observed in the field with, for example, a predicted reduction in mosquito infection prevalence of 32% to 1% when female gametocyte density is reduced from 200 to 1 female gametocytes per \u00b5l. The new work indicates that even gametocytocidal drugs with incomplete efficacy would reduce transmission.\n\nThe increased simplicity found here compared to the previously described relationship is likely to be driven by the improved accuracy of gametocyte density estimates as models fit solely to female parasites density had a similar simplified shape. The concurrent quantification of female and male gametocytes leads to an improved estimation of total gametocyte biomass and could explain why models with information on both sexes were more accurate. Similarly, combining data from microscopy and PCR could also improve overall precision when both techniques have relatively high measurement error. Though improved accuracy of gametocyte density estimates through combining imprecise measures cannot be discounted the model fit to total gametocyte density (male plus female) gave a poorer fit than the model where transmission was dependent on female density unless there were very low male parasite densities. This suggests that the number of male gametocytes may become a limiting factor for transmission at low gametocyte densities, although future studies that directly relate infectivity to mosquitoes to female and male gametocyte densities are needed to confirm this association. Such studies may benefit from an assay that targets a transcript with identical expression levels in male and female gametocytes (Meerstein-Kessel et al., 2018) or a multiplex male-female gametocyte assay that avoids uncertainties in quantifying total gametocyte biomass from two separate assays.\n\nThe work confirmed previous evidence that the proportion of male gametocytes is negatively associated with total gametocyte density (Reece et al., 2008; Robert et al., 2003; Sowunmi et al., 2008), which may reflect a strategic investment in male gametocytes to maximize the likelihood of transmission in low-density infections (fertility assurance) (Reece et al., 2008; Reece et al., 2009). The models also indicated that male gametocyte density may become a limiting factor for transmission success at low gametocyte densities. These observations are in line with in vitro findings with P. falciparum, Plasmodium berghei and Plasmodium chabaudi where infections with a higher proportion of male gametocytes gave higher transmission success at low gametocyte densities but reduced success at higher gametocyte densities (Reece et al., 2008; Mitri et al., 2009).\n\nThe presented model considerably improved the prediction of mosquito infection rates compared to our previous manuscript (Churcher et al., 2013). Nevertheless, some level of uncertainty remains, particularly between study sites with several experiments resulting in considerably lower mosquito infection rates than predicted based on gametocyte density and sex-ratio. There are several plausible reasons for this. Naturally acquired antibody responses to gametocyte antigens may reduce transmission efficiency and form a first explanation why many mosquitoes may fail to become infected when feeding on some hosts with high-density gametocyte infections. Whilst immune responses that completely prevent mosquito infections are only sporadically detected in naturally exposed populations (Stone et al., 2018), it is plausible that functional transmission reducing immunity has reduced mosquito infection rates for a proportion of gametocyte carriers in our study. Temporal fluctuations in transmission reducing immunity (Ou\u00e9draogo et al., 2011) may also have contributed to the apparent differences in infectivity between study sites that recruited gametocyte carriers at different time-points in the season. The site with the highest infectivity in the current study (Bobo Dioulasso), recruited individuals in the dry season when the impact of transmission reducing immunity may be lowest (Ou\u00e9draogo et al., 2011). The extent of between site heterogeneity in transmission should be interpreted with caution since two of the four sites had\u00a0<20 study participants. At all sites malaria-infected individuals were recruited prior to malaria treatment, making it unlikely that drug-induced sterilization of circulating gametocytes may have affected our analyses. Variation in the susceptibility of the mosquito colonies to parasite genotypes may provide a second plausible reason for the imperfect model fit (Lef\u00e8vre et al., 2013). A third hypothesis could be that our quantification of gametocytes by Pfs25 and PfMGET qRT-PCR may not fully reflect gametocyte maturity and infectivity as gametocytes may be detectable in the blood stream before (Hallett et al., 2006) and after peak infectivity is reached (Ou\u00e9draogo et al., 2016). Lastly, technical issues related to RNA degradation may affect gametocyte quantification and thus yield unreliable low gametocyte density estimates (Pett et al., 2016). There were no apparent issues in maintaining the essential temperature control in the field, during transportation, or following RNA extraction for any of the samples included in this study, nor did the associations between microscopy and qRT-PCR gametocyte density estimates indicate (site-specific) RNA degradation that may have resulted in underestimations of true gametocyte densities.\n\nThe study shows that though the prevalence of mosquitoes with oocysts plateaus at high gametocyte densities the average number of oocysts in those mosquitoes continues to rise, as previously reported for P. vivax (Kiattibutr et al., 2017) and P. falciparum (Da et al., 2015). There were insufficient data to fit a model where oocyst density was dependent on female density but with a penalty for low male densities which was the best fit model for infectivity. Whether such a model would fit the oocyst density data better that the model presented here is a question for future research.\n\nUnderstanding the association between gametocyte density and mosquito infection rates is of immediate relevance for malaria control efforts (Lin et al., 2016; Slater et al., 2015; Gon\u00e7alves et al., 2017). Here we show that accurate measures of female and male gametocyte density can better predict human-to-mosquito infection, and could be used to assess the infectiousness of human populations.\n\n## Materials\u00a0and\u00a0methods\n\n### Study populations and mosquito feeding experiments\n\nField samples were collected at four malaria endemic sites. Samples were collected prior to treatment and after written informed consent was obtained from participants or their guardian(s). Ethical clearance was provided by the National Ethics Committee of Cameroon; Ethical Review Committee of the Ministry of Health, Burkina Faso; Ethics Committee of the Malaria Research and Training Centre, Bamako; Ethics review committee Centre MURAZ; University of California, San Francisco, and London School of Hygiene and Tropical Medicine. Procedures for Ouelessebougou, Mali are described elsewhere (Dicko et al., 2016). From the trial in Ouelessebougou, baseline samples from microscopically detected gametocyte carriers were used. Additional samples were collected from asymptomatic microscopically detected gametocyte carriers aged 5\u201315 years in Bobo Dioulasso in Burkina Faso and Yaound\u00e9, Cameroon. Lastly, a random selection of samples from a xenodiagnostic study in Balonghin in Burkina Faso was used (Gon\u00e7alves et al., 2017). Samples were eligible for selection if gametocytes were detected by Pfs25 QT-NASBA that has an estimated lower limit of detection between 0.02\u20130.1 gametocytes/\u00b5L and thus provided data-points at the lower range of gametocyte densities (Gon\u00e7alves et al., 2017). The same membrane feeding protocol was used at all sites: local Anopheles coluzzii colony mosquitoes (Mali, Cameroon and Bobo Dioulasso, Burkina Faso) or colony mosquitoes comprising a mixture of A. coluzzii, A. gambiae s.s. and hybrid forms (Balonghin, Burkina Faso) were allowed to feed for 15\u201320 min on heparin blood samples until dissection in 1% mercurochrome at day seven post-feeding and oocyst detection by two independent microscopists (Oue\u0301draogo, 2013). For all sites membrane feeding and sample collection were performed prior to antimalarial treatment\n\n### Molecular analysis of samples from naturally infected gametocyte donors\n\nFemale gametocytes were quantified by quantitative reverse transcriptase PCR (qRT-PCR) targeting female Pfs25 mRNA, as described elsewhere in detail (Stone et al., 2017) based on established protocols (Wampfler et al., 2013). For male gametocytes we used a recently developed qRT-PCR (Stone et al., 2017) based on PfMGET (male gametocyte enriched transcript, Pf3D7_1469900), a transcript that is highly enriched in male P. falciparum gametocytes (Lasonder et al., 2016). Primer sequences are provided in Table 2. For all qRT-PCR, mRNA was extracted from blood collected in EDTA tubes by venipuncture; 100 \u03bcL of whole blood was stored at \u221280\u00b0C in 500 \u03bcL RNAprotect (Qiagen; for Burkina Faso and Cameroon samples) or 900 \u03bcL L6 buffer (Severn Biotech, Kidderminster, UK; for Mali samples) until automated extraction using a MagNAPure LC (Total Nucleic Acid Isolation Kit\u2013High Performance; Roche Applied Science, Indianapolis, IN, USA). cDNA was synthesised directly from nucleic acids for the PfMGET assay, for which the primers are intron-spanning, and after DNase treatment (RQ1 DNase I Digest Kit, Promega) for the Pfs25 assay, using High Capacity cDNA Reverse Transcription Kits (Applied Biosystems, Foster City, CA). qRT-PCR results were converted to male and female gametocyte densities using standard curves (ten-fold serial dilutions from 106 to 10 gametocytes/ml) of separate male and female gametocyte populations that were generated using a transgenic parasite line expressing a male specific fluorescence marker (Lasonder et al., 2016; Stone et al., 2017). The purity of male and female trendlines was previously confirmed by staining of sorted gametocyte populations using female gametocyte specific anti-Pfg377 antibodies (Stone et al., 2017; Su\u00e1rez-Cort\u00e9s et al., 2016). For both Pfs25 and PfMGET qRT-PCR, a threshold for positivity was set at one gametocyte per sample (0.01/\u03bcL).\n\n**Table 2.**\n Primer sequences for the Pfs25 female marker, and male marker PfMGET.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene target</th>\n      <th>Forward primer</th>\n      <th>Reverse primer</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Pfs25</td>\n      <td>GAAATCCCGTTTCATACGCTTG</td>\n      <td>AGTTTTAACAGGATTGCTTGTATCTAA</td>\n    </tr>\n    <tr>\n      <td>PFMGET</td>\n      <td>CGGTCCAAATATAAAATCCTG</td>\n      <td>GTGTTTTTAATGCTGGAGCTG</td>\n    </tr>\n  </tbody>\n</table>\n\n### Statistical analysis\n\nThe statistical methods used here are the same at those in the original paper (Churcher et al., 2013), which we briefly recapitulate here. qRT-PCR results are in the form of cycle-thresholds (CT, which is the number of cycles it takes for the fluorescence associated with target amplification to exceed a defined threshold. The relationship between CT and gametocyte density is estimated by fitting a linear regression to CT estimates generated using a sample with known gametocyte density (a 10-fold dilution series). Let the observed CT be denoted by y then,\n\n$$\ny=\\beta_{0}+\\beta_{1}Inx+\\epsilon\n$$\n\nwhere \u03b20 and \u03b21 are regression coefficients estimates, x is the (known) parasite density from the dilution series and \u03b5 represents a normally distributed random error (\u03b5\u00a0~N(0,s2)). Equation (1) can be rearranged to enable us to estimate gametocyte density from a CT measurement. We use a Bayesian hierarchical model to estimate the coefficients \u03b20 and \u03b21.\n\nThese gametocyte density estimates are used to determine the relationship between gametocyte density and the proportion of mosquitoes developing oocysts. Four functional forms (linear, power, hyperbolic and Gompertz [Churcher et al., 2013]) were each fit four times: on female gametocyte density alone; on male gametocyte density alone; on total gametocyte density; and finally female gametocyte density but multiplied by a function accounting for reduced transmission at low male densities. Terms allowing for different infectivity at each site were incorporated into the models. The algebraic forms of these models are given in Figure 2\u2014source data 2. The model quantifying the uncertainty in gametocyte density estimates was fit at the same time as the regression determining the relationship between gametocyte density and infectivity using Bayesian Markov Chain Monte Carlo methods assuming a Binomial error structure for each feeding experiment. Fitting the models simultaneously enabled the uncertainty in the gametocyte density estimates to be reflected in the uncertainty of the shape of the relationship. The models were compared using the DIC with a lower value indicating the most parsimonious fit.\n\nThe relationship between gametocyte density and oocyst density was examined in an analogous way, with two exceptions: (1) A negative binomial error structure was used to describe oocyst counts and (2) The increased complexity of the model precluded the inclusion of the function accounting for reduced transmission at low male densities, so each functional form was only fit twice; on female gametocyte density and total gametocyte density.\n",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "825b98d5-c9ce-41a5-899e-2d6edfcfaa3c",
+      "submission_id": "8aba9830-2b77-47ae-9339-8e837d0f439f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Urszula Krzych, Walter Reed Army Institute of Research United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34463.019](https://doi.org/10.7554/eLife.34463.019)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Predicting mosquito infection rates and infection intensity from Plasmodium falciparum gametocyte density and sex ratio\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Edward A. Wenger (Reviewer #1).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work in the present format will not be considered further for publication in eLife. However, the authors are encouraged to make all the suggested revisions and submit the manuscript as a new submission for review.\n\nThis study builds on results from previously published eLife paper in that the authors now include new estimates of male gametocytes densities and that provides more detailed prediction of the human-to- mosquito infectiousness. What follows is a summary of the main issues and detailed comments from the reviewers are attached below.\n\n1) The new laboratory methods (quantification of male gametocytes and greater precision for female gametocytes) are described in other publications, and only very briefly here. Please expand on this topic in the discussion.\n\n2) Even with the final model including male gametocyte densities, there is uncertainty. There are substantial between-site differences, and within sites there is unexplained variation with more than a few points lying away from the fitted lines. Please provide explanations.\n\n3) There are a number of issues with the data analysis (correct data, sample size in one site, highly influential points, investigation into the Balonghin data). Please, re-analyze the results and provide a significantly revised interpretation.\n\n4) It is stated that there is a change in the shape of the relationship between gametocyte densities and infectivity by including male gametocyte densities. However, the model may have greater prediction accuracy since two methods to estimate parts of the gametocyte population are used rather than one (the male and female gametocyte densities are added together in the model). In addition, the shape of the relationship does not appear to differ with the current datasets if only female gametocytes are used, compared to male and female together (the best fit for both would be the power function). It may be that there is a difference between the previous data and the current datasets.\n\nReviewer #1:\n\nThe subject of human-to-mosquito infectiousness and its determination by gametocyte density and other factors is a very important one. The authors make an important contribution here that is of general interest.\n\nI have three core concerns with the paper that should be addressed:\n\n1) The paper claims that we can now \"reliably predict\" mosquito infectiousness by including male and female gametocyte density quantification. However, the significant site-specific differences and other sources of unexplained variance are barely discussed.\n\n- Given the role that seasonality and immunity play on the underlying density distributions (Ouedraogo, 2015; Gerardin, 2015), more information in the Materials and methods section would be appreciated on year and season of sampling (e.g. January 2013 to November 2014 enrollment), enrollment protocol (e.g. microscopy positive gametocytes), and immunity (e.g. incidence per year) beyond \"see Dicko, 2016\" (not open access).\n\n- You should discuss the implications of the Bobo, Cameroon, and Mali data consisting of microscopy-positive gametocyte carriers, but the Balonghin site only requiring Pfs25 positive.\n\n- You should include this information in Table 1, so the reader isn't forced to discover for herself the reasons for the very different gametocyte density ranges in spite of more similar asexual density ranges.\n\n- Why is infectivity 3.65 times higher in Bobo-Dioulasso? The list of possible differences put forth in the Discussion section, \"vector permissiveness, local parasite strains, human [immunity]\" is vague and only serves to propagate the general confusion in the community. Without a satisfactory understanding, the claim of \"reliably predicting\" infectiousness is not very strong.\n\n2) This paper claims to make an important breakthrough in improved precision on female gametocyte density quantification. The Discussion section touches on this, but the implications of this are important and should be expanded upon.\n\n- Presently, there is insufficient detail on the determination of confidence intervals on density quantification. The only hint is the Materials and methods section sentence that they are \"based on plate-specific calibration trendlines\".\n\n- An example of where I doubt the veracity of the error quantification is in Figure 2B, where there are two samples with very low density, in spite of both being microscopically positive. Note the microscopy detection threshold is almost 2 orders of magnitude higher, or ~10\u03c3 if error bars are 95% CI. Were these samples extreme outliers in leukocyte counts and the microscopy threshold is an invalid comparison? Does the female gametocyte density measurement error have significantly wider non-Gaussian tails?\n\n3) A core assertion in this paper is that the addition of male gametocyte densities improves prediction. This could be caused by a combination of the following two factors: (1) mechanistically there is a threshold below which there are not enough male gametocytes present in the blood meal; or (2) the combination of two independent imprecise density measures gives a more accurate estimate of the \"true\" total gametocyte densities and hence more predictable infectiousness.\n\nThe authors are strongly suggesting the first mechanism. However, there are indications that the latter mechanism is also playing an important role - take for example the Mali points that populate the lower-right quadrants of Figure 1A and 2A.\n\n- A version of Figure 2B colored according to male gametocyte ratio would help discern how important each effect might be.\n\n- A direct look at the Balonghin data, which in most plots is hiding in the corner of linear plots, would be instructive as it also includes submicroscopic gametocyte infections.\n\nThe source data has Balonghin and Bobo swapped compared to what appears in Table 1. The authors should verify this hasn't introduced any errors into their analysis. (I presume the correct information is in the Table and not in the 'site' column of the source data, because Balonghin is the only site that didn't select samples based on microscopic gametocytes and hence has a much lower density distribution.)\n\nThere is a third even lower female gametocyte density point in Mali (in spite of microscopically observed gametocytemia) that is truncated from Figure 2B.\n\nBobo-Dioulasso has a very high male fraction, very low measured female density, in spite of all points being microscopically detected and infecting large fractions of mosquitoes.\n\nFigure 2B tells one narrative (threshold male gametocyte density below which transmission is less efficient). But the attached colors points by male gametocyte fraction, which I think can be thought of as correcting for imprecise female gametocyte density quantification when comparing the infectiousness vs. density curves.\n\nReviewer #2:\n\nThis paper follows from a previous eLife paper which quantified the relationship between female gametocyte densities and infectiousness to mosquitoes. This paper includes new estimates of male gametocyte densities which, in view of the changing sex-ratio at low female densities, provides a more complete description of the relationship and removes the need for the double hump previously seen and instead uses a simpler saturating relationship. It is not in itself an advance on statistical methods or the laboratory methods (described in another paper) and the sex-ratio was already thought to be important, but it is a step forward. In addition, there is a finding that the proportion of mosquitoes infected plateaus, but number of oocysts continues to rise with increasing gametocyte densities.\n\nIt is not clear how the density of male gametocytes or the sex-ratio were included in the model for the relationship between female gametocytes and the proportion of mosquitos infected. The methods merely states \"Bayesian Markov Chain Monte Carlo techniques were used to fit the relationship and compare models as described previously\". The Results section states \"The best fit model shows negative density dependence\". This model equation and parameter estimates may be in an Appendix but I could not find it. (The equation for gametocyte density and oocyst density is given in the legend to Figure 3).\n\nIn some cases, the fitted lines seem to miss the weight of the data (Figure 2A and C, and Figure 3B). The fitted lines are also dependent on some highly influential points at the righthand side of the graph.\n\nCameroon has few observations (n=13). Given that there is a skew to low gametocyte density infections, it is not obvious that the sample size is large enough to fit a line meaningfully.\n\nIn the Discussion section, the difference in the shape of the relationship in this compared to the previous paper is assumed to be due to more accurate automated methods and the inclusion of male gametocytes. As far as I can gather, different datasets were used here compared to the previous paper, so it could be a factor related to the datasets as well. It would be useful to know how much of the change in the shape of the relationship was due to the male gametocytes, and this could be investigated by using the previous model on the current datasets.\n\nThe relationship between gametocytes and infectivity are different between the datasets from Mali, Yaound\u00e9 and Burkina Faso. There is a brief mention in the Discussion section, but the reasons are not really known, and it should be stated that there is still considerable uncertainty, even with male and female gametocyte densities.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for resubmitting your work entitled \"Predicting the likelihood and intensity of mosquito infection from sex specific Plasmodium falciparum gametocyte density\" for further consideration at eLife. Your revised article has been favorably evaluated by Prabhat Jha (Senior editor), a Reviewing editor, and three reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nThe reviewers agreed that this study represents an important body of work of a high general interest and a significant advance on the previously published paper. The current submission is much improved over the original version. Nonetheless, there are several issues that collectively, the reviewers thought still need to be addressed.\n\n1) It has been proposed that the authors expand either the Introduction or the Discussion section by describing the previously fitted relationship and explicitly contrasting it with the new relationship. This would help to highlight the differences in the conclusions made in each of the two studies.\n\n2) It would helpful if the authors would include some information explaining the importance of male densities in the context of the evolutionary theory of sex ratios. There is a reasonable body of theory and data (from P. mexicanum and P. chabaudi mostly) that can give ecological and evolutionary context to the results. Specifically, the fact that at low densities of gametocytes, males are limiting is something that has been called \"fertility insurance\". (there are papers by Gardner et al., 2003 and Ramiro et al, 2011 that explain and explore fertility insurance).\n\n3) There should also be a more coherent integration of the oocyst results with the overall message of the paper. Total gametocytes are indicator to be the most important predictor for oocysts, but for prevalence it is female gametocytes with sex-ratio.\n\n4) For completeness, the relationship between male-only gametocyte densities and infectiousness should be investigated to confirm that it is the weakest.\n\nMotivated by the suspicion that some important data might be discarded by ignoring the microscopy densities, the authors should also indicate the performance of including both PCR and microscopy in the same model. Suggested fits were: gametocyte density by microscopy, geometric mean of male +female by PCR, geometric mean of female PCR + microscopy.\n\nAmongst the specific comments, the following should be addressed.\n\nPlease mention and reference Da et al., 2015) that P. falciparum oocyst rise has also been observed.\n\nIntroduction, please drop \"for the first time\" from the text, as it has not: https://www.sciencedirect.com/science/article/pii/S0014489414002896#f0015 (Figure 1A.)\n\n\"Gametocyte density estimates by microscopy and qRT-PCR were correlated in Oueleesebougou (r=0.74), Bobo Dioulasso (r=0.27), Balonghin (r=0.56) and Yaound\u00e9 (r=0.91).\" Correlation is not binary. The wording should reflect the wide range of correlation coefficients.\n\nSubsection \u201cGametocyte sex ratios in natural infections\u201d: Is the decreasing male-female ratio with increasing density still significant in a hold-one-out sensitivity analysis of the 4 sites? For example, what if Bobo is excluded?\n\nFigure 1A: There are measurements with lower measured densities that do not appear on this figure.\n\nSubsection \u201cInfectivity in relation to gametocyte density\u201d: It looks to my eyes that 200/\u03bcL is more like 30% infected.\n\nDiscussion section: I appreciate the inclusion of a previous comment in the sentence, \"concurrent quantification [\u2026] leads to an improved estimation of total gametocyte biomass\". However, the following sentence builds a false straw-man argument around the situation where that improved quantification would have to take the form of naively adding together the two imprecise measurements. As a rebuttal, take the following example:\n\nFigure 1\u2014figure supplement 1 in Mali shows that a qRT-PCR density of 50/\u03bcL is observed for microscopy measurements of between 20 and 300/\u03bcL. The Mali points in Figure 1 show that if the true female density is around 20/\u03bcL, then our expected male measurement would be about 2/\u03bcL, while if the true female density is 300/\u03bcL, the expected male measurement would be about 20/\u03bcL.\n\nThe point is that if we observe a (female+male) density of (50+2)/\u03bcL or (50+20)/\u03bcL, we should not expect a model that treats those as 52 or 70/\u03bcL total biomass to behave very well under the logarithmic measurement uncertainty. Rather, the previous paragraph would suggest that (50+2) is more consistent with 22/\u03bcL while (50+20) is more consistent with 320/\u03bcL!\n\nAs such, I am convinced the authors have done an important and more predictive measurement, but I disagree with the sentence \"this work provides direct evidence of the epidemiological importance of male gametocytes\" if that is intended to imply predominantly male-limited mating success (Discussion section).\n\nFigure 1\u2014figure supplement 1: Unless I am mistaken, all measurements are microscopy positive (except in Balonghin), so there should be 3 points missing from panel A (off the bottom?), 3 points from panel B (off the right?), 1 point from panel C (off the bottom?) and about 30 points from panel D, which are submicroscopic, but in the spirit of transparency might be presented also on a broken axis at x=zero.\n\nFigure 1\u2014figure supplement 1: The legend has the name Yaound\u00e9 in the wrong place. Move to after (C).\n\nDensity, rather than number of female, male parasites, is the technically correct term to be used.\n\nIntroduction: It's not clear to that separately quantifying the sexes is needed for estimating total gametocyte density. Is this because each sex may express different levels of the target gene?\n\nReconciling Figure 1A and 1B may be confusing because Figure 1A suggests the more gametocytes there are (because females make up the bulk of gametocytes), the more males there are. Some comments on why the pattern in Figure1B emerges would help.\n\nA comment in the Discussion section on the relative ease of quantifying females vs total gametocytes or males would be useful information for others to take this forward.\n\nGiven their importance to this paper, the sex ratios could be mentioned in the text, currently they are in Figure 1 only.\n",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1d8b5689-c34d-4776-ab70-010df3fb7eff",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C1",
+      "claim": "Previous work indicated a complex relationship between gametocyte density and mosquito infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work (Churcher et al., 2013) indicated a complex relationship between gametocyte density and mosquito infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Churcher et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "f06dfa9c-300d-4e1e-92b8-4259f7dba948",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C2",
+      "claim": "The relationship between gametocyte density and mosquito infection depends on both female and male parasite density.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we use data from 148 feeding experiments on naturally infected gametocyte carriers to show that the relationship is much simpler and depends on both female and male parasite density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from 148 feeding experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "486d06f2-e8ed-4ce8-8528-a53c845598bc",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C3",
+      "claim": "The proportion of mosquitoes infected is primarily determined by the density of female gametocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of mosquitoes infected is primarily determined by the density of female gametocytes though transmission from low gametocyte densities may be impeded by a lack of male parasites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and statistical modeling",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "aeacca3b-1a6e-4b0e-8a03-84e8eb56f486",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C4",
+      "claim": "Transmission from low gametocyte densities may be impeded by a lack of male parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of mosquitoes infected is primarily determined by the density of female gametocytes though transmission from low gametocyte densities may be impeded by a lack of male parasites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and statistical modeling",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "5061e8a1-4c29-4036-9a26-5e54122e91d6",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C5",
+      "claim": "Improved precision of gametocyte quantification simplifies the shape of the relationship with infection increasing rapidly before plateauing at higher densities.",
+      "claim_type": "EXPLICIT",
+      "source": "Improved precision of gametocyte quantification simplifies the shape of the relationship with infection increasing rapidly before plateauing at higher densities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and comparison with previous methods",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "24a19159-63a6-406a-b19b-86084ddfc3c2",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C6",
+      "claim": "The mean number of oocysts per mosquito rises quickly with gametocyte density but continues to increase across densities examined.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean number of oocysts per mosquito rises quickly with gametocyte density but continues to increase across densities examined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from mosquito dissections",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "f1e4702e-4e5a-443d-a41d-5db9242be03b",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C7",
+      "claim": "Mosquitoes must ingest both male and female mature gametocytes to become infected with malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "Mosquitoes must ingest both male and female mature gametocytes to become infected with malaria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about malaria transmission",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "7f84f08c-0ac6-4978-850f-b4f42647015e",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C8",
+      "claim": "The shape of the relationship between gametocyte density and the probability of mosquito infection is thought to be complex for Plasmodium falciparum.",
+      "claim_type": "EXPLICIT",
+      "source": "The shape of the relationship between gametocyte density and the probability of mosquito infection is thought to be complex for Plasmodium falciparum (Churcher et al., 2013; Lin et al., 2016; Da et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "c8bca3e5-cd2b-477f-b979-d3569ec9a428",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C9",
+      "claim": "The most comprehensive characterisation of the relationship between gametocyte density and mosquito infection was conducted using molecular tools that only quantified female gametocyte specific Pfs25 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "but recent evidence has shown that the most comprehensive characterisation of this relationship was conducted using molecular tools that only quantified female gametocyte specific Pfs25 mRNA (Churcher et al., 2013; Lasonder et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "59d16a40-459b-433c-8d39-fb607c10e723",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C10",
+      "claim": "Female gametocytes were quantified from trendlines with unknown gametocyte sex-ratios in previous estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional shortcoming of these previous estimates is that female gametocytes were quantified from trendlines with unknown gametocyte sex-ratios, potentially affecting assay precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference about previous methodological limitations",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "72544b2e-01e1-482c-96d3-8fc334df4916",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C11",
+      "claim": "Gametocyte sex ratio is important in determining transmission efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "It is intuitive that gametocyte sex ratio is important in determining transmission efficiency (Reece et al., 2008; Paul et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations and logical reasoning",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "18571dc8-6bdc-4d30-ab71-be9b5509052d",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C12",
+      "claim": "Gametocyte sex-ratio in P. falciparum is typically female biased.",
+      "claim_type": "EXPLICIT",
+      "source": "Gametocyte sex-ratio in P. falciparum is typically female biased but may differ between infections (West et al., 2001; Robert et al., 2003) and during infections (West et al., 2001; Paul et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "f57930ab-8e06-4ae1-a3ce-41c1617bcdc7",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C13",
+      "claim": "Gametocyte sex-ratio may differ between infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Gametocyte sex-ratio in P. falciparum is typically female biased but may differ between infections (West et al., 2001; Robert et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "9b4af0ef-8213-4a9b-8e97-8dd67d1a6854",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C14",
+      "claim": "Gametocyte sex-ratio may differ during infections.",
+      "claim_type": "EXPLICIT",
+      "source": "and during infections (West et al., 2001; Paul et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "bfb9f880-a743-4ead-abcd-dcfc78702cab",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C15",
+      "claim": "Gametocyte sex-ratio may be influenced by immune responses that differentially affect male and female gametocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "and may be influenced by immune responses that differentially affect male and female gametocytes (Ramiro et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "46e412bc-955a-48a0-8b10-9af141edd7af",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C16",
+      "claim": "Under certain conditions, such as a low gametocyte density, gametocyte sex-ratio may become less female biased to ensure all female gametes are fertilised.",
+      "claim_type": "EXPLICIT",
+      "source": "Fertility assurance explains why under certain conditions, such as a low gametocyte density, gametocyte sex-ratio may become less female biased to ensure all female gametes are fertilised (Gardner et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation and theoretical reasoning",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "f294e141-04bd-4df3-a37e-f2742a498504",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C17",
+      "claim": "There is evidence that gametocyte sex ratio is adjusted in response to malaria developmental bottlenecks.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite evidence that gametocyte sex ratio is adjusted in response to malaria developmental bottlenecks (Reece et al., 2008; Paul et al., 2002; Neal and Taylor, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "ae4be62f-21cb-44af-bb05-2ec5194d2c90",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C18",
+      "claim": "There is no direct evidence for the epidemiological importance of gametocyte sex ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "there is no direct evidence for its epidemiological importance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on assessment of existing literature",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "7a63ed27-2962-4335-bc32-fe02fbe26202",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C19",
+      "claim": "Mosquito infections may occur from blood with P. falciparum gametocyte densities below the microscopic threshold for detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Since mosquito infections may occur from blood with P. falciparum gametocyte densities below the microscopic threshold for detection (Churcher et al., 2013; Gon\u00e7alves et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "ecf8e5e7-685d-49a8-b9f6-120cbb2c43b3",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C20",
+      "claim": "Gametocyte density itself is an important determinant of sex ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "and gametocyte density itself is an important determinant of sex ratio (Reece et al., 2008; Robert et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "1b677e4a-3db1-44d2-b275-0586cf47ce05",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C21",
+      "claim": "The relationship between gametocyte density and oocyst density may show a different relationship with gametocyte density than mosquito infection prevalence.",
+      "claim_type": "EXPLICIT",
+      "source": "The relationship between gametocyte density and oocyst density is also investigated as this may show a different relationship with gametocyte density (Da et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation and speculation",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "368cf8f5-d74f-4fa5-8779-a200f8a315b4",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C22",
+      "claim": "Recent work has highlighted the potential importance of mosquito parasite density in mosquito-to-human transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "and recent work has highlighted the potential importance of mosquito parasite density in mosquito-to-human transmission (Churcher et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "c7086570-fffb-414d-bc9b-865485107d0b",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C23",
+      "claim": "Both the number of infected mosquitoes and their parasite load may need to be considered when assessing the human reservoir of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the number of infected mosquitoes and their parasite load may thus need to be considered when assessing the human reservoir of infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from previous findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "3a8db80c-0be6-4174-b737-3d31c4c28604",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C24",
+      "claim": "Gametocyte carriers were included from Mali (n = 71), Burkina Faso (n = 64) and Cameroon (n = 13).",
+      "claim_type": "EXPLICIT",
+      "source": "Gametocyte carriers were included from Mali (n = 71), Burkina Faso (n = 64) and Cameroon (n = 13).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of study sample composition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "bc657aea-c088-4c06-a520-69759cfb6d50",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C25",
+      "claim": "P. falciparum parasite prevalence by microscopy ranged from ~40\u201370% between sites.",
+      "claim_type": "EXPLICIT",
+      "source": "P. falciparum parasite prevalence by microscopy ranged from ~40\u201370% between sites (Gon\u00e7alves et al., 2017; Hien et al., 2017; Mahamar et al., 2017; Sandeu et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to site-specific studies",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "77d6c6c3-79da-4501-a46b-cfaec5661816",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C26",
+      "claim": "All sites recruited gametocyte carriers prior to antimalarial treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "All sites recruited gametocyte carriers prior to antimalarial treatment but used different enrolment criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of study methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "94fa5734-b85c-4007-b2ff-e905dcf95c8d",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C27",
+      "claim": "Microscopically detected gametocyte carriers were included in three studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Microscopically detected gametocyte carriers were included in three studies while one site (Balonghin) included submicroscopic gametocyte densities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of study methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "61a14eed-ba11-4dfe-97be-ae80873a69d9",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C28",
+      "claim": "One site (Balonghin) included submicroscopic gametocyte densities.",
+      "claim_type": "EXPLICIT",
+      "source": "Microscopically detected gametocyte carriers were included in three studies while one site (Balonghin) included submicroscopic gametocyte densities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of study methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "71f0541b-0227-42de-9822-3ebb1eaf1461",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C29",
+      "claim": "Total gametocyte densities ranged from 0.04 to 1164 gametocytes/\u03bcL.",
+      "claim_type": "EXPLICIT",
+      "source": "Total gametocyte densities ranged from 0.04 to 1164 gametocytes/\u03bcL",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of measured data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "040b8b5c-5a39-4793-89bd-e5a9a0d70af8",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C30",
+      "claim": "The median proportion of male gametocytes was 25% (interquartile range 13\u201339%).",
+      "claim_type": "EXPLICIT",
+      "source": "the median proportion of male gametocytes was 25% (interquartile range 13\u201339%)(Table 1, Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data presented in Table 1 and Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "51801f3f-2f5d-4f41-976f-c7b00e0d9a30",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C31",
+      "claim": "Gametocyte density estimates by microscopy and qRT-PCR were positively correlated in all sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Gametocyte density estimates by microscopy and qRT-PCR were positively correlated in all sites, but there was variation in the strength of correlation: Ouelessebougou (r = 0.74), Bobo Dioulasso (r = 0.27), Balonghin (r = 0.56) and Yaound\u00e9 (r = 0.91) (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis and Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "1a3bfef7-f072-4189-b4b4-191daa95d18a",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C32",
+      "claim": "There was variation in the strength of correlation between microscopy and qRT-PCR gametocyte density estimates between sites.",
+      "claim_type": "EXPLICIT",
+      "source": "but there was variation in the strength of correlation: Ouelessebougou (r = 0.74), Bobo Dioulasso (r = 0.27), Balonghin (r = 0.56) and Yaound\u00e9 (r = 0.91) (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis and Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "ae28afcb-9234-4c52-8310-832e7480776e",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C33",
+      "claim": "Across 148 successful membrane feeding experiments, 16.7% (1297/7757) of mosquitoes became infected.",
+      "claim_type": "EXPLICIT",
+      "source": "Across 148 successful membrane feeding experiments, 16.7% (1297/7757) of mosquitoes became infected, with considerable variation between gametocyte donors and study sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "af7bfdd1-3ef6-4a2e-8e6f-3060e9fb4080",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C34",
+      "claim": "There was considerable variation in mosquito infection rates between gametocyte donors and study sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Across 148 successful membrane feeding experiments, 16.7% (1297/7757) of mosquitoes became infected, with considerable variation between gametocyte donors and study sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "194fd12b-f3a6-4ac2-bdae-821993942c91",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C35",
+      "claim": "Female gametocyte densities quantified by Pfs25 qRT-PCR and male gametocyte densities by PfMGET qRT-PCR were positively correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "Female gametocyte densities quantified by Pfs25 quantitative reverse-transcriptase PCR (qRT-PCR) and male gametocyte densities by PfMGET qRT-PCR were positively correlated (Figure 1A; Spearman's rank correlation coefficient = 0.79, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "a68167fa-1082-43f9-8cb8-30e46dfcef01",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C36",
+      "claim": "The percentage of gametocytes that were male decreased with increasing total gametocyte densities.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that the relationship is linear on the log scale means that the percentage of gametocytes that were male decreased with increasing total gametocyte densities (Figure 1B, p<0.001 [Kruskal Wallis test]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "0475cfff-ce1a-43b6-ac90-694053adf5e5",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C37",
+      "claim": "The association between proportion of male gametocytes and total gametocyte density remained apparent and statistically significant if any of the study sites with a smaller number of observations was removed.",
+      "claim_type": "EXPLICIT",
+      "source": "This association remained apparent and statistically significant if any of the study sites with a smaller number of observations was removed (i.e. with removal of data from Bobo Dioulasso, Balonghin or Yaound\u00e9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sensitivity analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "2e21c25c-67fb-4954-bbcb-f773b0409e2c",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C38",
+      "claim": "There was no evidence for an association between proportion of male gametocytes with asexual parasite density.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely there was no evidence for an association between proportion of male gametocytes with asexual parasite density (Figure 1C, p=0.713).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "6113736e-f8e4-4be0-bca4-f999c7a173fa",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C39",
+      "claim": "The proportion of mosquitoes developing oocysts is best described by a model that incorporates both the density of female and the density of male gametocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of mosquitoes developing oocysts is best described by a model that incorporates both the density of female and the density of male gametocytes (deviance information criterion, DIC = 451.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical model comparison using DIC",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "25cc33ed-f3cd-4877-825d-467e5f8c2dd2",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C40",
+      "claim": "In the best fit model, female gametocyte density explains most of the variability with the proportion of mosquitoes infected increasing rapidly with increasing gametocytaemia before saturating at high female gametocyte densities.",
+      "claim_type": "EXPLICIT",
+      "source": "In the best fit model, female gametocyte density explains most of the variability with the proportion of mosquitoes infected increasing rapidly with increasing gametocytaemia before saturating at high female gametocyte densities (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical modeling and Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "530e59b3-f54b-4f2e-911b-a4156d758e01",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C41",
+      "claim": "At female gametocyte densities of 200 per \u00b5l approximately 30% of mosquitoes are infected.",
+      "claim_type": "EXPLICIT",
+      "source": "At female gametocyte densities of 200 per \u00b5l approximately 30% of mosquitoes are infected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on model predictions from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "bf3854cb-e2e5-4792-8605-89fb60cfd665",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C42",
+      "claim": "At low gametocyte densities transmission appears to be impeded by a lack of male parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "At low gametocyte densities transmission appears to be impeded by a lack of male parasites (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data analysis and Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "5b923d59-fcce-4af3-97a0-b2f6996f7389",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C43",
+      "claim": "The number of mosquitoes infected is on average lower for hosts with fewer than 50 male gametocytes per \u00b5l of blood.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of mosquitoes infected is on average lower for hosts with fewer than 50 male gametocytes per \u00b5l of blood",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "01a4bb37-7803-4052-9076-10f9e75bd99d",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C44",
+      "claim": "The model predicts that male densities < 10 per \u00b5l reduces the proportion of infected mosquitoes by 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "with the model predicting that male densities < 10 per \u00b5l reduces the proportion of infected mosquitoes by 50% (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on model predictions and Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "8c2ff65b-35c6-4d46-9371-fb13d0391697",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C45",
+      "claim": "Poorer statistical fits were observed for models where the proportion of mosquitoes with oocysts was described by either the density of females alone (DIC = 481.3), the density of males (DIC = 538.8), or total gametocyte density (DIC = 501.7).",
+      "claim_type": "EXPLICIT",
+      "source": "Poorer statistical fits were observed for models where the proportion of mosquitoes with oocysts was described by either the density of females alone (DIC = 481.3), the density of males (DIC = 538.8), or total gametocyte density (sum of male and female gametocytes, DIC = 501.7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical model comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "3a8e753c-04e0-440e-8220-eea47e3cc376",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C46",
+      "claim": "Compared to the Mali data, infectivity was similar in the study in Balonghin, Burkina Faso (0.95 times as high; 95% CI 0.1\u20131.4).",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the Mali data, infectivity was similar in the study in Balonghin, Burkina Faso (0.95 times as high; 95% CI 0.1\u20131.4)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "788844ed-babd-4a05-b239-6812970d3815",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C47",
+      "claim": "Infectivity was 3.65 times higher in Bobo Dioulasso, Burkina Faso (95% CI 2.3\u20135.2) compared to Mali.",
+      "claim_type": "EXPLICIT",
+      "source": "but 3.65 times higher in Bobo Dioulasso, Burkina Faso (95% CI 2.3\u20135.2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "33bb9210-4364-4f38-9872-61e55f105c72",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C48",
+      "claim": "Infectivity was 1.68 times higher in Yaound\u00e9, Cameroon (95% CI 1.1\u20132.6) compared to Mali.",
+      "claim_type": "EXPLICIT",
+      "source": "and 1.68 times higher in site in Yaound\u00e9, Cameroon (95% CI 1.1\u20132.6)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "a5fcef2e-19ec-4995-9b9f-85d16fae24cd",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C49",
+      "claim": "The distribution of oocysts between mosquitoes is highly over-dispersed, with some mosquitoes harbouring very high oocyst densities.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of oocysts between mosquitoes is highly over-dispersed, with some mosquitoes harbouring very high oocyst densities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "c5925485-c8ec-41b5-91ac-29902b8a8a2e",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C50",
+      "claim": "Mean oocyst density increased with increasing gametocyte density and continued to increase across the range of gametocyte densities observed, without evidence for a plateau being reached.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean oocyst density increased with increasing gametocyte density and continued to increase across the range of gametocyte densities observed, without evidence for a plateau being reached (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data analysis and Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "85f6cf58-69ee-47b7-ab1b-56429dd08f70",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C51",
+      "claim": "Total gametocyte density (sum of females and males) was able to predict mean oocyst density better than female gametocyte density alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Total gametocyte density (sum of females and males) was able to predict mean oocyst density better than female gametocyte density alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical model comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "29485aa4-53cd-4db1-9255-a4b3f5b4d4f6",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C52",
+      "claim": "The current model presents a considerable improvement over previous work by separately quantifying male and female gametocytes using sex-specific mRNA markers and standard curves.",
+      "claim_type": "EXPLICIT",
+      "source": "The current model presents a considerable improvement over previous work (Churcher et al., 2013), both by separately quantifying male and female gametocytes using sex-specific mRNA markers and standard curves (Lasonder et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on methodological comparison and citations",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "df70b5aa-0779-45fb-aaa1-3c7843373deb",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C53",
+      "claim": "Male and female gametocytes were quantified separately using automated extraction of nucleic acids.",
+      "claim_type": "EXPLICIT",
+      "source": "Male and female gametocytes were quantified separately using automated extraction of nucleic acids (Stone et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of methodology with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "43c63825-03ea-42e1-83f4-a05c5fdb90f2",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C54",
+      "claim": "Manual extraction can result in considerable variation that may have affected the accuracy of earlier gametocyte estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Manual extraction can result in considerable variation (Walker et al., 2015) that may have affected the accuracy of our earlier gametocyte estimates (Churcher et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation and inference",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "6abba3dd-3fab-4bee-9cd2-7d269bebf83c",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C55",
+      "claim": "qRT-PCR has higher precision than the previously used quantitative nucleic acid sequence based amplification, QT-NASBA.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we used qRT-PCR that has higher precision than the previously used quantitative nucleic acid sequence based amplification, QT-NASBA (Pett et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "bfc74663-61fa-4d44-aaa3-9959c18a8ebd",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C56",
+      "claim": "The relationship between the density of gametocytes and transmission can be adequately described by a simple saturating relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "The analyses show that the relationship between the density of gametocytes and transmission can be adequately described by a simple saturating relationship",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical modeling of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "30d5d9a6-d569-4a68-b408-cbb358db5566",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C57",
+      "claim": "A more complicated curve with two inflection points (which generates a double plateau) does not improve model fit.",
+      "claim_type": "EXPLICIT",
+      "source": "and that a more complicated curve with two inflection points (which generates a double plateau) does not improve model fit (Churcher et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical model comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "1046217f-bd59-4e92-8804-2caed1f60e9d",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C58",
+      "claim": "The first plateau of the previous relationship predicted similar infectivity for gametocyte densities between 1 and 200 gametocytes per \u00b5l.",
+      "claim_type": "EXPLICIT",
+      "source": "The first plateau of the previous relationship (Churcher et al., 2013) predicted similar infectivity for gametocyte densities between 1 and 200 gametocytes per \u00b5l.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on citation to previous model",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "3bfa9869-973a-4879-a98a-ab9b9644a20b",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C59",
+      "claim": "An intervention that killed 99% of gametocytes would have very little effect on infectivity on a person with a density of 200 gametocytes per \u00b5l according to the previous relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "If this was the case then an intervention that killed 99% of gametocytes would have very little effect on infectivity on a person with a density of 200 gametocytes per \u00b5l but impacted transmission considerably below this level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from previous model predictions",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "882b88f8-d76b-4023-b897-168d3008016f",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C60",
+      "claim": "The new relationship suggests an intervention reducing gametocyte density would have an impact on transmission to mosquitoes across the entire range of gametocyte densities observed in the field.",
+      "claim_type": "EXPLICIT",
+      "source": "The new relationship presented here suggests an intervention reducing gametocyte density would have an impact on transmission to mosquitoes across the entire range of gametocyte densities observed in the field",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from new model predictions",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "a8af628d-53e5-4846-9802-ee2c0f542c8f",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C61",
+      "claim": "A predicted reduction in mosquito infection prevalence of 32% to 1% occurs when female gametocyte density is reduced from 200 to 1 female gametocytes per \u00b5l.",
+      "claim_type": "EXPLICIT",
+      "source": "with, for example, a predicted reduction in mosquito infection prevalence of 32% to 1% when female gametocyte density is reduced from 200 to 1 female gametocytes per \u00b5l.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on model predictions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "5d3374ce-1bc5-4366-a784-a0ce3c03aed4",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C62",
+      "claim": "Even gametocytocidal drugs with incomplete efficacy would reduce transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "The new work indicates that even gametocytocidal drugs with incomplete efficacy would reduce transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from model predictions",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "50e8a2f4-91b7-4f9c-9d74-9f3b15b57a1e",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C63",
+      "claim": "The increased simplicity found here compared to the previously described relationship is likely to be driven by the improved accuracy of gametocyte density estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased simplicity found here compared to the previously described relationship is likely to be driven by the improved accuracy of gametocyte density estimates",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from methodological improvements",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "3f5dcd6c-d35c-4217-b7be-da2e317c3867",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C64",
+      "claim": "Models fit solely to female parasites density had a similar simplified shape.",
+      "claim_type": "EXPLICIT",
+      "source": "as models fit solely to female parasites density had a similar simplified shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical modeling",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "39606a78-2cd1-4cc9-9c47-0da5e1500118",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C65",
+      "claim": "The concurrent quantification of female and male gametocytes leads to an improved estimation of total gametocyte biomass.",
+      "claim_type": "EXPLICIT",
+      "source": "The concurrent quantification of female and male gametocytes leads to an improved estimation of total gametocyte biomass and could explain why models with information on both sexes were more accurate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from methodological approach",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "0c672e06-7dcb-4ff9-a852-2a626d37169c",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C66",
+      "claim": "The model fit to total gametocyte density (male plus female) gave a poorer fit than the model where transmission was dependent on female density unless there were very low male parasite densities.",
+      "claim_type": "EXPLICIT",
+      "source": "Though improved accuracy of gametocyte density estimates through combining imprecise measures cannot be discounted the model fit to total gametocyte density (male plus female) gave a poorer fit than the model where transmission was dependent on female density unless there were very low male parasite densities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical model comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "f90533af-e110-4e95-999b-2ccc07aa2d3d",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C67",
+      "claim": "The number of male gametocytes may become a limiting factor for transmission at low gametocyte densities.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the number of male gametocytes may become a limiting factor for transmission at low gametocyte densities, although future studies that directly relate infectivity to mosquitoes to female and male gametocyte densities are needed to confirm this association.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from data analysis with acknowledgment of need for confirmation",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "919dc0f1-ffc9-47c8-acbf-23aadf3a6c25",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C68",
+      "claim": "The work confirmed previous evidence that the proportion of male gametocytes is negatively associated with total gametocyte density.",
+      "claim_type": "EXPLICIT",
+      "source": "The work confirmed previous evidence that the proportion of male gametocytes is negatively associated with total gametocyte density (Reece et al., 2008; Robert et al., 2003; Sowunmi et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by current data and citations to previous studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "7eb30ed6-5971-4454-bb20-bb87d7170bd4",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C69",
+      "claim": "The negative association between proportion of male gametocytes and total gametocyte density may reflect a strategic investment in male gametocytes to maximize the likelihood of transmission in low-density infections (fertility assurance).",
+      "claim_type": "EXPLICIT",
+      "source": "which may reflect a strategic investment in male gametocytes to maximize the likelihood of transmission in low-density infections (fertility assurance) (Reece et al., 2008; Reece et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference and citations",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "f67e34ff-11cf-40e5-a7e7-fd6bfa13e13b",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C70",
+      "claim": "Male gametocyte density may become a limiting factor for transmission success at low gametocyte densities.",
+      "claim_type": "EXPLICIT",
+      "source": "The models also indicated that male gametocyte density may become a limiting factor for transmission success at low gametocyte densities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical modeling",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "28985643-fd3e-4d19-b60f-a0c2d72ddf0d",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C71",
+      "claim": "In vitro findings with P. falciparum, Plasmodium berghei and Plasmodium chabaudi show that infections with a higher proportion of male gametocytes gave higher transmission success at low gametocyte densities but reduced success at higher gametocyte densities.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are in line with in vitro findings with P. falciparum, Plasmodium berghei and Plasmodium chabaudi where infections with a higher proportion of male gametocytes gave higher transmission success at low gametocyte densities but reduced success at higher gametocyte densities (Reece et al., 2008; Mitri et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to in vitro studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "da353a89-0e67-404c-bde2-cd23696755f9",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C72",
+      "claim": "The presented model considerably improved the prediction of mosquito infection rates compared to the previous manuscript.",
+      "claim_type": "EXPLICIT",
+      "source": "The presented model considerably improved the prediction of mosquito infection rates compared to our previous manuscript (Churcher et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison with previous work",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "e8c9c2cb-140a-4928-9895-a537a8dab4e0",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C73",
+      "claim": "Some level of uncertainty remains in the model, particularly between study sites with several experiments resulting in considerably lower mosquito infection rates than predicted based on gametocyte density and sex-ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, some level of uncertainty remains, particularly between study sites with several experiments resulting in considerably lower mosquito infection rates than predicted based on gametocyte density and sex-ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "3cf769fe-a897-4ba3-a27d-9ac42cd07785",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C74",
+      "claim": "Naturally acquired antibody responses to gametocyte antigens may reduce transmission efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Naturally acquired antibody responses to gametocyte antigens may reduce transmission efficiency and form a first explanation why many mosquitoes may fail to become infected when feeding on some hosts with high-density gametocyte infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation about possible mechanisms",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "c6d332b2-388a-478d-84d2-d5ab2e27e9dd",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C75",
+      "claim": "Functional transmission reducing immunity is only sporadically detected in naturally exposed populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst immune responses that completely prevent mosquito infections are only sporadically detected in naturally exposed populations (Stone et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "357d6449-9ec3-4bd6-807f-b2b7f75b7738",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C76",
+      "claim": "It is plausible that functional transmission reducing immunity has reduced mosquito infection rates for a proportion of gametocyte carriers in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "it is plausible that functional transmission reducing immunity has reduced mosquito infection rates for a proportion of gametocyte carriers in our study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "0f50f57e-36c7-40ee-ab3a-1f4025d38b33",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C77",
+      "claim": "Temporal fluctuations in transmission reducing immunity may have contributed to the apparent differences in infectivity between study sites that recruited gametocyte carriers at different time-points in the season.",
+      "claim_type": "EXPLICIT",
+      "source": "Temporal fluctuations in transmission reducing immunity (Ou\u00e9draogo et al., 2011) may also have contributed to the apparent differences in infectivity between study sites that recruited gametocyte carriers at different time-points in the season.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation and citation",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "a92fbb17-274e-42df-a5fa-592bc0db77e1",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C78",
+      "claim": "The site with the highest infectivity in the current study (Bobo Dioulasso), recruited individuals in the dry season when the impact of transmission reducing immunity may be lowest.",
+      "claim_type": "EXPLICIT",
+      "source": "The site with the highest infectivity in the current study (Bobo Dioulasso), recruited individuals in the dry season when the impact of transmission reducing immunity may be lowest (Ou\u00e9draogo et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data and citation with speculation",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "00c8cae6-de28-428d-9673-b1a853a1cc14",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C79",
+      "claim": "The extent of between site heterogeneity in transmission should be interpreted with caution since two of the four sites had <20 study participants.",
+      "claim_type": "EXPLICIT",
+      "source": "The extent of between site heterogeneity in transmission should be interpreted with caution since two of the four sites had <20 study participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on assessment of study limitations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "3ce63334-0c04-4a07-a498-14bf972d1170",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C80",
+      "claim": "At all sites malaria-infected individuals were recruited prior to malaria treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "At all sites malaria-infected individuals were recruited prior to malaria treatment, making it unlikely that drug-induced sterilization of circulating gametocytes may have affected our analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of study methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "e4d1d3b2-d8ad-46c1-aff0-fb964958a360",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C81",
+      "claim": "Variation in the susceptibility of the mosquito colonies to parasite genotypes may provide a plausible reason for the imperfect model fit.",
+      "claim_type": "EXPLICIT",
+      "source": "Variation in the susceptibility of the mosquito colonies to parasite genotypes may provide a second plausible reason for the imperfect model fit (Lef\u00e8vre et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation and citation",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "3d6faa65-09df-4b96-8fe9-6756e07c3515",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C82",
+      "claim": "Quantification of gametocytes by Pfs25 and PfMGET qRT-PCR may not fully reflect gametocyte maturity and infectivity as gametocytes may be detectable in the blood stream before and after peak infectivity is reached.",
+      "claim_type": "EXPLICIT",
+      "source": "A third hypothesis could be that our quantification of gametocytes by Pfs25 and PfMGET qRT-PCR may not fully reflect gametocyte maturity and infectivity as gametocytes may be detectable in the blood stream before (Hallett et al., 2006) and after peak infectivity is reached (Ou\u00e9draogo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation and citations",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "bd051241-4efe-4ab2-b3d6-53279901eee1",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C83",
+      "claim": "Technical issues related to RNA degradation may affect gametocyte quantification and thus yield unreliable low gametocyte density estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, technical issues related to RNA degradation may affect gametocyte quantification and thus yield unreliable low gametocyte density estimates (Pett et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation and citation",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "4c4abb8d-981d-41c3-a969-9606ed60f0f6",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C84",
+      "claim": "There were no apparent issues in maintaining the essential temperature control in the field, during transportation, or following RNA extraction for any of the samples included in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no apparent issues in maintaining the essential temperature control in the field, during transportation, or following RNA extraction for any of the samples included in this study",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about study procedures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "ecb56fc1-7858-4c27-85df-1c459a3f48d9",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C85",
+      "claim": "The associations between microscopy and qRT-PCR gametocyte density estimates did not indicate site-specific RNA degradation that may have resulted in underestimations of true gametocyte densities.",
+      "claim_type": "EXPLICIT",
+      "source": "nor did the associations between microscopy and qRT-PCR gametocyte density estimates indicate (site-specific) RNA degradation that may have resulted in underestimations of true gametocyte densities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "88592187-3071-4a82-9742-a35139d4d464",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C86",
+      "claim": "Though the prevalence of mosquitoes with oocysts plateaus at high gametocyte densities the average number of oocysts in those mosquitoes continues to rise.",
+      "claim_type": "EXPLICIT",
+      "source": "The study shows that though the prevalence of mosquitoes with oocysts plateaus at high gametocyte densities the average number of oocysts in those mosquitoes continues to rise, as previously reported for P. vivax (Kiattibutr et al., 2017) and P. falciparum (Da et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "0df84ddd-1769-42d0-8c26-f96ef8bc215d",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C87",
+      "claim": "There were insufficient data to fit a model where oocyst density was dependent on female density but with a penalty for low male densities.",
+      "claim_type": "EXPLICIT",
+      "source": "There were insufficient data to fit a model where oocyst density was dependent on female density but with a penalty for low male densities which was the best fit model for infectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of study limitation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "148aa2ac-88b6-4a8e-9190-c4f72590fd6b",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C88",
+      "claim": "Understanding the association between gametocyte density and mosquito infection rates is of immediate relevance for malaria control efforts.",
+      "claim_type": "EXPLICIT",
+      "source": "Understanding the association between gametocyte density and mosquito infection rates is of immediate relevance for malaria control efforts (Lin et al., 2016; Slater et al., 2015; Gon\u00e7alves et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations and knowledge",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "c6f0e3ec-be4f-4b0d-9975-26dc56b6bbf2",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C89",
+      "claim": "Accurate measures of female and male gametocyte density can better predict human-to-mosquito infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that accurate measures of female and male gametocyte density can better predict human-to-mosquito infection",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "d29c6111-1268-400f-bbc2-68e9e78a2770",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C90",
+      "claim": "Accurate measures of female and male gametocyte density could be used to assess the infectiousness of human populations.",
+      "claim_type": "EXPLICIT",
+      "source": "and could be used to assess the infectiousness of human populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "7ea1a896-0c3f-476e-a27a-047e99383bcc",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C91",
+      "claim": "Field samples were collected at four malaria endemic sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Field samples were collected at four malaria endemic sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of study methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "46b66b52-d2c8-44f9-9455-aa10017254b8",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C92",
+      "claim": "Samples were collected prior to treatment and after written informed consent was obtained from participants or their guardian(s).",
+      "claim_type": "EXPLICIT",
+      "source": "Samples were collected prior to treatment and after written informed consent was obtained from participants or their guardian(s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of study methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "af806f54-3adc-48a0-a81c-a987de20ab92",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C93",
+      "claim": "The same membrane feeding protocol was used at all sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The same membrane feeding protocol was used at all sites",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of study methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "a7d6e3cb-de2e-4cd7-8478-559d7d21f213",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C94",
+      "claim": "Local Anopheles coluzzii colony mosquitoes were used in Mali, Cameroon and Bobo Dioulasso, Burkina Faso.",
+      "claim_type": "EXPLICIT",
+      "source": "local Anopheles coluzzii colony mosquitoes (Mali, Cameroon and Bobo Dioulasso, Burkina Faso)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of study methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "00bd04e9-f7ae-4c75-8469-555eed82f301",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C95",
+      "claim": "Colony mosquitoes comprising a mixture of A. coluzzii, A. gambiae s.s. and hybrid forms were used in Balonghin, Burkina Faso.",
+      "claim_type": "EXPLICIT",
+      "source": "or colony mosquitoes comprising a mixture of A. coluzzii, A. gambiae s.s. and hybrid forms (Balonghin, Burkina Faso)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of study methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "27c47b87-2e35-49a6-afe7-95e152d0eefa",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C96",
+      "claim": "Mosquitoes were allowed to feed for 15\u201320 min on heparin blood samples.",
+      "claim_type": "EXPLICIT",
+      "source": "were allowed to feed for 15\u201320 min on heparin blood samples",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of study methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "034c2b5f-280d-49bd-abce-22acff2c53ab",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C97",
+      "claim": "Mosquitoes were dissected in 1% mercurochrome at day seven post-feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "until dissection in 1% mercurochrome at day seven post-feeding",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of study methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "06e1c510-fb5a-4e64-9b1a-e0a0a19a2f28",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C98",
+      "claim": "Oocyst detection was performed by two independent microscopists.",
+      "claim_type": "EXPLICIT",
+      "source": "and oocyst detection by two independent microscopists (Ou\u00e9draogo, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of study methodology with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "f63b5748-bff0-443f-9d4f-58c37d44009b",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C99",
+      "claim": "Female gametocytes were quantified by qRT-PCR targeting female Pfs25 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Female gametocytes were quantified by quantitative reverse transcriptase PCR (qRT-PCR) targeting female Pfs25 mRNA, as described elsewhere in detail (Stone et al., 2017) based on established protocols (Wampfler et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of methodology with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "681be73a-bda8-4e86-bbcb-17990152d6e5",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C100",
+      "claim": "A recently developed qRT-PCR based on PfMGET was used for male gametocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "For male gametocytes we used a recently developed qRT-PCR (Stone et al., 2017) based on PfMGET (male gametocyte enriched transcript, Pf3D7_1469900)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of methodology with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "bf4b1166-71a5-4f63-bd73-c97544623fcd",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C101",
+      "claim": "PfMGET is a transcript that is highly enriched in male P. falciparum gametocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "a transcript that is highly enriched in male P. falciparum gametocytes (Lasonder et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "c6fb3f69-60fc-4c5d-88e2-0e63cfcc2e68",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C102",
+      "claim": "mRNA was extracted from blood collected in EDTA tubes by venipuncture.",
+      "claim_type": "EXPLICIT",
+      "source": "For all qRT-PCR, mRNA was extracted from blood collected in EDTA tubes by venipuncture",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "f66b848d-51bd-4ba2-a5fe-e79ce0391c97",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C103",
+      "claim": "100 \u03bcL of whole blood was stored at \u221280\u00b0C in 500 \u03bcL RNAprotect for Burkina Faso and Cameroon samples.",
+      "claim_type": "EXPLICIT",
+      "source": "100 \u03bcL of whole blood was stored at \u221280\u00b0C in 500 \u03bcL RNAprotect (Qiagen; for Burkina Faso and Cameroon samples)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "7852c99c-79fe-4625-bf3f-8ec9867a13b5",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C104",
+      "claim": "100 \u03bcL of whole blood was stored at \u221280\u00b0C in 900 \u03bcL L6 buffer for Mali samples.",
+      "claim_type": "EXPLICIT",
+      "source": "or 900 \u03bcL L6 buffer (Severn Biotech, Kidderminster, UK; for Mali samples)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "52e8665b-9fe7-4dfd-b07a-93d0b0f34c5c",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C105",
+      "claim": "Automated extraction was performed using a MagNAPure LC.",
+      "claim_type": "EXPLICIT",
+      "source": "until automated extraction using a MagNAPure LC (Total Nucleic Acid Isolation Kit\u2013High Performance; Roche Applied Science, Indianapolis, IN, USA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "423ce05d-40b7-4d49-b4aa-ed2a1d9c74cb",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C106",
+      "claim": "cDNA was synthesised directly from nucleic acids for the PfMGET assay.",
+      "claim_type": "EXPLICIT",
+      "source": "cDNA was synthesised directly from nucleic acids for the PfMGET assay, for which the primers are intron-spanning",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "c5f2cce3-d8a9-42cc-9abd-3053df2db9b9",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C107",
+      "claim": "cDNA was synthesised after DNase treatment for the Pfs25 assay.",
+      "claim_type": "EXPLICIT",
+      "source": "and after DNase treatment (RQ1 DNase I Digest Kit, Promega) for the Pfs25 assay",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "c4bdf5d8-5eb3-44b2-97ce-a30fb86f39d9",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C108",
+      "claim": "qRT-PCR results were converted to male and female gametocyte densities using standard curves of separate male and female gametocyte populations.",
+      "claim_type": "EXPLICIT",
+      "source": "qRT-PCR results were converted to male and female gametocyte densities using standard curves (ten-fold serial dilutions from 106 to 10 gametocytes/ml) of separate male and female gametocyte populations that were generated using a transgenic parasite line expressing a male specific fluorescence marker (Lasonder et al., 2016; Stone et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of methodology with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "33ee58ed-2680-45de-923c-615f6b81aba4",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C109",
+      "claim": "The purity of male and female trendlines was previously confirmed by staining of sorted gametocyte populations using female gametocyte specific anti-Pfg377 antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "The purity of male and female trendlines was previously confirmed by staining of sorted gametocyte populations using female gametocyte specific anti-Pfg377 antibodies (Stone et al., 2017; Su\u00e1rez-Cort\u00e9s et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "526c310a-4c55-4652-84e6-94fd2261d6f3",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C110",
+      "claim": "For both Pfs25 and PfMGET qRT-PCR, a threshold for positivity was set at one gametocyte per sample (0.01/\u03bcL).",
+      "claim_type": "EXPLICIT",
+      "source": "For both Pfs25 and PfMGET qRT-PCR, a threshold for positivity was set at one gametocyte per sample (0.01/\u03bcL).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "5425bdd4-3b0d-483a-99db-4f0d2c31dbd5",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C111",
+      "claim": "The statistical methods used are the same as those in the original paper by Churcher et al., 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "The statistical methods used here are the same at those in the original paper (Churcher et al., 2013), which we briefly recapitulate here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "2b2927c7-3919-4b1c-806c-54361f4cda04",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C112",
+      "claim": "A Bayesian hierarchical model was used to estimate the coefficients relating CT to gametocyte density.",
+      "claim_type": "EXPLICIT",
+      "source": "We use a Bayesian hierarchical model to estimate the coefficients \u03b20 and \u03b21.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "f35ee6b1-293b-4d7d-971b-fb8139f5f72e",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C113",
+      "claim": "Four functional forms (linear, power, hyperbolic and Gompertz) were each fit four times on different gametocyte density measures.",
+      "claim_type": "EXPLICIT",
+      "source": "Four functional forms (linear, power, hyperbolic and Gompertz [Churcher et al., 2013]) were each fit four times: on female gametocyte density alone; on male gametocyte density alone; on total gametocyte density; and finally female gametocyte density but multiplied by a function accounting for reduced transmission at low male densities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "b2fba92e-5e4a-4afd-876f-3058b69460cb",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C114",
+      "claim": "Terms allowing for different infectivity at each site were incorporated into the models.",
+      "claim_type": "EXPLICIT",
+      "source": "Terms allowing for different infectivity at each site were incorporated into the models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "49ee0842-70ba-420c-8209-487839258650",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C115",
+      "claim": "The model quantifying the uncertainty in gametocyte density estimates was fit at the same time as the regression determining the relationship between gametocyte density and infectivity using Bayesian Markov Chain Monte Carlo methods.",
+      "claim_type": "EXPLICIT",
+      "source": "The model quantifying the uncertainty in gametocyte density estimates was fit at the same time as the regression determining the relationship between gametocyte density and infectivity using Bayesian Markov Chain Monte Carlo methods assuming a Binomial error structure for each feeding experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "bec35553-17b0-4bcf-9116-3c229a74c685",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C116",
+      "claim": "Fitting the models simultaneously enabled the uncertainty in the gametocyte density estimates to be reflected in the uncertainty of the shape of the relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitting the models simultaneously enabled the uncertainty in the gametocyte density estimates to be reflected in the uncertainty of the shape of the relationship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical methodology rationale",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "e7f86125-16b3-4378-8ac3-4c2f8e3071e0",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C117",
+      "claim": "The models were compared using the DIC with a lower value indicating the most parsimonious fit.",
+      "claim_type": "EXPLICIT",
+      "source": "The models were compared using the DIC with a lower value indicating the most parsimonious fit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "e1555602-2a93-45a0-b024-d765c07bc3ca",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "claim_id": "C118",
+      "claim": "A negative binomial error structure was used to describe oocyst counts.",
+      "claim_type": "EXPLICIT",
+      "source": "A negative binomial error structure was used to describe oocyst counts",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "eb778950-65fe-430f-a551-889ca937171b",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study collected samples from 148 gametocyte carriers across four malaria-endemic sites in Mali, Burkina Faso, and Cameroon using standardized membrane feeding protocols. Total gametocyte densities ranged from 0.04 to 1164 gametocytes/\u03bcL with a median male proportion of 25%, and 16.7% of mosquitoes became infected with considerable variation between sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C34 and C91-C98 provide comprehensive methodological details and descriptive statistics that are internally consistent and well-documented. The sample sizes, measurement ranges, and experimental protocols are clearly stated with appropriate citations, supporting the validity of the study design and data collection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "84af94fc-9148-403f-93ad-bfddae7dea83",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Female and male gametocyte densities were positively correlated (r=0.79, p<0.001), with the proportion of male gametocytes decreasing significantly with increasing total gametocyte density (p<0.001) but showing no association with asexual parasite density (p=0.713).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 and C68 present statistically significant findings with appropriate statistical tests (Spearman correlation, Kruskal-Wallis test) and p-values. The sensitivity analysis (C37) strengthens the robustness of the sex ratio finding. The results are visualized in Figure 1 and are consistent with prior literature cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "b6ed4483-07e9-40c2-a005-5981dbedba12",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A model incorporating both female and male gametocyte densities best predicted mosquito infection (DIC=451.5), with female density explaining most variability in a saturating relationship, while male densities <10/\u03bcL reduced infection by 50%. Significant site-specific differences in infectivity were observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C48 present a coherent statistical modeling result with appropriate model comparison using DIC values. The best-fit model is clearly superior to alternatives (C45), and the findings are supported by Figure 2. However, the authors acknowledge uncertainty remains (C73), and some site comparisons involve small sample sizes (C79), which appropriately tempers the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "f7559e77-28d0-40ae-a112-58adaa770bd4",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Oocyst distribution among mosquitoes was highly over-dispersed, with mean oocyst density increasing continuously across the range of gametocyte densities without plateauing. Total gametocyte density predicted oocyst density better than female density alone, though insufficient data prevented fitting the optimal model structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51, C86-C87 describe oocyst density findings supported by Figure 3 and statistical modeling. The authors appropriately acknowledge the limitation that insufficient data prevented fitting the preferred model structure (C87), and they note the need for validation with larger datasets. This transparency about limitations is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "605d3079-c13e-4974-84a6-4d27a851529a",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study employed improved methodological approaches including sex-specific qRT-PCR markers (Pfs25 for females, PfMGET for males), automated nucleic acid extraction, and separate standard curves for male and female gametocytes, representing a considerable improvement over previous methods that used manual extraction and mixed-sex standards.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55, C63-C65, and C99-C110 describe methodological improvements with appropriate citations to validate the approaches. The comparison to previous methods (C54, C55) is supported by citations, and the technical details are sufficiently described for reproducibility. The use of transgenic parasites for standard curves (C108, C109) and validation by antibody staining adds rigor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "b1217bab-c036-497e-9eae-66df8ad6822c",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The gametocyte density-transmission relationship is adequately described by a simple saturating curve rather than a complex double-plateau model, suggesting that interventions reducing gametocyte density would impact transmission across the entire range of field-observed densities, with even partially effective gametocytocidal drugs predicted to reduce transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C62 present a major reinterpretation of the transmission relationship with important implications for intervention strategies. The simplified model is supported by statistical comparison (C57) and contrasts with previous work (C58-C59). The predictions about intervention effects (C60-C62) are logical inferences from the model, though they remain theoretical predictions requiring validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "6b7f32ac-e754-43fa-a93f-6e13d1c0c3a3",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Male gametocyte density may become a limiting factor for transmission at low gametocyte densities, as models incorporating male density constraints fit better than total gametocyte density models, though this association requires confirmation in future studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66-C67 and C70 present an important mechanistic hypothesis supported by model comparison, but the authors appropriately acknowledge this needs confirmation (C67). The evidence is suggestive but not definitive, as alternative explanations (improved precision from combining measures) cannot be fully excluded. The call for future validation studies is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "964e1fd6-5e33-41e1-a486-52173bdfd24e",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The negative association between male gametocyte proportion and total density may reflect fertility assurance strategies, consistent with in vitro findings in multiple Plasmodium species showing higher male proportions improve transmission at low densities but reduce it at high densities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69, C71, C16, and C20 connect the observed sex ratio patterns to evolutionary theory (fertility assurance) and cite supporting in vitro evidence from multiple species. The interpretation is reasonable and well-supported by citations, though it remains somewhat speculative regarding the adaptive significance in natural infections.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "5ec51de7-93dd-4ddc-9996-544bcc6ab474",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "While the model considerably improved predictions compared to previous work, uncertainty remains with several plausible explanations including transmission-reducing immunity, mosquito-parasite compatibility, gametocyte maturity timing, and RNA degradation, though the latter was not evident in quality control analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C85 provide a balanced discussion of model limitations and potential confounders. The authors appropriately acknowledge uncertainty (C73) and propose multiple plausible mechanisms (C74-C83) while providing evidence against some concerns (C84-C85). The caution about small sample sizes at some sites (C79) is appropriate. This transparent discussion of limitations strengthens rather than weakens the overall work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "751569a6-ce10-4eb1-abad-5ae88b8025f8",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Statistical analysis employed Bayesian hierarchical models with simultaneous fitting of measurement uncertainty and transmission relationships, comparing multiple functional forms using DIC for model selection, with binomial error structure for infection prevalence and negative binomial for oocyst counts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C111-C118 describe appropriate statistical methods with clear rationale. The Bayesian approach allowing simultaneous fitting of measurement error and transmission models (C115-C116) is methodologically sound. Model comparison using DIC (C117) is appropriate, and the choice of error structures (binomial for prevalence, negative binomial for overdispersed counts) is statistically justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "63d3db62-dce3-4c2b-b2c6-48dfb43b6cd2",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Previous comprehensive characterization of the gametocyte density-mosquito infection relationship used molecular tools that only quantified female-specific Pfs25 mRNA and relied on trendlines with unknown sex ratios, potentially affecting precision.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C10 accurately characterize limitations of prior work (Churcher et al., 2013) based on recent evidence about the sex-specificity of Pfs25. The criticism is supported by appropriate citations (C9) and provides clear motivation for the current study's methodological improvements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "8dc21e70-89c0-4cc9-b571-dfc65d3798e9",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study demonstrates that the relationship between gametocyte density and mosquito infection is simpler than previously thought and depends on both female and male parasite density, with accurate sex-specific measurements enabling better prediction of human-to-mosquito transmission and potential assessment of population infectiousness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C6, C89-C90 summarize the main findings supported by the experimental data and modeling results. These claims are well-supported by the 148 feeding experiments and statistical analyses presented. The conclusion about improved prediction (C89) is validated by model comparisons, though the application to population assessment (C90) is more speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    },
+    {
+      "id": "740a4c4d-0e24-487c-82c2-89a21dda1449",
+      "content_id": "fa564d37-fcba-4a79-9d95-f6e83d9a3b65",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Gametocyte sex ratio is theoretically important for transmission efficiency and varies between and within infections, potentially influenced by immune responses and density-dependent factors, though direct epidemiological evidence for its importance was previously lacking. Understanding these relationships is relevant for malaria control efforts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C23 and C88 provide appropriate background context supported by multiple citations. The acknowledgment that direct epidemiological evidence was lacking (C18) appropriately motivates the current study. The relevance to malaria control (C88) is supported by citations and provides clear public health context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:52:25.484193Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3a8db80c-0be6-4174-b737-3d31c4c28604",
+      "result_id": "eb778950-65fe-430f-a551-889ca937171b"
+    },
+    {
+      "claim_id": "bc657aea-c088-4c06-a520-69759cfb6d50",
+      "result_id": "eb778950-65fe-430f-a551-889ca937171b"
+    },
+    {
+      "claim_id": "77d6c6c3-79da-4501-a46b-cfaec5661816",
+      "result_id": "eb778950-65fe-430f-a551-889ca937171b"
+    },
+    {
+      "claim_id": "94fa5734-b85c-4007-b2ff-e905dcf95c8d",
+      "result_id": "eb778950-65fe-430f-a551-889ca937171b"
+    },
+    {
+      "claim_id": "61a14eed-ba11-4dfe-97be-ae80873a69d9",
+      "result_id": "eb778950-65fe-430f-a551-889ca937171b"
+    },
+    {
+      "claim_id": "71f0541b-0227-42de-9822-3ebb1eaf1461",
+      "result_id": "eb778950-65fe-430f-a551-889ca937171b"
+    },
+    {
+      "claim_id": "040b8b5c-5a39-4793-89bd-e5a9a0d70af8",
+      "result_id": "eb778950-65fe-430f-a551-889ca937171b"
+    },
+    {
+      "claim_id": "51801f3f-2f5d-4f41-976f-c7b00e0d9a30",
+      "result_id": "eb778950-65fe-430f-a551-889ca937171b"
+    },
+    {
+      "claim_id": "1a3bfef7-f072-4189-b4b4-191daa95d18a",
+      "result_id": "eb778950-65fe-430f-a551-889ca937171b"
+    },
+    {
+      "claim_id": "ae28afcb-9234-4c52-8310-832e7480776e",
+      "result_id": "eb778950-65fe-430f-a551-889ca937171b"
+    },
+    {
+      "claim_id": "af7bfdd1-3ef6-4a2e-8e6f-3060e9fb4080",
+      "result_id": "eb778950-65fe-430f-a551-889ca937171b"
+    },
+    {
+      "claim_id": "7ea1a896-0c3f-476e-a27a-047e99383bcc",
+      "result_id": "eb778950-65fe-430f-a551-889ca937171b"
+    },
+    {
+      "claim_id": "46b66b52-d2c8-44f9-9455-aa10017254b8",
+      "result_id": "eb778950-65fe-430f-a551-889ca937171b"
+    },
+    {
+      "claim_id": "af806f54-3adc-48a0-a81c-a987de20ab92",
+      "result_id": "eb778950-65fe-430f-a551-889ca937171b"
+    },
+    {
+      "claim_id": "a7d6e3cb-de2e-4cd7-8478-559d7d21f213",
+      "result_id": "eb778950-65fe-430f-a551-889ca937171b"
+    },
+    {
+      "claim_id": "00bd04e9-f7ae-4c75-8469-555eed82f301",
+      "result_id": "eb778950-65fe-430f-a551-889ca937171b"
+    },
+    {
+      "claim_id": "27c47b87-2e35-49a6-afe7-95e152d0eefa",
+      "result_id": "eb778950-65fe-430f-a551-889ca937171b"
+    },
+    {
+      "claim_id": "034c2b5f-280d-49bd-abce-22acff2c53ab",
+      "result_id": "eb778950-65fe-430f-a551-889ca937171b"
+    },
+    {
+      "claim_id": "06e1c510-fb5a-4e64-9b1a-e0a0a19a2f28",
+      "result_id": "eb778950-65fe-430f-a551-889ca937171b"
+    },
+    {
+      "claim_id": "194fd12b-f3a6-4ac2-bdae-821993942c91",
+      "result_id": "84af94fc-9148-403f-93ad-bfddae7dea83"
+    },
+    {
+      "claim_id": "a68167fa-1082-43f9-8cb8-30e46dfcef01",
+      "result_id": "84af94fc-9148-403f-93ad-bfddae7dea83"
+    },
+    {
+      "claim_id": "0475cfff-ce1a-43b6-ac90-694053adf5e5",
+      "result_id": "84af94fc-9148-403f-93ad-bfddae7dea83"
+    },
+    {
+      "claim_id": "2e21c25c-67fb-4954-bbcb-f773b0409e2c",
+      "result_id": "84af94fc-9148-403f-93ad-bfddae7dea83"
+    },
+    {
+      "claim_id": "919dc0f1-ffc9-47c8-acbf-23aadf3a6c25",
+      "result_id": "84af94fc-9148-403f-93ad-bfddae7dea83"
+    },
+    {
+      "claim_id": "6113736e-f8e4-4be0-bca4-f999c7a173fa",
+      "result_id": "b6ed4483-07e9-40c2-a005-5981dbedba12"
+    },
+    {
+      "claim_id": "25cc33ed-f3cd-4877-825d-467e5f8c2dd2",
+      "result_id": "b6ed4483-07e9-40c2-a005-5981dbedba12"
+    },
+    {
+      "claim_id": "530e59b3-f54b-4f2e-911b-a4156d758e01",
+      "result_id": "b6ed4483-07e9-40c2-a005-5981dbedba12"
+    },
+    {
+      "claim_id": "bf3854cb-e2e5-4792-8605-89fb60cfd665",
+      "result_id": "b6ed4483-07e9-40c2-a005-5981dbedba12"
+    },
+    {
+      "claim_id": "5b923d59-fcce-4af3-97a0-b2f6996f7389",
+      "result_id": "b6ed4483-07e9-40c2-a005-5981dbedba12"
+    },
+    {
+      "claim_id": "01a4bb37-7803-4052-9076-10f9e75bd99d",
+      "result_id": "b6ed4483-07e9-40c2-a005-5981dbedba12"
+    },
+    {
+      "claim_id": "8c2ff65b-35c6-4d46-9371-fb13d0391697",
+      "result_id": "b6ed4483-07e9-40c2-a005-5981dbedba12"
+    },
+    {
+      "claim_id": "3a8e753c-04e0-440e-8220-eea47e3cc376",
+      "result_id": "b6ed4483-07e9-40c2-a005-5981dbedba12"
+    },
+    {
+      "claim_id": "788844ed-babd-4a05-b239-6812970d3815",
+      "result_id": "b6ed4483-07e9-40c2-a005-5981dbedba12"
+    },
+    {
+      "claim_id": "33bb9210-4364-4f38-9872-61e55f105c72",
+      "result_id": "b6ed4483-07e9-40c2-a005-5981dbedba12"
+    },
+    {
+      "claim_id": "a5fcef2e-19ec-4995-9b9f-85d16fae24cd",
+      "result_id": "f7559e77-28d0-40ae-a112-58adaa770bd4"
+    },
+    {
+      "claim_id": "c5925485-c8ec-41b5-91ac-29902b8a8a2e",
+      "result_id": "f7559e77-28d0-40ae-a112-58adaa770bd4"
+    },
+    {
+      "claim_id": "85f6cf58-69ee-47b7-ab1b-56429dd08f70",
+      "result_id": "f7559e77-28d0-40ae-a112-58adaa770bd4"
+    },
+    {
+      "claim_id": "88592187-3071-4a82-9742-a35139d4d464",
+      "result_id": "f7559e77-28d0-40ae-a112-58adaa770bd4"
+    },
+    {
+      "claim_id": "0df84ddd-1769-42d0-8c26-f96ef8bc215d",
+      "result_id": "f7559e77-28d0-40ae-a112-58adaa770bd4"
+    },
+    {
+      "claim_id": "29485aa4-53cd-4db1-9255-a4b3f5b4d4f6",
+      "result_id": "605d3079-c13e-4974-84a6-4d27a851529a"
+    },
+    {
+      "claim_id": "df70b5aa-0779-45fb-aaa1-3c7843373deb",
+      "result_id": "605d3079-c13e-4974-84a6-4d27a851529a"
+    },
+    {
+      "claim_id": "43c63825-03ea-42e1-83f4-a05c5fdb90f2",
+      "result_id": "605d3079-c13e-4974-84a6-4d27a851529a"
+    },
+    {
+      "claim_id": "6abba3dd-3fab-4bee-9cd2-7d269bebf83c",
+      "result_id": "605d3079-c13e-4974-84a6-4d27a851529a"
+    },
+    {
+      "claim_id": "50e8a2f4-91b7-4f9c-9d74-9f3b15b57a1e",
+      "result_id": "605d3079-c13e-4974-84a6-4d27a851529a"
+    },
+    {
+      "claim_id": "3f5dcd6c-d35c-4217-b7be-da2e317c3867",
+      "result_id": "605d3079-c13e-4974-84a6-4d27a851529a"
+    },
+    {
+      "claim_id": "39606a78-2cd1-4cc9-9c47-0da5e1500118",
+      "result_id": "605d3079-c13e-4974-84a6-4d27a851529a"
+    },
+    {
+      "claim_id": "f63b5748-bff0-443f-9d4f-58c37d44009b",
+      "result_id": "605d3079-c13e-4974-84a6-4d27a851529a"
+    },
+    {
+      "claim_id": "681be73a-bda8-4e86-bbcb-17990152d6e5",
+      "result_id": "605d3079-c13e-4974-84a6-4d27a851529a"
+    },
+    {
+      "claim_id": "bf4b1166-71a5-4f63-bd73-c97544623fcd",
+      "result_id": "605d3079-c13e-4974-84a6-4d27a851529a"
+    },
+    {
+      "claim_id": "c6fb3f69-60fc-4c5d-88e2-0e63cfcc2e68",
+      "result_id": "605d3079-c13e-4974-84a6-4d27a851529a"
+    },
+    {
+      "claim_id": "f66b848d-51bd-4ba2-a5fe-e79ce0391c97",
+      "result_id": "605d3079-c13e-4974-84a6-4d27a851529a"
+    },
+    {
+      "claim_id": "7852c99c-79fe-4625-bf3f-8ec9867a13b5",
+      "result_id": "605d3079-c13e-4974-84a6-4d27a851529a"
+    },
+    {
+      "claim_id": "52e8665b-9fe7-4dfd-b07a-93d0b0f34c5c",
+      "result_id": "605d3079-c13e-4974-84a6-4d27a851529a"
+    },
+    {
+      "claim_id": "423ce05d-40b7-4d49-b4aa-ed2a1d9c74cb",
+      "result_id": "605d3079-c13e-4974-84a6-4d27a851529a"
+    },
+    {
+      "claim_id": "c5f2cce3-d8a9-42cc-9abd-3053df2db9b9",
+      "result_id": "605d3079-c13e-4974-84a6-4d27a851529a"
+    },
+    {
+      "claim_id": "c4bdf5d8-5eb3-44b2-97ce-a30fb86f39d9",
+      "result_id": "605d3079-c13e-4974-84a6-4d27a851529a"
+    },
+    {
+      "claim_id": "33ee58ed-2680-45de-923c-615f6b81aba4",
+      "result_id": "605d3079-c13e-4974-84a6-4d27a851529a"
+    },
+    {
+      "claim_id": "526c310a-4c55-4652-84e6-94fd2261d6f3",
+      "result_id": "605d3079-c13e-4974-84a6-4d27a851529a"
+    },
+    {
+      "claim_id": "bfc74663-61fa-4d44-aaa3-9959c18a8ebd",
+      "result_id": "b1217bab-c036-497e-9eae-66df8ad6822c"
+    },
+    {
+      "claim_id": "30d5d9a6-d569-4a68-b408-cbb358db5566",
+      "result_id": "b1217bab-c036-497e-9eae-66df8ad6822c"
+    },
+    {
+      "claim_id": "1046217f-bd59-4e92-8804-2caed1f60e9d",
+      "result_id": "b1217bab-c036-497e-9eae-66df8ad6822c"
+    },
+    {
+      "claim_id": "3bfa9869-973a-4879-a98a-ab9b9644a20b",
+      "result_id": "b1217bab-c036-497e-9eae-66df8ad6822c"
+    },
+    {
+      "claim_id": "882b88f8-d76b-4023-b897-168d3008016f",
+      "result_id": "b1217bab-c036-497e-9eae-66df8ad6822c"
+    },
+    {
+      "claim_id": "a8af628d-53e5-4846-9802-ee2c0f542c8f",
+      "result_id": "b1217bab-c036-497e-9eae-66df8ad6822c"
+    },
+    {
+      "claim_id": "5d3374ce-1bc5-4366-a784-a0ce3c03aed4",
+      "result_id": "b1217bab-c036-497e-9eae-66df8ad6822c"
+    },
+    {
+      "claim_id": "0c672e06-7dcb-4ff9-a852-2a626d37169c",
+      "result_id": "6b7f32ac-e754-43fa-a93f-6e13d1c0c3a3"
+    },
+    {
+      "claim_id": "f90533af-e110-4e95-999b-2ccc07aa2d3d",
+      "result_id": "6b7f32ac-e754-43fa-a93f-6e13d1c0c3a3"
+    },
+    {
+      "claim_id": "f67e34ff-11cf-40e5-a7e7-fd6bfa13e13b",
+      "result_id": "6b7f32ac-e754-43fa-a93f-6e13d1c0c3a3"
+    },
+    {
+      "claim_id": "7eb30ed6-5971-4454-bb20-bb87d7170bd4",
+      "result_id": "964e1fd6-5e33-41e1-a486-52173bdfd24e"
+    },
+    {
+      "claim_id": "28985643-fd3e-4d19-b60f-a0c2d72ddf0d",
+      "result_id": "964e1fd6-5e33-41e1-a486-52173bdfd24e"
+    },
+    {
+      "claim_id": "46e412bc-955a-48a0-8b10-9af141edd7af",
+      "result_id": "964e1fd6-5e33-41e1-a486-52173bdfd24e"
+    },
+    {
+      "claim_id": "ecf8e5e7-685d-49a8-b9f6-120cbb2c43b3",
+      "result_id": "964e1fd6-5e33-41e1-a486-52173bdfd24e"
+    },
+    {
+      "claim_id": "da353a89-0e67-404c-bde2-cd23696755f9",
+      "result_id": "5ec51de7-93dd-4ddc-9996-544bcc6ab474"
+    },
+    {
+      "claim_id": "e8c9c2cb-140a-4928-9895-a537a8dab4e0",
+      "result_id": "5ec51de7-93dd-4ddc-9996-544bcc6ab474"
+    },
+    {
+      "claim_id": "3cf769fe-a897-4ba3-a27d-9ac42cd07785",
+      "result_id": "5ec51de7-93dd-4ddc-9996-544bcc6ab474"
+    },
+    {
+      "claim_id": "c6d332b2-388a-478d-84d2-d5ab2e27e9dd",
+      "result_id": "5ec51de7-93dd-4ddc-9996-544bcc6ab474"
+    },
+    {
+      "claim_id": "357d6449-9ec3-4bd6-807f-b2b7f75b7738",
+      "result_id": "5ec51de7-93dd-4ddc-9996-544bcc6ab474"
+    },
+    {
+      "claim_id": "0f50f57e-36c7-40ee-ab3a-1f4025d38b33",
+      "result_id": "5ec51de7-93dd-4ddc-9996-544bcc6ab474"
+    },
+    {
+      "claim_id": "a92fbb17-274e-42df-a5fa-592bc0db77e1",
+      "result_id": "5ec51de7-93dd-4ddc-9996-544bcc6ab474"
+    },
+    {
+      "claim_id": "00c8cae6-de28-428d-9673-b1a853a1cc14",
+      "result_id": "5ec51de7-93dd-4ddc-9996-544bcc6ab474"
+    },
+    {
+      "claim_id": "3ce63334-0c04-4a07-a498-14bf972d1170",
+      "result_id": "5ec51de7-93dd-4ddc-9996-544bcc6ab474"
+    },
+    {
+      "claim_id": "e4d1d3b2-d8ad-46c1-aff0-fb964958a360",
+      "result_id": "5ec51de7-93dd-4ddc-9996-544bcc6ab474"
+    },
+    {
+      "claim_id": "3d6faa65-09df-4b96-8fe9-6756e07c3515",
+      "result_id": "5ec51de7-93dd-4ddc-9996-544bcc6ab474"
+    },
+    {
+      "claim_id": "bd051241-4efe-4ab2-b3d6-53279901eee1",
+      "result_id": "5ec51de7-93dd-4ddc-9996-544bcc6ab474"
+    },
+    {
+      "claim_id": "4c4abb8d-981d-41c3-a969-9606ed60f0f6",
+      "result_id": "5ec51de7-93dd-4ddc-9996-544bcc6ab474"
+    },
+    {
+      "claim_id": "ecb56fc1-7858-4c27-85df-1c459a3f48d9",
+      "result_id": "5ec51de7-93dd-4ddc-9996-544bcc6ab474"
+    },
+    {
+      "claim_id": "5425bdd4-3b0d-483a-99db-4f0d2c31dbd5",
+      "result_id": "751569a6-ce10-4eb1-abad-5ae88b8025f8"
+    },
+    {
+      "claim_id": "2b2927c7-3919-4b1c-806c-54361f4cda04",
+      "result_id": "751569a6-ce10-4eb1-abad-5ae88b8025f8"
+    },
+    {
+      "claim_id": "f35ee6b1-293b-4d7d-971b-fb8139f5f72e",
+      "result_id": "751569a6-ce10-4eb1-abad-5ae88b8025f8"
+    },
+    {
+      "claim_id": "b2fba92e-5e4a-4afd-876f-3058b69460cb",
+      "result_id": "751569a6-ce10-4eb1-abad-5ae88b8025f8"
+    },
+    {
+      "claim_id": "49ee0842-70ba-420c-8209-487839258650",
+      "result_id": "751569a6-ce10-4eb1-abad-5ae88b8025f8"
+    },
+    {
+      "claim_id": "bec35553-17b0-4bcf-9116-3c229a74c685",
+      "result_id": "751569a6-ce10-4eb1-abad-5ae88b8025f8"
+    },
+    {
+      "claim_id": "e7f86125-16b3-4378-8ac3-4c2f8e3071e0",
+      "result_id": "751569a6-ce10-4eb1-abad-5ae88b8025f8"
+    },
+    {
+      "claim_id": "e1555602-2a93-45a0-b024-d765c07bc3ca",
+      "result_id": "751569a6-ce10-4eb1-abad-5ae88b8025f8"
+    },
+    {
+      "claim_id": "1d8b5689-c34d-4776-ab70-010df3fb7eff",
+      "result_id": "63d3db62-dce3-4c2b-b2c6-48dfb43b6cd2"
+    },
+    {
+      "claim_id": "7f84f08c-0ac6-4978-850f-b4f42647015e",
+      "result_id": "63d3db62-dce3-4c2b-b2c6-48dfb43b6cd2"
+    },
+    {
+      "claim_id": "c8bca3e5-cd2b-477f-b979-d3569ec9a428",
+      "result_id": "63d3db62-dce3-4c2b-b2c6-48dfb43b6cd2"
+    },
+    {
+      "claim_id": "59d16a40-459b-433c-8d39-fb607c10e723",
+      "result_id": "63d3db62-dce3-4c2b-b2c6-48dfb43b6cd2"
+    },
+    {
+      "claim_id": "f06dfa9c-300d-4e1e-92b8-4259f7dba948",
+      "result_id": "8dc21e70-89c0-4cc9-b571-dfc65d3798e9"
+    },
+    {
+      "claim_id": "486d06f2-e8ed-4ce8-8528-a53c845598bc",
+      "result_id": "8dc21e70-89c0-4cc9-b571-dfc65d3798e9"
+    },
+    {
+      "claim_id": "aeacca3b-1a6e-4b0e-8a03-84e8eb56f486",
+      "result_id": "8dc21e70-89c0-4cc9-b571-dfc65d3798e9"
+    },
+    {
+      "claim_id": "5061e8a1-4c29-4036-9a26-5e54122e91d6",
+      "result_id": "8dc21e70-89c0-4cc9-b571-dfc65d3798e9"
+    },
+    {
+      "claim_id": "24a19159-63a6-406a-b19b-86084ddfc3c2",
+      "result_id": "8dc21e70-89c0-4cc9-b571-dfc65d3798e9"
+    },
+    {
+      "claim_id": "c6f0e3ec-be4f-4b0d-9975-26dc56b6bbf2",
+      "result_id": "8dc21e70-89c0-4cc9-b571-dfc65d3798e9"
+    },
+    {
+      "claim_id": "d29c6111-1268-400f-bbc2-68e9e78a2770",
+      "result_id": "8dc21e70-89c0-4cc9-b571-dfc65d3798e9"
+    },
+    {
+      "claim_id": "72544b2e-01e1-482c-96d3-8fc334df4916",
+      "result_id": "740a4c4d-0e24-487c-82c2-89a21dda1449"
+    },
+    {
+      "claim_id": "18571dc8-6bdc-4d30-ab71-be9b5509052d",
+      "result_id": "740a4c4d-0e24-487c-82c2-89a21dda1449"
+    },
+    {
+      "claim_id": "f57930ab-8e06-4ae1-a3ce-41c1617bcdc7",
+      "result_id": "740a4c4d-0e24-487c-82c2-89a21dda1449"
+    },
+    {
+      "claim_id": "9b4af0ef-8213-4a9b-8e97-8dd67d1a6854",
+      "result_id": "740a4c4d-0e24-487c-82c2-89a21dda1449"
+    },
+    {
+      "claim_id": "bfb9f880-a743-4ead-abcd-dcfc78702cab",
+      "result_id": "740a4c4d-0e24-487c-82c2-89a21dda1449"
+    },
+    {
+      "claim_id": "f294e141-04bd-4df3-a37e-f2742a498504",
+      "result_id": "740a4c4d-0e24-487c-82c2-89a21dda1449"
+    },
+    {
+      "claim_id": "ae4be62f-21cb-44af-bb05-2ec5194d2c90",
+      "result_id": "740a4c4d-0e24-487c-82c2-89a21dda1449"
+    },
+    {
+      "claim_id": "7a63ed27-2962-4335-bc32-fe02fbe26202",
+      "result_id": "740a4c4d-0e24-487c-82c2-89a21dda1449"
+    },
+    {
+      "claim_id": "1b677e4a-3db1-44d2-b275-0586cf47ce05",
+      "result_id": "740a4c4d-0e24-487c-82c2-89a21dda1449"
+    },
+    {
+      "claim_id": "368cf8f5-d74f-4fa5-8779-a200f8a315b4",
+      "result_id": "740a4c4d-0e24-487c-82c2-89a21dda1449"
+    },
+    {
+      "claim_id": "c7086570-fffb-414d-bc9b-865485107d0b",
+      "result_id": "740a4c4d-0e24-487c-82c2-89a21dda1449"
+    },
+    {
+      "claim_id": "148aa2ac-88b6-4a8e-9190-c4f72590fd6b",
+      "result_id": "740a4c4d-0e24-487c-82c2-89a21dda1449"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,850 @@
+{
+  "submission": {
+    "id": "9de18c32-b5b8-4d9a-81d5-64b43e3e6bbf",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T18:57:35.926975Z",
+    "updated_at": "2025-12-01T18:57:35.926975Z"
+  },
+  "content": [
+    {
+      "id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "submission_id": "9de18c32-b5b8-4d9a-81d5-64b43e3e6bbf",
+      "content_type": "manuscript",
+      "content_text": "# Microbial consortia at steady supply\n\n## Authors\n\n- Thibaud Taillefumier<sup>1</sup> ([ORCID: 0000-0003-3538-6882](https://orcid.org/0000-0003-3538-6882))\n- Anna Posfai<sup>1</sup>\n- Yigal Meir<sup>4</sup>\n- Ned S Wingreen<sup>1</sup> ([ORCID: 0000-0001-7384-2821](https://orcid.org/0000-0001-7384-2821)) \u2020\n\n### Affiliations\n\n1. Lewis-Sigler Institute for Integrative Genomics Princeton University Princeton United States\n2. Department of Mathematics The University of Texas at Austin Austin United States\n3. Department of Neuroscience The University of Texas at Austin Austin United States\n4. Department of Physics Ben-Gurion University of the Negev Beer Sheva Israel\n5. Department of Molecular Biology Princeton University Princeton United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMetagenomics has revealed hundreds of species in almost all microbiota. In a few well-studied cases, microbial communities have been observed to coordinate their metabolic fluxes. In principle, microbes can divide tasks to reap the benefits of specialization, as in human economies. However, the benefits and stability of an economy of microbial specialists are far from obvious. Here, we physically model the population dynamics of microbes that compete for steadily supplied resources. Importantly, we explicitly model the metabolic fluxes yielding cellular biomass production under the constraint of a limited enzyme budget. We find that population dynamics generally leads to the coexistence of different metabolic types. We establish that these microbial consortia act as cartels, whereby population dynamics pins down resource concentrations at values for which no other strategy can invade. Finally, we propose that at steady supply, cartels of competing strategies automatically yield maximum biomass, thereby achieving a collective optimum.\n\n## Introduction\n\nMicrobial diversity is ubiquitous. Every gram of soil or liter of seawater contains hundreds or more microbial species (Daniel, 2005). In humans, the gut microbiome comprises at least $500$ microbial species (Lozupone et al., 2012). These diverse microbial communities are widely credited with division of labor, collectively reaping the benefits of specialization by dividing tasks among different organisms. In a few well-studied cases, microbial communities have been observed to coordinate their metabolic fluxes. For instance, depleting the pool of external resources available to a microbial community can lead to the establishment of mutualism via the exchange of metabolic by-products between species (Hillesland and Stahl, 2010). Shotgun sequencing has begun to unveil the biochemical networks at work in complex environmentally sampled communities (Tyson et al., 2004; Gill et al., 2006), and reconstructing the genomes of member species suggests that microbial communities exploit metabolic interdependencies to adapt to their environment (Wrighton et al., 2014; Hug et al., 2015). However, the lack of knowledge about gene functions and gene distributions in individual cells hinders the interpretation of this data (Cordero and Polz, 2014).\n\nThere are also serious conceptual challenges to understanding diversity in metabolically competing microbial communities. For instance, the emergence of diversity in \u2018consumer-resource\u2019 models is limited by the competitive exclusion principle: at stationary state, the number of coexisting species cannot exceed the number of available resources (Hardin, 1960; Levin and Equilibria, 1970). This principle severely limits diversity in models that consider a few resources as in the case of the \u2018paradox of the plankton\u2019 (Petersen, 1975). Another essential challenge is understanding the persistence of microbial diversity in the face of potentially more fit metabolic variants; these reinforce the challenge posed by the competitive exclusion principle: in consumer-resource models, a fitter strain colonizes a niche at the expense of those already present by depleting the pool of essential resources, generally leading to a collapse in diversity (Shoresh et al., 2008).\n\nThe above conceptual challenges call for a physically-based model for competing metabolic strategies. However, classical consumer-resource models generally prescribe the rate of biomass production via phenomenological functions of the abundances of essential resources without explicit conservation of fluxes (Liebig, 1840; Monod, 1950). Here, we introduce a flux-conserving physical model for microbial biomass production to address two intertwined questions: Can metabolic competition leads to microbial division of labor? And what efficiencies can microbes achieve via such a division of labor?\n\nConsidering that biomass (primarily protein [Simon and Azam, 1989; Feij\u00f3 Delgado et al., 2013]) results from the assembly of building blocks (amino acids or amino acid precursors), we explicitly model the fluxes associated with the metabolic processing of these building blocks, including enzyme-mediated import and conversion (Almaas et al., 2004). Different metabolic strategies \u2014 or cell types \u2014 are defined by specific distributions of these enzymes, which collectively satisfy a budget constraint. The population dynamics of different cell types is governed by competition for external building blocks that are steadily supplied in a spatially homogeneous environment. We consider that the system is constantly subjected to colonization attempts by other cell types, possibly leading to invasion of the already present microbial population. For fixed external concentrations of building blocks we therefore seek uninvadable strategies, i.e. optimal cell types that achieve the fastest possible growth rate. Metabolic division of labor stably emerges if competitive population dynamics leads to the coexistence of jointly optimal cell types with distinct strategies, which we refer to as a microbial \u2018consortium\u2019.\n\nIn human economies, consortia that avoid competition by controlling prices are called \u2018cartels\u2019. At fixed building-block supply, we find that metabolic competition between microbes similarly leads to the emergence of a kind of cartel that controls resource availability via population dynamics. Specifically, cartels avoid competition by pinning down resource concentrations at values for which no other strategy can outcompete the cartel\u2019s members. We employ optimization principles from transport-network theory to elucidate the structure of these cartels, relating the metabolic strategies of their constituent cell types to the hierarchy of external building-block availabilities. This analysis illustrates how division of labor among distinct metabolic types can be predicted from optimization principles. Finally, we propose that cartels also yield maximum biomass, constituting a microbial example of Adam Smith\u2019s \u2018invisible hand\u2019 leading to collective optimal usage of resources. In this regard, microbial cartels improve on human cartels insofar as price-fixing by the latter generally leads to non-optimal use of resources.\n\n### Model\n\nIn this section, we present a model for the population dynamics of cell types metabolically competing for external resources (see Figure 1). Importantly, biomass production is governed by a physical model that respects flux conservation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/22644/elife-22644-fig1-v1.jpg)\n\n**Figure 1.:** (A) The rate of biomass production $g\u2062(c_{1},\u2026,c_{p})$ is a function of the internal building-block concentrations. (B) Biologically relevant growth-rate functions $g\u2062(c_{1},\u2026,c_{p})$ are increasing with respect to $c_{i}$ with diminishing returns. (C) Different cell types, i.e. metabolic strategies, are defined as specific distributions of enzymes for import $\\alpha_{i}$ and conversion $\u03ba_{j\u2062i}$, subject to a finite budget. (D) Cell types (e.g. $\\sigma_{1}$ and $\\sigma_{2}$) compete for external building blocks that are steadily and homogeneously supplied in volume $V$.\n\n#### Resource-limited growth model\n\nAs cellular growth is primarily due to protein biosynthesis, we consider biomass production to result from the incorporation of building blocks (amino acids or amino acid precursors) into biologically functional units (proteins). Specifically, we assume that biomass production requires $p$ types of building blocks and we denote by $b_{i}$, $1\\leqi\\leqp$, the concentration of block $i$ in cellular biomass. To maintain the stoichiometry of building blocks in biomass, microbes that grow at rate $g$ incorporate block $i$ at rate $g\u2062b_{i}$. As the incorporation of building blocks is limited by the internal availability of free building blocks, we model the growth rate as a function $g\u2062(c_{1},\u2026,c_{p})$, where $c_{i}$ is the internal concentration of block $i$. To obtain a plausible functional form for $g\u2062(c_{1},\u2026,c_{p})$, we consider the rate of incorporation of a building block to be proportional to its concentration. We also consider that building blocks are sequentially incorporated into biomass (e.g. via protein elongation). Then the time to produce a unit of biomass (e.g. a protein) is the sum of the incorporation times for each type of block $i$, which we take to be proportional to $b_{i}/c_{i}$, the ratio of the building-block concentration in cellular biomass to the internal free building-block concentration. The growth rate, which is proportional to the inverse of this time, therefore has the form\n\n$$\ng(c_{1},\u2026,c_{p})=\\gamma(\\frac{b_{1}}{c_{1}}+\u2026+\\frac{b_{p}}{c_{p}})^{\u22121},\n$$\n\nwhere $\\gamma$ is a rate constant. For simplicity, we consider that all microbes use the same molecular machinery and building-block stoichiometry to produce biomass. Thus, we consider that the rate function $g\u2062(c_{1},\u2026,c_{p})$ is universal, independent of the metabolic strategy used by a microbe to accumulate building blocks. As defined by Equation (1), $g\u2062(c_{1},\u2026,c_{p})$ is an example of a growth-rate function satisfying the biologically relevant requirements that more internal resources yield faster growth, i.e. $g(c_{1},\u2026,c_{p})$ is an increasing function of its arguments, and that the relatively scarcest resources are the most growth-rate limiting, i.e. $g\u2062(c_{1},\u2026,c_{p})$ has the property of diminishing returns. Importantly, our analysis and conclusions hold for all growth-rate functions that satisfy these natural requirements.\n\nIn order to accumulate block $i$ internally, a microbe can import block $i$ from the external medium or produce it internally via conversion of another building block $j$. Thus, to produce biomass, microbes can substitute resources for one another. We allow all possible imports and conversions. The quantitative ability of a microbe to import and convert building blocks constitutes its \u2018metabolic strategy\u2019, and corresponds to the cell\u2019s expression of the enzymes that mediate building-block import and conversion. For simplicity, we assume that metabolic fluxes are linear in both enzyme and substrate concentrations. This assumption corresponds to enzymes operating far from saturation, which is justified during resource-limited growth. Specifically, denoting the external concentration of block $i$ by $c_{i}^{ext}$, the enzyme-mediated fluxes associated with import and conversion of block $i$ have the form $\\alpha_{i}\u2062c_{i}^{ext}$ and $\u03ba_{j\u2062i}\u2062c_{i}$, respectively, where $\\alpha_{i}$ and $\u03ba_{j\u2062i}$ are enzymatic activities, which are proportional to the number of enzymes dedicated to each metabolic process. In addition to these active fluxes, we include passive transport of building blocks across cell membranes via facilitated diffusion (Pi et al., 1991; Wehrmann et al., 1995). For simplicity, we model passive transport via a single leakage rate $\\beta$, yielding a net influx $\\beta\u2062(c_{i}^{ext}-c_{i})$ for building block $i$. As cells can only devote a certain fraction of their resources to the production of enzymes, we require the enzymatic activities of each microbe to satisfy a budget constraint,\n\n$$\n\\sumi\\alpha_{i}+\\sumj,i\u03ba_{j\u2062i}\\leqE,\n$$\n\nwhere $E$ denotes the total enzyme budget. The metabolic strategy of a cell type $\\sigma$ is specified by a set of enzyme activities ${\\alpha_{i,\\sigma},\u03ba_{i\u2062j,\\sigma}}$ that satisfy the budget constraint Equation (2).\n\nNote that for given external building-block concentrations, a cell type is \u2018optimal\u2019, i.e. achieves the fastest growth rate, if no other cell type can achieve the same growth rate with a lower enzyme budget. If such a cell type existed, allocating the saved enzyme budget to importing more building blocks would yield a new cell type with higher internal building-block concentrations, and thereby faster growth.\n\nOur model considers a very simplified coarse-grained description of metabolic pathways. In reality, the details of biochemistry play an important role in determining metabolic efficiency. While our modeling framework can be easily generalized to realistic metabolic networks, capturing the complexity of real metabolic pathways is not the purpose of the present analysis, which aims at general principles. Indeed, because our model is anchored in flux conservation, we expect our results concerning the emergence and benefit of division of labor in microbial communities to hold independent of specific pathway biochemistry.\n\n#### Conservation of building blocks\n\nWe consider various cell types $\\sigma$ growing in a homogeneous environment of volume $V$. We denote the dimensionless population count of cell type $\\sigma$ by $n_{\\sigma}$ and the total population count by $N=\\sum_{\\sigma}n_{\\sigma}$. In the volume $V$, we consider that the $p$ building blocks are steadily supplied at rates $s_{i}$ (concentration/time) and can be lost, e.g. via degradation and/or diffusion out of the volume, at a rate $\\mu$. Each cell type processes building blocks according to its own metabolic strategy. Conservation of internal building block $i$ for cell type $\\sigma$ prescribes the dynamics of the internal concentration $c_{i,\\sigma}$ (see Appendix 1),\n\n$$\nc\u02d9_{i,\\sigma}=(\\alpha_{i}+\\beta)\u2062c_{i}^{ext}-\\beta\u2062c_{i,\\sigma}-\\sumj\\neqi\u03ba_{j\u2062i}\u2062c_{i,\\sigma}+\\sumj\\neqi\u03ba_{i\u2062j}\u2062c_{j,\\sigma}-g\u2062b_{i},\n$$\n\nwhere the only nonlinearity is due to the growth function $g$. Populations of the various cell types exchange building blocks with the external resource pool via import and passive transport, and also via biomass release upon cell death (Simpson et al., 2007; Sch\u00fctze et al., 2013). Conservation of extracellular building block $i$ prescribes the dynamics of the external concentration $c_{i}^{ext}$ (see Appendix 2),\n\n$$\nc\u02d9_{i}^{ext}=s_{i}-\\mu\u2062c_{i}^{ext}-\\frac{v}{V-N\u2062v}\u2062(\\sum\\sigman_{\\sigma}\u2062\u03d5_{i,\\sigma}),\n$$\n\nwith cell-type-specific fluxes\n\n$$\n\u03d5_{i,\\sigma}=(\\alpha_{i,\\sigma}+\\beta)\u2062c_{i}^{ext}-\\beta\u2062c_{i,\\sigma}-f\u2062\\delta\u2062b_{i},\n$$\n\nwhere $\\delta$ is the rate of cell death (assumed constant) and $f$ is the fraction of biomass released upon cell death. Per-cell fluxes $\u03d5_{i,\\sigma}$ contribute to changing the external concentration $c_{i}^{ext}$ via a geometric factor $v/(V-N\u2062v)$, the ratio of the average individual cellular volume $v$ to the total extracellular volume $V-N\u2062v$. As intuition suggests, the smaller the number of cells of a particular type, the less that cell type impacts the shared external concentration via metabolic exchanges.\n\n#### Competitive population dynamics\n\nThe inverse of the cellular death rate $\\delta$, i.e. the lifetime of a cell, is much larger than the timescales associated with metabolic processes such as building-block-diffusion, conversion, and passive/active transport. This separation of timescales justifies a steady-state approximation for the fast-variables: $c\u02d9_{i,\\sigma}=0$ and $c\u02d9_{i}^{ext}=0$. With this approximation, Equations (3) and (4) become flux-balance equations for building blocks. Solving Equation (3) with $c\u02d9_{i,\\sigma}=0$ yields the internal concentrations $c_{i,\\sigma}\u2062(c_{1}^{ext},\u2026,c_{p}^{ext})$ as functions of the external concentrations. In turn, solving Equation (4) with $c\u02d9_{i,\\sigma}=0$ and using the functions $c_{i,\\sigma}\u2062(c_{1}^{ext},\u2026,c_{p}^{ext})$ yields the external concentrations $c_{i}^{ext}\u2062({n_{\\sigma}})$, as well as the growth rates of cell types $g_{\\sigma}\u2062({n_{\\sigma}})$, as functions of the populations of cell types. Hence, the population dynamics of the cell types is described by a system of ordinary differential equations\n\n$$\n\\frac{n\u02d9_{\\sigma}}{n_{\\sigma}}=g_{\\sigma}\u2062({n_{\\sigma}})-\\delta,\n$$\n\nwhich are coupled via the external concentrations. Note that the population dynamics is driven and dissipative: building blocks are constantly both supplied to and lost from the external media, while cell death leads to loss of building blocks because only a fraction of biomass is recycled $(f<1)$. In particular, we expect the dissipative character of the dynamics to drive the microbial population toward a stationary state, with at most $p$ coexisting cell types due to the competitive exclusion principle (Hardin, 1960; Levin and Equilibria, 1970).\n\nThe population dynamics prescribed above can be simulated by standard numerical methods. If the number of distinct strategies initially introduced exceeds the number of resources, then over time some cell types will become \u2018extinct\u2019, i.e. $n_{\\sigma}<1$. We exploit this property to simulate competition between distinct cell types: whenever a cell type $\\sigma$ is driven to extinction, we replace it with another randomly sampled strategy $\\sigma^{\u2032}$ with $n_{\\sigma^{\u2032}}=1$. If the already present cell types are not optimal, newly introduced cell types $\\sigma^{\u2032}$ may increase in population at the expense of those present. In any case, we continue to introduce new cell types over the time course of the dynamics. The closer to optimality the already present cell types are, the smaller the probability that a new random strategy will successfully colonize. Eventually, at long times, the surviving population will consist entirely of optimal cell types and will no longer change. It is this final population that concerns us; we only simulate metabolic competition to gain insight into the final optimized population, which is independent of the specific dynamics of the simulation.\n\nIn the following, we characterize the enzyme distributions ${\\alpha_{i},\u03ba_{i\u2062j}}$ of the cell types that are present in the final population established via competitive population dynamics for equal stoichiometry ($b_{i}=1$). This characterization requires us to define the \u2018metabolic class\u2019 of each cell type in terms of its set of utilized enzymes. In particular, two strategies $\\sigma$ and $\\sigma^{\u2032}$ belong to the same metabolic class $\u2133$ if and only if $\\alpha_{i}=0\u21d4\\alpha_{i}^{\u2032}=0$ and $\u03ba_{i\u2062j}=0\u21d4\u03ba_{i\u2062j}^{\u2032}=0$, where $\\alpha_{i}$, $\\alpha_{i}^{\u2032}$, $\u03ba_{i\u2062j}$, and $\u03ba_{i\u2062j}^{\u2032}$ are enzyme activities. We will show that metabolic competition leads to the emergence of consortia of cell types belonging to specific metabolic classes. In our analysis, the term \u2018consortium\u2019 designates a community of distinct cell types that cannot be invaded, or equivalently, that cannot be outgrown by any other cell types at specific fixed supply rates. In particular, consortia are composed of co-optimal cell types. The term \u2018cartels\u2019 refer to special communities that, in addition of being consortia, can also pin down building-block concentrations at fixed values for a range of different supply rates. Such cartels comprise at least as many distinct cell types as there are resources.\n\n## Results\n\n### Numerical results\n\nIn this section, we demonstrate the possibility of stable coexistence at steady supply rates by simulating competitive population dynamics subject to continual invasion by new metabolic variants. We consider that coexistence is stable when a population of distinct cell types can resist invasion by any other metabolic variants. In our simulations, cell types have distinct metabolic strategies defined by randomly chosen enzyme distributions ${\\alpha_{i}$, $\u03ba_{j\u2062i}}$ satisfying the budget constraint Equation (2), with the universal growth-rate function Equation (1) and uniform biomass stoichiometry ($b_{i}=1$).\n\nFirst, we show that competitive population dynamics with the\u00a0continual introduction of new cell types leads to a stationary state with fixed building-block availability and with fixed populations of distinct cell types. Second, we show that these final cell types achieve optimal growth given the fixed building-block supply rates. Third, we show that final, optimal populations generally consist of consortia of distinct cell types and that a consortium of identical cell types can emerge for different building-block supplies.\n\n#### Competitive dynamics leads to stationary states\n\nWe simulated the population dynamics Equation (6) subjected to continual invasion by metabolic variants and found that metabolic competition leads to stationary states. In our simulations, the volume of the colony V is chosen so that the carrying capacity is \u2248V/v=105 cells and the dynamics is simulated for a duration of 105/\u03b4, i.e. on the order of 105 generations. Figure 2 shows three independent simulations for p=3 and supply rates s1=11,s2=9,s3=0, starting with 24 different initial metabolic strategies for each simulation. While 3 types may coexist for extended periods according to the competitive exclusion principle, the 21 other types have populations n\u03c3 that decay exponentially until extinction, i.e. until n\u03c3\u22640.9999. Upon extinction, a new type is introduced at n\u03c3=1.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/22644/elife-22644-fig2-v1.jpg)\n\n**Figure 2.:** In all panels, the left schematic indicates supply rates, the central plot shows an example of competitive population dynamics, and the right diagram depicts the strategies and their internal building-block per-cell fluxes. The initial strategies and the newly introduced strategies were randomly generated with a different seed in A, B, and C, but for the same supply rates $s_{1}=11,s_{2}=9,s_{3}=0$. In each simulation, the external building-block concentrations quickly converge toward the same specific values, with $c_{1}^{ext}=c_{2}^{ext}>c_{3}^{ext}$. Also in each case, the simulation converges to the coexistence of the same three strategies. The dominant type with a population $\u223c75,000$ has a pure-importer strategy, the two other types convert one of the most abundant blocks (either block $1$ or block $2$) into block $3$ and the strategy converting the most abundantly provided block has the larger population ($\u223c16,500$ vs. $\u223c8,500$). New cell types only manage to invade the already present bacterial population if they are \u2018fitter\u2019 versions of these three specific metabolic types. In particular, a \u2018fitter\u2019 strategy invades the overall population by replacing the already present strategy of the same metabolic type (curve crossings), with little effect on the other metabolic types or on the external building-block concentrations.\n\nTo begin each simulation, the $24$ randomly chosen cell types $\\sigma$ are introduced at low population ($n_{\\sigma}=1$) in the volume $V$ where the\u00a0building blocks are abundantly supplied ($c_{i}^{ext}\u2243s_{i}/\\mu$). Cellular growth quickly depletes the external concentrations of building blocks, until the overall population of cell types nears carrying capacity. At this point, the external building-block concentrations plummet to low values for which the growth rate of each cell type approximates the fixed death rate, i.e. $g_{\\sigma}\u2248\\delta$. This is when metabolic competition begins in earnest. From this point on, in each simulation, the external building-block concentrations tend to the same stationary values, with the two externally provided building blocks $1$ and $2$ stabilizing at numerically identical values and building block $3$ stabilizing at a lower concentration.\n\nAs external building-block concentrations approach their stationary values, virtually all newly introduced metabolic variants quickly become extinct because randomly chosen cell types are unable to compete with those already present. As a result, new cell types are continually introduced, for a total of more than $10^{9}$ different cell types during each simulation. Among these introduced metabolic variants, only a cell type that improves on an already present (nearly optimal) one can invade, and displace the existing cell type. In particular, for each displacement event, we find that the invading and invaded cell types employ almost identical distributions of enzymes and always belong to the same metabolic class. Moreover, during displacement events, the external building-block concentrations are only marginally perturbed, while the overall population of the invaded and invading strategy (e.g. the sum of crossing curves) is nearly constant. This behavior indicates convergence toward a stationary state with fixed building-block availability and with fixed populations of cell types. We confirmed the generality of this convergent behavior with additional simulations over a broad range of different supply rates.\n\n#### Cell types achieve optimal growth at stationary state\n\nOur numerical simulations indicate that competitive population dynamics subjected to continual invasion leads to the emergence of stationary states. To show that these stationary states emerge independently of how metabolic variants are introduced, we developed an iterative optimization algorithm that yields stationary states without relying on random sampling of cell types. Specifically, the algorithm iterates two optimization steps: First, given distinct cell types $\\sigma$, the algorithm implements a Newton-Raphson scheme to compute the steady-state external building-block concentrations $c_{i}^{ext}$ and the steady-state populations $n_{\\sigma}$ within a relative precision $10^{-11}$. Second, given external building-block concentrations $c_{i}^{ext}$, the algorithm adapts a gradient-based constrained-optimization algorithm (W\u00e4chter and Biegler, 2006) to compute the strategies of the cell types $\\sigma^{\u2032}$ which locally optimize cellular growth rate. Provided the growth rate of a locally optimal cell type $\\sigma^{\u2032}$ exceeds the previous steady-state growth rate by a relative difference $g_{\\sigma^{\u2032}}/\\delta-1>\u03f5=10^{-9}$, we initiate a new iteration with a set of starting cell types made of the union of the surviving cell types of the previous iteration ${\\sigma|n_{\\sigma}\\geq1}$ and the newly optimized cell type ${\\sigma^{\u2032}\u2062|g_{\\sigma^{\u2032}}>\u2062\\delta}$ with $n_{\\sigma^{\u2032}}=1$. The algorithm halts when no cell type $\\sigma^{\u2032}$ can grow at a rate that exceeds the steady-state growth rate $\\delta$ by more than a relative difference $\u03f5$, thereby yielding theoretically optimal cell types with high accuracy. By design of the algorithm, the cell types present in the stationary state achieve the optimal growth rate allowed by the external building-block availabilities.\n\nCrucially, for fixed supply rates, this optimization algorithm yields steady-state cell types that are virtually identical to the final cell types obtained via simulations. Moreover, additional simulations show that when present among the initial types, optimal steady-state cell types resist invasion by the more than 109 random metabolic variants introduced over the course of 105 generations. To demonstrate that simulations effectively converge toward optimal stationary states, we define the \u2018relative fitness\u2019 of a cell type \u03c3 as the ratio g\u03c3\u2062(c1ext,\u2026,cpext)/max\u03c3\u2032\u2061g\u03c3\u2032\u2062(c1ext,\u2026,cpext), where \u03c3\u2032 denotes a theoretically optimal cell type. Figure 3 shows the evolution of cell-type relative fitnesses during simulations of competitive dynamics. When metabolic competition begins in earnest, all cell types have relative fitnesses smaller than one, indicating that optimal cell types would grow faster at identical external building-block concentrations. Ensuing displacement events by fitter cell types lead to an overall increase in the relative fitness of the surviving cell types. As a result, the relative fitness of all surviving cell types approaches one, demonstrating the\u00a0convergence toward a stationary population of optimal cell types. Consequently, the final steady-state cell types resist invasion because no metabolic variant can outgrow them.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/22644/elife-22644-fig3-v1.jpg)\n\n**Figure 3.:** In all panels, the top plot shows the same competitive population dynamics on different time scales for $s_{1}=11,s_{2}=9,s_{3}=0$, while the bottom plot shows the corresponding normalized fitness. The normalized fitness of a cell-type $\\sigma$ is defined as the ratio $g_{\\sigma}/max\u2061g_{\\sigma^{\u2032}}$, where $\\sigma^{\u2032}$ are the theoretical steady-state cell types computed via iterative optimization. (A) Before the overall population reaches capacity, cell types can have a fitness larger than one as the external building-block concentrations are substantially higher than their steady-state values. Once competition begins in earnest, all cell types present have a fitness smaller than one, indicating that an optimal cell type would outcompete any present cell for identical external building-block concentrations. (B) On longer timescales, competition between increasingly fit cell types leads to the transient coexistence of $3$ cell types with the same metabolic strategies as in Figure 2. Note that invasions by fitter cell types yield displacement events that increase the fitness of the surviving cell types. (C) On even longer timescales, the fitnesses of surviving cell types converge to one, showing that the final strategies obtained via competitive population dynamics achieve the optimal growth rate.\n\n#### Distinct optimal cell types emerge as consortia\n\nAt steady supply, our numerical simulations together with numerical optimization reveal that competitive population dynamics leads to the stable emergence of optimal cell types. The metabolic strategies of these optimal cell types exhibit network structures that are directly related to external building-block availability. In fact, the building-block supply determines whether many distinct cell types can be jointly optimal, i.e. whether a consortium emerges. For instance, as shown in Figure 4A, if the\u00a0building blocks are supplied with equal stoichiometry (s1=s2=s3), the one survivor is a pure-importer strategy that imports each building block. Because this pure-importer strategy is the single most efficient cell type when building blocks are equally abundant, no other cell type can coexist with it and so no consortium emerges. However, when building blocks are supplied with a different stoichiometry, (e.g. with s3=0 in Figure 4B\u2013D), the pure-importer strategy coexists with other cell types that produce the non-supplied building block by conversion, thereby forming consortia of optimal cell types. The stability and optimality of these consortia is a collective property: No pure-importer strategy can survive without the converting cell types, and without a pure-importer strategy, there is a wasteful external accumulation of converted blocks.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/22644/elife-22644-fig4-v1.jpg)\n\n**Figure 4.:** In all panels, the left schematic indicates supply rates, the central plot shows an example of competitive population dynamics, and the right diagram depicts the final strategies and their internal building-block per-cell fluxes. (A) If the\u00a0building blocks are supplied with equal stoichiometry $s_{1}=s_{2}=s_{3}$, metabolic strategies that carry out conversions are wasteful and a single pure-importer cell type prevails. (B) If two building blocks are supplied with equal stoichiometry, e.g. $s_{1}=s_{2}>0$ and $s_{3}=0$, three cell types can coexist: two \u2018symmetric\u2019 types using supplied blocks as a precursor for block $3$, which accumulates externally due to passive leakage and release upon cell death, and, if $c_{3}^{ext}$ is large enough, a third pure-importer type. (C) For large enough imbalance in the supply of building blocks $1$ and $2$, e.g. $s_{1}>s_{2}>s_{3}=0$, three distinct cell types can coexist: a pure-converter type imports block $1$ and converts blocks $2$ and $3$; if $c_{2}^{ext}$ is large enough, a mixed type emerges, importing blocks $1$ and $2$, and converting $1$ to $3$; and, if $c_{3}^{ext}$ is large enough, a pure-importer type. (D) If only one building block is supplied, e.g. $s_{1}>s_{2}=s_{3}=0$, two strategies coexists: a pure-converter type releases blocks $2$ and $3$, which can lead to the emergence of a pure-importer type. The external building-block concentrations fluctuate, albeit only slightly later in the simulations, due to the invasion by and extinction of metabolic variants.\n\nCan the same metabolic consortia emerge for different building block supplies? To answer this question, observe in Figure 2 that for supply rates $s_{1}=11,s_{2}=9,s_{3}=0$, competition leads to a stationary state where the concentrations of both supplied building blocks are equal. Correspondingly, the optimal cell types have symmetric strategies with respect to the usage of block $1$ and block $2$. However, the cell type that converts the most abundantly supplied block is more numerous than its symmetric counterpart, allowing for a symmetric steady state despite asymmetrical supply. For symmetric supply $s_{1}=s_{2}=10,s_{3}=0$, Figure 4B shows that competition yields the same steady-state external concentrations, but with an equal population of each symmetric converter type. Thus, exactly the same consortium of cell types can emerge for different supply conditions, with different population counts but reaching the same external building-block concentrations. By definition, such consortia are cartels. Figure 4 shows the different consortia that can emerge for representative supply conditions, highlighting which ones are cartels. Both numerical simulations and optimizations confirm that microbial cartels emerge for a large range of supply conditions.\n\n### Analytical results\n\nIn this section, we mathematically elucidate the emergence of microbial consortia at steady state and characterize the benefit of the division of labor in these consortia. Our analysis exploits the demonstrated convergence of competitive population dynamics toward a stationary state, which allows us to analytically derive the metabolic strategies of optimal cell types. The benefit of division of labor among these optimal cell types follows geometrical considerations in the space of stationary states.\n\nFirst, we exploit arguments from transport-network theory to systematically identify the metabolic classes of optimal cell types at steady state. Second, we elucidate the structure of microbial consortia by establishing which metabolic classes can be jointly optimal within a consortium. Third, we characterize the benefit of division of labor showing that consortia can act as cartels, whereby population dynamics pins down resource concentrations at values for which no other strategy can invade.\n\n#### Consortia cell types belong to optimal metabolic classes\n\nA metabolic class is defined as the set of strategies that utilize the same enzymes, i.e. for which a particular subset of enzymes satisfies $\\alpha_{i}>0$ and $\u03ba_{j\u2062i}>0$. In total, there are $p$ import enzymes and $p\u2062(p-1)$ interconversion enzymes, for a total of $p^{2}$ enzymes. Thus, in principle, there are at most $2^{p^{2}}$ metabolic classes according to whether or not each type of enzyme is present ($\\alpha_{i}>0$ or $\u03ba_{i\u2062j}>0$). However, our simulations suggest that at steady state, the cell types that form consortia and achieve optimal growth belong to very specific metabolic classes: these \u2018optimal\u2019 classes utilize only a few, non-redundant metabolic processes (that is, many $\\alpha_{i}$ and $\u03ba_{j\u2062i}$ are zero).\n\nCan we specify the network structures of optimal metabolic classes using rigorous optimization principles? Exploiting the linearity of metabolic fluxes, we adapt arguments from\u00a0transport-network theory (Bohn et al., 2007) to achieve this goal for an arbitrary number of building blocks (see Figure 5 and Appendix 3). Our approach consists in gradually reducing the number of candidate metabolic classes by showing that some classes \u2133 cannot contain an optimal strategy. Specifically, we consider a representative strategy \u03c3 in \u2133 with enzyme budget E=\u2211i\u03b1i+\u2211i\u2062j\u03bai\u2062j at arbitrary external concentrations ciext. For the same external concentrations ciext, we show that one can always find a strategy \u03c3\u2032 from another metabolic class \u2133\u2032 that achieves the same internal concentrations using a smaller enzyme budget E\u2032=\u2211i\u03b1i\u2032+\u2211i\u2062j\u03bai\u2062j\u2032<E. As the existence of a more \u2018economical\u2019 strategy \u03c3\u2032 contradicts the optimality of metabolic class \u2133, we can restrict our consideration to metabolic classes other than \u2133.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/22644/elife-22644-fig5-v1.jpg)\n\n**Figure 5.:** A metabolic class is defined by the set of enzymes for which $\\alpha_{i}>0$ and $\u03ba_{j\u2062i}>0$. If a metabolic class is optimal, i.e. achieves the fastest growth rate, no other metabolic class can achieve the same growth rate with a lower enzyme budget. (A) Optimal metabolic classes cannot have topological $2$-cycles. If cell type $\\sigma$ (left) is such that the net conversion flux from block $i$ to block $j$ is positive, i.e. $\u03ba_{j\u2062i}\u2062c_{i}>\u03ba_{i\u2062j}\u2062c_{j}$, a cell type $\\sigma^{\u2032}$ (right) that only differs from $\\sigma$ by $\u03ba_{ij}^{\u2032}=0$ and $\u03ba_{j\u2062i}^{\u2032}=\u03ba_{j\u2062i}-\u03ba_{i\u2062j}\u2062c_{j}/c_{i}$ achieves the same growth rate as $\\sigma$ but more economically. More generally, optimal metabolic classes have no topological cycles, i.e. the graphs of their metabolic networks have a tree structure. (B) Optimal metabolic classes use a single precursor for each converted building block. If cell type $\\sigma$ (left) accumulates block $j$ by import and by conversion from block $i$, there is always a more economical strategy $\\sigma^{\u2032}$ (right) for which either $\\alpha_{j}=0$ or $\u03ba_{j\u2062i}=0$. (C) Optimal metabolic classes convert building blocks in the minimum number of steps. If cell type $\\sigma$ (left) accumulates block $k$ via a $2$-step conversion from block $i$, there is always a more economical strategy $\\sigma^{\u2032}$ (right) that converts block $i$ directly into block $k$. (D) Optimal metabolic classes can only have a single tree of direct conversion(s).\n\nUsing the above approach, we show that optimal metabolic networks process building blocks via non-overlapping trees of conversions (Figure 5A), each tree originating from an imported building block (Figure 5B), and each converted building block being obtained via the minimum number of conversions (Figure 5C). Intuitively, these properties ensure the minimization of waste (loss of building blocks via passive transport) during metabolic processing. Moreover, we show that optimal networks use a single building-block resource as precursor for conversions, i.e. there is at most one tree of conversions (Figure 5D). Thus, at steady state, requiring that a metabolic class is optimal, i.e. contains the fastest growing cell type, strongly constrains the graph of its metabolic network. These constrained graphs can be fully characterized and enumerated for $p$ building blocks: there are $p$ distinct graphs, each utilizing $p$ distinct enzymes, which defines a total of $1+p\u2062(2^{p-1}-1)$ metabolic classes after accounting for building-block permutations.\n\n#### Structure of metabolic classes in consortia\n\nTo find the composition of consortia, we must identify the enzyme distributions ${\\alpha_{i}$, $\u03ba_{j\u2062i}}$ within a metabolic class that yield the fastest growth for fixed external building-block concentrations. Knowing analytically the optimal enzyme distributions in each metabolic class allows us to characterize the structure of consortia at steady state via the maximum growth rate as a function of external building-block concentrations,\n\n$$\nG\u2062(c_{1}^{ext},\u2026,c_{p}^{ext})=max\\sigma\u2061g_{\\sigma}\u2062(c_{1}^{ext},\u2026,c_{p}^{ext}).\n$$\n\nAt competitive stationary state, the maximum growth rate must equal the death rate $\\delta$ by Equation (6). Otherwise, either there is a cell type such that $g_{\\sigma}-\\delta>0$, yielding a diverging population $n_{\\sigma}$, or $g_{\\sigma}-\\delta<0$ for all cell types, yielding a vanishing microbial population. Thus, solving $G\u2062(c_{1}^{ext},\u2026,c_{p}^{ext})=\\delta$ determines the set of steady-state external concentrations $c_{1}^{\u22c6},\u2026,c_{p}^{\u22c6}$ for which an optimal strategy $\\sigma^{\u22c6}$ is present. By virtue of its optimality, the strategy $\\sigma^{\u22c6}$ achieves the fastest possible growth rate and is non-invadable at steady state. Consortia emerge for external building-block concentrations for which there is more than one optimal strategy, i.e. when there are distinct strategies $\\sigma^{\u22c6}$ for which the maximum-growth function is attained: $g_{\\sigma^{\u22c6}}(c_{1}^{\u22c6},\u2026,c_{p}^{\u22c6})=G(c_{1}^{\u22c6},\u2026,c_{p}^{\u22c6})=\\delta$.\n\nObtaining analytical expressions for optimal enzyme distributions proves intractable for a nonlinear growth-rate function such as Equation (1). However, optimal distributions can be obtained analytically for the minimum model g\u2062(c1,\u2026,cp)=\u03b3\u2062min\u2061(c1,\u2026,cp), which is closely related to Equation (1) (see Appendix 4). In Figure 6, we represent the corresponding set of external building-block concentrations compatible with steady states, together with the associated optimal metabolic classes. For p building blocks (see Appendix 5), we find that there exist p! microbial cartels, each with p distinct cell types for well-ordered external concentrations, e.g. c1ext>c2ext>\u2026>cpext. In such cartels, cell type 1 converts building block 1 into the p-1 other building blocks, cell type 2 converts building block 1 into the p-2 least abundant building blocks and imports building block 2, and so forth, and cell type p has a pure-importer strategy. We also find that for degenerate ordering with q-1 equalities, e.g. c1ext=\u2026=cqext>cq-1ext>\u2026>cpext, there exist (p-q)!\u2062Cpq microbial cartels with 1+q\u2062(p-q) distinct cell types. In such cartels, cell type q\u2032, 1\u2264q\u2032\u2264q imports all blocks 1,\u2026,q but only uses block q\u2032 as a precursor for blocks j>q, cell type q\u2032\u2032, q<q\u2032\u2032\u22642\u2062q imports all blocks 1,\u2026,q+1 but only uses block q\u2032\u2032-q+1 as a precursor for blocks j>q+1, and so forth, and cell type 1+q\u2062(p-q) has a pure-importer strategy. Moreover, we find that cartels that share p-1 metabolic classes are joined by continuous paths in the space of external concentrations over which these p-1 shared metabolic classes remain jointly optimal. Such paths define a graph which characterizes the topological structure of cartels in relation to changes in external building-block concentrations (see Appendix 6). Importantly, our analysis shows that the above cartels emerge with the same graph structure for all growth-rate functions satisfying g\u2062(c1,\u2026,cp)\u2265\u03b3\u2062min\u2061(c1,\u2026,cp) for some \u03b3>0 and having diminishing returns (quasi-concave property), which includes Equation (1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/22644/elife-22644-fig6-v1.jpg)\n\n**Figure 6.:** For large enough supply rates, population dynamics drive the external building-block concentrations towards steady-state values $c_{1}^{\u22c6},\u2026,c_{p}^{\u22c6}$ that satisfy growth rate equals death rate, $G\u2062(c_{1}^{\u22c6},\u2026,c_{p}^{\u22c6})=\\delta$. Consortia emerge at concentrations for which distinct metabolic classes are jointly optimal. Cartels are consortia with at least $p$ distinct metabolic classes. (A) For $p=2$, a pure-converter strategy is optimal on each of the red curves, while a pure-importer strategy is optimal on the grey curve. Cartels with two distinct cell types exist at the intersection of the grey curve and a red curve. (B) For $p=3$, a pure-converter strategy is optimal on the red patches, mixed strategies are optimal on the blue and green patches, while a pure-importer strategy is optimal on the grey patch. There are two types of cartels at the intersection of $3$ patches: $6$ distinct cartels with well-ordered external concentrations (yellow and pink), e.g. $c_{1}^{ext}>c_{2}^{ext}>c_{3}^{ext}$, and $3$ distinct cartels with degenerate external concentration ordering (cyan), e.g. $c_{1}^{ext}=c_{2}^{ext}>c_{3}^{ext}$. (C) Graph structure of microbial cartels for $p=4$ building blocks. As cartels can be labelled by ordering of resource availability, their graph structure is closely related to permutohedron solids, such as the truncated octahedron for $p=4$ (inset: the interior of the truncated octahedron for $p=4$ corresponds to the grey patch shown in (B) for $p=3$) In addition to the metabolic types shown, each cartel includes a pure-importer strategy, so that blue and pink cartels have $4$ distinct types while yellow cartels have $5$ distinct types. In all panels, the circular arrow diagrams depict the metabolic strategies present.\n\n#### Relevance of microbial cartels\n\nMicrobial cartels only exist for specific external building-block concentrations (cf. the intersection points in Figure 6A and B). Can competitive population dynamics lead to these cartels for generic supply conditions? To answer this question, we compute the set of supply conditions compatible with the emergence of a cartel. We label a microbial cartel $\u03a3^{\u22c6}$ by its associated external concentrations $c_{1}^{\u22c6},\u2026,c_{p}^{\u22c6}$, which satisfy a specific (possibly degenerate) order relation. At concentrations $c_{1}^{\u22c6},\u2026,c_{p}^{\u22c6}$, cartel cell types $\\sigma\\in\u03a3^{\u22c6}$ jointly achieve the optimal growth rate and are therefore the only surviving cell types. The per-cell fluxes $\u03d5_{i,\\sigma}^{\u22c6}$ experienced by these cell types take fixed values that can be obtained via Equation (5). Then, the resulting flux-balance equations for extracellular building blocks,\n\n$$\ns_{i}\u2062({n_{\\sigma}})=\\mu\u2062c_{i}^{\u22c6}+\\frac{v}{V-N\u2062v}\u2062\\sum\\sigma\\in\u03a3^{\u22c6}n_{\\sigma}\u2062\u03d5_{i,\\sigma}^{\u22c6},\n$$\n\nyield the supply rates as a function of the populations $n_{\\sigma}>0$, $\\sigma\\in\u03a3^{\u22c6}$. In fact, Equation (8) defines the sector of supply rates compatible with the existence of the cartel $\u03a3^{\u22c6}$ as a $p$-dimensional cone. Crucially, although $c_{1}^{\u22c6},\u2026,c_{p}^{\u22c6}$ specify isolated points in the space of external concentrations, the cartel sectors have finite measure in the space of supply rates, showing that cartels can arise for generic conditions.\n\nIn Figure 7, we illustrate the supply sectors associated with cartels. What is the relation between supply sectors and steady-state external concentrations? To answer this question, we consider in Figure 7A\u2013E the case of p=2 building blocks and first focus on supply rates for which the optimal cell type is either a pure converter (white dots in Figure 7A\u2013B) or a pure importer (white dots in Figure 7C\u2013D). With only one cell type present and fixed c1ext and c2ext, varying n\u03c3 in Equation (8) defines a half-line in the supply plane (cf. Figure 7B and Figure 7D). This half-line originates from the point (\u03bc\u2062c1ext,\u03bc\u2062c2ext), which are the supply rates that first support a nonzero population n\u03c3 for steady-state concentrations c1ext and c2ext. Thus, all supply half-lines originate from a surface that is identical to the steady-state external concentrations, simply rescaled by the external building block leakage rate \u03bc. Changing the supply rates transverse to such a half-line yields different steady-state concentrations c1ext and c2ext. In particular, one can increase the supply of one block until another optimal type can invade, i.e. until one reaches the cartel-specific concentrations c1\u22c6 and c2\u22c6 (pink dots in Figure 7A and Figure 7C). At the corresponding point (\u03bc\u2062c1\u22c6,\u03bc\u2062c2\u22c6) in the supply space, the pure-converter half-line and the pure-importer half-line have distinct direction vectors, i.e. co-optimal cell types \u03c3 have distinct per-cell fluxes \u03d5\u03c3: e.g. for s1>s2, a pure-converter \u03c3 consumes block 1 to produce and leak block 2, i.e. \u03d51,\u03c3>0 and \u03d52,\u03c3<0. By contrast, a pure importer \u03c3 consumes all building blocks according to the biomass stoichiometry, i.e. \u03d51,\u03c3=\u03d52,\u03c3. For each point (\u03bc\u2062c1\u22c6,\u03bc\u2062c2\u22c6) in the supply space, these distinct per-cell fluxes \u03d5\u03c3 define conic regions where a pure importer can invade a pure-converter population and a pure converter can invade a pure-importer population, i.e. where a cartel is stable. These cones are therefore cartel supply sectors (pink and yellow sectors in Figure 7E).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/22644/elife-22644-fig7-v1.jpg)\n\n**Figure 7.:** (A\u2013B): For steady-state concentrations $c_{1}^{ext}<c_{2}^{ext}$, only a converter strategy can survive (white dot in A). The corresponding set of supply rates $s_{1}$ and $s_{2}$ lie on a line (labelled by a white dot in B). Increasing the supply rate $s_{1}$ causes concentration $c_{1}^{ext}$ to increase, until a pure-importer strategy can survive at $c_{1}^{\u22c6}$ and $c_{2}^{\u22c6}$ (pink dot in A). Any further increase of $s_{1}$ no longer affects $c_{1}^{\u22c6}$ and $c_{2}^{\u22c6}$ and is solely dedicated to biomass growth. (C\u2013D): For steady-state concentrations $c_{1}^{ext}\u2243c_{2}^{ext}$, only a pure-importer strategy can survive (white dot in C). The corresponding set of supply rates $s_{1}$ and $s_{2}$ lie on a line (labelled by a white dot in D). Increasing the supply rate $s_{2}$ causes concentration $c_{2}^{ext}$ to increase, until a converter strategy can survive at $c_{1}^{\u22c6}$ and $c_{2}^{\u22c6}$ (pink dot in C). Any further increase of $s_{2}$ no longer affects $c_{1}^{\u22c6}$ and $c_{2}^{\u22c6}$ and is solely dedicated to biomass growth. (E\u2013F): Supply conditions compatible with the emergence of a cartel for (E) $p=2$ and (F) $p=3$. The set of supply rates for which cartels can arise define non-overlapping polyhedral $p$-dimensional cones, with parallel or diverging faces between neighboring cartels, i.e. cartels that share $p-1$ metabolic classes. For $p=2$, the boundaries of the pink cartel supply sector correspond to the lines labelled by pink dots in (B) and (D). Outside of these cones, only fewer than $p$ strategies can survive.\n\nThe above argument can be generalized for $p>2$ building blocks by considering the metabolic fluxes of optimal cell types (cf. Figure 7F for $p=3$). For all values of $p$, we find that supply sectors associated with cartels define non-overlapping cones (see Appendix 7). Moreover cones associated with two connected cartels, i.e. cartels that share at least $p-1$ metabolic classes, have parallel facets in the limit of large budget $E\u226b\\beta$. As a consequence, at a\u00a0fixed overall rate of building-block supply $s=s_{1}+\u2026+s_{p}$, the fraction of supply conditions for which no cartel arises becomes negligible with increasing overall supply rate $s$. For instance, for large rate $s$, every building block has to be supplied at exactly the same rate for a single pure-importer strategy to dominate rather than a cartel. Therefore, for very generic conditions, a cartel will arise and drive the external building-block concentrations toward cartel-specific values, thereby precluding invasion by any other metabolic strategy. This ability to eliminate competition is reminiscent of the role of cartels in human economies, motivating the name \u2018cartels\u2019 for stable microbial consortia that include at least $p$ distinct metabolic strategies.\n\nAt supply conditions for which no cartel arises, an optimal cell type or a consortium of cell types dominates at steady state but these cell types cannot control external resource availability. Indeed, a consortium that is not a cartel cannot compensate for changes in supply conditions via population dynamics. In particular, simply multiplicatively increasing the building-block supply augments the steady-state biomass of a consortium but also modifies steady-state resource availabilities, and therefore the distributions of enzymes that optimally exploit these resources. In other words, for consortia that are not cartels, optimal metabolic strategies must be fine-tuned to specific supply conditions.\n\nBy contrast, within a cartel supply-sector, any increase of the building-block supply is entirely directed toward the cartel\u2019s growth of biomass. Remarkably, it appears that microbial cartels automatically achieve maximum carrying capacity, i.e. they optimally exploit the resource supply. At steady state, the total number of cells $N$ is related to supply rates $s_{i}$ via the overall conservation of building blocks by\n\n$$\nN=\\frac{V}{v}\u2062(1+\\frac{p\u2062\\delta\u2062(1-f)}{\\sum_{i}s_{i}-\\mu\u2062\\sum_{i}c_{i}^{ext}})^{-1},\n$$\n\nwhich implies that maximizing biomass yield at fixed supply rates si amounts to minimizing the overall external building-block concentrations \u2211iciext. In Figure 8, for p=2 building blocks, we use the preceding equivalence to show that in each cartel sector, no consortium can yield a larger steady-state biomass than the supply-specific cartel. For a homogeneous growth-rate function such as Equation (1), this result generalizes to arbitrary p if we conjecture that (i)\u00a0in a cartel supply sector, the cartel\u2019s metabolic classes can invade any other consortium, and that (ii) the maximum-growth-rate function associated with a given metabolic class has the property of diminishing returns (see Appendix 7). Intuitively, conjecture (i) means that the emergence of a cartel does not depend on the history of appearance of distinct metabolic classes and conjecture (ii) means that beating diminishing returns requires a switch of metabolic classes. Together, these conjectures ensure that adding a new metabolic class when possible implies a decrease in the total abundance of building blocks, i.e. a better use of resources. Because a better use of resources is equivalent to a steady-state biomass increase (by virtue of building-block conservation), this establishes that competing microbes achieve the global collective optimum by forming cartels.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/22644/elife-22644-fig8-v1.jpg)\n\n**Figure 8.:** Steady-state concentrations $c_{1}^{ext}$ and $c_{2}^{ext}$ that satisfy $c_{1}^{ext}+c_{2}^{ext}>c_{1}^{\u22c6}+c_{2}^{\u22c6}$ (above the dashed black line in A) imply smaller biomass yields than achieved by the microbial cartel that exists for $c_{1}^{\u22c6}$ and $c_{2}^{\u22c6}$ (pink dot in A). The supply sector associated with the cartel defines a cone (pink region in B). For given supply rates in the cartel supply sector (white dot in B), the black lines represent the supply sectors of the pure-importer strategy and of the pure-converter strategy that are optimal when present alone (as opposed to being in a cartel). The intersection of these non-cartel supply sectors (black lines in B) with the steady-state curves (red and grey curves in B) define concentrations $c_{1}^{ext}$ and $c_{2}^{ext}$ for which $c_{1}^{ext}+c_{2}^{ext}>c_{1}^{\u22c6}+c_{2}^{\u22c6}$ (white dots in A). This result is generic for any supply rates in the cartel supply sector; thus a pure-importer or a pure-converter strategy alone leads to steady-state concentrations with a\u00a0smaller biomass yield than the cartel. We did not take into account the other converter strategy, belonging to the other cartel (yellow sector in Figure 7E), since this cartel can only be optimal for $c_{1}^{ext}>c_{2}^{ext}$, which never happens for $s_{2}>s_{1}$.\n\n## Discussion\n\nBuilding on a physical model for metabolic fluxes, which importantly includes a finite enzyme budget, we showed that competitive population dynamics leads to the emergence of microbial cartels. Cartels are defined as consortia of at least as many distinct optimal cell types \u2014 each with a fixed metabolic strategy \u2014 as there are shared resources. Constituent cell types of a cartel are optimal because they achieve the fastest possible growth rate for that cartel\u2019s self-regulated external resource concentrations, and can therefore resist invasion by metabolic competitors. Within this framework, the benefit of metabolic diversity to the participating cells stems from the ability of cartels to control resource availability (Sanchez and Gore, 2013). In particular, cartels maintain fixed external resource concentrations by adjusting their populations to compensate for slow changes in supply. For steady supply, the emergence of microbial cartels at long times is independent of the specific dynamics of competition, which may reflect invasions by existing competitors and/or the appearance of mutant strategies. Strikingly, our results support the conclusion that such cartels of competing microbes achieve the optimal collective carrying capacity, as if led by an \u2018invisible hand\u2019 to efficiently exploit the\u00a0resources (Smith, 1776).\n\n### Assumptions and scope of the model\n\nFor simplicity, we assumed linear metabolic fluxes and uniform enzymatic rates, production costs, and building-block stoichiometries. However, the emergence of optimal cartels does not rely on these assumptions. Even allowing for fluxes that are nonlinear (e.g. Michaelis-Menten) with respect to building-block concentrations, microbes must utilize their enzymes in the linear regime to be metabolically optimal: Because resources are depleted by competitive growth between metabolic classes, fluxes mediated by saturated enzymes do not limit growth. Cells can improve their growth rate by reallocating their enzyme budget from saturated enzymes to the unsaturated enzymes mediating growth-limiting linear fluxes. Moreover, independent of rates, production costs, and stoichiometries, optimal metabolic types must consist of non-overlapping trees of conversions. Indeed, the optimality of such metabolic networks, obtained from transport-network theory, only requires the linearity of metabolic fluxes with respect to enzyme concentrations. As a result, optimal metabolic types, as well as cartels, can still be enumerated. Interestingly, we discovered that distinct cartels can arise for very similar external building-block availabilities, and cartels can even merge under special conditions. In an extended model that includes fluctuations, e.g. in enzyme expression (Wang and Zhang, 2011; Kiviet et al., 2014), we expect \u2018ghosts\u2019 of these neighboring cartels associated with similar resource availabilities to persist against the background of the dominant cartel. As our primary concern is the emergence of a division of labor, we consider only relatively large populations of cells for which we can neglect stochastic population fluctuations.\n\n### Realistic metabolic networks\n\nWhat relevance might our results have for real metabolic networks? Microbes regulate metabolic processes via complex networks with, e.g., multistep reaction chains and metabolic branch points (Almaas et al., 2004). However, there is evidence of optimal partitioning of enzymes in these real networks: microbes produce components of multiprotein complexes in precise proportion to their stoichiometry, whereas they produce components of functional modules differentially according to their hierarchical role (Li et al., 2014). Recent experimental studies have revealed that optimal metabolic flux partitioning is an operating principle for resource allocation in the proteome economy of the cell (Hui et al., 2015; Hermsen et al., 2015). Provided optimality considerations apply to real metabolic networks, the approach we have taken can provide insight into flux partitioning and division of labor in microbial communities. For instance, we expect that for a group of interconvertible resources that are collectively growth limiting, the expressed metabolic network should have the topological properties discussed above \u2014 no \u2018futile cycles\u2019 and no \u2018convergent pathways\u2019. Such predictions are not at odds with the existence of well-known metabolic cycles such as the TCA cycle and the GOGAT cycle because these cycles are not futile but rather are energy yielding or assimilatory, respectively. Our predictions apply directly to irreversible conversion processes, e.g via chains of reactions with committed steps, as well as to reversible chains of reactions, for which the only cycles in optimal metabolic networks are two-cycles due to reversibility. The overall acyclic nature of anabolic fluxes can be tested experimentally by measuring reaction fluxes in metabolic networks, e.g. using isotope tracers and mass spectrometry.\n\n### Spatial and temporal heterogeneities\n\nAbiotic and biotic processes controlling resource turnover in nutrient reservoirs, such as the ocean or soil sediments, operate on many different temporal and spatial scales (Braswell et al., 1997; Whitman et al., 1998). In our framework, steady but spatially inhomogeneous supply of diffusive building blocks should lead to the tiling of space by locally dominant cartels. Because of our model cells\u2019 ability to shape their environment, we expect sharp transitions between neighboring tiles, consisting of cartels that differ by a single metabolic class. We expect spatial tiling to emerge in real microbial communities growing in inhomogeneous conditions, e.g. in a gradostat with spatially structured nutrient supply (Lovitt and Wimpenny, 1981). In such spatial communities, the detection of well-delimited patches of resource availabilities, with specific nutrient ratios, would be evidence of spatial tiling by microbial cartels.\n\nThe spatial structure of microbial communities may also reflect the\u00a0extracellular division of labor. Extracellular division of labor involves metabolic pathways with obligatory external reactions, i.e. with enzymes that are public goods. In a homogeneous environment, \u2018cheating\u2019 cell types that do not produce the public good are always at an advantage and their introduction causes the collapse of the entire population. In our framework, we expect producer cartels to spatially segregate from neighboring non-producer cartels (Drescher et al., 2014).\n\nTemporally varying supply can also be addressed within our framework. For supply fluctuations on long timescales $\u226b1/\\delta$ (the lifetime of a cell), the population dynamics within cartels keeps resource levels fixed, whereas fluctuations on short timescales $\u226a1/\\delta$ are self-averaging. In practice, slow supply fluctuations can arise due to seasonal biogeochemical cycles (Schoener, 2011), while fast supply fluctuations can arise from the\u00a0transient biomass release upon cell death (Yoshida et al., 2003). The effect of supply fluctuations occurring on timescales $\u223c1/\\delta$, which includes day-night cycles, is more complex. Transport-network theory predicts that fluctuating resource conditions select for networks with metabolic cycles, whose structures depend on the statistics of the driving fluctuations (Katifori et al., 2010; Corson, 2010). Characterizing the benefit of cycles in such networks may well reveal new optimization principles that underlie the\u00a0microbial metabolic diversity.\n\nMicrobes also adjust to fluctuating conditions by switching their metabolic type via gene regulation instead of relying on population dynamics. Within our framework, to consistently implement the optimal mix of metabolic strategies, the role of sensing and regulation is then primarily to determine the relevant \u2018supply sector\u2019 by assessing the relative abundance of various resources. Thus, in principle, division of labor within a single species can lead to cartels with distinct metabolic strategies associated with distinct phenotypic states. However, the persistence of cartels requires the coexistence of all cartel strategies, which within a single species could be facilitated by cell-to-cell communication (quorum sensing). We therefore anticipate that extension of our analysis to fluctuating supply conditions may provide insight into the design principles underlying regulation and signaling in microbial communities.\n",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "cdc23dfc-6406-46e7-9bbe-efe2eb9a7caa",
+      "submission_id": "9de18c32-b5b8-4d9a-81d5-64b43e3e6bbf",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Carl T Bergstrom, University of Washington , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.22644.022](https://doi.org/10.7554/eLife.22644.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nEditors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Bacterial cartels at steady supply\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Arup Chakraborty as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Eric D Kelsic (Reviewer #1).\n\nOur decision has been reached after consultation between the reviewers. As you will see, one of the reviewers raised a number of significant concerns, many of which the other reviewer acknowledged to be important during subsequent discussion. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nReviewer #1:\n\nThe manuscript by Taillefumier et al. is well written and comprehensive, and I found the theory of bacterial cartels to be quite elegant and thought-provoking. The authors set out to understand microbial diversity by modeling communities of organisms that require a number of essential building blocks for growth. If the building blocks are present in the environment they may be imported into cells, or cells may choose to obtain the building block by enzymatically converting from one type to another. The authors model the growth potential of different strategies under the constraint of a fixed enzyme budget. Through a number of simplifying assumptions and linearizations the authors identify optimal metabolic classes and finally show that sets of organisms, termed \"cartels\", can optimally consume resources and prevent other species from invading. While such communities only coexist at fixed points within the space of external resource concentrations, the authors beautifully show that these points are attractors for regions within the space of supply rates, and thus cartels will frequently emerge when communities are continually challenged with organisms exhibiting various metabolic strategies.\n\nThe cartel theory makes significant progress toward understanding the diversity of microbial communities. Importantly, the work shifts the emphasis away from the number of (rather abstract) environmental resources and focuses instead on the building blocks that are essential for growth and the various strategies by which to obtain these building blocks. I find this setup more conceptually appealing. I believe that the manuscript will be of broad general interest and it would be great to see it published in eLife.\n\nI have no major concerns. The manuscript is already highly polished and could be published without significant revisions.\n\nReviewer #2:\n\nThe manuscript by Wingreen and co-workers examines the structure of bacterial communities that consist of different metabolic types, under a non-trivial model that involves feedbacks from external metabolite concentrations and internal metabolic conversions and fluxes, subject to specific enzyme availability, onto the growth rates. Overall, this is an important subject for which general theoretical results could be useful for guiding experiments as well as introducing new ideas for analysis of bacterial communities.\n\nUnfortunately, the text does an extremely poor job of explaining the main conclusions. One can follow the main assumptions of the model, but once the notions of consortia and cartels are introduced, it requires a good deal of work to follow which features of the model have been preserved and which ones have been conveniently thrown out the window under some new assumption that enables analysis. Over the course of the manuscript, several such assumptions are made, which effectively change the underlying model, while the key notions of consortia and cartels are defined non-rigorously and in a model-dependent manner.\n\nThe section entitled Model is the clearest section of the paper. The authors make many modeling assumptions here, some of which are questionable (see below), but these are all explained clearly.\n\nThe Results section begins with Numerical Simulations, which motivates the rest of the manuscript. The authors give too few details on how extensive their simulations are. How reproducible are they? How long have they run them? How complex a space of strategies was explored?\n\nA) A key point at this stage of the manuscript (i.e. Results) and at the end of the Model Section is the statement that the authors are interested only in the structure of the equilibrium attained, not in the dynamics. They state: \"Eventually, at long times, the surviving population will consist entirely of optimal cell types and will no longer change. It is this final population that concerns us; we only simulate metabolic competition to gain insight into the final optimized population, which is independent of the specific dynamics of the simulation.\"\n\nThis statement appears to be some kind of hope since it is neither (a) proven nor (b) demonstrated by extensive numerical simulations. The simulations assume that new types are only added once other types have gone extinct (subsection \u201cCompetitive population dynamics\u201d, last paragraph), which is a pretty big assumption regarding \"specific dynamics of the simulation\" and which, in fact, guarantees that once a community consists of types that are not going extinct it won't have to worry about new types coming in. Indeed, the structures that are later called \"cartels\" in this manuscript are automatically stable under the given dynamics, due to the fact that avoidance of extinction necessarily excludes competition by new types; such dynamics are intrinsically 'cartel-friendly'. Under different dynamics, for example where new types appear at random times, or are formed by mutation from existing types, there would be no such guarantee, and it is therefore not at all clear that the final population structure (if such a stable structure even exists; see B) would not depend on the specific dynamics.\n\nIn fact, Figure 2D seems to contradict the basic assertion that a surviving population consists only of optimal types and no longer changes. In Figure 2D, blue and yellow curves seem to exchange at regular intervals, and the population composition is dynamic in time. In this case, the caption states that the \"external building-block concentrations fluctuate due to the invasion by and extinction of metabolic variants.\" Which leads to my next major point.\n\nB) The entire analytical treatment of the manuscript is predicated on the assumption that the external concentrations Ciext are fixed. From the second paragraph of the subsection \u201cOptimal metabolic classes\u201d to the end of the first paragraph of the subsection \u201cStructure of consortia\u201d, the authors develop the basic framework in which external concentrations are self-consistently derived such that they obtain an optimal metabolic strategy under the assumption that Ciext do not fluctuate. However, they have already shown in Figure 2D that even in the simplest cases the dynamics may converge to a fluctuating solution under even their cartel-friendly dynamics (see A above).\n\nThus, at this point in the text, the authors have subtly shifted our attention away from the dynamics they initially presented, to some new scenario, in which they search for a certain type of optimum (i.e. one with fixed Ciext). They carry out a careful analysis of such optima (with some additional caveats) throughout the rest of the text. However, they provide no information as to whether such optima are dynamically stable at all. But if these optima are not dynamically stable, then what use is all of their analysis?\n\nOverall, it appears that the authors have performed a nice characterization of a well-defined graph-theoretic optimization problem (stated in the aforementioned subsections). They motivated this problem in the context of a dynamical system, but they have failed to demonstrate that the dynamics converge to their optimum; or more precisely, to give a characterization of conditions (i.e. the choice of constant supply rates, initial conditions, and the exact simulation dynamics) under which their optimum is achieved. Therefore, I recommend that they submit this paper elsewhere, e.g. to a graph theory or combinatorial optimization journal, where their more rigorous results will be properly assessed by mathematicians. Biologists who read eLife will not understand the range of applicability, or lack thereof, of these results. I certainly do not.\n\nOther concerns:\n\nC) The assumption to study the \"minimum model\" in the last paragraph of the subsection \u201cStructure of consortia\u201d is quite strong. For example, the growth rate no longer depends on the bi variables that were introduced initially. This is another example of the authors presenting a much more general model than the one they ultimately analyze. For the poor reader who has made it through the Model section, but is not technically proficient to follow the derivations where the extra assumptions are buried (such as in the last paragraph of the subsection \u201cStructure of consortia\u201d), this can end up being misleading.\n\nD) On the technical level, the question of the bi is important, since different bacteria may have different composition, at least with regard to a subset of key building blocks, and one would like to know if this impacts the metabolic specialization across the community to any extent. Another place where this seems to be relevant is in Equation (3), where the term -gbi at the end of the equation corresponds to the assumption, stated earlier, that building blocks are consumed at a rate proportional to their concentration in biomass, i.e. bi. This is necessary for the steady-state growth, and will be achieved automatically at the level of the bulk population, but at the level of enzymatic activity inside cells, one expects something like -gci. This point should be discussed, and the relevant extra assumptions that are being made here need to be pointed out.\n\nE) In the Discussion, the authors state \"In particular, cartels maintain fixed external resource concentrations by adjusting their populations to compensate for changes in supply.\" This is a question of dynamics, again, but dynamics have not been addressed in the analysis. Critically, the statement here is that if the external resource changes (over some unspecified timescale), the subpopulation sizes that contribute to the cartel will adjust such that the external resource concentrations will be maintained. Since the change of subpopulation size is what appears to be controlling the resource concentrations in such cases, the authors appear to be violating their own \"separation of timescales\" assumption which they made: \"since the lifetime of a cell is much larger than the timescales associated with metabolic processes\u2026 separation of timescales justifies steady-state approximation for the fast variables: (ddt)ci\u03c3=0\u2227(ddt)ciext=0\n\nF) Consortia and Cartels are never rigorously defined before they are used. The terms are typically used first and defined later. For example, Cartels are actually defined only in Figure 4 caption, and later in the Discussion. The term consortia is used in the first sentence of the subsection \u201cStructure of consortia\u201d in a loose sense, i.e. interchangeably with \"community composition\", but that is inconsistent with the use of the term in the definition of cartels as \"consortia with at least p distinct metabolic classes\" (Caption, Figure 4), since it lacks the important notion of optimal types, which appears in the definition in the Discussion (first paragraph).\n\nEven after reading these sections multiple times, it seems that the authors are missing something in their verbal definitions. There is no mention of \"co-optimality\" in their final definition: \"Cartels are defined as consortia of at least as many distinct optimal cell types \u2013 each with a fixed metabolic strategy \u2013 as there are shared resources\". The definition really should include the fact that all of these types contribute to the same optimum.\n\nIt is striking that the authors neglected to give a rigorous mathematical definition of either Cartel or Consortia, for example in terms of a big set C = {\u03c3: condition is true}.\n\nAdditional points:\n\nG) The derivation of the growth rate function, Equation (1), assumes an assembly line for biomass in which reactions do not occur in parallel, at least for the most part. This might be fine for building up a protein in a sequential manner from amino-acids, but many other reactions that build biomass involve building blocks that can themselves be formed from other constituents along different parallel pathways.\n\nH) Interconversion reactions, represented by \u039aij, could in reality involve multiple reactants, for example any metabolic reaction of the form A + B <-> C, and these would introduce non-linearities that are not captured by the equations.\n\nI) Taking the death rate to be independent of the phenotype and the external conditions seems to be a very strong assumption Equation (6).\n\nJ) One could not tell in the last paragraph of the subsection \u201cCompetitive population dynamics\u201d whether the simulation captures finite population size effects or not, i.e. demographic fluctuations of size 1 / N.\n\nK) The numerical simulations do not involve mutation, in that new types are introduced randomly rather than as mutated version of existing types. One expects that mutational dynamics could have different stability criteria. Also, if a random type is introduced, presumably it arrives from outside the community, and therefore why should it be introduced in small numbers? Is that a reasonable assumption for bacteria? It doesn't seem intuitive.\n\nL) What happens to a cartel if one member is removed? Does it matter which member is removed?\n\nM) The word cartel has strong negative associations (i.e. drug cartels), and even at a more basic level the use of this word in the manuscript is fundamentally inaccurate, since the economic definition of a cartel is based on an agreement to control prices, instead of an optimization principle. I am not sure why the authors want to go in this direction.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for resubmitting your work entitled \"Microbial consortia at steady supply\" for further consideration at eLife. Your revised article has been favorably evaluated by Arup Chakraborty as the Senior Editor, Carl Bergstrom as the Reviewing Editor (Carl Bergstrom) and two reviewers.\n\nThe manuscript has been greatly improved and both referees enthusiastically recommend publication.\n\nReviewer #1:\n\nIn \"Microbial consortia at steady supply\", the authors consider a population model in which microorganisms exposed to a flux of metabolites follow different strategies concerning which metabolites to import and which to produce through conversion. They show that populations evolve to form cartels, which prevent invasion from other strategies and keep external resources fixed. Overall, I think the authors do a good and extensive job of demonstrating their results. I recommend this paper for publication.\n\nReviewer #2:\n\nTaillefumier et al. present an elegant and compelling theory of microbial coexistence driven by diverse strategies for import and synthesis of essential metabolic building blocks. I found the revised manuscript to be improved over the original submission, making several changes that facilitated communication of the main results. In particular, the elaborated explanation of the dynamics of the simulation better clarifies that communities are converging toward optimal consortia (rather than being mistaken for oscillatory dynamics). Additionally, I found it reassuring that the new results using gradient-based optimization of communities arrived at similar results as the simulations that were continuously challenged with randomly sampled species types. This resolves one of my main concerns from the original manuscript, and shows that the authors' theory of optimal cartels captures essential aspects of the simulations despite extensive simplifications. Finally, the earlier definition of cartels in the Introduction aided understanding, and multiple revisions in the Discussion helped for putting the theory in context.\n\nThis is a high-quality work in theoretical ecology that makes significant progress toward the major problem of understanding microbial diversity, and I support its publication in eLife where it can reach a broad biological audience.\n",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8bdcbd1a-1d16-4291-8384-1b8a8787288a",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C1",
+      "claim": "Metagenomics has revealed hundreds of species in almost all microbiota.",
+      "claim_type": "EXPLICIT",
+      "source": "Metagenomics has revealed hundreds of species in almost all microbiota.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about metagenomic findings, drawing from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "3282ec30-4ba5-41d9-8972-dd689d5230f2",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C2",
+      "claim": "In a few well-studied cases, microbial communities have been observed to coordinate their metabolic fluxes.",
+      "claim_type": "EXPLICIT",
+      "source": "In a few well-studied cases, microbial communities have been observed to coordinate their metabolic fluxes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement refers to established observations in the literature about microbial metabolic coordination.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "84b5362a-5b9f-4183-9dac-9076bca71dcd",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C3",
+      "claim": "Every gram of soil or liter of seawater contains hundreds or more microbial species.",
+      "claim_type": "EXPLICIT",
+      "source": "Every gram of soil or liter of seawater contains hundreds or more microbial species (Daniel, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Daniel, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "f5ef9750-a412-4304-bbd9-ba5004f821f8",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C5",
+      "claim": "Depleting the pool of external resources available to a microbial community can lead to the establishment of mutualism via the exchange of metabolic by-products between species.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, depleting the pool of external resources available to a microbial community can lead to the establishment of mutualism via the exchange of metabolic by-products between species (Hillesland and Stahl, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hillesland and Stahl, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "ca14dd84-f225-4e34-a357-1d73b7949ff1",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C6",
+      "claim": "Shotgun sequencing has begun to unveil the biochemical networks at work in complex environmentally sampled communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Shotgun sequencing has begun to unveil the biochemical networks at work in complex environmentally sampled communities (Tyson et al., 2004; Gill et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Tyson et al., 2004 and Gill et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "fb4ddd55-7b8c-4ee8-89fd-408878e22d43",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C7",
+      "claim": "Reconstructing the genomes of member species suggests that microbial communities exploit metabolic interdependencies to adapt to their environment.",
+      "claim_type": "EXPLICIT",
+      "source": "reconstructing the genomes of member species suggests that microbial communities exploit metabolic interdependencies to adapt to their environment (Wrighton et al., 2014; Hug et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Wrighton et al., 2014 and Hug et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "2b5ec860-8364-42f5-8e4c-a5706d7e4621",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C8",
+      "claim": "The lack of knowledge about gene functions and gene distributions in individual cells hinders the interpretation of metagenomic data.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the lack of knowledge about gene functions and gene distributions in individual cells hinders the interpretation of this data (Cordero and Polz, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Cordero and Polz, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "b5d331c2-0677-4d87-b9ac-a0755af1ef07",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C9",
+      "claim": "At stationary state, the number of coexisting species cannot exceed the number of available resources according to the competitive exclusion principle.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the emergence of diversity in 'consumer-resource' models is limited by the competitive exclusion principle: at stationary state, the number of coexisting species cannot exceed the number of available resources (Hardin, 1960; Levin and Equilibria, 1970).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hardin, 1960 and Levin and Equilibria, 1970.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "c7e721ae-db9f-4f13-b4b4-1d9854e6e475",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C10",
+      "claim": "In consumer-resource models, a fitter strain colonizes a niche at the expense of those already present by depleting the pool of essential resources, generally leading to a collapse in diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "in consumer-resource models, a fitter strain colonizes a niche at the expense of those already present by depleting the pool of essential resources, generally leading to a collapse in diversity (Shoresh et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Shoresh et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "efa0c01c-fc8e-4aff-a95d-4cb04e4da795",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C11",
+      "claim": "Biomass is primarily protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that biomass (primarily protein [Simon and Azam, 1989; Feij\u00f3 Delgado et al., 2013])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Simon and Azam, 1989 and Feij\u00f3 Delgado et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "9efcf916-d068-4a3c-a6f4-8f5b130c029c",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C14",
+      "claim": "Metabolic fluxes are linear in both enzyme and substrate concentrations when enzymes operate far from saturation.",
+      "claim_type": "EXPLICIT",
+      "source": "For simplicity, we assume that metabolic fluxes are linear in both enzyme and substrate concentrations. This assumption corresponds to enzymes operating far from saturation, which is justified during resource-limited growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption justified by biochemical knowledge about enzyme kinetics.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "3bdb8278-89c6-4a91-8a27-73bfa7a9cad4",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C15",
+      "claim": "Passive transport of building blocks across cell membranes occurs via facilitated diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to these active fluxes, we include passive transport of building blocks across cell membranes via facilitated diffusion (Pi et al., 1991; Wehrmann et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Pi et al., 1991 and Wehrmann et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "06e1a9b3-8749-40f8-9c7d-248b171fd077",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C17",
+      "claim": "Competitive population dynamics leads to stationary states with fixed building-block availability and fixed populations of distinct cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we show that competitive population dynamics with the continual introduction of new cell types leads to a stationary state with fixed building-block availability and with fixed populations of distinct cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by numerical simulations shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "e5c69d0b-dc6b-4cb4-9875-7d2e33fa1d7f",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C18",
+      "claim": "Final cell types obtained through competitive dynamics achieve optimal growth given the fixed building-block supply rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we show that these final cell types achieve optimal growth given the fixed building-block supply rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by numerical simulations and optimization algorithms described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "74b7d41b-2eb9-43a5-8383-e435e97d22fe",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C19",
+      "claim": "Final, optimal populations generally consist of consortia of distinct cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, we show that final, optimal populations generally consist of consortia of distinct cell types and that a consortium of identical cell types can emerge for different building-block supplies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by numerical simulations shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "cc89321c-d69b-4f36-a6ad-061794954f23",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C23",
+      "claim": "The relative fitness of all surviving cell types approaches one during competitive dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the relative fitness of all surviving cell types approaches one, demonstrating the convergence toward a stationary population of optimal cell types.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "9b3e1034-86ac-4e37-aa96-af9267e8305e",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C24",
+      "claim": "If building blocks are supplied with equal stoichiometry, a single pure-importer cell type prevails.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, as shown in Figure 4A, if the building blocks are supplied with equal stoichiometry (s1=s2=s3), the one survivor is a pure-importer strategy that imports each building block.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "f08cd23b-afbd-4414-a38e-8b419b65d9d6",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C25",
+      "claim": "When building blocks are supplied with different stoichiometry, the pure-importer strategy coexists with other cell types that produce the non-supplied building block by conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when building blocks are supplied with a different stoichiometry, (e.g. with s3=0 in Figure 4B\u2013D), the pure-importer strategy coexists with other cell types that produce the non-supplied building block by conversion, thereby forming consortia of optimal cell types.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "10663e23-a3f7-490b-921d-ecb511772c02",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C26",
+      "claim": "Optimal metabolic classes cannot have topological 2-cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the above approach, we show that optimal metabolic networks process building blocks via non-overlapping trees of conversions (Figure 5A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is derived from transport-network theory arguments applied to the model, as illustrated in Figure 5A.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "90e997d3-6166-4171-bc3a-4af2fc19b036",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C27",
+      "claim": "Optimal metabolic classes use a single precursor for each converted building block.",
+      "claim_type": "EXPLICIT",
+      "source": "each tree originating from an imported building block (Figure 5B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is derived from transport-network theory arguments applied to the model, as illustrated in Figure 5B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "b26c9b01-9605-4f53-9e1b-d3dfad15546c",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C28",
+      "claim": "Optimal metabolic classes convert building blocks in the minimum number of steps.",
+      "claim_type": "EXPLICIT",
+      "source": "and each converted building block being obtained via the minimum number of conversions (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is derived from transport-network theory arguments applied to the model, as illustrated in Figure 5C.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "c945bf8a-28b5-403d-947d-9c7d241402a4",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C29",
+      "claim": "Optimal metabolic networks use a single building-block resource as precursor for conversions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we show that optimal networks use a single building-block resource as precursor for conversions, i.e. there is at most one tree of conversions (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is derived from transport-network theory arguments applied to the model, as illustrated in Figure 5D.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "443c1b7d-d585-4439-995e-47060f0a1010",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C31",
+      "claim": "For p building blocks, there exist p! microbial cartels, each with p distinct cell types for well-ordered external concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "For p building blocks (see Appendix 5), we find that there exist p! microbial cartels, each with p distinct cell types for well-ordered external concentrations, e.g. c1ext>c2ext>\u2026>cpext.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical result derived from the analytical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "fefbcbd9-2d40-4c53-ae8b-b524a635988e",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C32",
+      "claim": "For degenerate ordering with q-1 equalities, there exist (p-q)!\u2062Cpq microbial cartels with 1+q\u2062(p-q) distinct cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "We also find that for degenerate ordering with q-1 equalities, e.g. c1ext=\u2026=cqext>cq-1ext>\u2026>cpext, there exist (p-q)!\u2062Cpq microbial cartels with 1+q\u2062(p-q) distinct cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical result derived from the analytical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "6a7deae9-8ac2-44f4-9c12-521077bfb67d",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C33",
+      "claim": "Microbial cartels automatically achieve maximum biomass, thereby achieving a collective optimum.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we propose that at steady supply, cartels of competing strategies automatically yield maximum biomass, thereby achieving a collective optimum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical proposal supported by mathematical analysis and shown in Figure 8.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "8a56f4eb-d90d-4048-b7a3-a62e027477ff",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C34",
+      "claim": "Maximizing biomass yield at fixed supply rates amounts to minimizing the overall external building-block concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "which implies that maximizing biomass yield at fixed supply rates si amounts to minimizing the overall external building-block concentrations \u2211iciext.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the overall conservation of building blocks equation (Equation 9).",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "f886981a-6ad5-4fd8-bef7-f37f8392c754",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C35",
+      "claim": "In each cartel sector, no consortium can yield a larger steady-state biomass than the supply-specific cartel.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 8, for p=2 building blocks, we use the preceding equivalence to show that in each cartel sector, no consortium can yield a larger steady-state biomass than the supply-specific cartel.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis shown in Figure 8.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "da606841-b512-4b84-9cf2-93ecd261de88",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C36",
+      "claim": "Microbes produce components of multiprotein complexes in precise proportion to their stoichiometry.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is evidence of optimal partitioning of enzymes in these real networks: microbes produce components of multiprotein complexes in precise proportion to their stoichiometry, whereas they produce components of functional modules differentially according to their hierarchical role (Li et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Li et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "b3e7df3d-a3bc-437a-b816-6a07fe8f41eb",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C37",
+      "claim": "Optimal metabolic flux partitioning is an operating principle for resource allocation in the proteome economy of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent experimental studies have revealed that optimal metabolic flux partitioning is an operating principle for resource allocation in the proteome economy of the cell (Hui et al., 2015; Hermsen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hui et al., 2015 and Hermsen et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "57046402-9157-4a87-b3fa-384cc8ca35f0",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C38",
+      "claim": "The expressed metabolic network for a group of interconvertible resources that are collectively growth limiting should have no 'futile cycles' and no 'convergent pathways'.",
+      "claim_type": "EXPLICIT",
+      "source": "Provided optimality considerations apply to real metabolic networks, the approach we have taken can provide insight into flux partitioning and division of labor in microbial communities. For instance, we expect that for a group of interconvertible resources that are collectively growth limiting, the expressed metabolic network should have the topological properties discussed above \u2014 no 'futile cycles' and no 'convergent pathways'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the theoretical model developed in the manuscript.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "57ba6310-c242-48ab-bf20-4075f83f54de",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C39",
+      "claim": "Steady but spatially inhomogeneous supply of diffusive building blocks should lead to the tiling of space by locally dominant cartels.",
+      "claim_type": "EXPLICIT",
+      "source": "In our framework, steady but spatially inhomogeneous supply of diffusive building blocks should lead to the tiling of space by locally dominant cartels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the theoretical model developed in the manuscript.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "1b57cd41-54cf-4a02-aca6-fa7cafa0ae69",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C40",
+      "claim": "Sharp transitions between neighboring tiles consisting of cartels that differ by a single metabolic class are expected due to cells' ability to shape their environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of our model cells' ability to shape their environment, we expect sharp transitions between neighboring tiles, consisting of cartels that differ by a single metabolic class.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the theoretical model developed in the manuscript.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "7aab2dc5-e769-48a5-8591-8af9db899d2c",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C41",
+      "claim": "Spatial tiling by microbial cartels is expected to emerge in real microbial communities growing in inhomogeneous conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We expect spatial tiling to emerge in real microbial communities growing in inhomogeneous conditions, e.g. in a gradostat with spatially structured nutrient supply (Lovitt and Wimpenny, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the theoretical model, with a citation to Lovitt and Wimpenny, 1981 for the gradostat example.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "f13a088d-9492-466e-bbae-466dfb4599bd",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C42",
+      "claim": "Producer cartels are expected to spatially segregate from neighboring non-producer cartels in the context of extracellular division of labor.",
+      "claim_type": "EXPLICIT",
+      "source": "In our framework, we expect producer cartels to spatially segregate from neighboring non-producer cartels (Drescher et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the theoretical model, with a citation to Drescher et al., 2014.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "6030ac14-5d80-430a-89db-63532e024636",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C44",
+      "claim": "Fluctuating resource conditions select for networks with metabolic cycles according to transport-network theory.",
+      "claim_type": "EXPLICIT",
+      "source": "Transport-network theory predicts that fluctuating resource conditions select for networks with metabolic cycles, whose structures depend on the statistics of the driving fluctuations (Katifori et al., 2010; Corson, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Katifori et al., 2010 and Corson, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "0cdaef46-367b-4cf2-8c4f-8238fc744fcf",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C45",
+      "claim": "The role of sensing and regulation is primarily to determine the relevant 'supply sector' by assessing the relative abundance of various resources.",
+      "claim_type": "EXPLICIT",
+      "source": "Within our framework, to consistently implement the optimal mix of metabolic strategies, the role of sensing and regulation is then primarily to determine the relevant 'supply sector' by assessing the relative abundance of various resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the theoretical model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "c0203c6c-4926-4779-8655-50eee64ca6d2",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C46",
+      "claim": "Division of labor within a single species can lead to cartels with distinct metabolic strategies associated with distinct phenotypic states.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in principle, division of labor within a single species can lead to cartels with distinct metabolic strategies associated with distinct phenotypic states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the theoretical model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "6913c5ec-cfba-4081-b7be-5b61efb358ab",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "claim_id": "C47",
+      "claim": "The persistence of cartels within a single species could be facilitated by cell-to-cell communication (quorum sensing).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the persistence of cartels requires the coexistence of all cartel strategies, which within a single species could be facilitated by cell-to-cell communication (quorum sensing).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about mechanisms that could support cartel persistence.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "69035272-8e83-48c1-9dcf-c4ea4bf8cdab",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors establish the biological and theoretical context for studying microbial diversity and metabolic competition, citing prior work on microbial diversity, metabolic coordination, metagenomic approaches, and competitive exclusion principles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C10 accurately summarize established knowledge from the literature with appropriate citations. These claims provide the scientific context and motivation for the study, referencing well-established principles like competitive exclusion (C9) and known observations about microbial communities (C1-C8, C10).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "54979d7a-b528-42fb-b5d2-aab4ef1d139b",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors develop a metabolic flux model based on the assumptions that biomass is primarily protein, metabolic fluxes are linear in enzyme and substrate concentrations under resource limitation, and passive transport occurs via facilitated diffusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C14, and C15 describe modeling assumptions that are justified by citations (C11, C15) and biochemical principles (C14). The linearity assumption for unsaturated enzymes during resource-limited growth is biochemically sound and appropriately justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "4e1cc1f9-0583-4c01-9bc3-4fbab5d09f2d",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Competitive population dynamics with continual introduction of new metabolic variants leads to stationary states with fixed building-block availability and fixed populations of distinct optimal cell types that achieve maximum growth rate and form consortia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 and C23 are supported by numerical simulations (Figures 2-4) and an iterative optimization algorithm. The convergence of relative fitness to one (C23, Figure 3) demonstrates that final cell types are optimal. The simulations show consistent emergence of stationary states across different initial conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "ec1095be-e07a-4542-9bcd-c6f754c66b23",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "When building blocks are supplied with equal stoichiometry, a single pure-importer cell type prevails, but with different stoichiometry, consortia of distinct cell types emerge including pure-importers and converters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24 and C25 are directly supported by simulation data shown in Figure 4A (equal stoichiometry) and Figures 4B-D (different stoichiometry). The results demonstrate how supply conditions determine whether single cell types or consortia emerge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "ff2c6311-839c-4c06-8b2f-ada4c4a61739",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Optimal metabolic networks have specific topological properties: no 2-cycles, single precursors for each converted building block, minimum conversion steps, and at most one tree of conversions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 are derived from transport-network theory arguments applied to the model (Figure 5, Appendix 3). The logical derivations showing that alternative network structures would require larger enzyme budgets for the same growth rate are mathematically sound, though the proofs rely on appendix materials.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "6fce79c5-0a15-465f-b5d4-6b6c9c92b1ab",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "For p building blocks, there exist p! microbial cartels with p distinct cell types for well-ordered external concentrations, and (p-q)!C_p^q cartels with 1+q(p-q) distinct cell types for degenerate ordering with q-1 equalities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31 and C32 present mathematical results derived from the analytical model (Appendix 5). The enumeration of cartels based on resource ordering is a logical consequence of the optimization framework, though full verification requires examining the appendix derivations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "df5ed668-278a-4457-a46f-e7b703eff101",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Microbial cartels automatically achieve maximum biomass yield at steady supply, which is equivalent to minimizing overall external building-block concentrations, and no other consortium can yield larger steady-state biomass than the supply-specific cartel.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C33-C35 present a major theoretical result, but C33 is explicitly stated as a 'proposal' and C35 is demonstrated only for p=2 (Figure 8). The generalization to arbitrary p relies on two unproven conjectures stated in the text. While the result for p=2 is supported, the general claim requires additional mathematical proof.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "64fc1e6f-eb29-4400-8116-da8fc62b173f",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Prior experimental work has shown that microbes produce multiprotein complex components in stoichiometric proportions and that optimal metabolic flux partitioning is an operating principle for cellular resource allocation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36 and C37 accurately cite relevant experimental literature (Li et al. 2014; Hui et al. 2015; Hermsen et al. 2015) that supports the biological relevance of optimization principles in real metabolic networks.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "7dbef94f-aeb7-4a68-8f16-86ecd621ae2b",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors predict that optimal metabolic networks should lack futile cycles and convergent pathways, that spatially inhomogeneous supply should lead to spatial tiling by cartels with sharp transitions, and that producer cartels should spatially segregate from non-producers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C38-C42 are predictions and speculations based on the theoretical model. While these predictions are logical extensions of the model, they are explicitly presented as expectations requiring experimental validation. No experimental data is provided to test these predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "4ede58f1-9901-4160-b925-876f523de203",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Transport-network theory predicts that fluctuating resource conditions select for networks with metabolic cycles whose structures depend on fluctuation statistics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 accurately cites transport-network theory literature (Katifori et al. 2010; Corson 2010) regarding the effect of fluctuating conditions on network structure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    },
+    {
+      "id": "39a0be35-0461-46f1-86b0-82cc613a8dc6",
+      "content_id": "2d877e7f-75ce-4261-beed-eb9ed7a1882e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose that sensing and regulation primarily determine the relevant supply sector, that division of labor within a single species could lead to cartels with distinct phenotypic states, and that quorum sensing could facilitate cartel persistence within species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C45-C47 are speculative interpretations and predictions about how the model framework might apply to regulation, intraspecies division of labor, and cell-cell communication. These are presented as possibilities ('could be facilitated') without supporting data or detailed mechanistic analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:57:35.926975Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8bdcbd1a-1d16-4291-8384-1b8a8787288a",
+      "result_id": "69035272-8e83-48c1-9dcf-c4ea4bf8cdab"
+    },
+    {
+      "claim_id": "3282ec30-4ba5-41d9-8972-dd689d5230f2",
+      "result_id": "69035272-8e83-48c1-9dcf-c4ea4bf8cdab"
+    },
+    {
+      "claim_id": "84b5362a-5b9f-4183-9dac-9076bca71dcd",
+      "result_id": "69035272-8e83-48c1-9dcf-c4ea4bf8cdab"
+    },
+    {
+      "claim_id": "f5ef9750-a412-4304-bbd9-ba5004f821f8",
+      "result_id": "69035272-8e83-48c1-9dcf-c4ea4bf8cdab"
+    },
+    {
+      "claim_id": "ca14dd84-f225-4e34-a357-1d73b7949ff1",
+      "result_id": "69035272-8e83-48c1-9dcf-c4ea4bf8cdab"
+    },
+    {
+      "claim_id": "fb4ddd55-7b8c-4ee8-89fd-408878e22d43",
+      "result_id": "69035272-8e83-48c1-9dcf-c4ea4bf8cdab"
+    },
+    {
+      "claim_id": "2b5ec860-8364-42f5-8e4c-a5706d7e4621",
+      "result_id": "69035272-8e83-48c1-9dcf-c4ea4bf8cdab"
+    },
+    {
+      "claim_id": "b5d331c2-0677-4d87-b9ac-a0755af1ef07",
+      "result_id": "69035272-8e83-48c1-9dcf-c4ea4bf8cdab"
+    },
+    {
+      "claim_id": "c7e721ae-db9f-4f13-b4b4-1d9854e6e475",
+      "result_id": "69035272-8e83-48c1-9dcf-c4ea4bf8cdab"
+    },
+    {
+      "claim_id": "efa0c01c-fc8e-4aff-a95d-4cb04e4da795",
+      "result_id": "54979d7a-b528-42fb-b5d2-aab4ef1d139b"
+    },
+    {
+      "claim_id": "9efcf916-d068-4a3c-a6f4-8f5b130c029c",
+      "result_id": "54979d7a-b528-42fb-b5d2-aab4ef1d139b"
+    },
+    {
+      "claim_id": "3bdb8278-89c6-4a91-8a27-73bfa7a9cad4",
+      "result_id": "54979d7a-b528-42fb-b5d2-aab4ef1d139b"
+    },
+    {
+      "claim_id": "06e1a9b3-8749-40f8-9c7d-248b171fd077",
+      "result_id": "4e1cc1f9-0583-4c01-9bc3-4fbab5d09f2d"
+    },
+    {
+      "claim_id": "e5c69d0b-dc6b-4cb4-9875-7d2e33fa1d7f",
+      "result_id": "4e1cc1f9-0583-4c01-9bc3-4fbab5d09f2d"
+    },
+    {
+      "claim_id": "74b7d41b-2eb9-43a5-8383-e435e97d22fe",
+      "result_id": "4e1cc1f9-0583-4c01-9bc3-4fbab5d09f2d"
+    },
+    {
+      "claim_id": "cc89321c-d69b-4f36-a6ad-061794954f23",
+      "result_id": "4e1cc1f9-0583-4c01-9bc3-4fbab5d09f2d"
+    },
+    {
+      "claim_id": "9b3e1034-86ac-4e37-aa96-af9267e8305e",
+      "result_id": "ec1095be-e07a-4542-9bcd-c6f754c66b23"
+    },
+    {
+      "claim_id": "f08cd23b-afbd-4414-a38e-8b419b65d9d6",
+      "result_id": "ec1095be-e07a-4542-9bcd-c6f754c66b23"
+    },
+    {
+      "claim_id": "10663e23-a3f7-490b-921d-ecb511772c02",
+      "result_id": "ff2c6311-839c-4c06-8b2f-ada4c4a61739"
+    },
+    {
+      "claim_id": "90e997d3-6166-4171-bc3a-4af2fc19b036",
+      "result_id": "ff2c6311-839c-4c06-8b2f-ada4c4a61739"
+    },
+    {
+      "claim_id": "b26c9b01-9605-4f53-9e1b-d3dfad15546c",
+      "result_id": "ff2c6311-839c-4c06-8b2f-ada4c4a61739"
+    },
+    {
+      "claim_id": "c945bf8a-28b5-403d-947d-9c7d241402a4",
+      "result_id": "ff2c6311-839c-4c06-8b2f-ada4c4a61739"
+    },
+    {
+      "claim_id": "443c1b7d-d585-4439-995e-47060f0a1010",
+      "result_id": "6fce79c5-0a15-465f-b5d4-6b6c9c92b1ab"
+    },
+    {
+      "claim_id": "fefbcbd9-2d40-4c53-ae8b-b524a635988e",
+      "result_id": "6fce79c5-0a15-465f-b5d4-6b6c9c92b1ab"
+    },
+    {
+      "claim_id": "6a7deae9-8ac2-44f4-9c12-521077bfb67d",
+      "result_id": "df5ed668-278a-4457-a46f-e7b703eff101"
+    },
+    {
+      "claim_id": "8a56f4eb-d90d-4048-b7a3-a62e027477ff",
+      "result_id": "df5ed668-278a-4457-a46f-e7b703eff101"
+    },
+    {
+      "claim_id": "f886981a-6ad5-4fd8-bef7-f37f8392c754",
+      "result_id": "df5ed668-278a-4457-a46f-e7b703eff101"
+    },
+    {
+      "claim_id": "da606841-b512-4b84-9cf2-93ecd261de88",
+      "result_id": "64fc1e6f-eb29-4400-8116-da8fc62b173f"
+    },
+    {
+      "claim_id": "b3e7df3d-a3bc-437a-b816-6a07fe8f41eb",
+      "result_id": "64fc1e6f-eb29-4400-8116-da8fc62b173f"
+    },
+    {
+      "claim_id": "57046402-9157-4a87-b3fa-384cc8ca35f0",
+      "result_id": "7dbef94f-aeb7-4a68-8f16-86ecd621ae2b"
+    },
+    {
+      "claim_id": "57ba6310-c242-48ab-bf20-4075f83f54de",
+      "result_id": "7dbef94f-aeb7-4a68-8f16-86ecd621ae2b"
+    },
+    {
+      "claim_id": "1b57cd41-54cf-4a02-aca6-fa7cafa0ae69",
+      "result_id": "7dbef94f-aeb7-4a68-8f16-86ecd621ae2b"
+    },
+    {
+      "claim_id": "7aab2dc5-e769-48a5-8591-8af9db899d2c",
+      "result_id": "7dbef94f-aeb7-4a68-8f16-86ecd621ae2b"
+    },
+    {
+      "claim_id": "f13a088d-9492-466e-bbae-466dfb4599bd",
+      "result_id": "7dbef94f-aeb7-4a68-8f16-86ecd621ae2b"
+    },
+    {
+      "claim_id": "6030ac14-5d80-430a-89db-63532e024636",
+      "result_id": "4ede58f1-9901-4160-b925-876f523de203"
+    },
+    {
+      "claim_id": "0cdaef46-367b-4cf2-8c4f-8238fc744fcf",
+      "result_id": "39a0be35-0461-46f1-86b0-82cc613a8dc6"
+    },
+    {
+      "claim_id": "c0203c6c-4926-4779-8655-50eee64ca6d2",
+      "result_id": "39a0be35-0461-46f1-86b0-82cc613a8dc6"
+    },
+    {
+      "claim_id": "6913c5ec-cfba-4081-b7be-5b61efb358ab",
+      "result_id": "39a0be35-0461-46f1-86b0-82cc613a8dc6"
+    }
+  ],
+  "comparisons": []
+}

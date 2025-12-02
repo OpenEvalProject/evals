@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "GDE3, but not GDE2, functions as a GPI-specific phospholipase C that cleaves and releases uPAR from the cell membrane in cis. This activity requires the catalytic histidine residue H229 and specifically targets the GPI anchor, producing inositol 1-phosphate as a cleavage product.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary experimental approaches support this result: immunoblotting shows uPAR release by GDE3 but not GDE2 (C34); the H229A mutation abolishes activity (C36); uPAR-TM lacking GPI is resistant (C37); flow cytometry and TIRF microscopy confirm membrane depletion (C38, C39); cell mixing experiments demonstrate cis activity (C44); Triton X-114 partitioning shows lipid-free suPAR (C45); and LC-MS definitively identifies inositol 1-phosphate (C46, C47), the signature product of phospholipase C cleavage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C94",
+      "C95"
+    ],
+    "result": "Homology modeling reveals that GDE2 and GDE3 share similar GPI-binding grooves but differ markedly in surface charge distribution, particularly at the putative substrate interaction surface, suggesting that surface properties and protein-protein interactions determine substrate selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the homology modeling data (C40, C41, C94) provides structural insights, the claim about substrate selectivity determinants (C42, C95) remains speculative. The authors acknowledge this requires validation by future structural studies. The modeling is informative but insufficient to definitively establish the mechanism of substrate recognition without experimental validation such as mutagenesis studies or co-crystal structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "In HEK-uPAR cells, uPAR expression confers vitronectin-dependent cell adhesion, spreading, lamellipodia formation, and FAK activation, all of which are abolished by GDE3 overexpression in a catalytic activity-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional consequences are well-documented through multiple assays: cell adhesion is specifically increased on vitronectin but not fibronectin (C48, C49); FAK phosphorylation confirms integrin activation (C50); GDE3 expression reverses all these phenotypes (C51); and the catalytically dead H229A mutant has no effect (C52), establishing the requirement for enzymatic activity. The data consistently support that GDE3 suppresses uPAR function by removing it from the membrane.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "In MDA-MB-231 breast cancer cells, which express high levels of uPAR and uPA forming an autocrine loop, GDE3 depletes uPAR from distinct basolateral membrane microdomains. Active GDE3 shows no colocalization with uPAR, while catalytically dead GDE3(H229A) colocalizes with uPAR, and GDE3 knockout increases basolateral uPAR levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spatial regulation of uPAR by GDE3 is convincingly demonstrated through complementary approaches: super-resolution microscopy shows wild-type GDE3 does not colocalize with uPAR while the H229A mutant does (C60, C61), indicating active enzyme depletes uPAR locally; CRISPR knockout of GDE3 increases basolateral uPAR (C63); and flow cytometry confirms modest overall membrane depletion (C59). The data establish that GDE3 acts locally in specific membrane domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "GDE3 overexpression in MDA-MB-231 and Hs578T breast cancer cells abolishes the vitronectin-dependent motile phenotype characterized by cell spreading and lamellipodia formation. This effect is mediated through uPAR, as demonstrated by rescue with non-cleavable uPAR-TM and phenocopy by uPAR knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic link to uPAR is rigorously established: GDE3 abolishes the motile phenotype (C65, C66); non-cleavable uPAR-TM rescues the phenotype (C67), proving GDE3 acts through uPAR cleavage; and shRNA-mediated uPAR knockdown produces identical effects (C68). The convergence of gain-of-function, loss-of-function, and rescue experiments provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "GDE3 overexpression attenuates the transformed phenotype of MDA-MB-231 cells by reducing cell motility, clonogenic potential, and matrix degradation capacity, phenocopying the effects of uPAR depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple long-term functional assays demonstrate consistent effects: cell scattering is reduced (C69, C70); colony formation is decreased (C70); and gelatin matrix degradation is inhibited (C71). Both GDE3 overexpression and uPAR knockdown/knockout produce identical phenotypes across all assays, supporting the conclusion that GDE3 acts through uPAR loss (C72). The data are internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C84"
+    ],
+    "result": "GDE3 overexpression in MDA-MB-231 cells modestly but significantly slows tumor growth in a xenograft mouse model, though the effect is limited, likely due to the presence of oncogenic K-RAS in these cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The xenograft data (C73) show statistically significant tumor growth inhibition, though the effect is modest. The authors provide a reasonable interpretation (C84) that the K-RAS mutation in MDA-MB-231 cells likely limits the impact of uPAR depletion by overriding multiple signaling pathways. While the in vivo effect is less dramatic than in vitro, the statistical significance and biological context support the result. However, the modest effect size and single cell line tested limit generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C85"
+    ],
+    "result": "High GDPD2 (GDE3) expression correlates with prolonged relapse-free survival in breast cancer patients, particularly in triple-negative (basal-like) subtype, while no such correlation exists for GDPD5 (GDE2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The Kaplan-Meier survival analysis (C74, C85) shows a statistically significant correlation between high GDPD2 expression and improved survival in 618 triple-negative breast cancer patients. However, this is purely correlative data from public databases. The authors appropriately note caution is warranted (mentioned in Discussion) as the involvement of uPAR release is not formally proven, and GDE3 may have additional substrates (C87). The correlation is suggestive but requires validation and mechanistic confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Soluble uPAR (suPAR) released by GDE3 is biologically inactive under cell culture conditions, as treatment with suPAR-enriched conditioned media does not evoke detectable cellular responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The claim is based on negative results from treating cells with suPAR-enriched media (C54). However, the experimental details are minimal (no figure reference, cell types not specified, responses measured not detailed), making it difficult to assess the rigor and comprehensiveness of these experiments. Negative results require careful controls and comprehensive testing to rule out biological activity. The conclusion may be premature without more extensive characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "When expressed at low levels in HEK293 cells, GDE2 and GDE3 localize to distinct plasma membrane microdomains and filopodia-like extensions, while GDE6 is predominantly intracellular.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The localization patterns are clearly demonstrated by confocal microscopy (C31, C32, C33) in Figure 1\u2014figure supplement 1A,B. The data support the differential localization of the three GDE family members, which is relevant for understanding their potential functions. However, the functional significance of these localization patterns is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Background knowledge claims establish that uPAR is a GPI-anchored protein involved in tissue remodeling and cancer progression through protease recruitment and vitronectin binding; that soluble uPAR exists in body fluids; that GDE2 cleaves certain GPI-anchored proteins; and that the mechanism of uPAR shedding was previously unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C4, C11-C30, C77-C79) represent established knowledge from prior literature, appropriately cited throughout. They provide necessary context for the study but are not novel findings. The citations appear appropriate and the background accurately represents the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C97"
+    ],
+    "result": "GDE3 functions as a negative regulator of the uPAR signaling network by acting as a GPI-specific phospholipase C, with activity restricted to specific basolateral membrane microdomains where signal transduction occurs. This represents an evolved mechanism for vertebrate GDEs to modulate key signaling pathways through selective GPI-anchor cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion (C80, C81, C82, C83, C97) is well-supported by the collective experimental evidence: GDE3 is established as a GPI-PLC (multiple experiments); functional assays demonstrate loss of both proteolytic and non-proteolytic uPAR activities; super-resolution microscopy shows localized membrane domain depletion; and the data fit within the broader context of GDE family function. The conclusion appropriately synthesizes the major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C96"
+    ],
+    "result": "Discussion claims suggest that GDE3 may have additional GPI-anchored substrates, may regulate normal physiological processes including osteoblast differentiation and embryo implantation, and that circulating suPAR should be regarded as a marker of GDE3 activity. GPI-anchor modifications may determine substrate sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C86-C93, C96) are largely speculative or correlative. While some are supported by citations to prior work (C86, C89, C90), others are predictions or possibilities acknowledged by the authors as requiring further investigation (C87, C88, C91, C92, C93, C96). These represent reasonable hypotheses and interpretations but lack direct experimental support in the current study.",
+    "result_type": "MINOR"
+  }
+]

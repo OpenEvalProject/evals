@@ -1,0 +1,1555 @@
+{
+  "submission": {
+    "id": "6ec50e21-bbd7-444f-b706-1b4b27864897",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:39:57.837146Z",
+    "updated_at": "2025-12-01T22:39:57.837146Z"
+  },
+  "content": [
+    {
+      "id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "submission_id": "6ec50e21-bbd7-444f-b706-1b4b27864897",
+      "content_type": "manuscript",
+      "content_text": "# Paradoxical response reversal of top-down modulation in cortical circuits with three interneuron types\n\n## Authors\n\n- Luis Carlos Garcia del Molino<sup>1</sup> ([ORCID: 0000-0001-9934-9461](https://orcid.org/0000-0001-9934-9461))\n- Guangyu Robert Yang<sup>1</sup> ([ORCID: 0000-0002-8919-4248](https://orcid.org/0000-0002-8919-4248))\n- Jorge F Mejias<sup>1</sup> ([ORCID: 0000-0002-8096-4891](https://orcid.org/0000-0002-8096-4891))\n- Xiao-Jing Wang<sup>1</sup> ([ORCID: 0000-0003-3124-8474](https://orcid.org/0000-0003-3124-8474)) \u2020\n\n### Affiliations\n\n1. Center for Neural Science New York University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPyramidal cells and interneurons expressing parvalbumin (PV), somatostatin (SST), and vasoactive intestinal peptide (VIP) show cell-type-specific connectivity patterns leading to a canonical microcircuit across cortex. Experiments recording from this circuit often report counterintuitive and seemingly contradictory findings. For example, the response of SST cells in mouse V1 to top-down behavioral modulation can change its sign when the visual input changes, a phenomenon that we call response reversal. We developed a theoretical framework to explain these seemingly contradictory effects as emerging phenomena in circuits with two key features: interactions between multiple neural populations and a nonlinear neuronal input-output relationship. Furthermore, we built a cortical circuit model which reproduces counterintuitive dynamics observed in mouse V1. Our analytical calculations pinpoint connection properties critical to response reversal, and predict additional novel types of complex dynamics that could be tested in future experiments.\n\n## Introduction\n\nThree major non-overlapping classes of interneurons expressing parvalbumin, somatostatin and vasoactive intestinal peptide (henceforth denoted PV, SST and VIP respectively) make up more than 80% of GABAergic cells of mouse cortex (Rudy et al., 2011). These neurons show cell-type-specific connectivity among themselves and with excitatory (E) neurons (Pfeffer et al., 2013; Jiang et al., 2015) forming a canonical microcircuit in the cortex. This microcircuit motif, initially proposed theoretically (Wang et al., 2004), has been the subject of numerous recent experimental studies using optogenetic tools applied to behaving mice (Lee et al., 2012; Saleem et al., 2013; Kepecs and Fishell, 2014; Hawrylycz et al., 2016) as well as computational studies (Lee and Mihalas, 2015; Lee and Mihalas, 2017; Lee et al., 2017; Yang et al., 2016; Yang and Wang, 2017). However, we still do not fully understand the mechanisms that underlie the behavior of this microcircuit which are often complex and counterintuitive.\n\nA notable observation was that pyramidal neurons and VIP interneurons concomitantly increase their activities in the primary visual cortex V1 during locomotion in comparison with immobility (Niell and Stryker, 2010), even in the complete absence of visual input (Keller et al., 2012). Moreover, optogenetically activating (respectively inactivating) VIP interneurons mimics (respectively eliminates) the effect of running (Fu et al., 2014). Since VIP cells primarily target SST cells, a natural explanation for this phenomenon is disinhibition (Wang et al., 2004; Lee et al., 2013): activation of VIP cells suppresses SST cells, therefore neurons targeted by the SST population are disinhibited, enhancing the overall activity of excitatory neurons. However, recent experiments show that the network behavior might be more complex. Namely, in darkness the activation of VIP cells results in an average decrease of SST population activity (Fu et al., 2014), whereas in the presence of visual stimulation the response of SST cells is reversed and its firing rate increases during locomotion compared to immobility (Pakan et al., 2016). These findings, which have been further confirmed in a recent preprint (Dipoppa et al., 2017), appear to challenge the disinhibition hypothesis, suggesting that the nature of the interaction between VIP and SST could be stimulus dependent.\n\nThese experimental results raise two questions: First, the external activation of a population that directly inhibits a second population can trigger a positive response of the latter. What is the mechanism behind this apparently paradoxical behavior? Second, the same top-down modulation can trigger both a positive response\u00a0and a negative response of certain populations of the circuit depending on the sensory input. Under which conditions can we expect one response or the other?\n\nIn this study, we model cortical activity and provide a comprehensive answers to these two questions. We show that these counterintuitive phenomena rely on two basic features of cortical networks: (i) the presence of multiple populations of interneurons and (ii) nonlinear responses to input. Finally, we use our model to predict complex behaviors that have not yet been experimentally tested. Beyond the mechanistic explanation for the observed behavior in mice V1, our work provides a very general and powerful framework to explain the dynamics of neural networks with multiple interneuron types, their context-dependent interactions, and the emsergence of counterintuitive effects that may occur across different cortical structures and animals.\n\n## Results\n\nWe simulate microcircuit activity using a four population firing rate model. The average rate of each population is given by a nonlinear function of its input that we refer to as the f-I curve (Abbott and Chance, 2005). The f-I curve is such that when the input is low (below threshold), cells are little responsive to changes in external input. Instead for high input (above threshold) small changes in the input can drive substantial changes in the response (Miller and Troyer, 2002) (see Figure 1b). This nonlinearity has been analyzed experimentally and theoretically (Murphy and Miller, 2003; Phillips and Hasenstaub, 2016) and as we will show later, it is a key feature of the model.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/29742/elife-29742-fig1-v4.jpg)\n\n**Figure 1.:** (a) Microcircuit connectivity and top-down modulatory input. (b) f-I curve. When input is low changes in input have almost no effect on the output rate, instead, when input is high changes in input have a big effect on output rate. (c, d) Transient dynamics upon the onset of the top-down modulatory current for low baseline activity (i.e. when the rates are low before top-down modulation) and high baseline activity (i.e. when the rates are high before top-down modulation). Under a low baseline activity condition, SST is inhibited and E and PV are slightly disinhibited. The high baseline activity condition shows an example of response reversal in SST activity: it initially goes below the baseline rate but due to significant change in E activity and to the recurrent excitation it eventually reverses to a rate higher than baseline.\n\nPopulations are connected according to the microcircuit scheme in Figure 1a which contains the connections reported in both Jiang et al., 2015 and Pfeffer et al. (2013). We also consider three sources of input: (i) top-down modulation that targets VIP cells (ii) local recurrent input and (iii) constant background input set so that the populations have some fixed baseline activity (see Materials\u00a0and\u00a0methods for details).\n\n### Response to top-down modulation depends on baseline activity\n\nTo illustrate possible complex behaviors displayed by the network, we first focused on the circuit responses to top-down modulation. The simulation results from our model allow us to identify two qualitatively different scenarios depending on the baseline activity of the network (the baseline activity is the activity before the onset of top-down modulation and we control it by changing the constant background input, see Materials\u00a0and\u00a0methods for details). On the one hand, when the baseline activity is low, top-down modulation will result in a decrease of the rate of the SST population and an increase of the rates of the other populations (E, PV and VIP) (see Figure 1c). On the other hand, when baseline activity is high, the rate of all populations increases with top-down modulation (see Figure 1d). These simulations reveal that population responses to top-down modulation depend in a complex way on the initial state of the network.\n\nThe striking behavior exhibited by the SST population can be explained heuristically by analyzing the response of the different populations to external excitatory input targeting VIP cells. When the top-down modulation starts, the rate of the VIP population increases. By calculating the time derivatives of the rates right after the onset of the top-down modulation (see Materials\u00a0and\u00a0methods) one can see that this effect always results in a transient reduction of SST activity and therefore a reduction of inhibition to VIP, PV and E cells. When baseline activity is low the E population is below threshold and this change in net input has a small effect in the output. In that situation, all populations quickly reach a stationary state. However, when the baseline activity is high, the E population is above threshold and a small change in input from SST cells has a big effect on the rate of the E population. If the recurrent excitation in the microcircuit is strong enough, it can reverse the initial response of the SST population making it increase its activity to a higher rate than the baseline.\n\n### Circuit behavior explained by response matrix\n\nIn order to formally characterize the steady state response of a population to external input we introduce the response matrix $M$. The intuition behind the response matrix is that if we change the input to population $j$ (where $j=E,P,S,V$ for excitatory, PV, SST and VIP populations respectively) by a small amount $\\delta\u2062I_{j}$, then the change in rate of the population $i$ will be $\\delta\u2062r_{i}=\\delta\u2062I_{j}\u2062M_{i\u2062j}$. If $M_{i\u2062j}$ is positive (negative), an increase of the external excitation to $j$ will result in an increase (decrease) of the rate of population $i$ (see Materials\u00a0and\u00a0methods and Table 3 for details). In contrast to the connectivity matrix, which takes into account only the direct path from population $j$ to $i$, the response matrix contains information about all the possible ways in which population $j$ can affect population $i$, namely through indirect connections $j$-$h$-$i$. Due to the complexity of these indirect pathways, for different values of the connectivity matrix (but preserving the excitatory/inhibitory structure) $M_{i\u2062j}$ can be positive or negative irrespective of whether the connection from $j$ to $i$ is inhibitory or excitatory. Furthermore, due to the nonlinearities in the f-I curve, the response depends on the baseline rate of each of the populations and, as shown before, it can reverse its sign.\n\nAs an example, we analyze in detail the response of the SST population to external input to VIP cells. As we show in the Materials\u00a0and\u00a0methods section, this term of the response matrix is given by:\n\n$$\nM_{S\u2062V}=C\u2062w_{S\u2062V}\u2062((w_{E\u2062E}-d_{E})\u2062(w_{P\u2062P}+d_{P})-w_{E\u2062P}\u2062w_{P\u2062E}),\n$$\n\nwhere $w_{i\u2062j}$ are the absolute values of the connection weights and therefore are positive by definition and for the system to be stable $C$ has to be positive (see Materials\u00a0and\u00a0methods for details). The terms $d_{i}$ are proportional to the inverse of the first derivative of the f-I curves and are always positive. In particular, $d_{E}$ becomes arbitrarily large when the input is very low and tends monotonically to a positive constant $d_{E}^{\u221e}$ for high input. Therefore, if $w_{E\u2062E}\\leqd_{E}^{\u221e}$ then $M_{S\u2062V}$ will always be negative. However, for $w_{E\u2062E}>d_{E}^{\u221e}$ the behavior is much richer: if input is high then $d_{E}$ will be close to its minimum $d_{E}^{\u221e}$ and $w_{E\u2062E}>d_{E}$ allowing for $M_{S\u2062V}$ to be positive (provided that the product $w_{E\u2062P}\u2062w_{P\u2062E}$ is small enough). Instead if the input is low, $d_{E}$ will become very large and $M_{S\u2062V}$ will be negative.\n\nIt is remarkable that this change in the interaction between VIP and SST populations depends on the activation level of E: modifying the state of one population has a impact in the interactions between other populations. The heuristic explanation is that if the recurrent excitation is strong enough and the E population is already strongly excited (above threshold), a small decrease in the inhibition from SST to the E population can boost its activity and therefore strongly drive the whole microcircuit. If instead, the E population is in a low activation state the change in inhibition will have a weak effect that will not be able to reverse the response of SST.\n\nThis observation provides an explanation to the reversal of the response of SST to VIP activation when the baseline activity is changed: as we show in Figure 2a and c for low baseline activity, $M_{S\u2062V}$ is negative and the presence of an external excitatory current targeting VIP cells will result in a negative response of SST cells and positive response of E, PV and VIP cells, conforming to the disinhibitory hypothesis. On the other hand, for high baseline activity (panels 2b and 2d), the response of the SST population to input to VIP cells becomes positive leading to the response reversal regime.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/29742/elife-29742-fig2-v4.jpg)\n\n**Figure 2.:** (a\u2013b) Tuning curves for the different populations and baseline activity in both scenarios (low and high). In the low baseline activity scenario (a) all populations are below threshold (flat part of the fI curve), instead in the high baseline activity scenario (b) all populations are above threshold, where small changes in input result in large changes in rate. (c\u2013d) Response matrices for the two scenarios. In (c) the response of SST to external excitation of VIP is negative, while the responses of E and PV are positive. This corresponds to the disinhibition regime. In (d) the responses of all populations to external excitation of VIP are positive, in particular, the response of SST is reversed with respect to (c) corresponding to the response reversal regime.\n\nA similar analysis can be conducted for all terms in $M$. For example, another case of response reversal in this circuit is that of $M_{E\u2062E}$ which can have different signs for different baseline activity levels, meaning that the excitatory population can have a negative response to excitatory input to itself. Intuitively, if an external excitatory current targets the E population, its rate will increase transiently and thus the excitation that SST and VIP receive will also increase. If this effect is stronger in SST than in VIP the rate of the VIP population will decrease and therefore the inhibition that SST receives will decrease as well resulting in stronger inhibition to E cells. Note that for this to happen both SST and VIP have to be in the high activity baseline (i.e. $d_{S}$, $d_{V}$ have to be small) and $w_{S\u2062V}$, $w_{V\u2062S}$ have to be strong. The explicit expression of $M_{E\u2062E}$ (see Table 3) reveals that if the SST-VIP-SST loop is not strong enough or if $d_{S}$, $d_{V}$ are large $M_{E\u2062E}$ will always be positive.\n\n### Random network model\n\nExperimental recordings showed a great diversity across neural responses even when recording from the same class of cells (Pyramidal, SST, PV or VIP) (Pakan et al., 2016). Although this diversity can have many origins, such as intrinsic heterogeneity in the cells within the same class, we proposed that random connectivity alone is sufficient to explain it. To do so we develop an extension of our model where each population is composed of multiple identical randomly connected rate units and where the probability that one connection exists from one unit to another depends on the populations of the presynaptic and postsynaptic units according to data extracted from Jiang et al. (2015); Pfeffer et al. (2013) (see Materials\u00a0and\u00a0methods for details).\n\nFor each unit, we measure the rate modulation (rate during top-down modulation minus baseline activity) for the different baselines. If the rate modulation is positive it means that the neuron is more active in the presence of the modulatory current and vice versa. In Figure 3, we show scatter plots of the rate modulation under the low baseline condition versus the rate modulation under the high baseline condition for each unit. These simulations reveal that the behavior of individual neurons can be quite variable while the population average still corresponds to the behavior of the population-based model. Since all units of each population are identical, variability in the response has to be due to the heterogeneity in the connectivity. This variability can result in cells within the same population having responses with opposite sign, as has been observed to be the case in mouse V1 (Reimer et al., 2014; Pakan et al., 2016) and A1 (Kuchibhotla et al., 2017). In addition, variability might also have further implications for gating of signals, since variability in inhibitory cells has been proposed to modulate the response gain of neural circuits (Mejias and Longtin, 2014).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/29742/elife-29742-fig3-v4.jpg)\n\n**Figure 3.:** (a) Schematic of the model. Each population is composed of several rate units and the connectivity between units is random with probabilities extracted from experimental data in the literature. (b) Rate modulation (rate after the onset of the modulatory current minus baseline rate) for low and high baseline activities. Each colored point corresponds to one unit. Unit responses are very variable and, in particular within the same population different units might have responses with different sign. White points correspond to the population average. Despite the variability of individual responses the population average corresponds to the population responses in the single unit model in Figure 1.\n\n### Model of mouse V1 accounts for experimental measurements\n\nOur framework allows us to easily understand the counterintuitive behavior of V1 during locomotion. In the experiments mice with their head fixed face a screen where different visual stimuli are presented and can run freely on a treadmill (Fu et al., 2014; Pakan et al., 2016). Different visual stimuli result in different baseline activities in V1 and top-down modulation is triggered when the mice start running.\n\nTo model visual input we use external currents. In the case of size-varying gratings, this input has two sources: thalamic input that targets excitatory cells and cortical input that targets SST cells. In order to reproduce the surround suppression effect (Ozeki et al., 2009; Adesnik et al., 2012), excitatory cells have a small receptive field and therefore receive center input and SST cells have a large receptive field and receive surround input (see Materials\u00a0and\u00a0methods for details).\n\nFigure 4b shows the response reversal phenomenon when a weak visual stimulus is presented. Before the visual stimulation, the SST has higher activity for immobility than for locomotion, by contrast, when the visual stimulus is presented, the activity of the SST population is higher for locomotion. In Figure 4c, we show the experimental data from Pakan et al. (2016) for three different experimental conditions (darkness, gray screen and grating) and in Figure 4d our simulations of V1 under the same conditions. Figure 4\u2014figure supplement 1 shows the experimental data from the preprint (Dipoppa et al., 2017) for gratings of different sizes alongside with the behavior of our model.\n\nOur simulations of this V1 circuit model reproduce the phenomena described in the literature: in the presence of visual stimulation, the activities of all populations, including SST, increase during locomotion (Pakan et al., 2016). In darkness, the activities of excitatory, PV and VIP populations increase during locomotion while the activity of SST decreases as reported in Fu et al. (2014) and in the preprint (Dipoppa et al., 2017). In Pakan et al. (2016), the response of SST to locomotion in darkness is weakly positive but this result is not statistically significant while the other two are.\n\nTo show that our results do not rely on a fine tuning of the connectivity parameters or even on certain details of the microcircuit structure, we have run the model with several connectivity matrices and perturbations of them (Figure 4\u2014figure supplement 2) and we find that different connectivity parameters can reproduce the same circuit behavior as has been shown before in other systems (Marder et al., 2015). We have also considered other microcircuit structures to account for the differences between studies ([Pfeffer et al., 2013] reports projections from PV to VIP and (Jiang et al., 2015) from PV to SST) and we also consider thalamic input to PV (Figure 4\u2014figure supplement 3). In all these cases, the results were consistent with our original findings showing that the phenomenon and the analysis are robust and not a peculiarity of one specific circuit.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/29742/elife-29742-fig4-v4.jpg)\n\n**Figure 4.:** (a) Schematic of the microcircuit. Visual input targets E and SST cells. Behavior related top-down modulation targets VIP cells. (b) Response of E and SST populations when a weak visual stimulus (6 deg) is presented for locomotion and immobility. The E population always shows a higher response with locomotion. On the other hand, before the visual stimulation the SST population has higher activity for immobility than for locomotion and when the visual stimulus is presented, the activity of the SST population is higher for locomotion. (c) Relative change in calcium fluorescence for three levels of visual stimulation (darkness, gray screen and grating) and two behavioral states: immobility (empty bars) and locomotion (filled bars) extracted from Pakan et al. (2016). (d) Rates (in Hz) of the populations in the V1 simulation for the same conditions as in (c). Comparison of (c) with (d) shows that our simulations reproduce qualitatively the activity of neural populations in mice V1. Namely the activity of all populations is higher during locomotion than during immobility whenever there is visual stimulation and for E, PV and VIP also in the absence of visual stimulation. Our model shows a decrease in activity of SST during locomotion as reported in Fu et al. (2014) (the change in activity of the SST population in darkness in Pakan et al. (2016) is not statistically significant). The quantitative differences might be related to the fact that changes in calcium fluorescence are not proportional to changes in rate.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29742/elife-29742-fig4-figsupp1-v4.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Relative change in calcium fluorescence for gratings of diameters ranging from 10 deg to 60 deg for the two behavioral states: immobility (empty dots) and locomotion (filled dots) extracted from the preprint (Dipoppa et al., 2017) (b) Rates (in Hz) of the populations in the V1 simulation for the same conditions as in (a). As in Figure 4, our simulations reproduce qualitatively the activity of neural populations in mice V1. Our model also exhibits surround suppression for all populations.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29742/elife-29742-fig4-figsupp2-v4.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Top: Example of three connectivity matrices that have the same qualitative behavior (in pAs). Bottom: rate modulation (rate during locomotion minus rate for immobility). Each bar corresponds to the average rate modulation of 20 random perturbations of the matrices on the top where each entry has been multiplied by a random variable uniformly distributed in $[0.9,1.1]$, which corresponds to random changes of up to \u00b110%. Error bars correspond to the minimum and maximum rate modulations of the 20 realizations. Despite quantitative variations, the qualitative behavior is always the same: rate modulation of SST population in darkness is always negative; rate modulation for all other cases is always positive.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/29742/elife-29742-fig4-figsupp3-v4.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Two alternative microcircuits with visual input targeting E, SST and PV populations and PV to VIP (a) and PV to SST (b) connections exhibit the same qualitative behavior as the circuit in Figure 1 and Figure 4\u2014figure supplement 1.\n\n## Discussion\n\nWe have developed a theoretical model of cortical circuit with multiple interneuron types that accounts for newly identified complex interactions between cell types. The model has been used to reproduce and explain two counterintuitive phenomena observed in mouse cortex. First, in certain cases the activation of VIP cells results in an overall positive response of the SST population (Pakan et al., 2016). Second, the sign of the SST population response to excitation of VIP cells depends on the baseline activity of the circuit (Fu et al., 2014). Two features of the system lead to this behavior: the presence of multiple interneuron populations and the nonlinearity of f-I curves.\n\nWe explained heuristically the response reversal by closely looking at transient dynamics of the circuit. One experimentally\u00a0testable prediction of our analysis is that, as Figure 1d and our calculations of the transient behavior show, in the response reversal regime, the overall SST population response to top-down modulation should initially decrease and later increase until reaching a higher rate than the baseline.\n\nBased on our model, we introduced the response matrix $M$, which is a comprehensive framework to understand counterintuitive steady state responses. It provides explicit information about the contribution of each individual connection. For example by looking at the elements in $M_{S\u2062V}$ (see Table 3), one can readily see that if the recurrent excitation between pyramidal cells is not large enough, $M_{S\u2062V}$ can only be negative and therefore response reversal of SST would not happen. This statement can be easily tested by repeating the experiments while suppressing the activation of the E population. As we discussed before, another example is that if both SST and VIP populations have high baseline activities and if the SST-VIP-SST loop is strong enough, $M_{E\u2062E}$ can be negative, that\u00a0is the excitatory population can have a negative response to excitatory input (see Table 3 for the explicit expression of $M_{E\u2062E}$). If the connections between the SST and the VIP populations are removed (or weakened) or if their baseline activities are sufficiently lowered $M_{E\u2062E}$ will always be positive. This constitutes another interesting prediction that can be experimentally tested.\n\nOur calculations also revealed sign correlations between entries of $M$, for example $M_{S\u2062V}$ and $M_{S\u2062S}$ have opposite signs for any connectivity matrix (given the microcircuit) and for any baseline activity. This predicts that in the regime where SST activity has a positive response to excitatory input targeting VIP, SST has to have a negative response to external input targeting SST. In addition, our results are in line with experimental studies that show that VIP interneurons play an important role in cortical activity modulation (Mesik et al., 2015; Ibrahim et al., 2016; Jackson et al., 2016).\n\nOur approach constitutes a general conceptual framework in which previous work regarding complex cortical interactions can be better understood (Tsodyks et al., 1997; Ozeki et al., 2009; Litwin-Kumar et al., 2016). The analysis of the response matrix shows that for the given microcircuit structure all terms of the matrix can be positive or negative. This is not the case in E-I networks (networks with one excitatory (E) population and only one inhibitory (I) population) (Tsodyks et al., 1997; Ozeki et al., 2009). In that case $M_{E\u2062E}$ and $M_{I\u2062E}$ are always positive, $M_{E\u2062I}$ is always negative and only $M_{I\u2062I}$ can have both signs (see Materials\u00a0and\u00a0methods). In this sense, having more than one inhibitory population results in a much more versatile network. Another important point that can be derived from our calculations is the relationship between response reversal and inhibition stabilized networks (ISN) (Ozeki et al., 2009). Looking at the terms of the response matrix for an E-I network, we can see that the condition to have response reversal and the condition to be an ISN is the same: $W_{E\u2062E}$ has to be larger than $d_{E}^{\u221e}$. When analysing networks with more than one inhibitory population the relationship is not necessarily bidirectional any more. In the network that we analyzed, we found that in the high baseline activity the network is in the ISN regime and $M_{S\u2062V}$ is positive (as observed in [Litwin-Kumar et al., 2016), whereas in the low baseline activity the network is not in the ISN regime and $M_{S\u2062V}$ is negative, so in this case there is a clear relationship between being an ISN and exhibiting response reversal. However, the condition for other cases of response reversal such as $M_{E\u2062E}$ do not involve $W_{E\u2062E}$ and therefore do not require the network to be an ISN.\n\nFinally, this study provides a parsimonious yet powerful explanation to striking observations of interneuronal circuits in V1 (Fu et al., 2014; Pakan et al., 2016; Lee et al., 2017) without requiring the assumption of top-down excitatory inputs explicitly targeting SST or PV neurons. Both our computational neural network model and the approach presented here (the response matrix analysis) go beyond circuit dynamics in mice V1 and can be easily applied to other species and cortical areas. By extending previous works (Tsodyks et al., 1997; Ozeki et al., 2009), it naturally explains the response reversal observed in cat visual cortex (Ozeki et al., 2009). It could also be applied to explain similar phenomena observed in mouse primary auditory cortex (Seybold et al., 2015; Kuchibhotla et al., 2017). In particular, in Kuchibhotla et al. (2017), the authors find that locomotion reduces the activity of excitatory cells. Assuming that the main modulation in the circuit is mediated by VIP cells this observation implies that $M_{E\u2062V}<0$ which is the case when the connections $W_{E\u2062P}$ and $W_{P}\u2062S$ are strong enough. In mouse somatosensory cortex, activating VIP neurons results in an intuitive decrease in SST activity, instead of a response reversal (Lee et al., 2013). As our results suggest, this qualitative difference between V1 and somatosensory cortex may be explained by the quantitative difference between their circuit architectures: in a recent study the authors showed that cell densities of different types of interneurons differ substantially across cortical areas resulting in counterintuitive impacts on circuit responses (Kim et al., 2017). These responses can be readily understood using the response matrix.\n\nIn this work, we mainly focused on steady-state responses. However, neural responses in many cortical areas, including primary auditory cortex, are largely transient and dynamical (Wehr and Zador, 2003). In addition, synaptic connections to and from interneurons are often subject to short-term plasticity (Reyes et al., 1998). Understanding transient dynamics in nonlinear, multi-type interneuronal circuits would be an important topic for future research.\n\nWe have shown that similar to the now well-known paradoxical effect that the presence of a single inhibitory neuron type can cause (Tsodyks et al., 1997; Ozeki et al., 2009), the presence of multiple types of interneurons has an even stronger impact on the activity of neural circuits. We have also exposed the effect of nonlinearity of the f-I curve. Our analysis suggests that in a circuit with multiple populations, the most interesting circuit behavior is found when spontaneous baseline activity is close to threshold since in that regime responses will change the most with small changes in population rates. These two features significantly broaden the richness of the dynamics of cortical circuits and enhance their usefulness for cognitive and behavioral computations. We conclude that computational models and mathematical analysis are critical to fully understand the dynamics of neural circuits underlying behavior (Gjorgjieva et al., 2016), especially when several types of interneurons are involved as intuition alone may be misleading and provide erroneous predictions on such circuits.\n\n## Materials\u00a0and\u00a0methods\n\n### Firing-rate-based population model\n\nThe state of the system is characterized by the rates $r_{i}$. To model the average rate of each population we use a function of the input $V_{i}$ as the one introduced in Abbott and Chance (2005)\u00a0\n\n$$\nr_{i}=f\u2062(V_{i})=\\frac{V_{i}-V_{t\u2062h}}{\\tau\u2062(V_{t\u2062h}-V_{r})}\u2062\\frac{1}{1-e^{-(V_{i}-V_{t\u2062h})/v}}\n$$\n\nwhere $V_{t\u2062h}=-50$ mV and $V_{r}=-60$ mV are the threshold and reset potentials respectively, $\\tau$ is the membrane time constant and $v=1$ mV. $V_{i}$ is the average input to each of the populations and is given by\n\n$$\nV_{i}=V_{l}+(\\sumjW_{i\u2062j}\u2062r_{j}+I_{i}+I_{b\u2062k\u2062g}^{i})/g_{l}^{i}\n$$\n\nwhere $V_{l}=-70$ mV is the reversal potential and $g_{l}^{i}$ is the membrane conductance. $W$ is the connectivity matrix and therefore $\\sum_{j}W_{i\u2062j}\u2062r_{j}$ is the recurrent local input. $I_{i}$ is the external input current and $I_{b\u2062k\u2062g}^{i}$ is a constant current that is tuned to obtain the desired baseline activity and we find the specific values by solving the system $r_{i}=f(V_{l}+(\\sumjW_{ij}r_{j}+I_{i}+I_{bkg}^{i})/g_{l}^{i})$. For example, for the baseline activity steady-state the background currents needed to obtain the desired rates (1, 10, 3 and 2 Hz for pyramidal, PV, SST and VIP, respectively) are 114.7, 233.6, 94.3 and 89.9 pA. The rate dynamics are given by\n\n$$\n\\tau_{r}\u2062\\frac{d\u2062r_{i}}{d\u2062t}=-r_{i}+f\u2062(V_{i})\n$$\n\nwhere $\\tau_{r}=2$ ms (Gerstner, 2000). Since the parameters of the f-I curve are population dependent (see Table 2), different populations will have different rates for the same input. The nonlinearity of the f-I curve has very important consequences. Namely, for low input $f\u2062(V_{i})$ is almost flat, and therefore changes in the input will have almost no effect on the rate. By contrast, for strong input $f\u2062(V_{i})$ tends asymptotically to a straight line with slope $\\frac{1}{\\tau_{i}\u2062(V_{t\u2062h}-V_{r})}$ and changes in the input will elicit a large change in the rate. As we will show later, this feature is key to reproduce the response reversal observed in the experiments.\n\nThe connectivity matrix $W$ used in the simulations is generated by rejection sampling, that\u00a0is by generating random matrices that have the microcircuit structure given in Figure 1a and selecting the ones that produce the desired responses. The simulations of Figures 1 and 2 were done with the connectivity matrix given in Table 1.\n\n**Table 1.**\n Connectivity matrix (in pAs).\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th colspan=\"4\">From</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>E</th>\n      <th>PV</th>\n      <th>SST</th>\n      <th>VIP</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"4\">to</td>\n      <td>E</td>\n      <td>2.42</td>\n      <td>\u22120.33</td>\n      <td>\u22120.80</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>PV</td>\n      <td>2.97</td>\n      <td>\u22123.45</td>\n      <td>\u22122.13</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>SST</td>\n      <td>4.64</td>\n      <td>0</td>\n      <td>0</td>\n      <td>\u22122.79</td>\n    </tr>\n    <tr>\n      <td>VIP</td>\n      <td>0.71</td>\n      <td>0</td>\n      <td>\u22120.16</td>\n      <td>0</td>\n    </tr>\n  </tbody>\n</table>\n\nBehavioral state is modeled with a constant top-down modulatory current of 10 pA that targets VIP cells. The constant background inputs $I_{b\u2062k\u2062g}^{i}$ are set so that in the absence of the top-down modulatory current, the E, PV, SST and VIP populations will have spontaneous average rates of 1, 10, 3 and 2 Hz, respectively, for the low baseline activity scenario and 30, 50, 30 and 20 Hz for the high baseline activity.\n\n### Time derivatives of the rates after the onset of modulation\n\nIn this section, we calculate analytically the changes in rate right after the onset of the modulatory current. The intuition behind these calculations is that the initial change in activity of a population is driven by the fastest path from the external input to the neurons in that population.\n\nWe assume that the system is at a fixed point (therefore $\\frac{d\u2062r_{i}}{d\u2062t}=0$ for all populations) and that at time $t=0$ an excitatory top-down modulatory current targets the VIP population. Taking into account that the time derivatives of the rates are given by Equation (3) and since $f\u2062(V)$ is monotonously increasing and the modulatory current $I_{V}>0$, then $\\frac{d\u2062r_{V}}{d\u2062t}\u2062(0)$ will be positive and all other derivatives will still be 0. In order to estimate the behavior of the initial slope of\u00a0$\\frac{d\u2062r_{i}}{d\u2062t}$, we calculate the second derivatives at $t=0$:\n\n$$\n\\frac{d^{2}r_{i}}{dt^{2}}=\\frac{1}{\\tau_{i}}\\frac{d}{dt}(\u2212r_{i}+f(V_{i}))=\\frac{1}{\\tau_{i}}(\u2212\\frac{dr_{i}}{dt}+\\frac{df}{dV_{i}}\\sumj\\frac{dV_{i}}{dr_{j}}\\frac{dr_{j}}{dt})=\\frac{1}{\\tau_{i}}(\u2212\\frac{dr_{i}}{dt}+\\frac{df}{dV_{i}}\\frac{W_{iV}}{g_{l}^{i}}\\frac{dr_{V}}{dt})\n$$\n\nwhere in the last step we used the fact that $\\frac{d\u2062r_{i}\u2062(0)}{d\u2062t}=0$ except for VIP. Since $\\frac{d\u2062f}{d\u2062V_{i}}$, $g_{l}^{i}$ and $\\frac{d\u2062r_{V}}{d\u2062t}$ are positive, the sign of $\\frac{d^{2}\u2062r_{i}}{d\u2062t^{2}}$ will depend on the sign of $W_{i\u2062V}$. In particular, for SST we obtain\n\n$$\n\\frac{d^{2}\u2062r_{S}}{d\u2062t^{2}}=\\frac{1}{\\tau_{S}}\u2062\\frac{d\u2062f}{d\u2062V_{S}}\u2062\\frac{W_{S\u2062V}}{g_{l}^{S}}\u2062\\frac{d\u2062r_{V}}{d\u2062t}\u2062(0)<0,\n$$\n\nmeaning that in all regimes the initial (transient) response of the SST population to top-down modulation targeting VIP cells will be negative.\n\n### Response matrix and response reversal\n\nIn order to characterize the response of a population to external excitatory input to the network we calculate how its rate will change for a small change in external input. We focus on stationary states $r_{i}=f\u2062(V_{i})$. If we apply a small perturbation to the external input $\\delta\u2062I_{i}$, the network will reach a new stationary state\n\n$$\nr_{i}+\\delta\u2062r_{i}=f\u2062(V_{i}+\\delta\u2062V_{i})=f\u2062(V_{i})+f^{\u2032}\u2062(V_{i})\u2062\\delta\u2062V_{i}+O\u2062(\\delta\u2062V_{i}^{2})\n$$\n\nwhere $f^{\u2032}\u2062(V_{i})$ is the derivative of $f$ with respect to $V$ and\n\n$$\n\\delta\u2062V_{i}=(\\sumjW_{i\u2062j}\u2062\\delta\u2062r_{j}+\\delta\u2062I_{i})/g_{l}^{i}.\n$$\n\nSince $r_{i}=f\u2062(V_{i})$, when we linearize $f$ around $V$ and ignore terms of order $\\delta\u2062V^{2}$ and higher we obtain the following self-consistent equation\n\n$$\n\\delta\u2062r_{i}=f^{\u2032}\u2062(V_{i})\u2062(\\sumjW_{i\u2062j}\u2062\\delta\u2062r_{j}+\\delta\u2062I_{i})/g_{l}^{i}.\n$$\n\nWe define the entries of response matrix as the derivative $M_{i\u2062j}=\\frac{\\partial\u2061r_{i}}{\\partial\u2061I_{j}}$, which can be obtained from the limit $\\delta\u2062I_{j}\u21920$ in the system of equations given by (Equation 8) and in matrix form can be written as\n\n$$\nM=(D-W)^{-1}\n$$\n\nwhere $D$ is a diagonal matrix with entries $D_{i\u2062i}=g_{l,i}/f^{\u2032}\u2062(V_{i})$. As it was explained in the results section, the nonlinear behavior of the terms $D_{i\u2062i}$ is essential to explain the response reversal regime. $D_{i\u2062i}$ becomes arbitrarily large as $V_{i}\u2192-\u221e$ and decreases monotonically to $d_{i}^{\u221e}=\\tau_{i}\u2062(V_{t\u2062h}-V_{r})/g_{l}^{i}$ when $V_{i}\u2192\u221e$.\n\nIn Table 3, we give the explicit formulas to all the entries of the response matrix in terms of the entries of the connectivity matrix $W$ and $D$ (we denote $w=|W|$, $d_{i}=D_{i\u2062i}$ and $C=det\u2062(D-W)^{-1}$). Note that, because of the complex interactions in the network, the sign of $M_{i\u2062j}$ is never determined exclusively by that of $W_{i\u2062j}$.\n\n### Random network model\n\nWe consider a network with 800 E units, 100 PV units, 50 SST units and 50 VIP units. Each unit within a population has the same f-I curve with the parameters in Table 2. The probabilities $p_{i\u2062j}$ of a connection from each unit in population $j$ to each unit in population $i$ are estimated from data (Pfeffer et al., 2013; Jiang et al., 2015) and are given in Table 4.\n\n**Table 2.**\n Population-dependent parameters.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>E</th>\n      <th>PV</th>\n      <th>SST</th>\n      <th>VIP</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>6.25 nS</td>\n      <td>10 nS</td>\n      <td>five nS</td>\n      <td>five nS</td>\n      <td>gl</td>\n    </tr>\n    <tr>\n      <td>28 ms</td>\n      <td>8 ms</td>\n      <td>16 ms</td>\n      <td>16 ms</td>\n      <td>\u03c4</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 3.**\n Entries of the respone matrix.\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>ME\u2062E=C\u2062(wP\u2062P+dP)\u2062(dS\u2062dV-wS\u2062V\u2062wV\u2062S)</td>\n    </tr>\n    <tr>\n      <td>MP\u2062E=C\u2062(wP\u2062E\u2062(dS\u2062dV-wS\u2062V\u2062wV\u2062S)-wP\u2062S\u2062(wS\u2062E\u2062dV-wS\u2062V\u2062wV\u2062E))</td>\n    </tr>\n    <tr>\n      <td>MS\u2062E=C\u2062(wP\u2062P+dP)\u2062(wS\u2062E\u2062dV-wS\u2062V\u2062wV\u2062E)</td>\n    </tr>\n    <tr>\n      <td>MV\u2062E=C\u2062(wP\u2062P+dP)\u2062(wV\u2062E\u2062dS-wS\u2062E\u2062wV\u2062S)</td>\n    </tr>\n    <tr>\n      <td>ME\u2062P=-C\u2062wE\u2062P\u2062(dS\u2062dV-wS\u2062V\u2062wV\u2062S)</td>\n    </tr>\n    <tr>\n      <td>MP\u2062P=-C\u2062((wE\u2062E-dE)\u2062(dS\u2062dV-wS\u2062V\u2062wV\u2062S)+wE\u2062S\u2062(wS\u2062E\u2062dV-wS\u2062V\u2062wV\u2062E))</td>\n    </tr>\n    <tr>\n      <td>MS\u2062P=-C\u2062wE\u2062P\u2062(wS\u2062E\u2062dV-wS\u2062V\u2062wV\u2062E)</td>\n    </tr>\n    <tr>\n      <td>MV\u2062P=-C\u2062wE\u2062P\u2062(wV\u2062E\u2062dS-wS\u2062E\u2062wV\u2062S)</td>\n    </tr>\n    <tr>\n      <td>ME\u2062S=-C\u2062dV\u2062(wE\u2062S\u2062(wP\u2062P+dP)-wE\u2062P\u2062wP\u2062S)</td>\n    </tr>\n    <tr>\n      <td>MP\u2062S=-C\u2062dV\u2062(wE\u2062S\u2062wP\u2062E-(wE\u2062E-dE)\u2062wP\u2062S)</td>\n    </tr>\n    <tr>\n      <td>MS\u2062S=-C\u2062dV\u2062((wE\u2062E-dE)\u2062(wP\u2062P+dP)-wE\u2062P\u2062wP\u2062E)</td>\n    </tr>\n    <tr>\n      <td>MV\u2062S=-C\u2062(wV\u2062E\u2062(wE\u2062S\u2062(wP\u2062P+dP)-wE\u2062P\u2062wP\u2062S)+wV\u2062S\u2062((wE\u2062E-dE)\u2062(wP\u2062P+dP)-wE\u2062P\u2062wP\u2062E))</td>\n    </tr>\n    <tr>\n      <td>ME\u2062V=C\u2062wS\u2062V\u2062(wE\u2062S\u2062(wP\u2062P+dP)-wE\u2062P\u2062wP\u2062S)</td>\n    </tr>\n    <tr>\n      <td>MP\u2062V=C\u2062wS\u2062V\u2062(wE\u2062S\u2062wP\u2062E-(wE\u2062E-dE)\u2062wP\u2062S)</td>\n    </tr>\n    <tr>\n      <td>MS\u2062V=C\u2062wS\u2062V\u2062((wE\u2062E-dE)\u2062(wP\u2062P+dP)-wE\u2062P\u2062wP\u2062E)</td>\n    </tr>\n    <tr>\n      <td>MV\u2062V=C\u2062(wE\u2062S\u2062(wE\u2062S\u2062(wP\u2062P+dP)-wE\u2062P\u2062wP\u2062S)-dS\u2062((wE\u2062E-dE)\u2062(wP\u2062P+dP)-wE\u2062P\u2062wP\u2062E))</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 4.**\n Connection probabilities for the random network model.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th colspan=\"4\">From</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>E</th>\n      <th>PV</th>\n      <th>SST</th>\n      <th>VIP</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>0.02</td>\n      <td>1</td>\n      <td>1</td>\n      <td>0</td>\n      <td rowspan=\"4\">to</td>\n      <td>E</td>\n    </tr>\n    <tr>\n      <td>0.01</td>\n      <td>1</td>\n      <td>0.85</td>\n      <td>0</td>\n      <td>PV</td>\n    </tr>\n    <tr>\n      <td>0.01</td>\n      <td>0</td>\n      <td>0</td>\n      <td>\u22120.55</td>\n      <td>SST</td>\n    </tr>\n    <tr>\n      <td>0.01</td>\n      <td>0</td>\n      <td>0.5</td>\n      <td>0</td>\n      <td>VIP</td>\n    </tr>\n  </tbody>\n</table>\n\nThe strengths of the connections are rescaled so that the average input of a unit in population $i$ from all units in population $j$ is $W_{i\u2062j}$ as given in Table 1. More specifically, each unit in population $i$ will receive in average $m_{i\u2062j}=p_{i\u2062j}\u2062N_{j}$ projections from population $j$ (where $N_{j}$ is the number of units in population $j$) and therefore the weight of these connections will be $W_{i\u2062j}/m_{i\u2062j}$.\n\nTop-down modulatory current and background input is identical to all units within the same population and has the same value as in the population based model.\n\n### Mouse V1 model\n\nIn the simulations of V1 activity, we use the connectivity matrix given in Table 5.\n\n**Table 5.**\n Connectivity matrix for the mouse V1 model (in pAs).\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th colspan=\"4\">From</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>E</th>\n      <th>PV</th>\n      <th>SST</th>\n      <th>VIP</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"4\">to</td>\n      <td>E</td>\n      <td>3.30</td>\n      <td>\u22123.48</td>\n      <td>\u22122.98</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>PV</td>\n      <td>1.73</td>\n      <td>\u22124.25</td>\n      <td>\u22121.07</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>SST</td>\n      <td>3.50</td>\n      <td>0</td>\n      <td>0</td>\n      <td>\u22124.51</td>\n    </tr>\n    <tr>\n      <td>VIP</td>\n      <td>0.53</td>\n      <td>0</td>\n      <td>\u22120.13</td>\n      <td>0</td>\n    </tr>\n  </tbody>\n</table>\n\nWe model visual input with an external excitatory current that targets E and SST cells. In the experiments in Pakan et al. (2016) and in the preprint (Dipoppa et al., 2017) the authors consider three levels of visual stimulation which are: darkness, gray screen and grating. To model darkness condition, we assume a total absence of visual stimulation (therefore $I_{E}=0$ pA, $I_{S}=0$ pA). For gray screen, we use a small input current to the excitatory population ($I_{E}=50$ pA, $I_{S}=0$ pA). Finally to model different grating diameters the value of the input is a sigmoid function of the grating diameter $\\theta$:\n\n$$\nI_{i}(\\theta)=\\frac{a_{i}}{1+e^{\u2212\\theta/b_{i}+5}}\n$$\n\nwhere $b_{E}=2$, $b_{S}=6$, $a_{E}=100$ pA, $a_{S}=20$ pA. With this parameters E cells receive center input (input saturates for diameters $\u223c20$ deg) and SST cells receive surround input (input to SST saturates for diameters of $\u223c60$ deg) (Dipoppa et al., 2017).\n\nTo demonstrate that our results do hold for a wide range of connectivity matrices and do not have to be fine tuned, we simulate several different connectivity matrices that produce the same qualitative behavior. We also make perturbations of these matrices by multiplying each entry by a random variable uniformly distributed in the interval $[0.9,1.1]$. This amounts to randomly modifying each connection within \u00b110% of its original value (see Figure 4\u2014figure supplement 2).\n\nIn the alternative models of Figure 4\u2014figure supplement 3 where visual stimulus input also targets PV cells, we use $I_{P}=0$ pA for darkness, $I_{P}=10$ pA for gray screen and $b_{P}=2$, $a_{P}=20$ pA for gratings.\n\n### Response matrix for an E-I network\n\nFor the sake of completeness, here we analyze the response matrix for a fully connected E-I network (Tsodyks et al., 1997, Ozeki et al., 2009) . The connectivity matrix is\n\n$$\nW=[w_{E\u2062E}-w_{E\u2062I}w_{I\u2062E}-w_{I\u2062I}]\n$$\n\nand therefore the response matrix is\n\n$$\nM=(D-W)^{-1}=C\u2062[w_{I\u2062I}+d_{I}-w_{E\u2062I}w_{I\u2062E}-w_{E\u2062E}+d_{E}],\n$$\n\nwhere $C=((d_{E}-w_{E\u2062E})\u2062(w_{I\u2062I}+d_{I})+w_{E\u2062I}\u2062w_{I\u2062E})^{-1}$. Note that the only term that can change sign is $M_{I\u2062I}$ so the only population that can exhibit response reversal is the $I$ population. Furthermore, note that the condition for having response reversal ($w_{E\u2062E}>d_{E}^{\u221e}$) is the same that defines the ISN regime, so this two properties are equivalent in the E-I network.\n",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "c12e4379-d38f-4a06-ac88-8ba2e7f4c04a",
+      "submission_id": "6ec50e21-bbd7-444f-b706-1b4b27864897",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peter Latham, University College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.29742.sa1](https://doi.org/10.7554/eLife.29742.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Paradoxical response reversal of top-down modulation in cortical circuits with three interneuron types\" for consideration by eLife. Your article has been favorably evaluated by Timothy Behrens (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript presents some important insights into the diverse, counterintuitive behaviors of circuits with interacting inhibitory neuron populations. The authors show that, in a circuit with three types of interneuron, the functional sign of interactions can change depending on the exact activity level of the different cell types in the network \u2013 a population that inhibits another in one regime may suppress it in another regime. The essential features to enable this are: 1) more than one type of interneuron, 2) with diverse thresholds/nonlinearities. They relate this result to the experimental literature through citations, and directly compare their model results to data figures from other authors. In the discussion, they give testable predictions.\n\nEssential revisions:\n\n1) In the standard mode (van Vreeswijk and Sompolinsky, Neural Computation 1998), connectivity is high, and so the diagonal terms, di, are large. In this regime, there is no response reversal. It's an open question exactly how high connectivity is; it certainly isn't infinity, which is what physicists would like it to be, and the effective strength of the connectivity drops as the firing rate drops. However, when firing rates drop, fluctuations become important, and firing rate models become less believable. We're not asking the authors to do full network simulations (although we would suggest that it would be an interesting avenue for future research). However, they should at least comment on this. Even better would be a back of the envelope calculation showing that the connection strengths between populations are in the right range.\n\n2) The authors do a good job citing the relevant literature. However they avoid framing their work in the context of inhibitory stabilized networks (ISNs). ISNs have very strong recurrent excitation that needs to be stabilized by recurrent inhibition (Ozeki et al.), and show the signature of a complex transient before settling in the equilibrium state \u2013 reminiscent of the author's Figure 1D. As remarked in the manuscript the sign flip of MSV requires wEE to be sufficiently large. Is the network an ISN? Figure 2 of Litwin-Kumar et al. (2016) extends ISNs to circuits with multiple interneurons subtypes, and they show that if the total inhibition received by E cells reduces under VIP stimulation then the network is an ISN. What regime is the author's model in? Is this a useful label for their network?\n\n3) In Figure 2D, MEE is negative (-0.35), and if we understand things correctly, it's always negative in the high gain regime. Thus, in the high baseline activity state, an input to the pyramidal neuron population will result in a decrease of pyramidal neuron firing rates. This is at odds with most (all?) data sets. The authors remark on this feature in the last paragraph of the subsection \u201cCircuit behavior explained by response matrix\u201d, but do not address the plausibility of this prediction. Do the authors think this result is a problem for their model? More generally, with new parameters can the authors explain the sign flip in MSV without a sign flip in MEE or are these tethered together somehow?\n\n4) Dipoppa et al. 2016 is important for justifying the model and the authors cite it frequently (and even republish some of its figures). But this paper has not been peer-reviewed (it's a Biorxiv report), giving it the same veridical status as a personal communication or SFN abstract. It's not appropriate for a peer-reviewed manuscript to depend on data that has not been reviewed. In addition, we're not sure how this will affect Dipoppa et al.'s attempts to get their work published. eLife is peer reviewed, and many journals won't let you republish work that's already published in a peer reviewed journal. In this manuscript, the authors actually take figures out of the other group's non-reviewed preprint and publish them in their own paper.\n\nIt seems to us that Dipoppa et al. is not absolutely essential; Figure 4E could be dropped without affecting the paper much. If the authors do want to include it, they should do two things. First, they should make it crystal clear that Dipoppa et al. is not peer-reviewed, every single time the citation is made. They can leave no doubt in the readers' minds that data is not yet part of the scientific literature. Second, they should get permission from Dipoppa et al. before publishing their data. We're guessing eLife requires this, but even if it doesn't, it's not worth irritating one's colleagues for something that is not essential to one's story.\n",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e15d476f-9e7f-4ee0-a08a-348328f0cad8",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C1",
+      "claim": "Three major non-overlapping classes of interneurons expressing parvalbumin, somatostatin and vasoactive intestinal peptide make up more than 80% of GABAergic cells of mouse cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Three major non-overlapping classes of interneurons expressing parvalbumin, somatostatin and vasoactive intestinal peptide (henceforth denoted PV, SST and VIP respectively) make up more than 80% of GABAergic cells of mouse cortex (Rudy et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Rudy et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "760f67be-ac0c-40a5-94e7-b5ed90c8eec4",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C2",
+      "claim": "PV, SST, and VIP neurons show cell-type-specific connectivity among themselves and with excitatory neurons forming a canonical microcircuit in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "These neurons show cell-type-specific connectivity among themselves and with excitatory (E) neurons (Pfeffer et al., 2013; Jiang et al., 2015) forming a canonical microcircuit in the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Pfeffer et al., 2013 and Jiang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "9b3788f6-4f60-415f-a79c-357fb2dd60c7",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C3",
+      "claim": "The canonical microcircuit motif was initially proposed theoretically by Wang et al., 2004.",
+      "claim_type": "EXPLICIT",
+      "source": "This microcircuit motif, initially proposed theoretically (Wang et al., 2004), has been the subject of numerous recent experimental studies using optogenetic tools applied to behaving mice (Lee et al., 2012; Saleem et al., 2013; Kepecs and Fishell, 2014; Hawrylycz et al., 2016) as well as computational studies (Lee and Mihalas, 2015; Lee and Mihalas, 2017; Lee et al., 2017; Yang et al., 2016; Yang and Wang, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Wang et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "733b1b19-6c26-47d5-a81f-5a852f9908be",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C4",
+      "claim": "Pyramidal neurons and VIP interneurons concomitantly increase their activities in the primary visual cortex V1 during locomotion in comparison with immobility.",
+      "claim_type": "EXPLICIT",
+      "source": "A notable observation was that pyramidal neurons and VIP interneurons concomitantly increase their activities in the primary visual cortex V1 during locomotion in comparison with immobility (Niell and Stryker, 2010), even in the complete absence of visual input (Keller et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Niell and Stryker, 2010 and Keller et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "bf3874be-dea5-4d7d-a86b-f19e7fd92ecf",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C5",
+      "claim": "Pyramidal neurons and VIP interneurons increase their activities during locomotion even in the complete absence of visual input.",
+      "claim_type": "EXPLICIT",
+      "source": "A notable observation was that pyramidal neurons and VIP interneurons concomitantly increase their activities in the primary visual cortex V1 during locomotion in comparison with immobility (Niell and Stryker, 2010), even in the complete absence of visual input (Keller et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Keller et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "65685b80-61a2-485b-9d09-20f8ec435de3",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C6",
+      "claim": "Optogenetically activating VIP interneurons mimics the effect of running.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, optogenetically activating (respectively inactivating) VIP interneurons mimics (respectively eliminates) the effect of running (Fu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Fu et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "934d5204-3d87-488b-af0f-b0bd58b69aa6",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C7",
+      "claim": "Optogenetically inactivating VIP interneurons eliminates the effect of running.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, optogenetically activating (respectively inactivating) VIP interneurons mimics (respectively eliminates) the effect of running (Fu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Fu et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "6bcb80ab-135a-429c-89ba-294ecd577853",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C8",
+      "claim": "VIP cells primarily target SST cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Since VIP cells primarily target SST cells, a natural explanation for this phenomenon is disinhibition (Wang et al., 2004; Lee et al., 2013): activation of VIP cells suppresses SST cells, therefore neurons targeted by the SST population are disinhibited, enhancing the overall activity of excitatory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by the disinhibition mechanism described.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "2bec92f3-8b53-4a20-bda0-98d6a1d54856",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C9",
+      "claim": "In darkness, the activation of VIP cells results in an average decrease of SST population activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Namely, in darkness the activation of VIP cells results in an average decrease of SST population activity (Fu et al., 2014), whereas in the presence of visual stimulation the response of SST cells is reversed and its firing rate increases during locomotion compared to immobility (Pakan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Fu et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "f629d8b2-3162-4c71-8bb4-3ee8b37fe5d2",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C10",
+      "claim": "In the presence of visual stimulation, the response of SST cells is reversed and its firing rate increases during locomotion compared to immobility.",
+      "claim_type": "EXPLICIT",
+      "source": "Namely, in darkness the activation of VIP cells results in an average decrease of SST population activity (Fu et al., 2014), whereas in the presence of visual stimulation the response of SST cells is reversed and its firing rate increases during locomotion compared to immobility (Pakan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Pakan et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "bf1f1b8e-fc34-4a45-b86e-d45db2e26666",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C11",
+      "claim": "The findings about SST response reversal have been further confirmed in a recent preprint by Dipoppa et al., 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings, which have been further confirmed in a recent preprint (Dipoppa et al., 2017), appear to challenge the disinhibition hypothesis, suggesting that the nature of the interaction between VIP and SST could be stimulus dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Dipoppa et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "4b9aac65-882d-4f5e-afb7-ae2e5449843b",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C12",
+      "claim": "Counterintuitive phenomena in cortical networks rely on two basic features: the presence of multiple populations of interneurons and nonlinear responses to input.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that these counterintuitive phenomena rely on two basic features of cortical networks: (i) the presence of multiple populations of interneurons and (ii) nonlinear responses to input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the theoretical analysis and modeling presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "7db95d2b-062b-4da3-86a3-9cad3b894c06",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C13",
+      "claim": "The model uses a four population firing rate model to simulate microcircuit activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We simulate microcircuit activity using a four population firing rate model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the computational method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "466f2c6f-79b5-4798-ad1a-af5621e76bc2",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C14",
+      "claim": "The average rate of each population is given by a nonlinear function of its input referred to as the f-I curve.",
+      "claim_type": "EXPLICIT",
+      "source": "The average rate of each population is given by a nonlinear function of its input that we refer to as the f-I curve (Abbott and Chance, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the model structure and cites Abbott and Chance, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "f971d1c0-dc10-4f39-9313-22864cce0530",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C15",
+      "claim": "When input is low (below threshold), cells are little responsive to changes in external input.",
+      "claim_type": "EXPLICIT",
+      "source": "The f-I curve is such that when the input is low (below threshold), cells are little responsive to changes in external input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a property of the f-I curve used in the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "625120e7-606d-4cff-954b-9e23e0aeb869",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C16",
+      "claim": "When input is high (above threshold), small changes in the input can drive substantial changes in the response.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead for high input (above threshold) small changes in the input can drive substantial changes in the response (Miller and Troyer, 2002) (see Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by a citation to Miller and Troyer, 2002 and reference to Figure 1b.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "3908ae95-9268-49df-b2f2-88b5909a803c",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C17",
+      "claim": "The nonlinearity of the f-I curve has been analyzed experimentally and theoretically.",
+      "claim_type": "EXPLICIT",
+      "source": "This nonlinearity has been analyzed experimentally and theoretically (Murphy and Miller, 2003; Phillips and Hasenstaub, 2016) and as we will show later, it is a key feature of the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Murphy and Miller, 2003 and Phillips and Hasenstaub, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "2d5a0a9b-5b32-47e4-a9ad-fd79e44beb93",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C18",
+      "claim": "The nonlinearity of the f-I curve is a key feature of the model.",
+      "claim_type": "EXPLICIT",
+      "source": "This nonlinearity has been analyzed experimentally and theoretically (Murphy and Miller, 2003; Phillips and Hasenstaub, 2016) and as we will show later, it is a key feature of the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' analysis presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "ca511396-f158-419c-81ce-2a9666236cc2",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C19",
+      "claim": "Populations are connected according to the microcircuit scheme in Figure 1a which contains the connections reported in both Jiang et al., 2015 and Pfeffer et al., 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "Populations are connected according to the microcircuit scheme in Figure 1a which contains the connections reported in both Jiang et al., 2015 and Pfeffer et al. (2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim references Figure 1a and cites Jiang et al., 2015 and Pfeffer et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "a39946d2-51dc-4ef0-ac49-b90dbb27ec47",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C20",
+      "claim": "When baseline activity is low, top-down modulation results in a decrease of the rate of the SST population and an increase of the rates of the other populations (E, PV and VIP).",
+      "claim_type": "EXPLICIT",
+      "source": "On the one hand, when the baseline activity is low, top-down modulation will result in a decrease of the rate of the SST population and an increase of the rates of the other populations (E, PV and VIP) (see Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation results shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "eb504181-4424-48e5-85f3-21fe0e2b1ba5",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C21",
+      "claim": "When baseline activity is high, the rate of all populations increases with top-down modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, when baseline activity is high, the rate of all populations increases with top-down modulation (see Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation results shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "0dd2d987-52e6-48db-8f32-347019e89ef2",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C22",
+      "claim": "Population responses to top-down modulation depend in a complex way on the initial state of the network.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulations reveal that population responses to top-down modulation depend in a complex way on the initial state of the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from the simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "40b30a79-7560-4ada-a244-8e519c475147",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C23",
+      "claim": "When baseline activity is low, the E population is below threshold and changes in net input have a small effect on the output.",
+      "claim_type": "EXPLICIT",
+      "source": "When baseline activity is low the E population is below threshold and this change in net input has a small effect in the output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the model's f-I curve properties and simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "85bcb9ae-b9b1-4791-82e6-594ef7615fd6",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C24",
+      "claim": "When baseline activity is high, the E population is above threshold and a small change in input from SST cells has a big effect on the rate of the E population.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the baseline activity is high, the E population is above threshold and a small change in input from SST cells has a big effect on the rate of the E population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the model's f-I curve properties and simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "fbb5c7bf-6d88-42cf-9b86-615ef05a6c69",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C25",
+      "claim": "If the recurrent excitation in the microcircuit is strong enough, it can reverse the initial response of the SST population making it increase its activity to a higher rate than the baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "If the recurrent excitation in the microcircuit is strong enough, it can reverse the initial response of the SST population making it increase its activity to a higher rate than the baseline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the model's dynamics and simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "533ce4ae-27a7-42bd-9f26-b0fbc7b95e4b",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C31",
+      "claim": "Due to the nonlinearities in the f-I curve, the response depends on the baseline rate of each of the populations and can reverse its sign.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, due to the nonlinearities in the f-I curve, the response depends on the baseline rate of each of the populations and, as shown before, it can reverse its sign.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the mathematical analysis and simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "2522a2d2-f280-4f65-bcae-3f6bb2796d8c",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C35",
+      "claim": "Modifying the state of one population has an impact on the interactions between other populations.",
+      "claim_type": "EXPLICIT",
+      "source": "It is remarkable that this change in the interaction between VIP and SST populations depends on the activation level of E: modifying the state of one population has a impact in the interactions between other populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the mathematical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "9e88e6f3-06c3-456b-b97b-fcbc4945f762",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C36",
+      "claim": "If the recurrent excitation is strong enough and the E population is strongly excited (above threshold), a small decrease in the inhibition from SST to the E population can boost its activity and strongly drive the whole microcircuit.",
+      "claim_type": "EXPLICIT",
+      "source": "The heuristic explanation is that if the recurrent excitation is strong enough and the E population is already strongly excited (above threshold), a small decrease in the inhibition from SST to the E population can boost its activity and therefore strongly drive the whole microcircuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim provides a mechanistic explanation based on the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "ae436b1a-13e7-4b55-9fda-04e9286b2b0d",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C37",
+      "claim": "If the E population is in a low activation state, the change in inhibition will have a weak effect that will not be able to reverse the response of SST.",
+      "claim_type": "EXPLICIT",
+      "source": "If instead, the E population is in a low activation state the change in inhibition will have a weak effect that will not be able to reverse the response of SST.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim provides a mechanistic explanation based on the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "601e10bf-b756-4d3a-a918-2a8bc60619ea",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C39",
+      "claim": "For high baseline activity, the response of the SST population to input to VIP cells becomes positive leading to the response reversal regime.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, for high baseline activity (panels 2b and 2d), the response of the SST population to input to VIP cells becomes positive leading to the response reversal regime.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the analysis and Figure 2b and d.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "5301b64c-ff27-4c7e-b4c7-1b3b4c3b15e1",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C44",
+      "claim": "Experimental recordings showed a great diversity across neural responses even when recording from the same class of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental recordings showed a great diversity across neural responses even when recording from the same class of cells (Pyramidal, SST, PV or VIP) (Pakan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Pakan et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "3303cb50-9bd8-46ff-ac35-aa869edf218f",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C45",
+      "claim": "Random connectivity alone is sufficient to explain the diversity in neural responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this diversity can have many origins, such as intrinsic heterogeneity in the cells within the same class, we proposed that random connectivity alone is sufficient to explain it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis proposed by the authors and tested in their model.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "14404240-5333-47e6-a640-f83fed82d113",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C46",
+      "claim": "In the random network model, each population is composed of multiple identical randomly connected rate units.",
+      "claim_type": "EXPLICIT",
+      "source": "To do so we develop an extension of our model where each population is composed of multiple identical randomly connected rate units and where the probability that one connection exists from one unit to another depends on the populations of the presynaptic and postsynaptic units according to data extracted from Jiang et al. (2015); Pfeffer et al. (2013) (see Materials and methods for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the structure of the random network model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "7db6131d-4e85-4a08-a664-2ad600c8b25f",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C47",
+      "claim": "The probability that one connection exists from one unit to another depends on the populations of the presynaptic and postsynaptic units according to data extracted from Jiang et al. (2015); Pfeffer et al. (2013).",
+      "claim_type": "EXPLICIT",
+      "source": "To do so we develop an extension of our model where each population is composed of multiple identical randomly connected rate units and where the probability that one connection exists from one unit to another depends on the populations of the presynaptic and postsynaptic units according to data extracted from Jiang et al. (2015); Pfeffer et al. (2013) (see Materials and methods for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Jiang et al., 2015 and Pfeffer et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "cee401c2-07bf-4c0c-b016-1a3ddeb89ec9",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C48",
+      "claim": "The behavior of individual neurons can be quite variable while the population average still corresponds to the behavior of the population-based model.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulations reveal that the behavior of individual neurons can be quite variable while the population average still corresponds to the behavior of the population-based model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation results from the random network model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "a1c32222-2a96-41a8-925c-b1b98a0f72be",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C49",
+      "claim": "Since all units of each population are identical, variability in the response has to be due to the heterogeneity in the connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Since all units of each population are identical, variability in the response has to be due to the heterogeneity in the connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the model structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "019952b5-c2d5-446a-b2f6-4ebba9345fa4",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C50",
+      "claim": "Variability in connectivity can result in cells within the same population having responses with opposite sign, as has been observed in mouse V1.",
+      "claim_type": "EXPLICIT",
+      "source": "This variability can result in cells within the same population having responses with opposite sign, as has been observed to be the case in mouse V1 (Reimer et al., 2014; Pakan et al., 2016) and A1 (Kuchibhotla et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Reimer et al., 2014, Pakan et al., 2016, and Kuchibhotla et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "00c08314-52f8-4d5d-8104-a8f948fa1335",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C51",
+      "claim": "Variability in inhibitory cells has been proposed to modulate the response gain of neural circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, variability might also have further implications for gating of signals, since variability in inhibitory cells has been proposed to modulate the response gain of neural circuits (Mejias and Longtin, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Mejias and Longtin, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "6d06f5ba-c02b-4af5-b8ca-863cfb3463ec",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C52",
+      "claim": "In the experiments, mice with their head fixed face a screen where different visual stimuli are presented and can run freely on a treadmill.",
+      "claim_type": "EXPLICIT",
+      "source": "In the experiments mice with their head fixed face a screen where different visual stimuli are presented and can run freely on a treadmill (Fu et al., 2014; Pakan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental setup and is supported by citations to Fu et al., 2014 and Pakan et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "62de8f04-215b-4a62-91a1-91856a4fb186",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C53",
+      "claim": "Different visual stimuli result in different baseline activities in V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Different visual stimuli result in different baseline activities in V1 and top-down modulation is triggered when the mice start running.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the experimental observations and model interpretation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "31171c37-21be-4832-8964-b4d726d71721",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C54",
+      "claim": "Top-down modulation is triggered when the mice start running.",
+      "claim_type": "EXPLICIT",
+      "source": "Different visual stimuli result in different baseline activities in V1 and top-down modulation is triggered when the mice start running.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "c023162b-7a74-439e-b35c-986f94c38df9",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C55",
+      "claim": "In the model of size-varying gratings, visual input has two sources: thalamic input that targets excitatory cells and cortical input that targets SST cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To model visual input we use external currents. In the case of size-varying gratings, this input has two sources: thalamic input that targets excitatory cells and cortical input that targets SST cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the model structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "3bad827f-6981-43d6-abbd-9d98e213c5d0",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C56",
+      "claim": "In order to reproduce the surround suppression effect, excitatory cells have a small receptive field and receive center input, and SST cells have a large receptive field and receive surround input.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to reproduce the surround suppression effect (Ozeki et al., 2009; Adesnik et al., 2012), excitatory cells have a small receptive field and therefore receive center input and SST cells have a large receptive field and receive surround input (see Materials and methods for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the model structure and cites Ozeki et al., 2009 and Adesnik et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "4572b116-0be3-4116-a175-e70854ca710b",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C57",
+      "claim": "Before the visual stimulation, the SST has higher activity for immobility than for locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4b shows the response reversal phenomenon when a weak visual stimulus is presented. Before the visual stimulation, the SST has higher activity for immobility than for locomotion, by contrast, when the visual stimulus is presented, the activity of the SST population is higher for locomotion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "1331edba-3757-48ef-bfcb-abc44bdbf9f8",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C58",
+      "claim": "When the visual stimulus is presented, the activity of the SST population is higher for locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4b shows the response reversal phenomenon when a weak visual stimulus is presented. Before the visual stimulation, the SST has higher activity for immobility than for locomotion, by contrast, when the visual stimulus is presented, the activity of the SST population is higher for locomotion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "26a77afe-be4e-4f30-b41f-75fb483ed890",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C59",
+      "claim": "The simulations of the V1 circuit model reproduce the phenomena described in the literature.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations of this V1 circuit model reproduce the phenomena described in the literature: in the presence of visual stimulation, the activities of all populations, including SST, increase during locomotion (Pakan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of simulation results with experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "40c3fad1-16d0-471a-afda-70bfe0d73db3",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C60",
+      "claim": "In the presence of visual stimulation, the activities of all populations, including SST, increase during locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations of this V1 circuit model reproduce the phenomena described in the literature: in the presence of visual stimulation, the activities of all populations, including SST, increase during locomotion (Pakan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Pakan et al., 2016 and simulation results.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "df1203b2-dbe7-4082-b21a-2de1f4d1cb9d",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C61",
+      "claim": "In darkness, the activities of excitatory, PV and VIP populations increase during locomotion while the activity of SST decreases as reported in Fu et al. (2014) and in the preprint (Dipoppa et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "In darkness, the activities of excitatory, PV and VIP populations increase during locomotion while the activity of SST decreases as reported in Fu et al. (2014) and in the preprint (Dipoppa et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Fu et al., 2014 and Dipoppa et al., 2017, and simulation results.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "39f4773d-b352-49d3-9d68-8d40d5bf68a7",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C62",
+      "claim": "In Pakan et al. (2016), the response of SST to locomotion in darkness is weakly positive but this result is not statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "In Pakan et al. (2016), the response of SST to locomotion in darkness is weakly positive but this result is not statistically significant while the other two are.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the experimental results reported in Pakan et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "358d85dd-7a52-4df3-b9cf-3ff3075fcc7b",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C63",
+      "claim": "The results do not rely on a fine tuning of the connectivity parameters or on certain details of the microcircuit structure.",
+      "claim_type": "EXPLICIT",
+      "source": "To show that our results do not rely on a fine tuning of the connectivity parameters or even on certain details of the microcircuit structure, we have run the model with several connectivity matrices and perturbations of them (Figure 4\u2014figure supplement 2) and we find that different connectivity parameters can reproduce the same circuit behavior as has been shown before in other systems (Marder et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulations with different connectivity matrices shown in Figure 4\u2014figure supplement 2 and citation to Marder et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "2d496681-88dd-49f0-9f45-e0302f6d5901",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C64",
+      "claim": "Different connectivity parameters can reproduce the same circuit behavior as has been shown before in other systems.",
+      "claim_type": "EXPLICIT",
+      "source": "To show that our results do not rely on a fine tuning of the connectivity parameters or even on certain details of the microcircuit structure, we have run the model with several connectivity matrices and perturbations of them (Figure 4\u2014figure supplement 2) and we find that different connectivity parameters can reproduce the same circuit behavior as has been shown before in other systems (Marder et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Marder et al., 2015 and simulation results.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "a8a4ee11-6cd7-4459-b2f4-a4c7d8d99cd6",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C65",
+      "claim": "The phenomenon and the analysis are robust and not a peculiarity of one specific circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "In all these cases, the results were consistent with our original findings showing that the phenomenon and the analysis are robust and not a peculiarity of one specific circuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulations with different circuit structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "b1e77e87-8e0f-488f-91da-5dd008eff2dd",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C66",
+      "claim": "Two features of the system lead to the counterintuitive behavior: the presence of multiple interneuron populations and the nonlinearity of f-I curves.",
+      "claim_type": "EXPLICIT",
+      "source": "We have developed a theoretical model of cortical circuit with multiple interneuron types that accounts for newly identified complex interactions between cell types. The model has been used to reproduce and explain two counterintuitive phenomena observed in mouse cortex. First, in certain cases the activation of VIP cells results in an overall positive response of the SST population (Pakan et al., 2016). Second, the sign of the SST population response to excitation of VIP cells depends on the baseline activity of the circuit (Fu et al., 2014). Two features of the system lead to this behavior: the presence of multiple interneuron populations and the nonlinearity of f-I curves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion from the theoretical analysis and modeling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "4031137c-fb71-48f7-8746-bf1918da53af",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C67",
+      "claim": "In the response reversal regime, the overall SST population response to top-down modulation should initially decrease and later increase until reaching a higher rate than the baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "One experimentally testable prediction of our analysis is that, as Figure 1d and our calculations of the transient behavior show, in the response reversal regime, the overall SST population response to top-down modulation should initially decrease and later increase until reaching a higher rate than the baseline.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a prediction based on the model and Figure 1d.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "41382c3b-262c-451a-ae97-80df13fcae60",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C69",
+      "claim": "This statement can be easily tested by repeating the experiments while suppressing the activation of the E population.",
+      "claim_type": "EXPLICIT",
+      "source": "This statement can be easily tested by repeating the experiments while suppressing the activation of the E population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a prediction for experimental testing.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "0e42c8e3-7b4f-4e56-97c1-efa3467cd5f0",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C73",
+      "claim": "In the regime where SST activity has a positive response to excitatory input targeting VIP, SST has to have a negative response to external input targeting SST.",
+      "claim_type": "EXPLICIT",
+      "source": "This predicts that in the regime where SST activity has a positive response to excitatory input targeting VIP, SST has to have a negative response to external input targeting SST.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a prediction based on the sign correlation between M_SV and M_SS.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "b61ee4d7-0ce3-4f60-a4ef-4e741c5fa961",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C74",
+      "claim": "VIP interneurons play an important role in cortical activity modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our results are in line with experimental studies that show that VIP interneurons play an important role in cortical activity modulation (Mesik et al., 2015; Ibrahim et al., 2016; Jackson et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Mesik et al., 2015, Ibrahim et al., 2016, and Jackson et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "d7ebd6b0-1e40-4b57-a1d4-8ce361c883c8",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C75",
+      "claim": "For the given microcircuit structure, all terms of the response matrix can be positive or negative.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of the response matrix shows that for the given microcircuit structure all terms of the matrix can be positive or negative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the mathematical analysis of the response matrix.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "e27c4b8c-257b-4121-8dd4-1d86fd87e35b",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C77",
+      "claim": "Having more than one inhibitory population results in a much more versatile network.",
+      "claim_type": "EXPLICIT",
+      "source": "In this sense, having more than one inhibitory population results in a much more versatile network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the comparison between multi-interneuron and E-I networks.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "33319364-5dda-4f90-9d10-871faa432abf",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C79",
+      "claim": "In networks with more than one inhibitory population, the relationship between response reversal and ISN is not necessarily bidirectional.",
+      "claim_type": "EXPLICIT",
+      "source": "When analysing networks with more than one inhibitory population the relationship is not necessarily bidirectional any more.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the mathematical analysis of multi-interneuron networks.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "8f274a8f-93b7-48e9-9911-e441e638bb30",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C83",
+      "claim": "This study provides a parsimonious yet powerful explanation to striking observations of interneuronal circuits in V1 without requiring the assumption of top-down excitatory inputs explicitly targeting SST or PV neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, this study provides a parsimonious yet powerful explanation to striking observations of interneuronal circuits in V1 (Fu et al., 2014; Pakan et al., 2016; Lee et al., 2017) without requiring the assumption of top-down excitatory inputs explicitly targeting SST or PV neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion from the modeling work and cites Fu et al., 2014, Pakan et al., 2016, and Lee et al., 2017.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "0047800c-c3d9-4ced-ae5b-9b49d9c8a817",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C84",
+      "claim": "The computational neural network model and the response matrix analysis go beyond circuit dynamics in mice V1 and can be easily applied to other species and cortical areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Both our computational neural network model and the approach presented here (the response matrix analysis) go beyond circuit dynamics in mice V1 and can be easily applied to other species and cortical areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement about the generalizability of the approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "b11b46aa-071b-4a49-9358-fc2e4a7b66fd",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C85",
+      "claim": "The approach naturally explains the response reversal observed in cat visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "By extending previous works (Tsodyks et al., 1997; Ozeki et al., 2009), it naturally explains the response reversal observed in cat visual cortex (Ozeki et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Tsodyks et al., 1997 and Ozeki et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "8191050c-bdcc-4f2a-8ec6-e0b2c097e791",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C86",
+      "claim": "The approach could be applied to explain similar phenomena observed in mouse primary auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "It could also be applied to explain similar phenomena observed in mouse primary auditory cortex (Seybold et al., 2015; Kuchibhotla et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation supported by citations to Seybold et al., 2015 and Kuchibhotla et al., 2017.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "340aafb0-df86-48d2-8266-5db1b393a703",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C87",
+      "claim": "In Kuchibhotla et al. (2017), the authors find that locomotion reduces the activity of excitatory cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, in Kuchibhotla et al. (2017), the authors find that locomotion reduces the activity of excitatory cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kuchibhotla et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "1fb07de1-be2d-4d00-85df-1bca7c22a969",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C90",
+      "claim": "In mouse somatosensory cortex, activating VIP neurons results in an intuitive decrease in SST activity, instead of a response reversal.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse somatosensory cortex, activating VIP neurons results in an intuitive decrease in SST activity, instead of a response reversal (Lee et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lee et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "bd81d93b-49c0-4213-b29f-f42f8107878c",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C91",
+      "claim": "The qualitative difference between V1 and somatosensory cortex may be explained by the quantitative difference between their circuit architectures.",
+      "claim_type": "EXPLICIT",
+      "source": "As our results suggest, this qualitative difference between V1 and somatosensory cortex may be explained by the quantitative difference between their circuit architectures: in a recent study the authors showed that cell densities of different types of interneurons differ substantially across cortical areas resulting in counterintuitive impacts on circuit responses (Kim et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation supported by a citation to Kim et al., 2017.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "7634524e-ac04-434a-94da-3c4cff3e8b1d",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C92",
+      "claim": "Cell densities of different types of interneurons differ substantially across cortical areas resulting in counterintuitive impacts on circuit responses.",
+      "claim_type": "EXPLICIT",
+      "source": "As our results suggest, this qualitative difference between V1 and somatosensory cortex may be explained by the quantitative difference between their circuit architectures: in a recent study the authors showed that cell densities of different types of interneurons differ substantially across cortical areas resulting in counterintuitive impacts on circuit responses (Kim et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kim et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "bc43c967-2af0-478f-a91b-530ad7137ff6",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C93",
+      "claim": "Neural responses in many cortical areas, including primary auditory cortex, are largely transient and dynamical.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we mainly focused on steady-state responses. However, neural responses in many cortical areas, including primary auditory cortex, are largely transient and dynamical (Wehr and Zador, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Wehr and Zador, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "5c5bb24e-4946-4721-b3d7-c8ad7f326838",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C94",
+      "claim": "Synaptic connections to and from interneurons are often subject to short-term plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, synaptic connections to and from interneurons are often subject to short-term plasticity (Reyes et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Reyes et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "a8500635-11fb-4eef-8f38-0e9d4ac8a463",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C95",
+      "claim": "Understanding transient dynamics in nonlinear, multi-type interneuronal circuits would be an important topic for future research.",
+      "claim_type": "EXPLICIT",
+      "source": "Understanding transient dynamics in nonlinear, multi-type interneuronal circuits would be an important topic for future research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "4c81b843-e6f6-4946-90e2-dab566f73584",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C96",
+      "claim": "The presence of a single inhibitory neuron type can cause paradoxical effects.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that similar to the now well-known paradoxical effect that the presence of a single inhibitory neuron type can cause (Tsodyks et al., 1997; Ozeki et al., 2009), the presence of multiple types of interneurons has an even stronger impact on the activity of neural circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Tsodyks et al., 1997 and Ozeki et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "49be87f0-ef08-4e1a-8315-f85e75d046c3",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C97",
+      "claim": "The presence of multiple types of interneurons has an even stronger impact on the activity of neural circuits than a single inhibitory neuron type.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that similar to the now well-known paradoxical effect that the presence of a single inhibitory neuron type can cause (Tsodyks et al., 1997; Ozeki et al., 2009), the presence of multiple types of interneurons has an even stronger impact on the activity of neural circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion from the analysis comparing single and multiple interneuron types.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "ea436bc1-9d9b-4b9c-9102-c868f8cd5d29",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C98",
+      "claim": "In a circuit with multiple populations, the most interesting circuit behavior is found when spontaneous baseline activity is close to threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis suggests that in a circuit with multiple populations, the most interesting circuit behavior is found when spontaneous baseline activity is close to threshold since in that regime responses will change the most with small changes in population rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the analysis of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "ab21ca1d-9851-4190-9a16-1fb3576c9b03",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C99",
+      "claim": "The two features (multiple populations and nonlinearity) significantly broaden the richness of the dynamics of cortical circuits and enhance their usefulness for cognitive and behavioral computations.",
+      "claim_type": "EXPLICIT",
+      "source": "These two features significantly broaden the richness of the dynamics of cortical circuits and enhance their usefulness for cognitive and behavioral computations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion from the analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "77e2704b-85d3-41e1-adf1-4a7e418a3b00",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C100",
+      "claim": "Computational models and mathematical analysis are critical to fully understand the dynamics of neural circuits underlying behavior, especially when several types of interneurons are involved.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that computational models and mathematical analysis are critical to fully understand the dynamics of neural circuits underlying behavior (Gjorgjieva et al., 2016), especially when several types of interneurons are involved as intuition alone may be misleading and provide erroneous predictions on such circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion supported by a citation to Gjorgjieva et al., 2016.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "43c1b47b-99b4-4573-9e03-582bc9165192",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "claim_id": "C101",
+      "claim": "Intuition alone may be misleading and provide erroneous predictions on circuits with several types of interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that computational models and mathematical analysis are critical to fully understand the dynamics of neural circuits underlying behavior (Gjorgjieva et al., 2016), especially when several types of interneurons are involved as intuition alone may be misleading and provide erroneous predictions on such circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion from the analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "73e9fcde-4eca-41ac-a0be-ff8ae4d4c52d",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the background on cortical interneuron populations, stating that PV, SST, and VIP interneurons constitute >80% of GABAergic cells in mouse cortex and form a canonical microcircuit with cell-type-specific connectivity patterns originally proposed by Wang et al., 2004.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 are all supported by appropriate citations to prior work (Rudy et al., 2011; Pfeffer et al., 2013; Jiang et al., 2015; Wang et al., 2004). These are well-established facts in the field and serve as the foundation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "89d3e5c3-9262-4f16-86b2-e5f71d483524",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior experimental work has shown that pyramidal and VIP neurons increase activity during locomotion (even without visual input), that optogenetic manipulation of VIP neurons mimics or eliminates locomotion effects, and that SST responses to VIP activation differ between darkness (decrease) and visual stimulation (increase), challenging simple disinhibition models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C11 accurately summarize prior experimental findings with appropriate citations (Niell and Stryker, 2010; Keller et al., 2012; Fu et al., 2014; Pakan et al., 2016; Dipoppa et al., 2017). These claims establish the paradoxical phenomena that the current modeling work aims to explain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "ca0ccf2c-f088-418b-8598-af753aebf6e9",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors conclude that counterintuitive cortical circuit behaviors rely on two key features: (i) multiple interneuron populations and (ii) nonlinear f-I curves, with multiple interneuron types having a stronger impact than single inhibitory populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C66, C97, and C99 represent the central theoretical conclusion of the manuscript. The modeling work, mathematical analysis (response matrix), and simulations consistently demonstrate that these two features are necessary and sufficient to explain response reversal phenomena. The comparison with E-I networks (C96-C97) provides additional support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "c6be2258-4f07-4f6f-aa5c-5bef9e49803b",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors developed a four-population firing rate model with nonlinear f-I curves where populations are connected according to experimentally-derived microcircuit connectivity, with the nonlinearity being a key feature enabling response reversal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C19 describe the model structure and are well-supported. The f-I curve formulation is cited (Abbott and Chance, 2005; Miller and Troyer, 2002), the nonlinearity has experimental/theoretical support (Murphy and Miller, 2003; Phillips and Hasenstaub, 2016), and connectivity is based on experimental data (Jiang et al., 2015; Pfeffer et al., 2013). The model is clearly described in Materials and methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "77d88d4c-7e01-4d2f-bb7a-ea7efbabc68c",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Model simulations show that population responses to top-down modulation depend on baseline activity: low baseline results in SST decrease and other populations increase, while high baseline results in all populations increasing, with the SST response reversal explained by threshold effects and recurrent excitation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C25 are supported by simulation results shown in Figures 1c and 1d. The mechanistic explanation based on f-I curve threshold effects and recurrent excitation is logically consistent with the model structure. The transient dynamics calculations (Materials and methods) provide additional analytical support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "d7c150bf-005b-4bb4-9a3d-1b24f0438643",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The response matrix analysis reveals that due to f-I curve nonlinearities, responses depend on baseline rates and can reverse sign, with the state of one population (E) affecting interactions between other populations (VIP-SST), leading to response reversal at high baseline activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31, C35-C37, and C39 are supported by the mathematical analysis of the response matrix (Equation 1 and Table 3) and Figure 2. The explicit formula for M_SV shows how recurrent excitation and threshold effects combine to produce response reversal. The mechanistic explanations are consistent with the model dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "916c82ea-d970-4864-a183-6291163463c8",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A random network model with connectivity probabilities from experimental data shows that random connectivity alone can explain diversity in neural responses within cell types, with individual neurons showing variable responses while population averages match the mean-field model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C50 are supported by the random network simulations (Figure 3) and connectivity probabilities from experimental data (Table 4). The observation that identical units show response variability due to connectivity heterogeneity is logically sound. Citations to experimental observations of within-type diversity (Reimer et al., 2014; Pakan et al., 2016; Kuchibhotla et al., 2017) support C50. However, C45 is somewhat overstated\u2014the model shows random connectivity is sufficient but doesn't rule out other sources of diversity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "eee49f56-53e7-41f0-a9c3-f43981fa3261",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The V1 model with visual input to E and SST cells reproduces experimental observations: all populations including SST increase during locomotion with visual stimulation, while in darkness SST decreases and other populations increase, demonstrating response reversal dependent on visual input.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C62 are supported by model simulations (Figures 4b-d and supplements) that qualitatively match experimental data from Pakan et al., 2016; Fu et al., 2014; and Dipoppa et al., 2017. The model structure (visual input to E and SST, surround suppression) is appropriately designed and cited (Ozeki et al., 2009; Adesnik et al., 2012). The authors appropriately note quantitative differences and statistical significance issues (C62).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "f5948c82-57c3-4265-a82d-1c7607ce79b0",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The model results are robust to variations in connectivity parameters and circuit structure, with different connectivity matrices and \u00b110% perturbations producing consistent qualitative behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 are supported by simulations with multiple connectivity matrices and perturbations (Figure 4\u2014figure supplements 2-3). The citation to Marder et al., 2015 appropriately contextualizes parameter degeneracy. This robustness analysis strengthens confidence that the results are not due to fine-tuning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "fbdd7d1b-120f-4b31-a508-8f053604289b",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The model makes testable predictions: (1) SST response should initially decrease then increase in response reversal regime, (2) suppressing E population should prevent response reversal, and (3) positive M_SV correlates with negative M_SS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67, C69, and C73 are logical predictions from the model and mathematical analysis. C67 is supported by Figure 1d and transient dynamics calculations. C69 follows from the role of recurrent excitation in the response matrix formula. C73 is a mathematical consequence of the response matrix structure (Table 3). These are valid, testable predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "14ddf96b-cb60-4f94-9344-fc6f9ef9a40b",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The response matrix analysis shows that all matrix entries can be positive or negative in multi-interneuron networks (unlike E-I networks), making them more versatile, and that the relationship between response reversal and ISN is not bidirectional in multi-interneuron networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75, C77, and C79 are supported by the mathematical analysis comparing multi-interneuron networks to E-I networks (Table 3 and Materials and methods). The explicit formulas show that all response matrix entries can change sign, unlike E-I networks where some entries have fixed signs. The ISN analysis is mathematically sound. C74 is appropriately cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "68472875-7d25-4530-8d65-e2dc6075c151",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The modeling framework provides a parsimonious explanation for V1 observations without requiring top-down inputs to SST/PV, can be applied to other cortical areas and species (cat V1, mouse A1, somatosensory cortex), with differences across areas potentially explained by quantitative circuit architecture differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C92 are appropriately supported. C83 is a valid conclusion from the modeling work. C84-C86 are reasonable claims about generalizability, appropriately cited (Tsodyks et al., 1997; Ozeki et al., 2009; Seybold et al., 2015; Kuchibhotla et al., 2017). C87, C90, and C92 accurately cite experimental findings. C91 is appropriately framed as speculation ('may be explained') and supported by Kim et al., 2017.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "3080386d-1db4-49f1-9ba8-e25c0844a995",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors acknowledge limitations: the work focused on steady-state responses while neural responses are often transient and subject to short-term plasticity, suggesting transient dynamics in multi-interneuron circuits as important future work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C95 appropriately acknowledge limitations of the current work with proper citations (Wehr and Zador, 2003; Reyes et al., 1998). This is a fair assessment of the scope and limitations of the steady-state analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    },
+    {
+      "id": "f1e8b249-8a80-4637-990f-6d6549f83b9e",
+      "content_id": "d7f2bd9c-ac1a-42e5-ad83-2ff34d512997",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors conclude that computational models and mathematical analysis are critical for understanding multi-interneuron circuits, as intuition alone can be misleading, with the most interesting behavior occurring near threshold where small rate changes have large effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96, C98, C100-C101 represent valid conclusions from the work. The counterintuitive phenomena demonstrated throughout the manuscript support the claim that intuition is insufficient. C98 is a reasonable inference from the f-I curve analysis. C100 is appropriately cited (Gjorgjieva et al., 2016).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:57.837146Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e15d476f-9e7f-4ee0-a08a-348328f0cad8",
+      "result_id": "73e9fcde-4eca-41ac-a0be-ff8ae4d4c52d"
+    },
+    {
+      "claim_id": "760f67be-ac0c-40a5-94e7-b5ed90c8eec4",
+      "result_id": "73e9fcde-4eca-41ac-a0be-ff8ae4d4c52d"
+    },
+    {
+      "claim_id": "9b3788f6-4f60-415f-a79c-357fb2dd60c7",
+      "result_id": "73e9fcde-4eca-41ac-a0be-ff8ae4d4c52d"
+    },
+    {
+      "claim_id": "733b1b19-6c26-47d5-a81f-5a852f9908be",
+      "result_id": "89d3e5c3-9262-4f16-86b2-e5f71d483524"
+    },
+    {
+      "claim_id": "bf3874be-dea5-4d7d-a86b-f19e7fd92ecf",
+      "result_id": "89d3e5c3-9262-4f16-86b2-e5f71d483524"
+    },
+    {
+      "claim_id": "65685b80-61a2-485b-9d09-20f8ec435de3",
+      "result_id": "89d3e5c3-9262-4f16-86b2-e5f71d483524"
+    },
+    {
+      "claim_id": "934d5204-3d87-488b-af0f-b0bd58b69aa6",
+      "result_id": "89d3e5c3-9262-4f16-86b2-e5f71d483524"
+    },
+    {
+      "claim_id": "6bcb80ab-135a-429c-89ba-294ecd577853",
+      "result_id": "89d3e5c3-9262-4f16-86b2-e5f71d483524"
+    },
+    {
+      "claim_id": "2bec92f3-8b53-4a20-bda0-98d6a1d54856",
+      "result_id": "89d3e5c3-9262-4f16-86b2-e5f71d483524"
+    },
+    {
+      "claim_id": "f629d8b2-3162-4c71-8bb4-3ee8b37fe5d2",
+      "result_id": "89d3e5c3-9262-4f16-86b2-e5f71d483524"
+    },
+    {
+      "claim_id": "bf1f1b8e-fc34-4a45-b86e-d45db2e26666",
+      "result_id": "89d3e5c3-9262-4f16-86b2-e5f71d483524"
+    },
+    {
+      "claim_id": "4b9aac65-882d-4f5e-afb7-ae2e5449843b",
+      "result_id": "ca0ccf2c-f088-418b-8598-af753aebf6e9"
+    },
+    {
+      "claim_id": "b1e77e87-8e0f-488f-91da-5dd008eff2dd",
+      "result_id": "ca0ccf2c-f088-418b-8598-af753aebf6e9"
+    },
+    {
+      "claim_id": "49be87f0-ef08-4e1a-8315-f85e75d046c3",
+      "result_id": "ca0ccf2c-f088-418b-8598-af753aebf6e9"
+    },
+    {
+      "claim_id": "ab21ca1d-9851-4190-9a16-1fb3576c9b03",
+      "result_id": "ca0ccf2c-f088-418b-8598-af753aebf6e9"
+    },
+    {
+      "claim_id": "7db95d2b-062b-4da3-86a3-9cad3b894c06",
+      "result_id": "c6be2258-4f07-4f6f-aa5c-5bef9e49803b"
+    },
+    {
+      "claim_id": "466f2c6f-79b5-4798-ad1a-af5621e76bc2",
+      "result_id": "c6be2258-4f07-4f6f-aa5c-5bef9e49803b"
+    },
+    {
+      "claim_id": "f971d1c0-dc10-4f39-9313-22864cce0530",
+      "result_id": "c6be2258-4f07-4f6f-aa5c-5bef9e49803b"
+    },
+    {
+      "claim_id": "625120e7-606d-4cff-954b-9e23e0aeb869",
+      "result_id": "c6be2258-4f07-4f6f-aa5c-5bef9e49803b"
+    },
+    {
+      "claim_id": "3908ae95-9268-49df-b2f2-88b5909a803c",
+      "result_id": "c6be2258-4f07-4f6f-aa5c-5bef9e49803b"
+    },
+    {
+      "claim_id": "2d5a0a9b-5b32-47e4-a9ad-fd79e44beb93",
+      "result_id": "c6be2258-4f07-4f6f-aa5c-5bef9e49803b"
+    },
+    {
+      "claim_id": "ca511396-f158-419c-81ce-2a9666236cc2",
+      "result_id": "c6be2258-4f07-4f6f-aa5c-5bef9e49803b"
+    },
+    {
+      "claim_id": "a39946d2-51dc-4ef0-ac49-b90dbb27ec47",
+      "result_id": "77d88d4c-7e01-4d2f-bb7a-ea7efbabc68c"
+    },
+    {
+      "claim_id": "eb504181-4424-48e5-85f3-21fe0e2b1ba5",
+      "result_id": "77d88d4c-7e01-4d2f-bb7a-ea7efbabc68c"
+    },
+    {
+      "claim_id": "0dd2d987-52e6-48db-8f32-347019e89ef2",
+      "result_id": "77d88d4c-7e01-4d2f-bb7a-ea7efbabc68c"
+    },
+    {
+      "claim_id": "40b30a79-7560-4ada-a244-8e519c475147",
+      "result_id": "77d88d4c-7e01-4d2f-bb7a-ea7efbabc68c"
+    },
+    {
+      "claim_id": "85bcb9ae-b9b1-4791-82e6-594ef7615fd6",
+      "result_id": "77d88d4c-7e01-4d2f-bb7a-ea7efbabc68c"
+    },
+    {
+      "claim_id": "fbb5c7bf-6d88-42cf-9b86-615ef05a6c69",
+      "result_id": "77d88d4c-7e01-4d2f-bb7a-ea7efbabc68c"
+    },
+    {
+      "claim_id": "533ce4ae-27a7-42bd-9f26-b0fbc7b95e4b",
+      "result_id": "d7c150bf-005b-4bb4-9a3d-1b24f0438643"
+    },
+    {
+      "claim_id": "2522a2d2-f280-4f65-bcae-3f6bb2796d8c",
+      "result_id": "d7c150bf-005b-4bb4-9a3d-1b24f0438643"
+    },
+    {
+      "claim_id": "9e88e6f3-06c3-456b-b97b-fcbc4945f762",
+      "result_id": "d7c150bf-005b-4bb4-9a3d-1b24f0438643"
+    },
+    {
+      "claim_id": "ae436b1a-13e7-4b55-9fda-04e9286b2b0d",
+      "result_id": "d7c150bf-005b-4bb4-9a3d-1b24f0438643"
+    },
+    {
+      "claim_id": "601e10bf-b756-4d3a-a918-2a8bc60619ea",
+      "result_id": "d7c150bf-005b-4bb4-9a3d-1b24f0438643"
+    },
+    {
+      "claim_id": "5301b64c-ff27-4c7e-b4c7-1b3b4c3b15e1",
+      "result_id": "916c82ea-d970-4864-a183-6291163463c8"
+    },
+    {
+      "claim_id": "3303cb50-9bd8-46ff-ac35-aa869edf218f",
+      "result_id": "916c82ea-d970-4864-a183-6291163463c8"
+    },
+    {
+      "claim_id": "14404240-5333-47e6-a640-f83fed82d113",
+      "result_id": "916c82ea-d970-4864-a183-6291163463c8"
+    },
+    {
+      "claim_id": "7db6131d-4e85-4a08-a664-2ad600c8b25f",
+      "result_id": "916c82ea-d970-4864-a183-6291163463c8"
+    },
+    {
+      "claim_id": "cee401c2-07bf-4c0c-b016-1a3ddeb89ec9",
+      "result_id": "916c82ea-d970-4864-a183-6291163463c8"
+    },
+    {
+      "claim_id": "a1c32222-2a96-41a8-925c-b1b98a0f72be",
+      "result_id": "916c82ea-d970-4864-a183-6291163463c8"
+    },
+    {
+      "claim_id": "019952b5-c2d5-446a-b2f6-4ebba9345fa4",
+      "result_id": "916c82ea-d970-4864-a183-6291163463c8"
+    },
+    {
+      "claim_id": "00c08314-52f8-4d5d-8104-a8f948fa1335",
+      "result_id": "916c82ea-d970-4864-a183-6291163463c8"
+    },
+    {
+      "claim_id": "6d06f5ba-c02b-4af5-b8ca-863cfb3463ec",
+      "result_id": "eee49f56-53e7-41f0-a9c3-f43981fa3261"
+    },
+    {
+      "claim_id": "62de8f04-215b-4a62-91a1-91856a4fb186",
+      "result_id": "eee49f56-53e7-41f0-a9c3-f43981fa3261"
+    },
+    {
+      "claim_id": "31171c37-21be-4832-8964-b4d726d71721",
+      "result_id": "eee49f56-53e7-41f0-a9c3-f43981fa3261"
+    },
+    {
+      "claim_id": "c023162b-7a74-439e-b35c-986f94c38df9",
+      "result_id": "eee49f56-53e7-41f0-a9c3-f43981fa3261"
+    },
+    {
+      "claim_id": "3bad827f-6981-43d6-abbd-9d98e213c5d0",
+      "result_id": "eee49f56-53e7-41f0-a9c3-f43981fa3261"
+    },
+    {
+      "claim_id": "4572b116-0be3-4116-a175-e70854ca710b",
+      "result_id": "eee49f56-53e7-41f0-a9c3-f43981fa3261"
+    },
+    {
+      "claim_id": "1331edba-3757-48ef-bfcb-abc44bdbf9f8",
+      "result_id": "eee49f56-53e7-41f0-a9c3-f43981fa3261"
+    },
+    {
+      "claim_id": "26a77afe-be4e-4f30-b41f-75fb483ed890",
+      "result_id": "eee49f56-53e7-41f0-a9c3-f43981fa3261"
+    },
+    {
+      "claim_id": "40c3fad1-16d0-471a-afda-70bfe0d73db3",
+      "result_id": "eee49f56-53e7-41f0-a9c3-f43981fa3261"
+    },
+    {
+      "claim_id": "df1203b2-dbe7-4082-b21a-2de1f4d1cb9d",
+      "result_id": "eee49f56-53e7-41f0-a9c3-f43981fa3261"
+    },
+    {
+      "claim_id": "39f4773d-b352-49d3-9d68-8d40d5bf68a7",
+      "result_id": "eee49f56-53e7-41f0-a9c3-f43981fa3261"
+    },
+    {
+      "claim_id": "358d85dd-7a52-4df3-b9cf-3ff3075fcc7b",
+      "result_id": "f5948c82-57c3-4265-a82d-1c7607ce79b0"
+    },
+    {
+      "claim_id": "2d496681-88dd-49f0-9f45-e0302f6d5901",
+      "result_id": "f5948c82-57c3-4265-a82d-1c7607ce79b0"
+    },
+    {
+      "claim_id": "a8a4ee11-6cd7-4459-b2f4-a4c7d8d99cd6",
+      "result_id": "f5948c82-57c3-4265-a82d-1c7607ce79b0"
+    },
+    {
+      "claim_id": "4031137c-fb71-48f7-8746-bf1918da53af",
+      "result_id": "fbdd7d1b-120f-4b31-a508-8f053604289b"
+    },
+    {
+      "claim_id": "41382c3b-262c-451a-ae97-80df13fcae60",
+      "result_id": "fbdd7d1b-120f-4b31-a508-8f053604289b"
+    },
+    {
+      "claim_id": "0e42c8e3-7b4f-4e56-97c1-efa3467cd5f0",
+      "result_id": "fbdd7d1b-120f-4b31-a508-8f053604289b"
+    },
+    {
+      "claim_id": "b61ee4d7-0ce3-4f60-a4ef-4e741c5fa961",
+      "result_id": "14ddf96b-cb60-4f94-9344-fc6f9ef9a40b"
+    },
+    {
+      "claim_id": "d7ebd6b0-1e40-4b57-a1d4-8ce361c883c8",
+      "result_id": "14ddf96b-cb60-4f94-9344-fc6f9ef9a40b"
+    },
+    {
+      "claim_id": "e27c4b8c-257b-4121-8dd4-1d86fd87e35b",
+      "result_id": "14ddf96b-cb60-4f94-9344-fc6f9ef9a40b"
+    },
+    {
+      "claim_id": "33319364-5dda-4f90-9d10-871faa432abf",
+      "result_id": "14ddf96b-cb60-4f94-9344-fc6f9ef9a40b"
+    },
+    {
+      "claim_id": "8f274a8f-93b7-48e9-9911-e441e638bb30",
+      "result_id": "68472875-7d25-4530-8d65-e2dc6075c151"
+    },
+    {
+      "claim_id": "0047800c-c3d9-4ced-ae5b-9b49d9c8a817",
+      "result_id": "68472875-7d25-4530-8d65-e2dc6075c151"
+    },
+    {
+      "claim_id": "b11b46aa-071b-4a49-9358-fc2e4a7b66fd",
+      "result_id": "68472875-7d25-4530-8d65-e2dc6075c151"
+    },
+    {
+      "claim_id": "8191050c-bdcc-4f2a-8ec6-e0b2c097e791",
+      "result_id": "68472875-7d25-4530-8d65-e2dc6075c151"
+    },
+    {
+      "claim_id": "340aafb0-df86-48d2-8266-5db1b393a703",
+      "result_id": "68472875-7d25-4530-8d65-e2dc6075c151"
+    },
+    {
+      "claim_id": "1fb07de1-be2d-4d00-85df-1bca7c22a969",
+      "result_id": "68472875-7d25-4530-8d65-e2dc6075c151"
+    },
+    {
+      "claim_id": "bd81d93b-49c0-4213-b29f-f42f8107878c",
+      "result_id": "68472875-7d25-4530-8d65-e2dc6075c151"
+    },
+    {
+      "claim_id": "7634524e-ac04-434a-94da-3c4cff3e8b1d",
+      "result_id": "68472875-7d25-4530-8d65-e2dc6075c151"
+    },
+    {
+      "claim_id": "bc43c967-2af0-478f-a91b-530ad7137ff6",
+      "result_id": "3080386d-1db4-49f1-9ba8-e25c0844a995"
+    },
+    {
+      "claim_id": "5c5bb24e-4946-4721-b3d7-c8ad7f326838",
+      "result_id": "3080386d-1db4-49f1-9ba8-e25c0844a995"
+    },
+    {
+      "claim_id": "a8500635-11fb-4eef-8f38-0e9d4ac8a463",
+      "result_id": "3080386d-1db4-49f1-9ba8-e25c0844a995"
+    },
+    {
+      "claim_id": "4c81b843-e6f6-4946-90e2-dab566f73584",
+      "result_id": "f1e8b249-8a80-4637-990f-6d6549f83b9e"
+    },
+    {
+      "claim_id": "ea436bc1-9d9b-4b9c-9102-c868f8cd5d29",
+      "result_id": "f1e8b249-8a80-4637-990f-6d6549f83b9e"
+    },
+    {
+      "claim_id": "77e2704b-85d3-41e1-adf1-4a7e418a3b00",
+      "result_id": "f1e8b249-8a80-4637-990f-6d6549f83b9e"
+    },
+    {
+      "claim_id": "43c1b47b-99b4-4573-9e03-582bc9165192",
+      "result_id": "f1e8b249-8a80-4637-990f-6d6549f83b9e"
+    }
+  ],
+  "comparisons": []
+}

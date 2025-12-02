@@ -1,0 +1,1915 @@
+{
+  "submission": {
+    "id": "42bae8cb-7fab-47c2-a59f-eed897f8f080",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:08:58.872300Z",
+    "updated_at": "2025-12-02T00:08:58.872300Z"
+  },
+  "content": [
+    {
+      "id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "submission_id": "42bae8cb-7fab-47c2-a59f-eed897f8f080",
+      "content_type": "manuscript",
+      "content_text": "# Synapse-specific and compartmentalized expression of presynaptic homeostatic potentiation\n\n## Authors\n\n- Xiling Li<sup>1</sup> ([ORCID: 0000-0002-2727-244X](https://orcid.org/0000-0002-2727-244X))\n- Pragya Goel<sup>1</sup> ([ORCID: 0000-0002-6348-4909](https://orcid.org/0000-0002-6348-4909))\n- Catherine Chen<sup>1</sup>\n- Varun Angajala\n- Xun Chen<sup>2</sup>\n- Dion K Dickman ([ORCID: 0000-0003-1884-284X](https://orcid.org/0000-0003-1884-284X)) \u2020\n\n### Affiliations\n\n1. Department of Neurobiology University of Southern California Los Angeles United States\n2. Neuroscience Graduate Program University of Southern California California United States\n3. Graduate Program in Molecular and Computational Biology University of Southern California California United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPostsynaptic compartments can be specifically modulated during various forms of synaptic plasticity, but it is unclear whether this precision is shared at presynaptic terminals. Presynaptic homeostatic plasticity (PHP) stabilizes neurotransmission at the Drosophila neuromuscular junction, where a retrograde enhancement of presynaptic neurotransmitter release compensates for diminished postsynaptic receptor functionality. To test the specificity of PHP induction and expression, we have developed a genetic manipulation to reduce postsynaptic receptor expression at one of the two muscles innervated by a single motor neuron. We find that PHP can be induced and expressed at a subset of synapses, over both acute and chronic time scales, without influencing transmission at adjacent release sites. Further, homeostatic modulations to CaMKII, vesicle pools, and functional release sites are compartmentalized and do not spread to neighboring pre- or post-synaptic structures. Thus, both PHP induction and expression mechanisms are locally transmitted and restricted to specific synaptic compartments.\n\n## Introduction\n\nSynaptic strength can be modulated with a remarkable degree of specificity to enable the flexibility necessary for learning and memory, where compartmentalized changes in dendritic spines tune responses to neurotransmitter release during information transfer in the nervous system. Such plasticity mechanisms require compartmentalized trafficking and insertion of glutamate receptors (GluRs) into postsynaptic densities at specific locations in response to correlated activity (Herring and Nicoll, 2016; Malinow, 2003). However, these processes of Hebbian plasticity are inherently destabilizing, and homeostatic mechanisms have been proposed to adaptively counteract such forces to maintain synaptic strength within physiologically stable levels (Davis, 2013; Pozo and Goda, 2010; Turrigiano, 2012). Although the induction and expression of various forms of plasticity can clearly be restricted to individual postsynaptic compartments, it is less certain that such plasticity can be similarly compartmentalized at the presynaptic terminals of a single neuron. There is evidence for heterogeneity in presynaptic efficacy (Branco et al., 2008; Dobrunz and Stevens, 1997; Holderith et al., 2012; Trommersh\u00e4user et al., 2003; Vitureira et al., 2011), and release probability can vary considerably along a single axon (Murthy et al., 1997; Paul et al., 2015; Peled and Isacoff, 2011). Further, target-specific differences in presynaptic function (Frank, 1973; Katz et al., 1993; Scanziani et al., 1998) and homeostatic plasticity (Davis and Goodman, 1998)\u00a0have been demonstrated. However, how presynaptic terminals are modulated by Hebbian and homeostatic forces and whether these adaptations can occur without \u2018spreading\u2019 to adjacent synapses remains enigmatic.\n\nThe Drosophila neuromuscular junction (NMJ) is a powerful model system to interrogate the mechanisms governing homeostatic synaptic plasticity. At this glutamatergic synapse, genetic and pharmacological perturbations to postsynaptic receptors initiates a retrograde, trans-synaptic signaling system that homeostatically increases presynaptic neurotransmitter release to maintain stable levels of synaptic strength (Davis and M\u00fcller, 2015; Frank, 2014). This form of plasticity is achieved through an increase in presynaptic efficacy and is therefore referred to as presynaptic homeostatic potentiation (PHP). Parallel forms of homeostatic regulation are conserved at NMJs of rodents (Wang et al., 2016b) and humans (Cull-Candy et al., 1980). PHP initiates a single retrograde signaling system that triggers two key expression mechanisms to enhance presynaptic glutamate release: increases in both presynaptic calcium influx and the number of synaptic vesicles participating in the readily releasable pool (Goel et al., 2017; Kiragasi et al., 2017; M\u00fcller and Davis, 2012; Weyhersm\u00fcller et al., 2011). Several genes necessary for PHP expression have been identified that function as putative retrograde signals (Orr et al., 2017; Wang et al., 2014) and presynaptic effectors in the motor neuron (Bruckner et al., 2017; Dickman and Davis, 2009; Dickman et al., 2012; Kiragasi et al., 2017; M\u00fcller et al., 2015; M\u00fcller et al., 2012; Tsurudome et al., 2010; Younger et al., 2013), but the postsynaptic induction mechanisms that initiate PHP signaling remain enigmatic (Chen and Dickman, 2017; Goel et al., 2017). Indeed, PHP induction and expression at a subset of synapses within a single motor neuron has never been demonstrated at the Drosophila NMJ.\n\nPHP is expressed exclusively at one of two motor neuron subtypes that innervate most muscles at the Drosophila NMJ, Type Is and Type Ib. Type Is motor inputs exhibit smaller boutons, less subsynaptic reticulum (SSR), higher basal release probability, and do not participate in PHP adaptation over chronic time scales (Lnenicka and Keshishian, 2000; Newman et al., 2017). In contrast, Type Ib motor neurons have larger boutons, more elaborate SSR, and lower basal release probability, which is enhanced after loss of postsynaptic GluRs (Newman et al., 2017), demonstrating that PHP is expressed exclusively at Type Ib synapses. Further, a reduction in phosphorylated (active) levels of CaMKII, presumably related to PHP inductive signaling, occurs specifically in the postsynaptic density of Ib boutons (Goel et al., 2017; Newman et al., 2017), suggesting a possible mechanism for the specificity of retrograde PHP signaling to the Ib motor neuron. Despite these insights, it is not known whether PHP can be expressed at a subset of Type Ib boutons within a single motor terminal, nor whether PHP modulations at individual boutons influence neighboring synapses.\n\nWe have developed a genetic manipulation that enables the reduction of postsynaptic GluR expression on one of the two muscles innervated by a single Type Ib motor neuron at the Drosophila NMJ. We have used this system to test whether PHP signaling is synapse specific and to determine to what extent the postsynaptic induction and presynaptic expression of PHP is compartmentalized. This analysis has revealed highly specific and compartmentalized PHP adaptations that are restricted and target specific without influencing neurotransmission at neighboring synapses within the same motor neuron.\n\n## Results\n\n### Reduced expression of the glutamate receptor subunit GluRIIA specifically on muscle six at the Drosophila NMJ\n\nThe postsynaptic response to glutamate release at the Drosophila NMJ is mediated by two types of GluRs. Both types contain the essential subunits GluRIIC, GluRIID, and GluRIIE, but differ in containing either GluRIIA or GluRIIB subunits (DiAntonio et al., 1999; Featherstone et al., 2005; Han et al., 2015; Marrus et al., 2004). Although null mutations in the GluRIIA subunit have been studied for decades (Petersen et al., 1997), RNAi knock-down of this receptor has not been reported or characterized. We obtained an RNAi transgene targeting the GluRIIA subunit (see Mateials\u00a0and\u00a0methods) and compared the impact of postsynaptic knock-down of GluRIIA by the muscle driver G14-Gal4 (G14\u00a0>GluRIIARNAi) to GluRIIA null mutants (Figure 1). First, we immunostained the NMJ of wild type, GluRIIA mutants, and G14\u00a0>GluRIIARNAi with antibodies against the GluRIIA subunit as well as the common subunits GluRIIC and GluRIID (Figure 1A). This revealed an absence of GluRIIA signals from GluRIIA mutants, as expected, with signals from GluRIIC and GluRIID persisting due to the remaining GluRIIB-containing receptors (Figure 1A,B). Similarly, GluRIIA expression is almost completely absent in G14\u00a0>GluRIIARNAi, with no significant difference in fluorescence intensity compared to GluRIIA mutants (Figure 1A,B). Indeed, quantitative PCR analysis revealed a dramatic reduction in the level of transcripts encoding the GluRIIA subunit in G14\u00a0>GluRIIARNAi, while levels of the other four subunits were not significantly changed (Figure 1C). In addition, we quantified synaptic growth in these genotypes, finding a small reduction in bouton number in both GluRIIA mutants and G14\u00a0>GluRIIARNAi compared to controls (Figure 1\u2014figure supplement 1), as reported previously (Choi et al., 2014; Schmid et al., 2006; Sigrist et al., 2002). Finally, we examined synaptic physiology, which revealed a large reduction in mEPSP amplitude in both GluRIIA mutants and G14\u00a0>GluRIIARNAi compared to wild type and G14-Gal4/+ (Figure 1D,E and Supplementary file 1), while EPSP amplitudes were not significantly changed between these genotypes because of a homeostatic enhancement in presynaptic glutamate release (quantal content; Figure 1D,H). Together, this demonstrates that postsynaptic knock down of the GluRIIA subunit effectively phenocopies GluRIIA mutants and induces the robust expression of PHP.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34338/elife-34338-fig1-v3.jpg)\n\n**Figure 1.:** (A) Representative images of NMJs on muscle six immunostained with antibodies that recognize GluRIIA, GluRIIC, and GluRIID receptor subunits in wild type (w1118), GluRIIA mutants (w1118;GluRIIASP16), and G14\u00a0>\u00a0GluRIIARNAi (w1118;G14-Gal4/+;UAS-GluRIIARNAi/+). (B) Quantification of the mean fluorescence intensity of individual GluR puncta reveals GluRIIA subunits are virtually undetectable at NMJs of both GluRIIA mutants and G14\u00a0>\u00a0GluRIIARNAi, while the essential subunits GluRIIC and GluRIID are moderately reduced, reflecting expression of the remaining GluRIIB-containing receptors. (C) Left: Schematic illustrating the composition of GluRIIA-containing and GluRIIB-containing postsynaptic receptor subtypes at the Drosophila NMJ. Right: Quantitative PCR analysis of GluR transcript levels for GluRIIA/B/C/D/E subunits in G14\u00a0>GluRIIARNAi normalized to G14/+. (D) Representative electrophysiological traces of EPSP and mEPSP recordings in the indicated genotypes. (E\u2013G) Quantification of mEPSP amplitude (E), EPSP amplitude (F), and quantal content (G) in the indicated genotypes. Note that while mEPSP amplitudes are reduced to similar levels in GluRIIA mutants and G14\u00a0>\u00a0GluRIIARNAi, EPSP amplitudes remain similar to wild type because of a homeostatic increase in presynaptic glutamate release (quantal content). (H) Quantification of mEPSP amplitude and quantal content values of the indicated genotypes normalized to wild-type values. Error bars indicate\u00a0\u00b1\u00a0SEM. Asterisks indicate statistical significance using one-way analysis of variance (ANOVA), followed by Tukey\u2019s multiple-comparison test: (****) p<0.0001, (ns) not significant. Detailed statistical information for represented data (mean values, SEM, n, p) is shown in Supplementary file 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34338/elife-34338-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Representative images of muscle 6/7 NMJs of wild type, GluRIIA mutants, and G14\u00a0>\u00a0GluRIIARNAi immunostained with antibodies against with the neuronal membrane (HRP) and the synaptic vesicle marker vGlut. (B) Quantification of bouton number per muscle segment in the indicated genotypes demonstrates that synaptic growth is reduced by\u00a0~18% in both GluRIIA mutants and G14\u00a0>\u00a0GluRIIARNAi. Error bars indicate\u00a0\u00b1\u00a0SEM. Asterisks indicate statistical significance using one-way analysis of variance (ANOVA), followed by Tukey\u2019s multiple-comparison test: (*) p<0.05. Detailed statistical information for represented data (mean values, SEM, n, p) is shown in Supplementary file 1.\n\nNext, we sought to specifically knock down the GluRIIA subunit on one of the two muscles innervated by a single Ib motor neuron at the NMJ by selectively biasing expression of Gal4. At the muscle 6/7 NMJ, a single Ib and a single Is motor neuron bifurcates to innervate both muscle 6 and 7, with\u00a0~60% of the boutons from each motor neuron subtype innervating the larger muscle 6, and\u00a0~40% innervating the smaller muscle 7 (Figure 2\u2014figure supplement 1A,B,C). To bias Gal4 expression selectively on muscle 6, we modified a genetic manipulation using the H94-Gal4 driver, which expresses transiently on muscle six early in development (Davis and Goodman, 1998). Gal4 expression on muscle six is amplified and converted into constitutive expression by utilizing a cassette in which a flippase is co-expressed to excise a stop codon between the strong and ubiquitous Tubulin-promotor and Gal4 (see Mateials and methods; [Choi et al., 2014; Roy et al., 2007]). Thus, this manipulation enables Gal4 to be strongly and consistently expressed specifically on muscle 6 (Choi et al., 2014). We validated this approach by visualizing UAS-GFP selectively on muscle 6, which demonstrated strong expression on muscle six and no detectable expression in either the motor neuron or the adjacent muscle 7 (Figure 2\u2014figure supplement 1A). Importantly, we confirmed that M6\u00a0>\u00a0Gal4 driving a control RNAi (M6\u00a0>\u00a0mCherryRNAi) did not have any significant impact on muscle surface area, synaptic growth, active zone numbers, or synaptic physiology compared to wild type (Figure 2\u2014figure supplement 1A\u2013H). Thus, M6\u00a0>\u00a0Gal4 enables strong and biased expression of Gal4 on muscle six without impacting synaptic growth or function.\n\nFinally, we evaluated this M6\u00a0>Gal4 system to determine whether the GluRIIA subunit could be specifically knocked down on muscle 6, as observed using pan-muscle knock down in Figure 1 (see schematic in Figure 2A). First, we performed immunocytochemistry at the larval NMJ with antibodies that label the neuronal membrane (HRP) and the GluRIIA subunit in wild type and following knock down of GluRIIA on muscle 6 (M6\u00a0>\u00a0GluRIIARNAi). We observed a near-absence of the GluRIIA signal specifically on muscle 6, while GluRIIA expression on the adjacent muscle seven was unperturbed (Figure 2B,C). Quantification of synaptic growth on muscles 6 and 7 in M6\u00a0>\u00a0GluRIIARNAi revealed no significant change on muscle 7, while a small but significant reduction was observed on muscle 6, as expected (Figure 2D). Finally, quantification of GluRIIA and GluRIID fluorescence levels at muscles 6 and 7 confirmed a large reduction of GluRIIA expression on muscle six and no significant change on muscle seven in M6\u00a0>\u00a0GluRIIARNAi (Figure 2C,E). Thus, M6\u00a0>\u00a0GluRIIARNAi effectively and specifically eliminates GluRIIA expression on muscle six without altering glutamate receptor expression on the adjacent muscle 7.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34338/elife-34338-fig2-v3.jpg)\n\n**Figure 2.:** (A) Schematic of the Type Ib motor neuron innervating both muscles 6 and 7 at the Drosophila NMJ. Gal4 is expressed specifically on muscle six in combination with UAS-GluRIIARNAi using M6\u00a0>\u00a0Gal4 (M6\u00a0>\u00a0GluRIIARNAi: w1118;Tub-FRT-STOP-FRT-Gal4, UAS-FLP, UAS-CD8-GFP/+; H94-Gal4, nSyb-Gal80/UAS-GluRIIARNAi). GluRIIA expression is reduced on muscle 6, while expression of GluRIIA on muscle 7 is unperturbed. (B) Representative images of muscle 6/7 NMJs immunostained with antibodies that recognize the neuronal membrane (HRP) and the postsynaptic GluR subunit GluRIIA in wild type and M6\u00a0>\u00a0GluRIIARNAi. (C) Representative images of individual Ib synaptic boutons immunostained with anti-GluRIIA and anti-GluRIID on the indicated muscles in wild type and M6\u00a0>\u00a0GluRIIARNAi. (D) Quantification of bouton numbers on muscles 6 and 7 in wild type and M6\u00a0>\u00a0GluRIIARNAi. (E) Quantification of mean fluorescence intensity of GluRIIA and GluRIID puncta normalized to wild type on the indicated muscles. Asterisks indicate statistical significance using a Student\u2019s t test: (*) p<0.05; (**) p<0.01; (****) p<0.0001, (ns) not significant. Error bars indicate\u00a0\u00b1\u00a0SEM. Detailed statistical information for represented data (mean values, SEM, (n, p) is shown in Supplementary file 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34338/elife-34338-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative images of muscle 6/7 NMJs of wild type and M6\u00a0>\u00a0mCherryRNAi (w1118;Tub-FRT-STOP-FRT-Gal4, UAS-FLP, UAS-CD8-GFP/+; H94-Gal4, nSyb-Gal80/UAS-mCherryRNAi) labeled with phalloidin (actin marker), GFP, and the neuronal membrane marker HRP. (B\u2013D) Quantification of muscle surface area (B), bouton number (C), and BRP puncta number per NMJ (D). No significant differences in any of these parameters were observed. (E) Schematic and electrophysiological traces of recordings from wild type and M6\u00a0>mCherryRNAi NMJs. (F\u2013H) Quantification of mEPSP amplitude (F), EPSP amplitude (G), and quantal content (H) from the indicated genotypes finds no significant difference in synaptic physiology. Error bars indicate\u00a0\u00b1\u00a0SEM. Asterisks indicate statistical significance using a Student\u2019s t test: (ns) not significant. Detailed statistical information for represented data (mean values, SEM, n, p) is shown in Supplementary file 1.\n\n### Presynaptic homeostatic potentiation can be exclusively expressed at synapses innervating muscle six in M6\u00a0>\u00a0GluRIIARNAi\n\nA single Ib motor neuron (RP3) bifurcates to innervate both muscles 6 and 7 at the Drosophila NMJ (Broadie and Bate, 1993) (Figure 3A). Having established strong and selective knock down of the GluRIIA subunit on muscle six in M6\u00a0>\u00a0GluRIIARNAi, we next characterized synaptic function and homeostatic plasticity. As expected, mEPSP amplitudes on muscle 6 were diminished at M6\u00a0>\u00a0GluRIIARNAi NMJs, while mEPSP amplitudes were not affected on the adjacent muscle 7 (Figure 3A\u2013C). We considered three possibilities for how presynaptic neurotransmitter release sites may be modulated within the single Ib terminal in response to GluRIIA knock down exclusively on muscle 6. First, if PHP signaling is communicated to synapses in the Ib motor neuron innervating muscle 6, but the entire motor neuron undergoes PHP adaptations, then quantal content would be enhanced on both muscles 6 and 7. Second, PHP signaling may be communicated to synapses innervating only muscle 6, but PHP expression may be occluded without simultaneous signaling also received from muscle 7, leading to no change in quantal content on either muscle. Finally, if PHP signaling is target-specific and compartmentalized, then quantal content should be selectively enhanced on synapses innervating muscle 6 in response to reduced GluRIIA expression, while synaptic function at synapses innervating the adjacent muscle seven would be unchanged. Results of electrophysiological recordings were consistent with this last model: EPSP amplitude was similar on both muscles 6 and 7 in M6\u00a0>\u00a0GluRIIARNAi and not significantly different compared to wild type (Figure 3A,D). Indeed, quantal content was selectively enhanced only at synapses innervating muscle 6, while quantal content at synapses innervating muscle seven was unaffected (Figure 3B,E). Thus, PHP can be induced and expressed exclusively at a subset of synapses within the same motor neuron without influencing neurotransmitter release at neighboring sites.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34338/elife-34338-fig3-v3.jpg)\n\n**Figure 3.:** (A) Schematic and electrophysiological traces of recordings from muscles 7 and 6 of wild type and M6\u00a0>\u00a0GluRIIARNAi NMJs. Note that mEPSPs are reduced only on muscle 6 of M6\u00a0>\u00a0GluRIIARNAi, while EPSP amplitudes are similar across all muscles. Thus, the expression of PHP is restricted to synapses innervating muscle 6 of M6\u00a0>\u00a0GluRIIARNAi and does not impact neurotransmission at neighboring synapses within the same motor neuron. (B) Quantification of mEPSP amplitude and quantal content values of M6\u00a0>\u00a0GluRIIARNAi normalized to wild-type values. (C\u2013E) Quantification of mEPSP amplitude (C), EPSP amplitude (D), and quantal content (E) in the indicated muscles and genotypes. Asterisks indicate statistical significance using a Student\u2019s t test: (****) p<0.0001, (ns) not significant. Error bars indicate\u00a0\u00b1\u00a0SEM. Detailed statistical information for represented data (mean values, SEM, (n, p) is shown in Supplementary file 1.\n\nThe results above suggest that while PHP was chronically induced and expressed specifically on synapses innervating muscle 6, the adjacent synapses within the same motor neuron that innervate muscle seven were apparently not affected. One possibility is that PHP adaptations are induced throughout the entire motor neuron innervating both muscles 6 and 7, but that negative regulators are active that repress or occlude the expression of PHP on synapses innervating muscle 7. Indeed, such a model has been proposed (M\u00fcller et al., 2011). In this case, PHP should not be capable of being induced or expressed at the synapses innervating muscle seven in M6\u00a0>\u00a0GluRIIARNAi. PHP can be acutely induced and expressed through a pharmacological blockade of the postsynaptic GluRs using a 10-min incubation in the presence of the antagonist philanthotoxin-433 (PhTx; [Frank et al., 2006]). This results in an acute reduction in mEPSP amplitude due to blockade of GluRIIA-containing receptors in the postsynaptic muscle, but EPSP amplitudes are maintained because of PHP expression. We reasoned that acute application of PhTx to M6\u00a0>\u00a0GluRIIARNAi NMJs would enable us to determine whether PHP could be induced and expressed at synapses innervating muscle 7 following chronic expression of PHP on the adjacent synapses innervating muscle 6.\n\nWe therefore applied PhTx to wild type and M6\u00a0>\u00a0GluRIIARNAi synapses. As expected, this caused a large reduction in mEPSP amplitudes at wild-type muscles 6 and 7, as well as muscle 7 in M6\u00a0>\u00a0GluRIIARNAi, while a small reduction in mEPSP amplitude was observed at muscle 6 (Figure 4A\u2013C). Interestingly, EPSP amplitudes at both muscles 6 and 7 in wild type and M6\u00a0>\u00a0GluRIIARNAi NMJs were maintained at similar levels (Figure 4A,D) due to the homeostatic enhancement of quantal content (Figure 4B,E). Together, this demonstrates that PHP can be acutely induced and chronically expressed at distinct presynaptic release sites within the same neuron according to the state of GluR functionality at postsynaptic compartments opposing these sites.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34338/elife-34338-fig4-v3.jpg)\n\n**Figure 4.:** (A) Schematic and representative traces illustrating the acute application of PhTx on wild type and M6\u00a0>GluRIIARNAi NMJs. The acute expression of PHP was observed on previously non-potentiated muscle 7 synapses in M6\u00a0>GluRIIARNAi NMJs. mEPSP amplitudes are diminished at wild type and M6\u00a0>GluRIIARNAi NMJs on both muscles following PhTx application, while EPSP amplitudes are maintained at baseline levels due to a homeostatic increase in presynaptic neurotransmitter release. (B) Quantification of mEPSP and quantal content values normalized to baseline values (-PhTx) at muscles 6 and 7 NMJs of M6\u00a0>GluRIIARNAi larvae. (C\u2013E) Quantification of mEPSP amplitude (C), EPSP amplitude (D), and quantal content (E) values in the indicated genotypes. Asterisks indicate statistical significance using a Student\u2019s t test and one-way analysis of variance (ANOVA), followed by Tukey\u2019s multiple-comparison test: (**) p<0.01, (****) p<0.001, (ns) not significant. Error bars indicate\u00a0\u00b1\u00a0SEM. Detailed statistical information for represented data (mean values, SEM, (n, p) is shown in Supplementary file 1.\n\n### Homeostatic modulations to the synaptic vesicle pool and functional release sites are compartmentalized at presynaptic terminals\n\nOne important presynaptic expression mechanism that enables the enhanced efficacy necessary for PHP expression is an increase in the readily releasable synaptic vesicle pool (RRP; [Kiragasi et al., 2017; M\u00fcller et al., 2015; Weyhersm\u00fcller et al., 2011]). The RRP is defined as the pool of vesicles that are primed and available for immediate release upon strong synaptic stimulation (Rosenmund and Stevens, 1996). Although PHP expression appears to be compartmentalized, it is unknown whether conventional homeostatic modulations to the presynaptic terminal are similarly compartmentalized, or rather whether novel mechanisms are utilized in M6\u00a0>\u00a0GluRIIARNAi. In particular, synaptic vesicles are highly mobile and can rapidly traffic between adjacent boutons at presynaptic terminals (Darcy et al., 2006; Kahms and Klingauf, 2018), and vesicle pools can span multiple presynaptic terminals (Staras et al., 2010). Hence, it is possible that changes in the RRP following PHP expression at a subset of presynaptic terminals may influence vesicle pools at neighboring synapses that do not directly experience local PHP signaling. We therefore measured the size of RRP in wild type and M6\u00a0>\u00a0GluRIIARNAi synapses separately innervating muscles 6 and 7. To determine RRP size, we performed two electrode voltage clamp (TEVC) measurements using high-frequency stimulation (60 Hz) in elevated external calcium concentrations (3 mM) and measured the cumulative EPSC (Figure 5A\u2013D; (Kiragasi et al., 2017; M\u00fcller et al., 2015; Weyhersm\u00fcller et al., 2011). We observed a\u00a0~\u00a065% increase in the estimated RRP size that was restricted to boutons innervating muscle 6 in M6\u00a0>\u00a0GluRIIARNAi, similar in magnitude to what has been reported for muscle 6 synapses in which PHP is expressed following PhTx application (M\u00fcller et al., 2015) and by loss of GluRIIA (Kiragasi et al., 2017; Weyhersm\u00fcller et al., 2011). However, no significant change in RRP size was observed at synapses innervating the adjacent muscle 7 (Figure 5A,E). Thus, the homeostatic modulation of the RRP is restricted to presynaptic terminals that oppose postsynaptic compartments with reduced GluR functionality, and does not \u2018spread\u2019 to influence vesicle pools at adjacent release sites.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/34338/elife-34338-fig5-v3.jpg)\n\n**Figure 5.:** (A) Schematic illustrating the size of the RRP is enhanced specifically at the terminals innervating muscle six in M6\u00a0>\u00a0GluRIIARNAi. Representative traces of two-electrode voltage clamp recordings (30 stimuli at 60 Hz in 3 mM extracellular Ca2+) from muscles 7 or 6 in the indicated genotypes. (B) Averaged cumulative EPSC amplitude plotted as a function of time. A line fit to the 18-30th stimuli was back-extrapolated to time 0. (C\u2013E) Quantification of mEPSC amplitude (C), average cumulative EPSC values (D), and estimated readily releasable pool (RRP) sizes (E) for the indicated muscles and genotypes. Note that RRP size is significantly increased at muscle 6 NMJs, but no change is observed at muscle 7. Error bars indicate\u00a0\u00b1\u00a0SEM. Asterisks indicate statistical significance using a Student\u2019s t test: (*) p<0.05; (***) p<0.001; (ns) not significant. Detailed statistical information for represented data (mean values, SEM, n, p) is shown in Supplementary file 1.\n\nNext, we examined whether a change in the number of functional release sites (N) accompanies the compartmentalized expression of PHP. N is defined as the number of functional release sites and is one of the three basic parameters used to describe synaptic transmission, where quantal content (QC) is the product of N, P (release probability), and Q (quantal size). Although there is no major difference in the anatomical number of active zones at NMJs of wild-type and GluRIIA mutants (Frank et al., 2006; Goel et al., 2017; Penney et al., 2012; Schmid et al., 2006), an increase in the fraction of active zones that participate in release has been reported following the expression of PHP (Davis and M\u00fcller, 2015; Newman et al., 2017; Penney et al., 2016). Indeed, the value of N is significantly increased following PhTx application and in GluRIIA-mutant synapses (M\u00fcller et al., 2012; Weyhersm\u00fcller et al., 2011). We determined the number of functional release sites at NMJs of muscles 7 and 6 in wild type, GluRIIA mutants, and M6\u00a0>GluRIIARNAi using a variance-mean plot analysis (B\u00f6hme et al., 2016; Clements and Silver, 2000). We performed TEVC recordings over a range of increasing extracellular calcium concentrations, from 0.5 mM to 6 mM (Figure 6B,F). The variance in the amplitude of repeated evoked responses fluctuates across different calcium concentrations in relation to the proportion of total release sites that participate in these responses. At low-calcium concentrations, the number of release sites that participate in the evoked response is low, and the variance is therefore small in this condition. As the extracellular calcium concentration is elevated, the variance then increases with increasing release during repeated evoked responses due to an increase in the number of release sites that participate in synaptic transmission. At very high extracellular calcium concentrations, the variance is then reduced due to saturation of the total number of releasable sites.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/34338/elife-34338-fig6-v3.jpg)\n\n**Figure 6.:** (A) Schematic illustrating the number of functional release sites (marked as red triangles) at synapses innervating muscle 7 of M6\u00a0>\u00a0GluRIIARNAi NMJs. (B) Scatter plot EPSC distribution of recordings derived from muscle 7 of wild type, GluRIIA mutants, and M6\u00a0>\u00a0GluRIIARNAi in the indicated extracellular Ca2+ concentrations. (C) Variance-mean plots for the indicated genotypes. Variance was plotted against the mean amplitude of 30 EPSCs recorded at 0.2 Hz from the four Ca2+ concentrations detailed in (B). Dashed lines are the best fit parabolas to the data points. (D) Estimated number of functional release sites (N) obtained from the variance-mean plots in (C). Note that the number of functional release sites are enhanced only at muscle 7 NMJs of GluRIIA mutants. (E) Schematic illustrating the number of functional release sites (marked as red triangles) at synapses innervating muscle 6 of M6\u00a0>\u00a0GluRIIARNAi NMJs. (F) Scatter plot EPSC distribution of recordings derived from muscle 6 of wild type, GluRIIA mutants, and M6\u00a0>\u00a0GluRIIARNAi in the indicated extracellular Ca2+ concentrations. (G) Variance-mean plots for the indicated genotypes. (H) Estimated number of functional release sites (N) obtained from the variance-mean plots in (G). Both GluRIIA mutants and M6\u00a0>\u00a0GluRIIARNAi showed a significant enhancement of functional release site number at muscle 6 NMJs compared to wild type. Error bars indicate\u00a0\u00b1\u00a0SEM. Asterisks indicate statistical significance using one-way analysis of variance (ANOVA), followed by Tukey\u2019s multiple-comparison test: (***) p<0.001; (****) p<0.0001; (ns) not significant. Detailed statistical information for represented data (mean values, SEM, (n, p) is shown in Supplementary file 1.\n\nWe plotted the variance of EPSC responses across increasing calcium conditions against the mean of the EPSC amplitude at each individual calcium conditions from recordings at both muscle 7 and muscle 6 (Figure 6C,G). This analysis resulted in a parabolic behavior of variance-mean plot due to the binomial nature of the fluctuation (Clements and Silver, 2000; Weyhersm\u00fcller et al., 2011). The number of functional release sites (N) was determined by fitting a parabola to the variance-mean plot (see Mateials and methods). Based on this result, the value of N increased in GluRIIA-mutant NMJs compared to wild type at both muscles 7 and 6 (Figure 6D,H), consistent with what was reported following acute PHP expression and indicating that chronic PHP expression requires the recruitment of additional functional release sites to participate in presynaptic neurotransmitter release. Further, a similar increase in N was observed at muscle 6 in M6\u00a0>\u00a0GluRIIARNAi (Figure 6H), while no significant change was found at muscle 7 (Figure 6D), suggesting that the biased induction of PHP results in the compartmentalized expression of the same mechanisms observed in GluRIIA mutants (Figure 6A,E). Therefore, retrograde PHP expression is achieved by elevating the RRP and recruiting additional functional release sites to participate in transmission, with specificity according to the excitability state of their postsynaptic partners.\n\n### Compartmentalized reductions in postsynaptic CaMKII activity are required for PHP induction in M6\u00a0>\u00a0GluRIIARNAi\n\nThe postsynaptic induction mechanisms that drive PHP retrograde signaling are unclear. However, reductions in postsynaptic CaMKII activity have been proposed to mediate the induction of retrograde PHP signaling (Haghighi et al., 2003). Indeed, modulations to postsynaptic CaMKII phosphorylation has been demonstrated to occur in a synapse-specific and activity-dependent manner at the Drosophila NMJ (Hodge et al., 2006). Consistent with this idea, reductions in the level of phosphorylated (active) CaMKII were observed specifically at postsynaptic densities of Type Ib boutons following PhTx application and in GluRIIA mutants (Goel et al., 2017; Newman et al., 2017). To determine whether this same signaling system mediates PHP induction and is restricted to specific targets at M6\u00a0>\u00a0GluRIIARNAi NMJs, we examined pCaMKII levels at postsynaptic densities of Is and Ib boutons on both muscles 6 and 7. Ib and Is boutons were distinguished by differential areas and intensity signals of the postsynaptic scaffold Discs large (Dlg). We observed a significant reduction in the mean intensity of pCaMKII in Ib postsynaptic densities only on muscle 6 of M6\u00a0>\u00a0GluRIIARNAi, while no significant difference was observed at Ib synapses in the adjacent muscle 7, nor were any changes found at Is synapses on either muscle (Figure 7A\u2013E). Thus, postsynaptic pCaMKII levels are diminished and compartmentalized at Ib boutons specifically on muscle 6 without impacting pCaMKII levels on neighboring Is boutons or at the adjacent muscle 7 in M6\u00a0>\u00a0GluRIIARNAi.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/34338/elife-34338-fig7-v3.jpg)\n\n**Figure 7.:** (A) Representative images of muscle 6/7 NMJs from wild type and M6\u00a0>\u00a0GluRIIARNAi immunostained with antibodies against with the active (phosphorylated) form of CaMKII (pCaMKII) and the presynaptic neuronal membrane marker HRP. Note that pCaMKII intensity is specifically reduced at Ib postsynaptic densities on muscle 6 of M6\u00a0>GluRIIARNAi (dashed areas). (B,C) Images (B) and quantification (C) of pCaMKII fluorescence intensity at Ib boutons on muscles 7 and 6 normalized to wild-type values. A reduction in pCaMKII intensity is observed on muscle 6 of M6\u00a0>\u00a0GluRIIARNAi, while no significant change is observed at synapses innervating the adjacent muscle 7. (D,E) Images (D) and quantification (E) of pCaMKII intensity at Is boutons shows no significant difference between wild type and M6\u00a0>\u00a0GluRIIARNAi at NMJs of either muscle. Asterisks indicate statistical significance using a Student\u2019s t test: (***) p<0.001, (ns) not significant. Error bars indicate\u00a0\u00b1\u00a0SEM. Detailed statistical information for represented data (mean values, SEM, (n, p) is shown in Supplementary file 1.\n\nFinally, we tested whether a reduction in postsynaptic CaMKII activity was required for retrograde PHP signaling. In particular, if PHP signaling is induced at Ib postsynaptic densities through diminished pCaMKII levels, as suggested by immunostaining, then postsynaptic overexpression of a constitutively active, phospho-mimetic form of CaMKII, CaMKIIT287D, should inhibit or occlude PHP induction and expression (Haghighi et al., 2003). We first expressed CaMKIIT287D alone on muscle 6 (M6>CaMKIIT287D) to determine if baseline synaptic function was influenced by constitutively active CaMKII (Figure 8A). We found no significant difference in synaptic physiology on muscles 6 or 7 in this condition (Figure 8A\u2013D). Next, we expressed constitutively active CaMKII in combination with GluRIIA knock down on muscle 6 (M6\u00a0>\u00a0GluRIIARNAi\u00a0+\u00a0CaMKIIT287D). If reduced CaMKII activity were functionally required for retrograde PHP signaling, and not just a compartmentalized biomarker of GluRIIA levels and/or activity at Ib boutons, then constitutively active CaMKII should disrupt PHP expression at M6\u00a0>GluRIIARNAi synapses. Indeed, EPSP amplitude was not maintained at baseline levels due to a failure to homeostatically increase quantal content in M6\u00a0>\u00a0GluRIIARNAi\u00a0+\u00a0CaMKIIT287D (Figure 8E\u2013H). In this condition, quantal content was significantly increased (134 \u00b1 8% increase for M6\u00a0>\u00a0GluRIIARNAi\u00a0+\u00a0CaMKIIT287D compared to M6>CaMKIIT287D) but was below the level necessary to maintain synaptic strength (166 \u00b1 9% increase in quantal content for M6\u00a0>\u00a0GluRIIARNAi compared to wild type). This data is consistent with reduced CaMKII activity, compartmentalized at Ib postsynaptic densities, being required for retrograde PHP signaling. We propose a model schematized in Figure 8E.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/34338/elife-34338-fig8-v3.jpg)\n\n**Figure 8.:** (A) Schematic and representative traces illustrating that overexpression of a constitutively active form of CaMKII only on muscle 6 (M6>CaMKIIT287D) has no significant impact on neurotransmission. (B\u2013D) Quantification of mEPSP amplitude (B), EPSP amplitude (C), and quantal content (D) in the indicated muscles. (E) Schematic and representative traces illustrating that expression of constitutively active CaMKII with GluRIIA knock down (M6\u00a0>\u00a0GluRIIARNAi\u00a0+\u00a0CaMKIIT287D) on muscle 6 inhibits the retrograde potentiation of presynaptic glutamate release. (F\u2013H) Quantification of mEPSP amplitude (F), EPSP amplitude (G), and quantal content (H) in the indicated muscles. Asterisks indicate statistical significance using a Student\u2019s t test: (**) p<0.01; (***) p<0.001; (ns) not significant. Error bars indicate\u00a0\u00b1\u00a0SEM. Detailed statistical information for represented data (mean values, SEM, n, p) is shown in Supplementary file 1.\n\n## Discussion\n\nAlthough the genes and mechanisms that mediate retrograde homeostatic potentiation have been intensively investigated, whether this process can be expressed and restricted to a subset of synapses within a single neuron has not been determined. We have developed a manipulation that enables the loss of GluRs on only one of the two postsynaptic targets innervated by a Type Ib motor neuron at the Drosophila NMJ. Our analysis of synaptic structure and function in this condition has revealed the spectacular degree of compartmentalization in postsynaptic signaling and presynaptic expression that ultimately orchestrate the synapse-specific modulation of presynaptic efficacy.\n\n### Compartmentalization of postsynaptic PHP signaling\n\nGluRs are dynamically trafficked in postsynaptic compartments where they mediate the synapse-specific expression of Hebbian plasticity such as LTP (Herring and Nicoll, 2016; Matsuzaki et al., 2004) and homeostatic plasticity, including receptor scaling (Hou et al., 2008; Pozo and Goda, 2010; Sutton et al., 2006). In contrast, homeostatic plasticity at the human, mouse, and fly NMJ is expressed through a presynaptic enhancement in neurotransmitter release, but is induced through a diminishment of postsynaptic neurotransmitter receptor functionality (Cull-Candy et al., 1980; Frank et al., 2006; Petersen et al., 1997; Wang et al., 2016b). Using biased expression of Gal4 to reduce GluR levels on only one of the two muscle targets innervated by a single motor neuron, we demonstrate that the inductive signaling underlying PHP is compartmentalized at the postsynaptic density, and does not influence activity at synapses innervating the adjacent muscle. Postsynaptic changes in CaMKII function and activity have been associated with PHP retrograde signaling (Goel et al., 2017; Haghighi et al., 2003; Newman et al., 2017). Consistent with this compartmentalized inductive signaling, we observed pCaMKII levels to be specifically reduced at postsynaptic densities of Ib boutons in which GluR expression is perturbed, while pCaMKII was unchanged at postsynaptic compartments opposite to Is boutons and at NMJs in the adjacent muscle with normal GluR expression. Further, postsynaptic overexpression of the constitutively active CaMKII occludes the expression of PHP. Similar synapse-specific control of postsynaptic CaMKII phosphorylation, modulated by activity, has been previously observed (Hodge et al., 2006). As noted in other studies (Goel et al., 2017; Newman et al., 2017), this localized reduction in pCaMKII provides a plausible mechanism for the inductive PHP signaling restricted to and compartmentalized at Ib synapses.\n\nHow does a perturbation to GluR function lead to a reduction in CaMKII activity that is restricted to postsynaptic densities opposing Type Ib boutons? Recent evidence suggests that distinct mechanisms regulate pCaMKII levels during retrograde PHP signaling depending on pharmacologic or genetic perturbation to glutamate receptors and the role of protein synthesis (Goel et al., 2017). Scaffolds at postsynaptic densities are associated in complexes with GluRs and CaMKII (Gillespie and Hodge, 2013; Hodge et al., 2006; Koh et al., 1999; Lu et al., 2003; Mullasseril et al., 2007). Intriguingly, the scaffold dCASK is capable of modulating CaMKII activity at specific densities in an activity-dependent fashion (Hodge et al., 2006; Malik et al., 2013). Further, CaMKII activity can regulate plasticity with specificity at subsets of synapses in Drosophila and other systems (Griffith, 2004; Hodge et al., 2006; Merrill et al., 2005). Although we cannot rule out intra-cellular cross talk between Is and Ib boutons, as GluRIIA is reduced at postsynaptic sites of both neuronal subtypes, it is striking that reductions in pCaMKII are restricted to Ib postsynaptic compartments. An attractive model, therefore, is that the postsynaptic density isolates calcium signaling over chronic time scales to compartmentalize PHP induction. The membranous complexity and geometry of the SSR at the Drosophila NMJ may be the key to restricting calcium signaling at these sites, as this structure can have major impacts on ionic signaling during synaptic transmission (Nguyen and Stewart, 2016; Teodoro et al., 2013). These properties, in turn, may lead to local modulation of CaMKII function (Goel et al., 2017; Griffith, 2004; Haghighi et al., 2003; Newman et al., 2017). Interestingly, Drosophila mutants with defective SSR elaboration and complexity have been associated with defects in PHP expression (Koles et al., 2015). In the mammalian central nervous system, it is well established that dendritic spines function as biochemical compartments that isolate calcium signaling while enabling propagation of voltage changes (Svoboda et al., 1997; Yuste and Denk, 1995), and it is tempting to speculate that the SSR may subserve similar functions at the Drosophila NMJ to enable synapse-specific retrograde signaling.\n\n### Compartmentalization of presynaptic PHP expression\n\nThe homeostatic modulation of presynaptic neurotransmitter release is compartmentalized at the terminals of Type Ib motor neurons. It was previously known that PHP can be acutely induced and expressed without any information from the cell body of motor neurons (Frank et al., 2006). Our data suggests that the signaling necessary for PHP expression is even further restricted to specific postsynaptic densities and presynaptic boutons, demonstrated through several lines of evidence. First, quantal content is specifically enhanced at boutons innervating muscle 6 in M6\u00a0>\u00a0GluRIIARNAi without measurably impacting transmission on the neighboring boutons innervating muscle 7. In addition, PHP can be acutely induced at synapses innervating muscle 7 despite PHP having been chronically expressed at muscle 6. Finally, the homeostatic modulation of the RRP and enhancement of the functional number of release sites is fully expressed regardless of whether PHP is induced at all Type Ib boutons or only a subset. Thus, PHP signaling is orchestrated at specific boutons according to the state of GluR functionality of their synaptic partners and does not influence neighboring boutons within the same motor neuron.\n\nAlthough the compartmentalized expression of PHP was not unexpected, there was precedent to suspect inter-bouton crosstalk during homeostatic signaling. In the dynamic propagation of action potentials along the axon, the waveform could, in principle, change following PHP expression to globally modulate neurotransmission at all release sites in the same neuron. However, voltage imaging did not identify any change in the action potential waveform at individual boutons following PHP signaling (Ford and Davis, 2014; Gavi\u00f1o et al., 2015), and we did not observe any impact on neighboring boutons despite PHP being induced at a subset of synapses in the same motor neuron. Further, mobilization of an enhanced readily releasable synaptic vesicle pool is necessary for the expression of PHP (Davis and M\u00fcller, 2015; Kiragasi et al., 2017; M\u00fcller et al., 2015; Weyhersm\u00fcller et al., 2011), and synaptic vesicles and pools are highly mobile within and between presynaptic compartments (Darcy et al., 2006; Kahms and Klingauf, 2018; Staras et al., 2010). Hence, it was conceivable that a mobilized RRP, induced at some presynaptic compartments, may be promiscuously shared between other boutons. However, while we observed a large enhancement in the RRP at synapses innervating muscle 6 in M6\u00a0>\u00a0GluRIIARNAi, this adaptation had no impact on the RRP at adjacent presynaptic compartments innervating muscle 7. Thus, PHP signaling is constrained to boutons innervating one of two postsynaptic targets and does not \u2018spread\u2019 to synapses innervating the adjacent target despite sharing common cytosol, voltage, and synaptic vesicles.\n\nWhat molecular mechanisms mediate the remarkable specificity of PHP expression at presynaptic compartments? One attractive possibility is that active zones themselves are fundamental units and act as substrates for the homeostatic modulation of presynaptic function. The active zone scaffold BRP remodels during both acute and chronic PHP expression (Goel et al., 2017; Weyhersm\u00fcller et al., 2011), and other active zone proteins are likely to participate in this remodeling (Gratz et al., 2018). Indeed, many genes encoding active zone components are required for PHP expression, including the calcium channel cac (Frank et al., 2006) and auxiliary subunit \u03b12-\u03b4 (Wang et al., 2016a), the piccolo homolog fife (Bruckner et al., 2017), the scaffolds RIM (Rab3-interacting Molecule; [M\u00fcller et al., 2012]) and RIM-binding protein (RBP; [M\u00fcller et al., 2015]), and the kainite receptor DKaiR1D (Kiragasi et al., 2017). If individual active zones can undergo the adaptations necessary and sufficient for PHP expression, this would imply that PHP can be induced and expressed with specificity at individual active zones. Indeed, the BRP cytomatrix stabilizes calcium channel levels at the active zone (Kittel et al., 2006), and also controls the size of the RRP (Matkovic et al., 2013), two key presynaptic expression mechanisms that drive PHP. Further, we and others have observed the recruitment of new functional release sites following both chronic and acute PHP expression (Davis and M\u00fcller, 2015; Newman et al., 2017; Weyhersm\u00fcller et al., 2011), suggesting that previously silent active zones become \u2018awakened\u2019 and utilized to potentiate presynaptic neurotransmitter release. Interestingly, presynaptic GluRs, localized near active zones, are necessary for PHP expression and have the capacity to modulate release with specificity at individual active zones (Kiragasi et al., 2017). Thus, active zones can remodel with both the specificity and precision necessary and sufficient for compartmentalized PHP expression.\n\nIf each active zone operates as an independent homeostat to adjust release efficacy in response to target-specific changes, how is information transfer at individual sites integrated to ensure stable and stereotypic global levels of neurotransmission? One speculative possibility is that active zones at terminals of each neuron are endowed with a total abundance of material that is tightly controlled and sets stable global levels of presynaptic neurotransmitter release. Such active zone material may be sculpted with considerable heterogeneity within presynaptic terminals, varying in number, size, and density. Consistent with such a possibility, mutations in the synaptic vesicle component Rab3 exhibit extreme changes in active zone size, number, and density, but stable global levels of neurotransmission (Graf et al., 2009). Within this global context, plasticity mechanisms may operate at individual active zones, superimposed as independent homeostats to adaptively modulate synaptic strength. In addition, there is intriguing evidence for the existence of \u2018nanocolumns\u2019 between presynaptic active zones and postsynaptic GluRs that form structural and functional signaling complexes (Biederer et al., 2017; Tang et al., 2016). One particularly appealing possibility, therefore, is that a dialogue traversing synaptic nanocolumns functions to convey the retrograde signaling and active zone remodeling necessary for PHP expression at individual release sites. Studies in mammalian neurons have revealed parallel links between the functional plasticity of active zones, including their structure and size, and the homeostatic modulation of neurotransmitter release (Glebov et al., 2017; Matz et al., 2010; Murthy et al., 2001; Schikorski and Stevens, 2001). Such intercellular signaling systems are likely to modify synaptic structure and function to not only establish precise pre- and post-synaptic apposition during development, but also to maintain the plasticity necessary for synapses to persist with the flexibility and stability to last a lifetime.\n\n## Materials and methods\n\n### Fly stocks and genetics\n\nDrosophila stocks were raised at 25\u00b0C on standard molasses food. The w1118 strain is used as the wild-type control unless otherwise noted, as this is the genetic background of the transgenic lines and other genotypes used in this study. The following fly stocks were used: G14-Gal4\u00a0(Aberle et al., 2002); GluRIIARNAi (p{TRiP.JF02647}attP2}; Bloomington Drosophila Stock Center (BDSC)); UAS-CaMKIIT287D (BDSC); mCherryRNAi (p{VALIUM20-mCherry}attP2}; BDSC); GluRIIASP16 (Petersen et al., 1997); M6-Gal4 (Tub-FRT-STOP-FRT-Gal4, UAS-FLP, UAS-CD8-GFP; H94-Gal4, nSyb-Gal80) (Choi et al., 2014).\n\n### Immunocytochemistry\n\nThird-instar larvae were dissected in ice cold 0 Ca2+ modified HL-3 saline and immunostained as described (Kikuma et al., 2017). Briefly, larvae were fixed in Bouin's fixative (Sigma,\u00a0St.\u00a0Louis,\u00a0MO; HT10132-1L) for 2 min and washed with PBS containing 0.1% Triton X-100 (PBST) for 30 min, then blocked for 1 hr in 5% Normal Donkey Serum (NDS). Following overnight incubation in primary antibodies at 4\u00b0C, preparations were washed in PBST, incubated in secondary antibodies for 2 hr, washed and mounted in VectaShield (Vector Laboratories). The following antibodies were used: guinea pig anti-vGlut (1:2000; (Chen et al., 2017); rabbit anti-DLG (1:5000; [Pielage et al., 2005]); mouse anti-GluRIIA (8B4D2; 1:100; Developmental Studies Hybridoma Bank (DSHB)); rabbit anti-GluRIIC (1:1000; [Marrus et al., 2004]); guinea pig anti-GluRIID (1:1000; [Perry et al., 2017]); mouse anti-pCaMKII (1:100; MA1-047; Invitrogen); mouse anti-GFP (8H11; 1:100; DSHB); Tetramethylrhodamine (TRITC)-conjugated phalloidin (R415; Thermo Fisher); Alexa Fluor 647-conjugated goat anti-HRP (1:200; Jackson ImmunoResearch). Donkey anti-mouse, anti-guinea pig, and anti-rabbit Alexa Fluor 488-, DyLight 405-, and Cyanine 3 (Cy3)-conjugated secondary antibodies (Jackson ImmunoResearch) were used at 1:400.\n\n### Confocal imaging and analysis\n\nSamples were imaged using a Nikon A1R Resonant Scanning Confocal microscope equipped with NIS Elements software and a 100x APO 1.4NA oil immersion objective using separate channels with four laser lines (405 nm, 488 nm, 561 nm, and 637 nm) as described (Chen et al., 2017). All genotypes were immunostained in the same tube with identical reagents, then mounted and imaged in the same session. z-stacks were obtained using identical settings for all genotypes with z-axis spacing between 0.15 \u00b5m to 0.2 \u00b5m within an experiment and optimized for detection without saturation of the signal. Both Type Ib and Is boutons were counted using vGlut and HRP-stained NMJ terminals on muscle 6/7 of segment A3, considering each vGlut puncta to be a bouton. Muscle surface area was calculated by creating a mask around the phalloidin channel that labels the entire muscle. The general analysis toolkit in the NIS Elements software was used to quantify GluRIIA/C/D and pCamKII intensity levels by applying intensity thresholds and filters to binary layers for each the channels of the maximum intensity projection images. To quantify GluR intensity levels, the total fluorescence intensity of each GluRIIA, GluRIIC, or GluRIID puncta was averaged over the NMJ area covered by muscle 6 or muscle seven separately to determine mean fluorescence intensity; this value was then normalized as a percentage of wild type for the corresponding muscle. For analysis of pCaMKII levels, Ib and Is regions were identified using DLG and HRP on muscle 6/7 of segment A2 and A3, and only the pCamKII signal that co-localized with DLG was summated and divided by the bouton area under consideration to obtain average pCamKII. quantitative PCR: quantitative PCR (qPCR) was performed using the Luna Universal One-Step RT-qPCR Kit (NEB, E3005S) according to the manufacturer\u2019s instructions. RNA was isolated and prepared from body wall tissue as described previously (Chen and Dickman, 2017). 20 ng of total RNA was used as the template for each reaction. Three biological replicates were performed for each sample and the comparative Ct method was used for qPCR data analysis. The following primers were used (fwd; rev: 5\u2019\u22123\u2019):\n\nGluRIIA: TCCTCAACTTGGAACTGGAAAG; CGTACTTTTCCCTGCCTCTG.\n\nGluRIIB: GCGAATACAGATGAATGGGATG; TGCATGAAGGGTACAGTGAAG.\n\nGluRIIC: CGGAAAACTGGACAAGGAAAC; AGCTGCATAAAGGGCACTG.\n\nGluRIID: CCCAAGCTGTCAACTTCAATG; CCATAACCCTGGAACTGATTGT.\n\nGluRIIE: CGGTGCAAAGAAAACTGGATC; GTCTTAACTCGATTCACTCCCTC.\n\n$\\alpha$Tub84D (control): CTACAACTCCATCCTAACCACG; CAGGTTAGTGTAAGTGGGTCG.\n\n### Electrophysiology\n\nAll dissections and recordings were performed in modified HL-3 saline (Dickman et al., 2005; Kiragasi et al., 2017; Stewart et al., 1994) at room temperature containing (in mM): 70 NaCl, 5 KCl, 10 MgCl2, 10 NaHCO3, 115 Sucrose, 5 Trehelose, 5 HEPES, and 0.4 CaCl2 (unless otherwise specified), pH 7.2. Neuromuscular junction sharp electrode recordings were performed on muscles 6 or 7 of abdominal segments A2 or A3 in wandering third-instar larvae. Biased Gal4 expression was verified by verifying GFP fluorescence on the particular muscle before experimentation, and recordings were performed at only the GFP-positive muscle 6 and the adjacent muscle 7. Muscle input resistance (Rin) and resting membrane potential (Vrest) were monitored during each experiment (Supplementary file 1). To acutely block postsynaptic receptors, larvae were incubated with or without philanthotoxin-433 (20 \u03bcM; Sigma) and resuspended in HL-3 for 10 mins, as described (Dickman and Davis, 2009; Frank et al., 2006).\n\nThe readily releasable pool (RRP) size was estimated by analyzing cumulative EPSC amplitudes while recording using a two-electrode voltage clamp (TEVC) configuration. Muscles were clamped to \u221270 mV and EPSCs were evoked with a 60 Hz, 60 stimulus train while recording in HL-3 supplemented with 3 mM Ca2+. A line fit to the linear phase (stimuli # 18\u201330) of the cumulative EPSC data was back-extrapolated to time 0. The RRP value was estimated by determining the extrapolated EPSC value at time 0 and dividing this value by the average mEPSC amplitude. More details of the RRP size analysis can be found at Bio-protocol (Goel et al., 2019).\u00a0Data used in the variance-mean plot was obtained from TEVC recordings using an initial 0.5 mM Ca2+ concentration, which was subsequently increased to 1.5, 3.0, and 6.0 mM through saline exchange using a peristaltic pump (Langer Instruments, BT100-2J). EPSC amplitudes were monitored during the exchange, and 30 EPSC (0.5 Hz stimulation rate) recordings were performed in each calcium condition. To obtain the variance-mean plot, the variance (squared standard deviation) and mean (averaged evoked amplitude) were calculated from the 30 EPSCs at each individual Ca2+ concentration. The variance was then plotted against the mean for each specific calcium condition using MATLAB software (MathWorks, USA). One additional data point, in which variance and mean are both theoretically at 0, was used for Ca2+-free saline. Data from these five conditions were fit with a standard parabola (variance\u00a0=\u00a0Q*\u012a -\u012a2/N), where Q is the quantal size, \u012a is the mean evoked amplitude (x-axis), and N is the functional number of release sites. N, as a parameter of the standard parabola, was directly calculated for each cell by best parabolic fit.\n\n### Statistical analysis\n\nAll data are presented as mean\u00a0\u00b1\u00a0SEM. Data was compared using either a one-way ANOVA followed by Tukey\u2019s multiple comparison test, or using a Student\u2019s t-test (where specified). Data was analyzed using Graphpad Prism or Microsoft Excel software, with varying levels of significance assessed as p<0.05 (*), p<0.01 (**), p<0.001 (***), p<0.0001 (****), ns: not significant. M6\u00a0>GluRIIARNAi results were compared to M6\u00a0>\u00a0mCherryRNAi (Figure 2\u2014figure supplement 1) and G14/+, in addition to w1118; in no case did the control change the statistically significant result. See Supplementary file 1 for further statistical details and values.\n",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "3c64873c-641b-474a-9ca7-f60e29b9dd64",
+      "submission_id": "42bae8cb-7fab-47c2-a59f-eed897f8f080",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ronald L Calabrese, Emory University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34338.016](https://doi.org/10.7554/eLife.34338.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Synapse-specific and compartmentalized expression of presynaptic homeostatic potentiation\" for consideration by eLife. Your article has been favorably evaluated by Eve Marder (Senior Editor) and three reviewers, one of whom, Ronald L Calabrese (Reviewer #1), is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Richard Baines (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nHere the authors report elegant experiments that show that different terminals of the same motor neuron can undergo Presynaptic Homeostatic Plasticity (PHP) independently in response to knockdown of GluRIIA subunit on one muscle but not another also innervated by the same motor neuron. They present strong physiological evidence that the terminal of the motor neuron on the affected muscle undergo PHP do so by increasing the number of release sites and the readily releasable pool of vesicles specifically at boutons on the affected muscle. They also show that pCaMKII is down regulated opposite to Ib boutons on the affected muscle but not opposite Ib boutons on the other muscle. The experiments are very well controlled and supplementary data are germane, useful and well integrated. They argue that although the compartmentalized expression of PHP was not unexpected, given such early work as that by Hodge et al. 2006 on terminal specific pCaMKII expression, there was precedent to suspect inter-terminal crosstalk during homeostatic signaling and they have carefully ruled this out. The Discussion is informative and provocative suggesting how bouton specific postsynaptic retrograde signaling necessary to give the new results might occur.\n\nThe wider appeal of this work derives from how it fits with existing literature on synaptic plasticity and synaptic scaling in the vertebrate CNS providing an intriguing presynaptic alternative bouton specific mechanism of synaptic homeostatic scaling.\n\nThe writing is very clear and the figures nicely illustrative of the methods and the results.\n\nEssential revisions:\n\nThere was a concern brought up vis a vis significance in that this study does not really extend current mechanistic understanding. If there is any place in this paper where this concern can be overcome, it would be to extend the result in Figure 5 (localized CaMKII de-phosphorylation as an instructive mechanism to induce PHP). This point is centered around the fact that the evidence is not air tight that CaMKII de-phosphorylation is actually driving a retrograde signal downstream of GluRIIA loss. In fact the authors appear to recognize this point and use qualified language, leaving open the possibility that CaMKII de-phosphorylation is just a sentinel for GluRIIA loss (\"plausible mechanism\" and \"presumably related to PHP inductive signaling\").\n\nThere are a few different ways this could be tested electrophysiologically. We would like you to consider whether one of these experiments is feasible within a short time-frame and whether you agree that it would strengthen the paper. If so, we would encourage you to do the experiment.\n\nThere are several possible experiments. Each would require a control electrophysiology data set and an experimental set. We think you have the expertise and resources to do one of these quickly.\n\na) M6 > UAS-CaMKII-ala vs. M6 > UAS-CaMKII-ala + > UAS-GluRIIA-RNAi. Record from both muscle 6 and muscle 7 as before. The expectation in muscle 6 would be that non-phosphorylatable CaMKII-ala instructively induces increased transmitter release in a way that is not additive with the addition of GluRIIA loss.\n\nb) M6 > UAS-CaMKII-T287D vs. M6 > UAS-CaMKII-T287D + > UAS-GluRIIA RNAi. Record from both muscle 6 and muscle 7 as before. The expectation in muscle 6 would be that muscle expression of the constitutively phospho-mimetic version of CaMKII would block homeostatic potentiation of function. This is the experiment that the current manuscript says was done in Haghighi et al., 2003, but it was not really done because that paper does not check for baseline neurotransmission defects in T287D.\n\nc) M6 > UAS-CamKII-ala vs. M6 > UAS-Tor vs. M6 > UAS-CaMKII-ala + > UAS-Tor. Record from both muscle 6 and 7. The expectation here is the same as in #1 above, non-additivity with muscle-driven UAS-Tor, which has been shown by multiple groups to induce presynaptic potentiation. The Dickman lab has the UAS-Tor line.\n\nd) Show some evidence (any evidence) for the PSD/SSR model in the Discussion. With the M6 > UAS-GluRIIA-RNAi manipulation, it is a conundrum that GluRIIA is diminished at both Is and Ib boutons in muscle 6, but it is only at the Ib boutons where p-CaMKII is down. It is speculated that the PSD/SSR has something to do with this. At the Is boutons, Dlg is naturally diminished. So maybe the solution is to look at this problem in the context of globally diminished Dlg? We are less sure about what to expect here. The model is speculative.\n\nThere are several other points that should be addressed in the expert review but the Ca-imaging experiments suggested are not required.\n\nReviewer #2:\n\n1) Driver Controls. The study relies on RNAi-mediated genetic knockdown of the GluRIIA subunit gene, using various muscle Gal4 manipulations to drive a UAS-GluRIIARNAi line. All of the electrophysiology and immunostaining and statistical analyses reported in the main figures utilize w1118 as a control, as opposed to Gal4 (or RNAi line/+) alone. Driver controls would be better than w1118 alone.\n\nOn the one hand, this does not pose a problem for the authors' main conclusions \u2013 one could view the Gal4/RNAi combination as a single, collective genetic perturbation that serves to reduce quantal size (or reduce CaMKII phosphorylation) versus w1118. On the other hand, since several of these reagents are being utilized and reported in the context of homeostatic plasticity for the first time (especially \"M6-Gal4\", which is comprised of multiple genetic manipulations), it would be better to report contributions of proper genetic controls in the main figures. It seems like the authors already have a better control already reported in the supplemental figure (M6-Gal4/mCherryRNAi). A G14/+ control would be also appropriate elsewhere.\n\n2) CaMKII and mechanism. The authors follow up on prior work from their lab (Goel et al., 2017) and other labs (Newman et al., 2017; Hodge et al., 2006; Haghighi et al., 2003) to suggest that dephosphorylation of CaMKII in the muscle \"mediates PHP induction\". In the Discussion, much is offered about how this induction could potentially be working via CaMKII and the PSD (subsection \u201cCompartmentalization of postsynaptic PHP signaling\u201d, first paragraph).\n\nIt might be a nitpicky point, but the prior literature is not airtight on p-CaMKII's role in opposing retrograde signaling during PHP. The authors reference the T287D data from the Goodman lab (Haghighi et al., 2003). Those data were collected in a GluRIIASP16 (or UAS-GluRIIAM/R) background, and baseline neurotransmission was not documented. Similarly, for studies utilizing the non-phospho UAS-CaMKIIala (T287A) reagent (Haghighi, Newman), it is not tested if the gains in neurotransmission are additive or non-additive in a GluRIIA null background. Muddying matters, there is other published work (e.g. Morimoto et al., Neuroscience 2010) that seems to suggest an opposite type of role for these gain- and loss-of-function alleles. That work invokes the opposite idea that CaMKII itself might be regulating GluR levels.\n\nTo be clear, the authors' demonstration that GluRIIA subunit loss promotes local CaMKII de-phosphorylation is solid data. It is a demonstration of a localized, visible response. That speaks to the main finding of the paper. However, it could still be the case that the CaMKII phenotype is reflective of muscle GluRIIA loss \u2013 and not actually an instructive part of homeostatic retrograde signaling itself. With their current data, the authors could qualify their discussion about CaMKII.\n\nIf the authors wished to extend the point about dephosphorylation of T287 CaMKII playing an instructive role in homeostatic potentiation, they could pursue other experiments. One idea would be to combine the Ala reagent with GluRIIA loss (or with Target of Rapamycin overexpression). For those genetic combinations, one might expect non-additivity in potentiation \u2013 as the Dickman lab recently demonstrated when combining GluRIIA loss and TOR overexpression (Goel et al., 2017).\n\n3) Postsynaptic GluRIIA loss is muscle-specific, but not Ib-specific. The local versus global experiments in this paper provide compelling evidence that homeostatic potentiation signals do not \"spread\" (Introduction, end of first paragraph) from one presynaptic site Ib bouton to others presynaptic sites innervating the adjacent muscle. But the presynapse is not the only locus from which signals may spread. The GluRIIA loss perturbations are global (in a muscle-specific way). In theory, \"homeostatic signals\" (of any sort) could spread from postsynaptic Is sites to Ib sites within a given muscle, downstream of GluRIIA-containing receptor loss. Even though PHP is not expressed via the presynaptic Is boutons (Newman), and postsynaptic CaMKII phosphorylation is not dampened at Is loci, this idea could still be discussed.\n\n4) Novelty of studying local presynaptic plasticity mechanisms. The Abstract and Introduction (first paragraph) state that it is uncertain whether plasticity mechanisms can be locally compartmentalized in a single presynaptic neuron's terminals. This is not quite correct.\n\nThe authors are correct that the question addressing PHP in this way has not been done before. But In the realm of synaptic plasticity (and NMJs in particular), there are many studies reaching back four decades or more that demonstrate target-specific presynaptic plasticity (see for example Frank, 1973; as well as Katz et al., 1993) at the lobster NMJ, terminals from a single neuron facilitate to varying degrees depending on the muscle contacted). Most relevant for the present study, the study cited for the H94 driver (Davis and Goodman, 1998) shows that forcing altered innervation between muscles 6 and 7 results in site-specific changes in neurotransmission. A broader plasticity context for the present work would be appropriate.\n\nReviewer #3:\n\nMy specific concerns are:\n\n1) The GluRIIA RNAi would appear to be very effective. It would be a useful addition to quantitate this by QRT-PCR: perhaps using a pan-muscle GAL4 driver. Based on the IHC shown in Figure 2, one might predict KD to be >90% (which would be unusual, but not unheard of, for an RNAi).\n\n2) Figure 6 reports the RRP and shows ejps elicited at 60Hz. The RRP is calculated, presumably, by dividing the cumulative ejp by mini size? One must presume, therefore, that minis were measured under voltage clamp? Mini data should be added to the figure to allow the reader to appreciate how the RRP was calculated. Alternatively, the precise manner in which RRP was calculated (in addition to relevant values) should be described.\n\n3) With regard the theoretical calculation of N shown in Figure 7. Theory is one thing, but validation through experiment would be a welcome addition. Can the authors provide experimental validation \u2013 perhaps through use of GCaMP signalling (e.g. as per the Littleton lab) \u2013 to observe increased N?\n",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a7a18373-d8ab-4f6b-9d43-44b27f21011a",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C1",
+      "claim": "Postsynaptic compartments can be specifically modulated during various forms of synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Postsynaptic compartments can be specifically modulated during various forms of synaptic plasticity, but it is unclear whether this precision is shared at presynaptic terminals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about synaptic plasticity that draws from established scientific understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "1b69bcb5-fe1a-4277-bc93-4348877980e8",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C2",
+      "claim": "It is unclear whether the precision of specific modulation is shared at presynaptic terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "Postsynaptic compartments can be specifically modulated during various forms of synaptic plasticity, but it is unclear whether this precision is shared at presynaptic terminals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in current knowledge that the study aims to address.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "a0b181ce-81fb-434c-8155-c7c54ac0b57b",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C3",
+      "claim": "Presynaptic homeostatic plasticity (PHP) stabilizes neurotransmission at the Drosophila neuromuscular junction.",
+      "claim_type": "EXPLICIT",
+      "source": "Presynaptic homeostatic plasticity (PHP) stabilizes neurotransmission at the Drosophila neuromuscular junction, where a retrograde enhancement of presynaptic neurotransmitter release compensates for diminished postsynaptic receptor functionality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PHP at the Drosophila NMJ, supported by prior research in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "f6fff18e-0953-4d07-91d5-4e1f1a888d2c",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C4",
+      "claim": "A retrograde enhancement of presynaptic neurotransmitter release compensates for diminished postsynaptic receptor functionality during PHP.",
+      "claim_type": "EXPLICIT",
+      "source": "Presynaptic homeostatic plasticity (PHP) stabilizes neurotransmission at the Drosophila neuromuscular junction, where a retrograde enhancement of presynaptic neurotransmitter release compensates for diminished postsynaptic receptor functionality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism of PHP, which is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "d9f564db-3c58-4ffe-967f-0fb7ab1445b0",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C5",
+      "claim": "PHP can be induced and expressed at a subset of synapses over both acute and chronic time scales.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that PHP can be induced and expressed at a subset of synapses, over both acute and chronic time scales, without influencing transmission at adjacent release sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "590b3e8a-bfc4-488a-9692-8c2c302b219d",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C6",
+      "claim": "PHP induction and expression at a subset of synapses does not influence transmission at adjacent release sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that PHP can be induced and expressed at a subset of synapses, over both acute and chronic time scales, without influencing transmission at adjacent release sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by electrophysiological data showing no change in quantal content at muscle 7 when PHP is expressed at muscle 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "553895a8-1ebc-467f-9247-f71174cd4d05",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C7",
+      "claim": "Homeostatic modulations to CaMKII are compartmentalized and do not spread to neighboring pre- or post-synaptic structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, homeostatic modulations to CaMKII, vesicle pools, and functional release sites are compartmentalized and do not spread to neighboring pre- or post-synaptic structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunostaining data in Figure 7 showing pCaMKII reductions only at muscle 6 Ib boutons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "f288721b-3215-48f9-b59e-d9e526c544b4",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C8",
+      "claim": "Homeostatic modulations to vesicle pools are compartmentalized and do not spread to neighboring pre- or post-synaptic structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, homeostatic modulations to CaMKII, vesicle pools, and functional release sites are compartmentalized and do not spread to neighboring pre- or post-synaptic structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RRP measurements in Figure 5 showing increased RRP only at muscle 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "9c98dbae-4526-419c-af3e-59a0bac0dbc7",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C9",
+      "claim": "Homeostatic modulations to functional release sites are compartmentalized and do not spread to neighboring pre- or post-synaptic structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, homeostatic modulations to CaMKII, vesicle pools, and functional release sites are compartmentalized and do not spread to neighboring pre- or post-synaptic structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by variance-mean analysis in Figure 6 showing increased N only at muscle 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "2612e790-daf0-49ce-b291-eac4f2cdf885",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C10",
+      "claim": "Both PHP induction and expression mechanisms are locally transmitted and restricted to specific synaptic compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, both PHP induction and expression mechanisms are locally transmitted and restricted to specific synaptic compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by multiple lines of experimental evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "350cc730-cae7-4b7e-a3ea-3cc88b56dc96",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C11",
+      "claim": "Compartmentalized changes in dendritic spines tune responses to neurotransmitter release during information transfer in the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptic strength can be modulated with a remarkable degree of specificity to enable the flexibility necessary for learning and memory, where compartmentalized changes in dendritic spines tune responses to neurotransmitter release during information transfer in the nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about synaptic plasticity mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "cf15278b-8244-4935-bd45-68b862907bd3",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C12",
+      "claim": "Compartmentalized plasticity mechanisms require compartmentalized trafficking and insertion of glutamate receptors into postsynaptic densities at specific locations in response to correlated activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Such plasticity mechanisms require compartmentalized trafficking and insertion of glutamate receptors (GluRs) into postsynaptic densities at specific locations in response to correlated activity (Herring and Nicoll, 2016; Malinow, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "5309075f-03e9-47ac-8f2d-36908ead0fb0",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C13",
+      "claim": "Hebbian plasticity processes are inherently destabilizing.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these processes of Hebbian plasticity are inherently destabilizing, and homeostatic mechanisms have been proposed to adaptively counteract such forces to maintain synaptic strength within physiologically stable levels (Davis, 2013; Pozo and Goda, 2010; Turrigiano, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "d267d69e-0d0b-4f6b-a0b0-a0a7ad075ad4",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C14",
+      "claim": "Homeostatic mechanisms adaptively counteract destabilizing forces to maintain synaptic strength within physiologically stable levels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these processes of Hebbian plasticity are inherently destabilizing, and homeostatic mechanisms have been proposed to adaptively counteract such forces to maintain synaptic strength within physiologically stable levels (Davis, 2013; Pozo and Goda, 2010; Turrigiano, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "934efa51-03f9-49db-840c-3db5404c61c3",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C15",
+      "claim": "There is evidence for heterogeneity in presynaptic efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence for heterogeneity in presynaptic efficacy (Branco et al., 2008; Dobrunz and Stevens, 1997; Holderith et al., 2012; Trommersh\u00e4user et al., 2003; Vitureira et al., 2011), and release probability can vary considerably along a single axon (Murthy et al., 1997; Paul et al., 2015; Peled and Isacoff, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "284f6550-a81a-4846-8273-4f572406ff86",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C16",
+      "claim": "Release probability can vary considerably along a single axon.",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence for heterogeneity in presynaptic efficacy (Branco et al., 2008; Dobrunz and Stevens, 1997; Holderith et al., 2012; Trommersh\u00e4user et al., 2003; Vitureira et al., 2011), and release probability can vary considerably along a single axon (Murthy et al., 1997; Paul et al., 2015; Peled and Isacoff, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "127e5187-87db-4225-a65f-b5cd84b578c3",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C17",
+      "claim": "Target-specific differences in presynaptic function have been demonstrated.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, target-specific differences in presynaptic function (Frank, 1973; Katz et al., 1993; Scanziani et al., 1998) and homeostatic plasticity (Davis and Goodman, 1998) have been demonstrated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "ddaa9b15-bd0e-424e-9c54-a2b9500c5ed9",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C18",
+      "claim": "Target-specific differences in homeostatic plasticity have been demonstrated.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, target-specific differences in presynaptic function (Frank, 1973; Katz et al., 1993; Scanziani et al., 1998) and homeostatic plasticity (Davis and Goodman, 1998) have been demonstrated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "bbff025e-1840-44fe-97f0-23e015157807",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C19",
+      "claim": "Genetic and pharmacological perturbations to postsynaptic receptors initiate a retrograde, trans-synaptic signaling system that homeostatically increases presynaptic neurotransmitter release.",
+      "claim_type": "EXPLICIT",
+      "source": "At this glutamatergic synapse, genetic and pharmacological perturbations to postsynaptic receptors initiates a retrograde, trans-synaptic signaling system that homeostatically increases presynaptic neurotransmitter release to maintain stable levels of synaptic strength (Davis and M\u00fcller, 2015; Frank, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PHP supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "c6d09489-d5dc-45f9-af5b-6010ae02b3c4",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C20",
+      "claim": "PHP is achieved through an increase in presynaptic efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "This form of plasticity is achieved through an increase in presynaptic efficacy and is therefore referred to as presynaptic homeostatic potentiation (PHP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the mechanism of PHP.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "d8f09eb5-418b-4cba-819c-92f29a7fcbf6",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C21",
+      "claim": "Parallel forms of homeostatic regulation are conserved at NMJs of rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "Parallel forms of homeostatic regulation are conserved at NMJs of rodents (Wang et al., 2016b) and humans (Cull-Candy et al., 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "5916de96-6380-4ab9-ba85-0d6330726683",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C22",
+      "claim": "Parallel forms of homeostatic regulation are conserved at NMJs of humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Parallel forms of homeostatic regulation are conserved at NMJs of rodents (Wang et al., 2016b) and humans (Cull-Candy et al., 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "ae0a127c-577a-47bc-b58d-7d84cd882db2",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C23",
+      "claim": "PHP initiates a single retrograde signaling system that triggers two key expression mechanisms: increases in presynaptic calcium influx and the number of synaptic vesicles participating in the readily releasable pool.",
+      "claim_type": "EXPLICIT",
+      "source": "PHP initiates a single retrograde signaling system that triggers two key expression mechanisms to enhance presynaptic glutamate release: increases in both presynaptic calcium influx and the number of synaptic vesicles participating in the readily releasable pool (Goel et al., 2017; Kiragasi et al., 2017; M\u00fcller and Davis, 2012; Weyhersm\u00fcller et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "380cd239-33a4-4b48-8d75-fcfbbc2b83fa",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C24",
+      "claim": "Several genes necessary for PHP expression have been identified that function as putative retrograde signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Several genes necessary for PHP expression have been identified that function as putative retrograde signals (Orr et al., 2017; Wang et al., 2014) and presynaptic effectors in the motor neuron (Bruckner et al., 2017; Dickman and Davis, 2009; Dickman et al., 2012; Kiragasi et al., 2017; M\u00fcller et al., 2015; M\u00fcller et al., 2012; Tsurudome et al., 2010; Younger et al., 2013), but the postsynaptic induction mechanisms that initiate PHP signaling remain enigmatic (Chen and Dickman, 2017; Goel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "64c54b71-75f4-4414-9f25-b355ecf05836",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C25",
+      "claim": "Several genes necessary for PHP expression have been identified that function as presynaptic effectors in the motor neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "Several genes necessary for PHP expression have been identified that function as putative retrograde signals (Orr et al., 2017; Wang et al., 2014) and presynaptic effectors in the motor neuron (Bruckner et al., 2017; Dickman and Davis, 2009; Dickman et al., 2012; Kiragasi et al., 2017; M\u00fcller et al., 2015; M\u00fcller et al., 2012; Tsurudome et al., 2010; Younger et al., 2013), but the postsynaptic induction mechanisms that initiate PHP signaling remain enigmatic (Chen and Dickman, 2017; Goel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "7b013403-1069-418d-827e-82ddd638e3aa",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C26",
+      "claim": "The postsynaptic induction mechanisms that initiate PHP signaling remain enigmatic.",
+      "claim_type": "EXPLICIT",
+      "source": "Several genes necessary for PHP expression have been identified that function as putative retrograde signals (Orr et al., 2017; Wang et al., 2014) and presynaptic effectors in the motor neuron (Bruckner et al., 2017; Dickman and Davis, 2009; Dickman et al., 2012; Kiragasi et al., 2017; M\u00fcller et al., 2015; M\u00fcller et al., 2012; Tsurudome et al., 2010; Younger et al., 2013), but the postsynaptic induction mechanisms that initiate PHP signaling remain enigmatic (Chen and Dickman, 2017; Goel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "dc639fdb-5b02-4476-abfb-dfc2bb04edd6",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C27",
+      "claim": "PHP induction and expression at a subset of synapses within a single motor neuron has never been demonstrated at the Drosophila NMJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, PHP induction and expression at a subset of synapses within a single motor neuron has never been demonstrated at the Drosophila NMJ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in knowledge that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "eb65481c-3f91-4888-871e-7b0de3f24661",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C28",
+      "claim": "PHP is expressed exclusively at one of two motor neuron subtypes that innervate most muscles at the Drosophila NMJ, Type Is and Type Ib.",
+      "claim_type": "EXPLICIT",
+      "source": "PHP is expressed exclusively at one of two motor neuron subtypes that innervate most muscles at the Drosophila NMJ, Type Is and Type Ib.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PHP expression patterns.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "ada4dac6-519d-4f52-848b-fad325c6b5e4",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C29",
+      "claim": "Type Is motor inputs exhibit smaller boutons, less subsynaptic reticulum (SSR), higher basal release probability, and do not participate in PHP adaptation over chronic time scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Type Is motor inputs exhibit smaller boutons, less subsynaptic reticulum (SSR), higher basal release probability, and do not participate in PHP adaptation over chronic time scales (Lnenicka and Keshishian, 2000; Newman et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "9727041c-75f6-4760-8207-9aff6b1cb7dc",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C30",
+      "claim": "Type Ib motor neurons have larger boutons, more elaborate SSR, and lower basal release probability.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Type Ib motor neurons have larger boutons, more elaborate SSR, and lower basal release probability, which is enhanced after loss of postsynaptic GluRs (Newman et al., 2017), demonstrating that PHP is expressed exclusively at Type Ib synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "2434a2b2-b5c2-4523-9bda-cd2c6703597d",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C31",
+      "claim": "Type Ib basal release probability is enhanced after loss of postsynaptic GluRs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Type Ib motor neurons have larger boutons, more elaborate SSR, and lower basal release probability, which is enhanced after loss of postsynaptic GluRs (Newman et al., 2017), demonstrating that PHP is expressed exclusively at Type Ib synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "df1db5dc-77bf-411a-8f05-901872356eb4",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C32",
+      "claim": "PHP is expressed exclusively at Type Ib synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Type Ib motor neurons have larger boutons, more elaborate SSR, and lower basal release probability, which is enhanced after loss of postsynaptic GluRs (Newman et al., 2017), demonstrating that PHP is expressed exclusively at Type Ib synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "3f4b2c79-02d3-4748-aecd-cfffd1359305",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C33",
+      "claim": "A reduction in phosphorylated (active) levels of CaMKII occurs specifically in the postsynaptic density of Ib boutons.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, a reduction in phosphorylated (active) levels of CaMKII, presumably related to PHP inductive signaling, occurs specifically in the postsynaptic density of Ib boutons (Goel et al., 2017; Newman et al., 2017), suggesting a possible mechanism for the specificity of retrograde PHP signaling to the Ib motor neuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "d8fe5e09-ed7b-4c4f-8545-75f28611cefe",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C34",
+      "claim": "The reduction in pCaMKII at Ib boutons suggests a possible mechanism for the specificity of retrograde PHP signaling to the Ib motor neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, a reduction in phosphorylated (active) levels of CaMKII, presumably related to PHP inductive signaling, occurs specifically in the postsynaptic density of Ib boutons (Goel et al., 2017; Newman et al., 2017), suggesting a possible mechanism for the specificity of retrograde PHP signaling to the Ib motor neuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on cited prior research.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "1e0784bb-f8cb-44c3-8b04-b486a4c89159",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C35",
+      "claim": "GluRIIARNAi knock-down effectively phenocopies GluRIIA mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, this demonstrates that postsynaptic knock down of the GluRIIA subunit effectively phenocopies GluRIIA mutants and induces the robust expression of PHP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 1 showing similar GluRIIA levels, mEPSP amplitudes, and quantal content between GluRIIA mutants and G14>GluRIIARNAi.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "79d71b20-cb94-4486-8592-9d2c4db9acf4",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C36",
+      "claim": "Postsynaptic knock down of the GluRIIA subunit induces the robust expression of PHP.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, this demonstrates that postsynaptic knock down of the GluRIIA subunit effectively phenocopies GluRIIA mutants and induces the robust expression of PHP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 1 showing maintained EPSP amplitude despite reduced mEPSP amplitude.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "42b1522e-a3ee-4db7-87c1-a622238deaa8",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C37",
+      "claim": "GluRIIA expression is almost completely absent in G14>GluRIIARNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, GluRIIA expression is almost completely absent in G14 >GluRIIARNAi, with no significant difference in fluorescence intensity compared to GluRIIA mutants (Figure 1A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 1A,B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "52d5cac6-b9ba-45a9-a472-d23a2c915cd5",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C38",
+      "claim": "There is no significant difference in GluRIIA fluorescence intensity between G14>GluRIIARNAi and GluRIIA mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, GluRIIA expression is almost completely absent in G14 >GluRIIARNAi, with no significant difference in fluorescence intensity compared to GluRIIA mutants (Figure 1A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantification data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "bd842cc9-518c-440a-9897-b77c5b4808c9",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C39",
+      "claim": "Quantitative PCR analysis revealed a dramatic reduction in the level of transcripts encoding the GluRIIA subunit in G14>GluRIIARNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, quantitative PCR analysis revealed a dramatic reduction in the level of transcripts encoding the GluRIIA subunit in G14 >GluRIIARNAi, while levels of the other four subunits were not significantly changed (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "3bcefb77-718f-471e-a496-74ba60808569",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C40",
+      "claim": "Levels of the other four GluR subunits were not significantly changed in G14>GluRIIARNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, quantitative PCR analysis revealed a dramatic reduction in the level of transcripts encoding the GluRIIA subunit in G14 >GluRIIARNAi, while levels of the other four subunits were not significantly changed (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "c178b927-0c8a-40d3-9a0d-a5e541b8c3fa",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C41",
+      "claim": "There is a small reduction in bouton number in both GluRIIA mutants and G14>GluRIIARNAi compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we quantified synaptic growth in these genotypes, finding a small reduction in bouton number in both GluRIIA mutants and G14 >GluRIIARNAi compared to controls (Figure 1\u2014figure supplement 1), as reported previously (Choi et al., 2014; Schmid et al., 2006; Sigrist et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 1\u2014figure supplement 1 and citations to prior research.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "14c609ca-e820-4914-a292-9455f1d9228a",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C42",
+      "claim": "mEPSP amplitude is largely reduced in both GluRIIA mutants and G14>GluRIIARNAi compared to wild type and G14-Gal4/+.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we examined synaptic physiology, which revealed a large reduction in mEPSP amplitude in both GluRIIA mutants and G14 >GluRIIARNAi compared to wild type and G14-Gal4/+ (Figure 1D,E and Supplementary file 1), while EPSP amplitudes were not significantly changed between these genotypes because of a homeostatic enhancement in presynaptic glutamate release (quantal content; Figure 1D,H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 1D,E.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "9a54cdf1-4ba5-4e95-abb0-1473f523514f",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C43",
+      "claim": "EPSP amplitudes were not significantly changed between GluRIIA mutants, G14>GluRIIARNAi, wild type, and G14-Gal4/+ because of a homeostatic enhancement in presynaptic glutamate release.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we examined synaptic physiology, which revealed a large reduction in mEPSP amplitude in both GluRIIA mutants and G14 >GluRIIARNAi compared to wild type and G14-Gal4/+ (Figure 1D,E and Supplementary file 1), while EPSP amplitudes were not significantly changed between these genotypes because of a homeostatic enhancement in presynaptic glutamate release (quantal content; Figure 1D,H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 1D,H.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "02660c0d-5e81-499d-8404-036328ccd9dc",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C44",
+      "claim": "A single Ib and a single Is motor neuron bifurcates to innervate both muscle 6 and 7 at the muscle 6/7 NMJ.",
+      "claim_type": "EXPLICIT",
+      "source": "At the muscle 6/7 NMJ, a single Ib and a single Is motor neuron bifurcates to innervate both muscle 6 and 7, with ~60% of the boutons from each motor neuron subtype innervating the larger muscle 6, and ~40% innervating the smaller muscle 7 (Figure 2\u2014figure supplement 1A,B,C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by anatomical data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "d2fc53c6-9774-4105-b627-82832a2ebde8",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C45",
+      "claim": "Approximately 60% of the boutons from each motor neuron subtype innervate the larger muscle 6, and approximately 40% innervate the smaller muscle 7.",
+      "claim_type": "EXPLICIT",
+      "source": "At the muscle 6/7 NMJ, a single Ib and a single Is motor neuron bifurcates to innervate both muscle 6 and 7, with ~60% of the boutons from each motor neuron subtype innervating the larger muscle 6, and ~40% innervating the smaller muscle 7 (Figure 2\u2014figure supplement 1A,B,C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by anatomical data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "9dddeb7f-c06b-48ab-9c06-bd5548d978dc",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C46",
+      "claim": "M6>Gal4 enables strong and biased expression of Gal4 on muscle six without impacting synaptic growth or function.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, M6 > Gal4 enables strong and biased expression of Gal4 on muscle six without impacting synaptic growth or function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 2\u2014figure supplement 1 showing no significant differences in muscle surface area, bouton number, BRP puncta, or synaptic physiology.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "dd00fc3b-b051-4fd8-ad3c-e2433cbbf733",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C47",
+      "claim": "GluRIIA expression is near-absent specifically on muscle 6 in M6>GluRIIARNAi, while GluRIIA expression on the adjacent muscle seven is unperturbed.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a near-absence of the GluRIIA signal specifically on muscle 6, while GluRIIA expression on the adjacent muscle seven was unperturbed (Figure 2B,C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 2B,C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "201d8068-51a0-4e12-a85b-50edd68f5983",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C48",
+      "claim": "There is a small but significant reduction in synaptic growth on muscle 6 in M6>GluRIIARNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of synaptic growth on muscles 6 and 7 in M6 > GluRIIARNAi revealed no significant change on muscle 7, while a small but significant reduction was observed on muscle 6, as expected (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bouton number quantification shown in Figure 2D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "134af609-3518-41d5-9da9-194481b85634",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C49",
+      "claim": "There is no significant change in synaptic growth on muscle 7 in M6>GluRIIARNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of synaptic growth on muscles 6 and 7 in M6 > GluRIIARNAi revealed no significant change on muscle 7, while a small but significant reduction was observed on muscle 6, as expected (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bouton number quantification shown in Figure 2D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "55f86ac9-27cc-47bb-87f1-f3a0564849c5",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C50",
+      "claim": "M6>GluRIIARNAi effectively and specifically eliminates GluRIIA expression on muscle six without altering glutamate receptor expression on the adjacent muscle 7.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, M6 > GluRIIARNAi effectively and specifically eliminates GluRIIA expression on muscle six without altering glutamate receptor expression on the adjacent muscle 7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantification of GluRIIA and GluRIID fluorescence shown in Figure 2E.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "05e7eed9-d134-4874-9ec2-8496a3449cf4",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C51",
+      "claim": "mEPSP amplitudes on muscle 6 were diminished at M6>GluRIIARNAi NMJs.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, mEPSP amplitudes on muscle 6 were diminished at M6 > GluRIIARNAi NMJs, while mEPSP amplitudes were not affected on the adjacent muscle 7 (Figure 3A\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 3A-C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "dd947c80-b0c7-4753-92cd-dcf9b15ff8be",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C52",
+      "claim": "mEPSP amplitudes were not affected on muscle 7 in M6>GluRIIARNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, mEPSP amplitudes on muscle 6 were diminished at M6 > GluRIIARNAi NMJs, while mEPSP amplitudes were not affected on the adjacent muscle 7 (Figure 3A\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 3A-C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "4882e741-df20-47fb-b63c-ee47d164e444",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C53",
+      "claim": "EPSP amplitude was similar on both muscles 6 and 7 in M6>GluRIIARNAi and not significantly different compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Results of electrophysiological recordings were consistent with this last model: EPSP amplitude was similar on both muscles 6 and 7 in M6 > GluRIIARNAi and not significantly different compared to wild type (Figure 3A,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 3A,D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "1a624a56-4727-4f22-a0ce-a5cba785609b",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C54",
+      "claim": "Quantal content was selectively enhanced only at synapses innervating muscle 6 in M6>GluRIIARNAi, while quantal content at synapses innervating muscle seven was unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, quantal content was selectively enhanced only at synapses innervating muscle 6, while quantal content at synapses innervating muscle seven was unaffected (Figure 3B,E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 3B,E.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "2a8d8ee0-97f4-44a2-b469-31f710516b32",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C55",
+      "claim": "PHP can be induced and expressed exclusively at a subset of synapses within the same motor neuron without influencing neurotransmitter release at neighboring sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, PHP can be induced and expressed exclusively at a subset of synapses within the same motor neuron without influencing neurotransmitter release at neighboring sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the electrophysiology data from M6>GluRIIARNAi showing compartmentalized PHP expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "6a48e834-d959-4043-8dcf-61e91bec8c82",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C56",
+      "claim": "PHP can be acutely induced and expressed through a pharmacological blockade of the postsynaptic GluRs using a 10-min incubation in the presence of philanthotoxin-433 (PhTx).",
+      "claim_type": "EXPLICIT",
+      "source": "PHP can be acutely induced and expressed through a pharmacological blockade of the postsynaptic GluRs using a 10-min incubation in the presence of the antagonist philanthotoxin-433 (PhTx; [Frank et al., 2006]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "26f7d4f3-a1e0-4469-9f2d-8f7f03051f58",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C57",
+      "claim": "PhTx application results in an acute reduction in mEPSP amplitude due to blockade of GluRIIA-containing receptors in the postsynaptic muscle, but EPSP amplitudes are maintained because of PHP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This results in an acute reduction in mEPSP amplitude due to blockade of GluRIIA-containing receptors in the postsynaptic muscle, but EPSP amplitudes are maintained because of PHP expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the effects of PhTx.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "a38ebdcf-1a2e-4a2a-aceb-bb58e9c2f5e1",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C58",
+      "claim": "PhTx application caused a large reduction in mEPSP amplitudes at wild-type muscles 6 and 7, as well as muscle 7 in M6>GluRIIARNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, this caused a large reduction in mEPSP amplitudes at wild-type muscles 6 and 7, as well as muscle 7 in M6 > GluRIIARNAi, while a small reduction in mEPSP amplitude was observed at muscle 6 (Figure 4A\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 4A-C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "879987aa-dac7-42ae-b25f-e984d31f9a29",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C59",
+      "claim": "A small reduction in mEPSP amplitude was observed at muscle 6 of M6>GluRIIARNAi following PhTx application.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, this caused a large reduction in mEPSP amplitudes at wild-type muscles 6 and 7, as well as muscle 7 in M6 > GluRIIARNAi, while a small reduction in mEPSP amplitude was observed at muscle 6 (Figure 4A\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 4A-C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "7224fe02-3fc2-48f7-9b99-e405b75ebea2",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C60",
+      "claim": "EPSP amplitudes at both muscles 6 and 7 in wild type and M6>GluRIIARNAi NMJs were maintained at similar levels following PhTx application due to the homeostatic enhancement of quantal content.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, EPSP amplitudes at both muscles 6 and 7 in wild type and M6 > GluRIIARNAi NMJs were maintained at similar levels (Figure 4A,D) due to the homeostatic enhancement of quantal content (Figure 4B,E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 4A,D,E.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "3db90967-734c-40db-9894-359f2fb4a4d6",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C61",
+      "claim": "PHP can be acutely induced and chronically expressed at distinct presynaptic release sites within the same neuron according to the state of GluR functionality at postsynaptic compartments opposing these sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, this demonstrates that PHP can be acutely induced and chronically expressed at distinct presynaptic release sites within the same neuron according to the state of GluR functionality at postsynaptic compartments opposing these sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the PhTx experiments showing PHP can be acutely induced at muscle 7 despite chronic PHP at muscle 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "35176af6-3263-411c-928a-9a00e740436f",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C62",
+      "claim": "The RRP is defined as the pool of vesicles that are primed and available for immediate release upon strong synaptic stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The RRP is defined as the pool of vesicles that are primed and available for immediate release upon strong synaptic stimulation (Rosenmund and Stevens, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "4e4c0be8-a231-4075-a12f-21a7dd2f6b78",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C63",
+      "claim": "Synaptic vesicles are highly mobile and can rapidly traffic between adjacent boutons at presynaptic terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, synaptic vesicles are highly mobile and can rapidly traffic between adjacent boutons at presynaptic terminals (Darcy et al., 2006; Kahms and Klingauf, 2018), and vesicle pools can span multiple presynaptic terminals (Staras et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "d60ddc81-2d94-44d2-b719-029a84372daf",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C64",
+      "claim": "Vesicle pools can span multiple presynaptic terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, synaptic vesicles are highly mobile and can rapidly traffic between adjacent boutons at presynaptic terminals (Darcy et al., 2006; Kahms and Klingauf, 2018), and vesicle pools can span multiple presynaptic terminals (Staras et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "d26151f2-5b09-4a3b-aa2b-615dc88e80c7",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C65",
+      "claim": "There is a ~65% increase in the estimated RRP size that is restricted to boutons innervating muscle 6 in M6>GluRIIARNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a ~ 65% increase in the estimated RRP size that was restricted to boutons innervating muscle 6 in M6 > GluRIIARNAi, similar in magnitude to what has been reported for muscle 6 synapses in which PHP is expressed following PhTx application (M\u00fcller et al., 2015) and by loss of GluRIIA (Kiragasi et al., 2017; Weyhersm\u00fcller et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RRP measurements shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "369a45a9-ca9f-47b8-8cd4-110f9f1178c1",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C66",
+      "claim": "No significant change in RRP size was observed at synapses innervating the adjacent muscle 7 in M6>GluRIIARNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no significant change in RRP size was observed at synapses innervating the adjacent muscle 7 (Figure 5A,E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RRP measurements shown in Figure 5A,E.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "92ac93cb-64de-4940-93e6-e021fe5427d1",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C67",
+      "claim": "The homeostatic modulation of the RRP is restricted to presynaptic terminals that oppose postsynaptic compartments with reduced GluR functionality, and does not 'spread' to influence vesicle pools at adjacent release sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the homeostatic modulation of the RRP is restricted to presynaptic terminals that oppose postsynaptic compartments with reduced GluR functionality, and does not 'spread' to influence vesicle pools at adjacent release sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the compartmentalized RRP changes observed in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "15fbab7a-61ad-4fc5-9632-9ee89ee5d808",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C68",
+      "claim": "There is no major difference in the anatomical number of active zones at NMJs of wild-type and GluRIIA mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there is no major difference in the anatomical number of active zones at NMJs of wild-type and GluRIIA mutants (Frank et al., 2006; Goel et al., 2017; Penney et al., 2012; Schmid et al., 2006), an increase in the fraction of active zones that participate in release has been reported following the expression of PHP (Davis and M\u00fcller, 2015; Newman et al., 2017; Penney et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "bb3fc139-a383-4b30-814e-efe3fc3b000f",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C69",
+      "claim": "An increase in the fraction of active zones that participate in release has been reported following the expression of PHP.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there is no major difference in the anatomical number of active zones at NMJs of wild-type and GluRIIA mutants (Frank et al., 2006; Goel et al., 2017; Penney et al., 2012; Schmid et al., 2006), an increase in the fraction of active zones that participate in release has been reported following the expression of PHP (Davis and M\u00fcller, 2015; Newman et al., 2017; Penney et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "0ad76f96-50d9-4603-9eb0-a6e688c05c4e",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C70",
+      "claim": "The value of N is significantly increased following PhTx application and in GluRIIA-mutant synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the value of N is significantly increased following PhTx application and in GluRIIA-mutant synapses (M\u00fcller et al., 2012; Weyhersm\u00fcller et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "8f538540-2eee-4f1f-8520-44007cf3f6f3",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C71",
+      "claim": "The value of N increased in GluRIIA-mutant NMJs compared to wild type at both muscles 7 and 6.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this result, the value of N increased in GluRIIA-mutant NMJs compared to wild type at both muscles 7 and 6 (Figure 6D,H), consistent with what was reported following acute PHP expression and indicating that chronic PHP expression requires the recruitment of additional functional release sites to participate in presynaptic neurotransmitter release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by variance-mean analysis shown in Figure 6D,H.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "1653ebe5-66e9-44cc-9173-76a6c4b5a7e9",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C72",
+      "claim": "A similar increase in N was observed at muscle 6 in M6>GluRIIARNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, a similar increase in N was observed at muscle 6 in M6 > GluRIIARNAi (Figure 6H), while no significant change was found at muscle 7 (Figure 6D), suggesting that the biased induction of PHP results in the compartmentalized expression of the same mechanisms observed in GluRIIA mutants (Figure 6A,E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by variance-mean analysis shown in Figure 6H.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "ff621ed1-f245-4962-943c-c1386c5acfff",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C73",
+      "claim": "No significant change in N was found at muscle 7 in M6>GluRIIARNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, a similar increase in N was observed at muscle 6 in M6 > GluRIIARNAi (Figure 6H), while no significant change was found at muscle 7 (Figure 6D), suggesting that the biased induction of PHP results in the compartmentalized expression of the same mechanisms observed in GluRIIA mutants (Figure 6A,E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by variance-mean analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "9d158647-65fc-4697-bbfa-e22373e54c0d",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C74",
+      "claim": "Retrograde PHP expression is achieved by elevating the RRP and recruiting additional functional release sites to participate in transmission, with specificity according to the excitability state of their postsynaptic partners.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, retrograde PHP expression is achieved by elevating the RRP and recruiting additional functional release sites to participate in transmission, with specificity according to the excitability state of their postsynaptic partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the compartmentalized changes in RRP and N observed in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "d4f91d83-ecff-4ff5-8603-f00deb3e207e",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C75",
+      "claim": "Reductions in postsynaptic CaMKII activity have been proposed to mediate the induction of retrograde PHP signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "However, reductions in postsynaptic CaMKII activity have been proposed to mediate the induction of retrograde PHP signaling (Haghighi et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "db66d459-b7fa-42f9-8544-f49bad25a7e1",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C76",
+      "claim": "Modulations to postsynaptic CaMKII phosphorylation occur in a synapse-specific and activity-dependent manner at the Drosophila NMJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, modulations to postsynaptic CaMKII phosphorylation has been demonstrated to occur in a synapse-specific and activity-dependent manner at the Drosophila NMJ (Hodge et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "b056772d-5993-4d75-bd2b-f920a671a7ee",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C77",
+      "claim": "Reductions in the level of phosphorylated (active) CaMKII were observed specifically at postsynaptic densities of Type Ib boutons following PhTx application and in GluRIIA mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, reductions in the level of phosphorylated (active) CaMKII were observed specifically at postsynaptic densities of Type Ib boutons following PhTx application and in GluRIIA mutants (Goel et al., 2017; Newman et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "87f51bb1-012d-436f-819b-9023513c06a3",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C78",
+      "claim": "There is a significant reduction in the mean intensity of pCaMKII in Ib postsynaptic densities only on muscle 6 of M6>GluRIIARNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a significant reduction in the mean intensity of pCaMKII in Ib postsynaptic densities only on muscle 6 of M6 > GluRIIARNAi, while no significant difference was observed at Ib synapses in the adjacent muscle 7, nor were any changes found at Is synapses on either muscle (Figure 7A\u2013E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "4199c643-783a-40bf-8ca8-0a29d4551de3",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C79",
+      "claim": "No significant difference in pCaMKII was observed at Ib synapses in the adjacent muscle 7 of M6>GluRIIARNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a significant reduction in the mean intensity of pCaMKII in Ib postsynaptic densities only on muscle 6 of M6 > GluRIIARNAi, while no significant difference was observed at Ib synapses in the adjacent muscle 7, nor were any changes found at Is synapses on either muscle (Figure 7A\u2013E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "4b8cab06-3d73-4fb4-bec7-027cbfd2c204",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C80",
+      "claim": "No changes in pCaMKII were found at Is synapses on either muscle in M6>GluRIIARNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a significant reduction in the mean intensity of pCaMKII in Ib postsynaptic densities only on muscle 6 of M6 > GluRIIARNAi, while no significant difference was observed at Ib synapses in the adjacent muscle 7, nor were any changes found at Is synapses on either muscle (Figure 7A\u2013E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "71f516de-ba04-418e-9a14-912ca321abfc",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C81",
+      "claim": "Postsynaptic pCaMKII levels are diminished and compartmentalized at Ib boutons specifically on muscle 6 without impacting pCaMKII levels on neighboring Is boutons or at the adjacent muscle 7 in M6>GluRIIARNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, postsynaptic pCaMKII levels are diminished and compartmentalized at Ib boutons specifically on muscle 6 without impacting pCaMKII levels on neighboring Is boutons or at the adjacent muscle 7 in M6 > GluRIIARNAi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the pCaMKII immunostaining data in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "22c1089e-2c85-48f7-bdfe-22f67f2254c7",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C82",
+      "claim": "There is no significant difference in synaptic physiology on muscles 6 or 7 when CaMKIIT287D is expressed alone on muscle 6 (M6>CaMKIIT287D).",
+      "claim_type": "EXPLICIT",
+      "source": "We found no significant difference in synaptic physiology on muscles 6 or 7 in this condition (Figure 8A\u2013D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 8A-D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "01156a6d-da26-4b4b-90a8-83ecabe8fc9a",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C83",
+      "claim": "EPSP amplitude was not maintained at baseline levels in M6>GluRIIARNAi + CaMKIIT287D due to a failure to homeostatically increase quantal content.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, EPSP amplitude was not maintained at baseline levels due to a failure to homeostatically increase quantal content in M6 > GluRIIARNAi + CaMKIIT287D (Figure 8E\u2013H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 8E-H.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "3144efa3-ce31-45e4-b0a4-d491e7096a2a",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C84",
+      "claim": "Quantal content was significantly increased (134 \u00b1 8% increase) in M6>GluRIIARNAi + CaMKIIT287D compared to M6>CaMKIIT287D but was below the level necessary to maintain synaptic strength.",
+      "claim_type": "EXPLICIT",
+      "source": "In this condition, quantal content was significantly increased (134 \u00b1 8% increase for M6 > GluRIIARNAi + CaMKIIT287D compared to M6>CaMKIIT287D) but was below the level necessary to maintain synaptic strength (166 \u00b1 9% increase in quantal content for M6 > GluRIIARNAi compared to wild type).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 8.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "edb405c0-3022-4876-a898-115768270720",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C85",
+      "claim": "Reduced CaMKII activity, compartmentalized at Ib postsynaptic densities, is required for retrograde PHP signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "This data is consistent with reduced CaMKII activity, compartmentalized at Ib postsynaptic densities, being required for retrograde PHP signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the CaMKII overexpression experiments showing partial occlusion of PHP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "8a43014f-2de9-4fcf-9484-dc5f05c50e48",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C86",
+      "claim": "The active zone scaffold BRP remodels during both acute and chronic PHP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The active zone scaffold BRP remodels during both acute and chronic PHP expression (Goel et al., 2017; Weyhersm\u00fcller et al., 2011), and other active zone proteins are likely to participate in this remodeling (Gratz et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "770dd55d-8ca9-4b9d-969a-098d641e95e4",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C87",
+      "claim": "Many genes encoding active zone components are required for PHP expression, including the calcium channel cac.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, many genes encoding active zone components are required for PHP expression, including the calcium channel cac (Frank et al., 2006) and auxiliary subunit \u03b12-\u03b4 (Wang et al., 2016a), the piccolo homolog fife (Bruckner et al., 2017), the scaffolds RIM (Rab3-interacting Molecule; [M\u00fcller et al., 2012]) and RIM-binding protein (RBP; [M\u00fcller et al., 2015]), and the kainite receptor DKaiR1D (Kiragasi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "7f8bf232-418a-4780-91c6-513c0eb1b4da",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C88",
+      "claim": "The auxiliary subunit \u03b12-\u03b4 is required for PHP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, many genes encoding active zone components are required for PHP expression, including the calcium channel cac (Frank et al., 2006) and auxiliary subunit \u03b12-\u03b4 (Wang et al., 2016a), the piccolo homolog fife (Bruckner et al., 2017), the scaffolds RIM (Rab3-interacting Molecule; [M\u00fcller et al., 2012]) and RIM-binding protein (RBP; [M\u00fcller et al., 2015]), and the kainite receptor DKaiR1D (Kiragasi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "60d7d719-799f-4c4e-aab8-b9db06397116",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C89",
+      "claim": "The piccolo homolog fife is required for PHP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, many genes encoding active zone components are required for PHP expression, including the calcium channel cac (Frank et al., 2006) and auxiliary subunit \u03b12-\u03b4 (Wang et al., 2016a), the piccolo homolog fife (Bruckner et al., 2017), the scaffolds RIM (Rab3-interacting Molecule; [M\u00fcller et al., 2012]) and RIM-binding protein (RBP; [M\u00fcller et al., 2015]), and the kainite receptor DKaiR1D (Kiragasi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "12d386f4-193a-4c78-986e-f319d0433167",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C90",
+      "claim": "The scaffold RIM is required for PHP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, many genes encoding active zone components are required for PHP expression, including the calcium channel cac (Frank et al., 2006) and auxiliary subunit \u03b12-\u03b4 (Wang et al., 2016a), the piccolo homolog fife (Bruckner et al., 2017), the scaffolds RIM (Rab3-interacting Molecule; [M\u00fcller et al., 2012]) and RIM-binding protein (RBP; [M\u00fcller et al., 2015]), and the kainite receptor DKaiR1D (Kiragasi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "a3ede3c5-9100-417c-a2ba-a5c1bc541e9a",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C91",
+      "claim": "RIM-binding protein (RBP) is required for PHP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, many genes encoding active zone components are required for PHP expression, including the calcium channel cac (Frank et al., 2006) and auxiliary subunit \u03b12-\u03b4 (Wang et al., 2016a), the piccolo homolog fife (Bruckner et al., 2017), the scaffolds RIM (Rab3-interacting Molecule; [M\u00fcller et al., 2012]) and RIM-binding protein (RBP; [M\u00fcller et al., 2015]), and the kainite receptor DKaiR1D (Kiragasi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "359aea29-34de-4e9f-a909-7896ea54a44f",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C92",
+      "claim": "The kainite receptor DKaiR1D is required for PHP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, many genes encoding active zone components are required for PHP expression, including the calcium channel cac (Frank et al., 2006) and auxiliary subunit \u03b12-\u03b4 (Wang et al., 2016a), the piccolo homolog fife (Bruckner et al., 2017), the scaffolds RIM (Rab3-interacting Molecule; [M\u00fcller et al., 2012]) and RIM-binding protein (RBP; [M\u00fcller et al., 2015]), and the kainite receptor DKaiR1D (Kiragasi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "d2cf6dec-4f40-47e8-9751-226bbc791ad4",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C93",
+      "claim": "The BRP cytomatrix stabilizes calcium channel levels at the active zone.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the BRP cytomatrix stabilizes calcium channel levels at the active zone (Kittel et al., 2006), and also controls the size of the RRP (Matkovic et al., 2013), two key presynaptic expression mechanisms that drive PHP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "194fc38d-f635-4317-99e0-ba6a46e4f512",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C94",
+      "claim": "The BRP cytomatrix controls the size of the RRP.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the BRP cytomatrix stabilizes calcium channel levels at the active zone (Kittel et al., 2006), and also controls the size of the RRP (Matkovic et al., 2013), two key presynaptic expression mechanisms that drive PHP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "567ad7c6-9ac5-4a96-b9df-36ff6c5946c2",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C95",
+      "claim": "The recruitment of new functional release sites occurs following both chronic and acute PHP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we and others have observed the recruitment of new functional release sites following both chronic and acute PHP expression (Davis and M\u00fcller, 2015; Newman et al., 2017; Weyhersm\u00fcller et al., 2011), suggesting that previously silent active zones become 'awakened' and utilized to potentiate presynaptic neurotransmitter release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research and data from the current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "4b211b41-64cc-4bbf-b098-e456fd374005",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C96",
+      "claim": "Presynaptic GluRs, localized near active zones, are necessary for PHP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, presynaptic GluRs, localized near active zones, are necessary for PHP expression and have the capacity to modulate release with specificity at individual active zones (Kiragasi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "3427804d-e97c-4dbf-b368-9791a3615174",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C97",
+      "claim": "Presynaptic GluRs have the capacity to modulate release with specificity at individual active zones.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, presynaptic GluRs, localized near active zones, are necessary for PHP expression and have the capacity to modulate release with specificity at individual active zones (Kiragasi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "6b453da7-8ad1-4ffe-a4ae-371d52eb2f98",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C98",
+      "claim": "Mutations in the synaptic vesicle component Rab3 exhibit extreme changes in active zone size, number, and density, but stable global levels of neurotransmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with such a possibility, mutations in the synaptic vesicle component Rab3 exhibit extreme changes in active zone size, number, and density, but stable global levels of neurotransmission (Graf et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "7d30605f-5459-4954-b2d1-67239caf38e2",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "claim_id": "C99",
+      "claim": "Studies in mammalian neurons have revealed parallel links between the functional plasticity of active zones and the homeostatic modulation of neurotransmitter release.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in mammalian neurons have revealed parallel links between the functional plasticity of active zones, including their structure and size, and the homeostatic modulation of neurotransmitter release (Glebov et al., 2017; Matz et al., 2010; Murthy et al., 2001; Schikorski and Stevens, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9b94299b-9a19-4b27-acc6-810c63239ca7",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "GluRIIARNAi knock-down using the G14-Gal4 driver effectively phenocopies GluRIIA mutants, resulting in near-complete absence of GluRIIA expression, reduced mEPSP amplitude, and robust PHP expression with maintained EPSP amplitude due to increased quantal content.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C43 provide converging evidence from immunostaining (C37-C38), qPCR (C39-C40), morphological analysis (C41), and electrophysiology (C42-C43) demonstrating that G14>GluRIIARNAi effectively recapitulates the GluRIIA mutant phenotype and induces PHP. The data are internally consistent and appropriately controlled.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "c5526312-d012-433f-80af-c763cc12a28b",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The M6>Gal4 system enables specific and biased expression on muscle 6, resulting in near-complete elimination of GluRIIA expression specifically on muscle 6 while leaving GluRIIA expression on the adjacent muscle 7 unperturbed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C50 establish the anatomical basis (C44-C45) and validate the M6>Gal4 system (C46) through immunostaining and quantification (C47-C50). The data demonstrate muscle-specific knockdown with appropriate spatial restriction, supported by Figure 2.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "cfb16090-00b0-49f9-8a62-66f25bd6fbc8",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PHP can be chronically induced and expressed exclusively at synapses innervating muscle 6 in M6>GluRIIARNAi without influencing neurotransmitter release at adjacent synapses innervating muscle 7 within the same motor neuron.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 provide electrophysiological evidence showing reduced mEPSP amplitude only at muscle 6 (C51), maintained EPSP amplitude on both muscles (C53), and selectively enhanced quantal content only at muscle 6 (C54). This demonstrates compartmentalized PHP expression as concluded in C55, supported by Figure 3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "969e1616-3a68-4715-9552-540189a5a660",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PHP can be acutely induced at muscle 7 synapses through PhTx application despite chronic PHP expression at muscle 6 synapses, demonstrating that PHP can be both acutely and chronically expressed at distinct presynaptic release sites within the same neuron according to postsynaptic GluR functionality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 demonstrate that PhTx application to M6>GluRIIARNAi induces acute PHP at muscle 7 (which was not chronically potentiated) while muscle 6 (already chronically potentiated) shows minimal additional response. This supports the conclusion in C61 that PHP expression is determined by local postsynaptic receptor state, as shown in Figure 4.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "d84a217c-6fad-4911-bc85-feb616402632",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Homeostatic modulation of the readily releasable pool (RRP) is compartmentalized, with a ~65% increase in RRP size restricted to boutons innervating muscle 6 in M6>GluRIIARNAi, without spreading to adjacent synapses innervating muscle 7 despite vesicle mobility between boutons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 provide TEVC measurements showing increased RRP specifically at muscle 6 with no change at muscle 7. Despite established vesicle mobility (C63-C64), the RRP increase is compartmentalized (C67), demonstrating local control of vesicle pool homeostasis as shown in Figure 5.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "34f7a027-58f9-4079-97d5-d6a82c708b9f",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The number of functional release sites (N) is increased specifically at muscle 6 in M6>GluRIIARNAi without affecting muscle 7, demonstrating compartmentalized recruitment of additional functional release sites during PHP expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 provide variance-mean analysis showing increased N at muscle 6 but not muscle 7 in M6>GluRIIARNAi, consistent with prior findings in GluRIIA mutants (C70-C71). This supports the conclusion in C74 that PHP expression involves compartmentalized recruitment of functional release sites, as shown in Figure 6.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "4fb614d8-f330-483a-95f8-071417eab56c",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Postsynaptic pCaMKII levels are specifically reduced at Ib boutons on muscle 6 of M6>GluRIIARNAi without affecting pCaMKII at Ib synapses on muscle 7 or at Is synapses on either muscle, demonstrating compartmentalized postsynaptic signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80 provide immunostaining data showing reduced pCaMKII specifically at muscle 6 Ib boutons with no changes at muscle 7 Ib boutons or at Is synapses. This is consistent with prior findings (C77) and demonstrates compartmentalized inductive signaling (C81), as shown in Figure 7.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "564e8eee-27c6-4818-912c-28009c2dabeb",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Postsynaptic overexpression of constitutively active CaMKII (CaMKIIT287D) on muscle 6 partially occludes PHP expression, demonstrating that reduced CaMKII activity compartmentalized at Ib postsynaptic densities is required for retrograde PHP signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C84 show that while CaMKIIT287D alone has no effect (C82), co-expression with GluRIIARNAi results in partial PHP occlusion with quantal content increased to 134% (insufficient for full homeostasis) compared to 166% in M6>GluRIIARNAi alone (C84). This supports the conclusion in C85 that reduced CaMKII activity is required for PHP signaling, as shown in Figure 8.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "d11975ac-e51a-4302-af56-8f417965543a",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Both PHP induction and expression mechanisms are locally transmitted and restricted to specific synaptic compartments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C10 represents the main conclusion of the study, which is supported by multiple converging lines of evidence including compartmentalized electrophysiology (C5-C6, C54-C55, C60-C61), RRP modulation (C65-C67), functional release site recruitment (C72-C74), and pCaMKII reduction (C78-C81). All experimental results consistently demonstrate synapse-specific PHP without spread to adjacent sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "a00ae566-d2b2-4188-b14e-61819a55949d",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Postsynaptic compartments can be specifically modulated during synaptic plasticity, but whether this precision extends to presynaptic terminals remains unclear despite evidence for presynaptic heterogeneity and target-specific differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C11-C18 establish the background knowledge and identify the gap that motivates the study. These claims are supported by appropriate citations to prior literature and accurately represent established understanding in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "4440e437-d3ec-4937-b3ae-fa478076094b",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "PHP at the Drosophila NMJ involves retrograde enhancement of presynaptic neurotransmitter release through increased calcium influx and RRP size, with identified genes functioning as retrograde signals and presynaptic effectors, but postsynaptic induction mechanisms and synapse-specific expression remain enigmatic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C19-C27 summarize established knowledge about PHP mechanisms and identify specific gaps (C26-C27) that the current study addresses. These claims are appropriately supported by citations to prior research and accurately frame the study's contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "abac7f5b-0cd5-494d-86bf-2b7661fc629f",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "PHP is expressed exclusively at Type Ib synapses, which have distinct morphological and functional properties compared to Type Is synapses, with reduced pCaMKII at Ib postsynaptic densities suggesting a mechanism for specificity of retrograde PHP signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C34 establish prior knowledge about Type Ib vs. Type Is differences and the specificity of PHP expression. These claims are supported by appropriate citations (C29-C33) and provide important context for understanding the compartmentalization demonstrated in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    },
+    {
+      "id": "6624e762-5ab0-48cb-9e7d-98b9c9411865",
+      "content_id": "9d6bc072-d7ab-4f3c-9951-28fe5860cb18",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Active zone components including BRP, calcium channels, scaffolds (RIM, RBP, fife), and presynaptic GluRs are required for PHP expression and can undergo remodeling, with evidence suggesting active zones may function as fundamental units for homeostatic modulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C99 summarize prior knowledge about active zone components and their roles in PHP, supported by appropriate citations. These claims provide important mechanistic context for interpreting the compartmentalized PHP expression observed in the current study and support the discussion of potential mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:58.872300Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1e0784bb-f8cb-44c3-8b04-b486a4c89159",
+      "result_id": "9b94299b-9a19-4b27-acc6-810c63239ca7"
+    },
+    {
+      "claim_id": "79d71b20-cb94-4486-8592-9d2c4db9acf4",
+      "result_id": "9b94299b-9a19-4b27-acc6-810c63239ca7"
+    },
+    {
+      "claim_id": "42b1522e-a3ee-4db7-87c1-a622238deaa8",
+      "result_id": "9b94299b-9a19-4b27-acc6-810c63239ca7"
+    },
+    {
+      "claim_id": "52d5cac6-b9ba-45a9-a472-d23a2c915cd5",
+      "result_id": "9b94299b-9a19-4b27-acc6-810c63239ca7"
+    },
+    {
+      "claim_id": "bd842cc9-518c-440a-9897-b77c5b4808c9",
+      "result_id": "9b94299b-9a19-4b27-acc6-810c63239ca7"
+    },
+    {
+      "claim_id": "3bcefb77-718f-471e-a496-74ba60808569",
+      "result_id": "9b94299b-9a19-4b27-acc6-810c63239ca7"
+    },
+    {
+      "claim_id": "c178b927-0c8a-40d3-9a0d-a5e541b8c3fa",
+      "result_id": "9b94299b-9a19-4b27-acc6-810c63239ca7"
+    },
+    {
+      "claim_id": "14c609ca-e820-4914-a292-9455f1d9228a",
+      "result_id": "9b94299b-9a19-4b27-acc6-810c63239ca7"
+    },
+    {
+      "claim_id": "9a54cdf1-4ba5-4e95-abb0-1473f523514f",
+      "result_id": "9b94299b-9a19-4b27-acc6-810c63239ca7"
+    },
+    {
+      "claim_id": "02660c0d-5e81-499d-8404-036328ccd9dc",
+      "result_id": "c5526312-d012-433f-80af-c763cc12a28b"
+    },
+    {
+      "claim_id": "d2fc53c6-9774-4105-b627-82832a2ebde8",
+      "result_id": "c5526312-d012-433f-80af-c763cc12a28b"
+    },
+    {
+      "claim_id": "9dddeb7f-c06b-48ab-9c06-bd5548d978dc",
+      "result_id": "c5526312-d012-433f-80af-c763cc12a28b"
+    },
+    {
+      "claim_id": "dd00fc3b-b051-4fd8-ad3c-e2433cbbf733",
+      "result_id": "c5526312-d012-433f-80af-c763cc12a28b"
+    },
+    {
+      "claim_id": "201d8068-51a0-4e12-a85b-50edd68f5983",
+      "result_id": "c5526312-d012-433f-80af-c763cc12a28b"
+    },
+    {
+      "claim_id": "134af609-3518-41d5-9da9-194481b85634",
+      "result_id": "c5526312-d012-433f-80af-c763cc12a28b"
+    },
+    {
+      "claim_id": "55f86ac9-27cc-47bb-87f1-f3a0564849c5",
+      "result_id": "c5526312-d012-433f-80af-c763cc12a28b"
+    },
+    {
+      "claim_id": "d9f564db-3c58-4ffe-967f-0fb7ab1445b0",
+      "result_id": "cfb16090-00b0-49f9-8a62-66f25bd6fbc8"
+    },
+    {
+      "claim_id": "590b3e8a-bfc4-488a-9692-8c2c302b219d",
+      "result_id": "cfb16090-00b0-49f9-8a62-66f25bd6fbc8"
+    },
+    {
+      "claim_id": "05e7eed9-d134-4874-9ec2-8496a3449cf4",
+      "result_id": "cfb16090-00b0-49f9-8a62-66f25bd6fbc8"
+    },
+    {
+      "claim_id": "dd947c80-b0c7-4753-92cd-dcf9b15ff8be",
+      "result_id": "cfb16090-00b0-49f9-8a62-66f25bd6fbc8"
+    },
+    {
+      "claim_id": "4882e741-df20-47fb-b63c-ee47d164e444",
+      "result_id": "cfb16090-00b0-49f9-8a62-66f25bd6fbc8"
+    },
+    {
+      "claim_id": "1a624a56-4727-4f22-a0ce-a5cba785609b",
+      "result_id": "cfb16090-00b0-49f9-8a62-66f25bd6fbc8"
+    },
+    {
+      "claim_id": "2a8d8ee0-97f4-44a2-b469-31f710516b32",
+      "result_id": "cfb16090-00b0-49f9-8a62-66f25bd6fbc8"
+    },
+    {
+      "claim_id": "6a48e834-d959-4043-8dcf-61e91bec8c82",
+      "result_id": "969e1616-3a68-4715-9552-540189a5a660"
+    },
+    {
+      "claim_id": "26f7d4f3-a1e0-4469-9f2d-8f7f03051f58",
+      "result_id": "969e1616-3a68-4715-9552-540189a5a660"
+    },
+    {
+      "claim_id": "a38ebdcf-1a2e-4a2a-aceb-bb58e9c2f5e1",
+      "result_id": "969e1616-3a68-4715-9552-540189a5a660"
+    },
+    {
+      "claim_id": "879987aa-dac7-42ae-b25f-e984d31f9a29",
+      "result_id": "969e1616-3a68-4715-9552-540189a5a660"
+    },
+    {
+      "claim_id": "7224fe02-3fc2-48f7-9b99-e405b75ebea2",
+      "result_id": "969e1616-3a68-4715-9552-540189a5a660"
+    },
+    {
+      "claim_id": "3db90967-734c-40db-9894-359f2fb4a4d6",
+      "result_id": "969e1616-3a68-4715-9552-540189a5a660"
+    },
+    {
+      "claim_id": "f288721b-3215-48f9-b59e-d9e526c544b4",
+      "result_id": "d84a217c-6fad-4911-bc85-feb616402632"
+    },
+    {
+      "claim_id": "35176af6-3263-411c-928a-9a00e740436f",
+      "result_id": "d84a217c-6fad-4911-bc85-feb616402632"
+    },
+    {
+      "claim_id": "4e4c0be8-a231-4075-a12f-21a7dd2f6b78",
+      "result_id": "d84a217c-6fad-4911-bc85-feb616402632"
+    },
+    {
+      "claim_id": "d60ddc81-2d94-44d2-b719-029a84372daf",
+      "result_id": "d84a217c-6fad-4911-bc85-feb616402632"
+    },
+    {
+      "claim_id": "d26151f2-5b09-4a3b-aa2b-615dc88e80c7",
+      "result_id": "d84a217c-6fad-4911-bc85-feb616402632"
+    },
+    {
+      "claim_id": "369a45a9-ca9f-47b8-8cd4-110f9f1178c1",
+      "result_id": "d84a217c-6fad-4911-bc85-feb616402632"
+    },
+    {
+      "claim_id": "92ac93cb-64de-4940-93e6-e021fe5427d1",
+      "result_id": "d84a217c-6fad-4911-bc85-feb616402632"
+    },
+    {
+      "claim_id": "9c98dbae-4526-419c-af3e-59a0bac0dbc7",
+      "result_id": "34f7a027-58f9-4079-97d5-d6a82c708b9f"
+    },
+    {
+      "claim_id": "15fbab7a-61ad-4fc5-9632-9ee89ee5d808",
+      "result_id": "34f7a027-58f9-4079-97d5-d6a82c708b9f"
+    },
+    {
+      "claim_id": "bb3fc139-a383-4b30-814e-efe3fc3b000f",
+      "result_id": "34f7a027-58f9-4079-97d5-d6a82c708b9f"
+    },
+    {
+      "claim_id": "0ad76f96-50d9-4603-9eb0-a6e688c05c4e",
+      "result_id": "34f7a027-58f9-4079-97d5-d6a82c708b9f"
+    },
+    {
+      "claim_id": "8f538540-2eee-4f1f-8520-44007cf3f6f3",
+      "result_id": "34f7a027-58f9-4079-97d5-d6a82c708b9f"
+    },
+    {
+      "claim_id": "1653ebe5-66e9-44cc-9173-76a6c4b5a7e9",
+      "result_id": "34f7a027-58f9-4079-97d5-d6a82c708b9f"
+    },
+    {
+      "claim_id": "ff621ed1-f245-4962-943c-c1386c5acfff",
+      "result_id": "34f7a027-58f9-4079-97d5-d6a82c708b9f"
+    },
+    {
+      "claim_id": "9d158647-65fc-4697-bbfa-e22373e54c0d",
+      "result_id": "34f7a027-58f9-4079-97d5-d6a82c708b9f"
+    },
+    {
+      "claim_id": "553895a8-1ebc-467f-9247-f71174cd4d05",
+      "result_id": "4fb614d8-f330-483a-95f8-071417eab56c"
+    },
+    {
+      "claim_id": "d4f91d83-ecff-4ff5-8603-f00deb3e207e",
+      "result_id": "4fb614d8-f330-483a-95f8-071417eab56c"
+    },
+    {
+      "claim_id": "db66d459-b7fa-42f9-8544-f49bad25a7e1",
+      "result_id": "4fb614d8-f330-483a-95f8-071417eab56c"
+    },
+    {
+      "claim_id": "b056772d-5993-4d75-bd2b-f920a671a7ee",
+      "result_id": "4fb614d8-f330-483a-95f8-071417eab56c"
+    },
+    {
+      "claim_id": "87f51bb1-012d-436f-819b-9023513c06a3",
+      "result_id": "4fb614d8-f330-483a-95f8-071417eab56c"
+    },
+    {
+      "claim_id": "4199c643-783a-40bf-8ca8-0a29d4551de3",
+      "result_id": "4fb614d8-f330-483a-95f8-071417eab56c"
+    },
+    {
+      "claim_id": "4b8cab06-3d73-4fb4-bec7-027cbfd2c204",
+      "result_id": "4fb614d8-f330-483a-95f8-071417eab56c"
+    },
+    {
+      "claim_id": "71f516de-ba04-418e-9a14-912ca321abfc",
+      "result_id": "4fb614d8-f330-483a-95f8-071417eab56c"
+    },
+    {
+      "claim_id": "22c1089e-2c85-48f7-bdfe-22f67f2254c7",
+      "result_id": "564e8eee-27c6-4818-912c-28009c2dabeb"
+    },
+    {
+      "claim_id": "01156a6d-da26-4b4b-90a8-83ecabe8fc9a",
+      "result_id": "564e8eee-27c6-4818-912c-28009c2dabeb"
+    },
+    {
+      "claim_id": "3144efa3-ce31-45e4-b0a4-d491e7096a2a",
+      "result_id": "564e8eee-27c6-4818-912c-28009c2dabeb"
+    },
+    {
+      "claim_id": "edb405c0-3022-4876-a898-115768270720",
+      "result_id": "564e8eee-27c6-4818-912c-28009c2dabeb"
+    },
+    {
+      "claim_id": "2612e790-daf0-49ce-b291-eac4f2cdf885",
+      "result_id": "d11975ac-e51a-4302-af56-8f417965543a"
+    },
+    {
+      "claim_id": "a7a18373-d8ab-4f6b-9d43-44b27f21011a",
+      "result_id": "a00ae566-d2b2-4188-b14e-61819a55949d"
+    },
+    {
+      "claim_id": "1b69bcb5-fe1a-4277-bc93-4348877980e8",
+      "result_id": "a00ae566-d2b2-4188-b14e-61819a55949d"
+    },
+    {
+      "claim_id": "350cc730-cae7-4b7e-a3ea-3cc88b56dc96",
+      "result_id": "a00ae566-d2b2-4188-b14e-61819a55949d"
+    },
+    {
+      "claim_id": "cf15278b-8244-4935-bd45-68b862907bd3",
+      "result_id": "a00ae566-d2b2-4188-b14e-61819a55949d"
+    },
+    {
+      "claim_id": "5309075f-03e9-47ac-8f2d-36908ead0fb0",
+      "result_id": "a00ae566-d2b2-4188-b14e-61819a55949d"
+    },
+    {
+      "claim_id": "d267d69e-0d0b-4f6b-a0b0-a0a7ad075ad4",
+      "result_id": "a00ae566-d2b2-4188-b14e-61819a55949d"
+    },
+    {
+      "claim_id": "934efa51-03f9-49db-840c-3db5404c61c3",
+      "result_id": "a00ae566-d2b2-4188-b14e-61819a55949d"
+    },
+    {
+      "claim_id": "284f6550-a81a-4846-8273-4f572406ff86",
+      "result_id": "a00ae566-d2b2-4188-b14e-61819a55949d"
+    },
+    {
+      "claim_id": "127e5187-87db-4225-a65f-b5cd84b578c3",
+      "result_id": "a00ae566-d2b2-4188-b14e-61819a55949d"
+    },
+    {
+      "claim_id": "ddaa9b15-bd0e-424e-9c54-a2b9500c5ed9",
+      "result_id": "a00ae566-d2b2-4188-b14e-61819a55949d"
+    },
+    {
+      "claim_id": "a0b181ce-81fb-434c-8155-c7c54ac0b57b",
+      "result_id": "4440e437-d3ec-4937-b3ae-fa478076094b"
+    },
+    {
+      "claim_id": "f6fff18e-0953-4d07-91d5-4e1f1a888d2c",
+      "result_id": "4440e437-d3ec-4937-b3ae-fa478076094b"
+    },
+    {
+      "claim_id": "bbff025e-1840-44fe-97f0-23e015157807",
+      "result_id": "4440e437-d3ec-4937-b3ae-fa478076094b"
+    },
+    {
+      "claim_id": "c6d09489-d5dc-45f9-af5b-6010ae02b3c4",
+      "result_id": "4440e437-d3ec-4937-b3ae-fa478076094b"
+    },
+    {
+      "claim_id": "d8f09eb5-418b-4cba-819c-92f29a7fcbf6",
+      "result_id": "4440e437-d3ec-4937-b3ae-fa478076094b"
+    },
+    {
+      "claim_id": "5916de96-6380-4ab9-ba85-0d6330726683",
+      "result_id": "4440e437-d3ec-4937-b3ae-fa478076094b"
+    },
+    {
+      "claim_id": "ae0a127c-577a-47bc-b58d-7d84cd882db2",
+      "result_id": "4440e437-d3ec-4937-b3ae-fa478076094b"
+    },
+    {
+      "claim_id": "380cd239-33a4-4b48-8d75-fcfbbc2b83fa",
+      "result_id": "4440e437-d3ec-4937-b3ae-fa478076094b"
+    },
+    {
+      "claim_id": "64c54b71-75f4-4414-9f25-b355ecf05836",
+      "result_id": "4440e437-d3ec-4937-b3ae-fa478076094b"
+    },
+    {
+      "claim_id": "7b013403-1069-418d-827e-82ddd638e3aa",
+      "result_id": "4440e437-d3ec-4937-b3ae-fa478076094b"
+    },
+    {
+      "claim_id": "dc639fdb-5b02-4476-abfb-dfc2bb04edd6",
+      "result_id": "4440e437-d3ec-4937-b3ae-fa478076094b"
+    },
+    {
+      "claim_id": "eb65481c-3f91-4888-871e-7b0de3f24661",
+      "result_id": "abac7f5b-0cd5-494d-86bf-2b7661fc629f"
+    },
+    {
+      "claim_id": "ada4dac6-519d-4f52-848b-fad325c6b5e4",
+      "result_id": "abac7f5b-0cd5-494d-86bf-2b7661fc629f"
+    },
+    {
+      "claim_id": "9727041c-75f6-4760-8207-9aff6b1cb7dc",
+      "result_id": "abac7f5b-0cd5-494d-86bf-2b7661fc629f"
+    },
+    {
+      "claim_id": "2434a2b2-b5c2-4523-9bda-cd2c6703597d",
+      "result_id": "abac7f5b-0cd5-494d-86bf-2b7661fc629f"
+    },
+    {
+      "claim_id": "df1db5dc-77bf-411a-8f05-901872356eb4",
+      "result_id": "abac7f5b-0cd5-494d-86bf-2b7661fc629f"
+    },
+    {
+      "claim_id": "3f4b2c79-02d3-4748-aecd-cfffd1359305",
+      "result_id": "abac7f5b-0cd5-494d-86bf-2b7661fc629f"
+    },
+    {
+      "claim_id": "d8fe5e09-ed7b-4c4f-8545-75f28611cefe",
+      "result_id": "abac7f5b-0cd5-494d-86bf-2b7661fc629f"
+    },
+    {
+      "claim_id": "8a43014f-2de9-4fcf-9484-dc5f05c50e48",
+      "result_id": "6624e762-5ab0-48cb-9e7d-98b9c9411865"
+    },
+    {
+      "claim_id": "770dd55d-8ca9-4b9d-969a-098d641e95e4",
+      "result_id": "6624e762-5ab0-48cb-9e7d-98b9c9411865"
+    },
+    {
+      "claim_id": "7f8bf232-418a-4780-91c6-513c0eb1b4da",
+      "result_id": "6624e762-5ab0-48cb-9e7d-98b9c9411865"
+    },
+    {
+      "claim_id": "60d7d719-799f-4c4e-aab8-b9db06397116",
+      "result_id": "6624e762-5ab0-48cb-9e7d-98b9c9411865"
+    },
+    {
+      "claim_id": "12d386f4-193a-4c78-986e-f319d0433167",
+      "result_id": "6624e762-5ab0-48cb-9e7d-98b9c9411865"
+    },
+    {
+      "claim_id": "a3ede3c5-9100-417c-a2ba-a5c1bc541e9a",
+      "result_id": "6624e762-5ab0-48cb-9e7d-98b9c9411865"
+    },
+    {
+      "claim_id": "359aea29-34de-4e9f-a909-7896ea54a44f",
+      "result_id": "6624e762-5ab0-48cb-9e7d-98b9c9411865"
+    },
+    {
+      "claim_id": "d2cf6dec-4f40-47e8-9751-226bbc791ad4",
+      "result_id": "6624e762-5ab0-48cb-9e7d-98b9c9411865"
+    },
+    {
+      "claim_id": "194fc38d-f635-4317-99e0-ba6a46e4f512",
+      "result_id": "6624e762-5ab0-48cb-9e7d-98b9c9411865"
+    },
+    {
+      "claim_id": "567ad7c6-9ac5-4a96-b9df-36ff6c5946c2",
+      "result_id": "6624e762-5ab0-48cb-9e7d-98b9c9411865"
+    },
+    {
+      "claim_id": "4b211b41-64cc-4bbf-b098-e456fd374005",
+      "result_id": "6624e762-5ab0-48cb-9e7d-98b9c9411865"
+    },
+    {
+      "claim_id": "3427804d-e97c-4dbf-b368-9791a3615174",
+      "result_id": "6624e762-5ab0-48cb-9e7d-98b9c9411865"
+    },
+    {
+      "claim_id": "6b453da7-8ad1-4ffe-a4ae-371d52eb2f98",
+      "result_id": "6624e762-5ab0-48cb-9e7d-98b9c9411865"
+    },
+    {
+      "claim_id": "7d30605f-5459-4954-b2d1-67239caf38e2",
+      "result_id": "6624e762-5ab0-48cb-9e7d-98b9c9411865"
+    }
+  ],
+  "comparisons": []
+}

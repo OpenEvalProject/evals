@@ -1,0 +1,242 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Zebrafish are suitable for high-throughput whole-body microCT imaging of the vertebral column, with the capability to scan multiple fish simultaneously at 21 \u00b5m resolution in approximately 5-20 minutes per fish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 establish the feasibility of microCT imaging in zebrafish based on prior work (C1-C3) and demonstrate practical throughput capabilities through experimental data (C4-C5). The proof-of-concept for 8-fish simultaneous scanning (C5) is appropriately qualified as requiring further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "FishCuT is a microCT analysis toolkit that enables automated segmentation and quantification of 25 phenotypic measurements per vertebra across the zebrafish vertebral column, reducing analysis time from ~60 minutes per vertebra (manual) to <5 minutes per fish (~100x faster).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C16 collectively describe the development and capabilities of FishCuT with specific quantitative performance metrics. The manual segmentation time (C6), number of measurements (C13-C14), and speed improvement (C15) are all supported by experimental data. The workflow is clearly documented with specific measurements listed (C10-C13).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "FishCuT demonstrates high segmentation accuracy and reproducibility, with a Dice similarity coefficient of 0.932 \u00b1 0.001 compared to manual segmentation and 3.4 \u00b1 1.2% variability in centrum length measurements between repeated scans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 provide validation metrics for FishCuT. The DSC value (C17) exceeds the 0.7 threshold for excellent agreement (C18), and reproducibility is quantified (C19). However, the validation is limited to n=2 vertebrae for DSC and n=3 fish for reproducibility, which are small sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "FishCuT measurements show relatively low inter-correlation (median absolute Pearson correlation coefficient of 0.34), indicating that the phenotypic measures capture largely independent information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 demonstrate that FishCuT measurements are relatively independent. The median correlation of 0.34 (C20) is comparable to prior work (0.3, C21) and remains stable with increasing vertebrae analyzed (C22). This supports the claim that measurements provide non-redundant information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "MicroCT scans at medium (21 \u00b5m) and high (10.5 \u00b5m) resolution provide highly correlated measurements (R\u00b2 0.98-0.99) and comparable ability to discriminate WT from bmp1a-/- mutant phenotypes, despite slight deviations from unity in slopes due to partial volume effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C30 demonstrate that medium and high resolution scans yield comparable results. The high correlations (C23), slope deviations (C24-C25), attribution to PVEs (C26-C27), and similar discriminatory power (C28-C30) are all supported by experimental data from n=3 fish per group. The interpretation of PVEs is appropriately cited (C27).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The global test for analyzing vertebral patterns demonstrates higher sensitivity than t-tests of individual vertebrae or averaged quantities in discriminating mutant populations, with sensitivity values of 0.96, 0.89, and 0.91 respectively at alpha=0.05, and greatest relative power increase at small effect sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 present Monte Carlo simulation results demonstrating superior performance of the global test. Specific sensitivity values are provided for different alpha levels (C73-C74), false discovery rate is estimated (C75), and power analysis shows greatest benefit at small effect sizes (C76). The simulations are appropriately designed and interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "bmp1a-/- zebrafish mutants exhibit significantly increased bone mass (centrum volume, bone thickness in all elements) and elevated tissue mineral density in all skeletal elements, with haemal arch TMD differentially elevated in precaudal vertebrae, recapitulating the high BMD phenotype of human Osteogenesis Imperfecta caused by BMP1 mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C41 characterize the bmp1a-/- phenotype with specific p-values for multiple measurements (C35-C41). The connection to human OI is established through citations (C31-C34). The spatial pattern of Haem.TMD elevation (C40-C41) is supported by covariate analysis. Sample size is n=3/group, which is adequate given the large effect sizes observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "plod2-/- zebrafish mutants exhibit elevated centrum TMD, decreased centrum length, and reduced haemal/neural arch volume and thickness, consistent with previous findings and modeling Bruck syndrome, a condition resembling Osteogenesis Imperfecta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C52 characterize the plod2-/- phenotype with specific p-values. The findings are consistent with prior work (C43-C45) and extend previous 2D analyses to comprehensive 3D characterization. The connection to Bruck syndrome is established (C42). FishCuT successfully segmented severely dysmorphic vertebrae, demonstrating robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Most zebrafish vertebral phenotypic features deviate from isometric growth with respect to standard length, with thickness and volume showing negative allometry and tissue mineral content showing positive allometry. Allometric normalization substantially reduces coefficient of variability compared to unnormalized values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 establish allometric relationships in zebrafish vertebrae. The relationship between developmental progress and standard length is cited (C53), deviations from isometry are documented (C54), specific allometric patterns are identified (C55-C56), and normalization effectiveness is demonstrated (C57). Based on n=16 fish across a range of sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Following allometric normalization, plod2-/- mutants show a novel phenotype of increased centrum volume and diameter, along with elevated TMD in all skeletal elements, revealing phenotypes masked by growth differences in unnormalized analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 demonstrate the utility of allometric normalization in revealing masked phenotypes. Previously significant morphological decreases become non-significant (C58), while new phenotypes emerge (C59-C61). The centrum diameter increase is visually confirmed (C61) and represents a novel finding not identified in prior characterization (C62).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The opallus mutant, harboring a TSHR gain-of-function mutation identical to a human hyperthyroidism-causing mutation, exhibits significantly elevated TMD in all vertebral elements and decreased neural arch volume in anterior vertebrae, representing a novel axial skeletal phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C71 identify opallus as a novel axial skeletal mutant. The genetic basis and human disease connection are established through citations (C63-C67). The phenotype is characterized with specific p-values (C68-C71) in n=5/group. The spatial pattern of neural arch volume decrease is supported by covariate analysis (C71). This demonstrates FishCuT's utility in forward genetic screens.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The three mutants analyzed (bmp1a-/-, plod2-/-, opallus) demonstrate that bone over-mineralization can occur with varying effects on bone mass and morphology, with opallus uniquely showing high TMD with mostly normal bone mass, indicating these traits can be decoupled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 synthesize findings across mutants. The connection to brittle bone disease is cited (C77), site-specific variation in OI is noted (C78), and the decoupling of TMD from bone mass in opallus is demonstrated (C79). This comparative analysis provides biological insight into the independence of mineralization and mass phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "FishCuT supports the DICOM standard for portability, and future improvements in throughput and automation are feasible based on existing technologies in other systems, with source code deposited on GitHub.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 discuss technical features and future directions. DICOM support is stated (C80), potential throughput improvements are cited from other systems (C81-C83), and code availability is documented (C84). These are appropriately framed as technical capabilities and future possibilities rather than current achievements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Analyzing phenotypic patterns may increase productivity in genetic screens and facilitate study of genetic variants with smaller effect sizes underlying complex diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 present forward-looking implications of the work. These are appropriately framed as potential applications ('may increase', 'may facilitate') based on the demonstrated enhanced sensitivity of pattern analysis. The claims are logical extensions of the demonstrated capabilities but represent future applications rather than current achievements.",
+    "result_type": "MINOR"
+  }
+]

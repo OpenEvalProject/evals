@@ -1,0 +1,1447 @@
+{
+  "submission": {
+    "id": "4727cd8a-39bb-496e-961b-ca6f300e712a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:32:21.049531Z",
+    "updated_at": "2025-12-01T21:32:21.049531Z"
+  },
+  "content": [
+    {
+      "id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "submission_id": "4727cd8a-39bb-496e-961b-ca6f300e712a",
+      "content_type": "manuscript",
+      "content_text": "# Genetically tunable frustration controls allostery in an intrinsically disordered transcription factor\n\n## Authors\n\n- Jing Li<sup>1</sup>\n- Jordan T White<sup>1</sup> ([ORCID: 0000-0003-3202-4181](https://orcid.org/0000-0003-3202-4181))\n- Harry Saavedra<sup>1</sup>\n- James O Wrabl<sup>1</sup>\n- Hesam N Motlagh<sup>1</sup>\n- Kaixian Liu<sup>1</sup>\n- James Sowers<sup>1</sup>\n- Trina A Schroer<sup>1</sup> ([ORCID: 0000-0002-5065-1835](https://orcid.org/0000-0002-5065-1835))\n- E Brad Thompson<sup>1</sup> ([ORCID: 0000-0003-1578-0241](https://orcid.org/0000-0003-1578-0241))\n- Vincent J Hilser<sup>1</sup> ([ORCID: 0000-0002-7173-0073](https://orcid.org/0000-0002-7173-0073)) \u2020\n\n### Affiliations\n\n1. Department of Biology Johns Hopkins University Baltimore United States\n2. TC Jenkins Department of Biophysics Johns Hopkins University Baltimore United States\n3. Center for Nuclear Receptors and Cell Signaling, Department of Biology and Biochemistry University of Houston Houston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIntrinsically disordered proteins (IDPs) present a functional paradox because they lack stable tertiary structure, but nonetheless play a central role in signaling, utilizing a process known as allostery. Historically, allostery in structured proteins has been interpreted in terms of propagated structural changes that are induced by effector binding. Thus, it is not clear how IDPs, lacking such well-defined structures, can allosterically affect function. Here, we show a mechanism by which an IDP can allosterically control function by simultaneously tuning transcriptional activation and repression, using a novel strategy that relies on the principle of \u2018energetic frustration\u2019. We demonstrate that human glucocorticoid receptor tunes this signaling in vivo by producing translational isoforms differing only in the length of the disordered region, which modulates the degree of frustration. We expect this frustration-based model of allostery will prove to be generally important in explaining signaling in other IDPs.\n\n## Introduction\n\nA cornerstone of biological regulation is the ability of proteins to tune their particular activities in response to the binding of specific ligands at distinct regulatory sites (Motlagh et al., 2014). Historically, such tunability has been explained by the concerted (Monod et al., 1965) or sequential (Koshland et al., 1966) models of allosteric regulation, which describe the coupling between binding sites in terms of ligand-induced changes in the average structure of the protein. More recent studies reveal that allostery is not restricted to structured proteins. It is widely observed in intrinsically disordered (ID) proteins, polypeptides, or regions therein, that lack stable tertiary structure (Ferreon et al., 2013; Garcia-Pino et al., 2010; Lum et al., 2012; Motlagh et al., 2014; Sevcsik et al., 2011). Moreover, ID regions are hyper-abundant in known allosteric proteins such as transcription factors (Gronemeyer and Bourguet, 2009; Liu et al., 2006), suggesting that allostery involving ID sequences may represent a major regulatory paradigm. Despite the existing evidence, however, the mechanism by which ID proteins facilitate allostery is not known.\n\nPreviously, we developed a mathematical model to show how proteins could use intrinsic disorder to facilitate, and even optimize, allosteric control (Hilser and Thompson, 2007). This model predicts that coupled folding and binding in different ID domains could produce complex coupling mechanisms that result from the simultaneous tuning of both activating and repressing sub-ensembles within the overall conformational ensemble (Hilser et al., 2006, 2012; Motlagh et al., 2014), a process of \u2018energetic frustration\u2019 akin to the well-known physical concept of \u2018geometric frustration\u2019. In condensed matter physics, \u2018geometric frustration\u2019 describes a physical system\u2019s inability to simultaneously minimize the competing interaction energies between its components in mean field theory (Vannimenus and Toulouse, 1977; Villain, 1977). Frustration theory has been invaluable in understanding magnetic and superconducting systems (Vannimenus and Toulouse, 1977), circuits (Wang et al., 2006), protein folding (Bryngelson and Wolynes, 1987), and even gene networks (Krishna et al., 2009). However, whereas numerous biological networks can utilize multiple components (e.g. repressors and activators) to control overall activity, it is not known whether a single gene product could encode tunable activity based on an analogous form of frustration, as theory predicts (Hilser et al., 2006; Hilser et al., 2012; Motlagh et al., 2014).\n\nTo investigate the relationship between disorder and allostery and to test whether energetic frustration is at the heart of disorder-mediated allostery, we selected the human glucocorticoid receptor (GR) as a model system. The GR is a member of the steroid hormone receptor (SHR) family of transcription factors and plays key roles in organ development, metabolite homeostasis, and the responses to stress and inflammation (Griekspoor et al., 2007). Three major domains segregate the GR\u2019s primary functions (Hilser and Thompson, 2011). The DNA-binding domain (DBD) and ligand-binding domain (LBD) are well-structured and are responsible for interacting with DNA (i.e. GR response element) and the steroid hormone (e.g. cortisol), respectively (Hilser and Thompson, 2011). The N-terminal domain (NTD), which consists of the first 420 amino acids, contains the activation function 1 core region (i.e. AF1c, GR 187\u2013244), which is required for the recruitment of cofactors necessary for transcriptional activation (Dahlman-Wright et al., 1994; Ford et al., 1997) and full transcriptional potency. In contrast to the LBD and DBD, the NTD of GR is intrinsically disordered (Hilser and Thompson, 2011). Importantly, five active isoforms (Figure 1, Inset) among the total of eight translational isoforms of GR (Figure 1\u2014figure supplement 1), differing only in the lengths of the ID NTDs have been discovered (Lu and Cidlowski, 2005). These isoforms differ in their relative activities (Bender et al., 2013), tissue distributions (Lu and Cidlowski, 2005; Lu and Cidlowski, 2006), and regulatory specificities (Bender et al., 2013; Cao et al., 2013; Lu and Cidlowski, 2005; Lu and Cidlowski, 2006). Although the effect of binding either different steroid molecules (Pandit et al., 2002; Pfaff and Fletterick, 2010) or different DNA sequences (Meijsing et al., 2009) is known to produce a variety of structural changes within their respective binding domains, how such binding events are differentially propagated to the ID NTD of each isoform, and subsequently translated into functional changes, is not known. Fundamentally, it is not clear whether and, if so, how structured domains like the DBD can both receive and transmit allosteric signals to disordered domains like the NTD of GR.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/30688/elife-30688-fig1-v3.jpg)\n\n**Figure 1.:** Transcriptional activity, monitored by dual luciferase reporter assay (Figure 1\u2014figure supplement 1a and b''), and binding affinity to DNA, monitored by fluorescence anisotropy change (Figure 1\u2014figure supplement 1c and d), show uncorrelated behavior. Inset: Domain organization of the constitutively active GR constructs for translational isoforms, wherein the intrinsically disordered N terminal domain (NTD) varies in length. Residues 1\u201397 (red) are labeled R (for Regulatory) and residues 98\u2013420 (grey) are labeled F (for Functional). Also labeled are residues corresponding to the activation function 1 core (AF1 core) region, which is required for transcriptional activity (Ford et al., 1997). Error bars represent uncertainty of the individual fits.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30688/elife-30688-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Luciferase assay dosage curves for the constitutively active constructs of the eight GR translational isoforms. Per 30,000 cells, a constant 40 ng of GRE-driven luciferase vector was transfected, and the amount of GR vector co-transfected was increased from 0 ng to 5 ng. Errors are calculated from three samples. Curves are fitted to the data using the dose-response function, $F(C)=1+\\frac{A_{max}\u22121}{1+(EC_{50}/C)^{P}}$. Amax represents the maximum transcriptional activity for each construct, and EC50 represents the amount of GR construct transfected at the half-maximum transcriptional activity. C is the amount of GR construct transfected at each data point. p is an empirical value introduced in the fitting equation, to transform DNA vector amount to protein expression amount, to account for the possibility that different isoforms have different degradation rates, expression levels, nuclear localizations and/or cooperativities. Inset: Western blot showing that U-2 OS cells transiently transfected with the expression plasmid for each isoform express each of them. (b) Luciferase assay dosage curve keeping each GR isoform vector constant at 4 ng per 30,000 cells, while gradually increasing the GRE-driven luciferase vector from 0 ng to 40 ng. Data were fitted by a linear function. (This indicates that 5 ng GR isoform construct can saturate the 40 ng GRE driven luciferase vector.) Errors are the standard deviations of three independent samples. (c) Fluorescence anisotropy of the 6-FAM-labeled half site GRE (5\u2019-gcgcAGAACAggagcgc-3\u2019) as a function of GR translational isoform concentration. Binding was conducted with 25 nM 6-FAM labeled GRE in buffer containing 10 mM HEPES (pH7.6), 80 mM NaCl, 1 mM EDTA, 5 mM MgCl2, 1 mM DTT, 10% glycerol, 200 ug/mL BSA and 5 \u00b5M control non-specific 17-mer oligo. Curves represent fits to the data with a single-site-binding model. (d) Correlation between the EC50 fitted from the in vivo dosage curve as shown in panel a and the in vitro binding affinity as shown in panel c, demonstrating that the in vitro binding affinity represents the in vivo binding. Error bars represent uncertainty of the fits, as returned by the default settings of Mathematica\u2019s NonLinearModelFit function. (e) Competitive transfection assay comparing D1, D2, D3 and DBD, against titration of a constant amount of C3 isoform (which has the highest activity). The transcription activity of C3 isoform in absence of competitors was normalized to 1. Data were fitted with dose-response function, $F(C)=1+\\frac{A_{competitor}\u22121}{1+(EC_{50}/C)^{P}}$. In this equation, Acompetitor represents the transcriptional activity when 16 ng of competitor is transfected alone, EC50 represents the co-transfected amount of competitor construct that results in half the activity of the C3 maximum. C is the amount of competitor construct transfected at each data point. p is an empirical value described in panel a. Inset: correlation between the EC50 fitted from the competitive binding assay and the in vitro measured binding affinity for D1, D2 and D3 isoforms (as obtained from panel c). Errors reflect uncertainties of the individual fits, as returned by the default settings of Mathematica\u2019s NonLinearModelFit function. The correlation demonstrates that the competitive transfection assay provides qualitative information about the binding affinity of each inactive construct. (f). Multicolor immunostaining of U-2 OS cells transfected with A, B, C1, C2, C3, D1, D2 and D3 constructs. Green: Alexa 488 linked goat anti-mouse IgG staining GR. Blue: DAPI staining nuclei. Red: Rhodamine Phalloidin staining F-actin. (g) Nuclear localization efficiency for the eight GR translational isoforms. Nuclear percentage is calculated by dividing the intensity of the green dye overlapped with blue dye with the total green dye intensity as shown in panel f. Three pictures were used for each isoform for the quantification. Average values and standard errors of the mean are reported in the graph.\n\n## Results and discussion\n\n### Thermodynamic coupling underlies tunable DNA-binding affinity and transcriptional activity of different isoforms\n\nTo obtain insight into how allostery tunes GR function, DNA binding and cell-based functional studies were performed on constitutively active (i.e. steroid-independent) versions (Chen et al., 1997) of human GR translational isoforms that lack the C-terminal LBD (Figure 1). The similarity between the relative transcriptional activities of the different two-domain isoforms studied here and those of the full-length three-domain isoforms studied previously (Bender et al., 2013; Lu and Cidlowski, 2005) (Figure 1 and Figure 1\u2014figure supplement 1a and b''), suggests that although the LBD affects the magnitude of activity enhancement (Godowski et al., 1987; Hollenberg and Evans, 1988), it does not appear to qualitatively impact the communication between the DBD and the NTD in each isoform.\n\nSeveral features of the activities and DNA-binding properties of the different isoforms are noteworthy. First, the affinities of the isoforms for DNA vary, despite having identical DBDs, indicating that the NTD of each isoform differentially communicates with its respective DBD (Figure 1 and Figure 1\u2014figure supplement 1c\u2013e). Second, the GR C3 isoform (i.e. 98\u2013525) is almost five times more active than the full-length GR A isoform (i.e. 1\u2013525), indicating that residues 1\u201397 somehow negatively regulate the activity of the remaining NTD residues, which contain the functionally important AF1c region (Figure 1). For this reason, we represent the full-length NTD as being composed of two distinct domains, a functional domain (F-domain), and a regulatory domain (R-domain) (Figure 1, Inset), which were experimentally shown to be unfavorably coupled to each other by both osmolyte (i.e. TMAO) induced folding and protease sensitivity analyses (Figure 2a and b) (Li et al., 2012). Conversely, in the same in vitro folding and protease sensitivity experiments the DBD appears to stabilize the folded form of the F-domain (Figure 2a and b). Importantly, the thermodynamic stabilization of the F-domain conferred by the DBD is accompanied by a dramatic increase in activity, as determined from cell-based transcriptional assays that compare the activity of the GR F-DBD construct (C3 isoform) with the non-natural chimera that tethers the DBD from the yeast Gal4 transcription factor to the F-domain (Figure 2c). The thermodynamic and activity results suggest that competing factors within GR determine the overall stability (i.e. the \u0394G of folding) and transcriptional activity of the AF1c region of the F-domain.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/30688/elife-30688-fig2-v3.jpg)\n\n**Figure 2.:** (a) TMAO-induced folding for the F-domain alone and with either the R-domain or the DBD. (b) Protease sensitivity assay: comparing F-domain and F-domain with R-domain (left) performed at a protein (1 mg/ml): trypsin mass ratio of 1000:1 (Li et al., 2012); comparing F-domain and F-domain with DBD (right) performed at a protein (1 mg/ml): trypsin mass ratio of 100:1. Note: each protein pair (i.e. F vs. R-F and F vs. F-DBD) was run on the same gel, with the intervening lanes removed in the figure for clarity. (c) Luciferase assay for C3 isoform (GR F-DBD) versus chimeric construct (GR F-Gal4 DBD).\u00a0We note that\u00a0data for the R-F and F domains in panels (a) and (b)\u00a0are the same as\u00a0presented in Li et al., 2012 to\u00a0allow\u00a0for direct comparison of the opposing\u00a0effects of the DBD and the R-domain on the F-domain.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30688/elife-30688-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Thermodynamic parameters obtained from TMAO-induced folding experiments demonstrate that DBD stabilizes a folded conformation of the F-domain while the R-domain destabilizes that conformation. Parameter values obtained from the fits of the TMAO-induced folding data for the constructs shown in Figure 2a. See previous publication (Li et al., 2012) for details. Because the thermodynamic analyses report on the free energy differences and not the mechanistic bases of the energy differences, the reported free energies of folding ($\u0394G_{F\u2212U}^{0}$) may not necessarily reflect the stability of unique conformations. Instead, they may be reporting on the stability of a conformationally heterogeneous ensemble. Toward this end, it has been reported that ID proteins may adopt poly-beta sheet formations (Han et al., 2012) as part of their functional states. As the effect of TMAO on structure is almost entirely defined by the influence on backbone atoms (i.e. excluding backbone hydrogen bond donors and acceptors from solvent) (Auton and Bolen, 2005), any state or ensemble of states that facilitates removal of backbone atoms from solvent will be stabilized by TMAO. As such, the current analysis provides evidence that a functional state exists whose probability is proportional to transcriptional activation. However, the structural properties of that state are not known. (b) Comparison of the m-values fitted from TMAO induced folding of F-domain and R-F with the published m-values for known representative globular proteins (see previous publication (Li et al., 2012) for details). The m-value comparison suggests that the F-domain and R-domain can adopt folded conformations similar to globular proteins in terms of surface area buried upon folding.\u00a0We note that the data in (b) are the same as presented in Li et al., 2012 (Figure 4a), according to the current nomenclature, wherein the R-F\u00a0construct is equivalent to the A isoform of NTD and the F construct is\u00a0equivalent to the C3 isoform of NTD.\n\nThe coupling between the R-domain and the DBD was further evaluated by use of competitive transfection assays to estimate the DNA-binding affinity of various constructs that connect the DBD and the R-domain of each isoform. In order to only measure the coupling between the R-domain and the DBD, and to avoid the convoluting effects associated with the coupling between the F-domain and the R-domain and DBD, constructs were generated that utilized a series of flexible linkers connecting the R-domain to the DBD (Figure 3a). As Figure 3b reveals, inclusion of the R-domain residues 1\u201385, naturally present in GR\u2019s A and B isoforms, significantly increased the DNA-binding affinity of the DBD, while the shorter length R-domains in the C isoforms show no effect. Such increases were not observed for non-natural chimeric constructs that linked the various R-domains to the yeast transcription factor Gal4 DBD (Kraulis et al., 1992) (Figure 3b). In addition, the fact that different length linkers (Figure 3c) give similar results indicates that the linker is, as intended, functionally inert, and serving as a tether that simply connects the R-domain to the DBD. These results support the notion that the R-domain affects DNA binding by the DBD specifically through stabilization of a high-affinity state of the DBD, and is not simply a consequence of a direct interaction between the R-domain (or the linker) and the DNA. In other words, our results indicate the R-domain allosterically affects DNA binding of the DBD, serving as a positive intramolecular allosteric effector.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/30688/elife-30688-fig3-v3.jpg)\n\n**Figure 3.:** (a) Schematic representation of competitive transfection assay design for constructs of the R-domains of isoforms A, B, C1, and C2 as well as the internally truncated R-domain linked to GR DBD or Gal4 DBD. (b) Experimental competitive transfection assay for constructs shown in a. The first 86 residues of R-domain present in GR A and B isoforms significantly increase the binding affinity of the DBD to GRE. Linking the R-domains to the Gal4 DBD ablate coupling. (c) Linkers of 11aa and 20aa were compared for the effect when connected alone to the GR DBD or used to link the R-domain (GR 1\u201397 segment) to the DBD. Linker length in panel a and all the other figures is 11aa. Error bars represent uncertainty of the individual fits.\n\n### Energetic frustration in GR\n\nThe analysis of the thermodynamic couplings in Figures 2 and 3 point to the paradoxical result whereby the binding of DNA to the DBD simultaneously produces two opposing effects on the F-domain. It has long been known that DNA binding to GR DBD stabilizes the DBD (Lefstin and Yamamoto, 1998). As a consequence of its direct positive coupling to the F-domain (Figure 2), DBD binding to DNA stabilizes the folded form of the F-domain and therefore promotes activation of transcription (Figure 4a, counterclockwise green arrow). However, as Figure 3 indicates, there is also positive coupling between the DBD and the R-domain. But because of the negative coupling between the R- and F-domains (Figure 2a and b), the same DNA binding (to the DBD) that stabilizes/activates the F-domain simultaneously, through stabilization of the R-domain, destabilizes the folded form of the F-domain, promoting repression of transcription (Figure 4a, red inhibitory semicircle), a process that resembles geometric frustration (Vannimenus and Toulouse, 1977; Villain, 1977).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/30688/elife-30688-fig4-v3.jpg)\n\n**Figure 4.:** (a) Schematic view of the thermodynamic configuration of GR. According to this convention, the positive (+) signs between the DBD and F-domain, and the DBD and R-domain signify they are positively coupled; stabilization of one domain stabilizes the other. The negative (-) sign between the R- and the F- domains indicate they are negatively coupled; stabilization of one domain destabilizes the other. Thus, the combination of the positive coupling between DBD and R-domain, and the negative coupling between R- and F-domains produces an overall repression (red semicircle) from the effect that is mediated through the R-domain. Triplet arrows are an abbreviation to describe all the couplings in the system: first arrow indicates the coupling between DBD and F-domain, second arrow indicates coupling between R-domain and F-domain, and third arrow indicates coupling between DBD and R-domain. Green (up) arrow indicates positive coupling and red (down) arrow indicates negative coupling. Importantly for this equilibrium scheme, any permutation containing an even number of up arrows will be energetically frustrated. (b) Schematic representation of all possible thermodynamic configurations for three interacting domains (represented in the structural and spin (up or down arrows) nomenclatures). Four of the possible configurations produce frustration between the DBD and the F-domain (top), whereas four configurations do not produce frustration (bottom), representing the cases of activation and repression, respectively. Note the curved arrows connecting the domains are colored according to the overall effect on F-domain from stabilizing the DBD; this coloring scheme highlights the result that frustrated configurations result from opposing energetic couplings affecting the F-domain stability. For example, in case i (Top, Left), stabilization of the DBD destabilizes the R-domain due to the negative coupling energy, signified by the red curved arrow between domains. However, the destabilization of the R- domain has the effect of also destabilizing the F-domain, because the F- and R- domains are positively coupled. Thus, the overall effect of stabilizing the DBD is to destabilize the F-domain through its interaction with the R-domain, signified by the red curved arrow between the R- and F- domains (even though the coupling between R-F alone is positive).\n\nGeometric frustration originates in bi-stable systems wherein competing thermodynamic couplings interact such that no single state acquires significant stability so as to dominate the ensemble probabilities (Krishna et al., 2009; Vannimenus and Toulouse, 1977; Villain, 1977). Within the context of the three domains of GR studied here, eight different configurations of coupling energies (i.e. Figure 4bi\u2013viii) represent all possible combinations of positive (+) and negative (\u2212) coupling energies between domains. For each case, a positive interaction energy signifies that a stabilization of one domain would result in a stabilization of the second domain, whereas negative coupling would produce the opposite effect. As Figure 4b reveals, frustration results when the \u2018direct\u2019 impact of stabilization of the DBD on the F-domain is opposite in sign to the indirect impact (i.e. the impact that is mediated through the R-domain). Such is the case when one or all three of the inter-domain interactions is/are negative (Hilser et al., 2012; Motlagh and Hilser, 2012; Motlagh et al., 2014). Of the possible configurations that are predicted to produce frustration (Figure 4b upper), GR clearly conforms to case ii, wherein the DBD is positively coupled to the F-domain serving to increase its activity (Figure 2a\u2013c). However, because of the negative coupling between the R-domain and the F-domain (Figure 2a and b), and the positive coupling between the R-domain and the DBD (Figure 3), the DBD is ultimately also negatively coupled to the F-domain. The net effect of DNA binding on GR transcriptional activity is thus a balance between the strengths of these coupling energies, which could differ among translational isoforms. The results clearly demonstrate that two opposing control mechanisms are at play, and that the classic deterministic models of allostery (Koshland et al., 1966; Monod et al., 1965) are insufficient to capture the probabilistic nature of this mechanism.\n\nTo highlight the analogy with geometric frustration, while simultaneously distinguishing this biological phenomenon from the condensed matter physics model, we term this phenomenon \u2018energetic frustration\u2019. The simplest models for geometric frustration quantify the total energy of a system of spins within a magnet, where the energy of an interacting spin pair of nuclei i and j takes the form Eint\u00a0=\u00a0JijSiSj. In this formalism, J is the coupling energy and S is the spin state (i.e. \u2018up\u00a0+1\u2019 or \u2018down \u22121\u2019). The interaction energy between protein domains i and j can be written in a similar way, Eint\u00a0=\u00a0JijS*iS*j, with an interdomain coupling energy and an accounting for the states of the domains. One key difference, with respect to geometric frustration, is that in energetic frustration the sign of Eint is determined solely by the sign of J, which is fixed by the physicochemical nature of the interdomain interaction. Also, the domain state is conditional on whether the protein domain is folded or unfolded, a folded state resulting in a\u00a0+\u00a01 value for S* and an unfolded state resulting in a value of 0. Only in the case in which both domains are folded will the coupling energy contribute to the system.\n\n### The ensemble allosteric model (EAM) enables quantitative characterization of the energetic frustration in GR\n\nTo illuminate how the opposing allosteric mechanisms are manifested in our example IDP, the GR, a quantitative characterization of the allosteric coupling was implemented using the previously developed ensemble allosteric model (EAM) (Hilser and Thompson, 2007; Hilser et al., 2012). An ensemble of states was constructed for each isoform, enumerating all possible combinations of the DBD being in the high-affinity or low-affinity states, and the R and F-domains being in their active (folded) or inactive (unfolded) states (see Figure 5a, for the A and C3 isoforms). Our choice of model is justified because as shown previously (Li et al., 2012) the R- and F-domains can fold to globular protein-like structures (Figure 2\u2014figure supplement 1b), consistent with the notion of coupled folding and binding for IDPs, where the folded conformation is the active form (Dyson and Wright, 2002). In the context of the EAM, the probability of any state is determined by the intrinsic stability of each domain, \u2206GR, \u2206GF and \u2206GD (the stability of each domain as it would be in isolation), as well as the coupling free energies between each domain, $\u0394g_{R\u2212F}$, $\u0394g_{R\u2212D}$ and $\u0394g_{F\u2212D}$\u00a0(Hilser and Thompson, 2007; Hilser et al., 2012). For example, in the full length A isoform (composed of the R-domain, the F-domain, and the DBD) and the most active C3 isoform (composed only of the F-domain and the DBD), the EAM produces 8 and 4 states in their respective ensembles, representing all combinations (Figure 5a). In the EAM, the experimentally observed transcriptional activity is represented by the summed probabilities of states whose folded F-domain co-occurs with the high-affinity DBD conformation. Similarly, DNA-binding affinity is represented by the summed probabilities of states wherein the DBD is in the high-affinity conformation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/30688/elife-30688-fig5-v3.jpg)\n\n**Figure 5.:** (a) EAM for GR A and C3 isoforms. (b) The model recapitulates the DNA-binding affinity and relative transcriptional activity of A, B, C1, C2, and C3 isoforms. Error bars on experimental data represent uncertainty of the individual fits. Error bars on simulated data are average results from propagation of experimental error through the model.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30688/elife-30688-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Two independent methods were used to estimate parameters for the EAM from experimental data. The first method was a \u2018brute force\u2019 grid search for parameter combinations that satisfied the experimental transcriptional activity and binding affinity data, and the second method used unbiased global minimization of a chi-squared merit function against the experimental transcriptional activity and binding affinity data, as implemented in the attached Mathematica notebook. Panels a-d are relevant to the first method, and panels e-f demonstrate that the resulting estimates from both methods were robustly similar in sign and magnitude. The first method was exhaustive subject to the following reasonable parameter space constraints (the second method was subject to no constraints): (1) full length isoform A has higher binding affinity and lower transcriptional activity than C3 isoform (as experimentally demonstrated in Figure 1 and Figure 1\u2014figure supplement 1a\u2013d); (2) The probability of the high-affinity state of A isoform is less than 40%, as A isoform\u2019s binding affinity is more than 2.5 fold lower than D2 isoform, which has highest binding affinity among all the translational isoforms (as experimentally demonstrated in Figure 1 and Figure 1\u2014figure supplement 1c\u2013d); (3) RA-linker-DBD construct has higher binding affinity than linker-DBD construct (as experimentally demonstrated in Figure 3b); (4) In presence of GR response element, the sum of probability of the functional states (with F-domain in the folded conformation and the DBD in the high-affinity state) is larger than 5%, which is consistent with the possibility of a large population increase upon a small energetic stabilization, such as a binding event to co-regulators. During the parameter space search, each stability term was explored from \u22128 kcal/mol to\u00a0+8 kcal/mol, with a step size of 0.25 kcal/mol, thus the search was exhaustive within a resolution of that increment. (a) Probability distribution plot of the stability of the F-domain, the R-domain and the DBD (with the folded conformation or high-affinity state as reference). (b) Probability distribution plot of the interaction energy between the R-domain and the F-domain, the R-domain and the DBD and the F-domain and the DBD. As shown in panel a, the distribution of the F-domain stability has high uniform probability between \u22127.5 kcal/mol\u00a0and\u00a0\u22122 kcal/mol, consistent with its experimental stability of \u22127.6\u00a0\u00b1\u00a00.3 kcal/mol measured by in vitro TMAO folding (Figure 2a and Figure 2\u2014figure supplement 1a). Thus, to save computational time, the parameter space search was carried out again by fixing F-domain stability at \u22127 kcal/mol and exhaustively scanning the other parameters. Under such conditions, the probability distribution of the stabilities of the R-domain and the DBD are shown in panel c and the distributions of the interaction energies between domains are shown in panel d. A range of parameter combinations can satisfy the experimental constraints, but it is important to emphasize that with no parameter does the sign of the energy change. With any such set of parameter combinations, the simulated transcriptional activity and the simulated binding affinity of C3 isoform can be calculated as relative to A isoform. Calculating the RMSD between these simulated values and experimental data was employed as a useful heuristic to assess which sets of the parameter combinations best simulated the experimental observations. Another useful heuristic, a \u2018distribution score\u2019, was employed to assess how well a chosen parameter compared to the mode of its distribution. One arbitrarily chosen set of parameters exhibiting reasonable compromise between a minimum RMSD and a maximum \u2018distribution score\u2019 was the following: ($\u0394G_{D}$=\u22121.0 kcal/mol, $\u0394G_{R}$ = 0.75 kcal/mol, $\u0394G_{F}$ = \u22127 kcal/mol, $\u0394g_{R\u2212D}$ = 0.75 kcal/mol, $\u0394g_{F\u2212R}$= \u22121.75 kcal/mol, and $\u0394g_{F\u2212D}$= 7.0 kcal/mol (positions of these values were labeled with dashed lines in panels c and d). This set was used to calculate the simulated transcriptional activity and binding affinity from EAM as shown in Figure 5b, Figure 6b\u00a0and\u00a0e, and Figure 6\u2014figure supplement 1g\u2013i. (e) Domain stabilities and interaction energies estimated by the two methods are similar in sign and magnitude. To demonstrate robustness of the global minimization, experimental errors from the stability measurements were propagated through the model. Error bars represent the standard deviations of 10 independent minimizations. (f) Parameter estimates from both methods were used with the EAM to compute expected transcriptional activity and binding affinity. Reasonable agreements with experiment data were obtained from both methods.\n\nUsing measurements of transcriptional activities and binding affinities of the five isoforms (Figure 1 and Figure 1\u2014figure supplement 1a\u2013d), measurements of relative binding affinities of RA-linker-DBD and Linker-DBD constructs (Figure 3b), and measurements of conformational stabilities (Figure 2a and Figure 2\u2014figure supplement 1a) as constraints, quantitative estimates of the stabilities and coupling energies for each domain were obtained through unbiased comprehensive searches of parameter space (Figure 5\u2014figure supplement 1a). Importantly, the maximum likelihood parameters (shown in Figure 5\u2014figure supplement 1e) faithfully reproduce both the relative affinities and transcriptional activities for all five isoforms (Figure 5b). The search results demonstrated clear maximum likelihoods for each thermodynamic parameter (Figure 5\u2014figure supplement 1e), indicative of the qualitative correctness of the activating and repressing scheme outlined in Figure 4a. In particular, in all cases, the signs of the coupling energies between domains are preserved, that\u00a0is, both $\u0394g_{R\u2212D}$ and $\u0394g_{F\u2212D}$ are positive while $\u0394g_{R\u2212F}$ is negative (Figure 5\u2014figure supplement 1e), demonstrating the robustness and validity of the opposing frustration-based control mechanism underlying allostery in GR.\n\n### Model prediction and validation\n\nTo further test the model, we sought to identify and ablate the repression component of the mechanism and quantitatively evaluated the impact on the natural GR isoforms. To do this, we targeted the interaction between the R-domain of the A isoform (i.e. RA, residues 1\u201397) and the DBD (Figure 1 inset), by determining the impact of point mutations in the DBD on DNA binding affinity in the presence and absence of the tethered R-domain. For constructs containing only the DBD and the R-domain, DBD mutations could perturb either the stability of the DBD, the coupling between the DBD and the R-domain, or both. Thus, by expressing the mutant forms as linker-DBD and RA-linker-DBD constructs, using an inert linker to substitute for the F-domain (Figure 6a), the impact of the mutations could be clearly discerned. Mutations that affect stability of the DBD are predicted to affect the DNA-binding affinity of both constructs (Figure 6b, left). However, mutations that affect the coupling between the R-domain and the DBD are predicted to impact the DNA-binding affinity of only the RA-linker-DBD construct, leaving the activity of the linker-DBD construct unaffected (Figure 6b, right). Screening of conserved surface residues on the DBD (Figure 6\u2014figure supplement 1a), which did not significantly affect DBD stability or the coupling between the F-domain and DBD (Figure 6\u2014figure supplement 1b), revealed only three positions (i.e. C431, V435, and L436) that exhibited the expected signature of DBD residues that mediate coupling to the R-domain (Figure 6c and Figure 6\u2014figure supplement 1c\u00a0and\u00a0d). Consistent with these positions exerting their effects through a common mechanism, all three residues mapped to a conserved contiguous surface on the DBD (Figure 6d).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/30688/elife-30688-fig6-v3.jpg)\n\n**Figure 6.:** (a)\u00a0Schematic representation of the constructs used to identify residues on DBD involved in coupling to the R-domain. (b) EAM predicted changes in binding affinity for mutations that affect the stability of the DBD (left) or the coupling of the R-domain and the DBD (right) in the different constructs shown in a. (c) Experimental competitive transfection assays for single point mutants of both constructs shown in a. Error bars reflect uncertainty of the individual fits. (d) Cartoon of the proposed DBD surface (orange) involved in the coupling interaction with the R-domain. Shown also are the known DNA recognition helix (green helix) and the known dimerization interface (green loop). (e) Independent validation of the proposed coupling surface using the wild type and triple mutant of the A isoform, where the R-domain and the DBD are expressed in cis. The EAM predicted changes in transcriptional activity and DNA-binding affinity for mutations influencing the R-domain and the DBD coupling (from 25% to 100%) on A isoform (Model, left set of bars). Influence of the triple mutations (C431Y&V435A&L436A) on the transcriptional activity and the binding affinity obtained from the luciferase dosage curve of the A isoform (Experiment, right bars, detailed in Figure 6\u2014figure supplement 1e and f). Error bars reflect uncertainty of the individual fits. (f) Independent validation of the proposed coupling surface with the wild type and the triple mutant of the C3 isoform, with the R-domain expressed in trans. Dual luciferase assay showing the wild type and the triple mutant (i.e. C431Y/V435A/L436A) versions of the GR C3 isoform titrated with R-domain, expressed with a nuclear localization sequence and Flag tag. Error bars are 95% confidence intervals and the asterisks indicate differences that are significantly different (p<0.01) by a T-test with the Benjamini-Hochberg correction for multiple tests. The y-axis is normalized to the initial, 0 ng point for each dataset. The EAM predictions in Panels b and e utilize parameters described in Figure 5\u2014figure supplement 1c and d.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30688/elife-30688-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Sequence conservation analysis of the DBD among the GRs in different species and among all members in the steroid hormone receptor family. Above is the secondary structure annotation of the GR DBD. Red lines label mutations on DBD investigated in this study. (b) Influence on the transcriptional activity of single point mutations carried out within DBD, on the C3 isoform. Mutations (L422A, S425G, C431Y, V435A, L436A, L482Y and Q483E) did not influence DNA-binding affinity or the coupling between DBD and F-domain, as these mutations did not significantly decrease the transcriptional activity. (c) Competitive transfection assay testing mutations (L422A, S425G, C431Y, V435A, L436A, V449A, L482Y and T493L) identified in Panel b using the linker-DBD and RA-linker-DBD constructs. Curves are shown for the mutations with different effect on the two constructs. (d) EC50 was fitted from each competitive transfection curve (shown in c) and expressed as relative binding affinity to wild-type construct. (e) Luciferase assay dosage curves for the triple mutants A C431Y&V435A&L436A and C3 C431Y&V435A&L436A compared to their respective wild types A and C3. Curves are fitted to the data using the dose-response function, $F(C)=1+\\frac{A_{max}\u22121}{1+(EC_{50}/C)^{P}}$. Data fitting details are described in the Supplementary Figure 1a legend. (f) Maximum transcriptional activity and binding affinity of the triple mutants of A and C3 isoforms expressed as relative to their wild types. The effect on transcriptional activity and binding affinity of A and C3 isoforms by mutating residues on DBD can be predicted by the EAM for three scenarios: decreasing the DBD stability (g), decreasing the coupling between the F-domain and the DBD (h), and decreasing the coupling between the R-domain and the DBD (i). Comparing the experimental result (shown in panel f) with the EAM predictions confirms that the triple mutations C431Y/V435A/L436A significantly decrease the coupling between the R-domain and the DBD.\n\nTo qualitatively and quantitatively test the frustration-based control mechanism, the triple mutation (C431Y/V435A/L436A) was introduced into the full-length GR A isoform. Because the mutation should decrease the stabilizing effect of binding DNA on the R-domain, which in turn, should lower the destabilizing effect on the F-domain, the model predicts the counter-intuitive result whereby the activity of the triple mutant should increase, while the DBD-DNA binding affinity should decrease (Figure 6e Model). Importantly, such a prediction is the direct result of the frustration in the system and would represent a compelling argument for the competing energetic couplings shown in Figure 4a.\n\nTrue to the prediction (Figure 6e Experiment), the effect of the triple mutant is a decrease in affinity for DNA while concomitantly increasing the transcriptional activity. This result is particularly important because while the modulatory role of the residues we refer to as the R-domain has been known (Bender et al., 2013), previous interpretations attributed the effect to simple steric occlusion (Bender et al., 2013). Our results unequivocally demonstrate that\u00a0the R-domain not only negatively affects the F-domain (Figure 2a and b) but also positively affects the wild-type DBD (Figure 3), increasing the affinity of the DBD for DNA (Figure 3), and it does so in a manner that is directly related to the stabilities and coupling energies in the system.\n\nFurthermore, the facts that the three residues implicated in the coupling were independently identified through mutational analysis (Figure 6c and Figure 6\u2014figure supplement 1b\u2013d), but nonetheless mapped to a conserved contiguous surface on the DBD (Figure 6d), strongly supports a model whereby these residues affect the coupling between the DBD and the R-domain through a common mechanism involving direct interactions between domains. Further supporting this notion, titration of the DBD of the C3 isoform and the C3 triple mutant (C431Y&V435A&L436A) with the R-domain (expressed in trans), using the luciferase assay as a reporter, clearly shows a greater concentration dependence of activity for the wild-type C3 isoform over the triple mutant (Figure 6f). This result indicates that the R-domain can exert its stabilization effect on the DBD through mass action, suggestive of a direct interaction involving residues C431, V435, and L436. We note that although the combination of comparatively weak coupling energies (based on the maximum likelihood parameter estimation for $\\Deltag_{R-D}$; Fig. S3e) and poor solubility of both the DBD and R-domains precluded attempts to structurally characterize the interaction using NMR, such limitations have not adversely affected our efforts to rationally intervene. Indeed, Figure 6 reveals that the coupling between the R-domain and the DBD, identified in isolation (Figure 3), could not only be leveraged into a comprehensive frustration-based model that quantitatively captures the relative binding and activity of all the GR isoforms (Figure 5b), but could also be rationally manipulated, and the opposing consequences on DNA binding and transcriptional activity predictably altered (Figure 6e). Thus, although physical basis of the couplings between the domains awaits future studies, the fact that GR has evolved the ability to produce isoforms that utilize different degrees of energetic frustration opens entirely new avenues for investigating regulation in IDPs.\n\nThe regulatory role of the isoform-specific ID R-domain in GR is especially important in light of the observation that the DNA sequences coding for ID regions are enriched in splice sites (Buljan et al., 2012), leading to a high degree of variability in the ID regions of the resultant proteins. The studies presented here provide a functional explanation. Alternative splicing, like the alternative translation start sites of GR described here, can produce proteins with different degrees of frustration in their ID regions, and thus differing activities. In addition, isoforms may also have different combinations of post-translational modification sites, which are also enriched in ID segments (Bah and Forman-Kay, 2016). By combining regulatory elements possessing different stabilities with different numbers and types of modification sites, ID proteins can potentially regulate not only the efficiency of the resultant protein, as shown here for GR, but also how that activity can be tuned by different types of modifications (Motlagh et al., 2014).\n\n### Conclusions\n\nWe have shown that GR produces different isoforms, which have different DNA-binding affinities and transcriptional activities that are uncorrelated to each other. Our results show that this uncorrelated behavior is facilitated through \u2018energetic frustration\u2019, wherein opposing energetic couplings compete to modulate the overall response. Recent studies reveal that in addition to being facilitated by structured proteins, allostery can also be mediated by dynamic and even ID proteins (Freiburger et al., 2011; Motlagh et al., 2014; Petit et al., 2009; Popovych et al., 2006; Tzeng and Kalodimos, 2009, 2012). Within these ubiquitous ID systems, significant heterogeneity, both in the apo and ligand-bound states, produces ensembles that cannot be treated using classic deterministic or structure-based allosteric models. Instead, extension of these classic models to account for positive and negative couplings between different regions provides a framework for understanding not only how ID sequences communicate with other structured and ID sequences, but also how such heterogeneity can produce complex regulatory strategies, such as the frustration-based mechanism identified here.\n\n## Materials and methods\n\n### Plasmids\n\nDNA 2.0 (Menlo Park, CA) synthesized the plasmid used to express the A isoform of human GR in U-2 OS cells. The construct sequence was codon optimized and inserted into the PJ603 mammalian expression vector under CMV promoter control. Plasmids to express isoforms B, C1, C2, C3, D1, D2, D3 and DBD were made by inserting the codons for each respective isoform amplified from A isoform vector into the NheI and XhoI sites of the PJ603 vector. The GR F-Gal4 DBD plasmid was also produced by DNA 2.0 using the PJ603 plasmid backbone. The RA-linker-DBD (equivalent to RA-11aa linker-DBD)/RA-20aa linker-DBD plasmid was made using a PCR that deleted the codons for GR 98\u2013420 from the GR A isoform plasmid, then digesting with BamHI and KpnI, and ligating the sticky ends to an oligo coding for the 11aa linker GTGGSGGSGGS/20 aa linker GTGGSGGSGGSGGSGGSGGS. Plasmids for RA\u039486\u201397-linker-DBD, RA\u039427\u201397-linker-DBD, RB -linker-DBD, RC1 -linker -DBD, RC2 -linker and linker-DBD were made by inserting the codons for each construct amplified from RA-11aa linker-DBD plasmid into the NheI and XhoI site of PJ603 vector. For the R domain-nuclear localization sequence-Flag construct, a GeneBlock was synthesized by IDT (Coralville, IA)\u00a0to contain the GR R-region (1\u201397 a.a.), a four amino acid GSGS linker, the GR nuclear localization sequence (488\u2013505 a.a.), a GSGSGS linker, and the FLAG tag (DYKDDDDK). This GeneBlock was restriction digested with NheI and XhoI, then inserted into the pJ603 vector (DNA2.0). The FLAG tag was used for immunostaining to verify nuclear localization (data not shown). All the point mutations on GR constructs were made by site directed mutagenesis (Hemsley et al., 1989).\n\nTo measure transcriptional activity in the dual luciferase reporter assay, two tandem full length GREs (5\u2019-aattcAGAACAggaTGTTCTgagatccgtagcAGAACAggaTGTTCTgagatccgtagcg \u22123\u2019) were cloned into the EcoRI and BamHI sites in the promoter region of pGluc-miniTK vector (NEB, Ipswitch, MA), which expresses a secreted Gaussia luciferase (Tannous et al., 2005). For the competitive transfection assay, four tandem half-site GREs (5\u2019-aattcAGAACAggagagatcgtagc AGAACAggaagatccgtagcAGAACAggagagatccgtagcAGAACAggaagatccgtagcg-3\u2019) were cloned into the promoter region of pGluc-miniTK vector. The pCluc-miniTK2 vector (NEB), expressing a secreted Cypridina luciferase (Nakajima et al., 2004) independent of GR regulation, was utilized as an internal control in the transfection to account for differences in cell density and transfection efficiency in each well.\n\nDNA 2.0 also synthesized the plasmid for bacterial expression of the two-domain GR construct. Codons for the two-domain construct of A isoform was optimized for bacterial cell expression and inserted into the PJ411 expression vector under T7 promoter control. Plasmids to express isoforms B, C1, C2, C3, D1, D2 and D3 in E.coli were made by inserting the codons for each respective isoform amplified from A isoform plasmid into the NdeI and XhoI sites of the PJ411 vector.\n\n### Protein expression and purification\n\nExpression, purification and storage of the two-domain constructs for the eight GR translational isoforms were the same as for the single N-terminal domain construct, as described previously (Li et al., 2012), except for the following modifications in the purification steps. The lysis buffer was composed of 100 mM NaH2PO4, 10 mM Tris, 500 mM NaCl, 20 mM imidazole, pH 8.0. The wash buffer was the lysis buffer containing 60 mM imidazole, and the elution buffer was the lysis buffer containing 200 mM imidazole.\n\n### DNA-binding affinity monitored by fluorescence anisotropy change\n\nFluorescent Oligos containing half site GRE (5\u2019\u22126-FAM gcgcAGAACAggacgcg-3\u2019 and 5\u2019-cgcgtccTGTTCTgcgc-3\u2019) were synthesized by IDT with HPLC grade purification and annealed with each other to get double stranded 6FAM-labeled half site GRE. The binding experiments of GR two domain constructs with the half site GRE were carried out in the following buffer: 10 mM HEPES (pH7.6), 80 mM NaCl, 1 mM EDTA, 5 mM MgCl2, 1 mM DTT, 200 ug/mL BSA and 5 \u03bcM double strand control oligo (5\u2019-GCGCCATATGATACGCG-3\u2019). For each data point, 25 nM 6-FAM-labeled half site GRE was incubated with from 0 \u03bcM to 10 \u03bcM GR two-domain construct at 22\u00b0C for 30 min. Fluorescence anisotropy was measured using an Aviv ATF 105 fluorometer equipped with polarizers. A \u2018sub micro\u2019 fluorometer cell with 150 \u03bcL of solution was allowed to rest at 22\u00b0C (Santa Cells) for 2 min to allow for temperature stabilization and then excited at 495 nm. Anisotropy at 521 nm was recorded as a function of GR construct concentration and fitted with a single-site-binding model.\n\n### Osmolyte TMAO induced protein folding transitions\n\nTMAO-induced protein folding transitions were described previously (Li et al., 2012).\n\n### Cell culture\n\nU-2 OS cells (American Type Culture Collection, Manassas, VA) were maintained in modified McCoy's 5a medium (Corning Cellgro, Tewksbury, MA) supplemented with 10% fetal bovine serum and 100 U/mL penicillin and 100 \u00b5g/mL streptomycin. To transfect U-2 OS cells at about 80\u201390% confluence, X-tremeGENE HP DNA transfection reagent (Roche, Indianapolis, IN) was used at 2 \u03bcl per 1 \u03bcg DNA according to the manufacturer\u2019s manual.\n\n### Transcriptional activity by dual luciferase reporter assay\n\nFor the transcriptional activity dosage curve, 40 ng of pGluc-miniTK vector with two tandem full length GREs cloned in the promoter region, 40 ng of pCluc-miniTK2 and up to 5 ng (saturating) of GR expression vector were co-transfected into U-2 OS cells on 96-well plates. For the competitive transfection assay, 40 ng of pGluc-miniTK vector with four tandem half site GREs cloned in the promoter region, 40 ng of pCluc-miniTK2, 3 ng of expression vector for C3 isoform, and up to 16 ng of plasmid coding for one of the competitors were co-transfected into U-2 OS cells on 96-well plates. For titration of the C3 isoform wild type and C3 C431Y&V435A&L436A mutant with the R domain-nuclear localization sequence-Flag construct, the method was the same as the competitive transfection assay described above, except up to 12 ng of the R domain-nuclear localization sequence-Flag construct plasmid was used in the titration. After 48 hr, Gaussia Luciferase activity and Cypridina Luciferase activity were measured with the BioLux Gaussia Luciferase Assay Kit (NEB) and the BioLux Cypridina Luciferase Assay Kit (NEB), respectively, on a TriStar LB 942 Multidetection Microplate Reader (Berthold Technologies GmbH & Co. KG, Bad Wildbad, Germany), according to the manufacturer\u2019s protocols. In each experiment, the Gaussia luciferase activity (normalized by the Cypridina luciferase activity) was measured in triplicate and averaged. The dosage and competitive transfection curves were fitted with dose response curves using Origin.\n\n### Western blot\n\nU-2 OS cells were plated on 6-well plates at a density of 5\u00a0\u00d7\u00a0105 cells per well. After 18 hr, 50 ng of GR expression vector and 450 ng of salmon sperm DNA (Invitrogen, Carlsbad, CA,\u00a0transfection boosting reagent) were transfected into each well with X-tremeGENE HP DNA transfection reagent (Roche), following the manufacturer\u2019s protocol. The medium was changed once 24 hr post transfection. After 48 hr, the cells were scraped from each well with PBS, and pelleted by centrifuging at 1500 rpm. For lysis, 50 \u03bcL of lysis buffer (8 M urea, 20 mM Tris-HCl, 500 mM NaCl, 1 mM Na2EDTA, 1 mM EGTA, 1% Triton, 2.5 mM sodium pyrophosphate, 1 mM beta-glycerophosphate, 1 mM Na3VO4 and 1 \u00b5g/ml leupeptin, pH 7.5) was added to each cell pellet. To reduce the viscosity, cells were passed through a 26G 3/8\u2019\u2019 syringe needle 10 times and then the cell lysate was centrifuged at 14000 rpm for 30 min. Supernatant was collected and the total protein concentration was measured by Bradford assay (Bio-Rad, Hercules, CA). In each well of a 4\u201315% Mini-PROTEAN TGX Precast Gel (Bio-Rad), 5 \u00b5g of total protein was loaded, and separated in Tris/Glycine/SDS gel running buffer. Transfer of the protein from the SDS page gel to PVDF film was done in the transfer buffer (25 mM Tris-HCl, pH 8.3, 192 mM glycine, 20% methanol) under 120V for 15 min. After blocking in 5% nonfat milk in PBS with 0.1% Tween-20 (PBST) for 1 hr, the PVDF film was then incubated at 4\u02daC overnight with 10000 fold diluted primary antibody for GR (BD Transduction Laboratories, #611226, San Jose, CA) or p150glued (BD Transduction Laboratories, #610473), which served as loading control. Both antibodies were diluted into the same 5% nonfat milk in PBST. The next morning, after washing with PBST buffer for three times, the PVDF film was incubated in the 20000 fold diluted HRP-linked anti-mouse IgG (GE healthcare, NA931, Chicago, IL), also in the 5% nonfat milk in PBST. The detection was done with Amersham ECL Prime Western blotting reagent (GE heathcare, RPN2232) and autoradiography film (Denville Scientific).\n\n### Immunostaining\n\nU-2 OS cells were plated on 6-well plates with 15 mm round German coverslips. All the culture and transfection procedures are the same as done for the cells for western blot experiments. After 48 hr, cells were rinsed with PBSM (PBS with 2 mM MgCl2) three times, and fixed with 4% paraformaldehyde in PBSM at room temperature for 10 min. Afterwards, each coverslip was rinsed with PBSM three times again, and quenched with 50 mM NH4Cl in PBSM. Then the slide was placed in PBSTB (PBS with 0.1% Triton X-100, 1% BSA) for 30 min at room temperature to permeabilize cells and block nonspecific binding. Thereafter, the slide was incubated for 1 hr at room temperature with primary rabbit antibody for GR (cell signaling, #3660), which was 5000 fold diluted in PBSTB. Then the slide was washed three times with PBSM and incubated for 30 min at room temperature in the dark with the Alexa Fluor 488 Goat Anti-Rabbit IgG (Invitrogen, Carlsbad, CA), which was 600 fold diluted in PBSTB. Next the slide was incubated for 10 min at room temperature in the dark in PBSM with 0.2 \u03bcg/mL DAPI (Invitrogen) and 5 unit/mL Rhodamine Phalloidin (Invitrogen) to stain the nuclei and F-actin respectively. After that, each slide was washed with PBSM twice and mounted onto a microscope slide with Fluoromount (Sigma, St. Louis, MO), and kept in the dark for drying.\n\nImages were taken with an inverted light microscope (Axiovert 200, JHU Integrated Imaging Center). All images were taken the same day using the same gain, exposure times, and filter configurations (DAPI, FITC, and Texas Red filters). The images were analyzed using ImageJ (Staal et al., 2004).\n\n### Ensemble allosteric model\n\nThe Ensemble Allosteric Model (EAM) and its usage have been described in detail previously (Hilser and Thompson, 2007; Hilser et al., 2012; Motlagh et al., 2014).\n",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "77245f4d-8cd8-41f9-af7c-eaeeafa4603b",
+      "submission_id": "4727cd8a-39bb-496e-961b-ca6f300e712a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- John Kuriyan, University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.30688.016](https://doi.org/10.7554/eLife.30688.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Genetically tunable frustration controls allostery in an intrinsically disordered transcription factor\" for consideration by eLife. Your article has been very favorably reviewed by three peer reviewers. Indeed, it relatively rare for us to see such consistency in praise for a paper under evaluation.\n\nThe evaluation has been overseen by John Kuriyan as the Reviewing Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Rohit V Pappu (Reviewer #1); David Eliezer (Reviewer #2).\n\nThe manuscript needs revision, but as you will see, we are only asking for textual changes. None of the issues raised are considered to be particularly serious, and you should use your best judgement as to how to address them.\n\nOverall comments:\n\nReviewer 1\n\nThis work by Hilser and coworkers continues their efforts to uncover the role of intrinsically disordered regions in allostery as exemplified in the GR family of hormone regulated transcription factors. This MS is well written, clear, and easy to follow despite the numerous constructs that one has to keep in mind. The major theme in this work, which is a continuation of the ensemble allostery model for TFs with IDRs, is the finding that different GR isoforms, distinguished entirely by differences in their N-terminal IDRs, engender different transcriptional activities entirely through differences in coupling free energies among different domains. This result shines through because the DBDs are identical in all of the constructs, and yet the authors observe a clear impact of changes to the N-terminal IDR on DNA binding and on transcriptional activity, although there is no correlation between the DNA binding affinities and activities. This family of TFs is an elegant system for dissecting the impact of IDR mediated allostery and the model appears to do a good job of recapitulating the measured activities.\n\nOverall, this is a very strong paper, clearly written, espousing coherent concepts, and highlighting novel roles for IDRs, which go beyond speculation and anchor the findings in concrete data, that are driven by predictions. In many ways, this work exemplifies the best of science and the integrative efforts of clearly formulated statistical physics, biophysical experimentation, and evolutionary principles.\n\nReviewer 2\n\nThis paper describes a study to document the previously predicted phenomenon of allostery involving disordered protein regions using the glucocorticoid receptor (GR) as a model system. GR contains two functionally separable disordered regions, each of which is shown experimentally to interact favorably with the DNA-binding domain (DBD), but to interact unfavorably with each other, resulting in a frustrated system in which activity, mediated by the F domain, is enhanced directly by the DBD but is repressed indirectly via DBD-enhanced repression by the R domain. Using the model previously developed to model allostery in such system, featuring the individual stabilities of the domains and the coupling energies between each pair of domains, the authors are able to generate results that are in delightful agreement with the experimental measurements on differently spliced isoforms of GR in which the R region is present to different degrees. Even more impressively, a series of mutations is identified which are able to disrupt the coupling between the DBD and the R domain, which then show precisely the predicted effects on activity, both in cis and in trans.\n\nThis is a lovely, clear paper that beautifully demonstrates the validity and biological relevance of the model previously developed by the authors for allostery involving disordered protein regions. This is a conceptually important extension of the classical models of allostery, and in light of the ever growing importance of disordered protein regions, is a critical contribution to our understanding of protein function regulation.\n\nReviewer 3\n\nIn this study by Li et al. the authors have investigated the role of regions of the intrinsically disordered amino-terminal domain of the glucocorticoid receptor in allosteric regulation. Specially they have tested experimentally and further validated their previously published 'ensemble allosteric model'.\n\nThis is an excellent study and significantly contributes to our growing understanding of the role of intrinsically disordered structure and nuclear receptor signalling. The authors have used a range of molecular and biophysical methods to investigate receptor-dependent transcription, DNA binding affinity and protein folding.\n\nComments to address:\n\n1) Could the title be made somewhat more accessible? The average eLife reader may not be \"tuned\" to the concept of \"frustration\", and there is some concern that the title may not draw in all readers who should be interested in this work.\n\n2) The terminology regarding frustration should be clarified and improved. First, several declarations are made about the history of frustration that are inaccurate. The triangular Ising net was introduced by Wannier in 1950. The discovery of frustration in ice was explained by Pauling in 1935. And the term \"energetic frustration\" is a concoction. In condensed matter physics, the term is \"geometric frustration\" or just \"frustration\". There is a lot more to frustration theory than is alluded to here. It would be helpful to have a paragraph laying out the frustration models that the authors are connecting to, explain why this is a useful concept, and map back to this model with their data. Otherwise, there is concern that eLife readers may not find the analogies useful.\n\n3) In the context of comment 2) above, it would help to clarify how the classification into frustrated vs. non-frustrated configurations was achieved in Figure 4. It looks like there are configurations that are erroneously labeled as non-frustrated ones and this is why the precepts of the model would be useful to clarify.\n\n4) The paper does not clearly explain how the model is able to differentiate between isoforms that feature different length deletions of the R domain (isoforms A, B, C1, C2 and C3). As far as I can tell, the model only accounts for the presence of the R domain (isoform A) or its absence (isoform C3), yet predictions and experimental results are shown (Figure 5) for isoforms C1, C2 and C3 as well. Clarification of how this was accomplished would be welcome.\n\n5) Many of the reported errors are noted to represent the uncertainty of the curve fits to the date, but details regarding how the curve fitting was performed and how the errors were then extracted would be welcome in the supplementary materials.\n\n6) Regarding the choice of response elements in the different transcription and DNA binding experiments: The authors have used a standard reporter gene containing palindromic glucocorticoid response elements (GRE). However, in the transcription competition studies and DNA binding studies the focus appears to have been on half-sites (four or single respectively). The rationale for this is not clear and the binding affinity to a half site is almost certainly different from a 15 bp GRE. This needs to be made clear and the rationale for using half-sites explained and the broader consequences of the results to glucocorticoid receptor transcription. Did the authors wish to avoid dimerization of receptor isoforms complicating the measurements? Please clarify.\n\n7) It would have been nice to see data for bona fide GREs from known glucocorticoid target genes, as these a likely to exhibit different binding affinities and/or structures, but of course there has to be a balance with technical consideration. However, the authors could comment on the action of the glucocorticoid receptor on negative GREs (ie Hua et al., 2016) with regards their allosteric model (Figure 4). The 'non-frustrated' configurations would appear to be more reflective of known glucocorticoid receptor action?\n\n8) Figure 6. Could the data for C3 and DNA binding domain mutant C3 be shown in part 'E'? The prediction would be that C3 activity would be immune to the triple mutation. This seems to be shown in part 'f' 0 sample, but it would be nice to see it clearly shown as it provides further support for the author's model.\n",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b0a23800-bf41-4ae5-a961-a90a9d49c1d3",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C1",
+      "claim": "Intrinsically disordered proteins (IDPs) lack stable tertiary structure but play a central role in signaling through allostery.",
+      "claim_type": "EXPLICIT",
+      "source": "Intrinsically disordered proteins (IDPs) present a functional paradox because they lack stable tertiary structure, but nonetheless play a central role in signaling, utilizing a process known as allostery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known characteristic of IDPs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "ab3a3819-9957-4782-902b-60f579b23d29",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C2",
+      "claim": "Allostery in structured proteins has historically been interpreted in terms of propagated structural changes induced by effector binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Historically, allostery in structured proteins has been interpreted in terms of propagated structural changes that are induced by effector binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established historical understanding of allostery.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "a8d66a0f-49eb-4e97-81c3-aa5aa9cd0127",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C3",
+      "claim": "Human glucocorticoid receptor tunes signaling in vivo by producing translational isoforms differing only in the length of the disordered region.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that human glucocorticoid receptor tunes this signaling in vivo by producing translational isoforms differing only in the length of the disordered region, which modulates the degree of frustration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a demonstrated finding in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "f86a736a-9575-4ffb-bd61-6c0e65f425bd",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C4",
+      "claim": "An IDP can allosterically control function by simultaneously tuning transcriptional activation and repression using energetic frustration.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show a mechanism by which an IDP can allosterically control function by simultaneously tuning transcriptional activation and repression, using a novel strategy that relies on the principle of 'energetic frustration'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a key finding demonstrated in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "ccd4fa69-dd2d-4f29-929c-2395e68cfc36",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C5",
+      "claim": "Allostery is widely observed in intrinsically disordered proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "More recent studies reveal that allostery is not restricted to structured proteins. It is widely observed in intrinsically disordered (ID) proteins, polypeptides, or regions therein, that lack stable tertiary structure (Ferreon et al., 2013; Garcia-Pino et al., 2010; Lum et al., 2012; Motlagh et al., 2014; Sevcsik et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "32dca014-d5b4-4d19-8f00-9fc4ae51f721",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C6",
+      "claim": "ID regions are hyper-abundant in known allosteric proteins such as transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, ID regions are hyper-abundant in known allosteric proteins such as transcription factors (Gronemeyer and Bourguet, 2009; Liu et al., 2006), suggesting that allostery involving ID sequences may represent a major regulatory paradigm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "ecb69712-a9c2-4c9b-9dbc-e3e2626e63ae",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C7",
+      "claim": "The mechanism by which ID proteins facilitate allostery is not known.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the existing evidence, however, the mechanism by which ID proteins facilitate allostery is not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "5991084f-e929-4b49-9503-40d093e83f29",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C8",
+      "claim": "Coupled folding and binding in different ID domains can produce complex coupling mechanisms resulting from simultaneous tuning of both activating and repressing sub-ensembles.",
+      "claim_type": "EXPLICIT",
+      "source": "This model predicts that coupled folding and binding in different ID domains could produce complex coupling mechanisms that result from the simultaneous tuning of both activating and repressing sub-ensembles within the overall conformational ensemble (Hilser et al., 2006, 2012; Motlagh et al., 2014), a process of 'energetic frustration' akin to the well-known physical concept of 'geometric frustration'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a previously developed mathematical model cited in the text.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "67387e97-c816-41c0-9f69-897e36d1fb72",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C9",
+      "claim": "Geometric frustration describes a physical system's inability to simultaneously minimize competing interaction energies between its components in mean field theory.",
+      "claim_type": "EXPLICIT",
+      "source": "In condensed matter physics, 'geometric frustration' describes a physical system's inability to simultaneously minimize the competing interaction energies between its components in mean field theory (Vannimenus and Toulouse, 1977; Villain, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition from condensed matter physics supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "42168395-2dfd-4a55-ac7a-19f872ed1a79",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C10",
+      "claim": "Frustration theory has been invaluable in understanding magnetic and superconducting systems, circuits, protein folding, and gene networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Frustration theory has been invaluable in understanding magnetic and superconducting systems (Vannimenus and Toulouse, 1977), circuits (Wang et al., 2006), protein folding (Bryngelson and Wolynes, 1987), and even gene networks (Krishna et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "b36ec396-c914-497f-9d92-bd417f36a6af",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C11",
+      "claim": "It is not known whether a single gene product could encode tunable activity based on energetic frustration.",
+      "claim_type": "EXPLICIT",
+      "source": "However, whereas numerous biological networks can utilize multiple components (e.g. repressors and activators) to control overall activity, it is not known whether a single gene product could encode tunable activity based on an analogous form of frustration, as theory predicts (Hilser et al., 2006; Hilser et al., 2012; Motlagh et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "421a85db-7813-4bb9-979e-e6325b29f2f2",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C12",
+      "claim": "The human glucocorticoid receptor is a member of the steroid hormone receptor family of transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The GR is a member of the steroid hormone receptor (SHR) family of transcription factors and plays key roles in organ development, metabolite homeostasis, and the responses to stress and inflammation (Griekspoor et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "effb3a91-2c3c-4a5d-9492-bce4b396d88c",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C13",
+      "claim": "GR plays key roles in organ development, metabolite homeostasis, and the responses to stress and inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "The GR is a member of the steroid hormone receptor (SHR) family of transcription factors and plays key roles in organ development, metabolite homeostasis, and the responses to stress and inflammation (Griekspoor et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "d99e346d-2f42-418f-8d82-c7e9da9fcfeb",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C14",
+      "claim": "Three major domains segregate the GR's primary functions: the DNA-binding domain (DBD), ligand-binding domain (LBD), and N-terminal domain (NTD).",
+      "claim_type": "EXPLICIT",
+      "source": "Three major domains segregate the GR's primary functions (Hilser and Thompson, 2011). The DNA-binding domain (DBD) and ligand-binding domain (LBD) are well-structured and are responsible for interacting with DNA (i.e. GR response element) and the steroid hormone (e.g. cortisol), respectively (Hilser and Thompson, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "e2c7ca8f-cb62-48b9-bb2b-fbadaa760d79",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C15",
+      "claim": "The DBD and LBD of GR are well-structured.",
+      "claim_type": "EXPLICIT",
+      "source": "The DNA-binding domain (DBD) and ligand-binding domain (LBD) are well-structured and are responsible for interacting with DNA (i.e. GR response element) and the steroid hormone (e.g. cortisol), respectively (Hilser and Thompson, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "f81d41cd-e113-4254-94cb-e12718192efd",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C16",
+      "claim": "The DBD is responsible for interacting with DNA (GR response element).",
+      "claim_type": "EXPLICIT",
+      "source": "The DNA-binding domain (DBD) and ligand-binding domain (LBD) are well-structured and are responsible for interacting with DNA (i.e. GR response element) and the steroid hormone (e.g. cortisol), respectively (Hilser and Thompson, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "a2edf35b-ac8b-431a-a3f6-a6c0752bc5ce",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C17",
+      "claim": "The LBD is responsible for interacting with steroid hormones such as cortisol.",
+      "claim_type": "EXPLICIT",
+      "source": "The DNA-binding domain (DBD) and ligand-binding domain (LBD) are well-structured and are responsible for interacting with DNA (i.e. GR response element) and the steroid hormone (e.g. cortisol), respectively (Hilser and Thompson, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "05ce617f-392f-4c06-95a8-c8b6611fbdb5",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C18",
+      "claim": "The N-terminal domain (NTD) of GR consists of the first 420 amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal domain (NTD), which consists of the first 420 amino acids, contains the activation function 1 core region (i.e. AF1c, GR 187\u2013244), which is required for the recruitment of cofactors necessary for transcriptional activation (Dahlman-Wright et al., 1994; Ford et al., 1997) and full transcriptional potency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a structural characteristic of GR.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "9eb27789-1341-4ccb-98a4-223b35dcedf5",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C19",
+      "claim": "The AF1c region (GR 187\u2013244) is required for the recruitment of cofactors necessary for transcriptional activation and full transcriptional potency.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal domain (NTD), which consists of the first 420 amino acids, contains the activation function 1 core region (i.e. AF1c, GR 187\u2013244), which is required for the recruitment of cofactors necessary for transcriptional activation (Dahlman-Wright et al., 1994; Ford et al., 1997) and full transcriptional potency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "705faa3e-8632-49df-ae77-ac84a6daf042",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C20",
+      "claim": "The NTD of GR is intrinsically disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the LBD and DBD, the NTD of GR is intrinsically disordered (Hilser and Thompson, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "a2753ddb-f0b8-400f-8c10-87f2dd5f5ddb",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C21",
+      "claim": "Five active isoforms among the total of eight translational isoforms of GR have been discovered.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, five active isoforms (Figure 1, Inset) among the total of eight translational isoforms of GR (Figure 1\u2014figure supplement 1), differing only in the lengths of the ID NTDs have been discovered (Lu and Cidlowski, 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation and references to figures showing the isoforms.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "17fd6c1e-3559-495b-b97a-c8a49d7c7aab",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C22",
+      "claim": "GR translational isoforms differ only in the lengths of their intrinsically disordered NTDs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, five active isoforms (Figure 1, Inset) among the total of eight translational isoforms of GR (Figure 1\u2014figure supplement 1), differing only in the lengths of the ID NTDs have been discovered (Lu and Cidlowski, 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation and references to figures.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "c462dd37-e7ce-4644-acf5-992b5c4da2e7",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C23",
+      "claim": "GR isoforms differ in their relative activities.",
+      "claim_type": "EXPLICIT",
+      "source": "These isoforms differ in their relative activities (Bender et al., 2013), tissue distributions (Lu and Cidlowski, 2005; Lu and Cidlowski, 2006), and regulatory specificities (Bender et al., 2013; Cao et al., 2013; Lu and Cidlowski, 2005; Lu and Cidlowski, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "b3602460-fb2e-476a-b44f-8919076adfb0",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C24",
+      "claim": "GR isoforms differ in their tissue distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "These isoforms differ in their relative activities (Bender et al., 2013), tissue distributions (Lu and Cidlowski, 2005; Lu and Cidlowski, 2006), and regulatory specificities (Bender et al., 2013; Cao et al., 2013; Lu and Cidlowski, 2005; Lu and Cidlowski, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "f32be13c-47aa-4264-ac11-030e933a6ba9",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C25",
+      "claim": "GR isoforms differ in their regulatory specificities.",
+      "claim_type": "EXPLICIT",
+      "source": "These isoforms differ in their relative activities (Bender et al., 2013), tissue distributions (Lu and Cidlowski, 2005; Lu and Cidlowski, 2006), and regulatory specificities (Bender et al., 2013; Cao et al., 2013; Lu and Cidlowski, 2005; Lu and Cidlowski, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "143ae55f-86ce-4bc8-ae9f-b01309ec10ce",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C26",
+      "claim": "Binding different steroid molecules produces a variety of structural changes within the LBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the effect of binding either different steroid molecules (Pandit et al., 2002; Pfaff and Fletterick, 2010) or different DNA sequences (Meijsing et al., 2009) is known to produce a variety of structural changes within their respective binding domains, how such binding events are differentially propagated to the ID NTD of each isoform, and subsequently translated into functional changes, is not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "a38c929d-b842-418d-84ed-0713138c9ac0",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C27",
+      "claim": "Binding different DNA sequences produces a variety of structural changes within the DBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the effect of binding either different steroid molecules (Pandit et al., 2002; Pfaff and Fletterick, 2010) or different DNA sequences (Meijsing et al., 2009) is known to produce a variety of structural changes within their respective binding domains, how such binding events are differentially propagated to the ID NTD of each isoform, and subsequently translated into functional changes, is not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "50265810-7a08-4a74-bc62-bd812f738137",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C28",
+      "claim": "How binding events are differentially propagated to the ID NTD of each GR isoform and translated into functional changes is not known.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the effect of binding either different steroid molecules (Pandit et al., 2002; Pfaff and Fletterick, 2010) or different DNA sequences (Meijsing et al., 2009) is known to produce a variety of structural changes within their respective binding domains, how such binding events are differentially propagated to the ID NTD of each isoform, and subsequently translated into functional changes, is not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "7233e83b-ceab-4b2b-baac-0f980bdfc9ec",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C29",
+      "claim": "It is not clear whether and how structured domains like the DBD can both receive and transmit allosteric signals to disordered domains like the NTD of GR.",
+      "claim_type": "EXPLICIT",
+      "source": "Fundamentally, it is not clear whether and, if so, how structured domains like the DBD can both receive and transmit allosteric signals to disordered domains like the NTD of GR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fundamental question addressed by the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "b74d5514-5065-4950-bd94-2e4b8a9a43af",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C30",
+      "claim": "The similarity between the relative transcriptional activities of the different two-domain isoforms and full-length three-domain isoforms suggests that the LBD does not qualitatively impact communication between the DBD and the NTD.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity between the relative transcriptional activities of the different two-domain isoforms studied here and those of the full-length three-domain isoforms studied previously (Bender et al., 2013; Lu and Cidlowski, 2005) (Figure 1 and Figure 1\u2014figure supplement 1a and b''), suggests that although the LBD affects the magnitude of activity enhancement (Godowski et al., 1987; Hollenberg and Evans, 1988), it does not appear to qualitatively impact the communication between the DBD and the NTD in each isoform.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on comparison of experimental data with prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "aae7c38f-7459-4f28-b7c4-afc037f6b49f",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C31",
+      "claim": "The LBD affects the magnitude of activity enhancement in GR.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity between the relative transcriptional activities of the different two-domain isoforms studied here and those of the full-length three-domain isoforms studied previously (Bender et al., 2013; Lu and Cidlowski, 2005) (Figure 1 and Figure 1\u2014figure supplement 1a and b''), suggests that although the LBD affects the magnitude of activity enhancement (Godowski et al., 1987; Hollenberg and Evans, 1988), it does not appear to qualitatively impact the communication between the DBD and the NTD in each isoform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "19f3e7a9-af30-4047-be73-96f55b3cff7b",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C32",
+      "claim": "The affinities of GR isoforms for DNA vary despite having identical DBDs.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the affinities of the isoforms for DNA vary, despite having identical DBDs, indicating that the NTD of each isoform differentially communicates with its respective DBD (Figure 1 and Figure 1\u2014figure supplement 1c\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "6939a4e7-10df-45a8-beda-453e6b42e295",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C33",
+      "claim": "The NTD of each GR isoform differentially communicates with its respective DBD.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the affinities of the isoforms for DNA vary, despite having identical DBDs, indicating that the NTD of each isoform differentially communicates with its respective DBD (Figure 1 and Figure 1\u2014figure supplement 1c\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the experimental observation that DNA affinities vary despite identical DBDs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "6ce0003f-dd4d-4189-86ca-8176f98365e5",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C34",
+      "claim": "The GR C3 isoform (98\u2013525) is almost five times more active than the full-length GR A isoform (1\u2013525).",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the GR C3 isoform (i.e. 98\u2013525) is almost five times more active than the full-length GR A isoform (i.e. 1\u2013525), indicating that residues 1\u201397 somehow negatively regulate the activity of the remaining NTD residues, which contain the functionally important AF1c region (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "ba57e47f-ca6f-4a8b-b572-fed53ba9c51c",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C35",
+      "claim": "Residues 1\u201397 of GR negatively regulate the activity of the remaining NTD residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the GR C3 isoform (i.e. 98\u2013525) is almost five times more active than the full-length GR A isoform (i.e. 1\u2013525), indicating that residues 1\u201397 somehow negatively regulate the activity of the remaining NTD residues, which contain the functionally important AF1c region (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the observation that removing residues 1-97 increases activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "2106262c-e62b-42c4-b79b-8a6ad87ec4d1",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C36",
+      "claim": "The R-domain and F-domain are unfavorably coupled to each other as demonstrated by osmolyte-induced folding and protease sensitivity analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "For this reason, we represent the full-length NTD as being composed of two distinct domains, a functional domain (F-domain), and a regulatory domain (R-domain) (Figure 1, Inset), which were experimentally shown to be unfavorably coupled to each other by both osmolyte (i.e. TMAO) induced folding and protease sensitivity analyses (Figure 2a and b) (Li et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 2 and cited prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "e391d34e-993b-4048-af67-5849b5cef74d",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C37",
+      "claim": "The DBD stabilizes the folded form of the F-domain as shown by in vitro folding and protease sensitivity experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, in the same in vitro folding and protease sensitivity experiments the DBD appears to stabilize the folded form of the F-domain (Figure 2a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "8fb579f0-a01d-48d8-9532-ffba6d7628e5",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C38",
+      "claim": "The thermodynamic stabilization of the F-domain conferred by the DBD is accompanied by a dramatic increase in activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the thermodynamic stabilization of the F-domain conferred by the DBD is accompanied by a dramatic increase in activity, as determined from cell-based transcriptional assays that compare the activity of the GR F-DBD construct (C3 isoform) with the non-natural chimera that tethers the DBD from the yeast Gal4 transcription factor to the F-domain (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "84fe99a2-53b3-4aae-a1f6-dc9b8ff4f920",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C39",
+      "claim": "Competing factors within GR determine the overall stability and transcriptional activity of the AF1c region of the F-domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The thermodynamic and activity results suggest that competing factors within GR determine the overall stability (i.e. the \u0394G of folding) and transcriptional activity of the AF1c region of the F-domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the thermodynamic and activity data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "b1ba4a50-3e4c-4d12-99f9-2c720f1919c3",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C40",
+      "claim": "Inclusion of R-domain residues 1\u201385 (present in GR's A and B isoforms) significantly increased the DNA-binding affinity of the DBD.",
+      "claim_type": "EXPLICIT",
+      "source": "As Figure 3b reveals, inclusion of the R-domain residues 1\u201385, naturally present in GR's A and B isoforms, significantly increased the DNA-binding affinity of the DBD, while the shorter length R-domains in the C isoforms show no effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "653ad70a-d651-4cef-b275-bf0e8a6166b3",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C41",
+      "claim": "Shorter length R-domains in the C isoforms show no effect on DNA-binding affinity of the DBD.",
+      "claim_type": "EXPLICIT",
+      "source": "As Figure 3b reveals, inclusion of the R-domain residues 1\u201385, naturally present in GR's A and B isoforms, significantly increased the DNA-binding affinity of the DBD, while the shorter length R-domains in the C isoforms show no effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "0387d429-de37-4e53-a603-62a1076e0499",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C42",
+      "claim": "Linking various R-domains to the yeast transcription factor Gal4 DBD did not increase DNA-binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Such increases were not observed for non-natural chimeric constructs that linked the various R-domains to the yeast transcription factor Gal4 DBD (Kraulis et al., 1992) (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "eb670b78-a55b-457e-827c-0a507e87aa13",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C43",
+      "claim": "Different length linkers give similar results, indicating that the linker is functionally inert.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the fact that different length linkers (Figure 3c) give similar results indicates that the linker is, as intended, functionally inert, and serving as a tether that simply connects the R-domain to the DBD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "08f6f705-d136-4569-8358-889b41d03a76",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C44",
+      "claim": "The R-domain affects DNA binding by the DBD specifically through stabilization of a high-affinity state of the DBD, not through direct interaction with DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support the notion that the R-domain affects DNA binding by the DBD specifically through stabilization of a high-affinity state of the DBD, and is not simply a consequence of a direct interaction between the R-domain (or the linker) and the DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental results with linkers and Gal4 DBD chimeras.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "ec5f501b-fc29-4537-b641-efae417d407e",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C45",
+      "claim": "The R-domain allosterically affects DNA binding of the DBD, serving as a positive intramolecular allosteric effector.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, our results indicate the R-domain allosterically affects DNA binding of the DBD, serving as a positive intramolecular allosteric effector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental results showing R-domain effects on DBD DNA binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "0cc6d3e1-9074-4796-b588-b0c60f307254",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C46",
+      "claim": "DNA binding to the DBD stabilizes the DBD.",
+      "claim_type": "EXPLICIT",
+      "source": "It has long been known that DNA binding to GR DBD stabilizes the DBD (Lefstin and Yamamoto, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "123cb874-3cc3-4f98-ba1e-cb76d71ab8c1",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C47",
+      "claim": "DBD binding to DNA stabilizes the folded form of the F-domain and promotes activation of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence of its direct positive coupling to the F-domain (Figure 2), DBD binding to DNA stabilizes the folded form of the F-domain and therefore promotes activation of transcription (Figure 4a, counterclockwise green arrow).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the thermodynamic coupling data shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "b2bd5804-3453-4751-99cd-fba922db34c3",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C48",
+      "claim": "DNA binding to the DBD simultaneously destabilizes the folded form of the F-domain through stabilization of the R-domain, promoting repression of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as Figure 3 indicates, there is also positive coupling between the DBD and the R-domain. But because of the negative coupling between the R- and F-domains (Figure 2a and b), the same DNA binding (to the DBD) that stabilizes/activates the F-domain simultaneously, through stabilization of the R-domain, destabilizes the folded form of the F-domain, promoting repression of transcription (Figure 4a, red inhibitory semicircle), a process that resembles geometric frustration (Vannimenus and Toulouse, 1977; Villain, 1977).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the combined thermodynamic coupling data shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "9ab50194-7e50-4462-be8d-aa2a9029608f",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C49",
+      "claim": "Four of the eight possible thermodynamic configurations for three interacting domains produce frustration between the DBD and the F-domain.",
+      "claim_type": "EXPLICIT",
+      "source": "As Figure 4b reveals, frustration results when the 'direct' impact of stabilization of the DBD on the F-domain is opposite in sign to the indirect impact (i.e. the impact that is mediated through the R-domain). Such is the case when one or all three of the inter-domain interactions is/are negative (Hilser et al., 2012; Motlagh and Hilser, 2012; Motlagh et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on theoretical analysis shown in Figure 4b and cited prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "49e2063f-a476-4158-ac86-31c55966a997",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C50",
+      "claim": "GR conforms to case ii of frustrated configurations, wherein the DBD is positively coupled to the F-domain but ultimately also negatively coupled through the R-domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the possible configurations that are predicted to produce frustration (Figure 4b upper), GR clearly conforms to case ii, wherein the DBD is positively coupled to the F-domain serving to increase its activity (Figure 2a\u2013c). However, because of the negative coupling between the R-domain and the F-domain (Figure 2a and b), and the positive coupling between the R-domain and the DBD (Figure 3), the DBD is ultimately also negatively coupled to the F-domain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the experimental thermodynamic coupling data from Figures 2 and 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "99d250ce-6ae6-4382-a944-09870d1faaba",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C51",
+      "claim": "The net effect of DNA binding on GR transcriptional activity is a balance between the strengths of coupling energies, which could differ among translational isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "The net effect of DNA binding on GR transcriptional activity is thus a balance between the strengths of these coupling energies, which could differ among translational isoforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the frustration-based model and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "7014abad-ffbb-44bc-9f00-9744efa0574b",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C52",
+      "claim": "Classic deterministic models of allostery are insufficient to capture the probabilistic nature of the GR mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "The results clearly demonstrate that two opposing control mechanisms are at play, and that the classic deterministic models of allostery (Koshland et al., 1966; Monod et al., 1965) are insufficient to capture the probabilistic nature of this mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental results showing opposing control mechanisms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "d10b43c5-721e-427b-8e92-ffa1d5231994",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C53",
+      "claim": "The ensemble allosteric model (EAM) faithfully reproduces both the relative affinities and transcriptional activities for all five GR isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the maximum likelihood parameters (shown in Figure 5\u2014figure supplement 1e) faithfully reproduce both the relative affinities and transcriptional activities for all five isoforms (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the model fitting to experimental data shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "5e3afe67-9527-4aa9-ad1a-561a38b03341",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C55",
+      "claim": "Screening of conserved surface residues on the DBD revealed only three positions (C431, V435, and L436) that mediate coupling to the R-domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Screening of conserved surface residues on the DBD (Figure 6\u2014figure supplement 1a), which did not significantly affect DBD stability or the coupling between the F-domain and DBD (Figure 6\u2014figure supplement 1b), revealed only three positions (i.e. C431, V435, and L436) that exhibited the expected signature of DBD residues that mediate coupling to the R-domain (Figure 6c and Figure 6\u2014figure supplement 1c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental mutational screening data shown in Figure 6 and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "b5bf2e94-3d3a-4c8c-a934-f7212061af9e",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C56",
+      "claim": "Residues C431, V435, and L436 map to a conserved contiguous surface on the DBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these positions exerting their effects through a common mechanism, all three residues mapped to a conserved contiguous surface on the DBD (Figure 6d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural mapping shown in Figure 6d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "f104172d-591c-4450-8eb4-94fc96318972",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C57",
+      "claim": "The triple mutation (C431Y/V435A/L436A) in the full-length GR A isoform decreases DNA-binding affinity while concomitantly increasing transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "True to the prediction (Figure 6e Experiment), the effect of the triple mutant is a decrease in affinity for DNA while concomitantly increasing the transcriptional activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 6e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "786b7a13-0708-4bdb-be43-1a21048dc7e1",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C58",
+      "claim": "The R-domain not only negatively affects the F-domain but also positively affects the wild-type DBD, increasing the affinity of the DBD for DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results unequivocally demonstrate that the R-domain not only negatively affects the F-domain (Figure 2a and b) but also positively affects the wild-type DBD (Figure 3), increasing the affinity of the DBD for DNA (Figure 3), and it does so in a manner that is directly related to the stabilities and coupling energies in the system.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "b196d179-7ac5-42ef-be4e-2264eae3af84",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C59",
+      "claim": "Titration of the DBD of the C3 isoform with the R-domain shows a greater concentration dependence of activity for the wild-type C3 isoform over the triple mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Further supporting this notion, titration of the DBD of the C3 isoform and the C3 triple mutant (C431Y&V435A&L436A) with the R-domain (expressed in trans), using the luciferase assay as a reporter, clearly shows a greater concentration dependence of activity for the wild-type C3 isoform over the triple mutant (Figure 6f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 6f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "5310c651-59e4-4df8-95bc-f09d48e53c11",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C60",
+      "claim": "The R-domain can exert its stabilization effect on the DBD through mass action, suggestive of a direct interaction involving residues C431, V435, and L436.",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicates that the R-domain can exert its stabilization effect on the DBD through mass action, suggestive of a direct interaction involving residues C431, V435, and L436.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the concentration-dependent effects shown in Figure 6f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "d3735a51-e7f4-44a2-9dbe-7875767ce16f",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C61",
+      "claim": "The coupling between the R-domain and the DBD could be leveraged into a comprehensive frustration-based model that quantitatively captures the relative binding and activity of all the GR isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Figure 6 reveals that the coupling between the R-domain and the DBD, identified in isolation (Figure 3), could not only be leveraged into a comprehensive frustration-based model that quantitatively captures the relative binding and activity of all the GR isoforms (Figure 5b), but could also be rationally manipulated, and the opposing consequences on DNA binding and transcriptional activity predictably altered (Figure 6e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the combined experimental and modeling results shown in Figures 3, 5b, and 6e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "ebefbf12-b1fd-4ca5-a4dd-bd749524c065",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C62",
+      "claim": "GR has evolved the ability to produce isoforms that utilize different degrees of energetic frustration.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, although physical basis of the couplings between the domains awaits future studies, the fact that GR has evolved the ability to produce isoforms that utilize different degrees of energetic frustration opens entirely new avenues for investigating regulation in IDPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental findings showing isoform-specific frustration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "96e24aa5-f262-4784-9dd7-b7671395ec8f",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C63",
+      "claim": "DNA sequences coding for ID regions are enriched in splice sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The regulatory role of the isoform-specific ID R-domain in GR is especially important in light of the observation that the DNA sequences coding for ID regions are enriched in splice sites (Buljan et al., 2012), leading to a high degree of variability in the ID regions of the resultant proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "3a8d81dd-e46b-4296-bfab-4dfc062b6012",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C64",
+      "claim": "Alternative splicing can produce proteins with different degrees of frustration in their ID regions, and thus differing activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternative splicing, like the alternative translation start sites of GR described here, can produce proteins with different degrees of frustration in their ID regions, and thus differing activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the GR findings extended to alternative splicing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "a3074fe0-8142-492b-847e-0156a6cf08b5",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C65",
+      "claim": "Post-translational modification sites are enriched in ID segments.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, isoforms may also have different combinations of post-translational modification sites, which are also enriched in ID segments (Bah and Forman-Kay, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "7de59bd2-cdfc-4436-8115-d80e3dfa78f5",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C66",
+      "claim": "By combining regulatory elements possessing different stabilities with different numbers and types of modification sites, ID proteins can regulate both the efficiency of the resultant protein and how that activity can be tuned by different types of modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining regulatory elements possessing different stabilities with different numbers and types of modification sites, ID proteins can potentially regulate not only the efficiency of the resultant protein, as shown here for GR, but also how that activity can be tuned by different types of modifications (Motlagh et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the GR findings with support from a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "ade4c695-a139-4a86-8af2-3db7eda0af67",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C67",
+      "claim": "GR produces different isoforms which have different DNA-binding affinities and transcriptional activities that are uncorrelated to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that GR produces different isoforms, which have different DNA-binding affinities and transcriptional activities that are uncorrelated to each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "f6a1e36f-dd0c-461e-a003-2145c06a64f0",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C68",
+      "claim": "The uncorrelated behavior of DNA-binding affinities and transcriptional activities in GR isoforms is facilitated through energetic frustration.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that this uncorrelated behavior is facilitated through 'energetic frustration', wherein opposing energetic couplings compete to modulate the overall response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "d44a7288-8700-4405-a803-2f9135136fb0",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C69",
+      "claim": "Allostery can be mediated by dynamic and even ID proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies reveal that in addition to being facilitated by structured proteins, allostery can also be mediated by dynamic and even ID proteins (Freiburger et al., 2011; Motlagh et al., 2014; Petit et al., 2009; Popovych et al., 2006; Tzeng and Kalodimos, 2009, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "f0508a5c-5690-4425-aa99-68a6e617b86e",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "claim_id": "C70",
+      "claim": "Extension of classic allosteric models to account for positive and negative couplings between different regions provides a framework for understanding how ID sequences communicate and produce complex regulatory strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, extension of these classic models to account for positive and negative couplings between different regions provides a framework for understanding not only how ID sequences communicate with other structured and ID sequences, but also how such heterogeneity can produce complex regulatory strategies, such as the frustration-based mechanism identified here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the theoretical and experimental work presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e301ece6-9629-4128-8caa-2eef3a58cd47",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the context that intrinsically disordered proteins (IDPs) play central roles in allostery despite lacking stable tertiary structure, and that ID regions are hyper-abundant in allosteric proteins like transcription factors. However, the mechanism by which IDPs facilitate allostery remains unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C5, C6, C7, and C69 are well-supported by multiple citations to prior research and represent established knowledge in the field. These claims appropriately frame the knowledge gap that motivates the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "30765d54-1673-4b71-ab1c-c0bdc987a2e5",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors introduce the theoretical concept of 'energetic frustration' based on prior mathematical models, drawing an analogy to geometric frustration from condensed matter physics. They identify a knowledge gap: whether a single gene product could encode tunable activity based on energetic frustration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11 are supported by appropriate citations to prior theoretical work and established physics concepts. The analogy to geometric frustration is clearly defined and the knowledge gap is appropriately identified as the motivation for experimental investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "d3b61b67-c00b-4190-bf8b-d9b5812f7b12",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The manuscript describes the structural and functional organization of the human glucocorticoid receptor (GR), including its three major domains (DBD, LBD, NTD) and the existence of eight translational isoforms differing only in NTD length. These isoforms differ in activities, tissue distributions, and regulatory specificities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C25 are well-supported by citations to prior research and represent established knowledge about GR structure and function. The characterization of GR isoforms is appropriately cited to Lu and Cidlowski, 2005, and other relevant studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "f9f215b3-cf12-45b7-95d1-58c42220d5cf",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors identify a fundamental knowledge gap: how binding events at structured domains (DBD, LBD) are differentially propagated to the intrinsically disordered NTD of each GR isoform and translated into functional changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 appropriately cite prior work showing that ligand and DNA binding produce structural changes in their respective domains, while clearly identifying the mechanistic gap regarding signal propagation to disordered regions. This establishes the central question of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "59230fc7-a536-4442-b5c8-6ec9c05ecb50",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors demonstrate that two-domain GR isoforms (lacking LBD) show similar relative transcriptional activities to full-length three-domain isoforms, suggesting the LBD affects magnitude but not qualitative communication between DBD and NTD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 are supported by comparison of experimental data (Figure 1) with prior studies. The inference that LBD does not qualitatively impact DBD-NTD communication is reasonable given the preserved relative activity patterns, though this is an indirect inference rather than direct demonstration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "802db8b9-5f3f-44c2-88af-f3d5940a913a",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "GR isoforms with identical DBDs show varying DNA-binding affinities, indicating that the NTD of each isoform differentially communicates with the DBD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 are supported by experimental data in Figure 1 and Figure 1\u2014figure supplement 1c-e. The observation that identical DBDs exhibit different DNA affinities depending on the attached NTD provides direct evidence for NTD-DBD communication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "a2dd424e-3ab3-4265-9747-197c614012ad",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The GR C3 isoform (residues 98-525) is almost five times more active than the full-length GR A isoform (residues 1-525), indicating that residues 1-97 negatively regulate the activity of the remaining NTD residues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 are supported by experimental data in Figure 1. The dramatic activity difference between C3 and A isoforms provides strong evidence for negative regulation by residues 1-97, though the mechanism is inferred rather than directly demonstrated at this stage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "de3f68c3-817d-4047-a90c-96c9ff821e03",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The R-domain (residues 1-97) and F-domain (residues 98-420) are unfavorably coupled to each other, while the DBD stabilizes the F-domain. This thermodynamic stabilization by the DBD is accompanied by increased transcriptional activity, suggesting competing factors determine F-domain stability and activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 are supported by TMAO-induced folding experiments, protease sensitivity assays (Figure 2a-b), and cell-based transcriptional assays (Figure 2c). The thermodynamic coupling measurements provide direct evidence for the proposed domain interactions, and the correlation with activity is experimentally demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "d620f8ab-0b94-45cc-bf39-ef48a9b104fe",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The R-domain (residues 1-85 in A/B isoforms) significantly increases DNA-binding affinity of the DBD through allosteric stabilization, not through direct DNA interaction. This effect is specific to the GR DBD and is independent of linker length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C45 are supported by competitive transfection assays (Figure 3b-c) showing R-domain effects on DBD DNA binding. The specificity is demonstrated by lack of effect with Gal4 DBD chimeras and linker length independence. The inference of allosteric mechanism is well-supported by the control experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "dff49758-147d-45eb-8880-2fe948fe91fc",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "DNA binding to the DBD produces opposing effects on the F-domain: direct stabilization (activation) and indirect destabilization through R-domain stabilization (repression). This creates energetic frustration where the net effect depends on the balance of coupling energies. Classic deterministic allosteric models are insufficient to capture this probabilistic mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C52 synthesize the thermodynamic coupling data from Figures 2-3 into a coherent frustration-based model. The opposing effects are logically derived from the experimentally demonstrated positive DBD-F coupling, positive DBD-R coupling, and negative R-F coupling. The theoretical framework (Figure 4) is consistent with the experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "dc10e67b-6496-4631-957a-da86e7daf82a",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The ensemble allosteric model (EAM) with maximum likelihood parameters faithfully reproduces both the relative DNA-binding affinities and transcriptional activities for all five GR isoforms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 is supported by the model fitting shown in Figure 5b and the parameter estimation in Figure 5\u2014figure supplement 1. The model quantitatively captures the experimental data for all five isoforms, providing strong support for the frustration-based mechanism. The parameter search methodology is described in detail in the supplement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "400c9480-9346-4201-a7e8-897a08f574d6",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Mutational screening identified three conserved DBD residues (C431, V435, L436) that mediate coupling to the R-domain. A triple mutation at these positions decreases DNA-binding affinity while increasing transcriptional activity in the A isoform, validating the frustration model. The R-domain can exert its effect through mass action, suggesting direct interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C61 are supported by systematic mutational analysis (Figure 6 and supplements). The counter-intuitive prediction that mutations would decrease binding while increasing activity is experimentally confirmed, providing strong validation of the frustration mechanism. The concentration-dependent effects (Figure 6f) support the mass action interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "eb23842e-157a-46f5-b15f-4b57294ded0f",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "GR has evolved the ability to produce isoforms that utilize different degrees of energetic frustration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 is supported by the combined experimental and modeling results showing that different isoforms exhibit different balances of activation and repression. While the evolutionary aspect is inferred rather than directly tested, the functional diversity of isoforms through frustration modulation is well-demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "de5dbb1d-7cee-45d1-a640-ff552dcd2edb",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors propose that alternative splicing and post-translational modifications in ID regions can produce proteins with different degrees of frustration and thus differing activities, allowing regulation of both protein efficiency and tunability by modifications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C66 extend the GR findings to broader implications for IDPs. While C63 and C65 are supported by citations to prior work, C64 and C66 are speculative extrapolations from the GR system. These claims represent reasonable hypotheses but lack direct experimental support in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "2ee023ed-0439-4cb0-89d6-b96174ded143",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The central finding is that human GR tunes signaling by producing translational isoforms differing in ID region length, which modulates energetic frustration. This allows simultaneous tuning of transcriptional activation and repression, producing uncorrelated DNA-binding affinities and transcriptional activities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C67, and C68 represent the main conclusions of the study. These are well-supported by the comprehensive experimental data (Figures 1-6) showing thermodynamic couplings, functional consequences, and model validation. The frustration mechanism is demonstrated through multiple independent lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    },
+    {
+      "id": "03e9ee2a-46f2-4766-ab47-329bf40e5d0a",
+      "content_id": "a6d4f14e-8ac6-4370-9997-54181432cbec",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Extension of classic allosteric models to account for positive and negative couplings between different regions provides a framework for understanding how ID sequences communicate and produce complex regulatory strategies like the frustration-based mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 is supported by the successful application of the EAM to quantitatively capture GR behavior. The framework demonstrates how ensemble-based models can explain allostery in IDPs where classic structure-based models fail. This represents a significant conceptual advance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:32:21.049531Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b0a23800-bf41-4ae5-a961-a90a9d49c1d3",
+      "result_id": "e301ece6-9629-4128-8caa-2eef3a58cd47"
+    },
+    {
+      "claim_id": "ab3a3819-9957-4782-902b-60f579b23d29",
+      "result_id": "e301ece6-9629-4128-8caa-2eef3a58cd47"
+    },
+    {
+      "claim_id": "ccd4fa69-dd2d-4f29-929c-2395e68cfc36",
+      "result_id": "e301ece6-9629-4128-8caa-2eef3a58cd47"
+    },
+    {
+      "claim_id": "32dca014-d5b4-4d19-8f00-9fc4ae51f721",
+      "result_id": "e301ece6-9629-4128-8caa-2eef3a58cd47"
+    },
+    {
+      "claim_id": "ecb69712-a9c2-4c9b-9dbc-e3e2626e63ae",
+      "result_id": "e301ece6-9629-4128-8caa-2eef3a58cd47"
+    },
+    {
+      "claim_id": "d44a7288-8700-4405-a803-2f9135136fb0",
+      "result_id": "e301ece6-9629-4128-8caa-2eef3a58cd47"
+    },
+    {
+      "claim_id": "5991084f-e929-4b49-9503-40d093e83f29",
+      "result_id": "30765d54-1673-4b71-ab1c-c0bdc987a2e5"
+    },
+    {
+      "claim_id": "67387e97-c816-41c0-9f69-897e36d1fb72",
+      "result_id": "30765d54-1673-4b71-ab1c-c0bdc987a2e5"
+    },
+    {
+      "claim_id": "42168395-2dfd-4a55-ac7a-19f872ed1a79",
+      "result_id": "30765d54-1673-4b71-ab1c-c0bdc987a2e5"
+    },
+    {
+      "claim_id": "b36ec396-c914-497f-9d92-bd417f36a6af",
+      "result_id": "30765d54-1673-4b71-ab1c-c0bdc987a2e5"
+    },
+    {
+      "claim_id": "421a85db-7813-4bb9-979e-e6325b29f2f2",
+      "result_id": "d3b61b67-c00b-4190-bf8b-d9b5812f7b12"
+    },
+    {
+      "claim_id": "effb3a91-2c3c-4a5d-9492-bce4b396d88c",
+      "result_id": "d3b61b67-c00b-4190-bf8b-d9b5812f7b12"
+    },
+    {
+      "claim_id": "d99e346d-2f42-418f-8d82-c7e9da9fcfeb",
+      "result_id": "d3b61b67-c00b-4190-bf8b-d9b5812f7b12"
+    },
+    {
+      "claim_id": "e2c7ca8f-cb62-48b9-bb2b-fbadaa760d79",
+      "result_id": "d3b61b67-c00b-4190-bf8b-d9b5812f7b12"
+    },
+    {
+      "claim_id": "f81d41cd-e113-4254-94cb-e12718192efd",
+      "result_id": "d3b61b67-c00b-4190-bf8b-d9b5812f7b12"
+    },
+    {
+      "claim_id": "a2edf35b-ac8b-431a-a3f6-a6c0752bc5ce",
+      "result_id": "d3b61b67-c00b-4190-bf8b-d9b5812f7b12"
+    },
+    {
+      "claim_id": "05ce617f-392f-4c06-95a8-c8b6611fbdb5",
+      "result_id": "d3b61b67-c00b-4190-bf8b-d9b5812f7b12"
+    },
+    {
+      "claim_id": "9eb27789-1341-4ccb-98a4-223b35dcedf5",
+      "result_id": "d3b61b67-c00b-4190-bf8b-d9b5812f7b12"
+    },
+    {
+      "claim_id": "705faa3e-8632-49df-ae77-ac84a6daf042",
+      "result_id": "d3b61b67-c00b-4190-bf8b-d9b5812f7b12"
+    },
+    {
+      "claim_id": "a2753ddb-f0b8-400f-8c10-87f2dd5f5ddb",
+      "result_id": "d3b61b67-c00b-4190-bf8b-d9b5812f7b12"
+    },
+    {
+      "claim_id": "17fd6c1e-3559-495b-b97a-c8a49d7c7aab",
+      "result_id": "d3b61b67-c00b-4190-bf8b-d9b5812f7b12"
+    },
+    {
+      "claim_id": "c462dd37-e7ce-4644-acf5-992b5c4da2e7",
+      "result_id": "d3b61b67-c00b-4190-bf8b-d9b5812f7b12"
+    },
+    {
+      "claim_id": "b3602460-fb2e-476a-b44f-8919076adfb0",
+      "result_id": "d3b61b67-c00b-4190-bf8b-d9b5812f7b12"
+    },
+    {
+      "claim_id": "f32be13c-47aa-4264-ac11-030e933a6ba9",
+      "result_id": "d3b61b67-c00b-4190-bf8b-d9b5812f7b12"
+    },
+    {
+      "claim_id": "143ae55f-86ce-4bc8-ae9f-b01309ec10ce",
+      "result_id": "f9f215b3-cf12-45b7-95d1-58c42220d5cf"
+    },
+    {
+      "claim_id": "a38c929d-b842-418d-84ed-0713138c9ac0",
+      "result_id": "f9f215b3-cf12-45b7-95d1-58c42220d5cf"
+    },
+    {
+      "claim_id": "50265810-7a08-4a74-bc62-bd812f738137",
+      "result_id": "f9f215b3-cf12-45b7-95d1-58c42220d5cf"
+    },
+    {
+      "claim_id": "7233e83b-ceab-4b2b-baac-0f980bdfc9ec",
+      "result_id": "f9f215b3-cf12-45b7-95d1-58c42220d5cf"
+    },
+    {
+      "claim_id": "b74d5514-5065-4950-bd94-2e4b8a9a43af",
+      "result_id": "59230fc7-a536-4442-b5c8-6ec9c05ecb50"
+    },
+    {
+      "claim_id": "aae7c38f-7459-4f28-b7c4-afc037f6b49f",
+      "result_id": "59230fc7-a536-4442-b5c8-6ec9c05ecb50"
+    },
+    {
+      "claim_id": "19f3e7a9-af30-4047-be73-96f55b3cff7b",
+      "result_id": "802db8b9-5f3f-44c2-88af-f3d5940a913a"
+    },
+    {
+      "claim_id": "6939a4e7-10df-45a8-beda-453e6b42e295",
+      "result_id": "802db8b9-5f3f-44c2-88af-f3d5940a913a"
+    },
+    {
+      "claim_id": "6ce0003f-dd4d-4189-86ca-8176f98365e5",
+      "result_id": "a2dd424e-3ab3-4265-9747-197c614012ad"
+    },
+    {
+      "claim_id": "ba57e47f-ca6f-4a8b-b572-fed53ba9c51c",
+      "result_id": "a2dd424e-3ab3-4265-9747-197c614012ad"
+    },
+    {
+      "claim_id": "2106262c-e62b-42c4-b79b-8a6ad87ec4d1",
+      "result_id": "de3f68c3-817d-4047-a90c-96c9ff821e03"
+    },
+    {
+      "claim_id": "e391d34e-993b-4048-af67-5849b5cef74d",
+      "result_id": "de3f68c3-817d-4047-a90c-96c9ff821e03"
+    },
+    {
+      "claim_id": "8fb579f0-a01d-48d8-9532-ffba6d7628e5",
+      "result_id": "de3f68c3-817d-4047-a90c-96c9ff821e03"
+    },
+    {
+      "claim_id": "84fe99a2-53b3-4aae-a1f6-dc9b8ff4f920",
+      "result_id": "de3f68c3-817d-4047-a90c-96c9ff821e03"
+    },
+    {
+      "claim_id": "b1ba4a50-3e4c-4d12-99f9-2c720f1919c3",
+      "result_id": "d620f8ab-0b94-45cc-bf39-ef48a9b104fe"
+    },
+    {
+      "claim_id": "653ad70a-d651-4cef-b275-bf0e8a6166b3",
+      "result_id": "d620f8ab-0b94-45cc-bf39-ef48a9b104fe"
+    },
+    {
+      "claim_id": "0387d429-de37-4e53-a603-62a1076e0499",
+      "result_id": "d620f8ab-0b94-45cc-bf39-ef48a9b104fe"
+    },
+    {
+      "claim_id": "eb670b78-a55b-457e-827c-0a507e87aa13",
+      "result_id": "d620f8ab-0b94-45cc-bf39-ef48a9b104fe"
+    },
+    {
+      "claim_id": "08f6f705-d136-4569-8358-889b41d03a76",
+      "result_id": "d620f8ab-0b94-45cc-bf39-ef48a9b104fe"
+    },
+    {
+      "claim_id": "ec5f501b-fc29-4537-b641-efae417d407e",
+      "result_id": "d620f8ab-0b94-45cc-bf39-ef48a9b104fe"
+    },
+    {
+      "claim_id": "0cc6d3e1-9074-4796-b588-b0c60f307254",
+      "result_id": "dff49758-147d-45eb-8880-2fe948fe91fc"
+    },
+    {
+      "claim_id": "123cb874-3cc3-4f98-ba1e-cb76d71ab8c1",
+      "result_id": "dff49758-147d-45eb-8880-2fe948fe91fc"
+    },
+    {
+      "claim_id": "b2bd5804-3453-4751-99cd-fba922db34c3",
+      "result_id": "dff49758-147d-45eb-8880-2fe948fe91fc"
+    },
+    {
+      "claim_id": "9ab50194-7e50-4462-be8d-aa2a9029608f",
+      "result_id": "dff49758-147d-45eb-8880-2fe948fe91fc"
+    },
+    {
+      "claim_id": "49e2063f-a476-4158-ac86-31c55966a997",
+      "result_id": "dff49758-147d-45eb-8880-2fe948fe91fc"
+    },
+    {
+      "claim_id": "99d250ce-6ae6-4382-a944-09870d1faaba",
+      "result_id": "dff49758-147d-45eb-8880-2fe948fe91fc"
+    },
+    {
+      "claim_id": "7014abad-ffbb-44bc-9f00-9744efa0574b",
+      "result_id": "dff49758-147d-45eb-8880-2fe948fe91fc"
+    },
+    {
+      "claim_id": "d10b43c5-721e-427b-8e92-ffa1d5231994",
+      "result_id": "dc10e67b-6496-4631-957a-da86e7daf82a"
+    },
+    {
+      "claim_id": "5e3afe67-9527-4aa9-ad1a-561a38b03341",
+      "result_id": "400c9480-9346-4201-a7e8-897a08f574d6"
+    },
+    {
+      "claim_id": "b5bf2e94-3d3a-4c8c-a934-f7212061af9e",
+      "result_id": "400c9480-9346-4201-a7e8-897a08f574d6"
+    },
+    {
+      "claim_id": "f104172d-591c-4450-8eb4-94fc96318972",
+      "result_id": "400c9480-9346-4201-a7e8-897a08f574d6"
+    },
+    {
+      "claim_id": "786b7a13-0708-4bdb-be43-1a21048dc7e1",
+      "result_id": "400c9480-9346-4201-a7e8-897a08f574d6"
+    },
+    {
+      "claim_id": "b196d179-7ac5-42ef-be4e-2264eae3af84",
+      "result_id": "400c9480-9346-4201-a7e8-897a08f574d6"
+    },
+    {
+      "claim_id": "5310c651-59e4-4df8-95bc-f09d48e53c11",
+      "result_id": "400c9480-9346-4201-a7e8-897a08f574d6"
+    },
+    {
+      "claim_id": "d3735a51-e7f4-44a2-9dbe-7875767ce16f",
+      "result_id": "400c9480-9346-4201-a7e8-897a08f574d6"
+    },
+    {
+      "claim_id": "ebefbf12-b1fd-4ca5-a4dd-bd749524c065",
+      "result_id": "eb23842e-157a-46f5-b15f-4b57294ded0f"
+    },
+    {
+      "claim_id": "96e24aa5-f262-4784-9dd7-b7671395ec8f",
+      "result_id": "de5dbb1d-7cee-45d1-a640-ff552dcd2edb"
+    },
+    {
+      "claim_id": "3a8d81dd-e46b-4296-bfab-4dfc062b6012",
+      "result_id": "de5dbb1d-7cee-45d1-a640-ff552dcd2edb"
+    },
+    {
+      "claim_id": "a3074fe0-8142-492b-847e-0156a6cf08b5",
+      "result_id": "de5dbb1d-7cee-45d1-a640-ff552dcd2edb"
+    },
+    {
+      "claim_id": "7de59bd2-cdfc-4436-8115-d80e3dfa78f5",
+      "result_id": "de5dbb1d-7cee-45d1-a640-ff552dcd2edb"
+    },
+    {
+      "claim_id": "a8d66a0f-49eb-4e97-81c3-aa5aa9cd0127",
+      "result_id": "2ee023ed-0439-4cb0-89d6-b96174ded143"
+    },
+    {
+      "claim_id": "f86a736a-9575-4ffb-bd61-6c0e65f425bd",
+      "result_id": "2ee023ed-0439-4cb0-89d6-b96174ded143"
+    },
+    {
+      "claim_id": "ade4c695-a139-4a86-8af2-3db7eda0af67",
+      "result_id": "2ee023ed-0439-4cb0-89d6-b96174ded143"
+    },
+    {
+      "claim_id": "f6a1e36f-dd0c-461e-a003-2145c06a64f0",
+      "result_id": "2ee023ed-0439-4cb0-89d6-b96174ded143"
+    },
+    {
+      "claim_id": "f0508a5c-5690-4425-aa99-68a6e617b86e",
+      "result_id": "03e9ee2a-46f2-4766-ab47-329bf40e5d0a"
+    }
+  ],
+  "comparisons": []
+}

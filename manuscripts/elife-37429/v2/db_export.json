@@ -1,0 +1,2381 @@
+{
+  "submission": {
+    "id": "a6de1faa-3aec-4e68-bfb6-8fa7f76ecb71",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T02:16:59.727751Z",
+    "updated_at": "2025-12-02T02:16:59.727751Z"
+  },
+  "content": [
+    {
+      "id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "submission_id": "a6de1faa-3aec-4e68-bfb6-8fa7f76ecb71",
+      "content_type": "manuscript",
+      "content_text": "# An intrinsic cell cycle timer terminates limb bud outgrowth\n\n## Authors\n\n- Joseph Pickering<sup>1</sup> ([ORCID: 0000-0002-5892-5159](https://orcid.org/0000-0002-5892-5159))\n- Constance A Rich<sup>1</sup>\n- Holly Stainton<sup>1</sup>\n- Cristina Aceituno<sup>2</sup>\n- Kavitha Chinnaiya<sup>1</sup> ([ORCID: 0000-0002-3375-420X](https://orcid.org/0000-0002-3375-420X))\n- Patricia Saiz-Lopez<sup>2</sup> ([ORCID: 0000-0001-7106-5192](https://orcid.org/0000-0001-7106-5192))\n- Marian A Ros<sup>2</sup> ([ORCID: 0000-0002-1224-7671](https://orcid.org/0000-0002-1224-7671))\n- Matthew Towers<sup>1</sup> ([ORCID: 0000-0003-2189-4536](https://orcid.org/0000-0003-2189-4536)) \u2020\n\n### Affiliations\n\n1. Department of Biomedical Science, The Bateson Centre University of Sheffield Sheffield United Kingdom\n2. Instituto de Biomedicina y Biotecnolog\u00eda de Cantabria, IBBTEC (CSIC-Universidad de Cantabria) Santander Spain\n3. Departamento de Anatom\u00eda y Biolog\u00eda Celular, Facultad de Medicina Universidad de Cantabria Santander Spain\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe longstanding view of how proliferative outgrowth terminates following the patterning phase of limb development involves the breakdown of reciprocal extrinsic signalling between the distal mesenchyme and the overlying epithelium (e-m signalling). However, by grafting distal mesenchyme cells from late stage chick wing buds to the epithelial environment of younger wing buds, we show that this mechanism is not required. RNA sequencing reveals that distal mesenchyme cells complete proliferative outgrowth by an intrinsic cell cycle timer in the presence of e-m signalling. In this process, e-m signalling is required permissively to allow the intrinsic cell cycle timer to run its course. We provide evidence that a temporal switch from BMP antagonism to BMP signalling controls the intrinsic cell cycle timer during limb outgrowth. Our findings have general implications for other patterning systems in which extrinsic signals and intrinsic timers are integrated.\n\n## Introduction\n\nDetailed models of pattern formation often involve cells being informed of their position in the embryo by interpreting gradients of extrinsic signals, or by measuring intrinsic time. Recently, it has become evident that both processes can operate together - either in parallel, such as in antero-posterior patterning of the limb (thumb to little finger) (Harfe et al., 2004; Towers et al., 2011) and in dorso-ventral patterning of the neural tube (Dessaud et al., 2007) - or sequentially, such as in proximo-distal patterning of the limb (shoulder to finger tips) (Cooper et al., 2011; Rosell\u00f3-D\u00edez et al., 2014; Saiz-Lopez et al., 2015; Saiz-Lopez et al., 2017). Thus, understanding the precise requirement for extrinsic signals and intrinsic time in pattern formation is a challenging task. In addition, little is known about how these mechanisms operate together to terminate growth following pattern formation.\n\nDuring early stages of proximo-distal patterning of the chick wing (stage Hamburger Hamilton HH19 \u2013 see Materials\u00a0and\u00a0methods for embryonic days), signals from the main body of the embryo specify proximal identity (humerus) (Cooper et al., 2011; Mercader et al., 1999; Mercader et al., 2000; Rosell\u00f3-D\u00edez et al., 2011). Once distal mesenchyme cells of the wing bud are displaced by growth away from proximal signals, there is a switch to an intrinsic timing mechanism that specifies distal identity (elbow to digits) (Saiz-Lopez et al., 2015). This intrinsic timer involves cells executing a programme of proliferation, expressing regulators of distal position (i.e. Hoxa13) and altering their cell surface properties, which are considered to encode position along the proximo-distal axis. In addition, distal limb bud mesenchyme cells produce a factor that maintains the overlying apical ectodermal ridge (Zwilling and Hansborough, 1956) - a thickening of the distal epithelium, which is required for bud outgrowth until HH29/30 (Saiz-Lopez et al., 2015; Saunders, 1948; Summerbell, 1974). This factor is the Bone Morphogenetic Protein (BMP) antagonist Gremlin1 (Grem1), which maintains expression of genes encoding Fibroblast Growth Factors (FGFs) in the apical ectodermal ridge until HH27 (Merino et al., 1999; Pizette and Niswander, 1999; Z\u00fa\u00f1iga et al., 1999). Reciprocal signalling between the apical ectodermal ridge and the underlying mesenchyme is considered to maintain outgrowth, first by repressing apoptosis, and then by permissively maintaining cell proliferation (Dudley et al., 2002; Saiz-Lopez et al., 2015). Thus, the breakdown of the epithelial-mesenchyme (e-m signalling) feedback loop at HH27, and the subsequent loss of apical ectodermal ridge signalling, is considered necessary to terminate limb bud outgrowth at the end of the patterning phase (Zwilling and Hansborough, 1956; Scherz et al., 2004; Verheyden and Sun, 2008). Note that the final distal phalanx is laid down at around HH28 in the chick wing (Saunders, 1948; Summerbell, 1974). This could suggest that a switch from an intrinsic timer in the mesenchyme back to extrinsic signalling by the apical ectodermal ridge occurs at later stages of proximo-distal patterning to terminate outgrowth. Later growth of the limb after the apical ectodermal ridge has regressed is caused by the expansion of osteogenic progenitor cells in the developing long bones.\n\nHowever, we recently showed that grafts of HH27 mesenchyme cells expressing Green Fluorescent Protein (GFP) that were made to younger HH20 buds, and which were left to develop for 24 hr until HH24 (now referred to as HH24 graft or HH24g), completed their proliferation programme in the presence of an overlying host apical ectodermal ridge (Saiz-Lopez et al., 2017) red lines - Figure 1a, compare similar trajectories between HH27 to HH29 of normal development \u2013 black lines). Thus, HH24g mesenchyme (distal 150 microns of graft) has a similar cell cycle profile to HH29 mesenchyme (stage of donor limb), rather than contralateral HH24 mesenchyme (stage of host \u2013 Figure 1a - red lines). Although wing buds that develop with these grafts produce the three main segments of the wing, the autopod (digits and wrist) is very stunted due to the reduced growth of the grafted tissue relative to host tissue (Saiz-Lopez et al., 2017). Therefore, an interpretation of these findings is that proliferative outgrowth terminates intrinsically in the distal mesenchyme (curved arrows in graft in green, Figure 1b) independently of e-m signalling (arrows between ridge and mesenchyme, Figure 1b). An alternative possibility is that extrinsic e-m signalling had irreversibly broken down in donor tissue at the time of grafting and causes loss of proliferation in the graft (arrows absent in HH27 wing in Figure 1c).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/37429/elife-37429-fig1-v2.jpg)\n\n**Figure 1.:** (a) Decline in cell cycle rate determined by proportions of cells in G1-, S- and G2/M-phases between HH20 and HH30 in the distal chick wing bud (black lines Saiz-Lopez et al., 2017). Red lines show maintenance of cell cycle program in grafts of HH27 distal tips made to HH20 wing buds left for 24\u00a0hr until HH24 (HH24g - tissue would have progressed from HH27 to HH29 in donor) \u2013 note trajectories follow same pattern as black lines between HH27 and HH29. (b\u2013c) Procedure for making HH27-20 grafts (Saiz-Lopez et al., 2017) and predictions for loss of proliferative growth in HH24g mesenchyme. (b) Intrinsic termination: e-m signalling (arrows in HH27 wing bud) maintained between mesenchyme and apical ridge but proliferation declines intrinsically in mesenchyme independently of e-m signalling (curved arrows in HH24g mesenchyme). (c) Extrinsic termination: e-m signalling irreversibly lost between graft and apical ridge in HH27 bud (arrows absent) and proliferation lost in graft. (d) Heat-map showing the correlation (Pearson) of the normalised RNA-seq data collapsed to the mean expression per group and the degree of correlation indicated by the colour (red: higher, blue: lower). (e) KEGG analyses across pairwise contrasts with degree in pathway change indicated by the colour (red: up-regulated, blue: down-regulated). (f\u2013h) Clustering of RNA-seq data across pairwise contrasts with degree of gene expression change indicated by the colour (red: higher, blue: lower). (f) Cluster 1: genes that increase between HH24 and HH29 (black line) and are maintained in HH24g (red line -\u00a0>\u00a02 fold higher in HH24g than HH24). (g) Cluster 2: genes that increase between HH24 and HH29 (black line) and reset in HH24g (red line -\u00a0>\u00a02 fold lower in HH24g than HH29). (h) Cluster 3: genes that decrease between HH24 and HH29 (black line) and reset in HH24g (red line -\u00a0>\u00a02 fold higher in HH24g than HH29).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37429/elife-37429-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Cluster 1: genes that increase between HH24 and HH29 (black line) and are maintained in HH24g distal mesenchyme (red line -\u00a0>\u00a02 fold higher in HH24g than HH24).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/37429/elife-37429-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Cluster 2: genes that increase between HH24 and HH29 (black line) and reset in HH24g distal mesenchyme (red line -\u00a0>\u00a02 fold lower in HH24g than HH29).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/37429/elife-37429-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Cluster 3: genes that decrease between HH24 and HH29 (black line) and reset in HH24g distal mesenchyme (red line -\u00a0>\u00a02 fold higher in HH24g than HH29).\n\nIn this study, we show that proliferative outgrowth at the end of\u00a0the patterning phase terminates intrinsically in the distal mesenchyme of the chick wing bud in the presence of e-m signalling. Our data provide evidence that an intrinsic switch from autocrine BMP antagonism to autocrine BMP signalling controls the cell cycle programme in distal mesenchyme during limb bud outgrowth.\n\n## Results\n\n### RNA sequencing reveals reversible and stable gene expression\n\nTo gain insights into how intrinsic cell cycle timing is maintained in limb development, we used RNA-seq to determine how the transcriptome changes over time in the distal part of the wing bud during normal development and then compared this to the HH24g transcriptome. To achieve this, we performed RNA-seq on pooled blocks of distal cells from HH24, HH24g, HH27 and HH29 chick wing buds (three replicates of 12 blocks taken from distal tissue excluding the polarizing region\u2013 note one HH24 sample failed quality control - see Materials\u00a0and\u00a0methods). The region of undifferentiated mesenchyme is considered to extend proximally beneath the\u00a0apical\u00a0ectodermal ridge by 200\u00a0\u2013\u00a0300 microns and to remain at a consistent length throughout outgrowth (Summerbell et al., 1973), but for our analyses, we used RNA extracted from the distal 150 microns of control buds and grafts to ensure consistency between all samples. We compared HH24g with\u00a0contralateral HH24 datasets and HH24g with HH29 datasets (the stage the graft would have developed to if left in situ in the donor wing). This identified 154 genes that are differentially expressed (>2 fold difference at a p-value of\u00a0<0.0005) between the two comparisons: 55 genes between the HH24g-HH24 pair and 99 genes between the HH24g-HH29 pair (Supplementary files\u00a01 and 2). Pearson correlation of the normalised data reveals that overall gene expression levels in HH24g distal cells are closer to HH24 than to HH29 cells, suggesting a good degree of resetting behaviour (Figure 1d). This is unexpected considering the idea that older mesenchyme cells maintain both their proliferative and patterning potential when grafted to a younger bud (Saiz-Lopez et al., 2017).\n\nWe performed KEGG (Kyoto Encyclopaedia of Genes and Genomes) analyses to identify up- and down-regulated pathways between the two pairwise comparisons (Figure 1e, Supplementary file 1 and 2 - the pathways identified were those that contained two or more genes at a\u00a0>2 fold difference at a p-value of 0.05 \u2013 it should be noted that this analysis is limited since only approximately 20% of chicken genes belong to verified KEGG pathways). There are five down-regulated pathways identified by the KEGG analyses in HH24g compared to HH29 distal cells - focal adhesion, ECM (extracellular matrix), gap junction, MAPK (Mitogen-Activated Protein Kinase) and actin cytoskeleton - suggesting a general reset of genes in these pathways that increase in expression over time between HH24 and HH29. In addition, there are four up-regulated pathways identified by the KEGG analyses in HH24g compared to HH24 distal cells - ECM, focal adhesion, adrenergic signalling, TGF\u03b2 Transforming Growth Factor Beta) - suggesting maintained expression of genes in these pathways that generally increase in expression over time. In addition, the MAPK pathway is also up-regulated in HH24g compared to HH29 distal cells, showing the complex nature of this signalling pathway, and suggesting some genes in this pathway that decrease in expression over time can be reset. Interestingly, pathways represented by genes whose decrease in expression over time is maintained in HH24g distal cells were\u00a0not found.\n\nTo identify genes that share similar behaviour across the two pairwise contrasts, we performed hierarchical clustering analyses of the 154 genes significantly altered in expression between the HH24g/HH24 and HH24g/HH29 datasets. This divided the genes into three clusters (See Materials and methods \u2013 note three genes were excluded that fell into more than one cluster). Cluster 1 (Figure 1f, Figure 1\u2014figure supplement 1, Supplementary file 3) contains 54 genes that increase in expression between HH24 and HH29 during normal development (black line) and are maintained in HH24g distal cells (maintain a >2 fold increase in expression compared to equivalent area in contralateral HH24 buds \u2013 red line). Cluster 2 (Figure 1g, Figure 1\u2014figure supplement 2 and Supplementary file 4) contains 44 genes that normally increase in expression between HH24 and HH29 (black line) and are not maintained in HH24g distal cells (>2 fold decrease in expression compared to HH29 buds - red line). Cluster 3 (Figure 1h, Figure 1\u2014figure supplement 3 and Supplementary file 5) contains 53 genes that decrease in expression between HH24 and HH29 (black line) and are reset in HH24g grafts (>2 fold increase in expression compared to HH29 buds - red line). Thus, genes in cluster one reflect stability of expression while genes in clusters 2 and 3 show reversibility of expression. In consensus with the KEGG analyses, a cluster containing genes whose decrease in expression over time is maintained in HH24g distal cells was not found, indicating that the young environment potently reactivates gene expression. These data suggest that many genes that are preferentially expressed during early stages of wing development can be reset to some degree (Cluster 3). However, later expressed genes show differential resetting behaviour in an earlier environment (Clusters 1 and 2).\n\n### Bmp2/4/7 expression is maintained in HH24g mesenchyme\n\nTo identify signalling pathways associated with the maintenance of cell cycle timing in HH24g mesenchyme, we analysed the KEGG and clustering analyses for pathways/genes predominantly active at late stages of development, and that are maintained in distal mesenchyme transplanted to an earlier environment. This highlighted the TGF\u03b2 pathway (Figure 1e) and Bmp2 and Bmp7 in cluster 1 that encode members of the Bone Morphogenetic Protein (BMP) family, which are signalling ligands of the TGF\u03b2 superfamily (Figure 1f, Figure 1\u2014figure supplement 1, Supplementary file 3). Notably, BMP signalling is implicated in terminating outgrowth at the end of the patterning phase by inhibiting FGF signalling by the apical ectodermal ridge (Pizette and Niswander, 1999). Read-counts of the RNA-seq data show that the expression of Bmp2 increases by 5.3-fold between HH24 and HH29 \u2013 similar to the difference in expression in HH24g tissue compared to HH24 tissue (6.2-fold - log2 scale is shown), thus showing that late expression levels of Bmp2 are maintained in an earlier environment (Figure 2a). Similarly, a 1.5-fold increase in Bmp7 expression occurs between HH24 and HH29, and the difference between expression levels in HH24g tissue compared to HH24 tissue is 2.5-fold (Figure 2c). Analyses by RNA in situ hybridization are consistent with these observations (Figure 2b and d). We also analysed the expression of Bmp4 which has a prominent role in limb development (Selever et al., 2004; B\u00e9nazet et al., 2009). The RNA-seq data indicates that Bmp4 expression levels decrease by two-fold between HH24 and HH29 and that expression levels are approximately equivalent between HH24 and HH24g tissue (Figure 2e, note stronger expression in ridge at HH24 compared to Bmp2/7). Despite this, slightly enhanced expression could be detected by in situ hybridization in the region of the grafted tissue in HH24g buds (asterisk - Figure 2f) in comparison to the equivalent position in contralateral buds. However, cluster 3, which comprises genes that decrease over time and that demonstrate resetting behaviour, contains (Gremlin1) Grem1, which encodes the BMP antagonist that maintains the apical ectodermal ridge (Figure 1\u2014figure supplement 3, Supplementary file 5). Between HH24 and HH29, Grem1 expression levels are reduced by 17.2-fold until they are almost undetectable by in situ hybridization (Figure 2g and h). However, Grem1 expression levels are approximately the same in HH24 and HH24g mesenchyme (Figure 2g and h). This result suggests that Grem1 could antagonise BMP2/4/7 signalling in HH24g mesenchyme.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/37429/elife-37429-fig2-v2.jpg)\n\n**Figure 2.:** (a) Histogram showing expression levels of Bmp2 as normalised log2 values of RNA sequencing read-count intensities. (b) In situ hybridization showing Bmp2 expression - note intense expression in HH24g mesenchyme in area of graft (n\u00a0=\u00a03/3, HH24 is the contralateral bud flipped horizontally). (c) Expression levels of Bmp7 determined by RNA-seq. (d) In situ hybridization showing Bmp7 expression - note intense region of expression in HH24g mesenchyme (n\u00a0=\u00a03/3). (e) Expression levels of Bmp4 determined by RNA-seq. (f) In situ hybridizations showing Bmp4 expression - note enhanced expression in HH24g mesenchyme in area of graft (asterisk - n\u00a0=\u00a02/3). (g) Expression levels of Grem1 determined by RNA-seq. (h) In situ hybridizations showing resetting of Grem1 expression (n\u00a0=\u00a07/9). Scale bars: HH24 buds - 500 \u03bcm; HH29 buds - 200 \u03bcm.\n\n### BMP signalling is maintained in HH24g mesenchyme\n\nTo analyse BMP signalling in HH24g mesenchyme, we selected a bona-fide target, Msx2 (Pizette et al., 2001). RNA-seq data shows that Msx2 has a similar profile to both Bmp2 and Bmp7: a 2.8-fold increase between HH24 and HH29 and a two-fold difference in HH24g tissue compared to HH24 tissue (Figure 3a and b). Consistent with this finding, immunofluorescence on sections using an antibody that recognizes phosphorylated SMAD1/5/9 \u2013 the signal transducer for BMP2/4/7 \u2013 reveals increased levels in later wing buds (Figure 3c\u2013e). However, whereas weak expression is detected in HH24 wing buds (Figure 3c), strong expression is observed in the distal part of grafts (the area processed for RNA-seq) in contralateral HH24g buds (Figure 3f). Control grafts of HH20 distal mesenchyme made to host HH20 wing buds show no obvious differences in pSMAD1/5/9 signal intensity after 24 hr compared to stage-matched HH24 buds (Figure 3g\u2013compare to Figure 3c). Enhanced pSMAD1/5/9 signal is also detected in the host apical ectodermal ridge above HH24g mesenchyme (asterisk Figure 3h), in contrast to adjacent regions (arrow \u2013 Figure 3h). This result suggests that the level of BMP signalling is maintained in mesenchyme transplanted from older buds to a younger environment, and that it is also enhanced in the\u00a0host apical ectodermal ridge in response to the older mesenchyme.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/37429/elife-37429-fig3-v2.jpg)\n\n**Figure 3.:** (a) Expression levels of Msx2 determined by RNA-seq. (b) In situ hybridization showing Msx2 expression - note intense expression in HH24g mesenchyme in grafted area (n\u00a0=\u00a03/4). (c\u2013h) Immunostaining of pSMAD1/5/9: signal increases in the distal part of chick wing buds over time (c\u2013e) and is enhanced in HH24g mesenchyme (f) compared to\u00a0contralateral HH24 buds (n\u00a0=\u00a03/3 c) but not in HH20-HH20 grafts (n\u00a0=\u00a02/2 g); signal is enhanced in apical ectodermal ridge above grafts in HH24g mesenchyme (asterisk-h) but not adjacent regions of ridge (n\u00a0=\u00a02/2 - arrow-h). (i\u2013j) Lysotracker staining of apoptotic cells reveals no difference in HH24 (i) and HH24g (j) mesenchyme (n\u00a0=\u00a05/5) \u2013 asterisks indicate anterior necrotic zone. (k) Flow cytometry of wing bud distal mesenchyme: PBS- and Noggin-soaked beads do not significantly affect proportion of cells in G1-phase after 8 hr compared to left wing controls (Pearson\u2019s \u03c72 test \u2013 p=0.1 and p=0.4, respectively); Noggin-soaked beads implanted at HH20 (+Nog) produce a significant decrease in proportion of cells in G1-phase in HH24g grafts compared to PBS-treated controls (+PBS) after 8 hr (Pearson\u2019s \u03c72 test - p<0.0001); BMP2-soaked beads implanted at HH20 significantly increase G1-phase cells after 8 hr compared to left wing controls (Pearson\u2019s \u03c72 test - p<0.0001), note boxes indicate separate experiments. (l\u2013m) Lysotracker staining of apoptotic cells reveals no difference in PBS (l) - n\u00a0=\u00a02/2) and BMP2 (m) - n\u00a0=\u00a02/2) treated mesenchyme after 8 hr. Scale bars: HH24 buds - 500 \u03bcm, HH29 buds - 200 \u03bcm in b; 150 \u03bcm in c-g; 75 \u03bcm in h; 300 \u03bcm in i-j and l-m.\n\nBMP signalling is associated with regions of apoptosis in the developing limb, including anterior and posterior necrotic zones, as well as the interdigital mesenchyme (Zuzarte-Luis and Hurle, 2005). To determine if apoptosis could reduce proliferation in HH24g mesenchyme, we performed lysotracker staining of apoptotic cells. This reveals no appreciable difference in HH24 control (Figure 3i) and HH24g mesenchyme (Figure 3j) in whole-mount preparations. Note, the anterior necrotic zone can be observed in both examples (asterisks in Figure 3i and j).\n\nTo investigate if BMP signalling is responsible for the reduction in proliferation in HH24g mesenchyme (Saiz-Lopez et al., 2017), we implanted beads soaked in the BMP antagonist, Noggin, into HH20 wing buds at the time of grafting. After 8 hr, we used flow cytometry to determine the proportion of cells in the different phases of the cell cycle in distal tissue (150 microns from the distal tip). Control PBS-\u00a0and Noggin-soaked beads implanted into HH20 wing buds for 8 hr do not significantly change distal mesenchyme cell cycle parameters compared to control left wing buds (Figure 3k). In HH24g grafts treated with PBS-soaked beads, 69% of distal mesenchyme cells are in G1-phase compared to 60.8% in the equivalent region of the contralateral wing bud (Figure 3k). This is consistent with the reduced proliferative potential we previously observed in such grafts (Figure 1a, [Saiz-Lopez et al., 2017]). However, in HH24g mesenchyme treated with Noggin-soaked beads, the proportion of cells in G1-phase decreases from 69% to 62.4% - a value significantly closer to the control value of 60.8% in the contralateral bud (Figure 3k). This result shows that the inhibition of BMP signalling in HH24g mesenchyme can significantly enhance proliferation.\n\nTo test if BMP signalling has an instructive effect on cell proliferation in early wing buds, we implanted beads soaked in two concentrations of recombinant BMP2 protein (BMP2high and BMP2low - see Materials\u00a0and\u00a0methods) into the distal mesenchyme of HH20 buds, and compared cell cycle profiles to those obtained in contralateral wing buds. After 8 hr, the proportion of cells in G1-phase in control wing buds is 57.8%, but this increases to 60.5% and 66.2% in BMP2low and BMP2high buds, respectively (Figure 3k). This finding shows that enhanced BMP signalling inhibits proliferation of distal mesenchyme cells in the early chick wing bud in a dose-dependent fashion. In addition, lysotracker staining shows that both PBS- (Figure 3l) and BMP2high -soaked beads (Figure 3m) do not cause apoptosis after 8 hr, thus showing that BMP signalling does not inhibit proliferation by compromising cell survival. Taken together, these results suggest that BMP signalling in HH24g mesenchyme maintains an intrinsic cell cycle programme.\n\n### FGF response is reset in HH24g mesenchyme\n\nThe maintenance of BMP signalling in HH24g mesenchyme could also reduce proliferation via inhibition of FGFs produced by the apical ectodermal ridge. However, consistent with the observation that Grem1 expression is maintained in HH24g mesenchyme (Figure 2g,h), we have previously shown that Fgf8 expression is maintained in the apical ectodermal ridge above grafts of distal mesenchyme from much older wing buds - including in tissue that would have developed to stage HH36 if left in situ (or day 10 of incubation \u2013 the ridge normally regresses at HH29/30 in the chick wing at day 6\u20136.5 of incubation - Saiz-Lopez et al., 2017). To determine if HH24g distal mesenchyme cells are responsive to apical ectodermal ridge signals, we analysed a well-defined read-out of FGF signalling in the limb, Dusp6 (Eblaghie et al., 2003) - also known as Mkp3 and Pyst1 - see also Figure 4g\u2013j). RNA-seq read-counts show that Dusp6 expression decreases by 2.1-fold between HH24 and HH29, but that no significant difference in expression is observed between HH24g tissue and the equivalent region of contralateral control buds, indicating that the level of FGF signalling is approximately the same in the grafted cells as in the host wing bud (Figure 4a and b). We also analysed the expression of Sprouty2 (Spry2) that is another well-defined downstream target of FGF signalling (Chambers and Mason, 2000). Similar to Dusp6, expression of Spry2 decreases between HH24 and HH29 (1.7-fold), but is approximately equivalent in HH24g compared to control HH24 mesenchyme (Figure 4c and d). These data show that Dusp6 and Spry2 expression levels decrease over time, consistent with the maturation and regression of the apical ectodermal ridge, and that both are expressed in HH24g mesenchyme at similar level as in surrounding host tissue, thus indicating that grafted cells are responding to FGF signalling. Notably, cluster 3 contains genes encoding other members of the FGF family, including Fgf13 and Fgf18, which are expressed in distal mesenchyme at early stages (Munoz-Sanjuan et al., 1999; Mok et al., 2014) and that can be reset in a younger environment (Figure 1\u2014figure supplement 3, Supplementary file 5). RNA-seq read-counts show that Fgf18 decreases by 90-fold between HH24 and HH29, by which point it is undetectable by in situ hybridization (Figure 4e and f), but expression is only 3.4-fold higher in HH24 tissue compared to HH24g tissue. Therefore, taken together, these results show that HH24g mesenchyme is responsive to FGF signalling.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/37429/elife-37429-fig4-v2.jpg)\n\n**Figure 4.:** (a-e) Resetting of gene expression in HH24g mesenchyme.\u00a0Expression levels of Dusp6 (a), Spry2 (c) and Fgf18 (e) determined by RNA-seq. (b) In situ hybridization showing equivalent levels of Dusp6 (n\u00a0=\u00a03/3, (b), Spry2 (n\u00a0=\u00a03/3, (d), and Fgf18 (n\u00a0=\u00a03/3, (f) in HH24 and contralateral HH24g mesenchyme. (g\u2013j) FGF-soaked beads (j) n\u00a0=\u00a03/3), but not PBS-soaked beads (h) n\u00a0=\u00a03/3), up-regulate expression of Dusp6 after 6 hr (control left wing buds flipped horizontally \u2013 (g) and (i). (k) Flow cytometry of wing bud distal mesenchyme: PBS-soaked beads do not significantly affect proportion of cells in G1-phase after 6 hr compared to left wing controls (Pearson\u2019s \u03c72 test \u2013 p=0.5); FGF-soaked beads implanted at HH27 significantly increase G1-phase cells compared to left wing control after 6 hr (Pearson\u2019s \u03c72 test - p<0.0001), note boxes indicate separate experiments. Scale bars: HH24 buds, HH27 buds - 300 \u03bcm; HH29 buds - 200 \u03bcm.\n\nOur data suggest that autocrine BMP signalling is responsible for the intrinsic decline in proliferation in distal mesenchyme of the chick wing bud. However, we also examined if FGF signalling could also have an instructive role. To do this, we implanted beads soaked in recombinant FGF8 protein to the distal mesenchyme of chick wing buds at HH27, the stage at which proliferation rapidly starts to decline (Figure 1a) (Saiz-Lopez et al., 2017) and determined cell cycle profiles. RNA in situ hybridisation shows that FGF-soaked beads, but not PBS-soaked beads, implanted into HH27 wing buds for 6 hr increase expression of Dusp6 (Figure 4g\u2013j). Flow cytometry reveals that FGF-soaked beads, but not control PBS-soaked beads, significantly increase the proportion of cells in G1-phase compared to control left wing buds (Figure 4k\u2013 70.8 vs. 67.8%). Therefore, FGF signalling appears to have a slight inhibitory effect on proliferation, rather than instructively regulating it in a positive manner.\n\n## Discussion\n\nBy grafting late mesenchyme cells into an early epithelial environment, we have determined that the progressive loss of e-m signalling is not required for the decline and cessation of chick wing bud outgrowth at the end of the patterning phase. Our data reveals that the duration of mesenchyme cell proliferation is intrinsically determined but requires permissive signals from the apical ectodermal ridge: a distinction not recognized in previous approaches. For instance, surgical removal of the apical ectodermal ridge in the chick wing before HH24 causes apoptosis in the distal mesenchyme, but at later stages decreases proliferation (Dudley et al., 2002). In addition, genetic approaches that compromise apical ectodermal ridge signalling in the mouse limb also cause defective outgrowth (Lu et al., 2008; Mariani et al., 2008; Yu and Ornitz, 2008). The fact that mesenchyme expansion was naturally inhibited in these experiments therefore masked the intrinsic control of proliferation in this tissue.\n\nA schematic detailing the relationship between e-m signalling and mesenchyme proliferation during normal wing outgrowth is shown in Figure 5. At early stages of wing development (HH20), the Grem1-mediated inhibition of BMP signalling fulfils two main roles: to maintain the apical ectodermal ridge until HH28 as classically-described (Summerbell, 1974; Summerbell et al., 1973) and to permit a rapid rate of proliferation in distal mesenchyme cells as we have shown here. Around HH20, the mechanism of positional specification switches in mesenchyme progenitors from extrinsic signalling (humerus) (Cooper et al., 2011; Rosell\u00f3-D\u00edez et al., 2011) to an intrinsic timer (distal to elbow) (Saiz-Lopez et al., 2015). This intrinsic mechanism involves a progressive reduction in the proliferation rate as the elements are laid down in a proximal to distal sequence until HH28 (Saiz-Lopez et al., 2015) (Figure 5). Here, we showed that the deceleration in proliferation rate is caused by an increase in autocrine BMP signalling between HH24 and HH29 that overcomes Grem1-mediated antagonism in distal mesenchyme cells. Once the intrinsic cell cycle timer has run its course at HH29 and distal mesenchyme expansion ceases, high BMP signalling causes the apical ectodermal ridge to regress at HH29/30 (Figure 5). Interestingly, recent genetic evidence in the mouse has provided evidence that BMP signalling terminates the extension of the main body axis (Anderson et al., 2016).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/37429/elife-37429-fig5-v2.jpg)\n\n**Figure 5.:** HH20-HH24: antagonism of BMP signalling by Grem1 permits rapid mesenchyme proliferation and maintenance of the apical ectodermal ridge (purple) that permissively supports outgrowth. HH24-HH27: intrinsic rise in BMP signalling counters BMP antagonism and instructively decelerates mesenchyme proliferation rate. HH27-HH30: mesenchyme proliferation diminishes as patterning completes at HH28 and then BMP signalling inhibits FGF signalling in apical ectodermal ridge that then regresses.\n\nIt was unexpected that all the genes identified in the RNA-seq analysis that are predominantly expressed at early stages could be reset to some degree by the signalling environment (Cluster 3). This is consistent with the observations that early proximo-distal patterning is controlled by extrinsic signals \u2013 possibly retinoic acid signalling from the flank of the embryo (Cooper et al., 2011; Rosell\u00f3-D\u00edez et al., 2011). Notably, this cluster contains several genes encoding products known to be involved in maintaining a stem-cell-like state including Plzf (Zbtb16) (Liu et al., 2016) Sall4 (Yang et al., 2008) (also Sall1 and 3), Gbx2 (Tai and Ying, 2013) and Lin28b (Zhang et al., 2016). This raises the possibility that a gene regulatory network operates during early limb development to maintain the multipotency of mesenchyme cells and warrants further investigation.\n\nOpposing gradients of BMP ligands and their antagonists specify positional identities and regulate growth in a concentration-dependent manner in many developmental contexts (Bier and De Robertis, 2015). Thus, the intrinsic switch from BMP antagonism to BMP signalling in limb development that we describe here provides a mechanism by which cells can be instructed by autocrine BMP signalling in the absence of spatial gradients. It will be important to identify if this mechanism operates in other patterning systems.\n\n## Materials and methods\n\n### Chick husbandry and tissue grafting\n\nWild-type and GFP-expressing Bovans Brown chicken eggs were incubated and staged according to Hamburger Hamilton (Hamburger and Hamilton, 1951) HH19 is embryonic day 3, HH24 - day 4, HH27 - day 5, HH29 \u2013 day 6 and HH30, day 7. For tissue grafting, the polarizing region was discarded and a stripe of 150 \u00b5m of distal sub-AER mesenchyme about 500 \u00b5m long was dissected from HH27 wing buds. The ectoderm was removed after incubation in 0.25% trypsin at room temperature for 2 min and the mesenchyme was then cut into three cuboidal pieces. These were then placed in slits made using a fine sharpened tungsten needle between the apical ectodermal ridge and underlying mesenchyme in the mid-distal region of HH20 wing buds.\n\n### RNA sequencing analyses and clustering\n\nGrafts were made as described above and after 24 hr the 150 \u00b5m distal part of the graft was carefully dissected under a UV scope. Equivalent tissue was dissected from the contralateral HH24 wing bud and also 150 \u00b5m of tissue was dissected from three positions at the distal tips of HH24, HH27 and HH29 wing buds. Three replicate experiments were performed from each condition and the tissue was pooled before the RNA was extracted using Trizol reagent (Gibco), and sequenced on a HiSeq 2000 (Paired end readings of 50 bp - Instrument: ST300). Sequencing data was mapped using Hisat v2.0.3 (bam file generation). Salmon output was used to quantify the data (number of reads) (Patro et al., 2017). The raw data has been deposited in array express (https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-6437/). Twelve samples (three for each of the four conditions HH24, HH24g, HH27 and HH29) were checked for quality issues. This was done by manually inspecting the density plot, boxplots, PCA plots, correlation heatmap and distance plot, as well as using several automatic outlier tests, namely distance, Kolmogorov-Smirnov, correlation and Hoeffding's D. Based on this, one of the HH24 samples was excluded from the analysis.\n\nThe count data for the samples were normalised using trimmed mean of m-value normalisation and transformed with Voom, resulting in log2-counts per million with associated precision weights (Robinson and Oshlack, 2010; Law et al., 2014). A heat-map was made showing the correlation (Pearson) of the normalised data collapsed to the mean expression per group. A statistical analysis using an adjusted p-value<0.0005 and a fold-change\u00a0>2 identified 151 genes as differentially expressed in the two contrasts evaluated. Gene clusters were identified from the set of 151 unique genes that were differentially expressed in at least one of the statistical comparisons. The evaluation considered between two and 35 clusters using hierarchical, k-means, and PAM clustering methods based on the internal, stability and biological metrics provided from the clValid R package. The majority of internal validation and stability metrics indicated that either the lowest possible number or conversely the highest number evaluated were preferable. The metrics giving more nuanced information in the intermediate range were the Silhouette measure, and the Biological Homogeneity Index (BHI). Based on manual inspection, it was decided to use hierarchical clustering with k\u00a0=\u00a03 gene clusters, which showed favourable properties for both these measures. For KEGG pathway analyses, significant genes with adjusted p-value<0.05 and fold-change\u00a0>=\u00a02 from each comparison were analysed for enrichment of KEGG pathway membership using a hypergeometric test. Enrichment (p<0.05) was assessed for up and down-regulated genes separately.\n\n### Apoptosis analyses\n\nChick wing buds were dissected in PBS and transferred to Lysotracker (Life Technologies, L-7528) PBS solution (1:1000) in the dark. Wing buds were incubated for 1 hr at 37\u00b0C, washed in PBS, and fixed overnight in 4% PFA at 4\u00b0C. Wing buds were then washed in PBS and progressively dehydrated in a methanol series.\n\n### Whole mount in situ hybridisation\n\nEmbryos were fixed in 4% PFA overnight at 4\u00b0C, dehydrated in methanol overnight at \u221220\u00b0C, rehydrated through a methanol/PBS series, washed in PBS, then treated with proteinase K for 20 min (10 \u03bcg/ml\u22121), washed in PBS, fixed for 30 mins in 4% PFA at room temperature and then prehybridised at 69\u00b0C for 2 hr (50% formamide/50% 2x SSC). 1 \u03bcg of antisense DIG-labelled mRNA probes were added in 1 ml of hybridisation buffer (50% formamide/50% 2x SSC) at 69\u00b0C overnight. Embryos were washed twice in hybridisation buffer, twice in 50:50 hybridisation buffer and MAB buffer, and then twice in MAB buffer, before being transferred to blocking buffer (2% blocking reagent 20% lamb serum in MAB buffer) for 2 hr at room temperature. Embryos were transferred to blocking buffer containing anti-digoxigenin antibody (1:2000) at 4\u00b0C overnight, then washed in MAB buffer overnight before being transferred to NTM buffer containing NBT/BCIP and mRNA distribution visualised using a LeicaMZ16F microscope.\n\n### Immunohistochemistry\n\nEmbryos were fixed in 4% PFA for 2 hr on ice, washed in PBS and transferred to 30% sucrose overnight at 4\u00b0C. Embryos were frozen in OCT mounting medium, fixed to a chuck and cryosectioned immediately. Sections were dried for 2 hr and washed in PBS containing 0.1% triton for 10 min at room temperature. Sections were blocked in 0.1% Triton, 1\u00a0\u2013\u00a02% hings/serum for 1\u00a0\u2013\u00a01.5 hr at room temperature. Primary antibody solution was added (1:500 rabbit anti-PSMAD1/5/9 Cell Signalling Technology \u2013 D5B10) in PBS/0.1% triton/1\u00a0\u2013\u00a02% hings, before coverslips were added and slides placed in a humidified chamber at 4\u00b0C for 72 hr. Slides were then washed for 3 \u00d7 5 min in PBS at room temperature. Secondary antibody (1:500 anti-rabbit Alexa Fluor 594 Cell Signalling Technology \u2013 8889S) was added in PBS 0.1% triton/1\u00a0\u2013\u00a02% hings for 1 hr at room temperature. Slides were washed in PBS for 3 \u00d7 5 min and mounted in Vectashield/DAPI medium. Slides were left at 4\u00b0C and imaged the following day.\n\n### Flow cytometry\n\nDistal 150 \u03bcm blocks of mesenchyme tissue were dissected in ice cold PBS under a LeicaMZ16F microscope using a fine surgical knife pooled from replicate experiments (12), and digested into single-cell suspensions with trypsin (0.5%, Gibco) for 30 min at room temperature. Cells were briefly washed twice in PBS, fixed in 70% ethanol overnight, washed in PBS and re-suspended in PBS containing 0.1% Triton X-100, 50 \u00b5g/ml\u22121 of propidium iodide and 50 \u00b5g/ml\u22121 of RNase A (Sigma). Dissociated cells were left at room temperature for 20 min, cell aggregates were removed by filtration and single cells analysed for DNA content with a FACSCalibur flow cytometer and FlowJo software (Tree star Inc). Based on ploidy values cells were assigned in G1-, S-, or G2/M-phases and this was expressed as a percentage of the total cell number (>7500 cells in each case). Statistical significance of numbers of cells between pools of dissected wing bud tissue (10\u201312 in each pool) was determined by Pearson\u2019s \u03c72 tests to obtain two-tailed p-values (significantly different being a p-value of less than 0.05 - see (Chinnaiya et al., 2014) - statistical comparisons of cell cycle parameters between the left and right wing buds embryos showed that differences are less than 1%).\n\n### Bead implantation\n\nControl affigel blue beads (Biorad) were soaked in PBS/4 mM HCl. Affigel beads were soaked in Human Noggin (0.025 \u03bcg\u00a0\u03bcl\u22121 - R and D) or human BMP2 protein (0.025 \u03bcg\u00a0\u03bcl\u22121 and 0.05 \u03bcg\u00a0\u03bcl\u22121 - R and D) dissolved in PBS/4 mM HCl. Control heparin beads (Biorad) were soaked in PBS. Heparin beads were soaked in human FGF8 (0.5 \u03bcg\u00a0\u03bcl\u22121 - R and D dissolved in PBS. Beads were soaked for 2 hr and implanted into the distal mesenchyme using a sharp needle.\n",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "01aeafeb-b96c-4f94-a181-ea9330316c7f",
+      "submission_id": "a6de1faa-3aec-4e68-bfb6-8fa7f76ecb71",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marianne E Bronner, California Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.37429.021](https://doi.org/10.7554/eLife.37429.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: the authors were asked to provide a plan for revisions before the editors issued a final decision. What follows is the editors\u2019 letter requesting such plan.]\n\nThank you for sending your article entitled \"An intrinsic cell cycle timer terminates limb bud outgrowth\" for peer review at eLife. Your article is being reviewed by Marianne Bronner as the Reviewing and Senior Editor and three reviewers.\n\nGiven the list of essential revisions, including new experiments, the editors and reviewers invite you to respond with an action plan and timetable for the completion of the additional work. We plan to share your responses with the reviewers and then issue a binding recommendation.\n\nSummary:\n\nIn this paper, the authors attempt to show that the breakdown of reciprocal extrinsic signaling between the mesenchyme and the overlying epithelium is not required for the termination of proliferative outgrowth of limb. For this purpose, they performed RNA-seq of distal cells from HH24, HH27, HH29 wing buds as well as HH24g (grafts of old mesenchyme cells (HH27) to early HH20 wing buds, which is left until HH24). RNA-seq analyses revealed that, in HH24g, Bmp2/4/7 expression is maintained, whereas FGF and Grem1 expression is reset. Based on these results, authors draw conclusions that the mesenchyme cells terminate growth by an intrinsic cell cycle timer in the presence of e-m signalling. While the results are interesting, many changes are required to bring the manuscript to publishable form. Most critical is to perform further functional experiments to test the role of genes identified by RNA-seq to validate the model. It would also be critical to provide evidence that the permissive signals from the AER is required for the duration of mesenchyme cell proliferation. The major issues raised by the reviewers are listed below. If you think you can make these changes in 2-3 months, we would be willing to entertain a revised version of the manuscript. To this end, it would be very helpful if you could provide us with an outline of how you would address the reviewers' criticisms.\n\nEssential revisions:\n\n1) Three criteria for demonstrating a class of factors (e.g., BMPs) is responsible for an event (e.g., loss of proliferation in HH24g cells). (1) Is it present at the right place and time? Figure 2 addresses this. (2) Can it perform this function? Figure 3 K-L addresses this. (3) Removal of the factor should block the event. An argument can be made that the last criterion is most important. There is no experiment in this study that meets this criterion. Therefore, additional functional data are essential; otherwise this study remains much too inconclusive. Perhaps a Noggin bead, an siRNA-inhibition of Bmpr1A experiment, or a chemical inhibition of BMP signaling such as LDN-193189 can be used to test this idea. I think this is the biggest issue and needs to be addressed before publication.\n\n2) The authors never use the term \"autocrine\" in regard to BMP signaling in their model. But is it not the case? Please either use the term or explain why it is not appropriate.\n\n3) As the authors point out, it is important to exclude that a loss of AER-FGF is affecting cell cycle in the graft- especially because they find increased pSmad staining in the AER over their grafts. Previous work (Development 144, 479) demonstrates that AER-FGF8 expression persists in such grafts. But it is possible that within the mesenchyme an intrinsic timer regulates its competence to respond to the AER-FGF signal. Is Dusp6 enough to demonstrate these cells receive a normal FGF signal? Different targets likely respond to different signaling thresholds. The authors should also examine Spry2 and Spry4 in their grafts.\n\n4) Given the well-known effect of limb-bud BMP signalling on cell death, the authors should report what cell death occurred in their bead/flow cytometry experiment (Figure 3K-L).\n\n5) The authors need to expound some about why they propose BMP signaling is instructive and FGF signals are permissive. The \"young\" AER-FGF signal over the graft has no effect on the cell cycle \u2013 hence it is permissive. The authors need to provide further evidence that the permissive signals from the AER is required for the duration of mesenchyme cell proliferation. Why is the BMP signal instructive \u2013 a dose response experiment, where more BMP has a greater effect, would help clarify the use of this term.\n\n6) In this work, authors showed that, in HH24g, (a) Bmp2/4/7 expression is maintained (as late stage), (b) FGF and Grem1 expression is reset (as early stage) and (c) implanted (not endogenous) BMP represses cell proliferation in limb buds. Based on these data, authors concluded \"an intrinsic switch from BMP antagonism to BMP signalling controls the cell cycle program in distal mesenchyme during limb bud outgrowth\". There is a wild leap of logic in this conclusion from limited data presented here.\n\n7) Regarding the Bmp implantation experiment, concentration of Bmp or method was not included. Does this experiment reflect the function of endogenous Bmp on cell proliferation in limb buds?\n\n8) The term \"intrinsic cell cycle timer\" needs more explanation. Did authors mean that cells memorize the positional information as an epigenetic memory, gene expression, protein accumulation, or cell adhesion? If they consider all these possibilities, other conclusions should also be considered.\n\n9) There are no statistical or scientific reasons why authors selected Bmp, FGF, and Grem1 for further analyses. Please justify why you are looking at BMPs, FGFs, Gremlin. If these are the \"usual suspects\", one could disregard the RNA seq data. If other enriched genes, such as cyclinD1, BAMBI, SPON1, HOXC13, Sall and EphA4, were taken into consideration, their conclusions might have been changed.\n\nFrom Cluster 1, authors selected Bmp2 and Bmp7. In the text, it was said that \"This cluster notably includes genes encoding members of the Bone Morphogenetic Protein (BMP) family-Bmp2 and Bmp7. Genes encoding other known signaling molecules are not present in cluster1\". I do not understand why authors did not perform GO, or similar analyses to select candidates. As authors are interested in the mechanisms of intrinsic cell cycle timer, genes related to proliferation or epigenetic modifications should be also considered. Following genes seem to be highly relevant.\n\nCCND1 (cyclin1)\n\nSPON1(spondin1, a heparin-binding extracellular matrix glycoprotein, which can control bone metabolism, via possible disruption of latent TGF-\u03b2 activation.)\n\nARID5B (Transcription coactivator that make complex with PHF2, which mediates demethylation of H3K9me2)\n\nCREB5 (Binds DNA as a homodimer or as a heterodimer with JUN or ATF2/CREBP1)\n\nFrom Cluster 2, authors selected Fgfr2, but again they did not explain the statistical reasons. Cluster 2 contains the following interesting genes, but not selected for further analyses.\n\nBAMBI (BMP and Activin Membrane Bound Inhibitor)\n\nHoxC13 (Controls transcription of genes, involved cell proliferation, such as CCND1)\n\nFBLN1 (a calcium binding ECM and plasma glycoprotein. Required for normal limb morphogenesis)\n\nRDH10 (retinol dehydrogenase 10. Required for normal limb morphogenesis)\n\nLGR5 (GPCR class A receptor. A member of the Wnt signaling pathway. R-spondin proteins are their ligands)\n\nFrom cluster 3, they selected FGF and Grem1, again without any statistical reasons. Cluster 3 contains other genes known to be involved in setting positional values of limbs or limb morphogenesis, such as Sall1, 3, 4, EphA4 (receptor for ephrin-A2, which regulates position-specific cell affinity in the chicken limb bud), Dlx2 (TF, Required for limb development). Sall1 and Sall3 contribute to the autopod development, by competing with Hoxa13-d13 for a target sequence in the EphA4 upstream region. Such an antagonistic interaction between Hox and Sall in the limb suggested to be contributed to the fine-tuning of local Hox activity leading to proper morphogenesis of cartilage element (i.e. controlling the positional value of the limb along the proximo-disal axis).\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"An intrinsic cell cycle timer terminates limb bud outgrowth\" for further consideration at eLife. Your revised article has been favorably evaluated by Marianne Bronner (Senior Editor) and three reviewers.\n\nThe manuscript has been improved but there are some issues remaining that need to be addressed before acceptance, as outlined below:\n\n1) The paper ends with \"It will be important to identify if this mechanismoperates in other patterning systems.\" Considering \"this mechanism\" as BMP signaling that terminates growth, I strongly suggest the authors consider citing Anderson et al., 2016. This paper provides genetic evidence that BMP signals terminate axis extension (Figure 10 is a summary model). The paragraph at the top of page 20 discusses this idea.\n\n2) KEGG analyses\n\ni) It's not clear if KEGG is suitable for identifying pathways in Gallus gallus. According to Supplementary file 2, KEGG recognizes pathways for only 24 genes out of 99 genes (fail to recognize SALL3, GREM1, DLX2, EPHA4 etc.). This fact is not even mentioned in the text. ii) Supplementary file names are still not organized. For example, Supplementary file 2 is named \"5159_1_supp_876279_pc44ty.xls\", and thus I was not able to tell which file is for HH24g-HH24 pair or HH24g-HH29 pair. iii) Description of KEGG analyses is incomplete in Supplementary files. For example, in Supplementary file 2, KEGG Pathways of NPY2R is described as \"Neuroactive ligand-receptor in\u2026\". iv) Description of KEGG pathways in Supplementary fileSupplementary file 1, Supplementary file 2 and Figure 1E is not consistent. For example, in Supplementary file 2, KEGG Pathways of KCNQ1 is described as \"Adrenergic signaling in cardio\u2026\", but in Figure 1E, it was \"Adrenergic\". This should be explained at least in Figure legend. v) In Figure 1E, HH24g vs. HH29 is on the left side in Up-regulated pathways, but on the right side in Down-regulated pathways. It is confusing. They should be on the same side.\n\n3) BMP and Noggin beads implantation.i) In Figure 3K, control for HH24g+Nog+8h is not appropriate. Controls should be limb buds implanted with PBS/4mM HCl (i.e. vehicle)-soaked beads (i.e. HH24g-PBS/4mM HCl+8h). ii) In Figure 3K, controls for HH20+BMP2low/higH+8h are not appropriate. Controls should be limb buds implanted with PBS/4mM HCl -soaked beads (i.e. HH20-PBS/4mM HCl+8h). iii) In Figure 3L, control is not appropriate. Again, control should be limb buds implanted with PBS/4mM HCl-soaked beads.\n\n4) FGF beads implantation. i) Vehicle for FGF beads implantation is not mentioned in MM. ii) In Figure 4G, control should be limb buds implanted with vehicle-soaked beads. iii) In Figure 4I, again, control should be HH27+vehicle+6h.\n",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "eb4f56a2-764e-4b14-8745-c87092e0266c",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C1",
+      "claim": "HH19 corresponds to embryonic day 3 in chick development",
+      "claim_type": "EXPLICIT",
+      "source": "HH19 is embryonic day 3, HH24 - day 4, HH27 - day 5, HH29 \u2013 day 6 and HH30, day 7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section describing the staging system used",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "3fdc64ac-d101-4abe-a881-f5e037d14483",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C2",
+      "claim": "HH24 corresponds to embryonic day 4 in chick development",
+      "claim_type": "EXPLICIT",
+      "source": "HH19 is embryonic day 3, HH24 - day 4, HH27 - day 5, HH29 \u2013 day 6 and HH30, day 7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section describing the staging system used",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "5b67e84e-756d-4d7c-a184-4220b44c89ff",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C3",
+      "claim": "HH27 corresponds to embryonic day 5 in chick development",
+      "claim_type": "EXPLICIT",
+      "source": "HH19 is embryonic day 3, HH24 - day 4, HH27 - day 5, HH29 \u2013 day 6 and HH30, day 7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section describing the staging system used",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "4e384f1a-75ca-4b1e-95a5-42dd24111163",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C4",
+      "claim": "HH29 corresponds to embryonic day 6 in chick development",
+      "claim_type": "EXPLICIT",
+      "source": "HH19 is embryonic day 3, HH24 - day 4, HH27 - day 5, HH29 \u2013 day 6 and HH30, day 7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section describing the staging system used",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "f83f9bd4-7f58-4df4-9851-5a2f0737a7b2",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C5",
+      "claim": "HH30 corresponds to embryonic day 7 in chick development",
+      "claim_type": "EXPLICIT",
+      "source": "HH19 is embryonic day 3, HH24 - day 4, HH27 - day 5, HH29 \u2013 day 6 and HH30, day 7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section describing the staging system used",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "09311cfa-00e2-4f21-8645-46deadeef556",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C6",
+      "claim": "Distal mesenchyme cells from late stage chick wing buds complete proliferative outgrowth by an intrinsic cell cycle timer when grafted to younger wing buds",
+      "claim_type": "EXPLICIT",
+      "source": "RNA sequencing reveals that distal mesenchyme cells complete proliferative outgrowth by an intrinsic cell cycle timer in the presence of e-m signalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by RNA-seq data and grafting experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "9002cebf-cdf6-4ad7-8dd6-6d3a892fff9e",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C7",
+      "claim": "Epithelial-mesenchyme signalling is required permissively to allow the intrinsic cell cycle timer to run its course",
+      "claim_type": "EXPLICIT",
+      "source": "In this process, e-m signalling is required permissively to allow the intrinsic cell cycle timer to run its course.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data showing grafted cells respond to FGF signaling",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "9a755ec8-546c-4893-9d01-bdbf9d00d158",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C8",
+      "claim": "A temporal switch from BMP antagonism to BMP signalling controls the intrinsic cell cycle timer during limb outgrowth",
+      "claim_type": "EXPLICIT",
+      "source": "We provide evidence that a temporal switch from BMP antagonism to BMP signalling controls the intrinsic cell cycle timer during limb outgrowth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by gene expression data and functional experiments with BMP and Noggin",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "0c41fec9-694f-474e-9500-b833eb5fefbb",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C9",
+      "claim": "Extrinsic signals and intrinsic timers can operate together in parallel in antero-posterior patterning of the limb",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it has become evident that both processes can operate together - either in parallel, such as in antero-posterior patterning of the limb (thumb to little finger) (Harfe et al., 2004; Towers et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "2ab92a58-b142-4a2c-ac2a-760143a9ba6c",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C10",
+      "claim": "Extrinsic signals and intrinsic timers can operate together in parallel in dorso-ventral patterning of the neural tube",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it has become evident that both processes can operate together - either in parallel, such as in antero-posterior patterning of the limb (thumb to little finger) (Harfe et al., 2004; Towers et al., 2011) and in dorso-ventral patterning of the neural tube (Dessaud et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "47489a57-6eb4-42e5-80f7-b287073cefb4",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C11",
+      "claim": "Extrinsic signals and intrinsic timers can operate together sequentially in proximo-distal patterning of the limb",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it has become evident that both processes can operate together - either in parallel, such as in antero-posterior patterning of the limb (thumb to little finger) (Harfe et al., 2004; Towers et al., 2011) and in dorso-ventral patterning of the neural tube (Dessaud et al., 2007) - or sequentially, such as in proximo-distal patterning of the limb (shoulder to finger tips) (Cooper et al., 2011; Rosell\u00f3-D\u00edez et al., 2014; Saiz-Lopez et al., 2015; Saiz-Lopez et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "96a36023-ccd3-42db-b86f-c4b23ea0a81d",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C12",
+      "claim": "During early stages of proximo-distal patterning of the chick wing (stage HH19), signals from the main body of the embryo specify proximal identity (humerus)",
+      "claim_type": "EXPLICIT",
+      "source": "During early stages of proximo-distal patterning of the chick wing (stage Hamburger Hamilton HH19 \u2013 see Materials and methods for embryonic days), signals from the main body of the embryo specify proximal identity (humerus) (Cooper et al., 2011; Mercader et al., 1999; Mercader et al., 2000; Rosell\u00f3-D\u00edez et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "1b33d5cc-3cc2-4cda-a967-5e91d990f0bf",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C13",
+      "claim": "Once distal mesenchyme cells of the wing bud are displaced by growth away from proximal signals, there is a switch to an intrinsic timing mechanism that specifies distal identity (elbow to digits)",
+      "claim_type": "EXPLICIT",
+      "source": "Once distal mesenchyme cells of the wing bud are displaced by growth away from proximal signals, there is a switch to an intrinsic timing mechanism that specifies distal identity (elbow to digits) (Saiz-Lopez et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "5bc2446b-23e7-473b-b5f3-9eaaffbca36f",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C14",
+      "claim": "The intrinsic timer involves cells executing a programme of proliferation, expressing regulators of distal position (i.e. Hoxa13) and altering their cell surface properties",
+      "claim_type": "EXPLICIT",
+      "source": "This intrinsic timer involves cells executing a programme of proliferation, expressing regulators of distal position (i.e. Hoxa13) and altering their cell surface properties, which are considered to encode position along the proximo-distal axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the characteristics of the intrinsic timer mechanism based on previous observations",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "003de452-b36f-4e1a-a8c3-68723f08bfb5",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C15",
+      "claim": "Distal limb bud mesenchyme cells produce a factor that maintains the overlying apical ectodermal ridge",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, distal limb bud mesenchyme cells produce a factor that maintains the overlying apical ectodermal ridge (Zwilling and Hansborough, 1956)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "b3fc8a0b-22b8-4719-8d61-cb5928134446",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C16",
+      "claim": "The apical ectodermal ridge is a thickening of the distal epithelium",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, distal limb bud mesenchyme cells produce a factor that maintains the overlying apical ectodermal ridge (Zwilling and Hansborough, 1956) - a thickening of the distal epithelium",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition based on established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "038c61c6-1b39-4238-aa7f-dc46fb4f3386",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C17",
+      "claim": "The apical ectodermal ridge is required for bud outgrowth until HH29/30",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, distal limb bud mesenchyme cells produce a factor that maintains the overlying apical ectodermal ridge (Zwilling and Hansborough, 1956) - a thickening of the distal epithelium, which is required for bud outgrowth until HH29/30 (Saiz-Lopez et al., 2015; Saunders, 1948; Summerbell, 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "b0e179ee-f80c-4cd2-8a92-af4eee18cd69",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C18",
+      "claim": "The factor that maintains the apical ectodermal ridge is the Bone Morphogenetic Protein (BMP) antagonist Gremlin1 (Grem1)",
+      "claim_type": "EXPLICIT",
+      "source": "This factor is the Bone Morphogenetic Protein (BMP) antagonist Gremlin1 (Grem1), which maintains expression of genes encoding Fibroblast Growth Factors (FGFs) in the apical ectodermal ridge until HH27 (Merino et al., 1999; Pizette and Niswander, 1999; Z\u00fa\u00f1iga et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "be24fb9b-0661-4bf6-a29d-58d9dbd31725",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C19",
+      "claim": "Gremlin1 maintains expression of genes encoding Fibroblast Growth Factors (FGFs) in the apical ectodermal ridge until HH27",
+      "claim_type": "EXPLICIT",
+      "source": "This factor is the Bone Morphogenetic Protein (BMP) antagonist Gremlin1 (Grem1), which maintains expression of genes encoding Fibroblast Growth Factors (FGFs) in the apical ectodermal ridge until HH27 (Merino et al., 1999; Pizette and Niswander, 1999; Z\u00fa\u00f1iga et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "3d281eb7-40b1-47da-9596-a63777a09575",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C20",
+      "claim": "Reciprocal signalling between the apical ectodermal ridge and the underlying mesenchyme is considered to maintain outgrowth, first by repressing apoptosis, and then by permissively maintaining cell proliferation",
+      "claim_type": "EXPLICIT",
+      "source": "Reciprocal signalling between the apical ectodermal ridge and the underlying mesenchyme is considered to maintain outgrowth, first by repressing apoptosis, and then by permissively maintaining cell proliferation (Dudley et al., 2002; Saiz-Lopez et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "f2291c3e-be11-477f-aa32-748d62665c8c",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C21",
+      "claim": "The breakdown of the epithelial-mesenchyme (e-m signalling) feedback loop at HH27, and the subsequent loss of apical ectodermal ridge signalling, is considered necessary to terminate limb bud outgrowth at the end of the patterning phase",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the breakdown of the epithelial-mesenchyme (e-m signalling) feedback loop at HH27, and the subsequent loss of apical ectodermal ridge signalling, is considered necessary to terminate limb bud outgrowth at the end of the patterning phase (Zwilling and Hansborough, 1956; Scherz et al., 2004; Verheyden and Sun, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the longstanding view supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "7bdab7c4-3200-40a8-88e3-e4d739d8793a",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C22",
+      "claim": "The final distal phalanx is laid down at around HH28 in the chick wing",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the final distal phalanx is laid down at around HH28 in the chick wing (Saunders, 1948; Summerbell, 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "4d848e61-88e4-43c5-be1c-283a1ca37cf7",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C23",
+      "claim": "Later growth of the limb after the apical ectodermal ridge has regressed is caused by the expansion of osteogenic progenitor cells in the developing long bones",
+      "claim_type": "EXPLICIT",
+      "source": "Later growth of the limb after the apical ectodermal ridge has regressed is caused by the expansion of osteogenic progenitor cells in the developing long bones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about limb development",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "3d83ea41-6627-4ddf-9655-c59d4ef81a43",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C24",
+      "claim": "Grafts of HH27 mesenchyme cells expressing Green Fluorescent Protein (GFP) that were made to younger HH20 buds and left to develop for 24 hr until HH24 completed their proliferation programme in the presence of an overlying host apical ectodermal ridge",
+      "claim_type": "EXPLICIT",
+      "source": "However, we recently showed that grafts of HH27 mesenchyme cells expressing Green Fluorescent Protein (GFP) that were made to younger HH20 buds, and which were left to develop for 24 hr until HH24 (now referred to as HH24 graft or HH24g), completed their proliferation programme in the presence of an overlying host apical ectodermal ridge (Saiz-Lopez et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by the authors",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "adef175e-8d21-4e2d-8926-cdc9ad7df463",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C25",
+      "claim": "HH24g mesenchyme (distal 150 microns of graft) has a similar cell cycle profile to HH29 mesenchyme (stage of donor limb), rather than contralateral HH24 mesenchyme (stage of host)",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, HH24g mesenchyme (distal 150 microns of graft) has a similar cell cycle profile to HH29 mesenchyme (stage of donor limb), rather than contralateral HH24 mesenchyme (stage of host \u2013 Figure 1a - red lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "a0731034-86fa-4408-9d08-eb849bf6b119",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C26",
+      "claim": "Wing buds that develop with HH27-HH20 grafts produce the three main segments of the wing, but the autopod (digits and wrist) is very stunted due to the reduced growth of the grafted tissue relative to host tissue",
+      "claim_type": "EXPLICIT",
+      "source": "Although wing buds that develop with these grafts produce the three main segments of the wing, the autopod (digits and wrist) is very stunted due to the reduced growth of the grafted tissue relative to host tissue (Saiz-Lopez et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "494abe05-bc0e-420d-b084-08cf8967b20c",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C27",
+      "claim": "RNA-seq was performed on pooled blocks of distal cells from HH24, HH24g, HH27 and HH29 chick wing buds",
+      "claim_type": "EXPLICIT",
+      "source": "To achieve this, we performed RNA-seq on pooled blocks of distal cells from HH24, HH24g, HH27 and HH29 chick wing buds (three replicates of 12 blocks taken from distal tissue excluding the polarizing region\u2013 note one HH24 sample failed quality control - see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure performed",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "f2c46a06-8efb-422f-b6f2-af5f779f6606",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C28",
+      "claim": "The region of undifferentiated mesenchyme is considered to extend proximally beneath the apical ectodermal ridge by 200 \u2013 300 microns and to remain at a consistent length throughout outgrowth",
+      "claim_type": "EXPLICIT",
+      "source": "The region of undifferentiated mesenchyme is considered to extend proximally beneath the apical ectodermal ridge by 200 \u2013 300 microns and to remain at a consistent length throughout outgrowth (Summerbell et al., 1973)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "b43204a0-649b-4511-92c9-1be39176a063",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C29",
+      "claim": "RNA was extracted from the distal 150 microns of control buds and grafts to ensure consistency between all samples",
+      "claim_type": "EXPLICIT",
+      "source": "but for our analyses, we used RNA extracted from the distal 150 microns of control buds and grafts to ensure consistency between all samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "78286aeb-c0a5-490c-9d1c-16f940138722",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C30",
+      "claim": "154 genes are differentially expressed (>2 fold difference at a p-value of <0.0005) between HH24g-HH24 and HH24g-HH29 comparisons",
+      "claim_type": "EXPLICIT",
+      "source": "This identified 154 genes that are differentially expressed (>2 fold difference at a p-value of <0.0005) between the two comparisons: 55 genes between the HH24g-HH24 pair and 99 genes between the HH24g-HH29 pair (Supplementary files 1 and 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the RNA-seq analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "f4ecb3f0-9264-4f88-b99e-cd6a8429131f",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C31",
+      "claim": "55 genes are differentially expressed between the HH24g-HH24 pair",
+      "claim_type": "EXPLICIT",
+      "source": "This identified 154 genes that are differentially expressed (>2 fold difference at a p-value of <0.0005) between the two comparisons: 55 genes between the HH24g-HH24 pair and 99 genes between the HH24g-HH29 pair (Supplementary files 1 and 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the RNA-seq analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "94c2f724-910b-4268-93dc-83020e300d9a",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C32",
+      "claim": "99 genes are differentially expressed between the HH24g-HH29 pair",
+      "claim_type": "EXPLICIT",
+      "source": "This identified 154 genes that are differentially expressed (>2 fold difference at a p-value of <0.0005) between the two comparisons: 55 genes between the HH24g-HH24 pair and 99 genes between the HH24g-HH29 pair (Supplementary files 1 and 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the RNA-seq analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "51bbf502-42ef-4809-bf6c-cccd9a5322cc",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C33",
+      "claim": "Overall gene expression levels in HH24g distal cells are closer to HH24 than to HH29 cells",
+      "claim_type": "EXPLICIT",
+      "source": "Pearson correlation of the normalised data reveals that overall gene expression levels in HH24g distal cells are closer to HH24 than to HH29 cells, suggesting a good degree of resetting behaviour (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on Pearson correlation analysis shown in Figure 1d",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "df5d1ee9-a82b-4db7-8c66-9c35a864c5cb",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C34",
+      "claim": "There are five down-regulated pathways identified by the KEGG analyses in HH24g compared to HH29 distal cells - focal adhesion, ECM (extracellular matrix), gap junction, MAPK (Mitogen-Activated Protein Kinase) and actin cytoskeleton",
+      "claim_type": "EXPLICIT",
+      "source": "There are five down-regulated pathways identified by the KEGG analyses in HH24g compared to HH29 distal cells - focal adhesion, ECM (extracellular matrix), gap junction, MAPK (Mitogen-Activated Protein Kinase) and actin cytoskeleton - suggesting a general reset of genes in these pathways that increase in expression over time between HH24 and HH29.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from KEGG pathway analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "50054ebe-76b0-4239-99f2-2ce56bde4c4b",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C35",
+      "claim": "There are four up-regulated pathways identified by the KEGG analyses in HH24g compared to HH24 distal cells - ECM, focal adhesion, adrenergic signalling, TGF\u03b2 (Transforming Growth Factor Beta)",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, there are four up-regulated pathways identified by the KEGG analyses in HH24g compared to HH24 distal cells - ECM, focal adhesion, adrenergic signalling, TGF\u03b2 Transforming Growth Factor Beta) - suggesting maintained expression of genes in these pathways that generally increase in expression over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from KEGG pathway analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "1e7ae869-ad1f-4281-bc38-e8e09098025b",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C36",
+      "claim": "The MAPK pathway is up-regulated in HH24g compared to HH29 distal cells",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the MAPK pathway is also up-regulated in HH24g compared to HH29 distal cells, showing the complex nature of this signalling pathway, and suggesting some genes in this pathway that decrease in expression over time can be reset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from KEGG pathway analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "7800f4a7-f6b6-45f7-934e-a81560d64330",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C37",
+      "claim": "Hierarchical clustering analyses divided the 154 differentially expressed genes into three clusters",
+      "claim_type": "EXPLICIT",
+      "source": "To identify genes that share similar behaviour across the two pairwise contrasts, we performed hierarchical clustering analyses of the 154 genes significantly altered in expression between the HH24g/HH24 and HH24g/HH29 datasets. This divided the genes into three clusters (See Materials and methods \u2013 note three genes were excluded that fell into more than one cluster).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the clustering analysis performed",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "11d56d99-36b3-42e9-9e56-5afe6c2aca74",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C38",
+      "claim": "Cluster 1 contains 54 genes that increase in expression between HH24 and HH29 during normal development and are maintained in HH24g distal cells",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster 1 (Figure 1f, Figure 1\u2014figure supplement 1, Supplementary file 3) contains 54 genes that increase in expression between HH24 and HH29 during normal development (black line) and are maintained in HH24g distal cells (maintain a >2 fold increase in expression compared to equivalent area in contralateral HH24 buds \u2013 red line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from clustering analysis shown in Figure 1f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "d76875be-41ff-4d87-842e-ec70e42cba77",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C39",
+      "claim": "Cluster 2 contains 44 genes that normally increase in expression between HH24 and HH29 and are not maintained in HH24g distal cells",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster 2 (Figure 1g, Figure 1\u2014figure supplement 2 and Supplementary file 4) contains 44 genes that normally increase in expression between HH24 and HH29 (black line) and are not maintained in HH24g distal cells (>2 fold decrease in expression compared to HH29 buds - red line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from clustering analysis shown in Figure 1g",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "65a44915-eb88-4b3f-964c-644be5700a08",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C40",
+      "claim": "Cluster 3 contains 53 genes that decrease in expression between HH24 and HH29 and are reset in HH24g grafts",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster 3 (Figure 1h, Figure 1\u2014figure supplement 3 and Supplementary file 5) contains 53 genes that decrease in expression between HH24 and HH29 (black line) and are reset in HH24g grafts (>2 fold increase in expression compared to HH29 buds - red line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from clustering analysis shown in Figure 1h",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "29cff4fd-1c5e-45f1-b458-d4197530bf72",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C41",
+      "claim": "Genes in cluster one reflect stability of expression while genes in clusters 2 and 3 show reversibility of expression",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, genes in cluster one reflect stability of expression while genes in clusters 2 and 3 show reversibility of expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the clustering results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "555dd85a-1fbf-4b8d-a541-00cb2baf2ba3",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C42",
+      "claim": "A cluster containing genes whose decrease in expression over time is maintained in HH24g distal cells was not found",
+      "claim_type": "EXPLICIT",
+      "source": "In consensus with the KEGG analyses, a cluster containing genes whose decrease in expression over time is maintained in HH24g distal cells was not found, indicating that the young environment potently reactivates gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the clustering analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "96f04c3d-7b3a-4348-8f13-11dffdf3983b",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C43",
+      "claim": "Many genes that are preferentially expressed during early stages of wing development can be reset to some degree",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that many genes that are preferentially expressed during early stages of wing development can be reset to some degree (Cluster 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the clustering results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "725a933e-95ee-48e8-af5f-94a27b086896",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C44",
+      "claim": "Later expressed genes show differential resetting behaviour in an earlier environment",
+      "claim_type": "EXPLICIT",
+      "source": "However, later expressed genes show differential resetting behaviour in an earlier environment (Clusters 1 and 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the clustering results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "50548481-e254-442c-8c12-c28ff9050713",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C45",
+      "claim": "Bmp2 and Bmp7 are in cluster 1",
+      "claim_type": "EXPLICIT",
+      "source": "This highlighted the TGF\u03b2 pathway (Figure 1e) and Bmp2 and Bmp7 in cluster 1 that encode members of the Bone Morphogenetic Protein (BMP) family, which are signalling ligands of the TGF\u03b2 superfamily (Figure 1f, Figure 1\u2014figure supplement 1, Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the clustering analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "a00991fb-17f6-435b-a910-7a04e11675c5",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C46",
+      "claim": "BMP signalling is implicated in terminating outgrowth at the end of the patterning phase by inhibiting FGF signalling by the apical ectodermal ridge",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, BMP signalling is implicated in terminating outgrowth at the end of the patterning phase by inhibiting FGF signalling by the apical ectodermal ridge (Pizette and Niswander, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "76ec14ff-8f4e-41f9-acee-21326dde6867",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C47",
+      "claim": "The expression of Bmp2 increases by 5.3-fold between HH24 and HH29",
+      "claim_type": "EXPLICIT",
+      "source": "Read-counts of the RNA-seq data show that the expression of Bmp2 increases by 5.3-fold between HH24 and HH29 \u2013 similar to the difference in expression in HH24g tissue compared to HH24 tissue (6.2-fold - log2 scale is shown), thus showing that late expression levels of Bmp2 are maintained in an earlier environment (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq read-count data shown in Figure 2a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "a4d7ae87-8450-4e80-867d-15e0a2d50342",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C48",
+      "claim": "The difference in Bmp2 expression in HH24g tissue compared to HH24 tissue is 6.2-fold",
+      "claim_type": "EXPLICIT",
+      "source": "Read-counts of the RNA-seq data show that the expression of Bmp2 increases by 5.3-fold between HH24 and HH29 \u2013 similar to the difference in expression in HH24g tissue compared to HH24 tissue (6.2-fold - log2 scale is shown), thus showing that late expression levels of Bmp2 are maintained in an earlier environment (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq read-count data shown in Figure 2a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "25cb39ec-f56e-4e10-80df-06291899b51e",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C49",
+      "claim": "Late expression levels of Bmp2 are maintained in an earlier environment",
+      "claim_type": "EXPLICIT",
+      "source": "Read-counts of the RNA-seq data show that the expression of Bmp2 increases by 5.3-fold between HH24 and HH29 \u2013 similar to the difference in expression in HH24g tissue compared to HH24 tissue (6.2-fold - log2 scale is shown), thus showing that late expression levels of Bmp2 are maintained in an earlier environment (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the RNA-seq data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "d19e7043-d5d8-481b-8d40-8c2f54983ee1",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C50",
+      "claim": "A 1.5-fold increase in Bmp7 expression occurs between HH24 and HH29",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, a 1.5-fold increase in Bmp7 expression occurs between HH24 and HH29, and the difference between expression levels in HH24g tissue compared to HH24 tissue is 2.5-fold (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data shown in Figure 2c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "e8e0a3fa-7539-4b88-831e-d3f9f056f7fc",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C51",
+      "claim": "The difference between Bmp7 expression levels in HH24g tissue compared to HH24 tissue is 2.5-fold",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, a 1.5-fold increase in Bmp7 expression occurs between HH24 and HH29, and the difference between expression levels in HH24g tissue compared to HH24 tissue is 2.5-fold (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data shown in Figure 2c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "c16af367-973e-4e77-b3a3-de6dc0b462f5",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C52",
+      "claim": "Bmp4 has a prominent role in limb development",
+      "claim_type": "EXPLICIT",
+      "source": "We also analysed the expression of Bmp4 which has a prominent role in limb development (Selever et al., 2004; B\u00e9nazet et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "855b4be4-855e-41d8-983a-4868636b99c5",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C53",
+      "claim": "Bmp4 expression levels decrease by two-fold between HH24 and HH29",
+      "claim_type": "EXPLICIT",
+      "source": "The RNA-seq data indicates that Bmp4 expression levels decrease by two-fold between HH24 and HH29 and that expression levels are approximately equivalent between HH24 and HH24g tissue (Figure 2e, note stronger expression in ridge at HH24 compared to Bmp2/7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data shown in Figure 2e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "4a39cde0-8445-4378-ab59-8bbb421cb227",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C54",
+      "claim": "Bmp4 expression levels are approximately equivalent between HH24 and HH24g tissue",
+      "claim_type": "EXPLICIT",
+      "source": "The RNA-seq data indicates that Bmp4 expression levels decrease by two-fold between HH24 and HH29 and that expression levels are approximately equivalent between HH24 and HH24g tissue (Figure 2e, note stronger expression in ridge at HH24 compared to Bmp2/7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data shown in Figure 2e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "acc47536-4b42-4bd7-8bd1-60407890ad3f",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C55",
+      "claim": "Slightly enhanced Bmp4 expression could be detected by in situ hybridization in the region of the grafted tissue in HH24g buds in comparison to the equivalent position in contralateral buds",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, slightly enhanced expression could be detected by in situ hybridization in the region of the grafted tissue in HH24g buds (asterisk - Figure 2f) in comparison to the equivalent position in contralateral buds.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on in situ hybridization data shown in Figure 2f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "30e14488-ef40-43bd-91d5-383cc3b4e525",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C56",
+      "claim": "Cluster 3 contains Gremlin1 (Grem1), which encodes the BMP antagonist that maintains the apical ectodermal ridge",
+      "claim_type": "EXPLICIT",
+      "source": "However, cluster 3, which comprises genes that decrease over time and that demonstrate resetting behaviour, contains (Gremlin1) Grem1, which encodes the BMP antagonist that maintains the apical ectodermal ridge (Figure 1\u2014figure supplement 3, Supplementary file 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the clustering analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "119563a7-094a-4aca-a329-05893bc23f80",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C57",
+      "claim": "Grem1 expression levels are reduced by 17.2-fold between HH24 and HH29",
+      "claim_type": "EXPLICIT",
+      "source": "Between HH24 and HH29, Grem1 expression levels are reduced by 17.2-fold until they are almost undetectable by in situ hybridization (Figure 2g and h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data and in situ hybridization shown in Figure 2g and h",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "9f0e062a-a39c-477f-99ff-17c49e8c6838",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C58",
+      "claim": "Grem1 expression levels are approximately the same in HH24 and HH24g mesenchyme",
+      "claim_type": "EXPLICIT",
+      "source": "However, Grem1 expression levels are approximately the same in HH24 and HH24g mesenchyme (Figure 2g and h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data and in situ hybridization shown in Figure 2g and h",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "f2ca7873-cbf1-422f-ba90-5b509499ee12",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C59",
+      "claim": "Grem1 could antagonise BMP2/4/7 signalling in HH24g mesenchyme",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that Grem1 could antagonise BMP2/4/7 signalling in HH24g mesenchyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the expression data",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "b0d2bf2e-8acc-46ec-9a5e-f97f969351f8",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C60",
+      "claim": "Msx2 is a bona-fide target of BMP signalling",
+      "claim_type": "EXPLICIT",
+      "source": "To analyse BMP signalling in HH24g mesenchyme, we selected a bona-fide target, Msx2 (Pizette et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "06d315d3-d79f-4993-b67c-06f2dbb62b26",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C61",
+      "claim": "Msx2 has a 2.8-fold increase between HH24 and HH29",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-seq data shows that Msx2 has a similar profile to both Bmp2 and Bmp7: a 2.8-fold increase between HH24 and HH29 and a two-fold difference in HH24g tissue compared to HH24 tissue (Figure 3a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data shown in Figure 3a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "5fbd3d4f-59ec-44f9-bf81-c3826251f9cf",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C62",
+      "claim": "Msx2 has a two-fold difference in HH24g tissue compared to HH24 tissue",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-seq data shows that Msx2 has a similar profile to both Bmp2 and Bmp7: a 2.8-fold increase between HH24 and HH29 and a two-fold difference in HH24g tissue compared to HH24 tissue (Figure 3a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data shown in Figure 3a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "4017e6b7-0863-48eb-826b-c99341472140",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C63",
+      "claim": "Phosphorylated SMAD1/5/9 is the signal transducer for BMP2/4/7",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this finding, immunofluorescence on sections using an antibody that recognizes phosphorylated SMAD1/5/9 \u2013 the signal transducer for BMP2/4/7 \u2013 reveals increased levels in later wing buds (Figure 3c\u2013e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about BMP signaling",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "0faf40b9-1317-42c7-b45e-edcc6a356a2f",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C64",
+      "claim": "Phosphorylated SMAD1/5/9 levels increase in later wing buds",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this finding, immunofluorescence on sections using an antibody that recognizes phosphorylated SMAD1/5/9 \u2013 the signal transducer for BMP2/4/7 \u2013 reveals increased levels in later wing buds (Figure 3c\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunofluorescence data shown in Figure 3c-e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "892c4e18-32b0-49b1-bc01-2d5f429c2658",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C65",
+      "claim": "Weak pSMAD1/5/9 expression is detected in HH24 wing buds",
+      "claim_type": "EXPLICIT",
+      "source": "However, whereas weak expression is detected in HH24 wing buds (Figure 3c), strong expression is observed in the distal part of grafts (the area processed for RNA-seq) in contralateral HH24g buds (Figure 3f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunofluorescence data shown in Figure 3c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "18a8c3fa-d5ba-41d4-bc64-6a2f28b6d985",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C66",
+      "claim": "Strong pSMAD1/5/9 expression is observed in the distal part of grafts in contralateral HH24g buds",
+      "claim_type": "EXPLICIT",
+      "source": "However, whereas weak expression is detected in HH24 wing buds (Figure 3c), strong expression is observed in the distal part of grafts (the area processed for RNA-seq) in contralateral HH24g buds (Figure 3f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunofluorescence data shown in Figure 3f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "071eb7ec-4184-4a4a-a8eb-b5b4aad7741f",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C67",
+      "claim": "Control grafts of HH20 distal mesenchyme made to host HH20 wing buds show no obvious differences in pSMAD1/5/9 signal intensity after 24 hr compared to stage-matched HH24 buds",
+      "claim_type": "EXPLICIT",
+      "source": "Control grafts of HH20 distal mesenchyme made to host HH20 wing buds show no obvious differences in pSMAD1/5/9 signal intensity after 24 hr compared to stage-matched HH24 buds (Figure 3g\u2013compare to Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunofluorescence data shown in Figure 3g",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "1ad6465c-4cd7-4cd6-b4d0-d9a1219d07d4",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C68",
+      "claim": "Enhanced pSMAD1/5/9 signal is detected in the host apical ectodermal ridge above HH24g mesenchyme",
+      "claim_type": "EXPLICIT",
+      "source": "Enhanced pSMAD1/5/9 signal is also detected in the host apical ectodermal ridge above HH24g mesenchyme (asterisk Figure 3h), in contrast to adjacent regions (arrow \u2013 Figure 3h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunofluorescence data shown in Figure 3h",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "37b150de-b36b-4fc7-b995-a4ecc86e9b76",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C69",
+      "claim": "The level of BMP signalling is maintained in mesenchyme transplanted from older buds to a younger environment",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that the level of BMP signalling is maintained in mesenchyme transplanted from older buds to a younger environment, and that it is also enhanced in the host apical ectodermal ridge in response to the older mesenchyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the pSMAD1/5/9 immunofluorescence data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "763cc60c-c2f5-4419-be6d-30c6202f2d95",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C70",
+      "claim": "BMP signalling is enhanced in the host apical ectodermal ridge in response to the older mesenchyme",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that the level of BMP signalling is maintained in mesenchyme transplanted from older buds to a younger environment, and that it is also enhanced in the host apical ectodermal ridge in response to the older mesenchyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the pSMAD1/5/9 immunofluorescence data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "5d238233-82a5-41d0-bd0f-de26e0a99c4f",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C71",
+      "claim": "BMP signalling is associated with regions of apoptosis in the developing limb, including anterior and posterior necrotic zones, as well as the interdigital mesenchyme",
+      "claim_type": "EXPLICIT",
+      "source": "BMP signalling is associated with regions of apoptosis in the developing limb, including anterior and posterior necrotic zones, as well as the interdigital mesenchyme (Zuzarte-Luis and Hurle, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "cc700121-b27f-4753-8579-131dc145a1d9",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C72",
+      "claim": "Lysotracker staining reveals no appreciable difference in apoptotic cells in HH24 control and HH24g mesenchyme",
+      "claim_type": "EXPLICIT",
+      "source": "To determine if apoptosis could reduce proliferation in HH24g mesenchyme, we performed lysotracker staining of apoptotic cells. This reveals no appreciable difference in HH24 control (Figure 3i) and HH24g mesenchyme (Figure 3j) in whole-mount preparations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on lysotracker staining data shown in Figure 3i and j",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "806d92da-1743-4404-b127-b7a19409bfeb",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C73",
+      "claim": "Control PBS- and Noggin-soaked beads implanted into HH20 wing buds for 8 hr do not significantly change distal mesenchyme cell cycle parameters compared to control left wing buds",
+      "claim_type": "EXPLICIT",
+      "source": "Control PBS- and Noggin-soaked beads implanted into HH20 wing buds for 8 hr do not significantly change distal mesenchyme cell cycle parameters compared to control left wing buds (Figure 3k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometry data shown in Figure 3k",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "6fc574b4-1ece-4395-a99c-d7d64e6a9acd",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C74",
+      "claim": "In HH24g grafts treated with PBS-soaked beads, 69% of distal mesenchyme cells are in G1-phase compared to 60.8% in the equivalent region of the contralateral wing bud",
+      "claim_type": "EXPLICIT",
+      "source": "In HH24g grafts treated with PBS-soaked beads, 69% of distal mesenchyme cells are in G1-phase compared to 60.8% in the equivalent region of the contralateral wing bud (Figure 3k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometry data shown in Figure 3k",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "21d47a80-df7d-4f5c-b98f-d8355c04000d",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C75",
+      "claim": "In HH24g mesenchyme treated with Noggin-soaked beads, the proportion of cells in G1-phase decreases from 69% to 62.4%",
+      "claim_type": "EXPLICIT",
+      "source": "However, in HH24g mesenchyme treated with Noggin-soaked beads, the proportion of cells in G1-phase decreases from 69% to 62.4% - a value significantly closer to the control value of 60.8% in the contralateral bud (Figure 3k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometry data shown in Figure 3k",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "77b67db7-e4a2-4f50-a191-72a7c25403b7",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C76",
+      "claim": "The inhibition of BMP signalling in HH24g mesenchyme can significantly enhance proliferation",
+      "claim_type": "EXPLICIT",
+      "source": "This result shows that the inhibition of BMP signalling in HH24g mesenchyme can significantly enhance proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the Noggin bead experiment data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "ec470b56-e899-4052-bf4a-9909d053c9b2",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C77",
+      "claim": "After 8 hr, the proportion of cells in G1-phase in control wing buds is 57.8%, but this increases to 60.5% and 66.2% in BMP2low and BMP2high buds, respectively",
+      "claim_type": "EXPLICIT",
+      "source": "After 8 hr, the proportion of cells in G1-phase in control wing buds is 57.8%, but this increases to 60.5% and 66.2% in BMP2low and BMP2high buds, respectively (Figure 3k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometry data shown in Figure 3k",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "952e3a78-5a03-4d91-b6b1-c846277005da",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C78",
+      "claim": "Enhanced BMP signalling inhibits proliferation of distal mesenchyme cells in the early chick wing bud in a dose-dependent fashion",
+      "claim_type": "EXPLICIT",
+      "source": "This finding shows that enhanced BMP signalling inhibits proliferation of distal mesenchyme cells in the early chick wing bud in a dose-dependent fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the BMP2 bead experiment data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "811c3b30-881a-47e5-91d5-775f4aaf42d0",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C79",
+      "claim": "Lysotracker staining shows that both PBS- and BMP2high-soaked beads do not cause apoptosis after 8 hr",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, lysotracker staining shows that both PBS- (Figure 3l) and BMP2high -soaked beads (Figure 3m) do not cause apoptosis after 8 hr, thus showing that BMP signalling does not inhibit proliferation by compromising cell survival.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on lysotracker staining data shown in Figure 3l and m",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "56670690-3a40-4e36-84cc-a36cd8d925b7",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C80",
+      "claim": "BMP signalling does not inhibit proliferation by compromising cell survival",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, lysotracker staining shows that both PBS- (Figure 3l) and BMP2high -soaked beads (Figure 3m) do not cause apoptosis after 8 hr, thus showing that BMP signalling does not inhibit proliferation by compromising cell survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the lysotracker staining data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "ec2e4e90-0d2c-4e99-a40d-10a352a2ad4b",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C81",
+      "claim": "BMP signalling in HH24g mesenchyme maintains an intrinsic cell cycle programme",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that BMP signalling in HH24g mesenchyme maintains an intrinsic cell cycle programme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the BMP signaling experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "34b10375-e349-4b50-a41a-f2e9cd278d1b",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C82",
+      "claim": "Fgf8 expression is maintained in the apical ectodermal ridge above grafts of distal mesenchyme from much older wing buds",
+      "claim_type": "EXPLICIT",
+      "source": "However, consistent with the observation that Grem1 expression is maintained in HH24g mesenchyme (Figure 2g,h), we have previously shown that Fgf8 expression is maintained in the apical ectodermal ridge above grafts of distal mesenchyme from much older wing buds - including in tissue that would have developed to stage HH36 if left in situ (or day 10 of incubation \u2013 the ridge normally regresses at HH29/30 in the chick wing at day 6\u20136.5 of incubation - Saiz-Lopez et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by the authors",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "85251877-c13a-477e-a29d-917be2a5e247",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C83",
+      "claim": "The apical ectodermal ridge normally regresses at HH29/30 in the chick wing at day 6\u20136.5 of incubation",
+      "claim_type": "EXPLICIT",
+      "source": "However, consistent with the observation that Grem1 expression is maintained in HH24g mesenchyme (Figure 2g,h), we have previously shown that Fgf8 expression is maintained in the apical ectodermal ridge above grafts of distal mesenchyme from much older wing buds - including in tissue that would have developed to stage HH36 if left in situ (or day 10 of incubation \u2013 the ridge normally regresses at HH29/30 in the chick wing at day 6\u20136.5 of incubation - Saiz-Lopez et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "8ff95a99-e740-44bc-921f-8c8928711354",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C84",
+      "claim": "Dusp6 is a well-defined read-out of FGF signalling in the limb",
+      "claim_type": "EXPLICIT",
+      "source": "To determine if HH24g distal mesenchyme cells are responsive to apical ectodermal ridge signals, we analysed a well-defined read-out of FGF signalling in the limb, Dusp6 (Eblaghie et al., 2003) - also known as Mkp3 and Pyst1 - see also Figure 4g\u2013j).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "73a5c098-b351-40b7-a86f-4cd9080b5819",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C85",
+      "claim": "Dusp6 expression decreases by 2.1-fold between HH24 and HH29",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-seq read-counts show that Dusp6 expression decreases by 2.1-fold between HH24 and HH29, but that no significant difference in expression is observed between HH24g tissue and the equivalent region of contralateral control buds, indicating that the level of FGF signalling is approximately the same in the grafted cells as in the host wing bud (Figure 4a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data shown in Figure 4a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "7d2a40bd-017d-4786-94e3-9a4e95ca2d69",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C86",
+      "claim": "No significant difference in Dusp6 expression is observed between HH24g tissue and the equivalent region of contralateral control buds",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-seq read-counts show that Dusp6 expression decreases by 2.1-fold between HH24 and HH29, but that no significant difference in expression is observed between HH24g tissue and the equivalent region of contralateral control buds, indicating that the level of FGF signalling is approximately the same in the grafted cells as in the host wing bud (Figure 4a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data shown in Figure 4a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "3ca96a34-6969-440a-bc47-5c2b904da53f",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C87",
+      "claim": "The level of FGF signalling is approximately the same in the grafted cells as in the host wing bud",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-seq read-counts show that Dusp6 expression decreases by 2.1-fold between HH24 and HH29, but that no significant difference in expression is observed between HH24g tissue and the equivalent region of contralateral control buds, indicating that the level of FGF signalling is approximately the same in the grafted cells as in the host wing bud (Figure 4a and b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the Dusp6 expression data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "fa6742c4-db15-47df-a540-5524dc2657a9",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C88",
+      "claim": "Sprouty2 (Spry2) is a well-defined downstream target of FGF signalling",
+      "claim_type": "EXPLICIT",
+      "source": "We also analysed the expression of Sprouty2 (Spry2) that is another well-defined downstream target of FGF signalling (Chambers and Mason, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "a534ddb8-b7e8-4af3-8fb3-4b11f125299e",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C89",
+      "claim": "Expression of Spry2 decreases between HH24 and HH29 (1.7-fold)",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to Dusp6, expression of Spry2 decreases between HH24 and HH29 (1.7-fold), but is approximately equivalent in HH24g compared to control HH24 mesenchyme (Figure 4c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data shown in Figure 4c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "69ed56b1-877e-4462-9b2f-f29cfbce7f0b",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C90",
+      "claim": "Spry2 expression is approximately equivalent in HH24g compared to control HH24 mesenchyme",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to Dusp6, expression of Spry2 decreases between HH24 and HH29 (1.7-fold), but is approximately equivalent in HH24g compared to control HH24 mesenchyme (Figure 4c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data shown in Figure 4c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "93aa155e-ef8e-4bfa-9d24-8e0a362251e6",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C91",
+      "claim": "Dusp6 and Spry2 expression levels decrease over time, consistent with the maturation and regression of the apical ectodermal ridge",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that Dusp6 and Spry2 expression levels decrease over time, consistent with the maturation and regression of the apical ectodermal ridge, and that both are expressed in HH24g mesenchyme at similar level as in surrounding host tissue, thus indicating that grafted cells are responding to FGF signalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the expression data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "a39ab0fd-096c-4c45-9046-d31acedf5cde",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C92",
+      "claim": "Dusp6 and Spry2 are expressed in HH24g mesenchyme at similar level as in surrounding host tissue",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that Dusp6 and Spry2 expression levels decrease over time, consistent with the maturation and regression of the apical ectodermal ridge, and that both are expressed in HH24g mesenchyme at similar level as in surrounding host tissue, thus indicating that grafted cells are responding to FGF signalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the expression data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "6e4a85c8-a99c-446c-8749-618c7ebb5d67",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C93",
+      "claim": "Grafted cells are responding to FGF signalling",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that Dusp6 and Spry2 expression levels decrease over time, consistent with the maturation and regression of the apical ectodermal ridge, and that both are expressed in HH24g mesenchyme at similar level as in surrounding host tissue, thus indicating that grafted cells are responding to FGF signalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the expression data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "b027633a-aaac-42b7-ab37-71b92c5f7558",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C94",
+      "claim": "Cluster 3 contains genes encoding other members of the FGF family, including Fgf13 and Fgf18",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, cluster 3 contains genes encoding other members of the FGF family, including Fgf13 and Fgf18, which are expressed in distal mesenchyme at early stages (Munoz-Sanjuan et al., 1999; Mok et al., 2014) and that can be reset in a younger environment (Figure 1\u2014figure supplement 3, Supplementary file 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the clustering analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "3ff5c8a5-ad66-4b50-b42e-587fcf7cacb5",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C95",
+      "claim": "Fgf13 and Fgf18 are expressed in distal mesenchyme at early stages",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, cluster 3 contains genes encoding other members of the FGF family, including Fgf13 and Fgf18, which are expressed in distal mesenchyme at early stages (Munoz-Sanjuan et al., 1999; Mok et al., 2014) and that can be reset in a younger environment (Figure 1\u2014figure supplement 3, Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "69d67882-bf70-4b69-88c1-fddfe71d8215",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C96",
+      "claim": "Fgf13 and Fgf18 can be reset in a younger environment",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, cluster 3 contains genes encoding other members of the FGF family, including Fgf13 and Fgf18, which are expressed in distal mesenchyme at early stages (Munoz-Sanjuan et al., 1999; Mok et al., 2014) and that can be reset in a younger environment (Figure 1\u2014figure supplement 3, Supplementary file 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the clustering analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "c38ef738-eefb-405f-9228-65e15c352356",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C97",
+      "claim": "Fgf18 decreases by 90-fold between HH24 and HH29",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-seq read-counts show that Fgf18 decreases by 90-fold between HH24 and HH29, by which point it is undetectable by in situ hybridization (Figure 4e and f), but expression is only 3.4-fold higher in HH24 tissue compared to HH24g tissue.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data shown in Figure 4e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "ab5e0495-0387-4a93-a65b-1b1f3afee52d",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C98",
+      "claim": "Fgf18 is undetectable by in situ hybridization at HH29",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-seq read-counts show that Fgf18 decreases by 90-fold between HH24 and HH29, by which point it is undetectable by in situ hybridization (Figure 4e and f), but expression is only 3.4-fold higher in HH24 tissue compared to HH24g tissue.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on in situ hybridization data shown in Figure 4f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "e5e91ed4-6a15-49b8-9390-e54c595da972",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C99",
+      "claim": "Fgf18 expression is only 3.4-fold higher in HH24 tissue compared to HH24g tissue",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-seq read-counts show that Fgf18 decreases by 90-fold between HH24 and HH29, by which point it is undetectable by in situ hybridization (Figure 4e and f), but expression is only 3.4-fold higher in HH24 tissue compared to HH24g tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA-seq data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "77909336-b89e-4bd4-ab67-1e8d458f6d61",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C100",
+      "claim": "HH24g mesenchyme is responsive to FGF signalling",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, taken together, these results show that HH24g mesenchyme is responsive to FGF signalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the FGF target gene expression data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "dfd7a6c8-a9a0-4a1a-9465-e230b84807da",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C101",
+      "claim": "FGF-soaked beads, but not PBS-soaked beads, implanted into HH27 wing buds for 6 hr increase expression of Dusp6",
+      "claim_type": "EXPLICIT",
+      "source": "RNA in situ hybridisation shows that FGF-soaked beads, but not PBS-soaked beads, implanted into HH27 wing buds for 6 hr increase expression of Dusp6 (Figure 4g\u2013j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on in situ hybridization data shown in Figure 4g-j",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "73a4fa1c-8688-4822-a3a5-d6a0dabd253c",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C102",
+      "claim": "FGF-soaked beads, but not control PBS-soaked beads, significantly increase the proportion of cells in G1-phase compared to control left wing buds",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometry reveals that FGF-soaked beads, but not control PBS-soaked beads, significantly increase the proportion of cells in G1-phase compared to control left wing buds (Figure 4k\u2013 70.8 vs. 67.8%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometry data shown in Figure 4k",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "20a52679-b2b7-414c-be8a-ded83c323750",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C103",
+      "claim": "FGF signalling appears to have a slight inhibitory effect on proliferation, rather than instructively regulating it in a positive manner",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, FGF signalling appears to have a slight inhibitory effect on proliferation, rather than instructively regulating it in a positive manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the FGF bead experiment data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "2f3d9e39-b4c6-4c79-ac1d-44f168d36d6f",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C104",
+      "claim": "The progressive loss of e-m signalling is not required for the decline and cessation of chick wing bud outgrowth at the end of the patterning phase",
+      "claim_type": "EXPLICIT",
+      "source": "By grafting late mesenchyme cells into an early epithelial environment, we have determined that the progressive loss of e-m signalling is not required for the decline and cessation of chick wing bud outgrowth at the end of the patterning phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on the grafting experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "ebdeb3a3-6b93-44da-b2ad-d7445cddbec5",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C105",
+      "claim": "The duration of mesenchyme cell proliferation is intrinsically determined but requires permissive signals from the apical ectodermal ridge",
+      "claim_type": "EXPLICIT",
+      "source": "Our data reveals that the duration of mesenchyme cell proliferation is intrinsically determined but requires permissive signals from the apical ectodermal ridge: a distinction not recognized in previous approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "3b69b0fd-b485-4889-a36c-16e34143ae3a",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C106",
+      "claim": "Surgical removal of the apical ectodermal ridge in the chick wing before HH24 causes apoptosis in the distal mesenchyme, but at later stages decreases proliferation",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, surgical removal of the apical ectodermal ridge in the chick wing before HH24 causes apoptosis in the distal mesenchyme, but at later stages decreases proliferation (Dudley et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "186283fd-a3f7-48ff-af03-4590d78897ba",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C107",
+      "claim": "Genetic approaches that compromise apical ectodermal ridge signalling in the mouse limb cause defective outgrowth",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, genetic approaches that compromise apical ectodermal ridge signalling in the mouse limb also cause defective outgrowth (Lu et al., 2008; Mariani et al., 2008; Yu and Ornitz, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "5aecec34-09a8-4f94-bd0d-395101384bee",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C108",
+      "claim": "At early stages of wing development (HH20), the Grem1-mediated inhibition of BMP signalling fulfils two main roles: to maintain the apical ectodermal ridge until HH28 and to permit a rapid rate of proliferation in distal mesenchyme cells",
+      "claim_type": "EXPLICIT",
+      "source": "At early stages of wing development (HH20), the Grem1-mediated inhibition of BMP signalling fulfils two main roles: to maintain the apical ectodermal ridge until HH28 as classically-described (Summerbell, 1974; Summerbell et al., 1973) and to permit a rapid rate of proliferation in distal mesenchyme cells as we have shown here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and previous work",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "78fae318-3e36-4efa-934b-e341f7a2a15d",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C109",
+      "claim": "Around HH20, the mechanism of positional specification switches in mesenchyme progenitors from extrinsic signalling (humerus) to an intrinsic timer (distal to elbow)",
+      "claim_type": "EXPLICIT",
+      "source": "Around HH20, the mechanism of positional specification switches in mesenchyme progenitors from extrinsic signalling (humerus) (Cooper et al., 2011; Rosell\u00f3-D\u00edez et al., 2011) to an intrinsic timer (distal to elbow) (Saiz-Lopez et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "9fb1a769-7c03-4ca9-91e8-8d368818ec69",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C110",
+      "claim": "The intrinsic mechanism involves a progressive reduction in the proliferation rate as the elements are laid down in a proximal to distal sequence until HH28",
+      "claim_type": "EXPLICIT",
+      "source": "This intrinsic mechanism involves a progressive reduction in the proliferation rate as the elements are laid down in a proximal to distal sequence until HH28 (Saiz-Lopez et al., 2015) (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to previous work and illustrated in Figure 5",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "f6fbcb20-3415-4cd9-9294-217302a14869",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C111",
+      "claim": "The deceleration in proliferation rate is caused by an increase in autocrine BMP signalling between HH24 and HH29 that overcomes Grem1-mediated antagonism in distal mesenchyme cells",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we showed that the deceleration in proliferation rate is caused by an increase in autocrine BMP signalling between HH24 and HH29 that overcomes Grem1-mediated antagonism in distal mesenchyme cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "c5b35616-0f34-4fb6-bc55-6a6e9b32f106",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C112",
+      "claim": "Once the intrinsic cell cycle timer has run its course at HH29 and distal mesenchyme expansion ceases, high BMP signalling causes the apical ectodermal ridge to regress at HH29/30",
+      "claim_type": "EXPLICIT",
+      "source": "Once the intrinsic cell cycle timer has run its course at HH29 and distal mesenchyme expansion ceases, high BMP signalling causes the apical ectodermal ridge to regress at HH29/30 (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and illustrated in Figure 5",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "edf683cf-b139-42d3-a226-0acce8f8e392",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C113",
+      "claim": "Recent genetic evidence in the mouse has provided evidence that BMP signalling terminates the extension of the main body axis",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, recent genetic evidence in the mouse has provided evidence that BMP signalling terminates the extension of the main body axis (Anderson et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "4c15ccea-f308-4896-b0d3-352e72cdac3c",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C114",
+      "claim": "All the genes identified in the RNA-seq analysis that are predominantly expressed at early stages could be reset to some degree by the signalling environment",
+      "claim_type": "EXPLICIT",
+      "source": "It was unexpected that all the genes identified in the RNA-seq analysis that are predominantly expressed at early stages could be reset to some degree by the signalling environment (Cluster 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the clustering analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "50fe66fa-cd04-4155-90bc-b351c038f0ad",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C115",
+      "claim": "Early proximo-distal patterning is controlled by extrinsic signals \u2013 possibly retinoic acid signalling from the flank of the embryo",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the observations that early proximo-distal patterning is controlled by extrinsic signals \u2013 possibly retinoic acid signalling from the flank of the embryo (Cooper et al., 2011; Rosell\u00f3-D\u00edez et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "3d191a5f-7f87-4647-90d8-edb7d7c4a0ea",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C116",
+      "claim": "Cluster 3 contains several genes encoding products known to be involved in maintaining a stem-cell-like state including Plzf (Zbtb16), Sall4, Gbx2 and Lin28b",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, this cluster contains several genes encoding products known to be involved in maintaining a stem-cell-like state including Plzf (Zbtb16) (Liu et al., 2016) Sall4 (Yang et al., 2008) (also Sall1 and 3), Gbx2 (Tai and Ying, 2013) and Lin28b (Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "6b108486-d994-4eaf-a5f8-b9e796aa3835",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C117",
+      "claim": "A gene regulatory network may operate during early limb development to maintain the multipotency of mesenchyme cells",
+      "claim_type": "EXPLICIT",
+      "source": "This raises the possibility that a gene regulatory network operates during early limb development to maintain the multipotency of mesenchyme cells and warrants further investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the gene expression data",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "f83b52d4-6132-4665-806f-8e4fb482dea7",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C118",
+      "claim": "Opposing gradients of BMP ligands and their antagonists specify positional identities and regulate growth in a concentration-dependent manner in many developmental contexts",
+      "claim_type": "EXPLICIT",
+      "source": "Opposing gradients of BMP ligands and their antagonists specify positional identities and regulate growth in a concentration-dependent manner in many developmental contexts (Bier and De Robertis, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "a0bae36e-dad7-4bd3-858d-437e1335ef34",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "claim_id": "C119",
+      "claim": "The intrinsic switch from BMP antagonism to BMP signalling in limb development provides a mechanism by which cells can be instructed by autocrine BMP signalling in the absence of spatial gradients",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the intrinsic switch from BMP antagonism to BMP signalling in limb development that we describe here provides a mechanism by which cells can be instructed by autocrine BMP signalling in the absence of spatial gradients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7262b902-7b29-42a0-9846-0d79863bffb5",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes a staging system correlating Hamburger-Hamilton (HH) stages with embryonic days in chick development: HH19 = day 3, HH24 = day 4, HH27 = day 5, HH29 = day 6, and HH30 = day 7.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C5) are explicitly stated in the Materials and methods section and represent standard developmental staging conventions for chick embryos. The staging system is well-established in the field and provides essential context for interpreting all experimental timepoints.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "c8c7c99b-f230-4b27-9bcd-b9dfc7ba2bf7",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Distal mesenchyme cells from late-stage (HH27) chick wing buds complete their proliferation program intrinsically when grafted to younger (HH20) wing buds, maintaining a cell cycle profile similar to HH29 rather than the host HH24 stage, demonstrating that epithelial-mesenchyme signaling is not required for termination of proliferative outgrowth but acts permissively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, C24-C26, C104-C105 collectively establish the central finding through grafting experiments and cell cycle analysis (Figure 1a). The data show HH24g grafts maintain their intrinsic proliferation program despite being in a younger signaling environment. This is supported by flow cytometry data showing cell cycle profiles and previous work (C24, C26). The distinction between permissive and instructive signaling is a key conceptual advance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "d8ec58f2-e873-47da-88fa-ededc8c565c5",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "RNA-seq analysis of distal mesenchyme from HH24, HH24g, HH27, and HH29 wing buds identified 154 differentially expressed genes (55 between HH24g-HH24, 99 between HH24g-HH29), with overall gene expression in HH24g cells being closer to HH24 than HH29, suggesting partial resetting behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C33 describe the RNA-seq experimental design and primary results. The methodology is clearly described with appropriate replication (three replicates, one HH24 sample excluded for quality control). The differential expression analysis uses reasonable thresholds (>2-fold, p<0.0005). Pearson correlation analysis (C33, Figure 1d) supports the interpretation of partial resetting. The data quality and analysis appear sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "91bf89f8-5d2b-40bb-b2fa-c7c08062f0ec",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "KEGG pathway analysis revealed five down-regulated pathways in HH24g vs HH29 (focal adhesion, ECM, gap junction, MAPK, actin cytoskeleton) and four up-regulated pathways in HH24g vs HH24 (ECM, focal adhesion, adrenergic signaling, TGF\u03b2), with no cluster of genes showing maintained downregulation over time in HH24g.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C34-C36, C42 describe KEGG pathway enrichment results. However, the manuscript notes that only ~20% of chicken genes belong to verified KEGG pathways, which significantly limits the comprehensiveness and reliability of this analysis. The absence of a cluster showing maintained downregulation (C42) is interesting but may reflect the limited pathway coverage rather than a biological phenomenon. The pathway analysis provides suggestive but not definitive insights.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "951ce88f-419a-461c-85c0-ab707179c591",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Hierarchical clustering of 154 differentially expressed genes identified three clusters: Cluster 1 (54 genes) showing maintained late expression in HH24g, Cluster 2 (44 genes) showing reset late expression, and Cluster 3 (53 genes) showing reset early expression, indicating that early-expressed genes can be reset while late-expressed genes show differential resetting behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C44 describe the clustering analysis and interpretation. The methodology is described in Materials and methods with appropriate validation metrics (Silhouette measure, BHI). The three-cluster solution appears well-justified. The biological interpretation (C41, C43-C44) follows logically from the clustering patterns shown in Figures 1f-h. Three genes were excluded for falling into multiple clusters, which is appropriate. The clustering provides meaningful biological insights into gene expression dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "c7c7785f-e475-40ee-801f-fabbfbddb063",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Bmp2 and Bmp7 are in Cluster 1, showing maintained late expression in HH24g mesenchyme: Bmp2 increases 5.3-fold between HH24-HH29 and shows 6.2-fold higher expression in HH24g vs HH24; Bmp7 increases 1.5-fold between HH24-HH29 and shows 2.5-fold higher expression in HH24g vs HH24.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C51 present specific RNA-seq quantification for Bmp2 and Bmp7, supported by both read-count data (Figure 2a, c) and in situ hybridization validation (Figure 2b, d). The fold-change values are clearly stated and the interpretation that late expression is maintained (C49) follows logically. BMP signaling's known role in terminating outgrowth (C46) provides important biological context. The data are internally consistent and well-validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "5672a4f9-0d67-4d7a-b3f8-89f3038b6446",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Bmp4 expression decreases 2-fold between HH24-HH29 and is approximately equivalent between HH24 and HH24g tissue by RNA-seq, though slightly enhanced expression in HH24g grafts was detected by in situ hybridization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 describe Bmp4 expression patterns. The RNA-seq data (C53-C54, Figure 2e) show decreased expression over time and equivalence between HH24 and HH24g. The slight enhancement detected by in situ (C55, Figure 2f) represents a minor discrepancy that could reflect spatial heterogeneity not captured in the RNA-seq sampling or differences in sensitivity between methods. The overall pattern is clear and the authors appropriately note the in situ observation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "d0d54135-50c6-4db3-94d8-6d80bc198ad0",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Gremlin1 (Grem1), a BMP antagonist in Cluster 3, shows 17.2-fold reduction between HH24-HH29 but maintains similar expression levels in HH24 and HH24g mesenchyme, suggesting it could antagonize BMP2/4/7 signaling in HH24g.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 describe Grem1 expression and its potential functional significance. The RNA-seq data (C57-C58, Figure 2g-h) clearly show dramatic downregulation over time but maintenance in grafts. The speculation that Grem1 could antagonize BMP signaling in HH24g (C59) is reasonable given its known function and expression pattern, though this remains to be functionally tested. The data support the expression claims; the functional interpretation is appropriately presented as a suggestion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "96dead34-28d6-4f93-bdb6-59603fc5e8ed",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "BMP signaling is maintained in HH24g mesenchyme as evidenced by maintained expression of the BMP target Msx2 (2.8-fold increase HH24-HH29, 2-fold higher in HH24g vs HH24) and elevated phosphorylated SMAD1/5/9 levels in HH24g grafts and overlying apical ectodermal ridge compared to stage-matched controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C70 provide multiple lines of evidence for maintained BMP signaling: RNA-seq of Msx2 (C61-C62, Figure 3a-b), immunofluorescence of pSMAD1/5/9 (C64-C68, Figure 3c-h), and appropriate controls (C67). The use of pSMAD1/5/9 as a direct readout of BMP signaling (C63) is well-established. The data consistently show elevated BMP signaling in grafts. The interpretation that signaling is maintained in grafts and enhanced in the overlying ridge (C69-C70) is well-supported by the immunofluorescence data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "96712127-6039-4415-a1f0-6893fc17c5c7",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Lysotracker staining revealed no appreciable difference in apoptotic cells between HH24 control and HH24g mesenchyme, ruling out apoptosis as a mechanism for reduced proliferation in grafts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 address whether apoptosis contributes to reduced proliferation. The lysotracker staining (Figure 3i-j) shows no difference between control and graft tissue. While BMP signaling is associated with apoptosis in some limb regions (C71), the data clearly show this is not occurring in the HH24g grafts. This is an important control that strengthens the conclusion that BMP affects proliferation directly rather than through cell death.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "5e8b138c-b55e-458c-8c82-764ade968538",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Noggin-soaked beads (BMP antagonist) implanted in HH24g grafts significantly reduced the proportion of cells in G1-phase from 69% to 62.4% (closer to the 60.8% control value), demonstrating that inhibition of BMP signaling can enhance proliferation in grafted mesenchyme.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C76 describe a functional test of BMP's role using Noggin beads. The flow cytometry data (Figure 3k) show appropriate controls (C73) and a statistically significant effect of Noggin treatment (C75). The interpretation that BMP inhibition enhances proliferation (C76) is well-supported. This is a key experiment demonstrating causality rather than just correlation between BMP signaling and reduced proliferation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "db827196-bf0a-4711-a83a-8b438835f475",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "BMP2-soaked beads implanted in HH20 wing buds dose-dependently increased the proportion of cells in G1-phase (57.8% control to 60.5% BMP2low and 66.2% BMP2high) without causing apoptosis, demonstrating that BMP signaling instructively inhibits proliferation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C80 provide the complementary gain-of-function experiment. The flow cytometry data (C77, Figure 3k) show a clear dose-dependent effect of BMP2 on cell cycle. The lysotracker controls (C79, Figure 3l-m) confirm this is not due to apoptosis. The interpretation that BMP instructively inhibits proliferation (C78, C80) is strongly supported by the dose-response relationship. Together with the Noggin experiments, this establishes BMP as a direct regulator of proliferation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "e9f4b3eb-3878-47b4-8a87-212fe5321424",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "BMP signaling in HH24g mesenchyme maintains an intrinsic cell cycle program.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 synthesizes the BMP signaling results (C60-C80) into a coherent conclusion. The evidence from maintained BMP expression/signaling, Noggin rescue experiments, and BMP2 gain-of-function collectively support this interpretation. This represents the mechanistic explanation for the intrinsic timer observed in the grafting experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "5149d0c3-854f-42e4-aa98-855f87fd4d5b",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "FGF signaling is maintained in HH24g mesenchyme as evidenced by equivalent expression of the FGF target Dusp6 in HH24g and control HH24 tissue (both higher than HH29), indicating grafted cells respond to apical ectodermal ridge signals despite maintained Fgf8 expression in the ridge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C87 address whether grafted cells respond to FGF signaling from the apical ectodermal ridge. The RNA-seq data for Dusp6 (C85-C86, Figure 4a-b) show equivalent expression in HH24g and HH24, both higher than HH29. The interpretation that FGF signaling levels are similar in grafts and host tissue (C87) is reasonable. The citation to previous work showing maintained Fgf8 in the ridge (C82) provides important context. This demonstrates that the epithelial-mesenchyme signaling loop remains functional.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "e6af44e8-23b9-44f4-b030-62b253c9d292",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Sprouty2 (Spry2), another FGF target, shows similar expression patterns to Dusp6: 1.7-fold decrease between HH24-HH29, with equivalent expression in HH24g and HH24 mesenchyme, further confirming that grafted cells respond to FGF signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C93 provide independent validation of FGF responsiveness using a second target gene. The Spry2 data (C89-C90, Figure 4c-d) parallel the Dusp6 results, strengthening the conclusion. The interpretation that both genes decrease over time consistent with ridge maturation and that grafted cells respond to FGF (C91-C93) is well-supported by having two independent readouts showing the same pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "65bf1157-bb2b-4e21-bc47-5c925b968bda",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Cluster 3 contains FGF family members Fgf13 and Fgf18 that are expressed early and can be reset in HH24g; Fgf18 decreases 90-fold between HH24-HH29 (undetectable by in situ at HH29) but is only 3.4-fold higher in HH24 vs HH24g, confirming HH24g mesenchyme is responsive to FGF signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C100 extend the FGF signaling analysis to mesenchyme-derived FGFs. The clustering data (C94, C96) and RNA-seq quantification (C97-C99, Figure 4e-f) are clearly presented. The dramatic 90-fold decrease in Fgf18 (C97) contrasts with the modest difference between HH24 and HH24g (C99), suggesting partial resetting. The overall conclusion about FGF responsiveness (C100) is well-supported by the combined Dusp6, Spry2, and Fgf18 data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "241742a2-f50a-43e6-acc3-9e6c17317f33",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "FGF-soaked beads implanted in HH27 wing buds increased Dusp6 expression and significantly increased the proportion of cells in G1-phase (70.8% vs 67.8% control), suggesting FGF has a slight inhibitory rather than positive instructive effect on proliferation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C103 test whether FGF has an instructive role in proliferation. The in situ data (C101, Figure 4g-j) confirm FGF beads activate signaling. The flow cytometry (C102, Figure 4k) shows a statistically significant but modest increase in G1-phase cells. The interpretation that FGF has a slight inhibitory effect (C103) is supported by the data, though the effect size is small (3% difference). This argues against FGF being the primary instructive signal for proliferation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "691593d3-08ac-49d6-a315-c2251edfe7b2",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "A temporal switch from BMP antagonism (via Grem1) to BMP signaling controls the intrinsic cell cycle timer: at HH20, Grem1 inhibits BMP to permit rapid proliferation and maintain the apical ectodermal ridge; between HH24-HH29, increasing autocrine BMP signaling overcomes Grem1 antagonism to decelerate proliferation; at HH29, high BMP causes ridge regression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C108-C112 synthesize the major findings into a mechanistic model (illustrated in Figure 5). The model integrates: (1) Grem1 expression patterns (C56-C58), (2) BMP2/7 expression increases (C47-C51), (3) maintained BMP signaling in grafts (C60-C70), (4) functional effects of BMP on proliferation (C73-C80), and (5) maintained FGF responsiveness (C84-C93). The model is well-supported by the experimental data and provides a coherent explanation for how intrinsic timing and permissive signaling are integrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "c592122f-8cc6-4ba9-8c58-e4fc7987f318",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Previous studies showed that surgical removal of the apical ectodermal ridge before HH24 causes apoptosis but later decreases proliferation, and genetic approaches compromising ridge signaling cause defective outgrowth, but these approaches masked the intrinsic control of proliferation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C107 cite previous work to contextualize the current findings. The citations appear appropriate and the interpretation that previous approaches masked intrinsic control is reasonable given the new grafting data. This helps explain why the intrinsic timer mechanism was not previously recognized.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "5c801493-d825-4c35-9793-1563f5aa8575",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "All early-expressed genes identified by RNA-seq (Cluster 3) could be reset to some degree, consistent with early proximo-distal patterning being controlled by extrinsic signals; notably, Cluster 3 contains stem-cell-associated genes (Plzf, Sall4, Gbx2, Lin28b), suggesting a gene regulatory network may maintain mesenchyme multipotency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C114-C117 interpret the Cluster 3 genes. The observation that all early genes can be reset (C114) is interesting and consistent with extrinsic control of early patterning (C115). However, the identification of stem-cell-associated genes (C116) and speculation about a multipotency network (C117) is intriguing but preliminary. The authors appropriately present this as a possibility warranting further investigation. More functional validation would be needed to support the multipotency hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "b9ea59a4-f81c-4307-a4f7-d22573f46035",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The intrinsic switch from BMP antagonism to BMP signaling provides a mechanism for autocrine BMP instruction without spatial gradients, similar to recent findings that BMP signaling terminates body axis extension in mouse, and extends the known role of BMP gradients in specifying positional identity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C113, C118-C119 place the findings in broader developmental context. The citation to mouse body axis work (C113) provides a relevant parallel. The discussion of BMP gradients in other contexts (C118) and the novelty of temporal rather than spatial BMP control (C119) appropriately frames the significance. The interpretation is well-supported and highlights the conceptual advance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    },
+    {
+      "id": "27ffa8b6-7e7f-4d12-8647-6797a4658b68",
+      "content_id": "b25dd1ba-240c-4f8a-b2aa-d0dbd9427432",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on limb development, including how extrinsic signals and intrinsic timers operate in various patterning systems, the role of proximal signals in specifying the humerus, the switch to intrinsic timing for distal elements, the Grem1-FGF feedback loop maintaining the apical ectodermal ridge, and the classical view that breakdown of epithelial-mesenchyme signaling terminates outgrowth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C23 establish the background and context for the study. These are well-supported by appropriate citations to previous work and represent accurate summaries of established knowledge in the field. This background is essential for understanding the significance of the current findings that challenge the classical model (C21).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:16:59.727751Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "eb4f56a2-764e-4b14-8745-c87092e0266c",
+      "result_id": "7262b902-7b29-42a0-9846-0d79863bffb5"
+    },
+    {
+      "claim_id": "3fdc64ac-d101-4abe-a881-f5e037d14483",
+      "result_id": "7262b902-7b29-42a0-9846-0d79863bffb5"
+    },
+    {
+      "claim_id": "5b67e84e-756d-4d7c-a184-4220b44c89ff",
+      "result_id": "7262b902-7b29-42a0-9846-0d79863bffb5"
+    },
+    {
+      "claim_id": "4e384f1a-75ca-4b1e-95a5-42dd24111163",
+      "result_id": "7262b902-7b29-42a0-9846-0d79863bffb5"
+    },
+    {
+      "claim_id": "f83f9bd4-7f58-4df4-9851-5a2f0737a7b2",
+      "result_id": "7262b902-7b29-42a0-9846-0d79863bffb5"
+    },
+    {
+      "claim_id": "09311cfa-00e2-4f21-8645-46deadeef556",
+      "result_id": "c8c7c99b-f230-4b27-9bcd-b9dfc7ba2bf7"
+    },
+    {
+      "claim_id": "9002cebf-cdf6-4ad7-8dd6-6d3a892fff9e",
+      "result_id": "c8c7c99b-f230-4b27-9bcd-b9dfc7ba2bf7"
+    },
+    {
+      "claim_id": "3d83ea41-6627-4ddf-9655-c59d4ef81a43",
+      "result_id": "c8c7c99b-f230-4b27-9bcd-b9dfc7ba2bf7"
+    },
+    {
+      "claim_id": "adef175e-8d21-4e2d-8926-cdc9ad7df463",
+      "result_id": "c8c7c99b-f230-4b27-9bcd-b9dfc7ba2bf7"
+    },
+    {
+      "claim_id": "a0731034-86fa-4408-9d08-eb849bf6b119",
+      "result_id": "c8c7c99b-f230-4b27-9bcd-b9dfc7ba2bf7"
+    },
+    {
+      "claim_id": "2f3d9e39-b4c6-4c79-ac1d-44f168d36d6f",
+      "result_id": "c8c7c99b-f230-4b27-9bcd-b9dfc7ba2bf7"
+    },
+    {
+      "claim_id": "ebdeb3a3-6b93-44da-b2ad-d7445cddbec5",
+      "result_id": "c8c7c99b-f230-4b27-9bcd-b9dfc7ba2bf7"
+    },
+    {
+      "claim_id": "494abe05-bc0e-420d-b084-08cf8967b20c",
+      "result_id": "d8ec58f2-e873-47da-88fa-ededc8c565c5"
+    },
+    {
+      "claim_id": "f2c46a06-8efb-422f-b6f2-af5f779f6606",
+      "result_id": "d8ec58f2-e873-47da-88fa-ededc8c565c5"
+    },
+    {
+      "claim_id": "b43204a0-649b-4511-92c9-1be39176a063",
+      "result_id": "d8ec58f2-e873-47da-88fa-ededc8c565c5"
+    },
+    {
+      "claim_id": "78286aeb-c0a5-490c-9d1c-16f940138722",
+      "result_id": "d8ec58f2-e873-47da-88fa-ededc8c565c5"
+    },
+    {
+      "claim_id": "f4ecb3f0-9264-4f88-b99e-cd6a8429131f",
+      "result_id": "d8ec58f2-e873-47da-88fa-ededc8c565c5"
+    },
+    {
+      "claim_id": "94c2f724-910b-4268-93dc-83020e300d9a",
+      "result_id": "d8ec58f2-e873-47da-88fa-ededc8c565c5"
+    },
+    {
+      "claim_id": "51bbf502-42ef-4809-bf6c-cccd9a5322cc",
+      "result_id": "d8ec58f2-e873-47da-88fa-ededc8c565c5"
+    },
+    {
+      "claim_id": "df5d1ee9-a82b-4db7-8c66-9c35a864c5cb",
+      "result_id": "91bf89f8-5d2b-40bb-b2fa-c7c08062f0ec"
+    },
+    {
+      "claim_id": "50054ebe-76b0-4239-99f2-2ce56bde4c4b",
+      "result_id": "91bf89f8-5d2b-40bb-b2fa-c7c08062f0ec"
+    },
+    {
+      "claim_id": "1e7ae869-ad1f-4281-bc38-e8e09098025b",
+      "result_id": "91bf89f8-5d2b-40bb-b2fa-c7c08062f0ec"
+    },
+    {
+      "claim_id": "555dd85a-1fbf-4b8d-a541-00cb2baf2ba3",
+      "result_id": "91bf89f8-5d2b-40bb-b2fa-c7c08062f0ec"
+    },
+    {
+      "claim_id": "7800f4a7-f6b6-45f7-934e-a81560d64330",
+      "result_id": "951ce88f-419a-461c-85c0-ab707179c591"
+    },
+    {
+      "claim_id": "11d56d99-36b3-42e9-9e56-5afe6c2aca74",
+      "result_id": "951ce88f-419a-461c-85c0-ab707179c591"
+    },
+    {
+      "claim_id": "d76875be-41ff-4d87-842e-ec70e42cba77",
+      "result_id": "951ce88f-419a-461c-85c0-ab707179c591"
+    },
+    {
+      "claim_id": "65a44915-eb88-4b3f-964c-644be5700a08",
+      "result_id": "951ce88f-419a-461c-85c0-ab707179c591"
+    },
+    {
+      "claim_id": "29cff4fd-1c5e-45f1-b458-d4197530bf72",
+      "result_id": "951ce88f-419a-461c-85c0-ab707179c591"
+    },
+    {
+      "claim_id": "96f04c3d-7b3a-4348-8f13-11dffdf3983b",
+      "result_id": "951ce88f-419a-461c-85c0-ab707179c591"
+    },
+    {
+      "claim_id": "725a933e-95ee-48e8-af5f-94a27b086896",
+      "result_id": "951ce88f-419a-461c-85c0-ab707179c591"
+    },
+    {
+      "claim_id": "50548481-e254-442c-8c12-c28ff9050713",
+      "result_id": "c7c7785f-e475-40ee-801f-fabbfbddb063"
+    },
+    {
+      "claim_id": "a00991fb-17f6-435b-a910-7a04e11675c5",
+      "result_id": "c7c7785f-e475-40ee-801f-fabbfbddb063"
+    },
+    {
+      "claim_id": "76ec14ff-8f4e-41f9-acee-21326dde6867",
+      "result_id": "c7c7785f-e475-40ee-801f-fabbfbddb063"
+    },
+    {
+      "claim_id": "a4d7ae87-8450-4e80-867d-15e0a2d50342",
+      "result_id": "c7c7785f-e475-40ee-801f-fabbfbddb063"
+    },
+    {
+      "claim_id": "25cb39ec-f56e-4e10-80df-06291899b51e",
+      "result_id": "c7c7785f-e475-40ee-801f-fabbfbddb063"
+    },
+    {
+      "claim_id": "d19e7043-d5d8-481b-8d40-8c2f54983ee1",
+      "result_id": "c7c7785f-e475-40ee-801f-fabbfbddb063"
+    },
+    {
+      "claim_id": "e8e0a3fa-7539-4b88-831e-d3f9f056f7fc",
+      "result_id": "c7c7785f-e475-40ee-801f-fabbfbddb063"
+    },
+    {
+      "claim_id": "c16af367-973e-4e77-b3a3-de6dc0b462f5",
+      "result_id": "5672a4f9-0d67-4d7a-b3f8-89f3038b6446"
+    },
+    {
+      "claim_id": "855b4be4-855e-41d8-983a-4868636b99c5",
+      "result_id": "5672a4f9-0d67-4d7a-b3f8-89f3038b6446"
+    },
+    {
+      "claim_id": "4a39cde0-8445-4378-ab59-8bbb421cb227",
+      "result_id": "5672a4f9-0d67-4d7a-b3f8-89f3038b6446"
+    },
+    {
+      "claim_id": "acc47536-4b42-4bd7-8bd1-60407890ad3f",
+      "result_id": "5672a4f9-0d67-4d7a-b3f8-89f3038b6446"
+    },
+    {
+      "claim_id": "30e14488-ef40-43bd-91d5-383cc3b4e525",
+      "result_id": "d0d54135-50c6-4db3-94d8-6d80bc198ad0"
+    },
+    {
+      "claim_id": "119563a7-094a-4aca-a329-05893bc23f80",
+      "result_id": "d0d54135-50c6-4db3-94d8-6d80bc198ad0"
+    },
+    {
+      "claim_id": "9f0e062a-a39c-477f-99ff-17c49e8c6838",
+      "result_id": "d0d54135-50c6-4db3-94d8-6d80bc198ad0"
+    },
+    {
+      "claim_id": "f2ca7873-cbf1-422f-ba90-5b509499ee12",
+      "result_id": "d0d54135-50c6-4db3-94d8-6d80bc198ad0"
+    },
+    {
+      "claim_id": "b0d2bf2e-8acc-46ec-9a5e-f97f969351f8",
+      "result_id": "96dead34-28d6-4f93-bdb6-59603fc5e8ed"
+    },
+    {
+      "claim_id": "06d315d3-d79f-4993-b67c-06f2dbb62b26",
+      "result_id": "96dead34-28d6-4f93-bdb6-59603fc5e8ed"
+    },
+    {
+      "claim_id": "5fbd3d4f-59ec-44f9-bf81-c3826251f9cf",
+      "result_id": "96dead34-28d6-4f93-bdb6-59603fc5e8ed"
+    },
+    {
+      "claim_id": "4017e6b7-0863-48eb-826b-c99341472140",
+      "result_id": "96dead34-28d6-4f93-bdb6-59603fc5e8ed"
+    },
+    {
+      "claim_id": "0faf40b9-1317-42c7-b45e-edcc6a356a2f",
+      "result_id": "96dead34-28d6-4f93-bdb6-59603fc5e8ed"
+    },
+    {
+      "claim_id": "892c4e18-32b0-49b1-bc01-2d5f429c2658",
+      "result_id": "96dead34-28d6-4f93-bdb6-59603fc5e8ed"
+    },
+    {
+      "claim_id": "18a8c3fa-d5ba-41d4-bc64-6a2f28b6d985",
+      "result_id": "96dead34-28d6-4f93-bdb6-59603fc5e8ed"
+    },
+    {
+      "claim_id": "071eb7ec-4184-4a4a-a8eb-b5b4aad7741f",
+      "result_id": "96dead34-28d6-4f93-bdb6-59603fc5e8ed"
+    },
+    {
+      "claim_id": "1ad6465c-4cd7-4cd6-b4d0-d9a1219d07d4",
+      "result_id": "96dead34-28d6-4f93-bdb6-59603fc5e8ed"
+    },
+    {
+      "claim_id": "37b150de-b36b-4fc7-b995-a4ecc86e9b76",
+      "result_id": "96dead34-28d6-4f93-bdb6-59603fc5e8ed"
+    },
+    {
+      "claim_id": "763cc60c-c2f5-4419-be6d-30c6202f2d95",
+      "result_id": "96dead34-28d6-4f93-bdb6-59603fc5e8ed"
+    },
+    {
+      "claim_id": "5d238233-82a5-41d0-bd0f-de26e0a99c4f",
+      "result_id": "96712127-6039-4415-a1f0-6893fc17c5c7"
+    },
+    {
+      "claim_id": "cc700121-b27f-4753-8579-131dc145a1d9",
+      "result_id": "96712127-6039-4415-a1f0-6893fc17c5c7"
+    },
+    {
+      "claim_id": "806d92da-1743-4404-b127-b7a19409bfeb",
+      "result_id": "5e8b138c-b55e-458c-8c82-764ade968538"
+    },
+    {
+      "claim_id": "6fc574b4-1ece-4395-a99c-d7d64e6a9acd",
+      "result_id": "5e8b138c-b55e-458c-8c82-764ade968538"
+    },
+    {
+      "claim_id": "21d47a80-df7d-4f5c-b98f-d8355c04000d",
+      "result_id": "5e8b138c-b55e-458c-8c82-764ade968538"
+    },
+    {
+      "claim_id": "77b67db7-e4a2-4f50-a191-72a7c25403b7",
+      "result_id": "5e8b138c-b55e-458c-8c82-764ade968538"
+    },
+    {
+      "claim_id": "ec470b56-e899-4052-bf4a-9909d053c9b2",
+      "result_id": "db827196-bf0a-4711-a83a-8b438835f475"
+    },
+    {
+      "claim_id": "952e3a78-5a03-4d91-b6b1-c846277005da",
+      "result_id": "db827196-bf0a-4711-a83a-8b438835f475"
+    },
+    {
+      "claim_id": "811c3b30-881a-47e5-91d5-775f4aaf42d0",
+      "result_id": "db827196-bf0a-4711-a83a-8b438835f475"
+    },
+    {
+      "claim_id": "56670690-3a40-4e36-84cc-a36cd8d925b7",
+      "result_id": "db827196-bf0a-4711-a83a-8b438835f475"
+    },
+    {
+      "claim_id": "ec2e4e90-0d2c-4e99-a40d-10a352a2ad4b",
+      "result_id": "e9f4b3eb-3878-47b4-8a87-212fe5321424"
+    },
+    {
+      "claim_id": "34b10375-e349-4b50-a41a-f2e9cd278d1b",
+      "result_id": "5149d0c3-854f-42e4-aa98-855f87fd4d5b"
+    },
+    {
+      "claim_id": "85251877-c13a-477e-a29d-917be2a5e247",
+      "result_id": "5149d0c3-854f-42e4-aa98-855f87fd4d5b"
+    },
+    {
+      "claim_id": "8ff95a99-e740-44bc-921f-8c8928711354",
+      "result_id": "5149d0c3-854f-42e4-aa98-855f87fd4d5b"
+    },
+    {
+      "claim_id": "73a5c098-b351-40b7-a86f-4cd9080b5819",
+      "result_id": "5149d0c3-854f-42e4-aa98-855f87fd4d5b"
+    },
+    {
+      "claim_id": "7d2a40bd-017d-4786-94e3-9a4e95ca2d69",
+      "result_id": "5149d0c3-854f-42e4-aa98-855f87fd4d5b"
+    },
+    {
+      "claim_id": "3ca96a34-6969-440a-bc47-5c2b904da53f",
+      "result_id": "5149d0c3-854f-42e4-aa98-855f87fd4d5b"
+    },
+    {
+      "claim_id": "fa6742c4-db15-47df-a540-5524dc2657a9",
+      "result_id": "e6af44e8-23b9-44f4-b030-62b253c9d292"
+    },
+    {
+      "claim_id": "a534ddb8-b7e8-4af3-8fb3-4b11f125299e",
+      "result_id": "e6af44e8-23b9-44f4-b030-62b253c9d292"
+    },
+    {
+      "claim_id": "69ed56b1-877e-4462-9b2f-f29cfbce7f0b",
+      "result_id": "e6af44e8-23b9-44f4-b030-62b253c9d292"
+    },
+    {
+      "claim_id": "93aa155e-ef8e-4bfa-9d24-8e0a362251e6",
+      "result_id": "e6af44e8-23b9-44f4-b030-62b253c9d292"
+    },
+    {
+      "claim_id": "a39ab0fd-096c-4c45-9046-d31acedf5cde",
+      "result_id": "e6af44e8-23b9-44f4-b030-62b253c9d292"
+    },
+    {
+      "claim_id": "6e4a85c8-a99c-446c-8749-618c7ebb5d67",
+      "result_id": "e6af44e8-23b9-44f4-b030-62b253c9d292"
+    },
+    {
+      "claim_id": "b027633a-aaac-42b7-ab37-71b92c5f7558",
+      "result_id": "65bf1157-bb2b-4e21-bc47-5c925b968bda"
+    },
+    {
+      "claim_id": "3ff5c8a5-ad66-4b50-b42e-587fcf7cacb5",
+      "result_id": "65bf1157-bb2b-4e21-bc47-5c925b968bda"
+    },
+    {
+      "claim_id": "69d67882-bf70-4b69-88c1-fddfe71d8215",
+      "result_id": "65bf1157-bb2b-4e21-bc47-5c925b968bda"
+    },
+    {
+      "claim_id": "c38ef738-eefb-405f-9228-65e15c352356",
+      "result_id": "65bf1157-bb2b-4e21-bc47-5c925b968bda"
+    },
+    {
+      "claim_id": "ab5e0495-0387-4a93-a65b-1b1f3afee52d",
+      "result_id": "65bf1157-bb2b-4e21-bc47-5c925b968bda"
+    },
+    {
+      "claim_id": "e5e91ed4-6a15-49b8-9390-e54c595da972",
+      "result_id": "65bf1157-bb2b-4e21-bc47-5c925b968bda"
+    },
+    {
+      "claim_id": "77909336-b89e-4bd4-ab67-1e8d458f6d61",
+      "result_id": "65bf1157-bb2b-4e21-bc47-5c925b968bda"
+    },
+    {
+      "claim_id": "dfd7a6c8-a9a0-4a1a-9465-e230b84807da",
+      "result_id": "241742a2-f50a-43e6-acc3-9e6c17317f33"
+    },
+    {
+      "claim_id": "73a4fa1c-8688-4822-a3a5-d6a0dabd253c",
+      "result_id": "241742a2-f50a-43e6-acc3-9e6c17317f33"
+    },
+    {
+      "claim_id": "20a52679-b2b7-414c-be8a-ded83c323750",
+      "result_id": "241742a2-f50a-43e6-acc3-9e6c17317f33"
+    },
+    {
+      "claim_id": "9a755ec8-546c-4893-9d01-bdbf9d00d158",
+      "result_id": "691593d3-08ac-49d6-a315-c2251edfe7b2"
+    },
+    {
+      "claim_id": "5aecec34-09a8-4f94-bd0d-395101384bee",
+      "result_id": "691593d3-08ac-49d6-a315-c2251edfe7b2"
+    },
+    {
+      "claim_id": "78fae318-3e36-4efa-934b-e341f7a2a15d",
+      "result_id": "691593d3-08ac-49d6-a315-c2251edfe7b2"
+    },
+    {
+      "claim_id": "9fb1a769-7c03-4ca9-91e8-8d368818ec69",
+      "result_id": "691593d3-08ac-49d6-a315-c2251edfe7b2"
+    },
+    {
+      "claim_id": "f6fbcb20-3415-4cd9-9294-217302a14869",
+      "result_id": "691593d3-08ac-49d6-a315-c2251edfe7b2"
+    },
+    {
+      "claim_id": "c5b35616-0f34-4fb6-bc55-6a6e9b32f106",
+      "result_id": "691593d3-08ac-49d6-a315-c2251edfe7b2"
+    },
+    {
+      "claim_id": "3b69b0fd-b485-4889-a36c-16e34143ae3a",
+      "result_id": "c592122f-8cc6-4ba9-8c58-e4fc7987f318"
+    },
+    {
+      "claim_id": "186283fd-a3f7-48ff-af03-4590d78897ba",
+      "result_id": "c592122f-8cc6-4ba9-8c58-e4fc7987f318"
+    },
+    {
+      "claim_id": "4c15ccea-f308-4896-b0d3-352e72cdac3c",
+      "result_id": "5c801493-d825-4c35-9793-1563f5aa8575"
+    },
+    {
+      "claim_id": "50fe66fa-cd04-4155-90bc-b351c038f0ad",
+      "result_id": "5c801493-d825-4c35-9793-1563f5aa8575"
+    },
+    {
+      "claim_id": "3d191a5f-7f87-4647-90d8-edb7d7c4a0ea",
+      "result_id": "5c801493-d825-4c35-9793-1563f5aa8575"
+    },
+    {
+      "claim_id": "6b108486-d994-4eaf-a5f8-b9e796aa3835",
+      "result_id": "5c801493-d825-4c35-9793-1563f5aa8575"
+    },
+    {
+      "claim_id": "edf683cf-b139-42d3-a226-0acce8f8e392",
+      "result_id": "b9ea59a4-f81c-4307-a4f7-d22573f46035"
+    },
+    {
+      "claim_id": "f83b52d4-6132-4665-806f-8e4fb482dea7",
+      "result_id": "b9ea59a4-f81c-4307-a4f7-d22573f46035"
+    },
+    {
+      "claim_id": "a0bae36e-dad7-4bd3-858d-437e1335ef34",
+      "result_id": "b9ea59a4-f81c-4307-a4f7-d22573f46035"
+    },
+    {
+      "claim_id": "0c41fec9-694f-474e-9500-b833eb5fefbb",
+      "result_id": "27ffa8b6-7e7f-4d12-8647-6797a4658b68"
+    },
+    {
+      "claim_id": "2ab92a58-b142-4a2c-ac2a-760143a9ba6c",
+      "result_id": "27ffa8b6-7e7f-4d12-8647-6797a4658b68"
+    },
+    {
+      "claim_id": "47489a57-6eb4-42e5-80f7-b287073cefb4",
+      "result_id": "27ffa8b6-7e7f-4d12-8647-6797a4658b68"
+    },
+    {
+      "claim_id": "96a36023-ccd3-42db-b86f-c4b23ea0a81d",
+      "result_id": "27ffa8b6-7e7f-4d12-8647-6797a4658b68"
+    },
+    {
+      "claim_id": "1b33d5cc-3cc2-4cda-a967-5e91d990f0bf",
+      "result_id": "27ffa8b6-7e7f-4d12-8647-6797a4658b68"
+    },
+    {
+      "claim_id": "5bc2446b-23e7-473b-b5f3-9eaaffbca36f",
+      "result_id": "27ffa8b6-7e7f-4d12-8647-6797a4658b68"
+    },
+    {
+      "claim_id": "003de452-b36f-4e1a-a8c3-68723f08bfb5",
+      "result_id": "27ffa8b6-7e7f-4d12-8647-6797a4658b68"
+    },
+    {
+      "claim_id": "b3fc8a0b-22b8-4719-8d61-cb5928134446",
+      "result_id": "27ffa8b6-7e7f-4d12-8647-6797a4658b68"
+    },
+    {
+      "claim_id": "038c61c6-1b39-4238-aa7f-dc46fb4f3386",
+      "result_id": "27ffa8b6-7e7f-4d12-8647-6797a4658b68"
+    },
+    {
+      "claim_id": "b0e179ee-f80c-4cd2-8a92-af4eee18cd69",
+      "result_id": "27ffa8b6-7e7f-4d12-8647-6797a4658b68"
+    },
+    {
+      "claim_id": "be24fb9b-0661-4bf6-a29d-58d9dbd31725",
+      "result_id": "27ffa8b6-7e7f-4d12-8647-6797a4658b68"
+    },
+    {
+      "claim_id": "3d281eb7-40b1-47da-9596-a63777a09575",
+      "result_id": "27ffa8b6-7e7f-4d12-8647-6797a4658b68"
+    },
+    {
+      "claim_id": "f2291c3e-be11-477f-aa32-748d62665c8c",
+      "result_id": "27ffa8b6-7e7f-4d12-8647-6797a4658b68"
+    },
+    {
+      "claim_id": "7bdab7c4-3200-40a8-88e3-e4d739d8793a",
+      "result_id": "27ffa8b6-7e7f-4d12-8647-6797a4658b68"
+    },
+    {
+      "claim_id": "4d848e61-88e4-43c5-be1c-283a1ca37cf7",
+      "result_id": "27ffa8b6-7e7f-4d12-8647-6797a4658b68"
+    }
+  ],
+  "comparisons": []
+}

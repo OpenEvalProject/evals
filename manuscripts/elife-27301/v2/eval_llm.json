@@ -1,0 +1,545 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C24",
+      "C25"
+    ],
+    "result": "LRP16 is overexpressed in CRC tissues compared to adjacent normal tissues, correlates positively with tumor grade and stage, and is associated with poor overall survival and serves as an independent prognostic factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 provide converging evidence from IHC (202 samples), RT-PCR, Western blot, TCGA database analysis, and Kaplan-Meier survival analysis showing LRP16 overexpression correlates with tumor progression and poor prognosis. The multivariate analysis (C7) with appropriate hazard ratios and confidence intervals supports LRP16 as an independent prognostic factor. The sample size (n=202) is adequate for clinical correlation studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "NF-\u03baB is constitutively activated in a subset of CRC patients, with p65 expression elevated in CRC tissues and positively correlated with LRP16 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C19 demonstrate NF-\u03baB activation in CRC through IHC analysis of p65 and phospho-p65 in 202 samples. The positive correlation between LRP16 and p65 expression (C15-C17) is supported by consecutive tissue section analysis and correlation statistics (66% high LRP16 with high p65, 68% low LRP16 with low p65). The data consistently show elevated p65 levels correlate with tumor grade.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "XIAP expression is elevated in CRC tissues, but shows inconsistent correlation with LRP16 expression between the authors' cohort and TCGA database.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C20 shows XIAP elevation in CRC (n=202), C21 reports no significant correlation with LRP16 in the authors' cohort, whereas C23 shows inverse correlation in TCGA data. This discrepancy between datasets is acknowledged by the authors but not fully explained, suggesting potential differences in patient populations, methodologies, or temporal dynamics of gene expression that warrant further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "LRP16 overexpression confers resistance to etoposide in CRC cell lines through reduced apoptosis, as evidenced by increased cell viability, clonogenicity, and reduced caspase-3 cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 demonstrate that CRC cell lines with higher endogenous LRP16 are less sensitive to etoposide (IC50 measurements), and forced LRP16 overexpression in SW480 cells increases resistance specifically to etoposide (not 5-FU or oxaliplatin) with reduced caspase-3 cleavage. C30 appropriately notes no effect on invasion/metastasis ex vivo, indicating specificity of the resistance mechanism. Multiple complementary assays (viability, clonogenicity, apoptosis) support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "LRP16 expression enhances NF-\u03baB pathway activation in response to etoposide, as evidenced by increased phosphorylation of IKK\u03b1, IKK\u03b2, and p65.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 show that etoposide non-responsive cell lines (high LRP16) have elevated phospho-p65 and NF-\u03baB transcriptional activity, while responsive cells (low LRP16) do not. Gradual increase in LRP16 expression dose-dependently increases phosphorylation of IKK\u03b1, IKK\u03b2, and p65 (C33-C34), and restores etoposide resistance (C35). Western blot data consistently demonstrate this relationship across multiple cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Blocking NF-\u03baB activation with BAY 11-7082 or I\u03baB\u03b1SR reduces viability and clonogenicity of LRP16-expressing cells, demonstrating that LRP16-mediated resistance depends on NF-\u03baB signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 show that two independent NF-\u03baB inhibitors (chemical inhibitor BAY 11-7082 and dominant-negative I\u03baB\u03b1SR) both reduce viability and clonogenicity in LRP16-overexpressing cells, establishing NF-\u03baB as the critical downstream mediator. C38 appropriately synthesizes these findings. The use of two different inhibition strategies strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "LRP16 depletion or disruption of its PAR-binding ability sensitizes CRC cells to etoposide-induced cell death, demonstrating that PAR-dependent NF-\u03baB activation is critical for LRP16-mediated drug resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 demonstrate that LRP16 knockdown (two different siRNAs), PAR-binding-deficient mutants (D160A, I161A), or PARP inhibitors (PJ-34, 3-AB) all sensitize cells to etoposide, with reduced viability and clonogenicity. The convergence of genetic (knockdown, mutants) and pharmacological (PARP inhibitors) approaches strongly supports the PAR-dependent mechanism. C42 appropriately synthesizes the mechanistic conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "LRP16 regulates DNA damage-stimulated NF-\u03baB activation by controlling phosphorylation of IKK\u03b1, IKK\u03b2, I\u03baB\u03b1, and p65, as well as nuclear translocation of p65.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 demonstrate bidirectional effects: LRP16 overexpression increases phosphorylation of NF-\u03baB pathway components in dose- and time-dependent manner (C43-C44), while LRP16 depletion reduces these phosphorylations (C46-C48). C50 provides rescue experiment with siRNA-resistant LRP16, controlling for off-target effects. The subcellular fractionation data (C48) adds mechanistic detail. Multiple independent experiments support the regulatory role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "LRP16 specifically regulates the canonical NF-\u03baB pathway (not the noncanonical pathway) and does not require TAK1 phosphorylation, suggesting alternative upstream kinases may be involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C51 shows LRP16 has no effect on NF-\u03baB1 (noncanonical pathway), establishing pathway specificity. C53 demonstrates lack of TAK1 phosphorylation by LRP16, which is unexpected given TAK1's known role as IKK activator. C54 appropriately speculates about alternative kinases. The negative results (no TAK1 activation) are important mechanistic findings, though they leave the direct IKK activation mechanism incompletely defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "LRP16's PAR-binding ability is essential for DNA damage-induced NF-\u03baB activation, as demonstrated by loss of function with PAR-binding-deficient mutants (D160A, I161A).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 consistently show that wild-type LRP16, but not PAR-binding mutants (D160A, I161A), enhances NF-\u03baB activation after etoposide or IR treatment, as measured by both Western blot (phosphorylation of IKK/p65/I\u03baB\u03b1) and luciferase reporter assays. The structure-function relationship is clearly established through multiple complementary assays. C59 appropriately synthesizes the PAR-dependent mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "LRP16 overexpression alters global transcription profiles in response to etoposide, affecting pathways including K63-linked ubiquitination, I\u03baB phosphorylation, and DNA damage response, with downregulation of apoptotic genes and upregulation of anti-apoptotic genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by microarray analysis and PCR array data showing LRP16-dependent transcriptional changes. The pathway analysis (C61) identifies relevant biological processes, and the PCR array (C62-C63) specifically demonstrates reciprocal regulation of apoptotic vs. anti-apoptotic genes. However, the microarray data would benefit from validation of key genes by independent methods (qRT-PCR) and functional validation of pathway involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "LRP16 directly interacts with PKR through its macrodomain binding to PKR's C-terminal catalytic domain, as demonstrated by mass spectrometry, co-immunoprecipitation, and GST pull-down assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C72 establish the LRP16-PKR interaction through multiple complementary approaches: discovery by LC-MS/MS (C65), validation by co-IP in cells (C66), demonstration of DNA-independence with ethidium bromide (C67), domain mapping by deletion analysis (C68-C69, C71-C72), and direct interaction by GST pull-down with recombinant proteins (C70). The convergence of in vitro and in vivo methods strongly supports a direct protein-protein interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "LRP16 forms a ternary complex with PKR and IKK\u03b2, and is required for PKR-IKK\u03b2 interaction, as demonstrated by mass spectrometry, GST pull-down, and co-immunoprecipitation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 identify IKK\u03b2 as an LRP16 interactor by MS (C73), cite prior work showing PKR-IKK\u03b2 interaction (C74), and demonstrate LRP16 can bind both independently (C75). C76-C77 show that LRP16 depletion attenuates PKR-IKK\u03b2 interaction, establishing LRP16's scaffolding role. The combination of biochemical approaches (MS, GST pull-down, co-IP) and loss-of-function experiments supports the ternary complex model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The LRP16-PKR interaction occurs independently of p53 status, as demonstrated in TP53-null cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 show LRP16-PKR interaction in HCT116 p53-/- cells after etoposide treatment, establishing p53-independence. This is an important control given PKR's known interactions with p53 pathway. The experiment appropriately addresses a potential confounding variable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "LRP16 translocates from nucleus to cytoplasm upon DNA damage (etoposide, camptothecin, doxorubicin, IR) in multiple cancer cell types, where it interacts with PKR and IKK\u03b2 specifically in the cytoplasmic fraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 demonstrate LRP16 translocation using confocal microscopy and subcellular fractionation in CRC, breast cancer, and lung cancer cells (C80-C81), and show cytoplasm-specific interactions with PKR and IKK\u03b2 by co-IP of fractionated lysates (C82-C83). The spatial regulation is well-documented across multiple cell types and DNA-damaging agents. C84 appropriately interprets the functional significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "LRP16 translocation to the cytoplasm and assembly of the PKR-IKK\u03b2 complex is strictly dependent on PAR and intact PAR-binding motifs in LRP16, with PAR chains acting as an interaction platform for PKR-mediated IKK activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 show that PARP inhibitors (3-AB, PJ-34) or PAR-binding-deficient mutant (I161A) completely block LRP16 translocation, establishing PAR-dependence. C88-C89 synthesize the mechanistic model of PAR-dependent complex assembly. The combination of pharmacological (PARP inhibitors) and genetic (PAR-binding mutant) approaches strongly supports the PAR-dependent mechanism. However, direct demonstration of PAR binding to the complex would further strengthen the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "PKR expression is elevated in CRC tissues compared to adjacent normal tissues, correlates with tumor grade, and shows positive correlation with LRP16 expression in 202 CRC samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 demonstrate PKR overexpression in CRC by IHC (202 samples), RT-PCR, and Western blot, with positive correlation to tumor grade consistent with prior literature (Kim et al., 2002). C93-C95 show positive correlation between LRP16 and PKR expression (75% high LRP16 with high PKR, 58% low LRP16 with low PKR) in consecutive tissue sections. The large sample size and multiple detection methods support the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "LRP16 enhances etoposide-induced PKR activation in a PAR-binding-dependent manner, as demonstrated by increased PKR autophosphorylation with LRP16 overexpression and loss of activation with LRP16 depletion or PAR-binding mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 show bidirectional regulation: LRP16 overexpression enhances PKR activation (C97), while LRP16 depletion blocks it (C98). C99-C100 demonstrate PAR-binding requirement using D160A and I161A mutants. The dose- and time-dependent effects (C97) and structure-function relationship (C99) support a direct regulatory mechanism. Western blot detection of PKR autophosphorylation (Thr446) is an appropriate readout of PKR activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "PKR acts as an adaptor protein critical for LRP16-mediated IKK activation, as demonstrated by loss of IKK phosphorylation, impaired LRP16-IKK\u03b2 interaction, and reduced IKK kinase activity upon PKR knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 demonstrate PKR's essential role through multiple approaches: PKR knockdown reduces IKK phosphorylation (C101), impairs LRP16-IKK\u03b2 interaction (C102), abrogates NF-\u03baB activation (C104), and reduces IKK kinase activity in vitro (C105). C106 appropriately synthesizes the adaptor protein model. The convergence of biochemical (co-IP, kinase assay) and cellular (Western blot, reporter assay) evidence strongly supports PKR's scaffolding function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "PKR depletion offsets LRP16-mediated etoposide resistance, re-sensitizing cells to etoposide-induced apoptosis as evidenced by reduced viability, clonogenicity, increased Annexin-V/PI binding, and elevated caspase-3 cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 demonstrate functional dependence on PKR using multiple complementary assays: viability and clonogenicity (C107), Annexin-V/PI binding (C108), and caspase-3 cleavage (C109). The rescue of etoposide sensitivity by PKR knockdown in LRP16-overexpressing cells establishes PKR as a critical downstream mediator of LRP16's protective effects. Multiple apoptosis readouts strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "PKR activates IKK through direct protein-protein interaction rather than its kinase activity, as demonstrated by lack of effect of PKR kinase inhibitor (2-AP) on IKK activation but inhibition of I\u03baB\u03b1 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 show that PKR kinase inhibitor 2-AP does not affect IKK activation but does inhibit I\u03baB\u03b1 phosphorylation, suggesting PKR has dual functions: kinase-independent IKK activation and kinase-dependent I\u03baB\u03b1 phosphorylation. C112-C113 appropriately interpret this as protein-protein interaction-mediated IKK activation. This resolves controversy in the literature about PKR's mechanism. However, the specificity of 2-AP should be considered, as it may have off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "MRS2578 and NECA were identified as competitive inhibitors of LRP16-PAR binding through small molecule screening, with MRS2578 showing superior inhibition of IKK\u03b2 kinase activity and NF-\u03baB activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 describe identification of MRS2578 and NECA through computational docking and PAR-binding assays, with both compounds inhibiting IKK\u03b2 kinase activity in IR-stimulated cells, though MRS2578 is more efficient. C117 appropriately concludes MRS2578 limits NF-\u03baB activation. The screening approach is rational, though the mechanism of competitive inhibition could be better characterized (e.g., binding affinity measurements, structural studies).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "MRS2578 inhibits CRC cell survival and proliferation in vitro in a dose-dependent manner, as demonstrated by reduced cell viability (CCK-8), EdU incorporation, and clonogenic survival across multiple CRC cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 demonstrate MRS2578's anti-proliferative effects using three complementary assays (CCK-8, EdU incorporation, clonogenic survival) across six CRC cell lines. The dose-dependent effects and consistency across multiple cell lines and assays support the conclusion. C121 appropriately synthesizes the findings. The IC50 values and dose ranges tested appear appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "MRS2578 inhibits etoposide-induced NF-\u03baB activation in a dose-dependent manner, converting LRP16 from a survival molecule into a death molecule.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C122 demonstrates dose-dependent inhibition of NF-\u03baB pathway phosphorylation (IKK\u03b1, IKK\u03b2, p65, I\u03baB\u03b1) by MRS2578 pretreatment. C123 synthesizes this with the cell killing data to propose mechanism of action. The Western blot data support the biochemical mechanism, though the \"conversion to death molecule\" language is somewhat speculative without direct demonstration of LRP16 becoming pro-apoptotic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "MRS2578 synergizes with etoposide to induce cytotoxicity in CRC cells, overcoming LRP16-mediated resistance through enhanced apoptosis, cell cycle arrest in G2 phase, and inhibition of cell growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 demonstrate synergy using combination index analysis (CI <1 in SW480 and HCT116), show that LRP16-overexpressing cells are sensitized to the combination (C125), demonstrate offset of LRP16's anti-apoptotic effects (C126), and show G2 arrest (C127). C128 appropriately synthesizes the mechanism. The use of CalcuSyn software for CI calculation is appropriate, and multiple endpoints (viability, apoptosis, cell cycle) support synergistic interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "MRS2578 sensitizes IR-resistant CRC cell lines (DLD1_R, HT-29_R) more effectively than their parental cells, demonstrating that its cytostatic effect is independent of the IR resistance mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C129 shows IR-resistant cells are substantially sensitized to MRS2578 compared to parental cells. C130 appropriately interprets this as independence from IR resistance mechanisms. This is an important finding suggesting MRS2578 may overcome acquired resistance. However, the mechanism of IR resistance in these cell lines is not characterized, limiting mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "MRS2578 inhibits the etoposide-stimulated interaction among LRP16, PKR, and IKK\u03b2, preventing ternary complex formation and blocking PKR-mediated IKK activation, similar to PAR-binding-deficient LRP16 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 demonstrate that MRS2578 inhibits phosphorylation of IKK\u03b1/IKK\u03b2 and PKR (C131-C132) and prevents ternary complex formation (C133) by co-IP. C134 appropriately synthesizes the mechanism. The similarity to PAR-binding mutants (C131) supports the proposed mechanism of action. The co-IP data directly demonstrate disruption of protein-protein interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "LRP16 knockdown suppresses tumor growth and sensitizes xenograft tumors to etoposide and IR treatment in vivo, as demonstrated by reduced tumor volume/weight, decreased Ki-67 staining, and increased TUNEL staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C139 demonstrate in vivo effects of LRP16 knockdown in SW620 xenografts using multiple endpoints: tumor volume/weight (C135-C137), Ki-67 proliferation marker (C138), and TUNEL apoptosis marker (C139). C140 extends findings to IR treatment. C141 appropriately synthesizes the synthetic lethality concept. The use of stable knockdown, appropriate controls, and multiple readouts support the conclusions. Sample sizes (n=5 per group) are adequate for xenograft studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "MRS2578 suppresses CRC tumor growth in vivo in a dose-dependent manner (10-20 mg/kg) without significant toxicity, as demonstrated by reduced tumor volume/weight, decreased cellularity with fibrosis, reduced Ki-67 expression, and no weight loss or organ toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C145 demonstrate MRS2578 efficacy and safety in SW620 xenografts: dose-dependent tumor suppression (C142), histological changes (C143), reduced proliferation (C144), and lack of toxicity (C145). C146 appropriately identifies optimal dose range. The toxicity assessment including body weight and H&E staining of organs is appropriate. The dose range tested (10-20 mg/kg) is reasonable for preclinical studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Combination treatment with etoposide and MRS2578 yields superior tumor suppression compared to either agent alone in SW620 xenografts, with greater growth inhibition (Ki-67), reduced phospho-p65 levels, and no significant toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C151 demonstrate combination efficacy in SW620 xenografts: etoposide alone reduces tumor burden (C147), combination yields further reduction (C148), treatment is well-tolerated (C149), with greater growth inhibition (C150) and reduced NF-\u03baB activation (C151). The demonstration of on-target effects (reduced phospho-p65) in tumor lysates (C151) supports the proposed mechanism. Appropriate controls and multiple endpoints strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Combination treatment with etoposide and MRS2578 reduces tumor growth and significantly prolongs survival in syngeneic CT26 colorectal adenocarcinoma model in immunocompetent BALB/c mice without significant toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C154 extend combination efficacy to immunocompetent syngeneic model (CT26 in BALB/c mice), demonstrating reduced tumor growth (C152), prolonged survival by Kaplan-Meier analysis (C153), and acceptable toxicity (C154). The use of immunocompetent model is important for translational relevance, as it allows assessment of potential immune-mediated effects. The survival benefit is a clinically relevant endpoint.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C155",
+      "C156"
+    ],
+    "result": "Pharmacologically targeting LRP16/NF-\u03baB signaling with MRS2578 prevents tumorigenesis, and the combination of MRS2578 and etoposide offers therapeutic opportunities for CRC that may warrant clinical trial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C155 is supported by the cumulative in vivo data showing efficacy of MRS2578 and combination therapy. However, C156's suggestion of \"immediate clinical trial\" is premature and speculative. While the preclinical data are promising, additional studies would be needed before clinical translation, including: (1) pharmacokinetic/pharmacodynamic studies, (2) toxicology in multiple species, (3) assessment in additional CRC models, (4) investigation of resistance mechanisms, and (5) biomarker development for patient selection. The claim overstates the readiness for clinical application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C157",
+      "C158"
+    ],
+    "result": "LRP16 has a dual function in NF-\u03baB activation: (1) providing lesion specificity during DNA damage response in the nucleus through interactions with Ku70/Ku80, PARP1, ATM, PIASy, and NEMO, and (2) assembling the PKR-IKK\u03b2 complex in the cytoplasm upon detection of DNA lesions and PAR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C158 synthesize the dual function model based on current and previous work (Wu et al., 2015). The nuclear function (lesion specificity, recruitment of ATM/PIASy/NEMO) is supported by prior publication. The cytoplasmic function (PKR-IKK\u03b2 complex assembly) is supported by the current study's data on translocation, protein-protein interactions, and PAR-dependence. The model provides a mechanistic link between nuclear DNA damage detection and cytoplasmic IKK activation, addressing a key gap in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "Background claims establishing the context of tumor cell repopulation, NF-\u03baB's role in DNA damage response, PARP1's role in NF-\u03baB activation, LRP16 as a PAR-binding protein, and PKR's roles in cell growth regulation and NF-\u03baB signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C171 provide background context from established literature and prior work. C159-C160 describe tumor repopulation (general knowledge), C161-C164 describe NF-\u03baB's role in DNA damage response (supported by multiple citations), C165-C166 describe LRP16's identification and prior characterization (supported by citations including authors' previous work), and C167-C171 describe PKR's various roles (supported by multiple citations). These claims appropriately establish the scientific context and rationale for the current study.",
+    "result_type": "MINOR"
+  }
+]

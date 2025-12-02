@@ -1,0 +1,326 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Proteome composition varies systematically across 15 growth conditions in budding yeast. Profiles cluster by fermentative vs. respiratory metabolism, with translation-related proteins decreasing from ~40% to ~15% as growth slows, while mitochondrial proteins double to ~20% in slow-growing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C19 are well-supported by proteomic profiling data shown in Figure 1. The correlation analysis (C12-C14), growth rate measurements (C15), and quantification of protein groups (C16-C19) provide consistent evidence for condition-dependent proteome remodeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C71"
+    ],
+    "result": "The proteome fraction encoding ribosomal proteins scales linearly with growth rate in budding yeast, ranging from ~8% in slow-growing cells to ~30% in rapidly growing cells, similar to the bacterial growth law.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C21, and C71 are strongly supported by proteomic data across 15 conditions (Figure 2A). The linear relationship (r\u00b2=0.96) and conservation across different media types provide robust evidence for this scaling law in yeast.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "The scaling of ribosomal protein fraction with growth rate is regulated primarily at the transcriptional level, as mRNA transcript fractions show quantitative agreement with proteome measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 are supported by transcriptome profiling data (Figure 2B) showing quantitative agreement between mRNA and protein scaling. This indicates transcriptional control dominates over post-transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "The scaling relationship between ribosome content and growth rate is conserved across different yeast strains growing in the same condition, not just across different conditions for the same strain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 are supported by transcription profiling of multiple strains with varying growth rates on pentose (Figure 2B top). The qualitative conservation of scaling across genetic backgrounds strengthens the generality of the growth law.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The scaling between ribosome content and growth rate is lost in deletion mutants that affect growth, with most mutants expressing more ribosomal proteins than expected for their growth rate. This indicates the correlation results from environmental signaling rather than direct causal feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by analysis of published deletion mutant datasets (Figure 2B bottom). The loss of scaling in genetic perturbations while maintaining it across environmental conditions provides strong evidence for signaling-based rather than feedback-based regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C72"
+    ],
+    "result": "The measured slope of the ribosome-growth rate scaling relationship (21/ln(2) min) is ~30% larger than predicted from translation elongation rate (10.5 aa/sec) and ribosome size (12,485 aa), yielding \u03b3\u207b\u00b9 = 20 min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C29-C32 involve theoretical predictions compared to empirical measurements. While the calculation is mathematically sound (C31), the discrepancy with measured slope (C32) could reflect model simplifications, measurement uncertainties in elongation rate, or biological factors not captured by the simple model. The authors acknowledge this uncertainty and discuss alternative explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C35",
+      "C42"
+    ],
+    "result": "Cells maintain a constant ~8% of their proteome as excess ribosomal proteins (r\u2080) that are not actively translating, independent of growth rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C35, and C42 are supported by the y-intercept of the scaling curve (Figure 2A) and validated by polysome profiling (Figure 3). The constant r\u2080 across conditions provides strong evidence for a growth-rate-independent pool of inactive ribosomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Polysome profiling reveals substantial monosome fractions (\u03c1=0.18 in fast-growing cells) that increase with decreasing growth rate, quantitatively agreeing with predictions of ~8% constant inactive ribosome pool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by polysome profiling data (Figure 3A-B). The quantitative agreement between observed monosome fractions and theoretical predictions assuming constant r\u2080=8% provides independent validation of the excess ribosome pool.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C43",
+      "C73"
+    ],
+    "result": "Approximately 25% of ribosomal proteins in rapidly growing cells are not actively translating, with this fraction increasing as growth rate decreases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C43, and C73 are supported by combining proteomic data (r\u2080\u22488% out of r\u224830% total) with polysome profiling. The calculation is straightforward and the conclusion is well-supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "During entry into stationary phase, ribosomal content decreases 2.5-4 generations before growth rate drops, suggesting cells reduce ribosome production in anticipation of nutrient limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by published proteomic data (Murphy et al., 2015) and transcription profiling in low phosphate (Figure 4A, Figure 4\u2014figure supplement 1). The temporal separation between ribosome reduction and growth rate decline is clearly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Cells respond to nutrient upshifts by increasing growth rate within minutes, faster than would be possible by synthesizing new ribosomes, suggesting utilization of pre-existing excess ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by chemostat experiments (Figure 4B) and microfluidic microscopy (Figure 4C). The rapid growth response (minutes) is inconsistent with de novo ribosome synthesis timescales, supporting the hypothesis of excess ribosome mobilization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "During exit from stationary phase, cells resume rapid growth (~0.55 gen/hr) after a 40-min lag without increasing ribosome content, requiring utilization of the vast majority of expressed ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by proteome profiling during stationary phase exit (Figure 4D). The observation that ribosome content remains constant while growth resumes provides direct evidence for mobilization of the inactive ribosome pool.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Protein-burdened cells show similar linear scaling of ribosome content with growth rate across conditions, with slope independent of burden level, indicating translation elongation rates remain constant despite burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by proteomic profiling of burden strains (Figure 5A). The preservation of slope across burden levels while the intercept changes provides strong evidence that burden affects ribosome pool size but not elongation kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Protein burden reduces the inactive ribosome pool (r\u2080) from 8.1% in wild-type to 5.5% in high-burden cells, indicating burdened cells employ a higher fraction of their ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by proteomic profiling showing reduced y-intercept in burden cells (Figure 5, Figure 5\u2014figure supplement 1B). The reduction in r\u2080 with increasing burden provides evidence that cells can modulate the inactive ribosome pool.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Burdened cells show delayed recovery from starvation that increases linearly with burden level, quantitatively explained by their reduced inactive ribosome pool (r\u2080).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by recovery time data (Figure 5B, reanalyzed from Kafri et al., 2016b). The quantitative agreement between r\u2080 reduction (~15%) and recovery delay (~15%) provides strong support for the functional role of excess ribosomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The ratio of active to inactive ribosomes (ra/r\u2080) depends on growth conditions but remains invariant to protein burden within the same condition, as confirmed by polysome profiling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by proteomic analysis (Figure 6A) and polysome profiling (Figure 6B). The invariance of polysome/monosome ratios between wild-type and burden cells in the same condition validates the theoretical prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C74"
+    ],
+    "result": "Ribosome content and active fraction are tuned primarily by environmental signaling rather than growth-rate-dependent feedback, as evidenced by the alterability of scaling relationships under different perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C67, and C74 are supported by the differential responses to environmental vs. genetic perturbations (Figures 2B, 5, 6). The maintenance of ra/r\u2080 ratios despite growth rate changes in burden experiments provides strong evidence for signaling-based control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Cells produce excess ribosomes as a preparedness strategy for fluctuating conditions, enabling rapid growth resumption upon nutrient upshift at the cost of reduced steady-state growth rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10-C11 are supported by data showing mobilization of excess ribosomes during upshifts. However, C68-C70 are speculative interpretations about evolutionary strategy. While the preparedness hypothesis is consistent with observations, alternative explanations (e.g., kinetic constraints, regulatory limitations) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Monosomes represent primarily inactive ribosomes, with rRNA comprising ~82% of monosome RNA content and ~96% of polysome RNA content based on ribosome and mRNA size calculations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 are supported by established literature on polysome profiling interpretation and straightforward calculations from known rRNA (5500 bp) and average mRNA (1250 bp) lengths. The authors acknowledge recent challenges to this interpretation but provide justification for their approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Published measurements of translation elongation rates across growth conditions are conflicting, with one study reporting constant rates (10.5 aa/sec) and another reporting 40% reduction in poor media.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 accurately report conflicting findings from Waldron et al. (1977) and Bonven & Gull\u00f8v (1979). The authors appropriately acknowledge this uncertainty and discuss potential methodological differences. This represents accurate assessment of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The study employed mass spectrometry to profile proteomes of BY4742/Y8205 yeast strains across three nutrient conditions, combined with published datasets from 12 carbon sources, with all profiles calibrated to external reference data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 describe the experimental design and data sources. These methodological claims are straightforward and well-documented in the Materials and Methods section, providing appropriate transparency about data generation and integration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C33"
+    ],
+    "result": "Background claims establish that rapidly growing yeast contain ~190,000 ribosomes comprising ~30% of proteome, that resource allocation models predict full ribosome utilization maximizes growth, but recent evidence suggests excess ribosomes exist in slow-growing bacteria and translation is not universally limiting in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 and C33 accurately represent prior literature through appropriate citations. These background claims establish the context and motivation for the current study, correctly citing established facts and recent findings that challenge prevailing models.",
+    "result_type": "MINOR"
+  }
+]

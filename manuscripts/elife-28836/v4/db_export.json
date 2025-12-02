@@ -1,0 +1,1614 @@
+{
+  "submission": {
+    "id": "00ed6147-c29f-4dd0-9e64-9f5892eb46d5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:01:07.490565Z",
+    "updated_at": "2025-12-01T21:01:07.490565Z"
+  },
+  "content": [
+    {
+      "id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "submission_id": "00ed6147-c29f-4dd0-9e64-9f5892eb46d5",
+      "content_type": "manuscript",
+      "content_text": "# A synthetic biology approach to probing nucleosome symmetry\n\n## Authors\n\n- Yuichi Ichikawa<sup>1</sup>\n- Caitlin F Connelly<sup>2</sup>\n- Alon Appleboim<sup>3</sup>\n- Thomas CR Miller<sup>5</sup>\n- Hadas Jacobi<sup>3</sup>\n- Nebiyu A Abshiru<sup>6</sup>\n- Hsin-Jung Chou<sup>2</sup>\n- Yuanyuan Chen<sup>1</sup>\n- Upasna Sharma<sup>2</sup>\n- Yupeng Zheng<sup>6</sup>\n- Paul M Thomas<sup>6</sup>\n- Hsuiyi V Chen<sup>2</sup>\n- Vineeta Bajaj<sup>1</sup>\n- Christoph W M\u00fcller<sup>5</sup>\n- Neil L Kelleher<sup>6</sup> ([ORCID: 0000-0002-8815-3372](https://orcid.org/0000-0002-8815-3372))\n- Nir Friedman<sup>3</sup> ([ORCID: 0000-0002-9678-3550](https://orcid.org/0000-0002-9678-3550))\n- Daniel NA Bolon<sup>2</sup>\n- Oliver J Rando<sup>2</sup> ([ORCID: 0000-0003-1516-9397](https://orcid.org/0000-0003-1516-9397)) \u2020\n- Paul D Kaufman<sup>1</sup> ([ORCID: 0000-0003-3089-313X](https://orcid.org/0000-0003-3089-313X)) \u2020\n\n### Affiliations\n\n1. Department of Molecular, Cell and Cancer Biology University of Massachusetts Medical School Worcester United States\n2. Department of Biochemistry and Molecular Pharmacology University of Massachusetts Medical School Worcester United States\n3. School of Computer Science and Engineering The Hebrew University of Jerusalem Jerusalem Israel\n4. The Alexander Silberman Institute of Life Sciences The Hebrew University of Jerusalem Jerusalem Israel\n5. Structural and Computational Biology Unit European Molecular Biology Laboratory Heidelberg Germany\n6. National Resource for Translational and Developmental Proteomics Northwestern University Evanston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe repeating subunit of chromatin, the nucleosome, includes two copies of each of the four core histones, and several recent studies have reported that asymmetrically-modified nucleosomes occur at regulatory elements in vivo. To probe the mechanisms by which histone modifications are read out, we designed an obligate pair of H3 heterodimers, termed H3X and H3Y, which we extensively validated genetically and biochemically. Comparing the effects of asymmetric histone tail point mutants with those of symmetric double mutants revealed that a single methylated H3K36 per nucleosome was sufficient to silence cryptic transcription in vivo. We also demonstrate the utility of this system for analysis of histone modification crosstalk, using mass spectrometry to separately identify modifications on each H3 molecule within asymmetric nucleosomes. The ability to generate asymmetric nucleosomes in vivo and in vitro provides a powerful and generalizable tool to probe the mechanisms by which H3 tails are read out by effector proteins in the cell.\n\n## Introduction\n\nPackaging of eukaryotic genomes into chromatin has widespread consequences for genomic function, as nucleosomes generally impede the access of proteins to the underlying DNA (Hughes and Rando, 2014). In addition, the histone proteins are subject to a huge variety of covalent modifications, which affect genomic function in ways ranging from direct alterations in the biophysical nature of the chromatin fiber to recruitment or activation of various regulatory proteins.\n\nThe histone octamer is comprised of two copies of each of the four histones H2A, H2B, H3, and H4, organized with two H2A/H2B dimers associated with a central core tetramer of histone H3 and H4 (Kornberg and Lorch, 1999). The symmetry inherent to the histone octamer has long been appreciated, and it has been suggested that chromatin function may be regulated at the level of histone modification symmetry \u2013 that K4me3/K4me0 and K4me3/K4me3 nucleosomes might serve distinct functions in vivo, for example. Indeed, increasing evidence supports the existence of asymmetrically-modified nucleosomes in vivo. In mammals, immunopurification and mass spectrometry of nucleosomes marked with H3K27me3 revealed a mixture of symmetrically-modified nucleosomes as well as asymmetric nucleosomes modified on only one H3 tail (Voigt et al., 2012). More recent single molecule studies of H3K4me3/K27me3-marked \u2018bivalent\u2019 nucleosomes reveal that the vast majority of these nucleosomes are asymmetrically modified, with each H3 tail bearing one of the two methylation marks, rather than both marks co-occurring on the same H3 molecule (Shema et al., 2016). In budding yeast, ChIP-Exo and chemical mapping studies identified a subset of nucleosomes that exhibit asymmetric contacts with the underlying genomic DNA (Rhee et al., 2014; Ramachandran et al., 2015), suggested to reflect histone octamers associated with an asymmetrically-localized DNA bulge.\n\nWhile evidence therefore increasingly supports the hypothesis that nucleosomes across the genome \u2013 particularly at regulatory regions \u2013 can be modified asymmetrically, at present it is largely unknown whether nucleosome symmetry affects genomic functions such as transcription. For instance, do any chromatin regulators bind specifically to singly-modified nucleosomes, or to doubly-modified nucleosomes? A handful of studies in vitro have suggested that chromatin regulators can distinguish singly-modified from doubly-modified nucleosomes. For instance, Li et al assembled and purified asymmetric nucleosomes lacking a single H3 tail in vitro, subsequently showing that the histone acetyltransferase Gcn5 exhibited cooperative binding to two histone tails (Li and Shogren-Knaak, 2008; Li and Shogren-Knaak, 2009). Conversely, asymmetrically H3K4-methylated nucleosomes were, like unmodified nucleosomes, efficiently methylated at K27 by the PRC2 complex, whereas this methylation was inhibited by the presence of symmetric H3K4me3 marks (Voigt et al., 2012). Although these in vitro studies generate hypotheses for how chromatin effectors might be affected by nucleosome symmetry in the cell, the inherent symmetry of the natural H3-H3 interface has made in vivo tests of these hypotheses impossible until now.\n\nHere, we develop a novel system to enable analysis of the functional consequences of nucleosome symmetry in vivo. Using rational design, followed by in vivo optimization and selection, we developed a pair of H3 proteins \u2013 H3X and H3Y \u2013 that form heterodimers in vivo, yet cannot homodimerize. We validated this system genetically and biochemically in budding yeast, confirming that the vast majority of histone octamers in the cell contain a heterodimeric H3X/H3Y at their core. Furthermore, we confirm that the engineered specificities are recapitulated in vitro during biochemical reconstitution of histone octamers with recombinant subunits. We then used this system to probe several mechanistic aspects of nucleosome function in vivo, finding that a single copy of H3K36 is sufficient for stress resistance, and to silence cryptic transcription, in vivo. In addition, we show that disruption of H3S10 affects H3K9 acetylation only on the same tail, demonstrating the utility of this approach for interrogating histone \u2018crosstalk\u2019. This system thus represents a powerful approach to mechanistically probe the role of histone stoichiometry and symmetry in a variety of aspects of chromatin biology.\n\n## Results\n\n### Design and validation of obligate heterodimers\n\nThe histone octamer is built on a central core tetramer of histone H3 and H4, assembled around a central H3-H3 homodimeric interface (Luger et al., 1997). In order to develop a system to analyze the role of nucleosome symmetry in chromatin regulation in vivo, we set out to design a pair of H3 molecules \u2013 \u2018H3X\u2019 and \u2018H3Y\u2019 \u2013 which cannot form X/X or Y/Y homodimers, but will efficiently form H3X/H3Y heterodimers (Figure 1A). We initially used protein design to develop six sets of H3 mutants that are predicted to have much higher affinity with a paired mutant protein than with wild-type H3. Each engineered variant has \u2018bumps and holes\u2019 that are also predicted to reduce the potential for homodimerization. We focused our efforts on the hydrophobic cluster formed by amino acids L109, A110, L126, and L130 (Figure 1B) in the nucleosome structure (pdb 1KX3). At these positions, sequence and conformational space were enumerated using a rotamer description of side chain geometry and a molecular mechanics force-field (Mayo et al., 1990) to generate a pairwise energy matrix. We used a previously described algorithm (Bolon et al., 2005) to identify sequences that preferentially energetically partition as heterodimers.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/28836/elife-28836-fig1-v4.jpg)\n\n**Figure 1.:** (A)\u00a0Schematic of asymmetric histone H3 design. Left: Wild-type H3/H4 tetramers are symmetrical, with H3-H3 interactions serving as the dimerization interface. The H3 N-terminus, site of many modifiable residues, is indicated protruding from the globular domain. Right: Obligate heterodimer H3s are comprised of distinct \u2018X\u2019 and \u2018Y\u2019 interaction partners which are altered to prevent either H3 from homodimerizing. (B)\u00a0Computational models of the designed histone H3 heterodimer. (1) The four-helix bundle comprising the H3-H3 C-terminal dimerization interface (pdb 1KX3). Leucine and alanine residues at the hydrophobic interface are indicated. (2) The designed asymmetric mutations pack efficiently as a heterodimer, with partners colored in green (H3Y) and yellow (H3X). Indicated residues at the H3-H3 interface were engineered to form a bump-hole interface to increase interaction affinity. (3-4) Altered H3s are designed not to homodimerize due to van der Waals clashes (3) or voids (4) in the hydrophobic core. (C\u2013D) Genetic analysis of heterodimeric H3X/H3Y pairs. C)H3Y alone cannot support growth. Images show growth of yeast carrying wild-type H3 on a URA3-marked plasmid as well as either empty plasmid, wild-type H3, H3Y alone, or both H3X and H3Y. Three independent transformants for each strain were grown on 5-FOA to select against the URA3 shuffle plasmid. (D)\u00a0H3X alone cannot support growth. Left panels: growth of three independent transformants of various H3X strains (evolved second-generation mutations indicated at left) in the absence of H3Y. Bottom: positive control with a TRP1-marked wild-type histone plasmid. Right panels: growth of indicated H3X strains in the presence of H3Y. Synthetic complete (SC) plates were grown 3 days, FOA plates 9 days. No growth on FOA was observed for any of the four evolved H3X alleles in the absence of H3Y, even after extended incubation. (E)\u00a0Sequences of final H3X-H3Y molecules. All four H3X variants have been validated genetically, while two variants \u2013 126A/130V and 126V/130A \u2013 have been validated biochemically (see Figure 2 and not shown). 126A is used for all functional analyses.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28836/elife-28836-fig1-figsupp1-v4.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A)\u00a0Genetic analysis of the original H3X design. The top four panels are identical to Figure 1C, showing growth of H3X/H3Y-bearing yeast strains but no growth of H3Y-bearing strains, and are duplicated here for comparison to H3X growth phenotypes. Bottom two panels: Yeast bearing a wild type histone-URA3 shuffle plasmid were transfected with the indicated plasmids carrying a wild-type H4 gene and the original H3X (126V, 130V) gene. Three independent isolates of each strain were patched onto 5-FOA media to select for loss of the wild type histone-URA3 plasmid. Strains were grown for the indicated number of days and photographed. The growth of papillae in the absence of H3Y upon extended incubation led us to optimize H3X by randomization of four key residues, as shown below. (B)\u00a0Sequencing traces for the four \u2018H3X*\u2019 libraries, each with one randomly mutagenized codon as indicated. Although the base utilization in the synthetic oligonucleotides is not completely equal, all four bases are readily detected at each position. (C)\u00a0Schematic of the screening strategy. Transformants carrying the H3X* library alleles were plated on SC-Trp and replicated onto FOA plates. Strains that couldn\u2019t survive on FOA with H3* alone were transformed with an H3Y-expressing plasmid, and then were tested on FOA media to assess the viability of the H3X*-H3Y combinations (as shown in Figure 1C). As an additional criterion, we tested whether the two plasmids expressing the new H3X/H3Y heterodimers were stable when cells were cultured in rich media in the absence of selection for either plasmid. Repeated rounds of streaking on rich (YPD) plates or culturing in YPD media yielded colonies that all maintained a Trp+Leu+ phenotype, indicating that neither plasmid could be lost. Furthermore, resequencing of plasmids isolated after growth on YPD detected no reversion of the engineered H3X or H3Y in 96 independent isolates. Together, the genetic data strongly suggest that the H3X/H3Y combinations are obligate heterodimers, and that neither H3X nor H3Y can homodimerize at sufficient levels to support viability.\n\nWe then carried out genetic tests of six initial designs in vivo, reasoning that budding yeast carrying both H3X and H3Y should be viable, but yeast carrying H3X alone or H3Y alone would be inviable due to the failure of these H3 molecules to homodimerize. In our initial tests, one of the original six designs (H3X\u00a0=\u00a0L126V, L130V; H3Y\u00a0=\u00a0L109I, A110W, L130I) exhibited most of the expected growth behaviors. However, although yeast carrying H3Y alone exhibited no growth even after 21 days of culture (Figure 1C and not shown), H3X-only strains did grow even in the absence of H3Y, albeit poorly \u2013 colonies were only observed after nine or more days of growth of these strains (Figure 1\u2014figure supplement 1A), in contrast to the abundant colonies observed for H3X/H3Y strains after just two or three days. As homodimerization of H3X even at low levels could complicate interpretation of this system, we carried out a round of in vivo selection to optimize the H3X interface (Figure 1\u2014figure supplement 1B\u2013C). We randomized each of the H3/H3 interface residues on the backbone of the initial H3X gene, generating libraries of yeast strains bearing these mutant \u2018H3X*\u2019 molecules paired with our previously-selected H3Y design. Strains that grew robustly with H3X*/H3Y pairs were then re-tested for growth in the absence of the H3Y. In this manner, we identified four final versions of H3X (named 126A, 130A, 130T, and 130Q for the additional substitutions on the original H3X backbone) that reproducibly conferred robust growth in the presence of H3Y but were completely inviable in its absence (Figure 1D\u2013E). We obtained multiple isolates encoding each of these amino acid substitutions (13, 5, 5, and 5, respectively), suggesting that we had adequately surveyed the possible codons. Consistent with our observation that these residues are sensitive points for H3/H3 dimeric interactions, L126A and L130A mutations cause lethality when present on symmetric H3 molecules (Dai et al., 2008).\n\nAlthough these genetic tests suggest that H3X or H3Y alone do not homodimerize efficiently enough to support growth, the possibility remains that in the context of cells expressing both H3X and H3Y there could nonetheless exist a substantial fraction of inappropriate homodimeric interactions, which would complicate interpretation of downstream results. To quantitatively determine the extent of X/X or Y/Y homodimerization in vivo, a biotin-tagged (Beckett et al., 1999) H3X or Y variant was coexpressed in combination with two other H3s: the same variant with a different epitope tag, and the designed partner (Figure 2). To analyze H3-H3 interactions within individual nucleosomes and avoid contamination from adjacent nucleosomes (as could arise from undigested dinucleosomes), we treated extracts from these cells with dimethyl suberimidate (DMS), a crosslinking agent that produces well-characterized crosslinks within histone octamers (Kornberg and Thomas, 1974; Thomas, 1989). Crosslinked samples were then digested with micrococcal nuclease to generate a soluble population of mononucleosomes. This was followed by biotin-based affinity purification in the presence of high salt (2M NaCl) to remove DNA and adjacent nucleosomes, leaving only crosslinked protein complexes that were subsequently analyzed by Western blotting. The DMS crosslinking efficiency of the X-Y heterodimeric pairs was nearly identical to that observed in cells expressing tagged H3 variants with a wild-type, homodimeric interface (Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/28836/elife-28836-fig2-v4.jpg)\n\n**Figure 2.:** (A)\u00a0Schematic for in vivo biochemical analysis of H3X dimerization. Yeast strains expressed biotin-tagged H3X along with tagged H3X and H3Y, as indicated. (B)\u00a0Immunoblot analysis of biotin-H3X partners. For each of the indicated antibodies (Myc or V5, the same blot was probed sequentially), the left two lanes show total DMS-crosslinked, MNase-digested chromatin (Input), and right lanes show streptavidin-precipitated biotinylated-H3 (Bound). Arrow indicates the expected size (31 kD) of crosslinked H3-H3 dimer species \u2013 note that biotin-H3 molecules crosslinked to H4 would not be recognized by the anti-epitope antibodies used for Western blot analysis. Asterisk indicates monomeric H3 molecules \u2013 presence of V5-tagged H3X (left panel) at this position in the bound fraction reflects bead contamination by uncrosslinked H3 molecules. Full gel, including unbound material and DMS control, is shown in Figure 2\u2014figure supplement 2. (C)\u00a0Quantitation of the amounts of the crosslinked 31kD H3-H3 dimers precipitated with streptavidin-agarose for second-generation H3X variant 126A. The mean and standard deviation for three independent replicate experiments are shown. (D\u2013F) As in (A\u2013C), but for biotin-tagged H3Y. As above, the homodimer signal (Myc, right panel) at 31kD in the bound material was almost undetectable, while V5-tagged H3X/H3Y heterodimers were readily detected. The mean and standard deviation for three independent replicate experiments are quantitated in panel (F).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28836/elife-28836-fig2-figsupp1-v4.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A)\u00a0Schematic for in vivo biochemical analysis of H3 dimerization. Yeast strains used were PKY4616 (top, biotin-tagged wild-type H3\u00a0+V5 tagged wild-type H3), PKY4625 (middle, biotin-H3X\u00a0+\u00a0V5-H3X\u00a0+\u00a0Myc-H3Y), and PKY4694 (bottom, biotin-H3Y\u00a0+\u00a0V5-H3X\u00a0+\u00a0Myc-H3Y). (B)\u00a0Immunoblot analysis of strains shown in (A). Whole cell extracts after 0 or 60 min of DMS crosslinking (- DMS or\u00a0+DMS, respectively) were separated by 17% SDS-PAGE, transferred to a membrane, and probed with anti-V5 antibody. (C)\u00a0Quantitation of the dimer/monomer ratio of H3 proteins after DMS crosslinking. The mean and standard deviation for three independent replicate experiments are graphed.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/28836/elife-28836-fig2-figsupp2-v4.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A)\u00a0Immunoblot analysis of Biotin-H3X126A strain. Lanes 3\u20134 and 7\u20138 from these gels are reproduced in Figure 2B,E. Lanes 1\u20132: whole cell extracts after 0 or 60 min of DMS crosslinking. Lanes 3\u20138: DMS-crosslinked, MNase-digested chromatin from the indicated strains was precipitated with streptavidin-agarose to capture biotinylated (Bio) H3. I\u00a0=\u00a0Input, U\u00a0=\u00a0Unbound: 0.75% and 1.5% of total shown in adjacent lanes; B\u00a0=\u00a0Bound: 10% and 20% of total shown. Proteins were separated by 17% SDS-PAGE, transferred to a membrane, and probed sequentially with the indicated primary antibodies. Arrow indicates the expected size of crosslinked H3-H3 dimer species, while asterisk indicates monomeric H3 molecules \u2013 presence of V5-tagged H3X (left panel) at this position in the bound fraction reflects bead contamination by uncrosslinked H3 molecules. (B)\u00a0As in A, for biotin-H3Y.\n\nUsing this assay, we analyzed the extent of homodimerization of a lead H3X candidate using strains expressing Biotin-H3X, V5-H3X, and Myc-H3Y (Figure 2A\u2013C). After streptavidin purification of biotin-H3X from DMS-crosslinked yeast, the species migrating at 31kD (red arrow, Figure 2B) is comprised of the captured biotin-H3X crosslinked to the other H3 from the same nucleosome. Myc-H3Y molecules were abundantly detected in the crosslinked 31kD species (Figure 2B, Figure 2\u2014figure supplement 2), consistent with the expected heterodimerization with H3X. In contrast, barely detectable levels of V5-H3X \u2013 which would result from H3X-H3X homodimerization \u2013 were observed in the bound 31kD species (Figure 2B, quantitated in Figure 2C). In a reciprocal experiment, we assayed H3Y homodimerization, again finding efficient heterodimerization in vivo along with barely detectable H3Y homodimerization (Figure 2D\u2013F, Figure 2\u2014figure supplement 2).\n\nIn addition to its utility for genetic analysis of nucleosome symmetry, the ability to generate asymmetric nucleosomes in vitro would also provide a valuable resource for biochemical and structural studies. We therefore purified recombinant human histones H2A, H2B, and H4, as well as recombinant H3X and H3Y variants engineered onto the human H3 histone backbone. Gel filtration of in vitro assembled octamers revealed robust assembly of histone octamers assembled using wild-type H3, or assembled around the H3X/H3Y heterodimer pair. In contrast, attempts to refold histone octamers using H3X only or H3Y only resulted in high molecular weight aggregates with no functional histone octamer (Figure 3, Figure 3\u2014figure supplement 1A\u2013B). Moreover, H3X/H3Y-based octamers were readily reconstituted into nucleosomes when assembled with DNA, whereas the material obtained from H3X alone or H3Y alone did not assemble into nucleosomes.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/28836/elife-28836-fig3-v4.jpg)\n\n**Figure 3.:** (A)\u00a0Size exclusion (Superdex 200 Increase 3.2/300) gel filtration profiles showing the purification of octamer refolding reactions containing wild-type and heterodimer \u2018X\u2019 and \u2018Y\u2019 histone H3. Octamer refolding in the presence of both \u2018X\u2019 and \u2018Y\u2019 H3 yields histone octamers with a characteristic elution profile, similar to refolding reactions containing wild-type H3, while reconstitutions with only H3X or only H3Y form aggregates. (B)\u00a0Native PAGE analysis of nucleosome reconstitution experiments with purified histones from (A). H3X/Y octamer reconstitutions readily form nucleosomes when assembled onto DNA, while the aggregates formed in octamer refolding reactions containing either \u2018X\u2019 or \u2018Y\u2019 alone do not form histone octamers and therefore cannot form nucleosomes in vitro.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28836/elife-28836-fig3-figsupp1-v4.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A)\u00a0Purified recombinant histones. (B)\u00a0Replicate size exclusion (Superdex 200 Increase 3.2/300) gel filtration profiles showing the purification of octamer refolding reactions containing wild-type and heterodimer \u2018X\u2019 and \u2018Y\u2019 histone H3. As in Figure 3A, with additional replicate shown. (C)\u00a0Coomassie Blue G staining of affinity-purified chromatin composed of asymmetric nucleosomes. Chromatin was washed with buffer containing 0.1% Triton X100 and 0.5 M NaCl and purified by binding to streptavidin-agarose in the same buffer. Strains expressed the indicated combination of X-Y asymmetric H3s. 10 \u03bcl (lanes 1, 4, 6), 5 \u03bcl (lanes 2, 5, 7) or 2.5 \u03bcl (lane 3) of the bound material was analyzed on a 15% SDS-PAGE gel.\n\nIn addition to the ability to generate asymmetric nucleosomes from recombinant proteins in vitro, chromatin purified from mutant yeast strains has also proven to be a powerful tool for in vitro chromatin studies (see, eg, (Altaf et al., 2007)). We therefore affinity-purified chromatin from strains expressing an asymmetric H3X/H3Y pair in which one H3 carries a biotin tag, readily recovering the core histones regardless of whether the biotin tag was present on the X or Y variant (Figure 3\u2014figure supplement 1C). The engineered H3X/H3Y interface thus enables the convenient generation of asymmetric nucleosomes for biophysical and biochemical studies of nucleosomal symmetry in vitro.\n\nTaken together, our genetic and biochemical analyses validate our designed obligate heterodimers, indicating that the great majority (average of\u00a0~97% as measured in Figure 2C,F) if not all of the nucleosomes in vivo are indeed heterodimeric. We have therefore established a unique system for manipulation of nucleosomal symmetry in vivo and in vitro. As with all studies based on expression of mutant histones, the mutant nucleosomes will be located throughout the yeast genome. Nonetheless, such studies have provided great insights into chromatin function over decades of study (Dai et al., 2008; Johnson et al., 1990), distinguishing between genes whose expression requires a given histone residue and those genes that are unaffected despite the loss of the residue (and its modification, if present).\n\n### Genetic analysis of interactions between histone tail mutations\n\nThe ability to generate asymmetric nucleosomes in vivo enabled us to quantitatively characterize interactions between mutations on the two histone tails using genetic epistasis. To this end, we generated \u2018trios\u2019 of histone point mutants \u2013 asymmetric single mutations H3Xwt/H3Ymut and H3Xmut/H3Ywt, and the double mutation H3Xmut/H3Ymut. Importantly, although strains expressing the heterodimeric X/Y H3s exhibit reduced growth in YPD (doubling times of\u00a0~240 min at 30\u00b0C compared to\u00a0~140 min for the parent strain, Figure 4\u2014figure supplement 1A) and a modest temperature-sensitive phenotype (robust growth at 34 C but failure to grow at 37 C \u2013 see below), any effects of the mutant X/Y interface on chromatin regulation and cellular function are internally controlled for in all studies by comparing all yeast carrying single or double histone mutations to the \u2018pseudo-wild type\u2019 strain (H3Xwt/H3Ywt).\n\nTo broadly survey the landscape of inter-tail epistasis between histone mutations, we generated a set of 12 mutant trios, focusing on relatively well-characterized sites of post-translational covalent modifications. Mutant effects on organismal phenotypes are often context-dependent, and stress conditions can provide a sensitized environment for detection of chromatin-related phenotypes (Weiner et al., 2012). We first assayed the relative fitness of these strains in both low (0.2 M) and high (0.8 M) KCl-containing media (Figure 4A), as the osmotic stress response is one of the most commonly studied transcriptional responses in budding yeast (Capaldi et al., 2008; Gasch et al., 2000). As expected, growth rates for strains carrying a single mutation on H3X were generally well-correlated with those for H3Y mutants, although a small subset of mutations exhibited different behavior on different H3 backbones (see, eg, H3K37Q in 0.8M KCl).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/28836/elife-28836-fig4-v4.jpg)\n\n**Figure 4.:** (A\u2013B) We constructed 12 sets of point mutations in histone H3, with each mutant cycle including H3Xmut/H3Ywt, H3Xwt/H3Ymut, and H3Xmut/H3Ymut \u2013 for each mutant trio, X/Y/double mutations are ordered from left to right, as indicated with green/yellow/blue boxes in Panel (B). For all 12 trios, as well as the matched \u2018pseudo-wt\u2019 (labeled as pWT) carrying H3Xwt/H3Ywt (leftmost bar and dashed line), we measured doubling times in at least six replicate cultures in low (A) and high (B) KCl. Boxes emphasize H3K14R and H3K36Q trios, as detailed in text. Note that growth rates here were measured robotically in a 96-well format, so doubling times are slower than those typically measured in well-aerated cultures (Figure 4\u2014figure supplement 1A). (C) Effects of H3K36Q mutants on DNA damage sensitivity. Serial dilutions of the indicated strains were plated on YPD, YPD\u00a0+\u00a010 ng/ml phleomycin or YPD\u00a0+\u00a00.025% MMS, as indicated. pWT XY (PKY4704), K36Q mXY (PKY4829), K36Q XmY (PKY4831), K36Q mXmY (PKY4834), K36Q_X/P38V_Y (PKY5138), and P38V_X/K36Q_Y (PKY5140). (D\u2013F) Serial dilution growth assay for the indicated strains incubated at 30 C or 34 C, as indicated. Note that yeast carrying pseudo-wild type H3X/H3Y nucleosomes grow poorly at 37C, so we assayed temperature sensitivity at 34 C. Mutant set in (D) shows temperature-sensitivity is specific to symmetric H3K36Q mutant. Mutant set in (E) shows that complete loss of H3K36me3 in the symmetric H3P38V mutant (where H3K36me3 is replaced with H3K36me2) is compatible with rapid growth at high temperatures. Mutant set in (F) shows that a single dimethylated K36 residue per nucleosome is compatible with rapid growth at high temperatures. Strains analyzed were: pWT XY (PKY4704), R2K mXY (PKY4749), R2K XmY (PKY4751), R2K mXmY (PKY4753), K9Q mXY (PKY4714), K9Q XmY (PKY4715), K9Q mXmY (PKY4706), K9R mXY (PKY4773), K9R XmY (PKY4775), K9R mXmY (PKY4777), S10A mXY (PKY4716), S10A XmY (PKY4717), S10A mXmY (PKY4707), K14Q mXY (PKY4789), K14Q XmY (PKY4791), K14Q mXmY (PKY4793), K14R mXY (PKY4781), K14R XmY (PKY4783), K14R mXmY (PKY4786), K18Q mXY (PKY4805), K18Q XmY (PKY4807), K18Q mXmY (PKY4809), K18R mXY (PKY4797), K18R XmY (PKY4799), K18R mXmY (PKY4801), K27Q mXY (PKY4822), K27Q XmY (PKY4823), K27Q mXmY (PKY4825), K27R mXY (PKY4813), K27R XmY (PKY4815), K27R mXmY (PKY4817), K36Q mXY (PKY4829), K36Q XmY (PKY4831), K36Q mXmY (PKY4834), K37Q mXY (PKY4837), K37Q XmY (PKY4839), K37Q mXmY (PKY4841), P38V mXY (PKY5033), P38V XmY (PKY5035), P38V mXmY (PKY5037), K36Q mX/P38V mY (PKY5138), and P38V mX/K36Q mY (PKY5140). pWT XY, pseudo WT; mXY, mutation on X; XmY, mutation on Y; and mXmY, mutation on both X and Y.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28836/elife-28836-fig4-figsupp1-v4.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A)\u00a0The X/Y interface confers slow growth relative to the wild-type H3 interface. Growth rates of the indicated strains are shown for growth in liquid YPD media at 30C in well-aerated flasks. Strains analyzed were BY4741 (wild-type strain with no histone gene deletions), \u2018wt H3\u2019=PKY4701, the histone shuffle strain with a plasmid expressing wild-type H3/H4, \u03c8wt X-Y#1 and #2\u00a0=\u00a0PKY4704 and 4705, two different PKY4701 derivatives coexpressing the heterodimeric X-Y H3 derivatives. (B)\u00a0Dot plots show all growth rates in 0.8M KCl for all individual replicate time courses for the indicated H3K36Q mutants. These measurements were performed in 96-well plates.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/28836/elife-28836-fig4-figsupp2-v4.jpg)\n\n**Figure 4\u2014figure supplement 2.:** For all panels, serial dilutions of the indicated strains were plated at 30 C, 34 C, or 37 C, as indicated. (A)\u00a0Data for WT wt-c (PKY4701), K36Q wt-c (PKY4827), P38V wt-c (PKY5031), eaf3\u0394 WT wt-c (PKY5077) and eaf3\u0394 K36Q wt-c (PKY5079). (B)\u00a0Data for WT wt-c (PKY4701), K14R wt-c (PKY4779), K14Q wt-c (PKY4787) and K56R wt-c (PKY4843). (C)\u00a0Data for pWT XY (PKY4704), eaf3\u0394 pWT XY (PKY5081), eaf3\u0394 K36Q mXY (PKY5083), eaf3\u0394 K36Q XmY (PKY5086) and eaf3\u0394 K36Q mXmY (PKY5087). (D)\u00a0Data for pWT XY (PKY4704), K14R mXY (PKY4781), K14R XmY (PKY4783) and K14R mXmY (PKY4786). (E)\u00a0Data for pWT XY (PKY4704), K14Q mXY (PKY4789), K14Q XmY (PKY4791) and K14Q mXmY (PKY4793) pWT_XY, pseudo WT; mXY, mutation on X; XmY, mutation on Y; and mXmY, mutation on both X and Y.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/28836/elife-28836-fig4-figsupp3-v4.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Whole cell extracts of the indicated strains were separated by 15% SDS-PAGE and transferred to a membrane. The same blot was probed sequentially with the following antibodies: anti-H3K36me3 (Active Motif MABI0333), anti-H3K36me2 (Abcam ab9049) and anti-H3K79me3 (GeneTexRM157). Strains analyzed were: pWT XY (PKY4704), K36Q mXmY (PKY4834), P38V_X/K36Q_Y (PKY5140), P38V mXmY (PKY5037).\n\nConsistent with the often-subtle phenotypes resulting from histone point mutations, the majority of mutations examined conferred no significant growth defects under either growth condition, or subtle growth effects such as the enhanced growth observed in all three H3K18Q strains growing in high salt. In contrast, we noted significantly diminished growth, particularly in high salt, for yeast carrying double H3K14R, H3K14Q, or H3K36Q mutations (Figure 4B, Figure 4\u2014figure supplement 1B). Interestingly, the behaviors of the corresponding asymmetric single mutants were distinct: for H3K14R, single mutants already exhibited a partial growth defect that was exacerbated in the double mutant, while for H3K36Q the single mutant strains had no measurable deficit compared to the pseudo-wild type. These growth phenotypes correspond roughly to additive and recessive epistasis, respectively. Importantly, the stress sensitivity observed for these mutants was not specific to osmotic stress. Consistent with prior studies demonstrating that yeast lacking H3K36 methylation are hypersensitive to DNA damaging agents (Jha and Strahl, 2014), we find that the K36Q double mutants \u2013 but neither of the single K36Q mutants \u2013 displayed increased sensitivity to both the DNA alkylating agent methyl methanesulfonate (MMS) and the strand break-inducing agent phleomycin (Figure 4C). Moreover, these mutants were also temperature-sensitive, as symmetric double mutants exhibited reduced growth at 34 C, while the asymmetric mutants exhibited similar or only slightly reduced growth compared to the pseudo-wild type under these conditions (Figure 4D, Figure 4\u2014figure supplement 2). We conclude that K36Q mutations confer sensitivity to osmotic, temperature and DNA damage stresses, but only when symmetrically present on nucleosomes. These data support the biochemical data indicating that we can separately manipulate single H3 molecules within nucleosomes in vivo, and provide an illustration of the types of biological regulation that can be discovered using these tools.\n\n### A single H3K36 suffices to silence cryptic internal promoters\n\nOur growth data that a single copy of H3K36 per nucleosome is sufficient to support growth under stress conditions. What is the mechanistic basis for this function? In principle, mutation of this lysine could (1) affect biophysical properties of the nucleosome by eliminating a positive charge, (2) disrupt a binding site for regulatory protein that binds to the unmodified tail, or (3) disrupt (or mimic) a modification-dependent regulatory event (Rando and Winston, 2012). H3K36 is methylated by Set2 (Strahl et al., 2002), with the resulting modified residues serving to activate the RPD3S histone deacetylase complex via binding of the Eaf3 chromodomain-containing subunit (Carrozza et al., 2005; Keogh et al., 2005; Joshi and Struhl, 2005; Govind et al., 2010; Drouin et al., 2010). As the major biological role served by H3K36 methylation is silencing of cryptic internal promoters via activation of the RPD3S complex (Carrozza et al., 2005), and given that RPD3S can bind to nucleosomes with a single H3K36me3 modification (Huh et al., 2012), we sought to test whether a single methylated H3K36 per nucleosome would be sufficient to support robust silencing of such cryptic transcripts in vivo.\n\nWe first explored this idea with genetic tests, comparing the growth phenotypes of a P38V mutant series to K36Q mutants. The P38V mutants enable di- and tri-methylation of H3K36 to be distinguished \u2013 the wild-type proline residue at this position undergoes regulated isomerization, and P38V mutations that eliminate the possibility of proline isomerization block trimethylation (Nelson et al., 2006) but not dimethylation (Youdell et al., 2008) of the nearby K36 residue, a finding that we confirm here (Figure 4\u2014figure supplement 3). Importantly, cells expressing only H3P38V display none of the cryptic transcription phenotypes observed in set2, eaf3, or H3K36Q mutants ([Youdell et al., 2008] and see below), indicating that H3K36me2 is sufficient for the proper activation of the Rpd3S complex with regards to repression of cryptic transcription. Consistent with this, we find that double P38V mutations, on either a wild-type H3 backbone or in the context of the XY system, did not cause the temperature sensitivity observed in K36Q mutant cells (Figure 4E, Figure 4\u2014figure supplement 2). We therefore hypothesized that a single H3 N-terminal tail bearing K36 di- or trimethylation is sufficient to repress cryptic transcription.\n\nTo determine whether the single methylated K36 must be trimethylated or whether dimethylation is sufficient, we generated strains carrying the K36Q and P38V mutations in a trans conformation, that is, on opposite H3 N-termini (Figure 4F). Consistent with previous analyses of the effects of P38V (Nelson et al., 2006; Youdell et al., 2008), immunoblotting confirms that these strains have one H3 tail (K36Q) that lacks K36 methylation entirely, and one tail (P38V) with a dimethylated K36 residue (Figure 4\u2014figure supplement 3). We made strains with both possible configurations: H3XK36Q\u00a0+\u00a0H3YP38V and H3XP38V\u00a0+\u00a0H3YK36Q. Notably, neither of these K36Q/P38V trans strains are sensitive to growth at 34C (Figure 4F) or DNA damaging agents (Figure 4C). Thus, they phenotypically resemble the P38V double mutants and the single K36Q mutants, rather than the temperature-sensitive K36Q double mutants. These data indicate that a single K36me2 is sufficient to promote stress tolerance in budding yeast.\n\nTo determine whether the growth data reflect underlying defects in control of cryptic transcription, we carried out Northern blots against a canonical target of this pathway \u2013 STE11 \u2013 which is host to a well-characterized cryptic promoter that is silenced in a K36- and RPD3S-dependent manner (Carrozza et al., 2005;\u00a0Keogh et al., 2005;\u00a0Joshi and Struhl, 2005). First, we confirmed the expected increase in cryptic transcription in eaf3\u0394 mutants, and in yeast carrying symmetric H3K36Q mutations on the wild-type H3 backbone (Figure 5A\u2013B, lanes 1\u20134, 10). In addition, we confirm that H3K36me2 was sufficient to silence the STE11 cryptic promoter, as H3P38V mutants (which lack H3K36me3 but exhibit normal H3K36me2 levels) did not cause significantly increased cryptic transcription (lane 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/28836/elife-28836-fig5-v4.jpg)\n\n**Figure 5.:** (A)\u00a0Northern blot for STE11 for RNA isolated from the indicated strains, with 25S Northern shown as a loading control. Top band, which migrates at 2.2 kb, represents the full-length STE11 transcript, while the two lower molecular-weight bands correspond to previously-characterized sense transcripts initiating within the STE11 coding region from cryptic promoters (Kaplan et al., 2003). (B)\u00a0Quantitation of cryptic transcript levels for STE11 in the various strains indicated (n\u00a0=\u00a03). Levels of cryptic transcripts were normalized to full-length. Average and std. dev. of triplicate measures of these normalized values are graphed on the y-axes. Strains analyzed were: WT wt-c (PKY4701), K36Q wt-c (PKY4827), eaf3\u0394 WT wt-c (PKY5077), eaf3\u0394 K36Q wt-c (PKY5079), P38V wt-c (PKY5031), pWT XY (PKY4704), K36Q mXY (PKY4829), K36Q XmY (PKY4831), K36Q mXmY (PKY4834), eaf3\u0394 pWT XY (PKY5081), eaf3\u0394 K36Q mXY (PKY5083), eaf3\u0394 K36Q XmY (PKY5086) and eaf3\u0394 K36Q mXmY (PKY5087), P38V mXY (PKY5033), P38V XmY (PKY5035), P38V mXmY (PKY5037), K36Q mX/P38V mY (PKY5138), and P38V mX/K36Q mY (PKY5140). pWT_XY, pseudo wild-type; mXY, mutation on X; XmY, mutation on Y; and mXmY, mutation on both X and Y.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28836/elife-28836-fig5-figsupp1-v4.jpg)\n\n**Figure 5\u2014figure supplement 1.:** As in Figure 5, with FLO8 used as a probe for Northern blots in place of STE11.\n\nTurning next to the question of whether one H3K36 is sufficient for silencing, we analyzed STE11 RNAs in single and double H3K36Q mutants in the H3X/Y backbone (Figure 5, lanes 6\u20139). Consistent with the growth phenotypes observed in Figure 4, we find that the pseudo-wildtype H3X/Y cells and the cells with a single K36Q mutated tail display similar, low levels of cryptic transcripts (lanes 6\u20138). In contrast, the cells with two K36Q mutated tails display greatly elevated cryptic transcript levels (lane 9). As expected, neither single nor double P38V mutant tails affected cryptic transcription in our strain background (lanes 14\u201316). Finally, P38V/K36Q trans strains (lanes 17\u201318) displayed modest derepression of cryptic transcription, more similar to that observed in single K36Q mutant cells (lanes 7\u20138) than the high level observed in K36Q double mutants (lane 9). We confirmed the generality of these findings using another well-studied model for cryptic transcription, the FLO8 locus (Kaplan et al., 2003), where derepression of cryptic transcription was again observed specifically in the K36Q double mutant, but not in either K36Q single mutant (Figure 5\u2014figure supplement 1). We conclude that a single K36-di-methylated H3 tail per nucleosome is sufficient to restrain cryptic transcription in vivo.\n\n### Interrogating histone crosstalk in cis and trans\n\nIn addition to our ability to uncover effects of asymmetric mutant nucleosomes on transcriptional regulation, our system also provides a unique opportunity to determine whether histone \u2018crosstalk\u2019 \u2013 the ability of one histone modification to alter the level of another modification via effects on modifying enzyme recruitment or activity (Suganuma and Workman, 2008) \u2013 occurs in cis (on the same histone), or in trans. We generated biotin-tagged H3 molecules either carrying a point mutation of interest in cis, or carrying an otherwise wild-type sequence on the biotin-tagged H3, paired with a point mutation in trans (Figure 6A, cartoon). Biotin-tagged H3 molecules were then purified under stringent, partially denaturing conditions to facilitate the separation of H3X and H3Y, and the biotin-tagged H3 was subject to mass spectrometry to identify histone modifications present. Analysis of peptides derived from the engineered H3X/H3Y interface confirmed our ability to efficiently purify the biotin-tagged H3 molecule away from the untagged H3 molecule from each nucleosome, with\u00a0>93% purity observed for informative peptides analyzed (Figure 6A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/28836/elife-28836-fig6-v4.jpg)\n\n**Figure 6.:** (A)\u00a0Mass spectrometric analysis of H3X/H3Y heterodimers expressing one biotin-labeled subunit, with a S10A point mutation either located on the same H3 molecule (in cis), or in trans. Left: Schematic of asymmetric nucleosomes. Right: Robust avidin-affinity purification of biotin-labeled H3 molecules. Mass spec quantitation of peptides (described on top of the graphs) from the strains with genotypes indicated on the x-axes. For each peptide, raw peak area scores were normalized by dividing by the peak areas of an internal control, the unmodified H3 peptide containing K42. Average and std. dev. of triplicate measures of these normalized values are graphed on the y-axes. As expected, S10A-containing peptides were only detected when present in cis on the biotin-labeled histone, but not when expressed in trans on the heterodimeric partner. (B)\u00a0H3K9 acetylation levels are diminished in cis in H3S10A mutants. Data are shown for mass spec analysis of the indicated mutant strains. Left two bars show data for wild-type and double H3S10A mutants on the background of a wild-type H3-H3 interface. Right four panels show H3K9Ac levels on an avidin-purified biotin-tagged H3 molecule, showing data for H3X acetylation in the context of the pseudo-wild type H3X/Y background, H3X acetylation on the same (cis) or opposite tail from an H3S10A mutation, and H3X acetylation in a double H3XS10A/H3YS10A mutant. (C)\u00a0Western blots confirming effects of symmetric S10A on K9 acetylation both on the WT H3-H3 background, and on the X-Y background, as indicated. For the right panel, the epitope tag present on H3X allows separate probing of the H3X and H3Y molecules. Total protein on blots was visualized by Ponceau S staining. Note that although the S10A mutation in principle might affect anti-H3K9ac antibody (Abcam ab10812) binding, these results are highly concordant with the mass spectrometry measurements in panel (B), where the ability to detect lysine acetylation (based on peptide mass) is unaffected by the difference between S10 and S10A. (D\u2013F) Quantitation of blots from panel (C). K9Ac signals were normalized to total protein detected by Ponceau S. Strains analyzed were: WT wt-C (PKY4610), S10A wt-C (PKY5003), pWT-XY (PKY4983), S10A-XY-cis (PKY5005), S10A-XY trans (PKY4986) and S10A-XY double (PKY5042).\n\nAs cases of histone crosstalk that occur between different histones (e.g. effects of H2B ubiquitylation on H3 methylation levels) cannot be interrogated using our system, we focused on H3S10, whose phosphorylation affects histone H3 lysine acetylation (Lo et al., 2000; Liokatis et al., 2016). We found that the fraction of H3 molecules acetylated at K9 was lower in yeast strains carrying H3S10A symmetrically, either on a wild-type histone backbone or in the H3X/H3Y system. This decrease was observed by mass spec, and confirmed by quantitative Western blot (Figure 6B and C, left panel). Turning next to analysis of asymmetric mutant nucleosomes, mass spectrometric analyses showed that H3K9 acetylation levels were significantly decreased on the same histone tail carrying the S10A mutation, but were not affected by the presence of H3S10A in trans (Figure 6B). Western blotting for H3K9ac in yeast strains where an epitope tag allows H3X and H3Y isoforms to be separated by gel electrophoresis confirmed our mass spec-based analysis of histone acetylation, with H3S10A affecting adjacent H3K9 acetylation on the same tail, but having no effect on modification of a paired wild-type H3 tail (Figure 6C\u2013F).\n\n## Discussion\n\nHere, we demonstrate a novel system enabling genetically-encoded symmetry breaking for the histone octamer. Using protein engineering and directed evolution, we have designed and validated a pair of H3 variants \u2013 H3X and H3Y \u2013 that efficiently heterodimerize with one another in vivo, but which form extremely low levels (<3%) of homodimers. The ability to generate nucleosomes bearing either single mutations or symmetric double mutations to key regulatory residues will allow detailed mechanistic analyses of the roles for histone modifications in various aspects of chromosome biology. Here, we demonstrate two of many potential uses of this system, interrogating the role for H3K36 in control of cryptic transcription, and investigating \u2018crosstalk\u2019 between histone modifications.\n\n### Interpreting epistasis between the histone tails\n\nTo genetically interrogate interactions between the histone tails, we analyzed phenotypes in yeast strains carrying one of four nucleosomes: H3Xwt/H3Ywt \u2013 \u2018pseudo-wild-type\u2019 \u2013 and H3Xmut/H3Ywt, H3Xwt/H3Ymut, and H3Xmut/H3Ymut. In principle, we could expect to see a variety of classes of interactions between the mutations, including transgressive epistasis (not observed in this study), and a range from dominant epistasis, in which the single mutants exhibit the same phenotype observed in the double mutant, to recessive epistasis, in which a given phenotype is only observed in the double. For quantitative traits, these correspond to alleviating and aggravating epistasis, respectively (Segr\u00e8 et al., 2005).\n\nMeasured in the context of obligate heterodimers, such genetic interactions can provide insights into the mechanistic basis for readout of histone modifications. As a simple example, a protein that binds cooperatively to both tails of a given nucleosome should give rise to dominant epistasis between the histone mutations that affect its binding (depending of course on the concentration of the factor in question and its Kd for a single tail), as loss of a single residue abrogates the cooperative binding. Conversely, if each histone tail recruits a binding protein independently of the other, then loss of a single tail could have a range of quantitative effects on local gene expression, depending on whether or not the binder is typically recruited in excess for some function. Downstream of initial binding interactions, many readouts of histone modification function, such as mRNA abundance, are several mechanistic steps removed from direct binding, and thus more complex models can readily be envisioned that would exhibit a range of distinct epistasis behaviors depending on the input/output relationships for the various intervening steps.\n\nHere, we surveyed intra-tail epistasis for 12 sets of H3 point mutants, simply using growth rate as a phenotype. Even with this coarse resolution, we identified inter-tail interactions including dominant epistasis (for the enhanced low-salt growth seen in H3K18Q mutants, for example) to relatively unusual cases of recessive epistasis (for H3K36Q effects on growth in stress conditions). For followup studies we focused on H3K36Q, given that recessive epistasis makes more concrete mechanistic predictions, and given the well-understood role for H3K36 modification in gene regulation.\n\n### A single H3K36me2 per nucleosome is sufficient for stress resistance and repression of cryptic transcripts\n\nAlthough H3K36 is potentially subject to multiple distinct modification pathways \u2013 H3K36 is acetylated at a small fraction of nucleosomes (Morris et al., 2007), for example \u2013 the majority of phenotypes of H3K36 mutants result from loss of H3K36 methylation-dependent activity of the RPD3S complex (Carrozza et al., 2005;\u00a0Keogh et al., 2005;\u00a0Joshi and Struhl, 2005). Our system allowed us to ask, essentially, whether a single RPD3S binding site per nucleosome is sufficient to repress cryptic internal promoters.\n\nSeveral lines of evidence demonstrate that a single H3K36me2 is sufficient for RPD3S silencing at cryptic promoters. First, we find that H3K36Q significantly affects growth rate \u2013 particularly under stress conditions \u2013 only when present in both H3 copies per nucleosome. Next, consistent with a primary function of H3K36 modification being to repress cryptic intragenic promoters, we show that a single wild-type K36 is sufficient to prevent transcription at such promoters. Third, extending prior studies, we find that growth rate and cryptic promoter silencing are both unaffected by double P38V mutants. P38V inhibits trimethylation but not dimethylation of K36 residues (Youdell et al., 2008), and nucleosomes with two H3P38V tails are sufficient to prevent cryptic transcription either in natural, symmetric nucleosomes (Youdell et al., 2008) or in our asymmetric nucleosomes (Figure 5, lane 16). Finally, the K36Q/P38V trans strains indicate that a single dimethylated K36 residue is sufficient to prevent stress sensitivity (Figure 4F) and repress cryptic transcripts (Figure 5, lanes 17\u201318). Together, these data indicate that a single K36-dimethylated H3 tail per nucleosome is sufficient to prevent cryptic transcription, and to promote stress resistance.\n\nNotably, the RPD3S complex appears to be particularly well-suited to carrying out its regulatory functions even on chromatin that is less than fully methylated at H3K36. In vitro experiments show that RPD3S is able to bind to nucleosomal templates containing asymmetric H3K36me3 modifications (Huh et al., 2012). Further, although RPD3S binds with higher affinity to dinucleosomes than monosomes, it binds with high affinity to templates with a dimethylated nucleosome adjacent to a fully unmethylated one. These data suggest that the methyl-K36/RPD3S system would be buffered against transient reductions in H3K36me2-3 density, for example during DNA repair or replication-mediated loss of modified histones. Our data extend these observations to indicate that the enzyme can function effectively in vivo even if it can only engage a single H3K36me2 or me3 per nucleosome.\n\n### H3S10 mutants affect H3K9 acetylation in cis\n\nAs another demonstration of the utility of the H3X/H3Y system, we carried out mass spectrometry analysis of a histone \u2018crosstalk\u2019 pathway. Here, we take advantage of biotin-based purification to stringently separate a biotin-tagged H3X from an untagged H3Y (and vice versa) prior to mass spectrometry analysis. This method allows probing of histone crosstalk pathways in which one modification affects a second modification site. We show that H3S10A mutations decrease acetylation at the neighboring K9 residue, but only on the molecule in cis. This is consistent with a recent in vitro study demonstrating that S10 phosphorylation stimulates H3 tail acetylation by Gcn5 only in cis (Liokatis et al., 2016). This example provides a clear example of how asymmetric nucleosomes can be used for detecting modification dependency relationships.\n\n### Potential applications\n\nIn addition to the two proof-of-concept analyses described above, we anticipate that the H3X/Y scaffold will provide a powerful tool for many additional studies, and we list a few potential applications here. First, we show here that the H3X/Y system assembles appropriately in vitro (Figure 3), providing a convenient method for generation of asymmetric nucleosomes for in vitro studies. This method should prove more generalizable than existing methods that rely on immunopurification (Voigt et al., 2012; Li and Shogren-Knaak, 2008) or extensive chemical synthesis (Lechner et al., 2016). Such asymmetric nucleosomes could be used to generate single-tailed nucleosomes for structural studies of tail-dependent nucleosome-binding proteins, significantly reducing the conformational heterogeneity resulting from the many flexible, unstructured histone tails. Nucleosomes carrying either asymmetric point mutations or asymmetric modified residues (generated using peptide ligation, for example \u2013 [Shogren-Knaak et al., 2003]) will facilitate detailed biochemical analyses of chromatin regulators, or selection of asymmetry-specific binding partners. Such studies can also be envisioned using asymmetric nucleosomes purified from living cells \u2013 thus occupying a wide range of DNA sequences and carrying a multitude of covalent modifications \u2013 as affinity-tagged X and Y halves of the heterodimer allow for efficient and rapid purification of chromatin composed of asymmetric nucleosomes (Figure 3\u2014figure supplement 1C).\n\nIn addition to improving on extant methods to generate asymmetric nucleosomes in vitro, our system uniquely allows genetically-encoded assembly of asymmetric nucleosomes across the genome in living cells. We describe here one example of in vivo analysis of the gene regulatory consequences resulting from single vs. double H3 mutations for H3K36Q, which can of course be extended to additional H3 mutations and to genome-wide or single-cell analyses. Although such studies are demonstrated here using the budding yeast system, the H3-H3 interface is generally highly conserved throughout evolution, and we expect that this system should function appropriately in other species \u2013 indeed, the biochemical reconstitution of asymmetric nucleosomes described in Figure 3 is carried out using human histone sequences. Although canonical histone genes are often encoded in many copies in large multi-gene genomic clusters and are therefore inconvenient for genetic studies, a Drosophila model has been developed in which the histone genes have been relocated to an artificial locus (McKay et al., 2015). Along with S. pombe, these models should enable analysis of H3K9/HP1 and H3K27/Polycomb repression systems in vivo. In addition, even in other model organisms we expect that low copy number H3 molecules such as H3.3 and CENP-A should prove amenable to analysis using the H3X/Y system.\n\nIn any of these systems, the X/Y heterodimer will not just allow analysis of single vs. double mutations of the same residue, but will also enable cis and trans dissection of effects of combinatorial mutations (eg H3XK9R/H3YK14R vs. H3XK9RK14R/H3YWT). Fusing individual H3 molecules to labeling reagents such as BirA or Dam, or introduction of cysteine residues that can be used to create local nicks in the DNA, could potentially also be used to probe stereospecificity \u2013 facing from the promoter into a coding region, does a given nucleosome remodeler bind the left or the right H3 tail? \u2013 of nucleosome binding proteins. It is also possible to envision pulse-chase methods for investigation of H3/H4 dimer mixing during replication and replication-independent nucleosome replacement.\n\nTogether, our data describe a versatile system for investigation of nucleosome symmetry, and demonstrate the utility of in vivo analysis of asymmetric nucleosomes as a mechanistic probe for histone modification function.\n\n## Materials and methods\n\n### Plasmid constructions and mutagenesis\n\nC-terminal mutations of HHT2, one of the yeast genes encoding histone H3, were generated according to QuickChange Site-Directed Mutagenesis protocol (Stratagene,\u00a0La Jolla, CA). Plasmids containing Myc- or Flag-tagged HHT2 were described previously (Dion et al., 2007). The insertion of the V5 or biotin acceptor tags at the 5\u2019 end of HHT2 was generated by PCR. The DNA fragment containing the E. coli BirA gene (encoding biotin-protein ligase) (Beckett et al., 1999) was cloned into a HIS3-marked integration vector downstream of the yeast GPD promoter and upstream of PGK terminator, and integrated into the his3 locus of strain PKY4171.\n\n### Yeast strains and growth\n\nYeast growth and plasmid transformation of yeast cells were done according to standard yeast protocols. For plate assays, strains were grown overnight in 2 ml YPD medium at 30\u00b0C, five-fold dilutions (starting from OD600\u00a0=\u00a00.6) were spotted on YPD-agar plates (with added compounds such as MMS when indicated), and incubated at indicated temperatures for 3\u20134 days. Analyses of osmotic stress sensitivity (Figure 4, Figure 4\u2014figure supplement 1B) were performed in robotically-manipulated cultures grown in 96-well plates \u2013 the growth rates in these experiments are internally consistent but distinct from growth measurements obtained in well-aerated liquid cultures (Figure 4\u2014figure supplement 1A).\n\nLow-copy plasmids containing mutated histone genes were introduced by LiOAc transformation, and then 5-FOA was used as a counterselecting agent to select against the URA3 plasmid containing the wild-type HHT1-HHF1 genes. All yeast strains (listed in Supplementary file 1) were derived from histone H3/H4 \u2018shuffle\u2019 strain MSY421 from M. Smith and C.D. Allis (Recht et al., 2006), which has both chromosomal H3/H4-encoding loci deleted.\n\nGenetic screens for asymmetric mutants were carried out in:\n\nPKY4171\n\nMATa; \u0394(hht1-hhf1); \u0394(hht2-hhf2); leu2-3,112; ura3-62; trp1; his3; bar1::hisG\n\n+p(HHT1-HHF1, URA3, CEN)\n\nDMS crosslinking studies:\n\nPKY4171 derivatives with (HHT1-HHF1, URA3) plasmid replaced with:\n\nPKY4625\n\n+P22 (Myc-H3Y\u00a0=\u00a0Myc-hht2(L109I, A110W, L130I), HHF2, LEU2)\n\n+P67 (bio-H3X-126A\u00a0=\u00a0biotin-hht2(L126A, L130V), HHF2, TRP1)\n\n+P72 (V5-H3X-126A\u00a0=\u00a0V5-hht2(L126A, L130V), HHF2, URA3)\n\nPKY4694\n\n+P54 (biotin-H3Y\u00a0=\u00a0biotin-hht2(L109I, A110W, L130I), HHF2, LEU2)\n\n+P72 (V5-126A\u00a0=\u00a0V5-hht2(L126A, L130V), HHF2, URA3)\n\n+P35 (Myc-H3Y\u00a0=\u00a0Myc-hht2(L109I, A110W, L130I), HHF2, TRP1)\n\nMass spectrometry samples were grown in derivatives of\n\nPKY4574\u00a0=\u00a0PKY4171 with P65 (BirA::HIS3 integration plasmid) inserted.\n\n### Directed evolution of improved H3X alleles\n\nPlasmid P46 (hht2-(L126V, L130V), HHF2, TRP1) was used as the template to generate four PCR-generated libraries, each with randomized nucleotides at one of four H3 codons (109, 110, 126, 130). The full length PCR product was gel purified, self-ligated with T4 DNA ligase and transformed into competent E. coli Top10F\u2019 cells. 1 ml LB was added after heat shock transformation and the cells recovered for 1.5 hr at 37\u00b0C. 100 \u03bcl cells were plated to check the colony number, and the rest of the transformation was put into culture tube with another 2 ml LB and antibiotic to grow O/N before plasmid DNA miniprep (Zymo). The randomization of the desired codon in the four libraries of hht2 was confirmed by sequencing (Figure 1\u2014figure supplement 1B).\n\nThe four libraries were each transformed separately into yeast strain PKY4171, which carries the plasmid-borne wild-type H3 (URA3). 153 transformants were picked for each library and patched onto both SD-Trp-Ura and FOA plates at the same time. A subset of isolates was found inviable after incubation at 30\u00b0C for 10 days on FOA, indicating inability to grow the absence of wild type H3. These isolates were therefore chosen for the second step. For each library separately, cells from each FOA-sensitive isolate were pooled into 25 ml of SD media, grown to an A600 of\u00a0~0.5 and transformed with plasmid P44 (H3Y, H4, LEU2) and plated on SD-Trp-Leu. These transformants were then replica-plated onto FOA media. Plasmids from resulting FOA-resistant colonies were analyzed by colony PCR and sequencing. Candidate plasmids were retested by retransformation into PKY4171 with or without P44. The plasmids that conferred robust growth on FOA media in the presence of P44 and no detectable growth in its absence encoded the hht2 variants termed 126A (carrying mutations 126A, 130V), 130A (126V, 130A), 130T (126V, 130T), 130Q (126V, 130Q).\n\n### Effects of the \u2018pseudo-wild type\u2019 H3X/H3Y interface on yeast growth\n\nAs asymmetric nucleosomes cannot be made on a wild-type H3 backbone, all experiments by necessity involve comparisons to pseudo-wild type yeast carrying the H3X/H3Y pair. Pseudo-wild type yeast are viable, but grow slowly relative to the parental strain in YPD at 30\u00b0C (Figure 4\u2014figure supplement 1A). In addition, they are temperature-sensitive and grow extremely poorly at 37\u00b0C. For this reason, temperature sensitivity in this system is assayed at 34\u00b0C (Figure 4D\u2013F, Figure 4\u2014figure supplement 2). Importantly, the temperature-sensitivity phenotypes observed at this temperature occur in the same sets of mutants that grow poorly in high salt or in the presence of DNA-damaging agents (Figure 4). Thus, although the X/Y histone interface provides a sensitized assay for some phenotypes, it nevertheless represents a useful and internally-consistent platform for exploring important and physiologically-relevant aspects of gene regulation.\n\n### Dimethyl suberimidate-crosslinked nucleosomes\n\n100 ml cell cultures were grown in synthetic dextrose media to maintain selection for the three histone-encoding plasmids, with 250 nM biotin added to favor biotinylation of the tagged H3. Cells were harvested in early log phase (A600\u00a0~0.25), pelleted and transferred to 1.5 ml O-ring microcentrifuge tubes (Fisher #02-707-353). Cells were washed three times with 1 ml extraction (E) buffer (20 mM Na borate, pH 9.0, 0.35 M NaCl, 2 mM EDTA, plus 1 mM PMSF added freshly). Cells were resuspended in 900 \u03bcl E buffer, and 0.5 ml glass beads (0.5 mm, Biospec) were added to each tube. Cell walls were mechanically broken with three one-minute pulses in a Biospec beadbeater, with five-minute incubations on ice between pulses. The tube bottoms were punctured with a flame-heated 26 gauge needle, placed into a 12 \u00d7 75 mm plastic tube and centrifuged for 2 min at 1500 rpm in a tabletop clinical centrifuge at 4\u00b0C. The liquid extracts were resuspended and transferred to 1.5 ml microfuge tubes. 1/10 vol freshly dissolved 11 mg/ml dimethyl suberimidate (Pierce) in E buffer was added, and samples were incubated with rotation at room temperature 90 min. For time point aliquots to be analyzed directly on gels, proteins were precipitated by addition of 1/10 vol 100% TCA. For material to be MNase-digested and immunoprecipitated, the crosslinker was quenched by addition of 50 mM Tris-Cl, pH 7.5 and further rotation for 15 min. 10 mM MgCl2 and 1 mM CaCl2 were added and tubes were equilibrated at 37\u00b0C for 5 min. 20 \u03bcl MNase (Worthington, 20 U/\u03bcl in 10 mM Tris-Cl pH 7.4) were added, tubes were inverted five times and incubated at 37\u00b0C, 20 min. Digestion was stopped by moving tubes to 4\u00b0C, adding 40 \u03bcl 0.25 M EDTA/EGTA and inversion to mix. Material was centrifuged at 8000 x g for 1 min, 4\u00b0C, and pre-cleared by incubation with CL2B-sepharose beads for 30 min 4\u00b0C and centrifugation at 8000 x g for 1 min, 4\u00b0C. The supernatant was the input for the pulldown assays. 30 \u03bcl of a 50% slurry of streptavidin-agarose beads was added to each tube, followed by rotation for 2 hr at 4\u00b0C. Samples were then centrifuged at 8000 x g for 1 min, 4\u00b0C and the beads were washed three times w/1 ml TE\u00a0+2 M NaCl\u00a0+0.2% Tween20, rotating at 4\u00b0C for 5 min each time. After the last wash all supernatant was removed and beads were resuspended in protein gel sample buffer. Proteins were separated on 17% SDS-PAGE gels and analyzed by immunoblotting; the 31kD H3-H3 crosslinked species was quantified on a BioRad Chemidoc system.\n\n### Expression and purification of recombinant histones\n\nYeast heterodimer \u2018X\u2019 (L126A, L130V) and \u2018Y\u2019 mutations (L109I, A110W, L131I) were introduced into codon-optimized human histone H3 sequences lacking cysteines. This yielded human heterodimer \u2018X\u2019 with the following point mutations: C96S, C110A, L126A, and I130V; and human heterodimer \u2018Y\u2019: C96S, L109I, C110W (human histone H3 already has I131).\n\nAll wild-type and mutant human histone H3 proteins were purified according to the rapid purification protocol previously described (Klinker et al., 2014), with slight modifications. Specifically, codon optimised histone H3 (supplied by Entelechon \u2013 now Eurofins) was expressed from a pETM13 vector, transformed into the E. coli strain Rosetta (DE3) pLysS (Novagen). Bacteria were grown in LB medium (with 50 \u03bcg ml-1 kanamycin and 25 \u03bcg ml-1 chloramphenicol) at 37\u00b0C. Protein expression was induced with 0.25 mM IPTG (OD600\u00a0=\u00a00.6) and cells were harvested after 4 hr by centrifugation. Cell pellets were resuspended in cold lysis buffer (7 M urea, 20 mM sodium acetate (pH 5.2), 200 mM NaCl, 1 mM EDTA and 5 mM \u03b2-mercaptoethanol) and cells lysed by sonication. The lysate was clarified by centrifugation at 75,600 g for 20 min and the supernatant filtered using a 0.45 \u03bcm syringe filter (HPF Millex, Millipore). The sample was injected onto connected HiTrap Q HP (5 ml) and HiTrap SP HP (5 ml) columns (GE Healthcare) pre-equilibrated in lysis buffer. Columns were washed with lysis buffer before removing the HiTrap Q column. Histone H3 was eluted from the HiTrap SP column with a 12 CV gradient into 60% elution buffer (lysis buffer with 1 M NaCl). Fractions containing histone H3 were pooled, concentrated and dialysed into 1 mM DTT. Finally, the histones were aliquoted and lyophilised for storage.\n\nHuman histone H4 (kindly provided by T.Bartke) and the H2A/H2B dimer were purified as previously described (Miller et al., 2016).\n\n### Nucleosome reconstitution\n\nPurified histones were used to attempt the assembly of histone octamers, as previously described (Miller et al., 2016). Briefly, histones dissolved in unfolding buffer (20 mM Tris (pH 7.5), 6 M guanidine hydrochloride, and 20 mM DTT) were mixed in equimolar ratios and diluted to a final concentration of 1 mg ml-1. The histones were extensively dialysed against refolding buffer (10 mM Tris (pH 7.5), 2 M NaCl, 1 mM EDTA and 5 mM \u03b2-mercaptoethanol) before being concentrated and purified by size exclusion chromatography (Superdex 200 Increase 3.2/300 column; GE Healthcare). Pooled fractions were concentrated and combined with 167 bp Widom DNA at an equilmolar concentration, with the aim of reconstituting nucleosomes by salt deposition (Luger et al., 1999) using buffers containing 20 mM Tris (pH 7.5), 5 mM \u03b2 -mercaptoethanol, 1 mM EDTA, and the following NaCl concentrations: 2 M, 850 mM, 650 mM and 150 mM. Following dialysis, the samples were centrifuged at 20,000 g to remove any precipitate before nucleosome assembly was assessed by native PAGE (5% polyacrylamide, 3% glycerol, 0.5 X TAE; 100 V for\u00a0~1.5 hr at 4\u00b0C).\n\n### Mass spectrometric analysis of biotinylated H3 from asymmetric nucleosomes\n\n1000 ml cultures were grown in YPD\u00a0+250 nM biotin at 30\u00b0C to mid-late log phase (A600\u00a0=\u00a00.4\u20130.7). Then, sodium azide and phenylmethylsulfonyl fluoride were added to the medium at final concentrations of 0.1% and 5 mM, respectively. Cells were pelleted and collected into two to four O-ring tubes as above, and washed twice with buffer TG (0.1 M Tris-Cl, pH 8.0, 20% glycerol) + protease/deacetylase/phosphatase inhibitors: 1 mM PMSF, 0.5 \u03bcg/ml leupeptin, 0.7 \u03bcg/ml pepstatin, 1.0 \u03bcg/ml E64, 1.0 \u03bcg/ml aprotinin, 1 mM benzamidine) + 20 mM Na butyrate, 2 mM nicotinamide, 1 mM EDTA, 1 mM Na3VO4. Tubes were frozen in liquid nitrogen and stored at \u221280C. All subsequent steps were on ice or at 4\u00b0C.\n\nEach tube of frozen cells was resuspended in 900 \u03bcl TG buffer with the inhibitors described above, plus 0.5 ml glass beads (0.5 mm, Biospec). Cell walls were broken by bead beating, and beads were removed as described above. Liquid extracts were transferred to 1.5 ml eppendorf tubes, and centrifuged 7 K rpm, 5 min (4.5K x g). The cytosolic supernatant was removed and the pellet was resuspended in 1 ml Buffer L (50 mM Hepes-KOH pH 7.5, 140 mM NaCl, 1 mM EDTA, 1% Triton X-100, 0.1% sodium deoxycholate)+inhibitors as described above. Chromatin was sheared in a Bioruptor (Diagenode) for 30 min (2 \u00d7 15 min rounds of 30\u2019\u2019 on/30\u2019 off on \u2018High\u2019 power; samples were chilled on ice 10 min between rounds). Extracts were transferred to microfuge tubes, centrifuged at 6 K rpm (=3.3K x g) for 10 min. The supernatant was the input for the pulldown assays. 30 \u03bcl of a 50% slurry streptavidin-agarose beads was added to each tube, followed by rotation for 2 hr at 4\u00b0C. (Beads were pre-equilibrated and blocked in Buffer L\u00a0+\u00a0inhibitors\u00a0+\u00a010 \u03bcg insulin per sample.) Samples were centrifuged at 8000 x g for 1 min, and the beads were washed three times with 1 ml TE\u00a0+2 M NaCl\u00a0+2 M urea, rotating at 4\u00b0C for 5 min each time. To remove salt for mass spectrometry, beads were washed three times with water, snap-frozen and stored at \u221280\u00b0C.\n\n### On-bead histone propionylation and tryptic digestion\n\nBiotin-tagged histone H3 bound to streptavidin beads were washed twice with 300 \u00b5l of 100 mM ammonium bicarbonate. For in vitro propionylation of histone H3, 300 \u00b5l of a 3:1 isopropanol:propionic anhydride mixture was added followed by ammonium hydroxide to adjust pH to\u00a0~8. The beads were incubated at 51\u00b0C for 20 min. Beads were then collected by centrifugation at 1000 rpm for 60 s and washed with ammonium bicarbonate before a second round of propionic anhydride treatment. The washed beads were resuspended in 50 mM ammonium bicarbonate and incubated with 2 \u00b5g of Promega sequencing grade trypsin overnight at 37\u00b0C. The digest was then derivatized with propionic anhydride using the same protocol as described above. Histone peptides were extracted from the beads with 200 \u03bcl of 50% acetonitrile in water. Peptides were completely dried in a SpeedVac concentrator and then resuspended in 0.1% triflouroacetic acid for MS analysis.\n\n### Liquid chromatography single reaction monitoring mass spectrometry (LC-SRM-MS)\n\nHistone peptides were injected in triplicate onto a TSQ Quantum mass spectrometer (ThermoFisher Scientific) directly linked to a Dionex nano-LC system. Peptides were first loaded onto a trapping column (3 cm\u00a0\u00d7 150 \u00b5m) and then separated with an analytical capillary column (10 cm\u00a0\u00d7 75 \u00b5m). Both were packed with ProntoSIL C18-AQ, 3 \u00b5m, 200 \u00c5 resin (New Objective). The chromatography gradient was achieved by increasing percentage of buffer B from 0% to 35% at a flow rate of 0.30 \u00b5l/min over 45 min. Solvent A: 0.1% formic acid in water, and B: 0.1% formic acid in 95% acetonitrile. The peptides were then introduced into the MS by electrospray from an emitter with 10 \u00b5m tip (New Objective) as they were eluted from analytical column. The instrument settings were as follows: collision gas pressure of 1.5 mTorr; Q1 peak width of 0.7 (FWHM); cycle time of 3 s; skimmer offset of 10 V; electrospray voltage of 2.5 kV. Targeted analysis of unmodified and various modified histone peptides were performed.\n\nRaw MS files were imported and analyzed in Skyline with Savitzky-Golay smoothing (MacLean et al., 2010). All Skyline peak area assignments were manually confirmed. Total peak areas normalized to a non-modified H3 peptide were used to plot bar graphs representing relative proportions of distinct histone modifications. The relative abundances were determined from the mean of three technical replicates with error bars showing standard deviation.\n\n### Affinity purification of salt-washed chromatin\n\nThese preparations were performed as described above for the mass spectrometry samples with the following modifications. 100 ml cultures were grown to late log phase (OD600\u00a0=\u00a01 to 3) in YPD\u00a0+ 250 nM biotin and cells were immediately subjected to bead beating. After removal of the cytosolic supernatant, pellets were washed three times with 1.0 ml Wash Buffer (10 mM Tris-Cl, pH 8.0, 1 mM EDTA, 0.1% Triton X-100, 0.5 M NaCl\u00a0+ protease inhibitors/PTM inhibitors as described above), spinning at 4.5K x g for 5 min at each step. The washed chromatin resuspended in 1.0 ml Wash Buffer and sheared in a Bioruptor as described above. The soluble chromatin was fractionated using streptavidin-agarose as described above, except that the washes were performed three times with 1.0 ml Wash Buffer. Bound material from each preparation was resuspended in 50 \u03bcl SDS-PAGE gel sample buffer.\n\n### Northern blot analysis\n\nCells were grown in YPD medium to mid-exponential phase (OD600\u00a0=\u00a00.4 to 0.7), and collected by filtration. RNA was prepared by a hot phenol method (Collart and Oliviero, 2001). Northern blot analysis was performed as described previously (Morohashi et al., 2006) with following modifications: STE11 and FLO8 PCR fragments (Pattenden et al., 2010) were used as probes that were labeled with alkaline phosphatase using Amersham AlkPhos Direct Labeling and Detection Systems (GE healthcare). Blots were exposed to HyBlot CL Autoradiography Film (Denville Scientific). Signal intensity was quantified by using ImageJ.\n\nPrimers for Northern probe (Pattenden et al., 2010):\n\no-STE11-11: GAA GGA GTT ACA TCA TGA GAA CAT TGT TAC\n\no-STE11-12: GTG TGC ATC CAG CCA TGG ATG CTG CAG CAA\n\no-FLO8-13: GAC GCT CAG AAG CAA AGA AGT TCT AAG GTA\n\no-FLO8-14: CTC AAC ACG TGA CTT CAG CCT TCC CAA TTA\n",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "0b0c46bc-3e0c-4966-bf8f-cf50aee4af04",
+      "submission_id": "00ed6147-c29f-4dd0-9e64-9f5892eb46d5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jerry L Workman, Stowers Institute for Medical Research United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.28836.018](https://doi.org/10.7554/eLife.28836.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: this article was originally rejected after discussions between the reviewers, but the authors were invited to resubmit after an appeal against the decision.]\n\nThank you for submitting your work entitled \"A synthetic biology approach to probing nucleosome symmetry\" for consideration by eLife. Your article has been favorably evaluated by a Senior Editor and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Song Tan (Reviewer #2).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nThe reviewers all felt that the methods were clever and novel and the manuscript was discussed in depth by the reviewers and editors. There were significant concerns that the WT X/Y dimers had reduced growth and acetylation levels relative to real WT. Hence some of the experimental observations may be affected by the sickness of these strains. Another issue was that the amount of novel biological information was limited. These issues are described in some detail in the reviews below.\n\nReviewer #1:\n\nThis is a very clever paper from the Kaufman and Rando lab that approaches very interesting issues in basic chromatin biology. The forced heterodimers of H3 mutants and their creation is very innovative and creative. The utility of this approach was illustrated by analyzing H3K36 methylation and Ser10 phosphorylation.\n\nWhile the approach is very creative and innovative the biological discovery in the manuscript seems rather incremental for publication in eLife.\n\nReviewer #2:\n\nThe authors have developed a system for studying nucleosomes containing asymmetrically positioned histone H3 mutations or modifications in vivo. Using structure-based design combined with genetic screening, they have designed two yeast histone H3 variants which form obligate heterodimers in vivo. The H3X and H3Y variants support growth when expressed together from low-copy number plasmids in yeast strains with the chromosomal H3 copies deleted, in contrast to when only H3X or H3Y variants are expressed. By positioning appropriate mutations on H3X or H3Y, the authors are able to show that a single copy of H3K36 per nucleosome is sufficient to silence cryptic internal promoter in vivo. They further show that the H3S10A mutation (which eliminates phosphorylation on H3S10) affects Gcn5 acetylation of H3K9 in cis in vivo.\n\nThe method described is novel and interesting. The impact on the chromatin biology field is tempered by the limitation that, as described, the method is only applicable to introducing asymmetry on histone H3 residues. Mutations on histone H2A, H2B or H4 apparently cannot be studied using the H3X/H3Y pair, nor can histone crosstalks between different histones (as the authors point out). Given this limitation, I suggest modifying the title to: \"A synthetic biology approach to probing nucleosome symmetry of histone H3 residues\".\n\nOne aspect that was not discussed by the authors was the possibility of perturbation of nucleosome structure by the replacement of wild-type H3 protein with the H3X/H3Y pair. Such perturbations presumably might be subtle, and might affect only a subset of chromatin modification or remodeling enzymes. I do not believe this possibility affects the interpretation of the results they presented (with one possible exception), but I do recommend the authors acknowledge this possibility explicitly to make the reader aware of this potential complication. The possible exception is the lower fraction of K9ac for pseudo-wild type H3X/H3Y compared to wild type H3/H3 (Figure 5B). This significant reduction in K9ac should be noted and possible interpretations/explanations provided.\n\nThe authors state that \"Consistent with prior reports, we found that the fraction of H3 molecules acetylated at K9 was lower in yeast strains carrying H3S10A symmetrically, [\u2026]\" Please provide the references for these prior reports. This might be my ignorance, but while I am aware of papers describing the H3S10 phosphorylation/H3K14 acetylation crosstalk, I am not aware of papers for H3S10 phosphorylation/H3K9 acetylation crosstalk. Why did the authors select the former crosstalk for study here instead of the latter?\n\nReviewer #3:\n\nIn this manuscript, the authors develop a nice system to allow specific tests of whether histone modifications are required to be symmetric or not. Using this system, they go on to test to interesting aspects of histone H3 function \u2013 the requirement for H3K36 methylation to repress cryptic promoters and whether a mutation, S10A, affects adjacent acetylation in cis and/or trans. The paper is clearly written and the results will be of general interest to the transcription community. In addition, they system itself will likely be of interest to other labs.\n\n1) Subsection \u201cDesign and validation of obligate heterodimers\u201d, third paragraph: \u2013 The text states that the genetic tests demonstrate that H3X or H3Y alone do not homodimerize. Please use another word in place of \"demonstrate\" such as \"suggests.\" A strong conclusion about dimerization cannot be made from solely from this genetic test as the 5FOA sensitivity could be due to some other reason than a failure to dimerize.\n\n2) Figure 2: \u2013 Why is H3-H3 the only crosslinked form of H3 that is observed? What about H3-H4 or higher-order crosslinks?\n\n3) Figure 2: \u2013 While these results support that heterodimerization is preferred over homodimerization, it is difficult to assess how well it occurs compared to dimerization of wild-type H3. This is particularly true because the level of crosslinking is low. Therefore, additional controls would be helpful. For example, how efficient is the H3-H3 interaction if all tagged copies of H3 are wild-type?\n\n4) Figure 2F: \u2013 At least two more replicates should be done.\n\n5) The results in Figure 3 suggest that the XY pairs grow considerably slower than wild-type yeast (90 minutes for wild type versus >3 hours for the XY \"wild-type\" strain). Is this because of the X and Y mutations, or something about the strain configurations, such as the plasmids being used to express the histone genes? It would be very helpful to include a comparison to a strain with wild-type H3 but otherwise the same configuration of histone genes.\n\n6) Figure 3: \u2013 It would be helpful to include a key in the figure that indicates what the left, middle, and right bars are for each trio even though that information is in the figure legend.\n\n7) Subsection \u201cA single H3K36 suffices to silence cryptic internal promoters\u201d, first paragraph: \u2013 In addition to references Carrozza et al., 2001; Keogh et al., 2005; Joshi and Struhl, 2005 and Govind et al., 2010, the authors should cite Drouin et al., 2010, Plos Genetics, 6, e1001173.\n\n8) Figure 3: \u2013 The authors are assuming that the H3K36 methylation pattern previously observed in P38V mutants will occur in their XY system. For at least a subset of strains, this should be verified by western analysis, to measure H3K36me3 and H3K36me2, comparing mutant combinations to wild-type XY pairs. The XY strains in which this should be done are wt/wt, P38V/P38V, K36Q/K36Q, and P38V/K36Q.\n\n9) In otherwise wild-type yeast, does K36Q in both H3 genes confer temperature sensitive growth at 34\u00b0C? If not, why is growth defective in these XY strains? Furthermore, that would mean that the phenotypes observed are synthetic phenotypes, observed for H3K36Q only when combined with the unknown effect of the XY system. Some comment on this should be provided.\n\n10) Kumar et al. (Nature Comm. 5, 3965 (2014)) showed that yeast set2 mutants and H3K36A mutants confer hypersensitivity to DNA damaging agents such as phleomycin. It would just take a set of simple spot tests to test the K36 methylation requirement for this additional phenotype.\n",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d06764c0-b7c5-4abc-98db-559032ad21f7",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C1",
+      "claim": "The repeating subunit of chromatin, the nucleosome, includes two copies of each of the four core histones.",
+      "claim_type": "EXPLICIT",
+      "source": "The repeating subunit of chromatin, the nucleosome, includes two copies of each of the four core histones, and several recent studies have reported that asymmetrically-modified nucleosomes occur at regulatory elements in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about nucleosome structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "5ee41c60-1751-4892-bc1c-23f02522df0b",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C2",
+      "claim": "Several recent studies have reported that asymmetrically-modified nucleosomes occur at regulatory elements in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The repeating subunit of chromatin, the nucleosome, includes two copies of each of the four core histones, and several recent studies have reported that asymmetrically-modified nucleosomes occur at regulatory elements in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references recent studies, indicating citation-based support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "4c83dc78-7d7f-4606-867e-75643e6968ec",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C3",
+      "claim": "H3X and H3Y are an obligate pair of H3 heterodimers that have been extensively validated genetically and biochemically.",
+      "claim_type": "EXPLICIT",
+      "source": "To probe the mechanisms by which histone modifications are read out, we designed an obligate pair of H3 heterodimers, termed H3X and H3Y, which we extensively validated genetically and biochemically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents genetic and biochemical validation data for H3X and H3Y throughout the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "32043082-d873-49b0-a853-3afaaddb17f9",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C4",
+      "claim": "A single methylated H3K36 per nucleosome is sufficient to silence cryptic transcription in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the effects of asymmetric histone tail point mutants with those of symmetric double mutants revealed that a single methylated H3K36 per nucleosome was sufficient to silence cryptic transcription in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing asymmetric and symmetric mutants presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "61cafa16-a935-416e-b86e-cee9631fd37b",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C5",
+      "claim": "The H3X/H3Y system can be used for analysis of histone modification crosstalk using mass spectrometry.",
+      "claim_type": "EXPLICIT",
+      "source": "We also demonstrate the utility of this system for analysis of histone modification crosstalk, using mass spectrometry to separately identify modifications on each H3 molecule within asymmetric nucleosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents mass spectrometry data demonstrating this utility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "7f8f9164-5cef-45fa-9904-d1eeeca7f8b5",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C6",
+      "claim": "The ability to generate asymmetric nucleosomes in vivo and in vitro provides a tool to probe mechanisms by which H3 tails are read out by effector proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to generate asymmetric nucleosomes in vivo and in vitro provides a powerful and generalizable tool to probe the mechanisms by which H3 tails are read out by effector proteins in the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental work presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "0db92341-9265-41bd-a1e1-c65d98d2c2e0",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C7",
+      "claim": "Nucleosomes generally impede the access of proteins to the underlying DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Packaging of eukaryotic genomes into chromatin has widespread consequences for genomic function, as nucleosomes generally impede the access of proteins to the underlying DNA (Hughes and Rando, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hughes and Rando, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "7cafa085-2150-45b2-aad0-df8dc77449aa",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C8",
+      "claim": "Histone proteins are subject to a huge variety of covalent modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the histone proteins are subject to a huge variety of covalent modifications, which affect genomic function in ways ranging from direct alterations in the biophysical nature of the chromatin fiber to recruitment or activation of various regulatory proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of chromatin biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "ea4f87f6-5459-4a34-854e-e47604820dd6",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C9",
+      "claim": "Histone modifications affect genomic function through direct alterations in the biophysical nature of the chromatin fiber and through recruitment or activation of regulatory proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the histone proteins are subject to a huge variety of covalent modifications, which affect genomic function in ways ranging from direct alterations in the biophysical nature of the chromatin fiber to recruitment or activation of various regulatory proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in chromatin biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "ee9b612b-aad4-4d5f-b33b-1410d0634ce3",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C10",
+      "claim": "The histone octamer is comprised of two copies of each of the four histones H2A, H2B, H3, and H4.",
+      "claim_type": "EXPLICIT",
+      "source": "The histone octamer is comprised of two copies of each of the four histones H2A, H2B, H3, and H4, organized with two H2A/H2B dimers associated with a central core tetramer of histone H3 and H4 (Kornberg and Lorch, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge supported by citation to Kornberg and Lorch, 1999.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "4d483d6c-5c2a-4d8e-a75d-b0d39a3cb1f1",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C11",
+      "claim": "The histone octamer is organized with two H2A/H2B dimers associated with a central core tetramer of histone H3 and H4.",
+      "claim_type": "EXPLICIT",
+      "source": "The histone octamer is comprised of two copies of each of the four histones H2A, H2B, H3, and H4, organized with two H2A/H2B dimers associated with a central core tetramer of histone H3 and H4 (Kornberg and Lorch, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge supported by citation to Kornberg and Lorch, 1999.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "970737bd-8cb7-4838-8469-181c9754c574",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C12",
+      "claim": "Chromatin function may be regulated at the level of histone modification symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "The symmetry inherent to the histone octamer has long been appreciated, and it has been suggested that chromatin function may be regulated at the level of histone modification symmetry \u2013 that K4me3/K4me0 and K4me3/K4me3 nucleosomes might serve distinct functions in vivo, for example.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis that has been suggested in the field.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "e640373e-33ad-46d7-98a5-d479538ca2e8",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C13",
+      "claim": "Immunopurification and mass spectrometry of nucleosomes marked with H3K27me3 in mammals revealed a mixture of symmetrically-modified nucleosomes and asymmetric nucleosomes modified on only one H3 tail.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, immunopurification and mass spectrometry of nucleosomes marked with H3K27me3 revealed a mixture of symmetrically-modified nucleosomes as well as asymmetric nucleosomes modified on only one H3 tail (Voigt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Voigt et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "f59917cd-7956-49c1-ac1c-d3f4317e74b5",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C14",
+      "claim": "The vast majority of H3K4me3/K27me3-marked 'bivalent' nucleosomes are asymmetrically modified, with each H3 tail bearing one of the two methylation marks.",
+      "claim_type": "EXPLICIT",
+      "source": "More recent single molecule studies of H3K4me3/K27me3-marked 'bivalent' nucleosomes reveal that the vast majority of these nucleosomes are asymmetrically modified, with each H3 tail bearing one of the two methylation marks, rather than both marks co-occurring on the same H3 molecule (Shema et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Shema et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "d2d11d27-2fab-41a4-98a8-29e03f3ea5e6",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C15",
+      "claim": "In budding yeast, ChIP-Exo and chemical mapping studies identified a subset of nucleosomes that exhibit asymmetric contacts with the underlying genomic DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In budding yeast, ChIP-Exo and chemical mapping studies identified a subset of nucleosomes that exhibit asymmetric contacts with the underlying genomic DNA (Rhee et al., 2014; Ramachandran et al., 2015), suggested to reflect histone octamers associated with an asymmetrically-localized DNA bulge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Rhee et al., 2014 and Ramachandran et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "1d25bce6-5621-45f7-8aaa-daa78081b00c",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C16",
+      "claim": "Asymmetric nucleosome contacts with DNA are suggested to reflect histone octamers associated with an asymmetrically-localized DNA bulge.",
+      "claim_type": "EXPLICIT",
+      "source": "In budding yeast, ChIP-Exo and chemical mapping studies identified a subset of nucleosomes that exhibit asymmetric contacts with the underlying genomic DNA (Rhee et al., 2014; Ramachandran et al., 2015), suggested to reflect histone octamers associated with an asymmetrically-localized DNA bulge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggested interpretation of the data from the cited studies.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "6c438f7c-97bc-4485-8bc3-d1966677eb94",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C17",
+      "claim": "The histone acetyltransferase Gcn5 exhibits cooperative binding to two histone tails.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Li et al assembled and purified asymmetric nucleosomes lacking a single H3 tail in vitro, subsequently showing that the histone acetyltransferase Gcn5 exhibited cooperative binding to two histone tails (Li and Shogren-Knaak, 2008; Li and Shogren-Knaak, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Li and Shogren-Knaak, 2008 and 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "2ed9fa8d-dbf6-4b4e-b55d-619d6d2ce12c",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C18",
+      "claim": "Asymmetrically H3K4-methylated nucleosomes are efficiently methylated at K27 by the PRC2 complex, like unmodified nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, asymmetrically H3K4-methylated nucleosomes were, like unmodified nucleosomes, efficiently methylated at K27 by the PRC2 complex, whereas this methylation was inhibited by the presence of symmetric H3K4me3 marks (Voigt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Voigt et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "4d97c42a-a850-4c51-9599-9fe61907fe01",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C19",
+      "claim": "K27 methylation by PRC2 is inhibited by the presence of symmetric H3K4me3 marks.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, asymmetrically H3K4-methylated nucleosomes were, like unmodified nucleosomes, efficiently methylated at K27 by the PRC2 complex, whereas this methylation was inhibited by the presence of symmetric H3K4me3 marks (Voigt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Voigt et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "f4dcccc5-5a2d-4a22-b135-ef2a6a4fc24f",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C20",
+      "claim": "The inherent symmetry of the natural H3-H3 interface has made in vivo tests of nucleosome symmetry hypotheses impossible until now.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these in vitro studies generate hypotheses for how chromatin effectors might be affected by nucleosome symmetry in the cell, the inherent symmetry of the natural H3-H3 interface has made in vivo tests of these hypotheses impossible until now.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the limitations of previous approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "c56159f9-03f9-4815-b220-562a9368acd5",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C21",
+      "claim": "H3X and H3Y form heterodimers in vivo but cannot homodimerize.",
+      "claim_type": "EXPLICIT",
+      "source": "Using rational design, followed by in vivo optimization and selection, we developed a pair of H3 proteins \u2013 H3X and H3Y \u2013 that form heterodimers in vivo, yet cannot homodimerize.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genetic and biochemical validation data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "498476d3-13bc-41d9-be6f-6ff1bf025049",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C22",
+      "claim": "The vast majority of histone octamers in yeast cells expressing H3X and H3Y contain a heterodimeric H3X/H3Y at their core.",
+      "claim_type": "EXPLICIT",
+      "source": "We validated this system genetically and biochemically in budding yeast, confirming that the vast majority of histone octamers in the cell contain a heterodimeric H3X/H3Y at their core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by biochemical data showing ~97% heterodimer formation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "1972b813-d17f-4c9a-bac7-97bec2c84a6f",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C23",
+      "claim": "The engineered H3X/H3Y specificities are recapitulated in vitro during biochemical reconstitution of histone octamers with recombinant subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we confirm that the engineered specificities are recapitulated in vitro during biochemical reconstitution of histone octamers with recombinant subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro reconstitution data presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "b0ab89c7-001a-4ed0-814a-b4598930b09a",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C24",
+      "claim": "A single copy of H3K36 is sufficient for stress resistance in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "We then used this system to probe several mechanistic aspects of nucleosome function in vivo, finding that a single copy of H3K36 is sufficient for stress resistance, and to silence cryptic transcription, in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by growth assay data presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "fb556bf6-9c9d-4a0b-80a7-7ed7692a7d57",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C25",
+      "claim": "Disruption of H3S10 affects H3K9 acetylation only on the same tail.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we show that disruption of H3S10 affects H3K9 acetylation only on the same tail, demonstrating the utility of this approach for interrogating histone 'crosstalk'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mass spectrometry and Western blot data presented in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "398f2105-1d8b-48e4-8691-489f24490f48",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C26",
+      "claim": "The histone octamer is built on a central core tetramer of histone H3 and H4, assembled around a central H3-H3 homodimeric interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The histone octamer is built on a central core tetramer of histone H3 and H4, assembled around a central H3-H3 homodimeric interface (Luger et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge supported by citation to Luger et al., 1997.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "48a187e1-ab75-444e-b9f1-f9568de78b47",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C27",
+      "claim": "Six sets of H3 mutants were designed that are predicted to have much higher affinity with a paired mutant protein than with wild-type H3.",
+      "claim_type": "EXPLICIT",
+      "source": "We initially used protein design to develop six sets of H3 mutants that are predicted to have much higher affinity with a paired mutant protein than with wild-type H3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational design approach used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "9f1a3349-6f5d-4373-8b7d-f01aaf9d3cdd",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C28",
+      "claim": "The engineered H3 variants have 'bumps and holes' that are predicted to reduce the potential for homodimerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Each engineered variant has 'bumps and holes' that are also predicted to reduce the potential for homodimerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design strategy used for the H3 variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "12834a32-eddb-4bc4-bee9-fc4b962c99db",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C29",
+      "claim": "The design focused on the hydrophobic cluster formed by amino acids L109, A110, L126, and L130 in the nucleosome structure.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused our efforts on the hydrophobic cluster formed by amino acids L109, A110, L126, and L130 (Figure 1B) in the nucleosome structure (pdb 1KX3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific residues targeted in the design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "da82587c-2e34-4b9f-b3b0-059b4b1c1121",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C30",
+      "claim": "Yeast carrying H3Y alone exhibited no growth even after 21 days of culture.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although yeast carrying H3Y alone exhibited no growth even after 21 days of culture (Figure 1C and not shown), H3X-only strains did grow even in the absence of H3Y, albeit poorly \u2013 colonies were only observed after nine or more days of growth of these strains (Figure 1\u2014figure supplement 1A), in contrast to the abundant colonies observed for H3X/H3Y strains after just two or three days.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth assay data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "518de039-aceb-4fad-aebb-bfbdc1ff9227",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C31",
+      "claim": "Initial H3X-only strains grew poorly in the absence of H3Y, with colonies only observed after nine or more days.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although yeast carrying H3Y alone exhibited no growth even after 21 days of culture (Figure 1C and not shown), H3X-only strains did grow even in the absence of H3Y, albeit poorly \u2013 colonies were only observed after nine or more days of growth of these strains (Figure 1\u2014figure supplement 1A), in contrast to the abundant colonies observed for H3X/H3Y strains after just two or three days.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth assay data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "48423dcf-6ad4-49f0-bf8c-6bbf603ff992",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C32",
+      "claim": "H3X/H3Y strains showed abundant colonies after two or three days of growth.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although yeast carrying H3Y alone exhibited no growth even after 21 days of culture (Figure 1C and not shown), H3X-only strains did grow even in the absence of H3Y, albeit poorly \u2013 colonies were only observed after nine or more days of growth of these strains (Figure 1\u2014figure supplement 1A), in contrast to the abundant colonies observed for H3X/H3Y strains after just two or three days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by growth assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "24d9daea-f522-4210-adb5-38f8e3219819",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C33",
+      "claim": "Four final versions of H3X (126A, 130A, 130T, and 130Q) conferred robust growth in the presence of H3Y but were completely inviable in its absence.",
+      "claim_type": "EXPLICIT",
+      "source": "In this manner, we identified four final versions of H3X (named 126A, 130A, 130T, and 130Q for the additional substitutions on the original H3X backbone) that reproducibly conferred robust growth in the presence of H3Y but were completely inviable in its absence (Figure 1D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth assay data shown in Figure 1D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "4188a58a-6e3c-4903-b554-443e44e78374",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C34",
+      "claim": "L126A and L130A mutations cause lethality when present on symmetric H3 molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our observation that these residues are sensitive points for H3/H3 dimeric interactions, L126A and L130A mutations cause lethality when present on symmetric H3 molecules (Dai et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Dai et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "bc9eb0e4-7a84-46f9-b84a-dbe4af941c3f",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C35",
+      "claim": "The DMS crosslinking efficiency of the X-Y heterodimeric pairs was nearly identical to that observed in cells expressing tagged H3 variants with a wild-type, homodimeric interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The DMS crosslinking efficiency of the X-Y heterodimeric pairs was nearly identical to that observed in cells expressing tagged H3 variants with a wild-type, homodimeric interface (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by crosslinking data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "0f2cdbb2-f9e3-4c4d-aad0-d3f989e494b0",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C36",
+      "claim": "Barely detectable levels of V5-H3X were observed in the bound 31kD species, indicating minimal H3X-H3X homodimerization.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, barely detectable levels of V5-H3X \u2013 which would result from H3X-H3X homodimerization \u2013 were observed in the bound 31kD species (Figure 2B, quantitated in Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 2B and quantitation in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "abc96dc9-9a78-443b-bf37-f9f17a59c4c9",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C37",
+      "claim": "Barely detectable H3Y homodimerization was observed in reciprocal experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In a reciprocal experiment, we assayed H3Y homodimerization, again finding efficient heterodimerization in vivo along with barely detectable H3Y homodimerization (Figure 2D\u2013F, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 2D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "67b01b16-7b33-4e12-96d3-30432baec5e5",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C38",
+      "claim": "Gel filtration of in vitro assembled octamers revealed robust assembly of histone octamers using wild-type H3 or the H3X/H3Y heterodimer pair.",
+      "claim_type": "EXPLICIT",
+      "source": "Gel filtration of in vitro assembled octamers revealed robust assembly of histone octamers assembled using wild-type H3, or assembled around the H3X/H3Y heterodimer pair.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gel filtration data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "6133d42d-d08e-427a-b20f-a4a1982038cd",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C39",
+      "claim": "Attempts to refold histone octamers using H3X only or H3Y only resulted in high molecular weight aggregates with no functional histone octamer.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, attempts to refold histone octamers using H3X only or H3Y only resulted in high molecular weight aggregates with no functional histone octamer (Figure 3, Figure 3\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gel filtration data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "86a1a3b3-d9bb-4a4a-97b4-75181ec57f32",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C40",
+      "claim": "H3X/H3Y-based octamers were readily reconstituted into nucleosomes when assembled with DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, H3X/H3Y-based octamers were readily reconstituted into nucleosomes when assembled with DNA, whereas the material obtained from H3X alone or H3Y alone did not assemble into nucleosomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nucleosome reconstitution data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "762f1a68-0947-4e9e-9b7c-48f2320b1732",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C41",
+      "claim": "Material obtained from H3X alone or H3Y alone did not assemble into nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, H3X/H3Y-based octamers were readily reconstituted into nucleosomes when assembled with DNA, whereas the material obtained from H3X alone or H3Y alone did not assemble into nucleosomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nucleosome reconstitution data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "2de3e701-94de-4b25-b298-9b507c890153",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C42",
+      "claim": "The great majority (average of ~97%) of nucleosomes in vivo are heterodimeric H3X/H3Y.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our genetic and biochemical analyses validate our designed obligate heterodimers, indicating that the great majority (average of ~97% as measured in Figure 2C,F) if not all of the nucleosomes in vivo are indeed heterodimeric.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative biochemical data shown in Figure 2C and 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "0be1fd4c-c0fd-404e-9800-a9704a41ec3f",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C43",
+      "claim": "Strains expressing the heterodimeric X/Y H3s exhibit reduced growth in YPD with doubling times of ~240 min at 30\u00b0C compared to ~140 min for the parent strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, although strains expressing the heterodimeric X/Y H3s exhibit reduced growth in YPD (doubling times of ~240 min at 30\u00b0C compared to ~140 min for the parent strain, Figure 4\u2014figure supplement 1A) and a modest temperature-sensitive phenotype (robust growth at 34 C but failure to grow at 37 C \u2013 see below), any effects of the mutant X/Y interface on chromatin regulation and cellular function are internally controlled for in all studies by comparing all yeast carrying single or double histone mutations to the 'pseudo-wild type' strain (H3Xwt/H3Ywt).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth rate measurements shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "b18be0bd-a130-4f40-b309-efd2a507d599",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C44",
+      "claim": "Strains expressing the heterodimeric X/Y H3s exhibit a modest temperature-sensitive phenotype with robust growth at 34\u00b0C but failure to grow at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, although strains expressing the heterodimeric X/Y H3s exhibit reduced growth in YPD (doubling times of ~240 min at 30\u00b0C compared to ~140 min for the parent strain, Figure 4\u2014figure supplement 1A) and a modest temperature-sensitive phenotype (robust growth at 34 C but failure to grow at 37 C \u2013 see below), any effects of the mutant X/Y interface on chromatin regulation and cellular function are internally controlled for in all studies by comparing all yeast carrying single or double histone mutations to the 'pseudo-wild type' strain (H3Xwt/H3Ywt).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by temperature sensitivity assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "fe862be8-5dac-4c2a-8266-585f0e5c211a",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C45",
+      "claim": "Growth rates for strains carrying a single mutation on H3X were generally well-correlated with those for H3Y mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, growth rates for strains carrying a single mutation on H3X were generally well-correlated with those for H3Y mutants, although a small subset of mutations exhibited different behavior on different H3 backbones (see, eg, H3K37Q in 0.8M KCl).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth rate data shown in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "3ce8fc2d-48ea-495a-996a-0f7404ec5dfb",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C46",
+      "claim": "A small subset of mutations exhibited different behavior on different H3 backbones.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, growth rates for strains carrying a single mutation on H3X were generally well-correlated with those for H3Y mutants, although a small subset of mutations exhibited different behavior on different H3 backbones (see, eg, H3K37Q in 0.8M KCl).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth rate data shown in Figure 4A-B, specifically the H3K37Q example.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "490a8a9e-d1c4-473e-9e80-4aaee3f79aeb",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C47",
+      "claim": "Yeast carrying double H3K14R, H3K14Q, or H3K36Q mutations exhibited significantly diminished growth, particularly in high salt.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we noted significantly diminished growth, particularly in high salt, for yeast carrying double H3K14R, H3K14Q, or H3K36Q mutations (Figure 4B, Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth rate data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "12c25e2f-3d23-4ef7-8209-119ab7c18b22",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C48",
+      "claim": "For H3K14R, single mutants exhibited a partial growth defect that was exacerbated in the double mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the behaviors of the corresponding asymmetric single mutants were distinct: for H3K14R, single mutants already exhibited a partial growth defect that was exacerbated in the double mutant, while for H3K36Q the single mutant strains had no measurable deficit compared to the pseudo-wild type.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth rate data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "48358d34-b712-4ea0-9ebf-62432e2c05f8",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C49",
+      "claim": "For H3K36Q, single mutant strains had no measurable deficit compared to the pseudo-wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the behaviors of the corresponding asymmetric single mutants were distinct: for H3K14R, single mutants already exhibited a partial growth defect that was exacerbated in the double mutant, while for H3K36Q the single mutant strains had no measurable deficit compared to the pseudo-wild type.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth rate data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "8736a48b-a620-4ea0-be7b-06ef65bb7b8f",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C50",
+      "claim": "Yeast lacking H3K36 methylation are hypersensitive to DNA damaging agents.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with prior studies demonstrating that yeast lacking H3K36 methylation are hypersensitive to DNA damaging agents (Jha and Strahl, 2014), we find that the K36Q double mutants \u2013 but neither of the single K36Q mutants \u2013 displayed increased sensitivity to both the DNA alkylating agent methyl methanesulfonate (MMS) and the strand break-inducing agent phleomycin (Figure 4C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Jha and Strahl, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "f109810a-cc92-47ad-9b41-bcafc6662e31",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C51",
+      "claim": "K36Q double mutants displayed increased sensitivity to both MMS and phleomycin, but neither of the single K36Q mutants did.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with prior studies demonstrating that yeast lacking H3K36 methylation are hypersensitive to DNA damaging agents (Jha and Strahl, 2014), we find that the K36Q double mutants \u2013 but neither of the single K36Q mutants \u2013 displayed increased sensitivity to both the DNA alkylating agent methyl methanesulfonate (MMS) and the strand break-inducing agent phleomycin (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by DNA damage sensitivity assay data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "ff0b8fdd-153d-4e31-9548-f971eb41d93d",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C52",
+      "claim": "Symmetric double K36Q mutants exhibited reduced growth at 34\u00b0C, while asymmetric mutants exhibited similar or only slightly reduced growth compared to the pseudo-wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these mutants were also temperature-sensitive, as symmetric double mutants exhibited reduced growth at 34 C, while the asymmetric mutants exhibited similar or only slightly reduced growth compared to the pseudo-wild type under these conditions (Figure 4D, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by temperature sensitivity assay data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "42f982f2-ea1a-44a9-971e-14a333dbee6a",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C53",
+      "claim": "K36Q mutations confer sensitivity to osmotic, temperature and DNA damage stresses only when symmetrically present on nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that K36Q mutations confer sensitivity to osmotic, temperature and DNA damage stresses, but only when symmetrically present on nucleosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the growth and stress sensitivity data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "d5668a79-d758-4f5e-9c2a-2a4c56bb6a5a",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C54",
+      "claim": "H3K36 is methylated by Set2.",
+      "claim_type": "EXPLICIT",
+      "source": "H3K36 is methylated by Set2 (Strahl et al., 2002), with the resulting modified residues serving to activate the RPD3S histone deacetylase complex via binding of the Eaf3 chromodomain-containing subunit (Carrozza et al., 2005; Keogh et al., 2005; Joshi and Struhl, 2005; Govind et al., 2010; Drouin et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Strahl et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "44c025e1-d86f-418a-be31-c4a41a5244a7",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C55",
+      "claim": "H3K36 methylation activates the RPD3S histone deacetylase complex via binding of the Eaf3 chromodomain-containing subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "H3K36 is methylated by Set2 (Strahl et al., 2002), with the resulting modified residues serving to activate the RPD3S histone deacetylase complex via binding of the Eaf3 chromodomain-containing subunit (Carrozza et al., 2005; Keogh et al., 2005; Joshi and Struhl, 2005; Govind et al., 2010; Drouin et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "69300e03-6265-43ed-b760-fa14b8e2d2fd",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C56",
+      "claim": "The major biological role served by H3K36 methylation is silencing of cryptic internal promoters via activation of the RPD3S complex.",
+      "claim_type": "EXPLICIT",
+      "source": "As the major biological role served by H3K36 methylation is silencing of cryptic internal promoters via activation of the RPD3S complex (Carrozza et al., 2005), and given that RPD3S can bind to nucleosomes with a single H3K36me3 modification (Huh et al., 2012), we sought to test whether a single methylated H3K36 per nucleosome would be sufficient to support robust silencing of such cryptic transcripts in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Carrozza et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "26c3555a-206a-4091-9a6b-e86a0b81c76b",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C57",
+      "claim": "RPD3S can bind to nucleosomes with a single H3K36me3 modification.",
+      "claim_type": "EXPLICIT",
+      "source": "As the major biological role served by H3K36 methylation is silencing of cryptic internal promoters via activation of the RPD3S complex (Carrozza et al., 2005), and given that RPD3S can bind to nucleosomes with a single H3K36me3 modification (Huh et al., 2012), we sought to test whether a single methylated H3K36 per nucleosome would be sufficient to support robust silencing of such cryptic transcripts in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Huh et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "0777502b-3abe-427d-89c2-4e99a644e2c9",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C58",
+      "claim": "P38V mutations eliminate the possibility of proline isomerization and block trimethylation but not dimethylation of the nearby K36 residue.",
+      "claim_type": "EXPLICIT",
+      "source": "The P38V mutants enable di- and tri-methylation of H3K36 to be distinguished \u2013 the wild-type proline residue at this position undergoes regulated isomerization, and P38V mutations that eliminate the possibility of proline isomerization block trimethylation (Nelson et al., 2006) but not dimethylation (Youdell et al., 2008) of the nearby K36 residue, a finding that we confirm here (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to Nelson et al., 2006 and Youdell et al., 2008, and confirmed by data in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "f653a444-cb0a-4b2e-adc8-73b9b92b6402",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C59",
+      "claim": "Cells expressing only H3P38V display none of the cryptic transcription phenotypes observed in set2, eaf3, or H3K36Q mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, cells expressing only H3P38V display none of the cryptic transcription phenotypes observed in set2, eaf3, or H3K36Q mutants ([Youdell et al., 2008] and see below), indicating that H3K36me2 is sufficient for the proper activation of the Rpd3S complex with regards to repression of cryptic transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Youdell et al., 2008 and data presented in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "4582cffc-989d-41eb-8714-e4c105ed7722",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C60",
+      "claim": "H3K36me2 is sufficient for the proper activation of the Rpd3S complex with regards to repression of cryptic transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, cells expressing only H3P38V display none of the cryptic transcription phenotypes observed in set2, eaf3, or H3K36Q mutants ([Youdell et al., 2008] and see below), indicating that H3K36me2 is sufficient for the proper activation of the Rpd3S complex with regards to repression of cryptic transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the P38V mutant phenotype data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "486b52a2-5e50-4a16-8c18-bc6f465e63db",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C61",
+      "claim": "Double P38V mutations did not cause the temperature sensitivity observed in K36Q mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, we find that double P38V mutations, on either a wild-type H3 backbone or in the context of the XY system, did not cause the temperature sensitivity observed in K36Q mutant cells (Figure 4E, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by temperature sensitivity assay data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "919af94c-ec15-4293-a3db-7bbd8b28628e",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C62",
+      "claim": "K36Q/P38V trans strains have one H3 tail that lacks K36 methylation entirely and one tail with a dimethylated K36 residue.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous analyses of the effects of P38V (Nelson et al., 2006; Youdell et al., 2008), immunoblotting confirms that these strains have one H3 tail (K36Q) that lacks K36 methylation entirely, and one tail (P38V) with a dimethylated K36 residue (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblotting data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "f4c6b362-242d-4883-8092-1f1a8cac45b6",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C63",
+      "claim": "Neither K36Q/P38V trans strain is sensitive to growth at 34\u00b0C or DNA damaging agents.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, neither of these K36Q/P38V trans strains are sensitive to growth at 34C (Figure 4F) or DNA damaging agents (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth assay data shown in Figures 4C and 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "152703be-4af4-45fb-a17d-9e3dfcc4995d",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C64",
+      "claim": "A single K36me2 is sufficient to promote stress tolerance in budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that a single K36me2 is sufficient to promote stress tolerance in budding yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the K36Q/P38V trans strain phenotype data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "0fca9865-b31b-4bf2-8a48-e62b2f30533c",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C65",
+      "claim": "Eaf3\u0394 mutants show increased cryptic transcription at STE11.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we confirmed the expected increase in cryptic transcription in eaf3\u0394 mutants, and in yeast carrying symmetric H3K36Q mutations on the wild-type H3 backbone (Figure 5A\u2013B, lanes 1\u20134, 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Northern blot data shown in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "0c53fc96-9d83-41e4-bcc6-e335a7e94c73",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C66",
+      "claim": "Yeast carrying symmetric H3K36Q mutations on the wild-type H3 backbone show increased cryptic transcription at STE11.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we confirmed the expected increase in cryptic transcription in eaf3\u0394 mutants, and in yeast carrying symmetric H3K36Q mutations on the wild-type H3 backbone (Figure 5A\u2013B, lanes 1\u20134, 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Northern blot data shown in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "d52eac52-f662-46bb-bd00-d7c1400c649f",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C67",
+      "claim": "H3P38V mutants did not cause significantly increased cryptic transcription at STE11.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we confirm that H3K36me2 was sufficient to silence the STE11 cryptic promoter, as H3P38V mutants (which lack H3K36me3 but exhibit normal H3K36me2 levels) did not cause significantly increased cryptic transcription (lane 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Northern blot data shown in Figure 5A-B, lane 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "da8569c2-af0e-4ec7-ad85-1974be876b12",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C68",
+      "claim": "Pseudo-wildtype H3X/Y cells and cells with a single K36Q mutated tail display similar, low levels of cryptic transcripts at STE11.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the growth phenotypes observed in Figure 4, we find that the pseudo-wildtype H3X/Y cells and the cells with a single K36Q mutated tail display similar, low levels of cryptic transcripts (lanes 6\u20138).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Northern blot data shown in Figure 5A-B, lanes 6-8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "db47418a-ed50-4cb4-947b-5823d19ccf46",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C69",
+      "claim": "Cells with two K36Q mutated tails display greatly elevated cryptic transcript levels at STE11.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the cells with two K36Q mutated tails display greatly elevated cryptic transcript levels (lane 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Northern blot data shown in Figure 5A-B, lane 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "7b8b5c35-ea02-4c5b-ac4e-10ddff7c2486",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C70",
+      "claim": "Neither single nor double P38V mutant tails affected cryptic transcription at STE11.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, neither single nor double P38V mutant tails affected cryptic transcription in our strain background (lanes 14\u201316).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Northern blot data shown in Figure 5A-B, lanes 14-16.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "9608627e-bea4-4e94-8aa1-835165c7a50c",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C71",
+      "claim": "P38V/K36Q trans strains displayed modest derepression of cryptic transcription at STE11, more similar to single K36Q mutants than K36Q double mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, P38V/K36Q trans strains (lanes 17\u201318) displayed modest derepression of cryptic transcription, more similar to that observed in single K36Q mutant cells (lanes 7\u20138) than the high level observed in K36Q double mutants (lane 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Northern blot data shown in Figure 5A-B, lanes 17-18.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "f72871a5-852b-4498-8b9f-af87d11395ec",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C72",
+      "claim": "Derepression of cryptic transcription at FLO8 was observed specifically in the K36Q double mutant, but not in either K36Q single mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the generality of these findings using another well-studied model for cryptic transcription, the FLO8 locus (Kaplan et al., 2003), where derepression of cryptic transcription was again observed specifically in the K36Q double mutant, but not in either K36Q single mutant (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Northern blot data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "9c2de753-ef26-44e2-8022-af0a049e2a28",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C73",
+      "claim": "A single K36-di-methylated H3 tail per nucleosome is sufficient to restrain cryptic transcription in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that a single K36-di-methylated H3 tail per nucleosome is sufficient to restrain cryptic transcription in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the cryptic transcription data for K36Q and P38V mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "ba8568b2-af04-4628-8729-2b2fef2d6a6f",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C74",
+      "claim": "Biotin-tagged H3 molecules were purified with >93% purity away from the untagged H3 molecule from each nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of peptides derived from the engineered H3X/H3Y interface confirmed our ability to efficiently purify the biotin-tagged H3 molecule away from the untagged H3 molecule from each nucleosome, with >93% purity observed for informative peptides analyzed (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "ed675c2e-c1dc-40d3-bc74-06468c335f45",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C75",
+      "claim": "The fraction of H3 molecules acetylated at K9 was lower in yeast strains carrying H3S10A symmetrically.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the fraction of H3 molecules acetylated at K9 was lower in yeast strains carrying H3S10A symmetrically, either on a wild-type histone backbone or in the H3X/H3Y system.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry and Western blot data shown in Figure 6B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "f157c3d6-dc50-4347-803a-51102d2218b9",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C76",
+      "claim": "H3K9 acetylation levels were significantly decreased on the same histone tail carrying the S10A mutation, but were not affected by the presence of H3S10A in trans.",
+      "claim_type": "EXPLICIT",
+      "source": "Turning next to analysis of asymmetric mutant nucleosomes, mass spectrometric analyses showed that H3K9 acetylation levels were significantly decreased on the same histone tail carrying the S10A mutation, but were not affected by the presence of H3S10A in trans (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "0ebb292c-a931-4803-b0b5-625e02c0c021",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C77",
+      "claim": "Western blotting confirmed that H3S10A affects adjacent H3K9 acetylation on the same tail, but has no effect on modification of a paired wild-type H3 tail.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blotting for H3K9ac in yeast strains where an epitope tag allows H3X and H3Y isoforms to be separated by gel electrophoresis confirmed our mass spec-based analysis of histone acetylation, with H3S10A affecting adjacent H3K9 acetylation on the same tail, but having no effect on modification of a paired wild-type H3 tail (Figure 6C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 6C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "cccf15c6-4558-4954-8269-bad370f3bd0a",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C78",
+      "claim": "Immunopurification and mass spectrometry of nucleosomes marked with H3K27me3 revealed asymmetric nucleosomes in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, immunopurification and mass spectrometry of nucleosomes marked with H3K27me3 revealed a mixture of symmetrically-modified nucleosomes as well as asymmetric nucleosomes modified on only one H3 tail (Voigt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Voigt et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "be2c5ae1-0ac3-4d41-8178-e160c1cd0f15",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C79",
+      "claim": "Single molecule studies revealed that the vast majority of H3K4me3/K27me3-marked 'bivalent' nucleosomes are asymmetrically modified.",
+      "claim_type": "EXPLICIT",
+      "source": "More recent single molecule studies of H3K4me3/K27me3-marked 'bivalent' nucleosomes reveal that the vast majority of these nucleosomes are asymmetrically modified, with each H3 tail bearing one of the two methylation marks, rather than both marks co-occurring on the same H3 molecule (Shema et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Shema et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "b57353a6-cec4-408a-b989-56159e0612bc",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C80",
+      "claim": "Asymmetrically H3K4-methylated nucleosomes were efficiently methylated at K27 by the PRC2 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, asymmetrically H3K4-methylated nucleosomes were, like unmodified nucleosomes, efficiently methylated at K27 by the PRC2 complex, whereas this methylation was inhibited by the presence of symmetric H3K4me3 marks (Voigt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Voigt et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "ba0bab14-a3c6-4003-a13d-490de989ebad",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C81",
+      "claim": "RPD3S appears to be particularly well-suited to carrying out its regulatory functions even on chromatin that is less than fully methylated at H3K36.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the RPD3S complex appears to be particularly well-suited to carrying out its regulatory functions even on chromatin that is less than fully methylated at H3K36.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data and in vitro binding studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "87f83876-418d-45c7-8982-ba37090f02f8",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C82",
+      "claim": "RPD3S binds with higher affinity to dinucleosomes than monosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, although RPD3S binds with higher affinity to dinucleosomes than monosomes, it binds with high affinity to templates with a dimethylated nucleosome adjacent to a fully unmethylated one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on in vitro binding studies referenced in the discussion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "70b0957a-da14-44a2-b7f4-0c12c0608acf",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C83",
+      "claim": "RPD3S binds with high affinity to templates with a dimethylated nucleosome adjacent to a fully unmethylated one.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, although RPD3S binds with higher affinity to dinucleosomes than monosomes, it binds with high affinity to templates with a dimethylated nucleosome adjacent to a fully unmethylated one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on in vitro binding studies referenced in the discussion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "aeb74206-7001-478a-bbb9-17847cd0cb58",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C84",
+      "claim": "The methyl-K36/RPD3S system would be buffered against transient reductions in H3K36me2-3 density during DNA repair or replication-mediated loss of modified histones.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the methyl-K36/RPD3S system would be buffered against transient reductions in H3K36me2-3 density, for example during DNA repair or replication-mediated loss of modified histones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the binding properties of RPD3S.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "615543da-b6c9-492f-91a5-7db92a69e989",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C85",
+      "claim": "The enzyme RPD3S can function effectively in vivo even if it can only engage a single H3K36me2 or me3 per nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data extend these observations to indicate that the enzyme can function effectively in vivo even if it can only engage a single H3K36me2 or me3 per nucleosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on asymmetric K36 methylation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "5c401d1a-7eab-4bc0-ad1e-750bdf348a0a",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C86",
+      "claim": "S10 phosphorylation stimulates H3 tail acetylation by Gcn5 only in cis.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with a recent in vitro study demonstrating that S10 phosphorylation stimulates H3 tail acetylation by Gcn5 only in cis (Liokatis et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Liokatis et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "e9118c95-ca65-49e5-853c-453e3778660d",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C87",
+      "claim": "The H3X/Y system should function appropriately in other species beyond budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Although such studies are demonstrated here using the budding yeast system, the H3-H3 interface is generally highly conserved throughout evolution, and we expect that this system should function appropriately in other species \u2013 indeed, the biochemical reconstitution of asymmetric nucleosomes described in Figure 3 is carried out using human histone sequences.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on sequence conservation and demonstration with human histones.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "d40528eb-04dc-4b1d-9931-db746ec0b779",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C88",
+      "claim": "The biochemical reconstitution of asymmetric nucleosomes in Figure 3 is carried out using human histone sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Although such studies are demonstrated here using the budding yeast system, the H3-H3 interface is generally highly conserved throughout evolution, and we expect that this system should function appropriately in other species \u2013 indeed, the biochemical reconstitution of asymmetric nucleosomes described in Figure 3 is carried out using human histone sequences.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and demonstrated in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "d9798904-09eb-4c97-a8ea-64a3567a4fd8",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C89",
+      "claim": "The H3-H3 interface is generally highly conserved throughout evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Although such studies are demonstrated here using the budding yeast system, the H3-H3 interface is generally highly conserved throughout evolution, and we expect that this system should function appropriately in other species \u2013 indeed, the biochemical reconstitution of asymmetric nucleosomes described in Figure 3 is carried out using human histone sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about histone sequence conservation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "50b4b821-02dc-4f18-8fd6-9e9cf70bae72",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "claim_id": "C90",
+      "claim": "A Drosophila model has been developed in which the histone genes have been relocated to an artificial locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Although canonical histone genes are often encoded in many copies in large multi-gene genomic clusters and are therefore inconvenient for genetic studies, a Drosophila model has been developed in which the histone genes have been relocated to an artificial locus (McKay et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to McKay et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b5246bc4-8a85-4ec3-a927-cc69773ac3c2",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors designed and validated an obligate heterodimer pair of H3 proteins (H3X and H3Y) that form heterodimers in vivo but cannot homodimerize. Through computational design targeting the H3-H3 interface, followed by in vivo selection, they identified four H3X variants that are viable only in the presence of H3Y. Biochemical crosslinking experiments demonstrated that ~97% of nucleosomes contain heterodimeric H3X/H3Y.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C42 provide converging genetic and biochemical evidence for obligate heterodimerization. The computational design (C27-C29), genetic selection showing H3Y-only and optimized H3X-only strains are inviable (C30-C33), and quantitative DMS crosslinking data showing ~97% heterodimers with <3% homodimers (C35-C37, C42) collectively support the conclusion. The consistency across multiple independent experimental approaches strengthens this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "1391a27f-3c42-43e7-8d82-b38c55fc1a51",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The H3X/H3Y heterodimer system functions in vitro with recombinant human histones. H3X/H3Y pairs assemble into histone octamers and nucleosomes, while H3X-only or H3Y-only preparations form aggregates and fail to assemble into nucleosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 are supported by gel filtration and nucleosome reconstitution data shown in Figure 3. The demonstration with human histone sequences (C88) extends the applicability beyond yeast. The negative controls (H3X-only and H3Y-only aggregation) strengthen the conclusion that heterodimerization is required for proper octamer assembly.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "b4bf31a3-bfeb-42f7-8184-12ab8d87d14d",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A single methylated H3K36 per nucleosome is sufficient for stress resistance in vivo. Symmetric K36Q double mutants exhibit sensitivity to osmotic stress, temperature stress, and DNA damage, while asymmetric single K36Q mutants show no significant defects. Trans strains with one K36Q and one P38V (which permits dimethylation but not trimethylation) are not stress-sensitive, indicating that a single K36me2 is sufficient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C53 and C61-C64 present consistent phenotypic data across multiple stress conditions (osmotic, temperature, DNA damage) showing recessive epistasis for K36Q mutations. The P38V experiments (C58, C61-C63) provide critical mechanistic insight by distinguishing di- from tri-methylation. The convergence of growth assays, temperature sensitivity, and DNA damage sensitivity data across multiple mutant combinations strongly supports the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "5bceba37-050d-45b5-b432-0dce79ade25b",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A single K36-dimethylated H3 tail per nucleosome is sufficient to silence cryptic transcription in vivo. Northern blot analysis of STE11 and FLO8 loci shows that symmetric K36Q double mutants exhibit elevated cryptic transcription, while asymmetric single K36Q mutants maintain silencing. P38V mutants (which retain K36me2 but lack K36me3) show no cryptic transcription defects, and K36Q/P38V trans strains show only modest derepression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C73 present Northern blot data for two independent loci (STE11 and FLO8) showing consistent patterns. The P38V experiments (C59, C60, C67, C70, C71) distinguish the sufficiency of dimethylation from trimethylation. The mechanistic link to RPD3S complex function (C54-C57) provides biological context. The consistency across multiple loci and mutant combinations, combined with appropriate controls (eaf3\u0394), strongly supports the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "633761f9-dd59-4648-a5ea-1da9bb228da1",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "H3S10A affects H3K9 acetylation only in cis (on the same histone tail), not in trans. Mass spectrometry and Western blot analysis of biotin-purified H3 molecules show that H3K9 acetylation is reduced on H3 tails carrying S10A mutations but not on paired wild-type H3 tails in asymmetric nucleosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 present converging evidence from mass spectrometry (>93% purity of biotin-tagged H3, C74) and Western blot analysis showing cis-specific effects. The ability to separately analyze modifications on each H3 tail within asymmetric nucleosomes is well-demonstrated. The consistency between mass spec and Western blot data, along with appropriate controls, supports the conclusion about cis-specific histone crosstalk.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "419c7b7a-0254-4cf7-bafe-2fe5e3f041ea",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Strains expressing heterodimeric H3X/H3Y exhibit reduced growth (doubling time ~240 min vs ~140 min for parent strain at 30\u00b0C) and temperature sensitivity (growth at 34\u00b0C but not 37\u00b0C).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 are supported by growth rate measurements shown in Figure 4\u2014figure supplement 1A and temperature sensitivity assays. However, these phenotypes represent limitations of the system rather than biological insights. The authors appropriately use pseudo-wild type (H3Xwt/H3Ywt) as an internal control for all experiments, which addresses this limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "8dbaf7c6-1dc5-49e4-b0f6-7f17734b49d7",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Growth rates for strains carrying single mutations on H3X are generally well-correlated with those for H3Y mutants, though a small subset of mutations exhibit different behavior on different H3 backbones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 are supported by growth rate data in Figure 4A-B. The general correlation validates the system's internal consistency, while the exceptions (e.g., H3K37Q) suggest some context-dependent effects. This represents a validation of the experimental system rather than a primary biological finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "bd3dbdde-f325-47f6-947c-3dd59939aeb0",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The H3X/H3Y system provides a generalizable tool to probe mechanisms of H3 tail readout by effector proteins and should function in other species beyond budding yeast due to conservation of the H3-H3 interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C87 is an inference based on sequence conservation (C89) and demonstration with human histones in vitro (C88). While the in vitro data with human histones is supportive, actual in vivo function in other species has not been demonstrated. The claim represents a reasonable extrapolation but requires experimental validation in other organisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    },
+    {
+      "id": "10522019-a1ab-4f17-a4b5-7312c4ac701c",
+      "content_id": "c9e8d3a8-05fe-45ad-8f96-d788b6533572",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The RPD3S complex is well-suited to function on chromatin with less than full H3K36 methylation, as it binds with high affinity to templates with a dimethylated nucleosome adjacent to an unmethylated one, suggesting the system is buffered against transient reductions in H3K36me2-3 density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C81-C85 are primarily inferences drawn from the experimental data and cited in vitro binding studies (C82-C83). While the authors' in vivo data (showing single K36me2 is sufficient) is consistent with this model, the mechanistic claims about RPD3S binding properties and buffering capacity are based on cited work rather than data presented in this manuscript. The inference is reasonable but represents speculation beyond the direct experimental evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:01:07.490565Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4c83dc78-7d7f-4606-867e-75643e6968ec",
+      "result_id": "b5246bc4-8a85-4ec3-a927-cc69773ac3c2"
+    },
+    {
+      "claim_id": "c56159f9-03f9-4815-b220-562a9368acd5",
+      "result_id": "b5246bc4-8a85-4ec3-a927-cc69773ac3c2"
+    },
+    {
+      "claim_id": "498476d3-13bc-41d9-be6f-6ff1bf025049",
+      "result_id": "b5246bc4-8a85-4ec3-a927-cc69773ac3c2"
+    },
+    {
+      "claim_id": "48a187e1-ab75-444e-b9f1-f9568de78b47",
+      "result_id": "b5246bc4-8a85-4ec3-a927-cc69773ac3c2"
+    },
+    {
+      "claim_id": "9f1a3349-6f5d-4373-8b7d-f01aaf9d3cdd",
+      "result_id": "b5246bc4-8a85-4ec3-a927-cc69773ac3c2"
+    },
+    {
+      "claim_id": "12834a32-eddb-4bc4-bee9-fc4b962c99db",
+      "result_id": "b5246bc4-8a85-4ec3-a927-cc69773ac3c2"
+    },
+    {
+      "claim_id": "da82587c-2e34-4b9f-b3b0-059b4b1c1121",
+      "result_id": "b5246bc4-8a85-4ec3-a927-cc69773ac3c2"
+    },
+    {
+      "claim_id": "518de039-aceb-4fad-aebb-bfbdc1ff9227",
+      "result_id": "b5246bc4-8a85-4ec3-a927-cc69773ac3c2"
+    },
+    {
+      "claim_id": "48423dcf-6ad4-49f0-bf8c-6bbf603ff992",
+      "result_id": "b5246bc4-8a85-4ec3-a927-cc69773ac3c2"
+    },
+    {
+      "claim_id": "24d9daea-f522-4210-adb5-38f8e3219819",
+      "result_id": "b5246bc4-8a85-4ec3-a927-cc69773ac3c2"
+    },
+    {
+      "claim_id": "4188a58a-6e3c-4903-b554-443e44e78374",
+      "result_id": "b5246bc4-8a85-4ec3-a927-cc69773ac3c2"
+    },
+    {
+      "claim_id": "bc9eb0e4-7a84-46f9-b84a-dbe4af941c3f",
+      "result_id": "b5246bc4-8a85-4ec3-a927-cc69773ac3c2"
+    },
+    {
+      "claim_id": "0f2cdbb2-f9e3-4c4d-aad0-d3f989e494b0",
+      "result_id": "b5246bc4-8a85-4ec3-a927-cc69773ac3c2"
+    },
+    {
+      "claim_id": "abc96dc9-9a78-443b-bf37-f9f17a59c4c9",
+      "result_id": "b5246bc4-8a85-4ec3-a927-cc69773ac3c2"
+    },
+    {
+      "claim_id": "2de3e701-94de-4b25-b298-9b507c890153",
+      "result_id": "b5246bc4-8a85-4ec3-a927-cc69773ac3c2"
+    },
+    {
+      "claim_id": "1972b813-d17f-4c9a-bac7-97bec2c84a6f",
+      "result_id": "1391a27f-3c42-43e7-8d82-b38c55fc1a51"
+    },
+    {
+      "claim_id": "67b01b16-7b33-4e12-96d3-30432baec5e5",
+      "result_id": "1391a27f-3c42-43e7-8d82-b38c55fc1a51"
+    },
+    {
+      "claim_id": "6133d42d-d08e-427a-b20f-a4a1982038cd",
+      "result_id": "1391a27f-3c42-43e7-8d82-b38c55fc1a51"
+    },
+    {
+      "claim_id": "86a1a3b3-d9bb-4a4a-97b4-75181ec57f32",
+      "result_id": "1391a27f-3c42-43e7-8d82-b38c55fc1a51"
+    },
+    {
+      "claim_id": "762f1a68-0947-4e9e-9b7c-48f2320b1732",
+      "result_id": "1391a27f-3c42-43e7-8d82-b38c55fc1a51"
+    },
+    {
+      "claim_id": "d40528eb-04dc-4b1d-9931-db746ec0b779",
+      "result_id": "1391a27f-3c42-43e7-8d82-b38c55fc1a51"
+    },
+    {
+      "claim_id": "32043082-d873-49b0-a853-3afaaddb17f9",
+      "result_id": "b4bf31a3-bfeb-42f7-8184-12ab8d87d14d"
+    },
+    {
+      "claim_id": "b0ab89c7-001a-4ed0-814a-b4598930b09a",
+      "result_id": "b4bf31a3-bfeb-42f7-8184-12ab8d87d14d"
+    },
+    {
+      "claim_id": "490a8a9e-d1c4-473e-9e80-4aaee3f79aeb",
+      "result_id": "b4bf31a3-bfeb-42f7-8184-12ab8d87d14d"
+    },
+    {
+      "claim_id": "12c25e2f-3d23-4ef7-8209-119ab7c18b22",
+      "result_id": "b4bf31a3-bfeb-42f7-8184-12ab8d87d14d"
+    },
+    {
+      "claim_id": "48358d34-b712-4ea0-9ebf-62432e2c05f8",
+      "result_id": "b4bf31a3-bfeb-42f7-8184-12ab8d87d14d"
+    },
+    {
+      "claim_id": "f109810a-cc92-47ad-9b41-bcafc6662e31",
+      "result_id": "b4bf31a3-bfeb-42f7-8184-12ab8d87d14d"
+    },
+    {
+      "claim_id": "ff0b8fdd-153d-4e31-9548-f971eb41d93d",
+      "result_id": "b4bf31a3-bfeb-42f7-8184-12ab8d87d14d"
+    },
+    {
+      "claim_id": "42f982f2-ea1a-44a9-971e-14a333dbee6a",
+      "result_id": "b4bf31a3-bfeb-42f7-8184-12ab8d87d14d"
+    },
+    {
+      "claim_id": "0777502b-3abe-427d-89c2-4e99a644e2c9",
+      "result_id": "b4bf31a3-bfeb-42f7-8184-12ab8d87d14d"
+    },
+    {
+      "claim_id": "486b52a2-5e50-4a16-8c18-bc6f465e63db",
+      "result_id": "b4bf31a3-bfeb-42f7-8184-12ab8d87d14d"
+    },
+    {
+      "claim_id": "919af94c-ec15-4293-a3db-7bbd8b28628e",
+      "result_id": "b4bf31a3-bfeb-42f7-8184-12ab8d87d14d"
+    },
+    {
+      "claim_id": "f4c6b362-242d-4883-8092-1f1a8cac45b6",
+      "result_id": "b4bf31a3-bfeb-42f7-8184-12ab8d87d14d"
+    },
+    {
+      "claim_id": "152703be-4af4-45fb-a17d-9e3dfcc4995d",
+      "result_id": "b4bf31a3-bfeb-42f7-8184-12ab8d87d14d"
+    },
+    {
+      "claim_id": "d5668a79-d758-4f5e-9c2a-2a4c56bb6a5a",
+      "result_id": "5bceba37-050d-45b5-b432-0dce79ade25b"
+    },
+    {
+      "claim_id": "44c025e1-d86f-418a-be31-c4a41a5244a7",
+      "result_id": "5bceba37-050d-45b5-b432-0dce79ade25b"
+    },
+    {
+      "claim_id": "69300e03-6265-43ed-b760-fa14b8e2d2fd",
+      "result_id": "5bceba37-050d-45b5-b432-0dce79ade25b"
+    },
+    {
+      "claim_id": "26c3555a-206a-4091-9a6b-e86a0b81c76b",
+      "result_id": "5bceba37-050d-45b5-b432-0dce79ade25b"
+    },
+    {
+      "claim_id": "f653a444-cb0a-4b2e-adc8-73b9b92b6402",
+      "result_id": "5bceba37-050d-45b5-b432-0dce79ade25b"
+    },
+    {
+      "claim_id": "4582cffc-989d-41eb-8714-e4c105ed7722",
+      "result_id": "5bceba37-050d-45b5-b432-0dce79ade25b"
+    },
+    {
+      "claim_id": "0fca9865-b31b-4bf2-8a48-e62b2f30533c",
+      "result_id": "5bceba37-050d-45b5-b432-0dce79ade25b"
+    },
+    {
+      "claim_id": "0c53fc96-9d83-41e4-bcc6-e335a7e94c73",
+      "result_id": "5bceba37-050d-45b5-b432-0dce79ade25b"
+    },
+    {
+      "claim_id": "d52eac52-f662-46bb-bd00-d7c1400c649f",
+      "result_id": "5bceba37-050d-45b5-b432-0dce79ade25b"
+    },
+    {
+      "claim_id": "da8569c2-af0e-4ec7-ad85-1974be876b12",
+      "result_id": "5bceba37-050d-45b5-b432-0dce79ade25b"
+    },
+    {
+      "claim_id": "db47418a-ed50-4cb4-947b-5823d19ccf46",
+      "result_id": "5bceba37-050d-45b5-b432-0dce79ade25b"
+    },
+    {
+      "claim_id": "7b8b5c35-ea02-4c5b-ac4e-10ddff7c2486",
+      "result_id": "5bceba37-050d-45b5-b432-0dce79ade25b"
+    },
+    {
+      "claim_id": "9608627e-bea4-4e94-8aa1-835165c7a50c",
+      "result_id": "5bceba37-050d-45b5-b432-0dce79ade25b"
+    },
+    {
+      "claim_id": "f72871a5-852b-4498-8b9f-af87d11395ec",
+      "result_id": "5bceba37-050d-45b5-b432-0dce79ade25b"
+    },
+    {
+      "claim_id": "9c2de753-ef26-44e2-8022-af0a049e2a28",
+      "result_id": "5bceba37-050d-45b5-b432-0dce79ade25b"
+    },
+    {
+      "claim_id": "61cafa16-a935-416e-b86e-cee9631fd37b",
+      "result_id": "633761f9-dd59-4648-a5ea-1da9bb228da1"
+    },
+    {
+      "claim_id": "fb556bf6-9c9d-4a0b-80a7-7ed7692a7d57",
+      "result_id": "633761f9-dd59-4648-a5ea-1da9bb228da1"
+    },
+    {
+      "claim_id": "ba8568b2-af04-4628-8729-2b2fef2d6a6f",
+      "result_id": "633761f9-dd59-4648-a5ea-1da9bb228da1"
+    },
+    {
+      "claim_id": "ed675c2e-c1dc-40d3-bc74-06468c335f45",
+      "result_id": "633761f9-dd59-4648-a5ea-1da9bb228da1"
+    },
+    {
+      "claim_id": "f157c3d6-dc50-4347-803a-51102d2218b9",
+      "result_id": "633761f9-dd59-4648-a5ea-1da9bb228da1"
+    },
+    {
+      "claim_id": "0ebb292c-a931-4803-b0b5-625e02c0c021",
+      "result_id": "633761f9-dd59-4648-a5ea-1da9bb228da1"
+    },
+    {
+      "claim_id": "0be1fd4c-c0fd-404e-9800-a9704a41ec3f",
+      "result_id": "419c7b7a-0254-4cf7-bafe-2fe5e3f041ea"
+    },
+    {
+      "claim_id": "b18be0bd-a130-4f40-b309-efd2a507d599",
+      "result_id": "419c7b7a-0254-4cf7-bafe-2fe5e3f041ea"
+    },
+    {
+      "claim_id": "fe862be8-5dac-4c2a-8266-585f0e5c211a",
+      "result_id": "8dbaf7c6-1dc5-49e4-b0f6-7f17734b49d7"
+    },
+    {
+      "claim_id": "3ce8fc2d-48ea-495a-996a-0f7404ec5dfb",
+      "result_id": "8dbaf7c6-1dc5-49e4-b0f6-7f17734b49d7"
+    },
+    {
+      "claim_id": "7f8f9164-5cef-45fa-9904-d1eeeca7f8b5",
+      "result_id": "bd3dbdde-f325-47f6-947c-3dd59939aeb0"
+    },
+    {
+      "claim_id": "e9118c95-ca65-49e5-853c-453e3778660d",
+      "result_id": "bd3dbdde-f325-47f6-947c-3dd59939aeb0"
+    },
+    {
+      "claim_id": "d9798904-09eb-4c97-a8ea-64a3567a4fd8",
+      "result_id": "bd3dbdde-f325-47f6-947c-3dd59939aeb0"
+    },
+    {
+      "claim_id": "ba0bab14-a3c6-4003-a13d-490de989ebad",
+      "result_id": "10522019-a1ab-4f17-a4b5-7312c4ac701c"
+    },
+    {
+      "claim_id": "87f83876-418d-45c7-8982-ba37090f02f8",
+      "result_id": "10522019-a1ab-4f17-a4b5-7312c4ac701c"
+    },
+    {
+      "claim_id": "70b0957a-da14-44a2-b7f4-0c12c0608acf",
+      "result_id": "10522019-a1ab-4f17-a4b5-7312c4ac701c"
+    },
+    {
+      "claim_id": "aeb74206-7001-478a-bbb9-17847cd0cb58",
+      "result_id": "10522019-a1ab-4f17-a4b5-7312c4ac701c"
+    },
+    {
+      "claim_id": "615543da-b6c9-492f-91a5-7db92a69e989",
+      "result_id": "10522019-a1ab-4f17-a4b5-7312c4ac701c"
+    }
+  ],
+  "comparisons": []
+}

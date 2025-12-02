@@ -1,0 +1,1834 @@
+{
+  "submission": {
+    "id": "9b3ca39c-72b2-4168-b095-c98b2dee2a26",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:01:28.439227Z",
+    "updated_at": "2025-12-01T20:01:28.439227Z"
+  },
+  "content": [
+    {
+      "id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "submission_id": "9b3ca39c-72b2-4168-b095-c98b2dee2a26",
+      "content_type": "manuscript",
+      "content_text": "# Increasing evidence of mechanical force as a functional regulator in smooth muscle myosin light chain kinase\n\n## Authors\n\n- Fabian Baumann<sup>1</sup>\n- Magnus Sebastian Bauer<sup>1</sup> ([ORCID: 0000-0003-1357-2852](https://orcid.org/0000-0003-1357-2852))\n- Martin Rees<sup>3</sup>\n- Alexander Alexandrovich<sup>3</sup>\n- Mathias Gautel<sup>3</sup>\n- Diana Angela Pippig<sup>1</sup>\n- Hermann Eduard Gaub<sup>1</sup> ([ORCID: 0000-0002-4220-6088](https://orcid.org/0000-0002-4220-6088)) \u2020\n\n### Affiliations\n\n1. Chair for Applied Physics and Center for Nanoscience Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen Munich Germany\n2. Center for Integrated Protein Science Munich Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen Munich Germany\n3. Randall Division of Cell and Molecular Biophysics King's College London BHF Centre of Research Excellence London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nMechanosensitive proteins are key players in cytoskeletal remodeling, muscle contraction, cell migration and differentiation processes. Smooth muscle myosin light chain kinase (smMLCK) is a member of a diverse group of serine/threonine kinases that feature cytoskeletal association. Its catalytic activity is triggered by a conformational change upon Ca2+/calmodulin (Ca2+/CaM) binding. Due to its significant homology with the force-activated titin kinase, smMLCK is suspected to be also regulatable by mechanical stress. In this study, a CaM-independent activation mechanism for smMLCK by mechanical release of the inhibitory elements is investigated via high throughput AFM single-molecule force spectroscopy. The characteristic pattern of transitions between different smMLCK states and their variations in the presence of different substrates and ligands are presented. Interaction between kinase domain and regulatory light chain (RLC) substrate is identified in the absence of CaM, indicating restored substrate-binding capability due to mechanically induced removal of the auto-inhibitory regulatory region.\n\n## Introduction\n\nAll cells need to withstand as well as actively generate forces during division, differentiation or for their differentiated function. These mechanically governed adaptive processes require the translation of mechanical signals into physicochemical signals inside the cell that trigger an appropriate biological response (Shivashankar et al., 2015). A number of mechanosensors have evolved for these purposes, including mechanosensitive ion channels. The cytoskeleton, comprising microtubules, intermediate filaments and contractile actin-myosin filaments, plays a key role in maintaining cell shape against internal and external forces, but also emerges as a main hub for mechanosignaling. The regulation of actomyosin contraction differs significantly between the calcium-activated striated muscles and myosin-light chain phosphorylation in smooth and non-muscle cells. Four myosin light chain kinases (MLCK) exist, transcribed from the MYLK1 to 4 genes (reviewed in Chang et al., 2016).\n\nSmooth muscle myosin light chain kinase (smMLCK) is a ubiquitously expressed serine/threonine kinase that particularly contributes to the regulation of smooth muscle contraction (Gallagher et al., 1997; Hong et al., 2011). SmMLCK phosphorylates the regulatory light chain (RLC) of smooth muscle myosin, which in turn triggers ATPase activity of the myosin heads. This activation results in the myosin power stroke \u2013 the fundamental process of muscle contraction (Dillon et al., 1981). Different MLCK homologues exist for skeletal and cardiac muscle tissue, but only in smooth muscle cells the contraction\u00a0is directly linked to the activity of smMLCK (Zhang et al., 2010). Other regulatory proteins such as troponin are not present in smooth muscle cells. In contrast to skeletal or cardiac MLCK, smMLCK is not restricted to muscle tissue but is expressed in almost all mammalian cells. Further studies have revealed the importance of smMLCK in additional cellular pathways besides muscle contraction such as platelet aggregation, exocytosis, and cell migration (Hashimoto et al., 1994; Kumakura et al., 1994; Chen et al., 2014).\n\nThe most important regulator of smMLCK activity is Ca2+-loaded calmodulin (Ca2+/CaM). Without external activation, smMLCK\u2019s catalytic turnover is suppressed by a pseudosubstrate mechanism, i.e. its catalytic core is auto-inhibited by a regulatory element that mimics the RLC substrate sequence (Pearson et al., 1988). Binding of Ca2+/CaM, however, initiates a conformational change in this regulatory region and thus removes auto-inhibition. Release of the regulatory sequence facilitates RLC binding and catalytic activity of smMLCK (Bagchi et al., 1992).\n\nSeveral isoforms are encoded by the smMLCK gene (MYLK1) by alternative initiation sites and differential splicing (Lazar and Garcia, 1999), containing an N-terminal extension in addition to the core catalytic kinase domain. The core sequence is highly conserved in its domains and in their respective order. It comprises immunoglobulin-like domains, a fibronectin-like domain, a proline-rich presumably elastic region as well as the catalytic kinase domain. By homology with other members of the MLCK family (Chang et al., 2016), the kinase domain is composed of a smaller N-terminal lobe that contains the ATP binding site and a larger C-terminal lobe that is responsible for substrate recognition (Gallagher et al., 1997). The latter is auto-inhibited with respect to RLC binding by the regulatory element with adjacent CaM binding region. The active site is located at the interface between the two lobes. So far, the molecular structure of smMLCK and how it conveys this regulation have not been fully elucidated. However, a high degree of structural similarity to titin kinase (TK) and twitchin kinase \u2013 two prominent serine/threonine kinases from the giant muscle protein titin and the titin-like protein twitchin found in invertebrate muscles \u2013 as well as to the recently solved MYLK4 can be assumed (Gautel, 2011; Chang et al., 2016). The terminal domains of smMLCK are also highly conserved and form binding regions to F-actin (N-terminal) and myosin (C-terminal) (Sellers and Pato, 1984; Hong et al., 2009; Gautel, 2011); longer isoforms (MLCK-210) also seem to interact with other cytoskeletal components through their N-terminal domains (Kudryashov et al., 2004). Specific binding to myosin presumably increases the affinity between the kinase domain and RLC due to local proximity (Silver et al., 1997). The actin-binding domain allows smMLCK to associate along actin filaments and thus enhances its phosphorylation rate in smooth muscle (Hong et al., 2015). The fact that these binding sites are located at the termini of the molecule suggests that smMLCK might connect simultaneously with both myosin and actin, and is theoretically capable of bridging thick and thin filaments in smooth muscle due to extensible linker regions in the proline rich repeat segment (Mabuchi et al., 2010). This cytoskeletal association of smMLCK could hence significantly contribute to stiffness and passive tension of smooth muscle, or to responses in external stress. An intriguing interplay exists between smMLCK and mechanical forces in some tissues; for example, repeated contractile activation leads to increased contractility in airway smooth muscle (Fairbank et al., 2008). Such mechanosensitive conformational modulation might be comparable to the role of TK in striated muscle cells. Titin bridges the thick and thin filament systems in the sarcomere in an analogous manner to smMLCK. It may thus act as a muscle mechanosensor, signaling exposure\u00a0to mechanical tension in the contracting and mechanically stressed sarcomere. TK is also intrasterically regulated by a pseudosubstrate mechanism, but its auto-inhibition is understood to be released upon mechanical stress rather than allosterically by an effector molecule. Single-molecule studies as well as molecular dynamics simulations established that partial unfolding of TK upon external force results in a controlled release of the regulatory segment (Puchner et al., 2008; Gr\u00e4ter et al., 2005). This process forms an enzymatically active intermediate capable of ATP binding and subsequent substrate turnover. Ca2+/CaM affinity has also been detected for TK, but its binding shows only a stimulating effect rather than a full activation of its turnover (Mayans et al., 1998). Due to these striking similarities between smMLCK and TK both in structure and in their actin-myosin association in the muscle, the existence of a comparable Ca2+/CaM-independent regulation mechanism for smMLCK is plausible (Chang et al., 2016).\n\nWhile the established Ca2+/CaM activation mechanism is the most prominent and best-understood for the activation of smMLCK, other activation/regulatory factors are likely to exist, some of which are already identified (Stull et al., 1993; Pfitzer, 2001). In this study, the mechanical response of smMLCK was probed via single-molecule force spectroscopy with an atomic force microscope (AFM) to understand how this cytoskeletal kinase is conformationally modulated by external forces. We investigated the effects of the presence of different ligands such as ATP, Ca2+/CaM or RLC peptide substrate or a combination of these on smMLCK\u2019s pathway through its different conformational states until fully unfolded. Ligand interactions and the resulting changes to the smMLCK energy potential give further insights into its intrasterical regulatory mechanism and whether substrate binding can be enabled by the application of mechanical force.\n\n## Results\n\n### Force response of smMLCK during AFM-based force spectroscopy\n\nThe investigated molecular construct is a truncated version of the smooth muscle isoform encoded in the smMLCK gene (Lazar and Garcia, 1999) lacking the proline rich region and the N-terminal actin-binding domain. The remaining sequence comprises the kinase domain, its neighboring fibronectin-like domain (Fn3) and two N-terminal Ig-like domains (Ig1, Ig2) as well as the C-terminal Ig-like myosin-binding domain called telokin (IgT) (Figure 1A). For force spectroscopy experiments, the smMLCK is specifically tethered by an N-terminal Strep-tag II via an AFM cantilever tip that is functionalized with a monovalent variant of Strep-Tactin (Baumann et al., 2016). Force is applied in physiological pulling geometry with the PEG spacers minimizing unspecific protein-surface interactions.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/26473/elife-26473-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic illustration of the investigated smMLCK construct. It consists of the kinase domain surrounded by several Ig-like domains (Ig) and a fibronectin-like domain (Fn3). Possible substrate interactions are indicated (ATP, Ca2+/CaM and RLC). RLC interaction is prevented by the auto-inhibitory pseudosubstrate sequence that is released upon Ca2+/CaM binding. For covalent attachment onto the surface, the construct harbors a C-terminal ybbR-tag. (B) Representative force-distance curves (red, blue) depicting the characteristic transitions of the kinase through different conformational states (S$_{1}$, S$_{2}$, S$_{3}$) and subsequent unfolding of the adjacent Fn3 and Ig-like domains. Whereas most force-distance curves rupture before or after Fn3 unfolding (as shown in red) due to comparable rupture forces of Fn3 and the employed handle system, the blue curve illustrates a descriptive example with additional unfolding of Fn3 and Ig-like domains depicting the further force-distance pattern given by the construct. Structural interpretation and assignment of the detected force-distance pattern is schematically depicted above the curve. (C) Contour length transformation of 99 unfolding events with respective contour length increments. L$_{1\u21922}$ and L$_{2\u21923}$ are released at the transition of the kinase domain from conformational state S$_{1}$ to S$_{2}$ and S$_{2}$ to S$_{3}$ respectively. The contour lengths of Fn3 and Ig-like domains are additionally depicted.\n\nWhen the molecular construct is stretched with a constant speed, the investigated protein passes through a characteristic sequence of conformational states. These protein states represent semistable folding intermediates on the guided way through the protein's energy potential starting from a fully folded native structure. The conformations might also correspond to partially unfolded structures which are stable enough to form functional states. The transitions between these states are marked by distinct drops in the force-distance curves. In all cases reported here these transitions are accompanied by a lengthening of the molecular construct, which is manifested in a characteristic release of hidden contour length. The recorded force-distance response of smMLCK reveals a strict hierarchy in mechanical stability of the individual domains (Figure 1B). At low forces, the kinase domain unfolds by passing an intermediate conformational state S$_{2}$ indicated by two force peaks at the end of state S$_{1}$ at $\u223c$30 nm and of S$_{2}$ at $\u223c$60 nm. Both transitions appear at forces of approximately 30 pN, measured at a retraction speed of 800 nm/s. At state S$_{3}$ the kinase domain is fully unfolded. This characteristic sequence is followed by Fn3 unfolding, which is assigned to a single rupture event at around 100 pN in accordance with the respective contour length and previous data on domain strength (Rief et al., 1998;\u00a0Li et al., 2005).\u00a0Finally, the three Ig-like domains in the construct denature at forces of around 200\u2013250 pN (Rief et al., 1998). Significant elongation of the surrounding linker length due to preceding kinase unfolding does not alter rupture forces of these latter domains in our study and is therefore unlikely to influence the hierarchy of rupture forces in the probed structure or its characteristic sequence of unfolding. Since the employed tethering complex (Strep-tag II:Strep-Tactin) substantially overlaps in its rupture force regime with the unfolding force of Fn3, most force distance traces end either before or after the Fn3 domain because the tethering complex ruptured before the Ig-like domains could unfold. A transformation of 99 force-distance curves into a contour length histogram (Figure 1C, Figure 1\u2014source data 1) indicates that the rarely unfolded Ig-like domains and Fn3 contribute a contour length of 30 nm each. These increments are consistent with results obtained in other force spectroscopy measurements (Rief et al., 1998). The kinase domain is assigned with respect to its contour length to a rather clear peak at 61.7$\\pm$9.6 nm (L$_{23}$ released at transition S$_{2}$\u2192S$_{3}$) and a less distinct broad ridge in the range of 25\u201340 nm (L$_{12}$ released at transition S$_{1}$\u2192S$_{2}$). The relatively wide contour length distribution of the broad ridge may be caused by the low force of this event and the consequently poor transformation of this segment: further aspects which might contribute to this poorly defined transformation are discussed in the context of the ATP-binding measurements below. For an estimation of the released contour length at S$_{1}$\u2192S$_{2}$ transition, individual force-distance curves with high rupture forces at this point were fitted with the Worm-Like Chain (WLC) model yielding an approximate length increment of around 30 nm. The measured contour length of approximately 92 nm for the full kinase domain is in good agreement with a simple approximation assuming 0.365 nm per amino acid (255 aa $\\times$0.365 nm = 93.1 nm) (Dietz and Rief, 2004). It indicates a fully unfolded kinase domain at S$_{3}$. The two-step unfolding behavior is consistent with the bi-lobed structure of the kinase\u2019s catalytic core and suggests assignment of S$_{1}$\u2192S$_{2}$ transition to the unfolding of the smaller kinase lobe and of S$_{2}$\u2192S$_{3}$ to the larger lobe.\n\n### Conformational changes of smMLCK upon ATP binding\n\nIn contrast to TK, smMLCK\u2019s capability of binding ATP is not inhibited through its pseudosubstrate mechanism. Independent from Ca2+/CaM activation, ATP interacts with a Kd of around 10 \u00b5M (Kennelly et al., 1992). In this study, ATP binding to smMLCK and the corresponding effects on its structure were identified by changes in the characteristic transition pattern through the kinase\u2019s different conformational states during AFM-based force spectroscopy. ATP was added in buffer solution with a final concentration of 3 mM. A heatmap in force-distance space of 560 aligned and overlaid unfolding curves emphasizes ATP-induced changes: the smaller kinase domain lobe (S1\u2192S2 transition) is significantly stabilized upon ATP binding (Figure 2A). Since the order of released contour lengths L12 and L23 \u2013 associated with the transitions S1\u2192S2 and S2\u2192S3 \u2013 is not altered by this enhanced stability, the S2\u2192S3 transition seems to remain structurally shielded from S1\u2192S2. The increased force signal of S1\u2192S2 allows precise extraction of the small lobe increment L12 in contour-length space. The determined 30.8\u00b19.8 nm add to a total length of 92.6\u00b17.5 nm for the full kinase domain with L23 being unchanged with a contour length of 61.8\u00b18.9 nm (Figure 2B). Other contour length increments in the overall construct including Fn3 and Ig-like domains were unaffected by the interaction of kinase domain and ATP. Unfolding traces in absence and presence of ATP were realized within one experiment that\u00a0is, same cantilever and sample surface. The measured forces are therefore directly comparable without uncertainties in the force signal that could originate from deviations in AFM spring constant calibration. The histograms for the unfolding force of the S1\u2192S2 transition with and without ATP indicate an increase of the most probable rupture force of about 30 pN (Figure 2C). Due to saturated binding conditions using 3 mM ATP, the obtained force histogram most likely represents exclusively the ATP-bound conformation and not a mixed population of ATP-bound and ATP-free states of the tethered smMLCK molecules. The peak forces for S2\u2192S3 and Fn3 were found to be unaffected by addition of ATP (Figure 2\u2014figure supplement 1). The fact that Fn3 remains unchanged in its unfolding properties independent of ligand addition allows for relative comparison of measurements from different cantilevers. In the following, forces from different experiments are normalized according to the most probable peak force of Fn3 unfolding. Binding of ADP as well as the non-hydrolysable ATP analogue adenylyl-imidodiphosphate (AMP-PNP) could analogously be detected for smMLCK by a stabilization of the S1\u2192S2 transition in the tethered construct (Figure 2\u2014figure supplement 2). Stabilization, however, appears to be weaker in comparison to the interaction with ATP.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/26473/elife-26473-fig2-v1.jpg)\n\n**Figure 2.:** (A) Stabilization of the S$_{1}$\u2192S$_{2}$ transition upon ligand binding. For better illustration, a heatmap of 560 aligned curves is depicted. (B) Contour-length transformation of the respective events in the presence of ATP. L$_{ij}$ is associated to the contour length released at the transition from state S$_{i}$ to S$_{j}$. (C) Statistical evaluation of S$_{1}$\u2192S$_{2}$ stabilization via force histograms fitted with the Bell-Evans model. An increase in the most probable transition force of about 30 pN is observed upon ATP addition. Both data sets were recorded within one experiment with the same cantilever.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26473/elife-26473-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Effects of ATP or Ca2+/CaM addition on the peak forces for the respective transitions S$_{1}$\u2192S$_{2}$ and S$_{2}$\u2192S$_{3}$ and for the Fn3 unfolding force.All data was collected within one experiment and absolute force values can directly be compared. Whereas S$_{1}$\u2192S$_{2}$ is stabilized by ATP as described in the main part of the manuscript, S$_{2}$\u2192S$_{3}$ and Fn3 appear not to be significantly changed by substrate interaction. The force histograms of the Fn3 domain are used in other experiments for normalizing forces to the same value.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26473/elife-26473-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Stabilization of the S$_{1}$\u2192S$_{2}$ transition upon ADP or AMP-PNP binding.\n\n### Energy barrier attenuation upon Ca2+/CaM interaction\n\nImportantly, an additional peculiarity of the kinase unfolding becomes evident from the ATP-stabilized case: an unusual stretching behavior of the S1 state at AFM distances of about 30\u201340 nm (Figure 2A). The force response in this region clearly deviates from a typical WLC behavior exhibiting an unusual kink. Apparently, a small but distinct energy barrier - a mechanical barrier stabilizing a specific protein conformation - has to be overcome at low forces (\u223c15 pN) before the kinase domain acquires conformational state S1. The energy barrier is attributed to an additional transition S0\u2192S1 preceding the formerly described transitions S1\u2192S2 and S2\u2192S3 (Figure 3A). S0\u2192S1 represents a small, uncoupled conformational change with a barely resolvable contour length release. This additional energy barrier might also explain the ambiguous contour length transformations for the S1\u2192S2 transition in the measurements in the absence of ATP (Figure 1C). Due to the small forces of transitions S0\u2192S1 and S1\u2192S2 they are hard to distinguish in the unfolding pattern and their transformations result in a broadened overlap of their respective distributions.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/26473/elife-26473-fig3-v1.jpg)\n\n**Figure 3.:** (A) Attenuated S$_{0}$\u2192S$_{1}$ transition in the characteristic force-distance pattern of the smMLCK construct due to conformational changes upon Ca2+/CaM binding. This effect is emphasized by a heatmap comparison of several hundred overlaid force-distance curves. Both data sets were collected within one measurement. (B) Structural model interpretation. The S$_{0}$\u2192S$_{1}$ transition is assigned to a force-induced rearrangement in the kinase domain that correlates with the conformational changes induced by Ca2+/CaM binding \u2013 the release of the inhibitory pseudosubstrate.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26473/elife-26473-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The atypical stretching behavior indicating a transition from state S$_{0}$ to S$_{1}$ is still observable in the presence of Ca2+: only in combination with CaM is the barrier not detected in the unfolding pattern.\n\nThe existence of this energy barrier becomes particularly relevant as the presence of Ca2+/CaM affects this initial feature. Namely, addition of Ca2+/CaM to the measurement buffer leads to an absence of this barrier otherwise observed in the kinase force response (Figure 3A). Ca2+/CaM is understood to be a trigger for structural rearrangements in the kinase domain that enable RLC binding. The detected energy barrier could represent this rearrangement mechanism. We thus propose the following hypothesis: the release of the pseudosubstrate is already realized upon initial Ca2+/CaM binding to smMLCK and is therefore not observed. If not activated by Ca2+/CaM, however, this regulatory modulation of the smMLCK structure appears as distinct part of the transition pathway indicated by the S$_{0}$\u2192S$_{1}$ transition (Figure 3B). Addition of Ca2+ without CaM has no effect on the observed feature (Figure 3\u2014figure supplement 1). Since the energy barrier precedes the complete process of guiding smMLCK through different conformations, the regulatory fragment appears to be released before the intact kinase domain gets denatured at all and therefore becomes inactive. This mechanism could therefore imply the existence of intermediate smMLCK conformations (S$_{1}$, S$_{2}$) with an intact active site and RLC binding capability independent of Ca2+/CaM induced by mechanical forces comparable to the regulation of TK.\n\n### RLC peptide interaction\n\nBased on these considerations, we designed experiments to test if conformational changes in the unfolding pattern can also be detected in the presence of RLC substrate. A minimal MLCK substrate peptide was used as RLC substitute that interacts only with the catalytic core of the kinase domain (Knighton et al., 1991). It consists of a truncated and slightly modified smooth muscle myosin light chain (MLC 11\u201323, P14A, Q15A) from chicken gizzard with the amino acid sequence KKRAARATSDVFA. It is effectively phosphorylated by smMLCK with a turnover rate of K$_{M}$\u00a0=\u00a07.5 \u00b5M (for chicken gizzard smMLCK) (Kemp and Pearson, 1985). Assuming an effectively blocked RLC binding site without activation by Ca2+/CaM, RLC addition should in principle not influence the structure of the smMLCK kinase domain due to the lack of interaction \u2013 unless there is binding by an active intermediate during the process of unfolding.\n\nThe characteristic patterns of transitions through different smMLCK states in the presence of RLC peptide are plotted via heatmaps of smMLCK force-distance curves in presence (n\u00a0=\u00a01013) and absence (n\u00a0=\u00a0864) of ATP in the buffer solution in Figure 4A. The heatmaps clearly reveal a significant stabilization of the S2 state independent of ATP. This structural change clearly indicates interaction with the substrate and is thus interpreted as RLC binding. Quantitative evaluation of S2\u2192S3 transition force histograms was performed via kernel-density functions, since the recorded forces show deviations from a single-bond Bell-Evans distribution (Figure 4B). This might partly be based on the overlap of different populations e.g. RLC-bound and RLC-free kinase domain, but deviations from the typical Bell-Evans model are also observed for S2\u2192S3 in measurements without RLC substrate. Other factors such as interactions between the catalytic domain and adjacent Fn3-like domain or the pseudosubstrate sequence could be examples that already promote different transition pathways and thus yield this atypical behavior. Independent of shape, however, the recorded histograms reveal a clear shift in most probable rupture force in S2\u2192S3 transition by about 30 pN.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/26473/elife-26473-fig4-v1.jpg)\n\n**Figure 4.:** (A) Qualitative observation of an increased mechanical stability in the large kinase lobe illustrated by the higher forces in the S$_{2}$\u2192S$_{3}$ transition. The effect is emphasized by heatmaps of aligned force-distance curves obtained under different substrate conditions. The stabilizing effect is detected independently of the presence of ATP. (B) Quantitative evaluation of the increased S$_{2}$\u2192S$_{3}$ transition force. The force histograms were approximated with a kernel-density function for extracting the most probable rupture force. It reveals a significant shift of about 30 pN due to the stable interaction of the RLC peptide with the catalytic core. Since this binding is stated to be prevented by an auto-inhibition process according to the conventional view of smMLCK activation, the experimental observation hints at an additional path of kinase regulation modulated by force.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26473/elife-26473-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Western blot probing RLC phospho-serine 19 following smMLCK in vitro kinase assay time-course shows only phosphorylation in presence of Ca2+/CaM.\n\n## Discussion\n\nBinding of RLC peptide is directly observed in our measurements in the absence of Ca2+/CaM as it clearly alters the characteristic transition pattern of single smMLCK molecules by stabilizing the S2\u2192S3 transition. This observation is in conflict with the blocking of the RLC binding site without Ca2+/CaM activation as proposed by the established pseudosubstrate inhibition mechanism (Bagchi et al., 1992). The experimental results could therefore represent a first indicator for a force-driven activation of the catalytic pathway of smMLCK (Figure 5). In the living organism, we assume that smMLCK bridges actin and myosin filaments in smooth muscle tissue and thus allows for a stretched conformation that additionally promotes kinase activity. By relative movements in the cytoskeleton, sufficient mechanical stress may be created within the protein regulating its catalytic activity besides Ca2+/CaM binding, as proposed in this study. Even for mechanical forces below 15 pN - the force that is identified to be necessary for activation in our experiments - steady physiological stress could likely remove autoinhibition if (semi-)permanently applied as the kinase is spanned between two filaments instead of being probed in a constant speed single-molecule force spectroscopy experiment. Despite a Kd in the \u00b5M range between smMLCK and myosin or actin (Hong et al., 2015), long-term association to the cytoskeleton is assumed for smMLCK especially due to several additional binding domains to both filaments in its long isoform (Kudryashov et al., 2004). Necessary forces and lifetimes of the spanned conformation could therefore in principle be reached in a physiological context to allow for the proposed force-driven activation. The in vivo existence and relevance of this regulation pathway, however, has to be examined in further studies. Our conclusions are drawn from single-molecule force spectroscopy measurements where we specifically tethered smMLCK and forced it through several conformations. The presented AFM-based approach represents a sensitive means of detecting ligand binding on the single-molecule level but can provide only limited temporal information about the interaction. From the barrier pattern, it is not directly discernible if the substrate binds in the course of the pulling (as assumed for the RLC) or if it is bound right from the beginning of measurements (as for ATP binding). In order to exclude pre-binding of the substrate, basal binding activity of RLC in absence of Ca2+/CaM activation was tested for the used construct via isothermal titration calorimetry. Due to the presumably very low binding affinities, interaction kinetics could not be detected at moderate concentrations to distinguish between basal and mechanically induced binding. The investigated construct does not show Ca2+/CaM-independent enzymatic activity, suggesting that RLC does not bind to smMLCK in the absence of Ca2+/CaM under zero tension (Figure 4\u2014figure supplement 1). While beyond the scope of this study, hybrid approaches will be required to obtain a complete and conclusive picture of the binding mechanism and its physiological relevance, ideally complemented by structural information of the auto-inhibited state. In particular, combined force and fluorescence spectroscopy and molecular dynamics simulations will aid in this. Ultimately, we need to develop an assay that directly visualizes substrate turnover upon force-activation of these enzymes, as in-situ unbinding forces from actin and myosin filaments (which are yet unknown) will interplay with the mechanically induced intramolecular conformational changes. Direct measurements of force-induced substrate binding and activity, that\u00a0is, RLC phosphorylation, will then lead to full comprehension of this alternative activation path for smMLCK. To this end, the powerful combination of single-molecule force spectroscopy and fluorescence spectroscopy in nanoapertures can provide the basis for in vitro force-activation assays (Heucke et al., 2013), to complement the presented findings that RLC substrate binds smMLCK under force in the absence of Ca2+/CaM.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/26473/elife-26473-fig5-v1.jpg)\n\n**Figure 5.:** Structural interpretation of the stabilized S$_{2}$ state upon RLC interaction.Mechnical stress forces the construct into a conformational state S$_{1}$ equivalent to the state reached by Ca2+/CaM binding. By release of the pseudosubstrate sequence the conformational state is capable of RLC binding which is detected by a significant stabilization of the S$_{2}$ state. Both initially different activation pathways eventually result in the same sequence of conformational states, with the only difference being the presence or absence of bound Ca2+/CaM, depicted in light grey in the S$_{2}$ state.\n\n## Materials and methods\n\n### Expressed construct\n\nThe smMLCK construct used for this study is an 858 amino acid protein (808 aa, from 1097 to 1904 in human smooth muscle isoform 1 myosin light chain kinase, accession number NP_444253.3) incorporating Strep-Tag II (WSHPQFEK) at the N-terminus and a ybbR-tag (DSLEFIASKLA) and hexa-histidine tag at the C-terminus. The cDNA encoding smMLCK was cloned into the\u00a0EcoRI and XhoI sites of a modified pENTR11 (Invitrogen) baculovirus shuttle plasmid region surrounded by attL1 and attL2 recombination sites (5\u2019- attL1 - TCG AAG GAG ATA GAA CCA ATT CTC TAA GGA AAT ACT TAA CCA TGG CTA GCT GGA GCC ACC CGC AGT TCG AAA AAG GCG CCG AGA CCG CGG TCC CGA ATT CG - smMLCK - CCC TCG AGC GGT TCC GGT GGT GAC TCC CTG GAG TTC ATC GCT TCC AAG CTG GCT TCA GGC CTG AGA GGA TCG CAT CAC CAT CAC CAT CAC TAA GAT CCG TCG AGA TAT CTA G - attL2 - 3\u2019). After generation of recombinant virus using a BaculoDirectBaculovirus Expression System (Invitrogen), production of smMLCK was carried out in suspension cultures of Spodoptera frugiperda Sf9 (Sf9 cells in Sf-900II SFM, Invitrogen). Cells were routinely maintained at 28\u00b0C, 100 rpm in the concentration range from 1\u00a0$\\times$\u00a0106 cells/ml to 8\u00a0$\\times$\u00a0106 cells/ml. 1 l culture of Sf9 cells at a concentration of 2.5\u00a0$\\times$\u00a0106 cells/ml was infected with smMLCK recombinant baculovirus of third generation (P3) and left growing for 3 days. Infected cells were then pelleted at 1000\u00a0$\\times$ g for 10 min. They then were resuspended in an ice-cold buffer containing 20 mM Tris (pH 8.0), 100 mM NaCl, 40 mM Imidazole, 14 mM 2-mercaptoethanol (buffer A) supplemented with cOmpleteEDTA-free Protease Inhibitor Cocktail (Roche) as per manufacturer\u2019s recommendations. Cells were lysed by passing the mixture three times through a 0.8 $\\times$\u00a040 mm syringe needle and treated with DNase I at a final concentration of 25 \u00b5g/ml for 10 min at 4\u00b0C. After centrifugation at 4000\u00a0$\\times$ g, supernatant was loaded onto a 2 ml His-Trap crude column (GE Healthcare Life Sciences) pre-equilibrated with buffer A. The column was then washed with 20 column volumes of buffer A and smMLCK protein was eluted with a step of buffer A containing 250 mM Imidazole. Peak fraction was purified further on HiLoad 26/600 Superdex 200 (GE Healthcare Life Sciences) equilibrated with 20 mM Tris (pH 8.0), 100 mM NaCl, 1 mM DTT. Peak fractions were pooled together and analysed on SDS PAGE for purity.\n\n### Enzymatic activity assay\n\nTo assess CaM-dependent and independent enzymatic activity of smMLCK, the construct used in AFM experiments was incubated with human RLC (NP_291024.1) in the presence and absence of Ca2+/CaM and the phosphorylation of RLC serine 19 was probed.\n\n10 nM smMLCK was mixed with 10 \u00b5M RLC, 500 \u00b5M ATP in 20 mM HEPES (pH 7.5), 50 mM NaCl, 10 mM MgCl$_{2}$, 1 mM DTT, 500 \u00b5M ATP in the presence of either 40 nM CaM/1 mM CaCl$_{2}$ or 1 mM EGTA and incubated at 20\u00b0C. Samples were taken at various intervals with the reaction quenched by addition of SDS-PAGE loading buffer.\n\nSamples containing 300 ng RLC were run on SDS-PAGE alongside BioRad Precision Plus protein marker, transferred onto nitrocellulose membrane, incubated in 5% milk at room temperature for 45 min and probed with Cell Signaling Technology antibody 3671 against phospo-myosin light chain 2 (Ser19) in 5% milk for 2 hr at room temperature. The membrane was washed with low-salt buffer (10 mM Tris (pH 7.4), 150 mM NaCl, 0.1% Tween-20) three times and then incubated with horseradish peroxidase conjugated anti-mouse IgG (Dako P0260) in 5% milk for 45 min. After washing three times in low-salt buffer the membrane was stained using the enhanced chemiluminescence method.\n\n### Sample preparation\n\nGlass coverslip and AFM cantilever were identically passivated for unspecific interactions using heterobifunctional succinimide-PEG-maleimide spacers (Rapp Polymere, T\u00fcbingen, Germany) with a molecular weight of 5000 Da (Celik and Moy, 2012). The succinimide group is attached via (3-aminopropyl)-dimethyl-ethoxysilane (APDMES, Karlsruhe, Germany) to the respective surface. The reactive maleimide group covalently conjugates to accessible thiol groups on applied bio-molecules used for specific immobilization. On the coverslip, this reaction is employed for covalent attachment of coenzyme A. The smMLCK construct harbors a C-terminal ybbR-tag (Wong et al., 2008) that site-selectively reacts to coenzyme A catalysed by the Sfp-synthase system (Yin et al., 2005, 2006). The investigated construct additionally contains an N-terminal Strep-tag II that is pulled via a monovalent variant of Strep-Tactin in the force spectroscopy experiments (Baumann et al., 2016). The monovalent Strep-Tactin is engineered to contain a unique cysteine residue on its single functional subunit, which is utilized for specific immobilization onto maleimide-PEG functionalized cantilevers (Biolever Mini, Olympus, Tokyo, Japan) (Zimmermann et al., 2010). For the AFM experiments, 40 mM HEPES (pH 7.2) with 2 mM MgCl$_{2}$ and 1 mM DTT was used as measurement buffer.\n\n### Force spectroscopy experiments\n\nAFM force spectroscopy data was acquired on a custom-built AFM operated in closed loop mode by a MFP3D controller (Asylum Research, Santa Barbara, CA, USA). Software for the automated control of AFM head and xy-piezos was programmed in IgorPro6 (Wavemetrics, OR, USA). Strep-Tactin coated Biolever Mini cantilevers were briefly brought in contact with the sample surface and then retracted at 800 nm/s. After each recorded force-distance curve, the surface was horizontally moved in steps of 100 nm distance for iteratively probing a new position. The cantilever spring constant was calibrated using the equipartition theorem method (Hutter and Bechhoefer, 1993). Typically, datasets contain 30000 force-distance curves and the addition of the substrate was performed in the course of the experiment. If data was not collected within one experiment, but was directly compared via rupture force histograms, the recorded force values were normalized according to the most probable rupture force of the Fn3 domain. For this normalization, only those force-distance curves in a dataset were regarded that detached after unfolding of the Fn3 domain.\n\n### Data analysis\n\nForce heatmaps were assembled from all curves showing the characteristic unfolding pattern of the stressed smMLCK construct. Respective force spectroscopy data was aligned in force-distance space and transformed to a heatmap based on raw data points with 750 bins per axis. Data evaluation was carried out in Python 2.7. The rupture forces were evaluated from the AFM force-distance curves utilizing a quantum mechanically corrected WLC model (Hugel et al., 2005). The AFM distance was corrected for cantilever bending. 20 nm force baseline after the last rupture event \u2013 typically representing detachment \u2013 was used for determining zero force in the transformation of deflection signal to force values. Force-extension data was transformed into contour length space via an inverse worm-like chain model assuming a persistence length of 0.4 nm and a thermal energy of 4.1 pN nm (Jobst et al., 2013). On the transformed data a Gaussian kernel density estimate is applied with a bandwidth of 1 nm. Data set alignments in contour length space are created by the following process: the full set of transformed force-distance curves is aligned to a random curve from this data set according to least residual in cross correlation. This process results in a first superimposition which is used as a template in a second iteration of this process. Again, all contour-length transformed curves are aligned to a template curve but this time to the one formed by the first iteration. This two-step approach diminishes biasing effects given by the choice of the random curve used for initial alignment. Contour lengths of the individual domains are determined by a Gaussian fit of each determined peak and subtraction of the respective fitted means. The error of an increment is given by the standard deviations of both peaks defining the individual increment. Force-distance curves were denoised with Total Variation Denoising in order to detect rupture events as significant drops in force. For the force histograms, detected peaks in the typical region of respective domain unfolding were assigned to S$_{1}$\u2192S$_{2}$, S$_{2}$\u2192S$_{3}$ or Fn3. All assignments were manually double-checked - especially to reassure small rupture events close to the noise level or to delete erroneously assigned peaks. In some curves no distinct rupture event could be detected for a specific domain due to too small forces (below noise level of about 10\u201315 pN) and was not included to the evaluation. Rupture forces of respective domains in the unfolding pattern were binned to histograms and fitted with the Bell-Evans model yielding the most probable rupture force (Bell, 1978; Evans and Ritchie, 1997). In the case of the S$_{2}$\u2192S$_{3}$ rupture event, kernel-density estimates with a bandwidth of 1 pN were applied to the data and used for extracting the most probable rupture force.\n\n### Amino acid sequence: SII-smMLCK-ybbR-His\n\nMASWSHPQFEKGAETAVPNSAPAFKQKLQDVHVAEGKKLLLQCQVSSDPPATIIWTLNGKTLKTTKFII\n\nLSQEGSLCSVSIEKALPEDRGLYKCVAKNDAGQAECSCQVTVDDAPASENTKAPEMKSRRPKSSLPPVLG\n\nTESDATVKKKPAPKTPPKAAMPPQIIQFPEDQKVRAGESVELFGKVTGTQPITCTWMKFRKQIQESEHMK\n\nVENSENGSKLTILAARQEHCGCYTLLVENKLGSRQAQVNLTVVDKPDPPAGTPCASDIRSSSLTLSWYG\n\nSSYDGGSAVQSYSIEIWDSANKTWKELATCRSTSFNVQDLLPDHEYKFRVRAINVYGTSEPSQESE\n\nLTTVGEKPEEPKDEVEVSDDDEKEPEVDYRTVTINTEQKVSDFYDIEERLGSGKFGQVFRLVEKKTRK\n\nVWAGKFFKAYSAKEKENIRQEISIMNCLHHPKLVQCVDAFEEKANIVMVLEIVSGGELFERIIDEDFELTE\n\nRECIKYMRQISEGVEYIHKQGIVHLDLKPENIMCVNKTGTRIKLIDFGLARRLENAGSLKVLFGTPEFVAPEVI\n\nNYEPIGYATDMWSIGVICYILVSGLSPFMGDNDNETLANVTSATWDFDDEAFDEISDDAKDFISNLLKKD\n\nMKNRLDCTQCLQHPWLMKDTKNMEAKKLSKDRMKKYMARRKWQKTGNAVRAIGRLSSMAMISGLSG\n\nRKSSTGSPTSPLNAEKLESEEDVSQAFLEAVAEEKPHVKPYFSKTIRDLEVVEGSAARFDCKIEGYPDPE\n\nVVWFKDDQSIRESRHFQIDYDEDGNCSLIISDVCGDDDAKYTCKAVNSLGEATCTAELIVETMEEPSSG\n\nSGGDSLEFIASKLASGLRGSHHHHHH\n",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "d8670903-b47e-4bcf-b62c-f908ba71e1a7",
+      "submission_id": "9b3ca39c-72b2-4168-b095-c98b2dee2a26",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Taekjip Ha, Johns Hopkins University School of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.26473.031](https://doi.org/10.7554/eLife.26473.031)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Mechanical Force as a Functional Regulator in Smooth Muscle Myosin Light Chain Kinase\" for consideration by eLife. Your article has been favorably evaluated by Arup Chakraborty (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal his identity: James R Sellers (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe smooth muscle myosin kinase (smMLCK) is a catalytically active serine/threonine kinase which is triggered by a conformational change upon Ca2+/calmodulin (Ca2+/CaM) binding. smMLCK shows a structural homology with the force-activated titin kinase and thus may be expected also to be regulated by mechanical pulling stress. In this paper, the authors studied the mechanical response of smMLCK applying AFM-based single-molecule force spectroscopy (SMFS) to understand how this cytoskeletal kinase is conformationally modulated by external forces. It was particularly investigated whether the presence of different ligands including ATP, Ca2+/CaM or RLC peptide substrate or a combination of these affect the mechanical unfolding intermediates along the unfolding pathway of smMLCK. To reveal statistically solid insights these mechanisms have been investigated via high throughput SMFS. The characteristic pattern of transitions between different smMLCK states and their variations in the presence of different substrates and ligands are presented. The results show a very interesting interaction between kinase domain and regulatory light chain (RLC) substrate in the absence of CaM, which indicates a restored substrate-binding capability due to mechanically induced removal of the auto-inhibitory regulatory region. The data also suggest that the conformational change occurs in the presence of the substrate, suggesting that the substrate cannot bind prior to the said conformational change. In addition, the increase in unfolding force shows that the substrate does bind after the conformational change. The AFM-based single-molecule force spectroscopy experiments are conducted at outstanding quality, the experimental data is carefully analyzed and interpreted. Suitable controls have been performed and support the experimental conclusions very convincingly. The paper is written very well.\n\nEssential revisions:\n\nThe evidence for mechanical regulation of kinase activity is indirect and thus the title may be a bit presumptuous. We realize that this is a very difficult thing to actually prove and the necessary technical advances are brought up in the Discussion. Based on this, we wonder whether the title oversells the manuscript.\n\nSome of the speculation about possible mechanoregulation of the kinase stems from early biochemical studies that showed smooth muscle MLCK could bind myosin filaments via its C-terminus and actin filaments via the N-terminus. However, the Kd for both of these bindings were in the \u03bcm range and the recent results from the Cremo and Baker labs (Hong et al., 2015) show that the kinase diffuses along actin filaments. Based on this how would the authors imagine that the kinase could be subjected to sufficient force to pull out the autoinhibited domain rather than just dissociating from actin filaments or myosin filaments if the two systems were sliding relative to one another? Perhaps catch bonds are involved?\n\nReviewer #1:\n\nIn this work, they present evidence that the inhibitory domain of the kinase undergoes a tension-induced conformational change that is very similar to the change that occurs upon calmodulin binding, which is a known activator. Because the N and C termini are known to bind actin filaments and xxx, respectively, it is proposed that tension may function as an additional regulator mechanism for kinase activation. The data also suggest that the conformational change occurs in the presence of the substrate, suggesting that the substrate cannot bind prior to the said conformational change. In addition, the increase in unfolding force shows that the substrate does bind after the conformational change. Overall, I find the work interesting and of high quality, and there is a good reason to suspect that force can activate the enzyme activity.\n\nReviewer #2:\n\nThe smooth muscle myosin kinase (smMLCK) is a catalytically active serine/therosine kinase which is triggered by a conformational change upon Ca2+/calmodulin (Ca2+/CaM) binding. smMLCK shows a structural homology with the force-activated titin kinase and thus may be expected also to be regulated by mechanical pulling stress. In this paper, the authors studied the mechanical response of smMLCK applying AFM-based single-molecule force spectroscopy (SMFS) to understand how this cytoskeletal kinase is conformationally modulated by external forces. It was particularly investigated whether the presence of different ligands including ATP, Ca2+/CaM or RLC peptide substrate or a combination of these affect the mechanical unfolding intermediates along the unfolding pathway of smMLCK. To reveal statistically solid insights these mechanisms have been investigated via high throughput SMFS. The characteristic pattern of transitions between different smMLCK states and their variations in the presence of different substrates and ligands are presented. The results show a very interesting interaction between kinase domain and regulatory light chain (RLC) substrate in the absence of CaM, which indicates a restored substrate-binding capability due to mechanically induced removal of the auto-inhibitory regulatory region. The AFM-based SMFS experiments are conducted at outstanding quality, the experimental data is carefully analyzed and interpreted. Suitable controls have been performed and support the experimental conclusions very convincingly. The paper is written very well. I strongly recommend publication.\n\nReviewer #3:\n\nThe manuscript by Baumann et al. uses AFM to unfold smooth muscle myosin light chain kinase. From the data they infer that force may be a regulator of kinase function. The data show that various domains of the kinase unfold sequentially in a reproducible manner and the authors are able to assign unfolding events to particular domains. They show that the kinase domain unfolds first followed by the FN3 domain and then the Ig domains unfold last. The evidence for mechanical regulation of kinase activity is very indirect and thus the title may be a bit presumptuous. The main data to suggests this behavior is that the S2 state is stabilized in the presence of an RLC substrate peptide.\n\nThe study is of considerable interest and is well executed.\n\nRegarding my comment about the data not really showing mechanical activation of the enzyme, I realize that this is a very difficult thing to actually prove and the necessary technical advances are brought up in the Discussion. Based on this, I do wonder whether the title oversells the manuscript.\n\nSome of the speculation about possible mechanoregulation of the kinase stems from early biochemical studies that showed smooth muscle MLCK could bind myosin filaments via its C-terminus and actin filaments via the N-terminus. However, the Kd for both of these bindings were in the \u03bcm range and the recent results from the Cremo and Baker labs (Hong et al., 2015) show that the kinase diffuses along actin filaments. Based on this how would the authors imagine that the kinase could be subjected to sufficient force to pull out the autoinhibited domain rather than just dissociating from actin filaments or myosin filaments if the two systems were sliding relative to one another?\n\nAlso in the cartoon in Figure 5, the authors show the while the RLC stabilizes the lower portion of the kinase domain, the upper portion (depicted as the ATP binding site) is already unfolded. This does not seem to be a mechanism for the mechanical regulation of activity.\n\nThe legend to Figure 5 does not describe the significance of the color change of the triangular motif (CaM). Does the light gray color mean that this is apo-calmodulin?\n",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "38101fb7-32c1-4359-ab5e-1f1ea4bb218c",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C1",
+      "claim": "Smooth muscle myosin light chain kinase (smMLCK) is a member of a diverse group of serine/threonine kinases that feature cytoskeletal association.",
+      "claim_type": "EXPLICIT",
+      "source": "Smooth muscle myosin light chain kinase (smMLCK) is a member of a diverse group of serine/threonine kinases that feature cytoskeletal association.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a characterization of smMLCK.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "e1d32e34-7b9e-40a1-b651-836d8915aa25",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C2",
+      "claim": "smMLCK's catalytic activity is triggered by a conformational change upon Ca2+/calmodulin (Ca2+/CaM) binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Its catalytic activity is triggered by a conformational change upon Ca2+/calmodulin (Ca2+/CaM) binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is established knowledge about smMLCK activation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "ddd4284b-8fe1-4f31-aea3-e91d916cb9c3",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C3",
+      "claim": "smMLCK has significant homology with the force-activated titin kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to its significant homology with the force-activated titin kinase, smMLCK is suspected to be also regulatable by mechanical stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as the basis for investigating mechanical regulation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "520ee103-7561-40df-92e8-4ef76814a5b5",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C4",
+      "claim": "smMLCK is suspected to be regulatable by mechanical stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to its significant homology with the force-activated titin kinase, smMLCK is suspected to be also regulatable by mechanical stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the hypothesis being investigated in the study, based on homology with titin kinase.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "c77a89a7-2496-4bdb-b297-4732eb9861f3",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C5",
+      "claim": "Interaction between kinase domain and regulatory light chain (RLC) substrate is identified in the absence of CaM.",
+      "claim_type": "EXPLICIT",
+      "source": "Interaction between kinase domain and regulatory light chain (RLC) substrate is identified in the absence of CaM, indicating restored substrate-binding capability due to mechanically induced removal of the auto-inhibitory regulatory region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding stated in the abstract and supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "3a5c4d7f-7377-4aeb-ba88-cc724e42a5ac",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C6",
+      "claim": "Mechanically induced removal of the auto-inhibitory regulatory region restores substrate-binding capability.",
+      "claim_type": "EXPLICIT",
+      "source": "Interaction between kinase domain and regulatory light chain (RLC) substrate is identified in the absence of CaM, indicating restored substrate-binding capability due to mechanically induced removal of the auto-inhibitory regulatory region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is stated in the abstract and supported by the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "48f229d1-3a36-4ecf-ab5d-541e18fcdaf7",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C7",
+      "claim": "The cytoskeleton comprises microtubules, intermediate filaments and contractile actin-myosin filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "The cytoskeleton, comprising microtubules, intermediate filaments and contractile actin-myosin filaments, plays a key role in maintaining cell shape against internal and external forces, but also emerges as a main hub for mechanosignaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cytoskeletal composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "7eb4ff98-7997-49b0-ba17-a8840935f10d",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C8",
+      "claim": "The cytoskeleton plays a key role in maintaining cell shape against internal and external forces.",
+      "claim_type": "EXPLICIT",
+      "source": "The cytoskeleton, comprising microtubules, intermediate filaments and contractile actin-myosin filaments, plays a key role in maintaining cell shape against internal and external forces, but also emerges as a main hub for mechanosignaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cytoskeletal function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "adafcc45-04cc-4389-b0de-6ad7306c2409",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C9",
+      "claim": "The cytoskeleton emerges as a main hub for mechanosignaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The cytoskeleton, comprising microtubules, intermediate filaments and contractile actin-myosin filaments, plays a key role in maintaining cell shape against internal and external forces, but also emerges as a main hub for mechanosignaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as current understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "f75a8004-9d78-4291-8986-549f12006bf2",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C10",
+      "claim": "The regulation of actomyosin contraction differs significantly between the calcium-activated striated muscles and myosin-light chain phosphorylation in smooth and non-muscle cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The regulation of actomyosin contraction differs significantly between the calcium-activated striated muscles and myosin-light chain phosphorylation in smooth and non-muscle cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about muscle contraction regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "4a9221bf-fc4b-4b09-bff8-0375f5eb0572",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C11",
+      "claim": "Four myosin light chain kinases (MLCK) exist, transcribed from the MYLK1 to 4 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Four myosin light chain kinases (MLCK) exist, transcribed from the MYLK1 to 4 genes (reviewed in Chang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a review article.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "da10e551-3656-40f2-90bc-6246b37a130a",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C12",
+      "claim": "smMLCK is a ubiquitously expressed serine/threonine kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "Smooth muscle myosin light chain kinase (smMLCK) is a ubiquitously expressed serine/threonine kinase that particularly contributes to the regulation of smooth muscle contraction (Gallagher et al., 1997; Hong et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "832b773b-a3fd-40a2-b761-2888b4235389",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C13",
+      "claim": "smMLCK particularly contributes to the regulation of smooth muscle contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Smooth muscle myosin light chain kinase (smMLCK) is a ubiquitously expressed serine/threonine kinase that particularly contributes to the regulation of smooth muscle contraction (Gallagher et al., 1997; Hong et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "c9548e23-75c6-4912-8c93-a9d41115cb45",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C14",
+      "claim": "SmMLCK phosphorylates the regulatory light chain (RLC) of smooth muscle myosin.",
+      "claim_type": "EXPLICIT",
+      "source": "SmMLCK phosphorylates the regulatory light chain (RLC) of smooth muscle myosin, which in turn triggers ATPase activity of the myosin heads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about smMLCK function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "5aa93b7b-fee1-409c-9457-2e932c41dbb6",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C15",
+      "claim": "RLC phosphorylation triggers ATPase activity of the myosin heads.",
+      "claim_type": "EXPLICIT",
+      "source": "SmMLCK phosphorylates the regulatory light chain (RLC) of smooth muscle myosin, which in turn triggers ATPase activity of the myosin heads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the mechanism of muscle contraction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "9f57aaf1-d576-4a2a-8251-31b5f8b6a4df",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C16",
+      "claim": "Myosin ATPase activation results in the myosin power stroke \u2013 the fundamental process of muscle contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "This activation results in the myosin power stroke \u2013 the fundamental process of muscle contraction (Dillon et al., 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "f541e3fe-8074-4443-82c1-dbcbeebd6734",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C17",
+      "claim": "Only in smooth muscle cells the contraction is directly linked to the activity of smMLCK.",
+      "claim_type": "EXPLICIT",
+      "source": "Different MLCK homologues exist for skeletal and cardiac muscle tissue, but only in smooth muscle cells the contraction is directly linked to the activity of smMLCK (Zhang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "1bd27cdb-6c2c-498b-84ca-92d5803a36fb",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C18",
+      "claim": "Regulatory proteins such as troponin are not present in smooth muscle cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Other regulatory proteins such as troponin are not present in smooth muscle cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about smooth muscle composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "628fcdd5-c2cd-44f0-ac7d-a11d4c9a403b",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C19",
+      "claim": "smMLCK is expressed in almost all mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to skeletal or cardiac MLCK, smMLCK is not restricted to muscle tissue but is expressed in almost all mammalian cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "2e51c208-b299-4dc8-807f-edc287641bb7",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C20",
+      "claim": "smMLCK is important in cellular pathways besides muscle contraction such as platelet aggregation, exocytosis, and cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Further studies have revealed the importance of smMLCK in additional cellular pathways besides muscle contraction such as platelet aggregation, exocytosis, and cell migration (Hashimoto et al., 1994; Kumakura et al., 1994; Chen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "64f20cf4-7996-48e8-91b6-a099bddb955f",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C21",
+      "claim": "The most important regulator of smMLCK activity is Ca2+-loaded calmodulin (Ca2+/CaM).",
+      "claim_type": "EXPLICIT",
+      "source": "The most important regulator of smMLCK activity is Ca2+-loaded calmodulin (Ca2+/CaM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "b3202749-39ae-4f49-8a22-eaa948ce29d0",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C22",
+      "claim": "Without external activation, smMLCK's catalytic turnover is suppressed by a pseudosubstrate mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Without external activation, smMLCK's catalytic turnover is suppressed by a pseudosubstrate mechanism, i.e. its catalytic core is auto-inhibited by a regulatory element that mimics the RLC substrate sequence (Pearson et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "49790d5d-e55b-4bf7-9ceb-4cea2891e312",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C23",
+      "claim": "smMLCK's catalytic core is auto-inhibited by a regulatory element that mimics the RLC substrate sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Without external activation, smMLCK's catalytic turnover is suppressed by a pseudosubstrate mechanism, i.e. its catalytic core is auto-inhibited by a regulatory element that mimics the RLC substrate sequence (Pearson et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "0cf311d6-f8e5-42ff-b3a8-56698e2fad68",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C24",
+      "claim": "Binding of Ca2+/CaM initiates a conformational change in the regulatory region and thus removes auto-inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of Ca2+/CaM, however, initiates a conformational change in this regulatory region and thus removes auto-inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the activation mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "af36ee13-31e9-403b-ae6f-dca4fdc5ccd3",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C25",
+      "claim": "Release of the regulatory sequence facilitates RLC binding and catalytic activity of smMLCK.",
+      "claim_type": "EXPLICIT",
+      "source": "Release of the regulatory sequence facilitates RLC binding and catalytic activity of smMLCK (Bagchi et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "e782428c-a8c3-42f4-8359-82cd08d85af6",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C26",
+      "claim": "Several isoforms are encoded by the smMLCK gene (MYLK1) by alternative initiation sites and differential splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Several isoforms are encoded by the smMLCK gene (MYLK1) by alternative initiation sites and differential splicing (Lazar and Garcia, 1999), containing an N-terminal extension in addition to the core catalytic kinase domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "d3a39be6-8138-4b12-aef6-db6ae1b48b4a",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C27",
+      "claim": "The core sequence of smMLCK is highly conserved in its domains and in their respective order.",
+      "claim_type": "EXPLICIT",
+      "source": "The core sequence is highly conserved in its domains and in their respective order.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "0783de21-7bc3-4b7d-a127-d992961e7746",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C28",
+      "claim": "The smMLCK core comprises immunoglobulin-like domains, a fibronectin-like domain, a proline-rich presumably elastic region as well as the catalytic kinase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "It comprises immunoglobulin-like domains, a fibronectin-like domain, a proline-rich presumably elastic region as well as the catalytic kinase domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about smMLCK structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "dd274e9b-0f8b-45b4-bac5-49aa884d7403",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C29",
+      "claim": "The kinase domain is composed of a smaller N-terminal lobe that contains the ATP binding site and a larger C-terminal lobe that is responsible for substrate recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "By homology with other members of the MLCK family (Chang et al., 2016), the kinase domain is composed of a smaller N-terminal lobe that contains the ATP binding site and a larger C-terminal lobe that is responsible for substrate recognition (Gallagher et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "c84a6ad2-1286-46eb-816e-80ac816010e0",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C30",
+      "claim": "The larger C-terminal lobe is auto-inhibited with respect to RLC binding by the regulatory element with adjacent CaM binding region.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter is auto-inhibited with respect to RLC binding by the regulatory element with adjacent CaM binding region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "426aa665-da9b-429f-a776-14a59764c218",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C31",
+      "claim": "The active site is located at the interface between the two lobes.",
+      "claim_type": "EXPLICIT",
+      "source": "The active site is located at the interface between the two lobes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about kinase structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "2a77812e-056f-4096-96c1-619580c56911",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C32",
+      "claim": "The molecular structure of smMLCK and how it conveys this regulation have not been fully elucidated.",
+      "claim_type": "EXPLICIT",
+      "source": "So far, the molecular structure of smMLCK and how it conveys this regulation have not been fully elucidated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "55e02011-7517-4d4c-827c-3d06a3daaaaa",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C33",
+      "claim": "A high degree of structural similarity to titin kinase (TK) and twitchin kinase can be assumed for smMLCK.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a high degree of structural similarity to titin kinase (TK) and twitchin kinase \u2013 two prominent serine/threonine kinases from the giant muscle protein titin and the titin-like protein twitchin found in invertebrate muscles \u2013 as well as to the recently solved MYLK4 can be assumed (Gautel, 2011; Chang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "51ec1a2f-7149-4ee5-b544-62c4a97fb394",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C34",
+      "claim": "The terminal domains of smMLCK are highly conserved and form binding regions to F-actin (N-terminal) and myosin (C-terminal).",
+      "claim_type": "EXPLICIT",
+      "source": "The terminal domains of smMLCK are also highly conserved and form binding regions to F-actin (N-terminal) and myosin (C-terminal) (Sellers and Pato, 1984; Hong et al., 2009; Gautel, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "8a11e785-c2c6-4257-b205-649205cb0b04",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C35",
+      "claim": "Longer isoforms (MLCK-210) seem to interact with other cytoskeletal components through their N-terminal domains.",
+      "claim_type": "EXPLICIT",
+      "source": "longer isoforms (MLCK-210) also seem to interact with other cytoskeletal components through their N-terminal domains (Kudryashov et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "ccdd4ad4-9252-428e-9182-369adefda657",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C36",
+      "claim": "Specific binding to myosin presumably increases the affinity between the kinase domain and RLC due to local proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "Specific binding to myosin presumably increases the affinity between the kinase domain and RLC due to local proximity (Silver et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "f37d2208-8b31-4230-b4b2-3bdaa39a324a",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C37",
+      "claim": "The actin-binding domain allows smMLCK to associate along actin filaments and thus enhances its phosphorylation rate in smooth muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "The actin-binding domain allows smMLCK to associate along actin filaments and thus enhances its phosphorylation rate in smooth muscle (Hong et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "ecca66b7-2c94-45b1-8a9c-109d6909d8fd",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C38",
+      "claim": "The binding sites at the termini of smMLCK suggest that it might connect simultaneously with both myosin and actin.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that these binding sites are located at the termini of the molecule suggests that smMLCK might connect simultaneously with both myosin and actin, and is theoretically capable of bridging thick and thin filaments in smooth muscle due to extensible linker regions in the proline rich repeat segment (Mabuchi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "6074adf2-146b-4eb4-b83d-39bc14f2d05c",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C39",
+      "claim": "smMLCK is theoretically capable of bridging thick and thin filaments in smooth muscle due to extensible linker regions in the proline rich repeat segment.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that these binding sites are located at the termini of the molecule suggests that smMLCK might connect simultaneously with both myosin and actin, and is theoretically capable of bridging thick and thin filaments in smooth muscle due to extensible linker regions in the proline rich repeat segment (Mabuchi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "7f231724-2cf6-4d52-81f2-2454430ca982",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C40",
+      "claim": "Cytoskeletal association of smMLCK could significantly contribute to stiffness and passive tension of smooth muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "This cytoskeletal association of smMLCK could hence significantly contribute to stiffness and passive tension of smooth muscle, or to responses in external stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation based on the structural properties.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "d92b30db-004f-492f-a03c-dd0801486614",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C41",
+      "claim": "Repeated contractile activation leads to increased contractility in airway smooth muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "An intriguing interplay exists between smMLCK and mechanical forces in some tissues; for example, repeated contractile activation leads to increased contractility in airway smooth muscle (Fairbank et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "ffdac610-484c-4825-bad1-7b9e49804ce9",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C42",
+      "claim": "Titin bridges the thick and thin filament systems in the sarcomere in an analogous manner to smMLCK.",
+      "claim_type": "EXPLICIT",
+      "source": "Titin bridges the thick and thin filament systems in the sarcomere in an analogous manner to smMLCK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "73d6193e-3965-4a61-acbd-2cec89cca35a",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C43",
+      "claim": "Titin may act as a muscle mechanosensor, signaling exposure to mechanical tension in the contracting and mechanically stressed sarcomere.",
+      "claim_type": "EXPLICIT",
+      "source": "It may thus act as a muscle mechanosensor, signaling exposure to mechanical tension in the contracting and mechanically stressed sarcomere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as current understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "e1fbdb0a-f446-4c97-9493-f718c9b4b18d",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C44",
+      "claim": "TK is intrasterically regulated by a pseudosubstrate mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "TK is also intrasterically regulated by a pseudosubstrate mechanism, but its auto-inhibition is understood to be released upon mechanical stress rather than allosterically by an effector molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "b7737d92-6831-44db-97a8-d02807ff5445",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C45",
+      "claim": "TK auto-inhibition is understood to be released upon mechanical stress rather than allosterically by an effector molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "TK is also intrasterically regulated by a pseudosubstrate mechanism, but its auto-inhibition is understood to be released upon mechanical stress rather than allosterically by an effector molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "f1e2fe10-845b-49b9-bddb-373772c9d8cc",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C46",
+      "claim": "Partial unfolding of TK upon external force results in a controlled release of the regulatory segment.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-molecule studies as well as molecular dynamics simulations established that partial unfolding of TK upon external force results in a controlled release of the regulatory segment (Puchner et al., 2008; Gr\u00e4ter et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "6ed1dae8-aecd-4538-aab8-13224a2e0731",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C47",
+      "claim": "Partial unfolding of TK forms an enzymatically active intermediate capable of ATP binding and subsequent substrate turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "This process forms an enzymatically active intermediate capable of ATP binding and subsequent substrate turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about TK mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "01581da9-7b17-4958-9b98-d93852238ada",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C48",
+      "claim": "Ca2+/CaM affinity has been detected for TK, but its binding shows only a stimulating effect rather than a full activation of its turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Ca2+/CaM affinity has also been detected for TK, but its binding shows only a stimulating effect rather than a full activation of its turnover (Mayans et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "ba1837fa-cb43-4a23-ac98-5965f3c3a204",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C49",
+      "claim": "The existence of a comparable Ca2+/CaM-independent regulation mechanism for smMLCK is plausible due to striking similarities between smMLCK and TK.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to these striking similarities between smMLCK and TK both in structure and in their actin-myosin association in the muscle, the existence of a comparable Ca2+/CaM-independent regulation mechanism for smMLCK is plausible (Chang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the hypothesis with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "2a0f41be-b195-47d4-afd6-32f5116644ef",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C50",
+      "claim": "The investigated molecular construct is a truncated version of the smooth muscle isoform encoded in the smMLCK gene lacking the proline rich region and the N-terminal actin-binding domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The investigated molecular construct is a truncated version of the smooth muscle isoform encoded in the smMLCK gene (Lazar and Garcia, 1999) lacking the proline rich region and the N-terminal actin-binding domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental construct used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "3fbac632-7f81-40bc-b7eb-29f375939c8a",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C51",
+      "claim": "The remaining sequence comprises the kinase domain, its neighboring fibronectin-like domain (Fn3) and two N-terminal Ig-like domains (Ig1, Ig2) as well as the C-terminal Ig-like myosin-binding domain called telokin (IgT).",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining sequence comprises the kinase domain, its neighboring fibronectin-like domain (Fn3) and two N-terminal Ig-like domains (Ig1, Ig2) as well as the C-terminal Ig-like myosin-binding domain called telokin (IgT) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental construct and is shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "53989862-17ee-4a65-9228-ca1971e45d15",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C52",
+      "claim": "The smMLCK is specifically tethered by an N-terminal Strep-tag II via an AFM cantilever tip that is functionalized with a monovalent variant of Strep-Tactin.",
+      "claim_type": "EXPLICIT",
+      "source": "For force spectroscopy experiments, the smMLCK is specifically tethered by an N-terminal Strep-tag II via an AFM cantilever tip that is functionalized with a monovalent variant of Strep-Tactin (Baumann et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "6bbc02bd-4a40-47ba-9263-a619c37e9f1d",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C53",
+      "claim": "When the molecular construct is stretched with a constant speed, the investigated protein passes through a characteristic sequence of conformational states.",
+      "claim_type": "EXPLICIT",
+      "source": "When the molecular construct is stretched with a constant speed, the investigated protein passes through a characteristic sequence of conformational states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "5dc38195-0a2b-4fb9-a0b4-61f802da3298",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C54",
+      "claim": "The transitions between conformational states are marked by distinct drops in the force-distance curves.",
+      "claim_type": "EXPLICIT",
+      "source": "The transitions between these states are marked by distinct drops in the force-distance curves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "795a5a34-b28b-4eaa-82ef-cb4b640812c7",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C55",
+      "claim": "The recorded force-distance response of smMLCK reveals a strict hierarchy in mechanical stability of the individual domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The recorded force-distance response of smMLCK reveals a strict hierarchy in mechanical stability of the individual domains (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "457b6f27-fdc2-4e35-9755-ed45b6795e9b",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C57",
+      "claim": "Both transitions appear at forces of approximately 30 pN, measured at a retraction speed of 800 nm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Both transitions appear at forces of approximately 30 pN, measured at a retraction speed of 800 nm/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "021d6a51-2512-4350-a305-7c34999d51a0",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C59",
+      "claim": "Fn3 unfolding is assigned to a single rupture event at around 100 pN in accordance with the respective contour length and previous data on domain strength.",
+      "claim_type": "EXPLICIT",
+      "source": "This characteristic sequence is followed by Fn3 unfolding, which is assigned to a single rupture event at around 100 pN in accordance with the respective contour length and previous data on domain strength (Rief et al., 1998; Li et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "8057d6d6-f212-4dc0-8cc2-ca5c85c78b97",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C60",
+      "claim": "The three Ig-like domains in the construct denature at forces of around 200\u2013250 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the three Ig-like domains in the construct denature at forces of around 200\u2013250 pN (Rief et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "a6234add-14cd-47fe-a6a2-da2632ae44a7",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C61",
+      "claim": "The rarely unfolded Ig-like domains and Fn3 contribute a contour length of 30 nm each.",
+      "claim_type": "EXPLICIT",
+      "source": "A transformation of 99 force-distance curves into a contour length histogram (Figure 1C, Figure 1\u2014source data 1) indicates that the rarely unfolded Ig-like domains and Fn3 contribute a contour length of 30 nm each.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from the data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "72958c2f-db0c-4e52-9cd3-b956f269c177",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C62",
+      "claim": "These increments are consistent with results obtained in other force spectroscopy measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "These increments are consistent with results obtained in other force spectroscopy measurements (Rief et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "cc638e80-30a9-4efc-8026-ee347d1683c8",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C69",
+      "claim": "smMLCK's capability of binding ATP is not inhibited through its pseudosubstrate mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to TK, smMLCK's capability of binding ATP is not inhibited through its pseudosubstrate mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "3431d123-c7a8-4043-bde1-50e7af5933cb",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C70",
+      "claim": "ATP interacts with smMLCK with a Kd of around 10 \u00b5M independent from Ca2+/CaM activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Independent from Ca2+/CaM activation, ATP interacts with a Kd of around 10 \u00b5M (Kennelly et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "5a9a4ccd-412f-4271-a85d-7e5da957bdd4",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C71",
+      "claim": "The smaller kinase domain lobe (S1\u2192S2 transition) is significantly stabilized upon ATP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "A heatmap in force-distance space of 560 aligned and overlaid unfolding curves emphasizes ATP-induced changes: the smaller kinase domain lobe (S1\u2192S2 transition) is significantly stabilized upon ATP binding (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "26c1de68-4184-4890-91a6-f7e74971e0aa",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C72",
+      "claim": "The order of released contour lengths L12 and L23 is not altered by ATP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the order of released contour lengths L12 and L23 \u2013 associated with the transitions S1\u2192S2 and S2\u2192S3 \u2013 is not altered by this enhanced stability, the S2\u2192S3 transition seems to remain structurally shielded from S1\u2192S2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "dda429f7-af21-4c0b-9c60-dd262eb937dc",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C73",
+      "claim": "The S2\u2192S3 transition seems to remain structurally shielded from S1\u2192S2.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the order of released contour lengths L12 and L23 \u2013 associated with the transitions S1\u2192S2 and S2\u2192S3 \u2013 is not altered by this enhanced stability, the S2\u2192S3 transition seems to remain structurally shielded from S1\u2192S2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "c35b5e6a-7f3c-41d9-bd67-d5253317b3b5",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C74",
+      "claim": "The determined contour length for the small lobe increment L12 is 30.8\u00b19.8 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased force signal of S1\u2192S2 allows precise extraction of the small lobe increment L12 in contour-length space. The determined 30.8\u00b19.8 nm add to a total length of 92.6\u00b17.5 nm for the full kinase domain with L23 being unchanged with a contour length of 61.8\u00b18.9 nm (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a measurement from the data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "90ad50e6-6861-4e8c-947c-608495ce4c76",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C75",
+      "claim": "The total length for the full kinase domain is 92.6\u00b17.5 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The determined 30.8\u00b19.8 nm add to a total length of 92.6\u00b17.5 nm for the full kinase domain with L23 being unchanged with a contour length of 61.8\u00b18.9 nm (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a measurement from the data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "8678effd-e9f3-46d6-956d-0e4882cae5c8",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C76",
+      "claim": "L23 is unchanged with a contour length of 61.8\u00b18.9 nm upon ATP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The determined 30.8\u00b19.8 nm add to a total length of 92.6\u00b17.5 nm for the full kinase domain with L23 being unchanged with a contour length of 61.8\u00b18.9 nm (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a measurement from the data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "0b453511-9a39-49c0-8739-07a0701c84c1",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C77",
+      "claim": "Other contour length increments in the overall construct including Fn3 and Ig-like domains were unaffected by the interaction of kinase domain and ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "Other contour length increments in the overall construct including Fn3 and Ig-like domains were unaffected by the interaction of kinase domain and ATP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "62fd2dc9-f025-4c61-91ec-f4ba8215efb6",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C78",
+      "claim": "The most probable rupture force increases by about 30 pN upon ATP addition for the S1\u2192S2 transition.",
+      "claim_type": "EXPLICIT",
+      "source": "The histograms for the unfolding force of the S1\u2192S2 transition with and without ATP indicate an increase of the most probable rupture force of about 30 pN (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation and shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "cb72d8d8-b048-4c27-8326-c73219c676cd",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C79",
+      "claim": "The obtained force histogram most likely represents exclusively the ATP-bound conformation due to saturated binding conditions using 3 mM ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to saturated binding conditions using 3 mM ATP, the obtained force histogram most likely represents exclusively the ATP-bound conformation and not a mixed population of ATP-bound and ATP-free states of the tethered smMLCK molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "a5acb5f0-c84f-4606-aece-54cdb226b865",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C80",
+      "claim": "The peak forces for S2\u2192S3 and Fn3 were found to be unaffected by addition of ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak forces for S2\u2192S3 and Fn3 were found to be unaffected by addition of ATP (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation and shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "34ebc2e7-d468-47a7-899f-47c0f687879a",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C81",
+      "claim": "Binding of ADP as well as the non-hydrolysable ATP analogue adenylyl-imidodiphosphate (AMP-PNP) could analogously be detected for smMLCK by a stabilization of the S1\u2192S2 transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of ADP as well as the non-hydrolysable ATP analogue adenylyl-imidodiphosphate (AMP-PNP) could analogously be detected for smMLCK by a stabilization of the S1\u2192S2 transition in the tethered construct (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation and shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "b5699acb-d6d4-41c7-a792-185e8e4e3377",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C82",
+      "claim": "Stabilization by ADP and AMP-PNP appears to be weaker in comparison to the interaction with ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "Stabilization, however, appears to be weaker in comparison to the interaction with ATP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "d83af1d9-88e6-4a28-9bae-d0202590e209",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C83",
+      "claim": "An unusual stretching behavior of the S1 state at AFM distances of about 30\u201340 nm is evident from the ATP-stabilized case.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, an additional peculiarity of the kinase unfolding becomes evident from the ATP-stabilized case: an unusual stretching behavior of the S1 state at AFM distances of about 30\u201340 nm (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "4a8964e8-880c-4b19-92d3-d35cee983ef7",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C84",
+      "claim": "The force response in the S1 region clearly deviates from a typical WLC behavior exhibiting an unusual kink.",
+      "claim_type": "EXPLICIT",
+      "source": "The force response in this region clearly deviates from a typical WLC behavior exhibiting an unusual kink.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "695dd3cc-9244-4e00-a46b-f8dc2be19aaa",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C85",
+      "claim": "A small but distinct energy barrier has to be overcome at low forces (\u223c15 pN) before the kinase domain acquires conformational state S1.",
+      "claim_type": "EXPLICIT",
+      "source": "Apparently, a small but distinct energy barrier - a mechanical barrier stabilizing a specific protein conformation - has to be overcome at low forces (\u223c15 pN) before the kinase domain acquires conformational state S1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental observation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "cfe9676e-e26e-421d-91e5-7433c669a3ca",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C86",
+      "claim": "The energy barrier is attributed to an additional transition S0\u2192S1 preceding the formerly described transitions S1\u2192S2 and S2\u2192S3.",
+      "claim_type": "EXPLICIT",
+      "source": "The energy barrier is attributed to an additional transition S0\u2192S1 preceding the formerly described transitions S1\u2192S2 and S2\u2192S3 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an interpretation and shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "f763a2b0-b8dc-4496-8aef-ec20b4de27fe",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C87",
+      "claim": "S0\u2192S1 represents a small, uncoupled conformational change with a barely resolvable contour length release.",
+      "claim_type": "EXPLICIT",
+      "source": "S0\u2192S1 represents a small, uncoupled conformational change with a barely resolvable contour length release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental observation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "043daa6e-2ef9-44da-b9db-c78cecb10374",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C88",
+      "claim": "Addition of Ca2+/CaM to the measurement buffer leads to an absence of the S0\u2192S1 energy barrier otherwise observed in the kinase force response.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of this energy barrier becomes particularly relevant as the presence of Ca2+/CaM affects this initial feature. Namely, addition of Ca2+/CaM to the measurement buffer leads to an absence of this barrier otherwise observed in the kinase force response (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation and shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "84e70797-90f0-4c11-a579-2eeb3752b5a6",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C89",
+      "claim": "Ca2+/CaM is understood to be a trigger for structural rearrangements in the kinase domain that enable RLC binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Ca2+/CaM is understood to be a trigger for structural rearrangements in the kinase domain that enable RLC binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "6be9f94b-c1e1-431e-a949-1b4e599771bf",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C90",
+      "claim": "The detected energy barrier could represent the rearrangement mechanism triggered by Ca2+/CaM.",
+      "claim_type": "EXPLICIT",
+      "source": "The detected energy barrier could represent this rearrangement mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental observation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "4d2375dc-df2b-4b46-9b31-20d0b0836440",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C91",
+      "claim": "The release of the pseudosubstrate is already realized upon initial Ca2+/CaM binding to smMLCK and is therefore not observed.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus propose the following hypothesis: the release of the pseudosubstrate is already realized upon initial Ca2+/CaM binding to smMLCK and is therefore not observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothesis based on the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "e9d63844-256b-4031-9f2f-a1e651b2c5dd",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C92",
+      "claim": "Addition of Ca2+ without CaM has no effect on the observed S0\u2192S1 feature.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of Ca2+ without CaM has no effect on the observed feature (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation and shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "86f74af5-4b49-4d86-a87a-b577461fae1b",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C93",
+      "claim": "The regulatory fragment appears to be released before the intact kinase domain gets denatured at all.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the energy barrier precedes the complete process of guiding smMLCK through different conformations, the regulatory fragment appears to be released before the intact kinase domain gets denatured at all and therefore becomes inactive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental observation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "992bae2b-70c6-43ee-a560-191085383fc2",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C95",
+      "claim": "A minimal MLCK substrate peptide was used as RLC substitute that interacts only with the catalytic core of the kinase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "A minimal MLCK substrate peptide was used as RLC substitute that interacts only with the catalytic core of the kinase domain (Knighton et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "fadaca89-268f-47bd-aca5-6e907ecc440d",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C96",
+      "claim": "The RLC peptide consists of a truncated and slightly modified smooth muscle myosin light chain (MLC 11\u201323, P14A, Q15A) from chicken gizzard with the amino acid sequence KKRAARATSDVFA.",
+      "claim_type": "EXPLICIT",
+      "source": "It consists of a truncated and slightly modified smooth muscle myosin light chain (MLC 11\u201323, P14A, Q15A) from chicken gizzard with the amino acid sequence KKRAARATSDVFA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental reagent used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "b5c6e149-8aed-4248-b58a-23970df7f64e",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C98",
+      "claim": "The heatmaps clearly reveal a significant stabilization of the S2 state independent of ATP upon RLC peptide addition.",
+      "claim_type": "EXPLICIT",
+      "source": "The characteristic patterns of transitions through different smMLCK states in the presence of RLC peptide are plotted via heatmaps of smMLCK force-distance curves in presence (n = 1013) and absence (n = 864) of ATP in the buffer solution in Figure 4A. The heatmaps clearly reveal a significant stabilization of the S2 state independent of ATP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation and shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "9addd100-7c08-4fc0-bd85-b13d5c7f147e",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C99",
+      "claim": "The structural change upon RLC addition clearly indicates interaction with the substrate and is thus interpreted as RLC binding.",
+      "claim_type": "EXPLICIT",
+      "source": "This structural change clearly indicates interaction with the substrate and is thus interpreted as RLC binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental observation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "08278313-8e01-4129-b59b-8cbb134bd948",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C100",
+      "claim": "The recorded histograms reveal a clear shift in most probable rupture force in S2\u2192S3 transition by about 30 pN upon RLC addition.",
+      "claim_type": "EXPLICIT",
+      "source": "Independent of shape, however, the recorded histograms reveal a clear shift in most probable rupture force in S2\u2192S3 transition by about 30 pN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "c357fc87-941d-4998-ac40-72a572c2c023",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C101",
+      "claim": "Binding of RLC peptide is directly observed in the measurements in the absence of Ca2+/CaM as it clearly alters the characteristic transition pattern of single smMLCK molecules by stabilizing the S2\u2192S3 transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of RLC peptide is directly observed in our measurements in the absence of Ca2+/CaM as it clearly alters the characteristic transition pattern of single smMLCK molecules by stabilizing the S2\u2192S3 transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key finding from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "d2e789ce-f5e0-4a7c-bac9-6e1a020a60dc",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C102",
+      "claim": "The observation of RLC binding in the absence of Ca2+/CaM is in conflict with the blocking of the RLC binding site without Ca2+/CaM activation as proposed by the established pseudosubstrate inhibition mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is in conflict with the blocking of the RLC binding site without Ca2+/CaM activation as proposed by the established pseudosubstrate inhibition mechanism (Bagchi et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the findings in relation to established knowledge.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "7a459dca-8b6b-4681-9556-b1dfac781d99",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C103",
+      "claim": "The experimental results could represent a first indicator for a force-driven activation of the catalytic pathway of smMLCK.",
+      "claim_type": "EXPLICIT",
+      "source": "The experimental results could therefore represent a first indicator for a force-driven activation of the catalytic pathway of smMLCK (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an interpretation and shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "3ee37f55-bb8f-4b4a-be6d-db199ad05eb1",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C104",
+      "claim": "smMLCK bridges actin and myosin filaments in smooth muscle tissue and thus allows for a stretched conformation that additionally promotes kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the living organism, we assume that smMLCK bridges actin and myosin filaments in smooth muscle tissue and thus allows for a stretched conformation that additionally promotes kinase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothesis based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "477d279a-7891-471e-99cf-be30489c2da2",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C105",
+      "claim": "Sufficient mechanical stress may be created within the protein regulating its catalytic activity besides Ca2+/CaM binding by relative movements in the cytoskeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "By relative movements in the cytoskeleton, sufficient mechanical stress may be created within the protein regulating its catalytic activity besides Ca2+/CaM binding, as proposed in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothesis based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "443ad7c2-9a72-4b0c-9cc3-60a384d9cfe1",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C106",
+      "claim": "Steady physiological stress could likely remove autoinhibition if (semi-)permanently applied as the kinase is spanned between two filaments even for mechanical forces below 15 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "Even for mechanical forces below 15 pN - the force that is identified to be necessary for activation in our experiments - steady physiological stress could likely remove autoinhibition if (semi-)permanently applied as the kinase is spanned between two filaments instead of being probed in a constant speed single-molecule force spectroscopy experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "da165202-8169-48ab-af46-3c7a119f57f0",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C107",
+      "claim": "Long-term association to the cytoskeleton is assumed for smMLCK especially due to several additional binding domains to both filaments in its long isoform.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite a Kd in the \u00b5M range between smMLCK and myosin or actin (Hong et al., 2015), long-term association to the cytoskeleton is assumed for smMLCK especially due to several additional binding domains to both filaments in its long isoform (Kudryashov et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "6df31639-5b6d-49d0-bf0c-4e111c52be1f",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "claim_id": "C108",
+      "claim": "The investigated construct does not show Ca2+/CaM-independent enzymatic activity, suggesting that RLC does not bind to smMLCK in the absence of Ca2+/CaM under zero tension.",
+      "claim_type": "EXPLICIT",
+      "source": "The investigated construct does not show Ca2+/CaM-independent enzymatic activity, suggesting that RLC does not bind to smMLCK in the absence of Ca2+/CaM under zero tension (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation and shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2e0cd97f-bad3-43e8-9e2f-bce92f4fa338",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "AFM-based force spectroscopy reveals that smMLCK unfolds through a hierarchical sequence of conformational states (S1\u2192S2\u2192S3) at distinct force thresholds (~30 pN for kinase domain transitions, ~100 pN for Fn3, ~200-250 pN for Ig domains), with contour length increments consistent with domain structure and prior measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C62 collectively describe the experimental construct, methodology, and force-distance measurements. The observed unfolding hierarchy, force thresholds, and contour lengths are internally consistent and validated against prior work (Rief et al., 1998). The data in Figures 1B-C support the sequential unfolding model with appropriate controls and measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "00e68ce2-3fac-459a-afe7-a27c98401120",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ATP binding specifically stabilizes the smaller kinase lobe (S1\u2192S2 transition) by ~30 pN without affecting other transitions, as demonstrated by force spectroscopy with saturating ATP concentrations (3 mM). ADP and AMP-PNP show similar but weaker stabilization effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C82 describe ATP binding effects with clear experimental evidence (Figure 2). The stabilization is specific to S1\u2192S2, quantified with appropriate statistics (n=560 curves), and validated with nucleotide analogs. The use of saturating concentrations (3 mM vs Kd ~10 \u00b5M) supports the interpretation that observed forces represent ATP-bound states. Internal controls (Fn3 unfolding unchanged) strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "3d3e49e9-67f3-4f34-9d1e-923a2ef216c3",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "An additional low-force transition (S0\u2192S1, ~15 pN) is identified that is abolished by Ca2+/CaM but not Ca2+ alone, suggesting this barrier represents the conformational rearrangement associated with pseudosubstrate release that normally occurs upon Ca2+/CaM binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C93 describe a novel S0\u2192S1 transition with appropriate controls (Ca2+ alone has no effect, C92). The interpretation that this represents pseudosubstrate release is reasonable given: (1) Ca2+/CaM specifically abolishes it, (2) it precedes kinase unfolding, and (3) it's consistent with known activation mechanisms. However, the claim remains somewhat inferential as direct structural evidence is lacking. The data support the observation but the mechanistic interpretation, while plausible, requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "50c929ef-55dc-439e-9adb-a923ac493784",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "RLC peptide substrate binds to smMLCK in the absence of Ca2+/CaM under mechanical force, as evidenced by stabilization of the S2\u2192S3 transition (~30 pN shift), contradicting the established pseudosubstrate inhibition model and suggesting force-driven activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C95-C103, C108 present the key finding of RLC binding without Ca2+/CaM. While the force spectroscopy data (Figure 4) clearly show S2\u2192S3 stabilization, critical issues remain: (1) C108 shows no enzymatic activity without Ca2+/CaM at zero tension, (2) the authors acknowledge inability to distinguish pre-binding from force-induced binding, (3) ITC failed to detect basal binding, and (4) no direct demonstration of substrate turnover under force. The observation is intriguing but insufficient to conclusively demonstrate force-driven activation without additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "fbd03996-d48d-4e2f-a900-5f706442ae6c",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors propose that in vivo, smMLCK bridges actin and myosin filaments, experiencing mechanical stress from cytoskeletal movements that could activate the kinase independently of Ca2+/CaM, potentially at forces below the 15 pN threshold observed in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claims C104-C107 are explicitly speculative (\"we assume,\" \"may be created,\" \"could likely remove\"). While the hypothesis is reasonable given the structural features and AFM observations, no in vivo data are presented. The authors acknowledge this limitation in the Discussion. The speculation about forces <15 pN being sufficient under sustained tension (C106) is not experimentally validated. This represents a proposed model requiring future validation rather than a supported result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "c3f6ba97-ab1a-444e-9bfd-f23283669be0",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "smMLCK is a cytoskeleton-associated serine/threonine kinase regulated by Ca2+/CaM through relief of pseudosubstrate auto-inhibition, and is hypothesized to also be mechanically regulatable based on homology with titin kinase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C21-C25 establish background knowledge about smMLCK structure and regulation. These are well-supported by citations to established literature and represent the foundation for the study's hypothesis. The Ca2+/CaM activation mechanism is well-established, and the hypothesis of mechanical regulation (C4) is appropriately framed as speculation based on structural homology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "9edbc68b-da36-49e0-863e-ad457791a121",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Background on cytoskeletal structure, muscle contraction regulation, MLCK family members, and smMLCK's role in smooth muscle contraction and other cellular processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C20 provide established background knowledge supported by appropriate citations. These contextual claims are accurate representations of prior work and are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "f59b1e19-fe2c-4595-a5f2-19e1cac975e9",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "smMLCK has a conserved multi-domain structure with terminal actin- and myosin-binding domains that could enable bridging of thick and thin filaments, potentially contributing to smooth muscle mechanics and mechanosensing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C40 describe smMLCK structure and potential mechanical roles based on established literature. The structural features are well-documented (appropriate citations), though some functional implications (C38-C40) are speculative. These provide important context for the mechanical studies but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    },
+    {
+      "id": "a309db2d-8432-4f7f-bbb1-7044db41c21a",
+      "content_id": "6fb77632-776f-4db5-a27d-7d7f69f8978d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Titin kinase (TK) is mechanically activated through force-induced partial unfolding that releases pseudosubstrate auto-inhibition, providing a precedent for hypothesizing similar mechanical regulation in the structurally homologous smMLCK.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C49 summarize established knowledge about TK mechanical activation (supported by citations to Puchner et al., 2008; Gr\u00e4ter et al., 2005) and draw a reasonable analogy to smMLCK based on structural homology. This provides the rationale for the study but is not a novel finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:01:28.439227Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2a0f41be-b195-47d4-afd6-32f5116644ef",
+      "result_id": "2e0cd97f-bad3-43e8-9e2f-bce92f4fa338"
+    },
+    {
+      "claim_id": "3fbac632-7f81-40bc-b7eb-29f375939c8a",
+      "result_id": "2e0cd97f-bad3-43e8-9e2f-bce92f4fa338"
+    },
+    {
+      "claim_id": "53989862-17ee-4a65-9228-ca1971e45d15",
+      "result_id": "2e0cd97f-bad3-43e8-9e2f-bce92f4fa338"
+    },
+    {
+      "claim_id": "6bbc02bd-4a40-47ba-9263-a619c37e9f1d",
+      "result_id": "2e0cd97f-bad3-43e8-9e2f-bce92f4fa338"
+    },
+    {
+      "claim_id": "5dc38195-0a2b-4fb9-a0b4-61f802da3298",
+      "result_id": "2e0cd97f-bad3-43e8-9e2f-bce92f4fa338"
+    },
+    {
+      "claim_id": "795a5a34-b28b-4eaa-82ef-cb4b640812c7",
+      "result_id": "2e0cd97f-bad3-43e8-9e2f-bce92f4fa338"
+    },
+    {
+      "claim_id": "457b6f27-fdc2-4e35-9755-ed45b6795e9b",
+      "result_id": "2e0cd97f-bad3-43e8-9e2f-bce92f4fa338"
+    },
+    {
+      "claim_id": "021d6a51-2512-4350-a305-7c34999d51a0",
+      "result_id": "2e0cd97f-bad3-43e8-9e2f-bce92f4fa338"
+    },
+    {
+      "claim_id": "8057d6d6-f212-4dc0-8cc2-ca5c85c78b97",
+      "result_id": "2e0cd97f-bad3-43e8-9e2f-bce92f4fa338"
+    },
+    {
+      "claim_id": "a6234add-14cd-47fe-a6a2-da2632ae44a7",
+      "result_id": "2e0cd97f-bad3-43e8-9e2f-bce92f4fa338"
+    },
+    {
+      "claim_id": "72958c2f-db0c-4e52-9cd3-b956f269c177",
+      "result_id": "2e0cd97f-bad3-43e8-9e2f-bce92f4fa338"
+    },
+    {
+      "claim_id": "cc638e80-30a9-4efc-8026-ee347d1683c8",
+      "result_id": "00e68ce2-3fac-459a-afe7-a27c98401120"
+    },
+    {
+      "claim_id": "3431d123-c7a8-4043-bde1-50e7af5933cb",
+      "result_id": "00e68ce2-3fac-459a-afe7-a27c98401120"
+    },
+    {
+      "claim_id": "5a9a4ccd-412f-4271-a85d-7e5da957bdd4",
+      "result_id": "00e68ce2-3fac-459a-afe7-a27c98401120"
+    },
+    {
+      "claim_id": "26c1de68-4184-4890-91a6-f7e74971e0aa",
+      "result_id": "00e68ce2-3fac-459a-afe7-a27c98401120"
+    },
+    {
+      "claim_id": "dda429f7-af21-4c0b-9c60-dd262eb937dc",
+      "result_id": "00e68ce2-3fac-459a-afe7-a27c98401120"
+    },
+    {
+      "claim_id": "c35b5e6a-7f3c-41d9-bd67-d5253317b3b5",
+      "result_id": "00e68ce2-3fac-459a-afe7-a27c98401120"
+    },
+    {
+      "claim_id": "90ad50e6-6861-4e8c-947c-608495ce4c76",
+      "result_id": "00e68ce2-3fac-459a-afe7-a27c98401120"
+    },
+    {
+      "claim_id": "8678effd-e9f3-46d6-956d-0e4882cae5c8",
+      "result_id": "00e68ce2-3fac-459a-afe7-a27c98401120"
+    },
+    {
+      "claim_id": "0b453511-9a39-49c0-8739-07a0701c84c1",
+      "result_id": "00e68ce2-3fac-459a-afe7-a27c98401120"
+    },
+    {
+      "claim_id": "62fd2dc9-f025-4c61-91ec-f4ba8215efb6",
+      "result_id": "00e68ce2-3fac-459a-afe7-a27c98401120"
+    },
+    {
+      "claim_id": "cb72d8d8-b048-4c27-8326-c73219c676cd",
+      "result_id": "00e68ce2-3fac-459a-afe7-a27c98401120"
+    },
+    {
+      "claim_id": "a5acb5f0-c84f-4606-aece-54cdb226b865",
+      "result_id": "00e68ce2-3fac-459a-afe7-a27c98401120"
+    },
+    {
+      "claim_id": "34ebc2e7-d468-47a7-899f-47c0f687879a",
+      "result_id": "00e68ce2-3fac-459a-afe7-a27c98401120"
+    },
+    {
+      "claim_id": "b5699acb-d6d4-41c7-a792-185e8e4e3377",
+      "result_id": "00e68ce2-3fac-459a-afe7-a27c98401120"
+    },
+    {
+      "claim_id": "d83af1d9-88e6-4a28-9bae-d0202590e209",
+      "result_id": "3d3e49e9-67f3-4f34-9d1e-923a2ef216c3"
+    },
+    {
+      "claim_id": "4a8964e8-880c-4b19-92d3-d35cee983ef7",
+      "result_id": "3d3e49e9-67f3-4f34-9d1e-923a2ef216c3"
+    },
+    {
+      "claim_id": "695dd3cc-9244-4e00-a46b-f8dc2be19aaa",
+      "result_id": "3d3e49e9-67f3-4f34-9d1e-923a2ef216c3"
+    },
+    {
+      "claim_id": "cfe9676e-e26e-421d-91e5-7433c669a3ca",
+      "result_id": "3d3e49e9-67f3-4f34-9d1e-923a2ef216c3"
+    },
+    {
+      "claim_id": "f763a2b0-b8dc-4496-8aef-ec20b4de27fe",
+      "result_id": "3d3e49e9-67f3-4f34-9d1e-923a2ef216c3"
+    },
+    {
+      "claim_id": "043daa6e-2ef9-44da-b9db-c78cecb10374",
+      "result_id": "3d3e49e9-67f3-4f34-9d1e-923a2ef216c3"
+    },
+    {
+      "claim_id": "84e70797-90f0-4c11-a579-2eeb3752b5a6",
+      "result_id": "3d3e49e9-67f3-4f34-9d1e-923a2ef216c3"
+    },
+    {
+      "claim_id": "6be9f94b-c1e1-431e-a949-1b4e599771bf",
+      "result_id": "3d3e49e9-67f3-4f34-9d1e-923a2ef216c3"
+    },
+    {
+      "claim_id": "4d2375dc-df2b-4b46-9b31-20d0b0836440",
+      "result_id": "3d3e49e9-67f3-4f34-9d1e-923a2ef216c3"
+    },
+    {
+      "claim_id": "e9d63844-256b-4031-9f2f-a1e651b2c5dd",
+      "result_id": "3d3e49e9-67f3-4f34-9d1e-923a2ef216c3"
+    },
+    {
+      "claim_id": "86f74af5-4b49-4d86-a87a-b577461fae1b",
+      "result_id": "3d3e49e9-67f3-4f34-9d1e-923a2ef216c3"
+    },
+    {
+      "claim_id": "992bae2b-70c6-43ee-a560-191085383fc2",
+      "result_id": "50c929ef-55dc-439e-9adb-a923ac493784"
+    },
+    {
+      "claim_id": "fadaca89-268f-47bd-aca5-6e907ecc440d",
+      "result_id": "50c929ef-55dc-439e-9adb-a923ac493784"
+    },
+    {
+      "claim_id": "b5c6e149-8aed-4248-b58a-23970df7f64e",
+      "result_id": "50c929ef-55dc-439e-9adb-a923ac493784"
+    },
+    {
+      "claim_id": "9addd100-7c08-4fc0-bd85-b13d5c7f147e",
+      "result_id": "50c929ef-55dc-439e-9adb-a923ac493784"
+    },
+    {
+      "claim_id": "08278313-8e01-4129-b59b-8cbb134bd948",
+      "result_id": "50c929ef-55dc-439e-9adb-a923ac493784"
+    },
+    {
+      "claim_id": "c357fc87-941d-4998-ac40-72a572c2c023",
+      "result_id": "50c929ef-55dc-439e-9adb-a923ac493784"
+    },
+    {
+      "claim_id": "d2e789ce-f5e0-4a7c-bac9-6e1a020a60dc",
+      "result_id": "50c929ef-55dc-439e-9adb-a923ac493784"
+    },
+    {
+      "claim_id": "7a459dca-8b6b-4681-9556-b1dfac781d99",
+      "result_id": "50c929ef-55dc-439e-9adb-a923ac493784"
+    },
+    {
+      "claim_id": "6df31639-5b6d-49d0-bf0c-4e111c52be1f",
+      "result_id": "50c929ef-55dc-439e-9adb-a923ac493784"
+    },
+    {
+      "claim_id": "3ee37f55-bb8f-4b4a-be6d-db199ad05eb1",
+      "result_id": "fbd03996-d48d-4e2f-a900-5f706442ae6c"
+    },
+    {
+      "claim_id": "477d279a-7891-471e-99cf-be30489c2da2",
+      "result_id": "fbd03996-d48d-4e2f-a900-5f706442ae6c"
+    },
+    {
+      "claim_id": "443ad7c2-9a72-4b0c-9cc3-60a384d9cfe1",
+      "result_id": "fbd03996-d48d-4e2f-a900-5f706442ae6c"
+    },
+    {
+      "claim_id": "da165202-8169-48ab-af46-3c7a119f57f0",
+      "result_id": "fbd03996-d48d-4e2f-a900-5f706442ae6c"
+    },
+    {
+      "claim_id": "38101fb7-32c1-4359-ab5e-1f1ea4bb218c",
+      "result_id": "c3f6ba97-ab1a-444e-9bfd-f23283669be0"
+    },
+    {
+      "claim_id": "e1d32e34-7b9e-40a1-b651-836d8915aa25",
+      "result_id": "c3f6ba97-ab1a-444e-9bfd-f23283669be0"
+    },
+    {
+      "claim_id": "ddd4284b-8fe1-4f31-aea3-e91d916cb9c3",
+      "result_id": "c3f6ba97-ab1a-444e-9bfd-f23283669be0"
+    },
+    {
+      "claim_id": "520ee103-7561-40df-92e8-4ef76814a5b5",
+      "result_id": "c3f6ba97-ab1a-444e-9bfd-f23283669be0"
+    },
+    {
+      "claim_id": "64f20cf4-7996-48e8-91b6-a099bddb955f",
+      "result_id": "c3f6ba97-ab1a-444e-9bfd-f23283669be0"
+    },
+    {
+      "claim_id": "b3202749-39ae-4f49-8a22-eaa948ce29d0",
+      "result_id": "c3f6ba97-ab1a-444e-9bfd-f23283669be0"
+    },
+    {
+      "claim_id": "49790d5d-e55b-4bf7-9ceb-4cea2891e312",
+      "result_id": "c3f6ba97-ab1a-444e-9bfd-f23283669be0"
+    },
+    {
+      "claim_id": "0cf311d6-f8e5-42ff-b3a8-56698e2fad68",
+      "result_id": "c3f6ba97-ab1a-444e-9bfd-f23283669be0"
+    },
+    {
+      "claim_id": "af36ee13-31e9-403b-ae6f-dca4fdc5ccd3",
+      "result_id": "c3f6ba97-ab1a-444e-9bfd-f23283669be0"
+    },
+    {
+      "claim_id": "48f229d1-3a36-4ecf-ab5d-541e18fcdaf7",
+      "result_id": "9edbc68b-da36-49e0-863e-ad457791a121"
+    },
+    {
+      "claim_id": "7eb4ff98-7997-49b0-ba17-a8840935f10d",
+      "result_id": "9edbc68b-da36-49e0-863e-ad457791a121"
+    },
+    {
+      "claim_id": "adafcc45-04cc-4389-b0de-6ad7306c2409",
+      "result_id": "9edbc68b-da36-49e0-863e-ad457791a121"
+    },
+    {
+      "claim_id": "f75a8004-9d78-4291-8986-549f12006bf2",
+      "result_id": "9edbc68b-da36-49e0-863e-ad457791a121"
+    },
+    {
+      "claim_id": "4a9221bf-fc4b-4b09-bff8-0375f5eb0572",
+      "result_id": "9edbc68b-da36-49e0-863e-ad457791a121"
+    },
+    {
+      "claim_id": "da10e551-3656-40f2-90bc-6246b37a130a",
+      "result_id": "9edbc68b-da36-49e0-863e-ad457791a121"
+    },
+    {
+      "claim_id": "832b773b-a3fd-40a2-b761-2888b4235389",
+      "result_id": "9edbc68b-da36-49e0-863e-ad457791a121"
+    },
+    {
+      "claim_id": "c9548e23-75c6-4912-8c93-a9d41115cb45",
+      "result_id": "9edbc68b-da36-49e0-863e-ad457791a121"
+    },
+    {
+      "claim_id": "5aa93b7b-fee1-409c-9457-2e932c41dbb6",
+      "result_id": "9edbc68b-da36-49e0-863e-ad457791a121"
+    },
+    {
+      "claim_id": "9f57aaf1-d576-4a2a-8251-31b5f8b6a4df",
+      "result_id": "9edbc68b-da36-49e0-863e-ad457791a121"
+    },
+    {
+      "claim_id": "f541e3fe-8074-4443-82c1-dbcbeebd6734",
+      "result_id": "9edbc68b-da36-49e0-863e-ad457791a121"
+    },
+    {
+      "claim_id": "1bd27cdb-6c2c-498b-84ca-92d5803a36fb",
+      "result_id": "9edbc68b-da36-49e0-863e-ad457791a121"
+    },
+    {
+      "claim_id": "628fcdd5-c2cd-44f0-ac7d-a11d4c9a403b",
+      "result_id": "9edbc68b-da36-49e0-863e-ad457791a121"
+    },
+    {
+      "claim_id": "2e51c208-b299-4dc8-807f-edc287641bb7",
+      "result_id": "9edbc68b-da36-49e0-863e-ad457791a121"
+    },
+    {
+      "claim_id": "e782428c-a8c3-42f4-8359-82cd08d85af6",
+      "result_id": "f59b1e19-fe2c-4595-a5f2-19e1cac975e9"
+    },
+    {
+      "claim_id": "d3a39be6-8138-4b12-aef6-db6ae1b48b4a",
+      "result_id": "f59b1e19-fe2c-4595-a5f2-19e1cac975e9"
+    },
+    {
+      "claim_id": "0783de21-7bc3-4b7d-a127-d992961e7746",
+      "result_id": "f59b1e19-fe2c-4595-a5f2-19e1cac975e9"
+    },
+    {
+      "claim_id": "dd274e9b-0f8b-45b4-bac5-49aa884d7403",
+      "result_id": "f59b1e19-fe2c-4595-a5f2-19e1cac975e9"
+    },
+    {
+      "claim_id": "c84a6ad2-1286-46eb-816e-80ac816010e0",
+      "result_id": "f59b1e19-fe2c-4595-a5f2-19e1cac975e9"
+    },
+    {
+      "claim_id": "426aa665-da9b-429f-a776-14a59764c218",
+      "result_id": "f59b1e19-fe2c-4595-a5f2-19e1cac975e9"
+    },
+    {
+      "claim_id": "2a77812e-056f-4096-96c1-619580c56911",
+      "result_id": "f59b1e19-fe2c-4595-a5f2-19e1cac975e9"
+    },
+    {
+      "claim_id": "55e02011-7517-4d4c-827c-3d06a3daaaaa",
+      "result_id": "f59b1e19-fe2c-4595-a5f2-19e1cac975e9"
+    },
+    {
+      "claim_id": "51ec1a2f-7149-4ee5-b544-62c4a97fb394",
+      "result_id": "f59b1e19-fe2c-4595-a5f2-19e1cac975e9"
+    },
+    {
+      "claim_id": "8a11e785-c2c6-4257-b205-649205cb0b04",
+      "result_id": "f59b1e19-fe2c-4595-a5f2-19e1cac975e9"
+    },
+    {
+      "claim_id": "ccdd4ad4-9252-428e-9182-369adefda657",
+      "result_id": "f59b1e19-fe2c-4595-a5f2-19e1cac975e9"
+    },
+    {
+      "claim_id": "f37d2208-8b31-4230-b4b2-3bdaa39a324a",
+      "result_id": "f59b1e19-fe2c-4595-a5f2-19e1cac975e9"
+    },
+    {
+      "claim_id": "ecca66b7-2c94-45b1-8a9c-109d6909d8fd",
+      "result_id": "f59b1e19-fe2c-4595-a5f2-19e1cac975e9"
+    },
+    {
+      "claim_id": "6074adf2-146b-4eb4-b83d-39bc14f2d05c",
+      "result_id": "f59b1e19-fe2c-4595-a5f2-19e1cac975e9"
+    },
+    {
+      "claim_id": "7f231724-2cf6-4d52-81f2-2454430ca982",
+      "result_id": "f59b1e19-fe2c-4595-a5f2-19e1cac975e9"
+    },
+    {
+      "claim_id": "d92b30db-004f-492f-a03c-dd0801486614",
+      "result_id": "a309db2d-8432-4f7f-bbb1-7044db41c21a"
+    },
+    {
+      "claim_id": "ffdac610-484c-4825-bad1-7b9e49804ce9",
+      "result_id": "a309db2d-8432-4f7f-bbb1-7044db41c21a"
+    },
+    {
+      "claim_id": "73d6193e-3965-4a61-acbd-2cec89cca35a",
+      "result_id": "a309db2d-8432-4f7f-bbb1-7044db41c21a"
+    },
+    {
+      "claim_id": "e1fbdb0a-f446-4c97-9493-f718c9b4b18d",
+      "result_id": "a309db2d-8432-4f7f-bbb1-7044db41c21a"
+    },
+    {
+      "claim_id": "b7737d92-6831-44db-97a8-d02807ff5445",
+      "result_id": "a309db2d-8432-4f7f-bbb1-7044db41c21a"
+    },
+    {
+      "claim_id": "f1e2fe10-845b-49b9-bddb-373772c9d8cc",
+      "result_id": "a309db2d-8432-4f7f-bbb1-7044db41c21a"
+    },
+    {
+      "claim_id": "6ed1dae8-aecd-4538-aab8-13224a2e0731",
+      "result_id": "a309db2d-8432-4f7f-bbb1-7044db41c21a"
+    },
+    {
+      "claim_id": "01581da9-7b17-4958-9b98-d93852238ada",
+      "result_id": "a309db2d-8432-4f7f-bbb1-7044db41c21a"
+    },
+    {
+      "claim_id": "ba1837fa-cb43-4a23-ac98-5965f3c3a204",
+      "result_id": "a309db2d-8432-4f7f-bbb1-7044db41c21a"
+    }
+  ],
+  "comparisons": []
+}

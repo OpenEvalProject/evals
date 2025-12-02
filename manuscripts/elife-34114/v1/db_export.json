@@ -1,0 +1,1483 @@
+{
+  "submission": {
+    "id": "a40b3f38-29f0-49b6-88a1-c927a9991738",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:15:07.971136Z",
+    "updated_at": "2025-12-02T00:15:07.971136Z"
+  },
+  "content": [
+    {
+      "id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "submission_id": "a40b3f38-29f0-49b6-88a1-c927a9991738",
+      "content_type": "manuscript",
+      "content_text": "# Transcriptomic analyses reveal rhythmic and CLOCK-driven pathways in human skeletal muscle\n\n## Authors\n\n- Laurent Perrin<sup>1</sup>\n- Ursula Loizides-Mangold<sup>1</sup> ([ORCID: 0000-0001-9233-2974](https://orcid.org/0000-0001-9233-2974))\n- St\u00e9phanie Chanon<sup>5</sup>\n- C\u00e9dric Gobet<sup>6</sup>\n- Nicolas Hulo<sup>4</sup> ([ORCID: 0000-0003-2640-636X](https://orcid.org/0000-0003-2640-636X))\n- Laura Isenegger<sup>8</sup>\n- Benjamin D Weger<sup>6</sup>\n- Eugenia Migliavacca<sup>6</sup>\n- Aline Charpagne<sup>6</sup>\n- James A Betts<sup>9</sup>\n- Jean-Philippe Walhin<sup>9</sup>\n- Iain Templeman<sup>9</sup>\n- Keith Stokes<sup>9</sup>\n- Dylan Thompson<sup>9</sup>\n- Kostas Tsintzas<sup>10</sup>\n- Maud Robert<sup>11</sup>\n- Cedric Howald<sup>4</sup>\n- Howard Riezman<sup>13</sup> ([ORCID: 0000-0003-4680-9422](https://orcid.org/0000-0003-4680-9422))\n- Jerome N Feige<sup>6</sup>\n- Leonidas G Karagounis<sup>14</sup>\n- Jonathan D Johnston<sup>16</sup> ([ORCID: 0000-0001-8083-9794](https://orcid.org/0000-0001-8083-9794))\n- Emmanouil T Dermitzakis<sup>4</sup>\n- Fr\u00e9d\u00e9ric Gachon<sup>6</sup> ([ORCID: 0000-0002-9279-9707](https://orcid.org/0000-0002-9279-9707))\n- Etienne Lefai<sup>5</sup>\n- Charna Dibner<sup>1</sup> ([ORCID: 0000-0002-4188-803X](https://orcid.org/0000-0002-4188-803X)) \u2020\n\n### Affiliations\n\n1. Division of Endocrinology, Diabetes, Hypertension and Nutrition, Department of Internal Medicine Specialties University Hospital of Geneva Geneva Switzerland\n2. Department of Cell Physiology and Metabolism, Faculty of Medicine University of Geneva Geneva Switzerland\n3. Diabetes Center, Faculty of Medicine University of Geneva Geneva Switzerland\n4. Institute of Genetics and Genomics of Geneva Geneva Switzerland\n5. CarMeN Laboratory, INSERM U1060 Oullins France\n6. Nestl\u00e9 Institute of Health Sciences Lausanne Switzerland\n7. School of Life Sciences Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne Lausanne Switzerland\n8. Service for Biomathematical and Biostatistical Analyses, Institute of Genetics and Genomics in Geneva University of Geneva Geneva Switzerland\n9. Department for Health University of Bath Bath United Kingdom\n10. MRC/ARUK Centre for Musculoskeletal Ageing, School of Life Sciences University of Nottingham Nottingham United Kingdom\n11. Department of Digestive and Bariatric Surgery Edouard Herriot University Hospital Lyon France\n12. Department of Genetic Medicine and Development, Faculty of Medicine University of Geneva Geneva Switzerland\n13. Department of Biochemistry NCCR Chemical Biology, University of Geneva Geneva Switzerland\n14. Experimental Myology and Integrative Biology Research Cluster, Faculty of Sport and Health Sciences University of St Mark and St John Plymouth United Kingdom\n15. Institute of Nutritional Science Nestl\u00e9 Research Centre Lausanne Switzerland\n16. Faculty of Health and Medical Sciences University of Surrey Guildford United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nCircadian regulation of transcriptional processes has a broad impact on cell metabolism. Here, we compared the diurnal transcriptome of human skeletal muscle conducted on serial muscle biopsies in vivo with profiles of human skeletal myotubes synchronized in vitro. More extensive rhythmic transcription was observed in human skeletal muscle compared to in vitro cell culture as a large part of the in vivo mRNA rhythmicity was lost in vitro. siRNA-mediated clock disruption in primary myotubes significantly affected the expression of ~8% of all genes, with impact on glucose homeostasis and lipid metabolism. Genes involved in GLUT4 expression, translocation and recycling were negatively affected, whereas lipid metabolic genes were altered to promote activation of lipid utilization. Moreover, basal and insulin-stimulated glucose uptake were significantly reduced upon CLOCK depletion. Our findings suggest an essential role for the circadian coordination of skeletal muscle glucose homeostasis and lipid metabolism in humans.\n\n## Introduction\n\nCircadian rhythms are daily cycles of most bodily processes driven by a system of intrinsic biological clocks organized in a complex hierarchical manner. This mechanism ensures a temporal coordination of physiology and behavior with a near 24 hr period of rest-activity and feeding-fasting cycles, thus providing the organism with an evolutionary conserved advantage (Albrecht, 2012; Spoelstra et al., 2016). In mammals, the circadian system is driven by a central pacemaker, situated in the paired suprachiasmatic nuclei (SCN) of the hypothalamus, and by secondary oscillators located in peripheral organs. The SCN clock is readjusted on a daily basis, mainly by light inputs coming from the retina. In turn, the central pacemaker orchestrates peripheral clocks through a combination of neuronal, endocrine, and metabolic signaling pathways (Saini et al., 2015). As a result, metabolic processes in the liver, skeletal muscle, and other organs are subject to daily oscillations (Asher and Sassone-Corsi, 2015) with the SCN keeping these rhythms in appropriate synchrony with each other.\n\nSkeletal muscle is responsible for\u00a0~70% of glucose uptake resulting from ingested carbohydrates (DeFronzo et al., 1981; Gachon et al., 2017), and perturbations in glucose sensing and metabolism in this organ are strongly associated with insulin resistance in type 2 diabetes (T2D) (Muoio and Newgard, 2008). In rodents, it has been established that the skeletal muscle clock plays an essential role in maintaining proper metabolic homeostasis, with skeletal muscle pathologies stemming from clock disruption via deletion of the core clock component Bmal1 (Andrews et al., 2010; Harfmann et al., 2015). Disruption of muscle insulin sensitivity by modulating glucose uptake, with a reduction in Glut4 mRNA and protein levels, has been reported in two muscle-specific Bmal1 knockout (KO) models (Dyar et al., 2014; Harfmann et al., 2016). In humans, diurnal variations in glucose tolerance have been described (Kalsbeek et al., 2014), although the molecular mechanism responsible for such variations remains largely unexplored. Feeding-fasting cycles accompanying rest-activity rhythms represent major timing cues in the synchronization of peripheral clocks, including skeletal muscle oscillators (Dibner and Schibler, 2015; Wehrens et al., 2017). Although several studies have reported that in murine models 3.4% to 16% of the skeletal muscle transcriptome is expressed in a circadian manner (McCarthy et al., 2007; Miller et al., 2007; Dyar et al., 2014; Zhang et al., 2014; Hodge et al., 2015), it is unclear to what extent the muscle circadian transcriptome is regulated by feeding-fasting rhythms and additional central synchronizers, and how local muscle clocks contribute in generating these transcript oscillations. Cell-autonomous circadian clocks operating in human primary skeletal myotubes (hSKM) established from muscle biopsies have been recently characterized (Perrin et al., 2015; Hansen et al., 2016; Loizides-Mangold et al., 2016). Importantly, proper function of these cellular oscillators is indispensable for the normal secretion of interleukin 6 (IL-6), interleukin-8 (IL-8), the monocyte chemotactic protein 1 (MCP-1) and additional myokines, regulating skeletal muscle insulin sensitivity and inflammation (Perrin et al., 2015).\n\nIn order to dissect the impact of the endogenous circadian clock on skeletal muscle gene transcription from external factors and their reciprocal influence, we performed a genome-wide transcriptome analysis by high-throughput RNA sequencing (RNA-seq) in skeletal muscle biopsies collected from human subjects placed under a controlled laboratory routine, as well as in cultured hSKM synchronized in vitro in the presence of a functional or compromised clock. An important overlap between genes exhibiting rhythmic patterns in tissue biopsies and in synchronized hSKM was observed. Expression patterns of genes related to insulin response, myokine secretion, and lipid metabolism were strongly altered in the absence of a fully functional clock in vitro. These transcriptional changes had important functional outputs, with basal as well as insulin-stimulated\u00a0glucose uptake and lipid metabolism being altered by perturbation of the oscillators operative in hSKM. Altogether, these results strongly suggest that cell-autonomous skeletal muscle clocks drive rhythmic gene expression and are indispensable for proper insulin response, lipid homeostasis, and myokine secretion by the skeletal muscle.\n\n## Results\n\n### Diurnal rhythms of gene expression in human skeletal muscle under controlled laboratory routine\n\nTo assess rhythms of gene expression in human skeletal muscle, RNA samples derived from vastus lateralis biopsies taken every 4 hr across 24 hr from 10 healthy volunteers were analyzed by total RNA-seq (see Supplementary file 1-table S1 for in vivo donor characteristics, n\u00a0=\u00a010). Sample collection was performed under controlled laboratory routine by implementing a protocol designed to minimize the effect of confounding factors (see Materials\u00a0and\u00a0methods and [Loizides-Mangold et al., 2017]). In total 13,377 genes were quantified at the exonic level (Figure 1\u2014source data 1), of which 9211 genes were quantified at the intronic level as well. To identify genes with coordinated rhythmic expression, we used a mixed linear model with harmonic terms across the 10 individuals at the pre-mRNA (intronic signal) and mRNA (exonic signal) levels. This method allowed for the identification of 5748 rhythmic genes that were rhythmic at the pre-mRNA or/and mRNA level with a False Discovery Rate (FDR) of 5% (Figure 1A). When rhythmicity levels were further analyzed, it became apparent that 4792 genes showed rhythmic transcription at the intronic pre-mRNA level (Figure 1A, upper and middle left panels). However, from these rhythmic pre-mRNA transcripts, only 57% were also rhythmic at the mRNA level (R-I.R-E, upper panels Figure 1A), likely because of the longer half-life of their mRNA. Indeed, approximation of mRNA half-life by the exon/intron ratio showed that among these rhythmic pre-mRNA transcripts, those that are only rhythmic at the pre-mRNAs level (R-I) have a longer half-life compared to those that are rhythmic at the mRNA level (R-E and R-I.R-E, Figure 1B). The R-I.R-E group of genes was enriched in circadian clock genes and genes encoding RNA-binding proteins, whereas the R-I group was enriched for genes encoding proteins involved in mRNA translation, mitochondrial activity, TCA cycle, and lipid metabolism (Figure 1\u2014source data 2). In parallel, around 10% of the quantified transcriptome (956 genes) were only rhythmic at the mRNA level (R-E, Figure 1A, lower panels), likely through post-transcriptional regulation and in particular mRNA degradation (LuckL\u00fcck et al., 2014; Wang et al., 2018). This group was enriched in genes encoding proteins involved in ribosome biogenesis and protein transport (Figure 1\u2014source data 2). Amplitude distribution suggested that among the genes that were rhythmic at the pre-mRNA level, those with higher amplitude of transcription had a greater probability to be rhythmic at the mRNA accumulation level (R-I.R-E, Figure 1C). Taken together, our results highlight the high rhythmicity of gene expression in human skeletal muscle, even under controlled laboratory routine. However, the number of genes being qualified as significantly rhythmic at the pre-mRNA and/or mRNA level was strongly dependent on the threshold level that was applied (Figure 1D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34114/elife-34114-fig1-v1.jpg)\n\n**Figure 1.:** (A) Heat map showing genes rhythmic at the pre-mRNA and mRNA level (R-I.R-E: upper panel), at the pre-mRNA level only (R-I: middle panel), and at the mRNA level only (R-E: lower panel). Standardized relative gene expression is indicated in green (low) and red (high) and ordered by their respective phase. (B) mRNA half-life proxy by exon/intron ratio showing lower stability for genes with rhythmic mRNA (R\u2013E) profiles. (C) Amplitude distribution of genes that are rhythmic only at the mRNA level (R-E, blue), the pre-mRNA level (R-I, red), or rhythmic for both (R-I.R-E). Genes with higher amplitude of transcription at the pre-mRNA level have a higher probability to be rhythmic at the mRNA level (R-I.R-E). (D) Number of genes in each group in relation to the -log10 BH corrected p-value; dashed line indicates threshold of 0.05. (E) Phase distribution at the pre-mRNA and mRNA level for the three groups described in (A). (F) Phase distribution for genes activated by acute muscle exercise (red), inflammation (blue), or both (green). (G) Temporal expression of core clock components, and (H) key muscle transcription factors. N\u00a0=\u00a010 human muscle biopsy donors. (I) Phase distribution of predicted rhythmic DNA motif activity.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34114/elife-34114-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Temporal expression of genes involved in vesicular trafficking; (B) Temporal expression of genes involved in glucose uptake; (C) Temporal expression of genes involved in lipid metabolism analyzed by RNA-seq. N\u00a0=\u00a010 human muscle biopsy donors.\n\nAs previously reported in mice, rhythmic gene transcription was distributed into two phases of transcript accumulation (04:00 and 16:00, Figure 1E). The afternoon peak (16:00) was enriched in genes related to muscle contraction and mitochondrial activity (Figure 1\u2014source data 2), whereas homologous genes in rodents were shared between the active but also the resting phase (McCarthy et al., 2007; Miller et al., 2007; Hodge et al., 2015). In contrast, among the genes highly activated in the middle of the night (04:00), many were associated with inflammation and immune response (Figure 1F).\n\nAmong the rhythmic genes, we observed high amplitude oscillations for the core clock genes ARNTL (BMAL1), NPAS2, CLOCK, PER2, PER3, CRY2, NR1D1 (REV-ERB\u03b1) and RORA, which were well synchronized among the 10 individuals (Figure 1G). In addition, several transcription factors associated with muscle metabolism and physiology like TFEB, a key regulator of lysosomal biogenesis and autophagy that also regulates glucose homeostasis and oxidative phosphorylation (Mansueto et al., 2017), KLF13, which plays a role in cardiac muscle cell development (LavalleeLavall\u00e9e et al., 2006), and KLF15, an important transcriptional regulator of muscle lipid metabolism (Haldar et al., 2012), showed an oscillatory profile. Moreover, also PPARD, the most abundant PPAR isoform in skeletal muscle and master regulator of muscle mitochondrial function (Jordan et al., 2017), and MYOD1, the key regulator of myogenesis and direct target of BMAL/CLOCK (Andrews et al., 2010) were rhythmically expressed in human skeletal muscle, likely orchestrating the temporal muscle transcriptome (Figure 1H). In addition to these transcription factors, genes involved in the secretion of myokines, glucose homeostasis and lipid metabolism displayed rhythmic transcription (Figure 1\u2014figure supplement 1A,B and C, respectively).\n\nTo gain more insight into the rhythmic transcriptional regulation observed in this dataset, we performed a DNA-binding motif enrichment analysis to identify those with rhythmic activity. As shown in Figure 1I, the 16:00 peak is enriched in MEF2 and MYOD1 motifs, in phase with MYOD1 expression, and both proteins synergize to activate gene expression (Taylor and Hughes, 2017). In parallel, the 4:00 peak is enriched in MYC and AP1 families of transcription factors, both downstream of the MAP kinase pathway activated by exercise (Aronson et al., 1997) or wound-induced inflammation (Aronson et al., 1998).\n\n### Cell-autonomous circadian clocks regulate functional gene expression in hSKM\n\nTo assess the impact of cell-autonomous circadian clocks operative in hSKM on skeletal muscle gene transcription and function, we used our previously developed model of efficient siCLOCK-mediated clock disruption (Perrin et al., 2015). RNA-seq was conducted on siCLOCK-transfected hSKM obtained from two male donors matched for age and BMI (Supplementary file 1-table S1, donors 1 and 2, in vitro part). Human primary myoblasts were cultured and differentiated in vitro into myotubes, transfected with siRNA, synchronized in vitro with a forskolin pulse, with subsequent sample collection every 2 hr during 48 hr for RNA-seq analysis (Figure 2\u2014figure supplement 1 and Materials and methods). CLOCK expression was reduced by at least 80% upon siCLOCK depletion, as assessed by RNA-seq and quantitative real-time PCR (Figure 2A and Figure 2\u2014figure supplement 2A). In parallel, bioluminescence profiles derived from hSKM transduced with a lentiviral Bmal1-luciferase vector were monitored as described previously (Perrin et al., 2015). As expected, the circadian amplitude of Bmal1-luciferase bioluminescence reporter profile became dampened upon siCLOCK compared to siControl and non-transfected counterparts (Figure 2\u2014figure supplement 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34114/elife-34114-fig2-v1.jpg)\n\n**Figure 2.:** Differential gene expression analysis between hSKM bearing a disrupted (siCLOCK) or intact (siControl) circadian clock. Comparison of the median gene expression at all analyzed circadian time points between the two groups. A total of 16,776 genes were detected by RNA-seq as expressed above the threshold of counts per million (CPM)\u00a0>3. (A) Core clock genes; (B) 15,446 genes remained unchanged (dark blue), and 1330 genes exhibited a\u00a0significantly different expression level upon siCLOCK-mediated clock disruption (light blue), with 588 being up-regulated (orange) and 742 down-regulated (grey) (FDR\u00a0<0.05 and p-value\u00a0<0.05). Altered genes comprised those related to glycerophospholipid and triglyceride metabolism, storage and transport (C) inositol phosphate metabolism (D) and sphingolipid metabolism and storage (E). (F) Relative levels of PC, PE, PI, PS, Cer GlcCer, SM, CL and TAG, analyzed by mass spectrometry based lipidomics in hSKM cells transfected with either siControl (orange bar) or siCLOCK (blue bar). Total phosphatidylcholine (PC) and glycosylceramide (GlcCer) levels are significantly decreased or increased, respectively, upon siCLOCK transfection. Data are mean\u00a0\u00b1\u00a0SEM, N\u00a0=\u00a04 (# p-value\u00a0<0.05). (*) for FDR\u00a0<0.05, (**) for FDR\u00a0<0.01, (***) for FDR\u00a0<0.001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34114/elife-34114-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Primary human myotubes were transfected with 20 nM of non-targeting siRNA (siControl) or with same amount of siCLOCK at day 6 of differentiation. 24 hr following siRNA transfection, in vitro synchronization by 10 \u00b5M forskolin pulse during 1 hr was conducted for all the dishes, except for those collected at time point 0 hr. Cells were harvested in duplicate dishes for each time point and for each donor, every 2 hr during 48 hr. Extracted RNA samples were subjected to RNA sequencing analysis or to real-time quantitative PCR (RT-qPCR).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34114/elife-34114-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Human primary myoblasts were transduced with lentiviral particles expressing Bmal1-luc and differentiated into myotubes. siControl or siCLOCK transfection was performed 24 hr prior synchronization with forskolin. (A) CLOCK mRNA was measured by RT-qPCR in samples used for RNA-seq and collected at time points 0 hr (before synchronization), 24 hr and 48 hr. Data were normalized to the mean of 9S and HPRT. CLOCK expression was reduced by 82 \u00b1 4% (mean of the three time\u00a0\u00b1\u00a0SEM, N\u00a0=\u00a02, done in duplicates; (***) p-value\u00a0<0.001) in siCLOCK-transfected cells. (B) Bmal1-luc bioluminescence profile shows an important reduction of amplitude in siCLOCK-transfected myotubes compared to controls. Representative Bmal1-luc oscillation profiles are shown for non-transfected (light blue line), siControl (black line), and siCLOCK (red line) transfected myotubes. Bmal1-luc oscillation profiles were recorded in duplicates (two experiments, one donor per experiment).\n\nWe first performed a differential analysis of the global gene expression profile across all 25 time points, starting from 0 hr and until 48 hr following synchronization. Out of the 16,776 mapped genes, the median values for all the time points, reflecting the overall expression levels of 1330 genes (8%), were significantly altered in siCLOCK-transfected hSKM compared to their control counterparts, with 742 being downregulated and 588 being upregulated (Figure 2B; Figure 2\u2014source data 1). As expected, core clock gene expression was affected, with NR1D1 (REVERB\u03b1), NR1D2 (REVERB\u03b2), PER3, TEF, BHLHE41 (DEC2), and DBP being significantly downregulated, and CRY1 being upregulated upon CLOCK depletion (Figure 2A).\n\n### Functional clocks operative in hSKM are required for proper lipid metabolism and response to insulin\n\nRemarkably, genes encoding for proteins essential for vesicle formation including SNAREs, solute transporters, and Rab GTPases exhibited significantly altered expression levels upon CLOCK depletion (Supplementary file 1-table S2). Additional genes involved in secretion pathways and exhibiting altered mRNA expression levels upon CLOCK depletion are listed in Supplementary file 1-table S3. Using the Panther classification system (Mi et al., 2017) for gene ontology (GO) term analysis, overrepresentation of genes associated with the regulation of nucleotide metabolism, transcription and RNA processing, as well as muscle contraction were identified within the significantly down- and/or upregulated genes (Supplementary file 1-table S4, and Figure 2\u2014source data 2). Furthermore, enrichment analysis using the Reactome pathway database was performed on the down- and/or upregulated genes. Of note, overrepresentation of genes related to muscle contraction, regulation of gene transcription, and cellular responses to stress and membrane trafficking were also identified (Supplementary file 1-table S5, Figure 2\u2014source data 3).\n\nIn addition, 42 transcripts involved in lipid metabolism were affected by CLOCK disruption. These comprised genes related to glycerophospholipid and triglyceride metabolism as well as lipid storage and transport (Figure 2C), in addition to those regulating inositol phosphate (Figure 2D) and sphingolipid metabolic pathways (Figure 2E). Importantly, the observed modifications in gene expression level were in an accord with significant alterations in absolute lipid metabolite levels, resulting in total phosphatidylcholine levels being downregulated, and glycosylceramide levels being upregulated in the absence of a functional myotube clock (Figure 2F, Supplementary file 1-table S1, donors 7\u201310 for in vitro part). The first matching a reduction in lysophosphatidylcholine symporter 1 (MFSD2A) and phosphatase LPIN1 levels (Figure 2C and F), and the latter matching the transcriptome outcome for UDP-glucose ceramide glucosyltransferase (UGCG) the key enzyme of de novo glucosylceramide biosynthesis (Figure 2E and F).\n\nOur differential analysis in human muscle cells demonstrates that genes involved in insulin-stimulated and contraction-induced glucose uptake, comprising TBC1D13, TBC1D4 (AS160), 14-3-3\u03b8 (YWHAQ), RAB35, STX6, and PDPK1 (PDK1), were significantly downregulated upon siCLOCK (Supplementary file 1-table S2), highlighting the pleiotropic effect of the skeletal muscle CLOCK gene/protein in regulating glucose uptake in response to insulin and/or to contraction.\n\nTo determine the protein levels of candidate genes identified by RNA-seq, hSKM cells established from five additional donor biopsies (for donor characteristics see Supplementary file 1-table S1) were transfected by siRNA targeting CLOCK. Matching the changes observed by RNA-seq, CLOCK mRNA was reduced by siCLOCK as determined by RT-qPCR (Figure 3A), leading to a reduction in CLOCK protein expression by 74% (Figure 3B). Moreover, the expression of the 14-3-3\u03b8 protein, a key regulator of GLUT4 translocation (Sakamoto and Holman, 2008; Kleppe et al., 2011), was decreased by about 28% under these conditions (Figure 3C), matching the decrease in its gene expression (Supplementary File 1-table S2). In contrast, AS160 protein levels did not change significantly (Figure 3\u2014figure supplement 1) despite a reduction at the mRNA expression level (Supplementary file 1-table S2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34114/elife-34114-fig3-v1.jpg)\n\n**Figure 3.:** (A) CLOCK mRNA was measured in hSKM cells transfected with siControl or siCLOCK by RT-qPCR and normalized to the mean of 9S and HPRT. CLOCK expression was reduced by 91 \u00b1 2% (mean\u00a0\u00b1\u00a0SEM, N\u00a0=\u00a04; (***) p-value\u00a0<0.001) in siCLOCK-transfected cells. Protein levels of CLOCK (B) and 14-3-3\u03b8 (C) were assessed by western blot. Left panel: representative western blot; right panel protein quantification over all monoplicates (mean\u00a0\u00b1\u00a0SEM, N\u00a0=\u00a05). CLOCK and 14-3-3\u03b8 protein levels were reduced by 75 \u00b1 2%, and 28 \u00b1 8%, respectively. (D) Glucose uptake rates (in pmol/mg.min) measured in the absence (basal) or presence (insulin) of insulin (1 hr, 100 nM) in siControl or siCLOCK-transfected cells. Note significant reduction of basal (31 \u00b1 3%) and insulin-stimulated glucose uptake (28 \u00b1 3%). Data are mean\u00a0\u00b1\u00a0SEM of four independent experiments using myotubes from four different donors (same as for A-C). (*) p-value\u00a0<0.05, (**) p-value\u00a0<0.01, (***) p-value\u00a0<0.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34114/elife-34114-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Representative western blot for TBC1D4/AS160 in hSKM cells transfected with either siControl or siCLOCK for 72 hr. Quantification of TBC1D4/AS160 protein levels shows no statistically significant difference of upon CLOCK disruption. Data are mean\u00a0\u00b1\u00a0SEM (N\u00a0=\u00a05, monoplicates).\n\nFinally, we analyzed the impact of clock disruption on the ability of hSKM to take up glucose in response to insulin. The assessment of glucose uptake, using a radioactive glucose analogue, demonstrated an increase in glucose uptake upon insulin stimulation in non-synchronized siControl and siCLOCK-transfected myotubes (siControl: basal vs. insulin p-value\u00a0=\u00a00.019; siCLOCK: basal vs. insulin p-value\u00a0=\u00a00.017). Importantly, we observed a significant decrease in both basal (30%), and insulin-stimulated (27%) glucose uptake in siCLOCK-transfected myotubes, as compared to their siControl counterparts (Figure 3D left and right panels, respectively).\n\n### RNA-seq reveals rhythmically expressed genes in cultured hSKM synchronized in vitro\n\nWe next aimed at identifying genes that exhibited rhythmic profiles in hSKM synchronized in vitro. The existing algorithms JTK_CYCLE (Hughes et al., 2010) and CosinorJ (Mannic et al., 2013) do not allow for a satisfactory analysis of datasets containing large differences in amplitude, observed among the two cycles in our datasets. We therefore developed a novel algorithm, adapted for the analysis of our RNA-seq datasets, comprising high-resolution analysis of two full cycles (25 time points over 48 hr) following in vitro synchronization (see Materials and methods for details). Our in vitro algorithm was validated on the temporal expression profiles of key core clock genes from two published large-scale time series (Atger et al., 2015; Petrenko et al., 2016) and on the model dataset cycMouseLiverRNA from the MetaCycle R package. Briefly, after conversion of the raw data to log2 RPKM values and filtering for log2 RPKM\u00a0>0, temporal patterns of the resulting 12,985 genes were grouped into 16 models (Figure 4A, Figure 4\u2014source datas 1 and 2), with models 1 to 15 comprising 994 rhythmic genes (7.65%), and model 16 comprising 11,991 non-rhythmic genes (92.35%).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34114/elife-34114-fig4-v1.jpg)\n\n**Figure 4.:** (A) Total of 12,985 genes were identified by RNA-seq as expressed above log2 RPKM\u00a0>0. Genes were subjected to the circadian analysis, adapted for high-resolution datasets over 48 hr. Genes were categorized as rhythmic or non-rhythmic (NR) (left diagram) and rhythmic genes (994)\u00a0were\u00a0grouped into 15 models (right panel). Genes that were non-rhythmic in either one of the 15 models (11,991 genes) are represented in model 16. (B) Heat maps for genes assigned to models 1 to 4. Relative expression is indicated in green (low) and red (high). (C) Individual temporal expression profiles of core clock genes ARNTL, NR1D1, NR1D2, CRY1, CRY2, PER1, PER2 and PER3 in siControl or siCLOCK-transfected cells. (D) Upper panel: Representative examples for genes assigned to models 1\u20134. Lower panel: Circadian amplitude quantification of siControl and siCLOCK in models 1\u20134.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34114/elife-34114-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) More rhythmic transcripts are found in donor two compared to donor one in both siControl and siCLOCK condition either\u00a0due to the genetic differences between both donors or due to a better response to the forskolin pulse used for synchronization. (B) Circadian amplitude quantification for the summary of models 1\u20134 in siControl and siCLOCK. (C) Examples of genes qualified as rhythmic in model 1\u20134.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34114/elife-34114-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Expression profile of NPAS2, TEF and BHLHE41 assessed by RNA-seq. (B) ARNTL (BMAL1), NR1D1 (REVERB\u03b1) and PER3 measured by RT-qPCR. mRNA levels were analyzed every 4 hr over 48 hr for each donor to confirm the RNA-seq results. Data were normalized to the mean of 9S and HPRT. For donor one data represent monoplicates, whereas for donor two data were done in duplicates. Donor 1: circle; donor 2: triangle; siControl: black line; siCLOCK: red line.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/34114/elife-34114-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** CCNB1, CDC6, CDC7, CDC20, CDK1, E2F1, E2F7, MCM2, MCM5, MCM7, PLK1, PRC1, RBL1/p107 and TPX2 expression profiles obtained by RNA-seq. All genes shown were classified in model 1 except for E2F1 and MCM5 (model 3).\n\nBecause the number of rhythmic genes exhibited larger variations between the two analyzed cell cultures, established from two different human individuals than between siControl and siCLOCK (Figure 4\u2014figure supplement 1A), we proceeded with a deeper analysis of models 1 to 4, which group together genes that are rhythmic in the siControl situation for both donor cell cultures. According to our analysis, model 1 comprises 73 genes, classified as rhythmic in both donors upon siControl and siCLOCK, models 2 and 3 include 39 and 34 genes, respectively, that are rhythmic in both siControl donors and in one siCLOCK donor respectively, and model 4 comprises 44 genes that are rhythmic in siControl, but not in siCLOCK (Figure 4B). Circadian core clock genes clustered to model 1, as they exhibited a rhythmic mRNA profile in siControl and a flattened, but still rhythmic, profile upon siCLOCK (Figure 4C and Figure 4\u2014figure supplement 2), indicating a presence of partially functional circadian oscillator. Of note, classification of a temporal gene profile as rhythmic by our algorithm did not take into consideration amplitude alterations, like those generated by siCLOCK-treatment, as long as the temporal profile was qualified as circadian. As amplitude values were indeed often blunted upon siCLOCK treatment, to quantify such amplitude changes a log10 transformation was applied, providing approximation to a normal distribution using a paired t-test. In agreement with our previous publication (Perrin et al., 2015), the amplitude of mRNA accumulation was significantly decreased in siCLOCK samples (Supplementary file 1-table S6, Figure 4\u2014figure supplement 1B).\n\nIn summary, 190 genes were qualified as rhythmic in the two analyzed cell cultures, and were clustered into models 1\u20134 (Figure 4\u2014source datas 1 and 2), as exemplified in Figure 4D (upper panels) and in Figure 4\u2014figure supplement 1C. Importantly, similarly to core clock genes, also these functional genes exhibited a blunted circadian amplitude upon clock disruption (Figure 4D, lower panels, Figure 4\u2014figure supplement 1B). For instance, CAMKK1, classified as rhythmic in both siControl and siCLOCK conditions (model 1), exhibited a significant circadian amplitude reduction upon siCLOCK (Figure 4D, Supplementary file 1-table S6). In addition, SERPINE1, a myokine whose secretion by myotube cells was reduced upon clock disruption (Perrin et al., 2015), presented lower amplitude in siCLOCK-transfected cells (Supplementary File 1-table S6). Panther database analysis for genes assigned to models 1\u20134 suggested enrichment for a number of GO term and Reactome pathways, comprising cell cycle and mitotic regulation (Figure 4\u2014figure supplement 3, Supplementary file 1-tables S4-5, Figure 4\u2014source datas 3 and 4).\n\n### Comparative analysis of diurnal rhythms of gene expression in human skeletal muscle tissue and cultured hSKM\n\nConsequently, we compared rhythmic gene expression between muscle biopsy and cultured hSKM cells (Figure 5A). Among the 190 transcripts that were identified as rhythmic in hSKM cells (Figure 4A, models 1\u20134, Figure 5\u2014source data 1), 14 transcripts were excluded as they were representing non-protein coding sequences or pseudogenes. Additional 26 genes, associated with mitotic cell cycle functions, and further 17 genes related to cell proliferation, adhesion and differentiation, were only found in hSKM and are likely a consequence of incomplete myotube differentiation in cell culture, as opposed to fully differentiated muscle tissue. Cultured muscle cells lack the in vivo environment and the chemical communication that exists within the tissue. Notably, the absence of neuronal connections further limits the final differentiation of cultured myotubes (for review see [Aas et al., 2013]).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/34114/elife-34114-fig5-v1.jpg)\n\n**Figure 5.:** (A) Scatter plot, representing the amplitude of expression in relation to the corrected p-value for genes that were rhythmic in vivo (human muscle biopsies). Genes that were also rhythmic in vitro (hSKM, models 1\u20134) are colored in red. Blue dots represent genes with a p-value\u00a0<0.01 and log2 amp\u00a0>0.5. (B) Phase distribution plot of genes rhythmic in muscle biopsies and primary myotubes shows enrichment at the 04:00 time point. (C) Examples of genes, involved in glucose homeostasis and muscle regeneration, that are rhythmic in vivo and in vitro (RNA-seq data, N\u00a0=\u00a010).\n\nAmong the remaining 133 genes, 99 were expressed in human muscle biopsies. Within this group of overlapping genes, 35 were also qualified as rhythmic at the mRNA level (q-val\u00a0<0.05) in muscle tissue (Figure 5\u2014source data 1). The genes rhythmic in both in vivo and in vitro datasets included the core clock components (Figure 5A), as well as functional genes that were enriched at the 04:00 time point (Figure 5B). Interestingly, genes implicated in glucose homeostasis (KLF11, GFPT2, NAMPT) and in muscle regeneration (PLAU, PLD1, PIM1), were rhythmic both in vivo and in vitro, suggesting an important role for the circadian clock in regulating muscle physiology (Figure 5C).\n\n## Discussion\n\nThis study presents the first large-scale circadian transcriptome RNA-seq analysis in muscle biopsies from multiple volunteers and in hSKM cells synchronized in vitro with 2 hr resolution over 48 hr, in the presence of a functional or disrupted cell-autonomous clock, with subsequent analysis of its impact on gene expression. Moreover, we demonstrate that CLOCK depletion in cultured primary skeletal myotubes led to significant changes in gene expression (Figure 2), and related physiological outputs, comprising the regulation of basal and insulin-stimulated glucose uptake, lipid homeostasis (Figure 3), and myokine secretion, as summarized in Figure 6. These results provide new insights into the targets of the molecular clock in human skeletal muscle, previously only studied in rodents (McCarthy et al., 2007; Miller et al., 2007; Dyar et al., 2014; Zhang et al., 2014; Dyar et al., 2015). Finally, to dissect the effects of the cell-autonomous endogenous clock from SCN signals and entrainment cues, this dataset was compared to the diurnal transcriptome of human skeletal muscle collected in form of serial muscle biopsies across 24 hr (Figures 1 and 5).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/34114/elife-34114-fig6-v1.jpg)\n\n**Figure 6.:** Clock disruption leads to impaired insulin sensitivity and decrease in glucose uptake (1), causes a dysregulation of genes involved in vesicle trafficking (2) and impacts lipid metabolism and lipid metabolite oscillations (3) as reported in Loizides-Mangold et al. (2017).\n\n### Comparison between the circadian transcriptome of synchronized myotube cells in vitro, and human muscle tissue collected in vivo\n\nOur in vitro myotube system allows us to explore the transcriptional regulation of muscle target genes without confounding effects of the SCN, rest-activity and feeding-fasting cycles (Harfmann et al., 2015). Regarding the rhythmic analysis of in vitro RNA-seq data, larger variations were observed between the two donors than between siControl and siCLOCK conditions (Figure 4\u2014figure supplement 1), likely due to the genetic heterogeneity among human individuals. The low number of subjects therefore represents a limitation of our study, despite high time-resolution of 2 hr for sample collection conducted over 48 hr, that resulted in as many as 25 time points per myotube donor. We therefore concentrated on genes, which were rhythmic in both donors in siControl condition, irrespectively of their\u00a0rhythmicity disruption by siCLOCK treatment. In total, 994 circadian genes (7.65% of the global transcriptome) were rhythmic in at least one of the four models (models 1\u20134, Figure 4A\u2013B), exceeding the value found for U2OS cells, exhibiting 1.5% of oscillating gene transcripts (Krishnaiah et al., 2017). When compared with the diurnal transcriptome of human skeletal muscle biopsies, the percentage of rhythmic genes was considerably lower, likely due to the cell culture situation where the circadian amplitude is gradually lost (Figure 2\u2014figure supplement 2B) in the absence of entrainment (Hughes et al., 2009), or due to effects driven by the SCN or behavioral rhythms rather than by the local peripheral clock. Moreover, we cannot exclude that discrepancies between the in vivo and in vitro circadian datasets are in part also influenced by the fiber type composition of vastus lateralis and gluteus maximus, as demonstrated by myosin isoform analysis (Loizides-Mangold et al., 2017). Additional differences with respect to gene rhythmicity between the two datasets may stem from potential differences due to the different algorithms employed for the data analyses.\n\nAmong the 35 genes classified as rhythmic in cell culture and in skeletal muscle tissue, were genes involved in glucose metabolism and in muscle regeneration, including PLAU (LluisLlu\u00eds et al., 2001) and PIM1 kinase (Fischer et al., 2009), along with core clock components such as NR1D1 and NR1D2 (Figure 5A), previously identified as the most rhythmic transcripts across all human and mouse datasets (Laing et al., 2015). Phospholipase PLD1 (Teng et al., 2015), involved in intracellular membrane trafficking and maintenance of glucose homeostasis in human skeletal muscle (Huang et al., 2005) was rhythmically expressed in vivo and in vitro. Moreover, oscillatory genes in both datasets included NAMPT, KLF11, and GFPT2, the latter controlling the flux of glucose into the hexosamine pathway, tightly linked to hyperglycemia and insulin resistance (Coomer and Essop, 2014).\u00a0The expression of NAMPT, a key regulator of NAD+ synthesis and muscle maintenance (Frederick et al., 2016), was previously shown to be regulated by CLOCK and BMAL1 in complex with SIRT1 (Ramsey et al., 2009; Garten et al., 2015). Importantly, the diurnal rhythm of secreted NAMPT is disturbed by sleep loss, and positively associates with impairment of postprandial glucose metabolism (Benedict et al., 2012). The transcription factor KLF11, a glucose-inducible regulator of insulin transcription and secretion, that is a member of the Kr\u00fcppel-like family of transcription factors proposed as circadian (Yoshitane et al., 2014), was found to be regulated by the circadian clock in mouse kidney and epididymal fat tissue (Guillaumond et al., 2010), and is possibly involved in postprandial glucose metabolism in skeletal muscle (Neve et al., 2005).\n\nComparison of our in vitro dataset to the results published on U2OS cells (Hughes et al., 2009; Krishnaiah et al., 2017) revealed that among the 190 genes that were rhythmic in human skeletal myotubes, 30 were also rhythmic in U2OS. Among those were members of the core-clock machinery, and multiple genes involved in cell cycle progression and mitosis. Moreover, the sulfatase ARSJ, involved in glycosphingolipid metabolism, EXOSC8, a regulator of mRNA stability, LRRC16A, involved in actin filament organization, and TUBA1C, encoding for a structural constituent of the cytoskeleton, as well as E2F1 were rhythmic in skeletal myotubes and in U2OS cells. Interestingly, the RING finger domain protein-encoding gene TRIM47 exhibited a rhythmic expression in human skeletal myotubes, in human muscle biopsies, and in U2OS cells.\n\nA\u00a0comparison of our in vivo dataset (exonic signals) to published temporal gene expression databases of mouse skeletal muscle (Dyar et al., 2014; Zhang et al., 2014) revealed 107 common rhythmic genes between mouse and human skeletal muscle. When comparing the circadian phases of core-clock components in our database to the temporal profiles of the corresponding genes in rodents (Dyar et al., 2014; Zhang et al., 2014), we observed a phase shift of 8\u201310 hr. This result is in good agreement with a phase shift observed between peripheral clocks in nocturnal versus diurnal species, which is indeed typically smaller than 12 hr (Mure et al., 2018). The question remains at what level such a phase-shift between nocturnal and diurnal species occurs, and why it is not exactly 12 hr in peripheral organs (Mure et al., 2018). Further comparative studies, conducted in the same type of tissue and with the same methodology, will be required to explore this fundamental issue.\n\nAn important observation was the strong induction of genes associated with inflammation and immune response in human muscle in the early morning hours (04:00) (Figure 1F), 16 hr after sampling of the first biopsy. We cannot fully rule out that repeated muscle sampling contributed to this signature, as previously reported for repeated biopsy sampling of a single muscle via the same skin incision site over 25 hr (Friedmann-Bette et al., 2012). However, clinical sampling was optimized to minimize this effect, as serial vastus lateralis biopsies were sampled across alternating limbs and from separate skin incision sites, each proximal to the previous (Van Thienen et al., 2014), not excluding the possibility that circulating molecules may diffuse an inflammatory signal between limbs (Catoire et al., 2012). Importantly, this immune signature was restricted to a single time point in the early morning hours, and thus likely does not exclusively result from responses to muscle injury, which would have further increased at the last time point (08:00). Given that inflammatory cytokines have been described as myokines and important regulators of muscle physiology, this could thus represent a true signature with relevant outcomes for muscle physiology.\n\nOne limitation of the comparison between RNA-seq datasets obtained for in vivo and in vitro skeletal muscle and hSKM samples in the present study stems from different analyses methods applied for the two datasets. The algorithms applied here for these two datasets were chosen to optimally fit each dataset differing in the number of time points and the time span of samples collection. Indeed, cellular samples were collected every 2 hr over 48 hr resulting in 25 time points, whereas muscle tissue biopsies were collected every 4 hr over 24 hr, resulting in six time points only, due to obvious practical limitations of repetitive muscle tissue biopsy sampling from the same individuals.\n\n### Effect of CLOCK depletion on myotube gene transcription and core clock gene regulation\n\nEfficient clock disruption in adult hSKM cells via siRNA-mediated CLOCK knockdown by our previously validated protocol led to significant changes in gene expression (Figure 2A and B) (Perrin et al., 2015; Petrenko et al., 2016; Loizides-Mangold et al., 2017). Most core clock genes were downregulated upon siCLOCK transfection, in addition to a flattening of the Bmal1-luciferase profile (Figure 2\u2014figure supplement 2B), consistent with our previous data for hSKM and human pancreatic islets (Perrin et al., 2015; Saini et al., 2016). However, despite the observed amplitude blunting, core clock components still presented remnant circadian expression profiles that can likely be attributed to the partial downregulation of CLOCK, and to compensatory mechanisms that occur to maintain the circadian machinery (DeBruyne et al., 2007) (Figure 2A, Figure 2\u2014figure supplement 2A), leading to the observation that the effect on absolute gene expression was more pronounced than the effect on mRNA rhythmicity (Figure 4C and D). Although our established experimental system for cellular clock disruption mediated by efficient CLOCK knockdown proved highly useful to study transcriptional and functional outputs in cultured human primary cells, one should keep in mind that core-clock genes also perform clock unrelated functions. The same holds true for genetic mouse models, where different core-clock gene KO strains exhibit distinct phenotypes. To discriminate between clock-related and unrelated effects of the CLOCK gene knockdown, alternative methods for the circadian clock perturbation will be required.\n\n### Muscle fiber type parameters are affected in response to siCLOCK\n\nGluteus maximus is a slow muscle characterized by high levels of MYH7 expression, fatigue resistance, and slow speed contraction as well as an oxidative metabolic type (Talbot and Maves, 2016). Although the levels of key transcription factors regulating fiber-type-specific genes, including MYOD1, NFATC1, SIRT1 and PPARGC1A were not significantly altered upon siCLOCK, we identified an upregulation of multiple genes characteristic for type I slow fibers, as well as a downregulation of genes associated with type II fast fibers (Supplementary file 1-table S7). Whether these changes affect mitochondrial activity stays to be further explored. Importantly, a recent study has demonstrated that Bmal1 KO myotubes display reduced mitochondrial respiration and a reduced expression of hipoxia-inducible factor 1\u00a0(HIF1) target genes (Peek et al., 2017). In agreement, we also observed reduced expression of the HIF target gene VEGFA upon clock disruption (Supplementary file 1-table S7), supporting the hypothesis that clock - HIF interactions play an important role in the glycolytic capacity of skeletal muscle. In addition, we also observed an upregulation of myosin light chain kinase MLCK (MYLK) that contributes to force generation by myofilaments. Taken together these observations reinforce the hypothesis that clock disruption induces a global switch in the genetic program towards slow type I muscle fibers, as it was previously suggested in muscle-specific Bmal1 KO mice (Hodge et al., 2015).\n\n### Muscle clock alteration impairs glucose uptake in response to insulin\n\nSkeletal muscle is responsible for 70\u201380% of insulin-stimulated glucose uptake (DeFronzo and Tripathy, 2009). Importantly, we observed a 30% decrease in glucose uptake for both basal and insulin stimulated conditions in siCLOCK-transfected hSKM (Figure 3C). Previous studies have reported similar observations in either Bmal1-specific muscle KO, or in Clock\u220619 mutant mice (Kennaway et al., 2007; Dyar et al., 2014; Harfmann et al., 2016). Recently, it was shown that cardiomyocyte-specific Bmal1 KO and Clock\u039419 mutant mice exhibit defects in insulin-regulated processes, including over-activation of AKT and mTOR signaling (McGinnis et al., 2017). Although we did not see significant changes in GLUT1 or GLUT4 gene expression levels, our differential analysis highlighted many genes involved in the regulation of the GLUT4 translocation pathway (Supplementary file 1-table S2 and Figure 2\u2014source data 1).\n\nUpon closer analysis of the GLUT4 translocation and recycling pathways, we observed changes upon siCLOCK treatment at each step, with several genes being differentially expressed. Specifically, the enzyme PI4K2A, catalyzing the phosphorylation of phosphatidylinositol (PI) to phosphatidylinositol 4-phosphate (PI4P), was downregulated at the mRNA level, which may result in decreased PIP2 and PIP3 levels (Pullen et al., 1998; Sakamoto and Holman, 2008). Additionally, siCLOCK-depleted cells overexpressed MAPKAP1 (mSIN1), one component of the mTORC2 complex required for AKT phosphorylation (Frias et al., 2006), and CAV-3, essential for PI3K and AKT activity as well as GLUT4 translocation in muscle (Fecchi et al., 2006; Tan et al., 2012). Moreover, the observed reduction of 14-3-3\u03b8 (YWAHQ) upon siCLOCK at both the mRNA and protein level may lead to an attenuated inhibition of TBC1D1 and TBC1D4 (AS160), and thus block GLUT4 translocation to the plasma membrane (Ramm et al., 2006; Roach et al., 2007; An et al., 2010; Kleppe et al., 2011; Szekeres et al., 2012). Consistent with this theory, we observed a modest upregulation of the Rab-GTPase-activator TBC1D1, in addition to a downregulation of RGC2 and an upregulation of TPM3 at the mRNA level. In summary, regulation of GLUT4 translocation and recycling pathways may be affected upon clock disruption with important consequences on glucose uptake and insulin sensitivity as summarized in Figure 6.\n\n### Muscle clock disruption influences the expression of genes involved in vesicle trafficking\n\nGLUT4 located at the plasma membrane, is endocytosed in clathrin-coated vesicles and further recycled (Leto and Saltiel, 2012; Jaldin-Fincati et al., 2017). We observed that several factors of the clathrin-mediated endocytosis machinery were altered upon CLOCK depletion (Supplementary file 1-table S2), among them FNBP1 (FBP17), EPN2, HIP1, and SYT1. Furthermore, our results suggest that CLOCK depletion impacts on calcium levels in the cytoplasm as SYT1 acts as a calcium sensor, and in the presence of elevated Ca2+ levels promotes the fusion of close membranes (Martin, 2015).\n\nOnce GLUT4 is endocytosed, it is transported to early endosomes using RAB5 (Stenmark et al., 1994; Leto and Saltiel, 2012). As RAB5B was upregulated upon siCLOCK, it is suggesting that this recycling step might be increased. Moreover, we found downregulation of TBC1D16, which was shown to regulate RAB4 activity, suggesting a possible increase in the fast remobilization of GLUT4 at the plasma membrane (Goueli et al., 2012).\n\nWe have previously demonstrated that the basal secretion of myokines, such as IL-6, IL-8, and MCP-1, exhibits a circadian pattern, which was strongly disrupted in hSKM after CLOCK silencing in vitro (Perrin et al., 2015). Here, our transcriptional analysis showed that key regulators of the exocytosis machinery were altered upon clock disruption (Supplementary file 1-tables S2 and S3). Both VAMP3 and STX6, which are involved in IL-6 secretion in mouse macrophages (Manderson et al., 2007), were downregulated at the mRNA level (Supplementary file 1-tables S2 and S6), confirming previous results that clock disruption impacts on vesicle trafficking and secretion (Marcheva et al., 2010; Saini et al., 2016). Importantly, when compared with results from clock disrupted human islets (Saini et al., 2016) we found that numerous genes involved in hormone secretion by pancreatic islets were affected in a similar manner in hSKM (Supplementary file 1-table S8).\n\nFurther downstream, GLUT4 is sent to the late endosome for degradation by the lysosome or targeted to the endosomal recycling compartment (ERC), through its interaction with VAMP3 (Dugani et al., 2008; Rose et al., 2009). PI4K2A, which was downregulated upon clock depletion (Supplementary file 1-table S2), might be involved here as it regulates VAMP3 trafficking to perinuclear membranes (Volchuk et al., 1995; JovicJovi\u0107 et al., 2014). In addition, CAMSAP2, involved in microtubule stabilization (Hendershott and Vale, 2014), and KIF13A, associated with recycling endosome tubules (Delevoye et al., 2014), were also downregulated upon CLOCK disruption (Supplementary file 1-tables S2 and S3). Taken together these results, as summarized in Figure 6, suggest that the muscle clock may play an important regulatory function in the control of the secretion machinery via transcriptional regulation.\n\n### Cell-autonomous clock disruption in hSKM might impact energy substrate utilization\n\nThe circadian clock has been associated with the control of muscle development and regeneration, as clock mutant mice exhibit defects in muscle metabolism, architecture and composition (for review see [Chatterjee and Ma, 2016; Schiaffino et al., 2016]). Here, we found alterations in the expression of several genes involved in lipid metabolism, calcium handling, electron transport chain, and glucose metabolism (Figure 2C\u2013E, Supplementary file 1-table S7), suggesting a shift in energy substrate utilization upon clock disruption, as has been proposed previously in rodents upon loss of Bmal1 (Hodge et al., 2015; Harfmann et al., 2016). AMP-activated protein kinase, a potent regulator of skeletal muscle fat metabolism (Thomson and Winder, 2009) might be dysregulated upon clock disruption as we observed upregulation of its regulatory subunit PRKAG2 and downregulation of subunit PRKAG3. Previous work reported downregulation of both subunits in Bmal1-specific muscle KO mice (Hodge et al., 2015), suggesting that this gene could be directly controlled by BMAL1.\n\nClock disruption causes changes in lipid levels as has been described previously for the liver of Per1/2 KO mice (Adamovich et al., 2014). In hSKM, siCLOCK treatment affected several genes involved in lipid metabolic processes, lipid storage and transport (Figure 2C\u2013E), which resulted in total phosphatidylcholine and glycosylceramide level alterations (Figure 2F). Specifically, we found an increase in the long chain fatty acid transporter CD36 and in FABP3, consistent with previous results obtained in mouse skeletal muscle upon clock disruption (Hodge et al., 2015; Schiaffino et al., 2016). In addition, we observed an upregulation of MSTN upon siCLOCK, which could further promote the increase in CD36 and FABP3, leading to impaired glucose uptake (Figure 3D). Interestingly, muscle-specific myostatin (Mstn) KO mice exhibit a reduction of lipid transporters, including FABP3 and CD36, a diminution of lipid oxidation, higher levels of saturated and unsaturated fatty acids, and a decrease of cardiolipin and triglycerides (Baati et al., 2017). Furthermore, downregulation of Mstn in skeletal muscle from type one diabetic mice leads to an increase of Glut1 mRNA and GLUT4 protein levels, promoting insulin-stimulated glucose uptake (Coleman et al., 2016). Altogether, these results confirm previous rodents studies and indicate a shift in substrate utilization in skeletal muscle from carbohydrates to lipids with impact on muscle metabolism and glucose homeostasis (Dyar et al., 2014; Dyar et al., 2015; Hodge et al., 2015; Harfmann et al., 2016).\n\n### Conclusions\n\nIn summary, our study provides (1) a comparison between rhythmic transcriptome databases obtained from human muscle tissue and cultured primary cells derived from muscle biopsies, and (2) the identification of pathways regulated by CLOCK in skeletal muscle, involved in glucose uptake, myokine secretion, and lipid metabolism (Figure 6). Human primary cells cultured in vitro have been used as a model to study human disease and metabolism (Aas et al., 2013; Saini et al., 2015). In combination with tissue analysis as presented here, primary cell culture constitutes a powerful model to study human metabolism, and warrants further analyses in additional metabolically active tissues in physiological conditions, and in the context of metabolic diseases.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-AS160 (C69A7) Rabbit mAb</td>\n      <td>Cell Signaling</td>\n      <td>Cat. #2670 RRID:AB_2199375</td>\n      <td>1:1000; for western blot; primary Ab</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-14-3-3 \u03b8 Rabbit polyclonal</td>\n      <td>Cell Signaling</td>\n      <td>Cat. #9638 RRID:AB_2218251</td>\n      <td>1:200; for western blot; primary Ab</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-CLOCK(H276) Rabit polyclonal</td>\n      <td>Santa Cruz\u00a0Biotechnology</td>\n      <td>Cat. sc-25361 RRID:AB_2260802</td>\n      <td>1:200; for western blot; primary Ab</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-actin Rabbit polyclonal</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat. A2066 RRID:AB_476693</td>\n      <td>1:1000; for western blot; primary Ab</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>goat anti-rabbit-IgG HRP</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat. A8275 RRID:AB_258382</td>\n      <td>1:3000; for western blot; secondary Ab</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Bmal1-luciferase (luc) reporter</td>\n      <td>Liu et al., 2008; PMID:18454201</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>ON-TARGETplus Non-targeting\u00a0Pool</td>\n      <td>Dharmacon</td>\n      <td>D-001810-10-20</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>ON-TARGETplus human CLOCK siRNA SMARTpool</td>\n      <td>Dharmacon</td>\n      <td>L-008212-00-0020</td>\n      <td>Target Sequences: CAACUUGCACCUAUAAAUA CGACAGGACUGGAAACCUA GAACAACGGACACGCAUGA CUAGAAAGAUGGACAAAUC</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SuperSignal West Pico Chemiluminescent Substrate</td>\n      <td>Thermo Fisher\u00a0Scientific</td>\n      <td>Prod. #34080</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Quant-iT\u00aa RiboGreen\u00aa RNA Assay Kit</td>\n      <td>Thermo Fisher\u00a0Scientific</td>\n      <td>R11491</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RNeasy Mini kit</td>\n      <td>Qiagen</td>\n      <td>Ref # 74104</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>TruSeq Stranded Total RNA Library Prep Kit with Ribo-Zero Gold Set A (48 samples, 12 indexes)</td>\n      <td>Illumina</td>\n      <td>RS-122\u20132301</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>TruSeq Stranded Total RNA Library Prep Kit with Ribo-Zero Gold Set B (48 samples, 12 indexes) Indexes only</td>\n      <td>Illumina</td>\n      <td>RS-122\u20132302</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>TruSeq RNA Library Prep Kit v2</td>\n      <td>Illumina</td>\n      <td>RS-122\u20132001/RS-122\u20132002</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>HiSeq PE Cluster Kit V4 - cBot</td>\n      <td>Illumina</td>\n      <td>PE-401\u20134001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>HiSeq SBS Kit V4 250 cycle kit</td>\n      <td>Illumina</td>\n      <td>FC-401\u20134003</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>KAPA HiFi HotStart ReadyMixPCR Kit</td>\n      <td>Kapa BioSystems (Roche)</td>\n      <td>KK2602</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Quant-iT PicoGreen dsDNA Assay Kit</td>\n      <td>Thermo Fisher\u00a0Scientific</td>\n      <td>P7589</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>LabChip DNA High Sensitivity Reagent Kit</td>\n      <td>Perkin Elmer</td>\n      <td>CLS760672</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Forskolin</td>\n      <td>Sigma-Aldrich</td>\n      <td>F6886</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Luciferin</td>\n      <td>Prolume LTD</td>\n      <td>#260150</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>2-deoxy-[3H]-D-glucose</td>\n      <td>PerkinElmer</td>\n      <td>NET328A001MC</td>\n      <td>Specific Activity: 5\u201310 Ci (185-370GBq)/mmol, 1mCi (37MBq)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Insulin</td>\n      <td>Sigma-Aldrich</td>\n      <td>I9278</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Potassium phosphate monobasic</td>\n      <td>Sigma-Aldrich</td>\n      <td>P5655</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>HiPerFect transfection reagent</td>\n      <td>Qiagen</td>\n      <td>Cat No./ID: 301705</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tert-butyl methyl ether</td>\n      <td>Sigma-Aldrich</td>\n      <td>#20256</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Methylamine solution</td>\n      <td>Sigma-Aldrich</td>\n      <td>#534102</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Methanol LC-MS CHROMASOLV</td>\n      <td>Fluka (Thermo\u00a0Fisher Scientific)</td>\n      <td>#34966</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Water LC-MS CHROMASOLV</td>\n      <td>Fluka (Thermo\u00a0Fisher Scientific)</td>\n      <td>#39253</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Chloroform, stabilized with ethanol, for HPLC</td>\n      <td>ACROS Organics (Thermo\u00a0Fisher Scientific)</td>\n      <td>#390760010</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>12:0 PC (DLPC)</td>\n      <td>Avanti Polar Lipids</td>\n      <td>#850335</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>17:0-14:1 PE</td>\n      <td>Avanti Polar Lipids</td>\n      <td>LM1104</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>17:0-14:1 PI</td>\n      <td>Avanti Polar Lipids</td>\n      <td>LM1504</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>17:0-14:1 PS</td>\n      <td>Avanti Polar Lipids</td>\n      <td>LM1304</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>12:0 SM (d18:1/12:0)</td>\n      <td>Avanti Polar Lipids</td>\n      <td>#860583</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>C17 Ceramide (d18:1/17:0)</td>\n      <td>Avanti Polar Lipids</td>\n      <td>#860517</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>C8 Glucosyl(\u00df) Ceramide (d18:1/8:0)</td>\n      <td>Avanti Polar Lipids</td>\n      <td>#860540</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Rstudio</td>\n      <td>Rstudio</td>\n      <td>R version 3.3.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism 5</td>\n      <td>GraphPad</td>\n      <td>NA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Excel 2016</td>\n      <td>Microsoft</td>\n      <td>NA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>LumiCycle</td>\n      <td>Actimetrics</td>\n      <td>NA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>STAR: ultrafast universal RNA-seq aligner</td>\n      <td>Dobin et al., 2013 PMID: 23104886</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>edgeR package</td>\n      <td>Robinson et al., 2010 PMID: 19910308</td>\n      <td>edgeR version 3.16.5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>lme4 R package</td>\n      <td>Bates et al., 2015 DOI:10.18637/jss.v067.i01</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>lmtest R package</td>\n      <td>Zeileis et al., 2002 DOI:10.18637/jss.v007.i02</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>TopGO R package</td>\n      <td>https://bioconductor.riken.jp/packages/3.3/bioc/vignettes/topGO/inst/doc/topGO.pdf</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GEMTools</td>\n      <td>http://gemtools.github.io/</td>\n      <td>GEMTools v1.7.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Lipid data analyzer II</td>\n      <td>IGB-TUG Graz University; PMID:21169379</td>\n      <td>LDA v.2.5.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Image Lab</td>\n      <td>Bio-Rad</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>RIPA buffer</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# R0278</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Human skeletal muscle biopsies\n\n10 healthy volunteers were recruited for the in vivo study (see Supplementary file 1-table S1 for donor characteristics). One week prior to the scheduled laboratory visit, participants had to adhere to a consistent daily feeding and sleeping routine. Participants arrived in the laboratory at 19:00 hr on the day prior to the testing day and ingested one standardized meal that first evening. Participants remained for the duration of their stay in a semi-recumbent position. During the waking hours of the testing day, they were given mixed-macronutrient meal-replacement solutions at hourly intervals (Resource, Nestl\u00e9, Switzerland) to ensure energy balance. The laboratory was free from natural light and with artificial lighting standardized to 800 lux in the direction of gaze, ambient temperature maintained between 20\u00a0and\u00a025\u00b0C and noise levels tightly regulated. Participants were not permitted to sleep during waking hours when lights were on (i.e. 07:00-22:00 hr) and wore eye masks whilst trying to sleep during lights-out (i.e. 22:00-07:00 hr). Anesthetic administration (1% lidocaine w/o epinephrine) and skin/fascia incisions for this procedure (Bergstrom, 1962) were completed within the hour prior to sleep such that night-time samples could be acquired with minimal discomfort. Six 100 mg biopsy samples were acquired from the vastus lateralis muscle at 4 hr intervals (12:00, 16:00, 20:00, 24:00, 04:00 and 08:00 hr) and immediately snap frozen under liquid nitrogen. Samples were taken from each leg in alternating and ascending order with skin incisions separated by 2\u20133 cm. The study was conducted in accordance with the Declaration of Helsinki and with the approval of the Health Research Authority (NRES Committee South West; 14/SW/0123) and the Swiss\u00a0Commission cantonal (Canton Vaud) d\u2019\u00e9thique de la recherche (Cer-VD). For further details see Loizides-Mangold et al. (2017).\n\n### Human muscle RNA-sequencing and data analysis\n\nTotal Stranded RNA-Seq (in vivo muscle samples): RNA was quantified with Ribogreen (Life Technologies, Carlsbad, CA) and quality was assessed on a Fragment Analyzer (Advances Analytical). Sequencing libraries were prepared from 250 ng total RNA using the TruSeq Stranded Total LT Sample Prep Kit (Illumina, San Diego, CA) with the Ribo-Zero Gold depletion set. The procedure was automated on a Sciclone NGS Workstation (Perkin Elmer, Waltham, MA). The manufacturer\u2019s protocol was followed, except for the PCR amplification step. The latter was run for 13 cycles with the KAPA HiFi HotStart ReadyMix (Kapa BioSystems, Roche, Switzerland). This optimal PCR cycle number was evaluated using the Cycler Correction Factor method as described previously (Atger et al., 2015). Purified libraries were quantified with Picogreen (Life Technologies) and the size pattern was controlled with the DNA High Sensitivity Reagent kit on a LabChip GX (Perkin Elmer). Libraries were then pooled by 24, and each pool was clustered at a concentration of 8 pmol on 8 lanes of v4 paired-end sequencing flow cells (Illumina). Sequencing was performed for 2 \u00d7 125 cycles on a HiSeq 2500 strictly following Illumina\u2019s recommendations.\n\nPaired-end reads were mapped to the Homo sapiens genome (GRCh38/hg38) using STAR (Dobin et al., 2013) with parameters \u201c--alignIntronMin 20 --alignIntronMax 1000000 --GTF (option \u2013sjdbGTFfile). Mapped reads were quantified in intronic and exonic regions. For each gene, we defined a gene body by merging all the respective transcripts using BEDtools (Quinlan and Hall, 2010). A region was defined as exonic if it occurs in a least one of the transcripts while an intronic region had to be shared between all the transcripts. We assigned uniquely mapping paired-reads to exonic regions (exon/exon and complete exon reads) or intronic regions (intron-exon and complete intron reads) considering reads orientation. Genes with less than two intronic reads or 10 exonic reads on average were discarded. Intronic and exonic reads count were normalized using edgeR (Robinson et al., 2010) by the library scaling factor from the exonic regions and the respective intronic and exonic length (rpkm()). Genes with less than \u22122 RPKM (log2) at the exonic level were discarded. Genes with less than \u22123 RPKM (log2) at the intronic level were reported as NA for the intronic quantification.\n\nRhythmicity was assessed with a linear mixed-effects model using lmer() function from the lme4 R package applied on the log2 normalized reads count. A standard harmonic regression with a 24 hr period was fitted with a donor-dependent random effect on the baseline:\n\n$$\ny_{ID,t}~cos\u2061\\frac{2\\pi}{24}t+sin\u2061\\frac{2\\pi}{24}t+(1|ID)\n$$\n\nwhere yID,t is the log2 normalized reads count for patient ID at time t. This full model was compared to the null model (without the harmonic terms) using the likelihood ratio test function ltest() from the lmtest R package. The p-values were computed from a chi-squared distribution and were adjusted using the Benjamini-Hochberg procedure.\n\nGene ontology analysis was performed using the TopGO R package . Enrichment analysis for GO terms derived from \u2018Biological Process\u2019 was performed for the genes rhythmic in the three groups (R-I.RE, R-I, and R-E) and in the different phase bins. GO terms with p-value\u00a0<0.05, a minimum number of 3 genes, and less than 200 annotated genes were considered.\n\n### Transcription factors enrichment analysis\n\nPredictions of transcription factor binding sites (MotEvo) and promoter regions were downloaded from http://swissregulon.unibas.ch/sr/downloads (database Homo sapiens, hg19:FANTOM5) (Pachkov et al., 2013). Transcription factor binding sites were assigned to their corresponding genes using the promoter regions table. Genes rhythmic at the intronic level, and with amplitude larger than 0.5 (log2), were grouped according to their phase in 4 hr bins. All the genes expressed in the dataset were used as a background and a hypergeometric test was computed for the over-representation of transcription factor binding sites in the different bins. Transcription factor binding sites with -log10(p-value)\u00a0>104 and belonging to at least five genes were reported and annotated in Figure 1I.\n\n### Study participants, skeletal muscle tissue sampling and primary cell culture\n\nBiopsies from the Gluteus maximus muscle were derived from donors with their informed consent (see Figure 2\u2014figure supplement 1 and Supplementary file 1-table S1 for donor characteristics). The experimental protocol (\u2018DIOMEDE\u2019) was approved by the Ethical Committee SUD EST IV (Agreement 12/111) and performed according to the French legislation (Huriet\u2019s law). All donors had HbA1c levels inferior to 6.0% and fasting glycemia inferior to 7 mmol/L, were not diagnosed for type 2 diabetes (T2D), neoplasia or chronic inflammatory diseases, and not doing shift work. Primary skeletal myoblasts were purified and differentiated into myotubes according to the previously described procedure (Agley et al., 2015; Perrin et al., 2015). After reaching confluence, myoblasts were differentiated into myotubes during 7\u201310 days in DMEM supplemented with 2% FBS.\n\n### siRNA transfection and lentiviral transduction\n\nHuman primary myoblasts were differentiated into myotubes as described above. Cells were transfected 24 hr (RNA-seq) or 72 hr (western blot, glucose uptake) prior to experiment with 20 nM siRNA targeting CLOCK (siCLOCK), or with non-targeting siControl (Dharmacon, Lafayette, CO), using HiPerFect transfection reagent (Qiagen, Hilden, Germany) following the manufacturer's protocol. To produce lentiviral particles, Bmal1-luciferase (Liu et al., 2008) lentivectors were transfected into 293 T cells using the polyethylenimine method (for detailed procedure see [Pulimeno et al., 2013]). Myoblasts were transduced with the indicated lentiviral particles with a multiplicity of infection (MOI)\u00a0=\u00a03 for each, grown to confluence, and subsequently differentiated into myotubes.\n\n### In vitro skeletal myotube synchronization and real-time bioluminescence recording\n\nPrimary myotubes were synchronized with 10 \u00b5M forskolin (Sigma-Aldrich, St. Louis, MO) for 60 min at 37\u00b0C in a cell culture incubator, then the medium was changed to a phenol red-free recording medium containing 100 \u00b5M luciferin (Prolume LTD, Pinetop, AZ), and cells were transferred to a 37\u00b0C light-tight incubator as previously described by us (Pulimeno et al., 2013). Bioluminescence from each dish was continuously monitored using a Hamamatsu photomultiplier tube (PMT) detector assembly. Photon counts were integrated over 1 min intervals. Luminescence traces are shown as detrended data.\n\n### Glucose uptake measurement\n\nHuman myotubes treated with siControl or siCLOCK as described before were serum-starved for 3 hr then incubated with 2-deoxy-[3H]-D-glucose for 15 min. Incubations were performed with or without insulin stimulation (1 hr, 100 nM). After incubation, the medium was removed prior to cell lysis in 0.05 M NaOH. Cell content radioactivity was determined by liquid scintillation counting (Perkin Elmer, 2900TR) and protein content was quantified by using the Bradford protein assay. Glucose transport is expressed in pmol/mg.min (Chanon et al., 2017).\n\n### Protein analysis\n\nHuman myotubes transfected with siControl or siCLOCK for 24 to 72 hr, were lysed in RIPA buffer. Protein extracts (8 \u00b5g) were analyzed by SDS-PAGE and immunoblotted to 0.45 \u00b5m nitrocellulose membrane or 0.2 \u00b5m PVDF membrane using a wet system (Bio-Rad, Hercules, CA) according to the manufacturer\u2019s instructions. Membranes were blocked and incubated with primary and secondary antibodies in 5% BSA/TBS-T 0.5% or 5% BSA/TBS-T 0.1%. Primary and secondary antibodies were used at the following dilutions: anti-TBC1D4/AS160 (1/1000, Cell Signaling, Danvers, MA, #2670S), anti-14-3-3\u03b8 (1/200, Cell Signaling, #9638S), anti-CLOCK (1/200, Santa Cruz Biotechnology, Santa Cruz, CA, H-276) and anti-ACTIN (1/1000, Sigma-Aldrich, A2066), anti-rabbit-HRP (1:3000, Sigma-Aldrich A8275). Signals were visualized using SuperSignal West Pico Chemiluminescent Substrate (Thermo Fisher\u00a0Scientific, Waltham, MA). For protein quantification, five donors were analyzed but only the representative western blot result of one donor is shown.\n\n### Lipidomics\n\nThe lipidomics analysis was performed as described in Loizides-Mangold et al. (2017). Briefly, human primary myotubes were harvested from one confluent 10 cm dish (~1.5\u00d7106 cells) and lipid extracts were prepared using the MTBE protocol (Matyash et al., 2008). Total phosphorus was determined as described in (Loizides-Mangold et al., 2017). Phospho- and sphingolipid were analyzed by mass spectrometry using on a TSQ Vantage Triple Stage Quadrupole Mass Spectrometer (Thermo Fisher Scientific) equipped with a robotic nanoflow ion source (Nanomate HD, Advion Biosciences, Ithaca, NY), using multiple reaction monitoring (MRM). Lipid concentrations were calculated relative to the relevant internal standards and then normalized to the total phosphate content of each total lipid extract. Triacylglyceride analysis was performed by mass spectrometry analysis on a hybrid ion trap LTQ-Orbitrap XL mass spectrometer (Thermo Fisher Scientific) equipped with a micro LC binary pump UFLC-XR (Shimadzu, Kyoto, Japan). Lipid identification was carried out with the Lipid Data Analyzer II (LDA v. 2.5.1, IGB-TUG Graz University) (Hartler et al., 2011).\n\n### hSKM mRNA extraction and quantitative PCR analysis\n\nDifferentiated myotubes were synchronized by 10 \u00b5M forskolin, collected every 2 hr during 48 hr (0\u201348 hr), deep-frozen in liquid nitrogen and kept at \u221280\u00b0C. Total RNA was prepared using RNeasy Mini kit (Qiagen). 0.5 \u00b5g of total RNA was reverse-transcribed using Superscript III reverse transcriptase (Invitrogen) and random hexamers, and PCR-amplified on a LightCycler 480 (Roche). Mean values for each sample were calculated from the technical duplicates of each RT-qPCR analysis, and normalized to the mean of two housekeeping genes (HPRT and 9S), which served as internal controls. Primers used for this study are listed in Supplementary file 1-table S9.\n\n### hSKM RNA-sequencing and data analysis\n\nTotal RNA was prepared from primary human skeletal myotubes from two donors, transfected either with siControl or siCLOCK, synchronized with a forskolin pulse and collected every 2 hr during 48 hr in duplicates, using RNeasy Mini Kit (Qiagen). Total RNA libraries were prepared from 300 ng of RNA following customary Illumina TruSeq v2 protocols for next generation sequencing. PolyA-selected mRNAs were purified, size-fractioned, and subsequently converted to single-stranded cDNA by random hexamer priming. Following second-strand synthesis, double-stranded cDNAs were blunt-end fragmented and indexed using adapter ligation, after which they were amplified and sequenced according to protocol. RNA libraries were sequenced with a HiSeq2000 sequencer producing 49pb paired-end reads. Standard quality checks for material degradation (Bioanalyzer and TapeStation, Agilent Technologies, Santa Clara, CA) and concentration (Qubit, Life Technologies) were done before and after library construction, ensuring that samples are suitable for sequencing.\n\nPaired-end reads were mapped to the human genome (version GRCh37/hg19) with GEMTools (v1.7.1) using GENCODE v19 as gene annotation. RNA-seq reads were subsequently filtered for correct orientation of the two ends, a minimum mapping quality score of 150 and allowing a maximum of 5 mismatches in both ends. GENCODE annotation v19 was used to assign filtered reads to their corresponding exons and genes. For each gene, we processed the exons from all transcripts, which were quantified by considering only filtered reads as above, in which both ends map to exons of the same gene. The gene counts were incremented non-redundantly, meaning reads overlapping two exons were counted once to the total count sum per gene.\n\nThe differential gene expression analysis was performed with the R package edgeR (Robinson et al., 2010). First, transcripts expressed lower than three counts per million (CPM) and noninformative (e.g. non-aligned) were filtered. To minimize the log-fold changes between the samples for most genes, a set of scaling factors for the library sizes were estimated with the trimmed mean of M-values (TMM) method (Robinson and Oshlack, 2010). The dispersion was estimated with the quantile-adjusted conditional maximum likelihood (qCML) method. Once the dispersion estimates are obtained, we performed the testing procedures for determining differential expression using the exact test (Robinson and Smyth, 2008).\n\nRegarding the rhythmic analysis, homemade algorithm was developed to analyze these RNA-seq data. In short, raw data were transformed to log2 reads per kilobase per million mapped reads (RPKM) as described previously (Atger et al., 2015), then only transcripts with log2 RPKM\u00a0>0 for each of the fourth conditions (two subjects, siControl or siCLOCK) were kept avoiding big variability for weakly expressed transcripts. The 48 time points of each condition were used to define a local regression function (LOESS). This step allows smoothing the curve and reducing local variability. The function was then used to calculate 10 different measures (maximum and minimum slopes, first and second extremum, minimum-maximum ratio, autocorrelation, measure of scattering, residues on the loess function, residues on a linear function and period). These features were used to classify gene expression patterns in four different groups: rhythmic genes (category \u2018circadian\u2019), genes that show only one peak at the beginning of the time course (category \u2018one peak\u2019), linearly (category \u2018linear\u2019) and scatteredly expressed genes (category \u2018cloud\u2019). The algorithm attributes a probability to each transcript per condition. To be classified in one category, this probability must be the highest value and superior to 0.5 in at least one category. If no probabilities are superior to 0.5 for the four categories, transcripts are grouped into model 16 (non-rhythmic). The 11 major circadian genes, including ARNTL (BMAL1), NR1D1 (REVERB\u03b1), NR1D2 (REVERB\u03b2), PER1, PER2, PER3, CRY1, CRY2, NPAS2, TEF and BHLHE41, were selected to train a random forest model. The same number of genes for the three other groups were also integrated in the training dataset. This dataset was then passed to the training algorithm for random forests and gene conditions that were assigned to one of these categories with a high score (0.9) were integrated in the training dataset. This procedure was repeated until 500 curves per group were identified. The last model was kept to classify the whole dataset.1485 curves from 994 transcripts were identified\u00a0as rhythmic among 12,985 transcripts. Altogether, transcripts were grouped into 16 models.\n\n### Bioluminescence and statistical data analysis\n\nBioluminescence data were analyzed with the Actimetrics LumiCycle analysis software (Actimetrics LTD, Wilmette, IL). RNA-seq data and qPCR data analysis were performed using RStudio, GraphPad Prism five and Excel 2016. Panther analyses were performed using the PANTHER version 12.0 released on 10.07.2017. Statistical analyses were performed using Student\u2019s t-test. Differences were considered significant for (*) p-value\u00a0<0.05, (**) p-value\u00a0<0.01, and (***) p-value\u00a0<0.001. Exact p-values and raw data for Figures 2 and 3 are listed in Supplementary file 2.\n\n### Mycoplasma test for primary cultures\n\nSince primary cultures, established from human skeletal muscle tissue biopsies were used in this study, mycoplasma contamination tests were conducted only once for each primary myotube culture. To do so, 100 \u03bcl of culture medium were taken 48 hr following the last trypsinization, boiled at 95\u00b0C for 5 min, and centrifuged for 10 s at 14,000 rpm. PCR was performed on 5 \u03bcl of thus processed samples, using a mix of primers listed in Supplementary file 1-table S9. The PCR program was 5 min at 95\u00b0C, followed by 30 cycles with 95\u00b0C 30 s, 60\u00b0C 30 s, 72\u00b0C 30 s, and a final elongation at 72\u00b0C for 10 min. PCR products were separated on a 1.5% agarose gel.\n",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "a2c85243-9369-4e43-a2e7-da94c556024a",
+      "submission_id": "a40b3f38-29f0-49b6-88a1-c927a9991738",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joseph S Takahashi, Howard Hughes Medical Institute, University of Texas Southwestern Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34114.036](https://doi.org/10.7554/eLife.34114.036)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Transcriptomic analyses reveal rhythmic and CLOCK\u2013driven pathways in human skeletal muscle\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Fiona Watt as the Senior Editor. The following individuals involved in review of your submission has agreed to reveal his identity: Joseph Bass (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission\n\nSummary:\n\nIn this manuscript titled 'Transcriptomic analyses reveal rhythmic and CLOCK\u2013driven pathways in human skeletal muscle', the authors performed RNA\u2013seq analysis in muscle tissue biopsies (in vivo) and cultures of synchronized primary differentiated myofibers (in vitro) from human subjects, allowing them to compare cell autonomous and non\u2013cell autonomous rhythms of transcription. Of note, the authors found that rhythmic transcription of genes involved in glucose transport (i.e. GLUT4 regulation), lipid metabolism and immune response were present in both the in vivo and in vitro samples. However, many other genes which were rhythmic in vivo did not appear rhythmic in vitro, suggesting that there are non\u2013cell autonomous factors controlling rhythmic transcription in human muscle. In addition, since total RNA was used, both pre\u2013mRNA and mature mRNAs were quantified. Indeed, the authors identified genes which oscillate at both the transcriptional and post\u2013transcriptional levels. Finally, the dependence of rhythmic transcripts on the core molecular clock was determined using siRNA\u2013mediated knock down of CLOCK in the primary myotube cultures. siCLOCK myotubes displayed reduced expression of many genes which were found to be rhythmic in vitro. The authors also determined that siCLOCK myotubes display reduced insulin\u2013dependent and \u2013independent glucose uptake, suggesting reduced activity of the GLUT4\u2013transport mechanism. Overall, the finding that the circadian clock controls glucose and lipid metabolic gene expression in primary human myofibers is important and provides further evidence of the role of the molecular clock in the regulation of muscle function and glucose homeostasis.\n\nThe daily transcriptome analysis of the human muscle biopsies taken at 4 h intervals across 24 h from 10 healthy individuals serve as a valuable and important resource, especially in view of the current attempts to map circadian rhythmicity in humans. In this regard, a more rigorous comparison between available detests of mouse muscle transcriptome (e.g. McCarthy et al., 2007; Miller et al., 2007; Dyar et al., 2014; Zhang et al., 2014; Hodge et al., 2015) with this new data would provide interesting insight regarding the difference in muscle rhythmic gene expression between mice and humans, and likely between nocturnal and diurnal species, respectively.\n\nThe major strength of this study lies on the expression data obtained from human healthy individuals in a well\u2013controlled manner, this section by itself is an important resource.\n\nThe in vitro experiments primarily corroborate previous studies done with cultured cells (e.g. Krishnaiah et al., 2017) that show dramatic reduction in rhythmic gene expression in culture compared to organs in vivo.\n\nEssential revisions:\n\n1) The in vivo biopsy samples were taken from the vastus lateralis muscle whereas the in vitro samples were from gluteus maximus. Therefore, is it possible that the observed gene expression differences observed between the in vitro and in vivo sample sets are explained by the fact that they are derived from different muscles? One option to address this would be to compare gene expression profiles from biopsies of VL and GM muscles \u2013 do they differ in a similar way to the in vitro versus in vivo gene sets? This may beyond the scope here.\n\n2) The authors observed gene expression changes with siCLOCK that support increased mitochondrial oxidative/type I muscle remodeling. This result is consistent with what was observed in RNA\u2013sequencing studies in Bmal1KO mouse muscle (Hodge et al., 2015). However, others have provided evidence for reduced mitochondrial oxidative metabolism in Bmal1KO muscle cells. Therefore, it is possible that the gene signature does not equate with the metabolic phenotype. For instance, gene expression changes may be compensatory rather than causal? In the absence of such analysis, discussion should acknowledge the interest in future functional bioenergetic profiling (e.g., respirometry with mitochondrial fuel substrates).\n\n3) The mathematical model used to detect rhythmicity should be validated on an existing dataset or a demo dataset in order to compare their results with established and widely used algorithms that detect rhythmic profiles, such as JTK_CYCLE (Hughes et al., 2010) and Meta Cycle (Wu et al., 2016) that incorporates ARSER, JTK_CYCLE and Lomb\u2013Scargle.\n\n4) It would be interesting to compare the genes identified as rhythmic in cultured U2OS cells (Krishnaiah et al., 2017) with the ones identified in the current study, even though these are completely different cells. It might shed light on genes, aside from the core clock, that globally maintain rhythmicity in culture.\n\n5) The authors conclusion that the cell\u2013autonomous circadian clock has an essential role in coordinating muscle glucose homeostasis and lipid metabolism in humans should be revised as it is not supported by their results. Their finding that knockdown of clock in vitro affected the overall expression of ~8% of all genes with genes related to glucose and lipid metabolism suggests that the CLOCK protein itself modulate their expression and not necessarily the oscillator. Furthermore, the result that only few genes maintain rhythmicity both in vivo and in vitro, most of them are core clock components, does not support it either.\n",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "173c7ed4-fd42-44ed-85f9-620baf1ff511",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C1",
+      "claim": "Circadian rhythms are daily cycles of most bodily processes driven by a system of intrinsic biological clocks organized in a complex hierarchical manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Circadian rhythms are daily cycles of most bodily processes driven by a system of intrinsic biological clocks organized in a complex hierarchical manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about circadian rhythms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "99da9686-78a4-47f8-aefd-58baed67be65",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C2",
+      "claim": "The circadian system provides the organism with an evolutionary conserved advantage.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism ensures a temporal coordination of physiology and behavior with a near 24 hr period of rest-activity and feeding-fasting cycles, thus providing the organism with an evolutionary conserved advantage (Albrecht, 2012; Spoelstra et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Albrecht, 2012 and Spoelstra et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "a4ee2d17-7dfc-47da-8eec-fa59b0849285",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C3",
+      "claim": "In mammals, the circadian system is driven by a central pacemaker situated in the paired suprachiasmatic nuclei (SCN) of the hypothalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, the circadian system is driven by a central pacemaker, situated in the paired suprachiasmatic nuclei (SCN) of the hypothalamus, and by secondary oscillators located in peripheral organs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the mammalian circadian system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "9622c7b4-3318-47e9-8511-39a2b2473ac5",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C4",
+      "claim": "The SCN clock is readjusted on a daily basis mainly by light inputs coming from the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "The SCN clock is readjusted on a daily basis, mainly by light inputs coming from the retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about SCN entrainment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "943778e8-e739-46c6-96bc-61cd8de4f0b6",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C5",
+      "claim": "The central pacemaker orchestrates peripheral clocks through a combination of neuronal, endocrine, and metabolic signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, the central pacemaker orchestrates peripheral clocks through a combination of neuronal, endocrine, and metabolic signaling pathways (Saini et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Saini et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "5090bb94-2a98-4854-8b03-a924d91ab2cb",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C6",
+      "claim": "Metabolic processes in the liver, skeletal muscle, and other organs are subject to daily oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, metabolic processes in the liver, skeletal muscle, and other organs are subject to daily oscillations (Asher and Sassone-Corsi, 2015) with the SCN keeping these rhythms in appropriate synchrony with each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Asher and Sassone-Corsi, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "38fb8b55-de9d-483d-a842-45a22fec422e",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C7",
+      "claim": "Skeletal muscle is responsible for ~70% of glucose uptake resulting from ingested carbohydrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Skeletal muscle is responsible for ~70% of glucose uptake resulting from ingested carbohydrates (DeFronzo et al., 1981; Gachon et al., 2017), and perturbations in glucose sensing and metabolism in this organ are strongly associated with insulin resistance in type 2 diabetes (T2D) (Muoio and Newgard, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to DeFronzo et al., 1981 and Gachon et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "9b7f2b11-ed58-4e6c-8930-87a33d40d795",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C8",
+      "claim": "Perturbations in glucose sensing and metabolism in skeletal muscle are strongly associated with insulin resistance in type 2 diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "Skeletal muscle is responsible for ~70% of glucose uptake resulting from ingested carbohydrates (DeFronzo et al., 1981; Gachon et al., 2017), and perturbations in glucose sensing and metabolism in this organ are strongly associated with insulin resistance in type 2 diabetes (T2D) (Muoio and Newgard, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Muoio and Newgard, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "10168c4e-81b3-440e-8f3d-66b5de4b643c",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C9",
+      "claim": "In rodents, the skeletal muscle clock plays an essential role in maintaining proper metabolic homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "In rodents, it has been established that the skeletal muscle clock plays an essential role in maintaining proper metabolic homeostasis, with skeletal muscle pathologies stemming from clock disruption via deletion of the core clock component Bmal1 (Andrews et al., 2010; Harfmann et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Andrews et al., 2010 and Harfmann et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "49811979-8d77-4903-8ff9-5981dc9337eb",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C10",
+      "claim": "Disruption of muscle insulin sensitivity by modulating glucose uptake, with a reduction in Glut4 mRNA and protein levels, has been reported in two muscle-specific Bmal1 knockout models.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of muscle insulin sensitivity by modulating glucose uptake, with a reduction in Glut4 mRNA and protein levels, has been reported in two muscle-specific Bmal1 knockout (KO) models (Dyar et al., 2014; Harfmann et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dyar et al., 2014 and Harfmann et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "6940e1cc-ddbe-41fa-8409-299cbba92d86",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C11",
+      "claim": "In humans, diurnal variations in glucose tolerance have been described.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, diurnal variations in glucose tolerance have been described (Kalsbeek et al., 2014), although the molecular mechanism responsible for such variations remains largely unexplored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kalsbeek et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "cdfab03c-5a97-4999-adc1-0f82a4799d64",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C12",
+      "claim": "Feeding-fasting cycles accompanying rest-activity rhythms represent major timing cues in the synchronization of peripheral clocks, including skeletal muscle oscillators.",
+      "claim_type": "EXPLICIT",
+      "source": "Feeding-fasting cycles accompanying rest-activity rhythms represent major timing cues in the synchronization of peripheral clocks, including skeletal muscle oscillators (Dibner and Schibler, 2015; Wehrens et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dibner and Schibler, 2015 and Wehrens et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "b93f18ed-f1d3-4696-ab37-087c1cfcda08",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C13",
+      "claim": "In murine models, 3.4% to 16% of the skeletal muscle transcriptome is expressed in a circadian manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Although several studies have reported that in murine models 3.4% to 16% of the skeletal muscle transcriptome is expressed in a circadian manner (McCarthy et al., 2007; Miller et al., 2007; Dyar et al., 2014; Zhang et al., 2014; Hodge et al., 2015), it is unclear to what extent the muscle circadian transcriptome is regulated by feeding-fasting rhythms and additional central synchronizers, and how local muscle clocks contribute in generating these transcript oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to McCarthy et al., 2007; Miller et al., 2007; Dyar et al., 2014; Zhang et al., 2014; Hodge et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "3983e2b1-5284-4af7-a6b8-75092243bbea",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C14",
+      "claim": "Cell-autonomous circadian clocks operating in human primary skeletal myotubes have been recently characterized.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-autonomous circadian clocks operating in human primary skeletal myotubes (hSKM) established from muscle biopsies have been recently characterized (Perrin et al., 2015; Hansen et al., 2016; Loizides-Mangold et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Perrin et al., 2015; Hansen et al., 2016; Loizides-Mangold et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "d58a6f88-b080-4d16-9404-5ac3d51f22b6",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C15",
+      "claim": "Proper function of cellular oscillators in human skeletal myotubes is indispensable for the normal secretion of interleukin 6, interleukin-8, the monocyte chemotactic protein 1 and additional myokines.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, proper function of these cellular oscillators is indispensable for the normal secretion of interleukin 6 (IL-6), interleukin-8 (IL-8), the monocyte chemotactic protein 1 (MCP-1) and additional myokines, regulating skeletal muscle insulin sensitivity and inflammation (Perrin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Perrin et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "1893a3fb-b998-4081-b34a-a4c689c969f1",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C16",
+      "claim": "5748 rhythmic genes were identified at the pre-mRNA or/and mRNA level with a False Discovery Rate of 5% in human skeletal muscle biopsies.",
+      "claim_type": "EXPLICIT",
+      "source": "This method allowed for the identification of 5748 rhythmic genes that were rhythmic at the pre-mRNA or/and mRNA level with a False Discovery Rate (FDR) of 5% (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on RNA-seq data analysis from human skeletal muscle biopsies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "844e1f78-54bd-46bb-bf38-41849abcd4c2",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C17",
+      "claim": "4792 genes showed rhythmic transcription at the intronic pre-mRNA level in human skeletal muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "When rhythmicity levels were further analyzed, it became apparent that 4792 genes showed rhythmic transcription at the intronic pre-mRNA level (Figure 1A, upper and middle left panels).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on RNA-seq data analysis from human skeletal muscle biopsies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "2750700f-fdad-4054-8ff4-48428292538b",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C18",
+      "claim": "Only 57% of rhythmic pre-mRNA transcripts were also rhythmic at the mRNA level.",
+      "claim_type": "EXPLICIT",
+      "source": "However, from these rhythmic pre-mRNA transcripts, only 57% were also rhythmic at the mRNA level (R-I.R-E, upper panels Figure 1A), likely because of the longer half-life of their mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on RNA-seq data analysis from human skeletal muscle biopsies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "47a421b2-200d-4cc3-9fc2-480d2d4042fc",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C19",
+      "claim": "Among rhythmic pre-mRNA transcripts, those that are only rhythmic at the pre-mRNA level have a longer half-life compared to those that are rhythmic at the mRNA level.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, approximation of mRNA half-life by the exon/intron ratio showed that among these rhythmic pre-mRNA transcripts, those that are only rhythmic at the pre-mRNAs level (R-I) have a longer half-life compared to those that are rhythmic at the mRNA level (R-E and R-I.R-E, Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on analysis of exon/intron ratio from RNA-seq data, shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "ba538bad-ca36-4e5b-b7d4-22f07d95c40e",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C20",
+      "claim": "Around 10% of the quantified transcriptome (956 genes) were only rhythmic at the mRNA level.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, around 10% of the quantified transcriptome (956 genes) were only rhythmic at the mRNA level (R-E, Figure 1A, lower panels), likely through post-transcriptional regulation and in particular mRNA degradation (LuckL\u00fcck et al., 2014; Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on RNA-seq data analysis from human skeletal muscle biopsies, with inference about mechanism supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "e564ece5-8981-442d-a402-226b00b5005d",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C21",
+      "claim": "Among genes rhythmic at the pre-mRNA level, those with higher amplitude of transcription had a greater probability to be rhythmic at the mRNA accumulation level.",
+      "claim_type": "EXPLICIT",
+      "source": "Amplitude distribution suggested that among the genes that were rhythmic at the pre-mRNA level, those with higher amplitude of transcription had a greater probability to be rhythmic at the mRNA accumulation level (R-I.R-E, Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on amplitude distribution analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "30f5a077-7b34-4b58-953d-318b27aa17ca",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C22",
+      "claim": "Rhythmic gene transcription in human skeletal muscle was distributed into two phases of transcript accumulation at 04:00 and 16:00.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported in mice, rhythmic gene transcription was distributed into two phases of transcript accumulation (04:00 and 16:00, Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on phase distribution analysis shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "fa489dec-4293-42b7-b9a7-d82d1515bc8e",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C23",
+      "claim": "The afternoon peak (16:00) was enriched in genes related to muscle contraction and mitochondrial activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The afternoon peak (16:00) was enriched in genes related to muscle contraction and mitochondrial activity (Figure 1\u2014source data 2), whereas homologous genes in rodents were shared between the active but also the resting phase (McCarthy et al., 2007; Miller et al., 2007; Hodge et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on gene ontology analysis of rhythmic genes, with comparison to rodent studies supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "31b10dd4-12c3-4d63-afc0-689e4d0a95ad",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C24",
+      "claim": "Among genes highly activated in the middle of the night (04:00), many were associated with inflammation and immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, among the genes highly activated in the middle of the night (04:00), many were associated with inflammation and immune response (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on gene ontology analysis shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "452b80c5-3f9e-4bd9-8af8-b79a030b9347",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C25",
+      "claim": "Core clock genes ARNTL (BMAL1), NPAS2, CLOCK, PER2, PER3, CRY2, NR1D1 (REV-ERB\u03b1) and RORA showed high amplitude oscillations in human skeletal muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the rhythmic genes, we observed high amplitude oscillations for the core clock genes ARNTL (BMAL1), NPAS2, CLOCK, PER2, PER3, CRY2, NR1D1 (REV-ERB\u03b1) and RORA, which were well synchronized among the 10 individuals (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on RNA-seq data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "c30ac199-8291-471d-b564-425d3248b858",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C26",
+      "claim": "TFEB, KLF13, KLF15, PPARD, and MYOD1 showed oscillatory profiles in human skeletal muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, several transcription factors associated with muscle metabolism and physiology like TFEB, a key regulator of lysosomal biogenesis and autophagy that also regulates glucose homeostasis and oxidative phosphorylation (Mansueto et al., 2017), KLF13, which plays a role in cardiac muscle cell development (LavalleeLavall\u00e9e et al., 2006), and KLF15, an important transcriptional regulator of muscle lipid metabolism (Haldar et al., 2012), showed an oscillatory profile. Moreover, also PPARD, the most abundant PPAR isoform in skeletal muscle and master regulator of muscle mitochondrial function (Jordan et al., 2017), and MYOD1, the key regulator of myogenesis and direct target of BMAL/CLOCK (Andrews et al., 2010) were rhythmically expressed in human skeletal muscle, likely orchestrating the temporal muscle transcriptome (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on RNA-seq data shown in Figure 1H, with functional context supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "a518f544-89a8-457b-99a8-0b154db2df37",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C27",
+      "claim": "The 16:00 peak is enriched in MEF2 and MYOD1 motifs, in phase with MYOD1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1I, the 16:00 peak is enriched in MEF2 and MYOD1 motifs, in phase with MYOD1 expression, and both proteins synergize to activate gene expression (Taylor and Hughes, 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on DNA-binding motif enrichment analysis shown in Figure 1I, with functional context supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "21f92bcc-9664-4d2e-89b4-79e034919663",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C28",
+      "claim": "The 4:00 peak is enriched in MYC and AP1 families of transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, the 4:00 peak is enriched in MYC and AP1 families of transcription factors, both downstream of the MAP kinase pathway activated by exercise (Aronson et al., 1997) or wound-induced inflammation (Aronson et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on DNA-binding motif enrichment analysis, with functional context supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "575f674d-2668-4621-b19a-125db9b8f1a9",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C29",
+      "claim": "CLOCK expression was reduced by at least 80% upon siCLOCK depletion in human skeletal myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "CLOCK expression was reduced by at least 80% upon siCLOCK depletion, as assessed by RNA-seq and quantitative real-time PCR (Figure 2A and Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on RNA-seq and qPCR data shown in Figure 2A and Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "8cce55c9-c721-4f81-bd51-91b4e342d6f9",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C30",
+      "claim": "The circadian amplitude of Bmal1-luciferase bioluminescence reporter profile became dampened upon siCLOCK compared to siControl and non-transfected counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the circadian amplitude of Bmal1-luciferase bioluminescence reporter profile became dampened upon siCLOCK compared to siControl and non-transfected counterparts (Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on bioluminescence recording data shown in Figure 2\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "86a0195e-670d-4eba-a1eb-cb3aacdb0f84",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C31",
+      "claim": "Out of 16,776 mapped genes, 1330 genes (8%) were significantly altered in siCLOCK-transfected hSKM compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of the 16,776 mapped genes, the median values for all the time points, reflecting the overall expression levels of 1330 genes (8%), were significantly altered in siCLOCK-transfected hSKM compared to their control counterparts, with 742 being downregulated and 588 being upregulated (Figure 2B; Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on differential gene expression analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "78634930-ba05-4aef-9787-3577df0e29ad",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C32",
+      "claim": "Core clock genes NR1D1 (REVERB\u03b1), NR1D2 (REVERB\u03b2), PER3, TEF, BHLHE41 (DEC2), and DBP were significantly downregulated upon CLOCK depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, core clock gene expression was affected, with NR1D1 (REVERB\u03b1), NR1D2 (REVERB\u03b2), PER3, TEF, BHLHE41 (DEC2), and DBP being significantly downregulated, and CRY1 being upregulated upon CLOCK depletion (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on differential gene expression analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "095143c3-d6f1-4223-babc-583c5a27c8cc",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C33",
+      "claim": "CRY1 was upregulated upon CLOCK depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, core clock gene expression was affected, with NR1D1 (REVERB\u03b1), NR1D2 (REVERB\u03b2), PER3, TEF, BHLHE41 (DEC2), and DBP being significantly downregulated, and CRY1 being upregulated upon CLOCK depletion (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on differential gene expression analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "6bc52ff9-4078-406d-8bb0-06957f9a596e",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C34",
+      "claim": "Genes encoding for proteins essential for vesicle formation including SNAREs, solute transporters, and Rab GTPases exhibited significantly altered expression levels upon CLOCK depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, genes encoding for proteins essential for vesicle formation including SNAREs, solute transporters, and Rab GTPases exhibited significantly altered expression levels upon CLOCK depletion (Supplementary file 1-table S2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on differential gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "493d7a69-ed2c-4bba-a505-a30847f60bb6",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C35",
+      "claim": "42 transcripts involved in lipid metabolism were affected by CLOCK disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, 42 transcripts involved in lipid metabolism were affected by CLOCK disruption. These comprised genes related to glycerophospholipid and triglyceride metabolism as well as lipid storage and transport (Figure 2C), in addition to those regulating inositol phosphate (Figure 2D) and sphingolipid metabolic pathways (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on differential gene expression analysis shown in Figures 2C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "ce6a863f-0a9b-43dd-8dd5-eae5216ededd",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C36",
+      "claim": "Total phosphatidylcholine levels were downregulated in the absence of a functional myotube clock.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the observed modifications in gene expression level were in an accord with significant alterations in absolute lipid metabolite levels, resulting in total phosphatidylcholine levels being downregulated, and glycosylceramide levels being upregulated in the absence of a functional myotube clock (Figure 2F, Supplementary file 1-table S1, donors 7\u201310 for in vitro part).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on lipidomics analysis shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "ede532cd-ab42-42b3-b9f3-0fcaf96a6075",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C37",
+      "claim": "Glycosylceramide levels were upregulated in the absence of a functional myotube clock.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the observed modifications in gene expression level were in an accord with significant alterations in absolute lipid metabolite levels, resulting in total phosphatidylcholine levels being downregulated, and glycosylceramide levels being upregulated in the absence of a functional myotube clock (Figure 2F, Supplementary file 1-table S1, donors 7\u201310 for in vitro part).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on lipidomics analysis shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "70b1bf44-de86-4313-b943-d13e85fe4eff",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C38",
+      "claim": "Genes involved in insulin-stimulated and contraction-induced glucose uptake, comprising TBC1D13, TBC1D4 (AS160), 14-3-3\u03b8 (YWHAQ), RAB35, STX6, and PDPK1 (PDK1), were significantly downregulated upon siCLOCK.",
+      "claim_type": "EXPLICIT",
+      "source": "Our differential analysis in human muscle cells demonstrates that genes involved in insulin-stimulated and contraction-induced glucose uptake, comprising TBC1D13, TBC1D4 (AS160), 14-3-3\u03b8 (YWHAQ), RAB35, STX6, and PDPK1 (PDK1), were significantly downregulated upon siCLOCK (Supplementary file 1-table S2), highlighting the pleiotropic effect of the skeletal muscle CLOCK gene/protein in regulating glucose uptake in response to insulin and/or to contraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on differential gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "7bb1c309-9125-49b9-ac9d-e6adc6b25112",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C39",
+      "claim": "CLOCK mRNA was reduced by siCLOCK by 91 \u00b1 2% as determined by RT-qPCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Matching the changes observed by RNA-seq, CLOCK mRNA was reduced by siCLOCK as determined by RT-qPCR (Figure 3A), leading to a reduction in CLOCK protein expression by 74% (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on RT-qPCR data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "53e4bc99-26d3-4afe-93b5-34874aaea908",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C40",
+      "claim": "CLOCK protein expression was reduced by 74% upon siCLOCK treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Matching the changes observed by RNA-seq, CLOCK mRNA was reduced by siCLOCK as determined by RT-qPCR (Figure 3A), leading to a reduction in CLOCK protein expression by 74% (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on western blot analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "5f3d5c3e-aa30-4d34-83ca-551e284c87c8",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C41",
+      "claim": "The expression of the 14-3-3\u03b8 protein was decreased by about 28% upon siCLOCK treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the expression of the 14-3-3\u03b8 protein, a key regulator of GLUT4 translocation (Sakamoto and Holman, 2008; Kleppe et al., 2011), was decreased by about 28% under these conditions (Figure 3C), matching the decrease in its gene expression (Supplementary File 1-table S2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on western blot analysis shown in Figure 3C, with functional context supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "af113704-d377-415b-b966-47763c3b86e6",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C42",
+      "claim": "Basal glucose uptake was significantly reduced by 31 \u00b1 3% in siCLOCK-transfected myotubes compared to siControl counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we observed a significant decrease in both basal (30%), and insulin-stimulated (27%) glucose uptake in siCLOCK-transfected myotubes, as compared to their siControl counterparts (Figure 3D left and right panels, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on glucose uptake assay shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "e53abfe1-a4c9-4c83-a443-6d28bc572c9c",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C43",
+      "claim": "Insulin-stimulated glucose uptake was significantly reduced by 28 \u00b1 3% in siCLOCK-transfected myotubes compared to siControl counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we observed a significant decrease in both basal (30%), and insulin-stimulated (27%) glucose uptake in siCLOCK-transfected myotubes, as compared to their siControl counterparts (Figure 3D left and right panels, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on glucose uptake assay shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "5310399c-5947-4f16-a3a0-f8d93a77a325",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C44",
+      "claim": "994 rhythmic genes (7.65% of the global transcriptome) were identified in synchronized human skeletal myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, after conversion of the raw data to log2 RPKM values and filtering for log2 RPKM >0, temporal patterns of the resulting 12,985 genes were grouped into 16 models (Figure 4A, Figure 4\u2014source datas 1 and 2), with models 1 to 15 comprising 994 rhythmic genes (7.65%), and model 16 comprising 11,991 non-rhythmic genes (92.35%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on rhythmic analysis of RNA-seq data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "0250781e-adf9-4961-9b65-1c1955c4cbfa",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C45",
+      "claim": "Model 1 comprises 73 genes classified as rhythmic in both donors upon siControl and siCLOCK.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our analysis, model 1 comprises 73 genes, classified as rhythmic in both donors upon siControl and siCLOCK, models 2 and 3 include 39 and 34 genes, respectively, that are rhythmic in both siControl donors and in one siCLOCK donor respectively, and model 4 comprises 44 genes that are rhythmic in siControl, but not in siCLOCK (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on rhythmic analysis of RNA-seq data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "071e4087-7122-404b-8e43-72b0cee5f3a3",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C46",
+      "claim": "Models 2 and 3 include 39 and 34 genes, respectively, that are rhythmic in both siControl donors and in one siCLOCK donor respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our analysis, model 1 comprises 73 genes, classified as rhythmic in both donors upon siControl and siCLOCK, models 2 and 3 include 39 and 34 genes, respectively, that are rhythmic in both siControl donors and in one siCLOCK donor respectively, and model 4 comprises 44 genes that are rhythmic in siControl, but not in siCLOCK (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on rhythmic analysis of RNA-seq data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "a33adb9a-023d-4aa4-95f0-0db7d63020d5",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C47",
+      "claim": "Model 4 comprises 44 genes that are rhythmic in siControl, but not in siCLOCK.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our analysis, model 1 comprises 73 genes, classified as rhythmic in both donors upon siControl and siCLOCK, models 2 and 3 include 39 and 34 genes, respectively, that are rhythmic in both siControl donors and in one siCLOCK donor respectively, and model 4 comprises 44 genes that are rhythmic in siControl, but not in siCLOCK (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on rhythmic analysis of RNA-seq data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "dbc606a2-76fb-464e-8a33-21853bde9518",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C48",
+      "claim": "Circadian core clock genes exhibited a rhythmic mRNA profile in siControl and a flattened, but still rhythmic, profile upon siCLOCK.",
+      "claim_type": "EXPLICIT",
+      "source": "Circadian core clock genes clustered to model 1, as they exhibited a rhythmic mRNA profile in siControl and a flattened, but still rhythmic, profile upon siCLOCK (Figure 4C and Figure 4\u2014figure supplement 2), indicating a presence of partially functional circadian oscillator.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on RNA-seq data shown in Figure 4C and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "16a08eda-2065-4ee4-acb4-954d4ba3d6b7",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C49",
+      "claim": "190 genes were qualified as rhythmic in the two analyzed cell cultures and were clustered into models 1\u20134.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, 190 genes were qualified as rhythmic in the two analyzed cell cultures, and were clustered into models 1\u20134 (Figure 4\u2014source datas 1 and 2), as exemplified in Figure 4D (upper panels) and in Figure 4\u2014figure supplement 1C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on rhythmic analysis of RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "a14c4289-a608-48e2-b14b-46e9c1e092e8",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C50",
+      "claim": "Among the 190 transcripts identified as rhythmic in hSKM cells, 99 were expressed in human muscle biopsies.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the remaining 133 genes, 99 were expressed in human muscle biopsies. Within this group of overlapping genes, 35 were also qualified as rhythmic at the mRNA level (q-val <0.05) in muscle tissue (Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of in vitro and in vivo RNA-seq datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "10c80f36-a66c-4184-994f-34dd17950b61",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C51",
+      "claim": "35 genes were qualified as rhythmic at the mRNA level in both human skeletal myotubes and muscle tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the remaining 133 genes, 99 were expressed in human muscle biopsies. Within this group of overlapping genes, 35 were also qualified as rhythmic at the mRNA level (q-val <0.05) in muscle tissue (Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of in vitro and in vivo RNA-seq datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "c53db090-86b6-46ee-8222-90d984324c4a",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C52",
+      "claim": "Genes rhythmic in both in vivo and in vitro datasets were enriched at the 04:00 time point.",
+      "claim_type": "EXPLICIT",
+      "source": "The genes rhythmic in both in vivo and in vitro datasets included the core clock components (Figure 5A), as well as functional genes that were enriched at the 04:00 time point (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on phase distribution analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "79b229f4-dd16-4ed5-9aec-dbb5590ed35c",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C53",
+      "claim": "Genes implicated in glucose homeostasis (KLF11, GFPT2, NAMPT) and in muscle regeneration (PLAU, PLD1, PIM1) were rhythmic both in vivo and in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, genes implicated in glucose homeostasis (KLF11, GFPT2, NAMPT) and in muscle regeneration (PLAU, PLD1, PIM1), were rhythmic both in vivo and in vitro, suggesting an important role for the circadian clock in regulating muscle physiology (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on RNA-seq data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "7f110828-77b0-4c81-86ff-0dbeaaf6e751",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C54",
+      "claim": "CLOCK depletion in cultured primary skeletal myotubes led to significant changes in gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we demonstrate that CLOCK depletion in cultured primary skeletal myotubes led to significant changes in gene expression (Figure 2), and related physiological outputs, comprising the regulation of basal and insulin-stimulated glucose uptake, lipid homeostasis (Figure 3), and myokine secretion, as summarized in Figure 6.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on differential gene expression analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "bc00766d-9e87-4b88-8aea-dd6bbb4a47d2",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C55",
+      "claim": "More extensive rhythmic transcription was observed in human skeletal muscle compared to in vitro cell culture.",
+      "claim_type": "EXPLICIT",
+      "source": "More extensive rhythmic transcription was observed in human skeletal muscle compared to in vitro cell culture as a large part of the in vivo mRNA rhythmicity was lost in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of in vivo and in vitro RNA-seq datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "49213a99-2b43-4c1b-94dc-2093bb872757",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C56",
+      "claim": "siRNA-mediated clock disruption in primary myotubes significantly affected the expression of ~8% of all genes.",
+      "claim_type": "EXPLICIT",
+      "source": "siRNA-mediated clock disruption in primary myotubes significantly affected the expression of ~8% of all genes, with impact on glucose homeostasis and lipid metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on differential gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "90f6bc51-9855-4db0-a93b-150009650b50",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C57",
+      "claim": "Genes involved in GLUT4 expression, translocation and recycling were negatively affected by CLOCK depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes involved in GLUT4 expression, translocation and recycling were negatively affected, whereas lipid metabolic genes were altered to promote activation of lipid utilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on differential gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "2120ef42-9126-4412-8f2c-f3947e4d4b0b",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C58",
+      "claim": "Lipid metabolic genes were altered to promote activation of lipid utilization upon CLOCK depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes involved in GLUT4 expression, translocation and recycling were negatively affected, whereas lipid metabolic genes were altered to promote activation of lipid utilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on differential gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "9b457bf3-4ef1-4284-96e0-33c7772bad41",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C59",
+      "claim": "The circadian clock has an essential role for the circadian coordination of skeletal muscle glucose homeostasis and lipid metabolism in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest an essential role for the circadian coordination of skeletal muscle glucose homeostasis and lipid metabolism in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "d5dbf188-057f-44bf-bb70-57de77b2e7d2",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C60",
+      "claim": "A phase shift of 8\u201310 hr was observed between peripheral clocks in human and rodent skeletal muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing the circadian phases of core-clock components in our database to the temporal profiles of the corresponding genes in rodents (Dyar et al., 2014; Zhang et al., 2014), we observed a phase shift of 8\u201310 hr. This result is in good agreement with a phase shift observed between peripheral clocks in nocturnal versus diurnal species, which is indeed typically smaller than 12 hr (Mure et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of human and rodent RNA-seq datasets, with context supported by citation to Mure et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "6497f21a-3ce4-4ba8-b087-f83c84c5f324",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C61",
+      "claim": "107 common rhythmic genes were found between mouse and human skeletal muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of our in vivo dataset (exonic signals) to published temporal gene expression databases of mouse skeletal muscle (Dyar et al., 2014; Zhang et al., 2014) revealed 107 common rhythmic genes between mouse and human skeletal muscle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of human and mouse RNA-seq datasets, with citations to mouse studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "7a8953fc-8c1c-4196-b501-6b10d1bd42fc",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C62",
+      "claim": "Among the 190 genes rhythmic in human skeletal myotubes, 30 were also rhythmic in U2OS cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of our in vitro dataset to the results published on U2OS cells (Hughes et al., 2009; Krishnaiah et al., 2017) revealed that among the 190 genes that were rhythmic in human skeletal myotubes, 30 were also rhythmic in U2OS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison with published U2OS cell data, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "7b1dd7e9-e8c2-4a6a-8c40-181e98ea2921",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C63",
+      "claim": "TRIM47 exhibited rhythmic expression in human skeletal myotubes, in human muscle biopsies, and in U2OS cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the RING finger domain protein-encoding gene TRIM47 exhibited a rhythmic expression in human skeletal myotubes, in human muscle biopsies, and in U2OS cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of multiple RNA-seq datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "05e56370-2238-4e5c-a325-229bd20b0a27",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C64",
+      "claim": "Clock disruption induces a global switch in the genetic program towards slow type I muscle fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together these observations reinforce the hypothesis that clock disruption induces a global switch in the genetic program towards slow type I muscle fibers, as it was previously suggested in muscle-specific Bmal1 KO mice (Hodge et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the gene expression data, supported by citation to Hodge et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "326129c4-620d-45f0-b4ed-6f8e7d4f8a82",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C65",
+      "claim": "The enzyme PI4K2A was downregulated at the mRNA level upon siCLOCK treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the enzyme PI4K2A, catalyzing the phosphorylation of phosphatidylinositol (PI) to phosphatidylinositol 4-phosphate (PI4P), was downregulated at the mRNA level, which may result in decreased PIP2 and PIP3 levels (Pullen et al., 1998; Sakamoto and Holman, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on differential gene expression analysis, with functional context supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "000014e5-eb10-4891-adef-c2a63345b1f7",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C66",
+      "claim": "siCLOCK-depleted cells overexpressed MAPKAP1 (mSIN1), one component of the mTORC2 complex required for AKT phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, siCLOCK-depleted cells overexpressed MAPKAP1 (mSIN1), one component of the mTORC2 complex required for AKT phosphorylation (Frias et al., 2006), and CAV-3, essential for PI3K and AKT activity as well as GLUT4 translocation in muscle (Fecchi et al., 2006; Tan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on differential gene expression analysis, with functional context supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "ced53828-2449-4f45-9dad-b4ca49c5e30c",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C67",
+      "claim": "CAV-3 was overexpressed in siCLOCK-depleted cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, siCLOCK-depleted cells overexpressed MAPKAP1 (mSIN1), one component of the mTORC2 complex required for AKT phosphorylation (Frias et al., 2006), and CAV-3, essential for PI3K and AKT activity as well as GLUT4 translocation in muscle (Fecchi et al., 2006; Tan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on differential gene expression analysis, with functional context supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "e7fd2186-024e-4b13-a1af-7133129277fa",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C68",
+      "claim": "Both VAMP3 and STX6 were downregulated at the mRNA level upon clock disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "Both VAMP3 and STX6, which are involved in IL-6 secretion in mouse macrophages (Manderson et al., 2007), were downregulated at the mRNA level (Supplementary file 1-tables S2 and S6), confirming previous results that clock disruption impacts on vesicle trafficking and secretion (Marcheva et al., 2010; Saini et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on differential gene expression analysis, with functional context supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "69a6ce10-9516-4fde-8437-b93321fff4de",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C69",
+      "claim": "Numerous genes involved in hormone secretion by pancreatic islets were affected in a similar manner in hSKM upon clock disruption as in clock disrupted human islets.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, when compared with results from clock disrupted human islets (Saini et al., 2016) we found that numerous genes involved in hormone secretion by pancreatic islets were affected in a similar manner in hSKM (Supplementary file 1-table S8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison with published data on human islets, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "a92f0d52-7b5c-43bc-9052-56f24327644c",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C70",
+      "claim": "An upregulation of CD36 and FABP3 was found upon clock disruption in hSKM.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we found an increase in the long chain fatty acid transporter CD36 and in FABP3, consistent with previous results obtained in mouse skeletal muscle upon clock disruption (Hodge et al., 2015; Schiaffino et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on differential gene expression analysis, with comparison to mouse studies supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "13287ca4-38dc-46be-8b60-7220989677cc",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C71",
+      "claim": "An upregulation of MSTN was observed upon siCLOCK.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we observed an upregulation of MSTN upon siCLOCK, which could further promote the increase in CD36 and FABP3, leading to impaired glucose uptake (Figure 3D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on differential gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "93eb96e7-2b88-4613-afa7-404c35bbcc21",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C72",
+      "claim": "The basal secretion of myokines such as IL-6, IL-8, and MCP-1 exhibits a circadian pattern which was strongly disrupted in hSKM after CLOCK silencing in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously demonstrated that the basal secretion of myokines, such as IL-6, IL-8, and MCP-1, exhibits a circadian pattern, which was strongly disrupted in hSKM after CLOCK silencing in vitro (Perrin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Perrin et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "59e137be-b632-4e0f-b699-b528d230dc4a",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "claim_id": "C73",
+      "claim": "Key regulators of the exocytosis machinery were altered upon clock disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, our transcriptional analysis showed that key regulators of the exocytosis machinery were altered upon clock disruption (Supplementary file 1-tables S2 and S3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on differential gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "85988116-39c5-49af-aa7f-bebd8dd74fa0",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "In human skeletal muscle biopsies collected under controlled laboratory conditions, 5748 genes showed rhythmic expression at pre-mRNA and/or mRNA levels. Rhythmic transcription was distributed into two phases (04:00 and 16:00), with the afternoon peak enriched in genes related to muscle contraction and mitochondrial activity, and the night peak enriched in inflammation and immune response genes. Core clock genes and key muscle transcription factors showed high amplitude oscillations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C28 collectively demonstrate extensive rhythmic gene expression in human skeletal muscle in vivo using RNA-seq with appropriate statistical methods (FDR 5%). The data show clear temporal patterns with functional enrichment, supported by multiple figures and appropriate controls (n=10 individuals). The distinction between pre-mRNA and mRNA rhythmicity with mechanistic interpretation (mRNA half-life) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "81b0fa58-b68f-4be3-a408-4eb9104119ca",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "siRNA-mediated CLOCK depletion in human skeletal myotubes reduced CLOCK expression by at least 80%, dampened Bmal1-luciferase reporter amplitude, and significantly altered expression of 1330 genes (8% of mapped genes). Core clock genes and genes involved in vesicle formation were significantly affected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C34 demonstrate effective CLOCK knockdown validated by multiple methods (RNA-seq, qPCR, bioluminescence) with significant downstream transcriptional effects. The differential expression analysis is appropriately conducted with proper statistical thresholds (FDR <0.05). However, the study is limited by only two donors for the in vitro RNA-seq experiment, which the authors acknowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "786fa4d7-d2c5-4cc0-94c3-5da5efa075df",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CLOCK disruption affected 42 transcripts involved in lipid metabolism, resulting in decreased total phosphatidylcholine levels and increased glycosylceramide levels, as confirmed by lipidomics analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 show concordance between transcriptional changes and metabolite measurements using mass spectrometry-based lipidomics. The gene expression changes are statistically significant and functionally validated at the metabolite level in 4 donors (donors 7-10), providing strong support for the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "b7c6ce11-e42b-44e1-8c90-24e1a21244d3",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CLOCK depletion significantly downregulated genes involved in glucose uptake (TBC1D13, TBC1D4, 14-3-3\u03b8, RAB35, STX6, PDPK1), reduced 14-3-3\u03b8 protein expression by 28%, and decreased both basal (30%) and insulin-stimulated (27%) glucose uptake in human skeletal myotubes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C43 demonstrate a clear functional consequence of CLOCK disruption on glucose metabolism, with concordance between mRNA, protein, and functional measurements. The glucose uptake assays show statistically significant reductions in both basal and insulin-stimulated conditions (n=4 donors), providing strong evidence for the role of the circadian clock in glucose homeostasis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "ee658c0c-bb89-4232-9e0e-f8850cf96ace",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Using a novel algorithm for rhythmic analysis, 994 genes (7.65% of transcriptome) were identified as rhythmic in synchronized human skeletal myotubes. These were grouped into 16 models, with 190 genes rhythmic in both donors under control conditions. Core clock genes remained rhythmic but with reduced amplitude upon CLOCK depletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C49 describe the development and application of a novel rhythmic analysis algorithm validated on published datasets. The high-resolution time series (25 time points over 48 hours) provides robust data for rhythmic detection. However, the limitation of only two donors and the large inter-donor variability noted by the authors somewhat weakens the generalizability of specific gene classifications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "1e884d5b-e169-4176-b721-05a3ea36e04d",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Among 190 rhythmic genes in cultured myotubes, 99 were expressed in muscle biopsies, and 35 were rhythmic in both systems. These included core clock genes and functional genes involved in glucose homeostasis (KLF11, GFPT2, NAMPT) and muscle regeneration (PLAU, PLD1, PIM1), enriched at the 04:00 time point.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 provide important comparative analysis between in vivo and in vitro systems, identifying genes with cell-autonomous rhythmicity. The overlap of 35 genes rhythmic in both systems is modest but includes functionally important genes. The enrichment at 04:00 is consistent with the in vivo data, supporting the validity of the in vitro model for studying cell-autonomous clock function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "382b0ff4-32a8-467d-9f73-745416ebf94a",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "More extensive rhythmic transcription was observed in vivo compared to in vitro, with much of the in vivo rhythmicity lost in culture. CLOCK disruption affected ~8% of genes, with negative effects on GLUT4-related genes and alterations promoting lipid utilization, suggesting an essential role for the circadian clock in coordinating skeletal muscle glucose homeostasis and lipid metabolism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 synthesize the major findings of the study. The comparison between in vivo and in vitro systems is well-supported by the data, though the authors appropriately note limitations including different analytical methods and potential confounding factors in the in vivo study (repeated biopsies). The conclusion about the essential role of the clock is supported by the functional data on glucose uptake and lipid metabolism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "7964022d-104c-4847-a061-95682c897fa2",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "An 8-10 hour phase shift was observed between human and rodent skeletal muscle circadian rhythms, consistent with the difference between diurnal and nocturnal species. 107 common rhythmic genes were identified between mouse and human skeletal muscle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 provide important cross-species comparison supported by citations to published rodent studies. The phase shift observation is consistent with known differences between diurnal and nocturnal species, though the authors appropriately note that the mechanism and reason for the shift being less than 12 hours remains unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "cd11962a-661d-4023-8c2e-52f08d13663a",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Among 190 rhythmic genes in human skeletal myotubes, 30 were also rhythmic in U2OS cells, including TRIM47 which was rhythmic in myotubes, muscle biopsies, and U2OS cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 provide cross-cell-type comparison with published U2OS data. The modest overlap (30 genes) suggests tissue-specific circadian regulation, which is expected. The identification of TRIM47 as rhythmic across multiple systems is interesting but requires further validation and functional characterization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "9dc872fd-3983-4f82-9668-19c9f7a90b3c",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Clock disruption induces a global switch in the genetic program towards slow type I muscle fibers, as suggested by gene expression changes consistent with previous findings in muscle-specific Bmal1 KO mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C64 is an inference based on gene expression patterns compared to mouse studies. While the gene expression data support this hypothesis, direct measurement of fiber type composition or functional characteristics of slow vs. fast fibers was not performed. The claim relies heavily on comparison to rodent studies and requires additional validation in the human system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "d21c1f88-c390-4d99-896b-90b293281cbc",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "CLOCK depletion resulted in downregulation of PI4K2A and upregulation of MAPKAP1 and CAV-3, genes involved in the insulin signaling pathway and GLUT4 translocation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 identify specific genes in the insulin signaling pathway affected by CLOCK depletion, with functional context supported by appropriate citations. These changes are consistent with the observed reduction in glucose uptake, though direct mechanistic validation (e.g., rescue experiments) was not performed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "c0858129-c347-485c-8c8c-f6df881db441",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Clock disruption affected genes involved in vesicle trafficking and myokine secretion, including VAMP3 and STX6. Similar effects were observed in clock-disrupted human pancreatic islets, and previous work showed disrupted circadian secretion of IL-6, IL-8, and MCP-1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69, C72-C73 demonstrate effects on secretory pathways with support from both current transcriptional data and previous functional studies (Perrin et al., 2015). The comparison with pancreatic islets suggests a conserved role for the clock in secretory function across tissues. However, direct measurement of myokine secretion in the current study would strengthen these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "55e532c0-234b-4090-a4a4-da5122610f4e",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Clock disruption in human skeletal myotubes resulted in upregulation of CD36, FABP3, and MSTN, consistent with findings in mouse skeletal muscle and suggesting a shift towards lipid utilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 show gene expression changes consistent with increased lipid uptake and utilization, supported by comparison to mouse studies. The upregulation of MSTN is particularly interesting given its known effects on glucose and lipid metabolism, though the functional consequences of these changes require further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    },
+    {
+      "id": "96a61cb4-324a-46fd-88eb-f2d4bdcea591",
+      "content_id": "a6d5af89-f730-4540-a778-12fb7b96da7f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims establishing the circadian system organization, the role of skeletal muscle in glucose metabolism, and previous findings on circadian clocks in rodent and human skeletal muscle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C15 provide established background knowledge supported by appropriate citations to the literature. These claims set the context for the current study and are well-supported by prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:15:07.971136Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1893a3fb-b998-4081-b34a-a4c689c969f1",
+      "result_id": "85988116-39c5-49af-aa7f-bebd8dd74fa0"
+    },
+    {
+      "claim_id": "844e1f78-54bd-46bb-bf38-41849abcd4c2",
+      "result_id": "85988116-39c5-49af-aa7f-bebd8dd74fa0"
+    },
+    {
+      "claim_id": "2750700f-fdad-4054-8ff4-48428292538b",
+      "result_id": "85988116-39c5-49af-aa7f-bebd8dd74fa0"
+    },
+    {
+      "claim_id": "47a421b2-200d-4cc3-9fc2-480d2d4042fc",
+      "result_id": "85988116-39c5-49af-aa7f-bebd8dd74fa0"
+    },
+    {
+      "claim_id": "ba538bad-ca36-4e5b-b7d4-22f07d95c40e",
+      "result_id": "85988116-39c5-49af-aa7f-bebd8dd74fa0"
+    },
+    {
+      "claim_id": "e564ece5-8981-442d-a402-226b00b5005d",
+      "result_id": "85988116-39c5-49af-aa7f-bebd8dd74fa0"
+    },
+    {
+      "claim_id": "30f5a077-7b34-4b58-953d-318b27aa17ca",
+      "result_id": "85988116-39c5-49af-aa7f-bebd8dd74fa0"
+    },
+    {
+      "claim_id": "fa489dec-4293-42b7-b9a7-d82d1515bc8e",
+      "result_id": "85988116-39c5-49af-aa7f-bebd8dd74fa0"
+    },
+    {
+      "claim_id": "31b10dd4-12c3-4d63-afc0-689e4d0a95ad",
+      "result_id": "85988116-39c5-49af-aa7f-bebd8dd74fa0"
+    },
+    {
+      "claim_id": "452b80c5-3f9e-4bd9-8af8-b79a030b9347",
+      "result_id": "85988116-39c5-49af-aa7f-bebd8dd74fa0"
+    },
+    {
+      "claim_id": "c30ac199-8291-471d-b564-425d3248b858",
+      "result_id": "85988116-39c5-49af-aa7f-bebd8dd74fa0"
+    },
+    {
+      "claim_id": "a518f544-89a8-457b-99a8-0b154db2df37",
+      "result_id": "85988116-39c5-49af-aa7f-bebd8dd74fa0"
+    },
+    {
+      "claim_id": "21f92bcc-9664-4d2e-89b4-79e034919663",
+      "result_id": "85988116-39c5-49af-aa7f-bebd8dd74fa0"
+    },
+    {
+      "claim_id": "575f674d-2668-4621-b19a-125db9b8f1a9",
+      "result_id": "81b0fa58-b68f-4be3-a408-4eb9104119ca"
+    },
+    {
+      "claim_id": "8cce55c9-c721-4f81-bd51-91b4e342d6f9",
+      "result_id": "81b0fa58-b68f-4be3-a408-4eb9104119ca"
+    },
+    {
+      "claim_id": "86a0195e-670d-4eba-a1eb-cb3aacdb0f84",
+      "result_id": "81b0fa58-b68f-4be3-a408-4eb9104119ca"
+    },
+    {
+      "claim_id": "78634930-ba05-4aef-9787-3577df0e29ad",
+      "result_id": "81b0fa58-b68f-4be3-a408-4eb9104119ca"
+    },
+    {
+      "claim_id": "095143c3-d6f1-4223-babc-583c5a27c8cc",
+      "result_id": "81b0fa58-b68f-4be3-a408-4eb9104119ca"
+    },
+    {
+      "claim_id": "6bc52ff9-4078-406d-8bb0-06957f9a596e",
+      "result_id": "81b0fa58-b68f-4be3-a408-4eb9104119ca"
+    },
+    {
+      "claim_id": "493d7a69-ed2c-4bba-a505-a30847f60bb6",
+      "result_id": "786fa4d7-d2c5-4cc0-94c3-5da5efa075df"
+    },
+    {
+      "claim_id": "ce6a863f-0a9b-43dd-8dd5-eae5216ededd",
+      "result_id": "786fa4d7-d2c5-4cc0-94c3-5da5efa075df"
+    },
+    {
+      "claim_id": "ede532cd-ab42-42b3-b9f3-0fcaf96a6075",
+      "result_id": "786fa4d7-d2c5-4cc0-94c3-5da5efa075df"
+    },
+    {
+      "claim_id": "70b1bf44-de86-4313-b943-d13e85fe4eff",
+      "result_id": "b7c6ce11-e42b-44e1-8c90-24e1a21244d3"
+    },
+    {
+      "claim_id": "7bb1c309-9125-49b9-ac9d-e6adc6b25112",
+      "result_id": "b7c6ce11-e42b-44e1-8c90-24e1a21244d3"
+    },
+    {
+      "claim_id": "53e4bc99-26d3-4afe-93b5-34874aaea908",
+      "result_id": "b7c6ce11-e42b-44e1-8c90-24e1a21244d3"
+    },
+    {
+      "claim_id": "5f3d5c3e-aa30-4d34-83ca-551e284c87c8",
+      "result_id": "b7c6ce11-e42b-44e1-8c90-24e1a21244d3"
+    },
+    {
+      "claim_id": "af113704-d377-415b-b966-47763c3b86e6",
+      "result_id": "b7c6ce11-e42b-44e1-8c90-24e1a21244d3"
+    },
+    {
+      "claim_id": "e53abfe1-a4c9-4c83-a443-6d28bc572c9c",
+      "result_id": "b7c6ce11-e42b-44e1-8c90-24e1a21244d3"
+    },
+    {
+      "claim_id": "5310399c-5947-4f16-a3a0-f8d93a77a325",
+      "result_id": "ee658c0c-bb89-4232-9e0e-f8850cf96ace"
+    },
+    {
+      "claim_id": "0250781e-adf9-4961-9b65-1c1955c4cbfa",
+      "result_id": "ee658c0c-bb89-4232-9e0e-f8850cf96ace"
+    },
+    {
+      "claim_id": "071e4087-7122-404b-8e43-72b0cee5f3a3",
+      "result_id": "ee658c0c-bb89-4232-9e0e-f8850cf96ace"
+    },
+    {
+      "claim_id": "a33adb9a-023d-4aa4-95f0-0db7d63020d5",
+      "result_id": "ee658c0c-bb89-4232-9e0e-f8850cf96ace"
+    },
+    {
+      "claim_id": "dbc606a2-76fb-464e-8a33-21853bde9518",
+      "result_id": "ee658c0c-bb89-4232-9e0e-f8850cf96ace"
+    },
+    {
+      "claim_id": "16a08eda-2065-4ee4-acb4-954d4ba3d6b7",
+      "result_id": "ee658c0c-bb89-4232-9e0e-f8850cf96ace"
+    },
+    {
+      "claim_id": "a14c4289-a608-48e2-b14b-46e9c1e092e8",
+      "result_id": "1e884d5b-e169-4176-b721-05a3ea36e04d"
+    },
+    {
+      "claim_id": "10c80f36-a66c-4184-994f-34dd17950b61",
+      "result_id": "1e884d5b-e169-4176-b721-05a3ea36e04d"
+    },
+    {
+      "claim_id": "c53db090-86b6-46ee-8222-90d984324c4a",
+      "result_id": "1e884d5b-e169-4176-b721-05a3ea36e04d"
+    },
+    {
+      "claim_id": "79b229f4-dd16-4ed5-9aec-dbb5590ed35c",
+      "result_id": "1e884d5b-e169-4176-b721-05a3ea36e04d"
+    },
+    {
+      "claim_id": "bc00766d-9e87-4b88-8aea-dd6bbb4a47d2",
+      "result_id": "382b0ff4-32a8-467d-9f73-745416ebf94a"
+    },
+    {
+      "claim_id": "49213a99-2b43-4c1b-94dc-2093bb872757",
+      "result_id": "382b0ff4-32a8-467d-9f73-745416ebf94a"
+    },
+    {
+      "claim_id": "90f6bc51-9855-4db0-a93b-150009650b50",
+      "result_id": "382b0ff4-32a8-467d-9f73-745416ebf94a"
+    },
+    {
+      "claim_id": "2120ef42-9126-4412-8f2c-f3947e4d4b0b",
+      "result_id": "382b0ff4-32a8-467d-9f73-745416ebf94a"
+    },
+    {
+      "claim_id": "9b457bf3-4ef1-4284-96e0-33c7772bad41",
+      "result_id": "382b0ff4-32a8-467d-9f73-745416ebf94a"
+    },
+    {
+      "claim_id": "d5dbf188-057f-44bf-bb70-57de77b2e7d2",
+      "result_id": "7964022d-104c-4847-a061-95682c897fa2"
+    },
+    {
+      "claim_id": "6497f21a-3ce4-4ba8-b087-f83c84c5f324",
+      "result_id": "7964022d-104c-4847-a061-95682c897fa2"
+    },
+    {
+      "claim_id": "7a8953fc-8c1c-4196-b501-6b10d1bd42fc",
+      "result_id": "cd11962a-661d-4023-8c2e-52f08d13663a"
+    },
+    {
+      "claim_id": "7b1dd7e9-e8c2-4a6a-8c40-181e98ea2921",
+      "result_id": "cd11962a-661d-4023-8c2e-52f08d13663a"
+    },
+    {
+      "claim_id": "05e56370-2238-4e5c-a325-229bd20b0a27",
+      "result_id": "9dc872fd-3983-4f82-9668-19c9f7a90b3c"
+    },
+    {
+      "claim_id": "326129c4-620d-45f0-b4ed-6f8e7d4f8a82",
+      "result_id": "d21c1f88-c390-4d99-896b-90b293281cbc"
+    },
+    {
+      "claim_id": "000014e5-eb10-4891-adef-c2a63345b1f7",
+      "result_id": "d21c1f88-c390-4d99-896b-90b293281cbc"
+    },
+    {
+      "claim_id": "ced53828-2449-4f45-9dad-b4ca49c5e30c",
+      "result_id": "d21c1f88-c390-4d99-896b-90b293281cbc"
+    },
+    {
+      "claim_id": "e7fd2186-024e-4b13-a1af-7133129277fa",
+      "result_id": "c0858129-c347-485c-8c8c-f6df881db441"
+    },
+    {
+      "claim_id": "69a6ce10-9516-4fde-8437-b93321fff4de",
+      "result_id": "c0858129-c347-485c-8c8c-f6df881db441"
+    },
+    {
+      "claim_id": "93eb96e7-2b88-4613-afa7-404c35bbcc21",
+      "result_id": "c0858129-c347-485c-8c8c-f6df881db441"
+    },
+    {
+      "claim_id": "59e137be-b632-4e0f-b699-b528d230dc4a",
+      "result_id": "c0858129-c347-485c-8c8c-f6df881db441"
+    },
+    {
+      "claim_id": "a92f0d52-7b5c-43bc-9052-56f24327644c",
+      "result_id": "55e532c0-234b-4090-a4a4-da5122610f4e"
+    },
+    {
+      "claim_id": "13287ca4-38dc-46be-8b60-7220989677cc",
+      "result_id": "55e532c0-234b-4090-a4a4-da5122610f4e"
+    },
+    {
+      "claim_id": "173c7ed4-fd42-44ed-85f9-620baf1ff511",
+      "result_id": "96a61cb4-324a-46fd-88eb-f2d4bdcea591"
+    },
+    {
+      "claim_id": "99da9686-78a4-47f8-aefd-58baed67be65",
+      "result_id": "96a61cb4-324a-46fd-88eb-f2d4bdcea591"
+    },
+    {
+      "claim_id": "a4ee2d17-7dfc-47da-8eec-fa59b0849285",
+      "result_id": "96a61cb4-324a-46fd-88eb-f2d4bdcea591"
+    },
+    {
+      "claim_id": "9622c7b4-3318-47e9-8511-39a2b2473ac5",
+      "result_id": "96a61cb4-324a-46fd-88eb-f2d4bdcea591"
+    },
+    {
+      "claim_id": "943778e8-e739-46c6-96bc-61cd8de4f0b6",
+      "result_id": "96a61cb4-324a-46fd-88eb-f2d4bdcea591"
+    },
+    {
+      "claim_id": "5090bb94-2a98-4854-8b03-a924d91ab2cb",
+      "result_id": "96a61cb4-324a-46fd-88eb-f2d4bdcea591"
+    },
+    {
+      "claim_id": "38fb8b55-de9d-483d-a842-45a22fec422e",
+      "result_id": "96a61cb4-324a-46fd-88eb-f2d4bdcea591"
+    },
+    {
+      "claim_id": "9b7f2b11-ed58-4e6c-8930-87a33d40d795",
+      "result_id": "96a61cb4-324a-46fd-88eb-f2d4bdcea591"
+    },
+    {
+      "claim_id": "10168c4e-81b3-440e-8f3d-66b5de4b643c",
+      "result_id": "96a61cb4-324a-46fd-88eb-f2d4bdcea591"
+    },
+    {
+      "claim_id": "49811979-8d77-4903-8ff9-5981dc9337eb",
+      "result_id": "96a61cb4-324a-46fd-88eb-f2d4bdcea591"
+    },
+    {
+      "claim_id": "6940e1cc-ddbe-41fa-8409-299cbba92d86",
+      "result_id": "96a61cb4-324a-46fd-88eb-f2d4bdcea591"
+    },
+    {
+      "claim_id": "cdfab03c-5a97-4999-adc1-0f82a4799d64",
+      "result_id": "96a61cb4-324a-46fd-88eb-f2d4bdcea591"
+    },
+    {
+      "claim_id": "b93f18ed-f1d3-4696-ab37-087c1cfcda08",
+      "result_id": "96a61cb4-324a-46fd-88eb-f2d4bdcea591"
+    },
+    {
+      "claim_id": "3983e2b1-5284-4af7-a6b8-75092243bbea",
+      "result_id": "96a61cb4-324a-46fd-88eb-f2d4bdcea591"
+    },
+    {
+      "claim_id": "d58a6f88-b080-4d16-9404-5ac3d51f22b6",
+      "result_id": "96a61cb4-324a-46fd-88eb-f2d4bdcea591"
+    }
+  ],
+  "comparisons": []
+}

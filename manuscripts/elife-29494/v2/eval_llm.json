@@ -1,0 +1,195 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript establishes the biological context that low and disturbed blood flow drives arterial disease progression through endothelial responses and interactions with recruited immune cells, supported by prior literature on flow-responsive transcriptional programs and inflammation in vascular disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C8-C16 provide well-established background knowledge supported by appropriate citations to prior literature. These claims accurately represent the current understanding of flow-mediated vascular biology and inflammation, providing necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Low flow induces widespread changes in alternative splicing in arterial endothelium in vivo, with 768 regulated splicing events and over 1000 changes to 3'UTR identified at 48 hours post-ligation, which are largely endothelial in origin and independent of transcriptional changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C21-C33 are well-supported by RNA-seq data with appropriate statistical thresholds (Bayes factor >5, DESeq2 Padj <0.05), good biological replication (Pearson r=0.82-0.98), and validation showing <1.5% contamination from non-endothelial cells (C26). The finding that splicing changes are independent of transcriptional changes (C31-C32) and conserved (C33, though data not shown) strengthens the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Platelet and macrophage recruitment to arterial endothelium under low flow is required for regulation of approximately one-third of flow-regulated alternative splicing events, with platelets, plasma, and macrophages exerting combinatorial effects in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C34-C45 are supported by in vivo depletion experiments (C36-C39) and in vitro co-culture experiments (C40-C45). The data show that platelet depletion suppresses splicing changes and that platelets are required for macrophage recruitment (C36). The in vitro experiments demonstrate combinatorial effects of platelets, plasma, and macrophages (C42-C43), with 50% of platelet-regulated events recapitulated in vitro (C44). The experimental design appropriately uses controls (IgG, PBS liposomes).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C46",
+      "C47",
+      "C48",
+      "C73",
+      "C74",
+      "C78",
+      "C79"
+    ],
+    "result": "Rbfox2 binding motifs are enriched adjacent to flow-regulated exons, and Rbfox2 is the only Rbfox family member significantly expressed in arterial endothelium, with conserved motifs supporting conserved regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C46-C48 are supported by unbiased bioinformatics analysis using GSEA and CisBP-RNA database (C46), showing enrichment of Rbfox motifs particularly downstream of regulated exons. Expression data confirms Rbfox2 as the only family member expressed in arterial endothelium (C48, Figure 3F). Conservation analysis (C73-C74, C78-C79) supports functional importance, though C33 notes data not shown for some conservation claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C70",
+      "C71",
+      "C80",
+      "C87"
+    ],
+    "result": "Endothelial-specific deletion of Rbfox2 suppresses approximately 25% of flow-induced splicing changes, affecting genes encoding extracellular matrix and immune-regulatory proteins, without affecting platelet or macrophage recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C49-C54 are supported by genetic deletion experiments using Cdh5(PAC)-CreERT2 mice with appropriate controls. The finding that ~25% of skipped exons are Rbfox2-dependent (C49) is supported by data in Figures 4A-B. Importantly, Rbfox2 deletion does not affect immune cell recruitment (C51-C52), indicating effects are downstream. Good correlation between in vivo and in vitro effects (C53) supports direct endothelial action. Claims C70-C71 and C87 provide mechanistic insights into differential effects on EIIIA vs EIIIB.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C75",
+      "C76"
+    ],
+    "result": "Endothelial Rbfox2 deletion affects 641 genes (507 part of the low-flow signature) in the carotid intima, causing low-flow arteries to resemble high-flow arteries, with enrichment in cell proliferation and antigen presentation pathways, through mechanisms involving cell-cell cross-talk rather than direct 3'UTR binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 and C75-C76 are supported by RNA-seq analysis (DESeq2 p-adj <0.05) and gene ontology enrichment. The finding that Rbfox2 regulates ~10% of the transcriptional response (C59) is appropriately calculated from the data. The observation that transcriptional effects are specific to the in vivo environment (C60) and lack enrichment of 3'UTR binding sites (C61) supports the inference of non-cell autonomous effects (C62, C93). The lack of overlap between genes regulated by splicing vs transcription (C76) is notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C72",
+      "C77",
+      "C94"
+    ],
+    "result": "Alternative splicing, particularly of fibronectin, plays important roles in vascular disease, with prior work showing that Fn-EIIIA and EIIIB splicing prevents hemorrhagic rupture and contributes to various inflammatory vascular diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 and C63-C67, C72, C77, and C94 provide important context from prior literature, appropriately cited. The comparison with hypoxia responses (C65-C67) helps distinguish the flow-specific response. These claims establish the biological significance of the splicing changes observed in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Unlike mice deficient in both EIIIA and EIIIB, Rbfox2 EC-KO mice do not exhibit increased risk of arterial rupture under low flow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 compare the phenotype of Rbfox2 EC-KO mice to prior work on EIIIA/EIIIB knockout mice. This is supported by the observation that Rbfox2 deletion has differential effects on EIIIA vs EIIIB (C70-C71), with EIIIA only partially reduced and EIIIB completely absent in Rbfox2 EC-KO conditions. The lack of rupture phenotype is appropriately interpreted in light of these differential effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Rbfox2 has established roles in heart, muscle, and brain development and disease, with regulation potentially occurring through mechanisms other than changes in expression or nuclear localization, and involving cooperation with other flow-responsive factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 provide appropriate context from prior literature on Rbfox2 function in other tissues. The observation of modest expression changes (C85) and no obvious change in nuclear localization (C86) despite functional effects is well-documented. Claims C88-C93 appropriately discuss potential mechanisms of Rbfox2 action, including transcript stability, polycomb recruitment, and 3'UTR binding, while noting that the lack of 3'UTR enrichment suggests indirect effects (C93).",
+    "result_type": "MINOR"
+  }
+]

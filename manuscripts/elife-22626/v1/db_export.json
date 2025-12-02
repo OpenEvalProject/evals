@@ -1,0 +1,1922 @@
+{
+  "submission": {
+    "id": "d5afe1fe-2179-43f2-b347-7280c83ceaa9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:57:31.382098Z",
+    "updated_at": "2025-12-01T21:57:31.382098Z"
+  },
+  "content": [
+    {
+      "id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "submission_id": "d5afe1fe-2179-43f2-b347-7280c83ceaa9",
+      "content_type": "manuscript",
+      "content_text": "# Toddler signaling regulates mesodermal cell migration downstream of Nodal signaling\n\n## Authors\n\n- Megan L Norris<sup>1</sup> ([ORCID: 0000-0003-0666-2665](https://orcid.org/0000-0003-0666-2665))\n- Andrea Pauli<sup>2</sup> ([ORCID: 0000-0001-9646-2303](https://orcid.org/0000-0001-9646-2303))\n- James A Gagnon<sup>1</sup>\n- Nathan D Lord<sup>1</sup>\n- Katherine W Rogers<sup>1</sup>\n- Christian Mosimann<sup>3</sup> ([ORCID: 0000-0002-0749-2576](https://orcid.org/0000-0002-0749-2576))\n- Leonard I Zon<sup>4</sup> ([ORCID: 0000-0003-0860-926X](https://orcid.org/0000-0003-0860-926X))\n- Alexander F Schier<sup>1</sup> ([ORCID: 0000-0001-7645-5325](https://orcid.org/0000-0001-7645-5325)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cellular Biology Harvard University Cambridge United States\n2. Research Institute of Molecular Pathology (IMP) Vienna Biocenter (VBC) Vienna Austria\n3. Institute of Molecular Life Sciences University of Z\u00fcrich Z\u00fcrich Switzerland\n4. Division of Hematology/Oncology Boston Children's Hospital and Dana Farber Cancer Institute Boston United States\n5. Harvard Medical School Boston United States\n6. Stem Cell Program Boston Children's Hospital Boston United States\n7. Center for Brain Science Harvard University Cambridge United States\n8. The Broad Institute of Harvard and MIT Cambridge United States\n9. FAS Center for Systems Biology Harvard University Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nToddler/Apela/Elabela is a conserved secreted peptide that regulates mesendoderm development during zebrafish gastrulation. Two non-exclusive models have been proposed to explain Toddler function. The \u2018specification model\u2019 postulates that Toddler signaling enhances Nodal signaling to properly specify endoderm, whereas the \u2018migration model\u2019 posits that Toddler signaling regulates mesendodermal cell migration downstream of Nodal signaling. Here, we test key predictions of both models. We find that in toddler mutants Nodal signaling is initially normal and increasing endoderm specification does not rescue mesendodermal cell migration. Mesodermal cell migration defects in toddler mutants result from a decrease in animal pole-directed migration and are independent of endoderm. Conversely, endodermal cell migration defects are dependent on a Cxcr4a-regulated tether of the endoderm to mesoderm. These results suggest that Toddler signaling regulates mesodermal cell migration downstream of Nodal signaling and indirectly affects endodermal cell migration via Cxcr4a-signaling.\n\n## Introduction\n\nGastrulation is a conserved process in embryogenesis during which the three germ layers \u2013 endoderm, mesoderm and ectoderm \u2013 undergo large-scale rearrangements to shape the embryo (Solnica-Krezel, 2005; Schier, 2009; Langdon and Mullins, 2011; Solnica-Krezel and Sepich, 2012). Following their specification, endoderm and mesoderm (jointly referred to as mesendoderm) internalize beneath the ectoderm and migrate away from the site of internalization. The germ layers then converge to the dorsal side of the embryo, narrowing and extending the axis. Defects in these cellular movements can lead to a truncated body axis and abnormal organs, while defects in initial specification cause absence or reduction of mesendoderm derivatives (Solnica-Krezel, 2005; Schier, 2009; Langdon and Mullins, 2011; Solnica-Krezel and Sepich, 2012).\n\nGerm layer specification and migration are regulated by conserved signaling pathways. Endoderm and mesoderm specification depends on the TGF\u03b2-ligand Nodal. Secreted Nodal ligands bind to Activin receptors, which leads to Smad2 phosphorylation and target gene induction (Schier, 2009). Nodal signals also trigger transcription of their own inhibitors, which belong to the Lefty family. Thus, lefty mutants have increased Nodal signaling resulting in increased endodermal and mesodermal gene expression and cell number during gastrulation (Meno et al., 1999; Rogers et al., unpublished ).\n\nAfter specification by Nodal, endodermal cells are tethered to mesodermal cells through a fibronectin-integrin link genetically regulated by the GPCR Cxcr4a (Mizoguchi et al., 2008; Nair and Schilling, 2008). Loss of Cxcr4a releases this tether and results in excessive animal pole-directed migration of endodermal cells, while mesodermal cell migration is unaffected (Mizoguchi et al., 2008; Nair and Schilling, 2008).\n\nAn additional GPCR pathway, regulated by Toddler/Apela/Elabela, is also required for proper endoderm and mesoderm formation and migration (Chng et al., 2013; Pauli et al., 2014). In this pathway, the secreted peptide Toddler, which is highly conserved throughout vertebrates, signals via the GPCR APJ (in zebrafish: Apelin receptor A and B, jointly referred to as Apelin receptor). In toddler mutants, initial specification of endoderm and mesoderm is normal (Pauli et al., 2014), but by mid-gastrulation, toddler mutants have fewer endodermal cells and mesendodermal cell migration is reduced (Chng et al., 2013; Pauli et al., 2014). toddler mutants generally die around 7 days post fertilization (dpf) with deformed hearts, blood accumulation, edema and endodermal abnormalities (Chng et al., 2013; Pauli et al., 2014).\n\nTwo non-exclusive models have been proposed for the role of Toddler signaling in gastrulation. One model, the \u2018specification model\u2019, postulates that Toddler\u2019s primary role is to promote the specification of endoderm, which when defective leads to abnormal migration of mesendodermal cells (Chng et al., 2013). This model is supported by the observation of fewer endodermal cells in toddler mutants. Moreover, Apelin receptor signaling has been proposed to enhance Nodal signaling, possibly accounting for the endoderm cell number defects in toddler mutants (Deshwar et al., 2016). Based on these findings, it has been proposed that Toddler signaling enhances Nodal signaling, allowing for proper endoderm specification, which in turn promotes mesendodermal cell migration.\n\nAn alternative model for Toddler signaling, the \u2018migration model\u2019, postulates that the primary role of Toddler signaling is to regulate mesendodermal cell migration. This model is supported by the observation that mesendodermal cells migrate more slowly during internalization in toddler mutants, and that apelin receptor a and b gene expression depend on Nodal signaling (Tucker et al., 2007; Pauli et al., 2014). These findings place Toddler signaling downstream of Nodal signaling and endoderm specification and suggest a primary role for Toddler signaling in mesendodermal cell migration.\n\nTo clarify how Toddler regulates gastrulation, we tested four aspects of the specification and migration models. First, we determined if the defects in toddler mutants result primarily from reduced endoderm specification. Second, we analyzed if toddler mutants display reduced Nodal signaling. Third, we examined how migration of mesodermal cells is affected in toddler mutants. Fourth, we tested if Toddler\u2019s primary site of action is endoderm, mesoderm, or both cell types. We found that reduced endoderm specification is not sufficient to explain the toddler mutant phenotype, that Nodal signaling initiates normally in toddler mutants, and that Toddler signaling acts on mesodermal cells to allow animal pole-directed migration. Our results support a modified version of the migration model in which Toddler signaling acts downstream of Nodal signaling to regulate mesodermal cell migration while indirectly regulating endodermal cell migration via Cxcr4a signaling.\n\n## Results\n\n### Increased endoderm specification does not rescue toddler mutants\n\nIn toddler mutants, endoderm initially appears normal (Pauli et al., 2014), but by mid-gastrulation, the number of endodermal cells is reduced (Figure 1A\u2013B)(Chng et al., 2013; Pauli et al., 2014). Since Toddler has been implicated in endodermal specification (Chng et al., 2013; Ho et al., 2015), we revisited the cause of reduced endodermal cell numbers in toddler mutants. We found that endodermal cell numbers are comparable between wild-type and toddler mutant embryos at 60% epiboly and that they go on to divide at similar rates, suggesting that initial specification and subsequent proliferation are not affected (Figure 1\u2014figure supplement 1)(Pauli et al., 2014). Instead, we found increased rates of cell death in toddler mutant embryos, including endodermal cell death, which may account for the decreased cell numbers observed during later gastrulation (Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/22626/elife-22626-fig1-v1.jpg)\n\n**Figure 1.:** (A) Representative images of embryos analyzed in B and D. In situ hybridization with a sox17 probe at 75% epiboly; dorsal to the right. Endoderm in toddler;lefty2 double mutants resembles toddler single mutants. (B) The number of lateral endodermal cells is increased in toddler;lefty2 double mutants compared to wild-type and toddler single mutant embryos. Each point represents a single embryo. Red bars are averages. p-Values for pairwise comparison with wild type unless otherwise noted. **p<0.001; unpaired two-tailed t-test. N\u00a0=\u00a0number of independent experiments; n\u00a0=\u00a0number of embryos. (C) Schematic representation of experimental measurements shown in B and D. The locations of lateral endodermal cells in individual embryos are measured relative to the AP-VP axis and then consolidated across embryos. (D) Measurement of frequency with which cells were found at a given location in an embryo of a certain genotype. A cell at the animal pole corresponds to 100% embryo height, while a cell at the vegetal pole corresponds to 0%. AP\u00a0=\u00a0Animal pole; VP\u00a0=\u00a0vegetal pole. The same embryos were measured in B and D.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22626/elife-22626-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013C) n\u00a0=\u00a0number of embryos (A) Number of lateral endodermal cells in wild-type and toddler mutant\u00a0embryos during gastrulation. (B) Rate of endodermal cell division in wild-type and toddler mutant\u00a0embryos. 40\u201360 cells were tracked per embryo and the percentage of those cells that divided is shown. Red bars are averages. (C) Percentage of embryos with a given number of TUNEL\u00a0+cells on one side of the embryo. (D) Representative images of TUNEL staining at two time points in toddler mutants. (E) Live tracking of endoderm using sox17:GFP transgenic fish captures two endodermal cells undergoing cell death during gastrulation in toddler mutants (arrows). A cell that is about to divide is also present (asterisk).\n\nIf the deficit in endodermal cells is the primary defect in toddler mutants, increasing endodermal cell number might rescue other aspects of the toddler mutant phenotype. To increase endodermal cell number, we used lefty2 mutants, which have more endodermal cells due to increased Nodal signaling (Figure 1A\u2013B)(Meno et al., 1999; Agathon et al., 2001; Rogers et al., ). We analyzed endoderm specification and mesendodermal cell dispersion in toddler;lefty2 double mutants and compared it to toddler and lefty2 single mutants and wild-type embryos (Figures 1 and 2). As expected, lefty2 single and toddler;lefty2 double mutant embryos had more endodermal cells than toddler single mutants and wild-type embryos (Figure 1A\u2013B). While endodermal cells in lefty2 single mutants migrated normally, endodermal cell dispersion in toddler;lefty2 double mutants was not rescued and resembled toddler single mutant siblings (Figure 1A,C and D). As with endoderm, mesodermal cell dispersion was not rescued in toddler;lefty2 double mutants (Figure 2A\u2013B). Thus, increasing endodermal cell number did not rescue the endodermal or mesodermal cell migration defects in toddler mutants.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/22626/elife-22626-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic representation of experimental measurements shown in B. Densely packed, fn1a\u00a0+\u00a0lateral mesodermal cells are viewed by cross section. Location of the most animally\u00a0migrated lateral cells of individual embryos are measured relative to AP-VP axis, then consolidated across embryos. AP\u00a0=\u00a0Animal pole; VP\u00a0=\u00a0vegetal pole. (B) Defects in animal-pole directed migration of mesodermal cells are still present in toddler;lefty2 double mutants. Each point represents a single embryo. Red bars are averages. p-Values for pairwise comparison with wild type unless indicated otherwise. *p=0.04, **p<0.001; ns: p=0.08; unpaired two-tailed t-test. (C\u2013D) toddler;lefty2 double mutants resemble toddler single mutant siblings in respect to heart phenotypes at 2 days post fertilization (dpf). Hearts were classified as small if shortened by more than half of normal length and/or excessively narrow or thin. Hearts that were neither thin nor short but appeared to have looping defects or other patterning defects were classified as normal. Heart phenotypes were scored blind to genotype for toddler and toddler;lefty2 mutants. (C) Representative images of phenotypic classes after in situ hybridization for myl7. (D) Quantification of C. (E\u2013F) toddler;lefty2 double mutants are more poorly patterned than toddler single mutant siblings in respect to tail phenotypes at 3 dpf. (E) Representative images of phenotypic classes. Phenotype classes II-V lack circulation. Arrow: accumulated blood. Arrowhead: defects in mesenchyme. * Duplicated tail tip. (F) Quantification of E. (B,D,F) N\u00a0=\u00a0number of independent experiments; n\u00a0=\u00a0number of embryos.\n\nTo test if increased endodermal cell number can rescue later phenotypes found in toddler mutants, we analyzed embryo morphology and heart size in 2-\u00a0to\u00a03-day-old toddler;lefty2 double mutants. Hearts in toddler;lefty2 double mutants resembled toddler single mutants, except in rare cases when hearts were wild-type in size (Figure 2C\u2013D). By 3 dpf, toddler;lefty2 double mutant larvae had similar or more severe patterning defects as compared to their toddler single mutant siblings (Figure 2E\u2013F). Taken together, these results indicate that increasing endoderm cell number cannot rescue toddler mutant phenotypes.\n\n### Nodal signaling is established normally in toddler mutants\n\nThe specification model suggests that Toddler/Apelin receptor signaling enhances Nodal signaling (Chng et al., 2013; Deshwar et al., 2016). To test this prediction, we used four assays to analyze Nodal signaling in toddler mutants:\n\nFirst, we used in situ hybridization to examine expression of two direct Nodal target genes, lefty1 and lefty2, just before gastrulation and found no difference between wild-type and toddler mutant embryos (Figure 3A). Similarly, apelin receptor a and b single and double mutants also displayed normal expression of the Nodal target genes lefty1 and lefty2 (Figure 3B\u2013C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/22626/elife-22626-fig3-v1.jpg)\n\n**Figure 3.:** (A) Representative images of Nodal target gene expression in wild-type and toddler mutant\u00a0embryos based on in situ hybridization at 50% epiboly. Animal pole facing up. Three biological replicates. (B\u2013C) aplnrA;aplnrB double heterozygote parents were incrossed and their progeny examined by in situ hybridization at 50% epiboly. (B) Representative images of Nodal target gene expression in offspring from aplnrA;aplnrB double heterozygote parents. Animal pole facing up. (C) All embryos from B were genotyped. Results for relevant genotypes are shown. Expression of lefty1 and lefty2 in aplnrA;aplnrB double mutant embryos was indistinguishable from wild type. (D) RNA-sequencing before and during early gastrulation reveals no differential transcription of Nodal targets (black dots) between wild-type and toddler mutant\u00a0embryos. All other genes are shaded in light gray. See also Figure 3\u2014Source data 1.\n\nSecond, we analyzed Nodal target gene expression by RNA-Seq at four time points prior to or during early gastrulation in wild-type and toddler mutants. We found no significant differences at any time-point in the expression of Nodal target genes (Dubrulle et al., 2015) or broadly across all genes (Figure 3D)(Figure 3\u2014Source data 1).\n\nThird, wild-type and toddler mutant embryos were injected at the one cell stage with increasing levels of Nodal mRNA and Nodal target gene expression was measured just prior to gastrulation using qRT-PCR. We found no significant difference in the ability of wild-type and toddler mutants to respond to exogenous Nodal (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/22626/elife-22626-fig4-v1.jpg)\n\n**Figure 4.:** (A) qRT-PCR at 50% epiboly on embryos injected at the one-cell stage with water or increasing levels of Nodal mRNA. Fold change in expression is relative to water control. Two biological replicates. (B\u2013D) Clones of cells expressing exogenous Nodal mRNA and GFP were transplanted into host embryos at sphere stage and collected for in situ hybridization 1.5 hr later. Donors and hosts were always of matching genotype. (B) Representative images of quantifications in C. Orange staining marks anti-GFP labeled transplanted cells. Purple staining is from in situ hybridization for a Nodal target gene. (C) Percentage of embryos for which Nodal target gene expression was visible via in situ hybridization. N\u00a0=\u00a0number of independent experiments. n\u00a0=\u00a0number of embryos. (D) Diameter of induction of ta expression around the clone of transplanted cells. Each point represents a single embryo. Red bars are averages; ns: p=0.44; unpaired two-tailed t-test. (A and C) Means\u00a0\u00b1SEM.\n\nFourth, cells expressing Nodal mRNA were transplanted into a host embryo and the host was assayed for Nodal target gene induction using in situ hybridization (Figure 4B). Wild-type and toddler mutants displayed target gene expression at the same frequencies and across the same distances (Figure 4C\u2013D). These results indicate that the establishment of Nodal signaling is normal in toddler mutants.\n\n### Toddler receptors are expressed in mesodermal cells\n\nToddler signaling has primarily been investigated in the context of endoderm development (Chng et al., 2013; Pauli et al., 2014), but mesoderm also displays migration defects in toddler mutants (Pauli et al., 2014). Furthermore, apelin receptor a and b gene expression in wild-type embryos resembles expression of the mesoderm markers fn1a and fascin, respectively, and is dependent on signaling by the mesendoderm inducer Nodal (Pauli et al., 2014). To further analyze apelin receptor a and b gene expression in endoderm versus mesoderm, we created embryos with excess or diminished levels of endoderm by manipulating the endoderm master regulator sox32 with mRNA injection or CRISPR/Cas9-mediated mutagenesis (Figure 5A\u2013B, Figure 5\u2014figure supplement 5 ) (Kikuchi et al., 2001). As expected, the endodermal marker sox17 displayed increased expression in sox32 mRNA-injected embryos or decreased expression in sox32 mutant embryos (Figure 5A). In contrast, the expression of mesodermal markers fn1a and ta or of apelin receptor a and b increased upon loss of endoderm (Figure 5A and Figure 5\u2014figure supplement 5 ). Furthermore, apelin receptor b expression was retained at the site of internalization in embryos lacking endoderm, suggesting its expression is not ectodermal but mesodermal (Figure 5B). These results indicate that apelin receptor a and b are expressed in mesodermal progenitors.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/22626/elife-22626-fig5-v1.jpg)\n\n**Figure 5.:** (A\u2013B) Cas9-mediated mutagenesis was used to generate sox32 mutants. Embryos were injected at the one-cell stage either with sox32 mRNA or with Cas9\u00a0+\u00a0sox32 gRNAs. in situ hybridization for sox17 and aplnrB at shield stage; dorsal to the right. (A) Expression of aplnrB decreases in the presence of excess endoderm and increases in the absence of endoderm. (B) Cross-section of shield stage embryo. The majority of cells expressing aplnrB in embryos lacking endoderm are internalized and unlikely to be ectodermal. Arrow: internalized cells. Arrowhead: ectoderm. (C\u2013E) Mesodermal cell migration was tracked during gastrulation using a drl:eGFP transgene and lightsheet microscopy. drl:eGFP labels ventrolateral mesoderm during gastrulation. toddler mutant measurements represent three embryos. Wild-type measurements represent two wild-type and one heterozygous embryos. (C) Representative still frames of maximum intensity projections from a wild-type and toddler mutant drl:eGFP transgenic embryo. See also Video 1. (D\u2013E) Movies spanning 50% to 85% epiboly were aligned at the onset of internalization and binned into 45 min windows. (D) Measurement of straightness and velocity of mesodermal cells in wild-type and toddler mutants. Straightness is defined as the difference between the total movement of a cell in all directions divided by the net displacement (the actual distance between the cell\u2019s beginning and ending location). (E) toddler mutant cells have diminished migration animally during gastrulation. Each bin represents the proportion of cells moving in a given direction weighted by the total distance traveled in that direction. n\u00a0=\u00a0number of cells. A\u00a0=\u00a0animal, D\u00a0=\u00a0dorsal, Vg\u00a0=\u00a0vegetal, V\u00a0=\u00a0ventral.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22626/elife-22626-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Embryos injected at the one-cell stage with mRNA or Cas9\u00a0+\u00a0gRNAs for endoderm master regulator sox32. in situ hybridization at shield stage, dorsal to the right. Expression of aplnrA, fn1a and ta decrease slightly or do not change in the presence of excess endoderm and increase in the absence of endoderm. (B\u2013C) PCR of a genomic locus (B: sox32; C: cxcr4a) in wild-type embryos, wild-type embryos injected with Cas9 or wild-type embryos injected with Cas9 and sox32 gRNAs. Each lane represents an individual 2-day-old embryo that was injected at the one-cell stage. (B) Evidence of various large deletions in the genomic sox32 locus in response to injection of Cas9 and sox32 gRNAs. (C) The locus of a non-targeted gene, cxcr4a, is unaffected by injection of Cas9 and sox32 gRNAs.\n\n### Toddler regulates animal-pole directed movement of mesodermal cells independent of endoderm\n\nTo determine what aspects of mesodermal cell migration are affected in toddler mutants, we tracked migrating drl:eGFP-positive ventrolateral mesodermal cells (Mosimann et al., 2015) in wild-type and toddler mutant embryos during gastrulation using light sheet microscopy (Figure 5C and Video 1). We found that mesodermal cells moved more slowly in toddler mutants than in wild-type embryos (Figure 5D). In addition, toddler mutant mesodermal cells showed diminished animal pole-directed migration, resulting in persistent vegetal and dorsal-ward migration during gastrulation (Figure 5E). Taken together, these results indicate that Toddler signaling is required for proper animal-pole directed movement of mesodermal cells during gastrulation.\n\n![Video 1.](https://cdn.elifesciences.org/articles/22626/elife-22626-video1.mp4.jpg)\n\n**Video 1.:** Embryo pair shown in Figure 5C. Embryos are transgenic for drl:eGFP, which labels ventrolateral mesoderm during gastrulation. Embryos are aligned at the onset of internalization. Maximum intensity projections from a light sheet microscope spanning 50% to 85% epiboly, time in hr:min.\n\nTo test the role of endodermal cells in Toddler\u2019s regulation of mesodermal cell migration, we blocked endoderm specification by mutating sox32 and then analyzed mesoderm dispersion. We found that lack of endoderm did not change the normal mesoderm dispersion in wild-type embryos or the reduced migration in toddler mutants (Figure 6A\u2013B). These results indicate that the mesodermal cell migration defects in toddler mutants are independent of endoderm and suggest a direct role of Toddler signaling on mesoderm.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/22626/elife-22626-fig6-v1.jpg)\n\n**Figure 6.:** The presence or absence of endoderm does not affect lateral mesodermal cell migration in wild-type and toddler mutants. Cas9-mediated mutagenesis was used to generate sox32 mutants. Embryos were injected at the one-cell stage with Cas9 and sox32 gRNAs. In situ hybridization for sox17 and fn1a at 75% epiboly; dorsal to the right. (A) Representative images of embryos analyzed in B. (B) Quantification of mesodermal cell migration from embryos in A as described in Figure 2A. AP\u00a0=\u00a0Animal pole; VP\u00a0=\u00a0vegetal pole. Each point represents a single embryo. Red bars are averages; **p<1.5\u00d710\u22126; *p<0.05; unpaired two-tailed t-test.\n\n### Endodermal cell migration does not require Toddler signaling in the absence of Cxcr4a\n\nDuring gastrulation, endoderm is physically tethered to mesoderm (Mizoguchi et al., 2008; Nair and Schilling, 2008). Thus, Toddler might act directly upon mesoderm and only indirectly affect endoderm via the tether. To test this hypothesis, we severed the tether linking endodermal cells to mesodermal cells by removing Cxcr4a. We used Cas9-mediated mutagenesis to create a null mutant for cxcr4a (as described in Materials\u00a0and\u00a0methods) and observed that mesodermal cells migrated normally (Figure 7A\u2013B), while the most vegetal endodermal cells dispersed further animally than in wild type, consistent with previous Cxcr4a morphant studies (Figure 7C\u2013D) (Mizoguchi et al., 2008; Nair and Schilling, 2008). As expected, mesodermal cell migration in toddler;cxcr4a double mutants was as reduced as in toddler single mutants (Figure 7A\u2013B). Strikingly, however, endoderm dispersion was increased in toddler;cxcr4a double mutants as compared to toddler single mutants (Figure 7C\u2013D). While endoderm migration was increased in toddler;cxcr4a double mutants, the number of endodermal cells did not change (Figure 7E). These observations indicate that the reduced mesodermal cell migration in toddler mutants limits endodermal dispersion and that Toddler signaling is not required for endodermal cell migration per se.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/22626/elife-22626-fig7-v1.jpg)\n\n**Figure 7.:** (A\u2013B) Analysis of lateral mesodermal cell migration defects in cxcr4a mutant embryos by in situ hybridization for fn1a. Mesodermal cell migration is normal in stable cxcr4a single mutants. toddler;cxcr4a double mutants show mesodermal cell migration defects that resemble toddler single mutant siblings. (C) Representative images of embryos analyzed in D and E. In situ hybridization for sox17 at 75% epiboly; dorsal to the right. Cxcr4a morphants and cxcr4a mutants have excessive animal pole-directed migration of vegetal endoderm. Endoderm patterning in toddler;cxcr4a double mutants resembles wild-type embryos more than toddler single mutant siblings. (D) Measurement of frequency with which cells were found at a given location in an embryo of a certain genotype. A cell at the animal pole corresponds to 100% embryo height, while a cell at the vegetal pole corresponds to 0%. AP\u00a0=\u00a0Animal pole=100%; VP\u00a0=\u00a0vegetal pole=0%. (E) The number of lateral endodermal cells is unchanged between toddler single and toddler;cxcr4a double mutants. Each point represents a single embryo. Red bars are averages. (B and E) ns: p>0.46; *p<0.05; **p<0.0005; unpaired two-tailed t-test. N\u00a0=\u00a0number of independent experiments; n\u00a0=\u00a0number of embryos.\n\n## Discussion\n\nHere, we clarify the role of Toddler signaling during gastrulation by reporting five main observations. First, increased endoderm specification in toddler;lefty2 double mutants does not alleviate toddler mutant defects (Figures 1 and 2). Second, toddler mutants initiate endogenous Nodal target gene expression normally and respond indistinguishably from wild type to exogenous Nodal sources (Figures 3 and 4). Third, Toddler signaling is required for proper animal pole-directed migration of mesoderm during gastrulation (Figure 5). Fourth, the defects in mesodermal cell migration are independent of endoderm in toddler;sox32 double mutants (Figure 6). Fifth, untethering endodermal and mesodermal cells in toddler;cxcr4a double mutants improves endodermal cell migration without affecting mesoderm (Figure 7).\n\nThese results and previous studies support the following model for Toddler function. Nodal signaling induces the expression of apelin receptor a and b in mesendodermal cells, rendering them sensitive to Toddler peptide (Figure 5A\u2013B)(Pauli et al., 2014; Tucker et al., 2007). Toddler signaling directly regulates animal-pole directed migration of mesodermal cells (Figures 5 and 6)(Pauli et al., 2014). A Cxcr4a-regulated tether between endodermal and mesodermal cells allows Toddler signaling to indirectly affect endodermal cell migration (Figure 7)(Mizoguchi et al., 2008; Nair and Schilling, 2008).\n\nOur findings about Toddler signaling differ from a recent study that concluded Apelin receptor signaling enhances Nodal signaling (Deshwar et al., 2016). Whereas Deshwar and colleagues reported that apelin receptor a and b double morphants appear to have a delayed onset of Nodal signaling, we find that toddler mutants as well as apelin receptor a and b single and double mutants establish Nodal signaling normally (Figure 3). There are multiple possibilities that may explain these different results. First, it is possible that Toddler and/or the Apelin receptors have independent functions (Ho et al., 2015). Second, although apelin receptor mutants and morphants have similar morphological defects (Deshwar et al., 2016), knockdown of the receptors via morpholinos might reveal a phenotype that is masked or compensated in the null mutants (Rossi et al., 2015; Wei et al., 2017). Third, morpholino injection may cause non-specific delayed development or toxicity, as suggested by the epiboly defects seen in apelin receptor a morphants but not apelin receptor a mutants (Ekker and Larson, 2001; Kok et al., 2015; Deshwar et al., 2016).\n\nOur study indicates that Toddler is a regulator of mesodermal cell migration and only indirectly regulates endodermal cell migration during gastrulation. Accordingly, we find both similarities and differences in the role of Toddler signaling in the migration of endoderm versus mesoderm. Both endodermal cells (Pauli et al., 2014) and mesodermal cells (this study, Figure 5D) migrate more slowly in the absence of Toddler signaling. However, we find that toddler mutant mesodermal cells have reduced animal pole-directed migration during gastrulation. This is in contrast to endodermal cells, which initially undergo a random walk, including animal pole-directed movement, in wild-type and toddler mutants (Pauli et al., 2014). The intrinsic ability of endoderm to migrate without Toddler signaling is fully revealed in the abundant animal pole-directed migration of endoderm in toddler;cxcr4a double mutants. Thus, the ability to undergo animal pole-directed migration is retained in endodermal cells but compromised in mesodermal cells in the absence of Toddler signaling.\n\nThese findings raise important questions for future studies. Our work and others have suggested an anti-apoptotic function for Toddler (Ho et al., 2015), raising the question of whether the role for Toddler in cell survival is related to or independent of its role in cell migration? How does Toddler signaling regulate mesodermal cell migration? Our RNA-Seq results in toddler mutants did not reveal major changes in gene expression during gastrulation (Figure 3), suggesting that Toddler\u2019s primary function may be post-transcriptional. The identities of such potential effectors remain unknown. Equally unknown is the nature of the regulators of endodermal cell migration. In the absence of both Toddler and Cxcr4a signaling, endoderm migration is surprisingly normal. What regulates endoderm migration in this background? Toddler signaling will continue to provide an entry point to address these questions.\n\n## Materials and methods\n\n### Zebrafish lines and husbandry\n\nZebrafish, including TLAB wild-type fish, were maintained according to standard protocols. toddler double mutant lines were obtained by crossing toddler mutants to either lefty1a154, lefty2a146 or cxcr4a mutants. toddler homozygous/lefty1a154 heterozygous, toddler homozygous/lefty2a146 heterozygous and toddler homozygous/cxcr4a heterozygous fish were obtained by injecting 2 pg toddler mRNA at the one cell stage as previously described (Pauli et al., 2014). Embryos were raised at 28\u00b0C and staged by morphology unless otherwise noted. lefty1a145 is a null allele harboring a 13 base pair deletion that destroys a PshAI restriction enzyme site (Rogers et al. submitted). lefty2a146 is a null allele harboring an 11 base pair deletion that was genotyped with allele-specific primers (Table 1)(Rogers et al. submitted). aplnrB mutants harbor a 1 bp deletion in the 52nd amino acid, which creates an AflIII restriction enzyme cleavage site. A stable cxcr4a mutant line was generated using Cas9-mediated mutagenesis described below. The cxcr4a mutant line harbors a 433 bp deletion of a 1083 bp long coding sequence, generating a frameshift after the 28th amino acid and was genotyped with allele-specific primers (see Table 1 for gRNAs and primers). toddler mutants and aplnramu296 mutants were genotyped as previously described (Pauli et al., 2014; Helker et al., 2015). See Table 1 for relevant primer sequences.\n\n**Table 1.**\n Primer and target sequences.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"2\">Primers</th>\n      <th colspan=\"2\">gRNA targets</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>lefty1\u00a01</td>\n      <td>CGTGGCTTTCATGTATCACCTTC</td>\n      <td>cxcr4a target 1</td>\n      <td>G G A CATCGGAGC CAACTTTG</td>\n    </tr>\n    <tr>\n      <td>lefty1\u00a01</td>\n      <td>G CATTAG CCTATATG TTAACTTG CAC.</td>\n      <td>cxcr4a target 2</td>\n      <td>GTAC CG TCTG CA C CT CTCAG</td>\n    </tr>\n    <tr>\n      <td>Iefty2\u00a01</td>\n      <td>GGGACACAAG CTTTG AAGG G</td>\n      <td>cxcr4a target 3</td>\n      <td>CG C CTTC ATCA GTTTG G ACC</td>\n    </tr>\n    <tr>\n      <td>Iefty2 2</td>\n      <td>TCCCTGTGTGAGTGAGATCG</td>\n      <td>cxcr4a target 4</td>\n      <td>CGCCGCGCTCCTCACTGTGC</td>\n    </tr>\n    <tr>\n      <td>Iefty2 3</td>\n      <td>CAGCTGTTCATTTTGACCACTCAC</td>\n      <td>cxcr4a target 5</td>\n      <td>G GA CTC GTTTG TCACAT G G G</td>\n    </tr>\n    <tr>\n      <td>Iefty2 4</td>\n      <td>AT G GAG CTTC AG C AT G G AC AG</td>\n      <td>sox32 target 1</td>\n      <td>CGTTCTGATGTTG C AAATAGTGG</td>\n    </tr>\n    <tr>\n      <td>aplnrB 1</td>\n      <td>TGTGTGAATATGATGAGTGGGAAC</td>\n      <td>sox32 target 2</td>\n      <td>G G CTTAAT G G GCC CGACGCGGGG</td>\n    </tr>\n    <tr>\n      <td>aplnrB 2</td>\n      <td>AGTGGTATCCCAGAGCAGTGTAG</td>\n      <td>sox32 target 3</td>\n      <td>CC GC G TCG G G CCC ATTAAG CC CG</td>\n    </tr>\n    <tr>\n      <td>cxcr4a 1</td>\n      <td>CGTCTTTGAAGATGATTTATCAGC</td>\n      <td>sox32 target 4</td>\n      <td>G TT C ATCAT G TG G AC G AAAG AG G</td>\n    </tr>\n    <tr>\n      <td>cxcr4a 2</td>\n      <td>CA C GTAAATG ATG CG G TT G G</td>\n      <td>sox32 target 5</td>\n      <td>CGAAGTGGTATGATGAAGAGTGG</td>\n    </tr>\n    <tr>\n      <td>cxcr4a 3</td>\n      <td>AG ACT G AA G GAG CTG G AG AAG</td>\n      <td>sox32 target 6</td>\n      <td>AGTG GAAAC GT GTTTG AT G GT G G</td>\n    </tr>\n    <tr>\n      <td>qPCR ta F</td>\n      <td>G AAC CAC AG AG GTG CTC CATATC</td>\n      <td>sox32 target 7</td>\n      <td>G ACTCT GA GTAAGC AG ACC G TG G</td>\n    </tr>\n    <tr>\n      <td>qPCR ta R</td>\n      <td>CTGGTGTTGGAGGTAGTGTTTGTG</td>\n      <td>sox32 target 8</td>\n      <td>GTAGAGCTCCATGATAGGTGGGG</td>\n    </tr>\n    <tr>\n      <td>qPCR leftyl F</td>\n      <td>AAG CT CTAC AAG AAG G CCC C AC ACAAG</td>\n      <td>sox32 target 9</td>\n      <td>G CGTGTGTG CTGTGTTTG G GTG G</td>\n    </tr>\n    <tr>\n      <td>qPCR leftyl R</td>\n      <td>TTCG TG AATG G G AATC AAC CTG G A A</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>qPCR actin F</td>\n      <td>ATCAGGGTGTCATGGTTGGT</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>qPCR actin R</td>\n      <td>CACGCAGCTCGTTGTAGAAG</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>sox32 F</td>\n      <td>AAACTTCTCACG CTT C AC ACC</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>sox32 R</td>\n      <td>CCATCCAGATTGCTG CTG ATTT</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### RNA and gRNA synthesis, injection and genotyping\n\nCapped mRNA for sox32 was transcribed from linearized plasmid using the T3 mMessage machine kit from Ambion\u00a0(Pittsburgh,\u00a0Pennsylvania). mRNA was injected at the one cell stage.\n\nFive gRNAs targeting cxcr4a and nine gRNAs targeting sox32 were designed using ChopChop (Montague et al., 2014) and transcribed as described in Gagnon et al. (2014). The five cxcr4a gRNAs were pooled and injected with Cas9 protein at the one cell stage. Injected embryos were raised to adulthood and monitored for germline transmission by genotyping individual F1 embryos with primers spanning the targeted region of the gene. Nine sox32 gRNAs were pooled and injected with Cas9 protein at the one-cell stage. A subset of embryos were collected for in situ hybridization at shield and 75% epiboly while others were raised to 3 dpf to confirm the expected gross morphological phenotype. See Table 1 for genomic target sequences for gRNAs.\n\nWhole mount in situ hybridization was carried out as previously described (Thisse and Thisse, 2008). Stained embryos were imaged in glycerol or were dehydrated in methanol and cleared in BB/BA. Embryos were imaged on an Axio Imager.Z1 microscope. For genotyping after imaging, embryos were washed in water before isolating genomic DNA.\n\n### Quantification of cell location and cell number\n\nLateral endodermal and mesodermal cells were analyzed in embryos at 70\u201385% epiboly, except for Figure 1 Supplement, when they were analyzed as early as 60% epiboly. For endoderm, images were analyzed with the lateral side in focus and the dorsal side in the plane of the screen. ImageJ was used to identify the center of the lateral side 90\u00b0 from dorsal and to measure the absolute height and width of the embryo. The relative locations of sox17+ cells in relationship to embryo height were recorded for all cells falling on or within 10% of the embryo width from the center of the lateral side. The number of cells within this area was used as a proxy for endodermal cell number.\n\nFor mesoderm, images were analyzed with the dorsal side forward and cross sections of the lateral sides in focus. The relative locations of the most animal fn1a+\u00a0cells in relationship to embryo height were recorded. All cell measurements were normalized to percent embryo height before comparison to other embryos. All toddler;lefty2 or toddler;cxcr4a double mutants were compared to their own toddler single mutant siblings. Appropriate numbers of embryos to be analyzed were determined based on robustness of phenotypes across biological replicates and supported by measurements of statistical difference.\n\n### RNAseq\n\nWild-type (TLAB) and toddler mutant zebrafish embryos were kept at 28C and staged according to standard procedures. Fifty embryos were collected per genotype per stage (sphere (4 hpf), early dome (5 hpf), germ ring (6 hpf), shield (7 hpf)). Total RNA was isolated using the standard TRIzol (Invitrogen,\u00a0Waltham,\u00a0Massachusetts) protocol. Genomic DNA was removed by TURBO-DNase treatment followed by phenol/chloroform extraction. The RNA quality was confirmed using the Agilent 2100 Bioanalyzer. RNAseq libraries were generated using the Illumina TruSeq RNA Library Prep Kit v2. Libraries were sequenced on a HiSeq 2500 (single end 51 bp reads). Reads were aligned using TopHat v2.0.13 (Trapnell et al., 2009) with the following command for each sample \u2018tophat -o\u00a0<\u00a0output directory> -p 16 --no-novel-juncs -G\u00a0<\u00a0gene table><Bowtie2 genome index><fastq reads>\u201d. Transcript abundance and differential expression were determined using Cufflinks v2.2.1 (RRID:SCR_014597)(Trapnell et al., 2012) with the following command for each developmental stage \u201ccuffdiff -p 16 -b\u00a0<\u00a0genome.fa -u -L < labels > o<output directory><gene table><wild type aligned reads. bam file><toddler mutant aligned reads. bam file>\u201d. Plots of differential gene expression were generated in Rstudio. The RNA-Seq data set was deposited to GEO; GEO acquisition number GSE89319.\n\n### Transplants\n\nTransplantations were carried out using a syringe and a micromanipulator. Donor embryos were injected at the one-cell stage with 50 pg gfp mRNA and a given amount of ndr1 or ndr2 mRNA. 10\u201320 cells were transplanted at sphere stage from the animal pole of the donor to the animal pole of the uninjected host. All embryos were stage matched and transplantations were homotypic: wild type into wild type or toddler mutant into toddler mutant. Embryos were collected 1.5 hr later at 50% epiboly. Following in situ hybridization for ta or gsc, GFP protein in transplanted cells was probed for using anti-GFP-POD and the VWR DAB reagent set (VWR Catalog number 95059\u2013296,\u00a0Radnor,\u00a0Pennsylvania). Embryos were imaged in glycerol. The diameter of induction was measured using ImageJ. When potential differences in phenotype were present experiments were repeated to confirm presence of the differential phenotype across biological replicates.\n\n### qRT-PCR\n\nWild-type and toddler mutants were injected at the one-cell stage with water or increasing amounts of ndr1 mRNA. Embryos were stage matched at the 16 cell stage, collected 4.25 hr later and frozen in liquid nitrogen. Total RNA from 8 to 18 embryos was extracted using Omega E.Z.N.A Total RNA Kit\u00a0(Norcross,\u00a0Georgia). cDNA was synthesized using BioRad iScript kit\u00a0(Hercules,\u00a0California). qPCR was carried out for technical and biological replicates using GoTaq on a CFX96 machine. 2^-\u2206\u2206Ct was calculated for each target gene using actin as a reference. Biological replicates were obtained from separate experimental set-ups. Technical replicates were obtained by splitting biological replicates into two samples after the cDNA prep but before carrying out qPCR. Necessary sample size was determined based on robustness of phenotype and consistency across biological replicates.\n\n### Lightsheet microscopy\n\nGastrulation movements were analyzed by lightsheet microscopy in drl:eGFP (Video 1) and sox17:eGFP transgenic wild-type and toddler mutant embryos. Imaging was performed as outlined in Pauli et al., 2014. In brief, embryos were allowed to develop at 28\u00b0C until early dome stage. Within a single experiment, 2\u20135 embryos (containing at least one embryo of each genotype) were mounted in 1% low-melting point agarose in 1x Danieau\u2019s in glass capillaries (Zeiss,\u00a0Oberkochen,\u00a0Germany). Image acquisition was performed at a Lightsheet Z.1 microscope (Zeiss) at 26.5\u00b0C in a fish-water-filled imaging chamber. Time-lapse movies of up to five embryos were recorded in the multi-view mode at time-intervals between frames no larger than 180 s.\n\nTimelapse acquisition settings for imaging on the Lightsheet Z.1 (Zeiss) (Single Plane Illumination System):\u00a020x/1.0 water immersion objective, 0.5x zoom; 488 nm laser; Detection: Dual PCO.Edge second-generation sCMOS cameras, liquid cooled, 1920 \u00d7 1920 pixels,~70 fps; 16 bit images (1920 \u00d7 1920 pixels; 878.8 \u00b5m x 878.8 \u00b5m; pixel size 0.46 \u00b5m); Dual-side illumination with online dual fusion and pivot scan; z-stacks: 80\u2013190 slices per embryo; 1.6\u20132.5 \u00b5m intervals.\n\n### Endodermal and mesodermal cell tracking\n\nManual tracking of sox17:eGFP and drl:eGFP-positive cells was done in FIJI by hand (endoderm) or using TrackMate (mesoderm). For endodermal cells, a window of 20\u201365 non-dorsal sox17:eGFP+\u00a0cells were monitored for cell divisions from the onset of GFP expression to approximately 85% epiboly in three time windows to allow for correction of focus (20 frames, 54 frames, 20 frames, respectively). Intervals between frames was no more than 3.5 min. Percent proliferation was determined by dividing the number of splitting events by the number of cells present at the beginning of the given time window. Proliferation events were averaged over all three time windows for each embryo.\n\nFor mesodermal cells, embryos were aligned at the beginning of internalization and individual GFP-positive cells were manually tracked until approximately 85% epiboly. Intervals between frames was no more than 3 min. TrackMate data was exported to R for computational analysis. Data from each embryo were binned into four time windows of equal length based on real time. For each measurement, only cells with 5 of more data points per time window were utilized and the entire first time window was excluded from further analysis. Straightness was determined by dividing the total displacement by the total distance. Total displacement was determined by summing the displacement made by a cell during each frame in a time window. Total distance was measured as the distance between the cell\u2019s location in the first and last frame of a time window. Velocity was measured by dividing the total displacement of a cell by the time for each time window. Rose plots were generated by plotting the angle moved weighted by the displacement traveled by each cell for each frame across a time window.\n\n### TUNEL staining\n\nDechorionated embryos were collected at various time points in 4% paraformaldehyde, fixed at 4\u00b0 overnight, then dehydrated into methanol (similar to collection for in situ hybridization) and stained using the In Situ Cell Death Detection Kit, TMR red, from Sigma Aldrich (St Louis, Missouri). Embryos were mounted in low-melting point agarose and one lateral side of each embryo was imaged using an LSM 880 confocal microscope with a\u00a0<\u00a01 micron pixel width and\u00a0<4.5 micron voxel-depth. Maximum intensity projections were analyzed and TUNEL+\u00a0cells were defined as a single, large positive spot or multiple, smaller spots in an aggregate.\n",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "e7881715-f358-4728-9d2a-3c299a81c9d5",
+      "submission_id": "d5afe1fe-2179-43f2-b347-7280c83ceaa9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Matthew Freeman, University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.22626.017](https://doi.org/10.7554/eLife.22626.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Toddler signaling regulates mesodermal cell migration downstream of Nodal signaling\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editor, and the evaluation has been overseen by a Senior Editor. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nThe reviewers all agreed that the function of Toddler in regulating Nodal signalling was an interesting topic. They also acknowledged that it has been controversial and that this manuscript aims to address the two proposed models in a precise and targeted manner. However, the results were found to be currently too preliminary to allow a firm conclusion to be drawn about the precise role of Toddler.\n\nReviewer #1:\n\nThis paper addresses an ongoing dispute about the function of the Toddler peptide in controlling mesendodermal development during zebrafish gastrulation. Specifically the disputed question is whether Toddler acts early, to enhance Nodal signaling, and therefore to specify endoderm cells; or, alternatively, whether it acts later, to control the migration of mesendoderm.\n\nThis elegant paper addresses three predictions that may distinguish the two models. All three sets of experiments lead the authors to conclude that Toddler acts downstream of Nodal signaling to control the migration mesodermal cells and, secondarily, the migration of normally attached endodermal cells. The data are clear, and the conclusions, while quite narrow, appear well supported. That may be slightly different from saying that this paper absolutely settles the case: it is possible that more complex hybrid models would be consistent with all results.\n\nThe authors discuss the discrepancies with the earlier conclusion that favors the endodermal specification model, and suggest reasons that could account for the distinct conclusions.\n\nReviewer #2:\n\nThe manuscript by Norris et al. investigates the mechanism by which the peptide Elabela/Toddler/Apela regulates mesendoderm development. Unlike the zebrafish cardia bifida mutants (cas, mil, fau) that also have reduced mesendoderm and endoderm cell migration defects, or nodal signaling mutants (cyc;sqt or oep) that have mesendoderm specification defects, in toddler mutants Nodal signaling is intact and mesendoderm specification is initially normal. Yet, there is a reduction in endoderm cells by mid-gastrula stages, mesoderm and endoderm cells do not migrate correctly, and toddler mutants have very small or no hearts. Using loss of lefty inhibitor to increase nodal signalling (and endoderm specification) in the context of toddler mutants, the authors tested and rule out the \"specification model\" which proposed a role for toddler as an enhancer of Nodal signaling. This part of the manuscript is, for the most part, nicely done.\n\nNorris and coworkers then tested the \"migration model\" by loss of the GPCR/chemokine receptor, cxcr4a and suggest that Toddler indirectly affects endoderm migration via Cxcr4 signaling. This part of the manuscript is not very convincing: the tether postulate can only partially explain the cell migration defect (in the endoderm), and it is unclear how mesoderm migration is affected in toddler mutants. In addition, why are endoderm cell numbers reduced? Do these cells die or is there delayed/other cell division defects in the mutant mesendoderm?\n\nAre the authors certain that initial mesendoderm specification is normal in toddler mutants? Norris and coworkers show that response to Nodal signalling is intact in toddler embryos, however both the Reversade and Schier groups have previously shown that in toddler mutants, the scl and gata5 expression domains are expanded. How can this be explained?\n\nIf the primary function for toddler is in regulation of cell migration, it might be useful to investigate individual cell behaviours, rather than exclusively rely upon the expression of germ layer markers. For instance, is protrusive activity altered in mutant cells (which might then affect cell migration)? Are there defects in cytoskeletal organization in toddler mutant mesendoderm, which might affect cell division and cell numbers as well as cell migration?\n\nThe authors examined RNAseq data and conclude that the gene expression profile is largely unchanged in toddler mutant embryos compared to controls, at least at early embryonic stages (sphere-shield). However, for abundant molecules (such as those comprising the cytoskeleton) and for those that have a significant maternal contribution, the subcellular distribution of the proteins might be important, but may not be evident from absolute transcript levels.\n\nIn summary, the manuscript has some novel findings; the data ruling out effects of Toddler on mesendoderm specification via Nodal signaling is interesting and contrasts with a recent report by the Reversade and Scott groups. However, the manuscript does not satisfactorily address how Toddler affects cell migration (especially the mesoderm). In its present form, the manuscript seems more appropriate for a specialized audience.\n\nReviewer #3:\n\nThis paper seeks to distinguish between two models for Toddler function in zebrafish embryos. One model suggests that Toddler is required for Nodal signalling and thus is required to correctly specify endoderm. The other model postulates that Toddler regulates mesendodermal cell migration downstream of Nodal signaling. The authors' data do not support the first model, but give some support to the second model. However, in general, I think that the work is preliminary, and key controls are missing in my view. There is also no insight into how Toddler could be functioning to promote mesodermal cell migration.\n\n1) In Figures 1 and 2, the authors compare the toddler mutant and the lefty2;toddler double mutant, without showing data for the lefty2 mutant alone. This must be shown in order to be able to assess the effect of mutating toddler in the lefty2 mutant background.\n\n2) In Figure 2C, the heart sizes should be quantitated. It is not sufficient to present the percentage of embryos with smaller hearts.\n\n3) In general I think the images showing sox17 staining to quantitate numbers of endodermal cells are low in quality. It would be better to perform fluorescent in situs, which would be easier to image and quantitate.\n\n4) The loss of function experiments for sox32 have been performed using transient expression of guide RNAs and Cas9. There are no controls showing that sox32 has been deleted. The authors must prove what deletions they are achieving in these embryos and they must prove the loss of sox32. It would be much better if they used a stable line as they have for the cxcr4a mutant.\n\n5) There is no evidence presented that the lefty2 mutants or the cxcr4a mutants are nulls.\n\n6) The authors say that loss of sox32 or overexpression of sox32 has no effect on aplnrB expression. The data in Figure 5A do not agree with this. There is certainly lower expression when sox32 is overexpressed, and higher expression when sox32 is deleted. In addition, what is the anterior staining in Figure 5B in the sox32 gRNAs+cas9? In Figure 5\u2014figure supplement 1, sox32 deletion also seems to increase fn1a staining.\n\n6) In Figure 6A, it really is not clear that in the cxcr4a null the sox17 cells migrate further animally. This needs to be investigated further.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for resubmitting your work entitled \"Toddler signaling regulates mesodermal cell migration downstream of Nodal signaling\" for further consideration at eLife. Your revised article has been favorably evaluated by Marianne Bronner (Senior editor), a Reviewing editor, and three reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\n1) It is essential to determine the fate of the missing endodermal cells: is there a change in proliferation or cell death? The authors should use the tools they described in Pauli et al. 2014 to address this key question.\n\n2) It would be helpful to readers to include a more measured and constructive discussion about the differences between the present results and those described by Deshwar et al. Different reagents and approaches were used and it is not clear whether these could account for at least some of the differences.\n\n3) With regard to quantifying the heart size in Figure 2C, the authors argue that it is difficult to do this given the in situ images and the irregular shape of the heart. This may be the case, but it is essential to define what constitutes a small heart. Thus, some level of quantification is required.\n\n4) It is important to demonstrate that the lefty mutants they use do actually lead to elevated Nodal signaling\n",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1517cae5-dc33-41e0-9786-160195d5618a",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C1",
+      "claim": "Toddler/Apela/Elabela is a conserved secreted peptide that regulates mesendoderm development during zebrafish gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Toddler/Apela/Elabela is a conserved secreted peptide that regulates mesendoderm development during zebrafish gastrulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established fact about Toddler.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "8929b44d-d5d1-401c-bb31-8448abd3fee6",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C2",
+      "claim": "The 'specification model' postulates that Toddler signaling enhances Nodal signaling to properly specify endoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'specification model' postulates that Toddler signaling enhances Nodal signaling to properly specify endoderm",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes one of the two models being tested in the study, citing previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "302f3b31-b240-41f8-859e-6119a81d2a55",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C3",
+      "claim": "The 'migration model' posits that Toddler signaling regulates mesendodermal cell migration downstream of Nodal signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "the 'migration model' posits that Toddler signaling regulates mesendodermal cell migration downstream of Nodal signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the alternative model being tested in the study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "e8ef0ede-1fd2-4523-be96-f558e2593a0c",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C4",
+      "claim": "In toddler mutants, Nodal signaling is initially normal.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that in toddler mutants Nodal signaling is initially normal",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "e4c05cfc-5dac-4a1a-b7a8-f04e5c706ee4",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C5",
+      "claim": "Increasing endoderm specification does not rescue mesendodermal cell migration in toddler mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "increasing endoderm specification does not rescue mesendodermal cell migration",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "25ed69b7-46ba-4a14-909b-52aa176ca078",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C6",
+      "claim": "Mesodermal cell migration defects in toddler mutants result from a decrease in animal pole-directed migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Mesodermal cell migration defects in toddler mutants result from a decrease in animal pole-directed migration",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "398a0075-606d-4846-b6cd-0346cba4bc74",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C7",
+      "claim": "Mesodermal cell migration defects in toddler mutants are independent of endoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Mesodermal cell migration defects in toddler mutants result from a decrease in animal pole-directed migration and are independent of endoderm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "9c7e77ec-cbda-463f-ab0f-8773b24ec974",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C8",
+      "claim": "Endodermal cell migration defects in toddler mutants are dependent on a Cxcr4a-regulated tether of the endoderm to mesoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, endodermal cell migration defects are dependent on a Cxcr4a-regulated tether of the endoderm to mesoderm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "f62d0314-9553-42ee-80b3-28685d3a540f",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C9",
+      "claim": "Toddler signaling regulates mesodermal cell migration downstream of Nodal signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that Toddler signaling regulates mesodermal cell migration downstream of Nodal signaling",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on multiple experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "db8291ac-c35d-4651-9aa2-6893b8315b3f",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C10",
+      "claim": "Toddler signaling indirectly affects endodermal cell migration via Cxcr4a-signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that Toddler signaling regulates mesodermal cell migration downstream of Nodal signaling and indirectly affects endodermal cell migration via Cxcr4a-signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion of the study based on experimental results in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "43d5a7fe-012f-427d-99fc-b561090455f8",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C11",
+      "claim": "Gastrulation is a conserved process in embryogenesis during which the three germ layers undergo large-scale rearrangements to shape the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Gastrulation is a conserved process in embryogenesis during which the three germ layers \u2013 endoderm, mesoderm and ectoderm \u2013 undergo large-scale rearrangements to shape the embryo (Solnica-Krezel, 2005; Schier, 2009; Langdon and Mullins, 2011; Solnica-Krezel and Sepich, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "7c78628a-6513-4f0e-a530-2ccc4cdf01a6",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C12",
+      "claim": "Following their specification, endoderm and mesoderm internalize beneath the ectoderm and migrate away from the site of internalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Following their specification, endoderm and mesoderm (jointly referred to as mesendoderm) internalize beneath the ectoderm and migrate away from the site of internalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information about gastrulation movements.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "b0e8a1fa-a1aa-4c36-9076-cc78ce517d2c",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C13",
+      "claim": "Defects in cellular movements during gastrulation can lead to a truncated body axis and abnormal organs.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects in these cellular movements can lead to a truncated body axis and abnormal organs, while defects in initial specification cause absence or reduction of mesendoderm derivatives (Solnica-Krezel, 2005; Schier, 2009; Langdon and Mullins, 2011; Solnica-Krezel and Sepich, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "7bed3ca3-45c0-4cb2-8473-da00bdcca084",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C14",
+      "claim": "Defects in initial specification cause absence or reduction of mesendoderm derivatives.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects in these cellular movements can lead to a truncated body axis and abnormal organs, while defects in initial specification cause absence or reduction of mesendoderm derivatives (Solnica-Krezel, 2005; Schier, 2009; Langdon and Mullins, 2011; Solnica-Krezel and Sepich, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "d16ac773-3206-423c-93fe-25da5522a518",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C15",
+      "claim": "Endoderm and mesoderm specification depends on the TGF\u03b2-ligand Nodal.",
+      "claim_type": "EXPLICIT",
+      "source": "Endoderm and mesoderm specification depends on the TGF\u03b2-ligand Nodal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established background knowledge about germ layer specification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "4bb3bd08-453c-4cf7-aa97-8772683c63f0",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C16",
+      "claim": "Secreted Nodal ligands bind to Activin receptors, which leads to Smad2 phosphorylation and target gene induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Secreted Nodal ligands bind to Activin receptors, which leads to Smad2 phosphorylation and target gene induction (Schier, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information about Nodal signaling mechanism supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "7151b13b-d29a-420a-bf8a-9a71beaced3f",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C17",
+      "claim": "Nodal signals trigger transcription of their own inhibitors, which belong to the Lefty family.",
+      "claim_type": "EXPLICIT",
+      "source": "Nodal signals also trigger transcription of their own inhibitors, which belong to the Lefty family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information about Nodal signaling regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "7b757b42-4935-4e3d-b913-b1c51a9fc9f5",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C18",
+      "claim": "lefty mutants have increased Nodal signaling resulting in increased endodermal and mesodermal gene expression and cell number during gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, lefty mutants have increased Nodal signaling resulting in increased endodermal and mesodermal gene expression and cell number during gastrulation (Meno et al., 1999; Rogers et al., unpublished ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "55decc89-109e-4a66-bf0d-981ec1b33c95",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C19",
+      "claim": "After specification by Nodal, endodermal cells are tethered to mesodermal cells through a fibronectin-integrin link genetically regulated by the GPCR Cxcr4a.",
+      "claim_type": "EXPLICIT",
+      "source": "After specification by Nodal, endodermal cells are tethered to mesodermal cells through a fibronectin-integrin link genetically regulated by the GPCR Cxcr4a (Mizoguchi et al., 2008; Nair and Schilling, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "e3557c54-dd55-47c8-ab56-4bb6abde3e24",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C20",
+      "claim": "Loss of Cxcr4a releases the tether between endoderm and mesoderm and results in excessive animal pole-directed migration of endodermal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of Cxcr4a releases this tether and results in excessive animal pole-directed migration of endodermal cells, while mesodermal cell migration is unaffected (Mizoguchi et al., 2008; Nair and Schilling, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "577f47be-76bb-46a8-9c3b-1785b3af0299",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C21",
+      "claim": "Mesodermal cell migration is unaffected by loss of Cxcr4a.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of Cxcr4a releases this tether and results in excessive animal pole-directed migration of endodermal cells, while mesodermal cell migration is unaffected (Mizoguchi et al., 2008; Nair and Schilling, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "13bd78f0-94a4-472a-a37e-5d76a7ca54d6",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C22",
+      "claim": "Toddler/Apela/Elabela is required for proper endoderm and mesoderm formation and migration.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional GPCR pathway, regulated by Toddler/Apela/Elabela, is also required for proper endoderm and mesoderm formation and migration (Chng et al., 2013; Pauli et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "322e4423-114d-48c3-a390-7d2d46d36e13",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C23",
+      "claim": "Toddler is highly conserved throughout vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "In this pathway, the secreted peptide Toddler, which is highly conserved throughout vertebrates, signals via the GPCR APJ (in zebrafish: Apelin receptor A and B, jointly referred to as Apelin receptor).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information about Toddler conservation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "924da589-be32-41db-928f-21d741064f40",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C24",
+      "claim": "Toddler signals via the GPCR APJ (Apelin receptor A and B in zebrafish).",
+      "claim_type": "EXPLICIT",
+      "source": "In this pathway, the secreted peptide Toddler, which is highly conserved throughout vertebrates, signals via the GPCR APJ (in zebrafish: Apelin receptor A and B, jointly referred to as Apelin receptor).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information about Toddler signaling mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "2368d165-2e52-417d-9894-5592753643e7",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C25",
+      "claim": "In toddler mutants, initial specification of endoderm and mesoderm is normal.",
+      "claim_type": "EXPLICIT",
+      "source": "In toddler mutants, initial specification of endoderm and mesoderm is normal (Pauli et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "a3845242-78ba-497d-90b6-2056637c1854",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C26",
+      "claim": "By mid-gastrulation, toddler mutants have fewer endodermal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "but by mid-gastrulation, toddler mutants have fewer endodermal cells and mesendodermal cell migration is reduced (Chng et al., 2013; Pauli et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "4bff95db-fe53-4c6b-8816-5d12ec70b9cd",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C27",
+      "claim": "Mesendodermal cell migration is reduced in toddler mutants by mid-gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "but by mid-gastrulation, toddler mutants have fewer endodermal cells and mesendodermal cell migration is reduced (Chng et al., 2013; Pauli et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "24a50ec0-3a8a-49d5-9e19-aae6d2750f86",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C28",
+      "claim": "toddler mutants generally die around 7 days post fertilization with deformed hearts, blood accumulation, edema and endodermal abnormalities.",
+      "claim_type": "EXPLICIT",
+      "source": "toddler mutants generally die around 7 days post fertilization (dpf) with deformed hearts, blood accumulation, edema and endodermal abnormalities (Chng et al., 2013; Pauli et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information about toddler mutant phenotypes supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "cfb89734-dc71-460e-8a76-ce46ff5e2eda",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C29",
+      "claim": "Apelin receptor signaling has been proposed to enhance Nodal signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Apelin receptor signaling has been proposed to enhance Nodal signaling, possibly accounting for the endoderm cell number defects in toddler mutants (Deshwar et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim from previous literature being tested in this study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "3990f190-e6b6-4fc6-bd56-14b2dba55f0c",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C30",
+      "claim": "Mesendodermal cells migrate more slowly during internalization in toddler mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "This model is supported by the observation that mesendodermal cells migrate more slowly during internalization in toddler mutants, and that apelin receptor a and b gene expression depend on Nodal signaling (Tucker et al., 2007; Pauli et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "4056e8d9-31c1-4067-b733-4eb453eae66b",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C31",
+      "claim": "apelin receptor a and b gene expression depend on Nodal signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "This model is supported by the observation that mesendodermal cells migrate more slowly during internalization in toddler mutants, and that apelin receptor a and b gene expression depend on Nodal signaling (Tucker et al., 2007; Pauli et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "461e7a05-7516-42b3-8f6d-e084123413fb",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C32",
+      "claim": "Endodermal cell numbers are comparable between wild-type and toddler mutant embryos at 60% epiboly.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that endodermal cell numbers are comparable between wild-type and toddler mutant embryos at 60% epiboly",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "fc5ba969-2b90-43b6-9ac4-1141dbf2d504",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C33",
+      "claim": "Endodermal cells in wild-type and toddler mutants divide at similar rates.",
+      "claim_type": "EXPLICIT",
+      "source": "and that they go on to divide at similar rates, suggesting that initial specification and subsequent proliferation are not affected (Figure 1\u2014figure supplement 1)(Pauli et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "9f4bda09-b6ed-4bd7-89f5-90a262578dc3",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C34",
+      "claim": "Initial specification and subsequent proliferation of endoderm are not affected in toddler mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "and that they go on to divide at similar rates, suggesting that initial specification and subsequent proliferation are not affected (Figure 1\u2014figure supplement 1)(Pauli et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cell number and division rate data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "7df875c4-3706-47f2-9585-d3362b7d128c",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C35",
+      "claim": "toddler mutant embryos have increased rates of cell death, including endodermal cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we found increased rates of cell death in toddler mutant embryos, including endodermal cell death, which may account for the decreased cell numbers observed during later gastrulation (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "4a5dd76a-e4c7-4b4b-9e2d-586cff9eb882",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C36",
+      "claim": "Increased cell death in toddler mutants may account for the decreased cell numbers observed during later gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we found increased rates of cell death in toddler mutant embryos, including endodermal cell death, which may account for the decreased cell numbers observed during later gastrulation (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the cell death data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "460e313c-8905-4686-a90f-1663f2668615",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C37",
+      "claim": "lefty2 single and toddler;lefty2 double mutant embryos had more endodermal cells than toddler single mutants and wild-type embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, lefty2 single and toddler;lefty2 double mutant embryos had more endodermal cells than toddler single mutants and wild-type embryos (Figure 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 1A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "338a3a60-526d-43c2-985f-d8d078470971",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C38",
+      "claim": "Endodermal cells in lefty2 single mutants migrated normally.",
+      "claim_type": "EXPLICIT",
+      "source": "While endodermal cells in lefty2 single mutants migrated normally, endodermal cell dispersion in toddler;lefty2 double mutants was not rescued and resembled toddler single mutant siblings (Figure 1A,C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "2697af7e-7db9-4f55-a921-006f9134d7d7",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C39",
+      "claim": "Endodermal cell dispersion in toddler;lefty2 double mutants was not rescued and resembled toddler single mutant siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "While endodermal cells in lefty2 single mutants migrated normally, endodermal cell dispersion in toddler;lefty2 double mutants was not rescued and resembled toddler single mutant siblings (Figure 1A,C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "979c53e4-bb28-4c8d-a94b-4f9c50decdb1",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C40",
+      "claim": "Mesodermal cell dispersion was not rescued in toddler;lefty2 double mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "As with endoderm, mesodermal cell dispersion was not rescued in toddler;lefty2 double mutants (Figure 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "de1f4f85-208d-4d6a-97aa-0ef6d882ac91",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C41",
+      "claim": "Increasing endodermal cell number did not rescue the endodermal or mesodermal cell migration defects in toddler mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, increasing endodermal cell number did not rescue the endodermal or mesodermal cell migration defects in toddler mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the toddler;lefty2 double mutant data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "b39e0690-5e5a-470b-881f-f132275a02b8",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C42",
+      "claim": "Hearts in toddler;lefty2 double mutants resembled toddler single mutants, except in rare cases when hearts were wild-type in size.",
+      "claim_type": "EXPLICIT",
+      "source": "Hearts in toddler;lefty2 double mutants resembled toddler single mutants, except in rare cases when hearts were wild-type in size (Figure 2C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 2C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "d662f101-7783-40f4-aca8-ad5860722350",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C43",
+      "claim": "By 3 dpf, toddler;lefty2 double mutant larvae had similar or more severe patterning defects as compared to their toddler single mutant siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "By 3 dpf, toddler;lefty2 double mutant larvae had similar or more severe patterning defects as compared to their toddler single mutant siblings (Figure 2E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 2E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "93c7d486-e850-4884-bcf6-9fcd23e765b6",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C44",
+      "claim": "Increasing endoderm cell number cannot rescue toddler mutant phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that increasing endoderm cell number cannot rescue toddler mutant phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the toddler;lefty2 double mutant data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "c0db3257-8654-4df5-a0eb-a6e4ac7727b4",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C45",
+      "claim": "Wild-type and toddler mutant embryos show no difference in expression of lefty1 and lefty2 just before gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we used in situ hybridization to examine expression of two direct Nodal target genes, lefty1 and lefty2, just before gastrulation and found no difference between wild-type and toddler mutant embryos (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "73795a67-d28f-4faf-9596-f81438d31a7c",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C46",
+      "claim": "apelin receptor a and b single and double mutants displayed normal expression of the Nodal target genes lefty1 and lefty2.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, apelin receptor a and b single and double mutants also displayed normal expression of the Nodal target genes lefty1 and lefty2 (Figure 3B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 3B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "5b5fda1b-2bc3-4782-86c1-6bd45bffad5e",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C47",
+      "claim": "RNA-Seq analysis found no significant differences in Nodal target gene expression at any time-point prior to or during early gastrulation between wild-type and toddler mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we analyzed Nodal target gene expression by RNA-Seq at four time points prior to or during early gastrulation in wild-type and toddler mutants. We found no significant differences at any time-point in the expression of Nodal target genes (Dubrulle et al., 2015) or broadly across all genes (Figure 3D)(Figure 3\u2014Source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by RNA-Seq data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "71ed9e23-effa-42f6-8e3c-766fdaa37294",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C48",
+      "claim": "There were no significant differences in gene expression broadly across all genes between wild-type and toddler mutants prior to or during early gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no significant differences at any time-point in the expression of Nodal target genes (Dubrulle et al., 2015) or broadly across all genes (Figure 3D)(Figure 3\u2014Source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by RNA-Seq data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "d0a08256-023c-415d-973e-ae0e447909d7",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C49",
+      "claim": "Wild-type and toddler mutants show no significant difference in the ability to respond to exogenous Nodal.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, wild-type and toddler mutant embryos were injected at the one cell stage with increasing levels of Nodal mRNA and Nodal target gene expression was measured just prior to gastrulation using qRT-PCR. We found no significant difference in the ability of wild-type and toddler mutants to respond to exogenous Nodal (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by qRT-PCR data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "aa423354-1c9f-4878-ba38-a831d3b4083a",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C50",
+      "claim": "Wild-type and toddler mutants displayed Nodal target gene expression at the same frequencies after transplantation of cells expressing Nodal mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, cells expressing Nodal mRNA were transplanted into a host embryo and the host was assayed for Nodal target gene induction using in situ hybridization (Figure 4B). Wild-type and toddler mutants displayed target gene expression at the same frequencies and across the same distances (Figure 4C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by transplantation data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "ce442599-b2ab-4cdf-a36f-edf1f46873fd",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C51",
+      "claim": "Wild-type and toddler mutants displayed Nodal target gene expression across the same distances after transplantation of cells expressing Nodal mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type and toddler mutants displayed target gene expression at the same frequencies and across the same distances (Figure 4C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by transplantation data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "7ebab729-47a9-44e1-ba3c-66e697e6ce25",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C52",
+      "claim": "The establishment of Nodal signaling is normal in toddler mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the establishment of Nodal signaling is normal in toddler mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on multiple assays of Nodal signaling in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "60471b7b-09f3-4fee-a4c0-b11deb901be6",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C53",
+      "claim": "apelin receptor a and b gene expression resembles expression of the mesoderm markers fn1a and fascin, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, apelin receptor a and b gene expression in wild-type embryos resembles expression of the mesoderm markers fn1a and fascin, respectively, and is dependent on signaling by the mesendoderm inducer Nodal (Pauli et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "04ed27f7-1fe5-4905-b68f-c3b5f1bf7576",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C54",
+      "claim": "The endodermal marker sox17 displayed increased expression in sox32 mRNA-injected embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the endodermal marker sox17 displayed increased expression in sox32 mRNA-injected embryos or decreased expression in sox32 mutant embryos (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "5019ba09-6cbd-4ef0-b1fa-d6c1b067bee0",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C55",
+      "claim": "The endodermal marker sox17 displayed decreased expression in sox32 mutant embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the endodermal marker sox17 displayed increased expression in sox32 mRNA-injected embryos or decreased expression in sox32 mutant embryos (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "7db33886-3d8b-485e-9dc7-7a628d00f67c",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C56",
+      "claim": "The expression of mesodermal markers fn1a and ta increased upon loss of endoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the expression of mesodermal markers fn1a and ta or of apelin receptor a and b increased upon loss of endoderm (Figure 5A and Figure 5\u2014figure supplement 5 ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 5A and supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "4670df94-43e9-486c-bda0-711f641f0caa",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C57",
+      "claim": "The expression of apelin receptor a and b increased upon loss of endoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the expression of mesodermal markers fn1a and ta or of apelin receptor a and b increased upon loss of endoderm (Figure 5A and Figure 5\u2014figure supplement 5 ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 5A and supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "29545478-75f7-44bb-8856-a85aa7c318df",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C58",
+      "claim": "apelin receptor b expression was retained at the site of internalization in embryos lacking endoderm, suggesting its expression is not ectodermal but mesodermal.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, apelin receptor b expression was retained at the site of internalization in embryos lacking endoderm, suggesting its expression is not ectodermal but mesodermal (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding and inference from the study supported by data in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "6977000c-1fb4-48a6-b0aa-99143da6f409",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C59",
+      "claim": "apelin receptor a and b are expressed in mesodermal progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that apelin receptor a and b are expressed in mesodermal progenitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the sox32 manipulation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "c60458dc-09a4-4681-bbd5-69e2e618e8fe",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C60",
+      "claim": "Mesodermal cells moved more slowly in toddler mutants than in wild-type embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mesodermal cells moved more slowly in toddler mutants than in wild-type embryos (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by light sheet microscopy data in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "ac384e0f-739b-4c43-a06e-c408588d56a6",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C61",
+      "claim": "toddler mutant mesodermal cells showed diminished animal pole-directed migration.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, toddler mutant mesodermal cells showed diminished animal pole-directed migration, resulting in persistent vegetal and dorsal-ward migration during gastrulation (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by light sheet microscopy data in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "f117d267-de92-43af-b252-cef790f4b829",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C62",
+      "claim": "toddler mutant mesodermal cells show persistent vegetal and dorsal-ward migration during gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, toddler mutant mesodermal cells showed diminished animal pole-directed migration, resulting in persistent vegetal and dorsal-ward migration during gastrulation (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by light sheet microscopy data in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "e82f4fe0-5a0f-406f-812e-b0c55ce2bbf8",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C63",
+      "claim": "Toddler signaling is required for proper animal-pole directed movement of mesodermal cells during gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that Toddler signaling is required for proper animal-pole directed movement of mesodermal cells during gastrulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the light sheet microscopy data in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "2188a84d-73b9-407b-b613-92af7ddd9bf7",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C64",
+      "claim": "Lack of endoderm did not change the normal mesoderm dispersion in wild-type embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that lack of endoderm did not change the normal mesoderm dispersion in wild-type embryos or the reduced migration in toddler mutants (Figure 6A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "fd800c9e-c4d8-4817-9c2f-6108c5abd8c6",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C65",
+      "claim": "Lack of endoderm did not change the reduced migration in toddler mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that lack of endoderm did not change the normal mesoderm dispersion in wild-type embryos or the reduced migration in toddler mutants (Figure 6A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "776c607f-ae3e-4e29-9089-df5acbca9d63",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C66",
+      "claim": "The mesodermal cell migration defects in toddler mutants are independent of endoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the mesodermal cell migration defects in toddler mutants are independent of endoderm and suggest a direct role of Toddler signaling on mesoderm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the toddler;sox32 double mutant data in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "43c4e416-2f45-4098-a12a-c61abaa502af",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C67",
+      "claim": "Toddler signaling has a direct role on mesoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the mesodermal cell migration defects in toddler mutants are independent of endoderm and suggest a direct role of Toddler signaling on mesoderm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the toddler;sox32 double mutant data in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "59e85167-0851-41fb-a3a5-dbae04abfc08",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C68",
+      "claim": "Mesodermal cells migrated normally in cxcr4a mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We used Cas9-mediated mutagenesis to create a null mutant for cxcr4a (as described in Materials and methods) and observed that mesodermal cells migrated normally (Figure 7A\u2013B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 7A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "d8962499-279b-472f-95b4-6177df3c2c48",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C69",
+      "claim": "The most vegetal endodermal cells dispersed further animally in cxcr4a mutants than in wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "while the most vegetal endodermal cells dispersed further animally than in wild type, consistent with previous Cxcr4a morphant studies (Figure 7C\u2013D) (Mizoguchi et al., 2008; Nair and Schilling, 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 7C-D and consistent with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "83034588-3636-4715-8172-b967d87e1289",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C70",
+      "claim": "Mesodermal cell migration in toddler;cxcr4a double mutants was as reduced as in toddler single mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, mesodermal cell migration in toddler;cxcr4a double mutants was as reduced as in toddler single mutants (Figure 7A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 7A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "b3e6443d-2838-4aea-afa2-8c4560bf670e",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C71",
+      "claim": "Endoderm dispersion was increased in toddler;cxcr4a double mutants as compared to toddler single mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, however, endoderm dispersion was increased in toddler;cxcr4a double mutants as compared to toddler single mutants (Figure 7C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 7C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "72645759-fbbf-4e2e-83fc-e02a8275db9d",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C72",
+      "claim": "The number of endodermal cells did not change in toddler;cxcr4a double mutants compared to toddler single mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "While endoderm migration was increased in toddler;cxcr4a double mutants, the number of endodermal cells did not change (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "f7a11c5b-6b25-4b5b-bc35-0ce33b98c6b9",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C73",
+      "claim": "The reduced mesodermal cell migration in toddler mutants limits endodermal dispersion.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations indicate that the reduced mesodermal cell migration in toddler mutants limits endodermal dispersion and that Toddler signaling is not required for endodermal cell migration per se.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the toddler;cxcr4a double mutant data in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "e132b9a3-1931-4c76-bdbc-55f40085e360",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C74",
+      "claim": "Toddler signaling is not required for endodermal cell migration per se.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations indicate that the reduced mesodermal cell migration in toddler mutants limits endodermal dispersion and that Toddler signaling is not required for endodermal cell migration per se.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the toddler;cxcr4a double mutant data in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "b0284e3c-ef44-4ac6-8186-6094bf100d24",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C75",
+      "claim": "Nodal signaling induces the expression of apelin receptor a and b in mesendodermal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Nodal signaling induces the expression of apelin receptor a and b in mesendodermal cells, rendering them sensitive to Toddler peptide (Figure 5A\u2013B)(Pauli et al., 2014; Tucker et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is part of the model supported by data in Figure 5 and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "54125ea9-87b8-47fb-a97a-af71e0660467",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C76",
+      "claim": "Toddler signaling directly regulates animal-pole directed migration of mesodermal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Toddler signaling directly regulates animal-pole directed migration of mesodermal cells (Figures 5 and 6)(Pauli et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is part of the model supported by data in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "374c8d1a-39e9-43d5-82ad-457c9cec54bc",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C77",
+      "claim": "A Cxcr4a-regulated tether between endodermal and mesodermal cells allows Toddler signaling to indirectly affect endodermal cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "A Cxcr4a-regulated tether between endodermal and mesodermal cells allows Toddler signaling to indirectly affect endodermal cell migration (Figure 7)(Mizoguchi et al., 2008; Nair and Schilling, 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is part of the model supported by data in Figure 7 and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "72fffc7b-1b5f-460c-84fe-b70efd9ad569",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C78",
+      "claim": "Deshwar and colleagues reported that apelin receptor a and b double morphants appear to have a delayed onset of Nodal signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas Deshwar and colleagues reported that apelin receptor a and b double morphants appear to have a delayed onset of Nodal signaling, we find that toddler mutants as well as apelin receptor a and b single and double mutants establish Nodal signaling normally (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a finding from a previous study that differs from the current study's findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "db50e744-1433-4995-b508-678be1b9749a",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C79",
+      "claim": "toddler mutants establish Nodal signaling normally.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas Deshwar and colleagues reported that apelin receptor a and b double morphants appear to have a delayed onset of Nodal signaling, we find that toddler mutants as well as apelin receptor a and b single and double mutants establish Nodal signaling normally (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "8d341704-96ee-43d1-8470-c14b6d349bff",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C80",
+      "claim": "apelin receptor a and b single and double mutants establish Nodal signaling normally.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas Deshwar and colleagues reported that apelin receptor a and b double morphants appear to have a delayed onset of Nodal signaling, we find that toddler mutants as well as apelin receptor a and b single and double mutants establish Nodal signaling normally (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "6c9fe806-37cd-42cf-b53c-2e9822f9af05",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C81",
+      "claim": "Toddler and/or the Apelin receptors may have independent functions.",
+      "claim_type": "EXPLICIT",
+      "source": "First, it is possible that Toddler and/or the Apelin receptors have independent functions (Ho et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for differences between studies, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "0717cfb5-ff83-4b03-a71c-87b81959ac9b",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C82",
+      "claim": "Knockdown of the receptors via morpholinos might reveal a phenotype that is masked or compensated in the null mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, although apelin receptor mutants and morphants have similar morphological defects (Deshwar et al., 2016), knockdown of the receptors via morpholinos might reveal a phenotype that is masked or compensated in the null mutants (Rossi et al., 2015; Wei et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for differences between studies, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "f4e9efe8-6a0e-4eaf-ba1d-89da5780194b",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C83",
+      "claim": "Morpholino injection may cause non-specific delayed development or toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, morpholino injection may cause non-specific delayed development or toxicity, as suggested by the epiboly defects seen in apelin receptor a morphants but not apelin receptor a mutants (Ekker and Larson, 2001; Kok et al., 2015; Deshwar et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for differences between studies, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "149e78ad-2ad4-4eee-aed1-1560ce4d5bfc",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C84",
+      "claim": "Toddler is a regulator of mesodermal cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study indicates that Toddler is a regulator of mesodermal cell migration and only indirectly regulates endodermal cell migration during gastrulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion of the study based on multiple experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "e8fdc75a-70eb-4f56-8893-7c4075aa83d0",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C85",
+      "claim": "Toddler only indirectly regulates endodermal cell migration during gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study indicates that Toddler is a regulator of mesodermal cell migration and only indirectly regulates endodermal cell migration during gastrulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion of the study based on multiple experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "d75c6441-d964-4e65-8de6-18a408f3fe2b",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C86",
+      "claim": "Both endodermal cells and mesodermal cells migrate more slowly in the absence of Toddler signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we find both similarities and differences in the role of Toddler signaling in the migration of endoderm versus mesoderm. Both endodermal cells (Pauli et al., 2014) and mesodermal cells (this study, Figure 5D) migrate more slowly in the absence of Toddler signaling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study and previous work, supported by data in Figure 5D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "e9800bfa-a872-4680-bc0a-3a29e7aa7b04",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C87",
+      "claim": "toddler mutant mesodermal cells have reduced animal pole-directed migration during gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we find that toddler mutant mesodermal cells have reduced animal pole-directed migration during gastrulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "d5e01ab5-60e4-4eff-b366-6b1afafb9a5f",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C88",
+      "claim": "Endodermal cells initially undergo a random walk, including animal pole-directed movement, in wild-type and toddler mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in contrast to endodermal cells, which initially undergo a random walk, including animal pole-directed movement, in wild-type and toddler mutants (Pauli et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information from previous work supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "4e91d7c4-7460-447b-b683-267901300817",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C89",
+      "claim": "The intrinsic ability of endoderm to migrate without Toddler signaling is fully revealed in the abundant animal pole-directed migration of endoderm in toddler;cxcr4a double mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The intrinsic ability of endoderm to migrate without Toddler signaling is fully revealed in the abundant animal pole-directed migration of endoderm in toddler;cxcr4a double mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the toddler;cxcr4a double mutant data in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "783d6ec2-f893-4fbf-943f-5f981b2b8fed",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C90",
+      "claim": "The ability to undergo animal pole-directed migration is retained in endodermal cells but compromised in mesodermal cells in the absence of Toddler signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the ability to undergo animal pole-directed migration is retained in endodermal cells but compromised in mesodermal cells in the absence of Toddler signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the differential effects of Toddler loss on endoderm versus mesoderm migration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "f5a85322-21c5-4d60-b688-49f8a7123ee8",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C91",
+      "claim": "Toddler has an anti-apoptotic function.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work and others have suggested an anti-apoptotic function for Toddler (Ho et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on findings from this study and previous work, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "a6d8179f-f9c9-4bd9-9a4d-c87c2df9628b",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C92",
+      "claim": "RNA-Seq results in toddler mutants did not reveal major changes in gene expression during gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our RNA-Seq results in toddler mutants did not reveal major changes in gene expression during gastrulation (Figure 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by RNA-Seq data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "26729c18-442b-4a27-b8b6-3e8ddbcc93ac",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C93",
+      "claim": "Toddler's primary function may be post-transcriptional.",
+      "claim_type": "EXPLICIT",
+      "source": "Our RNA-Seq results in toddler mutants did not reveal major changes in gene expression during gastrulation (Figure 3), suggesting that Toddler's primary function may be post-transcriptional.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation based on the lack of transcriptional changes in RNA-Seq data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "832c4a00-745b-438e-8e4d-9a8d100968ac",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C94",
+      "claim": "In the absence of both Toddler and Cxcr4a signaling, endoderm migration is surprisingly normal.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of both Toddler and Cxcr4a signaling, endoderm migration is surprisingly normal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the toddler;cxcr4a double mutant data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "8fcb88da-82a0-4996-b49f-f0cb1d86ef28",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C95",
+      "claim": "lefty1a145 is a null allele harboring a 13 base pair deletion that destroys a PshAI restriction enzyme site.",
+      "claim_type": "EXPLICIT",
+      "source": "lefty1a145 is a null allele harboring a 13 base pair deletion that destroys a PshAI restriction enzyme site (Rogers et al. submitted).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a genetic allele used in the study, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "cf517cc9-faa2-43a0-b07a-44a8be5e9893",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C96",
+      "claim": "lefty2a146 is a null allele harboring an 11 base pair deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "lefty2a146 is a null allele harboring an 11 base pair deletion that was genotyped with allele-specific primers (Table 1)(Rogers et al. submitted).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a genetic allele used in the study, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "b87d6362-9f97-40d6-bc22-83b0d80da5f9",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C97",
+      "claim": "aplnrB mutants harbor a 1 bp deletion in the 52nd amino acid, which creates an AflIII restriction enzyme cleavage site.",
+      "claim_type": "EXPLICIT",
+      "source": "aplnrB mutants harbor a 1 bp deletion in the 52nd amino acid, which creates an AflIII restriction enzyme cleavage site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a genetic allele used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "d56510c6-2643-484f-bb8d-40e5ee05ac71",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "claim_id": "C98",
+      "claim": "The cxcr4a mutant line harbors a 433 bp deletion of a 1083 bp long coding sequence, generating a frameshift after the 28th amino acid.",
+      "claim_type": "EXPLICIT",
+      "source": "The cxcr4a mutant line harbors a 433 bp deletion of a 1083 bp long coding sequence, generating a frameshift after the 28th amino acid and was genotyped with allele-specific primers (see Table 1 for gRNAs and primers).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a genetic allele generated in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "26b196e9-74aa-4a22-9b0c-0474fe87f4f6",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Nodal signaling is established normally in toddler mutants. Multiple independent assays (in situ hybridization for lefty1/lefty2, RNA-Seq, qRT-PCR response to exogenous Nodal, and transplantation assays) demonstrate that toddler mutants and apelin receptor mutants show no defects in Nodal target gene expression or Nodal signaling capacity prior to or during early gastrulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C45-C52, C79-C80 collectively provide strong, convergent evidence from four independent experimental approaches (Figures 3-4) that Nodal signaling is normal in toddler mutants. The consistency across multiple assays and the inclusion of apelin receptor mutants strengthen this conclusion. This directly contradicts the 'specification model' and supports the 'migration model'.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "a5692d54-faa6-421d-a5ee-7b5a84afa05c",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Increasing endoderm specification through lefty2 mutation does not rescue toddler mutant phenotypes. Despite increased endodermal cell numbers in toddler;lefty2 double mutants, endodermal and mesodermal cell migration defects persist, and heart and body patterning defects remain similar to or worse than toddler single mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C32-C44 provide comprehensive evidence from genetic rescue experiments (Figures 1-2) showing that increasing endoderm cell number via lefty2 mutation fails to rescue migration or developmental phenotypes in toddler mutants. The data include cell counts, migration measurements, and phenotypic assessments at multiple developmental stages, all consistently supporting the conclusion that reduced endoderm specification is not the primary defect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "619cf008-bff5-4215-8aac-65b05a82600d",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Toddler signaling is required for proper animal pole-directed migration of mesodermal cells during gastrulation. Light sheet microscopy tracking of mesodermal cells reveals that toddler mutants show reduced velocity and diminished animal pole-directed migration, with persistent vegetal and dorsal-ward migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C60-C63, C87 are supported by quantitative light sheet microscopy data (Figure 5C-E, Video 1) showing specific directional migration defects in mesodermal cells. The measurements of straightness, velocity, and directional bias provide detailed characterization of the migration phenotype. This is a key finding supporting the migration model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "72af3d2e-d63f-464c-a1bf-649d2f3224ce",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mesodermal cell migration defects in toddler mutants are independent of endoderm, and apelin receptors are expressed in mesodermal progenitors. Sox32 manipulation experiments show that apelin receptor expression increases upon loss of endoderm and is retained at internalization sites, indicating mesodermal expression. Removing endoderm does not rescue mesodermal migration defects in toddler mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C54-C59, C64-C67 are supported by sox32 manipulation experiments (Figures 5A-B, 6A-B) demonstrating that apelin receptors are expressed in mesoderm and that mesodermal migration defects persist in the absence of endoderm. The CRISPR-mediated sox32 knockout provides strong genetic evidence. However, claim C67 about 'direct role' is somewhat speculative as it's based on inference rather than direct mechanistic evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "5a87e36a-f4d9-4606-bcd7-5d292c105123",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Endodermal cell migration defects in toddler mutants are dependent on a Cxcr4a-regulated tether to mesoderm. In toddler;cxcr4a double mutants, endoderm dispersion is rescued to near wild-type levels despite persistent mesodermal migration defects, indicating that Toddler signaling is not required for endodermal cell migration per se but affects it indirectly through effects on mesoderm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C68-C74, C89, C94 are strongly supported by the toddler;cxcr4a double mutant analysis (Figure 7). The genetic epistasis experiment elegantly demonstrates that removing the endoderm-mesoderm tether rescues endoderm migration without affecting mesoderm migration defects. This provides compelling evidence for the indirect effect of Toddler on endoderm migration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "0d9df4fd-ddc6-4029-a4c0-d5ffd72b61db",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Toddler signaling regulates mesodermal cell migration downstream of Nodal signaling and indirectly affects endodermal cell migration via Cxcr4a-signaling. The proposed model integrates findings that Nodal induces apelin receptor expression in mesoderm, Toddler directly regulates mesodermal migration, and a Cxcr4a-regulated tether allows indirect effects on endoderm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C75-C77, C84-C85, C90 represent the main conclusions synthesizing all experimental results. The model is well-supported by the convergent evidence from multiple genetic and cellular analyses. The placement of Toddler downstream of Nodal is supported by normal Nodal signaling in toddler mutants and Nodal-dependent apelin receptor expression. The direct effect on mesoderm and indirect effect on endoderm are supported by the sox32 and cxcr4a epistasis experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "dc53cbfd-365c-416f-bc9d-71737a8168c9",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Toddler mutants show increased cell death including endodermal cell death, which may account for decreased cell numbers during gastrulation. The authors suggest an anti-apoptotic function for Toddler.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36, C91 are supported by TUNEL staining data (Figure 1\u2014figure supplement 1) and live imaging showing cell death events. However, claim C36 is speculative ('may account for'), and the connection between cell death and the migration phenotypes is not mechanistically established. The anti-apoptotic function (C91) is presented as a suggestion rather than a demonstrated mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "9f37b398-b14a-49ca-a964-d6dc177903bf",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The current study's findings contradict a previous report (Deshwar et al., 2016) that apelin receptor signaling enhances Nodal signaling. The authors propose several possible explanations for the discrepancy, including independent functions, morpholino compensation artifacts, or morpholino toxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C83 accurately describe the contradiction with prior work and offer reasonable speculative explanations. The current study's use of genetic mutants versus the previous study's morpholinos is a key difference. However, the explanations (C81-C83) remain speculative and are appropriately presented as possibilities rather than demonstrated facts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "cc49d533-981f-4f3a-aa91-55df4d37127e",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Both endodermal and mesodermal cells migrate more slowly in toddler mutants, but the ability to undergo animal pole-directed migration is retained in endoderm but compromised in mesoderm. This represents a key difference in how Toddler affects the two cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C88, C90 are supported by comparing current findings (Figure 5D) with previous work (Pauli et al., 2014) and the toddler;cxcr4a double mutant data (Figure 7). The distinction between retained directional migration capacity in endoderm versus compromised capacity in mesoderm is well-supported and represents an important mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "fd43ab37-ce0f-45af-967a-305927ce25de",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "RNA-Seq analysis revealed no major changes in gene expression during gastrulation in toddler mutants, suggesting that Toddler's primary function may be post-transcriptional.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C92 is directly supported by RNA-Seq data (Figure 3D), showing no significant differential expression. However, claim C93 is speculative\u2014while the lack of transcriptional changes is consistent with a post-transcriptional mechanism, this is an inference rather than a demonstrated mechanism. The conclusion is reasonable but requires future work to validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "252e881f-36c3-4f10-9cd9-8af81501a521",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study generated and characterized several mutant alleles including lefty1a145, lefty2a146, aplnrB, and cxcr4a mutants, with specific molecular descriptions of each allele.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C98 describe the genetic reagents used in the study. These are methodological details supported by the Materials and methods section and supplementary data showing PCR validation (Figure 5\u2014figure supplement 1B-C). The molecular characterization appears adequate for the genetic experiments performed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "cb64731b-b4e9-406b-a11a-6311495a3fc8",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background information establishing the context for the study, including the roles of gastrulation, Nodal signaling, Cxcr4a, and Toddler/Apelin signaling in mesendoderm development based on prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C11-C31, C53 represent background knowledge and prior work that is appropriately cited. These claims establish the scientific context and the two competing models (specification vs. migration) being tested. The citations appear appropriate and the background is accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    },
+    {
+      "id": "a97fba91-73d9-46c4-ad76-f65da7dc5413",
+      "content_id": "80be0ae3-c02a-431e-bf05-cee32ddc516a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Two non-exclusive models have been proposed for Toddler function: the 'specification model' (Toddler enhances Nodal signaling for endoderm specification) and the 'migration model' (Toddler regulates mesendodermal cell migration downstream of Nodal).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3 accurately describe the two models being tested in the study. These represent the central hypotheses that organize the experimental work. The models are clearly defined and appropriately attributed to prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:57:31.382098Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e8ef0ede-1fd2-4523-be96-f558e2593a0c",
+      "result_id": "26b196e9-74aa-4a22-9b0c-0474fe87f4f6"
+    },
+    {
+      "claim_id": "c0db3257-8654-4df5-a0eb-a6e4ac7727b4",
+      "result_id": "26b196e9-74aa-4a22-9b0c-0474fe87f4f6"
+    },
+    {
+      "claim_id": "73795a67-d28f-4faf-9596-f81438d31a7c",
+      "result_id": "26b196e9-74aa-4a22-9b0c-0474fe87f4f6"
+    },
+    {
+      "claim_id": "5b5fda1b-2bc3-4782-86c1-6bd45bffad5e",
+      "result_id": "26b196e9-74aa-4a22-9b0c-0474fe87f4f6"
+    },
+    {
+      "claim_id": "71ed9e23-effa-42f6-8e3c-766fdaa37294",
+      "result_id": "26b196e9-74aa-4a22-9b0c-0474fe87f4f6"
+    },
+    {
+      "claim_id": "d0a08256-023c-415d-973e-ae0e447909d7",
+      "result_id": "26b196e9-74aa-4a22-9b0c-0474fe87f4f6"
+    },
+    {
+      "claim_id": "aa423354-1c9f-4878-ba38-a831d3b4083a",
+      "result_id": "26b196e9-74aa-4a22-9b0c-0474fe87f4f6"
+    },
+    {
+      "claim_id": "ce442599-b2ab-4cdf-a36f-edf1f46873fd",
+      "result_id": "26b196e9-74aa-4a22-9b0c-0474fe87f4f6"
+    },
+    {
+      "claim_id": "7ebab729-47a9-44e1-ba3c-66e697e6ce25",
+      "result_id": "26b196e9-74aa-4a22-9b0c-0474fe87f4f6"
+    },
+    {
+      "claim_id": "db50e744-1433-4995-b508-678be1b9749a",
+      "result_id": "26b196e9-74aa-4a22-9b0c-0474fe87f4f6"
+    },
+    {
+      "claim_id": "8d341704-96ee-43d1-8470-c14b6d349bff",
+      "result_id": "26b196e9-74aa-4a22-9b0c-0474fe87f4f6"
+    },
+    {
+      "claim_id": "e4c05cfc-5dac-4a1a-b7a8-f04e5c706ee4",
+      "result_id": "a5692d54-faa6-421d-a5ee-7b5a84afa05c"
+    },
+    {
+      "claim_id": "461e7a05-7516-42b3-8f6d-e084123413fb",
+      "result_id": "a5692d54-faa6-421d-a5ee-7b5a84afa05c"
+    },
+    {
+      "claim_id": "fc5ba969-2b90-43b6-9ac4-1141dbf2d504",
+      "result_id": "a5692d54-faa6-421d-a5ee-7b5a84afa05c"
+    },
+    {
+      "claim_id": "9f4bda09-b6ed-4bd7-89f5-90a262578dc3",
+      "result_id": "a5692d54-faa6-421d-a5ee-7b5a84afa05c"
+    },
+    {
+      "claim_id": "7df875c4-3706-47f2-9585-d3362b7d128c",
+      "result_id": "a5692d54-faa6-421d-a5ee-7b5a84afa05c"
+    },
+    {
+      "claim_id": "4a5dd76a-e4c7-4b4b-9e2d-586cff9eb882",
+      "result_id": "a5692d54-faa6-421d-a5ee-7b5a84afa05c"
+    },
+    {
+      "claim_id": "460e313c-8905-4686-a90f-1663f2668615",
+      "result_id": "a5692d54-faa6-421d-a5ee-7b5a84afa05c"
+    },
+    {
+      "claim_id": "338a3a60-526d-43c2-985f-d8d078470971",
+      "result_id": "a5692d54-faa6-421d-a5ee-7b5a84afa05c"
+    },
+    {
+      "claim_id": "2697af7e-7db9-4f55-a921-006f9134d7d7",
+      "result_id": "a5692d54-faa6-421d-a5ee-7b5a84afa05c"
+    },
+    {
+      "claim_id": "979c53e4-bb28-4c8d-a94b-4f9c50decdb1",
+      "result_id": "a5692d54-faa6-421d-a5ee-7b5a84afa05c"
+    },
+    {
+      "claim_id": "de1f4f85-208d-4d6a-97aa-0ef6d882ac91",
+      "result_id": "a5692d54-faa6-421d-a5ee-7b5a84afa05c"
+    },
+    {
+      "claim_id": "b39e0690-5e5a-470b-881f-f132275a02b8",
+      "result_id": "a5692d54-faa6-421d-a5ee-7b5a84afa05c"
+    },
+    {
+      "claim_id": "d662f101-7783-40f4-aca8-ad5860722350",
+      "result_id": "a5692d54-faa6-421d-a5ee-7b5a84afa05c"
+    },
+    {
+      "claim_id": "93c7d486-e850-4884-bcf6-9fcd23e765b6",
+      "result_id": "a5692d54-faa6-421d-a5ee-7b5a84afa05c"
+    },
+    {
+      "claim_id": "25ed69b7-46ba-4a14-909b-52aa176ca078",
+      "result_id": "619cf008-bff5-4215-8aac-65b05a82600d"
+    },
+    {
+      "claim_id": "c60458dc-09a4-4681-bbd5-69e2e618e8fe",
+      "result_id": "619cf008-bff5-4215-8aac-65b05a82600d"
+    },
+    {
+      "claim_id": "ac384e0f-739b-4c43-a06e-c408588d56a6",
+      "result_id": "619cf008-bff5-4215-8aac-65b05a82600d"
+    },
+    {
+      "claim_id": "f117d267-de92-43af-b252-cef790f4b829",
+      "result_id": "619cf008-bff5-4215-8aac-65b05a82600d"
+    },
+    {
+      "claim_id": "e82f4fe0-5a0f-406f-812e-b0c55ce2bbf8",
+      "result_id": "619cf008-bff5-4215-8aac-65b05a82600d"
+    },
+    {
+      "claim_id": "e9800bfa-a872-4680-bc0a-3a29e7aa7b04",
+      "result_id": "619cf008-bff5-4215-8aac-65b05a82600d"
+    },
+    {
+      "claim_id": "398a0075-606d-4846-b6cd-0346cba4bc74",
+      "result_id": "72af3d2e-d63f-464c-a1bf-649d2f3224ce"
+    },
+    {
+      "claim_id": "04ed27f7-1fe5-4905-b68f-c3b5f1bf7576",
+      "result_id": "72af3d2e-d63f-464c-a1bf-649d2f3224ce"
+    },
+    {
+      "claim_id": "5019ba09-6cbd-4ef0-b1fa-d6c1b067bee0",
+      "result_id": "72af3d2e-d63f-464c-a1bf-649d2f3224ce"
+    },
+    {
+      "claim_id": "7db33886-3d8b-485e-9dc7-7a628d00f67c",
+      "result_id": "72af3d2e-d63f-464c-a1bf-649d2f3224ce"
+    },
+    {
+      "claim_id": "4670df94-43e9-486c-bda0-711f641f0caa",
+      "result_id": "72af3d2e-d63f-464c-a1bf-649d2f3224ce"
+    },
+    {
+      "claim_id": "29545478-75f7-44bb-8856-a85aa7c318df",
+      "result_id": "72af3d2e-d63f-464c-a1bf-649d2f3224ce"
+    },
+    {
+      "claim_id": "6977000c-1fb4-48a6-b0aa-99143da6f409",
+      "result_id": "72af3d2e-d63f-464c-a1bf-649d2f3224ce"
+    },
+    {
+      "claim_id": "2188a84d-73b9-407b-b613-92af7ddd9bf7",
+      "result_id": "72af3d2e-d63f-464c-a1bf-649d2f3224ce"
+    },
+    {
+      "claim_id": "fd800c9e-c4d8-4817-9c2f-6108c5abd8c6",
+      "result_id": "72af3d2e-d63f-464c-a1bf-649d2f3224ce"
+    },
+    {
+      "claim_id": "776c607f-ae3e-4e29-9089-df5acbca9d63",
+      "result_id": "72af3d2e-d63f-464c-a1bf-649d2f3224ce"
+    },
+    {
+      "claim_id": "43c4e416-2f45-4098-a12a-c61abaa502af",
+      "result_id": "72af3d2e-d63f-464c-a1bf-649d2f3224ce"
+    },
+    {
+      "claim_id": "9c7e77ec-cbda-463f-ab0f-8773b24ec974",
+      "result_id": "5a87e36a-f4d9-4606-bcd7-5d292c105123"
+    },
+    {
+      "claim_id": "59e85167-0851-41fb-a3a5-dbae04abfc08",
+      "result_id": "5a87e36a-f4d9-4606-bcd7-5d292c105123"
+    },
+    {
+      "claim_id": "d8962499-279b-472f-95b4-6177df3c2c48",
+      "result_id": "5a87e36a-f4d9-4606-bcd7-5d292c105123"
+    },
+    {
+      "claim_id": "83034588-3636-4715-8172-b967d87e1289",
+      "result_id": "5a87e36a-f4d9-4606-bcd7-5d292c105123"
+    },
+    {
+      "claim_id": "b3e6443d-2838-4aea-afa2-8c4560bf670e",
+      "result_id": "5a87e36a-f4d9-4606-bcd7-5d292c105123"
+    },
+    {
+      "claim_id": "72645759-fbbf-4e2e-83fc-e02a8275db9d",
+      "result_id": "5a87e36a-f4d9-4606-bcd7-5d292c105123"
+    },
+    {
+      "claim_id": "f7a11c5b-6b25-4b5b-bc35-0ce33b98c6b9",
+      "result_id": "5a87e36a-f4d9-4606-bcd7-5d292c105123"
+    },
+    {
+      "claim_id": "e132b9a3-1931-4c76-bdbc-55f40085e360",
+      "result_id": "5a87e36a-f4d9-4606-bcd7-5d292c105123"
+    },
+    {
+      "claim_id": "4e91d7c4-7460-447b-b683-267901300817",
+      "result_id": "5a87e36a-f4d9-4606-bcd7-5d292c105123"
+    },
+    {
+      "claim_id": "832c4a00-745b-438e-8e4d-9a8d100968ac",
+      "result_id": "5a87e36a-f4d9-4606-bcd7-5d292c105123"
+    },
+    {
+      "claim_id": "f62d0314-9553-42ee-80b3-28685d3a540f",
+      "result_id": "0d9df4fd-ddc6-4029-a4c0-d5ffd72b61db"
+    },
+    {
+      "claim_id": "db8291ac-c35d-4651-9aa2-6893b8315b3f",
+      "result_id": "0d9df4fd-ddc6-4029-a4c0-d5ffd72b61db"
+    },
+    {
+      "claim_id": "b0284e3c-ef44-4ac6-8186-6094bf100d24",
+      "result_id": "0d9df4fd-ddc6-4029-a4c0-d5ffd72b61db"
+    },
+    {
+      "claim_id": "54125ea9-87b8-47fb-a97a-af71e0660467",
+      "result_id": "0d9df4fd-ddc6-4029-a4c0-d5ffd72b61db"
+    },
+    {
+      "claim_id": "374c8d1a-39e9-43d5-82ad-457c9cec54bc",
+      "result_id": "0d9df4fd-ddc6-4029-a4c0-d5ffd72b61db"
+    },
+    {
+      "claim_id": "149e78ad-2ad4-4eee-aed1-1560ce4d5bfc",
+      "result_id": "0d9df4fd-ddc6-4029-a4c0-d5ffd72b61db"
+    },
+    {
+      "claim_id": "e8fdc75a-70eb-4f56-8893-7c4075aa83d0",
+      "result_id": "0d9df4fd-ddc6-4029-a4c0-d5ffd72b61db"
+    },
+    {
+      "claim_id": "783d6ec2-f893-4fbf-943f-5f981b2b8fed",
+      "result_id": "0d9df4fd-ddc6-4029-a4c0-d5ffd72b61db"
+    },
+    {
+      "claim_id": "7df875c4-3706-47f2-9585-d3362b7d128c",
+      "result_id": "dc53cbfd-365c-416f-bc9d-71737a8168c9"
+    },
+    {
+      "claim_id": "4a5dd76a-e4c7-4b4b-9e2d-586cff9eb882",
+      "result_id": "dc53cbfd-365c-416f-bc9d-71737a8168c9"
+    },
+    {
+      "claim_id": "f5a85322-21c5-4d60-b688-49f8a7123ee8",
+      "result_id": "dc53cbfd-365c-416f-bc9d-71737a8168c9"
+    },
+    {
+      "claim_id": "72fffc7b-1b5f-460c-84fe-b70efd9ad569",
+      "result_id": "9f37b398-b14a-49ca-a964-d6dc177903bf"
+    },
+    {
+      "claim_id": "db50e744-1433-4995-b508-678be1b9749a",
+      "result_id": "9f37b398-b14a-49ca-a964-d6dc177903bf"
+    },
+    {
+      "claim_id": "8d341704-96ee-43d1-8470-c14b6d349bff",
+      "result_id": "9f37b398-b14a-49ca-a964-d6dc177903bf"
+    },
+    {
+      "claim_id": "6c9fe806-37cd-42cf-b53c-2e9822f9af05",
+      "result_id": "9f37b398-b14a-49ca-a964-d6dc177903bf"
+    },
+    {
+      "claim_id": "0717cfb5-ff83-4b03-a71c-87b81959ac9b",
+      "result_id": "9f37b398-b14a-49ca-a964-d6dc177903bf"
+    },
+    {
+      "claim_id": "f4e9efe8-6a0e-4eaf-ba1d-89da5780194b",
+      "result_id": "9f37b398-b14a-49ca-a964-d6dc177903bf"
+    },
+    {
+      "claim_id": "d75c6441-d964-4e65-8de6-18a408f3fe2b",
+      "result_id": "cc49d533-981f-4f3a-aa91-55df4d37127e"
+    },
+    {
+      "claim_id": "e9800bfa-a872-4680-bc0a-3a29e7aa7b04",
+      "result_id": "cc49d533-981f-4f3a-aa91-55df4d37127e"
+    },
+    {
+      "claim_id": "d5e01ab5-60e4-4eff-b366-6b1afafb9a5f",
+      "result_id": "cc49d533-981f-4f3a-aa91-55df4d37127e"
+    },
+    {
+      "claim_id": "783d6ec2-f893-4fbf-943f-5f981b2b8fed",
+      "result_id": "cc49d533-981f-4f3a-aa91-55df4d37127e"
+    },
+    {
+      "claim_id": "a6d8179f-f9c9-4bd9-9a4d-c87c2df9628b",
+      "result_id": "fd43ab37-ce0f-45af-967a-305927ce25de"
+    },
+    {
+      "claim_id": "26729c18-442b-4a27-b8b6-3e8ddbcc93ac",
+      "result_id": "fd43ab37-ce0f-45af-967a-305927ce25de"
+    },
+    {
+      "claim_id": "8fcb88da-82a0-4996-b49f-f0cb1d86ef28",
+      "result_id": "252e881f-36c3-4f10-9cd9-8af81501a521"
+    },
+    {
+      "claim_id": "cf517cc9-faa2-43a0-b07a-44a8be5e9893",
+      "result_id": "252e881f-36c3-4f10-9cd9-8af81501a521"
+    },
+    {
+      "claim_id": "b87d6362-9f97-40d6-bc22-83b0d80da5f9",
+      "result_id": "252e881f-36c3-4f10-9cd9-8af81501a521"
+    },
+    {
+      "claim_id": "d56510c6-2643-484f-bb8d-40e5ee05ac71",
+      "result_id": "252e881f-36c3-4f10-9cd9-8af81501a521"
+    },
+    {
+      "claim_id": "1517cae5-dc33-41e0-9786-160195d5618a",
+      "result_id": "cb64731b-b4e9-406b-a11a-6311495a3fc8"
+    },
+    {
+      "claim_id": "43d5a7fe-012f-427d-99fc-b561090455f8",
+      "result_id": "cb64731b-b4e9-406b-a11a-6311495a3fc8"
+    },
+    {
+      "claim_id": "7c78628a-6513-4f0e-a530-2ccc4cdf01a6",
+      "result_id": "cb64731b-b4e9-406b-a11a-6311495a3fc8"
+    },
+    {
+      "claim_id": "b0e8a1fa-a1aa-4c36-9076-cc78ce517d2c",
+      "result_id": "cb64731b-b4e9-406b-a11a-6311495a3fc8"
+    },
+    {
+      "claim_id": "7bed3ca3-45c0-4cb2-8473-da00bdcca084",
+      "result_id": "cb64731b-b4e9-406b-a11a-6311495a3fc8"
+    },
+    {
+      "claim_id": "d16ac773-3206-423c-93fe-25da5522a518",
+      "result_id": "cb64731b-b4e9-406b-a11a-6311495a3fc8"
+    },
+    {
+      "claim_id": "4bb3bd08-453c-4cf7-aa97-8772683c63f0",
+      "result_id": "cb64731b-b4e9-406b-a11a-6311495a3fc8"
+    },
+    {
+      "claim_id": "7151b13b-d29a-420a-bf8a-9a71beaced3f",
+      "result_id": "cb64731b-b4e9-406b-a11a-6311495a3fc8"
+    },
+    {
+      "claim_id": "7b757b42-4935-4e3d-b913-b1c51a9fc9f5",
+      "result_id": "cb64731b-b4e9-406b-a11a-6311495a3fc8"
+    },
+    {
+      "claim_id": "55decc89-109e-4a66-bf0d-981ec1b33c95",
+      "result_id": "cb64731b-b4e9-406b-a11a-6311495a3fc8"
+    },
+    {
+      "claim_id": "e3557c54-dd55-47c8-ab56-4bb6abde3e24",
+      "result_id": "cb64731b-b4e9-406b-a11a-6311495a3fc8"
+    },
+    {
+      "claim_id": "577f47be-76bb-46a8-9c3b-1785b3af0299",
+      "result_id": "cb64731b-b4e9-406b-a11a-6311495a3fc8"
+    },
+    {
+      "claim_id": "13bd78f0-94a4-472a-a37e-5d76a7ca54d6",
+      "result_id": "cb64731b-b4e9-406b-a11a-6311495a3fc8"
+    },
+    {
+      "claim_id": "322e4423-114d-48c3-a390-7d2d46d36e13",
+      "result_id": "cb64731b-b4e9-406b-a11a-6311495a3fc8"
+    },
+    {
+      "claim_id": "924da589-be32-41db-928f-21d741064f40",
+      "result_id": "cb64731b-b4e9-406b-a11a-6311495a3fc8"
+    },
+    {
+      "claim_id": "2368d165-2e52-417d-9894-5592753643e7",
+      "result_id": "cb64731b-b4e9-406b-a11a-6311495a3fc8"
+    },
+    {
+      "claim_id": "a3845242-78ba-497d-90b6-2056637c1854",
+      "result_id": "cb64731b-b4e9-406b-a11a-6311495a3fc8"
+    },
+    {
+      "claim_id": "4bff95db-fe53-4c6b-8816-5d12ec70b9cd",
+      "result_id": "cb64731b-b4e9-406b-a11a-6311495a3fc8"
+    },
+    {
+      "claim_id": "24a50ec0-3a8a-49d5-9e19-aae6d2750f86",
+      "result_id": "cb64731b-b4e9-406b-a11a-6311495a3fc8"
+    },
+    {
+      "claim_id": "cfb89734-dc71-460e-8a76-ce46ff5e2eda",
+      "result_id": "cb64731b-b4e9-406b-a11a-6311495a3fc8"
+    },
+    {
+      "claim_id": "3990f190-e6b6-4fc6-bd56-14b2dba55f0c",
+      "result_id": "cb64731b-b4e9-406b-a11a-6311495a3fc8"
+    },
+    {
+      "claim_id": "4056e8d9-31c1-4067-b733-4eb453eae66b",
+      "result_id": "cb64731b-b4e9-406b-a11a-6311495a3fc8"
+    },
+    {
+      "claim_id": "60471b7b-09f3-4fee-a4c0-b11deb901be6",
+      "result_id": "cb64731b-b4e9-406b-a11a-6311495a3fc8"
+    },
+    {
+      "claim_id": "8929b44d-d5d1-401c-bb31-8448abd3fee6",
+      "result_id": "a97fba91-73d9-46c4-ad76-f65da7dc5413"
+    },
+    {
+      "claim_id": "302f3b31-b240-41f8-859e-6119a81d2a55",
+      "result_id": "a97fba91-73d9-46c4-ad76-f65da7dc5413"
+    }
+  ],
+  "comparisons": []
+}

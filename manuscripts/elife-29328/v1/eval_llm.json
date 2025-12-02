@@ -1,0 +1,356 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Dynactin and NuMA co-localize at microtubule minus-ends after nuclear envelope breakdown (NEB), with dynactin switching from plus-end to minus-end localization at NEB. Before NEB, p150 (dynactin) localizes predominantly to plus-ends, but after NEB it preferentially localizes to minus-ends where it co-localizes with NuMA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 are well-supported by immunofluorescence data in Figure 1A-B showing co-localization patterns and quantification of p150 localization at different microtubule positions before and after NEB. The temporal correlation with NEB is clearly demonstrated and quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C6"
+    ],
+    "result": "NuMA and dynactin display specific, steady-state binding at newly created minus-ends, reaching a stable plateau in intensity over time, distinct from CAMSAP1 which shows transient binding. This finite binding pattern is consistent with truly end-specific localization rather than lattice binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 and C6 are supported by live imaging kinetics data in Figures 1C-G showing distinct recruitment patterns. The plateau behavior for NuMA/dynactin versus decreasing intensity for CAMSAP1 is clearly demonstrated with quantitative measurements and appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C5",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "NuMA localizes to minus-ends faster than dynactin, reaching half-maximum intensity sooner. This kinetic difference suggests NuMA may target dynein-dynactin to minus-ends rather than dynein delivering NuMA, and could explain why dynactin's minus-end preference arises after NEB when NuMA is released from the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C5, C22-C24 are supported by quantitative kinetics measurements in Figure 1F-G showing statistically significant differences in recruitment rates. The interpretation that NuMA targets dynactin (rather than vice versa) is a reasonable inference from the temporal data, though alternative explanations are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "The rate of NuMA or dynactin accumulation at new minus-ends does not correlate with k-fiber stub length, suggesting recruitment rate is determined by the number of individual microtubule minus-ends rather than total k-fiber length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 are supported by correlation analysis in Figure 1H showing no significant correlation between recruitment rate and stub length (r=-0.62, p=0.06 for Arp1A; r=0.44, p=0.07 for NuMA). The interpretation about microtubule number is reasonable given the cited literature on k-fiber composition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C30"
+    ],
+    "result": "NuMA localizes to minus-ends independently of dynein activity, as demonstrated by robust NuMA recruitment to ablation-created minus-ends when dynein-dynactin is inhibited by p50 or p150-CC1 overexpression. This challenges the prevailing model that dynein delivers NuMA to minus-ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 and C30 are strongly supported by live imaging experiments in Figure 2C and supplemental data showing NuMA recruitment persists under multiple methods of dynein inhibition. The conclusion contradicts prior literature but is well-supported by the experimental evidence presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Slower NuMA accumulation kinetics after p50 overexpression suggest that dynein-dynactin-NuMA complex formation may aid rapid NuMA recruitment, though dynein motility alone cannot explain NuMA's minus-end affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is supported by kinetics data in Figure 2D-E showing reduced recruitment rate with dynein inhibition. The interpretation that complex formation aids recruitment while not being essential is consistent with the data showing both slowed but persistent NuMA localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "After dynein knockout, both NuMA and dynactin still localize robustly to k-fiber minus-ends, indicating NuMA can bind minus-ends directly or indirectly without dynein, and may target dynactin to minus-ends even when dynein-dynactin complexes cannot form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are supported by immunofluorescence data in Figure 2F showing persistent localization of both proteins after genetic dynein deletion. The conclusion that NuMA can target dynactin independently of dynein is a reasonable inference, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "NuMA knockout eliminates dynein-mediated transport of ablation-created minus-ends toward poles, demonstrating that NuMA is required for dynein activity at spindle microtubule minus-ends. NuMA knockout also causes disorganized spindles with detached centrosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are strongly supported by live imaging and tracking data in Figure 3A-C showing complete loss of minus-end transport in NuMA knockout cells. The spindle phenotype is clearly documented, and the conclusion is consistent with prior literature on NuMA function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "After NuMA knockout, dynactin no longer localizes to minus-ends but remains on the spindle and frequently co-localizes with EB1 at plus-ends, reverting to an interphase-like localization pattern. This demonstrates NuMA is required for dynactin recruitment to minus-ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39, C41-C43 are well-supported by both live imaging (Figure 4A) and immunofluorescence (Figure 4B, D) showing loss of dynactin minus-end localization and shift to plus-ends after NuMA knockout. The conclusion that NuMA recruits dynactin is strongly supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Dynein's localization within the spindle is more ubiquitous and less minus-end-specific than dynactin's, both before and after NuMA deletion. High cytoplasmic dynein levels prevented detection of clear enrichment at ablation-created minus-ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C79-C81 are supported by immunofluorescence comparisons in Figure 4C showing less specific dynein localization compared to dynactin. The observation about detection limits is a reasonable technical limitation acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C50"
+    ],
+    "result": "NuMA localization to spindle poles and recruitment to new minus-ends remains robust after inhibition or knockout of known direct minus-end binders \u03b3-TuRC (by gatastatin treatment), CAMSAP1, and KANSL1, with recruitment timescales statistically indistinguishable from control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47, C49-C50 are supported by immunofluorescence (Figure 5A) and kinetics data (Figure 5B-C) showing unchanged NuMA localization and recruitment after multiple perturbations. Statistical analysis confirms no significant differences in recruitment kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "CAMSAP1 knockout caused a small (statistically significant) reduction in spindle length, consistent with a minus-end protecting function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 is supported by quantification in Figure 5\u2014figure supplement 1E showing reduced spindle length after CAMSAP1 knockout, consistent with cited literature on its Drosophila homolog Patronin.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "3D STORM imaging of NuMA at k-fiber minus-ends revealed organized clusters of NuMA puncta with spacing consistent with individual microtubules within k-fibers (~50-150 nm), supporting the idea that NuMA puncta are built on individual microtubule minus-ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by super-resolution STORM imaging in Figure 5D-H showing discrete NuMA puncta with spacing matching electron microscopy measurements of microtubule spacing in k-fibers. The interpretation is well-supported by the quantitative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Both full-length NuMA and a bonsai construct (N-C) lacking most of the central coiled-coil localized to spindle minus-ends and rescued spindle architecture equally well, indicating the extraordinary length of NuMA is not essential for its spindle function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by rescue experiments in Figure 6B-C showing equivalent localization and functional rescue by the shorter N-C construct. This is a surprising finding that challenges assumptions about NuMA's structure-function relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "NuMA's C-terminus alone localizes to minus-ends even without endogenous full-length protein, providing further support for dynein-independent minus-end recognition since dynein-dynactin binds the N-terminus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by immunofluorescence in Figure 6B showing C-terminus localization in knockout background. The inference about dynein-independence is logical given that the dynein-binding N-terminus is absent in this construct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "NuMA's C-terminus alone cannot rescue spindle architecture despite localizing to minus-ends, while the N-C construct (containing both N-terminus and C-terminus) can recruit dynactin and rescue function. This demonstrates both modules are required for NuMA function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by rescue experiments (Figure 6C) and dynactin recruitment assays (Figure 6E, Table 1) showing that both domains are necessary for function. The structure-function relationship is clearly established through systematic domain mapping.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "NuMA's minus-end localization requires C-terminal residues 1701-1981 (C-tail1+2A). C-tail2A alone binds the lattice, C-tail1 alone does not bind microtubules, but together they confer minus-end specificity. This region is sufficient for recruitment to new minus-ends even without endogenous NuMA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 are supported by systematic domain mapping experiments in Figure 6B, D and supplemental figures showing distinct localization patterns for different truncations. The identification of the minimal minus-end binding region is well-documented through multiple constructs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The N-Tau construct (NuMA N-terminus fused to Tau microtubule-binding domain) localizes along microtubules and recruits dynactin but cannot rescue spindle architecture, suggesting that specifically targeting dynein-dynactin to minus-ends (not just to microtubules generally) is critical for spindle organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by localization and rescue data in Figure 6C, E showing that lattice binding plus dynactin recruitment is insufficient for function. This is a key control demonstrating the importance of minus-end-specific targeting, though alternative explanations (e.g., ineffective dynein coupling) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C76",
+      "C77"
+    ],
+    "result": "NuMA functions as a mitosis-specific minus-end cargo adaptor with separate cargo-binding (C-terminus) and motor-recruitment (N-terminus) modules, conferring minus-end targeting to dynein-dynactin upon NEB when NuMA is released from the nucleus. This spatial and temporal regulation of dynein is critical for organizing microtubules into focused, bipolar spindles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74, C76-C77 represent the main conclusions integrating all experimental findings. The cargo adaptor model is well-supported by the domain mapping and functional rescue experiments. The temporal regulation model is supported by the NEB-dependent localization changes, though direct mechanistic evidence for NEB-triggered activation is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "NuMA and dynactin at minus-ends may selectively activate dynein (e.g., through conformational changes increasing processivity) rather than simply localizing it, which could explain why dynein localization is more ubiquitous than its activity within the spindle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C84 are speculative interpretations proposed to explain the observation that dynein localization is less specific than dynactin's. While this is a reasonable hypothesis consistent with the data, no direct evidence for dynein activation is provided. This remains an untested model requiring future biochemical or biophysical experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "NuMA's ability to oligomerize into higher-order assemblies suggests it could assemble teams of motors at minus-ends, potentially enabling transport and clustering despite high loads and friction from dense microtubule crosslinking and chromosome coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C87 combine established knowledge about NuMA oligomerization (C85, supported by citations) with speculation about functional consequences (C86-C87). While the speculation is reasonable and draws on analogies to other systems, no direct evidence for motor teaming or its functional importance is provided in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Treatment with 30 \u03bcM gatastatin reduces spindle length by 23% and blocks \u03b3-TuRC's ability to nucleate microtubules without depolymerizing existing networks, confirming effective \u03b3-TuRC inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 are supported by spindle length measurements (Figure 5\u2014figure supplement 1A) and microtubule re-growth assays (Figure 5\u2014figure supplement 1B) demonstrating the expected effects of gatastatin treatment. This validates the experimental approach for testing \u03b3-TuRC involvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Background knowledge claims about dynein, NuMA, and minus-end binding proteins establish the context for the study, including prior models of dynein localization, computational predictions, and known protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C88-C107 represent established knowledge from the literature, appropriately cited throughout. These provide necessary context for the study's findings and are accurately represented based on the citations provided. Some claims (e.g., C100) represent prevailing views that the current study challenges.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The temporal prediction model is a feedforward neural network with a single layer of nonlinear hidden units trained to predict future sensory input (40 ms for vision, 15 ms for audition) from recent past input (280 ms for vision, 200 ms for audition) using natural stimuli. The model uses L1 weight regularization to enforce parsimony and differs from sparse coding models by applying sparsity to weights rather than unit activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C24-C33 provide comprehensive methodological details about the model architecture, training procedure, and design rationale. The model design is clearly specified with explicit temporal windows, regularization approach, and biological motivation. The distinction from sparse coding models (C33) is clearly articulated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C38",
+      "C39",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The temporal prediction model develops receptive fields that closely match those of real cortical neurons in both auditory (A1) and visual (V1) cortex, including diversity of RF types, temporal asymmetry with greater sensitivity to recent inputs, and characteristic patterns of excitation followed by lagging inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C38-C39, C86-C88 establish the core finding through qualitative comparison. The model produces RFs matching real neurons in diversity (C38), temporal asymmetry (C39, C88), and both sensory modalities (C86-C87). However, quantitative validation is addressed in separate result groups below.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Auditory receptive fields were recorded from 114 neurons (76 single units) in A1 and AAF of 5 anesthetized ferrets. These RFs show diverse frequency tuning (narrowband, broadband, with flanking inhibition) and temporally asymmetric profiles with excitation near the present followed by longer-duration lagging inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 describe the experimental data collection with appropriate detail (sample size, species, recording locations). The characterization of RF properties is supported by citations (C37) and provides the empirical basis for model comparison. Ferret justification (C35) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Quantitative analysis using multi-dimensional scaling and temporal/spectral span measurements shows that temporal prediction model RFs cluster with real A1 neurons and differ substantially from sparse coding model RFs. The temporal prediction model captures key properties including power concentration in recent time steps, leading excitation followed by longer lagging inhibition, and similar frequency spans of excitation and inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C62 provide comprehensive quantitative validation through multiple complementary measures (MDS, temporal spans, frequency spans). The comparisons consistently favor the temporal prediction model over sparse coding across multiple dimensions. Statistical support is provided through distributional comparisons shown in referenced figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The temporal prediction model trained on visual inputs produces spatiotemporal RFs resembling V1 simple cells, including oriented spatial structure, temporal asymmetry with power highest near the present, and both space-time separable and inseparable RF types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 establish qualitative similarity between model and V1 simple cells. The comparison is supported by data from Ohzawa et al. (C41, C45) and established properties of simple cells (C42, C46). The model captures key features including temporal asymmetry (C44-C45) and RF diversity (C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Quantitative analysis of visual RFs shows the temporal prediction model matches neural data in temporal power distribution, space-time separability (631 separable, 969 inseparable units), tilt direction index (mean 0.34 vs. 0.16-0.51 in neural data), inverse correlation between temporal and spatial frequency (r\u00b2=-0.33, p<10\u207b\u2079), and RF shape parameters. The model uniquely captures blob-like RFs present in neural data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C71 provide extensive quantitative validation with specific statistical measures and comparisons to published data. The temporal power distribution (C63-C64), separability counts (C65), TDI values (C66), and correlation statistics (C67) are all quantified. The claim about blob-like RFs (C71) is supported by comparison to previous models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C72",
+      "C73",
+      "C74",
+      "C89"
+    ],
+    "result": "Better prediction accuracy correlates strongly with greater similarity to neural RFs (r\u00b2=0.8, p<10\u207b\u2079, n=55 for auditory model), supporting the hypothesis that cortical neurons are optimized for temporal prediction. This relationship provides an independent criterion for hyperparameter selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C72-C74, C89 establish a key theoretical prediction and its empirical validation. The correlation is strong (r\u00b2=0.8) and highly significant (p<10\u207b\u2079). The sample size (n=55) represents different hyperparameter combinations. This provides strong support for the optimization hypothesis (C74) and distinguishes the approach from other models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C75"
+    ],
+    "result": "The sparse coding model, trained on identical data, does not show a monotonic relationship between reconstruction capacity and similarity to neural RFs (r\u00b2=-0.05, p=0.69, n=50), unlike the temporal prediction model. This model was chosen as a control because it represents the standard for normative models of visual and auditory RFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50, C75 establish the control comparison. The lack of correlation for sparse coding (C75) contrasts with the strong correlation for temporal prediction, supporting the specificity of the finding. The justification for choosing sparse coding as a control (C50) is appropriate given its prominence in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C21",
+      "C22",
+      "C23",
+      "C90",
+      "C91",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Previous models based on efficient coding, sparse coding, and slowness principles fail to capture the temporal asymmetry of real RFs, typically showing symmetrical temporal envelopes rather than the asymmetric profiles with greater sensitivity to recent inputs observed in real neurons. These models do not account for the direction of time, giving equal importance to all time points in the encoded window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23, C40, C90-C91, C100-C103 provide a comprehensive critique of previous models supported by multiple citations. The specific limitation regarding temporal asymmetry is consistently identified across different model types. The explanation for this limitation (C102-C103) is theoretically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C121",
+      "C122"
+    ],
+    "result": "The temporal prediction model provides an independent criterion (prediction error) for hyperparameter selection, which has not been proposed for other normative models of RFs. When regularization is optimized for prediction, the model RFs most closely resemble real neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78, C121-C122 establish a methodological advantage of the temporal prediction approach. The claim of novelty (C77) is appropriately qualified ('to our knowledge'). The relationship between optimal prediction and neural similarity (C78) is demonstrated empirically in other claim groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The model's performance is robust to variations in nonlinearity type (sigmoid, tanh, rectified linear produce comparable results) and presence of noise (similar results with and without 6 dB SNR Gaussian noise), but requires nonlinear hidden units (linear units produce less accurate predictions and less realistic RFs). The best-predicting models have intermediate sparsity rather than maximum sparsity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 document important robustness tests and ablation studies. The finding that nonlinearity is necessary (C82) while the specific nonlinearity type is not critical (C81) is well-supported. The intermediate sparsity finding (C79-C80) challenges simple interpretations. Noise robustness (C83-C84) and temporal window robustness (C85) strengthen the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C137",
+      "C139"
+    ],
+    "result": "The results suggest that sensory processing is optimized to extract features with the most capacity to predict future input, and that many basic tuning properties of sensory neurons are a direct consequence of the brain's need to efficiently predict what will happen next.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C137, C139 present the main theoretical interpretation. This inference is well-supported by the empirical findings: (1) model RFs match real neurons when optimized for prediction, (2) better prediction correlates with greater neural similarity, and (3) the model captures properties previous models missed. However, this remains an inference about biological function rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The model shows some discrepancies with neural data, including narrower frequency tuning in auditory RFs and overrepresentation of vertical/horizontal orientations in visual RFs. These differences may result from mismatches between training data statistics and the sensory environment experienced by animals during development and evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C131 appropriately acknowledge limitations. The specific discrepancies are documented (C128-C129) and potential explanations are offered (C130-C131). This honest assessment strengthens rather than weakens the overall conclusions by demonstrating critical evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C13",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Temporal prediction has theoretical advantages for sensory processing: it addresses neural processing delays (tens to hundreds of milliseconds), can capture underlying causal structure, enables prediction of future inputs important for action guidance, and provides a criterion for eliminating irrelevant information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9, C13, C117-C120 establish the theoretical motivation. These claims are supported by citations to previous work and logical arguments about neural processing constraints. The timescale justification (C13) is appropriate for cortical processing and motor responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C93"
+    ],
+    "result": "The temporal prediction approach relates to the 'predictive information' framework, which selectively encodes features that predict future input, in contrast to 'predictive coding' which seeks compressed representation of the entire stimulus. The idea of prediction in perception dates to Helmholtz and has been described generally by the information bottleneck concept.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17, C93 appropriately position the work within existing theoretical frameworks. The distinction between predictive information and predictive coding (C15-C17) is clearly articulated and supported by citations. The historical context (C14) and connection to information bottleneck (C93) are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Previous models including ICA and slowness-based approaches reproduce spatial aspects of RFs but fail to capture temporal asymmetry. Slowness models find features that persist over time (predicting the same feature will continue), while temporal prediction can capture features in the past that predict different features in the future, giving different weighting based on predictive capacity rather than temporal slowness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C111 provide detailed comparison to specific alternative approaches. The critique is supported by citations and theoretical arguments. The distinction between slowness and prediction (C108-C111) is conceptually clear and supported by citation (C110).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Two previous studies examined temporal prediction for visual RFs: Palm (2012) used only two past frames limiting temporal analysis and produced noisy RFs unlike simple cells; Chalk et al. (2018) used linear encoding and produced oriented but spatiotemporally separable (not direction selective) RFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 acknowledge related work and explain how the current study differs. The limitations of previous work are clearly stated (C113-C114, C116) and supported by citations. This demonstrates awareness of the literature and positions the current contribution appropriately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Current evidence suggests primary cortical RFs are partially hard-wired but refined by experience, potentially requiring predictive learning mechanisms. Prediction error signals have been found in A1, consistent with the model. Recent progress has been made in developing biologically plausible alternatives to backpropagation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C136 discuss biological plausibility and mechanisms. The claims about RF development (C132) and prediction error signals (C135) are supported by citations. The discussion of biologically plausible learning (C136) appropriately addresses a potential concern. These remain speculative regarding actual biological implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C138"
+    ],
+    "result": "The temporal prediction principle may account for neural tuning in other sensory systems and prove useful for studying higher sensory processing and neural development and learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C138 is explicitly speculative about future applications. While the success in V1 and A1 provides some support for generalization, this remains untested. The claim is appropriately presented as speculation rather than established fact.",
+    "result_type": "MINOR"
+  }
+]

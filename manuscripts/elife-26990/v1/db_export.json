@@ -1,0 +1,2020 @@
+{
+  "submission": {
+    "id": "e75800ea-fc67-4c36-9738-00bd2f8b3146",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:18:30.954531Z",
+    "updated_at": "2025-12-01T21:18:30.954531Z"
+  },
+  "content": [
+    {
+      "id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "submission_id": "e75800ea-fc67-4c36-9738-00bd2f8b3146",
+      "content_type": "manuscript",
+      "content_text": "# Actin-based protrusions of migrating neutrophils are intrinsically lamellar and facilitate direction changes\n\n## Authors\n\n- Lillian K Fritz-Laylin<sup>1</sup> ([ORCID: 0000-0002-9237-9403](https://orcid.org/0000-0002-9237-9403))\n- Megan Riel-Mehan<sup>2</sup>\n- Bi-Chang Chen<sup>3</sup>\n- Samuel J Lord<sup>1</sup> ([ORCID: 0000-0002-2785-989X](https://orcid.org/0000-0002-2785-989X))\n- Thomas D Goddard<sup>4</sup>\n- Thomas E Ferrin<sup>4</sup>\n- Susan M Nicholson-Dykstra<sup>5</sup>\n- Henry Higgs<sup>5</sup>\n- Graham T Johnson<sup>2</sup>\n- Eric Betzig<sup>3</sup>\n- R Dyche Mullins<sup>1</sup> ([ORCID: 0000-0002-0871-5479](https://orcid.org/0000-0002-0871-5479)) \u2020\n\n### Affiliations\n\n1. Department of Cellular and Molecular Pharmacology Howard Hughes Medical Institute, University of California, San Francisco San Francisco United States\n2. Department of Bioengineering and Therapeutic Sciences University of California, San Francisco San Francisco United States\n3. Janelia Research Campus Howard Hughes Medical Institute Ashburn United States\n4. Department of Pharmaceutical Chemistry University of California, San Francisco San Francisco United States\n5. Department of Biochemistry and Cell Biology Dartmouth Geisel School of Medicine Hanover United States\n6. Animated Cell Allen Institute for Cell Science Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nLeukocytes and other amoeboid cells change shape as they move, forming highly dynamic, actin-filled pseudopods. Although we understand much about the architecture and dynamics of thin lamellipodia made by slow-moving cells on flat surfaces, conventional light microscopy lacks the spatial and temporal resolution required to track complex pseudopods of cells moving in three dimensions. We therefore employed lattice light sheet microscopy to perform three-dimensional, time-lapse imaging of neutrophil-like HL-60 cells crawling through collagen matrices. To analyze three-dimensional pseudopods we: (i) developed fluorescent probe combinations that distinguish cortical actin from dynamic, pseudopod-forming actin networks, and (ii) adapted molecular visualization tools from structural biology to render and analyze complex cell surfaces. Surprisingly, three-dimensional pseudopods turn out to be composed of thin (<0.75 \u00b5m), flat sheets that sometimes interleave to form rosettes. Their laminar nature is not templated by an external surface, but likely reflects a linear arrangement of regulatory molecules. Although we find that Arp2/3-dependent pseudopods are dispensable for three-dimensional locomotion, their elimination dramatically decreases the frequency of cell turning, and pseudopod dynamics increase when cells change direction, highlighting the important role pseudopods play in pathfinding.\n\n## Introduction\n\nThree hundred years, ago Anton van Leeuwenhoek\u2019s simple microscope revealed \u2018animacules\u2019 changing shape as they moved through a drop of water\u00a0(van Leewenhoeck, 1677). Subsequent breakthroughs in microscope technology and molecular biology have strengthened the link between cell morphology and locomotion, and we now know that crawling cells from many eukaryotic phyla create a variety of dynamic protrusions that project forward, in the direction of migration.\n\nThin, flat protrusions produced by strongly adherent cells are generally called lamellipodia. Previous work, mainly on fibroblasts and epithelial cells, has established that movement of leading-edge lamellipodia is driven by growth of branched actin networks nucleated and crosslinked by the Arp2/3 complex. As they advance, these lamellipodia promote creation of new focal adhesions that provide traction and support continued movement (Case and Waterman, 2015). This mode of cell migration appears to be restricted to the animal lineage, where it relies on the presence of specific ligands in the extracellular environment and plays essential roles in embryonic development, wound healing, and tissue homeostasis.\n\nA more widely dispersed form of cell crawling\u2014probably present in the last common ancestor of all eukaryotes (Fritz-Laylin et al., 2017)\u2014requires only weak, non-specific interaction with the extracellular environment and can achieve speeds several orders of magnitude faster than adhesion-based movement (Loomis et al., 2012;\u00a0Preston and King, 1978; L\u00e4mmermann et al., 2008; Buenemann et al., 2010; Butler et al., 2010; Loomis et al., 2012; Petrie and Yamada, 2015; Fritz-Laylin et al., 2017). This mode of cell migration is associated with formation of complex, three-dimensional pseudopods filled with branched networks of actin filaments, nucleated and organized by the Arp2/3 complex. These three-dimensional pseudopods may contribute to forward motion of crawling and swimming cells (Van Haastert, 2011), but recent work has revealed that disrupting pseudopod formation can increase the speed and persistence of migration (Leithner et al., 2016; Vargas et al., 2016), implying that complex pseudopods might be more important for exploring the external environment than for driving forward motion.\n\nWe know less about the morphology and function of complex pseudopods than adherent lamellipodia in part due to the technical limitations of live-cell light microscopy. Confocal and total internal reflection fluorescence (TIRF) microscopy, for example, provide adequate views of adherent lamellipodia because these structures are: (i) slow-moving, (ii) thin, and (iii) closely adhered to the microscope coverslip. In contrast, the complex pseudopods created by fast-moving cells: (i) grow quickly (10\u2013100 um/min), (ii) adopt complex three-dimensional shapes, and (iii) often spend their lives far from a coverslip surface. In addition, photobleaching must be minimized in order to observe living cells for sufficient time to track their complex three-dimensional migration.\n\nAlthough some work has suggested that two-dimensional lamellipodia of adherent cells reflect the flatness of the surface to which they are attached (Burnette et al., 2014), no mechanisms have been proposed to explain the more complex morphologies of three-dimensional pseudopods created by fast, weakly adherent cells\u2014especially when crawling through irregular environments. Moreover, it remains unclear whether these complex pseudopods are completely amorphous, or whether they share common, underlying structural features that might shed light on their functions and mechanisms of assembly.\n\nTo address these issues, we employed the recently developed lattice light sheet microscope (Chen et al., 2014), which offers a unique combination of three-dimensional imaging with high spatial and temporal resolution and low phototoxicity. To render and interpret the large data sets produced by lattice light sheet microscopy, we developed new visualization software and combined it with biochemically defined molecular probes to detect and characterize pseudopods in living cells.\n\nUsing these new tools, we discovered that pseudopods created by fast-moving neutrophils are not entirely amorphous, but represent various arrangements of a single structural motif: a free-standing lamellar sheet. Thus, complex, three-dimensional pseudopods that appear amorphous in widefield and confocal microscopy turn out to be rosettes formed of multiple, interleaved lamella. Unlike adherent lamellipodia, these free-standing lamellar building blocks are not templated from a flat surface and their morphology strongly suggests that they arise from a linear arrangement of regulatory molecules associated with the plasma membrane. In addition, our automated methods for detecting and quantifying the size of complex pseudopods reveal that these dynamic cellular structures play a key role in cellular pathfinding.\n\n## Results\n\n### Surface rendering of lattice light sheet data reveals three-dimensional dynamics of membranes and actin networks in migrating neutrophils\n\nNeutrophil-like HL-60 cells build pseudopods that are filled with polymerized actin, easily visualized in fixed cells using phalloidin (Figure 2\u2014figure supplement 1, Figure 3\u2014figure supplement 1). To visualize pseudopod dynamics in actively migrating cells, we constructed HL-60 cell lines that stably express fluorescent markers for actin filaments and the plasma membrane (Figure 1). No actin probe binds exclusively to the dynamic, branched actin networks of the pseudopod, including the widely used probe, Lifeact (Figure 1\u2014figure supplement 1). Therefore, we chose the utrophin-based actin probe, which binds preferentially to cortical actin surrounding the cell body and is largely excluded from the more dynamic, branched actin networks that drive pseudopod extension (Belin et al., 2014). When combined with a membrane marker, the selectivity of our utrophin-based actin probe enabled us to develop automated methods for identifying and tracking three-dimensional pseudopods in moving cells (see below). This \u2018negative space\u2019 approach to identifying pseudopods also avoids problems associated with the speed at which probe molecules diffuse through dense actin networks (Belin et al., 2014).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/26990/elife-26990-fig1-v1.jpg)\n\n**Figure 1.:** (A) Data processing pipeline. Left: representative example of raw LLSm data showing a single image plane that passes through a neutrophil-like HL-60 cell (bottom panel) migrating through a collagen network (top panel). Resolution is\u00a0~230 in X and Y,~370 in Z. Collagen is directly labeled with fluorescein and the cell\u2019s actin cytoskeleton is highlighted using a utrophin-based probe (see below). Middle: the raw data are deconvolved into a pair of single-color vertical image stacks (here shown merged). Right: the vertical image stacks are then rendered as three-dimensional isosurfaces in UCSF Chimera. (B) Representative fluorescence iso-surface images of an HL-60 cell expressing markers for the plasma membrane (top) and actin cytoskeleton (middle) and crawling across a fibronectin-coated glass coverslip. Top: fluorescence of plasma membrane-anchored palmitoylated m-Emerald. Middle: fluorescence of cortical actin filaments in the cell body labeled by Utrophin-mCherry. Bottom: false-color, three-dimensional overlay of the membrane-mEmerald and Utrophin-mCherry images. (C) Representative fluorescence iso-surface images of HL-60 cells migrating through unlabeled (left column) and fluorescently labeled (right column) three-dimensional collagen networks. Scale bars\u00a0=\u00a010 \u00b5m. Axes indicate relative orientation across rotated views. For cells crawling on a 2D surface, the orientation of the coverslip is indicated by gray shading. Unless otherwise specified, cells were illuminated with 488 and 560 nm light at 37C in 1\u00a0\u00d7\u00a0HBSS supplemented with 3% FBS, 1\u00a0\u00d7\u00a0pen/strep, and 40 nM of the tripeptide formyl-MLP (to stimulation migration).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26990/elife-26990-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Top: UCSF Chimera rendering of a fluorescence isosurface of a plasma membrane probe (palmitoylated m-Emerald) expressed in a motile HL-60 cell. Middle:a similar surface rendering of mCherry-Lifeact fluorescence in the same cell. This Lifeact fusion construct is identical to the mCherry-Utrophin fusion used throughout this work, except for the substitution of the F-actin binding Lifeact peptide (Riedl et al., 2008)for the Utrophin CH-ch domain. Bottom: three-dimensional merge of the membrane-mEmerald and mCherry-Lifeact fluorescence. The overlay shows that, similar to the Utrophin probe, Lifeact does not accumulate in lamellar pseudopods. Axes as indicated in Figure 1. Scale bar\u00a0=\u00a010 \u00b5m.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26990/elife-26990-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Top panel: three-dimensional surface rendering of fluorescein-conjugated collagen fluorescence, oriented so that the viewing angle is normal to the microscope image plane (XY), and parallel to the optical axis of the microscope (Z-axis). Bottom left panel: the same labeled collagen matrix as above but with the viewing angle rotated 90 degrees so that the optical axis has become the vertical axis of the rendering. Bottom right panel: the same collagen matrix as in the other two panels but with the viewing angle rotated 90 degrees within the image plane of the microscope. The three-dimensional stack was rendered in Cinema4D, with a top (X,Y), front (X,Z), and side (Y,Z) view. Numbers on the axes represent image dimensions in pixels. Scale bar\u00a0=\u00a010 \u00b5m.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26990/elife-26990-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Initial Wavefront file exported from UCSF Chimera. (B) Results of applying the polygon reduction tool in Cinema4D. (C) Final version using Polygon Subdivison, a method of calculating a smoothed surface from a reduced polygon mesh. Scale bar\u00a0=\u00a010 \u00b5m.\n\nWe used lattice light sheet microscopy to create time-lapse sequences of high-resolution (230 \u00d7 230\u00d7370 nm [Chen et al., 2014]), nearly isotropic, three-dimensional images of HL-60 cells crawling across fibronectin-coated coverslips or moving through random networks of collagen fibers (Figure 1 and Figure 1\u2014figure supplement 2). Handling the raw data, we quickly realized that the ability of lattice light sheet microscopy to provide new insights into cell biology is hampered, in part, by the lack of computational tools for visualizing and analyzing three-dimensional fluorescence intensity data. The most widely used tools for analyzing microscopy data can perform basic operations such as thresholding, normalization, alignment, and drift correction, but these tools were designed to handle two-dimensional images. Rather than attempting to extend the capabilities of a primarily two-dimensional computational platform, we instead adapted software designed from the outset to manipulate and analyze three-dimensional data sets. Specifically, we chose the molecular visualization program UCSF Chimera (Pettersen et al., 2004) for this purpose because it is freely available and it incorporates the collective experience of the structural biology community in rendering and manipulating three-dimensional data.\n\nBriefly, we added to UCSF Chimera the capability to import a time series of three-dimensional fluorescence intensity datasets. Once imported, these data can be rendered and manipulated by native UCSF Chimera functions, including elements of the \u2018vseries\u2019 toolkit, which perform volumetric versions of thresholding, normalization, alignment, and fitting. In addition, the capacity of UCSF Chimera to render surfaces of equal fluorescence intensity dramatically enhances the ability to judge proximity and/or co-localization of fluorescent probes in three dimensions. Finally, inspired by rendering tools available in professional animation software (e.g. Cinema4D; www.maxon.net), we added a tonal shading technique, called ambient occlusion (Tarini et al., 2006), to a recent UCSF Chimera release (http://www.rbvi.ucsf.edu/chimera/data/ambient-jul2014/ambient.html). Tonal surface rendering with ambient occlusion makes cellular structures more easily interpretable by emphasizing the spatial relationships of three-dimensional surfaces and variations in surface texture. The enhanced ability to detect and interpret textures and protrusions can be seen by comparing traditional maximum intensity projection and rendered versions of confocal data (Figure 3\u2014figure supplement 1) and similar renderings of the lattice light sheet data (Figure 3\u2014figure supplement 2).\n\n### Dynamic pseudopods are composed of intrinsically lamellar elements\n\nUsing these visualization tools, we observed two distinctive types of dynamic membrane protrusion at the leading edge of HL-60 cells crawling on fibronectin-coated coverslips: (i) thin, sheet-like lamina (Figure 2 and Videos 1\u20136), and (ii) \u2018rosettes\u2019 formed by the coincidence of multiple lamina (Figure 3, Videos 7\u201310). The morphology of these protrusions differ from the spherical blebs produced when the plasma membrane detaches from the underlying cortex (Charras and Paluch, 2008), instead they resemble membrane movements driven by rapid assembly of filamentous actin. Using confocal microscopy of fixed cells labeled with phalloidin, we verified that leading-edge sheets and rosettes are filled with dense actin networks (Figure 2\u2014figure supplement 1 and Figure 3\u2014figure supplement 1). Dynamic sheets and rosettes are readily apparent in surface renderings of three-dimensional lattice light sheet microscopy data, but are not easily identified in two-dimensional projections (Figure 3\u2014figure supplements 1 and 2), consistent with the failure of conventional light microscopy to identify these structures. Using scanning electron microscopy, we observed similar lamellar protrusions in fixed Jurkat T cells, another amoeboid cell type that employs fast, low-adhesion crawling through complex environments (Figure 3\u2014figure supplement 3).\n\n![Video 1.](https://cdn.elifesciences.org/articles/26990/elife-26990-video1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/26990/elife-26990-video2.mp4.jpg)\n\n**Video 2.:** Video plays at 11 \u00d7 real time. See also Video 1.\n\n![Video 3.](https://cdn.elifesciences.org/articles/26990/elife-26990-video3.mp4.jpg)\n\n**Video 3.:** Because the sample is held vertically in the imaging chamber, edges of cells falling off of the coverslip can pass through the field of view, seen here as objects flowing from right to left. Video\u00a0plays at 9.8\u00a0\u00d7\u00a0real time.\n\n![Video 4.](https://cdn.elifesciences.org/articles/26990/elife-26990-video4.mp4.jpg)\n\n**Video 4.:** Video plays at 11 \u00d7 real time. See also Video 3.\n\n![Video 5.](https://cdn.elifesciences.org/articles/26990/elife-26990-video5.mp4.jpg)\n\n![Video 6.](https://cdn.elifesciences.org/articles/26990/elife-26990-video6.mp4.jpg)\n\n**Video 6.:** Please note that\u00a0the stage is repositioned several times because the cell migrates out of the field of view.\u00a0Video plays at 10 \u00d7 real time. See also Video 5.\n\n![Video 7.](https://cdn.elifesciences.org/articles/26990/elife-26990-video7.mp4.jpg)\n\n![Video 8.](https://cdn.elifesciences.org/articles/26990/elife-26990-video8.mp4.jpg)\n\n**Video 8.:** Video plays at 11 \u00d7 real time. See also Video 7.\n\n![Video 9.](https://cdn.elifesciences.org/articles/26990/elife-26990-video9.mp4.jpg)\n\n**Video 9.:** Video\u00a0plays at 11\u00a0\u00d7\u00a0real time.\n\n![Video 10.](https://cdn.elifesciences.org/articles/26990/elife-26990-video10.mp4.jpg)\n\n**Video 10.:** Video plays at 10 \u00d7 real time. See also Video 9.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/26990/elife-26990-fig2-v1.jpg)\n\n**Figure 2.:** (A\u2013B) To illustrate the morphology of rapidly growing membrane protrusions we overlaid multiple fluorescence iso-surface images taken at different time points of individual HL-60 cells expressing a membrane probe (palmitoylated m-Emerald). Individual surface renderings are tinted according to time. Insets show each cell at the final time point. (A) HL-60 cell crawling across a fibronectin-coated glass coverslip. (B) HL-60 cell crawling through a polymerized collagen mesh. (C) Three-dimensional surface renderings of two pseudopods from two different cells, one crawling on fibronectin-coated glass (left) and one moving through a collagen fiber matrix (right). Each LLSm dataset is rendered from three different viewing angles: en face (top), from the side (middle), and from above (bottom). For more examples, see Figure 2\u2014figure supplement 1. (D) Box and whisker plot (with median, quartiles, and range) of vertical error (estimate of flatness) for each pseudopod, calculated by measuring the average Euclidean distance between the original points on the leading edge and a reference plane with a width equal to the average measured width of lamellar pseudopods (gray band). The first three are measurements from cells crawling across a flat surface (brown), and the next three from cells crawling through a polymerized collagen network (blue). (E) Example of a lamellar pseudopod retaining a similar thickness (green circles) during extension and retraction as indicated by the distance from the tip of the pseudopod to the cell body (black squares). Axes as indicated in Figure 1. All scale bars\u00a0=\u00a010 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26990/elife-26990-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Additional three-dimensional visualizations of single time points from four independent cells (two on glass and two in matrix) forming lamellar pseudopods shown en face, from the side, and from the top. (B) Spinning disk confocal imaging of a fixed cell with a lamellar pseudopod. The resulting three-dimensional stack was rendered in UCSF Chimera, with a top (X,Y) view and side (Z,Y) view shown. The bottom panel is a maximum intensity projection of phalloidin staining (red) and DNA stained with DAPI (blue), revealing that planar pseudopods are filled with polymerized actin. Axes as indicated in Figure 1. Scale bars\u00a0=\u00a010 um.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/26990/elife-26990-fig3-v1.jpg)\n\n**Figure 3.:** (A) Three-dimensional visualizations of rosettes built by cells crawling on two-dimensional surfaces (left) as well as through unlabeled collagen meshes (right). Single timepoints of two independent cells from each condition are shown from the side (top panels) and en face (bottom panels). (B) Box and whisker plot showing that simple lamellar pseudopods have similar thickness as individual petals of complex rosette pseudopods. (n\u00a0=\u00a018 pseudopods, from 6 cells from two biological replicates). (C) Enlarged views of three time points of a portion of a single cell (whole cell shown below) showing initial stages of rosette pseudopod formation viewed en face (top) and from the side (bottom). Note that, in this instance, the new pseudopod emerges from the rear of the cell, opposite to a previously formed pseudopod. (D) Two time points showing the dissolution of a separate pseudopod shown en face (top) and from the side (bottom). For (A) and (C): Axes as indicated in Figure 1. Scale bars\u00a0=\u00a010 \u00b5m.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26990/elife-26990-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The resulting three-dimensional stack was rendered in UCSF Chimera, with a top (X,Y) view and side (Z,Y) view shown. (Bottom) Maximum intensity projection of phalloidin staining (red) reveals rosette pseudopods are filled with polymerized actin, with DNA stained with DAPI (blue). Scale bar\u00a0=\u00a010 \u00b5m. The bottom right corner of the data stack was removed because a second cell interfered with three-dimensional visualization of the data. Axes as indicated in Figure 1.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26990/elife-26990-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** This particular time point was chosen to highlight the need for appropriate visualization tools to determine spatial relationships between structures protruding from the cell surface.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26990/elife-26990-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Planar protrusions on these lymphocytes are reminiscent of those we observe in HL-60 cells. Scale bar\u00a0=\u00a02 \u00b5m for top right panel and 5 \u00b5m for other panels.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/26990/elife-26990-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Nine cells were analyzed from three independent experiments.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/26990/elife-26990-fig3-figsupp5-v1.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Cell is expressing the Dictyostelium F-actin probe LimE (Gao et al., 2014). Scale bar\u00a0=\u00a010 \u00b5m.\n\nLamellar pseudopods were not limited to the plane of the coverslip and, in three-dimensional movies, we observed many pseudopodial sheets travelling across the dorsal surface of the cell, from front to back (Figure 2A and Video 1) or side to side (Video 2). Importantly, most pseudopodial sheets emerged from the cell body and projected directly into the liquid medium without ever contacting the surface of the coverslip (Videos 3 and 4 and time overlay in Figure 2A). Despite being unsupported, these pseudopods maintained a lamellar morphology with an approximately constant thickness throughout their lifetime (Figure 2E).\n\nTo verify that the distinctive lamellar shape of pseudopodial sheets does not require interaction with a flat surface, we also imaged membrane-labeled HL-60 cells crawling through random collagen networks (Figure 2B). Regardless of whether cells crawled across glass or through a collagen matrix, their lamellar pseudopods shared several common features, including a similar profile (Figure 2C) and thickness (780\u00a0\u00b1\u00a0137 nm standard deviation, n\u00a0=\u00a018 cells). The thickness measured from surface-rendered LLSm data agrees with measurements made on other types of data, including: raw lattice light sheet data (567\u00a0\u00b1\u00a064 nm on glass and 689\u00a0\u00b1\u00a086 nm in collagen); spinning disk confocal images of phalloidin-stained actin (505\u00a0\u00b1\u00a049 nm for a sheet and 533\u00a0\u00b1\u00a0123 nm for a rosette petal); and scanning electron micrographs, which suggest a thickness of\u00a0~640 nm (Fleck et al., 2005). Given the resolution of lattice light sheet microscopy (~230 nm in XY [Chen et al., 2014]), we estimate that the actual thickness of lamellar pseudopods lies between 430 and 800 nm.\n\nLamellar pseudopods are not perfectly flat, and exhibit varying degrees of pucker and undulation. To determine whether the flatness of lamellar sheets is influenced by cell surface interactions, we first quantified their flatness by: (i) choosing points distributed along the leading edge of each pseudopod, (ii) using them to define a best-fit, reference plane, and (iii) calculating the average minimum Euclidean distance, or average vertical error, between the original points on the leading edge and the reference plane. Cells crawling across coverslips, as well as those crawling through collagen networks, build sheets with similar flatness (Figure 2D), raising the question of how cells can form flat structures without the surface template mechanism proposed for the assembly of flat lamellipodia of adherent cells (see Discussion).\n\n### Pseudopodial sheets interleave to form complex rosettes\n\nIn addition to simple sheets, HL-60 cells also produce more complex pseudopods. When imaged by conventional widefield or confocal microscopy these protrusions appeared as irregular, three-dimensional streaks (Figure 3\u2014figure supplement 1, maximum intensity projection). However, when imaged at high resolution by lattice light sheet microscopy and visualized by three-dimensional surface rendering, these apparently amorphous structures turn out to be \u2018rosettes,\u2019 composed of multiple, lamellar components interleaved into rose-like patterns. Rosettes are assembled by cells crawling on a two-dimensional surface (Figure 3, Videos 7 and 8), and by cells crawling through three-dimensional collagen meshes (Figure 3, Video 9, and Video 10). In uniform fields of chemoattractant, both lamellar and rosette pseudopods are highly dynamic and ephemeral (Figure 4A).\n\nSeveral lines of evidence argue that the lamellar elements forming these rosettes are identical to the lamellar pseudopods described above. Firstly, both sheet and rosette pseudopods largely excluded utrophin-based actin probes\u00a0(Figure 1B)\u00a0and both types of protrusion disappeared in the presence of CK-666 (Figure 4B, Video 11,\u00a0and Video 12), a small-molecule inhibitor of the Arp2/3 complex (Nolen et al., 2009), arguing that sheets and rosettes are formed by rapidly assembling, branched actin networks. Secondly, lamellae within rosettes have the same thickness (690\u00a0\u00b1\u00a020 nm, n\u00a0=\u00a018, Figure 3B) as the simple lamellar pseudopods. Thirdly, time-lapse image sequences often revealed pseudopodial sheets converging or branching to form rosettes (e.g. Figure 4A, Videos 4\u20135). Fourthly, in a uniform field of chemoattractant, pseudopodial sheets and rosettes both have a lifespan of approximately 60 s, from initial appearance to final disappearance (Figure 3\u2014figure supplement 4). This lifetime remains similar whether cells are migrating across flat surfaces or through collagen networks (Figure 3\u2014figure supplement 4), indicating that protrusion lifespan does not depend on external mechanical support. Finally, approximately 75% of both sheet and rosette pseudopods disappear in an identical manner, by collapsing into a tangle of linear structures that resemble filopodia (Figure 3E (rosette) and Video 1 (sheet), see also Figure 4A).\n\n![Video 11.](https://cdn.elifesciences.org/articles/26990/elife-26990-video11.mp4.jpg)\n\n**Video 11.:** Video\u00a0plays at 11\u00a0\u00d7\u00a0real time.\n\n![Video 12.](https://cdn.elifesciences.org/articles/26990/elife-26990-video12.mp4.jpg)\n\n**Video 12.:** Video plays at 11 \u00d7 real time. See also Video 11.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/26990/elife-26990-fig4-v1.jpg)\n\n**Figure 4.:** (A) Surface rendering of membrane-labeled control HL-60 cell at\u00a0~19 s intervals. Green arrows highlight growing pseudopods, while shrinking pseudopods are indicated by red arrows. Inset (top left): overlay of cell outline at each time point to highlight pseudopod extension and cell movement. (B) A similar cell treated with the Arp2/3 inhibitor CK-666 for ten minutes prior to imaging. A single plane of the three-dimensional image is darkened and indicated with a black arrow to highlight the extension of aberrant tubular protrusions. Scale bar\u00a0=\u00a010 \u00b5m.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26990/elife-26990-fig4-figsupp1-v1.jpg)\n\n### Lamellar pseudopods grow from linear ridges\n\nThe lamellar elements that form pseudopods\u2014both sheets and rosettes\u2014first appeared as linear deformations running across the surface of the plasma membrane (Figure 3C). These low \u2018ridges\u2019 formed mature pseudopods by growing rapidly away from the cell body, at a characteristic rate of 11.9\u00a0\u00b1\u00a05.4 \u00b5m/min (n\u00a0=\u00a04). Remarkably, as each nascent protrusion grew, its distal edge remained linear, leaving a flat pseudopod in its wake. Isolated pseudopodial sheets sometimes produced rosettes by spawning secondary sheets, but these secondary sheets also emerged as linear ridges from the side of the original sheet (e.g. Video 5).\n\n### Lamellar pseudopods in contact with the coverslip appear as dynamic \u2018waves\u2019 of Arp2/3 activation\n\nAssembly of branched actin networks is largely controlled through the activation of the Arp2/3 complex, which in pseudopods is mediated by the WAVE regulatory complex (Bear et al., 1998; Weiner et al., 2006). A previous study (Weiner et al., 2007) employed TIRF microscopy to image localization and dynamics of the WAVE regulatory complex in HL-60 cells crawling on glass coverslips. When imaged in the region proximal (within\u00a0~100 nm) to the coverslip, the WAVE regulatory complex forms a series of thin arcs, or \u2018waves,\u2019 that originate somewhere in the cell body and then advance outward along the cell\u2019s ventral surface. Our observation that the pseudopod of an HL-60 cell is composed of multiple lamellar sheets suggests that each outward-moving wave is actually the edge of an individual sheet pressed into the TIRF plane as it extends forward.\n\nTo test this hypothesis, we conducted near-simultaneous TIRF microscopy and reflection interference contrast microscopy (RICM) to both visualize the WAVE complex localization and to probe the distance between the ventral surface of the cell and the glass surface on which it migrates (Figure 5, Video 13). RICM revealed that the cell\u2019s ventral surface is not smooth and does not make uniformly close contact with the fibronectin-coated coverslip to which it adheres, consistent with previous observations (Sullivan and Mandell, 1983). Instead, the ventral surface forms dynamic and complex patterns of close contact, including lines that travel toward the front of the crawling cell (Figure 5, Video 13). Consistent with our interpretation, we also see enrichment of WAVE complex at these moving lines of close contact (Figure 5, Video 13).\n\n![Video 13.](https://cdn.elifesciences.org/articles/26990/elife-26990-video13.mp4.jpg)\n\n**Video 13.:** For RICM, dark areas represent larger distances between the coverslip and the ventral cell surface; bright white (or magenta, in the overlay) indicates close contact of the cell onto the glass. Two different example cells are shown. Graphs show TIRF and RICM intensity along lines drawn on image overlays (far right). Video\u00a0plays at 5\u00a0\u00d7\u00a0real time.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/26990/elife-26990-fig5-v1.jpg)\n\n**Figure 5.:** Time-lapse images of WAVE complex fluorescence in TIRF (left) and ventral cell surface distance from the glass coverslip in reflective interference contrast microscopy (RICM, middle), and overlay (right). For RICM, the colormap has been inverted from the raw data: dark areas represent larger distances between the coverslip and the ventral cell surface; bright white (or magenta, in the overlay) indicates close contact of the cell onto the glass. Line scans of the TIRF and RICM intensity along the lines shown on image overlays (far right). Scale bars\u00a0=\u00a05 \u00b5m. See also Video 13 for dynamic localization and linescans.\n\n### Sheet and rosette pseudopods promote changes in the direction of migration but are not required for cell locomotion\n\nTo investigate the role of dynamic pseudopods\u2014both sheets and rosettes\u2014in cell locomotion, we compared the morphology and motion of untreated control cells to cells treated with the Arp2/3 inhibitor CK-666 for 10 min. This analysis was limited to cells moving through three-dimensional collagen matrices because we found that the loss of Arp2/3 activity dramatically reduced adhesion of HL-60 cells to fibronectin-coated coverslips. This loss of adhesion posed particular problems for the vertically oriented coverslips used in our lattice light sheet microscope. While control cells built lamellar pseudopods, CK-666 treated cells formed long, tubular protrusions (Figure 4A and B).\n\nTo analyze complex pseudopod dynamics, we developed an automated method for pseudopod detection and volume estimation in our three-dimensional datasets (Figure 6A). This method takes advantage of the preferential binding of the utrophin actin probe to stable structures, such as cortical actin networks, over the more dynamic, branched networks that drive membrane movement (Belin et al., 2014). As expected, our lattice light sheet microscopy revealed clear colocalization of the utrophin probe with the membrane marker everywhere on the cell surface except inside the dynamic sheets and rosettes, which largely excluded the probe (Figure 1B), despite containing dense actin networks (Figure 2\u2014figure supplement 1 and Figure 3\u2014figure supplement 1). We used the absence of fluorescent utrophin from membrane-proximal regions of the cell as a convenient marker to identify protrusions driven by the growth of branched actin networks, and automated this process by subtracting the volume enclosed by a utrophin-based actin probe from the volume enclosed by the plasma membrane marker (Figure 6A, Video 14). This method of automated identification and quantification reveals that inhibition of Arp2/3 complex activity decreases the volume of the largest pseudopod produced by crawling cells by an average of 40% (Figure 6\u2014figure supplement 1C and Videos 14\u201315), a significant decrease despite the within-cell variability of pseudopod volume (Figure 6\u2014figure supplement 2D\u2013E). Similarly, visual inspection of time-lapse sequences revealed that the rate of pseudopod formation decreased from 1.9 pseudopods/min to 0.8 pseudopods/min upon Arp2/3 inhibition (Control: n\u00a0=\u00a09 cells over 40.7 min; CK-666 treated: n\u00a0=\u00a07 cells over 22.1 min). The remaining pseudopods may be due to incomplete inhibition of Arp2/3.\n\n![Video 14.](https://cdn.elifesciences.org/articles/26990/elife-26990-video14.mp4.jpg)\n\n![Video 15.](https://cdn.elifesciences.org/articles/26990/elife-26990-video15.mp4.jpg)\n\n![Figure 6.](https://cdn.elifesciences.org/articles/26990/elife-26990-fig6-v1.jpg)\n\n**Figure 6.:** (A) Automatic pseudopod detection relies on the relative exclusion of the Utrophin-based actin probe from the dynamic actin networks within pseudopods; pseudopods are identified by first subtracting the cortical actin signal (top right) from the membrane signal (top left), resulting in a difference map (bottom left). Pseudopods (bottom right) are then defined as enclosed volumes that fulfill all of the following three criteria: larger than 1 \u00b5m3, within 15 \u00b5m of cell center, and outside the cell body (or larger than 15 um3). The cell body is defined by a sphere with a volume equal to the volume of the actin map; if the center of the enclosed volume was inside this sphere, it was not considered a pseudopod unless its volume exceeded 15 um3. In Videos 14,15, the cell body is indicated by a yellow ball. (B) Plots resulting from a principal component analysis of cell position. At various points along a cell\u2019s track, the color saturation denotes the number of pseudopods and the line thickness indicates the pseudopod distribution, or the ratio of the auxiliary pseudopod volume to the total pseudopod volume. Two examples each of control cells and CK-666 treated cells are shown. (C) The results of a principal component analysis of the cell position in three-dimensional space for each time point (blue dots). Low curvature, where the path length is close to the distance traveled by the cell in ten time points, and high curvature, where the path length is 2.5 times longer than the distance traveled, are both indicated by red arrows. (D) Curvature of path of a representative control cell and a CK-666 treated cell. (E) Centroid speed of control cells and CK-666 treated cells (n\u00a0=\u00a05 cells from at least two independent experiments, p value\u00a0=\u00a00.024). Error bars represent standard deviation. (F) Turn rates of control cells (n\u00a0=\u00a04 cells over a total of 20.7 min, from at least two independent experiments) and CK-666 treated cells (n\u00a0=\u00a05 cells over a total of 13.7 min, from at least two independent experiments). Error bars represent standard deviation.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26990/elife-26990-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Error bars represent standard deviation. (B) Comparison of Turn Activity, calculated as the area under the curvature-of-path plots for the cells shown in (A). Error bars represent standard deviation. (C) Box-and-whisker plot of total volume of largest pseudopod. Control (average\u00a0\u00b1SD, N): 184.0\u00a0\u00b1\u00a097.9 \u00b5m3, 980 time points; CK666 (average, SD, N): 110.5\u00a0\u00b1\u00a064.6 \u00b5m3, 600 time points.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26990/elife-26990-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Schematic showing how the angle between main pseudopod and cell path is calculated. (B) Comparison of angle between the largest pseudopod and the cell motion trajectory for control and CK-666 treated cells shown in Figure 6\u2014figure supplement 1. Each histogram is normalized to a sine curve to compensate for expected normal distribution of the angle between two random vectors in three-dimensional space. (C) Pseudopod distribution is determined as the ratio of the auxiliary pseudopod volume to the total volume. (D) Box-and-whisker plot of pseudopod total volume variability for control and CK-666 treated cells. (E) Variability of total pseudopod volume over time, with the same 8 cells as in (D) shown.\n\nTo assess the effect of inhibiting the Arp2/3 complex on cell locomotion, we compared movement of cell centroids in the absence and presence of the Arp2/3 inhibitor CK-666. Despite the loss of dynamic pseudopods, cells treated with CK-666 retained the ability to migrate through collagen networks in a uniform field of chemoattractant. The treated cells, however, moved more slowly (5.42 vs 8.57 um/min, Figure 6E) and appeared to travel along much straighter trajectories than control cells (Figure 6B). We used two methods to quantify and analyze cell turning in three dimensions. In one approach, we detect turns by estimating the first derivative of the cell\u2019s trajectory to identify inflection points in the cell\u2019s path. The second method computes the ratio of the path length traveled by the cell centroid over ten time points to Euclidean distance between the first and last points, and defines turns as regions where this ratio is larger than 2.5 (Figure 6C). According to both metrics, control cells changed direction 2 to 3 times more often than the CK-666 treated cells (method 1: 2.73 vs 1.15 turns/min, Figure 6\u2014figure supplement 1A and B; method 2: 3.41 vs 1.09 turns/min, Figure 6D\u2013F), and displayed greater turn activity (Figure 6\u2014figure supplement 1B).\n\nThe reduced turning frequency in CK-666 treated cells suggest that dynamic, Arp2/3-generated pseudopods play a role in initiating or facilitating direction changes. To further explore this possibility, we visualized the relationships between pseudopod formation and cell turning by overlaying the number and volume of dynamic pseudopods onto the three-dimensional trajectories of cells crawling through a collagen matrix (Figure 6B). In these plots, the line is a two-dimensional projection of the three-dimensional trajectory of the cell centroid projected to a plane that maximizes parallel coincidence, while the line width and color saturation indicate, respectively, the number and volume of dynamic pseudopods at every point. Control cell trajectories reveal frequent turns, each of which appears correlated with a dramatic increase in pseudopod dynamics. In contrast, CK-666 treated cells made less than half as many turns (Figure 6F) and created fewer and smaller dynamic pseudopods (Figure 6\u2014figure supplement 1C and Figure 6\u2014figure supplement 2D\u2013E). Furthermore, while control cells frequently build pseudopods in the direction of cell motion, the protrusions built by CK-666 treated cells are more uniformly distributed (Figure 6\u2014figure supplement 2A and B).\n\n## Discussion\n\n### Free-standing lamellae combine to form complex pseudopods\n\nLattice light sheet microscopy reveals that complex pseudopods formed by fast-moving HL-60 cells are actually composed of dynamic lamellar elements. Some pseudopods are isolated, free-standing lamellae, while others are rosettes composed of multiple lamellar elements, often connected by T- and Y-shaped junctions. These lamellar building blocks share common structural features, including a characteristic thickness, but their sheet-like morphology does not depend on interaction with a flat surface.\n\nWe identified similar lamellar and rosette protrusions in published scanning electron micrographs of several different cells types, including differentiated HL-60 cells (Fleck et al., 2005), Jurkat T cells (Nicholson-Dykstra and Higgs, 2008) (Figure 3\u2014figure supplement 3), human neutrophils migrating through a chemoattractant gradient (Zigmond and Sullivan, 1979), dendritic cells (Coates et al., 2003; Fisher et al., 2008; Felts et al., 2010), T-cells (Brown et al., 2003) and monocytes (Majstoravich et al., 2004) from human blood, as well as Dictyostelium amoebae (Gerisch et al., 2013). Light microscopy has also hinted at the existence of free-standing lamellar and rosette pseudopods, notably in images of crawling cells tilted 90 degrees from the conventional viewing angle (Sullivan and Mandell, 1983). Using fast confocal microscopy on confined dendritic cells, the Sixt lab recently observed what appeared to be dynamic sheet-like protrusions that do not require to be adhered to any substrate (Leithner et al., 2016). Our rosettes also resemble protrusive structures observed in Dictyostelium amoebae using Bessel beam plane illumination (Gao et al., 2012). This similarity is heightened by surface-rendering of published Dictyostelium data using UCSF Chimera, and visualization techniques described above (Figure 3\u2014figure supplement 5). From our current work and previous observations, we propose two basic principles that define pseudopod morphology in these and other cells that build lamellar pseudopods. First, fast-moving leukocytes can assemble free-standing lamellar pseudopods without the aid of a surface \u2018template.\u2019 Second, more complex three-dimensional pseudopods can be resolved into lamellar components. Although suggested by previous work, establishing these facts required following the entire \u2018lifecycle\u2019 of membrane protrusions, from initial emergence to final retraction, using high-resolution, three-dimensional, time-lapse imaging. The lattice light sheet microscope enabled us to see the birth of lamellar pseudopods as linear ridges as well as their maturation and coalescence into more complex shapes.\n\nWhat is the relationship between the free-standing, lamellar pseudopods of fast-moving leukocytes and the surface-attached lamellipodia of slower cells? Several previous studies described free-standing lamellipodial \u2018ruffles\u2019 peeling back from the leading edge of fibroblast or epithelial cells (Ingram, 1969; Abercrombie et al., 1970; Abercrombie et al., 1971), but their morphology was generally assumed to reflect transient attachment to a surface (Burnette et al., 2014). Interestingly, Ingram described \u2018sheet-like\u2019 protrusions growing on the dorsal side of adherent fibrosarcoma cells (Ingram, 1969), and Gauthier and co-workers discovered \u2018fin-like\u2019 protrusions that travel along the dorsal surface of adherent fibroblasts as they wrap around and crawl along thin nanofibers (Guetta-Terrier et al., 2015). These sheets and fins do not appear to form on an external substrate, but their morphology and molecular composition suggest that adherent cells may also be capable of making free-standing lamellar protrusions, independent of surface interaction. Although they resemble attached lamellipodia, the pseudopodial sheets we describe are thicker (~430\u2013800 nm vs.\u00a0<200 nm (Abercrombie et al., 1971)) and grow at faster rates (Ingram, 1969; Abercrombie et al., 1971). In addition, the assembly and regulation of free-standing pseudopodial sheets may require different actin regulatory molecules (Fritz-Laylin et al., 2017). More work is required to understand the relationships between adhesion-independent pseudopods and the lamellipodia of adhesive cells.\n\n### Lamellar protrusions imply linear organization of regulatory molecules\n\nHow do fast-moving leukocytes produce sheet-like protrusions, even when moving through complex three-dimensional environments? Reconstitution of Arp2/3-dependent branched actin network assembly provides a simple explanation: in vitro, the morphology of a branched actin network is determined by the spatial arrangement of the regulatory molecules that activate the Arp2/3 complex. One-dimensional arrangement of Arp2/3 activator along a thin glass fiber, for example, produces a flat, sheet-like actin network (Achard et al., 2010; Hu and Kuhn, 2012), while a two-dimensional square of Arp2/3 activator produces a more three-dimensional rectangular solid (Bieling et al., 2016). Mathematical models of branched actin network formation agree with these reconstitution results and suggest that, once formed, a thin, flat actin network should remain stable as it grows (Schmeiser and Winkler, 2015). Generalizing, we propose that the approximate dimensionality of nucleation and polymerase activity on the membrane is one less than the approximate dimensionality of the actin network (and protrusion) generated by this activity. In other words, a filopodium (dimension\u00a0~1) grows from a point source (dimension\u00a0~0) of nucleation/polymerase activity while a lamellar pseudopod (dimension\u00a0~2) grows from a line source (dimension\u00a0~1). We therefore propose that the two-dimensional nature of lamellar protrusions follows as a direct consequence of the one-dimensional organization of the Arp2/3 activation machinery (Figure 7). We are currently exploring possible mechanisms that may give rise to this linear organization of Arp2/3 activators.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/26990/elife-26990-fig7-v1.jpg)\n\n**Figure 7.:** Once formed, a flat protrusion would continue growth as a planar projection as described (Schmeiser and Winkler, 2015).\n\nThis model for the assembly of flat pseudopods is supported by previous observations that activators of Arp2/3-dependent actin assembly appear in linear patterns on the membrane. When observed at the cell surface by TIRF microscopy, direct activators of Arp2/3 activity\u2014WASP and the WAVE regulatory complex\u2014form dynamic, linear arcs that propagate like traveling waves (Weiner et al., 2007; Fritz-Laylin et al., 2017). To date, only these two Arp2/3 activators have been shown to form lines, while further upstream components of the activation cascade, such as Rac, exhibit more diffuse localization patterns (Weiner et al., 2007; Yang et al., 2016).\n\nHere, we show that these WAVE \u2018waves\u2019 co-localize with linear regions of pseudopods that press close to the glass surface, indicating regions of actin assembly and force generation. We propose that these multiple dynamic Arp2/3 activation zones produce multiple lamellar pseudopods that can interact to form complex rosettes. Similarly, recent lattice light sheet microscopy of Dictyostelium cells revealed membrane-bound circles of WAVE complex (known as SCAR in Dictyostelium) initiating formation of cylindrical, cup-like protrusions during macropinocytosis (Veltman et al., 2016). In contrast, cells that produce only a single, stable line of Arp2/3 activators at the leading edge (e.g. Drosophila S2 cells [Kunda et al., 2003] and epithelial cells [Gautier et al., 2011]) produce only a single lamellar protrusion.\n\n### Lamellar pseudopods as efficient devices for searching space\n\nWe find that although complex pseudopods are not required for HL-60 cell migration, they do play a role in direction change. Using automated methods to detect and measure pseudopods we find that the size and number of these membrane protrusions increase dramatically when cells change direction and that blocking pseudopod formation reduces the frequency of direction changes (Figure 6). These results provide a simple explanation for recent work from the Sixt lab, who found that reducing WAVE activity in dendritic cells abolishes pseudopod formation, yet accelerates the crawling of cells in simple confined spaces (Leithner et al., 2016). Interestingly, the pseudopod-deficient dendritic cells fail to reorient in changing gradients of chemoattractant, and migrate more slowly toward a chemotactic source within complex three-dimensional environments compared to control cells. Similarly, in another recent paper, the Piel and Lennon-Dumenil labs found that Arp2/3 activity at the front of migrating dendritic cells was responsible for speed-fluctuating behavior (Vargas et al., 2016). Together with these findings in dendritic cells, our results suggest that the three-dimensional pseudopods produced by fast-moving leukocytes promote the cell turning required for exploration of the local environment.\n\nIn addition to the lamellar pseudopods of leukocytes and similar fast-moving cells, other types of protrusion advance the leading edge of other types of crawling cells, including spherical blebs (Charras and Paluch, 2008; Maugis et al., 2010) and linear filopodia (Dent et al., 2007). There are even examples of individual cells rapidly switching between protrusion types (Yoshida and Soldati, 2006; Bergert et al., 2012; Diz-Mu\u00f1oz et al., 2016). Do any of these morphologies provide functional, selective advantages, or do they represent an element of randomness in cellular evolution (Bonner, 2013)? We speculate that broad, lamellar pseudopodia and extended rosettes may be uniquely adept structures for probing a cell\u2019s environment. A pseudopodial sheet is much thinner than a spherical bleb but can sweep out a comparable volume. Linear filopodia, in contrast, would have to move both back and forth and side to side to search the same volume, and would provide limited surface contact.\n\n### High-resolution three-dimensional microscopy requires new visualization tools\n\nThree-dimensional time-lapse imaging with high spatial and temporal resolution poses significant challenges to the analysis tools and workflow developed for two-dimensional imaging. Specifically, lattice light sheet microscopy requires effective methods for: (i) handling large datasets (~20 GByte per time-lapse sequence); (ii) normalizing, aligning, and drift-correcting multiple fluorescence channels in three dimensions; (iii) identifying three-dimensional features of interest; and (iv) quantifying the shape and movement of complex surfaces. The most widely used open-source software for image analysis is not well suited to these tasks, and commercial software for rendering three-dimensional data is expensive (~$10,000 per license, plus yearly fees) and difficult to modify. To address these practical problems we modified UCSF Chimera to accept three-dimensional lattice light sheet microscopy datasets. UCSF Chimera is a freely available, open-source software platform developed to render and analyze three-dimensional atomic structures (Pettersen et al., 2004) and density maps (Goddard et al., 2007). Most of the tools we describe here are available in the recent release and we encourage others to use them (See Materials and Methods for list of online resources).\n\nIn three-dimensional time-lapse movies, pseudopods change shape rapidly, making them difficult to identify solely by morphology. We, therefore, developed a new method for automated pseudopod detection, which exploits a biochemical peculiarity of the utrophin actin-binding domain. Utrophin localizes to the actin network that forms the cell cortex, but is largely excluded from the rapidly assembling, branched actin filaments created by the Arp2/3 complex (Belin et al., 2014). Our utrophin-based probe localizes to cortical actin networks proximal to the plasma membrane everywhere except within rapidly assembling networks that drive pseudopod extension. When imaged in three dimensions and combined with a marker for the plasma membrane, the absence of a utrophin-based actin probe provides a simple method to identify dynamic pseudopods and track their size and movement. Previous studies described methods to identify and track cell protrusions in two-dimensional images (Bosgraaf and Van Haastert, 2010), but, to our knowledge, this represents the first automated method for identifying and measuring pseudopods in three dimensions. Similar approaches will likely prove useful for defining other irregular cell structures.\n\nModern data visualization provides more than just pretty pictures; it can facilitate the analysis of experimental results and the formulation of scientific questions. Here, three-dimensional visualization enabled automated pseudopod detection and analysis of the relationship between pseudopod formation and cell turning. Additionally, surface rendering resolved the complex and apparently amorphous protrusions into lamellar sheets, an observation that immediately suggested a one-dimensional signaling system model. We trust that these visualization and analysis tools will provide similar breakthroughs to other areas of biological investigation.\n\n## Materials and methods\n\n### Cell lines\n\nPolymerized cortical actin filament were labeled with a high-affinity actin binding domain from utrophin fused to the red fluorescent protein mCherry (Belin et al., 2014), and plasma membrane labeled by fusing a palmitoylation sequence from Lyn kinase (Inoue et al., 2005)\u00a0to the green fluorescent protein mEmerald. Utrophin-mCherry HL-60 cells were derived by lentiviral transduction of cell line #CCL-240 obtained from the American Type Culture Center (ATCC), where the cell line\u2019s identity was confirmed by STR. HL-60 cell lines were grown in medium RPMI 1640 supplemented with 15% FBS, 25 mM Hepes, and 2.0 g/L NaHCO3, and at 37C with 5% CO2. HL-60 cell lines tested negative for mycoplasma by both PCR and DNA staining. Lentivirus was produced in HEK293T grown in 6-well plates and transfected with equal amounts of the lentiviral backbone vector (a protein expression vector derived from pHRSIN-CSGW (Demaison et al., 2002), by cloning the actin-binding domain of utrophin (Burkel et al., 2007) followed by a flexible linker (amino acid sequence: GDLELSRILTR) to the N-terminus of mCherry), pCMV\u22068.91 (encoding essential packaging genes) and pMD2.G (encoding VSV-G gene to pseudotype virus). After 48 hr, the supernatant from each well was removed, centrifuged at 14,000 g for 5 min to remove debris and then incubated with\u00a0~1\u00d710\u22276 HL-60 cells suspended in 1 mL complete RPMI for 5\u201312 hr. Fresh medium was then added and the cells were recovered for 3 days to allow for target protein expression, and expressing cells were selected by fluorescence-activated cell sorting (FACS). Membrane-mEmerald and Lifeact-mCherry cell lines were derived as above and fusing the palmitoylation sequence from Lyn kinase (Inoue et al., 2005) to the green fluorescent protein mEmerald, and the Lifeact peptide (Riedl et al., 2008) to mCherry, respectively.\n\nPrior to imaging, HL-60 cells were differentiated by treatment with 1.3% DMSO for 5 days. For two-dimensional migration, differentiated HL-60 cells were allowed to adhere to fibronectin-coated coverslips for 30 min before coverslip was moved to the imaging chamber. For three-dimensional migration, cells were overlayed onto coverslips containing pre-formed 1.7% collagen matrix polymerized from a 1:1 mixture of of unlabeled (Advanced Biomatrix catalog no. 5005) and FITC-conjugated (Sigma catalog no. C4361) bovine skin collagen, using standard protocols (Sixt and L\u00e4mmermann, 2011). Cells were allowed to migrate into the network for one hour before removing the coverslip to the imaging chamber. Cells were imaged in 1\u00a0\u00d7\u00a0HBSS supplemented with 3% FBS, 1\u00a0\u00d7\u00a0pen/strep, and 40 nM of the tripeptide formyl-MLP (to stimulation migration). Treated cells were exposed to 10 \u00b5m CK-666 (Sigma) or DMSO carrier alone (control) for ten minutes prior to imaging.\n\n### Lattice light sheet microscopy of living cells\n\nTime-lapse sequences generated by the lattice light sheet microscope comprised two-color image stacks, collected through entire cell volumes at 1.3 s intervals with minimal photobleaching and no evidence of phototoxicity. The spatial resolution of the resulting data was approximately 230 nm in XY and 370 nm in Z (Chen et al., 2014).\n\nThe imaging of HL-60 cells was carried out in lattice light sheet microscopy using Bessel beams arranged in a square lattice configuration in dithered mode, as in (Chen et al., 2014). For 2D migration, differentiated HL-60 cells were allowed to adhere to fibronectin-coated coverslips for 30 min before coverslip was moved to the imaging chamber at 37\u00b0C. The data was acquired on a Hamamatsu ORCA-Flash 4.0 sCMOS camera, where the moving cell was imaged by exciting each plane with a 488 nm laser at\u00a0~10 \u00b5W (at the back aperture of the excitation objective) for 5 ms, with an excitation inner/outer numerical aperture of 0.55/0.48 respectively and a corresponding light sheet length of 15 \u00b5m. At each time point, the cells were imaged by sample scanning mode and the dithered light sheet at 400 nm step size, thereby capturing a volume of\u00a0~70 \u00b5m x 90 \u00b5m x 40 \u00b5m (corresponding to 672 \u00d7 908\u00a0\u00d7\u00a0201 pixels in deskewed data) every 1.2 s (which includes 1 s acquisition time and 0.2 s pause between each time point). There are 143 time points for the continuous imaging periods of 2.86 min in duration. For three-dimensional migration, mCherry- utrophin HL-60 cells were overlayed onto coverslips containing pre-formed 1.7% collagen matrix polymerized as described (14) using 50% FITC-collagen (Sigma) and allowed to migrate into the network for one hour before removing the coverslip to the imaging chamber. The cell moving inside the collagen was imaged by exciting each plane with a 488 nm laser (collagen) and 568 nm laser (HL-60) at\u00a0~20 \u00b5W and 10 \u00b5W (at the back aperture of the excitation objective) for 5 ms separately before moving to the next z plane, with an excitation inner/outer numerical aperture of 0.4/0.325 respectively and a corresponding light sheet length of 20 \u00b5m. At each time point, the cells were imagined by objective scanning mode and the dithered light sheet at 250 nm step size, thereby capturing a volume of\u00a0~70 \u00b5m x 36 \u00b5m x 35 \u00b5m (corresponding to 672 \u00d7 352\u00a0\u00d7\u00a0141 pixels in raw data) every 1.4 s (which includes 1.3 s acquisition time and 0.1 s pause between each time point). There are 250 time points for the continuous imaging periods of 5.83 min in duration.\n\n### Image alignment, compression and normalization\n\nWith the datasets we collected the imaged volume was typically five times larger than the cell along each axis so that the cell did not crawl out of view. To enable real-time playback from any vantage point we used compression and thresholding of the image data to reduce its size by as much as a factor of 100 utilizing that the cell at any instant only occupied a small portion of the imaged box. To compensate for scope drift we aligned static features (extracellular collagen filaments) of each three-dimensional image to the preceding time maximizing cross-correlation to correct microscope jitter. We normalized the intensity levels by shifting the mean to 0 and scaling the intensity for each three-dimensional image so enclosed cell volume was constant at a standard intensity value (arbitrarily chosen equal to 100). This corrected variations in normalization introduced by microscope deconvolution software and also compensated for photobleaching which reduced intensity levels by approximately a factor of 2 over the imaged time periods.\n\n### Rendering images\n\nThe observed cell protrusions undergo continuous change in shape and can emerge from all sides of the cell. To communicate these features in two-dimensional static images we exported the surface mesh from UCSF Chimera as a Wavefront (.obj) file, and imported them into Cinema4D, a three-dimensional animation software package. We used the shading technique of ambient occlusion (recessed areas appear dark) and the Sketch and Toon Shader both with default settings to clearly visualize the three-dimensional dynamic behavior (Figure 1\u2014figure supplement 3).\n\n### Real-time viewing of the data with \u2018vseries\u2019 toolkit\n\nWe developed \u2018vseries\u2019 software within UCSF Chimera to analyze the large crawling cell data sets. The \u2018vseries\u2019 toolkit includes command line implementation and a Volume Series GUI. It enables users to view and manipulate an ordered sequence of volumetric datasets, and apply analysis commands to some or all of the volumetric maps at once. We used three-dimensional interactive visualization to see all aspects of the cell motion allowing any feature to be examined at any time in the cell motion. The new software visualization and analysis capabilities have been distributed as the \u2018vseries\u2019 command of the UCSF Chimera visualization program. To mark features of interest we also developed three-dimensional interactive surface visualizations for viewing in a web browser with the ability to hand place markers (small spheres) on desired cell features, and annotate them with text descriptions and choice of color. This software enables collaborative online annotation of the data.\n\n### Quantification of protrusion thickness and flatness\n\nTo measure thickness of the rendered three-dimensional cells, surface meshes were imported into Cinema4D and markers were created to measure the top-to-bottom distance along the edge of a pseudopodial sheet. Flatness was measured in UCSF Chimera by first placing markers along the edge of the sheet using the \u2018Markers\u2019 function (http://www.rbvi.ucsf.edu/chimera/current/docs/ContributedSoftware/volumepathtracer/framevolpath.html) and then running a Python script that calculates the best fit plane and measures the distances from the plane to the markers. We also measured the thin edge of lamellar sheets intersecting raw lattice light sheet images at 90\u00b0 (567\u00a0\u00b1\u00a064 nm on glass and 689\u00a0\u00b1\u00a086 nm in collagen) at half maximum fluorescence intensity). We also measured phalloidin-stained actin imaged using confocal microscopy (505\u00a0\u00b1\u00a049 nm for a sheet and 533\u00a0\u00b1\u00a0123 nm for a rosette petal) intersecting the confocal plane at 90\u00b0, measured at half maximum fluorescence intensity.\n\n### Quantification of cell movement and protrusion activity\n\nTo quantify the motions we measured cell centroid position as a function of time to obtain speed, direction, and changes of direction. This capacity is now included as the \u2018vseries measure\u2019 command. For each volume in the volume series, the command calculates the centroid (x,y,z) coordinates, the distance from the previous centroid (\u2018step\u2019), the cumulative distance along the piecewise linear path from the first centroid, the surface-enclosed volume, and the surface area. The results are saved in a text file. The centroid is the center of mass of the density map based on map regions above the threshold; we set the threshold to our already established normalized level of 100.\n\n### Quantification of protrusion activity\n\nTo automate identification of the irregularly shaped protrusions, we took advantage of the fact that utrophin-based cortical actin labeling entered nascent protrusions slowly while membrane labeling was always present in the protrusions. We computed difference maps between the imaged membrane and actin channels, applied spatial smoothing using a Gaussian filter with a standard deviation of 0.5 \u00b5m to reduce noise. The resulting enclosed volumes were marked as individual protrusions if they were greater than 1 \u00b5m3, less than 15 \u00b5m from center, and outside cell center radius or larger than 15 \u00b5m3. For each volume in the volume series we calculated the total volume of all the protrusions, the distance of each protrusion from the cell center, the angle between the line connecting the cell centroid to protrusion centroid and the cell centroid path, and the number of protrusions. This calculation was implemented as a Python script (Figure 6\u2014source code 1).\n\n### Quantification of turning points\n\nChanges of cell direction appeared correlated with emergence of multiple protrusions in different directions. To examine this correlation we used principal component analysis to find the primary plane of motion for graphing a cell centroid path in two dimensions. The first method we used for quantifying direction changes was to calculate the sliding time window ratio of the path length over the Euclidean distance between end-points using an interval of 10 time points. A ratio greater than 2.5 was considered turning. Our second approach was a Savitzky\u2013Golay filter to calculate an estimate of the derivative. Time points were considered turnaround points if the derivative was zero and the cell had traveled at least 1 \u00b5m from the last turnaround point. Both of these methods were written in R Studio (Figure 6\u2014source code 2).\n\n### Conventional microscopy\n\nRICM, TIRF, and spinning disk confocal microscopy were performed on a Nikon Ti-E inverted microscope equipped with a Spectral Diskovery and an Andor iXon Ultra EMCCD. RICM illumination (also called \u2018interference reflection microscopy\u2019) was produced with a 50/50 beamsplitter (Chroma 21000) in the dichroic cube and a 550 nm excitation filter (Thorlabs FB550-10) after a halogen epi lamp. Sufficient neutral density filters were placed after the halogen lamp and the aperture diaphragm was adjusted to maximize the contrast of the RICM images. RICM and TIRF images were interleaved less than 500 ms apart by rotating the RICM cube in and out of the path every other frame. All hardware was controlled using Micro-Manager software (Edelstein et al., 2010). Image analysis of RICM, TIRF, and spinning disk confocal data was performed using ImageJ unless otherwise noted.\n\n### Scanning electron microscopy\n\nJurkat T lymphocytes were obtained from the American Type Culture Collection (ATCC) who confirms cell line identity by STR, and were grown in suspension in RPMI 1640 (Gibco) supplemented with 5% fetal bovine serum (Atlanta Biologicals Inc), 2 mg/mL glucose, 1 mM sodium pyruvate (Gibco) and 50 uM beta-mercaptoethanol (Gibco), and were maintained at densities\u00a0<1 million cells/mL. Cells were fixed by mixing 1 million cells with 1 vol of 7% glutaraldehyde (Electron Microscopy Sciences Inc) in 100 mM sodium phosphate pH 7.4 and incubated 1 hr at 23 degrees C. Fixed cells were washed 5x with PBS (centrifuging at 300xg for 5 min to pellet the cells), then resuspended in 100 uL PBS and allowed to settle for 20 min at 23 degrees C onto 12 mm round coverslips (Fisher) pre-coated with 0.1% poly-L-lysine (Sigma-Aldrich). Cells were re-fixed on the coverslip with 3.5% glutaraldehyde in PBS for 15 min, followed by three washes with 20 mM sodium phosphate pH 7.5, and staining with 1% osmium tetroxide (Electron Microscopy Sciences Inc) in 100 mM sodium phosphate pH 7.5. Coverslips were washed once with water, then dehydrated sequentially with 30, 50, 70, 95, and 100% ethanol. Coverslips were washed 2 \u00d7 5 min with 1:1 and 1:2 dilutions of ethanol:hexamethyldisilazane (HMDS; Sigma), then 3 \u00d7 20 min with 100% HMDS. Coverslips were dried overnight under vacuum, then adhered to SEM stubs (Electron Microscopy Sciences), coated with a 3 nm layer of osmium tetroxide using an OPC-60 osmium plasma coater (SPI Supplies), and imaged in SE mode with an FEI XL-30 FEG-ESEM using an accelerating voltage of 5 kV, spot size 3.\n\n### Resources for getting started using Chimera for 3D light microscopy data\n\nUCSF Chimera web site and download. https://www.cgl.ucsf.edu/chimera/\n\nSee also ChimeraX, the next generation of Chimera software, which includes vseries command. Supports ambient occlusion lighting which is not available in Chimera.\u00a0http://www.cgl.ucsf.edu/chimerax/\n\nTutorials for general Chimera use (highly recommended for new users) www.rbvi.ucsf.edu/chimera/current/docs/UsersGuide/\n\nChimera Volume series graphical user interface documentation, for playing through 5d light microscopy data. https://www.cgl.ucsf.edu/chimera/docs/ContributedSoftware/volseries/volseries.html\n\nChimera vseries command documentation. Command to play through and process 5d image data (normalize intensities, remove jitter, extract subregions, threshold, mask, compress).\u00a0https://www.cgl.ucsf.edu/chimera/docs/UsersGuide/midas/vseries.html\n",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "d5a004ea-b5be-43f3-a304-d5f8d83e594d",
+      "submission_id": "e75800ea-fc67-4c36-9738-00bd2f8b3146",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael Sixt, Institute of Science and Technology Austria (IST Austria) Austria\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.26990.039](https://doi.org/10.7554/eLife.26990.039)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Actin-based protrusions of migrating neutrophils are intrinsically lamellar and facilitate direction changes\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Michael Sixt, is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Anna Akhmanova as the Senior Editor. Matthieu Piel, one of the other two reviewers, has agreed to reveal his identity.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn their study Fritz-Laylin et al. study the morphology of 3D migrating amoeboid cells (mainly HL60 derived neutrophils) using high resolution high speed light sheet microscopy. They find that what was previously called pseudopodial extension is actually an array of lamellipodia in varying configurations \u2013 from one single sheet to rosettes. They show this quantitatively by applying a new modality of image analysis using several reporter lines. Pharmacology is used to inhibit the Arp2/3 complex which left locomotion intact but decreased the extent of cell turning. An important insight is also that previously described waves of actin polymerisation are not an internal feature of the cell but are rather lamellipodial tips sliding along the ventral surface of the cell.\n\nThe authors conclude that lamellipodia can form independently of adhesive contacts, that lamellipodia are important for cell turning but not necessarily for locomotion and that WAVE waves are tips of expanding lamellipodia.\n\nEssential revisions:\n\nAll three reviewers agreed that this is brilliant imaging and the conclusions are important for the community, although the study is very observational and in its functional implications overlapping with two papers in Nat Cell Biol on Dendritic cells by the groups of Lennon-Dumenil and Sixt. One reviewer feels that the work is too phenomenological for eLife and suggests that BAR domain proteins potentially important for lamellipodial flatness should be investigated in detail. As this will go beyond the two months revision time the reviewers agreed during the consultation process that emphasis should be put on the general morphological part and the authors should employ at least one other classical amoeboid cell type to proof the principle. T cell blasts might be a suitable and easy to handle example.\n",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a94a87ea-5c18-4ffb-a9f3-c623f67b28e9",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C1",
+      "claim": "Lattice light sheet microscopy offers a unique combination of three-dimensional imaging with high spatial and temporal resolution and low phototoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "To address these issues, we employed the recently developed lattice light sheet microscope (Chen et al., 2014), which offers a unique combination of three-dimensional imaging with high spatial and temporal resolution and low phototoxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Chen et al., 2014, which describes the lattice light sheet microscope technology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "94f2d5dd-5953-41a8-a00c-bcc87aec8db5",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C2",
+      "claim": "The utrophin-based actin probe binds preferentially to cortical actin surrounding the cell body and is largely excluded from the more dynamic, branched actin networks that drive pseudopod extension.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we chose the utrophin-based actin probe, which binds preferentially to cortical actin surrounding the cell body and is largely excluded from the more dynamic, branched actin networks that drive pseudopod extension (Belin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Belin et al., 2014, which characterizes the binding properties of the utrophin-based actin probe.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "5be6fb94-bdaa-43d6-808c-59c48e8436d2",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C3",
+      "claim": "No actin probe binds exclusively to the dynamic, branched actin networks of the pseudopod, including the widely used probe, Lifeact.",
+      "claim_type": "EXPLICIT",
+      "source": "No actin probe binds exclusively to the dynamic, branched actin networks of the pseudopod, including the widely used probe, Lifeact (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 1\u2014figure supplement 1, which shows that Lifeact does not exclusively label dynamic pseudopod actin networks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "35a6c0ba-6a13-4fca-a258-054dfc376b82",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C4",
+      "claim": "HL-60 cells build pseudopods that are filled with polymerized actin, easily visualized in fixed cells using phalloidin.",
+      "claim_type": "EXPLICIT",
+      "source": "Neutrophil-like HL-60 cells build pseudopods that are filled with polymerized actin, easily visualized in fixed cells using phalloidin (Figure 2\u2014figure supplement 1, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2\u2014figure supplement 1 and Figure 3\u2014figure supplement 1, which show phalloidin staining of actin in pseudopods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "536d2370-1bfc-4bb7-8381-13701e5a2ac5",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C5",
+      "claim": "Three-dimensional pseudopods turn out to be composed of thin (<0.75 \u00b5m), flat sheets that sometimes interleave to form rosettes.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, three-dimensional pseudopods turn out to be composed of thin (<0.75 \u00b5m), flat sheets that sometimes interleave to form rosettes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from lattice light sheet microscopy data presented throughout the manuscript, including measurements of pseudopod thickness.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "4f0fe69e-63ea-446d-83c0-dfcec7e1d9a4",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C6",
+      "claim": "The laminar nature of pseudopods is not templated by an external surface, but likely reflects a linear arrangement of regulatory molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Their laminar nature is not templated by an external surface, but likely reflects a linear arrangement of regulatory molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations that pseudopods maintain lamellar morphology in 3D collagen matrices and inference about the underlying molecular organization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "697073b5-8e75-49c0-87a8-fcbec3ebffe9",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C7",
+      "claim": "Arp2/3-dependent pseudopods are dispensable for three-dimensional locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we find that Arp2/3-dependent pseudopods are dispensable for three-dimensional locomotion, their elimination dramatically decreases the frequency of cell turning, and pseudopod dynamics increase when cells change direction, highlighting the important role pseudopods play in pathfinding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing that cells treated with CK-666 (Arp2/3 inhibitor) can still migrate through collagen matrices.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "e7c3ccd2-74d7-4e24-9065-f1be161a0b79",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C8",
+      "claim": "Elimination of Arp2/3-dependent pseudopods dramatically decreases the frequency of cell turning.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we find that Arp2/3-dependent pseudopods are dispensable for three-dimensional locomotion, their elimination dramatically decreases the frequency of cell turning, and pseudopod dynamics increase when cells change direction, highlighting the important role pseudopods play in pathfinding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative analysis of cell turning behavior in control versus CK-666 treated cells shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "2b0638bd-b93b-4a9e-a001-14594a0f4df7",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C9",
+      "claim": "Pseudopod dynamics increase when cells change direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we find that Arp2/3-dependent pseudopods are dispensable for three-dimensional locomotion, their elimination dramatically decreases the frequency of cell turning, and pseudopod dynamics increase when cells change direction, highlighting the important role pseudopods play in pathfinding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data showing correlation between pseudopod formation and cell turning events, as visualized in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "6e4ad37e-cb51-44ab-a453-c76d9e354528",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C10",
+      "claim": "Movement of leading-edge lamellipodia is driven by growth of branched actin networks nucleated and crosslinked by the Arp2/3 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work, mainly on fibroblasts and epithelial cells, has established that movement of leading-edge lamellipodia is driven by growth of branched actin networks nucleated and crosslinked by the Arp2/3 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge from previous work on fibroblasts and epithelial cells.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "9a007d8d-0f93-43d5-b673-bef9c3abd6e6",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C11",
+      "claim": "Adhesion-based cell migration is restricted to the animal lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "This mode of cell migration appears to be restricted to the animal lineage, where it relies on the presence of specific ligands in the extracellular environment and plays essential roles in embryonic development, wound healing, and tissue homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about the phylogenetic distribution of adhesion-based migration.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "f10b6be6-5359-41f2-98d9-0e4e8f92fac9",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C12",
+      "claim": "A more widely dispersed form of cell crawling was probably present in the last common ancestor of all eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "A more widely dispersed form of cell crawling\u2014probably present in the last common ancestor of all eukaryotes (Fritz-Laylin et al., 2017)\u2014requires only weak, non-specific interaction with the extracellular environment and can achieve speeds several orders of magnitude faster than adhesion-based movement (Loomis et al., 2012; Preston and King, 1978; L\u00e4mmermann et al., 2008; Buenemann et al., 2010; Butler et al., 2010; Loomis et al., 2012; Petrie and Yamada, 2015; Fritz-Laylin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Fritz-Laylin et al., 2017, which discusses the evolutionary origins of cell crawling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "6ec8ee78-a1b2-4226-bc55-e67a64db3234",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C13",
+      "claim": "Fast, weakly adherent cell crawling can achieve speeds several orders of magnitude faster than adhesion-based movement.",
+      "claim_type": "EXPLICIT",
+      "source": "A more widely dispersed form of cell crawling\u2014probably present in the last common ancestor of all eukaryotes (Fritz-Laylin et al., 2017)\u2014requires only weak, non-specific interaction with the extracellular environment and can achieve speeds several orders of magnitude faster than adhesion-based movement (Loomis et al., 2012; Preston and King, 1978; L\u00e4mmermann et al., 2008; Buenemann et al., 2010; Butler et al., 2010; Loomis et al., 2012; Petrie and Yamada, 2015; Fritz-Laylin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations documenting the speed differences between adhesion-based and adhesion-independent migration.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "0cfd1816-a125-486a-857c-a00d833201d8",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C14",
+      "claim": "Disrupting pseudopod formation can increase the speed and persistence of migration.",
+      "claim_type": "EXPLICIT",
+      "source": "These three-dimensional pseudopods may contribute to forward motion of crawling and swimming cells (Van Haastert, 2011), but recent work has revealed that disrupting pseudopod formation can increase the speed and persistence of migration (Leithner et al., 2016; Vargas et al., 2016), implying that complex pseudopods might be more important for exploring the external environment than for driving forward motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Leithner et al., 2016 and Vargas et al., 2016, which report increased migration speed upon pseudopod disruption.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "a0406b8e-9374-4882-b61c-0786cb9e07af",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C15",
+      "claim": "Complex pseudopods might be more important for exploring the external environment than for driving forward motion.",
+      "claim_type": "EXPLICIT",
+      "source": "These three-dimensional pseudopods may contribute to forward motion of crawling and swimming cells (Van Haastert, 2011), but recent work has revealed that disrupting pseudopod formation can increase the speed and persistence of migration (Leithner et al., 2016; Vargas et al., 2016), implying that complex pseudopods might be more important for exploring the external environment than for driving forward motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on observations that disrupting pseudopods increases migration speed, suggesting their primary role is not propulsion.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "aa14a478-4ac0-43ea-b39a-4d301cfe22c7",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C16",
+      "claim": "The spatial resolution of lattice light sheet microscopy data was approximately 230 nm in XY and 370 nm in Z.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial resolution of the resulting data was approximately 230 nm in XY and 370 nm in Z (Chen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Chen et al., 2014, which characterizes the resolution of the lattice light sheet microscope.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "4283b733-a0a5-4ab5-aaf0-ba28bd007eb7",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C17",
+      "claim": "Lamellar pseudopods have a thickness between 430 and 800 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the resolution of lattice light sheet microscopy (~230 nm in XY [Chen et al., 2014]), we estimate that the actual thickness of lamellar pseudopods lies between 430 and 800 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on measurements from multiple imaging modalities including lattice light sheet microscopy, confocal microscopy, and scanning electron microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "4a2c27b8-8d6e-4f2e-ba10-b143ffe656ed",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C18",
+      "claim": "Cells crawling across coverslips and those crawling through collagen networks build sheets with similar flatness.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells crawling across coverslips, as well as those crawling through collagen networks, build sheets with similar flatness (Figure 2D), raising the question of how cells can form flat structures without the surface template mechanism proposed for the assembly of flat lamellipodia of adherent cells (see Discussion).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative measurements of pseudopod flatness shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "523c9f9c-1997-46fc-94ab-f60520bd1152",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C19",
+      "claim": "Both sheet and rosette pseudopods largely excluded utrophin-based actin probes.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, both sheet and rosette pseudopods largely excluded utrophin-based actin probes (Figure 1B) and both types of protrusion disappeared in the presence of CK-666 (Figure 4B, Video 11, and Video 12), a small-molecule inhibitor of the Arp2/3 complex (Nolen et al., 2009), arguing that sheets and rosettes are formed by rapidly assembling, branched actin networks.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data shown in Figure 1B demonstrating exclusion of utrophin probe from pseudopods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "fad1478c-f195-4745-99c1-96e54d26609d",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C20",
+      "claim": "Both sheet and rosette pseudopods disappeared in the presence of CK-666, a small-molecule inhibitor of the Arp2/3 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, both sheet and rosette pseudopods largely excluded utrophin-based actin probes (Figure 1B) and both types of protrusion disappeared in the presence of CK-666 (Figure 4B, Video 11, and Video 12), a small-molecule inhibitor of the Arp2/3 complex (Nolen et al., 2009), arguing that sheets and rosettes are formed by rapidly assembling, branched actin networks.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data showing loss of pseudopods upon CK-666 treatment, shown in Figure 4B and Videos 11-12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "bfb2f50b-14ea-4efb-a2ae-ba01e500548e",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C21",
+      "claim": "Sheets and rosettes are formed by rapidly assembling, branched actin networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, both sheet and rosette pseudopods largely excluded utrophin-based actin probes (Figure 1B) and both types of protrusion disappeared in the presence of CK-666 (Figure 4B, Video 11, and Video 12), a small-molecule inhibitor of the Arp2/3 complex (Nolen et al., 2009), arguing that sheets and rosettes are formed by rapidly assembling, branched actin networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that pseudopods are sensitive to Arp2/3 inhibition, which is known to disrupt branched actin network assembly.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "03da9ad3-22b9-4c07-9f06-0cd6deeaad08",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C22",
+      "claim": "Lamellae within rosettes have the same thickness (690 \u00b1 20 nm, n = 18) as the simple lamellar pseudopods.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, lamellae within rosettes have the same thickness (690 \u00b1 20 nm, n = 18, Figure 3B) as the simple lamellar pseudopods.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative measurements shown in Figure 3B comparing thickness of sheets and rosette petals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "3ca6df87-f5f3-4e81-8433-e6046022fe77",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C23",
+      "claim": "In a uniform field of chemoattractant, pseudopodial sheets and rosettes both have a lifespan of approximately 60 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourthly, in a uniform field of chemoattractant, pseudopodial sheets and rosettes both have a lifespan of approximately 60 s, from initial appearance to final disappearance (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of pseudopod duration shown in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "550fffa6-593e-4e3f-bd57-c343e8c48963",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C24",
+      "claim": "Protrusion lifespan does not depend on external mechanical support.",
+      "claim_type": "EXPLICIT",
+      "source": "This lifetime remains similar whether cells are migrating across flat surfaces or through collagen networks (Figure 3\u2014figure supplement 4), indicating that protrusion lifespan does not depend on external mechanical support.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the observation that pseudopod lifespans are similar in 2D and 3D environments, shown in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "d58608ec-2943-4a7f-9eb7-0b2091f5010c",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C25",
+      "claim": "Approximately 75% of both sheet and rosette pseudopods disappear by collapsing into a tangle of linear structures that resemble filopodia.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, approximately 75% of both sheet and rosette pseudopods disappear in an identical manner, by collapsing into a tangle of linear structures that resemble filopodia (Figure 3E (rosette) and Video 1 (sheet), see also Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations from time-lapse imaging shown in Figure 3E, Video 1, and Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "770ebebd-1ac5-4916-80e3-b299ce04eedd",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C26",
+      "claim": "Lamellar pseudopods first appeared as linear deformations running across the surface of the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The lamellar elements that form pseudopods\u2014both sheets and rosettes\u2014first appeared as linear deformations running across the surface of the plasma membrane (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on observations from time-lapse imaging shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "4d9cce6e-26ca-4d55-866b-9b70e05b2264",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C27",
+      "claim": "Nascent pseudopods grow at a characteristic rate of 11.9 \u00b1 5.4 \u00b5m/min.",
+      "claim_type": "EXPLICIT",
+      "source": "These low 'ridges' formed mature pseudopods by growing rapidly away from the cell body, at a characteristic rate of 11.9 \u00b1 5.4 \u00b5m/min (n = 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on quantitative measurements of pseudopod growth rates from time-lapse imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "323d9f87-b903-4918-bf51-0555a632737f",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C28",
+      "claim": "As each nascent protrusion grew, its distal edge remained linear, leaving a flat pseudopod in its wake.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, as each nascent protrusion grew, its distal edge remained linear, leaving a flat pseudopod in its wake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from time-lapse imaging of pseudopod formation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "b66708b4-ce1b-4728-940e-60325e236a7e",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C29",
+      "claim": "The WAVE regulatory complex forms a series of thin arcs, or 'waves,' that originate somewhere in the cell body and then advance outward along the cell's ventral surface when imaged by TIRF microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study (Weiner et al., 2007) employed TIRF microscopy to image localization and dynamics of the WAVE regulatory complex in HL-60 cells crawling on glass coverslips. When imaged in the region proximal (within ~100 nm) to the coverslip, the WAVE regulatory complex forms a series of thin arcs, or 'waves,' that originate somewhere in the cell body and then advance outward along the cell's ventral surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Weiner et al., 2007, which describes WAVE complex dynamics in HL-60 cells.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "36baf895-92c7-4ea1-aaf1-2652b2f136f7",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C30",
+      "claim": "Each outward-moving wave is actually the edge of an individual sheet pressed into the TIRF plane as it extends forward.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observation that the pseudopod of an HL-60 cell is composed of multiple lamellar sheets suggests that each outward-moving wave is actually the edge of an individual sheet pressed into the TIRF plane as it extends forward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the observation that pseudopods are lamellar and the known behavior of WAVE complex in TIRF microscopy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "af73a039-0946-4aa7-93c9-f587ea190c07",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C31",
+      "claim": "The cell's ventral surface is not smooth and does not make uniformly close contact with the fibronectin-coated coverslip to which it adheres.",
+      "claim_type": "EXPLICIT",
+      "source": "RICM revealed that the cell's ventral surface is not smooth and does not make uniformly close contact with the fibronectin-coated coverslip to which it adheres, consistent with previous observations (Sullivan and Mandell, 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RICM imaging data and citation to Sullivan and Mandell, 1983.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "a1d8f505-35ab-452f-82e1-470db22ad7ca",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C32",
+      "claim": "The ventral surface forms dynamic and complex patterns of close contact, including lines that travel toward the front of the crawling cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the ventral surface forms dynamic and complex patterns of close contact, including lines that travel toward the front of the crawling cell (Figure 5, Video 13).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RICM imaging data shown in Figure 5 and Video 13.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "c5f35fc1-54eb-46e9-bb03-855daaefa455",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C33",
+      "claim": "There is enrichment of WAVE complex at moving lines of close contact between the cell and coverslip.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our interpretation, we also see enrichment of WAVE complex at these moving lines of close contact (Figure 5, Video 13).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simultaneous TIRF and RICM imaging shown in Figure 5 and Video 13.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "2e1ab889-e877-4c8d-b032-800bc59b98eb",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C34",
+      "claim": "Inhibition of Arp2/3 complex activity decreases the volume of the largest pseudopod produced by crawling cells by an average of 40%.",
+      "claim_type": "EXPLICIT",
+      "source": "This method of automated identification and quantification reveals that inhibition of Arp2/3 complex activity decreases the volume of the largest pseudopod produced by crawling cells by an average of 40% (Figure 6\u2014figure supplement 1C and Videos 14\u201315), a significant decrease despite the within-cell variability of pseudopod volume (Figure 6\u2014figure supplement 2D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of pseudopod volumes in control versus CK-666 treated cells shown in Figure 6\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "d6ab3583-c8a5-45fb-ae6c-04930c5e4f0c",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C35",
+      "claim": "The rate of pseudopod formation decreased from 1.9 pseudopods/min to 0.8 pseudopods/min upon Arp2/3 inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, visual inspection of time-lapse sequences revealed that the rate of pseudopod formation decreased from 1.9 pseudopods/min to 0.8 pseudopods/min upon Arp2/3 inhibition (Control: n = 9 cells over 40.7 min; CK-666 treated: n = 7 cells over 22.1 min).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on quantitative analysis of pseudopod formation rates from time-lapse imaging of control and CK-666 treated cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "dd3855dc-7183-47dc-b5b9-c4199716f249",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C36",
+      "claim": "Cells treated with CK-666 retained the ability to migrate through collagen networks in a uniform field of chemoattractant.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the loss of dynamic pseudopods, cells treated with CK-666 retained the ability to migrate through collagen networks in a uniform field of chemoattractant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from time-lapse imaging of CK-666 treated cells showing continued migration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "3b1d7d19-e951-465f-8870-9f332df94289",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C37",
+      "claim": "CK-666 treated cells moved more slowly (5.42 vs 8.57 um/min) than control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The treated cells, however, moved more slowly (5.42 vs 8.57 um/min, Figure 6E) and appeared to travel along much straighter trajectories than control cells (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of cell migration speeds shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "519d4b3d-a70f-4713-b465-107e63f13d73",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C38",
+      "claim": "Control cells changed direction 2 to 3 times more often than CK-666 treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "According to both metrics, control cells changed direction 2 to 3 times more often than the CK-666 treated cells (method 1: 2.73 vs 1.15 turns/min, Figure 6\u2014figure supplement 1A and B; method 2: 3.41 vs 1.09 turns/min, Figure 6D\u2013F), and displayed greater turn activity (Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of cell turning behavior using two different methods, shown in Figure 6 and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "9b21a6fb-e817-4687-afe0-6bcb13f949cf",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C39",
+      "claim": "Control cell trajectories reveal frequent turns, each of which appears correlated with a dramatic increase in pseudopod dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Control cell trajectories reveal frequent turns, each of which appears correlated with a dramatic increase in pseudopod dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of cell trajectories overlaid with pseudopod dynamics data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "69a43f1f-a227-49d5-9384-ac775512067a",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C40",
+      "claim": "While control cells frequently build pseudopods in the direction of cell motion, the protrusions built by CK-666 treated cells are more uniformly distributed.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while control cells frequently build pseudopods in the direction of cell motion, the protrusions built by CK-666 treated cells are more uniformly distributed (Figure 6\u2014figure supplement 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of pseudopod directionality shown in Figure 6\u2014figure supplement 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "8e19ae38-2eb9-4ac5-99f4-272354a1a6ce",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C41",
+      "claim": "Complex pseudopods formed by fast-moving HL-60 cells are actually composed of dynamic lamellar elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Lattice light sheet microscopy reveals that complex pseudopods formed by fast-moving HL-60 cells are actually composed of dynamic lamellar elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from lattice light sheet microscopy showing that pseudopods have lamellar structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "6f24c6a5-5256-40bb-89b8-5026c5fddab8",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C42",
+      "claim": "Some pseudopods are isolated, free-standing lamellae, while others are rosettes composed of multiple lamellar elements, often connected by T- and Y-shaped junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "Some pseudopods are isolated, free-standing lamellae, while others are rosettes composed of multiple lamellar elements, often connected by T- and Y-shaped junctions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from lattice light sheet microscopy showing different pseudopod morphologies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "519c8ba1-a40d-47f9-8d35-0908a9b67e2f",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C43",
+      "claim": "The sheet-like morphology of lamellar building blocks does not depend on interaction with a flat surface.",
+      "claim_type": "EXPLICIT",
+      "source": "These lamellar building blocks share common structural features, including a characteristic thickness, but their sheet-like morphology does not depend on interaction with a flat surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations that pseudopods maintain lamellar morphology in 3D collagen matrices without surface contact.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "316beaf1-4edd-4345-8d44-9257c70f3d2b",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C44",
+      "claim": "Similar lamellar and rosette protrusions have been identified in published scanning electron micrographs of several different cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified similar lamellar and rosette protrusions in published scanning electron micrographs of several different cells types, including differentiated HL-60 cells (Fleck et al., 2005), Jurkat T cells (Nicholson-Dykstra and Higgs, 2008) (Figure 3\u2014figure supplement 3), human neutrophils migrating through a chemoattractant gradient (Zigmond and Sullivan, 1979), dendritic cells (Coates et al., 2003; Fisher et al., 2008; Felts et al., 2010), T-cells (Brown et al., 2003) and monocytes (Majstoravich et al., 2004) from human blood, as well as Dictyostelium amoebae (Gerisch et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple published studies showing similar structures in different cell types.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "39471341-1499-4ed2-a3ac-2b689603bf6a",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C45",
+      "claim": "Fast-moving leukocytes can assemble free-standing lamellar pseudopods without the aid of a surface 'template.'",
+      "claim_type": "EXPLICIT",
+      "source": "From our current work and previous observations, we propose two basic principles that define pseudopod morphology in these and other cells that build lamellar pseudopods. First, fast-moving leukocytes can assemble free-standing lamellar pseudopods without the aid of a surface 'template.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations that pseudopods maintain lamellar morphology in 3D environments without surface contact.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "7db646f1-c395-4fd3-baf4-3c236c933f52",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C46",
+      "claim": "More complex three-dimensional pseudopods can be resolved into lamellar components.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, more complex three-dimensional pseudopods can be resolved into lamellar components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations that rosette pseudopods are composed of multiple interleaved lamellar sheets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "c73f64a7-9639-488b-b644-69867b405e25",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C47",
+      "claim": "Free-standing pseudopodial sheets are thicker (~430\u2013800 nm) than attached lamellipodia (<200 nm).",
+      "claim_type": "EXPLICIT",
+      "source": "Although they resemble attached lamellipodia, the pseudopodial sheets we describe are thicker (~430\u2013800 nm vs. <200 nm (Abercrombie et al., 1971)) and grow at faster rates (Ingram, 1969; Abercrombie et al., 1971).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on measurements of pseudopod thickness compared to published measurements of lamellipodial thickness.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "848c07a8-4831-4579-b960-d635aa59ea4b",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C48",
+      "claim": "Free-standing pseudopodial sheets grow at faster rates than attached lamellipodia.",
+      "claim_type": "EXPLICIT",
+      "source": "Although they resemble attached lamellipodia, the pseudopodial sheets we describe are thicker (~430\u2013800 nm vs. <200 nm (Abercrombie et al., 1971)) and grow at faster rates (Ingram, 1969; Abercrombie et al., 1971).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on measurements of pseudopod growth rates compared to published rates for lamellipodia.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "e3d0cb18-2424-4d44-9c31-28a3cdc80c4b",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C49",
+      "claim": "In vitro, the morphology of a branched actin network is determined by the spatial arrangement of the regulatory molecules that activate the Arp2/3 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Reconstitution of Arp2/3-dependent branched actin network assembly provides a simple explanation: in vitro, the morphology of a branched actin network is determined by the spatial arrangement of the regulatory molecules that activate the Arp2/3 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge from in vitro reconstitution experiments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "2128fc47-11df-4b55-95d2-9fb4e0274700",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C50",
+      "claim": "One-dimensional arrangement of Arp2/3 activator along a thin glass fiber produces a flat, sheet-like actin network.",
+      "claim_type": "EXPLICIT",
+      "source": "One-dimensional arrangement of Arp2/3 activator along a thin glass fiber, for example, produces a flat, sheet-like actin network (Achard et al., 2010; Hu and Kuhn, 2012), while a two-dimensional square of Arp2/3 activator produces a more three-dimensional rectangular solid (Bieling et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to in vitro reconstitution studies by Achard et al., 2010 and Hu and Kuhn, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "022d99a6-89cb-4b49-a317-068ad9228552",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C51",
+      "claim": "A two-dimensional square of Arp2/3 activator produces a more three-dimensional rectangular solid.",
+      "claim_type": "EXPLICIT",
+      "source": "One-dimensional arrangement of Arp2/3 activator along a thin glass fiber, for example, produces a flat, sheet-like actin network (Achard et al., 2010; Hu and Kuhn, 2012), while a two-dimensional square of Arp2/3 activator produces a more three-dimensional rectangular solid (Bieling et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Bieling et al., 2016, which describes in vitro reconstitution experiments.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "26990eb2-21b8-49e9-bce2-5a2339e864f2",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C52",
+      "claim": "Once formed, a thin, flat actin network should remain stable as it grows.",
+      "claim_type": "EXPLICIT",
+      "source": "Mathematical models of branched actin network formation agree with these reconstitution results and suggest that, once formed, a thin, flat actin network should remain stable as it grows (Schmeiser and Winkler, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Schmeiser and Winkler, 2015, which presents mathematical modeling of actin network growth.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "ab980277-f2ef-4c0b-b37f-1086dbb045f6",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C53",
+      "claim": "The approximate dimensionality of nucleation and polymerase activity on the membrane is one less than the approximate dimensionality of the actin network generated by this activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Generalizing, we propose that the approximate dimensionality of nucleation and polymerase activity on the membrane is one less than the approximate dimensionality of the actin network (and protrusion) generated by this activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a generalization inferred from in vitro reconstitution experiments and mathematical models.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "97ad8691-d80c-4f15-a0e1-95252febd957",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C54",
+      "claim": "A filopodium (dimension ~1) grows from a point source (dimension ~0) of nucleation/polymerase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, a filopodium (dimension ~1) grows from a point source (dimension ~0) of nucleation/polymerase activity while a lamellar pseudopod (dimension ~2) grows from a line source (dimension ~1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the proposed relationship between nucleation dimensionality and protrusion dimensionality.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "7ce9c4fc-5508-4c5a-8dfa-aa22273c7f4f",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C55",
+      "claim": "A lamellar pseudopod (dimension ~2) grows from a line source (dimension ~1) of nucleation/polymerase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, a filopodium (dimension ~1) grows from a point source (dimension ~0) of nucleation/polymerase activity while a lamellar pseudopod (dimension ~2) grows from a line source (dimension ~1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the proposed relationship between nucleation dimensionality and protrusion dimensionality.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "1f163a3c-0718-44a9-b572-d957450e1c14",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C56",
+      "claim": "The two-dimensional nature of lamellar protrusions follows as a direct consequence of the one-dimensional organization of the Arp2/3 activation machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore propose that the two-dimensional nature of lamellar protrusions follows as a direct consequence of the one-dimensional organization of the Arp2/3 activation machinery (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a proposed model based on inference from in vitro reconstitution experiments and observations of WAVE complex organization.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "ba2e5720-a5ad-4025-991a-42f9e441cebc",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C57",
+      "claim": "Direct activators of Arp2/3 activity\u2014WASP and the WAVE regulatory complex\u2014form dynamic, linear arcs that propagate like traveling waves when observed at the cell surface by TIRF microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "This model for the assembly of flat pseudopods is supported by previous observations that activators of Arp2/3-dependent actin assembly appear in linear patterns on the membrane. When observed at the cell surface by TIRF microscopy, direct activators of Arp2/3 activity\u2014WASP and the WAVE regulatory complex\u2014form dynamic, linear arcs that propagate like traveling waves (Weiner et al., 2007; Fritz-Laylin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Weiner et al., 2007 and Fritz-Laylin et al., 2017, which describe WAVE and WASP localization patterns.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "782d712d-9070-454c-8cb6-03a013e118cc",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C58",
+      "claim": "Only WASP and WAVE have been shown to form lines, while further upstream components of the activation cascade, such as Rac, exhibit more diffuse localization patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, only these two Arp2/3 activators have been shown to form lines, while further upstream components of the activation cascade, such as Rac, exhibit more diffuse localization patterns (Weiner et al., 2007; Yang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Weiner et al., 2007 and Yang et al., 2016, which describe localization patterns of different signaling molecules.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "8ef61272-e3e1-43fe-82d9-92e5c2240ecf",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C59",
+      "claim": "Multiple dynamic Arp2/3 activation zones produce multiple lamellar pseudopods that can interact to form complex rosettes.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that these multiple dynamic Arp2/3 activation zones produce multiple lamellar pseudopods that can interact to form complex rosettes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a proposed model based on observations of WAVE complex localization and pseudopod morphology.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "8612e623-2a57-4ed2-a010-16523bead740",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C60",
+      "claim": "Membrane-bound circles of WAVE complex initiate formation of cylindrical, cup-like protrusions during macropinocytosis in Dictyostelium cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, recent lattice light sheet microscopy of Dictyostelium cells revealed membrane-bound circles of WAVE complex (known as SCAR in Dictyostelium) initiating formation of cylindrical, cup-like protrusions during macropinocytosis (Veltman et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Veltman et al., 2016, which describes WAVE/SCAR localization during macropinocytosis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "4cb3e421-1ffd-4a65-a6d3-ea5e7784d2a5",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C61",
+      "claim": "Cells that produce only a single, stable line of Arp2/3 activators at the leading edge produce only a single lamellar protrusion.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cells that produce only a single, stable line of Arp2/3 activators at the leading edge (e.g. Drosophila S2 cells [Kunda et al., 2003] and epithelial cells [Gautier et al., 2011]) produce only a single lamellar protrusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kunda et al., 2003 and Gautier et al., 2011, which describe Arp2/3 activator localization in different cell types.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "52681ccf-eaf8-410f-8243-6f05de198d9c",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C62",
+      "claim": "Complex pseudopods are not required for HL-60 cell migration, but they do play a role in direction change.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that although complex pseudopods are not required for HL-60 cell migration, they do play a role in direction change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data showing that CK-666 treated cells can migrate but turn less frequently.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "1a0a6393-9cba-48c0-8011-c1bdc50b8910",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C63",
+      "claim": "The size and number of membrane protrusions increase dramatically when cells change direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Using automated methods to detect and measure pseudopods we find that the size and number of these membrane protrusions increase dramatically when cells change direction and that blocking pseudopod formation reduces the frequency of direction changes (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis shown in Figure 6 correlating pseudopod dynamics with cell turning.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "03871810-f5f1-4379-a10a-e8c79d9e6714",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C64",
+      "claim": "Blocking pseudopod formation reduces the frequency of direction changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using automated methods to detect and measure pseudopods we find that the size and number of these membrane protrusions increase dramatically when cells change direction and that blocking pseudopod formation reduces the frequency of direction changes (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data showing reduced turning frequency in CK-666 treated cells, shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "d0b70503-f174-427d-888a-72290d8d728c",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C65",
+      "claim": "Reducing WAVE activity in dendritic cells abolishes pseudopod formation, yet accelerates the crawling of cells in simple confined spaces.",
+      "claim_type": "EXPLICIT",
+      "source": "These results provide a simple explanation for recent work from the Sixt lab, who found that reducing WAVE activity in dendritic cells abolishes pseudopod formation, yet accelerates the crawling of cells in simple confined spaces (Leithner et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Leithner et al., 2016, which describes effects of WAVE inhibition on dendritic cell migration.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "2427f291-74c1-46fd-a4e9-d379e7b56029",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C66",
+      "claim": "Pseudopod-deficient dendritic cells fail to reorient in changing gradients of chemoattractant.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the pseudopod-deficient dendritic cells fail to reorient in changing gradients of chemoattractant, and migrate more slowly toward a chemotactic source within complex three-dimensional environments compared to control cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from Leithner et al., 2016, describing behavior of WAVE-inhibited dendritic cells.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "627c598d-d896-4993-b907-c723d2d02c2f",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C67",
+      "claim": "Arp2/3 activity at the front of migrating dendritic cells is responsible for speed-fluctuating behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in another recent paper, the Piel and Lennon-Dumenil labs found that Arp2/3 activity at the front of migrating dendritic cells was responsible for speed-fluctuating behavior (Vargas et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Vargas et al., 2016, which describes the role of Arp2/3 in dendritic cell migration dynamics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "d9921835-515a-4455-95ff-dc0646556828",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C68",
+      "claim": "The three-dimensional pseudopods produced by fast-moving leukocytes promote the cell turning required for exploration of the local environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with these findings in dendritic cells, our results suggest that the three-dimensional pseudopods produced by fast-moving leukocytes promote the cell turning required for exploration of the local environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the authors' data combined with findings from other studies on dendritic cells.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "6b3a4447-9cba-4400-a4cb-830103fafcf4",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C69",
+      "claim": "A pseudopodial sheet is much thinner than a spherical bleb but can sweep out a comparable volume.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that broad, lamellar pseudopodia and extended rosettes may be uniquely adept structures for probing a cell's environment. A pseudopodial sheet is much thinner than a spherical bleb but can sweep out a comparable volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation about the functional advantages of lamellar pseudopods based on their geometric properties.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "3f57473e-6c8b-4691-b0bf-f2178c746907",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C70",
+      "claim": "Linear filopodia would have to move both back and forth and side to side to search the same volume as a lamellar sheet, and would provide limited surface contact.",
+      "claim_type": "EXPLICIT",
+      "source": "Linear filopodia, in contrast, would have to move both back and forth and side to side to search the same volume, and would provide limited surface contact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation about the relative efficiency of different protrusion types for environmental exploration.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "3176f296-a017-444c-a890-c7df6a63e586",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C71",
+      "claim": "UCSF Chimera is a freely available, open-source software platform developed to render and analyze three-dimensional atomic structures and density maps.",
+      "claim_type": "EXPLICIT",
+      "source": "UCSF Chimera is a freely available, open-source software platform developed to render and analyze three-dimensional atomic structures (Pettersen et al., 2004) and density maps (Goddard et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Pettersen et al., 2004 and Goddard et al., 2007, which describe UCSF Chimera software.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "3e2cc28d-9e46-47ca-a027-c61128af2a7e",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C72",
+      "claim": "The loss of Arp2/3 activity dramatically reduced adhesion of HL-60 cells to fibronectin-coated coverslips.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis was limited to cells moving through three-dimensional collagen matrices because we found that the loss of Arp2/3 activity dramatically reduced adhesion of HL-60 cells to fibronectin-coated coverslips.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations that CK-666 treated cells did not adhere well to coverslips.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "5cbddeb6-1ebc-4f64-8b75-7339b22f2c53",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C73",
+      "claim": "While control cells built lamellar pseudopods, CK-666 treated cells formed long, tubular protrusions.",
+      "claim_type": "EXPLICIT",
+      "source": "While control cells built lamellar pseudopods, CK-666 treated cells formed long, tubular protrusions (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data shown in Figure 4A and B comparing control and CK-666 treated cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "ecbf6f72-f87a-498a-8074-75e04ee2d64d",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C74",
+      "claim": "The absence of fluorescent utrophin from membrane-proximal regions of the cell provides a convenient marker to identify protrusions driven by the growth of branched actin networks.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the absence of fluorescent utrophin from membrane-proximal regions of the cell as a convenient marker to identify protrusions driven by the growth of branched actin networks, and automated this process by subtracting the volume enclosed by a utrophin-based actin probe from the volume enclosed by the plasma membrane marker (Figure 6A, Video 14).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the method developed by the authors for automated pseudopod detection, illustrated in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "a2b1ae68-822f-4daa-9082-e0f8abf62293",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C75",
+      "claim": "Time-lapse sequences generated by the lattice light sheet microscope comprised two-color image stacks, collected through entire cell volumes at 1.3 s intervals with minimal photobleaching and no evidence of phototoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-lapse sequences generated by the lattice light sheet microscope comprised two-color image stacks, collected through entire cell volumes at 1.3 s intervals with minimal photobleaching and no evidence of phototoxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the technical capabilities of the lattice light sheet microscope used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "39f8028d-86b3-4c62-a8a8-37a19a823999",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C76",
+      "claim": "Lamellar pseudopods maintained an approximately constant thickness throughout their lifetime.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite being unsupported, these pseudopods maintained a lamellar morphology with an approximately constant thickness throughout their lifetime (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by measurements shown in Figure 2E tracking pseudopod thickness over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "019506e8-3167-447a-8a7b-74eb248db764",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C77",
+      "claim": "Lamellar pseudopods have a similar profile whether cells crawl across glass or through a collagen matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of whether cells crawled across glass or through a collagen matrix, their lamellar pseudopods shared several common features, including a similar profile (Figure 2C) and thickness (780 \u00b1 137 nm standard deviation, n = 18 cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data shown in Figure 2C comparing pseudopods in different environments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "77e76957-e076-4951-aa69-79321bc604c8",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C78",
+      "claim": "Lamellar pseudopods have a thickness of 780 \u00b1 137 nm (standard deviation, n = 18 cells) when measured from surface-rendered LLSm data.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of whether cells crawled across glass or through a collagen matrix, their lamellar pseudopods shared several common features, including a similar profile (Figure 2C) and thickness (780 \u00b1 137 nm standard deviation, n = 18 cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on quantitative measurements of pseudopod thickness from lattice light sheet microscopy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "c6990434-dae5-4034-bd73-49392619c075",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C79",
+      "claim": "The thickness measured from surface-rendered LLSm data agrees with measurements made on other types of data, including raw lattice light sheet data (567 \u00b1 64 nm on glass and 689 \u00b1 86 nm in collagen).",
+      "claim_type": "EXPLICIT",
+      "source": "The thickness measured from surface-rendered LLSm data agrees with measurements made on other types of data, including: raw lattice light sheet data (567 \u00b1 64 nm on glass and 689 \u00b1 86 nm in collagen); spinning disk confocal images of phalloidin-stained actin (505 \u00b1 49 nm for a sheet and 533 \u00b1 123 nm for a rosette petal); and scanning electron micrographs, which suggest a thickness of ~640 nm (Fleck et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on measurements from multiple imaging modalities, providing convergent evidence for pseudopod thickness.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "1dba8036-1f59-4df6-a3c8-fdb5c3ea4d3e",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C80",
+      "claim": "Spinning disk confocal images of phalloidin-stained actin show pseudopod thickness of 505 \u00b1 49 nm for a sheet and 533 \u00b1 123 nm for a rosette petal.",
+      "claim_type": "EXPLICIT",
+      "source": "The thickness measured from surface-rendered LLSm data agrees with measurements made on other types of data, including: raw lattice light sheet data (567 \u00b1 64 nm on glass and 689 \u00b1 86 nm in collagen); spinning disk confocal images of phalloidin-stained actin (505 \u00b1 49 nm for a sheet and 533 \u00b1 123 nm for a rosette petal); and scanning electron micrographs, which suggest a thickness of ~640 nm (Fleck et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on measurements from confocal microscopy of fixed, phalloidin-stained cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "9f09fa1e-c3aa-475c-8982-0986ea2d0c29",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C81",
+      "claim": "Scanning electron micrographs suggest a pseudopod thickness of ~640 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The thickness measured from surface-rendered LLSm data agrees with measurements made on other types of data, including: raw lattice light sheet data (567 \u00b1 64 nm on glass and 689 \u00b1 86 nm in collagen); spinning disk confocal images of phalloidin-stained actin (505 \u00b1 49 nm for a sheet and 533 \u00b1 123 nm for a rosette petal); and scanning electron micrographs, which suggest a thickness of ~640 nm (Fleck et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on measurements from scanning electron micrographs, with citation to Fleck et al., 2005.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "b13b6cc2-77bb-41b2-8534-cf2c90d357d4",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C82",
+      "claim": "Lamellar pseudopods are not perfectly flat, and exhibit varying degrees of pucker and undulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Lamellar pseudopods are not perfectly flat, and exhibit varying degrees of pucker and undulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from three-dimensional imaging of pseudopod morphology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "4168324a-14cc-4fca-b918-dcbba9dc0501",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C83",
+      "claim": "In uniform fields of chemoattractant, both lamellar and rosette pseudopods are highly dynamic and ephemeral.",
+      "claim_type": "EXPLICIT",
+      "source": "In uniform fields of chemoattractant, both lamellar and rosette pseudopods are highly dynamic and ephemeral (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on observations from time-lapse imaging shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "8a2a1aa5-4e5d-4089-bb95-bc724179fd7d",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C84",
+      "claim": "Ambient occlusion tonal surface rendering makes cellular structures more easily interpretable by emphasizing the spatial relationships of three-dimensional surfaces and variations in surface texture.",
+      "claim_type": "EXPLICIT",
+      "source": "Tonal surface rendering with ambient occlusion makes cellular structures more easily interpretable by emphasizing the spatial relationships of three-dimensional surfaces and variations in surface texture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the benefits of the ambient occlusion rendering technique used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "e335275f-1a89-4afc-92d0-c3512ef63a12",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C85",
+      "claim": "The enhanced ability to detect and interpret textures and protrusions can be seen by comparing traditional maximum intensity projection and rendered versions of confocal data.",
+      "claim_type": "EXPLICIT",
+      "source": "The enhanced ability to detect and interpret textures and protrusions can be seen by comparing traditional maximum intensity projection and rendered versions of confocal data (Figure 3\u2014figure supplement 1) and similar renderings of the lattice light sheet data (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by visual comparisons shown in Figure 3\u2014figure supplement 1 and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "5563bea9-304f-4eae-a74f-acfa633d9b2c",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C86",
+      "claim": "HL-60 cells produce two distinctive types of dynamic membrane protrusion at the leading edge: thin, sheet-like lamina and 'rosettes' formed by the coincidence of multiple lamina.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these visualization tools, we observed two distinctive types of dynamic membrane protrusion at the leading edge of HL-60 cells crawling on fibronectin-coated coverslips: (i) thin, sheet-like lamina (Figure 2 and Videos 1\u20136), and (ii) 'rosettes' formed by the coincidence of multiple lamina (Figure 3, Videos 7\u201310).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on observations from lattice light sheet microscopy shown in Figures 2 and 3 and associated videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "9b15120a-f0a4-4ee6-b948-97769bf7bb4c",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C87",
+      "claim": "The morphology of lamellar and rosette protrusions differ from the spherical blebs produced when the plasma membrane detaches from the underlying cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "The morphology of these protrusions differ from the spherical blebs produced when the plasma membrane detaches from the underlying cortex (Charras and Paluch, 2008), instead they resemble membrane movements driven by rapid assembly of filamentous actin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on morphological observations and comparison to known characteristics of blebs, with citation to Charras and Paluch, 2008.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "0f55e31e-e17a-441b-96fb-cb99d045bb04",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C88",
+      "claim": "Leading-edge sheets and rosettes are filled with dense actin networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Using confocal microscopy of fixed cells labeled with phalloidin, we verified that leading-edge sheets and rosettes are filled with dense actin networks (Figure 2\u2014figure supplement 1 and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by confocal microscopy data of phalloidin-stained cells shown in Figure 2\u2014figure supplement 1 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "d9ba89a5-6f31-415b-b716-e319c800ccf3",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C89",
+      "claim": "Dynamic sheets and rosettes are readily apparent in surface renderings of three-dimensional lattice light sheet microscopy data, but are not easily identified in two-dimensional projections.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynamic sheets and rosettes are readily apparent in surface renderings of three-dimensional lattice light sheet microscopy data, but are not easily identified in two-dimensional projections (Figure 3\u2014figure supplements 1 and 2), consistent with the failure of conventional light microscopy to identify these structures.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparisons shown in Figure 3\u2014figure supplements 1 and 2 demonstrating the advantage of 3D rendering.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "be827284-d847-4c83-9004-cbd9d601ad1e",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C90",
+      "claim": "Similar lamellar protrusions were observed in fixed Jurkat T cells using scanning electron microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Using scanning electron microscopy, we observed similar lamellar protrusions in fixed Jurkat T cells, another amoeboid cell type that employs fast, low-adhesion crawling through complex environments (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by scanning electron microscopy data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "d3859ece-40dd-44cf-bcf0-5c78a5146c3f",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C91",
+      "claim": "Pseudopodial sheets sometimes travel across the dorsal surface of the cell, from front to back or side to side.",
+      "claim_type": "EXPLICIT",
+      "source": "Lamellar pseudopods were not limited to the plane of the coverslip and, in three-dimensional movies, we observed many pseudopodial sheets travelling across the dorsal surface of the cell, from front to back (Figure 2A and Video 1) or side to side (Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on observations from time-lapse lattice light sheet microscopy shown in Figure 2A and Videos 1-2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "cf99ca43-f54a-44a8-a4e6-cbce3ef5bf1a",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "claim_id": "C92",
+      "claim": "Most pseudopodial sheets emerged from the cell body and projected directly into the liquid medium without ever contacting the surface of the coverslip.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, most pseudopodial sheets emerged from the cell body and projected directly into the liquid medium without ever contacting the surface of the coverslip (Videos 3 and 4 and time overlay in Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on observations from time-lapse imaging shown in Videos 3 and 4 and Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "39943de3-36ec-40ed-ae22-d59400620b82",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Lattice light sheet microscopy (LLSm) provides high spatial resolution (~230 nm XY, ~370 nm Z), high temporal resolution (1.3 s intervals), and low phototoxicity for 3D imaging of living cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C16, and C75 collectively establish the technical capabilities of LLSm. The resolution specifications are supported by citation to Chen et al., 2014, and the temporal resolution and lack of phototoxicity are demonstrated through the experimental data collection parameters described in the methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "056cae6e-4847-4383-a0ec-c538c768329d",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The utrophin-based actin probe selectively labels cortical actin while being excluded from dynamic pseudopod actin networks, enabling automated pseudopod detection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C19, and C74 establish the specificity of the utrophin probe. The preferential binding to cortical actin is supported by citation to Belin et al., 2014, and exclusion from pseudopods is demonstrated in Figure 1B. The utility for automated detection is shown in Figure 6A.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "30484b9d-9d8a-4192-87be-56d442ea4e4f",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "HL-60 cell pseudopods contain dense polymerized actin networks as visualized by phalloidin staining in fixed cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C88 are supported by confocal microscopy data of phalloidin-stained fixed cells shown in Figure 2\u2014figure supplement 1 and Figure 3\u2014figure supplement 1, providing direct evidence of actin content in pseudopods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "da4a6c98-c844-44af-908d-06790b8bd144",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Three-dimensional pseudopods are composed of thin (430-800 nm), flat lamellar sheets that can exist as isolated structures or interleave to form rosette structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C17, C41, C42, and C78-C81 establish pseudopod morphology through convergent measurements from multiple imaging modalities (LLSm, confocal, SEM). The thickness measurements are consistent across techniques (505-780 nm), and the lamellar and rosette morphologies are clearly demonstrated in Figures 2 and 3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "cab36df5-75bd-44d1-8ddb-0b1761319f56",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Lamellar pseudopods maintain their flat morphology independent of external surface contact, as demonstrated by free-standing sheets in 3D collagen matrices and sheets projecting into liquid medium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C18, C43, C45, and C92 demonstrate that pseudopod flatness is intrinsic rather than templated by surfaces. Figure 2D shows similar flatness in 2D and 3D environments, and Videos 3-4 show free-standing sheets. This is a key finding that distinguishes these structures from adherent lamellipodia.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "8e1f1373-e02a-4f42-a576-8298dfb88168",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Pseudopods are Arp2/3-dependent structures that disappear upon CK-666 treatment, with pseudopod volume decreasing by 40% and formation rate dropping from 1.9 to 0.8 pseudopods/min.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C21, C34, C35, and C73 establish Arp2/3 dependence through pharmacological inhibition. Figure 4B and Videos 11-12 show loss of lamellar pseudopods, and quantitative analysis in Figure 6\u2014figure supplement 1C demonstrates the 40% volume reduction. The formation rate data is based on manual counting from time-lapse sequences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "7852915e-157b-4232-af5c-b362842b74a4",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Sheet and rosette pseudopods share common structural and dynamic properties: similar thickness (690\u00b120 nm), ~60 s lifespan independent of environment, constant thickness during lifetime, and ~75% collapse into filopodia-like structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 and C76 establish that sheets and rosettes are variants of the same structural motif. Thickness measurements (Figure 3B), lifespan data (Figure 3\u2014figure supplement 4), and collapse behavior (Figure 3E, Video 1) provide strong evidence. The independence from mechanical support is inferred from similar lifespans in 2D vs 3D.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "d8294f20-0774-43cd-a32a-c91ecf93a6d3",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Lamellar pseudopods initiate as linear ridges on the plasma membrane and grow at 11.9\u00b15.4 \u00b5m/min while maintaining a linear distal edge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 describe pseudopod formation dynamics based on time-lapse imaging shown in Figure 3C. The growth rate is quantified from n=4 measurements. However, the small sample size (n=4) for the growth rate measurement is a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "df1e7226-c3f2-40f6-a400-d03729b42cc9",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "WAVE complex forms linear arcs that co-localize with moving lines of close cell-coverslip contact, suggesting that TIRF 'waves' represent edges of lamellar sheets pressed against the coverslip.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33 integrate prior TIRF observations (Weiner et al., 2007) with new RICM data. Figure 5 and Video 13 show co-localization of WAVE complex with regions of close contact. Claim C30 is an inference connecting these observations to the lamellar structure, which is reasonable but not directly proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "d67f3f2b-2ca9-4404-84f8-b092381fa9f3",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Arp2/3-dependent pseudopods are dispensable for 3D migration, as CK-666 treated cells retain motility but move more slowly (5.42 vs 8.57 \u00b5m/min).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C36, C37, and C62 demonstrate that pseudopods are not absolutely required for migration. CK-666 treated cells continue to migrate through collagen (Videos 11-12), though more slowly (Figure 6E). The speed reduction is statistically significant (p=0.024).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "48bbff88-1f04-441a-8df9-11fee0ba992b",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Elimination of Arp2/3-dependent pseudopods dramatically reduces cell turning frequency by 2-3 fold (from 2.73-3.41 to 1.09-1.15 turns/min depending on method).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C38, and C64 establish the role of pseudopods in directional changes. Two independent quantification methods (Figure 6D-F and Figure 6\u2014figure supplement 1A-B) show consistent 2-3 fold reductions in turning frequency, providing robust evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "d5f24ece-fe22-4955-b663-6c156f3d3c52",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Pseudopod dynamics increase dramatically when cells change direction, with size and number of protrusions correlating with turning events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C39, and C63 establish the correlation between pseudopod activity and turning. Figure 6B visualizes this relationship by overlaying pseudopod dynamics on cell trajectories. However, correlation does not establish causation, and the temporal relationship could be examined more rigorously.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "43e3c75c-1f5e-46f5-a7cb-8acac75cb2d3",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Control cells build pseudopods preferentially in the direction of motion, while CK-666 treated cells show more uniform pseudopod distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C40 is supported by directional analysis shown in Figure 6\u2014figure supplement 2A-B. This suggests pseudopods play a role in directional sensing or steering, though the mechanism is not explored.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "87389302-6437-4fc1-924a-2c237b7f496d",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Similar lamellar and rosette structures have been observed in multiple cell types including neutrophils, T cells, dendritic cells, monocytes, and Dictyostelium, as documented in published electron micrographs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44 and C90 are supported by citations to multiple published studies and new SEM data of Jurkat T cells (Figure 3\u2014figure supplement 3). This suggests the lamellar pseudopod architecture may be a general feature of fast-moving amoeboid cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "914a24b3-fb1b-4a62-ba16-00620f8b13fd",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Complex three-dimensional pseudopods can be resolved into lamellar components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C46 is supported by observations that rosette pseudopods are composed of multiple interleaved lamellar sheets (Figures 3, Videos 7-10). This represents a key conceptual advance in understanding pseudopod architecture.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "bd39e81c-9c61-468f-ab92-ed975cdbabf7",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Free-standing pseudopodial sheets are thicker (430-800 nm vs <200 nm) and grow faster than attached lamellipodia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47 and C48 compare pseudopods to lamellipodia based on measurements and citations to Abercrombie et al., 1971 and Ingram, 1969. The thickness comparison is well-supported, though the growth rate comparison relies on historical literature and may not reflect identical experimental conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "8be8887f-0223-4baa-83b1-9e0d54fbf8b8",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The dimensionality of actin network protrusions is determined by the dimensionality of Arp2/3 activator organization: point sources (0D) generate filopodia (1D), line sources (1D) generate lamellar sheets (2D), and area sources (2D) generate 3D structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C49-C56 propose a model based on in vitro reconstitution studies (C50-C52) and generalize to a dimensional rule (C53-C55). While the in vitro evidence is cited, the generalization (C53) and application to pseudopods (C56) are speculative. The model is plausible and supported by analogy, but lacks direct experimental validation in cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "e9883da0-dec3-4f91-86cd-54fa3d02a1df",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "WASP and WAVE form dynamic linear arcs at the cell surface, while upstream regulators like Rac show diffuse patterns; multiple linear activation zones are proposed to generate multiple lamellar pseudopods that form rosettes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57 and C58 are supported by citations to Weiner et al., 2007, Fritz-Laylin et al., 2017, and Yang et al., 2016. Claim C59 is a proposed model connecting linear WAVE organization to rosette formation, which is reasonable but speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "3b527014-aec3-42eb-b776-101230d747ff",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Different patterns of Arp2/3 activator organization correlate with different protrusion morphologies: circular WAVE patterns produce cylindrical cups (macropinocytosis), single stable lines produce single lamellae, and multiple dynamic lines produce rosettes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60 and C61 are supported by citations to Veltman et al., 2016, Kunda et al., 2003, and Gautier et al., 2011. This comparative analysis across cell types strengthens the dimensional organization model, though it remains correlative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "589fba20-45c6-4a9e-b1b8-5b902c64febe",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Studies in dendritic cells show that reducing WAVE/Arp2/3 activity abolishes pseudopods, accelerates migration in simple environments, but impairs reorientation in gradients and navigation in complex environments, supporting a role for pseudopods in pathfinding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 accurately cite findings from Leithner et al., 2016 and Vargas et al., 2016. Claim C68 integrates these findings with the authors' data to propose a pathfinding role, which is a reasonable inference supported by the correlation between pseudopod dynamics and turning.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "bf99550d-965c-4a45-982e-b5828e7a3023",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Lamellar pseudopods may be more efficient than blebs or filopodia for environmental exploration because sheets can sweep large volumes while maintaining surface contact.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C69 and C70 are explicitly speculative geometric arguments about functional advantages. While the geometric reasoning is sound, there is no experimental evidence testing these hypotheses. This represents interesting speculation for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "38b8a067-810b-4596-bd33-eca79b224110",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "UCSF Chimera with ambient occlusion rendering enables superior visualization and interpretation of 3D cellular structures compared to traditional maximum intensity projections, revealing pseudopod morphology not apparent in 2D projections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71, C84, C85, and C89 describe the visualization methodology. The superiority of 3D rendering is demonstrated by direct comparisons in Figure 3\u2014figure supplements 1 and 2. This represents an important methodological contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "7cc1fc72-e3fe-4e6a-9e27-f7a2ab72b772",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Loss of Arp2/3 activity dramatically reduced HL-60 cell adhesion to fibronectin-coated coverslips.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C72 is based on observations that necessitated limiting analysis to 3D collagen matrices. While not quantified, this observation is consistent with known roles of Arp2/3 in adhesion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "549b5d97-0b0d-40da-ab28-6e4a63de52bf",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Lamellar pseudopods are not perfectly flat and exhibit varying degrees of pucker and undulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 is based on 3D imaging observations and is consistent with the flatness measurements in Figure 2D showing some variability. This qualifies the 'flat sheet' description appropriately.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "b5959b8c-3dab-4c2a-91cd-6c1d9c38eacf",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "In uniform chemoattractant fields, both lamellar and rosette pseudopods are highly dynamic and ephemeral.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 is supported by time-lapse observations in Figure 4A showing rapid pseudopod turnover. The ~60 s lifespan (C23) quantifies this dynamic behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "93f12248-6864-4406-8c9b-9b4c6b9d43a3",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "HL-60 cells produce two types of dynamic membrane protrusions\u2014lamellar sheets and rosettes\u2014that differ morphologically from spherical blebs and resemble actin-driven structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86 and C87 are supported by observations in Figures 2-3 and comparison to known bleb morphology (citation to Charras and Paluch, 2008). The actin content is confirmed by phalloidin staining.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "c63cde31-63a9-41bb-b502-99da110741e4",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "Pseudopodial sheets travel across the dorsal cell surface from front to back or side to side.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C91 is supported by 3D time-lapse imaging shown in Figure 2A and Videos 1-2. This demonstrates that pseudopods are not restricted to the ventral surface.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "6519f5e7-216c-4eee-be5e-0b9124aea6e9",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R28",
+      "result_category": "llm",
+      "result": "Lamellar pseudopods have similar profiles whether cells crawl on glass or through collagen matrices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C77 is supported by imaging data in Figure 2C comparing pseudopods in different environments. This reinforces that pseudopod morphology is intrinsic.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    },
+    {
+      "id": "f7ea33ce-013c-4f16-845b-88e13f38b88b",
+      "content_id": "7afe169a-9c15-4ccd-a5de-5ea937f836ca",
+      "result_id": "R29",
+      "result_category": "llm",
+      "result": "Background on cell migration modes: adhesion-based migration (restricted to animals, driven by Arp2/3-dependent lamellipodia) versus fast adhesion-independent migration (ancestral, several orders of magnitude faster, associated with complex 3D pseudopods that may function more in exploration than propulsion).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C15 provide background context supported by appropriate citations. Claim C15 is an inference from prior work (Leithner et al., 2016; Vargas et al., 2016) that motivates the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:18:30.954531Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a94a87ea-5c18-4ffb-a9f3-c623f67b28e9",
+      "result_id": "39943de3-36ec-40ed-ae22-d59400620b82"
+    },
+    {
+      "claim_id": "aa14a478-4ac0-43ea-b39a-4d301cfe22c7",
+      "result_id": "39943de3-36ec-40ed-ae22-d59400620b82"
+    },
+    {
+      "claim_id": "a2b1ae68-822f-4daa-9082-e0f8abf62293",
+      "result_id": "39943de3-36ec-40ed-ae22-d59400620b82"
+    },
+    {
+      "claim_id": "94f2d5dd-5953-41a8-a00c-bcc87aec8db5",
+      "result_id": "056cae6e-4847-4383-a0ec-c538c768329d"
+    },
+    {
+      "claim_id": "5be6fb94-bdaa-43d6-808c-59c48e8436d2",
+      "result_id": "056cae6e-4847-4383-a0ec-c538c768329d"
+    },
+    {
+      "claim_id": "523c9f9c-1997-46fc-94ab-f60520bd1152",
+      "result_id": "056cae6e-4847-4383-a0ec-c538c768329d"
+    },
+    {
+      "claim_id": "ecbf6f72-f87a-498a-8074-75e04ee2d64d",
+      "result_id": "056cae6e-4847-4383-a0ec-c538c768329d"
+    },
+    {
+      "claim_id": "35a6c0ba-6a13-4fca-a258-054dfc376b82",
+      "result_id": "30484b9d-9d8a-4192-87be-56d442ea4e4f"
+    },
+    {
+      "claim_id": "0f55e31e-e17a-441b-96fb-cb99d045bb04",
+      "result_id": "30484b9d-9d8a-4192-87be-56d442ea4e4f"
+    },
+    {
+      "claim_id": "536d2370-1bfc-4bb7-8381-13701e5a2ac5",
+      "result_id": "da4a6c98-c844-44af-908d-06790b8bd144"
+    },
+    {
+      "claim_id": "4283b733-a0a5-4ab5-aaf0-ba28bd007eb7",
+      "result_id": "da4a6c98-c844-44af-908d-06790b8bd144"
+    },
+    {
+      "claim_id": "8e19ae38-2eb9-4ac5-99f4-272354a1a6ce",
+      "result_id": "da4a6c98-c844-44af-908d-06790b8bd144"
+    },
+    {
+      "claim_id": "6f24c6a5-5256-40bb-89b8-5026c5fddab8",
+      "result_id": "da4a6c98-c844-44af-908d-06790b8bd144"
+    },
+    {
+      "claim_id": "77e76957-e076-4951-aa69-79321bc604c8",
+      "result_id": "da4a6c98-c844-44af-908d-06790b8bd144"
+    },
+    {
+      "claim_id": "c6990434-dae5-4034-bd73-49392619c075",
+      "result_id": "da4a6c98-c844-44af-908d-06790b8bd144"
+    },
+    {
+      "claim_id": "1dba8036-1f59-4df6-a3c8-fdb5c3ea4d3e",
+      "result_id": "da4a6c98-c844-44af-908d-06790b8bd144"
+    },
+    {
+      "claim_id": "9f09fa1e-c3aa-475c-8982-0986ea2d0c29",
+      "result_id": "da4a6c98-c844-44af-908d-06790b8bd144"
+    },
+    {
+      "claim_id": "4f0fe69e-63ea-446d-83c0-dfcec7e1d9a4",
+      "result_id": "cab36df5-75bd-44d1-8ddb-0b1761319f56"
+    },
+    {
+      "claim_id": "4a2c27b8-8d6e-4f2e-ba10-b143ffe656ed",
+      "result_id": "cab36df5-75bd-44d1-8ddb-0b1761319f56"
+    },
+    {
+      "claim_id": "519c8ba1-a40d-47f9-8d35-0908a9b67e2f",
+      "result_id": "cab36df5-75bd-44d1-8ddb-0b1761319f56"
+    },
+    {
+      "claim_id": "39471341-1499-4ed2-a3ac-2b689603bf6a",
+      "result_id": "cab36df5-75bd-44d1-8ddb-0b1761319f56"
+    },
+    {
+      "claim_id": "cf99ca43-f54a-44a8-a4e6-cbce3ef5bf1a",
+      "result_id": "cab36df5-75bd-44d1-8ddb-0b1761319f56"
+    },
+    {
+      "claim_id": "fad1478c-f195-4745-99c1-96e54d26609d",
+      "result_id": "8e1f1373-e02a-4f42-a576-8298dfb88168"
+    },
+    {
+      "claim_id": "bfb2f50b-14ea-4efb-a2ae-ba01e500548e",
+      "result_id": "8e1f1373-e02a-4f42-a576-8298dfb88168"
+    },
+    {
+      "claim_id": "2e1ab889-e877-4c8d-b032-800bc59b98eb",
+      "result_id": "8e1f1373-e02a-4f42-a576-8298dfb88168"
+    },
+    {
+      "claim_id": "d6ab3583-c8a5-45fb-ae6c-04930c5e4f0c",
+      "result_id": "8e1f1373-e02a-4f42-a576-8298dfb88168"
+    },
+    {
+      "claim_id": "5cbddeb6-1ebc-4f64-8b75-7339b22f2c53",
+      "result_id": "8e1f1373-e02a-4f42-a576-8298dfb88168"
+    },
+    {
+      "claim_id": "03da9ad3-22b9-4c07-9f06-0cd6deeaad08",
+      "result_id": "7852915e-157b-4232-af5c-b362842b74a4"
+    },
+    {
+      "claim_id": "3ca6df87-f5f3-4e81-8433-e6046022fe77",
+      "result_id": "7852915e-157b-4232-af5c-b362842b74a4"
+    },
+    {
+      "claim_id": "550fffa6-593e-4e3f-bd57-c343e8c48963",
+      "result_id": "7852915e-157b-4232-af5c-b362842b74a4"
+    },
+    {
+      "claim_id": "d58608ec-2943-4a7f-9eb7-0b2091f5010c",
+      "result_id": "7852915e-157b-4232-af5c-b362842b74a4"
+    },
+    {
+      "claim_id": "39f8028d-86b3-4c62-a8a8-37a19a823999",
+      "result_id": "7852915e-157b-4232-af5c-b362842b74a4"
+    },
+    {
+      "claim_id": "770ebebd-1ac5-4916-80e3-b299ce04eedd",
+      "result_id": "d8294f20-0774-43cd-a32a-c91ecf93a6d3"
+    },
+    {
+      "claim_id": "4d9cce6e-26ca-4d55-866b-9b70e05b2264",
+      "result_id": "d8294f20-0774-43cd-a32a-c91ecf93a6d3"
+    },
+    {
+      "claim_id": "323d9f87-b903-4918-bf51-0555a632737f",
+      "result_id": "d8294f20-0774-43cd-a32a-c91ecf93a6d3"
+    },
+    {
+      "claim_id": "b66708b4-ce1b-4728-940e-60325e236a7e",
+      "result_id": "df1e7226-c3f2-40f6-a400-d03729b42cc9"
+    },
+    {
+      "claim_id": "36baf895-92c7-4ea1-aaf1-2652b2f136f7",
+      "result_id": "df1e7226-c3f2-40f6-a400-d03729b42cc9"
+    },
+    {
+      "claim_id": "af73a039-0946-4aa7-93c9-f587ea190c07",
+      "result_id": "df1e7226-c3f2-40f6-a400-d03729b42cc9"
+    },
+    {
+      "claim_id": "a1d8f505-35ab-452f-82e1-470db22ad7ca",
+      "result_id": "df1e7226-c3f2-40f6-a400-d03729b42cc9"
+    },
+    {
+      "claim_id": "c5f35fc1-54eb-46e9-bb03-855daaefa455",
+      "result_id": "df1e7226-c3f2-40f6-a400-d03729b42cc9"
+    },
+    {
+      "claim_id": "697073b5-8e75-49c0-87a8-fcbec3ebffe9",
+      "result_id": "d67f3f2b-2ca9-4404-84f8-b092381fa9f3"
+    },
+    {
+      "claim_id": "dd3855dc-7183-47dc-b5b9-c4199716f249",
+      "result_id": "d67f3f2b-2ca9-4404-84f8-b092381fa9f3"
+    },
+    {
+      "claim_id": "3b1d7d19-e951-465f-8870-9f332df94289",
+      "result_id": "d67f3f2b-2ca9-4404-84f8-b092381fa9f3"
+    },
+    {
+      "claim_id": "52681ccf-eaf8-410f-8243-6f05de198d9c",
+      "result_id": "d67f3f2b-2ca9-4404-84f8-b092381fa9f3"
+    },
+    {
+      "claim_id": "e7c3ccd2-74d7-4e24-9065-f1be161a0b79",
+      "result_id": "48bbff88-1f04-441a-8df9-11fee0ba992b"
+    },
+    {
+      "claim_id": "519d4b3d-a70f-4713-b465-107e63f13d73",
+      "result_id": "48bbff88-1f04-441a-8df9-11fee0ba992b"
+    },
+    {
+      "claim_id": "03871810-f5f1-4379-a10a-e8c79d9e6714",
+      "result_id": "48bbff88-1f04-441a-8df9-11fee0ba992b"
+    },
+    {
+      "claim_id": "2b0638bd-b93b-4a9e-a001-14594a0f4df7",
+      "result_id": "d5f24ece-fe22-4955-b663-6c156f3d3c52"
+    },
+    {
+      "claim_id": "9b21a6fb-e817-4687-afe0-6bcb13f949cf",
+      "result_id": "d5f24ece-fe22-4955-b663-6c156f3d3c52"
+    },
+    {
+      "claim_id": "1a0a6393-9cba-48c0-8011-c1bdc50b8910",
+      "result_id": "d5f24ece-fe22-4955-b663-6c156f3d3c52"
+    },
+    {
+      "claim_id": "69a43f1f-a227-49d5-9384-ac775512067a",
+      "result_id": "43e3c75c-1f5e-46f5-a7cb-8acac75cb2d3"
+    },
+    {
+      "claim_id": "316beaf1-4edd-4345-8d44-9257c70f3d2b",
+      "result_id": "87389302-6437-4fc1-924a-2c237b7f496d"
+    },
+    {
+      "claim_id": "be827284-d847-4c83-9004-cbd9d601ad1e",
+      "result_id": "87389302-6437-4fc1-924a-2c237b7f496d"
+    },
+    {
+      "claim_id": "7db646f1-c395-4fd3-baf4-3c236c933f52",
+      "result_id": "914a24b3-fb1b-4a62-ba16-00620f8b13fd"
+    },
+    {
+      "claim_id": "c73f64a7-9639-488b-b644-69867b405e25",
+      "result_id": "bd39e81c-9c61-468f-ab92-ed975cdbabf7"
+    },
+    {
+      "claim_id": "848c07a8-4831-4579-b960-d635aa59ea4b",
+      "result_id": "bd39e81c-9c61-468f-ab92-ed975cdbabf7"
+    },
+    {
+      "claim_id": "e3d0cb18-2424-4d44-9c31-28a3cdc80c4b",
+      "result_id": "8be8887f-0223-4baa-83b1-9e0d54fbf8b8"
+    },
+    {
+      "claim_id": "2128fc47-11df-4b55-95d2-9fb4e0274700",
+      "result_id": "8be8887f-0223-4baa-83b1-9e0d54fbf8b8"
+    },
+    {
+      "claim_id": "022d99a6-89cb-4b49-a317-068ad9228552",
+      "result_id": "8be8887f-0223-4baa-83b1-9e0d54fbf8b8"
+    },
+    {
+      "claim_id": "26990eb2-21b8-49e9-bce2-5a2339e864f2",
+      "result_id": "8be8887f-0223-4baa-83b1-9e0d54fbf8b8"
+    },
+    {
+      "claim_id": "ab980277-f2ef-4c0b-b37f-1086dbb045f6",
+      "result_id": "8be8887f-0223-4baa-83b1-9e0d54fbf8b8"
+    },
+    {
+      "claim_id": "97ad8691-d80c-4f15-a0e1-95252febd957",
+      "result_id": "8be8887f-0223-4baa-83b1-9e0d54fbf8b8"
+    },
+    {
+      "claim_id": "7ce9c4fc-5508-4c5a-8dfa-aa22273c7f4f",
+      "result_id": "8be8887f-0223-4baa-83b1-9e0d54fbf8b8"
+    },
+    {
+      "claim_id": "1f163a3c-0718-44a9-b572-d957450e1c14",
+      "result_id": "8be8887f-0223-4baa-83b1-9e0d54fbf8b8"
+    },
+    {
+      "claim_id": "ba2e5720-a5ad-4025-991a-42f9e441cebc",
+      "result_id": "e9883da0-dec3-4f91-86cd-54fa3d02a1df"
+    },
+    {
+      "claim_id": "782d712d-9070-454c-8cb6-03a013e118cc",
+      "result_id": "e9883da0-dec3-4f91-86cd-54fa3d02a1df"
+    },
+    {
+      "claim_id": "8ef61272-e3e1-43fe-82d9-92e5c2240ecf",
+      "result_id": "e9883da0-dec3-4f91-86cd-54fa3d02a1df"
+    },
+    {
+      "claim_id": "8612e623-2a57-4ed2-a010-16523bead740",
+      "result_id": "3b527014-aec3-42eb-b776-101230d747ff"
+    },
+    {
+      "claim_id": "4cb3e421-1ffd-4a65-a6d3-ea5e7784d2a5",
+      "result_id": "3b527014-aec3-42eb-b776-101230d747ff"
+    },
+    {
+      "claim_id": "d0b70503-f174-427d-888a-72290d8d728c",
+      "result_id": "589fba20-45c6-4a9e-b1b8-5b902c64febe"
+    },
+    {
+      "claim_id": "2427f291-74c1-46fd-a4e9-d379e7b56029",
+      "result_id": "589fba20-45c6-4a9e-b1b8-5b902c64febe"
+    },
+    {
+      "claim_id": "627c598d-d896-4993-b907-c723d2d02c2f",
+      "result_id": "589fba20-45c6-4a9e-b1b8-5b902c64febe"
+    },
+    {
+      "claim_id": "d9921835-515a-4455-95ff-dc0646556828",
+      "result_id": "589fba20-45c6-4a9e-b1b8-5b902c64febe"
+    },
+    {
+      "claim_id": "6b3a4447-9cba-4400-a4cb-830103fafcf4",
+      "result_id": "bf99550d-965c-4a45-982e-b5828e7a3023"
+    },
+    {
+      "claim_id": "3f57473e-6c8b-4691-b0bf-f2178c746907",
+      "result_id": "bf99550d-965c-4a45-982e-b5828e7a3023"
+    },
+    {
+      "claim_id": "3176f296-a017-444c-a890-c7df6a63e586",
+      "result_id": "38b8a067-810b-4596-bd33-eca79b224110"
+    },
+    {
+      "claim_id": "8a2a1aa5-4e5d-4089-bb95-bc724179fd7d",
+      "result_id": "38b8a067-810b-4596-bd33-eca79b224110"
+    },
+    {
+      "claim_id": "e335275f-1a89-4afc-92d0-c3512ef63a12",
+      "result_id": "38b8a067-810b-4596-bd33-eca79b224110"
+    },
+    {
+      "claim_id": "d9ba89a5-6f31-415b-b716-e319c800ccf3",
+      "result_id": "38b8a067-810b-4596-bd33-eca79b224110"
+    },
+    {
+      "claim_id": "3e2cc28d-9e46-47ca-a027-c61128af2a7e",
+      "result_id": "7cc1fc72-e3fe-4e6a-9e27-f7a2ab72b772"
+    },
+    {
+      "claim_id": "b13b6cc2-77bb-41b2-8534-cf2c90d357d4",
+      "result_id": "549b5d97-0b0d-40da-ab28-6e4a63de52bf"
+    },
+    {
+      "claim_id": "4168324a-14cc-4fca-b918-dcbba9dc0501",
+      "result_id": "b5959b8c-3dab-4c2a-91cd-6c1d9c38eacf"
+    },
+    {
+      "claim_id": "5563bea9-304f-4eae-a74f-acfa633d9b2c",
+      "result_id": "93f12248-6864-4406-8c9b-9b4c6b9d43a3"
+    },
+    {
+      "claim_id": "9b15120a-f0a4-4ee6-b948-97769bf7bb4c",
+      "result_id": "93f12248-6864-4406-8c9b-9b4c6b9d43a3"
+    },
+    {
+      "claim_id": "d3859ece-40dd-44cf-bcf0-5c78a5146c3f",
+      "result_id": "c63cde31-63a9-41bb-b502-99da110741e4"
+    },
+    {
+      "claim_id": "019506e8-3167-447a-8a7b-74eb248db764",
+      "result_id": "6519f5e7-216c-4eee-be5e-0b9124aea6e9"
+    },
+    {
+      "claim_id": "6e4ad37e-cb51-44ab-a453-c76d9e354528",
+      "result_id": "f7ea33ce-013c-4f16-845b-88e13f38b88b"
+    },
+    {
+      "claim_id": "9a007d8d-0f93-43d5-b673-bef9c3abd6e6",
+      "result_id": "f7ea33ce-013c-4f16-845b-88e13f38b88b"
+    },
+    {
+      "claim_id": "f10b6be6-5359-41f2-98d9-0e4e8f92fac9",
+      "result_id": "f7ea33ce-013c-4f16-845b-88e13f38b88b"
+    },
+    {
+      "claim_id": "6ec8ee78-a1b2-4226-bc55-e67a64db3234",
+      "result_id": "f7ea33ce-013c-4f16-845b-88e13f38b88b"
+    },
+    {
+      "claim_id": "0cfd1816-a125-486a-857c-a00d833201d8",
+      "result_id": "f7ea33ce-013c-4f16-845b-88e13f38b88b"
+    },
+    {
+      "claim_id": "a0406b8e-9374-4882-b61c-0786cb9e07af",
+      "result_id": "f7ea33ce-013c-4f16-845b-88e13f38b88b"
+    }
+  ],
+  "comparisons": []
+}

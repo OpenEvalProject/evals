@@ -1,0 +1,371 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C17"
+    ],
+    "result": "CD28- CD4 T cells from CMV-seropositive individuals exhibit cytotoxic characteristics comparable to CD27- CD8 T cells, including high PRF1 expression, perforin-dependent cytotoxic activity, and lack of CD8\u03b2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide converging evidence from flow cytometry (C1-C4), qPCR (C5), cytotoxicity assays (C6-C8), and pharmacological inhibition (C7) that CD28- CD4 T cells are cytotoxic. The data are internally consistent and supported by appropriate controls including Concanamycin A treatment. Claim C17 appropriately summarizes these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "PRF1 gene expression inversely correlates with promoter DNA methylation, with complete hypomethylation in CD28- CD4 and CD27- CD8 T cells, and partial hypomethylation at specific CpG sites in naive T cells suggesting transcriptional poising.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C16 are supported by bisulfite sequencing data (Figure 1g) showing clear methylation patterns across different cell types and CpG regions. The inference of transcriptional poising (C16) is reasonable given the partial hypomethylation in naive cells, though this interpretation could benefit from additional functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "CD4CTX T cells exhibit a transcriptional program enriched in CD8 T cell lineage genes, including RUNX3, TBX21, and EOMES, and cluster more closely with CD8CTX than with naive CD4 T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 are supported by unsupervised clustering (Figure 2a-b) and GSEA analyses (Figure 2c) showing enrichment of CD8 lineage genes in CD4CTX cells. The identification of specific transcription factors (C22) is supported by expression data. Claim C23 appropriately cites prior literature for the known functions of these factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C51"
+    ],
+    "result": "CD4CTX T cells maintain high ThPOK expression despite acquiring CD8 lineage gene programs, contrasting with mouse intestinal CD4 T cells where ThPOK is downregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 are supported by both mRNA (Figure 2d) and protein (Figure 2e) expression data showing maintained or increased ThPOK in CD4CTX cells. The contrast with mouse data (C26) is appropriately cited. This represents a key species difference and is well-documented. Claim C51 appropriately summarizes this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C50"
+    ],
+    "result": "Acquisition of cytotoxic function involves extensive DNA hypomethylation at promoter regions of upregulated genes, with distinct epigenetic mechanisms for gene upregulation versus downregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 are supported by genome-wide methylation array data (Figure 2\u2014figure supplement 1) and GSEA analyses (Figure 2f) showing significant enrichment of hypomethylated CpGs in promoters of upregulated genes but not hypermethylated CpGs in downregulated genes. The inference of distinct mechanisms (C37) is reasonable given the asymmetric enrichment patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "RUNX3 and TBX21 promoters show significant hypomethylation in cytotoxic T cells, while EOMES does not, and ZBTB7B promoter methylation distinguishes naive CD4 from CD8 but not cytotoxic subsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 are supported by methylation array data (Figure 2g) showing differential methylation patterns. Claims C45-C48 provide technical details about probe locations that are verifiable from the methods. The lack of EOMES promoter hypomethylation (C42) is notable given its upregulation, suggesting alternative regulatory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Perforin production is associated with Th1 chemokine receptors (CCR5, CXCR3) but not Th2/Th17 receptors, with high perforin protein expression restricted to CD4CTX cells despite low levels in other memory subsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 are supported by flow cytometry data (Figure 3a-c) showing clear associations between perforin and chemokine receptor expression patterns. The distinction between protein and mRNA levels (addressed in subsequent claims) is important for understanding the stepwise acquisition of cytotoxic function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "PRF1, RUNX3, and TBX21 show progressive upregulation from naive to CMTh1 to EM28+Th1 to CD4CTX cells, contrasting with IFNG and EOMES which are already highly expressed at the CMTh1 stage, with this pattern specific to the Th1 lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65 are supported by qPCR data (Figure 3d, Figure 3\u2014figure supplement 1b-c) showing distinct kinetic patterns for different genes. The progressive upregulation pattern for PRF1/RUNX3/TBX21 versus early expression of IFNG/EOMES suggests distinct regulatory programs. Lineage specificity (C65) is demonstrated by comparison with Th2/Th17 cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The PRF1 promoter undergoes progressive demethylation at intermediate CpG sites and shows enrichment of active histone marks (H3K4me3, H3K27ac) in CD4CTX cells, with evidence of an active enhancer 5.5-7.7 kb upstream.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by bisulfite pyrosequencing (Figure 3e) and ChIP-qPCR data (Figure 3f) showing coordinated epigenetic changes. The inference of an active enhancer (C70) from H3K27ac enrichment is reasonable given established chromatin biology, though functional validation would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Single-cell analysis reveals progressive increase in PRF1+ cell proportions and diversification of co-expressed transcription factor networks from CMTh1 to CD4CTX cells, suggesting stepwise acquisition of permissive chromatin and transcription factor networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are supported by single-cell qPCR data (Figure 4a-b) showing both quantitative and qualitative changes in gene expression patterns. The inference of stepwise acquisition (C75-C76) is reasonable given the progressive changes observed, though the mechanistic link between chromatin modifications and TF networks requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "CMTh1 cells represent an intermediate differentiation state between naive and CD4CTX cells, with 693 genes upregulated from naive and 322 additional genes upregulated in CD4CTX, including cytotoxicity-related molecules and transcription factors RUNX3 and EOMES.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C87 are supported by transcriptome analysis (Figure 5a-d) showing clear clustering patterns and differential gene expression. The identification of specific upregulated genes (C84-C85) is data-driven. The technical note about T-bet array sensitivity (C86) appropriately acknowledges a limitation while citing supporting literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Gene upregulation during Th1 differentiation is primarily associated with promoter DNA hypomethylation for both effector molecules and transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are supported by methylation array data (Figure 5\u2014figure supplement 2a, Figure 5e-f) showing consistent patterns of hypomethylation at promoters of upregulated genes. This extends the findings from the naive-to-CD4CTX comparison to the stepwise differentiation pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "In vitro, naive CD4 T cells acquire cytotoxic function specifically under Th1 polarizing conditions with progressive increase in perforin/granzyme B expression from day 7 to 21, and cells represent conventional (not innate-like) T lymphocytes with diverse TCR repertoires.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C102 are supported by comprehensive in vitro differentiation data including flow cytometry (Figure 6b-c), qPCR (Figure 6e), cytotoxicity assays (Figure 6d), TCR sequencing (Figure 6\u2014figure supplement 1a), and PLZF expression (Figure 6\u2014figure supplement 1b). The temporal kinetics and lineage specificity are well-documented. The characterization as conventional T cells (C96) is appropriately inferred from low PLZF expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Transcription factor expression patterns during in vitro Th1 differentiation show TBX21 and HOPX are Th1-specific, RUNX3 and ZBTB7B are upregulated in all conditions but highest in Th1, EOMES is induced in both Th1 and Th2 (suggesting insufficiency for cytotoxicity), and ZNF683 is not detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108 are supported by qPCR (Figure 6e) and flow cytometry data (Figure 6f) showing distinct expression patterns. The inference that EOMES is insufficient for cytotoxicity (C106) is reasonable given its expression in non-cytotoxic Th2 cells, though this is correlative rather than mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "shRNA knockdown experiments demonstrate that Runx3 is the primary regulator of perforin and granzyme B expression and cytotoxic activity, with T-bet playing a supporting role, while Hopx affects only GZMB, Eomes has no significant effect, and transcription factors show hierarchical interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C119 are supported by comprehensive shRNA knockdown data (Figure 7b-e, Figure 7\u2014figure supplement 1) showing differential effects on gene expression and cytotoxic function. The hierarchical relationships (C116-C117) are demonstrated by knockdown effects on other TFs. However, incomplete knockdown (noted in methods) may underestimate the importance of some factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "ThPOK acts as a negative regulator of the cytotoxic program in CD4 T cells, with knockdown markedly increasing PRF1, GZMB, cytotoxic activity, and expression of other transcription factors and CD8A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 are supported by shRNA knockdown data (Figure 7b-g, Figure 7\u2014figure supplement 1b-c) showing consistent upregulation of cytotoxic genes upon ThPOK knockdown. This represents a key mechanistic finding explaining how CD4 T cells can acquire cytotoxic function while maintaining ThPOK expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "In CD8 T cells, ThPOK is co-expressed with perforin, and its knockdown increases granzyme B but not perforin expression, suggesting ThPOK may limit cytotoxic function in CD8 T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C126 are supported by flow cytometry and knockdown data (Figure 7\u2014figure supplement 2). However, C127 is speculative and based on limited data (granzyme B increase without perforin change). The functional significance in CD8 T cells requires additional validation, and the sample size appears limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The acquisition of cytotoxic function is an integral part of the Th1 linear differentiation pathway, characterized by progressive increase in PRF1+ cells, diversification of transcription factor networks, and increasingly permissive chromatin environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C134 represent appropriate synthesis of the multiple lines of evidence presented throughout the manuscript. The stepwise model is supported by the progressive changes in gene expression, epigenetic modifications, and transcription factor networks. The comparison to established models of CD4 memory development (C133) is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "The accessibility and expression of PRF1 in all Th1 subsets explains the classical observation that memory Th1 cells become perforin-positive upon in vitro expansion, reflecting pre-established chromatin modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C136 appropriately connect the current findings to prior literature and provide a mechanistic explanation for established observations. The inference is reasonable given the demonstrated chromatin accessibility at the PRF1 locus in memory Th1 cells, though direct demonstration of this mechanism would strengthen the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Human Th1 cells acquire cytotoxic functions under the control of Runx3 as the master regulator cooperating with T-bet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C139 appropriately synthesize the knockdown experiments showing Runx3 has the strongest effect on cytotoxic function. The designation as 'master regulator' is supported by the functional data and is consistent with cited literature (Cruz-Guilloty et al., 2009; Jha et al., 2015).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C140",
+      "C141"
+    ],
+    "result": "Runx3 and ThPOK cross-regulate cytotoxic function acquisition in Th1 cells and represent potential therapeutic targets for viral infections, cancer, and autoimmune disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C140 is well-supported by the knockdown experiments showing opposite effects of Runx3 (positive) and ThPOK (negative) on cytotoxic function. However, C141 is speculative regarding therapeutic applications and lacks direct evidence. While the regulatory roles are established, translation to therapeutic interventions requires substantial additional work including in vivo validation and assessment of specificity/safety.",
+    "result_type": "MAJOR"
+  }
+]

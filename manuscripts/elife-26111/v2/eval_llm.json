@@ -1,0 +1,383 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The authors determined the crystal structure of SpoIIE457-827 at 3.9 \u00c5 resolution, which includes the PP2C phosphatase domain and a portion of the regulatory domain. The structure reveals a dimeric assembly mediated by a long \u03b1-helix from the regulatory domain, with the switch helices contacting each other across the dimer interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural data (C38-C44) are well-documented with crystallographic statistics (Table 1), electron density maps (Figure 1\u2014figure supplement 1), and clear description of the dimeric assembly. Despite the modest resolution (3.9 \u00c5), the secondary structure elements are well-defined (C40), and the structure was validated using seleno-methionine derivatized crystals (Table 2). The claims are internally consistent and supported by appropriate crystallographic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C51",
+      "C52",
+      "C63",
+      "C64",
+      "C67",
+      "C68"
+    ],
+    "result": "Comparison of the dimeric SpoIIE457-827 structure with the monomeric SpoIIE590-827 structure reveals that dimerization causes a ~45\u00b0 rotation of the switch helices (\u03b11 and \u03b12) relative to the phosphatase core. In the inactive monomeric state, G629 is not positioned to coordinate the M2 metal, whereas in the dimeric state the loop connecting the switch helices to G629 is ordered and positioned similarly to active PP2C structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural comparison (C36, C51-C52, C63-C64, C67-C68) is well-supported by crystallographic data from two different crystal forms and comparison with related phosphatases (RsbX, Rv1364c, Sthe_0969). The observation that G629 is not positioned to coordinate M2 in the inactive state is supported by the previous finding that the M2 site was unoccupied despite manganese in crystallization conditions (C64). The structural alignment and comparison methodology appears sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Systematic mutagenesis of the dimer interface reveals two functional roles for the long \u03b1-helix: one face mediates dimerization and is required for stabilization, localization, and phosphatase activity, while the other face makes intramolecular contacts with the switch region and is specifically required for phosphatase activity but not stabilization or localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutational analysis (C45-C47) is comprehensive and well-controlled, using both YFP fusions to assess localization/stabilization and \u03c3F-dependent reporters to assess activity. The distinction between mutations affecting all three functions versus only activity (C46-C47) provides strong support for the proposed dual role of the helix. The data are presented in Figure 2 and Figure 2\u2014figure supplement 1 with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The V697A gain-of-function mutation, which causes constitutive \u03c3F activation, is proposed to work by destabilizing the inactive conformation of the switch helices. Structural analysis shows V697 packs in a hydrophobic pocket in the inactive state but N665 from the switch packs near V697 in the active state, suggesting V697A favors the active conformation by promoting solvation of N665. Other gain-of-function mutations map to positions that could affect switch helix positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the structural observations (C51-C52) are clear, the mechanistic explanation (C53-C55) is largely hypothetical and based on inference rather than direct experimental validation. The hypothesis is plausible and supported by the V697F mutation also causing constitutive activity (C56), but lacks direct experimental evidence (e.g., NMR, molecular dynamics, or thermodynamic measurements) to confirm the proposed mechanism. The mapping of other gain-of-function mutations (C57) provides circumstantial support but is not definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C69"
+    ],
+    "result": "The authors propose that rotation of the switch helices activates the phosphatase by repositioning the carbonyl oxygen of G629 to coordinate the M2 manganese ion and complete the active site. G629 is located at the junction between the switch helices and \u03b2 strands, such that switch helix movement could bring G629 into position to recruit M2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proposed mechanism (C69) is well-supported by: (1) the conserved PP2C catalytic mechanism requiring two metal ions (C58-C59), (2) structural prediction based on conserved architecture (C60), (3) the strategic position of G629 at the switch helix junction (C61), (4) the observation that G629 is not positioned to coordinate M2 in the inactive state (C63), and (5) structural comparison with active PP2C phosphatases showing proper G629 positioning in the dimeric structure (C67-C68). The mechanism is consistent with established PP2C catalytic chemistry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Soaking SpoIIE457-827 crystals with manganese degraded diffraction quality, but anomalous difference maps provided evidence for manganese binding in the active site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental observation is clearly documented (C65-C66) with data presented in Figure 3\u2014figure supplement 3A and Table 2. The authors appropriately note the limitation that the low resolution (5.4 \u00c5) prevents determination of the exact number and positions of bound metal ions. This is a straightforward experimental result with appropriate caveats.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "In vitro, high concentrations of manganese drive SpoIIE457-827 dimerization by mass action. SEC-MALLS experiments show that SpoIIE457-827 is monomeric in the absence of manganese but forms dimers upon addition of 250 \u03bcM or 1 mM MnCl2. The L484K mutation blocks dimerization, and the D628A mutation (affecting M2 coordination) partially impairs dimerization, suggesting manganese binding in the active site promotes dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SEC-MALLS data (C72-C73) provide direct biophysical evidence for manganese-induced dimerization. The mutational analysis (C74-C75) provides strong support that dimerization uses the crystallographic interface and that active site manganese binding promotes dimerization. The experiments were performed in triplicate, and the molecular weight calculations are consistent with monomer-to-dimer transitions. The coupling between metal binding and dimerization (C76) is well-supported by the D628A data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "SpoIIE phosphatase activity shows cooperative activation with respect to manganese concentration (Hill coefficient = 2.0, K1/2 = 0.56 mM). This manganese dependence correlates well with the manganese dependence of dimerization, and the Hill coefficient of two indicates at least two manganese ions bind in the active site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phosphatase activity assays (C77) are well-controlled using the native substrate SpoIIAA-P, and the Hill analysis is appropriate for assessing cooperativity. The correlation between activity and dimerization (C78) strengthens the mechanistic model. The interpretation of the Hill coefficient (C79) is reasonable and consistent with the proposed two-metal catalytic mechanism. The experiments were repeated at least three times. The K1/2 values are internally consistent between the main analysis and Hill plot.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The V697A mutation reduces the K1/2 for manganese from 0.56 mM to 0.13 mM and reduces the manganese concentration required for dimer formation, consistent with the hypothesis that this mutation favors the active conformation of the switch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental data (C81-C82) directly test the prediction (C80) and show consistent effects on both activity and dimerization. The ~4-fold reduction in K1/2 is substantial and the parallel effects on dimerization provide strong support for the proposed mechanism. This result validates the structural hypothesis about V697's role in stabilizing the inactive state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The combined structural, genetic, and biochemical evidence supports the conclusion that SpoIIE dimerization is coupled to phosphatase activity through rotation of the switch region and coordination of manganese in the active site, with the switch helices positioning the carbonyl oxygen of G629 to coordinate manganese.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion (C83-C84) is well-supported by the convergence of multiple lines of evidence: crystal structures showing switch helix rotation, mutational analysis demonstrating the functional importance of the dimer interface and switch region, SEC-MALLS showing manganese-induced dimerization, and activity assays showing cooperative manganese dependence. The mechanistic model is internally consistent and explains the available data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C30",
+      "C85",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Analysis of the PP2C phosphatase RsbP from B. subtilis suggests the switch mechanism is conserved. Gain-of-function mutations in RsbP that constitutively activate \u03c3B map to one of the switch helices (\u03b11) and to a regulatory domain helix (\u03b10) that contacts the switch, suggesting RsbP uses the \u03b10 helix to position the switch and control phosphatase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis of RsbP (C88-C92) is based on published gain-of-function mutations and structural comparison with the related phosphatase RssB (since no RsbP structure is available). The mapping of mutations to the switch helix and a helix that contacts the switch (C89-C91) provides strong circumstantial evidence for conservation of the mechanism. The inference that the \u03b10 helix serves as a regulatory module (C92) is reasonable given the mutational data. This supports the broader claim of conservation (C6, C30, C85).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "In human Pdp1, phosphorylation at Y94 (distant from the active site) inhibits activity and is commonly observed in cancer cells. Structural analysis shows Y94 contacts a Pdp1-specific structural element that packs against helices homologous to the SpoIIE switch helices. The authors hypothesize that Y94 phosphorylation would displace this element and shift the switch helices to inhibit activity. The same structural element contains the proposed lipoic acid binding site that activates Pdp1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the structural observations (C96) and the biological significance of Y94 phosphorylation (C94-C95) are well-established by citation, the mechanistic hypothesis (C97) is speculative and lacks direct experimental validation. The proposal that the switch mechanism explains how Pdp1 integrates positive and negative signals (C100) is plausible but remains to be tested. The analysis relies on structural homology and inference rather than direct experimental evidence for Pdp1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "In C. elegans Fem-2, the N-terminal regulatory domain that scaffolds binding of Fem-1 and Fem-3 packs against the equivalent of the switch helices. This direct contact is consistent with the proposed model for regulation through the switch helices, though the mechanism of Fem-2 regulation is not fully understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural observation (C104) is based on published crystal structure data and is clearly documented. The inference that this is consistent with switch-based regulation (C105) is reasonable but appropriately cautious given that the mechanism of Fem-2 regulation is not fully understood. The biological context (C101-C103) is well-established by citations. This provides supporting evidence for conservation of the switch mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "In the plant PP2C phosphatase Hab1, the 'flap' subdomain that contacts the substrate kinase SnRK2 packs against the switch helices. The authors suggest the switch could be influenced by both substrate and regulator binding, and that coupling between substrate binding and switch conformation could be a general feature of PP2C phosphatases that provides a mechanism for substrate specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The structural observations about Hab1 (C107-C108) are based on published structures and are well-documented. However, the hypotheses about switch regulation by substrate/regulator binding (C109-C110) and the generalization to other PP2C phosphatases (C111-C113) are speculative. The observation that the substrate-binding domain in SpoIIE changes conformation upon activation provides some support, but this remains largely hypothetical without direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "RssB is a pseudo-PP2C phosphatase that functions as an adapter protein for ClpXP-mediated degradation of \u03c3S rather than as a phosphatase. Structural and genetic studies show RssB adapter activity is regulated by contacts between the regulatory domain and switch helices mediated by dimerization. The authors hypothesize that for RssB, the switch couples regulatory inputs to substrate binding rather than phosphatase activity, suggesting the switch mechanism can control different outputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization of RssB function (C114-C116) and the structural/genetic evidence for switch-based regulation (C117) are well-supported by citations to published work. The hypothesis that the switch couples to substrate binding rather than catalysis (C118) is reasonable given RssB's function as an adapter protein. This example effectively demonstrates the versatility of the switch mechanism (C119) and provides an important precedent for the evolutionary hypothesis about pseudoenzyme intermediates discussed later.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C122"
+    ],
+    "result": "Based on analysis of multiple PP2C family members (SpoIIE, RsbP, Pdp1, Fem-2, Hab1, RssB), the authors conclude that the switch mechanism is broadly conserved, with diverse regulatory domains docking on the switch helices to couple phosphatase activity to varied regulatory inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion (C122) is well-supported by the analysis of multiple PP2C family members with different regulatory mechanisms. While the evidence varies in strength across different examples (strongest for RsbP and RssB, more speculative for Pdp1 and Hab1), the overall pattern of regulatory domains contacting the switch region is consistent. The conclusion is appropriately broad and acknowledges the diversity of regulatory inputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C11",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The PP2C regulatory switch strongly resembles the allosteric switch in proteasomal proteases. Structural comparison using DALI and ECOD databases shows proteasome proteases are the most structurally similar family to PP2C phosphatases. Both families share a conserved core fold including the switch helices, have active sites in the same structural location, and use the carbonyl oxygen of a conserved glycine at the switch helix junction for catalytic activity, despite using different catalytic mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural similarity (C123-C127) is well-documented using established computational methods (DALI, ECOD) and supported by multiple citations. The observation that both families use a conserved glycine carbonyl for catalysis (C129) despite different mechanisms (C128) is particularly striking. The structural comparison is rigorous and the similarities are clearly documented in Figure 6. This is a major discovery linking two important enzyme families.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "In proteasomal proteases, association with the regulatory cap activates the proteases by rotation of switch helices to position the active site glycine. This mechanism in HslV is remarkably similar to the regulatory mechanism proposed for PP2C phosphatases, with docking of a regulatory module repositioning structurally homologous regions to position the same functional group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The description of proteasome regulation (C130-C131) is well-supported by citations to established literature. The comparison with PP2C regulation (C132) is compelling given the structural similarities documented in the previous result. The parallel mechanisms are clearly illustrated in Video 2 and Figure 6D. This represents a strong case for mechanistic convergence or common ancestry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The switch mechanism is conserved across different proteasome types: in archaeal proteasomes, cap docking displaces switch helices of \u03b1 subunits which reposition switch helices of catalytic \u03b2 subunits; evidence suggests conservation in eukaryotic proteasomes and use by proteasome maturation chaperones; differences in switch flexibility may underlie differences between constitutive and immune proteasomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims about conservation of the switch mechanism in different proteasome types (C133-C137) are well-supported by citations to published structural and functional studies. The evidence spans archaeal, eukaryotic, and specialized proteasomes, as well as maturation chaperones. This demonstrates the broad conservation and functional importance of the switch mechanism in the proteasome family.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C138",
+      "C139"
+    ],
+    "result": "The identification of the PP2C switch demonstrates that PP2C phosphatases and proteasomes use the same allosteric regulatory module, revealing an unexpected link between reversible phosphorylation and regulated proteolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion (C138-C139) is well-supported by the extensive structural and mechanistic comparisons presented. The discovery that two enzyme families with unrelated catalytic mechanisms share the same regulatory module is significant and unexpected. The conclusion appropriately emphasizes the biological significance of linking two fundamental signaling systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Independent structural and sequence analyses suggest PP2C phosphatases and proteasome proteases share common evolutionary ancestry. ECOD database places them in the same 'X-group' consistent with homology; HHPRED detects weak sequence similarity to NTN-hydrolases; the region of sequence similarity maps to the switch helices and associated \u03b2 strands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The evolutionary analysis (C140-C144) uses multiple independent computational approaches (ECOD structural classification, HHPRED sequence analysis) that converge on the same conclusion. The observation that sequence similarity maps specifically to the switch region (C144) is particularly compelling. While the sequence similarity is weak, the combination of structural and sequence evidence provides reasonable support for common ancestry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The authors propose an evolutionary pathway connecting PP2C phosphatases and proteasome proteases through a pseudoenzyme intermediate. Conversion between the catalytic mechanisms would require multiple individually inactivating changes, but a noncatalytic pseudoenzyme retaining the regulatory switch could provide evolutionary pressure to preserve regulation while allowing new chemistry to evolve. RssB exemplifies such a pseudoenzyme, and structural features of RssB suggest a pathway for the topological changes required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This evolutionary hypothesis (C147-C151) is creative and addresses a genuine puzzle about how such different catalytic mechanisms could be evolutionarily connected (C145-C146). The use of RssB as an example of a functional pseudoenzyme (C148) is appropriate. However, this remains highly speculative without additional evidence such as phylogenetic analysis, identification of intermediate forms, or experimental reconstruction of evolutionary transitions. The structural observation about RssB lacking the C-terminal \u03b2 strand (C150) is interesting but insufficient to establish the proposed pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The authors propose that pre-existing allosteric regulatory modules like the PP2C switch facilitated evolution of new enzymatic activities through pseudoenzyme intermediates that are pre-programmed for regulation. This mechanism could explain how pseudoenzymes, which are abundant (e.g., 10% of kinases), may be important for evolutionary potential in addition to current biological functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a broad evolutionary hypothesis (C155) that extends beyond the specific case of PP2C/proteasome evolution. While the general principle that allostery facilitates enzyme evolution is established (C152), and the abundance of pseudoenzymes is documented (C156), the specific proposal about pseudoenzymes as evolutionary intermediates (C155, C157) remains speculative. The hypothesis is intellectually appealing and consistent with the RssB example, but lacks direct experimental or phylogenetic support. This represents an interesting idea for future investigation rather than a well-supported conclusion.",
+    "result_type": "MINOR"
+  }
+]

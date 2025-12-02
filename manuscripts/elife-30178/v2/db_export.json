@@ -1,0 +1,1450 @@
+{
+  "submission": {
+    "id": "dd1b1103-5aa5-4d90-8478-30a78bb9c361",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:33:26.177040Z",
+    "updated_at": "2025-12-01T21:33:26.177040Z"
+  },
+  "content": [
+    {
+      "id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "submission_id": "dd1b1103-5aa5-4d90-8478-30a78bb9c361",
+      "content_type": "manuscript",
+      "content_text": "# Independent manipulation of histone H3 modifications in individual nucleosomes reveals the contributions of sister histones to transcription\n\n## Authors\n\n- Zhen Zhou<sup>1</sup>\n- Yu-Ting Liu<sup>1</sup> ([ORCID: 0000-0001-7501-7980](https://orcid.org/0000-0001-7501-7980))\n- Li Ma<sup>2</sup>\n- Ting Gong<sup>1</sup>\n- Ya-Nan Hu<sup>2</sup>\n- Hong-Tao Li<sup>1</sup>\n- Chen Cai<sup>1</sup>\n- Ling-Li Zhang<sup>1</sup>\n- Gang Wei<sup>2</sup>\n- Jin-Qiu Zhou<sup>1</sup> ([ORCID: 0000-0003-1986-8611](https://orcid.org/0000-0003-1986-8611)) \u2020\n\n### Affiliations\n\n1. State Key Laboratory of Molecular Biology, CAS Center for Excellence in Molecular Cell Science, Innovation Center for Cell Signaling Network Shanghai Institute of Biochemistry and Cell Biology, University of Chinese Academy of Sciences, Chinese Academy of Sciences Shanghai China\n2. Key Laboratory of Computational Biology, CAS-MPG Partner Institute for Computational Biology Shanghai Institutes for Biological Sciences, Chinese Academy of Sciences Shanghai China\n3. School of Life Science and Technology Shanghai Tech University Shanghai China\n\n\u2020 Corresponding author\n\n## Abstract\n\nHistone tail modifications can greatly influence chromatin-associated processes. Asymmetrically modified nucleosomes exist in multiple cell types, but whether modifications on both sister histones contribute equally to chromatin dynamics remains elusive. Here, we devised a bivalent nucleosome system that allowed for the constitutive assembly of asymmetrically modified sister histone H3s in nucleosomes in Saccharomyces cerevisiae. The sister H3K36 methylations independently affected cryptic transcription in gene coding regions, whereas sister H3K79 methylation had cooperative effects on gene silencing near telomeres. H3K4 methylation on sister histones played an independent role in suppressing the recruitment of Gal4 activator to the GAL1 promoter and in inhibiting GAL1 transcription. Under starvation stress, sister H3K4 methylations acted cooperatively, independently or redundantly to regulate transcription. Thus, we provide a unique tool for comparing symmetrical and asymmetrical modifications of sister histone H3s in vivo.\n\n## Introduction\n\nIn eukaryotes, chromatin carries both genetic and epigenetic information that controls multiple cellular processes, such as DNA replication, transcription and genome organization (Berger, 2007; Lawrence et al., 2016; Papamichos-Chronakis and Peterson, 2013). The basic unit of chromatin is the nucleosome, which comprises\u00a0~147 bp of DNA and a histone octamer formed by two copies of histone H2A-H2B and H3-H4 heterodimers (Bentley et al., 1984; Kornberg and Thomas, 1974; Luger et al., 1997; Oudet et al., 1975). The packaging of DNA into nucleosomes affects sequence accessibility, and nucleosomes therefore regulate the activity of DNA-binding proteins (Lee et al., 1993; Wasylyk and Chambon, 1979). Histones also appear to protect DNA from breaking and maintain the fidelity of both replication and transcription (Carrozza et al., 2005; Govind et al., 2007; Joshi and Struhl, 2005; Keogh et al., 2005; Pinskaya et al., 2009). The regulation of nucleic acid metabolism by nucleosomes is mediated through multiple post-translational modifications (PTMs), such as methylation, acetylation, phosphorylation, and sumoylation (Lawrence et al., 2016).\n\nHistone lysine methylation, especially on histone H3, regulates chromatin structure and transcription (Ng et al., 2002; Vermeulen and Timmers, 2010; Wagner and Carpenter, 2012). In budding yeast, the best-studied methylations on histone H3 are methylation of lysine at amino acid positions 4, 36, and 79 (H3K4, H3K36 and H3K79, respectively). H3K4 di- and tri-methylation (H3K4me2/3) is catalyzed by the Set1 complex (also called the COMPASS complex) and is associated with steady-state gene transcription; thus, H3K4me2/3 is considered to be an \u2018activating\u2019 mark in mammals. Conversely, in budding yeast, most of the evidence indicates that H3K4 methylation is a repressive mark (Shilatifard, 2006; Weiner et al., 2012). H3K36 tri-methylation (H3K36me3) by Set2 directs\u00a0the deacetylation of histones, predominantly at the 3\u2019 portion of gene open reading frames (ORFs), to suppress spurious intragenic transcription initiation (Carrozza et al., 2005). Methylation of H3K79 (H3K79me) affects telomeric heterochromatin structure because mutations at H3K79 as well as inactivation of its methyltransferase, Dot1, lead to loss of telomere silencing (Jones et al., 2008; Ng et al., 2002). The functions of each modification are largely dissected by using histone mutations in combination with the inactivation of corresponding methyltransferases, under which circumstances the modifications on both sister histones are simultaneously removed, making it difficult to study the crosstalk between modifications on sister histones.\n\nAlthough two copies of each histone in a nucleosome possess identical protein sequences, histone-modification enzymes do not always modify sister histones\u00a0simultaneously (van Rossum et al., 2012; Voigt et al., 2013). For example, symmetrical modification of histone lysines within a nucleosome is not globally required in HeLa cells (Chen et al., 2011). In\u00a0addition, in different cell types, a significant number of nucleosomes contain asymmetrically modified sister histones (Fisher and Fisher, 2011; Mikkelsen et al., 2007; Voigt et al., 2012). Furthermore, asymmetrically modified nucleosomes are present in embryonic stem cells but are symmetrically modified upon differentiation (Voigt et al., 2012). Each of these studies suggests that sister histones within a single nucleosome may function independently in gene regulation. A synthetic system for the generation of asymmetrically modified nucleosomes has been used to study histone PTM crosstalk in vitro (Lechner et al., 2016), but\u00a0the lack of a genetic model system for studying asymmetric histone modifications in vivo has prevented exploration of the biological significance of this previously documented phenomenon.\n\nTo investigate the individual contributions of sister histones and their modifications to chromatin structure and function, we employed a protein engineering strategy to mutate both copies of histone H3 in their interaction interface. After screening for mutants that were able to form histone H3 heterodimers but not H3 homodimers, we successfully set up a bivalent nucleosome system in the budding yeast Saccharomyces cerevisiae. By using this unique system, we validated the establishment of asymmetrically methylated H3K4, H3K36 or K3K79 in chromatin in yeast in vivo. Furthermore, we examined the functions of asymmetrically modified sister histones in the regulation of chromatin structure and gene transcription. Our results revealed that modifications such as H3K4me, H3K36me or K3K79me on sister histone H3s could be independent of each other. In addition, the same modifications on both sister H3 histones can affect transcription in a cooperative, independent or redundant manner. Our study provides the first picture of the individual contributions of sister histones to chromatin dynamics in vivo.\n\n## Results\n\n### A bivalent nucleosome system to study sister histone H3s in yeast\n\nIn S. cerevisiae, each canonical histone is encoded by two genes. H3 is encoded by HHT1 and HHT2, and H4 is encoded by HHF1 and HHF2. The histone genes are organized into a pair of divergently transcribed loci with HHT1-HHF1 and HHT2-HHF2 linked together. Owing to redundancy, deletion of either locus does not cause lethality (Dollard et al., 1994). As asymmetrical modifications have\u00a0previously\u00a0been reported on histone H3 in vivo (Voigt et al., 2012), we began by examining H3. Previous structural work revealed that two molecules of histone H3 interact through their carboxy-terminal four-helix bundle to form a homodimer (Luger et al., 1997; Ramachandran et al., 2011; White et al., 2001) (Figure 1A). We performed site-directed mutagenesis on the Ala110, Ala114 and Leu130 residues of the HHT1 gene. These residues were chosen because they were spatially close and within the bundle region that interacts to form the H3 homodimer (Luger et al., 1997; Ramachandran et al., 2011; White et al., 2001). These neutral amino acids were mutated to acidic or basic residues to make them electronegative or electropositive under physiological conditions. We reasoned that if we created an H3 allele with an electronegative (or electropositive) interface, it would not form homodimers,\u00a0but it would interact with a different H3 allele with an electropositive (or electronegative) interface, thereby creating a heterodimer (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/30178/elife-30178-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic illustration of the production of histone H3 mutants that are able to complement and form heterodimers. (B and D) Schematic strategy for screening histone H3 mutants. Genomic HHF1, HHF2 (encoding histone H4), HHT1 and HHT2 (encoding histone H3) genes were knocked out, and yeast cells (LHT001 background) were transformed with plasmids expressing wild-type (WT)\u00a0or mutated histone H3 along with WT\u00a0H4. (C) Histone H3 mutants cannot survive without WT histone H3. Dotting assay was performed to examine the\u00a0cell viability of WT cells (LHT001) and 15\u00a0histone H3 mutants carrying pRS313-hht1a/b (HIS3 marker). (E) H3A110D and H3L130H mutants can form a heterodimer. Mutants carrying both pRS313-hht1a (HIS3 marker) and pRS314-hht1b (TRP1 marker) were dotted on a\u00a05-fluoroorotic acid\u00a0(5-FOA) plate. WT and mutants that\u00a0survived on 5-FOA plate are highlighted in red.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30178/elife-30178-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** A\u00a0dotting assay was performed as in Figure 1E. The wild-type strain (LHT001) that\u00a0survived on the\u00a05-FOA plate is highlighted in red.\n\nYeast cells lacking chromosomal HHT1 and HHT2 genes but containing the HHT1 gene on a counter-selectable URA3 plasmid were transformed with plasmids carrying the mutated histone H3 genes. We then screened for histone H3 mutants that did not support cell viability when loss of the wild-type\u00a0(WT) HHT1 gene was counter-selected using 5-fluoroorotic acid (5-FOA) (Figure 1B). Only the H3 mutant bearing the A110E mutation survived (Figure 1C), suggesting that the other 14 histone H3 mutants could not form a homodimer. Next, yeast cells were co-transformed with the pairwise plasmids carrying these 14 mutated histone H3 genes (Figure 1D). Notably, only the H3A110D and H3L130H pairing was able to support cell viability on a 5-FOA plate (Figure 1E; Figure 1\u2014figure supplement 1), allowing us to infer that the H3A110D and H3L130H mutants form a heterodimer that could be assembled into functional nucleosomes in vivo. Considering that histidine's positive charge is weakened under physiological pH conditions and may increase the risk for H3L130H self-interaction, we used the relatively weaker ADE3 promoter to reduce the expression of H3L130H (Agez et al., 2007; Antczak et al., 2006). This strain will be hereafter referred to as the H3D/H3H strain.\n\n### Characterization of the H3D/H3H strain\n\nTo confirm that mutant histones H3A110D and H3L130H equally assembled into nucleosomes, we epitope-tagged one copy of H3 in H3D/H3H cells with Myc. After preparing mono-nucleosomes (Figure 2\u2014figure supplement 1), we performed immunoprecipitations with an anti-Myc antibody and examined both Myc-tagged and untagged histone H3. In the control, the chromatin from both the myc-H3 strain and the\u00a0untagged H3 strain was mixed, and the immunoprecipitation of mononucleosomes using the anti-Myc antibody did not pull down untagged H3 (Figure 2A, second lane). As the anti-H3 N-terminal antibody could not recognize Myc-tagged histone H3 (Figure 2A), we normalized immunoprecipitated myc-H3L130H and myc-H3A110D to the same level. The amounts of the co-immunoprecipitated complementary H3A110D and H3L130H histones were identical (Figure 2A), reflecting an equal incorporation of H3A110D and H3L130H into mononucleosomes in H3D/H3H cells. Next, we examined the ratio of H3A110D to H3L130H and the\u00a0nucleosome positioning at the GAL1-10 gene locus in the H3D/H3H cells. GAL1-10 intergenic chromatin consists of a non-nucleosomal, UAS-containing hypersensitive region (Lohr, 1984; Lohr and Hopper, 1985) surrounded by positioned nucleosomes (Lohr and Lopez, 1995; Lohr et al., 1987). A chromatin immunoprecipitation (ChIP) assay showed almost the same enrichment of H3A110D and H3L130H at the GAL1 gene promoter (Figure 2B), supporting our conclusion that mutant histones H3A110D and H3L130H were assembled into nucleosomes at a ratio of 1:1 in vivo. MNase digestion of the GAL1-10 promoter revealed that the nucleosome array on the GAL10 side of the UAS region displayed a similar digestion pattern in H3D/H3H and WT cells, but the nucleosome array on the GAL1 side showed a more evenly digested pattern in WT cells than in H3D/H3H cells (Figure 2C), suggesting altered nucleosome stability in the GAL1 region in H3D/H3H cells.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/30178/elife-30178-fig2-v2.jpg)\n\n**Figure 2.:** (A) Mononucleosomes prepared from both the cells expressing Myc-tagged H3 (ZL38) and the cells expressing untagged H3 (LHT001) were mixed (Myc-H3\u00a0+H3) and immunoprecipitated with the anti-Myc antibody. The same immunoprecipitation\u00a0(IP) assay was performed with mononucleosomes from strains bearing Myc-H3L130H/H3A110D (Myc-H3H/H3D) and Myc-H3A110D/H3L130H (Myc-H3D/H3H). The precipitated mononucleosomes were denatured and examined by western blotting with both anti-Myc (Myc) and anti-histone H3 N-terminal antibodies (H3N). (B) Chromatin\u00a0IP\u00a0(ChIP) analysis was performed in Myc-H3A110D/H3L130H (Myc-H3D/H3H) and Myc-H3L130H/H3A110D (Myc-H3H/H3D) cells using anti-Myc antibody. The precipitated DNA was analyzed by qRT-PCR with primers specific for the\u00a0GAL1-10 gene promoter and normalized to the\u00a0ACT1 gene. Error bars indicate s.e.m. for three independent experiments. (C) MNase digestion of nuclei from WT (LHT001) and H3D/H3H strains. Nuclei were digested with increasing concentrations of MNase for 4 min. MNase cleavage sites were mapped from the EcoRI site within GAL10 by indirect end labeling analysis on a 1.6% agarose gel. Marker fragments are from PCR products of 1 kb and 500 bp in\u00a0length. The UAS region and nucleosome positions are schematically shown on the right. ND, naked DNA. (D) Dotting assays were performed in H3D/H3H mutant and WT (LHT001) cells. Plates were photographed after incubation at 37\u00b0C, 30\u00b0C and 23\u00b0C on yeast extract peptone dextrose\u00a0(YPD) medium or after incubation at 30\u00b0C on YPD, YPD containing phleomycin and YPD containing MMS on Days\u00a01, 2 and 3. (E) Growth curve assays were performed in H3D/H3H mutant and WT cells for the indicated time in medium containing different carbon sources. (F) Yeast chromatins extracted from WT (LHT001) and H3D/H3H strains were monitored by western blot analysis with antibodies against H3K4ac, H3K4me2, H3K4me3, H3K18ac, H3K27ac, H3K36me3, H3N (H3 N-terminal), H4ac, H4K16ac and H4. Signals are normalized by anti-H4 antibody. (G) Scatter plot showing the average Reads Per Kilobase per Million mapped reads (RPKM) of two replicates distribution of the WT (LHT001) and H3D/H3H strains. The Pearson's product-moment correlation of Log10(WT_average_RPKM\u00a0+1) and Log10(H3D/H3H _average_RPKM\u00a0+1) is 0.9236. The red line is the fitted curve, which\u00a0has\u00a0a slope of 0.9966 and which passes through the (0,0) point. R-square is 0.98 and p value\u22642.2e-16 (see Materials\u00a0and\u00a0methods for details).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30178/elife-30178-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Mononucleosomes were prepared from H3D/H3H cells, and purified by fast protein liquid chromatography. Molecular standards are labeled above the elution profile. (B) Fractions around the peak fractions (No. 14 to 31) were collected and denatured. The length of DNA was analyzed in a 2% agarose gel. Size markers are on the left. (C) Histone H3 in the fractions (labeled on top) was examined by western blotting using the anti-H3 N-terminal antibody. Fraction 26 was selected as mononucleosomes for further experiments.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30178/elife-30178-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) The scatter plot shows the FPKM distribution for the two WT replicates. The Pearson's product-moment correlation for WT_rep1 and WT_rep2 is 0.9907. The red line is the fitted curve, which has\u00a0a slope of 0.8711 and which\u00a0passes\u00a0through the (0,0) point. R-square is 0.9823 and p value\u22642.2e-16. (B) Scatter plot showing the FPKM distribution for the two H3D/H3H's replicates. The Pearson's product-moment correlation for H3D/H3H_rep1 and H3D/H3H_rep2 is 0.9913. The red line is the fitted curve, which has\u00a0a slope of 0.9875 and which\u00a0passes\u00a0through the (0,0) point. R-square is 0.9846 and p value\u22642.2e-16.\n\nWe next determined the functional viability of the H3D/H3H mutant using the histone shuffle strain (LHT001) as a WT control. H3D/H3H mutant and WT cells exhibited identical growth rates in yeast extract peptone dextrose\u00a0(YPD) medium at 23\u00b0C, 30\u00b0C and 37\u00b0C. In\u00a0addition, when H3D/H3H cells were challenged by rapamycin (data not shown) or DNA-damage reagents, such as phleomycin or methyl methanesulfonate (MMS), they showed nearly the same sensitivity as WT cells (Figure 2D). Interestingly, compared with WT cells, H3D/H3H cells showed a reduced growth rate when cultured in raffinose or glycerol medium (Figure 2E). We then checked the levels of multiple histone PTMs in WT and H3D/H3H strains by western blot and found no significant differences (Figure 2F). Further, we performed a genome-wide RNA-Seq assay to examine the gene expression profiles in WT and H3D/H3H strains. Statistical analysis confirmed the reproducibility of the RNA-Seq results in each strain (Figure 2\u2014figure supplement 2). The global gene expression profile of the H3D/H3H strain was found to be very similar to that of the\u00a0WT strain (Figure 2G),\u00a0but we did see some genes with\u00a0expression levels that\u00a0varied\u00a0between the\u00a0H3D/H3Hand WT strains. Through Gene Ontology analysis (see the Materials and methods for details), we found that most of the outliers were downregulated by histone H3 mutations. Interestingly, the genes encoding cytochrome-c reductase activity and ATPase activity were among the outliers (Tzagoloff et al., 1975) (Figure 2\u2014source data 2). This finding might provide an explanation for the reduced growth of the\u00a0H3D/H3H strain when glycerol was used as the carbon source (Figure 2E).\n\nTaken together, the observations presented in Figure 2 indicated that the\u00a0H3D/H3H strain behaved similar to\u00a0the WT strain under most, but not all of the tested circumstances; thus, this strain provides a unique and valid system for analyzing asymmetrically modified sister histones.\n\n### N-terminal deletion of\u00a0one sister histone H3 tail does not affect the other tail\n\nTo address whether there is crosstalk between the amino-terminal tails of sister histone H3s in one nucleosome, we constructed strains that lacked the N-terminal 4\u201315 amino acids on one or both sister H3 histones (Mann and Grunstein, 1992). The H3D\u03944\u201315/H3H and H3D/H3H\u03944\u201315 strains contained one copy of N-terminal-deleted H3, resulting in asymmetrically deleted histone H3 (Figure 3A). The H3D\u03944\u201315/H3H\u03944\u201315 strain containing two copies of N-terminal-deleted H3 was also\u00a0constructed and used as a negative control. The nucleosomes of the H3D/H3H (treated as\u00a0WT hereafter) and mutant strains were precipitated, and western blots were performed to examine the levels of histone H3 N-terminal and K4 tri-methylation. Both histone H3 N-terminal and H3K4me3 signals in H3D\u03944\u201315/H3H and H3D/H3H\u03944\u201315 cells were reduced to approximately half of those observed in H3D/H3H cells (Figure 3B and C). These results indicated that H3 N-terminal deletion on one sister H3 did not influence H3K4 methylation on the other.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/30178/elife-30178-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic illustration of asymmetrical N-terminal-deleted histone H3 mutants of H3D\u03944\u201315/H3H, H3D/H3H\u03944\u201315 and H3D\u03944\u201315/H3H\u03944\u201315 derived from\u00a0the H3D/H3H strain. The genotype of each mutant is labeled in a\u00a0different color, and these colors are applied to identify each mutant in all the panels in this figure. (B) Asymmetric H3 N-terminal-deletion is successfully established on chromatin. Nucleosomes were immunoprecipitated by the anti-H2B antibody from cells of the yeast strains in (A) and analyzed by western blotting using the anti-H3 N-terminal antibody, the anti-H3K4me3 antibody and, as a normalization, the anti-H4 antibody. (C) Quantification of the H3N and H3K4me3 signals in (B) as mean ratio relative to H3D/H3H and normalized to H4 signals. (See the Materials and methods for quantification details.)\n\n### K4 me2/3 on sister H3s independently regulates the transcription efficiency of GAL1 upon induction\n\nAs the genes for H3A110D and H3L130H encoded compatible and functional histone H3 proteins, we anticipated that the substitution of K with R on one sister H3 would largely mimic unmethylated K.\u00a0Thus, asymmetrically modified nucleosomes could be assembled in chromatin in vivo. To test this idea, we first introduced the K4R mutation into H3A110D (H3DK4R) or H3L130H (H3HK4R) in the H3D/H3H strain (Figure 4A). Western blotting showed that H3K4me3 in H3DK4R/H3H or H3D/H3HK4R cells was approximately 50% lower than that in H3D/H3H cells, whereas little difference in H3K36me3 was detected among the tested strains (Figure 4B and C). Therefore, these results suggest that the hybrid strains contain only mimics of asymmetrically deposited K4me3. For sister H3 histones in a nucleosome, a lack of K4me3 in one tail did not influence K4me3 in the other tail, consistent with the observation in Figure 3B. In\u00a0addition, H3K4me3 and H3K36me3 were independent of each other because the decrease in H3K4me3 did not alter the level of H3K36me3.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/30178/elife-30178-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic illustration of asymmetrical mutation of histone H3K4R on either H3A110D (H3D) or H3L130H (H3H). The K to R mutation is marked by \u00ae on the histone H3 tails. The color labeling of each strain is applied for all the corresponding panels. (B) Asymmetrical K4me3 marks on sister H3s are successfully established on chromatin. Nucleosomes were immunoprecipitated by the anti-H2B antibody from isogenic strains and analyzed by western blotting using anti-H3K4me3, anti-H3K36me3 and, as a normalization, anti-H4 antibodies. (C) Quantification of western blotting signals for H3K4me3 as mean ratio relative to H3D/H3H and normalized to signals for H4. (D) The cells with asymmetrical sister K4me3 show an intermediate level of GAL1 gene expression. Yeast strains illustrated in (A) were subject to galactose induction. Total RNA was prepared at the indicated time points and analyzed by real-time quantitative PCR (qRT-PCR) with primers specific for GAL1 and normalized by ACT1. (E) An alternative representation of the data in (D) at 30 min is expressed as mean ratio to H3D/H3H, whose level was set to 1. (F) Asymmetric K4me3 on sister H3s is established in GAL1. ChIP experiments were performed on the promoter of GAL1 in the indicated yeast strains using the anti-H3K4me3 antibody, and values are normalized to histone H4. (G)\u00a0The levels of Gal4 recruitment are inversely proportional to the levels of K4me3. Gal4 was tagged with 13\u00a0\u00d7\u00a0myc, and ChIP experiments were performed on the UAS region of GAL1 in the indicated yeast strains with anti-Myc antibody. (H) Detection of GAL1 levels when SPP1, SDC1 or SET1 is deleted. SPP1, SDC1 or SET1,\u00a0respectively, was knocked out in the indicated strains,\u00a0which\u00a0were subject to galactose induction. RNA was extracted, analyzed and expressed as in (E). H3D/H3H cells are regarded as WT controls. All of the ChIP values are expressed as mean ratio to H3D/H3H, whose level was set to 1. All error bars indicate s.e.m. for at least duplicated experiments.\n\nCells that\u00a0lack histone H3K4 methylation have an increased GAL1 induction level (Pinskaya et al., 2009). To assess the effect of asymmetrical H3K4me3 on transcription, we assessed GAL1 mRNA levels in K4R mutant cells. Compared with H3D/H3H cells, H3DK4R/H3H and H3D/H3HK4R single-tail mutant cells showed a two-fold increase in GAL1 mRNA levels. Compared with single-tail mutant cells, H3DK4R/H3HK4R double-tail mutant cells showed a further two-fold increase in GAL1 mRNA levels (Figure 4D and E). GAL1 mRNA levels were inversely proportional to H3K4me3 levels at the GAL1 promoter (Figure 4F), suggesting a tight correlation between induction levels and H3K4me3 abundance. We also examined the enrichment of Gal4 binding to the GAL1 promoter using a ChIP assay. Gal4 is the primary activator of GAL1 transcription (Johnston, 1987). A moderate level of Gal4 recruitment to the GAL1 promoter was observed in the asymmetrical H3DK4R/H3H and H3D/H3HK4R mutant strains compared with that in their symmetrical H3D/H3H and H3DK4R/H3HK4R counterparts (Figure 4G). Therefore, each K4me3-modified sister histone H3 contributed independently\u00a0to GAL1 gene transcription, which is\u00a0probably recognized and read by the GAL1 activator Gal4.\n\nSet1C in yeast contains eight subunits, including Set1, Spp1 and Sdc1, and is responsible for methylating histone H3K4 (Deh\u00e9 and G\u00e9li, 2006; Roguev et al., 2001). Deletion of SET1 eliminates H3K4 mono-, di- and tri-methylation; deletion of SPP1 affects only H3K4 tri-methylation; and deletion of SDC1 affects di- and tri-methylation of H3K4 (Pinskaya et al., 2009). To address which type of asymmetrical H3K4 methylation affects GAL1 transcription, and to\u00a0confirm that the changes in gene expression were due to asymmetrical H3K4 methylation instead of the K4R mutation, we knocked out SET1, SPP1 and SDC1 in the H3D/H3H, H3DK4R/H3H, H3D/H3HK4R and H3DK4R/H3HK4R strains and examined GAL1 levels in galactose medium. As the data show, loss of SPP1, SDC1 and SET1 led to the upregulation of GAL1 transcription, which is consistent with previous findings (Pinskaya et al., 2009). Meanwhile, an intermediate level of GAL1 expression was seen in spp1\u2206 H3DK4R/H3H and spp1\u2206 H3D/H3HK4R cells, whereas no significant difference was found in either sdc1\u2206 or set1\u2206 mutants (Figure 4H). As distinguishing between the effects of H3K4me2 and H3K4me3 is difficult, we concluded that H3K4me2/3 but not mono-methylation of H3K4 on sister H3s contributed the most to GAL1 regulation.\n\n### K36 methylation on sister H3s independently regulates transcription initiation fidelity\n\nAs both asymmetrical H3 N-terminal deletion and asymmetrical H3K4me3 were successfully assembled in chromatin, we constructed mutants that mimicked asymmetrical H3K36me. A K36R mutation was introduced into H3A110D (H3DK36R) or H3L130H (H3HK36R) in the H3D/H3H strain (Figure 5A). The level of H3K36me3 and H3K4me3 on chromatin was examined by western blotting. When\u00a0compared with H3D/H3H cells, H3DK36R/H3H or H3D/H3HK36R cells showed an approximately 50% decrease in H3K36me3, whereas little difference in H3K4me3 was detected among the tested strains (Figure 5B and C). These data indicated that the H3DK36R/H3H or H3D/H3HK36R mutants contained only mimics of asymmetrically deposited K36me3, and loss of K36me3 on one tail did not affect K36me3 on the other tail. In\u00a0addition, in agreement with the data shown in Figure 4B, H3K36me3 and H3K4me were independently regulated chromatin modifications.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/30178/elife-30178-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic illustration of asymmetrical mutation of histone H3K36R on either H3A110D (H3D) or H3L130H (H3H). The K to R mutation is marked by \u00ae on the histone H3. The color labeling of each strain is applied for all the corresponding panels. (B) Asymmetrical K36me3 on sister H3s is successfully established on chromatin. Nucleosomes were immunoprecipitated by anti-H2B antibody from isogenic strains,\u00a0as identified by colored\u00a0numbers, and analyzed by western blot using anti-H3K4me3, anti-H3K36me3 and, as a normalization, anti-H4 antibody. (C) Quantification of western blot signals for H3K36me3 as mean ratio relative to H3D/H3H and normalized to signals for H4. (D) Northern blot analysis of the FLO8, STE11 and PCA1 transcripts in H3K36R mutants. RNA from H3D/H3H, H3DK36R/H3H, H3D/H3HK36R\u00a0and H3DK36R/H3HK36R strains was probed with sequences complementary to the\u00a03' region of FLO8, STE11, PCA1 and, as a loading control, SCR1. The full-length (FL) and short transcript signals are indicated. (E and F) Asymmetric K36me3 on sister H3s results in an intermediate level of H4ac in FLO8, STE11 and PCA1. ChIP experiments were performed in 3' ORF region of FLO8, STE11 and PCA1 in the indicated cells with anti-H3K36me3 antibody (E) and anti-H4ac antibody (F). Values are normalized to histone H4 and expressed as mean ratio to H3D/H3H. (G) H4ac level of the FLO8, STE11 and PCA1 loci in set2\u2206 cells bearing different K36me3 states on sister H3s. SET2 was knocked out in the indicated cells and ChIP experiments were performed as in (E). Values are normalized to histone H4 and expressed as mean ratio to H3D/H3H. The\u00a0H3D/H3H cells are regarded as a WT control. In all cases, the values of H3D/H3Hare set to 1. All error bars indicate s.e.m. for at least duplicated experiments.\n\nH3K36me3 directs deacetylation of histone H4 in gene-coding regions to suppress spurious intragenic transcription (Carrozza et al., 2005). To address whether H3K36me3 on both sister histone H3s contributed to the regulation of cryptic transcription, we tested the level of intragenic initiation in the H3K36R mutants within the FLO8, PCA1 and STE11 genes. Each of these genes is regulated by K36 methylation. Northern blot analysis showed that the loss of K36 methylation on H3 tails resulted in short transcripts of the tested genes, consistent with previous findings (Carrozza et al., 2005; Li et al., 2007). Compared with H3D/H3H cells and symmetrically mutated H3K36 cells, asymmetrical H3DK36R/H3H and H3D/H3HK36R cells exhibited an intermediate level of short transcripts (Figure 5D). We next used anti-acetylated histone H4 antibodies to perform a ChIP assay on the 3\u2019 ORF of the FLO8, PCA1 and STE11 genes. H4 acetylation (H4ac) levels in H3DK36R/H3H and H3D/H3HK36R cells were intermediate relative\u00a0to those in H3D/H3H cells and symmetrically mutated H3K36 cells. Moreover, H4ac levels were inversely correlated with H3K36me3 levels in the same region (Figure 5E and F). In the absence of Set2, the level of H4ac in the tested genes showed no significant differences in H3D/H3H, H3DK36R/H3H, H3D/H3HK36R and H3DK36R/H3HK36R cells (Figure 5G). These observations indicated that the regulation of accurate transcription initiation was sensitive to the magnitude of H3K36me3.\u00a0Accordingly, H4ac levels were regulated by H3K36me3 on both sister histones. In light of these data, we concluded that H3K36me3 on either sister histone played an independent regulatory role in suppressing spurious intragenic transcription.\n\n### K79 methylation on sister H3s cooperatively regulates gene silencing in telomeric regions\n\nH3K79 methylation regulates gene silencing in some telomere-proximal regions (Takahashi et al., 2011). To address whether the H3K79 methylation of both sister histones is required to maintain silent chromatin near telomeres, we used strains in which H3K79 could be methylated at either one (H3DK79R/H3H and H3D/H3HK79R) or none (H3DK79R/H3HK79R) of the H3 sister histones (Figure 6A). Western blot analysis revealed that H3K79me2/3 levels in H3DK79R/H3H and H3D/H3HK79R cells were approximately 50% lower than those in H3D/H3H cells (Figure 6B and C), suggesting the incorporation of asymmetrical H3K79me into chromatin and that the methylation of K79 occurs independently on each sister H3.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/30178/elife-30178-fig6-v2.jpg)\n\n**Figure 6.:** (A) Schematic illustration of the\u00a0asymmetrical mutation of histone H3K79R on either H3A110D (H3D) or H3L130H (H3H). The K to R mutation is marked by on the histone H3. The color labeling of each strain is applied in the other panels in this figure. (B) Asymmetrical K79me2/3 on sister H3s is established on chromatin. Nucleosomes were immunoprecipitated by anti-H2B antibody from isogenic strains (identified by colored numbers) and analyzed by western blot using anti-H3K79me2/3, anti-H3K4me3 and, as a normalization, anti-H4 antibody. (C) Quantification of western blot signals for H3K79me2/3 as mean ratio relative to H3D/H3H. (D) Both H3K79me marks on sister H3s are required for the maintenance of telomere silencing. Total RNA was prepared and analyzed by real-time quantitative PCR (qRT-PCR) with primers specific for COS12, ERR1 and ERR3 and normalized by ACT1. The black bar represents data for samples of sir2\u2206 H3D/H3H mutants, acting as a positive control. Values are calculated and expressed as in Figure 4E. (E and F) Detection of K79me2/3\u00a0(E) and H4ac\u00a0(F) at the\u00a0promoters of the COS12, ERR1 and ERR3. ChIP experiments were performed on the\u00a0promoters of COS12, ERR1 and ERR3 in the indicated cells with anti-H3K79me2/3 antibody (E) and anti-H4ac antibody (F). Values are normalized to histone H4 and expressed as mean ratio to H3D/H3H. All error bars indicate s.e.m. for at least duplicated experiments.\n\nWe examined the transcription levels of COS12, ERR1 and ERR3, which are located proximal to the telomeric ends of chromosomes VIIL, XVR and XIIIR, respectively (Takahashi et al., 2011). As expected, the K79R mutations on both sister H3s resulted in decreased silencing of those genes. Surprisingly, H3DK79R/H3H and H3D/H3HK79R cells containing asymmetrical H3K79me exhibited the same level of silencing loss as that of H3DK79R/H3HK79R or sir2\u2206 cells (Figure 6D). A ChIP experiment confirmed that K79me levels at the promoters of the genes tested in H3DK79R/H3H and H3D/H3HK79R cells decreased to approximately half of those in H3D/H3H cells (Figure 6E). Accordingly, the H4ac level in the ORF region was upregulated in K79R mutated cells (Figure 6F). Collectively, these data reveal that K79me marks on both sister H3s act cooperatively to maintain gene silencing near telomeres.\n\n### Cell sensitivity to genotoxic agents is affected by sister histone H3K4, H3K36 and H3K79 modifications\n\nH3K4, H3K36 and H3K79 methylation affects DNA double-strand break (DSB) repair (Faucher and Wellinger, 2010; Jha and Strahl, 2014; Pai et al., 2014). Therefore, we examined the regulatory role of asymmetric H3K4, H3K36 or H3K79 methylation in DSB repair. Mutant cells bearing asymmetrical methylated or non-methylated H3K4, H3K36 or H3K79 were serially diluted and spotted onto plates containing various genotoxic chemicals, including phleomycin, hydroxyurea (HU) or MMS. H3K4R or H3K79R mutations on either one or two sister histones reduced cell growth in the presence of the tested genotoxins. Notably, the H3DK36R/H3HK36R mutant was hypersensitive to phleomycin and mildly sensitive to MMS. Compared with the wild type (H3D/H3H) and corresponding double-tail mutant, single-tail H3K36R or H3K79R mutants displayed an intermediate level of sensitivity to the genotoxic agents. The H3K4 mutants showed a similar level of sensitivity to HU and MMS,\u00a0but single-tail H3K4R mutants displayed less growth in response to phleomycin treatment than did double-tail H3K4R mutants (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/30178/elife-30178-fig7-v2.jpg)\n\n**Figure 7.:** Dotting assay was performed in the indicated mutants as in Figure 2D. Plates were photographed after incubation at 30\u00b0C on YPD medium or YPD medium containing DNA damage reagents, that\u00a0is, 5 mg/ml phleomycin, 25 mM HU and 0.01% MMS, for 1, 2 and 3 day(s).\n\nTogether, these observations suggest that, in response to DNA damage, H3K36me and H3K79me marks on sister histones functioned independently, whereas H3K4me marks on sister histones functioned cooperatively. Because the type of DNA damage triggered by the\u00a0different genotoxic agents and the mechanisms of repair differ, we propose that the combination of sister histone modifications may influence DNA repair in different ways.\n\n### Genome-wide analysis of gene expression in mutants with asymmetrically methylated sister H3K4 under glucose starvation\n\nChromatin regulators do not appear to affect steady-state transcription, but instead are required for transcriptional reprogramming induced by environmental cues (Weiner et al., 2012). For example, the genome-wide gene transcription profile of H3K4A cells was nearly the same as that of WT cells when the cells were grown under normal conditions, whereas differences were observed when the cells were challenged by multiple stress conditions (Weiner et al., 2012). To further unravel the genome-wide function of sister H3K4me on transcription, we shifted the cultures of H3K4R mutants and H3D/H3H strains from 2% to 0.05% glucose in the medium, which mimics calorie restriction. After the cells were grown in 0.05% glucose medium for an hour, we performed RNA-Seq to examine the genome-wide gene-induction profiles, which are presented as fold-change (level of induction). The fold-change value refers to the level of transcription in the induced strains divided by that in the uninduced strains. Of the 6000 genes in the yeast genome, approximately 2500 were altered by the H3K4 to R mutation in response to glucose starvation. Over 1500 genes\u2019 fold-change (MID, as defined in Materials and methods) in both asymmetrical K4R mutants (H3DK4R/H3H and H3D/H3HK4R) fell between those of H3D/H3H cells and double K4R mutants (Figure 8\u2014figure supplement 1A).\n\nStatistical analysis by t-test and a gene skewness score (GSS) model described in the Materials and methods revealed that 22 genes\u2019 fold-changes in asymmetrical K4R mutant (H3DK4R/H3H and H3D/H3HK4R) cells were nearly the same as those in symmetrical K4R mutant (H3DK4R/H3HK4R) cells (Figure 8A,B; Figure 8\u2014figure supplement 1B, Cluster I), indicating cooperativity of sister K4me at these loci. The fold-changes of 191 genes in asymmetrical K4R mutant (H3DK4R/H3H and H3D/H3HK4R) cells exhibited an intermediate state between those in symmetrical K4R mutant (H3DK4R/H3HK4R) and WT(H3D/H3H) cells (p<0.05) (Figure 8A,B; Figure 8\u2014figure supplement 1B, Cluster II), suggesting that K4me on sister H3s independently regulates the expression of these genes. The fold-changes of 158 genes in asymmetrical K4R mutant (H3DK4R/H3H and H3D/H3HK4R) cells were nearly the same as those in WT H3D/H3H cells (Figure 8A,B; Figure 8\u2014figure supplement 1B, Cluster III), indicating redundancy of sister K4me at these loci. An approximately 50% decrease in H3K4me3 in asymmetrical K4R mutants was confirmed in the 5' ORFs of the YOR008C, YMR315W and YLR359W genes, which belong to the three clusters (Figure 8\u2014figure supplement 1C\u2013E). These assessments suggest that, in response to glucose starvation stress, H3K4me on two sister histones in different gene loci impose their effects on transcription in a cooperative (e.g., Cluster I), independent (e.g., Cluster II) or redundant (e.g., Cluster III) manner. Interestingly, the genes in Cluster I and II were mostly upregulated (log2fold change\u00a0>0), while the genes in Cluster III were mostly downregulated (log2fold change\u00a0<0) (Figure 8B), suggesting that under glucose starvation stress, the\u00a0transcription of upregulated genes may require more subtle regulation mechanisms, such as asymmetrical modification of sister histones.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/30178/elife-30178-fig8-v2.jpg)\n\n**Figure 8.:** (A) Histogram showing the gene skewness score (GSS) of asymmetrical K4R mutants in set MID calculated by a GSS model (see the Materials and methods for details). Bidirectional arrows with gradient colors indicate the increasing skewness of log2 fold change in asymmetrical K4R mutants to those in either H3D/H3H (red end) or H3DK4R/H3HK4R (blue end) cells. Genes are classified to three clusters (I,\u00a0II and III) by t-test according to the protocols described in the Materials and methods. (B) Boxplots showing the gene's fold-changes of H3D/H3H and K4R mutants in three gene clusters (blue, cluster I; purple, cluster II; red, cluster III). The log2 fold-change values are calculated as described in the Materials\u00a0and\u00a0methods. (C) Venn diagram showing the overlaps between genes whose fold-change values are significantly altered by SET1 knockout in the\u00a0H3D/H3H strain in response to glucose starvation (green circle), and the genes in clusters I (blue circle), II (purple circle), and III (red circle), respectively. (D and E) Pathways regulated by asymmetrically methylated K4 on sister H3s in response to glucose starvation. Pie charts show the pathways\u00a0with which the genes are specifically associated, under the regulation of asymmetrical K4me on sister H3s (D), or under the regulation of K4me (E).\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30178/elife-30178-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Heatmap showing the log2 fold-change of 2500 genes that exhibit\u00a0significant differences (p<0.05, t-test) between H3D/H3H and H3DK4R/H3HK4R cells. The set MID was the\u00a0~1500 gene collection of asymmetrical K4R mutants (H3DK4R/H3H and H3D/H3HK4R) whose log2 fold-change fell between those of H3D/H3H and H3DK4R/H3HK4R cells. (B) Bidirectional arrows with gradient colors indicate the increasing skewness of log2 fold-change in asymmetrical K4R mutants to those in either H3D/H3H (red end) or H3DK4R/H3HK4R (blue end) cells. Genes are classified into three clusters (I,\u00a0II and III) by t-test as\u00a0described\u00a0in the Materials\u00a0and\u00a0methods. (C\u2013E) Fold-change in YOR008C (in I\u2229set1\u2206) (left panel in C), YMR315W (in II\u2229set1\u2206) (left panel in D) or YLR359W (in III\u2229set1\u2206) (left panel in E) expression upon glucose starvation is confirmed by qRT-PCR with primers specific for the\u00a0genes' ORF regions. The qRT-PCR values are normalized to ACT1. H3K4me3 levels in the YOR008C (right panel in C), YMR315W (right panel in D) or YLR359W (right panel in E) loci\u00a0in H3D/H3H (lane 1), H3DK4R/H3H (lane 2), H3D/H3HK4R (lane 3) and H3DK4R/H3HK4R (lane 4) cells were detected by ChIP with anti-H3K4me3 antibody. H3K4me3 signals were normalized to histone H4 signals on the same chromatin. All error bars indicate s.e.m. for at least duplicated experiments. (F) Heatmap showing the log2 fold-change of genes exhibiting significant differences between H3D/H3H and set1\u0394 H3D/H3H cells. (G) Boxplots displaying fold-change of genes regulated by H3K4me in glycometabolism pathways in H3D/H3H (lane 1), H3DK4R/H3H (lane 2), H3D/H3HK4R (lane 3) and H3DK4R/H3HK4R (lane 4) cells.\n\nAlthough the H3K4R mutation in chromatin largely mimics K4me0, it is not the same as K4me0, and the phenotypes seen in H3DK4R/H3H and H3D/H3HK4R cells might not result from loss of K4me. To address this issue, we examined the genome-wide gene expression profile of set1\u2206 cells under glucose starvation, and compared its fold-change with that of K4R mutants (Figure 8\u2014figure supplement 1F). Many of the\u00a0genes in Clusters I, II and III overlapped with genes that are regulated by SET1 deletion (Figure 8C,\u00a0I\u2229set1\u2206, II\u2229set1\u2206 and III\u2229set1\u2206, respectively), indicating that these overlapping genes are most probably regulated by K4me rather than the K4R mutation on sister H3s.\n\n### Genes modified by sister H3K4me under glucose starvation are clustered in pathways associated with glycometabolism\n\nTo determine which pathways were regulated by asymmetrical K4me on sister H3s in response to glucose starvation, we carried out KEGG pathway analysis (Huang et al., 2009a, 2009b). Nine of the genes in the I\u2229set1\u2206 group and 45 of the genes in the III\u2229set1\u2206 group could not be mapped to any specific pathways in the KEGG database. Remarkably, 54 of the genes in the II\u2229set1\u2206 group, which is regulated by sister H3K4me, were enriched in the pathways involved in glycometabolism, such as carbon metabolism, TCA cycle, and fructose and mannose metabolism (Figure 8D). KEGG pathway analysis was performed on genes that were regulated by both the H3DK4R/H3HK4R mutation and SET1 deletion under glucose starvation. Interestingly, the three pathways involved in glycometabolism in\u00a0the II\u2229set1\u2206 were also found in the list (Figure 8E). Therefore, under glucose starvation stress, a significant proportion of H3K4me-responsive genes are regulated by the fluctuation of H3K4me levels on sister H3s. Further analysis of the fold-changes of the genes in the glycometabolism-associated pathways revealed a pattern similar to that of Cluster II (Figure 8\u2014figure supplement 1G), suggesting that the independent regulatory mode of sister H3K4me is an important player in response to glucose starvation stress. Collectively, these results support the notions that the on-off regulatory mode for H3K4me is more likely to\u00a0be\u00a0applicable to the transcription of genes that do not specifically respond to external stimuli (e.g., genes in the I\u2229set1\u2206 and III\u2229set1\u2206 groups), whereas the fine-tuning mode evolved to regulate the transcription of genes involved in stress-responsive pathways (e.g., genes in the II\u2229set1\u2206 group).\n\n## Discussion\n\nIn a nucleosome, two canonical sister histones display identical sequences, suggesting that they have evolved to play similar roles in the regulation of chromatin structure and function. However, similar to post-translational chemical modifications on any protein, the modifications of histones provide an additional layer of chromatin regulation. Paradoxically, sister histones with either asymmetrical modification or coexistence of activation and repression marks have\u00a0been found in different cell types (Fisher and Fisher, 2011; Mikkelsen et al., 2007; Voigt et al., 2012), raising the possibility that sister histones in a single nucleosome may function independently. In this study, we took advantage of a yeast system that allows for facile genetic manipulation of histones. We identified H3 mutations that prevented homodimer formation and allowed heterodimer formation. After a series of intentional and systematic screenings, we established a bivalent nucleosome system that enabled us to express and monitor sister histone H3s independently in vivo. Owing to the nature of the nucleosome, which is the basic unit structure of chromatin, any possible indirect effect(s) caused by knocking-in a histone mutation cannot be fully excluded from our analysis.\u00a0Indeed\u00a0compared with the parental strain, the H3D/H3H strain did display some minor differences in carbon source preference and nucleosome positioning (e.g., the GAL1 locus) (Figure 2C,E). In\u00a0addition, when a mutation was introduced into one of the sister histone H3s, only half of the H3 could be modified. Therefore, the global level of modified H3 had a maximum value of 50% of the maximum in a normal cell. Discriminating between the biological consequences caused by forced asymmetrical modification and a forced decrease in total modification is difficult. Nevertheless, we have provided biochemical and functional evidence indicating that this unique genetic system is useful for studying asymmetrical modifications on sister histones.\n\nUsing this system, we found that histone H3K4 methylation on one tail is independent of the other tail on the sister H3 histone (Figure 3B), suggesting that Set1C binds and modifies one tail in a cis fashion. Consistently, mutation of K4R in one of the sister H3s did not affect the methylation of K4 on the other tail (Figure 4B). Interestingly, the methylation of K36 or K79 on two sister H3s was also independent (Figures 5B and 6B). The results of our genetic models are consistent with a previous observation that sister histones are not always modified in the same manner simultaneously (Chen et al., 2011).\n\nAsymmetrically modified nucleosomes exist on chromatin (Fisher and Fisher, 2011; Mikkelsen et al., 2007; Voigt et al., 2012), but whether these asymmetrical modifications on sister histones function in manner similar to or different from that of symmetrical modifications remains largely unknown. In our study, we observed that K79me on both sister H3 histones was required for silencing telomere-proximal genes through regulation\u00a0of the acetylation level of histone H4 (Figure 6D), establishing a cooperative role for both sister histones in vivo. This mode of regulation was also seen for the genes in the I\u2229set1\u2206 group when the cells were challenged with glucose starvation (Figure 8C). Different from K79me, H3K36me3 on two sister histone H3s did not appear to have a synergistic effect but rather had an additive effect on suppressing spurious transcription (Figure 5D), indicating that two K36me3 marks on sister histone H3s altered chromatin structure independently. The same additive effect was observed in the genes grouped in II\u2229set1\u2206 (Figure 8C), as well as in GAL1 transcription levels (Figure 4E). In\u00a0addition, K4me marks on sister histone H3s redundantly affected the transcription of the genes grouped in III\u2229set1\u2206 (Figure 8C). Consistent with our observations in transcription, sister H3K4me exhibited different regulatory modes in response to various DNA-damage reagents (Figure 7). Thus, our data indicate that modifications on sister histones could employ a cooperative, independent, or redundant mode of regulation\u00a0of chromatin-associated processes. However, why the genes in different loci are subjected to different regulatory mechanisms remains unclear. One possibility is that different gene loci are targeted by different readers, such as activators and repressors that sense the magnitude of H3K4me differently during transcription. This hypothesis is supported by the data in Figure 4F and G showing that differential marks of K4me3 on two sister histone H3s affected the enrichment of Gal4-activator binding to the GAL1 gene promoter, thereby\u00a0fine-tuning the\u00a0transcription of GAL1. The chromatin readers for different genomic loci have not yet\u00a0been well characterized,\u00a0so providing a mechanistic explanation for the different performances of sister histone modifications in every case is difficult.\n\nHistones and their modifications are unique to eukaryotes, and they are important in the packaging of DNA into chromatin. From an evolutionary point of view, it may be that the possesion of two identical copies of each histone in the chromatin in eukaryotes rather than one copy is a sporadic outcome of natural selection. Previous high-throughput analysis showed that epigenetic regulation in the form of histone modification plays a\u00a0far more pronounced role during gene induction/repression than during steady-state expression (Weiner et al., 2012), suggesting the involvement of histone modifications in regulation\u00a0of\u00a0gene expression in response to changing environmental cues. In this study, we imposed glucose starvation on yeast cells to mimic an environmental cue. In response, the additive effect of H3K4me on gene transcription was recapitulated in the groups of genes that\u00a0are\u00a0enriched in pathways related to glycometabolism, such as carbon metabolism, TCA cycle, and fructose and mannose metabolism (Figure 8D). These observations support the notion that in order to adapt to environmental stress, sister histones execute their fine-tuning regulation by differential modifications.\n\nIn conclusion, this study provides new insights into how sister histones regulate the plasticity of chromatin structure, as well as gene transcription, and how epigenetic regulation evolves to address variable environmental cues. Given that combinatorial manipulations of sister histone H3 tails have encountered technical challenges in other model systems, the bivalent nucleosome system that\u00a0we created in this study will be instrumental in further uncovering the role that combinatorial histone H3 modification crosstalk plays in regulating gene expression. In\u00a0addition, our system for the genetic manipulation of sister histone H3s could be extended to an asymmetry study of sister histone H4s, which have N-terminal tail acetylations representing important epigenetic marks in various biological processes. Moreover, the genetic system that\u00a0we created will be useful in examining the role that\u00a0sister histones play in other biological processes, such as DNA repair and recombination, chromatin replication and heterochromatin assembly. Finally, since the\u00a0protein sequences of histone H3s are highly conserved during evolution, it will be appealing to apply the same scheme to construct a bivalent nucleosome system in other model systems. However, the challenge might be much greater in higher eukaryotes\u00a0because the copy numbers of histone genes in these organisms are much higher than those in yeast.\n\n## Materials and methods\n\n### Strains, antibodies and growth conditions\n\nAll yeast strains used in this study were derived from yeast strain YPH500 (Sikorski and Hieter, 1989). The genotypes of the yeast strains are listed in Supplementary file 1. The native promoter of HHT1 (L130H) in the strains derived from H3D/H3H was replaced with the ADE3 promoter. The histone shuffle strain (LHT001) was constructed previously in our lab. Antibodies used in this study are listed in Supplementary file 2.\n\nFor galactose induction assays, cells were grown in YPD (10 g/L yeast extract, 20 g/L peptone, 2% dextrose) to mid-log phase (OD600\u00a0=\u00a00.4\u20130.6) before being shifted to medium containing raffinose (10 g/L yeast extract, 20 g/L peptone, 2% raffinose) overnight. Each sample was induced by 2% galactose for 10\u201330 min. Remaining samples in raffinose medium were taken as having\u00a0an induction time of 0 min.\n\nFor glucose starvation assays, samples were grown in YPD (2% glucose) to mid-log phase and then shifted to medium containing 0.05% glucose for one hour.\n\n### Mononucleosome preparation and immunoprecipitation\n\nYeast cells were cross-linked with 1% formaldehyde for 15 min at room temperature and then resuspended in lysis buffer (50 mM HEPES [pH 7.5], 35 mM NaCl, 0.5% Na-Deoxycholate [wt/vol], 5 mM EDTA, 1% Triton X-100, 1 mM phenylmethylsulfonyl fluoride [PMSF], protease inhibitor cocktail). Cells were lysed using glass beads and sonicated to shear the chromatin to fragment sizes of 200\u2013400 bp. After centrifugation at 10,000 g for 10 min, the supernatant fraction was subjected to further fractionation with a 24 ml Superdex-200 column (GE) in IP buffer (10 mM Tris-HCl [pH 8.0], 100 mM NaCl, 0.5 mM EDTA, 1 mM DTT). Fractions containing mononucleosomes were pooled for subsequent incubation with anti-Myc antibody and protein G sepharose beads (GE) overnight at 4\u00b0C. The beads were washed with wash buffer (50 mM HEPES [pH 7.5], 150 mM NaCl, 0.5% Na-Deoxycholate [wt/vol], 5 mM EDTA, 1% Triton X-100) and TE (10 mM Tris-HCl [pH 8.0], 1 mM EDTA). Finally, the immunoprecipitated mononucleosomes were eluted from beads with elution buffer (10 mM Tris-HCl [pH 8.0], 1 mM EDTA, 1% SDS [wt/vol]).\n\n### Quantitative reverse transcription-PCR (qRT-PCR)\n\nTotal RNA was isolated from yeast cells with an RNeasy mini kit (Qiagen). cDNA was synthesized using the\u00a0Fastquant RT kit (Tiangen). 1 \u00b5l of the RT reaction was used in the subsequent real-time fluorescence quantitative PCR (ABI). Primer pairs used in qRT-PCR were listed in Supplementary file 3.\n\nThe expression of GAL1 was normalized to the RNA levels of ACT1, and the fold-changes were calculated by defining the relative mRNA level at 0 min as 1.\n\n### MNase digestion assay and Southern blotting\n\nPreparation and digestion of yeast nuclei were performed as described previously (Kent and Mellor, 1995; Wang et al., 2011a). Yeast genomic DNAs were prepared with phenol-chloroform extraction followed by ethanol precipitation. The DNA was then digested by EcoRI and separated on a 1.6% agarose gel. Digestion patterns were analyzed by indirect-end-labeling. The [32P]dCTP incoroporated probe whose sequence was listed in Supplementary file 3 was used for hybridization.\n\n### Preparation of yeast chromatin and chromatin immunoprecipitation (ChIP) assay\n\nYeast chromatin was prepared as described previously (Peng and Zhou, 2012). Specifically, mononucleosomes were purified as described previously for detecting the level of H3N, H3K4me3, H3K36me3 and H3K79me2/3. Chromatin was boiled for 10 min in SDS-PAGE loading buffer and separated in 15% SDS-PAGE, and then subjected to western blotting. The chromatin immunoprecipitation (ChIP) assay was performed as described previously (Wang et al., 2011b).\n\n### Quantification of western blotting\n\nWe detected the linear range of all the antibodies. Then we loaded our samples in the linear range and performed a western blot. Quantification of the western blot signals was carried\u00a0out using ImageJ software (RRID:SCR_003070).\n\n### Northern blot analysis\n\nTotal RNA was extracted using\u00a0the Yeast RNA extraction kit (Qiagen), resolved on agarose-formaldehyde gels and transferred to Hybond-N+ membrane (GE). RNA was crosslinked to the membrane by UV irradiation. Hybridization was carried out in 7% SDS, 1 mM sodium pyrophosphate, 1 M Na2HPO4, 150 mM NaH2PO4, and\u00a01 mM EDTA. Probes were generated by PCR.\n\n### RNA-Seq analysis\n\nThe method for constructing RNA-Seq libraries was modified from the TruSeq DNA sample preparation kit protocol (Illumina). Briefly, total RNA was isolated using\u00a0the RNeasy midi kit (Qiagen). The mRNA was purified from total RNA by Dynaloligo(dT) beads (Invitrogen,\u00a0CA,\u00a0USA). The first and second strand cDNAs were synthesized using\u00a0the SuperScript III CellsDirect cDNA Synthesis Kit (Invitrogen) and the\u00a0SuperScript Double-Stranded cDNA Synthesis Kit (Invitrogen), respectively. The resulting double-stranded DNA was subjected to DNA repair and end-polishing (blunt-end) using\u00a0the End-It DNA End-Repair Kit (Epicentre). The DNA was then purified with the\u00a0QIAquick PCR Purification Kit (Qiagen) and a dA-tail was added using the 3'\u22125' exo-Klenow Fragment (NEB). The resulting purified fragments were ligated to adaptor oligo mix (Illumina) using Quick T4 DNA ligase (NEB). The 200\u2013500 bp ligation products were recovered from a 2% (w/v) agarose gel using the\u00a0Qiagen gel extraction kit and were PCR amplified with Illumina primers using the\u00a0KAPA HiFi\u00a0HotStart kit. The 250\u2013400 bp amplified products were purified again from a 2% agarose gel and used directly for high-throughput sequencing. The raw paired-end reads contained the adapter sequences:\u00a0the P7 adapter (read1) is 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC', the P5 adapter (read2) is 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'. We used the\u00a0FASTX Toolkit (RRID:SCR_005534) to remove the adapter sequences. We trimmed the reads using TopHat (RRID:SCR_013035), only mapping the reads to the transcriptome of sacCer3 (Apr. 2011) with the default parameter. For the mapped reads, we then extracted the reads that have the \u2018NH:i:1\u2019 field. In order to reduce the PCR duplicates' bias, we kept the\u00a0maximal three records at the same position.\n\nTo compare the gene expression profiles between WT (LHT001) and H3D/H3H strains, the aligned reads were analyzed using Cuffdiff2 (RRID:SCR_001647) (Trapnell et al., 2012) to determine the RPKM (Reads Per Kilobase per Million mapped reads) value for each sample. Genes with a change greater than or equal to two folds and p-value\u00a0\u2264\u00a00.001 were regarded as differentially expressed genes and listed in Figure 2\u2014source data 2. We identified 406 genes that\u00a0were downregulated in the\u00a0H3D/H3H sample and 243 genes that were upregulated in the\u00a0H3D/H3H sample compared with the\u00a0WT sample. We used FunSpec (RRID:SCR_006952, http://funspec.med.utoronto.ca/) to annotate the differentially expressed genes to get the GO enrichment results (Robinson et al., 2002), which were presented in Figure 2\u2014source data 2.\n\nFor RNA-Seq analysis in glucose starvation experiments, we quantified the number of genes for which at least one read was mapped (RPKM\u22600). Fold changes in the transcription of genes under glucose starvation, for\u00a0genes\u00a0listed in Figure 2\u2014source data 2,\u00a0were quantified as FCi,j\u00a0=\u00a0log2((RPKM_1i,j/RPKM_1act1,j) /(RPKM_0i,j/RPKM_0act1,j)), where RPKM_1i,j and RPKM_0i,j refer to RPKM for gene i in sample j after glucose starvation for 1 and 0 hr, respectively. We excluded the gene i when p<0.05 (t-test) by comparing FCi,j in two independent experiments. For the remaining genes, we calculated the average FCi,j (defined as FCai,j) of gene i in sample j using two replicates. To evaluate whether the gene was potentially regulated by H3K4 methylation, we screened gene i of which $FCa_{i,H3^{D}/H3^{H}}$ is significantly different (p<0.05) from $FCa_{i,H3^{D}K4R/H3^{H}K4R}$ and grouped it to set DH_4 R4R. Genes in set DH_4 R4R were listed in Figure 8\u2014source data 2.\n\n### Gene skewness score (GSS) model\n\nThe skewness of gene\u00a0transcript\u00a0fold-change was defined by using the following model. If asymmetrically modified nucleosomes were involved in gene regulation, $FCa_{i,H3^{D}K4R/H3^{H}}$ or $FCa_{i,H3^{D}/H3^{H}K4R}$ should prerequisitely fall between $FCa_{i,H3^{D}/H3^{H}}$ and $FCa_{i,H3^{D}K4R/H3^{H}K4R}$. We therefore pooled gene i of set DH_4 R4R into subset MID when Midi,j\u00a0=\u00a01. The value of Midi,j was calculated using the following equation:\n\n$$\nMid_{i,j}=\\frac{FCa_{i,j}-FCa_{i,H3^{D}/H3^{H}}+FCa_{i,j}-FCa_{i,H3^{D}K4R/H3^{H}K4R}}{FCa_{i,H3^{D}/H3^{H}}-FCa_{i,H3^{D}K4R/H3^{H}K4R}}\n$$\n\nThe skewness score (GSS) of gene i in sample j was calculated by the equation:\n\n$$\nGSS_{i,j}=log_{2}\\frac{FCa_{i,j}-FCa_{i,H3^{D}K4R/H3^{H}K4R}}{FCa_{i,j}-FCa_{i,H3^{D}/H3^{H}}},ifMid_{i,j}=1\n$$\n\nGreater skewness of sample j to H3D/H3H leads to larger GSSi,j. Conversely, greater skewness of sample j to H3DK4R/H3HK4R leads to smaller GSSi,j. The results of Midi,j and GSSi,j were listed in Figure 8\u2014source data 3.\n\n### Gene type classification\n\nThe gene i in set MID was classified into three subsets: (1) II, $FCa_{i,H3^{D}K4R/H3^{H}}$ and $FCa_{i,H3^{D}/H3^{H}K4R}$ showing significant difference from both $FCa_{i,H3^{D}/H3^{H}}$ and $FCa_{i,H3^{D}K4R/H3^{H}K4R}$.\u00a0The maximum and minimum values of GSS in this subset were defined as GSSmax and GSSmin, respectively; (2) III, $FCa_{i,H3^{D}K4R/H3^{H}}$ and $FCa_{i,H3^{D}/H3^{H}K4R}$ exhibiting no difference from $FCa_{i,H3^{D}/H3^{H}}$ but significant difference from $FCa_{i,H3^{D}K4R/H3^{H}K4R}$ in the condition of each $GSS_{i,H3^{D}K4R/H3^{H}}$ and $GSS_{i,H3^{D}/H3^{H}K4R}$ larger than GSSmax; and\u00a0(3) I,\u00a0$FCa_{i,H3^{D}K4R/H3^{H}}$ and $FCa_{i,H3^{D}/H3^{H}K4R}$ significantly differing from $FCa_{i,H3^{D}/H3^{H}}$ rather than $FCa_{i,H3^{D}K4R/H3^{H}K4R}$ in the condition of each $GSS_{i,H3^{D}K4R/H3^{H}}$ and $GSS_{i,H3^{D}/H3^{H}K4R}$ smaller than GSSmin. They were listed in Figure 8\u2014source data 4.\n\n### Statistics\n\nData were analyzed by Pearson's product-moment test and Student t-test as indicated.\n",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "a6057816-d84e-41e1-adcc-0c985f26d639",
+      "submission_id": "dd1b1103-5aa5-4d90-8478-30a78bb9c361",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tim Formosa, University of Utah School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.30178.034](https://doi.org/10.7554/eLife.30178.034)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Modifications on both sister histone H3s coordinate to regulate chromatin structure and transcription\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Timothy Formosa is a member of our Board of Reviewing Editors and the evaluation has been overseen by Jessica Tyler as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission\n\nThe authors describe the development and validation of a novel tool for investigating the physiological role of symmetrical modifications of \"sister\" histone H3 molecules within a given nucleosome in yeast. This system has high potential to probe a set of longstanding questions in this field and the initial results presented here already make a significant contribution. Overall, both the system and the results presented are likely to be of interest to a broad community of chromatin researchers. However, substantial issues need to be resolved prior to publication of the work, and some additional experiments would provide additional support for key conclusions that are currently too preliminary.\n\nRequires further experiments:\n\n1) The authors need to validate more loci; single examples are not sufficient.\n\nThe interpretation of the data in Figure 5D-F is limited due to its examination of a single locus. Similarly, it is premature to conclude from Figure 6 that there are telomeric silencing defects when only a single locus was assessed. The data as presented would also be consistent with promoter-specific effects of the K79 mutations, so analysis of additional loci is required to support the claims put forth. Ideally, a global analysis would be used to obtain the clearest picture, but it should be sufficient to test three independent loci in each case to validate these conclusions.\n\n2) Further genetic analysis of strains would strongly enhance the manuscript.\n\nThe authors use screens of plate phenotypes to establish the health of the obligate dimer strain, but one of the potentially most interesting aspects of this study would be to examine the asymmetrical modification strains for these same phenotypes, and this is not included here. It would be very helpful to know how some of the mutations affect phenotypes that reveal changes in gene expression, DNA damage sensitivity, and other features known to be altered by histone modifications. Including this data would increase the impact of the manuscript significantly. Further, as currently presented, the plate phenotypes are difficult to interpret due to the limited growth observed under many conditions even with \"WT\" cells. Ideally, similar growth rates would be demonstrated by providing growth curves for some crucial conditions, but at the very least the incubation times for the plate assays should be extended, and examination of responses to other challenges such as the Spt- phenotype, caffeine sensitivity, 6AU, rapamycin, synthetic media, raffinose, and galactose should be considered. Given previous results with mutations affecting histone modifications, the Spt- phenotype seems like it would be a very sensitive test of chromatin status, but this requires the use of a strain with a suitable reporter. Screens for some additional phenotypes and better documentation of the plate effected are considered necessary, while examining the effects on reporters like the Spt- phenotype would be strongly encouraged but not required.\n\n3) Additional separation of H3K4 methylation states and more accurate and complete discussion of results.\n\nThe experiments in Figure 4 were set up in the text as a dissection of the effects of different methylation states of H3K4, but the results are not analyzed this way. For example, in panel H, if loss of H3K4 methylation leads to activation of the GAL genes, then why does loss of Set1 not show the increase in transcription? Should it not be epistatic with the K4R/K4R strain? There was no explanation for this finding, and the Results section did not adequately address this. Also, Rad6 is an inappropriate mutant to use in this case since it also abolishes H2BK123ub1. There are other mutants that can be used to separate H3K4me states. Further, the fold inductions in panel 4H in the spp1 and rad6 mutants are greater than in the wild-type background (panel 4E), and all induction is lost in the set1 mutant cells. These data are consistent with a model in which H3K4 mono-methylation is required for the induction, but that trimethylation is inhibitory. The authors must compare their observations to previous studies of the role of K4 in gene induction kinetics, and then discuss their results explaining how they contribute to answering the central question posed.\n\n4) As the methylation state of H3K4 is raised as a variable, the authors should either quantify the states separately or explain why this is not necessary.\n\n5) Further exploration of the effects of H3K36 methylation on known downstream pathways is needed.\n\nH3K36 methylation has established roles in suppressing cryptic transcription and in promoting DNA repair, but Figure 5 exclusively examines effects on H4 acetylation as a stand-in for chromatin structure. More complete analysis of potential effects is needed here, and a better description of what is meant by the term \"chromatin structure\" is required.\n\n6) Further analysis of RNA-seq data; validation of more loci; examination of correlation with transcription level.\n\nSome examples of the results obtained from the RNA-seq experiment in Figure 7 should be validated by qPCR. Representatives of the different categories (at least cluster 1 and cluster 2) should be included. Additionally, analysis of the results to ask whether correlations between the classes defined and the known levels of transcriptional frequency or level of induction should be provided to determine whether these variables explain the classes or their correlations with glycometabolism.\n\nCould be accomplished by text changes or further analysis of existing experiments:\n\n7) Editing for standard English usage is required throughout the manuscript to clarify the claims being made. A professional editing service or assistance from a colleague familiar with the field may be required.\n\n8) In general, the method of normalization for loading and for quantitation should be included in every western blot, with some description of how the authors were able to determine that signals in these blots were in the linear range of detection or were otherwise found to be suitable for quantitation.\n\n9) The MNase sensitivity experiment shows more complexity than is described and the experiment is not clearly explained.\n\nThe MNase digestion results presented in Figure 2C are interpreted as evidence that the obligate dimer strain has normal chromatin structure. However, there are substantial differences evident between the wild-type and D-H cells. Most notably, the array of nucleosomes on the GAL1 side of the hypersensitive region produces a much more evenly digested pattern, suggesting altered nucleosome stability, at least in this region, making it an overstatement to claim that there are no structural changes in chromatin resulting from the histone mutations. Further, it is unclear why part of the promoter is labeled as a \"hypersensitive region\" as this region instead appears refractory to MNase; is the hypersensitivity for DNase I? An additional control using naked DNA would clarify the results shown.\n\n10) The severe growth defect of the delta21-D/delta21-H strain also suggests that the dimerization mutants cause chromatin changes, as deleting the H3 N-termini in otherwise normal strains does not cause this growth defect (e.g. Mann and Grunstein, 1992). The authors should therefore indicate that the D-H mutations cause some changes in chromatin, necessitating that all comparisons must be between D-H cells with wild-type modifiable residues and D-H cells with histone mutations. Along these lines, the authors need to clearly specify which strains are used as controls in each experiment, as \"WT\" could mean several things, and must be explicit that valid comparisons between appropriately matched controls are being made in every case.\n\n11) The data in Figure 2F are presented as validation that gene expression is not affected by the D-H mutations, but outliers are visible. It would be useful to describe some of them and give statistics for the sample-to-sample reproducibility for a WT strain to give the reader context for understanding how similar the profiles actually are.\n\n12) Figure 3 should be analyzed to provide the ratio of H3K4me3 signals comparing the delta21 and the H-D strains.\n\n13) Figure 4F is lacking H3DK4R/H3HK4R, and 4G is lacking H3D/H3HK4R. These omissions should either be corrected or explained.\n\n14) The H3-N antibody does not recognize the myc-tagged H3, so the authors should explain why it is used instead of some other control for total H3.\n\n15) The results raise an interesting issue regarding the distinction between asymmetrical modification and changes in the total level of modification that should be discussed. For example, in a strain in which only half of the H3 can be modified, the global level of modified H3 now has a maximum value of 50% of the maximum in a normal cell. How can one discriminate between effects due to forced asymmetrical modification and forced decrease in total modification? It is difficult to imagine addressing this experimentally, but the issue should be discussed.\n\n16) Better explanation of the strains used is needed. As noted above, the use of the term \"WT\" requires explanation in each case. For example, it seems likely that Myc-tagging the H3 protein would have a physiological effect, but no strain with Myc-HHT1 is listed for use as a control for the Myc-tagged heterodimeric nucleosome strains. Is the WT strain the histone shuffle strain? Why is the ADE3 promoter used to drive the Myc-HHT1? Is this a single Myc repeat? It is difficult to determine whether appropriate comparisons are being made without explicit statement of which strains are used in each experiment with a unique name that identifies the strain being described in the strain list provided.\n\n17) Further explanation of the nucleosome purification would be helpful.\n\nFigure 2\u2014figure supplement 1B. The DNA fragments look bigger than mononucleosomes; is there other evidence that they are mononucleosomes?\n\n18) The authors refer to the analysis of the \u03b4-21 mutation as \"clipping\". The term \"clipping\" is usually used to refer to the natural process of proteolytic tail cleavage, which is induced during sporulation or starvation (Santos-Rosa et al., 2009). In contrast, here the authors are analyzing an engineered gene deletion and are not analyzing cells grown under conditions inducing proteolysis. Therefore, this figure should be titled \"Examination of an asymmetric deletion in the N-terminus of histone H3\". Furthermore, some of the discussion of this result perpetuates this confusion (subsection \u201cThe N-terminal clipping on one of the sister histone H3 tails does not affect the other tail\u201d): \"the H3 N-terminal clipping on one of the sister H3s will not influence the clipping on the other one, in other words the endopeptidase activity of cleavage is not affected by losing one of the sister H3 tails.\" This experiment doesn't include an endopeptidase so this conclusion is not supported by the data.\n\n19) Subsection \u201cK4 methylation on sister H3s independently regulates the transcription efficiency of GAL1 upon induction\u201d, referring to Figures 4B-C: \"These results indicate that the nucleosomes with asymmetrical K4me3 is constitutively assembled in chromatin in vivo.\" The whole cell extracts analyzed show that the steady-state total levels of K4me3-modified H3 is decreased ~50% by the asymmetric mutations, but do not directly measure assembly of those molecules into chromatin in vivo, so the conclusion overstates the observation.\n\n20) In Figure 4, the y-axes of panels D, E and H refer to \"rate\" but that is not what is being graphed, which is the time course of GAL1 mRNA induction. Rate would be related to the slope of the time course curves. Likewise, the legend for Figure 7\u2014figure supplement 1 does indeed report log2 fold-changes, but not an \"induction rate.\"\n",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fcdcbccf-edfd-495e-885e-fecbf024143d",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C1",
+      "claim": "Nucleosomes comprise approximately 147 bp of DNA and a histone octamer formed by two copies of histone H2A-H2B and H3-H4 heterodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "The basic unit of chromatin is the nucleosome, which comprises ~147 bp of DNA and a histone octamer formed by two copies of histone H2A-H2B and H3-H4 heterodimers (Bentley et al., 1984; Kornberg and Thomas, 1974; Luger et al., 1997; Oudet et al., 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior structural studies of nucleosomes.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "2c0d907a-0779-470b-bb60-70cc05a6247e",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C2",
+      "claim": "H3K4 di- and tri-methylation is catalyzed by the Set1 complex (also called the COMPASS complex).",
+      "claim_type": "EXPLICIT",
+      "source": "H3K4 di- and tri-methylation (H3K4me2/3) is catalyzed by the Set1 complex (also called the COMPASS complex) and is associated with steady-state gene transcription; thus, H3K4me2/3 is considered to be an 'activating' mark in mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated directly in the text and represents established knowledge about histone methylation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "f8d5fbee-12a6-4ea8-bc1a-2d181afeb0ee",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C3",
+      "claim": "In budding yeast, most evidence indicates that H3K4 methylation is a repressive mark.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, in budding yeast, most of the evidence indicates that H3K4 methylation is a repressive mark (Shilatifard, 2006; Weiner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "9a829989-7adc-4f69-80e2-63689f7fa111",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C4",
+      "claim": "H3K36 tri-methylation by Set2 directs the deacetylation of histones, predominantly at the 3' portion of gene open reading frames, to suppress spurious intragenic transcription initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "H3K36 tri-methylation (H3K36me3) by Set2 directs the deacetylation of histones, predominantly at the 3' portion of gene open reading frames (ORFs), to suppress spurious intragenic transcription initiation (Carrozza et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "c17be16a-5854-4181-aee4-23d60086d7c5",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C5",
+      "claim": "Mutations at H3K79 as well as inactivation of its methyltransferase, Dot1, lead to loss of telomere silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Methylation of H3K79 (H3K79me) affects telomeric heterochromatin structure because mutations at H3K79 as well as inactivation of its methyltransferase, Dot1, lead to loss of telomere silencing (Jones et al., 2008; Ng et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "ef61d674-4a70-4839-9b80-c5fc093c4fc2",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C6",
+      "claim": "Symmetrical modification of histone lysines within a nucleosome is not globally required in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, symmetrical modification of histone lysines within a nucleosome is not globally required in HeLa cells (Chen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "97724958-3058-485a-9f4b-8d00b581c18d",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C7",
+      "claim": "A significant number of nucleosomes contain asymmetrically modified sister histones in different cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, in different cell types, a significant number of nucleosomes contain asymmetrically modified sister histones (Fisher and Fisher, 2011; Mikkelsen et al., 2007; Voigt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "5f115f31-d00b-41d8-a5d0-d13e948113d9",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C8",
+      "claim": "Asymmetrically modified nucleosomes are present in embryonic stem cells but are symmetrically modified upon differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, asymmetrically modified nucleosomes are present in embryonic stem cells but are symmetrically modified upon differentiation (Voigt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "d7565521-4e55-4c2f-80e3-9e0a80032381",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C9",
+      "claim": "Two molecules of histone H3 interact through their carboxy-terminal four-helix bundle to form a homodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous structural work revealed that two molecules of histone H3 interact through their carboxy-terminal four-helix bundle to form a homodimer (Luger et al., 1997; Ramachandran et al., 2011; White et al., 2001) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to structural studies and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "9e604adb-1835-4608-aea9-caa03e70e127",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C10",
+      "claim": "Only the H3A110D and H3L130H pairing was able to support cell viability on a 5-FOA plate.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, only the H3A110D and H3L130H pairing was able to support cell viability on a 5-FOA plate (Figure 1E; Figure 1\u2014figure supplement 1), allowing us to infer that the H3A110D and H3L130H mutants form a heterodimer that could be assembled into functional nucleosomes in vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1E and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "9fb6c257-1212-4cc7-a26a-8b4a78d4d700",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C11",
+      "claim": "Mutant histones H3A110D and H3L130H equally assembled into nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that mutant histones H3A110D and H3L130H equally assembled into nucleosomes, we epitope-tagged one copy of H3 in H3D/H3H cells with Myc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from immunoprecipitation experiments described in the text and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "ab606841-29d0-4977-a797-c422f8850c92",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C12",
+      "claim": "The amounts of the co-immunoprecipitated complementary H3A110D and H3L130H histones were identical.",
+      "claim_type": "EXPLICIT",
+      "source": "We normalized immunoprecipitated myc-H3L130H and myc-H3A110D to the same level. The amounts of the co-immunoprecipitated complementary H3A110D and H3L130H histones were identical (Figure 2A), reflecting an equal incorporation of H3A110D and H3L130H into mononucleosomes in H3D/H3H cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "1087f3fb-0b6b-4c51-9ec0-08d508505e9f",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C13",
+      "claim": "A ChIP assay showed almost the same enrichment of H3A110D and H3L130H at the GAL1 gene promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "A chromatin immunoprecipitation (ChIP) assay showed almost the same enrichment of H3A110D and H3L130H at the GAL1 gene promoter (Figure 2B), supporting our conclusion that mutant histones H3A110D and H3L130H were assembled into nucleosomes at a ratio of 1:1 in vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "c212c302-4df1-475e-be72-9016b7c01cf0",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C14",
+      "claim": "The nucleosome array on the GAL10 side of the UAS region displayed a similar digestion pattern in H3D/H3H and WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "MNase digestion of the GAL1-10 promoter revealed that the nucleosome array on the GAL10 side of the UAS region displayed a similar digestion pattern in H3D/H3H and WT cells, but the nucleosome array on the GAL1 side showed a more evenly digested pattern in WT cells than in H3D/H3H cells (Figure 2C), suggesting altered nucleosome stability in the GAL1 region in H3D/H3H cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "fcf550c7-8f8f-4bdd-bc54-c71f33fdcee8",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C15",
+      "claim": "H3D/H3H mutant and WT cells exhibited identical growth rates in YPD medium at 23\u00b0C, 30\u00b0C and 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "H3D/H3H mutant and WT cells exhibited identical growth rates in yeast extract peptone dextrose (YPD) medium at 23\u00b0C, 30\u00b0C and 37\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "631f11f0-677c-4420-b97a-5943e3ea056b",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C16",
+      "claim": "When H3D/H3H cells were challenged by DNA-damage reagents, such as phleomycin or MMS, they showed nearly the same sensitivity as WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, when H3D/H3H cells were challenged by rapamycin (data not shown) or DNA-damage reagents, such as phleomycin or methyl methanesulfonate (MMS), they showed nearly the same sensitivity as WT cells (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "80fb73da-661b-4957-b053-21ca9e112a90",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C17",
+      "claim": "Compared with WT cells, H3D/H3H cells showed a reduced growth rate when cultured in raffinose or glycerol medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, compared with WT cells, H3D/H3H cells showed a reduced growth rate when cultured in raffinose or glycerol medium (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "cc96871d-6edc-437a-b241-7f1d4d6fbc67",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C18",
+      "claim": "No significant differences in the levels of multiple histone PTMs were found between WT and H3D/H3H strains by western blot.",
+      "claim_type": "EXPLICIT",
+      "source": "We then checked the levels of multiple histone PTMs in WT and H3D/H3H strains by western blot and found no significant differences (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "d3e477e5-8903-486e-8bba-8963c01ccb3f",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C19",
+      "claim": "The global gene expression profile of the H3D/H3H strain was found to be very similar to that of the WT strain.",
+      "claim_type": "EXPLICIT",
+      "source": "The global gene expression profile of the H3D/H3H strain was found to be very similar to that of the WT strain (Figure 2G), but we did see some genes with expression levels that varied between the H3D/H3Hand WT strains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-Seq data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "594ed70a-0530-42be-a41f-2555c3751a26",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C20",
+      "claim": "Both histone H3 N-terminal and H3K4me3 signals in H3D\u03944\u201315/H3H and H3D/H3H\u03944\u201315 cells were reduced to approximately half of those observed in H3D/H3H cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Both histone H3 N-terminal and H3K4me3 signals in H3D\u03944\u201315/H3H and H3D/H3H\u03944\u201315 cells were reduced to approximately half of those observed in H3D/H3H cells (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "76a6c153-3d81-4cea-ae4d-8eb9f06a2f8c",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C21",
+      "claim": "H3 N-terminal deletion on one sister H3 did not influence H3K4 methylation on the other.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicated that H3 N-terminal deletion on one sister H3 did not influence H3K4 methylation on the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing approximately 50% reduction in H3K4me3 in asymmetric deletion mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "6cf80dc9-87ea-446c-ab4f-3738c282a577",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C22",
+      "claim": "H3K4me3 in H3DK4R/H3H or H3D/H3HK4R cells was approximately 50% lower than that in H3D/H3H cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blotting showed that H3K4me3 in H3DK4R/H3H or H3D/H3HK4R cells was approximately 50% lower than that in H3D/H3H cells, whereas little difference in H3K36me3 was detected among the tested strains (Figure 4B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "8cff94ac-c6c0-4485-9489-bca03aff5fcb",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C23",
+      "claim": "For sister H3 histones in a nucleosome, a lack of K4me3 in one tail did not influence K4me3 in the other tail.",
+      "claim_type": "EXPLICIT",
+      "source": "For sister H3 histones in a nucleosome, a lack of K4me3 in one tail did not influence K4me3 in the other tail, consistent with the observation in Figure 3B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing approximately 50% reduction in H3K4me3 in asymmetric K4R mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "edc47394-978d-4721-96b4-e8667bb6f29a",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C24",
+      "claim": "H3K4me3 and H3K36me3 were independent of each other because the decrease in H3K4me3 did not alter the level of H3K36me3.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, H3K4me3 and H3K36me3 were independent of each other because the decrease in H3K4me3 did not alter the level of H3K36me3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing no change in H3K36me3 when H3K4me3 was reduced.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "718e2540-dd7a-47ff-99bb-40bc4503ccf5",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C25",
+      "claim": "Compared with H3D/H3H cells, H3DK4R/H3H and H3D/H3HK4R single-tail mutant cells showed a two-fold increase in GAL1 mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with H3D/H3H cells, H3DK4R/H3H and H3D/H3HK4R single-tail mutant cells showed a two-fold increase in GAL1 mRNA levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "6d18eb9f-5fc8-45f1-9f87-e8db7a32bcc6",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C26",
+      "claim": "Compared with single-tail mutant cells, H3DK4R/H3HK4R double-tail mutant cells showed a further two-fold increase in GAL1 mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with single-tail mutant cells, H3DK4R/H3HK4R double-tail mutant cells showed a further two-fold increase in GAL1 mRNA levels (Figure 4D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "d4157d54-df79-410c-a78d-f7564c3ff2e6",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C27",
+      "claim": "GAL1 mRNA levels were inversely proportional to H3K4me3 levels at the GAL1 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "GAL1 mRNA levels were inversely proportional to H3K4me3 levels at the GAL1 promoter (Figure 4F), suggesting a tight correlation between induction levels and H3K4me3 abundance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "3d531edd-641c-4252-9838-64510c6398a0",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C28",
+      "claim": "A moderate level of Gal4 recruitment to the GAL1 promoter was observed in the asymmetrical H3DK4R/H3H and H3D/H3HK4R mutant strains compared with that in their symmetrical H3D/H3H and H3DK4R/H3HK4R counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "A moderate level of Gal4 recruitment to the GAL1 promoter was observed in the asymmetrical H3DK4R/H3H and H3D/H3HK4R mutant strains compared with that in their symmetrical H3D/H3H and H3DK4R/H3HK4R counterparts (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "10b19ef2-7a54-4113-aefc-fb6afbae54a3",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C29",
+      "claim": "Each K4me3-modified sister histone H3 contributed independently to GAL1 gene transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, each K4me3-modified sister histone H3 contributed independently to GAL1 gene transcription, which is probably recognized and read by the GAL1 activator Gal4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing intermediate levels of GAL1 transcription and Gal4 recruitment in asymmetric K4R mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "0453a8c5-e7e1-408e-bae3-ba3af8e14cb5",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C30",
+      "claim": "Deletion of SET1 eliminates H3K4 mono-, di- and tri-methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of SET1 eliminates H3K4 mono-, di- and tri-methylation; deletion of SPP1 affects only H3K4 tri-methylation; and deletion of SDC1 affects di- and tri-methylation of H3K4 (Pinskaya et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "ae3a63fd-c0f3-47e8-a0b0-aa12dfc0cfe9",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C31",
+      "claim": "Loss of SPP1, SDC1 and SET1 led to the upregulation of GAL1 transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "As the data show, loss of SPP1, SDC1 and SET1 led to the upregulation of GAL1 transcription, which is consistent with previous findings (Pinskaya et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4H and a citation to a prior study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "7631c2a4-e477-4ade-bb40-17906bd967c0",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C32",
+      "claim": "An intermediate level of GAL1 expression was seen in spp1\u2206 H3DK4R/H3H and spp1\u2206 H3D/H3HK4R cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, an intermediate level of GAL1 expression was seen in spp1\u2206 H3DK4R/H3H and spp1\u2206 H3D/H3HK4R cells, whereas no significant difference was found in either sdc1\u2206 or set1\u2206 mutants (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "a2107349-fa70-4b6f-98c8-0895d67d3174",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C33",
+      "claim": "H3K4me2/3 but not mono-methylation of H3K4 on sister H3s contributed the most to GAL1 regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "As distinguishing between the effects of H3K4me2 and H3K4me3 is difficult, we concluded that H3K4me2/3 but not mono-methylation of H3K4 on sister H3s contributed the most to GAL1 regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing intermediate GAL1 expression in spp1\u2206 mutants but not in sdc1\u2206 or set1\u2206 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "bf2c2302-42be-4c8f-b3d2-8154799bb227",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C34",
+      "claim": "The level of H3K36me3 in H3DK36R/H3H or H3D/H3HK36R cells showed an approximately 50% decrease compared with H3D/H3H cells.",
+      "claim_type": "EXPLICIT",
+      "source": "When compared with H3D/H3H cells, H3DK36R/H3H or H3D/H3HK36R cells showed an approximately 50% decrease in H3K36me3, whereas little difference in H3K4me3 was detected among the tested strains (Figure 5B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "6a941fc4-6de3-4055-b0e5-729107f3139d",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C35",
+      "claim": "Loss of K36me3 on one tail did not affect K36me3 on the other tail.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicated that the H3DK36R/H3H or H3D/H3HK36R mutants contained only mimics of asymmetrically deposited K36me3, and loss of K36me3 on one tail did not affect K36me3 on the other tail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing approximately 50% reduction in H3K36me3 in asymmetric K36R mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "6999ee48-34dd-4856-b0ba-87d8a393f493",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C36",
+      "claim": "H3K36me3 and H3K4me were independently regulated chromatin modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, in agreement with the data shown in Figure 4B, H3K36me3 and H3K4me were independently regulated chromatin modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing no change in H3K4me3 when H3K36me3 was reduced.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "13b7b4e6-86d7-44df-a416-ff9f0c705aae",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C37",
+      "claim": "The loss of K36 methylation on H3 tails resulted in short transcripts of the FLO8, PCA1 and STE11 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Northern blot analysis showed that the loss of K36 methylation on H3 tails resulted in short transcripts of the tested genes, consistent with previous findings (Carrozza et al., 2005; Li et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5D and citations to prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "eb11f109-1a9d-436b-882d-6609a54b9d92",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C38",
+      "claim": "Asymmetrical H3DK36R/H3H and H3D/H3HK36R cells exhibited an intermediate level of short transcripts compared with H3D/H3H cells and symmetrically mutated H3K36 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with H3D/H3H cells and symmetrically mutated H3K36 cells, asymmetrical H3DK36R/H3H and H3D/H3HK36R cells exhibited an intermediate level of short transcripts (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "bf4a515d-4005-4e1b-97e5-9801ee24208c",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C39",
+      "claim": "H4 acetylation levels in H3DK36R/H3H and H3D/H3HK36R cells were intermediate relative to those in H3D/H3H cells and symmetrically mutated H3K36 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "H4 acetylation (H4ac) levels in H3DK36R/H3H and H3D/H3HK36R cells were intermediate relative to those in H3D/H3H cells and symmetrically mutated H3K36 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "abd7bfcf-a514-4c01-be21-d9e01d623b5f",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C40",
+      "claim": "H4ac levels were inversely correlated with H3K36me3 levels in the 3' ORF of the FLO8, PCA1 and STE11 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, H4ac levels were inversely correlated with H3K36me3 levels in the same region (Figure 5E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "a638cb63-b480-4f67-9920-ca85e3fbdf37",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C41",
+      "claim": "In the absence of Set2, the level of H4ac in the tested genes showed no significant differences in H3D/H3H, H3DK36R/H3H, H3D/H3HK36R and H3DK36R/H3HK36R cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of Set2, the level of H4ac in the tested genes showed no significant differences in H3D/H3H, H3DK36R/H3H, H3D/H3HK36R and H3DK36R/H3HK36R cells (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "b0009b77-7f80-422b-acd0-9b3cb73a92c3",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C42",
+      "claim": "H3K36me3 on either sister histone played an independent regulatory role in suppressing spurious intragenic transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of these data, we concluded that H3K36me3 on either sister histone played an independent regulatory role in suppressing spurious intragenic transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing intermediate levels of short transcripts and H4ac in asymmetric K36R mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "455dc0e8-078b-4f32-9331-c1b3016793f7",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C43",
+      "claim": "H3K79me2/3 levels in H3DK79R/H3H and H3D/H3HK79R cells were approximately 50% lower than those in H3D/H3H cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis revealed that H3K79me2/3 levels in H3DK79R/H3H and H3D/H3HK79R cells were approximately 50% lower than those in H3D/H3H cells (Figure 6B and C), suggesting the incorporation of asymmetrical H3K79me into chromatin and that the methylation of K79 occurs independently on each sister H3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "d7880dd2-bae2-4a8e-a820-7ca6f049f482",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C44",
+      "claim": "The methylation of K79 occurs independently on each sister H3.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis revealed that H3K79me2/3 levels in H3DK79R/H3H and H3D/H3HK79R cells were approximately 50% lower than those in H3D/H3H cells (Figure 6B and C), suggesting the incorporation of asymmetrical H3K79me into chromatin and that the methylation of K79 occurs independently on each sister H3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing approximately 50% reduction in H3K79me2/3 in asymmetric K79R mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "519fd7bf-208e-4722-a86e-d335a6757f10",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C45",
+      "claim": "The K79R mutations on both sister H3s resulted in decreased silencing of COS12, ERR1 and ERR3 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the K79R mutations on both sister H3s resulted in decreased silencing of those genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "dca07183-b497-458f-a7a2-1365389770c1",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C46",
+      "claim": "H3DK79R/H3H and H3D/H3HK79R cells containing asymmetrical H3K79me exhibited the same level of silencing loss as that of H3DK79R/H3HK79R or sir2\u2206 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, H3DK79R/H3H and H3D/H3HK79R cells containing asymmetrical H3K79me exhibited the same level of silencing loss as that of H3DK79R/H3HK79R or sir2\u2206 cells (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "57b183a1-3b6f-4f34-b62e-e73254cd2db3",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C47",
+      "claim": "K79me levels at the promoters of COS12, ERR1 and ERR3 in H3DK79R/H3H and H3D/H3HK79R cells decreased to approximately half of those in H3D/H3H cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A ChIP experiment confirmed that K79me levels at the promoters of the genes tested in H3DK79R/H3H and H3D/H3HK79R cells decreased to approximately half of those in H3D/H3H cells (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "c1615ebc-7086-4c45-bf48-8a31e1e9801b",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C48",
+      "claim": "The H4ac level in the ORF region was upregulated in K79R mutated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the H4ac level in the ORF region was upregulated in K79R mutated cells (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "39970620-d6d8-4e52-8a3b-440941a7c46c",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C49",
+      "claim": "K79me marks on both sister H3s act cooperatively to maintain gene silencing near telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data reveal that K79me marks on both sister H3s act cooperatively to maintain gene silencing near telomeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing that asymmetric K79R mutants have the same level of silencing loss as double K79R mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "705280db-841f-42d2-a04c-25651eb82f24",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C50",
+      "claim": "H3K4R or H3K79R mutations on either one or two sister histones reduced cell growth in the presence of genotoxins.",
+      "claim_type": "EXPLICIT",
+      "source": "H3K4R or H3K79R mutations on either one or two sister histones reduced cell growth in the presence of the tested genotoxins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "52514971-8be1-4165-a195-e5269c0ab682",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C51",
+      "claim": "The H3DK36R/H3HK36R mutant was hypersensitive to phleomycin and mildly sensitive to MMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the H3DK36R/H3HK36R mutant was hypersensitive to phleomycin and mildly sensitive to MMS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "cd99ff8c-0b23-45a5-b7b8-f2660a45959c",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C52",
+      "claim": "Single-tail H3K36R or H3K79R mutants displayed an intermediate level of sensitivity to the genotoxic agents compared with the wild type and corresponding double-tail mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the wild type (H3D/H3H) and corresponding double-tail mutant, single-tail H3K36R or H3K79R mutants displayed an intermediate level of sensitivity to the genotoxic agents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "f0a96dc8-07d1-4fc8-8088-6110be8b39da",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C53",
+      "claim": "Single-tail H3K4R mutants displayed less growth in response to phleomycin treatment than did double-tail H3K4R mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The H3K4 mutants showed a similar level of sensitivity to HU and MMS, but single-tail H3K4R mutants displayed less growth in response to phleomycin treatment than did double-tail H3K4R mutants (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "165b0b44-4834-4635-a37d-acc59706a404",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C54",
+      "claim": "In response to DNA damage, H3K36me and H3K79me marks on sister histones functioned independently.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these observations suggest that, in response to DNA damage, H3K36me and H3K79me marks on sister histones functioned independently, whereas H3K4me marks on sister histones functioned cooperatively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing intermediate sensitivity to genotoxins in asymmetric K36R and K79R mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "fd87086c-37e5-498e-90aa-f298f31d203c",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C55",
+      "claim": "In response to DNA damage, H3K4me marks on sister histones functioned cooperatively.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these observations suggest that, in response to DNA damage, H3K36me and H3K79me marks on sister histones functioned independently, whereas H3K4me marks on sister histones functioned cooperatively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing that single-tail H3K4R mutants displayed less growth in response to phleomycin than double-tail mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "9e642237-cda1-45ce-a319-45cfaaf384d4",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C56",
+      "claim": "Of the 6000 genes in the yeast genome, approximately 2500 were altered by the H3K4 to R mutation in response to glucose starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 6000 genes in the yeast genome, approximately 2500 were altered by the H3K4 to R mutation in response to glucose starvation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-Seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "4f1c5d04-afdb-4597-9e4a-19e9e5ec96ed",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C57",
+      "claim": "Over 1500 genes' fold-change in both asymmetrical K4R mutants fell between those of H3D/H3H cells and double K4R mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 1500 genes' fold-change (MID, as defined in Materials and methods) in both asymmetrical K4R mutants (H3DK4R/H3H and H3D/H3HK4R) fell between those of H3D/H3H cells and double K4R mutants (Figure 8\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-Seq data shown in Figure 8\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "afaf3985-0a88-4fd1-b87e-2bb9b0af281b",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C58",
+      "claim": "22 genes' fold-changes in asymmetrical K4R mutant cells were nearly the same as those in symmetrical K4R mutant cells, indicating cooperativity of sister K4me at these loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistical analysis by t-test and a gene skewness score (GSS) model described in the Materials and methods revealed that 22 genes' fold-changes in asymmetrical K4R mutant (H3DK4R/H3H and H3D/H3HK4R) cells were nearly the same as those in symmetrical K4R mutant (H3DK4R/H3HK4R) cells (Figure 8A,B; Figure 8\u2014figure supplement 1B, Cluster I), indicating cooperativity of sister K4me at these loci.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-Seq data and statistical analysis shown in Figure 8A, B and Figure 8\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "02647f9b-4d61-4597-9d4f-25cb1c98b1d4",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C59",
+      "claim": "The fold-changes of 191 genes in asymmetrical K4R mutant cells exhibited an intermediate state between those in symmetrical K4R mutant and WT cells, suggesting that K4me on sister H3s independently regulates the expression of these genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The fold-changes of 191 genes in asymmetrical K4R mutant (H3DK4R/H3H and H3D/H3HK4R) cells exhibited an intermediate state between those in symmetrical K4R mutant (H3DK4R/H3HK4R) and WT(H3D/H3H) cells (p<0.05) (Figure 8A,B; Figure 8\u2014figure supplement 1B, Cluster II), suggesting that K4me on sister H3s independently regulates the expression of these genes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-Seq data and statistical analysis shown in Figure 8A, B and Figure 8\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "291668ca-7102-40ad-8d0f-b8a68844fc25",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C60",
+      "claim": "The fold-changes of 158 genes in asymmetrical K4R mutant cells were nearly the same as those in WT H3D/H3H cells, indicating redundancy of sister K4me at these loci.",
+      "claim_type": "EXPLICIT",
+      "source": "The fold-changes of 158 genes in asymmetrical K4R mutant (H3DK4R/H3H and H3D/H3HK4R) cells were nearly the same as those in WT H3D/H3H cells (Figure 8A,B; Figure 8\u2014figure supplement 1B, Cluster III), indicating redundancy of sister K4me at these loci.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-Seq data and statistical analysis shown in Figure 8A, B and Figure 8\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "59a7b429-bca6-45da-b997-e729a94d984b",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C61",
+      "claim": "An approximately 50% decrease in H3K4me3 in asymmetrical K4R mutants was confirmed in the 5' ORFs of the YOR008C, YMR315W and YLR359W genes.",
+      "claim_type": "EXPLICIT",
+      "source": "An approximately 50% decrease in H3K4me3 in asymmetrical K4R mutants was confirmed in the 5' ORFs of the YOR008C, YMR315W and YLR359W genes, which belong to the three clusters (Figure 8\u2014figure supplement 1C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 8\u2014figure supplement 1C\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "8abc0bb3-46d2-499e-a6b9-ec83fa5318a7",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C62",
+      "claim": "In response to glucose starvation stress, H3K4me on two sister histones in different gene loci impose their effects on transcription in a cooperative, independent or redundant manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These assessments suggest that, in response to glucose starvation stress, H3K4me on two sister histones in different gene loci impose their effects on transcription in a cooperative (e.g., Cluster I), independent (e.g., Cluster II) or redundant (e.g., Cluster III) manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the RNA-Seq data showing different patterns of gene expression in the three clusters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "f9901553-3e48-48e1-8c0a-024f466da588",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C63",
+      "claim": "The genes in Cluster I and II were mostly upregulated (log2fold change >0), while the genes in Cluster III were mostly downregulated (log2fold change <0).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the genes in Cluster I and II were mostly upregulated (log2fold change >0), while the genes in Cluster III were mostly downregulated (log2fold change <0) (Figure 8B), suggesting that under glucose starvation stress, the transcription of upregulated genes may require more subtle regulation mechanisms, such as asymmetrical modification of sister histones.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-Seq data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "10c07454-e8ef-461e-979f-82676bb61661",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C64",
+      "claim": "Under glucose starvation stress, the transcription of upregulated genes may require more subtle regulation mechanisms, such as asymmetrical modification of sister histones.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the genes in Cluster I and II were mostly upregulated (log2fold change >0), while the genes in Cluster III were mostly downregulated (log2fold change <0) (Figure 8B), suggesting that under glucose starvation stress, the transcription of upregulated genes may require more subtle regulation mechanisms, such as asymmetrical modification of sister histones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning based on the observation that upregulated genes show different patterns of regulation by asymmetric K4me.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "5752c3e8-82c4-42d5-a8fe-50d790535ab1",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C65",
+      "claim": "Many of the genes in Clusters I, II and III overlapped with genes that are regulated by SET1 deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the genes in Clusters I, II and III overlapped with genes that are regulated by SET1 deletion (Figure 8C, I\u2229set1\u2206, II\u2229set1\u2206 and III\u2229set1\u2206, respectively), indicating that these overlapping genes are most probably regulated by K4me rather than the K4R mutation on sister H3s.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-Seq data shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "7529c63f-c84f-4eb8-ab35-95cd59c90fbb",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C66",
+      "claim": "54 of the genes in the II\u2229set1\u2206 group were enriched in the pathways involved in glycometabolism, such as carbon metabolism, TCA cycle, and fructose and mannose metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, 54 of the genes in the II\u2229set1\u2206 group, which is regulated by sister H3K4me, were enriched in the pathways involved in glycometabolism, such as carbon metabolism, TCA cycle, and fructose and mannose metabolism (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by KEGG pathway analysis shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "2959f9b6-d666-4ba9-a995-40b00da74193",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C67",
+      "claim": "Under glucose starvation stress, a significant proportion of H3K4me-responsive genes are regulated by the fluctuation of H3K4me levels on sister H3s.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, under glucose starvation stress, a significant proportion of H3K4me-responsive genes are regulated by the fluctuation of H3K4me levels on sister H3s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the KEGG pathway analysis showing enrichment of glycometabolism genes in the II\u2229set1\u2206 group.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "1abbd4c0-acb5-4c33-8e11-4ac11bb1bbf3",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C68",
+      "claim": "The independent regulatory mode of sister H3K4me is an important player in response to glucose starvation stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis of the fold-changes of the genes in the glycometabolism-associated pathways revealed a pattern similar to that of Cluster II (Figure 8\u2014figure supplement 1G), suggesting that the independent regulatory mode of sister H3K4me is an important player in response to glucose starvation stress.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the analysis of fold-changes in glycometabolism genes shown in Figure 8\u2014figure supplement 1G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "b5b90e9d-b4fc-4e44-9c8c-b53fe834da44",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C69",
+      "claim": "The on-off regulatory mode for H3K4me is more likely to be applicable to the transcription of genes that do not specifically respond to external stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results support the notions that the on-off regulatory mode for H3K4me is more likely to be applicable to the transcription of genes that do not specifically respond to external stimuli (e.g., genes in the I\u2229set1\u2206 and III\u2229set1\u2206 groups), whereas the fine-tuning mode evolved to regulate the transcription of genes involved in stress-responsive pathways (e.g., genes in the II\u2229set1\u2206 group).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning based on the observation that genes in different clusters show different regulatory patterns.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "2673c341-8c7d-41c3-82f1-b32cede512e3",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "claim_id": "C70",
+      "claim": "The fine-tuning mode evolved to regulate the transcription of genes involved in stress-responsive pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results support the notions that the on-off regulatory mode for H3K4me is more likely to be applicable to the transcription of genes that do not specifically respond to external stimuli (e.g., genes in the I\u2229set1\u2206 and III\u2229set1\u2206 groups), whereas the fine-tuning mode evolved to regulate the transcription of genes involved in stress-responsive pathways (e.g., genes in the II\u2229set1\u2206 group).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning based on the observation that genes in Cluster II are enriched in stress-responsive pathways.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e3d3f3d3-3d18-4ed4-b440-26bc3d6a9e89",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on nucleosome structure, histone modifications (H3K4me, H3K36me, H3K79me), and the existence of asymmetrically modified nucleosomes in various cell types. These claims establish the scientific context and prior knowledge for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 are well-supported by citations to established structural and functional studies of nucleosomes and histone modifications. These represent accurate summaries of prior work in the field and provide appropriate context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "d78fef16-7e64-482e-817b-d5db698525c0",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors successfully created a bivalent nucleosome system in yeast by engineering H3A110D and H3L130H mutants that form heterodimers but not homodimers. These mutant histones assemble equally into nucleosomes at a 1:1 ratio in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 are supported by multiple complementary experimental approaches including 5-FOA selection (Figure 1E), co-immunoprecipitation (Figure 2A), and ChIP assays (Figure 2B). The data consistently demonstrate equal incorporation of both mutant histones into nucleosomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "c22c9592-f4ac-4d7d-8179-c2d6ae95840f",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The H3D/H3H mutant strain is functionally viable and largely similar to wild-type cells under most conditions, though it shows reduced growth in raffinose/glycerol medium and altered nucleosome stability at the GAL1 locus. Global histone PTM levels and gene expression profiles are similar to wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19 are supported by multiple experimental approaches including MNase digestion (Figure 2C), growth assays (Figure 2D-E), western blots (Figure 2F), and RNA-Seq (Figure 2G). The data demonstrate that while the system is functional, there are some phenotypic differences from wild-type that should be considered when interpreting results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "dc65d02a-d18e-4a37-b5f7-410d84d6852f",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "N-terminal deletion of one sister H3 tail (amino acids 4-15) results in approximately 50% reduction in H3K4me3 levels, indicating that H3K4 methylation on one tail does not influence methylation on the other tail.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 are supported by western blot data (Figure 3B-C) showing approximately 50% reduction in both H3 N-terminal signal and H3K4me3 in asymmetric deletion mutants. The inference that methylation occurs independently on each tail is reasonable given the quantitative data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "7cf70b8b-6e87-49c7-98db-1bd46bd5da99",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "H3K4me3 levels in asymmetric K4R mutants (H3DK4R/H3H or H3D/H3HK4R) are approximately 50% of wild-type levels, demonstrating that K4me3 on one tail does not influence K4me3 on the other tail. H3K4me3 and H3K36me3 are independently regulated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 are supported by western blot data (Figure 4B-C) showing approximately 50% reduction in H3K4me3 but no change in H3K36me3 in asymmetric K4R mutants. The independence of methylation on sister tails is a reasonable inference from the quantitative data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "593ed831-109b-4090-9c7a-3cca05c4a384",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Sister H3K4me3 marks independently regulate GAL1 transcription. Single-tail K4R mutants show intermediate GAL1 mRNA levels (2-fold increase) compared to wild-type, while double-tail mutants show a further 2-fold increase. GAL1 mRNA levels are inversely proportional to H3K4me3 levels and correlate with Gal4 recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C29 are supported by qRT-PCR data (Figure 4D-E), ChIP data for H3K4me3 (Figure 4F), and Gal4 recruitment (Figure 4G). The data consistently show intermediate phenotypes in asymmetric mutants, supporting independent function of sister H3K4me3 marks. The dose-dependent relationship is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "b37c0cb1-72cb-4f6c-93ad-2e823716d24f",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "H3K4me2/3 (but not mono-methylation) on sister H3s contributes to GAL1 regulation. Deletion of SPP1 (affecting H3K4me3) shows intermediate GAL1 expression in asymmetric K4R mutants, while deletion of SDC1 or SET1 does not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 are supported by qRT-PCR data (Figure 4H) combined with knowledge of the differential effects of SPP1, SDC1, and SET1 deletions on H3K4 methylation states. The intermediate phenotype in spp1\u0394 asymmetric mutants supports the conclusion that H3K4me2/3 is the relevant modification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "4ba261d0-4354-4faa-8c4e-ce7ece5b5e03",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "H3K36me3 levels in asymmetric K36R mutants are approximately 50% of wild-type levels, demonstrating that K36me3 on one tail does not affect K36me3 on the other tail. H3K36me3 and H3K4me are independently regulated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 are supported by western blot data (Figure 5B-C) showing approximately 50% reduction in H3K36me3 but no change in H3K4me3 in asymmetric K36R mutants. The independence of methylation on sister tails and between different modifications is a reasonable inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "775dd609-70d6-4a80-b02d-dde57135ec2a",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Sister H3K36me3 marks independently regulate suppression of spurious intragenic transcription. Asymmetric K36R mutants show intermediate levels of short transcripts and H4 acetylation compared to wild-type and double mutants. The effects are dependent on Set2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C42 are supported by Northern blot data (Figure 5D), ChIP data for H3K36me3 and H4ac (Figure 5E-F), and Set2 deletion experiments (Figure 5G). The intermediate phenotypes in asymmetric mutants and the inverse correlation between H3K36me3 and H4ac support independent function of sister H3K36me3 marks.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "a77c33e2-14a1-42fc-a0cb-0c2111a967f7",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Sister H3K79me marks act cooperatively to maintain telomeric gene silencing. While H3K79me2/3 levels in asymmetric K79R mutants are approximately 50% of wild-type, these mutants show complete loss of silencing similar to double K79R mutants, indicating cooperative rather than independent function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C49 are supported by western blot data (Figure 6B-C), qRT-PCR of telomeric genes (Figure 6D), and ChIP data (Figure 6E-F). The key observation is that asymmetric mutants show the same silencing loss as double mutants despite having 50% H3K79me levels, strongly supporting cooperative function. This contrasts with the independent function observed for H3K4me3 and H3K36me3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "565987cb-e83a-4265-bf2a-573db0b60dbf",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Sister histone modifications differentially affect DNA damage responses. H3K36me and H3K79me marks function independently (showing intermediate sensitivity in asymmetric mutants), while H3K4me marks function cooperatively (single-tail mutants show greater sensitivity to phleomycin than double-tail mutants).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C55 are supported by growth assays on genotoxic agents (Figure 7). The intermediate sensitivity of asymmetric K36R and K79R mutants supports independent function, while the greater sensitivity of single-tail K4R mutants to phleomycin compared to double-tail mutants supports cooperative function. However, the mechanistic basis for these differences is not explored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "757feb82-90e5-4f3f-aa2d-b4d48032498f",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Genome-wide analysis under glucose starvation reveals that sister H3K4me marks regulate different genes through cooperative (22 genes in Cluster I), independent (191 genes in Cluster II), or redundant (158 genes in Cluster III) mechanisms. Upregulated genes are enriched in Clusters I and II, while downregulated genes are enriched in Cluster III.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C63 are supported by RNA-Seq data and statistical analysis using a gene skewness score (GSS) model (Figure 8A-B, Figure 8\u2014figure supplement 1). The classification of genes into three clusters based on their response patterns in asymmetric mutants is methodologically sound. ChIP validation of H3K4me3 levels at representative genes (Figure 8\u2014figure supplement 1C-E) supports the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "79757571-0165-4a18-a474-98b2a0936e00",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Under glucose starvation stress, upregulated genes may require more subtle regulation mechanisms such as asymmetrical modification of sister histones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C64 is speculative reasoning based on the observation that upregulated genes are enriched in Clusters I and II. While the observation is supported by data (C63), the mechanistic interpretation that this represents a requirement for \"more subtle regulation\" is not directly tested and remains a hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "4ef929f8-f67e-43fc-8f9f-b20b92d0e80f",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Many genes in Clusters I, II, and III overlap with genes regulated by SET1 deletion, confirming they are regulated by H3K4me rather than K4R mutation artifacts. Genes in Cluster II (independently regulated by sister H3K4me) are enriched in glycometabolism pathways, suggesting this regulatory mode is important for glucose starvation response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C68 are supported by comparison with SET1 deletion RNA-Seq data (Figure 8C) and KEGG pathway analysis (Figure 8D, Figure 8\u2014figure supplement 1G). The overlap with SET1-regulated genes validates that the observed effects are due to H3K4me rather than K4R mutation artifacts. The enrichment of glycometabolism genes in Cluster II is statistically significant and biologically relevant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    },
+    {
+      "id": "e852bd1c-c854-43c9-bdce-a8d42877b9d2",
+      "content_id": "32f41836-ebd2-4e11-a6ee-514ca198b7c2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The on-off regulatory mode for H3K4me applies to genes not specifically responding to external stimuli (Clusters I and III), while the fine-tuning mode evolved to regulate stress-responsive pathway genes (Cluster II).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C69-C70 represent speculative evolutionary reasoning based on the observed patterns of gene regulation. While the data show different regulatory patterns for different gene clusters, the evolutionary interpretation that the \"fine-tuning mode evolved\" for stress-responsive pathways is not directly tested and remains a hypothesis requiring further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:33:26.177040Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fcdcbccf-edfd-495e-885e-fecbf024143d",
+      "result_id": "e3d3f3d3-3d18-4ed4-b440-26bc3d6a9e89"
+    },
+    {
+      "claim_id": "2c0d907a-0779-470b-bb60-70cc05a6247e",
+      "result_id": "e3d3f3d3-3d18-4ed4-b440-26bc3d6a9e89"
+    },
+    {
+      "claim_id": "f8d5fbee-12a6-4ea8-bc1a-2d181afeb0ee",
+      "result_id": "e3d3f3d3-3d18-4ed4-b440-26bc3d6a9e89"
+    },
+    {
+      "claim_id": "9a829989-7adc-4f69-80e2-63689f7fa111",
+      "result_id": "e3d3f3d3-3d18-4ed4-b440-26bc3d6a9e89"
+    },
+    {
+      "claim_id": "c17be16a-5854-4181-aee4-23d60086d7c5",
+      "result_id": "e3d3f3d3-3d18-4ed4-b440-26bc3d6a9e89"
+    },
+    {
+      "claim_id": "ef61d674-4a70-4839-9b80-c5fc093c4fc2",
+      "result_id": "e3d3f3d3-3d18-4ed4-b440-26bc3d6a9e89"
+    },
+    {
+      "claim_id": "97724958-3058-485a-9f4b-8d00b581c18d",
+      "result_id": "e3d3f3d3-3d18-4ed4-b440-26bc3d6a9e89"
+    },
+    {
+      "claim_id": "5f115f31-d00b-41d8-a5d0-d13e948113d9",
+      "result_id": "e3d3f3d3-3d18-4ed4-b440-26bc3d6a9e89"
+    },
+    {
+      "claim_id": "d7565521-4e55-4c2f-80e3-9e0a80032381",
+      "result_id": "e3d3f3d3-3d18-4ed4-b440-26bc3d6a9e89"
+    },
+    {
+      "claim_id": "9e604adb-1835-4608-aea9-caa03e70e127",
+      "result_id": "d78fef16-7e64-482e-817b-d5db698525c0"
+    },
+    {
+      "claim_id": "9fb6c257-1212-4cc7-a26a-8b4a78d4d700",
+      "result_id": "d78fef16-7e64-482e-817b-d5db698525c0"
+    },
+    {
+      "claim_id": "ab606841-29d0-4977-a797-c422f8850c92",
+      "result_id": "d78fef16-7e64-482e-817b-d5db698525c0"
+    },
+    {
+      "claim_id": "1087f3fb-0b6b-4c51-9ec0-08d508505e9f",
+      "result_id": "d78fef16-7e64-482e-817b-d5db698525c0"
+    },
+    {
+      "claim_id": "c212c302-4df1-475e-be72-9016b7c01cf0",
+      "result_id": "c22c9592-f4ac-4d7d-8179-c2d6ae95840f"
+    },
+    {
+      "claim_id": "fcf550c7-8f8f-4bdd-bc54-c71f33fdcee8",
+      "result_id": "c22c9592-f4ac-4d7d-8179-c2d6ae95840f"
+    },
+    {
+      "claim_id": "631f11f0-677c-4420-b97a-5943e3ea056b",
+      "result_id": "c22c9592-f4ac-4d7d-8179-c2d6ae95840f"
+    },
+    {
+      "claim_id": "80fb73da-661b-4957-b053-21ca9e112a90",
+      "result_id": "c22c9592-f4ac-4d7d-8179-c2d6ae95840f"
+    },
+    {
+      "claim_id": "cc96871d-6edc-437a-b241-7f1d4d6fbc67",
+      "result_id": "c22c9592-f4ac-4d7d-8179-c2d6ae95840f"
+    },
+    {
+      "claim_id": "d3e477e5-8903-486e-8bba-8963c01ccb3f",
+      "result_id": "c22c9592-f4ac-4d7d-8179-c2d6ae95840f"
+    },
+    {
+      "claim_id": "594ed70a-0530-42be-a41f-2555c3751a26",
+      "result_id": "dc65d02a-d18e-4a37-b5f7-410d84d6852f"
+    },
+    {
+      "claim_id": "76a6c153-3d81-4cea-ae4d-8eb9f06a2f8c",
+      "result_id": "dc65d02a-d18e-4a37-b5f7-410d84d6852f"
+    },
+    {
+      "claim_id": "6cf80dc9-87ea-446c-ab4f-3738c282a577",
+      "result_id": "7cf70b8b-6e87-49c7-98db-1bd46bd5da99"
+    },
+    {
+      "claim_id": "8cff94ac-c6c0-4485-9489-bca03aff5fcb",
+      "result_id": "7cf70b8b-6e87-49c7-98db-1bd46bd5da99"
+    },
+    {
+      "claim_id": "edc47394-978d-4721-96b4-e8667bb6f29a",
+      "result_id": "7cf70b8b-6e87-49c7-98db-1bd46bd5da99"
+    },
+    {
+      "claim_id": "718e2540-dd7a-47ff-99bb-40bc4503ccf5",
+      "result_id": "593ed831-109b-4090-9c7a-3cca05c4a384"
+    },
+    {
+      "claim_id": "6d18eb9f-5fc8-45f1-9f87-e8db7a32bcc6",
+      "result_id": "593ed831-109b-4090-9c7a-3cca05c4a384"
+    },
+    {
+      "claim_id": "d4157d54-df79-410c-a78d-f7564c3ff2e6",
+      "result_id": "593ed831-109b-4090-9c7a-3cca05c4a384"
+    },
+    {
+      "claim_id": "3d531edd-641c-4252-9838-64510c6398a0",
+      "result_id": "593ed831-109b-4090-9c7a-3cca05c4a384"
+    },
+    {
+      "claim_id": "10b19ef2-7a54-4113-aefc-fb6afbae54a3",
+      "result_id": "593ed831-109b-4090-9c7a-3cca05c4a384"
+    },
+    {
+      "claim_id": "0453a8c5-e7e1-408e-bae3-ba3af8e14cb5",
+      "result_id": "b37c0cb1-72cb-4f6c-93ad-2e823716d24f"
+    },
+    {
+      "claim_id": "ae3a63fd-c0f3-47e8-a0b0-aa12dfc0cfe9",
+      "result_id": "b37c0cb1-72cb-4f6c-93ad-2e823716d24f"
+    },
+    {
+      "claim_id": "7631c2a4-e477-4ade-bb40-17906bd967c0",
+      "result_id": "b37c0cb1-72cb-4f6c-93ad-2e823716d24f"
+    },
+    {
+      "claim_id": "a2107349-fa70-4b6f-98c8-0895d67d3174",
+      "result_id": "b37c0cb1-72cb-4f6c-93ad-2e823716d24f"
+    },
+    {
+      "claim_id": "bf2c2302-42be-4c8f-b3d2-8154799bb227",
+      "result_id": "4ba261d0-4354-4faa-8c4e-ce7ece5b5e03"
+    },
+    {
+      "claim_id": "6a941fc4-6de3-4055-b0e5-729107f3139d",
+      "result_id": "4ba261d0-4354-4faa-8c4e-ce7ece5b5e03"
+    },
+    {
+      "claim_id": "6999ee48-34dd-4856-b0ba-87d8a393f493",
+      "result_id": "4ba261d0-4354-4faa-8c4e-ce7ece5b5e03"
+    },
+    {
+      "claim_id": "13b7b4e6-86d7-44df-a416-ff9f0c705aae",
+      "result_id": "775dd609-70d6-4a80-b02d-dde57135ec2a"
+    },
+    {
+      "claim_id": "eb11f109-1a9d-436b-882d-6609a54b9d92",
+      "result_id": "775dd609-70d6-4a80-b02d-dde57135ec2a"
+    },
+    {
+      "claim_id": "bf4a515d-4005-4e1b-97e5-9801ee24208c",
+      "result_id": "775dd609-70d6-4a80-b02d-dde57135ec2a"
+    },
+    {
+      "claim_id": "abd7bfcf-a514-4c01-be21-d9e01d623b5f",
+      "result_id": "775dd609-70d6-4a80-b02d-dde57135ec2a"
+    },
+    {
+      "claim_id": "a638cb63-b480-4f67-9920-ca85e3fbdf37",
+      "result_id": "775dd609-70d6-4a80-b02d-dde57135ec2a"
+    },
+    {
+      "claim_id": "b0009b77-7f80-422b-acd0-9b3cb73a92c3",
+      "result_id": "775dd609-70d6-4a80-b02d-dde57135ec2a"
+    },
+    {
+      "claim_id": "455dc0e8-078b-4f32-9331-c1b3016793f7",
+      "result_id": "a77c33e2-14a1-42fc-a0cb-0c2111a967f7"
+    },
+    {
+      "claim_id": "d7880dd2-bae2-4a8e-a820-7ca6f049f482",
+      "result_id": "a77c33e2-14a1-42fc-a0cb-0c2111a967f7"
+    },
+    {
+      "claim_id": "519fd7bf-208e-4722-a86e-d335a6757f10",
+      "result_id": "a77c33e2-14a1-42fc-a0cb-0c2111a967f7"
+    },
+    {
+      "claim_id": "dca07183-b497-458f-a7a2-1365389770c1",
+      "result_id": "a77c33e2-14a1-42fc-a0cb-0c2111a967f7"
+    },
+    {
+      "claim_id": "57b183a1-3b6f-4f34-b62e-e73254cd2db3",
+      "result_id": "a77c33e2-14a1-42fc-a0cb-0c2111a967f7"
+    },
+    {
+      "claim_id": "c1615ebc-7086-4c45-bf48-8a31e1e9801b",
+      "result_id": "a77c33e2-14a1-42fc-a0cb-0c2111a967f7"
+    },
+    {
+      "claim_id": "39970620-d6d8-4e52-8a3b-440941a7c46c",
+      "result_id": "a77c33e2-14a1-42fc-a0cb-0c2111a967f7"
+    },
+    {
+      "claim_id": "705280db-841f-42d2-a04c-25651eb82f24",
+      "result_id": "565987cb-e83a-4265-bf2a-573db0b60dbf"
+    },
+    {
+      "claim_id": "52514971-8be1-4165-a195-e5269c0ab682",
+      "result_id": "565987cb-e83a-4265-bf2a-573db0b60dbf"
+    },
+    {
+      "claim_id": "cd99ff8c-0b23-45a5-b7b8-f2660a45959c",
+      "result_id": "565987cb-e83a-4265-bf2a-573db0b60dbf"
+    },
+    {
+      "claim_id": "f0a96dc8-07d1-4fc8-8088-6110be8b39da",
+      "result_id": "565987cb-e83a-4265-bf2a-573db0b60dbf"
+    },
+    {
+      "claim_id": "165b0b44-4834-4635-a37d-acc59706a404",
+      "result_id": "565987cb-e83a-4265-bf2a-573db0b60dbf"
+    },
+    {
+      "claim_id": "fd87086c-37e5-498e-90aa-f298f31d203c",
+      "result_id": "565987cb-e83a-4265-bf2a-573db0b60dbf"
+    },
+    {
+      "claim_id": "9e642237-cda1-45ce-a319-45cfaaf384d4",
+      "result_id": "757feb82-90e5-4f3f-aa2d-b4d48032498f"
+    },
+    {
+      "claim_id": "4f1c5d04-afdb-4597-9e4a-19e9e5ec96ed",
+      "result_id": "757feb82-90e5-4f3f-aa2d-b4d48032498f"
+    },
+    {
+      "claim_id": "afaf3985-0a88-4fd1-b87e-2bb9b0af281b",
+      "result_id": "757feb82-90e5-4f3f-aa2d-b4d48032498f"
+    },
+    {
+      "claim_id": "02647f9b-4d61-4597-9d4f-25cb1c98b1d4",
+      "result_id": "757feb82-90e5-4f3f-aa2d-b4d48032498f"
+    },
+    {
+      "claim_id": "291668ca-7102-40ad-8d0f-b8a68844fc25",
+      "result_id": "757feb82-90e5-4f3f-aa2d-b4d48032498f"
+    },
+    {
+      "claim_id": "59a7b429-bca6-45da-b997-e729a94d984b",
+      "result_id": "757feb82-90e5-4f3f-aa2d-b4d48032498f"
+    },
+    {
+      "claim_id": "8abc0bb3-46d2-499e-a6b9-ec83fa5318a7",
+      "result_id": "757feb82-90e5-4f3f-aa2d-b4d48032498f"
+    },
+    {
+      "claim_id": "f9901553-3e48-48e1-8c0a-024f466da588",
+      "result_id": "757feb82-90e5-4f3f-aa2d-b4d48032498f"
+    },
+    {
+      "claim_id": "10c07454-e8ef-461e-979f-82676bb61661",
+      "result_id": "79757571-0165-4a18-a474-98b2a0936e00"
+    },
+    {
+      "claim_id": "5752c3e8-82c4-42d5-a8fe-50d790535ab1",
+      "result_id": "4ef929f8-f67e-43fc-8f9f-b20b92d0e80f"
+    },
+    {
+      "claim_id": "7529c63f-c84f-4eb8-ab35-95cd59c90fbb",
+      "result_id": "4ef929f8-f67e-43fc-8f9f-b20b92d0e80f"
+    },
+    {
+      "claim_id": "2959f9b6-d666-4ba9-a995-40b00da74193",
+      "result_id": "4ef929f8-f67e-43fc-8f9f-b20b92d0e80f"
+    },
+    {
+      "claim_id": "1abbd4c0-acb5-4c33-8e11-4ac11bb1bbf3",
+      "result_id": "4ef929f8-f67e-43fc-8f9f-b20b92d0e80f"
+    },
+    {
+      "claim_id": "b5b90e9d-b4fc-4e44-9c8c-b53fe834da44",
+      "result_id": "e852bd1c-c854-43c9-bdce-a8d42877b9d2"
+    },
+    {
+      "claim_id": "2673c341-8c7d-41c3-82f1-b32cede512e3",
+      "result_id": "e852bd1c-c854-43c9-bdce-a8d42877b9d2"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1527 @@
+{
+  "submission": {
+    "id": "53293ba3-97e2-4dcf-8a13-e4a3fecdcee6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:58:52.083007Z",
+    "updated_at": "2025-12-02T01:58:52.083007Z"
+  },
+  "content": [
+    {
+      "id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "submission_id": "53293ba3-97e2-4dcf-8a13-e4a3fecdcee6",
+      "content_type": "manuscript",
+      "content_text": "# Cerebellar involvement in an evidence-accumulation decision-making task\n\n## Authors\n\n- Ben Deverett<sup>1</sup> ([ORCID: 0000-0002-3119-7649](https://orcid.org/0000-0002-3119-7649)) \u2020\n- Sue Ann Koay<sup>2</sup>\n- Marlies Oostland<sup>2</sup> ([ORCID: 0000-0001-9474-4040](https://orcid.org/0000-0001-9474-4040))\n- Samuel S-H Wang<sup>1</sup> ([ORCID: 0000-0002-0490-9786](https://orcid.org/0000-0002-0490-9786)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Biology Princeton University Princeton United States\n2. Princeton Neuroscience Institute Princeton University Princeton United States\n3. Rutgers Robert Wood Johnson Medical School Piscataway United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTo make successful evidence-based decisions, the brain must rapidly and accurately transform sensory inputs into specific goal-directed behaviors. Most experimental work on this subject has focused on forebrain mechanisms. Using a novel evidence-accumulation task for mice, we performed recording and perturbation studies of crus I of the lateral posterior cerebellum, which communicates bidirectionally with numerous forebrain regions. Cerebellar inactivation led to a reduction in the fraction of correct trials. Using two-photon fluorescence imaging of calcium, we found that Purkinje cell somatic activity contained choice/evidence-related information. Decision errors were represented by dendritic calcium spikes, which in other contexts are known to drive cerebellar plasticity. We propose that cerebellar circuitry may contribute to computations that support accurate performance in this perceptual decision-making task.\n\n## Introduction\n\nAlthough the cerebellum is best known for its role in controlling movement, clinical and experimental evidence have long indicated that the posterior cerebellum regulates a wide range of cognitive functions (Konarski et al., 2005; Schmahmann and Sherman, 1998; Stoodley et al., 2012), including decision-making and working memory (Blackwood et al., 2004; Desmond et al., 1997; Ernst et al., 2002; Kansal et al., 2017). For example, focal cerebellar lesions in humans lead to impairment in working memory performance (Gottwald, 2004), and cerebellar fMRI activation increases with working memory demands (K\u00fcper et al., 2016). However, very little is known about the circuit mechanisms supporting these roles.\n\nIn the domain of movement control, the cerebellum is thought to use sensory and internal information as a means of adjusting action on a subsecond scale (Krakauer and Shadmehr, 2006). The cerebellar cortex consists of highly characteristic circuitry occurring in repeating modules which are likely to perform similar manipulations on information irrespective of whether the information is sensory, motor, or neither (Popa et al., 2014; Reeber et al., 2013). Thus, well-established models of cerebellar motor learning may be expanded to support the control of cognitive processing (Ito, 2008).\n\nNeuronal correlates of the perceptual decision-making process have been studied using behavioral tasks in animal models (Carandini and Churchland, 2013) including evidence\u00a0accumulation paradigms in which animals must continuously update the contents of working memory to guide a decision (Brunton et al., 2013; Gold and Shadlen, 2007; Morcos and Harvey, 2016; Pinto et al., 2018a). Behavioral performance in these tasks develops over time and can be marked by decision side biases, history effects, and error rates that diminish with training (Pinto et al., 2018a). The detailed mechanisms by which accurate decisions are formed and errors are reduced remain unsolved.\n\nNeurons in multiple brain structures across species have been found to represent various stages in the transformation from sensory information to decision signals. These regions include prefrontal, premotor, parietal, and primary and secondary sensory cortices, striatum, midbrain structures, and possibly others (Akrami et al., 2018; Brody and Hanks, 2016; Gold and Shadlen, 2007; Scott et al., 2017; Yartsev et al., 2018). Many of these structures are reciprocally connected with the cerebellum, notably with posterior cerebellar regions such as crus I (Kelly and Strick, 2003; Prevosto et al., 2010; Strick et al., 2009). Communication between forebrain structures and the posterior cerebellum (Buckner et al., 2011; Stoodley et al., 2017) raises the possibility that the cerebellum might participate in the formation or updating of decision-related signals.\n\nWe investigated cerebellar neural activity during decision-making in a head-fixed rodent model. Like previously developed decision-making tasks (Brunton et al., 2013; Morcos and Harvey, 2016; Shadlen and Newsome, 2001), our task demands dynamic manipulation of working memory and decision-making under uncertainty, which recruit cerebellar activation in humans (Blackwood et al., 2004; Kansal et al., 2017), as well as the correction of errors, a cerebellar role that may extend beyond the motor domain (Ito, 2008).\n\n## Results\n\n### A decision-making task for cerebellar investigations\n\nTo study decision-making in the cerebellum, we developed a task with five key properties: (1) integration of evidence over seconds (Scott et al., 2015), (2) minimal movement until presentation of a readout cue (Shadlen and Newsome, 2001), (3) task structure to match established decision-making frameworks (Brunton et al., 2013), (4) sensorimotor engagement of the lateral posterior cerebellum (Manni and Petrosini, 2004), and (5) amenability to head-fixed conditions to facilitate two-photon imaging (Dombeck et al., 2007). In our evidence\u00a0accumulation task (Figure 1A, Video 1), each trial contains a 3.8 s cue period in which a series of air puffs (pieces of evidence) is delivered to the left and right whiskers. Then, following a short delay period with no stimuli, lick ports are brought into the animal\u2019s reach and mice lick leftward or rightward to indicate which side received the greater number of stimuli, with a correct response leading to a water reward to end the trial. Puffs are generated randomly with differing rates on each side, demanding that mice continually attend to the stimuli to achieve optimal performance (Brunton et al., 2013).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/36781/elife-36781-fig1-v3.jpg)\n\n**Figure 1.:** (A) In each trial, two streams of random, temporally Poisson-distributed air puffs were delivered to the left and right whiskers. After a delay, mice licked one of two lick ports indicating the side with more cumulative puffs to receive a water reward. Gray-shaded regions from left to right: cue period, delay, intertrial interval. Decision lick: first detected lick after the delay. (B) Psychometric performance data on the evidence\u00a0accumulation task. Gray lines, individual mice; black points, average across all trials from all animals (n\u00a0=\u00a038,615 trials, 12 mice). (C) Logistic regression analysis correlating animal choice with cues delivered at different time bins of evidence presentation, demonstrating that the entire cue period was used to guide decisions. Each point indicates the magnitude of that time bin\u2019s influence on decisions (all points significantly greater than zero, Wald test, p<0.0001). For comparison, bins (gray points) or choices (shaded 1 s.d. gray zone) were shuffled. Error bars: 95% confidence interval. (D) Behavioral effect of bilateral injections of muscimol or saline into crus I, compared to baseline performance with no injections. Each set of joined points represents one mouse. Error bars: 95% confidence interval. *p<0.05, n.s.: not significant (two-tailed paired t-test). (E) Movie-based licking measurements from mice over the duration of trials. Bar heights show mean\u00a0\u00b1s.e.m. across animals of trial-averaged licking signals. (F) Example cranial window over the left posterior hemispheric cerebellum, indicating the site of imaging and inactivation.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36781/elife-36781-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Psychometric data for individual subjects in individual behavioral sessions. For each subject, data from the session at the 75th percentile of performance is displayed. (B) Histogram of percent correct performance over all mice and sessions in the accumulation stages of the task.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36781/elife-36781-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Left: Psychometric curves for all trials from the baseline, saline, and muscimol conditions. Only L/R: trials from earlier in the shaping procedure were delivered, in which puffs were presented exclusively on the correct side, guide puffs were delivered following the cue period, and free rewards were delivered on the correct side. Performance was measured according to the side that the mice licked first, just as they do to indicate their decision in the main task. Right: Regression analysis as in Figure 1C for all trials in the indicated conditions. Error bars: 95% confidence interval. (B) Quantification of lick rate and decision latency (time from port arrival to decision lick) for all mice in all conditions. Boxes: lower and upper quartiles, line: median, whiskers: 5th to 95th percentile. Within-subject differences of rate and latency across control (baseline/saline) and muscimol conditions, and across left (L) and right (R) choices, were not significant (p>0.05, two-tailed paired t-test). As in all analyses, trials with no decision lick were excluded; this accounted for 2.0 \u00b1 2.7% of trials in the baseline condition, and 2.6 \u00b1 5.1% of trials in the muscimol condition (mean\u00a0\u00b1std over sessions), and was not significantly different across the baseline and muscimol conditions (p=0.54, two-tailed t-test). (C) Best-fit coefficients from the behavioral regression model. Each data point corresponds to one pair of sessions (colored by animal identity), corresponding to a muscimol inactivation session and the control session directly preceding it. Error bars indicate standard error of the fit coefficients. The evidence\u00a0sensitivity parameter was significantly reduced in the muscimol condition relative to control, and the success history and failure history fit parameters were significantly increased relative to control (p<0.05, bootstrap). For the latter three parameters, one data point is omitted from display because the best-fit standard error was uninterpretably large (>8 standard deviations from others). (D) Psychometric curves for all trials from the five individual subjects in the control and muscimol conditions (one panel per subject). Curves show fits to a four-parameter logistic function (see Methods). In top-left panel, L and R indicate additional sessions in which muscimol was delivered only to the left (L) or right (R) cerebellum, to determine whether vertical shifts in the psychometric curve can be explained by left-right asymmetry of injections. Error bars: 95% confidence interval.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/36781/elife-36781-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** For three mice in the muscimol inactivation experiment, coronal view demonstrating the sites of injection of muscimol, as marked by fluorescein delivered by injection of identical protocol after completion of the experiments. Lesions near or encompassing injections sites may be due to bone growth or damage from implant removal.\n\n![Video 1.](https://cdn.elifesciences.org/articles/36781/elife-36781-video1.mp4.jpg)\n\n**Video 1.:** Flashes along the sides indicate air puffs delivered to the whiskers. Flashes along the bottom indicate detected licks.\n\nMice learned to perform this task with high accuracy (Figure 1B, Figure 1\u2014figure supplement 1). Behavioral regression analysis demonstrates that mice used evidence throughout the entire cue period to guide decisions, with a bias for evidence toward the end of the cue period (Figure 1C), similar to some recency strategies that have been documented in human evidence accumulation (de Lange et al., 2010). Like other tasks in which movement is minimal until a go cue is presented (Scott et al., 2017; Shadlen and Newsome, 2001), mice learned not to lick during evidence presentation (Figure 1E). This task can therefore be used to study working memory, evidence accumulation, and decision-making under head-fixed conditions.\n\nWe focused our study on the ansiform area (crus I) (Luo et al., 2017) of the posterior hemispheric cerebellum (Figure 1F), a region that evolutionarily expanded\u00a0in\u00a0tandem with prefrontal cortex (Balsters et al., 2010) and communicates bidirectionally with forebrain regions including prefrontal, parietal, and somatosensory cortex (Kelly and Strick, 2003; Prevosto et al., 2010; Proville et al., 2014). This cerebellar region represents orofacial features under anesthesia (Manni and Petrosini, 2004; Shambes et al., 1978), suggesting that it might aid in processing complex task-related information. First, to determine whether activity in this cerebellar region participates in the decision-making behavior, we injected the GABAA agonist muscimol bilaterally into crus I. Inactivations reduced choice accuracy while leaving intact the ability to lick and perform trials (Figure 1D, Figure 1\u2014figure supplement 2). To quantify the behavioral effects of the perturbation, we fit the inactivation data to a logistic regression model that considers the animal\u2019s choice on a trial-by-trial basis as a function of current evidence, the previous trial choice and outcome, and a bias (Busse et al., 2011; Licata et al., 2017). Fits to this model suggest that inactivations altered multiple behavioral parameters, notably including a reduction in animals\u2019 sensitivity to evidence and an increased tendency to make the same choice as in the previous trial (Figure 1\u2014figure supplement 2C). Therefore, activity in this region is necessary for successful performance of the task, suggesting it may play a role in decision-making computations.\n\n### Purkinje cell somatic calcium encodes task-relevant information\n\nIn previously investigated brain regions, neurons exhibit choice- and evidence-specific modulations of activity over the duration of evidence accumulation and decision-making (Ding and Gold, 2012; Hanks et al., 2015; Latimer et al., 2015; Scott et al., 2017; Shadlen and Newsome, 2001). To test for choice- and evidence-related activity in Purkinje cells, we imaged somatic calcium, which follows modulations in simple-spike rate (Lev-Ram et al., 1992; Ramirez and Stell, 2016), using the genetically encodable calcium indicator GCaMP6f in mice performing the decision-making task (Figure 2A,B). We imaged a total of 843 Purkinje cell somata in four mice. We found a population of cells in which calcium activity was modulated during the cue period, exhibiting increases or decreases in fluorescence spanning the duration of evidence accumulation and decision formation (Figure 2C\u2013E). In 70% of cells, cue-period fluorescence was better correlated with time than pre-cue-period fluorescence was (95% CI: 67\u201372%, bootstrap). This was significant compared to when cue and pre-cue period identity was shuffled (49% of cells; 95% CI: 46\u201352%). These modulations were sometimes evident at the level of individual trials (Figure 2\u2014figure supplement 1). At the end of each trial, activity returned to baseline (p=0.91, two-tailed paired t-test).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/36781/elife-36781-fig2-v3.jpg)\n\n**Figure 2.:** (A) Example two-photon field of view of Purkinje cell somata. (B) Traces of extracted calcium signals from somata indicated in (A). Shaded regions and ramps at top indicate cue periods. (C) Trial-averaged activity during evidence presentation from two example cells. Modulation index r was defined as the Pearson correlation between the averaged signal and time in the cue period. Confidence interval on traces indicates s.e.m. (D) Cue-period fluorescence modulation in all imaged somata (n\u00a0=\u00a04 mice, 843 cells). Modulation index r was computed preceding the cue period (\u2018pre-cue\u2019) and during the cue period. (E) Trial-averaged activity during the cue period of neurons with the highest absolute modulation index (top 5%) in each session. \u2206F/F signals are mean-subtracted. (F) Output of a linear decoder predicting the animal\u2019s upcoming choice and the side with more evidence on a trial-by-trial basis using somatic data from the cue period of each trial. Each trace represents the mean\u00a0\u00b1s.e.m. (n\u00a0=\u00a06 sessions in four mice). Choice: side of the animal\u2019s decision. Evidence: side with more evidence. Gray-shaded regions: cue period. Shuffle: relevant variable (choice or evidence, respectively) was shuffled across trials. Ind: relevant variable (choice or evidence, respectively) was shuffled while holding the other variable constant, to compute the independence of encoding of the relevant feature. *: p<0.01 (paired t-test using cue-period-only data).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36781/elife-36781-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** For two example somata, activity is shown in the cue period of 12 individual trials with modulated activity. Each trace derives from one trial. Evidence presentation begins at the dashed line.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36781/elife-36781-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Example electrophysiological recording from a crus I Purkinje cell during the cue period of one trial in a mouse performing the evidence\u00a0accumulation task. (B) Top: trial-averaged activity of the cell shown in (A). Gray shading: cue period. Error shading: s.e.m. Bottom: trial-averaged calcium signal from the cell shown in Figure 2C, for comparison to electrical trace. (C) Trial-averaged activity of nine Purkinje cells from three mice. Thin lines: individual cells. Thick line: mean across cells. Gray shading: cue period. (D) Comparison of mean firing rates in the final 1 s of the cue period (\u2018end of cue period\u2019) relative to the 1 s preceding the cue period (\u2018pre-cue period\u2019). Thin lines: individual cells. Thick line: mean across cells. *p<0.001, two-tailed paired t-test.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/36781/elife-36781-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** For the closed-loop experimental apparatus, licks during decisions and reward consumption were measured by an electrical detector which retracted during evidence presentation. Therefore, here we measured licking during evidence presentation (when ports were retracted) using behavioral movies. (A) Mouth movement was measured using a region-of-interest analysis, and aligns with electrical measures of licking. (B) Licking measurements from all mice in all somatic imaging sessions, split according to the choice or correct side of the trials. Within-session difference: absolute difference between mean licking signals of the two displayed conditions, computed on a session-by-session basis. Bar heights indicate mean\u00a0\u00b1s.e.m. across sessions.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/36781/elife-36781-fig2-figsupp4-v3.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Movements of the nose, whiskers, and paws were measured from behavioral movies (see Materials and methods, Video 2, Video 3). Top five rows: each row represents one movement parameter. Left column: movement quantified during the cue period and split according to the subsequent choice made at the end of the trial. Black bars were computed as the difference between left and right trials on a session-by-session basis. Right column: same as left, but trials were split according to the correct side of the trial (side with more evidence). Bar heights indicate mean \u00b1s.e.m. across all somatic imaging sessions in all subjects. Mean movement rates did not differ across left- and right-choice trials (p=0.17 for nose, p=0.16 for left whiskers, p=0.61 for right whiskers, p=0.47 for left forepaw, p=0.33 for right forepaw; two-tailed paired t-test), or across left- and right-evidence trials (p=0.16 for nose, p=0.96 for left whiskers, p=0.47 for right whiskers, p=0.15 for left forepaw, p=0.72 for right forepaw; two-tailed paired t-test). Bottom row: decoding was performed as in Figure 2F, except using the above movement measurements as regressors. Solid line: decoding accuracy, error shading: mean \u00b1sem over sessions. Dotted line: somatic decoding accuracy from Figure 2F for comparison.\n\nCytoplasmic calcium acts as a temporally filtered readout of firing rate, and calcium extrusion in Purkinje cells occurs on a slower time scale (see\u00a0Figure\u00a03B;\u00a0Konnerth et al., 1992; Lev-Ram et al., 1992; Fierro and Llano, 1996; Rokni and Yarom, 2009; Ramirez and Stell, 2016) than in neocortical neurons (Chen et al., 2013). Therefore, our observed increasing and decreasing time courses of calcium could reflect various firing rate profiles, such as impulse responses, ramps, or steps. We did find that electrically recorded Purkinje cells exhibited gradually increasing rates of firing throughout the cue period (Figure 2\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/36781/elife-36781-fig3-v3.jpg)\n\n**Figure 3.:** (A) Left: mean activity of four example somata during the cue period, split according to the choice made in each trial. Traces represent mean \u00b1s.e.m. over all trials of a particular choice. Right: summary of the relationship between modulation index r and animal choice for all imaged cells. Red x\u2019s: cells shown on left. (B) Top: mean cue-period activity in correct trials from one example cell, split according to the strength of evidence presented (strong: #L puffs > 9; weak: #L puffs < 2). Bottom: mean puff-triggered response of one example cell to left (L)- and right (R)-sided puffs. Mean t1/2 decay: 406 ms. Shading: s.e.m. (C) A linear model was used to determine the influence of left- and right-sided puffs on pre-decision fluorescence activity for each cell over all trials. Left: each dot represents one cell. Modulation: normalized coefficient of the linear fit between puff number and fluorescence. Colored data points indicate cells with significant coefficients. Right: Proportion of cells in each category on left. Shuffle: puff counts were shuffled across trials of the same choice before regression. Percent of modulated cells is significantly above the shuffle for the +L, +R and \u00b1(L,R) conditions (p<0.0001, two-tailed z-test). (D) Mean cue-period activity in correct trials across all evidence-modulated cells, split according the level of evidence presented in the trial (strong: #pref side puffs-#nonpref side puffs > 8; weak: #pref side puffs-#nonpref side puffs<-8).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36781/elife-36781-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Mice not trained to perform the decision-making task were imaged during behavioral sessions in which stimuli were delivered in the same manner as in the task (n\u00a0=\u00a02 mice, 449 trials, 168 cells). Analyses of fluorescence modulation, decoding, and evidence representations were performed as in Figures 2D,F and 3C, respectively. (A) Comparison of fluorescence modulation index in the pre-cue and cue periods, as in Figure 2D. The percentage of cells in which cue-period fluorescence was better correlated with time than pre-cue-period fluorescence was 46% (95% CI: 40\u201353%, bootstrap), statistically indistinguishable from the percentage when cue and pre-cue period identity was shuffled (46% of cells; 95% CI: 39\u201352%). (B) Decoding analysis was run as in Figure 2F (bottom panel), predicting the side with more evidence using fluorescence measurements. To facilitate comparison of data from mice performing the task (grey line) and those not performing the task (black line), subsets of the data matched in trial and cell count were subsampled 1000 times from each condition, and the lines show mean\u00a0\u00b1std of decoding accuracy for each. Peak decoding accuracy was significantly higher in the task context than in the no-task context (p=0.03; fraction of subsamples in which peak decoding accuracy in no-task-context sample exceeded that in task-context sample). (C) As in Figure 3C, linear modeling was used to relate fluorescence to puff count on a trial-by-trial basis. Procedure and conventions follow Figure 3C, demonstrating the fraction of cells with significant modulation by evidence. Percent of modulated cells is statistically indistinguishable from the shuffle condition for all modulations (p>0.05, two-tailed z-test).\n\nElsewhere in the brain, neuronal activity during evidence accumulation and decision-making can encode behavioral variables of choice and evidence (Gold and Shadlen, 2007; Latimer et al., 2015; Scott et al., 2017). To determine whether predictive behavioral information was represented in the population activity of these Purkinje cells, we constructed linear classifiers based on all somatic signals in each animal. These classifiers accurately decoded the upcoming choice and the side with greater evidence (Figure 2F), indicating that as a population, the imaged neurons encode behaviorally relevant features of the decision-making process.\n\nBecause choice and evidence are correlated when mice successfully perform the task, we asked whether choice- or evidence-related information existed independently at the population level in the neuronal signals. To separate the two, we determined how decoding accuracy changed after removing information about one of the variables, by shuffling its identity across trials while holding the other variable constant. For example, when the choice on each trial was randomly assigned to another trial with the same sensory evidence, choice decoding accuracy dropped significantly (Figure 2F, top panel, top two traces). The difference in decoding accuracy between the original and shuffled data indicates the magnitude of independent choice-related information in the population-level neural activity. We performed the converse test as well, shuffling evidence while holding choice constant, and found that evidence-related information is also represented independently in population-level neuronal activity (Figure 2F, bottom panel). Therefore, somatic signals encode both choice- and evidence-related information.\n\nThe encoding of choice and evidence variables suggests that these neurons might play a role in decision-making computations. However, in an alternative hypothesis, the somatic signals we observed might represent motor behaviors that occur as an independent consequence of the decision-making process, for example by encoding motor commands for licking or other movements. The imaged region is known to encode primarily orofacial features in rodents (Bosman et al., 2010; Manni and Petrosini, 2004). To test for pre-decision movements, we used camera recordings to measure licking as well as five other motor behaviors during evidence accumulation for trials with differing evidence and choices (Figure 2\u2014figure supplements 3 and 4, Videos 2 and 3). Licking, nose, whisker, and forepaw movements did not differ across trial types and were unable to predict choice and evidence variables. Therefore, Purkinje cells encode choice- and evidence-related variables with minimal information about predictive anticipatory movements.\n\n![Video 2.](https://cdn.elifesciences.org/articles/36781/elife-36781-video2.mp4.jpg)\n\n**Video 2.:** Traces represent the extracted movement metric (see Methods) from the corresponding regions outlined in the movie.\n\n![Video 3.](https://cdn.elifesciences.org/articles/36781/elife-36781-video3.mp4.jpg)\n\n**Video 3.:** Traces represent the extracted movement metric (see Materials and methods) from the denoted paws.\n\n### Dynamics of choice- and evidence-related information in Purkinje cells\n\nTo determine how individual Purkinje cells represented choice, we examined their coding properties in left- and right-choice trials. In 80% (678/843) of cells, cue-period calcium was modulated in the same direction (i.e. upward or downward) without regard to whether the upcoming decision was left or right, while in the remaining 20% (165/843) of cells, activity for left choices and right choices was modulated in opposite directions (Figure 3A). In 30% (256/843) of cells, pre-decision fluorescence (measured in the 500 ms preceding the end of the delay) differed significantly between L-choice and R-choice trials (criterion p<0.05, two-tailed t-test). Of these choice-selective cells, 63% (162/256) exhibited greater activity in left-choice trials, compared with 37% (94/256) in right-choice trials. While recordings from a single (left) hemisphere might have been expected to produce strongly lateralized representations, these mixed representations of left and right choices are consistent with neocortical recordings in decision-making, particularly in frontal regions (Erlich et al., 2011).\n\nWe next asked how Purkinje cells represented evidence. We observed cells in which cue-period activity was modulated by the strength of evidence presented, and responses to individual sensory events were apparent in some cells as puff-triggered averages that rose and fell in approximately 1 s (Figure 3B). Therefore, to quantify the extent to which the strength of evidence affected the activity of each neuron, we used linear regression to fit trial-by-trial dependence of pre-decision fluorescence on evidence quantity (Figure 3C), where evidence was defined as the total number of right puffs (#R) or left puffs (#L) in a trial. Based on the significance and coefficients of these fits, each cell was categorized as having either a positive (+) or negative (-) relationship between fluorescence and evidence on the left (#L), right (#R), or both (#L,#R) sides. We found significant relationships in 26% (216/843) of neurons, with most cells exhibiting a correlation with single-sided evidence (+L, -L,\u00a0+R, and -R; 178 cells), and a smaller number showing a correlation with a linear sum or difference of evidence (\u00b1(L,R)/\u00b1(L, -R), 38 cells). Therefore, individual cells were predominantly but not exclusively sensitive to evidence presented on one side, consistent with properties of some neocortical neurons in evidence accumulation (Scott et al., 2017). As a population, these evidence-modulated cells encoded the strength of evidence presented for decision-making (Figure 3D). In animals not performing the decision-making task, cue-period fluorescence modulation, evidence side decoding, and evidence modulation were not observed (Figure 3\u2014figure supplement 1), indicating that the signals we observed are task-specific and are not consequences of baseline Purkinje cell response properties. The evidence-related representations we observed do not demonstrate precise moment-to-moment integration of evidence that is thought to occur in some forebrain neurons (Gold and Shadlen, 2007; Hanks et al., 2015), but they do suggest an engagement of the cerebellum in the processing of important task variables.\n\n### Error-associated signaling in Purkinje cell dendrites\n\nIn theories of cerebellar learning, the transformation of mossy-fiber input to Purkinje cell output is refined by climbing fiber-driven error signals which drive plasticity (Marr, 1969). These instructive error signals evoke calcium transients in Purkinje cell dendrites (Ozden et al., 2009; Tank et al., 1988) and an accompanying complex electrophysiological spike (Llin\u00e1s and Sugimori, 1980). To test for task-related activity in this pathway, we imaged calcium using GCaMP6f in Purkinje cell dendrites (Figure 4A,B). We observed that in many cells, dendritic events occurred directly following the animal\u2019s decision, specifically when that decision was an error (Figure 4C\u2013E). In 82% of cells, the mean activity following errors exceeded that following rewards (p<0.0001, Wilcoxon signed-rank test). This increase in activity occurred in both left- and right-choice trials, in which sensory events differed, suggesting that the signal was reporting a task feature that was independent of pre-decision evidence.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/36781/elife-36781-fig4-v3.jpg)\n\n**Figure 4.:** (A) Example two-photon field of view of Purkinje cell dendrites. (B) Signals extracted from cells indicated in (A). Red ticks: dendritic calcium transients extracted from the bottom trace. (C) Activity of one cell in six trials, aligned to the moment of the decision lick. (D) Mean activity of one example cell aligned to the moment of the decision lick. Left: activity is divided into correct and error trials. Right: activity is further divided into left-choice and right-choice trials. Error shading indicates s.e.m. (E) Summary of mean activity in the 800 ms following reward delivery (correct trials) or lack thereof (error trials) (n\u00a0=\u00a06 mice, 599 cells). (F) Left: mean response of an example dendritic signal aligned to moments when licking ceased, split according the outcome of the trial in which the lick cessation occurred. Right: histograms indicating the magnitude of dendritic activity measured at moments when animals ceased (top) or initiated (bottom) licking, presented as a ratio of activity in error vs correct trials; cells with values greater than one exhibited increased activity when lick-cessation/initiation events occurred with errors, in comparison to the same motor event in correct trials. Error activity is elevated in a significant fraction of cells for all four histograms shown (p<0.0001, Wilcoxon signed-rank test). (G) Outcome (correct/error) decoding on a trial-by-trial basis using neuronal population activity in the period following reward delivery or lack thereof (post-choice), or the period preceding the decision (pre-choice). One line per behavioral session (n\u00a0=\u00a07 sessions, six mice). Thick lines: mean across sessions.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36781/elife-36781-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Demonstration of differences in licking behavior following decisions in correct and error trials. Bar heights indicate mean\u00a0\u00b1s.e.m. across all dendritic imaging sessions in all subjects. (B) For 10 motor measurements, comparison of dendritic signalling aligned to the motor behavior in error vs. correct contexts. For each of the 10 measurements, all instances of that behavioral event were identified, then split according to whether they occurred at errors or in other contexts (see Methods). All histograms show the normalized fraction of cells with a given error:correct activity ratio (cells with a ratio of 1 exhibit the same activity level in error and correct trials at the moment of the motor event). Top four panels: lick initiation and cessation events as in Figure 4, measuring dendritic activity preceding or following the lick initiation/cessation event (to allow for the possibility that movement-related neural activity may precede or follow the measured motor event); middle three panels: post-decision licking bouts binned by quantity of licks; bottom three panels: nose and whisker movements measured from behavioral movies. For data in every histogram, a statistically significant fraction of cells exhibits elevated activity in error contexts (p<0.001, Wilcoxon signed-rank test). Middle rightmost panel: dendritic activity data as shown in Figure 4E, from two additional behavioral sessions in two individual mice, during which all auditory stimuli were absent. Bottom rightmost panel: trial-averaged \u2206F/F response in the post-decision period split according to the level of evidence presented in the trial. The response of each cell is subtracted from its total average response. Dendritic responses in error trials were not significantly different across trial difficulties (p=0.59, two-tailed paired t-test). Error bars: s.e.m. across behavioral sessions.\n\nWhen mice make errors, their behaviors, especially their licking patterns, differ from correct trials. We therefore tested whether the elevation in dendritic signaling could reflect a purely motor event such as a lick-cessation signal, since mice cease licking at moments of error (Figure 4\u2014figure supplement 1). Such a lick-cessation signal should occur not just at moments of error, but whenever licking ceases, including in correct trials. We therefore measured dendritic signals at every instance of lick cessation in both error and correct trials, and compared the magnitude of the signals across the two contexts. We found that lick-cessation-aligned dendritic signalling was significantly elevated in error trials relative to correct trials (Figure 4F), indicating that our results are not explained by lick-cessation signals. We tested a number of similar hypotheses, including lick initiation events, orofacial movements, varying licking magnitudes, and trials in the absence of auditory cues, and found that dendritic signals were also significantly error-modulated in all cases (Figure 4F, Figure 4\u2014figure supplement 1). Thus dendritic events encode an error-associated signal that is not specific to measured parameters of movement.\n\nDendritic signalling was consistently elevated in error trials relative to correct trials across varying trial difficulties, with a modest but non-significant reduction in magnitude in trials with stronger evidence (Figure 4\u2014figure supplement 1). These error-associated events may potentially represent a training signal which can be useful to guide learning (Schultz et al., 1997). Indeed, we found that the population of Purkinje cells could decode trial outcome (correct or error) on a trial-by-trial basis (Figure 4G, post-choice correct/error decoding greater than shuffle and pre-choice conditions, p<0.01, two-tailed paired t-test).\n\n## Discussion\n\nThe present work reports the necessity of the cerebellum in an evidence-accumulation-based decision-making task. We have identified two Purkinje-cell signals that may contribute to this process: somatic activity that reflects evidence and choice, and dendritic signals that report errors. This convergence of task-relevant information onto Purkinje cells suggests that cerebellar activity may play important roles in decision-making, consistent with established hypotheses of cerebellar function in complex domains (Ito, 2008).\n\nCerebellar crus I communicates with numerous forebrain structures including somatosensory, frontal, and parietal regions (Prevosto et al., 2010; Proville et al., 2014; Strick et al., 2009) via the ventral dentate nucleus (Bernard et al., 2014; Parker et al., 2017) and thalamic intermediates (Asanuma et al., 1983; Dum and Strick, 2003). Posterior hemispheric cerebellar cortex and its principal target, the dentate nucleus, show sensorimotor activity relating to whisker sensation (Bosman et al., 2010), licking (Gaffield et al., 2016), and reward (Wagner et al., 2017), as well as preparatory activity (Middleton and Strick, 1998; Popa et al., 2017) and firing rate ramps (Ashmore and Sommer, 2013) that can influence thalamocortical circuits (Parker et al., 2017). The cerebellum is thought to use information from elsewhere in the brain to form internal models that predict and modulate brain activity (Ito, 2008; Marr, 1969; Wolpert et al., 1998). In the context of our decision-making task, the lateral posterior cerebellum may receive evidence/decision-related efference copy from forebrain regions, where evidence and decision-related variables have been observed and proposed to support decision-making (Ding and Gold, 2012; Hanks et al., 2015; Licata et al., 2017; Morcos and Harvey, 2016; Shadlen and Newsome, 2001). Thus, the cerebellum is positioned to be part of a closed feedback-loop circuit in which it both receives and sends task-related information.\n\nPrevious studies have established a sophisticated conceptual framework for understanding the computational basis for evidence accumulation and decision-making (Brunton et al., 2013; Gold and Shadlen, 2007; Juavinett et al., 2018; Morcos and Harvey, 2016; Scott et al., 2017). Our results are a first stage of discovery suggesting that the cerebellum may constitute an additional node in the distributed network of regions that support this process (Pinto et al., 2018b). Muscimol disrupted the proportion of correct choices without disrupting the ability to make a choice. This suggests that the lateral posterior cerebellum modulates not the mechanics of action, but rather processes that precede the brain\u2019s commitment to act. Our fits to a behavioral choice model indicate that reduced performance was accompanied by a decreased weighting of evidence and increased weighting of choice history parameters. The increased dependence on trial history is interesting in light of recently reported sensory history effects in parietal cortex (Akrami et al., 2018). Complementary to association areas in the neocortex, signals emerging from the cerebellum are known to reach thalamic targets which send widespread projections throughout the brain (Strick et al., 2009), situating the cerebellum in a position to modulate one or many components of forebrain processing.\n\nOur imaging of Purkinje cell somata revealed ramps of fluorescence. Cytoplasmic calcium acts as a temporally filtered readout of firing rate, limited by calcium removal times that are slower in Purkinje cells (see\u00a0Figure 3B;\u00a0Konnerth et al., 1992; Lev-Ram et al., 1992; Fierro and Llano, 1996; Rokni and Yarom, 2009; Ramirez and Stell, 2016) than in neocortical neurons (Chen et al., 2013). Preliminary electrical recordings also showed ramps, consistent with the idea that temporally filtered firing rate ramps may account for the observed fluorescence signals.\n\nThese somatic signals represented task-relevant information related to choice and evidence variables, although it remains an open question as to whether these signals precisely track accumulated evidence over time. They could exhibit firing ramps (Shadlen and Newsome, 2001), steps (Latimer et al., 2015), or more complex response profiles that form a temporal basis for evidence accumulation (Scott et al., 2017). The evidence representations we observed were primarily of single-sided evidence, consistent with neural recordings in PPC and FOF of rats performing a similar task (Scott et al., 2017). This could indicate that cerebellar involvement is upstream of the calculation of the decision variable (#R-#L), and we consider this a likely possibility. It is also notable that some studies (Scott et al., 2017; Scott et al., 2015) have suggested that the decision-making process may be supported by two weakly coupled single-sided accumulators, which may modify the interpretation of our results. Whichever the case may be, the neural activity we observed contains task-relevant information that may be used during evidence accumulation and decision-making.\n\nCerebellar theories propose that the mossy fiber-granule cell pathway encodes contextual or efference-copy signals which are used to generate short-term predictions (Shadmehr et al., 2010). Climbing fiber activity may shape the processing of granule cell inputs by inducing plasticity at multiple cerebellar sites (Albus, 1971; Marr, 1969; Medina and Lisberger, 2008). For example, climbing fiber-derived error signals may modify synaptic weights at parallel fiber-Purkinje cell synapses, providing a mechanism for weighting the contextual signals entering the cerebellum. This motivated us to ask whether in this task, signals may be observed in this pathway that report errors, for example of the outcome of the animal\u2019s choice. We observed an excess of dendritic calcium events coincident with decision errors, which has not been previously reported in the cerebellum. If the error-associated response were analogous to dopamine reward prediction errors, one might have expected strong modulation of the error response magnitude by trial difficulty, with the easiest trials producing the largest error response. However, no such trend was apparent.\n\nWe suppose that these dendritic signals might not represent graded information but rather a more categorical signal for updating the cerebellar representation. It might alternatively be the case that the slight but non-significant trend we\u00a0did observe, which appears inverted relative to traditional reward error signals, could be an example of inverted reward signalling seen elsewhere in the brain (Cohen, 2007; Matsumoto and Hikosaka, 2007). In all cases, the consequences of this error signalling could be reflected in the behavioral learning of the animal, as found via trial-by-trial analyses in some motor tasks (Brooks et al., 2015; Medina and Lisberger, 2008; Ten Brinke et al., 2017), but such effects are difficult to resolve in decision-making tasks like ours where learning is slow, spanning a period of many days or weeks.\n\nThe involvement of the cerebellum, with its clearly delineated cell types and connectivity (Dean et al., 2010; Ito, 2012) opens many attractive avenues for future studies in decision-making. The data presented in this study suggest multiple possible roles for cerebellar involvement in evidence-accumulation-based decision-making. For example, output signals from the cerebellum may be combined with signals in sensory circuits to control the input gain of sensory information into accumulators elsewhere in the brain. This model would be consistent with observations of cerebellar involvement in gating sensory information (Apps et al., 1997; Ozden et al., 2012) and inputs to working memory (Baier et al., 2014; Sobczak-Edmans et al., 2016). In a second possibility, the cerebellum may modulate dynamics of the accumulation process. Finally, cerebellar signals may modulate activity that converts the accumulator value into a decision. Such a post-categorization influence has been observed in prefrontal regions during evidence accumulation (Erlich et al., 2015). Detailed inactivation studies with high spatial and temporal precision can resolve these alternatives. In all cases, activity from the cerebellum may be combined with activity in forebrain structures to produce a refined signal that is more likely to yield a reward.\n\n## Materials\u00a0and\u00a0methods\n\n### Mice\n\nExperimental procedures were approved by the Princeton University Institutional Animal Care and Use Committee and performed in accordance with the animal welfare guidelines of the National Institutes of Health. Data for the behavioral task came from 12 mice (six female, six male, 8\u20139 weeks of age at the start of experiments) of genotypes Pcp2-Cre (five mice, Pcp2-Cre line derived from The Jackson Laboratory, Stock #010536, RRID:IMSR_JAX:010536) and Pcp2-Cre-Ai148 or Ai148 (seven mice, Ai148 line acquired from Hongkui Zeng, Allen Brain Institute); for Purkinje cell dendritic imaging from six mice (four male, two female; 5 Pcp2-Cre, 1 Pcp2-Cre-Ai148), for Purkinje cell somatic imaging from six mice (two female, four male; 3 Pcp2-Cre, 3 Pcp2-Cre-Ai148), for inactivation experiments from six separate mice (three female Pcp2-Cre-Ai148, two male Pcp2-Cre-Ai148, one female Ai148; one was used in behavioral data but was never subjected to inactivation), and for electrophysiology experiments from another three mice (three male Pcp2-Cre-Ai148). Mice were housed in a 12 hr:12 hr reverse light:dark cycle facility, and experiments were performed during the dark cycle. During the experimental day, mice were housed in darkness in an enrichment box containing bedding, houses, wheels (Bio-Serv Fast-Trac K3250/K3251), climbing chains, and play tubes. At other times, mice were housed in cages in the animal facility, in groups of 2\u20134 mice per cage. Mice received 1.0\u20131.4 mL of filtered water per day. Body weight and condition was monitored daily.\n\n### Surgical procedures\n\nMice were anesthetized with isoflurane (5% for induction, 1.0\u20132.5% for maintenance) and underwent surgical procedures lasting 3\u20134 hr. For mice in imaging experiments, a 3-mm-diameter craniotomy was drilled over the left posterior hemispheric cerebellum. In Pcp2-Cre imaging mice, AAV1.CAG.Flex.GCaMP6f.WPRE.SV40 (Penn Vector Core) virus was injected into crus I and surrounding regions, 220\u2013280 \u00b5m below the brain surface (two injections, 200 nL per injection at 20 nL/min), using borosilicate glass pipettes (World Precision Instruments, 1B100F-4, 1/0.58 mm OD/ID) beveled to 30 degrees with a\u00a0~\u00a010 \u03bcm tip opening, and an automated injector system (World Precision Instruments Micro4). In all imaged mice, a window composed of a cannula (Ziggy\u2019s Tubes and Wires, 316 S/S Hypo Tube 9R GA. 0.1470/0.1490\u2019 OD x 0.1150/0.1200\u2019 ID x 0.0197\u2019 long) glued (Norland Optical Adhesive 71) to a glass coverslip (Warner Instruments 64\u20130720) was cemented atop the craniotomy, then a custom-machined titanium headplate (Dombeck et al., 2007) was cemented to the skull using dental cement (C and B Metabond, Parkell Inc.). In Pcp2-Cre mice for inactivations, small (~375 \u00b5m radius) craniotomies were drilled over left and right crus I, and guide pedestals (Plastics One, C315GS-5/0-.4 Guide 26GA 5 mm pedestal, cut to 0 mm) were implanted over each. After surgery, dummy cannulas were kept in guide pedestals at all times when injections were not being performed, and were changed approximately every 3 days. For electrophysiology experiments, headplates as described above were implanted, and a 2 mm craniotomy was drilled over crus I and the dura removed. Per animal, one 64-channel silicon probe (Neuronexus, Buzsaki64-H64LP_30 mm in two mice and A4 \u00d7 16-Poly2-5mm-23s-200\u2013177 H64_30 mm in one mouse) was placed on a custom-printed probe holder (designed in Blender and printed on a Formlabs Form2 3D printer), and lowered into crus I. During lowering of the probe, recordings were performed as described below to determine the final location of the probe. Ground and reference wires were attached to two stainless steel screws (000\u2013120 \u00d7 1/16 SL bind machine screws, Antrin miniature specialties, Inc) above the forebrain. Absolute Dentin (Parkell) was used to secure the probe to the skull, and to create a well which was filled with silicone gel (Dow Corning 3\u20134680) and ophthalmic ointment (Puralube) to cover the craniotomy before being further secured using dental cement (C and B Metabond, Parkell Inc.) and dental acrylic (Jet Denture Repair, Lang Dental Manufacturing Co.). All animals were given buprenorphine (0.1 mg/kg body weight) and rimadyl (5 mg/kg body weight) after surgery and were given at least 5 days of recovery in their home cages before the start of experiments.\n\n### Equipment\n\nBehavioral training, inactivation, and imaging experiments were performed in a light-proof and sound-dampened chamber, with white noise playing at all times. Mice were seated in a custom aluminium tube (9 cm long, 3.5 cm inner diameter) with their head protruding out the front and an opening on the top of the tube for access of the imaging objective. For two mice in one session each, the mice stood on a cylindrical treadmill instead of the tube. Mice were head-fixed using custom head bars screwed into the head plate, angled with the anterior end downward at 18.5 degrees from the horizontal. A set of custom-machined polyoxymethylene alignment tools was used to align the headplate in the lateral axis and in yaw for precise repositioning across days.\n\nAir puffs were produced by activation of solenoids (NResearch, standard two-way normally closed isolation valve, 161T011) with input from an air source regulated to 10 psi (ControlAir Type 850 Miniature Air Pressure Regulator). Air was delivered via two tubes (Ziggy\u2019s Tubes and Wires, 316 S/S Hypo Tube 16T GA. 0.0645/0.0655\u2019 OD x 0.0525/0.0545\u2019 ID) custom-machined with uniform openings, and positioned parallel to one another, parallel to the anteroposterior axis of the animal, 10 mm apart mediolaterally and\u00a0~1 mm anterior to the nose of the animal. Water rewards were produced via activation of similar solenoids, and delivered via similar tubes positioned 4.5 mm apart from one another mediolaterally, and 0.5\u20131.0 mm anterior to the opening of the animal\u2019s mouth. Licks were detected via completion of one of two parallel electrical circuits for the left and right ports. Puff ports and lick ports were positioned in individual custom-machined polyoxymethylene brackets. The lick port bracket was mounted to a linear actuator (Actuonix, L16/P16 Mini linear actuator with feedback) which enabled retraction of the ports to and from the reach of the animal\u2019s tongue (within approximately 300 ms). The ports, brackets, and actuator were mounted via a custom-machined bracket to a micromanipulator (Sutter Instrument Company, MP-285 motorized micromanipulator) for precise positioning of the apparatus in a unique position for each animal. The entire experimental apparatus was mounted on a translatable stage (Danaher Precision Systems) atop a rotating optical breadboard (Thorlabs, RBB12A) to allow custom positioning in the x, y, and rotational axes for imaging. Mice were positioned according to a set of unique coordinates for each mouse on the stage, micromanipulator, and alignment pieces, which were maintained across behavioral sessions.\n\nBehavioral movies were acquired using two USB cameras (Playstation Eye), modified by removal of infrared filters and encasings. One camera was positioned directly below the animal\u2019s mouth and the other at the side of the animal\u2019s face. Images were acquired at 30 Hz with 320 \u00d7 240 pixel resolution. Illumination was provided by an infrared LED array (Yr.seasons 48-LED Illuminator Light CCTV 850 nm IR Infrared Night Vision). Sounds were delivered to the apparatus by a speaker (Sony Tweeter XS-H20S) mounted below the apparatus.\n\nAll behavioral equipment and data collection were controlled by custom multi-process software written in Python\u00a0(https://github.com/wanglabprinceton/accumulating_puffs; Deverett, 2018a; copy archived at https://github.com/elifesciences-publications/accumulating_puffs). A DAQ board (National Instruments, NI PCI-MIO-16E-4) was used to deliver and read electrical signals from the experimental apparatus. Solenoids were controlled using digital outputs to custom transistor-based switch circuits. Electrical signals corresponding to licks, solenoid signals, and microscope galvanometer position were acquired using analog inputs at 500 Hz. Camera signals were acquired using a custom Python wrapper to the CLEye API (Code Laboratories, https://codelaboratories.com/downloads). The linear actuator was controlled using an LAC board (Actuonix) and USB control via a custom Python wrapper to the C API (available at https://www.actuonix.com/LAC-Board-p/lac.htm). The micromanipulator was controlled using a Python wrapper to the serial control interface. Experiments were monitored live using a custom interface to display trial information, performance, video input, and electrical signals.\n\nA second computer was used to control the two-photon microscope (Sutter Instrument Company, movable objective microscope with resonant scanning) using the MATLAB software ScanImage 2015 (Pologruto et al., 2003) (Vidrio Technologies, RRID: SCR_014307). Excitation light was provided by a Mai Tai Sapphire laser (Spectra-Physics) at 920 nm. A 16x objective lens (Thorlabs, 16X Nikon CFI LWD Plan fluorite objective, 0.80 NA, 3.0 mm WD) was used with ultrasound gel (Sonigel, Mettler Electronics) as the immersion medium. Excitation power measured at the output of the objective lens ranged from 10 to 50 mW. Images were acquired at 28 Hz or 56 Hz, 512 \u00d7 512 or 256 \u00d7 512 pixel resolution.\n\nTwo forms of synchronization signal were sent from the behavior computer to the imaging computer during imaging. The first was a TCP/IP signal indicating animal and session identity. The second was an I2C-based signal routed through a National Instruments card (NI USB-8451). Signals were sent at multiple timepoints throughout each trial, delivering information corresponding to individual defined moments in the trial, which were then embedded in microscope image frames via ScanImage I2C functionality.\n\nExtracellular recordings were performed using 64-channel Neuronexus silicon probes, which were connected to two amplifier boards (RHD2132, Intan Technologies) using a dual headstage adapter (RHD2000, Intan Technologies). Recordings were made using an Open Ephys acquisition board at a sampling rate of 30 kHz. Similar to imaging, synchronization pulses containing information about timing of the puffs, licks, and rewards were routed through a National Instruments card (NI USB-8451) and connected to the Open Ephys acquisition board using an I/O board (Open Ephys).\n\n### Behavior\n\n#### Task\n\nThe evidence\u00a0accumulation task was based on a task used in rats (Brunton et al., 2013). Mice were trained and imaged in 40- to 70 min behavioral sessions, corresponding to 200\u2013300 trials. A session consisted of trials each ranging from 10 to 20 s in duration. In the first phase of the trial, a start tone was presented, followed by a 1 s delay. Next, in the \u2018cue period,\u2019 puffs of air (40 ms duration) were delivered to the whiskers over a period ranging from 1 to 5 s (for all but two sessions, this duration was 1.5 or 3.8 s with 0.15 and 0.85 probability respectively), randomly selected in each trial. The total number of puffs presented was determined by a Poisson process with a rate of 2.5 Hz, a ratio of 1:4 puffs on the two sides, and constrained to a minimum inter-puff interval of 200 ms on each side. In addition to these puffs, bilateral puffs were simultaneously delivered at the start and end of the cue period of every trial. The correct side for a given trial was defined as the side with more puffs, regardless of the generative rates for the two sides. This was followed by a delay period of 200 ms. Then, in the decision phase, the lick ports were brought into the range of the mouse\u2019s mouth, and the mouse made a decision by licking the left or right port at any point over a period of 3 s. The decision was defined as the side of the port licked first, regardless of subsequent licks. If the animal licked the correct port, a water reward (4 \u00b5L) was immediately dispensed from that port. If the animal licked the incorrect port, an error sound played and no water was delivered. Following the decision was a 3 s phase for the consumption of the reward, if the animal received one. In most experiments, ports were maintained in the lick position for the same duration even in the absence of a reward, but in some sessions, ports were immediately retracted after errors. Following the reward phase was a intertrial interval of 3.5 or 6 s for correct and error trials, respectively. If the mouse made contact with either lick port at any point before the decision phase of the trial, an auditory tone was played, and the trial was cancelled and excluded from analyses. If the mouse made no decision lick, the trial was excluded from analyses.\n\n#### Training\n\nMice were trained to perform the task through a behavioral shaping procedure which typically spanned a period of 10\u201320 days. In the first stage of training, trials consisted of a 1 s cue period with the same puff rates as the final task, except all puffs following an initial bilateral puff were presented on the correct side only. A water reward was delivered on the correct side in each trial regardless of the actions of the mouse. When a mouse consumed 14 consecutive rewards, it was advanced to the next stage. In the next stage, trial structure remained similar to the previous stage, except rewards were delivered only if the mouse licked the port on the correct side for a given trial at any point in the 3 s response window. In addition, the delay period was extended to 1.3 s during which periodic (2.5 Hz) guide puffs were delivered on the correct side from the end of the cue period until the animal made a decision. To advance, mice completed at least 100 trials at this stage, with 55% correct in a window of 40 consecutive trials, where a correct trial was defined as a match between the side licked first and the correct side for that trial. In the next stage, trial structure remained similar, except bilateral puffs were included at the end of the cue period. In this stage, rewards were only delivered if the first detected lick was on the correct side. As in the final version, error trials included a buzzer sound and a prolonged inter-trial interval. To advance, mice completed at least 200 trials at this stage, with at least 80% correct trials in a consecutive window of 50 trials. In the next stage, the cue period duration was selected randomly as either 2, 2.8, or 3.8 s, with 0.4, 0.3, and 0.3 probability respectively, with a delay period of 200 ms, and guide puffs were no longer delivered. After 100 trials at this stage, and at least 75% correct in a window of 40 trials, mice were advanced. In the next stage, the cue period was its final 3.8 s duration. After a minimum of 125 trials at this stage, and at least 80% correct trials in a window of 25 consecutive trials, mice were advanced to the next stage. In this stage, mice were required to accumulate evidence, with a generative evidence rate ratio of 1:9 for the two sides. When mice completed at least 300 trials and at least 80% correct in 40 consecutive trials, they were advanced to the final task (described above).\n\nFour anti-biasing procedures were implemented during the behavior. First, the probability of drawing a trial on a given side was weighted to produce more trials on the side with worse performance. This mechanism was implemented if in a window of 6 consecutive trials on each side, performance (fraction correct) on one side was 1.5x greater than on the other. In that case, the draw probability of a trial on the worse side was set equal to the ratio of performances on the better to the worse side within the six-trial anti-biasing window. Second, when the same bias metric exceeded 2x, a larger water reward volume (either 1.2 or 1.4 \u00b5l, chosen randomly) was given with 60% probability. Third, if bias persisted at the 2x threshold for five consecutive trials, the experimental apparatus was shifted 50 \u00b5m toward the side of better performance to bring the stimuli and lick ports of the worse side closer to the animal. At the start of each session, a set of 15\u201330 warm-up trials were delivered drawing from one or two stages preceding the current one in the shaping procedure, and in warm-up trials of the first four shaping stages, the correct side, instead of being randomized, was alternated. Mice were trained for a maximum of 70 min and a minimum of 40 min unless the animal stopped licking for extended periods of time sooner, in which case they were dismounted early. Occasionally, manual rewards were delivered to encourage licking, and stage advancements or decrements were performed manually to suit animal performance.\n\n#### Muscimol inactivation experiments\n\nMice were trained until they achieved at least 70% correct on the final version of the task in two consecutive sessions. Mice were then subjected to injection sessions, corresponding to saline or muscimol in a randomized order across mice. On injection days, mice were anaesthetized using isoflurane (2\u20133% for induction and maintenance) for approximately 20 min, during which 100\u2013120 nL of either muscimol (Sigma M1523, 2 mg/ml in sterile saline) or saline were delivered through the injection cannulas (Plastics One, Internal 33GA, 0.9 mm proj) at a rate of 50 nL/min, using an automated injection system (World Precision Instruments Micro4). The injection cannula was left in place for 3 min following each injection to allow diffusion of the solution into the brain. Approximately 1 hr post-injection, mice were mounted on the rig and performed a behavioral session. On at least 2\u00a0days prior to the first injection, mice were anesthetized with the same protocol prior to their behavioral sessions in order to acclimatize them to anesthesia. When mice performed below 65% on a session, one or two recovery sessions with no injections were subsequently given such that the animal returned to at least 70% performance, before any additional injection sessions. Confidence intervals for performance in each session were computed as binomial proportion confidence intervals using the Jeffreys method.\n\nFollowing the completion of the study (by approximately 3 weeks), mice were injected under the identical protocol with a fluorescent solution (1.8 mg/mL fluorescein (Fisher Scientific S25328) and 0.5 mg/mL CTB-555 (Invitrogen C22843) in sterile saline) to recover the location and spread of the muscimol injection site. After approximately 1 hr, mice were perfused and brains were extracted. Brains were cleared using iDISCO (Renier et al., 2014) and imaged on a lightsheet microscope (LaVision BioTec Ultramicroscope II, 488 nm excitation laser, 514/30 nm emission filter (Semrock FF01-514/30-25)).\n\n### Data analysis\n\n#### Software\n\nData analysis was performed using custom analysis packages written in Python (RRID:SCR_008394) 3.5 and 3.6 (https://github.com/bensondaled/pyfluo;\u00a0Deverett, 2018b;\u00a0copy archived at https://github.com/elifesciences-publications/pyfluo), which make use of Numpy 1.12.1 and Scipy 0.19.1 (van der Walt et al., 2011), Pandas 0.20.3 (McKinney, 2010), Matplotlib 2.0.2 (Hunter, 2007), IPython 6.1.0 (Perez and Granger, 2007), Scikit-learn 0.18.1 (Pedregosa et al., 2011), Scikit-image 0.13.0 (scikit-image contributors et al., 2014), OpenCV 3.3.0 (OpenCV team, 2017), Statsmodels 0.8.0 (Perktold et al., 2017), and OASIS (Friedrich et al., 2017).\n\n#### Psychometrics\n\nFigure 1B shows psychometric performance data for individual mice and for the \u2018meta-mouse,\u2019 consisting of pooled trials from all trained mice. Data for psychometrics were obtained only from trials in the accumulation stages of the task, and not from the preceding stages during the shaping procedure. All analyses contain only trials in which mice made decision licks, such that incorrect trials correspond to licks in the wrong direction, and never the absence of licks. Psychometric curves in Figure 1\u2014figure supplement 2D were fit to a four-parameter logistic function of the form:\n\n$$\ny(x)=y_{0}+\\frac{A}{1+e^{\\frac{-(x-x_{0})}{b}}}\n$$\n\n#### Behavior regression analysis\n\nTo determine the dependence of animal choice on stimuli in different temporal bins of the cue period, we performed a regression-based analysis. A logistic regression was computed, with animal decision on a trial-by-trial basis as the predicted variable. The input for each trial was a vector of 5 values, corresponding to the difference in right vs left puffs in five temporally uniform bins of the cue period. Data for regression analysis consisted of trials with the primary cue period duration of 3.8 s. In the \u2018shuffle bins\u2019 control, the vector of R-L values was shuffled across bins for each trial. In the \u2018shuffle choices\u2019 control, the choices of the animal were shuffled across trials.\n\n#### Behavioral regression model\n\nEffects of the muscimol inactivation were assessed by fitting behavioral data to a regression model (Busse et al., 2011; Licata et al., 2017) that considers four factors which contribute to the animals\u2019 decisions: stimulus strength, s; bias; success (correct decision) on the previous trial, $h_{success}$; and failure (incorrect decision) on the previous trial, $h_{failure}$. Stimulus strength s was defined as the #R-#L puffs scaled from -1 to 1. The history term $h_{success}$ was 0 if the previous trial was incorrect and -1 or 1 if the previous trial was a correct left or right choice respectively. $h_{failure}$was 0 if the previous trial was correct and -1 or 1 if the previous trial was an erroneous left or right choice respectively. The decision was modeled as a random variable such that the probability p of a rightward choice in the current trial was modeled as\n\n$$\nln\\frac{p}{1-p}=b_{evidencesensitivity}s+b_{successhistory}h_{success}+b_{failurehistory}h_{failure}+b_{bias}\n$$\n\nThe four coefficients $b_{evidencesensitivity},b_{successhistory},b_{failurehistory},b_{bias}$\u00a0were fit separately for each muscimol session and control session directly preceding it, by a binomial generalized linear model with a logit link function. To compute the significance of the behavioral effects caused by muscimol inactivation, each of the four best-fit parameters from the muscimol trials was compared to the best fits for that parameter in 10,000 bootstrapped datasets from the baseline trials, and the p-value was computed as the fraction of instances in which the muscimol fit exceeded the baseline fit.\n\n#### Imaging data preprocessing\n\nImaging data were first motion corrected using a custom template matching-based procedure, then regions of interest (ROI) were selected manually based upon cell morphology and calcium activity. The manually selected dendritic ROI were subsequently refined using the following procedure: for each ROI, the mean activity of all pixels inside the ROI was extracted for each frame in the behavioral session, yielding a single time series. The Pearson correlation coefficient was computed between this time series and every pixel in the dataset. These correlation coefficients were assembled into a correlation coefficient image with the same dimensions as an imaged frame, and regions of interest were automatically extracted from this image by applying a median filter, followed by thresholding the image at two standard deviations above the mean, then detecting and selecting the connected component that most overlapped with the manual ROI. The resulting ROI was excluded if it contained less than 0.5 or greater than 3.5 times the number of pixels in the manually selected ROI. After all ROI were refined in this way, a second processing step merged overlapping and highly correlated ROI to ensure that the resulting ROI corresponded to unique physiological sources. First, mean activity time series traces were extracted for each refined ROI. Next, the pairwise correlation coefficients of traces from each ROI were computed, and an undirected graph was constructed where each ROI composed a node, and edges were placed between nodes with correlation values exceeding a threshold of 0.5. Next, connected component clusters in the graphs with greater than one node were subjected to the following procedure: for each pair of ROI within the cluster, the two ROI were merged if\u00a0>50% of either ROI\u2019s pixels was contained within the other\u2019s boundaries. A similar graph-based approach was used to detect neighboring ROI with high correlations corresponding to a single cellular origin; if the correlation values of two ROI exceeded 0.8 and they fell within 5 micrometers of each other, they were merged. Finally, pixels within the motion boundaries of the motion-corrected images were removed from all ROI.\n\nFor each ROI, the mean activity of all pixels in the ROI was computed for each frame, yielding raw time series data. \u2206F/F0 was then computed from these raw traces, with baseline F0 being computed as the minimum of a median-filtered (1 s kernel) 12 s sliding window preceding each time point. Somatic data analysis was restricted to trials with matching 3.8 s cue periods, which comprised 85% of trials. Dendritic data analysis included trials of all cue period durations.\n\n#### Modulation index\u00a0r\n\nModulation index r was defined as Pearson\u2019s correlation between the somatic calcium signal of a given cell and a uniform time vector (\u2018cue-period time\u2019). For trial-by-trial analyses (choice and evidence decoding, linear model to evaluate puff-fluorescence relationship), r was computed on a trial-by-trial basis. For other analyses, r was computed over the mean somatic signal in the specified time period. For comparison of r in the pre-cue period and cue period, r was computed over a 2 s period immediately preceding, or in the middle of the cue period, respectively. For all other analyses, r was computed over the duration of the cue period. Significance of this modulation was computed by comparing the fraction of cells for which |rcue period| exceeded |rpre-cue period|. The 95% confidence interval for this fraction was computed using bootstrapping: cells were randomly sampled with replacement to create resampled datasets (n\u00a0=\u00a010,000), and the same fraction was computed for each of these datasets. Boundaries of the confidence interval were then computed as the 5th and 95th percentile of these bootstrapped fractions. Return to baseline was computed by comparing the mean activity of each cell before the cue period and after the inter-trial interval; in total, 198,542 such comparisons were made for all cells in the study.\n\n#### Analysis of electrophysiological recordings.\n\nHigh-pass filtering of the raw data at 300 Hz, common median referencing, and automatic spike sorting was achieved using Kilosort (Pachitariu et al., 2016;\u00a0cortex-lab, 2018; https://github.com/cortex-lab/Kilosort). Spikes were further sorted manually using Phy (https://github.com/kwikteam/phy;\u00a0kwikteam, 2018). Instantaneous firing frequency was used to determine the firing rate. Purkinje cells were identified based on their firing rate and the occurrence of complex spikes on either the same channel or on neighboring channels.\n\n#### Puff-triggered responses\n\nPuff-triggered responses were computed by averaging the \u2206F/F signal of a given region of interest triggered to the onset of individual puffs, drawn from trials with sparse (<3) puffs on the given side, and excluding bilateral start and end puffs. Mean tt/2 decay of the puff-triggered response was computed as the time elapsed from the peak value of the mean response to L and R puffs until it fell 50% of the way to baseline, where baseline was defined as the mean value of the response in the 400 ms preceding the puff.\n\n#### Choice and evidence decoding\n\nSomatic activity or behavioral movie measurements were used to decode the choice or correct side (evidence) on a trial-by-trial basis. Each trial was segmented into 400 ms time bins, in which the mean activity of each cell (somatic decoding) or the mean movement index for each movement feature (behavioral decoding) was computed. For each time point, the vector of these mean values was used to predict the behavioral variable (upcoming choice or side with more total evidence at end of trial) by logistic regression. Each regression was scored by k-fold cross validation with k\u00a0=\u00a05. Because choice and evidence are correlated in the behavioral task, we employed a procedure to investigate their effects separately. First, to determine whether evidence-related information was contained in the neural activity independently of choice-related information: we compared evidence-decoding accuracy with accuracy on a shuffled dataset in which the side of evidence on each trial was randomly assigned to another trial in which the same choice was made as the original trial. In this shuffled dataset, all evidence-decoding accuracy arises from correlated choice-related information, since evidence-related information was removed; therefore, any excess decoding performance relative to this baseline exhibited by the unshuffled dataset arises from independent evidence information. We also did the converse to test for independent choice-related information: that\u00a0is, shuffled choice across trials within the same evidence category (where evidence was binned into four groups based on the magnitude [#R-#L] of evidence, to account for the relationship between evidence magnitude and choice probability), and evaluated choice decoding accuracy. These \u2018independent\u2019 shuffles constitute the \u2018Ind\u2019 condition for choice and evidence decoding. In addition, complete shuffles were performed in which choice/evidence was shuffled across trials with no regard for the other variable. These shuffles constitute the \u2018Shuffle\u2019 condition.\n\n#### Linear model for evaluating puff-fluorescence relationship\n\nTo determine the relationship between somatic signals and puff number on a trial-by-trial basis, a two-factor linear model was constructed for each cell. The factors corresponded to the number of left-sided and right-sided puffs in each trial, and the dependent variable to the mean pre-decision fluorescence (500 ms preceding the decision phase) of the given cell in each trial. The best-fit coefficients were interpreted as the relationship between fluorescence and puff number for that cell. Significance of these coefficients was scored by the p-value associated with each coefficient in the model (two-tailed unpaired t-test of regression weight values). Cells with p<0.05 for a given coefficient were considered to have ramps significantly correlated with puffs on the corresponding side. Significance cells were grouped into categories according to the sign of the coefficient (+ or \u2013), and the side of the puffs with significant coefficients (L, R, or LR for both). In the shuffle condition, the puff numbers were shuffled across trials while holding the animal\u2019s choice constant, and the same analysis was run.\n\n#### Movie-based behavior measurements\n\nMovements of the mouth, whiskers, nose, and paws were made using the behavioral movies acquired during all behavioral sessions in which calcium imaging was performed. For each movie from each animal, regions of interest (ROI) were manually selected corresponding to the aforementioned regions in the field of view. Full-session traces were extracted as the mean pixel value within the ROI in each frame. Mouth movements were measured using the laterally positioned camera, where deviation of the mouth and chin was best detected. Full-session traces corresponding to mouth movement were mean-subtracted and normalized from 0 to 1. For those measurements, the normalized licking measure was computed as the absolute value of the mouth-movement trace, with a median-filtered (0.5 s kernel) drifting baseline signal subtracted off, normalized from 0 to 1. Deviations in overall image brightness were normalized by a fiducial measurement in the field of view not involving the animal that reliably tracked field-of-view brightness. The remaining movement measurements (nose, left whiskers, right whiskers, left paw, and right paw) were extracted from the camera positioned below the animals\u2019 faces. For these measurements, traces were extracted in the same manner as above, and the normalized movement index was computed as absolute value of the trace derivative, normalized from 0 to 1.\n\n#### Dendritic events\n\nDendritic events were detected using the OASIS autoregressive deconvolution algorithm (Friedrich et al., 2017), with AR(1) and an L0 sparsity penalty, and binarized with a threshold of 0.1.\n\n#### Analysis of dendritic responses\n\nTo test the hypothesis that dendritic signalling encoded motor events, we computed the mean dendritic response to a number of specific motor actions, and compared this response across error and correct contexts on a cell-by-cell basis. In these analyses, lick initiation (\u2018start licking\u2019) and cessation (\u2018stop licking\u2019) were defined as licks that were preceded or followed by, respectively, at least 250 milliseconds without licking on that side. For the analysis in Figure 4F, activity was measured in a 1-second window centered at this event. In addition, supplementary analyses measure the signal instead in the 200 ms preceding or following the event to account for the possibility that signals encode specifically preparatory or response signals to the events, respectively (Figure 4\u2014figure supplement 1). For licking magnitude analyses, trials were categorized according to the quantity of licks in the same time window in which the dendritic response was measured (Figure 4E), and the dendritic response was measured in the same manner as the data in Figure 4E. For analyses of orofacial movements, the onset times of distinct movements in each orofacial region were determined, according to frames at which the time series data for that feature exceeded 2.5 standard deviations above the mean, and activity was measured in the one-second window centered at these events.\n\nFor all of the above movement measurements, movement events were split into those which occurred in error contexts (i.e. the time window for which the dendritic response was measured for Figure 4E, in error trials), and those which occurred outside error contexts (in correct trials). Mean dendritic activity events were computed for both contexts for every movement measurement, and the error:correct activity ratio was then computed for each individual cell. To compare dendritic responses at varying trial difficulties, the difference was computed on a session-by-session basis between the mean dendritic response in the strongest and weakest evidence (|#R-#L|) trials, and the significance of this difference was compared using a two-tailed paired t-test.\n\n#### Outcome decoding\n\nDendritic activity was used to decode the outcome (correct or error) on a trial-by-trial basis. For each cell in each trial, the post-decision response was computed as the mean \u2206F/F value in the 800 ms following (\u2018Post-choice\u2019) or preceding (\u2018Pre-choice\u2019) the decision. The outcome of each trial was predicted by logistic regression using these values as predictors. For each session analyzed, 1000 batches of trials were randomly sampled in which the number of correct and error trials were matched, and a regression was performed on each, scored by k-fold cross validation with k\u00a0=\u00a03. In the shuffle conditions, the outcomes of the trials were shuffled and the decoding accuracy on the shuffled dataset was reported.\n",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "00fcac76-4321-4a98-bbb3-4433790cc81f",
+      "submission_id": "53293ba3-97e2-4dcf-8a13-e4a3fecdcee6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Megan R Carey, Champalimaud Foundation Portugal\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.36781.021](https://doi.org/10.7554/eLife.36781.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A cerebellar role in evidence-guided decision-making\" for consideration by eLife. Your article has been reviewed Richard Ivry as the Senior Editor, a Reviewing Editor, and three reviewers. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is an interesting study describing a potential role for the lateral posterior cerebellum in a novel decision-making task. The cerebellum has received much less focus than cortex in decision-making research despite clear evidence from, among other sources, human imaging and lesion studies that the cerebellum is involved in a wide range of cognitive processes. There is also a rich tradition of theoretical modeling inspired by the cerebellum's unique circuit organization and role in sensorimotor coordination that appears potentially relevant to many cognitive operations, raising interesting questions about what the cerebellum might contribute to decision-making. Therefore, the approach and data reported in the current manuscript are promising and could provide meaningful novel insight into the neural basis of decision-making. Despite this potential, and that it does report some interesting observations, the main limitation of this work is that it is hard to say what the cerebellum is doing during the task. In particular, it is not clear that it is possible to conclude that the cerebellum is truly involved in evidence accumulation. The concern about the support for evidence accumulation holds for the inactivation experiments as well as for the imaging.\n\nEssential revisions:\n\n1) Inactivation results: Inactivation results are suggestive of an important role for the cerebellum in this task. However, from the data presented, it is not clear that it is possible to conclude that the cerebellar inactivations are interfering with evidence accumulation itself, and not just somatosensation or motor output. At a minimum, the authors should show psychometric curves for the 5 individual muscimol-treated animals. Assessing the effects on the slopes and offsets of the individual psychometric curves might be more revealing about which aspects of task performance were affected by inactivation of crus I. Further, there is the possibility that with this experimental design, muscimol inactivation may not be adequate to determine whether the cerebellum is accumulating evidence, because changes in the psychometric function can also be explained by a decrease in sensory sensitivity alone. Careful modeling of the data may help.\n\n2) Evidence for evidence accumulation signals from imaging of somatic calcium in Purkinje cells: The authors report that appear similar to evidence-dependent and choice-selective ramping responses previously reported in many cortical and subcortical areas of primates and rodents. The manuscript reports temporal dynamics of Purkinje cell somatic calcium signals that, in many cells, manifest as a gradual ramping response during the cue period that is correlated with both the number of pulses on one or the other side (evidence) and/or the animal's eventual response (choice). These responses are interpreted with analogy to the ramping responses in trial-averaged spike rates recorded from parietal cortex (along with other forebrain regions) that are thought to encode the time-integral of sensory evidence. However, the manuscript does not convincingly demonstrate that cerebellar neurons are actually encoding accumulated evidence. In general, given the uncertainty about the origin of these signals, more caution is warranted in interpretation of the apparent ramping signals. Specifically:\n\na) While there appear to be lots of time-modulated signals, the link to evidence accumulation and choice is not clear. It is apparent that the most salient feature of the recorded cerebellar population is a constant modulation, either upwards or downwards, with the passage of time in the trial. The presence of this signal complicates the interpretation of any ramping activity as being attributable to evidence accumulation. However, the statistical analyses (i.e. the linear model reported in subsection \u201cNeuronal signatures of choice and evidence in Purkinje cells\u201d) ignore this component of the responses. This might be valid if the representation of time were truly independent from the representation of evidence. But no such independence is established. For example, cells that are more strongly driven by evidence might also be more strongly driven by time, or more likely to be driven by time in one direction or another. The authors should more carefully consider the relationship between the different components of the cerebellar responses and/or formally control for potentially confounding effects of the time-related responses in the statistical models.\n\nb) Given the temporal resolution of the calcium indicator, it is difficult to interpret any evidence-related signal dynamics as reflecting an underlying ramp in neuronal firing rate. The original description of the use of somatic calcium imaging to track changes in Purkinje cell simple spike rate (Ramirez and Stell, 2016) found that these signals were so slow that step changes in simple spike rate could result in ramps of fluorescence like those seen here. This technical concern would best be addressed by at least some recordings comparing the calcium signals to simple spike rate with electrophysiology. Although the authors have tried to be careful in their writing, the text currently leaves plenty of room for misinterpretation by less technical readers. They should clarify the text further to be much more clear about the limitations of interpreting the temporal dynamics of the calcium signals.\n\nc) The relevant decision variable in the pulse accumulation task is the *difference* in pulses between the two sides. The authors seem to know this point well based on how they plot the psychometric functions. Yet at best a small minority of Purkinje cells encode this value. Subsection \u201cNeuronal signatures of choice and evidence in Purkinje cells\u201d reports that 39/843 cells (less than 5%) encode either a sum or difference of the number of pulses on each side. The specific figure for the number of cells encoding a difference is not reported, but Figure 3 suggests that it is about 5 cells (so ~2% of evidence-modulated cells or ~0.5% of all cells). These numbers question strong conclusions about the representation of the decision variable and accumulated evidence in cerebellum. Further, this result could be taken to show that responses in rodent cerebellum are different from those in primate cortex that are often interpreted as a representation of the decision variable for perceptual discrimination. Notably, it also indicates a dissociation between rodent cerebellum and neocortex, as Scott et al., estimate that as many as 1/3 of evidence-modulated cortical cells are better explained by the difference between sides. Therefore, the data strongly suggest that the critical decision-making operations are actually implemented downstream of the recorded cerebellar population. This strikes me as highly relevant to how the overall results should be interpreted, and it should be emphasized more strongly in the summary and discussion.\n\nd) The analysis of the representation of accumulated evidence (subsection \u201cNeuronal signatures of choice and evidence in Purkinje cells\u201d and Figure 3) ignores the time course of representation, focusing on a short window immediately before the decision. Even if we disregard technical problems explained above in 2a-c, it is unclear whether the cerebellar neurons represent integration of evidence over time or merely its final outcome. Note that the population analysis for the representation of evidence (Figure 2F) does not answer this question (and is generally not quite informative) because evidence is defined as the \"correct\" choice in that analysis rather than the magnitude of evidence (#R-#L).\n\n3) \"Error-related\" dendritic responses\n\nIn addition to somatic calcium signals, the authors analyzed dendritic calcium signals and found that these were higher on error vs. correct trials. The implications of this observation are emphasized heavily; for example, the Discussion section concludes that \"the cerebellum, which learns from error to guide action, may help in the learning and tuning of accurate responses\". This is an interesting proposal, but one might have had the same belief prior to seeing the results reported here (given existing human data and theories about the cerebellum), and it's not clear how the data should update it.\n\na) There is speculation about how the observed error responses could be used as error signals to guide learning, in line with existing models of cerebellar learning. However, it was not clear to the reviewers how that would work, especially given that the error responses observed were not directional. Typically, Purkinje cell complex spikes are thought to provide a directional signal for learning, not just a correct/ incorrect signal. There are no analyses to support the proposed functional role of these error related responses as being involved in \"tuning\" responses or correcting errors. Yet, it should be possible to provide a more thorough analysis of the error signals:\n\nWhat do error signals predict about future behavior? An obvious analysis would be to ask whether the magnitude of the error signal on trial n\u22121 influences choice accuracy on trial n. This seems to be a clear prediction from the proposal that the cerebellum \"tunes\" behavior or \"corrects errors\".\n\nc) How do the error signals relate to the strength of evidence on each trial? This is briefly mentioned at the end of the Results section and in Figure 4\u2014figure supplement 1, but without any statistical tests or interpretation. Whether and how the error signals are modulated by the strength of evidence seems key to determining their functional role in updating behavior, if any. In particular, we would have expected that true \"error\" responses would be higher for easier trials, but the opposite appears to be true.\n\n4) Ruling out sensory and motor confounds as potential sources of somatic and dendritic calcium signals\n\na) Figure 3B indicates that isolated puffs produce a calcium response that gradually rises and falls over ~1 s. On trials with strong evidence, these signals will overlap. Assuming that they sum reasonably linearly, overlapping calcium responses from neurons that encode only the transient presentation of evidence would nevertheless give the impression of a gradual ramp with a slope that depends on the quantity of evidence. Note that this is a different issue from the point raised in the Discussion section about distinguishing single-trial ramps from steps. Rather, it makes it unclear whether the evidence-related cerebellar responses correspond to a representation of the momentary sensory evidence or to the magnitude of accumulated evidence that drives choice. This distinction is critical to interpreting proposed neural implementations of evidence accumulation models. One possible way to address this would be to record responses during stimulus presentation from animals that are not engaged in making a decision.\n\nb) The authors attempt to rule out that the somatic signals are related directly to movement of the animal and less related to the \"cognitive\" variables. The analysis in the supporting figures is in line with the level of detail often applied in the field currently. But, is it possible that the activity is related to other movements of the animal rather than in the orofacial region? The authors should either cite strong evidence showing that these are the only relevant regions for the area of cerebellum examined or provide additional videography results from other parts of the body (e.g. paws). This is of course a significant point to make as strong as possible given the cerebellum's long-established role in motor behaviors.\n\nc) The analyses in Figure 4\u2014figure supplement 1 do not convincingly rule out the possibility that the difference in dendritic calcium signals on error trials resulted from differences in licking on error trials. That figure clearly shows that cessation of licking proceeds at different rates on error trials compared to other times. How does trial type (correct vs error) affect the relationship between licking (or changes of rate in licking) and dendritic calcium signals?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"A cerebellar role in evidence-guided decision-making\" for further consideration at eLife. Your revised article has been favorably evaluated by Richard Ivry (Senior Editor), Megan Carey (Guest Reviewing Editor), and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nThe authors have made a concerted effort to clarify the text of their paper and have provided reasonable responses to many of the points raised. As was noted in the first round of reviews, rebuttal, and in the text, it remains unclear what the cerebellum's specific role or computation is during the task, and the reviewers were somewhat disappointed that most of the key questions are deferred to future studies. However, the reviewers also felt that defining cerebellum's exact role in the task may be asking too much for a first study, particularly given the limitations of the dataset and the conceptual and analytical complexities that prevent the authors from specifying the nature of neural representations and the source of the behavioral deficit following cerebellar inactivation.\n\nOverall, there are several interesting leads about the role(s) of cerebellum in perceptual decisions in this paper. While none of these are firmly established by the current study, the reviewers agree that the writing and presentation of the results is generally fair and not greatly over-stated, and favor publication so that the results can be evaluated by the field and followed up in future studies from other groups.\n\nThe reviewers note that in the process of clarifying what can and cannot be claimed based on the existing data, the scope of the paper is limited to three points: successful training of mice to do the task, reduced accuracy following cerebellar inactivation, and representation of task-relevant variables in cerebellar neural population without specifying the exact nature of the represented variables. Before publication, the reviewers agree that it is important to ensure that after toning down its claims, the manuscript does not leave behind any statements that could mislead readers as to what is actually shown. The reviewers have identified the following statements from the Title, Abstract, and Discussion section that are potentially misleading and should be restated with more specific statements that more accurately match the conclusions that can be supported by the data.\n\nTitle\n\nA cerebellar role in evidence-guided decision-making.\n\nImpact Statement\n\nThe lateral posterior cerebellum participates in evidence-accumulation-based decision-making, and Purkinje neurons in this region encode choice-, evidence-, and error-related variables. [Suggest replacing this stronger statement with language more like that used in the rebuttal, such as \"choice- and evidence-related information is present in lateral posterior cerebellum and could participate in decision-making computations during a decision-making task involving evidence accumulation.\"].\n\nAbstract\n\n- Here we show that during perceptual decision-making over a period of seconds, decision-, sensory-, and error-related information converge on the lateral posterior cerebellum in crus I, [The presence of task-related signals is shown. Convergence is not, and decision and sensory signals are not clearly dissociated].\n\n- Demonstrated that cerebellar inactivation reduces behavioral accuracy without impairing motor parameters of action [Not all motor parameters were controlled for].\n\n- We found that Purkinje cell somatic activity encoded choice- and evidence-related variables [Please avoid the suggestion that the specific variables that are encoded have been determined].\n\n- Decision errors were represented by dendritic calcium spikes, which are known to drive plasticity [This could misleadingly suggest that they are known to drive plasticity in this context].\n\n- We propose that cerebellar circuitry may contribute to the set of distributed computations in the brain that support accurate perceptual decision-making. [Should be more focused on task performance].\n\nDiscussion section\n\n- Cerebellar inactivation reduces animals' use of evidence and increases their use of choice history. [given the limitations of the interpretation of the inactivation experiments, this statement should be more conservative].\n\n- Given the temporal resolution of calcium measurements, our somatic signals may correspond to firing rate ramps (Shadlen and Newsome, 2001), steps (Latimer et al., 2015), or more complex response profiles that form a temporal basis for evidence accumulation (Scott et al., 2017). [This statement, as well as the corresponding section of the Results section, should include an explicit reference to the time course of somatic calcium signals from Purkinje cells, which is at least an order of magnitude slower than typical calcium imaging (Ramirez and Stell, 2016).].\n\n-The task-modulated activity we observe encodes both choice-related and evidence-related variables that may be used during the decision-making process. [Please avoid the suggestion that the specific variables that are encoded have been determined].\n\n- We observed an excess of dendritic calcium events coincident with decision errors, demonstrating for the first time observations compatible with error-associated signalling in a decision-making reward context. [Given the limitations of the interpretation of these signals, this statement should be more conservative].\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Cerebellar involvement in an evidence-accumulation decision-making task\" for further consideration at eLife. Your revised article has been favorably evaluated by Richard Ivry (Senior Editor), and Megan Carey (Guest Reviewing Editor).\n\nThe manuscript has been improved but there are some final issues that need to be addressed before acceptance, as outlined below:\n\nIn response to the request to re-evaluate the evidence for ramping signals that could be obtained with the somatic calcium imaging, the authors now state (Subsection \u201cPurkinje cell somatic calcium encodes task-relevant information\u201d), \"Therefore our observed increasing and decreasing time courses of calcium could reflect various firing rate profiles, such as impulse responses, ramps, or steps.\"\n\nIn light of this revision, as well as the fact that the electrophysiological evidence provided in Figure 2\u2014figure supplement 2 is from only a few cells, all of which show positive ramps of activity, the following statements should also be revised:\n\n- (Subsection \u201cPurkinje cell somatic calcium encodes task-relevant information\u201d), \"We did find that electrically recorded Purkinje cells exhibited gradually increasing rates of firing throughout the cue period (Figure 2\u2014figure supplement 2), suggesting that on average across trials, the fluorescence signals we observed correspond to firing rate ramps.\"\n\n- (Discussion section), \"Our electrical recordings also showed ramps, suggesting that temporally filtered firing rate ramps are sufficient to account for our observed fluorescence signals.\"\n\nIn both instances, we suggest removing the second clause, starting with \"suggesting that\u2026\"\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Cerebellar involvement in an evidence-accumulation decision-making task>\" for further consideration at eLife. Your revised article has been favorably evaluated by our editors again, but there remain some issues that need to be addressed before acceptance, as outlined below. Given that this is the third request for revisions, we will be unable to follow with any more. Please attend to this final issue one way or the other so that the next letter will be the final one.\n\nWe appreciate the authors' desire to speculate here. However, in our view, the \"suggests/ consistent with\" was not the only problem with this sentence. There is also a problem with \"sufficient\". The electrophysiological evidence in Figure 2\u2014figure supplement 2 is anecdotal and non-quantitative. For this statement to be left in, it would need to be adequately supported. In our view, this would require a quantitative comparison between imaging and electrophysiology results. In particular, we would want to know:\n\n- How many Purkinje cells in total were recorded from electrophysiologically? How many of these showed ramping? (all of the cells they showed us show positive ramps, but it is not clear if those were selected from a larger data set)\n\n- Did any Purkinje cells show ramping calcium signals without a transient increase in firing rate?\n\n- Did any Purkinje cells show ramping calcium signals without ramps in firing rate (for instance, in cases where only a transient increase in firing may have been observed electrophysiologically)?\n\n- Why are no decreasing activity ramps found with electrophysiology, but they are found with imaging?\n\n- What accounts for the decreasing ramps that were observed with calcium imaging?\n\n- What would the predicted calcium signals be for the examples shown if the spike rates recorded electrophysiologically (with and without the transient increase/ ramping components) were convolved according to Ramirez and Stell (2016)? And/or with the authors' own convolution/ deconvolution methods, from the simultaneous calcium imaging/ electrophysiological recordings that they performed?\n\nWe give the authors the choice of either fully addressing these points, or using compromise language, such as \"Preliminary electrical recordings also showed ramps, consistent with the idea that temporally filtered firing rate ramps may account for the observed fluorescence signals.\"\n",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "832ea2a9-430e-4f86-b219-2a47f2679af8",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C1",
+      "claim": "The cerebellum is best known for its role in controlling movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the cerebellum is best known for its role in controlling movement, clinical and experimental evidence have long indicated that the posterior cerebellum regulates a wide range of cognitive functions (Konarski et al., 2005; Schmahmann and Sherman, 1998; Stoodley et al., 2012), including decision-making and working memory (Blackwood et al., 2004; Desmond et al., 1997; Ernst et al., 2002; Kansal et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "caba4c45-e786-49e3-a656-300de2c033d2",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C2",
+      "claim": "Clinical and experimental evidence have long indicated that the posterior cerebellum regulates a wide range of cognitive functions including decision-making and working memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the cerebellum is best known for its role in controlling movement, clinical and experimental evidence have long indicated that the posterior cerebellum regulates a wide range of cognitive functions (Konarski et al., 2005; Schmahmann and Sherman, 1998; Stoodley et al., 2012), including decision-making and working memory (Blackwood et al., 2004; Desmond et al., 1997; Ernst et al., 2002; Kansal et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "421bb801-2c02-4e40-abb8-1c8b6db56817",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C3",
+      "claim": "Focal cerebellar lesions in humans lead to impairment in working memory performance.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, focal cerebellar lesions in humans lead to impairment in working memory performance (Gottwald, 2004), and cerebellar fMRI activation increases with working memory demands (K\u00fcper et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gottwald, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "e13b2787-e4d9-4cf0-b57f-bb8b4bf78101",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C4",
+      "claim": "Cerebellar fMRI activation increases with working memory demands.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, focal cerebellar lesions in humans lead to impairment in working memory performance (Gottwald, 2004), and cerebellar fMRI activation increases with working memory demands (K\u00fcper et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to K\u00fcper et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "e762d94a-8e8d-456b-aa1d-3eee33284d64",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C5",
+      "claim": "Very little is known about the circuit mechanisms supporting cerebellar roles in cognitive functions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, very little is known about the circuit mechanisms supporting these roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "cb2b2048-583a-4633-97b6-92b2ba90b182",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C6",
+      "claim": "The cerebellum is thought to use sensory and internal information as a means of adjusting action on a subsecond scale.",
+      "claim_type": "EXPLICIT",
+      "source": "In the domain of movement control, the cerebellum is thought to use sensory and internal information as a means of adjusting action on a subsecond scale (Krakauer and Shadmehr, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Krakauer and Shadmehr, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "e609a33b-1605-49eb-ae26-2b685e5245cb",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C7",
+      "claim": "The cerebellar cortex consists of highly characteristic circuitry occurring in repeating modules which are likely to perform similar manipulations on information irrespective of whether the information is sensory, motor, or neither.",
+      "claim_type": "EXPLICIT",
+      "source": "The cerebellar cortex consists of highly characteristic circuitry occurring in repeating modules which are likely to perform similar manipulations on information irrespective of whether the information is sensory, motor, or neither (Popa et al., 2014; Reeber et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Popa et al., 2014 and Reeber et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "cb5b527f-b267-48b2-a48e-233c784f9c3f",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C8",
+      "claim": "Well-established models of cerebellar motor learning may be expanded to support the control of cognitive processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, well-established models of cerebellar motor learning may be expanded to support the control of cognitive processing (Ito, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ito, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "67c3a218-0521-440f-822b-df476159897a",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C9",
+      "claim": "Neurons in multiple brain structures across species have been found to represent various stages in the transformation from sensory information to decision signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons in multiple brain structures across species have been found to represent various stages in the transformation from sensory information to decision signals. These regions include prefrontal, premotor, parietal, and primary and secondary sensory cortices, striatum, midbrain structures, and possibly others (Akrami et al., 2018; Brody and Hanks, 2016; Gold and Shadlen, 2007; Scott et al., 2017; Yartsev et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "533bc511-aa41-4962-8f4e-9ec159bd3b4f",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C10",
+      "claim": "Many brain structures involved in decision-making are reciprocally connected with the cerebellum, notably with posterior cerebellar regions such as crus I.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of these structures are reciprocally connected with the cerebellum, notably with posterior cerebellar regions such as crus I (Kelly and Strick, 2003; Prevosto et al., 2010; Strick et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kelly and Strick, 2003; Prevosto et al., 2010; Strick et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "0123bef3-af45-498c-b27d-d78bb994d829",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C11",
+      "claim": "Communication between forebrain structures and the posterior cerebellum raises the possibility that the cerebellum might participate in the formation or updating of decision-related signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Communication between forebrain structures and the posterior cerebellum (Buckner et al., 2011; Stoodley et al., 2017) raises the possibility that the cerebellum might participate in the formation or updating of decision-related signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on cited anatomical connectivity studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "d60dd948-e8e0-4607-99f2-410415649a26",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C12",
+      "claim": "Mice learned to perform the evidence accumulation task with high accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice learned to perform this task with high accuracy (Figure 1B, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1B and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "700281ee-aa88-4b6e-a455-061ce859a07c",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C13",
+      "claim": "Mice used evidence throughout the entire cue period to guide decisions, with a bias for evidence toward the end of the cue period.",
+      "claim_type": "EXPLICIT",
+      "source": "Behavioral regression analysis demonstrates that mice used evidence throughout the entire cue period to guide decisions, with a bias for evidence toward the end of the cue period (Figure 1C), similar to some recency strategies that have been documented in human evidence accumulation (de Lange et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by regression analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "bfd81471-b03b-4bae-95ac-463575c8c4ce",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C14",
+      "claim": "Mice learned not to lick during evidence presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Like other tasks in which movement is minimal until a go cue is presented (Scott et al., 2017; Shadlen and Newsome, 2001), mice learned not to lick during evidence presentation (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "a1926dc5-2a7b-4a7f-8ebd-43597bc4a644",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C15",
+      "claim": "The ansiform area (crus I) of the posterior hemispheric cerebellum evolutionarily expanded in tandem with prefrontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused our study on the ansiform area (crus I) (Luo et al., 2017) of the posterior hemispheric cerebellum (Figure 1F), a region that evolutionarily expanded in tandem with prefrontal cortex (Balsters et al., 2010) and communicates bidirectionally with forebrain regions including prefrontal, parietal, and somatosensory cortex (Kelly and Strick, 2003; Prevosto et al., 2010; Proville et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Balsters et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "ace11cdd-0068-48a9-b3fb-e917495e50c1",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C16",
+      "claim": "Crus I communicates bidirectionally with forebrain regions including prefrontal, parietal, and somatosensory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused our study on the ansiform area (crus I) (Luo et al., 2017) of the posterior hemispheric cerebellum (Figure 1F), a region that evolutionarily expanded in tandem with prefrontal cortex (Balsters et al., 2010) and communicates bidirectionally with forebrain regions including prefrontal, parietal, and somatosensory cortex (Kelly and Strick, 2003; Prevosto et al., 2010; Proville et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kelly and Strick, 2003; Prevosto et al., 2010; Proville et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "20e2f8c1-3b54-4aff-9aa0-e13a5ac3dd47",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C17",
+      "claim": "Crus I represents orofacial features under anesthesia.",
+      "claim_type": "EXPLICIT",
+      "source": "This cerebellar region represents orofacial features under anesthesia (Manni and Petrosini, 2004; Shambes et al., 1978), suggesting that it might aid in processing complex task-related information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Manni and Petrosini, 2004; Shambes et al., 1978.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "8831bb35-b1e9-43fe-91de-2dcc599b92e2",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C18",
+      "claim": "Bilateral muscimol inactivation of crus I reduced choice accuracy while leaving intact the ability to lick and perform trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Inactivations reduced choice accuracy while leaving intact the ability to lick and perform trials (Figure 1D, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1D and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "ef0c3323-f19a-447f-a8ea-09866e4b24c0",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C19",
+      "claim": "Muscimol inactivation of crus I altered multiple behavioral parameters, including a reduction in animals' sensitivity to evidence and an increased tendency to make the same choice as in the previous trial.",
+      "claim_type": "EXPLICIT",
+      "source": "Fits to this model suggest that inactivations altered multiple behavioral parameters, notably including a reduction in animals' sensitivity to evidence and an increased tendency to make the same choice as in the previous trial (Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by regression model fits shown in Figure 1\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "dcdb2b2e-9929-4f49-b067-f77c4ba67e34",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C20",
+      "claim": "Activity in crus I is necessary for successful performance of the evidence accumulation task.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, activity in this region is necessary for successful performance of the task, suggesting it may play a role in decision-making computations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the muscimol inactivation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "2844bf26-140c-4955-9f28-b0f00ff35d33",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C21",
+      "claim": "A population of Purkinje cells exhibited calcium activity modulated during the cue period, with increases or decreases in fluorescence spanning the duration of evidence accumulation and decision formation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a population of cells in which calcium activity was modulated during the cue period, exhibiting increases or decreases in fluorescence spanning the duration of evidence accumulation and decision formation (Figure 2C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data shown in Figure 2C\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "752d60f6-cf2a-4993-80fe-c55dc3e6791d",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C22",
+      "claim": "In 70% of Purkinje cells, cue-period fluorescence was better correlated with time than pre-cue-period fluorescence was.",
+      "claim_type": "EXPLICIT",
+      "source": "In 70% of cells, cue-period fluorescence was better correlated with time than pre-cue-period fluorescence was (95% CI: 67\u201372%, bootstrap).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "49a4c953-fcfd-4b17-ad0c-fe006c6b122b",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C23",
+      "claim": "At the end of each trial, Purkinje cell activity returned to baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "At the end of each trial, activity returned to baseline (p=0.91, two-tailed paired t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical test of imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "873227b9-8de6-4b41-ada3-8b9efe35fc79",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C24",
+      "claim": "Cytoplasmic calcium acts as a temporally filtered readout of firing rate, and calcium extrusion in Purkinje cells occurs on a slower time scale than in neocortical neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytoplasmic calcium acts as a temporally filtered readout of firing rate, and calcium extrusion in Purkinje cells occurs on a slower time scale (see Figure 3B; Konnerth et al., 1992; Lev-Ram et al., 1992; Fierro and Llano, 1996; Rokni and Yarom, 2009; Ramirez and Stell, 2016) than in neocortical neurons (Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research and data in Figure 3B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "dc2caf89-36bb-40c7-90db-a235cb8a4ac5",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C25",
+      "claim": "Electrically recorded Purkinje cells exhibited gradually increasing rates of firing throughout the cue period.",
+      "claim_type": "EXPLICIT",
+      "source": "We did find that electrically recorded Purkinje cells exhibited gradually increasing rates of firing throughout the cue period (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by electrophysiology data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "4af03bf3-0c99-41e7-a4e6-321408ec3ed2",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C26",
+      "claim": "Linear classifiers based on somatic signals accurately decoded the upcoming choice and the side with greater evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "These classifiers accurately decoded the upcoming choice and the side with greater evidence (Figure 2F), indicating that as a population, the imaged neurons encode behaviorally relevant features of the decision-making process.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by decoding analysis shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "28b6c8e6-522a-48c8-9286-4a485458a388",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C27",
+      "claim": "Choice-related information exists independently in population-level neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, when the choice on each trial was randomly assigned to another trial with the same sensory evidence, choice decoding accuracy dropped significantly (Figure 2F, top panel, top two traces). The difference in decoding accuracy between the original and shuffled data indicates the magnitude of independent choice-related information in the population-level neural activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by shuffling analysis shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "130a743a-4033-445c-b86a-10597c16daf9",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C28",
+      "claim": "Evidence-related information is represented independently in population-level neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed the converse test as well, shuffling evidence while holding choice constant, and found that evidence-related information is also represented independently in population-level neuronal activity (Figure 2F, bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by shuffling analysis shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "0ec4c58d-5efd-4fce-9364-9da2879fa9e5",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C29",
+      "claim": "Licking, nose, whisker, and forepaw movements did not differ across trial types and were unable to predict choice and evidence variables.",
+      "claim_type": "EXPLICIT",
+      "source": "Licking, nose, whisker, and forepaw movements did not differ across trial types and were unable to predict choice and evidence variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral movie analysis shown in Figure 2\u2014figure supplements 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "e871e7c1-20d4-4f12-b923-3f6658705ee6",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C30",
+      "claim": "Purkinje cells encode choice- and evidence-related variables with minimal information about predictive anticipatory movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, Purkinje cells encode choice- and evidence-related variables with minimal information about predictive anticipatory movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of movement differences across trial types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "9ac1a6cc-1b61-4c19-af69-62bd56612af9",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C31",
+      "claim": "In 80% of Purkinje cells, cue-period calcium was modulated in the same direction without regard to whether the upcoming decision was left or right.",
+      "claim_type": "EXPLICIT",
+      "source": "In 80% (678/843) of cells, cue-period calcium was modulated in the same direction (i.e. upward or downward) without regard to whether the upcoming decision was left or right, while in the remaining 20% (165/843) of cells, activity for left choices and right choices was modulated in opposite directions (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis of imaging data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "4dbe5c1c-94b6-43e9-be34-c4a398839fd9",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C32",
+      "claim": "In 30% of Purkinje cells, pre-decision fluorescence differed significantly between L-choice and R-choice trials.",
+      "claim_type": "EXPLICIT",
+      "source": "In 30% (256/843) of cells, pre-decision fluorescence (measured in the 500 ms preceding the end of the delay) differed significantly between L-choice and R-choice trials (criterion p<0.05, two-tailed t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "e979591f-621e-44ec-8548-ea9eea695368",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C33",
+      "claim": "Of choice-selective Purkinje cells, 63% exhibited greater activity in left-choice trials, compared with 37% in right-choice trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these choice-selective cells, 63% (162/256) exhibited greater activity in left-choice trials, compared with 37% (94/256) in right-choice trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "51463a7a-ab1a-4e27-a561-4e95d6577da4",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C34",
+      "claim": "Mixed representations of left and right choices in cerebellar Purkinje cells are consistent with neocortical recordings in decision-making, particularly in frontal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "While recordings from a single (left) hemisphere might have been expected to produce strongly lateralized representations, these mixed representations of left and right choices are consistent with neocortical recordings in decision-making, particularly in frontal regions (Erlich et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Erlich et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "724c7a9b-3ec7-416c-959d-f83d4333355b",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C35",
+      "claim": "Puff-triggered averages in some Purkinje cells rose and fell in approximately 1 s.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed cells in which cue-period activity was modulated by the strength of evidence presented, and responses to individual sensory events were apparent in some cells as puff-triggered averages that rose and fell in approximately 1 s (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "19b70f5e-a940-45d2-9142-40c455232cb2",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C36",
+      "claim": "Significant relationships between fluorescence and evidence quantity were found in 26% of Purkinje cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found significant relationships in 26% (216/843) of neurons, with most cells exhibiting a correlation with single-sided evidence (+L, -L, +R, and -R; 178 cells), and a smaller number showing a correlation with a linear sum or difference of evidence (\u00b1(L,R)/\u00b1(L, -R), 38 cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by linear regression analysis of imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "1f03e14d-a1d5-410d-bbfd-2e327babc546",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C37",
+      "claim": "Individual Purkinje cells were predominantly but not exclusively sensitive to evidence presented on one side.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, individual cells were predominantly but not exclusively sensitive to evidence presented on one side, consistent with properties of some neocortical neurons in evidence accumulation (Scott et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of imaging data and citation to Scott et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "9b351745-94cd-4a3b-98d7-6da3aaee5cb9",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C38",
+      "claim": "Evidence-modulated Purkinje cells as a population encoded the strength of evidence presented for decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "As a population, these evidence-modulated cells encoded the strength of evidence presented for decision-making (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "bf3bf4ae-2c1c-444c-a565-649f00286fa4",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C39",
+      "claim": "In animals not performing the decision-making task, cue-period fluorescence modulation, evidence side decoding, and evidence modulation were not observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In animals not performing the decision-making task, cue-period fluorescence modulation, evidence side decoding, and evidence modulation were not observed (Figure 3\u2014figure supplement 1), indicating that the signals we observed are task-specific and are not consequences of baseline Purkinje cell response properties.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by control experiments shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "6af85dce-79c2-440e-a247-2bf1e3c3ca10",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C40",
+      "claim": "Climbing fiber-driven error signals evoke calcium transients in Purkinje cell dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "In theories of cerebellar learning, the transformation of mossy-fiber input to Purkinje cell output is refined by climbing fiber-driven error signals which drive plasticity (Marr, 1969). These instructive error signals evoke calcium transients in Purkinje cell dendrites (Ozden et al., 2009; Tank et al., 1988) and an accompanying complex electrophysiological spike (Llin\u00e1s and Sugimori, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "7afdcd1c-5fe7-4f44-8629-3d98a2863025",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C41",
+      "claim": "In many Purkinje cells, dendritic events occurred directly following the animal's decision, specifically when that decision was an error.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that in many cells, dendritic events occurred directly following the animal's decision, specifically when that decision was an error (Figure 4C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by dendritic imaging data shown in Figure 4C\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "af389d7a-ded4-431f-879f-ff2b7aa98205",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C42",
+      "claim": "In 82% of Purkinje cells, the mean dendritic activity following errors exceeded that following rewards.",
+      "claim_type": "EXPLICIT",
+      "source": "In 82% of cells, the mean activity following errors exceeded that following rewards (p<0.0001, Wilcoxon signed-rank test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of dendritic imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "489cf636-653d-485e-9c76-d20cb36d893c",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C43",
+      "claim": "The increase in dendritic activity following errors occurred in both left- and right-choice trials, suggesting that the signal was reporting a task feature that was independent of pre-decision evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase in activity occurred in both left- and right-choice trials, in which sensory events differed, suggesting that the signal was reporting a task feature that was independent of pre-decision evidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that the signal occurred regardless of choice direction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "6b46badd-788e-4fff-a476-ba743732dbe1",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C44",
+      "claim": "Lick-cessation-aligned dendritic signalling was significantly elevated in error trials relative to correct trials.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that lick-cessation-aligned dendritic signalling was significantly elevated in error trials relative to correct trials (Figure 4F), indicating that our results are not explained by lick-cessation signals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "fd1c63e2-06c7-49bd-b723-760a73533040",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C45",
+      "claim": "Dendritic signals were significantly error-modulated for lick initiation events, orofacial movements, varying licking magnitudes, and trials in the absence of auditory cues.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested a number of similar hypotheses, including lick initiation events, orofacial movements, varying licking magnitudes, and trials in the absence of auditory cues, and found that dendritic signals were also significantly error-modulated in all cases (Figure 4F, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analyses shown in Figure 4F and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "99b99e84-0f7d-4d21-943f-282d331dd979",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C46",
+      "claim": "Dendritic events encode an error-associated signal that is not specific to measured parameters of movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus dendritic events encode an error-associated signal that is not specific to measured parameters of movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that error signals persist across different movement contexts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "97c8b8f1-8f9b-4b94-a419-08d8d52d916d",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C47",
+      "claim": "Dendritic signalling was consistently elevated in error trials relative to correct trials across varying trial difficulties.",
+      "claim_type": "EXPLICIT",
+      "source": "Dendritic signalling was consistently elevated in error trials relative to correct trials across varying trial difficulties, with a modest but non-significant reduction in magnitude in trials with stronger evidence (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "34d58294-fb5b-4612-ad09-a014d458aca0",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C48",
+      "claim": "The population of Purkinje cells could decode trial outcome (correct or error) on a trial-by-trial basis.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that the population of Purkinje cells could decode trial outcome (correct or error) on a trial-by-trial basis (Figure 4G, post-choice correct/error decoding greater than shuffle and pre-choice conditions, p<0.01, two-tailed paired t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by decoding analysis shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "649e5e80-3b7b-4ec2-9fae-66705d0ca5eb",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C49",
+      "claim": "Cerebellar crus I communicates with numerous forebrain structures including somatosensory, frontal, and parietal regions via the ventral dentate nucleus and thalamic intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "Cerebellar crus I communicates with numerous forebrain structures including somatosensory, frontal, and parietal regions (Prevosto et al., 2010; Proville et al., 2014; Strick et al., 2009) via the ventral dentate nucleus (Bernard et al., 2014; Parker et al., 2017) and thalamic intermediates (Asanuma et al., 1983; Dum and Strick, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "d5987aac-c5f8-4960-a72b-092c3de7ed0a",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C50",
+      "claim": "Posterior hemispheric cerebellar cortex and its principal target, the dentate nucleus, show sensorimotor activity relating to whisker sensation, licking, and reward, as well as preparatory activity and firing rate ramps.",
+      "claim_type": "EXPLICIT",
+      "source": "This cerebellar region represents orofacial features under anesthesia (Manni and Petrosini, 2004; Shambes et al., 1978), suggesting that it might aid in processing complex task-related information. First, to determine whether activity in this cerebellar region participates in the decision-making behavior, we injected the GABAA agonist muscimol bilaterally into crus I. Inactivations reduced choice accuracy while leaving intact the ability to lick and perform trials (Figure 1D, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "097a6e62-c6f4-4793-8051-45dea08d3b30",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C51",
+      "claim": "The cerebellum is thought to use information from elsewhere in the brain to form internal models that predict and modulate brain activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The cerebellum is thought to use information from elsewhere in the brain to form internal models that predict and modulate brain activity (Ito, 2008; Marr, 1969; Wolpert et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "a4e155d7-3d09-44fb-a51b-46e096a6ccf7",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C52",
+      "claim": "The lateral posterior cerebellum may receive evidence/decision-related efference copy from forebrain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of our decision-making task, the lateral posterior cerebellum may receive evidence/decision-related efference copy from forebrain regions, where evidence and decision-related variables have been observed and proposed to support decision-making (Ding and Gold, 2012; Hanks et al., 2015; Licata et al., 2017; Morcos and Harvey, 2016; Shadlen and Newsome, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on known connectivity and prior observations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "920230aa-16a8-48b7-93bf-8b48a14d8ead",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C53",
+      "claim": "The cerebellum is positioned to be part of a closed feedback-loop circuit in which it both receives and sends task-related information.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the cerebellum is positioned to be part of a closed feedback-loop circuit in which it both receives and sends task-related information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from anatomical connectivity and functional observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "29dff09f-a6de-4486-8beb-64751dca8b6e",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C54",
+      "claim": "Muscimol disrupted the proportion of correct choices without disrupting the ability to make a choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Muscimol disrupted the proportion of correct choices without disrupting the ability to make a choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral data from muscimol inactivation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "953756b7-2760-46af-802a-a3dd7ad4efca",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C55",
+      "claim": "The lateral posterior cerebellum modulates not the mechanics of action, but rather processes that precede the brain's commitment to act.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the lateral posterior cerebellum modulates not the mechanics of action, but rather processes that precede the brain's commitment to act.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that muscimol affected choice accuracy but not the ability to make choices.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "7afcd845-5aa6-46d7-b748-7fbc60a08caf",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C56",
+      "claim": "Reduced performance following muscimol inactivation was accompanied by a decreased weighting of evidence and increased weighting of choice history parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Our fits to a behavioral choice model indicate that reduced performance was accompanied by a decreased weighting of evidence and increased weighting of choice history parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral regression model fits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "28a7a17b-ae95-4417-9ea0-262d1669cfe6",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C57",
+      "claim": "Signals emerging from the cerebellum reach thalamic targets which send widespread projections throughout the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Complementary to association areas in the neocortex, signals emerging from the cerebellum are known to reach thalamic targets which send widespread projections throughout the brain (Strick et al., 2009), situating the cerebellum in a position to modulate one or many components of forebrain processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Strick et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "7bf3860b-f1b9-41e1-b0b6-9f4b102b16c2",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C58",
+      "claim": "Preliminary electrical recordings showed firing rate ramps in Purkinje cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Preliminary electrical recordings also showed ramps, consistent with the idea that temporally filtered firing rate ramps may account for the observed fluorescence signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by electrophysiology data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "6a926640-433c-426e-9cc1-4c6d0ccb808a",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C59",
+      "claim": "Purkinje cell somatic signals represented task-relevant information related to choice and evidence variables.",
+      "claim_type": "EXPLICIT",
+      "source": "These somatic signals represented task-relevant information related to choice and evidence variables, although it remains an open question as to whether these signals precisely track accumulated evidence over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by imaging and decoding analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "9760e3f5-f8ae-4fc3-be7a-068ec93ea80b",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C60",
+      "claim": "Evidence representations in Purkinje cells were primarily of single-sided evidence, consistent with neural recordings in PPC and FOF of rats performing a similar task.",
+      "claim_type": "EXPLICIT",
+      "source": "The evidence representations we observed were primarily of single-sided evidence, consistent with neural recordings in PPC and FOF of rats performing a similar task (Scott et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by imaging data and citation to Scott et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "db5e97fa-34c1-42ed-aa01-c845f7d5f961",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C61",
+      "claim": "Cerebellar involvement may be upstream of the calculation of the decision variable (#R-#L).",
+      "claim_type": "EXPLICIT",
+      "source": "This could indicate that cerebellar involvement is upstream of the calculation of the decision variable (#R-#L), and we consider this a likely possibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the observed evidence representations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "5c22c1c5-db35-4fdd-892d-34272afc565d",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C62",
+      "claim": "Climbing fiber activity may shape the processing of granule cell inputs by inducing plasticity at multiple cerebellar sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Climbing fiber activity may shape the processing of granule cell inputs by inducing plasticity at multiple cerebellar sites (Albus, 1971; Marr, 1969; Medina and Lisberger, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "5b40c979-b955-4991-b5f6-249e7605ce86",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C63",
+      "claim": "An excess of dendritic calcium events coincident with decision errors was observed in Purkinje cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed an excess of dendritic calcium events coincident with decision errors, which has not been previously reported in the cerebellum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by dendritic imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "fc7e8b0a-8512-424e-8c8f-1fe977a7f5f9",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C64",
+      "claim": "No significant trend was apparent for error response magnitude modulation by trial difficulty.",
+      "claim_type": "EXPLICIT",
+      "source": "If the error-associated response were analogous to dopamine reward prediction errors, one might have expected strong modulation of the error response magnitude by trial difficulty, with the easiest trials producing the largest error response. However, no such trend was apparent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of dendritic imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "c29504f8-a3cd-4913-b525-e113394c4cbd",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C65",
+      "claim": "The cerebellum has clearly delineated cell types and connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The involvement of the cerebellum, with its clearly delineated cell types and connectivity (Dean et al., 2010; Ito, 2012) opens many attractive avenues for future studies in decision-making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "6328ac55-4cff-49cb-80fe-9fd2bb5fca09",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C66",
+      "claim": "Output signals from the cerebellum may be combined with signals in sensory circuits to control the input gain of sensory information into accumulators elsewhere in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, output signals from the cerebellum may be combined with signals in sensory circuits to control the input gain of sensory information into accumulators elsewhere in the brain. This model would be consistent with observations of cerebellar involvement in gating sensory information (Apps et al., 1997; Ozden et al., 2012) and inputs to working memory (Baier et al., 2014; Sobczak-Edmans et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "28c38e2c-4834-4d6c-91d6-4c825406f562",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C67",
+      "claim": "The cerebellum may modulate dynamics of the accumulation process.",
+      "claim_type": "EXPLICIT",
+      "source": "In a second possibility, the cerebellum may modulate dynamics of the accumulation process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about possible cerebellar function.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "1e7525eb-8672-4615-8add-e3ddc6ad9857",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C68",
+      "claim": "Cerebellar signals may modulate activity that converts the accumulator value into a decision.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, cerebellar signals may modulate activity that converts the accumulator value into a decision. Such a post-categorization influence has been observed in prefrontal regions during evidence accumulation (Erlich et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning supported by citation to Erlich et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "5b76e414-2641-4420-bbf6-e5e8b7c54b1d",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "claim_id": "C69",
+      "claim": "Activity from the cerebellum may be combined with activity in forebrain structures to produce a refined signal that is more likely to yield a reward.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, activity from the cerebellum may be combined with activity in forebrain structures to produce a refined signal that is more likely to yield a reward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about cerebellar function.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "55653c0c-7db7-4ccf-b784-2b44781b1130",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Mice successfully learned and performed an evidence accumulation task with high accuracy (>70% correct), using evidence throughout the cue period with a recency bias, while maintaining minimal licking during evidence presentation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 are well-supported by behavioral data in Figures 1B, 1C, and 1E, with appropriate statistical analyses including regression showing evidence weighting across time bins. The task design successfully implements the intended evidence accumulation paradigm with proper controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "aa4b935c-c868-4555-b1e8-9c02dac006d7",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Bilateral muscimol inactivation of crus I reduced choice accuracy without impairing the ability to lick or perform trials, with behavioral modeling indicating reduced evidence sensitivity and increased choice history dependence, suggesting cerebellar involvement in decision processes rather than motor execution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20, C54-C56 are supported by inactivation data (Figure 1D, supplements) and behavioral regression modeling (Figure 1\u2014figure supplement 2C). The dissociation between choice accuracy and motor ability is convincing. However, the spatial specificity of muscimol spread is uncertain despite post-hoc fluorescein verification, and the bilateral nature of inactivation prevents assessment of lateralized contributions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "cdcdd376-ea8f-4946-aa37-4a7cbf449976",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Purkinje cell somatic calcium activity was modulated during the cue period in 70% of cells, with activity returning to baseline after trials, and electrophysiological recordings showing gradually increasing firing rates during evidence accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23, C25 are supported by two-photon imaging (Figure 2C-E) and electrophysiology (Figure 2\u2014figure supplement 2) with appropriate statistical tests. The 70% modulation rate significantly exceeds shuffle controls. However, the relationship between calcium dynamics and underlying firing patterns remains somewhat indirect given the slow calcium kinetics in Purkinje cells (C24).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "def16012-9c05-4aea-bdbe-56ddceebfd64",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Population-level Purkinje cell somatic activity accurately decoded both upcoming choice and evidence side, with independent encoding of choice and evidence information demonstrated through shuffling controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 are supported by decoding analyses (Figure 2F) with appropriate shuffling controls to separate choice and evidence information. The independent shuffling procedure (holding one variable constant while shuffling the other) is methodologically sound for addressing the correlation between choice and evidence in correct trials.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "f4a12e72-c5e3-400c-a849-56e248b2bc62",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Purkinje cells encode choice and evidence variables with minimal information about anticipatory movements, as licking, nose, whisker, and forepaw movements did not differ across trial types and could not predict choice or evidence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 are supported by extensive behavioral video analysis (Figure 2\u2014figure supplements 3-4) showing no systematic movement differences across conditions. The decoding analysis using movement features failed to predict task variables, strengthening the interpretation that neural signals reflect cognitive rather than purely motor variables. This is a critical control for the decision-making interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "a47bb122-1c73-4b73-a987-b3eebae8c154",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Individual Purkinje cells showed diverse choice representations: 80% modulated in the same direction regardless of choice direction, while 20% showed opposite modulation for left vs. right choices. Among choice-selective cells (30%), there was a bias toward left-choice encoding (63% vs. 37%), with mixed bilateral representations similar to frontal cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 are supported by single-cell analysis (Figure 3A) with appropriate statistical criteria (p<0.05, t-test). The mixed representation is interesting and the comparison to frontal cortex (Erlich et al., 2011) is appropriate. However, recording from only the left hemisphere limits interpretation of the lateralization bias, and the functional significance of the 80/20 split in modulation patterns is unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "ff01e5b7-4bbb-43d7-9d15-0e16a10f2536",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Twenty-six percent of Purkinje cells showed significant relationships between fluorescence and evidence quantity, predominantly encoding single-sided evidence (left or right) rather than integrated evidence, with the population encoding evidence strength.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 are supported by linear regression analysis (Figure 3C) and population averaging (Figure 3D). The predominance of single-sided evidence encoding (178/216 cells) is consistent with some neocortical findings (Scott et al., 2017). However, the relatively low percentage (26%) of evidence-modulated cells and the lack of clear integration of bilateral evidence suggests cerebellar involvement may be upstream of decision variable computation, as the authors acknowledge (C61).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "4d8d6f5c-6806-4dd7-932f-3b1db74e0c7c",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In control animals not performing the decision-making task, cue-period fluorescence modulation, evidence decoding, and evidence modulation were absent, indicating task-specificity of the observed signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 is supported by control experiments (Figure 3\u2014figure supplement 1) showing lack of modulation in non-task conditions. This is a critical control demonstrating that the signals are not simply sensory responses to puffs but are task-related. However, the sample size for this control (n=2 mice, 168 cells) is smaller than the main experiment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "db3cff0f-ab63-4b1f-a13b-0829a390fb53",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Dendritic calcium events in Purkinje cells occurred preferentially after decision errors (82% of cells showed greater error than reward activity), occurring regardless of choice direction and independent of measured movement parameters, suggesting an error signal not specific to motor execution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43, C46 are supported by dendritic imaging (Figure 4C-E) with strong statistical evidence (p<0.0001, Wilcoxon test). The extensive motor controls (Figure 4F, Figure 4\u2014figure supplement 1) testing lick initiation/cessation, orofacial movements, and varying licking magnitudes strengthen the interpretation that this is not a pure motor signal. However, the signal could still reflect motor error detection rather than cognitive error per se.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "7b08ae6e-ec18-42e4-b60b-c2ce7af6d6fb",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Error-associated dendritic signals persisted when controlling for lick cessation, lick initiation, orofacial movements, varying licking magnitudes, and in trials without auditory cues, with error modulation significant across all tested motor contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 are supported by comprehensive control analyses (Figure 4F, Figure 4\u2014figure supplement 1). The error:correct activity ratio consistently exceeded 1 across diverse motor contexts (p<0.001 for all comparisons). This extensive set of controls is a strength of the study, though it remains possible that unmeasured motor or sensory variables could contribute.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "11c5f3bd-7439-4158-b011-bcbe1ad97ae0",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Error-associated dendritic signals showed consistent elevation across varying trial difficulties without significant modulation by evidence strength, unlike traditional reward prediction error signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47 and C64 are supported by analysis across trial difficulties (Figure 4\u2014figure supplement 1). The lack of difficulty modulation (p=0.59) distinguishes these signals from dopaminergic reward prediction errors and suggests a more categorical error signal. However, the modest non-significant trend toward reduced magnitude in easier trials warrants further investigation with larger sample sizes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "866708a8-e42d-46dd-8d45-c2b6b8aa475e",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Population-level Purkinje cell dendritic activity could decode trial outcome (correct vs. error) on a trial-by-trial basis, with post-choice decoding significantly exceeding both shuffle and pre-choice conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 is supported by decoding analysis (Figure 4G) with appropriate statistical testing (p<0.01, paired t-test). The comparison to both shuffle and pre-choice conditions strengthens the interpretation that this is a post-decision outcome signal rather than a pre-decision variable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "686f3c9f-3fa2-4ccc-a861-51788b69da91",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Purkinje cell somatic calcium signals represent temporally filtered readouts of firing rate, with preliminary electrophysiology showing firing rate ramps consistent with observed fluorescence dynamics, and these signals contain task-relevant choice and evidence information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C58-C59 are supported by citations to prior work on calcium dynamics and preliminary electrophysiology data (Figure 2\u2014figure supplement 2). The integration of calcium imaging and electrophysiology strengthens interpretation, though the electrophysiology is described as 'preliminary' and sample size is limited (n=3 mice, 9 cells). The slow calcium kinetics in Purkinje cells (slower than neocortex) complicates precise temporal interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "6ddd3940-75bc-4b3c-82ed-93bf28ecc274",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Evidence representations in Purkinje cells were primarily single-sided (consistent with PPC/FOF recordings in rats), suggesting cerebellar involvement may be upstream of decision variable calculation (#R-#L), though this remains speculative.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C61 combine data-supported observations with speculative interpretation. The single-sided evidence encoding is well-documented (C36-C37), and the comparison to Scott et al. 2017 is appropriate. However, the inference about being 'upstream' of decision variable calculation (C61) is explicitly acknowledged as speculative and requires additional experiments to test alternative models of cerebellar contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "1b9edee8-65f4-4667-bf3f-c6bdc7f3f540",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior work establishes that the cerebellum is involved in motor control and cognitive functions including decision-making and working memory, but circuit mechanisms remain poorly understood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 accurately summarize established knowledge with appropriate citations. These provide context for the knowledge gap the study addresses. The citations are appropriate and the characterization of the field is accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "f18af30d-ee71-47e4-94cf-d35a275bbdcc",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Cerebellar theories propose that the cerebellum uses sensory and internal information to adjust action on subsecond timescales, with modular circuitry performing similar computations across domains, suggesting motor learning models may extend to cognitive processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 accurately represent established cerebellar theories with appropriate citations (Krakauer & Shadmehr 2006, Popa et al. 2014, Reeber et al. 2013, Ito 2008). This theoretical framework appropriately motivates the study's approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "5df83d09-9833-40bc-bdf2-76281cbb63b0",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Multiple brain regions encode decision-related signals, many are reciprocally connected with cerebellar crus I, raising the possibility of cerebellar participation in decision signal formation or updating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11 accurately summarize prior work on decision-making circuits and cerebellar connectivity with appropriate citations. The inference in C11 about cerebellar participation is reasonable given the anatomical connectivity, though it remains a hypothesis tested by the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "f2182102-92ed-4221-b5ab-3ee9aac99cd5",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Crus I evolutionarily expanded with prefrontal cortex, communicates bidirectionally with multiple forebrain regions, and represents orofacial features, making it suitable for studying complex task-related information processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 are supported by appropriate citations (Balsters et al. 2010, Kelly & Strick 2003, Prevosto et al. 2010, Proville et al. 2014, Manni & Petrosini 2004, Shambes et al. 1978). This provides strong anatomical and functional rationale for focusing on crus I.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "7c415935-57fa-47d8-bf69-3945a6ae4ba2",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Climbing fiber-driven error signals evoke dendritic calcium transients and may shape granule cell input processing through plasticity induction at multiple cerebellar sites, according to established cerebellar learning theories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40 and C62 accurately represent established cerebellar learning theory with appropriate citations (Marr 1969, Ozden et al. 2009, Tank et al. 1988, Llin\u00e1s & Sugimori 1980, Albus 1971, Medina & Lisberger 2008). This provides theoretical context for interpreting the observed error signals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "2f6896b4-1af5-4846-8986-1f58d46796b1",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Crus I communicates with forebrain structures via dentate nucleus and thalamus, shows sensorimotor and preparatory activity, and may form internal models to predict and modulate brain activity according to cerebellar theories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 accurately summarize anatomical connectivity and functional properties with appropriate citations. This provides context for interpreting how cerebellar signals might influence decision-making circuits.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "5f1abe5d-08ad-4b8c-9fde-4b079350481b",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The authors propose multiple speculative models for cerebellar contribution to decision-making: receiving efference copy from forebrain, participating in closed-loop circuits, controlling sensory input gain, modulating accumulation dynamics, or influencing decision conversion, with cerebellar output potentially combined with forebrain activity to improve reward likelihood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C52-C53, C66-C69 are explicitly speculative proposals for future investigation. While these are reasonable hypotheses based on known cerebellar function and connectivity, they are not tested in the current study. The authors appropriately acknowledge these as possibilities requiring further investigation. These represent important directions for future work but should not be considered established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    },
+    {
+      "id": "7e42b0a3-5c41-48fd-9cee-8c1ff0e2d9fd",
+      "content_id": "e1c36fec-0eae-4727-a297-faede067e1ec",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Cerebellar signals reach widespread thalamic targets, and the cerebellum has clearly delineated cell types and connectivity, providing opportunities for mechanistic studies of decision-making.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57 and C65 accurately represent established anatomical knowledge with appropriate citations (Strick et al. 2009, Dean et al. 2010, Ito 2012). This provides context for the broader significance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:58:52.083007Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d60dd948-e8e0-4607-99f2-410415649a26",
+      "result_id": "55653c0c-7db7-4ccf-b784-2b44781b1130"
+    },
+    {
+      "claim_id": "700281ee-aa88-4b6e-a455-061ce859a07c",
+      "result_id": "55653c0c-7db7-4ccf-b784-2b44781b1130"
+    },
+    {
+      "claim_id": "bfd81471-b03b-4bae-95ac-463575c8c4ce",
+      "result_id": "55653c0c-7db7-4ccf-b784-2b44781b1130"
+    },
+    {
+      "claim_id": "8831bb35-b1e9-43fe-91de-2dcc599b92e2",
+      "result_id": "aa4b935c-c868-4555-b1e8-9c02dac006d7"
+    },
+    {
+      "claim_id": "ef0c3323-f19a-447f-a8ea-09866e4b24c0",
+      "result_id": "aa4b935c-c868-4555-b1e8-9c02dac006d7"
+    },
+    {
+      "claim_id": "dcdb2b2e-9929-4f49-b067-f77c4ba67e34",
+      "result_id": "aa4b935c-c868-4555-b1e8-9c02dac006d7"
+    },
+    {
+      "claim_id": "29dff09f-a6de-4486-8beb-64751dca8b6e",
+      "result_id": "aa4b935c-c868-4555-b1e8-9c02dac006d7"
+    },
+    {
+      "claim_id": "953756b7-2760-46af-802a-a3dd7ad4efca",
+      "result_id": "aa4b935c-c868-4555-b1e8-9c02dac006d7"
+    },
+    {
+      "claim_id": "7afcd845-5aa6-46d7-b748-7fbc60a08caf",
+      "result_id": "aa4b935c-c868-4555-b1e8-9c02dac006d7"
+    },
+    {
+      "claim_id": "2844bf26-140c-4955-9f28-b0f00ff35d33",
+      "result_id": "cdcdd376-ea8f-4946-aa37-4a7cbf449976"
+    },
+    {
+      "claim_id": "752d60f6-cf2a-4993-80fe-c55dc3e6791d",
+      "result_id": "cdcdd376-ea8f-4946-aa37-4a7cbf449976"
+    },
+    {
+      "claim_id": "49a4c953-fcfd-4b17-ad0c-fe006c6b122b",
+      "result_id": "cdcdd376-ea8f-4946-aa37-4a7cbf449976"
+    },
+    {
+      "claim_id": "dc2caf89-36bb-40c7-90db-a235cb8a4ac5",
+      "result_id": "cdcdd376-ea8f-4946-aa37-4a7cbf449976"
+    },
+    {
+      "claim_id": "4af03bf3-0c99-41e7-a4e6-321408ec3ed2",
+      "result_id": "def16012-9c05-4aea-bdbe-56ddceebfd64"
+    },
+    {
+      "claim_id": "28b6c8e6-522a-48c8-9286-4a485458a388",
+      "result_id": "def16012-9c05-4aea-bdbe-56ddceebfd64"
+    },
+    {
+      "claim_id": "130a743a-4033-445c-b86a-10597c16daf9",
+      "result_id": "def16012-9c05-4aea-bdbe-56ddceebfd64"
+    },
+    {
+      "claim_id": "0ec4c58d-5efd-4fce-9364-9da2879fa9e5",
+      "result_id": "f4a12e72-c5e3-400c-a849-56e248b2bc62"
+    },
+    {
+      "claim_id": "e871e7c1-20d4-4f12-b923-3f6658705ee6",
+      "result_id": "f4a12e72-c5e3-400c-a849-56e248b2bc62"
+    },
+    {
+      "claim_id": "9ac1a6cc-1b61-4c19-af69-62bd56612af9",
+      "result_id": "a47bb122-1c73-4b73-a987-b3eebae8c154"
+    },
+    {
+      "claim_id": "4dbe5c1c-94b6-43e9-be34-c4a398839fd9",
+      "result_id": "a47bb122-1c73-4b73-a987-b3eebae8c154"
+    },
+    {
+      "claim_id": "e979591f-621e-44ec-8548-ea9eea695368",
+      "result_id": "a47bb122-1c73-4b73-a987-b3eebae8c154"
+    },
+    {
+      "claim_id": "51463a7a-ab1a-4e27-a561-4e95d6577da4",
+      "result_id": "a47bb122-1c73-4b73-a987-b3eebae8c154"
+    },
+    {
+      "claim_id": "724c7a9b-3ec7-416c-959d-f83d4333355b",
+      "result_id": "ff01e5b7-4bbb-43d7-9d15-0e16a10f2536"
+    },
+    {
+      "claim_id": "19b70f5e-a940-45d2-9142-40c455232cb2",
+      "result_id": "ff01e5b7-4bbb-43d7-9d15-0e16a10f2536"
+    },
+    {
+      "claim_id": "1f03e14d-a1d5-410d-bbfd-2e327babc546",
+      "result_id": "ff01e5b7-4bbb-43d7-9d15-0e16a10f2536"
+    },
+    {
+      "claim_id": "9b351745-94cd-4a3b-98d7-6da3aaee5cb9",
+      "result_id": "ff01e5b7-4bbb-43d7-9d15-0e16a10f2536"
+    },
+    {
+      "claim_id": "bf3bf4ae-2c1c-444c-a565-649f00286fa4",
+      "result_id": "4d8d6f5c-6806-4dd7-932f-3b1db74e0c7c"
+    },
+    {
+      "claim_id": "7afdcd1c-5fe7-4f44-8629-3d98a2863025",
+      "result_id": "db3cff0f-ab63-4b1f-a13b-0829a390fb53"
+    },
+    {
+      "claim_id": "af389d7a-ded4-431f-879f-ff2b7aa98205",
+      "result_id": "db3cff0f-ab63-4b1f-a13b-0829a390fb53"
+    },
+    {
+      "claim_id": "489cf636-653d-485e-9c76-d20cb36d893c",
+      "result_id": "db3cff0f-ab63-4b1f-a13b-0829a390fb53"
+    },
+    {
+      "claim_id": "99b99e84-0f7d-4d21-943f-282d331dd979",
+      "result_id": "db3cff0f-ab63-4b1f-a13b-0829a390fb53"
+    },
+    {
+      "claim_id": "6b46badd-788e-4fff-a476-ba743732dbe1",
+      "result_id": "7b08ae6e-ec18-42e4-b60b-c2ce7af6d6fb"
+    },
+    {
+      "claim_id": "fd1c63e2-06c7-49bd-b723-760a73533040",
+      "result_id": "7b08ae6e-ec18-42e4-b60b-c2ce7af6d6fb"
+    },
+    {
+      "claim_id": "97c8b8f1-8f9b-4b94-a419-08d8d52d916d",
+      "result_id": "11c5f3bd-7439-4158-b011-bcbe1ad97ae0"
+    },
+    {
+      "claim_id": "fc7e8b0a-8512-424e-8c8f-1fe977a7f5f9",
+      "result_id": "11c5f3bd-7439-4158-b011-bcbe1ad97ae0"
+    },
+    {
+      "claim_id": "34d58294-fb5b-4612-ad09-a014d458aca0",
+      "result_id": "866708a8-e42d-46dd-8d45-c2b6b8aa475e"
+    },
+    {
+      "claim_id": "873227b9-8de6-4b41-ada3-8b9efe35fc79",
+      "result_id": "686f3c9f-3fa2-4ccc-a861-51788b69da91"
+    },
+    {
+      "claim_id": "7bf3860b-f1b9-41e1-b0b6-9f4b102b16c2",
+      "result_id": "686f3c9f-3fa2-4ccc-a861-51788b69da91"
+    },
+    {
+      "claim_id": "6a926640-433c-426e-9cc1-4c6d0ccb808a",
+      "result_id": "686f3c9f-3fa2-4ccc-a861-51788b69da91"
+    },
+    {
+      "claim_id": "9760e3f5-f8ae-4fc3-be7a-068ec93ea80b",
+      "result_id": "6ddd3940-75bc-4b3c-82ed-93bf28ecc274"
+    },
+    {
+      "claim_id": "db5e97fa-34c1-42ed-aa01-c845f7d5f961",
+      "result_id": "6ddd3940-75bc-4b3c-82ed-93bf28ecc274"
+    },
+    {
+      "claim_id": "832ea2a9-430e-4f86-b219-2a47f2679af8",
+      "result_id": "1b9edee8-65f4-4667-bf3f-c6bdc7f3f540"
+    },
+    {
+      "claim_id": "caba4c45-e786-49e3-a656-300de2c033d2",
+      "result_id": "1b9edee8-65f4-4667-bf3f-c6bdc7f3f540"
+    },
+    {
+      "claim_id": "421bb801-2c02-4e40-abb8-1c8b6db56817",
+      "result_id": "1b9edee8-65f4-4667-bf3f-c6bdc7f3f540"
+    },
+    {
+      "claim_id": "e13b2787-e4d9-4cf0-b57f-bb8b4bf78101",
+      "result_id": "1b9edee8-65f4-4667-bf3f-c6bdc7f3f540"
+    },
+    {
+      "claim_id": "e762d94a-8e8d-456b-aa1d-3eee33284d64",
+      "result_id": "1b9edee8-65f4-4667-bf3f-c6bdc7f3f540"
+    },
+    {
+      "claim_id": "cb2b2048-583a-4633-97b6-92b2ba90b182",
+      "result_id": "f18af30d-ee71-47e4-94cf-d35a275bbdcc"
+    },
+    {
+      "claim_id": "e609a33b-1605-49eb-ae26-2b685e5245cb",
+      "result_id": "f18af30d-ee71-47e4-94cf-d35a275bbdcc"
+    },
+    {
+      "claim_id": "cb5b527f-b267-48b2-a48e-233c784f9c3f",
+      "result_id": "f18af30d-ee71-47e4-94cf-d35a275bbdcc"
+    },
+    {
+      "claim_id": "67c3a218-0521-440f-822b-df476159897a",
+      "result_id": "5df83d09-9833-40bc-bdf2-76281cbb63b0"
+    },
+    {
+      "claim_id": "533bc511-aa41-4962-8f4e-9ec159bd3b4f",
+      "result_id": "5df83d09-9833-40bc-bdf2-76281cbb63b0"
+    },
+    {
+      "claim_id": "0123bef3-af45-498c-b27d-d78bb994d829",
+      "result_id": "5df83d09-9833-40bc-bdf2-76281cbb63b0"
+    },
+    {
+      "claim_id": "a1926dc5-2a7b-4a7f-8ebd-43597bc4a644",
+      "result_id": "f2182102-92ed-4221-b5ab-3ee9aac99cd5"
+    },
+    {
+      "claim_id": "ace11cdd-0068-48a9-b3fb-e917495e50c1",
+      "result_id": "f2182102-92ed-4221-b5ab-3ee9aac99cd5"
+    },
+    {
+      "claim_id": "20e2f8c1-3b54-4aff-9aa0-e13a5ac3dd47",
+      "result_id": "f2182102-92ed-4221-b5ab-3ee9aac99cd5"
+    },
+    {
+      "claim_id": "6af85dce-79c2-440e-a247-2bf1e3c3ca10",
+      "result_id": "7c415935-57fa-47d8-bf69-3945a6ae4ba2"
+    },
+    {
+      "claim_id": "5c22c1c5-db35-4fdd-892d-34272afc565d",
+      "result_id": "7c415935-57fa-47d8-bf69-3945a6ae4ba2"
+    },
+    {
+      "claim_id": "649e5e80-3b7b-4ec2-9fae-66705d0ca5eb",
+      "result_id": "2f6896b4-1af5-4846-8986-1f58d46796b1"
+    },
+    {
+      "claim_id": "d5987aac-c5f8-4960-a72b-092c3de7ed0a",
+      "result_id": "2f6896b4-1af5-4846-8986-1f58d46796b1"
+    },
+    {
+      "claim_id": "097a6e62-c6f4-4793-8051-45dea08d3b30",
+      "result_id": "2f6896b4-1af5-4846-8986-1f58d46796b1"
+    },
+    {
+      "claim_id": "a4e155d7-3d09-44fb-a51b-46e096a6ccf7",
+      "result_id": "5f1abe5d-08ad-4b8c-9fde-4b079350481b"
+    },
+    {
+      "claim_id": "920230aa-16a8-48b7-93bf-8b48a14d8ead",
+      "result_id": "5f1abe5d-08ad-4b8c-9fde-4b079350481b"
+    },
+    {
+      "claim_id": "6328ac55-4cff-49cb-80fe-9fd2bb5fca09",
+      "result_id": "5f1abe5d-08ad-4b8c-9fde-4b079350481b"
+    },
+    {
+      "claim_id": "28c38e2c-4834-4d6c-91d6-4c825406f562",
+      "result_id": "5f1abe5d-08ad-4b8c-9fde-4b079350481b"
+    },
+    {
+      "claim_id": "1e7525eb-8672-4615-8add-e3ddc6ad9857",
+      "result_id": "5f1abe5d-08ad-4b8c-9fde-4b079350481b"
+    },
+    {
+      "claim_id": "5b76e414-2641-4420-bbf6-e5e8b7c54b1d",
+      "result_id": "5f1abe5d-08ad-4b8c-9fde-4b079350481b"
+    },
+    {
+      "claim_id": "28a7a17b-ae95-4417-9ea0-262d1669cfe6",
+      "result_id": "7e42b0a3-5c41-48fd-9cee-8c1ff0e2d9fd"
+    },
+    {
+      "claim_id": "c29504f8-a3cd-4913-b525-e113394c4cbd",
+      "result_id": "7e42b0a3-5c41-48fd-9cee-8c1ff0e2d9fd"
+    }
+  ],
+  "comparisons": []
+}

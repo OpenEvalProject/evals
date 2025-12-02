@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C63"
+    ],
+    "result": "ZFP36 and ZFP36L1 protein expression is rapidly induced upon T-cell activation, peaking around 4 hours post-activation, and depends on both TCR stimulation and co-stimulation. ZFP36L2 was not detected under any conditions examined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 and C63 are well-supported by Western blot time course data (Figure 1A-B, Figure 1\u2014figure supplement 1) showing activation-dependent expression of ZFP36 and ZFP36L1 in both CD4+ and CD8+ T cells, with appropriate controls for stimulation conditions. The data consistently demonstrate the temporal dynamics and stimulation requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C64"
+    ],
+    "result": "Post-transcriptional mechanisms regulate ZFP36 paralog expression in T cells, as evidenced by robust mRNA presence in na\u00efve cells without detectable protein. Zfp36 KO cells show ~50% reduction in pan-ZFP36 signal, likely due to persistent ZFP36L1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C64 are supported by integration of RNAseq data showing high RPKM values for Zfp36 and Zfp36l1 mRNAs in na\u00efve cells (RPKM = 22.5 and 8.2 respectively) with Western blot data showing no detectable protein. The ~50% reduction in KO cells is quantified and attributed to ZFP36L1 based on molecular weight and antibody cross-reactivity data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "HITS-CLIP analysis reveals that ZFP36/L1 binding sites are predominantly in 3'UTRs (>75%), with substantial CDS (~6.5%) and intronic binding. ZFP36 and ZFP36L1 show similar binding profiles with >90% overlap for high-magnitude peaks. Some CDS binding occurs prior to splicing in the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 are well-supported by comprehensive HITS-CLIP data from multiple biological replicates (n=5 WT, n=3 KO) with appropriate statistical thresholds (PH>5, FDR<0.01). The similar binding profiles between WT and KO cells, enriched motifs, and CLIP reads spanning exon-intron boundaries provide strong evidence. The nuclear CDS binding inference is supported by read alignment patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "ZFP36 binding in 3'UTR and CDS correlates with subtle but highly significant shifts toward greater mRNA abundance in Zfp36 KO cells (p<10^-11), but this effect is not observed for intronic binding. Paradoxically, the top 20% most robust 3'UTR binding sites show no significant effect on RNA abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 are supported by RNAseq analysis with appropriate statistical testing (Kolmogorov-Smirnov tests, p<10^-11 for 3'UTR and CDS). The stratification by binding magnitude revealing non-uniform effects is well-documented (Figure 1\u2014figure supplement 3C). However, the paradoxical finding for highly robust sites warrants further mechanistic investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "CD69, BCL2, TNF, and IFNG show increased protein levels in Zfp36 KO cells 4 hours post-activation, but only Bcl2 shows increased mRNA. Reporter assays in 293 cells confirm ZFP36 represses protein expression through specific binding to defined 3'UTR sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 are supported by flow cytometry data (Figure 2A), RNAseq data, and independent validation with reporter assays (Figure 2B-C). The dissociation between protein and mRNA changes for Tnf, Ifng, and Cd69 is consistent with translational control. Reporter assays with WT-UTR vs \u0394-UTR constructs demonstrate site-specific regulation, though some caveats exist regarding endogenous factors in 293 cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Ribosome profiling reveals that ZFP36 target mRNAs show increased ribosome association in Zfp36 KO cells (p<10^-11), with CDS-bound targets showing larger effects than 3'UTR targets. ZFP36 prevents mRNA-ribosome association without affecting elongation, as evidenced by consistent ribosome distribution patterns with altered magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 are well-supported by ribosome profiling data from 4 biological replicates per condition with appropriate statistical analysis (KS tests, GSEA, binomial tests). The mechanistic inference about initiation vs elongation (C29) is supported by the observation that ribosome distribution patterns are consistent between WT and KO with only magnitude differences. The global control showing no difference in average ribosome coverage (C28) strengthens the specificity argument.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "ZFP36 targets are enriched for rapidly induced mRNAs after T-cell activation. Functionally, Zfp36 KO CD4+ T cells show enhanced proliferation from 16-24 hours post-activation due to decreased apoptosis and increased proliferating cells. This enhanced proliferation is observed across multiple stimulation conditions including physiologic MHC-peptide stimulation and is not solely IL-2 dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 are supported by multiple complementary assays: enrichment analysis using published time course data (C30), thymidine incorporation assays (C31), flow cytometry for apoptosis and proliferation markers (C32), IL-2 manipulation experiments (C33), TCR transgenic peptide titrations (C34), allogeneic responses (C35), and activation marker kinetics (C36-C37). Sample sizes are adequate (n=3-5 mice) with appropriate statistical testing. The consistency across multiple experimental systems strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "ZFP36 regulation of T-cell activation is cell-intrinsic, as demonstrated by enhanced proliferation of Zfp36 KO cells sorted from mixed bone marrow chimeras. However, WT cells can exert a restraining effect on KO cells in mixed cultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by well-designed mixed bone marrow chimera experiments (Figure 5) that control for systemic factors. The observation that KO cells show reduced proliferation in mixed vs separate cultures (C39) is appropriately interpreted as evidence for cross-regulatory effects, though the specific mechanisms remain to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C77"
+    ],
+    "result": "At 72 hours post-activation, many transcripts show highly divergent expression in Zfp36 KO versus WT cells, but these changes are not correlated with direct ZFP36 HITS-CLIP binding, indicating that secondary effects predominate at later time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 and C77 are supported by RNAseq analysis at 72 hours showing widespread changes (Figure 6A) that lack correlation with HITS-CLIP binding (Figure 6B). The inference that these represent secondary effects is reasonable given the contrast with 4-hour data. However, the specific mechanisms driving these secondary effects remain unclear and would benefit from additional investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C78"
+    ],
+    "result": "At late time points, Zfp36 KO cells show features of T cell exhaustion including reduced per-cell cytokine production (days 3-5) despite higher accumulation in culture supernatants, and elevated expression of PD-1, ICOS, and LAG-3 in Th1 conditions. These effects are T cell-intrinsic but driven by secreted factors including but not limited to IFN-\u03b3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 and C78 are supported by intracellular cytokine staining at multiple time points (Figure 6D), ELISA measurements (Figure 6E), flow cytometry for checkpoint receptors (Figure 6F), and mixed bone marrow chimera experiments with re-mixing (Figure 6G). The cytokine supplementation experiments (C47) provide mechanistic insight, though they only partially recapitulate the phenotype. The Th1-specific effects strengthen the interpretation of a dysregulated cytokine-driven exhaustion-like state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Na\u00efve Zfp36 KO mice show normal T cell development and peripheral T cell numbers, but have increased numbers of IFN-\u03b3-producing Th1 cells at steady state. Ex vivo Th1 and Th17 differentiation is indistinguishable between WT and KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by comprehensive flow cytometry analysis of blood, thymus, and spleen (Figure 7\u2014figure supplement 1A-I). The normal development and differentiation capacity with increased steady-state Th1 cells suggests in vivo factors not replicated in vitro may drive the accumulation. Sample sizes are adequate (n=6-11 mice per genotype) with appropriate statistical testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "During LCMV Armstrong infection, Zfp36 KO mice show accelerated expansion and recession of virus-specific CD4+ and CD8+ T cells with peak expansion at day 6 (vs day 10 in WT). KO T cells produce higher levels of IFN-\u03b3 and TNF-\u03b1 per cell and show increased bifunctional cytokine production. Strikingly, viral load is ~10-fold lower in KO mice at day 6, correlating inversely with T cell levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C60 are well-supported by comprehensive in vivo LCMV infection studies with adequate sample sizes (n=5-14 mice per group). MHC-tetramer tracking (Figure 7A-F), intracellular cytokine staining (Figure 7G-I), and RT-qPCR for viral RNA (Figure 7J) provide converging evidence. The correlation analysis (C60) appropriately supports the T cell-dependent clearance interpretation. The accelerated kinetics and enhanced viral clearance represent a striking phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C80"
+    ],
+    "result": "In mixed bone marrow chimeras, WT and Zfp36 KO T cells show indistinguishable kinetics during LCMV infection, with maximum expansion at 7-8 days (intermediate between KO and WT mice). This suggests the accelerated anti-viral response may involve immune cell types beyond T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 and C80 are supported by mixed bone marrow chimera LCMV infection experiments (Figure 7\u2014figure supplement 3). The indistinguishable kinetics in mixed chimeras contrasts with the accelerated response in KO-only mice, supporting the inference that other cell types may contribute. However, the interpretation is complicated by the baseline expansion differences (C61) and the intermediate timing observation (C62) could also reflect cross-regulatory effects between WT and KO T cells as observed in vitro (C39).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "ZFP36 and ZFP36L1 show functional redundancy with similar RNA-binding profiles and likely auto- and cross-regulation. The Zfp36 KO represents a partial loss-of-function due to persistent ZFP36L1 expression, leading to accelerated T cell activation without uncontrolled proliferation. Total paralog dosage is critical for ZFP36 family function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 and C71-C76 synthesize multiple lines of evidence including HITS-CLIP overlap between WT and KO cells (C71), presence of binding sites in ZFP36 paralog 3'UTRs (C65), Western blot data showing persistent ZFP36L1 in KO cells (C72), and functional characterization showing accelerated but not uncontrolled activation (C73, C75). The comparison with published double knockout studies (C74) appropriately contextualizes the findings. The interpretation is logical and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "ZFP36 forms diverse RNA-protein complexes with distinct biochemical properties, and binds to novel AU-rich elements in coding sequences, with some associations forming prior to splicing in the nucleus. These findings point to unexplored regulatory strategies including potential nuclear pre-programming of translation control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C70 present intriguing observations about ZFP36 complex diversity (C68), nuclear CDS binding (C69), and potential novel regulatory mechanisms (C70). While the CLIP data supporting nuclear binding is solid (reads spanning exon-intron boundaries), the functional significance and mechanistic details remain speculative (C67, C70). The claim about \"distinct functional outcomes\" (C67) lacks direct experimental support. These observations warrant further investigation but represent preliminary findings rather than established mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Subtle early regulation by ZFP36 of diverse targets can have striking downstream consequences in rapidly expanding T cell populations. The enhanced anti-viral response in Zfp36 KO mice is likely T cell-dependent but is accompanied by spontaneous inflammation and autoimmunity with age. ZFP36 inhibition might serve as a therapeutic strategy, with HITS-CLIP identifying many checkpoint inhibitor targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79 and C81 are reasonable inferences from the data presented. However, C82 relies on prior knowledge of the KO phenotype rather than data presented in this manuscript. Claims C83-C84 are speculative regarding therapeutic applications. While the identification of checkpoint inhibitor targets by HITS-CLIP (C84) is supported, the therapeutic potential (C83) requires substantial additional validation. The autoimmunity caveat (C82) is important but not directly demonstrated in this study.",
+    "result_type": "MINOR"
+  }
+]

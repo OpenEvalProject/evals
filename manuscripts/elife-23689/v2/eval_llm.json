@@ -1,0 +1,224 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background claims establish that septins are conserved cytoskeletal proteins that bind guanine nucleotides, form hetero-oligomers, and are implicated in various cellular processes and diseases. In budding yeast, five septins (Cdc3, Cdc10, Cdc11, Cdc12, Shs1) assemble into two species of palindromic hetero-octamers where Cdc11 and Shs1 compete for terminal positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C8-C19) are well-established background knowledge supported by multiple literature citations. They provide the foundational context for the study and are not contested by the authors' new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "MPA treatment depletes guanine nucleotides and significantly reduces BiFC signals for most septin-septin interactions at both septin rings and in the cytosol, with the notable exception of Shs1-Cdc12 interaction which remains unaffected. This demonstrates that nucleotide binding is required for both G and NC interface interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 are directly supported by BiFC data in Figure 1B,C showing significant signal depletion with MPA treatment for most interactions except Shs1-Cdc12. The experimental design appropriately uses MPA at concentrations that preserve cell division and septin ring morphology (C22), and the authors provide reasonable inference that effects are specific to septins (C23).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C24",
+      "C25",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Using CSD-BiFC, the authors determine a stepwise assembly pathway for yeast septin hetero-octamers. Cdc12 first dimerizes with Cdc11 at the G interface before NC interaction with Cdc3 (C24). However, Cdc3 first interacts with Cdc12 via NC before interacting with Cdc10 via G interface (C25). Cdc10 NC homodimerizes before G interaction with Cdc3 (C30), and Cdc12 interacts with Cdc3 via NC before G interaction with Shs1 (C31).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C24-C25, C30-C32 are supported by the novel CSD-BiFC data presented in Figures 2A-D. The method is validated (Figure 1\u2014figure supplement 3, C88-C89) and provides direct in vivo evidence for interaction order. The finding that most interactions do not follow the NC priming model is a significant departure from prior assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Rapid GTP hydrolysis by monomeric Cdc10 drives assembly of the core Cdc10 homodimer through NC autopriming. When Cdc10 cannot bind nucleotides (D182N mutation), the order of Cdc10 interactions with Cdc3 and itself becomes random, demonstrating that nucleotide binding and hydrolysis control interaction order.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C33-C36 are supported by CSD-BiFC data with the Cdc10(D182N) mutant (Figure 3) showing mutual depletion of both signals, indicating loss of ordered assembly. The interpretation is strengthened by prior literature (C33, C36) showing Cdc10 can hydrolyze GTP in vitro and that the D182N allele provides function at low temperatures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The extended Cdc3 N-terminal extension (NTE) autoinhibits Cdc3 association with Cdc10 until prior Cdc3-Cdc12 interaction. The NTE is predicted to be disordered (C47-C48) and shields NBP mutations from cytosolic sequestration (C49-C53). Deletion of the NTE reverses the order of Cdc3 interactions, causing Cdc3 to interact with Cdc10 before Cdc12 (C57).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C47-C57 are supported by multiple lines of evidence: disorder prediction (Figure 5\u2014figure supplement 2A), sequence conservation analysis (Figure 5\u2014figure supplement 2B), competition experiments with NBP mutants (Figure 5A-C), and CSD-BiFC with NTE deletions (Figure 5D-E). The data consistently show that the NTE shields the G interface and enforces interaction order.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C46"
+    ],
+    "result": "Slow GTP hydrolysis by monomeric Cdc12 and specific affinity of Cdc11 for transient Cdc12\u2022GTP drive assembly of distinct trimers (Cdc11-Cdc12-Cdc3 or Shs1-Cdc12-Cdc3). Mutations that accelerate Cdc12 GTP hydrolysis (\u0394CTE) or prevent GTP binding (T75A) increase Shs1 incorporation and decrease Cdc11 incorporation. Overexpression of Cdc11 or Shs1 does not alter their incorporation ratio, supporting a model based on Cdc12 nucleotide state rather than subunit abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C37-C44, C46 are supported by multiple complementary experiments: Cdc12\u0394CTE (Figure 4A-B), Cdc12(T75A) (Figure 4D), Cdc12(D104A) (Figure 4F), and overexpression studies (Figure 4C, Figure 4\u2014figure supplement 2). The G268R control (C42-C43) appropriately shows that disrupting the G interface itself depletes both Cdc11 and Shs1 proportionally. The convergent evidence from multiple mutants strongly supports the hydrolysis timer model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Decreasing the cytosolic GTP:GDP ratio through MPA treatment, carbon starvation, or respiratory growth increases Shs1 incorporation and decreases Cdc11 incorporation into septin rings. These effects occur without changes in Shs1 or Cdc11 mRNA levels, supporting a model where cellular GTP:GDP ratio controls protofilament composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C58-C64 are supported by data from three independent methods of altering GTP:GDP ratio (Figure 6A-C) and literature citations documenting the metabolic effects (C58-C59, C61-C62, C64). The consistency across different perturbations and the control for transcriptional changes (C64) strengthen the conclusion that nucleotide ratios directly affect assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Altering the Shs1:Cdc11 ratio alters the curvature of filamentous septin rings, as measured by split ring diameter. Split ring diameter decreases when Shs1:Cdc11 ratio increases under various conditions. Shs1 is required for proper septin function under low GTP:GDP conditions, with shs1\u0394 mutants showing frequent elongated cells and misshapen rings in low dextrose or glycerol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C65-C67, C74-C75 are supported by split ring diameter measurements (Figure 6E) and morphological analysis of shs1\u0394 cells (Figure 6D). The correlation between Shs1:Cdc11 ratio and ring diameter is consistent across multiple conditions. Prior literature (C68-C73) provides context for interpreting curvature effects. However, the mechanistic link between Shs1:Cdc11 ratio and ring curvature could benefit from additional structural analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The BiFC tagging system used in this study does not perturb septin function, as evidenced by normal viability, growth rates, cell morphology, and septin ring dynamics. C-terminal BiFC tags report primarily on authentic NC-interface-mediated interactions influenced by nucleotides in the NBPs, and signals reflect interactions from previous cell cycles due to slow fluorophore maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89, C96-C97 are supported by validation data (Figure 1\u2014figure supplement 3) and structural reasoning about CTE length and flexibility (C94-C96). The interpretation that BiFC signals reflect prior cell cycle interactions (C97) is appropriately acknowledged as a limitation but does not invalidate the conclusions about assembly order.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Cdc3 oligomerizes robustly with Cdc12 in the absence of Cdc10 both in vivo and in vitro. Cdc3 lacks the conserved Thr residue for GTP hydrolysis and does not hydrolyze GTP in vitro, explaining why Cdc3-Cdc12 NC interaction can occur independently of G interface priming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are supported by literature citations documenting Cdc3-Cdc12 interaction in Cdc10 mutants and E. coli expression systems, as well as biochemical characterization of Cdc3 GTPase activity. These claims provide important context for interpreting the departure from NC priming observed for Cdc3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C92",
+      "C93",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Discussion claims provide context about septin biology, including toxicity of overexpression (C45), comparisons to tubulin (C77), in vitro assembly properties (C78), structural features of Cdc11 (C79), mammalian septin diversity (C80-C87, C98-C101), and properties of Cdc12\u0394CTE (C92-C93).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C45, C77-C87, C92-C93, C98-C101) are primarily literature-based background or speculative extensions to mammalian systems. They are appropriately cited and provide useful context, though some (C85, C87) are explicitly speculative.",
+    "result_type": "MINOR"
+  }
+]

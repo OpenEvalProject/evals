@@ -1,0 +1,1999 @@
+{
+  "submission": {
+    "id": "83104b89-cca3-4353-b383-0957908a87f6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:12:22.425827Z",
+    "updated_at": "2025-12-02T00:12:22.425827Z"
+  },
+  "content": [
+    {
+      "id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "submission_id": "83104b89-cca3-4353-b383-0957908a87f6",
+      "content_type": "manuscript",
+      "content_text": "# Two distinct DNA sequences recognized by transcription factors represent enthalpy and entropy optima\n\n## Authors\n\n- Ekaterina Morgunova<sup>1</sup> ([ORCID: 0000-0002-7754-9021](https://orcid.org/0000-0002-7754-9021)) \u2020\n- Yimeng Yin<sup>1</sup>\n- Pratyush K Das<sup>2</sup> ([ORCID: 0000-0003-2822-9619](https://orcid.org/0000-0003-2822-9619))\n- Arttu Jolma<sup>1</sup>\n- Fangjie Zhu<sup>1</sup>\n- Alexander Popov<sup>3</sup>\n- You Xu<sup>4</sup>\n- Lennart Nilsson<sup>4</sup>\n- Jussi Taipale<sup>1</sup> ([ORCID: 0000-0003-4204-0951](https://orcid.org/0000-0003-4204-0951)) \u2020\n\n### Affiliations\n\n1. Department of Medical Biochemistry and Biophysics Karolinska Institutet Stockholm Sweden\n2. Genome-Scale Biology Research Program University of Helsinki Helsinki Finland\n3. European Synchrotron Radiation Facility Grenoble France\n4. Department of Bioscience and Nutrition Karolinska Institutet Huddinge Sweden\n5. Department of Biochemistry University of Cambridge Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nMost transcription factors (TFs) can bind to a population of sequences closely related to a single optimal site. However, some TFs can bind to two distinct sequences that represent two local optima in the Gibbs free energy of binding (\u0394G). To determine the molecular mechanism behind this effect, we solved the structures of human HOXB13 and CDX2 bound to their two optimal DNA sequences, CAATAAA and TCGTAAA. Thermodynamic analyses by isothermal titration calorimetry revealed that both sites were bound with similar \u0394G. However, the interaction with the CAA sequence was driven by change in enthalpy (\u0394H), whereas the TCG site was bound with similar affinity due to smaller loss of entropy (\u0394S). This thermodynamic mechanism that leads to at least two local optima likely affects many macromolecular interactions, as \u0394G depends on two partially independent variables \u0394H and \u0394S according to the central equation of thermodynamics, \u0394G = \u0394H - T\u0394S.\n\n## Introduction\n\nThe binding of transcription factors (TFs) to their specific sites on genomic DNA is a key event regulating cellular processes. Analysis of structures of known TFs bound to DNA has revealed three different mechanisms of recognition of the specifically bound sequences: (1) the \u2018direct readout\u2019 mechanism involving the formation of specific hydrogen bonds and hydrophobic interactions between DNA bases and protein amino acids (Aggarwal et al., 1988; Anderson et al., 1987; Wolberger et al., 1988); (2) \u2018indirect readout\u2019 of the DNA shape and electrostatic potential (Dror et al., 2014; Hizver et al., 2001; Joshi et al., 2007; Lavery, 2005; Rohs et al., 2005) by protein contacts to the DNA backbone or the minor groove, and (3) water mediated interactions between bases and amino-acids (Bastidas and Showalter, 2013; Garner and Rau, 1995; Ladbury et al., 1994; Morton and Ladbury, 1996; Patikoglou and Burley, 1997; Poon, 2012; Spolar and Record, 1994). Each of these mechanisms contributes to binding specificity of most TFs, with their relative importance varying depending on the TF and the recognized sequence.\n\nThe modes of DNA recognition differ from each other also in their thermodynamic characteristics. For example, direct hydrogen bonds can contribute strongly to enthalpy of binding, whereas indirect hydrogen bonds mediated by water are weaker, due to the loss of entropy caused by immobilization of the bridging water molecule. In many cases, the contributions of the loss of entropy and the gain in enthalpy are similar in magnitude, leading to a phenomenon called \u2018enthalpy-entropy compensation\u2019 (Chodera and Mobley, 2013; Jen-Jacobson et al., 2000; Klebe, 2015; Patikoglou and Burley, 1997). This leads to binding promiscuity, allowing a TF to bind to several different but closely related sequences with a biologically relevant affinity.\n\nMany transcription factors appear to only recognize sequences closely related to a single optimal site. Their binding to DNA can be approximated by a position weight matrix (PWM) model, which describes a single optimal site, and assumes that individual substitutions affect binding independently of each other. Thus, the combined effect of multiple mutations is predictable from the individual effects. However, it is well established that several TFs can bind with high affinity to multiple different sequences, and populations of sequences that are closely related to these optimal sites (Badis et al., 2009; Johnson et al., 2007; Jolma et al., 2013; Morris et al., 2011; Zhao and Stormo, 2011; Zuo et al., 2017). In such cases, the effect of substitution mutations is not independent, and instead the mutations display strongly epistatic behavior (Anderson et al., 2015; Jolma et al., 2013; Lehner, 2011; Zuo et al., 2017), where the combined effect of two mutations can be less severe than what is predicted from the individual effects. Many cases of such multiple specificity can be explained by different spacing of homodimeric TFs (Aggarwal et al., 1988; P\u00e1rraga et al., 1998), but in some cases a single monomeric TF appears to be able to bind to two distinct sequences with similar affinities.\n\nThe molecular mechanism behind the multiple specificity phenomenon has been understood at the structural level for some dimers (P\u00e1rraga et al., 1998) but not for monomeric TFs. To elucidate the mechanism, we performed structural analysis of two homeodomain proteins, the posterior homeodomain protein HOXB13, and the parahox protein CDX2, each bound to two distinct high-affinity sequences. The optimal sequences for HOXB13 are CCAATAAA and CTCGTAAA that differ from each other by the three underlined base pairs, whereas CDX2 binds with high affinity to similar two sequences that begin with a G instead of a C.\n\nThis analysis, together with thermodynamic measurements of HOXB13, CDX2 and two other transcription factors, BARHL2 and MYF5 that also display multiple specificity revealed that in each case, one of the optimal sequences is bound primarily due to an optimal enthalpic contribution, whereas the other is bound due to an optimum of entropy. This result is likely to be general to most macromolecular interactions, as they commonly involve interaction of the macromolecules with a network of interconnected water-molecules, whose formation involves a trade-off between enthalpy and entropy.\n\n## Results and discussion\n\n### Modeling the binding of many TFs requires more than one PWM model\n\nMany TFs have been reported to display multiple specificity.\u00a0These include many biologically important transcription factors such as the MYF family of basic helix-loop helix factors (Yin et al., 2017), the nuclear receptor HNF4A (Badis et al., 2009), and the homeodomain proteins BARHL2, CDX1 and HOXB13 (Jolma et al., 2013;\u00a0Jolma et al., 2015; Nitta et al., 2015; Zuo et al., 2017). Analysis of enrichment of subsequences by MYF6, BARHL2, CDX1 and HOXB13 in SELEX reveals that a single PWM model cannot describe the binding affinity of these factors to DNA (Figure 1A\u2013D). Each of these factors has more than one locally optimal sequence. All sequences between these optima have lower affinity and enrich less in SELEX than the optimal sequences. Therefore, more than one positionally independent position weight matrix (PWM) model is required for describing their affinity towards DNA (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/32963/elife-32963-fig1-v1.jpg)\n\n**Figure 1.:** (A) MYF6 (this study); (B) BARHL2 (this study); (C) HOXB13 (Yin et al., 2017); (D) CDX1 (Yin et al., 2017). Note that single PWM models (top) fail to describe sequence specificity towards different sequences shown in the bar graphs (middle). For example, a single PWM model for HOXB13 (panel C, top) predicts near-equal affinities towards sequences TCG and TCA at the position of the bracket, and lower affinity towards CAA. Analysis of the counts of the subsequences (middle), instead, reveals that the TCA sequence is bound more weakly than the two most preferred sequences TCG and CAA. Counts for local maxima (dark blue) and related sequences that differ from the maxima by one or more base substitutions are also shown (light blue). The bars between the maxima represent sequences that can be obtained from both maximal sequences and have the highest count between the maxima. Bottom of each figure: Two distinct models that can represent the binding specificity of the TFs, the divergent bases are indicated by shading. For clarity, the PWM for the MYF6 optima that contains both AA and AC dinucleotide flanks (middle dark blue bar in A) is not shown. (E) Sequences representing the highest (blue line) and lowest (red line) affinity sequences between the two optimal HOXB13 sequences. y-axis: counts for 8-mer sequences containing the indicated trinucleotide followed by TAAA. (F) Epistasis in HOXB13-DNA binding. The effect of individual mutations (single mutants) to the optimal sequence TCGTAAAA (top) are relatively severe, with binding decreasing by more than 70% in all cases (observed binding). However, combinations of the mutations (double mutants) do not decrease HOXB13 binding in a multiplicative manner (compare predicted and observed binding). A multiplicative model predicts that combining all three substitutions would abolish binding, but instead the CAA site is bound more strongly than any other mutant (triple mutant).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32963/elife-32963-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The superposition of HOXB13-DNACAA complex (red) with: (A) HOXA9:PBX1-DNA complex (HOXA9 is in cyan, PBX1 is green, PDB entry 1PUF); (B) with HOXB1:PBX1-DNA complex (HOXB1 is in cyan, PBX1 is in green, PDB entry 1B72); (C) with HOXA13-DNA complex (HOXA13 is in orange, PDB entry 2LD5). The corresponding DNA sequences are presented under pictures. (D) The sequence alignment of Hox proteins with known structures. The numbering corresponds to HOXB13. Three helices are labeled on the top and highlighted with light pink. The residues involved in interactions are highlighted in grey. The residues involved in interaction in HOXB13 are colored red.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32963/elife-32963-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Structural representation of two of three residues found mutated in single prostate cancer families, Gly-216-Cys and Arg-229-Gly. The mutated residues are presented in ball-and-stick style and highlighted with orange rings. Note that the first mutation Gly-216-Cys belonging to the N-termini of HOXB13 DBD can affect the interactions forming by protein in narrow minor groove. The other mutation Arg-229-Gly is located at the beginning of helix one and because glycine residue is known as \u2018helix-breaker\u2019 the mutation can affect the interaction between N-termini with DNA as well as the interaction between two helixes. (B) Sequence alignment of posterior members of HOX family. The cancer mutations found in HOXB13 are colored red. Light red columns highlight the residues involved in interactions with DNA. The numbering corresponds to HOXB13.\n\nCombinations of mutations affecting the optimal sites of these TFs display extremely strong epistatic effects. For example, the effect of mutating three first bases of the optimal HOXB13 motif TCGTAAAA is more than 400-fold smaller than what is expected from the individual single mutants (Figure 1E,F), and the generated CAATAAAA site binds to HOXB13 with almost the same affinity as the initial unmutated sequence.\n\n### Structural analysis of HOXB13 and CDX2 bound to DNATCG and DNACAA\n\nTo understand the molecular basis of the epistatic effect, we decided to solve the structure of HOXB13 and CDX2 bound to their two optimal sequences. These proteins are related, but diverged significantly in primary sequence, showing 43% identity at amino-acid level (Figure 1\u2014figure supplements 1 and 2). For structural analysis, the DNA-binding domains (DBD) of HOXB13 (the 75 amino-acids from Asp-209 to Pro-283) and CDX2 (the residues Arg-154 \u2013 Gln-256) were expressed in E.coli, purified and crystallized bound to synthetic 19 or 18 bp double stranded DNA fragments containing the CTCGTAAA/GTCGTAAA (DNATCG) or CCAATAAA/GCAATAAA (DNACAA) motifs, respectively. These core sequences were obtained by PBM (Berger et al., 2008) and HT-SELEX (Jolma et al., 2013), and validated by ChIP-seq experiments (Yin et al., 2017), and represent the two distinct binding sites of HOXB13 and CDX2 (Figure 2). The structures were solved using molecular replacement at resolutions 3.2 and 2.2 \u00c5 for HOXB13, and 2.57 and 2.95 \u00c5 for CDX2, respectively.\n\nAll complexes displayed a high overall similarity to HOXB13 bound to methylated DNA (Yin et al., 2017), and to the previously known DNA-bound HOX protein structures (Hovde et al., 2001; Joshi et al., 2007; LaRonde-LeBlanc and Wolberger, 2003; Passner et al., 1999; Piper et al., 1999; Zhang et al., 2011) (Figure 2; Figure 1\u2014figure supplement 1). Two parts of both HOXB13 and CDX2 DBDs interact with DNA: the recognition helix \u03b13, which tightly packs into the major groove, and the N-terminal tail interacting with the minor groove (Figure 2A,C). The residue Gly-84 that is affected by a coding variant that is strongly implicated in prostate cancer was not included in our construct; two other residues mutated in single prostate cancer families (Ewing et al., 2012) were predicted to destabilize the protein (R229G), or its interaction with DNA (G216C) (Figure 1\u2014figure supplement 2).\n\nThe core interactions between both HOXB13 and CDX2 DBDs and DNA are similar to those known from earlier structures (Hovde et al., 2001; Joshi et al., 2007; LaRonde-LeBlanc and Wolberger, 2003; Passner et al., 1999; Piper et al., 1999; Yin et al., 2017; Zhang et al., 2011). The TAAA sequence characteristic of the posterior homeodomains is recognized by a combination of a direct hydrogen bond to the A10 base opposite of the T, and an insertion of the N-terminal basic amino-acids to the narrow minor groove induced by the stretch of four As. The overall protein structure in the four complexes is highly similar, showing only minor differences in the conformation of the N-termini,\u00a0due to the replacement of basic Arg-217\u00a0of\u00a0HOXB13 with the\u00a0negatively charged Asp-187\u00a0in\u00a0CDX2\u00a0(Figure 2A, B, C, D; Figure 1\u2014figure supplement 2B). The most remarkable difference between the complexes is in the conformation of DNA of the HOXB13-DNATCG complex at the position of the divergent bases (Figure 2A,C; Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/32963/elife-32963-fig2-v1.jpg)\n\n**Figure 2.:** (A) The view of superposition of HOXB13 (wheat) bound to DNATCG and HOXB13 (red) bound to DNACAA (rmsd\u00a0=\u00a00.813 \u00c5 on 57 residues). The respective DNAs are in blue and green. The dissimilar base pairs are presented as ball-and-stick models and colored as the proteins, DNATCG is wheat and DNACAA is red. Note the different bending of the DNA backbone at these positions (orange). (B) Schematic representation of interactions formed between HOXB13 DBD and the two different DNAs: left panel shows the interactions between HOXB13 and the primary binding site (DNATCG) and right panel represents the interactions of HOXB13 with the secondary site (DNACAA), respectively. Dashed lines represent interaction with backbone phosphates and deoxyribose and solid lines interactions with the bases. The protein residues belonging to the HOXB13-DNATCG and HOXB13-DNACAA structures are colored wheat and red, respectively. The divergent parts of the DNA sequences are highlighted by a light green box. Note that the TCG site lacks direct contacts to the DNA bases, whereas the CAA site is recognized by direct contacts by Gln-265 and Ile-262. Most other contacts are similar in both structures. The four As of the TAAAA sequence are recognized by the N-terminal amino-acids interacting with the DNA backbone via the minor groove, whereas the T is recognized by a bidentate interaction formed between its complementary adenine A10 and the side chain of asparagine Asn-266. Two hydrogen bonds are formed between nitrogen atoms N6 and N7 from adenine base and oxygen and nitrogen atoms of the Asn-266 side chain. This adenine-specific asparagine is totally conserved in the HOX family. (C) Superposition of CDX2 (cyan) bound to DNATCG and CDX2 (magenta) bound to DNACAA (rmsd\u00a0=\u00a00.270 \u00c5 on 64 residues). The respective DNAs are in blue and green. The dissimilar base pairs are presented as ball-and-stick models and colored as the proteins, DNATCG is green and DNACAA is blue. Note the different bending of the DNA backbone at these positions (orange). (D) Schematic representation of interactions formed between CDX2 DBD and the two different DNAs. (E) Structural interpretation of mutations that change the specificity of HOXB13: the mutations changing Ccaa/Ctcg to Gcaa/Gtcg are shown in a small box and, as a close view, on the left panel, and mutations, which switch the preferences of HOXB13 from CTCG to CCAA, are shown in big box and, as a close view, on the right panel. The mutations are presented in structural alignment of HOXB13 (red), HOXA9 (blue, PDB entry 1PUF) and CDX2 (pink) bound to DNA. Note the unique mutation of Lys (small box), which is conserved in all known HOXes, to Thr in HOXB13 allows HOXB13 to accept any base pair in the position before TCG/CAA. The left panel is representing the close view to the interactions formed by Lys in HOXA9 and CDX2. Long aliphatic chain of Lys increases the hydrophobicity of this part of protein-DNA interface, pushing out the water molecules. Dashed line indicates water-mediated interaction between the \u03b5-Amino group of Lys and the N7 and O6 of the guanine base at the Gtcg sequence. The right panel is representing the close view of triple mutation in the loop connecting helix 1 and helix 2: Lys-239/Met, Phe-240/Tyr and Ile-241/Leu; and single mutation of Lys-272/Arg. Those mutations are expected to change the hydrogen bond network between the\u00a0protein and DNA and lead to a preference towards the more rigid, more B-shaped DNACAA.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32963/elife-32963-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Pairwise comparisons of DNATCG (wheat) and DNACAA (red); (B) Helicoidal parameters for HOXB13-DNATCG (blue) and HOXB13-DNACAA (green). Top: Helical twist; Middle top: shift (squares) and slide (circles); Middle bottom: X- (squares) and Y-displacements (circles); Bottom: Minor groove width (squares) and major groove depth (circles). The most pronounced differences are found for the TCGT and CAAT positions.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32963/elife-32963-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Sequence alignment of HOXB13 with other HOXes. Secondary structure (alpha-helixes) of HOXB13 is highlighed in cyan. (B) The pairwise alignment; note that in addition to single mutations there are combined mutations and replacement of Helix 3 (DNA-binding helix) to corresponding helix of other HOXes (highlighted in yellow). The numbering on the top of the sequences is HOXB13 numbering.\n\nTo quantitate the shape of the DNA in the protein binding region we determined the helicoidal parameters using the program Curves+ (Lavery et al., 2009), and found that the most prominent differences between the two complexes were in twist, shift, slide, X- and Y-displacement, minor groove width, and major groove depth at the positions of the divergent CAA and TCG sequences (Figure 2\u2014figure supplement 1B). The DNATCG backbone is bent towards the major groove, facilitating contact with Arg-258 of the recognition helix with the DNA backbone. The corresponding contact (Arg-228 to backbone) is also observed in both CDX2 structures. In contrast, the DNACAA backbone is bent towards the minor groove, leading to a contact with N-terminal Arg-217 and Lys-218 (Figure 2B; Figure 3). Instead of contacting the DNA backbone, Arg-258 assumes an alternative conformation in which it turns inside of the major groove, forming a water-mediated contact with Gln-265. The Gln-265, in turn, recognizes C6\u2019 via a direct hydrogen bond. In addition, the CAA sequence is recognized by a hydrophobic interaction between Ile-262 and the T11 methyl group. In CDX2 complexes the DNA bend in CDX2-DNATCG is slightly smaller due to the replacement of Thr-261 with Lys-231 which does not allow the alternative conformation of Arg-228. The other contacts in the CDX2-DNA complexes are very similar to those listed for HOXB13-DNAs.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/32963/elife-32963-fig3-v1.jpg)\n\n**Figure 3.:** (A) HOXB13-DNATCG and (B) HOXB13-DNACAA complexes. The 2mFo-Fc maps contoured with 1.5\u03c3 are shown around the key residues. The residues and base pairs involved in protein to DNA contacts are also labeled. (C, D) Surface representation of the major groove in HOXB13-DNATCG and HOXB13-DNACAA complexes, respectively. The divergent bases are colored to indicate electrostatic charges of the atoms: neutral carbon atoms are green, oxygen atoms (negative) are red and nitrogen atoms (positive) are blue. Note the larger solvent-accessible space between amino-acids and bases in the TCG structure (C) and the difference in distribution of the positively and negatively charged spots on the surface that can contribute to differences in distribution of water molecules on the surface. (E) CDX2-DNATCG and (F) CDX2-DNACAA complexes. The 2mFo-Fc maps contoured with 1.5\u03c3 are shown around the key residues. The residues and base pairs involved in protein to DNA contacts are also labeled.\n\nIn order to understand the role of individual residues in binding of specific DNA we created 48 different single and combined mutations in DBD of HOXB13. This set of experiments was carried out to mechanistically understand the origin of the dual specificity, and the molecular mechanisms that explain different specificities between the posterior HOX proteins. The resulting data are presented in Figure 2E and Figure 2\u2014figure supplement 2. The replacement of Thr-261 either as a single mutation or in combination with any other amino-acids resulted in changing of HOXB13 specificity from Ctcg/Ccaa towards the sequence recognized by CDX2 (Gtcg/Gcaa; Figure 2E, left panel). No substitutions were identified that would lead to a specific and complete loss of binding to\u00a0either the TCG or CAA sequence. However, some weaker effects were detected; several mutations affecting backbone contacts between HOXB13 amino-acids and DNA 5' of the divergent trinucleotide moderately increased the relative affinity towards the CAA sequence (Figure 2E, right panel).\n\nAnalysis of the mutation data together with the structures revealed that amino-acids involved in the protein-DNA interface formation cannot fully explain the specificity preferences of HOXB13 and CDX2. The lack of direct interactions between protein and DNA in this region instead suggests that the specificity would be conferred in part by bridging water-molecules located at the protein-DNA interface.\n\n### Role of water molecules in the protein-DNA interface\n\nThe main difference between the complexes with DNACAA and DNATCG is revealed by analysis of the bridging water molecules. The HOXB13-DNACAA structure (2.2 \u00c5) contains chains of water molecules that interact with both HOXB13 amino-acids and each of the DNA bases in the CAA sequence (Figure 4A\u2013C). In contrast, no water molecules are visible in the HOXB13-DNATCG structure, despite the 3.2 \u00c5 resolution that should allow identification of strongly bound water molecules. Consistently, only few water molecules were found in the CDX2-DNATCG complex. A relatively large solvent channel (6.4 \u00c5 in smallest diameter) exists between the \u03b13 helix of HOXB13 and DNATCG (Figure 4D) while this space is occupied by well-defined water-net including Arg-258 in HOXB13-DNACAA structure (Figure 4\u2014figure supplement 1A). The electron density in this region of HOXB13-DNATCG structure is low (\u03c3\u00a0<\u00a00.5), similar to that found in the surrounding solvent, indicating that the water-molecules in this region are highly mobile. Thus, the optimal binding of HOXB13 to the CAA sequence can be rationalized by the visible interactions that contribute to the enthalpy of binding (\u2206H). In contrast, no such interactions can be identified that could explain the preference of HOXB13 to the TCG trinucleotide. The absence of ordered solvent molecules, and the lower resolution of the HOXB13-DNATCG structure is consistent with the possibility that the TCG sequence is preferred because it represents a relatively disordered, high entropy state. In complex of CDX2-DNATCG with high resolution (2.57 \u00c5) the water molecules were well visible but they did not form the corresponding water-chains (Figure 4E,F) supporting the idea of entropically driven binding. The channel is not as clearly visible from one side of the CDX2-DNATCG complex because of the presence of Lys-231 instead of Thr-261. The long side chain of Lys-231 does not allow Arg-228 (corresponded to Arg-258 in HOXB13) to change its conformation easily. Together, Arg-228 and Lys-231 close the entry of the channel from this side but the other end of the channel is open and well visible in CDX2-DNATCG (Figure 4\u2014figure supplement 1B,C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/32963/elife-32963-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic representation of water-mediated interactions between amino-acids (red typeface) of HOXB13 and DNA bases in the HOXB13-DNACAA structure. Different water chains are indicated with different shades of blue. Thick dashed lines represent interactions formed between water molecules and bases or amino acids; thin dashed lines represent contacts formed between water molecules, and solid blue line indicates the direct interaction between A10 and Asn-266. Note that all of the base positions in the CAA sequence (boxes) are recognized via direct or water-mediated hydrogen bonds. (B) Structural representation of the network of interactions schematically presented in (A). Note the three water chains colored by slightly varied blue color. The amino acids and bases involved in interactions are presented as stick models. (C) Close view to the different conformations of amino-acids observed in HOXB13-DNATCG and HOXB13-DNACAA structures. Note that the conformations of the key amino-acids Gln-265 and Arg-258 that interact with the water network in HOXB13-DNACAA (amino-acids in red, DNA carbons in green) are not suitable for interacting with the network in HOXB13-DNATCG (amino-acids and DNA carbons in wheat). (D) Surface representation of protein-DNA interface of HOXB13-DNATCG complex. Relatively large channel between the protein and DNA that goes through the protein-DNA interface (white) lend support to the presence of mobile water molecules in this region. TCG-bases are colored by atoms: carbon atoms are yellow; oxygen atoms are red and nitrogen atoms are blue. (E) Schematic representation of water-mediated interactions between amino-acids (cyan typeface) of CDX2 and DNA bases in the CDX2-DNATCG structure. Different water chains are indicated with different shades of red. Thick dashed lines represent interactions formed between water molecules and bases or amino acids; thin dashed lines represent contacts formed between water molecules, and solid red line indicates the direct interaction between A10 and Asn-236. Note that only the position of the GC pair is recognized (boxes) via water-mediated hydrogen bonds. (F) Structural representation of the network of interactions schematically presented in (E). Note the three water chains colored by varied red-pink color. The amino acids and bases involved in interactions are presented as stick models.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32963/elife-32963-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The large channel between the protein and DNA presented in HOXB13:DNATCG complex (Figure 4D) is not presented in HOXB13:DNACAA (A) and CDX2:DNACAA (B), although it is very well visible on one side in the structure of CDX2:DNATCG (C) supporting the idea of the presence of mobile water molecules in this region. The color code is corresponding to the color code kept through the main figures of the paper: HOXB13:DNACAA is red, CDX2:DNACAA is magenta and CDX2:DNATCG is cyan. The TCG/CAA bases are colored by atoms: carbon atoms are yellow; nitrogen atoms are blue and oxygen atoms are red.\n\n### Thermodynamic features of the protein-DNA interactions\n\nWe next performed molecular dynamics simulations and free energy perturbation calculations to probe the behavior of water molecules in the protein-DNA interface for the two optimal sequences for HOXB13. The relative free energy (Hansson et al., 1998) estimates for the affinities of HOXB13 for the two DNA sequences obtained from the simulations indicate that both sequences are bound with similar affinities (\u0394\u0394G = - 0.1 kcal/mol). Analysis of the mobility of water molecules at the protein-DNA interface revealed that, while there is a similar number of water molecules in both systems, the waters at the HOXB13-DNATCG interface are more mobile (Figure 5\u2014figure supplement 1), consistent with a model where this complex has higher entropy than the HOXB13-DNACAA complex.\n\nTo more directly test if the two states are driven by enthalpy and entropy, we measured these thermodynamic parameters using isothermal titration calorimetry (ITC). ITC directly measures the heat of binding (\u0394H) and Kd of the binding reaction. Conversion of the Kd to \u0394G then allows the inference of the entropy of binding (\u0394S) from the data. The measured thermodynamic parameters for the TCG site were very similar to those we reported previously (Yin et al., 2017). Comparison of the parameters for the TCG and CAA sites revealed that consistent with SELEX (Jolma et al., 2013) and molecular modeling data, the \u0394G values for both sequences were similar. However, as predicted, the CAA site displayed much higher change in enthalpy, and larger loss of entropy compared to those of the TCG site (Figure 5A,B, Supplementary file 1). These results indicate that HOXB13 binding to one optimal site, CAA, is driven by enthalpy, whereas strong binding to the other, TCG, is due to a lower loss of entropy.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/32963/elife-32963-fig5-v1.jpg)\n\n**Figure 5.:** The optimal sequences with higher enthalpic contribution to binding are presented on the left side (A, C, E, G) and the reactions with higher entropic contribution are presented on the right side (B, D, F, H). Note that for each protein both DNAs are bound with similar \u0394G. The top panels of the ITC figures represent raw data; the bottom panels show the integrated heat of the binding reaction. The red line represents the best fit to the data, according to the model that assumes a single set of identical sites. The determined changes of enthalpy and calculated losses of entropy are shown on the bottom panel. The changes of Gibbs free energy, \u2206G=\u2206H-T\u2206S, are also calculated and presented on the bottom panel of each isotherm.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32963/elife-32963-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Histogram showing the distribution of lifetimes of water bridges between the protein and the DNA for the HOXB13-DNATCG and HOXB13-DNACAA systems. The histogram is constructed by calculating the duration of each water bridge with 50 ps resolution from the molecular dynamics simulations; a water bridge is considered to exist when a water molecule is simultaneously hydrogen-bonded to one of the protein residues 255\u2013272 and one of the DNA base pairs 5'-T(6)TTTACGAG(14)\u22123'.\n\nTo test if the identified mechanism is general to other cases of multiple specificity, we used ITC to determine the thermodynamic parameters for CDX2 and two other TFs, the MYF family TF MYF5 and the homeodomain protein BARHL2, both of which can optimally bind to two distinct sequence populations. Analysis of the data confirmed that in both cases, the \u0394G values for the two optimally bound sequences were similar, whereas the relative contributions of entropy and enthalpy to the binding were strikingly different (Figure 5C\u2013H). These results suggest that the ability of some TFs to bind to two distinct sequences with high affinity can be caused by the presence of both an enthalpic and an entropic optima.\n\n### Conclusions\n\nIn drug development, multiple optimal compounds can often be found that bind to a particular target molecule (Klebe, 2015). However, biological macromolecules are composed of a small set of relatively large monomers, and thus populate the shape-space more sparsely than synthetic small molecules, which can be modified at the level of single atoms. Therefore, the finding that TFs can bind to two distinct DNA sequences with equal affinity was unexpected (Badis et al., 2009; Jolma et al., 2013) and has been controversial in the field. Our initial hypothesis was that the two optimal states could be due to an ability of the TF to adopt two distinct conformational states, or due to a similarity of the shapes of the two distinct DNA sequences (Kalodimos et al., 2002; Nakagawa et al., 2013; P\u00e1rraga et al., 1998). To address these hypotheses, we solved the structure of HOXB13, a central transcription factor involved in both development (Economides and Capecchi, 2003; Krumlauf, 1994; Nolte et al., 2015) and tumorigenesis (Ewing et al., 2012; Huang and Cai, 2014; Pomerantz et al., 2015) bound to its two optimal DNA sequences. Surprisingly, the conformational differences between the HOXB13 proteins in the two structures were minor. Similarly, the two CDX2-DNA structures also displayed very similar overall conformations. In addition, the shape and charge-distribution of the optimally bound DNA sequences were not similar to each other. Thus, the structural analysis failed to support either the dual protein conformation or the DNA shape similarity models. Instead, thermodynamic analyses of HOXB13, CDX2, BARHL2 and MYF5 revealed that the two optimal states were bound because of their distinct effects on enthalpy and entropy, principally caused by differential stability of the water network at the protein-DNA interface. We also failed to find mutations in HOXB13 that would specifically abolish binding to one of the DNA sites. This finding is consistent with the thermodynamic model presented, as both TCG and CAA are bound by the same conformation of the HOXB13 protein, using the same contacting amino-acids (even when the contacts can occur via water or be direct).\n\nOur findings explain the mechanism behind the observed genetic epistasis at some TF binding sites. In addition, our findings are relevant to evolution of TF binding sites and macromolecular interactions. The ability of one molecular shape (HOXB13) to bind to two distinct molecular shapes (CAA and TCG) with similar affinity allows other mechanisms to selectively modulate target sites in the genome. For example, one of the HOXB13 optima, TCG, is affected by DNA methylation (Yin et al., 2017; Zuo et al., 2017), and methylation of this site further increases HOXB13 affinity. The CAA site does not contain a\u00a0CpG dinucleotide, and thus cannot be inheritably methylated. Thus, the ability of HOXB13 to bind to two distinct sites with similar affinity allows evolution of two types of regulatory sequences, those that are directly and positively affected by CpG methylation, and those that are not.\n\nThe mechanism by which TFs bind to two optimal DNA sequences is fundamental, and applies to all macromolecular interactions. In principle, enthalpy and entropy of binding vary partially independently as a function of the shape and charge distribution of the interacting molecules. Thus, different sequences are likely to be optimal with respect to enthalpy and entropy, in such a way that one optimal sequence is close to the optimal enthalpy state, and another is close to the optimal entropy state (Figure 6). We are not aware of work that has previously described such a situation. The observed effect that commonly results in at least two distinct \u0394G minima may have been missed before because it is generally strongest when there are solvent molecules at the interacting surface. Interacting through solvent molecules can increase enthalpy of binding, but also causes a large loss of entropy due to fixing of the solvent molecule(s). However, in macromolecular interactions that are driven by direct contact between residues, entropy often has lower impact on binding than enthalpy, and thus one of the optima is at a higher \u0394G than the other. Another reason for overlooking this mechanism could have been the fact that multiple local optima can also exist via other mechanisms (see for example [Klebe, 2015]), and measurements that allow inference of entropy and enthalpy separately are not commonly performed in studies of macromolecular interactions. In addition, simple additive binding models such as position weight matrices (PWMs) can hide the effect, as they can only describe a single optimal state.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/32963/elife-32963-fig6-v1.jpg)\n\n**Figure 6.:** (A\u2013B) Schematic cartoon illustrations of the binding mechanism driven by the low enthalpy (A) and by high entropy (B) are presented in the left panels. The DNA bases are presented as pyrimidine and purine rings, protein is represented as ellipsoid, N-terminus is shown bound to the minor groove created by A-stretch, and water molecules are shown schematically and colored blue. The dashed lines represent hydrogen bonds observed in the low enthalpy state; the solid line represents direct interactions between amino acids and bases. The blurred water molecules indicate the high entropy state. Hydrogen bonds that are common to both complexes are omitted for clarity. Graphs on the right show schematic illustration of the variance of enthalpy (\u0394H, top), entropy (-T\u0394S, middle) and Gibbs free energy (\u0394G) (bottom) as a function of an idealized one-dimensional continuous variable representing the high-dimensional variables of shape, electrostatic charge and vibration of DNA that vary as a function of the DNA sequence. As DNA is composed of only four bases, only discrete positions along this axis are possible (indicated by dots). Example models of shape and charge distribution of different DNA sequences (from Figure 1C) are shown as surface representation above the scheme. The surfaces are colored according to the charge distribution: positively charged atoms are in blue, negatively charged are in red and neutral atoms are in green. Note that enthalpy and entropy are partially negatively correlated, leading to binding promiscuity (wider optima in \u0394G compared to \u0394H and \u0394S). The remaining uncorrelated component leads to the presence of two optima for \u0394G (bottom). Shaded boxes on the right show simplified dinucleotide binding models that illustrate how this leads to two distinct locally optimal sequences. Note that the values are for illustration purposes only and the \u2018bumps\u2019 illustrate local entropy-enthalpy compensation that broadens the peaks of \u0394G.\n\nThe cases we studied here represent some of the strongest deviations from the PWM model, and also present two optima of very similar \u0394G that are located relatively far from each other in sequence space. Because we selected for this study cases with two almost equally strong binding sequences, the effect is likely to be stronger here than in most other interactions. Thus, the relative importance of the phenomenon across other types of interactions needs to be evaluated experimentally. The phenomenon we observed exists due to the fact that entropy and enthalpy of binding vary as a function of the shape of the interacting macromolecules. Both functions will have optima, commonly at different exact positions. The binding free energy will also vary as a function of the shape, but is likely to have more optima than its constituent functions because they are partially independent of each other. Thus, it is likely that many other biologically relevant examples of this effect will be identified. Many\u00a0of\u00a0these will represent cases where the sequences representing entropic and enthalpic optima are more closely related to each other than in the extreme cases studied here. This would manifest as a \u2018flat bottom\u2019 in the affinity landscape, where many sequences would bind with similar affinity. In addition, it is likely that in most cases one of the local optima is located at lower affinity than the other. This would manifest as a minor peak or a shoulder in the affinity landscape away from the optimal sequence. In each case, the measured affinities would deviate from those predicted from a single PWM model.\n\nOur results and the underlying theory suggest that the ability of TFs to bind to distinct sequences could thus be widespread, and that the importance of the optimal states in determining TF-DNA binding preferences should be reinvestigated. Moreover, models for TF binding that are used to identify TF sites should also be adjusted to include features that allow two or more optima. In a broader sense, our results are potentially relevant to all macromolecular interactions, particularly in the presence of a polar solvent such as water that can contribute to bridging interactions, whose contributions to the enthalpy and entropy of binding are in the same order of magnitude. Therefore, in addition to explaining the observed epistasis in protein-DNA interactions, the presence of two optima is likely to also explain the molecular mechanisms behind other types of genetic epistasis.\n\n## Materials and methods\n\n### Protein expression, purification and crystallization\n\nExpression and purification of the DNA-binding domain fragment of human HOXB13 (residues 209\u2013283) as well as CDX2 (residues 184\u2013256) were performed as described in Refs. (Savitsky et al., 2010) and (Yin et al., 2017). The DNA fragments used in crystallization were obtained as single strand oligos (Eurofins), and annealed in 20 mM HEPES (pH 7.5) containing 150 mM NaCl and 0.5 mM Tris (2-carboxyethyl) phosphine (TCEP) and 5% glycerol. For each complex, the purified and concentrated protein was first mixed with a solution of annealed DNA duplex at a molar ratio 1:1.2 and after one hour on ice subjected to the crystallization trials. The crystallization conditions for all complexes were optimized using an in house developed crystal screening kit of different PEGs. Complexes were crystalized in sitting drops by vapor diffusion technique from solution containing 50 mM Tris buffer (pH 8.0), 100 mM MgCl2, 150 mM KCl, 8% of PEG (400) and different concentrations of various PEGs. PEG (3350) was used at 14% for HOXB13-DNATCG and 21\u201327% (w/v) of polyethylene glycol monomethyl ether (PEGmme (5000)) was used in crystallizations of HOXB13 with DNACAA and CDX2 with both DNAs. The data sets were collected at ESRF from a single crystal on beam-lines ID29 (HOXB13-DNATCG) and ID23-1 (HOXB13-DNACAA, and both CDX2 complexes), at 100 K using the reservoir solution as cryo-protectant. The data collection strategy was optimized with the program BEST (Bourenkov and Popov, 2006). Data were integrated with the program XDS (Kabsch, 2010) and scaled with SCALA (Murshudov et al., 2011; Winn et al., 2011). Statistics of data collection are presented in Table 1.\n\n**Table 1.**\n Data collection and refinement statistics\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>HOXB13-DNATCG</th>\n      <th>HOXB13-DNACAA</th>\n      <th>CDX2-DNATCG</th>\n      <th>CDX2-DNACAA</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data collection</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Wavelength (\u00c5)</td>\n      <td>0.9724</td>\n      <td>0.9724</td>\n      <td>0.9724</td>\n      <td>0.9724</td>\n    </tr>\n    <tr>\n      <td>Resolution range (\u00c5)</td>\n      <td>46.29\u20133.2\u00a0(3.31\u20133.2)</td>\n      <td>45.95\u20132.19\u00a0(2.27\u20132.19)</td>\n      <td>43.23\u20132.57 (2.66\u20132.57)</td>\n      <td>55.96\u20132.95 (3.13\u20132.95)</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P 2 2 21</td>\n      <td>P 1 2 1</td>\n      <td>C 1 2 1</td>\n      <td>I 1 2 1</td>\n    </tr>\n    <tr>\n      <td>Unit cell (\u00c5, \u00b0)</td>\n      <td>52.62 52.52 389.33; 90 90 90</td>\n      <td>77.35 57.92 101.28; 90 101.57 90</td>\n      <td>127.95 46.49 68.89; 90 113.27 90</td>\n      <td>70.25 46.69 128.63; 90 101.40 90</td>\n    </tr>\n    <tr>\n      <td>Total reflections</td>\n      <td>86877\u00a0(3476)</td>\n      <td>241614\u00a0(21747)</td>\n      <td>19575 (1958)</td>\n      <td>27018 (4003)</td>\n    </tr>\n    <tr>\n      <td>Unique reflections</td>\n      <td>17526 (1361)</td>\n      <td>44125\u00a0(3912)</td>\n      <td>12095 (1197)</td>\n      <td>8802 (1264)</td>\n    </tr>\n    <tr>\n      <td>Multiplicity</td>\n      <td>4.2\u00a0(3.3)</td>\n      <td>5.5\u00a0(5.6)</td>\n      <td>1.6 (1.6)</td>\n      <td>3.2 (3.2)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>93.0 (90.4)</td>\n      <td>97.42\u00a0(87.37)</td>\n      <td>99.5 (100)</td>\n      <td>96.6 (90.5)</td>\n    </tr>\n    <tr>\n      <td>Mean I/sigma(I)</td>\n      <td>7.91\u00a0(0.10)</td>\n      <td>8.11\u00a0(1.10)</td>\n      <td>8.47 (2.77)</td>\n      <td>7.5 (1.1)</td>\n    </tr>\n    <tr>\n      <td>R-merge</td>\n      <td>0.085\u00a0(4.59)</td>\n      <td>0.12\u00a0(1.21)</td>\n      <td>0.13 (5.49)</td>\n      <td>0.071 (7.24)</td>\n    </tr>\n    <tr>\n      <td>R-meas</td>\n      <td>0.09</td>\n      <td>0.13</td>\n      <td>0.08</td>\n      <td>0.09</td>\n    </tr>\n    <tr>\n      <td>CC1/2</td>\n      <td>0.99\u00a0(0.72)</td>\n      <td>0.99\u00a0(0.71)</td>\n      <td>0.99 (0.80)</td>\n      <td>0.99 (0.61)</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>R-work</td>\n      <td>0.21</td>\n      <td>0.25\u00a0(0.37)</td>\n      <td>0.22</td>\n      <td>0.19</td>\n    </tr>\n    <tr>\n      <td>R-free</td>\n      <td>0.28</td>\n      <td>0.29\u00a0(0.35)</td>\n      <td>0.29</td>\n      <td>0.25</td>\n    </tr>\n    <tr>\n      <td>Number of non-hydrogen atoms</td>\n      <td>5197</td>\n      <td>5591</td>\n      <td>2841</td>\n      <td>2783</td>\n    </tr>\n    <tr>\n      <td>macromolecule</td>\n      <td>5172</td>\n      <td>5072</td>\n      <td>2748</td>\n      <td>2717</td>\n    </tr>\n    <tr>\n      <td>water</td>\n      <td>8</td>\n      <td>519</td>\n      <td>93</td>\n      <td>66</td>\n    </tr>\n    <tr>\n      <td>Protein residues</td>\n      <td>242</td>\n      <td>274</td>\n      <td>144</td>\n      <td>141</td>\n    </tr>\n    <tr>\n      <td>RMS (bonds)</td>\n      <td>0.025</td>\n      <td>0.011</td>\n      <td>0.018</td>\n      <td>0.012</td>\n    </tr>\n    <tr>\n      <td>RMS (angles)</td>\n      <td>2.03</td>\n      <td>1.26</td>\n      <td>2.11</td>\n      <td>1.83</td>\n    </tr>\n    <tr>\n      <td>Ramachandran favored (%)</td>\n      <td>93</td>\n      <td>97</td>\n      <td>97.8</td>\n      <td>99.3</td>\n    </tr>\n    <tr>\n      <td>Ramachandran outliers (%)</td>\n      <td>1.7</td>\n      <td>0.41</td>\n      <td>1.43</td>\n      <td>0.73</td>\n    </tr>\n    <tr>\n      <td>Clashscore</td>\n      <td>10.51</td>\n      <td>5.31</td>\n      <td>4.42</td>\n      <td>6.43</td>\n    </tr>\n    <tr>\n      <td>Average B-factor</td>\n      <td>124.40</td>\n      <td>41.70</td>\n      <td>30.54</td>\n      <td>74.75</td>\n    </tr>\n    <tr>\n      <td>macromolecule</td>\n      <td>124.70</td>\n      <td>42.10</td>\n      <td>29.30</td>\n      <td>74.41</td>\n    </tr>\n  </tbody>\n</table>\n\n_Statistics for the highest-resolution shell are shown in parentheses._\n\n### Structure determination and refinement\n\nAll structures were solved by molecular replacement using program Phaser (McCoy et al., 2007) as implemented in Phenix (Adams et al., 2010) and CCP4 (Winn et al., 2011) with the structure of HOXA9 (pdb entry 1PUF) as a search model for HOXB13 and structure of CDX2-DNAmeth (pdb entry 5LTY) as a search model for CDX. After the positioning of protein, the density of DNA was clear and the molecule was built manually using COOT (Emsley et al., 2010). The rigid body refinement with REFMAC5 was followed by restrain refinement with REFMAC5, as implemented in CCP4 (Winn et al., 2011) and Phenix.refine (Afonine et al., 2012). The manual rebuilding of the model was done using COOT. The refinement statistics are presented in Table 1. The first seven amino acids from N-termini and the last seven from C-termini were found disordered and were not built in the maps. The end base pairs of the DNA in HOXB13-DNATCG structure were also found slightly disordered but it was possible to build them to the maps. Figures showing structural representations were prepared using PyMOL (Schr\u00f6dinger, 2015).\n\n### HT-SELEX and motif analysis\n\nMYF6 and BARHL2 HT-SELEX experiments were performed essentially as described in (Yin et al., 2017). The PWM models were generated from cycles 3, 3, 4 and 2 of new MYF6 and BARHL2 HT-SELEX reads, and published HT-SELEX reads for HOXB13 (Yin et al., 2017) and CDX1 (Methyl-HT-SELEX; Yin et al., 2017), respectively, using the multinomial (setting\u00a0=\u00a01) method (Jolma et al., 2010) with the following seeds: HOXB13 single PWM: NCYMRTAAAAN, TCG: NCTCGTAAAAN, CAA: NCCAATAAAAN; CDX1 single PWM: GYMRTAAAA, TCG: GTCGTAAAA, CAA: GCAATAAAA; MYF6 single PWM: NRWCAGCTGWYN, AA...TT flank: NAACAGCTGTTN, GT...AC flank: NGTCAGCTGACN; BARHL2 single PWM: NSYTAAWYGNYN, TT: NSYTAATTGNYN, AC: NSYTAAACGKYN.\n\n### Molecular dynamics\n\nMolecular dynamics simulations were performed for HOXB13 complexed with either DNATCG or DNACAA; the DNA sequence used in the simulations contained nucleotides G5 \u2013 C18 from the crystal structure. The CHARMM 36 forcefield (Best et al., 2012; Foloppe and MacKerell, Jr., 2000; Hart et al., 2012; MacKerell et al., 1998; MacKerell et al., 2004) and CHARMM program (Brooks et al., 2009), with the CHARMM interface to OpenMM (Friedrichs et al., 2009) to allow the use of NVIDIA graphical processing units (GPUs), were used for all simulations. The starting structure was placed in a cubic solvent box with 8 nm side length containing water (Jorgensen et al., 1983) and 0.15 M NaCl; Na+ ions were then added to neutralize the system. After energy minimization to relax initial strain the systems were heated from 100 K to 300 K over 0.1 ns followed by 0.3 ns simulation at constant pressure (1 bar) and constant temperature (300 K), with soft harmonic positional restraints on the protein and DNA atoms. For each complex 3 \u00d7 0.8 \u00b5s production runs were performed using the GPU, with the pressure and temperature maintained at 1 bar and 300 K, respectively, and without the positional restraints. Particle mesh Ewald summation was used to treat the long range electrostatic interactions, using a sixth order cubic spline interpolation for the charge distribution on the 0.1 nm spaced grid points, kappa\u00a0=\u00a00.34. The same 0.9 nm cutoff was used for both the direct space part of the PME and for the van der Waals interactions, which were switched to zero from 0.8 nm to 0.9 nm, and the non-bond list was generated with a 1.1 nm cutoff. SHAKE (Ryckaert et al., 1977) was used to keep the lengths of all covalent X-H bonds fixed, allowing a time-step of 2 fs.\n\nIn the free energy perturbation calculations (Zwanzig, 1954) we changed the three base pairs in the TCG sequence into those of the CAA sequence using a total of 43 intermediate states, where the order of change was: turn off charges, change Lennard-Jones parameters, turn on charges. In each state, a 10 ns equilibration was followed by 10 ns production. The free energies were calculated using the Bennett Acceptance Ratio method (Bennett, 1976).\n\n### Isothermal titration calorimetry\n\nThe ITC experiments were carried similarly to described in Ref. (Yin et al., 2017). Briefly, an ITC200 microcalorimeter (MicroCal Inc., Northampton, Massachusetts, USA) in PSF (Protein Science Facility at Karolinska Institute, Sweden) was used to measure binding isotherms of DNAs by direct titration of protein to the cell containing DNA. The measurements were taken at 25\u00b0C. Both protein and DNA were prepared in a buffer containing 20 mM HEPES pH 7.5, 300 mM NaCl, 10% glycerol and 2 mM Tris (2-carboxyethyl) phosphine (TCEP). To measure binding affinity, a solution of 0.15 mM protein was titrated to 0.012\u20130.016 mM solution of DNA. A total of 23 injections were made with 240 s between injections. Each experiment was repeated three times for the reliability of the results. All data were evaluated using the OriginPro 7.0 software package (Microcal) supplied with the calorimeter. The apparent binding constant Kd, binding enthalpy \u2206H and stoichiometry n, together with their corresponding standard deviation (s.d.), were determined by a nonlinear least square fit of the data to standard equations for the binding using a model for one set of independent and identical binding sites as implemented in the package. The entropy and free energy of binding were obtained from the relation \u2206G = -RTlnKd = \u2206H-T\u2206S.\n\n### Accession codes\n\nThe atomic coordinates and diffraction data have been deposited to Protein Data Bank with the accession codes 5EDN and 5EEA, for HOXB13-DNATCG and HOXB13-DNACAA, respectively and 6ES3 and 6ES2 for CDX2-DNATCG and CDX2-DNACAA, respectively. All sequence reads are deposited to the European Nucleotide Archive with the study accession number: PRJEB20652\n",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "03c4f760-8be5-49d3-a56b-13a50ccc7182",
+      "submission_id": "83104b89-cca3-4353-b383-0957908a87f6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nir Ben-Tal, Tel Aviv University Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.32963.031](https://doi.org/10.7554/eLife.32963.031)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Two distinct DNA sequences recognized by transcription factors represent enthalpy and entropy optima\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Naama Barkai as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Gary Stormo (Reviewer #1); Thomas D Tullius (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, the authors address an important but poorly understood phenomenon: that DNA-binding proteins sometimes recognize with similar affinity DNA sites that diverge substantially in sequence. For two homeodomain proteins, they assemble thermodynamic data that argue for the primary role of entropy-enthalpy compensation in producing similar binding affinity for distinct sequences. They also collect thermodynamic binding data for two additional proteins that exhibit the same behavior, supporting their conclusions. They interpret structural data (X-ray co-crystal structures) as supporting the idea that ordered water structure (or its lack) at the protein-DNA interface is the main source of this thermodynamic compensation.\n\nPrevious work in this area (particularly the important paper by Jen-Jacobson et al. that is referenced by the authors) focused on thermodynamic analysis of several different DNA binding proteins bound to their canonical binding sites, and noted the entropy-enthalpy compensation phenomenon. The present manuscript instead shows that entropy-enthalpy compensation occurs for the same protein bound to two very different DNA sites, a new and significant observation. (Notably, in the data presented in Figure 1 of the Jen-Jacobson et al. paper, entropy-enthalpy compensation is apparent for proteins binding to the same core site in different sequence contexts, and also for proteins binding to point mutants of the canonical site, similar in some ways to the observations central to the current manuscript. However, Jen-Jacobson et al. do not discuss this point.) The authors of the present manuscript significantly extend previous work in this area by solving X-ray co-crystal structures of the complexes of interest, and by analyzing these structures to provide a structural underpinning for the thermodynamic observations.\n\nOpinion:\n\nThe manuscript will be influential in understanding the important problem of how proteins select DNA binding sites in genomes.\n\nEssential revisions:\n\nA) Conceptual:\n\n1) The generalizability of the finding based on a handful of examples of TFs binding to DNA, to all other biomolecular interactions, is probably somewhat overstated. For example, how sure are we at this point that the last sentence of the Abstract will turn out to be as generalizable as it is currently stated? The authors should provide stronger arguments or more evidence that such duality of enthalpy/entropy-driven binding actually exists among many interactions. Or tune down this and related statements.\n\n2) In a general sense, it would be more reassuring to see correlations of how this mechanism might translate to in vivo TF functions.\n\n3) One of the surprising results is that, as stated \"no substitutions were identified that would lead to a specific loss of binding to the TCG or CAA sequences\". This observation should be better explained.\n\n4) When discussing the presence or absence of structured water in the complexes (a key feature of their structural analysis), the authors state: \"A relatively large solvent channel (6.4 \u00c5 in smallest diameter) exists between the \u03b13 helix of HOXB13 and DNA (Figure 4D).\" To clarify their argument, the authors should specify in the text that this observation refers to the HOXB13-DNA-TCG structure (as is done in the figure caption). Is such a solvent channel present in the HOXB13-DNA-CAA structure? The text seems to imply that it is not present in the CAA structure, but please clarify. Similarly, there is no mention in the text as to the presence or absence of a channel in the CDX2 complexes. A central point in the authors' connection of structure with thermodynamics for these systems is the presence or absence of ordered water at the protein-DNA interface. Differences in the channel are implied to be, at least in part, the reason for different water ordering that is reflected in the entropy changes associated with binding, so it is important to clarify whether this is indeed observed in the structures.\n\nB) Presentation:\n\n5) The result, if generalizable, is clearly significant, although the authors could more explicitly spell out what findings are truly novel versus already established. For example, it is already established that binding of a TF to very different sequences is relatively widespread, but it is less well established how the thermodynamic underpinnings of such differential recognition mechanisms operate.\n\n6) It is not immediately clear how new the observations presented in Figure 1 are. How much of what is presented here is based on data obtained in previous papers?\n\n7) The flow might be quite difficult to follow for those without direct expertise in the technical details of the approaches used. Here is a suggestion for reorganization to improve the flow: The primary (and most obvious) evidence for the mechanistic difference in binding for the two homeodomains with the two DNA sequences is the calorimetry data shown in Figure 5. The X-ray structural data are interesting, but not really conclusive as to mechanism; the structures support the thermodynamic data but don't really stand alone. For example, that all four structures look like every other homeodomain-DNA structure is not surprising at all. The differences between the four structures are pretty subtle, and also are not well-explained in the manuscript for the two CDX2 complexes. In contrast, the calorimetry data are very consistent for the two homeodomains, and for two other proteins. Thus, we suggest to reorder the Results section as follows: (1) PWM models (which suggest the problem to be addressed); (2) calorimetry data (to experimentally address mechanism); (3) X-ray data (to support the calorimetry data); (4) MD simulations (that support the X-ray and calorimetry).\n\n8) The references in the main text are all over the place, and should be reformatted according to eLife referencing style.\n",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e349b97c-5f07-415e-842e-358e1070d4fd",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C1",
+      "claim": "Some transcription factors can bind to two distinct sequences that represent two local optima in the Gibbs free energy of binding (\u0394G).",
+      "claim_type": "EXPLICIT",
+      "source": "However, some TFs can bind to two distinct sequences that represent two local optima in the Gibbs free energy of binding (\u0394G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a premise for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "5aecedda-6155-4da8-b027-978e84315436",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C2",
+      "claim": "The structures of human HOXB13 and CDX2 bound to their two optimal DNA sequences, CAATAAA and TCGTAAA, were solved.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine the molecular mechanism behind this effect, we solved the structures of human HOXB13 and CDX2 bound to their two optimal DNA sequences, CAATAAA and TCGTAAA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the structural determination performed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "e1152c0e-eb10-4e2f-b904-e408314baccc",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C3",
+      "claim": "Both CAATAAA and TCGTAAA sites were bound by HOXB13 and CDX2 with similar \u0394G.",
+      "claim_type": "EXPLICIT",
+      "source": "Thermodynamic analyses by isothermal titration calorimetry revealed that both sites were bound with similar \u0394G.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "ITC measurements directly determined the thermodynamic parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "edd59a09-9556-43c7-8d38-3905015dc80d",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C4",
+      "claim": "The interaction of HOXB13 and CDX2 with the CAA sequence was driven by change in enthalpy (\u0394H).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the interaction with the CAA sequence was driven by change in enthalpy (\u0394H), whereas the TCG site was bound with similar affinity due to smaller loss of entropy (\u0394S).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "ITC data showed higher enthalpy change for CAA binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "8adc3cd6-f0ab-4718-a51d-829bc02a5970",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C5",
+      "claim": "The TCG site was bound with similar affinity due to smaller loss of entropy (\u0394S).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the interaction with the CAA sequence was driven by change in enthalpy (\u0394H), whereas the TCG site was bound with similar affinity due to smaller loss of entropy (\u0394S).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "ITC data showed smaller entropy loss for TCG binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "3f3ffa87-834f-46f7-8c3f-363613b30826",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C6",
+      "claim": "This thermodynamic mechanism that leads to at least two local optima likely affects many macromolecular interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "This thermodynamic mechanism that leads to at least two local optima likely affects many macromolecular interactions, as \u0394G depends on two partially independent variables \u0394H and \u0394S according to the central equation of thermodynamics, \u0394G = \u0394H - T\u0394S.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative generalization based on thermodynamic principles.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "39e79325-9661-415a-b9c0-3d1266f8ba0a",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C7",
+      "claim": "Direct readout mechanism involves the formation of specific hydrogen bonds and hydrophobic interactions between DNA bases and protein amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "the 'direct readout' mechanism involving the formation of specific hydrogen bonds and hydrophobic interactions between DNA bases and protein amino acids (Aggarwal et al., 1988; Anderson et al., 1987; Wolberger et al., 1988)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "cc753da8-4c1d-432f-8499-eedf747cf40b",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C8",
+      "claim": "Indirect readout involves recognition of DNA shape and electrostatic potential by protein contacts to the DNA backbone or the minor groove.",
+      "claim_type": "EXPLICIT",
+      "source": "'indirect readout' of the DNA shape and electrostatic potential (Dror et al., 2014; Hizver et al., 2001; Joshi et al., 2007; Lavery, 2005; Rohs et al., 2005) by protein contacts to the DNA backbone or the minor groove",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "297f8a3e-b032-4ffc-86e4-83afd15a7504",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C9",
+      "claim": "Water mediated interactions occur between bases and amino-acids.",
+      "claim_type": "EXPLICIT",
+      "source": "water mediated interactions between bases and amino-acids (Bastidas and Showalter, 2013; Garner and Rau, 1995; Ladbury et al., 1994; Morton and Ladbury, 1996; Patikoglou and Burley, 1997; Poon, 2012; Spolar and Record, 1994)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "b867e8b6-1d9b-49ab-9e88-a9907fbe555a",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C10",
+      "claim": "Direct hydrogen bonds can contribute strongly to enthalpy of binding.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, direct hydrogen bonds can contribute strongly to enthalpy of binding, whereas indirect hydrogen bonds mediated by water are weaker, due to the loss of entropy caused by immobilization of the bridging water molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established thermodynamic principles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "5ddb53d6-0907-4bdb-b67e-f078d73f74eb",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C11",
+      "claim": "Indirect hydrogen bonds mediated by water are weaker due to the loss of entropy caused by immobilization of the bridging water molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, direct hydrogen bonds can contribute strongly to enthalpy of binding, whereas indirect hydrogen bonds mediated by water are weaker, due to the loss of entropy caused by immobilization of the bridging water molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established thermodynamic principles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "6a73faa7-ce75-4ee2-8993-f6b6f6150e04",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C12",
+      "claim": "Enthalpy-entropy compensation leads to binding promiscuity, allowing a TF to bind to several different but closely related sequences with biologically relevant affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "In many cases, the contributions of the loss of entropy and the gain in enthalpy are similar in magnitude, leading to a phenomenon called 'enthalpy-entropy compensation' (Chodera and Mobley, 2013; Jen-Jacobson et al., 2000; Klebe, 2015; Patikoglou and Burley, 1997). This leads to binding promiscuity, allowing a TF to bind to several different but closely related sequences with a biologically relevant affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature and logical inference.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "329d5d6b-d337-4c8a-917a-db36891757cf",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C13",
+      "claim": "Many transcription factors appear to only recognize sequences closely related to a single optimal site.",
+      "claim_type": "EXPLICIT",
+      "source": "Many transcription factors appear to only recognize sequences closely related to a single optimal site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about TF behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "e81ad633-1987-4975-8e56-21606b4971bb",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C14",
+      "claim": "TF binding to DNA can be approximated by a position weight matrix (PWM) model for many transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Their binding to DNA can be approximated by a position weight matrix (PWM) model, which describes a single optimal site, and assumes that individual substitutions affect binding independently of each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a common modeling approach in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "91487c54-f24b-481c-bfc2-c993ae095715",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C15",
+      "claim": "Several TFs can bind with high affinity to multiple different sequences and populations of sequences that are closely related to these optimal sites.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is well established that several TFs can bind with high affinity to multiple different sequences, and populations of sequences that are closely related to these optimal sites (Badis et al., 2009; Johnson et al., 2007; Jolma et al., 2013; Morris et al., 2011; Zhao and Stormo, 2011; Zuo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "b5542adc-f163-4da6-af3b-aeca1eeea251",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C16",
+      "claim": "When TFs bind to multiple different sequences, the effect of substitution mutations is not independent and displays strongly epistatic behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In such cases, the effect of substitution mutations is not independent, and instead the mutations display strongly epistatic behavior (Anderson et al., 2015; Jolma et al., 2013; Lehner, 2011; Zuo et al., 2017), where the combined effect of two mutations can be less severe than what is predicted from the individual effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "c52de963-c506-46f3-ae86-ed0a40115b97",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C17",
+      "claim": "Many cases of multiple specificity can be explained by different spacing of homodimeric TFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Many cases of such multiple specificity can be explained by different spacing of homodimeric TFs (Aggarwal et al., 1988; P\u00e1rraga et al., 1998), but in some cases a single monomeric TF appears to be able to bind to two distinct sequences with similar affinities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "78f72e1e-0e0e-4873-ad08-8a9f2f9229c4",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C18",
+      "claim": "In some cases a single monomeric TF appears to be able to bind to two distinct sequences with similar affinities.",
+      "claim_type": "EXPLICIT",
+      "source": "Many cases of such multiple specificity can be explained by different spacing of homodimeric TFs (Aggarwal et al., 1988; P\u00e1rraga et al., 1998), but in some cases a single monomeric TF appears to be able to bind to two distinct sequences with similar affinities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "c18d4774-2b25-4033-adf8-db9cb7cda9b1",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C19",
+      "claim": "The optimal sequences for HOXB13 are CCAATAAA and CTCGTAAA that differ from each other by three base pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "The optimal sequences for HOXB13 are CCAATAAA and CTCGTAAA that differ from each other by the three underlined base pairs, whereas CDX2 binds with high affinity to similar two sequences that begin with a G instead of a C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific sequences studied.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "a5228e9b-c94a-42c5-9a19-65eec8dd0c22",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C20",
+      "claim": "CDX2 binds with high affinity to sequences similar to HOXB13 optimal sequences that begin with a G instead of a C.",
+      "claim_type": "EXPLICIT",
+      "source": "The optimal sequences for HOXB13 are CCAATAAA and CTCGTAAA that differ from each other by the three underlined base pairs, whereas CDX2 binds with high affinity to similar two sequences that begin with a G instead of a C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific sequences studied.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "a097fe03-cb69-4b9e-b43a-a3a2ebd0fb39",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C21",
+      "claim": "One of the optimal sequences is bound primarily due to an optimal enthalpic contribution, whereas the other is bound due to an optimum of entropy for HOXB13, CDX2, BARHL2, and MYF5.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis, together with thermodynamic measurements of HOXB13, CDX2 and two other transcription factors, BARHL2 and MYF5 that also display multiple specificity revealed that in each case, one of the optimal sequences is bound primarily due to an optimal enthalpic contribution, whereas the other is bound due to an optimum of entropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding from thermodynamic measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "0e2f4cc5-8c1f-41a9-8b7e-f9c5d301d7bf",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C22",
+      "claim": "This result is likely to be general to most macromolecular interactions, as they commonly involve interaction of the macromolecules with a network of interconnected water-molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is likely to be general to most macromolecular interactions, as they commonly involve interaction of the macromolecules with a network of interconnected water-molecules, whose formation involves a trade-off between enthalpy and entropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative generalization based on the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "cfb30534-641b-4b9c-836a-45bcdb106921",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C23",
+      "claim": "A single PWM model cannot describe the binding affinity of MYF6, BARHL2, CDX1 and HOXB13 to DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of enrichment of subsequences by MYF6, BARHL2, CDX1 and HOXB13 in SELEX reveals that a single PWM model cannot describe the binding affinity of these factors to DNA (Figure 1A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by SELEX data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "ae31e540-4049-416d-9302-7a06551cb782",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C24",
+      "claim": "Each of MYF6, BARHL2, CDX1 and HOXB13 has more than one locally optimal sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of these factors has more than one locally optimal sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from SELEX data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "af8913d8-4aea-4392-b2f5-2aea58d8a574",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C25",
+      "claim": "All sequences between the optima have lower affinity and enrich less in SELEX than the optimal sequences for MYF6, BARHL2, CDX1 and HOXB13.",
+      "claim_type": "EXPLICIT",
+      "source": "All sequences between these optima have lower affinity and enrich less in SELEX than the optimal sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in SELEX data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "81abdcd6-67c9-4094-bf1e-4690338025f4",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C26",
+      "claim": "More than one positionally independent position weight matrix (PWM) model is required for describing the affinity of MYF6, BARHL2, CDX1 and HOXB13 towards DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, more than one positionally independent position weight matrix (PWM) model is required for describing their affinity towards DNA (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is concluded from the SELEX analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "210d41e2-16ff-48e9-a62b-9e1ff0093122",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C27",
+      "claim": "Combinations of mutations affecting the optimal sites of HOXB13 display extremely strong epistatic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Combinations of mutations affecting the optimal sites of these TFs display extremely strong epistatic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by mutation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "3bf92e34-1468-49b3-aa1b-c1e4c37ceee9",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C28",
+      "claim": "The effect of mutating three first bases of the optimal HOXB13 motif TCGTAAAA is more than 400-fold smaller than what is expected from the individual single mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the effect of mutating three first bases of the optimal HOXB13 motif TCGTAAAA is more than 400-fold smaller than what is expected from the individual single mutants (Figure 1E,F), and the generated CAATAAAA site binds to HOXB13 with almost the same affinity as the initial unmutated sequence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1E,F with mutation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "01748367-7f7d-4055-b8a1-8467969d0488",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C29",
+      "claim": "The generated CAATAAAA site binds to HOXB13 with almost the same affinity as the initial unmutated TCGTAAAA sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the effect of mutating three first bases of the optimal HOXB13 motif TCGTAAAA is more than 400-fold smaller than what is expected from the individual single mutants (Figure 1E,F), and the generated CAATAAAA site binds to HOXB13 with almost the same affinity as the initial unmutated sequence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1E,F with mutation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "ae2a6b80-b335-44dc-9bf3-365d38337263",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C30",
+      "claim": "HOXB13 and CDX2 are related proteins showing 43% identity at amino-acid level.",
+      "claim_type": "EXPLICIT",
+      "source": "These proteins are related, but diverged significantly in primary sequence, showing 43% identity at amino-acid level (Figure 1\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "86380357-a555-4171-9d34-96d3a1299b12",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C31",
+      "claim": "The DNA-binding domain of HOXB13 consists of 75 amino-acids from Asp-209 to Pro-283.",
+      "claim_type": "EXPLICIT",
+      "source": "For structural analysis, the DNA-binding domains (DBD) of HOXB13 (the 75 amino-acids from Asp-209 to Pro-283) and CDX2 (the residues Arg-154 \u2013 Gln-256) were expressed in E.coli, purified and crystallized bound to synthetic 19 or 18 bp double stranded DNA fragments containing the CTCGTAAA/GTCGTAAA (DNATCG) or CCAATAAA/GCAATAAA (DNACAA) motifs, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental construct used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "149c6bc2-61dc-404e-9c7a-4ecb73169c42",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C32",
+      "claim": "The DNA-binding domain of CDX2 consists of residues Arg-154 to Gln-256.",
+      "claim_type": "EXPLICIT",
+      "source": "For structural analysis, the DNA-binding domains (DBD) of HOXB13 (the 75 amino-acids from Asp-209 to Pro-283) and CDX2 (the residues Arg-154 \u2013 Gln-256) were expressed in E.coli, purified and crystallized bound to synthetic 19 or 18 bp double stranded DNA fragments containing the CTCGTAAA/GTCGTAAA (DNATCG) or CCAATAAA/GCAATAAA (DNACAA) motifs, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental construct used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "9d7230cb-6423-4c1b-a704-04e0bcd8a8b6",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C33",
+      "claim": "The structures were solved using molecular replacement at resolutions 3.2 and 2.2 \u00c5 for HOXB13, and 2.57 and 2.95 \u00c5 for CDX2.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures were solved using molecular replacement at resolutions 3.2 and 2.2 \u00c5 for HOXB13, and 2.57 and 2.95 \u00c5 for CDX2, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structural determination method and resolution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "7457b00f-240e-4d88-8bfc-6c83fd045902",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C34",
+      "claim": "All complexes displayed a high overall similarity to HOXB13 bound to methylated DNA and to previously known DNA-bound HOX protein structures.",
+      "claim_type": "EXPLICIT",
+      "source": "All complexes displayed a high overall similarity to HOXB13 bound to methylated DNA (Yin et al., 2017), and to the previously known DNA-bound HOX protein structures (Hovde et al., 2001; Joshi et al., 2007; LaRonde-LeBlanc and Wolberger, 2003; Passner et al., 1999; Piper et al., 1999; Zhang et al., 2011) (Figure 2; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by structural comparison.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "51ada58e-75b1-4525-a10d-356a93961878",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C35",
+      "claim": "Two parts of both HOXB13 and CDX2 DBDs interact with DNA: the recognition helix \u03b13, which tightly packs into the major groove, and the N-terminal tail interacting with the minor groove.",
+      "claim_type": "EXPLICIT",
+      "source": "Two parts of both HOXB13 and CDX2 DBDs interact with DNA: the recognition helix \u03b13, which tightly packs into the major groove, and the N-terminal tail interacting with the minor groove (Figure 2A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "6b208062-77e4-4562-8b82-ed40428a594b",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C36",
+      "claim": "The residue Gly-84 that is affected by a coding variant strongly implicated in prostate cancer was not included in the HOXB13 construct.",
+      "claim_type": "EXPLICIT",
+      "source": "The residue Gly-84 that is affected by a coding variant that is strongly implicated in prostate cancer was not included in our construct; two other residues mutated in single prostate cancer families (Ewing et al., 2012) were predicted to destabilize the protein (R229G), or its interaction with DNA (G216C) (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the construct design and relates to cancer mutations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "2cb3c61b-0e5a-4a2a-94ff-6afb92f7c5e5",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C37",
+      "claim": "Two other residues mutated in single prostate cancer families were predicted to destabilize the protein (R229G), or its interaction with DNA (G216C).",
+      "claim_type": "EXPLICIT",
+      "source": "The residue Gly-84 that is affected by a coding variant that is strongly implicated in prostate cancer was not included in our construct; two other residues mutated in single prostate cancer families (Ewing et al., 2012) were predicted to destabilize the protein (R229G), or its interaction with DNA (G216C) (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction based on structural analysis and cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "f125298a-51be-4287-ac2a-428121f710f3",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C38",
+      "claim": "The core interactions between both HOXB13 and CDX2 DBDs and DNA are similar to those known from earlier structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The core interactions between both HOXB13 and CDX2 DBDs and DNA are similar to those known from earlier structures (Hovde et al., 2001; Joshi et al., 2007; LaRonde-LeBlanc and Wolberger, 2003; Passner et al., 1999; Piper et al., 1999; Yin et al., 2017; Zhang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed by comparing with cited structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "aa3f0442-4b45-45e2-bfa2-c4585c056487",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C39",
+      "claim": "The TAAA sequence characteristic of the posterior homeodomains is recognized by a combination of a direct hydrogen bond to the A10 base opposite of the T, and an insertion of the N-terminal basic amino-acids to the narrow minor groove induced by the stretch of four As.",
+      "claim_type": "EXPLICIT",
+      "source": "The TAAA sequence characteristic of the posterior homeodomains is recognized by a combination of a direct hydrogen bond to the A10 base opposite of the T, and an insertion of the N-terminal basic amino-acids to the narrow minor groove induced by the stretch of four As.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "51f5d495-b443-4952-b907-16ef07d720cd",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C40",
+      "claim": "The overall protein structure in the four complexes is highly similar, showing only minor differences in the conformation of the N-termini.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall protein structure in the four complexes is highly similar, showing only minor differences in the conformation of the N-termini, due to the replacement of basic Arg-217 of HOXB13 with the negatively charged Asp-187 in CDX2 (Figure 2A, B, C, D; Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "442360e3-c9aa-4158-b35a-cffbe6ab18d4",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C41",
+      "claim": "The most remarkable difference between the complexes is in the conformation of DNA of the HOXB13-DNATCG complex at the position of the divergent bases.",
+      "claim_type": "EXPLICIT",
+      "source": "The most remarkable difference between the complexes is in the conformation of DNA of the HOXB13-DNATCG complex at the position of the divergent bases (Figure 2A,C; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "f3cefb87-5112-4699-be3a-99bebd073f3e",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C43",
+      "claim": "The DNATCG backbone is bent towards the major groove, facilitating contact with Arg-258 of the recognition helix with the DNA backbone.",
+      "claim_type": "EXPLICIT",
+      "source": "The DNATCG backbone is bent towards the major groove, facilitating contact with Arg-258 of the recognition helix with the DNA backbone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "5a9138c7-d348-4cbb-9a29-65e4abaabc44",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C44",
+      "claim": "The corresponding contact (Arg-228 to backbone) is also observed in both CDX2 structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding contact (Arg-228 to backbone) is also observed in both CDX2 structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "2b7eae6a-41e9-4135-947f-abe7345d67a4",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C45",
+      "claim": "The DNACAA backbone is bent towards the minor groove, leading to a contact with N-terminal Arg-217 and Lys-218.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the DNACAA backbone is bent towards the minor groove, leading to a contact with N-terminal Arg-217 and Lys-218 (Figure 2B; Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "8e247784-b6c8-4c0c-92f6-ee9a129bde39",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C46",
+      "claim": "Instead of contacting the DNA backbone in the DNACAA complex, Arg-258 assumes an alternative conformation in which it turns inside of the major groove, forming a water-mediated contact with Gln-265.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead of contacting the DNA backbone, Arg-258 assumes an alternative conformation in which it turns inside of the major groove, forming a water-mediated contact with Gln-265.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "43e1e820-d13a-4fb6-857f-aaa04d7ed90e",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C47",
+      "claim": "Gln-265 recognizes C6' via a direct hydrogen bond in the DNACAA complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The Gln-265, in turn, recognizes C6' via a direct hydrogen bond.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "246894cd-4bb9-4e38-99b2-212a7888eff7",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C48",
+      "claim": "The CAA sequence is recognized by a hydrophobic interaction between Ile-262 and the T11 methyl group.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the CAA sequence is recognized by a hydrophobic interaction between Ile-262 and the T11 methyl group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "51216add-57aa-4b18-9e78-ec944b88705e",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C49",
+      "claim": "In CDX2 complexes the DNA bend in CDX2-DNATCG is slightly smaller due to the replacement of Thr-261 with Lys-231 which does not allow the alternative conformation of Arg-228.",
+      "claim_type": "EXPLICIT",
+      "source": "In CDX2 complexes the DNA bend in CDX2-DNATCG is slightly smaller due to the replacement of Thr-261 with Lys-231 which does not allow the alternative conformation of Arg-228.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "f4ff3e1b-b9c6-4609-a592-c467e349b1d7",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C50",
+      "claim": "The other contacts in the CDX2-DNA complexes are very similar to those listed for HOXB13-DNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The other contacts in the CDX2-DNA complexes are very similar to those listed for HOXB13-DNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed by comparing the structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "8d8bad8a-40e6-4d3c-8833-b0026ca26630",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C51",
+      "claim": "48 different single and combined mutations in DBD of HOXB13 were created.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to understand the role of individual residues in binding of specific DNA we created 48 different single and combined mutations in DBD of HOXB13.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mutagenesis experiments performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "e2e9c866-f001-4fa7-8d97-63012308e42a",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C52",
+      "claim": "The replacement of Thr-261 either as a single mutation or in combination with any other amino-acids resulted in changing of HOXB13 specificity from Ctcg/Ccaa towards the sequence recognized by CDX2 (Gtcg/Gcaa).",
+      "claim_type": "EXPLICIT",
+      "source": "The replacement of Thr-261 either as a single mutation or in combination with any other amino-acids resulted in changing of HOXB13 specificity from Ctcg/Ccaa towards the sequence recognized by CDX2 (Gtcg/Gcaa; Figure 2E, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by mutagenesis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "f905b5bc-a388-4ca0-963a-e18ced7ab51e",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C53",
+      "claim": "No substitutions were identified that would lead to a specific and complete loss of binding to either the TCG or CAA sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "No substitutions were identified that would lead to a specific and complete loss of binding to either the TCG or CAA sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of mutagenesis experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "410a733a-be4e-4237-a51c-6cb81cef2970",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C54",
+      "claim": "Several mutations affecting backbone contacts between HOXB13 amino-acids and DNA 5' of the divergent trinucleotide moderately increased the relative affinity towards the CAA sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some weaker effects were detected; several mutations affecting backbone contacts between HOXB13 amino-acids and DNA 5' of the divergent trinucleotide moderately increased the relative affinity towards the CAA sequence (Figure 2E, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by mutagenesis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "70be856a-fbec-423b-b926-07bc3969d5a1",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C55",
+      "claim": "Amino-acids involved in the protein-DNA interface formation cannot fully explain the specificity preferences of HOXB13 and CDX2.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the mutation data together with the structures revealed that amino-acids involved in the protein-DNA interface formation cannot fully explain the specificity preferences of HOXB13 and CDX2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined structural and mutagenesis data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "11cde8c9-d6a7-4b4e-af1f-899459fbb23f",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C56",
+      "claim": "The lack of direct interactions between protein and DNA in the divergent region suggests that the specificity would be conferred in part by bridging water-molecules located at the protein-DNA interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of direct interactions between protein and DNA in this region instead suggests that the specificity would be conferred in part by bridging water-molecules located at the protein-DNA interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "1c33837c-9ba3-4de2-8028-1e3e71446bd3",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C57",
+      "claim": "The HOXB13-DNACAA structure (2.2 \u00c5) contains chains of water molecules that interact with both HOXB13 amino-acids and each of the DNA bases in the CAA sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The HOXB13-DNACAA structure (2.2 \u00c5) contains chains of water molecules that interact with both HOXB13 amino-acids and each of the DNA bases in the CAA sequence (Figure 4A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "0641a8b7-569b-4fae-9011-20390ec769f0",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C58",
+      "claim": "No water molecules are visible in the HOXB13-DNATCG structure, despite the 3.2 \u00c5 resolution that should allow identification of strongly bound water molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, no water molecules are visible in the HOXB13-DNATCG structure, despite the 3.2 \u00c5 resolution that should allow identification of strongly bound water molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "160a916e-0c55-4c61-a42c-d4cafaf38572",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C59",
+      "claim": "Only few water molecules were found in the CDX2-DNATCG complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, only few water molecules were found in the CDX2-DNATCG complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "5bc96906-1bda-4320-bd9d-e53ca6a5b76c",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C60",
+      "claim": "A relatively large solvent channel (6.4 \u00c5 in smallest diameter) exists between the \u03b13 helix of HOXB13 and DNATCG.",
+      "claim_type": "EXPLICIT",
+      "source": "A relatively large solvent channel (6.4 \u00c5 in smallest diameter) exists between the \u03b13 helix of HOXB13 and DNATCG (Figure 4D) while this space is occupied by well-defined water-net including Arg-258 in HOXB13-DNACAA structure (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "c22a4fbf-dd12-40dc-8c58-86d07957f004",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C61",
+      "claim": "The electron density in the solvent channel region of HOXB13-DNATCG structure is low (\u03c3 < 0.5), similar to that found in the surrounding solvent, indicating that the water-molecules in this region are highly mobile.",
+      "claim_type": "EXPLICIT",
+      "source": "The electron density in this region of HOXB13-DNATCG structure is low (\u03c3 < 0.5), similar to that found in the surrounding solvent, indicating that the water-molecules in this region are highly mobile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure electron density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "98490d77-240c-456b-91b8-95c9a396ee07",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C62",
+      "claim": "The optimal binding of HOXB13 to the CAA sequence can be rationalized by the visible interactions that contribute to the enthalpy of binding (\u2206H).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the optimal binding of HOXB13 to the CAA sequence can be rationalized by the visible interactions that contribute to the enthalpy of binding (\u2206H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "20c38d95-8329-4b07-8976-9ad73c6db568",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C63",
+      "claim": "No interactions can be identified that could explain the preference of HOXB13 to the TCG trinucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, no such interactions can be identified that could explain the preference of HOXB13 to the TCG trinucleotide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "b12bf928-02da-43fc-97c4-1a7a8bc0420b",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C64",
+      "claim": "The absence of ordered solvent molecules, and the lower resolution of the HOXB13-DNATCG structure is consistent with the possibility that the TCG sequence is preferred because it represents a relatively disordered, high entropy state.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of ordered solvent molecules, and the lower resolution of the HOXB13-DNATCG structure is consistent with the possibility that the TCG sequence is preferred because it represents a relatively disordered, high entropy state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "eca92b1b-4baa-4820-8612-eb56779a78ea",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C65",
+      "claim": "In complex of CDX2-DNATCG with high resolution (2.57 \u00c5) the water molecules were well visible but they did not form the corresponding water-chains supporting the idea of entropically driven binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In complex of CDX2-DNATCG with high resolution (2.57 \u00c5) the water molecules were well visible but they did not form the corresponding water-chains (Figure 4E,F) supporting the idea of entropically driven binding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "14c86141-7bc2-4da0-80e6-dffa9f6ded55",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C66",
+      "claim": "Molecular dynamics simulations and free energy perturbation calculations were performed to probe the behavior of water molecules in the protein-DNA interface for the two optimal sequences for HOXB13.",
+      "claim_type": "EXPLICIT",
+      "source": "We next performed molecular dynamics simulations and free energy perturbation calculations to probe the behavior of water molecules in the protein-DNA interface for the two optimal sequences for HOXB13.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "6c36ffe5-30f1-49a7-88a2-0f0bf49c03ef",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C67",
+      "claim": "The relative free energy estimates for the affinities of HOXB13 for the two DNA sequences obtained from the simulations indicate that both sequences are bound with similar affinities (\u0394\u0394G = - 0.1 kcal/mol).",
+      "claim_type": "EXPLICIT",
+      "source": "The relative free energy (Hansson et al., 1998) estimates for the affinities of HOXB13 for the two DNA sequences obtained from the simulations indicate that both sequences are bound with similar affinities (\u0394\u0394G = - 0.1 kcal/mol).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of molecular dynamics simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "2c40ccfb-f2c8-44d7-a6e8-60b8c946e72d",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C68",
+      "claim": "Analysis of the mobility of water molecules at the protein-DNA interface revealed that, while there is a similar number of water molecules in both systems, the waters at the HOXB13-DNATCG interface are more mobile.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the mobility of water molecules at the protein-DNA interface revealed that, while there is a similar number of water molecules in both systems, the waters at the HOXB13-DNATCG interface are more mobile (Figure 5\u2014figure supplement 1), consistent with a model where this complex has higher entropy than the HOXB13-DNACAA complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by molecular dynamics analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "a71feec2-c541-4420-ad61-9ffc7870371e",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C69",
+      "claim": "ITC directly measures the heat of binding (\u0394H) and Kd of the binding reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "ITC directly measures the heat of binding (\u0394H) and Kd of the binding reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ITC method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "552bf14e-a9b3-4d58-8fa5-0707883a43e5",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C70",
+      "claim": "Conversion of the Kd to \u0394G allows the inference of the entropy of binding (\u0394S) from the ITC data.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversion of the Kd to \u0394G then allows the inference of the entropy of binding (\u0394S) from the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how entropy is calculated from ITC data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "00fbf70a-1399-49b0-9616-e75985a1442a",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C71",
+      "claim": "The measured thermodynamic parameters for the TCG site were very similar to those reported previously.",
+      "claim_type": "EXPLICIT",
+      "source": "The measured thermodynamic parameters for the TCG site were very similar to those we reported previously (Yin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares current data with previous publication.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "022e5801-37a8-4259-8c39-5dee3ce7bdcc",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C72",
+      "claim": "Comparison of the thermodynamic parameters for the TCG and CAA sites revealed that the \u0394G values for both sequences were similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the parameters for the TCG and CAA sites revealed that consistent with SELEX (Jolma et al., 2013) and molecular modeling data, the \u0394G values for both sequences were similar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by ITC measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "ab4b7180-f6b6-4f8f-bf52-eb07ee4f99d5",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C73",
+      "claim": "The CAA site displayed much higher change in enthalpy, and larger loss of entropy compared to those of the TCG site.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as predicted, the CAA site displayed much higher change in enthalpy, and larger loss of entropy compared to those of the TCG site (Figure 5A,B, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by ITC measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "d0b18811-3143-44c2-93b8-679362ce9e94",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C74",
+      "claim": "HOXB13 binding to one optimal site, CAA, is driven by enthalpy, whereas strong binding to the other, TCG, is due to a lower loss of entropy.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that HOXB13 binding to one optimal site, CAA, is driven by enthalpy, whereas strong binding to the other, TCG, is due to a lower loss of entropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from ITC data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "d009c430-ef33-4ec1-9783-776dc7b67d21",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C75",
+      "claim": "ITC was used to determine the thermodynamic parameters for CDX2, MYF5, and BARHL2.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if the identified mechanism is general to other cases of multiple specificity, we used ITC to determine the thermodynamic parameters for CDX2 and two other TFs, the MYF family TF MYF5 and the homeodomain protein BARHL2, both of which can optimally bind to two distinct sequence populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "ab9301c4-77f4-4f8c-bf99-728e80031590",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C76",
+      "claim": "For CDX2, MYF5, and BARHL2, the \u0394G values for the two optimally bound sequences were similar, whereas the relative contributions of entropy and enthalpy to the binding were strikingly different.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the data confirmed that in both cases, the \u0394G values for the two optimally bound sequences were similar, whereas the relative contributions of entropy and enthalpy to the binding were strikingly different (Figure 5C\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by ITC measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "398595a6-df24-4796-9704-b38b7cdce277",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C77",
+      "claim": "The ability of some TFs to bind to two distinct sequences with high affinity can be caused by the presence of both an enthalpic and an entropic optima.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the ability of some TFs to bind to two distinct sequences with high affinity can be caused by the presence of both an enthalpic and an entropic optima.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion from the thermodynamic measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "59e14e38-2065-4ee5-8042-79e19b6c7cca",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C78",
+      "claim": "The conformational differences between the HOXB13 proteins in the two structures were minor.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the conformational differences between the HOXB13 proteins in the two structures were minor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "691f195d-f71f-4100-819d-5b93bf8e6d18",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C79",
+      "claim": "The two CDX2-DNA structures also displayed very similar overall conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the two CDX2-DNA structures also displayed very similar overall conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "04570c51-d1dd-49cc-85f4-980f201eaa96",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C80",
+      "claim": "The shape and charge-distribution of the optimally bound DNA sequences were not similar to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the shape and charge-distribution of the optimally bound DNA sequences were not similar to each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "4a861ba6-68ef-4db1-a448-87e8ad28d9b6",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C81",
+      "claim": "Thermodynamic analyses of HOXB13, CDX2, BARHL2 and MYF5 revealed that the two optimal states were bound because of their distinct effects on enthalpy and entropy, principally caused by differential stability of the water network at the protein-DNA interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, thermodynamic analyses of HOXB13, CDX2, BARHL2 and MYF5 revealed that the two optimal states were bound because of their distinct effects on enthalpy and entropy, principally caused by differential stability of the water network at the protein-DNA interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion from the combined structural and thermodynamic analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "b776c103-ca4b-4fbf-9a30-96eb3e305cfe",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C82",
+      "claim": "No mutations in HOXB13 were found that would specifically abolish binding to one of the DNA sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We also failed to find mutations in HOXB13 that would specifically abolish binding to one of the DNA sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of mutagenesis experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "30d7c919-4968-41a5-90c0-0e9c8ee1a475",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C83",
+      "claim": "This finding is consistent with the thermodynamic model presented, as both TCG and CAA are bound by the same conformation of the HOXB13 protein, using the same contacting amino-acids.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is consistent with the thermodynamic model presented, as both TCG and CAA are bound by the same conformation of the HOXB13 protein, using the same contacting amino-acids (even when the contacts can occur via water or be direct).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural and mutagenesis data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "fae0ce83-2762-431e-bc16-9f0d6157e511",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C84",
+      "claim": "The ability of one molecular shape (HOXB13) to bind to two distinct molecular shapes (CAA and TCG) with similar affinity allows other mechanisms to selectively modulate target sites in the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of one molecular shape (HOXB13) to bind to two distinct molecular shapes (CAA and TCG) with similar affinity allows other mechanisms to selectively modulate target sites in the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about biological implications.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "c4abee36-be77-41b9-9aa9-67a9a27840bf",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C85",
+      "claim": "One of the HOXB13 optima, TCG, is affected by DNA methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, one of the HOXB13 optima, TCG, is affected by DNA methylation (Yin et al., 2017; Zuo et al., 2017), and methylation of this site further increases HOXB13 affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "9357645b-eedc-4e57-a210-d212f5e5d39a",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C86",
+      "claim": "Methylation of the TCG site further increases HOXB13 affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, one of the HOXB13 optima, TCG, is affected by DNA methylation (Yin et al., 2017; Zuo et al., 2017), and methylation of this site further increases HOXB13 affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "9488c8fc-85d6-4c11-a4bd-08e91f41eb3c",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C87",
+      "claim": "The CAA site does not contain a CpG dinucleotide, and thus cannot be inheritably methylated.",
+      "claim_type": "EXPLICIT",
+      "source": "The CAA site does not contain a CpG dinucleotide, and thus cannot be inheritably methylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the sequence composition.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "240f884d-928d-4ea7-b796-84553df28d61",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C88",
+      "claim": "The ability of HOXB13 to bind to two distinct sites with similar affinity allows evolution of two types of regulatory sequences, those that are directly and positively affected by CpG methylation, and those that are not.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the ability of HOXB13 to bind to two distinct sites with similar affinity allows evolution of two types of regulatory sequences, those that are directly and positively affected by CpG methylation, and those that are not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about evolutionary implications.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "2d0bc8db-dfa6-445d-9c00-63f770010415",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C89",
+      "claim": "The mechanism by which TFs bind to two optimal DNA sequences is fundamental, and applies to all macromolecular interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism by which TFs bind to two optimal DNA sequences is fundamental, and applies to all macromolecular interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative generalization.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "866eafba-5fcf-4c2f-a3b2-b7b2c2860fdb",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C90",
+      "claim": "Enthalpy and entropy of binding vary partially independently as a function of the shape and charge distribution of the interacting molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "In principle, enthalpy and entropy of binding vary partially independently as a function of the shape and charge distribution of the interacting molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on thermodynamic principles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "0ecadb33-390b-40a8-aede-3f0bfc989a81",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C91",
+      "claim": "Different sequences are likely to be optimal with respect to enthalpy and entropy, in such a way that one optimal sequence is close to the optimal enthalpy state, and another is close to the optimal entropy state.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, different sequences are likely to be optimal with respect to enthalpy and entropy, in such a way that one optimal sequence is close to the optimal enthalpy state, and another is close to the optimal entropy state (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from thermodynamic principles and the data.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "c952322c-8ca0-48b0-90e0-c1b83dc6e2c0",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C92",
+      "claim": "The observed effect that commonly results in at least two distinct \u0394G minima may have been missed before because it is generally strongest when there are solvent molecules at the interacting surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed effect that commonly results in at least two distinct \u0394G minima may have been missed before because it is generally strongest when there are solvent molecules at the interacting surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about why this phenomenon hasn't been widely reported.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "ae9c7e73-5a44-4f25-b202-2a4aa34d4d67",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C93",
+      "claim": "In macromolecular interactions that are driven by direct contact between residues, entropy often has lower impact on binding than enthalpy, and thus one of the optima is at a higher \u0394G than the other.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in macromolecular interactions that are driven by direct contact between residues, entropy often has lower impact on binding than enthalpy, and thus one of the optima is at a higher \u0394G than the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from thermodynamic principles.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "0fa48abf-5a35-4705-be96-6d7732652095",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C94",
+      "claim": "Another reason for overlooking this mechanism could have been the fact that multiple local optima can also exist via other mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Another reason for overlooking this mechanism could have been the fact that multiple local optima can also exist via other mechanisms (see for example [Klebe, 2015]), and measurements that allow inference of entropy and enthalpy separately are not commonly performed in studies of macromolecular interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about why this phenomenon hasn't been widely reported.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "1c5ea0d1-e3b3-4503-84a7-a58376619ad2",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C95",
+      "claim": "Simple additive binding models such as position weight matrices (PWMs) can hide the effect of multiple optima, as they can only describe a single optimal state.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, simple additive binding models such as position weight matrices (PWMs) can hide the effect, as they can only describe a single optimal state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the properties of PWM models.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "6a46876d-6ac8-489a-8b0e-d7f9ad985915",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C96",
+      "claim": "The ability of TFs to bind to distinct sequences could be widespread.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results and the underlying theory suggest that the ability of TFs to bind to distinct sequences could thus be widespread, and that the importance of the optimal states in determining TF-DNA binding preferences should be reinvestigated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "e932ed41-07eb-46e2-a7cb-ae941ce3da67",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C97",
+      "claim": "Models for TF binding that are used to identify TF sites should be adjusted to include features that allow two or more optima.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, models for TF binding that are used to identify TF sites should also be adjusted to include features that allow two or more optima.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "13f10631-f69f-40eb-a3cf-92962b8401ed",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C98",
+      "claim": "The presence of two optima is likely to also explain the molecular mechanisms behind other types of genetic epistasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in addition to explaining the observed epistasis in protein-DNA interactions, the presence of two optima is likely to also explain the molecular mechanisms behind other types of genetic epistasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about broader implications.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "18be86c0-8fdb-4bdd-a7ee-e7e582f2e30a",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C99",
+      "claim": "The atomic coordinates and diffraction data have been deposited to Protein Data Bank with the accession codes 5EDN and 5EEA, for HOXB13-DNATCG and HOXB13-DNACAA, respectively and 6ES3 and 6ES2 for CDX2-DNATCG and CDX2-DNACAA, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The atomic coordinates and diffraction data have been deposited to Protein Data Bank with the accession codes 5EDN and 5EEA, for HOXB13-DNATCG and HOXB13-DNACAA, respectively and 6ES3 and 6ES2 for CDX2-DNATCG and CDX2-DNACAA, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides data availability information.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "e6da5193-c55d-4169-acc4-cc20819997bc",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "claim_id": "C100",
+      "claim": "All sequence reads are deposited to the European Nucleotide Archive with the study accession number: PRJEB20652.",
+      "claim_type": "EXPLICIT",
+      "source": "All sequence reads are deposited to the European Nucleotide Archive with the study accession number: PRJEB20652",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides data availability information.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "22c9ea08-9233-45f3-9659-7bcb0b52a24e",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SELEX analysis demonstrates that MYF6, BARHL2, CDX1, and HOXB13 each bind to more than one locally optimal DNA sequence, with sequences between optima showing lower affinity. A single PWM model cannot adequately describe the binding specificity of these transcription factors, requiring multiple PWM models to capture their binding preferences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 are well-supported by SELEX data presented in Figure 1A-D. The enrichment patterns clearly show multiple local optima for each TF, with intermediate sequences displaying lower counts. The conclusion that multiple PWM models are required follows logically from the observed data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "7cc15cd0-7d5c-4f03-8ec7-78778a88b298",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mutations in HOXB13 binding sites display extreme epistatic effects. The triple mutation converting TCGTAAAA to CAATAAAA shows >400-fold less effect than predicted from individual mutations, with the resulting CAATAAAA site binding with nearly the same affinity as the original TCGTAAAA sequence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 are supported by mutation analysis data shown in Figure 1E,F. The epistasis is quantitatively demonstrated, showing that the combined effect of three mutations is dramatically smaller than predicted from individual effects, providing strong evidence for non-additive binding behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "0dd2c0ee-be34-4b96-b8da-9ef390911a1a",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Crystal structures of HOXB13 and CDX2 DNA-binding domains bound to DNATCG and DNACAA were solved at resolutions of 3.2/2.2 \u00c5 and 2.57/2.95 \u00c5 respectively. The structures show high similarity to previously known HOX-DNA complexes, with both proteins using similar core recognition mechanisms involving the \u03b13 helix in the major groove and N-terminal tail in the minor groove.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C31-C35, C38-C40 are well-supported by crystallographic data with appropriate resolutions and proper structural validation (Table 1). The structures were solved using standard molecular replacement methods and show expected features consistent with the HOX protein family. Structural comparisons with known structures validate the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "4726480f-2926-403c-a130-5e09a733e8ab",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The major structural difference between HOXB13-DNATCG and HOXB13-DNACAA complexes is in DNA conformation at the divergent bases. DNATCG bends toward the major groove facilitating Arg-258 backbone contact, while DNACAA bends toward the minor groove enabling N-terminal contacts. In DNACAA, Arg-258 adopts an alternative conformation forming water-mediated contacts with Gln-265, which directly recognizes C6', and Ile-262 forms hydrophobic interactions with the T11 methyl group.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41, C43-C50 are supported by detailed structural observations shown in Figures 2 and 3. The electron density maps (Figure 3A,B) clearly show the different DNA conformations and protein-DNA contacts. The structural differences are quantified in Figure 2\u2014figure supplement 1 showing helicoidal parameters. CDX2 structures show similar patterns with minor variations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "d73ff349-ce06-40fb-a707-af6bc7d272cc",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mutagenesis of 48 positions in HOXB13 revealed that Thr-261 replacement changes specificity from HOXB13-type (Ctcg/Ccaa) to CDX2-type (Gtcg/Gcaa). No mutations specifically abolished binding to either TCG or CAA sequences, though some mutations affecting backbone contacts moderately increased relative affinity for CAA. The amino acids at the protein-DNA interface cannot fully explain the specificity preferences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 are supported by systematic mutagenesis data shown in Figure 2E and supplementary figures. The finding that no mutations specifically abolish binding to one site is particularly important and well-documented. The conclusion that interface residues alone cannot explain specificity (C55) is a reasonable inference from the mutagenesis results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "d3e73372-acbd-4b93-a023-67aad28f21ca",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Water molecules play distinct roles in the two binding modes. HOXB13-DNACAA (2.2 \u00c5) shows extensive water chains interacting with both protein and DNA bases in the CAA sequence, while HOXB13-DNATCG (3.2 \u00c5) shows no visible water molecules despite sufficient resolution. A 6.4 \u00c5 solvent channel exists in HOXB13-DNATCG with low electron density (\u03c3<0.5), indicating highly mobile water. This suggests CAA binding is driven by enthalpic interactions while TCG binding represents a high-entropy state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C65 are well-supported by crystallographic observations shown in Figure 4. The presence/absence of ordered water molecules is clearly documented in the electron density maps. The resolution of HOXB13-DNATCG (3.2 \u00c5) is indeed sufficient to observe strongly bound waters, making their absence significant. The interpretation linking water structure to thermodynamics (C62, C64) is reasonable though inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "a79b92c6-4588-4a3b-af1d-d72959d7d3bf",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Molecular dynamics simulations with free energy perturbation calculations show that HOXB13 binds both DNA sequences with similar affinities (\u0394\u0394G = -0.1 kcal/mol). Analysis of water mobility reveals that while both systems have similar numbers of water molecules, waters at the HOXB13-DNATCG interface are more mobile, consistent with higher entropy in this complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 are supported by computational analysis using established MD methods (CHARMM36, appropriate simulation times). The free energy calculations use proper methodology (Bennett Acceptance Ratio). The water mobility analysis (Figure 5\u2014figure supplement 1) provides quantitative support for differential entropy. The computational results are consistent with experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "15b3ca2c-17dd-403b-895e-16267b4845df",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ITC measurements show that HOXB13 binds both CAATAAA and TCGTAAA with similar \u0394G values. However, CAA binding is driven by high enthalpy change (\u0394H) with large entropy loss (\u0394S), while TCG binding achieves similar affinity through smaller entropy loss despite lower enthalpy contribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C72-C74 are strongly supported by direct ITC measurements shown in Figure 5A,B. The thermodynamic parameters are quantitatively determined with appropriate experimental design (triplicate measurements, proper controls). The data clearly demonstrate the enthalpy-entropy compensation mechanism for HOXB13 binding to the two sequences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "a8b99264-0e6e-4868-92e9-6d15612eebd7",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ITC analysis of CDX2, MYF5, and BARHL2 reveals that each TF binds its two optimal sequences with similar \u0394G but strikingly different contributions from enthalpy and entropy. This demonstrates that the ability of TFs to bind two distinct sequences with high affinity is caused by the presence of both enthalpic and entropic optima, and this mechanism applies to multiple TF families.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C75-C77 are well-supported by ITC data for four different TFs (Figure 5). The consistent pattern across multiple, structurally distinct TF families (homeodomain proteins and bHLH factors) strengthens the conclusion that this is a general mechanism. The thermodynamic measurements are properly conducted with appropriate replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "a9ee6e23-3a67-4b2d-a8a6-109094daac98",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The protein conformations in HOXB13-DNATCG and HOXB13-DNACAA complexes are highly similar, as are the two CDX2-DNA structures. The DNA sequences differ in shape and charge distribution. Thermodynamic analysis reveals that the two optimal states are bound due to distinct effects on enthalpy and entropy, principally caused by differential stability of the water network at the protein-DNA interface. No mutations specifically abolish binding to one site, consistent with both sequences being bound by the same protein conformation using the same contacting residues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C83 integrate structural and thermodynamic data to present a coherent mechanistic model. The structural similarity of protein conformations (C78-C79) is demonstrated by superposition (Figure 2A,C). The thermodynamic basis (C81) is supported by ITC data. The mutagenesis results (C82) are consistent with the model (C83). This represents a well-supported synthesis of multiple lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "3c122d1e-0ab7-48e2-8196-1e7121e158b2",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The TCG site contains a CpG dinucleotide that is affected by DNA methylation, which further increases HOXB13 affinity. The CAA site lacks a CpG dinucleotide and cannot be inheritably methylated. This allows HOXB13 to regulate two types of sequences: those positively affected by CpG methylation and those that are not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86 are supported by cited literature (Yin et al., 2017; Zuo et al., 2017). Claim C87 is a straightforward inference from sequence composition. Claim C88 is a reasonable speculation about biological implications based on the established facts, though it represents an evolutionary hypothesis rather than directly tested mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "6a5f0624-0cab-4447-8aab-6abeb748f2b3",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The thermodynamic mechanism whereby TFs bind to two distinct sequences representing enthalpy and entropy optima is proposed to be fundamental and applicable to all macromolecular interactions. Since enthalpy and entropy vary partially independently as functions of molecular shape and charge distribution, different sequences are likely optimal for each parameter, leading to multiple \u0394G optima.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C1, C6, C22, C89-C91 represent broad generalizations beyond the specific systems studied. While the thermodynamic principles (C90) are sound and the mechanism is demonstrated for four TFs, the claim that this applies to \"all macromolecular interactions\" (C89) is speculative. The authors acknowledge this is likely but provide no direct evidence for systems beyond TF-DNA interactions. More examples from diverse molecular systems would be needed to fully support this generalization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "12228a2f-f34a-4b69-b60e-83522ddb936a",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The dual optima phenomenon may have been previously overlooked because it is strongest with solvent molecules at interfaces, entropy has lower impact in direct-contact interactions, multiple optima can arise through other mechanisms, and PWM models can only describe single optimal states. The ability of TFs to bind distinct sequences may be widespread, and TF binding models should be adjusted to allow multiple optima. This mechanism may also explain other types of genetic epistasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C92-C98 are largely speculative discussions about why this phenomenon hasn't been widely reported and its potential broader implications. While the reasoning is logical (C95 about PWM limitations is particularly sound), these represent hypotheses about the field and future directions rather than tested conclusions. Claims C96-C98 about widespread occurrence and applications to other epistasis types require additional experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "f5034920-620f-46c6-86c2-cb81a6001ffe",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background on TF-DNA recognition mechanisms and binding models. Three recognition mechanisms exist: direct readout, indirect readout, and water-mediated interactions. Direct hydrogen bonds contribute to enthalpy while water-mediated bonds are weaker due to entropy loss. Enthalpy-entropy compensation leads to binding promiscuity. Many TFs recognize single optimal sites describable by PWM models, but some bind multiple distinct sequences with epistatic mutation effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C18 represent well-established background knowledge supported by extensive literature citations. These provide the conceptual framework for the study and are appropriately referenced. This is standard background material that contextualizes the novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "84922d51-850c-4b8b-95d3-1946741db746",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "HOXB13 optimal sequences are CCAATAAA and CTCGTAAA (differing by three base pairs), while CDX2 binds similar sequences beginning with G instead of C. HOXB13 and CDX2 are related proteins showing 43% amino acid identity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20, C30 describe the specific sequences and proteins studied. These are supported by SELEX data and sequence analysis shown in supplementary figures. The sequence identity calculation (C30) is straightforward and verifiable from the alignment data provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "ae264bdf-343a-45bb-a448-084c78bfc2f8",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The prostate cancer-associated Gly-84 mutation was not included in the HOXB13 construct. Two other cancer-associated mutations (R229G and G216C) were predicted to destabilize the protein or its DNA interaction based on structural analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 accurately describe the construct design and provide structural interpretation of cancer mutations. The predictions about mutation effects (C37) are reasonable inferences from the structure, though they are computational predictions rather than experimental validations. The connection to cancer biology adds translational relevance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "f4a3ab94-92c0-43e3-9aea-f09c6502488b",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "ITC methodology and validation. ITC directly measures \u0394H and Kd, allowing calculation of \u0394S from \u0394G. The measured parameters for HOXB13-TCG were consistent with previously reported values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 describe standard ITC methodology and validate the current measurements against previous work. The consistency with prior results (C71, citing Yin et al., 2017) provides important validation of the experimental approach and data quality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "3350d682-d654-482d-a9b7-9f5126036862",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The ability of HOXB13 to bind two distinct DNA shapes with similar affinity allows other mechanisms to selectively modulate target sites in the genome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C84 is a speculative statement about biological implications. While logically reasonable given the demonstrated dual specificity, this represents a hypothesis about regulatory mechanisms rather than a directly tested conclusion. Additional experiments examining genomic binding patterns and regulatory outcomes would be needed to support this claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    },
+    {
+      "id": "80ac442a-a280-4944-8d43-5ca6584d0724",
+      "content_id": "85fee9fa-7f07-41ff-ba46-4c6454c6292f",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Data availability: Crystal structures deposited in PDB (5EDN, 5EEA, 6ES3, 6ES2) and sequencing data deposited in ENA (PRJEB20652).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C100 provide data availability information with specific accession codes. This is standard practice and the accession numbers can be verified in the respective databases. Proper data deposition is essential for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:22.425827Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cfb30534-641b-4b9c-836a-45bcdb106921",
+      "result_id": "22c9ea08-9233-45f3-9659-7bcb0b52a24e"
+    },
+    {
+      "claim_id": "ae31e540-4049-416d-9302-7a06551cb782",
+      "result_id": "22c9ea08-9233-45f3-9659-7bcb0b52a24e"
+    },
+    {
+      "claim_id": "af8913d8-4aea-4392-b2f5-2aea58d8a574",
+      "result_id": "22c9ea08-9233-45f3-9659-7bcb0b52a24e"
+    },
+    {
+      "claim_id": "81abdcd6-67c9-4094-bf1e-4690338025f4",
+      "result_id": "22c9ea08-9233-45f3-9659-7bcb0b52a24e"
+    },
+    {
+      "claim_id": "210d41e2-16ff-48e9-a62b-9e1ff0093122",
+      "result_id": "7cc15cd0-7d5c-4f03-8ec7-78778a88b298"
+    },
+    {
+      "claim_id": "3bf92e34-1468-49b3-aa1b-c1e4c37ceee9",
+      "result_id": "7cc15cd0-7d5c-4f03-8ec7-78778a88b298"
+    },
+    {
+      "claim_id": "01748367-7f7d-4055-b8a1-8467969d0488",
+      "result_id": "7cc15cd0-7d5c-4f03-8ec7-78778a88b298"
+    },
+    {
+      "claim_id": "5aecedda-6155-4da8-b027-978e84315436",
+      "result_id": "0dd2c0ee-be34-4b96-b8da-9ef390911a1a"
+    },
+    {
+      "claim_id": "86380357-a555-4171-9d34-96d3a1299b12",
+      "result_id": "0dd2c0ee-be34-4b96-b8da-9ef390911a1a"
+    },
+    {
+      "claim_id": "149c6bc2-61dc-404e-9c7a-4ecb73169c42",
+      "result_id": "0dd2c0ee-be34-4b96-b8da-9ef390911a1a"
+    },
+    {
+      "claim_id": "9d7230cb-6423-4c1b-a704-04e0bcd8a8b6",
+      "result_id": "0dd2c0ee-be34-4b96-b8da-9ef390911a1a"
+    },
+    {
+      "claim_id": "7457b00f-240e-4d88-8bfc-6c83fd045902",
+      "result_id": "0dd2c0ee-be34-4b96-b8da-9ef390911a1a"
+    },
+    {
+      "claim_id": "51ada58e-75b1-4525-a10d-356a93961878",
+      "result_id": "0dd2c0ee-be34-4b96-b8da-9ef390911a1a"
+    },
+    {
+      "claim_id": "f125298a-51be-4287-ac2a-428121f710f3",
+      "result_id": "0dd2c0ee-be34-4b96-b8da-9ef390911a1a"
+    },
+    {
+      "claim_id": "aa3f0442-4b45-45e2-bfa2-c4585c056487",
+      "result_id": "0dd2c0ee-be34-4b96-b8da-9ef390911a1a"
+    },
+    {
+      "claim_id": "51f5d495-b443-4952-b907-16ef07d720cd",
+      "result_id": "0dd2c0ee-be34-4b96-b8da-9ef390911a1a"
+    },
+    {
+      "claim_id": "442360e3-c9aa-4158-b35a-cffbe6ab18d4",
+      "result_id": "4726480f-2926-403c-a130-5e09a733e8ab"
+    },
+    {
+      "claim_id": "f3cefb87-5112-4699-be3a-99bebd073f3e",
+      "result_id": "4726480f-2926-403c-a130-5e09a733e8ab"
+    },
+    {
+      "claim_id": "5a9138c7-d348-4cbb-9a29-65e4abaabc44",
+      "result_id": "4726480f-2926-403c-a130-5e09a733e8ab"
+    },
+    {
+      "claim_id": "2b7eae6a-41e9-4135-947f-abe7345d67a4",
+      "result_id": "4726480f-2926-403c-a130-5e09a733e8ab"
+    },
+    {
+      "claim_id": "8e247784-b6c8-4c0c-92f6-ee9a129bde39",
+      "result_id": "4726480f-2926-403c-a130-5e09a733e8ab"
+    },
+    {
+      "claim_id": "43e1e820-d13a-4fb6-857f-aaa04d7ed90e",
+      "result_id": "4726480f-2926-403c-a130-5e09a733e8ab"
+    },
+    {
+      "claim_id": "246894cd-4bb9-4e38-99b2-212a7888eff7",
+      "result_id": "4726480f-2926-403c-a130-5e09a733e8ab"
+    },
+    {
+      "claim_id": "51216add-57aa-4b18-9e78-ec944b88705e",
+      "result_id": "4726480f-2926-403c-a130-5e09a733e8ab"
+    },
+    {
+      "claim_id": "f4ff3e1b-b9c6-4609-a592-c467e349b1d7",
+      "result_id": "4726480f-2926-403c-a130-5e09a733e8ab"
+    },
+    {
+      "claim_id": "8d8bad8a-40e6-4d3c-8833-b0026ca26630",
+      "result_id": "d73ff349-ce06-40fb-a707-af6bc7d272cc"
+    },
+    {
+      "claim_id": "e2e9c866-f001-4fa7-8d97-63012308e42a",
+      "result_id": "d73ff349-ce06-40fb-a707-af6bc7d272cc"
+    },
+    {
+      "claim_id": "f905b5bc-a388-4ca0-963a-e18ced7ab51e",
+      "result_id": "d73ff349-ce06-40fb-a707-af6bc7d272cc"
+    },
+    {
+      "claim_id": "410a733a-be4e-4237-a51c-6cb81cef2970",
+      "result_id": "d73ff349-ce06-40fb-a707-af6bc7d272cc"
+    },
+    {
+      "claim_id": "70be856a-fbec-423b-b926-07bc3969d5a1",
+      "result_id": "d73ff349-ce06-40fb-a707-af6bc7d272cc"
+    },
+    {
+      "claim_id": "11cde8c9-d6a7-4b4e-af1f-899459fbb23f",
+      "result_id": "d3e73372-acbd-4b93-a023-67aad28f21ca"
+    },
+    {
+      "claim_id": "1c33837c-9ba3-4de2-8028-1e3e71446bd3",
+      "result_id": "d3e73372-acbd-4b93-a023-67aad28f21ca"
+    },
+    {
+      "claim_id": "0641a8b7-569b-4fae-9011-20390ec769f0",
+      "result_id": "d3e73372-acbd-4b93-a023-67aad28f21ca"
+    },
+    {
+      "claim_id": "160a916e-0c55-4c61-a42c-d4cafaf38572",
+      "result_id": "d3e73372-acbd-4b93-a023-67aad28f21ca"
+    },
+    {
+      "claim_id": "5bc96906-1bda-4320-bd9d-e53ca6a5b76c",
+      "result_id": "d3e73372-acbd-4b93-a023-67aad28f21ca"
+    },
+    {
+      "claim_id": "c22a4fbf-dd12-40dc-8c58-86d07957f004",
+      "result_id": "d3e73372-acbd-4b93-a023-67aad28f21ca"
+    },
+    {
+      "claim_id": "98490d77-240c-456b-91b8-95c9a396ee07",
+      "result_id": "d3e73372-acbd-4b93-a023-67aad28f21ca"
+    },
+    {
+      "claim_id": "20c38d95-8329-4b07-8976-9ad73c6db568",
+      "result_id": "d3e73372-acbd-4b93-a023-67aad28f21ca"
+    },
+    {
+      "claim_id": "b12bf928-02da-43fc-97c4-1a7a8bc0420b",
+      "result_id": "d3e73372-acbd-4b93-a023-67aad28f21ca"
+    },
+    {
+      "claim_id": "eca92b1b-4baa-4820-8612-eb56779a78ea",
+      "result_id": "d3e73372-acbd-4b93-a023-67aad28f21ca"
+    },
+    {
+      "claim_id": "14c86141-7bc2-4da0-80e6-dffa9f6ded55",
+      "result_id": "a79b92c6-4588-4a3b-af1d-d72959d7d3bf"
+    },
+    {
+      "claim_id": "6c36ffe5-30f1-49a7-88a2-0f0bf49c03ef",
+      "result_id": "a79b92c6-4588-4a3b-af1d-d72959d7d3bf"
+    },
+    {
+      "claim_id": "2c40ccfb-f2c8-44d7-a6e8-60b8c946e72d",
+      "result_id": "a79b92c6-4588-4a3b-af1d-d72959d7d3bf"
+    },
+    {
+      "claim_id": "e1152c0e-eb10-4e2f-b904-e408314baccc",
+      "result_id": "15b3ca2c-17dd-403b-895e-16267b4845df"
+    },
+    {
+      "claim_id": "edd59a09-9556-43c7-8d38-3905015dc80d",
+      "result_id": "15b3ca2c-17dd-403b-895e-16267b4845df"
+    },
+    {
+      "claim_id": "8adc3cd6-f0ab-4718-a51d-829bc02a5970",
+      "result_id": "15b3ca2c-17dd-403b-895e-16267b4845df"
+    },
+    {
+      "claim_id": "022e5801-37a8-4259-8c39-5dee3ce7bdcc",
+      "result_id": "15b3ca2c-17dd-403b-895e-16267b4845df"
+    },
+    {
+      "claim_id": "ab4b7180-f6b6-4f8f-bf52-eb07ee4f99d5",
+      "result_id": "15b3ca2c-17dd-403b-895e-16267b4845df"
+    },
+    {
+      "claim_id": "d0b18811-3143-44c2-93b8-679362ce9e94",
+      "result_id": "15b3ca2c-17dd-403b-895e-16267b4845df"
+    },
+    {
+      "claim_id": "d009c430-ef33-4ec1-9783-776dc7b67d21",
+      "result_id": "a8b99264-0e6e-4868-92e9-6d15612eebd7"
+    },
+    {
+      "claim_id": "ab9301c4-77f4-4f8c-bf99-728e80031590",
+      "result_id": "a8b99264-0e6e-4868-92e9-6d15612eebd7"
+    },
+    {
+      "claim_id": "398595a6-df24-4796-9704-b38b7cdce277",
+      "result_id": "a8b99264-0e6e-4868-92e9-6d15612eebd7"
+    },
+    {
+      "claim_id": "a097fe03-cb69-4b9e-b43a-a3a2ebd0fb39",
+      "result_id": "a8b99264-0e6e-4868-92e9-6d15612eebd7"
+    },
+    {
+      "claim_id": "59e14e38-2065-4ee5-8042-79e19b6c7cca",
+      "result_id": "a9ee6e23-3a67-4b2d-a8a6-109094daac98"
+    },
+    {
+      "claim_id": "691f195d-f71f-4100-819d-5b93bf8e6d18",
+      "result_id": "a9ee6e23-3a67-4b2d-a8a6-109094daac98"
+    },
+    {
+      "claim_id": "04570c51-d1dd-49cc-85f4-980f201eaa96",
+      "result_id": "a9ee6e23-3a67-4b2d-a8a6-109094daac98"
+    },
+    {
+      "claim_id": "4a861ba6-68ef-4db1-a448-87e8ad28d9b6",
+      "result_id": "a9ee6e23-3a67-4b2d-a8a6-109094daac98"
+    },
+    {
+      "claim_id": "b776c103-ca4b-4fbf-9a30-96eb3e305cfe",
+      "result_id": "a9ee6e23-3a67-4b2d-a8a6-109094daac98"
+    },
+    {
+      "claim_id": "30d7c919-4968-41a5-90c0-0e9c8ee1a475",
+      "result_id": "a9ee6e23-3a67-4b2d-a8a6-109094daac98"
+    },
+    {
+      "claim_id": "c4abee36-be77-41b9-9aa9-67a9a27840bf",
+      "result_id": "3c122d1e-0ab7-48e2-8196-1e7121e158b2"
+    },
+    {
+      "claim_id": "9357645b-eedc-4e57-a210-d212f5e5d39a",
+      "result_id": "3c122d1e-0ab7-48e2-8196-1e7121e158b2"
+    },
+    {
+      "claim_id": "9488c8fc-85d6-4c11-a4bd-08e91f41eb3c",
+      "result_id": "3c122d1e-0ab7-48e2-8196-1e7121e158b2"
+    },
+    {
+      "claim_id": "240f884d-928d-4ea7-b796-84553df28d61",
+      "result_id": "3c122d1e-0ab7-48e2-8196-1e7121e158b2"
+    },
+    {
+      "claim_id": "e349b97c-5f07-415e-842e-358e1070d4fd",
+      "result_id": "6a5f0624-0cab-4447-8aab-6abeb748f2b3"
+    },
+    {
+      "claim_id": "3f3ffa87-834f-46f7-8c3f-363613b30826",
+      "result_id": "6a5f0624-0cab-4447-8aab-6abeb748f2b3"
+    },
+    {
+      "claim_id": "0e2f4cc5-8c1f-41a9-8b7e-f9c5d301d7bf",
+      "result_id": "6a5f0624-0cab-4447-8aab-6abeb748f2b3"
+    },
+    {
+      "claim_id": "2d0bc8db-dfa6-445d-9c00-63f770010415",
+      "result_id": "6a5f0624-0cab-4447-8aab-6abeb748f2b3"
+    },
+    {
+      "claim_id": "866eafba-5fcf-4c2f-a3b2-b7b2c2860fdb",
+      "result_id": "6a5f0624-0cab-4447-8aab-6abeb748f2b3"
+    },
+    {
+      "claim_id": "0ecadb33-390b-40a8-aede-3f0bfc989a81",
+      "result_id": "6a5f0624-0cab-4447-8aab-6abeb748f2b3"
+    },
+    {
+      "claim_id": "c952322c-8ca0-48b0-90e0-c1b83dc6e2c0",
+      "result_id": "12228a2f-f34a-4b69-b60e-83522ddb936a"
+    },
+    {
+      "claim_id": "ae9c7e73-5a44-4f25-b202-2a4aa34d4d67",
+      "result_id": "12228a2f-f34a-4b69-b60e-83522ddb936a"
+    },
+    {
+      "claim_id": "0fa48abf-5a35-4705-be96-6d7732652095",
+      "result_id": "12228a2f-f34a-4b69-b60e-83522ddb936a"
+    },
+    {
+      "claim_id": "1c5ea0d1-e3b3-4503-84a7-a58376619ad2",
+      "result_id": "12228a2f-f34a-4b69-b60e-83522ddb936a"
+    },
+    {
+      "claim_id": "6a46876d-6ac8-489a-8b0e-d7f9ad985915",
+      "result_id": "12228a2f-f34a-4b69-b60e-83522ddb936a"
+    },
+    {
+      "claim_id": "e932ed41-07eb-46e2-a7cb-ae941ce3da67",
+      "result_id": "12228a2f-f34a-4b69-b60e-83522ddb936a"
+    },
+    {
+      "claim_id": "13f10631-f69f-40eb-a3cf-92962b8401ed",
+      "result_id": "12228a2f-f34a-4b69-b60e-83522ddb936a"
+    },
+    {
+      "claim_id": "39e79325-9661-415a-b9c0-3d1266f8ba0a",
+      "result_id": "f5034920-620f-46c6-86c2-cb81a6001ffe"
+    },
+    {
+      "claim_id": "cc753da8-4c1d-432f-8499-eedf747cf40b",
+      "result_id": "f5034920-620f-46c6-86c2-cb81a6001ffe"
+    },
+    {
+      "claim_id": "297f8a3e-b032-4ffc-86e4-83afd15a7504",
+      "result_id": "f5034920-620f-46c6-86c2-cb81a6001ffe"
+    },
+    {
+      "claim_id": "b867e8b6-1d9b-49ab-9e88-a9907fbe555a",
+      "result_id": "f5034920-620f-46c6-86c2-cb81a6001ffe"
+    },
+    {
+      "claim_id": "5ddb53d6-0907-4bdb-b67e-f078d73f74eb",
+      "result_id": "f5034920-620f-46c6-86c2-cb81a6001ffe"
+    },
+    {
+      "claim_id": "6a73faa7-ce75-4ee2-8993-f6b6f6150e04",
+      "result_id": "f5034920-620f-46c6-86c2-cb81a6001ffe"
+    },
+    {
+      "claim_id": "329d5d6b-d337-4c8a-917a-db36891757cf",
+      "result_id": "f5034920-620f-46c6-86c2-cb81a6001ffe"
+    },
+    {
+      "claim_id": "e81ad633-1987-4975-8e56-21606b4971bb",
+      "result_id": "f5034920-620f-46c6-86c2-cb81a6001ffe"
+    },
+    {
+      "claim_id": "91487c54-f24b-481c-bfc2-c993ae095715",
+      "result_id": "f5034920-620f-46c6-86c2-cb81a6001ffe"
+    },
+    {
+      "claim_id": "b5542adc-f163-4da6-af3b-aeca1eeea251",
+      "result_id": "f5034920-620f-46c6-86c2-cb81a6001ffe"
+    },
+    {
+      "claim_id": "c52de963-c506-46f3-ae86-ed0a40115b97",
+      "result_id": "f5034920-620f-46c6-86c2-cb81a6001ffe"
+    },
+    {
+      "claim_id": "78f72e1e-0e0e-4873-ad08-8a9f2f9229c4",
+      "result_id": "f5034920-620f-46c6-86c2-cb81a6001ffe"
+    },
+    {
+      "claim_id": "c18d4774-2b25-4033-adf8-db9cb7cda9b1",
+      "result_id": "84922d51-850c-4b8b-95d3-1946741db746"
+    },
+    {
+      "claim_id": "a5228e9b-c94a-42c5-9a19-65eec8dd0c22",
+      "result_id": "84922d51-850c-4b8b-95d3-1946741db746"
+    },
+    {
+      "claim_id": "ae2a6b80-b335-44dc-9bf3-365d38337263",
+      "result_id": "84922d51-850c-4b8b-95d3-1946741db746"
+    },
+    {
+      "claim_id": "6b208062-77e4-4562-8b82-ed40428a594b",
+      "result_id": "ae264bdf-343a-45bb-a448-084c78bfc2f8"
+    },
+    {
+      "claim_id": "2cb3c61b-0e5a-4a2a-94ff-6afb92f7c5e5",
+      "result_id": "ae264bdf-343a-45bb-a448-084c78bfc2f8"
+    },
+    {
+      "claim_id": "a71feec2-c541-4420-ad61-9ffc7870371e",
+      "result_id": "f4a3ab94-92c0-43e3-9aea-f09c6502488b"
+    },
+    {
+      "claim_id": "552bf14e-a9b3-4d58-8fa5-0707883a43e5",
+      "result_id": "f4a3ab94-92c0-43e3-9aea-f09c6502488b"
+    },
+    {
+      "claim_id": "00fbf70a-1399-49b0-9616-e75985a1442a",
+      "result_id": "f4a3ab94-92c0-43e3-9aea-f09c6502488b"
+    },
+    {
+      "claim_id": "fae0ce83-2762-431e-bc16-9f0d6157e511",
+      "result_id": "3350d682-d654-482d-a9b7-9f5126036862"
+    },
+    {
+      "claim_id": "18be86c0-8fdb-4bdd-a7ee-e7e582f2e30a",
+      "result_id": "80ac442a-a280-4944-8d43-5ca6584d0724"
+    },
+    {
+      "claim_id": "e6da5193-c55d-4169-acc4-cc20819997bc",
+      "result_id": "80ac442a-a280-4944-8d43-5ca6584d0724"
+    }
+  ],
+  "comparisons": []
+}

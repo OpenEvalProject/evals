@@ -1,0 +1,422 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C38",
+      "C39",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C82"
+    ],
+    "result": "A novel high-throughput Viral Chromosome Conformation Capture assay (V3C-seq) was developed and validated for mapping genome-wide interactions between a lytic virus genome and the cellular chromosome. The assay uses formaldehyde crosslinking, digestion, intramolecular ligation, and high-throughput sequencing to provide precise genomic maps and quantification of virus-cell interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C38, C39, C55-C58, and C82 collectively describe the development and validation of V3C-seq with supporting experimental data throughout the manuscript (Figures 2-6). The methodology is clearly described, validated by multiple approaches (3C-qPCR, microscopy, CRISPR experiments), and shown to be reproducible across replicates (C68). Control experiments (C77, C78) demonstrate specificity of the assay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C41",
+      "C83",
+      "C84",
+      "C94",
+      "C95",
+      "C103"
+    ],
+    "result": "Upon infection, MVM initially associated with sites of cellular DNA damage that in mock-infected cells also exhibited DNA damage as cells progressed through S-phase. At 12 hpi, MVM associated with approximately 55% of sites showing DNA damage in mock-infected cells, rising to close to 80% by 16 hpi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C41, C83-C84, C94-C95, and C103 are supported by V3C-seq and \u03b3-H2AX ChIP-seq data showing overlap between MVM association sites (VADs) and DNA damage sites in mock-infected cells (Figures 2 and 3). Quantitative analysis demonstrates ~55% overlap at 12 hpi increasing to ~80% at 16 hpi (Figure 3C). The interpretation that these are likely ERFs (C84) is reasonable given the timing and known biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C8",
+      "C44",
+      "C60",
+      "C64",
+      "C65",
+      "C70",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "As MVM infection progressed, new DNA damage sites were induced, and the virus subsequently associated with these newly induced sites to amplify infection. Approximately 84% of VADs at 16 hpi were newly generated, and DNA damage sites expanded in number and concentrated in distribution over the infection time course.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C8, C44, C60, C64-C65, C70, C86-C90 are supported by time-course V3C-seq and \u03b3-H2AX ChIP-seq data (Figures 2 and 3). The data show progressive expansion of both VADs and DNA damage sites, with quantitative analysis demonstrating that ~84% of VADs at 16 hpi are newly generated (C65, Figure 2C). ChIP-seq data confirm increasing DNA damage over time (C87-C90), and Comet assays provide independent validation (C88, Figure 3\u2014figure supplement 2A).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Sites of MVM association identified biochemically by V3C-seq were confirmed microscopically using 3D-FISH and super-resolution microscopy. The median distance between MVM and VAD probes (19qA and 15qE) was approximately 0.6-0.7 \u03bcm, similar to the median radius of APAR bodies, while non-VAD control sites showed significantly greater distances (~1.1 \u03bcm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C122-C128 are supported by 3D-FISH and super-resolution microscopy data (Figure 5). Quantitative distance measurements show close localization between MVM and VAD probes (0.6-0.7 \u03bcm) compared to non-VAD controls (1.1 \u03bcm), with statistical significance (Figure 5E). The distances are consistent with the median radius of APAR bodies, supporting the interpretation that VAD sites coincide with APAR bodies (C126).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C42",
+      "C129",
+      "C130",
+      "C131",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "MVM can be targeted specifically to artificially induced sites of DNA damage, demonstrated by both laser micro-irradiation and CRISPR/Cas9-induced DNA breaks. MVM and NS1 co-localized with laser-induced DNA damage stripes, and CRISPR/Cas9-induced breaks at chromosome 9 resulted in substantially increased MVM-cellular DNA interactions at the break site without affecting pre-existing VADs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C42, C129-C131, C133-C139 are supported by laser micro-irradiation experiments (Figure 6A) and CRISPR/Cas9 experiments (Figure 6B-G). Both approaches demonstrate that MVM can be recruited to artificially induced DNA damage sites. The CRISPR experiments include appropriate controls showing no effect on pre-existing VADs (C137, C139), and reciprocal validation using both 3C-qPCR and ChIP-qPCR (C136, C138).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C178",
+      "C179"
+    ],
+    "result": "MVM-associated sites (VADs) overlap significantly with previously identified topologically-associated domains (TADs), with VADs occupying multiple adjacent TADs, suggesting that several adjacent TADs may contain the necessary environment to support MVM expression and replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C178, and C179 are supported by comparison of V3C-seq data with published Hi-C data (Figure 4\u2014figure supplement 2A-D). The overlap between VADs and TADs is clearly demonstrated, and the observation that VADs span multiple adjacent TADs is evident in the data. The interpretation that multiple TADs may provide supportive environment (C179) is reasonable but remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C43",
+      "C121"
+    ],
+    "result": "MVM established replication at cellular DNA damage sites, which provide replication and expression machinery. The proposed model suggests that MVM first homes to sites of pre-existing endogenous DNA damage to initiate infection, then spreads to newly induced damage sites to amplify infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C43, and C121 represent the main interpretive model of the study, supported by the collective evidence from V3C-seq, ChIP-seq, microscopy, and artificial DNA damage experiments (C1-C5). The model is consistent with all experimental observations, though the authors acknowledge that specific localization of input genomes remains circumstantial (C196, C197). The model is well-supported but represents an interpretation rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C50",
+      "C51",
+      "C54"
+    ],
+    "result": "Super-resolution microscopy (Airyscan and GSD-STORM) demonstrated that \u03b3-H2AX and FANCD2 localized to the periphery of APAR bodies at 16 hpi, suggesting that MVM replication centers localize to and expand adjacent to sites of cellular chromatin undergoing DNA damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C50, C51, and C54 are supported by super-resolution microscopy data (Figure 1C-D). The peripheral localization of DDR markers relative to APAR bodies is clearly shown, and quantitative distance measurements support close association (Figure 1B). The interpretation that MVM replication centers localize adjacent to damaged cellular chromatin (C54) is reasonable given the microscopy data and the known size of \u03b3-H2AX platforms (C52).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C100",
+      "C101",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "\u03b3-H2AX ChIP-seq regions at 16 hpi correlated well with those induced by 12 hr hydroxyurea (HU) treatment. Approximately 51% of \u03b3-H2AX peaks at 16 hpi were shared with HU-induced peaks, and approximately 95% of VADs at 16 hpi associated with HU-induced \u03b3-H2AX sites, strongly implying that \u03b3-H2AX associated with MVM resides on cellular DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93, C100-C101, C105-C107 are supported by comparison of \u03b3-H2AX ChIP-seq data from infected cells, mock-infected cells, and HU-treated cells (Figure 3A-C). The quantitative overlap analysis is rigorous, and the striking overlap between infection-induced, replication-induced, and HU-induced damage sites (C107) supports the interpretation that \u03b3-H2AX resides on cellular DNA (C106). However, the authors appropriately note this does not definitively prove the location (C106, C192, C193).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "VADs strongly associated with sites identified by BRCA1 and NS1 ChIP-seq at 16 hpi. Approximately 90% of peaks identified by NS1, BRCA1, and \u03b3-H2AX ChIP-seq overlapped with VADs, with binding profiles centered within 1 Mb of MVM-associated cellular sites, providing independent validation of V3C-seq results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110, C114-C120 are supported by ChIP-seq data for BRCA1 and NS1 (Figure 4A-C). The ~90% overlap between ChIP-seq peaks and VADs is substantial and statistically significant compared to random controls (C119). The concordance between NS1 ChIP-seq and V3C-seq (C117) provides strong validation, as NS1 is covalently bound to viral DNA (C115). The heatmap analysis showing centered binding profiles (C120) further supports the specificity of the associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "V3C-seq results were validated by focused 3C-qPCR in multiple cell types. MVM association with VADs was detected in A9, NIH-3T3, and EL4 cells, with association substantially diminished in control conditions (no ligation or reversed crosslinks), suggesting a common mechanism for MVM replication site establishment across mouse cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 are supported by 3C-qPCR validation experiments (Figure 2D-F). The controls (C77) demonstrate specificity of the assay, and detection of VADs in multiple cell types (C79-C80) supports generalizability. The inference of a common mechanism (C81) is reasonable given the conservation of VADs across cell types, though the mechanism itself is not elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C68",
+      "C69"
+    ],
+    "result": "By 12 hpi, MVM genomes associated with discrete regions on most cellular chromosomes, ranging in size from 1-2 Mb to larger 5-15 Mb domains. The interaction sites were reproducible across replicates and clustered in a characteristic manner at 16 and 20 hpi distinct from early (12 hpi) and late (24 hpi) infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C61-C63, C68-C69 are supported by V3C-seq data across the mouse genome (Figure 2B, Figure 2\u2014figure supplement 1B and 2). The size ranges of VADs are clearly observable in the data (C61-C62), and clustering analysis demonstrates reproducibility and characteristic temporal patterns (C68-C69). The observation that some chromosomes have fewer interaction sites (C63) is evident in the genome-wide data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "At later time points (20-24 hpi), MVM interaction patterns changed, with fewer sites retained from 16 hpi (~39%) and fewer newly generated sites (~18%). By 24 hpi, interactions were extensive throughout the genome, likely reflecting saturating viral DNA levels, substantial cellular DNA damage, and viral packaging reducing available genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67, C71-C75 are supported by time-course V3C-seq data (Figure 2B-C, Figure 2\u2014figure supplement 2). The quantitative analysis of VAD retention and generation (C66-C67) is clear. The interpretation that late-stage widespread interaction reflects saturation and loss of specificity (C72-C73) is reasonable. The caveats about cellular DNA damage (C74) and viral packaging (C75) are appropriately noted and supported by data (Figure 3\u2014figure supplement 2A) and citation, respectively.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "In human NB324K cells at 16 hpi, MVM localized to the human fragile site FRA5H but not FRA11F, and associated weakly with the prototypical fragile site FRA3B, demonstrating that MVM can associate with fragile sites in human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 are supported by focused 3C-qPCR in human NB324K cells (Figure 4\u2014figure supplement 1C). The differential association with different fragile sites (strong with FRA5H, weak with FRA3B, none with FRA11F) is clearly shown. This extends the findings to human cells, though the data are limited to a single time point and cell type.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C102"
+    ],
+    "result": "Genome-wide analysis of \u03b3-H2AX ChIP-seq revealed that approximately 55% of sites in mock-infected cells overlapped with 16 hpi, with 55% of 16 hpi sites newly generated. By 16 hpi, close to 90% of \u03b3-H2AX sites overlapped with VADs, decreasing to ~70% by 20 hpi due to increased cellular DNA breaks. Random peak controls showed <1% overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86, C96-C99, C102 are supported by quantitative analysis of \u03b3-H2AX ChIP-seq and V3C-seq data (Figure 3B-D). The percentages are clearly calculated and presented, with appropriate statistical controls (C102). The interpretation that decreased overlap at 20 hpi reflects increased DNA damage (C99) is supported by the data showing widespread damage induction (C89-C90). The heatmap analysis (C98, Figure 3D) provides additional visualization of the temporal dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "Comparison with published chromatin marks suggests MVM associations may be with the A compartment of TADs, which would provide necessary machinery for expression and replication. Host chromatin states may play a significant role in permissiveness to DNA damage and MVM localization, with regions in protective chromatin environments potentially providing supportive conditions for infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C176-C177, C184-C187 involve comparisons with published chromatin data (Figure 4\u2014figure supplement 2E) and integration with literature on chromatin environments. While the overlay with Type A chromatin marks (C176) is shown, the interpretation that MVM associates with the A compartment (C176-C177) is tentative ('suggests', 'may be'). The broader speculation about chromatin states and permissiveness (C184, C187) is reasonable but not directly tested. These claims represent plausible hypotheses requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C190",
+      "C191"
+    ],
+    "result": "HU pretreatment of permissive rat F111 cells, which have lower levels of endogenous DNA damage (lower \u03b3-H2AX), resulted in increased MVM replication by 20 hpi, consistent with the model that pre-existing DNA damage sites facilitate MVM replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C190-C191 are supported by immunoblot data (Figure 3\u2014figure supplement 2B) showing increased NS1 levels (indicating increased replication) in HU-pretreated F111 cells. The observation that F111 cells have lower baseline \u03b3-H2AX (C191) is shown in the same figure. This result supports the overall model, though it is based on a single experiment in one cell type.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The model proposed for parvovirus infection differs from adenovirus, as the parvovirus life cycle depends on cell cycle arrest, is susceptible to ATM inhibitors, continually induces DNA damage, is more dependent on host factors, and lacks extensive genetic capacity to inactivate the cellular DDR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C152 distinguish the MVM model from adenovirus based on established knowledge about parvovirus biology (C148-C150, supported by prior citations) and known differences in genetic capacity (C151-C152, supported by citations). The distinction (C147) is appropriate and helps contextualize the findings. These claims are primarily interpretive and rely on established knowledge rather than new data from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "V3C-seq offers advantages over existing methods (ChIA-PET and Hi-C) for mapping virus-host interactions. A single inverse-PCR viewpoint is sufficient for MVM, ensuring detection of only MVM-host hybrid junctions with higher resolving power and deeper interrogation. However, V3C-seq does not assay changes in nuclear architecture in response to infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C161 compare V3C-seq to existing methods based on published work (C153-C156, supported by citations) and describe methodological advantages (C158-C160) demonstrated in the study. The limitation regarding nuclear architecture (C161) is appropriately acknowledged. The comparison is fair and the advantages are demonstrated by the data, though direct head-to-head comparisons with other methods are not performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C46",
+      "C48",
+      "C52",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "Background information on parvoviruses, MVM biology, DNA damage response, fragile sites, other viruses, chromosome conformation capture technologies, TADs, and relevant prior work establishes the context and rationale for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C37, C46, C48, C52, C140-C146, C172-C175, C180-C182 represent established knowledge and prior work, appropriately cited throughout. These claims provide necessary background and context for understanding the significance of the study. They are supported by appropriate citations and represent accurate summaries of the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C45",
+      "C188",
+      "C189",
+      "C166"
+    ],
+    "result": "The V3C-seq assay should be useful for characterizing interactions of many DNA viruses with the cellular genome and for studying long-range interactions of integrated viruses, providing a tool to characterize molecular events leading to infection initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C45, C188, C189, and C166 are speculative statements about future applications of V3C-seq. While the method is well-validated for MVM, its applicability to other viruses has not been demonstrated in this study. The speculation is reasonable given the general nature of the approach, but remains untested. These represent hypotheses for future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C104",
+      "C192",
+      "C193",
+      "C196",
+      "C197"
+    ],
+    "result": "The authors acknowledge important limitations: it cannot be formally ruled out that early VAD sites were virally-induced rather than pre-existing; \u03b3-H2AX may be directly associated with viral genomes; and specific localization of input genomes remains circumstantial as multiple genomes have accumulated even at early time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104, C192-C193, C196-C197 represent appropriate acknowledgments of limitations and alternative interpretations. These caveats are important for accurate interpretation of the results and demonstrate scientific rigor. The authors correctly note that while the data strongly support their model, certain aspects remain inferential rather than definitively proven.",
+    "result_type": "MINOR"
+  }
+]

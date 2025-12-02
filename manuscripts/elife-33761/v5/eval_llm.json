@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors developed a fluorescent reporter system in HEK293T cells to measure HDR efficiencies. The system uses a mutant RFP (c.190_191delinsCT, p.Y63L) followed by GFP, where HDR-mediated correction reactivates RFP and frameshift indels eliminate GFP, allowing quantification by FACS and fluorescence imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 and C85-C91 describe the reporter system design, validation, and analytical approach. The system is well-characterized with appropriate controls, and the authors acknowledge that FACS underestimates absolute editing (C89-C90) but allows accurate comparison between systems (C91). The methodology is sound and properly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "Maximal DSB correction rates are reached with single-stranded donor oligonucleotides of approximately 80 bases in length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is supported by experimental data (Figure 3\u2014figure supplement 1a) and is consistent with prior work (Zuo et al., 2017). This finding validates the reporter system and informs the choice of oligo lengths (65-mer and 81-mer) for subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C83",
+      "C84"
+    ],
+    "result": "The authors successfully generated RNPD complexes by covalently linking BG-labeled donor oligonucleotides to Cas9-SNAP fusion proteins using SNAP-tag technology, with conjugation confirmed by SDS-PAGE, HPLC, and LC-MS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 and C83-C84 describe the methodological approach for generating RNPD complexes. Multiple orthogonal validation methods (SDS-PAGE band shifts in Figure 3e-h, HPLC separation in Figure 3b, LC-MS confirmation in Figure 3\u2014figure supplement 1d) provide strong evidence for successful conjugation. The methodology is well-documented and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C51"
+    ],
+    "result": "Covalent linkage of donor templates to SpCas9-SNAP significantly enhances HDR correction efficiency in the reporter system: from 2.1% to 22.5% (11-fold increase) with 65-mers and from 8.9% to 25.7% (3-fold increase) with 81-mers compared to unlinked controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 and C51 present the core finding with the RNPD system. The data show statistically significant improvements (Figure 4a, n=4 biological replicates with p<0.0332). The fold-changes are clearly documented and the comparison to appropriate controls (SpCas9-SNAP with unlabeled oligos) is valid. Statistical analysis appears appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "A two-component RNP-RNPD system, where the donor oligo is linked to catalytically inactive SadCas9 that binds near the DSB induced by SpCas9, increases correction efficiency from 4.1% to 29.9% with 65-mers and from 11.6% to 32.3% with 81-mers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 describe an orthogonal validation approach using a two-component system. The design is clever (using different Cas9 orthologs to prevent sgRNA interchange) and the results (Figure 4e, n=4 replicates) confirm the findings from the single-component RNPD system. This provides strong independent validation of the core concept.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52"
+    ],
+    "result": "At 5-fold lower transfection concentrations, the enhancement effect is more pronounced: the RNPD system shows 20-fold (65-mer) and 4-fold (81-mer) increases, while the RNP-RNPD system shows 21-fold (65-mer) and 6-fold (81-mer) increases compared to uncoupled controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 and C52 demonstrate that the benefit of covalent linkage is concentration-dependent and more pronounced at lower concentrations. This is an important finding for therapeutic applications where delivery efficiency may be limiting. The data (Figure 4f, n=3 replicates) support this conclusion, though sample size is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "BG-labeling of donor oligos alone enhances correction rates, but the increase is several-fold lower than when the oligo is conjugated to the Cas9 RNP complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 address an important control: whether BG modification itself affects HDR. The data (Figure 4\u2014figure supplement 2a-c) show that while BG-labeling has some effect, it is substantially less than the conjugated system. This control strengthens the conclusion that covalent linkage, not just BG modification, drives the enhancement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C4",
+      "C79"
+    ],
+    "result": "The mechanism of enhanced HDR is primarily due to increased donor oligo concentration in the nucleoplasm rather than precise spatial localization near the DSB, as demonstrated by experiments showing that directing SadCas9 to the nucleus without a specific sgRNA is sufficient for enhancement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56, C4, and C79 present the mechanistic interpretation. The key experiment (Figure 4g) shows that omitting the sgRNA for SadCas9 (so it only localizes to the nucleus, not specifically to the DSB site) does not reduce correction rates. This is strong evidence that nuclear import, not DSB-proximal localization, is the primary mechanism. The conclusion is well-supported and consistent with cited literature on nuclear import barriers (C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C5",
+      "C6"
+    ],
+    "result": "The RNPD system enhances HDR correction efficiency across multiple cell types and genomic loci: 17-fold increase at HBB in K562 cells (19.6% efficiency), 2-fold at Rosa26 in mESCs (18.6%), and 6-fold at Pcsk9 in mESCs (23.2%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63, C5-C6 demonstrate generalizability across cell types (K562, mESCs) and genomic loci (HBB, Rosa26, Pcsk9). NGS validation provides robust quantification. The varying fold-changes (2-17x) across loci suggest locus-specific factors may influence the magnitude of enhancement, but the effect is consistently positive. Sample sizes are adequate (n=3-4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Compared to wild-type Cas9 (classical CRISPR system), the RNPD system increases correction efficiency 7-fold at the reporter locus and 10-24-fold at endogenous loci (HBB, EMX1, CXCR4) in HEK293T cells, with no increase in off-target editing at three predicted sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C73 provide direct comparison to the standard CRISPR system (wild-type Cas9), which is the most clinically relevant benchmark. The dramatic improvements (7-24-fold) are well-documented by NGS (Figure 6, n=3-4 replicates). The off-target analysis (C67) is limited to only three computationally predicted sites, which is a weakness, but the data suggest no increased off-target risk. The slight decrease in incorrect edits (C65) is a positive finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C7",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors conclude that covalent linkage of donor templates to Cas9 increases correction rates up to 24-fold, provides advantages for clinical applications requiring high-fidelity repair, does not alter endogenous cellular processes, addresses simultaneous delivery challenges, and is poised to advance CRISPR/Cas9 toward clinical translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C3, C7, C80-C82 represent the authors' broader conclusions and translational implications. While the 24-fold increase is supported by data (C73), the clinical advantages (C7, C82) are speculative and not directly tested. The claim that the approach doesn't alter endogenous processes (C80) is an inference but not experimentally validated. The delivery advantage (C81) is logical but requires in vivo validation. These are reasonable extrapolations but remain to be proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C57",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The manuscript provides extensive background on CRISPR-Cas9 mechanisms, DNA repair pathways, previous approaches to enhance HDR, and the rationale for RNP-based therapeutic delivery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C23, C57, C74-C78 represent established knowledge and prior work that contextualizes the study. These are appropriately cited and accurately represent the field. The background establishes the problem (low HDR rates due to competing error-prone repair) and the hypothesis (that donor template availability is rate-limiting) that motivates the current work.",
+    "result_type": "MINOR"
+  }
+]

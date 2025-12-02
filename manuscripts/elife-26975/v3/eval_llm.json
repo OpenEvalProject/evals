@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors performed a dense EM reconstruction of the adult Drosophila mushroom body \u03b1 lobe, identifying 983 neurons across three compartments (\u03b11, \u03b12, \u03b13) using FIBSEM imaging with 8nm isotropic voxels. The reconstruction included 949 KCs (871 \u03b1/\u03b2sc and 78 \u03b1/\u03b2p), compartment-specific DANs and MBONs, and six additional cell types that innervate all compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28, C34-C45 collectively describe the comprehensive EM reconstruction effort. The neuron counts (C38-C44) are based on direct observation and counting in the dataset, with validation against prior light microscopy estimates. The dense reconstruction approach (C36: ~8 person-years of proofreading) and technical specifications (C34-C35) provide confidence in completeness (C45, C29).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Every KC makes multiple en passant synapses in each of the three \u03b1 lobe compartments, with each KC connecting to all MBONs within a compartment. The distribution of KC>MBON synapse numbers follows a Poisson distribution, suggesting random, independent synapse formation during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C61-C65 are strongly supported by direct observation of synaptic connections in the EM data (C62-C63) and statistical analysis (C64). The Poisson distribution fit (C64) provides quantitative support for the developmental model. This addresses a key question about whether sensory information is uniformly distributed across compartments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "While MBONs in \u03b11 and \u03b13 receive input from all KCs, MBONs in \u03b12 show differential sampling of KC subtypes. MBON-\u03b12p3p receives >75% input from \u03b1/\u03b2p KCs (which are not odor-responsive), while MBON-\u03b12sc receives input almost exclusively from olfactory-responsive \u03b1/\u03b2sc KCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C66-C70 are supported by quantitative connectivity analysis (C66, C68) combined with prior knowledge about KC response properties (C67). The differential sampling pattern (C69) is a clear inference from the data. However, the functional significance requires additional physiological validation beyond the anatomical observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "DANs make synaptic contacts with multiple postsynaptic partners including KCs and MBONs, but only 6% of KC>MBON synapses have a DAN terminal within 300nm. The spatial distribution of DAN synapses, combined with prior electrophysiology showing widespread synaptic depression, suggests dopamine acts via volume transmission rather than local synaptic transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C71-C79 are supported by quantitative spatial analysis of synapse locations (C74, C77) and synapse counts (C73). The volume transmission inference (C76) is well-justified by combining anatomical observations with prior physiological data (C75). The finding that 23.5% of KCs in \u03b12 lack DAN synapses (C79) further supports the volume transmission model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C90",
+      "C91"
+    ],
+    "result": "KCs make direct synaptic connections to DANs, with KC>DAN synapses outnumbering DAN>KC synapses in all three compartments (5037 vs 2982 in \u03b13; 1699 vs 1466 in \u03b12; 3054 vs 2011 in \u03b11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C90-C91 describe a novel circuit motif identified through direct observation in the EM reconstruction. The quantitative synapse counts (C91) are based on systematic annotation. While the anatomical evidence is strong, the functional significance of these connections requires additional physiological validation (noted in C110 as speculation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "DANs make direct synaptic connections to MBONs, representing 2-8% of KC>MBON synapse numbers. Functional connectivity experiments demonstrate that DAN stimulation produces slow (multi-second) excitatory depolarization of MBONs that is monosynaptic and largely mediated by dopamine receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C92-C99 combine anatomical observations (C92) with functional validation through calcium imaging (C95-C96) and electrophysiology (C97-C99). The monosynaptic nature is demonstrated by persistence in TTX+mecamylamine (C98), and dopamine receptor involvement is shown by antagonist experiments (C99). The convergence of anatomical and functional evidence strongly supports this novel finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "DAN activation during memory recall suppresses conditioned behavioral responses in both appetitive (\u03b11) and aversive (\u03b13) memory paradigms. DAN activation alone (without odor) produces attraction responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C100-C102 are supported by behavioral experiments showing consistent suppression of memory expression when DANs are activated during testing (C100-C101). The attraction response to DAN activation alone (C102) is consistent with the excitatory DAN>MBON connection. However, the experiments cannot definitively distinguish direct DAN>MBON effects from indirect effects through other pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The \u03b1 lobe contains 89,406 presynaptic densities and 224,697 postsynaptic sites, with 86% of synapses having both pre- and postsynaptic partners identified. KC>MBON synapses frequently occur in convergence structures (80-93%) and rosettes (62%), where multiple KCs synapse onto the same MBON dendrite.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52, C122-C129 provide quantitative characterization of synaptic organization based on systematic annotation and analysis. The high percentage of identified synapses (C49) validates the completeness of the reconstruction. The rosette structures (C50-C52) are clearly observed in the EM data, though their functional significance remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "All reconstructed cell types except SIFamide neurons contain at least two morphologically distinct classes of synaptic vesicles (clear vesicles ~45nm and dense-core vesicles 80-100nm), suggesting most MB cell types use multiple neurotransmitters. SIFamide neurons contain only large dense-core vesicles (~125nm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 are based on direct morphological observation and measurement of vesicle types in the EM data. The inference about multiple neurotransmitters (C55) is reasonable but requires biochemical validation. The measurements are quantitative (C58-C59) with clear sample sizes (100 vesicles per cell type).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "APL and DPM are MB-intrinsic neurons that receive extensive KC input and have modular anatomy. APL outputs primarily to KCs with minimal connections to MBONs/DANs, while DPM synapses onto both MBONs and DANs in all compartments, with particularly strong connections to MBON-\u03b11.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C89 describe the connectivity and morphology of APL and DPM based on quantitative analysis of the EM data. The modular anatomy (C87-C89) was not visible in prior light microscopy, demonstrating the value of EM resolution. The differential output patterns (C82-C85) are clearly documented, though functional interpretations (C83) require additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Feedforward MBONs (MBON-\u03b21>\u03b1 and MBON-\u03b31pedc>\u03b1/\u03b2) primarily target MBONs in downstream compartments rather than KCs. MBON-\u03b21>\u03b1 terminals are concentrated near the axon of MBON-\u03b11, and MBON-\u03b21>\u03b1 makes asymmetric connections to MBON-\u03b31pedc>\u03b1/\u03b2 (4:1 ratio).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 are based on quantitative connectivity analysis and spatial mapping of synapse locations. The preferential targeting of MBONs over KCs (C103-C104) is clearly demonstrated. The spatial concentration near the axon (C106) and asymmetric connectivity (C107) are directly observed, though functional implications (C105) are inferred.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Only one novel cell type (MBON-\u03b12sp) was identified in the EM reconstruction that had not been previously described at the light microscopy level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by systematic comparison of EM reconstructions with prior light microscopy data. This demonstrates both the completeness of prior light-level characterization and the value of EM for confirming cell type identities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The same novel circuit motifs (KC>DAN, DAN>MBON) found in the adult \u03b1 lobe were also found in a parallel study of the larval MB, with strikingly similar relative abundances of connections across developmental stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 are supported by citation to a parallel study and quantitative comparison of connectivity ratios. The conservation across developmental stages (C121) is speculative but reasonable. This cross-validation strengthens confidence in the novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "The basic wiring motifs are very similar across the three \u03b1 lobe compartments, though dense-core vesicle sizes differ between DANs innervating different compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 are based on comparative analysis of connectivity patterns and vesicle measurements across compartments. The similarity in wiring (C108) contrasts with functional differences in memory formation, suggesting other mechanisms (like vesicle content differences, C109) may be important.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C130"
+    ],
+    "result": "KCs that participate together in one rosette do not show increased probability of converging in additional rosettes elsewhere in the \u03b1 lobe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C130 is based on statistical analysis of rosette participation patterns. This negative result argues against specific developmental programs that would link particular KCs together, supporting the random connectivity model suggested by Poisson statistics (C64).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The manuscript provides extensive background on the mushroom body as the center of associative learning in insects, describing the established model of sparse KC coding, dopaminergic modulation, and compartmental organization based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C27, C30-C33 summarize established knowledge from prior studies, supported by extensive citations. These provide context for the current work but are not novel findings. The claims accurately represent the state of the field based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "The dense reconstruction approach provides confidence that all cell types with processes in the \u03b1 lobe have been identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is supported by the completeness metrics (C48-C49: 93% of postsynaptic sites traced, 86% of synapses fully identified) and the small fraction of unassigned fragments (C45). The systematic approach and extensive proofreading effort (C36) justify this confidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The authors speculate about potential functional roles for the novel circuit motifs, including KC>DAN connections potentially providing negative feedback during learning, and DAN>MBON connections enabling comparison of expected versus actual reward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C114 are explicitly speculative (C110, C112) or cite prior work in other systems (C111, C113-C114). While these speculations are reasonable given the anatomical findings, they require additional experimental validation. Claims C115-C118 discuss methodological considerations about dense versus sparse tracing approaches.",
+    "result_type": "MINOR"
+  }
+]

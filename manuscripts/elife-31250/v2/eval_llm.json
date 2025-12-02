@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "UM-associated substitutions in yeast eIF1A suppress initiation at near-cognate UUG codons and AUGs in poor context. Seven UM-associated substitutions (K3E, K4D, T6D, T6R, \u0394G8, R13P, G15D) diminish the His+ phenotype conferred by SUI5 or SUI3-2 mutations and reduce the UUG:AUG initiation ratio in SUI3-2 cells, with R13P showing the strongest effect (~75% reduction).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 and C52-C60 are supported by multiple lines of genetic evidence including growth assays (Figure 2A, Figure 2\u2014figure supplement 1A-B) and \u03b2-galactosidase reporter assays (Figure 2B). The data show consistent suppression of Sui- phenotypes across multiple UM-associated mutations, with quantitative measurements and statistical significance reported. The hierarchy of effects is well-documented with R13P showing the strongest phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C91",
+      "C92",
+      "C97"
+    ],
+    "result": "UM-associated eIF1A NTT substitutions co-suppress both Sui- and Gcd- phenotypes of SUI3-2, with R13P showing the strongest effect. This co-suppression provides genetic evidence that these mutations preferentially destabilize the closed/PIN state and shift the system toward the open/POUT conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 and C91-C92, C97 are supported by \u03b2-galactosidase assays showing R13P significantly reduces GCN4-lacZ derepression in SUI3-2 cells (Figure 2\u2014figure supplement 1C). The co-suppression pattern is consistent with previous studies (C62) and provides mechanistic insight. The interpretation linking co-suppression to PIC conformational changes is well-grounded in prior work and the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "UM-associated eIF1A mutations selectively reduce recognition of AUG codons in poor context while not affecting AUGs in optimal context. The mutations reduce eIF1 steady-state levels and decrease expression of SUI1-lacZ reporters with poor context (-3CGU-1 and -3UUU-1) but not optimal context (-3AAA-1), with R13P showing the strongest effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 and C70-C73 are supported by Western blot analysis (Figure 2C) and \u03b2-galactosidase assays (Figure 2D). The data show a clear hierarchy of effects that correlates between eIF1 reduction and suppression of UUG initiation. The context-dependent discrimination is demonstrated by differential effects on three SUI1-lacZ reporters with varying AUG contexts, with statistical significance indicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "All five conserved basic residues (K7, K10, R13, R14, K16) that contact mRNA, tRNAi anticodon, or 18S rRNA in the py48S PIC structure, plus the Gly8-Gly9 turn, are critical for efficient utilization of suboptimal initiation sites. Among UM mutations, R13P consistently conferred the greatest reduction in recognition of both UUG codons and AUGs in poor context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 and C85-C87 are supported by systematic mutagenesis of all five basic NTT residues combined with structural data from the py48S PIC (Figure 1B). The functional importance is demonstrated through multiple assays (Figures 3-4) showing that substitutions of these residues increase discrimination against poor initiation sites. The structural basis for these effects is well-established from cited cryo-EM structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "R13P and K16D substitutions specifically destabilize the closed/PIN state at UUG codons in reconstituted PICs in vitro. Both mutations increase TC dissociation rate (koff) and the fraction of PICs from which TC dissociates at UUG but not AUG codons, and increase eIF1A dissociation rate with both codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 are supported by biochemical TC and eIF1A dissociation kinetics experiments (Figure 5A-D). The data show quantitative measurements with error estimates and statistical significance. The codon-specific effects on TC dissociation (UUG vs AUG) and the general effects on eIF1A dissociation provide mechanistic insight into how these mutations destabilize the closed conformation. The interpretation linking these biochemical effects to in vivo phenotypes is well-reasoned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C98",
+      "C9"
+    ],
+    "result": "Ribosome profiling demonstrates that R13P confers genome-wide increased discrimination against AUG codons with poor Kozak context in the yeast translatome. Genes with poor context (C/U at -3 or all non-preferred positions) show reduced TE in R13P cells, while genes with preferred context show increased TE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98 and C9 are supported by comprehensive ribosome profiling data (Figure 6B-F) with high reproducibility between replicates (Figure 6\u2014figure supplement 1). The analysis includes multiple approaches: comparison of context-defined gene groups, identification of TE_up/TE_down genes, sequence logo analysis, and context score calculations. The data show statistically significant correlations between AUG context and TE changes in R13P cells across thousands of genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "R13P reduces recognition of a subset of uORFs when their AUG codons reside in poor context. Analysis of ~96 translated uORFs shows that those with C/U at -3 exhibit decreased relative ribosome occupancy (RRO) in R13P cells compared to uORFs with A/G at -3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is supported by ribosome profiling analysis of uORFs (Figure 7A-D). The data show context-dependent effects on uORF translation with sequence logos and context scores supporting the interpretation. Examples like CPA1, ICY1, and BZZ1 illustrate the phenomenon. The analysis appropriately accounts for the generally poor context of uORF AUGs and shows differential effects based on context quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "R13P displays increased discrimination against the near-cognate ACG start codon of ALA1 mRNA, reducing the NTE/CDS ratio by ~1/3. The context-dependent effect is illustrated by differential behavior of ALA1 (poor context ACG) versus GRS1 (optimal context UUG), and modest reduction of HIS4-lacZ UUG despite preferred context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 are supported by ribosome profiling data (Figure 7E) and sequence context analysis. The ALA1 result is quantified with a clear \u0394NTE/CDS ratio. The comparison with GRS1 (C101-C103) provides context for understanding the variable effects on near-cognate codons. However, the modest effect on HIS4-lacZ UUG (C104) suggests context may not be the only determinant of near-cognate discrimination, indicating some complexity not fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Several eIF1A NTT variants (K4D, \u0394G8, T6R, T6D) show reduced protein expression, but this reduced expression is insufficient to account for their Ssu- phenotypes. Overexpression of K4D and \u0394G8 variants does not diminish their effects on UUG initiation or eIF1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by Western blot analysis (Figure 2C, Figure 4A, Figure 4\u2014figure supplement 1A) and functional assays with high-copy plasmids (Figure 4\u2014figure supplement 2). The data show that poorly expressed variants like T6R and T6D have minimal phenotypic effects, while overexpressed K4D and \u0394G8 retain their phenotypes, demonstrating that the functional effects are not simply due to reduced protein levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C46",
+      "C48"
+    ],
+    "result": "Structural analysis of the py48S PIC reveals that basic NTT residues K7, K10, R13, and K16 contact mRNA or tRNAi anticodon, R14 contacts 18S rRNA, and the Gly8-Gly9 turn is important for positioning these residues. UM mutations affect these structural elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 and C46, C48 are supported by structural data from the py48S PIC (Hussain et al., 2014) illustrated in Figure 1B-C. The structural basis for NTT function is well-established from published cryo-EM structures. The mapping of UM mutations onto this structure provides a clear structural rationale for their functional effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors predict that UM-associated mutations in human EIF1AX will alter gene expression by increasing discrimination against poor initiation sites, potentially affecting tumor suppressor gene translation and favoring oncogenic transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C13, C106-C107 are predictions based on yeast data and sequence conservation (C105). While the yeast findings are robust, direct evidence in human cells is lacking. The prediction is reasonable given sequence conservation and structural similarity, but remains speculative. The discussion of G6D effects in human UM cells (C108-C112) shows some discrepancies with yeast results, highlighting the need for direct testing in human systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C93",
+      "C94"
+    ],
+    "result": "The manuscript provides extensive background on the translation initiation mechanism, including PIC scanning, AUG recognition, conformational states (POUT/PIN), roles of eIF1 and eIF2, Kozak context effects, and eIF1 autoregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C14-C32, C93-C94 represent established knowledge in the translation initiation field, supported by numerous citations to prior work. These claims provide essential context for interpreting the current findings but are not novel results of this study. The citations are appropriate and the descriptions are consistent with current understanding of translation initiation mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The manuscript describes prior models for eIF1A NTT function, including its role in stabilizing the PIN state, interactions with eIF1 and eIF5-CTD, and a proposed dual role in promoting open conformation then stabilizing closed conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C43 describe models and findings from prior studies (primarily Hussain et al., 2014; Luna et al., 2013; Fekete et al., 2007) that provide the conceptual framework for the current work. These are appropriately cited and accurately represent the prior literature. They establish the rationale for investigating UM-associated mutations but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The manuscript describes the association of EIF1AX mutations with uveal melanoma and proposes alternative hypotheses for their mechanism of action: either weakening PIN state stabilization (increasing discrimination) or impairing open state stabilization (relaxing discrimination).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by citation to Martin et al., 2013. Claims C49-C51 represent hypotheses that motivated the study. The experimental results clearly support the first hypothesis (weakening PIN state) over the alternative. These claims appropriately frame the research question but the hypotheses themselves are not results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The study establishes which specific residues in previously identified NTT segments (7-11, 12-16, 17-21) are responsible for Ssu- phenotypes, and implicates K3 and K4 in initiation accuracy control, though their molecular functions remain undetermined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84 and C87-C90 are supported by the systematic mutagenesis data. The study successfully identifies the key basic residues responsible for previously observed phenotypes of clustered mutations. The acknowledgment that K3/K4 functions remain undetermined (C90) is appropriate given they were not resolved in the py48S structure. Claim C88 about the 17-21 mutation is speculative but reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "The manuscript discusses the relationship between Sui- mutations, Gcd- phenotypes, and PIC conformational states, noting that Ssu- substitutions in eIF1A SI1/SI2 elements suppress Gcd- phenotypes by destabilizing the closed/PIN state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 describe established relationships from prior work (Saini et al., 2010; Dong et al., 2014; Martin-Marcos et al., 2014) that provide context for interpreting the co-suppression results. These are appropriately cited and help explain the mechanistic basis for the observed phenotypes but represent prior knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "A recent study on human UM cells with G6D variant showed reduced bulk translation and decreased RPG translation, but the yeast equivalent T6D did not show similar effects. The authors speculate that RPG reduction in human cells may be a response to reduced bulk translation rather than a direct effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C112 discuss findings from Johnson et al., 2017 in human UM cells and compare them to the current yeast results. The discrepancies between human G6D and yeast T6D effects (C110-C111) are clearly stated. The speculation about RPG reduction (C112) is reasonable but remains untested. This highlights important differences between the systems that warrant further investigation.",
+    "result_type": "MINOR"
+  }
+]

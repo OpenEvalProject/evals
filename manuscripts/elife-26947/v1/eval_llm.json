@@ -1,0 +1,341 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "A large-scale small molecule screen was performed using over 3000 compounds from the Novartis MOA Box and Kinome Box libraries. The screen employed a four-color labeling strategy to simultaneously measure cell size and cell cycle stage in single cells, using FUCCI reporters (mAG-hGem and mKO2-hCdt1) for cell cycle stage, DAPI for DNA content, and Alexa Fluor-conjugated succinimidyl ester (SE) for cell size measurement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C47 describe the screening methodology in detail, including the compound libraries used, the labeling strategy, and the automated image processing pipeline. The methodology is well-documented with appropriate controls and validation (C43 cites prior work validating SE as a cell size measure). The multi-dimensional data collection approach is clearly described and supported by Figure 1A-B.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The screen revealed a negative correlation between early G1 cell size and the proportion of cells in G1 across screened conditions. Chemical treatments that reduced early G1 cell size resulted in larger proportions of cells in G1, suggesting that G1 duration depends on initial cell size. This was confirmed by time-lapse microscopy showing that cells born with smaller nuclei spend longer in G1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 are well-supported by data shown in Figures 1C-D and Figure 3G. The negative correlation is demonstrated across multiple experimental conditions and validated with orthogonal methods (bulk measurements and single-cell time-lapse microscopy). The use of nuclear size as a proxy for cell size is validated by citation to an accompanying manuscript (C52).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Target enrichment analysis of screen hits identified that on-axis compounds (maintaining size-G1 coordination) frequently targeted PI3K/Akt/mTOR pathway components, while off-axis compounds (disrupting coordination) were enriched for MAP kinase targets, particularly the p38 MAPK pathway. Multiple p38 pathway components (p38\u03b1, MK2, TAK1) ranked in the top 1% of significant targets, and over 35 compounds targeting p38 components displayed off-axis phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C65 are supported by the target enrichment analysis shown in Figures 1E-F and supplementary figures. The statistical approach using Fisher's exact test is appropriate for identifying enriched targets. The classification of compounds into on-axis and off-axis categories is methodologically sound and provides a logical framework for identifying pathways involved in size-G1 coordination versus those affecting size independently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Rapamycin (an mTOR inhibitor) was identified as an on-axis compound that maintains the negative correlation between cell size and G1 length despite reducing cell size. Treatment with rapamycin at 5 nM slowed growth rates by almost half, but this effect was buffered by increased cell cycle duration. In contrast, p38 inhibition (SB203580) disrupted the negative correlation between cell size and G1 proportion, while inhibitors of ERK/MEK or JNK pathways did not eliminate this correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are supported by data in Figures 2A-D and Figure 3. The rapamycin dose-response experiments clearly demonstrate maintained coordination (on-axis behavior), while p38 inhibition disrupts this coordination. The specificity to p38 versus other MAPK pathways strengthens the conclusion. Multiple p38 inhibitors with distinct chemical structures show consistent effects, reducing concerns about off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "p38 inhibition results in shorter cell cycles due to decreased G1 length, with no significant changes in S or G2 phase duration. Cells subject to p38 inhibition have smaller nucleus size at G1/S transition compared to controls. This size decrease is caused by shorter growth duration in G1 rather than slower growth rates, as p38-inhibited cells show similar growth rates to control cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 are well-supported by data from both time-lapse microscopy (Figure 3) and bulk measurements. The conclusion that p38 inhibition affects G1 duration rather than growth rate is supported by two independent experimental approaches (Figure 3\u2014figure supplements). However, C77-C78 represent model interpretations rather than direct observations, though they are reasonable inferences from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Genetic knockdown experiments using siRNA revealed that the coordination between cell size and G1 progression is mainly mediated through p38\u03b3 and p38\u03b4 isoforms rather than p38\u03b1 and p38\u03b2. Knockdown of p38\u03b3 or p38\u03b4 significantly weakened or eliminated the negative correlation between cell size and G1 proportion, while knockdown of p38\u03b1 and p38\u03b2 only partially weakened this correlation. Chemical inhibitors SB203580 and BIRB-796 also target p38\u03b3 and/or p38\u03b4 at working concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 are supported by siRNA knockdown data in Figure 4A-B and inhibitor specificity data from cited comprehensive studies. The genetic approach provides orthogonal validation of the chemical inhibitor results. The identification of specific isoforms (p38\u03b3/\u03b4) is a significant mechanistic advance, though the authors acknowledge some differences between chemical and genetic inhibition (C84-C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Knockdown of upstream p38 activators MKK3, MKK6, or MKK4 disturbed the negative correlation between cell size and G1 proportion, while knockdown of MKK7 (a JNK activator) left the coordination intact. This further supports that the coordination of cell size and cell cycle is specific to the p38 pathway and not other MAPK pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by data in Figure 4C-D. The upstream kinase knockdown experiments provide additional validation that the effect is specific to the p38 pathway. The negative control with MKK7 (JNK pathway) strengthens the specificity argument.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Western blot analysis revealed that mTOR inhibition increases p27 levels (a CDK inhibitor that prolongs G1), but co-treatment with p38 inhibitors reverses this effect and reduces p27 levels. This suggests that p38-dependent lengthening of G1 in small cells may be mediated by p27, though the authors note that multiple G1 regulators have been identified as p38 effectors, suggesting potential redundancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C95 are supported by Western blot data in Figure 2C and Figure 2\u2014figure supplement 4. However, C96 is speculative\u2014the data show correlation but not causation. The authors appropriately acknowledge (C97-C98) that p38 has multiple known effectors on G1 progression, and the mechanism may involve redundant pathways. Further experiments (e.g., p27 knockdown) would be needed to establish p27 as a key mediator.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "A size-recovery experiment showed that p38 is activated when cell size is decreased by mTOR inhibition. Prolonged mTOR inhibition (20 hr with Torin-2) reduced average cell size by over 15%. After Torin-2 washout, mTOR activity was restored within 1 hr, but cell size recovery proceeded slowly over 14 hr. Importantly, p38 MAPK remained upregulated long after mTOR activity resumed normal levels, and the dynamics of p38 activity mirrored cell size recovery rather than mTOR activity recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C106 are supported by the recovery experiment data in Figure 5A-B. The temporal dissociation between mTOR activity recovery (1 hr) and p38 activity normalization (tracking with size recovery over 14 hr) provides strong evidence that p38 responds to cell size rather than directly to mTOR inhibition. This is a key experiment supporting the size-sensing model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Using p38 and JNK Kinase Translocation Reporters (KTRs), the authors showed that higher rapamycin concentrations result in smaller cells with higher p38 activity, while JNK activity was not upregulated in proportion to cell size. The negative correlation between cell size and p38 activity persisted for at least 6 hr after release from mTOR inhibition. Importantly, in cells released from mTOR inhibition, p38 activity correlated with cell size only in G1, not in S or G2 phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C112 are supported by KTR reporter data in Figure 5C and supplementary figures. The use of dual-color KTRs for p38 and JNK provides an elegant control showing specificity to p38. The cell cycle stage-specific correlation (C110-C111) is particularly important, as it supports the model that p38 regulates the G1/S transition specifically. The sustained p38 activity after mTOR recovery (C109, C113) further supports size-dependent rather than mTOR-dependent activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Control experiments distinguished between cell size (mass) and mTOR activity effects on p38. Short treatments with anisomycin or hyperosmotic shock strongly activated p38 without reducing cell mass, and p38 activity returned to baseline 6 hr after removal of these stimuli. In contrast, cycloheximide treatment (which reduces cell mass without inhibiting mTOR, and actually activates mTOR) showed sustained p38 activity 6 hr after removal, similar to Torin-2 treatment. This demonstrates that sustained p38 activity accompanies cell size reduction rather than mTOR inhibition or slow p38 inactivation kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C124 describe elegant control experiments (Figure 5D-E) that systematically dissect the relationship between cell size, mTOR activity, and p38 activation. The use of cycloheximide (reduces mass, activates mTOR) and anisomycin/osmotic shock (activate p38 transiently without affecting mass) provides strong evidence that p38 responds to cell mass rather than mTOR activity or having slow inactivation kinetics. These controls significantly strengthen the size-sensing model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Recovery experiments tested whether p38 activity is required for cells recovering from size perturbations. Following Torin-2 treatment and washout, cells normally recover their size within approximately 25 hr. However, when p38 is inhibited during recovery, cell size remains significantly reduced even at 48 hr post-washout. A partial recovery is observed at 6 hr (attributed to restored growth rate), but full recovery requires p38-dependent extension of G1 duration, which becomes defective when p38 is inhibited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C132 are supported by data in Figure 6B. The recovery experiment provides functional evidence that p38 is required for size homeostasis. The interpretation that early recovery reflects restored growth rate while late recovery requires G1 extension (C128-C132) is reasonable given the prior data, though somewhat speculative. The 48 hr timepoint provides strong evidence against alternative explanations like delayed kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "Control experiments showed that inhibition of JNK or ERK (other MAPK pathways) did not repress recovery in cell size, while p38 inhibition increased proliferation rates compared to control during the recovery phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 are supported by data in Figure 6B-C. These controls demonstrate specificity to p38 and support the hypothesis that p38 activation inhibits cell cycle progression in undersized cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The influence of p38 inhibition on size recovery persisted long after the inhibitors were washed out. Cells co-treated with both Torin-2 and p38 inhibitor displayed a marked delay in recovery compared to Torin-2 alone. This delay may suggest a cell-cycle-stage-dependent commitment point in the cell growth cycle, analogous to the restriction point in the cell division cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C135-C136 are supported by data in Figure 6\u2014figure supplement 1, showing persistent effects of transient p38 inhibition. However, C137 is highly speculative\u2014while the delay is interesting, the data do not provide sufficient evidence for a commitment point model. This interpretation would require additional experiments to test directly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C26",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C147",
+      "C148",
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "The study identifies the p38 MAPK pathway as a key regulator coordinating cell size with cell cycle progression in animal cells. Small cells display higher p38 activity and spend more time in G1 than larger cells. Inhibition of p38 MAPK leads to loss of compensatory G1 length extension in small cells, resulting in faster proliferation, smaller cell size, and increased size heterogeneity. The authors propose a model where the p38 pathway responds to changes in cell size and regulates G1 exit accordingly to increase cell size uniformity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion integrates multiple lines of evidence from the screen (C4, C26, C139-C141), KTR experiments (C5, C142), inhibitor studies (C6, C143, C180-C181), and recovery experiments. The model (C7, C147, C182) is well-supported by the collective data, though the precise molecular mechanism of size sensing remains to be elucidated. The study successfully identifies p38 as the first perturbation that breaks the correlation between cell size and G1 length (addressing C25), which is a significant advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Inhibitors of JNK or ERK/MEK induce changes in cell size but do not eliminate the correlation between cell size and G1 length. Instead, these inhibitors shift the correlation to larger or smaller values of cell size, suggesting they may change the target size associated with the checkpoint rather than disrupting the checkpoint itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C150 are supported by data in Figure 2D showing that ERK/MEK and JNK inhibitors maintain the negative correlation but shift it. However, C151 is speculative\u2014while the interpretation is plausible, the data do not directly demonstrate a change in \"target size.\" Alternative explanations (e.g., effects on growth rate or cell cycle duration that maintain proportionality) are not excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Chemical inhibition of p38 results in greater reduction in cell size compared to genetic inhibition. Possible explanations include lower specificity of chemical inhibitors, functional redundancy among p38 isoforms that can compensate for siRNA treatments, or nonspecific cellular responses to siRNA transfection. Despite these differences, both chemical and genetic inhibition result in loss of coordination between cell size and G1 length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is an observation supported by comparing data from chemical (Figure 2-3) and genetic (Figure 4) experiments. Claims C85-C87 are speculative explanations for this difference, appropriately presented as possibilities rather than conclusions. Claim C88 correctly summarizes that despite quantitative differences, both approaches show the key qualitative result of disrupted size-G1 coordination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C152",
+      "C153"
+    ],
+    "result": "A weak negative correlation between G1 length and cellular growth rates was observed using time-lapse microscopy with nuclear size as a proxy for cell size. This connection between growth rate and G1 length has been previously reported in cultured cells and tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C153 are supported by data in Figure 3\u2014figure supplement 1 and citations to prior literature. However, this is presented as an ancillary observation, and the authors appropriately note that the relationship between size-G1 correlation and growth rate-G1 correlation remains to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C178"
+    ],
+    "result": "The multi-parametric screening approach has methodological merit beyond the specific findings about p38. The screen assayed thousands of unsynchronized cells per condition, enabling detection of cell-cycle-dependent effects. The strategy sought to identify compounds that disrupt coordination between two biological processes (cell size and G1 length) rather than inhibiting a specific pathway, demonstrating the power of a systematic 'forward genetics' approach to chemical biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C175 and C178 describe methodological contributions that are well-supported by the successful execution of the screen. The approach of classifying compounds as on-axis versus off-axis based on whether they maintain or disrupt coordination is novel and could be applied to other biological processes. The single-cell, multi-parameter approach enabled identification of cell-cycle-stage-specific effects.",
+    "result_type": "MINOR"
+  }
+]

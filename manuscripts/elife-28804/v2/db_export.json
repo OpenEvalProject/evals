@@ -1,0 +1,1982 @@
+{
+  "submission": {
+    "id": "190cd06e-f9d4-466d-a9ac-975b3fff83e7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:55:30.203586Z",
+    "updated_at": "2025-12-01T20:55:30.203586Z"
+  },
+  "content": [
+    {
+      "id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "submission_id": "190cd06e-f9d4-466d-a9ac-975b3fff83e7",
+      "content_type": "manuscript",
+      "content_text": "# Simultaneous activation of parallel sensory pathways promotes a grooming sequence in Drosophila\n\n## Authors\n\n- Stefanie Hampel<sup>1</sup>\n- Claire E McKellar<sup>1</sup>\n- Julie H Simpson<sup>1</sup> \u2020\n- Andrew M Seeds<sup>1</sup> ([ORCID: 0000-0002-4932-6496](https://orcid.org/0000-0002-4932-6496)) \u2020\n\n### Affiliations\n\n1. Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nA central model that describes how behavioral sequences are produced features a neural architecture that readies different movements simultaneously, and a mechanism where prioritized suppression between the movements determines their sequential performance. We previously described a model whereby suppression drives a Drosophila grooming sequence that is induced by simultaneous activation of different sensory pathways that each elicit a distinct movement (Seeds et al., 2014). Here, we confirm this model using transgenic expression to identify and optogenetically activate sensory neurons that elicit specific grooming movements. Simultaneous activation of different sensory pathways elicits a grooming sequence that resembles the naturally induced sequence. Moreover, the sequence proceeds after the sensory excitation is terminated, indicating that a persistent trace of this excitation induces the next grooming movement once the previous one is performed. This reveals a mechanism whereby parallel sensory inputs can be integrated and stored to elicit a delayed and sequential grooming response.\n\n## Introduction\n\nA major question about nervous system function is how different movements are assembled to form behavioral sequences. One of the primary models of sequential behavior is reminiscent of how animals select among competing behavioral choices. Behavioral competition arises in situations where different mutually exclusive behaviors are appropriate, but they must be performed one at a time (Houghton and Hartley, 1995; Redgrave et al., 1999). These conflicts can be resolved through the suppression of all but the highest priority behavior, as mollusks do to suppress their mating behavior while feeding (Davis, 1979; Kupfermann and Weiss, 2001; Kristan, 2008). In the case of a behavioral sequence, it is proposed that the different movements to be performed are similarly readied in parallel and in competition for output, and a suppression hierarchy determines their priority order of execution (Lashley, 1951; Houghton and Hartley, 1995; Bullock, 2004). Completion of the highest priority movement lifts suppression on movements of lower priority that are subsequently performed according to a new round of competition and suppression. This parallel model could drive behaviors across a range of complexity, from the sequential typing of letters on a keyboard in humans to the selection of which behavior to perform first in mollusks (Houghton and Hartley, 1995). Thus, the identification of examples of simple parallel neural architectures that drive a prioritized selection of movements may inform a broad spectrum of sequential behaviors (Kristan, 2014; Jovanic et al., 2016).\n\nA Drosophila melanogaster grooming sequence provides one example of how conflicting stimuli can induce movement competition that is resolved through a suppression hierarchy. Coating the body of a fly with dust is thought to stimulate competition among different grooming movements that are each responsible for cleaning a particular body part (Phillis et al., 1993; Seeds et al., 2014). We previously presented evidence that the body grooming order is determined through a mechanism where earlier movements suppress later ones (Seeds et al., 2014). For example, removal of dust from the eyes occurs first because eye grooming suppresses cleaning of the other body parts. From a suppression hierarchy among the different grooming movements emerges a sequence that proceeds in the order: eyes > antennae > abdomen > wings > notum. We further proposed a computational model to describe this sequence that features parallel activation of the different grooming movements by dust to induce competition, and hierarchical suppression among the movements to determine their selection order (Seeds et al., 2014). The parallel activation of the movements was proposed based on evidence that stimulation to each body part induces site-directed grooming responses (Vandervorst and Ghysen, 1980; Corfas and Dudai, 1989; Seeds et al., 2014; Hampel et al., 2015). Thus, the simultaneous, or parallel stimulation of sensory neurons by dust would cause different grooming movements to compete for output because only one can be performed at a time. However, it was not confirmed that simultaneous activation of sensory neurons across the body indeed elicits the same prioritized grooming response that we observed using a dust stimulus.\n\nHere, we reveal a neural basis for parallel activation of sensory inputs for a sequential behavior by identifying sensory neurons that stimulate different grooming movements, and by testing the hypothesis that activation of these neurons in parallel elicits a prioritized grooming response. We identify transgenic expression tools for visualizing and optogenetically activating sensory neurons on the body parts that elicit specific grooming movements. This enables the simultaneous activation of sensory neurons across the body to induce competition among their respective grooming movements. As we observed by coating the bodies of flies in dust, whole-body sensory activation elicits grooming that prioritizes the head and then proceeds to the other body parts. This provides direct evidence that the grooming sequence can be induced through simultaneous activation of sensory neurons across the body. These experiments also reveal that flies have a persistent trace of the body parts that were stimulated, which results in delayed and sequential grooming of the stimulated parts. Work presented here lends neural-based evidence in favor of the parallel model of hierarchical suppression among grooming movements and provides new insights into its underlying organization.\n\n## Results\n\n### GAL4 lines targeting sensory neurons across the body that elicit grooming\n\nOur initial goal was to identify GAL4 transgenic lines expressing in sensory neurons across the body, to directly test whether simultaneous activation of these neurons leads to a prioritized grooming response. As an entry point, we examined a collection of previously identified enhancer-driven GAL4 lines that express in different neuronal populations whose activation drove grooming (Seeds et al., 2014). Confocal microscopy imaging of the peripheral nervous system (PNS) expression patterns of different lines from this collection revealed three that express in sensory neurons across the body (R52A06-, R30B01-, and R81E10-GAL4; Figure 1A\u2013F, R52A06-GAL4 shown as an example, Figure 1\u2014figure supplement 1A\u2013D). We classified the different sensory neuron types based on previous anatomical descriptions (Murphey et al., 1989; Cole and Palka, 1982; Dickinson and Palka, 1987; Smith and Shepherd, 1996; Kays et al., 2014) and found that the lines express predominantly in mechanosensory neurons (Figure 1G). However, R30B01-GAL4 also showed expression in chemosensory neurons (Figure 1G).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/28804/elife-28804-fig1-v2.jpg)\n\n**Figure 1.:** (A\u2013E) Peripheral expression pattern of R52A06-GAL4 expressing green fluorescent protein (GFP). Confocal maximum projections are shown. Sensory neurons are in green and autofluorescence from the cuticle is in magenta. Body parts shown are: (A) head, (B) ventral abdomen, (C) dorsal abdomen, (D) notum, (E) wing, and (F) prothoracic leg. Labeled arrows indicate specific sensory classes. In (C) and (D) all GFP positive cells are bristle mechanosensory neurons. Scale bars, 250 \u03bcm. (G) Summary table of the expression patterns of R52A06-, R30B01-, and R81E10-GAL4 in sensory neurons on each indicated body part. (H) Grooming responses to optogenetic activation of sensory neurons targeted by different GAL4 lines expressing ChR2. An optical fiber connected to an LED was used to direct light to the dorsal surface of the anterior or posterior body (Figure 1\u2014figure supplement 2). The fraction of flies that showed a grooming response to the blue light-illuminated body region is plotted (n\u00a0\u2265\u00a040 trials for each body part). Grey shades and labels indicate the region that was illuminated. Chi-squared test, Asterisks: p<0.0001. See Video 1 and Video 2 for representative examples.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28804/elife-28804-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Sensory neurons project their axons (afferents) to specific regions of the central nervous system (CNS) depending on which body part they are from. The neuropile of the CNS visualized with anti-Bruchpilot (magenta). A confocal image maximum projection is shown. (B\u2013D) Three different GAL4 lines expressing GFP in afferent projections from the different body parts. GFP was visualized with anti-GFP antibodies (green). Scale bar, 100 \u03bcm. GAL4 lines shown are R52A06-GAL4 (B), R30B01-GAL4 (C), and R81E10-GAL4 (D).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/28804/elife-28804-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A\u2013B) A fiber optic probe that was connected to a blue light LED was used to direct light to specific body regions. Images show illumination of the posterior (A) or anterior (B) dorsal surfaces of decapitated flies. See Video 1 and Video 2 for representative examples.\n\nWe next tested whether local populations of sensory neurons on specific body regions can elicit individual grooming movements when focally activated. Site-directed grooming responses have previously been investigated using tactile stimulation to particular mechanosensory bristles on the body surface of decapitated flies (Vandervorst and Ghysen, 1980; Corfas and Dudai, 1989). Here, we used optogenetic activation with Channelrhodopsin (ChR2), directing blue light via an optical fiber to particular body regions of the broad sensory GAL4 lines to activate sensory neurons on either the dorsal anterior or posterior body regions of decapitated flies (Figure 1\u2014figure supplement 2A,B). Light directed to the posterior dorsal body surface elicited grooming of the wings, whereas illumination of the anterior dorsal surface elicited grooming of the notum (Figure 1H, Video 1, Video 2). This indicated that site-directed grooming responses can be elicited optogenetically, and that the GAL4 lines express in sensory neurons whose activation can elicit grooming movements for at least two parts of the body.\n\n![Video 1.](https://cdn.elifesciences.org/articles/28804/elife-28804-video1.mp4.jpg)\n\n**Video 1.:** ChR2 was expressed in sensory neurons across the body using R52A06-GAL4.\n\n![Video 2.](https://cdn.elifesciences.org/articles/28804/elife-28804-video2.mp4.jpg)\n\n**Video 2.:** ChR2 was expressed in sensory neurons across the body using R52A06-GAL4.\n\n### Simultaneous excitation of sensory neurons across the body induces a grooming sequence\n\nThe GAL4 lines described above were next used to test a prediction of the model of hierarchical suppression that simultaneous activation of sensory neurons across the body elicits head grooming preferentially (Seeds et al., 2014). Freely moving flies of each line expressing the red light-gated neural activator CsChrimson were exposed to whole body illumination to optogenetically activate their targeted sensory neurons, and grooming responses were subsequently measured. Each of the three GAL4 lines expresses in sensory neurons whose activation can elicit wing or notum grooming, as revealed by localized optogenetic activation (Figure 1G,H). Additionally, each line expresses in eye bristle mechanosensory neurons whose activation we hypothesized could elicit eye grooming, while two of the lines (R52A06- and R30B01-GAL4) also express in antennal Johnston\u2019s Organ neurons that were previously shown to elicit antennal grooming (Hampel et al., 2015). Although these GAL4 lines can elicit several movements from different body sensory neurons, we predicted that activating them simultaneously should elicit only the highest-priority movement, according to the hierarchical suppression model. Indeed, the simultaneous optogenetic activation of body sensory neurons targeted by each GAL4 line resulted in head rather than posterior (abdomen, wing, notum) grooming, consistent with the model of hierarchical suppression (Figure 2A, during red light-on period, Figure 2\u2014figure supplement 2A,B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/28804/elife-28804-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013B) Head (magenta) or posterior body grooming movements (green) elicited with red light-illumination of R52A06-, R30B01-, and R81E10-GAL4 flies expressing CsChrimson. The movements are mutually exclusive. Ethograms of ten individual flies are stacked for each line (left). Histograms show the fraction of flies that were performing specific grooming movements within one-second time bins (right). Gray bars indicate five second presentations of red light. (A) Grooming movements performed by intact flies. (B) Grooming movements performed by decapitated flies. See Video 3, Video 4, and Video 5 for representative examples. Red light illumination of control flies did not elicit grooming (Figure 2\u2014figure supplement 1).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28804/elife-28804-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Ethograms showing head (magenta) or posterior body grooming (green) with red light-illumination of control flies. Ethograms of individual flies are stacked on top of each other. (B) Histogram shows the fraction of flies that were performing each grooming movement within one-second time bins. Gray bars indicate a five second presentation of red light. This is the control for the experiment shown in Figure 2.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/28804/elife-28804-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A\u2013B) Box plots show the percent time flies spent performing head (A) or posterior grooming (B) with optogentic activation of neurons targeted by 52A06-, 30B01-, and 81E10-GAL4 (from experiment shown in Figure 2A). Plotted time bins include the period before the optogenetic stimulus (pre), the three optogenetic stimuli (on), and the three post stimulus rest periods (1-3). Bottom and top of the boxes indicate the first and third quartiles respectively; the white line specifies median; whiskers show the upper and lower 1.5 IQR; magenta and green asterisks indicate data outliers (n\u00a0=\u00a010 for each box). Black asterisks show *p<0.05, **p<0.01, Friedman test followed by post-hoc Wilcoxon signed rank test for pairwise comparisons with Bonferroni-Holm correction for multiple comparisons.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/28804/elife-28804-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Ethograms showing different grooming movements elicited with red light-illumination of R52A06-, R30B01-, or R81E10-GAL4 flies expressing CsChrimson. Ethograms of ten individual flies are stacked for each GAL4 line. Gray bars indicate five-second presentations of a red light stimulus. Colors indicating the grooming movements are shown above the ethograms. The same ethograms with binned head and posterior grooming movements are shown in Figure 2A. (B) Grids show the fraction of flies performing a specific grooming movement as their first, second, third, or fourth novel movement from the onset of the red light stimulation until the beginning of the next red light stimulus. The fraction of flies performing notum grooming is low because most flies did not perform that grooming movement. Notum grooming was similarly rare with dust induced grooming (Seeds et al., 2014).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/28804/elife-28804-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Head (magenta) or posterior body grooming (green) elicited with red light-illumination of R30B01-GAL4 flies expressing CsChrimson. Only flies that performed posterior body grooming at the moment of the second stimulus are plotted. Ethograms of ten individual flies are stacked (left). Histograms show the fraction of flies that were performing specific grooming movements within one-second time bins (right). Gray bars indicate five-second presentations of red light. Intervals between the optogenetic stimulations are 30 s, compared to 60 s in Figure 2.\n\nOptogenetic activation of sensory neurons across the body also elicited a grooming sequence reminiscent of dust-induced grooming. Flies groomed their heads at the onset of a five-second red light stimulus, and then transitioned to grooming their posterior bodies during the period after the light was turned off (Figure 2A, Figure 2\u2014figure supplement 2A,B). One trivial explanation for this sequence could be that optogenetic activation of sensory neurons on the posterior body elicited grooming with a delay, whereas there was no delay to groom with activation of the head sensory neurons. We tested for this delay to groom the posterior body using decapitated flies that no longer received a sensory drive to groom their heads. In contrast to intact flies, activation of the posterior body sensory neurons of decapitated flies elicited posterior grooming during the red light (Figure 2B). Thus, a delay does not explain the sequence because head and posterior grooming can be elicited on similar time scales. Instead, evidence that intact flies do not display posterior grooming with the light stimulation supports the hypothesis that it is suppressed by head grooming (discussed below). Notably, optogenetic activation of sensory neurons across the body causes flies to groom their bodies in the same order as when they were coated in dust (head > abdomen > wings\u00a0>\u00a0notum) (Figure 2\u2014figure supplement 3A,B, Video 3, Video 4, and Video 5). Further, the posterior body grooming sequence continued through the minute after the cessation of the red light, while the sensory neurons were no longer activated (Figure 2A, green histogram). This suggests a persistent trace of posterior sensory neurons that had been activated, which allowed each movement to be elicited once the previous grooming movement terminated.\n\n![Video 3.](https://cdn.elifesciences.org/articles/28804/elife-28804-video3.mp4.jpg)\n\n**Video 3.:** CsChrimson was expressed in sensory neurons using R52A06-GAL4. The infrared light in the bottom right corner indicates when the red light was on to activate the sensory neurons.\n\n![Video 4.](https://cdn.elifesciences.org/articles/28804/elife-28804-video4.mp4.jpg)\n\n**Video 4.:** CsChrimson was expressed in sensory neurons using R30B01-GAL4. The infrared light in the bottom right corner indicates when the red light was on to activate the sensory neurons.\n\n![Video 5.](https://cdn.elifesciences.org/articles/28804/elife-28804-video5.mp4.jpg)\n\n**Video 5.:** CsChrimson was expressed in sensory neurons using R81E10-GAL4. The infrared light in the bottom right corner indicates when the red light was on to activate the sensory neurons.\n\nThe behavior resulting from simultaneous activation of sensory neurons across the body supports a role of suppression in establishing the grooming movement hierarchy. Evidence of suppression was found when sensory neurons were reactivated during the period when flies had transitioned to posterior grooming (Figure 2A). The hierarchical suppression model predicts that switching the red light back on during this period to reactivate sensory neurons across the body would result in head grooming, coupled with the termination of ongoing posterior grooming. Indeed, in cases where flies were engaged in posterior grooming, delivery of the next red light stimulus caused flies to terminate posterior grooming and switch to grooming their heads. This is seen in Figure 2A (histogram plots on right, green traces) where the fraction of flies grooming their posterior bodies drops to zero at the onset of the red light (also shown in Figure 2\u2014figure supplement 2B). This termination of posterior grooming was still observed when we shortened the time between light stimuli and only examined trials where flies were grooming at the moment the next stimulus was delivered (Figure 2\u2014figure supplement 4). Thus, we find optogentic evidence consistent with the hypothesis that the grooming sequence is driven by a hierarchical suppression mechanism, as was revealed from experiments using dust as a natural stimulus (Seeds et al., 2014).\n\n### Identification of mechanosensory neurons that elicit specific grooming movements\n\nWe next sought to test whether the hierarchy of grooming movements could be observed with competing activation of defined sets of sensory neurons that elicit distinct movements. We first acquired transgenic lines for manipulating sensory neurons on specific body parts. Eye grooming is the most hierarchically superior, and is thus elicited first in competition with other grooming movements (Seeds et al., 2014). Based on previous work implicating the interommatidial bristle mechanosensory neurons in eye grooming in the praying mantis and cricket (Honegger, 1977; Honegger et al., 1979; Zack and Bacon, 1981), we found that these neurons elicit eye grooming in Drosophila. A search through an image database of brain expression patterns from the Vienna Drosophila collection identified a LexA line (VT17251-LexA) that expressed exclusively in the interommatidial bristle mechanosensory neurons. The hundreds of bristles on the compound eyes each contains the dendrite of a sensory neuron, which also projects an axon into an afferent tract that enters the CNS in the subesophageal zone (SEZ) (Figure 3A,B). In contrast to the praying mantis and cricket, the fly eye bristle afferents project only to the SEZ, and not also the prothoracic neuromeres (Figure 3B). We tested whether activation of eye bristle mechanosensory neurons would elicit grooming by expressing CsChrimson using VT17251-LexA and exposing flies to red light. Indeed, optogenetic activation of the eye bristle mechanosensory neurons elicited eye grooming (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/28804/elife-28804-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013B) The expression pattern of VT17251-LexA in eye bristle mechanosensory neurons. The neurons were stained with anti-GFP (green) and the brain neuropile is stained with anti-Bruchpilot (magenta). Both images are maximum intensity projections. Scale bars, 100 \u03bcm. (A) Expression pattern shown in the semi-intact head. The eye and head cuticle is shown in blue. (B) Expression pattern in the CNS. White dashed line indicates the trajectory of eye bristle mechanosensory neuron axons found from the more intact preparations in (A). (C) Eye grooming bout rate with optogentic activation of neurons targeted by VT17251-LexA. Bottom and top of the boxes indicate the first and third quartiles respectively; median is the red line; whiskers show the upper and lower 1.5 IQR; red dots are data outliers (n\u00a0=\u00a010 for each box; asterisks show p<0.001, Kruskal-Wallis and post hoc Mann-Whitney U pairwise test).\n\nWe next acquired a transgenic driver line for manipulating sensory neurons that could elicit wing grooming, which is lower in the hierarchy than eye grooming. From our previous screen (Seeds et al., 2014), we identified a GAL4 line that expresses in neurons whose activation could elicit wing grooming and showed expression in sensory neurons on the wings (Figure 4\u2014figure supplement 1A, R31H10-GAL4, behavioral data not shown). However, the identities of those sensory neurons were obscured by expression in other cells (Figure 4\u2014figure supplement 1B). Therefore, we used the intersectional Split GAL4 (spGAL4) technique to restrict expression to only the sensory neurons (Luan et al., 2006; Pfeiffer et al., 2010). spGAL4-mediated expression occurs only when the two GAL4 domains, the GAL4 DNA binding domain (DBD) and the transcriptional activation domain (AD), are expressed in the same cells. We generated spGAL4 flies that were anticipated to target the wing sensory neurons by expressing the DBD in the pattern of R31H10-GAL4 and the AD in the pattern of R30B01-GAL4 (Figure 4\u2014figure supplement 1B,C).\n\nThe R30B01-AD \u2229 R31H10-DBD combination expresses in two main types of mechanosensory neurons on the wings and halteres (Figure 4A\u2013E). The first type includes campaniform sensilla, which are dome-shaped structures on the fly cuticle that are each innervated by a mechanosensory neuron that responds to deformations of the cuticle (Dickinson and Palka, 1987). Campaniform sensilla on the proximal part of the wing are largely clustered in fields, whereas individual sensilla are found along the distal wing (Palka et al., 1979; Cole and Palka, 1982; Palka et al., 1986; Dickinson and Palka, 1987). R30B01-AD \u2229 R31H10-DBD flies show a sparse labeling of neurons in the proximal fields (5 to 10 out of\u00a0~77 neurons (median\u00a0=\u00a06.5), Figure 4A,B, white asterisks), and expression in the majority of the distal campaniform sensilla (5 to 6 out of 8 neurons (median\u00a0=\u00a05), Figure 4A,C, yellow asterisks). The spGAL4 line also expresses in campaniform sensilla on the halteres (7 to 10 out of\u00a0~139 neurons, Figure 4E). The other type of sensory neurons targeted by R30B01-AD \u2229 R31H10-DBD are mechanosensory bristle neurons on the distal wing (expression in 3\u20135 out of\u00a0~221 neurons (median\u00a0=\u00a03.5), Figure 4A,D, white arrowheads) (Hartenstein and Posakony, 1989). These different neurons on the wings and halteres send projections to the ventral nervous system (VNS), where they follow diverse paths locally, with some further ascending to the SEZ in the brain (Figure 4F). The ascending afferents are likely to be from campaniform sensilla on the halteres and proximal wings, whereas afferents that remain in the VNS are likely to be from wing mechanosensory bristle neurons and distal campaniform sensilla (Palka et al., 1979; Ghysen, 1980; Dickinson and Palka, 1987).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/28804/elife-28804-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013E) The expression pattern of R30B01-AD \u2229 R31H10-DBD in sensory neurons of the wings and halteres. Native GFP fluorescence is shown in green and autofluorescence from the cuticle is in magenta. Maximum intensity projections are shown. The proximal wing is to the right and the distal wing is to the left. (A) Sensory neurons on the wing. White boxes and letters indicate the regions shown in B\u2013D. The different symbols indicate the sensory neuron types on the wing as proximal campaniform sensilla (white asterisks), distal campaniform sensilla (yellow asterisks), or bristle mechanosensory (white arrowheads). Scale bar, 250 \u03bcm. (B\u2013D) Larger images of the regions shown in A. Scale bars, 50 \u03bcm. Shown are the proximal campaniform sensilla (B), distal campaniform sensilla (C), and bristle mechanosensory neurons (D). (E) Expression in the haltere campaniform sensilla (asterisks). Scale bar, 100 \u03bcm (F) CNS expression visualized by co-stain with anti-GFP (green) and anti-Bruchpilot (magenta). Arrows indicate the CNS entry points of afferents from the wings and halteres, and the location of ascending projections from some of these afferents. Scale bar, 100 \u03bcm. (G) Wing grooming bout rate with optogentic activation of neurons targeted by R30B01-AD \u2229 R31H10-DBD. Data are displayed as described for Figure 3C. Asterisks: p<0.0001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28804/elife-28804-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** CNS (A) and wing (B) expression patterns of R31H10-GAL4 that targets neurons whose activation elicits wing grooming. Maximum intensity projections are shown. (A) The CNS expression is visualized by co-staining with anti-GFP (green) and anti-Bruchpilot (magenta). Arrows indicate the CNS entry points of afferents from the wings and halteres. Scale bar, 100 \u03bcm. (B) Wing expression pattern visualized using the native GFP fluorescence in green and autofluorescence from the cuticle in magenta. Scale bar, 250 \u03bcm. (C) Wing expression pattern of R30B01-GAL4. The different symbols indicate the sensory neuron types on the wing as proximal campaniform sensilla (white asterisks), distal campaniform sensilla (yellow asterisks), or bristle mechanosensory (white line). Scale bar, 250 \u03bcm.\n\nOptogenetic activation of the neurons targeted by R30B01-AD \u2229 R31H10-DBD expressing CsChrimson elicited wing but not haltere grooming (Figure 4G). The parsimonious explanation for this result is that the grooming was elicited by sensory neurons on the wing. However, because the line also expresses in haltere campaniform sensilla, we cannot rule out their involvement in the behavior. Nevertheless, the spGAL4 driver affords access to sensory neurons for independent control of wing grooming.\n\n### Competition between eye and wing sensory neurons elicits prioritized grooming\n\nThe hierarchical associations between eye and wing grooming were next examined by activating their respective sensory pathways. We first compared the individual grooming responses to acute activation of either the eye bristle mechanosensory neurons or the wing/haltere sensory neurons. Flies were exposed to five-second pulses of red light, followed by rest periods with no light. Activation of the eye bristle mechanosensory neurons elicited eye grooming during the period when the red light was on that decayed when it turned off (Figure 5A, top, magenta, Video 6). In contrast, activation of the wing/haltere sensory neurons elicited wing grooming with the red light that persisted after light cessation (Figure 5A, middle, green, Video 7). Importantly, activation of either the eye bristle mechanosensory neurons or the wing sensory neurons alone did not elicit the other corresponding grooming movement, or an anterior-to-posterior grooming sequence. Thus, activation of these specific sensory types only elicits grooming of its corresponding body part.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/28804/elife-28804-fig5-v2.jpg)\n\n**Figure 5.:** (A) Ethograms (left) and histograms (right) showing eye grooming (magenta) or wing grooming (green) elicited with red light-activated CsChrimson expressed in different transgenic lines. The lines express in sensory neurons on the eyes (VT17251-LexA (top row)), wings and halteres (R30B01-AD \u2229 R31H10-DBD (middle row)), or eyes, wings, and halteres (R31H10-AD \u2229 R34E03-DBD (bottom row)). Data is plotted as described in Figure 2. See Video 6, Video 7, and Video 8 for representative examples. (B) GFP expression pattern of R31H10-AD \u2229 R34E03-DBD in the CNS. Image shows a maximum intensity projection of a co-stain with anti-GFP (green) and anti-Bruchpilot (magenta). Arrows indicate the body part each sensory projection is from, and the location of ascending projections from the wings and halteres. Scale bars, 100 \u03bcm.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28804/elife-28804-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) The mean fraction of flies performing head or posterior grooming for each frame before, during, and after the three different stimuli shown in Figure 5A (bottom). The envelope shows the standard error of the mean. The spGAL4 line (R31H10-AD \u2229 R34E03-DBD) expresses CsChrimson in sensory neurons on the eyes, wings, and halteres. (B) The average time to perform head or posterior body grooming after the stimulus onset. Error bars indicate standard error of the mean. Statistical significance was assessed using a Mann-Whitney U test (***p<0.0001).\n\n![Video 6.](https://cdn.elifesciences.org/articles/28804/elife-28804-video6.mp4.jpg)\n\n**Video 6.:** CsChrimson was expressed in eye bristle mechanosensory neurons using VT17251-LexA. The infrared light in the bottom right corner indicates when the red light was on to activate the sensory neurons.\n\n![Video 7.](https://cdn.elifesciences.org/articles/28804/elife-28804-video7.mp4.jpg)\n\n**Video 7.:** CsChrimson was expressed in wing and haltere sensory neurons using R30B01-AD \u2229 R31H10-DBD. The infrared light in the bottom right corner indicates when the red light was on to activate the sensory neurons.\n\nWe next tested whether activation of the eye bristle mechanosensory neurons and wing/haltere sensory neurons at the same time would elicit a prioritized eye grooming response, as is predicted by the model. For this experiment, we identified a spGAL4 combination (R31H10-AD \u2229 R34E03-DBD) that expressed both in the eye bristle mechanosensory neurons and the same three categories of sensory neurons on the wings and halteres that were expressed in the R30B01-AD \u2229 R31H10-DBD combination (Figure 5B). Simultaneous optogenetic activation of these defined sensory neurons elicited prioritized grooming that started with the eyes and then proceeded to the wings (Figure 5A, bottom, Figure 5\u2014figure supplement 1A,B, Video 8), like what we observed with activation of sensory neurons across the body (Figure 2). Interestingly, the transition of eye to wing grooming occurred within the stimulus period, suggesting that eye grooming became inhibited by wing grooming during the stimulus. This may reveal a prediction of the model of hierarchical suppression that later movements in the sequence can suppress earlier ones (see Discussion). However, the prioritized suppression came from eye grooming, as any ongoing grooming of the wings terminated and all flies groomed their eyes with each red light stimulus (Figure 5A, bottom, Figure 5\u2014figure supplement 1A,B). This experiment demonstrates the prioritization between grooming movements through direct optogenetic activation of the sensory neurons that elicit grooming of specific body parts. This strengthens the conclusion of our previous work that the sequence occurs when the grooming movements are activated in parallel and then sequentially prioritized through hierarchical suppression (Seeds et al., 2014).\n\n![Video 8.](https://cdn.elifesciences.org/articles/28804/elife-28804-video8.mp4.jpg)\n\n**Video 8.:** CsChrimson was expressed in eye, wing, and haltere sensory neurons using R31H10-AD \u2229 R34E03-DBD. The infrared light in the bottom right corner shows when the red light was on to activate the sensory neurons.\n\n## Discussion\n\nThe goal of this work was to test the prediction of the model of hierarchical suppression that simultaneous activation of sensory neurons on different body parts elicits a prioritized grooming response. Two lines of evidence led us to this prediction. The first was based on our previous finding that coating the body of the fly in dust elicits grooming that prioritizes head over posterior body grooming (Seeds et al., 2014). The second was based on data showing that local stimulation to the body surface elicits site-specific grooming responses (Vandervorst and Ghysen, 1980; Corfas and Dudai, 1989; Seeds et al., 2014; Hampel et al., 2015). Thus, we proposed that sensory neurons across the body are stimulated in parallel by dust to elicit competition among their respective grooming movements. Here, we test this by identifying transgenic driver lines for targeting and directly activating sensory neurons that elicit grooming, allowing us to bypass the dust stimulus and reveal the underlying sensory neurons. Using simultaneous optogenetic activation of sensory neurons across the body we observe the same anterior-to-posterior prioritization among the grooming movements that occurs when flies are coated in dust. This lends strong support to the hypothesis that the grooming movements are activated in parallel, and are thus selected in a hierarchically determined competition through suppression.\n\n### Sensory neurons involved in grooming behavior\n\nOne aim of this work was to identify sensory neurons that can induce grooming behavior. The bristles are canonically thought to be involved in insect grooming based on evidence that their tactile stimulation on different body parts induces site directed grooming responses (Vandervorst and Ghysen, 1980; Corfas and Dudai, 1989; Page et al., 2004). Here, we provide evidence that direct activation of the bristle mechanosensory neurons can elicit grooming. We identify the fruit fly interommatidial bristle mechanosensory neurons based on their anatomical similarity to those of the praying mantis and cricket (Honegger et al., 1979; Zack and Bacon, 1981). Next, we use a transgenic driver line that expresses in these neurons to show that their optogenetic activation elicits eye grooming. We also identify different spGAL4 lines that express in neurons whose activation elicits wing grooming. However, these lines express both in bristle mechanosensory neurons and campaniform sensilla, raising the question of whether one or both sensory types are involved. Given the wealth of data implicating the bristles in grooming (Tuthill and Wilson, 2016), the parsimonious explanation is that the wing bristle mechanosensory neurons are involved. However, there is also a precedent for the involvement of non-bristle mechanosensory neurons such as the campaniform sensilla. For example, we previously showed that Johnston\u2019s Organ chordotonal neurons can detect displacements of the antennae to induce antennal grooming (Hampel et al., 2015), and others have shown that gustatory neurons on the wing can detect different chemicals to trigger grooming (Yanagawa et al., 2014). Therefore, further work is required to resolve which sensory neurons are involved in wing grooming.\n\nOne outstanding question is whether the sensory neurons have a direct role in establishing hierarchical suppression. We previously proposed two mechanisms of hierarchical suppression (Seeds et al., 2014). One is that unidirectional inhibitory connections between the movements drive suppression, a mechanism not likely to involve the sensory neurons. The other is that differences in sensitivity to dust across the body establish a gradient of sensory drives among the grooming movements, leading to suppression through winner-take-all competition. One way that sensitivity differences could be established is through differing numbers of receptors on each body part. For example, if we assume that the bristle mechanosensory neurons on the different body parts detect dust to elicit grooming (which remains to be shown), a comparison of bristle numbers on different body parts gives mixed support for this hypothesis. There are 600, 221, and 235 bristles reported to be on the eyes, wings, and notum respectively (Hartenstein and Posakony, 1989; Cadigan et al., 2002). The eyes are the highest priority part to be groomed, and have 2.7 times more bristles than the wings, which is consistent with the suppression hierarchy. In contrast, the lowest priority body part is the notum, which has more bristles than the wings, arguing against the hypothesis. Furthermore, given that other sensory neuron types elicit grooming (e.g. chordotonal and gustatory neurons), there may be multiple ways of detecting dust (Yanagawa et al., 2014; Hampel et al., 2015). Alternatively, hierarchical suppression could be established at the level of sensory neurons by regulating their output through presynaptic inhibition (Blagburn and Sattelle, 1987; Burrows and Matheson, 1994; Clarac and Cattaert, 1996; Rudomin and Schmidt, 1999). For example, the feeding behavior of the medicinal leech causes presynaptic inhibition of mechanosensory neurons, which suppresses touch-induced behavioral responses (Gaudry and Kristan, 2009). Future experiments will test such hypotheses about whether hierarchical suppression is established at the level of sensory neurons.\n\n### Using optogenetic control of sensory neurons to further probe the neural mechanisms of hierarchical suppression\n\nThe use of optogenetics to activate sensory neurons reveals new insights into the neural mechanisms that drive grooming behavior. One striking example is evidence of a persistent trace of those sensory neurons that were optogenetically activated (next Discussion section). Other data in Figure 5A may show evidence of a prediction of the model of hierarchical suppression that later movements in the sequence can suppress earlier ones. A comparison of the eye grooming elicited by activating eye bristle mechanosensory neurons alone, versus co-activating eye and wing/haltere sensory neurons, reveals an earlier termination of eye grooming and the occurrence of wing grooming (compare Figure 5A, top and bottom panels). One explanation for this could be that wing grooming suppresses eye grooming. Our model indicates that grooming movements compete for output through a winner-take-all mechanism that selects the movement with the highest \u2018activation level\u2019 and suppresses others (Seeds et al., 2014). Activation levels are set by the relative amounts of dust on the body parts, and by a hierarchical weighting mechanism across the different movements. When more than one body part is covered in dust, the first movement is selected because it has the highest activity level. The removal of dust from that part causes the activity level to drop below that of the next movement that is consequently selected by suppressing the previous movement. Thus, the suppression of an earlier movement (e.g. eye grooming) by a later movement (e.g. wing grooming) is predicted by the model, providing a plausible explanation for the result.\n\nAlthough suppression of eye by wing grooming is predicted by the model, it is unclear why the flies transition to wing grooming during the optogenetic stimulus (Figure 5A, bottom panels). The continual optogenetic stimulation period might be likened to a hypothetical scenario where the fly could not remove dust from its eyes. Therefore, eye grooming might be expected to continue throughout the stimulation period, which would suppress wing grooming. The unexpected transition from eye to wing grooming during the stimulation period could occur if the activation level of eye grooming drops below wing grooming. One possible explanation is based on observations that continual tactile stimulation of bristle mechanosensory neurons causes habituation and loss of grooming responses (Corfas and Dudai, 1989). Similarly, optogenetic stimulus-dependent habituation might decrease the sensory drive to the point that wing grooming suppresses eye grooming, but not enough to abolish eye grooming when it is activated alone (as seen in the top panel of Figure 5). Another possibility is that the activation level of posterior grooming increases to the point that it surpasses eye grooming. There is evidence that grooming responses can temporally sum consecutive sensory stimuli, indicating a mechanism that can store and increase excitability to elicit a grooming response (Sherrington, 1906; Stein, 2005; Guzulaitis et al., 2013). Experiments that address these and other possible mechanisms will provide new insights into the neural mechanisms that drive the grooming sequence.\n\nFuture studies will address how changing the relative activation levels between grooming movements results in a shift of suppression such that later movements suppress earlier ones. This could be tested by extending the fiber optic-directed optogenetic approach used in this study (Figure 1H), such that two different body part sensory populations are differentially stimulated with adjustable relative levels of optogenetic illumination. This would allow for an assessment of whether reduced optogenetic light power on the eyes, and increased light power to the wings results in prioritized grooming of the posterior body. In effect, changing the illumination levels on the different body parts could mimic the loss of dust as flies clean the different parts of their bodies.\n\n### Persistent neural activity within grooming neural circuits\n\nEmerging behavioral evidence indicates that neural circuits controlling Drosophila grooming movements have mechanism(s) for maintaining excitability. This was originally proposed from a study identifying a mechanosensory circuit that elicits persistent grooming of the antennae (Hampel et al., 2015). That is, neurons within this circuit elicit grooming that continues for tens of seconds beyond their optogenetic activation. Work presented here reveals that activation of wing sensory neurons similarly elicits persistent grooming. Interestingly, grooming responses that outlast their stimulus have also been described in vertebrates, suggesting that persistence is a common feature of grooming (Sherrington, 1906; Stein, 2005). Despite the prevalence of persistent grooming, its biological function remains unclear. One possibility is that persistence prevents unnecessary switches between behaviors (Redgrave et al., 1999); for example swimming responses can last beyond the initial stimulus so that an animal can safely avoid a predator. In the case of grooming, persistence may ensure that a dirty body part is thoroughly cleaned before switching to another behavior.\n\nWe also infer the maintenance of excitability within grooming neural circuits from the observation that brief activation of sensory neurons across the body elicits a grooming sequence. That is, flies groom their heads and then transition to their posterior bodies, even during the period after the red light has turned off. This indicates that flies maintain a persistent trace of which body parts are stimulated to elicit a delayed and sequential grooming response. We postulate that this occurs when the simultaneous stimulation of sensory neurons across the body activates each grooming movement in parallel. Eye grooming occurs first by suppressing grooming movements occurring later (Seeds et al., 2014), however the circuitry for each later movement remains active without requiring further sensory input. The next movement is then elicited via this persistent neural activity once suppression from eye grooming ceases. If this is the case, it raises the question of how the previous movement terminates to allow the next movement to proceed. Further, it is unclear how circuits that drive later grooming movements retain neural excitability. Such acquisition and maintenance of excitability is reminiscent of a previously described feature of grooming called temporal summation, whereby successive subthreshold stimuli are summed to elicit grooming (Sherrington, 1906; Stein, 2005; Guzulaitis et al., 2013). Thus, both temporal summation and the grooming sequence observed here point to a mechanism within the grooming neural circuitry that maintains a persistent trace of the sensory stimulus.\n\nHow does a mechanism that maintains excitability within the grooming neural circuitry affect our previously proposed model of grooming behavior? Our previous model indicated that constant stimulation is necessary for each grooming movement to be active (Seeds et al., 2014). That is, dust on a body part provides a constant drive to groom that is lessened through its removal. Indeed, a computational model where the movements are driven entirely by the presence of dust produces grooming that resembles dust-induced grooming. This indicates that the model well describes grooming that occurs over relatively long time scales (~30 min). However, based on observations that grooming persists after a brief stimulus, we now propose that the circuitry contains a neural mechanism that allows grooming movements to remain active on shorter time scales (tens of seconds). The ability to identify and manipulate the sensory neurons that elicit grooming movements and their downstream circuits now enable experiments to determine how persistent neural excitability is acquired and maintained.\n\n## Materials\u00a0and\u00a0methods\n\n### Fly stocks and rearing conditions\n\nThe GAL4 lines used in this study were produced by Gerald Rubin\u2019s lab at Janelia Research Campus and are available from the Bloomington Drosophila stock center (Jenett et al., 2012). The lines were identified in a screen for those that expressed GAL4 in neurons whose activation could elicit grooming behavior (Seeds et al., 2014). In this work, we screened through the images of the CNS expression patterns of these GAL4 lines (Jenett et al., 2012), searching for those with expression in afferents from each of the different body parts (Figure 1\u2014figure supplement 1A\u2013D). These lines were selected for detailed behavioral and anatomical analysis as described in the results section. The control used for the GAL4 lines was BDPGAL4U, which contains the vector backbone used to generate each GAL4 line (including GAL4), but lacks any enhancer to drive GAL4 expression (Seeds et al., 2014). The Split GAL4 stocks were produced by Gerald Rubin\u2019s lab according to previously described methods (Pfeiffer et al., 2010). VT17251-LexA was a gift from the lab of Barry Dickson. Controls for the Split GAL4 stocks were produced in the same way as BDPGAL4U, but each spGAL4 half was used in place of GAL4 (Hampel et al., 2015).\n\nTransgenic flies carrying the following UAS drivers were from the following citations: UAS-dTrpA1 (Hamada et al., 2008), 20xUAS-mCD8::GFP (pJFRC7) (Pfeiffer et al., 2010), 13xLexAop-myr::GFP (pJFRC19) (Pfeiffer et al., 2010), UAS-Channelrhodopsin-2 (Hwang et al., 2007), and 20xUAS-CsChrimson (attP18) (Klapoetke et al., 2014). GAL4, spGAL4, and LexA lines were crossed to their respective UAS or LexAop drivers, and the progeny were reared on cornmeal and molasses food at 21\u00b0C and 50% relative humidity using a 16/8 hr light/dark cycle. For optogenetic experiments using CsChrimson or ChR2, flies were reared in the dark on food containing 0.4 mM all-trans-retinal. All experiments were done with five to eight day old males.\n\n### Channelrhodopsin-mediated activation of sensory neurons using decapitated flies\n\nTwo different regions of the bodies of decapitated flies were illuminated to locally activate sensory neurons expressing Channelrhodopsin (ChR2). ChR2 was used for these experiments because the intensity of the blue light used for its activation is attenuated by the cuticle of the fly (Inagaki et al., 2014). Therefore, blue light-elicited grooming would likely be caused by activation of the sensory neurons on the illuminated region of the body surface rather than activation of afferents inside the fly that project to the CNS from other body parts. For decapitations, flies were cold-anesthetized, decapitated using a standard razor blade, and allowed to recover for 10\u201320 min. The flies were positioned on a slide for the experiment using a fine paint brush. A 473 nm blue light LED (Nichia Corp, Tokushima, Japan) was attached to an optical fiber (1 mm in diameter) to direct light to a specific region on the fly. The optical fiber was held approximately 1 mm from the target body region to deliver a blue light stimulus with a luminance of 0.075 mW/mm2. The light was directed towards the dorsal posterior region, away from the anterior body, to activate sensory neurons primarily on the wings (Figure 1\u2014figure supplement 2A). Alternatively, the light was directed towards the dorsal anterior region, away from the posterior body, to activate sensory neurons primarily on the notum (Figure 1\u2014figure supplement 2B). The LED stimulus was controlled using a Grass SD9 stimulator (Astro-Med Inc., Warwick, RI) that delivered 10 Hz pulses that were 20 milliseconds in duration, with 8-millisecond delays between pulses. Each fly was subjected to stimulation on each body region in random order; however, in some cases the flies would jump during the experiment and could not be used further. A grooming response to the illuminated body region within a ten-second time frame was scored as a positive response. The fraction of flies that responded was plotted. The number of trials for each dorsal body region for each line were: R52A06-GAL4, anterior (n\u00a0=\u00a0100), posterior (n\u00a0=\u00a0100); R30B01-GAL4, anterior (n\u00a0=\u00a040), posterior (n\u00a0=\u00a061); R81E10-GAL4, anterior (n\u00a0=\u00a086), posterior (n\u00a0=\u00a089). Statistical significance was addressed using Chi-Square tests and Bonferroni correction.\n\n### CsChrimson-mediated activation of sensory neurons using freely moving flies\n\nThe camera and behavioral setups used for recording freely moving flies with optogentic activation were described previously (Seeds et al., 2014; Hampel et al., 2015). Flies were cold anesthetized, loaded into behavioral chambers, and allowed to recover for at least ten minutes. R52A06-, R30B01-, and R81E10-GAL4 were used to express the light-gated channel CsChrimson. For this experiment, we used CsChrimson for optogenetic activation rather than ChR. In contrast to the blue light used for ChR, the red light used for gating CsChrimson readily penetrates the fly cuticle (Inagaki et al., 2014), allowing for uniform activation of sensory neurons across the body, regardless of the flies\u2019 orientation. Our initial experiments using optogenetic activation of the neurons targeted by these GAL4 lines revealed that high levels of red light activation caused defects in motor coordination. This was likely caused by the strong activation of sensory neurons across the body, some of which are known to be involved in proprioception (e.g. femoral chordotonal organs). Therefore, it was necessary to reduce the red-light power to the point where it elicited grooming without causing coordination defects. The light power that met these requirements for each GAL4 line are: R52A06-GAL4 (0.066 mW/mm2), R30B01-GAL4 (0.066 mW/mm2), and R81E10-GAL4 (0.077 mW/mm2). The light power used for each LexA and spGAL4 line was: VT17251-LexA (0.382 mW/mm2), R30B01-AD \u2229 R31H10-DBD and R31H10-AD \u2229 R34E03-DBD (0.135 mW/mm2). The red light frequency was 5 Hz (0.1 s on/off) for 5 s, followed by 30 or 60 s intervals where the red light was off. The experiment consisted of a total of three photostimulation periods with 30 or 60 s intervals between each stimulation. The experiment was recorded for manual annotation of the grooming movements performed.\n\nThe recorded grooming movements of flies were manually annotated as described previously (Seeds et al., 2014). For the ethogram and histogram plots, the different head grooming movements (e.g. eye, antennal, and proboscis grooming) were binned (1 s time bins) and plotted as head grooming. Similarly, all movements that were directed towards the body (e.g. abdomen, wings, notum) were binned and plotted as posterior body grooming. Statistical analysis and display of the data in Figure 3 and Figure 4 were previously described (Hampel et al., 2015). The boxplots shown in Figure 2\u2014figure supplement 2 represent the percent time that flies spent grooming within the intervals of the stimulation regime shown in Figure 2 (i.e. Pre-stimulation, red light on, and post-stimulation rest periods 1\u20133). Statistical analysis was done using the Friedman test followed by post-hoc Wilcoxon signed rank test for pairwise comparisons with Bonferroni-Holm correction for multiple comparisons. Figure 5\u2014figure supplement 1A was plotted as the mean fraction of flies performing head or posterior grooming in each frame across the three different stimuli. The envelope was calculated as the standard error of the mean. For the bar plot shown in Figure 5\u2014figure supplement 1A, the average time to groom after stimulus onset was defined as the first frame where each fly performed either head or posterior grooming after the stimulus onset. Statistical significance was assessed using a Mann-Whitney U test.\n\n### Analysis of CNS and PNS expression patterns\n\nDissection and staining of the CNS was performed using a previously reported protocol (Hampel et al., 2011). The head stain shown in Figure 3A was done as follows. Fine scissors were used to cut off part of the proboscis and part of the eyes to improve antibody penetration. Heads were fixed in phosphate buffered saline (PBS) containing 2% paraformaldehyde and 0.1% Triton for 2 hr at 4\u00b0C, and stained with primary antibodies: rabbit anti-GFP (1:500, Thermo Fisher Scientific, Waltham, MA, #A11122) and mouse anti-nc82 (1:50, Developmental Studies Hybridoma Bank, University of Iowa) followed by secondary antibodies: goat anti-rabbit DyLight 594 (Thermo Fisher Scientific #35560) and goat anti-mouse DyLight 633 (Thermo Fisher Scientific #35512), with Calcofluor White to stain the cuticle (a few grains in 300 \u03bcl volume, Sigma #F3543). Images were collected using a Zeiss LSM710 confocal microscope using a Plan-Apochromat 20x/0.8 M27 objective (Carl Zeiss Corporation, Oberkochen, Germany).\n\nDissection of the different body parts and imaging of the PNS expression patterns of the different GAL4, LexA, and Split GAL4 lines were performed as follows. The lines were crossed to 20xUAS-mCD8::GFP (JFRC7) or 13xLexAop-myr::GFP (pJFRC19). The progeny were anesthetized using CO2, decapitated, dipped in 70% ethanol, transferred to PBS, and each body part was dissected as described below. The unfixed body parts were imaged immediately in PBS or Vectashield (Vector Laboratories, Burlingame, CA). We used both PBS and Vectashield and did not notice a difference in the cell morphology or expression pattern when using either reagent. The use of Vectashield had the advantage of resulting in fewer air bubbles between the coverslip and sample.\n\nHead: Flies were decapitated using a standard razor blade. Heads were then placed \u2018face up\u2019 on a slide in a small well that was made by stacking six reinforcement labels (Avery Dennison Corporation, Brea, CA) and filled with PBS or Vectashield. A cover slip was then placed over the well. Abdomen: The abdomen was severed from the rest of the body just posterior to the scutellum. Abdomens were then placed on a slide in a well created as described above. The abdomens were placed either ventral or dorsal side up so that each side could be imaged. Notum: A scalpel was used to slice longitudinally between the legs and the dorsal side of the notum. The notum was imaged in the same well preparation described above. Wing: A scalpel was used to remove the left wing from the body of the fly. To ensure that the entire wing was obtained, part of the body wall was also cut with the wing. The wing was then placed on a drop of Vectashield and then covered with a coverslip. Leg: The left prothoracic leg was dissected in the same way as the wing. All body parts were imaged using a Zeiss 710 confocal microscope using 10x and 20x air objectives. Native GFP fluorescence was imaged using an excitation wavelength of 488 nm, whereas autofluorescence from cuticle was imaged using 568 nm. Body parts from at least three flies were imaged from separate crosses on different days. In some cases, the body parts were imaged at 20x and then stitched using a FIJI plugin (Preibisch et al., 2009).\n\nThe different sensory neuron types on each body part were classified based on previous descriptions (Ghysen, 1980; Cole and Palka, 1982; Dickinson and Palka, 1987; Murphey et al., 1989; Smith and Shepherd, 1996). The numbers of campaniform sensilla and mechanosensory bristle neurons on the wings were previously counted (Cole and Palka, 1982; Dickinson and Palka, 1987; Hartenstein and Posakony, 1989). Proximal campaniform sensilla described in this work include ANWP, Teg, d.Rad.A, d.Rad.B, d.Rad.C, d.Rad.D, d.Rad.E, d.HCV, v.Rad.A, v.Rad.B, v.Rad.C, v.HCV, and vL.III. Distal campaniform sensilla described in this work include GSR, p.TSM, d.TSM, L3-V, ACV, L3-1, L3-2, and L3-3. We classified neurons on the wings as bristle mechanosensory rather than chemosensory given that their dendrites appear to terminate at the base of the bristle rather than projecting to the bristle tip.\n",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "c4971456-f8af-4154-9c59-d11e152b0377",
+      "submission_id": "190cd06e-f9d4-466d-a9ac-975b3fff83e7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ronald L Calabrese, Emory University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.28804.023](https://doi.org/10.7554/eLife.28804.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Simultaneous activation of parallel sensory pathways promotes a grooming sequence in Drosophila\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Ronald L Calabrese (Reviewer #1), is a member of our Board of Reviewing Editors, and the evaluation has been overseen by K VijayRaghavan as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is an interesting advance on a seminal paper in eLife in 2014, which established the grooming behavior of Drosophila as a very productive one for the study of sequential behaviors at the cellular level, using all the genetic tricks available. In that paper the authors proposed a model of hierarchical suppression where simultaneous activation of sensory neurons on different body parts (dusting the whole fly) elicits a prioritized grooming response, roughly anterior to posterior, with eye grooming dominant over wing grooming, for example. In this advance, the authors use Gal4 and spGal4 drivers to begin the identification of the sensory neurons involved in grooming. Whole body short duration optogenetic stimulation of using general Gal4 drivers for sensory neurons gives rise to sequencing with eye grooming not giving way to posterior body grooming until the activating light is turned off, but light stimulation limited to head or body give rise to eye grooming or body grooming respectively. Thus a persistent state of activation of posterior body grooming is revealed and the model is supported. They identify with spGal4 drivers and optogenetically activate specific sensory neurons that elicit different specific grooming movements, eye grooming and wing grooming. The goal is to activate them optogenetically together and test their effects on grooming behavior and in particular on its sequencing. The ultimate experiments, once limited identified populations of eye and the wing sensory neurons are under optogenetic control, was to simultaneously activate them and show that eye input remains dominant but sequencing persists. This is a significant advance in technique and it provides strong evidence for the hierarchical suppression model, which is of wide interest. The tools and reagents are now in place to explore directly how suppression is accomplished by sensory neurons. The work is carefully done with appropriate controls and characterization of Gal4 and spGal4 lines. The data is analyzed in an appropriate manner. The lines characterized will be very useful for fly workers who wish to pursue experiments in which limited classes of sensory neurons are to be optogenetically activated. The work is of interest to those who study the neuronal bases of natural behaviors and behavior sequences.\n\nEssential revisions:\n\n1) The experiment of Figure 5 seem to show that stimulation of wing/halters sensory neurons has an inhibitory effect on head grooming; eye grooming is very limited in time when the wings/halters are stimulated together with the eyes compared to the eyes alone. All three reviewers commented on this seeming interaction in different ways. The authors should explain what they think is going on here and any experiments that balance the optogenetic stimulation of eye vs wing/halters sensory neurons differently.\n\n2) Experiments could, in principle, be done using the activation of mechanosensors in the abdomen, playing them against activation of the head and/or thoracic mechanosensors. The authors should discuss whether there is a reason that such experiments were not done.\n\nReviewer #1:\n\n1) Paragraph two subsection \u201cCompetition between eye and wing sensory neurons elicits prioritized grooming\u201d and Figure 5: I am not totally convinced by the authors interpretation 'We also found evidence of suppression by eye grooming, as ongoing grooming of the wings terminated and all flies groomed their eyes with each red light stimulus\u2026\". What I see in the bottom panels of Figure 5A is that posterior body grooming begins during the light pulse and that eye grooming terminates rapidly. This is in contrast to the top panes where eye grooming is much more long lasting; outlasting the pulse of light even. There appears to be inhibition of the eye grooming by the body grooming or at least bye the wing-halteres stimulus. Can the authors expand on what is happening here?\n\n2) Paragraph three of subsection \u201cSimultaneous excitation of sensory neurons across the body induces a grooming sequence\u201d and Figure 2: Have you tested shorter ISIs to determine whether the light stimulus can suppress body grooming when it is most robust?\n\nReviewer #2:\n\nThis is an excellent follow-up study to this group's 2014 eLife paper that proposes a suppression hierarchy that drives sequential grooming behavior by adult fruit flies. This study nicely tests the basic assumption of the model proposed in the previous study-that activation of mechanosensory neurons all over the fly's body activates pattern generators that arouses grooming behavior to all parts of the body, with the location of the grooming sequenced in an anterior-to-posterior pattern. The experiments are well presented, appropriate, and the results are convincing. The conclusions are fully justified and nicely qualified where appropriate.\n\nTheir basic technique (using combinations of GAL-4 lines to target mechanosensory neurons in different areas of the body, then activating them optogentically) provides a strong test of the hypothesized mechanism. The results are convincingly in line with the hypothesis and, additionally, provide the added information that even short-lasting activation of a set of mechanosensors produces a long-lasting bout of grooming the appropriate area, a finding that should lead to interesting extensions of this work in the future.\n\nTwo possible extensions of the research that should be addressed:\n\n1) The same kinds of experiments could, in principle, be done using the activation of mechanosensors in the abdomen, playing them against activation of the head and/or thoracic mechanosensors. The authors should discuss whether there is a reason that such experiments were not done.\n\n2) Have the authors tried weakly stimulating head mechanosensors and strongly stimulating the thoracic ones? Such an experiment would test whether there is a weak back-to-front inhibition of grooming behavior in addition to the clearly strong front-to-back inhibition. If they have such data, it would be good to show it. If not, they might mention this as a possible future experiment.\n\nReviewer #3:\n\nThis paper represents an important addition to the previous studies by this group looking at the emergence of grooming sequences in Drosophila. Overall, I find the experimental data compelling, the writing is clear, and I have no major experimental concerns.\n",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6fa6f9ee-1d77-4ed7-83d6-b88ba1dd0420",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C1",
+      "claim": "A central model describing how behavioral sequences are produced features a neural architecture that readies different movements simultaneously, and a mechanism where prioritized suppression between the movements determines their sequential performance.",
+      "claim_type": "EXPLICIT",
+      "source": "A central model that describes how behavioral sequences are produced features a neural architecture that readies different movements simultaneously, and a mechanism where prioritized suppression between the movements determines their sequential performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature on behavioral sequence models.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "a07b2f3d-9b56-4740-81b4-3386d215c95c",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C2",
+      "claim": "A model whereby suppression drives a Drosophila grooming sequence was previously described, where the sequence is induced by simultaneous activation of different sensory pathways that each elicit a distinct movement.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously described a model whereby suppression drives a Drosophila grooming sequence that is induced by simultaneous activation of different sensory pathways that each elicit a distinct movement (Seeds et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references a previous publication (Seeds et al., 2014) as support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "ad08b464-7f7f-46b0-b48d-bde00b77a385",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C3",
+      "claim": "Simultaneous activation of different sensory pathways elicits a grooming sequence that resembles the naturally induced sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous activation of different sensory pathways elicits a grooming sequence that resembles the naturally induced sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the current study, supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "a7b5f8d1-fd2d-42c1-9b55-2a27c625fdae",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C4",
+      "claim": "The grooming sequence proceeds after the sensory excitation is terminated, indicating that a persistent trace of this excitation induces the next grooming movement once the previous one is performed.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the sequence proceeds after the sensory excitation is terminated, indicating that a persistent trace of this excitation induces the next grooming movement once the previous one is performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations and logical inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "28b42514-a028-4bc6-b2ca-9f768a71495b",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C5",
+      "claim": "Parallel sensory inputs can be integrated and stored to elicit a delayed and sequential grooming response.",
+      "claim_type": "EXPLICIT",
+      "source": "This reveals a mechanism whereby parallel sensory inputs can be integrated and stored to elicit a delayed and sequential grooming response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "9fc49416-e47d-4121-bcd4-ea52d4822d36",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C6",
+      "claim": "Behavioral competition arises in situations where different mutually exclusive behaviors are appropriate, but they must be performed one at a time.",
+      "claim_type": "EXPLICIT",
+      "source": "Behavioral competition arises in situations where different mutually exclusive behaviors are appropriate, but they must be performed one at a time (Houghton and Hartley, 1995; Redgrave et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "93dc9ae4-00c4-4abc-b174-3ec20b1f2b6f",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C7",
+      "claim": "Behavioral conflicts can be resolved through the suppression of all but the highest priority behavior, as mollusks do to suppress their mating behavior while feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "These conflicts can be resolved through the suppression of all but the highest priority behavior, as mollusks do to suppress their mating behavior while feeding (Davis, 1979; Kupfermann and Weiss, 2001; Kristan, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on mollusks.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "1ea6cb95-4048-4718-9d1c-885f3b4510b3",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C8",
+      "claim": "In a behavioral sequence, different movements to be performed are readied in parallel and in competition for output, and a suppression hierarchy determines their priority order of execution.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of a behavioral sequence, it is proposed that the different movements to be performed are similarly readied in parallel and in competition for output, and a suppression hierarchy determines their priority order of execution (Lashley, 1951; Houghton and Hartley, 1995; Bullock, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical model supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "39ce8d08-01e0-480d-9dcb-769356e71d33",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C9",
+      "claim": "Completion of the highest priority movement lifts suppression on movements of lower priority that are subsequently performed according to a new round of competition and suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Completion of the highest priority movement lifts suppression on movements of lower priority that are subsequently performed according to a new round of competition and suppression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the theoretical model of behavioral sequences.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "181b03bf-7ac3-4020-9d46-af4fd428c334",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C10",
+      "claim": "The parallel model could drive behaviors across a range of complexity, from the sequential typing of letters on a keyboard in humans to the selection of which behavior to perform first in mollusks.",
+      "claim_type": "EXPLICIT",
+      "source": "This parallel model could drive behaviors across a range of complexity, from the sequential typing of letters on a keyboard in humans to the selection of which behavior to perform first in mollusks (Houghton and Hartley, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical proposition supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "5bfececd-8770-4fc8-acc5-e5f061e4d55e",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C11",
+      "claim": "Coating the body of a fly with dust is thought to stimulate competition among different grooming movements that are each responsible for cleaning a particular body part.",
+      "claim_type": "EXPLICIT",
+      "source": "Coating the body of a fly with dust is thought to stimulate competition among different grooming movements that are each responsible for cleaning a particular body part (Phillis et al., 1993; Seeds et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "aee561a1-d031-41e8-b8d7-4a533f810d84",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C12",
+      "claim": "The body grooming order is determined through a mechanism where earlier movements suppress later ones.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously presented evidence that the body grooming order is determined through a mechanism where earlier movements suppress later ones (Seeds et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "4b5114ff-0a50-4fcd-a882-6b2e9924a3fc",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C13",
+      "claim": "Removal of dust from the eyes occurs first because eye grooming suppresses cleaning of the other body parts.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, removal of dust from the eyes occurs first because eye grooming suppresses cleaning of the other body parts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an example illustrating the suppression mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "c2dae2b1-fa7d-4cec-a977-d185ea30fa25",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C14",
+      "claim": "A suppression hierarchy among different grooming movements produces a sequence that proceeds in the order: eyes > antennae > abdomen > wings > notum.",
+      "claim_type": "EXPLICIT",
+      "source": "From a suppression hierarchy among the different grooming movements emerges a sequence that proceeds in the order: eyes > antennae > abdomen > wings > notum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the observed grooming sequence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "a7ee3852-31ab-49db-947b-13c740e6b0cf",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C15",
+      "claim": "A computational model was proposed to describe the grooming sequence that features parallel activation of the different grooming movements by dust to induce competition, and hierarchical suppression among the movements to determine their selection order.",
+      "claim_type": "EXPLICIT",
+      "source": "We further proposed a computational model to describe this sequence that features parallel activation of the different grooming movements by dust to induce competition, and hierarchical suppression among the movements to determine their selection order (Seeds et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "16493011-6b30-406f-b1ea-439c1acd0111",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C16",
+      "claim": "Stimulation to each body part induces site-directed grooming responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The parallel activation of the movements was proposed based on evidence that stimulation to each body part induces site-directed grooming responses (Vandervorst and Ghysen, 1980; Corfas and Dudai, 1989; Seeds et al., 2014; Hampel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "50a0a307-2520-4091-b864-cfae7b183de7",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C17",
+      "claim": "Simultaneous, or parallel stimulation of sensory neurons by dust would cause different grooming movements to compete for output because only one can be performed at a time.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the simultaneous, or parallel stimulation of sensory neurons by dust would cause different grooming movements to compete for output because only one can be performed at a time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the model and previous observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "c5b40975-f50a-4eab-9b86-2d4d890eb02d",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C18",
+      "claim": "It was not confirmed that simultaneous activation of sensory neurons across the body indeed elicits the same prioritized grooming response that was observed using a dust stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it was not confirmed that simultaneous activation of sensory neurons across the body indeed elicits the same prioritized grooming response that we observed using a dust stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in previous knowledge that the current study addresses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "af838b68-d9b0-465e-9c8a-849470059aae",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C19",
+      "claim": "Three GAL4 lines (R52A06-, R30B01-, and R81E10-GAL4) express in sensory neurons across the body.",
+      "claim_type": "EXPLICIT",
+      "source": "Confocal microscopy imaging of the peripheral nervous system (PNS) expression patterns of different lines from this collection revealed three that express in sensory neurons across the body (R52A06-, R30B01-, and R81E10-GAL4; Figure 1A\u2013F, R52A06-GAL4 shown as an example, Figure 1\u2014figure supplement 1A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by confocal microscopy imaging data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "69631ae4-40a2-4b87-a445-85ebc0b4de6b",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C20",
+      "claim": "The GAL4 lines R52A06-, R30B01-, and R81E10-GAL4 express predominantly in mechanosensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We classified the different sensory neuron types based on previous anatomical descriptions (Murphey et al., 1989; Cole and Palka, 1982; Dickinson and Palka, 1987; Smith and Shepherd, 1996; Kays et al., 2014) and found that the lines express predominantly in mechanosensory neurons (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on classification using previous anatomical descriptions and data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "efd1e696-637c-438f-a72c-e3175a16402a",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C21",
+      "claim": "R30B01-GAL4 also showed expression in chemosensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, R30B01-GAL4 also showed expression in chemosensory neurons (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "ab823d9b-d96a-4573-b3c9-6f7fa996c513",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C22",
+      "claim": "Light directed to the posterior dorsal body surface elicited grooming of the wings.",
+      "claim_type": "EXPLICIT",
+      "source": "Light directed to the posterior dorsal body surface elicited grooming of the wings, whereas illumination of the anterior dorsal surface elicited grooming of the notum (Figure 1H, Video 1, Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1H and Videos 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "6d1b4190-2f02-4c65-8945-7bebaa555b5b",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C23",
+      "claim": "Illumination of the anterior dorsal surface elicited grooming of the notum.",
+      "claim_type": "EXPLICIT",
+      "source": "Light directed to the posterior dorsal body surface elicited grooming of the wings, whereas illumination of the anterior dorsal surface elicited grooming of the notum (Figure 1H, Video 1, Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1H and Videos 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "76ef9fb6-ae11-4694-b43c-08e2cd5ebc83",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C24",
+      "claim": "Site-directed grooming responses can be elicited optogenetically.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicated that site-directed grooming responses can be elicited optogenetically, and that the GAL4 lines express in sensory neurons whose activation can elicit grooming movements for at least two parts of the body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the optogenetic experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "0b7c79e9-f4d6-406a-998a-604c56de1c2a",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C25",
+      "claim": "The GAL4 lines express in sensory neurons whose activation can elicit grooming movements for at least two parts of the body.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicated that site-directed grooming responses can be elicited optogenetically, and that the GAL4 lines express in sensory neurons whose activation can elicit grooming movements for at least two parts of the body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the optogenetic experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "662d24fa-d0c5-45e9-b9eb-5f48b51d155f",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C26",
+      "claim": "Simultaneous optogenetic activation of body sensory neurons targeted by each GAL4 line resulted in head rather than posterior grooming, consistent with the model of hierarchical suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the simultaneous optogenetic activation of body sensory neurons targeted by each GAL4 line resulted in head rather than posterior (abdomen, wing, notum) grooming, consistent with the model of hierarchical suppression (Figure 2A, during red light-on period, Figure 2\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "d618ec07-52cb-43ee-a662-9d4bb2860614",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C27",
+      "claim": "Flies groomed their heads at the onset of a five-second red light stimulus, and then transitioned to grooming their posterior bodies during the period after the light was turned off.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies groomed their heads at the onset of a five-second red light stimulus, and then transitioned to grooming their posterior bodies during the period after the light was turned off (Figure 2A, Figure 2\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "8eb4418b-166a-451b-991b-d0ea890f8557",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C28",
+      "claim": "Activation of the posterior body sensory neurons of decapitated flies elicited posterior grooming during the red light.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to intact flies, activation of the posterior body sensory neurons of decapitated flies elicited posterior grooming during the red light (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "a9fd530a-21b5-43c3-be61-19e0514716ef",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C29",
+      "claim": "A delay does not explain the grooming sequence because head and posterior grooming can be elicited on similar time scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a delay does not explain the sequence because head and posterior grooming can be elicited on similar time scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing intact and decapitated fly experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "ddbb2b28-694d-4d0a-81ae-aaec5269ccc2",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C30",
+      "claim": "Evidence that intact flies do not display posterior grooming with the light stimulation supports the hypothesis that it is suppressed by head grooming.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, evidence that intact flies do not display posterior grooming with the light stimulation supports the hypothesis that it is suppressed by head grooming (discussed below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "29b2696f-6438-4c6e-acd5-9967fc831fc7",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C31",
+      "claim": "Optogenetic activation of sensory neurons across the body causes flies to groom their bodies in the same order as when they were coated in dust (head > abdomen > wings > notum).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, optogenetic activation of sensory neurons across the body causes flies to groom their bodies in the same order as when they were coated in dust (head > abdomen > wings > notum) (Figure 2\u2014figure supplement 3A,B, Video 3, Video 4, and Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in supplementary figures and videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "59d1187c-6c70-4349-92cd-4b1b6b797e7a",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C32",
+      "claim": "The posterior body grooming sequence continued through the minute after the cessation of the red light, while the sensory neurons were no longer activated.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the posterior body grooming sequence continued through the minute after the cessation of the red light, while the sensory neurons were no longer activated (Figure 2A, green histogram).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "0bf1b06d-6849-47a7-b73c-5eb26a67233a",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C33",
+      "claim": "There is a persistent trace of posterior sensory neurons that had been activated, which allowed each movement to be elicited once the previous grooming movement terminated.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests a persistent trace of posterior sensory neurons that had been activated, which allowed each movement to be elicited once the previous grooming movement terminated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that grooming continues after stimulus cessation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "26983f30-0e02-4a74-82b6-f2d98ad9ceab",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C34",
+      "claim": "When sensory neurons were reactivated during the period when flies had transitioned to posterior grooming, delivery of the next red light stimulus caused flies to terminate posterior grooming and switch to grooming their heads.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in cases where flies were engaged in posterior grooming, delivery of the next red light stimulus caused flies to terminate posterior grooming and switch to grooming their heads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "d4cb3771-ffac-4e7c-8b75-414ac3207bd1",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C35",
+      "claim": "The fraction of flies grooming their posterior bodies drops to zero at the onset of the red light when sensory neurons are reactivated.",
+      "claim_type": "EXPLICIT",
+      "source": "This is seen in Figure 2A (histogram plots on right, green traces) where the fraction of flies grooming their posterior bodies drops to zero at the onset of the red light (also shown in Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2A and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "f8191a56-037b-4f70-ab01-486bcceea813",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C36",
+      "claim": "Termination of posterior grooming was still observed when the time between light stimuli was shortened and only trials where flies were grooming at the moment the next stimulus was delivered were examined.",
+      "claim_type": "EXPLICIT",
+      "source": "This termination of posterior grooming was still observed when we shortened the time between light stimuli and only examined trials where flies were grooming at the moment the next stimulus was delivered (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "e32b7bdd-e10b-40d9-82be-82b803550ed8",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C37",
+      "claim": "Optogenetic evidence is consistent with the hypothesis that the grooming sequence is driven by a hierarchical suppression mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we find optogentic evidence consistent with the hypothesis that the grooming sequence is driven by a hierarchical suppression mechanism, as was revealed from experiments using dust as a natural stimulus (Seeds et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the optogenetic experiments and supported by citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "8c14b9d5-35ed-47da-a7d1-4e5769eb27dc",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C38",
+      "claim": "Interommatidial bristle mechanosensory neurons elicit eye grooming in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on previous work implicating the interommatidial bristle mechanosensory neurons in eye grooming in the praying mantis and cricket (Honegger, 1977; Honegger et al., 1979; Zack and Bacon, 1981), we found that these neurons elicit eye grooming in Drosophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous work in other insects and confirmed by experiments in Drosophila.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "12942b2c-9d11-4214-bd57-2721ffaccd31",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C39",
+      "claim": "VT17251-LexA expresses exclusively in the interommatidial bristle mechanosensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "A search through an image database of brain expression patterns from the Vienna Drosophila collection identified a LexA line (VT17251-LexA) that expressed exclusively in the interommatidial bristle mechanosensory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on examination of expression patterns in an image database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "fa23adf9-9636-40e5-a57a-d235298ee749",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C40",
+      "claim": "Each eye bristle contains the dendrite of a sensory neuron, which also projects an axon into an afferent tract that enters the CNS in the subesophageal zone (SEZ).",
+      "claim_type": "EXPLICIT",
+      "source": "The hundreds of bristles on the compound eyes each contains the dendrite of a sensory neuron, which also projects an axon into an afferent tract that enters the CNS in the subesophageal zone (SEZ) (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by anatomical data shown in Figure 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "7331c75e-9de9-4ede-ae5c-ea161b6f3f78",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C41",
+      "claim": "In contrast to the praying mantis and cricket, the fly eye bristle afferents project only to the SEZ, and not also the prothoracic neuromeres.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the praying mantis and cricket, the fly eye bristle afferents project only to the SEZ, and not also the prothoracic neuromeres (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative anatomical observation supported by data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "bd1a35ce-29f3-423e-a4ea-f2d793206abc",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C42",
+      "claim": "Optogenetic activation of the eye bristle mechanosensory neurons elicited eye grooming.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, optogenetic activation of the eye bristle mechanosensory neurons elicited eye grooming (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "3f8fc1f3-a31a-49db-9347-eb2d44998f55",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C43",
+      "claim": "R31H10-GAL4 expresses in neurons whose activation could elicit wing grooming and showed expression in sensory neurons on the wings.",
+      "claim_type": "EXPLICIT",
+      "source": "From our previous screen (Seeds et al., 2014), we identified a GAL4 line that expresses in neurons whose activation could elicit wing grooming and showed expression in sensory neurons on the wings (Figure 4\u2014figure supplement 1A, R31H10-GAL4, behavioral data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on a previous screen and anatomical data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "7d1081b7-bc14-4d3e-b5b8-41634d278c8d",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C44",
+      "claim": "The identities of sensory neurons in R31H10-GAL4 were obscured by expression in other cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the identities of those sensory neurons were obscured by expression in other cells (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on anatomical observations shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "b5a58fb5-42a0-4d3f-b532-14c5fad32457",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C45",
+      "claim": "The intersectional Split GAL4 (spGAL4) technique was used to restrict expression to only the sensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we used the intersectional Split GAL4 (spGAL4) technique to restrict expression to only the sensory neurons (Luan et al., 2006; Pfeiffer et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological approach supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "329526d8-fd80-411d-90e6-79cf3303280a",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C46",
+      "claim": "R30B01-AD \u2229 R31H10-DBD expresses in two main types of mechanosensory neurons on the wings and halteres.",
+      "claim_type": "EXPLICIT",
+      "source": "The R30B01-AD \u2229 R31H10-DBD combination expresses in two main types of mechanosensory neurons on the wings and halteres (Figure 4A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by anatomical data shown in Figure 4A-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "295c8d2e-e560-4c89-a1a9-a42cf2af8087",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C47",
+      "claim": "Campaniform sensilla are dome-shaped structures on the fly cuticle that are each innervated by a mechanosensory neuron that responds to deformations of the cuticle.",
+      "claim_type": "EXPLICIT",
+      "source": "The first type includes campaniform sensilla, which are dome-shaped structures on the fly cuticle that are each innervated by a mechanosensory neuron that responds to deformations of the cuticle (Dickinson and Palka, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "6104c9b5-59e5-4d80-b0f0-774b59bd2046",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C48",
+      "claim": "R30B01-AD \u2229 R31H10-DBD flies show a sparse labeling of neurons in the proximal campaniform sensilla fields (5 to 10 out of ~77 neurons, median = 6.5).",
+      "claim_type": "EXPLICIT",
+      "source": "R30B01-AD \u2229 R31H10-DBD flies show a sparse labeling of neurons in the proximal fields (5 to 10 out of ~77 neurons (median = 6.5), Figure 4A,B, white asterisks), and expression in the majority of the distal campaniform sensilla (5 to 6 out of 8 neurons (median = 5), Figure 4A,C, yellow asterisks).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantitative anatomical data shown in Figure 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "4b494a09-3a83-4f68-bebd-e7b035c261d4",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C49",
+      "claim": "R30B01-AD \u2229 R31H10-DBD shows expression in the majority of the distal campaniform sensilla (5 to 6 out of 8 neurons, median = 5).",
+      "claim_type": "EXPLICIT",
+      "source": "R30B01-AD \u2229 R31H10-DBD flies show a sparse labeling of neurons in the proximal fields (5 to 10 out of ~77 neurons (median = 6.5), Figure 4A,B, white asterisks), and expression in the majority of the distal campaniform sensilla (5 to 6 out of 8 neurons (median = 5), Figure 4A,C, yellow asterisks).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantitative anatomical data shown in Figure 4A,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "911f6936-4723-40c6-8b92-c3a9c1439b54",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C50",
+      "claim": "The spGAL4 line R30B01-AD \u2229 R31H10-DBD also expresses in campaniform sensilla on the halteres (7 to 10 out of ~139 neurons).",
+      "claim_type": "EXPLICIT",
+      "source": "The spGAL4 line also expresses in campaniform sensilla on the halteres (7 to 10 out of ~139 neurons, Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantitative anatomical data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "fc0f6981-db3c-4c4a-93d9-b982b53ddf5b",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C51",
+      "claim": "R30B01-AD \u2229 R31H10-DBD expresses in mechanosensory bristle neurons on the distal wing (expression in 3\u20135 out of ~221 neurons, median = 3.5).",
+      "claim_type": "EXPLICIT",
+      "source": "The other type of sensory neurons targeted by R30B01-AD \u2229 R31H10-DBD are mechanosensory bristle neurons on the distal wing (expression in 3\u20135 out of ~221 neurons (median = 3.5), Figure 4A,D, white arrowheads) (Hartenstein and Posakony, 1989).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantitative anatomical data shown in Figure 4A,D and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "c636398a-b225-4cf3-b30f-e7f0015000d8",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C52",
+      "claim": "Sensory neurons on the wings and halteres targeted by R30B01-AD \u2229 R31H10-DBD send projections to the ventral nervous system (VNS), where they follow diverse paths locally, with some further ascending to the SEZ in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "These different neurons on the wings and halteres send projections to the ventral nervous system (VNS), where they follow diverse paths locally, with some further ascending to the SEZ in the brain (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by anatomical data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "61b26cb4-76d4-4dfe-a92a-0dc6457370d2",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C53",
+      "claim": "The ascending afferents are likely to be from campaniform sensilla on the halteres and proximal wings, whereas afferents that remain in the VNS are likely to be from wing mechanosensory bristle neurons and distal campaniform sensilla.",
+      "claim_type": "EXPLICIT",
+      "source": "The ascending afferents are likely to be from campaniform sensilla on the halteres and proximal wings, whereas afferents that remain in the VNS are likely to be from wing mechanosensory bristle neurons and distal campaniform sensilla (Palka et al., 1979; Ghysen, 1980; Dickinson and Palka, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on anatomical observations and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "83ae1a94-8d5f-40b1-9b66-ab0fef74132e",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C54",
+      "claim": "Optogenetic activation of the neurons targeted by R30B01-AD \u2229 R31H10-DBD expressing CsChrimson elicited wing but not haltere grooming.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic activation of the neurons targeted by R30B01-AD \u2229 R31H10-DBD expressing CsChrimson elicited wing but not haltere grooming (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "7bafee21-5dc1-4dc7-9b17-5ae500eef973",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C55",
+      "claim": "The parsimonious explanation for wing grooming elicited by R30B01-AD \u2229 R31H10-DBD is that the grooming was elicited by sensory neurons on the wing.",
+      "claim_type": "EXPLICIT",
+      "source": "The parsimonious explanation for this result is that the grooming was elicited by sensory neurons on the wing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "8483e201-da1b-452f-8c6e-57464b5568e2",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C56",
+      "claim": "The involvement of haltere campaniform sensilla in wing grooming cannot be ruled out because the line R30B01-AD \u2229 R31H10-DBD also expresses in these neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because the line also expresses in haltere campaniform sensilla, we cannot rule out their involvement in the behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a limitation in interpreting the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "21dfd521-2b0a-4dc2-9f14-711d029cdf24",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C57",
+      "claim": "Activation of the eye bristle mechanosensory neurons elicited eye grooming during the period when the red light was on that decayed when it turned off.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of the eye bristle mechanosensory neurons elicited eye grooming during the period when the red light was on that decayed when it turned off (Figure 5A, top, magenta, Video 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A and Video 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "bca26984-70b4-470d-97bb-0c83d881a047",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C58",
+      "claim": "Activation of the wing/haltere sensory neurons elicited wing grooming with the red light that persisted after light cessation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, activation of the wing/haltere sensory neurons elicited wing grooming with the red light that persisted after light cessation (Figure 5A, middle, green, Video 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A and Video 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "35563264-97fb-4181-848a-5be065f7703a",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C59",
+      "claim": "Activation of either the eye bristle mechanosensory neurons or the wing sensory neurons alone did not elicit the other corresponding grooming movement, or an anterior-to-posterior grooming sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, activation of either the eye bristle mechanosensory neurons or the wing sensory neurons alone did not elicit the other corresponding grooming movement, or an anterior-to-posterior grooming sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "4f3916e6-0f46-454d-b151-821881ec7977",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C60",
+      "claim": "Activation of specific sensory types only elicits grooming of its corresponding body part.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, activation of these specific sensory types only elicits grooming of its corresponding body part.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "64105119-0e38-4bc5-9312-eb5ae7fc3007",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C61",
+      "claim": "R31H10-AD \u2229 R34E03-DBD expresses both in the eye bristle mechanosensory neurons and the same three categories of sensory neurons on the wings and halteres that were expressed in the R30B01-AD \u2229 R31H10-DBD combination.",
+      "claim_type": "EXPLICIT",
+      "source": "For this experiment, we identified a spGAL4 combination (R31H10-AD \u2229 R34E03-DBD) that expressed both in the eye bristle mechanosensory neurons and the same three categories of sensory neurons on the wings and halteres that were expressed in the R30B01-AD \u2229 R31H10-DBD combination (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by anatomical data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "de5f1794-28a3-434c-b2aa-c7eb9ee1aab4",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C62",
+      "claim": "Simultaneous optogenetic activation of eye bristle mechanosensory neurons and wing/haltere sensory neurons using R31H10-AD \u2229 R34E03-DBD elicited prioritized grooming that started with the eyes and then proceeded to the wings.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous optogenetic activation of these defined sensory neurons elicited prioritized grooming that started with the eyes and then proceeded to the wings (Figure 5A, bottom, Figure 5\u2014figure supplement 1A,B, Video 8), like what we observed with activation of sensory neurons across the body (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A, supplementary figures, and Video 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "0b501572-1a4a-4e28-8fde-d572002732b1",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C63",
+      "claim": "The transition of eye to wing grooming occurred within the stimulus period, suggesting that eye grooming became inhibited by wing grooming during the stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the transition of eye to wing grooming occurred within the stimulus period, suggesting that eye grooming became inhibited by wing grooming during the stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "cec6811a-8f46-46a9-ade5-bbf0bf74959e",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C64",
+      "claim": "The transition from eye to wing grooming during the stimulus may reveal a prediction of the model of hierarchical suppression that later movements in the sequence can suppress earlier ones.",
+      "claim_type": "EXPLICIT",
+      "source": "This may reveal a prediction of the model of hierarchical suppression that later movements in the sequence can suppress earlier ones (see Discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "e1136a6d-7957-47ef-b478-9a9d20ad03ea",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C65",
+      "claim": "The prioritized suppression came from eye grooming, as any ongoing grooming of the wings terminated and all flies groomed their eyes with each red light stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the prioritized suppression came from eye grooming, as any ongoing grooming of the wings terminated and all flies groomed their eyes with each red light stimulus (Figure 5A, bottom, Figure 5\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "5b3a7eac-37cc-4d5c-a652-0f63d1e2f98d",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C66",
+      "claim": "The experiment with R31H10-AD \u2229 R34E03-DBD demonstrates the prioritization between grooming movements through direct optogenetic activation of the sensory neurons that elicit grooming of specific body parts.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment demonstrates the prioritization between grooming movements through direct optogenetic activation of the sensory neurons that elicit grooming of specific body parts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "f0f34114-8232-4d3a-928f-8405beb1def8",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C67",
+      "claim": "The experiment strengthens the conclusion that the sequence occurs when the grooming movements are activated in parallel and then sequentially prioritized through hierarchical suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "This strengthens the conclusion of our previous work that the sequence occurs when the grooming movements are activated in parallel and then sequentially prioritized through hierarchical suppression (Seeds et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results and supported by citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "5144d288-f07a-477e-a725-d09ad63fb5c8",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C68",
+      "claim": "Direct activation of the bristle mechanosensory neurons can elicit grooming.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we provide evidence that direct activation of the bristle mechanosensory neurons can elicit grooming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "6ea54998-6b5b-415c-b322-0817da7024fb",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C69",
+      "claim": "Johnston's Organ chordotonal neurons can detect displacements of the antennae to induce antennal grooming.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we previously showed that Johnston's Organ chordotonal neurons can detect displacements of the antennae to induce antennal grooming (Hampel et al., 2015), and others have shown that gustatory neurons on the wing can detect different chemicals to trigger grooming (Yanagawa et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "98e2b125-d3cf-4c9e-816a-7f948c9db579",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C70",
+      "claim": "Gustatory neurons on the wing can detect different chemicals to trigger grooming.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we previously showed that Johnston's Organ chordotonal neurons can detect displacements of the antennae to induce antennal grooming (Hampel et al., 2015), and others have shown that gustatory neurons on the wing can detect different chemicals to trigger grooming (Yanagawa et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "75742747-dd8e-4d91-8c49-d2ebccf17de9",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C71",
+      "claim": "There are 600, 221, and 235 bristles reported to be on the eyes, wings, and notum respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "There are 600, 221, and 235 bristles reported to be on the eyes, wings, and notum respectively (Hartenstein and Posakony, 1989; Cadigan et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "62b77f97-373f-47c0-9066-020685d6e226",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C72",
+      "claim": "The eyes have 2.7 times more bristles than the wings, which is consistent with the suppression hierarchy.",
+      "claim_type": "EXPLICIT",
+      "source": "The eyes are the highest priority part to be groomed, and have 2.7 times more bristles than the wings, which is consistent with the suppression hierarchy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation and inference based on bristle counts.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "da4f9f07-67f0-4288-8722-5e6424a43eb6",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C73",
+      "claim": "The lowest priority body part is the notum, which has more bristles than the wings, arguing against the hypothesis that bristle numbers determine suppression hierarchy.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the lowest priority body part is the notum, which has more bristles than the wings, arguing against the hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on bristle counts that contradicts a hypothesis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "8669ae83-5ff5-4e3a-b8f6-5a746166953a",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C74",
+      "claim": "The feeding behavior of the medicinal leech causes presynaptic inhibition of mechanosensory neurons, which suppresses touch-induced behavioral responses.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the feeding behavior of the medicinal leech causes presynaptic inhibition of mechanosensory neurons, which suppresses touch-induced behavioral responses (Gaudry and Kristan, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "add1b94d-e914-4e6a-a824-8bcdc62717a6",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C75",
+      "claim": "Continual tactile stimulation of bristle mechanosensory neurons causes habituation and loss of grooming responses.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation is based on observations that continual tactile stimulation of bristle mechanosensory neurons causes habituation and loss of grooming responses (Corfas and Dudai, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "da35e626-86ca-4ac1-b478-9e992f7e2251",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C76",
+      "claim": "Grooming responses can temporally sum consecutive sensory stimuli, indicating a mechanism that can store and increase excitability to elicit a grooming response.",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence that grooming responses can temporally sum consecutive sensory stimuli, indicating a mechanism that can store and increase excitability to elicit a grooming response (Sherrington, 1906; Stein, 2005; Guzulaitis et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "003e979d-412e-40ba-9d8d-4e4f01bbae6e",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C77",
+      "claim": "Neural circuits controlling Drosophila grooming movements have mechanism(s) for maintaining excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "Emerging behavioral evidence indicates that neural circuits controlling Drosophila grooming movements have mechanism(s) for maintaining excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from behavioral evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "e4903473-84a1-49cf-9072-7c8ae879d63e",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C78",
+      "claim": "A mechanosensory circuit elicits persistent grooming of the antennae, where neurons within this circuit elicit grooming that continues for tens of seconds beyond their optogenetic activation.",
+      "claim_type": "EXPLICIT",
+      "source": "This was originally proposed from a study identifying a mechanosensory circuit that elicits persistent grooming of the antennae (Hampel et al., 2015). That is, neurons within this circuit elicit grooming that continues for tens of seconds beyond their optogenetic activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "87e9147e-d441-4af3-a922-795bda7a2357",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C79",
+      "claim": "Activation of wing sensory neurons elicits persistent grooming.",
+      "claim_type": "EXPLICIT",
+      "source": "Work presented here reveals that activation of wing sensory neurons similarly elicits persistent grooming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "acbb8b29-7f2c-4943-a1b3-8045333d6e95",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C80",
+      "claim": "Grooming responses that outlast their stimulus have been described in vertebrates, suggesting that persistence is a common feature of grooming.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, grooming responses that outlast their stimulus have also been described in vertebrates, suggesting that persistence is a common feature of grooming (Sherrington, 1906; Stein, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "b6a2da95-28f1-43d1-8717-5b4d4dddc4b7",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C81",
+      "claim": "Persistence may ensure that a dirty body part is thoroughly cleaned before switching to another behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of grooming, persistence may ensure that a dirty body part is thoroughly cleaned before switching to another behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the function of persistence.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "b4ba4fa3-26b7-4b5f-a5f3-b2ecb0f2c216",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C82",
+      "claim": "Flies maintain a persistent trace of which body parts are stimulated to elicit a delayed and sequential grooming response.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that flies maintain a persistent trace of which body parts are stimulated to elicit a delayed and sequential grooming response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that grooming continues after stimulus cessation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "f97dd41c-11d4-4f26-83b2-fbb173fa3611",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C83",
+      "claim": "Simultaneous stimulation of sensory neurons across the body activates each grooming movement in parallel, with eye grooming occurring first by suppressing grooming movements occurring later.",
+      "claim_type": "EXPLICIT",
+      "source": "We postulate that this occurs when the simultaneous stimulation of sensory neurons across the body activates each grooming movement in parallel. Eye grooming occurs first by suppressing grooming movements occurring later (Seeds et al., 2014), however the circuitry for each later movement remains active without requiring further sensory input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a postulated mechanism based on experimental observations and supported by citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "93717e91-7810-4295-9c1a-887b6655e6b9",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C84",
+      "claim": "The circuitry for each later grooming movement remains active without requiring further sensory input.",
+      "claim_type": "EXPLICIT",
+      "source": "Eye grooming occurs first by suppressing grooming movements occurring later (Seeds et al., 2014), however the circuitry for each later movement remains active without requiring further sensory input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a postulated mechanism based on experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "757a704c-c7d8-418b-9f3c-8b4ecc6a0d41",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C85",
+      "claim": "The next grooming movement is elicited via persistent neural activity once suppression from eye grooming ceases.",
+      "claim_type": "EXPLICIT",
+      "source": "The next movement is then elicited via this persistent neural activity once suppression from eye grooming ceases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a postulated mechanism based on experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "4f97ece3-9612-43f9-854d-3ec662b27d81",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C86",
+      "claim": "Temporal summation is a feature of grooming whereby successive subthreshold stimuli are summed to elicit grooming.",
+      "claim_type": "EXPLICIT",
+      "source": "Such acquisition and maintenance of excitability is reminiscent of a previously described feature of grooming called temporal summation, whereby successive subthreshold stimuli are summed to elicit grooming (Sherrington, 1906; Stein, 2005; Guzulaitis et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "f369e54a-7e79-4c29-a097-9f6666a7cb8f",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C87",
+      "claim": "Both temporal summation and the grooming sequence point to a mechanism within the grooming neural circuitry that maintains a persistent trace of the sensory stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, both temporal summation and the grooming sequence observed here point to a mechanism within the grooming neural circuitry that maintains a persistent trace of the sensory stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental observations and comparison to temporal summation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "3d333b04-cc9a-4284-9c70-f80b631ec33c",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C88",
+      "claim": "A previous model indicated that constant stimulation is necessary for each grooming movement to be active.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous model indicated that constant stimulation is necessary for each grooming movement to be active (Seeds et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "b6168709-b6ba-48aa-96b2-b633e3b8015e",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C89",
+      "claim": "A computational model where the movements are driven entirely by the presence of dust produces grooming that resembles dust-induced grooming.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a computational model where the movements are driven entirely by the presence of dust produces grooming that resembles dust-induced grooming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a computational model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "d95ed358-841c-4de6-9193-980a105628c4",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C90",
+      "claim": "The model well describes grooming that occurs over relatively long time scales (~30 min).",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the model well describes grooming that occurs over relatively long time scales (~30 min).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the applicability of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "0f7a43b8-74f4-4de2-bd05-afab149cdd00",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C91",
+      "claim": "Based on observations that grooming persists after a brief stimulus, the circuitry contains a neural mechanism that allows grooming movements to remain active on shorter time scales (tens of seconds).",
+      "claim_type": "EXPLICIT",
+      "source": "However, based on observations that grooming persists after a brief stimulus, we now propose that the circuitry contains a neural mechanism that allows grooming movements to remain active on shorter time scales (tens of seconds).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "cd1656b0-4a1c-4ca3-b650-6daa5d7cf6d4",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C92",
+      "claim": "The GAL4 lines used in this study were produced by Gerald Rubin's lab at Janelia Research Campus and are available from the Bloomington Drosophila stock center.",
+      "claim_type": "EXPLICIT",
+      "source": "The GAL4 lines used in this study were produced by Gerald Rubin's lab at Janelia Research Campus and are available from the Bloomington Drosophila stock center (Jenett et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "2e28a8d5-3708-4f18-a7cd-631a93197d00",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C93",
+      "claim": "The lines were identified in a screen for those that expressed GAL4 in neurons whose activation could elicit grooming behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "The lines were identified in a screen for those that expressed GAL4 in neurons whose activation could elicit grooming behavior (Seeds et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "524760f0-b402-4bb0-ba42-52e4e84f2d5a",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C94",
+      "claim": "VT17251-LexA was a gift from the lab of Barry Dickson.",
+      "claim_type": "EXPLICIT",
+      "source": "VT17251-LexA was a gift from the lab of Barry Dickson.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the source of a reagent.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "64fb333b-217f-4585-9018-bdf55e047742",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C95",
+      "claim": "For optogenetic experiments using CsChrimson or ChR2, flies were reared in the dark on food containing 0.4 mM all-trans-retinal.",
+      "claim_type": "EXPLICIT",
+      "source": "For optogenetic experiments using CsChrimson or ChR2, flies were reared in the dark on food containing 0.4 mM all-trans-retinal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "847bfffe-f9cc-4432-803a-10489feb6d9d",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C96",
+      "claim": "ChR2 was used for local activation experiments because the intensity of the blue light used for its activation is attenuated by the cuticle of the fly.",
+      "claim_type": "EXPLICIT",
+      "source": "ChR2 was used for these experiments because the intensity of the blue light used for its activation is attenuated by the cuticle of the fly (Inagaki et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological rationale supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "2ec73e11-777d-4a08-9927-dc260d997a80",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C97",
+      "claim": "Blue light-elicited grooming would likely be caused by activation of the sensory neurons on the illuminated region of the body surface rather than activation of afferents inside the fly that project to the CNS from other body parts.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, blue light-elicited grooming would likely be caused by activation of the sensory neurons on the illuminated region of the body surface rather than activation of afferents inside the fly that project to the CNS from other body parts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the properties of blue light and ChR2.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "a47abfd2-7e76-450c-8ef1-12746d376c27",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C98",
+      "claim": "CsChrimson was used for whole-body activation rather than ChR2 because the red light used for gating CsChrimson readily penetrates the fly cuticle.",
+      "claim_type": "EXPLICIT",
+      "source": "For this experiment, we used CsChrimson for optogenetic activation rather than ChR. In contrast to the blue light used for ChR, the red light used for gating CsChrimson readily penetrates the fly cuticle (Inagaki et al., 2014), allowing for uniform activation of sensory neurons across the body, regardless of the flies' orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological rationale supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "0ceb8aef-8421-4a60-9dd8-526289c03180",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C99",
+      "claim": "High levels of red light activation caused defects in motor coordination, likely caused by the strong activation of sensory neurons across the body, some of which are known to be involved in proprioception.",
+      "claim_type": "EXPLICIT",
+      "source": "Our initial experiments using optogenetic activation of the neurons targeted by these GAL4 lines revealed that high levels of red light activation caused defects in motor coordination. This was likely caused by the strong activation of sensory neurons across the body, some of which are known to be involved in proprioception (e.g. femoral chordotonal organs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation and inference from initial experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "3d8b3419-4d59-45d5-986a-ef00f962fb11",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C100",
+      "claim": "It was necessary to reduce the red-light power to the point where it elicited grooming without causing coordination defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it was necessary to reduce the red-light power to the point where it elicited grooming without causing coordination defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological decision based on experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "479d2923-6f2a-458d-b78b-64831a98f9a0",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C101",
+      "claim": "Sensory neurons were classified based on previous anatomical descriptions.",
+      "claim_type": "EXPLICIT",
+      "source": "The different sensory neuron types on each body part were classified based on previous descriptions (Ghysen, 1980; Cole and Palka, 1982; Dickinson and Palka, 1987; Murphey et al., 1989; Smith and Shepherd, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological approach supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "625b0892-d664-46c2-a557-91c03c8bde2a",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "claim_id": "C102",
+      "claim": "Neurons on the wings were classified as bristle mechanosensory rather than chemosensory given that their dendrites appear to terminate at the base of the bristle rather than projecting to the bristle tip.",
+      "claim_type": "EXPLICIT",
+      "source": "We classified neurons on the wings as bristle mechanosensory rather than chemosensory given that their dendrites appear to terminate at the base of the bristle rather than projecting to the bristle tip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a classification decision based on anatomical observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c813d560-fa16-4f3d-9dcf-beb32876d250",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript describes a theoretical model of behavioral sequences based on parallel activation and hierarchical suppression, where different movements are readied simultaneously and compete for output, with suppression determining their sequential execution order.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C6-C10 establish the theoretical framework from prior literature. These claims are well-supported by multiple citations to established work (Lashley, 1951; Houghton and Hartley, 1995; Bullock, 2004; Seeds et al., 2014) and represent accepted models in the field. The theoretical foundation is appropriately attributed and documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "681905b7-db3f-41b8-8368-24d4b70b6dcb",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Previous work established that dust coating induces a grooming sequence in Drosophila (eyes > antennae > abdomen > wings > notum) through hierarchical suppression, but it remained unconfirmed whether simultaneous activation of sensory neurons across the body would elicit the same prioritized response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C18 accurately describe prior work (Seeds et al., 2014) and identify the knowledge gap addressed by the current study. C18 explicitly acknowledges what was not previously confirmed, providing clear motivation for the experiments. The claims are appropriately supported by citations and logical inference.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "589166d6-8b21-48ff-a1c9-b0f47b797715",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Three GAL4 lines (R52A06-, R30B01-, and R81E10-GAL4) were identified that express in sensory neurons across the body, predominantly mechanosensory neurons, and optogenetic activation of these neurons elicits site-directed grooming responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C25 are supported by confocal microscopy data (Figure 1A-G) and optogenetic experiments (Figure 1H, Videos 1-2). The anatomical characterization is based on established classification criteria (citations provided), and the behavioral responses are demonstrated experimentally. Statistical analysis (Chi-squared test, p<0.0001) supports the site-directed grooming claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "617b3918-aa92-4b12-b285-4109fd083b28",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Simultaneous optogenetic activation of sensory neurons across the body elicits head grooming preferentially, followed by posterior body grooming after stimulus cessation, demonstrating hierarchical suppression and persistent neural activity that maintains the grooming sequence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C33 are strongly supported by experimental data in Figure 2A-B and supplementary figures. The decapitation control (C28) effectively rules out a delay explanation (C29), supporting the suppression hypothesis (C30). The continuation of grooming after stimulus cessation (C32) provides evidence for persistent neural activity (C33). The experimental design is rigorous with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "cf07871d-31ae-4447-8f74-7b843466bd55",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Reactivation of sensory neurons during posterior grooming causes flies to terminate posterior grooming and switch to head grooming, providing optogenetic evidence consistent with hierarchical suppression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 are supported by data in Figure 2A and supplementary figures. The termination of posterior grooming upon reactivation (C34-C35) is quantitatively demonstrated, and the effect persists even with shortened intervals (C36). This provides direct evidence for the hierarchical suppression mechanism, strengthening conclusions from dust-based experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "ab287f37-921b-49df-b510-9a0572812581",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Interommatidial bristle mechanosensory neurons on Drosophila eyes, identified using VT17251-LexA, project to the subesophageal zone (SEZ) and elicit eye grooming when optogenetically activated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 are supported by anatomical data (Figure 3A-B) and behavioral experiments (Figure 3C). The identification is based on homology with other insects (citations provided) and confirmed by expression pattern analysis. The optogenetic activation demonstrates functional relevance. The comparative anatomy (C41) adds valuable context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "69a509df-6e57-4a95-bf83-af3b8c230579",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The spGAL4 line R30B01-AD \u2229 R31H10-DBD was generated to restrict expression to wing and haltere sensory neurons, including campaniform sensilla and mechanosensory bristle neurons, which project to the VNS with some ascending to the SEZ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C53 are supported by detailed anatomical characterization (Figure 4A-F) with quantitative neuron counts. The use of Split GAL4 technique (C45) is appropriately cited and addresses the limitation identified in C44. The anatomical descriptions are precise with median values reported. The inference about projection patterns (C53) is appropriately qualified and supported by citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "91f33448-fd56-4f4b-815b-755d97a7a00d",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Optogenetic activation of neurons targeted by R30B01-AD \u2229 R31H10-DBD elicited wing but not haltere grooming, most parsimoniously explained by activation of wing sensory neurons, though haltere involvement cannot be ruled out.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 are supported by behavioral data (Figure 4G). The authors appropriately acknowledge the limitation (C56) that haltere campaniform sensilla expression prevents definitive conclusions about which neurons drive the behavior. This honest assessment of uncertainty is scientifically appropriate, though it slightly weakens the specificity of the result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "406bbce8-2a2f-41bd-b941-4a72619b5f9f",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Individual activation of eye bristle mechanosensory neurons or wing/haltere sensory neurons elicits only their corresponding grooming movements (eye or wing grooming respectively) without triggering other movements or sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C60 are supported by experimental data (Figure 5A, Videos 6-7). The specificity of responses (C59-C60) is important for establishing that the sequence requires simultaneous activation. The differential persistence (C57 vs C58) provides additional mechanistic insight. The data clearly demonstrate the claimed specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "d63b9dee-00cf-4a88-a0b2-65be8608de61",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Simultaneous optogenetic activation of eye and wing/haltere sensory neurons using R31H10-AD \u2229 R34E03-DBD elicits prioritized grooming starting with eyes then proceeding to wings, with eye grooming suppressing wing grooming, demonstrating hierarchical suppression through direct sensory neuron activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C67 are supported by anatomical (Figure 5B) and behavioral data (Figure 5A, supplementary figures, Video 8). The prioritization is clearly demonstrated (C62, C65). The transition during stimulation (C63) is interesting but C64 appropriately notes this is speculative. The conclusion (C66-C67) is well-supported and represents a key finding confirming the parallel activation model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "cd0ab0f8-fd20-45c2-b20f-5a06fd66bc43",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Bristle mechanosensory neurons can elicit grooming, though the hypothesis that bristle numbers determine suppression hierarchy receives mixed support from bristle counts across body parts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C68 is supported by the experimental data. C69-C70 are appropriately cited prior work. However, C71-C73 present an analysis of bristle numbers that yields contradictory results: eyes have more bristles than wings (consistent with hierarchy) but notum has more than wings (inconsistent). The authors appropriately note this argues against the hypothesis, but the analysis is incomplete and doesn't account for other sensory neuron types mentioned. This weakens but doesn't invalidate the overall findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "dc3aa0d1-ac58-4492-8dc7-f0b6e7415f77",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Neural circuits controlling Drosophila grooming movements have mechanisms for maintaining excitability, as evidenced by persistent grooming that continues beyond optogenetic activation, a feature also observed in vertebrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C81 integrate prior work (C74-C76, C78, C80) with current findings (C77, C79). The persistence of wing grooming (C79) is demonstrated in the current study (Figure 5A). The comparison to vertebrates (C80) and speculation about function (C81) are appropriately qualified. The synthesis of evidence across species strengthens the conclusion about persistent excitability mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "b768a35f-7752-4a34-b0f0-f1e460eaf076",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Flies maintain a persistent trace of stimulated body parts that allows delayed sequential grooming, occurring through parallel activation of grooming movements where later movements remain active without further sensory input and are elicited once suppression from earlier movements ceases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C85, C87, C91 present a mechanistic model supported by the observation that grooming continues after stimulus cessation (demonstrated in multiple figures). The postulated mechanism (C83-C85) is a reasonable inference from the data, though direct neural recordings would strengthen it. The connection to temporal summation (C87) provides additional theoretical support. The model revision (C91) appropriately updates prior work based on new observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "51214ce3-6169-4fa9-9c09-7ac5fd746bbd",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Previous computational models indicated constant stimulation was necessary for grooming movements, and such models describe grooming well over long time scales (~30 min).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86, C88-C90 describe prior modeling work (Seeds et al., 2014) and are appropriately cited. These claims provide context for the current findings and explain how the new observations (persistent activity on shorter time scales) extend rather than contradict the previous model. The distinction between time scales is important for understanding the complete system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    },
+    {
+      "id": "f51bd6be-128b-49df-aa80-7f6ccd2115ff",
+      "content_id": "30b855b9-0b59-458f-8069-cb5137cef1b4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study employed appropriate transgenic lines, optogenetic methods, and anatomical classification approaches, with methodological decisions justified by the properties of the optogenetic tools and experimental observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C102 describe methodological details that are appropriately documented and justified. The choice of ChR2 vs CsChrimson (C96, C98) is well-reasoned based on light penetration properties. The optimization of light power (C99-C100) demonstrates careful experimental design. The classification methods (C101-C102) are based on established criteria with appropriate citations. These methodological claims are well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:55:30.203586Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6fa6f9ee-1d77-4ed7-83d6-b88ba1dd0420",
+      "result_id": "c813d560-fa16-4f3d-9dcf-beb32876d250"
+    },
+    {
+      "claim_id": "a07b2f3d-9b56-4740-81b4-3386d215c95c",
+      "result_id": "c813d560-fa16-4f3d-9dcf-beb32876d250"
+    },
+    {
+      "claim_id": "9fc49416-e47d-4121-bcd4-ea52d4822d36",
+      "result_id": "c813d560-fa16-4f3d-9dcf-beb32876d250"
+    },
+    {
+      "claim_id": "93dc9ae4-00c4-4abc-b174-3ec20b1f2b6f",
+      "result_id": "c813d560-fa16-4f3d-9dcf-beb32876d250"
+    },
+    {
+      "claim_id": "1ea6cb95-4048-4718-9d1c-885f3b4510b3",
+      "result_id": "c813d560-fa16-4f3d-9dcf-beb32876d250"
+    },
+    {
+      "claim_id": "39ce8d08-01e0-480d-9dcb-769356e71d33",
+      "result_id": "c813d560-fa16-4f3d-9dcf-beb32876d250"
+    },
+    {
+      "claim_id": "181b03bf-7ac3-4020-9d46-af4fd428c334",
+      "result_id": "c813d560-fa16-4f3d-9dcf-beb32876d250"
+    },
+    {
+      "claim_id": "5bfececd-8770-4fc8-acc5-e5f061e4d55e",
+      "result_id": "681905b7-db3f-41b8-8368-24d4b70b6dcb"
+    },
+    {
+      "claim_id": "aee561a1-d031-41e8-b8d7-4a533f810d84",
+      "result_id": "681905b7-db3f-41b8-8368-24d4b70b6dcb"
+    },
+    {
+      "claim_id": "4b5114ff-0a50-4fcd-a882-6b2e9924a3fc",
+      "result_id": "681905b7-db3f-41b8-8368-24d4b70b6dcb"
+    },
+    {
+      "claim_id": "c2dae2b1-fa7d-4cec-a977-d185ea30fa25",
+      "result_id": "681905b7-db3f-41b8-8368-24d4b70b6dcb"
+    },
+    {
+      "claim_id": "a7ee3852-31ab-49db-947b-13c740e6b0cf",
+      "result_id": "681905b7-db3f-41b8-8368-24d4b70b6dcb"
+    },
+    {
+      "claim_id": "16493011-6b30-406f-b1ea-439c1acd0111",
+      "result_id": "681905b7-db3f-41b8-8368-24d4b70b6dcb"
+    },
+    {
+      "claim_id": "50a0a307-2520-4091-b864-cfae7b183de7",
+      "result_id": "681905b7-db3f-41b8-8368-24d4b70b6dcb"
+    },
+    {
+      "claim_id": "c5b40975-f50a-4eab-9b86-2d4d890eb02d",
+      "result_id": "681905b7-db3f-41b8-8368-24d4b70b6dcb"
+    },
+    {
+      "claim_id": "af838b68-d9b0-465e-9c8a-849470059aae",
+      "result_id": "589166d6-8b21-48ff-a1c9-b0f47b797715"
+    },
+    {
+      "claim_id": "69631ae4-40a2-4b87-a445-85ebc0b4de6b",
+      "result_id": "589166d6-8b21-48ff-a1c9-b0f47b797715"
+    },
+    {
+      "claim_id": "efd1e696-637c-438f-a72c-e3175a16402a",
+      "result_id": "589166d6-8b21-48ff-a1c9-b0f47b797715"
+    },
+    {
+      "claim_id": "ab823d9b-d96a-4573-b3c9-6f7fa996c513",
+      "result_id": "589166d6-8b21-48ff-a1c9-b0f47b797715"
+    },
+    {
+      "claim_id": "6d1b4190-2f02-4c65-8945-7bebaa555b5b",
+      "result_id": "589166d6-8b21-48ff-a1c9-b0f47b797715"
+    },
+    {
+      "claim_id": "76ef9fb6-ae11-4694-b43c-08e2cd5ebc83",
+      "result_id": "589166d6-8b21-48ff-a1c9-b0f47b797715"
+    },
+    {
+      "claim_id": "0b7c79e9-f4d6-406a-998a-604c56de1c2a",
+      "result_id": "589166d6-8b21-48ff-a1c9-b0f47b797715"
+    },
+    {
+      "claim_id": "662d24fa-d0c5-45e9-b9eb-5f48b51d155f",
+      "result_id": "617b3918-aa92-4b12-b285-4109fd083b28"
+    },
+    {
+      "claim_id": "d618ec07-52cb-43ee-a662-9d4bb2860614",
+      "result_id": "617b3918-aa92-4b12-b285-4109fd083b28"
+    },
+    {
+      "claim_id": "8eb4418b-166a-451b-991b-d0ea890f8557",
+      "result_id": "617b3918-aa92-4b12-b285-4109fd083b28"
+    },
+    {
+      "claim_id": "a9fd530a-21b5-43c3-be61-19e0514716ef",
+      "result_id": "617b3918-aa92-4b12-b285-4109fd083b28"
+    },
+    {
+      "claim_id": "ddbb2b28-694d-4d0a-81ae-aaec5269ccc2",
+      "result_id": "617b3918-aa92-4b12-b285-4109fd083b28"
+    },
+    {
+      "claim_id": "29b2696f-6438-4c6e-acd5-9967fc831fc7",
+      "result_id": "617b3918-aa92-4b12-b285-4109fd083b28"
+    },
+    {
+      "claim_id": "59d1187c-6c70-4349-92cd-4b1b6b797e7a",
+      "result_id": "617b3918-aa92-4b12-b285-4109fd083b28"
+    },
+    {
+      "claim_id": "0bf1b06d-6849-47a7-b73c-5eb26a67233a",
+      "result_id": "617b3918-aa92-4b12-b285-4109fd083b28"
+    },
+    {
+      "claim_id": "26983f30-0e02-4a74-82b6-f2d98ad9ceab",
+      "result_id": "cf07871d-31ae-4447-8f74-7b843466bd55"
+    },
+    {
+      "claim_id": "d4cb3771-ffac-4e7c-8b75-414ac3207bd1",
+      "result_id": "cf07871d-31ae-4447-8f74-7b843466bd55"
+    },
+    {
+      "claim_id": "f8191a56-037b-4f70-ab01-486bcceea813",
+      "result_id": "cf07871d-31ae-4447-8f74-7b843466bd55"
+    },
+    {
+      "claim_id": "e32b7bdd-e10b-40d9-82be-82b803550ed8",
+      "result_id": "cf07871d-31ae-4447-8f74-7b843466bd55"
+    },
+    {
+      "claim_id": "8c14b9d5-35ed-47da-a7d1-4e5769eb27dc",
+      "result_id": "ab287f37-921b-49df-b510-9a0572812581"
+    },
+    {
+      "claim_id": "12942b2c-9d11-4214-bd57-2721ffaccd31",
+      "result_id": "ab287f37-921b-49df-b510-9a0572812581"
+    },
+    {
+      "claim_id": "fa23adf9-9636-40e5-a57a-d235298ee749",
+      "result_id": "ab287f37-921b-49df-b510-9a0572812581"
+    },
+    {
+      "claim_id": "7331c75e-9de9-4ede-ae5c-ea161b6f3f78",
+      "result_id": "ab287f37-921b-49df-b510-9a0572812581"
+    },
+    {
+      "claim_id": "bd1a35ce-29f3-423e-a4ea-f2d793206abc",
+      "result_id": "ab287f37-921b-49df-b510-9a0572812581"
+    },
+    {
+      "claim_id": "3f8fc1f3-a31a-49db-9347-eb2d44998f55",
+      "result_id": "69a509df-6e57-4a95-bf83-af3b8c230579"
+    },
+    {
+      "claim_id": "7d1081b7-bc14-4d3e-b5b8-41634d278c8d",
+      "result_id": "69a509df-6e57-4a95-bf83-af3b8c230579"
+    },
+    {
+      "claim_id": "b5a58fb5-42a0-4d3f-b532-14c5fad32457",
+      "result_id": "69a509df-6e57-4a95-bf83-af3b8c230579"
+    },
+    {
+      "claim_id": "329526d8-fd80-411d-90e6-79cf3303280a",
+      "result_id": "69a509df-6e57-4a95-bf83-af3b8c230579"
+    },
+    {
+      "claim_id": "295c8d2e-e560-4c89-a1a9-a42cf2af8087",
+      "result_id": "69a509df-6e57-4a95-bf83-af3b8c230579"
+    },
+    {
+      "claim_id": "6104c9b5-59e5-4d80-b0f0-774b59bd2046",
+      "result_id": "69a509df-6e57-4a95-bf83-af3b8c230579"
+    },
+    {
+      "claim_id": "4b494a09-3a83-4f68-bebd-e7b035c261d4",
+      "result_id": "69a509df-6e57-4a95-bf83-af3b8c230579"
+    },
+    {
+      "claim_id": "911f6936-4723-40c6-8b92-c3a9c1439b54",
+      "result_id": "69a509df-6e57-4a95-bf83-af3b8c230579"
+    },
+    {
+      "claim_id": "fc0f6981-db3c-4c4a-93d9-b982b53ddf5b",
+      "result_id": "69a509df-6e57-4a95-bf83-af3b8c230579"
+    },
+    {
+      "claim_id": "c636398a-b225-4cf3-b30f-e7f0015000d8",
+      "result_id": "69a509df-6e57-4a95-bf83-af3b8c230579"
+    },
+    {
+      "claim_id": "61b26cb4-76d4-4dfe-a92a-0dc6457370d2",
+      "result_id": "69a509df-6e57-4a95-bf83-af3b8c230579"
+    },
+    {
+      "claim_id": "83ae1a94-8d5f-40b1-9b66-ab0fef74132e",
+      "result_id": "91f33448-fd56-4f4b-815b-755d97a7a00d"
+    },
+    {
+      "claim_id": "7bafee21-5dc1-4dc7-9b17-5ae500eef973",
+      "result_id": "91f33448-fd56-4f4b-815b-755d97a7a00d"
+    },
+    {
+      "claim_id": "8483e201-da1b-452f-8c6e-57464b5568e2",
+      "result_id": "91f33448-fd56-4f4b-815b-755d97a7a00d"
+    },
+    {
+      "claim_id": "21dfd521-2b0a-4dc2-9f14-711d029cdf24",
+      "result_id": "406bbce8-2a2f-41bd-b941-4a72619b5f9f"
+    },
+    {
+      "claim_id": "bca26984-70b4-470d-97bb-0c83d881a047",
+      "result_id": "406bbce8-2a2f-41bd-b941-4a72619b5f9f"
+    },
+    {
+      "claim_id": "35563264-97fb-4181-848a-5be065f7703a",
+      "result_id": "406bbce8-2a2f-41bd-b941-4a72619b5f9f"
+    },
+    {
+      "claim_id": "4f3916e6-0f46-454d-b151-821881ec7977",
+      "result_id": "406bbce8-2a2f-41bd-b941-4a72619b5f9f"
+    },
+    {
+      "claim_id": "64105119-0e38-4bc5-9312-eb5ae7fc3007",
+      "result_id": "d63b9dee-00cf-4a88-a0b2-65be8608de61"
+    },
+    {
+      "claim_id": "de5f1794-28a3-434c-b2aa-c7eb9ee1aab4",
+      "result_id": "d63b9dee-00cf-4a88-a0b2-65be8608de61"
+    },
+    {
+      "claim_id": "0b501572-1a4a-4e28-8fde-d572002732b1",
+      "result_id": "d63b9dee-00cf-4a88-a0b2-65be8608de61"
+    },
+    {
+      "claim_id": "cec6811a-8f46-46a9-ade5-bbf0bf74959e",
+      "result_id": "d63b9dee-00cf-4a88-a0b2-65be8608de61"
+    },
+    {
+      "claim_id": "e1136a6d-7957-47ef-b478-9a9d20ad03ea",
+      "result_id": "d63b9dee-00cf-4a88-a0b2-65be8608de61"
+    },
+    {
+      "claim_id": "5b3a7eac-37cc-4d5c-a652-0f63d1e2f98d",
+      "result_id": "d63b9dee-00cf-4a88-a0b2-65be8608de61"
+    },
+    {
+      "claim_id": "f0f34114-8232-4d3a-928f-8405beb1def8",
+      "result_id": "d63b9dee-00cf-4a88-a0b2-65be8608de61"
+    },
+    {
+      "claim_id": "5144d288-f07a-477e-a725-d09ad63fb5c8",
+      "result_id": "cd0ab0f8-fd20-45c2-b20f-5a06fd66bc43"
+    },
+    {
+      "claim_id": "6ea54998-6b5b-415c-b322-0817da7024fb",
+      "result_id": "cd0ab0f8-fd20-45c2-b20f-5a06fd66bc43"
+    },
+    {
+      "claim_id": "98e2b125-d3cf-4c9e-816a-7f948c9db579",
+      "result_id": "cd0ab0f8-fd20-45c2-b20f-5a06fd66bc43"
+    },
+    {
+      "claim_id": "75742747-dd8e-4d91-8c49-d2ebccf17de9",
+      "result_id": "cd0ab0f8-fd20-45c2-b20f-5a06fd66bc43"
+    },
+    {
+      "claim_id": "62b77f97-373f-47c0-9066-020685d6e226",
+      "result_id": "cd0ab0f8-fd20-45c2-b20f-5a06fd66bc43"
+    },
+    {
+      "claim_id": "da4f9f07-67f0-4288-8722-5e6424a43eb6",
+      "result_id": "cd0ab0f8-fd20-45c2-b20f-5a06fd66bc43"
+    },
+    {
+      "claim_id": "8669ae83-5ff5-4e3a-b8f6-5a746166953a",
+      "result_id": "dc3aa0d1-ac58-4492-8dc7-f0b6e7415f77"
+    },
+    {
+      "claim_id": "add1b94d-e914-4e6a-a824-8bcdc62717a6",
+      "result_id": "dc3aa0d1-ac58-4492-8dc7-f0b6e7415f77"
+    },
+    {
+      "claim_id": "da35e626-86ca-4ac1-b478-9e992f7e2251",
+      "result_id": "dc3aa0d1-ac58-4492-8dc7-f0b6e7415f77"
+    },
+    {
+      "claim_id": "003e979d-412e-40ba-9d8d-4e4f01bbae6e",
+      "result_id": "dc3aa0d1-ac58-4492-8dc7-f0b6e7415f77"
+    },
+    {
+      "claim_id": "e4903473-84a1-49cf-9072-7c8ae879d63e",
+      "result_id": "dc3aa0d1-ac58-4492-8dc7-f0b6e7415f77"
+    },
+    {
+      "claim_id": "87e9147e-d441-4af3-a922-795bda7a2357",
+      "result_id": "dc3aa0d1-ac58-4492-8dc7-f0b6e7415f77"
+    },
+    {
+      "claim_id": "acbb8b29-7f2c-4943-a1b3-8045333d6e95",
+      "result_id": "dc3aa0d1-ac58-4492-8dc7-f0b6e7415f77"
+    },
+    {
+      "claim_id": "b6a2da95-28f1-43d1-8717-5b4d4dddc4b7",
+      "result_id": "dc3aa0d1-ac58-4492-8dc7-f0b6e7415f77"
+    },
+    {
+      "claim_id": "b4ba4fa3-26b7-4b5f-a5f3-b2ecb0f2c216",
+      "result_id": "b768a35f-7752-4a34-b0f0-f1e460eaf076"
+    },
+    {
+      "claim_id": "f97dd41c-11d4-4f26-83b2-fbb173fa3611",
+      "result_id": "b768a35f-7752-4a34-b0f0-f1e460eaf076"
+    },
+    {
+      "claim_id": "93717e91-7810-4295-9c1a-887b6655e6b9",
+      "result_id": "b768a35f-7752-4a34-b0f0-f1e460eaf076"
+    },
+    {
+      "claim_id": "757a704c-c7d8-418b-9f3c-8b4ecc6a0d41",
+      "result_id": "b768a35f-7752-4a34-b0f0-f1e460eaf076"
+    },
+    {
+      "claim_id": "f369e54a-7e79-4c29-a097-9f6666a7cb8f",
+      "result_id": "b768a35f-7752-4a34-b0f0-f1e460eaf076"
+    },
+    {
+      "claim_id": "0f7a43b8-74f4-4de2-bd05-afab149cdd00",
+      "result_id": "b768a35f-7752-4a34-b0f0-f1e460eaf076"
+    },
+    {
+      "claim_id": "4f97ece3-9612-43f9-854d-3ec662b27d81",
+      "result_id": "51214ce3-6169-4fa9-9c09-7ac5fd746bbd"
+    },
+    {
+      "claim_id": "3d333b04-cc9a-4284-9c70-f80b631ec33c",
+      "result_id": "51214ce3-6169-4fa9-9c09-7ac5fd746bbd"
+    },
+    {
+      "claim_id": "b6168709-b6ba-48aa-96b2-b633e3b8015e",
+      "result_id": "51214ce3-6169-4fa9-9c09-7ac5fd746bbd"
+    },
+    {
+      "claim_id": "d95ed358-841c-4de6-9193-980a105628c4",
+      "result_id": "51214ce3-6169-4fa9-9c09-7ac5fd746bbd"
+    },
+    {
+      "claim_id": "cd1656b0-4a1c-4ca3-b650-6daa5d7cf6d4",
+      "result_id": "f51bd6be-128b-49df-aa80-7f6ccd2115ff"
+    },
+    {
+      "claim_id": "2e28a8d5-3708-4f18-a7cd-631a93197d00",
+      "result_id": "f51bd6be-128b-49df-aa80-7f6ccd2115ff"
+    },
+    {
+      "claim_id": "524760f0-b402-4bb0-ba42-52e4e84f2d5a",
+      "result_id": "f51bd6be-128b-49df-aa80-7f6ccd2115ff"
+    },
+    {
+      "claim_id": "64fb333b-217f-4585-9018-bdf55e047742",
+      "result_id": "f51bd6be-128b-49df-aa80-7f6ccd2115ff"
+    },
+    {
+      "claim_id": "847bfffe-f9cc-4432-803a-10489feb6d9d",
+      "result_id": "f51bd6be-128b-49df-aa80-7f6ccd2115ff"
+    },
+    {
+      "claim_id": "2ec73e11-777d-4a08-9927-dc260d997a80",
+      "result_id": "f51bd6be-128b-49df-aa80-7f6ccd2115ff"
+    },
+    {
+      "claim_id": "a47abfd2-7e76-450c-8ef1-12746d376c27",
+      "result_id": "f51bd6be-128b-49df-aa80-7f6ccd2115ff"
+    },
+    {
+      "claim_id": "0ceb8aef-8421-4a60-9dd8-526289c03180",
+      "result_id": "f51bd6be-128b-49df-aa80-7f6ccd2115ff"
+    },
+    {
+      "claim_id": "3d8b3419-4d59-45d5-986a-ef00f962fb11",
+      "result_id": "f51bd6be-128b-49df-aa80-7f6ccd2115ff"
+    },
+    {
+      "claim_id": "479d2923-6f2a-458d-b78b-64831a98f9a0",
+      "result_id": "f51bd6be-128b-49df-aa80-7f6ccd2115ff"
+    },
+    {
+      "claim_id": "625b0892-d664-46c2-a557-91c03c8bde2a",
+      "result_id": "f51bd6be-128b-49df-aa80-7f6ccd2115ff"
+    }
+  ],
+  "comparisons": []
+}

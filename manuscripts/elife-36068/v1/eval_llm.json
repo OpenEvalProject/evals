@@ -1,0 +1,436 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The study included 19 neurologically healthy, right-handed participants with normal or corrected-to-normal vision after excluding 4 subjects due to excessive movement. The study received ethical approval and all participants provided informed consent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C95-C97 provide complete methodological details about participant characteristics, exclusion criteria, and ethical compliance. The sample size and exclusion rationale are clearly stated with specific numbers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Disambiguation dramatically increased recognition of Mooney images from ~40% pre-disambiguation to ~86% post-disambiguation, with both subjective recognition and verbal identification showing highly significant effects. Repetition also improved recognition, but this effect was driven primarily by pre-disambiguation images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C8 present converging behavioral evidence with appropriate statistical tests (t-tests, ANOVA with post-hoc comparisons), large effect sizes (Cohen's d = 4.2-5.8), and highly significant p-values (p<0.001). The interaction analysis (C6-C7) appropriately controls for repetition effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "Disambiguated Mooney images elicited significantly higher activity in DMN regions (PCC, lateral parietal cortices, MPFC) compared to pre-disambiguation images, resulting from reduced deactivation rather than increased activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 are supported by GLM analysis with appropriate multiple comparison correction (FWE) and replicate previous findings. The distinction between reduced deactivation versus increased activation (C10) is an important mechanistic detail supported by the data in Figure 2B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "Searchlight decoding revealed that information about Mooney image status (pre- vs. post-disambiguation) was contained in voxel-wise activity patterns across extensive brain regions, including FPN, ACC, anterior insulae, fusiform gyri, and DMN components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 is supported by whole-brain searchlight MVPA with appropriate cluster-based permutation testing for multiple comparison correction (p<0.01). Results are shown in Figure 2C and replicated with verbal identification responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Disambiguation increased representational dissimilarity between individual Mooney images throughout the cortical hierarchy, from early visual areas to FPN and DMN, with dissimilarity gradually increasing from early visual areas to higher-order regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are supported by RSA analysis with appropriate statistical testing (Wilcoxon signed-rank tests, FDR correction) across multiple ROIs and hemispheres. The gradient pattern is consistently observed across visual hierarchy as shown in Figures 3 and 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Category information (natural vs. manmade) was significant for grayscale images in category-selective visual regions and parietal FPN/DMN regions, but for Mooney images, category information was absent pre-disambiguation and limited to visual regions (LOC, FG) post-disambiguation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 are supported by category information analysis with FDR correction. The finding that category information is limited even after disambiguation suggests that individual image identity, rather than category, is the primary representational feature in higher-order regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Throughout the cortical hierarchy (except V1), post-disambiguation Mooney images were represented more similarly to their grayscale counterparts than to the same Mooney images shown pre-disambiguation, indicating that prior knowledge outweighs immediate sensory input in shaping neural representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 are supported by within-image similarity analysis with appropriate statistics (Wilcoxon tests, FDR correction). The finding that representations shift more toward priors than sensory input is a key mechanistic insight, though the marginal effect in V1 (C20, p=0.06-0.07) suggests a gradient of this effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Disambiguation effects on neural representations (increased between-image dissimilarity, increased within-image similarity to grayscale) were significantly larger than effects of mere repetition, as demonstrated by significant condition \u00d7 set interactions in a control analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 present a critical control analysis using repeated-measures ANOVA that rules out repetition suppression as an alternative explanation. The significant interactions (p\u22640.05) demonstrate that disambiguation has effects beyond simple repetition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Second-order RSA revealed a stable hierarchy of neural representation format across brain regions that mirrors a principal gradient of macroscale cortical organization, with early visual areas and DMN at opposite extremes and FPN intermediate, consistent with recent findings based on resting-state connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are supported by second-order RSA with high goodness-of-fit (r\u00b2=0.92, stress=0.06) shown in Figure 5C. The comparison with Margulies et al. 2016 (C26) provides important theoretical context, though this is a post-hoc interpretation rather than a pre-registered hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The hierarchical organization of neural representation format remained stable across perceptual conditions (pre-disambiguation, post-disambiguation, grayscale), though frontal FPN regions moved higher in the hierarchy after disambiguation, separating from parietal regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 are supported by within-condition second-order RSA with high goodness-of-fit for all conditions (r\u00b2=0.90-0.93). The qualitative observation about frontal FPN regions (C29) is interesting but lacks quantitative statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Dimensionality of neural representational space increased along the cortical hierarchy, being lowest in early visual areas and LOC, and highest in FG, FPN, and DMN. Both network and perceptual condition significantly affected dimensionality, with no significant interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 are supported by dimensionality analysis using MDS with appropriate two-way repeated-measures ANOVA and post-hoc tests (Bonferroni correction). The large effect sizes (\u03b7\u00b2p=0.75 for network, 0.61 for condition) indicate robust effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Dimensionality was significantly higher for both post-disambiguation Mooney images and grayscale images compared to pre-disambiguation Mooney images, with no significant difference between post-disambiguation and grayscale conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 are supported by post-hoc comparisons with appropriate statistics. The finding that post-disambiguation Mooney images reach similar dimensionality as grayscale images suggests complete transformation of representational space.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Neural code preservation (cross-condition decoding of individual images) decreased along the cortical hierarchy, being significant in early visual areas, LOC, FG, and FPN, but not in DMN regions. Network significantly affected preservation index, with most pairwise comparisons significant except Visual vs. LOC and FPN vs. DMN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are supported by preservation index analysis with appropriate statistics (one-sample t-tests, repeated-measures ANOVA, post-hoc comparisons with Bonferroni correction). The gradient of decreasing preservation toward higher-order regions is consistent with the interpretation that these regions undergo more profound transformation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Within FPN and DMN, preservation index was significantly higher in FPN-parietal regions than FPN-frontal regions or DMN, while FPN-frontal and DMN did not differ significantly, suggesting a gradient of prior influence within these networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by additional repeated-measures ANOVA and post-hoc comparisons. This fine-grained analysis reveals important distinctions within the FPN, though the lack of difference between frontal FPN and DMN (p=1) may reflect limited statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Prior knowledge significantly impacted neural representations in FPN and DMN, making individual images more distinct and more similar to priors. Neural representations followed a stable hierarchy with two large-scale gradients: increasing dimensionality and greater prior influence toward higher-order areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47, C92-C94 summarize the main findings, which are well-supported by the convergent evidence from multiple analyses (RSA, dimensionality, preservation index) across the cortical hierarchy. These represent the core conclusions of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Enhanced image-level information in DMN following disambiguation reflects active involvement in visual processing rather than nonspecific effects (arousal, task difficulty), as evidenced by reduced deactivation rather than increased activation and content-specific representational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 present an important interpretive argument supported by the pattern of results (reduced deactivation in C10, increased dissimilarity in C12-C13, shift toward priors in C18-C19). This rules out alternative explanations based on nonspecific factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The FPN exhibited an intermediate pattern between DMN and visual areas in prior-guided perceptual processing, both in terms of neural representational format (second-order RSA) and the extent to which priors altered representations (preservation index).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by second-order RSA (Figure 5) and preservation index analysis (Figure 7). This confirms the a priori hypothesis that FPN would be intermediate, consistent with its anatomical and functional position between sensory and DMN regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "All disambiguated Mooney images required the same response, yet FPN showed content-specific representations, inconsistent with the hypothesis that FPN only encodes target/non-target distinctions. Frontal FPN regions moved up the hierarchy after disambiguation, suggesting a special role in utilizing priors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by the experimental design and rules out a task-based alternative explanation. Claim C79 is supported by the second-order RSA (Figure 5D) but represents a qualitative observation without quantitative statistical support for the 'special role' interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The findings support and extend earlier reports of increased image-level information in early and category-selective visual regions following disambiguation, resolving previous controversy by confirming that image-specific information increases in V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 appropriately contextualize the current findings relative to prior work (Hsieh et al. 2010, Gorlin et al. 2012, van Loon et al. 2016). The resolution of the V1 controversy is supported by the current data (C13) showing significant effects in right V1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "FG is consistently positioned higher than LOC in the cortical hierarchy across perceptual conditions, exhibiting higher dimensionality and stronger disambiguation effects. This hierarchy is compatible with FG's more anterior anatomical location and previous reports of representational gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 are supported by converging evidence from second-order RSA (Figure 5), dimensionality analysis (Figure 6), and preservation index (Figure 7). The anatomical interpretation (C85) is reasonable but represents post-hoc inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "The profound changes in DMN representations following fast, automatic disambiguation are consistent with previous findings showing that slow perceptual training alters DMN-visual cortex connectivity, and with greater DMN activation to objects versus color patches in working memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 appropriately contextualize findings relative to prior work (Lewis et al. 2009, Murphy et al. 2018). However, C74 includes speculation ('may reflect stronger priors') and acknowledges an alternative explanation (stimulus complexity), indicating uncertainty in interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Consistent with previous findings that hippocampus activity does not predict Mooney disambiguation success, the current study found no significant increase in image-specific information in hippocampal ROIs following disambiguation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 present a negative finding that is consistent with prior work (Ludmer et al. 2011) and supports the distinction between perceptual priors and episodic memory. However, the lack of effect could also reflect methodological limitations (ROI definition, sensitivity).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The study used 7T fMRI and multivariate pattern analyses to investigate 33 Mooney images (17 animals, 16 manmade objects) presented 6 times pre- and post-disambiguation, with both subjective recognition responses and verbal identification collected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 describe the core experimental design and methods. The use of both subjective and verbal measures (C68-C70) provides converging behavioral evidence. The design is appropriate for the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Stimuli were generated from Caltech and Pascal VOC databases and selected based on disambiguation effect in a screening procedure. Images were presented at 11.9\u00b0 visual angle. Imaging used a 7T scanner with specific acquisition parameters, and physiological noise was removed using RETROICOR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C105 provide detailed methodological information about stimulus generation, presentation, imaging parameters, and preprocessing. These details support reproducibility, though some parameters (e.g., specific preprocessing steps) are standard and expected.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "While it is established that perception arises from interaction between sensory input and internal priors, and extensive research has examined early sensory areas, whether higher-order frontoparietal regions contain content-specific representations involved in prior-guided perception remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 accurately characterize the state of knowledge in the field based on cited literature. C48 represents established consensus, C49 summarizes prior work, and C50 identifies the knowledge gap addressed by the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Classic theories suggest DMN is involved in internally oriented processes, but recent studies show DMN activation in externally oriented tasks. A recent framework suggests DMN allows online processing to be guided by stored representations, but evidence for content-specific DMN activity in externally-oriented tasks is lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 accurately summarize the theoretical background and controversy regarding DMN function, with appropriate citations. These claims establish the motivation for investigating content-specific DMN representations during perception.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "One framework suggests FPN only encodes task-relevant information, but neural activity reflecting perceptual content has been observed in LPFC and PPC components of FPN. Whether LPFC contributes to visual perception is debated. FPN is anatomically and functionally intermediate between DMN and sensory areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 accurately characterize the debate about FPN function with appropriate citations. C59 provides the rationale for hypothesizing that FPN would show intermediate effects, which is confirmed by the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Mooney images are difficult to recognize initially but become effortlessly recognizable after viewing the grayscale image, with effects lasting days to months. Previous studies showed disambiguation increases distinctiveness and similarity to grayscale in visual regions, but effects in higher-order frontoparietal cortices remain unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 accurately describe the Mooney image phenomenon and summarize prior neuroimaging findings with appropriate citations. C63 identifies the specific knowledge gap addressed by the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C90",
+      "C91"
+    ],
+    "result": "Mooney disambiguation is a dramatic example of one-shot learning that differs from episodic memory by being non-self-referential and potentially non-declarative. Understanding this phenomenon has clinical implications, as prior experiences overwhelming sensory input may lead to hallucinations in PTSD, and psychosis-prone individuals show larger disambiguation effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 appropriately characterize the phenomenon with citations. Claims C90-C91 discuss clinical implications with appropriate citations, though these represent speculative extensions of the findings rather than direct results of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "The study hypothesized that acquisition of perceptual priors would alter neural representations and enhance content-specific information in DMN and FPN regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 states the a priori hypothesis, which is appropriate and clearly supported by the results. This represents good scientific practice in stating predictions before presenting results.",
+    "result_type": "MINOR"
+  }
+]

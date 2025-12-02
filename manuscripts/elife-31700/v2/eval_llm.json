@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Single-cell measurements reveal robust circadian oscillations across all tissues of Arabidopsis seedlings, with individual cells maintaining rhythmicity over several days under constant conditions. The observed damping at the tissue and whole-plant level is not due to individual cells losing rhythmicity, but rather to desynchronization between cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C32-C35, and C96-C102 collectively demonstrate robust single-cell oscillations across multiple tissues and replicate experiments. The data show that individual cells maintain stable oscillations (C34, Figure 1\u2014figure supplement 6) while tissue-level damping occurs (C98), establishing that desynchronization rather than loss of rhythmicity causes the observed damping (C35). Multiple independent experiments confirm reproducibility (C100, C101).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The hypocotyl and cotyledon exhibit highly synchronized, robust circadian rhythms with low period variability, while the root displays significant desynchronization and higher period variability. Comparison to stochastic models suggests the hypocotyl and cotyledon behave like a system size of ~1000 molecules, while the root behaves like ~100 molecules, though this difference is not explained by changes in CCA1-YFP expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 establish tissue-specific differences in synchronization and robustness using quantitative metrics (amplitude ratios, period variability). Claims C43-C45 compare experimental data to stochastic simulations at different system sizes, providing mechanistic context. Claims C46-C48 rule out expression level differences as the cause, supported by Figure 2f,g. The integration of experimental observations with modeling provides strong support for tissue-specific clock properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C49",
+      "C50",
+      "C51",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Two opposing waves of clock gene expression occur in the root: one traveling down from the hypocotyl and one traveling up from the root tip. The hypocotyl peaks earlier than the cotyledon, the upper root shows longer periods, while the root tip exhibits very fast rhythms. Phase variability is much higher in the root (\u00b15.0 hr) compared to the hypocotyl (\u00b11.1 hr).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C56-C61 describe the spatial wave patterns with specific phase measurements (C103-C110) providing quantitative support. The observations are visualized in Figure 3e-h and Videos 1-3. Claims C49-C51 establish the period differences that underlie the waves. The high phase variability in the root (C60, C109-C110) explains the damping observed at the tissue level (C61). Multiple measurements across different plant sections provide comprehensive spatial mapping.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Similar spatial waves of clock gene expression are observed in luciferase reporter lines for PRR9, CCA1, and GIGANTEA, indicating that the wave patterns are a general property of the circadian clock rather than specific to the CCA1-YFP reporter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 demonstrate reproducibility across multiple clock gene reporters (Figure 3i, Figure 3\u2014figure supplement 1a,b, Video 4). Testing multiple independent reporters strengthens the conclusion that waves are a fundamental property of the clock system. However, the analysis is described as 'qualitatively similar' rather than quantitatively equivalent, which is appropriate given the different reporter systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C64",
+      "C65",
+      "C66",
+      "C78",
+      "C79"
+    ],
+    "result": "Evidence of cell-to-cell coupling is detected across the plant, with the strongest coupling in the root tip where the order parameter increases over time. The strongest coupling occurs in regions of highest cell density, and this coupling is sufficient to drive increased synchrony over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 and C78-C79 describe coupling strength measurements using order parameter analysis (Figure 3j, Figure 3\u2014figure supplements 2-4). The correlation between coupling strength and cell density (C66) provides mechanistic insight. The increase in order parameter over time in the root tip (C65, C79) provides direct evidence that coupling drives synchronization. Multiple analytical approaches (order parameter and synchronization index, Figure 3\u2014figure supplements 2-3) support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C67",
+      "C68",
+      "C80",
+      "C81"
+    ],
+    "result": "A simple mathematical model of coupled oscillators with experimentally measured period differences can generate spatial waves of clock gene expression similar to those observed experimentally. The model demonstrates that cell-to-cell coupling combined with period differences between tissues is sufficient to replicate the observed spatial structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 describe the Kuramoto phase oscillator model and its ability to reproduce the experimental bow wave pattern (Figure 3k). Claim C80 states the model's sufficiency to explain observations, while C81 acknowledges it provides a 'qualitative match.' The model is appropriately simple and uses experimentally measured parameters (periods, coupling). However, the model is qualitative rather than quantitative, and does not test alternative mechanisms or provide statistical validation of the fit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The Arabidopsis clock exhibits a decentralized spatial structure with multiple coordination points, contrasting with the centralized mammalian SCN. While some observations fit a hierarchical model with the shoot apex driving root rhythms, the short-period oscillations in the root tip and the upward-traveling wave cannot be explained by a simple hierarchical structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 summarize tissue-specific differences and their independence from cell type. Claims C72-C74 compare findings to existing models, showing partial agreement with hierarchical models (C72) but identifying observations that require a more complex, decentralized model (C73-C74). The conclusion is well-supported by the spatial wave data and coupling measurements, though the exact nature of the decentralized coordination mechanism remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Period differences across the plant are not restricted to specific cell types, as similar periods are observed in the z-direction (radial) through each longitudinal section.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by Figure 3c,d and Figure 2\u2014figure supplement 3, showing no discernible pattern in period along the z-axis. This suggests that longitudinal position rather than cell type determines clock properties. However, the analysis is limited by the resolution and cell type identification capabilities of the imaging system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The CCA1-YFP reporter construct is functional, rescues the cca1-11 mutant phenotype, and is expressed in nuclei across all tissues examined (root tip, root, hypocotyl, cotyledon).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 validate the reporter construct through emission spectra (C28), complementation assays (C29-C30), and localization (C31), supported by Figure 1\u2014figure supplement 1. Claims C90-C92 describe the construction and validation methods. The complementation data demonstrate functionality, and both wild-type and long-period lines were generated, allowing examination across different clock periods. This validation is essential for interpreting the single-cell data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "A custom time-lapse confocal microscopy system was developed that enables tracking of individual nuclei and extraction of fluorescence values from the same cells over several days under constant conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 describe the imaging methodology, supported by Figure 1\u2014figure supplement 2 and Figure 1d,e. The methods section provides detailed protocols. The ability to track individual cells over multiple days is critical for the study's conclusions. However, some technical details (e.g., tracking accuracy, cell division handling) could be more thoroughly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Stochastic simulations of the Arabidopsis clock model show that lower molecule numbers (system size) lead to greater desynchronization at the single-cell level and more damping of mean expression, even though individual traces remain rhythmic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 describe stochastic modeling results (Figure 2c-e) using an established model (Guerriero et al., 2012). The simulations demonstrate how noise affects synchronization and provide context for interpreting experimental data. Claim C42 cites previous estimates of system size ~100 molecules. The modeling provides important mechanistic context but is based on an existing model rather than new model development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "No evidence of phase resetting in the root tip was observed in this study, though this could be due to different growth conditions and developmental stages compared to previous work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C52 states the absence of a finding, while C53 speculates about possible explanations. The absence of evidence is not necessarily evidence of absence, and the authors appropriately acknowledge that experimental differences could explain the discrepancy with Fukuda et al., 2012. Without systematic testing of different conditions, it's unclear whether phase resetting truly doesn't occur or simply wasn't detected under these specific conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C75",
+      "C76",
+      "C77",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Background context on circadian clocks, including established knowledge about clock function across organisms, the Arabidopsis clock system, hierarchical organization in mammals and plants, and previous observations of spatial patterns and coupling in plant clocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C2, C11-C19, C75-C77, C83-C87, C111-C113) provide literature context and are supported by appropriate citations. They establish the knowledge base and research gaps that motivate the current study. While important for framing, these are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C25"
+    ],
+    "result": "Prior to this study, it remained unclear how robust the clock is in individual cells and how clock timing is coordinated across the plant, with previous single-cell studies focusing on specific plant parts for short time series.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C25 identify research gaps that motivate the study. These are supported by citations to previous work (C25) and represent accurate characterizations of the state of knowledge. These claims establish the rationale for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C26",
+      "C27"
+    ],
+    "result": "Current mathematical models of the Arabidopsis clock predict undamped oscillations, while experimental measurements of bulk clock rhythms under constant conditions typically show damped rhythms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 and C26-C27 describe the discrepancy between model predictions and experimental observations, supported by Figure 1a,b and citations. This discrepancy motivates the investigation of single-cell dynamics. The claims accurately represent both modeling and experimental literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Three hypotheses are proposed for the cause of damping at the whole plant level: damping in individual cells, desynchronization due to different intrinsic periods or phases, or desynchronization due to stochasticity in clock activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 present alternative hypotheses supported by citations and illustrated in Figure 1c. These represent plausible mechanisms from the literature that the study aims to distinguish between. The hypotheses appropriately frame the experimental questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C88",
+      "C89",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Speculation about functional implications of decentralized coordination and identification of future research directions, including investigating coupling signals, developing mechanistic single-cell models, measuring isolated cell properties, and testing models under various conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C82, C88-C89, C114-C118) are explicitly speculative about future work and functional implications. While reasonable and well-motivated by the findings, they represent hypotheses rather than tested conclusions. Claim C116 identifies a current limitation (coupling effects in intact plants), which is a valid methodological consideration.",
+    "result_type": "MINOR"
+  }
+]

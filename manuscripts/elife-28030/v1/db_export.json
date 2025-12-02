@@ -1,0 +1,1491 @@
+{
+  "submission": {
+    "id": "b7161b3b-1dd3-477e-8e48-64b582a46d7b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:03:49.623880Z",
+    "updated_at": "2025-12-01T20:03:49.623880Z"
+  },
+  "content": [
+    {
+      "id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "submission_id": "b7161b3b-1dd3-477e-8e48-64b582a46d7b",
+      "content_type": "manuscript",
+      "content_text": "# Promiscuous binding by Hsp70 results in conformational heterogeneity and fuzzy chaperone-substrate ensembles\n\n## Authors\n\n- Rina Rosenzweig<sup>1</sup> \u2020\n- Ashok Sekhar<sup>1</sup> ([ORCID: 0000-0002-8628-7799](https://orcid.org/0000-0002-8628-7799)) \u2020\n- Jayashree Nagesh<sup>5</sup>\n- Lewis E Kay<sup>1</sup> ([ORCID: 0000-0002-4054-4083](https://orcid.org/0000-0002-4054-4083)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Genetics The University of Toronto Toronto Canada\n2. Department of Biochemistry The University of Toronto Toronto Canada\n3. Department of Chemistry University of Toronto Toronto Canada\n4. Department of Structural Biology Weizmann Institute of Science Rehovot Israel\n5. Chemical Physics Theory Group, Department of Chemistry University of Toronto Toronto Canada\n6. Hospital for Sick Children, Program in Molecular Structure and Function Toronto Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe Hsp70 chaperone system is integrated into a myriad of biochemical processes that are critical for cellular proteostasis. Although detailed pictures of Hsp70 bound with peptides have emerged, correspondingly detailed structural information on complexes with folding-competent substrates remains lacking. Here we report a methyl-TROSY based solution NMR study showing that the Escherichia coli version of Hsp70, DnaK, binds to as many as four distinct sites on a small 53-residue client protein, hTRF1. A fraction of hTRF1 chains are also bound to two DnaK molecules simultaneously, resulting in a mixture of DnaK-substrate sub-ensembles that are structurally heterogeneous. The interactions of Hsp70 with a client protein at different sites results in a fuzzy chaperone-substrate ensemble and suggests a mechanism for Hsp70 function whereby the structural heterogeneity of released substrate molecules enables them to circumvent kinetic traps in their conformational free energy landscape and fold efficiently to the native state.\n\n## Introduction\n\nThe Hsp70 chaperone system plays a vital role in quality control by overseeing the integrity of the cellular proteome in organisms ranging from bacteria to humans (Balchin et al., 2016). Hsp70 performs a staggering array of functions and its ATP-dependent interaction with client proteins imparts directionality to a number of cellular processes such as protein folding (Hartl et al., 2011), translocation (Kang et al., 1990; Pilon and Schekman, 1999; Mayer, 2013), disaggregation (Nillegoda et al., 2015; Mogk et al., 2015) and oligomer disassembly (B\u00f6cking et al., 2011; De Los Rios and Goloubinoff, 2016). Hsp70 is able to interact with clients having a broad range of conformations (Schlecht et al., 2011; Mashaghi et al., 2016), including unfolded polypeptides emerging from the ribosome (Teter et al., 1999; Deuerling et al., 1999; Willmund et al., 2013), native proteins such as the heat shock transcription factor (Rodriguez et al., 2008), macromolecular assemblies including clathrin-coated vesicles (Sousa et al., 2016), as well as non-native misfolded and aggregated polypeptide chains (Szabo et al., 1994; Mayer and Bukau, 2005; Goloubinoff and De Los Rios, 2007).\n\nThe multitude of client conformations that Hsp70 recognizes and the diversity of functions it carries out are in sharp contrast to the simplicity of its client binding-site architecture (Clerico et al., 2015). Hsp70 interacts with client substrates through its C-terminal domain, which is composed of a \u03b2-sandwich subdomain that includes a substrate binding cleft and an \u03b1-helical lid (Figure 1A). Both crystal- (Zhu et al., 1996; Zahn et al., 2013) and NMR-derived structures (Stevens et al., 2003) show that short peptides bind Hsp70 in an extended conformation with only five residues contacting Hsp70. The peptide is stabilized in the binding pocket by hydrogen bonds between its backbone and binding cavity forming loops in Hsp70, as well as by hydrophobic interactions between the peptide core and conserved Ile, Leu and Met residues of the binding cleft (Figure 1B). Crystal structures of a number of peptides bound to Hsp70 have been solved with Ile, Leu, Pro and the unnatural amino acid cyclohexylalanine occupying the central position of the binding pocket, suggesting that the pocket may possess considerable intrinsic flexibility (Zahn et al., 2013).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/28030/elife-28030-fig1-v1.jpg)\n\n**Figure 1.:** (A) Cartoon representation of DnaK/ADP (PDB ID: 2KHO [Bertelsen et al., 2009]) highlighting the nucleotide binding (green, NBD) and substrate binding (SBD) domains, the latter of which is further subdivided into the \u03b2-sandwich domain (steel blue) and the \u03b1-helical lid (light pink). The backbone nitrogen atoms of Ile, Leu, Val and Met residues are indicated as blue spheres. (B) Crystal structure of the NRLLLTG peptide in complex with the DnaK SBD (PDB ID: 1DKZ [Zhu et al., 1996]) depicting the extended conformation of the peptide. Hydrogen bonds between the peptide backbone and the \u03b2-sandwich domain are shown as black dashed lines. (C) Cartoon representation of the three-helix bundle hTRF1 (PDB ID: 1BA5 [Nishikawa et al., 1998]) showing the strongest\u00a0DnaK binding site in magenta. The backbone nitrogen atoms of Ile, Leu, Val and Met residues are indicated as blue spheres. (D) The DnaK score for hTRF1 showing the presence of one strong (around Leu 30) and two weak DnaK binding sites (around Val 18 and Val 41). The secondary structure of hTRF1 is indicated on the top of the plot with the strongest DnaK binding site in magenta. A DnaK score of \u22125 denotes the cutoff for a binding site (R\u00fcdiger et al., 1997) and is drawn as a dashed line.\n\nThe ability of Hsp70 to restructure the conformation of its clients underlies many of its functions; however, the mechanism by which Hsp70 interacts with full-length proteins to modulate their conformation remains poorly understood. A number of models have been proposed in this regard, ranging from the active induced fit-like unfoldase model to the passive conformational selection-based holdase model (Mayer, 2013; Goloubinoff and De Los Rios, 2007; Slepenkov and Witt, 2002). During the course of its chaperone cycle, Hsp70 samples ATP-bound, ADP-bound and nucleotide-free states and also undergoes massive structural reorganization (Kityk et al., 2012; Qi et al., 2013; Bertelsen et al., 2009). These changes in Hsp70 structure have been hypothesized to perform conformational work on the bound substrate (Mayer, 2013), thereby changing its conformation as in the case of luciferase refolding, where Hsp70 is pictured as an unfoldase that converts a kinetically trapped misfolded state of luciferase into a folding-competent unfolded conformation (Sharma et al., 2010). In contrast, Hsp70 is believed to uncoat clathrin pits through a holdase mechanism by capturing conformers that are transiently formed via fluctuations in the clathrin structure (B\u00f6cking et al., 2011).\n\nWe have previously characterized how binding of Hsp70 affects local structure and long-range interactions in regions removed from the binding site of a helical protein model substrate, the human telomeric repeat-binding factor (hTRF1, Figure 1C) (Sekhar et al., 2015, 2016). Notably, the conformation of the bound substrate is independent of the nucleotide state of Hsp70, suggesting that an ATP-coupled unfoldase mechanism may not be a general feature of Hsp70 activity (Sekhar et al., 2015). Hsp70 binding does not disturb the secondary structural propensities of hTRF1 removed from the binding site, although long-range interactions are significantly affected (Sekhar et al., 2016). Here, we have used methyl-TROSY NMR (Tugarinov et al., 2003) in conjunction with selective isotope labeling (Tugarinov and Kay, 2004; Kerfah et al., 2015) to obtain atomic resolution information on an hTRF1 complex with the major E.coli Hsp70 homolog, DnaK, including at the DnaK binding site. We find that the flexibility inherent in the DnaK binding pocket enables it to interact promiscuously with substrate. DnaK binds at as many as four distinct sites on this small 53-residue client protein, with a fraction of hTRF1 bound to two molecules of chaperone, resulting in considerable heterogeneity in the bound ensemble. Our results, therefore suggest a model for Hsp70-mediated conformational biasing whereby binding of Hsp70 at different positions of a substrate creates sub-ensembles with distinct conformational preferences and hence different starting structures for folding upon release from Hsp70, thereby broadening the conformational space sampled by the substrate as it folds. More generally, our study establishes that the DnaK-hTRF1 ensemble is a fuzzy complex, characterized by both static and dynamic disorder. It further demonstrates the utility of NMR spectroscopy as a tool to probe heterogeneous biomolecular ensembles at atomic resolution.\n\n## Results\n\n### A strategy for characterizing the interaction of DnaK with a model substrate using methyl-TROSY NMR\n\nIn order to obtain insight into the molecular details of Hsp70-substrate interactions we have used the model substrate hTRF1 (Figure 1C), a 53-residue three-helix bundle belonging to the homeodomain family of proteins (Gianni et al., 2003). hTRF1 is only marginally stable and its native conformation is in equilibrium with an unfolded state that is populated at 4.2% and only transiently formed with a lifetime of 2.9 ms (35\u00b0C) (Sekhar et al., 2015). This substrate has one predicted (R\u00fcdiger et al., 1997) strong DnaK binding site centred at Leu 31 and two additional weak sites around residues 16 and 42 (Figure 1D). We have previously shown that hTRF1 interacts with DnaK at its canonical binding site and while DnaK-bound hTRF1 is globally unfolded, secondary structural propensities are not affected in substrate regions distal to the DnaK binding site, with as much as 40% residual secondary structure retained (Sekhar et al., 2015). In contrast, a series of spin relaxation experiments established that transient long-range native and non-native tertiary interactions that are present in the unfolded state of hTRF1 are disrupted in the bound form (Sekhar et al., 2016). Interestingly, despite the fact that DnaK undergoes large conformational changes between ATP and ADP bound states the tethered hTRF1 is maintained in a globally unfolded conformation throughout the entire chaperone nucleotide cycle (Sekhar et al., 2015).\n\nOur initial studies using 1H-15N NMR spectroscopy could not detect hTRF1 residues located at or near the DnaK binding site (residues 27\u201339 were invisible), because the relevant 1H-15N correlations were not visible in TROSY-based spectra of U-2H/15N hTRF1 bound to U-2H DnaK/ADP that reflects both the slow rotational tumbling of the\u00a0~80 kDa DnaK-hTRF1 complex and potentially also conformational heterogeneity at the binding site (see below). In order to probe chaperone-substrate interactions at the binding site we made use of selective isotope labeling strategies (Kerfah et al., 2015; Tugarinov et al., 2006) in concert with methyl Transverse Relaxation Optimized Spectroscopy (methyl-TROSY) (Tugarinov et al., 2003; Ollerenshaw et al., 2003). The methyl-TROSY technique takes advantage of favorable relaxation properties of the 13C and 1H methyl spins during magnetization transfer in a heteronuclear multiple quantum correlation (HMQC) experiment, where one of the two magnetization transfer pathways is effectively immune to intra-methyl dipolar relaxation (Tugarinov et al., 2003). External sources of transverse relaxation are minimized by preparing highly deuterated proteins, with 1H,13C labeling restricted to the methyl groups of Ile, Leu, Val and Met and where the isopropyl methyls of Leu and Val are labeled as 13CH3/12CD3. The utility of methyl 13CH3-labeling along with methyl-TROSY methodology has been established in studies of high molecular weight proteins where insight into the structure and dynamics of a number of large molecules and macromolecular complexes with molecular weights up to approximately one MDa have been obtained (Rosenzweig and Kay, 2014; Wiesner and Sprangers, 2015; Huang and Kalodimos, 2017).\n\n### Multiple DnaK-bound conformations of hTRF1\n\nHuman TRF1 has a number of methyl groups that can serve as probes of molecular structure and dynamics in the DnaK-bound complex. Of the single Ile, six Leu, two Val and two Met residues, the Ile and two of the Leu are located at the strongest DnaK binding site (Figure 1C,D). We have, thus, prepared a sample of U-2H, Ile\u03b41-13CH3, Leu,Val-13CH3/12CD3, Met-13CH3-(referred to as ILVM-13CH3) labeled hTRF1 and exploited the methyl-TROSY effect to obtain spectra of high resolution and sensitivity. The Ile region of the 1H-13C HMQC spectrum of ILVM-13CH3 hTRF1 shows a single peak arising from Ile 29, located in helix 2 (Figure 2A). However, upon addition of 2-fold excess U-2H DnaK/ADP, at least five peaks are observed for Ile 29 at chemical shifts that are distinct from the resonance position of Ile 29 in the free state, labeled as A-E in Figure 2B, suggesting that there are multiple conformations of DnaK-bound hTRF1. In order to ensure that all the new Ile peaks arise from chaperone-bound hTRF1 molecules, we measured peak-specific diffusion coefficients using a 2D 1H-13C HMQC-based pulsed field gradient (PFG) diffusion experiment. Of the diffusion coefficients that could be quantified reliably, those measured from the new peaks are very similar and are smaller than the free hTRF1 diffusion rate (Figure 2\u2014figure supplement 1), establishing the existence of multiple DnaK-bound states of hTRF1 and thus conformational heterogeneity in the bound ensemble. The multiplicity of conformations that are reported by the Ile probes is further confirmed by the Leu/Val region of 1H-13C HMQC spectra (as discussed in detail below). The majority of Leu and Val residues in hTRF1 are expected to be far removed from the strongest binding site and thus in the globally unfolded DnaK-bound state their associated methyl groups would be localized to the random coil region of HMQC spectra. However, there are a number of peaks outside this region (Figure 2C, labeled as 1\u20136) which, as described subsequently, arise from hTRF1 methyl groups of residues located directly at the DnaK binding site.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/28030/elife-28030-fig2-v1.jpg)\n\n**Figure 2.:** The Ile region of 1H-13C HMQC spectra of ILVM-13CH3 hTRF1 in the absence (A) and in the presence (B) of two-fold excess U-2H DnaK/ADP. The single Ile 29 peak in the unbound state (A) disperses into multiple resonances in the hTRF1-DnaK bound state, indicating multiple DnaK-bound conformations of hTRF1. These are denoted by the letters A-E. (C) Superposition of the Leu/Val regions of the same spectra shown in panels A and B with peaks arising from binding to DnaK that are outside the random coil region labeled from 1 to 6. (D,E) 1H-13C HMQC spectra of IM-13CH3 DnaK/ADP in the absence (D) and in the presence of two-fold excess U-2H hTRF1 (E) showing multiple peaks arising from Ile 401 and Ile 438 of hTRF1-bound DnaK/ADP and labeled as 'a'-'d' along with the Ile residue from which the peak originates.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28030/elife-28030-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Relative diffusion coefficients of DnaK-bound (hTRF1 Ile residues A,B,D, Figure 2B) and native hTRF1 measured using a sample of 0.3 mM ILVM-13CH3 labeled hTRF1 and 0.5 mM U-2H DnaK/ADP and a 2D 1H-13C HMQC-based pulsed field gradient diffusion pulse sequence. Only DnaK-bound hTRF1 peaks that can be reliably quantified are shown in the plot.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/28030/elife-28030-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Superposition of 1H-13C HMQC spectra of IM-13CH3 DnaK/ADP bound to hTRF1 (black) and hTRF123-38 peptide containing the high affinity DnaK binding region (red, left) or hTRF134-49 peptide that comprises one of the lower affinity sites (red, right) showing that a subset of the multiple states are retained with each peptide. (B) Multiple conformations of the DnaK-hTRF1 complex are observed in both ADP- (red) and ATP- (blue) states, as established by 1H-13C HMQC spectra of methyl labeled hTRF1 focusing on either Ile (left) or Leu/Val spectral regions (right). * indicates the position of artifacts due to incomplete refocusing of the one-bond 1H-13C scalar coupled evolution during t1 of the HMQC pulse scheme.\n\nThe conformational heterogeneity of the chaperone-substrate ensemble can be detected from spectra of DnaK as well. Upon addition of 2-fold excess U-2H hTRF1 several new peaks appeared in the 1H-13C HMQC spectrum of IM-13CH3 labeled DnaK/ADP (compare Figure 2D and E). These could be assigned via a methyl-NOESY data set recorded on an ILVM-13CH3 DnaK/ADP-U-2H TRF1 sample, making use of available assignments for many of the methyl groups of DnaK/ADP (Zhuravleva et al., 2012), as arising from four separate conformers of Ile 401 and Ile 438. The resulting crosspeaks are labeled as 'a'-'d' in Figure 2E along with the Ile residue from which they derive.\n\nIn order to estimate the lifetimes of bound states we recorded a magnetization exchange experiment (Farrow et al., 1994) where the appearance of exchange-relayed crosspeaks between HMQC correlations provides evidence of exchange. No such peaks were observed in experiments acquired with a mixing time of 300 ms, establishing that the interconversion between multiple bound states is slow. Simulations that we have performed are consistent with a substrate off-rate, koff, less than 0.3\u00a0s\u22121. The absence of exchange between bound conformers is consistent with previously measured slow rates of substrate release from DnaK/ADP (~0.001 s\u22121, 25\u00b0C) (Pierpaoli et al., 1998; Mayer et al., 2000), and in turn also establishes that if DnaK slides between different binding sites on a substrate polypeptide chain (see below) the rate must be on the order of 0.3 s\u22121 or slower as well.\n\n### Characterizing the multiple conformations of the DnaK-hTRF1 complex\n\nHaving established that the substrate-DnaK complex is conformationally heterogeneous, we proceeded to characterize the multiple bound states in more detail. Initially we wondered as to whether the entire hTRF1 polypeptide is essential to observe a multiplicity of bound states or if the heterogeneity can be reproduced by the region of the substrate alone that corresponds to the DnaK binding site. We considered the possibility that regions of hTRF1 removed from the binding site could interact with the DnaK chaperone in different ways, leading to the extra peaks in spectra of both the substrate and the chaperone. In order to address this possibility, we synthesized a small peptide of 16 residues, hTRF123-38, that includes the strongest predicted DnaK binding site but lacks the surrounding region and acquired 1H-13C HMQC spectra of IM-13CH3 DnaK/ADP in the free and peptide-bound states (Figure 2\u2014figure supplement 2A, left). Notably, extra peaks for DnaK corresponding to Ile 401a,b and Ile 438a,b were observed so that the presence of the entire substrate polypeptide chain is not a pre-requisite for observing multiple bound conformations. In a similar manner a second peptide, hTRF134-49, was produced that contains a weaker DnaK binding site. An extra peak corresponding to Ile 401 c is observed in this case (Figure 2\u2014figure supplement 2A, right) that is distinct from the peaks detected in the spectrum of IM-13CH3 DnaK/ADP bound to hTRF123-38 (Figure 2\u2014figure supplement 2A, left). These experimental results are inconsistent with the notion that the extra conformers reflect multiple potential interactions between regions of the substrate distal from the binding site and DnaK.\n\nNext, we tested whether the multiple conformations arise from the interactions between substrate and the \u03b1-helical chaperone lid that encloses the substrate-binding pocket. The lid has been hypothesized to adopt different positions relative to the binding cavity and each position could result in a distinct orientation for the hydrophobic sidechains of both the substrate and of DnaK (Ile 401, Ile 438) that line the binding site (Schlecht et al., 2011). In order to test this possibility, we carried out experiments with the ATP-bound form of DnaK as a way to modulate substrate-SBD-lid interactions and compared the results with those obtained from similar experiments recorded on DnaK/ADP. Substrate binding to DnaK/ATP results in the formation of an allosterically active DnaK ensemble that consists of domain-docked as well as -undocked conformations (Zhuravleva et al., 2012) in which the helical lid is more mobile than in the DnaK/ADP state, as inferred from faster substrate release rates in the ATP-bound conformation (Mayer and Bukau, 2005; Gisler et al., 1998). HMQC spectra of hTRF1 bound to DnaK/ATP were recorded using an ATP hydrolysis-deficient variant of the chaperone in which Thr at position 199 was mutated to Ala. The Ile region of the 1H-13C HMQC spectrum of hTRF1 bound to DnaK/ATP shows three separate resonances in addition to the peak from folded (unbound) hTRF1, Figure 2\u2014figure supplement 2B, with the Leu/Val region showing additional resonances as well. This is similar to what was observed for the DnaK/ADP bound state where the lid is in the closed or down orientation, highlighting that multiple DnaK-bound states of hTRF1 are present even when the lid is not interacting (or interacting less) with substrate. These results thus argue against the lid being the source of the observed conformational heterogeneity.\n\nHigh-resolution structures of DnaK-substrate complexes (Zhu et al., 1996; Zahn et al., 2013; Stevens et al., 2003) establish that the client protein is partly stabilized by hydrophobic interactions between its sidechains and those of the chaperone that line the binding cavity (Figure 3A). One substrate sidechain, designated to be at position 0 with respect to the DnaK binding cleft, extends deep into the hydrophobic pocket of DnaK and is in close proximity (~4 \u00c5) to the \u03b41-methyl groups of Ile 401 and Ile 438 of the chaperone (Figure 3A). In order to ascertain whether different sidechains of the substrate occupy position 0, leading to the observed multiplicity of bound conformations, we used an isotope-labeling strategy which allowed us to simultaneously detect the key residues in both substrate and in DnaK. This was achieved by labeling the substrate at Ile \u03b32 and at the proR-positions of Leu\u03b4 and Val\u03b3 methyl groups (referred to as I\u03b3-proR-LV-13CH3) and labeling DnaK at Ile\u03b41 and Met\u03b5. Figure 3B (center) shows a 1H-13C HMQC spectrum recorded on a sample containing 1.8 mM DnaK/ADP and 0.7 mM hTRF1 incorporating the above labeling scheme. The crosspeaks from hTRF1 (black) are distinct in their 13C chemical shifts from those belonging to DnaK (green).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/28030/elife-28030-fig3-v1.jpg)\n\n**Figure 3.:** (A) Zoomed region of the crystal structure of a DnaK-NRLLLTG peptide complex (PDB ID: 1DKZ [Zhu et al., 1996]) highlighting interactions between sidechains of the peptide (magenta) bound to the substrate binding domain (SBD) of DnaK (green). Key hydrophobic sidechains lining the central cavity of the DnaK binding pocket, Ile 401 and Ile 438, are shown as sticks and coloured blue and red respectively. The Leu residue in the substrate occupying this central cavity (Lo) and\u00a0forming hydrophobic interactions involving Ile 401 and Ile 438 is shown in cyan. Distances between the key residues in the binding cavity are denoted on the plot. (B) (middle) 1H-13C HMQC spectrum of 0.7 mM I\u03b3-proR-LV-13CH3 labeled hTRF1 bound to 1.8 mM IM-13CH3 labeled DnaK/ADP. Resonances in the HMQC spectrum arising from hTRF1 are coloured black, while peaks from DnaK are in green. Peaks are identified as in Figure 2. The HMQC dataset is flanked by four sets of F1-F3 strips from a 3D methyl NOESY spectrum with correlations of the form (13Cj-NOE-13Ck-1Hk). The first set of strips link hTRF1 conformation 3 with DnaK conformation d, the second set link hTRF1 and DnaK conformations 2 and b and so forth. The letter 'D' is used to identify the diagonal peak in each plot. The F2 13C chemical shift is indicated at the bottom of each strip.\n\nWe then exploited the proximity of Ile 401 and Ile 438 of DnaK to the corresponding substrate sidechain at position 0 that allowed us to link sets of peaks from hTRF1 (labeled 1\u20136) and DnaK (labeled 'a'-'d') deriving from the same conformation using a 3D 13C-edited NOESY experiment recorded on the complex prepared as described above. Figure 3B (right and left) shows F1-F3 strips from a 3D methyl NOESY spectrum that records correlations of the form (13Cj-NOE-13Ck-1Hk) with the F2 (13Ck) chemical shift from which the slice was taken indicated at the bottom. Each group of three NOESY strips highlights crosspeaks 1\u20134 from hTRF1 (Figure 2C) with correlations 'a'-'d', derived from Ile 401 and Ile 438 of DnaK (Figure 2E). Since NOESY crosspeaks connect nearby protons, the residues giving rise to each of the four sets of NOESY triplets (comprising one hTRF1 peak and one each from Ile 401 and Ile 438 of DnaK) all belong to the same conformational state of the hTRF1-DnaK complex, which we refer to as states 'a'-'d' in what follows. In this way hTRF1 conformation 3 (as reported by hTRF1 peak 3 in the 1H-13C HMQC of the complex, Figure 2C) and DnaK conformation 'd', 2 and 'b', 1 and 'a', and 4 and 'c' are linked. In total four separate hTRF1 residues show sets of crosspeaks to Ile 401 and Ile 438 that report on conformational states 'a'-'d' of DnaK (Figure 3B). Thus, at least four methyl-containing residues of hTRF1 can occupy the central position of the DnaK binding cleft (Figure 3).\n\n### Assigning the residues of hTRF1 occupying the central position of the DnaK binding cleft\n\nIn order to assign the four different peaks\u00a0from\u00a0residues at the 0 position (Figure 3) we used a mutagenesis-based approach. Initially Leu 30 and Leu 31, at the strongest predicted DnaK binding site on hTRF1, were mutated one at a time to Ile and 1H-13C HMQC spectra of the resulting complexes recorded (either ILVM-13CH3 labeled L30I or L31I hTRF1 and U-2H DnaK/ADP). When Leu 31 was mutated to Ile the peak corresponding to hTRF1 conformation 'a' disappeared from the spectrum (Figure 4), thus establishing that peak 'a' arises from a sub-ensemble of DnaK-bound hTRF1 molecules where Leu 31 is at the 0 position. In a similar manner peak 'b' arises from L30 as Lo. We subsequently confirmed our assignments via a second approach. A peptide corresponding to hTRF1 residues 23\u201338 was synthesised with selectively U-13C labeled Leu 30, and the 1H-13C HMQC spectrum of this peptide in complex with U-2H DnaK further established that state 'b' corresponds to residue Leu 30 at the DnaK substrate binding site (Figure 4\u2014figure supplement 1A). Moreover, peak 5 of Figure 2C could be readily assigned to the second Leu 30 methyl group (proS). Similarly, a second peptide, U-13C L31 hTRF123-38 where Leu 31 was U-13C, was prepared and used to unambiguously assign state 'a' to the hTRF1-DnaK complex where Leu 31 is located in the binding pocket (Figure 4\u2014figure supplement 1B). Peak 6 of Figure 2C could be assigned to the proS methyl of this residue.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/28030/elife-28030-fig4-v1.jpg)\n\n**Figure 4.:** Selected regions of 1H-13C HMQC spectra of wild-type ILVM-13CH3 hTRF1 bound to U-2H DnaK/ADP (black), overlaid with ILVM-13CH3 labeled L31I (red), L30I (orange), V41I (cyan) and V18I (green) hTRF1 bound to U-2H DnaK/ADP. The locations of the four mutations are indicated in the appropriate colour on the structure of native hTRF1 (PDB ID: 1BA5, [Nishikawa et al., 1998]) at the top of the figure. The four hTRF1 resonances arising from methyl containing residues at the 0 position of the DnaK binding cavity identified from the 3D NOESY (Figure 3) are indicated by letters 'a'-'d'. These four peaks, all assigned to the proR 13CH3 group from proR labeling experiments (see text), are highlighted for each mutant considered. One among these four resonances in each column, denoted by an asterisk, disappears in the mutant spectrum thus leading to the assignment of peaks a-d to specific methyl groups in hTRF1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28030/elife-28030-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Superposition of selected regions of 1H-13C HMQC spectra of ILVM-13CH3 hTRF1 bound to U-2H DnaK/ADP (red) and (A) U-13C L30 hTRF123-38 or (B) U-13C L31 hTRF123-38 bound to U-2H DnaK/ADP (green). Note that for both peptides only the single L30 or L31 is 13C labeled. These datasets establish that peaks labeled 5 (6) and b(a) derive from the proS and proR methyl groups of L30(L31). Note that the proR methyls of L30 and L31 were assigned using proR selectively labeled samples (Figure 3, linking 1 (L31) and 2 (L30) in Figure 2C with conformations 'a' and 'b', respectively).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/28030/elife-28030-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Overlay of selected regions from 1H-13C HMQC spectra of LV-13CH3 hTRF1 (blue) and V-13CH3 hTRF1 (red) bound to DnaK/ADP showing that peaks d and c derive from Val residues.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/28030/elife-28030-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Overlay of HMQC spectra of unlabeled hTRF134-49 bound to IM-13CH3 DnaK/ADP (blue) and I\u03b3-proR-LV-13CH3 labeled hTRF1 bound to IM-13CH3 labeled DnaK/ADP (red). Unassigned Ile 401 and Ile 438 peaks of DnaK present in both spectra are indicated by \u2020 and * respectively, while assignments for Ile 401 and 438 'a' - 'd' for the red spectrum are shown for reference.\n\n1H-13C HMQC spectra of V-13CH3 hTRF1 in complex with U-2H DnaK/ADP establish that states 'c' and 'd' correspond to hTRF1 Val residues in the DnaK binding pocket (Figure 4\u2014figure supplement 2). Since there are only two Val in hTRF1 (Val 18 and Val 41), each was mutated independently to Ile. The resulting spectra of V18I and V41I hTRF1 in complex with DnaK/ADP (Figure 4) lead directly to the assignment of states 'c' and 'd' as arising from Val 41 and Val 18 at position 0, respectively. In addition, the HMQC spectrum of IM-13CH3 DnaK/ADP in complex with the peptide hTRF134-49 (Figure 2\u2014figure supplement 2, right) shows distinct peaks at chemical shifts of Ile 401 c and Ile 438 c, confirming the assignment of state c to V41 at position 0. To the best of our knowledge this is the first study where a Val residue has been shown to occupy the 0 position in a DnaK-substrate complex, although Ile, Leu, Met, Pro and cyclohexylalanine are known to be able to bind in the central pocket (Clerico et al., 2015).\n\nHaving assigned the 'a-d' states of hTRF1 to Leu 31, Leu 30, Val 41 and Val 18, respectively, we next sought assignments for the distinct resonances of Ile 29 (Figure 2B). Assignments could not be obtained, however, because NOEs are not observed between Ile 29 and either Leu 30 or Leu 31 in the complex that would immediately link at least some of the multiple Ile correlations with distinct conformations 'a-d'. Although it would be expected that 4 Ile peaks might be observed in the bound state, one for each unique conformation 'a-d', the presence of 5 Ile correlations in the spectrum of Figure 2B is of interest. It is unlikely that the additional peak derives from a state whereby Ile 29 is localized to the 0 position of the complex, because NOEs from the \u03b32 methyl group of Ile 29 and the \u03b41 methyls of Ile 401 or Ile 438 of DnaK (Figure 3B) are not observed, despite the fact that short distances (<5.1 \u00c5 to Ile 401 and\u00a0<4.4 \u00c5 to Ile 438) are expected based on an X-ray structure of a peptide complex where Ile occupies the central position (Zahn et al., 2013). Some insight into the multiplicity is obtained, however, by inspection of an HMQC spectrum of a complex of IM-13CH3 DnaK/ADP and hTRF1 (Figure 4\u2014figure supplement 3) at a low contour level. Notably, two additional pairs of unassigned Ile 401 and Ile 438 resonances are observed, indicating the presence of two more states (i.e., beyond the four already characterized). These additional peaks are also present in a complex of hTRF134-49 and DnaK/ADP so that the bound conformers must involve residues within the 34\u201349 region (see Materials and methods). NOEs correlating the unassigned DnaK Ile 401 and 438 crosspeaks to either of the Val (1) or Leu (1) residues in the 34\u201349 sequence are not observed; the additional conformations most likely arise, therefore, from other residues at the DnaK 0 position. The appearance of a fifth Ile correlation thus most likely reflects one (or both) of these additional conformers, beyond the four that are characterized presently.\n\n### Quantifying the interaction stoichiometry between hTRF1 and DnaK\n\nIn order to estimate the stoichiometries of the diverse complexes that have been characterized above we performed a titration of 0.6 mM I\u03b3-proR-LV-13CH3 labeled hTRF1 with increasing amounts of IM-13CH3 DnaK/ADP. Intensities of free and bound resonances of both hTRF1 and DnaK in 1H-13C HMQC spectra were quantified as a function of the increasing [DnaK]T/[hTRF1]T concentration ratio where the subscript \u2018T\u2019 denotes total concentration (i.e., in both free and bound states). Figure 5 shows the concentration-dependent intensities of hTRF1 resonances identified to be at the 0 position of the DnaK binding site, corresponding to the four conformations discussed above. As described in Materials and methods the absolute concentration of hTRF1 decreases throughout the course of the titration because the sample for each titration point was generated by removing a calculated volume of solution from the previous titration sample and adding the same volume of a stock solution of DnaK containing no hTRF1.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/28030/elife-28030-fig5-v1.jpg)\n\n**Figure 5.:** Peak intensities from an NMR titration focusing on the four hTRF1 residues Leu 30, Leu 31, Val 18 and Val 41 that occupy the central position of the DnaK binding cavity in different DnaK-bound conformations; (A) L31, (B) L30, (C) V41 and (D) V18. The ratio of the total concentrations of DnaK and hTRF1 at each titration point is plotted along the x-axis. Solid lines have been drawn to guide the eye and do not have physical significance.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28030/elife-28030-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Simulated profiles reporting the concentrations of different components formed during the course of a titration as a function of the ratio of [KT]/ [NT]. For the specific case analyzed here, [KT] = [DnaK]T and [NT] = [hTRF1]T (see Materials and Methods), where [DnaK]T and [hTRF1]T are the concentrations of all DnaK and hTRF1 species in solution, respectively. Two models are considered, as described in \u2018Simulating NMR titration profiles\u2019. A number of Kd1 and Kd2 values are considered and values for [DnaK]T/[hTRF1]T match those used in the experiments. Note that for each titration point a fixed volume is removed before adding an equivalent volume of a stock solution of DnaK. In this manner the total solution volume remains fixed but the total concentration of hTRF1 ([N]T) decreases (for example, in the Linear Model, [N]T = [N]+[U]+[UK]+[UK2], where N and U denote native and unfolded conformers, respectively and UKj, j \u2208 (1,2), is the complex between the assumed binding competent hTRF1 state, U, and j molecules of DnaK). These simulations establish that the population of species UK (Linear Model) or UKA,UKB (Square Model) maximizes at a [DnaK]T/[hTRF1]T ratio\u00a0~1:1, while the population of UK2 (Linear Model) or UKAB (Square Model) is maximal at a ratio of\u00a0~1:2 for a range of Kd1 and Kd2 values in the strong binding regime even when 1:1 and 1:2 complexes are simultaneously present. It is worth noting that if another complex UK' with 1:1 stoichiometry is also present it will necessarily have the same titration profile as UK scaled by a constant that is related to the dissociation constants of the UK and UK' species, since $\\frac{[UK]'}{[UK]}=\\frac{K_{d}_{1}}{K_{d}_{1}^{'}}$. Consequently, the existence of two different titration profiles, one maximizing at a [DnaK]T/[hTRF1]T value of 1 and the other at 2, demonstrates the existence of at least two different stoichiometries of DnaK-hTRF1 complexes. The simulated data above strongly suggest that the experimental titration profiles maximizing at 1 report on complexes with 1:1 stoichiometry and the ones maximizing at 1:2 report on complexes with a 1:2 stoichiometry.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/28030/elife-28030-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Experimental peak intensity profiles measured as a function of the ratio of [DnaK]T/[hTRF1]T, where [DnaK]T and [hTRF1]T are the concentrations of all DnaK and hTRF1 species in solution, respectively. For each titration point a fixed volume is removed before adding an equivalent volume of DnaK so that the total solution volume remains fixed. Profiles are shown for Ile 401 (A\u2013D) and Ile 438 (E\u2013G) that report on the various hTRF1-bound conformations of DnaK/ADP. The peak corresponding to Ile 438 state 'd' is weak and overlapped and cannot be reliably quantified. Solid lines have been drawn to guide the eye and do not have physical significance.\n\nThe mathematical modeling of the titration profiles is complicated by the simultaneous presence of multiple DnaK-hTRF1 binding equilibria in addition to the known oligomerization equilibrium of free DnaK/ADP (Sch\u00f6nfeld et al., 1995; Thompson et al., 2012) and some aggregation of the sample during the course of the titration. However, general features of the binding equilibria can still be obtained. Numerical simulations applicable to the titration mode employed here show that under conditions of tight binding, species with 1:1 stoichiometry are maximally populated at a [DnaK]T/[TRF1]T ratio of 1, while species with two bound DnaK molecules occur maximally at a ratio of 2 (Materials and methods, Figure 5\u2014figure supplement 1), even when multiple equilibria are present. The maxima for states 'a', 'b' and 'd', corresponding to complexes with Leu 31, Leu 30 and Val 18 occupying position 0, all occur at [DnaK]T/[TRF1]T ratios of 1, indicating that the stoichiometries in these cases are 1 DnaK to 1 hTRF1 (Figure 5A,B,D). Interestingly, however, the maximum for the 'c' state, with Val 41 at 0, is at a ratio of 2, indicating that this sub-ensemble has two DnaK molecules bound to each hTRF1 chain (Figure 5C). Currently we have not been able to identify where the second DnaK binds on hTRF1 of conformation 'c'. Similar conclusions are obtained by focusing on crosspeaks from Ile 401 and Ile 438 from the DnaK side as well (Figure 5\u2014figure supplement 2). Multiple DnaK molecules have been proposed or modeled to bind large substrate polypeptides such as luciferase (Szabo et al., 1994) and rhodanese (Han and Christen, 2003; Kellner et al., 2014). Our data provides evidence for the existence of higher binding stoichiometries than 1:1 at equilibrium in solution even for a small 53 amino acid substrate, suggesting that multiple occupancy of closely spaced binding sites on typical substrate molecules (R\u00fcdiger et al., 1997) is indeed possible. The presence of 2:1 DnaK:hTRF1 complexes amongst at least three other conformers that are singly bound further adds to the heterogeneity of the mixture and the variety of conformations sampled by the hTRF1 chain in the chaperone-bound state.\n\nA qualitative estimate of the relative dissociation equilibrium constants (Kd) for the three 1:1 hTRF1-DnaK complexes with Leu 31, Leu 30 and Val 18 occupying position 0 can also be obtained from the titrations, provided differences in relaxation rates for the methyl resonances from these states can be neglected and peak intensities reflect the concentrations of the respective molecular species. In this regard 1H and 13C linewidths of Ile 401 methyl resonances, as measured in 1H-13C HMQC spectra of hTRF1-bound DnaK in the four states a-d, are similar, with a maximum deviation from the mean of 6.1 Hz in 1H and 3.4 Hz in 13C. This difference in 1H linewidth translates roughly into a relative relaxation loss of 13% during constant duration transfer periods in the HMQC pulse sequence, so that differential relaxation losses between the four states are small. With these approximations the intensities of states 'a', 'b' and 'd' at the maxima in the titration profiles provide an estimate of the relative binding strengths. The ratio of Ile 401 resonance intensities for a:b:d at a [DnaK]T/[hTRF1]T value of 1 are 1:0.4:0.05, corresponding to relative Kd values and free energy differences between the states of 1:2.6:20.1 and 0:0.6:1.8 kcal/mol, respectively, at 35\u00b0C. Thus, while each site on hTRF1 binds DnaK with its own specific affinity, and while quantitation is necessarily only approximate, it is clear that the multiple conformations are all thermally accessible and significantly populated at equilibrium.\n\n### Probing rotamer distributions of the DnaK binding site residues\n\nThe diversity of substrates that can bind to DnaK implies that the binding pocket possesses considerable flexibility with which to accommodate chains with different sequences and conformations. The binding site residues are also highly conserved in evolution and amino acid substitutions result in impaired function (Mayer and Bukau, 2005; Mayer et al., 2000), showing that the binding pocket architecture is vital for chaperone activity. In order to estimate the flexibility inherent in the DnaK binding pocket, we analyzed the rotameric distributions of Ile 401 and Ile 438 in the four bound conformations described above. Ile sidechains predominantly sample the trans and gauche- \u03c72 rotameric states in solution (Hansen et al., 2010) with dihedral angle \u03c72 values of 170\u00b0 and 300\u00b0 respectively. 13C chemical shifts are robust reporters of the residue-specific fractions of trans and gauche- (Hansen et al., 2010) and using the 13C \u03b41 chemical shift values for Ile 401 and Ile 438 in states 'a'-'d' we computed the fractional populations of the trans and gauche- rotameric states in each case (Table 1). The rotamer distributions for the two Ile residues vary substantially in the different bound conformations, ranging from 42% gauche- for Ile 401 and 100% gauche- for Ile 438 in state 'd', to 99% gauche- for Ile 401 and 46% gauche- for Ile 438 in state 'b'. Thus, despite being highly conserved in evolution the DnaK binding site residues retain considerable flexibility, allowing the binding pocket to accommodate different substrate sidechains. Notably, the fractional population of the trans conformer of Ile 438 increases by almost 2-fold, from 28% to 54% between states 'a' and 'b', both of which have a Leu residue at position 0, indicating that it is not merely the identity of the amino acid residing at 0 that governs the topology of the binding cleft.\n\n**Table 1.**\n Percentages of Trans and Gauche- Ile 401 and Ile 438$\u03c7_{2}$ Conformations*.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"2\">a (Leu 31)</th>\n      <th colspan=\"2\">b (Leu 30)</th>\n      <th colspan=\"2\">c (Val 41)</th>\n      <th colspan=\"2\">d (Val 18)</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>Ile 401</th>\n      <th>Ile 438</th>\n      <th>Ile 401</th>\n      <th>Ile 438</th>\n      <th>Ile 401</th>\n      <th>Ile 438</th>\n      <th>Ile 401</th>\n      <th>Ile 438</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Trans</td>\n      <td>0.86</td>\n      <td>0.28</td>\n      <td>0.99</td>\n      <td>0.54</td>\n      <td>0.66</td>\n      <td>0.00</td>\n      <td>0.58</td>\n      <td>0.00</td>\n    </tr>\n    <tr>\n      <td>Gauche-</td>\n      <td>0.14</td>\n      <td>0.72</td>\n      <td>0.01</td>\n      <td>0.46</td>\n      <td>0.34</td>\n      <td>1.00</td>\n      <td>0.42</td>\n      <td>1.00</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Fractional Trans and Gauche- \u03c72 conformations calculated from Ile 13C\u03b41 chemical shifts according to Hansen et al. (2010) for conformers 'a'-'d'. The identities of hTRF1 residues at the 0 position are noted._\n\n### Relevance of the observations for other substrates and Hsp70 chaperones\n\nThe \u03b2-sandwich domain in the DnaK SBD shows a high degree of conservation within the Hsp70 family of chaperones (Mayer and Bukau, 2005; Zhang et al., 2014). The conserved topology of the substrate binding site suggests that the multiplicity of DnaK-substrate conformations observed presently should be a common characteristic of Hsp70-client complexes in general. In order to verify this we recorded HMQC spectra of a sample of ILVM-13CH3 hTRF1 containing a two-fold excess of human U-2H Hsc70/ADP (Figure 6). The Ile region of this spectrum clearly shows at least four peaks for Ile 29 in the presence of Hsc70, demonstrating the existence of conformational heterogeneity in the Hsc70-hTRF1 complex as well. Three-helix bundle proteins have previously been shown to represent\u00a0~10% of all in vivo substrates interacting with E.coli DnaK (Calloni et al., 2012); in addition, conformational heterogeneity has also been detected in the binding of a \u03b2-sheet protein with DnaK (Lee et al., 2015). Taken together, these observations suggest that the promiscuity of Hsp70 and the heterogeneous nature of Hsp70-client complexes are general features, beyond what has been characterized in detail in the present study of the DnaK-hTRF1 complex.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/28030/elife-28030-fig6-v1.jpg)\n\n**Figure 6.:** Overlay of a 1H-13C HMQC spectrum of 200 \u03bcM ILVM-13CH3 hTRF1 containing a two-fold excess of U-2H Hsc70/ADP (red) with the spectrum of (A) free ILVM-13CH3 hTRF1 (black) and (B) ILVM-13CH3 hTRF1 bound to U-2H DnaK/ADP (blue). Four peaks are observed for the lone Ile 29 of hTRF1 bound to Hsc70, demonstrating that multiple conformations of the chaperone-substrate complex are formed with both E.coli Hsp70 (DnaK) and its human ortholog (Hsc70).\n\n## Discussion\n\nIn this study we have used selective isotope-labeling strategies involving methyl group probes in combination with NMR experiments that exploit a methyl-TROSY effect to characterize complexes of the E.coli Hsp70 chaperone (DnaK) and a model substrate hTRF1. The beneficial relaxation properties of methyl groups enable the detection of resonances from the DnaK binding site, unlike in 1H-15N experiments where such resonances are too broad to be observed. We find that the residues that are part of the DnaK binding pocket are inherently malleable so that DnaK can recognize and bind to at least four different sites on the small 6 kDa, 53 residue hTRF1 substrate that have been characterized in the present work. Since typical client proteins of DnaK are much larger than 53 residues, it is very likely that DnaK will bind to multiple client sites, generally. This will lead to a pool of substrates that are segregated into a highly heterogeneous mixture of sub-ensembles, each of which has a DnaK chaperone bound to one or more specific locations, and each with unique conformational features that ultimately facilitate a broad exploration of the free energy landscape (see below).\n\nWhat advantage does the promiscuity of Hsp70 in client recognition confer on the client protein? Consider a hypothetical substrate with three binding sites for Hsp70 from which three sub-ensembles of Hsp70-bound substrates are generated (Figure 7). Chaperone binding results in different lengths of polypeptide both upstream and downstream of the point of contact and the resulting N- and C-terminal segments, that are different in the three sub-ensembles, can form different amounts of secondary and tertiary structure while bound to Hsp70. Subsequently, when the substrates are released for downstream folding the starting conformations can be significantly different. Some of the starting structures will misfold while others that are more amenable to folding will attain their native form. Misfolded proteins can re-enter the chaperone cycle by binding to Hsp70 using another site, thereby increasing their overall chances of avoiding the same kinetic trap. The heterogeneity resulting from Hsp70 binding thus enables the client protein to explore a number of starting conformations, that lead to the formation of different amounts and types of local structure, as a means for navigating kinetic traps in the conformational free energy landscape and for promoting efficient folding to the native state. Such a mechanism of Hsp70 function is expected to be particularly beneficial for proteins with rugged free energy landscapes and local minima that trap misfolded and aggregation-prone conformations, where folding yield is increased by recycling kinetically trapped molecules at the expense of a decrease in folding rate resulting from repeated binding to the Hsp70 chaperone (Agashe et al., 2004). Slower folding in the presence of the Hsp70 chaperone system has indeed been observed in the\u00a0literature for RNase H (Sekhar et al., 2012a), though such a decrease is predicted to be negligible for fast-folding proteins like hTRF1 (56) (Figure 7\u2014figure supplement 1).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/28030/elife-28030-fig7-v1.jpg)\n\n**Figure 7.:** By increasing the number of interaction sites a larger region of conformational space can be explored from which folding of the substrate occurs upon release from the chaperone. Proteins stuck in kinetic traps can enter the cycle again with Hsp70 binding to different sites increasing the probability of proper folding.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28030/elife-28030-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Simulated curves showing the time-dependent formation of native hTRF1 starting from the unfolded state in the absence (pink) and presence (blue)\u00a0of the E.coli Hsp70 chaperone system (K/J/E). Simulations were carried out using a previously published kinetic model of protein folding in the presence of K/J/E (Sekhar et al., 2012b). 15 \u03bcM of hTRF1 was folded without or with 25 \u03bcM DnaK, 5 \u03bcM DnaJ and 10 \u03bcM GrpE, where the chaperone system without hTRF1 was pre-equilibrated for a sufficient time to ensure that all molecular species reached steady-state concentrations. The concentration of ATP was fixed at all times to be 2 mM. Curves were fit to single (- K/J/E, solid black line) or bi-exponential (+ K/J/E (dashed black line)) models to extract rate constants of folding without and with K/J/E of 345 and 347 s\u22121, respectively. These values are virtually identical, showing that interaction with K/J/E does not significantly slow down the folding of the fast-folding protein hTRF1.\n\nOur data provides a rationale for why substrate proteins typically undergo multiple rounds of binding and release before folding to the native state (Mayer, 2013; Szabo et al., 1994; Clerico et al., 2015; Sharma et al., 2010). Large proteins like luciferase are expected to have several kinetic traps in their folding free energy landscape; in the first binding cycle it is conceivable that only a few sub-ensembles of Hsp70-bound luciferase lead to starting conformations for the client upon release that bypass these kinetic traps and result in efficient folding. The other molecules fall into kinetically trapped misfolded states that then rebind Hsp70. Since only a fraction of folding-competent conformations are generated during any particular iteration of the Hsp70 chaperone cycle, it follows that the net probability of folding and hence the folding efficiency increases with the number of iterations that a substrate undergoes through the chaperone cycle. Our work also sheds light into the cause of the conformational heterogeneity that was previously reported for a complex between the N-terminal SH3 domain from Drk and DnaK based on the observation of multiple peaks for specific residues in a 1H-15N HSQC spectrum of the complex (Lee et al., 2015). While the origin of the peaks was unclear in that study it now appears that DnaK may be able to bind to the SH3 domain in different ways. Multiple modes of binding, including the existence of forward and reverse modes and registry shifts, have also been seen in crystal structures of short peptides with DnaK (Zahn et al., 2013). Here we establish that such multiple binding modes can exist at equilibrium in solution and we elucidate the molecular determinants for the formation of a heterogeneous chaperone-substrate ensemble.\n\nThe model proposed above for Hsp70-mediated protein folding is broadly similar to that proposed for GroEL/ES function, wherein GroEL/ES maintains kinetically trapped conformers in a globally unfolded state and subsequently releases them for folding (Weissman et al., 1994; Todd et al., 1996). However, in the case of Hsp70 the starting conformation for substrate folding can potentially be different in every binding cycle. Therefore, Hsp70-mediated folding does not rely passively on stochastic refolding from the same conformation, but instead actively alters starting structures as a strategy to sample a different folding pathway and hence different regions of conformational space during each iteration. The presence of multiple chaperone interaction sites on the substrate is a feature shared between Hsp70, SecB (Lilly et al., 2009; Huang et al., 2016) and trigger factor (Saio et al., 2014). However, SecB and trigger factor utilize several surface-exposed hydrophobic pockets for capturing substrate molecules, resulting in a complex where the substrate wraps around the chaperone and buries 4000\u20138000 \u00c52 of surface area at the interface (Lilly et al., 2009; Huang et al., 2016; Saio et al., 2014). Such a multivalent mode of interaction is consistent with the role of trigger factor and SecB in keeping the substrate unfolded and extended prior to transfer to downstream Hsp70 chaperones (trigger factor) (Teter et al., 1999; Deuerling et al., 1999) or in the case of SecB prior to secretion or delivery to the SecA ATPase (Bechtluft et al., 2010). In contrast, Hsp70 interacts with substrates using predominantly one binding site (though interactions with the \u03b1-helical lid have been observed previously [Smock et al., 2011]) that contacts the substrate minimally at 4\u20135 residues, allowing the rest of the chain to explore conformational space. The mechanism of Hsp70 action is thus different from those of SecB and trigger factor and appears to be tailored towards its function in assisting protein folding.\n\nThe chaperone-substrate interaction studied here adds to the increasing number of examples of conformational heterogeneity observed in concert with molecular recognition (Boehr et al., 2009; Mittag et al., 2010). In the present case the multiplicity of Hsp70 client binding modes leads to static disorder at the binding interface, where each sub-ensemble has a well-defined structure, with dissociation and subsequent re-association of the substrate occurring on a slow timescale. We have shown earlier that parts of the substrate polypeptide chain distal to the Hsp70 binding site are globally unfolded with local secondary structure (Sekhar et al., 2015, 2016), resulting in rapidly interconverting states and dynamic disorder in these regions. Such a fuzzy complex with static and dynamic disorder enhances exploration of the free energy landscape, facilitating the efficient folding of the substrate to its native conformation.\n\n## Materials and methods\n\n### Peptides\n\nUnlabeled hTRF123-38 (EGNWSKILLHYKFNNR) and hTRF134-49 (KFNNRTSVMLKDRWRT) peptides were synthesized by GenScript (http://www.genscript.com). hTRF123-38 labeled with 13C at position 30 or 31 was synthesized by New England Peptide (www.newenglandpeptide.com) using U-13C-Leu, which was a generous gift from Cambridge Isotopes Limited.\n\n### Protein overexpression, purification and isotope labeling for NMR spectroscopy\n\n#### Hsc70\n\nHuman T199A Hsc701\u2013646 (UniProt ID P11142, referred to as Hsc70 in this manuscript) was expressed in E. coli BL21-CodonPlus (DE3)-RIPL cells from a pProEx plasmid carrying an N-terminal polyhistidine tag (a gift from J. Young, McGill University, Montreal, Canada). Cells were grown in minimal M9 D2O media containing 1 g/L 15NH4Cl and 3 g/L [2H,12C]-glucose as the sole nitrogen and carbon sources respectively to an OD600 of \u223c0.8, at which point expression was induced by the addition of 0.5 mM isopropyl \u03b2-D-1-thiogalactopyranoside (IPTG) and allowed to proceed overnight at 25\u00b0C. Following expression, bacteria were harvested and the Hsc70 protein purified on nickel nitrilotriacetic acid (Ni-NTA) resin (GE Healthcare) under denaturing conditions (6 M GuHCl) to ensure complete removal of bound nucleotides. Hsc70 was refolded on the Ni-NTA column by gradually reducing the concentration of denaturing agent in the wash buffer (from 6 M to 0 M GuHCl), and the N-terminal polyhistidine tag was removed via TEV (tobacco etch virus) protease cleavage. The cleaved protein was further purified on a HiLoad 16/60 Superdex 200 pg gel filtration column (GE Healthcare) equilibrated with 50 mM HEPES (pH 7.5), 50 mM KCl, 1 mM dithiothreitol (DTT), and 0.03% NaN3.\n\n#### Mutant and wild-type hTRF1 and DnaK\n\nSamples of hTRF1, both wild-type (wt), and V18I, L30I, L31I and V41I mutants and DnaK, wt and T199A, were prepared and purified as described earlier (Sekhar et al., 2015). Proteins were overexpressed in BL21(DE3) cells grown in minimal M9 D2O media containing 1 g/L 15NH4Cl and 3 g/L [2H,12C]-glucose as sole nitrogen and carbon sources respectively. U-2H, Ile\u03b41-13CH3, Leu/Val-13CH3/12CD3, Met-13CH3-labeling was achieved following the procedures of Tugarinov et al. (2006) and Gelis et al. (2007). Stereospecific methyl labeling of Leu and Val prochiral methyls, proR-LV-13CH3, was achieved as detailed previously (Kerfah et al., 2015; Gans et al., 2010), with 13CH3-labeling at the Ile\u03b32 positions using the approach of Ruschak et al. (2010). V-13CH3 hTRF1 was prepared through the addition of the precursor for Leu/Val methyl labeling during cell growth, but with the addition of an excess (100 mg/L) of U-2H,12C Leu (a generous gift from Cambridge Isotopes Limited). NMR samples were prepared in 100% (vol/vol) D2O buffer (pH 8) composed of 50 mM HEPES, 50 mM KCl, 5 mM MgCl2, 1 mM TCEP, 1 mM EDTA, 0.03% NaN3, and 5 mM ATP or ADP when required.\n\n### NMR spectroscopy\n\nNMR spectra were acquired on 14.1 T Varian INOVA (600 MHz 1H Larmor frequency) or 18.8 T Bruker (800 MHz) spectrometers, equipped with cryogenically cooled probes. All NMR measurements were carried out at 35\u00b0C unless specified otherwise. The temperature inside the sample chamber of the spectrometer was measured using a thermocouple inserted into an NMR tube containing D2O. The software packages NMRPipe (Delaglio et al., 1995) and Sparky (Goddard and Kneller, 2006) were used for processing and visualizing NMR datasets respectively.\n\n### Diffusion measurements\n\nTranslational diffusion coefficients were measured on a sample of ILVM-13CH3 labeled hTRF1 (0.3 mM) containing 0.5 mM DnaK/ADP using a 2D 13C-edited HMQC-based pulsed field gradient (PFG) NMR experiment that is very similar to a previously published 15N-based sequence but with 15N and 13C pulses interchanged (Choy et al., 2002). Magnetic field gradients were varied between 4 and 60 G/cm with 1 ms encoding and decoding gradient durations, and a diffusion delay of 200 ms was employed. Peak lineshapes were fit using the program FuDA (http://www.biochem.ucl.ac.uk/hansen/fuda/) to extract intensities (I) as a function of squared gradient strength (G2), which were subsequently fit to a single exponential decay function of the form I\u00a0=\u00a0I0 exp(-dG2) to determine relative diffusion coefficient values, where I0 is the peak intensity in the absence of encoding/decoding gradients and d is proportional to the diffusion constant.\n\n### 13C-13C-1H NOESY\n\nIntermolecular NOEs were quantified by recording a 3D 13C-edited NOESY dataset (200 ms mixing time) from which correlations of the form (13Cj-NOE-13Ck-1Hk) were obtained. The HMQC version used is based on an HSQC scheme published previously (Zwahlen et al., 1998). The NOESY spectrum was acquired on a sample containing 0.7 mM I\u03b3-proR-LV-13CH3 hTRF1 and 1.8 mM IM-13CH3 DnaK/ADP.\n\n### NMR titrations\n\nNMR titrations were carried out starting with a 0.6 mM sample of I\u03b3-proR-LV-13CH3 hTRF1 and a 2.1 mM IM-13CH3 DnaK/ADP stock solution. Titrations were performed by removing an aliquot from the titrating solution and adding an identical volume of the stock DnaK/ADP solution. Consequently, the concentration of hTRF1 decreases during the course of the titration while the volume of the sample remains constant. Peak lineshapes were fit globally across all titration points using FuDA to estimate intensity as a function of the [DnaK]T / [hTRF1]T ratio.\n\n### Simulating NMR titration profiles\n\nConsider the binding of DnaK (K) to hTRF1, which in turn exchanges between native (N) and unfolded (U) states at equilibrium, with a folding constant $K_{UN}=\\frac{[N]}{[U]}$ (the notation [i] stands for the equilibrium concentration of species i). We have previously measured KUN to be 22.7, 35\u00b0C, based on 15N CEST experiments (Vallurupalli et al., 2012). In the models that follow we assume that K binds U and not N, as we have assumed previously (Sekhar et al., 2015), although this is not essential for any of the conclusions presented. Let the total concentration of DnaK and hTRF1 at a titration point be [K]T and [N]T respectively, where we note that successive titrations points involve the removal of a given amount of solution and replacing it with an equivalent volume of DnaK, as described in \u2018NMR titrations\u2019 above. Consider, first, the formation of both 1:1 (UK) and 1:2 (UK2) hTRF1-DnaK complexes with association (dissociation) constants K1 (Kd1) and K2 (Kd2) such that $K_{1}=\\frac{1}{K_{d1}}=\\frac{[UK]}{[U][K]}$ and $K_{2}=\\frac{1}{K_{d2}}=\\frac{[UK2]}{[UK][K]}=\\frac{[UK2]}{K_{1}[U][K]^{2}}$, Linear Model of Figure 5\u2014figure supplement 1. The mass balance equations are given by\n\n$$\n[N]_{T}=[N]+[U]+[UK]+[UK2],\n$$\n\n\n\n$$\n[K]_{T}=[K]+[UK]+2[UK2].\n$$\n\nTaken together these equations can be used to derive an expression for the free DnaK concentration at equilibrium as the solution of the cubic equation\n\n$$\na[K]^{3}+b[K]^{2}+c[K]+d=0,\n$$\n\nwhere\n\n$$\na=K_{1}K_{2},\n$$\n\n\n\n$$\nb=K_{1}+K_{1}K_{2}(2[N]_{T}\u2212[K]_{T}),\n$$\n\n\n\n$$\nc=1+K_{UN}+K_{1}([N]_{T}\u2212[K]_{T}),\n$$\n\n\n\n$$\nd=\u2212(1+K_{UN})[K]_{T}.\n$$\n\nThe cubic equation was solved using the software package MATLAB (The Mathworks Inc., Natick, MA, U.S.A.) and combined with the expressions for equilibrium constants to yield concentrations of the various species at each of the [K]T and [N]T values used in the titration. These in turn form the basis for the Linear Model of Figure 5\u2014figure supplement 1.\n\nWe have also considered a more complex model (Square Model of Figure 5\u2014figure supplement 1) in which there are two binding sites for DnaK resulting in the formation of 1:1 complexes UKA and UKB, with association (dissociation) constants K1 (Kd1) and K2 (Kd2) such that $K_{1}=\\frac{1}{K_{d1}}=\\frac{[UKA]}{[U][K]}$ and $K_{2}=\\frac{1}{K_{d2}}=\\frac{[UKB]}{[U][K]}$. UKA and UKB can then bind a second molecule of DnaK to form a dimer UKAB. The two binding sites are assumed to be independent of each other, and consequently the opposite arms of the square model have identical equilibrium constants. This gives an expression for the equilibrium concentration of the dimeric species UKAB as\n\n$$\n[UKAB]=K_{2}[UKA][K]=K_{1}[UKB][K]=K_{1}K_{2}[U][K]^{2}.\n$$\n\nThe mass balance equations are given by\n\n$$\n[N]_{T}=[N]+[U]+[UKA]+[UKB]+[UKAB],\n$$\n\n\n\n$$\n[K]_{T}=[K]+[UKA]+[UKB]+2[UKAB].\n$$\n\nThe expression for the free DnaK concentration at equilibrium for the Square Model of Figure 5\u2014figure supplement 1 is the solution of the cubic equation\n\n$$\na[K]^{3}+b[K]^{2}+c[K]+d=0,\n$$\n\nwhere\n\n$$\na=K_{1}K_{2},\n$$\n\n\n\n$$\nb=K_{1}+K_{2}+K_{1}K_{2}(2[N]_{T}\u2212[K]_{T}),\n$$\n\n\n\n$$\nc=1+K_{UN}+(K_{1}+K_{2})([N]_{T}\u2212[K]_{T}),\n$$\n\n\n\n$$\nd=\u2212(1+K_{UN})[K]_{T}.\n$$\n\nThe cubic equation was solved using MATLAB and combined with the expressions for equilibrium constants to yield concentrations of the various species at each of the [K]T and [N]T values used in the titration.\n",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "6e7c23f1-9a98-42b2-9e6d-9a447ddc318c",
+      "submission_id": "b7161b3b-1dd3-477e-8e48-64b582a46d7b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, JW Goethe-University , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.28030.024](https://doi.org/10.7554/eLife.28030.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Promiscuous binding by Hsp70 results in conformational heterogeneity and fuzzy chaperone-substrate ensembles\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Volker D\u00f6tsch (Reviewer #1), is a member of our Board of Reviewing Editors and the evaluation has been overseen by John Kuriyan as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. All reviewers liked the manuscript and the conclusions and had only a few comments to be addressed in a revised version of the manuscript.\n\nSummary:\n\nHsp70 is a central hub for chaperones and it helps with protein folding, translocation and disaggregation. The mechanistic basis for Hsp70 chaperone activity remains still poorly understood because of the difficulty in characterizing the dynamic and heterogeneous complex with substrate proteins. Previous Hsp70-client studies mostly used short peptides as substrates, an over-simplified scenario given that physiological clients typically have hundreds of residues. In this paper the authors took advantage of Methyl-TROSY NMR methods to dissect the interaction between E. coli Hsp70 DnaK and a model substrate hTRF1. The HMQC spectra indicate that there are multiple DnaK-bound conformations. DnaK binds to four sites on hTRF1 evidenced by intermolecular NOEs. This is a very well designed and solid paper that provides important mechanistic insights into the Hsp70 chaperone-client interaction modes and how Hsp70 can modulate the folding landscape of clients.\n\nEssential revisions:\n\n1) The authors use HMQC spectra of hTRF1 bound to DnaK/ATP to rule out the lid being the source of the observed conformational heterogeneity. The assumption here is that in this case the lid is docked to NBD. However previous work (Cell 151, 1296-1307, December 7, 2012) showed that in the ATP and substrate binding state Hsp70 is in a lid-undocked and linker-bound state. The authors possibly need to revise the text?\n\n2) The authors probed the rotamer distribution of the DnaK binding site residues to explore mechanisms of promiscuity of DnaK binding. In subsection \u201cProbing rotamer distributions of the DnaK binding site residues\u201d, the authors argued that the residues in binding site are highly conserved and thus indicated that the binding pocket is rigid. Is this always true though? Does sequence conservation necessarily mean structural rigidity?\n\n3) Given the availability of structural data on TF and SecB chaperones in complex with non-native proteins, it would be beneficial to the field if a comparison of the different binding modes (Hsp70, TF, SecB) were included in the current work.\n\n4) There are 4 binding sites on hTRF1, however in Figure 2B, there are 5 extra peaks for I29, Since this spectra acquired at a ratio of 2 for DnaK/hTRF1, does this mean that V41 at P0 position has two states, stoichiometry 1 and 2? Can the authors clarify in the text?\n\n5) The long interaction time of the chaperone with the unfolded protein and the possibility of multiple binding events can certainly help proteins that fold slowly. However, the model would also predict that the folding of fast and easy folding proteins should be inhibited and slowed down. Has this been observed?\n",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "29b7b2e4-b3fd-40d0-9b2f-99b18f321581",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C1",
+      "claim": "The Hsp70 chaperone system is integrated into a myriad of biochemical processes that are critical for cellular proteostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "The Hsp70 chaperone system is integrated into a myriad of biochemical processes that are critical for cellular proteostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about Hsp70's role, supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "b1b53cb0-6e26-4394-baea-3c64c6e20975",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C2",
+      "claim": "Detailed pictures of Hsp70 bound with peptides have emerged.",
+      "claim_type": "EXPLICIT",
+      "source": "Although detailed pictures of Hsp70 bound with peptides have emerged, correspondingly detailed structural information on complexes with folding-competent substrates remains lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement refers to existing structural studies in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "d044adf5-b095-4352-ae87-986ea0db29b3",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C3",
+      "claim": "Detailed structural information on Hsp70 complexes with folding-competent substrates remains lacking.",
+      "claim_type": "EXPLICIT",
+      "source": "Although detailed pictures of Hsp70 bound with peptides have emerged, correspondingly detailed structural information on complexes with folding-competent substrates remains lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in current knowledge that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "2e947ea0-f60e-438d-b84a-3ba694d7f140",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C4",
+      "claim": "DnaK binds to as many as four distinct sites on hTRF1.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report a methyl-TROSY based solution NMR study showing that the Escherichia coli version of Hsp70, DnaK, binds to as many as four distinct sites on a small 53-residue client protein, hTRF1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by NMR experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "ac0538e9-18a5-44cc-a5f6-dc8389cfd19f",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C5",
+      "claim": "A fraction of hTRF1 chains are bound to two DnaK molecules simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "A fraction of hTRF1 chains are also bound to two DnaK molecules simultaneously, resulting in a mixture of DnaK-substrate sub-ensembles that are structurally heterogeneous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is supported by NMR titration data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "587909a0-3136-44a1-80f5-26a8e28da1b9",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C6",
+      "claim": "The interactions of Hsp70 with a client protein at different sites results in a fuzzy chaperone-substrate ensemble.",
+      "claim_type": "EXPLICIT",
+      "source": "The interactions of Hsp70 with a client protein at different sites results in a fuzzy chaperone-substrate ensemble and suggests a mechanism for Hsp70 function whereby the structural heterogeneity of released substrate molecules enables them to circumvent kinetic traps in their conformational free energy landscape and fold efficiently to the native state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations of multiple binding sites and conformational heterogeneity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "d0ca2308-1a3f-46af-8792-53ffeaa3f42c",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C7",
+      "claim": "The Hsp70 chaperone system plays a vital role in quality control by overseeing the integrity of the cellular proteome in organisms ranging from bacteria to humans.",
+      "claim_type": "EXPLICIT",
+      "source": "The Hsp70 chaperone system plays a vital role in quality control by overseeing the integrity of the cellular proteome in organisms ranging from bacteria to humans (Balchin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "a86c8c28-b048-4051-9379-29c322fee473",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C8",
+      "claim": "Hsp70 performs ATP-dependent interactions with client proteins that impart directionality to cellular processes such as protein folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp70 performs a staggering array of functions and its ATP-dependent interaction with client proteins imparts directionality to a number of cellular processes such as protein folding (Hartl et al., 2011), translocation (Kang et al., 1990; Pilon and Schekman, 1999; Mayer, 2013), disaggregation (Nillegoda et al., 2015; Mogk et al., 2015) and oligomer disassembly (B\u00f6cking et al., 2011; De Los Rios and Goloubinoff, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "074ee510-525e-4d63-b3ea-f284ff7c1f63",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C9",
+      "claim": "Hsp70 is able to interact with clients having a broad range of conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp70 is able to interact with clients having a broad range of conformations (Schlecht et al., 2011; Mashaghi et al., 2016), including unfolded polypeptides emerging from the ribosome (Teter et al., 1999; Deuerling et al., 1999; Willmund et al., 2013), native proteins such as the heat shock transcription factor (Rodriguez et al., 2008), macromolecular assemblies including clathrin-coated vesicles (Sousa et al., 2016), as well as non-native misfolded and aggregated polypeptide chains (Szabo et al., 1994; Mayer and Bukau, 2005; Goloubinoff and De Los Rios, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "1342b689-83fa-45bb-b9c0-419c7890bba5",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C10",
+      "claim": "The multitude of client conformations that Hsp70 recognizes is in sharp contrast to the simplicity of its client binding-site architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "The multitude of client conformations that Hsp70 recognizes and the diversity of functions it carries out are in sharp contrast to the simplicity of its client binding-site architecture (Clerico et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "647c97af-15a1-4b81-a50a-19297c20dcb7",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C11",
+      "claim": "Hsp70 interacts with client substrates through its C-terminal domain, which is composed of a \u03b2-sandwich subdomain that includes a substrate binding cleft and an \u03b1-helical lid.",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp70 interacts with client substrates through its C-terminal domain, which is composed of a \u03b2-sandwich subdomain that includes a substrate binding cleft and an \u03b1-helical lid (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural knowledge and Figure 1A showing the domain architecture.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "e5299bf6-c18d-4419-a841-d32328cd254a",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C12",
+      "claim": "Short peptides bind Hsp70 in an extended conformation with only five residues contacting Hsp70.",
+      "claim_type": "EXPLICIT",
+      "source": "Both crystal- (Zhu et al., 1996; Zahn et al., 2013) and NMR-derived structures (Stevens et al., 2003) show that short peptides bind Hsp70 in an extended conformation with only five residues contacting Hsp70.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to crystal and NMR structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "77628121-71c3-4e44-a914-1afdee8d0eb5",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C13",
+      "claim": "The peptide is stabilized in the binding pocket by hydrogen bonds between its backbone and binding cavity forming loops in Hsp70, as well as by hydrophobic interactions between the peptide core and conserved Ile, Leu and Met residues of the binding cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "The peptide is stabilized in the binding pocket by hydrogen bonds between its backbone and binding cavity forming loops in Hsp70, as well as by hydrophobic interactions between the peptide core and conserved Ile, Leu and Met residues of the binding cleft (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "0b452349-8e1d-405a-98d2-59ab32abb4c0",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C14",
+      "claim": "The binding pocket of Hsp70 may possess considerable intrinsic flexibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystal structures of a number of peptides bound to Hsp70 have been solved with Ile, Leu, Pro and the unnatural amino acid cyclohexylalanine occupying the central position of the binding pocket, suggesting that the pocket may possess considerable intrinsic flexibility (Zahn et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from crystal structures cited in the literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "0375fe5c-c5ea-4720-9314-63797c75a08d",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C15",
+      "claim": "hTRF1 is a 53-residue three-helix bundle belonging to the homeodomain family of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to obtain insight into the molecular details of Hsp70-substrate interactions we have used the model substrate hTRF1 (Figure 1C), a 53-residue three-helix bundle belonging to the homeodomain family of proteins (Gianni et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation and Figure 1C showing the structure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "623a8d04-d913-489c-a6b5-e1b62067f08c",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C16",
+      "claim": "hTRF1 is only marginally stable and its native conformation is in equilibrium with an unfolded state that is populated at 4.2% with a lifetime of 2.9 ms at 35\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "hTRF1 is only marginally stable and its native conformation is in equilibrium with an unfolded state that is populated at 4.2% and only transiently formed with a lifetime of 2.9 ms (35\u00b0C) (Sekhar et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "60488fa4-f738-4068-81bf-f3010d233a18",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C17",
+      "claim": "hTRF1 has one predicted strong DnaK binding site centred at Leu 31 and two additional weak sites around residues 16 and 42.",
+      "claim_type": "EXPLICIT",
+      "source": "This substrate has one predicted (R\u00fcdiger et al., 1997) strong DnaK binding site centred at Leu 31 and two additional weak sites around residues 16 and 42 (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a prediction algorithm cited and shown in Figure 1D.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "6b31ecfc-28a3-4513-8535-014ba5f982ee",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C18",
+      "claim": "DnaK-bound hTRF1 is globally unfolded but retains as much as 40% residual secondary structure in regions distal to the DnaK binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that hTRF1 interacts with DnaK at its canonical binding site and while DnaK-bound hTRF1 is globally unfolded, secondary structural propensities are not affected in substrate regions distal to the DnaK binding site, with as much as 40% residual secondary structure retained (Sekhar et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "a5eb8e6d-5b6e-4477-ab42-9f0f20f1fabf",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C19",
+      "claim": "Transient long-range native and non-native tertiary interactions present in the unfolded state of hTRF1 are disrupted in the DnaK-bound form.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a series of spin relaxation experiments established that transient long-range native and non-native tertiary interactions that are present in the unfolded state of hTRF1 are disrupted in the bound form (Sekhar et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "3655c24f-aac1-4f80-b6e7-ddc62cdbc8cd",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C20",
+      "claim": "DnaK maintains hTRF1 in a globally unfolded conformation throughout the entire chaperone nucleotide cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, despite the fact that DnaK undergoes large conformational changes between ATP and ADP bound states the tethered hTRF1 is maintained in a globally unfolded conformation throughout the entire chaperone nucleotide cycle (Sekhar et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "c868f435-ed1e-49fa-8e7b-28e29e3f0584",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C21",
+      "claim": "Residues 27\u201339 of hTRF1 were invisible in TROSY-based 1H-15N spectra of U-2H/15N hTRF1 bound to U-2H DnaK/ADP.",
+      "claim_type": "EXPLICIT",
+      "source": "Our initial studies using 1H-15N NMR spectroscopy could not detect hTRF1 residues located at or near the DnaK binding site (residues 27\u201339 were invisible), because the relevant 1H-15N correlations were not visible in TROSY-based spectra of U-2H/15N hTRF1 bound to U-2H DnaK/ADP that reflects both the slow rotational tumbling of the ~80 kDa DnaK-hTRF1 complex and potentially also conformational heterogeneity at the binding site (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from the authors' previous studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "ab36f69a-4c46-43da-bf0b-715c01828d07",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C22",
+      "claim": "The methyl-TROSY technique takes advantage of favorable relaxation properties of the 13C and 1H methyl spins during magnetization transfer in a heteronuclear multiple quantum correlation (HMQC) experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "The methyl-TROSY technique takes advantage of favorable relaxation properties of the 13C and 1H methyl spins during magnetization transfer in a heteronuclear multiple quantum correlation (HMQC) experiment, where one of the two magnetization transfer pathways is effectively immune to intra-methyl dipolar relaxation (Tugarinov et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological basis of methyl-TROSY, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "ae1d3b05-d3fa-4a8e-87e8-ff273fdbedde",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C23",
+      "claim": "Upon addition of 2-fold excess U-2H DnaK/ADP, at least five peaks are observed for Ile 29 at chemical shifts distinct from the free state.",
+      "claim_type": "EXPLICIT",
+      "source": "However, upon addition of 2-fold excess U-2H DnaK/ADP, at least five peaks are observed for Ile 29 at chemical shifts that are distinct from the resonance position of Ile 29 in the free state, labeled as A-E in Figure 2B, suggesting that there are multiple conformations of DnaK-bound hTRF1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct experimental observation shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "842c8646-4ec5-4738-bdc2-772c5b2470db",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C24",
+      "claim": "Multiple conformations of DnaK-bound hTRF1 exist as established by diffusion coefficient measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to ensure that all the new Ile peaks arise from chaperone-bound hTRF1 molecules, we measured peak-specific diffusion coefficients using a 2D 1H-13C HMQC-based pulsed field gradient (PFG) diffusion experiment. Of the diffusion coefficients that could be quantified reliably, those measured from the new peaks are very similar and are smaller than the free hTRF1 diffusion rate (Figure 2\u2014figure supplement 1), establishing the existence of multiple DnaK-bound states of hTRF1 and thus conformational heterogeneity in the bound ensemble.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by diffusion coefficient data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "ae64bbd2-8fdf-4f46-8856-43438a676d30",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C25",
+      "claim": "Extra peaks for DnaK corresponding to Ile 401 and Ile 438 were observed upon addition of hTRF1.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon addition of 2-fold excess U-2H hTRF1 several new peaks appeared in the 1H-13C HMQC spectrum of IM-13CH3 labeled DnaK/ADP (compare Figure 2D and E). These could be assigned via a methyl-NOESY data set recorded on an ILVM-13CH3 DnaK/ADP-U-2H TRF1 sample, making use of available assignments for many of the methyl groups of DnaK/ADP (Zhuravleva et al., 2012), as arising from four separate conformers of Ile 401 and Ile 438.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D and E, and assignments from NOESY experiments.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "4b7403b0-5db2-4ab2-8eb4-bbe6ea3955f5",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C26",
+      "claim": "The interconversion between multiple bound states is slow with a substrate off-rate koff less than 0.3 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to estimate the lifetimes of bound states we recorded a magnetization exchange experiment (Farrow et al., 1994) where the appearance of exchange-relayed crosspeaks between HMQC correlations provides evidence of exchange. No such peaks were observed in experiments acquired with a mixing time of 300 ms, establishing that the interconversion between multiple bound states is slow. Simulations that we have performed are consistent with a substrate off-rate, koff, less than 0.3 s\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on magnetization exchange experiments and simulations performed by the authors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "33961341-2e5c-495d-a1a0-a314bb04bef3",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C27",
+      "claim": "The absence of exchange between bound conformers is consistent with previously measured slow rates of substrate release from DnaK/ADP (~0.001 s\u22121, 25\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of exchange between bound conformers is consistent with previously measured slow rates of substrate release from DnaK/ADP (~0.001 s\u22121, 25\u00b0C) (Pierpaoli et al., 1998; Mayer et al., 2000), and in turn also establishes that if DnaK slides between different binding sites on a substrate polypeptide chain (see below) the rate must be on the order of 0.3 s\u22121 or slower as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous kinetic measurements.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "455e8507-5d51-4e81-9206-adb973f6ebd2",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C28",
+      "claim": "A peptide of 16 residues (hTRF123-38) that includes the strongest predicted DnaK binding site shows multiple bound conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to address this possibility, we synthesized a small peptide of 16 residues, hTRF123-38, that includes the strongest predicted DnaK binding site but lacks the surrounding region and acquired 1H-13C HMQC spectra of IM-13CH3 DnaK/ADP in the free and peptide-bound states (Figure 2\u2014figure supplement 2A, left). Notably, extra peaks for DnaK corresponding to Ile 401a,b and Ile 438a,b were observed so that the presence of the entire substrate polypeptide chain is not a pre-requisite for observing multiple bound conformations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "d48d29a3-03a2-4ae7-a5a9-9b48ad8e4b14",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C29",
+      "claim": "Multiple DnaK-bound states of hTRF1 are present even when the lid is not interacting (or interacting less) with substrate in the ATP-bound state.",
+      "claim_type": "EXPLICIT",
+      "source": "HMQC spectra of hTRF1 bound to DnaK/ATP were recorded using an ATP hydrolysis-deficient variant of the chaperone in which Thr at position 199 was mutated to Ala. The Ile region of the 1H-13C HMQC spectrum of hTRF1 bound to DnaK/ATP shows three separate resonances in addition to the peak from folded (unbound) hTRF1, Figure 2\u2014figure supplement 2B, with the Leu/Val region showing additional resonances as well. This is similar to what was observed for the DnaK/ADP bound state where the lid is in the closed or down orientation, highlighting that multiple DnaK-bound states of hTRF1 are present even when the lid is not interacting (or interacting less) with substrate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "819335a4-2b11-4098-ad37-e8d58e1d115f",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C30",
+      "claim": "One substrate sidechain at position 0 extends deep into the hydrophobic pocket of DnaK and is in close proximity (~4 \u00c5) to the \u03b41-methyl groups of Ile 401 and Ile 438 of the chaperone.",
+      "claim_type": "EXPLICIT",
+      "source": "High-resolution structures of DnaK-substrate complexes (Zhu et al., 1996; Zahn et al., 2013; Stevens et al., 2003) establish that the client protein is partly stabilized by hydrophobic interactions between its sidechains and those of the chaperone that line the binding cavity (Figure 3A). One substrate sidechain, designated to be at position 0 with respect to the DnaK binding cleft, extends deep into the hydrophobic pocket of DnaK and is in close proximity (~4 \u00c5) to the \u03b41-methyl groups of Ile 401 and Ile 438 of the chaperone (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to crystal structures and shown in Figure 3A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "9cf9eff5-5934-4f36-b946-d62322c95727",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C31",
+      "claim": "At least four methyl-containing residues of hTRF1 can occupy the central position of the DnaK binding cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "In total four separate hTRF1 residues show sets of crosspeaks to Ile 401 and Ile 438 that report on conformational states 'a'-'d' of DnaK (Figure 3B). Thus, at least four methyl-containing residues of hTRF1 can occupy the central position of the DnaK binding cleft (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by NOESY data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "096ed4c3-f065-4356-85d4-d331df38ebc1",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C32",
+      "claim": "Peak 'a' arises from a sub-ensemble of DnaK-bound hTRF1 molecules where Leu 31 is at the 0 position.",
+      "claim_type": "EXPLICIT",
+      "source": "When Leu 31 was mutated to Ile the peak corresponding to hTRF1 conformation 'a' disappeared from the spectrum (Figure 4), thus establishing that peak 'a' arises from a sub-ensemble of DnaK-bound hTRF1 molecules where Leu 31 is at the 0 position.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mutagenesis data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "27a86bed-d9d9-4853-8da1-9c8a5ddcaa6c",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C33",
+      "claim": "Peak 'b' arises from Leu 30 at the 0 position.",
+      "claim_type": "EXPLICIT",
+      "source": "In a similar manner peak 'b' arises from L30 as Lo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mutagenesis experiments described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "a1dda2d6-cd76-42ba-ab03-984728c70227",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C34",
+      "claim": "States 'c' and 'd' correspond to hTRF1 Val residues in the DnaK binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "1H-13C HMQC spectra of V-13CH3 hTRF1 in complex with U-2H DnaK/ADP establish that states 'c' and 'd' correspond to hTRF1 Val residues in the DnaK binding pocket (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by selective labeling data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "04f418a8-a3a0-4c47-82f2-35eb59654b14",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C35",
+      "claim": "State 'c' arises from Val 41 at position 0.",
+      "claim_type": "EXPLICIT",
+      "source": "Since there are only two Val in hTRF1 (Val 18 and Val 41), each was mutated independently to Ile. The resulting spectra of V18I and V41I hTRF1 in complex with DnaK/ADP (Figure 4) lead directly to the assignment of states 'c' and 'd' as arising from Val 41 and Val 18 at position 0, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mutagenesis data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "5a2a7cf6-fa2a-4209-97b1-0515ab2056e9",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C36",
+      "claim": "State 'd' arises from Val 18 at position 0.",
+      "claim_type": "EXPLICIT",
+      "source": "Since there are only two Val in hTRF1 (Val 18 and Val 41), each was mutated independently to Ile. The resulting spectra of V18I and V41I hTRF1 in complex with DnaK/ADP (Figure 4) lead directly to the assignment of states 'c' and 'd' as arising from Val 41 and Val 18 at position 0, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mutagenesis data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "d6266d62-09f6-482f-8b00-46d2590766fa",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C37",
+      "claim": "This is the first study where a Val residue has been shown to occupy the 0 position in a DnaK-substrate complex.",
+      "claim_type": "EXPLICIT",
+      "source": "To the best of our knowledge this is the first study where a Val residue has been shown to occupy the 0 position in a DnaK-substrate complex, although Ile, Leu, Met, Pro and cyclohexylalanine are known to be able to bind in the central pocket (Clerico et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the finding, supported by comparison to known binding residues cited in the literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "8f3867f5-2854-4b53-bdfb-95bf9fa88e56",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C38",
+      "claim": "The maxima for states 'a', 'b' and 'd' occur at [DnaK]T/[TRF1]T ratios of 1, indicating that the stoichiometries in these cases are 1 DnaK to 1 hTRF1.",
+      "claim_type": "EXPLICIT",
+      "source": "The maxima for states 'a', 'b' and 'd', corresponding to complexes with Leu 31, Leu 30 and Val 18 occupying position 0, all occur at [DnaK]T/[TRF1]T ratios of 1, indicating that the stoichiometries in these cases are 1 DnaK to 1 hTRF1 (Figure 5A,B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by titration data shown in Figure 5A, B, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "5c79794c-1064-484f-b42f-13f5f243d687",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C39",
+      "claim": "The maximum for the 'c' state is at a [DnaK]T/[TRF1]T ratio of 2, indicating that this sub-ensemble has two DnaK molecules bound to each hTRF1 chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, however, the maximum for the 'c' state, with Val 41 at 0, is at a ratio of 2, indicating that this sub-ensemble has two DnaK molecules bound to each hTRF1 chain (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by titration data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "bd5afb0b-3952-48ac-9d0a-06ac642e1477",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C40",
+      "claim": "Multiple DnaK molecules have been proposed or modeled to bind large substrate polypeptides such as luciferase and rhodanese.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple DnaK molecules have been proposed or modeled to bind large substrate polypeptides such as luciferase (Szabo et al., 1994) and rhodanese (Han and Christen, 2003; Kellner et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "e4c0c55c-2103-4053-92d6-486e343da877",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C41",
+      "claim": "The data provides evidence for the existence of higher binding stoichiometries than 1:1 at equilibrium in solution even for a small 53 amino acid substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data provides evidence for the existence of higher binding stoichiometries than 1:1 at equilibrium in solution even for a small 53 amino acid substrate, suggesting that multiple occupancy of closely spaced binding sites on typical substrate molecules (R\u00fcdiger et al., 1997) is indeed possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the titration data showing 2:1 stoichiometry.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "3b740746-b059-4f74-a738-7007fdbbc9ae",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C42",
+      "claim": "The ratio of Ile 401 resonance intensities for a:b:d at a [DnaK]T/[hTRF1]T value of 1 are 1:0.4:0.05, corresponding to relative Kd values of 1:2.6:20.1 and free energy differences of 0:0.6:1.8 kcal/mol at 35\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio of Ile 401 resonance intensities for a:b:d at a [DnaK]T/[hTRF1]T value of 1 are 1:0.4:0.05, corresponding to relative Kd values and free energy differences between the states of 1:2.6:20.1 and 0:0.6:1.8 kcal/mol, respectively, at 35\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantitative analysis of peak intensities from titration data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "97122c83-d228-447d-880b-d67139fcdfb2",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C43",
+      "claim": "The rotamer distributions for Ile 401 and Ile 438 vary substantially in the different bound conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "The rotamer distributions for the two Ile residues vary substantially in the different bound conformations, ranging from 42% gauche- for Ile 401 and 100% gauche- for Ile 438 in state 'd', to 99% gauche- for Ile 401 and 46% gauche- for Ile 438 in state 'b'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of 13C chemical shifts shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "2d721a96-7f24-49da-8108-7c1103c5113b",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C44",
+      "claim": "Despite being highly conserved in evolution the DnaK binding site residues retain considerable flexibility, allowing the binding pocket to accommodate different substrate sidechains.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, despite being highly conserved in evolution the DnaK binding site residues retain considerable flexibility, allowing the binding pocket to accommodate different substrate sidechains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the rotamer distribution analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "e1c90c92-34df-4b26-bbe2-a2fb6e0fc17f",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C45",
+      "claim": "It is not merely the identity of the amino acid residing at position 0 that governs the topology of the binding cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the fractional population of the trans conformer of Ile 438 increases by almost 2-fold, from 28% to 54% between states 'a' and 'b', both of which have a Leu residue at position 0, indicating that it is not merely the identity of the amino acid residing at 0 that governs the topology of the binding cleft.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing rotamer distributions in states 'a' and 'b'.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "8dd868bc-a6b3-409d-8a35-3e7c98b7f164",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C46",
+      "claim": "The \u03b2-sandwich domain in the DnaK SBD shows a high degree of conservation within the Hsp70 family of chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b2-sandwich domain in the DnaK SBD shows a high degree of conservation within the Hsp70 family of chaperones (Mayer and Bukau, 2005; Zhang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "41d07ce0-7925-4842-b63e-3ed12ef2aeb3",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C47",
+      "claim": "The multiplicity of DnaK-substrate conformations should be a common characteristic of Hsp70-client complexes in general.",
+      "claim_type": "EXPLICIT",
+      "source": "The conserved topology of the substrate binding site suggests that the multiplicity of DnaK-substrate conformations observed presently should be a common characteristic of Hsp70-client complexes in general.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the conservation of the binding site.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "aeb75e83-edc7-4068-b8d9-0d2745589bc9",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C48",
+      "claim": "At least four peaks for Ile 29 are observed in the presence of Hsc70, demonstrating the existence of conformational heterogeneity in the Hsc70-hTRF1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to verify this we recorded HMQC spectra of a sample of ILVM-13CH3 hTRF1 containing a two-fold excess of human U-2H Hsc70/ADP (Figure 6). The Ile region of this spectrum clearly shows at least four peaks for Ile 29 in the presence of Hsc70, demonstrating the existence of conformational heterogeneity in the Hsc70-hTRF1 complex as well.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "613990e3-5ae7-40c1-98b8-3dd6001daac4",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C49",
+      "claim": "Three-helix bundle proteins represent ~10% of all in vivo substrates interacting with E.coli DnaK.",
+      "claim_type": "EXPLICIT",
+      "source": "Three-helix bundle proteins have previously been shown to represent ~10% of all in vivo substrates interacting with E.coli DnaK (Calloni et al., 2012); in addition, conformational heterogeneity has also been detected in the binding of a \u03b2-sheet protein with DnaK (Lee et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "145b44b8-833b-4bdd-8d4d-111c86f1fd28",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C50",
+      "claim": "The promiscuity of Hsp70 and the heterogeneous nature of Hsp70-client complexes are general features.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these observations suggest that the promiscuity of Hsp70 and the heterogeneous nature of Hsp70-client complexes are general features, beyond what has been characterized in detail in the present study of the DnaK-hTRF1 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations and comparison to other studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "601f6425-d795-4722-8e02-709fc878d84a",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C51",
+      "claim": "The residues that are part of the DnaK binding pocket are inherently malleable so that DnaK can recognize and bind to at least four different sites on hTRF1.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the residues that are part of the DnaK binding pocket are inherently malleable so that DnaK can recognize and bind to at least four different sites on the small 6 kDa, 53 residue hTRF1 substrate that have been characterized in the present work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing multiple binding sites and rotamer flexibility.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "0e0ac96e-5ac3-4723-a892-f4754a657e23",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C52",
+      "claim": "DnaK will likely bind to multiple client sites on typical client proteins that are much larger than 53 residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Since typical client proteins of DnaK are much larger than 53 residues, it is very likely that DnaK will bind to multiple client sites, generally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of multiple binding sites on a small substrate.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "1f1ec67f-2820-4e2d-8ecc-a81df7057161",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C53",
+      "claim": "Binding of Hsp70 at different positions creates sub-ensembles with distinct conformational preferences and different starting structures for folding upon release.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results, therefore suggest a model for Hsp70-mediated conformational biasing whereby binding of Hsp70 at different positions of a substrate creates sub-ensembles with distinct conformational preferences and hence different starting structures for folding upon release from Hsp70, thereby broadening the conformational space sampled by the substrate as it folds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic model proposed based on the experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "cb5b5eb2-fc31-4ce0-b5ec-0f28d39e24d3",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C54",
+      "claim": "The DnaK-hTRF1 ensemble is a fuzzy complex, characterized by both static and dynamic disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, our study establishes that the DnaK-hTRF1 ensemble is a fuzzy complex, characterized by both static and dynamic disorder.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations of multiple conformations and conformational dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "1fad9b7d-1364-4c18-9cc8-6892f691dd7b",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C55",
+      "claim": "The heterogeneity resulting from Hsp70 binding enables the client protein to explore a number of starting conformations as a means for navigating kinetic traps in the conformational free energy landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "The heterogeneity resulting from Hsp70 binding thus enables the client protein to explore a number of starting conformations, that lead to the formation of different amounts and types of local structure, as a means for navigating kinetic traps in the conformational free energy landscape and for promoting efficient folding to the native state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation of the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "5a19650b-7fca-4f2b-b77f-8c5462b5a17e",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C56",
+      "claim": "Such a mechanism of Hsp70 function is expected to be particularly beneficial for proteins with rugged free energy landscapes and local minima that trap misfolded and aggregation-prone conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a mechanism of Hsp70 function is expected to be particularly beneficial for proteins with rugged free energy landscapes and local minima that trap misfolded and aggregation-prone conformations, where folding yield is increased by recycling kinetically trapped molecules at the expense of a decrease in folding rate resulting from repeated binding to the Hsp70 chaperone (Agashe et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the functional implications, supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "7de94204-39e0-4d5c-85e2-5552774b3a90",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C57",
+      "claim": "Slower folding in the presence of the Hsp70 chaperone system has been observed for RNase H.",
+      "claim_type": "EXPLICIT",
+      "source": "Slower folding in the presence of the Hsp70 chaperone system has indeed been observed in the literature for RNase H (Sekhar et al., 2012a), though such a decrease is predicted to be negligible for fast-folding proteins like hTRF1 (56) (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation and simulations shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "3dff5bb2-6d2d-41f7-b327-8214b78b967d",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C58",
+      "claim": "The chaperone-substrate interaction studied here adds to the increasing number of examples of conformational heterogeneity observed in concert with molecular recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "The chaperone-substrate interaction studied here adds to the increasing number of examples of conformational heterogeneity observed in concert with molecular recognition (Boehr et al., 2009; Mittag et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on conformational heterogeneity in molecular recognition.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "eb7ac2a0-e2fc-4eb0-83e3-01a7df33dbbf",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C59",
+      "claim": "In the DnaK-hTRF1 complex, the multiplicity of Hsp70 client binding modes leads to static disorder at the binding interface.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present case the multiplicity of Hsp70 client binding modes leads to static disorder at the binding interface, where each sub-ensemble has a well-defined structure, with dissociation and subsequent re-association of the substrate occurring on a slow timescale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations of multiple conformations with slow exchange.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "2e372de3-196f-4358-bcfc-837b60b52953",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C60",
+      "claim": "Parts of the substrate polypeptide chain distal to the Hsp70 binding site are globally unfolded with local secondary structure, resulting in rapidly interconverting states and dynamic disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown earlier that parts of the substrate polypeptide chain distal to the Hsp70 binding site are globally unfolded with local secondary structure (Sekhar et al., 2015, 2016), resulting in rapidly interconverting states and dynamic disorder in these regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "76654b33-18c3-4e85-82fd-07e61e93b8c5",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C61",
+      "claim": "The DnaK-hTRF1 complex is a fuzzy complex with static and dynamic disorder that enhances exploration of the free energy landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a fuzzy complex with static and dynamic disorder enhances exploration of the free energy landscape, facilitating the efficient folding of the substrate to its native conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations and their functional implications.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "1889f383-abc6-4261-845c-cf9b8ebcca2c",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C62",
+      "claim": "The model proposed for Hsp70-mediated protein folding is broadly similar to that proposed for GroEL/ES function.",
+      "claim_type": "EXPLICIT",
+      "source": "The model proposed above for Hsp70-mediated protein folding is broadly similar to that proposed for GroEL/ES function, wherein GroEL/ES maintains kinetically trapped conformers in a globally unfolded state and subsequently releases them for folding (Weissman et al., 1994; Todd et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to another chaperone system, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "0e151290-afeb-49ad-8cfd-c0235b511adb",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C63",
+      "claim": "In the case of Hsp70, the starting conformation for substrate folding can potentially be different in every binding cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the case of Hsp70 the starting conformation for substrate folding can potentially be different in every binding cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation of multiple binding sites.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "28b20646-2680-4c11-a675-ebd686a5cfec",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C64",
+      "claim": "Hsp70-mediated folding does not rely passively on stochastic refolding from the same conformation, but instead actively alters starting structures as a strategy to sample different folding pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, Hsp70-mediated folding does not rely passively on stochastic refolding from the same conformation, but instead actively alters starting structures as a strategy to sample a different folding pathway and hence different regions of conformational space during each iteration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation of the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "ca3d6c95-9266-49f1-a133-d1b0a21b0081",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C65",
+      "claim": "The presence of multiple chaperone interaction sites on the substrate is a feature shared between Hsp70, SecB and trigger factor.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of multiple chaperone interaction sites on the substrate is a feature shared between Hsp70, SecB (Lilly et al., 2009; Huang et al., 2016) and trigger factor (Saio et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on other chaperones.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "91ca09ef-0ee9-4013-b936-443a7b1c036a",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C66",
+      "claim": "SecB and trigger factor utilize several surface-exposed hydrophobic pockets for capturing substrate molecules, resulting in a complex where the substrate wraps around the chaperone and buries 4000\u20138000 \u00c52 of surface area at the interface.",
+      "claim_type": "EXPLICIT",
+      "source": "However, SecB and trigger factor utilize several surface-exposed hydrophobic pockets for capturing substrate molecules, resulting in a complex where the substrate wraps around the chaperone and buries 4000\u20138000 \u00c52 of surface area at the interface (Lilly et al., 2009; Huang et al., 2016; Saio et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies of SecB and trigger factor.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "59a6e840-6398-4347-9a8d-ba9d607ef8e4",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C67",
+      "claim": "Hsp70 interacts with substrates using predominantly one binding site that contacts the substrate minimally at 4\u20135 residues, allowing the rest of the chain to explore conformational space.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Hsp70 interacts with substrates using predominantly one binding site (though interactions with the \u03b1-helical lid have been observed previously [Smock et al., 2011]) that contacts the substrate minimally at 4\u20135 residues, allowing the rest of the chain to explore conformational space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from structural knowledge and the experimental observations, with a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "71c8ce30-8dfc-4005-97a5-073fb3e125f4",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C68",
+      "claim": "The mechanism of Hsp70 action is different from those of SecB and trigger factor and appears to be tailored towards its function in assisting protein folding.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism of Hsp70 action is thus different from those of SecB and trigger factor and appears to be tailored towards its function in assisting protein folding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing the mechanisms of different chaperones.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "4f47cd7a-c948-4991-9f2d-b0851248533b",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C69",
+      "claim": "The DnaK-hTRF1 interaction is a fuzzy complex with static and dynamic disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present case the multiplicity of Hsp70 client binding modes leads to static disorder at the binding interface, where each sub-ensemble has a well-defined structure, with dissociation and subsequent re-association of the substrate occurring on a slow timescale. We have shown earlier that parts of the substrate polypeptide chain distal to the Hsp70 binding site are globally unfolded with local secondary structure (Sekhar et al., 2015, 2016), resulting in rapidly interconverting states and dynamic disorder in these regions. Such a fuzzy complex with static and dynamic disorder enhances exploration of the free energy landscape, facilitating the efficient folding of the substrate to its native conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations of multiple conformations and conformational dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "f4d97f67-9f22-49c8-90de-c96d72e0e975",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C70",
+      "claim": "Large proteins like luciferase are expected to have several kinetic traps in their folding free energy landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "Large proteins like luciferase are expected to have several kinetic traps in their folding free energy landscape; in the first binding cycle it is conceivable that only a few sub-ensembles of Hsp70-bound luciferase lead to starting conformations for the client upon release that bypass these kinetic traps and result in efficient folding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the folding behavior of large proteins based on the proposed mechanism.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "72e8e724-e8f8-440d-bb35-943bb8ca146c",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C71",
+      "claim": "The net probability of folding and hence the folding efficiency increases with the number of iterations that a substrate undergoes through the chaperone cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Since only a fraction of folding-competent conformations are generated during any particular iteration of the Hsp70 chaperone cycle, it follows that the net probability of folding and hence the folding efficiency increases with the number of iterations that a substrate undergoes through the chaperone cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the proposed mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "74320016-bf25-4389-a453-b7b48f57adc5",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C72",
+      "claim": "Substrate proteins typically undergo multiple rounds of binding and release before folding to the native state.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data provides a rationale for why substrate proteins typically undergo multiple rounds of binding and release before folding to the native state (Mayer, 2013; Szabo et al., 1994; Clerico et al., 2015; Sharma et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies and explained by the proposed mechanism.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "31a1bb70-9b2e-41d3-b76a-9accd1300dd5",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C73",
+      "claim": "DnaK may be able to bind to the SH3 domain in different ways.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work also sheds light into the cause of the conformational heterogeneity that was previously reported for a complex between the N-terminal SH3 domain from Drk and DnaK based on the observation of multiple peaks for specific residues in a 1H-15N HSQC spectrum of the complex (Lee et al., 2015). While the origin of the peaks was unclear in that study it now appears that DnaK may be able to bind to the SH3 domain in different ways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the current findings and a previous study cited.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "fb75e88e-6bde-493c-873b-131187a50e83",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C74",
+      "claim": "Multiple modes of binding, including the existence of forward and reverse modes and registry shifts, have been seen in crystal structures of short peptides with DnaK.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple modes of binding, including the existence of forward and reverse modes and registry shifts, have also been seen in crystal structures of short peptides with DnaK (Zahn et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to crystal structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "3c2bedd2-44b6-42e5-b197-88f957782490",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "claim_id": "C75",
+      "claim": "Multiple binding modes can exist at equilibrium in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we establish that such multiple binding modes can exist at equilibrium in solution and we elucidate the molecular determinants for the formation of a heterogeneous chaperone-substrate ensemble.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations in solution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c897f1f7-cba7-4e95-bed6-1be7e4a90cac",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "DnaK binds to at least four distinct sites on hTRF1 (Leu 30, Leu 31, Val 18, and Val 41), as demonstrated by methyl-TROSY NMR spectroscopy showing multiple conformations of the DnaK-hTRF1 complex. These binding sites were identified through mutagenesis experiments and NOESY data linking specific hTRF1 residues to DnaK binding pocket residues Ile 401 and Ile 438.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C23-C24, C31-C36 provide converging experimental evidence from NMR spectroscopy (multiple peaks for Ile 29), diffusion measurements confirming bound states, NOESY data linking substrate and chaperone residues, and mutagenesis experiments definitively assigning four binding sites. The data is internally consistent and well-supported by multiple independent experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "9d59805d-79bd-4d61-a24b-63c2f5458663",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A fraction of hTRF1 molecules bind two DnaK molecules simultaneously, with the 'c' state (Val 41 at position 0) showing 2:1 DnaK:hTRF1 stoichiometry based on NMR titration data, while states 'a', 'b', and 'd' show 1:1 stoichiometry. This demonstrates that even a small 53-residue substrate can accommodate multiple chaperone molecules at equilibrium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C38-C39, C41 are supported by systematic NMR titration experiments showing distinct maxima at different [DnaK]T/[hTRF1]T ratios (1:1 for states a, b, d and 2:1 for state c). The interpretation is validated by mathematical modeling (Figure 5\u2014figure supplement 1) demonstrating that these titration profiles are consistent with the proposed stoichiometries.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "2e2edb6a-2a5b-4154-8103-e4dcf23872bd",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The DnaK binding pocket exhibits considerable flexibility, with Ile 401 and Ile 438 rotamer distributions varying substantially across different bound conformations. The binding pocket topology is influenced not only by the identity of the substrate residue at position 0 but also by other factors, as evidenced by different rotamer populations for states 'a' and 'b' despite both having Leu at position 0.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 are supported by quantitative analysis of 13C chemical shifts (Table 1) showing rotamer distributions ranging from 42-99% gauche- for Ile 401 and 0-100% for Ile 438. The observation that Ile 438 trans population changes from 28% to 54% between states 'a' and 'b' (both with Leu at position 0) provides direct evidence that factors beyond residue identity govern binding pocket topology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "c78a1e4f-a621-45db-87bf-a794ce015658",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The interconversion between multiple DnaK-bound states is slow, with substrate off-rate (koff) less than 0.3 s\u207b\u00b9, as determined by magnetization exchange experiments showing no exchange crosspeaks at 300 ms mixing time. This is consistent with previously measured slow substrate release rates from DnaK/ADP (~0.001 s\u207b\u00b9 at 25\u00b0C).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 are supported by direct experimental evidence (absence of exchange crosspeaks in magnetization exchange experiments) and simulations establishing the upper limit for koff. The consistency with previously published kinetic measurements strengthens the conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "c2e2b204-d580-43b8-b1d4-3265ddc7b3bf",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Multiple DnaK-bound conformations are observed with peptide fragments (hTRF1\u2082\u2083\u208b\u2083\u2088 and hTRF1\u2083\u2084\u208b\u2084\u2089) and with DnaK/ATP (where the lid is less interactive), demonstrating that conformational heterogeneity does not require the full-length substrate or specific lid-substrate interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 are supported by experimental data showing multiple peaks in HMQC spectra for both peptide-DnaK complexes (Figure 2\u2014figure supplement 2A) and DnaK/ATP-hTRF1 complexes (Figure 2\u2014figure supplement 2B). These control experiments effectively rule out alternative explanations for the observed heterogeneity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "5c5cfe51-1e37-4d9d-b287-0ed5cc90646c",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The relative binding affinities of the three 1:1 complexes differ, with Kd ratios of 1:2.6:20.1 for states 'a':'b':'d' (corresponding to free energy differences of 0:0.6:1.8 kcal/mol at 35\u00b0C), as estimated from peak intensity ratios at [DnaK]T/[hTRF1]T = 1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C42 provides quantitative binding affinity estimates based on peak intensities. However, the authors acknowledge this is only approximate due to potential differential relaxation effects (13% maximum variation noted). While 1H and 13C linewidths are reported as similar, the assumption that intensities directly reflect concentrations may introduce systematic errors. The relative trends are likely valid, but absolute values should be interpreted cautiously.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "fe7da35c-7ba1-4d9e-9958-ddf4c1c673f6",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Conformational heterogeneity in Hsp70-client complexes is a general feature, as demonstrated by similar multiple conformations observed with human Hsc70 binding to hTRF1. The conserved topology of the substrate binding site across the Hsp70 family suggests this promiscuity is widespread.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48, C47, C50 are supported by experimental data showing at least four peaks for Ile 29 in Hsc70-hTRF1 complexes (Figure 6), combined with structural conservation arguments and citations to studies showing heterogeneity with other substrates (\u03b2-sheet proteins). The generalization is appropriately cautious and evidence-based.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "23bb872a-c7a4-4b5b-ab79-49fb86615d46",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "This is the first study demonstrating that a Val residue can occupy the central (0) position in a DnaK-substrate complex, expanding the known repertoire of residues that can bind in the central pocket beyond Ile, Leu, Met, Pro, and cyclohexylalanine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 is supported by the mutagenesis and labeling experiments definitively assigning Val 18 and Val 41 to positions 0 in states 'd' and 'c'. The novelty claim is appropriately qualified ('to the best of our knowledge') and contextualized with citations to known binding residues.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "7326294d-5f5b-4efa-aa00-6e27a1223c0f",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The DnaK-hTRF1 complex is a 'fuzzy complex' characterized by static disorder (multiple binding modes with slow exchange) and dynamic disorder (rapidly interconverting states in regions distal to binding site). This heterogeneity enables substrate molecules to explore different starting conformations upon release, potentially allowing them to circumvent kinetic traps and sample different folding pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C6, C53-C55, C61, C64 present a mechanistic model based on the experimental observations. While the characterization of the complex as 'fuzzy' with static and dynamic disorder is well-supported by data (C54, C59-C60, C69), the functional implications (C53, C55, C61, C64) regarding kinetic trap avoidance and folding pathway sampling are speculative inferences. The model is plausible and consistent with the data, but lacks direct experimental validation of the proposed folding mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "5fe3c23c-652e-4b74-b44f-8f153de1d19e",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The proposed mechanism is expected to be particularly beneficial for proteins with rugged energy landscapes, where multiple binding cycles increase folding efficiency. Slower folding with Hsp70 has been observed for some proteins (RNase H) but is predicted to be negligible for fast-folding proteins like hTRF1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C56-C57, C70-C72 extend the mechanistic model to make predictions about different protein classes. While C57 provides supporting evidence from literature and simulations for hTRF1, the broader predictions (C56, C70-C71) remain speculative. The logic is sound and the model is testable, but experimental validation for proteins with rugged landscapes is needed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "d0fad4bc-be26-46e0-9b3e-34debff4900c",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The Hsp70 mechanism differs from GroEL/ES and other chaperones (SecB, trigger factor) in that Hsp70 can generate different starting conformations in each binding cycle through promiscuous binding, while using minimal substrate contacts (4-5 residues) that allow conformational exploration, rather than extensive wrapping around the chaperone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63, C65-C68 make comparative mechanistic arguments supported by citations to structural and functional studies of other chaperones. The distinction between Hsp70's minimal contact strategy versus the extensive wrapping by SecB/trigger factor is well-established in the literature. The inference that this enables different functional mechanisms is logical and appropriately qualified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "6992415f-68de-434c-b235-1d7e9c2c1643",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Methyl-TROSY NMR spectroscopy enabled detection of residues at the DnaK binding site (residues 27-39) that were invisible in conventional 1H-15N TROSY experiments due to slow tumbling of the ~80 kDa complex and conformational heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 describe the methodological approach and its rationale. The limitation of 1H-15N experiments is documented (C21), and the advantages of methyl-TROSY are well-established in the literature (C22). The successful detection of multiple conformations validates the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "7827f917-fdae-4169-b996-56e97e3c13ad",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background context on Hsp70 function and structure: Hsp70 is critical for cellular proteostasis, performs diverse ATP-dependent functions, recognizes clients with broad conformational range, yet has a simple binding site architecture where peptides bind in extended conformations with minimal contacts. The binding pocket may possess considerable flexibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C7-C14 provide established background knowledge supported by multiple citations to previous structural and functional studies. These claims appropriately contextualize the study and identify the knowledge gap (C3) that the work addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "9f6db2cb-b7a3-4089-8549-14fc0f558b0d",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The model substrate hTRF1 is a marginally stable 53-residue three-helix bundle with one predicted strong DnaK binding site (Leu 31) and two weak sites. Previous studies showed DnaK-bound hTRF1 is globally unfolded but retains ~40% secondary structure in regions distal to the binding site, with disrupted tertiary interactions, and this conformation is maintained throughout the DnaK nucleotide cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C20 describe the substrate properties and previous findings, all supported by appropriate citations to prior work by the authors and others. This establishes the foundation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    },
+    {
+      "id": "31b40d68-bccf-44cc-86ca-f3939c12b4b4",
+      "content_id": "e7c01f4a-2c0f-417b-b59d-7cd5c5019ca5",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The current findings provide insight into previously observed conformational heterogeneity in other DnaK-substrate complexes (SH3 domain) and establish that multiple binding modes observed in crystal structures can exist at equilibrium in solution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75 connect the current findings to previous observations in the literature. The inference that DnaK can bind the SH3 domain in different ways (C73) is reasonable given the current results, and the demonstration that crystal structure heterogeneity reflects solution equilibria (C75) is directly supported by the NMR data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:03:49.623880Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2e947ea0-f60e-438d-b84a-3ba694d7f140",
+      "result_id": "c897f1f7-cba7-4e95-bed6-1be7e4a90cac"
+    },
+    {
+      "claim_id": "ae1d3b05-d3fa-4a8e-87e8-ff273fdbedde",
+      "result_id": "c897f1f7-cba7-4e95-bed6-1be7e4a90cac"
+    },
+    {
+      "claim_id": "842c8646-4ec5-4738-bdc2-772c5b2470db",
+      "result_id": "c897f1f7-cba7-4e95-bed6-1be7e4a90cac"
+    },
+    {
+      "claim_id": "9cf9eff5-5934-4f36-b946-d62322c95727",
+      "result_id": "c897f1f7-cba7-4e95-bed6-1be7e4a90cac"
+    },
+    {
+      "claim_id": "096ed4c3-f065-4356-85d4-d331df38ebc1",
+      "result_id": "c897f1f7-cba7-4e95-bed6-1be7e4a90cac"
+    },
+    {
+      "claim_id": "27a86bed-d9d9-4853-8da1-9c8a5ddcaa6c",
+      "result_id": "c897f1f7-cba7-4e95-bed6-1be7e4a90cac"
+    },
+    {
+      "claim_id": "a1dda2d6-cd76-42ba-ab03-984728c70227",
+      "result_id": "c897f1f7-cba7-4e95-bed6-1be7e4a90cac"
+    },
+    {
+      "claim_id": "04f418a8-a3a0-4c47-82f2-35eb59654b14",
+      "result_id": "c897f1f7-cba7-4e95-bed6-1be7e4a90cac"
+    },
+    {
+      "claim_id": "5a2a7cf6-fa2a-4209-97b1-0515ab2056e9",
+      "result_id": "c897f1f7-cba7-4e95-bed6-1be7e4a90cac"
+    },
+    {
+      "claim_id": "ac0538e9-18a5-44cc-a5f6-dc8389cfd19f",
+      "result_id": "9d59805d-79bd-4d61-a24b-63c2f5458663"
+    },
+    {
+      "claim_id": "8f3867f5-2854-4b53-bdfb-95bf9fa88e56",
+      "result_id": "9d59805d-79bd-4d61-a24b-63c2f5458663"
+    },
+    {
+      "claim_id": "5c79794c-1064-484f-b42f-13f5f243d687",
+      "result_id": "9d59805d-79bd-4d61-a24b-63c2f5458663"
+    },
+    {
+      "claim_id": "e4c0c55c-2103-4053-92d6-486e343da877",
+      "result_id": "9d59805d-79bd-4d61-a24b-63c2f5458663"
+    },
+    {
+      "claim_id": "97122c83-d228-447d-880b-d67139fcdfb2",
+      "result_id": "2e2edb6a-2a5b-4154-8103-e4dcf23872bd"
+    },
+    {
+      "claim_id": "2d721a96-7f24-49da-8108-7c1103c5113b",
+      "result_id": "2e2edb6a-2a5b-4154-8103-e4dcf23872bd"
+    },
+    {
+      "claim_id": "e1c90c92-34df-4b26-bbe2-a2fb6e0fc17f",
+      "result_id": "2e2edb6a-2a5b-4154-8103-e4dcf23872bd"
+    },
+    {
+      "claim_id": "4b7403b0-5db2-4ab2-8eb4-bbe6ea3955f5",
+      "result_id": "c78a1e4f-a621-45db-87bf-a794ce015658"
+    },
+    {
+      "claim_id": "33961341-2e5c-495d-a1a0-a314bb04bef3",
+      "result_id": "c78a1e4f-a621-45db-87bf-a794ce015658"
+    },
+    {
+      "claim_id": "455e8507-5d51-4e81-9206-adb973f6ebd2",
+      "result_id": "c2e2b204-d580-43b8-b1d4-3265ddc7b3bf"
+    },
+    {
+      "claim_id": "d48d29a3-03a2-4ae7-a5a9-9b48ad8e4b14",
+      "result_id": "c2e2b204-d580-43b8-b1d4-3265ddc7b3bf"
+    },
+    {
+      "claim_id": "3b740746-b059-4f74-a738-7007fdbbc9ae",
+      "result_id": "5c5cfe51-1e37-4d9d-b287-0ed5cc90646c"
+    },
+    {
+      "claim_id": "aeb75e83-edc7-4068-b8d9-0d2745589bc9",
+      "result_id": "fe7da35c-7ba1-4d9e-9958-ddf4c1c673f6"
+    },
+    {
+      "claim_id": "41d07ce0-7925-4842-b63e-3ed12ef2aeb3",
+      "result_id": "fe7da35c-7ba1-4d9e-9958-ddf4c1c673f6"
+    },
+    {
+      "claim_id": "145b44b8-833b-4bdd-8d4d-111c86f1fd28",
+      "result_id": "fe7da35c-7ba1-4d9e-9958-ddf4c1c673f6"
+    },
+    {
+      "claim_id": "d6266d62-09f6-482f-8b00-46d2590766fa",
+      "result_id": "23bb872a-c7a4-4b5b-ab79-49fb86615d46"
+    },
+    {
+      "claim_id": "587909a0-3136-44a1-80f5-26a8e28da1b9",
+      "result_id": "7326294d-5f5b-4efa-aa00-6e27a1223c0f"
+    },
+    {
+      "claim_id": "1f1ec67f-2820-4e2d-8ecc-a81df7057161",
+      "result_id": "7326294d-5f5b-4efa-aa00-6e27a1223c0f"
+    },
+    {
+      "claim_id": "cb5b5eb2-fc31-4ce0-b5ec-0f28d39e24d3",
+      "result_id": "7326294d-5f5b-4efa-aa00-6e27a1223c0f"
+    },
+    {
+      "claim_id": "1fad9b7d-1364-4c18-9cc8-6892f691dd7b",
+      "result_id": "7326294d-5f5b-4efa-aa00-6e27a1223c0f"
+    },
+    {
+      "claim_id": "76654b33-18c3-4e85-82fd-07e61e93b8c5",
+      "result_id": "7326294d-5f5b-4efa-aa00-6e27a1223c0f"
+    },
+    {
+      "claim_id": "28b20646-2680-4c11-a675-ebd686a5cfec",
+      "result_id": "7326294d-5f5b-4efa-aa00-6e27a1223c0f"
+    },
+    {
+      "claim_id": "5a19650b-7fca-4f2b-b77f-8c5462b5a17e",
+      "result_id": "5fe3c23c-652e-4b74-b44f-8f153de1d19e"
+    },
+    {
+      "claim_id": "7de94204-39e0-4d5c-85e2-5552774b3a90",
+      "result_id": "5fe3c23c-652e-4b74-b44f-8f153de1d19e"
+    },
+    {
+      "claim_id": "f4d97f67-9f22-49c8-90de-c96d72e0e975",
+      "result_id": "5fe3c23c-652e-4b74-b44f-8f153de1d19e"
+    },
+    {
+      "claim_id": "72e8e724-e8f8-440d-bb35-943bb8ca146c",
+      "result_id": "5fe3c23c-652e-4b74-b44f-8f153de1d19e"
+    },
+    {
+      "claim_id": "74320016-bf25-4389-a453-b7b48f57adc5",
+      "result_id": "5fe3c23c-652e-4b74-b44f-8f153de1d19e"
+    },
+    {
+      "claim_id": "1889f383-abc6-4261-845c-cf9b8ebcca2c",
+      "result_id": "d0fad4bc-be26-46e0-9b3e-34debff4900c"
+    },
+    {
+      "claim_id": "0e151290-afeb-49ad-8cfd-c0235b511adb",
+      "result_id": "d0fad4bc-be26-46e0-9b3e-34debff4900c"
+    },
+    {
+      "claim_id": "ca3d6c95-9266-49f1-a133-d1b0a21b0081",
+      "result_id": "d0fad4bc-be26-46e0-9b3e-34debff4900c"
+    },
+    {
+      "claim_id": "91ca09ef-0ee9-4013-b936-443a7b1c036a",
+      "result_id": "d0fad4bc-be26-46e0-9b3e-34debff4900c"
+    },
+    {
+      "claim_id": "59a6e840-6398-4347-9a8d-ba9d607ef8e4",
+      "result_id": "d0fad4bc-be26-46e0-9b3e-34debff4900c"
+    },
+    {
+      "claim_id": "71c8ce30-8dfc-4005-97a5-073fb3e125f4",
+      "result_id": "d0fad4bc-be26-46e0-9b3e-34debff4900c"
+    },
+    {
+      "claim_id": "c868f435-ed1e-49fa-8e7b-28e29e3f0584",
+      "result_id": "6992415f-68de-434c-b235-1d7e9c2c1643"
+    },
+    {
+      "claim_id": "ab36f69a-4c46-43da-bf0b-715c01828d07",
+      "result_id": "6992415f-68de-434c-b235-1d7e9c2c1643"
+    },
+    {
+      "claim_id": "29b7b2e4-b3fd-40d0-9b2f-99b18f321581",
+      "result_id": "7827f917-fdae-4169-b996-56e97e3c13ad"
+    },
+    {
+      "claim_id": "b1b53cb0-6e26-4394-baea-3c64c6e20975",
+      "result_id": "7827f917-fdae-4169-b996-56e97e3c13ad"
+    },
+    {
+      "claim_id": "d044adf5-b095-4352-ae87-986ea0db29b3",
+      "result_id": "7827f917-fdae-4169-b996-56e97e3c13ad"
+    },
+    {
+      "claim_id": "d0ca2308-1a3f-46af-8792-53ffeaa3f42c",
+      "result_id": "7827f917-fdae-4169-b996-56e97e3c13ad"
+    },
+    {
+      "claim_id": "a86c8c28-b048-4051-9379-29c322fee473",
+      "result_id": "7827f917-fdae-4169-b996-56e97e3c13ad"
+    },
+    {
+      "claim_id": "074ee510-525e-4d63-b3ea-f284ff7c1f63",
+      "result_id": "7827f917-fdae-4169-b996-56e97e3c13ad"
+    },
+    {
+      "claim_id": "1342b689-83fa-45bb-b9c0-419c7890bba5",
+      "result_id": "7827f917-fdae-4169-b996-56e97e3c13ad"
+    },
+    {
+      "claim_id": "647c97af-15a1-4b81-a50a-19297c20dcb7",
+      "result_id": "7827f917-fdae-4169-b996-56e97e3c13ad"
+    },
+    {
+      "claim_id": "e5299bf6-c18d-4419-a841-d32328cd254a",
+      "result_id": "7827f917-fdae-4169-b996-56e97e3c13ad"
+    },
+    {
+      "claim_id": "77628121-71c3-4e44-a914-1afdee8d0eb5",
+      "result_id": "7827f917-fdae-4169-b996-56e97e3c13ad"
+    },
+    {
+      "claim_id": "0b452349-8e1d-405a-98d2-59ab32abb4c0",
+      "result_id": "7827f917-fdae-4169-b996-56e97e3c13ad"
+    },
+    {
+      "claim_id": "0375fe5c-c5ea-4720-9314-63797c75a08d",
+      "result_id": "9f6db2cb-b7a3-4089-8549-14fc0f558b0d"
+    },
+    {
+      "claim_id": "623a8d04-d913-489c-a6b5-e1b62067f08c",
+      "result_id": "9f6db2cb-b7a3-4089-8549-14fc0f558b0d"
+    },
+    {
+      "claim_id": "60488fa4-f738-4068-81bf-f3010d233a18",
+      "result_id": "9f6db2cb-b7a3-4089-8549-14fc0f558b0d"
+    },
+    {
+      "claim_id": "6b31ecfc-28a3-4513-8535-014ba5f982ee",
+      "result_id": "9f6db2cb-b7a3-4089-8549-14fc0f558b0d"
+    },
+    {
+      "claim_id": "a5eb8e6d-5b6e-4477-ab42-9f0f20f1fabf",
+      "result_id": "9f6db2cb-b7a3-4089-8549-14fc0f558b0d"
+    },
+    {
+      "claim_id": "3655c24f-aac1-4f80-b6e7-ddc62cdbc8cd",
+      "result_id": "9f6db2cb-b7a3-4089-8549-14fc0f558b0d"
+    },
+    {
+      "claim_id": "31a1bb70-9b2e-41d3-b76a-9accd1300dd5",
+      "result_id": "31b40d68-bccf-44cc-86ca-f3939c12b4b4"
+    },
+    {
+      "claim_id": "fb75e88e-6bde-493c-873b-131187a50e83",
+      "result_id": "31b40d68-bccf-44cc-86ca-f3939c12b4b4"
+    },
+    {
+      "claim_id": "3c2bedd2-44b6-42e5-b197-88f957782490",
+      "result_id": "31b40d68-bccf-44cc-86ca-f3939c12b4b4"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The MR-Base database contains comprehensive GWAS summary data from 1673 studies as of December 2017, comprising approximately 11 billion SNP-trait associations across 4 million samples with diverse trait coverage including UK Biobank, metabolomic, immunological, and other complex traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C36-C44 provide consistent, specific quantitative data about the database composition and are presented as descriptive statistics of the resource. The numbers are internally consistent and represent a straightforward description of database contents at a specific time point.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "MR-Base integrates a curated database with automated software tools including an API, web app, and R packages, using Elasticsearch for data storage and implementing automated LD proxy identification with specific parameters (r\u00b2\u22650.6, within 250kb or 1000 SNPs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C99-C101 describe the technical architecture and implementation details of the platform. These are verifiable technical specifications that are internally consistent and represent standard bioinformatics practices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C102"
+    ],
+    "result": "The MR-Base 'top hits' collection includes instruments from multiple sources: 29,792 SNPs from clumping analysis, 21,324 SNPs from GWAS catalog, 187,318 mQTLs, 187,263 eQTLs, 1,088 metabolite QTLs, and 56 protein QTLs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 and C102 provide specific counts of genetic instruments from various sources with appropriate citations. These are descriptive statistics of curated data collections that are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Two-sample Mendelian randomization (2SMR) enables causal inference between phenotypes using GWAS summary data from separate studies, leveraging genetic variants as instrumental variables based on Mendelian inheritance principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C14-C17, C20-C23 describe established MR methodology supported by multiple citations to foundational papers. These represent well-accepted principles in the field with strong theoretical and empirical support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Mendelian randomization relies on three instrumental variable assumptions: (1) instrument-exposure association, (2) no direct effect on outcome except through exposure, and (3) no association with confounders. The first assumption is easily satisfied, but the latter two are unprovable and violations can introduce bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 describe fundamental MR assumptions that are well-established in the literature. These are standard methodological principles supported by the cited references and illustrated in Figure 1b.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Multiple MR methods are available to address different patterns of horizontal pleiotropy, including IVW (fixed and random effects), maximum likelihood, MR-Egger, weighted median, and mode-based estimators, each with specific assumptions and sensitivity to assumption violations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 and C107-C119 describe established MR methods with appropriate citations. The descriptions of method assumptions and properties are consistent with the methodological literature and represent standard practice in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The LDL-CHD analysis used data from GLGC (91 studies, 214,370 subjects) and CARDIoGRAMplusC4D (48 studies, 195,813 subjects) with 28-31% sample overlap. The 62 LDL instruments explained 2.4% variance (F-statistic=85), indicating strong instruments unlikely to suffer from weak instrument bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 provide specific sample characteristics and instrument strength metrics for the applied example. The F-statistic calculation and interpretation are standard practice, and the sample overlap estimates are explicitly stated as estimates by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The MR analysis found that higher LDL cholesterol increases CHD risk (OR=1.45, 95% CI: 1.30-1.62), with evidence of heterogeneity (Q=122.5, p=4.72e-07) and directional pleiotropy (MR-Egger intercept=-0.013, p=0.020). Sensitivity analyses using weighted median (OR=1.56) and weighted mode (OR=1.68) provided similar estimates, with no single SNP driving the overall effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C67 present results from the applied example with specific effect estimates, confidence intervals, and p-values shown in Figure 4. The statistical analyses follow standard MR methodology and the results are internally consistent across multiple methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Three outlier SNPs (rs11065987, rs1250229, rs4530754) showed LDL-raising alleles associated with lower CHD risk. PheWAS analysis identified rs11065987 as associated with multiple non-lipid traits including adiposity markers, blood pressure, hematological markers, autoimmune diseases, and metabolites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 describe outlier identification and PheWAS results shown in Figure 4 and Supplementary file 1D. The observations are data-driven and appropriately qualified with statistical thresholds (p<2.04e-05).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Mediation analysis suggested that the cardioprotective effect of rs11065987 may operate through hematocrit (indirect effect: -0.012, SE=0.005), as this was the only trait with an indirect effect in the same direction as the direct effect on CHD (-0.060, SE=0.011), while effects through BMI, hip circumference, and LDL were in opposite directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C78 present mediation analysis results, but the authors themselves caution that \"this result should be interpreted with caution and requires replication in independent studies and further examination for potential violations of MR assumptions.\" The analysis involves multiple comparisons without clear correction, and the mechanistic interpretation (C78) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Hypothesis-free MR-PheWAS analysis identified 16 non-vascular traits associated with LDL cholesterol at p<0.05, with lower mortality, higher adiposity, and higher type 2 diabetes risk surpassing 5% FDR threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C80 present exploratory PheWAS results shown in Figure 5. However, the authors explicitly state this is \"for purposes of demonstrating the utility of MR-Base for efficiently screening many traits for hypothesis generation\" and emphasize that \"any claims of causality must be followed up with rigorous examination.\" The results are presented as suggestive rather than definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C84",
+      "C97"
+    ],
+    "result": "Automation of 2SMR through MR-Base improves efficiency and reliability by streamlining data acquisition, harmonization, and analysis, reducing human error, and enabling reproducibility of results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82, C84, and C97 describe benefits of automation that are logical consequences of the platform design. These are supported by citation C83 showing that manual implementation can lead to errors, and represent reasonable assertions about software benefits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Sample overlap between GWAS can bias 2SMR estimates toward confounded observational associations (weak instrument bias), particularly when overlapping studies are discovery studies (winner's curse). Bias can be minimized using strong instruments (F>>10), and population differences may bias effect magnitude but not increase false positive associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 describe well-established limitations of 2SMR supported by appropriate citations (Pierce and Burgess 2013, Haycock et al. 2016, Burgess et al. 2016). These represent accepted knowledge in the MR field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Automation enables complex study designs but increases risks of multiple testing and data dredging. The MR-Base database is biased toward discovery GWAS with few replication studies, leading to winner's curse and likely inflated effect sizes from automated clumping procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 represent honest acknowledgment of platform limitations. C92 is an explicit statement about database composition, and C93 is a logical inference about the consequences. These limitations are appropriately disclosed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Inferences about directions of causality, shared genetic architecture, or null effects are more reliable than inferences about magnitudes of causal effects, which are very sensitive to violations of MR assumptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 provide important guidance on interpretation supported by citations (Burgess et al. 2014, VanderWeele et al. 2014). This represents established understanding in the MR field about the relative reliability of different types of inferences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "MR-Base supports access to additional MR methods from other R packages including extensions for correlated SNPs, MR-PRESSO for outlier detection, radial MR methods, and MR-RAPS for pleiotropy correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 describe software integration with appropriate citations to the respective method papers. This represents straightforward description of available functionality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C96"
+    ],
+    "result": "Large-scale GWAS have successfully identified robust genetic associations over the past decade, and statistical methods for MR using GWAS summary data have been developed, leading to massive growth in phenotypic coverage and statistical power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C96 describe the scientific context supported by appropriate citations (Visscher et al. 2017, Welter et al. 2014, and multiple MR methodology papers). These represent well-established facts about the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "GWAS summary data are useful for multiple applications including Mendelian randomization, PheWAS, transcriptome-wide and methylome-wide association studies, and LD score regression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 describe established applications of GWAS summary data, each supported by appropriate citations. These represent well-documented uses in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "While MR avoids certain problems of conventional observational studies, it introduces its own limitations and is predicated on exploiting vertical pleiotropy where a SNP influences two traits because one causes the other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 provide balanced assessment of MR methodology supported by citations (Davey Smith and Ebrahim 2001, Davey Smith and Hemani 2014). This represents honest acknowledgment of both strengths and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "The GWAS catalog prioritizes results from the largest reported analysis (typically discovery or meta-analysis), making instruments susceptible to winner's curse and weak instrument bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 describe a characteristic of GWAS catalog data and its logical consequence. C103 is a factual statement about data curation practices, and C104 is a reasonable inference about the implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "The ARIES mQTL dataset includes data from 1000 mothers at two time points and 1000 children at three time points, covering 33,256 unique CpG sites with at least one independent mQTL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 describe the ARIES dataset with citation to Gaunt et al. 2016. These are specific data characteristics that can be verified against the cited source.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C98"
+    ],
+    "result": "Genetic data for MR can be difficult to access and MR methods are evolving rapidly and difficult to implement for non-specialists, but MR-Base opens new opportunities for hypothesis-free and phenome-wide approaches through data curation and method integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C98 describe the motivation for and potential impact of the platform. These are reasonable assertions about accessibility challenges and the platform's potential to address them.",
+    "result_type": "MINOR"
+  }
+]

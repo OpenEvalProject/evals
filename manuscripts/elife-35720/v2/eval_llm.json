@@ -1,0 +1,394 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors determined a 4.5 \u00c5 resolution cryo-EM structure of S. cerevisiae Chd1 bound to a nucleosome containing H3K36 trimethyl mimic and H2B-ubiquitin in the presence of ADP-BeFx. The structure shows Chd1 bound at SHL-2 with precisely two turns of DNA unwrapped from the nucleosome surface, with the unwrapped DNA oriented away from the plane of the wrapped DNA gyre and kinked at the SANT-SLIDE domain contact site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C35-C47, C49, C52-C53 collectively describe the structural determination and key features of the Chd1-nucleosome complex. The cryo-EM data processing (C38-C42) yielded a 4.5 \u00c5 resolution structure (C40), and the structural observations regarding DNA unwrapping (C49, C52), ATPase domain positioning (C44-C45), and protein-DNA contacts (C46-C47) are directly supported by the electron density maps and structural analysis presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The chromodomains of Chd1 undergo an 18-degree rotation upon nucleosome binding compared to the open state, driven by closure of the ATPase domains. This repositioning is mediated by specific contacts between the chromodomains and the DNABD (K329-D1201/P1202 and S344/K345-D1033-D1038), and results in chromodomain I interacting with nucleosomal DNA at SHL1 while ATPase lobe II repositions to enable contacts with the H4 tail, H3 \u03b11 helix, and nucleosomal DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C65 describe the conformational changes in Chd1 upon nucleosome binding. The 18-degree rotation (C59), specific interdomain contacts (C55-C58), and resulting interactions with nucleosomal components (C60, C64-C65) are directly observed in the structure and supported by comparison with the open-state crystal structure. The presence of ADP-BeF in the nucleotide binding pocket (C63) and proper positioning of catalytic residues (C62) further support this as an active, closed conformation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "ATP binding drives chromodomain repositioning through closure of the ATPase domain cleft, which replaces a positively charged surface on ATPase lobe II with an acidic surface that repels chromodomain I. Pulsed EPR measurements on free Chd1 show that ADP-BeF induces a conformational change from 4.4 nm to 5.6 nm distance between V256C (chromodomain I) and S524C (ATPase lobe I), consistent with the nucleosome-bound structure. This chromodomain repositioning acts as a lever to reposition the DNABD, resulting in nucleotide-dependent DNA unwrapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C84 describe the mechanism of nucleotide-dependent conformational changes. The structural observations of surface charge changes (C77) and the EPR data showing nucleotide-dependent distance changes (C79-C80) provide direct experimental evidence for ATP-driven chromodomain repositioning (C81). The mechanistic connection between chromodomain repositioning and DNA unwrapping (C83-C84) is supported by the structural connectivity observed in the complex and previous work (C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Molecular modeling shows that Chd1 can bind dinucleosomes with linker lengths of 19 bp or greater, but shorter linkers result in steric clashes between the DNABD and the adjacent nucleosome. This 19 bp threshold for DNABD engagement correlates with the average inter-nucleosome spacing in S. cerevisiae and provides molecular connectivity between linker DNA availability and generation of closed, nucleotide-bound motor domains, potentially explaining how linker DNA length regulates nucleosome movement rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 describe modeling studies and their functional implications. The molecular modeling data (C85-C86) directly demonstrates the 19 bp linker requirement, and the correlation with genomic nucleosome spacing (C89) is supported by citation to previous work. The mechanistic connection between linker length and motor domain activation (C90) is a reasonable inference from the structural observations, and the link to functional regulation (C91) is supported by citation to previous functional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Structural alignment of Chd1 ATPase domains with the NS3 helicase shows that conserved motifs Ia (lobe I) and IV/V (lobe II) contact the top strand of nucleosomal DNA, similar to the tracking strand in NS3. However, Chd1 makes additional contacts not present in NS3: motifs II and III contact the opposite DNA strand, and Snf2-specific helical extensions (protrusions and brace helix) make additional contacts with both DNA strands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C106 describe structural comparisons between Chd1 and NS3. The alignment and identification of conserved contacts (C99-C101) are based on structural superposition, and the additional contacts unique to Chd1/Snf2 proteins (C103-C106) are directly observed in the structure. The comparison is appropriately qualified regarding the evolutionary distance between these enzymes and the limitations of inferring mechanism from NS3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Cryo-EM analysis of complexes with nucleosomes containing symmetrical 14 bp linkers reveals that two Chd1 molecules can bind simultaneously to opposite sides of a single nucleosome, yielding an 11 \u00c5 resolution structure. The two Chd1 molecules bind in the same mode as observed in the 1:1 complex, with no direct contacts between them, and both DNA binding domains can engage linker DNA simultaneously with similar extents of DNA unwrapping on both sides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C125 describe the 2:1 Chd1:nucleosome complex structure. The experimental preparation (C117), data processing results (C118-C120), and structural observations (C121-C125) are directly supported by the cryo-EM data. The lack of contacts between the two Chd1 molecules (C122) and the ability of both DNABDs to bind simultaneously (C124) are clearly observed in the 11 \u00c5 resolution structure, supporting the conclusion that the two enzymes function independently (C123).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The histone H3 tail exhibits different trajectories on the wrapped versus unwrapped sides of the nucleosome. On the unwrapped side, the H3 tail is better ordered and can be traced to alanine 26 (versus proline 38 on the wrapped side), following a different path than in previous structures. Deletion of the H3 tail to K36 increases the initial rate of Chd1-mediated nucleosome repositioning 4-fold, but this effect is not dependent on the extreme N-terminus (residues 1-25), and no direct contacts between the repressive region (26-36) and Chd1 are observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C137 describe H3 tail positioning and functional effects. The structural observations of differential ordering and altered trajectory (C128-C130) are directly supported by the electron density. The functional data from deletion mutants (C135-C136) provide clear experimental evidence for the repressive effect of the H3 tail region 26-36. The lack of observed contacts (C137) is appropriately noted, with speculation about possible explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C143",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C152"
+    ],
+    "result": "Ubiquitin exhibits different positions on the wrapped versus unwrapped sides of the nucleosome. On the wrapped side, ubiquitin is located adjacent to the acidic patch, while on the unwrapped side it is displaced toward the DNA and interacts directly with the DNA backbone at SHL6 via residues Lys48, Arg54, and Asp60. The ubiquitin is more prominent in 2D classes on the unwrapped side, suggesting tighter constraint. Using a gel-based assay, H2BK120ub stimulates Chd1 activity 3-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C141, C143, C146-C150, C152 describe ubiquitin positioning and functional effects. The structural observations of differential ubiquitin positioning (C143, C146-C147) and specific DNA contacts (C149) are supported by the electron density, though with lower resolution in the ubiquitin region (C140-C141). The 2D class analysis (C148) and functional data (C152) provide additional support. The inference that the DNA interaction stabilizes the unwrapped state (C150) is reasonable given the structural observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Residues 632-647 in the protrusion 2 region of ATPase lobe II pack against the histone H3 \u03b11 helix, with conserved residues K632 and K642 positioned near H3 D81 and E73. Deletion of this loop (K632-K646) abolishes nucleosome sliding. These residues are progressively less conserved in ISWI and SNF2 proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 describe a specific protein-protein interaction and its functional importance. The structural observation of the contact (C71-C72) is directly supported by the electron density in this region. The functional importance is demonstrated by the deletion mutant data showing complete loss of sliding activity (C73). The sequence conservation analysis (C74) appropriately contextualizes this interaction as more specific to Chd1 proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The extent of DNA unwrapping (two turns) is identical when Chd1 binds to nucleosomes with either a 14 bp or 63 bp linker on opposite surfaces of the 601 positioning sequence, despite dramatic differences in histone-DNA affinity on the two sides. This suggests that the extent of unwrapping is dominated by the properties of Chd1 rather than the affinity of DNA for the octamer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 compare the current structure with a previous structure and draw a mechanistic conclusion. The comparison (C50) is supported by direct structural observation and citation to the previous work. The inference about Chd1 properties dominating over DNA-histone affinity (C51) is reasonable given the identical unwrapping despite known differences in the 601 sequence, with appropriate citations to previous work characterizing these differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "The directionality of nucleosome repositioning by Chd1 (away from DNA ends) conflicts with the directionality inferred from docking the NS3 tracking strand into Chd1, which would predict DNA movement toward the side lacking linker. However, inferring Chd1 mechanism from NS3 is complicated by their evolutionary distance, difficulty in sequence-based motif alignment, and profound differences in nucleic acid binding. Notably, Chd1 motifs II and III contact the opposite strand not present in NS3, and Snf2-related enzymes have additional features that contact both DNA strands, suggesting that tracking may be coupled to both strands rather than a single tracking strand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C183 address an apparent conflict between structural and functional data and discuss limitations of mechanistic inference. The conflict between observed repositioning directionality and NS3-based predictions (C174-C175) is clearly stated. The discussion of limitations (C176-C178) and structural differences (C179-C180) appropriately qualifies the comparison. The speculation about dual-strand tracking (C181) is reasonable given the structural observations, and is supported by functional data from gap experiments (C182-C183).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "Despite proposals that the observed Chd1-nucleosome conformation represents an inactive state, the structure bears hallmarks of an active translocase: ADP-BeF is bound in the nucleotide pocket, ATPase domains are in a closed conformation with catalytic residues properly positioned, and this closure is connected to chromodomain repositioning and DNABD positioning that allows DNA access to the ATPase cleft. The authors speculate that initial remodeling may be most effective on nucleosomes lacking exit DNA, with the DNABD subsequently binding the newly generated exit linker, though this requires preferential initial binding to the side lacking linker DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C186-C195 present structural evidence for an active state (C186-C189) but then speculate about mechanism (C190-C195). The structural evidence for an active conformation (C187-C189) is well-supported by the data. However, the mechanistic speculation (C190-C195) is explicitly presented as speculation and lacks direct experimental validation. The supporting citation for greater ATPase activity on nucleosomes lacking exit DNA (C191) provides some support, but the proposed mechanism requires additional assumptions (C195) that are not tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C200",
+      "C201",
+      "C202"
+    ],
+    "result": "Alkylation of H3K36 to mimic trimethylation modestly stimulates Chd1 activity. However, electron density for the H3 tail extends only to residue 26, indicating that H3K36 does not stably interact with chromodomains or other Chd1 components in this structure. For such interaction to occur, either the chromodomains would need repositioning or the H3 N-terminus would require reconfiguration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C200-C202 describe functional effects and structural observations regarding H3K36. The modest stimulation by alkylation (C200) is supported by experimental data. The structural observation that H3K36 does not interact with Chd1 (C201) is directly supported by the electron density. The inference about requirements for interaction (C202) is reasonable and supported by citations to previous work on H3 structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211"
+    ],
+    "result": "Changes to DNA wrapping could affect how histone tail epitopes are displayed. The tudor domain of PHF1 preferentially interacts with H3K36me3 on partially unwrapped nucleosomes, and PHD domains of Chd4 are inhibited by nucleosomal DNA, suggesting that Chd4-generated unwrapped structures would enhance these interactions. The reconfiguration of the H3 tail by Chd1 has potential to affect interactions of reader, writer, and eraser enzymes with the tail and the distribution of modifications in chromatin, consistent with observations that Chd1 contributes to establishing boundaries between H3K4me3 and H3K36me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C206-C211 discuss implications of the structural observations for histone modification recognition. The general principle (C206) is a reasonable inference from the structural observations. The specific examples (C207-C208) are supported by citations to previous work. The inference about Chd4 (C209) is reasonable given the structural similarity expected between Chd1 and Chd4. The functional connection to modification boundaries (C211) is supported by citation to previous genomic studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220"
+    ],
+    "result": "Ubiquitin on the unwrapped side interacts directly with DNA, and this repositioning could affect interactions with factors involved in placing, removing, or recognizing H2BK120ub. H2BK120ub levels are greatly reduced in Chd1 mutants, potentially because Chd1 sequesters ubiquitin in a conformation less accessible for removal. Consistent with this, the ubiquitin position on the unwrapped side is incompatible with interaction with the SAGA DUB module.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C216-C220 connect structural observations to functional effects on ubiquitin dynamics. The structural observation of ubiquitin-DNA interaction (C216) is directly supported by the structure. The potential effects on regulatory factors (C217) is a reasonable inference. The functional observation of reduced H2BK120ub in Chd1 mutants (C218) is supported by citation. The speculation about sequestration (C219) is reasonable, and the incompatibility with SAGA DUB (C220) is supported by structural comparison with the SAGA DUB structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C227",
+      "C228",
+      "C229",
+      "C230",
+      "C231",
+      "C232"
+    ],
+    "result": "The specific relocation of ubiquitin on the unwrapped side, local H2B distortion, and presence of basic residues at the DNA interaction site indicate a favorable interaction that stabilizes DNA in the unwrapped state. The outer turns of nucleosomal DNA transiently unwrap with ~10% occupancy on millisecond timescales, and the ubiquitin interaction would be anticipated to stabilize this transiently unwrapped state, increasing its abundance and facilitating DNA access. However, the unwrapped state is unlikely to predominate in the absence of Chd1 or other unwrapping factors, as isolated ubiquitinylated nucleosomes show unchanged structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C227-C232 propose a mechanism for how ubiquitin affects nucleosome dynamics. The structural evidence for a favorable interaction (C227) is well-supported. The background on DNA breathing dynamics (C228) is supported by citation. The inference about stabilization of the unwrapped state (C229, C231) is reasonable given the structural observations. The caveat that the unwrapped state doesn't predominate in isolation (C230) is appropriately noted with citation. The connection to chromatin fiber formation (C232) is a reasonable inference supported by citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C237",
+      "C238",
+      "C239",
+      "C240"
+    ],
+    "result": "On the wrapped side of the nucleosome, ubiquitin occludes access to the acidic patch, which serves as an interaction surface for many nucleosome-binding proteins. On the unwrapped side, ubiquitin repositions away from the acidic patch, improving access. This suggests H2BK120ub may provide a means of regulating acidic patch access that is sensitive to nucleosome structure changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C237-C240 describe how ubiquitin positioning affects access to the acidic patch. The structural observations of occlusion on the wrapped side (C237) and improved access on the unwrapped side (C239) are directly supported by the structure. The importance of the acidic patch (C238) is well-established and supported by multiple citations. The inference about structure-sensitive regulation (C240) is a reasonable conclusion from these observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Chd1 makes limited contacts with histones, with only two direct contacts: the H3 \u03b11 helix and the H4 tail. The H4 tail contact is required for efficient remodeling by both Chd1 and ISWI enzymes. The interaction is dominated by DNA contacts, leaving most of the nucleosome accessible for additional factors. A second Chd1 can bind the opposite side using a similar mode, and even with two bound Chd1 molecules, the lateral nucleosome surfaces remain accessible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C160 describe the limited histone contacts and their implications. The structural observations of limited histone contacts (C153-C154, C157) are directly supported by the structure. The functional importance of the H4 tail contact (C155-C156) is supported by citations to previous work. The accessibility of nucleosome surfaces (C158, C160) and ability to bind two Chd1 molecules (C159) are supported by the structural data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Despite lacking direct contacts with H2A/H2B, Chd1 activity depends on histone dimers. This may arise because dimer loss affects DNA wrapping at SHL3.5-5.5, and more extensive unwrapping would require major DNABD repositioning to maintain linker DNA interaction while chromoATPase engages at SHL-2. Conversely, Chd1 binding could stabilize dimer association by rewrapping DNA to SHL5, potentially facilitating correct dimer docking and providing a mechanistic basis for Chd1's observed activities in H2A/H2B transfer and chromatin assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C168 propose a mechanism for Chd1's dependence on histone dimers and role in chromatin assembly. The functional dependence on dimers (C161) is supported by citation. The structural explanation (C162-C165) is a reasonable inference from the structure and knowledge of nucleosome organization. The speculation about stabilizing dimer association (C166-C167) is reasonable, and the connection to observed activities (C168) is supported by citations to previous functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Background information on chromatin remodeling proteins, Chd1 function, histone modifications in coding regions, and previous structural studies of Chd1 and related proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C34 provide background context from the literature. These claims are appropriately supported by citations to previous work and represent established knowledge in the field. They provide necessary context for interpreting the current structural and functional studies.",
+    "result_type": "MINOR"
+  }
+]

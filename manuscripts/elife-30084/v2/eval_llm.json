@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11"
+    ],
+    "result": "In E. coli, protein diffusion coefficients depend on net charge, with positive proteins diffusing up to 100-fold slower than negative ones. Negatively charged GFP variants (-30, -7, 0) all diffuse at 10-11 \u00b5m\u00b2/s, while +25 GFP diffuses at only 0.14 \u00b5m\u00b2/s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10-C11 provide direct FRAP measurements showing the charge-dependent diffusion effect in E. coli. The 100-fold difference is quantitatively supported by comparing -30 GFP (10-11 \u00b5m\u00b2/s) to +25 GFP (0.14 \u00b5m\u00b2/s), as shown in Figure 1d. The data are internally consistent and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C7",
+      "C8",
+      "C9",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The effect of charge on protein diffusion is weaker in L. lactis and Hfx. volcanii compared to E. coli, which correlates with their higher cytoplasmic ionic strengths (0.8 M and 2.1 M K+ respectively, versus 0.2 M in E. coli). This is attributed to electrostatic screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C7-C9, C17-C21 demonstrate that higher ionic strength organisms show reduced charge-dependent diffusion effects. The ionic strength values are cited from literature (C7-C9), and the diffusion measurements across organisms (Figure 2) show the expected trend. The electrostatic screening explanation (C19) is a reasonable inference from established biophysical principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Osmotic upshift to 1.2 Osm decreases diffusion coefficients of all GFP variants in E. coli, but the fold-change is smaller for positive proteins (7-fold for +25 GFP) than negative proteins (56-fold for -30 GFP), likely due to compensating electrostatic screening from increased ion concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are supported by FRAP measurements shown in Figure 3a. The differential response to osmotic stress based on charge is quantitatively documented. The interpretation that electrostatic screening compensates for crowding effects in positive proteins (C24) is a reasonable inference, though alternative mechanisms are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "The spatial distribution of charge on the protein surface affects diffusion coefficient. Two GFP variants with the same net charge (+11) but different charge distributions show different diffusion coefficients: +11b GFP (2.7 \u00b5m\u00b2/s) versus +11a GFP (0.76 \u00b5m\u00b2/s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 are supported by FRAP measurements comparing +11a and +11b variants (Figure 3c-d). The ~3.5-fold difference in diffusion despite identical net charge demonstrates that charge distribution matters. This is a well-controlled comparison that isolates the effect of charge distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "+25 GFP does not co-localize with DNA and the drop in diffusion rate is not dependent on DNA. FRAP measurements in DNA-free regions show similar fold-differences between -7 and +25 GFP (35-fold) as in DNA-containing regions (85-fold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29, C68-C70 are supported by multiple experimental approaches: DRAQ-5 co-localization studies (Figure 4a, Figure 4-supplement 1) and FRAP in DNA-free regions created by cephalexin/chloramphenicol treatment (Figure 4-supplement 2). The consistency across methods strengthens the conclusion that DNA is not the major binding partner.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "After rifampicin treatment, which depletes mRNA, the diffusion coefficient of +25 GFP increases over 20 minutes and plateaus at a value close to that of the 30S ribosomal subunit (0.04 \u00b5m\u00b2/s), indicating that positive GFP variants bind to ribosomes and this is the major cause of their slow diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32, C64-C67 are supported by time-course FRAP experiments after rifampicin addition (Figure 4b). The timing of diffusion increase matches mRNA degradation kinetics (C65), and the final diffusion coefficient matches literature values for ribosomal subunits (C64). The reduced cell-to-cell variation after rifampicin treatment (C67) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "+25 GFP binds predominantly to ribosomes, as demonstrated by co-localization on sucrose gradients. Even at high DNA concentrations (5x physiological), +25 GFP co-localizes with ribosomes and not with DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by sucrose gradient centrifugation experiments with fluorescence detection and electron microscopy (Figure 5a-c). The DNA competition experiments (C34, Figure 5b) strengthen the conclusion by showing that even excess DNA does not shift +25 GFP away from the ribosome fractions. Multiple complementary methods support this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Purified +25 GFP associates and aggregates with purified ribosomes at physiological salt concentrations in vitro, while -7 GFP does not bind to ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by size-exclusion chromatography and fluorescence imaging of purified components (Figure 5d-g). The formation of aggregates with +25 GFP but not -7 GFP provides direct biochemical evidence for charge-dependent ribosome binding. The in vitro system validates the in vivo observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C73",
+      "C74"
+    ],
+    "result": "The Kd for +25 GFP binding to ribosome binding sites is estimated as 6.7 \u00b5M in E. coli, 65 \u00b5M in L. lactis, and 155 \u00b5M in Hfx. volcanii, based on geometric calculations of binding sites (66 per ribosome) and diffusion-based estimates of bound fractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38-C42, C73-C74 involve multiple assumptions and calculations. While the geometric reasoning for binding site number (C39-C40) is reasonable, the Kd calculations depend on several unverified assumptions: (1) ribosome concentration is the same across organisms (C42), (2) all binding sites are equivalent, (3) GFP binds nonspecifically to RNA surface. The fraction bound (0.99 for +25 GFP in E. coli, C74) is calculated rather than directly measured. These estimates provide useful order-of-magnitude values but have significant uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The binding of +25 GFP to ribosomes can be described by electrostatic interactions and ionic screening on top of a base non-ionic interaction component, as demonstrated by fitting data with Debye-H\u00fcckel-based equations. The ionic strength dependence is similar to known protein-protein interaction pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C75-C77 are supported by fitting experimental data to theoretical models (Figure 6). The comparison to barnase-barstar, colicinE9-Im9, and thrombin-hirudin pairs (C75) provides validation. The requirement for a non-ionic component (C76) is demonstrated by comparing fits with and without this term. The linear dependence on log scale (C77) is consistent with the model predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "In E. coli, L. lactis, and Hfx. volcanii, the majority of cytoplasmic proteins are negatively charged at physiological pH 7.5. In E. coli, only 35 cytoplasmic proteins have net charge >+10, and these are ribosomal, RNA-associated, or DNA-associated proteins. The drop in diffusion with positive charge may partly explain why proteomes are mostly negative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by computational proteome analysis (Figure 7a). The identification of highly positive proteins and their functional associations (C45) is data-driven. The inference that slow diffusion constrains proteome composition (C47) is reasonable but represents a hypothesis rather than direct demonstration of causality. The correlation is clear, but other evolutionary pressures may also contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Positive ribosomal proteins (e.g., RplT with +24 charge and RplB with +31 charge) would experience 100-fold drops in diffusion coefficient if free in the cytoplasm. This implies that synthesis of cationic ribosomal proteins and ribosome assembly should be highly coordinated and modular to minimize nonspecific interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are logical inferences from the experimental data. The net charges of ribosomal proteins (C49) are determined from proteome analysis. The predicted diffusion slowdown is extrapolated from the GFP data. The conclusion about coordinated synthesis (C50) is a reasonable inference supported by citation to Davis et al., 2016, though it represents a hypothesis about cellular strategy rather than direct experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Four symbiotic bacteria (Buchnera aphidicola, Blochmannia floridanus, Onion yellows phytoplasma, Wigglesworthia glossinidia brevipalpis) with small genomes (572-730 genes) have very basic proteomes, creating a paradox: it is unclear how these organisms avoid slow diffusion and ribosomes being swarmed with positive proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by proteome database analysis (Figure 7b, Figure 7-supplement 2). The identification of basic proteomes in symbionts is data-driven. The paradox (C53) is a legitimate scientific question raised by the findings, though no resolution is provided. This represents an important observation that challenges the generality of the main findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "The decrease in mobility of positive proteins is caused by interaction with ribosomes, and ribosome surface properties may limit the composition of the cytoplasmic proteome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 synthesize multiple lines of evidence: rifampicin experiments (C30-C32), sucrose gradients (C33-C35), in vitro binding (C36-C37), and proteome analysis (C44-C47). The convergence of in vivo, in vitro, and computational approaches strongly supports the conclusion that ribosomes are the major binding partner. The broader implication for proteome composition (C6) is a reasonable inference but represents a hypothesis about evolutionary constraint.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "For +25 GFP to diffuse as slowly as 0.14 \u00b5m\u00b2/s in E. coli, it must bind to slow-moving cellular components: membrane proteins (D = 0.02-0.03 \u00b5m\u00b2/s), DNA (D = 0.000035-0.00007 \u00b5m\u00b2/s), or ribosome-mRNA complexes (D = 0.04 \u00b5m\u00b2/s for one-component model, or D = 0.055 \u00b5m\u00b2/s for bound ribosomes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 provide a logical framework for interpreting the slow diffusion of +25 GFP. The diffusion coefficients for cellular components are cited from literature (C13-C16). The reasoning that +25 GFP must bind to one of these slow components (C12) is sound, though it does not definitively identify which component. This analysis motivated the subsequent experiments that identified ribosomes as the binding partner.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C54",
+      "C71",
+      "C72"
+    ],
+    "result": "A protein can only diffuse as slowly as the combination of the protein and the slowest component it binds to. Even in Hfx. volcanii with high ionic strength (2.1 M K+), 81% of +25 GFP is still bound to ribosomes. GFP probably binds nonspecifically to RNA exposed on the ribosome surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is a theoretical principle correctly described by Equation 1 and illustrated in Figure 8. Claim C71 is calculated from diffusion data using this equation, though it depends on assumptions about ribosome diffusion coefficients. Claim C72 is a reasonable speculation about the binding mechanism based on the electrostatic nature of the interaction, though direct structural evidence is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Literature context: Previous studies showed that GFP diffusion is faster in osmotically-adapted versus upshifted E. coli cells, drops faster with cell volume in L. lactis than E. coli, and slows in energy-depleted cells. Diffusion-limited processes include tRNA-ribosome binding and barstar-barnase binding. The cytoplasm contains weak nonspecific interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 are all cited from literature and provide context for the current study. These are appropriately referenced and accurately represent prior work. They establish the motivation for studying charge-dependent diffusion and provide comparison points for interpreting the results.",
+    "result_type": "MINOR"
+  }
+]

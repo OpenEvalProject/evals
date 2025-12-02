@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The study employed a novel social evaluation task in which 40 participants received ostensibly real approval/disapproval feedback from 184 strangers, with feedback probabilities manipulated across four groups (85%, 70%, 30%, 15% approval rates). Participants reported self-esteem after every 2-3 trials, though the feedback was actually computer-generated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 and C116-C120 collectively describe the experimental design with adequate detail. The sample size (n=40), task structure, feedback manipulation, and deception are clearly documented. The design is appropriate for testing the hypotheses about self-esteem dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Participants adapted their predictions about being liked based on rater group membership, showing graded expectations across the four groups (95%, 87%, 30%, 13% for groups 1-4 respectively). A Rescorla-Wagner reinforcement learning model successfully predicted these choice patterns (mean r\u00b2=0.40\u00b10.27), consistent with participants using social prediction errors to update expectations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 are well-supported by statistical evidence (ANOVA F(3,117)=209.47, p<0.001, \u03b7p\u00b2=0.843) and pairwise comparisons (all p<0.001). The computational modeling provides a mechanistic account with reasonable fit. The behavioral manipulation was effective.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Changes in self-esteem depended on both feedback valence and expectations about approval. After controlling for outcome valence, expectations showed a significant negative correlation with self-esteem changes (r=-0.06, p=0.012). The largest self-esteem increases occurred with surprising approval (15% group) and largest decreases with surprising disapproval (85% group).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C132-C135 demonstrate that self-esteem is sensitive to prediction errors, not just feedback valence. The regression analysis controlling for valence is appropriate, though the effect size is modest (r=-0.06). The pattern across groups supports the prediction error hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "A computational model incorporating social prediction errors (SPEs), baseline self-esteem, and an exponential forgetting factor successfully captured dynamic self-esteem changes (r\u00b2=0.32\u00b10.24). The model outperformed alternatives including a valence-only model. Parameter estimates showed a low learning rate (\u03b7=0.04\u00b10.07) for updating approval expectations but a higher forgetting factor (\u03b3=0.65\u00b10.35) for self-esteem, indicating SPEs induce rapid self-esteem changes but slow learning about approval probabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C38-C43 are supported by model comparison (Table 1) showing the winning model outperformed alternatives. The r\u00b2 of 0.32\u00b10.24 indicates moderate fit with substantial individual variability. The parameter estimates are interpretable and the dissociation between learning rate and forgetting factor is theoretically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C102"
+    ],
+    "result": "Canonical correlation analysis identified an 'interpersonal vulnerability' dimension (canonical correlation=0.87, p=0.029) linking computational parameters with psychiatric symptoms. Vulnerability was characterized by low self-esteem, high anxiety/depression symptoms, lower baseline self-esteem and approval expectations, and greater self-esteem instability (higher weight on SPEs and wider range of initial beliefs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C55 and C102 describe a statistically significant CCA result. However, with 9 computational parameters and 11 symptom measures, the analysis involves many variables relative to sample size (n=40), raising concerns about overfitting. The p-value (0.029) is marginal and would not survive correction for testing multiple canonical dimensions. The interpretation is reasonable but requires replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C56"
+    ],
+    "result": "Social prediction errors correlated with activity in bilateral ventral striatum extending into subgenual anterior cingulate cortex (sgACC; BA 25) (peak coordinates: left -8,21,-5, t(39)=4.50; right 5,20,-8, t(39)=5.42; Z=4.65, k=1172, p=0.005 FWE cluster-corrected).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 and C56 report a primary fMRI finding with appropriate whole-brain correction (FWE p=0.005). The cluster size (k=1172) exceeds the permutation-derived threshold (k>120). The finding is consistent with prior literature on reward prediction errors in striatum. Statistical reporting is complete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C57",
+      "C91"
+    ],
+    "result": "Trial-by-trial updates in self-esteem correlated with activity in ventromedial prefrontal cortex (vmPFC) with a peak in left medial orbitofrontal cortex (BA 14m) extending into perigenual anterior cingulate cortex (BA 32pl) (peak coordinates -6,33,-15, t(39)=3.83, Z=3.51, k=868, p=0.047 FWE cluster-corrected).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C57, and C91 report a primary fMRI finding with whole-brain FWE correction (p=0.047). The cluster size (k=868) exceeds the permutation threshold. The vmPFC localization is consistent with value representation literature. The p-value is marginal but acceptable with appropriate correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C58",
+      "C62",
+      "C103"
+    ],
+    "result": "Interpersonal vulnerability positively associated with activity in left anterior insula extending into inferior frontal gyrus in response to social prediction errors (peak coordinates -44,11,9, t(38)=4.70, Z=4.15, k=5463, p<0.001 FWE cluster-corrected). Greater vulnerability was associated with increased SPE responses in this region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C58, C62, and C103 report a robust finding (p<0.001 FWE-corrected, large cluster k=5463). The analysis appropriately uses vulnerability scores from the CCA as a between-subject regressor. However, the validity depends on the CCA result, which has limitations noted above. The finding is anatomically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C59",
+      "C63",
+      "C104"
+    ],
+    "result": "Interpersonal vulnerability correlated positively with functional coupling between anterior insula and vmPFC (peak in right medial OFC, BA 14m) during self-esteem updates (peak coordinates 11,32,-11, t(38)=6.27, Z=5.16, k=78570, p<0.001 FWE cluster-corrected). Greater vulnerability was associated with stronger insula-vmPFC connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C59, C63, and C104 report a very large cluster (k=78570) with strong statistical significance. The PPI analysis is appropriate for testing connectivity. However, the extremely large cluster size is unusual and may reflect liberal thresholding or anatomical imprecision. The finding depends on the validity of the vulnerability measure from CCA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Interpersonal vulnerability did not correlate with SPE-related activity in the striatum/sgACC cluster (\u03c1=0.238, p=0.140) or with updating-related activity in the vmPFC cluster (\u03c1=-0.005, p=0.978).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 report null results with appropriate non-parametric tests. These negative findings help localize the vulnerability effect to insula rather than striatum/sgACC or vmPFC. The statistical approach is appropriate for testing correlations with individual difference measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C64",
+      "C65",
+      "C66",
+      "C76",
+      "C77"
+    ],
+    "result": "Learning from social evaluative feedback and updating self-evaluative beliefs rely on learning mechanisms similar to those in social and non-social reward learning at both algorithmic (prediction error-driven) and neural levels (shared substrates in striatum, ACC, and vmPFC).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C64-C66, C76-C77 synthesize the computational and neural findings. The conclusion is supported by the successful application of reinforcement learning models and the engagement of canonical reward-related brain regions. However, the study does not directly compare self-evaluation to other forms of learning within subjects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C105",
+      "C108",
+      "C109"
+    ],
+    "result": "Enhanced insula-vmPFC connectivity during self-esteem updates may represent a neurobiological marker for psychiatric vulnerability. Self-esteem instability may result from greater malleability of self-value representations in vmPFC driven by prediction error signals from insula.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C105, C108-C109 are speculative interpretations marked by 'may' language. While the neural findings are statistically robust, the causal and mechanistic claims are not directly tested. The cross-sectional design cannot establish whether these neural patterns are markers, causes, or consequences of vulnerability. Longitudinal or clinical validation is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Self-esteem functions as a 'sociometer' but reflects recent changes in social standing rather than an ongoing tally. The forgetting factor indicates state self-esteem depends on approximately the last six appraisals, while beliefs about the global social milieu update slowly. Forming accurate expectations about rejection buffers against expected rejection. Self-esteem may serve as a learning signal for gauging social standing in new environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69, C71-C74 provide theoretical interpretation of the computational parameters. The forgetting factor (\u03b3=0.65) and learning rate (\u03b7=0.04) support the distinction between rapid self-esteem changes and slow belief updating. However, C71 is explicitly labeled as a 'new testable hypothesis' requiring future work. The interpretation is reasonable but extends beyond the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Unlike mood, self-esteem does not increase when individuals are in environments with socially accepting others. Model comparison showed self-esteem models do not benefit from a separate expectation term, unlike established mood models where expectations increase mood even without feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 distinguish self-esteem from mood based on model comparison (Table 1). Model 4 with a separate expectation term did not outperform the winning model. However, C86 is speculative ('likely') about whether SPEs affect mood in this task. The comparison to prior mood studies is indirect as mood was not measured here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The pgACC/medial OFC region not only tracks task performance but continuously updates a general value ascribed to the self when learning how others value us. Adjacent vmPFC subregions may integrate information about current self-value to estimate future self-value. Social approval may act on self-value representations similarly to how primary/secondary rewards affect value representations of external stimuli, suggesting self-evaluation may be reducible to valuation where the object is the self.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93, C97-C100 interpret the vmPFC findings in the context of value-based decision-making literature. The interpretation is supported by anatomical specificity (BA 14m, BA 32pl) and citations to relevant prior work. However, the claims about 'integration' and 'estimation' (C97) are speculative. The parallel to external stimulus valuation is conceptually appealing but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "The anterior insula cluster showing vulnerability-related SPE responses overlaps with findings from social anxiety patients during reappraisal of negative self-beliefs and with findings across anxiety disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 compare the current findings to prior clinical neuroimaging studies. The anatomical overlap is described as 'striking' but no formal overlap analysis is reported. The comparison is qualitative and based on citations. While plausible, quantitative assessment of spatial overlap would strengthen the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C114"
+    ],
+    "result": "State self-esteem can be conceptualized as a self-value representation in vmPFC that is dynamically updated through prediction errors from violations of expectations about evaluative feedback. This framework reveals fundamental mechanisms underlying how we use social information when evaluating ourselves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 and C114 summarize the main conceptual contribution. The computational and neural evidence supports this framework, though 'fundamental mechanisms' is a strong claim. The framework successfully integrates reinforcement learning theory with self-esteem dynamics, but alternative interpretations are possible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "The framework holds promise as a trans-diagnostic predictor of psychiatric outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C115 is explicitly speculative ('holds promise'). The cross-sectional design with subclinical symptoms cannot establish predictive validity for clinical outcomes. The CCA identified a vulnerability dimension, but longitudinal data linking this to future psychiatric diagnoses are needed. This is a reasonable direction for future research but unsupported by current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "A control experiment showed that social feedback directed at another person did not affect participants' self-esteem (F(1,38)=0.477, p=0.494) and group membership did not interact with feedback (F(3,114), p=0.172). These findings demonstrate that self-esteem changes are specific to self-evaluation and unlikely due to demand characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C124 report an important control experiment (Figure 2\u2014supplement 1). The null effects are appropriately interpreted as evidence for specificity. The control addresses a key alternative explanation (demand characteristics). However, the control task was performed outside the scanner, introducing a potential confound. Despite this limitation, the control strengthens the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "In a Dictator Game, participants donated more to raters who approved of them versus those who disapproved or whose feedback was not displayed (F(2,78)=34.91, p<0.001). Donation behavior also varied by approval probability (F(6,234)=3.33, p=0.007). These results provide evidence that participants treated raters as real people and that social feedback impacted prosocial behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C131 report a behavioral validation (Figure 2\u2014supplement 2). The Dictator Game results show that the social feedback manipulation had meaningful behavioral consequences beyond self-report. The statistical effects are robust. This strengthens confidence that participants engaged authentically with the task despite the deception.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The manuscript provides background on cryo-EM single-particle analysis, describing it as a single-molecule imaging technique that requires combining many noisy projections due to dose limitations, and noting that recent technological advances have enabled atomic-level structure determination of macromolecular complexes that often exhibit conformational heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide well-established background knowledge about cryo-EM methodology and are supported by appropriate citations (C3) and general knowledge in the field. These claims accurately describe the principles, constraints, and recent advances in cryo-EM.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The manuscript describes limitations of discrete classification approaches for continuous heterogeneity, noting that while maximum likelihood methods have been successfully applied to classify discrete states and deduce energy landscapes, they are fundamentally unsuited for continuous motions because an infinite number of classes would theoretically be needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 accurately describe prior work on classification methods (with appropriate citations) and provide sound logical reasoning about the limitations of discrete classification for continuous heterogeneity. The inference that infinite classes would be needed for a true continuum is mathematically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript reviews existing approaches for handling continuous heterogeneity in cryo-EM, including normal-mode analysis, manifold embedding, focused refinement with partial signal subtraction, and WarpCraft, noting their respective advantages and limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C16 provide an accurate literature review with appropriate citations for each method described. The stated limitations (C11, C15) are well-known in the field. This represents a fair assessment of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C20",
+      "C21",
+      "C22",
+      "C26"
+    ],
+    "result": "The manuscript describes the implementation of multi-body refinement in RELION, including its fundamental assumption of stoichiometric homogeneity, implementation as a continuation of standard 3D auto-refine with GPU/CPU acceleration, requirements for soft-edged masks, and convergence criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 and C26 accurately describe the implementation details and are consistent with the theoretical framework presented. The early application (C17) is appropriately cited. These are straightforward methodological descriptions that are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "The relion_flex_analyse program provides two main functions: writing out subtracted images centered on the projected center-of-mass for subsequent refinements, and performing principal component analysis on relative body orientations using three Euler angles and two in-plane translations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 describe specific features of the analysis program that are consistent with the overall methodology. The description of the PCA approach using five degrees of freedom per body (converted to six variables as described in the text) is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "For the ribosome test case, consensus refinement of 105,247 particle images yielded 3.2 \u00c5 resolution with poor density in the small subunit head region. The complex was divided into three bodies (LSU, SSU, head), and multi-body refinement converged after 16 iterations with resolutions of 3.1 \u00c5, 3.2 \u00c5, and 3.7 \u00c5 respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C37 report specific experimental results with concrete resolution measurements and convergence behavior. The data availability is documented (C30), and observations are consistent with prior work (C33 cites Wong et al., 2014). The reported improvements are modest but measurable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Multi-body refinement improved the ribosome head resolution from 4.0 to 3.7 \u00c5. Principal component analysis revealed that ~30% of variance is explained by the first two eigenvectors, corresponding to rolling and ratcheting motions. A bimodal histogram along the first eigenvector indicated discrete heterogeneity that had been undetected by conventional 3D classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 report specific improvements and discoveries. The resolution improvement is quantified (C39), PCA results are concrete (C40), and the biological interpretation of motions (C41) is reasonable. The discovery of previously undetected discrete heterogeneity (C44) is supported by comparison with prior analysis and unsuccessful conventional classification attempts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C51"
+    ],
+    "result": "For the spliceosome test case, consensus refinement of 327,490 particle images yielded 4.3 \u00c5 resolution. Using four body masks (core, foot, helicase, SF3b), the first multi-body refinement converged in 15 iterations with resolutions of 3.8, 4.0, 4.5, and 5.1 \u00c5 for the respective domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 report specific experimental results with concrete measurements. Data availability is documented (C46), and the experimental design is clearly described (C47). The resolution improvements over consensus refinement are quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "A second multi-body refinement with tighter masks improved SF3b resolution to 4.4 \u00c5. Subsequent focused 3D classification identified a subset of 126,186 particles with better-defined SF3b density, which upon separate refinement yielded 4.0 \u00c5 resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 describe an iterative refinement strategy with concrete results. The resolution improvements are quantified and the workflow demonstrates how multi-body refinement can be combined with other approaches. The final 4.0 \u00c5 resolution is close to the 3.9 \u00c5 reported in the original study (C79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C61"
+    ],
+    "result": "For the spliceosome, PCA revealed that the first two components describe ~30% of variance, corresponding to rocking motions of SF3b and concerted helicase-SF3b movements. Conventional 3D classification identified similar motions but yielded lower resolutions than multi-body refinement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 report PCA results and compare multi-body refinement with conventional classification. The quantitative comparison (C61) demonstrates the advantage of multi-body refinement. The biological interpretation of motions (C57-C58) is reasonable and supported by visualization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Multi-body refinement assumes continuous heterogeneity can be modeled as independent rigid-body movements, which is reasonable because tertiary structure often remains intact during quaternary changes. This allows using the entire dataset for each body reconstruction, yielding marked improvements to ~4 \u00c5 resolution for previously uninterpretable regions in both test cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 articulate the key assumption and advantage of the method, supported by the experimental results from both test cases. The reasoning about protein structure stability (C63) is sound, and the reported improvements (C65-C66) are documented in the results sections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Multi-body refinement outperformed conventional discrete classification for both test cases because it uses all particle images for each body rather than dividing data into subsets, and because discrete classes still contain residual heterogeneity when continuous motions are present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 provide a clear explanation for why multi-body refinement outperforms discrete classification, supported by the experimental comparisons in both test cases. The reasoning about data subdivision (C69) and residual heterogeneity (C70) is logically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "While internal domain structure may remain stable, significant variability is expected at body interfaces where chemical environments change. The implementation allows overlapping masks to include interfaces, but a broken helix in the spliceosome reconstruction illustrates that interface densities are not well-defined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 acknowledge an important limitation of the rigid-body assumption. The reasoning about interface variability is sound (C72-C73), the implementation feature is described (C74), and a concrete example of the limitation is provided (C75 with figure reference).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Multi-body refinement iteratively improves partial signal subtraction, unlike focused refinement with fixed subtracted images. The relion_flex_analyse program enables combining multi-body refinement with focused classification/refinement, achieving 4.0 \u00c5 for spliceosome SF3b, comparable to the original study's 3.9 \u00c5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 compare multi-body refinement with alternative approaches and demonstrate how methods can be combined. The comparison is fair (C76-C77), the advantage of the new program is clear (C78), and the validation against prior results (C79) supports the method's effectiveness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "PCA-generated movies provide insights into body movements, revealing rolling/ratcheting motions in the ribosome and helicase/SF3b rotations in the spliceosome. However, interface densities are not well-defined in these movies. The bimodal histogram for the ribosome indicated non-continuous heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 describe the utility and limitations of the PCA visualization approach. The biological interpretations (C82, C84) are reasonable, the limitation is acknowledged (C81), and the discovery of discrete heterogeneity (C83) is supported by the histogram data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "A main limitation is that small bodies provide insufficient signal for reliable alignment, with refinement becoming difficult below ~100 kDa. The smallest body tested (spliceosome foot) was ~290 kDa. The implementation allows fixing very small bodies by setting prior standard deviations to zero.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 honestly acknowledge size limitations of the method. The stated limit (C87) is consistent with field knowledge and includes a citation to methods that can help. The smallest tested body size (C88) provides empirical context, and the workaround (C89) is described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "WarpCraft can be viewed as a many-body approach using normal-mode reparametrization, which may work well for correlated local motions but struggles with multiple independent bodies, domain rotations, and discrete heterogeneity. Multi-body refinement should perform better in such cases if bodies are large enough, though both approaches face similar interface problems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 provide a fair comparison with WarpCraft, acknowledging where each approach excels. The reasoning about normal-mode limitations (C92-C93) is sound, and the predictions (C94-C95) are appropriately qualified as expectations/speculations rather than proven facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71",
+      "C98"
+    ],
+    "result": "The authors anticipate that multi-body refinement will be useful for generating atomic models of domains with multiple orientations and for extracting more information from cryo-EM datasets with continuous heterogeneity, possibly in combination with existing approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71 and C98 represent reasonable predictions based on the demonstrated results. These are appropriately framed as anticipated utility rather than proven facts, and are supported by the successful application to two diverse test cases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "The software will be distributed as part of RELION 3.0 as free, open-source software, allowing community contributions as has occurred with prior signal subtraction implementations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 describe software availability and distribution model. These are straightforward statements about release plans, with C97 citing examples of prior community contributions to support the open-source model.",
+    "result_type": "MINOR"
+  }
+]

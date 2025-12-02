@@ -1,0 +1,413 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors developed a subtractive expression strategy to selectively express optogenetic tools in AS motor neurons by combining the broad punc-17 promoter with pacr-5 and punc-4 promoters driving dsRNA constructs to suppress expression in other cholinergic motor neurons. This approach was validated by imaging, showing expression restricted to AS MNs in the VNC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 describe a methodological innovation that is well-supported by imaging data in Figure 1B and Figure 1\u2014figure supplement 1A. The subtractive approach is clearly demonstrated and validated, providing a critical tool for the subsequent functional experiments. The validation includes quantification of visible motor neurons showing specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Optogenetic activation of AS MNs using ChR2 causes animals to maintain undulatory locomotion but with a distorted wave, deeper bending, transiently reduced speed, and body contraction that is less pronounced than activation of all cholinergic neurons. These effects are ATR-dependent, confirming specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 are well-supported by behavioral tracking data shown in Figure 1C-D with appropriate controls (ATR+ vs ATR-). The quantification includes speed, bending angles, and body length measurements with statistical analysis. The comparison to activation of all cholinergic neurons provides important context for interpreting AS MN-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Segmental stimulation of AS MNs in anterior, midbody, or posterior body regions led to body length reduction (most pronounced anteriorly) without marked disruption of wave propagation or speed reduction. The authors interpret this as AS MN depolarization facilitating but not instructing the undulatory wave.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by experimental data in Figure 1E and Figure 1\u2014figure supplement 2. However, the interpretation in C60 is cautious and appropriately speculative given the relatively mild effects observed. The segmental manipulation provides spatial resolution but the lack of strong effects limits mechanistic conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Photostimulation of AS MNs causes animals to crawl in circles due to a dorsal bias in head bending, leading to increased average bending along the body. This demonstrates AS MN contribution to dorso-ventral coordination and suggests a role in navigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are well-supported by locomotion tracking data in Figure 2A showing circular tracks and quantification of dorsal/ventral bending ratios. The dorsal bias is statistically significant and consistent across experiments. The navigation interpretation (C64) is appropriately speculative but reasonable given the observed phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "AS MNs lack opposing partner neurons and innervate dorsal muscles and inhibitory VD neurons asymmetrically. Calcium imaging in immobilized animals shows intrinsic alternating dorso-ventral muscle activity, and AS MN photostimulation causes asymmetric responses: increased Ca2+ in dorsal muscles and decreased Ca2+ in ventral muscles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 combine anatomical knowledge (C65-C66) with functional calcium imaging data (C67-C71) shown in Figure 2B. The asymmetric muscle responses upon AS MN stimulation directly reflect the anatomical asymmetry. The observation of intrinsic alternating activity in immobilized animals is interesting but the interpretation (C69) that it's evoked by the motor nervous system is inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Optogenetic ablation of AS MNs using PH-miniSOG results in animals that retain locomotion ability but show reduced speed, increased bending angles, and highly irregular distorted undulation waves. Calcium imaging shows that AS MN ablation reduces dorsal muscle activity compared to ventral muscle, demonstrating biased dorsal muscle drive by AS MNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 are well-supported by ablation experiments shown in Figure 3A with behavioral quantification and calcium imaging in muscles. The phenotype is robust and the calcium imaging provides mechanistic insight. However, the ablation method (PH-miniSOG) requires verification of complete ablation, which is mentioned but not quantitatively shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Chronic hyperpolarization of AS MNs using HisCl1 and histamine causes 75% reduction in locomotion speed, disturbed wave propagation, and elimination of dorsal muscle Ca2+ activity with increased ventral muscle activity. This demonstrates that AS MNs inhibit excitatory signaling to dorsal muscles and activate GABAergic VD neurons, leading to ventral muscle disinhibition when hyperpolarized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C85 are supported by experimental data in Figure 3B, but there's an important caveat acknowledged by the authors: the HisCl1 expression from punc-17 affects other cholinergic neurons outside the VNC, not just AS MNs. This confounds interpretation of the results. The mechanistic interpretation (C83-C84) is reasonable but the lack of cell-type specificity weakens confidence in attributing effects specifically to AS MNs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Acute hyperpolarization of AS MNs using ACR1 reduces crawling speed to ~35% of initial speed and causes partial transient body contraction. In unc-47 mutants lacking GABAergic transmission, relaxation occurs instead of contraction, supporting the hypothesis that AS MN hyperpolarization reduces VD MN excitation, causing ventral muscle disinhibition and contraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 are well-supported by experiments in Figure 4B-C. The use of ACR1 provides better temporal resolution than HisCl1, and the unc-47 mutant experiment (C91) provides strong mechanistic validation of the disinhibition hypothesis. The genetic control effectively tests the proposed circuit mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Segmental inhibition of anterior and midbody AS neurons using ACR1 hindered wave propagation to posterior body regions in about half of animals tested, with significantly greater reduction in posterior versus anterior body movement. This demonstrates AS MNs are required for antero-posterior wave propagation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 are supported by segmental inhibition experiments in Figure 4D-F. The spatial analysis of movement reduction along the body provides strong evidence for AS MN involvement in wave propagation. However, the effect occurring in only ~50% of animals and the variability suggest additional factors may be involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "AS MNs (AS6 and AS7) show oscillatory Ca2+ activity during locomotion that correlates with body bends. During forward locomotion, AS6 activity precedes AS7 by 1-2s and precedes maximal vulva bending by ~2s, while AS7 activity coincides with vulva bending. During reversal, correlations are weaker with smaller time lags. AS MN activity is correlated with both forward and backward locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C105 are well-supported by calcium imaging in freely moving animals shown in Figure 5. The cross-correlation analysis provides quantitative temporal relationships between AS MN activity and body bending. The observation that AS MNs are active during both forward and reverse locomotion is important for understanding their integration with PINs. Correlation coefficients are modest (~0.3-0.35) but statistically analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "AS MNs receive chemical synaptic input from both forward (AVB: 13 synapses, PVC: 2) and backward (AVA: 63, AVE: 7) PINs, with more input from AVA. Optogenetic stimulation of either AVA or AVB causes synchronous Ca2+ increases in AS MNs (AS3 and AS8), demonstrating excitatory signaling from both forward and backward PINs to AS MNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C118 combine anatomical connectivity data (C109-C111) with functional calcium imaging (C113-C118) shown in Figure 6A. The demonstration that both AVA and AVB stimulation increases AS MN activity is clear with appropriate ATR controls. The caveat about differential ChR2 expression levels (C118) appropriately tempers interpretation of amplitude differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "AS MNs express UNC-7 and INX-3 innexins, and AVA/AVB also express UNC-7. In unc-7 null mutants, AVB stimulation still causes AS MN depolarization similar to wild-type, but AVA stimulation does not significantly increase AS MN activity, suggesting gap junctions contribute particularly to AVA-AS MN signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C126 are supported by experiments in unc-7 mutants shown in Figure 6B. The differential effect of the unc-7 mutation on AVA versus AVB signaling to AS MNs provides evidence for gap junction involvement specifically in AVA-AS MN communication. The interpretation is appropriately cautious with speculative language in C126.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Photodepolarization of AS MNs causes Ca2+ transients in AVA (~18% \u0394R/R) but not in AVB, consistent with the larger number of gap junctions between AS MNs and AVA. In unc-7 mutants, the AVA Ca2+ signal is reduced to control levels, indicating UNC-7 electrical synapses mediate transmission from AS MNs to AVA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C131 are well-supported by reciprocal calcium imaging experiments in Figure 6C using cameleon indicator. The unc-7 mutant control provides strong evidence that the AS MN to AVA signaling is via gap junctions. The lack of effect on AVB is consistent with anatomical connectivity. This demonstrates bidirectional electrical coupling between AS MNs and AVA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "AS MNs are important for dorso-ventral coordination: depolarization activates dorsal muscles causing dorsal bias, while hyperpolarization eliminates dorsal muscle activity and causes ventral muscle contraction through disinhibition. AS MNs are active during both forward and reverse locomotion and may integrate forward/backward locomotion motifs, potentially acting as electrical sinks for PINs. Recent computational studies predicted these roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C142 represent a synthesis of the major experimental findings with interpretation and comparison to computational predictions (C139-C140). The experimental support is strong from multiple lines of evidence (optogenetic activation, inhibition, ablation, calcium imaging). The integration hypothesis (C142) is appropriately speculative but well-grounded in the data and anatomical connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C40",
+      "C47",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "AS MNs represent 1/6th of cholinergic motor neurons (11 of 75 VNC neurons, with 2 per functional segment) but have been missing from locomotor circuit models due to lack of physiological data and absence of AS MN-specific promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C40, C47, C132-C134 establish the knowledge gap and motivation for the study. These are well-supported by citations to anatomical studies and previous models. The numerical claims about AS MN representation are based on established connectome data. This provides important context for why the current study was needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C4",
+      "C41",
+      "C42",
+      "C43",
+      "C65",
+      "C66",
+      "C188",
+      "C189"
+    ],
+    "result": "AS MNs have unique asymmetric connectivity: they innervate only dorsal muscles (68/144 synapses, 47% of AS outputs) and ventral inhibitory VD neurons (66/144 synapses, 46% of AS outputs), without complementary partner neurons like other MN classes. They receive extensive chemical synaptic input from both forward and backward PINs and form gap junctions with these cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C41-C43, C65-C66, C188-C189 describe the anatomical basis for AS MN function based on the C. elegans connectome. These are well-established facts from previous anatomical studies (White et al., 1986; Varshney et al., 2011) that are correctly cited. The synapse counts provide quantitative support for the asymmetry claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C44",
+      "C45",
+      "C46",
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "AS MNs generate asymmetric muscle activation enabling navigation, contribute to dorso-ventral undulation coordination and anterio-posterior wave propagation, act through excitation of dorsal muscles and inhibitory VD neurons, show activity correlated with both forward and backward locomotion, functionally connect to PINs for both locomotion regimes, and potentially gate VNC circuits via gap junctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9, C44-C46, C184-C187 represent the main conclusions of the study, synthesizing results from multiple experimental approaches. These are well-supported by the collective evidence from optogenetic manipulation, ablation, calcium imaging, and genetic experiments. The gating hypothesis (C187) is appropriately marked as speculative ('potentially') but is grounded in the demonstrated gap junction connectivity and functional effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C10",
+      "C160",
+      "C161"
+    ],
+    "result": "Electrical feedback from AS MNs via gap junctions may affect only backward PINs (specifically AVA), potentially acting as an electrical sink to promote forward locomotion state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C160-C161 represent a speculative but data-supported interpretation. The demonstration that AS MN stimulation affects AVA but not AVB (Figure 6C) combined with the unc-7 mutant results provides strong evidence for selective electrical feedback to AVA. The functional interpretation about promoting forward locomotion is appropriately speculative but mechanistically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "Oscillatory muscle Ca2+ transients observed in immobilized animals may reflect rhythmic motor nervous system activity, but whether AS MNs are part of this activity is unknown. AS MN Ca2+ oscillations during locomotion are not necessarily indicative of pacemaker activity as they may result from proprioceptive feedback or other motor neurons, and were not observed in immobilized animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C175 represent appropriately cautious interpretation of the calcium imaging data regarding potential CPG function. The authors correctly note that correlation with movement does not prove pacemaker activity and acknowledge the limitation that oscillations were not observed in immobilized animals. This careful interpretation is scientifically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The introduction establishes that locomotion circuits share similar principles across species, CPGs generate rhythmic patterns, vertebrate circuits are complex with motor neuron pools and premotor interneurons, and C. elegans provides a tractable model with a reconstructed connectome. The C. elegans VNC contains motor neuron ensembles repeating 6 times along the body, with PINs that gate motor neuron activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C39 provide background knowledge establishing the context for the study. These are well-supported by appropriate citations to the literature and represent accurate summaries of established knowledge in the field. The claims about C. elegans anatomy and circuit organization are based on well-established connectome data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C183"
+    ],
+    "result": "The discussion places AS MN findings in comparative context, noting similar motor neuron feedback functions in zebrafish, Drosophila, and mice, asymmetric circuit motifs in vertebrate CPGs, and potential parallels to gating neurons in leech. The discussion also reviews CPG concepts, bistability in C. elegans neurons, and previous evidence for VNC rhythm generators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C183 in the discussion section appropriately contextualize the findings within the broader literature on locomotor circuits across species. The comparisons are well-supported by citations and the speculative elements are appropriately qualified. The discussion synthesizes the current findings with established concepts in the field.",
+    "result_type": "MINOR"
+  }
+]

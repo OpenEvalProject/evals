@@ -1,0 +1,421 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The study used high-quality iPSC lines from 10 humans and 7 chimpanzees. All lines were validated for normal karyotype, pluripotency markers, differentiation capacity, and processed in species-balanced batches to control for technical variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C39-C43 establish rigorous quality control of the iPSC lines used in the study. The validation includes karyotyping, embryoid body formation, gene expression profiling, immunocytochemistry, and batch-balanced experimental design, all supported by supplementary figures. This provides a solid foundation for the comparative analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C48",
+      "C49"
+    ],
+    "result": "The authors identified 4,036,865 orthologous TEs between humans and chimpanzees (80.2% of all annotated human TEs), of which 12% (436,049 instances) overlap H3K9me3 regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C48, C49 describe the orthologous TE identification pipeline and quantify overlap with H3K9me3 regions. The methodology is detailed in Materials and Methods and Figure 2, with robust bioinformatic validation. The numbers are internally consistent and the approach is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C50",
+      "C51"
+    ],
+    "result": "SVA and ERV/LTR families are marked most frequently by H3K9me3 among orthologous TEs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C50, C51 identify specific TE families enriched for H3K9me3. This is supported by statistical testing (p<0.001) shown in Figure 2C and is consistent with prior literature (Turelli et al., 2014; Karimi et al., 2011). The finding is replicated across multiple TE classification levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C82",
+      "C83"
+    ],
+    "result": "The majority of TEs show conserved silencing patterns between species: 88% of TEs do not overlap H3K9me3 regions, and of those that do, 82% are silenced to similar extents in both species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C82, C83 represent the central finding of the study. The quantification is based on DESeq2 analysis at FDR<0.01, with sensitivity analyses confirming robustness (Figure 1\u2014figure supplement 13-14, Tables 4-5). The use of adaptive shrinkage (ashr) provides additional validation that most inter-species differences are small (<2-fold).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C84",
+      "C85"
+    ],
+    "result": "At FDR<0.01, 11% of H3K9me3 regions (16,288 regions) are differentially enriched between species, comprising 53,201 TEs enriched in human and 28,110 in chimpanzee. This proportion is robust to filtering choices and analytical approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C47, C84, C85 quantify inter-species differences in H3K9me3 enrichment. The statistical framework (DESeq2, FDR<0.01) is appropriate, and robustness is demonstrated through sensitivity analyses (Figure 1\u2014figure supplement 13, Tables 4-5). The numbers are substantial but represent a minority of all TEs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Non-orthologous and species-specific TEs show reduced H3K9me3 overlap compared to orthologous TEs, particularly for SVA and LINE families. This pattern is consistent with the evolutionary arms race hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 examine silencing patterns across TE orthology categories. Statistical support (p<0.001) is provided in Figure 3 and Figure 3\u2014figure supplement 1. The interpretation linking reduced silencing of recent TEs to evolutionary arms race is reasonable and supported by citations, though the mechanism is inferred rather than directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "TEs silenced in at least one species are longer than non-silenced TEs, and this relationship is not explained by length alone. Across TE families, there is a strong correlation (r=0.93) between TE length and H3K9me3 overlap, but within families, silenced and non-silenced TEs have similar median lengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 explore the relationship between TE length and silencing. Statistical testing (p<0.001) and control analyses (artificially lengthening TEs) support the conclusion that length correlates with silencing at the family level but not within families. The correlation analyses are well-documented in Figure 5 and supplements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "TEs silenced similarly in both species are less diverged from consensus sequences than non-silenced TEs. TEs with larger inter-species silencing differences are more diverged from consensus sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C72 relate TE sequence divergence to silencing patterns. Statistical support (p<0.001) is shown in Figure 5C-D. The analysis uses RepeatMasker divergence scores, a standard metric. The findings suggest that more conserved (younger) TEs are more likely to be silenced, consistent with evolutionary expectations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "TEs silenced in both species are located further from transcription start sites (TSSs) than TEs preferentially silenced in one species. TEs with greater silencing divergence are closer to TSSs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C53 examine the relationship between TE-TSS distance and silencing patterns. Statistical support (p<0.001) is provided in Figure 5E-F. This finding is important as it suggests species-specific silenced TEs may have greater regulatory potential, though the functional consequence is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Gene expression levels decrease when nearby TEs overlap H3K9me3 regions. However, there is no significant difference in expression divergence between genes associated with species-specific versus shared TE silencing in 10, 20, or 40 kb windows. A weak negative association exists only within 1 kb of the TSS, but this is not TE-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 examine the relationship between TE silencing and gene expression. The within-species effect (C54) is expected and validated (p<0.01, Figure 6B). The lack of association between silencing divergence and expression divergence (C56) is the key negative result, supported by extensive analyses across multiple window sizes and statistical thresholds (Figure 6C, Figure 6\u2014figure supplements 3-5). The 1 kb TSS effect (C57-C58) is appropriately qualified as not TE-specific.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Genes differentially expressed between species are not more likely to be associated with inter-species differences in H3K9me3 at TEs. The correlation between expression divergence and H3K9me3 enrichment is weak (r=-0.0005 in 10 kb windows, r=-0.14 in 1 kb windows). Nearly equal numbers of genes show consistent versus inconsistent patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C60, C98-C100 provide multiple lines of evidence for the lack of association between TE silencing and expression divergence. The analyses include categorical comparisons (Figure 6D), correlation analyses (Figure 6\u2014figure supplement 3), and robustness checks across statistical thresholds (Figure 6\u2014figure supplement 5B, Table 9). The weak correlations and balanced directional effects strongly support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "Expression divergence is associated with silencing of TEs overlapping promoter-associated marks (H3K4me3) but not enhancer marks (H3K4me1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 distinguishes between promoter and enhancer effects. Statistical support is shown in Figure 6F and Figure 6\u2014figure supplement 6. This finding is consistent with the 1 kb TSS effect and suggests that TE silencing effects are limited to promoter-proximal regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Analysis of expressed poly-adenylated TEs identified 11 types in chimpanzee and 7 in human, including HERVH in both species. Only 1,025 expressed TE instances are orthologous, with 123 overlapping H3K9me3 regions and only 14-22 showing species-specific enrichment. These TEs are proximal to only 19 genes, suggesting expressed TEs are not a major mechanism of expression divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C109 examine actively expressed TEs. The RNA-seq analysis identifies expressed TE types, and the small numbers of instances associated with genes (19 genes) support the conclusion that this is not a major mechanism. The analysis is appropriately qualified by noting the limitation to poly-adenylated transcripts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Analysis of non-orthologous TEs shows no association between TE silencing and expression divergence except in 1 kb windows upstream of the TSS (289 genes). TE silencing by H3K9me3, regardless of orthology, has only a modest effect on gene expression divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 extend the analysis to non-orthologous TEs. The results (Figure 6\u2014figure supplement 7) are consistent with the orthologous TE analysis, strengthening the overall conclusion. The 1 kb TSS effect is replicated, and the modest overall effect is appropriately characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Of 256 curated KRAB-ZNF genes, 41% overlap H3K9me3 regions, with 78% showing similar enrichment in both species. KRAB-ZNF genes are no more likely to be differentially expressed than all genes (52% vs 49% at FDR<1%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 examine KRAB-ZNF genes, the mediators of TE silencing. The analysis (Figure 6\u2014figure supplement 8-9) shows that KRAB-ZNF silencing patterns mirror those of TEs, and their expression divergence is not exceptional. This supports the overall conclusion of conserved silencing mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "TEs preferentially silenced by H3K9me3 in chimpanzee are not more often associated with increased H3K27me3 compared to TEs silenced in human, suggesting H3K27me3 and H3K9me3 are not redundant in silencing TEs across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117, C118 address potential redundancy in silencing mechanisms. The analysis (Figure 6\u2014figure supplement 10) uses published H3K27me3 data and shows no compensatory relationship. This strengthens the conclusion that the observed conservation of H3K9me3 silencing is not due to alternative silencing mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C38",
+      "C66",
+      "C67"
+    ],
+    "result": "The study concludes that TEs preferentially silenced in one species are similar in age to those silenced in both species, are not more likely to be associated with expression divergence of nearby genes, and have not substantially rewired pluripotent stem cell gene regulatory networks between humans and chimpanzees. This suggests limited species-specificity of TE silencing across 6 million years of primate evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C38, C66-C67 represent the main conclusions of the study. These are well-supported by the comprehensive analyses of TE age (sequence divergence), proximity to genes, association with expression divergence, and overall conservation of silencing patterns. The conclusion is appropriately qualified to the iPSC system and H3K9me3-mediated silencing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C86",
+      "C87"
+    ],
+    "result": "HERVH elements are expressed and depleted for H3K9me3 in both human and chimpanzee iPSCs, suggesting they are essential for the pluripotency network in both species. Less than 20% of HERVH elements overlap H3K9me3, compared to 80% of THE1B elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63, C86-C87 characterize HERVH elements. The expression data (RNA-seq) and H3K9me3 depletion are consistent with known HERVH function in pluripotency. The inference that HERVH is essential (C63) is reasonable but not directly tested functionally. The comparison to THE1B provides useful context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C123"
+    ],
+    "result": "H3K9me3 ChIP-seq data cluster by species, with inter-species variation (Spearman's r=0.80) somewhat greater than intra-species variation (r=0.90 human, r=0.89 chimpanzee). One human outlier was removed from analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C45, C123 describe data quality and clustering. The correlation analyses (Figure 1\u2014figure supplements 9-11) support the expected species clustering and justify the removal of one outlier. The modest difference between inter- and intra-species variation is consistent with the overall finding of conserved silencing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "TEs preferentially silenced in human overlap annotated regulatory regions and active chromatin marks less frequently than TEs preferentially silenced in chimpanzee, except for the promoter mark H3K4me3 where there is no difference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 examine overlap with functional genomic annotations. Statistical support (p<0.001 or p<0.01) is provided in Figure 5G and Figure 5\u2014figure supplement 5-6. The asymmetry between species is interesting but the functional significance is unclear. The lack of H3K4me3 difference is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors infer that longer TEs may be silenced more often because they are more likely to have unwanted regulatory potential and contain sequences that recruit silencing machinery, consistent with findings that more KRAB-ZNF proteins bind longer TEs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 provide a mechanistic interpretation of the length-silencing relationship. The inference is reasonable and supported by citation to Imbeault et al., 2017 showing KRAB-ZNF binding to longer TEs. However, this is an inference rather than a direct demonstration in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "There is only a weak correlation (r=-0.47, p=0.15) between TE copy number and H3K9me3 overlap. The two smallest TE families (SVA and ERVK) overlap H3K9me3 most often, contrary to the general trend.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94, C95 examine the relationship between copy number and silencing. The weak, non-significant correlation (Figure 5\u2014figure supplement 2) and the exception for SVA/ERVK suggest that copy number is not a major determinant of silencing. This is an important negative result that rules out a simple explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "RNA-seq data cluster primarily by species after filtering lowly expressed genes, with secondary clustering by population (Caucasian or Yoruba).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96, C97 describe RNA-seq data quality. PCA and correlation analyses (Figure 6\u2014figure supplement 1B-C) support the expected species clustering. The population effect is noted but does not confound the species comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "H3K9me3 ChIP-seq reads are enriched at ZNF genes in both species, consistent with previous reports. Approximately 10% of ChIP-seq data were excluded because peaks mapped outside orthologous regions. The analysis included 160,113 orthologous ChIP-seq regions, filtered to 150,390 regions with sufficient read counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 describe data processing and quality control. The ZNF enrichment (Figure 1\u2014figure supplement 5) validates the ChIP-seq data. The filtering steps are well-documented and appropriate for comparative analysis. The numbers are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C1",
+      "C11"
+    ],
+    "result": "Transposable elements comprise almost half to over half of primate genomes according to RepeatMasker annotations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11 state well-established facts about TE content in primate genomes, supported by citations (Jurka, 2000; de Koning et al., 2011). The slight discrepancy between 'almost half' and 'over half' reflects different annotation methods but both are accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C37"
+    ],
+    "result": "The study is based on established knowledge of TE biology and silencing mechanisms: aberrant TE regulation can be deleterious, KRAB-ZNFs target TEs for H3K9me3-mediated silencing in pluripotent cells, followed by DNA methylation in somatic cells. TEs can evade detection through mutations, leading to rapid evolution of host repressor mechanisms. H3K9me3 is the predominant output of KRAB-ZNF silencing in pluripotent cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C24-C31, C37 establish the biological context for the study. All are well-supported by multiple citations to established literature. These provide the rationale for studying H3K9me3 in iPSCs as a model for TE silencing evolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C64",
+      "C65"
+    ],
+    "result": "The introduction establishes prior knowledge about TE evolution, activity, and regulatory potential in primates, including the observation that human-specific TEs become aberrantly activated in mouse cells, suggesting rapid evolution of TE silencing mechanisms. iPSCs provide a model system for studying TE regulation in pluripotent cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C23, C32-C36, C64-C65 provide background and rationale for the study. All are supported by appropriate citations. The speculation about rapid evolution of TE silencing (C22-C23) is appropriately qualified and provides motivation for the comparative study. The iPSC model (C32, C36) is well-justified.",
+    "result_type": "MINOR"
+  }
+]

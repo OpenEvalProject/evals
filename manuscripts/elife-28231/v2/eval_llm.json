@@ -1,0 +1,373 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Deletion of BRE1 or LGE1 results in increased chromosome fragment loss rates (0.78% and 0.85% respectively), which are 5.7- and 6.3-fold higher than wildtype cells (0.13%), demonstrating a role in chromosome transmission fidelity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 provide quantitative data from the chromosome fragment loss assay (Figure 1A) showing statistically significant increases in chromosome instability in bre1\u0394 and lge1\u0394 mutants. The experimental design includes appropriate controls and sufficient sample sizes (at least 2000 cells scored), with statistical analysis showing p<0.01.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C67",
+      "C68",
+      "C69",
+      "C71",
+      "C72"
+    ],
+    "result": "Bre1 and Lge1 are required for sister chromatid cohesion, as bre1\u0394 and lge1\u0394 mutants show ~20% of G2/M cells with premature sister chromatid separation (compared to 3.5% in WT) and ~9% chromosome missegregation after cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 provide quantitative data from the GFP-LacI/LacO cohesion assay (Figure 1D-E) showing significant cohesion defects in both mutants. The experimental approach is well-controlled with appropriate cell cycle staging by FACS analysis. However, C72 appropriately acknowledges that other cellular functions of Bre1 could contribute to chromosome stability, indicating the authors recognize alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C73",
+      "C74",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Bre1 functions in G1 and S phases to establish sister chromatid cohesion but is not required for cohesion maintenance in G2/M phase, as demonstrated by auxin-inducible degron experiments showing that Bre1 degradation in G1 or G1+S phases causes cohesion defects (~20.7% and 17.1% respectively), while degradation in G2/M phase alone does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C84 provide detailed time-course data (Figure 2D, 2G) showing efficient Bre1 degradation (>90%) at specific cell cycle stages and the resulting cohesion phenotypes. The experimental design is rigorous with multiple controls and FACS confirmation of cell cycle stages. The conclusion in C85 is well-supported by the data, though the interpretation that residual Bre1 in early S phase may explain partial effects (C82-C83) is speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C93",
+      "C94"
+    ],
+    "result": "Bre1 is dispensable for cohesin loading onto chromatin in G1, as cohesin subunits Scc1 and Smc3 associate with chromatin normally in bre1\u0394 cells during S and G2/M phases, and their enrichment at early replication origins is unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 and C93 provide chromatin spread and ChIP-qPCR data (Figure 3\u2014figure supplement 1) showing that cohesin components associate with chromatin and localize to origins independently of Bre1. The data include appropriate controls (protein and mRNA levels) and are consistent with prior work (C88, C94). However, C95 notes that co-IP failed to detect Bre1-Smc3 interaction, which is consistent with an indirect relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Bre1 facilitates the recruitment of cohesion establishment factors Ctf4, Ctf18, and Eco1 to chromatin and specifically to early replication origins in S phase (and Eco1 also in G1), as shown by reduced chromatin association and origin occupancy in bre1\u0394 cells, without affecting their protein or mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C108 provide comprehensive chromatin spread and ChIP-qPCR data (Figure 3A-H) showing reduced association of cohesion factors with chromatin and early origins in bre1\u0394. The data include appropriate controls showing that protein and mRNA levels are unchanged (C108), supporting a recruitment defect rather than expression changes. The specificity for early origins (C107) and the partial nature of the defect (C109, C110) are appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C40",
+      "C41"
+    ],
+    "result": "Bre1 promotes Smc3 acetylation for cohesion stabilization, as bre1\u0394 cells show significantly reduced Smc3 acetylation levels compared to wildtype, consistent with the known role of Smc3 acetylation by Eco1 in stabilizing cohesin on chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 is supported by western blot data in Figure 3I showing reduced Smc3 acetylation in bre1\u0394 while total Smc3 levels remain unchanged. This is mechanistically consistent with the reduced Eco1 recruitment shown in other claims (C100, C104-C106) and with established knowledge about Smc3 acetylation's role in cohesion (C40-C41).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C131"
+    ],
+    "result": "Bre1 regulates the localization of replication factor Mcm10 to chromatin and early replication origins in G1 and S phases, as shown by reduced chromatin association and origin occupancy in bre1\u0394 cells, with Bre1 showing weak physical interaction with Mcm10 but not affecting Mcm10 ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C128 provide chromatin spread and ChIP-qPCR data (Figure 4A-G) showing reduced Mcm10 association with chromatin and early origins in bre1\u0394 during G1 and S phases but not G2/M. The data include appropriate controls (C124) and show specificity for early origins (C128). The weak Bre1-Mcm10 interaction (C129) and lack of effect on Mcm10 ubiquitination (C130) suggest an indirect mechanism, which is appropriately acknowledged in C131.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C152"
+    ],
+    "result": "Bre1's role in sister chromatid cohesion requires its catalytic RING domain and H2B monoubiquitination activity, as rad6\u0394, bre1-RING\u0394, and htb1-K123R htb2\u0394 mutants show cohesion defects comparable to bre1\u0394 (~18-20%), while the bre1\u0394 lge1\u0394 double mutant shows no additive effect, indicating they function in the same pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C137 and C143 provide quantitative cohesion data (Figure 5B) showing that mutations affecting H2Bub1 catalytic activity phenocopy bre1\u0394. The lack of additivity in the bre1\u0394 lge1\u0394 double mutant (C143-C144) supports epistasis. Claims C146-C147 show that these mutants also reduce recruitment of Ctf4 and Mcm10 to origins (Figure 5D-G), providing mechanistic consistency. However, C150-C152 note that bre1-RING\u0394 has reduced Bre1 protein levels, complicating interpretation, though htb1-K123R htb2\u0394 has normal Bre1 levels yet still shows defects, supporting the conclusion that H2Bub1 activity is required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C154",
+      "C155",
+      "C157",
+      "C160",
+      "C161"
+    ],
+    "result": "H2Bub1 acts as an epigenetic mark at replication origins to signal recruitment of replication factors (Mcm10, Psf2, Pol\u03b1) and cohesion establishment factors (Ctf4, Ctf18, Eco1), thereby coupling DNA replication with cohesion establishment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11, C155, and C157 present a mechanistic model that integrates the experimental findings, but these are explicitly speculative interpretations (C11 is marked as SPECULATION). While the model is consistent with the data showing that Bre1/H2Bub1 affects recruitment of both replication and cohesion factors, direct evidence that H2Bub1 acts as an epigenetic signal is limited. The model is supported by prior work showing H2Bub1 localization at origins (C154) and the coupling of replication and cohesion (C161), but the specific signaling mechanism remains to be demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "BRE1 and LGE1 epistatically interact with CTF4 and CTF18 and may function upstream in cohesion establishment, as double mutants (ctf18\u0394 bre1\u0394, ctf4\u0394 lge1\u0394, ctf4\u0394 bre1\u0394) show cohesion defects no more severe than the more severe single mutant, and wpl1\u0394 only partially rescues bre1\u0394 cohesion defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C174 provide genetic interaction data (Figure 3J) showing lack of additivity in double mutants, supporting epistasis. Claims C166-C169 show that wpl1\u0394 partially rescues bre1\u0394 at early time points but not at 90 min, suggesting Bre1's function extends beyond simply stabilizing cohesin on chromatin. The genetic data support the conclusion that Bre1 functions upstream of Ctf4 and Ctf18, consistent with the recruitment data showing reduced Ctf4 and Ctf18 localization in bre1\u0394.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Background on Bre1/Lge1 complex and H2Bub1 functions: Bre1 is a conserved E3 ubiquitin ligase that, with Lge1 and Rad6, mediates H2B monoubiquitination, which regulates diverse cellular processes including transcription, DNA replication, DNA damage response, and has been implicated in chromosomal instability and tumor suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C30 summarize established knowledge from prior literature, as indicated by the extensive citations. These provide appropriate context for the current study. C27-C29 specifically note that while bre1\u0394 and lge1\u0394 show chromosomal instability phenotypes, the underlying cause of numerical CIN was unclear, establishing the knowledge gap addressed by this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Background on sister chromatid cohesion: Cohesion is mediated by the cohesin complex (Smc1, Smc3, Scc1, Scc3), which is loaded in G1 by Scc2-Scc4, established in S phase by Eco1-mediated Smc3 acetylation, and destroyed at anaphase by separase-mediated Scc1 cleavage, with additional contributions from non-essential factors Ctf4 and Ctf18.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C45 summarize well-established knowledge about the cohesion cycle, supported by extensive citations to prior literature. This provides essential background for understanding the experimental findings and interpreting the role of Bre1 in cohesion establishment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Background on coupling of replication and cohesion: Multiple replication proteins (including PCNA, Pol \u03b1, Pol \u03b5, RPC components, and Mcm10) play roles in cohesion establishment, and cohesion factors localize to replication forks. Prior work showed H2Bub1 is required for replisome component association with origins in S phase but not for pre-RC assembly in G1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C62 summarize prior literature on the coupling of replication and cohesion, with extensive citations. C61-C62 specifically cite prior work (Trujillo and Osley, 2012) showing H2Bub1's role in replisome stability, which provides direct context for the current study's investigation of Bre1's role in recruiting both replication and cohesion factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The AID*-9Myc-tagged Bre1 and OsTIR1 expression system does not affect growth or cohesion function but mildly affects G1-S transition cyclin gene expression and HU sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 provide validation data (Figure 2A-B, Figure 2\u2014figure supplement 1A-B) showing that the degron system itself does not cause cohesion defects in the absence of auxin, which is essential for interpreting the conditional degradation experiments. The mild effects on cyclin expression and HU sensitivity are appropriately noted as potential limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Background on H2Bub1 and replication factors: Prior work showed that Bre1-mediated H2Bub1 is required for association of replisome proteins (Pol\u03b1, Pol\u03b5, RPA) and RPC components (Psf2, Spt16) with early origins and for stable fork progression, with Psf2 required for Ctf4 localization and Ctf4 required for Pol\u03b1 localization, while H2Bub1 is dispensable for ORC component Orc2 loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C118 cite prior literature establishing the hierarchical relationships among replication factors and H2Bub1's role in their recruitment. This provides the rationale for investigating Mcm10 as an upstream factor that might be regulated by Bre1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C130",
+      "C149",
+      "C150",
+      "C151",
+      "C153"
+    ],
+    "result": "Bre1 is dispensable for Mcm10 diubiquitination, Bre1 protein stability is affected by its RING domain but not by H2BK123 ubiquitination status, and bre1\u0394 does not affect Ctf4-Mcm10 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130, C150-C151, and C153 provide negative results and controls (Figure 4\u2014figure supplement 1H, Figure 5\u2014figure supplement 2A-B, Figure 5H) that help define the mechanism by which Bre1 functions. These data indicate that Bre1 does not directly modify Mcm10 or affect protein-protein interactions, supporting an indirect recruitment mechanism through H2Bub1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C142"
+    ],
+    "result": "Control experiments show that htb2\u0394 has a modest cohesion defect (10.0%), Flag-HTB1 shows low-level defects comparable to WT (7.3% vs 5.9%), and deletion of another Bre1 substrate swd2\u0394 shows only WT-level cohesion defects (5.6%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C140 and C142 provide important controls (Figure 5B) showing that the cohesion defect is specific to loss of H2Bub1 function rather than general effects of histone gene deletion or Bre1 activity on other substrates. These controls strengthen the conclusion that H2Bub1 is the relevant substrate for cohesion function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C156",
+      "C158",
+      "C159",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Discussion points: Mcm10, Psf2, and Pol\u03b1 each interact with Ctf4; PCNA association at origins is unaffected by loss of H2Bub1, possibly due to Ctf18-independent pathways; additional factors likely contribute to recruitment given that Bre1 is non-essential; H2Bub1 functions in nucleosome reassembly and DSB repair; and human RNF20/RNF40 are mutated in cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C165 provide discussion points that contextualize the findings. C156 cites prior work on protein interactions; C158-C159 address an apparent discrepancy with prior work and offer speculative explanations; C162 appropriately notes that redundant pathways likely exist given Bre1 is non-essential; C163-C165 cite prior work on other H2Bub1 functions and cancer relevance. These are appropriate interpretations and connections to the broader literature.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "INM targeting is GTP-dependent. GTP\u03b3S severely compromises NE enrichment of LBR and SUN2 reporters, while GTP alone can fully reconstitute targeting. ATP alone does not support NE accumulation, suggesting a GTPase in the ER or nucleus is required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 provide direct experimental evidence from in vitro reconstitution assays (Figure 1B-C) showing GTP\u03b3S blocks INM targeting while GTP supports it and ATP does not. Claim C33 provides a mechanistic interpretation consistent with the data. The experiments include appropriate controls and quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "GTP\u03b3S reduces diffusional mobility of both membrane and soluble ER proteins. FRAP experiments show GTP\u03b3S drastically reduces mobility of INM reporters and ER-resident proteins, while ATP\u03b3S has no effect. FLIP experiments show GTP\u03b3S impairs long-range diffusion of lumenal proteins, suggesting GTP\u03b3S alters ER organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 present FRAP and FLIP data (Figures 2B-D) with quantification showing specific effects of GTP\u03b3S but not ATP\u03b3S on protein mobility. Multiple protein types (membrane and soluble) show consistent effects. Claim C40 provides a reasonable inference from the collective data. Controls and replicates are included.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "GTP hydrolysis is continuously required to maintain ER membrane protein mobility. When GTP\u03b3S is added after a 30-minute recovery period, the mobile fraction of the LBR reporter rapidly drops, indicating GTP hydrolysis is not just needed for repair but for ongoing maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 provides experimental evidence from recovery experiments (Figure 3B) showing rapid loss of mobility upon GTP\u03b3S addition even after recovery. Claim C42 draws an appropriate conclusion from this temporal experiment. The experimental design effectively distinguishes repair from maintenance functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "GTP\u03b3S injection into living cells severely compromises ER network dynamics. The peripheral ER polygon structure disappears within minutes, and successful membrane attachment events decrease from >80% to <50%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 present live cell imaging data (Figure 3C-F, Videos 1-2) with quantification of ER dynamics. The experiments show clear morphological changes and reduced fusion events. Multiple cells were analyzed with statistical significance reported. The live cell data complements the in vitro findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "ATL2 depletion impairs INM targeting and ER morphology, while ATL3 depletion alone has no effect in HeLa cells. ATL2 depletion causes long unbranched tubules, reduces INM targeting of LBR and SUN2, and decreases ER mobility. Co-depletion of ATL2 and ATL3 causes more severe defects than ATL2 alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C57 present comprehensive RNAi and knockout experiments (Figure 4) with imaging, Western blots, and FRAP data. Multiple siRNAs were tested for ATL3 (C50), and ATL3 KO cells were generated (C52-C53). The differential effects of ATL2 vs ATL3 are well-documented with appropriate controls and quantification. The additive effect of double depletion (C52, C57) is clearly shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Dominant-negative Atlastin fragments (cytATL2) acutely inhibit ER dynamics and INM targeting. Overexpression of cytATL2-RFP causes long unbranched tubules, reduces ER dynamics, decreases successful membrane attachments from 81% to 47%, and impairs INM targeting. Dimerization-deficient mutants have no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 present overexpression experiments with dominant-negative constructs (Figure 5A-C, Videos 3-5). The use of dimerization-deficient mutants as negative controls (C62) strengthens the conclusions. Both ER morphology and INM targeting are affected. Quantification of dynamics and targeting efficiency is provided with statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Rab GTPases are not involved in INM targeting in the semi-permeabilized cell system. RabGDI efficiently extracts Rab7 and Rab11 from membranes but does not affect LBR targeting, and combining RabGDI with cytATL2 does not further reduce targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 show RabGDI extraction experiments (Figure 5\u2014figure supplement 1) demonstrating Rabs can be removed without affecting INM targeting. Claim C65 shows no additive effect with cytATL2. Claim C66 provides an appropriate conclusion. The experiments effectively rule out Rab involvement in this system, though the caveat that not all Rabs may be equally depleted is noted in the text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Dominant-negative Atlastin (cytATL2-RFP) delays INM targeting kinetics in living cells. Using the RUSH system, LBR and LAP2\u03b2 accumulation at the NE is delayed in cells overexpressing cytATL2-RFP (t1/2 increases from ~12 to ~25 min for LBR), while dimerization-deficient mutants or RFP alone have no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 present live cell RUSH experiments (Figure 6B-C) showing kinetic delays with appropriate controls. The use of dimerization-deficient mutants (C70) and RFP alone as negative controls strengthens the conclusions. Time-lapse imaging with quantification is provided. The results validate in vitro findings in living cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C73",
+      "C75",
+      "C76"
+    ],
+    "result": "Co-depletion of ATL2 and ATL3 causes NPC biogenesis defects. Nucleoporins are mislocalized to annulate lamellae and reduced at the NE. In synchronized cells 12 hr after thymidine release, INM proteins accumulate in the ER upon Atlastin co-depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C75-C76 present immunofluorescence data (Figure 6D) showing nucleoporin mislocalization with co-depletion. Claim C73 shows INM protein accumulation in synchronized cells (Figure 6\u2014figure supplement 2B). The synchronization approach effectively enriches for cells undergoing post-mitotic NE assembly. The connection to NPC biogenesis is supported by prior literature (C74).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Atlastin depletion delays ER-to-Golgi trafficking of VSVG. Using the RUSH system, VSVG enrichment at the Golgi is delayed in ATL2-depleted and ATL2/ATL3 co-depleted cells, correlating with delayed arrival at ER exit sites. Only a kinetic delay is observed, not a complete block.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 present RUSH experiments for VSVG trafficking (Figure 7B, Figure 7\u2014figure supplement 1) with time-lapse imaging and quantification. The differential effects of ATL2 vs ATL3 depletion are shown. Claim C83 appropriately notes this is a delay rather than a block, reconciling with prior studies. The experiments demonstrate ER topology affects secretory trafficking beyond INM targeting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C88",
+      "C89"
+    ],
+    "result": "Atlastins sustain efficient INM targeting by maintaining ER topology through continuous GTP hydrolysis. When ER topology is altered, long-range diffusional exchange and INM targeting efficiency are diminished. The GTP requirement for INM targeting arises from the need to maintain ER network topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims synthesize the major findings of the study. Claims C3-C5 state the main conclusions, while C88-C89 provide mechanistic interpretation. The claims are well-supported by the collective experimental evidence from GTP\u03b3S experiments, Atlastin depletion/inhibition, FRAP/FLIP analyses, and live cell imaging. The logical connection between GTP hydrolysis, Atlastin function, ER topology, and INM targeting is established through multiple complementary approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C100"
+    ],
+    "result": "Atlastins influence NPC biogenesis and timely exit of secretory cargo from the ER. The interconnected ER topology maintained by Atlastins is important for both processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 state findings shown in the study regarding NPC biogenesis (supported by C71, C75-C76) and VSVG trafficking (supported by C77-C83). Claim C100 provides interpretation supported by the VSVG data. These results demonstrate the broader importance of ER topology beyond INM targeting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Steady-state levels of INM proteins at the NE are unaffected by Atlastin depletion in most unsynchronized interphase cells, likely because newly synthesized INM proteins represent only a minor fraction of the total pool at any given time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is supported by immunofluorescence data (Figure 6\u2014figure supplement 2A) and provides a reasonable explanation for why kinetic defects don't translate to steady-state changes in asynchronous populations. This is an important control showing the effects are kinetic rather than absolute.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C95"
+    ],
+    "result": "The differential effects of ATL2 vs ATL3 may reflect differences in fusogenic activity, abundance, or localization. ATL2 may be more potent or abundant than ATL3 in HeLa cells, and ATL3 function may become critical in ATL2's absence. ATL3 may more specifically affect ER domains relevant for ER exit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C91, C93, and C95 are explicitly speculative interpretations of the differential ATL2/ATL3 effects. While the speculation is reasonable and supported by citations to prior work (C90, C93, C94), these remain hypotheses rather than demonstrated findings. The data show differential effects but don't definitively establish the mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background on ER structure, INM targeting mechanisms, and prior findings. The ER is a continuous membrane system with distinct domains. INM proteins must pass through NPCs. Previous work showed energy-dependent INM targeting and that NTP depletion affects targeting efficiency and ER topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide established background knowledge and prior findings from the literature (C8-C26) and the authors' previous work (C27-C29). They are well-supported by citations and provide necessary context for the current study. These are not new findings but accurate representations of prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Background on GTP-dependent processes. Nuclear import of soluble cargo depends on RanGTP, but INM targeting of SUN2 and LBR is independent of the Ran system. Prior work showed ER network formation requires GTP and that reconstituted ER networks disassemble with GTP\u03b3S.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide relevant background from prior literature (C84, C86-C87) and the authors' previous work (C85). They are accurately cited and provide important context for distinguishing the GTP-dependence of INM targeting from other GTP-dependent processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "ATL2 and ATL3 are expressed in HeLa cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by citation to prior literature and is confirmed by Western blots in the current study (Figure 4B). This is a straightforward characterization of the cell system used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C96",
+      "C97",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Background on NPC biogenesis, ER continuity, nuclear reformation, and neuronal ER. NPC biogenesis depends on INM protein targeting. ER continuity is maintained by membrane fusion. Atlastin function is important for nuclear reformation. Neurons have complex ER topology and may be vulnerable to ER shaping protein mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide relevant background from prior literature that contextualizes the findings. They are accurately cited and provide important biological context for understanding the significance of the results, particularly regarding NPC biogenesis (C74, C105) and neuronal vulnerability (C106-C107).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C108",
+      "C109"
+    ],
+    "result": "Conclusions about the importance of ER continuity. ER continuity aids timely delivery of proteins to the INM and supports nuclear growth. Changes in ER topology influence membrane protein trafficking even in small cells, and such perturbations may be enhanced in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98 and C108 are conclusions supported by the experimental data. Claim C99 is a reasonable inference from the findings. Claim C109 is speculation but is reasonable given the demonstrated effects in non-neuronal cells and the known complexity of neuronal ER.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Prior work showed efficient INM targeting depends on nucleotide hydrolysis using a visual in vitro assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 accurately describes prior work by the authors (Ungricht et al., 2015) that established the foundation for the current study. This is appropriately cited background.",
+    "result_type": "MINOR"
+  }
+]

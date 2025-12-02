@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C29",
+      "C34",
+      "C35",
+      "C36",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C114",
+      "C120"
+    ],
+    "result": "Co-expression of BK channels with CaV1.3 channels shifts BK channel activation to more negative voltages (~\u221250 mV) compared to co-expression with CaV2.2 channels, demonstrating that BK channel activation voltage depends on the co-expressed CaV isoform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C34-C36, and C40-C44 provide converging electrophysiological evidence from whole-cell recordings showing that BK channels activate ~30 mV more negatively when co-expressed with CaV1.3 versus CaV2.2 channels. The data include G-V curves (Figure 1B, E), cadmium sensitivity experiments confirming calcium dependence (C34, C38, C39), and quantitative threshold measurements (C41-C44). The experimental design appropriately uses tsA-201 cells that lack endogenous BK and CaV channels (C32, C33), providing a clean heterologous system. Statistical comparisons and sample sizes are provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "BK channel activation kinetics are faster when co-expressed with CaV1.3 (8 \u00b1 2 ms) than with CaV2.2 (18 \u00b1 5 ms), mirroring the faster activation kinetics of CaV1.3 versus CaV2.2 channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 present time constant measurements at 0 mV showing that BK activation kinetics track with the kinetics of the co-expressed CaV channel. The data are supported by Figure 1\u2014figure supplement 2 with appropriate sample sizes (n=7-9). This result complements the voltage-dependence findings and is consistent with cited prior work (C45).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Single-channel recordings from membrane patches show that BK channels are functionally coupled to CaV1.3 channels, as evidenced by multi-level outward currents that are reduced by nifedipine and abolished by paxilline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 describe cell-attached patch recordings demonstrating functional coupling between BK and CaV1.3 channels. The NPo measurements (C50: 3.7 \u00b1 0.7) and pharmacological manipulations with nifedipine (C51: reduced to 0.8 \u00b1 0.4, p=0.002) and paxilline (C53: reduced to 0.2 \u00b1 0.1, p=0.0004) provide strong evidence for functional coupling. The experimental design appropriately isolates channels within the patch while preventing activation of channels outside the patch using EGTA in the bath.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "BK and CaV1.3 channels physically interact as demonstrated by co-immunoprecipitation in both brain extracts and heterologous expression systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 present biochemical evidence for physical interaction between BK and CaV1.3 channels. The co-IP from brain extracts (C54) is supported by prior literature citation, while the reconstitution in tsA-201 cells (C56, n=3) demonstrates that the interaction does not require brain-specific proteins (C58). Figure 2C shows the Western blot data. However, co-IP experiments have limitations in distinguishing direct from indirect interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Calcium buffer experiments with BAPTA and EGTA demonstrate that BK and CaV1.3 channels are organized within <100 nm proximity, with some channels closer than 10 nm, while BK and CaV2.2 channels are distributed farther than 100 nm apart.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65 describe calcium buffer dialysis experiments that constrain the spatial proximity of channel pairs. The theoretical predictions (C59, C60) are based on cited equations (Prakriya and Lingle, 2000). The experimental data (C61, C63) show differential effects of BAPTA versus EGTA on BK currents coupled to CaV1.3 versus CaV2.2, supporting the proximity claims. The inference that some BK channels lie closer than 10 nm to CaV1.3 (C62) is reasonable given incomplete BAPTA block. This approach provides functional evidence for nanoscale organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The super-resolution microscopy system achieves a resolution of 33 \u00b1 1 nm FWHM as validated by imaging microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 presents validation data for the super-resolution microscopy approach using microtubules as a standard. The measured FWHM agrees with prior literature (cited: Burnette et al., 2011) and is shown in Figure 4\u2014figure supplement 1. This validation is essential for interpreting the subsequent channel localization data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C124",
+      "C125"
+    ],
+    "result": "Super-resolution microscopy reveals that BK channels form clusters (median area 1600 nm\u00b2) that are surrounded by variable numbers of CaV1.3 channel clusters, with 82% of BK clusters having CaV1.3 clusters within 200 nm and a peak distance distribution at 20 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 describe the spatial organization of BK and CaV1.3 channels in tsA-201 cells using super-resolution microscopy. The data include cluster size measurements (C67), interpretation as multi-channel clusters based on size comparison to single channels (C68, C69), quantitative distance distributions (C72: peak at 20 nm, half-width 60 nm), and area occupancy analysis (C73, C74). Figure 4A-D provides the imaging data. The analysis is quantitative with appropriate sample sizes (n=5 cells). The lack of fixed stoichiometry (C70) is an important observation that challenges prior 1:1 models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Live-cell imaging confirms that BK channel puncta are surrounded by CaV1.3 channel puncta, ruling out fixation artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 addresses a potential concern about fixation artifacts by showing similar clustering patterns in live cells using AiryScan microscopy (Figure 4\u2014figure supplement 4). This control strengthens the super-resolution findings, though the resolution is lower than the fixed-cell super-resolution data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "CaV2.2 channels show much less spatial association with BK channels compared to CaV1.3 channels, with CaV2.2 clusters distributed more randomly around BK channels at distances centered around 100 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 provide comparative super-resolution data showing weaker spatial association between BK and CaV2.2 channels. The distance distribution (C78: centered at 100 nm) and random distribution pattern (C79) contrast with the CaV1.3 data. This result is consistent with the calcium buffer experiments (C63, C64) and provides structural correlate for the functional differences. Sample size is n=4 cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Randomization analysis demonstrates that the preferential proximity of CaV1.3 to BK channels is not simply due to higher CaV1.3 expression levels, as randomized CaV1.3 distributions do not show the same spatial bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 address the important control of whether higher CaV1.3 expression (2.5\u00d7 more clusters, higher current density) could explain the spatial association. The randomization analysis (C84, Figure 4D) shows that random distributions do not recapitulate the observed proximity, supporting that the association is specific rather than due to mass action. This is a critical control for the super-resolution analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The CaV1.3 antibody shows minimal cross-reactivity with CaV1.2 channels (2.2 \u00b1 0.5% overlap), validating antibody specificity for neuronal studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 present antibody validation data showing low overlap between CaV1.3 and CaV1.2-EGFP labels in co-transfected cells (Figure 5\u2014figure supplement 1B, n=4). This control is important because neurons express both L-type channels, and specificity is essential for interpreting the neuronal localization data. The epitope is in a non-conserved region of the II-III loop.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Endogenous BK and CaV1.3 channels in hippocampal and sympathetic neurons exhibit similar clustering and spatial organization as in the heterologous expression system, with larger BK clusters in SCG neurons (2800 nm\u00b2) and more intimate coupling (10% pixel overlap) compared to hippocampal neurons (3% overlap).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C102 extend the super-resolution findings to native neurons. The data show similar clustering patterns in both hippocampal (C91, Figure 5A) and sympathetic neurons (C92, Figure 5B) as in tsA-201 cells, with quantitative differences in cluster size (C94-C96) and coupling intimacy (C97-C99). The randomization controls (C100) confirm specificity. Sample sizes are n=6-7 cells. This result demonstrates that the clustering is not an overexpression artifact (C102) and represents physiologically relevant organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Paxilline-sensitive BK currents are detected at \u221240 mV in hippocampal (200 \u00b1 20 pA) and sympathetic neurons (100 \u00b1 20 pA) despite minimal whole-cell calcium current, with calcium sparklets detected at \u221280 mV that increase with Bay K 8644, indicating that localized L-type channel activity can activate nearby BK channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C112 provide functional evidence for BK activation at negative voltages in neurons. The paxilline-sensitive currents at \u221240 mV (C103, C104, Figures 5D, F) occur despite minimal whole-cell calcium current (C105), suggesting localized coupling. The sparklet data (C107-C110, Figure 5\u2014figure supplement 3) provide a mechanism for how sparse channel openings can activate nearby BK channels. The Bay K 8644 sensitivity (C109) confirms L-type channel involvement. Sample sizes are small (n=3) but the data are consistent with the spatial organization findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C115",
+      "C116",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "BK and CaV1.3 channels form multi-channel complexes without fixed 1:1 stoichiometry, instead showing a statistical bias for proximity with an average of 4 CaV1.3 clusters around each BK cluster and considerable organizational heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113, C115-C116, and C130-C133 synthesize the structural findings to propose a model of multi-channel complexes. The rejection of strict 1:1 stoichiometry (C115) is supported by the super-resolution data showing variable numbers of CaV1.3 clusters around BK clusters (C70, C132: average 4 clusters). The description as a 'statistical bias for proximity' (C131) appropriately captures the heterogeneity observed (C133). This model is more nuanced than prior proposals and is well-supported by the imaging data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C30",
+      "C135",
+      "C136"
+    ],
+    "result": "The spatial arrangement and functional coupling between BK and CaV1.3 channels enables a negative feedback mechanism that activates BK channels at voltages near action potential threshold, potentially preventing neuronal firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C8, C30, C135, and C136 propose a physiological mechanism whereby BK-CaV1.3 coupling regulates neuronal excitability near threshold. While the spatial proximity (supported by imaging) and low-voltage BK activation (supported by electrophysiology) are well-established, the proposed consequence for action potential firing (C136) relies primarily on a citation to prior work (Vivas et al., 2014) rather than direct demonstration in this study. The mechanism is plausible and consistent with the data, but the physiological consequence requires additional validation such as current-clamp recordings or computational modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C121"
+    ],
+    "result": "The BK \u03b2 auxiliary subunit is not necessary for functional coupling between BK and CaV channels in the heterologous expression system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C121 notes that functional coupling was achieved without co-expressing BK \u03b2 subunits, differing from some prior studies (Berkefeld et al., 2006). This is supported by the successful functional coupling demonstrated in Figures 1-3 without \u03b2 subunit co-transfection. However, this does not rule out that \u03b2 subunits might modulate the coupling in native systems.",
+    "result_type": "MINOR"
+  }
+]

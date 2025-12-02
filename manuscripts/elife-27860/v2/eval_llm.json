@@ -1,0 +1,397 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The authors predicted 539,134 altORFs (183,191 unique) in the human transcriptome compared to 68,264 annotated CDSs (54,498 unique). Alternative proteins have a median size of 45 amino acids with 92.96% under 100 amino acids, and altORFs are predominantly located in 3'UTRs (40.09%) or overlapping CDSs in different reading frames (35.98%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide consistent computational predictions with clear quantitative data presented in figures and tables. The size distribution, localization patterns, and repeat sequence analysis are well-documented and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The observed number of altORFs exceeds random expectation by 62,307 (p<0.0001), with significantly higher densities in CDSs, 3'UTRs, and ncRNAs compared to shuffled transcriptomes, while 5'UTR altORF density is significantly lower than expected by chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 present statistical comparisons to shuffled transcriptomes with appropriate controls and significance testing. The contrasting patterns between different transcript regions (enrichment vs. depletion) strengthen the interpretation that many altORFs are under selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "15% of human altORFs have Kozak motifs compared to 36% of annotated CDSs, but the number of altORFs with Kozak motifs is significantly higher than in shuffled transcriptomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 provide comparative analysis with appropriate statistical controls. While altORFs have fewer Kozak motifs than CDSs, the enrichment over shuffled sequences supports functional translation potential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "In mammals, more alternative proteins than reference proteins have homologs, with nine alternative proteins conserved from human to yeast. However, alternative protein conservation decreases more rapidly than reference protein conservation with increasing phylogenetic distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 present evolutionary conservation data with clear phylogenetic patterns. The data are internally consistent and supported by figures, though the interpretation of rapid turnover vs. detection limitations is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16"
+    ],
+    "result": "Third codon positions in CDS regions overlapping altORFs evolve at significantly more extreme speeds (both conserved and accelerated) than random control sequences, with up to 67-fold enrichment for conservation and 124-fold for accelerated evolution (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 presents sophisticated evolutionary analysis with appropriate controls and statistical significance. The extreme conservation patterns in wobble positions provide strong evidence for dual coding constraints, though the analysis is limited to 889 conserved altORF-CDS pairs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "Re-analysis of ribosome profiling data detected 26,531 TISs mapping to annotated CDSs and 12,616 mapping to altORFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 presents clear quantitative data from re-analysis of published ribosome profiling studies. The detection of thousands of altORF TISs provides direct evidence of translation, though technical limitations in 3'UTR detection are acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Re-analysis of four proteomic datasets detected a total of 4,872 different alternative proteins, including 3,957 in a protein interactome study, 549 in a dataset of ~10,000 human proteins, 384 in a phosphoproteome study, and 77 in an EGFR interactome study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 present systematic re-analysis of multiple independent proteomic datasets using rigorous search methods (five search engines, 1% FDR). The detection of thousands of alternative proteins across diverse experimental paradigms provides strong orthogonal evidence for their expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "467 alternative proteins were detected by both mass spectrometry and ribosome profiling, providing a high-confidence set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 identifies proteins detected by two independent methods, providing strong validation. This represents a conservative, high-confidence subset of the alternative proteome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "23% of human alternative proteins have at least one InterPro signature, with 20.6% classified as small proteins, compared to only 1.68% of reference proteins being small proteins with InterPro signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 present functional annotation data showing that alternative proteins are enriched for small proteins with functional domains compared to the reference proteome. The comparison strengthens the argument for biological activity, though the majority (77%) lack InterPro signatures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "More than 15,000 alternative proteins have membrane protein signatures, with most signal peptide-containing proteins predicted to be secreted, and transmembrane proteins displaying 1-27 transmembrane regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 characterize membrane and secreted protein features in the alternative proteome. The data are consistent with known protein localization patterns and supported by multiple prediction tools.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "585 alternative proteins were assigned 419 different InterPro entries and 343 were assigned 192 gene ontology terms. Alternative proteins with InterPro entries show higher detection rates (15.5%) compared to those without (13.7%, p=1.13e-05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 provide functional annotation and demonstrate that proteins with predicted domains are more likely to be experimentally detected, supporting their functional relevance. The statistical significance strengthens this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "110 alternative proteins contain C2H2 zinc finger domains (1-23 domains per protein), with 18 (17.8%) detected experimentally, similar to the detection rate for reference zinc finger proteins (20.1%). The consensus TGEK linker is present 46 times in 31 alternative zinc finger proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 characterize zinc finger alternative proteins with detailed domain analysis. The similar detection rates between alternative and reference zinc finger proteins support their authenticity, and the presence of canonical TGEK linkers indicates proper domain structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "138 alternative/reference protein pairs have at least one identical InterPro entry, significantly more than expected by chance (p<0.0001). Strikingly, 89 of 110 altORFs coding for zinc finger proteins are in transcripts where the CDS also codes for a zinc finger protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 demonstrate non-random co-occurrence of protein domains in alternative/reference pairs with strong statistical support. This pattern suggests potential functional relationships or shared evolutionary origins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Five alternative zinc finger proteins were identified in the interactomes of their corresponding reference zinc finger proteins, significantly more than expected by chance (p<10\u207b\u2076) based on 1 million randomization simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 provide strong statistical evidence for physical interactions between alternative and reference proteins from the same genes. The rigorous randomization analysis (1 million simulations) supports the significance of these interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Integration of expression and conservation analyses identified 2,715 alternative proteins predicted to be functional in mammals (H. sapiens to B. taurus) and 44 in vertebrates (H. sapiens to D. rerio).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 present a high-confidence subset based on multiple criteria (expression and conservation). This represents a conservative estimate of functional alternative proteins, though the specific integration criteria are not fully detailed in the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "AltMiD51, a 70 amino acid alternative protein conserved in vertebrates, localizes to mitochondria and induces mitochondrial fission when overexpressed. The LYR domain is essential for this activity, and the effect is mediated by Drp1, as shown by dominant-negative Drp1 blocking and Drp1 knockdown experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 provide comprehensive functional characterization of altMiD51 with multiple lines of evidence: conservation, MS detection with synthetic peptide validation, localization, overexpression phenotype, domain mutagenesis, and genetic epistasis experiments. The mechanistic connection to Drp1 is well-supported by multiple complementary approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "AltMiD51 overexpression does not affect oxygen consumption, ATP production, or ROS levels, though spare respiratory capacity decreases, likely due to mitochondrial fission. The N-terminal LYR motif is a signature of mitochondrial matrix proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 provide mechanistic insights ruling out oxidative phosphorylation perturbation and supporting matrix localization. The data are consistent with the fission phenotype and supported by appropriate controls and citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The reference protein MiD51 promotes mitochondrial fission by recruiting Drp1, and experimental evidence indicates Drp1 mediates altMiD51-induced mitochondrial fragmentation, with co-expression of wild-type Drp1 and altMiD51 resulting in fragmentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 establish the functional context and mechanism for altMiD51 action. The data confirm the known function of MiD51 and demonstrate that altMiD51 acts through the same pathway, supported by multiple experimental approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "AltDDIT3, a 31 amino acid alternative protein conserved in vertebrates, localizes to nucleus and cytoplasm, co-localizes with DDIT3 (Pearson correlation 0.92, p<0.001), and physically interacts with DDIT3 as shown by co-immunoprecipitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 provide functional characterization of altDDIT3 with conservation data, localization studies using rigorous colocalization analysis (Costes' method, Manders coefficients), and biochemical interaction data. The multiple lines of evidence support a functional relationship between altDDIT3 and DDIT3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The altORF encoding altDDIT3 was previously characterized as an inhibitory upstream ORF, but endogenous protein expression was not investigated. Detection of altMiD51 and altDDIT3 suggests some altORFs5' may have dual functions as translation regulators and functional proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 connect current findings to prior literature and propose a dual-function hypothesis. The inference is reasonable given the experimental detection of these proteins, though the generality of this phenomenon requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Current protein databases assume one CDS per mRNA and impose minimum size limits, leading to underestimation of proteome complexity and misclassification of coding RNAs as non-coding. Small proteins are functionally important but poorly annotated, creating a bottleneck for studying their roles in health and disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C65 establish the scientific context and motivation for the study. These claims are well-supported by citations and represent established knowledge about database limitations and the importance of small proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "AltORFs are defined as potential protein-coding ORFs in ncRNAs, UTRs, or different reading frames from annotated CDSs in mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 provides a clear operational definition that is consistently applied throughout the study and illustrated in figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Two evolutionary mechanisms are proposed for altORF origins: (1) polymorphism of initiation/stop codons creating new ORFs (gene fission-like), explaining the 24% of alternative proteins with identical domains to their CDSs, and (2) de novo origin from non-coding regions, potentially explaining altORFs without detectable domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C80 present speculative evolutionary models supported by citations and consistent with observed domain sharing patterns. However, these are hypotheses rather than tested mechanisms, and alternative explanations (e.g., alternative splicing artifacts) are not fully excluded despite some analysis in C11-figure supplement 3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Detection of alternative proteins faces technical challenges: ribosome profiling TIS detection doesn't guarantee stable protein expression, proteomics favors larger proteins, novel genes are poorly expressed, but using five search engines increases confidence and sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 acknowledge important technical limitations and describe methodological improvements. These are well-supported by citations and represent accurate assessments of detection challenges and solutions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Only 22.6% of alternative proteins have InterPro signatures compared to 96.9% of reference proteins. Possible explanations include small size limiting domain accommodation, requirement for sequence elongation before function, presence of novel uncharacterized domains, or lack of translation/function for some predicted altORFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 present the low annotation rate and discuss multiple plausible explanations supported by citations. The authors appropriately acknowledge uncertainty about which explanation(s) are correct and that some predicted altORFs may be non-functional.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The study concludes that many small eukaryotic proteins remain unannotated, and some small/large protein pairs from the same mRNA may cooperate functionally. Co-encoding provides coordinated transcriptional regulation and may allow faster cellular adaptation with optimized energy expenditure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C94 present major conclusions and hypotheses. While C91 is well-supported by the cumulative evidence, C92-C94 represent speculative hypotheses about functional cooperation and evolutionary advantages that require more extensive experimental validation beyond the three examples provided (altMiD51, altDDIT3, zinc finger proteins).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Upstream ORFs (altORFs5') are important translational regulators. Multiple independent lines of evidence support translation and functional roles for thousands of alternative proteins, with the hypothesis that many altORFs code for proteins cooperating with their CDS proteins, consistent with evidence that small proteins often regulate larger proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 summarize key findings and present the cooperation hypothesis. The seven lines of evidence cited provide strong cumulative support for functionality of many alternative proteins, though the authors appropriately note the cooperation hypothesis is \"far from proven\" and requires additional validation.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,661 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Loss of PRKN or PINK1 causes early-onset hereditary Parkinson's disease, which is linked to mitochondrial dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are well-established facts in the field, supported by multiple citations (Kitada et al., 1998; Ryan et al., 2015; Valente et al., 2004). These are background claims establishing the disease context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "PINK1 and parkin promote mitochondrial health through multiple quality control mechanisms including proteasomal degradation, mitochondrial-derived vesicles, and mitophagy, where PINK1 activates parkin through phosphorylation and phosphoubiquitin generation, leading to ubiquitination of OMM proteins and recruitment of autophagic machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C12 describe well-established mechanisms of PINK1/parkin-mediated mitochondrial quality control, supported by multiple citations. These are background claims providing context for the current study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Mitochondria-ER contact sites are required for starvation-induced autophagosome formation, and Mfn2 acts as a mitochondria-ER tether required for this process, yet is also ubiquitinated and degraded by parkin, creating an apparent conflict with the assumption that parkin-dependent mitophagy follows a similar mechanism to yeast mitophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C20 establish the scientific context and paradox that motivates the study. These are well-supported by citations and identify the key question: how can Mfn2 be both required for autophagosome formation and degraded during mitophagy?",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Parkin disrupts mitochondria-ER contacts during mitophagy as an early step before autophagosomal engulfment, reducing both the percentage of OMM in contact with ER and the percentage of mitochondria connected to ER in depolarized cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 are supported by quantitative EM data (Figure 1A-E, Figure 1\u2014figure supplement 1) showing robust reduction in ER-OMM contacts across multiple distance thresholds (100, 50, 25 nm) in CCCP-treated GFP-parkin expressing cells. The effect is specific to parkin and occurs before autophagosomal engulfment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C33"
+    ],
+    "result": "The destruction of mitochondria-ER contacts during mitophagy requires parkin, PINK1, and proteasomal activity, as demonstrated by rescue of ER-OMM contacts with MG132 proteasome inhibition or PINK1 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C30, and C33 are supported by EM data (Figure 1H-J) showing that both proteasome inhibition (MG132) and PINK1 depletion prevent ER-OMM disruption in CCCP-treated cells. This establishes the mechanistic requirements for contact site destruction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C121"
+    ],
+    "result": "Mitochondria-ER contacts are destroyed during mitophagy in both heterologous cell cultures and dopaminergic neurons, with CCCP inducing Mfn2 ubiquitination and decreased ER-OMM appositions in control but not parkin-deletion iDA neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C32, and C121 are supported by data from both U2OS cells and iDA neurons (Figure 1M-O). The observation in dopaminergic neurons is particularly important given the relevance to Parkinson's disease. The parkin-dependence is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Mfn1 and Mfn2 undergo rapid ubiquitination within the first 30-60 minutes of CCCP treatment, much faster than other OMM proteins like TOM20, making mitofusin ubiquitination one of the earliest steps in mitophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by time-course immunoblot data (Figure 2A-B) showing rapid Mfn turnover and ubiquitination burst between 30-60 min, contrasting with gradual TOM20 ubiquitination over hours. This establishes temporal hierarchy of substrate ubiquitination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Parkin binds ubiquitinated Mfn2 early in mitophagy (1 hour CCCP) through pUb interactions, as demonstrated by coimmunoprecipitation and deubiquitination experiments, with different temporal patterns for other substrates like Miro1 and HK1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 are supported by coimmunoprecipitation data (Figure 2C) and on-bead deubiquitination (Figure 2E). The A320R mutant controls demonstrate pUb-dependence. The temporal hierarchy of substrate binding is clearly established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Mfn2 is phosphoubiquitinated during mitochondrial depolarization, with a burst of phosphoubiquitination occurring early in mitophagy, as demonstrated by LC/MS detection of pS65 Ub, denaturing IP, and GST-R0RBR pulldowns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 are supported by multiple complementary approaches (Figure 2F-J): LC/MS showing pS65 Ub (Figure 2G), denaturing IP confirming covalent attachment (Figure 2H), and GST-R0RBR pulldowns showing A320R-sensitive binding. This provides strong evidence for Mfn2 phosphoubiquitination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Mfn2 silencing increases mitochondrial fragmentation and causes an ER-OMM apposition defect, while specifically increasing the kinetics of parkin recruitment to depolarized mitochondria in both glucose and galactose conditions, with this phenotype being Mfn2-specific and unrelated to loss of mitochondrial fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 are supported by multiple experiments (Figure 3A-E, Figure 3\u2014figure supplement 3A-D) showing that Mfn2 but not Mfn1 depletion accelerates parkin recruitment, and double knockdown doesn't enhance the effect beyond Mfn2 alone. This demonstrates Mfn2-specific regulation of mitophagy initiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Disruption of mitochondrion-ER tethering by silencing PACS2 or Stx17 increases the kinetics of parkin translocation to depolarized mitochondria, similar to Mfn2 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by parkin recruitment data (Figure 3\u2014figure supplement 3G-H) showing that silencing other ER-OMM tethering proteins produces similar effects to Mfn2 depletion. This generalizes the finding beyond Mfn2 to ER-OMM tethering per se.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Mfn2 represses mitophagy at the level of pathway initiation, as demonstrated by enhanced depolarization-induced mitophagy in Mfn2-depleted cells and Mfn2 KO cells, with increased recruitment kinetics and increased mitochondrial turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by mtKeima flow cytometry data (Figure 3F-G) and additional experiments in Mfn2 KO cells (Figure 3\u2014figure supplement 4E-H). The data show enhanced mitophagy in Mfn2-depleted conditions, consistent with Mfn2 acting as a negative regulator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Parkin translocation in Mfn2-depleted cells remains PINK1-dependent and requires pUb-binding, as cells expressing GFP-parkinA320R fail to translocate under Mfn2-depletion conditions, demonstrating that Mfn2 reduction increases on-pathway mitophagy kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by data (Figure 3\u2014figure supplement 5A-G) showing PINK1 requirement and A320R mutant failure to translocate in Mfn2-depleted cells. This confirms that enhanced mitophagy in Mfn2-depleted cells operates through the canonical PINK1/parkin pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C123",
+      "C124"
+    ],
+    "result": "Mitochondria-ER contacts are not only dispensable for mitophagy but actively antagonize the pathway, as their reduction facilitates parkin substrate ubiquitination, parkin translocation, and mitochondrial turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 and C123-C124 represent a major conclusion supported by multiple lines of evidence showing enhanced mitophagy upon disruption of ER-OMM contacts. This fundamentally challenges the assumption that mitophagy requires ER-mitochondria contacts like starvation-induced autophagy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Ectopic expression of Mfn2, but not Mfn1, suppresses parkin recruitment to depolarized mitochondria in Mfn2 KO cells, with this antagonistic effect occurring through Mfn2's ability to tether mitochondria to the ER rather than its effect on mitochondrial fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by rescue experiments (Figure 4B-C) and prior data distinguishing tethering from fusion functions. This demonstrates that Mfn2's specific role in ER-OMM tethering, not fusion, mediates its inhibitory effect on mitophagy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Mutation of K406, K416, and K420 in the HR1 domain (Mfn2HR1) reduces CCCP-induced ubiquitination by ~75%, while HR2 and phosphomutant mutations do not significantly reduce modification, and all mutants rescue mitochondrial morphology and form HMW complexes similar to WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 are supported by mutagenesis data (Figure 4E-I) showing differential effects of mutations on ubiquitination while preserving fusion function and complex formation. This identifies specific lysines in HR1 as critical ubiquitination sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Ubiquitination of the Mfn2 HR1 domain by parkin is required for efficient mitophagy, as only rescue with Mfn2HR1 blocks mitochondrial turnover, demonstrating that parkin and PINK1 directly counter Mfn2-mediated mitochondria-ER tethering through Mfn2 turnover to promote mitophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by mitophagy assays (Figure 4J-K) showing that Mfn2HR1 blocks mitophagy while other mutants do not. This establishes the functional importance of HR1 ubiquitination and provides mechanistic insight into how parkin promotes mitophagy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Mfn2 exists in a bimodal distribution of ~250 kDa and ~500 kDa complexes, while Mfn1 only forms ~250 kDa complexes, with the ~500 kDa Mfn2 complex potentially representing a dimer bridging ER and OMM that is rapidly lost upon CCCP treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are supported by BN-PAGE data (Figure 5A) showing distinct complex patterns for Mfn1 and Mfn2. The interpretation of the ~500 kDa complex as an interorganellar bridge is reasonable but somewhat speculative (C81 includes speculation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The disappearance of HMW Mfn complexes is predominantly due to p97-mediated extraction from the OMM rather than high-level ubiquitination, as p97 inhibition with NMS-873 stabilizes both ~250 kDa and ~500 kDa complexes, indicating that ubiquitination alone is insufficient to disassemble the Mfn2 interorganellar bridge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 are supported by Usp2 treatment (Figure 5D) and p97 inhibitor experiments (Figure 5E). The data clearly show that p97 activity is required for complex disassembly beyond ubiquitination alone, establishing p97's critical role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "p97 inhibition prevents the dissociation of mitochondria from the ER during mitophagy, demonstrating that p97-dependent extraction of Mfn2 HMW complexes from the OMM separates mitochondria from the ER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by EM data (Figure 5F-H) showing that NMS-873 prevents ER-OMM dissociation. This directly links p97 activity to the physical separation of organelles, completing the mechanistic picture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C89",
+      "C91",
+      "C92"
+    ],
+    "result": "p97 inhibition with NMS-873 blocks mitochondrial translocation of p97 and stabilizes ubiquitinated Mfn2, with p97 depletion increasing ubiquitinated Mfn2 and basal Mfn2 levels, consistent with p97 involvement in both mitophagy and steady-state Mfn2 turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C91-C92 are supported by p97 translocation data (Figure 6A-B), p97 inhibition/depletion experiments (Figure 6C-E), and citation to Zhang et al., 2017. This establishes p97's role in Mfn2 turnover during mitophagy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "NMS-873 stabilizes ubiquitinated Mfn2 in cells rescued with WT Mfn2 but not Mfn2HR1, demonstrating that ubiquitination of lysines in the Mfn2 HR1 domain is recognized by p97 and signals for protein extraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 are supported by experiments in reconstituted Mfn2 KO cells (Figure 6F-G) showing differential stabilization of WT vs HR1 mutant. This links the HR1 ubiquitination sites to p97 recognition and extraction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "Ubiquitinated Mfn2 is not the sole p97-binding protein on the OMM, as robust p97 recruitment occurs in Mfn2 KO cells and is similar in cells expressing Mfn2WT or Mfn2HR1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is supported by p97 recruitment data (Figure 6H-I) showing that p97 recruitment occurs independently of Mfn2. This indicates that p97 has multiple substrates on the OMM during mitophagy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The interaction between parkin and ubiquitinated Mfn2 is stabilized when p97 is inhibited, and p97 binds unphosphorylated but not phosphorylated Ub chains, indicating that p97-mediated Mfn2 turnover likely does not involve p97-pUb interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 are supported by coimmunoprecipitation (Figure 6J-K) and LC/MS pulldown data (Figure 6\u2014figure supplement 1C). The finding that p97 preferentially binds unphosphorylated Ub is important for understanding the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Parkin-mediated ubiquitination alone is insufficient to drive Mfn2 HMW complex disassembly or ER-OMM dissociation without p97 activity, and in the absence of Mfn2, p97 inhibition fails to suppress mitophagy, demonstrating that a significant component of p97's role in mitophagy functions through Mfn2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 are supported by data showing p97 requirement for complex disassembly (Figure 5E-G) and mtKeima experiments (Figure 7A-B) showing that p97 inhibition doesn't block mitophagy in Mfn2-depleted cells. This establishes epistasis between p97 and Mfn2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "p97 relieves Mfn2-dependent inhibition of VDAC1 ubiquitination, as VDAC1 ubiquitination is sensitive to p97 inhibition in control cells but not Mfn2-depleted cells, with the half-time of VDAC1 modification increasing two-fold with NMS-873 specifically in control cells, demonstrating that Mfn2 gates the availability of the stable parkin receptor VDAC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 are supported by time-course immunoblots (Figure 7C-H) showing differential effects of p97 inhibition on VDAC1 ubiquitination in control vs Mfn2-depleted cells. This provides a mechanistic explanation for how Mfn2 removal facilitates mitophagy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Parkin-dependent ubiquitination of Mfn2 can be reconstituted on isolated mitochondria in a time-, depolarization-, ligase-, and PINK1-dependent manner, with cytosolic mouse parkin able to catalyze Mfn2 ubiquitination, and co-incubation with cytosol enabling robust ubiquitination of both Mfn2 and VDAC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 are supported by in organello ubiquitination assays (Figure 8C-I) showing reconstitution of the system with appropriate controls. This demonstrates that the key components are sufficient to recapitulate the cellular observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "In cytosol-containing reactions, VDAC1 ubiquitination displays sensitivity to NMS-873, and addition of recombinant p97 hexamer stimulates both Mfn2 and VDAC1 ubiquitination in a parkin-dependent manner, with p97 enabling Mfn2 retrotranslocation, demonstrating reconstitution of PINK1/parkin-dependent, p97-stimulated Mfn2 and VDAC1 ubiquitination and Mfn2 retrotranslocation in a cell-free assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C118 are supported by in organello experiments with cytosol and recombinant p97 (Figure 8J-N) showing p97-dependent stimulation of ubiquitination and Mfn2 retrotranslocation. This provides strong biochemical evidence for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "PINK1, parkin and p97 collaborate to uncouple OMM-ER contacts via Mfn2 ubiquitination and degradation during mitophagy, which in turn allows ubiquitination and degradation of additional parkin substrates such as VDAC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 represent the central mechanistic conclusion of the paper, supported by the convergence of cellular and in organello experiments. The model is well-supported by the data showing sequential events: Mfn2 ubiquitination \u2192 p97-mediated extraction \u2192 ER-OMM uncoupling \u2192 enhanced VDAC1 ubiquitination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C122"
+    ],
+    "result": "There is a requirement for parkin, PINK1, p97 and proteasomal activity in the destruction of mitochondria-ER contacts during mitophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C122 is supported by experiments using PINK1 depletion, parkin mutants, p97 inhibition, and proteasome inhibition (Figure 1H-J, Figure 5F-H, Figure 6). This establishes the complete set of factors required for contact site destruction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Mfn2 is rapidly phosphoubiquitinated upon mitophagy induction, Mfn2-containing HMW complexes are extracted by p97 requiring HR1 domain ubiquitination, and both reduction of Mfn2 ubiquitination and p97 inhibition repress mitophagy, with the main concepts reconstitutable in a cell-free assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C128 summarize key findings supported by multiple experiments throughout the paper. This represents the core mechanistic discovery linking Mfn2 phosphoubiquitination, p97-mediated extraction, and mitophagy regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "The PINK1/parkin/p97 axis acts rapidly on Mfn2 HMW complexes to separate mitochondria from the ER to facilitate mitophagy, potentially by making more substrates available, with the intriguing possibility that mitochondria-ER contacts are initial sites of PINK1/parkin activity and Ub phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 represent the proposed model (Figure 9) based on the experimental findings. C129 is well-supported by the data, while C130 is more speculative but reasonable given the rapid Mfn2 ubiquitination at contact sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Mfn2 bridges between mitochondria and ER may form ring-like structures similar to yeast Fzo1p, potentially restricting substrate availability to parkin/PINK1, with PINK1 localizing to the MAM upon depolarization and VDACs physically interacting with ER IP3 receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C134 are largely speculative (C132) or based on prior work (C131, C133-C134). While the structural model is plausible and consistent with the data, direct evidence for ring formation by Mfn2 at ER-OMM contacts is not provided in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The existence of a ~500 kDa Mfn2-containing interorganellar bridge is supported by BN-PAGE data showing Mfn2 uniquely exists as a homotypic dimer of ~250 kDa subunits, correlating with reduced Mfn2 GTPase activity compared to Mfn1, with complex stability negatively regulated by parkin-mediated ubiquitination coupled to p97-dependent retrotranslocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 are supported by BN-PAGE data (Figure 5A) and citations to prior structural work. The interpretation is consistent with known mitofusin biology and the experimental observations of complex disassembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Both ubiquitinated and unmodified forms of retrotranslocated Mfn2 are observed upon p97 addition, suggesting that while the hexamer may engage directly with Mfn2 at high concentrations, Ub-binding cofactors may localize p97 to ubiquitinated Mfn2 at physiological levels, consistent with p97 recognizing both Ub-dependent and intrinsic signals in ERAD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C140 are supported by fractionation data (Figure 8N) and citation to Ye et al., 2003. The speculation about cofactor involvement (C139) is reasonable given the observation of both modified and unmodified retrotranslocated Mfn2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C141",
+      "C142"
+    ],
+    "result": "MITOL-mediated Mfn2 ubiquitination on different lysine residues can positively regulate complex formation and mitochondria-ER tethering, emphasizing Mfn2 ubiquitination as an important regulator of mitochondria-ER contact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C142 integrate prior work (Sugiura et al., 2013) with current findings to emphasize that different ubiquitination patterns on Mfn2 can have opposite effects. This is well-supported and provides important context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Robust parkin activation during mitophagy occurs through a feed-forward mechanism involving PINK1-phosphorylated Ub, with the Mfns undergoing a burst of phosphoubiquitination at mitophagy onset driven by localized parkin activation, showing preference for Mfns above other substrates like HK1 and Miro1, followed by rapid p97-mediated extraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C147 integrate prior mechanistic understanding with current findings about substrate hierarchy. The data clearly show temporal preference for Mfn ubiquitination (Figures 2A-C, 8F) and rapid extraction (Figures 5A, 5E, 8N).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "It is unlikely that Mfn1 or Mfn2 act as parkin receptors during mitophagy given their rapid turnover and enhanced parkin recruitment in Mfn2-deficient cells, with Mfn2 acting as a stable parkin tether only when p97 retrotranslocation is inhibited, while VDAC1 is involved in a stable complex tethering parkin to the OMM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C150 are supported by rapid Mfn turnover data, enhanced recruitment in Mfn2-deficient cells (Figure 3C-E), stabilization with p97 inhibition (Figure 6J-K), and citation to Callegari et al., 2017 for VDAC1. This clarifies the receptor vs substrate distinction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C151",
+      "C152"
+    ],
+    "result": "Mfn2 may act as a parkin receptor in cardiomyocytes where mitophagy plays a role in metabolic development rather than quality control, with phosphorylation of Mfn2 on T111 and S442 by a cardiac-specific kinase potentially facilitating mitophagy by uncoupling mitochondria from the sarcoplasmic reticulum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C151-C152 are largely speculative, attempting to reconcile tissue-specific differences in Mfn2 function. While supported by citations and the observation that Mfn2T111A/S442A blocks mitophagy in heart but not cell lines, direct evidence for the proposed mechanism is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Mitophagy functions as a quality control mechanism while starvation-induced autophagy is a metabolic response, with starvation-induced autophagy initiation at mitochondria-ER contact sites potentially serving to decode metabolic needs, and mitochondrial damage potentially precluding mitochondria from serving as an autophagosomal membrane source during mitophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C157 discuss fundamental differences between mitophagy and starvation-induced autophagy. C153-C154 are well-established, C155 is reasonable speculation, C156 is supported by citations, and C157 is logical speculation about why damaged mitochondria wouldn't serve as membrane sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The SNARE Stx17 governs autophagosome-lysosome fusion during starvation but is dispensable for mitophagy, instead appearing to suppress mitophagy through its role in supporting mitochondria-ER contact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C160 are supported by citations (Itakura et al., 2012b; McLelland et al., 2016; Nguyen et al., 2016; Arasaki et al., 2015) and data (Figure 3\u2014figure supplement 3G-I). This highlights another difference between mitophagy and starvation-induced autophagy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R42",
+    "claim_ids": [
+      "C161"
+    ],
+    "result": "Mitophagy shares morphological and several mechanistic similarities with canonical macroautophagy, including recruitment of ULK1 complexes and ATG9A vesicles to depolarized mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C161 is supported by citations (Itakura et al., 2012a; Lazarou et al., 2015) and acknowledges that despite differences, mitophagy shares some features with canonical autophagy. This provides balanced context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R43",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "In Drosophila, phenotypes of PINK1 and PRKN mutants are duplicated by MARF overexpression and suppressed by p97 overexpression, with PINK1/parkin/p97 counteracting MARF through its ubiquitination and turnover in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C164 are supported by citations to fly studies (Yun et al., 2014; Zhang et al., 2017; Wang et al., 2016; Ziviani et al., 2010). This provides important in vivo validation of the mechanism in a model organism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R44",
+    "claim_ids": [
+      "C165",
+      "C166"
+    ],
+    "result": "A proposed mechanism of cell death due to PINK1 deletion is sensitization of mitochondria to Ca2+ overload, with deletion of the mitochondrial Ca2+ uniporter protecting dopaminergic neurons from cell death in PINK1-deficient zebrafish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C166 are supported by citations (Akundi et al., 2011; Gandhi et al., 2009; Kostic et al., 2015; Soman et al., 2017). This provides disease-relevant context suggesting dysregulated mitochondria-ER contact may contribute to pathology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R45",
+    "claim_ids": [
+      "C167",
+      "C168"
+    ],
+    "result": "An increased degree of mitochondria-ER contact has been observed in fibroblasts from PRKN and PINK1 patients and brains from mutant flies, while transient PINK1 depletion destabilizes mitochondria-ER tethering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C168 acknowledge conflicting observations in the literature regarding steady-state ER-OMM contacts in PINK1/parkin loss-of-function models. The authors appropriately note differences in quantification methods and experimental conditions.",
+    "result_type": "MINOR"
+  }
+]

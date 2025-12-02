@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Optogenetic stimulation of L2/3 pyramidal cells in mouse visual cortex generates gamma oscillations (~30 Hz) that are stimulus size-dependent, coherent across cortical space (up to 850 \u03bcm), emerge from non-periodic stimuli, and depend on SOM but not PV neuron activity. These photo-induced gamma oscillations share key features with visually induced gamma oscillations observed in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C13 and C30-C35 provide converging experimental evidence from optogenetic stimulation, electrophysiological recordings, and transection experiments. The data demonstrate stimulus size-dependence (C5, C31), spatial coherence (C6, C11, C34, C109-C111), narrow-band frequency (~30 Hz, C7), and differential dependence on SOM vs PV neurons (C8, C9). Statistical analyses support the findings (p<10^-3 for coherence measurements). The similarity to in vivo gamma (C10) is appropriately qualified as comparative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Lateral connections across L2/3 are necessary for long-range intralaminar gamma coherence. Vertical transection between two recorded cells abolishes phase-locking while sparing local gamma generation on either side of the cut.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 describe a critical transection experiment with clear results: local gamma generation is preserved but phase-locking is abolished (n=11 pairs, p<10^-3). This provides strong causal evidence for the necessity of horizontal L2/3 connections in mediating long-range coherence. The experimental design appropriately tests the hypothesis by severing horizontal connections while preserving local circuitry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "During photo-induced gamma oscillations, SOM neurons fire at high rates (25\u00b15 Hz) and are tightly phase-locked to the gamma rhythm, while PV neurons fire sparsely (4\u00b12 Hz). SOM neurons receive high excitation/inhibition ratios (2.5\u00b10.5) compared to PV neurons (0.43\u00b10.09) and pyramidal cells (0.054\u00b10.010), providing a synaptic basis for differential recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 and C112-C116 present targeted electrophysiological recordings from identified cell types with quantitative measurements and statistical comparisons (p=0.003 for SOM vs PV firing rates; p<10^-3 for E/I ratios). The data clearly demonstrate differential recruitment of SOM vs PV neurons during gamma oscillations. Sample sizes are adequate (n=10 SOM, n=11 PV for firing rates; n=12 SOM, n=8 PV, n=10 PC for E/I ratios).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C53",
+      "C117",
+      "C118"
+    ],
+    "result": "Optogenetic suppression of SOM neurons strongly reduces inhibitory gamma power (74\u00b13.5%) and desynchronizes excitatory synaptic input (63\u00b17% power reduction), demonstrating that SOM neuron output is critical for pacing the excitatory network in the gamma band.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50, C53, C117-C118 describe optogenetic suppression experiments with clear quantitative effects and statistical significance (p<10^-5 for inhibition, p=0.004 for excitation). The bidirectional optogenetic approach (ChR2 activation + eNpHR3.0 suppression) provides strong causal evidence. Sample sizes are adequate (n=8 cells for excitation measurements).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C119"
+    ],
+    "result": "Optogenetic suppression of PV neurons has no significant effect on gamma power (2.5\u00b16% reduction, p=0.25), although it does reduce disynaptic IPSCs to brief light pulses (p=0.016).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 and C119 present optogenetic suppression experiments with appropriate statistical tests showing no significant effect on gamma power but a control showing that PV suppression is effective (reduced disynaptic IPSC). The lack of effect is properly supported by non-significant p-value (p=0.25) with adequate sample size (n=9 cells). The control experiment validates the manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "SOM neurons are required for both the initiation and maintenance of L2/3-induced gamma oscillations. Suppressing SOM cells before gamma induction abolishes gamma rhythms, and SOM neuron activity far exceeds PV neuron activity even at early stages of gamma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 address a potential alternative explanation (that SOM neurons are only required for maintenance, not initiation) through additional experiments. The data show that early suppression also abolishes gamma, and spike timing analysis confirms high SOM activity from the start. This strengthens the conclusion about SOM necessity, though the authors appropriately note this doesn't exclude PV involvement in other protocols.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C12"
+    ],
+    "result": "Optogenetic suppression of SOM neurons outside the gamma initiation zone abolishes phase-locking between pyramidal cell spikes and distally generated gamma oscillations (PPC reduced from 0.120\u00b10.008 to 0.004\u00b10.007, p=0.008), demonstrating that SOM neuron activity is critical for lateral gamma entrainment across at least 325 \u03bcm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 describe spatially targeted optogenetic experiments using dual-color DMD-based illumination. The experimental design appropriately tests the role of distal SOM neurons by suppressing them locally while maintaining gamma generation elsewhere. The quantitative measurements show strong effects with statistical significance (p=0.008, n=8 pairs). However, the authors appropriately note potential confounds from axonal suppression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C77",
+      "C78",
+      "C79",
+      "C81"
+    ],
+    "result": "Circuit mapping reveals that SOM neurons receive attenuated excitatory input from L2/3 PCs at distances up to 450 \u03bcm (6\u00b12% of maximum), which is rarely sufficient to drive spiking alone. The spatial decay of excitatory input to SOM neurons matches that of disynaptic inhibition to PCs, suggesting long-range coherence involves summed horizontal dendritic and axonal fields. For ensembles <450 \u03bcm apart, horizontal input is sufficient to directly drive SOM cell spiking; for greater distances, SOM cells between ensembles are driven by summed input from both sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66, C77-C79, C81 present systematic circuit mapping experiments with quantitative measurements of spatial decay. The data support a mechanistic model for long-range coherence, though the authors appropriately acknowledge limitations (axon sectioning in slices likely underestimates true range). The proposed model of intermediate SOM cells being driven by summed inputs is consistent with the data, though direct evidence for this mechanism is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "No clear evidence of spikelets or subthreshold electrical coupling was observed in SOM neurons that might mediate signal propagation across the retinotopic axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C64 reports negative findings regarding gap junction coupling. While the authors looked for spikelets, they acknowledge that temporal filtering could make them indistinguishable from EPSPs, particularly against large glutamatergic inputs. The negative result is appropriately qualified but doesn't definitively rule out gap junction contributions. Additional experiments would be needed to conclusively address this mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The gamma oscillations are generated locally by a PING (Pyramidal-Interneuron-Gamma) circuit motif with SOM neurons playing a critical role. An ING (Interneuron-Gamma) model is unlikely. Independent oscillating ensembles mutually connect via horizontally projecting L2/3 axons and SOM neurons, which extend the range of synchronization through their own horizontal projections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68, C71-C73 present a mechanistic model synthesizing the experimental findings. The PING model is well-supported by the data: selective excitatory neuron stimulation, SOM necessity, and lack of SOM-SOM recurrent connectivity. The ING model is appropriately ruled out based on experimental design and known connectivity. The proposed circuit for long-range coherence integrates multiple lines of evidence (transection, suppression, circuit mapping).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C108"
+    ],
+    "result": "In utero electroporation at E15-E16 exclusively labels L2/3 pyramidal cells with ChR2, ensuring that all optogenetically evoked inhibition is driven polysynaptically through the network rather than being of monosynaptic origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29, C108 describe a critical methodological feature validated by histology (Figure 1\u2014figure supplement 1) showing no co-labeling of ChR2 with inhibitory markers (2/1519 GFP neurons co-labeled). This ensures that the experimental design appropriately tests network mechanisms rather than direct optogenetic activation of inhibitory neurons. The method is well-established (cited) and properly validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C80",
+      "C85",
+      "C97",
+      "C100",
+      "C105"
+    ],
+    "result": "Several speculative mechanisms are proposed that might contribute to gamma generation and coherence, including: gap junction coupling among SOM neurons, VIP neuron influence on SOM cells, phase-locked loop architecture with SOM neurons as phase comparators, contributions from a minority of long-range SOM projections, PV neuron reinforcement of entrainment, intracolumnar SOM cells in lower layers, and effects on spike-timing dependent plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C76, C80, C85, C97, C100, C105 present various speculative mechanisms appropriately qualified with language like 'might', 'may', 'could', and 'potentially'. These are reasonable hypotheses based on known anatomy and physiology, but lack direct experimental support in this study. They represent appropriate discussion of alternative or complementary mechanisms that warrant future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The manuscript reviews prior literature on gamma oscillations, including their implication in cognitive and behavioral phenomena, the controversy over their function in visual processing, the unknown mechanisms of long-distance coherence, and various proposed circuit mechanisms involving different interneuron subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C14-C26 accurately summarize the state of the field based on cited literature. These claims appropriately contextualize the study's motivation and knowledge gaps. The citations appear appropriate for the claims made, though detailed verification of each citation is beyond this evaluation. The review appropriately acknowledges controversies and uncertainties in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C27",
+      "C41",
+      "C42",
+      "C69",
+      "C70",
+      "C86",
+      "C87",
+      "C89",
+      "C90",
+      "C94",
+      "C95",
+      "C98",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The manuscript cites relevant prior work from the authors and others, including: optogenetic induction of gamma in slices and in vivo, preferential recruitment of SOM neurons by L2/3 horizontal axons, SOM involvement in visually induced gamma, PV neuron roles in gamma in various circuits, SOM sufficiency for gamma entrainment, and the importance of SOM-engaging horizontal circuits for contextual modulation and size-dependent gamma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C41-C42, C69-C70, C86-C87, C89-C90, C94-C95, C98, C101-C103 cite relevant prior work that contextualizes and supports the current findings. The citations appear appropriate and accurately represented. The authors appropriately acknowledge both their own prior work and that of others, including work that might seem contradictory (PV involvement in gamma) but is reconciled through discussion of different experimental contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C91",
+      "C92",
+      "C93",
+      "C96",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors conclude that the network architecture of L2/3 preferentially recruits SOM cells for gamma generation, that gamma rhythms are phenomenologically diverse with diverse underlying mechanisms, that PV coupling to gamma might result from SOM entrainment, and that SOM neurons are emerging as critical contributors to both gamma generation and long-range coherence. They propose that direct manipulation of SOM neurons offers a new route to probe functional roles of gamma in visual perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C91-C93, C96, C106-C107 present interpretations and conclusions that are well-supported by the data and appropriately qualified. The conclusion about preferential SOM recruitment (C88) is supported by the differential activity and necessity data. The acknowledgment of gamma diversity (C91-C92) appropriately contextualizes the findings. The reinterpretation of PV coupling (C93) is speculative but reasonable. The forward-looking statement about manipulating SOM neurons (C107) is appropriate given the findings.",
+    "result_type": "MAJOR"
+  }
+]

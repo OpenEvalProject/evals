@@ -1,0 +1,1863 @@
+{
+  "submission": {
+    "id": "977381e4-b354-4e9c-99bb-3ee2fd65682d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:37:51.433690Z",
+    "updated_at": "2025-12-01T23:37:51.433690Z"
+  },
+  "content": [
+    {
+      "id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "submission_id": "977381e4-b354-4e9c-99bb-3ee2fd65682d",
+      "content_type": "manuscript",
+      "content_text": "# Antibiotic-induced population fluctuations and stochastic clearance of bacteria\n\n## Authors\n\n- Jessica Coates<sup>1</sup>\n- Bo Ryoung Park<sup>2</sup>\n- Dai Le<sup>2</sup>\n- Emrah \u015eim\u015fek<sup>2</sup>\n- Waqas Chaudhry<sup>2</sup>\n- Minsu Kim<sup>1</sup> ([ORCID: 0000-0003-1594-4971](https://orcid.org/0000-0003-1594-4971)) \u2020\n\n### Affiliations\n\n1. Microbiology and Molecular Genetics Graduate Program, Graduate Division of Biological and Biomedical Sciences Emory University Atlanta United States\n2. Department of Physics Emory University Atlanta United States\n3. Emory Antibiotic Resistance Center Emory University Atlanta United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEffective antibiotic use that minimizes treatment failures remains a challenge. A better understanding of how bacterial populations respond to antibiotics is necessary. Previous studies of large bacterial populations established the deterministic framework of pharmacodynamics. Here, characterizing the dynamics of population extinction, we demonstrated the stochastic nature of eradicating bacteria with antibiotics. Antibiotics known to kill bacteria (bactericidal) induced population fluctuations. Thus, at high antibiotic concentrations, the dynamics of bacterial clearance were heterogeneous. At low concentrations, clearance still occurred with a non-zero probability. These striking outcomes of population fluctuations were well captured by our probabilistic model. Our model further suggested a strategy to facilitate eradication by increasing extinction probability. We experimentally tested this prediction for antibiotic-susceptible and clinically-isolated resistant bacteria. This new knowledge exposes fundamental limits in our ability to predict bacterial eradication. Additionally, it demonstrates the potential of using antibiotic concentrations that were previously deemed inefficacious to eradicate bacteria.\n\n## Introduction\n\nThe frequent failure of antibiotic treatments is a serious public health threat. A recent study projects treatment failures caused by antibiotic resistance will lead to 300 million deaths and a healthcare burden of $100 trillion by 2050 (O\u2019Neill, 2016). This epidemic is further exacerbated by our inability to reliably eradicate antibiotic-susceptible bacteria. For example, antibiotic treatments of infections caused by antibiotic-susceptible bacteria never achieve a success rate of 100%, often failing to eradicate them unexpectedly (Doern and Brecher, 2011; Weidner et al., 1999; Gopal et al., 1976; Ficnar et al., 1997; Forrest et al., 1993). To design effective treatments and avoid antibiotic failure, there is a strong need to better understand the dynamics of bacterial populations exposed to antibiotics.\n\nPreviously, laboratory studies have extensively characterized how large bacterial populations (e.g., ~108 cells in a culture) decline under antibiotic treatment; e.g., see (Nielsen et al., 2011; Ferro et al., 2015; Regoes et al., 2004). These studies have led to the current, deterministic model of the pharmacodynamics, that\u00a0is, the population dynamics of bacteria exposed to antibiotics follows a predetermined course and can be predicted deterministically a priori; see (Regoes et al., 2004; Czock et al., 2009) and references therein. This deterministic framework successfully captures the reproducible dynamics of a large bacterial population declining to a small population under antibiotic treatments. However, due to their experimental detection limits (e.g., >>100 cells [Nielsen et al., 2011; Ferro et al., 2015]), the dynamics of a small population undergoing extinction have not been directly characterized.\n\nInoculum size as small as a few cells can produce infections (Jones et al., 2006; Haas and Rose, 1994; Jones et al., 2005; Tuttle et al., 1999; DuPont et al., 1989; Hara-Kudo and Takatori, 2011; Kaiser et al., 1992). Thus, if antibiotics manage to reduce a large bacterial population to a very small population but fail to eradicate it, the survivors may replicate and restore infections. Additionally, these survivors are more likely to develop antibiotic resistance, making subsequent antibiotic treatment of the restored population more difficult (Gullberg et al., 2011; Kohanski et al., 2010; Lopatkin et al., 2016; Dagan et al., 2001; Allen et al., 2014). Thus, in many cases, including life-threatening infections or even minor infections in immuno-compromised patients, treatment success depends on complete clearance of the infection-causing bacteria. To effectively clear bacteria using antibiotics, it is critical that we understand not only how a large population of bacteria declines to a small population, but also how a small population eventually goes extinct. Extensive studies focused on the former process (discussed above). The present study focuses on the latter process.\n\nBy employing a conventional plate assay, single-cell microscopy, and quantitative modeling, we directly characterized the extinction dynamics of antibiotic-susceptible Escherichia coli populations. We found that antibiotics known to kill bacteria (i.e., bactericidal drugs) induce population fluctuations. At high drug concentrations, all populations go extinct (as expected), but the extinction time is highly variable and cannot be deterministically predicted a priori. Even at low drug concentrations, due to these fluctuations, populations go extinct with a non-zero probability. We found that the Markovian birth-death model quantitatively accounted for the probabilistic occurrence of population extinction. Informed by the model, we then altered the extinction probability by manipulating cell growth and showed that a bacterial population could be eradicated at low drug concentrations that were previously deemed inefficacious. Our work demonstrates that the deterministic knowledge obtained from previous studies of large bacterial populations cannot be extrapolated to population extinction. Our findings also have significant implications for the prediction of treatment outcomes, development of innovative therapies, and assessment of antibiotic efficacy.\n\n## Results\n\n### Contrasting trends in plating efficiency for bacteriostatic and bactericidal drugs\n\nPrevious studies of large populations have established the \u2018minimum inhibitory concentration\u2019 (MIC; the lowest concentration of the drug that inhibits population growth) as the most critical parameter for characterizing the dynamics of a bacterial population under antibiotics (Regoes et al., 2004; Czock et al., 2009; Craig, 1998; Falagas et al., 2012). The dynamics of bacterial populations exposed to different concentrations of antibiotics have been examined and modeled deterministically in relation to the MIC, as follows. First, without drugs, the growth rate of cells, \u03bb, is higher than the death rate, \u03d5 (i.e., \u03bb > \u03d5), and thus a bacterial population always grows. When drug concentration increases, as long as the concentration remains below the MIC (i.e., sub-MIC), growth rate is higher than death rate (\u03bb > \u03d5), and thus a population still grows, albeit at slower rates. When the drug concentration increases further and reaches the MIC, growth rate becomes equal to death rate (\u03bb = \u03d5), and the population size is maintained at a constant level. Only at drug concentrations above the MIC does a bacterial population decline. Extrapolating this deterministic knowledge to population extinction, studies often claimed that maintaining drug concentrations above the MIC was absolutely essential to eradicate bacterial populations. As will become evident later, our data challenge this deterministic framework.\n\nAs a first step to examine the dynamics of a small population in relation to the MIC, we used a plate assay and characterized how single E. coli cells grew and formed colonies at various antibiotic concentrations. Antibiotic-susceptible, wild-type (WT) E. coli cells were cultured in liquid LB medium without antibiotics and then spread on LB agar plates containing increasing concentrations of antibiotics. After 18 hr of incubation, the number of colony-forming units (NCFU) was determined. By normalizing the NCFU to that for an antibiotic-free plate (N0CFU), we then obtained the plating efficiency (=NCFU/N0CFU), which indicates the fraction of cells forming colonies. Following the definition of MIC as the lowest drug concentration that inhibits population growth, the lowest concentration yielding no visible colonies on the plates was defined as the MIC here. See Figure 1\u2014figure supplement 1 for a detailed illustration of this procedure and Supplementary file 1 for the MIC values for all of the antibiotics examined.\n\nWhen we performed this plate assay for various antibiotic drugs, we observed two strikingly distinct trends, which depended on whether the drug used was bacteriostatic (which suppresses cell growth) or bactericidal (which induces cell death). For bacteriostatic drugs, at increasing concentrations, the plating efficiency remained nearly constant and abruptly dropped to zero when the drug concentration reached the MIC (Figure 1A); the grey line was obtained from a linear regression analysis of the whole data set below 0.75 \u00d7 MIC (see Figure 1A caption for details). This trend indicates that almost every single cell spread on the plate grew and formed colonies at a wide range of sub-MIC drug concentration, and no cells formed colonies at (and above) MIC. This observation, suggesting homogeneous population dynamics, agrees with the deterministic prediction discussed above. Additionally, we observed a decrease in colony size at increasing drug concentrations (Figure 1\u2014figure supplement 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/32976/elife-32976-fig1-v3.jpg)\n\n**Figure 1.:** (A) When we performed the plate assay using bacteriostatic drugs, NCFU was generally maintained at increasing drug concentrations. See Figure 1\u2014figure supplement 1 for a detailed illustration of how this plot was made. A linear regression analysis was performed for the whole data set below 0.75\u00a0\u00d7\u00a0MIC, resulting in the grey line (slope = \u22120.05, intercept\u00a0=\u00a00.9942, R-squared\u00a0=\u00a00.99). Colony size decreased at increasing drug concentrations (Figure 1\u2014figure supplement 2). (B) For bactericidal drugs, NCFU decreased at increasing drug concentrations, indicating heterogeneous population dynamics of bacteria. A linear regression analysis was performed for the whole data set, and the result was plotted as a grey line (slope = \u22121.07, intercept\u00a0=\u00a01.10, R-squared\u00a0=\u00a00.79). For both groups of drugs, the lowest concentration yielding no colonies was defined as the MIC. The Supplementary File 1 lists the MICs for all drugs examined in this study. We plotted plating efficiency for each antibiotic in separate panels in Figure 1\u2014figure supplement 4. (C) For each bactericidal drug used in the experiment (for which the results were shown in Figure 1B), we picked a few colonies from the agar plate exhibiting a plating efficiency of\u00a0~0.5 (e.g., near 0.6\u00a0\u00d7\u00a0MIC) and plated them immediately on fresh agar plates containing various concentrations of the same drug. The plating efficiency was similar or marginally lower on the second plating, possibly because exposure to the antibiotics on the first plate adversely affected the cells and rendered them more susceptible to the antibiotics on the second plating. See Figure 1\u2014figure supplement 3 for similar results for other drugs. Therefore, the ability of bacteria to grow and form colonies on plates containing bactericidal drugs was not heritable. We performed at least two biological repeats for all the experiments and plotted the mean here. The error bars represent one standard deviation from the repeats.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32976/elife-32976-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Antibiotic-susceptible, wild-type E. coli cells were spread on agar plates containing increasing concentrations of rifampicin. After 18 hr of incubation, the number of colony forming units (NCFU) per milliliter was determined; see panel A. By normalizing NCFU to that for an antibiotic-free plate (N0CFU), we obtained the plating efficiency (=NCFU/N0CFU); see panel B. We defined the lowest drug concentration at which the plating efficiency was zero as the MIC: MIC\u00a0=\u00a010 \u00b5g/ml for rifampicin. We normalized the drug concentration to the MIC value; see panel C. We repeated this procedure for various antibiotics and plotted the results in Figure 1A and B.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32976/elife-32976-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** At increasing concentrations, the size of the colonies decreased. The figure shows the sizes of the colonies normalized to the size on the plate without antibiotics. We performed at least two biological repeats for all the experiments and the error bars represent one standard deviation from the repeats. The grey line was obtained from a linear regression analysis of the whole data set: slope = \u22120.83, intercept\u00a0=\u00a00.95, R-squared\u00a0=\u00a00.80.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/32976/elife-32976-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The data for ciprofloxacin, 6-APA, streptomycin, and ofloxacin were reported here. (The data for cefsulodin, vancomycin, kanamycin, and rifampicin were reported in Figure 1C).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/32976/elife-32976-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Here, we plot it for each antibiotic in separate panels.\n\nFor bactericidal drugs, at increasing concentrations, the plating efficiency decreased gradually from 1 to 0 (Figure 1B); the grey line was obtained from a linear regression analysis of the whole data set (see Figure 1B caption for details). This trend contrasts with our finding for bacteriostatic drugs (compare the grey lines in Figure 1A and B) and cannot be explained by the deterministic model. In the literature, other studies have reported a similar gradual decrease in the plating efficiency (Liu et al., 2011; Ernst et al., 2002; Dong et al., 2000). However, those studies primarily concerned how to better determine the MIC in the face of such a gradual decrease, and have not characterized population dynamics underlying the gradual decrease.\n\n### A subsequent plate assay reveals a lack of heritable resistance\n\nThe plating efficiency between 0 and 1 indicates heterogeneous colony formation. In the plate assay above, we found that at ~0.6 \u00d7 MIC, the plating efficiency was ~0.5, meaning that approximately 50% of the cells plated formed colonies and 50% did not. One possible explanation is that the colony-forming cells were intrinsically more resistant to the drugs than the cells that did not form colonies, subsequently giving rise to resistant daughter cells (i.e., heritable resistance). To examine this possibility, for each bactericidal drug used in the experiment (for which the results are shown in Figure 1B), we picked colonies from agar plates exhibiting a plating efficiency of ~0.5 (near 0.6 \u00d7 MIC), suspended them in liquid medium, and immediately plated them on fresh agar plates containing various concentrations of the same drug. The results were plotted in Figure 1C and Figure 1\u2014figure supplement 3. Contrary to our expectation, the plating efficiency of the second plating was about the same as that of the first plating, or in some cases, marginally lower (possibly because cells were challenged with drugs twice consecutively). This observation rules out heritable resistance as an explanation for heterogeneous colony formation at sub-MIC drug concentrations.\n\n### Bactericidal drugs induce stochastic fluctuations in population dynamics\n\nOur data above showing the absence of heritable resistance in the surviving populations suggest the possible involvement of stochasticity. That is, bactericidal drugs might induce stochastic fluctuations in the bacterial population size. To investigate this possibility, we performed a plate assay as above and followed the population dynamics of growing micro-colonies at single-cell resolution; we spread cells on agar plates, and rather than waiting for 18 hr and counting colonies visible to the naked eye, we examined how isolated single cells grew to form micro-colonies using time-lapse microscopy. First, as a control, we examined the dynamics in the absence of antibiotics (Video 1). We counted the number of growing cells in each colony and plotted the number versus time (Figure 2A). The colonies proliferated homogeneously, meaning that different colonies grew similarly. We then repeated the experiment using a bacteriostatic drug (chloramphenicol, thiolutin, or tetracycline) at a sub-MIC level. Visually inspecting the image sequences, we found that cells stably grew, albeit at lower rates (Video 2). The number of growing cells in each micro-colony increased homogeneously and similarly (Figure 2B and Figure 2\u2014figure supplement 1). Previously, we developed a microfluidic chemostat for cell culture (Kim et al., 2012; Deris et al., 2013). When we repeated these experiments using this device, we again observed the same homogeneous population dynamics (Figure 2\u2014figure supplement 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/32976/elife-32976-fig2-v3.jpg)\n\n**Figure 2.:** We characterized how cells grow and form micro-colonies on LB agar plates containing different concentrations of antibiotics using time-lapse microscopy. At time zero, we transferred cells growing in antibiotic-free LB liquid medium to a LB agar plate, and confirmed that individual cells were spread out and isolated. Setting up a time-lapse imaging experiment after the transfer took 1\u00a0~\u00a02 hr, which is why there is a gap in the data immediately after time zero (dashed lines). The experiments were independently repeated twice (biological repeats) and the data from one experiment are shown here. (A, B) We counted the number of growing cells in each micro-colony (represented by a different color). In the absence of antibiotics (panel A) or with a sub-MIC level of a bacteriostatic drug (panel B, 0.7\u00a0\u00d7\u00a0MIC of chloramphenicol), the number increased similarly for different colonies, revealing homogeneous population growth. Example image sequences are shown in Videos 1 and 2. The data are replotted on a semi-log scale (insets). Such homogeneous population growth was observed for other bacteriostatic drugs (thiolutin and tetracycline) as well; see Figure 2\u2014figure supplement 1. When we repeated the experiment using a microfluidic device, we again observed the same homogeneous population dynamics (Figure 2\u2014figure supplement 2A). (C) In contrast, the population dynamics of bacteria exposed to a bactericidal drug were highly heterogeneous. An example image sequence was shown in Video 3. The number of growing cells within micro-colonies at 0.8\u00a0\u00d7\u00a0MIC of cefsulodin is plotted here; the result shows stochastic population fluctuations. Such population fluctuations were again observed when experiments were repeated using other bactericidal drugs (ofloxacin, kanamycin, and 6-APA); see Figure 2\u2014figure supplement 3A\u2013C. The light red-shaded region indicates the number equal to zero (i.e., population extinction). When we repeated these experiments using a microfluidic device, we again observed population fluctuations (Figure 2\u2014figure supplement 2B\u2013D). (D) Our model predicts that the probability of population extinction increases linearly with death rate, with the slope being 1 / \u03bb (the solid line). We experimentally characterized the extinction probability (Figure 2\u2014figure supplement 4), and the death rate (Figure 2\u2014figure supplements 5\u20136), at different concentrations of bactericidal drugs. Using these data, we obtained the relationship between the extinction probability and the death rate, and plotted it here (green circles: cefsulodin, pink squares: ofloxacin, and grey triangles: 6-APA). We found good agreement between the model prediction and experimental data. Note that at increasing drug concentrations, \u03bb changed little (Figure 2\u2014figure supplement 6B), and thus was taken as a constant in the analysis here.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32976/elife-32976-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** See Figure 2 and its caption for details. The data for chloramphenicol were plotted in Figure 2B. The data for tetracycline (0.7 \u00d7 MIC) and thiolutin (0.5 \u00d7 MIC) were plotted here. The data were replotted on a semi-log scale (insets). In our plate assay (data shown in Figure 1A), we plated cells on agar containing increasing concentrations of bacteriostatic drugs and, after 18 hr of incubation, counted the number of visible colonies. The lowest drug concentrations yielding no visible colonies were defined as the MIC. When we performed our microscope experiments at the MICs of bacteriostatic drugs, we observed that some cells still grew, albeit at very low rates, and micro-colonies expanded very slowly. After 18 hr, the colonies reached the size less than 200 \u00b5m (estimated from the microscope image). This is too small and difficult to detect with the naked eye, which was why we failed to notice in our plate assay. Also, at these concentrations of chloramphenicol and tetracycline, we observed filamentation of some cells. Some of these filamentous cells divided and produced normal-looking daughter cells, which grew properly afterwards. There were also filamentous cells that did not resume normal growth within our observation window (~24 hr).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32976/elife-32976-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** We cultured E. coli cells in this device. Our microfluidic chemostat has about one hundred micro-chambers. We inoculated these chambers by loading single cells into them and then exposed them to 0.8\u00a0\u00d7\u00a0MIC of various drugs. Then, using time-lapse microscopy, we recorded how one cell in each chamber grew and formed a population. (There were chambers that were initially inoculated with multiple cells. We did not record cell growth in such chambers). By counting the number of cells at different times in each chamber, we determined the trajectory of population size for each population.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/32976/elife-32976-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** See Figures 2C and 3A, and their captions for details.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/32976/elife-32976-fig2-figsupp4-v3.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Here, we plotted the probability of colony extinction (P0) at different drug concentrations (green circles: cefsulodin, pink squares: ofloxacin, and grey triangles: 6-APA).\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/32976/elife-32976-fig2-figsupp5-v3.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Here, we described our determination procedure using the data from 0.8\u00a0\u00d7\u00a0MIC of cefsulodin as an example. As shown in the Video 3, live cells continued to elongate and divide. Every now and then, these cells underwent lysis (i.e., cell death). We counted the number of live cells,$n$, and the number of dead cells, $n_{D}$, in each colony. We then averaged them across\u00a0~20 colonies, which yielded a temporal trajectory for $\u27e8n(t)\u27e9$ and another trajectory for $\u27e8n_{D}(t)\u27e9$. Equation A9 predicted that $\u27e8n\u27e9$ increases exponentially over time, and this prediction was supported by a linear pattern in the temporal semi-log plot; see panel A (a linear regression analysis was performed, resulting in the blue line (slope\u00a0=\u00a00.0058, intercept\u00a0=\u00a0\u22120.556, R-squared\u00a0=\u00a00.9971)). The slope of this linear increase is determined by $\\lambda\u2212\u03d5$ (See Equation A9). Equation A12 predicted a linear relation between $\u27e8n\u27e9$ and $\u27e8n_{D}\u27e9$, and this prediction was supported by a linear pattern in panel B (a linear regression analysis was performed, resulting in the green line (slope\u00a0=\u00a00.6770, intercept\u00a0=\u00a0\u22120.998, R-squared\u00a0=\u00a00.9896)). The slope of this linear pattern is equal to$\\frac{\u03d5}{\\lambda\u2212\u03d5}$(see Equation A12). Analyzing these slopes, we determined \u03bb and \u03d5 to be 1.35/hr and 0.54/hr. We repeated this procedure for various drug concentrations, as well as for other drugs. The results were plotted in Figure 2\u2014figure supplement 6.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/32976/elife-32976-fig2-figsupp6-v3.jpg)\n\n![Video 1.](https://cdn.elifesciences.org/articles/32976/elife-32976-video1.mp4.jpg)\n\n**Video 1.:** We characterized how cells grew and formed micro-colonies on LB agar using time-lapse microscopy. An example image sequence is shown here. The time interval between each frame is 20 min.\n\n![Video 2.](https://cdn.elifesciences.org/articles/32976/elife-32976-video2.mp4.jpg)\n\n**Video 2.:** We characterized how cells grew and formed micro-colonies on LB agar using time-lapse microscopy. 0.7\u00a0\u00d7\u00a0MIC of chloramphenicol was used. An example image sequence is shown here. The time interval between each frame is 19 min.\n\nNext, we characterized population dynamics for a bactericidal drug (cefsulodin, ofloxacin, kanamycin, or 6-APA), at a sub-MIC level. We found that the population dynamics were highly stochastic (Video 3). Visual inspection of such image sequences indicated that within a given population, some cells were killed stochastically, whereas other cells survived and divided. Such demographic stochasticity would lead to random fluctuations in the population size. Indeed, the number of growing cells in each colony fluctuated randomly over time (Figure 2C and Figure 2\u2014figure supplement 3A\u2013C). These fluctuations led to dramatically different dynamics for different colonies, even though they originated from genetically identical cells and were cultured under homogeneous antibiotic conditions. When we repeated these experiments using the microfluidic chemostat, we again observed significant population fluctuations (Figure 2\u2014figure supplement 2B\u2013D).\n\n![Video 3.](https://cdn.elifesciences.org/articles/32976/elife-32976-video3.mp4.jpg)\n\n**Video 3.:** We characterized how cells grew and formed micro-colonies on LB agar using time-lapse microscopy. 0.8\u00a0\u00d7\u00a0MIC of cefsulodin was used. An example image sequence is shown here. The time interval between each frame is 15 min.\n\nImportantly, the fluctuations drove some colonies into extinction (the light red-shaded area in Figure 2C). We counted the number of colonies that went extinct and plotted the probability of colony extinction at various drug concentrations; here, we are interested in colony extinction because it is equivalent to bacterial clearance, which means treatment success. Figure 2\u2014figure supplement 4 showed that the extinction probability increased with increasing drug concentrations. This increase in the extinction probability agrees with the trend of decreasing plating efficiency we found above (Figure 1B).\n\n### The effects of bactericidal drugs on cell growth and death\n\nA population will undergo extinction if cells die more frequently than divide. Because bactericidal drugs induce cell death, an increase in extinction probability at higher drug concentrations is expected to be due to an increase in the rate of cell death, \u03d5. Additionally, bactericidal drugs inflict damage on cells (Belenky et al., 2015; Lobritz et al., 2015). Thus, the rate of cell growth, \u03bb, might decrease at higher drug concentrations, which could also contribute to colony extinction. We next sought to determine how bactericidal drugs affect \u03d5 and \u03bb. Previous studies of population growth have shown that at a higher concentration of bactericidal drugs, the \u2018net growth rate\u2019, which is equal to \u03bb\u2212 \u03d5, decreases (Regoes et al., 2004). But, to separately resolve changes in \u03d5 and \u03bb, the growth and death of cells must be examined at single-cell resolution. We analyzed the single-cell-level image sequences we obtained above (see Figure 2\u2014figure supplement 5 for details of the analysis), and determined \u03bb and \u03d5 at various concentrations of bactericidal drugs. We found that at increasing drug concentrations, \u03d5 increased (Figure 2\u2014figure supplement 6A). But \u03bb changed little, remaining nearly constant (Figure 2\u2014figure supplement 6B). Therefore, bactericidal drugs have significant effects on cell death, but not on cell growth.\n\n### A simple, stochastic model of the population dynamics accounts for stochastic clearance of bacterial populations\n\nOur data above suggest that an increase in the probability of population extinction at higher drug concentrations (Figure 2\u2014figure supplement 4) is likely due to an increase in the rate of cell death (Figure 2\u2014figure supplement 6). To quantitatively understand the relationship between the extinction probability and death rate, we employed a stochastic model, known as the Markovian birth-and-death process, that has been widely used to study the basic features of stochastic population dynamics (Novozhilov et al., 2006; Pavel Krapivsky and Ben-Naim, 2010; Kendall, 1948). This model contains two parameters, the rate of cell growth and death, \u03bb and \u03d5, respectively. Each individual cell can divide or die stochastically with the probabilities determined by these parameters. Due to this demographic stochasticity, the number of cells within a population, n, fluctuates over time. Thus, n cannot be predicted deterministically but only probabilistically, and the probability is described as follows,\n\n$$\nP_{n}.=\\lambda(n\u22121)P_{n\u22121}\u2212(\\lambda+\u03d5)nP_{n}+\u03d5(n+1)P_{n+1},\n$$\n\nwhere Pn refers to the probability of n cells being\u00a0present\u00a0in a population. The key boundary condition in this model is that once n reaches 0, it cannot change afterward. Known as an \u2018absorbing boundary\u2019, this condition reflects the biological reality that once a population goes extinct, it cannot revive. Therefore, a solution of this model for n\u00a0=\u00a00 (i.e., Pn=0 or simply P0) describes the dynamics of population extinction. Please see Appendix 1 for the detail and solution.\n\nWe first considered the extinction probability P0 at low drug concentrations in which the death rate is lower than the growth rate (\u03d5 < \u03bb). In this range, P0 is given by their ratio, P0 = \u03d5 / \u03bb; see Equation A6. Thus, if the death rate is zero (\u03d5\u00a0=\u00a00), the extinction probability P0 is 0, meaning n always increases (this makes intuitive sense). As the death rate increases (0 < \u03d5 < \u03bb), P0 increases and becomes non-zero, meaning that n may stochastically reach the absorbing boundary, agreeing with our observation of stochastic population extinction at sub-MIC drug concentrations; Figure 2C shows that some populations reached n\u00a0=\u00a00 (marked by the light red-shaded area), while other populations thrived (also see Figure 2\u2014figure supplement 3A\u2013C). The solution P0 = \u03d5 / \u03bb predicts that the extinction probability increases linearly with death rate, with the slope being 1 / \u03bb (the solid line in Figure 2D). We sought to test this prediction quantitatively by comparing it with experimental data. Above, analyzing time-lapse microscope images, we obtained the probability of population extinction (Figure 2\u2014figure supplement 4), and the death rate (Figure 2\u2014figure supplement 6), at different concentrations of bactericidal drugs. Using these data, we obtained the relationship between the probability of population extinction and the death rate, and plotted it in Figure 2D. We found good agreement between the model prediction and experimental data (compare the solid line and symbols in Figure 2D).\n\nNext, using the quantitative relationship we found above (P0 = \u03d5 / \u03bb), we will specify the condition for the MIC. In our plate assay (Figure 1B), we observed that the plating efficiency decreases at higher drug concentrations (in the sub-MIC range) and reaches zero at the MIC. Also, the quantitative relationship we found above showed that extinction probability increases at higher drug concentrations (consistent with a decrease in the plating efficiency), reaching one when the death rate is equal to the growth rate (see the dashed line in Figure 2D); thus, P0\u00a0=\u00a01 at \u03d5 = \u03bb. The extinction probability equal to one (P0\u00a0=\u00a01) means that all colonies go extinct, which corresponds to zero plating efficiency. The drug concentration at which the plating efficiency reaches zero is the MIC (Figure 1B). Taken together, at the MIC, the plating efficiency is zero because extinction probability is one (P0\u00a0=\u00a01), and the extinction probability is one because the growth rate and death rate are equal to each other (\u03d5 = \u03bb). In short, \u03d5 = \u03bb at the MIC.\n\nNext, we considered drug concentrations above the MIC, where the death rate is higher than the growth rate (\u03d5 > \u03bb). In this range, the model predicts that all populations eventually go extinct (P0\u00a0=\u00a01 in Equation A6); this makes intuitive sense. Importantly, due to population fluctuations, populations are expected to go extinct at various times (Equation A5), meaning that the number of live populations (the populations that have not undergone extinction yet) decreases gradually over time. The model predicts that this decrease can be approximated by an exponential decay in the long time limit ($t\u226b1/|\u03d5\u2212\\lambda|$); see Equation A7. We tested these model predictions by repeating time-lapse microscope experiments at drug concentrations above the MIC. All the populations indeed went extinct at various times (Figure 3A and Figure 2\u2014figure supplement 3D\u2013F). When we counted the number of live colonies, this number decreased gradually over time (Figure 3B). In this semi-log plot, the decrease was linear (compare it with the dashed line), consistent with the model prediction of an exponential decay (Equation A7).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/32976/elife-32976-fig3-v3.jpg)\n\n**Figure 3.:** (A, B) In Figure 2C and Figure 2\u2014figure supplement 3A\u2013C, we showed the population dynamics of bacteria exposed to sub-MIC levels of bactericidal drugs. Here, we show the dynamics at drug concentrations above MIC (1.2\u00a0\u00d7\u00a0MIC). The number of growing cells within micro-colonies for cefsulodin is plotted in panel A. The results for other bactericidal drugs were plotted in Figure 2\u2014figure supplement 3D\u2013F. We observed that all populations went extinct at various times. We then counted the number of live colonies (colonies that have not undergone extinction yet) at various times (~150 colonies monitored). The number decreased gradually over time (green circles: cefsulodin, pink squares: ofloxacin, and grey triangles: 6-APA); see panel B. The decrease was linear in a semi-log plot, consistent with the model prediction of an exponential decay (Equation A7). (C) We characterized the extinction probability of populations starting with\u00a0~640 cells. We prepared a large volume of a cell culture with the cell density of\u00a0~640 cells/ 200 \u00b5L, supplemented the culture with a low concentration of cefsulodin (23 \u00b5g/ml), and then distributed 200 \u00b5L of the cell culture equally to 12 isolated chambers in a microtiter plate. We repeated this procedure using higher cefsulodin concentrations (but maintaining the inoculum size). We then incubated the microtiter plate overnight. By counting the chambers that became turbid or clear, we calculated the extinction probability. We used a heat map to graphically represent the probability; for illustration purpose, we also added the values of the probability to the plot. At low cefsulodin concentrations (to the left of the dashed line), all chambers became turbid (P0\u00a0=\u00a00). At high concentrations (to the right of the solid line), all chambers were clear (P0\u00a0=\u00a01); thus, the solid line indicates MIC. At intermediate concentrations (between the dashed and solid lines), we observed heterogeneous results (only some chambers were clear, 0\u00a0<\u00a0P0\u00a0<\u00a01). (D) We repeated this experiment using different inoculum sizes and bactericidal drugs. Please note that although we prepared a large volume culture and distributed it equally to chambers, the number of cells in each chamber might vary. We found that the variation was\u00a0~10% or less. See Appendix 3 for details.\n\n### A population with large inoculum size is subject to stochastic clearance at sub-MIC drug concentrations\n\nOur findings above indicate that the simple stochastic model can adequately capture the extinction dynamics of populations exposed to bactericidal drugs. What is striking in our findings is that, due to drug-induced population fluctuations, a bacterial population may undergo extinction even at sub-MIC concentrations, the concentrations that were previously deemed inefficacious to clear bacteria. We have established this result by examining the dynamics of colonies originated from single bacterial cells, the smallest possible inoculum size. Clinical studies have characterized the bacterial inoculum size that can produce infections (i.e., infectious dose). The infectious dose can be as low as one (Jones et al., 2006; Haas and Rose, 1994; Jones et al., 2005), but is generally 10\u2013100 (Tuttle et al., 1999; DuPont et al., 1989; Hara-Kudo and Takatori, 2011; Kaiser et al., 1992) or larger (Kothary and BABU, 2001; Gama et al., 2012). It is expected that, with larger inoculum size, a population experiences less fluctuations (because demographic stochasticity gets averaged out). When we estimated the magnitudes of fluctuations by the coefficient of variation (CV), that\u00a0is, the standard deviation divided by the mean, using our model, Equation A16 shows decreasing CV with increasing inoculum size, supporting the expectation above. Interestingly, Equation A16 also predicted that the magnitude of population fluctuations depends on rates of cell growth and death as well (Equation A16); CV increases as the death rate approaches the growth rate, meaning that population fluctuations become intensified when neither growth nor death is a dominant event. This prediction, together with our finding above that the death rate approaches the growth rate as the drug concentration increases to the MIC (Figure 2D), suggests that near the MIC, a population with relatively large inoculum size may still be prone to stochastic extinction.\n\nTo test this possibility, we experimentally characterized stochastic clearance of a bacterial population starting with different inoculum sizes. First, we prepared a large volume of a cell culture with the cell density of\u00a0~640 cells/ 200 \u00b5L, supplemented the culture with a low concentration of cefsulodin (23 \u00b5g/ml), and then distributed 200 \u00b5L of the cell culture equally to 12 isolated chambers in a microtiter plate. Here, an isolated cell culture in each chamber represents a separate population. We repeated this procedure using higher cefsulodin concentrations (but maintaining the inoculum size). We then incubated the microtiter plate overnight. We found that, at low cefsulodin concentrations (to the left of the dashed line in Figure 3C), all chambers became turbid, meaning all populations grew. Thus, the probability of population extinction was zero (P0\u00a0=\u00a00). In Figure 3C, we used a heat map to graphically represent the probability (we also added the values of the probability in the graph for additional clarification). At high concentrations (to the right of the solid line), all chambers were clear (P0\u00a0=\u00a01); thus, the solid line indicates the MIC. At intermediate concentrations (between the dashed and solid lines), we observed heterogeneous population growth; some chambers were clear while others were turbid (0\u00a0<\u00a0P0 < 1). Subsequent plating of the clear cultures on drug-free LB agar plates yielded no colonies, indicating population extinction.\n\nWe then repeated this experiment by using different inoculum sizes and bactericidal drugs. The results were plotted as heat maps in Figure 3D; here, the Y axis represents different inoculum sizes. As above, a solid line represents the MIC, above which all chambers were clear (P0\u00a0=\u00a01). MIC values were higher at higher cell densities. We note that the higher MIC at higher cell density (inoculum effect) has been observed previously and is being actively studied by others in the field (Artemova et al., 2015; Brook, 1989; Tan et al., 2012; Karslake et al., 2016). Thus, it is not the focus of our study; rather, we focus on stochastic clearance below the MIC. As above, a dashed line represents the concentrations below which all chambers were turbid (P0\u00a0=\u00a00). The area between the dashed and solid lines indicates the range of drug concentrations and inoculum sizes that exhibited heterogeneous population growth (0\u00a0<\u00a0P0\u00a0<\u00a01), meaning stochastic clearance. Figure 3D shows that stochastic clearance occurs even for a population starting with as large as\u00a0~20,000 cells, inoculum size much larger than infectious doses for many infectious diseases.\n\n### Alteration of the extinction probability to facilitate bacterial eradication at sub-MIC drug concentrations\n\nPreviously, antibiotic treatment at sub-MIC levels was not considered a viable option for bacterial eradication, because the deterministic model predicts that all bacterial populations should grow at sub-MIC levels (i.e., antibiotic treatment failure). However, our experimental results and stochastic model above indicate that at sub-MIC levels of bactericidal drugs, a population might undergo extinction stochastically. An increase in this probability while keeping the drug concentration low would be therapeutically useful; with an increased probability of extinction, sub-MIC ranges of drugs could be used to eradicate bacteria reliably. We therefore employed our model to explore how the extinction probability can be altered by means other than changing the bactericidal drug concentration.\n\nOur model indicates that the extinction probability is determined by the ratio of the death and growth rates (P0 = \u03d5 /\u03bb; Equation A6). Thus, based on the model, a reduction in growth rate (denominator) should lead to an increase in the extinction probability. Growth rate can be reduced by using poor growth media, or alternatively using bacteriostatic drugs. This means, for a sub-MIC concentration of a bactericidal drug (for which the extinction probability is less than 1), either a switch to poor growth media or addition of a sub-MIC level of a bacteriostatic drug would lead to an increase in the extinction probability. We note that the latter represents combination therapies, and other studies have characterized bacterial responses to combination therapies (Bollenbach, 2015). However, these studies primarily concerned deterministic changes in the MIC of a large population. Conversely, our study focuses on how combination therapies affect stochastic occurrence of population extinction. Another difference is our focus on sub-MIC drug ranges, an important point given previous research showing that the effects of drug combinations at the MIC might differ from those at sub-MIC levels (Ocampo et al., 2014).\n\nTo characterize the extinction probability, we introduced the plating inefficiency (=\u00a01 \u2013 plating efficiency); the plating efficiency reflects the probability that a bacterial cell forms a population of a bacterial colony, and therefore, the plating inefficiency reflects the probability of population extinction. We first calculated the plating inefficiency using the plate assay results in Figure 1B and plotted it as white columns in Figure 4A; thus, white columns represent the extinction probability in rich growth media (LB) with bactericidal drugs alone. To test the effect of our growth reduction strategy, we repeated the plate assay, either by replacing LB with casamino acids (a poor nutrient source that leads to slower growth than LB; see Figure 4\u2014figure supplement 1), or by adding a sub-MIC concentration of chloramphenicol or tetracycline. The plating inefficiency obtained with these treatments was plotted as solid columns in Figure 4A. The rise of solid columns above white columns indicates that growth reduction indeed led to an increase in the extinction probability, in agreement with our prediction.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/32976/elife-32976-fig4-v3.jpg)\n\n**Figure 4.:** (A, B) Previously, we plated WT (antibiotic-susceptible) E. coli cells on LB agar plates at various concentrations of cefsulodin and plotted the plating efficiency in Figure 1B. Here, we plotted the plating inefficiency (1- plating efficiency) as white columns in the top row; the plating inefficiency represents the extinction probability. We then repeated a plate assay, either by using casamino acids agar plates (left), or by adding a sub-MIC concentration of a bacteriostatic drug, chloramphenicol (0.7\u00a0\u00d7\u00a0MIC, middle) or tetracycline (0.5\u00a0\u00d7\u00a0MIC, right), to LB agar plates. Note that casamino acids lead to slower growth than LB; see Figure 4\u2014figure supplement 1. We plotted the plating inefficiency obtained with these treatments as solid columns in panel A. We repeated this procedure for rifampicin (middle row) and vancomycin (bottom row), for kanamycin and 6-APA (Figure 4\u2014figure supplement 3), and for ciprofloxacin and ofloxacin (Figure 4\u2014figure supplement 4). Note that how generally growth reduction leads to an increase in the extinction probability depends on whether \u03d5 is dependent on \u03bb or not; see the main text and Figure 4\u2014figure supplement 2. We then used antibiotic-resistant strains and repeated these experiments (panel B). Please note that the MICs of these mutants were five to ten fold higher than those of the WT strain. The rise of solid columns above white columns indicates an increase in the extinction probability. We performed at least two biological repeats for all the experiments and plotted the mean. The error bars represent one standard deviation from the repeats.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32976/elife-32976-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The doubling time was 18 mins and 33 min respectively.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32976/elife-32976-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** We then stopped cell growth in cultures by depriving the cells of nutrients, added 1.5\u00a0\u00d7\u00a0MICs, and measured SF. SF was one for kanamycin and 6-APA (blue columns), indicating that they were not capable of killing non-growing cells. Other drugs (red columns) were capable of killing non-growing cells, but with lower efficacy as SF was not zero. Lower susceptibility of non-growing bacteria to drugs has been previously documented (e.g., see (Levin and Rozen, 2006)). We performed two biological repeats and plotted the mean. The error bars represent one standard deviation from the repeats.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/32976/elife-32976-fig4-figsupp3-v3.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Here, we show that the growth reduction strategy does not work for these two antibiotics. White columns indicate the plating inefficiency without the growth reduction treatment. The solid columns are with treatment. In the figure, overlapping columns were from the same drug concentrations, but their centers were shifted to visualize both white and solid columns. Please see the main text and the caption of Figure 4 for detail. We performed two biological repeats and plotted the mean. The error bars represent one standard deviation from the repeats.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/32976/elife-32976-fig4-figsupp4-v3.jpg)\n\n**Figure 4\u2014figure supplement 4.:** The figure shows that for ofloxacin or ciprofloxacin (quinolone drugs), the growth reduction strategy did not lead to a significant change in the extinction probability, consistent with the previous study. We performed two biological repeats and plotted the mean. The error bars represent one standard deviation from the repeats.\n\nWe next examined how generally such an increase in the extinction probability might occur. The extinction probability depends on the growth rate (\u03bb) and death rate (\u03d5), which we assumed to be independent. Because the probability is equal to their ratio (\u03d5/\u03bb; Equation A6), this growth reduction strategy might not work when \u03d5 is not independent but decreases in response to a decrease in \u03bb. Such coupling between \u03d5 and \u03bb could occur for bactericidal drugs that kill only growing cells, possibly because these drugs target processes critical for cell growth. This means that, for bactericidal drugs that exhibit a killing rate of zero for non-growing cells (i.e., \u03d5\u2192 0 when \u03bb\u2192 0), neither the switch to poor growth medium nor addition of bacteriostatic drugs would increase the extinction probability. To test this possibility, we first identified such bactericidal drugs; we stopped cell growth in cultures by depriving the cells of nutrients, added bactericidal drugs at concentrations capable of eradicating growing cells, and then determined which drugs were no longer capable of killing the bacteria. As shown in Figure 4\u2014figure supplement 2, killing was completely abolished for kanamycin and 6-APA, indicating that \u03d5\u2192 0 when \u03bb\u2192 0. As expected, for these drugs, neither the switch to poor growth medium nor addition of bacteriostatic drugs resulted in an increase in the extinction probability (Figure 4\u2014figure supplement 3).\n\nFurthermore, our model does not consider specific drug-drug interactions. For example, a previous study showed bacteriostatic translation-inhibiting drugs and bactericidal quinolone drugs affect gene expression in a way to negate their effects (Bollenbach et al., 2009). Consistent with this study, we failed to observe significant changes in the extinction probability when ofloxacin or ciprofloxacin (quinolone drugs) is used with and without bacteriostatic translation-inhibiting drugs (Figure 4\u2014figure supplement 4).\n\n### Extending the growth-reduction strategy to antibiotic-resistant strains\n\nAbove, we tested the growth reduction strategy for a WT (antibiotic-susceptible) E. coli strain. Although the strategy did not work for some drugs due to their complex effects on cells, for those that worked, the strategy substantially increased the chance of bacterial clearance at sub-MIC drug concentrations. We wondered if this strategy could be applicable to antibiotic-resistant strains. Resistant strains are difficult to eradicate because their MICs are very high, to levels that are toxic to hosts. Therefore, the development of therapies that utilize sub-MIC doses would be highly useful. To test if our growth-reduction strategy would work for antibiotic-resistant bacteria, we repeated a plate assay using resistant strains. Laboratory evolution of rifampicin resistance has been frequently reported in the literature (Goldstein, 2014). By plating WT (antibiotic-susceptible) E. coli cells on a LB agar plate containing the rifampicin concentration equal to 2\u00a0\u00d7\u00a0MIC, we isolated a rifampicin-resistant (Rifr) mutant; the MIC of this mutant was\u00a0~10 fold higher than that of the parent strain. We then plated the mutant on LB agar plates containing various rifampicin concentrations. Additionally, we acquired clinically-isolated E. coli strains that were resistant to either cefsulodin or vancomycin (see Methods), and plated them on LB agar plates with increasing concentrations of cefsulodin or vancomycin. These resistant strains exhibited non-zero plating inefficiency at sub-MIC concentrations of bactericidal drugs (white columns in Figure 4B), indicating stochastic clearance. We then repeated the experiments either by replacing LB with casamino acids or by adding a sub-MIC concentration of a bacteriostatic drug. As with the antibiotic-susceptible strain, these treatments led to an increase in the plating inefficiency (Figure 4B), indicating that our growth reduction strategy facilitated the clearance of antibiotic-resistant bacteria at sub-MIC concentrations.\n\n## Discussion\n\nAntibiotic treatment typically targets mature infection which contains a large number of bacterial cells (e.g., \u2265108) (Smith and Wood, 1956; Palaci et al., 2007; Feldman, 1976; Canetti, 1965; Canetti, 1956). To clear infections and avoid post-treatment relapse, not only the reduction of a large population of bacteria to a small population, but also the complete extinction of the small population is desired (Tomita et al., 2002; Wilson et al., 2013; Bayston et al., 2007); this is especially so for immuno-compromised hosts and also for infections involving bacteria with a low infectious dose. Previous studies of large bacterial populations adequately accounted for the former process. This study focused on the latter process. Our results directly revealed that antibiotics induce significant fluctuations in population size, leading to stochastic population extinction. Modeling population fluctuations using a probabilistic model, we then established a quantitative understanding of stochastic extinction. This model further predicted how the extinction probability could be manipulated to facilitate bacterial eradication at sub-MIC drug concentrations. We experimentally tested how amenable the extinction probability is to manipulation.\n\nOne possible molecular-level mechanism that gives rise to population fluctuations could be cell-to-cell variability in gene expression. Previous studies showed that variation in expression of antibiotic-resistance genes, marA, cat, kagG, ompC or bla, results in variation in antibiotic susceptibility to carbenicillin, chloramphenicol, isoniazid, kanamycin or ceftriaxone, respectively (Deris et al., 2013; El Meouche et al., 2016; Wakamoto et al., 2013; SanchezS\u00e1nchez-Romero and Casadesus, 2014; Wang et al., 2014). Although our study mostly focuses on antibiotic-susceptible bacteria, a similar mechanism might play a role, leading to heterogeneous growth/death of bacterial cells and eventually population fluctuations. We note that there were attempts to stochastically model large populations of antibiotic-susceptible bacteria (e.g., see [Ferrante et al., 2005]). But, given the deterministic nature of observed dynamics, the need for stochastic models was not clear, and the model prediction of stochasticity was not tested in the work. On the other hand, previous theoretical studies of the evolution of antibiotic resistance typically modeled the growth and death of newly-emerged mutants as stochastic processes, showing how fluctuations in the size of small mutant populations affect evolutionary dynamics; e.g., see (Hermsen et al., 2012; Nissen-Meyer, 1966). Our study validates this modeling approach.\n\nOur findings expose fundamental limits in our predictive ability for bacterial clearance. Clinical studies of antibiotic therapies have often reported unexpected failures of eradicating antibiotic-susceptible bacteria (Doern and Brecher, 2011; Weidner et al., 1999; Gopal et al., 1976; Ficnar et al., 1997; Forrest et al., 1993). Laboratory studies of simple model organisms such as worms have reported similar observations (Moy et al., 2006; Needham et al., 2004; Kaito et al., 2002). The variability in host environments could certainly contribute to such unexpected antibiotic failures. For example, a recent study showed the effects of variability in host immunity on infection course (Duneau et al., 2017). Our study demonstrates that even in the absence of host variability, bacterial clearance occurs stochastically due to antibiotic-induced population fluctuations. At sub-MIC drug concentrations, bacterial populations may or may not go extinct. At drug concentrations above the MIC, all populations eventually go extinct, but not all at once. Rather, the extinction time is highly variable, meaning that in some cases, it can take significantly longer to eradicate bacteria. This inherent stochasticity, together with host variability, makes it difficult (or even impossible) to deterministically predict antibiotic-mediated clearance of bacterial infection.\n\nMore studies are needed to elucidate the impact of these population fluctuations on treatment outcomes in clinical settings. However, we observed such fluctuations even for a relatively large population (~104 cells). In comparison, previous in vivo studies showed that the population size needed to establish infections (i.e., infectious dose) can be as small as 1\u2013100 cells (Jones et al., 2006; Haas and Rose, 1994; Jones et al., 2005; Tuttle et al., 1999; DuPont et al., 1989; Hara-Kudo and Takatori, 2011; Kaiser et al., 1992), which is well within the stochasticity range. This means that if tens of cells (or even a few cells) happen to stochastically survive a fixed course of antibiotic treatment, this small population can re-establish infections once antibiotics are removed, leading to treatment failure. Importantly, a recent article raised an issue regarding the conventional wisdom of \u2018complete the prescribed course\u2019, and argued for re-consideration of antibiotic duration (Llewelyn et al., 2017). We believe that our observation of stochastic extinction dynamics, especially inherent variability in extinction time, has significant bearing on this issue.\n\nFurthermore, our study may guide the design of new therapeutic strategies. Based on the deterministic understanding of population dynamics, it has been generally accepted that only at drug concentrations above the MIC, bacterial populations go extinct. Contrarily, we observed that stochastic population fluctuations drive a population to extinction even at sub-MIC drug concentrations. This observation suggests an intriguing possibility that sub-MIC drug ranges can be used as a clinical option to clear bacteria. We acknowledge that the stochastic nature in the population dynamics is a double-edged sword. Stochasticity can be advantageous because it can drive a population to extinction even at low drug concentrations. But, stochasticity makes it impossible to pre-determine whether the bacterial population of particular interest will go extinct or not; this is disadvantageous because we cannot predict a priori if a specific treatment will work or not. However, this disadvantage can be minimized by manipulating population fluctuations and thereby increasing the probability of extinction. In the present study, we explored this possibility with the help of the probabilistic model, showing that it is possible to increase the probability of clearance. This idea of using sub-MIC drug concentrations to clear bacteria is particularly attractive in the context of antibiotic resistance. Antibiotic-resistant bacteria have very high MICs, often above the levels that are toxic to hosts. Thus, antibiotic concentrations above the MIC cannot be administered, which is why antibiotic resistance is a serious public concern worldwide (O\u2019Neill, 2016). Our plate assay using bactericidal drugs revealed that, like antibiotic-susceptible bacteria, resistant bacteria exhibited non-zero plating inefficiency below the MIC, indicating a non-zero probability of clearance at sub-MIC drug concentrations. We also showed that this probability of clearance could be manipulated, facilitating the clearance of antibiotic-resistant bacteria. For comparison, we note a recent study in the field of viral infections, which showed that stochastic noise in HIV gene expression may be used to treat HIV infections (Dar et al., 2014). This study further supports the idea that stochasticity can be advantageous and be used to combat infections. We believe that the time is ripe for the development of clinical treatment strategies to take advantage of stochasticity, especially so given recent advances in our understanding of stochasticity in biological processes (Jones et al., 2014; Ackermann, 2015; Tanouchi et al., 2015; Banerjee et al., 2017; Scott et al., 2007; Schmiedel et al., 2015; Sigal et al., 2006; Blount et al., 2008; Ray and Igoshin, 2012).\n\nOur study will also have positive impacts on in vitro assessment of antibiotic efficacy. MIC is the most critical parameter to assess antibiotic efficacy. In the deterministic framework, MIC is defined as the drug concentration at which the population size is maintained, which is realized when the death rate is equal to growth rate (\u03d5 = \u03bb); see Equation A2. Accordingly, in a broth dilution method, the drug concentration that yields no change in the turbidity of bacterial cultures is defined as the MIC. Above, we found that in the stochastic framework, at the MIC, the rates of death and growth are equal (\u03d5 = \u03bb; see Figure 2D) and the extinction probability is 1 (Equation A6), meaning all populations go extinct at the MIC. Therefore, in both deterministic and stochastic frameworks, at the MIC, the condition, \u03d5 = \u03bb, is satisfied, but population dynamics are very different (population maintenance versus population extinction). This clarification can reconcile two common ways to determine the MIC, a plate assay based on complete colony extinction and a broth method based on no change in culture turbidity (population maintenance); although the MICs were determined based on different population dynamics in these two cases, both methods identify the drug concentration at which growth rate is equal to death as the MIC. This clarification is particularly important in light of recent efforts to increase the efficiency of the broth method by using small culture volumes (which include a few or tens of bacterial cells) (Avesar et al., 2017). With such small volumes, MIC should be defined based on population extinction, not population maintenance.\n\nLastly, our findings have implications on bacterial persistence. Dormant cells are refractory to antibiotics, persisting through antibiotic treatments (Allison et al., 2011; Balaban et al., 2004). They are present in very low frequencies (typically 10\u22125, meaning 1 out of 105 cells) (Lewis, 2010), and thus have little effects on population dynamics in small populations considered here (<<105). However, a study of persister formation requires the enrichment of persisters. To enrich them, studies often treat a large population using antibiotics and characterize a small population of survivors as persisters. The inherently stochastic nature of a small population may lead to variability in this process of enrichment and characterization, complicating studies of persisters. In fact, such variability was reported by a recent quantitative study of persistence (Brauner et al., 2017). Therefore, our findings on the dynamics of small populations could be useful for a better understanding of persistence.\n\n## Materials\u00a0and\u00a0methods\n\n### Bacterial strains and culture\n\nExperiments were conducted using E. coli strain NCM3722 (Soupene et al., 2003; Lyons et al., 2011; Brown and Jun, 2015). Bacteria were grown in 5 mL of Lysogeny Broth (LB, Fisher Bioreagents) in 20 mL borosilicate glass culture tubes at 37\u00b0 C with shaking (250 rpm). Our typical experimental procedure is as follows. Cells were first cultured in LB broth overnight (pre-culture). The next morning, the cells were sub-cultured into pre-warmed LB broth at the optical density (OD600) of\u00a0~0.001 (measured using a Genesys20 spectrophotometer, Thermo-Fisher) and allowed to grow exponentially. The culture at the OD600 of\u00a0~0.4 was used for a plate assay or for microscope experiments.\n\nWe evolved a rifampicin-resistant mutant from our WT strain (NCM3722). We plated\u00a0~108 WT cells on a LB agar plate containing 20 \u03bcg/ml (2\u00a0\u00d7\u00a0MICWT). 18 colonies were formed next day. We chose one colony and purified it by re-streaking. The mutant (EMK32) had the MIC of 160 \u03bcg/ml. We obtained the cefsulodin-resistant strain (EMK35, MIC\u00a0=\u00a0170 \u03bcg/ml) and vancomycin-resistant strain (EMK36, MIC\u00a0=\u00a0250 \u03bcg/ml) from Georgia Emerging Infections Program MuGSI collection (their MuGSI strain numbers were Mu519 and Mu107, respectively.)\n\n### Plate assay\n\nCells were spread on LB agar plates containing different concentrations of various antibiotics (see below). Through serial dilutions (using 1.16% (w/v) NaCl solution), we ensured the number of colonies to be between 50 and 250 on a plate (100\u00a0\u00d7\u00a015 mm Petri dish). The plates were then incubated at 37\u00b0C. After 18 hr of incubation, the number of visible colonies on plates was determined. As indicated in the main text, we also used casamino acids agar plates. We dissolved 2% casamino acids in N-C- minimal medium (Csonka et al., 1994) and filtered the medium. We separately autoclaved agar, and when agar\u00a0was cooled and felt warm to the\u00a0touch, the casamino acids medium was added.\n\n### Antibiotics\n\nStock solutions of ciprofloxacin (1 mg/ml), kanamycin (50 mg/ml), 6-APA (2 mg/ml), streptomycin (25 mg/ml), ofloxacin (1 mg/ml), erythromycin (10 mg/ml), vancomycin (100 mg/ml), and cefsulodin (30 mg/ml) were prepared in sterilized water. Stock solutions of tetracycline (50 mg/ml) and chloramphenicol (10 mM) were prepared in methanol. Stock solutions of thiolutin (2 mg/ml) and rifampicin (50 mg/ml) were prepared in DMSO. Antibiotics were purchased from Biobasic Inc (Canada), Acros Organics, or Sigma-Aldrich (St. Louis, MO.).\n\n### Time-Lapse microscopy\n\nCells were cultured as described above without antibiotics first. At OD600 of\u00a0~0.4, 2 \u00b5L of aliquot from a culture was loaded into a pre-warmed 35 mm glass-bottom Petri dish (InVitro Scientific). A pre-warmed LB agarose pad containing antibiotics was placed over them (this procedure marked time zero). The dish was then moved into a pre-warmed (at 37\u00b0C) inverted microscope (Olympus IX83), and appropriate stage positions (typically\u00a0~50 positions) were selected. Selection of multiple state positions and setting up the software for automatic image acquisition normally took 1\u00a0~\u00a02 hr. The microscope had an automated mechanical XY stage and auto-focus, and was controlled by the MetaMorph software (Molecular Devices). Also, it was housed by a microscope incubator (InVivo Scientific) which maintained the temperature of samples at 37\u00b0C during experiments. An oil immersion phase-contrast 60\u00a0\u00d7\u00a0objective was used for imaging. Images were captured using a Neo 5.5 sCMOS camera (Andor). We also cultured cells in a microfluidic chemostat (using LB broth as growth medium). The detailed procedure for the microfluidic experiments was published in our previous articles (Kim et al., 2012; Deris et al., 2013). Images were analyzed using MicrobeJ, a plug-in for the ImageJ software (Ducret et al., 2016), and the analysis results were validated manually. In our experiments, all cells that stopped growing eventually underwent lysis. Although dormant cells that survive antibiotics (i.e., persisters) may complicate our analysis, their frequency is very low, ~10\u22125 (i.e., 1 in 105 cells) (Lewis, 2010). Because our study involves small populations (less than 100 cells), dormancy has little relevance to our study.\n\n### Replicate culture using a microtiter plate\n\nWe first cultured cells in 5 mL LB medium to the OD600 of ~0.4, as described above. Previously, using a plate assay, we determined that OD600 of 0.4 contains 2 \u00d7 108 cells per 1 mL. Using this relation, we diluted the culture in 10 mL LB broth such that there were ~640 cells per 200 \u03bcL (we separately confirmed this density by plating cells on LB agar plates containing no antibiotics and counting colony-forming units). We supplemented this culture with various concentrations of antibiotics. We then equally distributed 200 \u03bcL of this culture to 12 chambers in a microtiter plate. We repeated this procedure by varying cell density. Next day, we measured the OD600 of each chamber.\n",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "2f2c1584-43c7-4f99-b660-8f2764e018b4",
+      "submission_id": "977381e4-b354-4e9c-99bb-3ee2fd65682d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Aleksandra M Walczak, Ecole Normale Superieure France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.32976.031](https://doi.org/10.7554/eLife.32976.031)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Antibiotic-induced population fluctuations and stochastic clearance of bacteria\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Arup Chakraborty as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Bartek Waclaw (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe reviewers found the topic very interesting, however they raise major concerns, both technical and in terms of the discussion of the results, that need to be addressed in great detail if publication is warranted. Please provide a detailed response to all points, the technical points of all reviewers, comparison between the model and experiments, discussion of previous work and the points about the impact of these findings, the parameter regimes where they occur and their link to real environments. While to the best of our knowledge the results presented here have never been reported in exactly this form, the lack of references to past work gives a false impression that no stochastic models of antibiotic resistance have been studied, which is not true (e.g., work from Hermsen and Hwa, the Dunlop group and others, additionally to the ones named by the reviewers (see point 5 below) build on similar ideas). This should be discussed in more detail, especially work that does try to make connections between theory and experiment. In view of these previous papers, the present result is maybe not extremely unexpected and should be presented more as an extension and careful regime exploration than a completely new idea. We therefore urge the authors to present the novelty of these results in a more balanced way.\n\nMajor points to be addressed:\n\n1) All reviewers feel that the relevance of the conclusions to real infections is overstated. First, there is a relatively narrow window in which stochastic clearance occurs and it may be challenging to hit this precise window outside of a well-controlled lab experiment. Real infections are not treated when the number of cells is 100 to 10^4 but rather 10^8 or more since only an infection becomes evident. In such large populations different stochastic effects (de novo mutations that confer resistance to antibiotics, phenotypic adaptation) are likely to be more important than demographic fluctuations. Second, antibiotics only help to clear infections in vivo, and the most work is probably done by the immune system. Extrapolating from in vitro experiments where no immune response is present can be misleading. It would be interesting to discuss the possible role of the immune system in bacterial clearance within an actual patient. The authors should discuss these points in detail and tone down their statement.\n\n2) Although the authors present data in Figure 1C showing this is not the case for the two rounds of exposure they use here, please discuss the effect of repeated sub-MIC antibiotic exposure and how this will ultimately impact the evolution of antibiotic resistance in the cells that do survive.\n\n3) The manuscript would be improved by a more thorough and explicit comparison between the data and the model predictions:\n\n- In Figures 1A, 1B and Figure 1\u2014figure supplement 2, trends in the data have been highlighted by gray arrows. While we agree that the data show these trends, such \"guides for the eye\" can be misleading. Please graph linear regressions of the data (on the whole data set for Figures 1B and figure 1\u2014figure supplement 2, and for concentrations below a certain threshold for Figure 1A). It would be useful to indicate the slope and the correlation coefficients obtained.\n\n- Figure 3B and subsection \u201cA simple, stochastic model of the population dynamics accounts for stochastic clearance of bacterial populations\u201d, last paragraph: The data follow the predicted exponential decay at long enough times, but it would be interesting to push the analysis further:\n\n- Does the slope of the data in this regime agree with the prediction from Equation S7?\n\n- Can the delay before the onset of this decay be understood by the full expression of 1-P0, or are there extra complications at early times?\n\n- Subsection \u201cA population with large inoculum size is subject to stochastic clearance at sub-MIC drug concentrations\u201d, last two paragraphs: Here the fluctuations in inoculum size could play a role in the stochasticity of the outcome, especially for small inoculum sizes. This point should be briefly discussed.\n\n- Figures 4, Figure 4\u2014figure supplements 2-4 and subsection \u201cAlteration of the extinction probability to facilitate bacterial eradication at sub-MIC drug concentrations\u201d, last three paragraphs: The data look quite deterministic, while the phenomenon is stochastic, and while Figure 1B (which corresponds to the same data as the white columns in Figure 4A) included error bars corresponding to a standard deviation over several experimental replicates.\n\nIf only one replicate was considered for some experiments, this should be stated. If the mean over different replicates was plotted, it should be mentioned, and error bars should be added, similarly to Figure 1B.\n\n- For example, could the slope of the dashed line in Figure 3B be predicted from the model? Or Figures 3D and 4A \u2013 do they quantitatively agree with model predictions? This should be fairly easy to do given the existing data on growth and death rates.\n\n4) In some cases, it would be nice to show more data, especially if it already exists:\n\n- \"CV decreased with increasing inoculum size, supporting the expectation above\": It would be nice to show the corresponding data.\n\n- Video: it would be helpful to include other videos for comparison purposes, e.g. one without antibiotic and one with a bacteriostatic antibiotic (sub-MIC).\n\n5) As noted in the summary, please reference and discuss previous work more exhaustively. The reviewers feel the novelty of the findings with respect to existing models is exaggerated. It is not true that current models of population dynamics of bacteria exposed to antibiotics are almost exclusively deterministic and that this work is the first to account for stochastic death and replication. A similar approach was used as early as in the 60's, see Nissen-Meyer, 1966. See also a more recent paper that combines stochastic modelling and experiments, Ferrante et al., 2005. in vitro\n",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1ca6e46c-e4cd-41b4-8883-de1bf46ff55b",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C1",
+      "claim": "A recent study projects treatment failures caused by antibiotic resistance will lead to 300 million deaths and a healthcare burden of $100 trillion by 2050.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study projects treatment failures caused by antibiotic resistance will lead to 300 million deaths and a healthcare burden of $100 trillion by 2050 (O'Neill, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to O'Neill, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "dc6f3749-ce62-4b5f-9c7f-22f03970efc5",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C2",
+      "claim": "Antibiotic treatments of infections caused by antibiotic-susceptible bacteria never achieve a success rate of 100%, often failing to eradicate them unexpectedly.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, antibiotic treatments of infections caused by antibiotic-susceptible bacteria never achieve a success rate of 100%, often failing to eradicate them unexpectedly (Doern and Brecher, 2011; Weidner et al., 1999; Gopal et al., 1976; Ficnar et al., 1997; Forrest et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "f6ca2bd3-e126-4c32-a78a-6f2fa98a3b4a",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C3",
+      "claim": "Laboratory studies have extensively characterized how large bacterial populations (e.g., ~10^8 cells in a culture) decline under antibiotic treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, laboratory studies have extensively characterized how large bacterial populations (e.g., ~108 cells in a culture) decline under antibiotic treatment; e.g., see (Nielsen et al., 2011; Ferro et al., 2015; Regoes et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous laboratory studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "89f0a03e-5fdb-43c2-9ec4-9e7a856b1a89",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C4",
+      "claim": "The current deterministic model of pharmacodynamics states that the population dynamics of bacteria exposed to antibiotics follows a predetermined course and can be predicted deterministically a priori.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies have led to the current, deterministic model of the pharmacodynamics, that is, the population dynamics of bacteria exposed to antibiotics follows a predetermined course and can be predicted deterministically a priori; see (Regoes et al., 2004; Czock et al., 2009) and references therein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies describing the deterministic model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "bea24dc9-e220-4e93-8d35-621576266d48",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C5",
+      "claim": "Previous studies had experimental detection limits (e.g., >>100 cells) that prevented direct characterization of the dynamics of a small population undergoing extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, due to their experimental detection limits (e.g., >>100 cells [Nielsen et al., 2011; Ferro et al., 2015]), the dynamics of a small population undergoing extinction have not been directly characterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies with specific detection limits.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "031fb2cd-b572-4417-8913-2d36167f9427",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C6",
+      "claim": "Inoculum size as small as a few cells can produce infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Inoculum size as small as a few cells can produce infections (Jones et al., 2006; Haas and Rose, 1994; Jones et al., 2005; Tuttle et al., 1999; DuPont et al., 1989; Hara-Kudo and Takatori, 2011; Kaiser et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to studies on infectious dose.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "cc8eb973-b5b5-4c7a-8678-b2961fb362c1",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C7",
+      "claim": "Survivors of antibiotic treatment are more likely to develop antibiotic resistance, making subsequent antibiotic treatment of the restored population more difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, these survivors are more likely to develop antibiotic resistance, making subsequent antibiotic treatment of the restored population more difficult (Gullberg et al., 2011; Kohanski et al., 2010; Lopatkin et al., 2016; Dagan et al., 2001; Allen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to studies on antibiotic resistance development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "39b72cfb-899f-4b96-b4ac-300a4f386b85",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C8",
+      "claim": "For bacteriostatic drugs, at increasing concentrations, the plating efficiency remained nearly constant and abruptly dropped to zero when the drug concentration reached the MIC.",
+      "claim_type": "EXPLICIT",
+      "source": "For bacteriostatic drugs, at increasing concentrations, the plating efficiency remained nearly constant and abruptly dropped to zero when the drug concentration reached the MIC (Figure 1A); the grey line was obtained from a linear regression analysis of the whole data set below 0.75 \u00d7 MIC (see Figure 1A caption for details).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1A and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "c3eaf0ee-f983-4682-b2a9-46d40645c4f4",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C9",
+      "claim": "For bacteriostatic drugs, almost every single cell spread on the plate grew and formed colonies at a wide range of sub-MIC drug concentration, and no cells formed colonies at (and above) MIC.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend indicates that almost every single cell spread on the plate grew and formed colonies at a wide range of sub-MIC drug concentration, and no cells formed colonies at (and above) MIC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the plating efficiency data for bacteriostatic drugs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "d054bda9-87f2-477b-95d0-587ebf9b5cf4",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C10",
+      "claim": "Colony size decreased at increasing drug concentrations for bacteriostatic drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we observed a decrease in colony size at increasing drug concentrations (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "f514e2fb-01bd-4e71-87f4-3f233943a397",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C11",
+      "claim": "For bactericidal drugs, at increasing concentrations, the plating efficiency decreased gradually from 1 to 0.",
+      "claim_type": "EXPLICIT",
+      "source": "For bactericidal drugs, at increasing concentrations, the plating efficiency decreased gradually from 1 to 0 (Figure 1B); the grey line was obtained from a linear regression analysis of the whole data set (see Figure 1B caption for details).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "a56999ba-8dd4-48eb-91f1-81897154844e",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C12",
+      "claim": "The gradual decrease in plating efficiency for bactericidal drugs contrasts with findings for bacteriostatic drugs and cannot be explained by the deterministic model.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend contrasts with our finding for bacteriostatic drugs (compare the grey lines in Figure 1A and B) and cannot be explained by the deterministic model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of experimental data and inference about model limitations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "95e9fb91-fe27-433b-a159-52fbae916229",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C13",
+      "claim": "At ~0.6 \u00d7 MIC of bactericidal drugs, the plating efficiency was ~0.5, meaning that approximately 50% of the cells plated formed colonies and 50% did not.",
+      "claim_type": "EXPLICIT",
+      "source": "In the plate assay above, we found that at ~0.6 \u00d7 MIC, the plating efficiency was ~0.5, meaning that approximately 50% of the cells plated formed colonies and 50% did not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from the plate assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "2f5f8147-2723-4e7e-8d2a-199ce9bbce97",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C14",
+      "claim": "The plating efficiency of the second plating was about the same as that of the first plating, or in some cases, marginally lower, ruling out heritable resistance as an explanation for heterogeneous colony formation at sub-MIC drug concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to our expectation, the plating efficiency of the second plating was about the same as that of the first plating, or in some cases, marginally lower (possibly because cells were challenged with drugs twice consecutively). This observation rules out heritable resistance as an explanation for heterogeneous colony formation at sub-MIC drug concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from sequential plating experiments shown in Figure 1C and Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "1bd2ef51-fb1e-4d64-a625-08d75fc31327",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C15",
+      "claim": "In the absence of antibiotics, bacterial colonies proliferated homogeneously, meaning that different colonies grew similarly.",
+      "claim_type": "EXPLICIT",
+      "source": "We counted the number of growing cells in each colony and plotted the number versus time (Figure 2A). The colonies proliferated homogeneously, meaning that different colonies grew similarly.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-lapse microscopy data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "236331c8-ecc9-44bc-bfca-bc0f65136777",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C16",
+      "claim": "With a sub-MIC level of a bacteriostatic drug, the number of growing cells in each micro-colony increased homogeneously and similarly.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of growing cells in each micro-colony increased homogeneously and similarly (Figure 2B and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-lapse microscopy data shown in Figure 2B and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "fa0f08e8-fc83-4b15-9916-9bfec87befbb",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C17",
+      "claim": "The population dynamics of bacteria exposed to a bactericidal drug were highly heterogeneous, showing stochastic population fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the population dynamics of bacteria exposed to a bactericidal drug were highly heterogeneous. An example image sequence was shown in Video 3. The number of growing cells within micro-colonies at 0.8 \u00d7 MIC of cefsulodin is plotted here; the result shows stochastic population fluctuations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-lapse microscopy data shown in Figure 2C and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "8ac2feb3-2c24-4401-8ce6-28326297e8ad",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C18",
+      "claim": "Within a given population exposed to bactericidal drugs, some cells were killed stochastically, whereas other cells survived and divided.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual inspection of such image sequences indicated that within a given population, some cells were killed stochastically, whereas other cells survived and divided.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on visual inspection of time-lapse microscopy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "eba8a58f-f25a-4ed3-adec-57c3ebcdb1d1",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C19",
+      "claim": "Population fluctuations led to dramatically different dynamics for different colonies, even though they originated from genetically identical cells and were cultured under homogeneous antibiotic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the number of growing cells in each colony fluctuated randomly over time (Figure 2C and Figure 2\u2014figure supplement 3A\u2013C). These fluctuations led to dramatically different dynamics for different colonies, even though they originated from genetically identical cells and were cultured under homogeneous antibiotic conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on time-lapse microscopy data showing population fluctuations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "e81eb777-e114-4368-90a2-84befaed2555",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C20",
+      "claim": "Population fluctuations drove some colonies into extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the fluctuations drove some colonies into extinction (the light red-shaded area in Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-lapse microscopy data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "a92e361d-dd86-465f-8054-896935f2e05d",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C21",
+      "claim": "The extinction probability increased with increasing drug concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "We counted the number of colonies that went extinct and plotted the probability of colony extinction at various drug concentrations; here, we are interested in colony extinction because it is equivalent to bacterial clearance, which means treatment success. Figure 2\u2014figure supplement 4 showed that the extinction probability increased with increasing drug concentrations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "a6ab4e75-b79f-407f-aa94-4a826cafaa8a",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C22",
+      "claim": "At increasing drug concentrations, the death rate (\u03d5) increased.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that at increasing drug concentrations, \u03d5 increased (Figure 2\u2014figure supplement 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by single-cell analysis data shown in Figure 2\u2014figure supplement 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "76022902-b7bd-4679-bfd2-264eceee73f7",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C23",
+      "claim": "At increasing drug concentrations, the growth rate (\u03bb) changed little, remaining nearly constant.",
+      "claim_type": "EXPLICIT",
+      "source": "But \u03bb changed little, remaining nearly constant (Figure 2\u2014figure supplement 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by single-cell analysis data shown in Figure 2\u2014figure supplement 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "95e50b99-9583-4661-8afe-408850246540",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C24",
+      "claim": "Bactericidal drugs have significant effects on cell death, but not on cell growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, bactericidal drugs have significant effects on cell death, but not on cell growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the data showing increased death rate but constant growth rate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "84803a18-a8e3-4e3e-9ffd-03ec7807f58c",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C25",
+      "claim": "At low drug concentrations where the death rate is lower than the growth rate (\u03d5 < \u03bb), the extinction probability P0 is given by their ratio, P0 = \u03d5 / \u03bb.",
+      "claim_type": "EXPLICIT",
+      "source": "We first considered the extinction probability P0 at low drug concentrations in which the death rate is lower than the growth rate (\u03d5 < \u03bb). In this range, P0 is given by their ratio, P0 = \u03d5 / \u03bb; see Equation A6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the mathematical model (Markovian birth-death process) described in Appendix 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "d0730ea0-2c7f-49f7-86f3-4e8016a4941b",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C26",
+      "claim": "The model prediction that extinction probability increases linearly with death rate, with the slope being 1 / \u03bb, agrees with experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "The solution P0 = \u03d5 / \u03bb predicts that the extinction probability increases linearly with death rate, with the slope being 1 / \u03bb (the solid line in Figure 2D). We sought to test this prediction quantitatively by comparing it with experimental data. Above, analyzing time-lapse microscope images, we obtained the probability of population extinction (Figure 2\u2014figure supplement 4), and the death rate (Figure 2\u2014figure supplement 6), at different concentrations of bactericidal drugs. Using these data, we obtained the relationship between the probability of population extinction and the death rate, and plotted it in Figure 2D. We found good agreement between the model prediction and experimental data (compare the solid line and symbols in Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of model predictions with experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "61d3d5c4-9e7c-4ce4-8979-5fdda1789ef6",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C27",
+      "claim": "At the MIC, the growth rate and death rate are equal to each other (\u03d5 = \u03bb).",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, at the MIC, the plating efficiency is zero because extinction probability is one (P0 = 1), and the extinction probability is one because the growth rate and death rate are equal to each other (\u03d5 = \u03bb). In short, \u03d5 = \u03bb at the MIC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the model and experimental observations about plating efficiency and extinction probability.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "d5e2e00d-08a8-4b84-b3d8-3acd8259b5c4",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C28",
+      "claim": "At drug concentrations above the MIC, all populations eventually go extinct (P0 = 1).",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we considered drug concentrations above the MIC, where the death rate is higher than the growth rate (\u03d5 > \u03bb). In this range, the model predicts that all populations eventually go extinct (P0 = 1 in Equation A6); this makes intuitive sense.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the mathematical model prediction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "cc812c27-6778-4c60-aea7-75ea0260f7c5",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C29",
+      "claim": "Due to population fluctuations, populations are expected to go extinct at various times at drug concentrations above the MIC.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, due to population fluctuations, populations are expected to go extinct at various times (Equation A5), meaning that the number of live populations (the populations that have not undergone extinction yet) decreases gradually over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the mathematical model prediction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "81e5de7a-359e-4528-8832-d08bed97120e",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C30",
+      "claim": "At drug concentrations above the MIC, all populations went extinct at various times, as observed experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested these model predictions by repeating time-lapse microscope experiments at drug concentrations above the MIC. All the populations indeed went extinct at various times (Figure 3A and Figure 2\u2014figure supplement 3D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-lapse microscopy data shown in Figure 3A and Figure 2\u2014figure supplement 3D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "0c679684-0b8c-4304-b026-5e78a8231d06",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C31",
+      "claim": "The number of live colonies decreased gradually over time at drug concentrations above the MIC, consistent with an exponential decay.",
+      "claim_type": "EXPLICIT",
+      "source": "When we counted the number of live colonies, this number decreased gradually over time (Figure 3B). In this semi-log plot, the decrease was linear (compare it with the dashed line), consistent with the model prediction of an exponential decay (Equation A7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3B and comparison with model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "65644d21-008b-4287-980e-f7ba55122792",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C32",
+      "claim": "The magnitude of population fluctuations decreases with increasing inoculum size.",
+      "claim_type": "EXPLICIT",
+      "source": "It is expected that, with larger inoculum size, a population experiences less fluctuations (because demographic stochasticity gets averaged out). When we estimated the magnitudes of fluctuations by the coefficient of variation (CV), that is, the standard deviation divided by the mean, using our model, Equation A16 shows decreasing CV with increasing inoculum size, supporting the expectation above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the mathematical model prediction (Equation A16).",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "207f4e19-78dc-47b4-a2d6-4c4882b3aee2",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C33",
+      "claim": "The magnitude of population fluctuations (CV) increases as the death rate approaches the growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Equation A16 also predicted that the magnitude of population fluctuations depends on rates of cell growth and death as well (Equation A16); CV increases as the death rate approaches the growth rate, meaning that population fluctuations become intensified when neither growth nor death is a dominant event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the mathematical model prediction (Equation A16).",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "9ab8eeeb-3092-425d-a4ee-387544b1b045",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C34",
+      "claim": "Near the MIC, a population with relatively large inoculum size may still be prone to stochastic extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "This prediction, together with our finding above that the death rate approaches the growth rate as the drug concentration increases to the MIC (Figure 2D), suggests that near the MIC, a population with relatively large inoculum size may still be prone to stochastic extinction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the model prediction and experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "b1bedb7a-b0ad-414f-a155-cc08e1f04cb9",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C35",
+      "claim": "At low cefsulodin concentrations, all chambers became turbid (P0 = 0).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, at low cefsulodin concentrations (to the left of the dashed line in Figure 3C), all chambers became turbid, meaning all populations grew. Thus, the probability of population extinction was zero (P0 = 0).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "db970848-0d48-4f78-8ade-2746487a295e",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C36",
+      "claim": "At high cefsulodin concentrations, all chambers were clear (P0 = 1), indicating the MIC.",
+      "claim_type": "EXPLICIT",
+      "source": "At high concentrations (to the right of the solid line), all chambers were clear (P0 = 1); thus, the solid line indicates the MIC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "0e4d3710-3827-4dae-bf98-7621e6dcd0cb",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C37",
+      "claim": "At intermediate cefsulodin concentrations, heterogeneous population growth was observed, with some chambers clear while others were turbid (0 < P0 < 1).",
+      "claim_type": "EXPLICIT",
+      "source": "At intermediate concentrations (between the dashed and solid lines), we observed heterogeneous population growth; some chambers were clear while others were turbid (0 < P0 < 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "9f1167af-484c-4266-a27a-f1abf61f86b2",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C38",
+      "claim": "Plating of the clear cultures on drug-free LB agar plates yielded no colonies, indicating population extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent plating of the clear cultures on drug-free LB agar plates yielded no colonies, indicating population extinction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental verification of population extinction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "f99b09ee-23e0-4669-adc9-f759b26bab2a",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C39",
+      "claim": "MIC values were higher at higher cell densities (inoculum effect).",
+      "claim_type": "EXPLICIT",
+      "source": "MIC values were higher at higher cell densities. We note that the higher MIC at higher cell density (inoculum effect) has been observed previously and is being actively studied by others in the field (Artemova et al., 2015; Brook, 1989; Tan et al., 2012; Karslake et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3D and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "78202aec-22a8-42ae-ab16-a708a88d5450",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C40",
+      "claim": "Stochastic clearance occurs even for a population starting with as large as ~20,000 cells, inoculum size much larger than infectious doses for many infectious diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3D shows that stochastic clearance occurs even for a population starting with as large as ~20,000 cells, inoculum size much larger than infectious doses for many infectious diseases.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "642c2617-d49a-4dae-871f-7984a1ac9b73",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C41",
+      "claim": "The extinction probability is determined by the ratio of the death and growth rates (P0 = \u03d5 /\u03bb).",
+      "claim_type": "EXPLICIT",
+      "source": "Our model indicates that the extinction probability is determined by the ratio of the death and growth rates (P0 = \u03d5 /\u03bb; Equation A6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the mathematical model (Equation A6).",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "861cb6bc-8edc-4178-8ea5-d4b45b93bbc1",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C42",
+      "claim": "A reduction in growth rate should lead to an increase in the extinction probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, based on the model, a reduction in growth rate (denominator) should lead to an increase in the extinction probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "faa8a3f9-b059-45c4-abd5-381bac392e79",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C43",
+      "claim": "Growth rate can be reduced by using poor growth media, or alternatively using bacteriostatic drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Growth rate can be reduced by using poor growth media, or alternatively using bacteriostatic drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about factors affecting bacterial growth.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "604a3032-aa72-482e-bff2-62d1df997757",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C44",
+      "claim": "For a sub-MIC concentration of a bactericidal drug, either a switch to poor growth media or addition of a sub-MIC level of a bacteriostatic drug would lead to an increase in the extinction probability.",
+      "claim_type": "EXPLICIT",
+      "source": "This means, for a sub-MIC concentration of a bactericidal drug (for which the extinction probability is less than 1), either a switch to poor growth media or addition of a sub-MIC level of a bacteriostatic drug would lead to an increase in the extinction probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the model prediction about the effect of reducing growth rate.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "4aeedf4e-9b8f-4936-aef0-e2e69c9dd710",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C45",
+      "claim": "Growth reduction (using casamino acids or adding bacteriostatic drugs) led to an increase in the extinction probability for certain bactericidal drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "The plating inefficiency obtained with these treatments was plotted as solid columns in Figure 4A. The rise of solid columns above white columns indicates that growth reduction indeed led to an increase in the extinction probability, in agreement with our prediction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "50780465-4951-45b0-9129-d60a24bef4b4",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C46",
+      "claim": "For bactericidal drugs that kill only growing cells (kanamycin and 6-APA), neither the switch to poor growth medium nor addition of bacteriostatic drugs resulted in an increase in the extinction probability.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4\u2014figure supplement 2, killing was completely abolished for kanamycin and 6-APA, indicating that \u03d5\u2192 0 when \u03bb\u2192 0. As expected, for these drugs, neither the switch to poor growth medium nor addition of bacteriostatic drugs resulted in an increase in the extinction probability (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 2 and Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "65799ee6-8c2a-4c30-9d55-606b3ae97ada",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C47",
+      "claim": "For ofloxacin or ciprofloxacin (quinolone drugs), the growth reduction strategy did not lead to a significant change in the extinction probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our model does not consider specific drug-drug interactions. For example, a previous study showed bacteriostatic translation-inhibiting drugs and bactericidal quinolone drugs affect gene expression in a way to negate their effects (Bollenbach et al., 2009). Consistent with this study, we failed to observe significant changes in the extinction probability when ofloxacin or ciprofloxacin (quinolone drugs) is used with and without bacteriostatic translation-inhibiting drugs (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 4 and citation to a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "14102b77-46a8-49fe-8513-742bfa421c05",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C48",
+      "claim": "Antibiotic-resistant bacteria exhibited non-zero plating inefficiency at sub-MIC concentrations of bactericidal drugs, indicating stochastic clearance.",
+      "claim_type": "EXPLICIT",
+      "source": "These resistant strains exhibited non-zero plating inefficiency at sub-MIC concentrations of bactericidal drugs (white columns in Figure 4B), indicating stochastic clearance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "934917ee-05fd-4082-bd0e-6aa14fc96d38",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C49",
+      "claim": "The growth reduction strategy facilitated the clearance of antibiotic-resistant bacteria at sub-MIC concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "We then repeated the experiments either by replacing LB with casamino acids or by adding a sub-MIC concentration of a bacteriostatic drug. As with the antibiotic-susceptible strain, these treatments led to an increase in the plating inefficiency (Figure 4B), indicating that our growth reduction strategy facilitated the clearance of antibiotic-resistant bacteria at sub-MIC concentrations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "3f74c65e-a00a-4e27-9a10-3e4fab365dbb",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C50",
+      "claim": "Antibiotics known to kill bacteria (bactericidal) induced population fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibiotics known to kill bacteria (bactericidal) induced population fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by time-lapse microscopy data showing population fluctuations (Figure 2C, Figure 2\u2014figure supplement 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "f9f26b67-5dd4-4ac5-b110-502828b25523",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C51",
+      "claim": "At high antibiotic concentrations, the dynamics of bacterial clearance were heterogeneous.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, at high antibiotic concentrations, the dynamics of bacterial clearance were heterogeneous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing variable extinction times (Figure 3A, Figure 3B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "9088f091-4a9c-4126-b4aa-1bac6db88f1a",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C52",
+      "claim": "At low antibiotic concentrations, clearance still occurred with a non-zero probability.",
+      "claim_type": "EXPLICIT",
+      "source": "At low concentrations, clearance still occurred with a non-zero probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing stochastic extinction at sub-MIC concentrations (Figure 2C, Figure 3C, Figure 3D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "03ca0ba5-8064-45ed-a155-37a0618fcf58",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C53",
+      "claim": "The striking outcomes of population fluctuations were well captured by the probabilistic model.",
+      "claim_type": "EXPLICIT",
+      "source": "These striking outcomes of population fluctuations were well captured by our probabilistic model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the agreement between model predictions and experimental data (Figure 2D, Figure 3B).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "edf3f5be-8ec1-4455-8e07-d91c04447bce",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C54",
+      "claim": "The model suggested a strategy to facilitate eradication by increasing extinction probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model further suggested a strategy to facilitate eradication by increasing extinction probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the model prediction that reducing growth rate increases extinction probability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "2b6904c3-6749-4945-8fb4-18d7b2581b27",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C55",
+      "claim": "The prediction for increasing extinction probability was experimentally tested for antibiotic-susceptible and clinically-isolated resistant bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "We experimentally tested this prediction for antibiotic-susceptible and clinically-isolated resistant bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4A and Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "29c44792-d1fb-4ae3-b9b1-0e1cdc145ba7",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C56",
+      "claim": "The new knowledge exposes fundamental limits in our ability to predict bacterial eradication.",
+      "claim_type": "EXPLICIT",
+      "source": "This new knowledge exposes fundamental limits in our ability to predict bacterial eradication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the stochastic nature of bacterial clearance demonstrated in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "40e4ae0e-1f91-41f5-9b0c-3a1b84e9a1f0",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C57",
+      "claim": "The study demonstrates the potential of using antibiotic concentrations that were previously deemed inefficacious to eradicate bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, it demonstrates the potential of using antibiotic concentrations that were previously deemed inefficacious to eradicate bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing stochastic clearance at sub-MIC concentrations and increased clearance with growth reduction strategies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "732c8b15-39ad-4a26-8c76-28922ab64d85",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C58",
+      "claim": "Experiments were conducted using E. coli strain NCM3722.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments were conducted using E. coli strain NCM3722 (Soupene et al., 2003; Lyons et al., 2011; Brown and Jun, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement of experimental methods with citations to strain references.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "7c4dbb52-9969-469c-a75d-c9577649fda7",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C59",
+      "claim": "Bacteria were grown in 5 mL of Lysogeny Broth (LB, Fisher Bioreagents) in 20 mL borosilicate glass culture tubes at 37\u00b0 C with shaking (250 rpm).",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria were grown in 5 mL of Lysogeny Broth (LB, Fisher Bioreagents) in 20 mL borosilicate glass culture tubes at 37\u00b0 C with shaking (250 rpm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement of experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "ca08af00-76c3-47b0-9d44-1c1b4de8a699",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C60",
+      "claim": "A rifampicin-resistant mutant (EMK32) was evolved from the WT strain with an MIC of 160 \u03bcg/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "We evolved a rifampicin-resistant mutant from our WT strain (NCM3722). We plated ~108 WT cells on a LB agar plate containing 20 \u03bcg/ml (2 \u00d7 MICWT). 18 colonies were formed next day. We chose one colony and purified it by re-streaking. The mutant (EMK32) had the MIC of 160 \u03bcg/ml.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental evolution and characterization of a resistant mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "1d66e528-91ee-430e-9723-10c4ff1702ba",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C61",
+      "claim": "Cefsulodin-resistant strain (EMK35) had an MIC of 170 \u03bcg/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained the cefsulodin-resistant strain (EMK35, MIC = 170 \u03bcg/ml) and vancomycin-resistant strain (EMK36, MIC = 250 \u03bcg/ml) from Georgia Emerging Infections Program MuGSI collection (their MuGSI strain numbers were Mu519 and Mu107, respectively.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement of experimental materials and their characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "ec586280-babd-42c9-964b-070e51dbffe5",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C62",
+      "claim": "Vancomycin-resistant strain (EMK36) had an MIC of 250 \u03bcg/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained the cefsulodin-resistant strain (EMK35, MIC = 170 \u03bcg/ml) and vancomycin-resistant strain (EMK36, MIC = 250 \u03bcg/ml) from Georgia Emerging Infections Program MuGSI collection (their MuGSI strain numbers were Mu519 and Mu107, respectively.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement of experimental materials and their characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "e626ec07-ed2f-4b5c-95ee-7c9c48ba3de1",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C63",
+      "claim": "The deterministic framework successfully captures the reproducible dynamics of a large bacterial population declining to a small population under antibiotic treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "This deterministic framework successfully captures the reproducible dynamics of a large bacterial population declining to a small population under antibiotic treatments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge from previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "9e6a3773-1477-48e5-bad1-27868443566d",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C64",
+      "claim": "The deterministic knowledge obtained from previous studies of large bacterial populations cannot be extrapolated to population extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work demonstrates that the deterministic knowledge obtained from previous studies of large bacterial populations cannot be extrapolated to population extinction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental findings showing stochastic extinction dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "059f957f-7079-4e41-84c5-50f2198b3513",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C65",
+      "claim": "The Markovian birth-death model quantitatively accounted for the probabilistic occurrence of population extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the Markovian birth-death model quantitatively accounted for the probabilistic occurrence of population extinction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the agreement between model predictions and experimental data (Figure 2D, Figure 3B).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "bed51de4-22ab-4326-87e5-33e10aeeefb3",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C66",
+      "claim": "It is possible to increase the probability of clearance by manipulating population fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this disadvantage can be minimized by manipulating population fluctuations and thereby increasing the probability of extinction. In the present study, we explored this possibility with the help of the probabilistic model, showing that it is possible to increase the probability of clearance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing increased extinction probability with growth reduction strategies (Figure 4A, Figure 4B).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "ea5ffcd6-be1a-4e02-999e-a44a2ee060da",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C67",
+      "claim": "Cell-to-cell variability in gene expression could be one possible molecular-level mechanism that gives rise to population fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible molecular-level mechanism that gives rise to population fluctuations could be cell-to-cell variability in gene expression. Previous studies showed that variation in expression of antibiotic-resistance genes, marA, cat, kagG, ompC or bla, results in variation in antibiotic susceptibility to carbenicillin, chloramphenicol, isoniazid, kanamycin or ceftriaxone, respectively (Deris et al., 2013; El Meouche et al., 2016; Wakamoto et al., 2013; SanchezS\u00e1nchez-Romero and Casadesus, 2014; Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on citations to previous studies showing gene expression variability.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "aca52391-ec44-4312-895b-28a0bcf77358",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C68",
+      "claim": "At sub-MIC drug concentrations, bacterial populations may or may not go extinct.",
+      "claim_type": "EXPLICIT",
+      "source": "At sub-MIC drug concentrations, bacterial populations may or may not go extinct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing stochastic extinction at sub-MIC concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "4d6c094e-b3eb-4924-b799-8dea4e7b9609",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C69",
+      "claim": "At drug concentrations above the MIC, all populations eventually go extinct, but not all at once, with highly variable extinction times.",
+      "claim_type": "EXPLICIT",
+      "source": "At drug concentrations above the MIC, all populations eventually go extinct, but not all at once. Rather, the extinction time is highly variable, meaning that in some cases, it can take significantly longer to eradicate bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing variable extinction times (Figure 3A, Figure 3B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "88797f91-a772-4de6-8432-a3f22efef262",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C70",
+      "claim": "Inherent stochasticity, together with host variability, makes it difficult (or even impossible) to deterministically predict antibiotic-mediated clearance of bacterial infection.",
+      "claim_type": "EXPLICIT",
+      "source": "This inherent stochasticity, together with host variability, makes it difficult (or even impossible) to deterministically predict antibiotic-mediated clearance of bacterial infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental findings on stochastic extinction dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "4448c2be-f831-456a-8332-94f4084d8d87",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C71",
+      "claim": "If tens of cells (or even a few cells) happen to stochastically survive a fixed course of antibiotic treatment, this small population can re-establish infections once antibiotics are removed, leading to treatment failure.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that if tens of cells (or even a few cells) happen to stochastically survive a fixed course of antibiotic treatment, this small population can re-establish infections once antibiotics are removed, leading to treatment failure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental findings and knowledge about infectious doses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "69b78e9b-c9f7-4d6b-a508-8328e129ffe5",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C72",
+      "claim": "The observation of stochastic extinction dynamics has significant bearing on the issue of antibiotic treatment duration.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, a recent article raised an issue regarding the conventional wisdom of 'complete the prescribed course', and argued for re-consideration of antibiotic duration (Llewelyn et al., 2017). We believe that our observation of stochastic extinction dynamics, especially inherent variability in extinction time, has significant bearing on this issue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, connecting the study's findings to a broader clinical issue discussed in a cited article.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "61b68317-40ef-4f10-ad59-8eee701e226b",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C73",
+      "claim": "Antibiotic-resistant bacteria have very high MICs, often above the levels that are toxic to hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibiotic-resistant bacteria have very high MICs, often above the levels that are toxic to hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about antibiotic resistance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "44ab4f75-42b0-402b-b140-2e1132e226e2",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C74",
+      "claim": "Like antibiotic-susceptible bacteria, resistant bacteria exhibited non-zero plating inefficiency below the MIC, indicating a non-zero probability of clearance at sub-MIC drug concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our plate assay using bactericidal drugs revealed that, like antibiotic-susceptible bacteria, resistant bacteria exhibited non-zero plating inefficiency below the MIC, indicating a non-zero probability of clearance at sub-MIC drug concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "e4809882-b8a6-4dd1-9242-e0c564af70bd",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C75",
+      "claim": "The probability of clearance for antibiotic-resistant bacteria could be manipulated, facilitating their clearance.",
+      "claim_type": "EXPLICIT",
+      "source": "We also showed that this probability of clearance could be manipulated, facilitating the clearance of antibiotic-resistant bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "1f529a56-8519-4dba-822c-a7828b6cb57c",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C76",
+      "claim": "MIC is the most critical parameter to assess antibiotic efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "MIC is the most critical parameter to assess antibiotic efficacy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge in pharmacodynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "d0ab1617-81c8-4fc6-8a3f-894b1447ff14",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C77",
+      "claim": "In both deterministic and stochastic frameworks, at the MIC, the condition \u03d5 = \u03bb is satisfied, but population dynamics are very different (population maintenance versus population extinction).",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in both deterministic and stochastic frameworks, at the MIC, the condition, \u03d5 = \u03bb, is satisfied, but population dynamics are very different (population maintenance versus population extinction).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the comparison of deterministic and stochastic models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "43e9e198-dfb1-4c7c-90c2-bf9f04e0a219",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C78",
+      "claim": "Dormant cells (persisters) are present in very low frequencies (typically 10^-5, meaning 1 out of 10^5 cells) and thus have little effects on population dynamics in small populations considered in this study (<<10^5).",
+      "claim_type": "EXPLICIT",
+      "source": "Dormant cells are refractory to antibiotics, persisting through antibiotic treatments (Allison et al., 2011; Balaban et al., 2004). They are present in very low frequencies (typically 10\u22125, meaning 1 out of 105 cells) (Lewis, 2010), and thus have little effects on population dynamics in small populations considered here (<<105).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citations to previous studies on persister frequencies and inference about their relevance to the current study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "69d074ea-7419-45d0-8dc2-6aac4efd9e3e",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C79",
+      "claim": "The inherently stochastic nature of a small population may lead to variability in the process of enrichment and characterization of persisters.",
+      "claim_type": "EXPLICIT",
+      "source": "The inherently stochastic nature of a small population may lead to variability in this process of enrichment and characterization, complicating studies of persisters. In fact, such variability was reported by a recent quantitative study of persistence (Brauner et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, connecting the study's findings to persister research, with support from a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "a4778714-3f73-41cf-b540-f09a3d4a0e15",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C80",
+      "claim": "The findings on the dynamics of small populations could be useful for a better understanding of persistence.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our findings on the dynamics of small populations could be useful for a better understanding of persistence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about the potential application of the study's findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "bf7569dd-9eb7-4ed3-b4a6-d81156410009",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C81",
+      "claim": "In the deterministic framework, MIC is defined as the drug concentration at which the population size is maintained, which is realized when the death rate is equal to growth rate (\u03d5 = \u03bb).",
+      "claim_type": "EXPLICIT",
+      "source": "In the deterministic framework, MIC is defined as the drug concentration at which the population size is maintained, which is realized when the death rate is equal to growth rate (\u03d5 = \u03bb); see Equation A2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the deterministic model described in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "da441613-7160-4666-9d7a-4aee4bcf4645",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C82",
+      "claim": "In the stochastic framework, at the MIC, the rates of death and growth are equal (\u03d5 = \u03bb) and the extinction probability is 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Above, we found that in the stochastic framework, at the MIC, the rates of death and growth are equal (\u03d5 = \u03bb; see Figure 2D) and the extinction probability is 1 (Equation A6), meaning all populations go extinct at the MIC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on the stochastic model and experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "1034ee2c-5e2a-4819-899c-88eb89edb6a7",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C83",
+      "claim": "The clarification about MIC can reconcile two common ways to determine the MIC: a plate assay based on complete colony extinction and a broth method based on no change in culture turbidity.",
+      "claim_type": "EXPLICIT",
+      "source": "This clarification can reconcile two common ways to determine the MIC, a plate assay based on complete colony extinction and a broth method based on no change in culture turbidity (population maintenance); although the MICs were determined based on different population dynamics in these two cases, both methods identify the drug concentration at which growth rate is equal to death as the MIC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the comparison of deterministic and stochastic frameworks.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "3d16544e-a3e9-4de1-8ecd-2530bf056023",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C84",
+      "claim": "With small culture volumes (which include a few or tens of bacterial cells), MIC should be defined based on population extinction, not population maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "This clarification is particularly important in light of recent efforts to increase the efficiency of the broth method by using small culture volumes (which include a few or tens of bacterial cells) (Avesar et al., 2017). With such small volumes, MIC should be defined based on population extinction, not population maintenance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the study's findings and cited work on small-volume methods.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "e3cbf8c0-ea87-4423-a4aa-c5c8524b5046",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C85",
+      "claim": "All live cells that stopped growing eventually underwent lysis in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiments, all cells that stopped growing eventually underwent lysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from time-lapse microscopy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "069c9594-337d-4b2a-98d8-6d5a1d313ee0",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C86",
+      "claim": "The variation in the number of cells in each chamber was ~10% or less when distributing cell culture equally to chambers.",
+      "claim_type": "EXPLICIT",
+      "source": "Please note that although we prepared a large volume culture and distributed it equally to chambers, the number of cells in each chamber might vary. We found that the variation was ~10% or less. See Appendix 3 for details.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental measurements described in Appendix 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "7f9b54e2-2398-4588-926e-67246f42f387",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C87",
+      "claim": "OD600 of 0.4 contains 2 \u00d7 10^8 cells per 1 mL.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, using a plate assay, we determined that OD600 of 0.4 contains 2 \u00d7 108 cells per 1 mL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental calibration using a plate assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "7697e9cd-6e5a-471a-acd1-444600118842",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C88",
+      "claim": "The doubling time in LB was 18 mins and in casamino acids was 33 min.",
+      "claim_type": "EXPLICIT",
+      "source": "The doubling time was 18 mins and 33 min respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental measurements shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "e0a1864a-2803-4e29-84e5-599803a7e234",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C89",
+      "claim": "Kanamycin and 6-APA were not capable of killing non-growing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We then stopped cell growth in cultures by depriving the cells of nutrients, added 1.5 \u00d7 MICs, and measured SF. SF was one for kanamycin and 6-APA (blue columns), indicating that they were not capable of killing non-growing cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "4a58a9f6-883b-4687-b7fc-4e8ed0ccf57a",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C90",
+      "claim": "Other bactericidal drugs (besides kanamycin and 6-APA) were capable of killing non-growing cells, but with lower efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "Other drugs (red columns) were capable of killing non-growing cells, but with lower efficacy as SF was not zero.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "1b95ba7f-891c-4aa2-bae0-e72ef0ea6dea",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "claim_id": "C91",
+      "claim": "Lower susceptibility of non-growing bacteria to drugs has been previously documented.",
+      "claim_type": "EXPLICIT",
+      "source": "Lower susceptibility of non-growing bacteria to drugs has been previously documented (e.g., see (Levin and Rozen, 2006)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9a21ab32-5982-4627-80c3-85eaec2e0015",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Bacteriostatic drugs induce homogeneous population dynamics at sub-MIC concentrations, with nearly constant plating efficiency that drops abruptly to zero at the MIC. Colony size decreases with increasing drug concentration, but almost all cells form colonies below the MIC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 provide plate assay data with statistical analysis (linear regression, R\u00b2=0.99) showing constant plating efficiency below MIC. Claims C15-C16 provide independent time-lapse microscopy validation showing homogeneous growth dynamics. Multiple experimental approaches converge on the same conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "a6884f1d-f7cf-4238-8913-1c88c3eeb157",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Bactericidal drugs induce heterogeneous colony formation at sub-MIC concentrations, with plating efficiency decreasing gradually from 1 to 0. This heterogeneity is not due to heritable resistance, as demonstrated by sequential plating experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C11 provides plate assay data with linear regression (R\u00b2=0.79) showing gradual decrease. Claim C12 correctly identifies this contrasts with bacteriostatic drugs and deterministic models. Claims C13-C14 provide sequential plating experiments ruling out heritable resistance. The experimental design appropriately tests alternative hypotheses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "0a5da9a0-3abd-4362-b3e3-d854a3811403",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Bactericidal drugs induce stochastic population fluctuations in genetically identical cells under homogeneous conditions, with some cells killed stochastically while others survive and divide. These fluctuations drive some populations to extinction even at sub-MIC concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 are supported by time-lapse microscopy data (Figure 2C, Videos, Figure 2\u2014figure supplements 2-3) showing heterogeneous dynamics and extinction events. Visual inspection and quantitative analysis converge. Claim C50 summarizes this key finding. The use of genetically identical cells and controlled conditions strengthens causal inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "ef4e3248-6a33-4224-b52f-e8b7cd9c0bf7",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Extinction probability increases with drug concentration due to increased death rate (\u03d5), while growth rate (\u03bb) remains nearly constant. Bactericidal drugs primarily affect cell death, not cell growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 are supported by single-cell analysis from time-lapse microscopy (Figure 2\u2014figure supplements 4-6). The analysis method is described in Figure 2\u2014figure supplement 5 with linear regression validation. Claim C24's inference is logically sound given the data. However, the manuscript does not provide error estimates or statistical tests for the claim that \u03bb is constant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "da46ef83-94c5-49b9-92f8-45aef3de2a97",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A Markovian birth-death stochastic model quantitatively predicts extinction probability as P0 = \u03d5/\u03bb at sub-MIC concentrations, with linear dependence on death rate. At the MIC, \u03d5 = \u03bb and P0 = 1. Model predictions agree well with experimental data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 describe the model (Appendix 1, Equation A6). Claim C26 shows quantitative agreement between model and experiment (Figure 2D). Claims C41, C53, C65 reinforce this agreement. The model is well-established in population dynamics literature. However, goodness-of-fit statistics beyond visual inspection are not provided, and the R\u00b2 value for the experimental data fit (0.79) suggests moderate scatter.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "81bece36-9e40-413c-82d3-1e1567c7d8a1",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "At drug concentrations above the MIC, all populations eventually go extinct (P0=1), but extinction times are highly variable. The number of live populations decreases exponentially over time, consistent with stochastic model predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 present model predictions (Equations A5-A7). Claims C30-C31 provide experimental validation with time-lapse microscopy (Figure 3A-B, Figure 2\u2014figure supplement 3D-F). The semi-log plot shows linear decrease consistent with exponential decay. Claims C51 and C69 summarize these findings. The agreement between model and experiment is visually compelling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "79b5c895-cd84-4d7f-ba34-208d5a4c2ac9",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Stochastic clearance occurs even for populations with large inoculum sizes (up to ~20,000 cells), particularly near the MIC where population fluctuations are intensified. MIC values increase with inoculum size (inoculum effect).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 present model predictions about fluctuation magnitude (Equation A16). Claims C35-C40 provide experimental validation using microtiter plate assays with varying inoculum sizes (Figure 3C-D). The experimental design appropriately tests the model predictions. Claim C39 acknowledges the inoculum effect is known, appropriately scoping the novelty. The variation in cell numbers between chambers (~10%, C86) is reasonable but could affect results at small inoculum sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "2adb7f99-a31f-4b82-87b4-10db37e7c7aa",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Reducing bacterial growth rate (by using poor growth media or adding bacteriostatic drugs) increases extinction probability at sub-MIC concentrations of bactericidal drugs, as predicted by the model (P0 = \u03d5/\u03bb). This strategy was experimentally validated for antibiotic-susceptible bacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 present the model-based prediction. Claim C45 provides experimental validation (Figure 4A) showing increased plating inefficiency with growth reduction. Claims C54-C55, C66 summarize the strategy and validation. The experimental design tests the model prediction appropriately. However, the strategy does not work universally (see next result), and statistical significance of increases is not always reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "8e89dcf4-e245-4c2e-9ad2-aaeed32bbcf5",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The growth reduction strategy does not work for all bactericidal drugs. Drugs that only kill growing cells (kanamycin, 6-APA) show no increased extinction with growth reduction. Quinolone drugs (ofloxacin, ciprofloxacin) also show no significant change due to drug-drug interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 are supported by experimental data (Figure 4\u2014figure supplements 2-4). Claims C89-C90 provide mechanistic insight showing kanamycin and 6-APA cannot kill non-growing cells. The limitations are appropriately characterized and explained. Claim C47 cites prior work on quinolone-bacteriostatic interactions, appropriately contextualizing the finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "9deaafc5-ab1e-4ff9-aca2-17aaeacda41c",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Antibiotic-resistant bacteria exhibit stochastic clearance at sub-MIC concentrations, and the growth reduction strategy facilitates their clearance, similar to antibiotic-susceptible bacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 are supported by experimental data (Figure 4B) using clinically-isolated resistant strains and a laboratory-evolved rifampicin-resistant mutant. Claims C74-C75 reinforce these findings. The extension to resistant bacteria is important for clinical relevance. However, only three resistant strains were tested, limiting generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "f985cc64-e487-4ec2-8c7a-4e6a7a55f6d7",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The stochastic nature of bacterial clearance exposes fundamental limits in our ability to deterministically predict antibiotic-mediated eradication. Deterministic knowledge from large populations cannot be extrapolated to population extinction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56, C64, C70 present the conceptual conclusion. Claims C68, C71 provide specific implications. These claims are logical inferences from the experimental findings (C17-C20, C30-C31, C35-C40) showing stochastic extinction. The conclusion is appropriately scoped, acknowledging inherent unpredictability. However, the practical clinical impact remains to be demonstrated in vivo.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "e1d50c54-972f-4ff9-89fd-7306e0dbfe75",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study demonstrates the potential of using sub-MIC antibiotic concentrations, previously deemed inefficacious, to eradicate bacteria through stochastic clearance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57 and C52 are supported by experimental data showing non-zero extinction probability at sub-MIC concentrations (Figure 2C, Figure 3C-D) and increased clearance with growth reduction strategies (Figure 4A-B). However, this is a proof-of-concept in vitro; clinical translation requires in vivo validation, consideration of pharmacokinetics, and host factors not addressed here.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "d106a103-b159-4414-b8cf-397158858836",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study reconciles deterministic and stochastic frameworks for MIC definition. In both frameworks, \u03d5 = \u03bb at the MIC, but population dynamics differ (maintenance vs. extinction). For small culture volumes, MIC should be defined based on extinction, not maintenance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77, C81-C83 present the conceptual reconciliation. Claim C82 is supported by experimental data (Figure 2D). Claim C84 provides a practical recommendation for small-volume MIC assays, citing recent work (Avesar et al., 2017). The clarification is logically sound and addresses a methodological issue in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "7b34c82e-8ca6-42ec-a101-53cabcdd2b2f",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Cell-to-cell variability in gene expression could be one possible molecular mechanism underlying population fluctuations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C67 is speculative, citing previous studies showing gene expression variability affects antibiotic susceptibility. While plausible, this mechanism was not directly tested in the current study. The claim appropriately uses cautious language ('could be'), but experimental validation is needed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "bedffed8-21c0-4937-a856-68defa2a444e",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The observation of stochastic extinction dynamics, especially variability in extinction time, has significant bearing on antibiotic treatment duration and the conventional wisdom of 'complete the prescribed course'.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C72 connects the study's findings to clinical practice, citing Llewelyn et al., 2017. While the connection is logical, the claim is speculative about clinical implications. The in vitro findings need in vivo validation before informing treatment duration guidelines. The claim appropriately uses cautious language ('we believe').",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "d00244f4-fb33-4277-82ea-fc6e3ebc516f",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Persisters have little effect on the population dynamics studied here due to their low frequency (~10^-5). However, stochasticity in small populations may complicate persister enrichment and characterization studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 is supported by citations to persister frequency studies and appropriate inference about relevance to small populations (<10^5 cells). Claims C79-C80 are speculative but cite a recent study (Brauner et al., 2017) reporting variability in persistence studies. The discussion appropriately scopes the relevance of persisters to the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "b4490ade-c2e4-4f37-9cc2-9d0bc5be7282",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background claims about antibiotic resistance burden, treatment failures, previous deterministic models, and infectious doses are supported by appropriate citations to prior work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7, C63 provide background context with appropriate citations. These are standard literature review claims establishing motivation and context. The citations appear appropriate, though the specific projections in C1 (O'Neill, 2016) have been debated in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "4d791b25-d522-43ab-aa9a-489842e07f08",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Methods and materials are described, including bacterial strains, culture conditions, resistant strain generation, and experimental calibrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62, C85-C88 describe experimental methods and materials. These are factual statements about procedures performed. Claim C86 notes ~10% variation in cell distribution, which is reasonable. Claim C87 provides calibration data. These methodological details support reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    },
+    {
+      "id": "8829716d-48df-4a95-8a21-e5d69d3b2df5",
+      "content_id": "14e960d7-226b-4f9b-b41f-2dd2d9f02aed",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "General knowledge claims about antibiotic resistance, MIC as a critical parameter, and lower susceptibility of non-growing bacteria are supported by established knowledge and citations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73, C76, C91 state established knowledge in the field, with C91 providing a citation. These are appropriate background statements that do not require extensive validation in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:51.433690Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "39b72cfb-899f-4b96-b4ac-300a4f386b85",
+      "result_id": "9a21ab32-5982-4627-80c3-85eaec2e0015"
+    },
+    {
+      "claim_id": "c3eaf0ee-f983-4682-b2a9-46d40645c4f4",
+      "result_id": "9a21ab32-5982-4627-80c3-85eaec2e0015"
+    },
+    {
+      "claim_id": "d054bda9-87f2-477b-95d0-587ebf9b5cf4",
+      "result_id": "9a21ab32-5982-4627-80c3-85eaec2e0015"
+    },
+    {
+      "claim_id": "1bd2ef51-fb1e-4d64-a625-08d75fc31327",
+      "result_id": "9a21ab32-5982-4627-80c3-85eaec2e0015"
+    },
+    {
+      "claim_id": "236331c8-ecc9-44bc-bfca-bc0f65136777",
+      "result_id": "9a21ab32-5982-4627-80c3-85eaec2e0015"
+    },
+    {
+      "claim_id": "f514e2fb-01bd-4e71-87f4-3f233943a397",
+      "result_id": "a6884f1d-f7cf-4238-8913-1c88c3eeb157"
+    },
+    {
+      "claim_id": "a56999ba-8dd4-48eb-91f1-81897154844e",
+      "result_id": "a6884f1d-f7cf-4238-8913-1c88c3eeb157"
+    },
+    {
+      "claim_id": "95e9fb91-fe27-433b-a159-52fbae916229",
+      "result_id": "a6884f1d-f7cf-4238-8913-1c88c3eeb157"
+    },
+    {
+      "claim_id": "2f5f8147-2723-4e7e-8d2a-199ce9bbce97",
+      "result_id": "a6884f1d-f7cf-4238-8913-1c88c3eeb157"
+    },
+    {
+      "claim_id": "fa0f08e8-fc83-4b15-9916-9bfec87befbb",
+      "result_id": "0a5da9a0-3abd-4362-b3e3-d854a3811403"
+    },
+    {
+      "claim_id": "8ac2feb3-2c24-4401-8ce6-28326297e8ad",
+      "result_id": "0a5da9a0-3abd-4362-b3e3-d854a3811403"
+    },
+    {
+      "claim_id": "eba8a58f-f25a-4ed3-adec-57c3ebcdb1d1",
+      "result_id": "0a5da9a0-3abd-4362-b3e3-d854a3811403"
+    },
+    {
+      "claim_id": "e81eb777-e114-4368-90a2-84befaed2555",
+      "result_id": "0a5da9a0-3abd-4362-b3e3-d854a3811403"
+    },
+    {
+      "claim_id": "3f74c65e-a00a-4e27-9a10-3e4fab365dbb",
+      "result_id": "0a5da9a0-3abd-4362-b3e3-d854a3811403"
+    },
+    {
+      "claim_id": "a92e361d-dd86-465f-8054-896935f2e05d",
+      "result_id": "ef4e3248-6a33-4224-b52f-e8b7cd9c0bf7"
+    },
+    {
+      "claim_id": "a6ab4e75-b79f-407f-aa94-4a826cafaa8a",
+      "result_id": "ef4e3248-6a33-4224-b52f-e8b7cd9c0bf7"
+    },
+    {
+      "claim_id": "76022902-b7bd-4679-bfd2-264eceee73f7",
+      "result_id": "ef4e3248-6a33-4224-b52f-e8b7cd9c0bf7"
+    },
+    {
+      "claim_id": "95e50b99-9583-4661-8afe-408850246540",
+      "result_id": "ef4e3248-6a33-4224-b52f-e8b7cd9c0bf7"
+    },
+    {
+      "claim_id": "84803a18-a8e3-4e3e-9ffd-03ec7807f58c",
+      "result_id": "da46ef83-94c5-49b9-92f8-45aef3de2a97"
+    },
+    {
+      "claim_id": "d0730ea0-2c7f-49f7-86f3-4e8016a4941b",
+      "result_id": "da46ef83-94c5-49b9-92f8-45aef3de2a97"
+    },
+    {
+      "claim_id": "61d3d5c4-9e7c-4ce4-8979-5fdda1789ef6",
+      "result_id": "da46ef83-94c5-49b9-92f8-45aef3de2a97"
+    },
+    {
+      "claim_id": "642c2617-d49a-4dae-871f-7984a1ac9b73",
+      "result_id": "da46ef83-94c5-49b9-92f8-45aef3de2a97"
+    },
+    {
+      "claim_id": "03ca0ba5-8064-45ed-a155-37a0618fcf58",
+      "result_id": "da46ef83-94c5-49b9-92f8-45aef3de2a97"
+    },
+    {
+      "claim_id": "059f957f-7079-4e41-84c5-50f2198b3513",
+      "result_id": "da46ef83-94c5-49b9-92f8-45aef3de2a97"
+    },
+    {
+      "claim_id": "d5e2e00d-08a8-4b84-b3d8-3acd8259b5c4",
+      "result_id": "81bece36-9e40-413c-82d3-1e1567c7d8a1"
+    },
+    {
+      "claim_id": "cc812c27-6778-4c60-aea7-75ea0260f7c5",
+      "result_id": "81bece36-9e40-413c-82d3-1e1567c7d8a1"
+    },
+    {
+      "claim_id": "81e5de7a-359e-4528-8832-d08bed97120e",
+      "result_id": "81bece36-9e40-413c-82d3-1e1567c7d8a1"
+    },
+    {
+      "claim_id": "0c679684-0b8c-4304-b026-5e78a8231d06",
+      "result_id": "81bece36-9e40-413c-82d3-1e1567c7d8a1"
+    },
+    {
+      "claim_id": "f9f26b67-5dd4-4ac5-b110-502828b25523",
+      "result_id": "81bece36-9e40-413c-82d3-1e1567c7d8a1"
+    },
+    {
+      "claim_id": "4d6c094e-b3eb-4924-b799-8dea4e7b9609",
+      "result_id": "81bece36-9e40-413c-82d3-1e1567c7d8a1"
+    },
+    {
+      "claim_id": "65644d21-008b-4287-980e-f7ba55122792",
+      "result_id": "79b5c895-cd84-4d7f-ba34-208d5a4c2ac9"
+    },
+    {
+      "claim_id": "207f4e19-78dc-47b4-a2d6-4c4882b3aee2",
+      "result_id": "79b5c895-cd84-4d7f-ba34-208d5a4c2ac9"
+    },
+    {
+      "claim_id": "9ab8eeeb-3092-425d-a4ee-387544b1b045",
+      "result_id": "79b5c895-cd84-4d7f-ba34-208d5a4c2ac9"
+    },
+    {
+      "claim_id": "b1bedb7a-b0ad-414f-a155-cc08e1f04cb9",
+      "result_id": "79b5c895-cd84-4d7f-ba34-208d5a4c2ac9"
+    },
+    {
+      "claim_id": "db970848-0d48-4f78-8ade-2746487a295e",
+      "result_id": "79b5c895-cd84-4d7f-ba34-208d5a4c2ac9"
+    },
+    {
+      "claim_id": "0e4d3710-3827-4dae-bf98-7621e6dcd0cb",
+      "result_id": "79b5c895-cd84-4d7f-ba34-208d5a4c2ac9"
+    },
+    {
+      "claim_id": "9f1167af-484c-4266-a27a-f1abf61f86b2",
+      "result_id": "79b5c895-cd84-4d7f-ba34-208d5a4c2ac9"
+    },
+    {
+      "claim_id": "f99b09ee-23e0-4669-adc9-f759b26bab2a",
+      "result_id": "79b5c895-cd84-4d7f-ba34-208d5a4c2ac9"
+    },
+    {
+      "claim_id": "78202aec-22a8-42ae-ab16-a708a88d5450",
+      "result_id": "79b5c895-cd84-4d7f-ba34-208d5a4c2ac9"
+    },
+    {
+      "claim_id": "861cb6bc-8edc-4178-8ea5-d4b45b93bbc1",
+      "result_id": "2adb7f99-a31f-4b82-87b4-10db37e7c7aa"
+    },
+    {
+      "claim_id": "faa8a3f9-b059-45c4-abd5-381bac392e79",
+      "result_id": "2adb7f99-a31f-4b82-87b4-10db37e7c7aa"
+    },
+    {
+      "claim_id": "604a3032-aa72-482e-bff2-62d1df997757",
+      "result_id": "2adb7f99-a31f-4b82-87b4-10db37e7c7aa"
+    },
+    {
+      "claim_id": "4aeedf4e-9b8f-4936-aef0-e2e69c9dd710",
+      "result_id": "2adb7f99-a31f-4b82-87b4-10db37e7c7aa"
+    },
+    {
+      "claim_id": "edf3f5be-8ec1-4455-8e07-d91c04447bce",
+      "result_id": "2adb7f99-a31f-4b82-87b4-10db37e7c7aa"
+    },
+    {
+      "claim_id": "2b6904c3-6749-4945-8fb4-18d7b2581b27",
+      "result_id": "2adb7f99-a31f-4b82-87b4-10db37e7c7aa"
+    },
+    {
+      "claim_id": "bed51de4-22ab-4326-87e5-33e10aeeefb3",
+      "result_id": "2adb7f99-a31f-4b82-87b4-10db37e7c7aa"
+    },
+    {
+      "claim_id": "50780465-4951-45b0-9129-d60a24bef4b4",
+      "result_id": "8e89dcf4-e245-4c2e-9ad2-aaeed32bbcf5"
+    },
+    {
+      "claim_id": "65799ee6-8c2a-4c30-9d55-606b3ae97ada",
+      "result_id": "8e89dcf4-e245-4c2e-9ad2-aaeed32bbcf5"
+    },
+    {
+      "claim_id": "e0a1864a-2803-4e29-84e5-599803a7e234",
+      "result_id": "8e89dcf4-e245-4c2e-9ad2-aaeed32bbcf5"
+    },
+    {
+      "claim_id": "4a58a9f6-883b-4687-b7fc-4e8ed0ccf57a",
+      "result_id": "8e89dcf4-e245-4c2e-9ad2-aaeed32bbcf5"
+    },
+    {
+      "claim_id": "14102b77-46a8-49fe-8513-742bfa421c05",
+      "result_id": "9deaafc5-ab1e-4ff9-aca2-17aaeacda41c"
+    },
+    {
+      "claim_id": "934917ee-05fd-4082-bd0e-6aa14fc96d38",
+      "result_id": "9deaafc5-ab1e-4ff9-aca2-17aaeacda41c"
+    },
+    {
+      "claim_id": "44ab4f75-42b0-402b-b140-2e1132e226e2",
+      "result_id": "9deaafc5-ab1e-4ff9-aca2-17aaeacda41c"
+    },
+    {
+      "claim_id": "e4809882-b8a6-4dd1-9242-e0c564af70bd",
+      "result_id": "9deaafc5-ab1e-4ff9-aca2-17aaeacda41c"
+    },
+    {
+      "claim_id": "29c44792-d1fb-4ae3-b9b1-0e1cdc145ba7",
+      "result_id": "f985cc64-e487-4ec2-8c7a-4e6a7a55f6d7"
+    },
+    {
+      "claim_id": "9e6a3773-1477-48e5-bad1-27868443566d",
+      "result_id": "f985cc64-e487-4ec2-8c7a-4e6a7a55f6d7"
+    },
+    {
+      "claim_id": "aca52391-ec44-4312-895b-28a0bcf77358",
+      "result_id": "f985cc64-e487-4ec2-8c7a-4e6a7a55f6d7"
+    },
+    {
+      "claim_id": "88797f91-a772-4de6-8432-a3f22efef262",
+      "result_id": "f985cc64-e487-4ec2-8c7a-4e6a7a55f6d7"
+    },
+    {
+      "claim_id": "4448c2be-f831-456a-8332-94f4084d8d87",
+      "result_id": "f985cc64-e487-4ec2-8c7a-4e6a7a55f6d7"
+    },
+    {
+      "claim_id": "40e4ae0e-1f91-41f5-9b0c-3a1b84e9a1f0",
+      "result_id": "e1d50c54-972f-4ff9-89fd-7306e0dbfe75"
+    },
+    {
+      "claim_id": "9088f091-4a9c-4126-b4aa-1bac6db88f1a",
+      "result_id": "e1d50c54-972f-4ff9-89fd-7306e0dbfe75"
+    },
+    {
+      "claim_id": "d0ab1617-81c8-4fc6-8a3f-894b1447ff14",
+      "result_id": "d106a103-b159-4414-b8cf-397158858836"
+    },
+    {
+      "claim_id": "bf7569dd-9eb7-4ed3-b4a6-d81156410009",
+      "result_id": "d106a103-b159-4414-b8cf-397158858836"
+    },
+    {
+      "claim_id": "da441613-7160-4666-9d7a-4aee4bcf4645",
+      "result_id": "d106a103-b159-4414-b8cf-397158858836"
+    },
+    {
+      "claim_id": "1034ee2c-5e2a-4819-899c-88eb89edb6a7",
+      "result_id": "d106a103-b159-4414-b8cf-397158858836"
+    },
+    {
+      "claim_id": "3d16544e-a3e9-4de1-8ecd-2530bf056023",
+      "result_id": "d106a103-b159-4414-b8cf-397158858836"
+    },
+    {
+      "claim_id": "ea5ffcd6-be1a-4e02-999e-a44a2ee060da",
+      "result_id": "7b34c82e-8ca6-42ec-a101-53cabcdd2b2f"
+    },
+    {
+      "claim_id": "69b78e9b-c9f7-4d6b-a508-8328e129ffe5",
+      "result_id": "bedffed8-21c0-4937-a856-68defa2a444e"
+    },
+    {
+      "claim_id": "43e9e198-dfb1-4c7c-90c2-bf9f04e0a219",
+      "result_id": "d00244f4-fb33-4277-82ea-fc6e3ebc516f"
+    },
+    {
+      "claim_id": "69d074ea-7419-45d0-8dc2-6aac4efd9e3e",
+      "result_id": "d00244f4-fb33-4277-82ea-fc6e3ebc516f"
+    },
+    {
+      "claim_id": "a4778714-3f73-41cf-b540-f09a3d4a0e15",
+      "result_id": "d00244f4-fb33-4277-82ea-fc6e3ebc516f"
+    },
+    {
+      "claim_id": "1ca6e46c-e4cd-41b4-8883-de1bf46ff55b",
+      "result_id": "b4490ade-c2e4-4f37-9cc2-9d0bc5be7282"
+    },
+    {
+      "claim_id": "dc6f3749-ce62-4b5f-9c7f-22f03970efc5",
+      "result_id": "b4490ade-c2e4-4f37-9cc2-9d0bc5be7282"
+    },
+    {
+      "claim_id": "f6ca2bd3-e126-4c32-a78a-6f2fa98a3b4a",
+      "result_id": "b4490ade-c2e4-4f37-9cc2-9d0bc5be7282"
+    },
+    {
+      "claim_id": "89f0a03e-5fdb-43c2-9ec4-9e7a856b1a89",
+      "result_id": "b4490ade-c2e4-4f37-9cc2-9d0bc5be7282"
+    },
+    {
+      "claim_id": "bea24dc9-e220-4e93-8d35-621576266d48",
+      "result_id": "b4490ade-c2e4-4f37-9cc2-9d0bc5be7282"
+    },
+    {
+      "claim_id": "031fb2cd-b572-4417-8913-2d36167f9427",
+      "result_id": "b4490ade-c2e4-4f37-9cc2-9d0bc5be7282"
+    },
+    {
+      "claim_id": "cc8eb973-b5b5-4c7a-8678-b2961fb362c1",
+      "result_id": "b4490ade-c2e4-4f37-9cc2-9d0bc5be7282"
+    },
+    {
+      "claim_id": "e626ec07-ed2f-4b5c-95ee-7c9c48ba3de1",
+      "result_id": "b4490ade-c2e4-4f37-9cc2-9d0bc5be7282"
+    },
+    {
+      "claim_id": "732c8b15-39ad-4a26-8c76-28922ab64d85",
+      "result_id": "4d791b25-d522-43ab-aa9a-489842e07f08"
+    },
+    {
+      "claim_id": "7c4dbb52-9969-469c-a75d-c9577649fda7",
+      "result_id": "4d791b25-d522-43ab-aa9a-489842e07f08"
+    },
+    {
+      "claim_id": "ca08af00-76c3-47b0-9d44-1c1b4de8a699",
+      "result_id": "4d791b25-d522-43ab-aa9a-489842e07f08"
+    },
+    {
+      "claim_id": "1d66e528-91ee-430e-9723-10c4ff1702ba",
+      "result_id": "4d791b25-d522-43ab-aa9a-489842e07f08"
+    },
+    {
+      "claim_id": "ec586280-babd-42c9-964b-070e51dbffe5",
+      "result_id": "4d791b25-d522-43ab-aa9a-489842e07f08"
+    },
+    {
+      "claim_id": "e3cbf8c0-ea87-4423-a4aa-c5c8524b5046",
+      "result_id": "4d791b25-d522-43ab-aa9a-489842e07f08"
+    },
+    {
+      "claim_id": "069c9594-337d-4b2a-98d8-6d5a1d313ee0",
+      "result_id": "4d791b25-d522-43ab-aa9a-489842e07f08"
+    },
+    {
+      "claim_id": "7f9b54e2-2398-4588-926e-67246f42f387",
+      "result_id": "4d791b25-d522-43ab-aa9a-489842e07f08"
+    },
+    {
+      "claim_id": "7697e9cd-6e5a-471a-acd1-444600118842",
+      "result_id": "4d791b25-d522-43ab-aa9a-489842e07f08"
+    },
+    {
+      "claim_id": "61b68317-40ef-4f10-ad59-8eee701e226b",
+      "result_id": "8829716d-48df-4a95-8a21-e5d69d3b2df5"
+    },
+    {
+      "claim_id": "1f529a56-8519-4dba-822c-a7828b6cb57c",
+      "result_id": "8829716d-48df-4a95-8a21-e5d69d3b2df5"
+    },
+    {
+      "claim_id": "1b95ba7f-891c-4aa2-bae0-e72ef0ea6dea",
+      "result_id": "8829716d-48df-4a95-8a21-e5d69d3b2df5"
+    }
+  ],
+  "comparisons": []
+}

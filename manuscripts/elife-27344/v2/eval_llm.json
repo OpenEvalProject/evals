@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Synonymous codon usage (SCU) varies among human genes and functional categories, with this variation fully explained by differences in GC-content at the third codon position (GC3). PCA analysis shows that the first principal component, which segregates 'proliferation' from 'differentiation' genes, is perfectly correlated with GC3 (R\u00b2 = 0.99).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 provide strong empirical evidence through PCA analysis and statistical tests (p<2.10\u207b\u00b9\u2076) showing that SCU variation between functional categories is fully explained by GC3. The perfect correlation (R\u00b2 = 0.99) between PCA axis 1 and GC3 (C20-C21) is a robust quantitative finding supported by Figure 1A-C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C61"
+    ],
+    "result": "SCU variation is not driven by constraints on tRNA abundance. The key evidence is that GC3 variation is similar and strongly correlated (R\u00b2 = 0.90) between mono-isoacceptor amino acids (decoded by single tRNA) and multi-isoacceptor amino acids (decoded by multiple tRNAs), indicating the process affecting SCU is independent of tRNA variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 provide a clever experimental design that distinguishes between translational selection and other processes. The strong correlation (R\u00b2 = 0.90, C27) between mono- and multi-isoacceptor amino acids is compelling evidence that SCU is not driven by tRNA abundance, as mono-isoacceptor amino acids cannot vary in tRNA abundance by definition (C25). This logic is sound and well-supported by Figure 1D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "SCU is driven by large-scale variation in GC-content caused by GC-biased gene conversion (gBGC), a non-adaptive process linked to meiotic recombination. GC3 correlates strongly with GC-content of flanking regions (R\u00b2 = 0.48) and introns, indicating that the process affects both coding and non-coding regions and is therefore not related to translational selection or other RNA-level selective pressures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 demonstrate that GC3 correlates with flanking GC-content across all gene categories (R\u00b2 = 0.48, p<2.10\u207b\u00b9\u2076), with differences persisting after controlling for regional GC-content. Claims C34-C35 cite extensive prior evidence for gBGC. The correlation with non-coding regions (C10, C64) provides strong logical evidence against translational selection, as these regions are not translated. The inference in C65 is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C17",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Expression in meiotic cells is associated with a strong decrease in recombination within genes. Crossover rates are 3.5-5.4 times lower in highly expressed genes compared to weakly expressed genes, with this reduction affecting the entire transcription unit and explained in part by lower DSB hotspot density. Intragenic crossover rates differ among functional categories and covary with their GC3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 provide strong quantitative evidence with fold-changes and are supported by multiple figures (Figures 3A, 4, and supplements). The relationship is demonstrated across both sexes and with multiple datasets. Claim C43 shows the effect is specific to meiotic cells. Statistical significance is consistently reported (p<2.10\u207b\u00b9\u2076). The mechanistic explanation via DSB hotspot density (C39) is appropriately qualified as partial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C72"
+    ],
+    "result": "Differences in SCU among functional categories reflect differences in meiotic transcription levels. Proliferation genes are enriched for high meiotic expression (65% in top tercile) while differentiation genes show the opposite pattern (42% in bottom tercile). When meiotic expression is controlled for, most differences in GC3 between functional categories disappear, with average GC3 of 0.51 in highly expressed genes versus 0.65 in weakly expressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 provide clear quantitative evidence linking functional categories to meiotic expression patterns and showing that controlling for meiotic expression eliminates most GC3 differences between categories. The statistical tests are appropriate (p<2.10\u207b\u00b9\u2076 for overall difference, p=0.68 and 0.15 for within-bin comparisons in C47). Figure 3B supports these findings. The causal chain from functional category \u2192 meiotic expression \u2192 recombination rate \u2192 GC3 is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Expression levels in germ cells, particularly meiotic cells, are better predictors of GC3 than expression in somatic tissues. Male pachytene spermatocytes show the strongest correlation (R\u00b2 = 6.3%), with sex-averaged meiotic expression showing even stronger correlation (R\u00b2 = 8.6%). Expression in primary germ cells is twice as informative as expression in somatic cells at comparable developmental stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 provide systematic comparison across multiple tissue types and developmental stages with consistent quantitative results. The specificity to meiotic cells (C50-C51) and the quantitative comparisons (C52-C54) are well-supported by Figure 5. All correlations are highly significant (p<2.10\u207b\u00b9\u2076). The two-fold difference (C51) is a clear quantitative finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C79",
+      "C80"
+    ],
+    "result": "The gBGC model explains 70% of the variance in SCU among human genes. A linear model incorporating GC-content of introns (GCi, the strongest predictor), GC-content of flanking regions, intragenic crossover rate, and meiotic expression level explains 68.2-70.4% of GC3 variance. The functional category variable adds only 0.1% explanatory power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 present a comprehensive linear model analysis with clear quantitative contributions from each variable (Table 1). The high R\u00b2 values (62.7% for GCi alone, 68.2% for the full model without interactions, 70.4% with interactions) are well-documented with appropriate statistical tests (ANOVA, p<2.10\u207b\u00b9\u2076). The minor contribution of functional category (0.1%, C58) strengthens the argument that gBGC, not functional constraints, drives SCU variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "At the level of GO gene sets, GC3 correlates strongly with intragenic crossover rate (R\u00b2 = 0.51), which in turn is well explained by meiotic expression levels (R\u00b2 = 0.46). The correlation of intragenic crossover rate with intronic GC-content invalidates the hypothesis that SCU differences among functional categories are driven by selection on codon usage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 provide strong correlational evidence at the GO gene set level, supported by Figure 6. The correlation with intronic GC-content (C76) is particularly important as it demonstrates the process affects non-coding regions. However, the caveat that GO gene sets are not independent (mentioned in the text) should be noted. The inference in C77 is logically sound given that selection on codon usage would not affect introns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C98",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The strong heterogeneity of SCU induced by gBGC in mammalian genomes (with proliferative genes showing GC3 ranging from 20% to almost 100%) precludes optimization of the tRNA pool to match codon usage demand. Selection on codon usage is not strong enough to counteract gBGC, creating a non-optimal situation where it is impossible to adapt the tRNA pool to the transcriptome of any cell type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C104 present a logical argument about the consequences of GC3 heterogeneity, supported by Figure 1C showing the wide range. However, this is primarily an interpretive/speculative claim (C8, C100, C104 are marked as INFERENCE/SPECULATION). While the logic is sound, the claim that optimization is 'impossible' (C100, C104) is strong and not directly tested. The argument would be strengthened by quantitative modeling of the mismatch between tRNA pools and codon usage across the GC3 range.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "PRDM9 targets recombination away from highly expressed genes in meiotic cells. There is a deficit of DSB hotspots around the TSS in highly expressed genes, though this deficit is less pronounced than the deficit in crossover rates. The chromatin state of highly expressed genes may interfere with PRDM9 binding or activity, and differences in crossover profiles may also reflect differences in how recombination events are resolved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C87 cite established knowledge about PRDM9. Claims C88, C92, C93-C94 present observational data from DSB maps (Figure 4\u2014figure supplement 2). However, the mechanistic explanations (C91, C95) are explicitly speculative. The discrepancy between DSB rates and crossover rates (C93-C94) suggests the mechanism is more complex than initially proposed. While the observations are supported, the mechanistic understanding remains incomplete.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C99"
+    ],
+    "result": "Prior studies reported that SCU varies among functional categories and that tRNA abundance varies with cell proliferation/differentiation state, which was interpreted as evidence for translational selection. However, more recent studies found that collective isoacceptor tRNA expression remains constant throughout mouse development and found no covariation of tRNA pool and codon usage between proliferating and differentiating cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 and C99 accurately cite prior literature (Gingold et al. 2014, Schmitt et al. 2014, Rudolph et al. 2016). These are assessment of prior work claims that set up the contradiction the current study resolves. The citations are appropriate and the characterization of the prior findings appears accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C70",
+      "C78"
+    ],
+    "result": "SCU of individual genes depends primarily on the isochore in which they are located (large-scale long-term recombination rate) and secondarily on their meiotic expression level (which affects local intragenic recombination rate). Variation in SCU among functional categories is explained by the single dominant factor of GC3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C62, C70, C78) are summary statements well-supported by the quantitative analyses in Table 1 and the correlational analyses throughout. They accurately synthesize the findings about the relative contributions of regional (isochore) versus local (gene-specific) effects. The hierarchical relationship is clearly demonstrated by the variance decomposition in the linear model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Multiple lines of evidence support gBGC as the mechanism driving GC-content evolution: direct evidence of GC-allele transmission bias during meiosis, polymorphism and divergence analyses showing fixation bias favoring GC alleles, and strong correlation (R\u00b2 = 0.64) between long-term recombination rates and stationary GC-content in primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 cite extensive prior literature establishing gBGC as a well-supported mechanism. These are assessment of prior work claims that provide the theoretical foundation for the current study. The citations are to multiple independent studies using different approaches, providing strong support for the gBGC model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Co-variation between SCU and expression is traditionally considered a signature of translational selection, but can also emerge from non-adaptive processes like gBGC. Since gBGC is widespread in eukaryotes, it is essential to account for this process when interpreting variation in synonymous codon usage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 present an important conceptual point about interpreting SCU-expression correlations. C81 cites prior work establishing the traditional interpretation, C82 is a key conclusion of the current study supported by the data, C83 cites evidence that gBGC is widespread, and C84 is a well-justified recommendation. This represents a significant contribution to how the field should interpret codon usage patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Synonymous codon usage is under selective pressure in some metazoan species (e.g., Drosophila, nematodes), and it is expected a priori that codon usage should affect translation efficiency in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 cite established knowledge (C96) and state a reasonable expectation (C97). These provide context for why the lack of evidence for translational selection in humans (despite its presence in other organisms) is noteworthy. The claims are appropriately qualified.",
+    "result_type": "MINOR"
+  }
+]

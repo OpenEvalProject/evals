@@ -1,0 +1,2062 @@
+{
+  "submission": {
+    "id": "cc8ab5bb-576a-4837-b97a-7e9223eb811d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:28:18.767109Z",
+    "updated_at": "2025-12-01T22:28:18.767109Z"
+  },
+  "content": [
+    {
+      "id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "submission_id": "cc8ab5bb-576a-4837-b97a-7e9223eb811d",
+      "content_type": "manuscript",
+      "content_text": "# Structure-based membrane dome mechanism for Piezo mechanosensitivity\n\n## Authors\n\n- Yusong R Guo<sup>1</sup> ([ORCID: 0000-0002-8563-3397](https://orcid.org/0000-0002-8563-3397))\n- Roderick MacKinnon<sup>1</sup> ([ORCID: 0000-0001-7605-4679](https://orcid.org/0000-0001-7605-4679)) \u2020\n\n### Affiliations\n\n1. Laboratory of Molecular Neurobiology and Biophysics Howard Hughes Medical Institute, The Rockefeller University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMechanosensitive ion channels convert external mechanical stimuli into electrochemical signals for critical processes including touch sensation, balance, and cardiovascular regulation. The best understood mechanosensitive channel, MscL, opens a wide pore, which accounts for mechanosensitive gating due to in-plane area expansion. Eukaryotic Piezo channels have a narrow pore and therefore must capture mechanical forces to control gating in another way. We present a cryo-EM structure of mouse Piezo1 in a closed conformation at 3.7\u00c5-resolution. The channel is a triskelion with arms consisting of repeated arrays of 4-TM structural units surrounding a pore. Its shape deforms the membrane locally into a dome. We present a hypothesis in which the membrane deformation changes upon channel opening. Quantitatively, membrane tension will alter gating energetics in proportion to the change in projected area under the dome. This mechanism can account for highly sensitive mechanical gating in the setting of a narrow, cation-selective pore.\n\n## Introduction\n\nPiezo ion channels, Piezo1 and Piezo2, are mechanosensitive channels (MS channels) that underlie force-detection in eukaryotic cells (Coste et al., 2010; Wu et al., 2017). The number of cellular processes found mediated by Piezo channels is large and growing at a rapid rate (Eisenhoffer et al., 2012; McHugh et al., 2012; Pathak et al., 2014; Li et al., 2014; Cahalan et al., 2015; Alper, 2017). Their essential biophysical characteristics include responsiveness in gating to mechanical force (i.e. mechanosensitivity) and selectivity of the pore for cations (Gnanasambandam et al., 2015; Lewis and Grandl, 2015). Together, these characteristics allow Piezo channels to serve their many biological functions, including the transduction of mechanical forces into electrical signals in sensory neurons (Kim et al., 2012; Faucherre et al., 2013; Woo et al., 2014).\n\nBiophysical studies suggest that Piezo channels sense force directly through the lipid membrane (Cox et al., 2016; Syeda et al., 2016), although other mechanisms also have been proposed (Lewis and Grandl, 2015; Gottlieb et al., 2012; Peyronnet et al., 2013; Poole et al., 2014; Borbiro et al., 2015). To understand how mechanical forces might influence the balance between opened and closed states in Piezo channels it is useful to consider the most thoroughly studied and best-understood MS channel, MscL from bacteria (Sukharev et al., 1997; Perozo et al., 2002; Moe and Blount, 2005; Li et al., 2009; Iscla and Blount, 2012). Structural, biophysical and functional analyses show that MscL undergoes a large (~20 nm2) in-plane area expansion when it opens (Perozo et al., 2002; Chang et al., 1998; Sukharev et al., 2001; Corry et al., 2010). This area expansion produces a decrease in the free energy of the membrane-channel system if the membrane is under tension, favoring the open state (Wiggins and Phillips, 2005). An illustration adapted from Ursell et al. (2008) provides a \u2018gravitational analog\u2019 for understanding the origin of the free energy change: as the channel opens and expands in the plane of the membrane, weights are lowered (Figure 1). The free energy difference between closed and opened conformations has been described as\n\n![Figure 1.](https://cdn.elifesciences.org/articles/33660/elife-33660-fig1-v2.jpg)\n\n**Figure 1.:** Analog of a membrane under tension showing tethered weights in a gravitational field pulling the membrane taut, adapted from Ursell et al. (2008). (a) When the channel is closed, potential energy from the weights is high. (b) When the channel opens and in-plane area expands, the weights are lowered, and the potential energy of the system is decreased.\n\n$$\n\u0394G=\u0394G(\\gamma=0)\u2212\\gamma\u0394A\n$$\n\nwhere \u0394G(\u03b3\u00a0=\u00a00) is the free energy difference at zero tension, \u03b3 the membrane tension and \u0394A the in-plane cross sectional area change associated with channel opening (Haswell et al., 2011). Thus, open state stabilization relative to closed is proportional to membrane tension and the proportionality constant is in-plane area expansion. That is, the sensitivity of gating with respect to membrane tension is\u00a0\n\n$$\nd(\u0394G)/d(\\gamma)=\u2212\u0394A.\n$$\n\nIn MscL the 20 nm2 physical expansion determined by structural and biophysical analysis (Perozo et al., 2002; Sukharev et al., 2001; Corry et al., 2010) corresponds well to the tension dependence of gating estimated in the most carefully executed functional experiments (Chiang et al., 2004).\n\nThe principle of mechanosensitivity exhibited by MscL suggests a simple recipe for mechanosensitivity in general: couple pore opening to in-plane area expansion. But as a general solution this principle seems problematic for Piezo channels. It works well for MscL because that channel functions as a \u2018pressure release valve\u2019, permitting bacterial survival in the face of osmotic shock (Sukharev et al., 1993). The wide pore opening in MscL, associated with a conductance of approximately 3 nS and complete lack of ion selectivity, naturally fits with a large in-plane area expansion and therefore high mechanosensitivity (Sukharev et al., 1993). By contrast Piezo channels have conductance values around 30 pS (100 times smaller than MscL) and are cation selective, characteristics that are incompatible with a wide pore (Coste et al., 2010). Yet Piezo channels are highly mechanosensitive (Lewis and Grandl, 2015; Cox et al., 2016). Somehow nature must have separated area expansion from pore diameter. In an attempt to understand how this was accomplished we have determined a structure of the mouse Piezo1 (mPiezo1) channel, which exhibits many differences in its molecular detail and global interpretation when compared to an earlier structure (Ge et al., 2015). Based on this new structure, we propose a mechanism for understanding Piezo channel mechanosensitivity.\n\n## Results\n\n### Structure of mPiezo1\n\nUsing cryo-electron microscopy (cryo-EM) we determined a structure of mPiezo1 to an overall resolution of 3.7 \u00c5 (Figure 2 and Figure 2\u2014figure supplement 1). Viewed down its 3-fold axis, the trimeric Piezo channel is a triskelion with extended arms (Figure 2a,c); from the side, it is curved as shown (Figure 2b,d). The cryo-EM map shows greatest detail near the 3-fold center (local resolution 3.2 \u00c5 to 3.6 \u00c5) and less detail near the periphery (local resolution 5 \u00c5 to 6 \u00c5) (Figure 2\u2014figure supplement 1e). To improve the map quality, symmetry expansion was conducted with focused refinement using a mask covering the central hub and one of the three extended arms. The resulting map showed improvement, especially at the periphery (local resolution 4 \u00c5 to 5 \u00c5) (Figure 2f and Table 1). A crystal structure (PDB ID: 4RAX) was docked into density corresponding to the C-terminal extracellular domain (CED) and the remaining model (26 TM helices per subunit) was built de novo (Figure 2\u2014figure supplements 2 and 3) (Ge et al., 2015). The refined structural model contains 1518 residues (out of 2547), with the N-terminal 576 residues and internal flexible loops missing.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/33660/elife-33660-fig2-v2.jpg)\n\n**Figure 2.:** (a and b) Representative 2D averaged classes, viewed from the top (a), and the side (b), scale bar 10 nm. (c and d) Atomic model of the trimeric channel shown as ribbon diagram, viewed from the top (c), and the side (d). The three subunits are colored in red, green and blue, respectively. (e) Fourier shell correlation (FSC) curves calculated between two half maps after C1 masked refinement and post-processing in RELION. (f) Local resolution of density map from C1 masked refinement, estimated by Blocres. The map shown is low-pass filtered to 3.8 \u00c5 and sharpened with a b-factor of \u2212200 \u00c52.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33660/elife-33660-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Representative raw micrograph of mPiezo1. Scale bar 200 \u00c5. (b) Selected 2D class averages representing different orientations of particles. Scale bar 10 nm. (c) Direction distribution over azimuth and elevation angles of particles used in CryoSPARC refinement. (d) Fourier shell correlation (FSC) curves between two half maps of CryoSPARC refinement with C3 symmetry imposed. (e) Local resolution of density map from C3 symmetry CryoSPARC refinement, estimated by Blocres. The map shown is sharpened with a b-factor of \u2212122 \u00c52.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/33660/elife-33660-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Density map from RELION masked refinement in C1 symmetry was low-pass filtered to 3.8 \u00c5, sharpened with a b-factor of \u2212200 \u00c52, and contoured at 6\u03c3. The atomic model is shown as sticks, colored according to atom type: yellow, carbon; red, oxygen; blue, nitrogen; and orange, sulfur.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/33660/elife-33660-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Density map from RELION masked refinement in C1 symmetry was low-pass filtered to 3.8 \u00c5, sharpened with a b-factor of \u2212200 \u00c52, and contoured at 6\u03c3. The atomic model is shown as sticks, colored according to atom type: yellow, carbon; red, oxygen; blue, nitrogen; and orange, sulfur.\n\n**Table 1.**\n Cryo-EM data collection, refinement and validation statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>mouse Piezo1 (EMDB-7042) (PDB 6B3R)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data collection and processing</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Magnification</td>\n      <td>22,500</td>\n    </tr>\n    <tr>\n      <td>Voltage (kV)</td>\n      <td>300</td>\n    </tr>\n    <tr>\n      <td>Electron exposure (e\u2013/\u00c52)</td>\n      <td>47</td>\n    </tr>\n    <tr>\n      <td>Defocus range (\u03bcm)</td>\n      <td>1.0\u20132.4</td>\n    </tr>\n    <tr>\n      <td>Pixel size (\u00c5)</td>\n      <td>1.3</td>\n    </tr>\n    <tr>\n      <td>Symmetry imposed</td>\n      <td>C1</td>\n    </tr>\n    <tr>\n      <td>Initial particle images (no.)</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Final particle images (no.)</td>\n      <td>50</td>\n    </tr>\n    <tr>\n      <td>Map resolution (\u00c5) \u2003FSC threshold</td>\n      <td>3.8 0.143</td>\n    </tr>\n    <tr>\n      <td>Map resolution range (\u00c5)</td>\n      <td>3.2\u201310.7</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Initial model used (PDB code)</td>\n      <td>4RAX</td>\n    </tr>\n    <tr>\n      <td>Map sharpening B factor (\u00c52)</td>\n      <td>\u2212200</td>\n    </tr>\n    <tr>\n      <td>Model composition \u2003Non-hydrogen atoms \u2003Protein residues \u2003Ligands</td>\n      <td>35730 4554 0</td>\n    </tr>\n    <tr>\n      <td>B factors (\u00c52) \u2003Protein \u2003Ligand</td>\n      <td>302.4 N/A</td>\n    </tr>\n    <tr>\n      <td>R.m.s. deviations \u2003Bond lengths (\u00c5) \u2003Bond angles (\u00b0)</td>\n      <td>0.006 1.032</td>\n    </tr>\n    <tr>\n      <td>Validation \u2003MolProbity score \u2003Clashscore \u2003Poor rotamers (%)</td>\n      <td>1.73 4.84 0.25</td>\n    </tr>\n    <tr>\n      <td>Ramachandran plot \u2003Favored (%) \u2003Allowed (%) \u2003Disallowed (%)</td>\n      <td>91.96 8.04 0</td>\n    </tr>\n  </tbody>\n</table>\n\nThe structure\u2019s extended arms consist of 24 helices arranged as six repeated 4-TM structural units (Figure 3a,b). Each unit is a left-handed bundle of four helices starting and ending on the intracellular side. The two extracellular loops (between the first and second, and third and fourth TM helices) are short and long, respectively, the latter being partially ordered and containing \u03b1-helices. The six 4-TM repeats assemble with each other also as a left-handed helix, causing the extended arms of the triskelion to spiral away from the trimer\u2019s center, out of plane with respect to the central pore axis (Figures 2c,d and 3b). Adjacent 4-TM repeats are linked by a polypeptide chain that crosses the span of two repeats, owing to their relative orientations (Figure 3b). The interactions provided by an extended connection likely aid stabilization of the extended arms. The repetitive pattern of TM helices is well conserved for all six 4-TM units visible in the structure. Sequence analysis suggests that the pattern continues to the N-terminus (Figure 3\u2014figure supplement 1\u20133). Therefore, it is likely that a Piezo subunit contains nine 4-TM units altogether (the first 3 of which we do not see) giving a total of 36 TM helices, which form the arms, plus two C-terminal TM helices that meet at the center of the trimer. We have numbered helices in our structural model accordingly (Figure 3a).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/33660/elife-33660-fig3-v2.jpg)\n\n**Figure 3.:** (a) Cartoon representation of a monomer, rainbow-colored with C-terminus in red and N-terminus in blue, except for the first 12 TMs that are not visible in our structure. Helices within a single 4-TM unit are colored uniquely. Helices are shown as cylinders, loops as solid lines, and unresolved regions as dotted lines. C-terminal extracellular domain (CED) is simplified as a box. A ribbon diagram of 4-TM unit 6, consisting of TM 21 to 24, is shown in the left inset panel with N- and C- termini labeled. The right inset panel shows a ribbon diagram of the pore region, formed by TM37, TM38 and the PE helix from all three subunits. (b) A ribbon diagram of a monomer rainbow-colored as in A, viewed from top. Each 4-TM unit is highlighted in a red box with TM number labeled.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33660/elife-33660-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Transmembrane topology prediction was performed using TOPCONS (Tsirigos et al., 2015), OCTOPUS (Viklund and Elofsson, 2008), Philius (Reynolds et al., 2008), PolyPhobius (K\u00e4ll et al., 2004), SCAMPI (Bernsel et al., 2008), SPOCTOPUS (Viklund et al., 2008). Predicted intracellular sequence is indicated by \u2018i\u2019, extracellular sequence by \u2018o\u2019, membrane region by \u2018M\u2019, and signal peptide by \u2018S\u2019. Predicted transmembrane sequence is highlighted in yellow. Secondary structures based on our structure are represented above the sequence as tubes (\u03b1-helices), arrows (\u03b2-sheets), or solid lines (loops). Regions not modeled in our structure are shown as dotted lines. The helices and sheets are colored in red (extracellular), blue (intracellular) or green (transmembrane).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/33660/elife-33660-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Transmembrane topology prediction was performed using TOPCONS (Tsirigos et al., 2015), OCTOPUS (Viklund and Elofsson, 2008), Philius (Reynolds et al., 2008), PolyPhobius (K\u00e4ll et al., 2004), SCAMPI (Bernsel et al., 2008), SPOCTOPUS (Viklund et al., 2008). Predicted intracellular sequence is indicated by \u2018i\u2019, extracellular sequence by \u2018o\u2019, membrane region by \u2018M\u2019, and signal peptide by \u2018S\u2019. Predicted transmembrane sequence is highlighted in yellow. Secondary structures based on our structure are represented above the sequence as tubes (\u03b1-helices), arrows (\u03b2-sheets), or solid lines (loops). Regions not modeled in our structure are shown as dotted lines. The helices and sheets are colored in red (extracellular), blue (intracellular) or green (transmembrane).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/33660/elife-33660-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Transmembrane topology prediction was performed using TOPCONS (Tsirigos et al., 2015), OCTOPUS (Viklund and Elofsson, 2008), Philius (Reynolds et al., 2008), PolyPhobius (K\u00e4ll et al., 2004), SCAMPI (Bernsel et al., 2008), SPOCTOPUS (Viklund et al., 2008). Predicted intracellular sequence is indicated by \u2018i\u2019, extracellular sequence by \u2018o\u2019, membrane region by \u2018M\u2019, and signal peptide by \u2018S\u2019. Predicted transmembrane sequence is highlighted in yellow. Secondary structures based on our structure are represented above the sequence as tubes (\u03b1-helices), arrows (\u03b2-sheets), or solid lines (loops). Regions not modeled in our structure are shown as dotted lines. The helices and sheets are colored in red (extracellular), blue (intracellular) or green (transmembrane).\n\nThe central hub of the trimer is formed by amino acids following TM36 (Figure 3 and\u00a0Figure 6\u2014figure supplement 1).\u00a0At the center TM37-38 form a 3-fold symmetric channel lined by TM38, capped on the extracellular side by a CED, and extended on the intracellular side by a pore extension (PE) helix (Figure 3a and Figure 6\u2014figure supplement 1c,d). TM37-38 are domain-swapped relative to TM1-36 (Figure 2c). The channel is surrounded at the level of the inner membrane leaflet by a layered, helical cuff. The cuff consists of \u2018elbow\u2019 helices (residues 2116 to 2142), a \u2018base\u2019 helix (residues 2149 to 2175) and \u2018hairpin' helices (residues 2501 to 2534) from all three subunits (Figure 3a and Figure 6\u2014figure supplement 1c,d). This solid cuff attaches the extended arms to the channel.\n\nPiezo also contains a long intracellular helix of 66 amino acids extending from the trimer center, radially out to TM28 (Figures 2d and 3). Referred to as a \u2018beam\u2019, this feature was observed previously (Ge et al., 2015), but modeled as two instead of one helix. In addition, linkers between 4-TM units contain at least one helix that runs perpendicular to the TM helices and to the extended arms (Figures 2c, 3 and 7b).\u00a0These \u2018cross\u2019 helices are mostly hydrophobic and located inside of the micelle density, near the intracellular interface.\n\n### Membrane-curving properties of Piezo\n\nA single subunit of Piezo removed from the trimer can be positioned reasonably well into the plane of a lipid membrane (Figure 4a). However, the detergent micelle containing a trimer is curved into a dome shape (Figures 2b,4b). The diameter of the dome opening is about 18 nm with a depth of about 6 nm. The central cap, formed by the CED, is actually located mostly inside the dome. The angle between the central pore axis and the beam in each subunit is about 60\u00b0 instead of 90\u00b0, as we would expect if the trimer were located in a fully flattened membrane (Figures 2d,4b,c). Consequently, the hydrophobic residues on the TM helices (flanked by charged amino acids) form a clearly curved band on the trimer surface, matching the micelle density (Figure 4c). The distribution of charged amino acids on the extended arms of Piezo is consistent with the positive inside rule for membrane proteins (von Heijne, 1992).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/33660/elife-33660-fig4-v2.jpg)\n\n**Figure 4.:** (a) The same ribbon diagram of a monomer taken from the trimer, as in 3B, viewed from the side, with N- and C- termini labeled. Approximate locations of planar membrane interfaces are shown as grey lines. (b) Ribbon diagrams of a trimer in an unsharpened map, contoured at 6\u03c3, showing micelle density. Top, side and bottom views are shown. (c) Surface representation of a trimer, colored based on electrostatic potentials in aqueous solution containing 150 mM NaCl, calculated using APBS, with positive shown blue, neutral white, and negative red. Top, side and bottom views are shown.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33660/elife-33660-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Ribbon diagram of a trimer in an unsharpened map. One of the three contact regions between CED and TM loops is highlighted in a black box. (b) Zoomed-in view of the region in black box in (a) as surface representation, colored based on electrostatic potentials in aqueous solution containing 150 mM NaCl, calculated using APBS, with positive in blue, neutral in white, and negative in red. (c) Ribbon diagram of the helices in contact, colored as in Figure 3. Interacting residues are shown as sticks.\n\nThe unusual shape of the Piezo trimer in detergent micelles led us next to test whether such a non-planar conformation can occur inside a lipid bilayer. Figure 5a shows a Piezo channel reconstituted into a small unilamellar vesicle consisting of POPE and POPG. The presence of a Piezo channel produces a local dome-shaped deformation of the membrane, with density corresponding to the CED visible inside the dome (the channel is inserted with its extracellular side inside the vesicle). The molecular model, without adjustment, conforms to the shape of the locally curved membrane near the Piezo channel (Figure 5a).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/33660/elife-33660-fig5-v2.jpg)\n\n**Figure 5.:** (a) Small unilamellar vesicle containing Piezo without (left) and with (right) molecular model scaled to size and inserted into image. The lipid composition is POPE:POPG\u00a0=\u00a03:1 wt ratio. Scale bar 10 nm. (b) Small unilamellar vesicles containing no protein. The lipid composition is POPC:DOPS:cholesterol\u00a0=\u00a08:1:1 wt ratio. The spherical vesicle projection is highlighted by a white dashed circle. Scale bar 10 nm. (c) Small unilamellar vesicle containing Piezo without (left) and with (right) molecular model scaled to size and inserted into image. The lipid composition is POPC:DOPS:cholesterol\u00a0=\u00a08:1:1 wt ratio. The spherical vesicle projection is highlighted by a white dashed circle. Scale bar 10 nm.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33660/elife-33660-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Small unilamellar vesicles containing Piezo. The lipid composition is POPC:DOPS:cholesterol\u00a0=\u00a08:1:1 wt ratio. Scale bar 10 nm. (a) The raw images. (b) Images with a white dashed circle highlighting the spherical vesicle projection. (c) Images with molecular model scaled to size and inserted into image.\n\nWe observed that vesicles consisting of POPE and POPG tended to be non-spherical even in the absence of Piezo channels, possibly due to the truncated cone and inverted, truncated cone shapes of POPG and POPE lipids, respectively (Israelachvili, 1992). To further examine the ability of Piezo to deform membrane bilayers, we also analyzed vesicles consisting of mixtures of POPC and DOPS, with and without cholesterol. Vesicles of these lipid compositions are spherical in shape (circular in projection) (Figure 5b). As in POPE and POPG vesicles, Piezo channels deform the membrane by producing local membrane curvature (Figure 5c and Figure 5\u2014figure supplement 1). We note that Piezo channels are almost always inserted with an inside-out orientation in vesicles so that the local curvature (of the dome) matches the global curvature of the vesicle. We conclude that Piezo deforms lipid bilayers locally into a dome shape. In cells, the dome will project towards the cytoplasm.\n\nA negatively charged patch of amino acids (E2257, E2258 and D2264) on the CED lies in close contact with a positively charged patch (R1761, R1762 and R1269) located in the extracellular loops of 4-TM units 2 and 3 (Figure 4\u2014figure supplement 1). Hydrogen bonds and salt bridges connect E2257 to R1762 and D2264 in R1761 in a domain-swapped manner. These electrostatic interactions appear to stabilize the trimeric assembly in its curved conformation.\n\n### Structural features and conformational state of the pore\n\nThe transmembrane pore, lined by TM38 and the PE helix, is closed (Figure 6a\u2013c). At the level of the membrane inner leaflet, the pore radius at positions E2537, P2536 and M2493 is 0.1 \u00c5, 0.4 \u00c5 and 0.3 \u00c5, respectively. Estimated from the size of tetraethylammonium (TEA), which is permeable, Piezo should open to a radius of at least 4 \u00c5\u00a0(Gnanasambandam et al., 2015). When it does open, two rings of glutamate residues flanking either side of the narrow region of the pore (E2487 and E2537) likely account for cation selectivity through direct interactions with permeating ions (Figure 6a,c).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/33660/elife-33660-fig6-v2.jpg)\n\n**Figure 6.:** (a) Ion-conduction path viewed from the side. The distance from the pore axis to the protein surface is shown as grey sphere. C\u03b1 trace of the pore (TM37, TM38, hairpin and PE helices) is shown in yellow. Residues facing the pore are shown as sticks. Constricting residues are labeled. (b) Radius of the pore. The van der Waals radius is plotted against the distance from the top along the pore axis. Constricting residues are labeled as in A. (c) Stereo view of the side-chain density around constricting residues. The map is contoured at 6\u03c3 and sharpened with a b-factor of \u2212200 \u00c52. The atomic model is shown as sticks, colored according to atom type: yellow, carbon; red, oxygen; blue, nitrogen; and orange, sulfur.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33660/elife-33660-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Potential ion-conduction path including the CED viewed from the side. The distance from the pore axis to the protein surface is shown as grey sphere. C\u03b1 trace of the pore region (residues 2116 to 2546) is shown in yellow. Estimated membrane interfaces on the basis of protein surface features are shown as grey lines. Four vestibules are labeled as in P2X and ASIC channels. Position of one of the fenestrations is indicated with an asterisk. (b) Radius of the potential ion-conduction pathway including the CED. The van der Waals radius is plotted against the distance from the bottom along the pore axis. (c) Ribbon diagram of the pore region in grey, with the elbow and triangular base helices highlighted in yellow. Both side view and bottom view are shown. (d) Ribbon diagram of the pore region in grey, with the hairpin and PE helices highlighted in red. Both side view and bottom view are shown.\n\nThe overall architecture of Piezo\u2019s pore shares several similarities with P2X (Kawate et al., 2009)\u00a0and acid-sensing ion channels (ASIC) (Baconguis et al., 2014) (Figure 6\u2014figure supplement 1a,b). First, all three are trimeric. Second, the pores contain two TM helices and a large extracellular domain, which enclose a continuous ion-conduction path along the three-fold symmetry axis, including a central vestibule in the extracellular domain. Third, there are lateral fenestrations located below the extracellular domain and open to the pore, which is the actual ion-conduction path in P2X and ASIC (Kellenberger and Grutter, 2015), and could be the case for Piezo as well. Given their distinct genetic backgrounds yet similar overall structures, it is reasonable to hypothesize that the two TM helices with an extracellular domain are the core components for a functional and efficient trimeric channel of this type. Therefore, other components unique to Piezo, including the elbow, base, hairpin, and PE helices (Figure 3a and Figure 6\u2014figure supplement 1c,d), are likely to be directly associated with mechano-transduction. These unique components are positioned in a cuff surrounding the narrowest region of the pore and therefore seem well positioned to influence gating. Upon mechanical stimulus, major conformational changes are expected in these components in response to movement of the triskelion arms to open the pore.\n\n## Discussion\n\n### Hypothesis for mechanical gating\n\nPiezo has a central ion conduction pathway surrounded by extended arms composed of transmembrane helices. The most strikingly unusual feature of Piezo\u2019s structure is that it does not conform to a locally planar membrane. Instead, its extended arms project approximately 30\u00b0 out of the plane defined by the pore, incompatible with a flat membrane (Figures 2d,4b,c). The extended arms are also curved so that the entire structure takes the appearance of a 3-sided pyramid \u2013 inverted when viewed from outside the cell \u2013 that spirals from base to apex to form a semi-sphere-shaped dome (projecting into the cell). Hydrophobic helices lie perpendicular to the arms like cross bars between the arms, presumably to support the curved membrane as it conforms to Piezo\u2019s non-planar shape (Figures 2,4,7b). Twelve N-terminal transmembrane helices are not resolved. These presumably extend the arms even further, however, given the curvature of the arms these N-terminal helices appear to coincide with the edge of the dome, far from the center, where the membrane becomes planar again. We note that a published low-resolution structure led the authors to conclude that Piezo resides in a locally planar membrane, with extended arms forming extra-membranous, extracellular blades (Ge et al., 2015). The structure we have described is fundamentally different in that the arms, composed of transmembrane helices, are inside the membrane and force the membrane to curve, as shown in images of Piezo reconstituted into lipid vesicles (Figure 5 and Figure 5\u2014figure supplement 1).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/33660/elife-33660-fig7-v2.jpg)\n\n**Figure 7.:** (a) C\u03b1 trace representation of a trimer placed in a semi-sphere-shaped membrane 3.6 nm thick, idealized from the curved micelle density. The mid-plane semi-sphere has radius of 10.2 nm and is centered 4.0 nm above the projection plane. The three subunits are shown in red, green and blue, respectively. (b) Ribbon diagram of a trimer in the idealized membrane. The \u2018beam\u2019 formed by residues 1300\u20131365 is highlighted in red, the cross-helices are highlighted in yellow, while the remaining protein is colored in grey. (c) Illustration of projection area (circle in top plane) changing as the surface curvature of the channel and local membrane (bottom plane) changes. (d) Theoretical activation curves corresponding (\u0394Gprot + \u0394Gbend)=20 kBT (red) or 40 kBT (blue) and \u0394Aproj\u00a0=\u00a020 nm2 or 60 nm2. The curves are generated through Po = (1\u00a0+\u00a0Exp[(\u0394Gprot + \u0394Gbend) - \u03b3\u0394Aproj])\u22121.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33660/elife-33660-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (a) Schematic showing the semi-sphere-shaped membrane 3.6 nm thick, idealized from the curved micelle density. The mid-plane semi-sphere has radius of 10.2 nm and center 4.0 nm above the projection plane. Projected area and total mid-plane surface area are shown in the right panel. (b) Equations used for calculating the membrane bending energy (Rawicz et al., 2000; Helfrich, 1973; Deserno, 2007; Phillips, 2017).\n\nWe have approximated the shape of the membrane surrounding Piezo as a dome with a spherical surface of radius 10.2 nm, corresponding to the mid-plane surface of a membrane 3.6 nm thick (Figure 7a,b and Figure 7\u2014figure supplement 1a). The shape matches closely but not perfectly the hydrophobic boundaries of Piezo, but it is sufficient for the following discussion. By appealing to the illustration of mid-plane area expansion in Figure 1, the structure of Piezo offers a plausible explanation for the origin of its tension-gating. If the semi-spherical dome becomes flatter (i.e. more co-planar with the membrane) when Piezo opens, then the channel-membrane system will expand. In MscL, widening of the channel\u2019s diameter causes membrane plane expansion. In the proposed mechanism for Piezo, flattening of the channel and its locally surrounding membrane causes membrane plane expansion by transferring out-of-plane membrane area (the dome) into the membrane plane. In both cases weights are lowered in the \u2018gravitational analog\u2019 (i.e. free energy is reduced) (Figure 1). Because flattening does not constrain the pore to open wide, expansion and pore diameter are decoupled such that Piezo can exhibit its small conductance and cation selectivity, properties that are essential to its function, without compromising the ability to sense lateral membrane tension.\n\nIn this proposed mechanism for Piezo, expansion of the membrane-channel system occurs when a curved, dome-shaped membrane becomes flatter (more planar). The expanded plane area corresponds quantitatively to the change in area of the dome that is projected onto the membrane plane, \u0394Aproj, and the resulting energy difference is \u03b3 \u0394Aproj (Figure 7c). For the simplified geometry shown in Figure 7 the semi-spherical mid-plane has a total mid-plane surface area of 400 nm2 and a projected area, Aproj, of 280 nm2 (Figure 7\u2014figure supplement 1a). Therefore, if Piezo becomes completely co-planar with the membrane when it opens (i.e. so that its projected area equals its total area) then \u0394Aproj associated with opening would be 400\u00a0nm2\u00a0\u2013\u00a0280 nm2\u00a0=\u00a0120 nm2. A membrane under tension \u03b3 would thus favor the open conformation by energy \u03b3 \u0394Aproj, corresponding to 42 kBT stabilization of the open state relative to closed at a membrane tension of only one tenth lytic value (~3.5 kBT/nm2), where kB is the Boltzmann constant and T the temperature in degrees Kelvin (Rawicz et al., 2000). If Piezo flattens only partially upon opening then \u0394Aproj will be less than 120 nm2 and the energy difference correspondingly smaller (Figure 7c,d). Recall that for MscL, the in-plane area change \u0394A is\u00a0~20 nm2. This means Piezo has the potential for much higher tension sensitivity than MscL (equation 2, with \u0394A = \u0394Aproj for Piezo). There are other possible origins of tension dependence in Piezo, related to changes in the size, geometry and chemistry of the protein-lipid interface associated with gating (Wiggins and Phillips, 2005; Ursell et al., 2008; Phillips et al., 2012). While these changes are still unknown, we suspect that the major origin of tension-dependent gating is the change in projected area, because it has the potential to be so large.\n\nIn addition to the tension-dependent energy associated with projected area expansion, there is a separate, intrinsic energy cost to bend a membrane even in the absence of tension (Ursell et al., 2008; Helfrich, 1973; Deserno, 2007; Phillips, 2017). For the semi-spherical membrane in Figure 7 we calculate the magnitude of this energy to be approximately 150 kBT, even excluding the curvature back into the membrane plane, which will substantially increase the bending energy further (Figure 7\u2014figure supplement 1b). This bending energy implies that the Piezo protein must perform work on the membrane to curve it. We propose that in the absence of a membrane\u2019s tendency toward planarity (i.e. in a detergent micelle) Piezo is very stable in its closed, curved conformation and we observe physical features \u2013 such as surface electrostatic interactions \u2013 that support this idea (Figure 4\u2014figure supplement 1). Inside a membrane Piezo produces similar membrane curvature, but this must occur at the energetic expense of its closed state stability, because some of that energy must go into curving the membrane. Then, we propose, when tension is applied to the membrane, the additional energy term \u03b3 \u0394Aproj tips the balance, favoring the flatter, open conformation (Figure 7d). A modification of the free energy equation 1 for Piezo could be written\n\n$$\n\u0394G=(\u0394G_{prot}+\u0394G_{bend})\u2212\\gamma\u0394A_{proj}.\n$$\n\nThe terms \u0394Gprot and \u0394Gbend refer to free energy differences intrinsic to protein gating and membrane bending, respectively. In this description, for the transition from closed to open, \u0394Gprot is positive (unfavorable) and \u0394Gbend is negative (favorable): these tend to cancel each other, with \u0394Gprot somewhat greater in magnitude so that the channel is closed when \u03b3\u00a0=\u00a00. The equation predicts that lipid membranes of differing stiffness (i.e. different bending moduli) should influence gating through \u0394Gbend (i.e. stiffer membranes with a more negative \u0394Gbend should lead to channel opening at smaller values of membrane tension) (Figure 7d). That \u0394Gbend and \u0394Gprot are indeed tension-independent (such that d(\u0394G)/d\u03b3 = \u2212 \u0394Aproj) is an assumption that needs to be tested through further measurement and analysis.\n\nWe can only conjecture how changes in Piezo\u2019s shape will open the pore. We think it is significant that a single subunit is compatible with a planar membrane, whereas the trimer is not. This is due to the abrupt angle at which the arms project from the pore (Figures 2d,4b,c): this implies that forces tending to flatten Piezo will produce the greatest stress at the region of attachment. This region coincides with the cuff of helices that surround the pore\u2019s narrowest segment, presumably its gate. At first consideration a force directed along the triskelion arms toward the center of the trimer, associated with flattening of Piezo\u2019s arms, might be expected to constrict the pore further. However, given that TM37-38 are domain-swapped relative to TM1-36, such a force will more likely push the \u2018swapped\u2019 pore-lining helices away from the center and open the pore.\n\nIn summary, the structure of Piezo1 leads us to propose a membrane dome mechanism for the origins of its mechanosensitive gating. In this mechanism a dome of membrane, created by Piezo\u2019s shape in its closed conformation, undergoes relative flattening upon channel opening. This mechanism does not require the application of a force pressing onto the dome (i.e. a force component normal to the plane of the membrane): lateral membrane tension alone will favor the flatter, opened conformation by a relative energy difference given by \u03b3 \u0394Aproj. Whether Piezo interacts directly with cytoskeletal or extracellular matrix proteins to modulate its mechanosensitive gating is unknown (Lewis and Grandl, 2015; Gottlieb et al., 2012). The membrane dome mechanism presented here is a hypothesis inspired by the highly unusual structure of Piezo and its demonstrated ability to curve lipid bilayers into a dome. Additional experiments will be needed to test this hypothesis.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Mus musculus)</td>\n      <td>Piezo1</td>\n      <td>doi: 10.1126/science.1193270</td>\n      <td>UniProt: E2JF22</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293S GnTI-</td>\n      <td>ATCC</td>\n      <td>ATCC: CRL-3022</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Spodoptera frugiperda)</td>\n      <td>sf9</td>\n      <td>ATCC</td>\n      <td>ATCC: CRL-1711</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pEG BacMam</td>\n      <td>doi: 10.1038/nprot.2014.173</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RELION</td>\n      <td>doi: 10.1016/j.jsb.2012.09.006</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>cryoSPARC</td>\n      <td>doi: 10.1038/nmeth.4169</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Expression and purification\n\nDNA encoding the full-length mouse Piezo1 protein (UniProt accession: E2JF22) in a pEG BacMam vector was used for expression. A green fluorescent protein (GFP) tag following a PreScission protease cleavage site (LEVLFQ/GP) was placed at the C-terminus to facilitate detection and purification. mPiezo1 was expressed using the BacMam method (Goehring et al., 2014). Briefly, baculoviruses carrying mPiezo1 were produced and amplified for two rounds in Spodoptera frugiperda Sf9 cells (RRID:CVCL_0549). HEK293S GnTI- cells (RRID:CVCL_A785) in suspension culture were grown at 37\u00b0C and infected with 10% (v/v) viruses at a density of\u00a0~3\u00a0\u00d7\u00a0106 cells/ml. At 15 hr post infection, 10 mM sodium butyrate was added to induce expression at 30\u00b0C. Cells were harvested at 48 hr post-induction. mPiezo1 purification was kept at 4\u00b0C at all times. Cell pellet from 2 L of culture were resuspended in 100 ml TBS supplemented with 1 mM PMSF, 1 \u03bcg/ml pepstatin, 1 \u03bcg/ml aprotinin, 1 \u03bcg/ml leupeptin, 1 mM benzamidine, 1 mM AEBSF, and 0.1 mg/ml trypsin inhibitor. After sonication, the lysate was clarified by centrifugation at 9500\u00a0\u00d7\u00a0g for 15 min. The supernatant was then ultra-centrifuged using a Beckman Ti70 rotor at 42,000 rpm (rcf\u00a0~181,000\u00a0\u00d7 g) at 4\u00b0C for 1.5 hr. Membranes were collected and the pellet resuspended and homogenized in 20 ml TBS containing all protease inhibitors as described above. The membrane resuspension was mixed with 20 ml TBS containing 2% digitonin and rotated at 4\u00b0C for 1.5 hr for protein extraction. Unsolubilized debris was removed by ultra-centrifugation using a Beckman Ti70 rotor at 42,000 rpm (rcf\u00a0~181,000\u00a0\u00d7 g) at 4\u00b0C for 40 min. The supernatant was incubated with GFP nanobody-coupled Sepharose resin (Kirchhofer et al., 2010) equilibrated with elution buffer (150 mM NaCl, 20 mM Tris pH8, 0.05% digitonin, protease inhibitors) for 2 hr. After loading onto a column and collecting the flow-through, the resin was washed with 10 column volumes of wash buffer (300 mM NaCl, 20 mM Tris pH8, 0.05% digitonin, protease inhibitors). PreScission protease was added to the resin at a target protein to protease ratio of 20:1 (w/w) and incubated overnight with gentle rotation to cleave GFP. Target protein was then eluted with elution buffer and concentrated to 500 \u03bcl by Amicon Ultra centrifugal filter (MWCO 10 kDa). The sample was injected onto a Superose 6 Increase 10/300 GL column (GE Healthcare, Little Chalfont, United Kingdom) equilibrated with elution buffer. Peak fractions were pooled together and concentrated to 15 mg/ml.\n\n### Cell lines\n\nCell lines were acquired from and authenticated by the American Type Culture Collection (ATCC). The cell lines were not tested for mycoplasma contamination.\n\n### Electron microscopy sample preparation and imaging\n\n3 mM fluorinated Fos-Choline-8 (FFC-8) was added to freshly purified mPiezo1 sample immediately prior to freezing. Quantifoil 400 mesh gold R1.2/1.3 holey carbon grids were treated with 10 s of glow discharge in reduced pressure air. A first drop of 3 \u03bcl protein sample was applied on the grid, incubated for 15 s, and manually removed using a filter paper with minimum touching. Then, a second drop of 3 \u03bcl protein sample was added, incubated for 15 s, and then blotted once for 1 s with \u22121 force and plunged into liquid ethane, using a Vitrobot Mark IV (FEI company, Hillsboro, Oregon) operated at room temperature and 100% humidity. The grids were then stored in liquid nitrogen until imaging.\n\nAutomated data collection was controlled by SerialEM (Mastronarde, 2005) on a Titan Krios transmission electron microscope (FEI) operating at 300 keV equipped with a K2 Summit direct electron detector (Gatan, Inc., Pleasanton, CA). Micrographs were recorded in super-resolution mode, with a calibrated physical pixel size of 1.3 \u00c5 (a super-resolution pixel size of 0.65 \u00c5) and a nominal defocus range of 1.0 to 2.4 \u03bcm. The exposure time for each image was 10 s fractionated over 50 frames with a dose rate of 8 electrons per physical pixel per second, corresponding to a total cumulative dose of of 47 electron per \u00c52, or 0.94 electron per \u00c52 per frame.\n\n### Image processing and map calculation\n\nWhole-frame motion correction was performed with gain reference applied and dose weighting using MotionCor2 (Zheng et al., 2017). The contrast transfer function parameters were estimated for all summed images using CTFFIND4 (Rohou and Grigorieff, 2015). RELION (Kimanius et al., 2016; Scheres, 2012) was used for image processing except where noted otherwise. 2000 particles were manually picked from a subset of images and extracted in a box size of 400 pixels and a mask diameter of 300 \u00c5. Extracted particles were subjected to 2D classification requesting 20 classes, 12 of which showed representative views and were selected as templates for automated particle picking. 576,191 particles picked from 3414 images were then manually inspected to remove false positives, resulting in 521,152 particles. Another round of 2D classification requesting 100 classes was used to further clean up the dataset, which then contained 459,918 particles. Using CryoSPARC (Punjani et al., 2017) ab initio reconstruction requesting three classes with no symmetry imposed, an initial model was generated from 232,799 particles. This exhibited clear three-fold symmetry. After another round of symmetry-free ab initio reconstruction in CryoSPARC to remove non-symmetric particles, the resultant 161,986 particles were reconstructed to 3.74 \u00c5 resolution according a 0.143 cutoff criterion on the Fourier shell correlation (FSC) curve, by CryoSPARC homogeneous refinement with C3 symmetry imposed.\n\nGiven that the peripheral region of each arm is relatively flexible, the triskelion is not strictly C3-symmetrical. Therefore, symmetry expansion was used to improve the peripheral resolution. The manually inspected 521,152 particles were first aligned in RELION 3D auto-refine with C3 symmetry using the CryoSPARC model as a reference. Using the relion_particle_symmetry_expand program, each particle was then replicated and 120\u00b0 or 240\u00b0 was added to the first Euler angle so that each of the three arms of every particle was rotated to the same orientation on the C3-symmetric ring. This 3-fold enlarged dataset was then classified in C1 with a mask covering only a single protruding arm without angular search. The best class containing 277,548 expanded particles was subjected to masked refinement in C1 with the mask covering the central hub and one arm. Only local angular searches were carried out during this refinement so that copies of the same arm do not contribute to the reconstruction more than once. The resultant map has a resolution of 3.8 \u00c5 after post-processing and allowed de novo model building for the peripheral region. Local resolution was estimated using Blocres (Cardone et al., 2013) with a kernel size of 19.\n\n### Model building and refinement\n\nThe density map from masked refinement in C1 was sharpened by applying an isotropic b-factor of \u2212200 \u00c52 in RELION post-processing for model building. A crystal structure of the mPiezo1 CED (PDB ID 4RAX) was docked into the map using UCSF Chimera (RRID:SCR_004097) (Pettersen et al., 2004) as a starting point. Manual building and refinement was performed in COOT (RRID:SCR_014222) (Emsley et al., 2010). Major helix elements were first placed into density and then connected by manually building the loops in baton mode. Sequence was registered by assigning the bulky side chains. The final model contains residues 577\u2013600, 605\u2013717, 782\u2013875, 880\u2013886, 892\u20131365, 1493\u20131578, 1655\u20131807, 1952\u20131997, 2015\u20132065, 2075\u20132411, 2424\u20132456, 2463\u20132546. Among them, side chains of residues 577\u2013600, 605\u2013717 and 1551\u20131578 were trimmed to C\u03b2, as these densities are less well-defined. In addition, a separate chain containing 16 alanine residues was modeled into density near the central bottom; these are not connected to other parts of the map. A trimer model of the channel was generated from a monomer by applying three-fold symmetry. The trimer model was refined with phenix.real_space_refine (Afonine et al., 2013) using secondary structure and non-crystallographic symmetry (NCS) restraints. MolProbity (RRID:SCR_014226) (Chen et al., 2010) was used to monitor the model geometry through multiple rounds of real space refinement and manual rebuilding. The refined model has a MolProbity score of 1.73, a clashscore of 4.84, with 0.25% rotamer outliers. The Ramachandran plot contains 91.96% favored, 8.04% allowed, and no outliers.\n\nStructure figures were generated with Chimera, Pymol (RRID:SCR_000305, The PyMOL Molecular Graphics System, Version 1.8 Schr\u00f6dinger, LLC.), APBS (RRID:SCR_008387) (Dolinsky et al., 2004) and HOLE (Smart et al., 1996). Structure calculations were performed using the SBGrid suite of programs (Morin et al., 2013).\n\n### Proteoliposome reconstitution and imaging\n\nTwo different lipid compositions were used for reconstitution. One contains 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine (POPE) and 1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-(1'-rac-glycerol) (POPG) (Avanti Polar Lipids, Alabaster, AL) at a 3:1 wt ratio. The other contains 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine (POPC), 1,2-dioleoyl-sn-glycero-3-phospho-L-serine (DOPS) (Avanti Polar Lipids) and cholesterol at a 8:1:1 wt ratio. The lipids were mixed in chloroform and washed with pentane. After drying with an argon stream, the lipids were incubated overnight in a vacuum chamber. Dried lipids were suspended by sonication in buffer containing 20 mM Tris pH 8.0, 150 mM NaCl, and then mixed with 1.3% C12E10 for 2 hr at room temperature, to make final lipid concentration 20 mg/ml. Mouse Piezo1 was purified following the same protocol as described above, except replacing digitonin with C12E10, 2% (w/v) and 0.025% (w/v) for extraction and stabilization, respectively. Purified protein was added to the lipid/detergent mixture in a protein-to-lipid ratio of 1:20 (w/w). Following 1.5 hr incubation at 4\u00b0C, C12E10 was removed by incubating the mixture with SM-2 bio-beads (Bio-rad, Hercules, CA) overnight at 4\u00b0C for the POPE:POPG vesicles, and by dialyzing against detergent-free buffer for 4 days at 4\u00b0C for the POPC:DOPS:cholesterol vesicles. Generated proteoliposome vesicles were collected and briefly sonicated before freezing on C-flat 1.2/1.3 400 mesh Holey Carbon grids\u00a0for the POPE:POPG vesicles, and Quantifoil 400 mesh gold R1.2/1.3 holey carbon grids for the POPC:DOPS:cholesterol vesicles. Micrographs were collected on a Talos Arctica transmission electron microscope (FEI) operating at 200 keV equipped with a K2 Summit direct electron detector (Gatan), in super-resolution mode, with a nominal defocus range of 0.8 to 2.4 \u03bcm. The calibrated physical pixel size is 1.5 \u00c5 for the POPE:POPG vesicles, and 1.9 \u00c5 for the POPC:DOPS:cholesterol vesicles. The exposure time for each image was 10 s fractionated over 50 frames, with a dose rate of 8 electrons per physical pixel per second for the POPE:POPG vesicles, and a dose rate of 15 electrons per physical pixel per second for the POPC:DOPS:cholesterol vesicles. Whole-frame motion correction was performed with gain reference applied and dose weighting using MotionCor2.\n\n### Data availability\n\nAtomic coordinates of mPiezo1 have been deposited in the Protein Data Bank (http://www.rcsb.org) under ID 6B3R. The cryoEM maps (refined in cryoSPARC with C3 symmetry and focused-refined in RELION with C1 symmetry) have been deposited in the Electron Microscopy Data Bank (https://www.ebi.ac.uk/pdbe/emdb) under ID EMD-7042.\n",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "980f410f-a7cb-417a-9b8c-f0c64ed9f39a",
+      "submission_id": "cc8ab5bb-576a-4837-b97a-7e9223eb811d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kenton J Swartz, National Institutes of Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.33660.027](https://doi.org/10.7554/eLife.33660.027)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The structure of Piezo reveals a \"molecular touch dome\" poised for mechanosensation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Kenton Swartz as the Reviewing Editor and Richard Aldrich as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Nikolaus Grigorieff (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors present a near-atomic-resolution model of the mechanosensitive mouse PIEZO1 channel. While the overall architecture of the channel broadly resembles the trimeric, three-bladed propeller of the 2015 medium-resolution structure published in Nature, this new structure represents a very significant advance and should be an invaluable tool for future structure-function studies.\n\nStrikingly, the three \"arms\" surrounding the central pore domain point up at a ~30 degree angle making it impossible for them to reside in a planar membrane. To see if this arm orientation is preserved when the channel is embedded in a membrane (rather than the detergent micelles used for the structure determination), the authors image channels reconstituted into small unilamellar vesicles and conclude that in the closed state the channel arms distorts the membrane into a tightly-curved (R = 10nm) dome-shape. They then propose that these arms rotate to a flatter geometry in the open state, as the large (~50 nm2) increase in projected membrane area make then make the channel exceptionally sensitive to changes in membrane tension.\n\nOverall, this is an important and fascinating study that will have major impact on the field of mechanosensation, and as such is highly appropriate for publication in eLife. The following are points the authors should address in revision.\n\nEssential revisions:\n\n1) The authors present just a single image of a distorted small unilamellar vesicle (Figure 5D) to support their hypothesis that the channel reshapes the membrane into a tightly-curved dome shape. However, the shape of vesicles in cryo-EM images is very sensitive to sample preparation (e.g. Methods in Enzymology, Vol 391) and the example in Figure 5D appears as if it could be partially dehydrated. To exclude these effects, the authors could present images of multiple vesicles containing Piezo1 along with control vesicles (i.e. no protein, or with a planar protein like bR) and quantify the curvature of the phospholipid head-group contour in the vicinity of the electron density of the CED. Also, we imagine the authors have already considered opening the channels by intentionally increasing the solution osmolarity (and thus vesicle membrane tension), but perhaps the change in \"dome shape\" is too small to resolve?\n\n2) The authors' model (Figure 1 and Figure 7) only considers the effect of the average lateral force within the plane of membrane (i.e. tension). While the osmotic-release function of MscL only requires it to sense these lateral forces, there is quite a bit of evidence suggesting that eukaryotic mechanosensitive channels are subjected to vertical forces perpendicular to the plane of membrane via interactions with the cytoskeleton, extra-cellular matrix and even the hydrostatic pressure difference between the cytosol and extra-cellular fluid. Thus, it would be helpful if the authors compared the coupling of their proposed dome flattening/arm rotation to pN-scale vertical forces to the lateral forces they have already considered.\n\n3) The authors made some change to the standard image processing protocol to enhance the resolution in the N-terminal domains forming the somewhat flexible arms of the triskelion. This \"symmetry expansion\" should be explained in more detail.\n\n4) The authors spend considerable space providing a detailed model for how pushing on the \"dome\" might open the channel and contrasting this proposed mechanism to gating of MscL. Although elegant, the presentation of the dome model tends to undervalue the physiological niche where these molecules normally reside. It would be helpful for the authors to discuss how factors, such as cytoskeleton, lipid composition, co-factors and/or ECM binding, might be factored into their model. Indeed, there are already several published studies on Piezo channel regulation in the literature that could and should be incorporated or discussed in more detail.\n\n5) It would be helpful to have a diagram highlighting the locations of unresolved intracellular loops, similar to what is shown for the N-terminus. Unlike normal proteins, these intracellular loops can be quite big (over 100 amino acids) and knowing where there still exist gaps in the structure would be useful.\n",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d8d0690d-c06b-4729-850c-ce83dff1381d",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C1",
+      "claim": "Mechanosensitive ion channels convert external mechanical stimuli into electrochemical signals for critical processes including touch sensation, balance, and cardiovascular regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanosensitive ion channels convert external mechanical stimuli into electrochemical signals for critical processes including touch sensation, balance, and cardiovascular regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about mechanosensitive channels supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "619f7e9f-07c6-42c6-b767-44a11d337126",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C2",
+      "claim": "MscL opens a wide pore, which accounts for mechanosensitive gating due to in-plane area expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "The best understood mechanosensitive channel, MscL, opens a wide pore, which accounts for mechanosensitive gating due to in-plane area expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references established understanding of MscL mechanism, supported by prior research in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "057d10e9-d71b-4f12-b60d-e5f39e43b9a7",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C3",
+      "claim": "Eukaryotic Piezo channels have a narrow pore.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotic Piezo channels have a narrow pore and therefore must capture mechanical forces to control gating in another way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data presented in the manuscript showing pore dimensions and by prior knowledge of Piezo conductance properties.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "a918d3da-ce8a-46dd-894e-d35b16693f76",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C4",
+      "claim": "The cryo-EM structure of mouse Piezo1 was determined in a closed conformation at 3.7\u00c5-resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We present a cryo-EM structure of mouse Piezo1 in a closed conformation at 3.7\u00c5-resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the experimental data presented in the manuscript, including resolution measurements and structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "5a98aad3-bbba-43b8-ab61-9abccfab233c",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C5",
+      "claim": "The Piezo1 channel is a triskelion with arms consisting of repeated arrays of 4-TM structural units surrounding a pore.",
+      "claim_type": "EXPLICIT",
+      "source": "The channel is a triskelion with arms consisting of repeated arrays of 4-TM structural units surrounding a pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data and images presented in the manuscript showing the trimeric architecture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "0fcfb67b-d154-43e6-a2f6-93a992086f1a",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C6",
+      "claim": "The shape of Piezo1 deforms the membrane locally into a dome.",
+      "claim_type": "EXPLICIT",
+      "source": "Its shape deforms the membrane locally into a dome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by both the structural data and the proteoliposome reconstitution experiments shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "c58b7805-5470-4b4f-af73-c0a767cfeaa5",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C7",
+      "claim": "Membrane tension will alter gating energetics in proportion to the change in projected area under the dome.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitatively, membrane tension will alter gating energetics in proportion to the change in projected area under the dome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction based on thermodynamic principles and the structural observations, representing a hypothesis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "61504b10-5dc4-4739-8466-2fa6dc13c18a",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C8",
+      "claim": "Piezo1 and Piezo2 are mechanosensitive channels that underlie force-detection in eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo ion channels, Piezo1 and Piezo2, are mechanosensitive channels (MS channels) that underlie force-detection in eukaryotic cells (Coste et al., 2010; Wu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research establishing the role of Piezo channels.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "197288ba-e188-40bd-b22d-2f62668094e0",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C9",
+      "claim": "Piezo channels mediate a large and growing number of cellular processes.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of cellular processes found mediated by Piezo channels is large and growing at a rapid rate (Eisenhoffer et al., 2012; McHugh et al., 2012; Pathak et al., 2014; Li et al., 2014; Cahalan et al., 2015; Alper, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to research documenting various Piezo-mediated processes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "11fb42ca-ec54-482f-a477-06a78c79be8f",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C10",
+      "claim": "Piezo channels are responsive in gating to mechanical force.",
+      "claim_type": "EXPLICIT",
+      "source": "Their essential biophysical characteristics include responsiveness in gating to mechanical force (i.e. mechanosensitivity) and selectivity of the pore for cations (Gnanasambandam et al., 2015; Lewis and Grandl, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior biophysical characterization studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "133e68aa-8ee6-4ea2-a9c5-080b772adf0b",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C11",
+      "claim": "Piezo channels are selective for cations.",
+      "claim_type": "EXPLICIT",
+      "source": "Their essential biophysical characteristics include responsiveness in gating to mechanical force (i.e. mechanosensitivity) and selectivity of the pore for cations (Gnanasambandam et al., 2015; Lewis and Grandl, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior biophysical characterization studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "8a40c63c-d890-4e71-976b-514c046db11a",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C12",
+      "claim": "Piezo channels transduce mechanical forces into electrical signals in sensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these characteristics allow Piezo channels to serve their many biological functions, including the transduction of mechanical forces into electrical signals in sensory neurons (Kim et al., 2012; Faucherre et al., 2013; Woo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies demonstrating Piezo function in sensory neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "ce62547f-0e2b-45b9-9193-892405dbdeab",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C13",
+      "claim": "Biophysical studies suggest that Piezo channels sense force directly through the lipid membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Biophysical studies suggest that Piezo channels sense force directly through the lipid membrane (Cox et al., 2016; Syeda et al., 2016), although other mechanisms also have been proposed (Lewis and Grandl, 2015; Gottlieb et al., 2012; Peyronnet et al., 2013; Poole et al., 2014; Borbiro et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to biophysical studies, though the statement acknowledges alternative mechanisms have been proposed.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "c620842f-6b9f-4bde-81f4-9e7ddd8a28dc",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C14",
+      "claim": "MscL undergoes a large (~20 nm2) in-plane area expansion when it opens.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural, biophysical and functional analyses show that MscL undergoes a large (~20 nm2) in-plane area expansion when it opens (Perozo et al., 2002; Chang et al., 1998; Sukharev et al., 2001; Corry et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to structural and biophysical studies of MscL.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "6fc74c0c-4aa3-4174-b873-0d783ec43947",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C15",
+      "claim": "The in-plane area expansion of MscL produces a decrease in the free energy of the membrane-channel system if the membrane is under tension, favoring the open state.",
+      "claim_type": "EXPLICIT",
+      "source": "This area expansion produces a decrease in the free energy of the membrane-channel system if the membrane is under tension, favoring the open state (Wiggins and Phillips, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to theoretical work on membrane mechanics.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "45540125-283d-4ca3-b062-6ad0df2e1de5",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C16",
+      "claim": "The 20 nm2 physical expansion of MscL determined by structural and biophysical analysis corresponds well to the tension dependence of gating estimated in functional experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In MscL the 20 nm2 physical expansion determined by structural and biophysical analysis (Perozo et al., 2002; Sukharev et al., 2001; Corry et al., 2010) corresponds well to the tension dependence of gating estimated in the most carefully executed functional experiments (Chiang et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations comparing structural measurements to functional data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "632e3b4e-b7a3-4229-80b5-bab5f24bbf49",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C17",
+      "claim": "MscL functions as a 'pressure release valve', permitting bacterial survival in the face of osmotic shock.",
+      "claim_type": "EXPLICIT",
+      "source": "It works well for MscL because that channel functions as a 'pressure release valve', permitting bacterial survival in the face of osmotic shock (Sukharev et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to functional studies of MscL.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "b22f6711-b26c-4532-9020-bfa421623b3d",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C18",
+      "claim": "MscL has a conductance of approximately 3 nS and complete lack of ion selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The wide pore opening in MscL, associated with a conductance of approximately 3 nS and complete lack of ion selectivity, naturally fits with a large in-plane area expansion and therefore high mechanosensitivity (Sukharev et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to electrophysiological characterization of MscL.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "36ba47ff-2b88-49e2-9b3a-6e9287a92d2b",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C19",
+      "claim": "Piezo channels have conductance values around 30 pS.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast Piezo channels have conductance values around 30 pS (100 times smaller than MscL) and are cation selective, characteristics that are incompatible with a wide pore (Coste et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to electrophysiological characterization of Piezo channels.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "0c66bde2-2d9a-4292-a7c6-b874ba1b690f",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C20",
+      "claim": "Piezo channels are highly mechanosensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet Piezo channels are highly mechanosensitive (Lewis and Grandl, 2015; Cox et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to biophysical studies of Piezo mechanosensitivity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "52a14018-9cf3-4bcd-80ba-89ea9f62078a",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C21",
+      "claim": "The current structure of mPiezo1 exhibits many differences in molecular detail and global interpretation when compared to an earlier structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In an attempt to understand how this was accomplished we have determined a structure of the mouse Piezo1 (mPiezo1) channel, which exhibits many differences in its molecular detail and global interpretation when compared to an earlier structure (Ge et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of the current structural data to a previously published structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "ac028fe3-09a6-4819-a420-73262135a02e",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C22",
+      "claim": "The cryo-EM map shows greatest detail near the 3-fold center (local resolution 3.2 \u00c5 to 3.6 \u00c5) and less detail near the periphery (local resolution 5 \u00c5 to 6 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "The cryo-EM map shows greatest detail near the 3-fold center (local resolution 3.2 \u00c5 to 3.6 \u00c5) and less detail near the periphery (local resolution 5 \u00c5 to 6 \u00c5) (Figure 2\u2014figure supplement 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the local resolution analysis shown in the figure and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "4a0b694d-60ee-4c4a-91ad-8b500b591a89",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C23",
+      "claim": "Symmetry expansion with focused refinement improved the map quality, especially at the periphery (local resolution 4 \u00c5 to 5 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "To improve the map quality, symmetry expansion was conducted with focused refinement using a mask covering the central hub and one of the three extended arms. The resulting map showed improvement, especially at the periphery (local resolution 4 \u00c5 to 5 \u00c5) (Figure 2f and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the computational analysis and the resulting improved resolution measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "9a63682b-acdf-4d98-b350-5e244ceb0e90",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C24",
+      "claim": "A crystal structure (PDB ID: 4RAX) was docked into density corresponding to the C-terminal extracellular domain (CED).",
+      "claim_type": "EXPLICIT",
+      "source": "A crystal structure (PDB ID: 4RAX) was docked into density corresponding to the C-terminal extracellular domain (CED) and the remaining model (26 TM helices per subunit) was built de novo (Figure 2\u2014figure supplements 2 and 3) (Ge et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the model building procedure using a previously determined crystal structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "1d36a0f4-6ec2-4720-984f-8f856bffe72e",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C25",
+      "claim": "The refined structural model contains 1518 residues (out of 2547), with the N-terminal 576 residues and internal flexible loops missing.",
+      "claim_type": "EXPLICIT",
+      "source": "The refined structural model contains 1518 residues (out of 2547), with the N-terminal 576 residues and internal flexible loops missing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the completeness of the structural model based on the data quality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "ba5689b9-ef1a-47c1-8f32-1e3c2217b8bb",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C26",
+      "claim": "The structure's extended arms consist of 24 helices arranged as six repeated 4-TM structural units.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure's extended arms consist of 24 helices arranged as six repeated 4-TM structural units (Figure 3a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data and visualization shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "985c48a4-169b-4541-aa0f-be96a787ac1f",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C27",
+      "claim": "Each 4-TM unit is a left-handed bundle of four helices starting and ending on the intracellular side.",
+      "claim_type": "EXPLICIT",
+      "source": "Each unit is a left-handed bundle of four helices starting and ending on the intracellular side.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structural organization observed in the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "7ec39c8f-69e4-4536-9263-450407ccd820",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C28",
+      "claim": "The six 4-TM repeats assemble with each other as a left-handed helix, causing the extended arms of the triskelion to spiral away from the trimer's center, out of plane with respect to the central pore axis.",
+      "claim_type": "EXPLICIT",
+      "source": "The six 4-TM repeats assemble with each other also as a left-handed helix, causing the extended arms of the triskelion to spiral away from the trimer's center, out of plane with respect to the central pore axis (Figures 2c,d and 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data showing the three-dimensional arrangement of the repeats.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "e7edaaf8-ac05-4ac1-9463-7bafd71bed2a",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C29",
+      "claim": "Adjacent 4-TM repeats are linked by a polypeptide chain that crosses the span of two repeats, owing to their relative orientations.",
+      "claim_type": "EXPLICIT",
+      "source": "Adjacent 4-TM repeats are linked by a polypeptide chain that crosses the span of two repeats, owing to their relative orientations (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the connectivity observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "3ba3c999-b0d2-4381-be7b-015a83c5ed8e",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C30",
+      "claim": "The repetitive pattern of TM helices is well conserved for all six 4-TM units visible in the structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The repetitive pattern of TM helices is well conserved for all six 4-TM units visible in the structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural comparison of the visible 4-TM units.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "15491e0f-7b4f-4aaa-97e2-01032561e6d5",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C31",
+      "claim": "Sequence analysis suggests that the pattern continues to the N-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence analysis suggests that the pattern continues to the N-terminus (Figure 3\u2014figure supplement 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on computational sequence analysis and topology prediction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "e0f00714-9756-47db-b8a7-89cdf499feef",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C32",
+      "claim": "A Piezo subunit likely contains nine 4-TM units altogether (the first 3 of which are not visible in the structure) giving a total of 36 TM helices, which form the arms, plus two C-terminal TM helices that meet at the center of the trimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is likely that a Piezo subunit contains nine 4-TM units altogether (the first 3 of which we do not see) giving a total of 36 TM helices, which form the arms, plus two C-terminal TM helices that meet at the center of the trimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed structural pattern and sequence analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "ff938eaf-843c-4804-b0ce-57dba0bba0f3",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C33",
+      "claim": "The central hub of the trimer is formed by amino acids following TM36.",
+      "claim_type": "EXPLICIT",
+      "source": "The central hub of the trimer is formed by amino acids following TM36 (Figure 3 and Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the structural data showing the organization of the central region.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "2642b55b-5406-43e8-b64c-6c95f1240fbe",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C34",
+      "claim": "At the center TM37-38 form a 3-fold symmetric channel lined by TM38, capped on the extracellular side by a CED, and extended on the intracellular side by a pore extension (PE) helix.",
+      "claim_type": "EXPLICIT",
+      "source": "At the center TM37-38 form a 3-fold symmetric channel lined by TM38, capped on the extracellular side by a CED, and extended on the intracellular side by a pore extension (PE) helix (Figure 3a and Figure 6\u2014figure supplement 1c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the pore architecture observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "30826996-9fb4-413c-a708-189e572a1b67",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C35",
+      "claim": "TM37-38 are domain-swapped relative to TM1-36.",
+      "claim_type": "EXPLICIT",
+      "source": "TM37-38 are domain-swapped relative to TM1-36 (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the topological arrangement observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "11e78762-9bbf-4357-a798-48716d310d77",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C36",
+      "claim": "The channel is surrounded at the level of the inner membrane leaflet by a layered, helical cuff consisting of 'elbow' helices, a 'base' helix and 'hairpin' helices from all three subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "The channel is surrounded at the level of the inner membrane leaflet by a layered, helical cuff. The cuff consists of 'elbow' helices (residues 2116 to 2142), a 'base' helix (residues 2149 to 2175) and 'hairpin' helices (residues 2501 to 2534) from all three subunits (Figure 3a and Figure 6\u2014figure supplement 1c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes structural features observed in the cryo-EM map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "ad67e9d0-c78d-4c5d-b02f-7ede45bcfd20",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C37",
+      "claim": "The solid cuff attaches the extended arms to the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "This solid cuff attaches the extended arms to the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural arrangement showing the cuff connecting these regions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "6c2c0097-1fbc-48d2-aa5f-eb7929f8bfb6",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C38",
+      "claim": "Piezo contains a long intracellular helix of 66 amino acids extending from the trimer center, radially out to TM28.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo also contains a long intracellular helix of 66 amino acids extending from the trimer center, radially out to TM28 (Figures 2d and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a structural feature observed in the cryo-EM map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "e2bd74bb-2ef9-46cd-b316-e2f43ea59789",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C39",
+      "claim": "The 'beam' feature was observed previously but modeled as two instead of one helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Referred to as a 'beam', this feature was observed previously (Ge et al., 2015), but modeled as two instead of one helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the current structural interpretation to a previous structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "d7a9ecb7-7cc1-4694-8c30-918228ebd7e0",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C40",
+      "claim": "Linkers between 4-TM units contain at least one helix that runs perpendicular to the TM helices and to the extended arms.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, linkers between 4-TM units contain at least one helix that runs perpendicular to the TM helices and to the extended arms (Figures 2c, 3 and 7b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes structural features observed in the cryo-EM map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "262f721d-b0f6-4312-92d4-772682ae7a96",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C41",
+      "claim": "The 'cross' helices are mostly hydrophobic and located inside of the micelle density, near the intracellular interface.",
+      "claim_type": "EXPLICIT",
+      "source": "These 'cross' helices are mostly hydrophobic and located inside of the micelle density, near the intracellular interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the amino acid composition and location in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "2a159588-045e-43ff-af34-c4e6dfcda4ac",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C42",
+      "claim": "A single subunit of Piezo removed from the trimer can be positioned reasonably well into the plane of a lipid membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "A single subunit of Piezo removed from the trimer can be positioned reasonably well into the plane of a lipid membrane (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on modeling the monomer structure in a planar membrane.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "2897cee6-2d75-4946-8014-683eb257efcd",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C43",
+      "claim": "The detergent micelle containing a trimer is curved into a dome shape.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the detergent micelle containing a trimer is curved into a dome shape (Figures 2b,4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM data showing the micelle shape.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "e29dfb34-b33c-4b2a-bd80-f5e95b966a12",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C44",
+      "claim": "The diameter of the dome opening is about 18 nm with a depth of about 6 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The diameter of the dome opening is about 18 nm with a depth of about 6 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "55eb7946-0996-4575-ae47-21472140c66b",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C45",
+      "claim": "The central cap, formed by the CED, is located mostly inside the dome.",
+      "claim_type": "EXPLICIT",
+      "source": "The central cap, formed by the CED, is actually located mostly inside the dome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the spatial arrangement observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "8064a83c-de6a-4ec4-a601-813edf811d49",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C46",
+      "claim": "The angle between the central pore axis and the beam in each subunit is about 60\u00b0 instead of 90\u00b0, as would be expected if the trimer were located in a fully flattened membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The angle between the central pore axis and the beam in each subunit is about 60\u00b0 instead of 90\u00b0, as we would expect if the trimer were located in a fully flattened membrane (Figures 2d,4b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured from the structural data and compared to the expected geometry in a planar membrane.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "8a5ccdb2-ac74-4471-81d3-f7b4068ae806",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C47",
+      "claim": "The hydrophobic residues on the TM helices (flanked by charged amino acids) form a clearly curved band on the trimer surface, matching the micelle density.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the hydrophobic residues on the TM helices (flanked by charged amino acids) form a clearly curved band on the trimer surface, matching the micelle density (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of the amino acid distribution and comparison to the micelle density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "629474e4-0fca-48aa-bf2d-8a8640f983be",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C48",
+      "claim": "The distribution of charged amino acids on the extended arms of Piezo is consistent with the positive inside rule for membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of charged amino acids on the extended arms of Piezo is consistent with the positive inside rule for membrane proteins (von Heijne, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the charge distribution and comparison to an established principle of membrane protein topology.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "cfb31fbf-68bd-4f51-b4cd-d193001e87e6",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C49",
+      "claim": "The presence of a Piezo channel produces a local dome-shaped deformation of the membrane in small unilamellar vesicles consisting of POPE and POPG.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5a shows a Piezo channel reconstituted into a small unilamellar vesicle consisting of POPE and POPG. The presence of a Piezo channel produces a local dome-shaped deformation of the membrane, with density corresponding to the CED visible inside the dome (the channel is inserted with its extracellular side inside the vesicle).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the electron microscopy images of reconstituted vesicles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "aba400d5-f428-4acd-ae94-4d8401a14f5f",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C50",
+      "claim": "The molecular model, without adjustment, conforms to the shape of the locally curved membrane near the Piezo channel in vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular model, without adjustment, conforms to the shape of the locally curved membrane near the Piezo channel (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by overlaying the structural model on the vesicle images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "66fa8d61-ec22-4993-ab64-d5ed64d0bd4b",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C51",
+      "claim": "Vesicles consisting of POPE and POPG tended to be non-spherical even in the absence of Piezo channels, possibly due to the truncated cone and inverted, truncated cone shapes of POPG and POPE lipids, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that vesicles consisting of POPE and POPG tended to be non-spherical even in the absence of Piezo channels, possibly due to the truncated cone and inverted, truncated cone shapes of POPG and POPE lipids, respectively (Israelachvili, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observation of vesicle shapes and knowledge of lipid geometry from the literature.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "785c6c3b-dafd-4901-aac6-5f8e4b2e3e0c",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C52",
+      "claim": "Vesicles consisting of mixtures of POPC and DOPS, with and without cholesterol, are spherical in shape (circular in projection).",
+      "claim_type": "EXPLICIT",
+      "source": "Vesicles of these lipid compositions are spherical in shape (circular in projection) (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the electron microscopy images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "a0c6c1c1-fe9e-43c6-ab3f-80e16b072984",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C53",
+      "claim": "In POPC and DOPS vesicles with cholesterol, Piezo channels deform the membrane by producing local membrane curvature.",
+      "claim_type": "EXPLICIT",
+      "source": "As in POPE and POPG vesicles, Piezo channels deform the membrane by producing local membrane curvature (Figure 5c and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the electron microscopy images of reconstituted vesicles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "05ae9a24-2e5c-4360-82da-4089865121f7",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C54",
+      "claim": "Piezo channels are almost always inserted with an inside-out orientation in vesicles so that the local curvature (of the dome) matches the global curvature of the vesicle.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that Piezo channels are almost always inserted with an inside-out orientation in vesicles so that the local curvature (of the dome) matches the global curvature of the vesicle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observation of the orientation of Piezo in the vesicle images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "8e5b359d-83a0-4b21-a6f5-7a4361232206",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C55",
+      "claim": "Piezo deforms lipid bilayers locally into a dome shape.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that Piezo deforms lipid bilayers locally into a dome shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the vesicle reconstitution experiments showing membrane curvature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "bdac25c6-e654-4407-a656-068c21798ccd",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C56",
+      "claim": "In cells, the dome will project towards the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, the dome will project towards the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the orientation observed in vesicles and the expected membrane topology in cells.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "644617b4-5229-4555-9756-117847cca2c7",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C57",
+      "claim": "A negatively charged patch of amino acids (E2257, E2258 and D2264) on the CED lies in close contact with a positively charged patch (R1761, R1762 and R1269) located in the extracellular loops of 4-TM units 2 and 3.",
+      "claim_type": "EXPLICIT",
+      "source": "A negatively charged patch of amino acids (E2257, E2258 and D2264) on the CED lies in close contact with a positively charged patch (R1761, R1762 and R1269) located in the extracellular loops of 4-TM units 2 and 3 (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of the structure showing the spatial proximity and charge distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "34f6f311-4579-4591-8c2d-982071ca625c",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C58",
+      "claim": "Hydrogen bonds and salt bridges connect E2257 to R1762 and D2264 to R1761 in a domain-swapped manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Hydrogen bonds and salt bridges connect E2257 to R1762 and D2264 in R1761 in a domain-swapped manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the atomic distances and geometry in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "74629eb8-433b-4716-8e19-71b5fb00c3a0",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C59",
+      "claim": "The electrostatic interactions between the CED and extracellular loops appear to stabilize the trimeric assembly in its curved conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "These electrostatic interactions appear to stabilize the trimeric assembly in its curved conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the presence of the interactions and their location at the interface.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "b502933c-afa2-40ea-9110-eadb7ddaefbb",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C60",
+      "claim": "The transmembrane pore, lined by TM38 and the PE helix, is closed.",
+      "claim_type": "EXPLICIT",
+      "source": "The transmembrane pore, lined by TM38 and the PE helix, is closed (Figure 6a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on measurement of the pore radius at the constriction points.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "4529ed0e-808e-4f09-8d91-3e2ac7e0cceb",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C61",
+      "claim": "At the level of the membrane inner leaflet, the pore radius at positions E2537, P2536 and M2493 is 0.1 \u00c5, 0.4 \u00c5 and 0.3 \u00c5, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "At the level of the membrane inner leaflet, the pore radius at positions E2537, P2536 and M2493 is 0.1 \u00c5, 0.4 \u00c5 and 0.3 \u00c5, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from the structural data using pore radius calculation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "04723300-32e3-42c7-b6a0-932ec5743b9c",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C62",
+      "claim": "Estimated from the size of tetraethylammonium (TEA), which is permeable, Piezo should open to a radius of at least 4 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimated from the size of tetraethylammonium (TEA), which is permeable, Piezo should open to a radius of at least 4 \u00c5 (Gnanasambandam et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from functional data on TEA permeability cited from the literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "cd39e5e7-e9dc-47c9-953c-e7699b20403c",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C63",
+      "claim": "Two rings of glutamate residues flanking either side of the narrow region of the pore (E2487 and E2537) likely account for cation selectivity through direct interactions with permeating ions.",
+      "claim_type": "EXPLICIT",
+      "source": "When it does open, two rings of glutamate residues flanking either side of the narrow region of the pore (E2487 and E2537) likely account for cation selectivity through direct interactions with permeating ions (Figure 6a,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the location of negatively charged residues at the pore constriction and knowledge of ion selectivity mechanisms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "040d81a1-fea1-4cd3-848f-82e5278adabf",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C64",
+      "claim": "The overall architecture of Piezo's pore shares several similarities with P2X and acid-sensing ion channels (ASIC).",
+      "claim_type": "EXPLICIT",
+      "source": "The overall architecture of Piezo's pore shares several similarities with P2X (Kawate et al., 2009) and acid-sensing ion channels (ASIC) (Baconguis et al., 2014) (Figure 6\u2014figure supplement 1a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural comparison to other channel structures from the literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "f256cde6-85dd-4f69-9c83-9e3a3910841c",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C65",
+      "claim": "Piezo, P2X, and ASIC are all trimeric.",
+      "claim_type": "EXPLICIT",
+      "source": "First, all three are trimeric.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural data for all three channels.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "cb6a4fcd-c364-4ada-9984-9fac481b8c99",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C66",
+      "claim": "The pores of Piezo, P2X, and ASIC contain two TM helices and a large extracellular domain, which enclose a continuous ion-conduction path along the three-fold symmetry axis, including a central vestibule in the extracellular domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the pores contain two TM helices and a large extracellular domain, which enclose a continuous ion-conduction path along the three-fold symmetry axis, including a central vestibule in the extracellular domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural comparison of the three channels.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "b7467677-175d-45fb-b314-645bc36ea064",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C67",
+      "claim": "There are lateral fenestrations located below the extracellular domain and open to the pore in Piezo, P2X, and ASIC, which is the actual ion-conduction path in P2X and ASIC.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, there are lateral fenestrations located below the extracellular domain and open to the pore, which is the actual ion-conduction path in P2X and ASIC (Kellenberger and Grutter, 2015), and could be the case for Piezo as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural comparison and citation to literature on P2X and ASIC, with speculation about Piezo.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "e91147f3-1d41-47ec-9006-29058969d49a",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C68",
+      "claim": "The two TM helices with an extracellular domain are the core components for a functional and efficient trimeric channel of this type.",
+      "claim_type": "EXPLICIT",
+      "source": "Given their distinct genetic backgrounds yet similar overall structures, it is reasonable to hypothesize that the two TM helices with an extracellular domain are the core components for a functional and efficient trimeric channel of this type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the structural similarities despite different evolutionary origins.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "9928312a-d08c-4641-b5d1-0ed8cbf4ba4d",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C69",
+      "claim": "Other components unique to Piezo, including the elbow, base, hairpin, and PE helices, are likely to be directly associated with mechano-transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, other components unique to Piezo, including the elbow, base, hairpin, and PE helices (Figure 3a and Figure 6\u2014figure supplement 1c,d), are likely to be directly associated with mechano-transduction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structural differences between Piezo and the non-mechanosensitive channels P2X and ASIC.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "b5beaf44-00d2-4a80-8337-dd06c49a5246",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C70",
+      "claim": "The unique components of Piezo are positioned in a cuff surrounding the narrowest region of the pore and therefore seem well positioned to influence gating.",
+      "claim_type": "EXPLICIT",
+      "source": "These unique components are positioned in a cuff surrounding the narrowest region of the pore and therefore seem well positioned to influence gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural location of these components relative to the pore gate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "0b3748db-2a7e-4a2d-8643-361080606761",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C71",
+      "claim": "Upon mechanical stimulus, major conformational changes are expected in these components in response to movement of the triskelion arms to open the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon mechanical stimulus, major conformational changes are expected in these components in response to movement of the triskelion arms to open the pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the structural arrangement and the proposed mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "737926fa-351d-4f96-b56d-ce643aef07fa",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C72",
+      "claim": "Piezo's extended arms project approximately 30\u00b0 out of the plane defined by the pore, incompatible with a flat membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The most strikingly unusual feature of Piezo's structure is that it does not conform to a locally planar membrane. Instead, its extended arms project approximately 30\u00b0 out of the plane defined by the pore, incompatible with a flat membrane (Figures 2d,4b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured from the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "b7b5e35a-02a0-4994-abe2-0b3f3fbac527",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C73",
+      "claim": "The entire structure of Piezo takes the appearance of a 3-sided pyramid \u2013 inverted when viewed from outside the cell \u2013 that spirals from base to apex to form a semi-sphere-shaped dome (projecting into the cell).",
+      "claim_type": "EXPLICIT",
+      "source": "The extended arms are also curved so that the entire structure takes the appearance of a 3-sided pyramid \u2013 inverted when viewed from outside the cell \u2013 that spirals from base to apex to form a semi-sphere-shaped dome (projecting into the cell).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the overall shape observed in the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "a6291f0b-0bbf-4bdf-b629-0e87f2756f4a",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C74",
+      "claim": "Hydrophobic helices lie perpendicular to the arms like cross bars between the arms, presumably to support the curved membrane as it conforms to Piezo's non-planar shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Hydrophobic helices lie perpendicular to the arms like cross bars between the arms, presumably to support the curved membrane as it conforms to Piezo's non-planar shape (Figures 2,4,7b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the structural observation and inference about their function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "f03885de-ad94-4d0f-a5cd-ea3858bae242",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C75",
+      "claim": "Twelve N-terminal transmembrane helices are not resolved.",
+      "claim_type": "EXPLICIT",
+      "source": "Twelve N-terminal transmembrane helices are not resolved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the incompleteness of the structural model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "66256f44-7c6a-486a-9c5f-2f48f9be7919",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C76",
+      "claim": "The N-terminal helices presumably extend the arms even further and appear to coincide with the edge of the dome, far from the center, where the membrane becomes planar again.",
+      "claim_type": "EXPLICIT",
+      "source": "These presumably extend the arms even further, however, given the curvature of the arms these N-terminal helices appear to coincide with the edge of the dome, far from the center, where the membrane becomes planar again.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed curvature pattern and sequence analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "cd933a91-f5c6-4ffb-96b1-b85b3d793c2f",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C77",
+      "claim": "A published low-resolution structure led the authors to conclude that Piezo resides in a locally planar membrane, with extended arms forming extra-membranous, extracellular blades.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that a published low-resolution structure led the authors to conclude that Piezo resides in a locally planar membrane, with extended arms forming extra-membranous, extracellular blades (Ge et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references a different interpretation from a previous structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "c0142f06-79aa-4c64-a9df-f49b2d7ae176",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C78",
+      "claim": "The current structure is fundamentally different from the previous structure in that the arms, composed of transmembrane helices, are inside the membrane and force the membrane to curve.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure we have described is fundamentally different in that the arms, composed of transmembrane helices, are inside the membrane and force the membrane to curve, as shown in images of Piezo reconstituted into lipid vesicles (Figure 5 and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the current structural data and vesicle reconstitution experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "b0f6db7a-4675-49d5-88d3-8004b6d8e2bb",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C79",
+      "claim": "If the semi-spherical dome becomes flatter (i.e. more co-planar with the membrane) when Piezo opens, then the channel-membrane system will expand.",
+      "claim_type": "EXPLICIT",
+      "source": "By appealing to the illustration of mid-plane area expansion in Figure 1, the structure of Piezo offers a plausible explanation for the origin of its tension-gating. If the semi-spherical dome becomes flatter (i.e. more co-planar with the membrane) when Piezo opens, then the channel-membrane system will expand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the structural observations and thermodynamic principles.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "028457ae-2300-42d2-b707-7a1f6312ace7",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C80",
+      "claim": "In MscL, widening of the channel's diameter causes membrane plane expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "In MscL, widening of the channel's diameter causes membrane plane expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of MscL mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "bb88b4af-2b2c-457e-9a7d-4367c8c775f5",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C81",
+      "claim": "In the proposed mechanism for Piezo, flattening of the channel and its locally surrounding membrane causes membrane plane expansion by transferring out-of-plane membrane area (the dome) into the membrane plane.",
+      "claim_type": "EXPLICIT",
+      "source": "In the proposed mechanism for Piezo, flattening of the channel and its locally surrounding membrane causes membrane plane expansion by transferring out-of-plane membrane area (the dome) into the membrane plane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the proposed hypothesis for Piezo mechanosensitivity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "2f124320-9af1-4815-a958-ea04b371f48c",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C82",
+      "claim": "In both MscL and Piezo, weights are lowered in the 'gravitational analog' (i.e. free energy is reduced).",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases weights are lowered in the 'gravitational analog' (i.e. free energy is reduced) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on thermodynamic principles applied to both mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "a32bcb91-97aa-4044-8480-aec47a4e4042",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C83",
+      "claim": "Flattening does not constrain the pore to open wide, so expansion and pore diameter are decoupled such that Piezo can exhibit its small conductance and cation selectivity without compromising the ability to sense lateral membrane tension.",
+      "claim_type": "EXPLICIT",
+      "source": "Because flattening does not constrain the pore to open wide, expansion and pore diameter are decoupled such that Piezo can exhibit its small conductance and cation selectivity, properties that are essential to its function, without compromising the ability to sense lateral membrane tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key inference from the proposed mechanism explaining how Piezo differs from MscL.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "7d5aa687-b3f2-49d0-8407-0644b2d1c380",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C84",
+      "claim": "The expanded plane area corresponds quantitatively to the change in area of the dome that is projected onto the membrane plane, \u0394Aproj, and the resulting energy difference is \u03b3 \u0394Aproj.",
+      "claim_type": "EXPLICIT",
+      "source": "In this proposed mechanism for Piezo, expansion of the membrane-channel system occurs when a curved, dome-shaped membrane becomes flatter (more planar). The expanded plane area corresponds quantitatively to the change in area of the dome that is projected onto the membrane plane, \u0394Aproj, and the resulting energy difference is \u03b3 \u0394Aproj (Figure 7c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical prediction based on thermodynamic principles.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "92fe4360-5809-4831-b6e3-935737f496a0",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C85",
+      "claim": "For the simplified geometry shown in Figure 7 the semi-spherical mid-plane has a total mid-plane surface area of 400 nm2 and a projected area, Aproj, of 280 nm2.",
+      "claim_type": "EXPLICIT",
+      "source": "For the simplified geometry shown in Figure 7 the semi-spherical mid-plane has a total mid-plane surface area of 400 nm2 and a projected area, Aproj, of 280 nm2 (Figure 7\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the geometric model of the dome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "8afea4f4-8a11-4b08-b3a4-e0eb9b59c160",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C86",
+      "claim": "If Piezo becomes completely co-planar with the membrane when it opens, then \u0394Aproj associated with opening would be 120 nm2.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, if Piezo becomes completely co-planar with the membrane when it opens (i.e. so that its projected area equals its total area) then \u0394Aproj associated with opening would be 400 nm2 \u2013 280 nm2 = 120 nm2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the geometric model assuming complete flattening.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "47ece29b-357d-4d54-8903-02d64694deb0",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C87",
+      "claim": "A membrane under tension \u03b3 would favor the open conformation by energy \u03b3 \u0394Aproj, corresponding to 42 kBT stabilization of the open state relative to closed at a membrane tension of only one tenth lytic value (~3.5 kBT/nm2).",
+      "claim_type": "EXPLICIT",
+      "source": "A membrane under tension \u03b3 would thus favor the open conformation by energy \u03b3 \u0394Aproj, corresponding to 42 kBT stabilization of the open state relative to closed at a membrane tension of only one tenth lytic value (~3.5 kBT/nm2), where kB is the Boltzmann constant and T the temperature in degrees Kelvin (Rawicz et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the projected area change and membrane tension values from the literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "45f47b97-8380-4e98-8408-c2ec418839c1",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C88",
+      "claim": "If Piezo flattens only partially upon opening then \u0394Aproj will be less than 120 nm2 and the energy difference correspondingly smaller.",
+      "claim_type": "EXPLICIT",
+      "source": "If Piezo flattens only partially upon opening then \u0394Aproj will be less than 120 nm2 and the energy difference correspondingly smaller (Figure 7c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a logical consequence of the proposed mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "868f48d6-b3d7-4e6b-9c8d-81cc433eae12",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C89",
+      "claim": "For MscL, the in-plane area change \u0394A is ~20 nm2.",
+      "claim_type": "EXPLICIT",
+      "source": "Recall that for MscL, the in-plane area change \u0394A is ~20 nm2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of MscL from the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "923d900a-7567-4ec4-9d4d-d4253dedf767",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C90",
+      "claim": "Piezo has the potential for much higher tension sensitivity than MscL.",
+      "claim_type": "EXPLICIT",
+      "source": "This means Piezo has the potential for much higher tension sensitivity than MscL (equation 2, with \u0394A = \u0394Aproj for Piezo).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing the calculated \u0394Aproj for Piezo to the known \u0394A for MscL.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "d3971ad4-275e-47b6-8b26-829da78be64b",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C91",
+      "claim": "The major origin of tension-dependent gating in Piezo is likely the change in projected area, because it has the potential to be so large.",
+      "claim_type": "EXPLICIT",
+      "source": "There are other possible origins of tension dependence in Piezo, related to changes in the size, geometry and chemistry of the protein-lipid interface associated with gating (Wiggins and Phillips, 2005; Ursell et al., 2008; Phillips et al., 2012). While these changes are still unknown, we suspect that the major origin of tension-dependent gating is the change in projected area, because it has the potential to be so large.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the magnitude of the calculated projected area change.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "298af8c9-8a79-4f8e-8f6c-eff7c0fa6eeb",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C92",
+      "claim": "There is a separate, intrinsic energy cost to bend a membrane even in the absence of tension.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the tension-dependent energy associated with projected area expansion, there is a separate, intrinsic energy cost to bend a membrane even in the absence of tension (Ursell et al., 2008; Helfrich, 1973; Deserno, 2007; Phillips, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established membrane mechanics theory from the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "7bcc588b-d951-4203-a1e0-650fb7db536c",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C93",
+      "claim": "For the semi-spherical membrane in Figure 7 the magnitude of the bending energy is approximately 150 kBT, even excluding the curvature back into the membrane plane.",
+      "claim_type": "EXPLICIT",
+      "source": "For the semi-spherical membrane in Figure 7 we calculate the magnitude of this energy to be approximately 150 kBT, even excluding the curvature back into the membrane plane, which will substantially increase the bending energy further (Figure 7\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated using membrane bending theory applied to the geometric model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "39e0cc7d-f3f8-4a38-869b-6d82408e5e16",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C94",
+      "claim": "The bending energy implies that the Piezo protein must perform work on the membrane to curve it.",
+      "claim_type": "EXPLICIT",
+      "source": "This bending energy implies that the Piezo protein must perform work on the membrane to curve it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the thermodynamic cost of membrane bending.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "01311d07-2c57-47fe-b740-7b49f6c8b6fa",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C95",
+      "claim": "In the absence of a membrane's tendency toward planarity (i.e. in a detergent micelle) Piezo is very stable in its closed, curved conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that in the absence of a membrane's tendency toward planarity (i.e. in a detergent micelle) Piezo is very stable in its closed, curved conformation and we observe physical features \u2013 such as surface electrostatic interactions \u2013 that support this idea (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis based on the structural observations in detergent.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "ba5d8060-4b55-495f-9d4a-14b3cb05bf55",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C96",
+      "claim": "Inside a membrane Piezo produces similar membrane curvature, but this must occur at the energetic expense of its closed state stability, because some of that energy must go into curving the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Inside a membrane Piezo produces similar membrane curvature, but this must occur at the energetic expense of its closed state stability, because some of that energy must go into curving the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from thermodynamic considerations of membrane bending.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "84fe3e35-617e-454a-9e6b-c1ac0b7119c3",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C97",
+      "claim": "When tension is applied to the membrane, the additional energy term \u03b3 \u0394Aproj tips the balance, favoring the flatter, open conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, we propose, when tension is applied to the membrane, the additional energy term \u03b3 \u0394Aproj tips the balance, favoring the flatter, open conformation (Figure 7d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the core hypothesis of the proposed mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "93377ce2-63fa-428b-8a8f-487809665d31",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C98",
+      "claim": "Lipid membranes of differing stiffness (i.e. different bending moduli) should influence gating through \u0394Gbend (i.e. stiffer membranes with a more negative \u0394Gbend should lead to channel opening at smaller values of membrane tension).",
+      "claim_type": "EXPLICIT",
+      "source": "The equation predicts that lipid membranes of differing stiffness (i.e. different bending moduli) should influence gating through \u0394Gbend (i.e. stiffer membranes with a more negative \u0394Gbend should lead to channel opening at smaller values of membrane tension) (Figure 7d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a testable prediction from the proposed thermodynamic model.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "639c2cb3-d826-47a9-8afb-e48a5cfec92a",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C99",
+      "claim": "A single subunit is compatible with a planar membrane, whereas the trimer is not.",
+      "claim_type": "EXPLICIT",
+      "source": "We can only conjecture how changes in Piezo's shape will open the pore. We think it is significant that a single subunit is compatible with a planar membrane, whereas the trimer is not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis comparing monomer and trimer geometries.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "90893def-64b3-486e-beb9-f70e8f18f167",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C100",
+      "claim": "The abrupt angle at which the arms project from the pore implies that forces tending to flatten Piezo will produce the greatest stress at the region of attachment.",
+      "claim_type": "EXPLICIT",
+      "source": "This is due to the abrupt angle at which the arms project from the pore (Figures 2d,4b,c): this implies that forces tending to flatten Piezo will produce the greatest stress at the region of attachment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from mechanical considerations of the structural geometry.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "dcb462c0-1eda-4bc0-8b13-f8fb7eda1af7",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C101",
+      "claim": "The region of attachment coincides with the cuff of helices that surround the pore's narrowest segment, presumably its gate.",
+      "claim_type": "EXPLICIT",
+      "source": "This region coincides with the cuff of helices that surround the pore's narrowest segment, presumably its gate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis of the attachment region and pore location.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "d887e978-b816-4c71-a8b8-49e2f7633ead",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C102",
+      "claim": "A force directed along the triskelion arms toward the center of the trimer, associated with flattening of Piezo's arms, will more likely push the 'swapped' pore-lining helices away from the center and open the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "At first consideration a force directed along the triskelion arms toward the center of the trimer, associated with flattening of Piezo's arms, might be expected to constrict the pore further. However, given that TM37-38 are domain-swapped relative to TM1-36, such a force will more likely push the 'swapped' pore-lining helices away from the center and open the pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about the gating mechanism based on the domain-swapped topology.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "c7e2a734-614e-4139-94d9-6cf3f31582d8",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C103",
+      "claim": "The membrane dome mechanism does not require the application of a force pressing onto the dome (i.e. a force component normal to the plane of the membrane): lateral membrane tension alone will favor the flatter, opened conformation by a relative energy difference given by \u03b3 \u0394Aproj.",
+      "claim_type": "EXPLICIT",
+      "source": "In this mechanism a dome of membrane, created by Piezo's shape in its closed conformation, undergoes relative flattening upon channel opening. This mechanism does not require the application of a force pressing onto the dome (i.e. a force component normal to the plane of the membrane): lateral membrane tension alone will favor the flatter, opened conformation by a relative energy difference given by \u03b3 \u0394Aproj.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key feature of the proposed mechanism distinguishing it from other possible mechanisms.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "6ea9d0bb-2b45-448e-ae5f-3e0abcbd1afe",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C104",
+      "claim": "Whether Piezo interacts directly with cytoskeletal or extracellular matrix proteins to modulate its mechanosensitive gating is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether Piezo interacts directly with cytoskeletal or extracellular matrix proteins to modulate its mechanosensitive gating is unknown (Lewis and Grandl, 2015; Gottlieb et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges uncertainty about potential protein-protein interactions, citing relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "6f0ba754-177a-4827-af5f-826d48240aa6",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C105",
+      "claim": "The membrane dome mechanism is a hypothesis inspired by the highly unusual structure of Piezo and its demonstrated ability to curve lipid bilayers into a dome.",
+      "claim_type": "EXPLICIT",
+      "source": "The membrane dome mechanism presented here is a hypothesis inspired by the highly unusual structure of Piezo and its demonstrated ability to curve lipid bilayers into a dome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explicitly states the speculative nature of the proposed mechanism.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "4ea526cc-e459-49c2-890d-28a81f89b05c",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "claim_id": "C106",
+      "claim": "Additional experiments will be needed to test the membrane dome hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional experiments will be needed to test this hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges that the hypothesis requires experimental validation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "626c4a93-c71d-4e94-a0e7-82a9a0cf1657",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors determined a cryo-EM structure of mouse Piezo1 at 3.7\u00c5 overall resolution, with variable local resolution (3.2-6\u00c5), improved through symmetry expansion and focused refinement. The structural model contains 1518 of 2547 residues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C22-C25 collectively describe the structural determination with appropriate resolution metrics, computational methods, and model completeness. The data quality assessments (FSC curves, local resolution maps) and methodological details support the claimed resolution and structural features.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "fab8c6b4-348a-4a76-9e27-9c194424e5b6",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Piezo1 has a triskelion architecture with extended arms composed of repeated 4-TM structural units arranged in a left-handed helical pattern. Each subunit likely contains nine 4-TM units (36 TM helices total) plus two C-terminal TM helices forming the central pore.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C26-C32 describe the repetitive structural architecture supported by direct structural observation (C26-C30) and sequence analysis (C31-C32). The inference about nine total 4-TM units is reasonable given the observed pattern and topology predictions, though three units remain unresolved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "8c15e42a-d132-43db-8f8e-b2dadb5d76b8",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The central pore region contains TM37-38 in a domain-swapped configuration, surrounded by a helical cuff (elbow, base, and hairpin helices) that connects the extended arms to the channel. Additional structural features include a 66-amino acid 'beam' helix and hydrophobic 'cross' helices perpendicular to the arms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C41 describe structural features directly observed in the cryo-EM density. The domain-swapped topology (C35), helical cuff organization (C36), and additional structural elements (C38-C41) are supported by the structural data, though some functional inferences (C37) are reasonable extrapolations from the architecture.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "03f5404c-d238-4592-8bcf-e3310c0c2028",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Piezo1 deforms membranes into a dome shape both in detergent micelles and in lipid vesicles of various compositions. The dome has dimensions of ~18 nm diameter and ~6 nm depth, with the protein arms projecting ~30\u00b0 out of plane, incompatible with a flat membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C42-C56 are strongly supported by both structural data in detergent (C43-C47) and direct visualization in reconstituted vesicles (C49-C54). The membrane curvature is observed across multiple lipid compositions (C51-C53), providing robust evidence. The charge distribution analysis (C48) further supports the membrane topology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "09273e43-2535-4cfb-b421-a915efa302b2",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Electrostatic interactions between negatively charged residues on the CED (E2257, E2258, D2264) and positively charged residues on extracellular loops (R1761, R1762, R1269) stabilize the trimeric assembly in its curved conformation through domain-swapped hydrogen bonds and salt bridges.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 describe specific inter-subunit interactions observed in the structure. The spatial proximity and charge complementarity (C57) and specific interactions (C58) are supported by structural data. The inference about stabilization (C59) is reasonable given the location and nature of these interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "f0766d12-0f49-4e70-9cb2-b064659fe6b5",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The pore is closed in the current structure with radii of 0.1-0.4\u00c5 at constriction points. Two rings of glutamate residues (E2487, E2537) flanking the narrow region likely mediate cation selectivity, and the pore should open to at least 4\u00c5 radius based on TEA permeability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 describe the pore state and selectivity mechanism. The closed state and pore radii (C60-C61) are directly measured from the structure. The inference about glutamate-mediated selectivity (C63) is reasonable based on structural location and ion channel principles. The predicted open radius (C62) is appropriately cited from functional data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "8d2a4c02-1864-4ce1-ae66-17f1ec1533ae",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Piezo's pore architecture shares similarities with P2X and ASIC channels (trimeric, two TM helices, extracellular domain, lateral fenestrations), but contains unique components (elbow, base, hairpin, PE helices) positioned near the gate that are likely associated with mechanotransduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C71 make structural comparisons and functional inferences. The architectural similarities (C64-C67) are supported by structural comparison. The hypothesis about unique components being involved in mechanotransduction (C68-C71) is reasonable speculation based on structural differences and component positioning, though it requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "d095f7b8-fd3d-45cf-86c9-ee6612694176",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose a membrane dome mechanism where flattening of the curved membrane upon channel opening causes projected area expansion (\u0394Aproj), with energy change \u03b3\u0394Aproj. Complete flattening would yield \u0394Aproj=120nm\u00b2, providing 42kBT stabilization at 0.1\u00d7 lytic tension, potentially giving Piezo higher tension sensitivity than MscL while maintaining a narrow pore.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C7, C79-C91 present the core mechanistic hypothesis with quantitative predictions. While the thermodynamic framework is sound and calculations are appropriate (C84-C87), this is explicitly a hypothesis requiring experimental validation (C105-C106). The mechanism is plausible and internally consistent, but lacks direct experimental evidence for the proposed conformational change. The decoupling of pore size from mechanosensitivity (C83) is a key insight but remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "2855367f-e0a1-4bf6-a416-6409f30600a4",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Membrane bending energy (~150kBT for the dome) implies Piezo must perform work to curve the membrane. In detergent, Piezo is stable in its curved conformation, but in a membrane this stability is reduced by the bending cost. Membrane tension (\u03b3\u0394Aproj) then tips the balance toward the flatter open state, with predictions that membrane stiffness should modulate gating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C92-C98 extend the mechanistic model with energetic considerations. The bending energy calculation (C93) is based on established theory (C92), but the proposed energy balance (C95-C97) is speculative. The prediction about membrane stiffness effects (C98) is testable but unvalidated. The model is thermodynamically reasonable but requires experimental support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "eaa78b3c-3b2c-4e0f-ab72-1226e42ef210",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose that flattening forces will produce greatest stress at the attachment region where arms meet the pore, coinciding with the helical cuff surrounding the gate. The domain-swapped topology suggests these forces would push pore-lining helices outward to open the channel.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C99-C102 propose a gating mechanism based on structural features. The observation that monomers fit planar membranes while trimers do not (C99) and the stress concentration prediction (C100-C101) are reasonable structural inferences. However, the proposed gating motion (C102) is speculative and requires validation through additional structures or simulations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "d6fe580f-f2d9-480e-8115-17c6d0315198",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The current structure differs fundamentally from a previous lower-resolution structure (Ge et al., 2015), with the arms now interpreted as transmembrane helices inside a curved membrane rather than extracellular blades in a planar membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C77-C78 describe differences from prior work. The reinterpretation is supported by higher resolution data (C4, C22-C23), vesicle reconstitution experiments (C49-C55), and improved structural detail. This represents a significant correction to the field's understanding of Piezo architecture.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "d05d484a-8fa3-4dd8-975a-c00ddbed12e3",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background context establishing that mechanosensitive channels like MscL use in-plane area expansion for tension-gating, while Piezo channels have narrow pores with high mechanosensitivity and cation selectivity, presenting a mechanistic puzzle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C20 provide established background knowledge appropriately cited from the literature. These claims accurately represent prior understanding of mechanosensitive channels and set up the scientific question addressed by the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "e3ddcf91-36ca-40f6-afc3-145bab84665f",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Piezo's structure forms a three-sided pyramid/dome with arms projecting ~30\u00b0 out of plane, supported by hydrophobic cross-helices. Twelve N-terminal helices are unresolved but likely extend to the dome edge where the membrane becomes planar.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C76 describe the overall architecture. The out-of-plane projection (C72) and dome shape (C73) are directly measured. The cross-helix function (C74) is a reasonable inference. The extrapolation about unresolved N-terminal helices (C75-C76) is speculative but logical given the observed curvature pattern.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "cd60164e-1884-4b97-9dad-dbbc5c50e7f0",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The membrane dome mechanism is presented as a hypothesis that does not require normal forces, only lateral tension. The role of cytoskeletal/ECM protein interactions remains unknown, and additional experiments are needed to test the hypothesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C106 appropriately characterize the work's limitations and speculative nature. The authors clearly state this is a hypothesis (C105) requiring further testing (C106), acknowledge unknowns (C104), and distinguish their mechanism from alternatives (C103). This represents appropriate scientific caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    },
+    {
+      "id": "c11e7ae0-c63e-4da2-974a-7f7b5e7fdff4",
+      "content_id": "f777d580-6029-46c8-a9c1-f839dabe48c1",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Quantitative comparisons establish that MscL uses ~20nm\u00b2 in-plane area expansion, while the proposed Piezo mechanism could involve up to 120nm\u00b2 projected area change, with geometric calculations showing 280nm\u00b2 projected area for the closed dome structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80, C82, C85, C89 provide quantitative context and calculations. The MscL values are from established literature (C80, C89). The geometric calculations for Piezo (C85) are straightforward applications of geometry to the structural model. These provide the quantitative foundation for the mechanistic hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:28:18.767109Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a918d3da-ce8a-46dd-894e-d35b16693f76",
+      "result_id": "626c4a93-c71d-4e94-a0e7-82a9a0cf1657"
+    },
+    {
+      "claim_id": "ac028fe3-09a6-4819-a420-73262135a02e",
+      "result_id": "626c4a93-c71d-4e94-a0e7-82a9a0cf1657"
+    },
+    {
+      "claim_id": "4a0b694d-60ee-4c4a-91ad-8b500b591a89",
+      "result_id": "626c4a93-c71d-4e94-a0e7-82a9a0cf1657"
+    },
+    {
+      "claim_id": "9a63682b-acdf-4d98-b350-5e244ceb0e90",
+      "result_id": "626c4a93-c71d-4e94-a0e7-82a9a0cf1657"
+    },
+    {
+      "claim_id": "1d36a0f4-6ec2-4720-984f-8f856bffe72e",
+      "result_id": "626c4a93-c71d-4e94-a0e7-82a9a0cf1657"
+    },
+    {
+      "claim_id": "5a98aad3-bbba-43b8-ab61-9abccfab233c",
+      "result_id": "fab8c6b4-348a-4a76-9e27-9c194424e5b6"
+    },
+    {
+      "claim_id": "ba5689b9-ef1a-47c1-8f32-1e3c2217b8bb",
+      "result_id": "fab8c6b4-348a-4a76-9e27-9c194424e5b6"
+    },
+    {
+      "claim_id": "985c48a4-169b-4541-aa0f-be96a787ac1f",
+      "result_id": "fab8c6b4-348a-4a76-9e27-9c194424e5b6"
+    },
+    {
+      "claim_id": "7ec39c8f-69e4-4536-9263-450407ccd820",
+      "result_id": "fab8c6b4-348a-4a76-9e27-9c194424e5b6"
+    },
+    {
+      "claim_id": "e7edaaf8-ac05-4ac1-9463-7bafd71bed2a",
+      "result_id": "fab8c6b4-348a-4a76-9e27-9c194424e5b6"
+    },
+    {
+      "claim_id": "3ba3c999-b0d2-4381-be7b-015a83c5ed8e",
+      "result_id": "fab8c6b4-348a-4a76-9e27-9c194424e5b6"
+    },
+    {
+      "claim_id": "15491e0f-7b4f-4aaa-97e2-01032561e6d5",
+      "result_id": "fab8c6b4-348a-4a76-9e27-9c194424e5b6"
+    },
+    {
+      "claim_id": "e0f00714-9756-47db-b8a7-89cdf499feef",
+      "result_id": "fab8c6b4-348a-4a76-9e27-9c194424e5b6"
+    },
+    {
+      "claim_id": "ff938eaf-843c-4804-b0ce-57dba0bba0f3",
+      "result_id": "8c15e42a-d132-43db-8f8e-b2dadb5d76b8"
+    },
+    {
+      "claim_id": "2642b55b-5406-43e8-b64c-6c95f1240fbe",
+      "result_id": "8c15e42a-d132-43db-8f8e-b2dadb5d76b8"
+    },
+    {
+      "claim_id": "30826996-9fb4-413c-a708-189e572a1b67",
+      "result_id": "8c15e42a-d132-43db-8f8e-b2dadb5d76b8"
+    },
+    {
+      "claim_id": "11e78762-9bbf-4357-a798-48716d310d77",
+      "result_id": "8c15e42a-d132-43db-8f8e-b2dadb5d76b8"
+    },
+    {
+      "claim_id": "ad67e9d0-c78d-4c5d-b02f-7ede45bcfd20",
+      "result_id": "8c15e42a-d132-43db-8f8e-b2dadb5d76b8"
+    },
+    {
+      "claim_id": "6c2c0097-1fbc-48d2-aa5f-eb7929f8bfb6",
+      "result_id": "8c15e42a-d132-43db-8f8e-b2dadb5d76b8"
+    },
+    {
+      "claim_id": "e2bd74bb-2ef9-46cd-b316-e2f43ea59789",
+      "result_id": "8c15e42a-d132-43db-8f8e-b2dadb5d76b8"
+    },
+    {
+      "claim_id": "d7a9ecb7-7cc1-4694-8c30-918228ebd7e0",
+      "result_id": "8c15e42a-d132-43db-8f8e-b2dadb5d76b8"
+    },
+    {
+      "claim_id": "262f721d-b0f6-4312-92d4-772682ae7a96",
+      "result_id": "8c15e42a-d132-43db-8f8e-b2dadb5d76b8"
+    },
+    {
+      "claim_id": "0fcfb67b-d154-43e6-a2f6-93a992086f1a",
+      "result_id": "03f5404c-d238-4592-8bcf-e3310c0c2028"
+    },
+    {
+      "claim_id": "2a159588-045e-43ff-af34-c4e6dfcda4ac",
+      "result_id": "03f5404c-d238-4592-8bcf-e3310c0c2028"
+    },
+    {
+      "claim_id": "2897cee6-2d75-4946-8014-683eb257efcd",
+      "result_id": "03f5404c-d238-4592-8bcf-e3310c0c2028"
+    },
+    {
+      "claim_id": "e29dfb34-b33c-4b2a-bd80-f5e95b966a12",
+      "result_id": "03f5404c-d238-4592-8bcf-e3310c0c2028"
+    },
+    {
+      "claim_id": "55eb7946-0996-4575-ae47-21472140c66b",
+      "result_id": "03f5404c-d238-4592-8bcf-e3310c0c2028"
+    },
+    {
+      "claim_id": "8064a83c-de6a-4ec4-a601-813edf811d49",
+      "result_id": "03f5404c-d238-4592-8bcf-e3310c0c2028"
+    },
+    {
+      "claim_id": "8a5ccdb2-ac74-4471-81d3-f7b4068ae806",
+      "result_id": "03f5404c-d238-4592-8bcf-e3310c0c2028"
+    },
+    {
+      "claim_id": "629474e4-0fca-48aa-bf2d-8a8640f983be",
+      "result_id": "03f5404c-d238-4592-8bcf-e3310c0c2028"
+    },
+    {
+      "claim_id": "cfb31fbf-68bd-4f51-b4cd-d193001e87e6",
+      "result_id": "03f5404c-d238-4592-8bcf-e3310c0c2028"
+    },
+    {
+      "claim_id": "aba400d5-f428-4acd-ae94-4d8401a14f5f",
+      "result_id": "03f5404c-d238-4592-8bcf-e3310c0c2028"
+    },
+    {
+      "claim_id": "66fa8d61-ec22-4993-ab64-d5ed64d0bd4b",
+      "result_id": "03f5404c-d238-4592-8bcf-e3310c0c2028"
+    },
+    {
+      "claim_id": "785c6c3b-dafd-4901-aac6-5f8e4b2e3e0c",
+      "result_id": "03f5404c-d238-4592-8bcf-e3310c0c2028"
+    },
+    {
+      "claim_id": "a0c6c1c1-fe9e-43c6-ab3f-80e16b072984",
+      "result_id": "03f5404c-d238-4592-8bcf-e3310c0c2028"
+    },
+    {
+      "claim_id": "05ae9a24-2e5c-4360-82da-4089865121f7",
+      "result_id": "03f5404c-d238-4592-8bcf-e3310c0c2028"
+    },
+    {
+      "claim_id": "8e5b359d-83a0-4b21-a6f5-7a4361232206",
+      "result_id": "03f5404c-d238-4592-8bcf-e3310c0c2028"
+    },
+    {
+      "claim_id": "bdac25c6-e654-4407-a656-068c21798ccd",
+      "result_id": "03f5404c-d238-4592-8bcf-e3310c0c2028"
+    },
+    {
+      "claim_id": "644617b4-5229-4555-9756-117847cca2c7",
+      "result_id": "09273e43-2535-4cfb-b421-a915efa302b2"
+    },
+    {
+      "claim_id": "34f6f311-4579-4591-8c2d-982071ca625c",
+      "result_id": "09273e43-2535-4cfb-b421-a915efa302b2"
+    },
+    {
+      "claim_id": "74629eb8-433b-4716-8e19-71b5fb00c3a0",
+      "result_id": "09273e43-2535-4cfb-b421-a915efa302b2"
+    },
+    {
+      "claim_id": "b502933c-afa2-40ea-9110-eadb7ddaefbb",
+      "result_id": "f0766d12-0f49-4e70-9cb2-b064659fe6b5"
+    },
+    {
+      "claim_id": "4529ed0e-808e-4f09-8d91-3e2ac7e0cceb",
+      "result_id": "f0766d12-0f49-4e70-9cb2-b064659fe6b5"
+    },
+    {
+      "claim_id": "04723300-32e3-42c7-b6a0-932ec5743b9c",
+      "result_id": "f0766d12-0f49-4e70-9cb2-b064659fe6b5"
+    },
+    {
+      "claim_id": "cd39e5e7-e9dc-47c9-953c-e7699b20403c",
+      "result_id": "f0766d12-0f49-4e70-9cb2-b064659fe6b5"
+    },
+    {
+      "claim_id": "040d81a1-fea1-4cd3-848f-82e5278adabf",
+      "result_id": "8d2a4c02-1864-4ce1-ae66-17f1ec1533ae"
+    },
+    {
+      "claim_id": "f256cde6-85dd-4f69-9c83-9e3a3910841c",
+      "result_id": "8d2a4c02-1864-4ce1-ae66-17f1ec1533ae"
+    },
+    {
+      "claim_id": "cb6a4fcd-c364-4ada-9984-9fac481b8c99",
+      "result_id": "8d2a4c02-1864-4ce1-ae66-17f1ec1533ae"
+    },
+    {
+      "claim_id": "b7467677-175d-45fb-b314-645bc36ea064",
+      "result_id": "8d2a4c02-1864-4ce1-ae66-17f1ec1533ae"
+    },
+    {
+      "claim_id": "e91147f3-1d41-47ec-9006-29058969d49a",
+      "result_id": "8d2a4c02-1864-4ce1-ae66-17f1ec1533ae"
+    },
+    {
+      "claim_id": "9928312a-d08c-4641-b5d1-0ed8cbf4ba4d",
+      "result_id": "8d2a4c02-1864-4ce1-ae66-17f1ec1533ae"
+    },
+    {
+      "claim_id": "b5beaf44-00d2-4a80-8337-dd06c49a5246",
+      "result_id": "8d2a4c02-1864-4ce1-ae66-17f1ec1533ae"
+    },
+    {
+      "claim_id": "0b3748db-2a7e-4a2d-8643-361080606761",
+      "result_id": "8d2a4c02-1864-4ce1-ae66-17f1ec1533ae"
+    },
+    {
+      "claim_id": "c58b7805-5470-4b4f-af73-c0a767cfeaa5",
+      "result_id": "d095f7b8-fd3d-45cf-86c9-ee6612694176"
+    },
+    {
+      "claim_id": "b0f6db7a-4675-49d5-88d3-8004b6d8e2bb",
+      "result_id": "d095f7b8-fd3d-45cf-86c9-ee6612694176"
+    },
+    {
+      "claim_id": "bb88b4af-2b2c-457e-9a7d-4367c8c775f5",
+      "result_id": "d095f7b8-fd3d-45cf-86c9-ee6612694176"
+    },
+    {
+      "claim_id": "a32bcb91-97aa-4044-8480-aec47a4e4042",
+      "result_id": "d095f7b8-fd3d-45cf-86c9-ee6612694176"
+    },
+    {
+      "claim_id": "7d5aa687-b3f2-49d0-8407-0644b2d1c380",
+      "result_id": "d095f7b8-fd3d-45cf-86c9-ee6612694176"
+    },
+    {
+      "claim_id": "8afea4f4-8a11-4b08-b3a4-e0eb9b59c160",
+      "result_id": "d095f7b8-fd3d-45cf-86c9-ee6612694176"
+    },
+    {
+      "claim_id": "47ece29b-357d-4d54-8903-02d64694deb0",
+      "result_id": "d095f7b8-fd3d-45cf-86c9-ee6612694176"
+    },
+    {
+      "claim_id": "45f47b97-8380-4e98-8408-c2ec418839c1",
+      "result_id": "d095f7b8-fd3d-45cf-86c9-ee6612694176"
+    },
+    {
+      "claim_id": "923d900a-7567-4ec4-9d4d-d4253dedf767",
+      "result_id": "d095f7b8-fd3d-45cf-86c9-ee6612694176"
+    },
+    {
+      "claim_id": "d3971ad4-275e-47b6-8b26-829da78be64b",
+      "result_id": "d095f7b8-fd3d-45cf-86c9-ee6612694176"
+    },
+    {
+      "claim_id": "298af8c9-8a79-4f8e-8f6c-eff7c0fa6eeb",
+      "result_id": "2855367f-e0a1-4bf6-a416-6409f30600a4"
+    },
+    {
+      "claim_id": "7bcc588b-d951-4203-a1e0-650fb7db536c",
+      "result_id": "2855367f-e0a1-4bf6-a416-6409f30600a4"
+    },
+    {
+      "claim_id": "39e0cc7d-f3f8-4a38-869b-6d82408e5e16",
+      "result_id": "2855367f-e0a1-4bf6-a416-6409f30600a4"
+    },
+    {
+      "claim_id": "01311d07-2c57-47fe-b740-7b49f6c8b6fa",
+      "result_id": "2855367f-e0a1-4bf6-a416-6409f30600a4"
+    },
+    {
+      "claim_id": "ba5d8060-4b55-495f-9d4a-14b3cb05bf55",
+      "result_id": "2855367f-e0a1-4bf6-a416-6409f30600a4"
+    },
+    {
+      "claim_id": "84fe3e35-617e-454a-9e6b-c1ac0b7119c3",
+      "result_id": "2855367f-e0a1-4bf6-a416-6409f30600a4"
+    },
+    {
+      "claim_id": "93377ce2-63fa-428b-8a8f-487809665d31",
+      "result_id": "2855367f-e0a1-4bf6-a416-6409f30600a4"
+    },
+    {
+      "claim_id": "639c2cb3-d826-47a9-8afb-e48a5cfec92a",
+      "result_id": "eaa78b3c-3b2c-4e0f-ab72-1226e42ef210"
+    },
+    {
+      "claim_id": "90893def-64b3-486e-beb9-f70e8f18f167",
+      "result_id": "eaa78b3c-3b2c-4e0f-ab72-1226e42ef210"
+    },
+    {
+      "claim_id": "dcb462c0-1eda-4bc0-8b13-f8fb7eda1af7",
+      "result_id": "eaa78b3c-3b2c-4e0f-ab72-1226e42ef210"
+    },
+    {
+      "claim_id": "d887e978-b816-4c71-a8b8-49e2f7633ead",
+      "result_id": "eaa78b3c-3b2c-4e0f-ab72-1226e42ef210"
+    },
+    {
+      "claim_id": "52a14018-9cf3-4bcd-80ba-89ea9f62078a",
+      "result_id": "d6fe580f-f2d9-480e-8115-17c6d0315198"
+    },
+    {
+      "claim_id": "cd933a91-f5c6-4ffb-96b1-b85b3d793c2f",
+      "result_id": "d6fe580f-f2d9-480e-8115-17c6d0315198"
+    },
+    {
+      "claim_id": "c0142f06-79aa-4c64-a9df-f49b2d7ae176",
+      "result_id": "d6fe580f-f2d9-480e-8115-17c6d0315198"
+    },
+    {
+      "claim_id": "d8d0690d-c06b-4729-850c-ce83dff1381d",
+      "result_id": "d05d484a-8fa3-4dd8-975a-c00ddbed12e3"
+    },
+    {
+      "claim_id": "619f7e9f-07c6-42c6-b767-44a11d337126",
+      "result_id": "d05d484a-8fa3-4dd8-975a-c00ddbed12e3"
+    },
+    {
+      "claim_id": "057d10e9-d71b-4f12-b60d-e5f39e43b9a7",
+      "result_id": "d05d484a-8fa3-4dd8-975a-c00ddbed12e3"
+    },
+    {
+      "claim_id": "61504b10-5dc4-4739-8466-2fa6dc13c18a",
+      "result_id": "d05d484a-8fa3-4dd8-975a-c00ddbed12e3"
+    },
+    {
+      "claim_id": "197288ba-e188-40bd-b22d-2f62668094e0",
+      "result_id": "d05d484a-8fa3-4dd8-975a-c00ddbed12e3"
+    },
+    {
+      "claim_id": "11fb42ca-ec54-482f-a477-06a78c79be8f",
+      "result_id": "d05d484a-8fa3-4dd8-975a-c00ddbed12e3"
+    },
+    {
+      "claim_id": "133e68aa-8ee6-4ea2-a9c5-080b772adf0b",
+      "result_id": "d05d484a-8fa3-4dd8-975a-c00ddbed12e3"
+    },
+    {
+      "claim_id": "8a40c63c-d890-4e71-976b-514c046db11a",
+      "result_id": "d05d484a-8fa3-4dd8-975a-c00ddbed12e3"
+    },
+    {
+      "claim_id": "ce62547f-0e2b-45b9-9193-892405dbdeab",
+      "result_id": "d05d484a-8fa3-4dd8-975a-c00ddbed12e3"
+    },
+    {
+      "claim_id": "c620842f-6b9f-4bde-81f4-9e7ddd8a28dc",
+      "result_id": "d05d484a-8fa3-4dd8-975a-c00ddbed12e3"
+    },
+    {
+      "claim_id": "6fc74c0c-4aa3-4174-b873-0d783ec43947",
+      "result_id": "d05d484a-8fa3-4dd8-975a-c00ddbed12e3"
+    },
+    {
+      "claim_id": "45540125-283d-4ca3-b062-6ad0df2e1de5",
+      "result_id": "d05d484a-8fa3-4dd8-975a-c00ddbed12e3"
+    },
+    {
+      "claim_id": "632e3b4e-b7a3-4229-80b5-bab5f24bbf49",
+      "result_id": "d05d484a-8fa3-4dd8-975a-c00ddbed12e3"
+    },
+    {
+      "claim_id": "b22f6711-b26c-4532-9020-bfa421623b3d",
+      "result_id": "d05d484a-8fa3-4dd8-975a-c00ddbed12e3"
+    },
+    {
+      "claim_id": "36ba47ff-2b88-49e2-9b3a-6e9287a92d2b",
+      "result_id": "d05d484a-8fa3-4dd8-975a-c00ddbed12e3"
+    },
+    {
+      "claim_id": "0c66bde2-2d9a-4292-a7c6-b874ba1b690f",
+      "result_id": "d05d484a-8fa3-4dd8-975a-c00ddbed12e3"
+    },
+    {
+      "claim_id": "737926fa-351d-4f96-b56d-ce643aef07fa",
+      "result_id": "e3ddcf91-36ca-40f6-afc3-145bab84665f"
+    },
+    {
+      "claim_id": "b7b5e35a-02a0-4994-abe2-0b3f3fbac527",
+      "result_id": "e3ddcf91-36ca-40f6-afc3-145bab84665f"
+    },
+    {
+      "claim_id": "a6291f0b-0bbf-4bdf-b629-0e87f2756f4a",
+      "result_id": "e3ddcf91-36ca-40f6-afc3-145bab84665f"
+    },
+    {
+      "claim_id": "f03885de-ad94-4d0f-a5cd-ea3858bae242",
+      "result_id": "e3ddcf91-36ca-40f6-afc3-145bab84665f"
+    },
+    {
+      "claim_id": "66256f44-7c6a-486a-9c5f-2f48f9be7919",
+      "result_id": "e3ddcf91-36ca-40f6-afc3-145bab84665f"
+    },
+    {
+      "claim_id": "c7e2a734-614e-4139-94d9-6cf3f31582d8",
+      "result_id": "cd60164e-1884-4b97-9dad-dbbc5c50e7f0"
+    },
+    {
+      "claim_id": "6ea9d0bb-2b45-448e-ae5f-3e0abcbd1afe",
+      "result_id": "cd60164e-1884-4b97-9dad-dbbc5c50e7f0"
+    },
+    {
+      "claim_id": "6f0ba754-177a-4827-af5f-826d48240aa6",
+      "result_id": "cd60164e-1884-4b97-9dad-dbbc5c50e7f0"
+    },
+    {
+      "claim_id": "4ea526cc-e459-49c2-890d-28a81f89b05c",
+      "result_id": "cd60164e-1884-4b97-9dad-dbbc5c50e7f0"
+    },
+    {
+      "claim_id": "028457ae-2300-42d2-b707-7a1f6312ace7",
+      "result_id": "c11e7ae0-c63e-4da2-974a-7f7b5e7fdff4"
+    },
+    {
+      "claim_id": "2f124320-9af1-4815-a958-ea04b371f48c",
+      "result_id": "c11e7ae0-c63e-4da2-974a-7f7b5e7fdff4"
+    },
+    {
+      "claim_id": "92fe4360-5809-4831-b6e3-935737f496a0",
+      "result_id": "c11e7ae0-c63e-4da2-974a-7f7b5e7fdff4"
+    },
+    {
+      "claim_id": "868f48d6-b3d7-4e6b-9c8d-81cc433eae12",
+      "result_id": "c11e7ae0-c63e-4da2-974a-7f7b5e7fdff4"
+    }
+  ],
+  "comparisons": []
+}

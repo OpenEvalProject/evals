@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "TRIP8bnano, a 40-amino acid peptide (residues 235-275 of TRIP8b), binds to the HCN2 CNBD with a KD of 1.5 \u00b1 0.1 \u00b5M, which is similar to the binding affinity of the longer TRIP8bcore (KD = 1.2 \u00b1 0.1 \u00b5M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are well-supported by ITC measurements shown in Figure 1B. The binding affinities are quantitatively determined with error estimates, and the similarity between TRIP8bnano and TRIP8bcore binding is clearly demonstrated. The experimental approach is appropriate for measuring protein-peptide interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C77",
+      "C78"
+    ],
+    "result": "TRIP8bnano is intrinsically disordered when unbound but folds into two \u03b1-helices (helix N: L238-E250 and helix C: T253-R269) upon binding to the CNBD, with unstructured termini.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28, C77-C78 are supported by NMR spectroscopy data (Figure 1C-D). The comparison of HSQC spectra between bound and unbound states clearly shows folding upon binding. The secondary structure determination from dihedral angles is a standard NMR approach. The inference of intrinsic disorder from limited resonance dispersion is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "TRIP8bnano binding induces folding of the distal C-helix region (residues 657-662) of the CNBD but does not induce P-helix formation, and the CNBD maintains its cAMP-free state conformation overall.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 are supported by NMR analysis (Figure 2) and are consistent with previous structural studies. The finding that TRIP8bnano induces C-helix folding but not P-helix folding is a novel observation that distinguishes TRIP8b binding from cAMP binding. The structural characterization is thorough and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C79"
+    ],
+    "result": "The structural model reveals that TRIP8bnano binds to both the C-helix and N-bundle loop of the CNBD through multiple electrostatic interactions, including key salt bridges (K665/K666-E264/E265, R650-E240/E241) and hydrogen bonds (N547-D252), which are validated by mutagenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C49, C79 are well-supported by the combination of NMR-derived structural modeling (Figure 3) and extensive mutagenesis validation (Figure 3\u2014figure supplement 3). Each predicted interaction was tested by reverse charge or disruptive mutations, and all showed significant reductions in binding affinity. The convergence of structural and functional data provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C81"
+    ],
+    "result": "TRIP8b and cAMP directly compete for binding to the distal region of the C-helix, as residues R662 and K665 face inward when binding cAMP but outward when binding TRIP8b.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42, C81 are supported by structural modeling (Figure 3\u2014figure supplement 4) and are consistent with previous functional studies showing competition. The structural explanation for the competition is logical and provides molecular detail for previously observed functional antagonism. However, this is based on modeling rather than direct experimental observation of both complexes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C84",
+      "C85"
+    ],
+    "result": "The N547D mutation in the N-bundle loop reduces cAMP binding affinity (KD increases from 1.4 to 5.5 \u00b5M) and reduces cAMP-induced voltage shift (from 12 mV to 5 mV), demonstrating that the N-bundle loop allosterically modulates cAMP binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53, C84-C85 are supported by ITC and patch-clamp data (Figure 3\u2014figure supplement 5-6). The N547D mutation affects cAMP binding without directly contacting the cAMP binding pocket, providing strong evidence for allosteric modulation. The NMR control showing proper folding of the mutant rules out structural artifacts. This is an important mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C88"
+    ],
+    "result": "TRIP8bnano fully prevents cAMP-induced voltage shifts in all three HCN isoforms tested: ~13 mV in HCN4, ~11 mV in HCN2, and ~10 mV left shift in HCN1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56, C88 are well-supported by patch-clamp experiments (Figure 4). The data show complete reversal of cAMP effects across multiple HCN isoforms with appropriate controls and statistical analysis. The consistency across isoforms strengthens the conclusion. Sample sizes appear adequate (N\u226511).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "TRIP8bnano affects channel gating only when added intracellularly and prevents other cAMP-mediated effects including acceleration of activation kinetics and increase in maximal current (HCN2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are supported by control experiments and kinetic analysis (Figure 4, Figure 4\u2014figure supplement 2). The extracellular control confirms membrane impermeability. The prevention of kinetic effects and current increase demonstrates comprehensive antagonism of cAMP effects beyond voltage-dependence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "In rabbit SAN myocytes, TRIP8bnano shifts the If activation curve to hyperpolarized voltages, prevents cAMP-dependent potentiation, and reduces spontaneous firing rate by 30%, comparable to physiological acetylcholine effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by patch-clamp and current-clamp experiments in native cardiac cells (Figure 5). The functional effects on native channels and cardiac automaticity demonstrate physiological relevance. The comparison to acetylcholine provides important context, though the cited reference is from 1989 and experimental conditions may differ.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "TAT-TRIP8bnano is cell-permeable, maintains activity, and selectively prevents \u03b2-adrenergic stimulation of If in mouse SAN myocytes without affecting ICa,L, as demonstrated by comparison with scrambled control peptide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76, C90-C93 are well-supported by experiments in mouse SAN myocytes (Figure 6, Figure 6\u2014figure supplement 1). The TAT-fusion strategy is validated by bath application experiments, and selectivity is demonstrated by lack of effect on ICa,L. The scrambled peptide control is critical and shows specificity. Statistical analysis is appropriate with adequate sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The structural model explains why the 37-aa peptide from Lyman et al. (2017) had reduced affinity: it lacks E240, which forms a critical salt bridge with R650 of the CNBD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by the structural model and mutagenesis data showing the importance of E240 (Figure 3C, Figure 3\u2014figure supplement 3). The R650E mutation caused >6-fold reduction in binding. This provides a rational explanation for the previous study's findings, though direct testing of the Lyman peptide would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "TRIP8bnano binding causes the C-helix of CNBD to increase in length, similar to cAMP binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is supported by NMR analysis and is consistent with previous structural studies of cAMP binding. The parallel between TRIP8bnano and cAMP effects on C-helix structure is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "The TAT sequence was linked to the N-terminus of TRIP8bnano to avoid interference with cationic residues in the distal C-helix of CNBD that are crucial for binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is a rational design decision based on the structural model showing that key binding residues (K665, K666) are at the C-terminal end of TRIP8bnano. The success of the TAT-TRIP8bnano construct validates this design choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "TRIP8bnano represents a novel, selective approach to control HCN channel cAMP regulation without affecting basal function or other cAMP-modulated channels, making it a promising therapeutic tool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are supported by the comprehensive functional characterization showing selectivity for HCN over ICa,L and selective antagonism of cAMP effects while preserving basal function. However, C97 regarding therapeutic promise is somewhat speculative as it requires additional in vivo validation, pharmacokinetic studies, and assessment of potential off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C32",
+      "C35",
+      "C62",
+      "C63",
+      "C69",
+      "C82",
+      "C83"
+    ],
+    "result": "Background knowledge claims about HCN channels, TRIP8b, cAMP regulation, and previous studies establish the context for the current work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C22, C32, C35, C62-C63, C69, C82-C83 represent established knowledge from the literature with appropriate citations. These provide necessary background but are not novel findings of this study. The citations appear appropriate and the knowledge claims are consistent with the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "TRIP8bnano recapitulates TRIP8b effects in HCN isoforms and cardiac If, and TAT-TRIP8bnano selectively prevents \u03b2-adrenergic activation of If, representing a novel approach for targeted HCN pharmacology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 summarize the main findings of the study. These are well-supported by the comprehensive experimental data across multiple systems (recombinant channels, native cardiac cells, multiple species). The claim of novelty (C6) is justified by the unique properties of the peptide compared to existing HCN blockers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "The R549E mutation in HCN1 induces a left shift in V1/2 from \u221272.7 to \u221280.4 mV, comparable to TRIP8bnano effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is supported by patch-clamp data (Figure 4\u2014figure supplement 1). This control mutation that prevents cAMP binding produces similar effects to TRIP8bnano, validating the mechanism of action. The comparison strengthens the interpretation of TRIP8bnano effects.",
+    "result_type": "MINOR"
+  }
+]

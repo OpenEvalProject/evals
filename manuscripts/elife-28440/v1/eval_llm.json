@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C67"
+    ],
+    "result": "D. melanogaster and D. virilis are separated by 1.4 substitutions per neutral site, representing a molecular distance approximately 3 times that between human and mouse, with embryogenesis taking approximately 10 hours longer in D. virilis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10, and C67 are all supported by citations to established literature (Stark et al., 2007; Markow et al., 2009) and provide consistent context for the evolutionary distance between the two species studied. These are well-established facts in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The five transcription factors (Twi, Mef2, Tin, Bap, Bin) are major drivers of mesoderm subdivision and form a regulatory cascade where Twi regulates tin, Tin regulates bap, and Bap regulates bin expression. These TFs have conserved roles in mesoderm specification from flies to man.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C63-C66 are supported by multiple citations to prior work and reference to Figure 1a showing the regulatory network. The regulatory relationships and conserved functions are well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Species-specific antibodies were generated for D. virilis proteins (Tin, Twi, Bin, Bap), while the D. melanogaster Mef2 antibody worked equally well for both species. All five antibodies showed highly specific and dynamic expression patterns in D. virilis embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 describe the antibody generation and validation strategy. The specificity is demonstrated through immunostaining (Figure 1\u2014figure supplement 1) and ChIP-qPCR validation, providing strong experimental evidence for antibody quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C20"
+    ],
+    "result": "ChIP-seq was performed in D. virilis across five time windows with two independent biological replicates per condition, yielding 28 datasets with high reproducibility (median Pearson correlation = 0.83). De novo motif discovery identified expected motifs, and 89% of peaks were successfully translated to D. melanogaster coordinates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18, C20 describe the experimental design and data quality metrics. The high correlation values, successful motif discovery, and high translation rate all support the technical quality of the ChIP-seq data. The use of biological replicates and IDR thresholds represents rigorous methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Approximately 2,800 orthologous cis-regulatory elements were identified between species. In D. virilis, 14,385 CRMs were defined, and fewer than half (44%) of D. melanogaster CRMs overlap a D. virilis CRM, with 2,846 in one-to-one orthologous relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C29-C31 describe the CRM identification pipeline. The conservative approach using pslMap for orthology assignment and filtering for one-to-one relationships is methodologically sound. The numbers are explicitly stated and consistent across claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C62"
+    ],
+    "result": "Conservation of TF binding varies by factor and developmental stage. Twi and Tin (higher in the GRN) show ~50-54% conservation, while Bap and Bin (lower in the GRN) show only 19-26% conservation. Mef2 shows stage-dependent conservation, with low early conservation but high conservation at later stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24, C62 are supported by quantitative data in Figure 1d,e and Supplementary file 1. The stage-specific pattern for Mef2 and the hierarchy-dependent conservation pattern are clearly demonstrated in the data. Statistical support is provided for the observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Bap and Bin are essential for visceral muscle specification, with loss-of-function mutants being embryonic lethal. The Bin ortholog FoxF is also essential for gut muscle development in mice and Xenopus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are supported by citations to established literature (Jakobsen et al., 2007; Zaffran et al., 2001; Azpiazu and Frasch, 1993; Ormestad et al., 2006; Tseng et al., 2004). These represent well-established functional data from prior studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C36",
+      "C37"
+    ],
+    "result": "95% of D. melanogaster ChIP-CRMs function as developmental enhancers in vivo. Of the orthologous CRM pairs, 494 (20.3%) have been experimentally tested, and CRMs with strong/intermediate conservation show significantly higher overlap with characterized mesodermal enhancers compared to non-conserved CRMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C36-C37 are supported by citations to multiple prior studies and statistical analysis (two-sided proportions test p=5.3e-05, Figure 2d). The high validation rate (95%) from prior studies provides strong support for the functional relevance of the identified CRMs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C38"
+    ],
+    "result": "Of 2,846 orthologous CRMs, only 14% are bound by a single TF at a single time-point in both species. The remaining 2,442 were categorized by Jaccard index into strong (812), intermediate (1,130), and no conservation (500). Enhancers with conserved binding have higher combinatorial occupancy and stronger sequence conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35, C38 describe the categorization scheme and its validation. The Jaccard index approach is appropriate, and the associations with combinatorial occupancy (Chi-square p=5e-04) and sequence conservation (Figure 2e) provide strong support for the biological relevance of the categories.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Dynamic temporal patterns of TF occupancy (early-only, late-only, continuous) are conserved across species. Motif analysis reveals that motifs enriched in early-bound Twist CRMs (including Zelda and Dorsal) are present in both species, while late-bound enhancers show more motif divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by hierarchical clustering analysis (Figure 3a) and differential motif analysis (Figure 3b). The conservation of temporal patterns and associated motifs is clearly demonstrated. Citations to functional studies (Jiang and Levine, 1993; Y\u00e1\u00f1ez-Cuna et al., 2012) support the biological relevance of identified motifs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Loss of TF binding is associated with significantly lower motif density for that TF (p<1e-7 for all five TFs), with densities dropping to background levels. However, in enhancers with conserved binding, Tin motif density decreases as TF binding complexity increases (10.41 vs 7.96 motifs/kb in singletons vs high-bound, p<5e-7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by quantitative analysis with strong statistical support (Figure 4a). The inverse relationship between motif density and binding complexity for Tin is particularly well-documented and represents a key finding supporting the TF collective model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C4"
+    ],
+    "result": "STAP analysis reveals significantly lower correlation between predicted (\u0394STAP) and observed (\u0394ChIP) TF occupancy in highly-bound CRMs compared to singletons for Tin (p=0.05). In enhancers bound by 4-5 factors, Tin occupies enhancers despite motif divergence, demonstrating conserved TF binding with reduced sequence dependency when combinatorially bound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C48, C4 are supported by STAP modeling (average PCC=0.51, Supplementary file 8) and statistical analysis (Fisher z-transformation, p=0.05). The scatter plots in Figure 4c clearly show the predicted patterns. This represents strong evidence for the TF collective model prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C73"
+    ],
+    "result": "Co-association analysis reveals Tin significantly co-associates with Twi, Bap, and Mef2 in both species. Co-divergence analysis identifies four significant TF pairs (Tin/Bap, Tin/Twi, Tin/Mef2, Bap/Bin). Tin and Bap show bidirectional dependency on 327 CRMs, representing a conserved feed-forward loop, while Mef2-Tin shows unidirectional dependency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54, C73 are supported by systematic co-association analysis (Figure 5a) and co-divergence analysis with strong statistical support (corrected p-values: Tin/Bap=6\u00d710^-11, Tin/Twi=0.007, Tin/Mef2=0.0006). The bidirectional vs unidirectional dependencies are supported by motif loss analysis (Figure 5c). The feed-forward loop interpretation is supported by known regulatory relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Seven orthologous enhancer pairs with medium-to-high TF binding divergence were tested in transgenic assays. Five pairs (71%) showed conserved tissue activity despite extensive TF occupancy divergence (median Jaccard index=0.37). Specific examples show enhancers with complete loss of multiple TF binding events yet conserved activity, indicating divergence in TF binding does not necessarily equate to divergence in enhancer activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 are supported by transgenic reporter assays with clear documentation of selection criteria and results (Figure 6, Supplementary file 10). The specific examples (CRM-3215, CRM-1560) with genome browser tracks and in situ images provide strong evidence. However, the sample size is small (n=7 pairs), and the selection was biased toward high SVM specificity, which may limit generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "The interferon beta enhancer is described as the best studied and perhaps only true enhanceosome. The TF collective model predicts enhancers should tolerate evolutionary changes in TFBS content with little effect on TF occupancy across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 are supported by citations to established literature (Panne et al., 2007; Thanos and Maniatis, 1995; Uhl et al., 2016). These represent background knowledge and theoretical predictions that frame the study's hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Prior cross-species TF binding studies show variable conservation: ~60% for Twist between D. melanogaster and D. pseudoobscura, only 14% for CEBPA between human and mouse. When re-analyzed with a unifying framework, the rate of TF binding evolution is similar between vertebrates and flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 are supported by citations to prior studies (He et al., 2011; Schmidt et al., 2010; Carvunis et al., 2015). These provide important context for interpreting the current study's findings but represent prior work rather than new results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C19",
+      "C68"
+    ],
+    "result": "The larger number of peaks in D. virilis potentially reflects the larger D. virilis non-coding genome (estimated ~50% larger) or higher sensitivity of ChIP-seq versus ChIP-chip.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C19, C68 represent speculative explanations for observed differences. While the genome size estimate is provided, no direct measurement or citation supports the 50% estimate. The ChIP-seq vs ChIP-chip sensitivity difference is plausible but not directly tested. Alternative explanations (e.g., different peak calling thresholds, biological differences) are not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Less than half of human CRMs were found in an orthologous position in another vertebrate species, similar to the Drosophila comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by citation to Ballester et al., 2014 and provides useful comparative context for the 44% overlap observed in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "The strong conservation in orthologous enhancer output despite low conservation in TF binding may reflect stabilizing selection acting to maintain correct spatio-temporal activity of developmental enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C61 represents a speculative interpretation of the transgenic assay results. While the observation of conserved activity despite diverged binding is well-supported, the mechanistic explanation invoking stabilizing selection is not directly tested. Alternative explanations (e.g., redundancy, compensatory mechanisms) are not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "ChIP-chip and ChIP-seq signals for Mef2 are highly correlated (R\u00b2=0.75). STAP models fit the ChIP data well with average PCC=0.51 across 28 datasets, substantially better than the ~0.30 average in previous analyses of 45 datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 provide validation for comparing ChIP-chip and ChIP-seq data and for the STAP modeling approach. The correlation values are explicitly stated and the comparison to prior work (Cheng et al., 2013) provides context for model performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Tin and Bap were previously suggested to bind as a heterodimer to one enhancer in D. melanogaster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is supported by citation to Zaffran and Frasch, 2002 and provides context for interpreting the co-divergence results, though the current study's findings suggest cooperative recruitment rather than heterodimer binding.",
+    "result_type": "MINOR"
+  }
+]

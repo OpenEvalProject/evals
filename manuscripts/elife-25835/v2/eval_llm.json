@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C32",
+      "C33"
+    ],
+    "result": "A workshop on '3D Segmentations and Transformations - Building Bridges between Cellular and Molecular Structural Biology' was held in December 2015, attended by diverse stakeholders, and identified two main priorities: development of tools and file formats for segmentation, and development of tools for biological structure annotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C32-C33 provide consistent documentation of the workshop occurrence, participants, and outcomes. This is a straightforward reporting of an event with clearly stated priorities, supported by the manuscript's direct statements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C56",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "PDBe developed a draft data model (EMDB-SFF) in XSD format that supports segmentation from major packages (Amira, IMOD, Chimera) and structured biological annotation. Workshop participants recommended broadening scope beyond EMDB-internal use, simplifying color model support to RGB only, and considering alternative formats (JSON, HDF5) to address XML verbosity concerns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C62 collectively document the data model development, its features, workshop feedback, and planned improvements. The progression from draft model to community feedback to planned modifications is logically consistent and well-documented. Software developer commitments (C43) add credibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Workshop participants agreed to initially limit annotation complexity to single annotations per segment, incorporate transformation information for sub-tomogram averages, define affine transformation conventions precisely, and support multiple transformations per segment. Non-affine transformations for correlative imaging were recognized as future needs without reaching consensus on implementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C55 document specific technical decisions made at the workshop regarding annotation complexity, transformations, and future extensibility. The decisions show appropriate scoping (limiting initial complexity while acknowledging future needs), and the lack of consensus on non-affine transformations (C52-C53) demonstrates honest reporting of unresolved issues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Post-workshop, PDBe modified the data model based on feedback, established a working group for iterative development, implemented version control, and began developing format translators distributed as open source via CCP-EM. The format and tools were expected to be ready by late 2017, though potentially without all discussed features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 and C108-C110 document concrete actions taken after the workshop. The iterative development approach with community consultation (C63, C109) is appropriate for standards development. The timeline (C110) includes appropriate caveats about feature completeness, showing realistic planning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Structured biological annotation is not common practice in electron microscopy/structural biology communities. Workshop discussions with ontology experts led to clearer appreciation of annotation importance for data integration, but raised concerns about complexity. It was concluded that depositors should perform annotation with curator oversight, contingent on tool development to simplify the process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C77 document the current state of practice, workshop educational activities, and conclusions about annotation workflow. The reasoning for depositor-led annotation (C76) is sound\u2014depositors have domain knowledge while curators have ontology expertise. The recognition that adoption depends on tool development (C74) shows realistic assessment of barriers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Structured biological annotation for electron microscopy will rely on established ontologies (GO, EFO, PRO, CMPO, NCBITaxon, UBERON, Fbbi, FMA, CL) and identifiers from resources (UniProt, Complex Portal). Tools like Zooma and OLS from EMBL-EBI's SPOT team provide APIs that can be leveraged for building segmentation annotation tools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 identify specific ontology resources and tools with appropriate citations. The proposed use of existing APIs (C83) is a reasonable technical approach. However, this is primarily a plan rather than demonstrated implementation, though the resources cited are well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "PDBe presented mock-ups of a web-based Segmentation Annotation Tool (SAT) that would enable structured biological annotation of segmentations and output EMDB-SFF files. Workshop participants supported the concept but raised concerns about data upload size, duplicate annotation effort, term selection difficulty, and hierarchical segmentation. Solutions proposed include desktop version, integration into existing packages (IMOD, Chimera, Amira), and phased development starting with web-based tool. A segmentation annotation working group was established to provide test cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C107 document tool mock-ups and extensive discussion of implementation challenges. While the concerns raised (C90-C93) are valid and the proposed solutions (C95-C98, C101) are reasonable, these remain plans rather than implemented solutions. The mock-ups (referenced in Figure 3) show conceptual design but not functional software. The greatest challenge identified (C104) regarding metadata search functionality is acknowledged but not solved. This represents important planning but lacks demonstrated implementation or validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Wide acceptance of EMDB-SFF by software developers is crucial for success. CCP-EM committed to distributing tools and including them in training. The format scope extends beyond cryo-EM to other imaging modalities (e.g., 3D-SEM) and length scales, though this will require expanding ontologies and additional work on transformation models for correlative techniques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C117 address adoption strategy and extensibility. The CCP-EM commitment (C113) provides concrete support for dissemination. The recognition of broader applicability (C114-C115) with acknowledgment of required additional work (C116-C117) shows appropriate scoping. However, actual adoption and extension remain future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The workshop identified significant language barriers between fields as obstacles to progress. Overcoming these barriers and developing annotation tools are prerequisites for integrating cellular and molecular structural data. The workshop defined concrete actionable outcomes that will enable 'problem-centric views' of data and make structural data more accessible to broader biological and medical communities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C123 provide overall assessment of workshop significance and anticipated impact. The identification of language barriers (C118) is an important observation. The characterization of the workshop as defining 'concrete actionable outcomes' (C121) is supported by the documented decisions and plans. However, the anticipated benefits (C122-C123) remain prospective rather than demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Integration of cellular and molecular structural data across length scales and techniques (electron tomography, EM, NMR, X-ray crystallography) is key to understanding macromolecular function in vivo. Current integration between PDB and EMDB relies on atomic models fitted to volume maps, which works routinely for purified molecules and enables linking to bioinformatics resources like UniProt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C11 establish the scientific context and current state of data integration. These are well-established principles in structural biology supported by citations to major databases (EMDB, EMPIAR, PDB, UniProt). The description of current integration methods (C9-C10) reflects standard practice in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Atomic models are not always available due to resolution limitations in complex/cellular environments or failed molecular averaging. In such cases, feature identification relies on prior knowledge or multi-scale data correlation, and segmentation facilitates interpretation. Examples include Plasmodium falciparum-infected erythrocytes (soft X-ray tomography), Lassa virus glycoprotein spike organization (sub-tomogram averaging), and viral membrane protein clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C23 describe limitations of current methods and provide cited examples (Hale et al. 2017, Li et al. 2016, Maurer et al. 2013) with figure references. The examples appropriately illustrate the utility of segmentation and sub-tomogram averaging in cellular contexts. The cited studies provide evidence for the described approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Previous workshops (2011, 2012) identified archiving segmentation data and improving biological annotation as urgent needs. Structured biological annotation (defined as association with identifiers and ontologies from established resources) is not currently supported by widely-used segmentation formats. EMDB does not capture spatial transformations between sub-tomograms and parent tomograms, and format plurality hinders non-expert usage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 document prior identification of needs (with citations to Patwardhan et al. 2012, 2014), define key terminology (C28), and describe current limitations. The statement that no segmentation formats support structured annotation (C29) is qualified as 'to our knowledge,' appropriately acknowledging potential limitations in the authors' survey. The identified gaps (C30-C31) provide clear motivation for the workshop.",
+    "result_type": "MINOR"
+  }
+]

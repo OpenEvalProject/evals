@@ -1,0 +1,1546 @@
+{
+  "submission": {
+    "id": "4cc3df5b-9208-452e-a58f-97a9e2238e50",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:25:47.895793Z",
+    "updated_at": "2025-12-01T19:25:47.895793Z"
+  },
+  "content": [
+    {
+      "id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "submission_id": "4cc3df5b-9208-452e-a58f-97a9e2238e50",
+      "content_type": "manuscript",
+      "content_text": "# Loss of adult skeletal muscle stem cells drives age-related neuromuscular junction degeneration\n\n## Authors\n\n- Wenxuan Liu<sup>1</sup>\n- Alanna Klose<sup>1</sup>\n- Sophie Forman<sup>3</sup>\n- Nicole D Paris<sup>1</sup> ([ORCID: 0000-0003-0654-0983](https://orcid.org/0000-0003-0654-0983))\n- Lan Wei-LaPierre<sup>4</sup>\n- Mariela Cort\u00e9s-Lop\u00e9z<sup>5</sup>\n- Aidi Tan<sup>6</sup>\n- Morgan Flaherty<sup>2</sup>\n- Pedro Miura<sup>5</sup>\n- Robert T Dirksen<sup>4</sup>\n- Joe V Chakkalakal<sup>1</sup> ([ORCID: 0000-0002-8440-7312](https://orcid.org/0000-0002-8440-7312)) \u2020\n\n### Affiliations\n\n1. Department of Orthopaedics and Rehabilitation Center for Musculoskeletal Research, University of Rochester Medical Center Rochester United States\n2. Department of Biomedical Genetics University of Rochester Medical Center Rochester United States\n3. Department of Biology University of Rochester Rochester United States\n4. Department of Pharmacology and Physiology University of Rochester Medical Center Rochester United States\n5. Department of Biology University of Nevada Reno United States\n6. Bioinformatics Division and Center for Synthetic and Systems Biology Tsinghua University Beijing China\n7. TNLIST/Department of Automation Tsinghua University Beijing China\n8. Stem Cell and Regenerative Medicine Institute University of Rochester Medical Center Rochester United States\n9. The Rochester Aging Research Center University of Rochester Medical Center Rochester United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nNeuromuscular junction degeneration is a prominent aspect of sarcopenia, the age-associated loss of skeletal muscle integrity. Previously, we showed that muscle stem cells activate and contribute to mouse neuromuscular junction regeneration in response to denervation (Liu et al., 2015). Here, we examined gene expression profiles and neuromuscular junction integrity in aged mouse muscles, and unexpectedly found limited denervation despite a high level of degenerated neuromuscular junctions. Instead, degenerated neuromuscular junctions were associated with reduced contribution from muscle stem cells. Indeed, muscle stem cell depletion was sufficient to induce neuromuscular junction degeneration at a younger age. Conversely, prevention of muscle stem cell and derived myonuclei loss was associated with attenuation of age-related neuromuscular junction degeneration, muscle atrophy, and the promotion of aged muscle force generation. Our observations demonstrate that deficiencies in muscle stem cell fate and post-synaptic myogenesis provide a cellular basis for age-related neuromuscular junction degeneration and associated skeletal muscle decline.\n\n## Introduction\n\nAge-related neuromuscular junction (NMJ, synapse between motor neuron and skeletal muscle cells) declines in rodents and humans manifest as altered pre-synaptic nerve terminal and abnormal post-synaptic morphology indicative of degeneration (Gonzalez-Freire et al., 2014; Oda, 1984; Wokke et al., 1990). Although these disruptions are often associated with skeletal muscle dysfunction and disease, whether age-associated NMJ remodeling primarily reflects deterioration of target muscle cells or the peripheral nervous system is unknown (Kang and Lichtman, 2013; Banker et al., 1983; Li et al., 2011).\n\nIt is well established that adult skeletal muscle possesses a remarkable capacity for regeneration endowed by a population of adult resident stem cells, satellite cells (SCs) (Relaix and Zammit, 2012). Through depletion studies, SCs, identified by the expression of the paired box transcription factor Pax7, are deemed to be the principal source of myonuclei for myofiber regeneration and repair (Liu et al., 2015; Relaix and Zammit, 2012). In our previous study, we examined SC fate during NMJ denervation and reinnervation, and found that SCs contribute to NMJ regeneration (Liu et al., 2015). Recently contributions of SCs and derived progenitors to myofibers have been observed during sedentary aging (Keefe et al., 2015). Extensive studies have shown that SC number and function decline with age; however, whether this loss is connected to age-associated NMJ degeneration is unknown (Chakkalakal et al., 2012; Sousa-Victor et al., 2015). Specifically, whether SCs contribute to the maintenance of aging NMJs, and if age-related SC loss primarily drives NMJ deterioration has not been tested.\n\nIn this study, we test to what extent age-related NMJ deterioration is connected to loss of SCs using fate tracking, depletion, and rescue strategies. Our results reveal that loss of SC-derived contribution to post-synaptic myofiber maintenance, as opposed to denervation, is more closely associated with age-related NMJ deterioration and skeletal muscle atrophy.\n\n## Results\n\n### Complete denervation is not a prominent feature of aged skeletal muscles\n\nAging is associated with an increased proportion of NMJs that display degenerated pre/post-synaptic morphologies in both tibialis anterior (TA) and diaphragm muscles (Figure 1A\u2013E) (Gonzalez-Freire et al., 2014; Valdez et al., 2010, 2012). Although we observed a high proportion of degenerated NMJs in aged muscles, very few were completely denervated (Figure 1B and D). To further examine the extent to which aged skeletal muscles are denervated we performed genome-wide RNA-seq analysis on synaptic (Syn) and extra-synaptic (ExS) regions of adult (6-month-old) and aged (24-month-old) diaphragms (Figure 1F). To confirm the fidelity of our samples, we conducted gene set enrichment analysis (GSEA) between 6M-Syn and 6M-ExS samples using gene sets derived from the Gene Ontology Molecular Function (GOMF). As expected, gene sets associated with acetylcholine receptor (AChR) activity and neurotransmission were highly enriched in 6M-Syn samples (Figure 1\u2014figure supplement 1A and B) (Chakkalakal and Jasmin, 2003; Merlie and Sanes, 1985; Hippenmeyer et al., 2007; Kishi et al., 2005). Subsequently in aged muscles we examined the expression levels of synaptic genes, which are elevated in a model of complete denervation and reinnervation leading to degenerated NMJ morphology (Figure 1\u2014figure supplement 2) (Liu et al., 2015; Kishi et al., 2005; Adams et al., 1995; Lin et al., 2001). Although we observed previously described alterations in mitochondrial metabolism and atrophy-related genes in 24M-ExS and 24M-Syn samples, consistent with low levels of complete denervation we did not observe elevation or extra-synaptic induction of synaptic gene expression (Figure 1G, Figure 1\u2014figure supplement 1C\u2013H) (Hippenmeyer et al., 2007; Kishi et al., 2005; Ibebunjo et al., 2013). However, comparison of 6M-Syn and 24M-Syn samples revealed age-related declines in synapse-specific gene expression, indicating a possible loss of post-synaptic myonuclei, the source of synapse-specific mRNAs at NMJs (Figure 1G, Figure 1\u2014figure supplement 1C\u2013H).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/26464/elife-26464-fig1-v2.jpg)\n\n**Figure 1.:** (A) Confocal IF images and 3-D Amira-based reconstructions (viewed from the pre-synaptic side) of adult (6M) and aged (24M) C57BL6/J NMJs stained for post-synaptic AChRs (\u03b1-bungarotoxin, BTX; green), nerve terminal markers (SV2, Syt-2, neurofilament; red) and nuclei (DAPI, blue). Scale bar\u00a0=\u00a010 \u03bcm. (B) Quantification of pre-synaptic degenerated NMJs, where pre-synaptic nerve terminals are still present but partially missing (partially innervated, PI), or fully devoid (completely denervated, Den), in adult and aged Tibialis Anterior (TA) muscles. (C) Quantification of post-synaptic degenerated NMJs, where the AChR-enriched area loses the elaborate branch morphology, in adult and aged TA muscles. (D\u2013E) Quantification of (D) pre-synaptic degenerated or (E) post-synaptic degenerated NMJ percentage in adult and aged diaphragms. (F) Schematic of a diaphragm demonstrating the central NMJ clusters in diaphragm. Red lines indicate nerve terminals; inset is a representative image of a diaphragm stained with BTX (shown in green). Scale bar\u00a0=\u00a0200 \u03bcm. (G) Heat map of FPKM values from adult and aged synaptic (Syn) and extra-synaptic (ExS) diaphragms. Red indicates increased expression, and blue indicates decreased expression. n\u00a0=\u00a04 mice per group,\u00a0>20 NMJs/mouse (B\u2013C); n\u00a0=\u00a03 mice per group, 20 NMJs/mouse (D\u2013E); n\u00a0=\u00a02 (adult) or 3 (aged) mice (G). *p<0.05 compared to adult, unpaired Student\u2019s t-tests.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26464/elife-26464-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Top 19 gene sets enriched in adult synaptic diaphragms from gene set enrichment analysis (GSEA) between adult synaptic (6M-Syn) and extra-synaptic (6M-ExS) samples using gene sets derived from the Gene Ontology Molecular Function (GOMF), arranged based on normalized enrichment score (NES). (B) Enrichment results from (A) were visualized using the Cytoscape plug-in enrichment map. Each node represents a gene set, and the thickness of lines connecting two nodes represents the number of shared genes between the two gene sets. (C\u2013H) RT-qPCR results of select NMJ-specific genes verified the trend of decreased enrichment of these genes with age. *p<0.05 compared to adult, unpaired Student\u2019s t-tests. n\u00a0=\u00a03 mice per group (C\u2013H).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26464/elife-26464-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Heat map of FPKM values from uninjured adult (6M-Ctrl) and aged (24M-Ctrl) gastrocnemius and adult gastrocnemius after 6 weeks of denervation-reinnervation upon a 2 mm sciatic nerve transection surgery (6M-nc). Red indicates increased expression, and blue indicates decreased expression. The data represent pooled replicates of 6M-Ctrl (n\u00a0=\u00a03), 24M-Ctrl (n\u00a0=\u00a02) and 6M-nc (n\u00a0=\u00a03) mice.\n\nAlthough other non-myogenic cell types such as Schwann cells are present at NMJs on nerve terminals, they are completely segregated from the myofiber by an extensive basal lamina network. Myonuclei clustered beneath the post-synaptic membrane of the NMJ within the myofiber are transcriptionally distinct from adjacent myonuclei and specialized for the expression of genes critical for NMJ function (Chakkalakal and Jasmin, 2003; Schaeffer et al., 2001). Reduction in the size of post-synaptic myonuclear clusters is associated with impaired NMJ development, ineffective regeneration after nerve insult, and neuromuscular diseases (Liu et al., 2015; Zhang et al., 2007; M\u00e9jat et al., 2009). The size of NMJs, based on post-synaptic apparatus volume and cumulative AChR intensity, positively correlated with the size of post-synaptic myonuclear clusters (Figure 2A and B, Figure 2\u2014figure supplement 1). Notably, the majority of degenerated NMJs had few post-synaptic myonuclei (Figure 2C). We observed that the fraction of aged NMJ post-synaptic myonuclear clusters with greater than 4 myonuclei, in comparison to adult, was significantly lower (Figure 2D\u2013F). Therefore, loss of post-synaptic myonuclei is a predominant feature of aged degenerated NMJs.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/26464/elife-26464-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013B) Linear regression analysis demonstrates positive correlation between (A) NMJ volume or (B) AChR cumulative intensity (both quantified by Amira using confocal-fluorescent images of individual NMJs) and the post-synaptic myonuclear number. (C) Percentage of pre/post-synaptic degenerated or intact NMJs in groups with different size of post-synaptic myonuclear cluster. (D) 3-D Amira-based reconstructions (viewed from the post-synaptic side) of adult and aged C57BL6/J NMJs stained for post-synaptic AChRs (green), nerve terminal markers (red) and nuclei (blue). Post-synaptic myonuclei are indicated with white asterisks and pre-synaptic nuclei with yellow asterisks. (E) Percentage distribution of NMJs based on number of post-synaptic myonuclei in TA and diaphragm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26464/elife-26464-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) NMJ volume and (B) AChR cumulative intensity positively associates with number of post-synaptic myonuclei. *p<0.05 compared to 0\u20132 group, one-way ANOVA/Tukey multiple comparison test. n\u00a0=\u00a023 NMJs.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26464/elife-26464-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Representative FACS plots of cells isolated from 6/12/18/24-month-old C57BL6/J synaptic and extra-synaptic diaphragms. Red boxes represent the gate for the SC population. (B) Quantification of FACS-purified SC percentage of total events from synaptic (Syn) and extra-synaptic (ExS) regions of diaphragms. *p<0.05 compared to 6M/12M groups, two-way ANOVA/Sidak multiple comparison test. (C) Representative images of FACs-sorted SC cultures stained for Pax7 (red), Myosin (green), and DAPI (blue). Scale bar\u00a0=\u00a0100 \u03bcm. n\u00a0=\u00a03 (24M-ExS, 24M-Syn); 4 (6M-ExS, 6M-Syn, 12M-ExS, 12M-Syn) or 7 (18M-ExS, 18M-Syn) mice (B).\n\n### SCs contribute to adult and middle-aged, but not aged NMJs\n\nGiven that the size of post-synaptic myonuclear clusters is reduced with age and aging is associated with loss of SCs, the principal source of myonuclei for skeletal muscle regeneration (Sousa-Victor et al., 2015), we examined whether SCs are preferentially lost with age from Syn or ExS regions. To assess SC number with regard to their location relative to NMJs, we performed previously characterized flow cytometric analysis to prospectively isolate Syn and ExS SCs (CD31-/CD45-/Sca1-/ITGA7+/VCAM+) from 6, 12, 18 and 24-month-old C57BL/6J mice (Chakkalakal et al., 2012; Maesner et al., 2016). Regardless of their source (Syn vs ExS regions), SC frequency significantly declined at 18 and 24 months (Figure 2\u2014figure supplement 2A and B). In vitro fate analysis of sorted Syn and ExS SCs confirmed their purity and capacity for myogenic differentiation (Figure 2\u2014figure supplement 2C).\n\nTo examine SC and derived progenitor contribution to aging NMJs, we utilized a Pax7CreER/+; Rosa26mTmG/+ (P7mTmG) transgenic mouse line. The P7mTmG mouse ubiquitously expresses a loxP-flanked membrane tomato, red fluorescent reporter that undergoes tamoxifen-mediated excision to indelibly label Pax7+ SCs and derived cells with membrane GFP (Liu et al., 2015; Keefe et al., 2015). To examine SC-derived contribution at distinct ages, tamoxifen was administered at 6, 12, 18 and 24 months of age (Figure 3A). Single myofibers were isolated from P7mTmG extensor digitorum longus (EDL) muscles 6 weeks after tamoxifen administration, a relatively short time frame (Keefe et al., 2015), and processed for GFP and NMJ detection. At 6 and 12 months we found GFP-labeled SC derived contribution at myofiber ends where sarcomere addition can occur (Williams and Goldspink, 1971; Zhang and McLennan, 1995; Wang et al., 2010), and/or middle portions of myofibers where NMJs are located (Liu et al., 2015) (Figure 3A,B and D). To determine if NMJ-associated mGFP labeling comprised SC-derived contribution to post-synaptic myonuclei we utilized a Pax7CreER/+; Rosa26nTnG/+ (P7nTnG) transgenic mouse line. The P7nTnG mouse ubiquitously expresses a loxP-flanked nuclear Td-tomato, red fluorescent reporter that undergoes tamoxifen-mediated excision to indelibly label Pax7+ SCs and derived cells with nuclear GFP (Prigge et al., 2013). Immediately after tamoxifen administration to 4.5-month-old P7nTnG mice only Pax7+ SCs were GFP-labeled (Figure 3\u2014figure supplement 1A\u2013C). Consistent with SCs as a cellular source, 6 weeks after tamoxifen administration GFP-labeled post-synaptic myonuclei were observed at NMJs (Figure 3\u2014figure supplement 1D\u2013E). In accordance with the timing of SC loss during aging (Sousa-Victor et al., 2015) and a potential role for SCs in the lifelong maintenance of NMJs, we observed a pronounced decline in GFP-labeled SC-derived contribution in the vicinity of NMJs in 18 and 24-month-old mice (Figure 3B\u2013D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/26464/elife-26464-fig3-v2.jpg)\n\n**Figure 3.:** (A) Scheme demonstrating time of tamoxifen treatment and harvest of tissue for P7mTmG mice. (B\u2013C) Representative images of single isolated P7mTmG EDL myofibers from (B) 12-month-old mice, where mGFP is in middle portions where the NMJ is located or (C) 18-month-old mice, where mGFP is located at the end of the fiber. Magnified inset images show NMJs. Scale bar for myofibers\u00a0=\u00a0200 \u03bcm, for inset\u00a0=\u00a025 \u03bcm. (D) Quantification of mGFP+ fiber percentage and distribution based on mGFP location (at the end of the fiber or in the vicinity of the NMJ). *p<0.05 for NMJ-associated mGFP compared to 6M/12M groups, #p<0.05 for mGFP at the end compared to NMJ-associated mGFP at that age group, two-way ANOVA/Sidak multiple comparison test. (E) Scheme demonstrating time of tamoxifen treatment and harvest of tissue for Ctrl or P7DTA mice. (F) Confocal IF images and 3-D Amira-based reconstructions (viewed from the pre-synaptic or post-synaptic side) of Ctrl and P7DTA NMJs stained for post-synaptic AChRs (green), nerve terminal markers (red) and nuclei (blue). Post-synaptic myonuclei are indicated with white asterisks, and representative pre-synaptic nuclei indicated with yellow asterisks. Scale bar\u00a0=\u00a010 \u03bcm. (G\u2013H) Quantification of (G) pre-synaptic degenerated, including partially innervated (PI) or completely denervated (Den), or (H) post-synaptic degenerated NMJ percentage of Ctrl and P7DTA TA muscles. *p<0.05, 6M Ctrl/P7DTA, 12M Ctrl vs. 12M P7DTA, 18/24M Ctrl/P7DTA, two-way ANOVA/Sidak multiple comparison test. (I) Percentage distribution of TA NMJs based on number of post-synaptic myonuclei. *p<0.05, 6M Ctrl/P7DTA vs. 12M/18M P7DTA, 24M Ctrl/P7DTA; #p<0.05, 6M Ctrl/P7DTA, 12M Ctrl vs. 12M/18M P7DTA, 24M Ctrl/P7DTA; two-way ANOVA/Sidak multiple comparison test. n\u00a0=\u00a03 mice per group,\u00a0\u226550 myofibers examined per mouse (D); n\u00a0=\u00a03 (18M Ctrl, 24M Ctrl, 24M P7DTA); 4 (6M Ctrl, 6M P7DTA, 18M P7DTA) or 5 (12M Ctrl, 12M P7DTA) mice,\u00a0>20 NMJs/mouse (G\u2013I).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26464/elife-26464-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013C) Representative images of adult P7nTnG EDL single myofibers, taken 24 hr after 5 days of Tamoxifen treatment (A), stained for AChRs (B) or Pax7 (C). Magnified inset images show (B) the NMJ with nuclear tomato-labeled post-synaptic myonuclei and (C) nuclear GFP-labeled SCs. Scale bar for myofibers\u00a0=\u00a0200 \u03bcm, for inset\u00a0=\u00a025 \u03bcm. (D) Scheme demonstrating time of tamoxifen treatment and harvest of tissue for adult P7nTnG mice. Images of Ctrl and P7mTmG TA muscle sections, note the lack of GFP + myofibers. (E) Representative images of a NMJ with nuclear GFP-labeled post-synaptic myonuclei from a 6-month-old P7nTnG EDL myofiber. Scale bars\u00a0=\u00a025 \u03bcm.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26464/elife-26464-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Representative 6/24-month-old Ctrl and P7DTA TA transverse sections stained with Pax7 (SCs, red arrows), DAPI (blue) and Laminin (green). Scale bar\u00a0=\u00a0100 \u03bcm. (B) Quantification of Pax7+ SC number in Ctrl and P7DTA TA muscles. *p<0.05 compared to Ctrl group of the same age, unpaired Student\u2019s t-tests. n\u00a0=\u00a03 (18M Ctrl, 18M P7DTA, 24M P7DTA); 4 (6M Ctrl, 6M P7DTA, 12M P7DTA, 24M Ctrl) or 5 (12M Ctrl) mice.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26464/elife-26464-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Same dataset as Figure 3G\u2013I, but focused on the comparison between 6 and 12-month-old Ctrl NMJs. Quantification of (A) pre-synaptic partially innervated NMJ percentage or (B) post-synaptic degenerated NMJ percentage or (C) percentage of NMJs with 0\u20132 post-synaptic myonuclei from 6/12-month-old Ctrl TA muscles. *p<0.05, Student\u2019s t test.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/26464/elife-26464-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Representative FACS plots of cells isolated from 12-month-old Ctrl and P7DTA synaptic and extra-synaptic diaphragms. Red boxes represent the gate for the SC population. (B) Quantification of FACS-purified SC percentage of total events relative to Ctrl samples demonstrates SC depletion efficiency in the diaphragm. (C) Percentage distribution of diaphragm NMJs based on number of post-synaptic myonuclei. *p<0.05 compared to Ctrl, unpaired Student\u2019s t-tests. n\u00a0=\u00a03 (Ctrl) or 5 (P7DTA) mice (B); n\u00a0=\u00a03 mice per group, 20 NMJs/mouse (C).\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/26464/elife-26464-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (A) Representative images of Ctrl and P7DTA TA/EDL muscles showing MyHC type IIA (red), IIB (green) and IIX (black) myofibers and Laminin IF stain (white). Scale bar\u00a0=\u00a0100 \u03bcm. (B) Quantification of myofiber type composition in Ctrl and P7DTA TA/EDL muscles. *p<0.05, 6M Ctrl/P7DTA vs. 12M/18M/24M Ctrl/P7DTA; #p<0.05, 6M Ctrl/P7DTA, 12M Ctrl vs. 18M/24M Ctrl/P7DTA; two-way ANOVA/Sidak multiple comparison test. (C) Representative images of fixed 12-month-old Ctrl and P7DTA EDL single myofibers stained with DAPI; dashed lines show the outline of the myofiber segments. Scale bar\u00a0=\u00a0100 \u03bcm. (D) Quantification of myofiber cross-sectional area (CSA) in fixed 12-month-old Ctrl and P7DTA EDL muscles. *p<0.05 compared to Ctrl, unpaired Student\u2019s t-tests. n\u00a0=\u00a03 (24M Ctrl); 4 (6M P7DTA, 12M Ctrl, 12M P7DTA, 18M P7DTA, 24M P7DTA) or 5 (6M Ctrl, 18M Ctrl) mice (B); n\u00a0=\u00a04 muscles per group (D).\n\n### SC depletion accelerates the onset of age-associated NMJ degeneration\n\nTo test whether SC contribution is required for the maintenance of NMJs in aging mice, we employed previously characterized Pax7CreER/+; Rosa26DTA/+ (P7DTA) and Pax7+/+; Rosa26DTA/+ (Ctrl) mice (Liu et al., 2015). These mice enable tamoxifen-mediated expression of diphtheria toxin-A (DTA) to deplete Pax7+ SCs, which is sufficient to prevent skeletal muscle regeneration (Relaix and Zammit, 2012; Murphy et al., 2011). We observed persistent depletion of Pax7+ SCs when tamoxifen was administered at 3 months, determined by Pax7 immunofluorescence analysis (Figure 3E, Figure 3\u2014figure supplement 2). We identified an increased proportion of pre/post-synaptic degenerated NMJs in Ctrl skeletal muscles at 18 and 24 months (Figure 3F\u2013H) (Valdez et al., 2010). Examination of P7DTA NMJs revealed induction of degenerated NMJs at 12 months, indicating that SC depletion markedly accelerated sarcopenia-related NMJ deterioration (Figure 3F\u2013H). Prior to significant induction of partial innervation, a significant increase in the proportion of NMJs with 0\u20132 post-synaptic myonuclei was observed at 12 months compared to 6 month-old muscles (Figure 3\u2014figure supplement 3). Indeed, the exacerbated deterioration of NMJs at 12 months, as a result of SC depletion, was also associated with a further decline in the size of post-synaptic myonuclear clusters (Figure 3F and I, Figure 3\u2014figure supplement 4C).\n\nGiven that SC depletion accelerates the onset of age-related NMJ deterioration, and NMJ disruption is associated with myofiber decline, we examined the effects of SC depletion on age-related myofiber type transition and atrophy. Although we observed a reduction in the proportion of fast type IIX myofibers with age, the onset or severity of this phenotype was not altered upon SC depletion (Figure 3\u2014figure supplement 5A and B). The examination of single myofibers isolated from EDLs, fixed prior to dissection, revealed significant reduction in cross-sectional area of myofibers upon SC depletion at 12 months (Figure 3\u2014figure supplement 5C and D). Collectively, these data demonstrate that SC depletion is sufficient to induce early onset of sarcopenia phenotypes, specifically NMJ deterioration and myofiber atrophy without evidence of gross denervation.\n\n### Aged NMJ and skeletal muscle integrity is improved upon Spry1 overexpression in SCs\n\nThe suppression of Spry1, a downstream target and negative-feedback modulator of receptor tyrosine kinase (RTK) /fibroblast growth factor (FGF) signaling (Kim and Bar-Sagi, 2004), has been linked to SC pool loss in aged muscles (Chakkalakal et al., 2012; Bigot et al., 2015). Moreover, the forced expression of Spry1 in SCs attenuates age-associated SC decline (Chakkalakal et al., 2012; Bigot et al., 2015). To examine whether attenuation of age-associated NMJ deterioration and skeletal muscle declines can be associated with preservation of the SC pool, we utilized Pax7CreER/+; CAGSpry1/+ (Spry1OX) mice, which enable SC-specific Spry1 overexpression, and Pax7+/+; CAGSpry1/+ (Ctrl) mice (Chakkalakal et al., 2012; Yang et al., 2008). Flow cytometric analysis confirmed that aged muscles from Spry1OX mice with tamoxifen administered at 12 months had significantly more SCs (Figure 4A, Figure 4\u2014figure supplement 1) (Chakkalakal et al., 2012). Examination of NMJ integrity revealed that age-related NMJ deterioration was attenuated in Spry1OX muscles, demonstrated by a reduction in the proportion of pre/post-synaptic degenerated NMJs (Figure 4B\u2013D). Also, an increase in the size of post-synaptic myonuclear clusters was observed in aged Spry1OX mice (Figure 4B and E). Since we observed improvements in NMJ integrity and robust increases in the size of post-synaptic myonuclear clusters, we wondered if these findings were associated with improvements in skeletal muscle function. Therefore, we analyzed time or distance to exhaustion with treadmill exercise as an initial readout of muscle performance. Aged Spry1OX mice ran a significantly longer time/distance than Ctrl mice (Figure 4F and G). Next, we specifically examined skeletal muscle function through testing EDL ex vivo tetanic force generation capacity. Significant increases were detected in peak absolute force generated by aged Spry1OX muscles in comparison to Ctrl muscles upon stimulation at frequencies of 100, 125 and 150 Hz (Figure 4H, Figure 4\u2014figure supplement 2A and B). However, no significant difference was observed when force was normalized to physiological cross-sectional area (specific force), which accounts for modifications in muscle girth (Figure 4\u2014figure supplement 2C). Indeed, we observed increased EDL myofiber cross-sectional area without significant changes in myofiber type composition or number in aged Spry1OX mice (Figure 4\u2014figure supplement 2D\u2013F). Therefore, preventing age-related SC loss, through stimulation of Spry1 expression in SCs without direct peripheral nerve manipulation, was associated with the prevention of post-synaptic myonuclear loss, myofiber atrophy, and force generation capacity decline in aged skeletal muscles.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/26464/elife-26464-fig4-v2.jpg)\n\n**Figure 4.:** (A) Scheme demonstrating time of tamoxifen treatment and harvest of tissue for Ctrl or Spry1OX mice. (B) Confocal IF images and 3-D Amira-based reconstructions (viewed from the pre-synaptic or post-synaptic side) of aged Ctrl and Spry1OX NMJs stained for post-synaptic AChRs (green), nerve terminal markers (red) and nuclei (blue). Post-synaptic myonuclei are indicated with white asterisks. Scale bar\u00a0=\u00a010 \u03bcm. (C\u2013D) Quantification of (C) pre-synaptic degenerated, including partially innervated (PI) or completely denervated (Den), or (D) post-synaptic degenerated NMJ percentage of aged Ctrl and Spry1OX TA muscles. (E) Percentage distribution of TA NMJs based on number of post-synaptic myonuclei. (F\u2013G) Treadmill performance of aged Ctrl and Spry1OX mice, measured as (F) exhaustion time and (G) exhaustion distance. (H) Peak absolute force generated by aged Ctrl and Spry1OX EDL muscles stimulated at different frequencies ex vivo. *p<0.05 compared to corresponding Ctrl, unpaired Student\u2019s t-test. n\u00a0=\u00a04 mice per group,\u00a0>20 NMJs/mouse (C\u2013E); n\u00a0=\u00a03 (Ctrl) or 5 (Spry1OX) mice (F\u2013G); n\u00a0=\u00a04 (Ctrl) or 6 (Spry1OX) mice (H).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26464/elife-26464-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Representative FACS plots of cells isolated from 24-month-old Ctrl and Spry1OX synaptic and extra-synaptic diaphragms. Red boxes represent the gate for the SC population. (B) Quantification of FACS-purified SC percentage of total events from synaptic and extra-synaptic diaphragms. *p<0.05 compared to Ctrl group, two-factor ANOVA/Sidak multiple comparison test. n\u00a0=\u00a03 (Spry1OX) or 4 (Ctrl) mice.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26464/elife-26464-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Representative traces for absolute force from ex vivo muscle force generation measurements in 12-month-old (tamoxifen treated at 6 months) and aged Ctrl and Spry1OX EDL muscles upon stimulation at 150 Hz for 500 ms. (B) Same graph as shown in Figure 4H, but superimposed by peak absolute force generated by 12-month-old Ctrl and Spry1OX EDL muscles stimulated at different frequencies ex vivo. *p<0.05 compared to 12M groups and 24M Ctrl group, two-way ANOVA/Sidak multiple comparison test. (C) Peak specific force generated by 12-month-old and aged Ctrl and Spry1OX EDL muscles stimulated at different frequencies ex vivo. (D) Quantification of myofiber type composition in Ctrl and Spry1OX TA/EDL muscles. (E) Quantification of EDL myofiber number from aged Ctrl and Spry1OX mice. (F) Quantification of myofiber CSA in fixed Ctrl and Spry1OX EDL muscles. *p<0.05 compared to Ctrl, unpaired Student\u2019s t-test. n\u00a0=\u00a04 (Ctrl) or 6 (Spry1OX) mice (B\u2013C); n\u00a0=\u00a06 (Ctrl) or 9 (Spry1OX) mice (D); n\u00a0=\u00a04 muscles per group (E\u2013F).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26464/elife-26464-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** NMJs deteriorate with age, demonstrated by reduced nerve terminal area and loss of post-synaptic complexity. Age-associated SC loss compromises SC-derived contribution to the post-synaptic myonuclei and is connected to age-related NMJ deterioration. SC depletion is sufficient to induce NMJ degeneration at a younger age. Conversely, Spry1OX attenuates aged related SC loss and NMJ degeneration.\n\n## Discussion\n\nIn this report, we find marginal denervation in aged skeletal muscles, and that loss of SC contribution drives age-related NMJ degeneration. Specifically, SCs are a source of post-synaptic myonuclei. With age SC-derived contribution of myonuclei to the post-synaptic region is compromised, which accordingly links to age-related NMJ degeneration. Remarkably, SC depletion was sufficient to accelerate the onset of sarcopenia-related declines in post-synaptic myonuclei, NMJ integrity, and myofiber size. In contrast, attenuating SC loss during aging through SC-specific Spry1 overexpression was associated with improved NMJ integrity and force generation capacity in aged muscles (Figure 4\u2014figure supplement 3).\n\nIntuitively, denervation is considered to be a mechanism that contributes to age-related skeletal muscle decline (Gonzalez-Freire et al., 2014). Although denervation is sufficient to trigger extensive skeletal muscle atrophy and dysfunction, the proportion of completely denervated aged NMJs is modest (Figure 1B and D) (Liu et al., 2015; Oda, 1984; Wokke et al., 1990; Banker et al., 1983). Denervation with subsequent reinnervation can lead to degenerated NMJ morphology. For instance we previously demonstrated, in adult mice, sciatic nerve disruption-mediated denervation at a considerable distance from the target lower limbs and subsequent reinnervation leads to a high fraction of NMJs with degenerated morphology (Liu et al., 2015). In contrast, insults in relatively close proximity to nerve terminals that lead to reinnervation, even in aged skeletal muscle, result in efficient repair without degenerated morphology (Kang and Lichtman, 2013). Although loss of NMJ-organizers such as Agrin or Laminin-\u03b14 is sufficient to induce denervation, these molecules are not lost with age (Samuel et al., 2012). Furthermore, denervation stemming from sciatic nerve injury in adults or through genetic disruption of critical NMJ regulators in the embryo leads to robust elevation or induction of extra-synaptic expression of synapse-enriched genes (Figure 1\u2014figure supplement 2) (Liu et al., 2015; Sanes and Lichtman, 1999). In aged skeletal muscles we did not observe characteristics of robust denervation, therefore denervation is likely not a principal mechanism driving age-related NMJ degeneration.\n\nRecently SCs have been shown to contribute to sedentary aging myofibers (Keefe et al., 2015). Through the use of a distinct SC fate tracking strategy and single myofiber analysis at 6, 12, 18, and 24 months, we were able to address at which ages SC-derived contributions near NMJs prevail and when they decline. Such contributions could reflect severe myofiber degeneration and regeneration, as observed with myofiber insult (Li et al., 2011; Li and Thompson, 2011). Although laser ablation adjacent to endplate regions leads to local myofiber degeneration and regeneration with NMJ fragmentation, whether this insult affected the number, function, or recruitment of SCs or other skeletal muscle resident stem and progenitor cell types is unknown (Li and Thompson, 2011; Bentzinger et al., 2013; Judson et al., 2013). Central nucleated myofibers, an indicator of degeneration and regeneration, have been observed in aged muscles (Valdez et al., 2010). Moreover, degenerative-regenerative events have been observed along the length of aging myofibers; however, such events leading to degenerated NMJ morphology in aged muscles are rare (Li et al., 2011). In contrast, we observed SC derived progenitor fusion into myofibers without appreciable central nucleation, consistent with previous reports during aging, adolescent maturation, and denervation atrophy (Liu et al., 2015; Keefe et al., 2015; Pawlikowski et al., 2015). During natural aging or upon SC depletion, loss of SC contribution is associated with NMJ degeneration. Correspondingly, we found correlations between indices of NMJ degeneration and reduced post-synaptic myonuclear cluster size. Post-synaptic myonuclear cluster size can be influenced by dissociation through the manipulation of proteins that anchor nuclei (Zhang et al., 2007; Grady et al., 2005). Aging is associated with loss of total number and normal spatial arrangement of myonuclei (Bruusgaard et al., 2006; Brack et al., 2005). Therefore, it is likely that both loss and dissociation contribute to reductions in the size of post-synaptic myonuclear clusters with age.\n\nStimulation of Spry1 expression has been shown to prevent age-related SC loss (Chakkalakal et al., 2012; Bigot et al., 2015). In primary cultures of aged human myoblasts, stimulation of Spry1 expression through global epigenetic modification promoted SC maintenance at the expense of myogenic differentiation (Bigot et al., 2015). Similarly, forced expression of the related Spry2 during embryonic myogenesis favored retention of renewal competent as opposed to terminally committed myogenic cells (Lagha et al., 2008). In contrast, based on restoration of post-synaptic myonuclei, prevention of age-related atrophy, and improved force generation, we demonstrate that SC-specific Spry1 overexpression attenuates age-related SC decline without compromising myogenic differentiation. In the context of aging, Spry1 modifies FGF activity to regulate SC pool size at homeostasis; however, the mechanisms of Spry1-mediated regulation of adult and aged post-synaptic myogenic differentiation are unknown (Chakkalakal et al., 2012). Furthermore, fusion of SC derived Spry1OX myogenic progenitors could lead to suppression of extracellular signal-regulated kinase (ERK) activity, which is elevated in skeletal muscle biopsies from chronic obstructive pulmonary disorder (COPD) patients and sedentary aged individuals (Lemire et al., 2012; Williamson et al., 2003). Although it is unclear which resident cell(s) within COPD or aged biopsies possessed the heightened ERK activity, it would be of interest to determine sarcopenia outcomes upon myofiber-specific Spry1 overexpression. Regardless, in addition to maintaining skeletal muscle regenerative potential, Spry1 manipulation provides a viable approach for counteracting sarcopenia-related NMJ deterioration and aged muscle function decline. Collectively, our observations, obtained through multiple lines of query, demonstrate that loss of myofiber regenerative potential endowed in SCs is a significant mediator of age-related NMJ degeneration.\n\n## Materials and methods\n\n### Animals\n\nWild type C57BL/6J mice were obtained from National Institute on Aging; Pax7CreERT2 (017763), Rosa26mTmG (007576), Rosa26nTnG (023035) and Rosa26DTA (009669) mice were obtained from Jackson Laboratories (Bar Harbor, Maine); mice carrying a transgene encoding a Cre-inducible expression construct for Spry1 controlled by a chicken \u03b2-actin gene (CAG) promoter were used for Spry1-overexpression studies (Chakkalakal et al., 2012; Yang et al., 2008). Rosa26mTmG, Rosa26 nTnG, Rosa26DTA and CAGSpry1 mice were crossed with Pax7CreERT2 mice to generate Pax7CreER/+; Rosa26mTmG/+ (P7mTmG), Pax7CreER/+; Rosa26nTnG/+ (P7nTnG), Pax7CreER/+; Rosa26DTA/+ (P7DTA), Pax7CreER/+; CAGSpry1/+ (Spry1OX) mice and control CreER negative (Ctrl) littermates. Tamoxifen (Sigama-Aldrich, T5648, St. Louis, Missouri) was administrated at a dose of 2.0 mg/day for five consecutive days to induce Cre recombination at given ages. All animal procedures were conducted in accordance with institutional guidelines approved by the University Committee on Animal Recourses, University of Rochester Medical Center.\n\n### Immunofluorescence (IF)\n\nMuscles were incubated at 4\u00b0C overnight in 30% sucrose solution, embedded in OCT compound (Tissue Tek, Torrance, California) and frozen in dry-ice-cooled isopentane. Flash-frozen muscles were sectioned at 10 \u03bcm (for transverse sections) or 30 \u03bcm (for longitudinal sections) and stored at \u221280\u00b0C. Sections or cultured cells were fixed for 3 min in 4% paraformaldehyde (PFA) (no PFA fixation for MyHC antibodies), incubated with 0.2% Triton X-100 for 10 min, blocked in 10% normal goat serum (NGS, Jackson ImmunoResearch, West Grove, Pennsylvania) for 30 min at room temperature and stained with primary antibodies. If necessary (when mouse primary antibodies were used), sections were blocked in 3% affinipure Fab fragment goat anti-mouse IgG(H+L) (Jackson ImmunoResearch, 115-007-003) with 2% NGS at room temperature for 1 hr. Primary antibodies were incubated at 4\u00b0C overnight or 2 hr at room temperature, and secondary antibodies were incubated for 1 hr at room temperature. For whole-mounts, diaphragms were fixed in 2% PFA for 30 min on ice and blocked in 0.5% Triton X-100 with 10% NGS for 1 hr at room temperature; primary antibodies were incubated at 4\u00b0C for 24 hr and secondary antibodies were incubated for 2 hr at room temperature. DAPI (Invitrogen) staining was used to mark nuclei. All slides were mounted with Fluoromount-G (SouthernBiotech, Birmingham, Alabama).\n\n### Conventional and confocal IF microscopy and analysis\n\nTransverse sections and cells were imaged on a Zeiss Axio Observer A.1 microscope. Longitudinal sections were stained with fluorescently conjugated \u03b1-bungarotoxin (BTX) and a mixture of antibodies (synaptic vesicle protein 2, SV2; synaptotagmin-2, Syt-2; and neurofilament) to label acetylcholine receptors (AChRs) and nerve terminals respectively. Sections were viewed with an Olympus Fluoview 1000 confocal microscope with 60X objective at a 0.44 \u03bcm step size. Amira software was used to generate 3-D reconstructed NMJs for innervation analysis, identifying and enumerating post-synaptic myonuclei, and quantifying AChR expressing volume and intensity. Max-projection z-stack images of NMJs were generated with ImageJ software. The post-synaptic side was identified based on the entry of the terminal axon and as the concave side of the NMJ. We considered an NMJ to be: (i) innervated, if the vast majority of post-synaptic regions are covered by pre-synaptic terminal markers; (ii) pre-synaptic degenerated, if\u00a0>5 \u03bcm length of an AChR enriched branch within the post-synaptic apparatus is not covered by pre-synaptic terminal markers (partially innervated), or if\u00a0>90% of the post-synaptic apparatus is devoid of pre-synaptic nerve terminal markers (completely denervated); (iii) post-synaptic degenerated, if the AChR-enriched area resembled a patch devoid of defined elaborate branches\u00a0>5 \u03bcm in length (Liu et al., 2015). Post-synaptic myonuclei are identified based on 4',6-Diamidino-2-Phenylindole (DAPI) labeling (>25% DAPI covered by the BTX+ post-synaptic apparatus) (Liu et al., 2015; Zhang et al., 2007).\n\n### RNA isolation and RT-qPCR\n\nTo separate the synaptic and extra-synaptic regions, diaphragms were incubated in ice-cold diethyl pyrocarbonate (DEPC)-treated PBS with BTX for 30 min, and dissected based on NMJ staining under a conventional IF microscope. Muscles were submerged in Trizol (Ambion, Carlsbad, California) and homogenized using Bullet Blender Gold (Nextadvance BB24-AU, Averill Park, New York). RNA was extracted with the RNeasy Mini Kit (Qiagen, Hilden, Germany) according to the manufacturer\u2019s instructions and prepared for RT-qPCR analysis or RNA-sequencing experiments. First-strand complementary DNA was synthesized from 200 ng of RNA using the SuperScript First-Strand cDNA Synthesis Kit (Invitrogen, Carlsbad, California). RT-qPCR was performed on a Step One Plus Real Time PCR machine (Applied Biosystems, Foster City, California), with Platinum SYBR Green qPCR SuperMix-UDG and ROX master mix (Invitrogen) using primers against AChE, Chrna1, Chrnd, Chrne, Etv5, Musk and B2M (Supplementary file 1). All reactions for RT-qPCR were performed using the following thermal cycler conditions: 50\u00b0C for 2 min, 95\u00b0C for 2 min, 40 cycles of a two-step reaction, denaturation at 95\u00b0C for 15 s, annealing at 60\u00b0C for 30 s. Variant expression was normalized to B2M using the comparative Ct method and reported relative to the average of the synaptic samples.\n\n### RNA-sequencing\n\nRNA concentration was determined with the NanoDrop 1000 spectrophotometer (NanoDrop, Wilmington, Delaware) and RNA quality was assessed with the Agilent Bioanalyzer (Agilent Technologies, Santa Clara, California). Illumina-compatible library construction was performed using the TruSeq Stranded Total RNA Sample Preparation Kit (Illumina, San Diego, California) per manufacturer\u2019s protocols. The amplified libraries were hybridized to the Illumina single-end flow cell and amplified using the cBot (Illumina) at a concentration of 8 pM per lane. Single-end reads of 100 nt were generated for each sample. Sequenced reads were cleaned according to a rigorous pre-processing workflow (Trimmomatic-0.32) before mapping some of them to the mouse reference genome (GRCm38.p4) with STAR-2.4.2a. Cufflinks2.0.2 with the gencode-M6 mouse gene annotations was then used to perform differential expression analysis.\n\n### Gene set enrichment analysis\n\nThe gene expression dataset was transferred to the Gene Set Enrichment Analysis software (http://www.broadinstitute.org/gsea) and the analysis was carried out with default parameters except that gene permutation was applied. Gene sets derived from the Molecular Function Ontology (c5.mf.v5.2.symbols) (http://www.broadinstitute.org/gsea/msigdb) were utilized to determine synaptic gene enrichment. The enrichment results were visualized using the Cytoscape plug-in enrichment map.\n\n### Fluorescence-activated cell sorting (FACS) and cell culture\n\nTo obtain purified SCs, primary cells were isolated as described previously (Paris et al., 2016). Muscles were dissected from mice and digested using collagenase II (Gibco, Carlsbad, California) in Dulbecco's modified Eagles medium (DMEM, Sigma-Aldrich) for 60 min at 37\u00b0C with agitation. The suspension was then washed and digested in collagenase II and dispase (Gibco) for 30 min at 37\u00b0C with agitation. The resultant mononuclear cells were then stained with the following antibodies: CD31-PECy7 (BD Biosciences 561410, San Jose, California), CD45-PECy7 (BD Biosciences 552848), Sca1-FITC (BD Biosciences 562058), Integrin \u03b17 (ITGA7)-Alexa Fluor 647 (AbLab, Vancouver, Canada) and VCAM-PE (Invitrogen RMCD10604). FACS was performed using a FACSAria II Cell Sorter (BD Biosciences) and SCs were collected according to the following sorting criteria: CD31-/CD45-/Sca1-/ITGA7+/VCAM+. FACs-purified SCs were plated at 3000 cells per well in eight-well Permanox chamber slides (Nunc Lab-Tek, Carlsbad, California) and cultured for five days in DMEM with 10% Horse Serum (Thermo Fisher Scientific, Carlsbad, California) and 5 ng/mL FGF2 (Cell Signaling Technologies, Danvers, Massachusetts).\n\n### Single myofiber analysis\n\nFor GFP localization, myofibers were purified by conventional collagenase digestion and trituration with fire-polished glass pipets as previously described (Liu et al., 2015; Zammit et al., 2004). Briefly, the EDL muscle was dissected, rinsed, and incubated in DMEM with 0.1% type I collagenase and 0.1% type II collagenase at 37\u00b0C for 60 min. Following digestion, single myofibers were released by gently triturating the EDL with fire-polished-tip Pasteur pipettes. Purified single myofibers were fixed with 4% PFA for 3 min followed by GFP and BTX IF. For assessing single myofiber size, lower limbs were fixed in 4% PFA for 48 hr prior to muscle dissection. Fixed muscles were incubated in 40% NaOH for 2 hr, and single myofibers were dissociated by gently pipetting up and down. Released fibers were then washed in PBS and processed for DAPI staining (Liu et al., 2015; Brack et al., 2005).\n\n### Quantification of myofiber type composition\n\nMyofiber type composition was quantified using a newly developed ImageJ plug-in (available at https://github.com/aidistan/ij-fibersize; with a copy archived at https://github.com/elifesciences-publications/ij-fibersize) that identifies myofiber types by MyHC isoform expression combined detecting myofiber boundary with Laminin IF (Tan, 2016).\n\n### Ex vivo muscle force generation assay\n\nMuscle force generation capacity was analyzed in EDLs using an ASI muscle contraction system (Aurora Scientific, Aurora, Canada) as described previously (Wei-Lapierre et al., 2013). Briefly, mice were anaesthetized and TA muscles removed. EDLs were then carefully isolated, adjusted to optimal length (Lo) and then stimulated at different frequencies to obtain absolute force values. Muscle force was recorded and analyzed using Dynamic Muscle Control and Graph Pad Prism software. EDL muscle cross-sectional area was calculated using the equation of cross-sectional area = (muscle mass)/[muscle density (1.06 g/cm3) \u00d7 optimal fiber length (0.44 \u00d7 Lo)] (Hakim et al., 2011).\n\n### Treadmill test\n\nThe mice were trained to get used to the treadmill (Columbus Instruments) for three days: first and second days - 5 m/min for 5 min, third day - 7 m/min for 5 min. The exhaustion test is as followed: 5 m/min for 5 min; 10 m/min for 25 mins; 15 m/min for 20 mins; 20 m/min for 15 mins; 21 m/min for 1 min; 22 m/min for 1 min; 23 m/min for 1 min; 24 m/min for 1 min; 25 m/min infinite until the mice cannot run anymore. Continued running was encouraged by delivering brief spirits of air on the mouse\u2019s backside using a Whoosh Duster. Exhaustion was defined as the inability of the animal to remain on the treadmill despite the air spray. Both the training and the test were performed without any inclines.\n\n### Antibodies\n\nPax7 (mouse IgG1, 1:100, Developmental Studies Hybridoma Bank (DSHB), Iowa City, Iowa), Laminin (rabbit, 1:1500, Sigma-Aldrich L9393), GFP (rabbit, 1:400, Millipore AB3030P, Billerica, Massachusetts), SC-71 (MyHC-IIA, mouse IgG1, 1:40, DSHB), BF-F3 (MyHC-IIB, mouse IgG1, 1:40, DSHB), SV2 (mouse IgG1, 1:100, DSHB), Znp-1 (Syt-2, mouse IgG1, 1:200, DSHB) and 2H3 (neurofilament, mouse IgG1, 1:200, DSHB), AlexaFluor 488-conjugated \u03b1-Bungarotoxin (1:1000, Thermo Fisher Scientific B-13422), AlexaFluor 647-conjugated \u03b1-Bungarotoxin (1:1000, Thermo Fisher Scientific B-35450), AlexaFluor 594-conjugated goat anti-mouse IgG (1:1500, Thermo Fisher Scientific A-11032), AlexaFluor 594-conjugated goat anti-mouse IgG1 (1:1500, Thermo Fisher Scientific A-21125), AlexaFluor 488-conjugated goat anti-mouse IgM (1:1500, Thermo Fisher Scientific A-21042), AlexaFluor 488-conjugated goat anti-rabbit IgG (1:1500, Thermo Fisher Scientific A-32731), AlexaFluor 647-conjugated goat anti-rabbit (1:1500, Thermo Fisher Scientific A-21244).\n\n### Statistical analysis\n\nResults are presented as mean + s.e.m. Statistical significance was determined by Student\u2019s t-tests for simple comparison, two-way ANOVA/Sidak for multiple comparisons with Graph Pad Prism software. p<0.05 was considered as statistically significant.\n",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "8ad65b47-68a1-4315-9e15-3ee58d82c72c",
+      "submission_id": "4cc3df5b-9208-452e-a58f-97a9e2238e50",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Amy J Wagers, Harvard University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.26464.022](https://doi.org/10.7554/eLife.26464.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Loss of adult skeletal muscle stem cells drives age-related neuromuscular junction degeneration\" for consideration by eLife. Your article has been favorably evaluated by Sean Morrison (Senior Editor) and three reviewers, one of whom, Amy J Wagers (Reviewer #3), is a member of our Board of Reviewing Editors. The following individuals involved in review of your submission have agreed to reveal their identity: Gregorio Valdez (Reviewer #1) and Colin Crist (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn a previous study published in eLife in 2015, this group used elegant genetic tools to inducibly label or deplete muscle stem cells (MuSCs). By doing so, they showed that MuSC depletion leads to an increase in muscle atrophy, fibre type transitions and fibrosis, with a corresponding decrease in the generation of muscle force. Furthermore, MuSC depletion followed by denervation resulted in decreased reinnervation, decreased myonuclei at neuromuscular junctions (NMJs) and poor post-synaptic morphology. MuSC labeling experiments demonstrated that MuSCs contribute directly to NMJs. This Research Advance submission builds on this previous work using similar genetic strategies to investigate satellite cell incorporation into myofibers as a function of age and its effect on neuromuscular junction (NMJ) integrity. The authors report reduced integrity of NMJs with advancing age and use an mT/mG fluorescence tracing system (described in their earlier eLife publication) to correlate the presence of these degenerated junctions with reduced incorporation of satellite cells in the region of the NMJ. Finally, they show using a diphtheria toxin ablation system to deplete muscle satellite cells endogenously that loss of satellite cells causes precocious loss of NMJ integrity and that overexpression of Spry1 using a Pax7CreER driven induction system protects from age-associated NMJ degeneration and promotes maintenance of muscle mass and strength. Altogether, the work provides a number of novel and important observations relevant for understanding the detrimental effects of aging on skeletal muscle and physical performance and highlights a previously unappreciated role for satellite cells in these effects. There are, however, a few remaining questions about some of the authors' conclusions that need to be addressed:\n\nEssential revisions:\n\n1) The manuscript lacks data showing directly that postsynaptic myonuclei originate from muscle stem cells. The most relevant data for this idea is presented in Figure 3; however, it is impossible to conclude that postsynaptic nuclei emanate from satellite cells based on these data alone. The presence of GFP (Figure 3A,B) only proves that satellite cells are present throughout a given muscle fiber, including proximal to the postsynaptic region. Additional approaches (e.g. generation of mice with nuclear rather than membrane GFP, or tagging of satellite cells with a nuclear marker ex vivo and injection into the synaptic region to see where their nuclei end up in already formed muscle fibers) would be needed to prove that a postsynaptic myonuclei emanate from satellite cells and thus are lost following depletion of this cell population. If such data are available, they should be added to the manuscript. If not, then the authors should soften their conclusion as stated in the Discussion \u2013 \"Specifically, SCs are a source of post-synaptic myonuclei\" of matured muscle fibers, as there is simply no data directly showing this.\n\n2) The authors state that little denervation (\"no gross denervation\") occurs in aged animals. But in Figure 1, the majority of NMJs are either completely or partially denervated, and this data is represented as partially missing nerve (Inn). These findings appear to support published data showing that most aged NMJs are partially denervated and a smaller population completely denervated. While the authors argue that their supplemental data (Figure 1\u2014figure supplement 2) that the transcriptional program of myonuclei in aged muscle differs from that seen at a single time point after sciatic nerve transection further supports a lack of denervation in aged muscle, it is unclear how this time point was chosen and what sort of overlap one might expect that could have led to the opposite conclusion, given that the sciatic nerve transection model is obviously a much more severe, and also very different, surgical model. Thus, the conclusion that there is limited denervation in aged muscle is not particularly compelling, and the authors are advised to change the \"Inn\" label in this Figure 1 to partially innervated (PI) or partially denervated (PD).\n\n3) Since the loss of myonuclei is proposed to cause aging of NMJs, it is important to show that myonuclei disappear prior to aging of NMJs. However, there is no data supporting that this sequence of events occurs during aging. Instead, it is shown that a similar number of nuclei are present at NMJs of 12 compared to 6 months of age, see Figure 3. Since perisynaptic Schwann cells are also affected by aging, it is important to determine their contribution to NMJ-associated nuclei in young and old muscles. Answer to these questions would better establish the relationship between aging of NMJs and loss of myonuclei specifically derived from stem cells.\n\n4) Figure 3D suggests reduced incorporation of new satellite cells overall (reduced total number of mGFP+ fibers) with aging. This is a bit counterintuitive, however, given the increased frequency of centrally nucleated fibers normally detected in aged muscle (e.g., Valdez et al. 2010). Can the authors explain/ comment on this?\n\n5) It is plausible that NMJ-associated myonuclei dissociate from the postsynaptic region in atrophying muscle fibers. This possibility should be explored or discussed.\n\n6) Incorporation of satellite cells into myofibers in the Spry1OX system will lead to Spry1 overexpression in differentiated fibers as well. Thus, some of the effects the authors see with respect to protection from age-related NMJ dysfunction in this system may relate to Spry1 functions in fibers. It is therefore important to evaluate the level of transgene expression in muscle fibers over time, and ideally this issue should be addressed experimentally by analysis of an overexpression system in which fiber-specific Spry1 overexpression is induced, or possibly by transplantation of WT satellite cells not their existing Spry1OX system (though this may be technically challenging). This issue is particularly relevant as Spry1 has been reported as a negative regulator of ERK signaling and ERK activation has been associated with muscle atrophy in certain settings (e.g., Lemire et al., 2012). Thus, it is possible that introduction of Spry1 into myofibers via satellite cell fusion in the Spry1OX system protects them from subsequent age-related atrophy. If the authors are unable to provide direct experimental evidence addressing this point, they must then provide an explicit discussion of this possibility and revise their conclusions accordingly.\n",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2665a38f-654d-43ac-a6d6-cf38d66a7003",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C1",
+      "claim": "Aging is associated with an increased proportion of NMJs that display degenerated pre/post-synaptic morphologies in both tibialis anterior (TA) and diaphragm muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "Aging is associated with an increased proportion of NMJs that display degenerated pre/post-synaptic morphologies in both tibialis anterior (TA) and diaphragm muscles (Figure 1A\u2013E) (Gonzalez-Freire et al., 2014; Valdez et al., 2010, 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1A-E and citations to previous literature (Gonzalez-Freire et al., 2014; Valdez et al., 2010, 2012).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "6087ef3d-ad49-4424-b4c1-2ae73df499ba",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C2",
+      "claim": "Very few aged NMJs were completely denervated despite a high proportion of degenerated NMJs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we observed a high proportion of degenerated NMJs in aged muscles, very few were completely denervated (Figure 1B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification data shown in Figure 1B and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "1bcb3904-71bd-40df-b150-58601067cf52",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C3",
+      "claim": "Gene sets associated with acetylcholine receptor (AChR) activity and neurotransmission were highly enriched in 6M-Syn samples.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, gene sets associated with acetylcholine receptor (AChR) activity and neurotransmission were highly enriched in 6M-Syn samples (Figure 1\u2014figure supplement 1A and B) (Chakkalakal and Jasmin, 2003; Merlie and Sanes, 1985; Hippenmeyer et al., 2007; Kishi et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GSEA data shown in Figure 1\u2014figure supplement 1A and B, and citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "e90d5134-1d7a-4cf9-899a-7d9b985ccbed",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C4",
+      "claim": "Aged muscles did not show elevation or extra-synaptic induction of synaptic gene expression, consistent with low levels of complete denervation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we observed previously described alterations in mitochondrial metabolism and atrophy-related genes in 24M-ExS and 24M-Syn samples, consistent with low levels of complete denervation we did not observe elevation or extra-synaptic induction of synaptic gene expression (Figure 1G, Figure 1\u2014figure supplement 1C\u2013H) (Hippenmeyer et al., 2007; Kishi et al., 2005; Ibebunjo et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 1G and Figure 1\u2014figure supplement 1C\u2013H, and citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "d4fbdb8c-d5f9-4af6-8e23-0da1b9f61dc8",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C5",
+      "claim": "Comparison of 6M-Syn and 24M-Syn samples revealed age-related declines in synapse-specific gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, comparison of 6M-Syn and 24M-Syn samples revealed age-related declines in synapse-specific gene expression, indicating a possible loss of post-synaptic myonuclei, the source of synapse-specific mRNAs at NMJs (Figure 1G, Figure 1\u2014figure supplement 1C\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 1G and Figure 1\u2014figure supplement 1C\u2013H.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "2a67b29a-a9a7-42e8-b1ff-6824b08d8e6f",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C6",
+      "claim": "The size of NMJs, based on post-synaptic apparatus volume and cumulative AChR intensity, positively correlated with the size of post-synaptic myonuclear clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "The size of NMJs, based on post-synaptic apparatus volume and cumulative AChR intensity, positively correlated with the size of post-synaptic myonuclear clusters (Figure 2A and B, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by linear regression analysis shown in Figure 2A and B, and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "83913306-5bd2-4380-b281-4bd8b63d17f0",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C7",
+      "claim": "The majority of degenerated NMJs had few post-synaptic myonuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the majority of degenerated NMJs had few post-synaptic myonuclei (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "6c1f4850-8eae-4f39-9552-7d25bd197bfc",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C8",
+      "claim": "The fraction of aged NMJ post-synaptic myonuclear clusters with greater than 4 myonuclei was significantly lower compared to adult.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the fraction of aged NMJ post-synaptic myonuclear clusters with greater than 4 myonuclei, in comparison to adult, was significantly lower (Figure 2D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification data shown in Figure 2D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "468bd8f5-f019-4c81-b2f1-1602b6c95341",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C9",
+      "claim": "Loss of post-synaptic myonuclei is a predominant feature of aged degenerated NMJs.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, loss of post-synaptic myonuclei is a predominant feature of aged degenerated NMJs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the data showing reduced post-synaptic myonuclei in aged NMJs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "49cf7b3e-b4d5-4a78-a8bb-887517170f1b",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C10",
+      "claim": "SC frequency significantly declined at 18 and 24 months regardless of their source (Syn vs ExS regions).",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of their source (Syn vs ExS regions), SC frequency significantly declined at 18 and 24 months (Figure 2\u2014figure supplement 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FACS data shown in Figure 2\u2014figure supplement 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "ff4e0811-0095-4185-aef3-19076c7df44e",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C11",
+      "claim": "At 6 and 12 months, GFP-labeled SC derived contribution was found at myofiber ends and/or middle portions of myofibers where NMJs are located.",
+      "claim_type": "EXPLICIT",
+      "source": "At 6 and 12 months we found GFP-labeled SC derived contribution at myofiber ends where sarcomere addition can occur (Williams and Goldspink, 1971; Zhang and McLennan, 1995; Wang et al., 2010), and/or middle portions of myofibers where NMJs are located (Liu et al., 2015) (Figure 3A,B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by single myofiber analysis shown in Figure 3A, B and D, and citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "d8a6a6bc-a50b-4cd1-9b78-7217e172f1e5",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C12",
+      "claim": "Six weeks after tamoxifen administration, GFP-labeled post-synaptic myonuclei were observed at NMJs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with SCs as a cellular source, 6 weeks after tamoxifen administration GFP-labeled post-synaptic myonuclei were observed at NMJs (Figure 3\u2014figure supplement 1D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data shown in Figure 3\u2014figure supplement 1D\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "12d9c1e8-33f3-49df-b5fb-6dc2207a29f3",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C13",
+      "claim": "A pronounced decline in GFP-labeled SC-derived contribution in the vicinity of NMJs was observed in 18 and 24-month-old mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with the timing of SC loss during aging (Sousa-Victor et al., 2015) and a potential role for SCs in the lifelong maintenance of NMJs, we observed a pronounced decline in GFP-labeled SC-derived contribution in the vicinity of NMJs in 18 and 24-month-old mice (Figure 3B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by single myofiber analysis shown in Figure 3B\u2013D, and citation to previous literature (Sousa-Victor et al., 2015).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "924d82a0-baf5-436d-a600-2d244c06031b",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C14",
+      "claim": "SC depletion markedly accelerated sarcopenia-related NMJ deterioration, with induction of degenerated NMJs at 12 months in P7DTA mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of P7DTA NMJs revealed induction of degenerated NMJs at 12 months, indicating that SC depletion markedly accelerated sarcopenia-related NMJ deterioration (Figure 3F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NMJ analysis data shown in Figure 3F\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "851f7fcb-c35f-41d6-90ea-98a856168700",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C15",
+      "claim": "Prior to significant induction of partial innervation, a significant increase in the proportion of NMJs with 0\u20132 post-synaptic myonuclei was observed at 12 months compared to 6 month-old muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to significant induction of partial innervation, a significant increase in the proportion of NMJs with 0\u20132 post-synaptic myonuclei was observed at 12 months compared to 6 month-old muscles (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "d316f753-a046-4c5f-9086-a5f021a7ef80",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C16",
+      "claim": "The exacerbated deterioration of NMJs at 12 months, as a result of SC depletion, was associated with a further decline in the size of post-synaptic myonuclear clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the exacerbated deterioration of NMJs at 12 months, as a result of SC depletion, was also associated with a further decline in the size of post-synaptic myonuclear clusters (Figure 3F and I, Figure 3\u2014figure supplement 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NMJ analysis data shown in Figure 3F and I, and Figure 3\u2014figure supplement 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "cac94d12-df41-4f9f-a6d4-b108cb091c24",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C17",
+      "claim": "A reduction in the proportion of fast type IIX myofibers with age was observed, but the onset or severity of this phenotype was not altered upon SC depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we observed a reduction in the proportion of fast type IIX myofibers with age, the onset or severity of this phenotype was not altered upon SC depletion (Figure 3\u2014figure supplement 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by myofiber type composition analysis shown in Figure 3\u2014figure supplement 5A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "23a7cacd-8092-4e84-8fd5-7184b05334f5",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C18",
+      "claim": "Significant reduction in cross-sectional area of myofibers was observed upon SC depletion at 12 months.",
+      "claim_type": "EXPLICIT",
+      "source": "The examination of single myofibers isolated from EDLs, fixed prior to dissection, revealed significant reduction in cross-sectional area of myofibers upon SC depletion at 12 months (Figure 3\u2014figure supplement 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by myofiber CSA analysis shown in Figure 3\u2014figure supplement 5C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "66db19d0-7182-486a-9d3b-cdb206506e44",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C19",
+      "claim": "SC depletion is sufficient to induce early onset of sarcopenia phenotypes, specifically NMJ deterioration and myofiber atrophy without evidence of gross denervation.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data demonstrate that SC depletion is sufficient to induce early onset of sarcopenia phenotypes, specifically NMJ deterioration and myofiber atrophy without evidence of gross denervation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined data on NMJ degeneration and myofiber atrophy in SC-depleted mice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "0e08fbbc-ff28-4509-8cb1-ac4f53d3220d",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C20",
+      "claim": "The suppression of Spry1 has been linked to SC pool loss in aged muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "The suppression of Spry1, a downstream target and negative-feedback modulator of receptor tyrosine kinase (RTK) /fibroblast growth factor (FGF) signaling (Kim and Bar-Sagi, 2004), has been linked to SC pool loss in aged muscles (Chakkalakal et al., 2012; Bigot et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature (Kim and Bar-Sagi, 2004; Chakkalakal et al., 2012; Bigot et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "9e640af6-f332-4dfa-ae0c-5a0012993f2b",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C21",
+      "claim": "Forced expression of Spry1 in SCs attenuates age-associated SC decline.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the forced expression of Spry1 in SCs attenuates age-associated SC decline (Chakkalakal et al., 2012; Bigot et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature (Chakkalakal et al., 2012; Bigot et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "2d857fdc-d633-4f58-be3b-e37fee5fcbf6",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C22",
+      "claim": "Aged muscles from Spry1OX mice with tamoxifen administered at 12 months had significantly more SCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometric analysis confirmed that aged muscles from Spry1OX mice with tamoxifen administered at 12 months had significantly more SCs (Figure 4A, Figure 4\u2014figure supplement 1) (Chakkalakal et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FACS data shown in Figure 4A and Figure 4\u2014figure supplement 1, and citation to previous literature (Chakkalakal et al., 2012).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "7aed1857-6f5f-4cac-ad8c-454498a8965a",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C23",
+      "claim": "Age-related NMJ deterioration was attenuated in Spry1OX muscles, demonstrated by a reduction in the proportion of pre/post-synaptic degenerated NMJs.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of NMJ integrity revealed that age-related NMJ deterioration was attenuated in Spry1OX muscles, demonstrated by a reduction in the proportion of pre/post-synaptic degenerated NMJs (Figure 4B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NMJ analysis data shown in Figure 4B\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "8089b5a9-3996-4040-89c2-520bb63dcf1e",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C24",
+      "claim": "An increase in the size of post-synaptic myonuclear clusters was observed in aged Spry1OX mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, an increase in the size of post-synaptic myonuclear clusters was observed in aged Spry1OX mice (Figure 4B and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification data shown in Figure 4B and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "1ccf6db0-338c-4959-a9dd-92713d683164",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C25",
+      "claim": "Aged Spry1OX mice ran a significantly longer time/distance than Ctrl mice in treadmill exercise tests.",
+      "claim_type": "EXPLICIT",
+      "source": "Aged Spry1OX mice ran a significantly longer time/distance than Ctrl mice (Figure 4F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by treadmill performance data shown in Figure 4F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "d47f77e9-7063-489e-9daf-22aa68b97a3c",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C26",
+      "claim": "Significant increases were detected in peak absolute force generated by aged Spry1OX muscles in comparison to Ctrl muscles upon stimulation at frequencies of 100, 125 and 150 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant increases were detected in peak absolute force generated by aged Spry1OX muscles in comparison to Ctrl muscles upon stimulation at frequencies of 100, 125 and 150 Hz (Figure 4H, Figure 4\u2014figure supplement 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ex vivo force generation data shown in Figure 4H and Figure 4\u2014figure supplement 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "e43b35a8-3ed5-48ef-979e-f39494b646de",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C27",
+      "claim": "No significant difference was observed in specific force (force normalized to physiological cross-sectional area) between aged Spry1OX and Ctrl muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no significant difference was observed when force was normalized to physiological cross-sectional area (specific force), which accounts for modifications in muscle girth (Figure 4\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by specific force data shown in Figure 4\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "051c5c36-ba11-4fad-85c5-9118a47ed286",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C28",
+      "claim": "Increased EDL myofiber cross-sectional area was observed in aged Spry1OX mice without significant changes in myofiber type composition or number.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed increased EDL myofiber cross-sectional area without significant changes in myofiber type composition or number in aged Spry1OX mice (Figure 4\u2014figure supplement 2D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by myofiber analysis data shown in Figure 4\u2014figure supplement 2D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "fef34721-81a7-4bf6-b9e5-8f10c6c356e3",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C29",
+      "claim": "Preventing age-related SC loss through stimulation of Spry1 expression in SCs was associated with the prevention of post-synaptic myonuclear loss, myofiber atrophy, and force generation capacity decline in aged skeletal muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, preventing age-related SC loss, through stimulation of Spry1 expression in SCs without direct peripheral nerve manipulation, was associated with the prevention of post-synaptic myonuclear loss, myofiber atrophy, and force generation capacity decline in aged skeletal muscles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined data on SC preservation, NMJ integrity, myofiber size, and force generation in Spry1OX mice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "c87a44fb-f911-41a2-8c17-6df5df76c515",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C30",
+      "claim": "Loss of SC contribution drives age-related NMJ degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "In this report, we find marginal denervation in aged skeletal muscles, and that loss of SC contribution drives age-related NMJ degeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined experimental results showing SC depletion accelerates NMJ degeneration and SC preservation attenuates it.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "c3b2c8d3-1cd1-4cfd-b38d-7aadbde51b7a",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C31",
+      "claim": "SCs are a source of post-synaptic myonuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, SCs are a source of post-synaptic myonuclei.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by fate tracking experiments showing GFP-labeled post-synaptic myonuclei derived from SCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "dec653bd-2e5e-4f1c-a6fb-0a42aa8aca92",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C32",
+      "claim": "With age, SC-derived contribution of myonuclei to the post-synaptic region is compromised, which links to age-related NMJ degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "With age SC-derived contribution of myonuclei to the post-synaptic region is compromised, which accordingly links to age-related NMJ degeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the data showing reduced SC-derived contribution at NMJs in aged mice and correlation with NMJ degeneration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "6b0e9884-e8af-4956-aab0-7ff67033c645",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C33",
+      "claim": "Denervation is likely not a principal mechanism driving age-related NMJ degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "In aged skeletal muscles we did not observe characteristics of robust denervation, therefore denervation is likely not a principal mechanism driving age-related NMJ degeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the lack of denervation markers in aged muscles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "df57c45e-b412-495e-be11-11d2ebc219f9",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C34",
+      "claim": "Myonuclei clustered beneath the post-synaptic membrane of the NMJ within the myofiber are transcriptionally distinct from adjacent myonuclei and specialized for the expression of genes critical for NMJ function.",
+      "claim_type": "EXPLICIT",
+      "source": "Myonuclei clustered beneath the post-synaptic membrane of the NMJ within the myofiber are transcriptionally distinct from adjacent myonuclei and specialized for the expression of genes critical for NMJ function (Chakkalakal and Jasmin, 2003; Schaeffer et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature (Chakkalakal and Jasmin, 2003; Schaeffer et al., 2001).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "9fe39f67-0d91-4ba3-8759-332dac0f6b6a",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C35",
+      "claim": "Reduction in the size of post-synaptic myonuclear clusters is associated with impaired NMJ development, ineffective regeneration after nerve insult, and neuromuscular diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduction in the size of post-synaptic myonuclear clusters is associated with impaired NMJ development, ineffective regeneration after nerve insult, and neuromuscular diseases (Liu et al., 2015; Zhang et al., 2007; M\u00e9jat et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature (Liu et al., 2015; Zhang et al., 2007; M\u00e9jat et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "064cb090-3b19-46e2-a338-3ddfeb156618",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C36",
+      "claim": "Adult skeletal muscle possesses a remarkable capacity for regeneration endowed by a population of adult resident stem cells, satellite cells (SCs).",
+      "claim_type": "EXPLICIT",
+      "source": "It is well established that adult skeletal muscle possesses a remarkable capacity for regeneration endowed by a population of adult resident stem cells, satellite cells (SCs) (Relaix and Zammit, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature (Relaix and Zammit, 2012) and established scientific knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "95bf9d5b-0301-4fb9-a189-9cb57d7fe4db",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C37",
+      "claim": "SCs, identified by the expression of the paired box transcription factor Pax7, are deemed to be the principal source of myonuclei for myofiber regeneration and repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Through depletion studies, SCs, identified by the expression of the paired box transcription factor Pax7, are deemed to be the principal source of myonuclei for myofiber regeneration and repair (Liu et al., 2015; Relaix and Zammit, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature (Liu et al., 2015; Relaix and Zammit, 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "1a1cbdb9-72e4-40ae-938e-3476e43b2ea3",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C38",
+      "claim": "SCs contribute to NMJ regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "In our previous study, we examined SC fate during NMJ denervation and reinnervation, and found that SCs contribute to NMJ regeneration (Liu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study (Liu et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "8b2558b7-7dda-4adf-9b93-ccdc5b5b5d0e",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C39",
+      "claim": "Contributions of SCs and derived progenitors to myofibers have been observed during sedentary aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently contributions of SCs and derived progenitors to myofibers have been observed during sedentary aging (Keefe et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature (Keefe et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "0d71f884-9b64-4c00-8a3a-e96afa0c8ca8",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C40",
+      "claim": "SC number and function decline with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Extensive studies have shown that SC number and function decline with age; however, whether this loss is connected to age-associated NMJ degeneration is unknown (Chakkalakal et al., 2012; Sousa-Victor et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature (Chakkalakal et al., 2012; Sousa-Victor et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "1693b069-18e7-4169-8cd7-e470322df7a5",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C41",
+      "claim": "Neuromuscular junction degeneration is a prominent aspect of sarcopenia, the age-associated loss of skeletal muscle integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuromuscular junction degeneration is a prominent aspect of sarcopenia, the age-associated loss of skeletal muscle integrity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract as a known fact about sarcopenia.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "4e8fc141-ee68-4b17-be82-bd4367a8c36d",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C42",
+      "claim": "Muscle stem cells activate and contribute to mouse neuromuscular junction regeneration in response to denervation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we showed that muscle stem cells activate and contribute to mouse neuromuscular junction regeneration in response to denervation (Liu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study (Liu et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "fb6f9396-6c8b-4fec-b04e-b73c8683067c",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C43",
+      "claim": "Degenerated neuromuscular junctions in aged mouse muscles were associated with reduced contribution from muscle stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we examined gene expression profiles and neuromuscular junction integrity in aged mouse muscles, and unexpectedly found limited denervation despite a high level of degenerated neuromuscular junctions. Instead, degenerated neuromuscular junctions were associated with reduced contribution from muscle stem cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the experimental findings described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "7fc48b5e-761e-412e-81d7-42d4e3e466f9",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C44",
+      "claim": "Muscle stem cell depletion was sufficient to induce neuromuscular junction degeneration at a younger age.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, muscle stem cell depletion was sufficient to induce neuromuscular junction degeneration at a younger age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the P7DTA mouse experiments showing accelerated NMJ degeneration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "b234afe8-36be-479e-a26c-d3acb5b4b3dc",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C45",
+      "claim": "Prevention of muscle stem cell and derived myonuclei loss was associated with attenuation of age-related neuromuscular junction degeneration, muscle atrophy, and the promotion of aged muscle force generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, prevention of muscle stem cell and derived myonuclei loss was associated with attenuation of age-related neuromuscular junction degeneration, muscle atrophy, and the promotion of aged muscle force generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the Spry1OX mouse experiments showing improved NMJ integrity and muscle function.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "2f607e59-3756-48ef-a488-a00042d374b2",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C46",
+      "claim": "Deficiencies in muscle stem cell fate and post-synaptic myogenesis provide a cellular basis for age-related neuromuscular junction degeneration and associated skeletal muscle decline.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations demonstrate that deficiencies in muscle stem cell fate and post-synaptic myogenesis provide a cellular basis for age-related neuromuscular junction degeneration and associated skeletal muscle decline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined experimental results showing the role of SCs in NMJ maintenance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "0f2a79a2-ebb2-4f6f-ac53-a975eea56020",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C47",
+      "claim": "Age-related neuromuscular junction declines in rodents and humans manifest as altered pre-synaptic nerve terminal and abnormal post-synaptic morphology indicative of degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Age-related neuromuscular junction (NMJ, synapse between motor neuron and skeletal muscle cells) declines in rodents and humans manifest as altered pre-synaptic nerve terminal and abnormal post-synaptic morphology indicative of degeneration (Gonzalez-Freire et al., 2014; Oda, 1984; Wokke et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature (Gonzalez-Freire et al., 2014; Oda, 1984; Wokke et al., 1990).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "18f6a02e-6cfe-4cb6-9b8d-3242f17a5900",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C48",
+      "claim": "Whether age-associated NMJ remodeling primarily reflects deterioration of target muscle cells or the peripheral nervous system is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these disruptions are often associated with skeletal muscle dysfunction and disease, whether age-associated NMJ remodeling primarily reflects deterioration of target muscle cells or the peripheral nervous system is unknown (Kang and Lichtman, 2013; Banker et al., 1983; Li et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an open question in the field, with citations to previous literature (Kang and Lichtman, 2013; Banker et al., 1983; Li et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "0188c4fd-68be-4cbd-9c67-f07636b7bc34",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C49",
+      "claim": "Spry1 is a downstream target and negative-feedback modulator of receptor tyrosine kinase (RTK)/fibroblast growth factor (FGF) signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The suppression of Spry1, a downstream target and negative-feedback modulator of receptor tyrosine kinase (RTK) /fibroblast growth factor (FGF) signaling (Kim and Bar-Sagi, 2004), has been linked to SC pool loss in aged muscles (Chakkalakal et al., 2012; Bigot et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature (Kim and Bar-Sagi, 2004).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "9cace90c-ff0a-4e0c-a7e9-fc256a7da532",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C50",
+      "claim": "Denervation stemming from sciatic nerve injury in adults or through genetic disruption of critical NMJ regulators in the embryo leads to robust elevation or induction of extra-synaptic expression of synapse-enriched genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, denervation stemming from sciatic nerve injury in adults or through genetic disruption of critical NMJ regulators in the embryo leads to robust elevation or induction of extra-synaptic expression of synapse-enriched genes (Figure 1\u2014figure supplement 2) (Liu et al., 2015; Sanes and Lichtman, 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1\u2014figure supplement 2 and citations to previous literature (Liu et al., 2015; Sanes and Lichtman, 1999).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "0805aa39-18b9-4a03-9b22-69e984902131",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C51",
+      "claim": "Loss of NMJ-organizers such as Agrin or Laminin-\u03b14 is sufficient to induce denervation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although loss of NMJ-organizers such as Agrin or Laminin-\u03b14 is sufficient to induce denervation, these molecules are not lost with age (Samuel et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature (Samuel et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "253f937a-b0cf-4217-b0e6-d262c72a7dce",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C52",
+      "claim": "Agrin and Laminin-\u03b14 are not lost with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Although loss of NMJ-organizers such as Agrin or Laminin-\u03b14 is sufficient to induce denervation, these molecules are not lost with age (Samuel et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature (Samuel et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "7d0174c9-ea29-497f-888d-70fc30567338",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C53",
+      "claim": "Insults in relatively close proximity to nerve terminals that lead to reinnervation, even in aged skeletal muscle, result in efficient repair without degenerated morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, insults in relatively close proximity to nerve terminals that lead to reinnervation, even in aged skeletal muscle, result in efficient repair without degenerated morphology (Kang and Lichtman, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature (Kang and Lichtman, 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "ecbd90e0-b501-4151-8489-7d624a7f3918",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C54",
+      "claim": "Sciatic nerve disruption-mediated denervation at a considerable distance from the target lower limbs and subsequent reinnervation leads to a high fraction of NMJs with degenerated morphology in adult mice.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance we previously demonstrated, in adult mice, sciatic nerve disruption-mediated denervation at a considerable distance from the target lower limbs and subsequent reinnervation leads to a high fraction of NMJs with degenerated morphology (Liu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study (Liu et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "f474a084-10aa-4345-bbb3-89e9771b3bfe",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C55",
+      "claim": "Denervation is sufficient to trigger extensive skeletal muscle atrophy and dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "Although denervation is sufficient to trigger extensive skeletal muscle atrophy and dysfunction, the proportion of completely denervated aged NMJs is modest (Figure 1B and D) (Liu et al., 2015; Oda, 1984; Wokke et al., 1990; Banker et al., 1983).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to previous literature (Liu et al., 2015; Oda, 1984; Wokke et al., 1990; Banker et al., 1983) and established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "c4c3918c-2ddd-499d-afff-748de50f50b2",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C56",
+      "claim": "The proportion of completely denervated aged NMJs is modest.",
+      "claim_type": "EXPLICIT",
+      "source": "Although denervation is sufficient to trigger extensive skeletal muscle atrophy and dysfunction, the proportion of completely denervated aged NMJs is modest (Figure 1B and D) (Liu et al., 2015; Oda, 1984; Wokke et al., 1990; Banker et al., 1983).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1B and D and citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "7bb69f51-6504-454f-bb5c-65083cc29dba",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C57",
+      "claim": "Denervation with subsequent reinnervation can lead to degenerated NMJ morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Denervation with subsequent reinnervation can lead to degenerated NMJ morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a known phenomenon in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "a753a1f6-a1d3-4bcd-8422-756c7f518043",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C58",
+      "claim": "Laser ablation adjacent to endplate regions leads to local myofiber degeneration and regeneration with NMJ fragmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although laser ablation adjacent to endplate regions leads to local myofiber degeneration and regeneration with NMJ fragmentation, whether this insult affected the number, function, or recruitment of SCs or other skeletal muscle resident stem and progenitor cell types is unknown (Li and Thompson, 2011; Bentzinger et al., 2013; Judson et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature (Li and Thompson, 2011; Bentzinger et al., 2013; Judson et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "d11972b0-f854-49e8-b419-7a1b1fe81bc0",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C59",
+      "claim": "Central nucleated myofibers, an indicator of degeneration and regeneration, have been observed in aged muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "Central nucleated myofibers, an indicator of degeneration and regeneration, have been observed in aged muscles (Valdez et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature (Valdez et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "69fc65fb-7050-4ffd-9b35-54a4f065341b",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C60",
+      "claim": "Degenerative-regenerative events have been observed along the length of aging myofibers; however, such events leading to degenerated NMJ morphology in aged muscles are rare.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, degenerative-regenerative events have been observed along the length of aging myofibers; however, such events leading to degenerated NMJ morphology in aged muscles are rare (Li et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature (Li et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "379c663d-64f9-45c4-935f-793437a46c4b",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C61",
+      "claim": "SC derived progenitor fusion into myofibers without appreciable central nucleation has been observed during aging, adolescent maturation, and denervation atrophy.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we observed SC derived progenitor fusion into myofibers without appreciable central nucleation, consistent with previous reports during aging, adolescent maturation, and denervation atrophy (Liu et al., 2015; Keefe et al., 2015; Pawlikowski et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature (Liu et al., 2015; Keefe et al., 2015; Pawlikowski et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "c19b6b2d-bf0d-44ec-aaff-5866b62b2306",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C62",
+      "claim": "During natural aging or upon SC depletion, loss of SC contribution is associated with NMJ degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "During natural aging or upon SC depletion, loss of SC contribution is associated with NMJ degeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental results showing correlation between SC loss and NMJ degeneration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "35d1fcd3-3d52-439c-8563-7a35c91d5eb4",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C63",
+      "claim": "Post-synaptic myonuclear cluster size can be influenced by dissociation through the manipulation of proteins that anchor nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Post-synaptic myonuclear cluster size can be influenced by dissociation through the manipulation of proteins that anchor nuclei (Zhang et al., 2007; Grady et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature (Zhang et al., 2007; Grady et al., 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "3b72d830-ffa8-484e-872f-45f9c9e9a196",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C64",
+      "claim": "Aging is associated with loss of total number and normal spatial arrangement of myonuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Aging is associated with loss of total number and normal spatial arrangement of myonuclei (Bruusgaard et al., 2006; Brack et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature (Bruusgaard et al., 2006; Brack et al., 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "682439b1-7486-40b7-a391-f73dfd0b84b1",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C65",
+      "claim": "It is likely that both loss and dissociation contribute to reductions in the size of post-synaptic myonuclear clusters with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is likely that both loss and dissociation contribute to reductions in the size of post-synaptic myonuclear clusters with age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the discussion of mechanisms affecting post-synaptic myonuclear cluster size.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "b892e228-a8e6-42ed-a6e0-d9b32a107444",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C66",
+      "claim": "In primary cultures of aged human myoblasts, stimulation of Spry1 expression through global epigenetic modification promoted SC maintenance at the expense of myogenic differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In primary cultures of aged human myoblasts, stimulation of Spry1 expression through global epigenetic modification promoted SC maintenance at the expense of myogenic differentiation (Bigot et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature (Bigot et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "6f360aa6-19d3-4f83-83cd-f998ee12d434",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C67",
+      "claim": "Forced expression of the related Spry2 during embryonic myogenesis favored retention of renewal competent as opposed to terminally committed myogenic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, forced expression of the related Spry2 during embryonic myogenesis favored retention of renewal competent as opposed to terminally committed myogenic cells (Lagha et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature (Lagha et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "06c2a8c8-0ec4-4fcf-85bb-42d888679a17",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C68",
+      "claim": "SC-specific Spry1 overexpression attenuates age-related SC decline without compromising myogenic differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, based on restoration of post-synaptic myonuclei, prevention of age-related atrophy, and improved force generation, we demonstrate that SC-specific Spry1 overexpression attenuates age-related SC decline without compromising myogenic differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the Spry1OX experimental results showing preserved SC numbers and improved muscle function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "4ed9f7a6-e063-48ff-9834-238a5e1cbe65",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C69",
+      "claim": "In the context of aging, Spry1 modifies FGF activity to regulate SC pool size at homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of aging, Spry1 modifies FGF activity to regulate SC pool size at homeostasis; however, the mechanisms of Spry1-mediated regulation of adult and aged post-synaptic myogenic differentiation are unknown (Chakkalakal et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature (Chakkalakal et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "3a6fee5a-9c61-49f9-9a51-df01e9c7b911",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C70",
+      "claim": "The mechanisms of Spry1-mediated regulation of adult and aged post-synaptic myogenic differentiation are unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of aging, Spry1 modifies FGF activity to regulate SC pool size at homeostasis; however, the mechanisms of Spry1-mediated regulation of adult and aged post-synaptic myogenic differentiation are unknown (Chakkalakal et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an open question in the field.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "df114674-bb86-43f9-b355-94245d3ac78c",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C71",
+      "claim": "Fusion of SC derived Spry1OX myogenic progenitors could lead to suppression of extracellular signal-regulated kinase (ERK) activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, fusion of SC derived Spry1OX myogenic progenitors could lead to suppression of extracellular signal-regulated kinase (ERK) activity, which is elevated in skeletal muscle biopsies from chronic obstructive pulmonary disorder (COPD) patients and sedentary aged individuals (Lemire et al., 2012; Williamson et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about potential mechanism, with citations to previous literature (Lemire et al., 2012; Williamson et al., 2003).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "ad175bcc-bf0d-4082-a573-38abbabd1f6e",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C72",
+      "claim": "ERK activity is elevated in skeletal muscle biopsies from chronic obstructive pulmonary disorder (COPD) patients and sedentary aged individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, fusion of SC derived Spry1OX myogenic progenitors could lead to suppression of extracellular signal-regulated kinase (ERK) activity, which is elevated in skeletal muscle biopsies from chronic obstructive pulmonary disorder (COPD) patients and sedentary aged individuals (Lemire et al., 2012; Williamson et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature (Lemire et al., 2012; Williamson et al., 2003).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "a0a03399-8950-4903-ac9e-d399caa07420",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C73",
+      "claim": "In addition to maintaining skeletal muscle regenerative potential, Spry1 manipulation provides a viable approach for counteracting sarcopenia-related NMJ deterioration and aged muscle function decline.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless, in addition to maintaining skeletal muscle regenerative potential, Spry1 manipulation provides a viable approach for counteracting sarcopenia-related NMJ deterioration and aged muscle function decline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the Spry1OX experimental results showing improved NMJ integrity and muscle function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "a41a6bbb-ac2f-4582-9858-1e76270fc33c",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "claim_id": "C74",
+      "claim": "Loss of myofiber regenerative potential endowed in SCs is a significant mediator of age-related NMJ degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our observations, obtained through multiple lines of query, demonstrate that loss of myofiber regenerative potential endowed in SCs is a significant mediator of age-related NMJ degeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined experimental results showing the role of SCs in NMJ maintenance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "68caf4d4-45e0-4101-880e-402fa0ec1bff",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Aged skeletal muscles exhibit high levels of NMJ degeneration but minimal complete denervation. RNA-seq analysis revealed no elevation of denervation-associated synaptic gene expression in aged muscles, contrasting with robust denervation models. This suggests denervation is not a principal mechanism driving age-related NMJ degeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C4, and C56 provide converging morphological and transcriptional evidence that aged NMJs are degenerated but not extensively denervated. The RNA-seq data (C4) showing no extra-synaptic induction of synaptic genes, combined with low complete denervation rates (C2, C56), strongly support the conclusion (C33) that denervation is not the primary driver of age-related NMJ degeneration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "6398b09c-f067-4bd5-8268-64e0ca01d43d",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Age-related NMJ degeneration is associated with loss of post-synaptic myonuclei. RNA-seq revealed age-related declines in synapse-specific gene expression, and morphological analysis showed that degenerated NMJs had fewer post-synaptic myonuclei, with aged muscles having significantly fewer NMJs with >4 myonuclei.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C9 provide complementary transcriptional (C5) and morphological (C6-C8) evidence linking post-synaptic myonuclear loss to NMJ degeneration. The positive correlation between NMJ size and myonuclear cluster size (C6), combined with quantitative data showing reduced myonuclei in degenerated NMJs (C7-C8), strongly support the conclusion (C9).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "fca337bc-4e57-4f71-91d3-72ac24af489a",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Satellite cells contribute post-synaptic myonuclei to NMJs during adulthood and middle age, but this contribution declines with aging. Fate-tracking experiments showed GFP-labeled SC-derived myonuclei at NMJs at 6 and 12 months, but pronounced decline at 18 and 24 months, correlating with SC loss and NMJ degeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 provide direct experimental evidence from fate-tracking studies (P7mTmG and P7nTnG mice) demonstrating SC contribution to post-synaptic myonuclei and its age-related decline. The temporal correlation between SC loss (C10), reduced SC-derived contribution at NMJs (C13), and NMJ degeneration supports the mechanistic link (C32). The use of two independent reporter systems (C11, C12) strengthens the evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "08aed830-d96a-46ae-9ef9-e98f4129af14",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SC depletion is sufficient to accelerate age-related NMJ degeneration and myofiber atrophy. P7DTA mice showed degenerated NMJs at 12 months (earlier than controls), with reduced post-synaptic myonuclei preceding partial innervation, and significant myofiber atrophy without gross denervation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16 and C18 provide strong causal evidence from SC depletion experiments showing accelerated NMJ degeneration, reduced post-synaptic myonuclei, and myofiber atrophy. The temporal sequence (C15) showing myonuclear loss preceding innervation defects supports a myogenic rather than neurogenic mechanism. The conclusion (C19, C44) is well-supported by the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "e33cb8e9-80d7-408d-b38d-176fc0760dcf",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Spry1 overexpression in SCs preserves SC numbers, attenuates age-related NMJ degeneration, increases post-synaptic myonuclear clusters, and improves muscle function. Spry1OX mice showed reduced NMJ degeneration, increased myofiber size, improved treadmill performance, and enhanced absolute force generation without compromising myogenic differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 and C28 provide comprehensive evidence from Spry1OX experiments showing preserved SC numbers, improved NMJ integrity, increased myonuclear clusters, and enhanced muscle function. The functional improvements (C25-C26) combined with morphological preservation (C23-C24) strongly support the therapeutic potential (C29, C45, C73). However, C27 notes no difference in specific force, suggesting the improvement is primarily due to increased muscle mass rather than intrinsic contractile enhancement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "dde7e0f5-5899-4476-8c0d-24317203f5a1",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SC depletion did not alter the onset or severity of age-related reduction in fast type IIX myofibers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C17 is supported by myofiber type composition analysis showing that while type IIX myofibers decline with age, SC depletion does not affect this phenotype. This suggests fiber type transitions occur independently of SC loss, distinguishing this aspect of sarcopenia from NMJ degeneration and atrophy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "9c0be9f6-51b6-49df-b9bc-36cfd3fb9c99",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "No significant difference in specific force was observed between aged Spry1OX and control muscles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C27 is supported by force measurements normalized to cross-sectional area. This indicates that the increased absolute force in Spry1OX muscles (C26) is primarily due to increased muscle mass (C28) rather than improved intrinsic contractile properties. This is an important mechanistic distinction for understanding the functional benefits of SC preservation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "3699a5bc-fbf7-41b2-9aa2-ced31bcebeff",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Gene sets associated with AChR activity and neurotransmission were highly enriched in adult synaptic samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C3 is supported by GSEA analysis validating the fidelity of synaptic vs. extra-synaptic sample separation. This serves as a positive control for the RNA-seq methodology and confirms the expected molecular signature of NMJ-enriched regions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "484d6103-e4a0-4139-914e-8dfcf2729581",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Loss of SC contribution drives age-related NMJ degeneration, and deficiencies in SC fate and post-synaptic myogenesis provide a cellular basis for age-related NMJ degeneration and skeletal muscle decline.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These summary claims (C30, C46, C62, C74) are well-supported by the collective experimental evidence from fate-tracking (C11-C13), depletion (C14-C19), and rescue (C22-C29) experiments. The convergence of multiple experimental approaches provides strong support for the central thesis that SC loss is a primary driver of age-related NMJ degeneration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "dd376baf-7d70-46b5-9de3-cfd2511bad89",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Spry1 is a negative-feedback modulator of RTK/FGF signaling linked to SC pool maintenance, and its suppression is associated with age-related SC loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C21, C49, and C69 are supported by citations to previous literature establishing Spry1's role in SC maintenance. These claims provide the mechanistic rationale for using Spry1 overexpression as an intervention strategy in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "f3f47cd7-2d80-4ec0-9008-19091b5d74ba",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background knowledge claims about NMJ biology, SC function, and sarcopenia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C34-C42, C47-C48) establish the scientific context and are supported by appropriate citations to previous literature. They provide the foundation for the study's hypotheses and experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "bc69b3ad-510f-49a0-864d-fd62fcc83014",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Discussion of alternative mechanisms and prior observations related to NMJ degeneration and myonuclear dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C51-C54, C57-C61, C63-C64) are supported by citations to previous literature and provide important context for interpreting the current findings. They help distinguish the authors' observations from alternative mechanisms and prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "f9307c31-ecec-4d1b-b64b-61ce42517f0e",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Both loss and dissociation likely contribute to reductions in post-synaptic myonuclear cluster size with age.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C65 is a reasonable inference based on the discussion of mechanisms (C63-C64), but the current study does not directly distinguish between myonuclear loss versus dissociation. Additional experiments would be needed to determine the relative contributions of these mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "29a7d70b-a326-4a46-b1dc-e525c16eca89",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior studies showed Spry1/Spry2 manipulation can promote SC maintenance at the expense of differentiation in some contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 are supported by citations to previous literature and provide important context for distinguishing the current findings (C68) from prior work showing potential trade-offs between SC maintenance and differentiation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "3ce62c62-dc53-477d-911f-ea88e470ee63",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The mechanisms of Spry1-mediated regulation of adult and aged post-synaptic myogenic differentiation are unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 accurately identifies a knowledge gap that remains after the current study. While the study demonstrates that Spry1OX preserves SCs and improves NMJ integrity, the molecular mechanisms remain to be elucidated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "c079e8cd-ff73-48be-ab63-8fed13cff4e3",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Fusion of SC-derived Spry1OX myogenic progenitors could potentially suppress ERK activity, which is elevated in aged muscle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C71 is speculative about a potential mechanism, while C72 is supported by citations. However, the current study does not measure ERK activity, so this remains a hypothesis for future investigation. The speculation is reasonable but unvalidated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    },
+    {
+      "id": "2fcf6043-f537-434f-9ba7-9f16172998b1",
+      "content_id": "aa2d683e-29df-4338-ace0-04a2ccd9f90f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Degenerated NMJs in aged muscles were associated with reduced SC contribution rather than denervation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 summarizes the key finding and is supported by the experimental data showing limited denervation (C2, C4) but reduced SC contribution (C13) in aged muscles with degenerated NMJs. This is a central conclusion of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:25:47.895793Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2665a38f-654d-43ac-a6d6-cf38d66a7003",
+      "result_id": "68caf4d4-45e0-4101-880e-402fa0ec1bff"
+    },
+    {
+      "claim_id": "6087ef3d-ad49-4424-b4c1-2ae73df499ba",
+      "result_id": "68caf4d4-45e0-4101-880e-402fa0ec1bff"
+    },
+    {
+      "claim_id": "e90d5134-1d7a-4cf9-899a-7d9b985ccbed",
+      "result_id": "68caf4d4-45e0-4101-880e-402fa0ec1bff"
+    },
+    {
+      "claim_id": "6b0e9884-e8af-4956-aab0-7ff67033c645",
+      "result_id": "68caf4d4-45e0-4101-880e-402fa0ec1bff"
+    },
+    {
+      "claim_id": "9cace90c-ff0a-4e0c-a7e9-fc256a7da532",
+      "result_id": "68caf4d4-45e0-4101-880e-402fa0ec1bff"
+    },
+    {
+      "claim_id": "f474a084-10aa-4345-bbb3-89e9771b3bfe",
+      "result_id": "68caf4d4-45e0-4101-880e-402fa0ec1bff"
+    },
+    {
+      "claim_id": "c4c3918c-2ddd-499d-afff-748de50f50b2",
+      "result_id": "68caf4d4-45e0-4101-880e-402fa0ec1bff"
+    },
+    {
+      "claim_id": "d4fbdb8c-d5f9-4af6-8e23-0da1b9f61dc8",
+      "result_id": "6398b09c-f067-4bd5-8268-64e0ca01d43d"
+    },
+    {
+      "claim_id": "2a67b29a-a9a7-42e8-b1ff-6824b08d8e6f",
+      "result_id": "6398b09c-f067-4bd5-8268-64e0ca01d43d"
+    },
+    {
+      "claim_id": "83913306-5bd2-4380-b281-4bd8b63d17f0",
+      "result_id": "6398b09c-f067-4bd5-8268-64e0ca01d43d"
+    },
+    {
+      "claim_id": "6c1f4850-8eae-4f39-9552-7d25bd197bfc",
+      "result_id": "6398b09c-f067-4bd5-8268-64e0ca01d43d"
+    },
+    {
+      "claim_id": "468bd8f5-f019-4c81-b2f1-1602b6c95341",
+      "result_id": "6398b09c-f067-4bd5-8268-64e0ca01d43d"
+    },
+    {
+      "claim_id": "49cf7b3e-b4d5-4a78-a8bb-887517170f1b",
+      "result_id": "fca337bc-4e57-4f71-91d3-72ac24af489a"
+    },
+    {
+      "claim_id": "ff4e0811-0095-4185-aef3-19076c7df44e",
+      "result_id": "fca337bc-4e57-4f71-91d3-72ac24af489a"
+    },
+    {
+      "claim_id": "d8a6a6bc-a50b-4cd1-9b78-7217e172f1e5",
+      "result_id": "fca337bc-4e57-4f71-91d3-72ac24af489a"
+    },
+    {
+      "claim_id": "12d9c1e8-33f3-49df-b5fb-6dc2207a29f3",
+      "result_id": "fca337bc-4e57-4f71-91d3-72ac24af489a"
+    },
+    {
+      "claim_id": "c3b2c8d3-1cd1-4cfd-b38d-7aadbde51b7a",
+      "result_id": "fca337bc-4e57-4f71-91d3-72ac24af489a"
+    },
+    {
+      "claim_id": "dec653bd-2e5e-4f1c-a6fb-0a42aa8aca92",
+      "result_id": "fca337bc-4e57-4f71-91d3-72ac24af489a"
+    },
+    {
+      "claim_id": "924d82a0-baf5-436d-a600-2d244c06031b",
+      "result_id": "08aed830-d96a-46ae-9ef9-e98f4129af14"
+    },
+    {
+      "claim_id": "851f7fcb-c35f-41d6-90ea-98a856168700",
+      "result_id": "08aed830-d96a-46ae-9ef9-e98f4129af14"
+    },
+    {
+      "claim_id": "d316f753-a046-4c5f-9086-a5f021a7ef80",
+      "result_id": "08aed830-d96a-46ae-9ef9-e98f4129af14"
+    },
+    {
+      "claim_id": "23a7cacd-8092-4e84-8fd5-7184b05334f5",
+      "result_id": "08aed830-d96a-46ae-9ef9-e98f4129af14"
+    },
+    {
+      "claim_id": "66db19d0-7182-486a-9d3b-cdb206506e44",
+      "result_id": "08aed830-d96a-46ae-9ef9-e98f4129af14"
+    },
+    {
+      "claim_id": "7fc48b5e-761e-412e-81d7-42d4e3e466f9",
+      "result_id": "08aed830-d96a-46ae-9ef9-e98f4129af14"
+    },
+    {
+      "claim_id": "2d857fdc-d633-4f58-be3b-e37fee5fcbf6",
+      "result_id": "e33cb8e9-80d7-408d-b38d-176fc0760dcf"
+    },
+    {
+      "claim_id": "7aed1857-6f5f-4cac-ad8c-454498a8965a",
+      "result_id": "e33cb8e9-80d7-408d-b38d-176fc0760dcf"
+    },
+    {
+      "claim_id": "8089b5a9-3996-4040-89c2-520bb63dcf1e",
+      "result_id": "e33cb8e9-80d7-408d-b38d-176fc0760dcf"
+    },
+    {
+      "claim_id": "1ccf6db0-338c-4959-a9dd-92713d683164",
+      "result_id": "e33cb8e9-80d7-408d-b38d-176fc0760dcf"
+    },
+    {
+      "claim_id": "d47f77e9-7063-489e-9daf-22aa68b97a3c",
+      "result_id": "e33cb8e9-80d7-408d-b38d-176fc0760dcf"
+    },
+    {
+      "claim_id": "051c5c36-ba11-4fad-85c5-9118a47ed286",
+      "result_id": "e33cb8e9-80d7-408d-b38d-176fc0760dcf"
+    },
+    {
+      "claim_id": "fef34721-81a7-4bf6-b9e5-8f10c6c356e3",
+      "result_id": "e33cb8e9-80d7-408d-b38d-176fc0760dcf"
+    },
+    {
+      "claim_id": "b234afe8-36be-479e-a26c-d3acb5b4b3dc",
+      "result_id": "e33cb8e9-80d7-408d-b38d-176fc0760dcf"
+    },
+    {
+      "claim_id": "06c2a8c8-0ec4-4fcf-85bb-42d888679a17",
+      "result_id": "e33cb8e9-80d7-408d-b38d-176fc0760dcf"
+    },
+    {
+      "claim_id": "a0a03399-8950-4903-ac9e-d399caa07420",
+      "result_id": "e33cb8e9-80d7-408d-b38d-176fc0760dcf"
+    },
+    {
+      "claim_id": "cac94d12-df41-4f9f-a6d4-b108cb091c24",
+      "result_id": "dde7e0f5-5899-4476-8c0d-24317203f5a1"
+    },
+    {
+      "claim_id": "e43b35a8-3ed5-48ef-979e-f39494b646de",
+      "result_id": "9c0be9f6-51b6-49df-b9bc-36cfd3fb9c99"
+    },
+    {
+      "claim_id": "1bcb3904-71bd-40df-b150-58601067cf52",
+      "result_id": "3699a5bc-fbf7-41b2-9aa2-ced31bcebeff"
+    },
+    {
+      "claim_id": "c87a44fb-f911-41a2-8c17-6df5df76c515",
+      "result_id": "484d6103-e4a0-4139-914e-8dfcf2729581"
+    },
+    {
+      "claim_id": "2f607e59-3756-48ef-a488-a00042d374b2",
+      "result_id": "484d6103-e4a0-4139-914e-8dfcf2729581"
+    },
+    {
+      "claim_id": "c19b6b2d-bf0d-44ec-aaff-5866b62b2306",
+      "result_id": "484d6103-e4a0-4139-914e-8dfcf2729581"
+    },
+    {
+      "claim_id": "a41a6bbb-ac2f-4582-9858-1e76270fc33c",
+      "result_id": "484d6103-e4a0-4139-914e-8dfcf2729581"
+    },
+    {
+      "claim_id": "0e08fbbc-ff28-4509-8cb1-ac4f53d3220d",
+      "result_id": "dd376baf-7d70-46b5-9de3-cfd2511bad89"
+    },
+    {
+      "claim_id": "9e640af6-f332-4dfa-ae0c-5a0012993f2b",
+      "result_id": "dd376baf-7d70-46b5-9de3-cfd2511bad89"
+    },
+    {
+      "claim_id": "0188c4fd-68be-4cbd-9c67-f07636b7bc34",
+      "result_id": "dd376baf-7d70-46b5-9de3-cfd2511bad89"
+    },
+    {
+      "claim_id": "4ed9f7a6-e063-48ff-9834-238a5e1cbe65",
+      "result_id": "dd376baf-7d70-46b5-9de3-cfd2511bad89"
+    },
+    {
+      "claim_id": "df57c45e-b412-495e-be11-11d2ebc219f9",
+      "result_id": "f3f47cd7-2d80-4ec0-9008-19091b5d74ba"
+    },
+    {
+      "claim_id": "9fe39f67-0d91-4ba3-8759-332dac0f6b6a",
+      "result_id": "f3f47cd7-2d80-4ec0-9008-19091b5d74ba"
+    },
+    {
+      "claim_id": "064cb090-3b19-46e2-a338-3ddfeb156618",
+      "result_id": "f3f47cd7-2d80-4ec0-9008-19091b5d74ba"
+    },
+    {
+      "claim_id": "95bf9d5b-0301-4fb9-a189-9cb57d7fe4db",
+      "result_id": "f3f47cd7-2d80-4ec0-9008-19091b5d74ba"
+    },
+    {
+      "claim_id": "1a1cbdb9-72e4-40ae-938e-3476e43b2ea3",
+      "result_id": "f3f47cd7-2d80-4ec0-9008-19091b5d74ba"
+    },
+    {
+      "claim_id": "8b2558b7-7dda-4adf-9b93-ccdc5b5b5d0e",
+      "result_id": "f3f47cd7-2d80-4ec0-9008-19091b5d74ba"
+    },
+    {
+      "claim_id": "0d71f884-9b64-4c00-8a3a-e96afa0c8ca8",
+      "result_id": "f3f47cd7-2d80-4ec0-9008-19091b5d74ba"
+    },
+    {
+      "claim_id": "1693b069-18e7-4169-8cd7-e470322df7a5",
+      "result_id": "f3f47cd7-2d80-4ec0-9008-19091b5d74ba"
+    },
+    {
+      "claim_id": "4e8fc141-ee68-4b17-be82-bd4367a8c36d",
+      "result_id": "f3f47cd7-2d80-4ec0-9008-19091b5d74ba"
+    },
+    {
+      "claim_id": "0f2a79a2-ebb2-4f6f-ac53-a975eea56020",
+      "result_id": "f3f47cd7-2d80-4ec0-9008-19091b5d74ba"
+    },
+    {
+      "claim_id": "18f6a02e-6cfe-4cb6-9b8d-3242f17a5900",
+      "result_id": "f3f47cd7-2d80-4ec0-9008-19091b5d74ba"
+    },
+    {
+      "claim_id": "0805aa39-18b9-4a03-9b22-69e984902131",
+      "result_id": "bc69b3ad-510f-49a0-864d-fd62fcc83014"
+    },
+    {
+      "claim_id": "253f937a-b0cf-4217-b0e6-d262c72a7dce",
+      "result_id": "bc69b3ad-510f-49a0-864d-fd62fcc83014"
+    },
+    {
+      "claim_id": "7d0174c9-ea29-497f-888d-70fc30567338",
+      "result_id": "bc69b3ad-510f-49a0-864d-fd62fcc83014"
+    },
+    {
+      "claim_id": "ecbd90e0-b501-4151-8489-7d624a7f3918",
+      "result_id": "bc69b3ad-510f-49a0-864d-fd62fcc83014"
+    },
+    {
+      "claim_id": "7bb69f51-6504-454f-bb5c-65083cc29dba",
+      "result_id": "bc69b3ad-510f-49a0-864d-fd62fcc83014"
+    },
+    {
+      "claim_id": "a753a1f6-a1d3-4bcd-8422-756c7f518043",
+      "result_id": "bc69b3ad-510f-49a0-864d-fd62fcc83014"
+    },
+    {
+      "claim_id": "d11972b0-f854-49e8-b419-7a1b1fe81bc0",
+      "result_id": "bc69b3ad-510f-49a0-864d-fd62fcc83014"
+    },
+    {
+      "claim_id": "69fc65fb-7050-4ffd-9b35-54a4f065341b",
+      "result_id": "bc69b3ad-510f-49a0-864d-fd62fcc83014"
+    },
+    {
+      "claim_id": "379c663d-64f9-45c4-935f-793437a46c4b",
+      "result_id": "bc69b3ad-510f-49a0-864d-fd62fcc83014"
+    },
+    {
+      "claim_id": "35d1fcd3-3d52-439c-8563-7a35c91d5eb4",
+      "result_id": "bc69b3ad-510f-49a0-864d-fd62fcc83014"
+    },
+    {
+      "claim_id": "3b72d830-ffa8-484e-872f-45f9c9e9a196",
+      "result_id": "bc69b3ad-510f-49a0-864d-fd62fcc83014"
+    },
+    {
+      "claim_id": "682439b1-7486-40b7-a391-f73dfd0b84b1",
+      "result_id": "f9307c31-ecec-4d1b-b64b-61ce42517f0e"
+    },
+    {
+      "claim_id": "b892e228-a8e6-42ed-a6e0-d9b32a107444",
+      "result_id": "29a7d70b-a326-4a46-b1dc-e525c16eca89"
+    },
+    {
+      "claim_id": "6f360aa6-19d3-4f83-83cd-f998ee12d434",
+      "result_id": "29a7d70b-a326-4a46-b1dc-e525c16eca89"
+    },
+    {
+      "claim_id": "3a6fee5a-9c61-49f9-9a51-df01e9c7b911",
+      "result_id": "3ce62c62-dc53-477d-911f-ea88e470ee63"
+    },
+    {
+      "claim_id": "df114674-bb86-43f9-b355-94245d3ac78c",
+      "result_id": "c079e8cd-ff73-48be-ab63-8fed13cff4e3"
+    },
+    {
+      "claim_id": "ad175bcc-bf0d-4082-a573-38abbabd1f6e",
+      "result_id": "c079e8cd-ff73-48be-ab63-8fed13cff4e3"
+    },
+    {
+      "claim_id": "fb6f9396-6c8b-4fec-b04e-b73c8683067c",
+      "result_id": "2fcf6043-f537-434f-9ba7-9f16172998b1"
+    }
+  ],
+  "comparisons": []
+}

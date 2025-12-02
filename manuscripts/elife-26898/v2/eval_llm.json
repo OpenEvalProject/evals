@@ -1,0 +1,441 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C50",
+      "C51"
+    ],
+    "result": "Adam13 proteolytically cleaves pcdh8l to generate an extracellular fragment. Co-transfection experiments in Hek293T cells show that adam13 produces a pcdh8l fragment detected in conditioned media, while the proteolytically inactive mutant (A13E/A) does not. In vivo, pcdh8l fragments increase in embryos overexpressing adam13.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 demonstrate proteolytic cleavage in vitro using appropriate controls (inactive mutant), and C50-C51 confirm this activity in vivo. The use of both gain-of-function and loss-of-function approaches with proper controls supports the conclusion that adam13 proteolytic activity is responsible for pcdh8l cleavage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The pcdh8l extracellular fragment and full-length pcdh8l can partially rescue CNC migration defects caused by adam13 loss. Rescue with adam13 mRNA (26% inhibition) is more effective than EC1-4 fragment (47% inhibition), but surprisingly, full-length pcdh8l (36% inhibition) rescues better than the fragment alone, suggesting adam13 loss affects pcdh8l expression, localization, or function beyond simple cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 provide quantitative rescue data with appropriate controls (MO13 alone at 57% inhibition). The unexpected finding that full-length pcdh8l rescues better than the fragment (C55-C56) is properly acknowledged and leads to the hypothesis in C57. Statistical significance is indicated, though sample sizes should be verified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Adam13 knockdown significantly reduces pcdh8l expression at both mRNA and protein levels. MO13 injection reduces pcdh8l mRNA by 43% in whole embryos and 36% in isolated CNC, with corresponding protein reductions observed by western blot and in situ hybridization (71% of embryos show reduced expression on injected side).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 provide convergent evidence from multiple techniques (qPCR, western blot, in situ hybridization) and tissue sources (whole embryos, isolated CNC). The consistency across methods and the use of appropriate controls (non-injected embryos/sides) strongly support the conclusion in C63.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Both the proteolytic activity and cytoplasmic domain of adam13 are required for pcdh8l induction in na\u00efve ectoderm. Wild-type adam13 induces pcdh8l expression in animal caps, while the catalytically inactive mutant (A13E/A), cytoplasmic domain deletion mutant (\u0394Cyto), and isolated cytoplasmic domain (C13) all fail to induce expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 systematically test different adam13 mutants, demonstrating that both domains are necessary. The data from both mRNA (C64-C67) and protein levels (C68) are consistent. The use of multiple mutants provides strong evidence for the dual requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Adam13 regulates tfap2\u03b1 expression and promoter activity. MO13 reduces tfap2\u03b1 mRNA to 67% of control by qPCR and reduces expression in 76% of embryos by in situ hybridization. Luciferase assays show significant reduction in tfap2\u03b1 promoter activity in CNC explants from adam13 knockdown embryos, with the magnitude matching the endogenous mRNA reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 provide convergent evidence from multiple assays (qPCR, in situ, luciferase). The observation in C72-C73 that the reporter reduction matches endogenous mRNA reduction suggests the 2.5 Kbp promoter contains key regulatory elements, though this inference could benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Adam13 induces tfap2\u03b1 expression in na\u00efve ectoderm and Hek293T cells, requiring both cytoplasmic domain and proteolytic activity in ectoderm but showing different requirements in Hek293T cells. In animal caps, both domains are essential for full induction. In Hek293T cells, adam13 and adam19 (but not adam9) induce the tfap2\u03b1 promoter ~4-fold, with the cytoplasmic domain being critical but the proteolytically inactive mutant retaining partial activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 demonstrate context-dependent requirements for adam13 function. The animal cap data (C74-C75) are consistent with pcdh8l induction requirements. The Hek293T data (C76-C80) reveal interesting differences, particularly the partial activity of A13E/A (C80), which the authors later attempt to explain. The specificity shown by adam9's inability to induce tfap2\u03b1 (C77) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Adam13 induction of pcdh8l and tfap2\u03b1 requires tfap2\u03b1 but not \u03b2-catenin. Tfap2\u03b1 morpholino prevents adam13 induction of both genes, while \u03b2-catenin knockdown has no effect. Additionally, tfap2\u03b1 knockdown prevents adam13 induction of tfap2\u03b1 itself, suggesting a positive feedback loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 use appropriate loss-of-function approaches to test pathway requirements. The positive feedback mechanism (C83) is a reasonable inference from the data, though the term 'positive feedback loop' implies tfap2\u03b1 directly regulates its own promoter, which is not directly demonstrated. The conclusion is supported but could be stated more cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Adam13 physically interacts with both arid3a and foxd3 transcription factors in vivo. Co-immunoprecipitation experiments show that arid3a-flag and foxd3-myc co-precipitate with adam13 in embryos, and these interactions are lost when adam13 is knocked down.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 provide direct biochemical evidence for protein-protein interactions using co-IP. The loss of interaction upon adam13 knockdown (C85, C87) serves as an important specificity control. However, the experiments use overexpressed tagged proteins, which could affect interaction dynamics. Confirmation with endogenous proteins would strengthen the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Arid3a, but not foxd3, is required for adam13 induction of tfap2\u03b1 and pcdh8l. Arid3a knockdown efficiently prevents adam13 induction of both genes in animal caps, while foxd3 knockdown has no effect. Adam13 gain or loss of function does not affect arid3a or foxd3 expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 clearly distinguish between the two transcription factors using loss-of-function approaches. Claim C91 is important for establishing that arid3a is not simply downstream of adam13 but rather works together with it, supporting the proposed model of interaction rather than a linear pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Adam13 regulation of tfap2\u03b1 does not involve the TGF\u03b2 signaling pathway. Adam13 induces tfap2\u03b1 and pcdh8l even when Smad2 is knocked down in animal caps. In Hek293T cells, Smad2 does not induce the tfap2\u03b1 promoter, and Smad7 does not prevent adam13 induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 use appropriate loss-of-function and gain-of-function approaches to test TGF\u03b2 pathway involvement. The convergent evidence from both animal caps and Hek293T cells supports the conclusion in C95. This is important for distinguishing adam13's mechanism from previously reported TGF\u03b2-dependent functions of other ADAMs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Arid3a plays a key role in neural crest cell patterning. Loss of arid3a (by injection at 8-cell stage in dorsal animal blastomere) decreases expression of tfap2\u03b1, pcdh8l, and snai2, suggesting involvement in neural crest specification beyond the adam13 pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 provides in situ hybridization data showing effects on multiple neural crest markers. The inference in C97 about a 'key role in neural crest cell patterning' is reasonable given the effects on multiple markers, though the injection strategy (8-cell stage, single blastomere) helps avoid earlier mesoderm defects. Additional functional assays would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Tfap2\u03b1, but not arid3a, can rescue CNC migration in embryos lacking adam13, and arid3a is not downstream of adam13 but rather works together with it. Tfap2\u03b1 injection significantly rescues migration similar to pcdh8l, while arid3a expression has no effect. Combined with the observation that arid3a expression is not regulated by adam13 and that both proteins interact, this suggests arid3a and adam13 function cooperatively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 provide clear rescue data distinguishing tfap2\u03b1 from arid3a. The synthesis in C101 integrates multiple lines of evidence (expression independence C100, physical interaction C88, lack of rescue C99) to support a cooperative model rather than a linear pathway. This is a well-reasoned interpretation of the collective data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Adam13 regulates arid3a post-translational modification and nuclear translocation. In transfected Hek293T cells, arid3a is equally distributed between cytoplasm and nucleus, but a 40 kDa fragment (arid3a Short) is much more abundant in the nucleus when co-transfected with adam13. This increase depends on both adam13's proteolytic activity and cytoplasmic domain, as neither the protease-dead mutant (A13E/A) nor the cytoplasmic domain deletion mutant (A13\u0394Cyto) increase the nuclear fragment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 and C136-C138 provide subcellular fractionation data with appropriate mutant controls. The requirement for both domains is clearly demonstrated. However, the experiments are performed in Hek293T cells with overexpressed proteins, which may not fully recapitulate the endogenous situation in Xenopus CNC cells. Confirmation in the native context would strengthen these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Adam13 regulates arid3a processing at the plasma membrane in a manner dependent on its cytoplasmic domain but not its proteolytic activity. Arid3a is found in the membrane fraction of Hek293T cells, where the 40 kDa fragment (arid3a Short) is enriched with adam13 co-expression. Surprisingly, this fragment is dramatically increased with the protease-dead mutant (A13E/A), suggesting adam13 proteolytic activity is not responsible for producing arid3a Short. In contrast, the cytoplasmic domain deletion mutant shows no increase in the fragment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 provide membrane fractionation data revealing an unexpected pattern: the cytoplasmic domain is required for fragment production (C109), but the proteolytic activity appears to promote fragment release rather than production (C107-C108). This leads to the reasonable conclusion in C110, though the mechanism remains unclear. The counterintuitive finding with A13E/A is acknowledged and later addressed in the discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C122"
+    ],
+    "result": "A proposed model for adam13-arid3a interaction: the adam13 cytoplasmic domain is part of a complex that cleaves or stabilizes cleaved arid3a at the plasma membrane. Upon adam13 self-proteolysis and gamma secretase cleavage of the cytoplasmic domain, the complex containing cleaved arid3a and the adam13 cytoplasmic domain translocates to the nucleus. Without proteolytic activity, the complex remains at the membrane; without the cytoplasmic domain, the complex does not form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C114 and C122 present a mechanistic model based on the experimental data. While the model is consistent with the observations (membrane accumulation with A13E/A in C113, no complex formation with \u0394Cyto in C114), it remains speculative. The model proposes specific molecular events (complex formation, translocation) that are not directly demonstrated. Key predictions of this model (e.g., co-localization, co-translocation) would need to be tested to elevate this from UNCERTAIN to SUPPORTED.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Adam13 expression is essential for proper tfap2\u03b1 expression through interaction with arid3a, requiring both the cytoplasmic domain and metalloprotease activity in na\u00efve ectoderm. This represents a major conclusion synthesizing the regulatory relationship between adam13, arid3a, and tfap2\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 synthesize multiple experimental findings into an overarching conclusion. The evidence from knockdown experiments (C69-C71), induction experiments (C74-C75), interaction studies (C84-C88), and requirement for arid3a (C89) collectively support this conclusion. The dual requirement for both adam13 domains is well-established across multiple assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C139"
+    ],
+    "result": "The adam13 cytoplasmic domain is critical for stabilizing or inducing arid3a cleavage at the plasma membrane, while adam13 proteolytic activity controls nuclear accumulation of the arid3a fragment. The 40 kDa fragment likely maintains the intact ARID (DNA binding) and RECKLES (nuclear localization) domains based on molecular weight calculations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 summarize the differential roles of adam13's two functional domains based on the fractionation experiments. The inference in C139 about domain retention in the fragment is reasonable based on molecular weight but remains indirect. Mass spectrometry or epitope mapping would provide direct confirmation of the fragment's composition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Adam13 activation of tfap2\u03b1 in na\u00efve ectoderm does not require \u03b2-catenin, though tfap2\u03b1 can be induced by \u03b2-catenin in CNC. Adam13 induction of tfap2\u03b1 requires tfap2\u03b1 itself, suggesting a positive feedback mechanism. The similar expression patterns of adam13 and tfap2\u03b1 suggest initial co-regulation (possibly by \u03b2-catenin), with adam13 later required for maintenance and amplification of tfap2\u03b1 in neural folds and neural crest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145 and C147 are directly supported by experimental data (C82, C83). The model in C150-C151 integrating expression pattern data (C148-C149) with functional data is a reasonable interpretation. The distinction between initial induction and later maintenance (C151) is inferred rather than directly demonstrated but is consistent with the observation that adam13 is not required for \u03b2-catenin induction of snai2 (C152).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Adam13 induction of tfap2\u03b1 results in induction of pcdh8l and up-regulation of Cpn8a, both critical for CNC migration. CNC lacking adam13 can migrate in vitro (unlike those lacking pcdh8l), which may be explained by eventual expression of both tfap2\u03b1 and pcdh8l in adam13-deficient CNC, suggesting activation of alternative regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C157 synthesizes the regulatory cascade demonstrated in the paper. The observation in C159 (citing previous work) and C160 (current observation) leads to the reasonable inference in C161 about compensatory mechanisms. However, the nature of these alternative mechanisms is not investigated, leaving this as a hypothesis for future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "The transcriptional and proteolytic activities of adam13 can be uncoupled in rescue experiments. Greater rescue of CNC migration is achieved by combining full-length pcdh8l with adam13 lacking a cytoplasmic domain (which can cleave but not regulate transcription) or by combining the EC1-4 fragment with tfap2\u03b1, demonstrating that both activities contribute independently to CNC migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169 and C171 provide experimental evidence for uncoupling the two activities, with C170 explaining the properties of the \u0394Cyto mutant. The conclusion in C172 is well-supported by these rescue experiments, which cleverly separate the proteolytic and transcriptional functions. This is an important finding demonstrating the dual mechanism by which adam13 regulates pcdh8l.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "A proposed explanation for why the adam13 E/A mutant can induce the tfap2\u03b1 reporter in Hek293T cells: it may act as a dominant mutant by sequestering the inhibitory transcription factor e2f1 at the plasma membrane. E2f1 inhibits the tfap2\u03b1 promoter and blocks adam13/arid3a induction in Hek293T cells, but is strongly downregulated at stage 20 in Xenopus when animal caps are extracted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C127 present unpublished data about e2f1's effects, which cannot be fully evaluated. The model in C128 is speculative, proposing a sequestration mechanism that is not directly tested. The observation in C129 about e2f1 expression timing provides context but doesn't validate the model. This explanation remains a hypothesis requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "Adam19 may compensate for adam13 loss in CNC and could regulate tfap2\u03b1 to promote CNC migration in mouse. Adam19 can activate the tfap2\u03b1 reporter in Hek293T cells, and its cytoplasmic domain can functionally replace adam13's cytoplasmic domain. Given adam19's expression in mouse CNC and role in cardiac neural crest development, it may regulate tfap2\u03b1 in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C162 is supported by data (C77), and C164 cites previous findings. However, the speculation in C163 and C166 about adam19's role in vivo is not tested. While the functional similarity between adam13 and adam19 cytoplasmic domains is established, whether adam19 actually compensates for adam13 in CNC or regulates tfap2\u03b1 in mouse remains hypothetical and requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "Cadherin/protocadherin extracellular fragments may share a common mechanism of action through growth factor receptors. The cadherin-11 extracellular fragment binds ErbB2 and regulates Akt phosphorylation (submitted work), and E-cadherin fragments can also bind ErbB2 to promote migration in cancer cells, suggesting a conserved signaling mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C173 references submitted (unpublished) work that cannot be fully evaluated. Claim C174 cites published work on E-cadherin. The inference in C175 about a common structure/mechanism is reasonable but speculative without direct comparative studies or structure-function analysis. This hypothesis requires additional experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "A proposed mechanism for adam13 regulation of arid3a based on B-cell biology: In B-cells, arid3a is palmitoylated and associates with lipid rafts, then is sumoylated and released upon B-cell receptor stimulation. Adam13 may similarly regulate a lipid raft-associated pool of arid3a in neural crest cells by assembling a signaling complex that includes a protease to cleave arid3a's N-terminal domain, releasing a transcriptional inhibitor or destabilizing membrane interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C131 cite established findings in B-cells. However, claims C132-C135 are entirely speculative, proposing mechanisms that are not tested in the current study. While the analogy to B-cell regulation is interesting, there is no direct evidence that arid3a is palmitoylated, sumoylated, or associated with lipid rafts in neural crest cells, nor that adam13 regulates these modifications. This remains a hypothesis for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Fz4-v1 regulation of adam13 supports the proposed model. Fz4-v1 binds adam13 and prevents its proteolytic activity; Fz4-v1 knockdown induces early production of the adam13 cytoplasmic fragment and increases tfap2\u03b1 and pcdh8l transcription in embryos. In Hek293T cells, Fzd4-v1 expression inhibits adam13 activation of the tfap2\u03b1 reporter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C141-C142 cite previous work by the authors. Claim C143 presents unpublished data that cannot be fully evaluated. Claim C144 provides supporting data from Hek293T cells. While these observations are consistent with the model, the unpublished embryo data (C143) is critical for the argument but cannot be assessed. The Hek293T data alone (C144) provides some support but is insufficient without the in vivo data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Adam13 can induce some but not all neural crest markers in na\u00efve ectoderm. Both arid3a and tfap2\u03b1 can individually induce the tfap2\u03b1 reporter with additive effects when combined (unpublished). Adam13 can induce snail2 and twist but not cadherin-11, sox8, or sox10, suggesting it cannot fully induce neural crest cells from na\u00efve ectoderm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C153-C154 present unpublished data that cannot be fully evaluated but would support the cooperative model. Claims C155-C156 also present unpublished data about selective marker induction. While the conclusion in C156 is reasonable (inability to induce all markers suggests incomplete specification), the lack of published data for these key observations limits confidence in this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C176",
+      "C177"
+    ],
+    "result": "Multiple ADAM cytoplasmic domains can translocate to the nucleus if cleaved from the membrane, and adam13 physically interacts with importin \u03b21, which mediates nuclear transport of proteins lacking canonical nuclear localization signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C176 cites previous work by the authors. Claim C177 presents unpublished mass spectrometry data identifying importin \u03b21 interaction. While this finding would provide a mechanistic explanation for nuclear translocation, the unpublished nature of the data prevents full evaluation. The interaction should be validated by co-IP and functional studies should test whether importin \u03b21 is required for adam13 cytoplasmic domain nuclear translocation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "Other ADAM proteins may regulate tfap2\u03b1 through arid3a. Preliminary data suggest mouse adam33 and adam12 can induce the tfap2\u03b1 reporter in Hek293T cells (less efficiently than adam13/19), while Xenopus adam9, 10, and 11 cannot. Adam12's role in TGF\u03b2 signaling may involve arid3a (downstream of Smad2), and both adam12 and arid3a are critical for trophoblast formation, suggesting this functional interaction may be important across cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C180-C181 present preliminary unpublished data. The speculation in C182 about adam12-arid3a interaction is based on both being in the TGF\u03b2 pathway (C183) and both being required for trophoblast formation (C184), but no direct interaction or functional relationship is demonstrated. The inference in C185 is reasonable but requires experimental validation. This represents an interesting hypothesis for future work but lacks sufficient current support.",
+    "result_type": "MINOR"
+  }
+]

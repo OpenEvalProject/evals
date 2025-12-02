@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "In utero glucocorticoid (iuGC) exposure causes long-lasting increases in cholinergic markers in the LDT. Specifically, iuGC animals show increased density of ChAT+ cells and elevated ChAT gene and protein expression from postnatal day 3 through adulthood (90 days), along with decreased AChE expression in adults. These changes are specific to the LDT, as other cholinergic brain regions remain unaltered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 provide converging evidence from immunohistochemistry, qPCR, and Western blot across multiple developmental timepoints (3, 30, and 90 days). Statistical analyses with appropriate post-hoc tests support the findings. The regional specificity (C30) and negative control for VAChT (C33) strengthen the conclusion. The data consistently demonstrate selective, persistent cholinergic alterations in the LDT.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "In utero glucocorticoid exposure does not affect glutamatergic (EAAC1), GABAergic (GAD1/67, GAD2/65), or glucocorticoid receptor (GR) markers in the LDT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 demonstrate specificity of the iuGC effect to cholinergic markers. Both gene and protein expression data for glutamatergic and GABAergic markers show no significant differences, as does GR expression. These negative results are important controls that strengthen the specificity of the cholinergic findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "iuGC treatment decreases spontaneous neuronal activity in the LDT but does not affect basal VTA activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are supported by in vivo electrophysiology data with appropriate statistical tests and adequate sample sizes (CTR=36 cells/8 animals, iuGC=94 cells/11 animals for LDT; CTR=40 cells/8 animals, iuGC=32 cells/11 animals for VTA). The finding that basal VTA activity is unchanged despite LDT hypoactivity is important for understanding circuit-level effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Electrical stimulation of the LDT produces altered VTA responses in iuGC animals, characterized by a shift in cell-type specific responses. In iuGC animals, there is decreased excitation of putative dopaminergic (pDAergic) neurons and increased excitation of putative GABAergic (pGABAergic) neurons, along with increased inhibition of pDAergic neurons. Additionally, excitatory responses show increased latency and decreased magnitude and duration, while inhibitory responses show increased magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 provide comprehensive electrophysiological characterization with statistical support. The cell-type classification based on waveform and firing rate (referenced in C44-C45) follows established methods, though the authors acknowledge some controversy. The convergent findings of altered response proportions, latencies, magnitudes, and durations provide strong evidence for LDT-VTA circuit dysfunction in iuGC animals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Optogenetic stimulation of LDT terminals in the VTA increases VTA neuronal firing in both control and iuGC animals, but the cell-type distribution of responses differs between groups. In control animals, excitatory responses are predominantly in pDAergic neurons (69%) and inhibitory responses in pGABAergic neurons (87%). In iuGC animals, excitatory responses remain predominantly pDAergic (83%), but inhibitory responses shift to predominantly pDAergic neurons (55%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 use pathway-specific optogenetic stimulation to confirm and extend the electrical stimulation findings. The retrograde WGA-Cre approach ensures specificity for LDT\u2192VTA projections. The finding that optogenetic stimulation does not show the increased latency observed with electrical stimulation (C46) supports the interpretation of axonal conductivity changes. Statistical analyses are appropriate and sample sizes adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "iuGC animals show motivational deficits in a progressive ratio task (decreased breakpoint), which are rescued by optogenetic activation of LDT-VTA terminals during cue exposure but not during inter-trial intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 demonstrate functional behavioral consequences of the circuit alterations. The specificity of the rescue effect to cue exposure periods (C57 vs C58) is particularly compelling and suggests a role for LDT-VTA in cue-driven motivation. Statistical analyses are appropriate with multiple control groups. The temporal specificity of the optogenetic rescue strengthens the causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Higher intensity optogenetic stimulation (80 pulses vs 30 pulses) of LDT-VTA terminals increases breakpoint in control animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 addresses an apparent discrepancy with prior literature showing LDT-VTA stimulation is reinforcing. The dose-response relationship demonstrates that control animals require higher stimulation intensity to show motivational enhancement, consistent with the hypothesis that iuGC animals have altered circuit sensitivity. Statistical support is adequate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "LDT-VTA optogenetic stimulation induces conditioned place preference (CPP) in iuGC animals at lower stimulation intensities (30 pulses) than required for control animals (80 pulses).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 demonstrate that iuGC animals are more susceptible to the reinforcing properties of LDT-VTA stimulation. The dose-response relationship parallels the progressive ratio findings and supports increased circuit sensitivity in iuGC animals. Statistical analyses are appropriate with adequate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "In a real-time place preference (RTPP) test, optogenetic stimulation of LDT terminals in the VTA elicits preference for the stimulation-paired chamber in both control and iuGC animals expressing ChR2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 demonstrates the reinforcing properties of LDT-VTA stimulation in a contingent paradigm. Unlike CPP, both groups show preference at the same stimulation parameters, suggesting the contingent nature of RTPP may be more sensitive. Statistical analyses are robust with appropriate controls (CTR and CTR-eYFP showing no preference).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Prenatal glucocorticoid exposure selectively alters cholinergic markers (ChAT and AChE) in the LDT without affecting glutamatergic or GABAergic markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 summarize the molecular findings from the discussion. These are well-supported by the data claims C28-C37. The specificity to cholinergic markers is an important conclusion that suggests selective vulnerability or regulation of cholinergic systems by glucocorticoids.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "iuGC animals show decreased basal LDT neuronal activity and altered VTA responses to LDT stimulation, including decreased magnitude and duration of excitation, increased inhibition, and substantially increased latency of excitatory responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 summarize the electrophysiological findings from the discussion. These are well-supported by data claims C41-C49. The convergent evidence from multiple response parameters (latency, magnitude, duration, cell-type distribution) provides strong support for LDT-VTA circuit dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "The increased latency of VTA excitatory responses to LDT electrical stimulation is not observed with optogenetic stimulation of LDT-VTA terminals, suggesting changes in axonal conductivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 provides a mechanistic interpretation of the latency difference between electrical and optogenetic stimulation. This inference is logical and supported by the data, though the authors appropriately note that pre- and post-synaptic changes may also contribute. The interpretation is reasonable but would benefit from additional experiments to definitively establish axonal conductivity changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "In iuGC animals, there is a shift in LDT-VTA evoked responses with increased inhibition of dopaminergic neurons and decreased inhibition of GABAergic neurons, suggesting reduced VTA dopaminergic neuron activity consistent with previously observed decreased NAc dopamine levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 integrate the current electrophysiological findings with prior work on dopamine levels. The inference that altered LDT-VTA responses lead to reduced dopaminergic activity is logical and supported by convergent evidence, though it remains somewhat indirect. The consistency with prior findings (C39) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Brief optogenetic activation of LDT-VTA terminals during cue exposure rescues motivational deficits in iuGC animals with minimal impact on controls, and stimulation during time-out periods has no behavioral effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 summarize the key behavioral rescue findings. The temporal specificity (cue exposure vs. time-out) is particularly important for establishing the functional role of LDT-VTA in cue-driven motivation. The data are well-supported by claims C57-C58.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Optogenetic activation of LDT-VTA projections induces place preference in both CPP and RTPP tests, with iuGC animals showing increased susceptibility (responding to lower stimulation intensities than controls).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 summarize the reinforcement findings across two behavioral paradigms. The convergent evidence from CPP and RTPP, along with the dose-response relationship, strongly supports increased vulnerability of iuGC animals to LDT-VTA stimulation. This is well-supported by data claims C60-C62.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "iuGC exposure leads to long-lasting molecular and physiological alterations in the LDT-VTA circuit with associated motivational deficits that can be rescued by optogenetic activation. LDT-VTA activation is reinforcing, and iuGC animals show increased vulnerability to these reinforcing properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 provide an integrated summary of the major findings. These conclusions are well-supported by the convergent evidence from molecular (C28-C35), electrophysiological (C41-C55), and behavioral (C56-C62) experiments. The causal link between circuit alterations and behavior is strengthened by the optogenetic rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "The increased vulnerability of iuGC animals to LDT-VTA stimulation is hypothesized to result from an imbalance in excitation-inhibition responses in the VTA triggered by LDT inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C88 is explicitly presented as speculation in the discussion. While the hypothesis is reasonable and consistent with the electrophysiological findings (C43-C49), it remains mechanistically unproven. The authors appropriately frame this as speculation, and additional experiments would be needed to definitively establish this mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C39",
+      "C40",
+      "C50",
+      "C66",
+      "C67",
+      "C68",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C82",
+      "C87",
+      "C94"
+    ],
+    "result": "Background knowledge and prior work establish that: (1) VTA activity is critical for reward and is modulated by LDT; (2) the mesolimbic system is vulnerable to prenatal glucocorticoids; (3) glucocorticoids can regulate cholinergic enzyme expression; (4) the iuGC model mimics clinical glucocorticoid administration; and (5) previous work showed iuGC animals have VTA-NAc hypodopaminergic state and motivational deficits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C3, C12-C27, C39-C40, C50, C66-C68, C75-C79, C82, C87, C94) provide essential background and context from prior literature. They are appropriately cited and establish the rationale for the current study. The prior findings from the authors' group (C27, C39, C82, C87) provide important context for interpreting the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "The iuGC animal model involves subcutaneous injection of dexamethasone (1 mg/kg) on gestational days 18 and 19.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 describes the experimental model used throughout the study. The methods are clearly described and appropriately referenced to prior work establishing this model. This is essential methodological information.",
+    "result_type": "MINOR"
+  }
+]

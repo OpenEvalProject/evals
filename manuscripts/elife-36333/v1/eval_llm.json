@@ -1,0 +1,347 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "phiC31 site-specific recombination mediated by plasmid transfection achieved ~20% integration efficiency in Drosophila S2R+ PT5 cells without selection, which was 123-fold higher than background illegitimate recombination. The pLib6.4 vector with separated attB sites showed ~40-fold greater integration efficiency than traditional adjacent attB40 vectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are supported by flow cytometry data (Figure 1B) showing quantitative integration efficiency measurements. The 123-fold improvement over background (C2) and comparison with traditional vectors (C3) provide converging evidence for the effectiveness of the phiC31 integration approach, though C3 notes data not shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "PT5/Cas9 cells with constitutive Cas9 expression achieved nearly 50% editing efficiency of Dredd alleles without induction, showed more selective sgRNA dropout than inducible Cas9 systems, and optimal dropout monitoring occurred at 45 days of passaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 are supported by T7E1 editing assays (Figure 1C), comparative dropout efficiency data (Figure 1G), and time-course optimization (Figure 1F). The data demonstrate that constitutive Cas9 outperforms both transient transfection and inducible systems for pooled screening applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "A genome-wide sgRNA library containing 85,558 sgRNAs targeting 13,928 Drosophila genes identified 1235 fitness genes at 5% FDR under basal growth conditions, representing the highest-resolution fitness gene set yet assembled for Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 are supported by library construction details and MAGeCK analysis with FDR calculations. The assertion of 'highest-resolution' (C9) is supported by comparison with previous RNAi screens showing superior performance. However, the claim relies on inference from comparative data rather than explicit benchmarking against all prior Drosophila screens.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "407 fly fitness genes are orthologs of human genes containing paralogs that were underrepresented in human CRISPR screens. Analysis showed significant bias against detecting genes with fly-to-human paralogs in human cell-line CRISPR screens, an effect that extended to 436 cell lines in the cancer Dependency Map project.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C26-C29 are supported by ortholog analysis using DIOPT and comparative analysis of human CRISPR screen data (Figure 3F). The paralog effect is demonstrated across multiple datasets including single cell lines and DepMap. The analysis provides strong evidence for functional redundancy masking fitness genes in human screens.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Sequential biological replicates of the genome-wide screen showed good gene-level correlation (Pearson's r = 0.65), and fitness genes were highly enriched for genes with expression level RPKM > 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 are supported by correlation analysis (Figure 2C) and comparison with RNAseq data from modENCODE (Figure 2D). The correlation coefficient of 0.65 is described as 'good' but represents moderate correlation. The enrichment for expressed genes (C12) provides orthogonal validation of screen quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C48"
+    ],
+    "result": "Re-analyzed RNAi screens had far higher FDR than CRISPR screens, identifying only 145 fitness genes at 5% FDR. CRISPR was better able than RNAi to identify components of mitochondrial ribosome, aminoacyl-tRNA ligases, RNA polymerase II, basal transcription factors, RNA exosome, and replication fork at low FDR. RNAi showed bias toward highly expressed genes that was less prominent in CRISPR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14, C48 are supported by re-analysis of published RNAi data (Boutros et al., 2004) and ROC curve analysis (Figure 2F). The comparative analysis demonstrates superior performance of CRISPR for detecting specific macromolecular complexes and reduced expression-level bias. The re-analysis methodology is described but some details of off-target filtering are not fully specified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C79"
+    ],
+    "result": "Neither CRISPR nor RNAi detected peroxisome genes, consistent with the observation that cell lines lacking peroxisomes grow normally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C79 are supported by negative results in both screening methods and citation to previous work (Goldfischer et al., 1973) on peroxisome-deficient cell lines. This serves as an appropriate negative control demonstrating that both methods correctly fail to identify genes for non-essential organelles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C50"
+    ],
+    "result": "The fly CRISPR screen had similar sensitivity to human GeCKO v2 screens when compared against RNAi hits. The position matrix for optimal sgRNA design in Drosophila shows complementary nucleotide biases at 15/21 positions, with 5 of 9 seed region positions fully consistent and 2 of 9 partially consistent with the Doench score, supporting mechanistic unity of Cas9 targeting between human and fly cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18, C50 are supported by comparative true-positive rate analysis (Figure 2G) and position matrix analysis (Figure 2H). The similarity to human screens in both sensitivity and sgRNA design rules provides strong evidence for technical comparability. However, the inference of 'mechanistic unity' (C50) extends beyond what the data directly demonstrate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C51",
+      "C52"
+    ],
+    "result": "CRISPR in Drosophila shows no detectable bias towards copy-number-amplified (CNA) genes for 97% of the genome. Genes with extreme CNA (8+ copies, 3% of genes) exhibited ~1.8-fold bias similar to RNAi screens, suggesting CNA genes in Drosophila are enriched for fitness essentiality. Copy-number correction had no detectable effect on FDR, true-positive rate, or complex enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21, C51-C52 are supported by CNA analysis (Figure 2\u2014figure supplement 1B) comparing CRISPR and RNAi. The finding that both methods show similar bias for high-CNA genes supports the interpretation that this reflects biological enrichment rather than technical artifact. However, C21 states analysis was performed but 'not shown,' limiting independent verification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C55"
+    ],
+    "result": "At 5% FDR, ~17% of cell-essential genes overlapped with whole-fly essential genes, similar to the ~27% overlap between knockout mouse viability and mouse cell-line fitness essentiality. This may represent different genetic requirements of whole animals versus cell lines or germline versus somatic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C55 are supported by comparison with FlyBase annotations (Figure 3B) and citation to mouse studies (Bartha et al., 2018). The partial overlap is well-documented, though the interpretation (C55) is speculative. The comparison to mouse data provides appropriate context for the observed overlap rate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "The fly fitness gene set partially but significantly overlaps with fitness gene sets from yeast and human cells, and gene ontology terms between fly and human fitness genes show high correlation (Pearson's r = 0.56).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 are supported by Venn diagram analysis (Figure 3C) and gene ontology enrichment comparison (Figure 3D). The correlation coefficient of 0.56 indicates moderate correlation. The partial overlap across species is expected given evolutionary divergence and demonstrates conservation of core fitness processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "303 of the 1235 fitness genes lack phenotype descriptions, including 251 with human orthologs and 62 fly-specific genes. Fly-specific fitness genes include known cell-essential divergent genes such as ver, HipHop (telomerin complex components), and Kmn1, Kmn2, Spc105R (centromeric DNA-interacting proteins).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are supported by comparison with phenotype databases and ortholog analysis using DIOPT. The identification of known divergent essential genes (C33-C34) validates the screen's ability to detect fly-specific fitness genes. The characterization status is based on existing annotations, though 'uncharacterized' may be subjective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Context-specific drug resistance screens identified pathway-specific genetic interactions: sgRNAs against aop conferred resistance to trametinib, sgRNAs against FK506-bp2 conferred resistance to rapamycin, and established negative regulators PTP-ER (Erk pathway), Pi3K21B and Pten (PI3K pathway) emerged as context-specific resistance genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by context-specific dropout data (Figure 4D) and citations to previous functional characterization. The identification of known pathway regulators validates the screening approach. The data demonstrate clear pathway specificity, though the number of replicates and statistical testing details are not fully specified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "PPI network analysis identified pathway-specific synergistic interactions: photoreceptor cell differentiation network with trametinib, positive regulation of cell-size network with rapamycin, and mitosis networks in both screens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by PPI network analysis (Figure 4F) using COMPLEAT and citations to previous work on pathway phenotypes. The identification of biologically relevant networks provides functional context for the genetic interactions. However, the interpretation relies on inference about why certain networks emerge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "The fitness gene set is enriched for essential processes such as translation, transcription, and splicing, and depleted for processes such as chitin metabolism that are necessary in whole flies but not cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by gene ontology enrichment analysis (Figure 3A). The enrichment for core cellular processes and depletion for organism-specific processes is expected and validates the biological relevance of the fitness gene set. The analysis appropriately distinguishes cell-autonomous from organism-level requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C88",
+      "C89"
+    ],
+    "result": "Functional redundancy among closely related genes buffers each of them and makes them invisible in viability screens. Human CRISPR screens were less able to detect fly orthologs of fitness genes when those genes had paralogs. This supports using parallel Drosophila and human screens to offset genetic redundancy, as Drosophila cells may be more appropriate for screening genes that expanded during vertebrate lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57, C88-C89 are supported by comparative analysis of paralog effects in human and fly screens. The proposed explanation (C56) and application (C57, C89) are logical inferences from the data but represent interpretations rather than direct observations. The strategy is reasonable but requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "CRISPR screening in Drosophila cells can reveal context-specific compensatory mechanisms or synergy relevant to major signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is a summary conclusion supported by the drug screening results (C35-C41) showing pathway-specific genetic interactions. The demonstration of context-specific resistance and synergy validates the approach for studying signaling pathway genetics. This represents a key application of the screening platform.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "Multiplexed DNA delivery by transfection followed by site-specific recombination is an effective alternative strategy to lentiviral transduction for pooled screening in Drosophila cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is the central methodological conclusion supported by the entire study, including integration efficiency data (C1-C3), successful genome-wide screening (C7-C9), and context-specific applications (C35-C41). The method successfully overcomes the limitation of lentiviral transduction failure in insect cells and enables pooled CRISPR screening.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C42",
+      "C81"
+    ],
+    "result": "The use of lentiviral vectors in insect cells is extremely inefficient, possibly due to toxicity, and this has made CRISPR screening inaccessible for Drosophila because delivery of multiplexed DNA libraries has required lentiviral transduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42 and C81 are based on unpublished observations and citation to previous work (Qin et al., 2010) on lentiviral toxicity. While the failure of lentiviral transduction in insect cells is stated as fact, the supporting evidence is not presented in the manuscript. The claim about toxicity (C42) is explicitly speculative ('possibly due to').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "A previous study attempted pooled transient transfection for barcoded DNA library delivery in Drosophila cells but failed to identify essential genes, most likely due to lack of DNA reagent retention through extended passaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by citation to Bassett et al., 2015, though the interpretation of failure mechanism is inference. This provides important context for why the phiC31 integration approach represents an advance over previous attempts at pooled screening in Drosophila.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C63",
+      "C90",
+      "C91"
+    ],
+    "result": "The study proposes multiple future applications and speculates on the potential value of studying uncharacterized fitness genes, fly-specific genes, transferability to other insect cell lines, and adaptation to other screening modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C60, C62-C63, C90-C91 are explicitly speculative statements about potential future work and applications. While these are reasonable proposals based on the demonstrated technology, they represent hypotheses rather than results. These claims cannot be evaluated as supported or unsupported as they are forward-looking statements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C83",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The manuscript includes numerous background claims about prior work, general knowledge, and established facts regarding CRISPR screening, RNAi limitations, Drosophila genetics, signaling pathways, and screening methodology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47, C64-C87 are background knowledge claims supported by appropriate citations to previous literature. These establish context for the study but do not represent novel findings. The citations appear appropriate and the general knowledge claims are consistent with the field's understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C49",
+      "C84"
+    ],
+    "result": "The manuscript includes speculative mechanistic explanations for observed phenomena, including mRNA stability differences between cytoplasmic and mitochondrial ribosomes in RNAi screens, and potential reasons for longer doubling times in Drosophila screens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49 and C84 are explicitly speculative ('possibly due to') mechanistic explanations. C49 cites a human study (Hart et al., 2015) showing similar patterns but the mechanism remains speculative. C84 proposes potential explanations for observed differences but without supporting data. These represent reasonable hypotheses but are not tested.",
+    "result_type": "MINOR"
+  }
+]

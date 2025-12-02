@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C13",
+      "C14"
+    ],
+    "result": "The authors developed a functional GFP-tagging approach for ribosomal proteins using single-copy transgenes in null mutant backgrounds. GFP::RPS-18 partially rescued rps-18(0) phenotypes, while the smaller GFP11::RPS-18 tag completely rescued all phenotypes, demonstrating that tag size affects ribosomal protein function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C13-C14 provide converging evidence that single-copy GFP-tagged ribosomal proteins can be functional, with smaller tags (GFP11) being superior to larger tags (GFP). The rescue experiments with quantified phenotypes (larval arrest and sterility) provide strong support for this methodological result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C15"
+    ],
+    "result": "Single-copy GFP::RPS-18 and RPL-29::GFP showed similar cytosolic reticular localization patterns, suggesting the signals represent assembled ribosomes rather than unassembled subunits, and caused no detectable defects unlike overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 and C15 demonstrate that properly expressed tagged ribosomal proteins localize similarly and do not cause cellular defects. The similar localization of large and small subunit proteins (C6, C7) provides logical support for the interpretation that signals represent assembled ribosomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Fluorescence intensity of tagged ribosomal proteins depends on endogenous gene copy number, suggesting negative feedback regulation eliminates excess ribosomal proteins, making null mutant backgrounds necessary for sufficient signal visualization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 provide quantitative fluorescence data showing gene dosage-dependent expression (C9, C10), leading to the inference of negative feedback regulation (C11) and the practical conclusion about experimental design (C12). The logic is sound and supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C94",
+      "C95"
+    ],
+    "result": "The split-GFP RIBOS approach enables tissue-specific visualization of endogenous ribosomes by expressing GFP1-10 in specific tissues and GFP11::RPS-18 ubiquitously, with fluorescence only appearing where both components coexist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 demonstrate tissue-specific fluorescence despite ubiquitous GFP11::RPS-18 expression, with appropriate negative controls (C18). Claims C94-C95 provide the mechanistic basis for the approach. The evidence strongly supports this methodological innovation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "FRAP analysis showed that GFP11::RPS-18 has slower recovery kinetics and smaller mobile fraction compared to free cytosolic proteins (IFE-2, IFE-4), with recovery parameters comparable to RPL-29::GFP, indicating incorporation into ribosomal complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 provide quantitative FRAP data comparing tagged ribosomal proteins to appropriate controls. The similar behavior of small and large subunit proteins (C20) and their distinct behavior from free proteins (C19) support the conclusion that tagged proteins are incorporated into ribosomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "RIBOS signals in muscle arms correlated with ribosome distribution observed by electron microscopy, validating the RIBOS approach for visualizing ribosome localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 provide orthogonal validation of the RIBOS method by comparing fluorescence microscopy with electron microscopy. This correlation strengthens confidence in the RIBOS approach for subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "In neurons, ribosomes are mostly restricted to the soma, with distinct localization patterns compared to translation initiation factors (IFE-2, IFE-4) and RNA granule components (STAU-1, AIN-1), suggesting differential regulation of translation-related components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 provide comparative localization data for ribosomes and other translation-related components in neurons. The distinct patterns observed (C27) are well-supported by the microscopy data (C23-C26), though the inference about differential regulation is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Ribosome localization in DD motor neurons changes during development from presynaptic terminals at L1 stage to postsynaptic compartments in later stages, confirmed by both RIBOS and electron microscopy showing higher ribosome numbers in DD axons at L1 than adult stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 provide converging evidence from fluorescence microscopy (C28-C30) and quantitative EM (C31) demonstrating developmental changes in ribosome localization. The use of multiple markers and techniques strengthens this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Ribosomes are present in adult VD motor neuron presynaptic terminals as confirmed by serial EM and electron tomography, though at densities below the detection threshold for fluorescence microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 provide EM evidence for ribosomes in adult presynaptic terminals with appropriate morphological criteria (C33). The explanation for lack of fluorescence detection (C34) is reasonable given the low ribosome density observed by EM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "In mechanosensory neurons, ribosomes are present in soma and proximal axon, forming puncta along axons with density decreasing from L1 to adult stage, and showing developmental stage-specific association with synaptic branch junctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 provide quantitative microscopy data showing spatial distribution (C35), developmental changes in puncta density (C36), and stage-specific localization at branch points (C37). The conclusion about developmental changes (C38) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "After axon injury, ribosomes accumulate at the injury site beginning one hour post-injury and plateauing after three hours, confirmed by both RIBOS and EM showing monosomes and mitochondria at the cutting site, with axon regrowth depending partly on protein synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 provide time-course data (C41), appropriate controls (C43), orthogonal validation by EM (C44-C46), and functional evidence linking protein synthesis to regrowth (C40). The convergence of multiple lines of evidence strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "UNC-16/JIP3 acts as a gatekeeper for ribosome distribution in mechanosensory neurons, with unc-16 mutants showing decreased ribosomes in proximal axons and increased ribosomes in presynaptic terminals without affecting somatic distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 provide genetic evidence showing specific effects of unc-16 mutations on ribosome distribution, with appropriate negative controls (C48). Claims C104-C106 provide interpretation based on known UNC-16 localization (C105), though the mechanism remains somewhat speculative (C106).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A forward genetic screen identified eight mutants with aberrant ribosome distribution, all affecting tubulin genes (mec-7, mec-12) or tubulin regulatory genes (mec-15, mec-17), with mutations mapping to functionally important GTP-binding sites in tubulins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C58 and C61-C63 provide comprehensive genetic mapping and sequencing data identifying causative mutations. The structural analysis (C55-C57) and validation with known alleles (C58) strengthen the conclusions. The convergence on tubulin-related genes is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Dominant tubulin alleles show lower penetrance of ribosome defects than recessive alleles specifically in axons but not soma, suggesting differential regulation of axonal and somatic ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 provide quantitative penetrance data showing compartment-specific differences between allele types. This observation supports the inference of differential regulation (C60), though the mechanism remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Ribosome distribution defects are not a direct consequence of mechanosensory defects, as mutants in mechanosensory channel and adaptor genes (mec-4, mec-2) or mechanosensory-defective but microtubule-intact mutants (mec-12(e1605)) show normal ribosome distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 provide appropriate genetic controls separating mechanosensory function from microtubule structure. The logic is sound and the negative results with mechanosensory mutants strengthen the conclusion that microtubule structure, not mechanosensation, is critical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Microtubules are important for maintaining ribosome distribution in soma and generating barriers in proximal axons, with chronic colchicine treatment or mec-7 mutations causing ribosome mislocalization, and differential timing of defects in soma versus axons suggesting distinct regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 provide pharmacological (C67-C68) and genetic (C69) evidence with developmental time-course analysis showing compartment-specific effects. The differential timing of somatic versus axonal defects (C68-C71) supports distinct regulatory mechanisms, though the exact mechanisms remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "The microtubule cytoskeleton and UNC-16/JIP3 exert distinct effects on localization of axonal and somatic ribosomes, providing insight into mechanisms of active regulation of ribosome localization in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 summarize the main conclusions from the genetic analyses. These summary claims are well-supported by the detailed experimental results described in other claim groups, representing the major conceptual advance of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Overexpression of tagged ribosomal proteins causes cellular defects including abnormal axon and cell body morphologies and nuclear aggregates of ribosomal proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 provide observational data on the negative effects of overexpression, justifying the need for the single-copy approach. The evidence is straightforward and well-documented in the figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C96",
+      "C99"
+    ],
+    "result": "The RIBOS approach may have limitations including potential non-functionality of reconstituted GFP::RPS-18 in contexts requiring local ribosome activity and possible tagging of only a subset of ribosomes if not all ribosomes contain RPS-18.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96 and C99 represent speculative limitations acknowledged by the authors. While these are reasonable concerns given the irreversible nature of split-GFP (C95) and known ribosome heterogeneity (C97-C98), no direct evidence is provided to assess whether these limitations actually affect the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Microtubules may restrict ribosomes to the neuronal soma under unstressed conditions, with altered microtubule dynamics after axon injury potentially allowing ribosome entry into axons, and mitochondria at injury sites potentially supplying energy for translation and microtubule dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C112 combine cited prior work (C109) with new observations (C110) and speculation (C111-C112). While the hypothesis is reasonable and consistent with the data, the mechanistic claims remain speculative without direct experimental testing of the proposed model.",
+    "result_type": "MINOR"
+  }
+]

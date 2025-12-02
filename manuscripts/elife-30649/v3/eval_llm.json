@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "AAV constructs successfully overexpressed FoxP2.FL and FoxP2.10+ isoforms specifically in Area X of juvenile zebra finches. In situ hybridization with isoform-specific probes and qRT-PCR confirmed isoform-specific overexpression in Area X but not in adjacent VSP throughout the 30-day experimental period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C64 provide converging evidence from multiple validation methods (in situ hybridization with two different probes, qRT-PCR with isoform-specific primers, and spatial specificity controls) demonstrating successful and specific viral-mediated overexpression. The use of complementary techniques and appropriate controls (VSP as negative control, isoform-specific primers) provides strong support for the technical success of the manipulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "FoxP2.10+ forms cytoplasmic aggresomes in zebra finch striatopallidum cells, with endogenous FoxP2.FL signal interspersed among Xpress-positive puncta, consistent with prior in vitro findings in human cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 demonstrate that the aggresome formation pattern observed in vitro (C65, cited from Vernes et al., 2006) is replicated in vivo in zebra finch brain tissue (C66-C67). The immunostaining data showing co-localization of endogenous FoxP2.FL with overexpressed tagged FoxP2.10+ supports the hypothesis of heterodimerization, though the functional consequences are not directly tested here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "FoxP2 isoforms differentially regulate acute vocal variability: GFP controls show practice-induced increases in variability, FoxP2.FL overexpression blocks this increase, and FoxP2.10+ overexpression produces singing-induced stability. These effects are specific to variability modulation rather than overall variability levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 present a coherent pattern of isoform-specific effects on vocal variability with appropriate statistical support (Figure 2C shows significant differences). The finding that FoxP2.10+ produces the opposite effect from GFP controls (C75-C76) while FoxP2.FL blocks modulation (C74) is internally consistent. Claim C77 importantly demonstrates that the effects are on modulation capacity rather than baseline variability, strengthening the interpretation. The replication of prior FoxP2.FL findings (C74) adds credibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "FoxP2.10+ overexpression does not impair vocal learning despite suppressing practice-induced variability, while FoxP2.FL overexpression impairs learning. The ability to modulate between low and high variability states is important for proper vocal learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are well-supported by the learning data in Figure 2D-E showing that FoxP2.10+ birds learned as well as GFP controls despite their altered variability phenotype, while FoxP2.FL birds showed impaired learning. This dissociation between variability modulation and learning outcome (C78) challenges simple models and leads to the inference in C80. However, the sample sizes are relatively small (5-7 birds per group) and the inference in C80 is somewhat speculative given that it's based on correlational patterns across groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "WGCNA of juvenile Area X identified 21 gene modules with 7,461 genes, revealing significant correlations between module eigengenes and vocal behaviors including learning (darkred, green, greenyellow modules), singing amount (black, orange, darkgreen, royalblue, blue modules), variability induction (nine modules), and overall variability (darkgrey module). Genes most representative of module expression profiles were most strongly related to behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 describe the core WGCNA findings with appropriate statistical thresholds (0.00008 < p < 0.05). The strong correlations between module membership and gene significance (C86-C87) validate the biological relevance of the modules. However, the manuscript notes that p-values are uncorrected for multiple testing, and many correlations would not survive FDR correction given the small sample size (n=19). The authors justify presenting uncorrected p-values due to sample size limitations and consistency with adult data, but this represents a statistical weakness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The purple, green, and pink modules contained the most densely interconnected genes in the network. The green module correlated with learning while purple and pink modules correlated with variability induction. Gene and module network positions predicted behavioral relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 integrate network topology with behavioral correlations, showing that the most connected modules (C88) correspond to key behavioral traits (C89-C90). The inference that network position predicts behavioral relevance (C91) is supported by the convergence of connectivity metrics and behavioral correlations, though this is somewhat circular since the modules were defined based on coexpression patterns that correlate with behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Hub genes in the network include known human disease risk genes, notably FMR1 which had the third highest overall connectivity and highest connectivity in the green learning module. FMR1 deficiency causes Fragile X Syndrome with symptoms including speech and language impairment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 establish translational relevance by identifying disease-associated genes as network hubs. The specific example of FMR1 (C93) is well-documented with quantitative connectivity metrics. The connection to Fragile X Syndrome (C94) is established knowledge. However, the claim that \"many\" hub genes are disease-associated (C92) is not quantified or systematically demonstrated beyond the FMR1 example.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Song production modules from Area X were poorly preserved in adjacent VSP, with no VSP modules correlating with singing or learning behaviors. This lack of preservation reflects differential connectivity rather than differential gene expression between regions, indicating Area X specialization for song.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 provide strong evidence for regional specialization using module preservation statistics. The finding that poor preservation is due to altered connectivity rather than expression differences (C98, supported by Figure 4D) is particularly important for understanding the molecular basis of specialization. The use of the same animals for both regions (Area X and VSP) controls for individual variation and strengthens the comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "The green learning-related module was strongly preserved in VSP, indicating a generalized learning-related coexpression state exists in the juvenile striatopallidum that becomes specialized for singing in Area X.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 demonstrate an important contrast with the song production modules: learning-related coexpression is preserved across regions while song production is not. This supports a model where general learning mechanisms (preserved in VSP) are co-opted for vocal learning in Area X. The inference in C100 is reasonable given the data, though \"specialized for singing\" could be more precisely defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Gene relationships to singing are remarkably consistent between juvenile and adult Area X, with strong preservation of singing-related coexpression modules across ages. Genes related to singing cluster together independent of age and learning state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 demonstrate developmental stability of song production mechanisms using cross-study comparisons. The correlation between gene significances (C101) and module preservation statistics (C103) provide converging evidence. However, the comparison involves different studies with potentially different methodologies, and the authors appropriately built new age-specific networks from common genes to enable fair comparison. The inference that relationships are \"independent\" of learning state (C102) is supported but could be confounded by other developmental changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Learning-related modules (green, greenyellow, darkred) correlated with tutor similarity in juveniles were poorly preserved in adults, despite similar singing-induced activation. Only song production modules showed preserved connectivity across ages. The capacity to alter vocalizations may reside in transcriptional context (connectivity) rather than absolute expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 identify a key mechanistic distinction: learning capacity is associated with connectivity patterns rather than expression levels. The dissociation between preserved expression/activation (C108) and lost connectivity (C109) for learning modules is compelling evidence. The inference in C110 is well-supported by this dissociation, though it remains somewhat speculative. The poor preservation of learning modules in adults (C107) provides a molecular correlate for critical period closure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "FMR1 was a hub gene in the juvenile network but poorly connected in adults, indicating developmental importance during vocal modification but not maintenance. Genes positively correlated with learning and with high green module membership showed the greatest connectivity decreases in adulthood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 provide a specific example (FMR1) and general pattern of developmental connectivity changes. The inference about FMR1's developmental role (C112) is reasonable given its connectivity pattern, though functional validation would strengthen this claim. The general pattern in C113 (supported by Figure 5\u2014figure supplement 1) reinforces that learning-related genes specifically lose connectivity, not just any genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Song production and learning-related modules co-occur only in juvenile Area X. This spatiotemporal overlap may reflect the capacity for sensorimotor vocal learning, and interactions between these module types may drive the vocal learning process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 synthesize the regional and developmental comparisons into a coherent model. The co-occurrence pattern is well-supported by the data. However, the inference that this overlap \"may reflect\" learning capacity (C115) and the hypothesis about module interactions (C116) are speculative, though reasonable. These claims would benefit from more direct tests of causality or mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "MAPK11 showed the highest gene significance to learning and contains a putative FoxP2 binding site 288bp upstream of its transcription start site. ChIP-PCR confirmed FoxP2 binding to this region. MAPK11 levels increase in Foxp2 knockout mice, and MAPK11 gene significance was higher in learning-competent birds (GFP, FoxP2.10+) than in learning-impaired birds (FoxP2.FL).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C123 provide multiple lines of evidence linking FoxP2 to MAPK11: bioinformatics prediction (C119), experimental validation (C120-C121), cross-species support (C118), and correlation with behavioral phenotypes (C123). However, the ChIP-PCR is qualitative rather than quantitative, and the manuscript notes uncertainty about whether the binding site is truly in the promoter or in an intronic region due to incomplete genome annotation. The inference that FoxP2 regulation of MAPK11 contributes to learning deficits (C122) is reasonable but remains correlational.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "ATF2, a highly connected hub gene in the green learning module, is necessary for nervous system development and acetylates histones H2B and H4. Its target histone H2B is in the blue song production module correlated with singing. ATF2 is poorly connected in adults, and histone H2B acetylation at lysine 5 is linked to learning and memory in rat hippocampus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C131 identify ATF2 as a potential link between learning and song production modules through its histone acetyltransferase activity. The network position data (C125) and prior functional knowledge (C126-C127, C131) are well-established. The connection to histone H2B in the song module (C130) is a novel finding from this study. However, the functional significance of this connection for vocal learning is inferred rather than directly tested. The developmental change in ATF2 connectivity (C128) parallels FMR1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "STRING database analysis identified and ranked protein-protein interactions between learning-related and song production module genes, prioritized by interaction confidence and network importance metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133 describe a systematic bioinformatics approach to identify candidate interactions. The methodology is sound and the prioritization scheme (weighting by connectivity) is appropriate. However, these are predicted interactions from databases rather than experimentally validated interactions in the zebra finch system. The results provide candidates for future investigation but do not demonstrate functional interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The green learning-related module was well-preserved across construct-specific networks (GFP, FoxP2.FL, FoxP2.10+) and its correlation with learning passed FDR correction in the GFP-only network of seven birds, indicating the learning-related coexpression pattern exists without FoxP2 manipulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136 address a critical control: whether the learning-related module is an artifact of FoxP2 manipulation. The preservation across construct-specific networks (C134) and significant correlation in GFP-only birds (C135) demonstrate that this is an endogenous pattern. The fact that the correlation survives FDR correction in only 7 GFP birds (C135) while the overall network of 19 birds requires uncorrected p-values highlights the statistical power gained by combining groups, but also validates that the pattern exists in controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The inability to learn new songs in adulthood is associated with transcriptional changes other than changes to song production modules, specifically the loss of learning-related transcriptome patterns. Juvenile Area X is a nexus where learning-related and song production modules coexist, but learning patterns are lost with aging while singing patterns persist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 synthesize the developmental comparison into a model for critical period closure. The preservation of song production modules (supporting C137) and loss of learning modules (C138) in adults provides a molecular correlate for the transition from learning to maintenance. The characterization of juvenile Area X as a \"nexus\" (C139) effectively summarizes the spatiotemporal convergence. These are well-supported by the module preservation analyses, though the causal relationship between module loss and learning capacity remains to be established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The molecular basis of learned vocal behavior is proposed to be the spatiotemporal overlap of 'singing' and 'learning' building blocks rather than specific genes or modules. This principle may extend across the songbird telencephalon, analogous to how song control nuclei evolved as specializations of motor circuitry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C141-C143 present a conceptual model based on the findings. While the model is consistent with the data showing module co-occurrence in juvenile Area X, it is highly speculative (C141, C143). The evolutionary analogy (C142, C143) is interesting but not directly tested. This represents an interpretive framework rather than a demonstrated result. The model makes testable predictions but requires substantial additional work to validate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Decreased connectivity of learning-related genes across development may underlie the transition from learning to maintenance. Enabling vocal plasticity after critical period closure would likely require reestablishing poorly connected genes as network hubs, but such tools do not yet exist. The prioritized pathways provide a framework for future investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C144-C147 propose implications for intervention but are highly speculative. The inference that connectivity changes underlie the learning-to-maintenance transition (C144) is reasonable given the data but not causally demonstrated. The proposal for therapeutic intervention (C145) is interesting but entirely speculative. The acknowledgment that necessary tools don't exist (C146) is appropriate. Claim C147 accurately describes the study's contribution as providing candidate pathways rather than validated mechanisms.",
+    "result_type": "MINOR"
+  }
+]

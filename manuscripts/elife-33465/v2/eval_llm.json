@@ -1,0 +1,215 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "MT nucleation from the nuclear envelope (NE) contributes to nuclear positioning in fission yeast. Nuclear positioning was less accurate in mto1[bonsai]-GFP and mto1[\u0394130]-GFP cells (which lack NE localization) compared to mto1[NE]-GFP and mto1-GFP cells, while MT nucleation from the SPB is not particularly important for nuclear positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 provide consistent evidence from nuclear positioning measurements showing that cells lacking Mto1 NE localization have impaired nuclear positioning, while SPB-localized MT nucleation does not significantly affect nuclear positioning. The data in Figure 1\u2014figure supplement 1 supports these conclusions with statistical significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Mass spectrometry comparison of Mto1[9A1-NE] vs. Mto1[9A1-bonsai] interactomes identified Nup146, Crm1, Alp7, and Plo1 as enriched proteins. Alp7 is not required for Mto1 localization to the NE, as demonstrated by normal Mto1[9A1-NE]-GFP localization in alp7\u0394 deletion mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by mass spectrometry data (Figure 1F, Table 1) and microscopy validation (Figure 1\u2014figure supplement 3). The identification of interactors is well-documented, and the Alp7 deletion experiment provides clear negative evidence for its role in NE localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Mto1[9A1-NE]-GFP specifically associates with nuclear pore complexes (NPCs) at the cytoplasmic face. Extensive colocalization with Nup146-3mCherry clusters was observed in nup132\u0394 cells, and immunoelectron microscopy confirmed localization specifically at the cytoplasmic face of NPCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are strongly supported by both fluorescence microscopy (Figure 2A) and immunoelectron microscopy (Figure 2B). The use of nup132\u0394 cells to cluster NPCs and the direct visualization by EM provide robust evidence for NPC association and cytoplasmic face localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Mto1 localization to NPCs requires Crm1 cargo-binding activity. LMB treatment causes loss of Mto1[9A1-NE]-GFP from NPCs with cytoplasmic dispersal (not nuclear accumulation). The LMB-resistant crm1-C529A mutant maintains Mto1 NPC localization in the presence of LMB, demonstrating specificity. MT regrowth experiments confirm functional consequences of this requirement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 provide comprehensive evidence through pharmacological inhibition (Figure 3A), genetic validation (Figure 3B), and functional assays (Figure 3\u2014figure supplement 3). The use of LMB-resistant crm1 mutants is particularly strong evidence for specificity. The control experiment with Alp7 confirms LMB efficacy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Mto1 interaction with Crm1 requires Crm1 cargo-binding activity. Mass spectrometry comparison of GFP-Mto1[9A1-NE]-HTB interactomes from untreated vs. LMB-treated cells showed only 3-4 significantly enriched proteins, with Crm1 showing the greatest enrichment (~20X) and Nup146 showing lesser enrichment (~2.8X).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by quantitative mass spectrometry data (Figure 3C, Table 2) from two biological replicates. The selective enrichment of Crm1 and Nup146 provides strong biochemical evidence complementing the microscopy data. The interpretation that Mto1 may bind weakly to Nup146 independently of Crm1 is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Mto1 binds Crm1 via a nuclear export signal-like sequence (NES-M) at amino acids 9-25. This sequence resembles high-affinity NESs and is necessary for NPC localization and Crm1 interaction. Deletion of this sequence (\u0394NES) abolishes NPC localization and strongly reduces interaction with both Crm1 (~85X enrichment) and Nup146 (~20X enrichment).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 are well-supported by sequence analysis (Figure 4A,B), microscopy (Figure 4C), and mass spectrometry (Figure 4D, Table 3). The convergence of computational prediction, localization studies, and biochemical interaction data provides strong evidence for the NES-M as the key determinant of Crm1 binding and NPC localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The Mto1 NES-M (amino acids 1-29) is both necessary and sufficient for NPC localization. GFP-Mto1[1-29]-GST localizes to NPCs in an LMB-sensitive manner, while GFP-Mto1[1-12]-GST (lacking NES-M) and monomeric GFP-Mto1[1-29]-13Myc do not localize to NPCs, suggesting dimerization/multimerization is important for NPC localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 are supported by systematic deletion and fusion protein experiments (Figure 4E,F). The sufficiency experiments with minimal constructs are particularly strong evidence. The observation that monomeric constructs fail to localize provides important mechanistic insight, though the role of multimerization could benefit from additional quantitative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Mto1 localization to NPCs requires RanGTP but not RanGDP or Ran nucleotide cycling. Expression of dominant-negative spi1[T23N] (mimicking RanGDP) caused strong loss of Mto1[9A1-NE]-GFP from NPCs, while constitutively active spi1[Q68L] (mimicking RanGTP) and wild-type spi1+ had no effect on Mto1 NPC localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 are supported by experiments with Ran mutants (Figure 5, Figure 5\u2014figure supplement 2). The use of both dominant-negative and constitutively active mutants provides complementary evidence. The control experiments with NLS reporter protein validate the functionality of the Ran mutants. The interpretation is appropriately cautious about short-term vs. long-term requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Nup146 FG repeats 5-12 are essential for Mto1 docking at NPCs and for MTOC nucleation from the NE. In nup146[\u0394FG5-12] cells, Mto1[9A1-NE]-GFP no longer localizes to NPCs, MT regrowth after cold-shock occurs randomly in the cytoplasm rather than from the NE, and MT nucleation frequency near the NE is decreased by ~90% while nucleation away from the NE is unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 are strongly supported by multiple complementary approaches: microscopy (Figure 6B), MT regrowth assays (Figure 6C), and live-cell imaging quantification (Figure 6D,E). The specificity of the effect (NE nucleation reduced but cytoplasmic nucleation unchanged) is particularly compelling. The viability of the deletion mutant validates the specificity of the FG repeat requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Nup146 FG repeats are essential for Mto1-Nup146 interaction and help stabilize the Mto1-Crm1 complex. Mass spectrometry comparison of GFP-Mto1[9A1-NE]-HTB interactomes from nup146+ vs. nup146[\u0394FG5-12] cells showed only 5-6 significantly enriched proteins, with Nup146 showing greatest enrichment (~11X) and Crm1 showing lesser enrichment (~3X).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 are supported by quantitative mass spectrometry data (Figure 6F, Table 4) from two biological replicates. The differential enrichment of Nup146 vs. Crm1 provides important mechanistic insight. The interpretation that FG repeats are essential for Mto1-Nup146 interaction but only help stabilize Mto1-Crm1 interaction is appropriately nuanced and consistent with the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "This is the first biological function uniquely attributed to the FG repeats of the Nup146/Sc Nup159/Hs Nup214 class of cytoplasmic FG-Nups in any organism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C101 makes a strong assertion about novelty that depends on comprehensive knowledge of the literature. While the authors cite relevant work showing FG repeats of cytoplasmic FG-Nups are not required for nuclear transport per se, definitively establishing this as the 'first' such function requires exhaustive literature review that cannot be fully verified from the manuscript alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The mechanism of Mto1 localization to NPCs represents a novel repurposing of the nuclear export machinery. Unlike conventional export, Mto1 is a cytoplasmic protein that docks at NPCs rather than being released into the cytoplasm, representing the first example of a nuclear export-like complex docking a cytoplasmic cargo at the NPC with no functional link to export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 provide a clear conceptual framework distinguishing this mechanism from conventional nuclear export. The characterization as 'entirely unexpected' and 'first example' is supported by the comprehensive experimental evidence throughout the manuscript. However, the claim of being the 'first example' (C111) depends on literature knowledge and is appropriately qualified with 'to our knowledge.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C126"
+    ],
+    "result": "The authors hypothesize that the Mto1 NES-M may function as a natural high-affinity NES, and that a sufficiently high-affinity NES cargo would stabilize interaction of Crm1 with Nup146, leading to docking at the cytoplasmic face of the NPC. This is based on structural knowledge of Crm1 conformations and the 'molecular clamp' function of Hs Nup214 FG repeats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121, C122, and C126 present reasonable hypotheses based on structural analogy to known systems, but these remain speculative. The authors appropriately label these as hypotheses ('we hypothesize,' 'would be expected'). Direct biochemical evidence for high-affinity binding and structural studies of the Mto1-Crm1-Nup146 complex would be needed to fully support these mechanistic proposals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C133"
+    ],
+    "result": "The authors propose that an important but previously unrecognized role for cytoplasmic FG-Nups may be to dock cytoplasmic proteins at the NPC for non-export-related functions, as demonstrated for the Mto1/2 complex in MTOC generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C133 extrapolates from the specific findings with Mto1/2 to propose a broader role for cytoplasmic FG-Nups. While the proposal is reasonable and supported by the observation that FG repeats of cytoplasmic FG-Nups are not essential for nuclear transport, establishing this as a general principle would require identification of additional examples in fission yeast or other organisms.",
+    "result_type": "MAJOR"
+  }
+]

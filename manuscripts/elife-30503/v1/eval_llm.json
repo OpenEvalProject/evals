@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C58",
+      "C59"
+    ],
+    "result": "Under isotropic conditions, both C. elegans and Drosophila larvae exhibit diffusive behavior without active directional movement. This is demonstrated by very small dimensionless drift velocities and convergence to diffusive dynamics at longer time scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C58, and C59 are well-supported by Figure 1 data showing diffusive trajectories and minimal drift velocities (~0.01-0.04) under isotropic conditions. The experimental evidence clearly demonstrates undirected diffusive motion in both species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "C. elegans under isotropic conditions show a gradual exponential decline in turning rate with a time constant of ~800s, rather than an abrupt transition between local and global search states. Individual trajectories show regular decline that averages to steady exponential decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are supported by Figure 1B and Figure 1\u2014figure supplement 1, which show exponential decay in turning rate and individual trajectory analysis. This contradicts prior work (C15-C16) suggesting discontinuous transitions, making this a significant finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C65"
+    ],
+    "result": "For C. elegans under isotropic conditions, diffusion coefficients in the second half of experiments are nearly double those in the first half, consistent with the reduced turning rate over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by Figure 1C data and the theoretical relationship (C65) between turning rate and diffusion. The doubling of diffusion coefficient matches the approximate halving of turning rate, providing internal consistency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Drosophila larvae under isotropic conditions exhibit similar trajectory structure to C. elegans but maintain a stable turning rate after initial stabilization (~2 minutes), without the marked decline seen in worms. The local-to-global search transition does not appear on the ~15-minute experimental timescale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are well-supported by Figure 1A'-C' showing stable turning rates in larvae versus declining rates in worms. This represents a clear species difference in search strategy modulation over time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "C. elegans cultivated at 15\u00b0C exhibit negative thermotaxis when placed in a gradient centered at 20\u00b0C, while Drosophila larvae exhibit positive thermotaxis independent of cultivation conditions when placed at 17.5\u00b0C in the same gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by Figure 2A trajectory data showing clear directional bias. The dimensionless drift velocities (~0.1-0.4) are approximately 10-fold higher than isotropic conditions, confirming directed navigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C85",
+      "C86",
+      "C117",
+      "C119"
+    ],
+    "result": "During thermotaxis, both species maintain significant diffusion in all directions (Dx and Dy both substantial), indicating that random exploration persists alongside directed navigation. The statistics of random exploration are remarkably robust to progression in a selected direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C85-C86, C117, and C119 are strongly supported by Figure 2B,B' showing persistent diffusion in both x and y directions during thermotaxis. This is a central finding of the manuscript demonstrating that navigation does not eliminate stochasticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "There is a tradeoff between searching along an axis and purposeful travel in that direction, as evidenced by Dy > Dx during thermotaxis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is supported by Figure 2B,B' showing consistently higher diffusion perpendicular to the gradient (Dy) than parallel (Dx). However, the manuscript does not quantify this tradeoff or explore its mechanistic basis, limiting the depth of support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Both C. elegans and Drosophila larvae bias their navigation by modulating turning rates based on crawling direction: higher turning rates when moving toward aversive conditions and longer runs when moving toward preferred conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 are supported by Figure 2B,B' showing directional turning rate modulation. This is consistent with established knowledge (C17-C19) and provides quantitative confirmation in the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "During thermotaxis, worms decrease overall turning rate over time while larvae maintain stable rates, but both species maintain approximately constant ratios between toward-warm and toward-cold turning rates. This constancy of navigational bias supports using early behavior to model long-term behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 are supported by Figure 2B,B' showing temporal dynamics of turning rates and their ratios. The preservation of turning rate ratios despite overall rate changes is an important methodological validation for the MSM approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The Markov state model analysis demonstrates that steady-state distributions represent equilibrium distributions, as evidenced by zero net flux (reversibility) and convergence of equilibrium probabilities with increasing lag time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C144-C146 are supported by Figure 2\u2014figure supplement 1 showing flux agreement and convergence. This validates a key assumption of the MSM approach, though the manuscript acknowledges limited statistics at long times.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "C. elegans exhibit bidirectional chemotaxis in salt gradients depending on baseline concentration: moving toward higher salt at 25mM baseline and toward lower salt at 75mM baseline. Behavior converges to diffusive dynamics at longer times with gradually reduced turning rates, and MSM predictions match population distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 are supported by Figure 3 data showing bidirectional chemotaxis, diffusion convergence, and MSM-predicted equilibrium distributions. This demonstrates the generality of findings beyond thermotaxis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "During isothermal tracking, C. elegans placed at cultivation temperature do not strictly avoid warmer temperatures, showing asymmetric probability distributions with low probability for T<Tcult but substantial probability for T>Tcult.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is supported by Figure 4C showing asymmetric equilibrium probability distributions. This challenges traditional interpretations of isothermal tracking behavior and represents a novel finding enabled by the MSM approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "The transition from ballistic to diffusive motion occurs over a ~1000s timescale in both species, which is longer than most behavioral experiments in these animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C124 are supported by Figure 1B,B' and Figure 2B,B' showing D(t) convergence. The comparison to typical experiment durations (C124) is reasonable but not rigorously quantified against literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C127"
+    ],
+    "result": "The transition to global searching (lower turning rate) occurs at very different times in C. elegans versus Drosophila larvae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C127 is clearly supported by comparing Figure 1B (worms show ~800s time constant) versus Figure 1B' (larvae stabilize within minutes). This represents a clear species difference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "Overall changes in average turning rate during thermotaxis are not accompanied by changes in the ratios of turning rates, meaning navigational bias is preserved while other search strategy aspects are modulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 are supported by Figure 2B,B' showing stable turning rate ratios despite changing overall rates. This distinguishes between different aspects of behavioral modulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C120"
+    ],
+    "result": "The framework of diffusion and Markov processes can combine short trajectories under identical conditions in both isotropic and gradient environments. A key constraint on navigation mechanisms appears to be preservation of random exploration statistics in all directions across time scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116 and C120 summarize the main methodological and biological conclusions. They are well-supported by the collective evidence from Figures 1-4, though C120 represents an inference about evolutionary constraints rather than direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C29",
+      "C33",
+      "C131"
+    ],
+    "result": "The authors propose an analogy between organism navigation and protein folding as stochastic search processes, with temperature gradients playing the role of potential energy and neural circuitry optimized by evolution analogous to amino acid sequences. This work serves as proof-of-principle for applying protein folding methods to behavioral analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C20-C21, C29, C33, and C131 present a conceptual framework and analogy. While the MSM and diffusion analysis methods are successfully applied, the depth of the analogy is limited. The manuscript does not construct actual free-energy landscapes or demonstrate that the analogy provides predictive power beyond what diffusion analysis alone provides.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C128",
+      "C132"
+    ],
+    "result": "The authors speculate that further behavioral transitions may exist at longer timescales, that longer experiments may be essential for complete behavioral characterization, that larval mass differences may explain delayed search transitions, and that free-energy landscape descriptions will be useful for complex navigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C126, C128, and C132 are explicitly speculative (marked as SPECULATION in evidence_type). While reasonable hypotheses, they lack experimental support and represent future directions rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54"
+    ],
+    "result": "The Markov state model (MSM) approach is introduced to determine equilibrium properties from short trajectories, exploiting information from multiple trajectories measured under identical conditions. The method assumes Markovian dynamics where future positions depend only on current position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 and C54 describe the MSM methodology with appropriate citations. The approach is validated by reversibility analysis (C144-C145) and convergence tests (C146). However, the manuscript does not thoroughly test the Markovian assumption or quantify memory effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "The diffusion and MSM analysis approaches provide information not readily apparent in conventional metrics and enable large-scale, long-time descriptions beyond standard run-turn-run measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 are supported by the novel findings about isothermal tracking (C55) and the ability to characterize long-timescale behavior from short trajectories. The added value over conventional analysis is demonstrated but not systematically quantified.",
+    "result_type": "MINOR"
+  }
+]

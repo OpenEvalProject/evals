@@ -1,0 +1,2151 @@
+{
+  "submission": {
+    "id": "7d68f72d-951f-48f5-bd11-cf4a75e4ed29",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:24:08.941811Z",
+    "updated_at": "2025-12-01T23:24:08.941811Z"
+  },
+  "content": [
+    {
+      "id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "submission_id": "7d68f72d-951f-48f5-bd11-cf4a75e4ed29",
+      "content_type": "manuscript",
+      "content_text": "# Molecular mechanism to target the endosomal Mon1-Ccz1 GEF complex to the pre-autophagosomal structure\n\n## Authors\n\n- Jieqiong Gao<sup>1</sup>\n- Lars Langemeyer<sup>1</sup>\n- Daniel K\u00fcmmel<sup>2</sup>\n- Fulvio Reggiori<sup>3</sup>\n- Christian Ungermann<sup>1</sup> ([ORCID: 0000-0003-4331-8695](https://orcid.org/0000-0003-4331-8695)) \u2020\n\n### Affiliations\n\n1. Biochemistry Section, Department of Biology/Chemistry University of Osnabr\u00fcck Osnabr\u00fcck Germany\n2. Structural Biology Section, Department of Biology/Chemistry University of Osnabr\u00fcck Osnabr\u00fcck Germany\n3. Department of Cell Biology University Medical Center Groningen, University of Groningen Groningen Netherlands\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring autophagy, a newly formed double membrane surrounds its cargo to generate the so-called autophagosome, which then fuses with a lysosome after closure. Previous work implicated that endosomal Rab7/Ypt7 associates to autophagosomes prior to their fusion with lysosomes. Here, we unravel how the Mon1-Ccz1 guanosine exchange factor (GEF) acting upstream of Ypt7 is specifically recruited to the pre-autophagosomal structure under starvation conditions. We find that Mon1-Ccz1 directly binds to Atg8, the yeast homolog of the members of the mammalian LC3 protein family. This requires at least one LIR motif in the Ccz1 C-terminus, which is essential for autophagy but not for endosomal transport. In agreement, only wild-type, but not LIR-mutated Mon1-Ccz1 promotes Atg8-dependent activation of Ypt7. Our data reveal how GEF targeting can specify the fate of a newly formed organelle and provide new insights into the regulation of autophagosome-lysosome fusion.\n\n## Introduction\n\nMacroautophagy, called here autophagy, is an important quality control pathway, during which cellular material such as organelles and cytosolic components are engulfed by a double-membrane vesicles, the autophagosome (Shibutani and Yoshimori, 2014; Mizushima et al., 2011). In both yeast and mammals, autophagosome formation is a complex process that begins with the assembly of the phagophore or isolation membrane. Once complete, the autophagosome first fuses with endosomes to form an amphisome and then with lysosomes in mammalian cells, while it directly fuse with the lysosome-like vacuole in yeast (Lamb et al., 2013; Chen and Klionsky, 2011).\n\nHow autophagosomes become fusion competent with lysosomes is still poorly understood. Like for other fusion events, autophagosome fusion with vacuoles or endosomes requires SNAREs, Rab GTPases (Rabs) and the HOPS tethering complex (Reggiori and Ungermann, 2017; Barr, 2013; K\u00fcmmel and Ungermann, 2014). Rabs have a central role in this fusion cascade. They are held soluble in the cytosol by the GDP-dissociation inhibitor (GDI) proteins, which bind GDP-loaded Rabs. Once on membranes, a Rab-specific guanine nucleotide exchange factor (GEF) converts Rabs into their active GTP-form (Barr, 2013). This allows their interaction with effectors such as tethering factors (K\u00fcmmel and Ungermann, 2014). The Rab7 GTPase is required for the fusion of endosomes with lysosomes and lysosomal transport (Nordmann et al., 2012). In yeast, the Rab7-homolog Ypt7 binds to the HOPS tethering complex in this process, which in turn supports SNARE assembly and fusion. Rab7 as well as Ypt7 are also required for fusion of autophagosomes with endosomes (Gutierrez et al., 2004; Ganley et al., 2011; McEwan et al., 2015) and detected on autophagosomes (Heged\u0171s et al., 2016).\n\nThe conserved Mon1-Ccz1 GEF complex triggers endosomal maturation by activating Ypt7 (or Rab7 in metazoans) primarily on late endosomes (Nordmann et al., 2010; Gerondopoulos et al., 2012; Singh et al., 2014; Cui et al., 2014), but likely also on autophagosomes (Heged\u0171s et al., 2016). In agreement with this notion, it has been shown that yeast Mon1-Ccz1 is essential for autophagy progression (Wang et al., 2002). As Mon1-Ccz1 can interact with Rab5-GTP, Rab5 may promote Rab7 recruitment to endosomes, possibly with support by the local generation of phosphatidylinositol-3-phosphate (PI-3-P) (Singh et al., 2014; Heged\u0171s et al., 2016; Cui et al., 2014). It remains unresolved, however, how Mon1-Ccz1 is specifically targeted to autophagosomes to trigger SNARE-mediated fusion (Figure 1A). The SNAREs involved in this event have been implicated in previous studies (Darsow et al., 1997; Fischer von Mollard and Stevens, 1999; Dilcher et al., 2001; Sato et al., 1998; Reggiori and Ungermann, 2017).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/31145/elife-31145-fig1-v2.jpg)\n\n**Figure 1.:** (A) Working model of autophagosome-vacuole fusion. Red lines indicate the involved SNAREs Vam3, Vam7, Vti1, and Ykt6. Ypt7 is shown bound to the HOPS complex. For details see text. (B\u2013H) Localization of Atg8 relative to Ccz1 and Ypt7 during growth and nitrogen starvation. Cells expressing mCherry-tagged Atg8 or GFP-tagged Ccz1 or Ypt7 were grown in YPD (normal,\u00a0+N) or in synthetic medium without nitrogen (SD-N, labeled as N-starved) for 2 hr and analyzed by fluorescence microscopy and showed via individual slices. Size bar, 5 \u00b5m. (F\u2013I) Percentage of Ccz1 puncta (F) or Ypt7 puncta (I) co-localizing with Atg8 under both conditions. Atg8 dots (n\u00a0\u2265\u00a050), Ccz1 dots (n\u00a0\u2265\u00a0300) and Ypt7 dots (n\u00a0\u2265\u00a0200) were quantified by Image J. Error bars represent standard deviation (SD). (K) Relocalization of Ccz1 during starvation. Time course of mCherry-tagged Vps21 and Atg8 relative to GFP-tagged Ccz1. Error bars represent SD.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31145/elife-31145-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013C) Localization of Atg8 relative to Mon1 during growth and starvation. Cells expressing mCherry-tagged Atg8 or GFP-tagged Mon1 were grown in YPD or in SD-nitrogen starvation medium for 2 hr and analyzed by fluorescence microscopy. Size bar, 5 \u00b5m. (D\u2013E) Cells expressing mCherry-tagged Atg8 and GFP-Ypt7 carrying plasmid pRS315-CUP1pr-BFP-APE1 were grown in SDC medium containing CuSO4 and starved for 1 hr. Size bar, 1 \u00b5m.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31145/elife-31145-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A\u2013D) Effect of the vps21 mutant on Ccz1 localization and autophagy. Atg8 was deleted from wild-type and vps21 deletion background strains, and subsequently transformed with a CEN plasmid expressing GFP-Atg8 driven by the endogenous promoter. Cells were grown in rich medium and shift to SD-N medium for 2 hr (A\u2013B). Cells expressing mCherry-tagged Atg8 or GFP-tagged Ccz1 were grown at 24\u00b0C in rich medium and then shifted to SD-N for 2 hr at 24\u00b0C or 37\u00b0C, and analyzed as in Figure 1\u2014figure supplement 1 (C\u2013D). Size bar, 5 \u00b5m. (E) Cells were grown in rich medium and then starved 2 hr or 4 hr to induce autophagy, and their autophagic activities were detected by an alkaline phosphatase (ALP) assay (Guimaraes et, al., 2015). Error bars represent standard deviation.\n\nAtg8 is one of 16 conserved autophagy-related (Atg) proteins, which are essential for autophagosome formation, and it possesses six mammalian homologues (Shpilka et al., 2012). Members of the Atg8/LC3 protein family are conjugated to phosphatidylethanolamine (PE) at the autophagosome membrane, and interact with several Atg proteins via a LC3 interacting region (LIR motif) to control both maturation and fusion (Wild et al., 2014; Nakatogawa et al., 2007; Klionsky and Schulman, 2014; Abreu et al., 2017). Here, we demonstrate that Atg8 recruits the endosomal GEF Mon1-Ccz1 to the pre-autophagosomal structure. Mutants in a LIR motif present in the Ccz1 C-terminal do not impair GEF activity or endosomal function, but block autophagosome fusion with vacuoles. Our data thus reveal how a GEF can mark two different organelles with the same Rab for fusion via distinct mechanisms.\n\n## Results\n\nTo determine how yeast autophagosomes are specifically decorated with Ypt7, we analyzed the subcellular distribution of both Mon1 and Ccz1 as the GEF complex formed by these two proteins (Nordmann et al., 2010). In particular, we co-localize GFP-tagged Mon1 and Ccz1 with mCherry-tagged Atg8, an autophagosome marker protein (Suzuki et al., 2007), in wild type cells in growing and nitrogen starvation conditions, which induce autophagy. In yeast, autophagosomes form at the pre-autophagosomal assembly site proximal to the ER and vacuole, which is visible as a single dot-like structure by fluorescence microscopy (Klionsky et al., 2016; Graef et al., 2013; Suzuki et al., 2013; Mari and Reggiori, 2010). Ccz1 and Mon1 were found in distinct puncta, likely endosomes (Rana et al., 2015; Nordmann et al., 2010), which were not co-localizing with the Atg8 puncta in nutrient-rich conditions (Figure 1B; Figure 1\u2014figure supplement 1A). After nitrogen starvation, however, Atg8 labeled the vacuole lumen in wild-type cells as expected (Rieter et al., 2013). This made it impossible to localize Ccz1 or Mon1 to autophagosomes under these conditions, because of their rapid fusion with the vacuole upon completion (Geng et al., 2008). We therefore employed different strategies to block fusion of autophagosomes with vacuoles to determine whether Ypt7, Ccz1, and Mon1 transiently co-localize with Atg8. Deletion of the vacuolar Qa-SNARE Vam3, or temperature sensitive mutants of either Vam3 or the HOPS subunit Vps11 block fusion processes with the vacuole (Darsow et al., 1997; Peterson and Emr, 2001). When cells with these mutations were starved, we indeed observed an accumulation of Atg8-positive autophagosomes, and both Ccz1 and Mon1 were markedly co-localizing with them (Figure 1C\u2013E, quantified in F; Figure 1\u2014figure supplement 1B,C). Likewise, a fraction of Ypt7 colocalized with Atg8 in vam3\u2206 cells only during starvation (Figure 1G\u2013I). In agreement with this, purified autophagosomes contained both Ypt7 and Mon1-Ccz1 on their surface (Gao and Ungermann, in\u00a0preparation). Furthermore, we analyzed GFP-Ypt7 in cells overexpressing Ape1. Ape1 overexpression results in the formation of a giant Ape1 oligomer, which is too large to be closed by the isolation membrane marked by mCherry-Atg8 (Suzuki et al., 2013). We found that Ypt7 localizes on the cup-shaped isolation membrane concentrated in a dot in wild-type and vam3\u2206 cells (Figure 1\u2014figure supplement 1). These data support our interpretation that Ypt7 is present on the autophagosomal membrane. To determine whether starvation promotes the redistribution of Ccz1 to autophagosomes relative to endosomes, we monitored Ccz1 co-localization with Atg8 or Vps21, an endosomal marker protein (Cabrera et al., 2013), over time. Indeed, the fraction of Ccz1 in Vps21-positive organelles decreased, while the localization to Atg8-positive puncta increased during the monitored time period (Figure 1K). As recently published (Zhou et al., 2017), we found the vps21\u2206 mutant displays impaired autophagy as monitored by the processing of initially cytosolic Pho8\u220660 in the vacuole lumen (Figure 1\u2014figure supplement 2E). We also noticed that Ccz1 is cytosolic in vps21\u2206 cells before and after starvation, which did not allow us to detect this protein on autophagosomal structures (Figure 1\u2014figure supplement 2A\u2013D). It is possible that the localization of Mon1-Ccz1 to endosomes is a prerequisite for a later the movement of the GEF complex to autophagosomes during starvation.\n\nThese data suggest that the Mon1-Ccz1 complex is specifically recruited to autophagosomes. To monitor the potential contribution of Atg proteins, including Atg8, in targeting Mon1-Ccz1 and Ypt7 to autophagosomes, we selected the precursor Ape1 oligomer (Kim et al., 1997), a specific autophagosomal cargo behaving similar to Atg8 under starvation conditions, for a small colocalization screen. In wild-type cells and in agreement with the data obtained using mCherry-Atg8 (Figure 1B,G; Figure 1\u2014figure supplement 1A), the starvation-induced co-localization with Ape1 was observed for Ypt7 but not for Ccz1 (Figure 2A,B; Figure 2\u2014figure supplements 1 and 2). To clarify the contribution of known Atg proteins in this process, we generated double knock out mutants lacking VAM3 and selected ATG genes and repeated the assay. In vam3\u2206 atg1\u2206 cells as in vam3\u2206 cells Ccz1 and Ypt7 both robustly colocalized with Ape1 upon nutrient deprivation (Figure 2A,B; Figure 2\u2014figure supplements 1 and 2). However, all the mutants blocking Atg8 conjugation to PE such as those lacking the components of the conjugation machinery or Atg8 itself, abolished colocalization of Ccz1 and Ypt7 with Ape1. Interestingly, the deletion of Atg14, a subunit of the PI-3-kinase I complex required for autophagy (Kihara et al., 2001), did not impair colocalization of Ccz1 and Ape1 on autophagosomes (Figure 2A; Figure 2\u2014figure supplement 1), though affected Ypt7 colocalization with Ape1 (Figure 2B; Figure 2\u2014figure supplement 2). Colocalization of Ape1 relative to Atg8 was not affected in the atg14 mutant (Figure 2\u2014figure supplement 2). This suggests that PI-3-P is not a main determinant for Mon1-Ccz1 targeting to autophagosomes, though might support its activity and/or recruitment of Ypt7.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/31145/elife-31145-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013B) Atg8 is required for localization of Ccz1 to autophagosomes. Graphs show percentage of colocalization of Ccz1 puncta (A) or Ypt7 puncta (B) relative to Ape1 puncta in wild-type and the different mutants. Cells were grown and analyzed as in Figure 1. Ape1 dots (n\u00a0\u2265\u00a050), Ccz1 dots (n\u00a0\u2265\u00a0300), and Ypt7 dots (n\u00a0\u2265\u00a0200) were quantified by Image J. Error bars represent SD. (C\u2013E) Interaction analysis of Atg8 with Mon1-Ccz1. (C) Immunoprecipitation of TAP-tagged Ccz1 from wild-type and atg4\u2206 strain co-expressing GFP-Atg8. The strain was grown in YPD or in SD-N for 3 hr before preparing cell extracts. GFP-Atg8 was subsequently immunoprecipitated using GFP-trap beads. Finally, immunoprecipitates were analyzed by Western blotting against GFP and CbP-tag. The graph is the quantification of three independent experiments, where the interaction observed in unstarved cells from wild-type is set as 1. Error bars are SD. (D) Interaction of Atg8 with Mon1-Ccz1 or purified Ccz1. TAP-tagged proteins (shown as purified proteins on Coomassie stained gels to left) were incubated with GST, GST-ubiquitin, and GST-Atg8 immobilized on GSH-Sepharose. Eluted proteins were resolved by SDS-PAGE and analyzed by Western blotting against the CbP-tag (top) or by Coomassie staining (bottom). Load, 10%. (E) Interaction of Atg8 mutants with Mon1-Ccz1. Analysis was done as in (D) with the indicated GST-tagged Atg8 truncation mutants. (F) Interaction of Mon1-Ccz1\u2206C with Atg8. Mon1-Ccz1\u2206C was purified as wild-type and analyzed for interaction with GST-tagged Atg8 as before. Top, Western blot against the CbP tag. A star indicates the additional decoration of GST-Atg8 by the antibody; bottom, Coomassie staining and quantification of three experiments. (G) Requirements of Mon1 and Ccz1 domains for autophagy. The indicated truncations were analyzed in cells expressing mCherry-tagged Atg8. Vacuoles were stained with CMAC, and cells grown in SD-N medium were then analyzed by fluorescence microscopy as in Figure 1B. Size bar, 5 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31145/elife-31145-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Wild-type (A) or the respective mutant cells (B\u2013J) expressing mCherry-tagged Ape1 and GFP-tagged Ccz1 were grown and analyzed as in Figure 1\u2014figure supplement 1. Size bar, 5 \u00b5m.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31145/elife-31145-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Cells expressing mCherry-tagged Ape1 or GFP-tagged Ccz1 or Atg8 were grown and analyzed as in Figure S1. Localization of Ape1 relative to Ypt7 (A\u2013G) or to Atg8 (H\u2013J) in the indicated strains. Size bar, 5 \u00b5m.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/31145/elife-31145-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A\u2013B) Analysis of the colocalization between Atg8 and Ape1 in wild-type and mutant cells. Cells expressing mCherry-tagged Ape1 or GFP-tagged Atg8 were grown and analyzed as in Figure 1\u2014figure supplement 1. (C) ALP activity of wild-type and mutant cells. Cells expressing the truncated and thus cytosolic Pho8\u220660 construct were grown in rich medium and then starved 3 hr to induce autophagy, and their autophagic activities were detected by monitoring ALP assay. Error bars represent standard deviation. (D) Ape1 transport in wild-type and mutant cells. Cells were grown in rich medium and then starved 1 hr to induce autophagy.\n\nTaken together these observations indicate that Mon1-Ccz1 recruitment onto autophagosome requires Atg8. To determine whether Mon1-Ccz1 binds to Atg8 in vivo, we immunoprecipitated GFP-tagged Atg8 from wild-type and atg4\u2206 cells co-expressing Ccz1-TAP. Atg4 is required for processing of Atg8 prior to its lipidation on the preautophagosomal structure (Chen and Klionsky, 2011). In agreement with our previous finding, we observed an interaction of Ccz1 with Atg8 in wild-type cells, which was greatly enhanced when cells were starved prior to lysis. In contrast, no interaction was observed in atg4\u2206, supporting our notion that Ccz1 binds to lipidated Atg8 on autophagosomal structures in vivo (Figure 2C). We next investigated whether Mon1-Ccz1 could bind to Atg8 directly. We thus incubated purified Mon1-Ccz1 with immobilized GST-Atg8 or ubiquitin, and detected robust binding only to Atg8 (Figure 2D). Atg8 recognizes LIR motifs via its N-terminal helices (Klionsky and Schulman, 2014). We therefore tested if truncation mutants of Atg8 lacking the 8 or 24 N-terminal residues still bind Mon1-Ccz1. Importantly, binding was now lost strongly suggesting that Mon1-Ccz1 specific association to Atg8 is mediated by one or more LIR motifs (Figure 2E). To further test whether this interaction depends on the Ccz1 LIR motif(s), we generated an Atg8 I21R mutant, which blocks the binding pocket for the crucial W0 LIR motif residue (Noda et al., 2008). We observed no binding between Atg8 I21R and Ccz1 (Figure 2E), indicating that Atg8 indeed recognizes a LIR motif in Ccz1. This Atg8 mutant functions in non-selective autophagy (Figure 2\u2014figure supplement 3A\u2013C), yet has some defect in selective autophagy when we followed ApeI processing during starvation (Figure 2\u2014figure supplement 3D). It thus behaves like previously characterized mutants at this site (Noda et al., 2008).\n\nWe then asked which part of Mon1-Ccz1 binds to Atg8. Mon1 and Ccz1 interact with each other via their conserved longin domains (Nordmann et al., 2010; Cabrera et al., 2014), which form a common interface that is required for specific Ypt7 activation (Kiontke et al., 2017). However, Mon1 has some additional 150 residues at the N-terminus of its longin domain, and both Mon1 and Ccz1 have C-terminal domains, whose structure and function is so far unresolved. We therefore generated N- and C-terminal truncation mutants of both proteins and monitored localization and autophagy. In starvation conditions, GFP-tagged truncation mutants of Mon1 expressed in the mon1\u2206 background did not impair vacuole morphology or starvation-induced Atg8 trafficking to the vacuole lumen (Figure 2G). We noted though that GFP-Mon1 localization was more strongly impaired in the N-terminal than the C-terminal truncation. In contrast, deletion of the C-terminal domain of GFP-tagged Ccz1 resulted in fragmented vacuoles, even though Ccz1 was still localized to distinct puncta that did not co-localize with Atg8 (Figure 2G). We thus asked whether Ccz1 alone might be able to directly interact with purified Atg8. Although purified Mon1-Ccz1 as well as Ccz1 alone were able to bind GST-Atg8 (Figure 2D), a mutant complex of Mon1 with Ccz1\u2206C showed strongly reduced interaction (Figure 2F). Altogether, these observations suggest that the C-terminal part of Ccz1 directs the GEF complex to Atg8-positive autophagosomes.\n\n### Identification of putative LIR motifs in Ccz1\n\nTo determine the direct binding site in the Ccz1 C-terminal, we compared the C-termini of multiple Ccz1 homologs. As metazoan Ccz1 is shorter than yeast Ccz1, we narrowed our search on the conserved fragment and identified the putative LIR motifs (https://ilir.warwick.ac.uk; Figure 3A). We generated the corresponding mutants by changing the aromatic W0 and the hydrophobic L4 residues into alanines. Among the nine mutants (Figure 3A), two showed impaired GFP-Ccz1 localization to mCherry-Atg8-positive autophagosomes under nitrogen starvation conditions, that\u00a0is Y236A V239A (named LIR1) and Y445A L448A (LIR2) (Figure 3B,C,E). These two motifs are highly conserved across species (Figure 3B). However, we noticed that trafficking of mCherry-tagged Atg8 to the vacuole was not totally compromised in the single mutants at normal growth temperature (Figure 3C). We therefore combined both mutations and nitrogen starved the cells. This resulted in a complete block of autophagy in the double mutant as shown by defects in Atg8 delivery and processing in the vacuole (Figure 3C and F), but also vacuole morphology (Figures 3C and 4D). Under these conditions, numerous mCherry-Atg8-positive autophagosomes accumulated in the cytoplasm, consistent with a defect in fusion with vacuoles. The LIR1,2 mutant behaves thus as the Ccz1\u2206C mutant, and is likewise\u00a0compromised in both autophagy and vacuole biogenesis in general (Figures 2F and 3C,F).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/31145/elife-31145-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic representation of potential LIR motifs of the C-terminal part of Ccz1. Blue and red indicates all LIR motifs analyzed, red the motifs that also impair Ccz1 localization. (B) Alignments of the potential Ccz1 LIR motifs Mm: Mus musculus, Hs: Homo sapiens, Cg: Candida glabrata, Lt: Lachancea thermotolerans, Nd: Naumovozyma dairenensis, Ka: Kazachstania Africana. (C\u2013D) Effect of LIR mutants on localization, autophagy and vacuole morphology. Analysis was done as in Figure 1B\u2013H. CMAC staining was done for 15 min before analysis. Cells were grown either at 30\u00b0C or 37\u00b0C during growth or starvation. Size bar, 5 \u00b5m. (E) Quantification of Atg8 dots per cell from images in (C\u2013D). Error bars represent SD. (F) Analysis of autophagy over time. Cells were grown at 30\u00b0C and incubated in starvation medium for the indicated time periods, then harvested, and proteins were analyzed by SDS-PAGE and Western blotting against GFP.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/31145/elife-31145-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013C) Interaction of Ccz1 LIR mutants with Atg8. (A) Analysis of purified Mon1-Ccz1 wild-type and mutant complex by SDS-PAGE and Coomassie staining. All of strains were grown at 30\u00b0C for purification. (B\u2013C) Mutations in the LIR motifs impair Mon1-Ccz1 interaction with Atg8. Interaction analysis was done as in Figure 2D, and proteins were analyzed by Western blotting (top) and Coomassie staining (bottom). (D) Comparison of vacuole morphology in LIR mutant cells. Cells were grown at 30 or 37\u00b0C in starvation medium, and vacuoles were then stained with CMAC. The number of vacuoles per cell was quantified as indicated. Error bars, SD. (E) Effect of LIR mutants on sorting of vacuolar hydrolases. The indicated cells were grown in starvation medium at the indicated temperature for 2 hr. Total cell lysates were generated and proteins were resolved on SDS-PAGE. Western blots were decorated against CPY and Tom40 (as loading control). (F) Endocytosis analysis in LIR mutants. The indicated cells expressing Mup1-GFP were grown in the absence (-Met) of methionine in minimal medium to an OD600 of 1.0 at the 23\u00b0C. Where indicated, methionine was added after the temperature shift to 37\u00b0C, and cells were analyzed by fluorescence microscopy after 1 hr. Size bar, 5 \u00b5m.\n\nWe therefore focused on the single mutants. We were wondering why the single LIR mutants were still functional, even though Ccz1 targeting seemed diminished. We considered the possibility that the LIR mutants may be impaired at higher temperature, and thus repeated the starvation assay at 37\u00b0C (Figure 3D). Although the wild-type cells were functional in autophagy, both LIR mutants now accumulated Atg8-positive autophagosomes in cells (Figure 3D, quantified in E).\n\nTo test if these LIR mutants indeed compromise binding to Atg8, we produced and used the mutants in Atg8 binding assays (see Figure 2D\u2013F). Both LIR1 and the LIR1,2 double mutants could be purified as wild-type Mon1-Ccz1 from yeast, indicating that they were not destabilizing the complex (Figure 4A). However, they showed poor interaction with Atg8 (Figure 4B,C). As we encounter major problems in the purification of the Mon1-Ccz1 complex with LIR2, we did not further pursue it in our in vitro analyses. Nonetheless, these data agree with a model, where one and possibly two Ccz1 LIR motifs are required for the recruitment of Mon1-Ccz1 to Atg8.\n\n### The Ccz1 LIR motifs are not required for endosomal trafficking\n\nOur data suggest an important function of the one and possibly two LIR motifs in directing Mon1-Ccz1 to autophagosomes. As vacuole morphology of the LIR1 and LIR2 mutants was only mildly impaired during heat stress (Figures 3D and 4D), we asked if endosomal trafficking was functional in these mutants. The vacuolar hydrolase carboxypeptidase Y (CPY), which is normally sorted from the Golgi via the endosome to the vacuole, is lost from cells in mutants impaired in vacuole biogenesis such as vps39\u2206 or the temperature sensitive mutant vps11-1 at 37\u00b0C (Figure 4E). Likewise, ccz1\u2206 cells have less intracellular CPY. However, both LIR mutants in Ccz1 were entirely unperturbed also at elevated temperature or when cells were starved. As a second assay, we traced the sorting of the methionine transporter Mup1 from the plasma membrane to the vacuole (Arlt et al., 2015). In both wild-type cells and the LIR mutants, Mup1-GFP was mainly at the plasma membrane in the absence of methionine, but was efficiently sorted to the vacuole lumen when methionine was added after the temperature shift to 37\u00b0C (Figure 4F). This sorting remained unaffected at higher temperatures as well. We therefore conclude that the LIR1 and LIR2 mutants selectively disable Mon1-Ccz1 targeting to autophagosomes, whereas endosomal function of Mon1-Ccz1 remains unperturbed under the same conditions.\n\n### Atg8 specifies Mon1-Ccz1 function on autophagosomal membranes\n\nOur data imply that Atg8 is indeed a primary determinant to recruit Mon1-Ccz1 to autophagosomes. We used our Mon1-Ccz1 LIR1 mutant to directly test this hypothesis as this was the best behaving complex. From previous in vitro experiments with purified organelles and proteins we have learned that mutations can compromise protein function in vitro much more clearly than in vivo (Br\u00f6cker et al., 2012; Ungermann et al., 1999). We therefore took advantage of GEF assay that we developed before to monitor Mon1-Ccz1 activity on membrane-bound Ypt7 (Cabrera et al., 2014). C-terminally His-tagged Ypt7 was preloaded with the MANT-GDP nucleotide, which looses fluorescence when exchanged for non-fluorescent GTP. In the presence of liposomes carrying the His-interacting DOGS-NTA lipid, and the nucleotide exchange reaction is strongly enhanced when Mon1-Ccz1 is also recruited onto the liposome surface (Cabrera et al., 2014). Using this assay, we compared wild-type and LIR1 mutated Mon1-Ccz1 complex (Figure 5A). Both complexes had similar activity for Ypt7 (Figure 5A,D). We then lowered the Mon1-Ccz1 concentration in our assay to test whether Mon1-Ccz1 targeting and function could depend on membrane-bound Atg8. Indeed, membrane-targeted Atg8-His, but not soluble Atg8, stimulated the GTP exchange reaction (Figure 5B,D), presumably due to its ability to recruit the GEF complex to membranes. In contrast, the Mon1-Ccz1 LIR mutant did not respond to the addition of Atg8 (Figure 5C,D). Our data thus show that membrane-bound Atg8 can recruit Mon1-Ccz1 to membranes to promote Ypt7 activation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/31145/elife-31145-fig5-v2.jpg)\n\n**Figure 5.:** (A) GEF activity of wild-type and mutant Mon1-Ccz1 complex. GEF activity was monitored by displacement of MANT-GDP from Ypt7 using a microplate reader (see Materials\u00a0and\u00a0methods). Assay was carried out with liposomes capable of binding His-tagged Ypt7 (Cabrera et al., 2014). Without GTP, blue line; without GEF, black line; wt refers to different concentrations of Mon1-Ccz1, LIR1 to the Mon1-Ccz1 mutant complex. (B\u2013D) Effect of membrane-bound Atg8 or soluble Atg8 on GEF activity. Analysis was carried out as in (A) with reduced Mon-Ccz1 concentrations and upon addition of His-tagged Atg8 at the indicated concentrations. (E) Quantification of the rate constants of wild-type and mutant Mon1-Ccz1 complex in the presence and absence of Atg8 for Figure 5B\u2013C. Rate constants were calculated based on the initial slope of the GEF curve (n\u00a0=\u00a03) (Kiontke et al., 2017; Langemeyer et al., 2014). Error bars, SD. (F) Model of Mon1-Ccz1 recruitment to the autophagosome and endosomes. For details see text.\n\n## Discussion\n\nPrevious studies showed that artificial redirection of GEFs can redirect different Rabs to other membranes (Bl\u00fcmer et al., 2013; Gerondopoulos et al., 2012), yet the molecular determinants that target GEFs to their correct membrane are only partially known and rarely experimentally validated. Autophagosomes form de novo and finally fuses with lysosomes (Reggiori and Ungermann, 2017). Like maturing endosomes, autophagosomes need to acquire the machinery to allow their fusion with lysosomes, including the Rab7/Ypt7 GTPase. Here we have uncovered a simple molecular mechanism that specifically targets the GEF Mon1-Ccz1 onto the surface of autophagosomes. The Ccz1 subunit has at least one conserved C-terminal LIR motif, which directly binds to the LC3 homolog Atg8. Once on autophagosomes, Mon1-Ccz1 recruits and activates the Rab7-like Ypt7 from the cytosol, which in turn can bind the HOPS tethering complex to trigger SNARE-mediated fusion. We indeed found recent evidence that Mon1-Ccz1 is sufficient to activate Ypt7, which was provided in a soluble complex with GDI, and thus triggered fusion in a reconstituted assay (Langemeyer et al., 2018). Similarly, the TRAPP GEF complexes could activate their corresponding Rab-GDI complexes on membranes (Thomas and Fromme, 2016). In agreement with this interpretation, only wild type but not LIR-mutated Mon1-Ccz1 strongly promotes Ypt7 activation in the presence of membrane-localized Atg8 (Figure 5E).\n\nOur data imply that lipidated Atg8 is a specific determinant to redirect Mon1-Ccz1 to autophagosomes. In addition to Atg8, PI-3-P may support re-localization to both endosomes and autophagosomes (Heged\u0171s et al., 2016; Cabrera et al., 2014). Indeed, deletion of Atg14 in Drosophila fat cells appears to affect autophagosome fusion in addition to altering the biogenesis of these vesicles (Heged\u0171s et al., 2016). The generation of autophagosomal PI-3-P is required for multiple events, including efficient Atg8 lipidation (Shibutani and Yoshimori, 2014). Interestingly, Mon1-Ccz1 localization to Atg8 positive dots was not impaired if synthesis of the autophagosome-specific PI-3-P pool was blocked by atg14\u00a0deletion (Figure 2C). We consider it therefore unlikely that PI-3-P synthesis is a primary factor for Mon1-Ccz1 localization to autophagosomes. In contrast, our analysis suggests that PI-3-P may be critical for Mon1-Ccz1 activity, which could explain the defect in Ypt7 localization to autophagosomes of the atg14\u0394 mutant. Alternatively, PI-3-P might directly support the recruitment of Ypt7, even though we have evidence that Mon1-Ccz1 activity is most critical in this process (Langemeyer et al., 2018). How the reported PI-3-P binding (Lawrence et al., 2014; Cabrera et al., 2014) affects Mon1-Ccz1 function needs to be further dissected. Future studies will also need to explore how Mon1-Ccz1 is timely and spatially recruited to autophagosomes.\n\nImportantly, our study reveals that Mon1-Ccz1 is functional in the endocytic pathway, when its LIR motifs are singularly mutated. This provides further evidence that Mon1-Ccz1 has a dual role and two different targeting mechanisms for two distinct organelles. By identifying the LIR mutants, we established one of the few conditions that might accumulate fully assembled autophagosomes, which are incompetent of fusing with vacuoles, while maintaining endosome-vacuole fusion and thus vacuoles functional.\n\nIn mammalian cells, additional proteins such as PLEKHM1 (McEwan et al., 2015) have been identified as factors involved in the fusion between autophagosomes and lysosomes. Interestingly, PLEKHM1 directly binds LC3-like proteins and Rab7, and could thus support HOPS-mediated tethering and fusion of autophagosomes with lysosomes. We believe that GEFs such as Mon1-Ccz1 are the most critical factors to confine Rab localization and thus determine organelle identity. The cooperation with LC3-like proteins could then provide a combinatorial code to target GEFs and additional fusion factors to autophagosomes. Interestingly, Atg8 is not homogenously distributed over the surface of forming autophagosomes (Graef et al., 2013), and could potentially cluster fusion factors to facilitate their cooperation during fusion. How Atg8 recycling and fusion are then coordinated (Abreu et al., 2017), it is yet another exciting riddle to be dissected. At least Mon1-Ccz1 localization to autophagosomes might be dispensable, once Rab7/Ypt7 is recruited and bound to HOPS.\n\nRecent work of us and others revealed that GEFs can recruit Rab GTPases from the GDI complex to membranes (Langemeyer et al., 2018)(Thomas and Fromme, 2016). The identification of Atg8 as a determinant for Mon1-Ccz1 localization to autophagosomes provides the first example of how a GEF can be diverted to a different location. Differential spatiotemporal recruitment of GEFs allows cells to operate distinct pathways, such as autophagy and endosomal maturation, depending on their metabolic needs while employing the same machinery. For endosomal localization, Rab5-GTP has been suggested as a Mon1-Ccz1 interactor based on yeast-two-hybrid interactions (Li et al., 2015; Cui et al., 2014; Singh et al., 2014; Kinchen and Ravichandran, 2010). Future studies will need to dissect if this order of events can be indeed recapitulated in vitro and how further endosomal and autophagosomal factors specify GEF localization.\n\n## Materials and methods\n\n### Yeast strains and molecular biology\n\nStrains and plasmids used in this study are listed in Supplementary file 1 and 2, respectively. Deletions and tagging of genes were done by homologous recombination of respective PCR fragments (Janke et al., 2004; Puig et al., 1998). Mon1 and Ccz1 mutants were generated by QuikChange mutagenesis (Stratagene, La Jolla, CA). Mon1 and Ccz1 truncation mutants have been published (Kiontke et al., 2017). Plasmids encoding GST-Atg8 and Atg8-His6 were kindly provided by Ivan Dikic (Goethe University School of Medicine, Frankfurt am Main, Germany), and Sascha Martens (University of Vienna, Austria), respectively.\n\n### Tandem affinity purification\n\nTandem affinity purification was performed as described (Br\u00f6cker et al., 2012; L\u00fcrick et al., 2017). Six liters of culture in YPG were grown at 30\u00b0C to OD600 of 6, and cells were harvested and lysed in lysis buffer (300 mM NaCl, 50 mM HEPES-NaOH, pH 7.4, 1.5 mM MgCl2, 1\u00a0\u00d7\u00a0FY protease inhibitor mix (Serva, Germany), 0.5 mM PMSF and 1 mM DTT). Lysates were centrifuged for 1 hr at 100,000 g, and the cleared supernatant was incubated with IgG Sepharose beads (GE Healthcare,\u00a0Penzberg,\u00a0Germany) for 2 hr at 4\u00b0C. Beads were collected by centrifugation at 800 g for 2 min, and washed with ice cold 15 ml lysis buffer containing 0.5 mM DTT and 10% glycerol. Bound proteins were eluted by TEV cleavage overnight at 4\u00b0C. Purified proteins were analyzed on SDS-PAGE.\n\n### E.coli protein expression and purification\n\nAtg8 was purified from E. coli BL21 (DE3) Rosetta cells. Cells were grown to an OD600 of 0.6 and induced with 0.5 mM IPTG overnight at 16\u00b0C. Cells were lysed in lysis buffer (50 mM HEPES/NaOH, pH 7.5, 150 mM NaCl, 1 mM PMSF, 1x protease inhibitor cocktail (1x\u00a0=\u00a00.1 mg/ml of leupeptin, 1 mM o-phenanthroline, 0.5 mg/ml of pepstatin A, 0.1 mM Pefabloc)). Lysates were centrifuged for 20 min at 30,000 g, and the cleared supernatant was incubated with Glutathione Sepharose (GSH) beads (for GST-tagged proteins) or Ni-NTA beads (for His-tagged proteins) for 1 hr at 4\u00b0C on a nutator. Beads were washed with 20 ml cold lysis buffer (GSH-beads) or lysis buffer containing 20 mM imidazole (Ni-NTA beads). Bound proteins were eluted with buffer containing 15 mM reduced glutathione (GSH-beads) or buffer containing 300 mM imidazole (Ni-NTA beads). Buffer was exchanged to 50 mM HEPES/NaOH, pH\u00a07.4, 150 mM NaCl, and 10% glycerol by using a NAP-10 column (GE Healthcare,\u00a0Penzberg,\u00a0Germany).\n\n### GST pull down binding assays\n\nTo perform GST pull down binding assays, GST or GST-fused Atg8 wild type or Atg8 mutants or ubiquitin were used as bait, and Mon1-Ccz1 was used as a prey. GST or GST-tagged proteins (150 \u00b5g) were simultaneously incubated with GSH-beads for 1 hr at 4\u00b0C on a rotating wheel. Beads were washed three times with buffer (150 mM NaCl, 50 mM HEPES/NaOH, pH 7.4, 1.5 mM MgCl2, 0.1% NP-40), and the GSH-bound proteins were then incubated with Mon1-Ccz1 (25 \u00b5g) for 2 hr at 4\u00b0C on a rotating wheel. Beads were again washed three times in buffer. Bound proteins were eluted by boiling in SDS-sample buffer, resolved on SDS gels, and either analyzed by Coomassie Blue staining or immunoblotting with anti-CbP antibodies (L\u00fcrick et al., 2017).\n\n### Light microscopy and image analysis\n\nYeast cells were first cultured in YPD media to log phase, and then switched to synthetic minimal medium lacking nitrogen (SD-N) for the indicated times to induce starvation. For CMAC staining of vacuoles, cells were incubated with 0.1 CMAC for 15 min at 30\u00b0C and subsequent washed with medium. Cells were imaged on a Deltavision Elite imaging system based on an inverted microscopy, equipped with 100x NA 1.49 and 60x NA 1.40 objectives, a sCMOS camera (PCO, Kelheim, Germany), an InsightSSI illumination system, and SoftWoRx software (Applied Precision, Issaquah, WA). Stacks of 6 or 8 images with 0.2 \u00b5m spacing were taken for constrained-iterative deconvolution (SoftWoRx) and quantification.\n\n### GEF assay on multilamellar vesicles (MLVs)\n\nGEF assays were performed as described (Nordmann et al., 2010; Cabrera et al., 2014). 60 pmoles Atg8-His were incubated with 60 \u00b5l multilamellar vesicles (MLVs,\u00a015\u00a0mM) of the following composition (palmitoyloleoyl phosphatidylcholine, 84 mol%, palmitoyloleoyl phosphatidylcholine 10 mol%, DOGS-NTA (1,2-dioleoyl-sn-glycero-3-[(N-(5-amino-1-carboxypentyl)iminodiacetic acid)succinyl]), 6 mol%) for 15 min at 25\u00b0C. 500 pmoles Ypt7-His were preloaded with MANT-GDP, and incubated with MLVs for 5 min at 25\u00b0C before addition of the Mon1\u2013Ccz1 complex. MANT fluorescence was detected in a SpectraMax M3 Multi-Mode Microplate Reader (Molecular Devices, Germany). Samples were excited at 355 nm and fluorescence was detected at 448 nm. After 20\u201330 min, 0.1 mM GTP was added to trigger the exchange reaction. The decrease of MANT-GDP fluorescence is an indicator of nucleotide exchange.\n\n### Giant Ape1 assay\n\nYeast cells (carry the plasmid pRS315-CUP1pr-BFP-APE1) were grown overnight in SDC-LEU medium, then diluted to early log phase next morning. 250 \u00b5M CuSO4 was added to induce the giant Ape1 oligomer formation for 4 hr, and cultures were then switched to SD-N medium containing 250 \u00b5M CuSO4 for 1 hr to induce autophagy.\n",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "644f7f64-1e48-497c-8a4b-2d80883e990c",
+      "submission_id": "7d68f72d-951f-48f5-bd11-cf4a75e4ed29",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Noboru Mizushima, The University of Tokyo Japan\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.31145.032](https://doi.org/10.7554/eLife.31145.032)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Molecular mechanism to target the endosomal Mon1-Ccz1 GEF complex to autophagosomes\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Vivek Malhotra as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript describes the mechanism how the Mon1-Ccz1 GEF complex localizes to autophagosomes. The authors show that Mon1-Ccz1 is recruited to autophagosomes by interaction with Atg8. Two putative LIR motifs are present in the C-terminal region of Ccz1. Mutagenic analysis of these LIR motifs suggests that the Ccz1-ATG8 interaction is important for autophagosome-lysosome fusion but not for endocytosis. Finally, using an in vitro GEF system, the authors show that recruitment of Mon1-Ccz1 by membrane-bound Atg8 can promote Ypt7 activation.\n\nThis study reveals a novel mechanism of recruitment of the Rab protein to autophagosomes and the data are mostly convincing. However, to fully support the authors' conclusion, the following issues need to be addressed.\n\nEssential revisions:\n\n1) The authors suggest that the endocytic pathway is not affected in Ccz1-LIR mutant cells at 37oC. However, this is not fully convincing from the data. In Figure 4E, is the 2 h-long incubation at 37oC sufficient for degradation of preexisting CPY? Otherwise, it is difficult to detect a reduction in the amount of CPY after the temperature shift. What is the half-life of CPY? Also, to strictly follow the fate of Mup1 at 37oC in Figure 4F, methionine should be added after the temperature shift. These pieces of information are critical to prove that the mutation in the LIR sequence of Ccz1 specifically impairs its interaction with Atg8 without affecting its general function.\n\n2) Related to above criticism, the importance of the Atg8-Ccz1 interaction can also be tested by introducing mutations in the LIR-binding pocket in Atg8 (e.g., P52A/R67A mutation). Autophagosomes, if normally generated, should accumulate in these mutant cells.\n\n3) Whether Ypt7 is present on autophagosomes or vacuoles (or both) is controversial. This is not carefully addressed in this study. The punctate structures on the vacuolar rim could represent either the PAS/ autophagosomes or a domain of the vacuolar membrane. In fact, in the review article by the authors (J Mol Biol (2017) 429:486), a \"?\" mark is added to Ypt7 on autophagosomes. Has this been already proved elsewhere? In not, the presence of Ypt7, Ccz1, and Mon1 on the autophagosomal side should be determined in more depth, for instance by biochemical methods (e.g., by purification of autophagosomes) or immunoelectron microscopy. It is also ideal to show that the Ccz1 complex is present on the outer membrane, not inside, of autophagosomes.\n\n4) In Figure 2A, normal colocalization of Ccz1 with Ape1 in atg14 mutant cells is interesting and rather surprising. Is Atg8 also colocalized with Ape1 in the atg14 mutant? Is there an Atg8-independent mechanism of Ccz1 targeting? In any case, the author should show actual images for Figure 2A and B (or in Supplemental Figures). It is also important to check the Ccz1-Ape1 colocalization in other atg mutants. Given the involvement of PI3K and potential link of Ccz1-Mon1/Ypt7 with endosomes, at least, atg2d, atg18d, and atg9d mutants should be added.\n\n5) It is also important to test the possibility that Rab5 could be involved in the regulation of the PAS pool of Mon1-Ccz1 and Ypt7.\n\n6) The interaction between Mon1-Ccz1 and Atg8 is not demonstrated in vivo. In particular, it is not clear whether this interaction is influenced by the lipidation status of Atg8. The authors should perform co-immunoprecipitation of endogenous proteins and pay attention to differentiate the two forms of Atg8.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting your revised article \"Molecular mechanism to target the endosomal Mon1-Ccz1 GEF complex to autophagosomes\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Vivek Malhotra as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe revised manuscript has been substantially improved. Notably, the status of endocytic traffic and the role of PI3K are now clearer. However, despite the addition of these new data, this manuscript still contains some critical problems and the responses to the previous criticisms/comments are not sufficient.\n\n1) The authors used the Atg8 I21R mutant instead of the P52A/R67A mutant to disrupt LIR-dependent interactions. However, characterization of the I21R mutant is missing. How does this mutation affect the substrate binding? Does it affect other functions of Atg8 besides substrate binding? Is there any previous study that used this mutant (if so, please cite it)? Furthermore, the authors did not determine whether autophagosomes accumulate in I21R mutant cells. This experiment is critical to rule out the possibility that Ccz1 LIR mutations affect other functions of the protein that are unrelated to Atg8-binding.\n\n2) Whether Ypt7 is present on the autophagosomal membrane is one of the main issues of this study because the authors propose that Mon1-Ccz1 activates Ypt7 on autophagosomes. Additionally, in the Abstract, the authors state that \"previous work implicated that endosomal Rab7/Ypt7 associates to autophagosomes prior to their fusion with lysosomes\", but they do not specify which studies have suggested this. So far, the evidence that Ypt7 is on the autophagosomal membrane has been very limited. The authors show that Ypt7 colocalizes with Atg8 in vam3\u0394 cells, but it is unclear how they have ruled out the possibility that this represents tethering of an Atg8-positive autophagosome with Ypt7 on the vacuolar membrane. In the rebuttal letter, the authors claim that the amount of Ypt7 on the autophagosome is too small to be detected by immuno-EM. However, given that the fluorescent Ypt7 signals are clearly detected by IF (Figure 1G and H), the authors could try immuno-EM a try. Alternatively, the authors may consider looking for large autophagosomes that can be clearly separated from the vacuole by immunofluorescence microscopy.\n\n3) The authors' interpretation of Rab5-related data is self-contradictory. On one hand, they wanted to dismiss a role of Vps21 in autophagy (more on this later). On the other hand, they showed that Ccz1 dots were gone in vps21D. It is the authors' own claim that some Ccz1 dots are with Atg8, and acting to trigger Ypt7. With all Ccz1 dots gone (probably just too weak to be detected), one should actually expect defects in autophagy. While I acknowledge that subtle differences in strain background and experimental conditions might lead to some discrepancy, I'd be surprised that diminished recruitment of Ccz1 to autophagic membrane produces zero effect on autophagy (if so, what is the point of this manuscript?). The more rational interpretation is that vps21D only produces a partial kinetic defect (there are 3 genes in Rab5 family). In fact, the Cherry-Atg8 construct the authors used is not the ideal tool to assess partial defects (it functions substantially worse than GFP-Atg8, see Autophagy. 2015 Jun 3;11(6):954-60.) If the author really wants to dismiss vps21, they should at least use the quantitative Pho8D60 assay. My suggestion here is that they simply acknowledge that Vps21 (and by extension the Rab5 family) has a regulatory role in Ccz1 targeting, and revise their model and conclusions.\n\n4) We suggested the authors to check the interaction of Ccz1 with Atg8 in vivo, and clarify whether Ccz1 preferentially interacts with the lipidated form of Atg8. It appears that the authors have completely missed the latter part. Demonstrating a stronger interaction (Figure 2C) after starvation is totally irrelevant to the question as to whether lipidated Atg8 is the interactor. A potential technical issue is that the authors used GFP-Atg8 with a large tag, which makes it tricky (though not impossible) to discern the two forms. This can be resolved by using something like 3HA-Atg8. Researchers generally tend to believe that lipidated Atg8 is the critical factor in autophagy. It is likely the case here, even though the authors' in vitro experiment didn't directly address it either. That is why it is worth clarifying the interaction, especially considering that it is a very simple experiment. Imagine if the result turned out otherwise; the model would be quite different.\n",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ae119132-3406-486f-a392-c46dc779e013",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C1",
+      "claim": "During autophagy, a newly formed double membrane surrounds its cargo to generate the autophagosome.",
+      "claim_type": "EXPLICIT",
+      "source": "During autophagy, a newly formed double membrane surrounds its cargo to generate the so-called autophagosome, which then fuses with a lysosome after closure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about autophagy and is stated in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "dba8216f-db47-47b9-8c6e-7e7f38e0d14e",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C2",
+      "claim": "The autophagosome fuses with a lysosome after closure.",
+      "claim_type": "EXPLICIT",
+      "source": "During autophagy, a newly formed double membrane surrounds its cargo to generate the so-called autophagosome, which then fuses with a lysosome after closure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about autophagy and is stated in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "73425057-74b5-47ed-b913-22123c2299a8",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C3",
+      "claim": "Endosomal Rab7/Ypt7 associates to autophagosomes prior to their fusion with lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work implicated that endosomal Rab7/Ypt7 associates to autophagosomes prior to their fusion with lysosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "e8ef8e65-f59a-446d-b77f-70aafce424d0",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C4",
+      "claim": "Mon1-Ccz1 directly binds to Atg8.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that Mon1-Ccz1 directly binds to Atg8, the yeast homolog of the members of the mammalian LC3 protein family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "24ca6c0c-ed30-4c63-a898-efd8f08efbaf",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C5",
+      "claim": "Atg8 is the yeast homolog of the members of the mammalian LC3 protein family.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that Mon1-Ccz1 directly binds to Atg8, the yeast homolog of the members of the mammalian LC3 protein family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about protein homology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "8d2f23ea-cb0b-4177-9862-2d74614d6bb7",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C6",
+      "claim": "Mon1-Ccz1 binding to Atg8 requires at least one LIR motif in the Ccz1 C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "This requires at least one LIR motif in the Ccz1 C-terminus, which is essential for autophagy but not for endosomal transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "9305ea3c-6b9d-4c71-a760-c53e03d3d129",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C7",
+      "claim": "The LIR motif in the Ccz1 C-terminus is essential for autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "This requires at least one LIR motif in the Ccz1 C-terminus, which is essential for autophagy but not for endosomal transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "6af9c350-ade3-4902-8149-ec728562d913",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C8",
+      "claim": "The LIR motif in the Ccz1 C-terminus is not essential for endosomal transport.",
+      "claim_type": "EXPLICIT",
+      "source": "This requires at least one LIR motif in the Ccz1 C-terminus, which is essential for autophagy but not for endosomal transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "de702a66-2dd5-4d73-951d-3da5158843af",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C9",
+      "claim": "Only wild-type, but not LIR-mutated Mon1-Ccz1 promotes Atg8-dependent activation of Ypt7.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, only wild-type, but not LIR-mutated Mon1-Ccz1 promotes Atg8-dependent activation of Ypt7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "ccd1cffb-6cff-4cde-aa82-c50c04fe4f25",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C10",
+      "claim": "Autophagosome formation begins with the assembly of the phagophore or isolation membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In both yeast and mammals, autophagosome formation is a complex process that begins with the assembly of the phagophore or isolation membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about autophagy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "4e924647-11ce-4975-bc60-bebfa0435b5e",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C11",
+      "claim": "In mammalian cells, the autophagosome first fuses with endosomes to form an amphisome and then with lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Once complete, the autophagosome first fuses with endosomes to form an amphisome and then with lysosomes in mammalian cells, while it directly fuse with the lysosome-like vacuole in yeast (Lamb et al., 2013; Chen and Klionsky, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "02fa0f40-e357-4234-b6e8-2ebd38bbf784",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C12",
+      "claim": "In yeast, the autophagosome directly fuses with the lysosome-like vacuole.",
+      "claim_type": "EXPLICIT",
+      "source": "Once complete, the autophagosome first fuses with endosomes to form an amphisome and then with lysosomes in mammalian cells, while it directly fuse with the lysosome-like vacuole in yeast (Lamb et al., 2013; Chen and Klionsky, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "867efb25-b570-462f-b05c-2c512fd9a2d0",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C13",
+      "claim": "Autophagosome fusion with vacuoles or endosomes requires SNAREs, Rab GTPases and the HOPS tethering complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Like for other fusion events, autophagosome fusion with vacuoles or endosomes requires SNAREs, Rab GTPases (Rabs) and the HOPS tethering complex (Reggiori and Ungermann, 2017; Barr, 2013; K\u00fcmmel and Ungermann, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "1ebba7f3-ed67-4ae0-9d54-76fb002318fe",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C14",
+      "claim": "Rabs are held soluble in the cytosol by the GDP-dissociation inhibitor (GDI) proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "They are held soluble in the cytosol by the GDP-dissociation inhibitor (GDI) proteins, which bind GDP-loaded Rabs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about Rab GTPase regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "9fc90111-7b3c-435a-a377-dfc6996ddf79",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C15",
+      "claim": "GDI proteins bind GDP-loaded Rabs.",
+      "claim_type": "EXPLICIT",
+      "source": "They are held soluble in the cytosol by the GDP-dissociation inhibitor (GDI) proteins, which bind GDP-loaded Rabs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about Rab GTPase regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "964e86a3-f7b1-4a0a-b01f-82592848b683",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C16",
+      "claim": "A Rab-specific guanine nucleotide exchange factor (GEF) converts Rabs into their active GTP-form once on membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Once on membranes, a Rab-specific guanine nucleotide exchange factor (GEF) converts Rabs into their active GTP-form (Barr, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work and is established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "116f94e3-8304-481b-b1c0-43c54494d7f5",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C17",
+      "claim": "GTP-loaded Rabs interact with effectors such as tethering factors.",
+      "claim_type": "EXPLICIT",
+      "source": "This allows their interaction with effectors such as tethering factors (K\u00fcmmel and Ungermann, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "74b6cf8a-6c48-4ed5-ba3c-8eb535a17eb4",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C18",
+      "claim": "The Rab7 GTPase is required for the fusion of endosomes with lysosomes and lysosomal transport.",
+      "claim_type": "EXPLICIT",
+      "source": "The Rab7 GTPase is required for the fusion of endosomes with lysosomes and lysosomal transport (Nordmann et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "9e9da2a0-e7b7-4ee7-a730-569f66926fb1",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C19",
+      "claim": "In yeast, Ypt7 binds to the HOPS tethering complex, which supports SNARE assembly and fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, the Rab7-homolog Ypt7 binds to the HOPS tethering complex in this process, which in turn supports SNARE assembly and fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about yeast vacuolar fusion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "0ef392bd-4ddf-4956-afba-dbe738452ea8",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C20",
+      "claim": "Rab7 and Ypt7 are required for fusion of autophagosomes with endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Rab7 as well as Ypt7 are also required for fusion of autophagosomes with endosomes (Gutierrez et al., 2004; Ganley et al., 2011; McEwan et al., 2015) and detected on autophagosomes (Heged\u0171s et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "a1e6769f-0f98-4e17-a0e6-6eba7e2aaab4",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C21",
+      "claim": "Rab7 and Ypt7 are detected on autophagosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Rab7 as well as Ypt7 are also required for fusion of autophagosomes with endosomes (Gutierrez et al., 2004; Ganley et al., 2011; McEwan et al., 2015) and detected on autophagosomes (Heged\u0171s et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "7c642f4b-50b2-45fa-85ed-287d7e621e6d",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C22",
+      "claim": "The Mon1-Ccz1 GEF complex triggers endosomal maturation by activating Ypt7 (or Rab7 in metazoans) primarily on late endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The conserved Mon1-Ccz1 GEF complex triggers endosomal maturation by activating Ypt7 (or Rab7 in metazoans) primarily on late endosomes (Nordmann et al., 2010; Gerondopoulos et al., 2012; Singh et al., 2014; Cui et al., 2014), but likely also on autophagosomes (Heged\u0171s et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "8c220a70-ba01-482f-9d91-1fa8cf91c077",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C23",
+      "claim": "Mon1-Ccz1 likely activates Ypt7/Rab7 on autophagosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The conserved Mon1-Ccz1 GEF complex triggers endosomal maturation by activating Ypt7 (or Rab7 in metazoans) primarily on late endosomes (Nordmann et al., 2010; Gerondopoulos et al., 2012; Singh et al., 2014; Cui et al., 2014), but likely also on autophagosomes (Heged\u0171s et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work and is speculative.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "486f342c-1844-4f26-9cee-b4906d4e5ad2",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C24",
+      "claim": "Yeast Mon1-Ccz1 is essential for autophagy progression.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this notion, it has been shown that yeast Mon1-Ccz1 is essential for autophagy progression (Wang et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "e962c0c5-8771-4471-852d-e48e24db91c9",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C25",
+      "claim": "Mon1-Ccz1 can interact with Rab5-GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "As Mon1-Ccz1 can interact with Rab5-GTP, Rab5 may promote Rab7 recruitment to endosomes, possibly with support by the local generation of phosphatidylinositol-3-phosphate (PI-3-P) (Singh et al., 2014; Heged\u0171s et al., 2016; Cui et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "e2fabc5d-cf07-49a9-8ebf-0e5309ce97b4",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C26",
+      "claim": "Rab5 may promote Rab7 recruitment to endosomes, possibly with support by the local generation of phosphatidylinositol-3-phosphate (PI-3-P).",
+      "claim_type": "EXPLICIT",
+      "source": "As Mon1-Ccz1 can interact with Rab5-GTP, Rab5 may promote Rab7 recruitment to endosomes, possibly with support by the local generation of phosphatidylinositol-3-phosphate (PI-3-P) (Singh et al., 2014; Heged\u0171s et al., 2016; Cui et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "5adf3e8a-1af8-426e-bba7-bcbf91e65510",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C27",
+      "claim": "Ccz1 and Mon1 were found in distinct puncta, likely endosomes, which were not co-localizing with the Atg8 puncta in nutrient-rich conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Ccz1 and Mon1 were found in distinct puncta, likely endosomes (Rana et al., 2015; Nordmann et al., 2010), which were not co-localizing with the Atg8 puncta in nutrient-rich conditions (Figure 1B; Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 1B and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "c76549ca-cbc4-4d6d-8b5f-874171561633",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C28",
+      "claim": "After nitrogen starvation, Atg8 labeled the vacuole lumen in wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "After nitrogen starvation, however, Atg8 labeled the vacuole lumen in wild-type cells as expected (Rieter et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work and is expected behavior.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "63333fe8-973e-4a9f-8d1b-4b90751e1eec",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C29",
+      "claim": "Deletion of the vacuolar Qa-SNARE Vam3 blocks fusion processes with the vacuole.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of the vacuolar Qa-SNARE Vam3, or temperature sensitive mutants of either Vam3 or the HOPS subunit Vps11 block fusion processes with the vacuole (Darsow et al., 1997; Peterson and Emr, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "9828ac95-26a2-408d-a186-44e30011a958",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C30",
+      "claim": "Temperature sensitive mutants of Vam3 or the HOPS subunit Vps11 block fusion processes with the vacuole.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of the vacuolar Qa-SNARE Vam3, or temperature sensitive mutants of either Vam3 or the HOPS subunit Vps11 block fusion processes with the vacuole (Darsow et al., 1997; Peterson and Emr, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "443ff4d8-fd78-4e6b-95fc-26af7a50cc21",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C31",
+      "claim": "When cells with vam3\u2206, vam3ts, or vps11ts mutations were starved, an accumulation of Atg8-positive autophagosomes was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "When cells with these mutations were starved, we indeed observed an accumulation of Atg8-positive autophagosomes, and both Ccz1 and Mon1 were markedly co-localizing with them (Figure 1C\u2013E, quantified in F; Figure 1\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 1C-F and Figure 1\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "b046f677-7891-4537-8844-1d65c07ed893",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C32",
+      "claim": "Both Ccz1 and Mon1 markedly co-localized with Atg8-positive autophagosomes in vam3\u2206, vam3ts, or vps11ts mutants during starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "When cells with these mutations were starved, we indeed observed an accumulation of Atg8-positive autophagosomes, and both Ccz1 and Mon1 were markedly co-localizing with them (Figure 1C\u2013E, quantified in F; Figure 1\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 1C-F and Figure 1\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "6ce6afde-8826-4050-aecb-b6236efa1f00",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C33",
+      "claim": "A fraction of Ypt7 colocalized with Atg8 in vam3\u2206 cells only during starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, a fraction of Ypt7 colocalized with Atg8 in vam3\u2206 cells only during starvation (Figure 1G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 1G-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "84c80b1f-3676-4574-9df9-308bdf5303c4",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C34",
+      "claim": "Purified autophagosomes contained both Ypt7 and Mon1-Ccz1 on their surface.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this, purified autophagosomes contained both Ypt7 and Mon1-Ccz1 on their surface (Gao and Ungermann, in preparation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by reference to unpublished data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "a422f10b-4533-48ee-8138-ae0b83e19a7a",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C35",
+      "claim": "Ypt7 localizes on the cup-shaped isolation membrane concentrated in a dot in wild-type and vam3\u2206 cells during Ape1 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Ypt7 localizes on the cup-shaped isolation membrane concentrated in a dot in wild-type and vam3\u2206 cells (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "aecf8dc6-50a2-433d-8ab1-9377830cc653",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C36",
+      "claim": "The fraction of Ccz1 in Vps21-positive organelles decreased during starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the fraction of Ccz1 in Vps21-positive organelles decreased, while the localization to Atg8-positive puncta increased during the monitored time period (Figure 1K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 1K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "30f484db-c70c-4c4e-bfa5-d7bd48222367",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C37",
+      "claim": "The localization of Ccz1 to Atg8-positive puncta increased during starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the fraction of Ccz1 in Vps21-positive organelles decreased, while the localization to Atg8-positive puncta increased during the monitored time period (Figure 1K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 1K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "78716a47-6a9c-4194-98c7-cbfa95cf409d",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C38",
+      "claim": "The vps21\u2206 mutant displays impaired autophagy as monitored by the processing of initially cytosolic Pho8\u220660 in the vacuole lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "As recently published (Zhou et al., 2017), we found the vps21\u2206 mutant displays impaired autophagy as monitored by the processing of initially cytosolic Pho8\u220660 in the vacuole lumen (Figure 1\u2014figure supplement 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to previous work and experimental data shown in Figure 1\u2014figure supplement 2E.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "d932660f-cfdb-46c6-a8ea-7adfbbe8775e",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C39",
+      "claim": "Ccz1 is cytosolic in vps21\u2206 cells before and after starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also noticed that Ccz1 is cytosolic in vps21\u2206 cells before and after starvation, which did not allow us to detect this protein on autophagosomal structures (Figure 1\u2014figure supplement 2A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 1\u2014figure supplement 2A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "26959b80-29b2-48c6-9f06-95e7ad2492ad",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C40",
+      "claim": "The localization of Mon1-Ccz1 to endosomes may be a prerequisite for the later movement of the GEF complex to autophagosomes during starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that the localization of Mon1-Ccz1 to endosomes is a prerequisite for a later the movement of the GEF complex to autophagosomes during starvation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the experimental observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "8a96d20d-f93a-473b-8298-1d7fa08fce87",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C41",
+      "claim": "In vam3\u2206 atg1\u2206 cells, Ccz1 and Ypt7 both robustly colocalized with Ape1 upon nutrient deprivation.",
+      "claim_type": "EXPLICIT",
+      "source": "In vam3\u2206 atg1\u2206 cells as in vam3\u2206 cells Ccz1 and Ypt7 both robustly colocalized with Ape1 upon nutrient deprivation (Figure 2A,B; Figure 2\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 2A,B and Figure 2\u2014figure supplements 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "ed2d39ac-6423-4bc9-939e-f9be1d5dee31",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C42",
+      "claim": "All mutants blocking Atg8 conjugation to PE abolished colocalization of Ccz1 and Ypt7 with Ape1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, all the mutants blocking Atg8 conjugation to PE such as those lacking the components of the conjugation machinery or Atg8 itself, abolished colocalization of Ccz1 and Ypt7 with Ape1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 2A,B and Figure 2\u2014figure supplements 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "dc726419-7ead-4ec4-96d5-49f0dbbfaaf3",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C43",
+      "claim": "The deletion of Atg14 did not impair colocalization of Ccz1 and Ape1 on autophagosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the deletion of Atg14, a subunit of the PI-3-kinase I complex required for autophagy (Kihara et al., 2001), did not impair colocalization of Ccz1 and Ape1 on autophagosomes (Figure 2A; Figure 2\u2014figure supplement 1), though affected Ypt7 colocalization with Ape1 (Figure 2B; Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 2A and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "363b667c-d635-4687-89eb-e49ab63e7af9",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C44",
+      "claim": "The deletion of Atg14 affected Ypt7 colocalization with Ape1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the deletion of Atg14, a subunit of the PI-3-kinase I complex required for autophagy (Kihara et al., 2001), did not impair colocalization of Ccz1 and Ape1 on autophagosomes (Figure 2A; Figure 2\u2014figure supplement 1), though affected Ypt7 colocalization with Ape1 (Figure 2B; Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 2B and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "660b0cb4-95c7-4ebc-b35a-8fc89f213990",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C45",
+      "claim": "PI-3-P is not a main determinant for Mon1-Ccz1 targeting to autophagosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that PI-3-P is not a main determinant for Mon1-Ccz1 targeting to autophagosomes, though might support its activity and/or recruitment of Ypt7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observation that atg14\u2206 does not impair Ccz1 localization.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "c9975b66-40fd-4b32-9a8c-d4888df174bb",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C46",
+      "claim": "PI-3-P might support Mon1-Ccz1 activity and/or recruitment of Ypt7.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that PI-3-P is not a main determinant for Mon1-Ccz1 targeting to autophagosomes, though might support its activity and/or recruitment of Ypt7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the experimental observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "e0eb016b-c538-4d1e-b014-b9a345c8427b",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C47",
+      "claim": "An interaction of Ccz1 with Atg8 was observed in wild-type cells, which was greatly enhanced when cells were starved prior to lysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our previous finding, we observed an interaction of Ccz1 with Atg8 in wild-type cells, which was greatly enhanced when cells were starved prior to lysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "1be5a8a1-012a-4b4e-b9ca-a085eadaf8db",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C48",
+      "claim": "No interaction between Ccz1 and Atg8 was observed in atg4\u2206 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, no interaction was observed in atg4\u2206, supporting our notion that Ccz1 binds to lipidated Atg8 on autophagosomal structures in vivo (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "03b6796e-f0f5-4a1d-8aab-d8f247f80994",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C49",
+      "claim": "Ccz1 binds to lipidated Atg8 on autophagosomal structures in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, no interaction was observed in atg4\u2206, supporting our notion that Ccz1 binds to lipidated Atg8 on autophagosomal structures in vivo (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that interaction is lost in atg4\u2206 cells where Atg8 cannot be lipidated.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "41b0b5a9-9f2b-4a8b-afb3-e69aa66bdf35",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C50",
+      "claim": "Purified Mon1-Ccz1 binds robustly to immobilized GST-Atg8 but not ubiquitin.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus incubated purified Mon1-Ccz1 with immobilized GST-Atg8 or ubiquitin, and detected robust binding only to Atg8 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "4b39755c-4e59-40d4-ba68-a1583de6b6a7",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C51",
+      "claim": "Atg8 recognizes LIR motifs via its N-terminal helices.",
+      "claim_type": "EXPLICIT",
+      "source": "Atg8 recognizes LIR motifs via its N-terminal helices (Klionsky and Schulman, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "48a9fbfe-6401-46c4-87d3-e61439ed9c49",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C52",
+      "claim": "Truncation mutants of Atg8 lacking the 8 or 24 N-terminal residues lost binding to Mon1-Ccz1.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore tested if truncation mutants of Atg8 lacking the 8 or 24 N-terminal residues still bind Mon1-Ccz1. Importantly, binding was now lost strongly suggesting that Mon1-Ccz1 specific association to Atg8 is mediated by one or more LIR motifs (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "6ce2ebaf-1c23-476f-ba18-3a8b1461e29f",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C53",
+      "claim": "Mon1-Ccz1 specific association to Atg8 is mediated by one or more LIR motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore tested if truncation mutants of Atg8 lacking the 8 or 24 N-terminal residues still bind Mon1-Ccz1. Importantly, binding was now lost strongly suggesting that Mon1-Ccz1 specific association to Atg8 is mediated by one or more LIR motifs (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that N-terminal truncations of Atg8 abolish binding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "6fa4726e-e19e-4cd0-bd18-a4f37fede834",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C54",
+      "claim": "No binding was observed between Atg8 I21R mutant and Ccz1.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no binding between Atg8 I21R and Ccz1 (Figure 2E), indicating that Atg8 indeed recognizes a LIR motif in Ccz1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "2c16b452-80a4-439c-99cf-758a06b8f445",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C55",
+      "claim": "Atg8 recognizes a LIR motif in Ccz1.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no binding between Atg8 I21R and Ccz1 (Figure 2E), indicating that Atg8 indeed recognizes a LIR motif in Ccz1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that the Atg8 I21R mutant, which blocks the LIR binding pocket, does not bind Ccz1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "06d6cad2-a545-4ed2-b164-e3c63ed30ed5",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C56",
+      "claim": "The Atg8 I21R mutant functions in non-selective autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "This Atg8 mutant functions in non-selective autophagy (Figure 2\u2014figure supplement 3A\u2013C), yet has some defect in selective autophagy when we followed ApeI processing during starvation (Figure 2\u2014figure supplement 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 2\u2014figure supplement 3A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "69825cb2-5f7b-4741-a696-435b2d7ccaa2",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C57",
+      "claim": "The Atg8 I21R mutant has some defect in selective autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "This Atg8 mutant functions in non-selective autophagy (Figure 2\u2014figure supplement 3A\u2013C), yet has some defect in selective autophagy when we followed ApeI processing during starvation (Figure 2\u2014figure supplement 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 2\u2014figure supplement 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "2c2c2467-fc69-4820-a478-5efdf602a877",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C58",
+      "claim": "Mon1 and Ccz1 interact with each other via their conserved longin domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Mon1 and Ccz1 interact with each other via their conserved longin domains (Nordmann et al., 2010; Cabrera et al., 2014), which form a common interface that is required for specific Ypt7 activation (Kiontke et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "cdab8bd2-bf50-4d76-93ae-93422c282529",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C59",
+      "claim": "The longin domains of Mon1 and Ccz1 form a common interface that is required for specific Ypt7 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mon1 and Ccz1 interact with each other via their conserved longin domains (Nordmann et al., 2010; Cabrera et al., 2014), which form a common interface that is required for specific Ypt7 activation (Kiontke et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "60177900-f64a-483f-86c8-f2cd183974a3",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C60",
+      "claim": "GFP-tagged truncation mutants of Mon1 expressed in the mon1\u2206 background did not impair vacuole morphology or starvation-induced Atg8 trafficking to the vacuole lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "In starvation conditions, GFP-tagged truncation mutants of Mon1 expressed in the mon1\u2206 background did not impair vacuole morphology or starvation-induced Atg8 trafficking to the vacuole lumen (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "4280bf76-48b6-4877-99bb-8b4d464e20ea",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C61",
+      "claim": "Deletion of the C-terminal domain of GFP-tagged Ccz1 resulted in fragmented vacuoles.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, deletion of the C-terminal domain of GFP-tagged Ccz1 resulted in fragmented vacuoles, even though Ccz1 was still localized to distinct puncta that did not co-localize with Atg8 (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "dde31405-efa5-4ce1-bcf8-ce020bb74eac",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C62",
+      "claim": "Ccz1\u2206C was still localized to distinct puncta that did not co-localize with Atg8.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, deletion of the C-terminal domain of GFP-tagged Ccz1 resulted in fragmented vacuoles, even though Ccz1 was still localized to distinct puncta that did not co-localize with Atg8 (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "5d9bf07c-4fe1-4b76-a41f-b765ac1531fd",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C63",
+      "claim": "Purified Mon1-Ccz1 and Ccz1 alone were able to bind GST-Atg8.",
+      "claim_type": "EXPLICIT",
+      "source": "Although purified Mon1-Ccz1 as well as Ccz1 alone were able to bind GST-Atg8 (Figure 2D), a mutant complex of Mon1 with Ccz1\u2206C showed strongly reduced interaction (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "11db2c12-c1eb-4202-a714-b8515fdbc3e8",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C64",
+      "claim": "A mutant complex of Mon1 with Ccz1\u2206C showed strongly reduced interaction with Atg8.",
+      "claim_type": "EXPLICIT",
+      "source": "Although purified Mon1-Ccz1 as well as Ccz1 alone were able to bind GST-Atg8 (Figure 2D), a mutant complex of Mon1 with Ccz1\u2206C showed strongly reduced interaction (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "8f1c9030-3594-4168-ac9e-d248e3645fd2",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C65",
+      "claim": "The C-terminal part of Ccz1 directs the GEF complex to Atg8-positive autophagosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these observations suggest that the C-terminal part of Ccz1 directs the GEF complex to Atg8-positive autophagosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observations with Ccz1 truncation mutants.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "d8493dc0-ebbe-4d22-967d-6c5d90dbbd40",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C66",
+      "claim": "Two LIR motifs in Ccz1 showed impaired GFP-Ccz1 localization to mCherry-Atg8-positive autophagosomes under nitrogen starvation conditions: Y236A V239A (LIR1) and Y445A L448A (LIR2).",
+      "claim_type": "EXPLICIT",
+      "source": "Among the nine mutants (Figure 3A), two showed impaired GFP-Ccz1 localization to mCherry-Atg8-positive autophagosomes under nitrogen starvation conditions, that is Y236A V239A (named LIR1) and Y445A L448A (LIR2) (Figure 3B,C,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 3B,C,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "bd0e17e8-8b5e-4645-9163-e351226e44ec",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C67",
+      "claim": "The LIR1 and LIR2 motifs are highly conserved across species.",
+      "claim_type": "EXPLICIT",
+      "source": "These two motifs are highly conserved across species (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by sequence alignment in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "c4bfd235-904f-4f67-a4af-cc534269f05b",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C68",
+      "claim": "Trafficking of mCherry-tagged Atg8 to the vacuole was not totally compromised in the single LIR mutants at normal growth temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we noticed that trafficking of mCherry-tagged Atg8 to the vacuole was not totally compromised in the single mutants at normal growth temperature (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "87893221-9c4d-4e56-889f-ae51430e0465",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C69",
+      "claim": "The LIR1,2 double mutant resulted in a complete block of autophagy as shown by defects in Atg8 delivery and processing in the vacuole.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore combined both mutations and nitrogen starved the cells. This resulted in a complete block of autophagy in the double mutant as shown by defects in Atg8 delivery and processing in the vacuole (Figure 3C and F), but also vacuole morphology (Figures 3C and 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 3C,F and Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "b95121bb-a6c5-479d-90bc-b3536e68f9e0",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C70",
+      "claim": "Numerous mCherry-Atg8-positive autophagosomes accumulated in the cytoplasm of the LIR1,2 double mutant, consistent with a defect in fusion with vacuoles.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, numerous mCherry-Atg8-positive autophagosomes accumulated in the cytoplasm, consistent with a defect in fusion with vacuoles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "080a972b-5095-4ec0-84e1-d3e2ef41e8b6",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C71",
+      "claim": "The LIR1,2 mutant behaves as the Ccz1\u2206C mutant, and is compromised in both autophagy and vacuole biogenesis in general.",
+      "claim_type": "EXPLICIT",
+      "source": "The LIR1,2 mutant behaves thus as the Ccz1\u2206C mutant, and is likewise compromised in both autophagy and vacuole biogenesis in general (Figures 2F and 3C,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from comparison of experimental data shown in Figures 2F and 3C,F.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "d39cc50c-5059-49ff-b207-582a36e98177",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C72",
+      "claim": "Both LIR mutants accumulated Atg8-positive autophagosomes in cells at 37\u00b0C during starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the wild-type cells were functional in autophagy, both LIR mutants now accumulated Atg8-positive autophagosomes in cells (Figure 3D, quantified in E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 3D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "4d1fb391-d7c0-45e0-b654-014e535f3f8a",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C73",
+      "claim": "Both LIR1 and the LIR1,2 double mutants showed poor interaction with Atg8.",
+      "claim_type": "EXPLICIT",
+      "source": "However, they showed poor interaction with Atg8 (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 4B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "d34536d5-1cd0-433a-add8-be0ffe5b55ee",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C74",
+      "claim": "Both LIR mutants in Ccz1 were entirely unperturbed in CPY sorting at elevated temperature or when cells were starved.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both LIR mutants in Ccz1 were entirely unperturbed also at elevated temperature or when cells were starved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "cb2c7607-d310-4cc3-ada3-2da418675f93",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C75",
+      "claim": "In both wild-type cells and the LIR mutants, Mup1-GFP was mainly at the plasma membrane in the absence of methionine, but was efficiently sorted to the vacuole lumen when methionine was added after the temperature shift to 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "In both wild-type cells and the LIR mutants, Mup1-GFP was mainly at the plasma membrane in the absence of methionine, but was efficiently sorted to the vacuole lumen when methionine was added after the temperature shift to 37\u00b0C (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "1c030908-7c32-4522-a3e5-58d6204a6515",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C76",
+      "claim": "The LIR1 and LIR2 mutants selectively disable Mon1-Ccz1 targeting to autophagosomes, whereas endosomal function of Mon1-Ccz1 remains unperturbed.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that the LIR1 and LIR2 mutants selectively disable Mon1-Ccz1 targeting to autophagosomes, whereas endosomal function of Mon1-Ccz1 remains unperturbed under the same conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observations that LIR mutants are defective in autophagy but not endosomal trafficking.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "19d84884-9bf4-46b8-878e-7c2f16591870",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C77",
+      "claim": "Wild-type and LIR1 mutated Mon1-Ccz1 complexes had similar activity for Ypt7 in the GEF assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this assay, we compared wild-type and LIR1 mutated Mon1-Ccz1 complex (Figure 5A). Both complexes had similar activity for Ypt7 (Figure 5A,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 5A,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "11f36094-5dae-4358-8e75-40d6be755c2f",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C78",
+      "claim": "Membrane-targeted Atg8-His, but not soluble Atg8, stimulated the GTP exchange reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, membrane-targeted Atg8-His, but not soluble Atg8, stimulated the GTP exchange reaction (Figure 5B,D), presumably due to its ability to recruit the GEF complex to membranes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 5B,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "ef26a78c-9b17-401f-b1e0-0ff437a05a50",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C79",
+      "claim": "Membrane-targeted Atg8 stimulates GTP exchange presumably due to its ability to recruit the GEF complex to membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, membrane-targeted Atg8-His, but not soluble Atg8, stimulated the GTP exchange reaction (Figure 5B,D), presumably due to its ability to recruit the GEF complex to membranes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculative reasoning based on the experimental observations.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "0503837a-8b07-4c71-8104-57d0d97fd6f4",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C80",
+      "claim": "The Mon1-Ccz1 LIR mutant did not respond to the addition of Atg8.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the Mon1-Ccz1 LIR mutant did not respond to the addition of Atg8 (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 5C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "c9cefe54-8489-4422-9a03-70beee37fa38",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C81",
+      "claim": "Membrane-bound Atg8 can recruit Mon1-Ccz1 to membranes to promote Ypt7 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data thus show that membrane-bound Atg8 can recruit Mon1-Ccz1 to membranes to promote Ypt7 activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observations in the GEF assay.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "2dca6cfd-4b38-424b-bb4f-6c473b9b1442",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C82",
+      "claim": "Artificial redirection of GEFs can redirect different Rabs to other membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies showed that artificial redirection of GEFs can redirect different Rabs to other membranes (Bl\u00fcmer et al., 2013; Gerondopoulos et al., 2012), yet the molecular determinants that target GEFs to their correct membrane are only partially known and rarely experimentally validated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "a0345920-c82c-43ea-8311-d121e6107dcb",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C83",
+      "claim": "The molecular determinants that target GEFs to their correct membrane are only partially known and rarely experimentally validated.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies showed that artificial redirection of GEFs can redirect different Rabs to other membranes (Bl\u00fcmer et al., 2013; Gerondopoulos et al., 2012), yet the molecular determinants that target GEFs to their correct membrane are only partially known and rarely experimentally validated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "dccb867e-1fb1-4a38-839a-9c911597f962",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C84",
+      "claim": "Mon1-Ccz1 is sufficient to activate Ypt7, which was provided in a soluble complex with GDI, and thus triggered fusion in a reconstituted assay.",
+      "claim_type": "EXPLICIT",
+      "source": "We indeed found recent evidence that Mon1-Ccz1 is sufficient to activate Ypt7, which was provided in a soluble complex with GDI, and thus triggered fusion in a reconstituted assay (Langemeyer et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "fdcc295e-c9bd-49e6-b706-2c1d7de89291",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C85",
+      "claim": "TRAPP GEF complexes could activate their corresponding Rab-GDI complexes on membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the TRAPP GEF complexes could activate their corresponding Rab-GDI complexes on membranes (Thomas and Fromme, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "995099c0-458a-4eae-b28d-f0a7c6139d05",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C86",
+      "claim": "Lipidated Atg8 is a specific determinant to redirect Mon1-Ccz1 to autophagosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data imply that lipidated Atg8 is a specific determinant to redirect Mon1-Ccz1 to autophagosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observations throughout the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "226b2515-c84e-403b-9e9c-6f4d53f3b7c2",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C87",
+      "claim": "PI-3-P may support re-localization of Mon1-Ccz1 to both endosomes and autophagosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to Atg8, PI-3-P may support re-localization to both endosomes and autophagosomes (Heged\u0171s et al., 2016; Cabrera et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "350a5371-d64a-4e8b-a301-0909e96f74e4",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C88",
+      "claim": "Deletion of Atg14 in Drosophila fat cells appears to affect autophagosome fusion in addition to altering the biogenesis of these vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, deletion of Atg14 in Drosophila fat cells appears to affect autophagosome fusion in addition to altering the biogenesis of these vesicles (Heged\u0171s et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "1e14ca33-686d-47cd-b4cb-1a013555ab2e",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C89",
+      "claim": "The generation of autophagosomal PI-3-P is required for multiple events, including efficient Atg8 lipidation.",
+      "claim_type": "EXPLICIT",
+      "source": "The generation of autophagosomal PI-3-P is required for multiple events, including efficient Atg8 lipidation (Shibutani and Yoshimori, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "969ea758-6c3f-46f7-8c1f-9b3e04cfe6d8",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C90",
+      "claim": "PI-3-P synthesis is unlikely to be a primary factor for Mon1-Ccz1 localization to autophagosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We consider it therefore unlikely that PI-3-P synthesis is a primary factor for Mon1-Ccz1 localization to autophagosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that atg14\u2206 does not impair Mon1-Ccz1 localization.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "80dcbb99-e21e-4b2b-8b7c-eb5f5cd88628",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C91",
+      "claim": "PI-3-P may be critical for Mon1-Ccz1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, our analysis suggests that PI-3-P may be critical for Mon1-Ccz1 activity, which could explain the defect in Ypt7 localization to autophagosomes of the atg14\u0394 mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the experimental observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "133ef7b5-a29c-4e10-9352-9a67c695fd49",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C92",
+      "claim": "PI-3-P might directly support the recruitment of Ypt7.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, PI-3-P might directly support the recruitment of Ypt7, even though we have evidence that Mon1-Ccz1 activity is most critical in this process (Langemeyer et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning and supported by citation to previous work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "35bc7d12-e04d-48a9-bd4b-72f670cbfe88",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C93",
+      "claim": "Mon1-Ccz1 is functional in the endocytic pathway when its LIR motifs are singularly mutated.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our study reveals that Mon1-Ccz1 is functional in the endocytic pathway, when its LIR motifs are singularly mutated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "290905da-a60c-4cdf-9748-899502a37321",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C94",
+      "claim": "Mon1-Ccz1 has a dual role and two different targeting mechanisms for two distinct organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides further evidence that Mon1-Ccz1 has a dual role and two different targeting mechanisms for two distinct organelles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observations that LIR mutants affect autophagy but not endosomal function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "fd7c40be-84a3-42c8-97e7-42fa49e6861f",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C95",
+      "claim": "The LIR mutants establish one of the few conditions that might accumulate fully assembled autophagosomes, which are incompetent of fusing with vacuoles, while maintaining endosome-vacuole fusion and thus vacuoles functional.",
+      "claim_type": "EXPLICIT",
+      "source": "By identifying the LIR mutants, we established one of the few conditions that might accumulate fully assembled autophagosomes, which are incompetent of fusing with vacuoles, while maintaining endosome-vacuole fusion and thus vacuoles functional.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observations with LIR mutants.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "5aa4dbd0-5d68-4d14-a4ee-c3ce293c744b",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C96",
+      "claim": "PLEKHM1 directly binds LC3-like proteins and Rab7.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, PLEKHM1 directly binds LC3-like proteins and Rab7, and could thus support HOPS-mediated tethering and fusion of autophagosomes with lysosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PLEKHM1 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "39fa0a92-4770-4e7b-8004-3dea70ae8e68",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C97",
+      "claim": "PLEKHM1 could support HOPS-mediated tethering and fusion of autophagosomes with lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, PLEKHM1 directly binds LC3-like proteins and Rab7, and could thus support HOPS-mediated tethering and fusion of autophagosomes with lysosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on known properties of PLEKHM1.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "932dc2b4-6784-462e-a5df-8320c30e7cba",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C98",
+      "claim": "GEFs are the most critical factors to confine Rab localization and thus determine organelle identity.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that GEFs such as Mon1-Ccz1 are the most critical factors to confine Rab localization and thus determine organelle identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the findings of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "295d2a84-1c66-4cf2-bf8c-aa9dbc636243",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C99",
+      "claim": "The cooperation of GEFs with LC3-like proteins could provide a combinatorial code to target GEFs and additional fusion factors to autophagosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The cooperation with LC3-like proteins could then provide a combinatorial code to target GEFs and additional fusion factors to autophagosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the findings of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "05397b9e-42e7-41ec-8c5f-8cb63a718f26",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C100",
+      "claim": "Atg8 is not homogenously distributed over the surface of forming autophagosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Atg8 is not homogenously distributed over the surface of forming autophagosomes (Graef et al., 2013), and could potentially cluster fusion factors to facilitate their cooperation during fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "d27be96a-0735-4bff-8beb-eefe3a67b323",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C101",
+      "claim": "Atg8 could potentially cluster fusion factors to facilitate their cooperation during fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Atg8 is not homogenously distributed over the surface of forming autophagosomes (Graef et al., 2013), and could potentially cluster fusion factors to facilitate their cooperation during fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the non-homogenous distribution of Atg8.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "a2407fef-f53b-4445-b1a9-70c0b8455b4b",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C102",
+      "claim": "Mon1-Ccz1 localization to autophagosomes might be dispensable once Rab7/Ypt7 is recruited and bound to HOPS.",
+      "claim_type": "EXPLICIT",
+      "source": "At least Mon1-Ccz1 localization to autophagosomes might be dispensable, once Rab7/Ypt7 is recruited and bound to HOPS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about the temporal requirements for Mon1-Ccz1.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "d5e602d8-5a97-4980-bfdf-911a9c8f0dc2",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C103",
+      "claim": "GEFs can recruit Rab GTPases from the GDI complex to membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work of us and others revealed that GEFs can recruit Rab GTPases from the GDI complex to membranes (Langemeyer et al., 2018)(Thomas and Fromme, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "17cc9dc9-4b43-44d0-9f8b-ba9159229935",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C104",
+      "claim": "The identification of Atg8 as a determinant for Mon1-Ccz1 localization to autophagosomes provides the first example of how a GEF can be diverted to a different location.",
+      "claim_type": "EXPLICIT",
+      "source": "The identification of Atg8 as a determinant for Mon1-Ccz1 localization to autophagosomes provides the first example of how a GEF can be diverted to a different location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty and significance of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "30fe675a-02e8-4cdd-8846-a358ddc29234",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C105",
+      "claim": "Differential spatiotemporal recruitment of GEFs allows cells to operate distinct pathways, such as autophagy and endosomal maturation, depending on their metabolic needs while employing the same machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential spatiotemporal recruitment of GEFs allows cells to operate distinct pathways, such as autophagy and endosomal maturation, depending on their metabolic needs while employing the same machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the findings that Mon1-Ccz1 can be targeted to different organelles via different mechanisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "d4b75cbb-3397-4460-8b64-9f579ce9b230",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C106",
+      "claim": "Rab5-GTP has been suggested as a Mon1-Ccz1 interactor for endosomal localization based on yeast-two-hybrid interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "For endosomal localization, Rab5-GTP has been suggested as a Mon1-Ccz1 interactor based on yeast-two-hybrid interactions (Li et al., 2015; Cui et al., 2014; Singh et al., 2014; Kinchen and Ravichandran, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "cf9f28cd-6a8e-40f2-883e-f0099343b3c2",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C107",
+      "claim": "Atg8 is one of 16 conserved autophagy-related (Atg) proteins, which are essential for autophagosome formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Atg8 is one of 16 conserved autophagy-related (Atg) proteins, which are essential for autophagosome formation, and it possesses six mammalian homologues (Shpilka et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work and is established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "ecd6d200-402c-4cf6-be63-24a09a315ad0",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C108",
+      "claim": "Atg8 possesses six mammalian homologues.",
+      "claim_type": "EXPLICIT",
+      "source": "Atg8 is one of 16 conserved autophagy-related (Atg) proteins, which are essential for autophagosome formation, and it possesses six mammalian homologues (Shpilka et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "7d47baa9-4f3b-412e-9272-b78e6a9cc5ba",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C109",
+      "claim": "Members of the Atg8/LC3 protein family are conjugated to phosphatidylethanolamine (PE) at the autophagosome membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Members of the Atg8/LC3 protein family are conjugated to phosphatidylethanolamine (PE) at the autophagosome membrane, and interact with several Atg proteins via a LC3 interacting region (LIR motif) to control both maturation and fusion (Wild et al., 2014; Nakatogawa et al., 2007; Klionsky and Schulman, 2014; Abreu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work and is established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "bd8ab68c-9b56-4d6f-a49c-a5617e1ef33c",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C110",
+      "claim": "Atg8/LC3 proteins interact with several Atg proteins via a LC3 interacting region (LIR motif) to control both maturation and fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Members of the Atg8/LC3 protein family are conjugated to phosphatidylethanolamine (PE) at the autophagosome membrane, and interact with several Atg proteins via a LC3 interacting region (LIR motif) to control both maturation and fusion (Wild et al., 2014; Nakatogawa et al., 2007; Klionsky and Schulman, 2014; Abreu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "b3d5a25a-3881-4fca-82dc-4198c04b7831",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C111",
+      "claim": "A GEF can mark two different organelles with the same Rab for fusion via distinct mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data thus reveal how a GEF can mark two different organelles with the same Rab for fusion via distinct mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the findings that Mon1-Ccz1 uses different mechanisms to target endosomes and autophagosomes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "65b0a504-edcb-41ba-9a0f-85075453209e",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C112",
+      "claim": "In yeast, autophagosomes form at the pre-autophagosomal assembly site proximal to the ER and vacuole, which is visible as a single dot-like structure by fluorescence microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, autophagosomes form at the pre-autophagosomal assembly site proximal to the ER and vacuole, which is visible as a single dot-like structure by fluorescence microscopy (Klionsky et al., 2016; Graef et al., 2013; Suzuki et al., 2013; Mari and Reggiori, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work and is established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "f6b9d7dd-0fbd-40be-85f7-3def29e2c6f4",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "claim_id": "C113",
+      "claim": "Colocalization of Ape1 relative to Atg8 was not affected in the atg14 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Colocalization of Ape1 relative to Atg8 was not affected in the atg14 mutant (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "84ecb12e-43ea-4ce0-bd68-ef4cbeee2948",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Mon1-Ccz1 and Ypt7 co-localize with Atg8-positive autophagosomes during starvation when autophagosome-vacuole fusion is blocked. In fusion-deficient mutants (vam3\u0394, vam3ts, vps11ts), both Mon1-Ccz1 components and Ypt7 accumulate on autophagosomes marked by Atg8. During starvation, Ccz1 redistributes from endosomes (Vps21-positive) to autophagosomes (Atg8-positive).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C31-C37 are supported by microscopy data in Figures 1B-K showing co-localization of Mon1-Ccz1 and Ypt7 with Atg8 in fusion-blocked mutants during starvation. The time-course data (C36-C37) demonstrates dynamic redistribution. The use of fusion-deficient mutants is a valid strategy to visualize transient autophagosomal localization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "4bde6ee4-d9a0-48de-a37a-2ee774b055b3",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Lipidated Atg8 is required for Mon1-Ccz1 recruitment to autophagosomes, but PI-3-P is not the primary determinant. Mutants blocking Atg8 lipidation (atg4\u0394, atg7\u0394, atg8\u0394) abolish Mon1-Ccz1 and Ypt7 co-localization with the autophagosomal cargo marker Ape1. However, deletion of Atg14 (required for autophagosomal PI-3-P synthesis) does not impair Mon1-Ccz1 localization, though it affects Ypt7 recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 are supported by systematic genetic analysis in Figure 2A-B and supplements showing that Atg8 lipidation machinery is essential for Mon1-Ccz1 localization while Atg14 is not. The differential effect on Ccz1 versus Ypt7 localization in atg14\u0394 (C43-C44) suggests PI-3-P may affect Mon1-Ccz1 activity rather than recruitment. The logic is sound and controls are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "bb74bb0f-8ed3-4e25-8227-1f8534c08b84",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mon1-Ccz1 directly binds to Atg8 via LIR motif recognition. Co-immunoprecipitation shows Ccz1-Atg8 interaction in vivo that is enhanced by starvation and abolished in atg4\u0394 cells. In vitro, purified Mon1-Ccz1 binds GST-Atg8 but not ubiquitin. N-terminal truncations of Atg8 (\u03948, \u039424) and the I21R mutation (blocking the LIR-binding pocket) abolish Mon1-Ccz1 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C55 are supported by complementary in vivo (Figure 2C) and in vitro (Figure 2D-E) binding assays. The use of Atg8 truncation mutants and the I21R point mutant provides strong evidence for LIR-mediated interaction. The atg4\u0394 control (C48) confirms binding requires lipidated Atg8. Multiple independent approaches converge on the same conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "bc88e53b-567b-4866-9a3f-6e672af7b1ec",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The C-terminal domain of Ccz1 is required for Mon1-Ccz1 binding to Atg8 and autophagosome localization. Deletion of the Ccz1 C-terminus (Ccz\u0394C) causes fragmented vacuoles and loss of co-localization with Atg8, while Mon1 truncations do not impair autophagy. Purified Mon1-Ccz1\u0394C shows strongly reduced binding to GST-Atg8 compared to wild-type complex or Ccz1 alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C65 are supported by in vivo localization (Figure 2G) and in vitro binding data (Figure 2F). The differential effects of Mon1 versus Ccz1 truncations provide clear evidence that the Ccz1 C-terminus mediates Atg8 binding. The phenotypic analysis showing fragmented vacuoles in Ccz1\u0394C is consistent with loss of function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "8b967259-9f41-42ae-9158-e497e860d1b2",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Two conserved LIR motifs in the Ccz1 C-terminus (LIR1: Y236A/V239A and LIR2: Y445A/L448A) are required for autophagy. Single LIR mutants show partial defects at 37\u00b0C, while the LIR1,2 double mutant completely blocks autophagy at 30\u00b0C, causing accumulation of Atg8-positive autophagosomes and fragmented vacuoles. Both LIR mutants show poor interaction with Atg8 in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C73 are supported by systematic mutagenesis (Figure 3A-F) and binding assays (Figure 4B-C). The identification of two functional LIR motifs through screening nine candidates is thorough. The temperature-sensitive phenotype of single mutants and complete block in the double mutant demonstrates functional redundancy. The correlation between in vivo phenotype and in vitro binding defects strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "a6454548-6da3-4fb6-9318-84864b8ee2b8",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "LIR mutations in Ccz1 selectively impair autophagy without affecting endosomal trafficking. Both LIR1 and LIR2 mutants maintain normal CPY sorting to the vacuole and efficient Mup1-GFP endocytosis at elevated temperature, demonstrating that Mon1-Ccz1 uses distinct targeting mechanisms for endosomes versus autophagosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76, C93-C94 are supported by CPY sorting assays (Figure 4E) and Mup1-GFP trafficking experiments (Figure 4F). The selective defect in autophagy but not endosomal function provides strong evidence for dual targeting mechanisms. This is a critical control demonstrating specificity of the LIR motifs for autophagosome targeting.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "b7ea376d-119c-41b8-bd26-a93552dd711e",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Membrane-bound Atg8 stimulates Mon1-Ccz1 GEF activity toward Ypt7. In vitro GEF assays show that wild-type and LIR1 mutant Mon1-Ccz1 have similar basal activity. However, membrane-targeted Atg8-His (but not soluble Atg8) enhances wild-type Mon1-Ccz1 activity, while the LIR1 mutant does not respond to Atg8 addition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C81 are supported by reconstituted GEF assays (Figure 5A-D). The demonstration that membrane-bound but not soluble Atg8 stimulates GEF activity (C78) is mechanistically important. The loss of Atg8-dependent stimulation in the LIR1 mutant (C80) directly links the LIR motif to functional recruitment. The assay design appropriately tests the hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "67786762-743c-4f10-b0fa-60265f07d6b7",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Vps21 (Rab5) is required for Mon1-Ccz1 localization and autophagy. The vps21\u0394 mutant shows impaired autophagy and Ccz1 remains cytosolic before and after starvation, suggesting that endosomal localization of Mon1-Ccz1 may be a prerequisite for subsequent movement to autophagosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 are supported by autophagy assays (Figure 1\u2014figure supplement 2E) and localization data (Figure 1\u2014figure supplement 2A-D). However, C40 is speculative. While the data show Vps21 is required for Ccz1 localization, the claim that endosomal localization is a prerequisite for autophagosomal targeting is inferred but not directly tested. The result is supported but the mechanistic interpretation requires further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "726b3f56-9510-4b0c-9fbc-ea3a274bedeb",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The Atg8 I21R mutant (blocking LIR binding) functions in non-selective autophagy but has defects in selective autophagy (Ape1 processing).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 are supported by autophagy assays in Figure 2\u2014figure supplement 3A-D. The differential effect on selective versus non-selective autophagy is consistent with previous literature on LIR-binding mutants. This validates the I21R mutant as a tool while showing it has some residual function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "25b26356-0eed-441b-ad37-15efa5fc1868",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors conclude that lipidated Atg8 is the primary determinant for Mon1-Ccz1 recruitment to autophagosomes, while PI-3-P may support Mon1-Ccz1 activity or Ypt7 recruitment rather than Mon1-Ccz1 localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86 and C90 are well-supported by the genetic and biochemical data showing Atg8 dependence and Atg14 independence for Mon1-Ccz1 localization. However, C91-C92 regarding PI-3-P's role in Mon1-Ccz1 activity are speculative and not directly tested. The conclusion about Atg8 as the primary determinant is solid, but the PI-3-P mechanism remains uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "b0cc29db-0684-40f4-9fe0-772c6bea0c35",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The LIR mutants provide a tool to accumulate fully assembled autophagosomes that cannot fuse with vacuoles while maintaining functional endosome-vacuole fusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C95 is supported by the phenotypic characterization showing autophagosome accumulation in LIR mutants (Figure 3C-D) combined with normal endosomal trafficking (Figure 4E-F). This represents a useful experimental tool for studying autophagosome maturation separately from biogenesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "2a7d4ec0-cc59-4474-8a22-1c7ecd62bdd6",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors claim this is the first example of how a GEF can be diverted to different organelles through differential recruitment mechanisms, allowing cells to operate distinct pathways (autophagy and endosomal maturation) using the same machinery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C105 and C111 represent the major conceptual advance of the paper. The data clearly demonstrate that Mon1-Ccz1 uses Atg8-LIR interactions for autophagosome targeting while using different mechanisms (likely Rab5) for endosomal targeting. The claim of being the \"first example\" (C104) is a priority claim that depends on literature context but the mechanistic demonstration is solid.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background knowledge and prior work establishing the autophagy pathway, Rab GTPase regulation, Mon1-Ccz1 function, and Atg8/LC3 biology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge from the literature, properly cited throughout the manuscript. They provide necessary context for interpreting the current findings. The citations appear appropriate and the background is accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    },
+    {
+      "id": "286a66d8-1686-431a-9fa8-66ca4b5e4e9b",
+      "content_id": "a586aed7-909a-49c2-ba0b-4251a1dfa364",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Speculative claims about mechanisms and future directions, including the role of PI-3-P, PLEKHM1 function, GEF importance for organelle identity, combinatorial codes for targeting, Atg8 clustering, and temporal requirements for Mon1-Ccz1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims (C23, C87-C89, C97-C99, C101-C102) are explicitly speculative or represent hypotheses for future testing. They are reasonable interpretations of the data but lack direct experimental support in this manuscript. They appropriately appear in the Discussion section as speculation rather than conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:24:08.941811Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5adf3e8a-1af8-426e-bba7-bcbf91e65510",
+      "result_id": "84ecb12e-43ea-4ce0-bd68-ef4cbeee2948"
+    },
+    {
+      "claim_id": "443ff4d8-fd78-4e6b-95fc-26af7a50cc21",
+      "result_id": "84ecb12e-43ea-4ce0-bd68-ef4cbeee2948"
+    },
+    {
+      "claim_id": "b046f677-7891-4537-8844-1d65c07ed893",
+      "result_id": "84ecb12e-43ea-4ce0-bd68-ef4cbeee2948"
+    },
+    {
+      "claim_id": "6ce6afde-8826-4050-aecb-b6236efa1f00",
+      "result_id": "84ecb12e-43ea-4ce0-bd68-ef4cbeee2948"
+    },
+    {
+      "claim_id": "84c80b1f-3676-4574-9df9-308bdf5303c4",
+      "result_id": "84ecb12e-43ea-4ce0-bd68-ef4cbeee2948"
+    },
+    {
+      "claim_id": "a422f10b-4533-48ee-8138-ae0b83e19a7a",
+      "result_id": "84ecb12e-43ea-4ce0-bd68-ef4cbeee2948"
+    },
+    {
+      "claim_id": "aecf8dc6-50a2-433d-8ab1-9377830cc653",
+      "result_id": "84ecb12e-43ea-4ce0-bd68-ef4cbeee2948"
+    },
+    {
+      "claim_id": "30f484db-c70c-4c4e-bfa5-d7bd48222367",
+      "result_id": "84ecb12e-43ea-4ce0-bd68-ef4cbeee2948"
+    },
+    {
+      "claim_id": "8a96d20d-f93a-473b-8298-1d7fa08fce87",
+      "result_id": "4bde6ee4-d9a0-48de-a37a-2ee774b055b3"
+    },
+    {
+      "claim_id": "ed2d39ac-6423-4bc9-939e-f9be1d5dee31",
+      "result_id": "4bde6ee4-d9a0-48de-a37a-2ee774b055b3"
+    },
+    {
+      "claim_id": "dc726419-7ead-4ec4-96d5-49f0dbbfaaf3",
+      "result_id": "4bde6ee4-d9a0-48de-a37a-2ee774b055b3"
+    },
+    {
+      "claim_id": "363b667c-d635-4687-89eb-e49ab63e7af9",
+      "result_id": "4bde6ee4-d9a0-48de-a37a-2ee774b055b3"
+    },
+    {
+      "claim_id": "660b0cb4-95c7-4ebc-b35a-8fc89f213990",
+      "result_id": "4bde6ee4-d9a0-48de-a37a-2ee774b055b3"
+    },
+    {
+      "claim_id": "c9975b66-40fd-4b32-9a8c-d4888df174bb",
+      "result_id": "4bde6ee4-d9a0-48de-a37a-2ee774b055b3"
+    },
+    {
+      "claim_id": "f6b9d7dd-0fbd-40be-85f7-3def29e2c6f4",
+      "result_id": "4bde6ee4-d9a0-48de-a37a-2ee774b055b3"
+    },
+    {
+      "claim_id": "e0eb016b-c538-4d1e-b014-b9a345c8427b",
+      "result_id": "bb74bb0f-8ed3-4e25-8227-1f8534c08b84"
+    },
+    {
+      "claim_id": "1be5a8a1-012a-4b4e-b9ca-a085eadaf8db",
+      "result_id": "bb74bb0f-8ed3-4e25-8227-1f8534c08b84"
+    },
+    {
+      "claim_id": "03b6796e-f0f5-4a1d-8aab-d8f247f80994",
+      "result_id": "bb74bb0f-8ed3-4e25-8227-1f8534c08b84"
+    },
+    {
+      "claim_id": "41b0b5a9-9f2b-4a8b-afb3-e69aa66bdf35",
+      "result_id": "bb74bb0f-8ed3-4e25-8227-1f8534c08b84"
+    },
+    {
+      "claim_id": "4b39755c-4e59-40d4-ba68-a1583de6b6a7",
+      "result_id": "bb74bb0f-8ed3-4e25-8227-1f8534c08b84"
+    },
+    {
+      "claim_id": "48a9fbfe-6401-46c4-87d3-e61439ed9c49",
+      "result_id": "bb74bb0f-8ed3-4e25-8227-1f8534c08b84"
+    },
+    {
+      "claim_id": "6ce2ebaf-1c23-476f-ba18-3a8b1461e29f",
+      "result_id": "bb74bb0f-8ed3-4e25-8227-1f8534c08b84"
+    },
+    {
+      "claim_id": "6fa4726e-e19e-4cd0-bd18-a4f37fede834",
+      "result_id": "bb74bb0f-8ed3-4e25-8227-1f8534c08b84"
+    },
+    {
+      "claim_id": "2c16b452-80a4-439c-99cf-758a06b8f445",
+      "result_id": "bb74bb0f-8ed3-4e25-8227-1f8534c08b84"
+    },
+    {
+      "claim_id": "60177900-f64a-483f-86c8-f2cd183974a3",
+      "result_id": "bc88e53b-567b-4866-9a3f-6e672af7b1ec"
+    },
+    {
+      "claim_id": "4280bf76-48b6-4877-99bb-8b4d464e20ea",
+      "result_id": "bc88e53b-567b-4866-9a3f-6e672af7b1ec"
+    },
+    {
+      "claim_id": "dde31405-efa5-4ce1-bcf8-ce020bb74eac",
+      "result_id": "bc88e53b-567b-4866-9a3f-6e672af7b1ec"
+    },
+    {
+      "claim_id": "5d9bf07c-4fe1-4b76-a41f-b765ac1531fd",
+      "result_id": "bc88e53b-567b-4866-9a3f-6e672af7b1ec"
+    },
+    {
+      "claim_id": "11db2c12-c1eb-4202-a714-b8515fdbc3e8",
+      "result_id": "bc88e53b-567b-4866-9a3f-6e672af7b1ec"
+    },
+    {
+      "claim_id": "8f1c9030-3594-4168-ac9e-d248e3645fd2",
+      "result_id": "bc88e53b-567b-4866-9a3f-6e672af7b1ec"
+    },
+    {
+      "claim_id": "d8493dc0-ebbe-4d22-967d-6c5d90dbbd40",
+      "result_id": "8b967259-9f41-42ae-9158-e497e860d1b2"
+    },
+    {
+      "claim_id": "bd0e17e8-8b5e-4645-9163-e351226e44ec",
+      "result_id": "8b967259-9f41-42ae-9158-e497e860d1b2"
+    },
+    {
+      "claim_id": "c4bfd235-904f-4f67-a4af-cc534269f05b",
+      "result_id": "8b967259-9f41-42ae-9158-e497e860d1b2"
+    },
+    {
+      "claim_id": "87893221-9c4d-4e56-889f-ae51430e0465",
+      "result_id": "8b967259-9f41-42ae-9158-e497e860d1b2"
+    },
+    {
+      "claim_id": "b95121bb-a6c5-479d-90bc-b3536e68f9e0",
+      "result_id": "8b967259-9f41-42ae-9158-e497e860d1b2"
+    },
+    {
+      "claim_id": "080a972b-5095-4ec0-84e1-d3e2ef41e8b6",
+      "result_id": "8b967259-9f41-42ae-9158-e497e860d1b2"
+    },
+    {
+      "claim_id": "d39cc50c-5059-49ff-b207-582a36e98177",
+      "result_id": "8b967259-9f41-42ae-9158-e497e860d1b2"
+    },
+    {
+      "claim_id": "4d1fb391-d7c0-45e0-b654-014e535f3f8a",
+      "result_id": "8b967259-9f41-42ae-9158-e497e860d1b2"
+    },
+    {
+      "claim_id": "d34536d5-1cd0-433a-add8-be0ffe5b55ee",
+      "result_id": "a6454548-6da3-4fb6-9318-84864b8ee2b8"
+    },
+    {
+      "claim_id": "cb2c7607-d310-4cc3-ada3-2da418675f93",
+      "result_id": "a6454548-6da3-4fb6-9318-84864b8ee2b8"
+    },
+    {
+      "claim_id": "1c030908-7c32-4522-a3e5-58d6204a6515",
+      "result_id": "a6454548-6da3-4fb6-9318-84864b8ee2b8"
+    },
+    {
+      "claim_id": "35bc7d12-e04d-48a9-bd4b-72f670cbfe88",
+      "result_id": "a6454548-6da3-4fb6-9318-84864b8ee2b8"
+    },
+    {
+      "claim_id": "290905da-a60c-4cdf-9748-899502a37321",
+      "result_id": "a6454548-6da3-4fb6-9318-84864b8ee2b8"
+    },
+    {
+      "claim_id": "19d84884-9bf4-46b8-878e-7c2f16591870",
+      "result_id": "b7ea376d-119c-41b8-bd26-a93552dd711e"
+    },
+    {
+      "claim_id": "11f36094-5dae-4358-8e75-40d6be755c2f",
+      "result_id": "b7ea376d-119c-41b8-bd26-a93552dd711e"
+    },
+    {
+      "claim_id": "ef26a78c-9b17-401f-b1e0-0ff437a05a50",
+      "result_id": "b7ea376d-119c-41b8-bd26-a93552dd711e"
+    },
+    {
+      "claim_id": "0503837a-8b07-4c71-8104-57d0d97fd6f4",
+      "result_id": "b7ea376d-119c-41b8-bd26-a93552dd711e"
+    },
+    {
+      "claim_id": "c9cefe54-8489-4422-9a03-70beee37fa38",
+      "result_id": "b7ea376d-119c-41b8-bd26-a93552dd711e"
+    },
+    {
+      "claim_id": "78716a47-6a9c-4194-98c7-cbfa95cf409d",
+      "result_id": "67786762-743c-4f10-b0fa-60265f07d6b7"
+    },
+    {
+      "claim_id": "d932660f-cfdb-46c6-a8ea-7adfbbe8775e",
+      "result_id": "67786762-743c-4f10-b0fa-60265f07d6b7"
+    },
+    {
+      "claim_id": "26959b80-29b2-48c6-9f06-95e7ad2492ad",
+      "result_id": "67786762-743c-4f10-b0fa-60265f07d6b7"
+    },
+    {
+      "claim_id": "06d6cad2-a545-4ed2-b164-e3c63ed30ed5",
+      "result_id": "726b3f56-9510-4b0c-9fbc-ea3a274bedeb"
+    },
+    {
+      "claim_id": "69825cb2-5f7b-4741-a696-435b2d7ccaa2",
+      "result_id": "726b3f56-9510-4b0c-9fbc-ea3a274bedeb"
+    },
+    {
+      "claim_id": "995099c0-458a-4eae-b28d-f0a7c6139d05",
+      "result_id": "25b26356-0eed-441b-ad37-15efa5fc1868"
+    },
+    {
+      "claim_id": "969ea758-6c3f-46f7-8c1f-9b3e04cfe6d8",
+      "result_id": "25b26356-0eed-441b-ad37-15efa5fc1868"
+    },
+    {
+      "claim_id": "80dcbb99-e21e-4b2b-8b7c-eb5f5cd88628",
+      "result_id": "25b26356-0eed-441b-ad37-15efa5fc1868"
+    },
+    {
+      "claim_id": "133ef7b5-a29c-4e10-9352-9a67c695fd49",
+      "result_id": "25b26356-0eed-441b-ad37-15efa5fc1868"
+    },
+    {
+      "claim_id": "fd7c40be-84a3-42c8-97e7-42fa49e6861f",
+      "result_id": "b0cc29db-0684-40f4-9fe0-772c6bea0c35"
+    },
+    {
+      "claim_id": "17cc9dc9-4b43-44d0-9f8b-ba9159229935",
+      "result_id": "2a7d4ec0-cc59-4474-8a22-1c7ecd62bdd6"
+    },
+    {
+      "claim_id": "30fe675a-02e8-4cdd-8846-a358ddc29234",
+      "result_id": "2a7d4ec0-cc59-4474-8a22-1c7ecd62bdd6"
+    },
+    {
+      "claim_id": "b3d5a25a-3881-4fca-82dc-4198c04b7831",
+      "result_id": "2a7d4ec0-cc59-4474-8a22-1c7ecd62bdd6"
+    },
+    {
+      "claim_id": "ae119132-3406-486f-a392-c46dc779e013",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "dba8216f-db47-47b9-8c6e-7e7f38e0d14e",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "73425057-74b5-47ed-b913-22123c2299a8",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "24ca6c0c-ed30-4c63-a898-efd8f08efbaf",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "ccd1cffb-6cff-4cde-aa82-c50c04fe4f25",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "4e924647-11ce-4975-bc60-bebfa0435b5e",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "02fa0f40-e357-4234-b6e8-2ebd38bbf784",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "867efb25-b570-462f-b05c-2c512fd9a2d0",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "1ebba7f3-ed67-4ae0-9d54-76fb002318fe",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "9fc90111-7b3c-435a-a377-dfc6996ddf79",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "964e86a3-f7b1-4a0a-b01f-82592848b683",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "116f94e3-8304-481b-b1c0-43c54494d7f5",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "74b6cf8a-6c48-4ed5-ba3c-8eb535a17eb4",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "9e9da2a0-e7b7-4ee7-a730-569f66926fb1",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "0ef392bd-4ddf-4956-afba-dbe738452ea8",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "a1e6769f-0f98-4e17-a0e6-6eba7e2aaab4",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "7c642f4b-50b2-45fa-85ed-287d7e621e6d",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "486f342c-1844-4f26-9cee-b4906d4e5ad2",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "e962c0c5-8771-4471-852d-e48e24db91c9",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "e2fabc5d-cf07-49a9-8ebf-0e5309ce97b4",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "c76549ca-cbc4-4d6d-8b5f-874171561633",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "63333fe8-973e-4a9f-8d1b-4b90751e1eec",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "9828ac95-26a2-408d-a186-44e30011a958",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "4b39755c-4e59-40d4-ba68-a1583de6b6a7",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "2c2c2467-fc69-4820-a478-5efdf602a877",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "cdab8bd2-bf50-4d76-93ae-93422c282529",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "2dca6cfd-4b38-424b-bb4f-6c473b9b1442",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "a0345920-c82c-43ea-8311-d121e6107dcb",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "dccb867e-1fb1-4a38-839a-9c911597f962",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "fdcc295e-c9bd-49e6-b706-2c1d7de89291",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "5aa4dbd0-5d68-4d14-a4ee-c3ce293c744b",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "05397b9e-42e7-41ec-8c5f-8cb63a718f26",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "d5e602d8-5a97-4980-bfdf-911a9c8f0dc2",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "d4b75cbb-3397-4460-8b64-9f579ce9b230",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "cf9f28cd-6a8e-40f2-883e-f0099343b3c2",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "ecd6d200-402c-4cf6-be63-24a09a315ad0",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "7d47baa9-4f3b-412e-9272-b78e6a9cc5ba",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "bd8ab68c-9b56-4d6f-a49c-a5617e1ef33c",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "65b0a504-edcb-41ba-9a0f-85075453209e",
+      "result_id": "4bdc95f9-30eb-4d75-b4d8-d84b921c42fd"
+    },
+    {
+      "claim_id": "8c220a70-ba01-482f-9d91-1fa8cf91c077",
+      "result_id": "286a66d8-1686-431a-9fa8-66ca4b5e4e9b"
+    },
+    {
+      "claim_id": "226b2515-c84e-403b-9e9c-6f4d53f3b7c2",
+      "result_id": "286a66d8-1686-431a-9fa8-66ca4b5e4e9b"
+    },
+    {
+      "claim_id": "350a5371-d64a-4e8b-a301-0909e96f74e4",
+      "result_id": "286a66d8-1686-431a-9fa8-66ca4b5e4e9b"
+    },
+    {
+      "claim_id": "1e14ca33-686d-47cd-b4cb-1a013555ab2e",
+      "result_id": "286a66d8-1686-431a-9fa8-66ca4b5e4e9b"
+    },
+    {
+      "claim_id": "39fa0a92-4770-4e7b-8004-3dea70ae8e68",
+      "result_id": "286a66d8-1686-431a-9fa8-66ca4b5e4e9b"
+    },
+    {
+      "claim_id": "932dc2b4-6784-462e-a5df-8320c30e7cba",
+      "result_id": "286a66d8-1686-431a-9fa8-66ca4b5e4e9b"
+    },
+    {
+      "claim_id": "295d2a84-1c66-4cf2-bf8c-aa9dbc636243",
+      "result_id": "286a66d8-1686-431a-9fa8-66ca4b5e4e9b"
+    },
+    {
+      "claim_id": "d27be96a-0735-4bff-8beb-eefe3a67b323",
+      "result_id": "286a66d8-1686-431a-9fa8-66ca4b5e4e9b"
+    },
+    {
+      "claim_id": "a2407fef-f53b-4445-b1a9-70c0b8455b4b",
+      "result_id": "286a66d8-1686-431a-9fa8-66ca4b5e4e9b"
+    }
+  ],
+  "comparisons": []
+}

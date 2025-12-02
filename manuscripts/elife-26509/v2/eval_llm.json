@@ -1,0 +1,368 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The Wnt5a-Ror signaling pathway is crucial for embryonic tissue morphogenesis, reproduction, and adult tissue regeneration, but the molecular mechanisms underlying these processes are largely unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 establish the biological importance of the Wnt5a-Ror pathway and identify a knowledge gap in the field. These are well-established facts supported by extensive prior literature (as evidenced by citations throughout the manuscript) and represent the scientific context motivating this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "A phosphoproteomic screen identified Kif26b as a downstream target of the Wnt5a-Ror pathway, with eight Kif26b phosphopeptides showing significant increased abundance upon Ror depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phosphoproteomic screen data (C45-C49) provide strong quantitative evidence identifying Kif26b as a high-confidence target. The screen quantified 6498 phosphopeptides, identified 15 hits, with 8 mapping to Kif26b and showing consistent, significant changes across replicates (Figure 1B, Supplementary files 1-2). The experimental design with biological replicates and controls is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C67",
+      "C68"
+    ],
+    "result": "Wnt5a-Ror signaling negatively regulates Kif26b protein expression at the post-transcriptional level, as demonstrated by elevated Kif26b levels in Ror-depleted and Wnt5a-knockout MEFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot data (Figure 2A-B) consistently show elevated Kif26b protein in both Ror-depleted and Wnt5a-/- MEFs compared to controls. The validation using two independent genetic perturbations (Ror depletion and Wnt5a knockout) strengthens the conclusion. Multiple biological replicates are shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Acute Wnt5a stimulation induces dose-dependent and time-dependent downregulation of Kif26b protein, with kinetics paralleling Ror1 and Dvl2 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dose-response (Figure 2C) and time-course (Figure 2D) experiments provide quantitative evidence for Wnt5a-induced Kif26b downregulation. The correlation with Ror1/Dvl2 phosphorylation (established readouts of Wnt5a-Ror signaling) strengthens the mechanistic link. The data show clear trends with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Wnt5a-dependent downregulation of Kif26b occurs post-transcriptionally, as Kif26b mRNA levels remain unchanged upon Wnt5a stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RT-qPCR data (Figure 2E) show no significant change in Kif26b mRNA levels at 1 hr or 6 hr after Wnt5a stimulation (p=0.249 and p=0.320, respectively), while protein levels decrease substantially. This clearly demonstrates post-transcriptional regulation. Statistical analysis is appropriate with technical replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Wnt5a-induced Kif26b downregulation occurs independently of the canonical Wnt/\u03b2-catenin pathway, as demonstrated by lack of inhibition by Dkk-1 and IWR-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The use of two independent inhibitors (Dkk-1 blocking at receptor level, IWR-1 blocking downstream) provides strong evidence for \u03b2-catenin independence (Figure 2F-G). Positive controls (Dkk-1 blocking Wnt3a-induced Lrp6 phosphorylation) validate inhibitor activity. This establishes the noncanonical nature of the pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Exogenous Wnt3a can also induce Kif26b downregulation via a noncanonical mechanism, supporting the view that canonical vs. noncanonical signaling is not strictly determined by Wnt ligand identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Data show Wnt3a induces Kif26b downregulation even in the presence of canonical pathway inhibitors (Figure 2F-G). This challenges traditional ligand-based classification and is supported by cited literature (van Amerongen et al., 2008). However, the authors appropriately note potential in vitro vs. in vivo differences (C81).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Wnt5a accelerates Kif26b protein turnover, as demonstrated by cycloheximide chase experiments showing 80.2% GFP-Kif26b remaining at 6 hr without Wnt5a versus 33.2% with Wnt5a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cycloheximide chase experiment (Figure 3C) provides direct evidence for increased protein degradation rather than decreased synthesis. The quantitative difference (80.2% vs. 33.2% remaining) is substantial and clearly demonstrates accelerated turnover. The experimental design appropriately blocks new protein synthesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Wnt5a-induced Kif26b downregulation occurs via the ubiquitin-proteasome system, as demonstrated by blockade with proteasome inhibitor epoxomicin and E1 ubiquitin enzyme inhibitor PYR-41.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Flow cytometry data (Figure 3D-F) show strong blockade of Wnt5a-induced Kif26b degradation by both epoxomicin and PYR-41 (p<0.001 for both). Using two independent inhibitors targeting different steps in the UPS pathway provides robust evidence. Technical replicates and statistical analysis are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Frizzled proteins play a role in Wnt5a-dependent Kif26b regulation, as demonstrated by partial blockade of Wnt5a-induced Kif26b degradation upon Shisa2 (Fzd inhibitor) expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Flow cytometry data (Figure 4A-B) show that Shisa2 (which sequesters Fzd proteins) partially blocks Wnt5a-induced Kif26b degradation (p<0.001), while control virus does not. This provides evidence for Fzd involvement, though the partial blockade suggests additional complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Overexpression of Frizzled proteins (Fzd1, Fzd7, and other family members tested) is sufficient to induce Kif26b degradation, suggesting Fzd proteins function as co-receptors with Ror proteins in Wnt5a-Ror-Kif26b signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Flow cytometry data (Figure 4C-D, Figure 4\u2014figure supplement 1) show that overexpression of multiple Fzd family members induces Kif26b degradation (p<0.001 for Fzd1 and Fzd7). The gain-of-function approach complements the Shisa2 loss-of-function data. However, the authors appropriately note that overexpression may reduce specificity (C102).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Dishevelled proteins have a functional role in Wnt5a-Ror-dependent Kif26b degradation, as demonstrated by Dvl1 overexpression inducing Kif26b degradation and the similar kinetics of Kif26b degradation and Dvl phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Flow cytometry data (Figure 4E-F) show Dvl1 overexpression induces Kif26b degradation (p<0.001). The similar kinetics between Kif26b degradation and Dvl2 phosphorylation (Figure 2D) and the known physical interaction between Dvl and Kif26b (cited from Guillabert-Gourgues et al., 2016) support a functional role for Dvl.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C117"
+    ],
+    "result": "Kif26b levels modulate cell migration in a wound-healing assay, with Kif26b knockout cells showing decreased wound closure and Kif26b-overexpressing cells showing enhanced wound closure, suggesting Wnt5a-Ror signaling regulates cell migration by controlling Kif26b degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Wound-healing assay data (Figure 5A-B) show significant differences in wound closure efficiency between Kif26b knockout, overexpression, and control cells (p<0.05). The bidirectional effects (loss-of-function decreases, gain-of-function increases migration) strengthen the conclusion. Controls show no effects on proliferation or survival (Figure 5\u2014figure supplement 1D-G), ruling out confounding factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Mis-expression of Kif26b in zebrafish embryos causes axis truncation and bending phenotypes similar to Wnt5a mis-expression, suggesting Kif26b functions as part of a noncanonical Wnt5a-Ror regulatory cassette regulating morphogenetic movements during embryogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Zebrafish microinjection data (Figure 6A-B) show that both Wnt5a and Kif26b mRNA injection produce similar axis malformation phenotypes, while control (Cas9) and uninjected embryos show minimal phenotypes. The phenotypic similarity across large sample sizes (n=125-236) provides strong in vivo evidence. The approach replicates established methods for assessing noncanonical Wnt function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Kif26b is required for primordial germ cell colonization of the developing gonad in mice, with Kif26b-/- embryos showing 44.9% of wild-type PGC numbers at E11.5, a phenotype similar to Wnt5a and Ror2 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "PGC quantification data (Figure 6C-D) show a statistically significant reduction in SSEA1-positive PGCs in Kif26b-/- gonads compared to Kif26b+/+ controls (p<0.01). The magnitude of reduction (44.9% of control) is comparable to published Ror2 (~50%) and Wnt5a (~25%) mutant phenotypes, supporting a common pathway. However, sample size is limited (n=2 for Kif26b+/+, n=4 for Kif26b-/-).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C142",
+      "C143"
+    ],
+    "result": "Wnt5a-Ror signaling triggers ubiquitin/proteasome-dependent degradation of Kif26b, demonstrating that UPS-mediated proteolysis is a conserved strategy employed by both canonical Wnt/\u03b2-catenin and noncanonical Wnt5a-Ror pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The combined data from proteasome and ubiquitin inhibitor experiments (Figure 3D-F) clearly demonstrate UPS-dependent degradation. The comparison to canonical Wnt/\u03b2-catenin pathway (which also uses UPS to regulate \u03b2-catenin) is conceptually sound and illustrated in Figure 7. This represents a significant mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C144",
+      "C145"
+    ],
+    "result": "Frizzled and Dishevelled proteins are shared functional components of both canonical and noncanonical Wnt signaling branches, suggesting the Wnt-Fzd-Dvl signaling module is an ancient and conserved feature common to multiple Wnt signaling systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental data showing Fzd and Dvl involvement in Wnt5a-Ror-Kif26b signaling (Figures 4A-F), combined with established knowledge of their roles in canonical Wnt signaling, support this conclusion. This represents an important conceptual advance in understanding Wnt pathway evolution and organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "Dishevelled has a broader role in regulating the stability of Wnt signaling effectors, functioning to inhibit \u03b2-catenin degradation during canonical Wnt signaling but to induce Kif26b degradation during noncanonical Wnt5a signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Dvl overexpression data (Figure 4E-F) combined with established knowledge about Dvl's role in canonical Wnt signaling support this conclusion. The contrasting functions (inhibiting vs. promoting degradation) in different pathways highlight Dvl's context-dependent activity. This is illustrated in Figure 7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "Kif26b protein is predominantly localized to the trailing edge of migrating cells, consistent with a role in promoting trailing edge de-adhesion and/or retraction, supported by its interaction with Myosin IIb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Imaging data (Figure 3\u2014figure supplement 2D-E, Video 1) show GFP-Kif26b localization to the trailing edge. The inference about function is reasonable given this localization and the known interaction with Myosin IIb (Uchiyama et al., 2010), a regulator of trailing edge dynamics. However, direct functional evidence for this specific role is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205"
+    ],
+    "result": "Genetic loss-of-function perturbation of Kif26b in mice does not fully recapitulate Wnt5a or Ror mutant phenotypes in all developmental contexts, potentially due to complex spatiotemporal signaling dynamics, tissue-specific requirements, or compensation by other effectors like Kif26a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge phenotypic discrepancies between Kif26b, Wnt5a, and Ror mutants (e.g., lack of global tissue truncation in Kif26b mutants, opposite kidney phenotypes). The proposed explanations (complex signaling dynamics, tissue-specificity, compensation) are reasonable hypotheses supported by the observation that Kif26a is also a Wnt5a-Ror target (C206-C207, unpublished data).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Frizzled proteins may function as the primary signaling receptors while Ror proteins play a modulatory role in Wnt5a-Ror-Kif26b signaling, as Fzd overexpression induces Kif26b degradation but Ror2 overexpression does not, and high Wnt5a concentrations can induce Kif26b degradation in Ror-deficient cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The differential effects of Fzd vs. Ror2 overexpression (C164-C165) and the ability of high Wnt5a to signal in Ror knockout cells (C167) are intriguing observations. However, these are based on unpublished data and overexpression experiments, which may not reflect physiological conditions. The proposed model (C166) is speculative and requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The biochemical mechanisms by which Ror receptors function remain unclear, with ongoing debate about whether Ror proteins are active kinases or pseudokinases, and no evidence for Wnt5a-Ror-induced tyrosine phosphorylation of Kif26b.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge the uncertainty about Ror kinase activity, citing conflicting evidence from the literature (C151-C154). Their own data show no detectable tyrosine phosphorylation of Kif26b (C157, unpublished), and all identified phosphosites are serine/threonine (C155). This represents an honest assessment of knowledge gaps.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193"
+    ],
+    "result": "The signaling dynamics of the Wnt5a-Ror-Kif26b pathway are likely more complex in vivo than observed in vitro, with the pathway potentially functioning to tune Kif26b activity with high spatiotemporal resolution rather than constitutively degrading it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is thoughtful speculation (C189-C192) about potential in vivo complexity, supported by general principles of developmental biology (C190, C193). However, it remains speculative without direct in vivo measurements of Kif26b dynamics. The modest in vitro effects (C191) may indeed not reflect in vivo regulation, but this requires experimental validation.",
+    "result_type": "MINOR"
+  }
+]

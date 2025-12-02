@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6"
+    ],
+    "result": "The authors establish that neuroimaging techniques, particularly MRI, have become essential tools in neuroscience research, but generally recognized standards for assessing and reporting reliability of these techniques are still lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C5, and C6 consistently establish the importance of neuroimaging while identifying a gap in reliability standards. C5 is supported by citation (Lerch et al., 2017), and the claims about lacking standards are presented as field observations that align with the paper's motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C13"
+    ],
+    "result": "The lack of reliability standards in neuroimaging may reflect the interdisciplinary nature of the field, with physics, biology, and psychology each bringing different methodologies and terminologies for conceptualizing measurement error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, and C13 provide a coherent explanation for the lack of standards, supported by Table 1 which documents terminological differences across disciplines (C14, C15). While speculative (C7, C13), the explanation is well-reasoned and supported by evidence of disciplinary differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C14",
+      "C15"
+    ],
+    "result": "The coefficient of variation (CV) expresses measurement precision by relating variability to the mean, with different disciplines using different terminology (precision vs. reliability, accuracy vs. validity) for the same underlying concepts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 accurately describe CV properties and limitations, supported by Figure 1 which illustrates the distinction between precision and bias. Claims C14-C15 document terminological differences across disciplines in Table 1, providing clear evidence for the conceptual framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The intraclass correlation coefficient (ICC) quantifies the ratio of between-person to total variance and conveys fundamentally different information than CV, as demonstrated by simulations showing CV can remain constant while ICC changes drastically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C18 define ICC with appropriate citation (Bartko, 1966). Claims C19-C22 are supported by simulated data in Figure 2, which clearly demonstrates the independence of CV and ICC. The logical relationships between precision and reliability are well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "The neuroimaging literature typically provides little justification for choice of reliability index, and it is misleading to report CV as a measure of reliability when investigating individual or group differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 is an assertion about the literature that aligns with the paper's motivation. Claim C24 follows logically from the established distinctions between CV and ICC (C19-C22), making it a well-supported normative recommendation based on the conceptual framework developed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "ICED uses structural equation modeling to decompose reliability into orthogonal error components (session, day, site, etc.), extending ANOVA-based approaches and G-Theory to allow researchers to identify error sources, estimate their magnitudes, and inform future study designs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C25-C30 describe the ICED method and its advantages. The approach is well-grounded in established theory (G-Theory, cited in C26 with Gee et al., 2015; Noble et al., 2017). The method's capabilities are demonstrated through subsequent empirical examples, and the conceptual advantages are logically derived.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C36",
+      "C37"
+    ],
+    "result": "Re-analysis of Arshad et al. (2017) myelin water fraction data using ICED revealed that 86% of variance was due to true score, 8% to session-specific effects, and 6% to residual error, but day-specific and true score variance are inseparable in this design, requiring an augmented design for full decomposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 present data-based findings with statistical tests (all p<0.05). The analysis is methodologically sound using the ICED framework. Claims C36-C37 correctly identify a design limitation and propose a solution (Figure 4), demonstrating appropriate critical evaluation of the method's application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The SEM-based ICED approach allows using complete datasets in a single model to estimate both item-level (ICC) and construct-level (ICC2) reliability while directly estimating variance components for specific error sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 describe methodological advantages that are demonstrated in the empirical examples (myelin water fraction and rsFC analyses). The approach is theoretically grounded and the capabilities are shown to work in practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Resting-state functional connectivity (rsFC) has been proposed as a promising biomarker for brain changes, leading to increased interest in examining its reliability, with the Day2day study providing data from six participants scanned 40-50 times over seven months plus 42 single-scan participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by appropriate citations (Dosenbach et al., 2010; Craddock et al., 2009; Gordon et al., 2017; Noble et al., 2017; Pannunzi et al., 2018). Claim C42 accurately describes the study design from Filevich et al., 2017, providing context for the subsequent analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "For left-right prefrontal cortex rsFC, ICC was initially estimated at 0.49 (49% true score, 51% error) but dropped to 0.39 (39% true score, 61% error) when augmented with cross-sectional data, likely due to overestimation of between-person differences in the small initial sample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 present data-based findings with statistical tests. The comparison between analyses is methodologically sound and demonstrates the value of augmenting longitudinal data with cross-sectional data. Claim C49 provides a reasonable interpretation of the difference, though it is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The current rsFC analysis found an average ICC of 0.28 (range 0.0-0.55), consistent with Pannunzi et al. (2018) who reported average ICC of 0.22 (range 0.0-0.7), supporting the conclusion that rsFC from 5-minute scans performs poorly as a marker for individual subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 present data-based findings that are consistent with prior work (Pannunzi et al., 2018). Claim C53 is a reasonable conclusion supported by the low ICC values and additional citation (Gordon et al., 2017). The convergence of results across studies strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The ICED logic has been extended to linear latent growth curve models to account for substantive change over time, with effective error for change depending on number of occasions, temporal arrangement, study duration, and instrument reliability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by citations to the authors' previous work (Brandmaier et al., 2015, 2018; von Oertzen and Brandmaier, 2013). The extension to longitudinal designs is a logical application of the ICED framework, though the current paper does not demonstrate this empirically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The ICED framework generalizes to more complex designs, allowing identification of additional error sources (experimenter-specific, site-specific) and handling of interaction effects with greater numbers of sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 describe the flexibility of the SEM-based approach. These capabilities are theoretically sound given the generality of SEM, though they are not empirically demonstrated in the paper. The claims are reasonable extensions of the demonstrated methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The SEM-based ICED approach, closely related to Cronbach's G-Theory, can identify and estimate error components in more complex designs than standard ANOVA-based ICC decompositions, with effective error and reliability automatically derivable from path diagrams.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 summarize the theoretical foundations and advantages of ICED. The relationship to G-Theory is supported by citations (Cronbach et al., 1972; Vispoel et al., 2018), and the advantages over ANOVA are demonstrated through the empirical examples. Citation to von Oertzen (2010) supports the algorithmic claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "ICC and CV represent two perspectives on reliability corresponding to experimental (average effects) versus correlational (individual differences) approaches, with the experimental approach compatible with CV and robust experimental effects often not translating to reliable individual differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 provide a conceptual framework supported by citations (Cronbach, 1957; Hedge et al., 2018). The distinction between experimental and correlational approaches is well-established in psychology, and the relationship to CV versus ICC follows logically from the definitions established earlier.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Pearson correlation is inappropriate for reliability assessment due to insensitivity to mean changes, ICC can only be large with individual differences present, and ICC is the appropriate reliability measure for diagnostic instruments focusing on individual differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by citation (Bartko, 1966). Claims C70-C71 follow logically from the definition and properties of ICC established throughout the paper. These are well-established psychometric principles appropriately applied to neuroimaging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Using ICED, researchers can report individual variance components beyond summary ICC, potentially discovering remediable error sources, with reliability >0.9 often considered excellent (10:1 signal-to-noise), and ICED expected to help develop more reliable measures as prerequisites for valid studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 states a conventional threshold. Claims C73-C74 describe demonstrated capabilities of ICED from the empirical examples. Claim C75 is speculative about future impact but is a reasonable expectation given the demonstrated utility of the method.",
+    "result_type": "MINOR"
+  }
+]

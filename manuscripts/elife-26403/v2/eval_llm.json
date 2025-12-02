@@ -1,0 +1,381 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C83",
+      "C84"
+    ],
+    "result": "Insertion of a 38 amino acid SBP tag between Ypq1 and GFP results in constitutive sorting of Ypq1 into the vacuole lumen in wild-type cells, but this sorting is blocked in ssh4\u0394 mutants, suggesting Ypq1-SBP-GFP uses the same degradation pathway as Ypq1-GFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C15, C83, and C84 provide microscopy evidence showing constitutive luminal localization in WT and membrane retention in ssh4\u0394 (Figures 1A-B). Claim C16 logically infers pathway identity based on Ssh4 dependence, which is consistent with prior work on Ypq1-GFP. The data directly support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "A genetic selection system using Ypq1-SBP-GFP-His3 distinguishes wild-type cells (His-) from degradation mutants (His+), as demonstrated by ssh4\u0394 cells being His+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 describe the genetic selection rationale and provide experimental validation (Figure 1C-D). The growth assay confirms that ssh4\u0394 mutants are His+ while WT cells are His-, supporting the selection system's validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "A fluorescence-based screen using Ypq1-SBP-pHluorin identifies sorting mutants, as pHluorin is quenched in the acidic vacuole lumen but remains fluorescent when sorting is blocked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 describe the pHluorin screen design and validation. Figure 1\u2014figure supplement 1A-B shows quenching in WT and fluorescence in ssh4\u0394, with flow cytometry quantification. The pH-dependent fluorescence principle is well-established and properly applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C23",
+      "C25"
+    ],
+    "result": "Genetic screens identified ESCRTs, the E3 ligase RSP5 and adaptor SSH4, endosome-vacuole fusion machinery, and PtdIns 3-kinase complex components, but did not identify vesicle coat proteins or budding machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C22-C23 state screen results supported by Supplemental file 2. Claim C25 notes the absence of coat/budding proteins, which is significant for interpreting the pathway. The screens used complementary approaches (His selection and pHluorin fluorescence), strengthening confidence in the hits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Ssh4 requires ESCRT function for delivery to the vacuole, as Ssh4 is mislocalized to aberrant endosomes in vps27\u0394 mutants, implying ESCRTs are required for Ypq1 ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 provide microscopy evidence (Figure 2A) showing Ssh4 mislocalization in ESCRT mutants. Claims C28-C29 draw logical inferences about ESCRT requirement for Ssh4 delivery and Ypq1 ubiquitination. The inference is reasonable given Ssh4's role as the E3 ligase adaptor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Ypq1 polyubiquitination after lysine withdrawal is blocked in vps27\u0394 mutants because Ssh4 delivery to the vacuole is blocked in ESCRT mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 present ubiquitination assay data (Figure 2B) showing polyubiquitination in WT but not vps27\u0394. Claim C32 provides the mechanistic interpretation linking ESCRT function to Ssh4 delivery and Ypq1 ubiquitination. The data and interpretation are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Endosome-vacuole fusion mutants (vam3ts, vps18ts) block Ssh4 delivery and Ypq1 ubiquitination, demonstrating that proper Ssh4 delivery to the vacuole membrane is required for Ypq1 ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 provide microscopy (Figure 2\u2014figure supplement 1A) and ubiquitination assay data (Figure 2\u2014figure supplement 1B) showing Ssh4 mislocalization and blocked Ypq1 ubiquitination in fusion mutants. Claim C36 synthesizes these observations into a coherent conclusion about Ssh4 delivery requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The RapiDeg system induces rapid, specific ubiquitination and degradation of Ypq1-FKBP within 30 minutes via rapamycin-induced recruitment of FRB-3xUb, bypassing the Ssh4 requirement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 describe RapiDeg design, kinetics, specificity, and Ssh4 independence. Figures 2C-F and supplements provide microscopy and Western blot validation. The system shows specificity (only FKBP-tagged protein degrades with rapamycin) and maintains normal lysine-withdrawal response. Well-controlled experiments support the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "The RapiDeg system can induce degradation of transmembrane proteins from multiple cellular compartments including PM, Golgi, endosome, and vacuole membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by Figure 2\u2014figure supplement 4, which shows microscopy and Western blot data for Can1 (PM), Kex2 (Golgi), Nhx1 (endosome), and Vph1 (vacuole). The broad applicability is demonstrated experimentally across multiple proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "SNARE-mediated membrane fusion is not required for Ypq1 sorting into the vacuole lumen, as demonstrated by normal Ypq1 degradation in sec18ts, vps18ts, and vam7ts mutants at non-permissive temperatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49, C51-C52 provide microscopy and Western blot data (Figures 3A-F) showing Ypq1 sorting and degradation in fusion mutants. Claims C50 and C53 provide positive controls (Mup1 accumulation) confirming mutant inactivation. Claim C54 draws the appropriate conclusion. The controls are essential and properly executed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "ESCRTs are essential for sorting ubiquitinated Ypq1 from the vacuole membrane into the lumen, as Ypq1 remains on the vacuole membrane and is not degraded in vps4ts mutants at non-permissive temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 present microscopy and Western blot data (Figures 4A-B and supplement 1A-B) showing blocked Ypq1 sorting in vps4ts mutants. The vps4ts allele is a well-validated tool for inactivating ESCRT function. The data directly support ESCRT requirement for sorting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The vacuole membrane contains PtdIns(3)P and ubiquitinated cargo required for ESCRT recruitment, as demonstrated by GFP-FYVEVps27 localization to the vacuole membrane in a Vps34-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 describe the lipid environment and provide experimental evidence (Figure 4C) showing FYVE domain binding to vacuole membrane. Claims C60-C61 draw conclusions about ESCRT function and recruitment at the vacuole. The FYVE domain is a well-established PtdIns(3)P probe, and the Vps34 dependence confirms specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "ATP depletion with NaN3/NaF causes Ypq1-FKBP to accumulate in puncta at the vacuole membrane after rapamycin treatment, and this effect is reversible upon ATP replenishment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 provide microscopy and Western blot data (Figures 5A-C) showing puncta formation with ATP depletion and reversal after washing. Claim C66 interprets the reversibility. The controls (no rapamycin, ATP replenishment) are appropriate and support the interpretation that puncta represent sorting intermediates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Ypq1-FKBP puncta formation is ESCRT-dependent, as puncta do not form in vps27\u0394 cells after rapamycin and ATP depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 provide microscopy data (Figure 5D) showing absence of puncta in vps27\u0394. Since Vps27 initiates ESCRT-mediated sorting, this result supports ESCRT dependence of the sorting intermediates. The logic is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "ESCRT proteins (Hse1, Vps23, Vps36) are recruited to the vacuole membrane and co-localize with Ypq1-FKBP puncta after rapamycin treatment and ATP depletion, demonstrating direct ESCRT function on the vacuole membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 provide microscopy data (Figures 6A-B and supplement 1) showing ESCRT recruitment and co-localization. Claims C71-C72 provide negative controls (no co-localization with rapamycin or ATP depletion alone, no co-localization with endosomes). Claims C73-C74 draw appropriate conclusions. The multiple ESCRT components and controls strongly support direct vacuolar function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Rapamycin-induced ubiquitination of Ypq1-FKBP causes accumulation of ILVs (~40 nm diameter) in the vacuole lumen, confirming ESCRT-mediated sorting from the vacuole membrane into ILVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C77 provide EM data (Figures 7A-C, E) showing ILV depletion with Hse1DUB and accumulation after rapamycin treatment. Claim C79 shows ILV size is similar to endosomal ILVs (Figure 7F). Claims C78 draws the conclusion about ESCRT-mediated sorting. The experimental design using Hse1DUB to deplete background ILVs is clever and well-controlled. Statistical analysis (Figure 7E) supports significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors propose a model where ubiquitinated vacuole membrane proteins are sorted directly on the vacuole membrane by ESCRTs, which internalize cargo into ILVs that bud into the vacuole lumen, without requiring endosome-vacuole fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 state the main conclusions, rejecting the recycling model. Claims C85-C88 describe the proposed model (Figure 7G). The model is well-supported by the cumulative evidence: fusion independence (C48-C54), ESCRT requirement (C55-C56), ESCRT recruitment to vacuole (C69-C74), and ILV formation (C75-C79). The model is internally consistent with all experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "The RapiDeg system provides a tractable method for specific inactivation of membrane proteins in secretory and endocytic pathways and should be adaptable to other eukaryotic organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C90 is supported by the demonstrated applications (C45). However, claim C91 about adaptability to other organisms is speculative (evidence_type: SPECULATION) and lacks experimental validation. The system's utility in yeast is clear, but cross-species applicability requires testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "ESCRT recruitment to the vacuole membrane uses the same components as endosomal recruitment (PtdIns(3)P and ubiquitinated cargo), but vacuolar ESCRTs are not easily detected under normal conditions due to lower cargo concentration and larger surface area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by the experimental data showing PtdIns(3)P and ubiquitinated cargo requirements. Claims C93-C94 provide reasonable explanations for why vacuolar ESCRT pools are not normally detected. These are logical inferences based on known ESCRT biology and vacuole properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "ER membrane proteins (Erd2, Heh2) were not degraded using the RapiDeg system, indicating limitations in the system's applicability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 states an observation about RapiDeg limitations. While no figure is provided, this negative result is important for defining the system's scope. The claim is straightforward and does not require extensive validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The ILF pathway does not play a significant role in ubiquitin-dependent sorting of Ypq1, as Ypq1 sorting is ESCRT-dependent and does not require vacuole-vacuole fusion machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 describe the ILF pathway from prior work. Claim C107 concludes it doesn't apply to Ypq1 based on ESCRT dependence and fusion independence. Claim C108 provides supporting knowledge. The logic is sound: the ILF pathway is ESCRT-independent and fusion-dependent, opposite to Ypq1 sorting requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The lysosome plays an important role in cellular nutrient homeostasis, and dysregulation of lysosomal transporters underlies lysosomal storage diseases, making precise regulation of lysosomal membrane proteins crucial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C9 provide background knowledge about lysosome function and disease relevance, supported by citations. These establish the biological context and significance of the study. The claims are well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C82"
+    ],
+    "result": "Prior work from the authors' lab showed that Ypq1 is ubiquitinated by Rsp5 (recruited by Ssh4) and sorted into the vacuole lumen after lysine withdrawal, and Cot1 is similarly ubiquitinated by Tul1 upon zinc depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13, C82 summarize prior work from the authors' lab with appropriate citations. These establish the foundation for the current study and are supported by published data. The claims accurately represent the prior findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C24",
+      "C46",
+      "C47",
+      "C89",
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Various background claims about established knowledge including PtdIns(3)P synthesis, SNARE/HOPS function, ESCRT ATP dependence, Doa4 function, ubiquitin chain structures, and vacuole membrane properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C46-C47, C89, C97-C98, C100-C103 provide established knowledge supported by citations. These are well-accepted facts in the field that provide necessary context for interpreting the experimental results. The citations are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "ESCRTs have been shown to function on various cellular membranes beyond endosomes, and the current work reveals vacuole membrane protein turnover as another location for ESCRT function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 summarizes established knowledge about diverse ESCRT functions with appropriate citations. Claim C96 positions the current findings in this broader context. The claim accurately represents the significance of the work in expanding known ESCRT functions.",
+    "result_type": "MINOR"
+  }
+]

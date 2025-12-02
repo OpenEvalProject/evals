@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Ants detect infected pupae during the pathogen's non-contagious incubation period using chemical 'sickness cues'. Unpacking behavior occurs 2-10 days after pathogen exposure in a dose-dependent manner, with 85% of unpacked pupae harboring lethal infections while only 25% of non-unpacked pupae were infected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 provide strong experimental evidence with appropriate statistical tests (Cox proportional hazards regression, GLM) showing dose-dependent unpacking behavior and high infection rates in unpacked pupae. The timing data (C36, C41) and CFU measurements (C37) confirm detection occurs during the non-contagious incubation period. Chemical detection is supported by pentane washing experiments (C4, C46-C48).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Destructive disinfection consists of three behavioral components: unpacking pupae from cocoons, biting to perforate cuticles, and poison spraying. After unpacking, ants increase poison spraying 15-fold and double grooming duration compared to sanitary care, resulting in pupal death and heavily damaged corpses coated in poison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 provide quantitative behavioral data with appropriate statistical tests (GLMM, LMER) showing significant increases in all three behaviors. The multicomponent nature is well-documented through behavioral observations and measurements (C45). The data clearly distinguish destructive disinfection from sanitary care.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Infected pupae exhibit distinct chemical profiles characterized by increased abundances of specific cuticular hydrocarbons (CHCs). Eight out of 24 CHCs showed higher relative abundances on unpacked pupae, with four CHCs specifically elevated compared to both control and cocooned pupae. These chemical differences are of pupal origin, not fungal-derived.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C54 are supported by rigorous GC-MS chemical analysis with appropriate statistical tests (perMANOVA, Kruskal-Wallis). The pentane washing experiment (C46) provides functional evidence that CHCs are necessary for detection. The comparative analysis of fungal and pupal profiles (C50-C52) convincingly demonstrates pupal origin of the chemical signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Injection of \u03b2-1,3-glucans (fungal immune elicitor) induces immune gene expression and increases abundance of two CHCs (Tritriacontadiene and Tritriacontene) that are also elevated on Metarhizium-infected pupae. This links chemical profile changes to host immune responses rather than direct fungal products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 provide experimental evidence with appropriate statistical tests (Mann-Whitney U, LMER) showing immune gene upregulation and CHC changes following \u03b2-glucan injection. The overlap between \u03b2-glucan-induced and infection-induced CHC changes (C61) supports the mechanistic link. However, only 2 of 4 key CHCs were replicated, suggesting partial rather than complete mechanistic understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Destructive disinfection prevents pathogen replication through synergistic interaction of three components: unpacking, biting, and poison application. The behavior reduced sporulation by 65% after 1 day and 95% after 5 days. All three components are necessary and must be performed in sequence, with poison being the active antimicrobial agent that requires cocoon removal and cuticle perforation to reach internal infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 are supported by well-designed in vitro experiments with full factorial design and appropriate statistics (GLM with interaction terms). The time-dependent (C63-C64) and group-size effects (C66) are consistent with poison being the limiting factor (C71-C72). The experimental design properly isolates each component's contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Destructive disinfection prevents intra-colony disease transmission by stopping the pathogen lifecycle. Sporulating pupae caused lethal infections in 42% of exposed ants, while destructively disinfected pupae caused no disease transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 provide direct experimental evidence with appropriate statistical tests (GLM) showing complete prevention of disease transmission from disinfected pupae. The experimental design properly tests the colony-level impact by exposing ants to treated versus untreated infected pupae.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Destructive disinfection in ant colonies operates analogously to cellular immune responses in multicellular organisms. Both systems detect infections early and eliminate infected units (cells or individuals) through targeted delivery of antimicrobial compounds via membrane/cuticle perforation, representing convergent evolution at different levels of biological organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C84 draw analogies between ant social immunity and cellular immunity based on mechanistic similarities (detection, perforation, antimicrobial delivery). While the parallels are conceptually interesting and supported by citations, the claim of convergent evolution (C86) is speculative. The analogy is logical but lacks direct evolutionary evidence or phylogenetic analysis to demonstrate independent evolution of similar mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The chemical cues used for infection detection are distinct from corpse removal signals, consist of low-volatility long-chain CHCs requiring close contact, and may represent evolutionarily conserved 'sickness cues' in Hymenopteran social insects. Two of the four key CHCs are also elevated in infected honeybees, suggesting conservation across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C88 are supported by citations and chemical data showing distinctness from corpse signals. The low-volatility properties (C91) are supported by chemical analysis and citations. However, claims of evolutionary conservation (C94-C95) are speculative, based on limited cross-species comparison (only honeybees cited in C93). The functional interpretation (C92, C96-C97) is logical but lacks direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The high effectiveness of destructive disinfection (95% prevention of transmission) explains why generalist fungal pathogens like Metarhizium do not cause colony-wide epidemics in ants despite being common in field populations. This selective pressure may have driven evolution of host manipulation in specialist ant-pathogenic fungi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C98 is directly supported by experimental data. However, claims C99-C103 are speculative inferences about field epidemiology and evolutionary dynamics. While the logic is sound and supported by citations, there is no direct field data demonstrating that destructive disinfection prevents epidemics in natural populations, nor phylogenetic evidence for the proposed evolutionary scenario with specialist fungi.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C129",
+      "C130"
+    ],
+    "result": "Destructive disinfection behavior is observed in multiple Lasius populations and species, including an unrelated L. neglectus supercolony from Jena and the non-supercolonial species L. niger, suggesting it may be a common behavior in the genus Lasius.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104, C129-C130 provide observational data from additional populations and species showing similar destructive disinfection behavior. The data show high rates of destructive disinfection in pathogen-exposed pupae (>60% in Jena, 95% in L. niger) and no unpacking of controls. This supports generalizability within Lasius, though the broader claim about other ant genera (C105) remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Destructive disinfection likely evolved in ants because their sedentary, territorial lifestyle and midden waste management create persistent disease transmission risks. This contrasts with honeybees (random corpse disposal during flight) and termites (cannibalism with gut neutralization), representing convergent solutions to the shared selective pressure of eliminating infected individuals early.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C109 about ant ecology are well-supported by citations. The comparative analysis with honeybees (C111) and termites (C112-C113) is supported by citations. However, the evolutionary inference (C106, C114) is speculative, lacking direct evidence that midden risks drove evolution of destructive disinfection. The comparative framework is logical but the specific evolutionary claims are not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Social animals face elevated disease risks due to frequent interactions, leading to evolution of disease detection and avoidance behaviors. In closely related groups, selection may favor both detection by healthy individuals and advertisement of disease status by sick individuals when this benefits kin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C17 are theoretical predictions from evolutionary immunology and disease ecology, well-supported by multiple citations to established literature. These provide the conceptual framework for the study but are not novel findings. They represent accepted theory rather than new empirical results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Social insect colonies are superorganisms with irreversible reproductive division of labor, where natural selection acts at the colony level. They have evolved social immunity including sanitary care, characterized by a care-kill dichotomy, though the kill-component and responses to established infections remain poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C26 are established knowledge about social insect biology and social immunity, well-supported by citations. Claim C27 identifies a knowledge gap that motivates the current study. These claims provide essential background context but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The study system consists of the invasive ant Lasius neglectus and the generalist fungal pathogen Metarhizium brunneum. Metarhizium penetrates host cuticle within 24-48 hours, undergoes a 1-2 day non-infectious incubation period, then sporulates 1-3 days after host death, releasing millions of infectious spores. The experimental exposure procedure delivered ~1800 spores per pupa, with ~95 reaching the pupa inside the cocoon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33, C119-C128 describe the study system and methods. The pathogen biology (C31-C33) is established knowledge supported by citations. The study organism characteristics (C119-C120) are supported by citations. The exposure methodology (C126) is supported by experimental measurements. These are methodological details rather than novel findings.",
+    "result_type": "MINOR"
+  }
+]

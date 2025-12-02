@@ -1,0 +1,252 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The authors engineered a resistant E. coli strain using a CRISPR-Cas Type II system from S. pyogenes targeting T7 phage. This system confers significant but incomplete resistance (~1 in 1000 resistant cells succumb to infection), with resistance decreasing at higher MOI. Upon infection, resistant cells halt growth but continue to adsorb and degrade phages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 describe the construction and characterization of the resistant strain with consistent experimental evidence shown in Figure 2. The MOI-dependent resistance (C36) and the engineered property of growth arrest with continued phage adsorption (C37) are well-documented and critical for the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "In liquid culture without spatial structure, populations with >99.6% resistant individuals all survive phage epidemics, while populations with <96.9% resistant individuals all collapse. Intermediate frequencies (98.4-99.2% resistant) show stochastic outcomes with some populations surviving and others collapsing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 present clear experimental results from liquid culture experiments with 16 replicates per condition, shown in Figure 3. The sharp transition around 97-99% resistant individuals and the stochastic outcomes at intermediate frequencies are well-documented and statistically robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Reducing nutrient concentration by diluting LB medium alters bacterial growth rate and concurrently changes T7 phage latent period and burst size. As bacterial growth rates decline, the fraction of resistant individuals necessary for population survival decreases from 99.2% (50% LB) to 96.9% (20% LB) for complete survival, and from 75% to 50% for complete collapse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 describe systematic experiments varying nutrient concentration with clear results shown in Figures 4 and 5, and Tables 1 and 2. The relationship between growth rate and herd immunity threshold is well-established experimentally with multiple replicates and appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "In spatially structured populations on agar plates, increasing proportions of resistant individuals significantly reduce plaque size and expansion speed. Even 10% resistant individuals significantly reduce final plaque size, and 40% resistant individuals significantly slow expansion speed immediately after plaques are detectable. Populations with <40% resistant individuals that collapse in liquid culture can survive on plates, demonstrating that spatial structure facilitates herd immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58, C63-C65 present experimental results from plaque assays with statistical analysis shown in Figures 6 and 7. The comparison between liquid and structured environments (C64) provides strong evidence for the role of spatial structure. Statistical significance is properly assessed with appropriate tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C73"
+    ],
+    "result": "Herd immunity arises during phage epidemics in both structured and unstructured E. coli populations consisting of differing frequencies of susceptible and CRISPR-immune resistant cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C73 represent the central finding of the manuscript, supported by the comprehensive experimental results in both liquid culture (C43-C46) and on plates (C57-C65). The experimental design with engineered strains and multiple conditions provides robust evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C74",
+      "C75"
+    ],
+    "result": "A mathematical model quantifies how herd immunity is affected by spatial population structure, bacterial growth rate, and phage replication rate. Herd immunity in phage-bacterial communities strongly depends on these factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C74-C75 describe the mathematical modeling results. The model (Equations 4-7) successfully predicts experimental observations across different growth conditions (Figure 5C) and spatial structures (Figure 6C), with parameters estimated from independent measurements (Tables 1-2, Figure 8).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C104",
+      "C110"
+    ],
+    "result": "The two-state model (exponential growth until nutrient depletion, then no growth) describes observed population trajectories sufficiently well and correctly captures the dependence of the herd immunity threshold on bacterial and phage growth parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104 and C110 assess model validity. Figure 4 shows good agreement between the two-state model and experimental bacterial growth. Figure 5C demonstrates that the model predictions for herd immunity thresholds match experimental observations across different nutrient conditions with appropriate error propagation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C116"
+    ],
+    "result": "At large MOI, even resistant cells become susceptible to lysis and the CRISPR-Cas system fails to provide effective immunity, resulting in release of phage progeny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100 and C116 describe MOI-dependent resistance failure, supported by Figure 2A showing increased burst probability at higher MOI and cited literature (Westra et al., 2015; Chabas et al., 2016). This is an important limitation of the CRISPR-based immunity system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "The inherent stochasticity of the phage adsorption process provides additional uncertainty not captured by error bars. This stochasticity can explain the wider transition zone in experiments with slower growing populations, as the fate of populations is more prone to stochastic effects when phage replication is slower.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 provide a reasonable explanation for the wider transition zones observed in diluted media experiments (Figure 5C). The inference is logical given the stochastic nature of adsorption and the reduced phage replication rates at lower growth rates, though direct experimental evidence for this specific mechanism is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "Structured environments effectively limit phage transit from within plaques to the expanding front compared to unstructured environments. After nutrient depletion, pure diffusion processes can explain the slow decrease in expansion speed observed experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 provide mechanistic explanations for spatial structure effects. The inference about limited transit in structured environments is logical and consistent with the observed differences between liquid and plate experiments. Figure 7A supports the interpretation about diffusion-limited spread after depletion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C120"
+    ],
+    "result": "The model predictions show a discrepancy from experimental results on plates after nutrient depletion, with the model predicting continued expansion at higher susceptible fractions than observed experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C120 acknowledges a limitation of the model. The authors note that the independently measured \u03b2_depl=3.0 predicts expansion should continue at S>0.33, but experiments show plaques stop expanding at S\u22640.9. This honest assessment of model limitations is appropriate, though the discrepancy remains within experimental uncertainty of \u03b2_depl.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C80",
+      "C81"
+    ],
+    "result": "Herd immunity may be important in bacterial communities, allowing for stable coexistence of bacteria and phages and maintenance of polymorphism in bacterial immunity. Spatial structure facilitates herd immunity, and herd immunity may be prevalent in low-nutrient environments like soil and oligotrophic marine environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6-C7, C80-C81 extrapolate from the experimental findings to natural bacterial communities. While the experimental evidence supports herd immunity in the laboratory system, the claims about natural communities (C6-C7, C81) are speculative. The inference about spatial structure (C80) is better supported by the experimental comparison between liquid and plate experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C87",
+      "C89"
+    ],
+    "result": "Herd immunity may lead to partial rather than complete selective sweeps, maintaining genetic diversity. It has potential to generate and maintain polymorphism at immunity loci. Observed CRISPR spacer polymorphisms may result from frequency-dependent selection arising from herd immunity rather than only from rapid independent spacer acquisition. Large bacterial population sizes make drift unlikely to eliminate this polymorphism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C84, C87, C89 present evolutionary implications of herd immunity. While the logic is sound and C84 cites MHC polymorphism as an analogy, these claims are largely speculative regarding bacterial populations. The experimental system was specifically designed to prevent frequency-dependent selection (growth arrest upon infection), so direct evidence for these evolutionary dynamics is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C17"
+    ],
+    "result": "Prior experimental research on herd immunity has focused mostly on mammals, birds, and invertebrates. Vaccination programs employing herd immunity principles led to smallpox eradication (1959-1977). Little work has focused on herd immunity in microbial systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12, C17 provide background context supported by appropriate citations. The claim about limited work on microbial herd immunity (C17) is supported by the absence of citations to such work and provides motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Bacteria have evolved multiple immune defense systems against phages, including early defenses (receptor blocking, extracellular matrix, competitive inhibitors) and systems that degrade phage DNA (RMS, argonaute-based RNAi-like, BREX, CRISPR-Cas). These DNA-degrading systems continue to remove phage particles from the environment, increasing their potential to provide herd immunity. CRISPR-Cas is unique as an adaptive system that can lead to immunity polymorphism. Phage reproductive rate depends on host physiology and the contact network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C32 provide essential background on bacterial immune systems, all supported by appropriate citations to the literature. The logical inference that DNA-degrading systems have greater potential for herd immunity (C28) is reasonable. These claims establish the biological context for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C85",
+      "C86",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Bacterial populations in nature are highly structured (biofilms, micro-colonies) and grow in spatially heterogeneous environments (soil, gut). CRISPR spacer polymorphism has been demonstrated in various bacterial and archaeal populations. Herd immunity might favor host-pathogen coexistence and can lead to cycling in pathogen incidence, as observed in measles and in computational studies of S. thermophilus-phage coevolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79, C85-C86, C90-C92 provide relevant background supported by appropriate citations. These establish that the conditions shown to facilitate herd immunity in the experiments (spatial structure, polymorphism) are relevant to natural bacterial populations, strengthening the broader significance of the findings.",
+    "result_type": "MINOR"
+  }
+]

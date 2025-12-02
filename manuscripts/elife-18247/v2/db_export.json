@@ -1,0 +1,1241 @@
+{
+  "submission": {
+    "id": "2ed3ad25-de67-4194-902f-1607a7fb480e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:02:42.249275Z",
+    "updated_at": "2025-12-01T20:02:42.249275Z"
+  },
+  "content": [
+    {
+      "id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "submission_id": "2ed3ad25-de67-4194-902f-1607a7fb480e",
+      "content_type": "manuscript",
+      "content_text": "# Locus coeruleus to basolateral amygdala noradrenergic projections promote anxiety-like behavior\n\n## Authors\n\n- Jordan G McCall<sup>1</sup> ([ORCID: 0000-0001-8295-0664](https://orcid.org/0000-0001-8295-0664)) \u2020\n- Edward R Siuda<sup>1</sup>\n- Dionnet L Bhatti<sup>1</sup> ([ORCID: 0000-0003-3031-2067](https://orcid.org/0000-0003-3031-2067))\n- Lamley A Lawson<sup>1</sup>\n- Zoe A McElligott<sup>5</sup> ([ORCID: 0000-0002-4717-5698](https://orcid.org/0000-0002-4717-5698))\n- Garret D Stuber<sup>5</sup> ([ORCID: 0000-0003-1730-4855](https://orcid.org/0000-0003-1730-4855))\n- Michael R Bruchas<sup>1</sup> ([ORCID: 0000-0003-4713-7816](https://orcid.org/0000-0003-4713-7816)) \u2020\n\n### Affiliations\n\n1. Department of Anesthesiology, Division of Basic Research Washington University School of Medicine St. Louis United States\n2. Washington University Pain Center Washington University School of Medicine St. Louis United States\n3. Department of Neuroscience Washington University School of Medicine St. Louis United States\n4. Division of Biology and Biomedical Sciences Washington University School of Medicine St. Louis United States\n5. Department of Psychiatry University of North Carolina Chapel Hill United States\n6. Bowles Center for Alcohol Studies University of North Carolina Chapel Hill United States\n7. Department of Cell Biology and Physiology University of North Carolina Chapel Hill United States\n8. Neuroscience Center University of North Carolina Chapel Hill United States\n9. Department of Biomedical Engineering Washington University St. Louis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIncreased tonic activity of locus coeruleus noradrenergic (LC-NE) neurons induces anxiety-like and aversive behavior. While some information is known about the afferent circuitry that endogenously drives this neural activity and behavior, the downstream receptors and anatomical projections that mediate these acute risk aversive behavioral states via the LC-NE system remain unresolved. Here we use a combination of retrograde tracing, fast-scan cyclic voltammetry, electrophysiology, and in vivo optogenetics with localized pharmacology to identify neural substrates downstream of increased tonic LC-NE activity in mice. We demonstrate that photostimulation of LC-NE fibers in the BLA evokes norepinephrine release in the basolateral amygdala (BLA), alters BLA neuronal activity, conditions aversion, and increases anxiety-like behavior. Additionally, we report that \u03b2-adrenergic receptors mediate the anxiety-like phenotype of increased NE release in the BLA. These studies begin to illustrate how the complex efferent system of the LC-NE system selectively mediates behavior through distinct receptor and projection-selective mechanisms.\n\n## Introduction\n\nThe locus coeruleus noradrenergic system (LC-NE) comprises a widespread projection network throughout the central nervous system capable of modulating a diverse range of behaviors including arousal, learning, pain modulation, and stress-induced negative affective states (Berridge and Waterhouse, 2003; Sara, 2009). Understanding the neural circuit basis for how this nearly ubiquitous neuromodulatory network exerts influence on negative affect is a critical step towards therapeutically targeting stress-induced neuropsychiatric disorders (Schwarz and Luo, 2015; Schwarz et al., 2015; Reyes et al., 2015; McCall et al., 2015; Arnsten et al., 2015; Kebschull et al., 2016). One particular efferent projection from the LC is to the basolateral amygdala (BLA).\u00a0The\u00a0BLA\u00a0is an important candidate anatomical substrate for the widely known role of norepinephrine (NE) in affective behaviors (Berridge and Waterhouse, 2003; Schwarz et al., 2015; Davis, 1992; Valentino and Aston-Jones, 2010; Robertson et al., 2016, 2013; Grissom and Bhatnagar, 2011; Siuda et al., 2015a, 2016; Plummer et al., 2015). The BLA is notable for integrating sensory information to encode and drive diverse and opposing affective behaviors including anxiety, fear, aversive, and reward behaviors (Kim et al., 2013; Stuber et al., 2011; Tye et al., 2011; Namburi et al., 2015; Gore et al., 2015; Belova et al., 2007; Beyeler et al., 2016; Wolff et al., 2014; Bermudez and Schultz, 2010; Bruchas et al., 2009; Knoll et al., 2011; Sugase-Miyamoto and Richmond, 2005; Crowley et al., 2016; Sears et al., 2013; Roozendaal et al., 2008, 2006; Miranda et al., 2007). Notable efforts to uncover the role of the BLA and adrenergic signaling in consolidation of fear memories have been reported (Sears et al., 2013; Roozendaal et al., 2008, 2006), as well as recent studies showing that acute stress activates BLA adrenergic receptors (agnostic to the source of NE) to promote anxiety and other stress-related behaviors (Miranda et al., 2007; Buffalari and Grace, 2009a, 2009b; Chang and Grace, 2013). Similarly acute stress paradigms cause selective activation of LC-NE neurons (McCall et al., 2015). Together, there have been significant efforts to examine how source-independent noradrenergic (importantly, there are multiple sources of NE innervating the BLA (Robertson et al., 2016; Plummer et al., 2015) signaling in the BLA can alter synaptic plasticity, fear encoding, and memory consolidation, yet few studies have directly examined how the neuromodulatory LC-NE system utilizes BLA output to alter acute risk averse behaviors, such as anxiety (Grissom and Bhatnagar, 2011; Buffalari and Grace, 2009a, 2009b, 2007).\n\nDownstream and independent of this projection, recent studies have demonstrated that direct activation of both basolateral amygdala (BLA) cell bodies or their projections is both anxiogenic and socially aversive (Siuda et al., 2015a, 2016; Tye et al., 2011; Felix-Ortiz et al., 2013, 2016; Felix-Ortiz and Tye, 2014). Furthermore, it has also been demonstrated that increasing BLA excitatory output through G\u03b1s G-protein activation, and more specifically, \u03b2-adrenergic receptor signaling causes acute social anxiety (Siuda et al., 2016). Separately, noradrenergic cell firing in the LC has been shown to increase in the context of stressful stimuli (McCall et al., 2015; Abercrombie and Jacobs, 1987a, 1987b; Aston-Jones et al., 1999; Mana and Grace, 1997). While the anatomical projections from the LC and their cell types have been studied for several years, the precise mechanisms by which fibers from the LC can directly influence BLA function to promote negative affective behaviors are not understood. Specifically, how LC-BLA projections generate affective behavioral responses through specific receptor systems and modulation of cell activity is unknown.\n\nTo determine the role of locus coeruleus noradrenergic influence on BLA function and negative affective behavior we optogenetically manipulated LC-NE inputs into the BLA, directly testing whether NE is released from LC terminals into the BLA and whether this terminal stimulation can drive anxiety-like and aversive behavioral responses. We demonstrate that photostimulation of LC projections to the basolateral amygdala releases NE and that this photostimulation evokes downstream modulation of neuronal activity in BLA neurons that project to anxiogenic brain regions. Stimulation of these fibers is sufficient to produce conditioned aversion and the stimulation-induced increased noradrenergic tone is sufficient to produce anxiety-like behavior mediated by local \u03b2-adrenergic receptor activity (\u03b2-ARs) in the BLA. Taken together, we report a previously undefined role for LC-BLA projections in mediating negative affective behavior through activation of \u03b2-ARs.\n\n## Results\n\n### Genetic and anatomical isolation of BLA-projection LC-NE neurons\n\nOur previous work demonstrated that increased tonic LC-NE activity induces anxiety-like and aversive behavioral responses (McCall et al., 2015; Siuda et al., 2015a), we next sought to test whether these same behaviors can be generated by stimulating LC-NE fibers at localized projections in the BLA. To examine the potential sources of NE from the LC to the BLA we identified and isolated the projection using two distinct retrograde tracing approaches. First, we injected the tracer Fluorogold into the BLA of wild-type mice (Figure 1A). Consistent with previous studies, this non-selective retrograde tracing approach revealed known inputs into the BLA from the LC (Robertson et al., 2016; Asan, 1998; Fallon et al., 1978) (Figure 1B). We next used a dual injection strategy to anatomically isolate BLA-projecting LC-NE+ neurons. To do so, we used mice expressing Cre under the promoter for tyrosine hydroxylase, the rate-limiting enzyme for catecholamine synthesis (ThIRES-Cre mice)(Savitt et al., 2005). Here, we injected a red retrobead tracer into the BLA and the green-labeled adeno-associated virus, AAV5-DIO-Ef1\u03b1-ChR2(H134)-eYFP, into the LC (ThIRES-Cre::LC-BLA:ChR2; Figure 1C\u00a0and\u00a0D). In these animals, we identified BLA-projecting Th+ LC neurons with the presence of both fluorophores in the same cells (Figure 1D). Next, to examine Th+ terminal innervation of the BLA, we injected the cell-filling, Cre-dependent reporter AAV5-DIO-Ef1\u03b1-eYFP in the LC of ThIRES-Cre mice (ThIRES-Cre::LC-BLA:eYFP) (Figure 1E). Here we clearly observed labeled LC neurons (Figure 1F\u00a0and\u00a0G) and their projection fibers terminating in the BLA (Figure 1H). To further corroborate these findings, we examined recent projection experiments performed by the Allen Brain Institute Mouse Connectivity (ABIMC) project that also genetically and anatomically isolate this projection (Oh et al., 2014). In three different experiments from three different genetic models, we observed LC-BLA projections that are qualitatively similar to our own observations (Figure 1\u2014figure supplement 1A\u2013L). We present these findings here for clarity and ease of independent comparison, but this work was performed by ABIMC. Together, these anatomical studies identify a discrete projection of Th+ neurons from the LC that potentially release endogenous NE into the BLA.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/18247/elife-18247-fig1-v2.jpg)\n\n**Figure 1.:** (A) Cartoon depicting fluorgold tracing strategy. (B) Representative image (selected from three injected mice) shows robust retrograde labeling of the LC from injection in the BLA (green = pseudocolored Fluorgold, tyrosine hydroxylase = red). Arrowhead indicates example co-localization. Scale bar\u00a0=\u00a0100 \u00b5m. 4V = 4th ventricle. The TH- cells dorsal and ventral to the LC are likely part of the medial parabrachial nucleus which has previously identified projections to the BLA (Saper and Loewy, 1980). (C) Cartoon depicting dual injection tracing strategy for CTB-594 and DIO-ChR2-eYFP. (D) Representative images (selected from three injected mice) shows retrograde labeling in LC of red retrobeads and anterograde labeling of TH+ cells (green) (Nissl=blue). Arrowhead indicates example co-localization. Scale bar\u00a0=\u00a0100 \u00b5m (E) Cartoon depicting anterograde tracing strategy. (F\u2013H) Coronal images depict robust eYFP (yellow) labeling in the LC (F and G) and BLA (H) of the same mouse (scale bars = (F) 50 \u00b5m, (G) 10 \u00b5m, (H) 20 \u00b5m. Inset (F), tyrosine hydroxylase = red, scale bar\u00a0=\u00a025 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18247/elife-18247-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Three experiments from the Allen Institute depict converging LC-BLA projections across targeting strategies. (A) Cartoon depicting cell-type selective anterograde tracing strategy employed by the Allen Brain Institute for Dopamine beta hydroxylase-Cre (DbhCre) mice (Oh et al., 2014). (B\u2013D) Serial two-photon tomography images depict robust EGFP labeling in the LC (B) and BLA (C and D) of the same mouse. Dashed box in C indicates boundary of D. (E) Cartoon depicting non-cell-type-selective anterograde tracing strategy employed by the Allen Brain Institute for C57Bl/6 mice (Oh et al., 2014). (F\u2013H) Serial two-photon tomography images depict robust EGFP labeling in the LC and surrounding areas (F) and BLA (G and H) of the same mouse. Dashed box in G indicates boundary of H). (I) Cartoon depicting cell-type selective anterograde tracing strategy employed by the Allen Brain Institute for GalaninCre mice (Oh et al., 2014). (J\u2013L) Serial two-photon tomography images depict robust EGFP labeling in the LC (J) and BLA (K and L) of the same mouse. Dashed box in K indicates boundary of L. Background color is result of background fluorescence across channels. Image clarity is as maintained in the ABIMC database for K and L.\n\n### Optogenetic activation of LC-BLA terminals releases norepinephrine into the BLA\n\nUsing the same viral optogenetic strategy as above, we examined whether photostimulation of ThIRES-Cre::LC-BLA:ChR2 projections resulted in NE release at terminals. We validated functional ChR2 expression using whole-cell current clamp recordings of Th+ LC neurons. As, we previously demonstrated (McCall et al., 2015), this targeting method and photostimulation protocol was sufficient to generate action potentials at the LC cell bodies (Figure 2A). Next, we used a carbon fiber microelectrode (CFME) to perform fast-scan cyclic voltammetry (FSCV) in the BLA during LC-NE terminal stimulation. Using the extended waveform method (see methods) in acute brain slices of ThIRES-Cre::LC-BLA:ChR2 animals, we stimulated slices with 30 5 ms light pulses from a 473 nm LED, at 10 Hz (Figure 2B). Photostimulation of BLA slices, produced characteristic cyclic voltammograms and uptake consistent with NE (McElligott et al., 2013; Herr et al., 2012) (t1/2\u00a0=\u00a02.0\u00a0\u00b1\u00a00.2 s, Figure 2C\u00a0and\u00a0D). Following a 20 min baseline, 1 \u00b5M reserpine (an inhibitor of vesicular monoamine transporters) was perfused on the slices to deplete catecholamines from the axon terminals (Dahlstroem et al., 1965). Reserpine treatment significantly attenuated the measured oxidative currents (31.6 \u00b1 1.0% of baseline, Figure 2E\u00a0and\u00a0F) further confirming optically-evoked catecholamine release in this isolated ThIRES-Cre::LC-BLA:ChR2 projection. These findings suggest that optogenetic manipulation of LC-BLA terminals causes release of endogenous NE from the LC into the BLA.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/18247/elife-18247-fig2-v2.jpg)\n\n**Figure 2.:** (A) LC neuron firing reliably to 10 Hz optical stimulation (CC=whole cell current clamp). (B) Fast scan cyclic voltammetry (FSCV) schematic. (C\u2013D) Oxidative and reductive currents (scale bar 2 s by 0.4 nA), with representative cyclic voltammograms (inset) and representative color plots (below) in response to photostimulation are attenuated by reserpine (1 \u03bcM). Color plots for baseline and after reserpine (1 \u00b5M): Files were collected over 15 s (X-axis) where the carbon fiber microelectrode was ramped with a triangular waveform from \u22120.4V to 1.3V and back to \u22120.4V at 400 V/S (Y-axis) and sampled at 10 Hz. 10 Hz, 473 nm blue LED stimulation onset at 2 s. Oxidative currents (nA) are positive in direction and reductive currents are negative (see color coded scale bar on right). (E) Attenuation in NE oxidative current in response to reserpine (1 \u03bcM) n\u00a0=\u00a03 pairs; mean \u00b1 S.E.M). (F) Average of first 20 min and last 15 min in (E) (Data represented as mean \u00b1 SEM, Paired Student\u2019s t-tests to baseline, Mean difference\u00a0=\u00a068.56, t(2) = 18.75, **p=0.0028, 95% CI [52.82 to 84.29]).\n\n### In vivo photostimulation of LC-BLA terminals modulates BLA activity\n\nBLA neurons have well reported responses to exogenous application of NE (Buffalari and Grace, 2007), but their response to endogenous NE release, explicitly from the LC, has not been previously defined. We next determined whether the optically-evoked endogenous catecholamine release would mimic the responses of BLA neurons to exogenous NE. To do so, we examined BLA single-unit activity in ThIRES-Cre::LC-BLA:ChR2 mice using 16-channel microelectrode arrays coupled to a fiber optic implant (optrode arrays) (McCall et al., 2015; Sparta et al., 2011). These optrode arrays were used to isolate and record BLA single-unit activity before, during, and after photostimulation of ThIRES-Cre::LC-BLA:ChR2 projections (473 nm, 5 Hz, 10 ms pulse width) (Figure 3A\u00a0and\u00a0B). In these experiments photostimulation of ThIRES-Cre::LC-BLA:ChR2 terminals caused an increase in firing frequency in 21.4% of units recorded in the BLA (Figure 3C\u2013E,H; Figure 3\u2014figure supplement 1A), while some cells (9.5%) displayed inhibitory responses (Figure 3D,F,I; Figure 3\u2014figure supplement 1B). The remaining neurons (69.0%) appeared to not change in response to photostimulation (Figure 3D,G,J; Figure 3\u2014figure supplement 1C). Furthermore, in a subset of cells blindly selected (without knowledge of the increase/decrease/static response to photostimulation) following the 5 Hz recordings, we also observed similar increases in firing rates to constant photostimulation, where the overall population of neurons increased firing during stimulation (Figure 3\u2014figure supplement 1D\u00a0and\u00a0E). In cases where the firing rate increased, the mean \u00b1 SD latency to fire following each light pulse was 129.3\u00a0\u00b1\u00a0108.9 ms, suggesting that this change is not due to fast, monosynaptic neurotransmission, but likely a polysynaptic and/or neuromodulatory effect (Figure 3K). Likewise, in cases where the firing rate decreased the mean latency was slower at 172.6\u00a0\u00b1\u00a077.01 ms, and neither case was significantly different to neurons whose firing rate did not change following photostimulation (260.4\u00a0\u00b1\u00a0165.7) (Figure 3K).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/18247/elife-18247-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic illustrating single-unit extracellular recording paradigm of BLA neurons modulated by ChR2-expressing LC-BLA terminals. (B) Representative principal component analysis plot showing the first two principal components with clear clustering of a single unit (maroon) from the noise (grey). Inset shows the waveform and spikes making up the isolated unit. Y-scale is 150 microvolts and x-scale is 500 ms. (C) Recordings from eight hemispheres of six Th-CreLC-BLA:ChR2 mice show the distribution of firing rates present in BLA neurons prior to and following LC-BLA terminal photostimulation (473 nm, 5 Hz, 3 min). (D) Average normalized firing rate of neurons that increase (maroon), decrease (grey), or do not change (black) firing rate in response to photostimulation. Inset, shows number of neurons in each group. Representative histograms (1 s bins) of isolated single-units showing increase (E) or decrease (F), or no change (G) in neuronal firing in response to photostimulation (473 nm, 5 Hz, 3 min). Z-scored population responses of neurons showing increase (H) or decrease (I), or no change (J) in neuronal firing in response to photostimulation. (K) Response latency following onset of photostimulation for cells that did not alter firing (=) (n\u00a0=\u00a029), increased firing (+) (n\u00a0=\u00a09), or decreased firing (-) (n\u00a0=\u00a04). (Data represented as mean \u00b1 SD). (L) The same cells sorted by baseline firing rate. (Data represented as mean \u00b1 SEM. Kruskal-Wallis test one-way ANOVA for non-parametric data with Dunn\u2019s multiple comparisons test, Kruskal-Wallis statistic\u00a0=\u00a06.536, p=0.0381; + vs. \u2013 Mean rank difference\u00a0=\u00a0\u221218.75, adjusted *p=0.0329; + vs. + Mean rank difference\u00a0=\u00a0\u22126.828, adjusted p=0.4341; - vs. = Mean rank difference\u00a0=\u00a011.92, adjusted p=0.2053.) (M) Waveform similarity, within group distribution of linear correlations. Inset, every average waveform for each recorded unit separated by response profile (= black, + maroon, - grey). (N\u2013P) Bursting profiles for each recorded neuron. (N) Number of bursts per second. (Data represented as mean \u00b1 SEM). (O) Mean firing rate within bursts for each neuron. (Data represented as mean \u00b1 SEM). (P) Proportion of recorded spikes that occurred during bursts. (Data represented as mean \u00b1 SEM).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18247/elife-18247-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013C) The same data shown in Figure 3C, but separated to clearly show which neurons were classified as increasing (A), decreasing (B), or no change (C). Please note that while some units in (C) appear to increase or decrease, these did not meet the criteria to be classified as increasing or decreasing. (D) Representative histogram of isolated single-unit shows an increase in neuronal firing in response to constant photostimulation (473, constant light, 20 s). (E) Neuronal firing rate increases in response to 20 s (473 nm, constant light) photostimulation and returns to baseline values in the absence of light (Data represented as mean \u00b1 SEM, n\u00a0=\u00a010, One-Way Repeated Measures ANOVA followed by Bonferroni post hoc comparison test, F2,9\u00a0=\u00a014.62, p=0.0002; OFF1 vs. ON Mean difference\u00a0=\u00a00.7673, t(2) = 3.70, **p<0.01 95% CI [\u22121.31 to \u221295.80]; OFF1 vs. OFF2 Mean difference\u00a0=\u00a00.3234, t(2) = 1.56, p>0.05, 95% CI [\u22120.22 to 0.87]; ON vs. OFF2 Mean difference\u00a0=\u00a01.091, t(2) = 5.26, ***p<0.001 95% CI [0.54 to - to 1.63]).\n\nWe next sought to determine whether these differences in neuronal response arise from distinct subsets of BLA neurons. To do so, we examined the baseline firing rate, waveforms, and bursting properties of recorded units. Neurons that increase firing in response to LC-BA terminal stimulation have a significantly lower mean basal firing rate (2.194\u00a0\u00b1\u00a02.22 SD) than those that decrease firing (13.06\u00a0\u00b1\u00a011.82 SD), however neither group is distinguishable from non-responsive neurons (Figure 3L). To quantifiably assess the waveform shapes of the recorded neurons, we calculated the average waveform for each neuron and performed a linear correlation on these values within each group of neurons. These analyses demonstrate that all neurons that increase firing to LC-BLA photostimulation have an r value greater than 0.835 and all neurons that decrease have an r value above 0.820, while the population of neurons that did not significantly respond to photostimulation have an r above 0.515. These results indicate that neurons that do not respond to photostimulation are less internally similar, while the excited and inhibited cells are more similar within groups, suggesting that these modulated neurons are more likely to each be part of single class of neurons (Figure 3M). Finally, we examined the bursting properties of the recorded neurons. While most neurons exhibited some bursting properties, no differences were found between groups in terms of frequency of bursting (Figure 3N), mean firing rate during bursts (Figure 3O), or the percentage of spikes from the recording sessions that occurred within a burst (Figure 3P). Together, these heterogeneous firing properties are consistent with previous studies using iontophoresis of NE into the BLA, and further highlight the complex pharmacological and circuit activity that NE modulates within the BLA (Buffalari and Grace, 2007; Ferry et al., 1997; Huang et al., 1996). These results suggest that photostimulation of LC terminals in the BLA causes varied neuronal firing rate responses, with the majority of photostimulation-responsive neurons increasing firing in response to the LC-NE terminal photostimulation.\n\n### LC-BLA terminal stimulation biases activation towards anxiety-promoting BLA neurons\n\nThe BLA is thought to be a heterogeneous hub for emotional processing containing separable populations for regulating either positive or negative affect. Recent studies have suggested that these opposing populations are distinct in either their projection target or their cell-type (Stuber et al., 2011; Namburi et al., 2015; Beyeler et al., 2016; Felix-Ortiz et al., 2016; Burgos-Robles et al., 2017; Kim et al., 2016, 2017; Correia et al., 2016). Given the role of BLA adrenergic receptors in modulating anxiety-like and aversion behaviors (Siuda et al., 2015a, 2016), we hypothesized that LC-NE innervation of BLA neurons may preferentially bias activation of neurons that promote anxiety-like behavior such as the ventral hippocampus (vHPC)- and central amygdala (CeA)- projecting BLA neurons as opposed to projections that promote positive affect and anxiolysis such as nucleus accumbens (NAc)-projecting BLA neurons. Using a combination of retrograde viral tracing, immunohistochemistry, and optogenetic stimulation in Th-CreLC-BLA:ChR2 mice, we assessed these potential tri-synaptic circuits that may underlie anxiety-like behaviors (Figure 4A). Photostimulation of LC-NE terminals in the BLA (5 Hz, 10 ms) significantly increases the number of cFos-expressing BLA neurons in ThIRES-Cre::LC-BLA:ChR2 animals compared to ChR2-lacking (Figure 4B; Figure 4\u2014figure supplement 1A\u2013D) and contralateral BLA controls following photostimulation (Figure 4\u2014figure supplement 1E). To assess whether the cFos+ BLA neurons resulting from LC-NE terminal activation were biased toward a particular class of BLA projection neurons we next repeated the experiment with the retrograde tracer Cholera toxin subunit B (CTB) injected into BLA projection regions (vHPC, CeA, and NAc). These immunohistochemistry studies reveal that the cFos present following LC-NE terminal activation in the BLA, overlaps significantly more with vHPC- and CeA-targeted compared to NAc-targeted CTB in the BLA (Figure 4C\u2013G; Figure 4\u2014figure supplement 1F\u2013H). These results suggest that LC-NE terminals in the BLA preferentially activate vHPC- and CeA- projecting BLA neurons thought to be involved in modulating negative valence and affective behaviors.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/18247/elife-18247-fig4-v2.jpg)\n\n**Figure 4.:** (A) Diagram of viral and optogenetic strategy. (B) 5 Hz photostimulation increases cFos expression within the BLA in ThIRES-Cre::LC-BLA:ChR2+ animals compared to ThIRES-Cre::LC-BLA:ChR2- controls (Data represented as mean \u00b1 SEM, n\u00a0=\u00a09 ChR2, n\u00a0=\u00a04 Ctrl; average of 3 sections/mouse; Student\u2019s t-test, Mean difference\u00a0=\u00a019.17, t(10) = 4.005, **p=0.0040, 95% CI [\u221235.47 to \u221210.11). (C) 5 Hz photostimulation increases cFos expression significantly more in BLA neurons projecting to the vHPC and CeA compared to NAc in ThIRES-Cre::LC-BLA:ChR2 animals (Data represented as mean \u00b1 SEM, n\u00a0=\u00a09 vHPCCTB, n\u00a0=\u00a06 CeACTB, n\u00a0=\u00a09 CeACTB, 3 sections per mouse; One-Way ANOVA, Bonferroni\u2019s Multiple Comparison Test, F2,20\u00a0=\u00a07.199, **p=0.0044; ThIRES-Cre::LC-BLA:ChR2:CTB-vHPC vs. ThIRES-Cre::LC-BLA:ChR2:CTB-NAc Mean difference\u00a0=\u00a012.95, t(20) = 3.585, **p<0.01 95% CI [3.511 to 22.39]; ThIRES-Cre::LC-BLA:ChR2:CTB-CeA vs. ThIRES-Cre::LC-BLA:ChR2:CTB-NAc. Mean difference\u00a0=\u00a011.25, t(20) = 2.802, *p<0.05 95% CI [0.7605 to 21.74]. Representative images of the BLA expressing cFos after 5 Hz photostimulation in (D) ThIRES-Cre::LC-BLA:ChR2 injected with CTB in NAc, (E) vHPC, or (F) CeA. Scale bar, 100 \u00b5m. (G) Confocal images showing colocalization of CTB and cFos after 5 Hz photostimulation in the NAc, vHPC, and CeA. Scale bar, 50 \u00b5m.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18247/elife-18247-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Representative images of the BLA expressing cFos after 5 Hz photostimulation in (A and C) ThIRES-Cre::LC-BLA:ChR2- and (B and D) ThIRES-Cre::LC-BLA:ChR2+. Scale bars, 100 \u00b5m. (D) 5 Hz photostimulation increases cFos expression within the BLA of ThIRES-Cre::LC-BLA:ChR2 animals relative to its contralateral side (One-sample t-test, theoretical mean of 1.0 ratio, Actual mean\u00a0=\u00a03.755, ***p<0.0001, t(22) = 8.923, 95% CI [2.115 to 3.395). (F\u2013G) Representative images of injection sites of CTB in the (F) NAc, (G) vHPC, (H) CeA. Scale bars, 500 \u00b5m.\n\n### LC-BLA terminal stimulation is sufficient to elicit a conditioned place aversion\n\nAfter identifying the LC terminals to the BLA as a projecting source of NE, that photostimulation of these terminals are capable of altering BLA activity, and that this photostimulation appears to bias BLA activation towards circuits involved in negative affect, we next tested whether this same pattern of terminal stimulation can drive an immediate negative valence. Fiber optics were implanted at LC-NE terminal sites in the BLA of ThIRES-Cre mice with AAV5-DIO-Ef1\u03b1-ChR2(H134)-eYFP previously injected into the LC (ThIRES-Cre::LC-BLA:ChR2) (Figure 5A, Figure 5\u2014figure supplement 1A). Surprisingly, photostimulation of ThIRES-Cre::LC-BLA:ChR2 terminals using the parameters that induce a real-time place aversion at LC-NE cell bodies (McCall et al., 2015) failed to elicit a real-time aversion in ThIRES-Cre::LC-BLA:ChR2 animals (Figure 5B\u00a0and\u00a0C). There was no significant change in place testing behavior (Figure 5C) or locomotor behavior (Figure 5D) within animals or compared to ThIRES-Cre::LC-BLA:eYFP controls at either a physiologically-relevant 5 Hz or an over-driven 60 Hz photostimulation. This finding is particularly interesting in light of previous systemic pharmacology experiments (McCall et al., 2015) that suggested the immediate negative valence induced by LC-NE stimulation is mediated by \u03b11 adrenergic receptor activation. These results indicate that the real-time negative valence of LC-NE stimulation is likely produced via another LC-NE projection and one that is\u00a0not recruited through antidromic stimulation of BLA-projecting LC neurons.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/18247/elife-18247-fig5-v2.jpg)\n\n**Figure 5.:** (A) Cartoon of viral and fiber optic delivery strategy and calendar of real-time place testing studies. (B) Representative traces of behavior at different frequencies. (C) Frequency response of RTPT and (D) locomotor activity at 5 and 60 Hz. Data represented as mean \u00b1 SEM, n\u00a0=\u00a04 eYFP, 5 ChR2. (E) Conditioned place aversion (CPA) behavioral calendar. (F) Representative CPA traces. (G) ThIRES-Cre::LC-BLA:ChR2 mice (maroon; n\u00a0=\u00a09) show a conditioned aversive response to chamber paired with photostimulation compared to ThIRES-Cre::LC-BLA:eYFP controls (grey; n\u00a0=\u00a08) (Data represented as mean \u00b1 SEM, Student\u2019s t-test, Mean difference\u00a0=\u00a0131.3, t(15) = 2.39, *p=0.0303, 95% CI [14.32 to 248.4) following two days of conditioning with (H) no significant differences in locomotor behavior during conditioning day 1 (CD1) and or conditioning day 2 (CD2) in CPA.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18247/elife-18247-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Fiber optic tip placements for the RTPA experiment. (B) Fiber optic tip placements for the CPA experiment. Animals were excluded if the fiber tip ended\u00a0>1 mm dorsal or any caused significant lesion to the BLA.\n\nIt is also possible that the neuromodulatory effects on this circuit require a long-term associative memory component compared to fast-acting, acute activation of similar pathways (Kim et al., 2013; Namburi et al., 2015; Haubensak et al., 2010). To directly test whether long-term learned associations are produced by ThIRES-Cre::LC-BLA:ChR2 stimulation, we employed a Pavlovian conditioned place aversion (CPA) assay similar to our previous work (McCall et al., 2015; Siuda et al., 2015a; Al-Hasani et al., 2013; Siuda et al., 2015b) (Figure 5E, Figure 5\u2014figure supplement 1B). When allowed to freely explore two contextually-differentiated chambers, following two conditioning days of photostimulation of ThIRES-Cre::LC-BLA:ChR2 terminals (5 Hz, 10 ms), animals expressing ChR2-eYFP spent significantly less time in the context that was previously paired with photostimulation compared to the ThIRES-Cre::LC-BLA:eYFP controls (Figure 5F\u00a0and\u00a0G). Neither group of mice showed significant changes in locomotor activity before, during, or after conditioning (Figure 5H). Together, these results suggest that there is a learned negative association produced by photostimulation of Th+ fibers in the BLA. This association is capable of producing avoidance from contexts in which the photostimulation previously occurred.\n\n### Optogenetic targeting of LC-NE projections to the BLA promotes anxiety-like behavior through beta-adrenergic receptor activity\n\nFollowing the observation that stimulation of LC-BLA fibers alone is sufficient to cause a conditioned aversion, we next tested whether the same stimulation of these terminals would drive acute anxiety-like behaviors similar to those we recently reported in response to direct LC-NE cell body activation. Photostimulation of ThIRES-Cre::LC-BLA:ChR2 terminals using parameters that induce anxiety-like behavior at LC-NE cell bodies (McCall et al., 2015) resulted in a significant decrease in time spent in the center of the open field (OFT) with no significant change in general locomotor activity (Figure 6A\u2013D, Figure 6\u2014figure supplement 1A). These experiments suggest that stimulation of only the subset of LC-NE fibers that project to the BLA is sufficient to induce anxiety-like behaviors.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/18247/elife-18247-fig6-v2.jpg)\n\n**Figure 6.:** (A) Calendar of OFT studies. (B) Representative heat maps of activity during OFT. (C) 5 Hz photostimulation causes an anxiety-like phenotype in OFT of ThIRES-Cre::LC-BLA:ChR2 animals compared to ThIRES-Cre::LC-BLA:eYFP controls (Data represented as mean \u00b1 SEM, n\u00a0=\u00a010 eYFP, 11 ChR2; Student\u2019s t-test, Mean difference\u00a0=\u00a0116.9, t(19) = 3.46, **p=0.0026, 95% CI [46.20 to 187.5) with (D) no change in locomotor activity (Data represented as mean \u00b1 SEM). (E) Cartoon of viral, cannula, and fiber optic delivery strategy and (F) calendar of EZM behavior. (G) 5 Hz photostimulation causes an anxiety-like phenotype in EZM of ThIRES-Cre::LC-BLA:ChR2 animals compared to ThIRES-Cre::LC-BLA:eYFP controls, which is reversed by intra-BLA propranolol pretreatment (Data represented as mean \u00b1 SEM, n\u00a0=\u00a011 eYFP + Vehicle, n\u00a0=\u00a09 ChR2 + Vehicle, n\u00a0=\u00a07 eYFP + Propranolol, n\u00a0=\u00a08 ChR2 + Propranolol; One-Way ANOVA, Bonferroni\u2019s Multiple Comparison Test, F3,31\u00a0=\u00a08.95, p=0.0002; ThIRES-Cre::LC-BLA:eYFP+Vehicle vs. ThIRES-Cre::LC-BLA:ChR2+Vehicle. Mean difference\u00a0=\u00a014.74, t(2) = 3.94, **p<0.01 95% CI [4.21 to 25.27]; ThIRES-Cre::LC-BLA:ChR2+Vehicle vs. ThIRES-Cre::LC-BLA:ChR2+Propranolol. Mean difference\u00a0=\u00a016.93, t(2) = 4.19, **p<0.01 95% CI [5.46 to 28.31]; ThIRES-Cre::LC-BLA:eYFP+Propranolol vs. ThIRES-Cre::LC-BLA:ChR2+Vehicle. Mean difference\u00a0=\u00a018.37, t(2) = 4.39, ***p<0.001 95% CI [6.57 to 30.18). (H) Representative heat maps of activity during EZM.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18247/elife-18247-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Fiber optic tip placements for the OFT experiment. Animals were excluded if the fiber tip ended\u00a0>1 mm dorsal or any caused significant lesion to the BLA. (B) Cannula and fiber optic tip placements for the EZM experiments with ThIRES-Cre::LC-BLA:ChR2 and ThIRES-Cre::LC-BLA:eYFP animals. Animals were excluded if the fiber tip ended\u00a0>1 mm dorsal or any caused significant lesion to the BLA. Additionally, cannulated mice were excluded if the final injection placement appeared to be\u00a0>0.5 mm from the BLA. For clarity, only hits of included mice for this experiment are shown.\n\nOur prior work revealed that systemic antagonism of \u03b2-ARs blocks the anxiogenic, but not the real-time aversive, components of tonic LC-NE stimulation (McCall et al., 2015). We next tested whether \u03b2-AR activity in the BLA is necessary for LC-NE mediated anxiogenesis. To do so we implanted a combined fiberoptic-fluid cannula into the BLA and delivered either an artificial cerebrospinal fluid vehicle or the non-selective \u03b2-AR antagonist, Propranolol (1 \u00b5g)(Roozendaal et al., 2008, 2006; Chang and Grace, 2013; Shanks et al., 1966), prior to photostimulation (Figure 6E\u2013H, Figure 6\u2014figure supplement 1B). The same photostimulation paradigm that was anxiogenic in the OFT, caused a decrease in time spent in the open area of the elevated zero maze (EZM) of ChR2+ animals that received vehicle, compared to YFP-expressing, vehicle controls (Figure 6G\u00a0and\u00a0H). Importantly, when we locally antagonized \u03b2-ARs directly in the BLA prior to photostimulation, anxiogenesis was completely blocked in ChR2+ animals with no effect on eYFP-expressing, propranolol controls (Figure 6G\u00a0and\u00a0H). These findings suggest that local \u03b2-AR activation by NE release from LC-BLA terminals is the substrate responsible for the photostimulation-induced anxiety-like behavior.\n\n## Discussion\n\nWe aimed to dissect the functional role of LC to BLA inputs, and to determine the specific receptors within the BLA that mediate LC-NE influenced anxiety-like behavior in the region. Taken together, these data suggest that photostimulation of LC-BLA projections releases NE into the BLA and this same photostimulation alters BLA firing. This altered firing appears to preferentially increase activity in BLA neurons that project to area known to modulate negative affect such as the CeA and vHPC. In behaving animals, this stimulation of LC terminals in the BLA facilitates a conditioned aversion and acute anxiety-like behaviors. Importantly, the experiments here cannot determine whether the observed changes in BLA unit activity and the conditioned place aversion are mediated directly by NE release from LC terminals. Instead, these affects could be generated through antidromic stimulation of LC cell bodies (and their diverging efferent projections) or through plastic changes resulting from the repeated and long-term stimulation protocols used during the two 30 min conditioning sessions. However, using local, site-specific pharmacological blockade, we identified that \u03b2-ARs within the BLA are necessary for the anxiety-like component of this behavior. These data provide a critical framework for understanding the downstream influence of the LC-NE system in the BLA as it relates to anxiety-like behavioral states.\n\nThe BLA is a crucial component in the neural circuitry of negative affective behaviors (Davis, 1992; Davidson, 2002). Activation of BLA cell bodies and their projections can bidirectionally mediate anxiety-like behavior and fear encoding (Davis, 1992; Kim et al., 2013; Tye et al., 2011; Namburi et al., 2015; Beyeler et al., 2016; Wolff et al., 2014; Knoll et al., 2011; Crowley et al., 2016; Sears et al., 2013; Roozendaal et al., 2006; Felix-Ortiz et al., 2013; Debiec and Ledoux, 2004), but how this behavioral control is altered by neuromodulators is not well understood. NE is increased in the BLA following stressful events (Galvez et al., 1996; Hatfield et al., 1999). The BLA receives noradrenergic input from the LC (Asan, 1998; Fallon et al., 1978) as well the Hoxb1+ neuronal populations in the lower brainstem and NTS (Robertson et al., 2016). Despite the LC input being less dense than other NE input (Plummer et al., 2015), here we directly show that molecularly-defined Th+ positive fibers from the LC release catecholamines into the amygdala and alter behavior. Previous studies have demonstrated that noradrenergic tonic cell firing in the LC increases following stressful stimuli (McCall et al., 2015; Abercrombie and Jacobs, 1987a, 1987b; Aston-Jones et al., 1999; Mana and Grace, 1997). We now demonstrate that selective activation of Th+ LC terminals from these neurons modulates BLA neuronal activity in vivo. Despite a diversity of recorded responses, these findings align with prior studies suggesting neurons that increase firing to LC-BLA photostimulation have a higher probability of being BLA projection neurons, while those that decrease have a higher probability of being BLA interneurons (Figure 3L) (Likhtik et al., 2006). Therefore, it seems that it is reasonable that LC-BLA modulation might be selectively increasing activity of BLA projection neurons, though further studies using phototagging or imaging BLA neurons is required. Though it is well established that activation of \u03b2-ARs increases BLA activity (Buffalari and Grace, 2007; Huang et al., 1996; Pu et al., 2009), we cannot conclude that this is the only mechanism by which LC-BLA fibers modulate BLA activity. Indeed, it is likely that the diversity of neuronal responses we observed are mediated through different receptors systems (Buffalari and Grace, 2007) and/or local or distal polysynaptic recurrent circuitry (Wolff et al., 2014; Rosenkranz and Grace, 2002, 1999). Furthermore, while we do not know the genetic identity or projection targets of the BLA neurons from which we recorded, it is possible that NE serves to preferentially shift BLA activity in neurons that favor anxiety-like behavior (i.e. those that project to the ventral hippocampus, prefrontal cortex, or central amygdala) rather those that favor positive affect and anxiolysis (i.e. projections to the nucleus accumbens and bed nucleus of the stria terminalis)(Kim et al., 2013; Stuber et al., 2011; Tye et al., 2011; Namburi et al., 2015; Beyeler et al., 2016; Felix-Ortiz et al., 2013, 2016; Felix-Ortiz and Tye, 2014). We attempted to begin to address this question using a retrograde labeling strategy combined with immunohistochemistry for cFos. Our results suggest that there is selective modulation of BLA projections neurons. The combined retrograde labeling and photostimulation studies indicate that, cFos, a secondary marker for neuronal excitation (Madabhushi et al., 2015), is selectively increased in the CeA- and vHPC-projecting BLA neurons (Figure 4). Furthermore, our recent reports demonstrate that increasing the activity of CaMKII+ BLA neurons via chemogenetic or optogenetic activation of G\u03b1s-signaling also produces an anxiogenic-like state, suggesting that excitatory cells possibly mediate the LC-BLA noradrenergic effect (Siuda et al., 2015a, 2016). However, further work will be necessary to understand the cell-type and projection-specific relationship between LC-NE modulation of BLA activity and its ability to drive negative affective behavior through downstream circuits and receptor systems.\n\nAdditionally, we show that photostimulation at the site of LC terminals in the BLA conditions aversive behavior. However, it remains to be seen whether this conditioned aversive behavior is mediated locally in the BLA by NE. This effect may could be due to factors outside of the BLA and distinct from NE release such as antidromic activity at the LC cell bodies or from prolonged changes to LC circuit activity elsewhere that result from long-term, repeated optogenetic stimulation. However, a similar photostimulation paradigm increases anxiety-like behavior that is blocked by local antagonism of \u03b2-ARs in the BLA. It is well established that prolonged NE release in the BLA modulates memory storage through \u03b2-AR-mediated cAMP production and this effect, in turn, is regulated by \u03b11-AR and \u03b12-AR activity (Galvez et al., 1996; Hatfield et al., 1999; Liang et al., 1990; Ferry and McGaugh, 2008; Ferry et al., 1999a, 1999b). In particular, many groups have shown noradrenergic influence in fear-related memory formation (Sears et al., 2013; Roozendaal et al., 2008, 2006; Debiec and Ledoux, 2004; Garrido Zinn et al., 2016; Skelly et al., 2017). Our findings support these prior works while offering new insight into how this circuitry might acutely modulate negative affect. The observation that the LC-BLA circuitry carries an intrinsically negative valence suggests that this circuit can natively promote negative affect, rather than merely enhancing\u00a0memory. However, it is possible that without explicit memory cues, our photostimulation paradigm conditions an aversion via recruitment of many other neurotransmitter systems (Brioni et al., 1989; Marsicano et al., 2002). This might not be the case in the presence of a positive cue or reward where the LC-BLA projection may still simply enhance the memory. Further studies will be necessary to fully evaluate the implications of the apparent negative affect promoted by exogenous stimulation of this circuit. While there is some concern that photostimulation of ThIRES-Cre::LC-BLA:ChR2 fibers could cause backpropagating action potentials to LC-NE cell bodies resulting in NE release elsewhere in the brain for the conditioned place aversion, the observation that the anxiety-like phenotype can be blocked with local \u03b2-AR antagonism (Figure 6G) suggests there is some degree of circuit isolation in our study. Additionally, the observation that this stimulation does not replicate all of the behavioral phenotypes of cell body activation (McCall et al., 2015) (Figure 5C; i.e. no RTPA) further supports this interpretation. However, we cannot definitively conclude that the observed CPA (Figure 5F\u00a0and\u00a0G) is mediated through the same postsynaptic mechanism (i.e. \u03b2-AR activation) in the BLA as the anxiety-like phenotype. To this point, we recently demonstrated that G\u03b1s signaling (the same signaling mechanism that \u03b2-AR activates) in CaMKII\u03b1+ BLA neurons is sufficient for anxiogenesis, without driving either a real-time or conditioned place aversion (Siuda et al., 2015a, 2016). Additionally, throughout these experiments we have not directly addressed any potential confounds that arise from long-term expression of exogenous opsins (Miyashita et al., 2013; Ferenczi et al., 2016; Warden et al., 2012). Instead, our behavioral controls (eYFP-expression with photostimulation) are aimed at controlling spurious effects of exogenous protein expression, heating, and light delivery to the BLA (Yizhar et al., 2011). Together with our work at LC-NE cell bodies (McCall et al., 2015), these studies and the current findings suggest that LC neurons with fibers in the BLA are capable of conditioning aversion, though possibly through other brain regions and possibly independent of \u03b2-AR activation.\n\nThe lack of a real-time place aversion is a particularly interesting observation. We previously demonstrated the real-time place aversion elicited by LC-NE cell body activation to be dependent on \u03b11-AR activation (McCall et al., 2015). Together these results suggest that both the anatomical substrate and receptor system responsible for this behavior is distinct from the efferent LC-NE processes responsible for noradrenergic mediated anxiety-like behavior. Furthermore, there are important distinctions between the RTPA and the CPA assays. RTPA is essentially an instrumental conditioning paradigm that relies on operant learning of the subject as it engages the environment, while CPA is a passive, classical conditioning paradigm that possibly recruit distinct brain circuitry during the learning process (Day and Carelli, 2007). Another consideration is the longer time course of NE transmission and receptor activation compared to fast-acting, small molecule neurotransmitters, such as \u03b3-Aminobutyric acid (GABA) and glutamate (Otis and Mody, 1992; Isaacson et al., 1993; Zoli et al., 1998; Szapiro and Barbour, 2007; Agnati et al., 2010; Palij and Stamford, 1994; Courtney and Ford, 2014). These temporal dynamics, combined with the role of NE on memory formation (Sears et al., 2013; Roozendaal et al., 2008, 2006; Debiec and Ledoux, 2004; Sara, 2000), might confound the RTPA assay that relies on distinct pairing of the transition from one chamber to the other with changes in neural activity. With activation of adrenergic receptors, these effects may have slower time dynamics than what is necessary for the place-dependent operant conditioning scheme \u2013 despite what we observed through cell body activation (McCall et al., 2015). It is well known, for example, that \u03b2-AR signaling through cAMP-gated calcium channels that will likely increase firing acutely, but that they also signal through Arrestin-mediated transduction. The latter can lead to long-term changes in gene and protein expression in addition to changes synaptic plasticity and neuronal activity (Siuda et al., 2015a). All of these molecular considerations may also play a key role in the behavior we observed. While numerous potential circuit-based targets exist, it seems possible that NE projections to the mesolimbic dopamine system have the potential to mediate instrumental learning\u00a0including real-time aversive behaviors.\u00a0The LC sends functional projections to the\u00a0dopaminergic\u00a0system and numerous groups have demonstrated bidirectional control of real-time place preference and aversion behaviors within this system (Siuda et al., 2015b; Jennings et al., 2013; Lammel et al., 2012; Stamatakis and Stuber, 2012; Tan et al., 2012; van Zessen et al., 2012; Isingrini et al., 2016).\n\nTaken together, our results here and elsewhere (McCall et al., 2015; Siuda et al., 2015a, 2016) demonstrate that LC-NE downstream influence on negative affective behaviors is an elaborate and complex system likely involving many different postsynaptic receptor systems and anatomical projection targets. Importantly, the LC projection to the BLA is a clear functional efferent target for LC-mediated anxiety-like behavior. These findings have broad implications for our understanding of the mechanisms of anxiety and other negative affective disorders and suggest that further study of these noradrenergic circuits and signaling pathways should greatly advance our current understanding of related psychopathologies.\n\n## Materials and methods\n\n### Animals\n\nAdult (25\u201335 g) male C57BL/6J (RRID:IMSR_JAX:000664) and ThIRES-Cre (RRID:IMSR_EM:00254) backcrossed to C57BL/6J mice were group-housed, given access to food and water ad libitum and maintained on a 12 hr:12 hr light:dark cycle. All animals were held in a facility in the lab 1 week prior to surgery, post-surgery and throughout the duration of the behavioral assays to minimize stress from transportation and disruption from foot traffic. To determine animal numbers we used G*Power 3 power analysis software (RRID:SCR_013726) (Faul et al., 2007; Charan and Kantharia, 2013) informed by data from our typical animal usage logs from similar experiments to suggest a priori means an standard deviations for each intended statistical methods (i.e. Student\u2019s t-tests, ANOVAs, etc.) or Mead\u2019s resource equation to yield between 10 and 20 degrees of freedom for the error component when no prior data was available (Charan and Kantharia, 2013; Festing and Altman, 2002). Any variation from these approaches was due to behavioral attrition from off-target injections/implants or headcap failures. All procedures were approved by the Animal Care and Use Committee of Washington University and conformed to US National Institutes of Health guidelines.\n\n### Viral preparation\n\nPlasmids encoding pAAV-EF1\u03b1-DIO-eYFP [final titer 5 \u00d7 1012 vg/ml], pAAV-EF1\u03b1-double floxed-hChR2(H134R)-eYFP-WPRE-HGHpA [final titer 2 \u00d7 1013 vg/ml], were obtained from Addgene (Addgene.org) originally from the Deisseroth Laboratory at Stanford University. The DNA was amplified with a Maxiprep kit (Promega) and packaged into AAV5 serotyped viruses by the WUSTL Hope Center Viral Core.\n\n### Stereotaxic surgery\n\nMice were anaesthetized in an induction chamber (4% isoflurane) and placed in a stereotaxic frame (Kopf Instruments, Model 1900) where they were maintained at 1\u20132% isoflurane throughout the procedure. A craniotomy was performed and mice were injected as follows. For locus coeruleus terminal studies, 500\u20131000 nl of AAV5-DIO-ChR2 or AAV5-DIO-eYFP was injected unilaterally (with the exception of two animals for the single-unit electrophysiology experiments that were bilateral) into the locus coeruleus at stereotaxic coordinates from bregma: \u22125.45 mm anterior-posterior (AP), \u00b11.25 mm medial-lateral (ML), \u22123.65 mm dorsal-ventral (DV). Mice were then implanted with chronic fiber optic in the BLA at stereotaxic coordinates from bregma: \u22121.60 mm AP, \u00b12.90 mm ML, and \u22124.75 mm DV. For experiments involving local drug infusion into the BLA, a metal cannula (PlasticsOne) was implanted at \u22121.60 mm AP, \u00b12.90 mm ML, and \u22124.25 mm DV and either an internal infusion cannula or fiber optic was placed to extend another 0.5 mm. The fiber optic or cannula implants were secured using two bone screws (CMA, 743102) and affixed with TitanBond (Horizon Dental Products) and dental cement (Lang Dental)(McCall et al., 2015, 2013). Mice were allowed to recover for at least 6 weeks prior to behavioral testing; this interval permitted optimal AAV expression and Cre recombinase activity. For retrograde studies 400 nl of Flurogold or Retrobeads were injected into the BLA at \u22121.60 mm AP, \u00b12.90 mm ML, and \u22124.75 mm DV. Mice were allowed to recover for one week for fluorogold and two weeks for retrobeads, prior to perfusion for histological examination. Cholera Toxin subunit b AlexaFluor 555 (Invitrogen; CTB-555) was injected using a Neuros Hamilton Synringe (32 gauge, beveled) to the NAc (+1.25 mm AP, \u00b10.75 mm ML, \u22124.30 mm DV; 200 nl), CeM (\u22120.80 mm AP, \u00b12.35 mm ML, \u22125.20 mm DV; 150 nL), vHPC (\u22123.55 mm AP, +3.50 ML, \u22124.00 mm DV; 250 nL). The beveled syringe was inserted facing caudally for both NAc and vHPC and medially for CeA injections. CTB was prepared fresh for each series of experiments (Conte et al., 2009).\n\n### cFos induction\n\nThIRES-Cre::LC-BLA:ChR2 mice were injected with CTB-555\u00a0(Invitrogen,\u00a0Carlsbad,\u00a0CA) into the NAc, CeM, or vHPC at least 6 weeks following AAV5-DIO-ChR2-eYFP injection into the LC. Mice were then implanted with a chronic fiber optic in the BLA as described above. Mice were allowed to recover for 5 days and habituated to a chamber and fiber optic tether over 2 days. Seven days following CTB injection, 5 Hz photostimulation (10 ms pulses, 10 mW) was delivered to the BLA for 20 min. Mice were then sacrificed for immunohistochemistry 90 min following the onset of photostimulation. Following immunohistochemistry and imaging, images were background subtracted using ImageJ Fiji\u00a0(RRID:SCR_002285). Cells were manually counted by an experimenter blind to the experimental conditions.\n\n### Immunohistochemistry\n\nImmunohistochemistry was performed as described (McCall et al., 2015; Siuda et al., 2015a, 2016). Briefly, mice were anesthetized with pentobarbital and transcardially perfused with ice-cold 4% paraformaldehyde in phosphate buffer (PB). Brains were dissected, post-fixed for 24 hr at 4\u00b0C and cryoprotected with solution of 30% sucrose in 0.1M PB at 4\u00b0C for at least 24 hr, cut into 30 \u00b5m sections and processed for immunostaining. 30 \u00b5m brain sections were washed three times in PBS and blocked in PBS containing 0.5% Triton X-100% and 5% normal goat serum. Sections were then incubated for\u00a0~16 hr at room temperature in chicken anti-TH (1:2000, Aves Labs,\u00a0Tigard,\u00a0OR) or rabbit anti-phospho-cFos (1:500, Cell Signaling Technology, Danvers, MA). Following incubation, sections were washed three times in PBS and then incubated for 2 hr at room temperature goat anti-chicken or anti-rabbit Alexa Fluor 594 or 633 (1:500, Invitrogen,\u00a0Carlsbad,\u00a0CA) were then washed three times in PBS and followed by three 10 min rinses in PB and mounted on glass slides with Hardset Vectashield (Vector Labs,\u00a0Burlingame,\u00a0CA) (RRID:AB_2336787) for microscopy. All sections were imaged on both epifluorescent and confocal microscopes. Gain and exposure time were constant throughout each experiment, and all image groups were processed in parallel using Adobe Photoshop CS5 (Adobe Systems, San Jose, CA) (RRID:SCR_014199).\n\n<table>\n  <thead>\n    <tr>\n      <th>Antibody</th>\n      <th>Species</th>\n      <th>Dilution</th>\n      <th>Source</th>\n      <th>RRID</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>TH</td>\n      <td>Chicken</td>\n      <td>1:2000</td>\n      <td>Aves Labs</td>\n      <td>RRID:AB_10013440</td>\n    </tr>\n    <tr>\n      <td>Alexa Fluor 594 anti-chicken IgG</td>\n      <td>Goat</td>\n      <td>1:500</td>\n      <td>Invitrogen</td>\n      <td>RRID:AB_142803</td>\n    </tr>\n    <tr>\n      <td>Alexa Fluor 633 anti-chicken IgG</td>\n      <td>Goat</td>\n      <td>1:500</td>\n      <td>Invitrogen</td>\n      <td>RRID:AB_1500591</td>\n    </tr>\n    <tr>\n      <td>Alexa Fluor 633 anti-rabbit IgG</td>\n      <td>Goat</td>\n      <td>1:500</td>\n      <td>Invitrogen</td>\n      <td>RRID:AB_2535731</td>\n    </tr>\n    <tr>\n      <td>Phospho-cFos</td>\n      <td>Rabbit</td>\n      <td>1:500</td>\n      <td>Cell Signaling</td>\n      <td>RRID:AB_10557109</td>\n    </tr>\n  </tbody>\n</table>\n\n### Slice preparation\n\nSlice electrophysiology and voltammetry experiments were performed as previously described (Stamatakis et al., 2013). Briefly, mice were anesthetized (Euthasol) and perfused with ice-cold sucrose aCSF (in mM: 225 sucrose, 119 NaCl, 1.0 NaH2PO4, 4.9 MgCl2, 0.1 CaCl2, 26.2 NaHCo3, 1.25 glucose). Following rapid decapitation, coronal slices containing LC and BLA were prepared on a vibratome (VT-1200, Leica Microsystems,\u00a0Wetzlar,\u00a0Germany) and allowed to rest for at least 30 min in oxygenated aCSF (in mM: 119 NaCl, 2.5 KCl, 1.0 NaH2PO4, 1.3 MgCl2, 2.5 CaCl2, 26.2 NaHCO3, and 11 glucose) at 35\u00b0C prior to placement in the recording chamber where slices were perfused with oxygenated aCSF at 37\u00b0C at a rate of 2 ml/min.\n\n### Slice electrophysiology\n\nWhole-cell current clamp recordings were made in LC neurons expressing ChR2-eYFP with a Multiclamp 700B amplifier (Molecular Devices,\u00a0Sunnyvale,\u00a0CA) (RRID:SCR_011323). Since LC neurons are spontaneously active, current was injected such that the cell was resting at \u221265 mV. To elicit action potentials, slices were stimulated with 5 pulses of blue LED at a rate of 10 Hz (Thorlabs, 473 nm, 5 ms pulse width, 1 mW) via the 40X objective.\n\n### Fast scan cyclic voltammetry\n\nCarbon fiber microelectrodes (CFME, 75 \u03bcm in length) were lowered into 300 \u03bcM coronal slices and placed where the densest ChR2-eYFP expression was observed (CeA/BLA border) ThIRES-Cre::LC-BLA:ChR2 mice. To detect NE, the CFME was ramped from \u22120.4 V to 1.3 V versus a Ag/AgCl reference electrode (in the bath) at a rate of 400 V/s at 10 Hz. Slices were stimulated with 30 pulses of a blue LED (Thorlabs, 473 nm, 5 ms pulse width, 1 mW) via a 40X objective at 10 Hz every 5 min to release NE. Electrochemical data was collected and analyzed using a combination of Tar Heel CV (ESA,\u00a0Chelmsford,\u00a0MA) (Robinson and Wightman, 2007), HDCV (http://www.chem.unc.edu/facilities/electronics_software.html) (Bucher et al., 2013), and Labview (RRID:SCR_014325). Following collection, background subtracted cyclic voltammograms (CVs) were smoothed one time with a Fast Fourier Transformation (Bucher et al., 2013). CVs had characteristic oxidation and reduction peaks coinciding with catecholamine detection (ox: 600\u2013700 mV red: \u2212200\u2013300 mV). Oxidative currents were analyzed at the peak of the oxidative potential for individual experiments. Clearance half-life (t1/2) was measured in Clampfit 10.2 (Molecular devices) as previously described (McElligott et al., 2013).\n\n### In vivo electrophysiology\n\nSpontaneous single unit activity was recorded as previously described (McCall et al., 2015; Siuda et al., 2015a). Briefly, mice were lightly anesthetized (1% isoflurane), placed in a stereotactic frame and two skull screws were placed on either side of the midline to ground the electrode array. The recording apparatus consisted of a 16-channel (35 \u03bcm tungsten wires, 150 \u03bcm spacing between wires, 150\u201333 \u03bcm spacing between rows, Innovative Physiology,\u00a0Durham,\u00a0NC) electrode array. This array was epoxied to a fiber optic and lowered into the BLA (stereotaxic coordinates from bregma: \u22121.3 mm (AP),\u00b12.9 mm (ML) and \u22124.9 mm (DV). Extracellular recordings were taken from ThIRES-Cre::LC-BLA:ChR2 mice. Spontaneous and photostimulated neuronal activity was recorded from each electrode, bandpass-filtered with activity between 250 and 8000 Hz, and analyzed as spikes. Voltage signals were amplified and digitally converted using OmniPlex and PlexControl (Plexon,\u00a0Dallas,\u00a0TX) (RRID:SCR_014803). For ThIRES-Cre::LC-BLA:ChR2 recordings, 3 min of baseline recordings were made followed by 3 min of 5 Hz photostimulation (10 ms pulses, 10 mW) and then another 3 min post- stimulation (off, on, off). Principle component analysis and/or evaluation of t-distribution with expectation maximization was used to sort spikes using Offline Sorter (Plexon)(RRID:SCR_000012) and only cells with distinct clusters away from the noise that remained firing throughout the duration of the recording were included. To assess firing rate changes for each cell, all spikes were binned into 1 s bins. Using z-scores (z= (x-\u03bc)/\u03c3; where x is the sampled firing rate of the neuron per bin), firing rates were normalized to the mean baseline firing rate during the 60 s before the start of the photostimulation. Neurons were classified as increasing firing during photostimulation if their average z-score during photostimulation was greater than 1. Similarly, neurons were classified as decreasing firing if their average z-score during photostimulation was less than \u22121. All units with average z-scores from \u22121 to 1 during photostimulation were classified as no change. To determine the latency to fire, we calculated the average time from the onset of first photostimulation to the next spike from each cell, independent of whether the cell classified as increasing, decreasing, or static. To determine baseline firing rate, all spikes were binned into 1 s bins and the mean of the first 180 s of the recording (prior to any photostimulation) was used. Average waveforms were computed from each isolated unit using the first 540 s of each recording session. Subsequently, we performed linear correlations between each neuron of a designated class (i.e. increasing, decreasing, or static) where r\u00a0=\u00a01 would be an identical waveform. Bursts were defined as at least two spikes with an interspike interval (ISI) of\u00a0<170 ms to start a burst, and two spikes with an ISI\u00a0>\u00a0300 ms to terminate a burst. Percent spikes in bursts was quantified by recording the number of spikes in bursts out of the total number of spikes from a unit.\n\n### General behavior notes\n\nBehavioral assays were performed in a sound attenuated room maintained at 23\u00b0C. Lighting was measured and stabilized at\u00a0~4 lux for anxiety tests and\u00a0~200 lux for place testing. All behavioral apparatuses were cleaned with 70% ethanol in between animals. In each assay, animals received constant photostimulation throughout the entire trial. AAV5-DIO-ChR2 and AAV5-DIO-eYFP animals received 5 ms pulses of 10 Hz photostimulation (473 nm). Movements were video recorded and analyzed using Ethovision Software (RRID:SCR_000441).\n\n### Real time place testing (RTPT)\n\nMice were placed into a custom-made unbiased, balanced two-compartment conditioning apparatus (52.5 \u00d7 25.5\u00a0\u00d7\u00a025.5 cm) as previously described (McCall et al., 2015; Siuda et al., 2015b; Al-Hasani et al., 2015) and allowed to freely roam the entire apparatus for 20 min. Entry into one compartment triggered constant photostimulation (5 Hz for LC-BLA;\u00a0~10 mW light power) while the animal remained in the light-paired chamber. Entry into the other chamber ended the photostimulation. The side paired with photostimulation was counterbalanced across mice. Time spent in each chamber and total distance traveled for the entire 20 min trial was measured using Ethovision 8.5 (Noldus,\u00a0Wageningen,\u00a0Netherlands). Data are expressed as mean \u00b1 S.E.M percent time spent in photostimulation-paired chamber.\n\n### Conditioned place aversion (CPA)\n\nMice were trained in an unbiased, balanced three compartment conditioning apparatus as previously described (McCall et al., 2015). Briefly, mice were pre-tested by placing individual animals in the small central compartment and allowing them to explore the entire apparatus for 30 min. Time spent in each compartment was recorded with a video camera (ZR90; Canon,\u00a0Tokyo,\u00a0Japan) and analyzed using Ethovision 8.5 (Noldus). Mice were randomly assigned to light and no-light compartments and received no light in the morning and light (5 Hz for LC-BLA) in the afternoon at least 4 hr after the morning training on two consecutive days. CPA was assessed on day 4 by allowing the mice to roam freely in all three compartments and recording the time spent in each. Scores were calculated by subtracting the time spent in the light stimulus-paired compartment post-test minus the pre-test.\n\n### Open field test (OFT)\n\nOFT testing was performed as described (McCall et al., 2015) in a square enclosure (50 \u00d7 50 cm). We connected ThIRES-Cre::LC-BLA:ChR2 mice to fiber optics and allowed them to roam freely for 21 min. Photostimulation alternated between off and on (5 Hz (10 ms width)) photostimulation (~10 mW light power)) states in 3 min time segments, beginning with 3 min of no stimulation. The open field was cleaned with 70% ethanol between each trial. The center was defined as a square comprised of 25% the total area of the OFT (i.e. each length was 50% that of the total OFT).\n\n### Elevated zero maze (EZM)\n\nEZM testing was performed as described (McCall et al., 2015), the EZM (Harvard Apparatus,\u00a0Holliston,\u00a0MA) was made of grey plastic, 200 cm in circumference, comprised of four 50 cm sections (two opened and two closed). The maze was elevated 50 cm above the floor and had a path width of 4 cm with a 0.5 cm lip on each open section. ThIRES-Cre::LC-BLA:ChR2 animals were connected to cables coupled to a function generator, positioned head first into a closed arm, and allowed to roam freely for 7 min. Animals received 5 Hz (10 ms width) photostimulation (~10 mW light power). For the \u03b2-AR antagonism experiment, mice were injected into the BLA with Propranolol (1 \u00b5g, intra-BLA, 30 min prior to behavior, Tocris, Bristol, United Kingdom). Mean open arm time was the primary measure of anxiety-like behavior.\n\n### Genotyping of mouse lines\n\nDNA was isolated from tail tissue obtained from weanling mice (21\u201328 days of age), and PCR screening was performed using the following primers: Cre recombinase (forward: 5\u2019- GCA TTA CCG GTC GAT GCA ACG AGT GAT GAG-3\u2019 and reverse: 5\u2019- GAG TGA ACG AAC CTG GTC GAA ATC AGT GCG-3\u2019) yielding a 400 bp PCR product in Cre positive animals. Fatty acid-binding protein intestinal primers (forward: 5\u2019- TGG ACA GGA CTG GAC CTC TGC TTT CCT AGA-3\u2019 and reverse: 5\u2019- TAG AGC TTT GCC ACA TCA CAG GTC ATT CAG-3\u2019) were used as positive controls and yield a 200 bp PCR product.\n\n### Statistics/data analysis\n\nAll summary data are expressed as mean \u00b1 SEM. Statistical significance was taken as *p<0.05, **p<0.01, ***p<0.001, as determined by the Student\u2019s t-test (paired and unpaired): One-Way Analysis of Variance (ANOVA) or One-Way Repeated Measures ANOVA, followed by Dunnett\u2019s or Bonferroni post hoc tests as appropriate. In cases where data failed the D\u2019Agostino and Pearson omnibus normality test, non-parametric analyses were used. Statistical analyses were performed in GraphPad Prism 5.0 (RRID:SCR_002798).\n",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "37e711fa-036f-4411-becd-1a6cde128afd",
+      "submission_id": "2ed3ad25-de67-4194-902f-1607a7fb480e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Liqun Luo, Howard Hughes Medical Institute, Stanford University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.18247.013](https://doi.org/10.7554/eLife.18247.013)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Activation of locus coeruleus to basolateral amygdala projections drives anxiety and aversion\" for consideration by eLife. Your article has been favorably evaluated by a Senior Editor and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal her identity: Kay M Tye (Reviewer #2).\n\nAs you see from the reviews below, all reviewers are enthusiastic about the topic and findings, and each has raised a number of recommendations for revision. After discussion among all three reviewers, we would like to invite you to submit a revised manuscript that can satisfactorily address the following:\n\n1) We feel that the in vivo recording data in Figure 3 need to be significantly strengthened. Specifically, \"n\" should be increased to have more examples of up- or down-modulated BLA neurons. It will be ideal if in these experiments you can learn more about the recorded cells' other properties, such as their response to natural stimuli and modulations by propranolol, but we do not hold these as essential for the acceptance for a revised manuscript.\n\n2) We would also request that you perform the propranolol experiment in the aversion assay (Figure 4), which will strengthen your claim that the effect on aversion is mediated by LC-NE neuron projection to BLA rather than via antidromic stimulation elsewhere. If this additional data cannot be obtained, you should significantly tone down the claim that aversion is related to LC-NE modulation of BLA, including in the title.\n\n3) We believe that most of the other critiques can be addressed by further analyses of existing data, and by textual revisions. You should try to address these as thoroughly as possible.\n\nReviewer #1:\n\nMcCall et al. characterized the action of locus coeruleus norepinephrine (LC-NE) neurons at one of their numerous target sites: the basolateral amygdala (BLA), in the context of anxiety and aversion. They confirmed previous findings that LC-NE neurons project and arborize axons at BLA, showed that photoactivation of ChR2-expressing LC-NE neurons resulted in NE release at BLA as measured by fast scan cyclic voltammetry, characterized firing pattern changes of BLA neurons in response to photostimulation of LC-NE neurons using in vivo recording, found that terminal stimulation of LC-NE fibers at BLA caused conditioned (but not real time) place aversion and enhanced anxiety-like behaviors, and showed that the anxiety-like behaviors can be suppressed by application of propranolol, an antagonist of \u03b2-adrenergic receptor.\n\nOverall this is a nice and timely set of experiments addressing an important question: how do LC-NE neurons affect the physiology and function of a specific target area, in this case BLA that is well known for its function in regulating emotion and anxiety. Some of the experiments and analyses could go further.\n\n1) The in vivo recording (Figure 3) of BLA neurons in response to photostimulation of LC-NE neurons is perhaps the least satisfactory experiment. I will start with a few questions about the description. There were 20 cells in Figure 3C, but only 18 were further analyzed in Figure 3D (and onwards?). What were the selection criteria? How was \"latency\" measured (Figure 3K) for cells that had no change in firing rate? Do Figure 3L and 3M contain new cells (legend for 3M says n=10), or a subset of cells in Figure 3C or Figure 3D? Again, how are these cells selected?\n\nGiven the clear heterogeneity of response, it will be more satisfying if the authors have some more knowledge about these cells-for example are there any signatures that distinguish three types of neurons in the PCA analysis? Do they respond differently to natural stimuli? Do they respond differently to propranolol, which will provide a nice link to Figure 5? Increasing N is desirable as the examples are only 4 and 2 for neurons whose firing rate is up- or down-modulated by LC-NE neuron photostimulation.\n\n2) Given the broad projection patterns of LC-NE neurons, the behavioral effect of LC-NE photostimulation in Figure 4 and Figure 5 could in principle be due to antidromic effects in other target areas. The propranolol effect caused by local application in Figure 5 supports a BLA local action. The propranolol experiment should be extended to Figure 4 as well.\n\nReviewer #2:\n\nOverall, I was delighted to read this interesting and important manuscript. I have relatively minor comments.\n\nI found it intriguing that the authors observed such heterogeneous responses to LC-BLA photostimulation and wonder if the differences in responses of BLA neurons to NE is related to either a) their projection target, b) cell type (projection or interneuron) or c) their role during anxiety-related behaviors. This is beyond the scope of the current manuscript and I do not expect the authors to respond to this query with further experiments, but if the authors have any other data regarding basal spike rate, waveform, peak firing rates, burst patterns or activity during anxiety behaviors it would be nice to see. The authors must have the firing profile data already, and just need to analyze and display this.\n\nThe Authors state that \"Downstream and independent of this projection, recent studies have demonstrated that direct activation of both basolateral amygdala (BLA) cell bodies or their projections is both anxiogenic and socially aversive\" and should consider adding the following papers to the references already listed: Felix-Ortiz, Neuron, 2013; Felix-Ortiz, J Neurosci, 2014; Felix-Ortiz, Neuroscience, 2015. These citations should also be added to the references following the sentence \"Furthermore, while we do not know the genetic identity or projection targets of the BLA neurons from which we recorded, it is possible that NE serves to preferentially shift BLA activity in neurons that favor anxiety-like behavior (i.e. those that project to the ventral hippocampus, prefrontal cortex, or central amygdala) rather those that favor positive affect and anxiolysis (i.e. projections to the nucleus accumbens and bed nucleus of the stria terminalis)\".\n\nThe finding that LC-BLA inputs drive conditioned place aversion potentially place previous studies concluding that NE in the BLA contributes to fear memory formation/storage. The authors should discuss this body of research and clearly address how their data may challenge this existing notion. Specifically, the finding that this circuit is intrinsically of negative valence may actually provide an alternative explanation for a number of results previously thought to support a role in memory formation (associated with fear). The authors discuss these results as being consistent, though, it's not clear to me that this is the case.\n\nIt was curious that they were not able to produce real-time place aversion but were able to observe conditioned place aversion. The authors interpret this as an issue of the involvement of long-term memory. An alternative interpretation would be that this effect is specific to Pavlovian and not instrumental conditioning. Real-time place aversion is explicitly different in that the animal must enter the paired side of the chamber to receive photostimulation. Thus, a number of other issues may also be involved. First, this is essentially an instrumental conditioning task, as the photostimulation is contingent on animal behavior. Second, this may be related to the lingering effects of NE (as the authors hint at, but don't directly discuss).\n\nThe appropriate control for the propranolol experiment would be a saline/vehicle injection (both in combination with ChR2 stimulation), as well as a light-off condition wherein ChR2 is still expressed. ChR2 expression can (with long-term expression) change basal behavior even in the absence of light (see Warden et al., Nature, 2012). It seems as if they may have done this based on the supplementary figure, but the main text was confusing. Please clarify.\n\nIn Figure 1B, what is above the ventricle? There is some retrograde labeling from the BLA that is TH-. Also, it is hard to see if this exists in D, but it seems to. Finally, some quantification of the TH overlap with cre-dependent fluorophore expression should be included. Fibers in BLA are scarcely visible in 1L, I am surprised this level of expression was sufficient to evoke behavioral responses \u2013 was this image representative?\n\nIn Figure 3F, the firing rate appears to be dropping prior to photostimulation \u2013 which makes it unclear whether the effect we are observing is actually related to the optogenetic manipulation.\n\nReviewer #3:\n\nMajor conclusions of paper:\n\nMcCall et al. combine in vivo optogenetics, physiology, pharmacology, and behavior, as well as FSCV, to characterize a specific sub-circuit of the extensive LC-NE system. Their experiments identify novel examples of heterogeneity within the LC\u2192 BLA circuit, substantially build on existing work in the field, and have important implications for understanding how NE modulates anxiety/aversion. While interesting, I felt that some of their conclusions regarding specificity within this circuit were not experimentally demonstrated as strong as they could be, but hopefully, this can be addressed during revision. I also had some technical questions regarding experiments for Figure 3.\n\nMain concerns:\n\nFigure 3:\n\n1) Sample size seems low for statistical analysis (4 cells in increased firing group, 2 cells in decreased group).\n\n2) I was confused by 3C. Is each dot a cell? How do they correspond to the pie chart in 3D?\n\n3) It says in the Materials and methods that injections were unilateral, but according to Figure 3 legend, data collection was from \"4 hemispheres from 2 animals\". Almost all LC projections to forebrain are ipsilateral (though I'm not sure about projections to BLA), so it doesn't seem possible that both hemispheres could be used for these experiments if only one LC was injected.\n\n4) I'm unsure if the statistical comparisons are appropriate; i.e. \u2013 pre-sorting of the \"increased\" and \"decreased\" cells based on average firing.\n\n5) It would be nice to expand on the identity of the NE-responding BLA neurons. What if adrenergic inhibitors are applied to the BLA during their optrode recordings? How does this affect the heterogeneous NE-mediated activity they observed? Alternatively, could CRACM-style experiments be performed in slice, where recordings are performed in BLA neurons when ChR2-expressing LC fibers are stimulated? This could provide higher resolution for the relative size of these different NE-responding populations, as well as their identity (via post-recording cell fill and immunolabeling?)\n\nRegarding optogenetic stimulation of fibers/related to Figure 4: The authors find that stim. of BLA\u2192 LC fibers produces negative association over time, which isn't present in real-time place aversion. But is it known if avoidance association is specific to the BLA\u2192LC projection? It also seems possible that chronic activation of LC terminals could cause a change in LC cell body activity, and thus broadly affect the LC-NE circuit. This is mentioned in the Discussion, but maybe it's possible to experimentally address this concern. For instance, does local infusion of an adrenergic receptor antagonist into the BLA during or after conditioning block the avoidance (similar to the experiment done in Figure 5G)?\n",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b38d8f57-7351-4c59-9e37-aea2de6ad1df",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C1",
+      "claim": "Increased tonic activity of locus coeruleus noradrenergic (LC-NE) neurons induces anxiety-like and aversive behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased tonic activity of locus coeruleus noradrenergic (LC-NE) neurons induces anxiety-like and aversive behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work and is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "6737c7b0-283a-4c87-ae50-1e5d4f02975e",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C2",
+      "claim": "Photostimulation of LC-NE fibers in the BLA evokes norepinephrine release in the basolateral amygdala (BLA).",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that photostimulation of LC-NE fibers in the BLA evokes norepinephrine release in the basolateral amygdala (BLA)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by fast-scan cyclic voltammetry data presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "448e2dce-9605-41a7-b763-284ffc8db005",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C3",
+      "claim": "Photostimulation of LC-NE fibers in the BLA alters BLA neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that photostimulation of LC-NE fibers in the BLA evokes norepinephrine release in the basolateral amygdala (BLA), alters BLA neuronal activity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by in vivo electrophysiology data presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "2f46d61a-f8db-4522-a4d8-198cb22e71d6",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C4",
+      "claim": "Photostimulation of LC-NE fibers in the BLA conditions aversion.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that photostimulation of LC-NE fibers in the BLA evokes norepinephrine release in the basolateral amygdala (BLA), alters BLA neuronal activity, conditions aversion",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by conditioned place aversion behavioral data presented in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "35ddc3d5-cfc4-4216-ae51-5f99e3129bfb",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C5",
+      "claim": "Photostimulation of LC-NE fibers in the BLA increases anxiety-like behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that photostimulation of LC-NE fibers in the BLA evokes norepinephrine release in the basolateral amygdala (BLA), alters BLA neuronal activity, conditions aversion, and increases anxiety-like behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by open field test and elevated zero maze behavioral data presented in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "28314897-8772-4222-8ae8-1d20e96f5b98",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C6",
+      "claim": "\u03b2-adrenergic receptors mediate the anxiety-like phenotype of increased NE release in the BLA.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we report that \u03b2-adrenergic receptors mediate the anxiety-like phenotype of increased NE release in the BLA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by pharmacological blockade experiments with propranolol presented in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "f27d8776-a18a-4bea-91c3-ffb3eec8331d",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C7",
+      "claim": "The LC sends projections to the basolateral amygdala (BLA).",
+      "claim_type": "EXPLICIT",
+      "source": "This non-selective retrograde tracing approach revealed known inputs into the BLA from the LC (Robertson et al., 2016; Asan, 1998; Fallon et al., 1978) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by retrograde tracing data shown in Figure 1B and cited prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "382e56b2-9841-49c6-8896-0946c012798b",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C9",
+      "claim": "Th+ LC neurons project terminal fibers to the BLA.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we clearly observed labeled LC neurons (Figure 1F and G) and their projection fibers terminating in the BLA (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by anterograde tracing data shown in Figure 1F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "d767953b-4b51-4a2d-95f8-63aa5649c0b9",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C10",
+      "claim": "Photostimulation of ThIRES-Cre::LC-BLA:ChR2 projections results in NE release at terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the same viral optogenetic strategy as above, we examined whether photostimulation of ThIRES-Cre::LC-BLA:ChR2 projections resulted in NE release at terminals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by fast-scan cyclic voltammetry data presented in Figure 2C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "59d6ad64-225f-417d-8814-44637d739213",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C11",
+      "claim": "Photostimulation of BLA slices produces characteristic cyclic voltammograms and uptake consistent with NE.",
+      "claim_type": "EXPLICIT",
+      "source": "Photostimulation of BLA slices, produced characteristic cyclic voltammograms and uptake consistent with NE (McElligott et al., 2013; Herr et al., 2012) (t1/2 = 2.0 \u00b1 0.2 s, Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by voltammetry data shown in Figure 2C-D and cited prior literature on NE detection methods.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "52d6daa5-a515-4076-8513-eaae9986a231",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C12",
+      "claim": "Reserpine treatment significantly attenuates optically-evoked oxidative currents in the BLA.",
+      "claim_type": "EXPLICIT",
+      "source": "Reserpine treatment significantly attenuated the measured oxidative currents (31.6 \u00b1 1.0% of baseline, Figure 2E and F) further confirming optically-evoked catecholamine release in this isolated ThIRES-Cre::LC-BLA:ChR2 projection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reserpine treatment data shown in Figure 2E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "d569f72e-9aec-4d45-bca2-ddf1a144ce78",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C13",
+      "claim": "Photostimulation of ThIRES-Cre::LC-BLA:ChR2 terminals causes an increase in firing frequency in 21.4% of BLA units recorded.",
+      "claim_type": "EXPLICIT",
+      "source": "In these experiments photostimulation of ThIRES-Cre::LC-BLA:ChR2 terminals caused an increase in firing frequency in 21.4% of units recorded in the BLA (Figure 3C\u2013E,H; Figure 3\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vivo electrophysiology data shown in Figure 3C-E, H and Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "42763acf-3085-4558-9270-d7ac3a78354e",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C14",
+      "claim": "Photostimulation of ThIRES-Cre::LC-BLA:ChR2 terminals causes inhibitory responses in 9.5% of BLA units recorded.",
+      "claim_type": "EXPLICIT",
+      "source": "while some cells (9.5%) displayed inhibitory responses (Figure 3D,F,I; Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vivo electrophysiology data shown in Figure 3D, F, I and Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "19b1e49c-1c6d-4b4c-a704-43c1e3c00220",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C15",
+      "claim": "69.0% of BLA neurons did not change firing in response to photostimulation of ThIRES-Cre::LC-BLA:ChR2 terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining neurons (69.0%) appeared to not change in response to photostimulation (Figure 3D,G,J; Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vivo electrophysiology data shown in Figure 3D, G, J and Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "2e7589f2-c925-44fb-bfad-9e2b8ac730b9",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C16",
+      "claim": "The mean latency to fire following each light pulse in neurons that increased firing was 129.3 \u00b1 108.9 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "In cases where the firing rate increased, the mean \u00b1 SD latency to fire following each light pulse was 129.3 \u00b1 108.9 ms, suggesting that this change is not due to fast, monosynaptic neurotransmission, but likely a polysynaptic and/or neuromodulatory effect (Figure 3K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by latency analysis data shown in Figure 3K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "52da5c05-a9fb-4102-aea2-9493507ab796",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C17",
+      "claim": "The change in firing rate is not due to fast, monosynaptic neurotransmission, but likely a polysynaptic and/or neuromodulatory effect.",
+      "claim_type": "EXPLICIT",
+      "source": "In cases where the firing rate increased, the mean \u00b1 SD latency to fire following each light pulse was 129.3 \u00b1 108.9 ms, suggesting that this change is not due to fast, monosynaptic neurotransmission, but likely a polysynaptic and/or neuromodulatory effect (Figure 3K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the latency data shown in Figure 3K, which shows relatively long latencies inconsistent with monosynaptic transmission.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "013d90c7-eb44-458d-940e-995462cd64ed",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C18",
+      "claim": "5 Hz photostimulation increases cFos expression within the BLA in ThIRES-Cre::LC-BLA:ChR2+ animals compared to ThIRES-Cre::LC-BLA:ChR2- controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Photostimulation of LC-NE terminals in the BLA (5 Hz, 10 ms) significantly increases the number of cFos-expressing BLA neurons in ThIRES-Cre::LC-BLA:ChR2 animals compared to ChR2-lacking (Figure 4B; Figure 4\u2014figure supplement 1A\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry data shown in Figure 4B and Figure 4\u2014figure supplement 1A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "877dff56-3383-42b6-ab9e-caac7bdb0305",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C19",
+      "claim": "cFos expression following LC-NE terminal activation in the BLA overlaps significantly more with vHPC- and CeA-targeted CTB compared to NAc-targeted CTB in the BLA.",
+      "claim_type": "EXPLICIT",
+      "source": "These immunohistochemistry studies reveal that the cFos present following LC-NE terminal activation in the BLA, overlaps significantly more with vHPC- and CeA-targeted compared to NAc-targeted CTB in the BLA (Figure 4C\u2013G; Figure 4\u2014figure supplement 1F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by retrograde tracing and immunohistochemistry data shown in Figure 4C-G and Figure 4\u2014figure supplement 1F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "e995d810-8dd8-49a2-a802-af11ed4eb984",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C20",
+      "claim": "LC-NE terminals in the BLA preferentially activate vHPC- and CeA- projecting BLA neurons thought to be involved in modulating negative valence and affective behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that LC-NE terminals in the BLA preferentially activate vHPC- and CeA- projecting BLA neurons thought to be involved in modulating negative valence and affective behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the cFos overlap data in Figure 4 and knowledge about the role of vHPC and CeA projections in negative affect.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "3b5e076a-5aee-43df-aa4a-ad27583a7032",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C21",
+      "claim": "Photostimulation of ThIRES-Cre::LC-BLA:ChR2 terminals using parameters that induce a real-time place aversion at LC-NE cell bodies failed to elicit a real-time aversion in ThIRES-Cre::LC-BLA:ChR2 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, photostimulation of ThIRES-Cre::LC-BLA:ChR2 terminals using the parameters that induce a real-time place aversion at LC-NE cell bodies (McCall et al., 2015) failed to elicit a real-time aversion in ThIRES-Cre::LC-BLA:ChR2 animals (Figure 5B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by real-time place testing data shown in Figure 5B-C and comparison to prior work cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "c36df282-689d-4f22-b249-0c1bf7b00fae",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C22",
+      "claim": "There was no significant change in place testing behavior or locomotor behavior within animals or compared to ThIRES-Cre::LC-BLA:eYFP controls at either 5 Hz or 60 Hz photostimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant change in place testing behavior (Figure 5C) or locomotor behavior (Figure 5D) within animals or compared to ThIRES-Cre::LC-BLA:eYFP controls at either a physiologically-relevant 5 Hz or an over-driven 60 Hz photostimulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "bf6a528b-6adb-45e1-8362-8a41389e1f02",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C23",
+      "claim": "The real-time negative valence of LC-NE stimulation is likely produced via another LC-NE projection and one that is not recruited through antidromic stimulation of BLA-projecting LC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the real-time negative valence of LC-NE stimulation is likely produced via another LC-NE projection and one that is not recruited through antidromic stimulation of BLA-projecting LC neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the lack of real-time place aversion in LC-BLA terminal stimulation experiments compared to prior cell body stimulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "83a13466-0678-4f99-bb55-a5a340e7a651",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C24",
+      "claim": "ThIRES-Cre::LC-BLA:ChR2 mice show a conditioned aversive response to chamber paired with photostimulation compared to ThIRES-Cre::LC-BLA:eYFP controls following two days of conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "When allowed to freely explore two contextually-differentiated chambers, following two conditioning days of photostimulation of ThIRES-Cre::LC-BLA:ChR2 terminals (5 Hz, 10 ms), animals expressing ChR2-eYFP spent significantly less time in the context that was previously paired with photostimulation compared to the ThIRES-Cre::LC-BLA:eYFP controls (Figure 5F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by conditioned place aversion data shown in Figure 5F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "b5578094-380d-4ab9-a703-6ead9f14219a",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C25",
+      "claim": "Neither ChR2 nor eYFP control mice showed significant changes in locomotor activity before, during, or after conditioning in the CPA assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither group of mice showed significant changes in locomotor activity before, during, or after conditioning (Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by locomotor activity data shown in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "d64edf98-b109-4cd6-adef-b3060d74e97e",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C26",
+      "claim": "Stimulation of LC-BLA fibers alone is sufficient to cause a conditioned aversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the observation that stimulation of LC-BLA fibers alone is sufficient to cause a conditioned aversion",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the conditioned place aversion data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "a52b9186-d1ed-4144-9738-b785b9951969",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C27",
+      "claim": "5 Hz photostimulation causes an anxiety-like phenotype in OFT of ThIRES-Cre::LC-BLA:ChR2 animals compared to ThIRES-Cre::LC-BLA:eYFP controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Photostimulation of ThIRES-Cre::LC-BLA:ChR2 terminals using parameters that induce anxiety-like behavior at LC-NE cell bodies (McCall et al., 2015) resulted in a significant decrease in time spent in the center of the open field (OFT) with no significant change in general locomotor activity (Figure 6A\u2013D, Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by open field test data shown in Figure 6A-D and Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "40707542-4b96-4a02-be35-20cbf4111e24",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C28",
+      "claim": "Stimulation of only the subset of LC-NE fibers that project to the BLA is sufficient to induce anxiety-like behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments suggest that stimulation of only the subset of LC-NE fibers that project to the BLA is sufficient to induce anxiety-like behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the open field test data showing anxiety-like behavior with LC-BLA terminal stimulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "aa4bda17-7eb3-49a3-90ea-fc8110e89ed3",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C29",
+      "claim": "5 Hz photostimulation causes an anxiety-like phenotype in EZM of ThIRES-Cre::LC-BLA:ChR2 animals compared to ThIRES-Cre::LC-BLA:eYFP controls, which is reversed by intra-BLA propranolol pretreatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The same photostimulation paradigm that was anxiogenic in the OFT, caused a decrease in time spent in the open area of the elevated zero maze (EZM) of ChR2+ animals that received vehicle, compared to YFP-expressing, vehicle controls (Figure 6G and H). Importantly, when we locally antagonized \u03b2-ARs directly in the BLA prior to photostimulation, anxiogenesis was completely blocked in ChR2+ animals with no effect on eYFP-expressing, propranolol controls (Figure 6G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by elevated zero maze data with pharmacological manipulation shown in Figure 6G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "c44e9965-4d62-4773-99c5-d8f300ae1e1e",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C30",
+      "claim": "Local \u03b2-AR activation by NE release from LC-BLA terminals is the substrate responsible for the photostimulation-induced anxiety-like behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that local \u03b2-AR activation by NE release from LC-BLA terminals is the substrate responsible for the photostimulation-induced anxiety-like behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the propranolol blockade data in Figure 6G showing that \u03b2-AR antagonism prevents anxiety-like behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "0e191b03-bb62-4c26-9990-942b7df5a45f",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C31",
+      "claim": "The BLA is a crucial component in the neural circuitry of negative affective behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "The BLA is a crucial component in the neural circuitry of negative affective behaviors (Davis, 1992; Davidson, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "d05daa53-fd2b-45e5-b1b7-3a89d5790fbe",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C32",
+      "claim": "Activation of BLA cell bodies and their projections can bidirectionally mediate anxiety-like behavior and fear encoding.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of BLA cell bodies and their projections can bidirectionally mediate anxiety-like behavior and fear encoding (Davis, 1992; Kim et al., 2013; Tye et al., 2011; Namburi et al., 2015; Beyeler et al., 2016; Wolff et al., 2014; Knoll et al., 2011; Crowley et al., 2016; Sears et al., 2013; Roozendaal et al., 2006; Felix-Ortiz et al., 2013; Debiec and Ledoux, 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "82f4f5e6-0895-4e84-b919-b402f32e347f",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C33",
+      "claim": "NE is increased in the BLA following stressful events.",
+      "claim_type": "EXPLICIT",
+      "source": "NE is increased in the BLA following stressful events (Galvez et al., 1996; Hatfield et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "ef4d5ba0-7bec-4316-bf0d-e53ac04ecdea",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C34",
+      "claim": "The BLA receives noradrenergic input from the LC as well the Hoxb1+ neuronal populations in the lower brainstem and NTS.",
+      "claim_type": "EXPLICIT",
+      "source": "The BLA receives noradrenergic input from the LC (Asan, 1998; Fallon et al., 1978) as well the Hoxb1+ neuronal populations in the lower brainstem and NTS (Robertson et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "a8a1a3d5-e100-496b-b923-50e5eb2038cb",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C35",
+      "claim": "The LC input to the BLA is less dense than other NE input.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the LC input being less dense than other NE input (Plummer et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "3a71e2f6-bf72-443b-8581-e3310729a197",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C36",
+      "claim": "Molecularly-defined Th+ positive fibers from the LC release catecholamines into the amygdala and alter behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "here we directly show that molecularly-defined Th+ positive fibers from the LC release catecholamines into the amygdala and alter behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the voltammetry and behavioral data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "3d29643e-2d1b-4d00-a909-4a8d274256ac",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C37",
+      "claim": "Noradrenergic tonic cell firing in the LC increases following stressful stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have demonstrated that noradrenergic tonic cell firing in the LC increases following stressful stimuli (McCall et al., 2015; Abercrombie and Jacobs, 1987a, 1987b; Aston-Jones et al., 1999; Mana and Grace, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "8a335278-3dfa-4f5b-9178-85aba8237ef6",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C38",
+      "claim": "Selective activation of Th+ LC terminals modulates BLA neuronal activity in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "We now demonstrate that selective activation of Th+ LC terminals from these neurons modulates BLA neuronal activity in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the in vivo electrophysiology data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "9b14d5b5-fdb1-4b74-b641-78375a438dcc",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C39",
+      "claim": "Neurons that increase firing to LC-BLA photostimulation have a higher probability of being BLA projection neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite a diversity of recorded responses, these findings align with prior studies suggesting neurons that increase firing to LC-BLA photostimulation have a higher probability of being BLA projection neurons, while those that decrease have a higher probability of being BLA interneurons (Figure 3L) (Likhtik et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the baseline firing rate data in Figure 3L and cited prior literature on BLA neuron types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "9bc97f14-4d4c-4891-8cae-08c279dfb168",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C40",
+      "claim": "Neurons that decrease firing to LC-BLA photostimulation have a higher probability of being BLA interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite a diversity of recorded responses, these findings align with prior studies suggesting neurons that increase firing to LC-BLA photostimulation have a higher probability of being BLA projection neurons, while those that decrease have a higher probability of being BLA interneurons (Figure 3L) (Likhtik et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the baseline firing rate data in Figure 3L and cited prior literature on BLA neuron types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "f5758d9b-ecc4-47fb-9e66-fce9f855d7d5",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C41",
+      "claim": "Activation of \u03b2-ARs increases BLA activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Though it is well established that activation of \u03b2-ARs increases BLA activity (Buffalari and Grace, 2007; Huang et al., 1996; Pu et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "4857cb5c-495c-43b9-bea3-33d98176f438",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C42",
+      "claim": "The diversity of neuronal responses observed are likely mediated through different receptors systems and/or local or distal polysynaptic recurrent circuitry.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it is likely that the diversity of neuronal responses we observed are mediated through different receptors systems (Buffalari and Grace, 2007) and/or local or distal polysynaptic recurrent circuitry (Wolff et al., 2014; Rosenkranz and Grace, 2002, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative reasoning based on the observed data and cited prior literature.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "aca9d34d-af84-4cd1-9c5d-726b64e563bd",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C43",
+      "claim": "NE serves to preferentially shift BLA activity in neurons that favor anxiety-like behavior rather than those that favor positive affect and anxiolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while we do not know the genetic identity or projection targets of the BLA neurons from which we recorded, it is possible that NE serves to preferentially shift BLA activity in neurons that favor anxiety-like behavior (i.e. those that project to the ventral hippocampus, prefrontal cortex, or central amygdala) rather those that favor positive affect and anxiolysis (i.e. projections to the nucleus accumbens and bed nucleus of the stria terminalis)(Kim et al., 2013; Stuber et al., 2011; Tye et al., 2011; Namburi et al., 2015; Beyeler et al., 2016; Felix-Ortiz et al., 2013, 2016; Felix-Ortiz and Tye, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative reasoning based on the cFos data and cited prior literature on BLA projection targets.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "9b21330a-e957-41a9-9d1f-bc425f3c69d5",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C44",
+      "claim": "cFos is a secondary marker for neuronal excitation.",
+      "claim_type": "EXPLICIT",
+      "source": "The combined retrograde labeling and photostimulation studies indicate that, cFos, a secondary marker for neuronal excitation (Madabhushi et al., 2015), is selectively increased in the CeA- and vHPC-projecting BLA neurons (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "62ed9d9e-a4b3-4e49-b5e8-b01f4c305fb4",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C45",
+      "claim": "Increasing the activity of CaMKII+ BLA neurons via chemogenetic or optogenetic activation of G\u03b1s-signaling produces an anxiogenic-like state.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our recent reports demonstrate that increasing the activity of CaMKII+ BLA neurons via chemogenetic or optogenetic activation of G\u03b1s-signaling also produces an anxiogenic-like state, suggesting that excitatory cells possibly mediate the LC-BLA noradrenergic effect (Siuda et al., 2015a, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "f4a43d68-8422-49a7-ad2f-1fe317a60614",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C46",
+      "claim": "The conditioned aversive behavior may be due to factors outside of the BLA and distinct from NE release such as antidromic activity at the LC cell bodies or from prolonged changes to LC circuit activity elsewhere.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it remains to be seen whether this conditioned aversive behavior is mediated locally in the BLA by NE. This effect may could be due to factors outside of the BLA and distinct from NE release such as antidromic activity at the LC cell bodies or from prolonged changes to LC circuit activity elsewhere that result from long-term, repeated optogenetic stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative reasoning about alternative explanations for the observed conditioned aversion.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "18ba4791-f50b-47f4-961b-016490124524",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C47",
+      "claim": "Prolonged NE release in the BLA modulates memory storage through \u03b2-AR-mediated cAMP production and this effect is regulated by \u03b11-AR and \u03b12-AR activity.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well established that prolonged NE release in the BLA modulates memory storage through \u03b2-AR-mediated cAMP production and this effect, in turn, is regulated by \u03b11-AR and \u03b12-AR activity (Galvez et al., 1996; Hatfield et al., 1999; Liang et al., 1990; Ferry and McGaugh, 2008; Ferry et al., 1999a, 1999b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "77de596a-f609-4787-b7d9-6fd88fa22492",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C48",
+      "claim": "Noradrenergic signaling in the BLA influences fear-related memory formation.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, many groups have shown noradrenergic influence in fear-related memory formation (Sears et al., 2013; Roozendaal et al., 2008, 2006; Debiec and Ledoux, 2004; Garrido Zinn et al., 2016; Skelly et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "cc468c16-8702-4952-8f04-bcaff1321812",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C49",
+      "claim": "The LC-BLA circuitry carries an intrinsically negative valence.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that the LC-BLA circuitry carries an intrinsically negative valence suggests that this circuit can natively promote negative affect, rather than merely enhancing memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the conditioned place aversion data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "1ad9b213-bc4e-4479-8295-2b41d0d41256",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C50",
+      "claim": "The anxiety-like phenotype can be blocked with local \u03b2-AR antagonism.",
+      "claim_type": "EXPLICIT",
+      "source": "While there is some concern that photostimulation of ThIRES-Cre::LC-BLA:ChR2 fibers could cause backpropagating action potentials to LC-NE cell bodies resulting in NE release elsewhere in the brain for the conditioned place aversion, the observation that the anxiety-like phenotype can be blocked with local \u03b2-AR antagonism (Figure 6G) suggests there is some degree of circuit isolation in our study.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the propranolol blockade data in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "7c68a6c7-a3f5-49e0-9ba7-02a648bced41",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C51",
+      "claim": "Photostimulation of LC-BLA terminals does not replicate all of the behavioral phenotypes of cell body activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the observation that this stimulation does not replicate all of the behavioral phenotypes of cell body activation (McCall et al., 2015) (Figure 5C; i.e. no RTPA) further supports this interpretation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the lack of real-time place aversion in Figure 5C compared to prior cell body stimulation results.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "5370489b-7ed7-4ab9-9db3-cf456f916dda",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C52",
+      "claim": "G\u03b1s signaling in CaMKII\u03b1+ BLA neurons is sufficient for anxiogenesis, without driving either a real-time or conditioned place aversion.",
+      "claim_type": "EXPLICIT",
+      "source": "To this point, we recently demonstrated that G\u03b1s signaling (the same signaling mechanism that \u03b2-AR activates) in CaMKII\u03b1+ BLA neurons is sufficient for anxiogenesis, without driving either a real-time or conditioned place aversion (Siuda et al., 2015a, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "2bd7d84b-4cba-4332-acf3-e7624add5fd0",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C53",
+      "claim": "LC neurons with fibers in the BLA are capable of conditioning aversion, though possibly through other brain regions and possibly independent of \u03b2-AR activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with our work at LC-NE cell bodies (McCall et al., 2015), these studies and the current findings suggest that LC neurons with fibers in the BLA are capable of conditioning aversion, though possibly through other brain regions and possibly independent of \u03b2-AR activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined results of the current study and prior work.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "bdcbbd0f-3f89-4d2b-9097-45842d3600e7",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C54",
+      "claim": "The real-time place aversion elicited by LC-NE cell body activation is dependent on \u03b11-AR activation.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously demonstrated the real-time place aversion elicited by LC-NE cell body activation to be dependent on \u03b11-AR activation (McCall et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "969fa9bd-71e6-46bc-81b8-d2212accfe65",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C55",
+      "claim": "The anatomical substrate and receptor system responsible for real-time place aversion is distinct from the efferent LC-NE processes responsible for noradrenergic mediated anxiety-like behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these results suggest that both the anatomical substrate and receptor system responsible for this behavior is distinct from the efferent LC-NE processes responsible for noradrenergic mediated anxiety-like behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the differential behavioral and pharmacological results between real-time place aversion and anxiety-like behavior.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "97d6221a-a7b2-410a-ab49-0ce3d3496c9a",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C56",
+      "claim": "RTPA is essentially an instrumental conditioning paradigm that relies on operant learning of the subject as it engages the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "RTPA is essentially an instrumental conditioning paradigm that relies on operant learning of the subject as it engages the environment, while CPA is a passive, classical conditioning paradigm that possibly recruit distinct brain circuitry during the learning process (Day and Carelli, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature and general knowledge about behavioral paradigms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "b7269d06-2be3-45a3-8116-d6661ae18dc4",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C57",
+      "claim": "CPA is a passive, classical conditioning paradigm that possibly recruit distinct brain circuitry during the learning process.",
+      "claim_type": "EXPLICIT",
+      "source": "RTPA is essentially an instrumental conditioning paradigm that relies on operant learning of the subject as it engages the environment, while CPA is a passive, classical conditioning paradigm that possibly recruit distinct brain circuitry during the learning process (Day and Carelli, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature and general knowledge about behavioral paradigms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "66b4057e-bb09-4cd0-bff1-7c978beb195f",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C58",
+      "claim": "NE has slower temporal dynamics compared to fast-acting, small molecule neurotransmitters, such as GABA and glutamate.",
+      "claim_type": "EXPLICIT",
+      "source": "Another consideration is the longer time course of NE transmission and receptor activation compared to fast-acting, small molecule neurotransmitters, such as \u03b3-Aminobutyric acid (GABA) and glutamate (Otis and Mody, 1992; Isaacson et al., 1993; Zoli et al., 1998; Szapiro and Barbour, 2007; Agnati et al., 2010; Palij and Stamford, 1994; Courtney and Ford, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "3764d993-493c-4182-85e4-663864ab4f95",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C59",
+      "claim": "\u03b2-AR signaling through cAMP-gated calcium channels can increase firing acutely.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well known, for example, that \u03b2-AR signaling through cAMP-gated calcium channels that will likely increase firing acutely",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about \u03b2-AR signaling mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "81701c8d-a404-4612-b119-6cb250ea999d",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C60",
+      "claim": "\u03b2-AR signaling through Arrestin-mediated transduction can lead to long-term changes in gene and protein expression in addition to changes synaptic plasticity and neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "but that they also signal through Arrestin-mediated transduction. The latter can lead to long-term changes in gene and protein expression in addition to changes synaptic plasticity and neuronal activity (Siuda et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work and established knowledge about \u03b2-AR signaling.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "6ac4592e-9081-4cef-b88e-ef359536a698",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C61",
+      "claim": "The LC sends functional projections to the dopaminergic system.",
+      "claim_type": "EXPLICIT",
+      "source": "The LC sends functional projections to the dopaminergic system",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "08d30807-ef49-4243-b5d5-4ac749dde166",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C62",
+      "claim": "Numerous groups have demonstrated bidirectional control of real-time place preference and aversion behaviors within the mesolimbic dopamine system.",
+      "claim_type": "EXPLICIT",
+      "source": "and numerous groups have demonstrated bidirectional control of real-time place preference and aversion behaviors within this system (Siuda et al., 2015b; Jennings et al., 2013; Lammel et al., 2012; Stamatakis and Stuber, 2012; Tan et al., 2012; van Zessen et al., 2012; Isingrini et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "eec6ed25-7005-406c-bbb2-f4981b7f0e0d",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C63",
+      "claim": "LC-NE downstream influence on negative affective behaviors is an elaborate and complex system likely involving many different postsynaptic receptor systems and anatomical projection targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results here and elsewhere (McCall et al., 2015; Siuda et al., 2015a, 2016) demonstrate that LC-NE downstream influence on negative affective behaviors is an elaborate and complex system likely involving many different postsynaptic receptor systems and anatomical projection targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a summary conclusion inferred from the current study and cited prior work.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "eec68e89-d355-4d35-a5b0-3e711513c921",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "claim_id": "C64",
+      "claim": "The LC projection to the BLA is a clear functional efferent target for LC-mediated anxiety-like behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the LC projection to the BLA is a clear functional efferent target for LC-mediated anxiety-like behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a summary conclusion based on the data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d83f338e-e2d9-45d0-9eab-bcb426e832d1",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The LC sends Th+ projections to the BLA, confirmed by retrograde and anterograde tracing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C9 are supported by multiple tracing approaches (Fluorogold, retrobeads, anterograde AAV tracing) shown in Figure 1, corroborated by prior literature and Allen Brain Institute data. The anatomical evidence is robust and consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "1d10bf70-98ce-491d-ae8a-fed1501f2e36",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Photostimulation of LC-NE terminals in the BLA releases norepinephrine, as demonstrated by fast-scan cyclic voltammetry showing characteristic NE voltammograms that are attenuated by reserpine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C10-C12 are well-supported by voltammetry data in Figure 2. The characteristic oxidation/reduction peaks, uptake kinetics (t1/2 = 2.0\u00b10.2s), and reserpine-induced attenuation (to 31.6% of baseline) provide converging evidence for NE release. The methods are appropriate and controls are included.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "65b9d067-e591-421f-9b4c-41bbdb3a8f4f",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Photostimulation of LC-BLA terminals modulates BLA neuronal activity in vivo, with 21.4% of neurons increasing firing, 9.5% decreasing, and 69% showing no change. The long latency (129.3\u00b1108.9 ms) suggests polysynaptic/neuromodulatory mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C13-C17, C38 are supported by in vivo electrophysiology data in Figure 3. The classification criteria (z-score >1 or <-1) are reasonable, sample sizes are adequate (42 units from 6 mice), and the latency analysis appropriately distinguishes monosynaptic from polysynaptic/modulatory effects. The heterogeneous responses are consistent with neuromodulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "7b9b06fa-02dd-44d9-b064-df513ecf3c2e",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Neurons that increase firing to LC-BLA photostimulation likely represent BLA projection neurons, while those that decrease firing likely represent interneurons, based on baseline firing rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C39-C40 are inferred from baseline firing rate differences (Figure 3L) and cited literature, but lack direct cell-type identification. While the inference is reasonable and consistent with prior work, the authors acknowledge not knowing the genetic identity or projection targets of recorded neurons. Definitive classification requires additional experiments (e.g., phototagging, genetic markers).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "adac185c-a1bd-4911-9131-d05dc5628c3e",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "LC-NE terminal stimulation preferentially activates BLA neurons projecting to vHPC and CeA (anxiety-promoting regions) rather than NAc (reward-related), as shown by cFos overlap with retrograde tracers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 are supported by immunohistochemistry data in Figure 4 showing significantly greater cFos/CTB overlap for vHPC and CeA projectors versus NAc projectors. The experimental design is appropriate with proper controls. However, cFos is an indirect marker of activity, and the functional significance requires the behavioral data to be fully interpretable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "20554db1-c80c-4190-b91e-fd9084ccc4bd",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Photostimulation of LC-BLA terminals does not produce real-time place aversion at 5 Hz or 60 Hz, unlike LC cell body stimulation, suggesting real-time aversion is mediated by other LC projections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23, C51 are supported by behavioral data in Figure 5B-D showing no preference change in real-time place testing. The comparison to prior cell body stimulation work is appropriate. The inference that other projections mediate real-time aversion is reasonable but remains speculative without direct testing of alternative targets.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "7ca39248-e27f-4157-8b94-d530dfdf381b",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Photostimulation of LC-BLA terminals produces conditioned place aversion after two days of conditioning, without affecting locomotor activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C24-C26 are supported by CPA data in Figure 5F-H showing significant aversion in ChR2+ animals versus controls (p=0.0303) with no locomotor differences. The experimental design is appropriate with proper controls and counterbalancing. Sample sizes are adequate (n=8-9 per group).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "2d2ce251-7571-4268-9091-d2194e4a9ce8",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The conditioned aversion may involve mechanisms beyond local NE release in the BLA, potentially including antidromic activation or other brain regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C46, C53 acknowledge important caveats about the CPA mechanism. The authors appropriately note that antidromic activation or prolonged circuit changes could contribute. Without pharmacological blockade of the CPA (as done for anxiety), the local versus distributed mechanism remains unresolved. This represents appropriate scientific caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "420ce851-4a67-464a-91a3-c63099c07cb8",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Photostimulation of LC-BLA terminals at 5 Hz produces anxiety-like behavior in the open field test, with decreased center time but no change in locomotor activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C27-C28 are supported by OFT data in Figure 6A-D showing significant decrease in center time (p=0.0026) without locomotor changes. The anxiety-like phenotype is consistent with prior LC cell body stimulation work. Controls are appropriate and sample sizes adequate (n=10-11 per group).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "5f5d2713-495b-4cb0-8860-7227f34eda55",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "\u03b2-adrenergic receptors in the BLA mediate the anxiety-like phenotype induced by LC-BLA terminal stimulation, as demonstrated by local propranolol blockade in the elevated zero maze.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C29-C30, C50 are strongly supported by pharmacological data in Figure 6G showing complete blockade of anxiogenesis by intra-BLA propranolol. The experimental design with local drug delivery provides strong evidence for circuit specificity. Statistical analysis is appropriate (p<0.01 for key comparisons) with adequate sample sizes (n=7-11 per group).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "d9accaca-4623-49ea-b235-5f0fde1346b3",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Real-time place aversion from LC stimulation depends on \u03b11-ARs and involves different anatomical substrates than \u03b2-AR-mediated anxiety, based on differential pharmacology and projection-specific effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 integrate current findings with prior work showing \u03b11-AR dependence of RTPA. The dissociation between RTPA (absent with LC-BLA stimulation, \u03b11-AR dependent) and anxiety (present with LC-BLA stimulation, \u03b2-AR dependent) provides strong evidence for distinct mechanisms. The logic is sound and supported by data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "762cba61-bec8-4387-9e25-c6b08a32b259",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The diversity of BLA neuronal responses to LC-NE stimulation likely involves multiple receptor systems and polysynaptic circuitry, potentially biasing activity toward anxiety-promoting projection neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C42-C43 are speculative interpretations of the heterogeneous electrophysiology data. While the reasoning is plausible and supported by cited literature, the authors acknowledge not knowing the identity of recorded neurons. The speculation is appropriate for discussion but requires additional experiments (receptor-specific manipulations, projection-specific recordings) for validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "79bf0915-fced-425c-b4da-e4270ccf8520",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "RTPA and CPA represent distinct learning paradigms (instrumental vs. classical conditioning) with different temporal dynamics that may explain differential recruitment by LC-BLA stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 provide reasonable mechanistic explanations for the dissociation between RTPA and CPA. The distinction between operant and classical conditioning is well-established, and the temporal dynamics of NE signaling are supported by cited literature. This represents appropriate scientific reasoning about the observed behavioral differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    },
+    {
+      "id": "dbc22890-fd1a-479d-b2a8-8f0cdcba352b",
+      "content_id": "867056a9-123a-425e-9edb-ad1a7e4d45ca",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The LC-NE system influences negative affective behaviors through a complex network involving multiple receptor systems and projection targets, with the LC-BLA projection being a key functional target for anxiety-like behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 represent appropriate summary conclusions integrating the current findings with prior work. The data support the LC-BLA projection as sufficient for anxiety-like behavior (via \u03b2-ARs) while indicating complexity in the broader system. The conclusions are appropriately qualified and supported by the experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:42.249275Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f27d8776-a18a-4bea-91c3-ffb3eec8331d",
+      "result_id": "d83f338e-e2d9-45d0-9eab-bcb426e832d1"
+    },
+    {
+      "claim_id": "382e56b2-9841-49c6-8896-0946c012798b",
+      "result_id": "d83f338e-e2d9-45d0-9eab-bcb426e832d1"
+    },
+    {
+      "claim_id": "6737c7b0-283a-4c87-ae50-1e5d4f02975e",
+      "result_id": "1d10bf70-98ce-491d-ae8a-fed1501f2e36"
+    },
+    {
+      "claim_id": "d767953b-4b51-4a2d-95f8-63aa5649c0b9",
+      "result_id": "1d10bf70-98ce-491d-ae8a-fed1501f2e36"
+    },
+    {
+      "claim_id": "59d6ad64-225f-417d-8814-44637d739213",
+      "result_id": "1d10bf70-98ce-491d-ae8a-fed1501f2e36"
+    },
+    {
+      "claim_id": "52d6daa5-a515-4076-8513-eaae9986a231",
+      "result_id": "1d10bf70-98ce-491d-ae8a-fed1501f2e36"
+    },
+    {
+      "claim_id": "448e2dce-9605-41a7-b763-284ffc8db005",
+      "result_id": "65b9d067-e591-421f-9b4c-41bbdb3a8f4f"
+    },
+    {
+      "claim_id": "d569f72e-9aec-4d45-bca2-ddf1a144ce78",
+      "result_id": "65b9d067-e591-421f-9b4c-41bbdb3a8f4f"
+    },
+    {
+      "claim_id": "42763acf-3085-4558-9270-d7ac3a78354e",
+      "result_id": "65b9d067-e591-421f-9b4c-41bbdb3a8f4f"
+    },
+    {
+      "claim_id": "19b1e49c-1c6d-4b4c-a704-43c1e3c00220",
+      "result_id": "65b9d067-e591-421f-9b4c-41bbdb3a8f4f"
+    },
+    {
+      "claim_id": "2e7589f2-c925-44fb-bfad-9e2b8ac730b9",
+      "result_id": "65b9d067-e591-421f-9b4c-41bbdb3a8f4f"
+    },
+    {
+      "claim_id": "52da5c05-a9fb-4102-aea2-9493507ab796",
+      "result_id": "65b9d067-e591-421f-9b4c-41bbdb3a8f4f"
+    },
+    {
+      "claim_id": "8a335278-3dfa-4f5b-9178-85aba8237ef6",
+      "result_id": "65b9d067-e591-421f-9b4c-41bbdb3a8f4f"
+    },
+    {
+      "claim_id": "9b14d5b5-fdb1-4b74-b641-78375a438dcc",
+      "result_id": "7b9b06fa-02dd-44d9-b064-df513ecf3c2e"
+    },
+    {
+      "claim_id": "9bc97f14-4d4c-4891-8cae-08c279dfb168",
+      "result_id": "7b9b06fa-02dd-44d9-b064-df513ecf3c2e"
+    },
+    {
+      "claim_id": "013d90c7-eb44-458d-940e-995462cd64ed",
+      "result_id": "adac185c-a1bd-4911-9131-d05dc5628c3e"
+    },
+    {
+      "claim_id": "877dff56-3383-42b6-ab9e-caac7bdb0305",
+      "result_id": "adac185c-a1bd-4911-9131-d05dc5628c3e"
+    },
+    {
+      "claim_id": "e995d810-8dd8-49a2-a802-af11ed4eb984",
+      "result_id": "adac185c-a1bd-4911-9131-d05dc5628c3e"
+    },
+    {
+      "claim_id": "3b5e076a-5aee-43df-aa4a-ad27583a7032",
+      "result_id": "20554db1-c80c-4190-b91e-fd9084ccc4bd"
+    },
+    {
+      "claim_id": "c36df282-689d-4f22-b249-0c1bf7b00fae",
+      "result_id": "20554db1-c80c-4190-b91e-fd9084ccc4bd"
+    },
+    {
+      "claim_id": "bf6a528b-6adb-45e1-8362-8a41389e1f02",
+      "result_id": "20554db1-c80c-4190-b91e-fd9084ccc4bd"
+    },
+    {
+      "claim_id": "7c68a6c7-a3f5-49e0-9ba7-02a648bced41",
+      "result_id": "20554db1-c80c-4190-b91e-fd9084ccc4bd"
+    },
+    {
+      "claim_id": "2f46d61a-f8db-4522-a4d8-198cb22e71d6",
+      "result_id": "7ca39248-e27f-4157-8b94-d530dfdf381b"
+    },
+    {
+      "claim_id": "83a13466-0678-4f99-bb55-a5a340e7a651",
+      "result_id": "7ca39248-e27f-4157-8b94-d530dfdf381b"
+    },
+    {
+      "claim_id": "b5578094-380d-4ab9-a703-6ead9f14219a",
+      "result_id": "7ca39248-e27f-4157-8b94-d530dfdf381b"
+    },
+    {
+      "claim_id": "d64edf98-b109-4cd6-adef-b3060d74e97e",
+      "result_id": "7ca39248-e27f-4157-8b94-d530dfdf381b"
+    },
+    {
+      "claim_id": "f4a43d68-8422-49a7-ad2f-1fe317a60614",
+      "result_id": "2d2ce251-7571-4268-9091-d2194e4a9ce8"
+    },
+    {
+      "claim_id": "2bd7d84b-4cba-4332-acf3-e7624add5fd0",
+      "result_id": "2d2ce251-7571-4268-9091-d2194e4a9ce8"
+    },
+    {
+      "claim_id": "35ddc3d5-cfc4-4216-ae51-5f99e3129bfb",
+      "result_id": "420ce851-4a67-464a-91a3-c63099c07cb8"
+    },
+    {
+      "claim_id": "a52b9186-d1ed-4144-9738-b785b9951969",
+      "result_id": "420ce851-4a67-464a-91a3-c63099c07cb8"
+    },
+    {
+      "claim_id": "40707542-4b96-4a02-be35-20cbf4111e24",
+      "result_id": "420ce851-4a67-464a-91a3-c63099c07cb8"
+    },
+    {
+      "claim_id": "28314897-8772-4222-8ae8-1d20e96f5b98",
+      "result_id": "5f5d2713-495b-4cb0-8860-7227f34eda55"
+    },
+    {
+      "claim_id": "aa4bda17-7eb3-49a3-90ea-fc8110e89ed3",
+      "result_id": "5f5d2713-495b-4cb0-8860-7227f34eda55"
+    },
+    {
+      "claim_id": "c44e9965-4d62-4773-99c5-d8f300ae1e1e",
+      "result_id": "5f5d2713-495b-4cb0-8860-7227f34eda55"
+    },
+    {
+      "claim_id": "1ad9b213-bc4e-4479-8295-2b41d0d41256",
+      "result_id": "5f5d2713-495b-4cb0-8860-7227f34eda55"
+    },
+    {
+      "claim_id": "bdcbbd0f-3f89-4d2b-9097-45842d3600e7",
+      "result_id": "d9accaca-4623-49ea-b235-5f0fde1346b3"
+    },
+    {
+      "claim_id": "969fa9bd-71e6-46bc-81b8-d2212accfe65",
+      "result_id": "d9accaca-4623-49ea-b235-5f0fde1346b3"
+    },
+    {
+      "claim_id": "4857cb5c-495c-43b9-bea3-33d98176f438",
+      "result_id": "762cba61-bec8-4387-9e25-c6b08a32b259"
+    },
+    {
+      "claim_id": "aca9d34d-af84-4cd1-9c5d-726b64e563bd",
+      "result_id": "762cba61-bec8-4387-9e25-c6b08a32b259"
+    },
+    {
+      "claim_id": "97d6221a-a7b2-410a-ab49-0ce3d3496c9a",
+      "result_id": "79bf0915-fced-425c-b4da-e4270ccf8520"
+    },
+    {
+      "claim_id": "b7269d06-2be3-45a3-8116-d6661ae18dc4",
+      "result_id": "79bf0915-fced-425c-b4da-e4270ccf8520"
+    },
+    {
+      "claim_id": "66b4057e-bb09-4cd0-bff1-7c978beb195f",
+      "result_id": "79bf0915-fced-425c-b4da-e4270ccf8520"
+    },
+    {
+      "claim_id": "eec6ed25-7005-406c-bbb2-f4981b7f0e0d",
+      "result_id": "dbc22890-fd1a-479d-b2a8-8f0cdcba352b"
+    },
+    {
+      "claim_id": "eec68e89-d355-4d35-a5b0-3e711513c921",
+      "result_id": "dbc22890-fd1a-479d-b2a8-8f0cdcba352b"
+    }
+  ],
+  "comparisons": []
+}

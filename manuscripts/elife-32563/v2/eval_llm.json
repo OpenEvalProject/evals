@@ -1,0 +1,308 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The ICIER computational model was developed based on TASEP principles, where each lattice site represents a codon, particles (ribosomes) occupy 10 codons, and scanning ribosomes dissociate upon collision with upstream elongating ribosomes. This collision-based dissociation hypothesis was justified by experimental observations of ribosome queuing and initiation stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 describe the foundational design of the ICIER model with appropriate justification. The model parameters (C31, C32) are based on experimental measurements (C32 cites ribosome footprint data), and the collision hypothesis (C33) is reasonably justified by experimental observations (C34, C35) that rule out alternative dissociation scenarios. The model design is internally consistent and grounded in prior experimental work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Model simulations demonstrate that uORFs of sufficient length (20-30 codons) create a non-monotonous relationship between upstream ribosome flux (rin) and downstream flux (rout), where decreasing rin paradoxically increases rout. This effect is stronger for longer uORFs but comes at the cost of greater repression under normal conditions, supporting a derepression mechanism for stress resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 present the core computational findings shown in Figure 2. The simulations demonstrate the predicted non-monotonous behavior (C36), length-dependence (C37), and trade-off between stress resistance and basal repression (C38). The interpretation as a derepression mechanism (C39) follows logically from the model results and is consistent with prior experimental observations (C40). The computational results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Decreased elongation rates in uORFs strongly enhance stress resistance in the model, with stress resistance increasing monotonously as elongation slows. However, absolute maximum rout is optimized when elongating ribosomes move slightly slower than scanning ribosomes, suggesting an optimal velocity ratio for uORF function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 and C64-C66 describe simulation results from Figure 3 showing how elongation rate affects stress resistance. The findings are well-supported by the computational data and consistent with biological expectations (C41, C64, C65 cite experimental support for variable elongation rates). The identification of an optimal velocity ratio (C44, C66) is a novel prediction from the model that follows logically from the simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Increased leakiness of uORF start codons elevates downstream ribosome flow but substantially reduces stress resistance, with resistance disappearing when \u226430% of ribosomes initiate at the uORF. This leads to the prediction that non-AUG start codons are unlikely to provide stress resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 present simulation results from Figure 4 showing the effect of initiation efficiency on stress resistance. The data clearly support the quantitative relationship described. However, C49 is a speculative prediction that, while logically following from the model, lacks direct experimental validation and may oversimplify the complexity of non-AUG initiation contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Increased dwell time of initiating ribosomes at the start codon reduces both the inhibitory effect and stress resistance of uORFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 describes simulation results from Figure 4E-F exploring initiation delay. The finding is supported by the computational data and the interpretation is mechanistically reasonable within the model framework (increased distance between initiating and scanning ribosomes reduces collision probability).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Reinitiation downstream of uORFs dramatically reduces stress resistance, with significant effects observed at reinitiation rates as low as 1% and near-complete loss at 5%. This leads to the prediction that stress-resistant single uORFs do not permit reinitiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 present simulation results from Figure 5 showing the strong negative effect of reinitiation on stress resistance. The quantitative findings are well-supported by the computational data. The prediction in C53 follows logically from the model results and is appropriately contrasted with the GCN4 delayed reinitiation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Spontaneous dissociation of scanning ribosomes reduces stress-protective properties without significantly affecting uORF inhibition, while increased elongating ribosome drop-off reduces both properties. When collisions do not cause dissociations, uORFs lose stress-protective properties entirely. Shorter scanning ribosomes show greater inhibitory and stress-protective effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 describe simulation results from Figure 6 exploring various dissociation scenarios and ribosome dimensions. The findings are supported by the computational data and provide important insights into model assumptions. The observation that collision-based dissociation is essential for stress resistance (C56) validates a key model assumption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C70"
+    ],
+    "result": "Analysis of 325 single-uORF transcripts from ribosome profiling data revealed strong and statistically significant positive correlation between uORF length and mRNA stress resistance in all three independent studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C70 describe the experimental validation approach and key positive finding shown in Figure 7A. The correlation is statistically significant across all three datasets, providing strong support for the model's prediction regarding uORF length. The data selection criteria (C70) are clearly described and appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Correlation between uORF translation efficiency and stress resistance was significant in only one of three studies, while correlations between ribosome pause scores and stress resistance were weak and non-significant across all studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 honestly report the limited experimental support for two model predictions shown in Figure 7B-C. The authors appropriately acknowledge these negative/weak results and provide reasonable explanations for the lack of correlation (technical limitations in measuring these parameters from ribosome profiling data, selection biases). This transparent reporting strengthens confidence in the overall work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Highly stress-resistant mRNAs (Z-score >2) are completely depleted of very short uORFs across all three studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 describes an important observation from the ribosome profiling data analysis that supports the model prediction that very short uORFs cannot provide stress resistance due to ribosome collision effects. This finding is consistent across all three independent datasets, providing strong validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "The model reveals a fundamental trade-off where longer uORFs provide stronger stress resistance but lower basal translation efficiency, requiring increased mRNA synthesis to maintain protein output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 present a key conceptual conclusion from the modeling work. This trade-off is well-supported by the simulation results (particularly Figure 2) and represents an important biological insight about the evolutionary constraints on regulatory uORF design. The inference is logical and well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Stress resistance consistently occurs within a narrow range of scanning ribosome loading rates (rin ~0.02) across all simulations regardless of other parameter values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 identifies an important emergent property of the model observed across all simulations. This finding suggests that stress resistance is tuned to specific cellular conditions and provides a quantitative prediction. The observation is well-supported by the comprehensive simulation results presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The 5' end sequence of mRNA can influence PIC assembly rates and stress resistance, as demonstrated by experimental evidence showing that adding a hairpin to the IFRD1 leader abolished stress resistance despite an intact uORF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 discuss the role of sequences flanking the uORF. C68 is supported by citation to experimental work on eIF4F assembly, and C69 provides direct experimental evidence for the importance of 5' sequences. These claims appropriately contextualize the model predictions within broader mRNA features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C18",
+      "C19",
+      "C30"
+    ],
+    "result": "Prior work established that most stress-resistant mRNAs possess translated uORFs, with single uORFs sometimes sufficient for resistance, though only a small fraction of uORF-containing mRNAs are stress-resistant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C18-C19 describe the authors' prior work that motivated this study, while C30 highlights the selectivity of stress resistance. All claims are appropriately supported by citations to published work (Andreev et al., 2015b; Sidrauski et al., 2015). This prior work provides essential context for the current modeling study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The ICIER model predicts that reducing ribosome flux upstream of certain uORFs paradoxically increases downstream initiation, supporting derepression as a general mechanism of stress resistance achievable with long, slowly decoded uORFs having non-leaky start codons and no reinitiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 summarize the main predictions from the computational model. These predictions are well-supported by the comprehensive simulation results presented throughout the manuscript (Figures 2-6) and represent the core contribution of the work. The predictions are specific, testable, and mechanistically grounded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C16",
+      "C17"
+    ],
+    "result": "Background knowledge claims about translation initiation and the Integrated Stress Response mechanism, including that translation initiation is rate-limiting, is downregulated during ISR via eIF2\u03b1 phosphorylation, and involves the eIF4F complex and cap recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 and C16-C17 present established background knowledge about translation mechanisms. These are appropriately cited to reviews and primary literature and represent well-accepted facts in the field. They provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background on uORF prevalence and regulation, including that \u226520% of mammalian mRNAs have conserved upstream AUGs, non-AUG initiation increases potential start sites, ribosome profiling confirms abundant uORF translation, and stress conditions globally increase leader translation with uORFs being particularly important in ISR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 provide essential background on uORF biology supported by appropriate citations to multiple studies. These establish the biological context and prevalence of the phenomenon being modeled. The claims accurately represent the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background on known mechanisms of uORF-mediated stress resistance, including the classical delayed reinitiation mechanism in yeast GCN4 requiring two essential uORFs, and examples of single uORFs sufficient for stress resistance in mammalian genes (DDIT3, PPP1R15A, ZFAND2A, IFRD1, PPP1R15B).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26 describe prior work on uORF mechanisms, appropriately cited to primary literature and reviews. These establish that single-uORF-mediated stress resistance is a known phenomenon requiring mechanistic explanation, motivating the current modeling study. The citations are appropriate and accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The DDIT3 uORF has a suboptimal start codon allowing leaky scanning, encodes a stalling peptide that inhibits downstream translation under normal conditions, and it has been hypothesized that increased stringency of start codon recognition during stress allows more leaky scanning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 describe experimental findings about DDIT3 regulation supported by appropriate citations. C29 presents a hypothesis from prior work. These claims provide an important example of single-uORF-mediated regulation that differs mechanistically from the model proposed in this study, appropriately contextualizing the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C32",
+      "C45",
+      "C46",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Model parameters and biological constants used in simulations, including that ribosomes protect 10 codons, move at 5 codons/second in mammals, load every 0.8s in yeast, ribosome drop-off is very low, and ribosome structures are dynamic with variable mRNA protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C45-C46, and C71-C73 describe quantitative parameters and biological facts used to parameterize the model, all appropriately supported by citations to experimental studies. These demonstrate that the model is grounded in experimental measurements, though some parameters (like scanning velocity) are acknowledged as uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "Prior work found that the best predictor of stress-resistant mRNAs is the combination of efficiently translated uORF with very low downstream acORF translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 cites the authors' prior experimental work (Andreev et al., 2015b) and is used to validate consistency with the current model predictions. This represents an important empirical observation that the model successfully recapitulates.",
+    "result_type": "MINOR"
+  }
+]

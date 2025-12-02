@@ -1,0 +1,1414 @@
+{
+  "submission": {
+    "id": "ab1d9f56-d970-40a0-b65a-c78d0c991f1e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:18:22.448250Z",
+    "updated_at": "2025-12-01T19:18:22.448250Z"
+  },
+  "content": [
+    {
+      "id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "submission_id": "ab1d9f56-d970-40a0-b65a-c78d0c991f1e",
+      "content_type": "manuscript",
+      "content_text": "# The dynamic three-dimensional organization of the diploid yeast genome\n\n## Authors\n\n- Seungsoo Kim<sup>1</sup> ([ORCID: 0000-0002-5559-5289](https://orcid.org/0000-0002-5559-5289))\n- Ivan Liachko<sup>1</sup>\n- Donna G Brickner<sup>2</sup>\n- Kate Cook<sup>1</sup>\n- William S Noble<sup>1</sup>\n- Jason H Brickner<sup>2</sup> ([ORCID: 0000-0001-8019-3743](https://orcid.org/0000-0001-8019-3743))\n- Jay Shendure<sup>1</sup> ([ORCID: 0000-0002-1516-1865](https://orcid.org/0000-0002-1516-1865)) \u2020\n- Maitreya J Dunham<sup>1</sup> ([ORCID: 0000-0001-9944-2666](https://orcid.org/0000-0001-9944-2666)) \u2020\n\n### Affiliations\n\n1. Department of Genome Sciences University of Washington Seattle United States\n2. Department of Molecular Biosciences Northwestern University Evanston United States\n3. Howard Hughes Medical Institute, University of Washington Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe budding yeast Saccharomyces cerevisiae is a long-standing model for the three-dimensional organization of eukaryotic genomes. However, even in this well-studied model, it is unclear how homolog pairing in diploids or environmental conditions influence overall genome organization. Here, we performed high-throughput chromosome conformation capture on diverged Saccharomyces hybrid diploids to obtain the first global view of chromosome conformation in diploid yeasts. After controlling for the Rabl-like orientation using a polymer model, we observe significant homolog proximity that increases in saturated culture conditions. Surprisingly, we observe a localized increase in homologous interactions between the HAS1-TDA1 alleles specifically under galactose induction and saturated growth. This pairing is accompanied by relocalization to the nuclear periphery and requires Nup2, suggesting a role for nuclear pore complexes. Together, these results reveal that the diploid yeast genome has a dynamic and complex 3D organization.\n\n## Introduction\n\nThe genome is actively organized in the nucleus in both space and time, and this organization impacts fundamental biological processes like transcription, DNA repair, and recombination (Taddei et al., 2010). The budding yeast S. cerevisiae has been a useful model for studying eukaryotic genome conformation and its functional implications (Taddei et al., 2010). The predominant feature of yeast 3D genome organization is its Rabl-like orientation (Jin et al., 1998) (Figure 1A): during interphase, the centromeres cluster at one end of the nucleus, attached to the spindle pole body, and chromosome arms extend outward toward the nuclear periphery where the telomeres associate (Schober et al., 2008; Therizols et al., 2010), like in anaphase. In addition, the ribosomal DNA array forms the nucleolus, opposite the spindle pole (Yang et al., 1989), splitting chromosome XII into two separate domains that behave as if they were separate chromosomes. This organization largely persists through the cell cycle (Jin et al., 1998) and even in stationary phase, albeit with increased telomere clustering and decreased centromere clustering (Guidi et al., 2015; Rutledge et al., 2015).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/23623/elife-23623-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of the Rabl-like orientation. CEN, centromere; SPB, spindle pole body; TEL, telomere; NUC, nucleolus. (B) Hi-C contact map for saturated S. cerevisiae and S. uvarum mixture control, at 32 kb resolution. Each axis represents the S. cerevisiae genome followed by the S. uvarum genome in syntenic order, separated by a black line. Ticks indicate centromeres. Odd-numbered centromeres are labeled. Rows and columns with insufficient data are colored grey. (C) Hi-C contact map for saturated S. cerevisiae x S. uvarum hybrid, as in (B). (D) The portion of the map outlined in black in (C), is enlarged with annotated features of the Rabl-like orientation.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23623/elife-23623-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Proportion of simulated reads from each hybrid (80 bp for interspecific and 150 bp for intraspecific hybrids, in 10 bp windows across the reference genome) that can be remapped correctly to the reference with a mapping quality score (MAPQ) of at least 30. (B) Number of reads (in thousands) from separate S. cerevisiae (left) or S. uvarum (right) Hi-C libraries mapping to each 32 kb genomic bin in the S. cerevisiae x S. uvarum hybrid reference genome. x ticks indicate centromeres; odd-numbered centromeres are labeled. (C) Same as (B) for S. cerevisiae (left) and S. paradoxus (right) mapping to S. cerevisiae x S. paradoxus. (D) Same as (B) for S. cerevisiae Y12 (left) and S. cerevisiae DBVPG6044 (right) mapping to Y12 x DBVPG6044.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23623/elife-23623-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Hi-C contact map for a mixture of S. cerevisiae and S. paradoxus in exponential growth, at 32 kb resolution. Each axis represents the S. cerevisiae genome followed by the S. paradoxus genome, in syntenic order, separated by a black line; tick marks indicate centromere positions, and odd-numbered chromosome centromeres are labeled. Intrachromosomal interactions are outlined by black squares along the diagonal. Rows and columns with an average of less than one read pair per bin were filtered out, and are colored grey. (B) Hi-C contact map for a mixture of S. cerevisiae Y12 and S. cerevisiae DBVPG6044 haploids in exponential growth, as in (A).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/23623/elife-23623-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A and B), Hi-C contact maps at 32 kb resolution for the S. cerevisiae x S. uvarum hybrid in saturated cultures, using the restriction enzyme Sau3AI (A) or HindIII (B). Each axis represents the S. cerevisiae genome followed by the S. uvarum genome, in syntenic order, separated by a black line; ticks indicate centromeres, and odd-numbered centromeres are labeled. Rows and columns with insufficient data are colored grey. (C and D) Same as (A) and (B) for two biological replicates of S. cerevisiae x S. uvarum hybrid in exponential growth, using the restriction enzyme Sau3AI.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/23623/elife-23623-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Start and end positions of homologous genes on the original S. cerevisiae and S. paradoxus reference genomes. Each point represents the start or end of a homologous gene pair. Horizontal and vertical lines indicate starts of chromosomes, and ticks indicate centromere positions. Odd numbered chromosomes are numbered. Red arrows indicate unexpected rearrangements. (B) Raw contact map for S. paradoxus chromosome IV using the original reference genome. Arrows above the heat map represent segments of the chromosome, labeled A-D in order and orientation of synteny. (C) Same as (A) for S. cerevisiae and S. uvarum. Red arrows indicate an unexpected rearrangement in chromosome III, and S. uvarum chromosomes X and XII, which are homologous to S. cerevisiae chromosome XII and X, respectively. (D) Same as (B) for S. uvarum chromosome III.\n\nGenome-wide chromosome conformation capture methods like Hi-C have both confirmed these microscopy observations and permitted systematic analyses of the functional clustering of genomic elements like tRNA genes and origins of replication (Duan et al., 2010). However, multiple studies have argued that a simple volume-exclusion polymer model of chromosomes in a Rabl-like orientation is sufficient to explain microscopy and Hi-C data of the budding yeast genome (Tjong et al., 2012; Wong et al., 2012), at least in haploids grown under standard lab conditions. These studies have argued that even the functional clustering that is observed may simply be a consequence of the Rabl-like orientation coupled with biases in the chromosomal positions of genomic elements, rather than active molecular interactions (Rutledge et al., 2015; Tjong et al., 2012).\n\nAlthough this simplicity is attractive, diploidy and variable environmental conditions may add complexity to yeast genome conformation. In diploid yeast, homologous chromosomes can pair not only in meiosis, but also during mitotic growth (Burgess and Kleckner, 1999; Burgess et al., 1999; Dekker et al., 2002; Weiner and Kleckner, 1994), as they do in Drosophila (Metz, 1916). However, the extent of mitotic homolog pairing has been debated due to discrepancies between studies (Barzel and Kupiec, 2008). One explanation for these discrepancies is potential artifacts in the microscopy methods used to detect pairing. In fluorescence in situ hybridization (FISH), signal loss can lead to false inference of colocalization (Lorenz et al., 2003). It has also been suggested that tagging of genomic loci with repetitive arrays of GFP for live-cell imaging can directly cause pairing via GFP dimerization (Mirkin et al., 2014). Furthermore, the Rabl-like orientation alone can create the appearance of homolog pairing if not controlled for, by juxtaposing chromosomal loci at the same distance from centromeres, including homologous loci (Lorenz et al., 2003). Discrepancies in the extent of pairing between studies might be attributable to variation in pairing strength across the genome; however, mitotic homolog pairing has only been examined at a few loci.\n\nIn both haploid and diploid yeasts, genome conformation can also change in response to environmental conditions. Genes that respond to signals like galactose induction (GAL1, HXK1), inositol starvation (INO1), oxidative stress, and heat shock (HSP104) have been observed by microscopy to relocate to the nuclear periphery upon activation via interactions with nuclear pore complexes (Ahmed et al., 2010; Brickner and Walter, 2004; Brickner et al., 2016; Casolari et al., 2004; Dieppois et al., 2006; Dultz et al., 2016; Taddei et al., 2006). Nuclear pore interactions can mediate clustering of genes that share Gene Recruitment Sequences, including homologous alleles (Brickner et al., 2015, 2012, 2016; Randise-Hinchliff et al., 2016), and even impact the conformation of chromosomes well beyond the induced gene (Dultz et al., 2016). However, because such changes in conformation are primarily detected by microscopy, systematic studies of how inducible gene relocalization impacts global genome conformation have been lacking.\n\nHere, we present a genome-wide analysis of diploid chromosome conformation in budding yeasts in multiple environmental conditions. We utilize hybrid yeasts resulting from mating diverged yeast species to perform homolog-resolved Hi-C. Our genomic approach allows us to more fully account for the Rabl-like orientation in assessing the extent of homolog pairing, and to detect whether some regions of the genome pair more strongly than others. We find that the strength of pairing varies across both growth conditions and the genome. Notably, the homologous HAS1-TDA1 alleles on chromosome XIII pair specifically in galactose induction and saturated growth, but not during exponential growth in glucose. The condition-specific pairing is accompanied by relocalization to the nuclear periphery and in galactose requires Nup2, a component of the nuclear pore, suggesting a role for the nuclear pore complex. However, the genetic requirements of HAS1-TDA1 relocalization and pairing differ from that of previously known relocalized genes, suggesting a potentially novel mechanism. Together, our results demonstrate the underappreciated complexity of the 3D organization of the yeast genome.\n\n## Results\n\n### Hi-C in hybrid yeasts provides a global view of diploid chromosome conformation\n\nWe performed Hi-C on interspecific hybrids between diverged Saccharomyces species to obtain the first genome-wide view of chromosome conformation in diploid yeasts. The sequence identity of homologous chromosomes in diploid S. cerevisiae precludes observation of interactions between them using sequencing-based methods. However, divergent Saccharomyces species can form stable hybrids (Gonz\u00e1lez et al., 2006; Mertens et al., 2015), e.g. between S. cerevisiae and S. paradoxus (90% nucleotide identity in coding regions [Kellis et al., 2003]) or its more distant relative S. uvarum (also known as S. bayanus var. uvarum; 80% nucleotide identity in coding regions [Kellis et al., 2003]). These interspecific hybrids are sufficiently diverged to allow straightforward sequence-level discrimination of homologs (Figure 1\u2014figure supplement 1A) but have maintained nearly complete synteny (Fischer et al., 2000). For comparison, we also analyzed hybrids between S. cerevisiae strains Y12 and DBVPG6044, which are much less diverged (~99% nucleotide identity) (Liti et al., 2009). We confirmed the minimal impact of mapping and experimental artifacts by mapping Hi-C data from each individual species or strain (Figure 1\u2014figure supplement 1B\u2013D) and mixtures thereof (Figure 1B, Figure 1\u2014figure supplement 2) to the hybrid reference genomes.\n\nThe most prominent features of Hi-C data from diploid yeast are the signatures of a Rabl-like orientation (Figure 1C,D). As in all Hi-C datasets, the contact map exhibits a strong diagonal signal indicating frequent intrachromosomal interactions between adjacent loci. In addition, pericentromeric regions interact frequently with one another, but infrequently with regions far from centromeres, as expected from the clustering of centromeres at the spindle pole body. Telomeric regions also preferentially interact, consistent with their clustering at the nuclear periphery. Finally, the rDNA-carrying chromosomes each behave as two separate chromosomes divided by the nucleolus, with frequent interactions on either side of the rDNA array but not across it.\n\n### Homolog proximity exceeds the effects of the Rabl-like orientation\n\nIn addition to these previously described phenomena, we observed an off-diagonal line of increased interaction suggestive of homolog pairing (Figure 1C). Homologous loci tend to be closer together than nonhomologous loci in multiple assays, including microscopy (Burgess et al., 1999; Weiner and Kleckner, 1994), recombination efficiency (Burgess and Kleckner, 1999), and chromatin conformation capture (Dekker et al., 2002). Mitotic homolog pairing could be the result of transient pairing between homologous nucleosome-free DNA (Danilowicz et al., 2009; Gladyshev and Kleckner, 2014) or interactions among proteins bound to DNA (Mirkin et al., 2014). However, it has also been suggested that the observation of homolog proximity is an artifact of the Rabl-like orientation or microscopy methods (Lorenz et al., 2003; Mirkin et al., 2014). This debate remains unresolved in part due to the targeted nature of previous studies, wherein each pair of homologous loci is only compared to a limited number of nonhomologous loci.\n\nTo systematically investigate whether homolog proximity can be explained by the Rabl-like orientation, we compared our experimental data from S. cerevisiae x S. uvarum hybrids to simulated data from a volume-exclusion polymer model of the Rabl-like orientation. This model did not explicitly encode homolog pairing (Tjong et al., 2012) and served as a negative control. We quantified homolog proximity by comparing the frequency of each interaction between a pair of homologous loci to the set of nonhomologous interactions involving either locus (Figure 2\u2014figure supplement 1). This naive comparison appears to suggest strong homolog proximity in both experiments (Figure 2A, left panel), but in fact, the equally strong signal from the polymer model suggests that the apparent signal is a consequence of the Rabl-like orientation. We therefore controlled for the Rabl-like orientation by restricting comparisons to interactions with loci at a similar distance from the centromere (at a resolution of 32 kb), as previous studies have done (Burgess et al., 1999; Lorenz et al., 2003). Using this approach, we find that the polymer simulation still predicts strong homolog proximity (Figure 2A, middle panel), suggesting that the long-used approach of comparing homologous interactions to nonhomologous interactions at the same centromeric distance may not fully account for the Rabl-like orientation. Polymer models of the Rabl-like orientation suggest that short chromosomes interact preferentially, due to their dual telomeric tethering at the nuclear periphery and centromeric tethering at the spindle pole (Tjong et al., 2012). Therefore, we further restricted comparisons to loci on chromosome arms of similar length (within 25%). This additional restriction dramatically reduced the signal of homolog proximity for the polymer model, but not for the experimental data (Figure 2A, right panel).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/23623/elife-23623-fig2-v2.jpg)\n\n**Figure 2.:** (A) Violin plot of the distribution of 10,000 sampled estimates of genomic homolog proximity (ratio of homologous to nonhomologous interaction frequencies) in the S. cerevisiae x S. uvarum hybrid, as a function of increasing comparison stringency (left to right) to account for Rabl-like orientation (Figure 2\u2014figure supplement 1). Saturated culture data are shown in red, exponential growth in blue, and simulated data from a homology-agnostic polymer model in grey. dCEN, distance from centromere. Boxplot indicates median and interquartile range. Whiskers correspond to the highest and lowest points within 1.5\u00d7 interquartile range. (B) Variation in homolog proximity across the S. cerevisiae x S. uvarum hybrid genome at 32 kb resolution, in saturated culture (red), exponential growth (blue), and the polymer model (grey). Nonhomologous interactions were restricted to similar centromere distance and chromosome arm length. Bins with insufficient data (<2 comparisons) are left blank. Data are plotted by S. cerevisiae genome position. x ticks indicate ends of chromosomes. (C and D) Schematics and Hi-C contact maps (at 32 kb resolution) of interactions between S. uvarum chromosome XII (SuXII) and either S. cerevisiae chromosome XII (ScXII) or S. cerevisiae chromosome V (ScV), in wild-type S. cerevisiae x S. uvarum hybrids (C) and a strain with a translocation between ScXII and ScV (D), both in saturated cultures. Exponential growth data are shown in Figure 2\u2014figure supplement 2. Ovals indicate centromeres and slanted lines indicate the locations of rDNA arrays. Double-headed arrows indicate enhanced interactions. Dashed lines indicate translocation breakpoints. (E) Violin plot of homolog proximity across conditions, polymer models, and hybrids. S. cerevisiae x S. cerevisiae indicates hybrid between Y12 and DBVPG6044 strains. Calculated as in (A), but excluding chromosome XII and all 32 kb bins that include centromeres. Saturated culture data are shown in red, exponential growth in blue, nocodazole-arrested in green, and polymer models in grey. Boxplot indicates median and interquartile range. Whiskers correspond to the highest and lowest points within the 1.5\u00d7 interquartile range.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23623/elife-23623-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Representation of how homologous interactions (black squares) were compared to various subsets of nonhomologous interactions (grey squares), either including all interactions with either homologous locus (red squares) (A), restricted to interactions with loci at a similar centromeric distance, or dCEN (same number of 32 kb bins) (B), or restricted to interactions with loci at a similar centromeric distance and on a chromosome arm of similar length (within 25%) (C). Left panels show all interactions between the S. cerevisiae and S. uvarum genomes; middle panels show enlarged view of the area outlined in the left panels. Tick marks indicate centromere positions. Right panels represent the nonhomologous interactions being used for comparison; different colors represent nonhomologous chromosomes, and double-headed arrows represent interactions with the locus of interest (circled).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23623/elife-23623-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A and B) Schematics and contact maps of rDNA-carrying chromosomes S. uvarum chromosome XII (SuXII) and S. cerevisiae chromosome XII (ScXII), and S. cerevisiae chromosome V (ScV), in wild-type S. cerevisiae x S. uvarum hybrids (A) and a strain with a translocation between ScXII and ScV (B), both in exponential growth. Ovals indicate centromeres and slanted lines indicate the rDNA arrays. Double-headed arrows indicate enhanced interactions. Dashed lines in the contact maps indicate the translocation breakpoints. (C) Schematic of how the rDNA-carrying chromosomes S. cerevisiae (Sc) chrXII and S. uvarum (Su) chrXII preferentially interact due to shared tethering. The proximal halves (left diagram) of the chromosomes, which contain the centromeres (CEN), are tethered at the spindle pole body (SPB) at their centromeres, at the periphery at their telomeres (TEL), and at the nucleolus (NUC) at their rDNA arrays (rDNA). The distal halves (right diagram) are tethered at their telomeres and rDNA, but not their centromeres. These combinations of tethering points are not found in other chromosomes (shown in grey). Su, S. uvarum; Sc, S. cerevisiae.\n\nComparing homolog proximity across the genome, we noticed extensive interactions between the homologous chromosomes carrying the rDNA arrays (Figure 2B). To test whether this enrichment for interactions is due to sequence-dependent homolog pairing, we generated a translocation that swapped most of the centromeric half of S. cerevisiae chromosome XII with an equivalently sized portion of S. cerevisiae chromosome V, thereby moving the rDNA array to S. cerevisiae chromosome V. In this translocation-bearing strain, interactions between S. uvarum chromosome XII and S. cerevisiae chromosome V are enriched instead of S. cerevisiae chromosome XII (Figure 2C,D and Figure 2\u2014figure supplement 2A,B), suggesting that homolog proximity of chromosomes carrying the rDNA arrays is due to the presence of the rDNA rather than the particular sequence of the chromosome that carries it. We propose that the rDNA-carrying chromosomes are uniquely positioned within the nucleus due to their tethering at the nucleolus (Duan et al., 2010) (Figure 2\u2014figure supplement 2C). This shared tethering would then cause enhanced interactions between the homologous proximal and distal segments of these chromosomes and inflate the signal for apparent homology-dependent pairing.\n\nBased on these findings, we excluded the rDNA-carrying chromosomes from estimates of homolog proximity. Even with these stringent constraints, we find that the observed interaction between homologous alleles exceeds that predicted based on the Rabl-like orientation (Figure 2E). Of note, the left arm of chromosome III and the right arm of chromosome IX exhibit particularly strong homolog proximity (Figure 2B); proximity at chromosome III is possibly due to pairing of the silenced mating-type loci (Miele et al., 2009).\n\nIn all hybrids, homolog proximity is substantially greater in saturated cultures approaching stationary phase than in exponential growth (Figure 2E), consistent with previous observations (Burgess et al., 1999). One explanation for this result is differences in the strength of sequence-dependent homolog pairing between growth conditions, perhaps mediated by differences in nucleosome positioning and DNA-bound proteins. However, this difference could also be a consequence of the reduced cell cycling coupled with loss of homolog proximity during S-phase (Burgess et al., 1999) or smaller nuclear size in cells approaching stationary phase (Guidi et al., 2015). To test whether we also observe cell cycle dependence of homolog proximity, we performed Hi-C on nocodazole-arrested cells, which were previously reported to exhibit reduced homolog proximity (Burgess et al., 1999). We find that nocodazole arrest does not substantially reduce homolog proximity in the diverged hybrid S. cerevisiae x S. uvarum (Figure 2E). However, it remains possible that the lack of S-phase cells in saturated cultures contributes to the difference in homolog proximity between exponentially growing and saturated cultures.\n\nWe next sought to evaluate whether changes in nuclear size across growth conditions could explain the observed variation in homolog proximity. The nucleus is known to decrease in size in saturated cultures (Guidi et al., 2015), so we created alternate versions of the polymer model of the Rabl-like orientation with proportionally smaller nuclei, at 80% and 64% of the original size. In these models, smaller nuclear size led to decreased, rather than increased, homolog proximity (Figure 2E). These models suggest that the difference in homolog proximity between saturated and exponentially growing cultures cannot be explained by the effect of differences in nuclear size, and provide additional support for homolog pairing beyond the Rabl-like orientation.\n\n### Relocalization of GAL1 upon galactose induction alters genome conformation\n\nWe also searched our dataset for evidence of highly specific changes in genome conformation at the scale of individual genes. Microscopy studies have revealed inducible genes that relocate to the nuclear periphery upon activation due to association with nuclear pores, for\u00a0example GAL1 (Brickner et al., 2016; Casolari et al., 2004; Dultz et al., 2016), INO1 (Brickner and Walter, 2004), HXK1 (Taddei et al., 2006), TSA2 (Ahmed et al., 2010), and HSP104 (Dieppois et al., 2006), which can increase gene expression (Ahmed et al., 2010; Brickner and Walter, 2004; Brickner et al., 2016; Taddei et al., 2006). Although DNA interactions with components of the nuclear pore complex have been identified genome-wide by chromatin immunoprecipitation (Casolari et al., 2004), it remains unclear whether relocalization of specific genes impacts global genome conformation.\n\nWe first focused on the galactose metabolism gene GAL1. This gene and its neighbors GAL7 and GAL10 move upon galactose induction from their location near the spindle pole body to a nuclear pore complex at the nuclear periphery (Casolari et al., 2004; Dultz et al., 2016) (Figure 3A). Consistent with this expectation, we found using Hi-C that both GAL1 loci interacted less with pericentromeric regions upon galactose induction (Figure 3B\u2013D). Despite previous reports that the homologous GAL1 loci preferentially interact with each other during galactose induction (Brickner et al., 2016; Zhang and Bai, 2016), we do not see a clear signal for increased pairing (Figure 3\u2014figure supplement 1), perhaps because of the high basal interaction frequency between pericentromeric loci or the divergence between S. cerevisiae and S. uvarum.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/23623/elife-23623-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic of GAL1 positioning (dark blue) in glucose (left) and galactose (right). NPC, nuclear pore complex; CEN, centromere; chr, chromosome; SPB, spindle pole body. (B) Example region of differential Hi-C map of S. cerevisiae x S. uvarum hybrids in galactose vs. glucose, at 32 kb resolution. Interactions that strengthen in galactose are in red, while those that weaken are in blue. Ticks indicate centromeres; black lines indicate chromosomes. Arrows indicate location of S. uvarum GAL1. (C) Boxplot of the difference in S. uvarum GAL1 interaction frequency in galactose vs. glucose across the S. cerevisiae x S. uvarum genome, excluding intrachromosomal interactions and binned by distance from the centromere (in 32 kb bins). Whiskers correspond to the highest and lowest points within the 1.5\u00d7 interquartile range. *p<0.05 after Bonferroni correction (n\u00a0=\u00a09); Mann-Whitney test. Note: some outliers are beyond the plot range and are not shown. (D) Same as (C) for S. cerevisiae GAL1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23623/elife-23623-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Scatter plot of normalized interaction frequencies in galactose (x-axis) and in glucose (y-axis), between the GAL1 homologs (in red) and other interactions between loci at the same centromeric distance (in grey). All interactions are between 32 kb bins. (B) Normalized interaction frequencies between the S. cerevisiae GAL1 and the S. uvarum chromosome IV in glucose (blue) and galactose (red). Arrow points toward interaction between GAL1 homologs, and the dashed line indicates the location of the centromere. (C) Same as (B) for the S. uvarum GAL1 and the S. cerevisiae chromosome II.\n\n### Novel inducible pairing of homologous HAS1-TDA1 loci\n\nHaving established that we could detect the known inducible relocalization of the GAL1 gene, we looked for other specific changes in genome conformation in the well-studied environmental conditions of galactose induction and growth saturation (approaching stationary phase). Surprisingly, we observed markedly increased interactions between homologous loci surrounding the genes HAS1 and TDA1 (subsequently abbreviated as \u2018HAS1-TDA1 loci\u2019) on chromosome XIII under both growth saturation and galactose induction, compared to standard exponential growth in glucose (Figure 4A). In fact, under inducing conditions, this interaction is among the strongest genome-wide, excluding pericentromeric and subtelomeric regions (top interaction out of over 83,000; Figure 4\u2014figure supplement 1). No canonical galactose-induced genes are in or near this region. Nevertheless, this inducible homolog proximity appears to be evolutionarily conserved, as it occurs in all three tested interspecific hybrids, at least in saturated culture (Figure 4A\u2013C; galactose not tested in all hybrids).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/23623/elife-23623-fig4-v2.jpg)\n\n**Figure 4.:** (A), (B), and (C) Hi-C contact maps of chromosome XIII interactions at 32 kb resolution in S. cerevisiae x S. uvarum (A), S. cerevisiae x S. paradoxus (B), and S. paradoxus x S. uvarum (C) hybrids in exponential growth (left column), saturated cultures (middle column), and in S. cerevisiae x S. uvarum hybrids (A), galactose (right column). White arrows indicate the interaction between the homologous HAS1-TDA1 loci. (D) Genome browser shot of open-reading frames (ORFs; blue boxes) and tested deletions (brackets) in the S. cerevisiae region surrounding the genes HAS1 and TDA1, from positions 840,000\u2013860,000 (Figure 4\u2014figure supplement 1A). Arrows indicate ends and directionalities of ORFs. (E) Strength of HAS1-TDA1 homolog pairing at 32 kb resolution (red lines) compared to similar interactions (grey violin plots; i.e. interactions between an S. cerevisiae locus and an S. uvarum locus, where both loci are\u00a0\u226515 bins from a centromere and\u00a0\u22651 bin from a telomere, and not both on chromosome XII) in wild-type and deletion strains of S. cerevisiae x S. uvarum. See Figure 4\u2014figure supplement 2 for Hi-C contact maps of deletion strains. (F) Two example z-stacks of images used to measure distances between HAS1-TDA1 alleles tagged with LacO arrays targeted by LacI-GFP (shown in green), with membranes labeled by ER04 mCherry (shown in red). The yellow outline indicates the images chosen for analysis. White brackets indicate the measured distance. Scale bar\u00a0=\u00a01 \u00b5m. (G) Distributions of the distance between the HAS1-TDA1 alleles measured by microscopy in S. cerevisiae diploids in glucose (blue), galactose (purple), and saturated cultures (red). n\u00a0=\u00a0100 for each condition. p-Values were calculated using the Wilcoxon rank sum test. (H) Frequency of HAS1-TDA1 alleles less than 0.55 \u00b5m apart, measured as in (G), in glucose (blue), galactose (purple), or saturated cultures (red). p-Values were calculated using Fisher\u2019s exact test.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23623/elife-23623-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Raw Hi-C contact maps at 20 kb resolution for S. cerevisiae and S. uvarum chromosome XIII. Arrow points to strongest interaction in saturated culture excluding regions near centromeres, at positions 840,000\u2013860,000 on the S. cerevisiae chromosome XIII, the target of deletion studies. (B) Histogram comparing HAS1-TDA1 homolog pairing interaction frequency (red line) to all other interactions (grey) between an S. cerevisiae locus and an S. uvarum locus (32 kb bin), with both loci\u00a0\u22653 bins from a centromere,\u00a0>1 bin from a telomere, and not both on an rDNA-carrying chromosome. Inset shows enlarged view of right end of plot.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23623/elife-23623-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Hi-C contact maps of chromosome XIII interactions at 32 kb resolution in S. cerevisiae x S. uvarum hybrids in saturated cultures, in wild-type (WT) and deletion strains. See Figure 4D for deletion boundaries.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/23623/elife-23623-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Genomic relocation of the S. cerevisiae HAS1pr-TDA1pr 1 kb region causes inducible ectopic pairing with the S. uvarum HAS1-TDA1 allele. (Left) Hi-C contact maps of interactions between S. uvarum chromosome XIII and S. cerevisiae chromosomes XIII and XIV in the S. cerevisiae x S. uvarum hybrid with the S. cerevisiae HAS1pr-TDA1pr region moved to S. cerevisiae chromosome XIV (location indicated by vertical black arrow), in saturated culture (A) and in exponential growth (B), compared to the wild-type hybrid (C) in saturated culture. Interactions between the S. uvarum HAS1-TDA1 locus and the original S. cerevisiae HAS1-TDA1 locus are indicated by a blue arrow, whereas interactions with the new HAS1pr-TDA1pr locus are indicated by a red arrow. (Right) Histograms comparing the pairing frequency of the S. uvarum HAS1-TDA1 locus and either the normal S. cerevisiae HAS1-TDA1 locus (blue line) or the ectopic HAS1pr-TDA1pr locus (red line) to the frequency of all similar interactions, that\u00a0is, those between an S. cerevisiae locus and an S. uvarum locus (32 kb bin), with both loci\u00a0\u226515 bins from a centromere (or dCEN\u00a0>480 kb),>1 bin from a telomere, and not both on an rDNA-carrying chromosome.\n\nTo explore whether this pairing depends on the presence of specific sequences, we created various deletions of the S. cerevisiae copy of the region, ranging from a 20 kb region from NGL2 through YMR295C (Figure 4\u2014figure supplement 1A) to a single 1 kb intergenic region containing the promoters for HAS1 and TDA1 (HAS1pr-TDA1pr; Figure 4D). Every deletion that included this intergenic region reduced the interaction frequency between HAS1-TDA1 homologs in saturated growth conditions back to uninduced levels, indicating that this inducible pairing is sequence-dependent (Figure 4E and Figure 4\u2014figure supplement 2). In contrast, deletion of the HAS1 coding sequence had minimal impact, which shows that the deletion construct itself did not impede inducible pairing (Figure 4E and Figure 4\u2014figure supplement 2). To test whether the HAS1pr-TDA1pr region is sufficient to produce inducible pairing, we moved the S. cerevisiae copy of this region to the left arm of S. cerevisiae chromosome XIV. The ectopic HAS1pr-TDA1pr allele exhibited inducible interactions with the S. uvarum HAS1pr-TDA1pr, although not to the same extent as the endogenous allele (Figure 4\u2014figure supplement 3). The diminished extent of inducible pairing may reflect the contribution of chromosomal homolog pairing, which would be disrupted in the ectopic location, or of additional regions that are not sufficient to produce pairing on their own. To verify whether this pairing occurs in homozygous S. cerevisiae diploids in addition to diverged hybrids, we labeled both HAS1-TDA1 loci with integrated LacO arrays targeted by LacI-GFP and measured the distance between them in a population of cells by confocal microscopy (Figure 4F). Consistent with our Hi-C data, the HAS1-TDA1 homologs were closer together in galactose-induced and saturated cultures than in glucose (Figure 4G,H and Figure 4\u2014source data 1).\n\n### Nuclear pores play a role in HAS1-TDA1 homolog pairing\n\nBased on previous studies of relocalized genes (Brickner et al., 2012, 2016), we hypothesized that pairing between the homologous HAS1-TDA1 loci might be mediated by interactions of both alleles with nuclear pores (Figure 5\u2014figure supplement 1). Therefore, we tested whether the HAS1-TDA1 loci are relocalized to the nuclear periphery in a condition-dependent manner. We tagged the HAS1-TDA1 locus with a LacO array as before and counted the proportion of cells in which HAS1-TDA1 colocalized with the mCherry-labeled nuclear membrane, in haploid S. cerevisiae. Indeed, the HAS1-TDA1 locus shifted to the nuclear periphery upon galactose induction and in saturated culture conditions (Figure 5A and Figure 5\u2014source data 1). To confirm whether this inducible reorganization was dependent on association with nuclear pores, we repeated our analysis in strains with deletions of nuclear pore components NUP2 or NUP100, or pore-associated protein MLP2 (Figure 5A and Figure 5\u2014source data 1). As in other cases of gene relocalization, Nup2 but not Nup100 was required for peripheral localization of the HAS1-TDA1 locus. However, unlike other relocalized genes (Ahmed et al., 2010; Brickner et al., 2016; Luthra et al., 2007), HAS1-TDA1 locus relocalization did not require Mlp2, suggesting that the HAS1-TDA1 locus may interact with nuclear pores via a distinct mechanism. We performed these initial analyses in haploids, to facilitate deletion of nuclear pore components, but pairing cannot occur in haploids. Thus, we confirmed that the HAS1-TDA1 loci are peripherally relocalized in diploids, by reanalyzing the images we used to measure distances between HAS1-TDA1 alleles in diploid cells (Figure 5B and Figure 5\u2014source data 2). We then asked whether pairing of the HAS1-TDA1 alleles only occurs at the periphery, by determining the proportion of cells in each category of peripheral localization that have paired HAS1-TDA1 alleles (Figure 5C and Figure 5\u2014source data 2). In fact, HAS1-TDA1 alleles can remain paired in galactose in the nucleoplasm. However, this need not imply that the nuclear pores do not play a role in pairing. Previous studies of gene relocalization to nuclear pores have reported that the cell cycle affects when genes relocalize to the nuclear periphery; namely, genes tend to move to the nucleoplasm during S-phase (Brickner and Brickner, 2010). Alleles can remain paired in the nucleoplasm, but cannot actively pair during S-phase (Brickner et al., 2012). In agreement with these studies, the peripheral localization of HAS1-TDA1 loci that we observe also exhibits cell cycle dependence (Figure 5D,E and Figure 5\u2014source data 2), which may explain the presence of pairing in the nucleoplasm.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/23623/elife-23623-fig5-v2.jpg)\n\n**Figure 5.:** (A) Proportions of haploid S. cerevisiae cells exhibiting peripheral HAS1-TDA1 localization in strains with and without deletions of nuclear pore components, in glucose (in blue), galactose (in purple), or saturated culture (in red). Experiments were performed in biological triplicate, with n\u00a0\u2265\u00a030 per experiment. *p<0.05, Student\u2019s t-test. Center values and error bars represent mean \u00b1 s.e.m. (B) Proportion of diploid S. cerevisiae cells exhibiting two (ON-ON), one (ON-OFF), or zero HAS1-TDA1 alleles with peripheral localization, in glucose (blue) and galactose (purple). p-Value calculated using chi-squared test. (C) Proportion of diploid S. cerevisiae cells with HAS1-TDA1 alleles clustered (<0.55 \u00b5m apart), in glucose (blue) and galactose (purple) as a function of the peripheral localization of HAS1-TDA1 alleles. Same images used as in (B) and Figure 4G,H. (D) Example images of cells in G1, S, and G2/M phases of cell cycle. (E) Proportions of haploid S. cerevisiae cells exhibiting peripheral HAS1-TDA1 localization in different phases of the cell cycle, in glucose (in blue) and galactose (in purple). *p<0.05, Student\u2019s t-test. Center values and error bars represent mean \u00b1 s.e.m. (F) Strength of HAS1-TDA1 homolog pairing at 32 kb resolution (red lines) compared to similar interactions (grey violin plots; that\u00a0is, interactions between an S. cerevisiae locus and an S. uvarum locus, where both loci are\u00a0\u226515 bins from a centromere and\u00a0\u22651 bin from a telomere, and not both on chromosome XII) in wild-type and homozygous nup2\u25b3 strains of S. cerevisiae x S. uvarum. (G and H) Nup60-TAP ChIP-seq read coverage tracks for IP and input in galactose (purple) and glucose (blue), zoomed into a 35 kb region surrounding GAL1-GAL10-GAL7 on chromosome II (G), and a 35 kb region surrounding HAS1 and TDA1 on chromosome XIII (H). (I) Nup60-TAP ChIP qPCR as IP/input normalized to the negative control PRM1, for the positive control GAL1pr and five sets of primers in TDA1. Primer sequences are provided in Supplementary file 2. Center values and error bars represent mean \u00b1 s.e.m. of three biological replicates. *p<0.05, Student\u2019s t-test.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23623/elife-23623-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** NPC, nuclear pore complex; CEN, centromere; chr, chromosome; SPB, spindle pole body.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23623/elife-23623-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Nup60-TAP ChIP qPCR using BSA instead of anti-TAP antibody, plotted as IP/input normalized to the negative control PRM1, for the positive control GAL1pr and five sets of primers in TDA1. Primer sequences are provided in Supplementary file 2. Center values and error bars represent mean \u00b1 s.e.m. of three biological replicates. No values are significant (p<0.05, Student\u2019s t-test).\n\nTo test whether the nuclear pore complex is required for pairing as well as relocalization of the HAS1-TDA1 loci, we performed Hi-C on an S. cerevisiae x S. uvarum hybrid strain with a homozygous deletion of NUP2. In this strain, HAS1-TDA1 pairing was not observed in galactose, as expected, but still occurred at full strength in saturated growth (Figure 5F). These data indicate that Nup2 is required for HAS1-TDA1 homolog pairing in galactose but not in saturated culture, suggesting distinct and/or additional mechanisms of pairing. To test biochemically whether the HAS1-TDA1 loci interact with nuclear pores, we performed chromatin immunoprecipitation (ChIP) sequencing on the nuclear basket protein Nup60, which unlike the dynamic Nup2 cannot dissociate from the nuclear pore complex, tagged with the tandem affinity purification (TAP) tag (Ghaemmaghami et al., 2003), in haploid S. cerevisiae grown in either glucose or galactose. As expected, we observed a clear enrichment of the galactose metabolism gene cluster GAL1-GAL10-GAL7 in the immunoprecipitated DNA from cells grown in galactose, compared to those grown in glucose (Figure 5G). In contrast, we observed little if any such enrichment of the HAS1-TDA1 locus (Figure 5H). We also performed qPCR on the same ChIP DNA, which gave the same results (Figure 5I and Figure 5\u2014figure supplement 2). Together, these data suggest that although HAS1-TDA1 locus relocalization and pairing requires Nup2 in galactose, HAS1-TDA1 differs from GAL1 in how it interacts with the nuclear pore complex and may pair via alternative mechanisms as well, particularly in saturated growth.\n\n### Transcription at the HAS1-TDA1 locus\n\nNuclear pore association is thought to play a role in transcriptional regulation, generally but not always leading to greater or faster activation (Akhtar and Gasser, 2007; Taddei, 2007; Taddei et al., 2010). To explore how nuclear pore association might affect transcription at the HAS1-TDA1 locus, we performed RNA sequencing on haploid S. cerevisiae grown in glucose, galactose, and saturated growth conditions. HAS1 is downregulated in both pairing conditions (Figure 6A), whereas TDA1 is weakly upregulated in both conditions (Figure 6B). However, transcriptional changes at HAS1 and TDA1 are relatively unremarkable; in both galactose and saturated growth, dozens to hundreds of genes are more strongly up- or downregulated than HAS1 or TDA1 (Figure 6C,D). For example, GAL1 is upregulated nearly 1000-fold in galactose (Figure 6C). This suggests that nuclear pore association is not solely a function of strong transcriptional activation.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/23623/elife-23623-fig6-v2.jpg)\n\n**Figure 6.:** (A and B) Bar plots of gene expression in haploid S. cerevisiae grown in glucose, galactose, or to saturation, for HAS1 (A) and TDA1 (B). Asterisks indicate p-values<0.05 (*), 0.01 (**), 0.001 (***), or 0.0001 (****), Student\u2019s t-test. Center values and error bars represent mean \u00b1 s.e.m. of three biological replicates (C and D) Histogram of log2 fold change in gene expression in galactose (C) or saturated growth (D) compared to glucose. Vertical lines indicate values for HAS1, TDA1, and GAL1 (C only).\n\n## Discussion\n\nHomologous chromosomes pair along their lengths leading up to and during meiosis, but may recognize each other and preferentially interact even in normal mitotic growth, perhaps to facilitate homology-directed repair or prepare for meiosis under stressful conditions. However, whether and to what extent this mitotic homolog pairing occurs has remained controversial, in part due to the lack of genome-wide data and the apparent homolog pairing caused by the Rabl-like orientation. We performed Hi-C in diverged hybrid diploid yeast, which allowed us to resolve homologous chromosomes (Figure 1) and thus infer homolog pairing strength on a genome-wide basis (Figure 2B). After using a polymer model of the Rabl-like orientation to calibrate our estimates, we find that even in hybrid diploids with homologs diverged to less than 80% nucleotide identity, homologous chromosomes do interact preferentially during mitotic growth, albeit subtly (Figure 2E). It would be interesting to compare the strength of pairing across hybrids with varying levels of divergence; however, our homolog pairing analysis requires filtering and stratifying genomic regions and thus may not be directly comparable across different reference genomes. Our data do not necessarily imply end-to-end chromosome alignment as occurs in meiosis. Instead, our data indicate an increased frequency of contact between homologous loci above the expectation based on random collisions, with substantial variation across the genome. Nevertheless, that such distant homology is sufficient for at least some homolog interactions is perhaps remarkable, and may hint at the role of DNA-bound proteins, which are more conserved than DNA, in mediating the interactions. Homolog pairing strength also depends on both growth conditions and genomic location, sometimes jointly: the homologous HAS1-TDA1 loci on chromosome XIII pairs during saturated growth and galactose induction, but not exponential growth in glucose (Figure 4). This region is not remarkably conserved, suggesting that homolog pairing is at least partly due to specific interactions mediated by proteins, rather than direct DNA-DNA homology interactions (Danilowicz et al., 2009; Gladyshev and Kleckner, 2014).\n\nIn all tested hybrids, the HAS1-TDA1 locus exhibits surprisingly strong homolog proximity (Figure 4A\u2013C; Figure 4\u2014figure supplement 1B). How does HAS1-TDA1 pairing occur, and why? The nuclear pore component Nup2 seems to play a role, although not exclusively, in mediating pairing. The HAS1-TDA1 locus moves to the nuclear periphery under pairing conditions, and both this relocalization and pairing are Nup2-dependent in galactose (Figure 5A,F and Figure 5\u2014source data 1). However, Nup2 is not required for HAS1-TDA1 pairing in saturated growth (Figure 5F). Together, the Nup2-independence of HAS1-TDA1 pairing in saturated growth, the Mlp2-independence of HAS1-TDA1 peripheral localization, and the lack of HAS1-TDA1 enrichment in Nup60 ChIP suggest that HAS1-TDA1 may interact with nuclear pores by a mechanism distinct from the previously studied GAL1 and INO1, and possibly by different mechanisms in galactose and in saturated culture. However, more experiments are needed to fully elucidate the role and mechanism of the nuclear pore complex in HAS1-TDA1 homolog pairing. Regardless of the molecular mechanism, nuclear pore interactions may confine the HAS1-TDA1 alleles to the relatively small space near the nuclear periphery, thus speeding up the rate at which they randomly contact each other (Figure 5\u2014figure supplement 1). Once in physical proximity, additional mechanisms such as protein-protein interactions between DNA-binding proteins could prolong the duration of contact, even after the alleles are no longer at a nuclear pore. Indeed, the presence of paired HAS1-TDA1 alleles in the nucleoplasm suggests that such nuclear pore-independent pairing mechanisms may act at HAS1-TDA1 (Figure 5C and Figure 5\u2014source data 2). Interestingly, a recent study showed that Nup2 is involved in meiotic homolog pairing (Chu et al., 2017), suggesting that Nup2 may more generally play a role in homolog pairing.\n\nWhy do the homologous HAS1-TDA1 alleles pair and relocalize to the periphery, and why does this interaction appear to be unique? Many genes associate with nuclear pores and relocalize to the nuclear periphery upon activation, including GAL1, but we do not observe strong pairing of GAL1 homologs. It is possible that Hi-C may be failing to capture pairing at GAL1 due to its pericentromeric location, but these data may also reflect particularly strong pairing at the HAS1-TDA1 loci. Divergence between S. cerevisiae and S. uvarum, particularly in their galactose metabolism pathways (Roop et al., 2016), may also contribute to the lack of pairing at the GAL1 locus. Lack of GAL1 pairing need not correspond to lack of peripheral localization (Brickner et al., 2016); in our hybrid, the S. cerevisiae and S. uvarum GAL1-binding proteins may be able to each interact with the nuclear pores but not with each other.\n\nWhich gene is driving HAS1-TDA1 homolog pairing, HAS1 or TDA1, or both? Given the association between nuclear pore interactions and transcriptional activation, transcriptional changes in growth conditions that induce pairing may provide a clue. The genes at the HAS1-TDA1 locus, HAS1 and TDA1, demonstrate opposing changes in gene expression in galactose and saturated culture: HAS1 is downregulated, whereas TDA1 is upregulated. The upregulation of TDA1, athough not particularly strong in magnitude (Figure 6C,D) may be of functional importance. Tda1 is a kinase required for phosphorylation of Hxk2, the primary hexokinase in yeast (Kaps et al., 2015; Kettner et al., 2012). Unphosphorylated Hxk2 can interact with Mig1 to repress various alternative carbon source metabolism genes in the presence of glucose. Phosphorylation of Hxk2 by Tda1 in low-glucose conditions prevents its interaction with Mig1 and thus leads to release from glucose repression. While we have not yet tested whether disrupting peripheral localization would affect TDA1 or HAS1 transcription, we hypothesize that nuclear pore interaction may aid the upregulation of TDA1 in response to low-glucose concentrations, perhaps by facilitating efficient transcription or mRNA export from the nucleus.\n\nOther questions remain about the mechanism and functional implications of HAS1-TDA1 pairing and peripheral relocalization. Increased transcription may itself contribute to localization at nuclear pores via interactions between nascent mRNA and mRNA processing and export factors at nuclear pores (Akhtar and Gasser, 2007), and may be involved in establishment of HAS1-TDA1 pairing as it is for GAL1 (Brickner et al., 2016). However, given the abundance of other genes with similar or greater changes in transcription that do not pair (Figure 6), transcription alone likely cannot explain our data. For some genes, nuclear pore interactions mediate rapid reactivation in a phenomenon termed epigenetic transcriptional memory (D'Urso and Brickner, 2017; D'Urso et al., 2016; Light et al., 2010); it is also possible that\u00a0the nuclear pore interactions with HAS1-TDA1 may be involved in epigenetic transcriptional memory. The pairing of the HAS1-TDA1 alleles may also serve a distinct function, potentially including trans gene regulation like at GAL1 (Zhang and Bai, 2016), but further experiments are needed to test this possibility.\n\nThe principles and functional implications of genome conformation remain open questions. Although the budding yeast S. cerevisiae is thought to have a simple genome organization, it serves as a versatile and relevant model system amenable to integrating multiple approaches to studying genome conformation, including Hi-C, polymer simulations, live-cell imaging, and genetic perturbations. While yeast nuclear organization may differ from that of other eukaryotes in some ways, our findings may, nevertheless, be applicable to other organisms: recent studies in the fruit fly Drosophila have provided evidence for the generality of the role of nuclear pores in transcriptional regulation first observed in yeast (Pascual-Garcia et al., 2017). Our study illustrates both the utility of combining orthogonal methodologies and that we have much more to learn about genome organization, even in the simple budding yeast.\n\n## Materials and methods\n\n### Strain construction\n\nAll yeast strains used in this study are listed in Supplementary file 1. All primers used in this study, including those used for generation and validation of strains, are listed in Supplementary file 2.\n\nHybrid strains were created by mating haploid strains and then performing auxotrophic selection.\n\nThe ScV-ScXII translocation, S. cerevisiae x S. uvarum strain was generated by first creating the translocation in the haploid S. cerevisiae strain BY4742, followed by mating with haploid S. uvarum. A cassette containing hphMX followed by the first half of URA3, an artificial intron, and a lox71 site was amplified from pBAR3 (Levy et al., 2015) and integrated into the intergenic region between YLR150W and YLR151C. A second cassette containing a lox66 site, an artificial intron, the second half of URA3, and natMX was amplified from pBAR2-natMX (pBAR2 [Levy et al., 2015] with natMX in place of kanMX) and integrated into the intergenic region between YER151C and YER152C. The translocation was induced by transforming the resulting strain with the galactose-inducible Cre plasmid pSH47-kanMX (pSH47 (G\u00fcldener et al., 1996) with kanMX in place of URA3), and then inducing Cre recombination by plating on YP + galactose medium. Successful translocation strains were selected by growing in medium lacking uracil, and verified by PCR across the translocation junctions. This S. cerevisiae strain was then mated with S. uvarum strain ILY376.\n\nHeterozygous deletion strains were made in S. cerevisiae x S. uvarum hybrids, by replacing regions of interest with the hphMX cassette. Homozygous deletion strains were made by making deletions in haploids and then mating the haploid strains. Strains were verified by PCR across each deletion junction.\n\nThe knock-in strain was made by integrating the HAS1pr-TDA1pr region followed by the natMX cassette into the region between YNL266W and YNL267W (PIK1) on S. cerevisiae chromosome XIV in the S. cerevisiae x S. uvarum hybrid YMD3269 (HAS1pr-TDA1pr deletion).\n\nPlasmids pAFS144 (Straight et al., 1996), p5LacIGFP (Randise-Hinchliff et al., 2016), pER04 (Randise-Hinchliff et al., 2016), and pFA6a-kanMX6 (Longtine et al., 1998) have been described. To tag HAS1-TDA1 with the LacO array, 1 kb downstream of the HAS1 ORF was PCR amplified and TOPO cloned to create pCR2.1-HAS1_3\u2019UTR. Plasmid p6LacO128-HAS1 was made by inserting HAS1 from pCR2.1- HAS1_3\u2019UTR into p6LacO128 (Brickner and Walter, 2004).\n\n### Hi-C\n\nCells were grown overnight, shaking at 30\u00b0C (room temperature for S. uvarum) in YPD medium (1% yeast extract, 2% peptone, 2% dextrose), YP + raffinose (2%), or YP + galactose (2%). For saturated culture samples, they were crosslinked at this point by resuspension and incubation in 1% formaldehyde in PBS for 20 min at room temperature. Crosslinking was quenched by addition of 1% w/v solid glycine, followed by incubation for 20 min and a PBS wash. For all other experiments, fresh cultures were inoculated to OD600\u00a0=\u00a00.1 in appropriate medium and grown to OD600\u00a0=\u00a00.6\u20130.8. Exponential growth samples were crosslinked at this point, while for nocodazole-arrested samples, cultures were supplemented with 15\u00a0\u00b5g/mL nocodazole and grown at 30\u00b0C for 2 hr following addition of drug prior to crosslinking. Arrested cultures were checked by flow cytometry. For mixture controls, samples were mixed prior to crosslinking.\n\nHi-C libraries were created as described (Burton et al., 2014) with the exceptions that the restriction endonuclease Sau3AI or HindIII was used to digest the chromatin and the Kapa Hyper Prep kit (Kapa Biosystems, Wilmington, MA) was used to create the Illumina library instead of the Illumina TruSeq kit. Libraries were pooled and sequenced on an Illumina NextSeq 500 (Illumina, San Diego, CA), with 2 \u00d7 80 bp reads for interspecific hybrids and 2 \u00d7 150 bp reads for intraspecific S. cerevisiae hybrids. Hi-C libraries were similar across the two restriction enzymes and biological replicates (Figure 1\u2014figure supplement 3). All Hi-C libraries are listed in Supplementary file 3.\n\n### Reference\u00a0genomes\n\nThe S. cerevisiae references and annotations were downloaded from the Saccharomyces Genome Database (version R64.2.1). The S. paradoxus and S. uvarum references and annotations were downloaded from saccharomycessensustricto.org (Scannell et al., 2011) but modified to correct misassemblies evident based on synteny and Hi-C data (Figure 1\u2014figure supplement 4). S. paradoxus chromosome IV was rearranged so bases 1\u2013943,469 were followed by 1,029,253\u20131,193,028, then 1,027,718\u20131,029,252, then 943,470\u20131,027,717 in reverse order, followed by the remainder of the chromosome. S. uvarum chromosome III was rearranged so bases 219,500 onward were placed at the beginning (left end) of the chromosome, followed by the first 219,399 bases, and then new sequence determined by Sanger sequencing with primers CATTCCCATTTGTTGATTCCTG and GGATTCTATTGTTGCTAAAGGC: TAATAAGGAAGAACTGCTTATTCTTAATTATTTCTACCTACTAAACTAACTAATTATCAACAAATATCATCTATTTAATAGTATATCATCACATGCGGTGTAAGAGGATGACATAAAGATTGAGAAACAGTCATCCAGTCTAATGGAAGCTCAAATGCAAGGGCTGATAATGTAATAGGATAATGAATGACAACGTATAAAAGGAAAGAAGATAAAGCAATATTATTTTGTAGAATTATCGATTCCCTTTTGTGGATCCCTATATCCTCGAGGAGAA. S. uvarum chromosomes X and XII were also swapped, based on homology to S. cerevisiae. The S. cerevisiae Y12 and DBVPG6044 strain references were sequenced to 145- and 315-fold coverage using the PacBio (Pacific Biosciences, Menlo Park, CA) single-molecule, real-time (SMRT) sequencing platform with P6-C2 chemistry. Each genome was assembled with FALCON (Chin et al., 2016), version June 30, 2015 hash: cee6a58, and polished with Quiver (Chin et al., 2013) version 1.1.0 to generate chromosome-length contigs (with the exclusion of chromosome XII, which was split at the rDNA array, and Y12 chromosome XIV, which was split into one large and one small contig). To call centromeres in S. paradoxus, we searched the region on each chromosome between the genes homologous to those nearest the centromeres in S. cerevisiae (e.g. YEL001C and YER001W on chromosome V) for the sequence motif N2TCAC(A/G)TGN95-100CCGAAN6 (based on an alignment of S. uvarum, S. mikatae, and S. kudriavzevii centromeres [Scannell et al., 2011]) or its reverse complement. When this motif was absent (chromosomes VII and VIII), we called the centromere as the middle 120 bp of the region. To call centromeres in Y12 and DBVPG6044, we mapped the S. cerevisiae S288C centromere sequences to the new references.\n\n### Theoretical mappability analysis\n\nSimulated reads for each hybrid genome (as in experimental data, 80 bp for interspecific hybrids and 150 bp for the intraspecific S. cerevisiae hybrid) were generated by taking sequences of the read length at 10 bp intervals. These reads were then remapped to the hybrid genome using bowtie2 (Langmead and Salzberg, 2012) with the --very-sensitive parameter set. The proportion of reads that mapped with mapping quality\u00a0\u226530 to the correct location was then calculated.\n\n### Hi-C data analysis\n\nSequencing reads were first pre-processed using cutadapt (Martin, 2011): reads were quality-trimmed (option -q 20), trimmed of adapter sequences, and then trimmed up to the ligation junction (if present), excluding any read pairs in which either read was shorter than 20 bp after trimming (option -m 20). The two reads in each read pair were then mapped separately using bowtie2 (Langmead and Salzberg, 2012) with the --very-sensitive parameter set. For interspecific hybrids, reads were mapped to a combined reference containing both species references, where if secondary mappings were present the best alignment must have a score\u00a0\u226510 greater than the next best alignment. For intraspecific S. cerevisiae hybrids, reads were mapped separately to both strain references, keeping only read pairs in which both reads mapped to both references\u2014perfectly to one reference and with\u00a0\u22652 mutations including\u00a0\u22651 substitution to the other. PCR duplicates (with identical fragment start and end positions) were removed, as were read pairs mapping within 1 kb of each other or in the same restriction fragment, which represent either unligated or invalid ligation products. The genome was then binned into 32 kb fragments (except the last fragment of each chromosome), and the number of read pairs mapping to each 32 kb genomic bin was counted based on the position of the restriction sites that were ligated together. Due to gaps in the reference genomes of S. uvarum, some repetitive sequences were only represented once and therefore artifactually mapped uniquely; therefore, reads mapping to annotated repetitive sequences were masked from further analysis. Similarly, gaps in the S. paradoxus reference led to mismapping of reads to the corresponding S. cerevisiae sequence; therefore, for S. cerevisiae x S. paradoxus libraries we masked regions in the S. cerevisiae genome where\u00a0>1 read from a S. paradoxus Hi-C library mapped, and vice versa. We took a similar approach to mask regions of the Y12 and DBVPG6044 references that were prone to mismapping, as estimated by haploid Y12 and DBVPG6044 Hi-C libraries. For knock-in experiments, the HAS1pr-TDA1pr region was masked to account for its altered genomic location. The resulting matrices were then normalized by excluding the diagonal (interactions within the same genomic bin), filtering out rows/columns with an average of less than one read per bin, and then multiplying each entry by the total number of read pairs divided by the column and row sums.\n\n### Polymer model\n\nThe volume-exclusion polymer model of the Rabl-like orientation was a modified version of the Tjong et al. tethering model (Tjong et al., 2012). Briefly, beads representing segments of the genome are randomly positioned and then adjusted until constraints (e.g. consecutive beads must be adjacent, and no two beads can occupy the same space) are met. The model was extended from 16 chromosomes to 32, with the lengths of the S. cerevisiae and S. uvarum chromosomes. The parameters for nuclear size, centromeric constraint position and size, telomeric constraint at the nuclear periphery, and nucleolar position and size were scaled by a factor of 1.25 to reflect the roughly doubled volume of diploid nuclei (cell volume correlates with ploidy (Mortimer, 1958), and nuclear volume correlates with cell volume [Jorgensen et al., 2007]). To test the effect of smaller nuclei, all parameters were scaled by a factor of 0.8 or 0.64 from this initial diploid model. For each model, the modeling procedure was repeated 20,000 times to create a population of structures. From this population, we simulated Hi-C data by calling all beads within 45 nm of each other as contacting each other, and then counting the number of contacts between each pair of 32 kb bins. The resulting matrix of counts was normalized using the same pipeline as the experimental Hi-C data.\n\n### Homolog proximity analysis\n\nIn order to assess homolog proximity genome-wide, we first determined which bins represented interactions between homologous sequences, and then compared the normalized interaction frequencies in those bins compared to a set of \u2018comparable\u2019 nonhomologous bins.\n\nIn the interspecific hybrids, we determined homology by counting the number of starts or ends of one-to-one homologous gene annotations falling into each bin. Genes whose \u2018SGD\u2019 and \u2018BLAST\u2019 gene annotations differed were ignored. To find homologous interaction bins for genomes 1 and 2, for each bin of genome 1 we considered the bin in genome 2 where the most homologous gene ends fell to be homologous.\n\nIn the intraspecific hybrids where inter-strain mapping was much more reliable, we simulated 150 bp reads from the Y12 genome at 10 bp intervals, then mapped them to the DBVPG6044 reference. Here, for each bin of genome 1 we considered the bin in genome 2 where the most reads mapped with MAPQ\u00a0\u226530 to be homologous.\n\nTo eliminate minor \u2018homology\u2019 arising from repetitive sequences (e.g. telomeres), we excluded isolated homologous interaction bins lacking any other homologous interaction bins within two bins. To fully exclude homologous interactions from our estimates of nonhomologous interactions, any interaction bins within 2 bins of homologous interaction bins were excluded from analyses.\n\nAfter determining homologous bins, we compared each homologous bin to other intergenome interactions (i.e. between chromosomes from different species/strains) involving one of the two genomic bins involved in the homologous interaction. To control for the effects of the Rabl-like orientation, we further filtered the nonhomologous interaction bins for those in which the centromeric distance (in units of 32 kb bins) was equivalent, and then for those in which the chromosome arm lengths of the two loci were within 25% of each other (in units of 32 kb bins). We also considered exclusion of the rDNA carrying chromosome XIIs as well as the centromeric bins, for which we could not fully control chromosome arm lengths. In all cases, we only considered homologous bins with at least two comparable nonhomologous bins.\n\nTo estimate genome-wide homolog proximity, we compared the sum of normalized interaction frequencies across the homologous bins to those of an equal number of randomly chosen nonhomologous bins, one comparable to each homologous bin, with replacement. We repeated this 10,000 times to obtain a distribution of genomic homolog proximity.\n\nTo obtain a view of homolog proximity strength across the genome, we compared the normalized interaction frequency in each homologous bin to the median of that in the similar nonhomologous bins, and then plotted the ratio of homologous/nonhomologous across the S. cerevisiae genome.\n\n### Confocal microscopy\n\nGene positioning at the nuclear periphery and inter-allelic clustering were determined as described previously (Brickner and Walter, 2004; Brickner et al., 2016; Egecioglu et al., 2014). Briefly, cells bearing an array of 128 Lac operators integrated downstream of the HAS1 coding sequence and expressing both the ER04 mCherry membrane marker (Egecioglu et al., 2014) and the GFP-LacI (Robinett et al., 1996) were imaged on a Leica SP5 line-scanning confocal microscope (Leica Microsystems, Wetzlar, Germany).\n\nCultures were grown in synthetic minimal media with 2% glucose or 2% galactose overnight at 30\u00b0C with constant shaking and harvested in log phase (OD600\u00a0<0.5) or late log/stationary phase (OD600\u00a0>1.0). Unless noted, cultures were grown in the designated media overnight prior to imaging. Cultures were concentrated by brief centrifugation, and then 1 \u00b5l was spotted onto a microscope slide for visualization.\n\nFor all experiments, cells were illuminated at 10\u201315% power with 488 nm and 561 nm using argon and diode pumped solid state lasers, respectively. Stacked images of\u00a0~150 \u00b5m x 150 \u00b5m fields were collected;\u00a0~\u00a015\u201320 z-slices of 0.34 \u00b5m thickness each. The optical thickness of the slices is\u00a0~0.73 \u00b5m. The z-slice in which the green dot(s) is most focused and bright is selected for analysis (Figure 4F).\n\nFor peripheral localization experiments, cells in which the center of the dot colocalizes with the nuclear envelope, as measured by mCherry fluorescence, are scored as peripheral. All other cells are scored as nucleoplasmic. Cells in which the dot was at the top or bottom of the nucleus were excluded. Each experiment was performed three times, counting\u00a0~30 cells per replicate . The percent of cells scored as peripheral was averaged and the standard error of the mean was calculated. Student\u2019s t-test was used to compare these distributions.\n\nTo monitor inter-allelic clustering of the HAS1-TDA1 locus, haploid strains bearing the LacO array integrated downstream of HAS1 were mated to create a diploid strain . These strains were imaged as above and, in cells in which the two alleles were either in the same z-slice or adjacent z-slices , the distance between the centers of the dots was measured using LAS AF software. Cells in which the two dots were not in the same or adjacent z-slices, or cells in which the two dots were unresolvable, were excluded. For each experiment, 100 cells were measured and both the distribution of distances among 0.15 \u00b5m bins and the fraction of cells in which the two alleles were\u00a0<0.55 \u00b5m was calculated. To compare distributions, the Wilcoxon Rank Sum test was used. To compare the fraction of the cells in which the two alleles were\u00a0<0.55 \u00b5m, Fisher\u2019s exact test was used.\n\n### Chromatin immunoprecipitation\n\nChromatin immunoprecipitation was performed as in (Egecioglu et al., 2014), with modifications. Nup60-TAP yeast (Ghaemmaghami et al., 2003) were grown overnight, diluted to OD600\u00a0=\u00a00.125\u20130.15 in 50 ml medium, then grown to OD600\u00a0=\u00a00.75\u20130.85 at 30\u00b0C in either YPD (for glucose samples) or YP\u00a0+2% galactose (for galactose samples), then crosslinked with 1% formaldehyde (v/v) for 5 min at room temperature. Crosslinked cells were quenched in 150 mM glycine, washed twice in Tris-buffered saline, and then stored at \u221280\u00b0C.\n\nCrosslinked cell pellets were resuspended in 500 \u00b5l lysis buffer with 1x cOmplete Protease Inhibitor tablet (Roche, Basel, Switzerland), and then 700 \u00b5l of 500 \u00b5m acid-washed glass beads were added. The cells were vortexed for 12 min total, in cycles of 2 min shaking and 2 min resting on ice. The lysate was pelleted and resuspended in fresh lysis buffer, and then sonicated for 3 \u00d7 10 min runs on a Diagenode Bioruptor (Diagenode, Li\u00e8ge, Belgium), on high power with cycles of 30 s on and 30 s off, to an average of\u00a0~300 bp. The sonicate was cleared by centrifugation, and the resulting supernatant was split into an input aliquot (1/20 of IP volume) and two halves for the IP and mock-IP (BSA instead of antibody). For each sample, 5 \u00b5g of anti-TAP antibody (Thermo Fisher Scientific, Waltham, MA; #CAB1001, Lot #RL240352) was used with 10 \u00b5l Dynabeads Protein A (Thermo). The antibody or BSA was incubated with pre-washed beads for 2 hr and then washed twice in fresh lysis buffer before being added to the lysate and then incubated overnight. After washing the beads four times in lysis buffer and eluting, the eluate was reverse crosslinked and then treated with RNase A and Proteinase K. DNA was purified using Zymo ChIP DNA Clean & Concentrator (Zymo Research, Irvine, CA) and eluted in 30 \u00b5l water.\n\nIP/mock-IP samples were diluted 1:8 and inputs were diluted 1:320, and then 4 \u00b5l were used in each 10 \u00b5l qPCR reaction. qPCRs were performed in triplicate in 384-well plates on a ViiA7 (Applied Biosystems, Foster City, CA), with Kapa Robust 2G Hot Start 2x master mix (thermocycling as recommended, with 20 s extension for 40 cycles) and 0.2x SYBR Green I dye. CT values were calculated and normalized to a genomic DNA standard curve using the ViiA7 software. IP/input ratios were normalized to those for the negative control PRM1.\n\nChIP-seq libraries were prepared using the Accel-NGS 2S Plus DNA Library Kit (Swift Biosciences, Ann Arbor, MI), from equal volume pools of the biological replicates, either 1 ng total from input samples or 21 \u00b5l of total IP sample. Input and IP libraries were amplified for six and seven cycles, respectively. Libraries were sequenced to\u00a0~5\u20136 million read pairs using 2 \u00d7 75 bp reads on an Illumina MiSeq.\n\n### ChIP-seq analysis\n\nSequencing reads were first pre-processed using cutadapt (Martin, 2011): reads were quality-trimmed (option -q 20), trimmed of adapter sequences, excluding any read pairs in which either read was shorter than 28 bp after trimming (option -m 28). The two reads in each read pair were then mapped jointly to the sacCer3 S. cerevisiae reference using bowtie2 (Langmead and Salzberg, 2012) with the --very-sensitive parameter set, requiring the two reads to be within 2000 bp of each other (option -X 2000). Fragments (read pairs) in which both reads had a mapping quality score of at least 30 were then deduplicated by fragment start and end positions and then aggregated into a coverage track using bedtools (Quinlan and Hall, 2010). Genome browser tracks were generated using the UCSC Genome Browser (Kent et al., 2002).\n\n### RNA sequencing\n\nBY4741 yeast were grown overnight in YPD (for exponential growth and saturated samples) or YP\u00a0+2% galactose (for galactose samples) at 30\u00b0C, then diluted to OD600\u00a0=\u00a00.1\u20130.125 in 50 ml medium, and then grown to OD600\u00a0=\u00a00.5\u20130.6, pelleted and stored at \u221280\u00b0C. RNA was purified using acid phenol extraction, and then treated with the DNA-free DNase kit (Thermo). Illumina libraries were then prepared using the TruSeq RNA Library Prep Kit v2 (Illumina), with six cycles of amplification. Libraries were sequenced to\u00a0~15\u201320 million read pairs using 2 \u00d7 75 bp reads on an Illumina NextSeq 500.\n\n### RNA-seq analysis\n\nSequencing reads were first pre-processed using cutadapt (Martin, 2011): reads were quality-trimmed (option -q 20), trimmed of adapter sequences, excluding any read pairs in which either read was shorter than 28 bp after trimming (option -m 28). The two reads in each read pair were then mapped jointly to the sacCer3 S. cerevisiae reference using bowtie2 (Langmead and Salzberg, 2012) with the --very-sensitive parameter set, requiring the two reads to be within 500 bp of each other (option -X 500). Fragments (read pairs) in which both reads had a mapping quality score of at least 30 were overlapped with annotated genes using HTSeq (Anders et al., 2015). Global fold-change analyses were performed using DESeq2 (Love et al., 2014).\n\n### Code availability\n\nCode for all bioinformatic analyses is available at https://github.com/shendurelab/HybridYeastHiC (Kim, 2017).\u00a0A copy is archived at https://github.com/elifesciences-publications/HybridYeastHiC.\n\n### Data availability\n\nGEO accession number: GSE88952\n",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "b45f69ef-04d0-44ac-9e55-40537e13bf73",
+      "submission_id": "ab1d9f56-d970-40a0-b65a-c78d0c991f1e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bing Ren, University of California, San Diego School of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.23623.030](https://doi.org/10.7554/eLife.23623.030)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The dynamic three-dimensional organization of the diploid yeast genome\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Bing Ren (Reviewer #1), is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Kevin Struhl as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\n1) There is general enthusiasm in this work, based on the innovative approach, the novel findings of sequence-dependent pairing of homologous chromosomes, and the rigorous experimental design.\n\n2) There are several concerns that need to be addressed by further discussion and experiments as outlined below:\n\na) The evidence for HAS1 pairing due to interactions of both alleles with the nuclear pore complex is still indirect. It is recommended that the authors expand the in vivo imaging analysis to show how the pairing occurs in the 3D space of the nucleus, i.e. if the loci are only paired at the nuclear periphery.\n\nb) To further strengthen the conclusion that nuclear pore complex mediates the pairing of HAS1 or TDA1 upon transcriptional activation, either of the following two experiments should be performed \u2013 1) ChIP with a non-mobile nucleoporin (e.g. Nup60), or 2) localization of TDA1/HAS1 in a mutant that clusters pores (a nup133 truncation that lacks its N-terminus).\n\nc) There is a lack of discussion of significance and relevance of the sequence-dependent homolog pairing observed here. It is recommended that the authors provide in-depth discussion on how pairing occurs in vivo, how this processes is facilitated by the NPC, whether the observed high frequency of pairing between HAS1 implies non-random, sequence dependent colocalization of the locus and NPC, and how transcription influence this process.\n\nd) The authors should address the question of whether there are transcriptional changes in HAS1/TDA1 that accompany pairing and relocation to the nuclear periphery. A reviewer points out that SPELL groups TDA1 with carbohydrate metabolism genes, including HXK1 that goes to the nuclear pores in galactose, and whose expression changes upon glucose depletion.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"The dynamic three-dimensional organization of the diploid yeast genome\" for further consideration at eLife. Your revised article has been favorably evaluated by Kevin Struhl (Senior editor), a Reviewing editor, and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below.\n\nReviewer #3:\n\nThe manuscript from Dunham and co-authors is significantly improved. They have shown that homologous chromosomes in diploid interact along their lengths more frequently than would be expected due to the Rabl-like configuration, particularly in saturated cultures. Their work also highlights the HAS1-TDA1 alleles that dramatically associate in galactose and upon saturated growth. The association of these loci with the nuclear membrane and its dependence on Nup2 suggests that HAS1-TDA1 pairing requires nuclear pore contact.\n\nMajor point\n\n1) My only reservation is that the authors ought to include a sentence that acknowledges that association of HAS1-TDA1 with nuclear pores has not yet been pinned down. In fact, the bulk of the evidence is negative or ambiguous: 1) Nup60 does not contact the genes, 2) nuclear pore contact does not require Mlp2, and 3) the only requirement for perinuclear enrichment is Nup2, which is a mobile nucleoporin that equilibrates on and off nuclear pores. Capelson et al., Cell, 2010 showed that mobile nucleoporins can play important roles at genes even when they are not at nuclear pores. It is acceptable for the authors to suggest that HAS1-TDA1 interact with nuclear pores by a unique mechanism but they should also acknowledge that proof of nuclear pore contact is not yet definitive.\n\nIn this light, the Abstract should avoid the statement that the interaction is \"dependent on interactions with nuclear pore complexes\" and the title of the Figure 5 legend should not read, \"requires nuclear pore interactions\"\n",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4255abfd-3db9-44da-b664-27b2d63a8df5",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C1",
+      "claim": "The budding yeast Saccharomyces cerevisiae exhibits a Rabl-like orientation during interphase, where centromeres cluster at one end of the nucleus attached to the spindle pole body, and chromosome arms extend outward toward the nuclear periphery where telomeres associate.",
+      "claim_type": "EXPLICIT",
+      "source": "The predominant feature of yeast 3D genome organization is its Rabl-like orientation (Jin et al., 1998) (Figure 1A): during interphase, the centromeres cluster at one end of the nucleus, attached to the spindle pole body, and chromosome arms extend outward toward the nuclear periphery where the telomeres associate (Schober et al., 2008; Therizols et al., 2010), like in anaphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies (Jin et al., 1998; Schober et al., 2008; Therizols et al., 2010) and reference to Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "7c0c13c5-3ff2-482e-b29e-df7c4accbcd1",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C2",
+      "claim": "The ribosomal DNA array forms the nucleolus opposite the spindle pole, splitting chromosome XII into two separate domains that behave as if they were separate chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the ribosomal DNA array forms the nucleolus, opposite the spindle pole (Yang et al., 1989), splitting chromosome XII into two separate domains that behave as if they were separate chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Yang et al., 1989.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "2090ad84-ad26-4fe1-8a6f-fd627d8107b4",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C3",
+      "claim": "The Rabl-like organization largely persists through the cell cycle and even in stationary phase, albeit with increased telomere clustering and decreased centromere clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "This organization largely persists through the cell cycle (Jin et al., 1998) and even in stationary phase, albeit with increased telomere clustering and decreased centromere clustering (Guidi et al., 2015; Rutledge et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Jin et al., 1998; Guidi et al., 2015; Rutledge et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "255badc2-429d-43dc-a9f2-2b1b5a750164",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C4",
+      "claim": "A simple volume-exclusion polymer model of chromosomes in a Rabl-like orientation is sufficient to explain microscopy and Hi-C data of the budding yeast genome in haploids grown under standard lab conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, multiple studies have argued that a simple volume-exclusion polymer model of chromosomes in a Rabl-like orientation is sufficient to explain microscopy and Hi-C data of the budding yeast genome (Tjong et al., 2012; Wong et al., 2012), at least in haploids grown under standard lab conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Tjong et al., 2012 and Wong et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "bc24fcd3-cfd4-4755-94a6-96fb4b611573",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C5",
+      "claim": "Homologous chromosomes can pair in diploid yeast not only in meiosis, but also during mitotic growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In diploid yeast, homologous chromosomes can pair not only in meiosis, but also during mitotic growth (Burgess and Kleckner, 1999; Burgess et al., 1999; Dekker et al., 2002; Weiner and Kleckner, 1994), as they do in Drosophila (Metz, 1916).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Burgess and Kleckner, 1999; Burgess et al., 1999; Dekker et al., 2002; Weiner and Kleckner, 1994; Metz, 1916.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "2a3d546c-e646-4d3d-a559-b4cc14bdb64f",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C6",
+      "claim": "The extent of mitotic homolog pairing has been debated due to discrepancies between studies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the extent of mitotic homolog pairing has been debated due to discrepancies between studies (Barzel and Kupiec, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Barzel and Kupiec, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "85619082-0d16-4858-9dbf-ad2a4f1b8dad",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C7",
+      "claim": "In fluorescence in situ hybridization (FISH), signal loss can lead to false inference of colocalization.",
+      "claim_type": "EXPLICIT",
+      "source": "In fluorescence in situ hybridization (FISH), signal loss can lead to false inference of colocalization (Lorenz et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Lorenz et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "9c92fef2-4f9a-46b1-b8ac-a6200abb296f",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C8",
+      "claim": "Tagging of genomic loci with repetitive arrays of GFP for live-cell imaging can directly cause pairing via GFP dimerization.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been suggested that tagging of genomic loci with repetitive arrays of GFP for live-cell imaging can directly cause pairing via GFP dimerization (Mirkin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Mirkin et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "42f3778a-2148-43e2-931b-188849682da7",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C9",
+      "claim": "Genes that respond to signals like galactose induction (GAL1, HXK1), inositol starvation (INO1), oxidative stress, and heat shock (HSP104) relocate to the nuclear periphery upon activation via interactions with nuclear pore complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes that respond to signals like galactose induction (GAL1, HXK1), inositol starvation (INO1), oxidative stress, and heat shock (HSP104) have been observed by microscopy to relocate to the nuclear periphery upon activation via interactions with nuclear pore complexes (Ahmed et al., 2010; Brickner and Walter, 2004; Brickner et al., 2016; Casolari et al., 2004; Dieppois et al., 2006; Dultz et al., 2016; Taddei et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ahmed et al., 2010; Brickner and Walter, 2004; Brickner et al., 2016; Casolari et al., 2004; Dieppois et al., 2006; Dultz et al., 2016; Taddei et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "4359cb58-d8fc-4fce-829b-518818656348",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C10",
+      "claim": "Nuclear pore interactions can mediate clustering of genes that share Gene Recruitment Sequences, including homologous alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclear pore interactions can mediate clustering of genes that share Gene Recruitment Sequences, including homologous alleles (Brickner et al., 2015, 2012, 2016; Randise-Hinchliff et al., 2016), and even impact the conformation of chromosomes well beyond the induced gene (Dultz et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Brickner et al., 2015, 2012, 2016; Randise-Hinchliff et al., 2016; Dultz et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "72ec84c3-7c99-472d-8c8b-19fc5bdc760b",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C11",
+      "claim": "Divergent Saccharomyces species can form stable hybrids, such as between S. cerevisiae and S. paradoxus (90% nucleotide identity in coding regions) or S. uvarum (80% nucleotide identity in coding regions).",
+      "claim_type": "EXPLICIT",
+      "source": "However, divergent Saccharomyces species can form stable hybrids (Gonz\u00e1lez et al., 2006; Mertens et al., 2015), e.g. between S. cerevisiae and S. paradoxus (90% nucleotide identity in coding regions [Kellis et al., 2003]) or its more distant relative S. uvarum (also known as S. bayanus var. uvarum; 80% nucleotide identity in coding regions [Kellis et al., 2003]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Gonz\u00e1lez et al., 2006; Mertens et al., 2015; Kellis et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "2ae94631-19d9-4e04-87ee-bcab51f89175",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C12",
+      "claim": "Interspecific hybrids between diverged Saccharomyces species are sufficiently diverged to allow straightforward sequence-level discrimination of homologs.",
+      "claim_type": "EXPLICIT",
+      "source": "These interspecific hybrids are sufficiently diverged to allow straightforward sequence-level discrimination of homologs (Figure 1\u2014figure supplement 1A) but have maintained nearly complete synteny (Fischer et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by reference to Figure 1\u2014figure supplement 1A and citation to Fischer et al., 2000.",
+      "evidence_type": "[\"IMAGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "ef9efd90-5521-45b7-90b1-152ac53e4758",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C13",
+      "claim": "Hi-C data from diploid yeast exhibit signatures of a Rabl-like orientation, including frequent intrachromosomal interactions between adjacent loci, pericentromeric regions interacting frequently with one another, and telomeric regions preferentially interacting.",
+      "claim_type": "EXPLICIT",
+      "source": "The most prominent features of Hi-C data from diploid yeast are the signatures of a Rabl-like orientation (Figure 1C,D). As in all Hi-C datasets, the contact map exhibits a strong diagonal signal indicating frequent intrachromosomal interactions between adjacent loci. In addition, pericentromeric regions interact frequently with one another, but infrequently with regions far from centromeres, as expected from the clustering of centromeres at the spindle pole body. Telomeric regions also preferentially interact, consistent with their clustering at the nuclear periphery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by reference to Figure 1C,D and description of observed Hi-C patterns.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "ee031a28-7fd4-4a06-8b97-b5cf1c371fcc",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C14",
+      "claim": "The rDNA-carrying chromosomes each behave as two separate chromosomes divided by the nucleolus, with frequent interactions on either side of the rDNA array but not across it.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the rDNA-carrying chromosomes each behave as two separate chromosomes divided by the nucleolus, with frequent interactions on either side of the rDNA array but not across it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on Hi-C data observations described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "c9cbb291-ee21-468a-b406-a72aefa0a49e",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C15",
+      "claim": "An off-diagonal line of increased interaction in Hi-C data is suggestive of homolog pairing.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to these previously described phenomena, we observed an off-diagonal line of increased interaction suggestive of homolog pairing (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on Hi-C data observations shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "503b73d5-b8cb-48c8-9687-2712eabb41ad",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C16",
+      "claim": "Homologous loci tend to be closer together than nonhomologous loci in multiple assays, including microscopy, recombination efficiency, and chromatin conformation capture.",
+      "claim_type": "EXPLICIT",
+      "source": "Homologous loci tend to be closer together than nonhomologous loci in multiple assays, including microscopy (Burgess et al., 1999; Weiner and Kleckner, 1994), recombination efficiency (Burgess and Kleckner, 1999), and chromatin conformation capture (Dekker et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Burgess et al., 1999; Weiner and Kleckner, 1994; Burgess and Kleckner, 1999; Dekker et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "5eb628bf-929e-4661-a530-60f095462150",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C17",
+      "claim": "After controlling for the Rabl-like orientation by restricting comparisons to interactions with loci at similar distance from the centromere and on chromosome arms of similar length, the observed interaction between homologous alleles exceeds that predicted based on the Rabl-like orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Even with these stringent constraints, we find that the observed interaction between homologous alleles exceeds that predicted based on the Rabl-like orientation (Figure 2E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data shown in Figure 2E comparing experimental data to polymer model predictions.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "c4446821-3ed7-4379-afe1-4c25e17368e3",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C18",
+      "claim": "The left arm of chromosome III and the right arm of chromosome IX exhibit particularly strong homolog proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the left arm of chromosome III and the right arm of chromosome IX exhibit particularly strong homolog proximity (Figure 2B); proximity at chromosome III is possibly due to pairing of the silenced mating-type loci (Miele et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data shown in Figure 2B and citation to Miele et al., 2009 for the mating-type loci explanation.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "95bff262-7d49-4e26-8c56-5b496d620b8e",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C19",
+      "claim": "Homolog proximity is substantially greater in saturated cultures approaching stationary phase than in exponential growth in all hybrids tested.",
+      "claim_type": "EXPLICIT",
+      "source": "In all hybrids, homolog proximity is substantially greater in saturated cultures approaching stationary phase than in exponential growth (Figure 2E), consistent with previous observations (Burgess et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data shown in Figure 2E and citation to Burgess et al., 1999.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "727bb7f2-2332-4532-9a0b-b18e5f1225fc",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C20",
+      "claim": "Nocodazole arrest does not substantially reduce homolog proximity in the diverged hybrid S. cerevisiae x S. uvarum.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that nocodazole arrest does not substantially reduce homolog proximity in the diverged hybrid S. cerevisiae x S. uvarum (Figure 2E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "40cd6446-3255-4a22-9ed6-d0522627d7e7",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C21",
+      "claim": "In polymer models of the Rabl-like orientation, smaller nuclear size led to decreased, rather than increased, homolog proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "In these models, smaller nuclear size led to decreased, rather than increased, homolog proximity (Figure 2E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by polymer model simulations shown in Figure 2E.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "4285599d-418e-49b5-8e5e-54b58bb6ce4e",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C22",
+      "claim": "The difference in homolog proximity between saturated and exponentially growing cultures cannot be explained by the effect of differences in nuclear size.",
+      "claim_type": "EXPLICIT",
+      "source": "These models suggest that the difference in homolog proximity between saturated and exponentially growing cultures cannot be explained by the effect of differences in nuclear size, and provide additional support for homolog pairing beyond the Rabl-like orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from polymer model simulations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "f35468ec-55fd-49aa-b73d-6c8d1455089f",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C23",
+      "claim": "GAL1 and its neighbors GAL7 and GAL10 move upon galactose induction from their location near the spindle pole body to a nuclear pore complex at the nuclear periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "This gene and its neighbors GAL7 and GAL10 move upon galactose induction from their location near the spindle pole body to a nuclear pore complex at the nuclear periphery (Casolari et al., 2004; Dultz et al., 2016) (Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Casolari et al., 2004; Dultz et al., 2016 and reference to Figure 3A.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "005a712c-1113-4bb1-a9d5-73cf30dca082",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C24",
+      "claim": "Both GAL1 loci interacted less with pericentromeric regions upon galactose induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this expectation, we found using Hi-C that both GAL1 loci interacted less with pericentromeric regions upon galactose induction (Figure 3B\u2013D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Hi-C data shown in Figure 3B\u2013D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "2bdbb1d4-964e-4977-a14b-244e9615138c",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C25",
+      "claim": "Markedly increased interactions between homologous loci surrounding the genes HAS1 and TDA1 on chromosome XIII occur under both growth saturation and galactose induction, compared to standard exponential growth in glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we observed markedly increased interactions between homologous loci surrounding the genes HAS1 and TDA1 (subsequently abbreviated as 'HAS1-TDA1 loci') on chromosome XIII under both growth saturation and galactose induction, compared to standard exponential growth in glucose (Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Hi-C data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "1797808a-0178-49c7-b50a-21202fd2e195",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C26",
+      "claim": "Under inducing conditions, the interaction between HAS1-TDA1 homologs is among the strongest genome-wide, excluding pericentromeric and subtelomeric regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, under inducing conditions, this interaction is among the strongest genome-wide, excluding pericentromeric and subtelomeric regions (top interaction out of over 83,000; Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "4ba36a69-f247-46ea-98d5-1aced7a3ce4a",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C27",
+      "claim": "Inducible homolog proximity at HAS1-TDA1 appears to be evolutionarily conserved, as it occurs in all three tested interspecific hybrids, at least in saturated culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, this inducible homolog proximity appears to be evolutionarily conserved, as it occurs in all three tested interspecific hybrids, at least in saturated culture (Figure 4A\u2013C; galactose not tested in all hybrids).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data shown in Figure 4A\u2013C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "01f2070c-ae99-43c8-94b2-6dcc502577db",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C28",
+      "claim": "Every deletion that included the HAS1pr-TDA1pr intergenic region reduced the interaction frequency between HAS1-TDA1 homologs in saturated growth conditions back to uninduced levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Every deletion that included this intergenic region reduced the interaction frequency between HAS1-TDA1 homologs in saturated growth conditions back to uninduced levels, indicating that this inducible pairing is sequence-dependent (Figure 4E and Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Hi-C data from deletion strains shown in Figure 4E and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "6bc05614-9e3e-4205-b59a-f357cb88aedc",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C29",
+      "claim": "Deletion of the HAS1 coding sequence had minimal impact on HAS1-TDA1 pairing, showing that the deletion construct itself did not impede inducible pairing.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, deletion of the HAS1 coding sequence had minimal impact, which shows that the deletion construct itself did not impede inducible pairing (Figure 4E and Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Hi-C data from deletion strains shown in Figure 4E and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "aabe7dd2-9684-47be-bc43-7e0934487c6c",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C30",
+      "claim": "The ectopic HAS1pr-TDA1pr allele exhibited inducible interactions with the S. uvarum HAS1pr-TDA1pr, although not to the same extent as the endogenous allele.",
+      "claim_type": "EXPLICIT",
+      "source": "The ectopic HAS1pr-TDA1pr allele exhibited inducible interactions with the S. uvarum HAS1pr-TDA1pr, although not to the same extent as the endogenous allele (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Hi-C data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "86adf642-6749-47ee-8ff7-f7cbd901c605",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C31",
+      "claim": "In homozygous S. cerevisiae diploids, the HAS1-TDA1 homologs were closer together in galactose-induced and saturated cultures than in glucose, as measured by confocal microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our Hi-C data, the HAS1-TDA1 homologs were closer together in galactose-induced and saturated cultures than in glucose (Figure 4G,H and Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 4G,H and Figure 4\u2014source data 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "1f2f8807-d499-47d8-a97b-fb991e27cbe8",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C32",
+      "claim": "The HAS1-TDA1 locus shifted to the nuclear periphery upon galactose induction and in saturated culture conditions in haploid S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the HAS1-TDA1 locus shifted to the nuclear periphery upon galactose induction and in saturated culture conditions (Figure 5A and Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 5A and Figure 5\u2014source data 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "5ecda1c4-e338-4aa2-93ee-56190d63e978",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C33",
+      "claim": "Nup2 but not Nup100 was required for peripheral localization of the HAS1-TDA1 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "As in other cases of gene relocalization, Nup2 but not Nup100 was required for peripheral localization of the HAS1-TDA1 locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by microscopy data from deletion strains shown in Figure 5A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "4199c5a7-b341-4a68-9d37-6cde2bdf8210",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C34",
+      "claim": "Unlike other relocalized genes, HAS1-TDA1 locus relocalization did not require Mlp2.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike other relocalized genes (Ahmed et al., 2010; Brickner et al., 2016; Luthra et al., 2007), HAS1-TDA1 locus relocalization did not require Mlp2, suggesting that the HAS1-TDA1 locus may interact with nuclear pores via a distinct mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by microscopy data from deletion strains shown in Figure 5A and citations to Ahmed et al., 2010; Brickner et al., 2016; Luthra et al., 2007.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "66c90e9f-94ad-4da8-8567-5b4d1f11f283",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C35",
+      "claim": "The HAS1-TDA1 loci are peripherally relocalized in diploids.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we confirmed that the HAS1-TDA1 loci are peripherally relocalized in diploids, by reanalyzing the images we used to measure distances between HAS1-TDA1 alleles in diploid cells (Figure 5B and Figure 5\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 5B and Figure 5\u2014source data 2.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "a74fec02-cef3-472c-85ee-9e11fb847599",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C36",
+      "claim": "HAS1-TDA1 alleles can remain paired in galactose in the nucleoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, HAS1-TDA1 alleles can remain paired in galactose in the nucleoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "aaef7f4f-261d-4db3-979b-0e0e28fdc0f4",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C37",
+      "claim": "The peripheral localization of HAS1-TDA1 loci exhibits cell cycle dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with these studies, the peripheral localization of HAS1-TDA1 loci that we observe also exhibits cell cycle dependence (Figure 5D,E and Figure 5\u2014source data 2), which may explain the presence of pairing in the nucleoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by microscopy data shown in Figure 5D,E and Figure 5\u2014source data 2.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "a3f3c1c6-a79b-44cd-91db-eb684927ffb0",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C38",
+      "claim": "Nup2 is required for HAS1-TDA1 homolog pairing in galactose but not in saturated growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In this strain, HAS1-TDA1 pairing was not observed in galactose, as expected, but still occurred at full strength in saturated growth (Figure 5F). These data indicate that Nup2 is required for HAS1-TDA1 homolog pairing in galactose but not in saturated culture, suggesting distinct and/or additional mechanisms of pairing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Hi-C data from nup2\u0394 strains shown in Figure 5F.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "758e77f2-ad3e-4fc6-b447-11f6c3ea5380",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C39",
+      "claim": "Nup60 ChIP-seq showed clear enrichment of the galactose metabolism gene cluster GAL1-GAL10-GAL7 in the immunoprecipitated DNA from cells grown in galactose, compared to those grown in glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we observed a clear enrichment of the galactose metabolism gene cluster GAL1-GAL10-GAL7 in the immunoprecipitated DNA from cells grown in galactose, compared to those grown in glucose (Figure 5G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ChIP-seq data shown in Figure 5G.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "929ac18f-af16-41b0-9a96-3fc01d12edad",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C40",
+      "claim": "Nup60 ChIP-seq showed little if any enrichment of the HAS1-TDA1 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we observed little if any such enrichment of the HAS1-TDA1 locus (Figure 5H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ChIP-seq data shown in Figure 5H.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "520e1a80-367c-4bc2-8f78-829e0d35319f",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C41",
+      "claim": "HAS1 is downregulated in both galactose and saturated growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "HAS1 is downregulated in both pairing conditions (Figure 6A), whereas TDA1 is weakly upregulated in both conditions (Figure 6B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-seq data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "b8012530-60a5-4d62-9ef3-899b464ea865",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C42",
+      "claim": "TDA1 is weakly upregulated in both galactose and saturated growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "HAS1 is downregulated in both pairing conditions (Figure 6A), whereas TDA1 is weakly upregulated in both conditions (Figure 6B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-seq data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "09cbd3f5-ed2c-4211-aa66-1d487123dcaa",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C43",
+      "claim": "Transcriptional changes at HAS1 and TDA1 are relatively unremarkable; in both galactose and saturated growth, dozens to hundreds of genes are more strongly up- or downregulated than HAS1 or TDA1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, transcriptional changes at HAS1 and TDA1 are relatively unremarkable; in both galactose and saturated growth, dozens to hundreds of genes are more strongly up- or downregulated than HAS1 or TDA1 (Figure 6C,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-seq data shown in Figure 6C,D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "b4337634-d001-4eda-b0e3-3024f90d32d5",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C44",
+      "claim": "GAL1 is upregulated nearly 1000-fold in galactose.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, GAL1 is upregulated nearly 1000-fold in galactose (Figure 6C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-seq data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "c66c3ec1-54f2-4a80-ad97-4af0dd5da0b8",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C45",
+      "claim": "After using a polymer model of the Rabl-like orientation to calibrate estimates, homologous chromosomes do interact preferentially during mitotic growth in hybrid diploids with homologs diverged to less than 80% nucleotide identity, albeit subtly.",
+      "claim_type": "EXPLICIT",
+      "source": "After using a polymer model of the Rabl-like orientation to calibrate our estimates, we find that even in hybrid diploids with homologs diverged to less than 80% nucleotide identity, homologous chromosomes do interact preferentially during mitotic growth, albeit subtly (Figure 2E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Hi-C data compared to polymer model predictions shown in Figure 2E.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "106108b0-a585-47b7-8be4-583235dbd8b8",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C46",
+      "claim": "Homolog pairing strength depends on both growth conditions and genomic location.",
+      "claim_type": "EXPLICIT",
+      "source": "Homolog pairing strength also depends on both growth conditions and genomic location, sometimes jointly: the homologous HAS1-TDA1 loci on chromosome XIII pairs during saturated growth and galactose induction, but not exponential growth in glucose (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Hi-C data shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "bb94c1aa-7301-4c7b-86f5-fa56110a805f",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C47",
+      "claim": "The HAS1-TDA1 region is not remarkably conserved, suggesting that homolog pairing is at least partly due to specific interactions mediated by proteins, rather than direct DNA-DNA homology interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "This region is not remarkably conserved, suggesting that homolog pairing is at least partly due to specific interactions mediated by proteins, rather than direct DNA-DNA homology interactions (Danilowicz et al., 2009; Gladyshev and Kleckner, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the lack of conservation and citations to Danilowicz et al., 2009; Gladyshev and Kleckner, 2014.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "9d358aac-4d1f-471a-a657-2e2780e31be4",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C48",
+      "claim": "Nuclear pore interactions may confine the HAS1-TDA1 alleles to the relatively small space near the nuclear periphery, thus speeding up the rate at which they randomly contact each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the molecular mechanism, nuclear pore interactions may confine the HAS1-TDA1 alleles to the relatively small space near the nuclear periphery, thus speeding up the rate at which they randomly contact each other (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning about the mechanism, supported by reference to Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"SPECULATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "21e0338c-23b5-49f4-809f-0e1e7b18df04",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C49",
+      "claim": "Additional mechanisms such as protein-protein interactions between DNA-binding proteins could prolong the duration of contact between HAS1-TDA1 alleles, even after the alleles are no longer at a nuclear pore.",
+      "claim_type": "EXPLICIT",
+      "source": "Once in physical proximity, additional mechanisms such as protein-protein interactions between DNA-binding proteins could prolong the duration of contact, even after the alleles are no longer at a nuclear pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning about potential mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "0a6e3900-ab67-4c3e-8d67-d7cc9ff2594b",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C50",
+      "claim": "The presence of paired HAS1-TDA1 alleles in the nucleoplasm suggests that nuclear pore-independent pairing mechanisms may act at HAS1-TDA1.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the presence of paired HAS1-TDA1 alleles in the nucleoplasm suggests that such nuclear pore-independent pairing mechanisms may act at HAS1-TDA1 (Figure 5C and Figure 5\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from microscopy data shown in Figure 5C and Figure 5\u2014source data 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "7e3cc927-42c5-42a7-8e39-2d598913a8f2",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C51",
+      "claim": "A recent study showed that Nup2 is involved in meiotic homolog pairing, suggesting that Nup2 may more generally play a role in homolog pairing.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a recent study showed that Nup2 is involved in meiotic homolog pairing (Chu et al., 2017), suggesting that Nup2 may more generally play a role in homolog pairing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Chu et al., 2017 and inference about general role.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "fc17b015-95d6-432e-8935-5edc41904e7a",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C52",
+      "claim": "Divergence between S. cerevisiae and S. uvarum, particularly in their galactose metabolism pathways, may contribute to the lack of pairing at the GAL1 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Divergence between S. cerevisiae and S. uvarum, particularly in their galactose metabolism pathways (Roop et al., 2016), may also contribute to the lack of pairing at the GAL1 locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning supported by citation to Roop et al., 2016.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "546e1448-c074-4a6a-8b62-9b33b83d44f7",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C53",
+      "claim": "Tda1 is a kinase required for phosphorylation of Hxk2, the primary hexokinase in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Tda1 is a kinase required for phosphorylation of Hxk2, the primary hexokinase in yeast (Kaps et al., 2015; Kettner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kaps et al., 2015; Kettner et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "2788ec0c-ca23-4ee6-a01f-8cefea5b67ee",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C54",
+      "claim": "Unphosphorylated Hxk2 can interact with Mig1 to repress various alternative carbon source metabolism genes in the presence of glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "Unphosphorylated Hxk2 can interact with Mig1 to repress various alternative carbon source metabolism genes in the presence of glucose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about Hxk2 and Mig1 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "a5f3a135-9330-4020-86c8-7616dd759113",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C55",
+      "claim": "Phosphorylation of Hxk2 by Tda1 in low-glucose conditions prevents its interaction with Mig1 and thus leads to release from glucose repression.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylation of Hxk2 by Tda1 in low-glucose conditions prevents its interaction with Mig1 and thus leads to release from glucose repression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about Tda1, Hxk2, and Mig1 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "a0d7ee3f-11b5-4c46-a36f-54184d2e1999",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C56",
+      "claim": "Nuclear pore interaction may aid the upregulation of TDA1 in response to low-glucose concentrations, perhaps by facilitating efficient transcription or mRNA export from the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "While we have not yet tested whether disrupting peripheral localization would affect TDA1 or HAS1 transcription, we hypothesize that nuclear pore interaction may aid the upregulation of TDA1 in response to low-glucose concentrations, perhaps by facilitating efficient transcription or mRNA export from the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning about potential function.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "c9dcfe57-cd88-49e5-92be-fb76ed4697d2",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C57",
+      "claim": "Increased transcription may itself contribute to localization at nuclear pores via interactions between nascent mRNA and mRNA processing and export factors at nuclear pores.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased transcription may itself contribute to localization at nuclear pores via interactions between nascent mRNA and mRNA processing and export factors at nuclear pores (Akhtar and Gasser, 2007), and may be involved in establishment of HAS1-TDA1 pairing as it is for GAL1 (Brickner et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning supported by citations to Akhtar and Gasser, 2007; Brickner et al., 2016.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "d6bcfc2a-4c4a-4926-9734-48fc0a0fb143",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C58",
+      "claim": "For some genes, nuclear pore interactions mediate rapid reactivation in a phenomenon termed epigenetic transcriptional memory.",
+      "claim_type": "EXPLICIT",
+      "source": "For some genes, nuclear pore interactions mediate rapid reactivation in a phenomenon termed epigenetic transcriptional memory (D'Urso and Brickner, 2017; D'Urso et al., 2016; Light et al., 2010); it is also possible that the nuclear pore interactions with HAS1-TDA1 may be involved in epigenetic transcriptional memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to D'Urso and Brickner, 2017; D'Urso et al., 2016; Light et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "3da5b1e6-c951-407d-b8af-f0ab1e30b61b",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C59",
+      "claim": "The pairing of the HAS1-TDA1 alleles may serve a distinct function, potentially including trans gene regulation like at GAL1.",
+      "claim_type": "EXPLICIT",
+      "source": "The pairing of the HAS1-TDA1 alleles may also serve a distinct function, potentially including trans gene regulation like at GAL1 (Zhang and Bai, 2016), but further experiments are needed to test this possibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning supported by citation to Zhang and Bai, 2016.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "285ab61f-50f1-4f10-804f-ec16429942ec",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C60",
+      "claim": "Recent studies in the fruit fly Drosophila have provided evidence for the generality of the role of nuclear pores in transcriptional regulation first observed in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "While yeast nuclear organization may differ from that of other eukaryotes in some ways, our findings may, nevertheless, be applicable to other organisms: recent studies in the fruit fly Drosophila have provided evidence for the generality of the role of nuclear pores in transcriptional regulation first observed in yeast (Pascual-Garcia et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Pascual-Garcia et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "0025a425-2078-47c4-9d95-0a5595bd3bba",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C61",
+      "claim": "The diploid yeast genome has a dynamic and complex 3D organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results reveal that the diploid yeast genome has a dynamic and complex 3D organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary conclusion based on all the data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "049ba85c-5eaa-4e5a-85b1-a7e08c9f231d",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C62",
+      "claim": "Homolog proximity increases in saturated culture conditions after controlling for the Rabl-like orientation using a polymer model.",
+      "claim_type": "EXPLICIT",
+      "source": "After controlling for the Rabl-like orientation using a polymer model, we observe significant homolog proximity that increases in saturated culture conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data comparing experimental results to polymer model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "9fd4fc36-c6f3-47e6-bc34-4342694668cd",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C63",
+      "claim": "A localized increase in homologous interactions between the HAS1-TDA1 alleles occurs specifically under galactose induction and saturated growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we observe a localized increase in homologous interactions between the HAS1-TDA1 alleles specifically under galactose induction and saturated growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Hi-C data showing condition-specific pairing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "6a132317-8847-47b7-a0ea-f42bec4c28c1",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "claim_id": "C64",
+      "claim": "HAS1-TDA1 pairing is accompanied by relocalization to the nuclear periphery and requires Nup2, suggesting a role for nuclear pore complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "This pairing is accompanied by relocalization to the nuclear periphery and requires Nup2, suggesting a role for nuclear pore complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by microscopy and Hi-C data from deletion strains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f19acede-acdf-4c23-92a3-e201958f8313",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Hi-C data from diploid yeast confirm the Rabl-like orientation previously observed by microscopy, including centromere clustering at the spindle pole body, telomere clustering at the nuclear periphery, and the nucleolus dividing chromosome XII into two functional domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 establish the Rabl-like orientation from prior literature, while C13-C14 demonstrate that Hi-C data recapitulate these features in diploid hybrids. The convergence of microscopy-based prior knowledge with genome-wide Hi-C observations provides strong support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "57d677c9-096e-430e-a40a-55d03134f56e",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "After controlling for the Rabl-like orientation using a polymer model that restricts comparisons by centromeric distance and chromosome arm length, homologous chromosomes exhibit preferential interactions beyond what is predicted by the Rabl-like orientation alone, even in hybrids diverged to ~80% nucleotide identity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 establishes prior polymer models, while C17, C45, and C62 demonstrate that experimental Hi-C data exceed polymer model predictions after stringent controls. The use of multiple filtering criteria (centromeric distance, arm length) and comparison to simulations provides rigorous support for homolog pairing beyond structural constraints.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "d5ef0b01-8b1c-49fa-8012-2396557c1fe4",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Homolog proximity is substantially greater in saturated cultures than in exponential growth, and this difference cannot be explained by nuclear size changes or cell cycle effects, as polymer models with smaller nuclei show decreased rather than increased homolog proximity, and nocodazole arrest does not substantially reduce pairing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22 collectively address potential confounders (nuclear size, cell cycle) through both experimental manipulation (nocodazole) and computational modeling. The polymer simulations showing opposite effects of nuclear size changes (C21-C22) strengthen the argument that condition-dependent pairing is not merely a geometric consequence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "29d3218f-833c-46e9-9fe9-0230a6ed2200",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Upon galactose induction, the GAL1 locus and its neighbors relocalize from the spindle pole body to nuclear pore complexes at the nuclear periphery, as evidenced by decreased Hi-C interactions with pericentromeric regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C23 cites prior microscopy studies establishing GAL1 relocalization, while C24 provides genome-wide Hi-C validation. The convergence of targeted microscopy and unbiased Hi-C data supports this known phenomenon.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "badd1fbb-ee76-41a2-8f27-df52e3aacec6",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The HAS1-TDA1 locus on chromosome XIII exhibits markedly increased homologous interactions specifically under galactose induction and saturated growth conditions, representing one of the strongest genome-wide interactions and appearing evolutionarily conserved across three interspecific hybrids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 establish the phenomenon with Hi-C data across multiple hybrids and conditions, while C46 and C63 contextualize this as condition- and locus-specific. The ranking as a top genome-wide interaction (C26) and conservation across species (C27) provide strong quantitative and evolutionary support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "9a7c5390-a16b-4109-90dd-681aa02dd0f8",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "HAS1-TDA1 pairing is sequence-dependent, requiring the HAS1pr-TDA1pr intergenic region, as deletions including this region abolish pairing while deletion of the HAS1 coding sequence does not, and ectopic placement of HAS1pr-TDA1pr confers partial inducible pairing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 present a systematic deletion analysis with appropriate controls. The specificity of the intergenic region requirement (C28), the negative control showing the deletion construct itself doesn't impede pairing (C29), and the ectopic placement experiment (C30) provide converging genetic evidence for sequence-dependence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "cb20157e-f173-432d-abdb-932a2cc501ac",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Confocal microscopy in homozygous S. cerevisiae diploids confirms that HAS1-TDA1 homologs are closer together in galactose-induced and saturated cultures than in glucose.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C31 provides orthogonal validation of Hi-C findings using microscopy in non-hybrid diploids, strengthening the conclusion that HAS1-TDA1 pairing is not an artifact of hybrid divergence or Hi-C methodology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "61b3535c-4806-48e8-96bf-b82248028a51",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The HAS1-TDA1 locus relocalizes to the nuclear periphery upon galactose induction and in saturated culture in a Nup2-dependent but Mlp2-independent manner, suggesting a distinct mechanism from other relocalized genes like GAL1 and INO1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 establish peripheral relocalization through microscopy in both haploids and diploids, with genetic dissection showing Nup2 but not Mlp2 requirement. The differential genetic requirements compared to other genes (C34) suggest mechanistic novelty, though the exact mechanism remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "5a3af649-ac1b-4863-bd00-1eb4ea8677e1",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "HAS1-TDA1 alleles can remain paired in the nucleoplasm in galactose, and peripheral localization exhibits cell cycle dependence, with reduced localization during S-phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 provide microscopy evidence for pairing independent of peripheral localization and cell cycle dynamics. These observations are consistent with prior studies of other relocalized genes and suggest pairing can be maintained after initial nuclear pore-mediated contact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "1929284c-c8a8-4eb4-b57b-8fc61f5c7ebb",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Nup2 is required for HAS1-TDA1 homolog pairing in galactose but not in saturated growth, suggesting distinct mechanisms of pairing under different conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C38 presents Hi-C data from nup2\u0394 strains showing condition-specific genetic requirements. The differential requirement across conditions is well-supported by the data, though the alternative mechanism in saturated growth remains uncharacterized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "947df7d0-8912-4b91-a88d-b124b06818ed",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Nup60 ChIP-seq shows enrichment of GAL1 but not HAS1-TDA1 in galactose-grown cells, suggesting HAS1-TDA1 interacts with nuclear pores differently than GAL1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 provide biochemical evidence distinguishing HAS1-TDA1 from GAL1 in nuclear pore interactions. The positive control (GAL1 enrichment) validates the assay, while the lack of HAS1-TDA1 enrichment is consistent with the distinct genetic requirements (Mlp2-independence) and supports a different mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "c8c5e274-e6c6-42df-9fdc-18517becaac6",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "HAS1 is downregulated and TDA1 is weakly upregulated in both galactose and saturated growth conditions, but these transcriptional changes are modest compared to many other genes, with GAL1 showing ~1000-fold upregulation in galactose.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 present RNA-seq data showing transcriptional changes at HAS1-TDA1 are relatively unremarkable in magnitude. The comparison to GAL1 (C44) and genome-wide changes (C43) provides important context that nuclear pore association is not solely driven by strong transcriptional activation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "71e1c8db-fbdf-4b2e-97f9-43d2f1d6c898",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The HAS1-TDA1 region is not remarkably conserved, suggesting homolog pairing is mediated by protein interactions rather than direct DNA-DNA homology recognition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C47 makes an inference about mechanism based on lack of sequence conservation. While the inference is reasonable and supported by citations to studies of DNA-DNA interactions, the manuscript does not provide direct evidence for the proposed protein-mediated mechanism, making this conclusion speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "fc232910-9e6a-4556-ad3c-9a4b1492d458",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Nuclear pore interactions may facilitate HAS1-TDA1 pairing by confining alleles to the nuclear periphery, with additional protein-protein interactions potentially prolonging contact duration, as evidenced by paired alleles observed in the nucleoplasm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C48-C50 present mechanistic speculation about how nuclear pores facilitate pairing. While C50 provides observational support (paired alleles in nucleoplasm), the proposed mechanisms in C48-C49 are hypothetical and lack direct experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "d5edec11-c7a7-424b-957c-a1b9855fed9f",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Tda1 phosphorylates Hxk2 to prevent its interaction with Mig1 and release glucose repression in low-glucose conditions, and nuclear pore interaction may facilitate TDA1 upregulation in response to low glucose.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53-C55 describe established biology of the Tda1-Hxk2-Mig1 pathway from prior literature, but C56 is speculative about the functional role of nuclear pore interactions. The authors explicitly state this hypothesis has not been tested, making the functional connection uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "4fdc5e75-4b3a-43dd-a912-b58d3b8aef60",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Divergent Saccharomyces species form stable hybrids with sufficient sequence divergence (80-90% nucleotide identity) to discriminate homologs by sequencing while maintaining synteny.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 establish the hybrid system used throughout the study, supported by prior literature and mappability analysis. This is foundational methodology rather than a novel finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "fdd370d0-8083-4860-b567-77efc40d8431",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Hi-C data show an off-diagonal line of increased interaction suggestive of homolog pairing, consistent with prior microscopy, recombination, and chromatin conformation capture studies showing homologous loci are closer than nonhomologous loci.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 establish the initial observation of homolog pairing in Hi-C data and connect it to prior literature. This sets up the more rigorous analysis that follows but is preliminary without controlling for Rabl orientation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "8f236066-855f-4457-a5b7-67e2ae4a175b",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Chromosome III left arm and chromosome IX right arm exhibit particularly strong homolog proximity, possibly due to pairing of silenced mating-type loci on chromosome III.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C18 identifies specific regions with strong pairing and provides a plausible explanation for chromosome III based on prior literature. The observation is well-supported by Hi-C data, though the mating-type loci explanation is inferential.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "4418bbfa-601f-443b-b01f-0434f8182459",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Nup2 involvement in meiotic homolog pairing suggests it may play a general role in homolog pairing beyond mitosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 connects findings to a recent study of meiotic pairing, suggesting broader significance. This is well-supported by citation but represents discussion/interpretation rather than a primary finding of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "ff08b06e-0dbe-406a-bacb-0c8b948dd138",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Increased transcription may contribute to nuclear pore localization via mRNA-mediated interactions, nuclear pore interactions may mediate epigenetic transcriptional memory, and HAS1-TDA1 pairing may serve functions including trans gene regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C57-C59 present speculative mechanisms and potential functions, supported by citations to prior work on other genes but explicitly noted as requiring further experiments. These represent hypotheses rather than supported conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "7ca29429-2c2e-4eb2-86a6-0d6fa67a268a",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Studies in Drosophila provide evidence for the generality of nuclear pore roles in transcriptional regulation first observed in yeast.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C60 contextualizes findings within broader eukaryotic biology, supported by citation. This is discussion/interpretation rather than a primary finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    },
+    {
+      "id": "c4f1bd40-915b-4485-87a6-7389479bc4c8",
+      "content_id": "17f18a3c-c6de-4fde-8e5a-8892430cf90d",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The diploid yeast genome has a dynamic and complex 3D organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is the overarching conclusion synthesizing all findings. It is well-supported by the collective evidence of condition-dependent and locus-specific genome organization beyond simple Rabl orientation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:18:22.448250Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4255abfd-3db9-44da-b664-27b2d63a8df5",
+      "result_id": "f19acede-acdf-4c23-92a3-e201958f8313"
+    },
+    {
+      "claim_id": "7c0c13c5-3ff2-482e-b29e-df7c4accbcd1",
+      "result_id": "f19acede-acdf-4c23-92a3-e201958f8313"
+    },
+    {
+      "claim_id": "2090ad84-ad26-4fe1-8a6f-fd627d8107b4",
+      "result_id": "f19acede-acdf-4c23-92a3-e201958f8313"
+    },
+    {
+      "claim_id": "ef9efd90-5521-45b7-90b1-152ac53e4758",
+      "result_id": "f19acede-acdf-4c23-92a3-e201958f8313"
+    },
+    {
+      "claim_id": "ee031a28-7fd4-4a06-8b97-b5cf1c371fcc",
+      "result_id": "f19acede-acdf-4c23-92a3-e201958f8313"
+    },
+    {
+      "claim_id": "255badc2-429d-43dc-a9f2-2b1b5a750164",
+      "result_id": "57d677c9-096e-430e-a40a-55d03134f56e"
+    },
+    {
+      "claim_id": "5eb628bf-929e-4661-a530-60f095462150",
+      "result_id": "57d677c9-096e-430e-a40a-55d03134f56e"
+    },
+    {
+      "claim_id": "c66c3ec1-54f2-4a80-ad97-4af0dd5da0b8",
+      "result_id": "57d677c9-096e-430e-a40a-55d03134f56e"
+    },
+    {
+      "claim_id": "049ba85c-5eaa-4e5a-85b1-a7e08c9f231d",
+      "result_id": "57d677c9-096e-430e-a40a-55d03134f56e"
+    },
+    {
+      "claim_id": "95bff262-7d49-4e26-8c56-5b496d620b8e",
+      "result_id": "d5ef0b01-8b1c-49fa-8012-2396557c1fe4"
+    },
+    {
+      "claim_id": "727bb7f2-2332-4532-9a0b-b18e5f1225fc",
+      "result_id": "d5ef0b01-8b1c-49fa-8012-2396557c1fe4"
+    },
+    {
+      "claim_id": "40cd6446-3255-4a22-9ed6-d0522627d7e7",
+      "result_id": "d5ef0b01-8b1c-49fa-8012-2396557c1fe4"
+    },
+    {
+      "claim_id": "4285599d-418e-49b5-8e5e-54b58bb6ce4e",
+      "result_id": "d5ef0b01-8b1c-49fa-8012-2396557c1fe4"
+    },
+    {
+      "claim_id": "f35468ec-55fd-49aa-b73d-6c8d1455089f",
+      "result_id": "29d3218f-833c-46e9-9fe9-0230a6ed2200"
+    },
+    {
+      "claim_id": "005a712c-1113-4bb1-a9d5-73cf30dca082",
+      "result_id": "29d3218f-833c-46e9-9fe9-0230a6ed2200"
+    },
+    {
+      "claim_id": "2bdbb1d4-964e-4977-a14b-244e9615138c",
+      "result_id": "badd1fbb-ee76-41a2-8f27-df52e3aacec6"
+    },
+    {
+      "claim_id": "1797808a-0178-49c7-b50a-21202fd2e195",
+      "result_id": "badd1fbb-ee76-41a2-8f27-df52e3aacec6"
+    },
+    {
+      "claim_id": "4ba36a69-f247-46ea-98d5-1aced7a3ce4a",
+      "result_id": "badd1fbb-ee76-41a2-8f27-df52e3aacec6"
+    },
+    {
+      "claim_id": "106108b0-a585-47b7-8be4-583235dbd8b8",
+      "result_id": "badd1fbb-ee76-41a2-8f27-df52e3aacec6"
+    },
+    {
+      "claim_id": "9fd4fc36-c6f3-47e6-bc34-4342694668cd",
+      "result_id": "badd1fbb-ee76-41a2-8f27-df52e3aacec6"
+    },
+    {
+      "claim_id": "01f2070c-ae99-43c8-94b2-6dcc502577db",
+      "result_id": "9a7c5390-a16b-4109-90dd-681aa02dd0f8"
+    },
+    {
+      "claim_id": "6bc05614-9e3e-4205-b59a-f357cb88aedc",
+      "result_id": "9a7c5390-a16b-4109-90dd-681aa02dd0f8"
+    },
+    {
+      "claim_id": "aabe7dd2-9684-47be-bc43-7e0934487c6c",
+      "result_id": "9a7c5390-a16b-4109-90dd-681aa02dd0f8"
+    },
+    {
+      "claim_id": "86adf642-6749-47ee-8ff7-f7cbd901c605",
+      "result_id": "cb20157e-f173-432d-abdb-932a2cc501ac"
+    },
+    {
+      "claim_id": "1f2f8807-d499-47d8-a97b-fb991e27cbe8",
+      "result_id": "61b3535c-4806-48e8-96bf-b82248028a51"
+    },
+    {
+      "claim_id": "5ecda1c4-e338-4aa2-93ee-56190d63e978",
+      "result_id": "61b3535c-4806-48e8-96bf-b82248028a51"
+    },
+    {
+      "claim_id": "4199c5a7-b341-4a68-9d37-6cde2bdf8210",
+      "result_id": "61b3535c-4806-48e8-96bf-b82248028a51"
+    },
+    {
+      "claim_id": "66c90e9f-94ad-4da8-8567-5b4d1f11f283",
+      "result_id": "61b3535c-4806-48e8-96bf-b82248028a51"
+    },
+    {
+      "claim_id": "a74fec02-cef3-472c-85ee-9e11fb847599",
+      "result_id": "5a3af649-ac1b-4863-bd00-1eb4ea8677e1"
+    },
+    {
+      "claim_id": "aaef7f4f-261d-4db3-979b-0e0e28fdc0f4",
+      "result_id": "5a3af649-ac1b-4863-bd00-1eb4ea8677e1"
+    },
+    {
+      "claim_id": "a3f3c1c6-a79b-44cd-91db-eb684927ffb0",
+      "result_id": "1929284c-c8a8-4eb4-b57b-8fc61f5c7ebb"
+    },
+    {
+      "claim_id": "758e77f2-ad3e-4fc6-b447-11f6c3ea5380",
+      "result_id": "947df7d0-8912-4b91-a88d-b124b06818ed"
+    },
+    {
+      "claim_id": "929ac18f-af16-41b0-9a96-3fc01d12edad",
+      "result_id": "947df7d0-8912-4b91-a88d-b124b06818ed"
+    },
+    {
+      "claim_id": "520e1a80-367c-4bc2-8f78-829e0d35319f",
+      "result_id": "c8c5e274-e6c6-42df-9fdc-18517becaac6"
+    },
+    {
+      "claim_id": "b8012530-60a5-4d62-9ef3-899b464ea865",
+      "result_id": "c8c5e274-e6c6-42df-9fdc-18517becaac6"
+    },
+    {
+      "claim_id": "09cbd3f5-ed2c-4211-aa66-1d487123dcaa",
+      "result_id": "c8c5e274-e6c6-42df-9fdc-18517becaac6"
+    },
+    {
+      "claim_id": "b4337634-d001-4eda-b0e3-3024f90d32d5",
+      "result_id": "c8c5e274-e6c6-42df-9fdc-18517becaac6"
+    },
+    {
+      "claim_id": "bb94c1aa-7301-4c7b-86f5-fa56110a805f",
+      "result_id": "71e1c8db-fbdf-4b2e-97f9-43d2f1d6c898"
+    },
+    {
+      "claim_id": "9d358aac-4d1f-471a-a657-2e2780e31be4",
+      "result_id": "fc232910-9e6a-4556-ad3c-9a4b1492d458"
+    },
+    {
+      "claim_id": "21e0338c-23b5-49f4-809f-0e1e7b18df04",
+      "result_id": "fc232910-9e6a-4556-ad3c-9a4b1492d458"
+    },
+    {
+      "claim_id": "0a6e3900-ab67-4c3e-8d67-d7cc9ff2594b",
+      "result_id": "fc232910-9e6a-4556-ad3c-9a4b1492d458"
+    },
+    {
+      "claim_id": "546e1448-c074-4a6a-8b62-9b33b83d44f7",
+      "result_id": "d5edec11-c7a7-424b-957c-a1b9855fed9f"
+    },
+    {
+      "claim_id": "2788ec0c-ca23-4ee6-a01f-8cefea5b67ee",
+      "result_id": "d5edec11-c7a7-424b-957c-a1b9855fed9f"
+    },
+    {
+      "claim_id": "a5f3a135-9330-4020-86c8-7616dd759113",
+      "result_id": "d5edec11-c7a7-424b-957c-a1b9855fed9f"
+    },
+    {
+      "claim_id": "a0d7ee3f-11b5-4c46-a36f-54184d2e1999",
+      "result_id": "d5edec11-c7a7-424b-957c-a1b9855fed9f"
+    },
+    {
+      "claim_id": "72ec84c3-7c99-472d-8c8b-19fc5bdc760b",
+      "result_id": "4fdc5e75-4b3a-43dd-a912-b58d3b8aef60"
+    },
+    {
+      "claim_id": "2ae94631-19d9-4e04-87ee-bcab51f89175",
+      "result_id": "4fdc5e75-4b3a-43dd-a912-b58d3b8aef60"
+    },
+    {
+      "claim_id": "c9cbb291-ee21-468a-b406-a72aefa0a49e",
+      "result_id": "fdd370d0-8083-4860-b567-77efc40d8431"
+    },
+    {
+      "claim_id": "503b73d5-b8cb-48c8-9687-2712eabb41ad",
+      "result_id": "fdd370d0-8083-4860-b567-77efc40d8431"
+    },
+    {
+      "claim_id": "c4446821-3ed7-4379-afe1-4c25e17368e3",
+      "result_id": "8f236066-855f-4457-a5b7-67e2ae4a175b"
+    },
+    {
+      "claim_id": "7e3cc927-42c5-42a7-8e39-2d598913a8f2",
+      "result_id": "4418bbfa-601f-443b-b01f-0434f8182459"
+    },
+    {
+      "claim_id": "c9dcfe57-cd88-49e5-92be-fb76ed4697d2",
+      "result_id": "ff08b06e-0dbe-406a-bacb-0c8b948dd138"
+    },
+    {
+      "claim_id": "d6bcfc2a-4c4a-4926-9734-48fc0a0fb143",
+      "result_id": "ff08b06e-0dbe-406a-bacb-0c8b948dd138"
+    },
+    {
+      "claim_id": "3da5b1e6-c951-407d-b8af-f0ab1e30b61b",
+      "result_id": "ff08b06e-0dbe-406a-bacb-0c8b948dd138"
+    },
+    {
+      "claim_id": "285ab61f-50f1-4f10-804f-ec16429942ec",
+      "result_id": "7ca29429-2c2e-4eb2-86a6-0d6fa67a268a"
+    },
+    {
+      "claim_id": "0025a425-2078-47c4-9d95-0a5595bd3bba",
+      "result_id": "c4f1bd40-915b-4485-87a6-7389479bc4c8"
+    }
+  ],
+  "comparisons": []
+}

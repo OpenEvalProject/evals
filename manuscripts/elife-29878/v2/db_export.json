@@ -1,0 +1,2075 @@
+{
+  "submission": {
+    "id": "50f81d58-ef57-41ef-8742-d3bf8309d11f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:42:23.971665Z",
+    "updated_at": "2025-12-01T21:42:23.971665Z"
+  },
+  "content": [
+    {
+      "id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "submission_id": "50f81d58-ef57-41ef-8742-d3bf8309d11f",
+      "content_type": "manuscript",
+      "content_text": "# CRISPRi is not strand-specific at all loci and redefines the transcriptional landscape\n\n## Authors\n\n- Fran\u00e7oise S Howe<sup>1</sup> ([ORCID: 0000-0002-6455-2475](https://orcid.org/0000-0002-6455-2475))\n- Andrew Russell<sup>1</sup>\n- Anna R Lamstaes<sup>1</sup>\n- Afaf El-Sagheer<sup>2</sup> ([ORCID: 0000-0001-8706-1292](https://orcid.org/0000-0001-8706-1292))\n- Anitha Nair<sup>1</sup>\n- Tom Brown<sup>2</sup> ([ORCID: 0000-0002-6538-3036](https://orcid.org/0000-0002-6538-3036))\n- Jane Mellor<sup>1</sup> ([ORCID: 0000-0002-5196-3734](https://orcid.org/0000-0002-5196-3734)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry University of Oxford Oxford United Kingdom\n2. Department of Chemistry, Chemistry Research Laboratory University of Oxford Oxford United Kingdom\n3. Chemistry Branch, Faculty of Petroleum and Mining Engineering Suez University Suez Egypt\n\n\u2020 Corresponding author\n\n## Abstract\n\nCRISPRi, an adapted CRISPR-Cas9 system, is proposed to act as a strand-specific roadblock to repress transcription in eukaryotic cells using guide RNAs (sgRNAs) to target catalytically inactive Cas9 (dCas9) and offers an alternative to genetic interventions for studying pervasive antisense transcription. Here, we successfully use click chemistry to construct DNA templates for sgRNA expression and show, rather than acting simply as a roadblock, sgRNA/dCas9 binding creates an environment that is permissive for transcription initiation/termination, thus generating novel sense and antisense transcripts. At HMS2 in Saccharomyces cerevisiae, sgRNA/dCas9 targeting to the non-template strand for antisense transcription results in antisense transcription termination, premature termination of a proportion of sense transcripts and initiation of a novel antisense transcript downstream of the sgRNA/dCas9-binding site. This redefinition of the transcriptional landscape by CRISPRi demonstrates that it is not strand-specific and highlights the controls and locus understanding required to properly interpret results from CRISPRi interventions.\n\n## Introduction\n\nEukaryotic genomes are pervasively transcribed but the effect of this inter- and intragenic transcription is not fully understood (Mellor et al., 2016). Of particular interest is the function of antisense transcription, which alters the chromatin in the vicinity of sense promoters (Lavender et al., 2016; Murray et al., 2015; Pelechano and Steinmetz, 2013), and is associated with repression, activation or no change in levels of the corresponding sense transcript (Murray et al., 2015). Discerning the mechanism by which antisense transcription functions in gene regulation is confounded by the difficulty in ablating antisense transcription without direct genetic intervention (Bassett et al., 2014). A new approach, CRISPR interference (CRISPRi) (Qi et al., 2013), can circumvent these issues by avoiding the need to manipulate endogenous DNA sequences. An endonucleolytically dead version of Cas9 (dCas9) is recruited by single base-pairing guide RNAs (sgRNAs) targeting the non-template (NT) DNA strand, where it blocks transcription strand-specifically at the loci tested (Lenstra et al., 2015; Qi et al., 2013). In a further adaptation, dCas9 fusion with transcriptional repressors or activators allows both negative and positive regulations of transcription, respectively (Gilbert et al., 2013; Gilbert et al., 2014), but the strand-specificity is lost and thus is not suitable for strand-specific repression of antisense transcription. The sgRNA compenent of the CRISPRi system consists of two regions: a constant region (82 nt) that binds to dCas9 and a variable region (20 nt) that is responsible for targeting. The modular nature of the sgRNA lends itself to production from DNA templates constructed using synthetic copper(I)-catalysed alkyne-azide cycloaddition (CuAAC) click chemistry (El-Sagheer and Brown, 2010). The stable artificial triazole DNA linker generated is biocompatibile, being read and accurately copied by DNA and RNA polymerases (Birts et al., 2014; El-Sagheer and Brown, 2011; El-Sagheer et al., 2011). We show that click chemistry is an efficient method for sgRNA template construction and that when combined with dCas9, these sgRNAs are as effective as sgRNAs produced from chemically synthesised full-length DNA templates at reducing levels of transcripts in vivo. However, it is still not completely understood how the CRISPRi system functions strand-specifically or why sgRNAs must target the non-template strand.\n\nHere, we use the CRISPRi system to study the effect of blocking antisense transcription at loci with well-characterised sense:antisense transcript pairs. We have previously used a promoter deletion of the antisense transcript SUT650 at the HMS2 locus to show that SUT650 represses HMS2 sense transcription (Nguyen et al., 2014). Now we use CRISPRi to examine the effects of blocking SUT650 antisense transcription to ask (i) whether SUT650 represses HMS2 sense transcription without a genetic intervention and (ii) whether CRISPRi is strand-specific using, in addition to HMS2, an engineered GAL1 gene with a well-characterised antisense transcript (Murray et al., 2012, 2015).\n\nThe main conclusion from this study is that CRISPRi at the HMS2 locus is not fully strand-specific and results in (i) premature termination of the sense transcript and (ii) initiation of a new unstable antisense transcript in the vicinity of the sgRNA\u00a0binding site. As transcription from this new antisense initiation site extends in to the HMS2 promoter, there is no net change in HMS2 sense transcript levels. Thus, CRISPRi redefines the transcriptional landscape at HMS2. This suggests that routine use of CRISPRi for gene expression analysis will require rigorous analysis of transcript integrity and function before conclusions can be drawn.\n\n## Results and discussion\n\n### DNA templates for sgRNA production can be made using click chemistry\n\nCRISPRi-mediated transcriptional repression requires co-expression of a mature sgRNA and dCas9 (Figure 1A). A small library of single-stranded DNAs, comprised of templates for sgRNA variable regions, were joined to the constant region using click chemistry (Figure 1B) and used successfully as templates for PCR, with no significantly different efficiencies when compared to control full-length synthesised oligonucleotides (Figure 1C). The PCR products were inserted in place of a URA3 selection cassette in the endogenous snR52 locus for expression of a transcript that is then processed to form the mature nuclear-retained sgRNA (Figure 1A). Levels of dCas9 protein were uniform between strains (Figure 1\u2014figure supplement 1). Neither insertion of URA3 into snR52 nor dCas9 expression in the control strains affected growth rate, although strains expressing some sgRNAs grew more slowly indicating a physiological effect (Figure 1D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/29878/elife-29878-fig1-v2.jpg)\n\n**Figure 1.:** (A) An outline of the experiment. DNA templates for sgRNA production were generated using a click chemistry reaction between a single-stranded DNA oligonucleotide with a 3\u2019 alkyne group encoding the constant region (dark blue) and a number of single-stranded DNA oligonucleotides with 5\u2019 azido groups encoding the different variable regions (green). The resulting single-stranded DNA oligonucleotide was purified, amplified by PCR and transformed into yeast to replace the URA3 selection cassette that had previously been introduced into the endogenous snR52 locus. Correct insertion was confirmed by Sanger sequencing. The expression of the sgRNA is driven from the endogenous RNA polymerase III snR52 promoter and processed to produce a mature sgRNA. The sgRNA couples with enzymatically dead Cas9 (dCas9, red), expressed under the control of the TDH3 promoter off a plasmid, to block transcription. See Materials\u00a0and\u00a0methods for more detail. (B) A polyacrylamide gel visualised by UV shadowing reveals a high efficiency of the click reaction for all the HMS2 constructs (see Figure 2E and Figure 3\u2014figure supplement 1 for positions of the sgRNA\u00a0binding sites). The sizes of the variable region, DNA splint, constant region and clicked product are indicated. (C) PCR efficiencies of the clicked and full-length synthetic DNA oligonucleotides as measured by qPCR with a serial dilution series. N\u00a0=\u00a03, errors are standard error of the mean (SEM), all differences are not significant p>0.05. See Source data 1, tab 2. (D) Doubling times (min) of the indicated yeast strains grown in complete synthetic media minus leucine. C, strains constructed using clicked oligonucleotides; FLS, strains constructed using full-length synthetic oligonucleotides. N\u00a0=\u00a010, errors are SEM, *p<0.05. See Source data 1, tabs 3\u20134.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29878/elife-29878-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Western blots showing levels of dCas9 produced in the strains expressing the indicated sgRNAs against HMS2 (left panel) and GAL1 (right panel). HMS2 strains constructed using the clicked and control full-length synthetic DNA oligos are shown. Tubulin levels are used as a loading control. Images are taken from the same gels with the same exposure times but with some lanes spliced out (indicated with vertical lines).\n\n### CRISPRi represses the production of antisense transcripts at HMS2 and GAL1\n\nCRISPRi represses transcription when sgRNAs/dCas9 are targeted to the non-template (NT) strand next to a protospacer adjacent motif (PAM) (Qi et al., 2013) (Figure 2A). Firstly, we used an engineered version of GAL1 that has a stable antisense transcript (GAL1 AS) initiating within an ADH1 terminator inserted into the GAL1 coding region (Murray et al., 2012) (Figure 2B). GAL1 AS is present in cells grown in glucose-containing media when the GAL1 gene is repressed and is reduced as cells are switched into galactose-containing media and GAL1 sense is induced (Figure 2C lanes 1\u20133). We designed sgRNAs adjacent to two PAM sequences on the non-template strand near the antisense transcription start site (TSS) (AS+28NT and AS+112NT) and a third strand-specificity control sgRNA on the template strand in this region (AS\u00a0+\u00a093T) (Figure 2B). Only sgRNA AS+112NT/dCas9 caused significant (p=0.004) reduction in GAL1 antisense transcript levels, as assessed by Northern blotting (Figure 2C,D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/29878/elife-29878-fig2-v2.jpg)\n\n**Figure 2.:** (A) A schematic demonstrating the previously reported requirement of non-template strand targeting by the sgRNA/dCas9 complex for strand-specific transcriptional repression. Arrows indicate the direction of transcription. NT, non-template; T, template; red, dCas9; PAM, protospacer adjacent motif; green/blue, sgRNA. (B) A schematic of the engineered GAL1 locus showing the site of insertion of the ADH1 terminator (T, red box), the transcription start site for the stable GAL1 antisense transcript and the positions of the designed sgRNAs (green vertical lines) targeting the non-template (AS+28NT, AS+112NT) and template (AS+93NT) strands with respect to antisense transcription. The position of the Northern blotting probe detecting the GAL1 AS transcript is shown in purple. (C) A Northern blot showing the reduction in GAL1 antisense transcript (black arrowhead) in the strain expressing sgRNA AS+112NT/dCas9 relative to the no sgRNA control (GAL1:ADH1t snR52::URA3 with dCas9). sgRNAs AS+28NT and AS+93T do not alter GAL1 AS levels. Samples were taken from cells grown in glucose (t\u00a0=\u00a00) and at the indicated times after transfer to galactose-containing media (min). Positions of the rRNA are indicated by the short horizontal lines. Ethidium-bromide-stained rRNA is used as loading control. (D) Quantification of Northern blotting for the GAL1 AS transcript at t\u00a0=\u00a00 in the control no sgRNA strain and the strain with sgRNA AS+112NT. N\u00a0=\u00a06, errors are SEM, *p=0.004. See Source data 1, tabs 10\u201312. (E) A map of the HMS2 locus showing the HMS2 AS transcript, SUT650 (black arrow, transcript B) and positions of the three sgRNAs targeting SUT650 (green vertical lines). The position of the Northern blotting probe to detect SUT650 (H1 AS) is shown by the purple line. (F) A Northern blot probed with HMS2 antisense probe H1 (see schematic in (E)) showing the level of SUT650 (black arrowhead, transcript B) in the no sgRNA control (snR52::URA3 with dCas9) strain and strains expressing the indicated antisense-targeting sgRNAs. Deletion of XRN1 allows detection of a shorter antisense transcript (Bt) in the strain expressing AS+243NT. Positions of the rRNA are indicated by the short horizontal lines. *Represents cross-hybridisation with the 25S rRNA. A blot probed for the 18S rRNA is used as loading control. (G) Quantification of the level of SUT650 (transcript B) reduction in the strains expressing each of the three antisense sgRNAs relative to the control no sgRNA strain. N\u00a0=\u00a04\u20138, errors represent SEM, *p<0.05. Click-linked and full-length synthetic sgRNA AS+243NT templates behave similarly. See Source data 1, tabs 5\u20139. (H) Northern blots with a series of HMS2 antisense-specific probes. A new shorter antisense transcript (Bt) can be detected upon XRN1 deletion in the strains expressing sgRNA AS+243NT/dCas9. Two clones of the CRISPRi strains produced using clicked (C) or full-length synthetic (FLS) DNA oligos for strain construction are shown. Positions of the antisense-specific probes (purple) and the site of sgRNA AS+243NT/dCas9 binding (green vertical line) are shown in the schematic. Positions of the rRNA on the Northern blot are indicated by the short horizontal lines. *Represents cross-hybridisation with the 25S rRNA. Ethidium-bromide-stained rRNA is used as loading control.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29878/elife-29878-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Transcript start and end sites on the Crick strand of Chromosome X for SUT650 as mapped by Transcript Isoform Sequencing (TIF-seq) (Pelechano et al., 2013). The main SUT650 transcript start site at position 705,244 bp was used in the positioning of the HMS2 AS-targeting sgRNAs shown in the schematic below.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29878/elife-29878-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Chromatin immunoprecipitation for dCas9 in the control strain with no sgRNA (snR52::URA3 with dCas9) and in the strains with the indicated SUT650-targeting sgRNAs at the predicted sites of SUT650-targeting sgRNA binding in HMS2 (sites A and B). Primer positions for qPCR are shown in purple on the locus map. Robust dCas9 signal is only detected at the binding site of the repressive sgRNA AS+243NT. Signal normalised to input and sgRNA AS+276NT. N\u00a0=\u00a03, error are SEM. See Source data 1, tabs 13\u201317.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/29878/elife-29878-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Nucleosome occupancy map for HMS2 as measured by sequencing of a sample that has been under- and over-digested with MNase (Knight et al., 2014). The schematic underneath shows the positions of the sgRNA targeting sites. Relative nucleosome occupancy at each sgRNA\u00a0binding site is shown in the table for the under- and over-digested samples.\n\nNext, we examined the HMS2 locus which has a stable antisense transcript, SUT650, initiating within the 3\u2019 coding region of HMS2 (Nguyen et al., 2014; Pelechano et al., 2013). We designed three SUT650-targeting sgRNAs, located 59, 243 and 276 nucleotides downstream of the major SUT650 TSS on the non-template strand (sgRNAs AS+59NT, AS+243NT, AS+276NT, respectively) (Figure 2E). Note that there is considerable heterogeneity in the SUT650 TSS (Figure 2\u2014figure supplement 1) and thus in some cells, sgRNA AS+59NT may be binding upstream of the SUT650 TSS. AS+243NT/dCas9 significantly (p=0.011) reduced SUT650 (Figure 2F lanes 1 and 3, 2G) and this repression was comparable for the clicked and control full-length synthetic constructs (Figure 2G). However, there was no obvious effect of the other two sgRNAs/dCas9 on SUT650 levels (Figure 2F lanes 1, 4 and 5, 2G). Consistently, we could only detect dCas9 binding to the site of sgRNA AS+243NT binding and not to the other two SUT650-targeting sgRNA binding sites tested (Figure 2\u2014figure supplement 2). CRISPR efficiency has been linked to nucleosome occupancy (Horlbeck et al., 2016b; Isaac et al., 2016), but we found no correlation between the level of repression and the nucleosome occupancy (Knight et al., 2014) at each of the SUT650 sgRNA target regions (Figure 2\u2014figure supplement 3). However, other factors such as sequence determinants can also influence repression (Horlbeck et al., 2016a). These results at GAL1 and HMS2 confirm CRISPRi is suitable for reducing levels of antisense transcripts in yeast but controls are needed for each sgRNA designed to ensure that repression has been achieved.\n\n### CRISPRi repression of SUT650 induces a new shorter antisense transcript at HMS2\n\nAt HMS2, sgRNA AS+243NT/dCas9 was able to reduce SUT650 transcript levels significantly (Figure 2F,G). Since SUT650 is a substrate for the major cytoplasmic 5\u2019\u22123\u2019 exonuclease Xrn1 (Figure 2F, lanes 1 and 2), we investigated whether the CRISPRi-induced SUT650 reduction was due to direct repression of SUT650 transcription and/or a reduction in SUT650 stability. Whilst SUT650 was not stabilised upon XRN1 deletion in the strain expressing AS+243NT/dCas9, supporting previous studies that CRISPRi operates via a transcriptional block (Qi et al., 2013) (Figure 2F, lanes 3 and 6, transcript B), we detected a shorter antisense transcript (Figure 2F, lane 6, transcript Bt). To map transcript Bt, we used a series of Northern blotting probes across the locus (Figure 2H). With antisense-specific probes H1 and H2 in the HMS2 gene promoter and 5\u2019 coding region, respectively, we could detect antisense transcript Bt, indicating that it extends into the HMS2 sense promoter. However, probe H4 at the 3\u2019 end of the HMS2 gene was unable to hybridise to Bt, indicating that Bt initiates upstream of this site. So whilst CRISPRi successfully blocked the original SUT650, a new Xrn1-sensitive unstable antisense transcript (Bt) was created. This is potentially due to changes in the chromatin structure caused by AS+243NT/dCas9 binding to this region (Horlbeck et al., 2016b; Isaac et al., 2016) or by blocking SUT650, creating an environment that is permissive for transcription initiation (Murray et al., 2012). We note that using probe H4 we were also unable to detect SUT650 initiating from its WT start site but terminating at the AS+243 NT binding site, due to its small size (~243 nt).\n\n### CRISPRi-induced GAL1 AS repression does not affect the GAL1 sense transcript\n\nWe tested whether GAL1 AS repression by AS+112NT/dCas9 affected the GAL1 sense transcript. Previously we mutated a TATA-like sequence to ablate antisense transcription but observed no difference in GAL1 sense transcript levels in the population under repressive or activating conditions (Murray et al., 2015). Using CRISPRi, we also observed no significant change in GAL1 sense transcript levels or size (Figure 3A,B). Additionally, we observed no leaky expression of the GAL1 sense transcript under repressive conditions (glucose) when the GAL1 AS transcript was blocked (Figure 3A, t\u00a0=\u00a00). To support a strand-specific transcriptional block of antisense transcription, GAL1 sense transcript polyA site usage was unaffected by sgRNA AS+112NT/dCas9 (Figure 3C). Furthermore, XRN1 deletion in this strain also did not affect polyA site usage, ruling out a partial double-stranded transcriptional block and subsequent destabilisation of the resulting truncated sense transcript (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/29878/elife-29878-fig3-v2.jpg)\n\n**Figure 3.:** (A) A Northern blot probed for the GAL1 sense transcript (black arrow) in the control strain with no sgRNA (GAL1 ADH1t snR52::URA3 with dCas9) and in the strain expressing sgRNA AS+112NT/dCas9. Samples were taken from cells grown in glucose (t\u00a0=\u00a00) and at the indicated times after transfer to galactose-containing media (min). Ethidium-bromide-stained rRNA is used as a loading control. (B) Quantification of the Northern blot shown in (A) at t\u00a0=\u00a090. N\u00a0=\u00a04, error bars represent SEM, change is statistically non-significant (n.s.) p=0.062. See Source data 1, tabs 10\u201312. (C) A schematic showing the results of GAL1 sense transcript 3\u2019 end mapping by RACE in the strains indicated. All distances are shown relative to the sense TSS. Transcript cleavage and polyadenylation occurs beyond the position of the GAL1 AS-blocking AS+112NT sgRNA shown (green vertical line). (D) A Northern blot probed with HMS2 sense probe H1 (purple) showing the level of HMS2 sense (black arrowhead, transcript A) in the no sgRNA control (snR52::URA3 with dCas9) strain and strains expressing the indicated antisense-targeting sgRNAs. A truncated sense transcript (At) was also detected in the strain expressing AS+243NT. C and C\u2019 are read-through HMS2-BAT2 transcripts (see [Nguyen et al., 2014]). Positions of the rRNA are indicated by the short horizontal lines. Ethidium-bromide-stained rRNA is used as loading control. (E) Northern blots with a series of HMS2 sense-specific probes detecting the regions indicated in the schematic. The position of the sgRNA AS+243NT/dCas9 binding site is shown (green vertical line). Positions of the rRNA are indicated by the short horizontal lines. Ethidium-bromide-stained rRNA is used as loading control.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29878/elife-29878-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) A Northern blot probed with HMS2 sense probe H1 (purple) showing the level of HMS2 sense (black arrowhead, transcript A) in the no sgRNA control (snR52::URA3 with dCas9) strain and strains expressing the indicated sense-targeting sgRNAs in the presence or absence of XRN1. Positions of the rRNA are indicated by the short horizontal lines. The 18S rRNA is used as loading control. *Represents cross-hybridisation with the 25S rRNA. (B) Quantification of the Northern blot in (A). N\u00a0=\u00a02, errors represent the SEM. See Source data 1, tab 6. (C) A Northern blot as (A) but probed with HMS2 antisense-specific probe H1. Ethidium-bromide-stained rRNA is used as loading control. (D) Quantification of the Northern blot in (C). N\u00a0=\u00a02, errors represent the SEM. See Source data 1, tab 6.\n\n### CRISPRi-induced SUT650 repression truncates the HMS2 sense transcript\n\nPrevious work shows that reducing SUT650 transcription increases HMS2 sense transcript levels (Nguyen et al., 2014). However, blocking SUT650 by AS+243NT/dCas9 did not similarly increase HMS2 sense levels (Figure 3D, lanes 1 and 3). To our surprise, in addition to the full-length HMS2 sense transcript (A), we detected a considerably shortened HMS2 sense transcript (At). Since the combined levels of the truncated and full-length transcripts are similar to those in the strain not expressing an sgRNA, independent of the presence of XRN1 (Figure 3D, lanes 1 and 3 or 2 and 6), we hypothesised that the AS+243NT/dCas9 complex bound within the HMS2 coding region may be causing partial premature sense transcription termination, leading to transcript At. Thus, we mapped the 3\u2019 end of HMS2 S by Northern blotting using a series of strand-specific probes across the locus (Figure 3E). Both transcripts A and At could clearly be detected using the probes upstream of the AS+243NT/dCas9\u00a0binding site (probes H1, H2, H3), but the truncated transcript was undetectable using probe H4 downstream of this site. Thus, the transcriptional block caused by AS+243NT/dCas9 is not strand-specific and re-defines the transcriptional landscape at the HMS2 locus by creating a chromatin environment that is suitable for both transcription initiation and termination. To see if we could more directly target and block HMS2 sense transcripts, we designed three sgRNAs to bind the non-template strand adjacent to PAM sites near the HMS2 sense TSS (S+77NT, S+106NT, S+179NT) and monitored their effects on both HMS2 sense and antisense transcripts (Figure 3\u2014figure supplement 1). However, these sgRNAs gave no CRISPRi repression as indicated by the unchanged transcript levels and integrity.\n\n### CRISPRi-induced antisense repression at HMS2 and GAL1 is not as efficient as previous methods\n\nWe compared the repression efficiency of CRISPRi with our previously used genetic interventions. At GAL1, mutation of a TATA-like sequence within the ADH1 terminator greatly reduced the level of the GAL1 antisense transcript (Figure 4A,B) (Murray et al., 2015). Lowered GAL1 AS transcript levels could result from either reduced transcription or transcript destabilisation (or a combination of the two). To differentiate between these possibilities, we deleted the major cytoplasmic 5\u2019\u22123\u2019 exonuclease XRN1. Since XRN1 deletion in the TATA mutant strain only slightly increased GAL1 AS levels, this suggests that most repression was at the level of transcription rather than altering transcript stability (Figure 4B,C). By contrast, XRN1 deletion in the strain expressing AS+112NT/dCas9 did result in some upregulation of GAL1 AS (Figure 4B,C), indicating that antisense transcript repression was not as great in this strain. Unlike at HMS2 (Figure 2F,G), this stabilised GAL1 AS transcript was the same size as in the control and so likely represents stabilisation of the transcripts escaping repression rather than novel transcripts.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/29878/elife-29878-fig4-v2.jpg)\n\n**Figure 4.:** (A) A schematic showing the previously used genetic intervention to repress the GAL1 AS transcript (Murray et al., 2015). In the TATA mutant construct, a TATA box within the engineered ADH1 terminator (T) is scrambled and the level of GAL1 antisense transcript is reduced. (B) A Northern blot probed for the GAL1 antisense transcript (black arrowhead) comparing the two methods of reducing antisense at this locus in the presence (top blot) or absence (bottom blot) of XRN1. All samples were run on the same gel and the blots were exposed to film for the same time. Samples were taken from cells grown in glucose (t\u00a0=\u00a00) and at the indicated times after transfer to galactose-containing media (min). Positions of the rRNA are indicated by the short horizontal lines. Ethidium-bromide-stained rRNA is used as loading control. (C) Quantification of the Northern blot in (B) at t\u00a0=\u00a00. N\u00a0=\u00a02, errors represent the SEM, *p=0.026, n.s. non-significant. See Source data 1, tab 12. (D) A schematic of the HMS2-BAT2 locus, showing the HMS2 sense and antisense transcripts (A and B), the HMS2-BAT2 di-cistronic transcripts (C and C\u2019) and the BAT2 sense transcript (D). Cells switch between sense- and antisense-dominant states in which the indicated transcripts are produced (Nguyen et al., 2014). (E) The HMS2-BAT2 locus and associated transcripts in the wild-type (WT) strain and strains that repress the SUT650 transcript. In the HMS2:URA3 strain, the entire coding region of HMS2 is replaced by that of URA3. (F) Northern blots comparing the efficiency of SUT650 reduction by replacement of the HMS2 coding region with that of URA3 versus CRISPRi with sgRNA AS+243NT and the relative effects of these two strategies on the HMS2 sense and BAT2 transcripts shown in (E). The WT (BY4741) and HMS2.URA3 strains have been transformed with plasmid pRS315 to allow for growth on complete synthetic media lacking leucine and thus comparisons with the CRISPRi strains. Positions of the rRNA are indicated by the short horizontal lines. *Represents cross-hybridisation with the 25S rRNA. Ethidium-bromide-stained rRNA is used as loading control.\n\nNext we compared the efficacy of AS+243NT/dCas9 with previous experiments to ablate SUT650, where we replaced the entire HMS2 coding region, including the antisense TSS with the URA3 coding region (HMS2:URA3) (Nguyen et al., 2014). This successful block of SUT650 transcription increased levels of the HMS2 sense transcript, the di-cistronic HMS2-BAT2 transcript and consequently decreased levels of the downstream gene, BAT2, due to transcriptional interference (Figure 4D\u2013F). Whilst CRISPRi resulted in a similar decrease in SUT650 as HMS2:URA3, neither the HMS2, BAT2 nor HMS2-BAT2 di-cistronic transcripts were altered (Figure 4F). The discovery that whilst AS+243NT/dCas9 represses SUT650, a new unstable HMS2 antisense transcript is induced and the sense transcript is prematurely terminated could explain why blocking SUT650 using CRISPRi and the URA3 gene body replacement strategies did not give the same results (Figure 4F). Thus, CRISPRi is not as effective as a genetic mutation in reducing levels of either the GAL1 or HMS2 AS transcripts.\n\n### Concluding remarks\n\nAlthough CRISPRi has been used to strand-specifically repress antisense transcription at GAL10 (Lenstra et al., 2015) and GAL1 (this work), here we demonstrate that this is not true at HMS2. This may reflect the vastly different transcription levels for the galactose-inducible genes (high) compared to HMS2 (low). Furthermore, a study in human K562 cells found that CRISPRi-induced repression did not correlate with which strand was targeted at 49 genes, although the mechanism behind this observation was not investigated (Gilbert et al., 2014).\n\nThis work extends our previous hypothesis (Nguyen et al., 2014), allowing us to propose that, rather than acting as a roadblock, the binding of the sgRNA/dCas9 complex at HMS2 creates a new chromatin environment, either directly or indirectly via the blocking of antisense transcription, which is permissible for transcription initiation and termination. Thus, new transcription units are generated that result in novel sense and antisense transcripts of varying stabilities that are therefore not always detectable. This redefinition of the transcriptional landscape highlights the levels of controls and locus understanding needed before results from using CRISPRi can be interpreted.\n\n## Materials and methods\n\n**Key resource table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Sacccharomyces  cerevisiae)</td>\n      <td>HMS2</td>\n      <td></td>\n      <td>YJR147W; SGD ID S000003908; RRID:SCR_003093; SGD, RRID:SCR_004694</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (S. cerevisiae)</td>\n      <td>GAL1</td>\n      <td></td>\n      <td>YBR020W; SGD ID S000000224; RRID:SCR_003093; SGD, RRID:SCR_004694</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (S. cerevisiae)</td>\n      <td>BAT2</td>\n      <td></td>\n      <td>YJR148W; SGD ID S000003909 RRID:SCR_003093; SGD, RRID:SCR_004694</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (S. cerevisiae)</td>\n      <td>snR52</td>\n      <td></td>\n      <td>SGD ID S000006443; RRID:SCR_003093; SGD, RRID:SCR_004694</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (S. cerevisiae)</td>\n      <td>see Supplementary file 1C</td>\n      <td>see Supplementary file 1C</td>\n      <td>Saccharomyces cerevisiae, NCBITaxon:1247190; SGD, RRID:SCR_004694</td>\n      <td>see Supplementary file 1C</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (S. cerevisiae)</td>\n      <td>see Supplementary file 1C</td>\n      <td>see Supplementary file 1C</td>\n      <td>see Supplementary file 1C</td>\n      <td>see Supplementary file 1C</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Tubulin (rat monoclonal YL1/2)</td>\n      <td>Abcam</td>\n      <td>Abcam ab6160 RRID:AB_305328</td>\n      <td>(1:3333)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Cas9 (rabbit polyclonal)</td>\n      <td>Diagenode</td>\n      <td>C15310258 RRID:AB_2715516</td>\n      <td>(1:5000 Western blot); 5 \u00b5l/ChIP</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>see Supplementary file 1A</td>\n      <td>Eurofins Genomics</td>\n      <td>see Supplementary file 1A</td>\n      <td>see Supplementary file 1A</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plasmid with pTDH-dCas9</td>\n      <td>(Qi et al., 2013) Addgene</td>\n      <td>Addgene #46920 RRID:SCR:002037</td>\n      <td>PMID:23849981</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>single-stranded DNA templates for variable and constant sgRNA regions</td>\n      <td>This study</td>\n      <td>see Supplementary file 1A</td>\n      <td>synthesised by phosphoramidite oligonucleotide synthesis with 3\u2019-alkyne or 5\u2019-azido modifications (El-Sagheer et al., 2011)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>see Supplementary files 1A,B,D,E,F</td>\n      <td>Eurofins Genomics</td>\n      <td>see Supplementary files 1A,B,D,E,F</td>\n      <td>see Supplementary files 1A,B,D,E,F</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>QIAquick PCR Purification Kit</td>\n      <td>Qiagen; RRID:SCR_008539</td>\n      <td>Cat# 28106</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SYBR green qPCR master mix</td>\n      <td>Bioline</td>\n      <td>Cat# QT605-20</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Off-spotter sgRNA algorithm</td>\n      <td>https://cm.jefferson.edu/Off-Spotter//</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Rotor-Gene Q Series Software</td>\n      <td>https://www.qiagen.com/us/resources/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji/Image J</td>\n      <td>https://imagej.net/Fiji</td>\n      <td>ImageJ, RRID:SCR_003070</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### sgRNA design\n\nPAM sequences within 300 bp of the TSS in question were identified and the 20 bp immediately adjacent to these were used to design the variable regions of the sgRNAs. These sequences were run through an off-spotter algorithm (https://cm.jefferson.edu/Off-Spotter//) to minimise any off-target effects (Pliatsika and Rigoutsos, 2015). The sequence for the engineered constant region and SUP4 terminator were taken from (DiCarlo et al., 2013; Mali et al., 2013). The HMS2 sgRNA templates were synthesised as two DNA oligonucleotides to be joined by click chemistry, with the majority of the constant region on one oligonucleotide that could be used for all reactions. To increase the efficiency of the click reaction, the click linkage was designed between a dCpT dinucleotide within the Cas9 handle region. The sequences for the HMS2 and GAL1 sgRNA templates are shown in Supplementary file 1A. Full-length sgRNA templates were also synthesised for the GAL1 sgRNAs and as a control for the HMS2 click chemistry constructs (Eurofins Genomics,\u00a0Germany).\n\n### Click chemistry\n\nSingle-stranded DNA oligonucleotides complementary to the constant and variable sgRNA regions were synthesised by standard phosphoramidite oligonucleotide synthesis with 3\u2019-alkyne or 5\u2019-azido modifications respectively (El-Sagheer et al., 2011) (Supplementary file 1A). The click chemistry reaction was performed with a Cu1 catalyst and 24\u201330 nt splint DNAs (El-Sagheer et al., 2011). PCR was performed for second strand synthesis, amplification and incorporation of sequences homologous to the site of insertion in S. cerevisiae. PCR efficiencies were obtained using qPCR performed three times on a Corbett 6000 Rotorgene with four serial 10-fold dilutions in triplicate. Analysis was performed using Rotor-Gene Q Series Software (Qiagen,\u00a0Hilden,\u00a0Germany).\n\n### Strain construction\n\ndCas9, without fusion to a transcriptional repressor domain, was expressed from a plasmid (# 46920 Addgene [Qi et al., 2013]) under the control of the TDH3 promoter. The DNA templates for sgRNA production were integrated in place of an exogenous URA3 cassette immediately downstream of the splice site in the endogenous snR52 locus using homologous recombination followed by 5-FOA selection. Correct insertion was confirmed by genomic DNA Sanger sequencing. SNR52 is a Pol III-transcribed C/D box small nucleolar RNA (snoRNA) gene and so does not undergo extensive post-transcriptional processing such as capping and polyadenylation, and transcripts from this locus are retained in the nucleus. Additionally, the locus contains a self-splicing site that produces a mature transcript without additional machinery, allowing precise production of a mature sgRNA without any unwanted extensions. Primer sequences for strain construction are listed in Supplementary file 1B.\n\n### Yeast growth\n\nThe strains used in this study are listed in Supplementary file 1C. Strains were grown to mid-log at 30\u00b0C in complete synthetic media lacking leucine (for dCas9 plasmid selection). For experiments studying the GAL1 locus, yeast were grown to mid-log in rich media (YP 2% D/YP 2% Gal) so that the GAL1 induction kinetics were similar to what we had observed previously (Murray et al., 2012; 2015). dCas9 expression was unaffected by the temporary absence of plasmid selection (Figure 1\u2014figure supplement 1).\n\n### Yeast growth controls\n\nAssessment of growth in liquid culture (CSM-leucine) was achieved using a Bioscreen spectrophotometer that automatically measures the optical density of cultures at 30\u00b0C every 20 min for 24 hr. Doubling times were extracted from the gradient of the curves during logarithmic growth.\n\n### Northern blotting\n\nNorthern blotting was performed as before (Murray et al., 2012; Nguyen et al., 2014) using asymmetric PCR or in vitro transcription with T7 RNA polymerase to generate the radioactive strand-specific probes for GAL1 and HMS2, respectively. Primers for these reactions are listed in Supplementary file 1D. Northern blots were quantified using Fiji/ImageJ (Schindelin et al., 2012), and images were\u00a0acquired using a FLA 7000 phosphorimager (GE Healthcare). Images in the figures are scans of exposures to X-ray film.\n\n### Western blotting\n\ndCas9 expression was confirmed after each experiment using an anti-Cas9 antibody (Diagenode C15310258) at 1:5000 dilution and anti-Tubulin (Abcam ab6160) at 1:3333.\n\n### Chromatin immunoprecipitation\n\nYeast cells were fixed with 1% formaldehyde (30 min, 22\u00b0C) followed by the addition of glycine to 125 mM for 5 min. Cell pellets were collected by centrifugation (3000 rpm, 5 min) before washing twice with 10 ml cold PBS. Cells were re-suspended in cold FA-150 buffer (10 mM HEPES pH 7.9, 150 mM NaCl, 0.1% SDS, 0.1% sodium deoxycholate, 1% Triton X-100) and broken using 1-ml glass beads on a MagnaLyser (Roche) at (2 \u00d7 1 min, 6000 rpm, 4\u00b0C). Fixed chromatin was sheared by sonication using a biorupter (Diagenode, 30 min, 30 s on, 30 s off, high setting), cleared by centrifugation (10,000 rpm, 15 min, 4\u00b0C) and incubated with 5 \u00b5l anti-Cas9 antibody (Diagenode C15310258) and 30 \u00b5l protein A-dynabeads pre-blocked with 200 \u00b5g/ml yeast tRNA, 200 \u00b5g/ml BSA and 200 \u00b5g/ml glycogen (15\u201320 hr, 4\u00b0C). Beads and attached chromatin were collected using a magnetic rack and washed with TSE-150 buffer (20 mM Tris-Cl pH 8.0, 150 mM NaCl, 2 mM EDTA, 0.1% SDS, 1% Triton X-100) for 3 min, TSE-500 buffer (20 mM Tris-Cl pH 8.0, 500 mM NaCl, 2 mM EDTA, 0.1% SDS, 1% Triton X-100) for 3 min, LiCl buffer (0.25 M LiCl, 10 mM Tris-Cl pH 8.0, 1 mM EDTA, 1% dioxycholate, 1 % NP-40) for 15 min and twice with TE, all at 22\u00b0C. After washing, chromatin was eluted from the beads for 30 min at 65\u00b0C with elution buffer (0.1 M NaHCO3, 1% SDS). Addition of 350 mM NaCl and incubation for 3 hr at 65\u00b0C reversed the cross-links before treatment of samples with RNase A for 1 hr at 37\u00b0C and proteinase K overnight at 65\u00b0C. DNA was purified using a PCR-purification kit (Qiagen) and eluted in 400 \u00b5l 1 mM Tris-Cl pH 8.0. Input DNA was diluted accordingly. Real-time quantitative PCR (qPCR) was carried out using a Corbett 6000 Rotorgene and Sybr green qPCR master mix (Bioline). Data ([IP - no antibody control]/input) were expressed as a percentage of the input (relative to sgRNA\u00a0+276 NT). Real-time qPCR primers are listed in Supplementary file 1E.\n\n### 3\u2019 RACE mapping\n\nMapping of the 3\u2019 end of the GAL1 sense transcript was performed as (Nguyen et al., 2014). Primers are listed in Supplementary file 1F.\n",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "77355af8-ec14-4077-9088-e87a099fcaad",
+      "submission_id": "50f81d58-ef57-41ef-8742-d3bf8309d11f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ali Shilatifard, Northwestern University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.29878.014](https://doi.org/10.7554/eLife.29878.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"CRISPRi is not strand-specific and redefines the transcriptional landscape\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by James Manley as the Senior Editor. We have attached the reviewers' comments for you below.\n\nAs you will see, the reviewers find your study of great interest to the community, but have also suggested that the paper is technical in nature and somewhat lacks mechanistic insight. We are willing to consider a revised version of your manuscript addressing the comments/concerns of the reviewers, specifically reviewer 2.\n\nReviewer #1:\n\nIn recent years, transcriptional interference by antisense RNA transcription has been recognized as a relatively frequent means to regulate mRNA expression. Tools enabling antisense transcription arrest without directly affecting sense transcription are required to study the mechanism mediating this effect. The recently reported CRISPRi system, using a modified, partially defective, Cas9 (dCas9) appeared as ideally suited for this since it has been shown to be able to trigger transcription termination in a site specific and, most importantly, strand specific manner, without altering the genomic sequence.\n\nThis short report shows that this strand specificity is actually not true at all loci. In addition, it describes an example in which the binding of the guide RNA actually induces spurious transcription initiation, suggesting that it markedly perturbs the local chromatin environment.\n\nI think that the data are suitably convincing. Note, by the way, that this referee has made the similar (unpublished) observations that the termination by this system was not strand specific at yet another locus.\n\nAlthough one could argue that the main results presented in this manuscript are negative results, I personally think that they are well worth being published to warn further investigators who would wish to use this system and a short report in eLife might seem appropriate for that.\n\nThe position of the 5'-end of SUT650 seems incorrectly assigned. Indeed, if one refers to the TIF-seq data from the original Pelechano paper, the main transcription start site for SUT650 (position 705244 on the Crick strand of chromosome X; this is also consistent with the data from Malabat et al., eLife, 2015) would be located about 60 nucleotides DOWNSTREAM of the AS-44NT sgRNA binding site (position 705184). Thus, as the other SUT650 sgRNA targeting sequences, AS-44NT would actually be located within the SUT650 transcribed region, downstream from its TSS and not upstream. It could thus not be considered as a \"control\" sgRNA. Could the authors verify this point and, if this is correct, modify the text, Figure 2E and Figure 2\u2014figure supplement 1 accordingly? This would in no way modify the conclusions of the manuscript.\n\nReviewer #2:\n\nIn this paper by Howe et al., the authors assess the potential of CRISPRi for strand-specific transcriptional perturbation in budding yeast. They study two genes in depth \u2013 GAL1 and HMS2 \u2013 and compare the effectiveness of CRISPRi to previous approaches (for example deletion of cis-acting motifs such as the TATA box) in wt and Xrn1 deletion strains. Their primary conclusion is that CRISPRi works well in some cases and not in others and requires careful controls. For example, the authors show that the system does repress antisense transcription, but at one of the two studied loci (HMS2), an additional antisense transcript appears from a new initiation site, and the sense transcript is prematurely terminated. In addition, they present a clever tool based on click chemistry for quickly making gRNA. Although I don't find the main conclusion revelatory, I commend the authors for their thoroughness. Certainly, this message is one that bears reporting, although I am not quite convinced this result clears the bar for an eLife paper.\n\n1) The authors show that CRISPRi represses the antisense transcript at a GAL1 model gene. They then check whether this repression has transcriptional effects on GAL1 sense transcription and they conclude there is no difference in galactose. However, previous work has shown that antisense at the GAL locus works mostly under repressive conditions. Have the authors repeated this experiment in glucose or raffinose?\n\n2) The authors show that CRISPRi repression at the HMS2 locus results in a changed transcriptional landscape. Replacement of the HMS locus by URA does not have the same effect, and they suggest that CRISPRi binding causes these additional transcripts. However, it is unclear whether the new transcripts at HMS2 appear because of removal of the antisense, which in itself could change the chromatin landscape and thus the transcriptional landscape, or whether it arises because of binding of dCas9. The same authors have previously published that removal of the GAL10 ncRNA by genetic methods (point mutations of the transcription factor binding sites) also results in additional transcripts not visible in the wildtype (Murray et al., 2015, supplementary figure S5C). Given these findings, it remains unclear whether the new antisense transcript indeed results from the CRISPRi binding. Moreover, it is noteworthy that additional transcripts are also found in some genetic mutants. Control experiments are therefore required for both methods.\n\n3) The Xrn1 sensitivity is a confounding factor, and I am not sure that strain should be the gold standard for CRISPRi not working. The whole point is that one can get blocking or perturbation in the absence of genetic manipulation. So, for example one concluding sentence \"CRISPRi is not as effective as a genetic mutation in reducing levels of either the GAL1 or HMS2 AS transcripts\" should end with \"[\u2026] in the Xrn1 deletion.\"\n\n4) In a related point, Figure 4C is a critical part of the argument. The lower panel needs to have significance calculated between the TATA mutant and AS+112NT, since these bars look pretty similar to this referee. Moreover, the similarity between these measurements suggests that the lower panel in Figure 4B is not quite a representative image.\n\n5) Lastly, given that CRISPRi does represses the antisense transcript in both loci tested in the study in a strand-specific manner, the title is a bit misleading.\n\nIn summary, despite technical issues, I nevertheless find their argument that CRISPRi can have locus-specific effects to be convincing. However, the manuscript is mostly of a technical nature. Most experiments described are control experiments that should be done anyways when using a new method. The observations that CRISPRi can result in different transcripts is good to know when designing such experiments, but there is no proposed mechanistic insight, nor new biology that is learned from this study.\n\nReviewer #3:\n\nIn this manuscript Howe and collaborators in the Mellor and Brown labs explore the molecular basis of CRISPRi transcriptional interference in the context of yeast anti-sense transcription. This reviewer agrees with the authors that understanding the basis of CRISPRi in anti-sense transcription (and non-coding RNA transcription in general) is an important area of research because it is extremely difficult to establish direct causality with regard to these particular RNAs using genetic perturbations.\n\nIn the first section of their manuscript, Howe et al., describe synthesis of sgRNA constructs using \"click-chemistry\" to couple sgRNA variable regions to the constant region. The author's then use knock-in yeast strains generated using these constructs to evaluate the effects of CRISPRi on anti-sense transcription at the GAL1 and HMS2 genes. The authors observe that contrary to behaving as a transcriptional road-block when targeted to the non-template strand, dCas9 CRISPRi complexes result in unpredictable changes in chromatin and transcription, resulting in pre-mature termination of sense transcripts and shifting anti-sense transcription initiation sites. Collectively, these results clearly demonstrate that CRISPRi effects are more complex than previously reported and likely depend on locus-specific chromatin context. These observations have broad implications with respect to design of CRISPRi strategies and argue a strong case for careful characterization of transcript isoforms and promoter/termination sites before and after deploying CRISPRi. However, there are some fundamental issues with controls and some of the conclusions drawn that should be addressed before publication.\n\n1) The authors observe that only a subset of sgRNAs targeting the non-template strand are capable of mediating repression, however, the reasons for this phenomenon are unclear. A simple explanation is that some sgRNAs are not capable of mediating stable dCAS9 interaction with chromatin. The author's should test this by performing Chromatin-Immunoprecipitation (ChIP) for dCas9 in their various sgRNA expressing lines to test if dCas9 chromatin occupancy correlates with repression. In my opinion this is an absolutely essential control for interpreting the authors' experiments.\n\n2) This reviewer feels that increasing the sgRNA coverage across the sense/antisense transcripts in question would greatly strengthen the manuscript. In its current state, the authors test only 2 sgRNAs towards the GAL1-AS and SUT650 non-template strands, from which they obtain a single functional repressive sgRNA for each anti-sense transcript. As a strand specificity control they test 3 sgRNAs targeting the sense transcript HMS2 and show that none of these has an effect on sense or anti-sense. However, with a hit rate of ~1 in 2, this reviewer is not convinced by authors' claim that sgRNAs targeting the sense transcript have no effect on antisense transcription. Perhaps the coverage was simply too low to obtain a functional repressive sgRNA. The authors should perform high-density sgRNA tiling experiments (targeting both template and non-template) for either GAL1-AS or SUT650 (not necessary to do both loci). I feel this experiment will dramatically improve the manuscript and instill clarity into the context requirements for CRISPRi mediated repression.\n",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1f438b6c-628b-4cf6-b7ff-85cbf969ceb1",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C1",
+      "claim": "Click chemistry can be used to construct DNA templates for sgRNA expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we successfully use click chemistry to construct DNA templates for sgRNA expression",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript demonstrates successful construction of sgRNA templates using click chemistry, as shown in Figure 1B and described in the methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "3fca942d-37a4-4ce2-9438-d17f0ce3ee99",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C2",
+      "claim": "sgRNA/dCas9 binding creates an environment that is permissive for transcription initiation/termination, thus generating novel sense and antisense transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we successfully use click chemistry to construct DNA templates for sgRNA expression and show, rather than acting simply as a roadblock, sgRNA/dCas9 binding creates an environment that is permissive for transcription initiation/termination, thus generating novel sense and antisense transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents Northern blotting data showing novel transcripts generated at HMS2 locus upon CRISPRi intervention.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "0ef1ac12-0940-4979-ab4e-bc7c25de971c",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C3",
+      "claim": "At HMS2 in Saccharomyces cerevisiae, sgRNA/dCas9 targeting to the non-template strand for antisense transcription results in antisense transcription termination.",
+      "claim_type": "EXPLICIT",
+      "source": "At HMS2 in Saccharomyces cerevisiae, sgRNA/dCas9 targeting to the non-template strand for antisense transcription results in antisense transcription termination, premature termination of a proportion of sense transcripts and initiation of a novel antisense transcript downstream of the sgRNA/dCas9-binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Northern blotting data in Figure 2F,G shows reduction in SUT650 antisense transcript levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "634c6d79-77de-430d-89a6-f38544870869",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C4",
+      "claim": "At HMS2, sgRNA/dCas9 targeting causes premature termination of a proportion of sense transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "At HMS2 in Saccharomyces cerevisiae, sgRNA/dCas9 targeting to the non-template strand for antisense transcription results in antisense transcription termination, premature termination of a proportion of sense transcripts and initiation of a novel antisense transcript downstream of the sgRNA/dCas9-binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Northern blotting in Figure 3D,E shows a truncated HMS2 sense transcript (At) in addition to full-length transcript (A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "3e426ba8-a970-4698-ac07-8c51a4fd7ebd",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C5",
+      "claim": "At HMS2, sgRNA/dCas9 targeting initiates a novel antisense transcript downstream of the sgRNA/dCas9-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "At HMS2 in Saccharomyces cerevisiae, sgRNA/dCas9 targeting to the non-template strand for antisense transcription results in antisense transcription termination, premature termination of a proportion of sense transcripts and initiation of a novel antisense transcript downstream of the sgRNA/dCas9-binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Northern blotting in Figure 2F,H shows a new shorter antisense transcript (Bt) detected upon XRN1 deletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "03fedfcc-3cae-4767-a2d3-245af9cfcd73",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C6",
+      "claim": "CRISPRi is not strand-specific at all loci.",
+      "claim_type": "EXPLICIT",
+      "source": "This redefinition of the transcriptional landscape by CRISPRi demonstrates that it is not strand-specific and highlights the controls and locus understanding required to properly interpret results from CRISPRi interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data at HMS2 shows effects on both sense and antisense transcripts despite targeting only the antisense non-template strand.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "d8db4db2-1e50-460b-8abf-8022bfecf0a2",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C7",
+      "claim": "CRISPRi redefines the transcriptional landscape at HMS2.",
+      "claim_type": "EXPLICIT",
+      "source": "This redefinition of the transcriptional landscape by CRISPRi demonstrates that it is not strand-specific and highlights the controls and locus understanding required to properly interpret results from CRISPRi interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Multiple novel transcripts are generated at HMS2 upon CRISPRi intervention as shown by Northern blotting.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "89095381-bb4f-4d34-8b65-35f378d58f94",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C8",
+      "claim": "CRISPRi is proposed to act as a strand-specific roadblock to repress transcription in eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPRi, an adapted CRISPR-Cas9 system, is proposed to act as a strand-specific roadblock to repress transcription in eukaryotic cells using guide RNAs (sgRNAs) to target catalytically inactive Cas9 (dCas9)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the prevailing understanding in the field, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "e638e78e-0f4c-4853-b2a0-e43a30c8961a",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C9",
+      "claim": "CRISPRi offers an alternative to genetic interventions for studying pervasive antisense transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPRi, an adapted CRISPR-Cas9 system, is proposed to act as a strand-specific roadblock to repress transcription in eukaryotic cells using guide RNAs (sgRNAs) to target catalytically inactive Cas9 (dCas9) and offers an alternative to genetic interventions for studying pervasive antisense transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a motivation for the study and represents the intended application of CRISPRi.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "51af55d2-2893-409b-af94-c522c32f1f45",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C10",
+      "claim": "Eukaryotic genomes are pervasively transcribed.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotic genomes are pervasively transcribed but the effect of this inter- and intragenic transcription is not fully understood (Mellor et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "3591582c-1129-4047-925d-c908a749a402",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C11",
+      "claim": "The effect of pervasive inter- and intragenic transcription is not fully understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotic genomes are pervasively transcribed but the effect of this inter- and intragenic transcription is not fully understood (Mellor et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "bc25cb61-6961-4cd4-93ee-3980843a9e1e",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C12",
+      "claim": "Antisense transcription alters the chromatin in the vicinity of sense promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Of particular interest is the function of antisense transcription, which alters the chromatin in the vicinity of sense promoters (Lavender et al., 2016; Murray et al., 2015; Pelechano and Steinmetz, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "77b5ab09-4476-482d-821c-9a4247c6a649",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C13",
+      "claim": "Antisense transcription is associated with repression, activation or no change in levels of the corresponding sense transcript.",
+      "claim_type": "EXPLICIT",
+      "source": "Of particular interest is the function of antisense transcription, which alters the chromatin in the vicinity of sense promoters (Lavender et al., 2016; Murray et al., 2015; Pelechano and Steinmetz, 2013), and is associated with repression, activation or no change in levels of the corresponding sense transcript (Murray et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "2bd3f72b-d7be-4152-ac09-2fa8ad510a38",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C14",
+      "claim": "Discerning the mechanism by which antisense transcription functions in gene regulation is confounded by the difficulty in ablating antisense transcription without direct genetic intervention.",
+      "claim_type": "EXPLICIT",
+      "source": "Discerning the mechanism by which antisense transcription functions in gene regulation is confounded by the difficulty in ablating antisense transcription without direct genetic intervention (Bassett et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a challenge in the field, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "647e6d9f-ef8d-4197-ad1c-a7b0e04247bb",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C15",
+      "claim": "CRISPR interference (CRISPRi) can circumvent issues of genetic intervention by avoiding the need to manipulate endogenous DNA sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "A new approach, CRISPR interference (CRISPRi) (Qi et al., 2013), can circumvent these issues by avoiding the need to manipulate endogenous DNA sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of CRISPRi, with citation to the original CRISPRi paper.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "a12b7c6b-8a5e-4a69-9cab-22f74a1d921c",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C16",
+      "claim": "dCas9 is recruited by single base-pairing guide RNAs (sgRNAs) targeting the non-template (NT) DNA strand.",
+      "claim_type": "EXPLICIT",
+      "source": "An endonucleolytically dead version of Cas9 (dCas9) is recruited by single base-pairing guide RNAs (sgRNAs) targeting the non-template (NT) DNA strand, where it blocks transcription strand-specifically at the loci tested (Lenstra et al., 2015; Qi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism of CRISPRi as established in previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "df1c64ae-1821-4f73-b5bc-a7d1adc4b6e4",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C17",
+      "claim": "dCas9 blocks transcription strand-specifically at the loci tested.",
+      "claim_type": "EXPLICIT",
+      "source": "An endonucleolytically dead version of Cas9 (dCas9) is recruited by single base-pairing guide RNAs (sgRNAs) targeting the non-template (NT) DNA strand, where it blocks transcription strand-specifically at the loci tested (Lenstra et al., 2015; Qi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the established understanding from previous studies, which the current manuscript challenges.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "5de3e10f-06e1-4f21-88d7-93e9499efad3",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C18",
+      "claim": "dCas9 fusion with transcriptional repressors or activators allows both negative and positive regulations of transcription, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In a further adaptation, dCas9 fusion with transcriptional repressors or activators allows both negative and positive regulations of transcription, respectively (Gilbert et al., 2013; Gilbert et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an adaptation of CRISPRi supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "5b4efb68-58a6-4123-bc96-79f99cf12e04",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C19",
+      "claim": "When dCas9 is fused with transcriptional repressors or activators, the strand-specificity is lost.",
+      "claim_type": "EXPLICIT",
+      "source": "In a further adaptation, dCas9 fusion with transcriptional repressors or activators allows both negative and positive regulations of transcription, respectively (Gilbert et al., 2013; Gilbert et al., 2014), but the strand-specificity is lost and thus is not suitable for strand-specific repression of antisense transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the fusion approach, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "12ad9da1-dae7-416c-bc21-0fca170189ad",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C20",
+      "claim": "The sgRNA component of the CRISPRi system consists of a constant region (82 nt) that binds to dCas9 and a variable region (20 nt) that is responsible for targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "The sgRNA compenent of the CRISPRi system consists of two regions: a constant region (82 nt) that binds to dCas9 and a variable region (20 nt) that is responsible for targeting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structure of sgRNAs as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "662d037e-ab26-4904-be31-44a708eaf0d2",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C21",
+      "claim": "The modular nature of the sgRNA lends itself to production from DNA templates constructed using synthetic copper(I)-catalysed alkyne-azide cycloaddition (CuAAC) click chemistry.",
+      "claim_type": "EXPLICIT",
+      "source": "The modular nature of the sgRNA lends itself to production from DNA templates constructed using synthetic copper(I)-catalysed alkyne-azide cycloaddition (CuAAC) click chemistry (El-Sagheer and Brown, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the modular structure, supported by citation to click chemistry methodology.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "c27a5ede-7cd9-4efc-81e5-9b9cc0e02616",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C22",
+      "claim": "The stable artificial triazole DNA linker generated by click chemistry is biocompatibile.",
+      "claim_type": "EXPLICIT",
+      "source": "The stable artificial triazole DNA linker generated is biocompatibile, being read and accurately copied by DNA and RNA polymerases (Birts et al., 2014; El-Sagheer and Brown, 2011; El-Sagheer et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work on click chemistry.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "8fe26beb-1a70-4571-9d18-99fb5a025d2f",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C23",
+      "claim": "The triazole DNA linker is read and accurately copied by DNA and RNA polymerases.",
+      "claim_type": "EXPLICIT",
+      "source": "The stable artificial triazole DNA linker generated is biocompatibile, being read and accurately copied by DNA and RNA polymerases (Birts et al., 2014; El-Sagheer and Brown, 2011; El-Sagheer et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "cdebc10b-396b-4851-972d-7886a2984aea",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C24",
+      "claim": "Click chemistry is an efficient method for sgRNA template construction.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that click chemistry is an efficient method for sgRNA template construction",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 1B shows high efficiency of click reactions, and Figure 1C shows comparable PCR efficiencies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "ab4d2494-1bb5-4a2d-a017-11ac2f64a138",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C25",
+      "claim": "sgRNAs produced from click chemistry templates are as effective as sgRNAs produced from chemically synthesised full-length DNA templates at reducing levels of transcripts in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that click chemistry is an efficient method for sgRNA template construction and that when combined with dCas9, these sgRNAs are as effective as sgRNAs produced from chemically synthesised full-length DNA templates at reducing levels of transcripts in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 2G shows comparable repression efficiency between clicked and full-length synthetic constructs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "f82c7f18-c1b4-4027-b248-eaa3f214a6fe",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C26",
+      "claim": "It is not completely understood how the CRISPRi system functions strand-specifically.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is still not completely understood how the CRISPRi system functions strand-specifically or why sgRNAs must target the non-template strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in knowledge that motivates the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "06acda87-86cd-4901-ad75-0844311a0d4a",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C27",
+      "claim": "It is not understood why sgRNAs must target the non-template strand.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is still not completely understood how the CRISPRi system functions strand-specifically or why sgRNAs must target the non-template strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "ef5dacb3-9498-4a57-bad4-0a17aa13b850",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C28",
+      "claim": "SUT650 represses HMS2 sense transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously used a promoter deletion of the antisense transcript SUT650 at the HMS2 locus to show that SUT650 represses HMS2 sense transcription (Nguyen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "6ec28f28-64b9-4478-8c3d-d6a654ff1537",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C29",
+      "claim": "PCR products from clicked templates were inserted in place of a URA3 selection cassette in the endogenous snR52 locus for expression of sgRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The PCR products were inserted in place of a URA3 selection cassette in the endogenous snR52 locus for expression of a transcript that is then processed to form the mature nuclear-retained sgRNA (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental method used, shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "d058f55a-1108-460e-a174-b371abc9fbe0",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C30",
+      "claim": "Levels of dCas9 protein were uniform between strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Levels of dCas9 protein were uniform between strains (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot data in Figure 1\u2014figure supplement 1 shows uniform dCas9 expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "9cc3be95-b124-4799-89d5-fb1d5f6dab36",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C31",
+      "claim": "Insertion of URA3 into snR52 did not affect growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither insertion of URA3 into snR52 nor dCas9 expression in the control strains affected growth rate",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on growth rate measurements shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "3f1bbe6f-8714-42f3-a555-237c3b119c01",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C32",
+      "claim": "dCas9 expression in the control strains did not affect growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither insertion of URA3 into snR52 nor dCas9 expression in the control strains affected growth rate",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on growth rate measurements shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "2e63a50f-c63c-4f92-9d2e-0085aa0138e7",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C33",
+      "claim": "Strains expressing some sgRNAs grew more slowly indicating a physiological effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither insertion of URA3 into snR52 nor dCas9 expression in the control strains affected growth rate, although strains expressing some sgRNAs grew more slowly indicating a physiological effect (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Growth rate data in Figure 1D shows slower growth for some sgRNA-expressing strains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "4754949a-a58a-4cec-9537-9ec8524c6277",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C34",
+      "claim": "CRISPRi represses transcription when sgRNAs/dCas9 are targeted to the non-template (NT) strand next to a protospacer adjacent motif (PAM).",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPRi represses transcription when sgRNAs/dCas9 are targeted to the non-template (NT) strand next to a protospacer adjacent motif (PAM) (Qi et al., 2013) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge from previous work, illustrated in Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "90f5d39c-4e76-4f91-89b3-64b44b763874",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C35",
+      "claim": "An engineered version of GAL1 has a stable antisense transcript (GAL1 AS) initiating within an ADH1 terminator inserted into the GAL1 coding region.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, we used an engineered version of GAL1 that has a stable antisense transcript (GAL1 AS) initiating within an ADH1 terminator inserted into the GAL1 coding region (Murray et al., 2012) (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the engineered locus used in the study, supported by citation and shown in Figure 2B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "f72867ea-5843-44ca-b6ea-c1e61a7f7961",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C36",
+      "claim": "GAL1 AS is present in cells grown in glucose-containing media when the GAL1 gene is repressed.",
+      "claim_type": "EXPLICIT",
+      "source": "GAL1 AS is present in cells grown in glucose-containing media when the GAL1 gene is repressed and is reduced as cells are switched into galactose-containing media and GAL1 sense is induced (Figure 2C lanes 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blot data in Figure 2C shows GAL1 AS levels under different conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "be9c1dc1-3a6d-436c-850e-712a78da07f3",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C37",
+      "claim": "GAL1 AS is reduced as cells are switched into galactose-containing media and GAL1 sense is induced.",
+      "claim_type": "EXPLICIT",
+      "source": "GAL1 AS is present in cells grown in glucose-containing media when the GAL1 gene is repressed and is reduced as cells are switched into galactose-containing media and GAL1 sense is induced (Figure 2C lanes 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blot data in Figure 2C shows reduction of GAL1 AS upon galactose induction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "fc083e15-5ccf-4c0d-bbae-586a5bb90c46",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C38",
+      "claim": "Only sgRNA AS+112NT/dCas9 caused significant reduction in GAL1 antisense transcript levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Only sgRNA AS+112NT/dCas9 caused significant (p=0.004) reduction in GAL1 antisense transcript levels, as assessed by Northern blotting (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blotting data in Figure 2C,D shows significant reduction only with AS+112NT.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "8ef64251-571f-4727-a3a5-37965fb949c0",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C39",
+      "claim": "HMS2 has a stable antisense transcript, SUT650, initiating within the 3' coding region of HMS2.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we examined the HMS2 locus which has a stable antisense transcript, SUT650, initiating within the 3' coding region of HMS2 (Nguyen et al., 2014; Pelechano et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous characterization of the locus.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "bbe8cda9-4064-468b-b00b-98343131b7dd",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C40",
+      "claim": "There is considerable heterogeneity in the SUT650 TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that there is considerable heterogeneity in the SUT650 TSS (Figure 2\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "TIF-seq data in Figure 2\u2014figure supplement 1 shows multiple TSS positions for SUT650.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "88f3d197-97cd-444d-b3d1-3a8d0326a452",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C41",
+      "claim": "sgRNA AS+59NT may be binding upstream of the SUT650 TSS in some cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that there is considerable heterogeneity in the SUT650 TSS (Figure 2\u2014figure supplement 1) and thus in some cells, sgRNA AS+59NT may be binding upstream of the SUT650 TSS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the heterogeneity of TSS shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "a31282b3-a3ff-4451-bb51-a935d5c527e7",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C42",
+      "claim": "AS+243NT/dCas9 significantly reduced SUT650.",
+      "claim_type": "EXPLICIT",
+      "source": "AS+243NT/dCas9 significantly (p=0.011) reduced SUT650 (Figure 2F lanes 1 and 3, 2G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blotting data in Figure 2F,G shows significant reduction of SUT650.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "33d48bbb-7ca1-4d36-acb9-bd0c753ab01f",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C43",
+      "claim": "Repression of SUT650 by AS+243NT/dCas9 was comparable for the clicked and control full-length synthetic constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "AS+243NT/dCas9 significantly (p=0.011) reduced SUT650 (Figure 2F lanes 1 and 3, 2G) and this repression was comparable for the clicked and control full-length synthetic constructs (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantification in Figure 2G shows similar repression levels for both construct types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "b93c5ef3-1071-4866-b7f9-50ef3ec36ca3",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C44",
+      "claim": "There was no obvious effect of sgRNAs AS+59NT and AS+276NT on SUT650 levels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was no obvious effect of the other two sgRNAs/dCas9 on SUT650 levels (Figure 2F lanes 1, 4 and 5, 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blotting data in Figure 2F,G shows no change in SUT650 levels with these sgRNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "8cb37dd5-e9bc-4b24-b4da-5cce6297ca05",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C45",
+      "claim": "dCas9 binding could only be detected at the site of sgRNA AS+243NT binding and not to the other two SUT650-targeting sgRNA binding sites tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, we could only detect dCas9 binding to the site of sgRNA AS+243NT binding and not to the other two SUT650-targeting sgRNA binding sites tested (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP data in Figure 2\u2014figure supplement 2 shows dCas9 enrichment only at AS+243NT site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "db7ff5f6-b4ef-49de-8e13-b643cea02af6",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C46",
+      "claim": "CRISPR efficiency has been linked to nucleosome occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR efficiency has been linked to nucleosome occupancy (Horlbeck et al., 2016b; Isaac et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "b0e52eea-b85b-4b66-86d8-fd39a90cc366",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C47",
+      "claim": "There was no correlation between the level of repression and the nucleosome occupancy at each of the SUT650 sgRNA target regions.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR efficiency has been linked to nucleosome occupancy (Horlbeck et al., 2016b; Isaac et al., 2016), but we found no correlation between the level of repression and the nucleosome occupancy (Knight et al., 2014) at each of the SUT650 sgRNA target regions (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of repression data with nucleosome occupancy data in Figure 2\u2014figure supplement 3 shows no correlation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "79f07178-b567-48a7-aedb-f5ff3edb3bd7",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C48",
+      "claim": "Factors such as sequence determinants can influence CRISPRi repression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, other factors such as sequence determinants can also influence repression (Horlbeck et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "b10817fb-52e3-489e-9d4a-45538b07e139",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C49",
+      "claim": "CRISPRi is suitable for reducing levels of antisense transcripts in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "These results at GAL1 and HMS2 confirm CRISPRi is suitable for reducing levels of antisense transcripts in yeast",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the successful repression observed at both loci.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "32b6f4a2-5dbb-4f83-8c5d-10d5e5fed93e",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C50",
+      "claim": "Controls are needed for each sgRNA designed to ensure that repression has been achieved.",
+      "claim_type": "EXPLICIT",
+      "source": "These results at GAL1 and HMS2 confirm CRISPRi is suitable for reducing levels of antisense transcripts in yeast but controls are needed for each sgRNA designed to ensure that repression has been achieved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that not all designed sgRNAs were effective.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "7d9e1c3e-8ce9-4e17-86e0-b54bcccce0dd",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C51",
+      "claim": "SUT650 is a substrate for the major cytoplasmic 5'\u22123' exonuclease Xrn1.",
+      "claim_type": "EXPLICIT",
+      "source": "Since SUT650 is a substrate for the major cytoplasmic 5'\u22123' exonuclease Xrn1 (Figure 2F, lanes 1 and 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blot data in Figure 2F shows stabilization of SUT650 upon XRN1 deletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "7d6c6198-2b41-4734-ab0f-f58eed59fc96",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C52",
+      "claim": "SUT650 was not stabilised upon XRN1 deletion in the strain expressing AS+243NT/dCas9.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst SUT650 was not stabilised upon XRN1 deletion in the strain expressing AS+243NT/dCas9, supporting previous studies that CRISPRi operates via a transcriptional block (Qi et al., 2013) (Figure 2F, lanes 3 and 6, transcript B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blot data in Figure 2F shows no stabilization of SUT650 in the CRISPRi strain upon XRN1 deletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "b081a4a6-8a1f-410c-ac97-d809cab9d7b6",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C53",
+      "claim": "CRISPRi operates via a transcriptional block.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst SUT650 was not stabilised upon XRN1 deletion in the strain expressing AS+243NT/dCas9, supporting previous studies that CRISPRi operates via a transcriptional block (Qi et al., 2013) (Figure 2F, lanes 3 and 6, transcript B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The lack of stabilization upon XRN1 deletion supports transcriptional rather than post-transcriptional mechanism, consistent with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "f81394ac-caa8-409c-bae9-81d882c8b43a",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C54",
+      "claim": "A shorter antisense transcript (Bt) was detected upon XRN1 deletion in the strain expressing AS+243NT/dCas9.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst SUT650 was not stabilised upon XRN1 deletion in the strain expressing AS+243NT/dCas9, supporting previous studies that CRISPRi operates via a transcriptional block (Qi et al., 2013) (Figure 2F, lanes 3 and 6, transcript B), we detected a shorter antisense transcript (Figure 2F, lane 6, transcript Bt).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blot in Figure 2F shows a shorter transcript Bt in lane 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "bf03380c-9443-406a-8478-df08eff1d84c",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C55",
+      "claim": "Antisense transcript Bt extends into the HMS2 sense promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "With antisense-specific probes H1 and H2 in the HMS2 gene promoter and 5' coding region, respectively, we could detect antisense transcript Bt, indicating that it extends into the HMS2 sense promoter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blotting with multiple probes in Figure 2H shows Bt is detected by probes H1 and H2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "7dc59a1d-692d-4a65-8a91-f759302da327",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C56",
+      "claim": "Transcript Bt initiates upstream of the H4 probe site at the 3' end of the HMS2 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "However, probe H4 at the 3' end of the HMS2 gene was unable to hybridise to Bt, indicating that Bt initiates upstream of this site.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blotting in Figure 2H shows Bt is not detected by probe H4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "db8ec221-d554-469f-8cfd-c541466764aa",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C57",
+      "claim": "CRISPRi successfully blocked the original SUT650.",
+      "claim_type": "EXPLICIT",
+      "source": "So whilst CRISPRi successfully blocked the original SUT650, a new Xrn1-sensitive unstable antisense transcript (Bt) was created.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Northern blotting data shows reduction of SUT650 and appearance of new transcript Bt.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "7b07f2b6-89c9-4c40-919a-a5dc48fb0431",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C58",
+      "claim": "A new Xrn1-sensitive unstable antisense transcript (Bt) was created by CRISPRi.",
+      "claim_type": "EXPLICIT",
+      "source": "So whilst CRISPRi successfully blocked the original SUT650, a new Xrn1-sensitive unstable antisense transcript (Bt) was created.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Northern blotting shows Bt is only detected upon XRN1 deletion, indicating it is Xrn1-sensitive.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "cfb3d4d1-0dcb-4fa1-a66d-61065f481dcd",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C59",
+      "claim": "The new antisense transcript Bt is potentially due to changes in the chromatin structure caused by AS+243NT/dCas9 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "This is potentially due to changes in the chromatin structure caused by AS+243NT/dCas9 binding to this region (Horlbeck et al., 2016b; Isaac et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation supported by citations to studies on chromatin effects of CRISPR.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "a5cea303-39af-4b5c-996f-3326d6c8fd29",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C60",
+      "claim": "The new antisense transcript Bt is potentially due to blocking SUT650, creating an environment that is permissive for transcription initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is potentially due to changes in the chromatin structure caused by AS+243NT/dCas9 binding to this region (Horlbeck et al., 2016b; Isaac et al., 2016) or by blocking SUT650, creating an environment that is permissive for transcription initiation (Murray et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation supported by citation to previous work on transcription initiation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "e51a3a41-c517-4502-9b45-a3cb0de24414",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C61",
+      "claim": "GAL1 AS repression by AS+112NT/dCas9 did not affect the GAL1 sense transcript levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Using CRISPRi, we also observed no significant change in GAL1 sense transcript levels or size (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blotting data in Figure 3A,B shows no change in GAL1 sense levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "6fbe022a-123d-4a5e-b4d7-28dd1d49dac1",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C62",
+      "claim": "GAL1 AS repression by AS+112NT/dCas9 did not affect the GAL1 sense transcript size.",
+      "claim_type": "EXPLICIT",
+      "source": "Using CRISPRi, we also observed no significant change in GAL1 sense transcript levels or size (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blotting data in Figure 3A,B shows no change in GAL1 sense transcript size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "c27ed15c-2def-4335-b474-e947760db701",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C63",
+      "claim": "Mutation of a TATA-like sequence ablated antisense transcription at GAL1 but observed no difference in GAL1 sense transcript levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously we mutated a TATA-like sequence to ablate antisense transcription but observed no difference in GAL1 sense transcript levels in the population under repressive or activating conditions (Murray et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "0b95e231-002e-47b5-ad96-c97848cedb68",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C64",
+      "claim": "There was no leaky expression of the GAL1 sense transcript under repressive conditions (glucose) when the GAL1 AS transcript was blocked.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we observed no leaky expression of the GAL1 sense transcript under repressive conditions (glucose) when the GAL1 AS transcript was blocked (Figure 3A, t = 0).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blot data in Figure 3A shows no GAL1 sense expression at t=0 in glucose.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "1c467ae4-9c7b-4030-acef-861b760c0eb4",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C65",
+      "claim": "GAL1 sense transcript polyA site usage was unaffected by sgRNA AS+112NT/dCas9.",
+      "claim_type": "EXPLICIT",
+      "source": "To support a strand-specific transcriptional block of antisense transcription, GAL1 sense transcript polyA site usage was unaffected by sgRNA AS+112NT/dCas9 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "3' RACE data in Figure 3C shows same polyA sites in control and AS+112NT strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "fd55a4cc-7d6b-4d22-87ad-71794026a9d0",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C66",
+      "claim": "XRN1 deletion in the GAL1 AS+112NT strain did not affect polyA site usage.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, XRN1 deletion in this strain also did not affect polyA site usage, ruling out a partial double-stranded transcriptional block and subsequent destabilisation of the resulting truncated sense transcript (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "3' RACE data in Figure 3C shows same polyA sites with and without XRN1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "b34b7b84-7366-4eee-a8c7-03a30e881c2f",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C67",
+      "claim": "Reducing SUT650 transcription increases HMS2 sense transcript levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work shows that reducing SUT650 transcription increases HMS2 sense transcript levels (Nguyen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "170db836-139b-49f1-b2ec-a378487243fc",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C69",
+      "claim": "A considerably shortened HMS2 sense transcript (At) was detected in addition to the full-length HMS2 sense transcript (A) in the AS+243NT/dCas9 strain.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, in addition to the full-length HMS2 sense transcript (A), we detected a considerably shortened HMS2 sense transcript (At).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blotting in Figure 3D shows both A and At transcripts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "44fa3b05-1b79-4b78-be26-e69872811434",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C70",
+      "claim": "The combined levels of the truncated and full-length HMS2 sense transcripts are similar to those in the strain not expressing an sgRNA, independent of the presence of XRN1.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the combined levels of the truncated and full-length transcripts are similar to those in the strain not expressing an sgRNA, independent of the presence of XRN1 (Figure 3D, lanes 1 and 3 or 2 and 6)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blotting data in Figure 3D shows similar total HMS2 sense levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "47b0e9ec-1957-4d50-894a-05e3c80f4825",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C71",
+      "claim": "The AS+243NT/dCas9 complex bound within the HMS2 coding region may be causing partial premature sense transcription termination.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the combined levels of the truncated and full-length transcripts are similar to those in the strain not expressing an sgRNA, independent of the presence of XRN1 (Figure 3D, lanes 1 and 3 or 2 and 6), we hypothesised that the AS+243NT/dCas9 complex bound within the HMS2 coding region may be causing partial premature sense transcription termination, leading to transcript At.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis based on the observation of truncated transcript At.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "8585f6c2-a65d-4ecd-a381-837a26abcceb",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C72",
+      "claim": "Both transcripts A and At could be detected using probes upstream of the AS+243NT/dCas9 binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Both transcripts A and At could clearly be detected using the probes upstream of the AS+243NT/dCas9 binding site (probes H1, H2, H3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blotting with multiple probes in Figure 3E shows detection of both A and At with upstream probes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "a3c63480-4d7e-4608-a5bb-dab9185c999e",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C73",
+      "claim": "The truncated HMS2 sense transcript At was undetectable using probe H4 downstream of the AS+243NT/dCas9 binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Both transcripts A and At could clearly be detected using the probes upstream of the AS+243NT/dCas9 binding site (probes H1, H2, H3), but the truncated transcript was undetectable using probe H4 downstream of this site.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blotting in Figure 3E shows At is not detected by probe H4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "62a0c82b-a65f-4098-9d5a-4295970116b9",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C74",
+      "claim": "The transcriptional block caused by AS+243NT/dCas9 is not strand-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the transcriptional block caused by AS+243NT/dCas9 is not strand-specific and re-defines the transcriptional landscape at the HMS2 locus by creating a chromatin environment that is suitable for both transcription initiation and termination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the observation of effects on both sense and antisense transcripts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "2a2d00c0-7a6d-4d70-9114-f82709c02472",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C75",
+      "claim": "AS+243NT/dCas9 re-defines the transcriptional landscape at the HMS2 locus by creating a chromatin environment that is suitable for both transcription initiation and termination.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the transcriptional block caused by AS+243NT/dCas9 is not strand-specific and re-defines the transcriptional landscape at the HMS2 locus by creating a chromatin environment that is suitable for both transcription initiation and termination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the generation of novel transcripts with new initiation and termination sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "6f13b15c-5126-4f9d-9a66-c0adc321601d",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C76",
+      "claim": "Three sgRNAs designed to bind the non-template strand adjacent to PAM sites near the HMS2 sense TSS gave no CRISPRi repression.",
+      "claim_type": "EXPLICIT",
+      "source": "To see if we could more directly target and block HMS2 sense transcripts, we designed three sgRNAs to bind the non-template strand adjacent to PAM sites near the HMS2 sense TSS (S+77NT, S+106NT, S+179NT) and monitored their effects on both HMS2 sense and antisense transcripts (Figure 3\u2014figure supplement 1). However, these sgRNAs gave no CRISPRi repression as indicated by the unchanged transcript levels and integrity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blotting data in Figure 3\u2014figure supplement 1 shows no change in transcript levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "cda3df9b-0b38-4580-8f79-0b61e5c81313",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C77",
+      "claim": "Mutation of a TATA-like sequence within the ADH1 terminator greatly reduced the level of the GAL1 antisense transcript.",
+      "claim_type": "EXPLICIT",
+      "source": "At GAL1, mutation of a TATA-like sequence within the ADH1 terminator greatly reduced the level of the GAL1 antisense transcript (Figure 4A,B) (Murray et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blotting data in Figure 4B shows reduced GAL1 AS in TATA mutant, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "b0fac43a-885e-4a1a-9fc8-b46a9135559b",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C78",
+      "claim": "XRN1 deletion in the TATA mutant strain only slightly increased GAL1 AS levels, suggesting that most repression was at the level of transcription rather than altering transcript stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Since XRN1 deletion in the TATA mutant strain only slightly increased GAL1 AS levels, this suggests that most repression was at the level of transcription rather than altering transcript stability (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blotting data in Figure 4B,C shows minimal stabilization upon XRN1 deletion in TATA mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "6817eacb-db7f-4127-931b-ca61df0b139a",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C79",
+      "claim": "XRN1 deletion in the strain expressing AS+112NT/dCas9 resulted in some upregulation of GAL1 AS, indicating that antisense transcript repression was not as great in this strain.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, XRN1 deletion in the strain expressing AS+112NT/dCas9 did result in some upregulation of GAL1 AS (Figure 4B,C), indicating that antisense transcript repression was not as great in this strain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blotting data in Figure 4B,C shows stabilization of GAL1 AS upon XRN1 deletion in CRISPRi strain.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "7bc82f94-81d0-4289-a19f-eb51b51019f5",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C80",
+      "claim": "The stabilised GAL1 AS transcript in the AS+112NT/dCas9 xrn1\u0394 strain was the same size as in the control.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike at HMS2 (Figure 2F,G), this stabilised GAL1 AS transcript was the same size as in the control and so likely represents stabilisation of the transcripts escaping repression rather than novel transcripts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blotting in Figure 4B shows GAL1 AS is same size in all conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "73336d56-8e32-4224-9c24-ad4416ff5a2f",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C81",
+      "claim": "Replacement of the entire HMS2 coding region with URA3 successfully blocked SUT650 transcription and increased levels of the HMS2 sense transcript.",
+      "claim_type": "EXPLICIT",
+      "source": "This successful block of SUT650 transcription increased levels of the HMS2 sense transcript, the di-cistronic HMS2-BAT2 transcript and consequently decreased levels of the downstream gene, BAT2, due to transcriptional interference (Figure 4D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blotting data in Figure 4F shows these effects in the HMS2:URA3 strain, supported by citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "3996e306-4bc4-4b92-818a-dd3f1707fd01",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C82",
+      "claim": "Replacement of HMS2 coding region with URA3 increased levels of the di-cistronic HMS2-BAT2 transcript.",
+      "claim_type": "EXPLICIT",
+      "source": "This successful block of SUT650 transcription increased levels of the HMS2 sense transcript, the di-cistronic HMS2-BAT2 transcript and consequently decreased levels of the downstream gene, BAT2, due to transcriptional interference (Figure 4D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blotting data in Figure 4F shows increased HMS2-BAT2 transcript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "0a0d5252-b69a-4111-abb8-510651f73360",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C83",
+      "claim": "Replacement of HMS2 coding region with URA3 decreased levels of the downstream gene, BAT2, due to transcriptional interference.",
+      "claim_type": "EXPLICIT",
+      "source": "This successful block of SUT650 transcription increased levels of the HMS2 sense transcript, the di-cistronic HMS2-BAT2 transcript and consequently decreased levels of the downstream gene, BAT2, due to transcriptional interference (Figure 4D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blotting data in Figure 4F shows decreased BAT2 transcript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "724d600a-d8f4-4be5-afef-09aaa98ccdb6",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C84",
+      "claim": "CRISPRi resulted in a similar decrease in SUT650 as HMS2:URA3.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst CRISPRi resulted in a similar decrease in SUT650 as HMS2:URA3, neither the HMS2, BAT2 nor HMS2-BAT2 di-cistronic transcripts were altered (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blotting data in Figure 4F shows comparable SUT650 reduction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "5b1ebaf6-4c84-4610-aefc-2d7b508beb83",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C85",
+      "claim": "CRISPRi did not alter HMS2, BAT2 or HMS2-BAT2 di-cistronic transcript levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst CRISPRi resulted in a similar decrease in SUT650 as HMS2:URA3, neither the HMS2, BAT2 nor HMS2-BAT2 di-cistronic transcripts were altered (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Northern blotting data in Figure 4F shows no change in these transcripts with CRISPRi.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "bcd99bdd-ba1d-43cc-b072-21447ebaff8d",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C86",
+      "claim": "The discovery that AS+243NT/dCas9 represses SUT650, induces a new unstable HMS2 antisense transcript and prematurely terminates the sense transcript could explain why blocking SUT650 using CRISPRi and the URA3 gene body replacement strategies did not give the same results.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery that whilst AS+243NT/dCas9 represses SUT650, a new unstable HMS2 antisense transcript is induced and the sense transcript is prematurely terminated could explain why blocking SUT650 using CRISPRi and the URA3 gene body replacement strategies did not give the same results (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the different transcriptional outcomes observed with the two methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "76feb72e-dd26-4a64-84bd-21190ab6ac99",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C87",
+      "claim": "CRISPRi is not as effective as a genetic mutation in reducing levels of either the GAL1 or HMS2 AS transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, CRISPRi is not as effective as a genetic mutation in reducing levels of either the GAL1 or HMS2 AS transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from comparison of CRISPRi with genetic interventions at both loci.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "aea46c92-eb7e-4330-961b-bc6b044d24c9",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C88",
+      "claim": "CRISPRi has been used to strand-specifically repress antisense transcription at GAL10.",
+      "claim_type": "EXPLICIT",
+      "source": "Although CRISPRi has been used to strand-specifically repress antisense transcription at GAL10 (Lenstra et al., 2015) and GAL1 (this work)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "7288330f-475f-4e72-a616-695060037fad",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C89",
+      "claim": "CRISPRi strand-specifically represses antisense transcription at GAL1.",
+      "claim_type": "EXPLICIT",
+      "source": "Although CRISPRi has been used to strand-specifically repress antisense transcription at GAL10 (Lenstra et al., 2015) and GAL1 (this work)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the data in the current manuscript showing no effect on GAL1 sense transcript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "d3042eb0-5d55-44d2-b4b8-04d42b9b3103",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C90",
+      "claim": "CRISPRi is not strand-specific at HMS2.",
+      "claim_type": "EXPLICIT",
+      "source": "Although CRISPRi has been used to strand-specifically repress antisense transcription at GAL10 (Lenstra et al., 2015) and GAL1 (this work), here we demonstrate that this is not true at HMS2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the effects on both sense and antisense transcripts at HMS2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "42326adb-45b2-4f5e-9b79-c1f0fdd55f92",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C91",
+      "claim": "The lack of strand-specificity at HMS2 may reflect the vastly different transcription levels for the galactose-inducible genes (high) compared to HMS2 (low).",
+      "claim_type": "EXPLICIT",
+      "source": "This may reflect the vastly different transcription levels for the galactose-inducible genes (high) compared to HMS2 (low).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the different outcomes at different loci.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "a90aec4e-2612-4262-9806-af561430f8c4",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C92",
+      "claim": "A study in human K562 cells found that CRISPRi-induced repression did not correlate with which strand was targeted at 49 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a study in human K562 cells found that CRISPRi-induced repression did not correlate with which strand was targeted at 49 genes, although the mechanism behind this observation was not investigated (Gilbert et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work in human cells.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "20d29ced-68ae-42f0-b3bc-b65e3abc5169",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C93",
+      "claim": "The binding of the sgRNA/dCas9 complex at HMS2 creates a new chromatin environment which is permissible for transcription initiation and termination.",
+      "claim_type": "EXPLICIT",
+      "source": "This work extends our previous hypothesis (Nguyen et al., 2014), allowing us to propose that, rather than acting as a roadblock, the binding of the sgRNA/dCas9 complex at HMS2 creates a new chromatin environment, either directly or indirectly via the blocking of antisense transcription, which is permissible for transcription initiation and termination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the observation of novel transcripts with new initiation and termination sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "fffd6994-1f46-4a1f-be7a-9e72c70c76d3",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C94",
+      "claim": "New transcription units are generated by CRISPRi that result in novel sense and antisense transcripts of varying stabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "This work extends our previous hypothesis (Nguyen et al., 2014), allowing us to propose that, rather than acting as a roadblock, the binding of the sgRNA/dCas9 complex at HMS2 creates a new chromatin environment, either directly or indirectly via the blocking of antisense transcription, which is permissible for transcription initiation and termination. Thus, new transcription units are generated that result in novel sense and antisense transcripts of varying stabilities that are therefore not always detectable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the detection of novel transcripts with different stabilities (some only visible upon XRN1 deletion).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "da8f682d-dccf-4733-be55-e910a9bc6570",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C95",
+      "claim": "Novel transcripts generated by CRISPRi are not always detectable due to varying stabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, new transcription units are generated that result in novel sense and antisense transcripts of varying stabilities that are therefore not always detectable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that some transcripts are only detected upon XRN1 deletion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "9c4833d5-45f3-424b-a54f-080c7b1e6a6c",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C96",
+      "claim": "The redefinition of the transcriptional landscape by CRISPRi highlights the levels of controls and locus understanding needed before results from using CRISPRi can be interpreted.",
+      "claim_type": "EXPLICIT",
+      "source": "This redefinition of the transcriptional landscape highlights the levels of controls and locus understanding needed before results from using CRISPRi can be interpreted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the unexpected effects observed at HMS2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "3a9bb1e0-95b3-4c9b-8b53-65d174f30007",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C97",
+      "claim": "Routine use of CRISPRi for gene expression analysis will require rigorous analysis of transcript integrity and function before conclusions can be drawn.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that routine use of CRISPRi for gene expression analysis will require rigorous analysis of transcript integrity and function before conclusions can be drawn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "ad118420-4edf-4c9b-9713-95bfd23a3be7",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C98",
+      "claim": "PCR products from clicked templates had no significantly different efficiencies when compared to control full-length synthesised oligonucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "A small library of single-stranded DNAs, comprised of templates for sgRNA variable regions, were joined to the constant region using click chemistry (Figure 1B) and used successfully as templates for PCR, with no significantly different efficiencies when compared to control full-length synthesised oligonucleotides (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qPCR efficiency data in Figure 1C shows no significant differences (p>0.05).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "b9781a7f-3803-45e6-98b1-2b6b2475c27e",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C99",
+      "claim": "The click reaction showed high efficiency for all the HMS2 constructs.",
+      "claim_type": "IMPLICIT",
+      "source": "A polyacrylamide gel visualised by UV shadowing reveals a high efficiency of the click reaction for all the HMS2 constructs",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1B shows strong bands for clicked products for all constructs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "cb6505fd-b9df-428d-8d2f-40dc7fec5283",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C100",
+      "claim": "SUT650 has a major transcription start site at position 705,244 bp on Chromosome X.",
+      "claim_type": "IMPLICIT",
+      "source": "Transcript start and end sites on the Crick strand of Chromosome X for SUT650 as mapped by Transcript Isoform Sequencing (TIF-seq) (Pelechano et al., 2013). The main SUT650 transcript start site at position 705,244 bp was used in the positioning of the HMS2 AS-targeting sgRNAs",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2\u2014figure supplement 1 shows TIF-seq data with the major TSS indicated.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "b74fd1a3-e0ee-4011-b7fe-0e424de9d939",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C101",
+      "claim": "The click linkage was designed between a dCpT dinucleotide within the Cas9 handle region to increase the efficiency of the click reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "To increase the efficiency of the click reaction, the click linkage was designed between a dCpT dinucleotide within the Cas9 handle region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a design choice in the methods section.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "1ef787f8-7630-4555-b7f9-65376a4ec2e0",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C102",
+      "claim": "SNR52 is a Pol III-transcribed C/D box small nucleolar RNA (snoRNA) gene.",
+      "claim_type": "EXPLICIT",
+      "source": "SNR52 is a Pol III-transcribed C/D box small nucleolar RNA (snoRNA) gene and so does not undergo extensive post-transcriptional processing such as capping and polyadenylation, and transcripts from this locus are retained in the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge about the SNR52 locus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "a58dec1f-b794-4bd0-9c6c-5d39510b956b",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C103",
+      "claim": "SNR52 transcripts do not undergo extensive post-transcriptional processing such as capping and polyadenylation.",
+      "claim_type": "EXPLICIT",
+      "source": "SNR52 is a Pol III-transcribed C/D box small nucleolar RNA (snoRNA) gene and so does not undergo extensive post-transcriptional processing such as capping and polyadenylation, and transcripts from this locus are retained in the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of Pol III-transcribed snoRNAs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "1f1accf0-8b42-45ca-8fd6-a4b390729696",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C104",
+      "claim": "Transcripts from the SNR52 locus are retained in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "SNR52 is a Pol III-transcribed C/D box small nucleolar RNA (snoRNA) gene and so does not undergo extensive post-transcriptional processing such as capping and polyadenylation, and transcripts from this locus are retained in the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of snoRNAs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "3f52a592-5fbc-401b-9b9b-97d395c61981",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C105",
+      "claim": "The SNR52 locus contains a self-splicing site that produces a mature transcript without additional machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the locus contains a self-splicing site that produces a mature transcript without additional machinery, allowing precise production of a mature sgRNA without any unwanted extensions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a feature of the SNR52 locus that makes it suitable for sgRNA expression.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "523dd00c-9afe-4e56-821c-2cdc6e785a8e",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "claim_id": "C106",
+      "claim": "The self-splicing site in SNR52 allows precise production of a mature sgRNA without any unwanted extensions.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the locus contains a self-splicing site that produces a mature transcript without additional machinery, allowing precise production of a mature sgRNA without any unwanted extensions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of using the SNR52 locus for sgRNA expression.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1cf89dae-920f-44b9-bdc0-7b474c0f6af6",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Click chemistry is an efficient method for constructing DNA templates for sgRNA expression. The clicked templates show high reaction efficiency and produce PCR products with efficiencies comparable to full-length synthetic oligonucleotides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C24, C98, and C99 are well-supported by Figure 1B showing high-efficiency click reactions and Figure 1C demonstrating no significant difference in PCR efficiency (p>0.05) between clicked and full-length synthetic templates. The methodology is clearly described and validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "3f0523c4-8417-46df-9c62-09fc1ab642a2",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "sgRNAs produced from click chemistry templates are as effective as sgRNAs from full-length synthetic templates at repressing transcripts in vivo, with uniform dCas9 expression across strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25 and C43 are supported by Figure 2G showing comparable repression efficiency between clicked and full-length constructs. Claim C30 is supported by Western blot data in Figure 1\u2014figure supplement 1 showing uniform dCas9 levels, ensuring the comparison is valid.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "19846155-0c67-4d1f-81c4-57e25a67644a",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "At the GAL1 locus, CRISPRi with sgRNA AS+112NT/dCas9 significantly represses the GAL1 antisense transcript in a strand-specific manner without affecting GAL1 sense transcript levels, size, or polyA site usage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38, C61, C62, C64, C65, C66, and C89 are well-supported by Northern blotting data (Figures 2C,D and 3A,B) showing significant antisense reduction (p=0.004) with no effect on sense transcription, and 3' RACE data (Figure 3C) confirming unchanged polyA sites. This demonstrates strand-specific repression at GAL1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "34105308-fc5e-468c-b47b-a24dd4c722fa",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "At HMS2, only sgRNA AS+243NT/dCas9 significantly repressed SUT650 antisense transcription, while AS+59NT and AS+276NT showed no effect. dCas9 binding was only detected at the AS+243NT site, and repression did not correlate with nucleosome occupancy, highlighting the need for controls for each sgRNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C44, C45, C47, and C50 are supported by Northern blotting (Figure 2F,G) showing significant SUT650 reduction only with AS+243NT (p=0.011), ChIP data (Figure 2\u2014figure supplement 2) showing dCas9 binding only at AS+243NT, and nucleosome occupancy analysis (Figure 2\u2014figure supplement 3) showing no correlation. The variable efficacy of different sgRNAs justifies the need for controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "a59168f5-6abe-4567-8500-27987abc5dfa",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CRISPRi with AS+243NT/dCas9 terminates SUT650 antisense transcription at HMS2 via a transcriptional block mechanism, but also generates a new Xrn1-sensitive unstable antisense transcript (Bt) downstream of the sgRNA binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C52, C53, C54, C57, and C58 are supported by Northern blotting data (Figure 2F) showing SUT650 reduction without stabilization upon XRN1 deletion (supporting transcriptional block), and detection of a new shorter transcript Bt only in xrn1\u0394 background, indicating it is Xrn1-sensitive and unstable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "2b4821c5-10c0-4558-944e-5c11cd98985f",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The novel antisense transcript Bt extends into the HMS2 sense promoter but initiates upstream of the H4 probe site at the 3' end of HMS2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55 and C56 are supported by Northern blotting with multiple probes (Figure 2H) showing Bt is detected by probes H1 and H2 (in promoter and 5' coding region) but not by probe H4 (at 3' end), allowing mapping of the transcript boundaries.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "1714c00f-7aca-4e80-81c8-464d698311ae",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CRISPRi with AS+243NT/dCas9 at HMS2 causes premature termination of a proportion of HMS2 sense transcripts, generating a truncated transcript (At) in addition to full-length transcript (A), with combined levels similar to control strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C69, C70, C71, C72, and C73 are supported by Northern blotting data (Figures 3D,E) showing both full-length (A) and truncated (At) HMS2 sense transcripts. Probe mapping shows At is detected by upstream probes (H1, H2, H3) but not downstream probe H4, confirming premature termination. The similar combined levels suggest partial termination rather than complete repression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "08a768e6-58ac-4056-9e41-aee15a4fe2cb",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "CRISPRi is not strand-specific at HMS2, as AS+243NT/dCas9 targeting the antisense non-template strand affects both sense and antisense transcripts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C74, and C90 are strongly supported by the observation that AS+243NT/dCas9, designed to target only antisense transcription, causes both antisense termination (SUT650 reduction) and sense transcript truncation (At generation), demonstrating lack of strand-specificity at this locus.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "6a28173b-606a-4f60-a364-54784b75a008",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "sgRNA/dCas9 binding at HMS2 creates a chromatin environment permissive for transcription initiation and termination, redefining the transcriptional landscape by generating novel sense and antisense transcripts of varying stabilities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C5, C7, C75, C93, C94, and C95 are supported by the collective evidence of novel transcript generation (Bt antisense and At sense) with different stabilities (some only detected upon XRN1 deletion). However, the mechanistic explanation (chromatin environment changes) remains somewhat speculative, though supported by citations to relevant literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "8c1890d5-d66b-4aad-85b4-1f333ad391ef",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Three sgRNAs designed to directly target HMS2 sense transcription near the TSS (S+77NT, S+106NT, S+179NT) showed no CRISPRi repression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C76 is supported by Northern blotting data in Figure 3\u2014figure supplement 1 showing unchanged transcript levels and integrity with these sense-targeting sgRNAs, indicating they were ineffective.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "9779ef1e-dd69-4f19-8e64-275df8723752",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "CRISPRi is less effective than genetic mutations at repressing antisense transcripts at both GAL1 and HMS2. At GAL1, TATA mutation causes greater transcriptional repression than CRISPRi, as evidenced by differential stabilization upon XRN1 deletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77, C78, C79, C80, and C87 are supported by Northern blotting data (Figure 4B,C) showing that TATA mutation causes minimal GAL1 AS stabilization upon XRN1 deletion (indicating strong transcriptional repression), while CRISPRi shows more stabilization (indicating incomplete repression). The comparison demonstrates CRISPRi is less effective than genetic intervention.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "10c0510d-5bcc-4036-9ec0-fc7293be9e81",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Genetic replacement of HMS2 coding region with URA3 successfully blocks SUT650 and increases HMS2 sense levels, while CRISPRi achieves similar SUT650 reduction but does not increase HMS2 sense levels due to generation of novel transcripts and premature termination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C86 are supported by Northern blotting data (Figure 4D-F) showing that HMS2:URA3 increases HMS2 sense and HMS2-BAT2 transcripts while decreasing BAT2, whereas CRISPRi reduces SUT650 similarly but does not alter HMS2, BAT2, or HMS2-BAT2 levels. This difference is explained by the novel transcripts and premature termination observed with CRISPRi.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "6e601cee-0ffb-4657-bc64-ffcec67d0e3b",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The redefinition of the transcriptional landscape by CRISPRi highlights the need for extensive controls and locus understanding before interpreting CRISPRi results, requiring rigorous analysis of transcript integrity and function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96 and C97 are supported by the collective findings showing unexpected effects at HMS2 (novel transcripts, lack of strand-specificity, premature termination). These observations justify the authors' recommendation for rigorous validation when using CRISPRi.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "e278f904-c62b-4907-867e-62f58f5ca0e9",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Insertion of URA3 into snR52 and dCas9 expression in control strains did not affect growth rate, though some sgRNA-expressing strains showed slower growth indicating physiological effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31, C32, and C33 are supported by growth rate measurements in Figure 1D showing no effect of URA3 insertion or dCas9 expression alone, but slower growth with some sgRNAs, validating the experimental system while noting potential physiological impacts of specific sgRNAs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "27736791-8788-4f1f-b088-4a70730a9589",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The generation of novel antisense transcript Bt is potentially due to chromatin structure changes caused by AS+243NT/dCas9 binding or by blocking SUT650 creating an environment permissive for transcription initiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59 and C60 present speculative mechanistic explanations for Bt generation, supported by citations to relevant literature but without direct experimental evidence in this study. The proposed mechanisms are plausible but remain hypothetical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "d253ba6a-0377-4524-86c0-9d7b923fa9c9",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The lack of strand-specificity at HMS2 may reflect different transcription levels between galactose-inducible genes (high) and HMS2 (low).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C91 is a speculative explanation for the observed differences between loci. While plausible, no direct evidence is provided to test this hypothesis, such as measuring transcription rates or testing CRISPRi at loci with varying expression levels.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background knowledge and prior work establishing the context for the study, including the nature of CRISPRi, pervasive transcription, antisense function, click chemistry properties, and characteristics of specific loci (GAL1, HMS2, SNR52).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge from prior work, supported by appropriate citations. They provide necessary context but are not novel findings of this study. The citations appear appropriate and the background accurately represents the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    },
+    {
+      "id": "33bf1de2-8801-4994-b098-e576afe8f9fa",
+      "content_id": "fa933340-a6e8-4509-b2bb-288dab5a5f6a",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Methodological details and observations including sgRNA integration strategy, SUT650 TSS heterogeneity, click linkage design, and SUT650 as an Xrn1 substrate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims describe methodological choices and observations that support the main findings. They are adequately documented through figures (e.g., Figure 1A for integration, Figure 2\u2014figure supplement 1 for TSS heterogeneity, Figure 2F for Xrn1 sensitivity) and methods descriptions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:42:23.971665Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1f438b6c-628b-4cf6-b7ff-85cbf969ceb1",
+      "result_id": "1cf89dae-920f-44b9-bdc0-7b474c0f6af6"
+    },
+    {
+      "claim_id": "cdebc10b-396b-4851-972d-7886a2984aea",
+      "result_id": "1cf89dae-920f-44b9-bdc0-7b474c0f6af6"
+    },
+    {
+      "claim_id": "ad118420-4edf-4c9b-9713-95bfd23a3be7",
+      "result_id": "1cf89dae-920f-44b9-bdc0-7b474c0f6af6"
+    },
+    {
+      "claim_id": "b9781a7f-3803-45e6-98b1-2b6b2475c27e",
+      "result_id": "1cf89dae-920f-44b9-bdc0-7b474c0f6af6"
+    },
+    {
+      "claim_id": "ab4d2494-1bb5-4a2d-a017-11ac2f64a138",
+      "result_id": "3f0523c4-8417-46df-9c62-09fc1ab642a2"
+    },
+    {
+      "claim_id": "33d48bbb-7ca1-4d36-acb9-bd0c753ab01f",
+      "result_id": "3f0523c4-8417-46df-9c62-09fc1ab642a2"
+    },
+    {
+      "claim_id": "d058f55a-1108-460e-a174-b371abc9fbe0",
+      "result_id": "3f0523c4-8417-46df-9c62-09fc1ab642a2"
+    },
+    {
+      "claim_id": "fc083e15-5ccf-4c0d-bbae-586a5bb90c46",
+      "result_id": "19846155-0c67-4d1f-81c4-57e25a67644a"
+    },
+    {
+      "claim_id": "e51a3a41-c517-4502-9b45-a3cb0de24414",
+      "result_id": "19846155-0c67-4d1f-81c4-57e25a67644a"
+    },
+    {
+      "claim_id": "6fbe022a-123d-4a5e-b4d7-28dd1d49dac1",
+      "result_id": "19846155-0c67-4d1f-81c4-57e25a67644a"
+    },
+    {
+      "claim_id": "0b95e231-002e-47b5-ad96-c97848cedb68",
+      "result_id": "19846155-0c67-4d1f-81c4-57e25a67644a"
+    },
+    {
+      "claim_id": "1c467ae4-9c7b-4030-acef-861b760c0eb4",
+      "result_id": "19846155-0c67-4d1f-81c4-57e25a67644a"
+    },
+    {
+      "claim_id": "fd55a4cc-7d6b-4d22-87ad-71794026a9d0",
+      "result_id": "19846155-0c67-4d1f-81c4-57e25a67644a"
+    },
+    {
+      "claim_id": "7288330f-475f-4e72-a616-695060037fad",
+      "result_id": "19846155-0c67-4d1f-81c4-57e25a67644a"
+    },
+    {
+      "claim_id": "a31282b3-a3ff-4451-bb51-a935d5c527e7",
+      "result_id": "34105308-fc5e-468c-b47b-a24dd4c722fa"
+    },
+    {
+      "claim_id": "b93c5ef3-1071-4866-b7f9-50ef3ec36ca3",
+      "result_id": "34105308-fc5e-468c-b47b-a24dd4c722fa"
+    },
+    {
+      "claim_id": "8cb37dd5-e9bc-4b24-b4da-5cce6297ca05",
+      "result_id": "34105308-fc5e-468c-b47b-a24dd4c722fa"
+    },
+    {
+      "claim_id": "b0e52eea-b85b-4b66-86d8-fd39a90cc366",
+      "result_id": "34105308-fc5e-468c-b47b-a24dd4c722fa"
+    },
+    {
+      "claim_id": "32b6f4a2-5dbb-4f83-8c5d-10d5e5fed93e",
+      "result_id": "34105308-fc5e-468c-b47b-a24dd4c722fa"
+    },
+    {
+      "claim_id": "0ef1ac12-0940-4979-ab4e-bc7c25de971c",
+      "result_id": "a59168f5-6abe-4567-8500-27987abc5dfa"
+    },
+    {
+      "claim_id": "7d6c6198-2b41-4734-ab0f-f58eed59fc96",
+      "result_id": "a59168f5-6abe-4567-8500-27987abc5dfa"
+    },
+    {
+      "claim_id": "b081a4a6-8a1f-410c-ac97-d809cab9d7b6",
+      "result_id": "a59168f5-6abe-4567-8500-27987abc5dfa"
+    },
+    {
+      "claim_id": "f81394ac-caa8-409c-bae9-81d882c8b43a",
+      "result_id": "a59168f5-6abe-4567-8500-27987abc5dfa"
+    },
+    {
+      "claim_id": "db8ec221-d554-469f-8cfd-c541466764aa",
+      "result_id": "a59168f5-6abe-4567-8500-27987abc5dfa"
+    },
+    {
+      "claim_id": "7b07f2b6-89c9-4c40-919a-a5dc48fb0431",
+      "result_id": "a59168f5-6abe-4567-8500-27987abc5dfa"
+    },
+    {
+      "claim_id": "bf03380c-9443-406a-8478-df08eff1d84c",
+      "result_id": "2b4821c5-10c0-4558-944e-5c11cd98985f"
+    },
+    {
+      "claim_id": "7dc59a1d-692d-4a65-8a91-f759302da327",
+      "result_id": "2b4821c5-10c0-4558-944e-5c11cd98985f"
+    },
+    {
+      "claim_id": "634c6d79-77de-430d-89a6-f38544870869",
+      "result_id": "1714c00f-7aca-4e80-81c8-464d698311ae"
+    },
+    {
+      "claim_id": "170db836-139b-49f1-b2ec-a378487243fc",
+      "result_id": "1714c00f-7aca-4e80-81c8-464d698311ae"
+    },
+    {
+      "claim_id": "44fa3b05-1b79-4b78-be26-e69872811434",
+      "result_id": "1714c00f-7aca-4e80-81c8-464d698311ae"
+    },
+    {
+      "claim_id": "47b0e9ec-1957-4d50-894a-05e3c80f4825",
+      "result_id": "1714c00f-7aca-4e80-81c8-464d698311ae"
+    },
+    {
+      "claim_id": "8585f6c2-a65d-4ecd-a381-837a26abcceb",
+      "result_id": "1714c00f-7aca-4e80-81c8-464d698311ae"
+    },
+    {
+      "claim_id": "a3c63480-4d7e-4608-a5bb-dab9185c999e",
+      "result_id": "1714c00f-7aca-4e80-81c8-464d698311ae"
+    },
+    {
+      "claim_id": "03fedfcc-3cae-4767-a2d3-245af9cfcd73",
+      "result_id": "08a768e6-58ac-4056-9e41-aee15a4fe2cb"
+    },
+    {
+      "claim_id": "62a0c82b-a65f-4098-9d5a-4295970116b9",
+      "result_id": "08a768e6-58ac-4056-9e41-aee15a4fe2cb"
+    },
+    {
+      "claim_id": "d3042eb0-5d55-44d2-b4b8-04d42b9b3103",
+      "result_id": "08a768e6-58ac-4056-9e41-aee15a4fe2cb"
+    },
+    {
+      "claim_id": "3fca942d-37a4-4ce2-9438-d17f0ce3ee99",
+      "result_id": "6a28173b-606a-4f60-a364-54784b75a008"
+    },
+    {
+      "claim_id": "3e426ba8-a970-4698-ac07-8c51a4fd7ebd",
+      "result_id": "6a28173b-606a-4f60-a364-54784b75a008"
+    },
+    {
+      "claim_id": "d8db4db2-1e50-460b-8abf-8022bfecf0a2",
+      "result_id": "6a28173b-606a-4f60-a364-54784b75a008"
+    },
+    {
+      "claim_id": "2a2d00c0-7a6d-4d70-9114-f82709c02472",
+      "result_id": "6a28173b-606a-4f60-a364-54784b75a008"
+    },
+    {
+      "claim_id": "20d29ced-68ae-42f0-b3bc-b65e3abc5169",
+      "result_id": "6a28173b-606a-4f60-a364-54784b75a008"
+    },
+    {
+      "claim_id": "fffd6994-1f46-4a1f-be7a-9e72c70c76d3",
+      "result_id": "6a28173b-606a-4f60-a364-54784b75a008"
+    },
+    {
+      "claim_id": "da8f682d-dccf-4733-be55-e910a9bc6570",
+      "result_id": "6a28173b-606a-4f60-a364-54784b75a008"
+    },
+    {
+      "claim_id": "6f13b15c-5126-4f9d-9a66-c0adc321601d",
+      "result_id": "8c1890d5-d66b-4aad-85b4-1f333ad391ef"
+    },
+    {
+      "claim_id": "cda3df9b-0b38-4580-8f79-0b61e5c81313",
+      "result_id": "9779ef1e-dd69-4f19-8e64-275df8723752"
+    },
+    {
+      "claim_id": "b0fac43a-885e-4a1a-9fc8-b46a9135559b",
+      "result_id": "9779ef1e-dd69-4f19-8e64-275df8723752"
+    },
+    {
+      "claim_id": "6817eacb-db7f-4127-931b-ca61df0b139a",
+      "result_id": "9779ef1e-dd69-4f19-8e64-275df8723752"
+    },
+    {
+      "claim_id": "7bc82f94-81d0-4289-a19f-eb51b51019f5",
+      "result_id": "9779ef1e-dd69-4f19-8e64-275df8723752"
+    },
+    {
+      "claim_id": "76feb72e-dd26-4a64-84bd-21190ab6ac99",
+      "result_id": "9779ef1e-dd69-4f19-8e64-275df8723752"
+    },
+    {
+      "claim_id": "73336d56-8e32-4224-9c24-ad4416ff5a2f",
+      "result_id": "10c0510d-5bcc-4036-9ec0-fc7293be9e81"
+    },
+    {
+      "claim_id": "3996e306-4bc4-4b92-818a-dd3f1707fd01",
+      "result_id": "10c0510d-5bcc-4036-9ec0-fc7293be9e81"
+    },
+    {
+      "claim_id": "0a0d5252-b69a-4111-abb8-510651f73360",
+      "result_id": "10c0510d-5bcc-4036-9ec0-fc7293be9e81"
+    },
+    {
+      "claim_id": "724d600a-d8f4-4be5-afef-09aaa98ccdb6",
+      "result_id": "10c0510d-5bcc-4036-9ec0-fc7293be9e81"
+    },
+    {
+      "claim_id": "5b1ebaf6-4c84-4610-aefc-2d7b508beb83",
+      "result_id": "10c0510d-5bcc-4036-9ec0-fc7293be9e81"
+    },
+    {
+      "claim_id": "bcd99bdd-ba1d-43cc-b072-21447ebaff8d",
+      "result_id": "10c0510d-5bcc-4036-9ec0-fc7293be9e81"
+    },
+    {
+      "claim_id": "9c4833d5-45f3-424b-a54f-080c7b1e6a6c",
+      "result_id": "6e601cee-0ffb-4657-bc64-ffcec67d0e3b"
+    },
+    {
+      "claim_id": "3a9bb1e0-95b3-4c9b-8b53-65d174f30007",
+      "result_id": "6e601cee-0ffb-4657-bc64-ffcec67d0e3b"
+    },
+    {
+      "claim_id": "9cc3be95-b124-4799-89d5-fb1d5f6dab36",
+      "result_id": "e278f904-c62b-4907-867e-62f58f5ca0e9"
+    },
+    {
+      "claim_id": "3f1bbe6f-8714-42f3-a555-237c3b119c01",
+      "result_id": "e278f904-c62b-4907-867e-62f58f5ca0e9"
+    },
+    {
+      "claim_id": "2e63a50f-c63c-4f92-9d2e-0085aa0138e7",
+      "result_id": "e278f904-c62b-4907-867e-62f58f5ca0e9"
+    },
+    {
+      "claim_id": "cfb3d4d1-0dcb-4fa1-a66d-61065f481dcd",
+      "result_id": "27736791-8788-4f1f-b088-4a70730a9589"
+    },
+    {
+      "claim_id": "a5cea303-39af-4b5c-996f-3326d6c8fd29",
+      "result_id": "27736791-8788-4f1f-b088-4a70730a9589"
+    },
+    {
+      "claim_id": "42326adb-45b2-4f5e-9b79-c1f0fdd55f92",
+      "result_id": "d253ba6a-0377-4524-86c0-9d7b923fa9c9"
+    },
+    {
+      "claim_id": "89095381-bb4f-4d34-8b65-35f378d58f94",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "e638e78e-0f4c-4853-b2a0-e43a30c8961a",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "51af55d2-2893-409b-af94-c522c32f1f45",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "3591582c-1129-4047-925d-c908a749a402",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "bc25cb61-6961-4cd4-93ee-3980843a9e1e",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "77b5ab09-4476-482d-821c-9a4247c6a649",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "2bd3f72b-d7be-4152-ac09-2fa8ad510a38",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "647e6d9f-ef8d-4197-ad1c-a7b0e04247bb",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "a12b7c6b-8a5e-4a69-9cab-22f74a1d921c",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "df1c64ae-1821-4f73-b5bc-a7d1adc4b6e4",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "5de3e10f-06e1-4f21-88d7-93e9499efad3",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "5b4efb68-58a6-4123-bc96-79f99cf12e04",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "12ad9da1-dae7-416c-bc21-0fca170189ad",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "662d037e-ab26-4904-be31-44a708eaf0d2",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "c27a5ede-7cd9-4efc-81e5-9b9cc0e02616",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "8fe26beb-1a70-4571-9d18-99fb5a025d2f",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "f82c7f18-c1b4-4027-b248-eaa3f214a6fe",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "06acda87-86cd-4901-ad75-0844311a0d4a",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "ef5dacb3-9498-4a57-bad4-0a17aa13b850",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "4754949a-a58a-4cec-9537-9ec8524c6277",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "90f5d39c-4e76-4f91-89b3-64b44b763874",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "8ef64251-571f-4727-a3a5-37965fb949c0",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "db7ff5f6-b4ef-49de-8e13-b643cea02af6",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "79f07178-b567-48a7-aedb-f5ff3edb3bd7",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "c27ed15c-2def-4335-b474-e947760db701",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "b34b7b84-7366-4eee-a8c7-03a30e881c2f",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "aea46c92-eb7e-4330-961b-bc6b044d24c9",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "a90aec4e-2612-4262-9806-af561430f8c4",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "1ef787f8-7630-4555-b7f9-65376a4ec2e0",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "a58dec1f-b794-4bd0-9c6c-5d39510b956b",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "1f1accf0-8b42-45ca-8fd6-a4b390729696",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "3f52a592-5fbc-401b-9b9b-97d395c61981",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "523dd00c-9afe-4e56-821c-2cdc6e785a8e",
+      "result_id": "a7ecc0bf-72e1-4eab-85a8-cbcefb473290"
+    },
+    {
+      "claim_id": "6ec28f28-64b9-4478-8c3d-d6a654ff1537",
+      "result_id": "33bf1de2-8801-4994-b098-e576afe8f9fa"
+    },
+    {
+      "claim_id": "bbe8cda9-4064-468b-b00b-98343131b7dd",
+      "result_id": "33bf1de2-8801-4994-b098-e576afe8f9fa"
+    },
+    {
+      "claim_id": "88f3d197-97cd-444d-b3d1-3a8d0326a452",
+      "result_id": "33bf1de2-8801-4994-b098-e576afe8f9fa"
+    },
+    {
+      "claim_id": "7d9e1c3e-8ce9-4e17-86e0-b54bcccce0dd",
+      "result_id": "33bf1de2-8801-4994-b098-e576afe8f9fa"
+    },
+    {
+      "claim_id": "cb6505fd-b9df-428d-8d2f-40dc7fec5283",
+      "result_id": "33bf1de2-8801-4994-b098-e576afe8f9fa"
+    },
+    {
+      "claim_id": "b74fd1a3-e0ee-4011-b7fe-0e424de9d939",
+      "result_id": "33bf1de2-8801-4994-b098-e576afe8f9fa"
+    }
+  ],
+  "comparisons": []
+}

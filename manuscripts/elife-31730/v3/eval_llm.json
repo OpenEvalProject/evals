@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C58",
+      "C59",
+      "C60",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors established an experimental system using starved Camponotus sanctus ant colonies (50-100 workers) with fluorescent food tracking and individual barcode identification to study food accumulation dynamics. Food was supplied ad-libitum and accumulated gradually until saturation, with a few consistent foragers (12 foragers across 3 experiments) responsible for food transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C58-C66 collectively describe a well-documented experimental setup with clear methodology. The use of fluorescent imaging, barcode tracking, and controlled starvation periods (3-5 weeks) provides a robust foundation for the study. Sample sizes and experimental parameters are explicitly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C120"
+    ],
+    "result": "Food accumulation in ant colonies follows logistic dynamics at the colony scale, with the initial rise stemming from gradually joining foragers and subsequent decay resulting from negative feedback where colony satiation decreases individual forager unloading rates. This can be mathematically interpreted as the product of the number of active foragers times the average unloading rate per forager.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 and C120 are well-supported by Figure 1b-c showing logistic accumulation curves and the mathematical decomposition in Equation 3. The interpretation is consistent with cited literature (Buffin et al., 2009) and directly demonstrated by the experimental data showing individual forager contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C37"
+    ],
+    "result": "Individual forager food flow rates decline linearly with colony state (proportional to 1-F) regardless of when foraging began, supporting a feedback mechanism where colony state directly controls individual forager unloading rates rather than feed-forward control based on forager history.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C37 are strongly supported by Figure 1c and Figure 1\u2014figure supplement 2, which show linear relationships between individual forager flow and (1-F) across multiple foragers starting at different times. The consistency across foragers provides compelling evidence against feed-forward control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C39"
+    ],
+    "result": "Both interaction rate and interaction volume decline with increasing colony state, but interaction volume changes are more prominent and nearly sufficient to account for inflow dynamics, while interaction rate provides only a minor second-order correction. Interaction rates alone cannot account for the observed dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 and C39 are well-supported by Figure 2a-b showing quantitative comparisons of rate and volume effects. The modeling in Figure 2b demonstrates that volume-only models (R\u00b2=0.96) perform much better than rate-only models (R\u00b2=0.52), with combined models achieving R\u00b2=0.99.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Interaction volumes are determined primarily by recipient crop load (not forager crop load) and follow exponential distributions that scale with available space in the recipient's crop. Partial crop loads affect interaction volumes through behavioral mechanisms rather than pure physical limitations, as donors typically don't deliver their entire load and recipients don't fill to capacity in single interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 and C38-C43 are strongly supported by Figure 3a-c showing exponential distributions with \u03bbc scaling inversely with recipient empty space, while Figure 3b shows no systematic effect of forager crop load. The exponential distribution analysis (Figure 3\u2014figure supplements 1-2) provides rigorous statistical support with R\u00b2>0.93 for most fits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "Ants that interact with foragers reliably represent the colony's satiation level, with representation accuracy increasing as the colony satiates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 are supported by Figure 3d showing that recipient crop loads track colony state, with tighter distributions at higher colony states. This is critical for the proposed feedback mechanism and is well-demonstrated empirically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Foraging frequency is regulated by colony state rather than forager history, as demonstrated by perturbation experiments where introducing hungry ants after satiation caused foragers' nest durations to sharply drop, explicitly decoupling colony state from time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are strongly supported by the perturbation experiments (Figure 4d-e, Figure 4\u2014figure supplement 2) showing causal effects of colony state manipulation on forager behavior. The experimental design effectively controls for temporal confounds, providing strong evidence for colony-state regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C45",
+      "C46",
+      "C48",
+      "C118",
+      "C128"
+    ],
+    "result": "Foragers do not wait to fully unload before exiting the nest; instead, they exit with highly variable crop loads that maintain a relatively constant average across colony states. To compensate for declining unloading rates, foragers stay longer, perform more interactions, and explore deeper into the nest. This demonstrates that foraging is not regulated by pure physical limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30, C45-C46, C48, C118, and C128 are well-supported by Figure 5a-d showing constant average exit crop loads (rs=0.24, p=0.001) despite high variability (Figure 5b), with compensatory increases in interaction number and nest penetration depth. This contradicts previous assumptions (C107) and is a key novel finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C44",
+      "C127"
+    ],
+    "result": "Forager exit rates depend on both forager crop state and colony state, but can be decomposed into a decision rate (modulated by unloading rate, which depends on colony state) and a decision probability (dependent only on forager crop load). This mechanism allows foragers to adjust foraging frequency without assessing global colony state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C44, and C127 are supported by Figure 6 and Table 1 showing that when decision rate is matched to unloading rate (Figure 6c), the colony state effect on exit probability approaches zero (\u03b2=0.499 vs. \u03b3=-3.092), while crop state remains highly significant. This provides a mechanistic explanation for how local information generates global regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C116"
+    ],
+    "result": "The study provides the first quantitative multi-scale account linking global colony satiation dynamics to local interaction statistics, demonstrating that food intake regulation emerges without individual foragers needing to assess global colony state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79 and C116 represent the main conclusion, which is well-supported by the integration of findings from C6-C7 (feedback mechanism), C13-C15 (local interaction rules), C17-C18 (representative sampling), and C31/C44 (exit decision mechanism). The multi-scale quantitative linking is demonstrated throughout Figures 1-6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The authors hypothesize that an internal mechanism based on mechanical tension of crop walls may be involved in trophallaxis, potentially explaining the scaling of interaction volumes with available crop space and providing an anatomical basis for foragers adjusting decision rates to unloading rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C51 are explicitly speculative hypotheses proposed to explain observed patterns. While the hypothesis is plausible and consistent with cited sensory capabilities (Stoffolano and Haselton, 2013), no direct experimental evidence for crop wall tension sensing is provided in this study. This represents future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C117",
+      "C119",
+      "C122"
+    ],
+    "result": "The study's microscopic observations revealed that recipients do not fill to capacity in single interactions, contradicting previous assumptions that recipients are satisfied by single interactions and are either empty or full.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117, C119, and C122 are supported by the exponential distribution of interaction volumes (Figure 3) and direct observations showing partial filling. This represents a significant correction to previous models (C109-C110) and is well-documented with statistical evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C77"
+    ],
+    "result": "Crop loads were estimated by taking the maximal fluorescence measurement between trophallactic events, assuming crop content remains constant during these intervals. Different normalization methods were used depending on the analysis: between-experiment normalization for global dynamics and within-forager normalization for individual responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 and C77 describe methodological choices that are clearly stated and justified. The assumption of constant crop content between interactions is reasonable given the temporal resolution (0.5-1 Hz) and is supported by previous work (Greenwald et al., 2015). The normalization approaches are appropriate for their respective analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C78"
+    ],
+    "result": "Food flow was calculated by summing interaction volumes between foragers and non-foragers, smoothing with a 2000s moving average, and differentiating with a 200-500s window. Negative interactions (forager as receiver) constituted 216/962 interactions (12% of total flow) and were excluded from exponential distribution fits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 and C78 describe data analysis methods that are clearly documented. The smoothing and differentiation parameters are justified, and the impact of excluding negative interactions (12% accuracy loss) is explicitly acknowledged. The validation shown in Figure 1\u2014figure supplement 1 (comparing integral of flow to raw accumulation) supports the differentiation method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Camponotus sanctus are omnivorous ants distributed from the Near East to Iran and Afghanistan, presumed to live in monogynous colonies of tens to hundreds of individuals. Workers are 0.8-1.6 cm with translucent gasters, making them suitable for barcode labeling and crop imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 provide species background information supported by appropriate citations (Tschinkel, 2005; Ionescu-Hirsch, 2009). The inference about colony size from a related species (C53) is appropriately qualified as a presumption. Physical characteristics are directly observable and relevant to methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C123",
+      "C130",
+      "C131"
+    ],
+    "result": "The authors speculate that feedback based on non-physically-limited interaction volumes may allow fine-tuning of nutritional intake, and that partially loaded exits may provide benefits such as provisions for expeditions, time savings, and food source exploitation. They raise the question of whether an optimal exit crop load exists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123, C130, and C131 are explicitly speculative functional interpretations. While plausible, these adaptive explanations are not directly tested in the study. The speculation about optimal crop loads (C131) is presented as an open question for future research rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Perturbation experiments segregated starved colonies into two chambers, allowing only one to access food until satiation, then introduced hungry ants from the blocked chamber to drop colony satiation. Two experiments were conducted on colonies of 69 and 95 ants with 23 and 16 foragers respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 describe the perturbation experiment design and sample sizes, which are clearly documented in the Methods section and Figure 4\u2014figure supplement 2. The experimental manipulation is well-designed to test causality of colony state effects on forager behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Foragers were defined as individuals performing consistent foraging cycles between food source and nest, with consistent foragers averaging 15.67 cycles (minimum 8), while occasional visitors made no more than 4 trips.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 provide clear operational definitions for classifying foragers with explicit quantitative criteria. This classification is important for data analysis and is well-justified by the bimodal distribution of foraging activity.",
+    "result_type": "MINOR"
+  }
+]

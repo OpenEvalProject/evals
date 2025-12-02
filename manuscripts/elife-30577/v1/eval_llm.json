@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The manuscript provides background on retinitis pigmentosa (RP), stating it has a prevalence of 1 in 3,000-5,000 births, involves over 3,000 mutations in about 60 genes (mostly affecting rod photoreceptor development and function), and currently has no approved medical therapy to slow or prevent rod degeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by multiple citations to established literature (Hartong et al., 2006; Parmeggiani, 2011; Boughman et al., 1980; Daiger et al., 2013). These are standard background claims about RP that accurately reflect the current state of knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Loss of function mutations in Nrl or Nr2e3 cause rods to acquire a cone-like identity, are necessary in mature rods to maintain normal gene expression, and their deletion promotes photoreceptor survival in multiple RP models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 are supported by extensive citations to prior work (Montana et al., 2013; Zhu et al., 2017; Yu et al., 2017; and others). These establish the rationale for targeting the Nrl/Nr2e3 pathway as a therapeutic strategy for RP.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The authors' previous compound PR1 reduces rod gene expression, increases cone gene expression, and slows rod degeneration in vitro in RhoP23H and Pde6bRd1 mouse models, but was limited by poor potency, solubility, and in vivo stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 are supported by citation to the authors' prior work (Nakamura et al., 2016). These claims establish the context for the current study and justify the need for identifying PR3 as an improved compound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C15",
+      "C16",
+      "C76"
+    ],
+    "result": "PR3 is a structurally unrelated compound to PR1 that significantly represses rod gene expression (particularly Rhodopsin) in retinal cultures, is more amenable for in vivo studies, and shows superior potency compared to PR1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C12, C15, C16, and C76 are supported by experimental data from immunofluorescence assays (Figure 1B) and qPCR (Figure 1C) showing dose-dependent reduction in Rhodopsin expression with PR3 treatment (p=0.0075). The data demonstrate PR3's efficacy in vitro.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C28",
+      "C69",
+      "C77"
+    ],
+    "result": "PR3 treatment increases the number of S Opsin+ cells specifically in the ventral retina (but not dorsal retina) both in vitro and in vivo, similar to the effects of Nr2e3 mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C28, C69, and C77 are supported by whole mount immunostaining data with statistical significance (p=0.00063 in vitro, p=0.0086 in vivo). The ventral-specific effect is consistent with known Nr2e3 biology and strengthens the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "PR3 directly interacts with Nr2e3 as demonstrated by isothermal titration calorimetry (ITC) with an estimated Kd of 67 \u03bcM, and had an IC50 of 0.07 \u03bcM in a luciferase-based Nr2e3-NCoR disruption assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C18-C20 present conflicting binding affinities (IC50 of 0.07 \u03bcM vs Kd of 67 \u03bcM), a ~1000-fold difference that is not explained. The ITC data (C19, C20) shows only qualitative interaction, and the Kd estimation using a \"one site model\" may be inappropriate given the complexity of nuclear receptor-ligand interactions. The large discrepancy raises questions about the binding mechanism and whether the ITC accurately reflects the functional interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C63",
+      "C79",
+      "C80"
+    ],
+    "result": "PR3 reduces Rhodopsin promoter activation in HEK cells transfected with Nr2e3, Nrl, and Crx (p<0.001), and paradoxically increases the binding between Nr2e3 and Nrl (p=0.013), suggesting PR3 affects the formation or stabilization of the Nr2e3-Nrl-Crx transcriptional complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C22, C63, C79, and C80 are supported by luciferase assays and co-immunoprecipitation data with statistical significance. However, the paradoxical finding that PR3 increases Nr2e3-Nrl binding while decreasing transcriptional activity is mechanistically puzzling and requires further investigation. The authors speculate about possible mechanisms but do not definitively resolve this apparent contradiction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C64",
+      "C65",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "PR3 has minimal effects on RORb-Crx driven S Opsin promoter activation and does not affect Prdm1 expression (a RORb-specific target), indicating that PR3's effects are primarily mediated through Nr2e3 modulation rather than RORb antagonism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, C64, C65, C81, C82, and C83 are supported by luciferase assays and qPCR data showing that PR3's effect on the S Opsin promoter (p=0.0014) is much smaller than on the Rhodopsin promoter, and Prdm1 expression is unchanged (p=0.41). This specificity analysis strengthens the conclusion that PR3 acts primarily through Nr2e3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25",
+      "C78"
+    ],
+    "result": "PR3 significantly reduces Rhodopsin expression in wild type retinas (p=0.033) but not in Rd7 retinas harboring an Nr2e3 mutation (p=0.13), confirming that PR3's effects are mediated through Nr2e3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C78 are supported by qPCR data from retinal explants (Figure 1G) with appropriate statistical analysis. The lack of effect in Rd7 retinas provides strong genetic evidence for Nr2e3 specificity, though the authors note an unresolved discrepancy regarding why Rd7 mutations show only moderate reductions in rod gene expression compared to PR3 treatment or CRISPR deletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C67",
+      "C68"
+    ],
+    "result": "In vivo PR3 treatment of wild type mice results in decreased rod photoreceptor-specific transcripts by RNA sequencing, with gene ontology analysis showing enrichment for rhodopsin signaling and photoreceptor-related pathways, but does not cause global increases in cone gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C26, C27, C67, and C68 are based on RNA sequencing data (Figure 2A-B), but critical methodological details are missing. The study used only n=2 mice per condition, which is insufficient for RNA-seq analysis and does not allow for proper statistical testing of differential expression. No information is provided about normalization methods, statistical thresholds, or false discovery rate correction. The lack of biological replicates severely limits confidence in these transcriptomic conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Genes expressed in both rod and cone photoreceptors (Crx and Otx2) showed no difference in expression between control and PR3 treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C29 is based on RNA sequencing data, but with only n=2 mice per condition and no statistical testing reported, this negative result cannot be confidently interpreted. The lack of change could reflect true biology or insufficient statistical power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "PR3 treatment prevented outer segment development in wild type mice, with strikingly truncated outer segments compared to controls, but did not induce photoreceptor apoptosis as assessed by ONL nuclei examination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C31 are supported by electron microscopy data (Figure 2E) showing clear morphological differences. However, the study only examined n=2 mice per condition, which limits generalizability. The assessment of apoptosis by nuclear morphology alone is relatively crude; more specific markers (TUNEL, cleaved caspase-3) would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C13",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "PR3-treated RhoP23H mice showed significant structural photoreceptor rescue at P21 compared to vehicle controls, with more rows of photoreceptors in the ONL (p=0.0014 central, p=0.015 peripheral), healthier cone morphology, and increased expression of photoreceptor markers Recoverin (p=1.73E-05) and Rhodopsin (p=3.13E-05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C34-C38, and C70-C73 are supported by convergent evidence from histology (Figure 3B-C) and qPCR (Figure 3D) with appropriate sample sizes (n=7-8 mice) and statistical significance. The structural preservation is visually apparent and quantitatively validated. This represents strong evidence for therapeutic efficacy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C39",
+      "C74",
+      "C75"
+    ],
+    "result": "PR3-treated RhoP23H mice showed significantly elevated scotopic b-wave amplitudes at multiple intensities (0, 10, 20, 30, 50 dB; p=0.012-0.032) and photopic b-wave amplitudes at 30, 50, and 100 dB (p=0.021-0.048) compared to vehicle controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C74, and C75 are supported by ERG data (Figure 4) with appropriate sample sizes (n=4 DMSO, n=8 PR3) and statistical analysis. The functional rescue complements the structural findings. However, the unequal sample sizes and assumption of unequal variance in the t-tests should be justified. The functional improvement is modest but statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C40",
+      "C44"
+    ],
+    "result": "PR3 treatment prevented structural and functional degeneration of photoreceptors in the RhoP23H mouse model, demonstrating that a small molecule targeting the rod gene expression regulatory pathway is effective at slowing rod degeneration in an aggressive RP model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C44 represent the main conclusion, supported by the combined histological (C70-C73) and functional (C74-C75) data. The convergent evidence from multiple assays strengthens this conclusion. However, the treatment only slows rather than prevents degeneration, and long-term efficacy remains unknown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "This is the first report of successful treatment of the RhoP23H RP model with a small molecule in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C41 asserts novelty but provides no systematic literature review to support this claim. While the authors may be correct, definitive assessment of \"first report\" claims requires comprehensive literature search that is not documented. The claim should be verified independently.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C14",
+      "C45"
+    ],
+    "result": "Pharmacological modulation of rod gene expression with PR3 provides a potential strategy and novel target for medical therapy of retinal degeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C45 represent reasonable conclusions based on the proof-of-concept data presented. However, significant additional work is needed before clinical translation, including: dose optimization, pharmacokinetics/pharmacodynamics studies, long-term efficacy and safety assessment, testing in additional RP models, and evaluation of effects on visual function beyond ERG. The claim of \"potential\" is appropriate given these limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C42",
+      "C43",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The manuscript provides extensive background on the RhoP23H model, Nr2e3/Nrl biology, related nuclear receptors (ERRb, RORb), and prior genetic manipulation studies demonstrating that targeting the rod differentiation pathway can prevent photoreceptor degeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33, C42-C43, C46-C61 are background claims supported by appropriate citations to published literature. These establish the scientific rationale and context for the current study. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "The authors speculate that developmental compensation may explain why Rd7 retinas show only moderate reductions in rod gene expression compared to PR3 treatment or CRISPR deletion, or alternatively that PR3 may act in a dominant-negative manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57 and C58 are explicitly speculative and acknowledge an unresolved mechanistic question. The authors appropriately present these as hypotheses rather than conclusions. Additional experiments would be needed to distinguish between these possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C62",
+      "C66"
+    ],
+    "result": "PR3 was identified by searching PubChem for compounds that interact with Nr2e3 in a luciferase-based assay, and potentially inhibits rod photoreceptor gene expression through Nr2e3 modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62 and C66 describe the compound identification strategy and are supported by reference to PubChem assays. The mechanistic interpretation (\"potentially through Nr2e3 modulation\") is appropriately cautious given the complexity of the data.",
+    "result_type": "MINOR"
+  }
+]

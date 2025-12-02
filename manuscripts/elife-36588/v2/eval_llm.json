@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C40",
+      "C41"
+    ],
+    "result": "RNST-2 is a C. elegans T2 family endoribonuclease with conserved catalytic sites that is essential for its function in lysosomes. The qx245 allele carries a G119E mutation affecting the second catalytic active site (CAS II), while bp555 is a premature stop mutation affecting both CAS I and II. The catalytic activity of RNST-2 is required for its function, as demonstrated by rescue experiments showing that wild-type RNST-2, but not the catalytically inactive H118A mutant, rescues the enlarged lysosome phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 provide strong genetic and molecular evidence for the identity and nature of rnst-2 mutations, supported by sequencing data (C28-C29) and sequence alignment (C30-C31, Figure 1\u2014figure supplement 2L). The functional requirement for catalytic activity is demonstrated by differential rescue experiments (C40-C41), where wild-type RNST-2 rescues but the H118A catalytic mutant does not. The conservation with human RNASET2 (C34) and successful cross-species rescue further support the functional characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C33"
+    ],
+    "result": "Loss of rnst-2 causes enlarged lysosomes in C. elegans. In wild-type animals, lysosomes have an average volume of 0.77 \u03bcm\u00b3 in embryos and L1 larvae, while in rnst-2 mutants (both qx245 and bp555 alleles), lysosome volume increases to 2.85 \u03bcm\u00b3 (3.7-fold increase) in embryos/L1 and 5.67 \u03bcm\u00b3 (2.5-fold increase) in adult hypodermis. The enlarged lysosomes maintain normal acidification as shown by Lysotracker Red staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative measurements of lysosome volume are clearly stated and supported by microscopy data in Figure 1M and Figure 1\u2014figure supplement 1P (C22-C24). The phenotype is consistent across two independent alleles (C33), strengthening the conclusion. The Lysotracker staining data (C25, Figure 1N) appropriately controls for the possibility that enlarged lysosomes result from acidification defects rather than accumulation of undegraded material.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "RNST-2 is a widely expressed lysosomal protein that is functionally conserved with human RNASET2. RNST-2::CHERRY is expressed from embryonic through adult stages in multiple tissues (pharynx, hypodermis, muscle, sheath cells, intestine, vulva, tail) and colocalizes with lysosomal markers LAAT-1::GFP and SCAV-3::GFP. Expression of either C. elegans RNST-2 or human RNASET2 under the rnst-2 promoter rescues the enlarged lysosome phenotype in rnst-2 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The localization data (C39) is well-supported by colocalization microscopy (Figure 2I-J\"), and the expression pattern (C38) is documented across developmental stages (Figure 2A-H'). The functional conservation with human RNASET2 (C35-C36) is demonstrated by cross-species rescue experiments (Figure 1\u2014figure supplement 2), which is a strong test of functional conservation. The rescue by the RNST-2::CHERRY reporter (C37) validates that the tagged protein is functional.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Loss of RNST-2 causes accumulation of ribosomal RNA and ribosomal proteins in lysosomes. rnst-2 mutant lysosomes accumulate high levels of RNA, particularly 26S and 18S rRNA (>5-fold increase compared to wild-type), and ribosomal proteins from both large (RPL-5, RPL-25.2) and small (RPS-3, RPS-0) subunits. This accumulation is fully suppressed by expression of RNST-2, indicating that RNST-2 is required for ribosomal RNA degradation in lysosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rRNA accumulation is demonstrated by gel electrophoresis of purified lysosomal fractions (C42-C43, Figure 3A), and ribosomal protein accumulation is shown by western blot (C44, Figure 3B). The lysosome purification protocol is described and validated (Figure 3\u2014figure supplement 1A-B). The rescue by RNST-2 expression (C45) demonstrates specificity. The conclusion that RNST-2 disrupts rRNA degradation (C46) is well-supported by these data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Ribosomal RNA and proteins are delivered to lysosomes through autophagy. Mutations in autophagy genes (atg-2, epg-6, lgg-1) completely suppress the lysosomal accumulation of rRNA and ribosomal proteins in rnst-2 mutants and significantly reduce lysosome volume. This indicates that autophagy is responsible for delivering ribosomes to lysosomes, and that defects in their degradation lead to lysosome enlargement in rnst-2 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic epistasis experiments (C48-C50) provide strong evidence that autophagy is upstream of RNST-2 function. The suppression of both biochemical phenotypes (rRNA/protein accumulation, Figure 3C-D) and morphological phenotypes (lysosome enlargement, Figure 3E-I) by autophagy mutations is compelling. The use of multiple autophagy genes (atg-2, epg-6, lgg-1) strengthens the conclusion. The inference that autophagy delivers ribosomes to lysosomes (C51-C52) is well-supported by these epistasis data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Loss of RNST-2 does not affect degradation of endocytic and phagocytic cargos. In rnst-2 mutants, the endocytic cargos VIT-2::GFP and CAV-1::GFP are properly degraded, and the number of embryonic and germ cell corpses is similar to wild-type, indicating that phagocytosis and degradation of apoptotic cells is unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The specificity of the rnst-2 phenotype is demonstrated by showing that other lysosomal degradation pathways remain functional (C53-C54, Figure 3\u2014figure supplement 2). This is an important control that indicates RNST-2 specifically affects ribosomal RNA degradation rather than causing a general lysosomal dysfunction. The conclusion (C55) appropriately summarizes these negative results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Autophagy is partially impaired or delayed in rnst-2 mutants. While PGL-3 and SEPA-1 are cleared normally, SQST-1 and LGG-1 accumulate in late-staged embryos (but not early embryos) in rnst-2 mutants. Both LGG-1-I and LGG-1-II accumulate at embryonic and adult stages, and rnst-2 mutants show reduced survival during L1 starvation, a process requiring autophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal pattern of autophagy substrate accumulation (C60-C61, Figure 4) is well-documented and distinguishes rnst-2 from complete autophagy mutants like atg-2. The differential clearance of different autophagy substrates (C58-C59 vs C60-C61) suggests specificity rather than a complete block. The LGG-1 western blot data (C64, Figure 4S-T) and L1 starvation survival data (C65, Figure 4U) provide additional support. The conclusion of partial impairment (C63) is appropriately cautious given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Loss of rnst-2 causes severe developmental defects and shortened lifespan. Both rnst-2 alleles show 20-30% embryonic lethality, retarded embryogenesis, and ~50% larval arrest (which is rescued by RNST-2 expression). rnst-2 mutants also have significantly shortened lifespans compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The developmental phenotypes are quantified for both alleles (C66-C67, Figure 5A-C), and the rescue by RNST-2 expression (C68) demonstrates specificity. The lifespan data (C70, Figure 5D-E) is clearly presented. These phenotypes establish the physiological importance of RNST-2 function. The conclusion (C69) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "RNST-2 function is important for lifespan extension in long-lived mutants. Loss of rnst-2 reduces the lifespan of daf-2(lf) mutants (which normally live twice as long as wild-type) to wild-type levels, and also reduces the lifespan of glp-1(e2144) mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic interaction data (C72-C73, Figure 5D-G) demonstrate that RNST-2 is required for lifespan extension in two different long-lived mutant backgrounds. The daf-2 data (C71-C72) is particularly striking as it shows complete suppression of the extended lifespan phenotype. The conclusion (C74) is well-supported by these data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Loss of RNST-2 causes synthetic lethality with mutations in pyrimidine biosynthesis genes, but not with other lysosomal defects. Single mutants of pyr-1 and umps-1 show 50% and 25% embryonic lethality respectively, but double mutants with rnst-2 show nearly 100% embryonic lethality. In contrast, mutations in other lysosomal genes (laat-1, lmp-1) do not cause synthetic lethality with pyr-1 or umps-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The synthetic lethality data (C79, Figure 6A-B) is striking and well-quantified. The specificity is demonstrated by the negative controls with other lysosomal mutations (C80-C81, Figure 6A-B and Figure 6\u2014figure supplement 1C-E), which is crucial for ruling out general lysosomal dysfunction. The conclusion (C82) that this is specific to RNST-2 function rather than general lysosomal defects is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C91",
+      "C92"
+    ],
+    "result": "Exogenous pyrimidine nucleotides rescue the synthetic lethality between rnst-2 and pyrimidine biosynthesis mutants. Uridine supplementation efficiently suppresses the embryonic lethality in pyr-1;rnst-2 double mutants and partially rescues umps-1;rnst-2. Cytidine supplementation also provides partial rescue, though to a lesser extent than uridine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The nucleotide supplementation experiments (C87-C88, C91, Figure 6C-F) provide strong evidence that the synthetic lethality is due to nucleotide deficiency. The differential rescue by uridine vs. cytidine and the partial rescue in umps-1;rnst-2 (C88) is consistent with the known biochemistry of these pathways. The conclusion (C92) that RNA degradation by RNST-2 maintains pyrimidine homeostasis is well-supported by these rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Autophagy mutations cause synthetic lethality with pyrimidine biosynthesis defects, consistent with autophagy's role in delivering RNA to lysosomes. However, nucleotide supplementation does not rescue the embryonic lethality of rnst-2 or autophagy single mutants, suggesting that general autophagy defects contribute to their developmental phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The synthetic lethality between autophagy mutations and pyrimidine biosynthesis genes (C93, Figure 6\u2014figure supplement 1A-B) supports the model that autophagy delivers RNA to lysosomes for nucleotide recycling. The lack of rescue by nucleotide supplementation in single mutants (C94) is an important observation that indicates the developmental defects have multiple causes. The inference (C95) is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C96",
+      "C106",
+      "C114"
+    ],
+    "result": "Autophagy-dependent degradation of ribosomal RNA by RNST-2 is essential for maintaining nucleotide homeostasis during C. elegans development. RNST-2 degrades rRNA delivered to lysosomes by autophagy, and this process is essential for providing pyrimidine nucleotides during embryogenesis, as demonstrated by synthetic lethality with pyrimidine biosynthesis mutations that is rescued by exogenous nucleotides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central conclusion of the paper, integrating multiple lines of evidence: (1) RNST-2 localizes to lysosomes and degrades rRNA (C1, C96); (2) rRNA accumulates in rnst-2 lysosomes in an autophagy-dependent manner (C2, C3); (3) synthetic lethality with pyrimidine biosynthesis mutations is rescued by nucleotides (C8, C106); (4) this occurs under normal growth conditions and is important for development (C114). The logic connecting these observations is sound and the conclusion is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C115"
+    ],
+    "result": "The function of T2 family endoribonucleases in degrading ribosomal RNA in lysosomes is conserved across evolution. RNST-2 function is consistent with yeast Ryn1 and Arabidopsis RNS2, loss of zebrafish rnaset2 causes rRNA accumulation in neuronal lysosomes, and human RNASET2 can functionally substitute for C. elegans RNST-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The evolutionary conservation is supported by functional rescue with human RNASET2 (demonstrated in the paper) and citations to studies in other organisms (C97-C98). The conclusion of evolutionary conservation (C99, C115) is well-supported by the cross-species rescue data and the literature. However, the claim relies heavily on cited work for the yeast, Arabidopsis, and zebrafish data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The rnst-2 lysosomes accumulate intact 26S and 18S rRNA, suggesting mature ribosomes are targeted for degradation. The accumulation of ribosomal proteins suggests that rRNA degradation may facilitate ribosome destruction. The gradual buildup of undegraded material may lead to impaired autophagy kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation of intact rRNA bands (C100) is supported by the gel data (Figure 3A), but the inference that mature ribosomes are targeted is not definitively proven\u2014the rRNA could be partially degraded but still migrate as intact bands. The speculation about rRNA degradation facilitating ribosome destruction (C101) and causing impaired autophagy (C103) are reasonable hypotheses but lack direct experimental support. These are appropriately presented as speculative (C47, C101, C103) but the mechanistic details remain uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Lysosome enlargement in rnst-2 mutants occurs specifically during late embryogenesis (after 2-fold stage) when morphogenesis occurs and cell proliferation ceases, but not during early embryogenesis when cell proliferation and organogenesis occur. This temporal pattern suggests that excessive ribosomes are removed at late embryogenesis to cope with lower protein synthesis demands and high energy requirements for morphogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal observation (C107) is clearly documented (Figure 1\u2014figure supplement 1Q) and is an important finding that suggests developmental regulation of ribosome degradation. However, the interpretation (C108) is speculative\u2014while plausible, there is no direct evidence that ribosome removal is specifically to meet energy demands or reduce protein synthesis capacity. The observation that nucleotide supplementation doesn't rescue single mutants (C109) suggests multiple contributing factors, which is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Maintenance of pyrimidine homeostasis is important for extended lifespan in daf-2(lf) mutants. The pyr-1 mutation significantly shortens daf-2(lf) lifespan, similar to rnst-2, while laat-1 is less effective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lifespan data (C83-C84, Figure 6\u2014figure supplement 1F-I) demonstrate that pyrimidine biosynthesis is important for daf-2 longevity. The differential effects of pyr-1, rnst-2, and laat-1 (C84) support the specificity of the pyrimidine homeostasis requirement. The conclusion (C85) is well-supported by these data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Lysosomal degradation of ribosomes occurs during adulthood and may contribute to longevity. Enlarged lysosomes are present in rnst-2 adults, and rnst-2 reduces lifespan in both wild-type and long-lived mutants. Ribosome turnover may help clear defective ribosomes during aging or contribute to downregulation of protein translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The presence of enlarged lysosomes in adults (C110) and the effects on lifespan (demonstrated earlier) support the conclusion that ribosome degradation occurs during adulthood (C111). However, the specific mechanisms by which this contributes to longevity (C112) are speculative. The conclusion is appropriately cautious but the mechanistic details remain to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "Loss-of-function mutations in human RNASET2 cause familial cystic leukoencephalopathy, a lysosomal storage disease. The findings that loss of rnst-2 affects nucleotide homeostasis and partially impairs autophagy may provide insights into disease pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The statement about human disease (C116) is supported by citations to previous literature. However, the claim that the C. elegans findings provide insights into human disease pathogenesis (C117) is speculative. While the functional conservation demonstrated by rescue experiments suggests relevance, the connection to neuronal disease pathogenesis is indirect and would require additional work to establish. This is appropriately presented as speculative.",
+    "result_type": "MINOR"
+  }
+]

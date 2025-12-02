@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C64",
+      "C68",
+      "C70",
+      "C71",
+      "C74",
+      "C78",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Spot-On is a web-based tool that implements a kinetic modeling framework for analyzing single-particle tracking data. The tool accounts for defocalization bias by explicitly calculating the probability that molecules move out-of-focus, models localization errors, and infers diffusion constants and subpopulation fractions from pooled trajectories using either 2 or 3 state models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C30, C64, C68-C71, C74, C78, and C98-C100 collectively describe the Spot-On tool's functionality, theoretical foundation, and availability. The tool is well-documented with clear descriptions of its modeling approach, bias corrections, and accessibility as open-source software with web interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C5"
+    ],
+    "result": "Spot-On was validated using 3480 experimentally realistic simulations spanning biologically plausible dynamics and outperformed alternative methods (vbSPT and MSDi). Spot-On accurately inferred subpopulation fractions with minimal error (-1.7% bias) and slightly underestimated diffusion constants (-4.8% bias) due to nuclear confinement, which was corrected when confinement was relaxed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C46 and C5 are strongly supported by comprehensive simulation data shown in Figure 3, Table 1, and multiple supplementary figures. The validation includes 3480 simulations with systematic parameter variations, robustness testing, and direct comparisons with alternative methods showing superior performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C67"
+    ],
+    "result": "Stroboscopic photo-activation SPT (spaSPT) minimizes experimental biases by using stroboscopic excitation to reduce motion-blur and photo-activation to minimize tracking errors. PA-JF549 and PA-JF646 dyes with HaloTag labeling achieved signal-to-background ratios >5 with 1 ms excitation pulses, enabling tracking at extremely low densities (\u22641 molecule per nucleus per frame).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C47-C50, and C67 describe the spaSPT method and are supported by experimental data in Figure 4B and citations to prior work establishing the underlying techniques. The method integrates established approaches (stroboscopic excitation, photo-activation) with novel dyes to minimize known biases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C6",
+      "C55"
+    ],
+    "result": "Spot-On was applied to 1064 spaSPT experiments across 60 conditions using four proteins (H2B-Halo, Halo-CTCF, Halo-Sox2, Halo-3xNLS) spanning a wide range of nuclear dynamics. Spot-On consistently inferred diffusion constants and bound fractions across frame rates from 50-200 Hz, with an experimentally determined axial detection range of ~700 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C52, C6, and C55 are supported by extensive experimental data shown in Figure 4G-H and supplementary figures. The large-scale experimental validation (1064 experiments) across diverse proteins and conditions demonstrates consistent parameter inference, validating the tool's robustness on real biological data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C77"
+    ],
+    "result": "All four proteins studied (H2B, CTCF, Sox2, Halo-3xNLS) exhibited apparent anomalous diffusion, yet Spot-On robustly inferred parameters despite modeling Brownian motion. Parameter inference for experimental data of proteins with various degrees of anomalous diffusion was quite robust.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C54, and C77 are supported by MSD analysis in Figure 4\u2014figure supplement 2 and consistent parameter estimates across frame rates in Figure 4G-H. This demonstrates that Spot-On's Brownian motion assumption does not prevent accurate parameter inference for proteins exhibiting anomalous diffusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Motion-blurring significantly affected parameter estimates for fast-diffusing proteins. For Halo-3xNLS and H2B-Halo, motion-blurring caused large underestimates of free diffusion constants and ~2-fold overestimates of bound fractions, while slower proteins (CTCF, Sox2) showed minor effects. Using the MTT-algorithm, motion-blurring caused up to 2-fold errors in both DFREE and FBOUND estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 are supported by experimental data in Figure 4J-K showing systematic effects of excitation pulse duration on parameter estimates. The quantitative assessment of motion-blur bias provides important guidance for experimental design and demonstrates when Spot-On can be reliably used with constant illumination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C2",
+      "C15",
+      "C63"
+    ],
+    "result": "2D SPT of fast-diffusing molecules in 3D cells is subject to multiple biases: motion-blur causes under-counting of fast-diffusing molecules, high particle densities cause tracking errors, and defocalization results in time-dependent under-counting of fast-diffusing molecules as they move out-of-focus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21, C2, C15, and C63 describe known biases in SPT experiments and are supported by citations to prior work, illustrations in Figure 1, and the comprehensive experimental validation throughout the manuscript. These biases are well-established in the field and form the motivation for developing Spot-On and spaSPT.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C79",
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Spot-On has several theoretical limitations: it assumes ideal Brownian motion despite anomalous diffusion in cells, models localization error as static mean error, approximates axial detection as a step function, ignores state transitions (failing when transition timescales are <10-50\u00d7 frame rate), and ignores correlations between adjacent displacements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76, C79-C80, C82-C87 transparently describe model limitations and are supported by experimental data (Figure 4G-H, Figure 4\u2014figure supplement 2) and simulations (Figure 3\u2014figure supplement 10) showing when these limitations affect performance. The authors appropriately acknowledge these constraints while demonstrating the model still performs well in practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "simSPT is a utility developed to simulate diffusing proteins in confined geometry, capable of simulating an arbitrary number of molecular populations characterized by their diffusion coefficients under steady-state assumptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 describe the simulation tool developed for this study. The tool is documented in the methods and its outputs are extensively used throughout the validation (3480 simulations in Figure 3), demonstrating its functionality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Experimental methods included cell culture of Halo-tagged cell lines, single-molecule imaging on a custom Nikon TI microscope with HiLo illumination at 37\u00b0C/5% CO2, spaSPT with 1 ms excitation pulses and photo-activation during camera integration, recording 30,000 frames per cell, and analysis using MTT-algorithm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C94 describe detailed experimental methods that are standard practice and adequately documented. These methodological details enable reproducibility and are supported by the resulting data quality shown throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "All 1064 spaSPT experiments and 3480 simulations are freely available at Zenodo in Spot-On readable formats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is a factual statement about data availability that can be verified through the provided Zenodo links. This represents excellent open science practice enabling reproducibility and reuse.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C31",
+      "C62"
+    ],
+    "result": "SPT has become an important method for observing protein dynamics in live cells and has revealed biological insights about transcription factor binding, chromatin interactions, and target search mechanisms. However, consensus on how to perform and analyze SPT experiments is currently lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C14, C31, and C62 provide background context about SPT and are supported by citations to prior published work and established knowledge in the field. These claims appropriately frame the motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The Spot-On platform can be extended to other diffusion regimes, models, and potentially to 3D SPT data as methods mature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C66 are speculative statements about future extensions of Spot-On. While the modular design may facilitate such extensions, no data is presented demonstrating these capabilities. These represent reasonable future directions rather than current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Uncorrected defocalization results in a 4-fold undercounting of freely-diffusing molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 provides a quantitative example of defocalization bias magnitude based on specific parameters (\u0394\u03c4=10 ms, \u0394z=700 nm, D=5 \u00b5m\u00b2/s, 5 frames with one gap). This is a calculated inference from the model rather than directly measured, but is consistent with the theoretical framework and simulation results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "CDF-fitting is generally most accurate for smaller datasets, while PDF and CDF fitting are similar for large datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by comparison data in Figure 3\u2014figure supplement 9 showing performance differences between PDF and CDF fitting approaches. This provides practical guidance for users on method selection.",
+    "result_type": "MINOR"
+  }
+]

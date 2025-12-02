@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The authors developed a computational model of the thalamo-cortical system composed of cortical (excitatory and inhibitory), thalamic relay (LGN), and reticular (RTN) populations with reciprocal connections and propagation delays. The model uses non-homogeneous Poisson processes for spiking activity and sparse, topographic connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 and C88-C90 describe the model architecture consistently and are supported by the detailed Methods section and Figure 1. The model structure is clearly defined with appropriate citations for connectivity patterns (C90), making this a well-documented methodological result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C15",
+      "C64"
+    ],
+    "result": "Increasing thalamic drive destabilizes endogenous alpha oscillations (8 Hz) throughout the thalamo-cortical loop, causing a transition from synchronous, correlated spiking to irregular, asynchronous activity with increased firing rates and suppressed alpha power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 are consistently supported by simulation data shown in Figures 1-2. The negative correlation between alpha power and firing rate (C29) is validated by experimental citations. The transition from rest to task state is well-characterized across multiple metrics (synchrony, firing rates, alpha power), providing converging evidence for this core finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C57",
+      "C107"
+    ],
+    "result": "The gradual destabilization of alpha oscillations is explained by a noise-induced supercritical Hopf bifurcation, where noise acts as a gain control parameter that linearizes the dynamics by smoothing the non-linear response function of threshold systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 and C57, C107 describe the bifurcation mechanism with appropriate theoretical citations (Horsthemke and Lefever, 1982; Lefebvre et al., 2015; Hutt et al., 2016). The mathematical analysis of the simplified model (Materials and methods) provides formal support for the bifurcation interpretation, making this mechanistic explanation well-grounded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C16",
+      "C17"
+    ],
+    "result": "During the transition from rest to task state with 11 Hz stimulation, spike-rate correlations increase, power at stimulation frequency increases, and the dominant frequency shifts from 8 Hz (endogenous) to 11 Hz (stimulation), indicating enhanced susceptibility to entrainment in the task state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are supported by simulation data in Figure 3A-B showing the state-dependent transition in correlation structure and spectral power. The convergence of multiple metrics (correlations, spectral power, dominant frequency) provides strong evidence for enhanced entrainment during task states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C46",
+      "C47"
+    ],
+    "result": "Phase analysis reveals that in the rest state, network dynamics are not phase-locked to the stimulus (uniform phase distribution), whereas in the task state, cortical neurons show robust entrainment with strong phase locking to 11 Hz stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C46-C47 are directly supported by phase distribution analysis shown in Figure 3E-F. The contrast between uniform phase distribution (rest) and concentrated phase distribution (task) provides clear evidence of state-dependent phase locking. Statistical significance is reported (p < 0.05).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C66",
+      "C11",
+      "C12"
+    ],
+    "result": "Stochastic resonance (SR) is involved in improving cortical susceptibility to entrainment, as state-dependent inputs simultaneously amplify stimulation-induced activity while suppressing endogenous rhythmic activity through SR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C66 are supported by mutual information analysis (Figure 3D) showing a peak at intermediate noise levels, which is the defining characteristic of SR (C11). The experimental link between SR and state-dependent stimulation effects (C12) is supported by multiple citations, strengthening the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C67",
+      "C68"
+    ],
+    "result": "In the rest state, cortical dynamics are governed by internal recurrent fluctuations forming highly stable attractor dynamics. Applied stimulation has weak impact, with ongoing alpha oscillations only slightly perturbed and no cortical entrainment occurring. Arnold tongues are very narrow in this state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45, C67-C68 are consistently supported by simulation data in Figures 4A-B and Figure 6A. The narrow Arnold tongue in rest state (Figure 6A) quantitatively demonstrates limited entrainment, while Figure 4B shows minimal perturbation of alpha oscillations by stimulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C69",
+      "C81"
+    ],
+    "result": "In the task-engaged state, cortical neurons are freed from the intrinsic attractor and show robust entrainment to 11 Hz stimulation, with significantly larger Arnold tongues indicating greater susceptibility to entrainment. The resting state attractor has been destabilized by thalamic drive and increased neural noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48, C69, C81 are supported by simulation data in Figures 4C and 6B showing expanded Arnold tongues and robust entrainment in task state. The mechanistic explanation linking attractor destabilization to increased noise (C48) is supported by appropriate theoretical citations and consistent with the bifurcation analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "In the rest state, stimulation has negligible spectral contribution unless the frequency is close to the endogenous frequency or its harmonics (resonance). In the task state, reduced endogenous power promotes entrainment, and stimulation power increases significantly across a broad frequency range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are directly supported by spectral analysis in Figure 5A-B. The contrast between narrow-band resonance in rest (horizontal line at 8 Hz) versus broad-band entrainment in task (diagonal line) clearly demonstrates state-dependent frequency selectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In the rest state, the peak frequency remains stable at 8 Hz for most stimulation parameters, but a narrow Arnold tongue emerges for higher amplitudes near 8 Hz, with asymmetrical shape due to stimulation-induced frequency shift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by systematic parameter exploration in Figure 6A. The narrow Arnold tongue is clearly visible, and the asymmetry explanation (C54) is supported by citation to Hutt et al., 2016. The quantitative mapping of entrainment regions is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "In the task-engaged state, the Arnold tongue spans a much larger portion of stimulus-parameter space, indicating robust entrainment for weaker stimulation amplitudes. The effect of stimulation on peak power near resonant frequency depends on brain state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by Figure 6B-D showing dramatically expanded Arnold tongues in task state compared to rest. The state-dependent effect on peak power (C56) is quantitatively demonstrated in Figure 6C-D, providing clear evidence for this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C70",
+      "C103"
+    ],
+    "result": "Analysis of a simplified delayed neural oscillator model reveals that limit cycle solutions are entrained by periodic forcing but are highly sensitive to noise intensity. Noise-induced linearization decreases resonant solution amplitude while increasing non-resonant solution amplitude, and thalamic input can control oscillation stability by provoking a bifurcation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60, C70, C103 are supported by mathematical analysis of the simplified model (Materials and methods, Figure 7). The resonance curves (Figure 7B) clearly show the predicted effects of noise on resonant vs. non-resonant solutions. The mathematical derivation of the Hopf bifurcation condition is provided, strengthening this mechanistic result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C18",
+      "C71",
+      "C72"
+    ],
+    "result": "The different responses to stimulation in rest and task states can be explained by a passage through a bifurcation combined with stochastic resonance. The thalamo-cortical loop implements a gain control mechanism regulating alpha oscillation robustness, and internal control over attractor states shapes cortical susceptibility to stimulation and entrainment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C18, C71-C72 represent the main conclusions synthesizing multiple lines of evidence: bifurcation analysis (C31-C33, C57), SR demonstration (C42, C66), and state-dependent entrainment (C16-C17, C34-C38). These conclusions are well-supported by converging computational and mathematical evidence, though they remain model-based predictions requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "The peak alpha frequency changes as a function of thalamic drive between 8 and 8.5 Hz, because thalamic inputs correspond to irregular Poisson noise that alters oscillatory properties of non-linear networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are supported by model simulations (visible in Figures 3C, 5A-B, 6A-B) and validated by citations to both theoretical (Hutt et al., 2016) and experimental (Mierau et al., 2017) studies showing similar frequency shifts. This is a consistent secondary finding across multiple analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C96",
+      "C98",
+      "C99",
+      "C101"
+    ],
+    "result": "The model implements brain states by varying noise intensity to LGN neurons to represent sensory afference changes. Stimulation targets only cortical populations (not subcortical). Thalamo-cortical feedback maintains oscillatory stability with phase-locked dynamics, and noise triggers gain changes that suppress oscillations and promote asynchronous activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94, C96, C98-C99, C101 describe methodological choices and model behaviors that are clearly documented in Methods and supported by simulation results. The choice to stimulate only cortex (C96) is justified by known properties of non-invasive stimulation. Phase differences (C99) are validated by experimental citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Noise suppresses oscillations through Hopf bifurcation via linearization of the response function, a mechanism that also underlies dithering. In neural systems, irregular fluctuations can increase the saliency or fidelity of neural responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 connect the model findings to broader theoretical concepts (dithering, signal processing) with appropriate citations (McDonnell and Abbott, 2009). The linearization mechanism is demonstrated in the simplified model analysis (Figure 7), making this conceptual connection well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Large-scale synchrony may implement a functional inhibition gate that shuts down network coding capacity. The authors hypothesize that alpha oscillations block perturbations of neural activity from both endogenous and exogenous sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C77 is supported by citations to prior theoretical work (Klimesch et al., 2007; Zohary et al., 1994; Greenberg et al., 2008), but C78 is explicitly labeled as a hypothesis by the authors. While consistent with the model findings, this functional interpretation goes beyond what the computational results directly demonstrate and requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The model's prediction of frequency shift to stimulation frequency in task state agrees with tACS experimental findings. Stimulation of cortex must also alter thalamic activity due to network interconnections. Previous detailed thalamic modeling showed faster oscillations are more responsive to stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 connect model predictions to experimental observations. C82 is supported by citation to Helfrich et al., 2014. C83 is a logical inference about network effects. C84 references the authors' prior work, showing consistency across modeling approaches. These connections strengthen the model's relevance to experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C4"
+    ],
+    "result": "The presence of pronounced endogenous oscillations limits stimulation impact on entrainment, which has implications for clinical applications. States of low alpha power represent the ideal state for stimulation application, particularly relevant since reduced alpha frequency is a hallmark of neurological and psychiatric illnesses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 and C4 represent translational conclusions drawn from the modeling results. The basic finding (C85) is well-supported by the entrainment analysis (Figures 4-6). The clinical relevance (C86) is supported by citations to clinical literature. The recommendation for low alpha states (C87, C4) follows logically from the model findings, though clinical validation is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C19",
+      "C20",
+      "C61",
+      "C62",
+      "C63",
+      "C73"
+    ],
+    "result": "Background claims establishing that brain stimulation can modulate rhythmic activity, that stimulation outcomes are state-dependent, that task states show increased susceptibility to stimulation, and that alpha oscillations have important physiological and cognitive functions that can be modulated by periodic stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C10, C19-C20, C61-C63, C73 represent background knowledge and motivation for the study, all supported by appropriate citations to experimental and review literature. These establish the scientific context and justify the research questions addressed by the computational modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C32",
+      "C33",
+      "C102"
+    ],
+    "result": "Background on stochastic resonance, resonance and entrainment mechanisms, Arnold tongues, noise-induced bifurcations, and thalamo-cortical dynamics from prior theoretical and experimental work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14, C32-C33, C102 describe established theoretical concepts and prior findings that form the foundation for the current modeling work. All are supported by appropriate citations to theoretical and experimental literature, providing the necessary background for interpreting the model results.",
+    "result_type": "MINOR"
+  }
+]

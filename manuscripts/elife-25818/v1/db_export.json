@@ -1,0 +1,1615 @@
+{
+  "submission": {
+    "id": "2a7ebfab-1903-49a8-beac-830507465fb6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:24:31.861977Z",
+    "updated_at": "2025-12-01T20:24:31.861977Z"
+  },
+  "content": [
+    {
+      "id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "submission_id": "2a7ebfab-1903-49a8-beac-830507465fb6",
+      "content_type": "manuscript",
+      "content_text": "# Reverse translation of adverse event reports paves the way for de-risking preclinical off-targets\n\n## Authors\n\n- Mateusz Maciejewski<sup>1</sup> ([ORCID: 0000-0003-1147-4941](https://orcid.org/0000-0003-1147-4941)) \u2020\n- Eugen Lounkine<sup>1</sup> ([ORCID: 0000-0002-6487-2946](https://orcid.org/0000-0002-6487-2946))\n- Steven Whitebread<sup>1</sup>\n- Pierre Farmer<sup>2</sup>\n- William DuMouchel<sup>3</sup>\n- Brian K Shoichet<sup>4</sup> \u2020\n- Laszlo Urban<sup>1</sup> ([ORCID: 0000-0002-1275-0293](https://orcid.org/0000-0002-1275-0293)) \u2020\n\n### Affiliations\n\n1. Novartis Institutes for Biomedical Research Cambridge United States\n2. Novartis Institutes for Biomedical Research Basel Switzerland\n3. Oracle Health Sciences Oracle Health Sciences Burlington United States\n4. University of California San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe Food and Drug Administration Adverse Event Reporting System (FAERS) remains the primary source for post-marketing pharmacovigilance. The system is largely un-curated, unstandardized, and lacks a method for linking drugs to the chemical structures of their active ingredients, increasing noise and artefactual trends. To address these problems, we mapped drugs to their ingredients and used natural language processing to classify and correlate drug events. Our analysis exposed key idiosyncrasies in FAERS, for example reports of thalidomide causing a deadly ADR when used against myeloma, a likely result of the disease itself; multiplications of the same report, unjustifiably increasing its importance; correlation of reported ADRs with public events, regulatory announcements, and with publications. Comparing the pharmacological, pharmacokinetic, and clinical ADR profiles of methylphenidate, aripiprazole, and risperidone, and of kinase drugs targeting the VEGF receptor, demonstrates how underlying molecular mechanisms can emerge from ADR co-analysis. The precautions and methods we describe may enable investigators to avoid confounding chemistry-based associations and reporting biases in FAERS, and illustrate how comparative analysis of ADRs can reveal underlying mechanisms.\n\n## Introduction\n\nSafety assessment of drug candidates is crucial for drug discovery, enabling the development of medicines that achieve the desired therapeutic effects with the least risk of adverse side effects. Preclinical regulatory investigations and clinical trials are designed to address safety of drug candidates and eliminate those that do not meet risk-benefit expectations (Cook et al., 2014). However, limited access to large, diverse patient populations in clinical trials, untested drug co-administrations, as often occurs, especially with elderly patients on multiple medications, and development of ADRs associated with chronic treatment, often results in post-marketing labeling and occasional withdrawals (Wysowski and Swartz, 2005; Lasser et al., 2002; Friedman et al., 1999; Downing et al., 2017). Thus, postmarketing pharmacovigilance is essential to track ADRs and ultimately reduce over 1 million serious drug-related side effects that occur each year in the USA. Between 5%\u00a0and\u00a010% of these ADRs are fatal (Lazarou et al., 1998), and many others cause patient suffering, hospitalization, and increased health system burden (Moore et al., 1998). Indeed, the fatality rate attributed to ADRs puts them among the top causes of death in the USA (over 40,000 in 2011), similar to suicide-related mortality (Hoyert and Xu, 2012).\n\nDeterminant tools in post-marketing pharmacovigilance are databases that aggregate ADR reports. Foremost among these is the FDA Adverse Event Reporting System (FAERS), which is perhaps the most extensive, and among the most widely accessible of these databases, currently containing over 8.5 million reports and rapidly growing (U.S. Food and Drug Administration, 2016). FAERS and related databases, such as those of the EMEA and of Health Canada, can provide specific ADR phenotypes typical for either individual drug classes or specific indications and can be accessed either directly (U.S. Food and Drug Administration, 2016) or by APIs (RELX Intellectual Properties SA, 2016; U.S. Food and Drug Administration, 2016). These large-scale adverse event databases enable analysis to relate clinical phenotypes and compounds (Tatonetti et al., 2012), and they have been widely used by the clinical community with much impact (O'Connell et al., 2006; Elashoff et al., 2011; Lawrence et al., 2006; Mackey et al., 2007).\n\nIt is an attractive proposition to exploit the sheer scale of FAERS to detect drug-ADR associations that would otherwise be missed. A challenge in doing so has been the heterogeneous data sources and data conflation in the database.\n\nFAERS, while providing a solid frame for reporting, contains redundancies, biases, and conflations that affect its analysis and interpretation (McAdams et al., 2008). Our ability to even correlate drugs with their effects is obscured by something as simple as the tangle of drug synonyms in FAERS - on average 16 different names for medicines containing each active drug ingredient - which can obscure associations.\n\nHere, we investigate the effects that these data conflations, inflations, and inaccuracies can have on ADR and mechanistic inference from FAERS, and methods to address them. We begin by mapping drug identifiers in FAERS to normalized chemical structures of their ingredients, which brings together observations over the \u2018full drug\u2019, not just particular drug names and synonyms, which remain incomplete. Mapped to unique chemical structures, we could compute time-resolved profiles of drug-ADR associations, which revealed intriguing comorbidities and similarities of ADRs between drugs, and of their time evolution. We then turned to the origins of and controls for reporting biases in FAERS, considering stimulated reporting and the several different, often non-medical communities that can contribute to FAERS. This was facilitated by a time-evolution analysis of ADR reports, and its correlation with contemporary news events. We illustrate how these biases can ramify with in-depth analysis of FAERS content on two COX-2 inhibitors, rofecoxib and celecoxib, and with two PPAR-\u03b3 agonists, rosiglitazone and pioglitazone. As examples of how these analyses can link ADRs to specific targets, we consider the differential ADR profiles of drugs used for the treatment of attention deficit hyperactivity disorder (ADHD), and how their distinct ADRs may be explained partly by molecular targets - a logic that is often used - combined with pharmacokinetic exposure - which is often overlooked. Similarly, we investigate the differentiation of the hypertensive side effects of VEGF-Receptor (VEGF-R2) inhibitors based on their potency and pharmacokinetic (PK) profiles. The precautions and methods we describe, may enable investigators to use FAERS with increased confidence and avoid confounding chemistry-based associations and reporting biases. This study also illustrates how comparative analysis of ADRs can reveal underlying mechanisms and highlight the reverse translation value in the drug discovery process.\n\n## Results\n\n### Analysis of content: unexpected trends in FAERS reporting\n\nThe FAERS database holds over 8.5 million reports and is steadily growing (over 1,320,000 reports added in 2015; Figure 1A. We extracted 8,749,375 FAERS reports, mapped to 7,095,566 individual cases. Often a patient\u2019s condition is monitored over a span of multiple reports, which must be considered when investigating the incidence of a particular drug-ADR association (U.S. Food and Drug Administration, 2016).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/25818/elife-25818-fig1-v1.jpg)\n\n**Figure 1.:** (A) The cumulative number of reports in FAERS is shown in the top panel; the bottom panel shows the number of new reports per quarter. (B) Distribution of reporter identities. Data are based on reports submitted between Q2 2002 (identification of reporting individuals started at this time) and Q4 2015. (C) Distribution of reports by the 7 ADR outcomes defined in FAERS.\n\nInflation of reports by multiplication can increase the apparent significance of a drug \u2013 adverse effect association, particularly when the total number of reports is low. To systematically identify the most similar cases, we compared all pairs of reports using demographic and prescription data. Almost 1% of the reports in FAERS (61,780 cases) represent multiple entry cases with identical drugs, identical ADRs, event dates, patient age and gender (Supplementary file 1). Intriguingly, only half of the reports in FAERS were submitted by healthcare professionals (Figure 1B). Over one-third of them (3.2 million) were initiated by the patients themselves and 9% were labeled \u2018non-specified\u2019. Lawyers reported 3% of all FAERS cases (Figure 1B).\n\nFAERS uses seven descriptors of report outcomes: \u2018Death\u2019, \u2018Life-Threatening\u2019, \u2018Disability\u2019, \u2018Congenital Anomaly\u2019, \u2018Required Intervention to Prevent Permanent Impairment/Damage\u2019, \u2018Hospitalization \u2013 Initial or Prolonged\u2019, and \u2018Other\u2019. Among these, only \u2018Other\u2019 is used to report relatively benign outcomes. Unexpectedly, only around 40% of the outcomes were identified as \u2018benign\u2019, whereas almost 15% of reported cases result in death (Figure 1C). It is a feature of reporting in an open submission database like FAERS that this ratio does not reflect the true balance between fatal and relatively benign drug ADRs, but rather the ratio of the ADRs that are thought to merit reporting.\n\nAmong the 945,526 reports where death is the outcome of the ADR, 42,526 were linked to cardiac arrest and 50,155 to suicide. Top molecular ingredients of drugs that were primary suspects in death reports were rosiglitazone: 17,165 (indication type II diabetes), rofecoxib: 11,386 (primary indications: arthritis, pain; withdrawn from the clinic), reteplase: 11,386 (indication of acute myocardial infarction (MI)), and thalidomide: 17,104 (indication of myeloma multiplex; additionally, 26,429 cases of death have been attributed to lenalidomide, a derivative of thalidomide also prescribed for myeloma). For drugs like rofecoxib or rosiglitazone, which are prescribed for manageable and non-life threatening diseases, the inference that the ADR has led to death can be reasonably made. Similarly, a comparison of celecoxib (reported number of deaths: 4,066; Standardized Mortality Ratio [SMR] [Everitt and Skrondal, 2010]: 1.3) and rofecoxib, which are prescribed for the same indication, highlights the significantly higher SMR of patients taking the latter drug (SMR: 5) (Rostom et al., 2007). However, the attribution of death as an ADR of thalidomide when it is used to treat myeloma multiplex, a life-threatening, malignant disease (Singhal et al., 1999) may be hard to support; it seems likely that the \u2018ADR\u2019 here reflects the cancer that the drug is meant to treat. Similarly, the acute myocardial infarction that reteplase is used to treat (Wooster and Luzier, 1999) may well be the cause of many of the death ADRs with which the drug is tarred, not the drug itself. When a drug is used to treat a life-threatening disease, care is warranted in interpreting death as an ADR of that drug.\n\n### Mapping drugs to their molecular ingredients improves signal retrieval\n\nIn most FAERS studies, drugs are identified using RxNorm (Wang et al., 2013; Nelson et al., 2011), a set of drug synonyms supplied by the National Library of Medicine. This mapping is sufficient for the questions that may be asked of FAERS by a clinical professional, such as the safety signals for a particular drug formulation. However, products that have different identities in resources such as RxNorm share common molecular ingredients and are highly similar in their activities on molecular targets. To investigate the ADRs associated with fluoxetine, for instance, one must aggregate its 378 different synonyms. Without such aggregation, well-known fluoxetine side effects such as sexual dysfunction become statistically insignificant (four cases when only the fluoxetine drug synonym Prozac is considered; Relative Reporting Ratio [RRR]\u00a0=\u00a01.75; q-value\u00a0=\u00a01), whereas once aggregated, these ADRs stand out clearly (87 cases; RRR\u00a0=\u00a06.67; q-value\u00a0=\u00a02.56\u00b710\u221296). Conversely, in its non-aggregated form, Prozac appears to have statistical significant associations with sex chromosome abnormality (one case; RRR\u00a0=\u00a02.96; q-value\u00a0=\u00a02\u00b710\u22123). Aggregated, however, this association becomes insignificant (one case; RRR\u00a0=\u00a02.78; q-value\u00a0=\u00a01). For those interested in the molecular basis of drug actions and side effects, a simple way to interrogate the drugs as molecules is critical.\n\nAccordingly, we mapped the active drug ingredients in over 98% of the reports using a combination of natural language processing and multiple databases of synonyms (see Materials\u00a0and\u00a0methods). Not only does this value compare favorably to the 81% recognition achieved using only the synonyms alone in RxNorm, but it allowed us to look for associations drawing on standard cheminformatics-based searches. Surprisingly, of the 2729 unique ingredients identified, only 1892 were annotated as a primary suspect in at least one report; said a different way, 837 active drug ingredients had no reported ADRs whatsoever. A plot of the ingredients that were associated with ADRs shows that an exponentially decaying distribution, with 90% of the ADRs attributed to 40% of the drug ingredients (Figure 2). After correction of distribution for ADRs with q-values better than 0.05, 90% may be attributed to 46% of the investigated drugs. This ingredient mapping was used throughout subsequent analyses (see Materials and methods and Supplementary Material).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/25818/elife-25818-fig2-v1.jpg)\n\n**Figure 2.:** (A) All observed ingredient \u2013 ADR pairs. (B) Pairs observed below the q-value cutoff of 0.05.\n\nAs expected, mapping drugs to their active ingredients, and not simply relying on synonym aggregation, reinforced the strength of the drug-ADR signals. For example, the non-steroidal anti-inflammatory drug (NSAID) indomethacin is used to treat chronic pain and fever (MedicinesComplete, 2014). When we assessed indomethacin as an ingredient, a strong signal linked it with gastric ulcer (RRR\u00a0=\u00a010.40; q-value\u00a0=\u00a03.65\u00b710\u221272), and gastric ulcer hemorrhage (RRR\u00a0=\u00a07.99; q-value\u00a0=\u00a06.78\u00b710\u221218). These adverse events are known from the labels of indomethacin-containing drugs, also confirmed in World Drug Index (WDI) (Thomson Scientific, 2016). However, when we searched the trade names of the drugs in which indomethacin is used (RxNorm synonym matching), these signals were dissipated in the noise: the strongest signal for gastric ulcer decreased to RRR\u00a0=\u00a01.79, q-value\u00a0=\u00a01.00; the strongest signal for gastric ulcer hemorrhage dropped to RRR\u00a0=\u00a02.42, q-value\u00a0=\u00a01.00.\n\n### Bias in ADR reporting by indication, changes in regulatory, clinical, social and legal environment\n\nSometimes, ADRs are conflated with indications, and vice versa. An example is a report of rosiglitazone being prescribed for type two diabetes mellitus, with the ADR in the report being also diabetes mellitus (Table 1). In another report, rosiglitazone was identified as the primary suspect for congestive heart failure, as well as a therapeutic agent that was prescribed for the very same condition (Table 1). We quantified this indication bias both globally and over time. Approximately 5% of all reports for any drug describe the drug\u2019s indication as an adverse event. The number of reports in which the same ADR and indication was reported increased linearly with the increasing number of yearly reports until 2011, followed by a sudden drop (Figure 3). We could trace an FDA advisory \u2018refresher\u2019 presentation on guidelines of ADR reporting for clinical trials to an effective date of March 28, 2011\u00a0(Devine, 2016). This document provides clear instructions for submitters to distinguish between pre-existing conditions and ADRs and indeed may have had a significant effect on reporting quality.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/25818/elife-25818-fig3-v1.jpg)\n\n**Figure 3.:** (A) Total number of reports in a given year where the same indication and ADR were reported.\u00a0(B) Number of reports in a given year where diabetes was stated as the adverse reaction caused by rosiglitazone.\n\n**Table 1.**\n Confusion of ADRs with indications. Report and case numbers identify two FAERS reports where the ADR is confused with the indication.For the first case, rosiglitazone prescribed for diabetes (Indication) is identified as the primary suspect (PS) for causing diabetes mellitus as an ADR as well. In the second case, \u2018cardiac failure congestive\u2019 is given as the indication for rosiglitazone with the reported ADR of \u2018cardiac failure congestive\u2019. The third case exemplifies correct reporting, where both the ADR and the indication of rosiglitazone are reported correctly.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Report</th>\n      <th>Case</th>\n      <th>ADR</th>\n      <th>Drug / Role / Indication</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>6545021</td>\n      <td>179039</td>\n      <td>Diabetes mellitus</td>\n      <td>Rosiglitazone/PS/Diabetes mellitus</td>\n    </tr>\n    <tr>\n      <td>5521616</td>\n      <td>162007</td>\n      <td>Cardiac failure congestive</td>\n      <td>Rosiglitazone/PS/Cardiac failure congestive</td>\n    </tr>\n    <tr>\n      <td>6380841</td>\n      <td>7085373</td>\n      <td>Cardiac failure congestive</td>\n      <td>Rosiglitazone/PS/Diabetes mellitus</td>\n    </tr>\n  </tbody>\n</table>\n\nWe took a closer look at the reports of rosiglitazone, where occurrence of diabetes as a side effect was attributed to the usage of this drug relatively frequently until 2004 (this obviously erroneous association is significant if considered in the reporting window of rosiglitazone (until 2011), with an RRR\u00a0=\u00a01.57 and a q-value\u00a0<10\u22125). After 2004, this association decreased, as did the overall prescriptions and reporting of this drug, owing to its widely-reported cardiovascular side effects (Mannucci et al., 2010; Nissen and Wolski, 2007). In general, a simple comparison of indications and reported ADRs reduces the bias of verbatim repetition.\n\nWe applied these methods to investigate how reports for individual drugs change over time. In particular, we monitored the total number of reports filed and the incidence of adverse events preferentially reported at different time points. When reports are sorted by event dates in FAERS, \u2018spikes\u2019 occur on the first day of each month, and even larger spikes on the first day of each year. Importantly, drug-serious ADR signals show a time-dependent increase (see Figures\u00a04A, 5A, 6A, and Figure 7A). The changes in drug-ADR associations over time can, of course, reflect new populations to which the drug is exposed.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/25818/elife-25818-fig4-v1.jpg)\n\n**Figure 4.:** (A) Number of reports (per day) where rofecoxib was reported as primary suspect. Red dots represent events with a major impact on the FAERS reporting pattern of rofecoxib. (B) Relative percent participation of all \u2018preferred term\u2019 (PT)-level ADRs observed for rofecoxib. Each ADR is represented by a separate color. Characteristic time periods on the timeline of this drug are demarked by lines (associated with definitive events), and numbered. Monthly ADR fractions shown here are also reported in Supplementary file 1. (C) Identities of those reporting rofecoxib ADRs at the various reporting periods, marked to correspond with the Roman\u00a0numeral\u00a0annotations in panel B. (D) Enrichment-based clusters of ADRs (cerebrovascular accident and myocardial infarction) observed in rofecoxib reports between 1997 and 2006.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/25818/elife-25818-fig5-v1.jpg)\n\n**Figure 5.:** (A) Number of FAERS reports (per day) where celecoxib was reported as primary suspect. (B) Relative percent participation of all PT-level ADRs observed for celecoxib. Each ADR is represented by a separate color. Characteristic time periods on the timeline of this drug are marked by lines, and numbered. Monthly ADR fractions shown here are also reported in Supplementary file 1. (C) Per-month number of reports where celecoxib was primary suspect; each line corresponds to a separate PT-level ADR. The top plot describes all reports with celecoxib as primary suspect. In the plot on the bottom the reports in which rofecoxib was also present were omitted. Colors are matched with those used in panel B. (D) Enrichment-based clusters of most frequently reported ADRs (cerebrovascular accident and myocardial infarction) observed in ccoxib reports. Colors match those in B and C. Note, that this plot will not exactly correspond to panel B, because enrichments presented here show the ratio of the number of observed events in a given year compared to what one would expect at random, while the traces in B show a proportion of a given ADR compared to other ADRs during a given period of time. (E) Identities of those reporting celecoxib ADRs at various reporting periods, marked to correspond with the\u00a0Roman\u00a0numeral annotations in panel B.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/25818/elife-25818-fig6-v1.jpg)\n\n**Figure 6.:** (A) Number of FAERS reports (per day) where rosiglitazone was reported as primary suspect. (B) Per-month percent participation of all PT-level ADRs observed for rosiglitazone. Each ADR is represented by a separate color. Characteristic time periods on the timeline of this drug are demarked by lines, and numbered. Monthly ADR fractions shown here are also reported in Supplementary file 1. (C) Identities of those reporting rosiglitazone ADRs at various reporting periods, marked to correspond with the\u00a0Roman\u00a0numeral annotations in panel B. (D) Enrichment-based clusters of ADRs observed in rosiglitazone reports.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/25818/elife-25818-fig7-v1.jpg)\n\n**Figure 7.:** (A) Number of FAERS reports (per day) where pioglitazone was reported as primary suspect. (B) Per-month percent participation of all PT-level ADRs was\u00a0observed for pioglitazone. Each ADR is represented by a separate color. Characteristic time periods on the timeline of this drug are marked by lines and numbered. The monthly ADR fractions shown here are also reported in Supplementary file 1. (C) Per-month number of reports where pioglitazone was primary suspect; each line corresponds to a separate PT-level ADR. The plot on the top of the panel shows number of times individual ADRs have been reported, and the bottom the corresponding per-month enrichments. The traces for cardiac failure have been distinguished by the blue color. (D) Enrichment-based clusters of cancer-related ADRs observed in pioglitazone reports. (E) Identities of those reporting pioglitazone ADRs at various reporting periods, marked to correspond with the\u00a0Roman\u00a0numeral annotations in panel B.\u00a0(F) Structure of rosiglitazone and pioglitazone.\n\nWe assessed the time evolution of reports of rofecoxib, a nonsteroidal anti-inflammatory drug (NSAID) that relieves pain through COX-2 inhibition (Figure 4). Several important events occurred over the clinical life of rofecoxib since its approval by the FDA in 1999: (1) A clinical study by Bombardier et al. published in November 2000 concluded that rofecoxib increased the risk of cardiovascular events (Bombardier et al., 2000). (2) Introduction of warnings for cardiovascular events on the labels of Vioxx (a brand name of rofecoxib) in April 2002. (3) Withdrawal of rofecoxib from the market on September 30th\u00a02004.\n\nMyocardial infarction (RRR\u00a0=\u00a017.85; q-value\u00a0<10\u22125) and cerebrovascular accident (RRR\u00a0=\u00a017.69; q-value\u00a0<10\u22125) accounted for a large proportion of the ADRs reported for rofecoxib from its introduction in 1999 (Figure 4B and D). Before the study by Bombardier\u00a0et al.\u00a0(2000), most reports were filed by physicians. Between the Bombardier publication and the introduction of the label warning, these physician reports remained constant, while the number of reports by lawyers grew substantially. After the introduction of the label warning, the number of reports from physicians slightly decreased, but the trend to attribute myocardial infarction and cerebrovascular accident to administration of rofecoxib was further cemented by submitters who identified themselves as lawyers (see Figure 4C).\n\nWe also inspected the time evolution of another COX-2 inhibiting NSAID, celecoxib, approved by the FDA in December 1998, just shortly before Vioxx (Figure 5). Inspection of the timeline of celecoxib reports shows a slight increase in the number of reports around September 2004, reflecting the increase in use associated with the withdrawal of rofecoxib (Figure 5A). Until December 2004, the pattern of ADR in celecoxib reports is dominated by cerebrovascular accident (per-month RRR up to\u00a0~35) and myocardial infarction (per-month RRR up to\u00a0~45) in a similar fashion as in rofecoxib reports (Figure 5B and Figure 5D). The increase of the overall number of reports around September 2004 coincided with concerns about the safety of celecoxib, likely reflecting a report of increased risk of cardiovascular events in patients who used celecoxib systematically over prolonged periods of time (Solomon et al., 2005). We checked whether the trends in reporting of side effects of celecoxib was affected by co-administration of rofecoxib, but the distribution of ADRs was almost identical after excluding the 8% of reports in which rofecoxib was present as a concomitant drug (Figure 5C). Closer examination of this pattern revealed that the reports during this period of time were largely submitted by lawyers and \u2018unidentified\u2019 individuals, while the contribution of health professionals remained steady much below the level of reports for rofecoxib (Figure 5E). These trends were confirmed by logistic regression modeling (see Materials and methods and Supplementary file 2), which showed that reports of myocardial infarction were significantly correlated with reports of celecoxib filed by lawyers before 2005 (Model four in Supplementary file 2). We also considered the Pfizer moratorium on direct-to-consumer advertising in 2004 as a significant event on sales and consequently ADR reporting (Consumers Union and Consumer Reports Best Buy Drugs, 2005). After the Vioxx case, the FDA issued new labeling for not just COX-2 selective but for all NSAIDs which set new safety standards for the anti-inflammatory arena (U.S. Food and Drug Administration, 2016). While Vioxx was removed from the clinic, Celebrex enjoyed a revival after 2004, in particular as the only COX-2 selective NSAID in the clinic and because of the updated labels for other NSAIDs. Pfizer resumed careful advertising with clear reference to side effects that helped the recovery of clinical celecoxib use. While we examined these stimulating effects, we also recognized that the sales volume was likely to grow but we were not able to determine the volume because of coincidental price increase interference (Schondelmeyer and Purvis, 2014). This case clearly demonstrates the complexity of the performance of drugs in the post-marketing environment where ADR reporting could be significantly modified by multiple factors, including regulatory and social aspects.\n\n### Drugs with similar chemical structure and modes of action may display distinct clinical ADR phenotypes\n\nIt is generally expected that compounds with similar structures and modes of action will have similar ADR profiles; for instance, several selective serotonin reuptake inhibitors (SSRIs) are associated with suicidal behavior in young adults (U.S. Food and Drug Administration, 2016; Muller et al., 2015). However, this is not always the case. The post-marketing ADR reports of the structural analogs rosiglitazone (Greene, 1999) and pioglitazone, which act on the same primary target peroxisome proliferator activated receptor \u03b3 (PPAR-\u03b3) and are structurally related, are notably different (compare Figures 6B and 7B).\n\nFor rosiglitazone, many heart-related reports have been filed since its FDA approval in May 1999 (Figure 6A, Figure 6B). Whereas the absolute number of reports have varied over time, and has been affected by the clinical trial and scientific reports in much the same way as rofecoxib, the predominance of heart effects, such as congestive cardiac failure (RRR\u00a0=\u00a031.99; q-value\u00a0<10\u22125), coronary artery disease (RRR\u00a0=\u00a026.32; q-value\u00a0<10\u22125), cerebrovascular accident (RRR\u00a0=\u00a011.72; q-value\u00a0<10\u22125), and myocardial infarction (RRR\u00a0=\u00a020.73; q-value\u00a0<10\u22125), relative to other events, has been unperturbed throughout the lifetime of this drug (Figure 6B and D).\n\nThe other hypoglycemic drug, pioglitazone, has triggered fewer reports of heart effects relative to the clinical ADR profile of rosiglitazone since its approval in July 1999 (Figure 7A). Although analysis of FAERS reports does support a statistically significant signal between pioglitazone and cardiac failure (RRR\u00a0=\u00a05.09; q-value\u00a0<10\u22125), the time evolution of this signal reveals that the major contribution to its statistical strength comes from a single peak that subsides by the year 2002, and coincides with the increased scrutiny of rosiglitazone (Figure 7C). Unlike rosiglitazone, the ADR landscape of pioglitazone is dominated by bladder cancer (RRR\u00a0=\u00a0305.69; q-value\u00a0<10\u22125), with a substantial increase in reports from 2009 onward (Figure 7B). Conversely, this signal is significantly underrepresented in the rosiglitazone reports (RRR\u00a0=\u00a00.12; q-value\u00a0<10\u22125). There is evidence that non-selective PPAR agonists (\u03b1 + \u03b3) such as pioglitazone could contribute to carcinogenesis (Oleksiewicz et al., 2008; Piccinni et al., 2011), and a recent study linked bladder cancer to the development of chronic kidney disease as an effect of long-term use of pioglitazone (Lee et al., 2014). This observation was not confirmed with short-term use of pioglitazone (Lewis et al., 2011), and it is important to note that the increase in incidence of bladder cancer is linked to pioglitazone treatment that is ongoing for more than 2 years. Aside from the scientific evidence, it is clear from the submitter population (mostly lawyers and consumers; see Figure 7) that bladder cancer reporting has a significant stimulated component in FAERS. As there is no clear etiology for the high incidence of this ADR, further investigation is needed to explore the effect of concomitant therapies such as glucocorticoids which might influence the side effect profile of pioglitazone. Still, the mechanisms linking the less selective pioglitazone but not the selective PPAR-\u03b3 agonist rosiglitazone to bladder cancer are unclear, and this association must remain tentative.\n\n### Using monthly report counts to de-bias stimulated reporting\n\nThe trends and biases in ADR reporting can hamper the division and reliability of drug-ADR associations. The statistically significant association that we found between pioglitazone and cardiac failure stems mostly from the reports from before 2004, which may reflect the popular view that hypoglycemic thiazolidinediones cause cardiovascular side effects (Nissen and Wolski, 2007). Whereas we cannot discount that this reflects genuine events, a time-resolved statistical analysis tilts against this. In a month-resolved statistical analysis of the significance of the pioglitazone \u2013 cardiac failure association, most dates indicated that there was no statistically significant association between this drug-ADR pair (top panel in Figure 8). Conversely, the association of rosiglitazone and myocardial infarction was statistically significant in nearly every time period (bottom panel in Figure 8). The periods where the pioglitazone - cardiac failure association is statistically significant are restricted to a couple of sparse spikes (Figure 8), and so we suggest this association to be stimulated, and most likely artefactual. Such month-resolved statistical analysis for drug-ADR associations may be broadly helpful in detecting biased reporting trends. Continuing observation of changes in reporting patterns and correlative studies can reveal further aspects of the potential discrepancies between the clinical profiles of structurally similar drugs. Published data on the favorable effects of pioglitazone on lipids, primarily on triglycerides, over rosiglitazone also supports our observations (Nissen and Wolski, 2007; Goldberg et al., 2005; Lincoff et al., 2007).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/25818/elife-25818-fig8-v1.jpg)\n\n**Figure 8.:** The horizontal line demarks the critical q-value cutoff of 0.05, below which the association becomes statistically significant. On dates when the association crosses this threshold, its q-value is indicated by a filled circle; otherwise, it is indicated by an empty circle. The extreme q-values below 1\u00b710\u2212300 are not shown.\n\n### Combining pharmacokinetics and FAERS to investigate mechanism and for reverse translation\n\nThere is a\u00a0great interest in using pharmacovigilance for target identification and to illuminate therapeutic and ADR mechanism of action (Muller et al., 2015; Nguyen and Lewis, 2014; Rothman et al., 2000; Shively et al., 1999; Urban et al., 2014). By matching to in vitro activity, one may hope to associate an ADR that emerges in FAERS with the targets responsible for the physiology, making the linkage: drug \u2192 known target \u2192 ADR. Whereas we ourselves have championed the role of in vitro pharmacology for anticipating possible toxicology (Lounkine et al., 2012; Bowes et al., 2012; Bender et al., 2007), doing this reliably depends on knowing the exposure of the drug to the implicated target. Without considering drug pharmacokinetics, FAERS-based inference of drug \u2192 target \u2192 ADR associations can mislead (Muller and Milton, 2012).\n\nAn illustrative example is the hypertension associated with inhibition of the vascular endothelial growth factor or its receptor (VEGF, VEGF-R2; see Materials and methods). The relevance of such inhibition to hypertension is supported by the high-incidence of this ADR with the VEGF-R2-specific humanized antibody, bevacizumab (Figure 9B) (Zhu et al., 2007). Correspondingly, several small molecule kinase inhibitors that inhibit VEGF-R2 with relevant in vivo pharmacokinetics (Figure 9B) also share the hypertension side effect. However, other kinase inhibitors with VEGF-R2 inhibition do not appear to increase reports of hypertension (Figure 9). High incidence is reported only with those drugs in this class that have exposure margins (EM) less than 13 for this target (biochemical IC50/Cmax; Figure 9). We considered several caveats in this analysis: (1) human exposures could range 5\u201310 fold, (2) many of the clinically approved kinase inhibitors are promiscuous with a few targets which might affect blood pressure, and (3) in some instances, the clinical sample size is relatively small. While all these factors could influence the incidence of hypertension associated with VEGF-R inhibition, it is possible to recommend an exposure margin around 10 for clinical candidates in preclinical development to avoid this side effect in the clinic (Figure 9A). Thus, using such an EM cutoff in the FAERS analysis, the signal for this ADR over random will separate drugs with true adverse event from those that lack it (Figure 9).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/25818/elife-25818-fig9-v1.jpg)\n\n**Figure 9.:** (A) Suggested exposure margin for marketed VEGF-R inhibitors based on post-marketing incidence of hypertension in correlation with plasma exposure (VEGF-R IC50/free Cmax). The proposed 10 times margin represents clear separation of VEGF-R inhibitors with and without significant increase in hypertension with the only exception of nintedanib. (B) FAERS reports of small molecule kinase inhibitors with VEGF-R2 inhibition show an increased incidence of hypertension reports only in case their exposure margin is less than 13. The label of drugs with high incidence of hypertension in FAERS lists this side effect, while none of those drugs that have low incidence carry the label. *p-value of association between drug and hypertension\u00a0<0.001. Counts (N), expected counts (E), and an often-used disproportionality measure (EB05) based on the FDA\u2019s FAERS database of spontaneous reports of suspected drug adverse drug reactions are provided. The values of E are the expected number of patients reporting vascular hypertensive disorder after taking each drug if the drug reports and the reports of the event were independent within the database, conditional on the patients age and gender. The ratio N/E is a measure of disproportionality of report counts of each particular drug-event combination. The value EB05 (empirical Bayes 5% lower bound of a 90% credible interval) is a conservative estimate of the true reporting disproportionality that uses estimated overall prevalence of drug-ADR associations throughout the database. The value of EB05 is less than N/E and has the effect of correcting the simple ratio for sampling variance and multiple comparisons bias. See literature\u00a0(DuMouchel, 1999;\u00a0DuMouchel and Pregibon, 2001;\u00a0Szarfman et al., 2002;\u00a0Almenoff et al., 2007) for details and discussion of the FAERS database and the use of disproportionality analyses within spontaneous report databases. The values of EB05 for the first three drugs indicate 95% confidence that reports of those three drug-event combinations are reported about three or four times as often as would be expected if they were independent, while the values of EB05\u00a0<1 in the final three drugs in the table indicate no evidence for higher than expected reporting rates. More detailed results from Bayesian analysis are available in Supplementary file 3. \u2020Significant increase.\n\nA more complex case emerges through the investigation of methylphenidate and the atypical antipsychotics, risperidone/paliperidone\u00a0(Corena-McLeod, 2015) and aripiprazole, drugs prescribed for the treatment of attention deficit hyperactivity disorder (ADHD)\u00a0(Correia Filho et al., 2005; Ercan et al., 2012;\u00a0Fern\u00e1ndez-Mayoralas et al., 2012). FAERS analysis indicates that treatment with risperidone/paliperidone, the latter of which is the main active metabolite of risperidone, increases the frequency of gynecomastia and galactorrhea, while methylphenidate has a low incidence of these ADRs, as do other atypical antipsychotics, such as aripiprazole (Figure 10) (RELX Intellectual Properties SA, 2016). For example, between 2007 and 2013, there were 5073 and 123 cases in FAERS,\u00a0respectively, where risperidone and paliperidone are the primary suspect of gynecomastia (Figure 10, RRR\u00a0=\u00a0113.82, q-value\u00a0<10\u22125; RRR\u00a0=\u00a07.53, q-value\u00a0<10\u22125). For aripiprazole (RRR\u00a0=\u00a00.85) and methylphenidate (RRR\u00a0=\u00a01.39), however, the q-values were close to 1, indicating no significant associations with this ADR (Figure 10B). Thus, the FAERS data clearly separates the profile of risperidone/paliperidone from both methylphenidate, with which it overlaps for treatment of ADHD, and from other atypical antipsychotics, like aripiprazole. The inference would be that the target responsible for the gynecomastia and galactorrhea for risperidone/paliperidone is not modulated by either methylphenidate or any other atypical antipsychotics. Although this is correct for methylphenidate, it is incorrect for the atypical antipsychotics. The clinical profile of atypical antipsychotic drugs depends on their pattern of engagement with central\u00a0nervous\u00a0system targets largely receptors and transporters\u00a0(Richelson, 1996).\n\n![Figure 10.](https://cdn.elifesciences.org/articles/25818/elife-25818-fig10-v1.jpg)\n\n**Figure 10.:** (A) FAERS analysis of the reporting pattern of gynecomastia in patients treated with risperidone between 2002\u20132015. (B) Summary table of the in vitro pharmacological profile, FAERS entries (total number of reports, and reports of gynecomastia, hyperprolactinemia and cardiac valve disease where the listed drugs were the primary suspects) and calculation of exposure margin of aripiprazole, risperidone/paliperidone and methylphenidate. The prominent effects of risperidone/paliperidone at the D2 dopamine receptor in conjunction of the narrow TI differentiates these compound(s) from the rest. Assays were performed at the Novartis Institutes for BioMedical Research, Cambridge. *Asterisks denote functional assays. ant: antagonism.\n\nBoth aripiprazole and risperidone/paliperidone are atypical antipsychotics with high affinity to dopaminergic, serotonergic, adrenergic, and histaminergic receptors (Figure 10B [Lounkine et al., 2012;\u00a0Roth et al., 2000]). It is well established that inhibition of the D2 dopamine but not 5-HT2C receptors are linked to hyperprolactinemia, which is the underlying mechanism of gynecomastia and galactorrhea (Calarge et al., 2009; Alladi et al., 2017). Regardless of their similar potency at the D2 dopamine receptor the difference between the ADR profile of aripiprazole and risperidone/paliperidone is explained by their mechanism of action (risperidone is a full antagonist and aripiprazole is a partial agonist) and particularly by their PK profile, which reveals that the exposure margin (EM [Muller and Milton, 2012]) for D2 is large for aripiprazole and so this ADR did not manifest. For risperidone, the EM is less than one which explains the high incidence of gynecomastia (Figure 10). Methylphenidate does not affect the D2 receptor at all, and accordingly this ADR was not observed.\n\nWhile paliperidone is known to cause hyperprolactinemia (Bostwick et al., 2009) which is confirmed by the FAERS data, it remains to be explained why it has a significantly lower reporting rate than its parent, risperidone, with similar activity at the D2 receptor\u00a0(Arakawa et al., 2008).\n\n## Discussion\n\nFour key observations emerge from this study. First, much of the potential signal in FAERS and related databases is obscured by chemical name redundancy. This introduces false associations that would fall to insignificance on synonym aggregation, and this hides associations that would be significant on aggregation. This may be addressed by representing active ingredients by their unique chemical structures in a readily searchable form as we do here (Supplementary file 1). Second, FAERS reports tilt toward serious outcomes, partly owing to a confusion of ADRs and outcomes. Third, FAERS suffers from several forms of conflation: multiple entries, indications with ADRs, newsworthiness, and scientific and legal influences. These may be detected by statistical analyses, including comparing reports over time. Fourth, and perhaps more generatively, once these biases and conflations are corrected, the molecular mechanism of previously hidden ADRs can be revealed; an example explored here is the association of urinary bladder cancer with mixed PPAR-\u03b1 and PPAR-\u03b3 agonists.\n\nA major reason for FAERS\u2019s bias toward serious outcomes is the conflation of ADRs and outcomes. This may stem from an issue as simple as confusion on whether \u2018death\u2019 is listed as an ADR \u2013 associated with the drug only \u2013 or an outcome \u2013 associated with the disease itself. This is the case with the attribution of the side effect \u2018death\u2019 to thalidomide\u2019s use in complex myeloma multiplex, when this reflects the high mortality rate of the disease itself (Greene, 1999). Naturally, there are some cases where use of a drug can increase death rate, even in treating life-threatening diseases, such as the case of milrinone for acute heart failure syndromes (AHFS)\u00a0(Bayram et al., 2005) or severe chronic heart failure (Packer et al., 1991). Matters can be improved when a drug is used in different indications with distinct symptoms and outcomes, enabling differentiation between disease- and drug-related outcomes. FAERS could be further developed to automatically alert the investigator to common indication biases, such as high death rate in malignancies, or baseline metabolic anomalies in diabetes. Careful statistical analysis is needed in these cases to differentiate between the outcomes associated with the disease or with the suspect drug. For now the category \u2018outcome\u2019 should be used cautiously for ADR analysis, especially in large-scale studies that aggregate data from several drugs.\n\nIn principle, submission of FAERS reports requires medical knowledge, as they include specific indications for which drugs were prescribed, identification of the primary suspect of ADRs, and structured description of ADRs by MedDRA terms. Nevertheless, a third of the reports are contributed by customers, and a half by submitters who do not identify themselves as medical professionals, including lawyers. This contributes to the high redundancy and error in FAERS, and to the \u2018stimulated reporting\u2019 from which it suffers (Hoffman et al., 2014). This appears to have been the case with celecoxib, whose association with cerebro- and cardiovascular events in FAERS reports was driven primarily by reports from legal professionals (Figure 5E). After rofecoxib was withdrawn, the proportion of these events for celecoxib returned to background. For cases like these, a temporal analysis of ADR-drug associations is essential as it can pinpoint spurious associations. Interrogation of FAERS and related databases to illuminate the molecular mechanisms of ADRs, and indeed the shared target profiles of drugs, has been an area of much recent interest (Center for Drug Evaluation and Research, 2015). Here, too, we find that the disambiguation of ADRs, indications, reporting and indication biases can reveal previously obscured associations. An example is the association of bladder cancer with the mixed PPAR-\u03b1 and PPAR-\u03b3 agonist pioglitazone. FAERS analysis is instrumental here, providing information on a large patient population and enabling the comparison with the selective PPAR-\u03b3 agonist rosiglitazone, which is not associated with bladder cancer (Figure 6)\u00a0(Smith, 2001).\n\nImprovement of statistical methods for signal detection is an area of active research (Wysowski and Swartz, 2005; Lasser et al., 2002;\u00a0Friedman et al., 1999; Moore et al., 1998;\u00a0Harpaz et al., 2013a) and much attention is paid to advanced statistical methods such as (Bayesian) information components\u00a0(Harpaz et al., 2013a), Empirical Bayes statistics\u00a0(Harpaz et al., 2013b), and hierarchical methods (Harpaz et al., 2013b). As with all machine learning and statistical approaches, these methods assume clean input data \u2013 the biases and noise they address is of statistical nature. We have used a well-known disproportionality approach, relative reporting ratio (RRR) with \u03c72 test statistic for disproportionality. The RRR has its limitations and may underperform compared to more advanced methods\u00a0(Harpaz et al., 2013a). The focus of our study was how proper preparation of the input data \u2013 cleaning drug ingredient mapping, and estimating multiple reporting \u2013 boosts signal detection performance, even with a simple method such as the RRR. We believe that applying the procedures and precautions we described here together with more advanced statistical methods will boost their performance even further.\n\nA key caution is that simple associations such as drug-ADR or drug-target do not yield clinical relevance without pharmacokinetic information, which ensures that the implicated target is exposed to the drug at effective concentrations. This is illustrated by the comparison of the ADHD drugs risperidone and aripiprazole and gynecomastia. Both drugs affect the D2 dopamine receptor that underlies the ADR, but only risperidone reaches a sufficient exposure to trigger it. The VEGF-R2 inhibitor example suggests that this type of evaluation is the only way one can objectively detect ADR-target pairs and explain the underlying mechanisms of their manifestation. Relying only on a ADR \u2192 drug \u2192 in vitro target schema can be insufficient to understand shared targets or molecular mechanisms; as Goodman long ago suggested, pharmacokinetic exposure remains crucial\u00a0(Goodman and Gilman, 1985).\n\nFAERS, an already valuable asset for clinicians and pharmaceutical scientists, could be improved in several ways to improve post-marketing pharmacovigilance. First, we recommend introducing automatic mapping of drugs and synonyms to ingredients, as discussed in this paper. Alerts could be issued for indications where serious outcomes are common and hard to distinguish from ADRs. Definitive drug-ADR associations would require information on exposure. Here, the availability of applied dose and associated PK data are essential. At present, no dose is provided and PK data can be obtained only from different sources. One of such sources is PharmaPendium (RELX Intellectual Properties SA, 2016), which contains both FAERS data and PK information, but even here the data are not linked directly, and this resource is only commercially and not publicly available. Public databases to which FAERS could link include DailyMed or drugs.com, which would potentially provide information on pharmacokinetics, drug labels, formulations, and approved indications.\n\nThere are several weaknesses of the present approach, which seems to be more or less general for mining efforts of FAERS. We encountered difficulties in differentiating drug-ADR associations when several drugs were co-administered, particularly when combinations contain drugs with possible synergistic or antagonistic effects. Also, different formulations of the same active drug ingredient could contribute to differences of the drug\u2019s profile, which is difficult to capture with the present approach.\n\nFinally, the introduction of reporting automation into FAERS would serve the dual purpose of reducing errors, such misclassifying ADRs and indications, and making the tool more interactive and rewarding for health professionals. One can imagine submitters receiving feedback on similar entries, including cases on the same suspect drug, indication, patient population and most common or problematic treatment regimens. The tool could also help to define the \u2018suspect drug\u2019 in treatment scenarios, independent from the submitters\u2019 intention, among other advantages. While this development would need investment, one could imagine undertaking it as part of a public-private partnership from which all would benefit.\n\n### Conclusions\n\nThe challenges and opportunities in FAERS and indeed from related databases flow from its ambitions. It publishes multiple reports - physicians, patients, other medical professionals, attorneys - on multiple drugs, named in multiple ways and taken in multiple contexts. FAERS does not represent a strictly reviewed and carefully channeled source of observations about drugs, as a clinical trial does - there is no placebo arm in FAERS, nor are there reports of cases when a given drug was prescribed and caused no side effects. It contains uncontrolled, volunteered information on a large scale. This may be seen as a feature of FAERS - a database designed with hypothesis generation rather than hypothesis testing in mind. Still, the hypotheses that FAERS suggests depend critically on the ability to disentangle its data. Tools like those described here are crucial to control for the often conflated and contradictory observations in FAERS reports, where serious outcomes are over-reported, reported death is often linked to submission by the patients themselves, a single event is reported multiple times, true associations between drugs and adverse events are missed because a single agent is named in multiple ways, or a mechanistically related disease occurs in different system organ categories. Once its data are disentangled, FAERS represents unprecedented opportunities to track drug outcomes in large patient populations, revealing new associations. The power of such analysis is that it may be applied systematically and comprehensively across a massive number of observations.\n\nWe recognize that a fully automated method, such as that described here, cannot replace expert knowledge. What such a method can do is identify, prioritize and sometimes deprioritize drug-adverse event associations, and sometimes even mechanistic inference, for detailed expert identification. This approach should be useful to the growing community of regulators, payers, physicians, and patients that work with and depend upon trends emerging in FAERS to improve drug use and health outcomes. By making several of these tools available to the community, we hope to enable future interrogation of FAERS by other investigators.\n\n## Materials\u00a0and\u00a0methods\n\n### FAERS data source\n\nFAERS reports were downloaded on May 24th\u00a02016 from the FEARS database (U.S. Food and Drug Administration, 2016) for the years between fourth quarter of 1997 and fourth\u00a0quarter of 2015, inclusive. ADR, indication, drug role (primary suspect, secondary suspect, concomitant), and outcome data was mapped using ISR report identifiers to the individual reports. Drugs were identified by the reported drug name in FAERS.\n\n### Mapping drugs to ingredients\n\nWe assembled a list of synonyms of drugs, using public and licensed databases including Thompson Reuters Integrity\u00a0(Thomson\u00a0Reuters, 2016), GVK\u00a0(GVK Biosciences, 2014), Drugbank\u00a0(Law et al., 2014), ChEMBL\u00a0(Gaulton et al., 2012), and RxNorm (Nelson et al., 2011). These synonyms were matched with drug products, and constituent molecular ingredient structures, encoded using as InChIKeys\u00a0(International Union of Pure and Applied Chemistry, 2016). We read in all the drug names from all the FAERS reports, and all the synonyms that had been assembled. Non-alphabetical characters (except numbers), capitalization, and terms that carried little information regarding the identity of the drugs (such as articles, or often occurring words like \u2018acid\u2019) were removed from the FAERS drug names and synonym names, and the remaining parts of the names were tokenized. Each tokenized FAERS drug was then compared to each tokenized synonym, and the overlap of tokens was recorded for each pair using the Tanimoto similarity coefficient tc. The synonym with the highest tc value was picked for a given drug, as long as the tc was\u00a0\u22650.2; for any drug, if a synonym with tc of 0.99 or higher was found, it was considered to be an exact match, and used to identify the drug in question without comparison to further synonyms. For the most frequent (among the top 500) drug names in FAERS, we manually mapped those drug names to InChIKeys that could not be mapped. Since InChIKeys are not typically calculated for large macromolecules, we used the non-proprietary name in lieu of the InChIKey in these cases.\n\n### Adverse drug reaction terms\n\nThe majority of ADRs in FAERS are reported using the Medical Dictionary for Regulatory Activities (MedDRA)\u00a0(Brown et al., 1999). Some older reports contained terms that are not part of the newer MedDRA that is used currently. To normalize and annotate the ADR terms extracted from reports we used a Levenshtein algorithm that compared the FAERS ADR terms to the MedDRA terminology. We set the minimal Levenshtein score at which a given MedDRA term was considered a perfect match to 0.95, and the minimal acceptable score to 0.90 at above which the highest scoring term was picked to standardize a given ADR. Additional 32 ADR terms were standardized manually, leaving less than 0.5% ADR terms unmatched.\n\n### Establishing ingredient - ADR and ingredient - indication associations\n\nWe used the well-established Relative reporting ratio (RRR) together with a \u03c72 statistic for disproportionality signal detection (Harpaz et al., 2013a). We constructed ingredient-ADR contingency tables and calculated the expected number of occurrences, the RRR, and Yates-corrected \u03c72 p-values\u00a0(Yates, 1934) for these contingency tables, as implemented in SciPy\u00a0(Jones et al., 2001). False discovery rate (FDR) was controlled\u00a0(Jones et al., 2001) using the Holm procedure\u00a0(Holm, 1979), yielding q-values. Associations were selected if they: (a) were reported at least five times in FAERS; (b) had a q-value\u00a0<0.05; and (c) had an RRR\u00a0>1. These ingredient - ADR pairs are shown in Supplementary file 1.\n\n### Calculating ingredient \u2013 ADR associations on monthly basis\n\nWith FAERS data annotated with dates of ADRs, for every ingredient \u2013 ADR pair we calculated co-occurrence frequencies, RRR-values, and \u03c72-based p-values for every month between January 1997 and December 2015. In these calculations, we used the numbers of drugs, ADRs, and total reports from the relevant month only. False discovery rate (FDR) was controlled using the Holm procedure (for each month separately), yielding q-values. In Supplementary file 1 for every statistically significant (in aggregate) ingredient \u2013 ADR association, we reported the numbers of months where q-values were lower than 0.05 and where q-values were higher than or equal to 0.05.\n\n### General aspects of statistics used for post-marketing pharmacovigilance\n\nSince spontaneous reports are not rigorously sampled from a population of patients with known exposure to the drugs of interest, incidence rates or relative risks cannot be computed. Instead, ratios of drug-event counts to intuitively plausible exposure measures, called disproportionality ratios, are commonly computed. Databases of prescription counts seem natural to use, as discussed in literature\u00a0(Strom et al., 2013); however, these lead to difficulties in integrating two separate databases as well as ambiguities in the meaning of prescriptions, such as measuring number of months\u2019 supply, geographic region of manufacture and dispensing, patient consumption, and so forth. Both FDA\u00a0(Duggirala et al., 2016) and EMA\u00a0(Eudravigilance Expert Working Group, 2006) guidance documents for analysis of spontaneous report databases by two of the world\u2019s most prominent pharmaceutical regulatory bodies, focus on the use of disproportionality measures that can be computed from within a single database of spontaneous reports. PRR\u00a0(Duggirala et al., 2016) and the closely related RRR defined above are straightforward measures computable from the simple 2\u00a0\u00d7\u00a02 table of report counts classified by drug mentioned and event mentioned, while a slightly more complex\u00a0(Mantel and Haenszel, 1959) computation can first stratify by possibly confounding variables such as patient gender and age, and calendar year of report, and then sum across strata to get an expected count to be compared to the observed count. The FDA report\u00a0(Duggirala et al., 2016) also discusses the concept of Bayesian \u2018shrinkage\u2019 estimates\u00a0(DuMouchel, 1999), which attempt to reduce the effects of variance in small samples by fitting the entire array of drug-event disproportionalities to a prior distribution and then using that to compute a posterior distribution for each individual disproportionality, resulting in a central estimate denoted EBGM (empirical Bayes geometric mean) as well as a 90% posterior range (EB05, EB95). In this paper, we use the simple measure RRR for several global computations across the FAERS database, and in some places present the presumably more reliable Bayesian measures when focusing on particular drug-events of interest.\n\n### Clustering of ADR by time evolution\n\nWe considered the numbers of reports in each month (time evolutions) for individual ADRs observed across FAERS for four drugs: rofecoxib, celecoxib, rosiglitazone, and pioglitazone. With knowledge of numbers of each of the considered drugs, ADRs, and the number of total reports in FAERS in each month, we calculated month-resolved RRR-values for the drug-ADR pairs. The time evolutions of the RRR-values were clustered for each drug using the partitioning method for maximum dissimilarity, as implemented in R\u00a0(R Core Team, 2013) scored by the similarity (Pearson correlation coefficient) of time evolutions of RRR.\n\n### Logistic regression models of myocardial infarction dependence on the use of celecoxib\n\nFor every FAERS report, we noted whether a) celecoxib was reported as the primary suspect drug, b) whether myocardial infarction was reported, c) the occupation of the person filing the report, and d) whether the reported event took place before 2005 (when rofecoxib was still on the market). Using this data and R\u2019s implementation of binomial logistic regression (via the glm() function), we prepared four models (with the logit link function)\u00a0(R Core Team, 2013) to investigate if myocardial infarction is associated with the use of celecoxib, the occupation of the person filing the report, and the report being filed before 2005. In each model, reporting myocardial infarction served as the output variable, and combinations of the remaining variables were used as input variables. Resulting models are summarized and described in more detail in Supplementary file 2.\n\n### Analysis of association between VEGF-R2 inhibition and hypertension\n\nApart from analysis described in this work, additional Bayesian data mining and statistical analysis of VEGF-R2 inhibition-related hypertension was based on the methods described in detail by DuMouchel\u00a0(DuMouchel, 1999), DuMouchel and Pregibon\u00a0(DuMouchel and Pregibon, 2001), Szarfman et al.\u00a0(Szarfman et al., 2002), and Almenoff et al.\u00a0(Almenoff et al., 2007).\n",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "98522c68-c27b-4603-b583-150387034efc",
+      "submission_id": "2a7ebfab-1903-49a8-beac-830507465fb6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Fiona M Watt, King's College London , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.25818.017](https://doi.org/10.7554/eLife.25818.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Reverse Translation of Adverse Event Reports Paves the Way for De-risking Preclinical Off-Targets\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Fiona Watt as the Reviewing and Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Ellen Berg (Reviewer #1); Keith Houck (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript is a welcome in-depth study that investigates reports from the FDA's Adverse Event Reporting System (FAERS). In this era of big data, a large database such as FAERS, developed for post-marketing pharmacovigilance and containing more than 8.5 million reports, is enticing to mine for potential connections between drugs or drug classes and specific adverse events.\n\nThe authors have a successful track record of leveraging large databases of secondary pharmacology assay data to identify novel target-ADR connections, so this is an obvious extension of this work. There are critical differences, however. Secondary pharmacology assays are run under standardized conditions typically under the control of sponsor organizations. Data completeness and quality are substantially higher.\n\nThe authors recognize these differences and provide a quite thoughtful and useful investigation of issues related to the use of FAERS data. The issues cover: (1) drug naming and synonym aggregation; (2) errors in data entry; (3) diversity and patterns in the data depending on the report submitters (patients and lawyers in addition to health care professionals); and (4) reporting influences, such as news events and changes in prescription guidelines over time.\n\nMaciejewski et al. walk through these issues with detailed analysis on overall reports, as well as ADR reports for specific drugs including drug pairs and relevant comparators. Case studies include: COX-2 inhibitors, celecoxib versus rofecoxib; thiazolidinones, rosiglitazone versus pioglitazone; VEGFR2 inhibitors; and anti-psychotics. Overall the findings are well-supported and of interest to researchers in the field.\n\nEssential revisions:\n\nDiscussion. In the Discussion, it would be helpful to include specific recommendations for improving FAERS to facilitate this type of research, such as better classifications; improving reporting automation (to reduce misclassifying ADRs versus indications); curation; mapping drugs and synonyms to ingredients, etc. A more explicit discussion of the limitations of the approach such as the lack of prescription (exposure) information is required.\n\nMethods and materials. The authors use RRR as a metric, which reflects the relative reporting of one type of ADR among all of the ADRs reported for that drug. The authors should discuss other metrics such as normalizing reports to the number of prescriptions (if this is possible or not, advantages, disadvantages, etc.).\n",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "aa6a3204-709f-4120-b88f-d5fcfa86b124",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C1",
+      "claim": "FAERS contains over 8.5 million reports and is rapidly growing.",
+      "claim_type": "EXPLICIT",
+      "source": "FAERS and related databases, such as those of the EMEA and of Health Canada, can provide specific ADR phenotypes typical for either individual drug classes or specific indications and can be accessed either directly (U.S. Food and Drug Administration, 2016) or by APIs (RELX Intellectual Properties SA, 2016; U.S. Food and Drug Administration, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states that FAERS currently contains over 8.5 million reports and is rapidly growing, with over 1,320,000 reports added in 2015.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "03491b60-32cd-4f38-a86a-2d588bcb217f",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C2",
+      "claim": "Over 1 million serious drug-related side effects occur each year in the USA.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, postmarketing pharmacovigilance is essential to track ADRs and ultimately reduce over 1 million serious drug-related side effects that occur each year in the USA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states this statistic about serious drug-related side effects.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "1dc14bea-b0c5-4caa-b93b-ace7cb35f926",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C3",
+      "claim": "Between 5% and 10% of serious drug-related side effects are fatal.",
+      "claim_type": "EXPLICIT",
+      "source": "Between 5% and 10% of these ADRs are fatal (Lazarou et al., 1998), and many others cause patient suffering, hospitalization, and increased health system burden (Moore et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Lazarou et al., 1998 to support this claim about fatality rates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "f88f0725-197f-406a-8a50-1dcfef351d3d",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C4",
+      "claim": "The fatality rate attributed to ADRs puts them among the top causes of death in the USA (over 40,000 in 2011), similar to suicide-related mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the fatality rate attributed to ADRs puts them among the top causes of death in the USA (over 40,000 in 2011), similar to suicide-related mortality (Hoyert and Xu, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Hoyert and Xu, 2012 to support this comparison of ADR fatality rates to suicide-related mortality.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "929af4c8-a358-4563-b22f-7d8980dfdb57",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C5",
+      "claim": "The study extracted 8,749,375 FAERS reports, mapped to 7,095,566 individual cases.",
+      "claim_type": "EXPLICIT",
+      "source": "We extracted 8,749,375 FAERS reports, mapped to 7,095,566 individual cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of reports extracted and cases mapped in their analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "83c8d4da-98a5-45f7-98b4-581cf9f8e9e7",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C6",
+      "claim": "Almost 1% of the reports in FAERS (61,780 cases) represent multiple entry cases with identical drugs, identical ADRs, event dates, patient age and gender.",
+      "claim_type": "EXPLICIT",
+      "source": "Almost 1% of the reports in FAERS (61,780 cases) represent multiple entry cases with identical drugs, identical ADRs, event dates, patient age and gender (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific data on duplicate reports identified in their analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "c11f6fcf-733f-4853-b6ca-8a20ac17cdec",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C7",
+      "claim": "Only half of the reports in FAERS were submitted by healthcare professionals.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, only half of the reports in FAERS were submitted by healthcare professionals (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states this finding and references Figure 1B which shows the distribution of reporter identities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "2c30cf0b-c1d0-4512-86d4-e7ed63f46556",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C8",
+      "claim": "Over one-third of FAERS reports (3.2 million) were initiated by the patients themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "Over one-third of them (3.2 million) were initiated by the patients themselves and 9% were labeled 'non-specified'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numbers for patient-initiated reports.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "08c3662b-c225-4696-a035-7ae7c799dfe3",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C9",
+      "claim": "Lawyers reported 3% of all FAERS cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Lawyers reported 3% of all FAERS cases (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states this percentage and references Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "de9ce132-2389-4138-8707-6229de7a8ef8",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C10",
+      "claim": "Only around 40% of the outcomes in FAERS were identified as 'benign', whereas almost 15% of reported cases result in death.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, only around 40% of the outcomes were identified as 'benign', whereas almost 15% of reported cases result in death (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides these percentages and references Figure 1C showing the distribution of outcomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "d88f14f8-ee45-47ac-963a-57b0d8891496",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C11",
+      "claim": "Among the 945,526 reports where death is the outcome of the ADR, 42,526 were linked to cardiac arrest and 50,155 to suicide.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 945,526 reports where death is the outcome of the ADR, 42,526 were linked to cardiac arrest and 50,155 to suicide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific counts for death outcomes linked to cardiac arrest and suicide.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "d9f90d78-df46-4f13-957b-506855b95102",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C12",
+      "claim": "Rosiglitazone had 17,165 death reports in FAERS.",
+      "claim_type": "EXPLICIT",
+      "source": "Top molecular ingredients of drugs that were primary suspects in death reports were rosiglitazone: 17,165 (indication type II diabetes), rofecoxib: 11,386 (primary indications: arthritis, pain; withdrawn from the clinic), reteplase: 11,386 (indication of acute myocardial infarction (MI)), and thalidomide: 17,104 (indication of myeloma multiplex; additionally, 26,429 cases of death have been attributed to lenalidomide, a derivative of thalidomide also prescribed for myeloma).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript lists specific death report counts for various drugs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "ee2f6128-6089-4870-954d-1ca197250cd5",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C13",
+      "claim": "Rofecoxib had 11,386 death reports in FAERS.",
+      "claim_type": "EXPLICIT",
+      "source": "Top molecular ingredients of drugs that were primary suspects in death reports were rosiglitazone: 17,165 (indication type II diabetes), rofecoxib: 11,386 (primary indications: arthritis, pain; withdrawn from the clinic), reteplase: 11,386 (indication of acute myocardial infarction (MI)), and thalidomide: 17,104 (indication of myeloma multiplex; additionally, 26,429 cases of death have been attributed to lenalidomide, a derivative of thalidomide also prescribed for myeloma).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript lists specific death report counts for various drugs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "0d9a794f-dc41-4ce6-ad54-a235fc7e89e2",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C14",
+      "claim": "Thalidomide had 17,104 death reports in FAERS.",
+      "claim_type": "EXPLICIT",
+      "source": "Top molecular ingredients of drugs that were primary suspects in death reports were rosiglitazone: 17,165 (indication type II diabetes), rofecoxib: 11,386 (primary indications: arthritis, pain; withdrawn from the clinic), reteplase: 11,386 (indication of acute myocardial infarction (MI)), and thalidomide: 17,104 (indication of myeloma multiplex; additionally, 26,429 cases of death have been attributed to lenalidomide, a derivative of thalidomide also prescribed for myeloma).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript lists specific death report counts for various drugs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "14de036b-0c35-406f-bb65-bccc796f7c06",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C15",
+      "claim": "The attribution of death as an ADR of thalidomide when used to treat myeloma multiplex may reflect the cancer that the drug is meant to treat, not the drug itself.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the attribution of death as an ADR of thalidomide when it is used to treat myeloma multiplex, a life-threatening, malignant disease (Singhal et al., 1999) may be hard to support; it seems likely that the 'ADR' here reflects the cancer that the drug is meant to treat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides reasoning based on the nature of the disease being treated.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "fcde4fa5-875b-4a94-bb8c-073264f194fe",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C16",
+      "claim": "The study mapped active drug ingredients in over 98% of the reports using a combination of natural language processing and multiple databases of synonyms.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we mapped the active drug ingredients in over 98% of the reports using a combination of natural language processing and multiple databases of synonyms (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes their methodology for mapping drug ingredients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "12b4a533-75d2-42d3-991a-913670d9bac7",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C17",
+      "claim": "Of the 2729 unique ingredients identified, only 1892 were annotated as a primary suspect in at least one report.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, of the 2729 unique ingredients identified, only 1892 were annotated as a primary suspect in at least one report; said a different way, 837 active drug ingredients had no reported ADRs whatsoever.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific counts of unique ingredients and their reporting status.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "2c2c994c-5bda-4408-9521-a7cc64fd5007",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C18",
+      "claim": "90% of the ADRs are attributed to 40% of the drug ingredients.",
+      "claim_type": "EXPLICIT",
+      "source": "A plot of the ingredients that were associated with ADRs shows that an exponentially decaying distribution, with 90% of the ADRs attributed to 40% of the drug ingredients (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states this distribution and references Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "4a0a75ae-def9-4537-9b84-3dcf6a01d7db",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C19",
+      "claim": "Indomethacin is linked with gastric ulcer (RRR = 10.40; q-value = 3.65\u00b710\u221272) when assessed as an ingredient.",
+      "claim_type": "EXPLICIT",
+      "source": "When we assessed indomethacin as an ingredient, a strong signal linked it with gastric ulcer (RRR = 10.40; q-value = 3.65\u00b710\u221272), and gastric ulcer hemorrhage (RRR = 7.99; q-value = 6.78\u00b710\u221218).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific statistical measures for the indomethacin-gastric ulcer association.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "3f8ff3b2-3d5a-4dac-8c02-bbab63f1a69d",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C20",
+      "claim": "Approximately 5% of all reports for any drug describe the drug's indication as an adverse event.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 5% of all reports for any drug describe the drug's indication as an adverse event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript quantifies the indication bias globally.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "a0577356-7aac-4449-b9a3-b17c9c071540",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C21",
+      "claim": "An FDA advisory 'refresher' presentation on guidelines of ADR reporting for clinical trials with an effective date of March 28, 2011 had a significant effect on reporting quality.",
+      "claim_type": "EXPLICIT",
+      "source": "We could trace an FDA advisory 'refresher' presentation on guidelines of ADR reporting for clinical trials to an effective date of March 28, 2011 (Devine, 2016). This document provides clear instructions for submitters to distinguish between pre-existing conditions and ADRs and indeed may have had a significant effect on reporting quality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites an FDA document and observes a change in reporting patterns after this date.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "33576cd7-d48c-47f9-912b-8788a5ce201e",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C22",
+      "claim": "Rofecoxib was approved by the FDA in 1999.",
+      "claim_type": "EXPLICIT",
+      "source": "We assessed the time evolution of reports of rofecoxib, a nonsteroidal anti-inflammatory drug (NSAID) that relieves pain through COX-2 inhibition (Figure 4). Several important events occurred over the clinical life of rofecoxib since its approval by the FDA in 1999",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the FDA approval date for rofecoxib.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "5fb41f9b-aadd-404c-a4a3-5f332601676d",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C23",
+      "claim": "A clinical study by Bombardier et al. published in November 2000 concluded that rofecoxib increased the risk of cardiovascular events.",
+      "claim_type": "EXPLICIT",
+      "source": "(1) A clinical study by Bombardier et al. published in November 2000 concluded that rofecoxib increased the risk of cardiovascular events (Bombardier et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites the Bombardier et al. study and its conclusion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "fde8c444-c745-4e88-bfe0-039509cd51d7",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C24",
+      "claim": "Warnings for cardiovascular events were introduced on the labels of Vioxx in April 2002.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) Introduction of warnings for cardiovascular events on the labels of Vioxx (a brand name of rofecoxib) in April 2002.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this regulatory event.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "f6d8e226-2134-4b15-aae9-68963cc642b0",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C25",
+      "claim": "Rofecoxib was withdrawn from the market on September 30th 2004.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) Withdrawal of rofecoxib from the market on September 30th 2004.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the withdrawal date for rofecoxib.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "55c342b3-8406-48a7-bb74-c7fb535f2e64",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C26",
+      "claim": "Myocardial infarction (RRR = 17.85; q-value <10\u22125) and cerebrovascular accident (RRR = 17.69; q-value <10\u22125) accounted for a large proportion of the ADRs reported for rofecoxib from its introduction in 1999.",
+      "claim_type": "EXPLICIT",
+      "source": "Myocardial infarction (RRR = 17.85; q-value <10\u22125) and cerebrovascular accident (RRR = 17.69; q-value <10\u22125) accounted for a large proportion of the ADRs reported for rofecoxib from its introduction in 1999 (Figure 4B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides statistical measures for these ADR associations and references Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "d5e7ff59-aef3-432b-a663-d19bd3b25eba",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C27",
+      "claim": "Between the Bombardier publication and the introduction of the label warning for rofecoxib, physician reports remained constant while the number of reports by lawyers grew substantially.",
+      "claim_type": "EXPLICIT",
+      "source": "Between the Bombardier publication and the introduction of the label warning, these physician reports remained constant, while the number of reports by lawyers grew substantially.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes changes in reporter demographics over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "d1268fcb-5c31-4cb1-8f72-d83f483ad35f",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C28",
+      "claim": "Celecoxib was approved by the FDA in December 1998.",
+      "claim_type": "EXPLICIT",
+      "source": "We also inspected the time evolution of another COX-2 inhibiting NSAID, celecoxib, approved by the FDA in December 1998, just shortly before Vioxx (Figure 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the FDA approval date for celecoxib.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "5c638a26-e690-4966-956e-38d3a9b24a6e",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C29",
+      "claim": "There was a slight increase in the number of celecoxib reports around September 2004, reflecting the increase in use associated with the withdrawal of rofecoxib.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspection of the timeline of celecoxib reports shows a slight increase in the number of reports around September 2004, reflecting the increase in use associated with the withdrawal of rofecoxib (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript observes a temporal correlation between rofecoxib withdrawal and increased celecoxib reporting.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "5da0edcb-a27e-4fe3-9312-ab5c5ab5d64d",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C30",
+      "claim": "Until December 2004, the pattern of ADR in celecoxib reports is dominated by cerebrovascular accident (per-month RRR up to ~35) and myocardial infarction (per-month RRR up to ~45) in a similar fashion as in rofecoxib reports.",
+      "claim_type": "EXPLICIT",
+      "source": "Until December 2004, the pattern of ADR in celecoxib reports is dominated by cerebrovascular accident (per-month RRR up to ~35) and myocardial infarction (per-month RRR up to ~45) in a similar fashion as in rofecoxib reports (Figure 5B and Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides statistical measures and references figures showing ADR patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "bf1cb2ce-9057-441f-a448-e73267192a8f",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C31",
+      "claim": "The distribution of ADRs for celecoxib was almost identical after excluding the 8% of reports in which rofecoxib was present as a concomitant drug.",
+      "claim_type": "EXPLICIT",
+      "source": "We checked whether the trends in reporting of side effects of celecoxib was affected by co-administration of rofecoxib, but the distribution of ADRs was almost identical after excluding the 8% of reports in which rofecoxib was present as a concomitant drug (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes an analysis to control for rofecoxib co-administration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "4461449e-22b2-40ee-90b6-9589b86940ee",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C32",
+      "claim": "Reports of myocardial infarction were significantly correlated with reports of celecoxib filed by lawyers before 2005.",
+      "claim_type": "EXPLICIT",
+      "source": "These trends were confirmed by logistic regression modeling (see Materials and methods and Supplementary file 2), which showed that reports of myocardial infarction were significantly correlated with reports of celecoxib filed by lawyers before 2005 (Model four in Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes logistic regression analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "867f2a48-f4e2-45d3-9f1f-375c48f03eb9",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C33",
+      "claim": "Rosiglitazone was approved by the FDA in May 1999.",
+      "claim_type": "EXPLICIT",
+      "source": "For rosiglitazone, many heart-related reports have been filed since its FDA approval in May 1999 (Figure 6A, Figure 6B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the FDA approval date for rosiglitazone.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "92c29870-2d27-417c-bacc-db696f1c8b28",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C34",
+      "claim": "Rosiglitazone is associated with congestive cardiac failure (RRR = 31.99; q-value <10\u22125), coronary artery disease (RRR = 26.32; q-value <10\u22125), cerebrovascular accident (RRR = 11.72; q-value <10\u22125), and myocardial infarction (RRR = 20.73; q-value <10\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the absolute number of reports have varied over time, and has been affected by the clinical trial and scientific reports in much the same way as rofecoxib, the predominance of heart effects, such as congestive cardiac failure (RRR = 31.99; q-value <10\u22125), coronary artery disease (RRR = 26.32; q-value <10\u22125), cerebrovascular accident (RRR = 11.72; q-value <10\u22125), and myocardial infarction (RRR = 20.73; q-value <10\u22125), relative to other events, has been unperturbed throughout the lifetime of this drug (Figure 6B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides statistical measures for rosiglitazone-ADR associations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "b511f095-725e-486b-abc1-074eedac40c0",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C35",
+      "claim": "Pioglitazone was approved by the FDA in July 1999.",
+      "claim_type": "EXPLICIT",
+      "source": "The other hypoglycemic drug, pioglitazone, has triggered fewer reports of heart effects relative to the clinical ADR profile of rosiglitazone since its approval in July 1999 (Figure 7A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the FDA approval date for pioglitazone.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "eb30ef89-7393-494c-89d9-33c4f904d02b",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C36",
+      "claim": "Pioglitazone is associated with cardiac failure (RRR = 5.09; q-value <10\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "Although analysis of FAERS reports does support a statistically significant signal between pioglitazone and cardiac failure (RRR = 5.09; q-value <10\u22125), the time evolution of this signal reveals that the major contribution to its statistical strength comes from a single peak that subsides by the year 2002, and coincides with the increased scrutiny of rosiglitazone (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides statistical measures for the pioglitazone-cardiac failure association.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "c00635c0-5e1a-42ca-ae48-5592b5a50725",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C37",
+      "claim": "The ADR landscape of pioglitazone is dominated by bladder cancer (RRR = 305.69; q-value <10\u22125), with a substantial increase in reports from 2009 onward.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike rosiglitazone, the ADR landscape of pioglitazone is dominated by bladder cancer (RRR = 305.69; q-value <10\u22125), with a substantial increase in reports from 2009 onward (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides statistical measures for the pioglitazone-bladder cancer association.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "a109bd31-4445-4ffe-967d-3b731f1601de",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C38",
+      "claim": "Bladder cancer is significantly underrepresented in rosiglitazone reports (RRR = 0.12; q-value <10\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, this signal is significantly underrepresented in the rosiglitazone reports (RRR = 0.12; q-value <10\u22125).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides statistical measures showing bladder cancer is not associated with rosiglitazone.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "b8519456-ea0b-4ed2-8c65-3dacb5169add",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C39",
+      "claim": "There is evidence that non-selective PPAR agonists (\u03b1 + \u03b3) such as pioglitazone could contribute to carcinogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence that non-selective PPAR agonists (\u03b1 + \u03b3) such as pioglitazone could contribute to carcinogenesis (Oleksiewicz et al., 2008; Piccinni et al., 2011), and a recent study linked bladder cancer to the development of chronic kidney disease as an effect of long-term use of pioglitazone (Lee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites studies linking pioglitazone to carcinogenesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "e48b60b4-a58e-44ef-abfe-36021dcbc3e4",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C40",
+      "claim": "The increase in incidence of bladder cancer is linked to pioglitazone treatment that is ongoing for more than 2 years.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation was not confirmed with short-term use of pioglitazone (Lewis et al., 2011), and it is important to note that the increase in incidence of bladder cancer is linked to pioglitazone treatment that is ongoing for more than 2 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study and notes the duration-dependent nature of the bladder cancer association.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "dd08a369-2664-4d6a-be9b-35787aeea0b1",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C41",
+      "claim": "Small molecule kinase inhibitors that inhibit VEGF-R2 with relevant in vivo pharmacokinetics share the hypertension side effect.",
+      "claim_type": "EXPLICIT",
+      "source": "The relevance of such inhibition to hypertension is supported by the high-incidence of this ADR with the VEGF-R2-specific humanized antibody, bevacizumab (Figure 9B) (Zhu et al., 2007). Correspondingly, several small molecule kinase inhibitors that inhibit VEGF-R2 with relevant in vivo pharmacokinetics (Figure 9B) also share the hypertension side effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the association between VEGF-R2 inhibition and hypertension, citing Zhu et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "9ed49423-1619-4703-bab9-32ea69cb6963",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C42",
+      "claim": "High incidence of hypertension is reported only with VEGF-R2 inhibitors that have exposure margins (EM) less than 13.",
+      "claim_type": "EXPLICIT",
+      "source": "However, other kinase inhibitors with VEGF-R2 inhibition do not appear to increase reports of hypertension (Figure 9). High incidence is reported only with those drugs in this class that have exposure margins (EM) less than 13 for this target (biochemical IC50/Cmax; Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript identifies an exposure margin threshold for hypertension with VEGF-R2 inhibitors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "7c22f0ac-6726-4430-8444-404ab90c2ab9",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C43",
+      "claim": "Between 2007 and 2013, there were 5073 cases in FAERS where risperidone is the primary suspect of gynecomastia (RRR = 113.82, q-value <10\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, between 2007 and 2013, there were 5073 and 123 cases in FAERS, respectively, where risperidone and paliperidone are the primary suspect of gynecomastia (Figure 10, RRR = 113.82, q-value <10\u22125; RRR = 7.53, q-value <10\u22125).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific case counts and statistical measures for risperidone-gynecomastia association.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "7a0e77d7-acab-4f33-86dc-10cf3fafa313",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C44",
+      "claim": "Between 2007 and 2013, there were 123 cases in FAERS where paliperidone is the primary suspect of gynecomastia (RRR = 7.53, q-value <10\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, between 2007 and 2013, there were 5073 and 123 cases in FAERS, respectively, where risperidone and paliperidone are the primary suspect of gynecomastia (Figure 10, RRR = 113.82, q-value <10\u22125; RRR = 7.53, q-value <10\u22125).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific case counts and statistical measures for paliperidone-gynecomastia association.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "090c0805-9435-43e5-b591-8341cb5d5ab5",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C45",
+      "claim": "For aripiprazole (RRR = 0.85) and methylphenidate (RRR = 1.39), the q-values for gynecomastia were close to 1, indicating no significant associations with this ADR.",
+      "claim_type": "EXPLICIT",
+      "source": "For aripiprazole (RRR = 0.85) and methylphenidate (RRR = 1.39), however, the q-values were close to 1, indicating no significant associations with this ADR (Figure 10B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides statistical measures showing no significant association between these drugs and gynecomastia.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "0269e265-7cb4-4f75-b74a-41b0bd38cdbf",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C46",
+      "claim": "Inhibition of the D2 dopamine but not 5-HT2C receptors are linked to hyperprolactinemia, which is the underlying mechanism of gynecomastia and galactorrhea.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well established that inhibition of the D2 dopamine but not 5-HT2C receptors are linked to hyperprolactinemia, which is the underlying mechanism of gynecomastia and galactorrhea (Calarge et al., 2009; Alladi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites studies establishing the mechanism linking D2 receptor inhibition to hyperprolactinemia and gynecomastia.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "7a575108-9daa-44ac-89dd-44c67aa1b444",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C47",
+      "claim": "The difference between the ADR profile of aripiprazole and risperidone/paliperidone is explained by their mechanism of action (risperidone is a full antagonist and aripiprazole is a partial agonist) and particularly by their PK profile.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of their similar potency at the D2 dopamine receptor the difference between the ADR profile of aripiprazole and risperidone/paliperidone is explained by their mechanism of action (risperidone is a full antagonist and aripiprazole is a partial agonist) and particularly by their PK profile, which reveals that the exposure margin (EM [Muller and Milton, 2012]) for D2 is large for aripiprazole and so this ADR did not manifest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explains the mechanistic and pharmacokinetic basis for the differential ADR profiles.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "1cd3d726-b272-4bf3-b0b0-92468d996151",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C48",
+      "claim": "Mapping drugs to their active ingredients reinforced the strength of drug-ADR signals.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, mapping drugs to their active ingredients, and not simply relying on synonym aggregation, reinforced the strength of the drug-ADR signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript demonstrates this with the indomethacin example.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "a898e14b-2d3f-43c9-99de-553b3c2aa28b",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C49",
+      "claim": "On average, there are 16 different names for medicines containing each active drug ingredient in FAERS.",
+      "claim_type": "EXPLICIT",
+      "source": "Our ability to even correlate drugs with their effects is obscured by something as simple as the tangle of drug synonyms in FAERS - on average 16 different names for medicines containing each active drug ingredient - which can obscure associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript quantifies the synonym problem in FAERS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "7ad5b21f-7768-4f78-875c-e031d66714f7",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C50",
+      "claim": "Fluoxetine has 378 different synonyms in FAERS.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the ADRs associated with fluoxetine, for instance, one must aggregate its 378 different synonyms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a specific example of synonym multiplicity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "6bcb7a91-f552-459c-be9e-131d633dacf6",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C51",
+      "claim": "Without synonym aggregation, well-known fluoxetine side effects such as sexual dysfunction become statistically insignificant (four cases when only the fluoxetine drug synonym Prozac is considered; Relative Reporting Ratio [RRR] = 1.75; q-value = 1).",
+      "claim_type": "EXPLICIT",
+      "source": "Without such aggregation, well-known fluoxetine side effects such as sexual dysfunction become statistically insignificant (four cases when only the fluoxetine drug synonym Prozac is considered; Relative Reporting Ratio [RRR] = 1.75; q-value = 1), whereas once aggregated, these ADRs stand out clearly (87 cases; RRR = 6.67; q-value = 2.56\u00b710\u221296).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides statistical measures demonstrating the impact of synonym aggregation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "9bb26ba7-73eb-42d9-bbc0-bd9edc799296",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C52",
+      "claim": "Once aggregated, fluoxetine's association with sexual dysfunction becomes statistically significant (87 cases; RRR = 6.67; q-value = 2.56\u00b710\u221296).",
+      "claim_type": "EXPLICIT",
+      "source": "Without such aggregation, well-known fluoxetine side effects such as sexual dysfunction become statistically insignificant (four cases when only the fluoxetine drug synonym Prozac is considered; Relative Reporting Ratio [RRR] = 1.75; q-value = 1), whereas once aggregated, these ADRs stand out clearly (87 cases; RRR = 6.67; q-value = 2.56\u00b710\u221296).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides statistical measures demonstrating the impact of synonym aggregation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "2d662bbf-2619-4093-a9e8-fbade65aa1c3",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C53",
+      "claim": "The study's ingredient mapping achieved 98% recognition compared to 81% recognition using only RxNorm synonyms.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only does this value compare favorably to the 81% recognition achieved using only the synonyms alone in RxNorm, but it allowed us to look for associations drawing on standard cheminformatics-based searches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript compares their mapping approach to RxNorm-only mapping.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "ec7fc50f-a947-4ca8-8c3b-512b58ae2edd",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C54",
+      "claim": "FAERS reports are submitted by multiple types of reporters including physicians, patients, lawyers, and other health professionals.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, only half of the reports in FAERS were submitted by healthcare professionals (Figure 1B). Over one-third of them (3.2 million) were initiated by the patients themselves and 9% were labeled 'non-specified'. Lawyers reported 3% of all FAERS cases (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the distribution of reporter types and references Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "281e81d0-e7d6-4c9f-8467-3ae545b901e6",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C55",
+      "claim": "FAERS suffers from stimulated reporting influenced by news events, regulatory announcements, and publications.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis exposed key idiosyncrasies in FAERS, for example reports of thalidomide causing a deadly ADR when used against myeloma, a likely result of the disease itself; multiplications of the same report, unjustifiably increasing its importance; correlation of reported ADRs with public events, regulatory announcements, and with publications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies various forms of reporting bias in FAERS.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "5a962db4-bfc2-4d47-97a2-67e8490b1360",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C56",
+      "claim": "The number of reports in which the same ADR and indication was reported increased linearly with the increasing number of yearly reports until 2011, followed by a sudden drop.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of reports in which the same ADR and indication was reported increased linearly with the increasing number of yearly reports until 2011, followed by a sudden drop (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes a temporal trend in indication-ADR confusion and references Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "3cf7cd2c-b9fe-4092-9e5a-66ac1981a730",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C57",
+      "claim": "Celecoxib had 4,066 reported deaths with a Standardized Mortality Ratio (SMR) of 1.3.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, a comparison of celecoxib (reported number of deaths: 4,066; Standardized Mortality Ratio [SMR] [Everitt and Skrondal, 2010]: 1.3) and rofecoxib, which are prescribed for the same indication, highlights the significantly higher SMR of patients taking the latter drug (SMR: 5) (Rostom et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific death counts and SMR values for celecoxib.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "ee96ee54-c6ab-4589-b8af-2e8167490c3c",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C58",
+      "claim": "Rofecoxib has a Standardized Mortality Ratio (SMR) of 5.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, a comparison of celecoxib (reported number of deaths: 4,066; Standardized Mortality Ratio [SMR] [Everitt and Skrondal, 2010]: 1.3) and rofecoxib, which are prescribed for the same indication, highlights the significantly higher SMR of patients taking the latter drug (SMR: 5) (Rostom et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the SMR value for rofecoxib and cites Rostom et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "df3da2b9-6962-438a-bbd1-65c26c09e474",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C59",
+      "claim": "FAERS data are based on reports submitted between Q4 1997 and Q4 2015.",
+      "claim_type": "EXPLICIT",
+      "source": "FAERS reports were downloaded on May 24th 2016 from the FEARS database (U.S. Food and Drug Administration, 2016) for the years between fourth quarter of 1997 and fourth quarter of 2015, inclusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript specifies the time range of FAERS data used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "c14acc82-d393-48ac-872a-ad642f6bf550",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C60",
+      "claim": "The study used Relative Reporting Ratio (RRR) together with a \u03c72 statistic for disproportionality signal detection.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the well-established Relative reporting ratio (RRR) together with a \u03c72 statistic for disproportionality signal detection (Harpaz et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the statistical methods used.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "be8b6e57-438e-44d6-bc05-e074bdee938e",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C61",
+      "claim": "Associations were selected if they were reported at least five times in FAERS, had a q-value <0.05, and had an RRR >1.",
+      "claim_type": "EXPLICIT",
+      "source": "Associations were selected if they: (a) were reported at least five times in FAERS; (b) had a q-value <0.05; and (c) had an RRR >1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript specifies the criteria for selecting significant associations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "f6b0db93-4451-4a2d-a2c4-87b527ecdeef",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C62",
+      "claim": "The study calculated time-resolved profiles of drug-ADR associations on a monthly basis.",
+      "claim_type": "EXPLICIT",
+      "source": "With FAERS data annotated with dates of ADRs, for every ingredient \u2013 ADR pair we calculated co-occurrence frequencies, RRR-values, and \u03c72-based p-values for every month between January 1997 and December 2015.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the temporal analysis methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "d057267e-d87e-4caf-9873-ecbb2f5bc46c",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C63",
+      "claim": "An exposure margin around 10 is recommended for clinical candidates in preclinical development to avoid hypertension side effects with VEGF-R2 inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "While all these factors could influence the incidence of hypertension associated with VEGF-R inhibition, it is possible to recommend an exposure margin around 10 for clinical candidates in preclinical development to avoid this side effect in the clinic (Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides a recommendation based on their analysis of VEGF-R2 inhibitors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "6ae1a724-c839-46f4-bc35-c45fd6df7f6a",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C64",
+      "claim": "Paliperidone is the main active metabolite of risperidone.",
+      "claim_type": "EXPLICIT",
+      "source": "FAERS analysis indicates that treatment with risperidone/paliperidone, the latter of which is the main active metabolite of risperidone, increases the frequency of gynecomastia and galactorrhea",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the metabolic relationship between risperidone and paliperidone.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "6a4475b5-4f6a-4601-a373-2c38a3a5e51e",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C65",
+      "claim": "Comparative analysis of ADRs can reveal underlying mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "The precautions and methods we describe may enable investigators to avoid confounding chemistry-based associations and reporting biases in FAERS, and illustrate how comparative analysis of ADRs can reveal underlying mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a key finding in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "1cfea598-124d-4b5f-9de6-400b8446ba43",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C66",
+      "claim": "FAERS contains redundancies, biases, and conflations that affect its analysis and interpretation.",
+      "claim_type": "EXPLICIT",
+      "source": "FAERS, while providing a solid frame for reporting, contains redundancies, biases, and conflations that affect its analysis and interpretation (McAdams et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites McAdams et al., 2008 to support this characterization of FAERS.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "8a7517b1-9eda-4fb7-809b-aa8a5624fd02",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C67",
+      "claim": "The association of bladder cancer with mixed PPAR-\u03b1 and PPAR-\u03b3 agonists is a previously hidden ADR revealed by correcting biases and conflations in FAERS.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, and perhaps more generatively, once these biases and conflations are corrected, the molecular mechanism of previously hidden ADRs can be revealed; an example explored here is the association of urinary bladder cancer with mixed PPAR-\u03b1 and PPAR-\u03b3 agonists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies this as a key finding from their analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "f0c98dfd-77ce-4814-9ce4-23c8f4bee848",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C68",
+      "claim": "A major reason for FAERS's bias toward serious outcomes is the conflation of ADRs and outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "A major reason for FAERS's bias toward serious outcomes is the conflation of ADRs and outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies this as a key source of bias in FAERS.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "359b61a6-fc40-4979-8490-df0222151247",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C69",
+      "claim": "A third of FAERS reports are contributed by customers, and half by submitters who do not identify themselves as medical professionals, including lawyers.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, a third of the reports are contributed by customers, and a half by submitters who do not identify themselves as medical professionals, including lawyers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript quantifies the proportion of non-medical professional reporters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "ad18e34a-e920-4620-a439-c7f2aa9ff98a",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C70",
+      "claim": "The association of celecoxib with cerebro- and cardiovascular events in FAERS reports was driven primarily by reports from legal professionals.",
+      "claim_type": "EXPLICIT",
+      "source": "This appears to have been the case with celecoxib, whose association with cerebro- and cardiovascular events in FAERS reports was driven primarily by reports from legal professionals (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript identifies lawyer reporting as a source of bias for celecoxib.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "0183f62a-53aa-445c-a525-9ff9fd029eba",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C71",
+      "claim": "After rofecoxib was withdrawn, the proportion of cerebro- and cardiovascular events for celecoxib returned to background.",
+      "claim_type": "EXPLICIT",
+      "source": "After rofecoxib was withdrawn, the proportion of these events for celecoxib returned to background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the temporal pattern of celecoxib ADR reporting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "aba55e55-dd81-4d50-bee0-d3acd75140d1",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C72",
+      "claim": "Simple associations such as drug-ADR or drug-target do not yield clinical relevance without pharmacokinetic information.",
+      "claim_type": "EXPLICIT",
+      "source": "A key caution is that simple associations such as drug-ADR or drug-target do not yield clinical relevance without pharmacokinetic information, which ensures that the implicated target is exposed to the drug at effective concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript emphasizes the importance of pharmacokinetics in interpreting drug-ADR associations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "cdd03dff-c468-4314-91fd-ec6a1c00c9d9",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C73",
+      "claim": "FAERS could be improved by introducing automatic mapping of drugs and synonyms to ingredients.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we recommend introducing automatic mapping of drugs and synonyms to ingredients, as discussed in this paper.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides recommendations for improving FAERS.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "60b351f6-6313-4b42-b7be-0cb6cab071ab",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C74",
+      "claim": "Definitive drug-ADR associations would require information on exposure, including applied dose and associated PK data.",
+      "claim_type": "EXPLICIT",
+      "source": "Definitive drug-ADR associations would require information on exposure. Here, the availability of applied dose and associated PK data are essential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies missing data needed for better ADR assessment.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "75616e93-d34d-4176-aac9-573560ce9d76",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C75",
+      "claim": "At present, no dose information is provided in FAERS and PK data can be obtained only from different sources.",
+      "claim_type": "EXPLICIT",
+      "source": "At present, no dose is provided and PK data can be obtained only from different sources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies limitations of current FAERS data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "57510451-94da-484e-966b-a01635ec3c47",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C76",
+      "claim": "FAERS represents unprecedented opportunities to track drug outcomes in large patient populations, revealing new associations.",
+      "claim_type": "EXPLICIT",
+      "source": "Once its data are disentangled, FAERS represents unprecedented opportunities to track drug outcomes in large patient populations, revealing new associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript emphasizes the potential value of FAERS when properly analyzed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "ac651ce6-23fb-4146-af42-98b76e80d5b0",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "claim_id": "C77",
+      "claim": "A fully automated method cannot replace expert knowledge but can identify, prioritize and sometimes deprioritize drug-adverse event associations.",
+      "claim_type": "EXPLICIT",
+      "source": "We recognize that a fully automated method, such as that described here, cannot replace expert knowledge. What such a method can do is identify, prioritize and sometimes deprioritize drug-adverse event associations, and sometimes even mechanistic inference, for detailed expert identification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript acknowledges the limitations and appropriate use of automated methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4b863a54-bd31-4520-b925-b5f797ef39ce",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study analyzed 8,749,375 FAERS reports from Q4 1997 to Q4 2015, representing 7,095,566 individual cases. FAERS contains over 8.5 million reports and is rapidly growing, with over 1.3 million reports added in 2015.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5, and C59 provide consistent data on the size and scope of the FAERS database analyzed. The numbers are explicitly stated and internally consistent, representing a straightforward descriptive result of the dataset used.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "d1ef60c2-bb29-4f1d-8cb2-24623748a161",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Over 1 million serious drug-related side effects occur annually in the USA, with 5-10% being fatal, resulting in over 40,000 deaths in 2011\u2014a mortality rate comparable to suicide-related deaths.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims (C2-C4) rely entirely on citations to prior work (Lazarou et al., 1998; Hoyert and Xu, 2012) without independent verification in the current study. The accuracy of these widely-cited statistics depends on the validity of the original sources, which are not critically evaluated here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "5d190f2c-2a60-4235-9e68-3806b5953aae",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "FAERS exhibits significant data quality issues: ~1% of reports (61,780 cases) are duplicates with identical information. Only half of reports were submitted by healthcare professionals, with over one-third (3.2 million) initiated by patients themselves, 9% non-specified, and 3% by lawyers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9, C54, and C69 provide consistent quantitative characterization of FAERS reporter demographics and data quality issues. The duplicate detection methodology is described, and the percentages are internally consistent and supported by Figure 1B.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "d7f2e55e-125d-4025-be9a-b08a95b328d4",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "FAERS shows a bias toward serious outcomes: only ~40% of outcomes were classified as 'benign' while ~15% resulted in death (945,526 reports), with 42,526 linked to cardiac arrest and 50,155 to suicide. This bias stems from conflation of ADRs with outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C11, and C68 are well-supported by the data presented in Figure 1C and the text. The authors correctly identify this as a reporting bias rather than reflecting true ADR severity distributions, and provide mechanistic explanation for the bias.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "07bb5798-f3b8-4277-960c-10e278a1b3ac",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Top drugs in death reports include rosiglitazone (17,165), rofecoxib (11,386), and thalidomide (17,104). However, death attribution may be confounded by disease severity, particularly for thalidomide used in myeloma multiplex. Rofecoxib shows significantly higher SMR (5) compared to celecoxib (1.3) for the same indication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15, C57-C58 provide specific death counts and appropriately caution about confounding by indication, particularly for life-threatening diseases. The SMR comparison between rofecoxib and celecoxib is cited (Rostom et al., 2007) and provides meaningful context for interpreting death reports.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "6aa8cd3e-7346-496e-a246-8c8b5528ee02",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study mapped active drug ingredients in >98% of reports using NLP and multiple synonym databases, identifying 2,729 unique ingredients (only 1,892 as primary suspects). On average, 16 different names exist per ingredient (fluoxetine has 378 synonyms). Ingredient mapping dramatically improved signal detection: fluoxetine-sexual dysfunction association changed from insignificant (RRR=1.75, q=1) to highly significant (RRR=6.67, q=2.56\u00d710\u207b\u2079\u2076) after aggregation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18, C48-C53 demonstrate a critical methodological contribution. The 98% mapping rate compares favorably to 81% with RxNorm alone (C53). The fluoxetine example provides compelling evidence that synonym aggregation is essential for valid signal detection, with dramatic changes in statistical significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "04f1af93-2924-477d-a73e-911050dd24a2",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Mapping to active ingredients strengthened drug-ADR signals. Indomethacin showed strong associations with gastric ulcer (RRR=10.40, q=3.65\u00d710\u207b\u2077\u00b2) and gastric ulcer hemorrhage (RRR=7.99, q=6.78\u00d710\u207b\u00b9\u2078) when assessed as an ingredient, but these signals were lost (q=1.00) when using trade names alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19 and C48 provide a concrete example demonstrating the value of ingredient mapping. The indomethacin case shows dramatic improvement in signal detection with known ADRs, validating the methodological approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "0af50132-792d-4cef-9b72-011aa5d000bd",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Approximately 5% of all drug reports conflate indication with ADR. This confusion increased linearly until 2011, then dropped suddenly, coinciding with an FDA advisory (March 28, 2011) providing clearer reporting guidelines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21, C56 identify a specific reporting bias and correlate its reduction with a regulatory intervention. The temporal analysis (Figure 3) supports the inference that the FDA guidance improved reporting quality, though causation cannot be definitively established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "408bd03c-029e-4dc9-8ad1-d9e1aa849cd9",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Rofecoxib (FDA approved 1999) showed strong associations with myocardial infarction (RRR=17.85, q<10\u207b\u2075) and cerebrovascular accident (RRR=17.69, q<10\u207b\u2075) from introduction. Following the Bombardier et al. (2000) publication linking rofecoxib to cardiovascular risk, physician reports remained constant while lawyer reports grew substantially, preceding the April 2002 label warning and September 2004 market withdrawal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 provide a well-documented case study with temporal correlation between scientific publications, regulatory actions, and reporting patterns. The shift in reporter demographics (physicians to lawyers) is particularly revealing of stimulated reporting bias. Figure 4 supports these temporal relationships.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "5ca1949a-05e7-43df-aedd-df0dba194aa8",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Celecoxib (FDA approved December 1998) showed increased reporting around September 2004 following rofecoxib withdrawal. Until December 2004, celecoxib reports were dominated by cerebrovascular accident (RRR up to ~35) and myocardial infarction (RRR up to ~45), similar to rofecoxib. These associations were driven primarily by lawyer reports and returned to background after rofecoxib withdrawal. Logistic regression confirmed myocardial infarction reports were significantly correlated with lawyer-filed celecoxib reports before 2005.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32, C70-C71 demonstrate stimulated reporting bias through temporal analysis and logistic regression. The pattern strongly suggests that celecoxib cardiovascular reports were influenced by the rofecoxib controversy rather than reflecting true drug effects. The control for rofecoxib co-administration (C31) strengthens this interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "2fda11e8-c775-41a6-9e07-a1bf71a7c94c",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Rosiglitazone (FDA approved May 1999) shows consistent associations with heart effects including congestive cardiac failure (RRR=31.99, q<10\u207b\u2075), coronary artery disease (RRR=26.32, q<10\u207b\u2075), cerebrovascular accident (RRR=11.72, q<10\u207b\u2075), and myocardial infarction (RRR=20.73, q<10\u207b\u2075). Unlike rofecoxib, the predominance of these effects remained unperturbed throughout the drug's lifetime despite varying absolute report numbers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 are well-supported by statistical analysis and temporal data (Figure 6). The consistency of the ADR profile over time, despite external events, contrasts with the stimulated reporting seen for celecoxib, suggesting these represent genuine drug effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "ca43ab4c-0c1c-4399-8e44-9f2e3e12d0a2",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Pioglitazone (FDA approved July 1999) shows distinct ADR profile from structurally similar rosiglitazone. While showing weak cardiac failure association (RRR=5.09, q<10\u207b\u2075) concentrated in a single 2002 peak, pioglitazone is strongly associated with bladder cancer (RRR=305.69, q<10\u207b\u2075) from 2009 onward. Bladder cancer is significantly underrepresented in rosiglitazone reports (RRR=0.12, q<10\u207b\u2075). Evidence links non-selective PPAR agonists (\u03b1+\u03b3) like pioglitazone to carcinogenesis, with increased bladder cancer incidence after >2 years treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40, C67 demonstrate how correcting FAERS biases can reveal mechanistically meaningful differences between structurally similar drugs. The temporal analysis (Figure 8) suggests the cardiac failure association is stimulated/artefactual, while the bladder cancer signal appears more genuine, supported by mechanistic literature. This represents a key finding of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "17843683-29ed-4b2b-baaf-f948e3bdcd0d",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "VEGF-R2 inhibitors show hypertension side effects only when exposure margin (EM = IC50/Cmax) is <13. Small molecule kinase inhibitors with relevant in vivo pharmacokinetics share this ADR with bevacizumab (VEGF-R2-specific antibody). An exposure margin around 10 is recommended for preclinical development to avoid hypertension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42, C63 demonstrate integration of pharmacokinetic data with FAERS analysis to establish mechanistic understanding. Figure 9 shows clear separation of drugs with/without hypertension based on exposure margin. The recommendation (C63) is appropriately cautious, acknowledging confounding factors while providing actionable guidance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "bbc8c442-4661-4d52-8b15-7f3d1df3af0a",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Risperidone (5,073 cases, RRR=113.82, q<10\u207b\u2075) and its metabolite paliperidone (123 cases, RRR=7.53, q<10\u207b\u2075) are strongly associated with gynecomastia, while aripiprazole (RRR=0.85, q~1) and methylphenidate (RRR=1.39, q~1) show no association. Despite similar D2 receptor potency between risperidone and aripiprazole, the difference is explained by mechanism of action (full vs. partial agonist) and particularly by pharmacokinetic exposure margins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47, C64 provide a compelling example of how pharmacokinetic context is essential for interpreting FAERS associations. The D2 receptor mechanism is well-established (C46), and Figure 10B shows that only risperidone/paliperidone have exposure margins <1 for D2, explaining the differential ADR profiles despite similar in vitro potency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "9ab9cdbd-b064-4fb4-87d4-d8c5b2641843",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "FAERS suffers from multiple forms of bias and data quality issues including stimulated reporting influenced by news events, regulatory announcements, and publications; report multiplications; and conflation of indications with ADRs. These redundancies, biases, and conflations affect analysis and interpretation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55 and C66 summarize the major data quality findings demonstrated throughout the paper. Multiple specific examples (rofecoxib, celecoxib, thalidomide, indication-ADR confusion) support these general characterizations. This represents a core contribution of the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "ddfb0631-dce7-4817-add7-75a3f0205f2e",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study used Relative Reporting Ratio (RRR) with \u03c7\u00b2 statistic for disproportionality signal detection. Associations were selected if reported \u22655 times, q-value <0.05, and RRR >1. Time-resolved profiles were calculated monthly from January 1997 to December 2015.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 clearly describe the statistical methodology. While the authors acknowledge RRR has limitations compared to more advanced methods, they appropriately justify its use for demonstrating how data cleaning improves signal detection. The methodology is transparent and reproducible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "4be09f59-55c9-49c8-b6d1-fbe0fc509d01",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Comparative analysis of ADRs can reveal underlying mechanisms, but simple drug-ADR or drug-target associations do not yield clinical relevance without pharmacokinetic information ensuring the implicated target is exposed to effective drug concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65 and C72 represent key conceptual conclusions supported by multiple examples (VEGF-R2 inhibitors, risperidone vs. aripiprazole). The paper demonstrates this principle repeatedly, showing that in vitro target activity alone is insufficient without PK context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    },
+    {
+      "id": "9a3887be-97b2-4935-a493-363463ec0840",
+      "content_id": "77f93873-580f-4351-bbd6-8e724032c8fb",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "FAERS could be improved by automatic drug-to-ingredient mapping, and definitive drug-ADR associations require dose and PK data (currently unavailable in FAERS). Once disentangled, FAERS offers unprecedented opportunities for tracking drug outcomes. Automated methods can identify and prioritize associations but cannot replace expert knowledge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C77 provide reasonable recommendations and acknowledge limitations. The suggestions are grounded in the demonstrated problems (C73, C74) and current limitations (C75). The characterization of automated methods' role (C77) is appropriately balanced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:24:31.861977Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "aa6a3204-709f-4120-b88f-d5fcfa86b124",
+      "result_id": "4b863a54-bd31-4520-b925-b5f797ef39ce"
+    },
+    {
+      "claim_id": "929af4c8-a358-4563-b22f-7d8980dfdb57",
+      "result_id": "4b863a54-bd31-4520-b925-b5f797ef39ce"
+    },
+    {
+      "claim_id": "df3da2b9-6962-438a-bbd1-65c26c09e474",
+      "result_id": "4b863a54-bd31-4520-b925-b5f797ef39ce"
+    },
+    {
+      "claim_id": "03491b60-32cd-4f38-a86a-2d588bcb217f",
+      "result_id": "d1ef60c2-bb29-4f1d-8cb2-24623748a161"
+    },
+    {
+      "claim_id": "1dc14bea-b0c5-4caa-b93b-ace7cb35f926",
+      "result_id": "d1ef60c2-bb29-4f1d-8cb2-24623748a161"
+    },
+    {
+      "claim_id": "f88f0725-197f-406a-8a50-1dcfef351d3d",
+      "result_id": "d1ef60c2-bb29-4f1d-8cb2-24623748a161"
+    },
+    {
+      "claim_id": "83c8d4da-98a5-45f7-98b4-581cf9f8e9e7",
+      "result_id": "5d190f2c-2a60-4235-9e68-3806b5953aae"
+    },
+    {
+      "claim_id": "c11f6fcf-733f-4853-b6ca-8a20ac17cdec",
+      "result_id": "5d190f2c-2a60-4235-9e68-3806b5953aae"
+    },
+    {
+      "claim_id": "2c30cf0b-c1d0-4512-86d4-e7ed63f46556",
+      "result_id": "5d190f2c-2a60-4235-9e68-3806b5953aae"
+    },
+    {
+      "claim_id": "08c3662b-c225-4696-a035-7ae7c799dfe3",
+      "result_id": "5d190f2c-2a60-4235-9e68-3806b5953aae"
+    },
+    {
+      "claim_id": "ec7fc50f-a947-4ca8-8c3b-512b58ae2edd",
+      "result_id": "5d190f2c-2a60-4235-9e68-3806b5953aae"
+    },
+    {
+      "claim_id": "359b61a6-fc40-4979-8490-df0222151247",
+      "result_id": "5d190f2c-2a60-4235-9e68-3806b5953aae"
+    },
+    {
+      "claim_id": "de9ce132-2389-4138-8707-6229de7a8ef8",
+      "result_id": "d7f2e55e-125d-4025-be9a-b08a95b328d4"
+    },
+    {
+      "claim_id": "d88f14f8-ee45-47ac-963a-57b0d8891496",
+      "result_id": "d7f2e55e-125d-4025-be9a-b08a95b328d4"
+    },
+    {
+      "claim_id": "f0c98dfd-77ce-4814-9ce4-23c8f4bee848",
+      "result_id": "d7f2e55e-125d-4025-be9a-b08a95b328d4"
+    },
+    {
+      "claim_id": "d9f90d78-df46-4f13-957b-506855b95102",
+      "result_id": "07bb5798-f3b8-4277-960c-10e278a1b3ac"
+    },
+    {
+      "claim_id": "ee2f6128-6089-4870-954d-1ca197250cd5",
+      "result_id": "07bb5798-f3b8-4277-960c-10e278a1b3ac"
+    },
+    {
+      "claim_id": "0d9a794f-dc41-4ce6-ad54-a235fc7e89e2",
+      "result_id": "07bb5798-f3b8-4277-960c-10e278a1b3ac"
+    },
+    {
+      "claim_id": "14de036b-0c35-406f-bb65-bccc796f7c06",
+      "result_id": "07bb5798-f3b8-4277-960c-10e278a1b3ac"
+    },
+    {
+      "claim_id": "3cf7cd2c-b9fe-4092-9e5a-66ac1981a730",
+      "result_id": "07bb5798-f3b8-4277-960c-10e278a1b3ac"
+    },
+    {
+      "claim_id": "ee96ee54-c6ab-4589-b8af-2e8167490c3c",
+      "result_id": "07bb5798-f3b8-4277-960c-10e278a1b3ac"
+    },
+    {
+      "claim_id": "fcde4fa5-875b-4a94-bb8c-073264f194fe",
+      "result_id": "6aa8cd3e-7346-496e-a246-8c8b5528ee02"
+    },
+    {
+      "claim_id": "12b4a533-75d2-42d3-991a-913670d9bac7",
+      "result_id": "6aa8cd3e-7346-496e-a246-8c8b5528ee02"
+    },
+    {
+      "claim_id": "2c2c994c-5bda-4408-9521-a7cc64fd5007",
+      "result_id": "6aa8cd3e-7346-496e-a246-8c8b5528ee02"
+    },
+    {
+      "claim_id": "1cd3d726-b272-4bf3-b0b0-92468d996151",
+      "result_id": "6aa8cd3e-7346-496e-a246-8c8b5528ee02"
+    },
+    {
+      "claim_id": "a898e14b-2d3f-43c9-99de-553b3c2aa28b",
+      "result_id": "6aa8cd3e-7346-496e-a246-8c8b5528ee02"
+    },
+    {
+      "claim_id": "7ad5b21f-7768-4f78-875c-e031d66714f7",
+      "result_id": "6aa8cd3e-7346-496e-a246-8c8b5528ee02"
+    },
+    {
+      "claim_id": "6bcb7a91-f552-459c-be9e-131d633dacf6",
+      "result_id": "6aa8cd3e-7346-496e-a246-8c8b5528ee02"
+    },
+    {
+      "claim_id": "9bb26ba7-73eb-42d9-bbc0-bd9edc799296",
+      "result_id": "6aa8cd3e-7346-496e-a246-8c8b5528ee02"
+    },
+    {
+      "claim_id": "2d662bbf-2619-4093-a9e8-fbade65aa1c3",
+      "result_id": "6aa8cd3e-7346-496e-a246-8c8b5528ee02"
+    },
+    {
+      "claim_id": "4a0a75ae-def9-4537-9b84-3dcf6a01d7db",
+      "result_id": "04f1af93-2924-477d-a73e-911050dd24a2"
+    },
+    {
+      "claim_id": "1cd3d726-b272-4bf3-b0b0-92468d996151",
+      "result_id": "04f1af93-2924-477d-a73e-911050dd24a2"
+    },
+    {
+      "claim_id": "3f8ff3b2-3d5a-4dac-8c02-bbab63f1a69d",
+      "result_id": "0af50132-792d-4cef-9b72-011aa5d000bd"
+    },
+    {
+      "claim_id": "a0577356-7aac-4449-b9a3-b17c9c071540",
+      "result_id": "0af50132-792d-4cef-9b72-011aa5d000bd"
+    },
+    {
+      "claim_id": "5a962db4-bfc2-4d47-97a2-67e8490b1360",
+      "result_id": "0af50132-792d-4cef-9b72-011aa5d000bd"
+    },
+    {
+      "claim_id": "33576cd7-d48c-47f9-912b-8788a5ce201e",
+      "result_id": "408bd03c-029e-4dc9-8ad1-d9e1aa849cd9"
+    },
+    {
+      "claim_id": "5fb41f9b-aadd-404c-a4a3-5f332601676d",
+      "result_id": "408bd03c-029e-4dc9-8ad1-d9e1aa849cd9"
+    },
+    {
+      "claim_id": "fde8c444-c745-4e88-bfe0-039509cd51d7",
+      "result_id": "408bd03c-029e-4dc9-8ad1-d9e1aa849cd9"
+    },
+    {
+      "claim_id": "f6d8e226-2134-4b15-aae9-68963cc642b0",
+      "result_id": "408bd03c-029e-4dc9-8ad1-d9e1aa849cd9"
+    },
+    {
+      "claim_id": "55c342b3-8406-48a7-bb74-c7fb535f2e64",
+      "result_id": "408bd03c-029e-4dc9-8ad1-d9e1aa849cd9"
+    },
+    {
+      "claim_id": "d5e7ff59-aef3-432b-a663-d19bd3b25eba",
+      "result_id": "408bd03c-029e-4dc9-8ad1-d9e1aa849cd9"
+    },
+    {
+      "claim_id": "d1268fcb-5c31-4cb1-8f72-d83f483ad35f",
+      "result_id": "5ca1949a-05e7-43df-aedd-df0dba194aa8"
+    },
+    {
+      "claim_id": "5c638a26-e690-4966-956e-38d3a9b24a6e",
+      "result_id": "5ca1949a-05e7-43df-aedd-df0dba194aa8"
+    },
+    {
+      "claim_id": "5da0edcb-a27e-4fe3-9312-ab5c5ab5d64d",
+      "result_id": "5ca1949a-05e7-43df-aedd-df0dba194aa8"
+    },
+    {
+      "claim_id": "bf1cb2ce-9057-441f-a448-e73267192a8f",
+      "result_id": "5ca1949a-05e7-43df-aedd-df0dba194aa8"
+    },
+    {
+      "claim_id": "4461449e-22b2-40ee-90b6-9589b86940ee",
+      "result_id": "5ca1949a-05e7-43df-aedd-df0dba194aa8"
+    },
+    {
+      "claim_id": "ad18e34a-e920-4620-a439-c7f2aa9ff98a",
+      "result_id": "5ca1949a-05e7-43df-aedd-df0dba194aa8"
+    },
+    {
+      "claim_id": "0183f62a-53aa-445c-a525-9ff9fd029eba",
+      "result_id": "5ca1949a-05e7-43df-aedd-df0dba194aa8"
+    },
+    {
+      "claim_id": "867f2a48-f4e2-45d3-9f1f-375c48f03eb9",
+      "result_id": "2fda11e8-c775-41a6-9e07-a1bf71a7c94c"
+    },
+    {
+      "claim_id": "92c29870-2d27-417c-bacc-db696f1c8b28",
+      "result_id": "2fda11e8-c775-41a6-9e07-a1bf71a7c94c"
+    },
+    {
+      "claim_id": "b511f095-725e-486b-abc1-074eedac40c0",
+      "result_id": "ca43ab4c-0c1c-4399-8e44-9f2e3e12d0a2"
+    },
+    {
+      "claim_id": "eb30ef89-7393-494c-89d9-33c4f904d02b",
+      "result_id": "ca43ab4c-0c1c-4399-8e44-9f2e3e12d0a2"
+    },
+    {
+      "claim_id": "c00635c0-5e1a-42ca-ae48-5592b5a50725",
+      "result_id": "ca43ab4c-0c1c-4399-8e44-9f2e3e12d0a2"
+    },
+    {
+      "claim_id": "a109bd31-4445-4ffe-967d-3b731f1601de",
+      "result_id": "ca43ab4c-0c1c-4399-8e44-9f2e3e12d0a2"
+    },
+    {
+      "claim_id": "b8519456-ea0b-4ed2-8c65-3dacb5169add",
+      "result_id": "ca43ab4c-0c1c-4399-8e44-9f2e3e12d0a2"
+    },
+    {
+      "claim_id": "e48b60b4-a58e-44ef-abfe-36021dcbc3e4",
+      "result_id": "ca43ab4c-0c1c-4399-8e44-9f2e3e12d0a2"
+    },
+    {
+      "claim_id": "8a7517b1-9eda-4fb7-809b-aa8a5624fd02",
+      "result_id": "ca43ab4c-0c1c-4399-8e44-9f2e3e12d0a2"
+    },
+    {
+      "claim_id": "dd08a369-2664-4d6a-be9b-35787aeea0b1",
+      "result_id": "17843683-29ed-4b2b-baaf-f948e3bdcd0d"
+    },
+    {
+      "claim_id": "9ed49423-1619-4703-bab9-32ea69cb6963",
+      "result_id": "17843683-29ed-4b2b-baaf-f948e3bdcd0d"
+    },
+    {
+      "claim_id": "d057267e-d87e-4caf-9873-ecbb2f5bc46c",
+      "result_id": "17843683-29ed-4b2b-baaf-f948e3bdcd0d"
+    },
+    {
+      "claim_id": "7c22f0ac-6726-4430-8444-404ab90c2ab9",
+      "result_id": "bbc8c442-4661-4d52-8b15-7f3d1df3af0a"
+    },
+    {
+      "claim_id": "7a0e77d7-acab-4f33-86dc-10cf3fafa313",
+      "result_id": "bbc8c442-4661-4d52-8b15-7f3d1df3af0a"
+    },
+    {
+      "claim_id": "090c0805-9435-43e5-b591-8341cb5d5ab5",
+      "result_id": "bbc8c442-4661-4d52-8b15-7f3d1df3af0a"
+    },
+    {
+      "claim_id": "0269e265-7cb4-4f75-b74a-41b0bd38cdbf",
+      "result_id": "bbc8c442-4661-4d52-8b15-7f3d1df3af0a"
+    },
+    {
+      "claim_id": "7a575108-9daa-44ac-89dd-44c67aa1b444",
+      "result_id": "bbc8c442-4661-4d52-8b15-7f3d1df3af0a"
+    },
+    {
+      "claim_id": "6ae1a724-c839-46f4-bc35-c45fd6df7f6a",
+      "result_id": "bbc8c442-4661-4d52-8b15-7f3d1df3af0a"
+    },
+    {
+      "claim_id": "281e81d0-e7d6-4c9f-8467-3ae545b901e6",
+      "result_id": "9ab9cdbd-b064-4fb4-87d4-d8c5b2641843"
+    },
+    {
+      "claim_id": "1cfea598-124d-4b5f-9de6-400b8446ba43",
+      "result_id": "9ab9cdbd-b064-4fb4-87d4-d8c5b2641843"
+    },
+    {
+      "claim_id": "c14acc82-d393-48ac-872a-ad642f6bf550",
+      "result_id": "ddfb0631-dce7-4817-add7-75a3f0205f2e"
+    },
+    {
+      "claim_id": "be8b6e57-438e-44d6-bc05-e074bdee938e",
+      "result_id": "ddfb0631-dce7-4817-add7-75a3f0205f2e"
+    },
+    {
+      "claim_id": "f6b0db93-4451-4a2d-a2c4-87b527ecdeef",
+      "result_id": "ddfb0631-dce7-4817-add7-75a3f0205f2e"
+    },
+    {
+      "claim_id": "6a4475b5-4f6a-4601-a373-2c38a3a5e51e",
+      "result_id": "4be09f59-55c9-49c8-b6d1-fbe0fc509d01"
+    },
+    {
+      "claim_id": "aba55e55-dd81-4d50-bee0-d3acd75140d1",
+      "result_id": "4be09f59-55c9-49c8-b6d1-fbe0fc509d01"
+    },
+    {
+      "claim_id": "cdd03dff-c468-4314-91fd-ec6a1c00c9d9",
+      "result_id": "9a3887be-97b2-4935-a493-363463ec0840"
+    },
+    {
+      "claim_id": "60b351f6-6313-4b42-b7be-0cb6cab071ab",
+      "result_id": "9a3887be-97b2-4935-a493-363463ec0840"
+    },
+    {
+      "claim_id": "75616e93-d34d-4176-aac9-573560ce9d76",
+      "result_id": "9a3887be-97b2-4935-a493-363463ec0840"
+    },
+    {
+      "claim_id": "57510451-94da-484e-966b-a01635ec3c47",
+      "result_id": "9a3887be-97b2-4935-a493-363463ec0840"
+    },
+    {
+      "claim_id": "ac651ce6-23fb-4146-af42-98b76e80d5b0",
+      "result_id": "9a3887be-97b2-4935-a493-363463ec0840"
+    }
+  ],
+  "comparisons": []
+}

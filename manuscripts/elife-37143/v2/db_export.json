@@ -1,0 +1,1422 @@
+{
+  "submission": {
+    "id": "147911ba-6667-49d5-8c7e-ebcec89e102c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T02:18:39.690450Z",
+    "updated_at": "2025-12-02T02:18:39.690450Z"
+  },
+  "content": [
+    {
+      "id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "submission_id": "147911ba-6667-49d5-8c7e-ebcec89e102c",
+      "content_type": "manuscript",
+      "content_text": "# Decoupled maternal and zygotic genetic effects shape the evolution of development\n\n## Authors\n\n- Christina Zakas<sup>1</sup> \u2020\n- Jennifer M Deutscher<sup>1</sup>\n- Alex D Kay<sup>1</sup>\n- Matthew V Rockman<sup>1</sup> ([ORCID: 0000-0001-6492-8906](https://orcid.org/0000-0001-6492-8906)) \u2020\n\n### Affiliations\n\n1. Center for Genomics & Systems Biology, Department of Biology New York University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEvolutionary transitions from indirect to direct development involve changes in both maternal and zygotic genetic factors, with distinctive population-genetic implications, but empirical data on the genetics of such transitions are lacking. The polychaete Streblospio benedicti provides an opportunity to dissect a major transition in developmental mode using forward genetics. Females in this species produce either small eggs that develop into planktonic larvae or large eggs that develop into benthic juveniles. We identify large-effect loci that act maternally to influence larval size and independent, unlinked large-effect loci that act zygotically to affect discrete aspects of larval morphology. The likely fitness of zygotic alleles depends on their maternal background, creating a positive frequency-dependence that may homogenize local populations. Developmental and population genetics interact to shape larval evolution.\n\n## Introduction\n\nMany animals develop indirectly via larval stages that are morphologically and ecologically distinct from their adult forms. Hundreds of lineages across animal phylogeny have secondarily lost larval forms, instead producing offspring that directly develop into adult form without a distinct larval ecological niche (Raff, 1996; Smith et al., 2007; Strathmann, 1985; Thorson, 1950). Indirect development in the sea is typically planktotrophic: females produce large numbers of small offspring that require exogenous planktonic food to develop before metamorphosing into benthic juveniles. Direct development is typically lecithotrophic: females produce a smaller number of larger eggs, each developing into a juvenile without the need for larval feeding, provisioned by yolk. Evolutionary theory suggests that these alternative developmental strategies represent stable alternative fitness peaks, while intermediate states are disfavored (Christiansen and Fenchel, 1979; Havenhand, 1995; Strathmann, 1985; Vance, 1973). Transitions from planktotrophy to lecithotrophy thus represent radical and coordinated transformations of life-history, fecundity, ecology, dispersal, and development (Duda and Palumbi, 1999; Jeffery and Emlet, 2003; McEdward and Miner, 2001; Raff, 1996; Romiguier et al., 2014; Wray, 1995). Here we dissect this transition in the polychaete annelid Streblospio benedicti, a genetically tractable species that harbors both states as heritable variation (Levin, 1984; Levin et al., 1991; Zakas and Rockman, 2014).\n\nStreblospio benedicti is a common and widespread benthic polychaete found in estuaries throughout North America. Females brood fertilized embryos in dorsal brood pouches and release larvae into the water column. Larvae remain pelagic until they are competent to metamorphose and return to the benthos. Females fall into two classes exhibiting classic life-history trade-offs: planktotrophic mothers produce small (~100 um) eggs that develop into obligately feeding larvae that spend weeks in the plankton. These larvae grow larva-specific swimming chaetae that are thought to deter predation (Blake, 1969) (Figure 1A). Lecithotrophic mothers produce large (~200 um) eggs that develop into larvae that do not require exogenous food and quickly leave the water column as benthic juveniles. These larvae lack swimming chaetae and a second type of larva-specific morphological structure, anal cirri containing bacillary cells, which are distinctive cells that contain rhabdites of unknown function (Gibson et al., 2010) (Figure 1A). There are also differences during embryogenesis (McCain, 2008) and organogenesis (Gibson et al., 2010; Pernet and McHugh, 2010), where accelerated development of juvenile features and truncated development of larval features occurs in lecithotrophs. Despite these developmental and larval differences, adults are indistinguishable at the level of gross morphology. There are no known behavioral differences between the adults, though it is possible that preferences in mating or habitat choice occur. Unlike examples of polyphenism, environmental factors do not substantially alter egg size or subsequent offspring type (Levin and Bridges, 1994; Levin and Creed, 1986). Natural populations consist of only one of the two phenotypic extremes, often occurring in close geographic proximity but rarely directly overlapping (Levin, 1984; Schulze et al., 2000; Zakas and Wares, 2012), and larval mode in the population does not correlate with any known environmental gradient. Despite the persistence of these two dramatically different strategies in nature, they can be crossed in the lab producing an array of morphological and developmental intermediates (Levin et al., 1991; Zakas and Rockman, 2014; Figure 1B). Stable populations of different larval modes suggest that migration-selection balance on small ecological scales is acting to maintain both types in the larger population.\n\nWe genetically dissected developmental mode by crossing a lecithotrophic male from Long Beach, California, and a planktotrophic female from Bayonne, New Jersey. Studies of these populations have found them to be homogeneous in larval mode but little differentiated from one another across the genome (Rockman, 2012; Zakas and Rockman, 2014; Zakas and Rockman, 2015), consistent with ongoing gene flow between larval modes in their native East Coast range (Zakas and Wares, 2012). West Coast populations, including Long Beach, are exclusively lecithotrophic and result from a 20th century introduction from an East Coast source (Zakas and Wares, 2012).\n\nGenetic models for evolutionary transitions from planktotrophy to lecithotrophy require traversal of intermediate states in multivariate phenotype space, which are predicted to be suboptimal with respect to fitness (Vance, 1973; Whitlock et al., 1995) (Figure 1C). The simplest scenario is that co-adapted trait combinations are affected by shared alleles, either by pleiotropy (for example, ref [Hall et al., 2006]) or tight linkage (e.g., a supergene with suppressed recombination [Jones et al., 2012; Joron et al., 2011; Yeaman, 2013]). The necessity to coordinate maternal traits (larval size) with zygotic traits (larval morphology) adds additional constraints (Kirkpatrick and Lande, 1989; Wade, 1998; Wolf and Brodie, 1998; Wolf and Wade, 2016). Figure 1C shows that alternative paths from planktotrophy to lecithotrophy make different predictions about the correlations among genetic effects. In particular, the presence of facultative planktotrophy (i.e., larvae can feed but do not require food) in lecithotrophic S. benedicti larvae (Allen and Pernet, 2007; Pernet and McArthur, 2006) provides one suggestion that evolution could traverse the larval-size axis, from small to large, prior to traversing the larval morphology axis, from \u2018complex\u2019 feeding larvae to \u2018simple\u2019 non-feeding larvae with accelerated development of juvenile features (Smith et al., 2007; Wray, 1996). Nevertheless, in natural populations we observe only the two extremes: large, \u2018simple\u2019 lecithotrophs, and small, \u2018complex\u2019 planktotrophs.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/37143/elife-37143-fig1-v2.jpg)\n\n**Figure 1.:** (A) Wild populations occupy two extremes of larval size and form: planktotrophic larvae (bottom) carry larva-specific chaetae and anal cirri, while lecithotrophic larvae (top) lack these traits and are capable of adopting a benthic habit without feeding. (B) G2 animals (right panel) are intermediate in size and variable in their larval morphologies. We measured larval area, chaetae length (red), presence of anal cirri (purple arrows) and number of chaetae per side, when present (blue dots). (C) Evolutionary theory and the absence of intermediates in the wild suggest a hypothetical fitness landscape, in which planktotrophs and lecithotrophs occupy fitness peaks separated by a valley in size-shape-fitness space (Christiansen and Fenchel, 1979; Havenhand, 1995; Strathmann, 1985; Vance, 1973). Transitions from planktotrophy to lecithotrophy may involve single-step pleiotropic transformations (red arrow) or independent evolution of size and form (blue arrow).\n\n## Results\n\nFrom the F1 progeny of our cross between a lecithotroph and planktotroph, we generated a G2 panel by crossing one F1 male with four F1 females. We measured larval features \u2013 size, number and length of swimming chaetae, and presence or absence of anal cirri \u2013 on each G2 animal, then raised it to adulthood and crossed it to another G2 animal. From the progeny of these crosses, we measured average size of each G2 female\u2019s G3 offspring. This extra generation is required because larval size is a maternal-effect trait\u00a0(Zakas and Rockman, 2014). Indeed, we find that the larval size of a G2 female is uncorrelated with the average size of her G3 progeny (Figure 2A). The G2 larvae all develop with equivalent maternal genetic effects, as their F1 mothers are heterozygotes for planktotrophic and lecithotrophic alleles. By contrast, maternal-effect genes are segregating among G2 females, and so G3 larval sizes reflect inherited maternal-effect variation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/37143/elife-37143-fig2-v2.jpg)\n\n**Figure 2.:** (A) Larval size is uncorrelated between the G2 and G3 generations (r = \u20130.1, p=0.16), consistent with maternal inheritance. (B) The 22 chromosomes of a male from the Bayonne population include a large Y (arrow). Scale bar is 10 \u00b5m in panels B-D. (C) Meiotic chromosomes at diakinesis in the same animal show 12 objects, putatively 10 autosomal bivalents and two sex-chromosome univalents. (D) Zygotene in a Bayonne female shows 11 bivalents. (E) Interval mapping of four traits in the G2 population identifies seven linkages on six chromosomes. Thresholds for genome-wide significance at p=0.05 are indicated for each trait by horizontal lines, determined by 1000 structured permutations that account for G2 family structure.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37143/elife-37143-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Here we show representative images of mitotic and meiotic chromosomes from Bayonne and Long Beach males and females. The large Y chromosome (arrow) is visible in the male but not in female mitotic spreads; both sexes show 22 chromosomes. In males from both populations, diakinesis shows 12 objects, a mixture of ring and rod bivalents and putative unpaired sex chromosomes. Female zygotene shows 11 bivalents.\n\nNext we constructed a genetic map, the first for any annelid (Supplementary file 1). We genotyped F1 and G2 animals at 702 markers, which fell into 10 autosomal and one sex-linked linkage group (LG)\u00a0(Broman et al., 2003; R Core Development Team, 2015). In parallel, we defined the karyotype for S. benedicti, which includes 10 pairs of autosomes and one pair of sex chromosomes (Figure 2B\u2013D, Figure 2\u2014figure supplement 1). Males are heterogametic, diagnosed by a large Y chromosome. The karyotypes are grossly indistinguishable between Long Beach and Bayonne, and in each population we observe 11 bivalents at meiotic prophase in females and 12 bodies, presumably 10 autosomal bivalents and two sex-chromosome univalents, at diakinesis in males (Figure 2C,D; Figure 2\u2014figure supplement 1).\n\nG2 larvae are intermediate in size and variable in morphology; 15% lack larval chaetae and 25% lack anal cirri. As expected for a maternal trait, G2 larval size showed no linkage to G2 genotype. Every other phenotype implicated a small number of large-effect loci (Figure 2E; Table 1). Moreover, the loci are almost entirely independent: the maternal-effect loci shaping G3 larval size are unlinked to the zygotic-effect loci shaping G2 larval morphology. The morphology loci are also largely independent, with a major-effect anal cirri locus on LG5 and loci uniquely affecting number and length of swimming chaetae on LG8 and LG9. The two chaetal traits also share a common locus on LG3. Each QTL has a large effect (Figure 3A) and explains a large proportion of trait variance (Table 1), and the effects are largely additive (Table 2). The two exceptions to additivity are in chaetae length at the LG3 locus (the chaetae-shortening allele is dominant) and larval size, where there is significant epistasis between the two maternal-effect loci on LG6 and LG7. We corroborated the single-trait mapping results by performing a fully multivariate mapping analysis for maternal-effect larval size, chaetae number, and chaetae length. This analysis identified the same loci as the univariate analyses, and showed that the maternal effects and zygotic effects are largely independent (i.e., most effects are nearly orthogonal in this three-dimensional space: Figure 3B).\n\n**Table 1.**\n G2 phenotypic variance explained by significant loci and interactions.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Trait</th>\n      <th>Locus</th>\n      <th>Variance explained*</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Number of chaetae</td>\n      <td>LG3</td>\n      <td>21.8%</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>LG8</td>\n      <td>18.2%</td>\n    </tr>\n    <tr>\n      <td>Length of chaetae</td>\n      <td>LG3</td>\n      <td>25.8%</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>LG9</td>\n      <td>13.5%</td>\n    </tr>\n    <tr>\n      <td>G3 mean larval size</td>\n      <td>LG6</td>\n      <td>18.8%</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>LG7</td>\n      <td>25.4%</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>LG6 x LG7</td>\n      <td>5.2%</td>\n    </tr>\n    <tr>\n      <td>Presence of anal cirri</td>\n      <td>LG5</td>\n      <td>18.9%</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Percent variance explained is estimated by dropping the specified locus or interaction from the best-fitting genetic model for the phenotype (File S4). In the case of anal cirri, the reported number is the percent deviance explained in a logistic regression._\n\n**Table 2.**\n Effect sizes for significant QTL for each trait.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Locus</th>\n      <th>Effect</th>\n      <th>Effect size</th>\n      <th>SE</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Chaetae Number</td>\n      <td></td>\n      <td>number</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Intercept</td>\n      <td></td>\n      <td>4.29</td>\n      <td>0.18</td>\n    </tr>\n    <tr>\n      <td>LG3 2.5 cM</td>\n      <td>Additive</td>\n      <td>\u22122.53</td>\n      <td>0.27</td>\n    </tr>\n    <tr>\n      <td>LG3 2.5 cM</td>\n      <td>Dominance</td>\n      <td>\u22120.58</td>\n      <td>0.35</td>\n    </tr>\n    <tr>\n      <td>LG8 1.7 cM</td>\n      <td>Additive</td>\n      <td>\u22122.30</td>\n      <td>0.27</td>\n    </tr>\n    <tr>\n      <td>LG8 1.7 cM</td>\n      <td>Dominance</td>\n      <td>0.31</td>\n      <td>0.35</td>\n    </tr>\n    <tr>\n      <td>Chaetae Length*</td>\n      <td></td>\n      <td>\u00b5m</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Intercept</td>\n      <td></td>\n      <td>140.02</td>\n      <td>5.02</td>\n    </tr>\n    <tr>\n      <td>Family A</td>\n      <td></td>\n      <td>2.60</td>\n      <td>6.53</td>\n    </tr>\n    <tr>\n      <td>Family C</td>\n      <td></td>\n      <td>0.01</td>\n      <td>6.09</td>\n    </tr>\n    <tr>\n      <td>Family H</td>\n      <td></td>\n      <td>\u221219.72</td>\n      <td>6.04</td>\n    </tr>\n    <tr>\n      <td>LG3 3.6 cM</td>\n      <td>Additive</td>\n      <td>\u221229.59</td>\n      <td>3.17</td>\n    </tr>\n    <tr>\n      <td>LG3 3.6 cM</td>\n      <td>Dominance</td>\n      <td>\u221220.26</td>\n      <td>4.06</td>\n    </tr>\n    <tr>\n      <td>LG9 1.5 cM</td>\n      <td>Additive</td>\n      <td>\u221225.07</td>\n      <td>3.61</td>\n    </tr>\n    <tr>\n      <td>LG9 1.5 cM</td>\n      <td>Dominance</td>\n      <td>4.11</td>\n      <td>4.33</td>\n    </tr>\n    <tr>\n      <td>G3 Offspring Area</td>\n      <td></td>\n      <td>\u00b5m2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Intercept</td>\n      <td></td>\n      <td>29516.79</td>\n      <td>352.34</td>\n    </tr>\n    <tr>\n      <td>LG6 17.9 cM</td>\n      <td>Additive</td>\n      <td>3356.14</td>\n      <td>498.74</td>\n    </tr>\n    <tr>\n      <td>LG6 17.9 cM</td>\n      <td>Dominance</td>\n      <td>\u2212908.67</td>\n      <td>704.69</td>\n    </tr>\n    <tr>\n      <td>LG7 2.1 cM</td>\n      <td>Additive</td>\n      <td>4020.69</td>\n      <td>546.01</td>\n    </tr>\n    <tr>\n      <td>LG7 2.1 cM</td>\n      <td>Dominance</td>\n      <td>\u2212228.43</td>\n      <td>704.69</td>\n    </tr>\n    <tr>\n      <td>LG6 x LG7</td>\n      <td>AxA</td>\n      <td>1254.06</td>\n      <td>821.20</td>\n    </tr>\n    <tr>\n      <td>LG6 x LG7</td>\n      <td>DxA</td>\n      <td>232.10</td>\n      <td>1092.04</td>\n    </tr>\n    <tr>\n      <td>LG6 x LG7</td>\n      <td>AxD</td>\n      <td>\u22123297.03</td>\n      <td>997.48</td>\n    </tr>\n    <tr>\n      <td>LG6 x LG7</td>\n      <td>DxD</td>\n      <td>62.26</td>\n      <td>1409.39</td>\n    </tr>\n    <tr>\n      <td>Anal Cirri</td>\n      <td></td>\n      <td>logistic</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Intercept</td>\n      <td></td>\n      <td>3.85</td>\n      <td>26.57</td>\n    </tr>\n    <tr>\n      <td>LG5 5.1 cM</td>\n      <td>Additive</td>\n      <td>\u22126.68</td>\n      <td>53.14</td>\n    </tr>\n    <tr>\n      <td>LG5 5.1 cM</td>\n      <td>Dominance</td>\n      <td>\u22126.07</td>\n      <td>53.14</td>\n    </tr>\n  </tbody>\n</table>\n\n_*This model includes a family effect, coded with Family F as the reference family_\n\n![Figure 3.](https://cdn.elifesciences.org/articles/37143/elife-37143-fig3-v2.jpg)\n\n**Figure 3.:** (A) Loci have substantial and largely additive effects. Each boxplot shows the phenotype distribution as a function of the specified G2 two-locus genotype, and each box is colored according to the number of planktotroph (P) and lecithotroph (L) alleles it carries. The horizontal bar shows the median, the box spans the interquartile range, the whiskers encompass all data within 1.5 times the interquartile range, and points beyond this range are shown individually. (B) Multivariate analysis shows that the effects of the five loci in panel A are largely restricted to maternal or zygotic traits. The additive-effect vectors for lecithotrophic alleles in three-trait space are here projected onto two dimensions. Arrow color corresponds to the locus colors in panel A. The major maternal-effect loci are strikingly nearly orthogonal to the major zygotic effects (LG3 and LG8), while the locus on LG9 is mildly pleiotropic, with major effects on chaetae length and minor effects on number and offspring size (all in the aligned direction: shorter chaetae, fewer chaetae, larger offspring).\n\nOur results imply that matings between animals of alternative developmental modes will routinely generate mismatches between larval size and morphology. This genetic architecture creates a strong selective barrier to adaptation: zygotic-effect alleles that migrate into new populations will find themselves tested against the local maternal-effect background\u00a0(Kirkpatrick and Lande, 1989; Wolf and Brodie, 1998; Wolf, 2000). This maternal-by-zygotic epistasis for fitness can inhibit adaptation to local environmental conditions by creating runaway coevolution (Wade, 1998): the locally common maternal background creates a selective regime favoring matching zygotic-effect alleles.\n\nThis frequency-dependent runaway model assumes that zygotic-effect alleles are penetrant across maternal-effect backgrounds. An alternative is that zygotic effects are masked in mismatched maternal backgrounds, allowing them to persist invisibly until their matching maternal background becomes available. To test this possibility, we backcrossed 30 G2 males (which, like all of the G2s, have an F1 maternal background) to planktotrophic females, thereby shifting the maternal background to assess the penetrance of the chaetae loci. We found that the zygotic-effect loci that affect chaetae length and number in an F1 maternal background also do so in the planktotroph maternal background (length: p<10\u22124; number p<10\u22126; Figure 4). We estimate a negligible effect of the locus on LG9, but our analysis of that locus is underpowered due to unbalanced genotype frequencies among the 30 G2 males.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/37143/elife-37143-fig4-v2.jpg)\n\n**Figure 4.:** Each histogram is the distribution of the number of chaetae in the offspring of one G2 male and a planktotrophic female from the Bayonne population. Approximately 45 offspring per family were measured. Each section of the plot bounded by vertical lines represents a class of G2 male genotypes at the two chaetae-number QTL. Genotypes are shown below, from doubly homozygous planktotrophic genotypes (left) to doubly homozygous lecithotrophic genotypes (right). Note that the progeny of most heterozygous G2 males have multimodal distributions, demonstrating segregation of large-effect alleles. Some offspring of the males homozygous for lecithotrophic alleles completely lack chaetae, despite their planktotrophic maternal background.\n\nThe backcross data demonstrate that zygotically-acting alleles are penetrant in planktotrophic maternal backgrounds, and thus these alleles cannot fully \u2018hide\u2019 in mismatched populations. However, it remains possible that variation within genotypic classes is such that an occasional larva will have a fully planktotrophic or lecithotrophic phenotype despite carrying mismatched alleles (Zakas and Rockman, 2014). This raises the possibility that maternal effects can allow for the accumulation of standing genetic variation in a population by masking unfit genotypic combinations from strong selection. Moreover, maternal-effect loci are sex-limited in their expression, and alleles can thus persist in populations at higher frequencies than unconditionally expressed alleles (Wade, 1998).\n\n## Discussion\n\nWe find that co-adapted life-history traits are strikingly modular, where each of the phenotypes has a largely independent genetic basis with QTL occurring on different chromosomes. This suggests the lecithotrophic larval strategy evolved through the stepwise accumulation of multiple genetic changes throughout the genome. Maternally-determined larval size has an independent genetic basis from other traits that are perfectly correlated in natural populations. While the most direct evolutionary path from plantkotrophy to lecithotrophy involves pleiotropic mutations that move populations diagonally across the size/shape space (Figure 1C), we observe that mutational effects are at right angles to one another. The lack of strong correlated effects among alleles is compatible with the evolution of lecithotrophy via a facultatively planktotrophic intermediate\u00a0(Smith et al., 2007; Wray, 1996); that is, large larval size may have evolved prior to the loss of larval morphology (Figure 1C).\n\nUnder a broad range of assumptions, theory predicts that local adaptation in the face of ongoing gene flow should ultimately lead the causal alleles to converge at one or a few genomic loci, as opposed to an accumulation of genetic differences throughout the genome (Kirkpatrick and Barton, 2006; Yeaman and Whitlock, 2011), particularly in the context of maternal-by-zygotic epistasis (Wade, 1998). Our genetic results are therefore consistent with one component of the theoretical expectations: individual traits are influenced by one or two genomic regions of large-effect, which could in turn represent clusters of underlying genes. However, the overall modularity of these phenotypes is unexpected as the loci affect discrete traits rather than the larval syndrome as a whole. Loci affecting different traits are located on different chromosomes, indicating that correlated life-history phenotypes are genetically separable. We identified six chromosomes with large effects for four traits, implying that S. benedicti populations can segregate 36 = 729 possible genotypic combinations, most of which would produce combinations of intermediate phenotypes that are expected to be maladaptive.\n\nFinally, we found that the evolutionary transition to lecithotrophic development requires the interaction of two genotypes, the mother and offspring. Because of this dual control of larval phenotype, the likely fitness of a zygotic allele depends on the probability it occurs in a favorable maternal genetic background. This genetic architecture provides an explanation for the phenotypic homogeneity of natural populations. The independent genetic basis of maternal and zygotic genetic effects on development shapes the accumulation of variation necessary for selection and local adaptation.\n\n## Materials and methods\n\n### Cross design\n\nWe crossed a single outbred Bayonne planktotrophic female to a Long Beach lecithotrophic male to generate F1s. Four F1 females were crossed to a single F1 male to produce four half-sib G2 families. We intercrossed the G2 animals to generate G3 families, and we crossed a subset of G2 males to Bayonne females to generate backcross families.\n\n### Phenotyping\n\nWe imaged G2 individuals live so they could be reared to adulthood and crossed to produce G3s. A panel of 266 G2 larvae was collected within 24 hr of release from their mothers and pipetted individually onto a 0.2% agar-seawater pad on a depression slide. We imaged larvae with a Zeiss Axio Imager M2 with 20x DIC objective, and washed them into individual wells in a 24-well plate where they developed to juvenile stage, provisioned with Dunaliella salina algae. We measured larval size (area), chaetae number, length of the longest chaeta, and presence/absence of pronounced anal cirri from images using ImageJ (NIH).\n\nOnce G2 animals reached adulthood, fed with defaunated mud, we paired them randomly for crosses. Because offspring size is proportional to egg size and has a strong additive maternal basis (Zakas and Rockman, 2014), we use average G3 larval size as a phenotype of the G2 mother. G3 larvae were fixed in 4% formaldehyde overnight, transferred to PBS buffer, and mounted on slides in a long-term stable mountant. We then imaged and measured larval area as above. Fixed larvae maintained their morphology relative to live larvae when compared from the same clutch. Backcross larvae were fixed and measured in the same manner.\n\nRaw phenotype data are included as part of an Rqtl cross object in Supplementary file 1, and data for backcross larvae are included in Supplementary file 2.\n\n### Genotyping\n\nFor each Parent, F1 and G2 individual, we extracted DNA using the Qiagen DNeasy kit. Total worm DNA was sent to SNPsaurus for NextRAD genotyping-by-sequencing. NextRAD uses a primer-based approach to amplify a selection of sequences throughout the genome in order to have a reduced representation library for sequencing. PCR primers amplify genomic loci consistently between samples\u00a0(Russello et al., 2015).\n\n376 libraries were sequenced on Illumina HiSeq 2500 to a depth of\u00a0~20 x coverage. Reads were aligned using Samtools\u00a0(Li et al., 2009) to a 805 MB (in fragments over 300 bp) reference genome assembly. The reference genome was constructed from Illumina Hiseq PE-100 reads of three male S. benedicti libraries (insert sizes of 300, 500, 800 bp) assembled with Platanus\u00a0(Kajitani et al., 2014).\n\nSNPsaurus aligned reads to the reference genome at 97% identity to reduce spurious alignments, and allowed only two mismatches per read to the reference. SNPs were called in vcftools\u00a0(Danecek et al., 2011) and filtered to meet QC requirements by removing loci that had more than two alleles or less than 10% occurrence across all samples. From more than a million scaffolds in the reference assembly, 939 contained SNPs that passed QC, resulting in 1,389 SNPs.\n\n### Karyotyping\n\nWe imaged giemsa-stained chromosomes from cells at mitotic metaphase from laboratory-raised inbred (F5-F8) males and females from the Bayonne and Long Beach populations. We also imaged meiotic diakinesis in males and zygotene in females. We used a karyotyping protocol modeled closely on Rowell et al. (2011). Briefly, worm tissue was incubated in 0.05% colchicine in artificial seawater for 90 min, then subjected to a hypotonic series reaching 1:4 ASW:H20 over one hour. The tissue was then fixed with freshly prepared 3:1 Methanol:Acetic Acid fixative, with three fixative changes over one hour. Next, tissue was macerated on a glass slide in 60% acetic acid, using glass needles. Finally, after the slides had dried, we stained them with 5% Giemsa stain in phosphate-buffered saline. We imaged the slides on a Zeiss Axio Imager M2 with 100x objective.\n\nPreparations from both sexes from both populations revealed a consistent karyotype of 2n = 22 and no gross differences between populations. Males are heteromorphic, carrying a distinctive Y chromosome that is substantially larger than every other chromosome. Among annelids with XY chromosomal sex determination, the Y is often larger than the X, as in species of Hediste (Tosuji et al., 2004). In Polydora curiosa, the only spionid previously known to have heteromorphic sex chromosomes (2n = 34 XY), the Y is larger than all other chromosomes (Korablev et al., 1999), as we observe in S. benedicti. Many other species of Polydora lack heteromorphic sex chromosomes (Korablev et al., 1999), leaving the potential homology of the large Y chromosomes in P. curiosa and S. benedicti uncertain.\n\nMeiotic material from females of each population shows 11 bivalents at zygotene. In male meiotic material from each population, we observe 12 structures at diakinesis, including a mixture of ring and rod bivalents. We hypothesize that two of the 12 structures are X- and Y-chromosome univalents. This pattern of unpaired X and Y chromosomes at metaphase I is known among plant and insect species\u00a0(Brady and Paliulis, 2015). Korablev et al. (1999) observed that the X and Y pair end-to-end at metaphase I in Polydora curiosa, which therefore differs from S. benedicti.\n\n### Linkage map construction\n\nData and annotated scripts used to generate S. benedicti linkage maps are included in Supplementary file 3.\n\nWe filtered data to include only the 313 unique samples for which the mean read depth at the 1389 SNP markers was greater than 15 and for which more than 1000 SNP genotypes were called. Unfortunately, due to sample quality issues, we were unable to generate reliable genotype calls from the two P0 animals or from the F1 male and four F1 females that parented the four F2 families. We retained 47 F1 and 266 G2 individuals.\n\nWe tested each SNP for sex linkage by applying Fisher\u2019s exact test to genotype counts within each family and then combining the p-values using Fisher\u2019s meta-analysis. For non-sex-linked contigs that contain multiple SNPs, we manually recoded each contig, when possible, to be a single intercross marker, with inferred P0 genotypes AA x BB. These inferences are straightforward given multiple SNPs per contig and our data from a panel of F1s and four half-sib G2 families. In some cases, individual G2 families segregated haplotypes that were not all distinguishable. For example, if P0 haplotypes were AB x AC, segregation in G2 families descended from AC x BC F1 parents is fully resolvable, but segregation from AA x BC F1 parents is not, because the P0 origin of A haplotypes in the G2 is ambiguous. In such cases, we assigned partial genotypes in the relevant families (i.e., we treated them as dominant rather than codominant markers). However, we only recoded multi-SNP contigs for which segregation in at least one G2 family was fully resolvable. Note that the assignment of genotypes to the maternal vs. paternal P0 is arbitrary because we lack genotypes for those individuals. To call a marker genotype for an individual worm, we required that all SNPs in the contig marker had to have genotype calls that conform to an intact P0 haplotype; this adds a layer of stringency in excluding genotypes that contain any erroneous SNP calls. Most multi-SNP contigs contain two or three SNPs, but one contained 16 SNPs spread across multiple sequencing reads. Because of missing data and genotype error, the requirement for intact P0 haplotypes across 16 SNPs is too stringent, and this contig was recoded into nine separate markers (five multi-SNP and four single SNP, based on the distribution of the SNPs across sequencing reads).\n\nIn recoding multi-SNP contigs as single markers, we identified five strains whose data showed very high rates of incompatibility with possible segregation patterns and 16 strains that showed probable pedigree errors (i.e., their genotypes were inconsistent with maternity by the F1 mother shown in their records but compatible with one of the other F1 mothers). These 21 strains were excluded from subsequent analysis, leaving a dataset of 292 worms distributed across five families (Table 3).\n\n**Table 3.**\n Number of individuals from each family used in mapping crosses.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Generation</th>\n      <th>Mother</th>\n      <th>Father</th>\n      <th>Males</th>\n      <th>Females</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>F1</td>\n      <td>P0 Bayonne</td>\n      <td>P0 Long Beach</td>\n      <td>24</td>\n      <td>23</td>\n    </tr>\n    <tr>\n      <td>G2</td>\n      <td>F1 Female A</td>\n      <td>F1 Male Z</td>\n      <td>12</td>\n      <td>39</td>\n    </tr>\n    <tr>\n      <td>G2</td>\n      <td>F1 Female C</td>\n      <td>F1 Male Z</td>\n      <td>15</td>\n      <td>63</td>\n    </tr>\n    <tr>\n      <td>G2</td>\n      <td>F1 Female F</td>\n      <td>F1 Male Z</td>\n      <td>9</td>\n      <td>28</td>\n    </tr>\n    <tr>\n      <td>G2</td>\n      <td>F1 Female H</td>\n      <td>F1 Male Z</td>\n      <td>22</td>\n      <td>57</td>\n    </tr>\n  </tbody>\n</table>\n\nWe inferred segregation classes for each autosomal marker and imputed genotypes for the five parents of the G2 families using a composite likelihood approach. For every autosomal SNP, there are four possible P0 genotype combinations (AAxBB, ABxAB, AAxAB, ABxBB), plus two for sites erroneously called as SNPs (AAxAA, BBxBB). For each SNP, we estimated likelihoods for each configuration for each family. We maximized the likelihood including a one-step error probability (i.e., AA <->AB\u00a0<\u00a0->BB) allowed to range up to 10%. We next identified the segregation pattern (including the genotypes of the F1 parents of the G2 families) that maximizes the likelihood over the five families. This is a composite likelihood insofar as the genotype error probabilities are estimated for each family and the global pedigree likelihood derived from the appropriate combination of family likelihood estimates.\n\nWe then used four steps to build the S. benedicti genetic map:\n\n### Step 1: Intercross marker map\n\nThe first strategy uses data from 549 non-sex-linked SNPs that individually or in contig-groups segregate in an intercross pattern (i.e., F1s are heterozygous and G2s segregate 1:2:1, implying that the parental genotypes are homozygous for alternate alleles). These SNPs include 448 from multi-SNP contigs that are recoded into 193 intercross markers, plus 101 individual SNPs identified as intercross by likelihood. We excluded 17 markers that were missing data for more than 10% of individuals and three other markers that exhibited strong departures from Mendelian proportions (p<10\u221210). From the resulting dataset of 274 markers and 245 G2 individuals, we constructed an autosomal genetic map in Rqtl (v.1.40\u00a0\u2013\u00a08) following the protocol of Broman\u00a0(Broman, 2010). 271 markers readily assembled into 10 autosomal linkage groups. We ordered the markers using 20 cycles of the orderMarkers function with ripple window\u00a0=\u00a07, retaining the ordering with the highest likelihood for each linkage group. Four worms exhibited a large excess of crossovers, indicative of high genotyping error rates. We removed these animals (all are Family C females), estimated the genotyping error rate as 0.013 by maximum likelihood, and reordered the markers with another 20 cycles of orderMarkers with error.prob\u00a0=\u00a00.013.\n\nSome apparent crossovers are associated with single genotypes that differ from both immediate flanking markers, despite very small genetic distances. These represent probable genotyping errors. Using an error lod of 6 as a threshold for probable errors, we converted 420 (of almost 63,000) genotype calls to missing data. We then reestimated the maximum likelihood error rate as 0.004 for the remaining data and reordered the markers with 50 cycles of orderMarkers and error.prob\u00a0=\u00a00.004.\n\n### Step 2. Inclusion of non-intercross markers\n\nReturning to the original 1,389-SNP dataset, we replaced the intercross marker genotypes with those from step 1 (i.e., replacing multi-SNP contig SNPs with their inferred intercross genotypes, converting 420 genotypes to missing data, and removing the four individuals inferred to have high genotype error rates). For the remaining non-intercross SNPs, we imputed the genotypes of the five F1 parents by likelihood, as described, and we used lepmap2\u00a0(Rastas et al., 2015) (v.0.2, downloaded March 5, 2017) to assign markers to linkage groups. The input dataset includes 288 individuals (47 F1s and 241 G2s in four families) and 1,111 markers. Processing steps included ParentCallGrandparents with XLimit\u00a0=\u00a08 and ZLimit\u00a0=\u00a08, Filtering with epsilon\u00a0=\u00a00.02 and dataTolerance\u00a0=\u00a00.0001, SeparateChromosomes with lodLimit\u00a0=\u00a015, and JoinSingles with lodLimit\u00a0=\u00a010 and lodDifference\u00a0=\u00a05. This analysis assigned 676 markers to 10 autosomes and 97 markers to two sex-linked chromosomes (Figure 2). An additional 25 markers were assigned to 10 small linkage groups (one sex-linked) with two to four markers each, and 313 markers were not assigned to linkage groups. The ten major autosomal linkage groups mapped uniquely to the ten identified using the intercross markers above at step 1.\n\nTo order the autosomal markers, we used OrderMarkers2 in lepmap3\u00a0(Rastas, 2017) (v.0.1, downloaded March 5, 2017). For each linkage group, we ran 100 iterations with randomPhase\u00a0=\u00a00 and 100 iterations with randomPhase\u00a0=\u00a01, and we then repeatedly ran OrderMarkers2 with the evaluateOrder option on the highest likelihood results for each approach to search for higher likelihood reconstructions. We then selected the result with the highest likelihood overall and retained the reconstructed genotypes (outputPhasedData\u00a0=\u00a01) for that run.\n\nWe next converted these reconstructed genotypes to conventional intercross genotypes by mapping the intercross-marker genotypes onto them and retaining the phase with the highest likelihood. We renamed the linkage groups to sort them by genetic map length and the result is Sb676. The intercross map from step 1, with linkage groups named accordingly, is Sb271.\n\n### Step 3. Sex-linked markers\n\nFor each of the 1,389 SNPs in the original dataset, we estimated the likelihood of each possible autosomal or sex-linked segregation pattern. We identified 32 SNPs with clean X-linked segregation (AAxBY or BBxAY) and none with Z-linkage. The X-linked SNPs mapped to one major and one minor sex-linked linkage group in the lepmap analysis at step two above. The other major lepmap-defined sex-linked linkage group contained only SNPs that segregate as fixed differences between X and Y chromosomes (i.e., the maximum likelihood segregation patterns are XAXA x XAYB and XBXB x XBYA). These are uninformative for the genetic map.\n\nWe next examined the multi-SNP contigs that contain any SNP whose sex-linkage p-value is less than 0.01, and where possible we recoded these SNPs as single multi-SNP markers, converting impossible genotypes to missing data, as done for autosomal markers in step 1. This resulted in a total of 26 markers (10 multi-SNP and 16 single-SNP). These markers were then ordered in Rqtl as in step 1. A group of three markers, which form a separate, minor sex-linked linkage group in our lepmap analysis at step 2, here form a distantly linked piece of the X chromosome (min.lod\u00a0=\u00a06, max.rf\u00a0=\u00a00.33). The final map, incorporating 702 markers, is Sb702.\n\nThe maps produced at each of the three steps are provided as Rqtl cross objects in Supplementary file 1.\n\n### Step 4. Inference of founder haplotypes\n\nAs noted above, we were unable to recover genotypes from the founding parents of the cross or from the F1 worms that contributed to the G2 generation, and we therefore lack information about which autosomal alleles derive from which founder. To assign parental origins to genotypes, we tested the two possible orientations using population-genomic data. We showed previously (Zakas and Rockman, 2015) that slight allele frequency differentiation between Long Beach and Bayonne populations is sufficient for population assignment. To assign the haplotypes from our cross to these populations, we generated Pool-seq libraries of each population in duplicate by pooling DNA of 25 adult females for each population, making four pool-seq libraries in total. The worms contributing to these pools were collected in 2018 from the same Long Beach and Bayonne localities as our cross founders. DNA was extracted with the Qiagen DNeasy kit and libraries were constructed with a Nextera DNA kit. These four libraries were sequenced on one lane of an Illumina NextSeq flow cell in High-Output mode. Reads were mapped to the draft reference genome, which was constructed from Bayonne individuals, using BWA and samtools (Li and Durbin, 2009) and variants were called using GATK (McKenna et al., 2010) with a low quality-filtering threshold of QD\u00a0<1.0 and MQ\u00a0<30.0.\n\nUsing this population sequence data, we calculated the likelihoods for the two possible genotype assignments for each autosome. To calculate likelihoods, we considered only SNPs that we inferred to be homozygous for alternate alleles in the founders of our cross (Step 1 above). Population allele frequencies were estimated from read counts in the pooled population sequence data. To account for the presence of zero counts of reads of some alleles in either population, which can be due to true absence or to low read coverage, we added one read to every allele count and then used these modified count proportions as population frequency estimates. In total, we used data from 110 SNPs (4 to 27 per chromosome).\n\nFor the hypothesis that founder genotype one derives from Bayonne and founder genotype two from Long Beach, we calculate the likelihood as L(H1):\n\nP(genotype 1 | Bayonne allele frequencies) * P(genotype 2 | Long Beach allele frequencies),\n\nassuming Hardy-Weinberg equilibrium within each population. We then calculated the likelihood of the alternative assignment (H2). We report the log10 likelihood ratio as a statistic.\n\nFor every chromosome, one genotype assignment was favored over the alternative assignment by a factor of\u00a0>300 (Table 4). Under the favored orientations, QTL effects are all in the expected directions (for example, large egg and short chaetae alleles derive from the lecithotrophic Long Beach founder), and these polarities are those reported in the Supplementary file 1 genetic maps and analyzed throughout the paper.\n\n**Table 4.**\n Log10 likelihood ratio in favor of founder genotype assignments.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Autosome</th>\n      <th>Log10 (L(H1)/L(H2))</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>9.4</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>23.3</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>2.6</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>13.3</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>9.2</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>22.9</td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td>11.0</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>10.8</td>\n    </tr>\n    <tr>\n      <td>9</td>\n      <td>26.3</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>4.4</td>\n    </tr>\n  </tbody>\n</table>\n\n### QTL Mapping\n\nAnnotated R scripts that reproduce all linkage mapping and phenotypic analyses in the paper are included in Source code file 1.\n\nWe performed interval mapping in Rqtl to identify QTL. To accommodate the family structure in the data, we performed genome scans separately in each G2 family and summed the lod scores. To determine genome-wide significance thresholds, we generated a null distribution of maximum lod scores by applying the same structured genome scans to 1000 datasets in which phenotypes have been permuted among individuals within (but not among) G2 families (Churchill and Doerge, 2008). We used a per-trait threshold of p=0.05. All traits were mapped assuming a normal model, except for the presence or absence of anal cirri, for which we used a binary (logistic) model.\n\nOur linkage mapping approach tests for loci that differ between the founding Long Beach and Bayonne parents of the cross, and QTL that are heterozygous in the P0 founders may be overlooked. Such loci should manifest as genetic differences among the four G2 families. We tested for family effects in each trait, and found no evidence for variation among the four G2 families for number of chaetae (p=0.06), presence of anal cirri (p=0.70), or G3 offspring size (p=0.80). We identified family effects for the length of the larval chaetae (p=0.0003) and G2 size (p=10\u22127).\n\nThe observed differences among G2 families may be due to one or more of (1) environmental maternal effects, including familial experimental counfounders such as the exact age of full-sib larvae at the time they were measured; (2) maternal or zygotic genetic effects that segregate among the F2 families due to heterozygosity in the P0 founders; and (3) genetic effects that differ among F2 families due to differential segregation distortion or chance allele frequency variation but not due to heterozygosity in the P0s. Because G2 size is a maternal-effect trait, the family effect for this phenotype can only be due to environmental maternal effects among the F1 mothers or segregating maternal effect factors that were heterozygous in the P0s. However, in the latter case, we expect the family effect to recur as variation among the G2 families in G3 offspring size. We observe no such effect, implying that the G2 families do not differ in their genotype distributions at maternal-effect offspring-size loci. For larval chaetae length, we cannot exclude the possibility that some of the variation among G2 families is due to QTL that were heterozygous in P0s. In a model including the significant QTL (detailed below), G2 family explains 5.7% of total variance in the larval chaetae length phenotype, while the two significant QTL explain 47.0%.\n\nTo model the genetics of each trait using the Rqtl fitqtl function, we tested for pairwise interactions between detected QTL across linkage groups and for effects of G2 family. In each case we compared a model of additive and dominant within-locus effects to models that incorporated the additional terms, and we used likelihood ratio tests to determine the statistical significance of improvements in model fit. We estimate the effect size for QTL using the best-fitting model, as described in Source code file 1. For chaetae number and presence of anal cirri, the prefered model includes QTL effects only. For chaetae length, the model includes an effect of G2 family. For G3 offspring area, the model includes an interaction between two QTL. Effect estimates are reported below in Table 4.\n\nWe find that chaetae number and length are correlated, as in Zakas and Rockman (2014), (r2\u00a0=\u00a00.22, p<0.001). The two traits share a QTL on LG3 that may act pleiotropically. However, when variation due to the LG3 QTL is removed, there is still a strong correlation between the trait residuals (r2\u00a0=\u00a00.1, p<0.001).\n\n### Multivariate QTL scan\n\nWe analyzed the three continuous traits \u2013 mean offspring size, chaetae number, and chaetae length \u2013 in a fully multivariate QTL scan\u00a0(Knott and Haley, 2000). The approach searches for regions of the genome with significant effects in the three-dimensional space defined by variation in these three traits. We restricted the dataset to the 149 G2 females for which all three traits were scored (i.e., excluding G2 worms with zero chaetae).\n\nWe fit the following model at each marker: Y\u00a0=\u00a0XB\u00a0+ e, where Y is the 149 \u00d7 3 matrix of phenotypes, X is a matrix of fixed effects, B is the vector of fixed-effect coefficients to be estimated, and e is normally-distributed residual error. The fixed effects are the intercept, G2 family identity, and two vectors coding the additive and dominance variables for a single genetic marker. At each marker, we fit this model and compared it to a model with intercept and G2 family as the only fixed effects, calculating a p-value from the Pillai-Bartlett statistic. We estimated thresholds for genome-wide significance by repeating the analysis on 1000 datasets in which phenotype vectors were permuted among individuals within G2 families. R code that reproduces the analysis is included in\u00a0Source code file 1.\n\nFive QTL exceeded the genome-wide threshold for significance (p\u22640.001 in each case), coinciding with the five QTL detected for these traits by univariate analysis. In a model incorporating additive and dominance effects for each QTL, five additive and two dominance effects (for the QTL on LG3 and LG6) were retained as significant (p<0.01; Table 5). We then estimated QTL effect sizes under the reduced model that includes only the significant effects.\n\n**Table 5.**\n Estimated effects from reduced multivariate model QTL scan (in units of G2 phenotypic standard deviations).\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Chaetae number</th>\n      <th>Chaetae length</th>\n      <th>Offspring size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Intercept</td>\n      <td>0.18</td>\n      <td>0.33</td>\n      <td>0.13</td>\n    </tr>\n    <tr>\n      <td>QTL3 Additive</td>\n      <td>0.74</td>\n      <td>0.78</td>\n      <td>\u22120.01</td>\n    </tr>\n    <tr>\n      <td>QTL3 Dominance</td>\n      <td>\u22120.17</td>\n      <td>\u22120.60</td>\n      <td>\u22120.04</td>\n    </tr>\n    <tr>\n      <td>QTL6 Additive</td>\n      <td>\u22120.01</td>\n      <td>\u22120.09</td>\n      <td>0.55</td>\n    </tr>\n    <tr>\n      <td>QTL6 Dominance</td>\n      <td>\u22120.05</td>\n      <td>\u22120.19</td>\n      <td>\u22120.27</td>\n    </tr>\n    <tr>\n      <td>QTL7 Additive</td>\n      <td>0.13</td>\n      <td>0.10</td>\n      <td>0.78</td>\n    </tr>\n    <tr>\n      <td>QTL8 Additive</td>\n      <td>0.57</td>\n      <td>0.00</td>\n      <td>\u22120.13</td>\n    </tr>\n    <tr>\n      <td>QTL9 Additive</td>\n      <td>0.22</td>\n      <td>0.68</td>\n      <td>\u22120.31</td>\n    </tr>\n    <tr>\n      <td>Family C</td>\n      <td>0.01</td>\n      <td>\u22120.03</td>\n      <td>\u22120.17</td>\n    </tr>\n    <tr>\n      <td>Family F</td>\n      <td>0.13</td>\n      <td>\u22120.15</td>\n      <td>0.03</td>\n    </tr>\n    <tr>\n      <td>Family H</td>\n      <td>\u22120.14</td>\n      <td>\u22120.59</td>\n      <td>\u22120.08</td>\n    </tr>\n  </tbody>\n</table>\n\n_(Family A is present in the model as the reference family)_\n\n### Analysis of backcross larvae\n\nWe tested for an effect of G2 male genotype on the distribution of chaetal phenotypes in their backcross progeny. We used a linear mixed-effect model to account for the relatedness of larvae within a brood and then compared models with and without the loci implicated in each trait in the G2 generation (i.e., the loci in Table 2). For both traits, chaetal length and number, we detected a significant effect of genotype, with effects in the expected directions. The effect size estimates indicate that the locus on LG9 does not have a significant effect on chaetal length. We note that the 30 G2 males used in the backcross have unbalanced genotype representation at this locus, with 8 LL homozygotes, 22 LP heterozygotes, and 0 PP homozygotes. We are therefore poorly powered to detect an effect of this locus. R code reproducing our analyses are included in Source code file 1.\n\n### Data\u00a0availability\n\nThe code and experimental data generated and analyzed during this study can be found in the supplemental files.\n",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "39c30fb3-b9df-4e06-84de-0b165e9a3de2",
+      "submission_id": "147911ba-6667-49d5-8c7e-ebcec89e102c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Magnus Nordborg, Austrian Academy of Sciences Austria\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.37143.018](https://doi.org/10.7554/eLife.37143.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Decoupled maternal and zygotic genetic effects shape the evolution of development\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Magnus Nordborg as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Diethard Tautz as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Kristin Tessmar (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper investigates the genetics of a major life-history dimorphism \u2013 development via a morphologically distinct larval form vs. direct development \u2013 in a marine worm. Rather than \"super-genes\" determining life-history strategy, separate genetic loci with different modes of inheritance were found to influence egg size and larval morphology.\n\nThis is a substantial and well-written contribution addressing a biological question of broad interest.\n\nEssential revisions:\n\nThere were two major issues that could lead to over-interpretation of the results. First, fitness effects are implied but not measured, and this is not always clear from the writing. A hypothetical fitness landscape is shown in Figure 1B, and it is clearly stated in the figure legend that this landscape is hypothetical. However, at several other points in the text, sentences are worded in a way that implies that fitness may have actually been measured, rather than inferred based on direction of phenotypic effects. This could be fixed by more cautious phrasing. For example:\n\nIn Abstract, original text: \"The fitness of zygotic alleles depends upon their maternal background, creating a positive frequency-dependence that may homogenize local populations.\"\n\nMore conservative wording: \"The likely fitness effects of zygotic alleles depends upon their maternal background, creating a positive frequency-dependence that may homogenize local populations.\"\n\nEven more conservative wording: \"The phenotypic effects of zygotic alleles on a hypothetical fitness landscape depends upon their maternal background, creating a positive frequency-dependence that may homogenize local populations.\"\n\nIn the Discussion, original text: \"We identified six chromosomes with large effects for four traits, implying that S. benedicti populations can segregate 729 possible genotypic combinations, most of which are maladaptive.\"\n\nMore conservative wording: \"We identified six chromosomes with large effects for four traits, implying that S. benedicti populations can segregate 729 possible genotypic combinations, most of which would produce combinations of intermediate phenotypes that are likely to be maladaptive.\"\n\nIn the Discussion, original text: \"Finally, we found that the evolutionary transition to lecithotropic development requires the interaction of two genotypes, the mother and offspring. The fitness of a zygotic allele depends on the probability it occurs in a favorable maternal genetic background\"\n\nMore conservative: \"Finally, we found that the evolutionary transition to lecithotropic development requires the interaction of two genotypes, the mother and offspring. Because of this dual control of larval phenotype, the likely fitness effects of a zygotic allele depends on whether it occurs in a favorable maternal genetic background.\" etc.\n\nThe second point is more difficult to address. Due to failed genotyping, the genotypes of the P0 grandparents of the existing cross, or the F1 parents used to make F2s, are not known. Thus the direction of the allelic effects in the cross is actually not known, although the paper is generally written as if they went in the expected direction (again, the information is in the paper, but it is very easy to miss on a first reading). This is not a trivial point, and it affects the conclusions of the paper. For example, the difficulty contrasting alleles would have invading different genetic backgrounds is less of an issue if existing planktotrophic and lecithotropic populations already harbor lots of alleles with non-concordant phenotypic effects.\n\nThis issue could be addressed by carrying out additional genotyping to try to confirm whether the planktotrophic and lecithotropic alleles segregating in the cross do in fact come from either the planktotropic and lecithotropic grand parental populations. Note that the additional genotype calls would only be in the regions harboring key QTLs, rather than on a whole genome basis. With a focused genotyping effort, it may be possible to determine these key genotypes on limited or poor quality material still available from the original grandparents. Alternatively, it may be possible to infer the likely grandparental genotypes in the key QTL regions, based on the differential frequency of linked markers found in additional individuals sampled from the starting populations.\n\nIf you cannot produce these data, a thorough rewrite will be required to make sure all claims are supported, and the manuscript will be reviewed again.\n\nLess substantially, please clarify in what sense Figure 4 shows maternal \"masking\", and in general improve description, i.e. clearly label what exactly is the offspring of one cross, how many individuals were scored for each chaetae number.\u2026\n",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c580352a-7258-45ff-aaab-f462207d9f71",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C1",
+      "claim": "Streblospio benedicti is a common and widespread benthic polychaete found in estuaries throughout North America.",
+      "claim_type": "EXPLICIT",
+      "source": "Streblospio benedicti is a common and widespread benthic polychaete found in estuaries throughout North America.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the distribution and habitat of the species, presented as established fact in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "323a63e2-446d-405f-9afa-ab32297dc195",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C2",
+      "claim": "Females in Streblospio benedicti brood fertilized embryos in dorsal brood pouches and release larvae into the water column.",
+      "claim_type": "EXPLICIT",
+      "source": "Females brood fertilized embryos in dorsal brood pouches and release larvae into the water column.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the reproductive behavior of the species, presented as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "67a17689-5962-4238-9884-73e3b736bca1",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C3",
+      "claim": "Planktotrophic mothers in S. benedicti produce small (~100 um) eggs that develop into obligately feeding larvae that spend weeks in the plankton.",
+      "claim_type": "EXPLICIT",
+      "source": "planktotrophic mothers produce small (~100 um) eggs that develop into obligately feeding larvae that spend weeks in the plankton.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides specific measurements and developmental characteristics of planktotrophic larvae.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "6d1fa6ed-bed4-40ba-a238-290ee97c06f0",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C4",
+      "claim": "Planktotrophic larvae grow larva-specific swimming chaetae that are thought to deter predation.",
+      "claim_type": "EXPLICIT",
+      "source": "These larvae grow larva-specific swimming chaetae that are thought to deter predation (Blake, 1969) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation to Blake (1969) and reference to Figure 1A showing the morphology.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "6aeb2923-1897-4830-8549-8379bda5981e",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C5",
+      "claim": "Lecithotrophic mothers in S. benedicti produce large (~200 um) eggs that develop into larvae that do not require exogenous food and quickly leave the water column as benthic juveniles.",
+      "claim_type": "EXPLICIT",
+      "source": "Lecithotrophic mothers produce large (~200 um) eggs that develop into larvae that do not require exogenous food and quickly leave the water column as benthic juveniles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides specific measurements and developmental characteristics of lecithotrophic larvae.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "14d12c90-000b-48ac-8f2c-8d15dc0c8fc9",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C6",
+      "claim": "Lecithotrophic larvae lack swimming chaetae and anal cirri containing bacillary cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These larvae lack swimming chaetae and a second type of larva-specific morphological structure, anal cirri containing bacillary cells, which are distinctive cells that contain rhabdites of unknown function (Gibson et al., 2010) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This morphological description is supported by citation to Gibson et al., 2010 and Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "9ff34fde-a076-4a9e-92f5-9267b991c528",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C7",
+      "claim": "There are differences during embryogenesis between planktotrophic and lecithotrophic development in S. benedicti.",
+      "claim_type": "EXPLICIT",
+      "source": "There are also differences during embryogenesis (McCain, 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to McCain, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "4d55ab2b-373f-480b-9d71-1e3e3a85b747",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C8",
+      "claim": "Accelerated development of juvenile features and truncated development of larval features occurs in lecithotrophs during organogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "and organogenesis (Gibson et al., 2010; Pernet and McHugh, 2010), where accelerated development of juvenile features and truncated development of larval features occurs in lecithotrophs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This developmental pattern is supported by citations to Gibson et al., 2010 and Pernet and McHugh, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "68cbf279-b8ef-4e5e-8560-817dd1d9ac74",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C9",
+      "claim": "Adults of planktotrophic and lecithotrophic S. benedicti are indistinguishable at the level of gross morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these developmental and larval differences, adults are indistinguishable at the level of gross morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation about adult morphology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "4abae7b0-2e77-4853-ad34-392bc6800e02",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C10",
+      "claim": "Environmental factors do not substantially alter egg size or subsequent offspring type in S. benedicti.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike examples of polyphenism, environmental factors do not substantially alter egg size or subsequent offspring type (Levin and Bridges, 1994; Levin and Creed, 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Levin and Bridges, 1994 and Levin and Creed, 1986.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "473c9727-feb3-4c6d-ac19-f800b70d764d",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C11",
+      "claim": "Natural populations of S. benedicti consist of only one of the two phenotypic extremes (planktotrophic or lecithotrophic).",
+      "claim_type": "EXPLICIT",
+      "source": "Natural populations consist of only one of the two phenotypic extremes, often occurring in close geographic proximity but rarely directly overlapping (Levin, 1984; Schulze et al., 2000; Zakas and Wares, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This population-level observation is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "7a1ea505-999d-4fa2-9deb-86a97a074e86",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C12",
+      "claim": "Larval mode in S. benedicti populations does not correlate with any known environmental gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "and larval mode in the population does not correlate with any known environmental gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the lack of environmental correlation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "fcb77cd8-8096-43eb-964e-066ccbe07e19",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C13",
+      "claim": "Crosses between planktotrophic and lecithotrophic S. benedicti in the lab produce an array of morphological and developmental intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the persistence of these two dramatically different strategies in nature, they can be crossed in the lab producing an array of morphological and developmental intermediates (Levin et al., 1991; Zakas and Rockman, 2014; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is supported by citations and Figure 1B showing intermediate phenotypes.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "73a5910f-0698-45ef-880b-1e4405e7d04f",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C14",
+      "claim": "Long Beach and Bayonne populations of S. benedicti are little differentiated from one another across the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of these populations have found them to be homogeneous in larval mode but little differentiated from one another across the genome (Rockman, 2012; Zakas and Rockman, 2014; Zakas and Rockman, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This genomic observation is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "71d9093c-1140-43d1-bcbb-ef8f4d128bc9",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C15",
+      "claim": "There is ongoing gene flow between larval modes in the native East Coast range of S. benedicti.",
+      "claim_type": "EXPLICIT",
+      "source": "consistent with ongoing gene flow between larval modes in their native East Coast range (Zakas and Wares, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This population genetic inference is supported by citation to Zakas and Wares, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "15d955ee-5d43-47d8-aa56-44d01ba881f7",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C16",
+      "claim": "West Coast populations of S. benedicti, including Long Beach, are exclusively lecithotrophic.",
+      "claim_type": "EXPLICIT",
+      "source": "West Coast populations, including Long Beach, are exclusively lecithotrophic",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about West Coast population composition supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "075c37b4-770e-447d-90b7-c124b80dc1c1",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C17",
+      "claim": "West Coast S. benedicti populations result from a 20th century introduction from an East Coast source.",
+      "claim_type": "EXPLICIT",
+      "source": "and result from a 20th century introduction from an East Coast source (Zakas and Wares, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This biogeographic history is supported by citation to Zakas and Wares, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "02cd2863-3cda-479c-be86-923786b6d0f5",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C18",
+      "claim": "Larval size of G2 females is uncorrelated with the average size of their G3 progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we find that the larval size of a G2 female is uncorrelated with the average size of her G3 progeny (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "ab928c30-1668-4708-a17f-1c0654e645c5",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C19",
+      "claim": "G2 larvae all develop with equivalent maternal genetic effects, as their F1 mothers are heterozygotes for planktotrophic and lecithotrophic alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "The G2 larvae all develop with equivalent maternal genetic effects, as their F1 mothers are heterozygotes for planktotrophic and lecithotrophic alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cross design and Mendelian genetics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "096db2ca-02b6-4126-8691-56bdd414afe4",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C20",
+      "claim": "Maternal-effect genes are segregating among G2 females, and so G3 larval sizes reflect inherited maternal-effect variation.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, maternal-effect genes are segregating among G2 females, and so G3 larval sizes reflect inherited maternal-effect variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cross design and genetic principles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "087a1e6a-37e5-4709-9d7b-7832aedf23ef",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C21",
+      "claim": "S. benedicti has 10 pairs of autosomes and one pair of sex chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, we defined the karyotype for S. benedicti, which includes 10 pairs of autosomes and one pair of sex chromosomes (Figure 2B\u2013D, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This karyotype determination is based on direct observation of chromosomes shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "c993a7af-d8bb-4dce-8fe7-61aaf3e99802",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C22",
+      "claim": "Males of S. benedicti are heterogametic, diagnosed by a large Y chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Males are heterogametic, diagnosed by a large Y chromosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on direct observation of chromosomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "b9c7ba63-2fa0-4722-bb03-128bd29343b9",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C23",
+      "claim": "The karyotypes of Long Beach and Bayonne populations are grossly indistinguishable.",
+      "claim_type": "EXPLICIT",
+      "source": "The karyotypes are grossly indistinguishable between Long Beach and Bayonne",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparative observation of chromosomes from both populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "cd23e2a9-26de-48b8-903a-a5cd3ea38816",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C24",
+      "claim": "In S. benedicti, 11 bivalents are observed at meiotic prophase in females.",
+      "claim_type": "EXPLICIT",
+      "source": "and in each population we observe 11 bivalents at meiotic prophase in females",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from cytological preparations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "b63e007b-2d41-438b-87aa-addd7b964ab6",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C25",
+      "claim": "In S. benedicti males, 12 bodies, presumably 10 autosomal bivalents and two sex-chromosome univalents, are observed at diakinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "and 12 bodies, presumably 10 autosomal bivalents and two sex-chromosome univalents, at diakinesis in males (Figure 2C,D; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation with interpretation shown in the figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "130d4181-f474-47d2-a437-777204b07401",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C26",
+      "claim": "G2 larvae are intermediate in size and variable in morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "G2 larvae are intermediate in size and variable in morphology",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation of the experimental cross progeny.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "deff643d-6faf-45fa-b841-b3216e7fa61c",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C27",
+      "claim": "15% of G2 larvae lack larval chaetae.",
+      "claim_type": "EXPLICIT",
+      "source": "15% lack larval chaetae",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the G2 phenotyping data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "8db53a97-9ec9-4fb4-99c2-58214870739b",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C28",
+      "claim": "25% of G2 larvae lack anal cirri.",
+      "claim_type": "EXPLICIT",
+      "source": "and 25% lack anal cirri.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the G2 phenotyping data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "2741a1c5-7e69-4845-aaa5-97c679793b1e",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C29",
+      "claim": "G2 larval size showed no linkage to G2 genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected for a maternal trait, G2 larval size showed no linkage to G2 genotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the QTL mapping analysis, consistent with maternal inheritance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "50615198-449a-4be2-bb3c-27b5c7ce4081",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C30",
+      "claim": "Every G2 phenotype except larval size implicated a small number of large-effect loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Every other phenotype implicated a small number of large-effect loci (Figure 2E; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the QTL mapping results shown in Figure 2E and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "02da7b0e-8a37-4a10-954a-18555ad98d16",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C31",
+      "claim": "The maternal-effect loci shaping G3 larval size are unlinked to the zygotic-effect loci shaping G2 larval morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the loci are almost entirely independent: the maternal-effect loci shaping G3 larval size are unlinked to the zygotic-effect loci shaping G2 larval morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the QTL mapping showing loci on different chromosomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "1aa36676-f7fa-4d5a-969b-f462dc312ae7",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C32",
+      "claim": "There is a major-effect anal cirri locus on LG5.",
+      "claim_type": "EXPLICIT",
+      "source": "The morphology loci are also largely independent, with a major-effect anal cirri locus on LG5",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific result from the QTL mapping analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "22f77e35-eaa2-4206-8ba7-bc11df416aff",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C33",
+      "claim": "There are loci uniquely affecting number and length of swimming chaetae on LG8 and LG9.",
+      "claim_type": "EXPLICIT",
+      "source": "and loci uniquely affecting number and length of swimming chaetae on LG8 and LG9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific result from the QTL mapping analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "144750a0-5a19-4b23-9110-bac98d27ffa9",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C34",
+      "claim": "The two chaetal traits share a common locus on LG3.",
+      "claim_type": "EXPLICIT",
+      "source": "The two chaetal traits also share a common locus on LG3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific result from the QTL mapping analysis showing pleiotropy or linkage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "d6fd4f92-31a6-40b6-8db7-b814e9ac81d5",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C35",
+      "claim": "Each QTL has a large effect and explains a large proportion of trait variance.",
+      "claim_type": "EXPLICIT",
+      "source": "Each QTL has a large effect (Figure 3A) and explains a large proportion of trait variance (Table 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A and quantified in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "1d296b9e-ddc5-432f-bfa1-d7ea3018920a",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C36",
+      "claim": "The effects of the QTL are largely additive.",
+      "claim_type": "EXPLICIT",
+      "source": "and the effects are largely additive (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the effect size estimates in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "34c65559-ecbc-406f-b505-d4ed99b67b83",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C37",
+      "claim": "The chaetae-shortening allele at the LG3 locus is dominant for chaetae length.",
+      "claim_type": "EXPLICIT",
+      "source": "The two exceptions to additivity are in chaetae length at the LG3 locus (the chaetae-shortening allele is dominant)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the genetic model fitting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "8e17cc01-b723-4d15-9e95-0594d0495c60",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C38",
+      "claim": "There is significant epistasis between the two maternal-effect loci on LG6 and LG7 for larval size.",
+      "claim_type": "EXPLICIT",
+      "source": "and larval size, where there is significant epistasis between the two maternal-effect loci on LG6 and LG7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the genetic model fitting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "7fb4b3e8-3473-4aa0-8100-1645ff1c9bc4",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C39",
+      "claim": "Multivariate mapping analysis identified the same loci as the univariate analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis identified the same loci as the univariate analyses",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the multivariate QTL mapping confirming univariate results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "029521d8-a9fe-4b76-8277-e551421088fa",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C40",
+      "claim": "The maternal effects and zygotic effects are largely independent in multivariate space.",
+      "claim_type": "EXPLICIT",
+      "source": "and showed that the maternal effects and zygotic effects are largely independent (i.e., most effects are nearly orthogonal in this three-dimensional space: Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the multivariate analysis visualization in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "c0d3a54c-32cb-42f6-a903-f2ac76e667aa",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C41",
+      "claim": "Zygotic-effect loci that affect chaetae length and number in an F1 maternal background also do so in the planktotroph maternal background.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the zygotic-effect loci that affect chaetae length and number in an F1 maternal background also do so in the planktotroph maternal background (length: p<10\u22124; number p<10\u22126; Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the backcross experiment with statistical support shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "cbd61f56-98cb-463b-a4a9-2b048cc8c847",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C42",
+      "claim": "Some offspring of G2 males homozygous for lecithotrophic alleles completely lack chaetae, despite their planktotrophic maternal background.",
+      "claim_type": "EXPLICIT",
+      "source": "Some offspring of the males homozygous for lecithotrophic alleles completely lack chaetae, despite their planktotrophic maternal background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the backcross experiment demonstrating penetrance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "4a58da39-60db-4eac-8b7f-e1c7ee4f5509",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C43",
+      "claim": "Co-adapted life-history traits in S. benedicti are strikingly modular, where each of the phenotypes has a largely independent genetic basis with QTL occurring on different chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that co-adapted life-history traits are strikingly modular, where each of the phenotypes has a largely independent genetic basis with QTL occurring on different chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a synthesis of the QTL mapping results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "7e59036a-1a57-450f-894e-3d17d4c8db4e",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C44",
+      "claim": "The lecithotrophic larval strategy evolved through the stepwise accumulation of multiple genetic changes throughout the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests the lecithotrophic larval strategy evolved through the stepwise accumulation of multiple genetic changes throughout the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the modular genetic architecture observed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "7596bf0b-73c8-45b0-b7ba-d249f9d87bbc",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C45",
+      "claim": "Maternally-determined larval size has an independent genetic basis from other traits that are perfectly correlated in natural populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Maternally-determined larval size has an independent genetic basis from other traits that are perfectly correlated in natural populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the QTL mapping showing unlinked loci.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "827837ba-6f67-4b32-ad98-efb4b92eda1f",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C46",
+      "claim": "Mutational effects on larval size and morphology are at right angles to one another in phenotypic space.",
+      "claim_type": "EXPLICIT",
+      "source": "While the most direct evolutionary path from plantkotrophy to lecithotrophy involves pleiotropic mutations that move populations diagonally across the size/shape space (Figure 1C), we observe that mutational effects are at right angles to one another.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the multivariate QTL analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "7f69765c-240b-497c-9757-25e5d1eb26ef",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C47",
+      "claim": "The lack of strong correlated effects among alleles is compatible with the evolution of lecithotrophy via a facultatively planktotrophic intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of strong correlated effects among alleles is compatible with the evolution of lecithotrophy via a facultatively planktotrophic intermediate (Smith et al., 2007; Wray, 1996)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the genetic architecture with support from cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "bc0a2988-80c4-403c-95a9-6f1f3bcd14d1",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C48",
+      "claim": "Large larval size may have evolved prior to the loss of larval morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "that is, large larval size may have evolved prior to the loss of larval morphology (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative inference about evolutionary sequence based on the genetic architecture.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "bef5afbb-53ba-4302-8d53-6e1e2aaccf0c",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C49",
+      "claim": "Individual traits in S. benedicti are influenced by one or two genomic regions of large-effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Our genetic results are therefore consistent with one component of the theoretical expectations: individual traits are influenced by one or two genomic regions of large-effect, which could in turn represent clusters of underlying genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the QTL mapping results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "beeb7b1d-8c82-4ac3-b87c-4d3553562dfb",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C50",
+      "claim": "Loci affecting different traits in S. benedicti are located on different chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Loci affecting different traits are located on different chromosomes, indicating that correlated life-history phenotypes are genetically separable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the linkage mapping.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "a04204b3-bc4e-42e1-8d74-84f01aa61bea",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C51",
+      "claim": "S. benedicti populations can segregate 729 possible genotypic combinations at the six identified QTL chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified six chromosomes with large effects for four traits, implying that S. benedicti populations can segregate 36 = 729 possible genotypic combinations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the number of QTL identified.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "122908ab-41a7-497a-bf77-5881f0ab171b",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C52",
+      "claim": "Most genotypic combinations at the QTL would produce combinations of intermediate phenotypes that are expected to be maladaptive.",
+      "claim_type": "EXPLICIT",
+      "source": "most of which would produce combinations of intermediate phenotypes that are expected to be maladaptive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on evolutionary theory and the observed genetic architecture.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "79462988-7281-4635-9269-25360b674c2c",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C53",
+      "claim": "The evolutionary transition to lecithotrophic development requires the interaction of two genotypes, the mother and offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we found that the evolutionary transition to lecithotrophic development requires the interaction of two genotypes, the mother and offspring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the finding of separate maternal and zygotic genetic effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "578eb1ea-aace-436e-a180-7fb64ae74ae4",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C54",
+      "claim": "The likely fitness of a zygotic allele depends on the probability it occurs in a favorable maternal genetic background.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of this dual control of larval phenotype, the likely fitness of a zygotic allele depends on the probability it occurs in a favorable maternal genetic background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about fitness consequences of the maternal-zygotic genetic architecture.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "6c1d71a7-85c6-49ab-a115-92f9e9c590bb",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C55",
+      "claim": "The independent genetic basis of maternal and zygotic genetic effects on development shapes the accumulation of variation necessary for selection and local adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "The independent genetic basis of maternal and zygotic genetic effects on development shapes the accumulation of variation necessary for selection and local adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about evolutionary implications of the genetic architecture.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "61737422-1855-4718-a884-18214745bb75",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C56",
+      "claim": "The genetic architecture of S. benedicti developmental mode creates a strong selective barrier to adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "This genetic architecture creates a strong selective barrier to adaptation: zygotic-effect alleles that migrate into new populations will find themselves tested against the local maternal-effect background (Kirkpatrick and Lande, 1989; Wolf and Brodie, 1998; Wolf, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about evolutionary consequences supported by theoretical citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "841a7810-5f41-4c62-bd71-7d3c22e97d32",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C57",
+      "claim": "Maternal-by-zygotic epistasis for fitness can inhibit adaptation to local environmental conditions by creating runaway coevolution.",
+      "claim_type": "EXPLICIT",
+      "source": "This maternal-by-zygotic epistasis for fitness can inhibit adaptation to local environmental conditions by creating runaway coevolution (Wade, 1998): the locally common maternal background creates a selective regime favoring matching zygotic-effect alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about evolutionary dynamics supported by citation to Wade, 1998.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "80ac2828-7080-47ac-8ea7-d6eacee72bc3",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C58",
+      "claim": "Chaetae number and length are correlated in S. benedicti (r2 = 0.22, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that chaetae number and length are correlated, as in Zakas and Rockman (2014), (r2 = 0.22, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from phenotypic correlation analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "2aff8341-da81-4020-aa11-83c49cc886bd",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C59",
+      "claim": "When variation due to the LG3 QTL is removed, there is still a strong correlation between chaetae number and length residuals (r2 = 0.1, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "However, when variation due to the LG3 QTL is removed, there is still a strong correlation between the trait residuals (r2 = 0.1, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from residual correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "e1f3f7e1-aa42-404a-933e-7526571c5bf5",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C60",
+      "claim": "Facultative planktotrophy exists in lecithotrophic S. benedicti larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the presence of facultative planktotrophy (i.e., larvae can feed but do not require food) in lecithotrophic S. benedicti larvae (Allen and Pernet, 2007; Pernet and McArthur, 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by citations to Allen and Pernet, 2007 and Pernet and McArthur, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "52b147f9-7197-4191-9b1b-f99e19216166",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C61",
+      "claim": "The genetic map constructed is the first for any annelid.",
+      "claim_type": "EXPLICIT",
+      "source": "Next we constructed a genetic map, the first for any annelid (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the genetic map.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "ba38eb74-ebc6-4892-942c-5cffd13bfc7b",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C62",
+      "claim": "The genetic map includes 10 autosomal and one sex-linked linkage group.",
+      "claim_type": "EXPLICIT",
+      "source": "We genotyped F1 and G2 animals at 702 markers, which fell into 10 autosomal and one sex-linked linkage group (LG) (Broman et al., 2003; R Core Development Team, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the linkage mapping analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "7e0a41cf-da32-42f5-9bd0-23dcedf00334",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C63",
+      "claim": "The LG3 locus on chaetae number explains 21.8% of phenotypic variance.",
+      "claim_type": "EXPLICIT",
+      "source": "Number of chaetae LG3 21.8%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from variance partitioning shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "673f7805-1384-4115-ae72-0b9479592031",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C64",
+      "claim": "The LG8 locus on chaetae number explains 18.2% of phenotypic variance.",
+      "claim_type": "EXPLICIT",
+      "source": "LG8 18.2%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from variance partitioning shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "1e3f674e-b906-4803-a5f2-21b1b0976a38",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C65",
+      "claim": "The LG3 locus on chaetae length explains 25.8% of phenotypic variance.",
+      "claim_type": "EXPLICIT",
+      "source": "Length of chaetae LG3 25.8%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from variance partitioning shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "551aa080-ca3c-4ac9-8882-1d0cf46075c5",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C66",
+      "claim": "The LG9 locus on chaetae length explains 13.5% of phenotypic variance.",
+      "claim_type": "EXPLICIT",
+      "source": "LG9 13.5%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from variance partitioning shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "a61a886a-353c-4b9b-8351-a5312e82e030",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C67",
+      "claim": "The LG6 locus on G3 mean larval size explains 18.8% of phenotypic variance.",
+      "claim_type": "EXPLICIT",
+      "source": "G3 mean larval size LG6 18.8%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from variance partitioning shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "e122db2c-80d0-45e7-a3e4-2250dc00a842",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C68",
+      "claim": "The LG7 locus on G3 mean larval size explains 25.4% of phenotypic variance.",
+      "claim_type": "EXPLICIT",
+      "source": "LG7 25.4%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from variance partitioning shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "7db1ab08-52cd-46a3-944f-e02009dc8c05",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C69",
+      "claim": "The LG6 x LG7 interaction on G3 mean larval size explains 5.2% of phenotypic variance.",
+      "claim_type": "EXPLICIT",
+      "source": "LG6 x LG7 5.2%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from variance partitioning showing epistasis in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "d33c027f-594f-4336-860d-175bc283fa43",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "claim_id": "C70",
+      "claim": "The LG5 locus on presence of anal cirri explains 18.9% of phenotypic deviance.",
+      "claim_type": "EXPLICIT",
+      "source": "Presence of anal cirri LG5 18.9%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from deviance partitioning in logistic regression shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "472857eb-0c23-4e8a-b545-ca06171cce88",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "S. benedicti exhibits two distinct developmental modes: planktotrophic larvae (small eggs ~100 \u03bcm, with swimming chaetae and anal cirri) and lecithotrophic larvae (large eggs ~200 \u03bcm, lacking these structures), with differences in embryogenesis and organogenesis but indistinguishable adult morphology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 collectively describe well-established biological characteristics of S. benedicti, supported by multiple citations to prior work and visual evidence in Figure 1A. These background claims establish the phenotypic differences between the two developmental modes that form the basis for the genetic analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "899eabbe-8eb0-4e2c-b92f-4c836f875999",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Natural S. benedicti populations are phenotypically homogeneous for developmental mode, with little genome-wide differentiation between populations despite ongoing gene flow, and crosses between modes produce intermediate phenotypes in the laboratory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C17 describe population-level patterns supported by multiple citations to prior work (Levin, Zakas, Rockman, and colleagues). The observation that lab crosses produce intermediates (C13, Figure 1B) while natural populations remain homogeneous (C11) is well-documented and sets up the central evolutionary puzzle addressed by this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "315c52dc-7acf-47aa-8ed7-936b91b7c8f1",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "G2 larval size is uncorrelated with G3 offspring size, consistent with maternal-effect inheritance where G2 larvae develop under uniform F1 maternal effects while G3 size reflects segregating maternal-effect variation among G2 females.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 and C29 present a coherent demonstration of maternal-effect inheritance. The lack of correlation between G2 and G3 size (C18, Figure 2A) and absence of linkage between G2 size and G2 genotype (C29) are consistent with the cross design where F1 mothers are uniform heterozygotes. This is a well-reasoned genetic inference supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "ccd851dc-97b4-4d7a-9a9d-7b33e1ac65b1",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "S. benedicti has a karyotype of 2n=22 (10 autosome pairs plus XY sex chromosomes) with males heterogametic, and the first genetic linkage map for any annelid was constructed with 10 autosomal and 1 sex-linked linkage group.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25 describe cytological observations shown in Figure 2B-D and supplement, while C61-C62 describe the linkage map construction. The karyotype determination is based on direct microscopic observation across both populations. The claim of being the first annelid genetic map (C61) is verifiable and the concordance between 10 chromosome pairs and 10 autosomal linkage groups provides internal validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "d0742d3a-34dd-48a8-bd49-a9f6d7722d39",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "QTL mapping identified large-effect loci for developmental traits that are largely independent: maternal-effect loci for larval size on LG6 and LG7 (explaining 18.8% and 25.4% of variance) are unlinked from zygotic-effect loci for chaetae number (LG3, LG8), chaetae length (LG3, LG9), and anal cirri (LG5), with mostly additive effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C36 and C63-C70 present the core QTL mapping results shown in Figure 2E and Tables 1-2. The identification of distinct, unlinked loci for maternal vs. zygotic traits is well-supported by the interval mapping with appropriate permutation-based significance thresholds. The variance explained estimates and effect sizes are quantitatively reported. The statistical approach using structured permutations to account for family structure is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "fd253351-b4d5-4600-b713-85ea2ad93d65",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Two exceptions to additive QTL effects were identified: dominance of the chaetae-shortening allele at LG3 and significant epistasis between maternal-effect loci LG6 and LG7 for larval size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 describe specific non-additive genetic effects identified through model fitting (Table 2). These are clearly stated exceptions to the general pattern of additivity and are supported by the statistical modeling. The epistasis between LG6 and LG7 explains an additional 5.2% of variance (C69).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "99ff8485-2d98-4ae9-8f59-8b8bda3a5de8",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Multivariate QTL analysis confirmed the univariate results and demonstrated that maternal and zygotic effects are largely orthogonal in three-dimensional phenotypic space, with mutational effects at right angles rather than along the diagonal path between developmental modes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 and C46 describe the multivariate analysis shown in Figure 3B and Table 5. The finding that the same loci are identified in both univariate and multivariate analyses strengthens confidence in the results. The orthogonality of maternal and zygotic effects is visually demonstrated in Figure 3B and quantitatively supported in Table 5, showing that QTL effects are largely restricted to either maternal or zygotic traits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "6a81fd37-4b17-4344-8713-f82192c645d6",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Backcross experiments demonstrated that zygotic-effect loci affecting chaetae traits in F1 maternal backgrounds remain penetrant in planktotrophic maternal backgrounds, with some larvae completely lacking chaetae despite planktotrophic mothers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 describe backcross results shown in Figure 4 with strong statistical support (p<10\u207b\u2074 for length, p<10\u207b\u2076 for number). This experiment directly tests whether zygotic effects are masked in mismatched maternal backgrounds and provides clear evidence of penetrance. The observation of complete chaetae loss in some larvae (C42) demonstrates strong penetrance of lecithotrophic alleles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "1582598e-8400-49a0-b784-14083c0c4600",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The genetic architecture of developmental mode in S. benedicti is strikingly modular, with independent genetic bases for co-adapted traits on different chromosomes, suggesting stepwise evolutionary accumulation of multiple genetic changes rather than pleiotropic transformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 and C49-C50 synthesize the QTL mapping results into evolutionary conclusions. The modularity is well-supported by the data showing unlinked loci on different chromosomes. However, the evolutionary inference about stepwise accumulation (C44) is reasonable but somewhat speculative, as the current data show genetic architecture but not evolutionary history directly.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "7d82fef6-d172-4b40-92c1-a73a57b0782a",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The independent genetic architecture is compatible with evolution via a facultatively planktotrophic intermediate, where large larval size may have evolved before loss of larval morphology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C47-C48 present an evolutionary scenario supported by the genetic architecture and the existence of facultative planktotrophy (C60, cited from prior work). However, this remains speculative as the genetic data show current architecture but cannot definitively establish evolutionary sequence. The scenario is plausible and consistent with the data, but alternative evolutionary paths cannot be excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "129a429b-eba6-4c3d-8b33-f904e20cd768",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The six QTL chromosomes identified can segregate 729 possible genotypic combinations, most of which would produce maladaptive intermediate phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C51 is a straightforward calculation (3\u2076 = 729), but C52's assertion that most combinations would be maladaptive is an inference based on evolutionary theory rather than direct empirical evidence. While the reasoning is plausible given that intermediates are rare in nature, the actual fitness of these combinations has not been measured. The claim requires fitness data to be fully supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "7f2966f0-c8c8-4a2c-a284-26d9a83134a0",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The evolutionary transition requires interaction between maternal and zygotic genotypes, creating maternal-by-zygotic epistasis for fitness that generates frequency-dependent selection, selective barriers to adaptation, and potential for runaway coevolution favoring matching alleles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 present evolutionary implications of the maternal-zygotic genetic architecture, supported by theoretical citations (Kirkpatrick and Lande, Wade, Wolf and colleagues). The genetic data clearly demonstrate separate maternal and zygotic control (C53), and the backcross data show penetrance across backgrounds (supporting C54). The evolutionary inferences (C55-C57) are well-grounded in established theory and logically follow from the genetic architecture, though direct fitness measurements would strengthen these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    },
+    {
+      "id": "67afee9d-33e9-4f61-862a-7b4f4d6834ff",
+      "content_id": "04052fc6-c666-41ee-aaf2-22d8d6a345f2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Chaetae number and length are phenotypically correlated (r\u00b2=0.22, p<0.001), and this correlation persists after removing variation due to the shared LG3 QTL (r\u00b2=0.1, p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 present correlation analyses with clear statistical support. The persistence of correlation after accounting for the LG3 QTL (C59) suggests additional genetic or developmental coupling beyond the identified shared locus. The analysis is straightforward and appropriately conducted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:18:39.690450Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c580352a-7258-45ff-aaab-f462207d9f71",
+      "result_id": "472857eb-0c23-4e8a-b545-ca06171cce88"
+    },
+    {
+      "claim_id": "323a63e2-446d-405f-9afa-ab32297dc195",
+      "result_id": "472857eb-0c23-4e8a-b545-ca06171cce88"
+    },
+    {
+      "claim_id": "67a17689-5962-4238-9884-73e3b736bca1",
+      "result_id": "472857eb-0c23-4e8a-b545-ca06171cce88"
+    },
+    {
+      "claim_id": "6d1fa6ed-bed4-40ba-a238-290ee97c06f0",
+      "result_id": "472857eb-0c23-4e8a-b545-ca06171cce88"
+    },
+    {
+      "claim_id": "6aeb2923-1897-4830-8549-8379bda5981e",
+      "result_id": "472857eb-0c23-4e8a-b545-ca06171cce88"
+    },
+    {
+      "claim_id": "14d12c90-000b-48ac-8f2c-8d15dc0c8fc9",
+      "result_id": "472857eb-0c23-4e8a-b545-ca06171cce88"
+    },
+    {
+      "claim_id": "9ff34fde-a076-4a9e-92f5-9267b991c528",
+      "result_id": "472857eb-0c23-4e8a-b545-ca06171cce88"
+    },
+    {
+      "claim_id": "4d55ab2b-373f-480b-9d71-1e3e3a85b747",
+      "result_id": "472857eb-0c23-4e8a-b545-ca06171cce88"
+    },
+    {
+      "claim_id": "68cbf279-b8ef-4e5e-8560-817dd1d9ac74",
+      "result_id": "472857eb-0c23-4e8a-b545-ca06171cce88"
+    },
+    {
+      "claim_id": "4abae7b0-2e77-4853-ad34-392bc6800e02",
+      "result_id": "899eabbe-8eb0-4e2c-b92f-4c836f875999"
+    },
+    {
+      "claim_id": "473c9727-feb3-4c6d-ac19-f800b70d764d",
+      "result_id": "899eabbe-8eb0-4e2c-b92f-4c836f875999"
+    },
+    {
+      "claim_id": "7a1ea505-999d-4fa2-9deb-86a97a074e86",
+      "result_id": "899eabbe-8eb0-4e2c-b92f-4c836f875999"
+    },
+    {
+      "claim_id": "fcb77cd8-8096-43eb-964e-066ccbe07e19",
+      "result_id": "899eabbe-8eb0-4e2c-b92f-4c836f875999"
+    },
+    {
+      "claim_id": "73a5910f-0698-45ef-880b-1e4405e7d04f",
+      "result_id": "899eabbe-8eb0-4e2c-b92f-4c836f875999"
+    },
+    {
+      "claim_id": "71d9093c-1140-43d1-bcbb-ef8f4d128bc9",
+      "result_id": "899eabbe-8eb0-4e2c-b92f-4c836f875999"
+    },
+    {
+      "claim_id": "15d955ee-5d43-47d8-aa56-44d01ba881f7",
+      "result_id": "899eabbe-8eb0-4e2c-b92f-4c836f875999"
+    },
+    {
+      "claim_id": "075c37b4-770e-447d-90b7-c124b80dc1c1",
+      "result_id": "899eabbe-8eb0-4e2c-b92f-4c836f875999"
+    },
+    {
+      "claim_id": "02cd2863-3cda-479c-be86-923786b6d0f5",
+      "result_id": "315c52dc-7acf-47aa-8ed7-936b91b7c8f1"
+    },
+    {
+      "claim_id": "ab928c30-1668-4708-a17f-1c0654e645c5",
+      "result_id": "315c52dc-7acf-47aa-8ed7-936b91b7c8f1"
+    },
+    {
+      "claim_id": "096db2ca-02b6-4126-8691-56bdd414afe4",
+      "result_id": "315c52dc-7acf-47aa-8ed7-936b91b7c8f1"
+    },
+    {
+      "claim_id": "2741a1c5-7e69-4845-aaa5-97c679793b1e",
+      "result_id": "315c52dc-7acf-47aa-8ed7-936b91b7c8f1"
+    },
+    {
+      "claim_id": "087a1e6a-37e5-4709-9d7b-7832aedf23ef",
+      "result_id": "ccd851dc-97b4-4d7a-9a9d-7b33e1ac65b1"
+    },
+    {
+      "claim_id": "c993a7af-d8bb-4dce-8fe7-61aaf3e99802",
+      "result_id": "ccd851dc-97b4-4d7a-9a9d-7b33e1ac65b1"
+    },
+    {
+      "claim_id": "b9c7ba63-2fa0-4722-bb03-128bd29343b9",
+      "result_id": "ccd851dc-97b4-4d7a-9a9d-7b33e1ac65b1"
+    },
+    {
+      "claim_id": "cd23e2a9-26de-48b8-903a-a5cd3ea38816",
+      "result_id": "ccd851dc-97b4-4d7a-9a9d-7b33e1ac65b1"
+    },
+    {
+      "claim_id": "b63e007b-2d41-438b-87aa-addd7b964ab6",
+      "result_id": "ccd851dc-97b4-4d7a-9a9d-7b33e1ac65b1"
+    },
+    {
+      "claim_id": "52b147f9-7197-4191-9b1b-f99e19216166",
+      "result_id": "ccd851dc-97b4-4d7a-9a9d-7b33e1ac65b1"
+    },
+    {
+      "claim_id": "ba38eb74-ebc6-4892-942c-5cffd13bfc7b",
+      "result_id": "ccd851dc-97b4-4d7a-9a9d-7b33e1ac65b1"
+    },
+    {
+      "claim_id": "130d4181-f474-47d2-a437-777204b07401",
+      "result_id": "d0742d3a-34dd-48a8-bd49-a9f6d7722d39"
+    },
+    {
+      "claim_id": "deff643d-6faf-45fa-b841-b3216e7fa61c",
+      "result_id": "d0742d3a-34dd-48a8-bd49-a9f6d7722d39"
+    },
+    {
+      "claim_id": "8db53a97-9ec9-4fb4-99c2-58214870739b",
+      "result_id": "d0742d3a-34dd-48a8-bd49-a9f6d7722d39"
+    },
+    {
+      "claim_id": "50615198-449a-4be2-bb3c-27b5c7ce4081",
+      "result_id": "d0742d3a-34dd-48a8-bd49-a9f6d7722d39"
+    },
+    {
+      "claim_id": "02da7b0e-8a37-4a10-954a-18555ad98d16",
+      "result_id": "d0742d3a-34dd-48a8-bd49-a9f6d7722d39"
+    },
+    {
+      "claim_id": "1aa36676-f7fa-4d5a-969b-f462dc312ae7",
+      "result_id": "d0742d3a-34dd-48a8-bd49-a9f6d7722d39"
+    },
+    {
+      "claim_id": "22f77e35-eaa2-4206-8ba7-bc11df416aff",
+      "result_id": "d0742d3a-34dd-48a8-bd49-a9f6d7722d39"
+    },
+    {
+      "claim_id": "144750a0-5a19-4b23-9110-bac98d27ffa9",
+      "result_id": "d0742d3a-34dd-48a8-bd49-a9f6d7722d39"
+    },
+    {
+      "claim_id": "d6fd4f92-31a6-40b6-8db7-b814e9ac81d5",
+      "result_id": "d0742d3a-34dd-48a8-bd49-a9f6d7722d39"
+    },
+    {
+      "claim_id": "1d296b9e-ddc5-432f-bfa1-d7ea3018920a",
+      "result_id": "d0742d3a-34dd-48a8-bd49-a9f6d7722d39"
+    },
+    {
+      "claim_id": "7e0a41cf-da32-42f5-9bd0-23dcedf00334",
+      "result_id": "d0742d3a-34dd-48a8-bd49-a9f6d7722d39"
+    },
+    {
+      "claim_id": "673f7805-1384-4115-ae72-0b9479592031",
+      "result_id": "d0742d3a-34dd-48a8-bd49-a9f6d7722d39"
+    },
+    {
+      "claim_id": "1e3f674e-b906-4803-a5f2-21b1b0976a38",
+      "result_id": "d0742d3a-34dd-48a8-bd49-a9f6d7722d39"
+    },
+    {
+      "claim_id": "551aa080-ca3c-4ac9-8882-1d0cf46075c5",
+      "result_id": "d0742d3a-34dd-48a8-bd49-a9f6d7722d39"
+    },
+    {
+      "claim_id": "a61a886a-353c-4b9b-8351-a5312e82e030",
+      "result_id": "d0742d3a-34dd-48a8-bd49-a9f6d7722d39"
+    },
+    {
+      "claim_id": "e122db2c-80d0-45e7-a3e4-2250dc00a842",
+      "result_id": "d0742d3a-34dd-48a8-bd49-a9f6d7722d39"
+    },
+    {
+      "claim_id": "7db1ab08-52cd-46a3-944f-e02009dc8c05",
+      "result_id": "d0742d3a-34dd-48a8-bd49-a9f6d7722d39"
+    },
+    {
+      "claim_id": "d33c027f-594f-4336-860d-175bc283fa43",
+      "result_id": "d0742d3a-34dd-48a8-bd49-a9f6d7722d39"
+    },
+    {
+      "claim_id": "34c65559-ecbc-406f-b505-d4ed99b67b83",
+      "result_id": "fd253351-b4d5-4600-b713-85ea2ad93d65"
+    },
+    {
+      "claim_id": "8e17cc01-b723-4d15-9e95-0594d0495c60",
+      "result_id": "fd253351-b4d5-4600-b713-85ea2ad93d65"
+    },
+    {
+      "claim_id": "7fb4b3e8-3473-4aa0-8100-1645ff1c9bc4",
+      "result_id": "99ff8485-2d98-4ae9-8f59-8b8bda3a5de8"
+    },
+    {
+      "claim_id": "029521d8-a9fe-4b76-8277-e551421088fa",
+      "result_id": "99ff8485-2d98-4ae9-8f59-8b8bda3a5de8"
+    },
+    {
+      "claim_id": "827837ba-6f67-4b32-ad98-efb4b92eda1f",
+      "result_id": "99ff8485-2d98-4ae9-8f59-8b8bda3a5de8"
+    },
+    {
+      "claim_id": "c0d3a54c-32cb-42f6-a903-f2ac76e667aa",
+      "result_id": "6a81fd37-4b17-4344-8713-f82192c645d6"
+    },
+    {
+      "claim_id": "cbd61f56-98cb-463b-a4a9-2b048cc8c847",
+      "result_id": "6a81fd37-4b17-4344-8713-f82192c645d6"
+    },
+    {
+      "claim_id": "4a58da39-60db-4eac-8b7f-e1c7ee4f5509",
+      "result_id": "1582598e-8400-49a0-b784-14083c0c4600"
+    },
+    {
+      "claim_id": "7e59036a-1a57-450f-894e-3d17d4c8db4e",
+      "result_id": "1582598e-8400-49a0-b784-14083c0c4600"
+    },
+    {
+      "claim_id": "7596bf0b-73c8-45b0-b7ba-d249f9d87bbc",
+      "result_id": "1582598e-8400-49a0-b784-14083c0c4600"
+    },
+    {
+      "claim_id": "bef5afbb-53ba-4302-8d53-6e1e2aaccf0c",
+      "result_id": "1582598e-8400-49a0-b784-14083c0c4600"
+    },
+    {
+      "claim_id": "beeb7b1d-8c82-4ac3-b87c-4d3553562dfb",
+      "result_id": "1582598e-8400-49a0-b784-14083c0c4600"
+    },
+    {
+      "claim_id": "7f69765c-240b-497c-9757-25e5d1eb26ef",
+      "result_id": "7d82fef6-d172-4b40-92c1-a73a57b0782a"
+    },
+    {
+      "claim_id": "bc0a2988-80c4-403c-95a9-6f1f3bcd14d1",
+      "result_id": "7d82fef6-d172-4b40-92c1-a73a57b0782a"
+    },
+    {
+      "claim_id": "e1f3f7e1-aa42-404a-933e-7526571c5bf5",
+      "result_id": "7d82fef6-d172-4b40-92c1-a73a57b0782a"
+    },
+    {
+      "claim_id": "a04204b3-bc4e-42e1-8d74-84f01aa61bea",
+      "result_id": "129a429b-eba6-4c3d-8b33-f904e20cd768"
+    },
+    {
+      "claim_id": "122908ab-41a7-497a-bf77-5881f0ab171b",
+      "result_id": "129a429b-eba6-4c3d-8b33-f904e20cd768"
+    },
+    {
+      "claim_id": "79462988-7281-4635-9269-25360b674c2c",
+      "result_id": "7f2966f0-c8c8-4a2c-a284-26d9a83134a0"
+    },
+    {
+      "claim_id": "578eb1ea-aace-436e-a180-7fb64ae74ae4",
+      "result_id": "7f2966f0-c8c8-4a2c-a284-26d9a83134a0"
+    },
+    {
+      "claim_id": "6c1d71a7-85c6-49ab-a115-92f9e9c590bb",
+      "result_id": "7f2966f0-c8c8-4a2c-a284-26d9a83134a0"
+    },
+    {
+      "claim_id": "61737422-1855-4718-a884-18214745bb75",
+      "result_id": "7f2966f0-c8c8-4a2c-a284-26d9a83134a0"
+    },
+    {
+      "claim_id": "841a7810-5f41-4c62-bd71-7d3c22e97d32",
+      "result_id": "7f2966f0-c8c8-4a2c-a284-26d9a83134a0"
+    },
+    {
+      "claim_id": "80ac2828-7080-47ac-8ea7-d6eacee72bc3",
+      "result_id": "67afee9d-33e9-4f61-862a-7b4f4d6834ff"
+    },
+    {
+      "claim_id": "2aff8341-da81-4020-aa11-83c49cc886bd",
+      "result_id": "67afee9d-33e9-4f61-862a-7b4f4d6834ff"
+    }
+  ],
+  "comparisons": []
+}

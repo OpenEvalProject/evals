@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Mmi1 associates with the Ccr4-Not complex independently of MTREC during vegetative growth. Mass spectrometry identified Ccr4-Not subunits as the most abundant Mmi1 interactors, and co-immunoprecipitation confirmed RNA-independent interactions with Not1, Caf1, and Mot2 that persist in the absence of Red1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C14, C28-C30 are well-supported by mass spectrometry (Figure 1B) and co-immunoprecipitation data (Figure 1C-D) showing Mmi1-Ccr4-Not interactions are Red1-independent and RNA-independent. The data converge to demonstrate independent association of Mmi1 with MTREC and Ccr4-Not complexes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The E3 ubiquitin ligase Mot2, but not the deadenylases Ccr4 and Caf1, is required for suppression of meiotic transcripts in minimal medium. RT-qPCR and RNA-seq analyses show that mot2\u0394 cells accumulate meiotic mRNAs in minimal medium, with 622 upregulated transcripts including 100 shared with rrp6\u0394 and enriched for DSR-containing Mmi1 targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C31-C34, C37-C40 are strongly supported by RT-qPCR (Figure 2A-B) and RNA-seq data (Figure 2C-D) showing specific requirement for Mot2 but not Ccr4/Caf1 in minimal medium. The overlap analysis and DSR enrichment provide robust evidence for Mot2's role in meiotic mRNA suppression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Mot2 associates with DSR-containing meiotic mRNAs, consistent with Mmi1 recruiting the whole Ccr4-Not complex to its RNA targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by RNA-IP data (Figure 2\u2014figure supplement 1) showing Mot2 interacts with mei4+ and mcp5+ transcripts at levels comparable to Caf1. This is consistent with prior work showing Mmi1 recruits the entire complex.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C87"
+    ],
+    "result": "Mot2 negatively regulates Mei2 protein levels in a transcription-independent manner, particularly in minimal medium. Mei2 accumulates substantially in mot2\u0394 cells in minimal medium, and this effect persists when mei2+ is expressed from a heterologous promoter despite only modest mRNA increases. The regulation depends specifically on Mot2, not other Ccr4-Not subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C51, C87 are well-supported by Western blot data (Figure 3A-C) showing Mei2 accumulation in mot2\u0394 cells, particularly in minimal medium. The heterologous promoter experiment (Figure 3B-D) demonstrates transcription-independent regulation. The specificity for Mot2 is confirmed by testing other Ccr4-Not subunits (Figure 3\u2014figure supplement 1B).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Mot2 suppresses meiotic mRNA expression by controlling Mei2 levels/activity. Deletion of mei2+ restores meiotic mRNA degradation in mot2\u0394 cells, and mei2+ overexpression phenocopies mot2\u0394, demonstrating causal linkage between Mot2's effects on Mei2 and meiotic transcript suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are strongly supported by genetic epistasis experiments (Figure 4A-B) showing mei2\u0394 suppresses the mot2\u0394 phenotype and mei2+ overexpression mimics mot2\u0394. This establishes a clear causal relationship between Mot2's regulation of Mei2 and meiotic mRNA suppression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "mot2\u0394 cells do not undergo ectopic meiosis during exponential growth but display a moderate growth defect in minimal medium partially due to inappropriate meiotic RNA expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by microscopy (Figure 4\u2014figure supplement 1A) showing no ectopic meiosis and growth curve data (Figure 4\u2014figure supplement 1B) showing partial suppression of the growth defect by mei2\u0394. This demonstrates the phenotypic consequences of Mot2 loss.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C63"
+    ],
+    "result": "Mmi1 is required for Mot2-dependent regulation of Mei2. Mei2 persists in association with Mmi1 in mot2\u0394 cells, accumulates in mmi1\u0394 cells despite wild-type Mot2, and accumulates when Mmi1 lacks its Ccr4-Not binding domain. Red1 and Rrp6 do not affect Mei2 levels, indicating Mmi1-Mot2 function in a pathway distinct from MTREC/exosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60, C62-C63 are supported by co-IP data (Figure 4C), Western blots (Figure 4D-E), and the Mmi1-(1-65)\u0394 experiment. The data converge to show Mmi1 recruits Mot2 to regulate Mei2 independently of the MTREC/exosome pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C70"
+    ],
+    "result": "Mmi1 and Mot2 do not mediate translational repression of mei2+ mRNAs. The fraction of mei2+ mRNAs associated with translating ribosomes does not increase in mot2\u0394 cells, and Mmi1 does not bind mei2+ transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66, C70 are supported by RNA-IP experiments (Figure 5A-C, Figure 5\u2014figure supplement 1A-B) showing no increase in ribosome-associated mei2+ mRNAs in mot2\u0394 and no Mmi1 binding to mei2+ transcripts. This rules out translational control as the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Mot2 triggers Mei2 degradation via the proteasome pathway. Mei2 accumulates to similar levels in mts2-1 and mts2-1 mot2\u0394 mutants at non-permissive temperature, suggesting genetic epistasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by Western blot data (Figure 5D) showing similar Mei2 accumulation in mts2-1 and mts2-1 mot2\u0394 cells. This genetic epistasis suggests Mot2 and the proteasome function in the same pathway, though the inference is indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Mot2 ubiquitinates Mei2 through its E3 ligase activity. Mot2 catalytic mutants cannot restore wild-type Mei2 levels, and mot2\u0394 cells show a 4-fold decrease in the fraction of ubiquitinated Mei2 species. This decrease is not due to Mei2 overproduction, as demonstrated by overexpression experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 are well-supported by Western blots showing Mot2 catalytic mutants fail to rescue (Figure 6A), ubiquitination assays showing decreased Ubi-Mei2 in mot2\u0394 (Figure 6B-C), and controls ruling out saturation effects (Figure 6\u2014figure supplement 1). The data strongly support Mot2-mediated ubiquitination of Mei2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Mot2 is not responsible for the main constitutive turnover pathway of Mei2, which depends on Ubr1. Mei2 levels are much higher in ubr1\u0394 than mot2\u0394 cells, Ubr1 has a major effect on Mei2 turnover rate, and ubiquitination is strongly decreased in ubr1\u0394 cells. Increased Mei2 in ubr1\u0394 leads to pronounced meiotic mRNA accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C78-C83 are strongly supported by Western blots (Figure 6B, Figure 6\u2014figure supplement 2A-B), cycloheximide chase experiments (Figure 6\u2014figure supplement 2C), ubiquitination assays (Figure 6B-C), and RT-qPCR (Figure 6D). The data clearly distinguish Ubr1 as the major constitutive pathway and Mot2 as a regulatory pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C8",
+      "C84",
+      "C85"
+    ],
+    "result": "Mot2 directs ubiquitination of Mei2 to preserve Mmi1 activity during vegetative growth, playing a regulatory role to fine-tune Mei2 levels/function. Mmi1 recruits the Ccr4-Not complex to counteract its own inhibitor Mei2, establishing a regulatory circuit. Mmi1 has a dual role in nuclear RNA surveillance and protein ubiquitination regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C7-C8, C84-C85 represent the authors' main model/conclusions, which are well-supported by the collective data showing Mmi1-Mot2 interaction, Mot2-dependent Mei2 ubiquitination, and the functional consequences for meiotic mRNA suppression. The model integrates all major findings into a coherent regulatory circuit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The Mot2-dependent degradation rate is approximately six times less active than Ubr1-dependent degradation, implying Mei2 half-life differs by only ~15% (less than 1.5 min) between wild-type and mot2\u0394 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C92 are calculations based on steady-state levels (Figure 6\u2014figure supplement 2A-B), but the authors acknowledge they cannot reliably measure Mei2 turnover differences between wild-type and mot2\u0394 due to low Mei2 levels and modest impact. The calculations are reasonable but lack direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C88",
+      "C89",
+      "C90",
+      "C93",
+      "C94",
+      "C96",
+      "C98"
+    ],
+    "result": "The regulatory circuit whereby Mmi1 controls Mei2 might prevent variations in meiotic RNA levels due to Mei2 fluctuations. Mot2 may control Mei2 under conditions where meiosis is transcriptionally prefigured but premature. The mechanism may involve preventing Mei2 entry/persistence in nuclear dots, and additional controls may back up the E3 ligases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86, C88-C90, C93-C94, C96, C98 are speculative interpretations about mechanisms and biological significance. While plausible and consistent with the data, they lack direct experimental support and represent hypotheses for future testing rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C41",
+      "C42",
+      "C43",
+      "C61",
+      "C78",
+      "C97",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Background knowledge claims about the Mmi1/MTREC/exosome system, Mei2 regulation, Ccr4-Not functions, and evolutionary conservation are established by prior work cited in the introduction and discussion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C13, C15-C27, C41-C43, C61, C78, C97, C99-C101 represent established knowledge supported by appropriate citations. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C95",
+      "C102"
+    ],
+    "result": "Lower-migrating Mei2 isoforms in mts2-1 cells possibly reflect phosphorylated/ubiquitinated intermediates. Mei2 levels in mot2\u0394 cells are not sufficient to induce ectopic meiosis. The control of Mei2 by Mmi1/Mot2 might provide additional regulatory complexity to Ccr4-Not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69, C95, C102 include observations (C95 supported by Figure 4\u2014figure supplement 1A) and speculations (C69, C102) about mechanisms and broader significance. C95 is supported, but C69 and C102 are interpretive without direct evidence.",
+    "result_type": "MINOR"
+  }
+]

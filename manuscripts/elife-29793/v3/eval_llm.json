@@ -1,0 +1,335 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C60",
+      "C61",
+      "C74"
+    ],
+    "result": "Rat position can be decoded from ACC ensemble activity with ~10 cm accuracy using a deep artificial neural network (dANN), which outperformed Bayesian methods by 36%. This spatial resolution is much finer than individual ACC neuron tuning (~50 cm) and requires approximately 30 randomly selected or 17 optimally selected ACC units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C25, C30, and C60 establish the core finding with statistical support (t(6)=9.0, p=0.0001). The decoder architecture is clearly described (C26), the comparison to individual cell tuning is appropriately cited (C32, C61), and the sample size requirements are empirically determined (C28-C29). The methodological details and statistical power (power=1) support this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "The position-related features of ACC neural activity used by the decoder remained stable within sessions despite changes in reward contingencies and effort requirements across blocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 provides statistical evidence (t6=1.28, p=0.24) showing no significant difference in decoding accuracy between interleaved versus sequential training/testing schemes. This supports the inference in C34 about within-session stability. However, the lack of significance could reflect insufficient power rather than true stability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The position decoder is robust to moderate spike timing jitter (~25 ms), with noise causing only 1.3% increase in error and very few large decoding deviations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123 and C125 provide quantitative evidence with statistical support (t(6)=4.8, p=0.003, power=0.95). The analysis appropriately tests decoder robustness by adding controlled noise. The inference in C124 about temporal precision is reasonable given the noise tolerance results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C63"
+    ],
+    "result": "ACC neurons typically encoded the rat's current position, but occasionally exhibited 'excursions' where decoded position deviated up to ~100 cm from actual position. These excursions occurred almost exclusively at the two choice feeders (not the center feeder) and consisted of consecutive decoded positions at the alternate target feeder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 describe the excursion phenomenon with supporting figures. The statistical analysis in C39 (\u03c7\u00b2=484, p=1E-40) demonstrates that the spatial pattern of excursion endpoints is highly non-random. The specificity to choice feeders (C37, C40) is clearly documented. This represents a novel and well-supported observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Excursions had a median duration of 400 ms, occurred almost exclusively while rats were stationary at feeders, and most frequently happened after reward delivery but before locomotion away from the feeder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 provide temporal characterization of excursions with supporting data in Figure 3C-D. The timing analysis is straightforward and well-documented. These temporal features are important for understanding the phenomenon.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Neural activity patterns at the three feeders are highly discriminable. Adding noise did not significantly reduce feeder classification accuracy (t(6)=1.02, p=0.35), but shuffling spike intervals eliminated discriminability (t(6)=32.6, p=3e-8), indicating excursions are not due to random noise-induced misclassification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 provide complementary evidence using linear discriminant analysis and classification with controlled manipulations. The statistical comparisons are appropriate and well-powered. The inference in C48 is reasonable given the differential effects of noise versus shuffling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C89"
+    ],
+    "result": "Excursion patterns were highly discriminable from non-excursion patterns at the same feeder (AUC=0.94), but excursion patterns from different feeders showed only moderate discriminability (AUC=0.75), suggesting encoding features shift toward the unselected feeder during excursions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 provide ROC analysis with clear quantitative metrics. The interpretation in C51 and C89 is reasonable given the pattern of discriminability. However, the authors acknowledge potential confounds from reward encoding and temporal compression (C91), which appropriately tempers the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Rats developed strong feeder preferences (5.3\u00b10.5 out of 6 free choices), and excursion frequency at a feeder was strongly inversely correlated with preference for that feeder (r\u00b2=0.86, F(6)=31.5, p=0.002). Excursions were more likely at less-preferred feeders in both forced and free choice trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 establish behavioral preference with clear metrics. The correlation analysis in C54 is statistically robust with high effect size and power (0.97). Claims C55-C56 provide consistent interpretations. This establishes a key functional relationship between excursions and choice behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C4"
+    ],
+    "result": "Approximately 30% and 36% of ACC cells strongly encoded reward and choice information, respectively, and some of these cells were activated during excursion events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 provide quantitative characterization using logistic regression with appropriate regularization. Claim C59 demonstrates overlap between excursion-related and choice/reward-encoding cells with supporting Figure 4B. This links excursions to decision-related processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C6",
+      "C41",
+      "C64",
+      "C105",
+      "C106"
+    ],
+    "result": "Excursions represent evaluation of unrealized choice outcomes at remote locations, particularly after disfavored reinforcements, rather than planning the next action or general reward processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This interpretation integrates multiple lines of evidence: spatial specificity to choice feeders (C3, C41, C105), inverse correlation with preference (C5), activation of choice/reward neurons (C6), and exclusion of alternative explanations (C106). The convergent evidence from spatial, temporal, and neural encoding analyses supports this functional interpretation, though it remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C62",
+      "C78",
+      "C85",
+      "C86"
+    ],
+    "result": "The authors propose that ACC forms a topographically-organized mental model of task space that multiplexes spatial position with choice-related information, which can be mentally navigated via excursions to recall information about remote locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C78, C85, and C86 are explicitly theoretical proposals and speculations. While the data on spatial decoding and excursions provide circumstantial support, the claim that this constitutes a 'mental model' that can be 'mentally navigated' goes beyond what the data directly demonstrate. The authors appropriately frame these as proposals rather than established findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C75",
+      "C77"
+    ],
+    "result": "Whether ACC encodes pure spatial information versus spatially-locked actions/events remains unclear due to the stereotyped nature of the task, though spatial information is multiplexed with other task features and can be extracted by appropriate decoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 explicitly acknowledges this fundamental ambiguity. Claim C73 identifies the confound in the experimental design. Claims C75 and C77 provide reasonable interpretations given this limitation. The authors appropriately recognize this as an unresolved question rather than claiming definitive spatial encoding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors speculate that excursions may involve temporal compression similar to hippocampal replay and may be coordinated with replay events in hippocampus and orbitofrontal cortex, potentially relating to the default mode network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C91-C97) are explicitly speculative, drawing parallels to phenomena in other brain regions based on citations. While the temporal characteristics of excursions (400 ms duration) are consistent with replay timescales, no direct evidence of coordination with other regions or temporal compression is provided. The speculation is reasonable but unsupported by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The authors speculate that excursions may trigger memory traces promoting response shifts, but acknowledge the task design prevents rigorous testing of whether excursions influence future choices on a trial-by-trial basis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C109 is explicitly labeled as speculative. Claims C113-C114 appropriately acknowledge limitations in establishing causal relationships between excursions and future behavior. The correlation with preference is established (C54), but the causal direction and trial-by-trial predictive power remain untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors speculate that human ACC homologue (area 24) may employ similar spatial associations for organizing schematic world models, relating this to human use of spatial mnemonic strategies and primate cognitive abilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C104 are explicitly speculative cross-species extrapolations supported only by citations to comparative anatomy and human memory strategies. While the evolutionary argument is interesting, no direct evidence from human or non-human primate ACC is provided in this study. This represents reasonable speculation but not supported findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The behavioral task involved a figure-8 maze with three feeders, manipulating effort (platform height) and reward (volume) across 6 blocks of 16 trials each, with forced alternation for 10 trials followed by 6 free-choice trials per block.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C122 describe the experimental design and procedures. These are straightforward methodological details that are clearly documented and illustrated in Figure 1. The design is appropriate for studying choice behavior and spatial encoding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The introduction reviews established literature on ACC/mPFC function in memory, decision-making, spatial encoding, and reward processing, including connections with hippocampus and the historical view that ACC neurons do not generate place fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C23 summarize prior work with appropriate citations. These provide necessary context for the current findings. The citations appear appropriate and the characterizations of prior work are reasonable, though we cannot verify accuracy of all cited work without examining original sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C76",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C87",
+      "C88",
+      "C90",
+      "C107",
+      "C108",
+      "C110",
+      "C111"
+    ],
+    "result": "The discussion contextualizes findings within existing literature on ACC spatial encoding, fictive outcome signaling, conflict resolution, schema formation, and relationships to other prefrontal regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C111 (discussion section) appropriately cite and integrate prior work to contextualize the current findings. The comparisons to previous studies appear reasonable and help situate the novel contributions. These represent appropriate scholarly discussion rather than new empirical claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The discussion notes that default mode network activation in humans occurs during pauses after reinforcement and is associated with mind wandering, with analogous networks in non-human primates and rodents, and that telencephalic structures emerged early in vertebrate evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 cite established findings about default mode networks and evolutionary neuroscience. These provide context for speculative connections to the current findings. The citations appear appropriate for these well-established observations.",
+    "result_type": "MINOR"
+  }
+]

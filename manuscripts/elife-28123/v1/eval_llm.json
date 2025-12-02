@@ -1,0 +1,233 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The study used multi-event survival models with capture-mark-recapture and radio-telemetry data from 262 blackbirds (192 residents, 70 migrants) tracked over seven years. These models account for imperfect detection probability and allow simultaneous estimation of survival and detection probabilities across different seasons, migratory strategies, sex, and age classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims (C15, C63-C95) are well-documented with appropriate sample sizes, clear operational definitions, and established statistical approaches. The multi-event modeling framework is appropriate for handling differential detectability between migrants and residents, which is a critical consideration given the lower detection probability for migrants (C27).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Blackbirds showed significantly lower winter survival (\u03a6 = 0.60; 95% CI = 0.55\u20130.66) compared to summer survival (\u03a6 = 0.89; 95% CI = 0.82\u20130.94), with no differences between juveniles and adults within seasons. Winter mortality is identified as an important determinant of lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 are supported by statistical analysis with clear confidence intervals from model 3 and model 4 (Table 1). The non-overlapping confidence intervals between seasons support the conclusion about differential seasonal mortality. The lack of age effects is appropriately documented with overlapping confidence intervals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C96"
+    ],
+    "result": "Migrant blackbirds had markedly higher winter survival (\u03a6 = 0.73; 95% CI = 0.62\u20130.81) compared to residents (\u03a6 = 0.57; 95% CI = 0.50\u20130.63), representing a 16% survival advantage. This difference was detected while accounting for lower detection probability in migrants (P=0.19) versus residents (P=0.74). Sex differences in survival were not substantial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 and C96 are strongly supported by the best-fitting model (model 1) with non-overlapping confidence intervals between migrants and residents during winter. The statistical approach appropriately accounts for differential detectability. The conclusion about minimal sex effects is justified by overlapping confidence intervals in model 2, though the authors appropriately note some ambiguity given model 2's modest support (delta AICc = 0.95).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C31",
+      "C32",
+      "C60",
+      "C98",
+      "C99"
+    ],
+    "result": "The findings provide strong empirical support for theoretical predictions that migration confers winter survival benefits, offering an explanation for the maintenance of the migrant phenotype in this partially migratory population and contributing to understanding the evolution and maintenance of migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C31-C32, C60, C98-C99 are supported by the empirical survival data showing higher winter survival in migrants. The inference that these results support theoretical predictions (C3, C8) is justified. However, the claim about explaining phenotype maintenance (C32) is somewhat overstated without reproductive data, as acknowledged by the authors' own fitness calculations (C35-C36).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C97"
+    ],
+    "result": "Based on the observed survival differences, the expected lifetime number of reproductive seasons is 61.25% higher for migrants than residents. To achieve equal fitness between strategies, residents would need 61.25% higher reproductive performance than migrants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35-C36 and C97 present calculations based on a mathematical model using the observed survival probabilities. While the mathematical derivation appears correct (using the series formula for expected reproductive attempts), this result is uncertain because: (1) it relies on untested assumptions about reproductive timing and success, (2) no empirical reproductive data are provided to validate whether this threshold is met, and (3) the calculation assumes constant survival probabilities across years, which may not hold given environmental variation (C42-C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Despite finding no strong evidence for sex differences in survival, females are more likely to migrate than males in this population. The data do not support the hypothesis that this sex bias results from differential winter survival costs of residency for females due to subordinate status in foraging flocks. Alternative explanations involving sex-specific reproductive benefits and territory acquisition dynamics are discussed but remain speculative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C55 acknowledge an important paradox: the observed sex bias in migration (C48, supported by C14) is not explained by the survival data (C47, C51). The discussion of alternative mechanisms (C52-C55) is appropriately speculative. However, the conclusion is uncertain because: (1) model 2 including sex had modest support (C28), suggesting some ambiguity, (2) the cited reproductive data (C54) are from a different study and may not apply to this population, and (3) no direct test of the proposed mechanisms is provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The two phenotypes (migrant and resident) could persist as evolutionary stable strategies if overall fitness is equal, with residency predicted to provide reproductive benefits through prior occupancy advantages and extended breeding opportunities. Whether migration operates as an ESS or conditional strategy depends on whether resident reproductive success exceeds the calculated 61.25% threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C33-C41 present theoretical frameworks supported by appropriate citations (C33, C34, C41) and logical reasoning about potential mechanisms (C37-C39). However, the result is uncertain because: (1) no empirical reproductive data are provided to test these predictions, (2) the mechanisms proposed (C37) are speculative, (3) the distinction between ESS and conditional strategies (C40-C41) cannot be resolved without fitness data, and (4) the authors acknowledge this requires future confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Year-to-year variation in winter environmental conditions at breeding grounds may shape the incidence of migration versus residency over time, with harsh winters potentially reducing resident survival and weakening prior residency effects, thereby providing breeding benefits to migrants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C46 present plausible hypotheses about environmental variation effects, but are entirely speculative (all marked as SPECULATION in evidence_type). No data on inter-annual variation in survival, environmental conditions, or territory dynamics are presented. While the reasoning is logical, this remains an untested hypothesis requiring longitudinal data on environmental conditions and their effects on survival and reproductive success.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Eleven birds that migrated during winter and 11 that switched strategies between years were excluded from analysis. Winter departures typically occurred during cold temperatures and snow accumulation, potentially triggered by extreme weather and low food availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 clearly document data exclusion criteria with justification (small sample sizes). Claim C58 is supported by citation. Claim C59 is appropriately presented as speculative. The exclusion of strategy-switchers is a limitation that could affect conclusions about the stability of strategies, but is justified given sample size constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C17",
+      "C18"
+    ],
+    "result": "The studied blackbird population exhibits partial migration, with migrants overwintering approximately 800 km west-southwest of breeding grounds. The majority of migrants are females. Migrants and residents are in sympatry during summer (March-October) but overwinter in different habitats (November-March).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 are supported by citations and Figure 2 showing geolocator data. Claims C17-C18 describe the study system and are supported by Figure 1. These provide essential context for interpreting the survival analyses and are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The introduction establishes theoretical and empirical context: migration has evolved repeatedly across taxa and theory predicts it should offer survival or breeding benefits compared to residency. Empirical evidence from other taxa shows varied patterns, with some studies finding benefits for migrants (fish, moths) while bird studies have reported mixed results, with some showing lower fitness for migrants (robins, dippers, cormorants).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 appropriately summarize prior work with citations. These provide context for the study's motivation and predictions. The characterization of limited empirical evidence in birds (C9) and conflicting results (C10-C12) justifies the study's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The multi-event modeling methodology allows comparisons between classes differing greatly in detectability and could be applied to fully migratory populations threatened by risks along flyways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 appropriately describe the methodological contribution and broader applicability. The demonstration that the approach handles differential detectability (C27) supports C61. Claim C62 is supported by citation and provides conservation context.",
+    "result_type": "MINOR"
+  }
+]
